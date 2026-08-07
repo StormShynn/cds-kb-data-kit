@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `REPaymentForm` | `cast( dd07t.domvalue_l as recdvdmpaymentformrh )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `REPaymentFormName` | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | *Association* |
-| `_REPaymentForm` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `REPaymentForm` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmpaymentformrh )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `REPaymentFormName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_REPaymentForm` | | ✓ | | |
 
 ## Associations
 

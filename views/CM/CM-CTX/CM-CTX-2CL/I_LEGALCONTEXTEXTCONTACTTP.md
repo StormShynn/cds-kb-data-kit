@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMCntxtExtCntctUUID` | `LglCntntMCntxtExtCntctUUID` |
-| `LglCntntMContextUUID` | `LglCntntMContextUUID` |
-| `LglCntntMRank` | `LglCntntMRank` |
-| `LglCntntMExtCntctBP` | `LglCntntMExtCntctBP` |
-| `LglCntntMExtCntctType` | `LglCntntMExtCntctType` |
-| `LglCntntMIsMandatory` | `LglCntntMIsMandatory` |
-| `LglCntntMIsIntegRelevant` | `LglCntntMIsIntegRelevant` |
-| `_LCMContextTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMCntxtExtCntctUUID` | ✓ | |  |  |
+| `LglCntntMContextUUID` |  | |  |  |
+| `LglCntntMRank` |  | |  |  |
+| `LglCntntMExtCntctBP` |  | |  |  |
+| `LglCntntMExtCntctType` |  | |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |
+| `_LCMContextTP` | | ✓ | | |
 
 ## Source Code
 

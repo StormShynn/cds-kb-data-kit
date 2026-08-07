@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `StockTransferReplnmtStrategy` | `pkstu` |
-| `KnbnCtrlCycStkTransfCtrlType` | `pksau` |
-| `GoodsMovementType` | `bwart` |
-| `SignalLockingTimeInMinutes` | `aussp` |
-| `StockDeterminationRule` | `rules` |
-| `KnbnBatchDeterminationProced` | `kalsm` |
-| `KnbnStockTransferIsCrossPlant` | `pkwzw` |
-| `PostCnsmpnToCostCtrStkTransf` | `cnscc` |
-| `PostCnsmpnToCostCtrMvtType` | `bwacc` |
-| `SubDaySchedulingIsConsdrd` | `uttrm` |
-| `UsageOfPackingInstructions` | `vpack` |
-| `KanbanCtrlCycPrintFormTemplate` | `cc_print_form` |
-| `KanbanCtnPrintFormTemplate` | `kbform` |
-| `KnbnSDSchedgAgrmtDelivCrtnType` | `sddkz` |
-| `_Text` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `StockTransferReplnmtStrategy` | ✓ | |  | `pkstu` |
+| `KnbnCtrlCycStkTransfCtrlType` |  | |  | `pksau` |
+| `GoodsMovementType` |  | |  | `bwart` |
+| `SignalLockingTimeInMinutes` |  | |  | `aussp` |
+| `StockDeterminationRule` |  | |  | `rules` |
+| `KnbnBatchDeterminationProced` |  | |  | `kalsm` |
+| `KnbnStockTransferIsCrossPlant` |  | |  | `pkwzw` |
+| `PostCnsmpnToCostCtrStkTransf` |  | |  | `cnscc` |
+| `PostCnsmpnToCostCtrMvtType` |  | |  | `bwacc` |
+| `SubDaySchedulingIsConsdrd` |  | |  | `uttrm` |
+| `UsageOfPackingInstructions` |  | |  | `vpack` |
+| `KanbanCtrlCycPrintFormTemplate` |  | |  | `cc_print_form` |
+| `KanbanCtnPrintFormTemplate` |  | |  | `kbform` |
+| `KnbnSDSchedgAgrmtDelivCrtnType` |  | |  | `sddkz` |
+| `_Text` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

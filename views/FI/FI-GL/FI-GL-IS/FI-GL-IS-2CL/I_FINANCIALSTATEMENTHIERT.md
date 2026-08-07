@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialStatementHierarchy` | `hrrp_dirt_n.hryid_42` |
-| key `ValidityEndDate` | `hryvalto` |
-| key `Language` | `spras` |
-| `ValidityStartDate` | `hryvalfrom` |
-| `FinancialStmntHierarchyName` | `hrytxt` |
-| `_Language` | *Association* |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialStatementHierarchy` | ✓ | |  | `hryid_42` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `FinancialStmntHierarchyName` |  | |  | `hrytxt` |
+| `_Language` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

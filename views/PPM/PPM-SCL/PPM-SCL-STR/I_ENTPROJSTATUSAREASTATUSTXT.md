@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StatusAreaStatus` | `status` |
-| key `Language` | `langu` |
-| `StatusDescription` | `description` |
-| `_Language` | *Association* |
-| `_Key` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatusAreaStatus` | ✓ | |  | `status` |
+| `Language` | ✓ | |  | `langu` |
+| `StatusDescription` |  | |  | `description` |
+| `_Language` | | ✓ | | |
+| `_Key` | | ✓ | | |
 
 ## Associations
 

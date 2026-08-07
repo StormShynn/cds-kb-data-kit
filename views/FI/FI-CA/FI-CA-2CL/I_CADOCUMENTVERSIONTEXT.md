@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentVersion` | `cast( left( dd07t.domvalue_l, 3 ) as versn_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CADocumentVersionText` | `cast( ddtext as versn_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentVersion` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as versn_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CADocumentVersionText` |  | |  | `cast( ddtext as versn_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

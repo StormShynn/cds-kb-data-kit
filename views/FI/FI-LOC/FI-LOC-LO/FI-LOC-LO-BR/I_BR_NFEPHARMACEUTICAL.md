@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `docnum` |
-| key `BR_NotaFiscalItem` | `itmnum` |
-| `BR_ANVISACode` | `cast(cprodanvisa as logbr_anvisa_code preserving type)` |
-| `MedicineConsumerMaxPrice` | `cast(vpmc as logbr_consumermaxprice)` |
-| `BR_ANVISAExemptionReasonText` | `cast(exemp_reason as logbr_exemp_reason preserving type)` |
-| `SalesDocumentCurrency` | `_BR_NFDocumentCurrency.SalesDocumentCurrency` |
-| `_SalesDocumentCurrency` | *Association* |
-| `_BR_NotaFiscal` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |
+| `BR_ANVISACode` |  | |  | `cast(cprodanvisa as logbr_anvisa_code preserving type)` |
+| `MedicineConsumerMaxPrice` |  | |  | `cast(vpmc as logbr_consumermaxprice)` |
+| `BR_ANVISAExemptionReasonText` |  | |  | `cast(exemp_reason as logbr_exemp_reason preserving type)` |
+| `SalesDocumentCurrency` |  | | `_BR_NFDocumentCurrency` | `SalesDocumentCurrency` |
+| `_SalesDocumentCurrency` | | ✓ | | |
+| `_BR_NotaFiscal` | | ✓ | | |
 
 ## Associations
 

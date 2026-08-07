@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `ServiceContractItem` | `ServiceContractItem` |
-| key `UserStatus` | `UserStatus` |
-| `StatusProfile` | `StatusProfile` |
-| `_ServiceContractItemTP` | *Association* |
-| `_ServiceContractTP` | *Association* |
-| `_StatusCode` | *Association* |
-| `_StatusProfile` | *Association* |
-| `_UserStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceContractItem` | ✓ | |  |  |
+| `UserStatus` | ✓ | |  |  |
+| `StatusProfile` |  | |  |  |
+| `_ServiceContractItemTP` | | ✓ | | |
+| `_ServiceContractTP` | | ✓ | | |
+| `_StatusCode` | | ✓ | | |
+| `_StatusProfile` | | ✓ | | |
+| `_UserStatusText` | | ✓ | | |
 
 ## Source Code
 

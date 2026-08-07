@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallNumber` | `pabnum` |
-| key `JITCallItemNumber` | `cast(pabpos as njit_call_item_num preserving type)` |
-| key `DeliveryDocument` | `vbeln` |
-| key `DeliveryDocumentItem` | `posnr` |
-| `JITCallGoodsReceiptQuantity` | `pabavm` |
-| `BaseUnit` | `_SummarizedJITCallItem.BaseUnit` |
-| `JITCallGoodsReceiptIsPosted` | `partgr` |
-| `Plant` | `_SummarizedJITCall.Plant` |
-| `Supplier` | `_DeliveryDocument.Supplier` |
-| `_SummarizedJITCall` | *Association* |
-| `_SummarizedJITCallItem` | *Association* |
-| `_DeliveryDocument` | *Association* |
-| `_DeliveryDocumentItem` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallNumber` | ✓ | |  | `pabnum` |
+| `JITCallItemNumber` | ✓ | |  | `cast(pabpos as njit_call_item_num preserving type)` |
+| `DeliveryDocument` | ✓ | |  | `vbeln` |
+| `DeliveryDocumentItem` | ✓ | |  | `posnr` |
+| `JITCallGoodsReceiptQuantity` |  | |  | `pabavm` |
+| `BaseUnit` |  | | `_SummarizedJITCallItem` | `BaseUnit` |
+| `JITCallGoodsReceiptIsPosted` |  | |  | `partgr` |
+| `Plant` |  | | `_SummarizedJITCall` | `Plant` |
+| `Supplier` |  | | `_DeliveryDocument` | `Supplier` |
+| `_SummarizedJITCall` | | ✓ | | |
+| `_SummarizedJITCallItem` | | ✓ | | |
+| `_DeliveryDocument` | | ✓ | | |
+| `_DeliveryDocumentItem` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
 
 ## Associations
 

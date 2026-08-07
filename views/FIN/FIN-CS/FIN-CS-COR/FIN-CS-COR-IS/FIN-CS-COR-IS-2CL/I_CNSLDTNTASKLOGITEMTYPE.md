@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnTaskLogItemType` | `cast(left(_Domain.DomainValue, 2) as fincs_lineitemtype preserving type )` |
-| `DomainValue` | `_Domain.DomainValue` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnTaskLogItemType` | ✓ | |  | `cast(left(_Domain.DomainValue, 2) as fincs_lineitemtype preserving type )` |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

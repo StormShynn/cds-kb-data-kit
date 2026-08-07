@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CASubledgerApplication` | `cast( left( dd07l.domvalue_l, 5 ) as trsla_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CASubledgerApplication` | ✓ | |  | `cast( left( dd07l.domvalue_l, 5 ) as trsla_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingDocumentCategory` | `bstyp` |
-| key `PurchasingDocumentType` | `bsart` |
-| `PurchasingDocumentSubtype` | `bsakz` |
-| `PurgDocFieldSelControlKey` | `brefn` |
-| `PurgHasFlxblWorkflowApproval` | `scnr_based_wfl` |
-| `IsPurReqnOvrlRel` | `gsfrg` |
-| `PartnerDeterminationProcedure` | `pargr` |
-| `_Category` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingDocumentCategory` | ✓ | |  | `bstyp` |
+| `PurchasingDocumentType` | ✓ | |  | `bsart` |
+| `PurchasingDocumentSubtype` |  | |  | `bsakz` |
+| `PurgDocFieldSelControlKey` |  | |  | `brefn` |
+| `PurgHasFlxblWorkflowApproval` |  | |  | `scnr_based_wfl` |
+| `IsPurReqnOvrlRel` |  | |  | `gsfrg` |
+| `PartnerDeterminationProcedure` |  | |  | `pargr` |
+| `_Category` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

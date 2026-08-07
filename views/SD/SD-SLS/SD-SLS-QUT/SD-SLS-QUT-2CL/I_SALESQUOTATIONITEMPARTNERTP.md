@@ -32,25 +32,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotation` | `SalesQuotationItemPartner.SalesQuotation` |
-| key `SalesQuotationItem` | `SalesQuotationItemPartner.SalesQuotationItem` |
-| key `PartnerFunction` | `SalesQuotationItemPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `SalesQuotationItemPartner.PartnerFunctionForEdit` |
-| `Customer` | `SalesQuotationItemPartner.Customer` |
-| `Supplier` | `SalesQuotationItemPartner.Supplier` |
-| `Personnel` | `SalesQuotationItemPartner.Personnel` |
-| `ContactPerson` | `SalesQuotationItemPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `SalesQuotationItemPartner.ReferenceBusinessPartner` |
-| `Partner` | `SalesQuotationItemPartner.Partner` |
-| `PartnerIsSpecificForSDDocItem` | `SalesQuotationItemPartner.PartnerIsSpecificForSDDocItem` |
-| `SalesQuotationType` | `SalesQuotationItemPartner.SalesQuotationType` |
-| `SalesOrganization` | `SalesQuotationItemPartner.SalesOrganization` |
-| `DistributionChannel` | `SalesQuotationItemPartner.DistributionChannel` |
-| `OrganizationDivision` | `SalesQuotationItemPartner.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesQuotation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |
+| `SalesQuotationItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |
+| `SalesQuotationType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesQuotation` | | ✓ | | |
 
 ## Source Code
 

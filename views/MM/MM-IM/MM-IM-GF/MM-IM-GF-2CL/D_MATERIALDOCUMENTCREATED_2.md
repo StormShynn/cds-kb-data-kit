@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `InventoryTransactionType` | `vgart` |
-| `D_MaterialDocumentItemCrted_2` | `_MaterialDocumentItemCreated : composition [1..*] of D_MaterialDocumentItemCrted_2` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryTransactionType` |  | |  | `vgart` |
+| `D_MaterialDocumentItemCrted_2` |  | |  | `_MaterialDocumentItemCreated : composition [1..*] of D_MaterialDocumentItemCrted_2` |
 
 ## Source Code
 

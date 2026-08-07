@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPOeNBTargetGroup` | `td05_at_fs.szg_at` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPOeNBTargetGroup` | ✓ | |  | `szg_at` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

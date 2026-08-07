@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `_MaintenanceObjectListItem.Equipment` |
-| key `MaintenanceOrder` | `_MaintObjListMaintenanceOrder.MaintenanceOrder` |
-| `Material` | `_MaintenanceObjectListItem.Material` |
-| `SerialNumber` | `_MaintenanceObjectListItem.SerialNumber` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
+| `MaintenanceOrder` | ✓ | | `_MaintObjListMaintenanceOrder` | `MaintenanceOrder` |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
 
 ## Source Code
 

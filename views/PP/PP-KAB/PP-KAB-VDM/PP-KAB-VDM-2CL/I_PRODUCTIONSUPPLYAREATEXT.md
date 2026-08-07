@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionSupplyArea` | `pvkt.prvbe` |
-| key `Plant` | `pvkt.werks` |
-| key `Language` | `pvkt.spras` |
-| `ProductionSupplyAreaName` | `cast(pvkt.pvbtx as vdm_pvbtx preserving type)` |
-| `_Plant` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionSupplyArea` | ✓ | |  | `prvbe` |
+| `Plant` | ✓ | |  | `werks` |
+| `Language` | ✓ | |  | `spras` |
+| `ProductionSupplyAreaName` |  | |  | `cast(pvkt.pvbtx as vdm_pvbtx preserving type)` |
+| `_Plant` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

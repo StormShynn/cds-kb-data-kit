@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPRequestReason` | `reasoncode` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPRequestReason` | ✓ | |  | `reasoncode` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

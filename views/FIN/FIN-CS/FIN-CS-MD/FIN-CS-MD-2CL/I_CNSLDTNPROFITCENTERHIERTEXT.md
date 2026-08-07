@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `ControllingArea` | `ControllingArea` |
-| key `ConsolidationPrftCtrHierarchy` | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_profitcenterhierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnProfitCenterHierText` | `_HierarchyText.UniversalHierarchyText` |
-| `_ControllingArea` | *Association* |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `ControllingArea` | ✓ | |  |  |
+| `ConsolidationPrftCtrHierarchy` | ✓ | |  | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_profitcenterhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnProfitCenterHierText` |  | | `_HierarchyText` | `UniversalHierarchyText` |
+| `_ControllingArea` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReconciliationAccountType` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `ReconciliationAccountTypeName` | `ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReconciliationAccountType` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ReconciliationAccountTypeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

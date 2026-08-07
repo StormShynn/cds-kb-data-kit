@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RENoticeRuleType` | `cast( dd07l.domvalue_l as retmntruletype )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RENoticeRuleType` | ✓ | |  | `cast( dd07l.domvalue_l as retmntruletype )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

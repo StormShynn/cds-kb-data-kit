@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationTaskRunStatus` | `cast( left( Domain.domvalue_l,2 ) as fincs_taskrun_status preserving type )` |
-| `DomainValue` | `Domain.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationTaskRunStatus` | ✓ | |  | `cast( left( Domain.domvalue_l,2 ) as fincs_taskrun_status preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `PurchaseContract` |
-| key `PurchaseContractItem` | `PurchaseContractItem` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| key `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
-| key `ConditionScaleLine` | `ConditionScaleLine` |
-| `ConditionScaleQuantity` | `ConditionScaleQuantity` |
-| `ConditionScaleQuantityUnit` | `ConditionScaleQuantityUnit` |
-| `CndnScaleQuantityUnitISOCode` | `CndnScaleQuantityUnitISOCode` |
-| `ConditionScaleAmount` | `ConditionScaleAmount` |
-| `ConditionScaleAmountCurrency` | `ConditionScaleAmountCurrency` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `ConditionCurrency` | `ConditionCurrency` |
-| `ConditionRateAmount` | `ConditionRateAmount` |
-| `ConditionScaleIsDeleted` | `ConditionScaleIsDeleted` |
-| `PricingScaleType` | `PricingScaleType` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionQuantityUnitISOCode` | `ConditionQuantityUnitISOCode` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_PurContract` | *Association* |
-| `_PurContrItemCndnAmount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |
+| `ConditionScaleLine` | ✓ | |  |  |
+| `ConditionScaleQuantity` |  | |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |
+| `CndnScaleQuantityUnitISOCode` |  | |  |  |
+| `ConditionScaleAmount` |  | |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionScaleIsDeleted` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionQuantityUnitISOCode` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_PurContract` | | ✓ | | |
+| `_PurContrItemCndnAmount` | | ✓ | | |
 
 ## Source Code
 

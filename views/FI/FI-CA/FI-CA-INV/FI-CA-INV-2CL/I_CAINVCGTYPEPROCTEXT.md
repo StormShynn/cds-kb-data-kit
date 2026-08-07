@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgType` | `_tfk2603t.inv_type` |
-| key `CAInvcgProcess` | `_tfk2603t.inv_process` |
-| key `CAApplicationArea` | `_tfk2603t.applk` |
-| key `Language` | `_tfk2603t.langu` |
-| `CAInvcgTypeProcText` | `cast( _tfk2603t.text as inv_type_proc_txt_gfn_kk preserving type )` |
-| `CAInvcgDocumentTitleText` | `_tfk2603t.inv_doc_title` |
-| `_Language` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CAInvcgProcess` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgType` | ✓ | | `_tfk2603t` | `inv_type` |
+| `CAInvcgProcess` | ✓ | | `_tfk2603t` | `inv_process` |
+| `CAApplicationArea` | ✓ | | `_tfk2603t` | `applk` |
+| `Language` | ✓ | | `_tfk2603t` | `langu` |
+| `CAInvcgTypeProcText` |  | |  | `cast( _tfk2603t.text as inv_type_proc_txt_gfn_kk preserving type )` |
+| `CAInvcgDocumentTitleText` |  | | `_tfk2603t` | `inv_doc_title` |
+| `_Language` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAInvcgProcess` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGEnergyMix` | `GHGEnergyMix` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGEnergyMix` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

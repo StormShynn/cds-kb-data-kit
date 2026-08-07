@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `DependentRequirementsType` | `cast ( domvalue_l as sbdkz )` |
-| `Name` | `cast ( ddtext as val_text )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `DependentRequirementsType` | ✓ | |  | `cast ( domvalue_l as sbdkz )` |
+| `Name` |  | |  | `cast ( ddtext as val_text )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

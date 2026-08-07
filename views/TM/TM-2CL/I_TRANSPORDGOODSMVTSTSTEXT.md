@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdGoodsMovementStatus` | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_dlv_goods_mvt_sts preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrdGoodsMvtStatusDesc` | `cast(ddtext as /scmtms/vdm_goodsmvmt_sts_desc preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdGoodsMvtStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdGoodsMovementStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_dlv_goods_mvt_sts preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrdGoodsMvtStatusDesc` |  | |  | `cast(ddtext as /scmtms/vdm_goodsmvmt_sts_desc preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdGoodsMvtStatus` | | ✓ | | |
 
 ## Associations
 

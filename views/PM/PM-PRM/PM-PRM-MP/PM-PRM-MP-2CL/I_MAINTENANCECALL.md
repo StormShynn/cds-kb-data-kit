@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlan` | `mhio.warpl` |
-| key `MaintenanceCall` | `mhio.abnum` |
-| key `MaintenanceItem` | `mhio.wppos` |
-| `MaintenanceOrder` | `mhio.aufnr` |
-| `MaintenanceNotification` | `mhio.qmnum` |
-| `MaintCallHorizonIsNotReached` | `mhio.tsenq` |
-| `SchedulingStatus` | `mhio.tstat` |
-| `CompletionDate` | `mhio.addat` |
-| `CompletionTime` | `mhio.adtime` |
-| `PlannedStartDate` | `mhio.gstrp` |
-| `ReleasedByUserName` | `mhio.usermod` |
-| `ServiceOrder` | `mhio.service_order` |
-| `_MaintenancePlan` | *Association* |
-| `_MaintenanceItem` | *Association* |
-| `_MaintenanceOrder` | *Association* |
-| `_MaintenanceNotification` | *Association* |
-| `_ServiceOrder` | *Association* |
-| `_MaintPlanCallHistory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlan` | ✓ | |  | `warpl` |
+| `MaintenanceCall` | ✓ | |  | `abnum` |
+| `MaintenanceItem` | ✓ | |  | `wppos` |
+| `MaintenanceOrder` |  | |  | `aufnr` |
+| `MaintenanceNotification` |  | |  | `qmnum` |
+| `MaintCallHorizonIsNotReached` |  | |  | `tsenq` |
+| `SchedulingStatus` |  | |  | `tstat` |
+| `CompletionDate` |  | |  | `addat` |
+| `CompletionTime` |  | |  | `adtime` |
+| `PlannedStartDate` |  | |  | `gstrp` |
+| `ReleasedByUserName` |  | |  | `usermod` |
+| `ServiceOrder` |  | |  | `service_order` |
+| `_MaintenancePlan` | | ✓ | | |
+| `_MaintenanceItem` | | ✓ | | |
+| `_MaintenanceOrder` | | ✓ | | |
+| `_MaintenanceNotification` | | ✓ | | |
+| `_ServiceOrder` | | ✓ | | |
+| `_MaintPlanCallHistory` | | ✓ | | |
 
 ## Associations
 

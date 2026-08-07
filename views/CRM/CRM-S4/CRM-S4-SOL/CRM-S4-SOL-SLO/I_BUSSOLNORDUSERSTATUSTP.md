@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `UserStatus` | `UserStatus` |
-| `StatusProfile` | `StatusProfile` |
-| `_BusinessSolutionOrderTP` | *Association* |
-| `_StatusCode` | *Association* |
-| `_StatusProfile` | *Association* |
-| `_UserStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `UserStatus` | ✓ | |  |  |
+| `StatusProfile` |  | |  |  |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
+| `_StatusCode` | | ✓ | | |
+| `_StatusProfile` | | ✓ | | |
+| `_UserStatusText` | | ✓ | | |
 
 ## Source Code
 

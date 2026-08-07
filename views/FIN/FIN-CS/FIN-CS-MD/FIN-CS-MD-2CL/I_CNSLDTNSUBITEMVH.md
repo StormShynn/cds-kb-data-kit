@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SubItemCategory` | `SubItemCategory` |
-| key `SubItem` | `SubItem` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SubItemCategory` | ✓ | |  |  |
+| `SubItem` | ✓ | |  |  |
 
 ## Source Code
 

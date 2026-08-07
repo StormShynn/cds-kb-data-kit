@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `qdbmt.sprache` |
-| key `SamplingValuationMode` | `qdbmt.bewertmod` |
-| `SamplingValuationModeText` | `cast( qdbmt.kurztext as vdm_qbewmod_text preserving type )` |
-| `_SamplingValuationMode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |
+| `SamplingValuationMode` | ✓ | |  | `bewertmod` |
+| `SamplingValuationModeText` |  | |  | `cast( qdbmt.kurztext as vdm_qbewmod_text preserving type )` |
+| `_SamplingValuationMode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

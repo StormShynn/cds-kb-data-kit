@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CaseStatusProfile` | `scmgstatprof.profile_id` |
-| `CaseStatusObjectType` | `scmgstatprof.stat_obj_type` |
-| `CaseUserStatusSchema` | `scmgstatprof.stat_cust_scheme` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CaseStatusProfile` | ✓ | |  | `profile_id` |
+| `CaseStatusObjectType` |  | |  | `stat_obj_type` |
+| `CaseUserStatusSchema` |  | |  | `stat_cust_scheme` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

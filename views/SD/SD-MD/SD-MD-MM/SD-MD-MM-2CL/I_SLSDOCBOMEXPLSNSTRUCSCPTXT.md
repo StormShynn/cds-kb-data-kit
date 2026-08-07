@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SlsDocBOMExplsnStrucScp` | `cast(dd07t.domvalue_l as strum )` |
-| key `Language` | `ddlanguage` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `SlsDocBOMExplsnStrucScpDesc` | `dd07t.ddtext` |
-| `_SlsDocBOMExplsnStrucScp` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SlsDocBOMExplsnStrucScp` | ✓ | |  | `cast(dd07t.domvalue_l as strum )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `SlsDocBOMExplsnStrucScpDesc` |  | |  | `ddtext` |
+| `_SlsDocBOMExplsnStrucScp` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,45 +28,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ParentHandlingUnitUUID` | `guid_parent` |
-| key `StockItemUUID` | `guid_stock` |
-| `EWMWarehouse` | `lgnum` |
-| `ProductUUID` | `cast(matid as raw16 preserving type)` |
-| `StockDocumentCategory` | `stock_doccat` |
-| `StockDocumentNumber` | `stock_docno` |
-| `StockItemNumber` | `stock_itmno` |
-| `StockSegment` | `stk_seg_long` |
-| `CounterForStockSeparation` | `stock_cnt` |
-| `EWMDocumentCategory` | `doccat` |
-| `BatchUUID` | `batchid` |
-| `Batch` | `charg` |
-| `EWMBatchIsInRestrictedUseStock` | `brestr` |
-| `CountryOfOrigin` | `coo` |
-| `EWMStockType` | `cat` |
-| `HandlingUnitNumber` | `cast(huident as ewm_de_huident preserving type)` |
-| `HandlingUnitOpenTaskInd` | `flgmove` |
-| `HandlingUnitLogicalPosition` | `logpos` |
-| `EWMStorageType` | `lgtyp` |
-| `EWMStorageBin` | `lgpla` |
-| `EWMResource` | `rsrc` |
-| `EWMStockOwner` | `cast( owner as ewm_de_stockowner preserving type )` |
-| `StockOwnerPartnerRole` | `owner_role` |
-| `EntitledToDisposeParty` | `entitled` |
-| `EntitledToDisposePartnerRole` | `entitled_role` |
-| `EWMStockUsage` | `stock_usage` |
-| `AvailableEWMStockQty` | `quan` |
-| `EWMStockQuantityBaseUnit` | `unit` |
-| `StockKeepingAlternativeUoM` | `altme` |
-| `GoodsReceiptUTCDateTime` | `cast ( wdatu as /scwm/lvs_wdatu_noconv preserving type )` |
-| `ShelfLifeExpirationDate` | `vfdat` |
-| `EWMStockIsBlockedForInventory` | `skzsi` |
-| `TranspUnitInternalNumber` | `tu_num` |
-| `WhseQualityInspectionType` | `insptyp` |
-| `QualityInspectionDocUUID` | `inspid` |
-| `EWMStorageBinImprovable` | `outcon` |
-| `EWMQuantityIsRead` | `read_quants` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ParentHandlingUnitUUID` | ✓ | |  | `guid_parent` |
+| `StockItemUUID` | ✓ | |  | `guid_stock` |
+| `EWMWarehouse` |  | |  | `lgnum` |
+| `ProductUUID` |  | |  | `cast(matid as raw16 preserving type)` |
+| `StockDocumentCategory` |  | |  | `stock_doccat` |
+| `StockDocumentNumber` |  | |  | `stock_docno` |
+| `StockItemNumber` |  | |  | `stock_itmno` |
+| `StockSegment` |  | |  | `stk_seg_long` |
+| `CounterForStockSeparation` |  | |  | `stock_cnt` |
+| `EWMDocumentCategory` |  | |  | `doccat` |
+| `BatchUUID` |  | |  | `batchid` |
+| `Batch` |  | |  | `charg` |
+| `EWMBatchIsInRestrictedUseStock` |  | |  | `brestr` |
+| `CountryOfOrigin` |  | |  | `coo` |
+| `EWMStockType` |  | |  | `cat` |
+| `HandlingUnitNumber` |  | |  | `cast(huident as ewm_de_huident preserving type)` |
+| `HandlingUnitOpenTaskInd` |  | |  | `flgmove` |
+| `HandlingUnitLogicalPosition` |  | |  | `logpos` |
+| `EWMStorageType` |  | |  | `lgtyp` |
+| `EWMStorageBin` |  | |  | `lgpla` |
+| `EWMResource` |  | |  | `rsrc` |
+| `EWMStockOwner` |  | |  | `cast( owner as ewm_de_stockowner preserving type )` |
+| `StockOwnerPartnerRole` |  | |  | `owner_role` |
+| `EntitledToDisposeParty` |  | |  | `entitled` |
+| `EntitledToDisposePartnerRole` |  | |  | `entitled_role` |
+| `EWMStockUsage` |  | |  | `stock_usage` |
+| `AvailableEWMStockQty` |  | |  | `quan` |
+| `EWMStockQuantityBaseUnit` |  | |  | `unit` |
+| `StockKeepingAlternativeUoM` |  | |  | `altme` |
+| `GoodsReceiptUTCDateTime` |  | |  | `cast ( wdatu as /scwm/lvs_wdatu_noconv preserving type )` |
+| `ShelfLifeExpirationDate` |  | |  | `vfdat` |
+| `EWMStockIsBlockedForInventory` |  | |  | `skzsi` |
+| `TranspUnitInternalNumber` |  | |  | `tu_num` |
+| `WhseQualityInspectionType` |  | |  | `insptyp` |
+| `QualityInspectionDocUUID` |  | |  | `inspid` |
+| `EWMStorageBinImprovable` |  | |  | `outcon` |
+| `EWMQuantityIsRead` |  | |  | `read_quants` |
 
 ## Source Code
 

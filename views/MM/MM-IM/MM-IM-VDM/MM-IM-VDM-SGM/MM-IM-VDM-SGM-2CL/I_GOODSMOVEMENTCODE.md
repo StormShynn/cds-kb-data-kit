@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GoodsMovementCode` | `cast(substring(domvalue_l, 1, 2) as gm_code)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GoodsMovementCode` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as gm_code)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

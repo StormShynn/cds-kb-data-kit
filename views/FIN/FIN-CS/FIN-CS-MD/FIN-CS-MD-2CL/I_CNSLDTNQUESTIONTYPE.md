@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationQuestionType` | `cast(left(_Source.DomainValue, 1) as fincs_questiontype preserving type )` |
-| `DomainValue` | `_Source.DomainValue` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationQuestionType` | ✓ | |  | `cast(left(_Source.DomainValue, 1) as fincs_questiontype preserving type )` |
+| `DomainValue` |  | | `_Source` | `DomainValue` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

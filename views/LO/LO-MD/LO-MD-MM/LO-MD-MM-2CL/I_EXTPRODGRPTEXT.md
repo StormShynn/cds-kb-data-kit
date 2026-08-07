@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ExternalProductGroup` | `cast(extwg as externalproductgroup preserving type )` |
-| key `Language` | `spras` |
-| `ExternalProductGroupName` | `cast(ewbez as externalproductgroupname preserving type )` |
-| `_ExternalProductGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ExternalProductGroup` | ✓ | |  | `cast(extwg as externalproductgroup preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `ExternalProductGroupName` |  | |  | `cast(ewbez as externalproductgroupname preserving type )` |
+| `_ExternalProductGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

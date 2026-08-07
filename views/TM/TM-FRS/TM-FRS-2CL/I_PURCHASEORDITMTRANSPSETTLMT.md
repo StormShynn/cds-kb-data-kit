@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchasingDocument` |
-| key `PurchaseOrderItem` | `PurchasingDocumentItem` |
-| `TransportationOrder` | `TransportationOrder` |
-| `ServiceProvider` | `Carrier` |
-| `TransportationShippingType` | `TransportationShippingType` |
-| `TransportationModeCategory` | `TransportationModeCategory` |
-| `TranspChargeType` | `TranspChargeType` |
-| `TransportationOrderStop` | `TransportationOrderStop` |
-| `TranspOrdItem` | `TranspOrdItem` |
-| `TranspOrdStageSrceLocation` | `TranspOrdStageSrceLocation` |
-| `TranspOrdStageDestLocation` | `TranspOrdStageDestLocation` |
-| `_PurchaseOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  | `PurchasingDocument` |
+| `PurchaseOrderItem` | ✓ | |  | `PurchasingDocumentItem` |
+| `TransportationOrder` |  | |  |  |
+| `ServiceProvider` |  | |  | `Carrier` |
+| `TransportationShippingType` |  | |  |  |
+| `TransportationModeCategory` |  | |  |  |
+| `TranspChargeType` |  | |  |  |
+| `TransportationOrderStop` |  | |  |  |
+| `TranspOrdItem` |  | |  |  |
+| `TranspOrdStageSrceLocation` |  | |  |  |
+| `TranspOrdStageDestLocation` |  | |  |  |
+| `_PurchaseOrderItem` | | ✓ | | |
 
 ## Associations
 

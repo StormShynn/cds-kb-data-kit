@@ -32,125 +32,125 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| `BusinessPartnerUUID` | `BusinessPartnerUUID` |
-| `FullName` | `FullName` |
-| `BusinessPartnerForEdit` | `BusinessPartnerForEdit` |
-| `BusinessPartnerGrouping` | `BusinessPartnerGrouping` |
-| `BusinessPartnerCategory` | `BusinessPartnerCategory` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `FormOfAddress` | `FormOfAddress` |
-| `FormOfAddressPerson` | `FormOfAddressPerson` |
-| `FirstName` | `FirstName` |
-| `LastName` | `LastName` |
-| `AdditionalLastName` | `AdditionalLastName` |
-| `BusinessPartnerBirthName` | `BusinessPartnerBirthName` |
-| `MiddleName` | `MiddleName` |
-| `AcademicTitle` | `AcademicTitle` |
-| `AcademicTitle2` | `AcademicTitle2` |
-| `BusinessPartnerSupplementName` | `BusinessPartnerSupplementName` |
-| `LastNamePrefix` | `LastNamePrefix` |
-| `LastNameSecondPrefix` | `LastNameSecondPrefix` |
-| `PersonFullName` | `PersonFullName` |
-| `BusinessPartnerNicknameLabel` | `BusinessPartnerNicknameLabel` |
-| `Initials` | `Initials` |
-| `IsNaturalPerson` | `cast( IsNaturalPerson as boole_d preserving type )` |
-| `Language` | `Language` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `BirthDate` | `BirthDate` |
-| `BusinessPartnerBirthplaceName` | `BusinessPartnerBirthplaceName` |
-| `BusinessPartnerBirthDateStatus` | `BusinessPartnerBirthDateStatus` |
-| `BusinessPartnerDeathDate` | `BusinessPartnerDeathDate` |
-| `BusinessPartnerOccupation` | `BusinessPartnerOccupation` |
-| `BusPartNationality` | `BusPartNationality` |
-| `BusPartMaritalStatus` | `BusPartMaritalStatus` |
-| `IsMale` | `IsMale` |
-| `IsFemale` | `IsFemale` |
-| `IsSexUnknown` | `IsSexUnknown` |
-| `GenderCodeName` | `GenderCodeName` |
-| `AdditionalName` | `AdditionalName` |
-| `BusinessPartnerIDByExtSystem` | `BusinessPartnerIDByExtSystem` |
-| `NonResidentCompanyOriginCntry` | `NonResidentCompanyOriginCntry` |
-| `NaturalPersonEmployerName` | `NaturalPersonEmployerName` |
-| `BusinessPartnerSalutation` | `BusinessPartnerSalutation` |
-| `FormOfAddressOrganization` | `FormOfAddressOrganization` |
-| `OrganizationBPName1` | `OrganizationBPName1` |
-| `OrganizationBPName2` | `OrganizationBPName2` |
-| `OrganizationBPName3` | `OrganizationBPName3` |
-| `OrganizationBPName4` | `OrganizationBPName4` |
-| `LegalForm` | `LegalForm` |
-| `LegalEntityOfOrganization` | `LegalEntityOfOrganization` |
-| `OrganizationFoundationDate` | `OrganizationFoundationDate` |
-| `OrganizationLiquidationDate` | `OrganizationLiquidationDate` |
-| `InternationalLocationNumber1` | `InternationalLocationNumber1` |
-| `InternationalLocationNumber2` | `InternationalLocationNumber2` |
-| `InternationalLocationNumber3` | `InternationalLocationNumber3` |
-| `ETag` | `ETag` |
-| `FormOfAddressGroup` | `FormOfAddressGroup` |
-| `GroupBusinessPartnerName1` | `GroupBusinessPartnerName1` |
-| `GroupBusinessPartnerName2` | `GroupBusinessPartnerName2` |
-| `BusinessPartnerGroupType` | `BusinessPartnerGroupType` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `BusinessPartnerKind` | `BusinessPartnerType` |
-| `BusinessPartnerPrintFormat` | `BusinessPartnerPrintFormat` |
-| `BusinessPartnerDataOriginType` | `BusinessPartnerDataOriginType` |
-| `BusinessPartnerIsBlocked` | `BusinessPartnerIsBlocked` |
-| `IsMarkedForArchiving` | `IsMarkedForArchiving` |
-| `BusinessPartnerIsNotReleased` | `BusinessPartnerIsNotReleased` |
-| `ContactPermission` | `ContactPermission` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `SearchTerm1` | `SearchTerm1` |
-| `SearchTerm2` | `SearchTerm2` |
-| `BPFirstNameSearchHelp` | `BPFirstNameSearchHelp` |
-| `BPLastNameSearchHelp` | `BPLastNameSearchHelp` |
-| `NameFormat` | `NameFormat` |
-| `NameCountry` | `NameCountry` |
-| `BusPartPersonDataIsHidden` | `BusPartPersonDataIsHidden` |
-| `BusPartOrgDataIsHidden` | `BusPartOrgDataIsHidden` |
-| `BusPartGroupDataIsHidden` | `BusPartGroupDataIsHidden` |
-| `BusPartAddrLanguageIsHidden` | `BusPartAddrLanguageIsHidden` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_BusinessPartnerGrouping` | *Association* |
-| `_BusinessPartnerCategory` | *Association* |
-| `_AcademicTitleValueHelp` | *Association* |
-| `_BusinessPartnerLegalForm` | *Association* |
-| `_BusinessPartnerLegalEntity` | *Association* |
-| `_AuthorizationGroup` | *Association* |
-| `_BusinessPartnerType` | *Association* |
-| `_PrintFormat` | *Association* |
-| `_DataOriginType` | *Association* |
-| `_ContactPermission` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
-| `_BusinessPartnerRole` | *Association* |
-| `_BusinessPartnerTaxNumber` | *Association* |
-| `_BusinessPartnerIdentification` | *Association* |
-| `_BusinessPartnerIndustry` | *Association* |
-| `_BusinessPartnerBank` | *Association* |
-| `_BPAddrIndependentPhone` | *Association* |
-| `_BPAddrIndependentMobile` | *Association* |
-| `_BPAddrIndependentEmail` | *Association* |
-| `_BPAddIndependentWebsite` | *Association* |
-| `_BPAddIndependentFax` | *Association* |
-| `_BPDataController` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `BusinessPartnerUUID` |  | |  |  |
+| `FullName` |  | |  |  |
+| `BusinessPartnerForEdit` |  | |  |  |
+| `BusinessPartnerGrouping` |  | |  |  |
+| `BusinessPartnerCategory` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `FormOfAddressPerson` |  | |  |  |
+| `FirstName` |  | |  |  |
+| `LastName` |  | |  |  |
+| `AdditionalLastName` |  | |  |  |
+| `BusinessPartnerBirthName` |  | |  |  |
+| `MiddleName` |  | |  |  |
+| `AcademicTitle` |  | |  |  |
+| `AcademicTitle2` |  | |  |  |
+| `BusinessPartnerSupplementName` |  | |  |  |
+| `LastNamePrefix` |  | |  |  |
+| `LastNameSecondPrefix` |  | |  |  |
+| `PersonFullName` |  | |  |  |
+| `BusinessPartnerNicknameLabel` |  | |  |  |
+| `Initials` |  | |  |  |
+| `IsNaturalPerson` |  | |  | `cast( IsNaturalPerson as boole_d preserving type )` |
+| `Language` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `BirthDate` |  | |  |  |
+| `BusinessPartnerBirthplaceName` |  | |  |  |
+| `BusinessPartnerBirthDateStatus` |  | |  |  |
+| `BusinessPartnerDeathDate` |  | |  |  |
+| `BusinessPartnerOccupation` |  | |  |  |
+| `BusPartNationality` |  | |  |  |
+| `BusPartMaritalStatus` |  | |  |  |
+| `IsMale` |  | |  |  |
+| `IsFemale` |  | |  |  |
+| `IsSexUnknown` |  | |  |  |
+| `GenderCodeName` |  | |  |  |
+| `AdditionalName` |  | |  |  |
+| `BusinessPartnerIDByExtSystem` |  | |  |  |
+| `NonResidentCompanyOriginCntry` |  | |  |  |
+| `NaturalPersonEmployerName` |  | |  |  |
+| `BusinessPartnerSalutation` |  | |  |  |
+| `FormOfAddressOrganization` |  | |  |  |
+| `OrganizationBPName1` |  | |  |  |
+| `OrganizationBPName2` |  | |  |  |
+| `OrganizationBPName3` |  | |  |  |
+| `OrganizationBPName4` |  | |  |  |
+| `LegalForm` |  | |  |  |
+| `LegalEntityOfOrganization` |  | |  |  |
+| `OrganizationFoundationDate` |  | |  |  |
+| `OrganizationLiquidationDate` |  | |  |  |
+| `InternationalLocationNumber1` |  | |  |  |
+| `InternationalLocationNumber2` |  | |  |  |
+| `InternationalLocationNumber3` |  | |  |  |
+| `ETag` |  | |  |  |
+| `FormOfAddressGroup` |  | |  |  |
+| `GroupBusinessPartnerName1` |  | |  |  |
+| `GroupBusinessPartnerName2` |  | |  |  |
+| `BusinessPartnerGroupType` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `BusinessPartnerKind` |  | |  | `BusinessPartnerType` |
+| `BusinessPartnerPrintFormat` |  | |  |  |
+| `BusinessPartnerDataOriginType` |  | |  |  |
+| `BusinessPartnerIsBlocked` |  | |  |  |
+| `IsMarkedForArchiving` |  | |  |  |
+| `BusinessPartnerIsNotReleased` |  | |  |  |
+| `ContactPermission` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `SearchTerm1` |  | |  |  |
+| `SearchTerm2` |  | |  |  |
+| `BPFirstNameSearchHelp` |  | |  |  |
+| `BPLastNameSearchHelp` |  | |  |  |
+| `NameFormat` |  | |  |  |
+| `NameCountry` |  | |  |  |
+| `BusPartPersonDataIsHidden` |  | |  |  |
+| `BusPartOrgDataIsHidden` |  | |  |  |
+| `BusPartGroupDataIsHidden` |  | |  |  |
+| `BusPartAddrLanguageIsHidden` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_BusinessPartnerGrouping` | | ✓ | | |
+| `_BusinessPartnerCategory` | | ✓ | | |
+| `_AcademicTitleValueHelp` | | ✓ | | |
+| `_BusinessPartnerLegalForm` | | ✓ | | |
+| `_BusinessPartnerLegalEntity` | | ✓ | | |
+| `_AuthorizationGroup` | | ✓ | | |
+| `_BusinessPartnerType` | | ✓ | | |
+| `_PrintFormat` | | ✓ | | |
+| `_DataOriginType` | | ✓ | | |
+| `_ContactPermission` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_BusinessPartnerRole` | | ✓ | | |
+| `_BusinessPartnerTaxNumber` | | ✓ | | |
+| `_BusinessPartnerIdentification` | | ✓ | | |
+| `_BusinessPartnerIndustry` | | ✓ | | |
+| `_BusinessPartnerBank` | | ✓ | | |
+| `_BPAddrIndependentPhone` | | ✓ | | |
+| `_BPAddrIndependentMobile` | | ✓ | | |
+| `_BPAddrIndependentEmail` | | ✓ | | |
+| `_BPAddIndependentWebsite` | | ✓ | | |
+| `_BPAddIndependentFax` | | ✓ | | |
+| `_BPDataController` | | ✓ | | |
 
 ## Source Code
 

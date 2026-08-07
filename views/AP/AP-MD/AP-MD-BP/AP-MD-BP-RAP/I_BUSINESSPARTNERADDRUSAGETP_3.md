@@ -32,33 +32,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| key `AddressUsage` | `AddressUsage` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `AddressUsageForEditValue` | `AddressUsageForEditValue` |
-| `ValidityEndDateForEdit` | `ValidityEndDateForEdit` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `StandardUsage` | `StandardUsage` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `BPAddressIsProtected` | `BPAddressIsProtected` |
-| `_BusinessPartnerAddress` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_AddressType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `AddressUsage` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `AddressUsageForEditValue` |  | |  |  |
+| `ValidityEndDateForEdit` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `StandardUsage` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `BPAddressIsProtected` |  | |  |  |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_AddressType` | | ✓ | | |
 
 ## Source Code
 

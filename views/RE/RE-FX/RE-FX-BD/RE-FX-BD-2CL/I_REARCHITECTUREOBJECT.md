@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REArchitectureObjectUUID` | `architectureobjectuuid` |
-| `REArchitectureObjectType` | `objtype` |
-| `InternalRealEstateNumber` | `intreno` |
-| `REStatusObject` | `objnr` |
-| `REArchitectureObjectOID` | `oid` |
-| `REArchitectureObjectNumber` | `obnr` |
-| `REArchtrObjectAlternativeID` | `alternativeid` |
-| `REArchitectureObjectName` | `name` |
-| `REArchitectureObjectParentOID` | `_REArchitectureObjectNode.REArchitectureObjectParentOID` |
-| `REIdentificationKey` | `_REKeyAssgmt.REIdentificationKey` |
-| `ValidityStartDate` | `validfrom` |
-| `ValidityEndDate` | `validto` |
-| `REAuthorizationGroup` | `authgrp` |
-| `CreationDateTime` | `creationdatetime` |
-| `LastChangeDateTime` | `lastchangedatetime` |
-| `LocalLastChangeDateTime` | `locallastchangedatetime` |
-| `_REKeyAssgmt` | *Association* |
-| `_REAuthorizationGroup` | *Association* |
-| `_REArchitectureObjectType` | *Association* |
-| `_Text` | *Association* |
-| `_StatusObject` | *Association* |
-| `_REArchitectureObjectNode` | *Association* |
-| `_REArchtrObjectAncestor` | *Association* |
-| `_REArchtrObjectDescendant` | *Association* |
-| `_REArchitectureObjRoot` | *Association* |
-| `_REArchitectureObjSite` | *Association* |
-| `_REArchitectureObjBuilding` | *Association* |
-| `_REArchitectureObjLand` | *Association* |
-| `_REArchitectureObjAddress` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REArchitectureObjectUUID` | ✓ | |  | `architectureobjectuuid` |
+| `REArchitectureObjectType` |  | |  | `objtype` |
+| `InternalRealEstateNumber` |  | |  | `intreno` |
+| `REStatusObject` |  | |  | `objnr` |
+| `REArchitectureObjectOID` |  | |  | `oid` |
+| `REArchitectureObjectNumber` |  | |  | `obnr` |
+| `REArchtrObjectAlternativeID` |  | |  | `alternativeid` |
+| `REArchitectureObjectName` |  | |  | `name` |
+| `REArchitectureObjectParentOID` |  | | `_REArchitectureObjectNode` | `REArchitectureObjectParentOID` |
+| `REIdentificationKey` |  | | `_REKeyAssgmt` | `REIdentificationKey` |
+| `ValidityStartDate` |  | |  | `validfrom` |
+| `ValidityEndDate` |  | |  | `validto` |
+| `REAuthorizationGroup` |  | |  | `authgrp` |
+| `CreationDateTime` |  | |  | `creationdatetime` |
+| `LastChangeDateTime` |  | |  | `lastchangedatetime` |
+| `LocalLastChangeDateTime` |  | |  | `locallastchangedatetime` |
+| `_REKeyAssgmt` | | ✓ | | |
+| `_REAuthorizationGroup` | | ✓ | | |
+| `_REArchitectureObjectType` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_StatusObject` | | ✓ | | |
+| `_REArchitectureObjectNode` | | ✓ | | |
+| `_REArchtrObjectAncestor` | | ✓ | | |
+| `_REArchtrObjectDescendant` | | ✓ | | |
+| `_REArchitectureObjRoot` | | ✓ | | |
+| `_REArchitectureObjSite` | | ✓ | | |
+| `_REArchitectureObjBuilding` | | ✓ | | |
+| `_REArchitectureObjLand` | | ✓ | | |
+| `_REArchitectureObjAddress` | | ✓ | | |
 
 ## Associations
 

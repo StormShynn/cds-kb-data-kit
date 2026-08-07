@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinTransCntrconfStatus` | `cast( dd07l.domvalue_l as tb_reconf )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinTransCntrconfStatus` | ✓ | |  | `cast( dd07l.domvalue_l as tb_reconf )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

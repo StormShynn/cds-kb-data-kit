@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnFSItemMapping` | `cast ( _Source.mapping_id as fincs_fsitemmapping preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnFSItemMapping` | ✓ | |  | `cast ( _Source.mapping_id as fincs_fsitemmapping preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

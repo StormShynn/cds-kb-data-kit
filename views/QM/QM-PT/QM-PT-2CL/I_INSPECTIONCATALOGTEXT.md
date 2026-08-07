@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tq15t.sprache` |
-| key `InspectionCatalog` | `tq15t.katalogart` |
-| `InspSpecAdditionalCatalogText` | `tq15t.katalogtxt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |
+| `InspectionCatalog` | ✓ | |  | `katalogart` |
+| `InspSpecAdditionalCatalogText` |  | |  | `katalogtxt` |
 
 ## Source Code
 

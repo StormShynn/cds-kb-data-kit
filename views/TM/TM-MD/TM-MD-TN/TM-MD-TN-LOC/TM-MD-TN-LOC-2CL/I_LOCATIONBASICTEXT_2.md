@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LocationUUID` | `cast( locid as /sapapo/location_id preserving type )` |
-| key `Language` | `cast( spras as spras preserving type )` |
-| `LocationDescription` | `descr40` |
-| `_Language` | *Association* |
-| `_LocationBasic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LocationUUID` | ✓ | |  | `cast( locid as /sapapo/location_id preserving type )` |
+| `Language` | ✓ | |  | `cast( spras as spras preserving type )` |
+| `LocationDescription` |  | |  | `descr40` |
+| `_Language` | | ✓ | | |
+| `_LocationBasic` | | ✓ | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Product` | `ehfnd_mat_id` |
-| `PackingInstructionNumber` | `ehfnd_pi_id` |
-| `_Root` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` |  | |  | `ehfnd_mat_id` |
+| `PackingInstructionNumber` |  | |  | `ehfnd_pi_id` |
+| `_Root` | | ✓ | | |
 
 ## Source Code
 

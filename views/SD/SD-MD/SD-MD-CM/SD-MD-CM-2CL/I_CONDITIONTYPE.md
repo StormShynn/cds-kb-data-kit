@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionUsage` | `kvewe` |
-| key `ConditionApplication` | `kappl` |
-| key `ConditionType` | `kschl` |
-| `_ConditionApplication` | *Association* |
-| `_ConditionUsage` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `ConditionType` | ✓ | |  | `kschl` |
+| `_ConditionApplication` | | ✓ | | |
+| `_ConditionUsage` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

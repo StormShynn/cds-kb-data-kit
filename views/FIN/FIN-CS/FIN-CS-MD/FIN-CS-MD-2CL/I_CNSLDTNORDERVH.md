@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderID` | `OrderID` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderID` | ✓ | |  |  |
 
 ## Source Code
 

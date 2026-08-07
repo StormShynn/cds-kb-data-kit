@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequest` | `DebitMemoReqItemPricingElement.DebitMemoRequest` |
-| key `DebitMemoRequestItem` | `DebitMemoReqItemPricingElement.DebitMemoRequestItem` |
-| key `PricingProcedureStep` | `DebitMemoReqItemPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `DebitMemoReqItemPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `DebitMemoReqItemPricingElement.ConditionApplication` |
-| `ConditionType` | `DebitMemoReqItemPricingElement.ConditionType` |
-| `ConditionCalculationType` | `DebitMemoReqItemPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `DebitMemoReqItemPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `DebitMemoReqItemPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `DebitMemoReqItemPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `DebitMemoReqItemPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `DebitMemoReqItemPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `DebitMemoReqItemPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `DebitMemoReqItemPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `DebitMemoReqItemPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `DebitMemoReqItemPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `DebitMemoReqItemPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `DebitMemoReqItemPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `DebitMemoReqItemPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `DebitMemoReqItemPricingElement.ConditionInactiveReason` |
-| `DebitMemoRequestType` | `DebitMemoReqItemPricingElement.DebitMemoRequestType` |
-| `SalesOrganization` | `DebitMemoReqItemPricingElement.SalesOrganization` |
-| `DistributionChannel` | `DebitMemoReqItemPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `DebitMemoReqItemPricingElement.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_DebitMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |
+| `DebitMemoRequestItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `DebitMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_DebitMemoRequest` | | ✓ | | |
 
 ## Source Code
 

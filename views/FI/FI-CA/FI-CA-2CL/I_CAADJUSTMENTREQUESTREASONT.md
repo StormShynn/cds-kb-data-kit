@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAAdjustmentRequestReason` | `argrd` |
-| key `Language` | `spras` |
-| `CAAdjustmentRequestReasonName` | `artxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAAdjustmentRequestReason` | ✓ | |  | `argrd` |
+| `Language` | ✓ | |  | `spras` |
+| `CAAdjustmentRequestReasonName` |  | |  | `artxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

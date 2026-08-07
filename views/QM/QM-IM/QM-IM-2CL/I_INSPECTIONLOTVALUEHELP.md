@@ -29,146 +29,146 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `_insplots.InspectionLot` |
-| key `InspectionOperation` | `I_InspectionOperation.InspectionOperation` |
-| key `InspectionCharacteristic` | `I_InspectionCharacteristic.InspectionCharacteristic` |
-| `Material` | `_insplots.Material` |
-| `Batch` | `_insplots.Batch` |
-| `Plant` | `_insplots.Plant` |
-| `InspectionLotOrigin` | `_insplots.InspectionLotOrigin` |
-| `ManufacturingOrder` | `_insplots.ManufacturingOrder` |
-| `InspectionLotText` | `_insplots.InspectionLotText` |
-| `InspectionLotType` | `_insplots.InspectionLotType` |
-| `InspectionLotQuantity` | `_insplots.InspectionLotQuantity` |
-| `InspectionLotQuantityUnit` | `_insplots.InspectionLotQuantityUnit` |
-| `InspLotCreatedOnLocalDate` | `cast(_insplots.InspLotCreatedOnLocalDate as abap.char( 8 ))` |
-| `InspectionLotHasUsageDecision` | `_insplots.InspectionLotHasUsageDecision` |
-| `InspLotNmbrOpenLongTermCharc` | `_insplots.InspLotNmbrOpenLongTermCharc` |
-| `InspectionLotObjectText` | `_insplots.InspectionLotObjectText` |
-| `GoodsReceiptIsMovedToBlkdStock` | `_insplots.GoodsReceiptIsMovedToBlkdStock` |
-| `InspectionLotHasQuantity` | `_insplots.InspectionLotHasQuantity` |
-| `InspectionLotHasPartialLots` | `_insplots.InspectionLotHasPartialLots` |
-| `InspLotIsDocumentationRequired` | `_insplots.InspLotIsDocumentationRequired` |
-| `InspectionLotApproval` | `_insplots.InspectionLotApproval` |
-| `InspLotDigitalSgntrInUsgeDcsn` | `_insplots.InspLotDigitalSgntrInUsgeDcsn` |
-| `InspectionLotIsSkipped` | `_insplots.InspectionLotIsSkipped` |
-| `InspectionLotIsFullInspection` | `_insplots.InspectionLotIsFullInspection` |
-| `InspLotCreatedOnLocalTime` | `cast(_insplots.InspLotCreatedOnLocalTime as abap.char( 6 ))` |
-| `InspectionLotCreatedBy` | `_insplots.InspectionLotCreatedBy` |
-| `InspectionLotCreatedOn` | `cast(_insplots.InspectionLotCreatedOn as abap.char( 8 ))` |
-| `InspectionLotCreatedOnTime` | `cast(_insplots.InspectionLotCreatedOnTime as abap.char( 6 ))` |
-| `InspectionLotChangedBy` | `_insplots.InspectionLotChangedBy` |
-| `InspectionLotChangeDate` | `cast(_insplots.InspectionLotChangeDate as abap.char( 8 ))` |
-| `InspectionLotChangeTime` | `cast(_insplots.InspectionLotChangeTime as abap.char( 6 ))` |
-| `InspectionLotStartDate` | `cast(_insplots.InspectionLotStartDate as abap.char( 8 ))` |
-| `InspectionLotStartTime` | `cast(_insplots.InspectionLotStartTime as abap.char( 6 ))` |
-| `InspectionLotEndDate` | `cast(_insplots.InspectionLotEndDate as abap.char( 8 ))` |
-| `InspectionLotEndTime` | `cast(_insplots.InspectionLotEndTime as abap.char( 6 ))` |
-| `BillOfOperationsType` | `_insplots.BillOfOperationsType` |
-| `BillOfOperationsGroup` | `_insplots.BillOfOperationsGroup` |
-| `BillOfOperationsUsage` | `_insplots.BillOfOperationsUsage` |
-| `BillOfOperationsVariant` | `_insplots.BillOfOperationsVariant` |
-| `SmplDrawingProcedure` | `_insplots.SmplDrawingProcedure` |
-| `SmplDrwgProcedIsConfRequired` | `_insplots.SmplDrwgProcedIsConfRequired` |
-| `InspLotSelectionValidFromDate` | `cast(_insplots.InspLotSelectionValidFromDate as abap.char( 8 ))` |
-| `ProductionVersion` | `_insplots.ProductionVersion` |
-| `Customer` | `_insplots.Customer` |
-| `Supplier` | `_insplots.Supplier` |
-| `Manufacturer` | `_insplots.Manufacturer` |
-| `ManufacturerPartNmbr` | `_insplots.ManufacturerPartNmbr` |
-| `MaterialRevisionLevel` | `_insplots.MaterialRevisionLevel` |
-| `MaterialIsBatchManaged` | `_insplots.MaterialIsBatchManaged` |
-| `BatchStorageLocation` | `_insplots.BatchStorageLocation` |
-| `MaterialCompIsSpecialStock` | `_insplots.MaterialCompIsSpecialStock` |
-| `PurchasingOrganization` | `_insplots.PurchasingOrganization` |
-| `PurchasingDocument` | `_insplots.PurchasingDocument` |
-| `AccountingDocumentType` | `_insplots.AccountingDocumentType` |
-| `MaterialDocumentYear` | `_insplots.MaterialDocumentYear` |
-| `MaterialDocument` | `_insplots.MaterialDocument` |
-| `MatlDocLatestPostgDate` | `cast(_insplots.MatlDocLatestPostgDate as abap.char( 8 ))` |
-| `GoodsMovementType` | `_insplots.GoodsMovementType` |
-| `InspectionLotPlant` | `_insplots.InspectionLotPlant` |
-| `InspectionLotStorageLocation` | `_insplots.InspectionLotStorageLocation` |
-| `Warehouse` | `_insplots.Warehouse` |
-| `StorageType` | `_insplots.StorageType` |
-| `StorageBin` | `_insplots.StorageBin` |
-| `SalesOrder` | `_insplots.SalesOrder` |
-| `DeliveryDocument` | `_insplots.DeliveryDocument` |
-| `DeliveryCategory` | `_insplots.DeliveryCategory` |
-| `InspectionDeliveryCategory` | `_insplots.InspectionDeliveryCategory` |
-| `Route` | `_insplots.Route` |
-| `BillToPartyCountry` | `_insplots.BillToPartyCountry` |
-| `SoldToParty` | `_insplots.SoldToParty` |
-| `SalesOrganization` | `_insplots.SalesOrganization` |
-| `MaterialByCustomer` | `_insplots.MaterialByCustomer` |
-| `InspLotNmbrAddlRecordedCharc` | `_insplots.InspLotNmbrAddlRecordedCharc` |
-| `InspLotNmbrOpenShortTermCharc` | `_insplots.InspLotNmbrOpenShortTermCharc` |
-| `InspectionDynamicStage` | `_insplots.InspectionDynamicStage` |
-| `InspectionSeverity` | `_insplots.InspectionSeverity` |
-| `QualityCostCollector` | `_insplots.QualityCostCollector` |
-| `CostCenter` | `_insplots.CostCenter` |
-| `SalesOrdStockWBSElement` | `_insplots.SalesOrdStockWBSElement` |
-| `ProfitCenter` | `_insplots.ProfitCenter` |
-| `BusinessArea` | `_insplots.BusinessArea` |
-| `GLAccount` | `_insplots.GLAccount` |
-| `ControllingArea` | `_insplots.ControllingArea` |
-| `CompanyCode` | `_insplots.CompanyCode` |
-| `SerialNumberProfile` | `_insplots.SerialNumberProfile` |
-| `NumberOfSerialNumbers` | `_insplots.NumberOfSerialNumbers` |
-| `InspLotIsSerialNmbrPossible` | `_insplots.InspLotIsSerialNmbrPossible` |
-| `BatchBySupplier` | `_insplots.BatchBySupplier` |
-| `InspLotIsAutomUsgeDcsnPossible` | `_insplots.InspLotIsAutomUsgeDcsnPossible` |
-| `InspLotHasConfignSpecification` | `_insplots.InspLotHasConfignSpecification` |
-| `InspLotIsTaskListRequired` | `_insplots.InspLotIsTaskListRequired` |
-| `InspLotHasManualSampleSize` | `_insplots.InspLotHasManualSampleSize` |
-| `InspLotHasMaterialSpec` | `_insplots.InspLotHasMaterialSpec` |
-| `InspLotDigitalSgntrResultsRecg` | `_insplots.InspLotDigitalSgntrResultsRecg` |
-| `InspLotIsBatchRequired` | `_insplots.InspLotIsBatchRequired` |
-| `InspLotIsStockPostingCompleted` | `_insplots.InspLotIsStockPostingCompleted` |
-| `MatlQualityAuthorizationGroup` | `_insplots.MatlQualityAuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `_insplots.IsBusinessPurposeCompleted` |
-| `InspectionOperationPlant` | `I_InspectionOperation.InspectionOperationPlant` |
-| `OperationControlProfile` | `I_InspectionOperation.OperationControlProfile` |
-| `OperationText` | `I_InspectionOperation.OperationText` |
-| `WorkCenter` | `I_InspectionOperation._WorkCenter.WorkCenter` |
-| `OperationConfirmation` | `I_InspectionOperation.OperationConfirmation` |
-| `InspectionSubSystem` | `I_InspectionOperation.InspectionSubSystem` |
-| `InspectionSpecification` | `I_InspectionCharacteristic.InspectionSpecification` |
-| `InspectionSpecificationText` | `I_InspectionCharacteristic.InspectionSpecificationText` |
-| `InspectorQualification` | `I_InspectionCharacteristic.InspectorQualification` |
-| `InspSpecInformationField1` | `I_InspectionCharacteristic.InspSpecInformationField1` |
-| `InspSpecInformationField2` | `I_InspectionCharacteristic.InspSpecInformationField2` |
-| `InspSpecInformationField3` | `I_InspectionCharacteristic.InspSpecInformationField3` |
-| `InspSpecImportanceCode` | `I_InspectionCharacteristic.InspSpecImportanceCode` |
-| `InspectionMethod` | `I_InspectionCharacteristic.InspectionMethod` |
-| `InspectionMethodPlant` | `I_InspectionCharacteristic.InspectionMethodPlant` |
-| `InspectionSpecificationPlant` | `I_InspectionCharacteristic.InspectionSpecificationPlant` |
-| `InspectionCharacteristicStatus` | `I_InspectionCharacteristic.InspectionCharacteristicStatus` |
-| `InspectionSubsetSortKey` | `I_InspectionSubset.InspectionSubsetSortKey` |
-| `Equipment` | `I_InspectionSubset.Equipment` |
-| `FunctionalLocation` | `I_InspectionSubset.FunctionalLocation` |
-| `InspSubsetUsageDcsnValuation` | `I_InspectionSubset.InspSubsetUsageDcsnValuation` |
-| `InspectionSubsetLongCharKey` | `I_InspectionSubset.InspectionSubsetLongCharKey` |
-| `InspectionSubsetShortCharKey` | `I_InspectionSubset.InspectionSubsetShortCharKey` |
-| `InspSubsetLongNumericKey` | `I_InspectionSubset.InspSubsetLongNumericKey` |
-| `InspSubsetShortNumericKey` | `I_InspectionSubset.InspSubsetShortNumericKey` |
-| `InspectionSubsetDate` | `cast(I_InspectionSubset.InspectionSubsetDate as abap.char( 8 ))` |
-| `InspectionSubsetTime` | `cast(I_InspectionSubset.InspectionSubsetTime as abap.char( 6 ))` |
-| `MaterialSample` | `I_InspectionSubset.MaterialSample` |
-| `InspSubsetUsageDcsnCodeGroup` | `I_InspectionSubset.InspSubsetUsageDcsnCodeGroup` |
-| `InspSubsetUsageDcsnCode` | `I_InspectionSubset.InspSubsetUsageDcsnCode` |
-| `MaterialSampleType` | `I_MaterialSample.MaterialSampleType` |
-| `MaterialSampleCategory` | `I_MaterialSample.MaterialSampleCategory` |
-| `StorageLocation` | `I_MaterialSample.StorageLocation` |
-| `MaterialSampleStorageLocation` | `I_MaterialSample.MaterialSampleStorageLocation` |
-| `MaterialSampleChangedOn` | `cast(I_MaterialSample.MaterialSampleChangedOn as abap.char( 8 ))` |
-| `MaterialSampleDrawingLocation` | `I_MaterialSample.MaterialSampleDrawingLocation` |
-| `MatlSmplDrawingLocDescription` | `I_MaterialSample.MatlSmplDrawingLocDescription` |
-| `MaterialSampleDrawingOnDate` | `cast(I_MaterialSample.MaterialSampleDrawingOnDate as abap.char( 8 ))` |
-| `MaterialSampleDrawingOnTime` | `cast(I_MaterialSample.MaterialSampleDrawingOnTime as abap.char( 6 ))` |
-| `MaterialSampleResponsibleName` | `I_MaterialSample.MaterialSampleResponsibleName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | | `_insplots` | `InspectionLot` |
+| `InspectionOperation` | ✓ | |  |  |
+| `InspectionCharacteristic` | ✓ | |  |  |
+| `Material` |  | | `_insplots` | `Material` |
+| `Batch` |  | | `_insplots` | `Batch` |
+| `Plant` |  | | `_insplots` | `Plant` |
+| `InspectionLotOrigin` |  | | `_insplots` | `InspectionLotOrigin` |
+| `ManufacturingOrder` |  | | `_insplots` | `ManufacturingOrder` |
+| `InspectionLotText` |  | | `_insplots` | `InspectionLotText` |
+| `InspectionLotType` |  | | `_insplots` | `InspectionLotType` |
+| `InspectionLotQuantity` |  | | `_insplots` | `InspectionLotQuantity` |
+| `InspectionLotQuantityUnit` |  | | `_insplots` | `InspectionLotQuantityUnit` |
+| `InspLotCreatedOnLocalDate` |  | |  | `cast(_insplots.InspLotCreatedOnLocalDate as abap.char( 8 ))` |
+| `InspectionLotHasUsageDecision` |  | | `_insplots` | `InspectionLotHasUsageDecision` |
+| `InspLotNmbrOpenLongTermCharc` |  | | `_insplots` | `InspLotNmbrOpenLongTermCharc` |
+| `InspectionLotObjectText` |  | | `_insplots` | `InspectionLotObjectText` |
+| `GoodsReceiptIsMovedToBlkdStock` |  | | `_insplots` | `GoodsReceiptIsMovedToBlkdStock` |
+| `InspectionLotHasQuantity` |  | | `_insplots` | `InspectionLotHasQuantity` |
+| `InspectionLotHasPartialLots` |  | | `_insplots` | `InspectionLotHasPartialLots` |
+| `InspLotIsDocumentationRequired` |  | | `_insplots` | `InspLotIsDocumentationRequired` |
+| `InspectionLotApproval` |  | | `_insplots` | `InspectionLotApproval` |
+| `InspLotDigitalSgntrInUsgeDcsn` |  | | `_insplots` | `InspLotDigitalSgntrInUsgeDcsn` |
+| `InspectionLotIsSkipped` |  | | `_insplots` | `InspectionLotIsSkipped` |
+| `InspectionLotIsFullInspection` |  | | `_insplots` | `InspectionLotIsFullInspection` |
+| `InspLotCreatedOnLocalTime` |  | |  | `cast(_insplots.InspLotCreatedOnLocalTime as abap.char( 6 ))` |
+| `InspectionLotCreatedBy` |  | | `_insplots` | `InspectionLotCreatedBy` |
+| `InspectionLotCreatedOn` |  | |  | `cast(_insplots.InspectionLotCreatedOn as abap.char( 8 ))` |
+| `InspectionLotCreatedOnTime` |  | |  | `cast(_insplots.InspectionLotCreatedOnTime as abap.char( 6 ))` |
+| `InspectionLotChangedBy` |  | | `_insplots` | `InspectionLotChangedBy` |
+| `InspectionLotChangeDate` |  | |  | `cast(_insplots.InspectionLotChangeDate as abap.char( 8 ))` |
+| `InspectionLotChangeTime` |  | |  | `cast(_insplots.InspectionLotChangeTime as abap.char( 6 ))` |
+| `InspectionLotStartDate` |  | |  | `cast(_insplots.InspectionLotStartDate as abap.char( 8 ))` |
+| `InspectionLotStartTime` |  | |  | `cast(_insplots.InspectionLotStartTime as abap.char( 6 ))` |
+| `InspectionLotEndDate` |  | |  | `cast(_insplots.InspectionLotEndDate as abap.char( 8 ))` |
+| `InspectionLotEndTime` |  | |  | `cast(_insplots.InspectionLotEndTime as abap.char( 6 ))` |
+| `BillOfOperationsType` |  | | `_insplots` | `BillOfOperationsType` |
+| `BillOfOperationsGroup` |  | | `_insplots` | `BillOfOperationsGroup` |
+| `BillOfOperationsUsage` |  | | `_insplots` | `BillOfOperationsUsage` |
+| `BillOfOperationsVariant` |  | | `_insplots` | `BillOfOperationsVariant` |
+| `SmplDrawingProcedure` |  | | `_insplots` | `SmplDrawingProcedure` |
+| `SmplDrwgProcedIsConfRequired` |  | | `_insplots` | `SmplDrwgProcedIsConfRequired` |
+| `InspLotSelectionValidFromDate` |  | |  | `cast(_insplots.InspLotSelectionValidFromDate as abap.char( 8 ))` |
+| `ProductionVersion` |  | | `_insplots` | `ProductionVersion` |
+| `Customer` |  | | `_insplots` | `Customer` |
+| `Supplier` |  | | `_insplots` | `Supplier` |
+| `Manufacturer` |  | | `_insplots` | `Manufacturer` |
+| `ManufacturerPartNmbr` |  | | `_insplots` | `ManufacturerPartNmbr` |
+| `MaterialRevisionLevel` |  | | `_insplots` | `MaterialRevisionLevel` |
+| `MaterialIsBatchManaged` |  | | `_insplots` | `MaterialIsBatchManaged` |
+| `BatchStorageLocation` |  | | `_insplots` | `BatchStorageLocation` |
+| `MaterialCompIsSpecialStock` |  | | `_insplots` | `MaterialCompIsSpecialStock` |
+| `PurchasingOrganization` |  | | `_insplots` | `PurchasingOrganization` |
+| `PurchasingDocument` |  | | `_insplots` | `PurchasingDocument` |
+| `AccountingDocumentType` |  | | `_insplots` | `AccountingDocumentType` |
+| `MaterialDocumentYear` |  | | `_insplots` | `MaterialDocumentYear` |
+| `MaterialDocument` |  | | `_insplots` | `MaterialDocument` |
+| `MatlDocLatestPostgDate` |  | |  | `cast(_insplots.MatlDocLatestPostgDate as abap.char( 8 ))` |
+| `GoodsMovementType` |  | | `_insplots` | `GoodsMovementType` |
+| `InspectionLotPlant` |  | | `_insplots` | `InspectionLotPlant` |
+| `InspectionLotStorageLocation` |  | | `_insplots` | `InspectionLotStorageLocation` |
+| `Warehouse` |  | | `_insplots` | `Warehouse` |
+| `StorageType` |  | | `_insplots` | `StorageType` |
+| `StorageBin` |  | | `_insplots` | `StorageBin` |
+| `SalesOrder` |  | | `_insplots` | `SalesOrder` |
+| `DeliveryDocument` |  | | `_insplots` | `DeliveryDocument` |
+| `DeliveryCategory` |  | | `_insplots` | `DeliveryCategory` |
+| `InspectionDeliveryCategory` |  | | `_insplots` | `InspectionDeliveryCategory` |
+| `Route` |  | | `_insplots` | `Route` |
+| `BillToPartyCountry` |  | | `_insplots` | `BillToPartyCountry` |
+| `SoldToParty` |  | | `_insplots` | `SoldToParty` |
+| `SalesOrganization` |  | | `_insplots` | `SalesOrganization` |
+| `MaterialByCustomer` |  | | `_insplots` | `MaterialByCustomer` |
+| `InspLotNmbrAddlRecordedCharc` |  | | `_insplots` | `InspLotNmbrAddlRecordedCharc` |
+| `InspLotNmbrOpenShortTermCharc` |  | | `_insplots` | `InspLotNmbrOpenShortTermCharc` |
+| `InspectionDynamicStage` |  | | `_insplots` | `InspectionDynamicStage` |
+| `InspectionSeverity` |  | | `_insplots` | `InspectionSeverity` |
+| `QualityCostCollector` |  | | `_insplots` | `QualityCostCollector` |
+| `CostCenter` |  | | `_insplots` | `CostCenter` |
+| `SalesOrdStockWBSElement` |  | | `_insplots` | `SalesOrdStockWBSElement` |
+| `ProfitCenter` |  | | `_insplots` | `ProfitCenter` |
+| `BusinessArea` |  | | `_insplots` | `BusinessArea` |
+| `GLAccount` |  | | `_insplots` | `GLAccount` |
+| `ControllingArea` |  | | `_insplots` | `ControllingArea` |
+| `CompanyCode` |  | | `_insplots` | `CompanyCode` |
+| `SerialNumberProfile` |  | | `_insplots` | `SerialNumberProfile` |
+| `NumberOfSerialNumbers` |  | | `_insplots` | `NumberOfSerialNumbers` |
+| `InspLotIsSerialNmbrPossible` |  | | `_insplots` | `InspLotIsSerialNmbrPossible` |
+| `BatchBySupplier` |  | | `_insplots` | `BatchBySupplier` |
+| `InspLotIsAutomUsgeDcsnPossible` |  | | `_insplots` | `InspLotIsAutomUsgeDcsnPossible` |
+| `InspLotHasConfignSpecification` |  | | `_insplots` | `InspLotHasConfignSpecification` |
+| `InspLotIsTaskListRequired` |  | | `_insplots` | `InspLotIsTaskListRequired` |
+| `InspLotHasManualSampleSize` |  | | `_insplots` | `InspLotHasManualSampleSize` |
+| `InspLotHasMaterialSpec` |  | | `_insplots` | `InspLotHasMaterialSpec` |
+| `InspLotDigitalSgntrResultsRecg` |  | | `_insplots` | `InspLotDigitalSgntrResultsRecg` |
+| `InspLotIsBatchRequired` |  | | `_insplots` | `InspLotIsBatchRequired` |
+| `InspLotIsStockPostingCompleted` |  | | `_insplots` | `InspLotIsStockPostingCompleted` |
+| `MatlQualityAuthorizationGroup` |  | | `_insplots` | `MatlQualityAuthorizationGroup` |
+| `IsBusinessPurposeCompleted` |  | | `_insplots` | `IsBusinessPurposeCompleted` |
+| `InspectionOperationPlant` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `OperationConfirmation` |  | |  |  |
+| `InspectionSubSystem` |  | |  |  |
+| `InspectionSpecification` |  | |  |  |
+| `InspectionSpecificationText` |  | |  |  |
+| `InspectorQualification` |  | |  |  |
+| `InspSpecInformationField1` |  | |  |  |
+| `InspSpecInformationField2` |  | |  |  |
+| `InspSpecInformationField3` |  | |  |  |
+| `InspSpecImportanceCode` |  | |  |  |
+| `InspectionMethod` |  | |  |  |
+| `InspectionMethodPlant` |  | |  |  |
+| `InspectionSpecificationPlant` |  | |  |  |
+| `InspectionCharacteristicStatus` |  | |  |  |
+| `InspectionSubsetSortKey` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `InspSubsetUsageDcsnValuation` |  | |  |  |
+| `InspectionSubsetLongCharKey` |  | |  |  |
+| `InspectionSubsetShortCharKey` |  | |  |  |
+| `InspSubsetLongNumericKey` |  | |  |  |
+| `InspSubsetShortNumericKey` |  | |  |  |
+| `InspectionSubsetDate` |  | |  | `cast(I_InspectionSubset.InspectionSubsetDate as abap.char( 8 ))` |
+| `InspectionSubsetTime` |  | |  | `cast(I_InspectionSubset.InspectionSubsetTime as abap.char( 6 ))` |
+| `MaterialSample` |  | |  |  |
+| `InspSubsetUsageDcsnCodeGroup` |  | |  |  |
+| `InspSubsetUsageDcsnCode` |  | |  |  |
+| `MaterialSampleType` |  | |  |  |
+| `MaterialSampleCategory` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `MaterialSampleStorageLocation` |  | |  |  |
+| `MaterialSampleChangedOn` |  | |  | `cast(I_MaterialSample.MaterialSampleChangedOn as abap.char( 8 ))` |
+| `MaterialSampleDrawingLocation` |  | |  |  |
+| `MatlSmplDrawingLocDescription` |  | |  |  |
+| `MaterialSampleDrawingOnDate` |  | |  | `cast(I_MaterialSample.MaterialSampleDrawingOnDate as abap.char( 8 ))` |
+| `MaterialSampleDrawingOnTime` |  | |  | `cast(I_MaterialSample.MaterialSampleDrawingOnTime as abap.char( 6 ))` |
+| `MaterialSampleResponsibleName` |  | |  |  |
 
 ## Source Code
 

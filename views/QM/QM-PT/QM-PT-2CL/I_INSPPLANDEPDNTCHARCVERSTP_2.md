@@ -28,64 +28,64 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionPlanGroup` | `InspectionPlanGroup` |
-| key `InspectionPlan` | `InspectionPlan` |
-| key `BOOOperationInternalID` | `BOOOperationInternalID` |
-| key `BOOCharacteristic` | `BOOCharacteristic` |
-| key `BOODpndantCharcSpec` | `BOODpndantCharcSpec` |
-| key `BOODpndantCharcSpecVers` | `BOODpndantCharcSpecVers` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `IsDeleted` | `IsDeleted` |
-| `BOOOperationPRTInternalID` | `BOOOperationPRTInternalID` |
-| `Material` | `Material` |
-| `Plant` | `Plant` |
-| `BillOfOperationsVariant` | `BillOfOperationsVariant` |
-| `BOOToMaterialInternalID` | `BOOToMaterialInternalID` |
-| `InspSpecDecimalPlaces` | `InspSpecDecimalPlaces` |
-| `InspectionSpecificationUnit` | `InspectionSpecificationUnit` |
-| `InspSpecTargetValue` | `InspSpecTargetValue` |
-| `InspSpecHasTargetValue` | `InspSpecHasTargetValue` |
-| `InspSpecUpperLimit` | `InspSpecUpperLimit` |
-| `InspSpecLowerLimit` | `InspSpecLowerLimit` |
-| `InspSpecHasUpperLimit` | `InspSpecHasUpperLimit` |
-| `InspSpecHasLowerLimit` | `InspSpecHasLowerLimit` |
-| `InspSpecNumberOfClasses` | `InspSpecNumberOfClasses` |
-| `InspSpecClassWidthQty` | `InspSpecClassWidthQty` |
-| `InspSpecHasClassWidth` | `InspSpecHasClassWidth` |
-| `InspSpecClassMidpointQty` | `InspSpecClassMidpointQty` |
-| `InspSpecHasClassMidpoint` | `InspSpecHasClassMidpoint` |
-| `SelectedCodeSet` | `SelectedCodeSet` |
-| `SelectedCodeSetPlant` | `SelectedCodeSetPlant` |
-| `InspSpecAdditionalCatalog2` | `InspSpecAdditionalCatalog2` |
-| `InspSpecAdditionalSelectedSet2` | `InspSpecAdditionalSelectedSet2` |
-| `InspSpecAdditionalCodeGroup2` | `InspSpecAdditionalCodeGroup2` |
-| `InspSpecAddlSeldCodeSetPlant2` | `InspSpecAddlSeldCodeSetPlant2` |
-| `InspSpecAdditionalCatalog3` | `InspSpecAdditionalCatalog3` |
-| `InspSpecAdditionalSelectedSet3` | `InspSpecAdditionalSelectedSet3` |
-| `InspSpecAdditionalCodeGroup3` | `InspSpecAdditionalCodeGroup3` |
-| `InspSpecAddlSeldCodeSetPlant3` | `InspSpecAddlSeldCodeSetPlant3` |
-| `InspSpecAdditionalCatalog4` | `InspSpecAdditionalCatalog4` |
-| `InspSpecAdditionalSelectedSet4` | `InspSpecAdditionalSelectedSet4` |
-| `InspSpecAdditionalCodeGroup4` | `InspSpecAdditionalCodeGroup4` |
-| `InspSpecAddlSeldCodeSetPlant4` | `InspSpecAddlSeldCodeSetPlant4` |
-| `InspSpecAdditionalCatalog5` | `InspSpecAdditionalCatalog5` |
-| `InspSpecAdditionalSelectedSet5` | `InspSpecAdditionalSelectedSet5` |
-| `InspSpecAdditionalCodeGroup5` | `InspSpecAdditionalCodeGroup5` |
-| `InspSpecAddlSeldCodeSetPlant5` | `InspSpecAddlSeldCodeSetPlant5` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `BillOfOperationsVersion` | `BillOfOperationsVersion` |
-| `_InspPlanOperation` | *Association* |
-| `_InspPlanOpCharcVers` | *Association* |
-| `_InspPlanVersion` | *Association* |
-| `_InspPlan` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  |  |
+| `InspectionPlan` | ✓ | |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |
+| `BOOCharacteristic` | ✓ | |  |  |
+| `BOODpndantCharcSpec` | ✓ | |  |  |
+| `BOODpndantCharcSpecVers` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `BOOOperationPRTInternalID` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `BillOfOperationsVariant` |  | |  |  |
+| `BOOToMaterialInternalID` |  | |  |  |
+| `InspSpecDecimalPlaces` |  | |  |  |
+| `InspectionSpecificationUnit` |  | |  |  |
+| `InspSpecTargetValue` |  | |  |  |
+| `InspSpecHasTargetValue` |  | |  |  |
+| `InspSpecUpperLimit` |  | |  |  |
+| `InspSpecLowerLimit` |  | |  |  |
+| `InspSpecHasUpperLimit` |  | |  |  |
+| `InspSpecHasLowerLimit` |  | |  |  |
+| `InspSpecNumberOfClasses` |  | |  |  |
+| `InspSpecClassWidthQty` |  | |  |  |
+| `InspSpecHasClassWidth` |  | |  |  |
+| `InspSpecClassMidpointQty` |  | |  |  |
+| `InspSpecHasClassMidpoint` |  | |  |  |
+| `SelectedCodeSet` |  | |  |  |
+| `SelectedCodeSetPlant` |  | |  |  |
+| `InspSpecAdditionalCatalog2` |  | |  |  |
+| `InspSpecAdditionalSelectedSet2` |  | |  |  |
+| `InspSpecAdditionalCodeGroup2` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant2` |  | |  |  |
+| `InspSpecAdditionalCatalog3` |  | |  |  |
+| `InspSpecAdditionalSelectedSet3` |  | |  |  |
+| `InspSpecAdditionalCodeGroup3` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant3` |  | |  |  |
+| `InspSpecAdditionalCatalog4` |  | |  |  |
+| `InspSpecAdditionalSelectedSet4` |  | |  |  |
+| `InspSpecAdditionalCodeGroup4` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant4` |  | |  |  |
+| `InspSpecAdditionalCatalog5` |  | |  |  |
+| `InspSpecAdditionalSelectedSet5` |  | |  |  |
+| `InspSpecAdditionalCodeGroup5` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant5` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `BillOfOperationsVersion` |  | |  |  |
+| `_InspPlanOperation` | | ✓ | | |
+| `_InspPlanOpCharcVers` | | ✓ | | |
+| `_InspPlanVersion` | | ✓ | | |
+| `_InspPlan` | | ✓ | | |
 
 ## Source Code
 

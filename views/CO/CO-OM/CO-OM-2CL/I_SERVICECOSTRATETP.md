@@ -29,42 +29,42 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingCostRateUUID` | `AccountingCostRateUUID` |
-| `CompanyCode` | `CompanyCode` |
-| `CostCenter` | `CostCenter` |
-| `ActivityType` | `ActivityType` |
-| `Currency` | `Currency` |
-| `ControllingArea` | `ControllingArea` |
-| `ReceivingCompanyCode` | `ReceivingCompanyCode` |
-| `IsIntercompanyRate` | `IsIntercompanyRate` |
-| `ValidityStartFiscalYear` | `ValidityStartFiscalYear` |
-| `ValidityStartFiscalPeriod` | `ValidityStartFiscalPeriod` |
-| `ValidityEndFiscalYear` | `ValidityEndFiscalYear` |
-| `ValidityEndFiscalPeriod` | `ValidityEndFiscalPeriod` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `TimeSheetOvertimeCategory` | `TimeSheetOvertimeCategory` |
-| `ServiceCostLevel` | `ServiceCostLevel` |
-| `PersonnelNumber` | `PersonnelNumber` |
-| `WorkItem` | `WorkItem` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `WBSElementDescription` | `WBSElementDescription` |
-| `CostRateVarblAmount` | `CostRateVarblAmount` |
-| `CostRateScaleFactor` | `CostRateScaleFactor` |
-| `CostCtrActivityTypeQtyUnit` | `CostCtrActivityTypeQtyUnit` |
-| `Ledger` | `Ledger` |
-| `CostRateIsOverwriteMode` | `CostRateIsOverwriteMode` |
-| `_CompanyCode` | *Association* |
-| `_CostCtrActivityTypeText` | *Association* |
-| `_ControllingAreaText` | *Association* |
-| `_ReceivingCompanyCode` | *Association* |
-| `_TimeSheetOvertimeCatText` | *Association* |
-| `_CurrentServiceCostLevelText` | *Association* |
-| `_PersonWorkAgreement` | *Association* |
-| `_WorkItemText` | *Association* |
-| `_LedgerText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingCostRateUUID` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `Currency` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ReceivingCompanyCode` |  | |  |  |
+| `IsIntercompanyRate` |  | |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |
+| `ServiceCostLevel` |  | |  |  |
+| `PersonnelNumber` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `WBSElementDescription` |  | |  |  |
+| `CostRateVarblAmount` |  | |  |  |
+| `CostRateScaleFactor` |  | |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `CostRateIsOverwriteMode` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_CostCtrActivityTypeText` | | ✓ | | |
+| `_ControllingAreaText` | | ✓ | | |
+| `_ReceivingCompanyCode` | | ✓ | | |
+| `_TimeSheetOvertimeCatText` | | ✓ | | |
+| `_CurrentServiceCostLevelText` | | ✓ | | |
+| `_PersonWorkAgreement` | | ✓ | | |
+| `_WorkItemText` | | ✓ | | |
+| `_LedgerText` | | ✓ | | |
 
 ## Source Code
 

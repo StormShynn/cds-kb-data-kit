@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `InventoryValuationProcedure` | `cast ( domvalue_l as vprsv )` |
-| `Name` | `cast ( ddtext as val_text )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `InventoryValuationProcedure` | ✓ | |  | `cast ( domvalue_l as vprsv )` |
+| `Name` |  | |  | `cast ( ddtext as val_text )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

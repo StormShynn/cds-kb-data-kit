@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMCategory` | `LglCntntMCategory` |
-| `LglCntntMCatLevel` | `LglCntntMCatLevel` |
-| `LglCntntMCatType` | `LglCntntMCatType` |
-| `LglCntntMCatIsSelect` | `LglCntntMCatIsSelect` |
-| `LglCntntMCatIsMultiSelection` | `LglCntntMCatIsMultiSelection` |
-| `LglCntntMCatIsObsolete` | `LglCntntMCatIsObsolete` |
-| `LglCntntMCatModel` | `LglCntntMCatModel` |
-| `LglCntntMCategoryValue` | `LglCntntMCategoryValue` |
-| `LglCntntMCatIsUpdateFromTable` | `LglCntntMCatIsUpdateFromTable` |
-| `LglCntntMCreatedByUser` | `LglCntntMCreatedByUser` |
-| `LglCntntMCreatedUTCDateTime` | `LglCntntMCreatedUTCDateTime` |
-| `LglCntntMChangedByUser` | `LglCntntMChangedByUser` |
-| `LglCntntMChangedUTCDateTime` | `LglCntntMChangedUTCDateTime` |
-| `LglCntntMParentCategory` | `LglCntntMParentCategory` |
-| `LglCntntMRootCategory` | `LglCntntMRootCategory` |
-| `LglCntntMCatPurpose` | `LglCntntMCatPurpose` |
-| `LglCntntMCatIsSystGenerated` | `LglCntntMCatIsSystGenerated` |
-| `LglCntntMCatConstant` | `LglCntntMCatConstant` |
-| `LglCntntMCategoryName` | `LglCntntMCategoryName` |
-| `LglCntntMCategoryNameSyst` | `LglCntntMCategoryNameSyst` |
-| `LglCntntMCategoryNameInEnglish` | `LglCntntMCategoryNameInEnglish` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMCategory` | ✓ | |  |  |
+| `LglCntntMCatLevel` |  | |  |  |
+| `LglCntntMCatType` |  | |  |  |
+| `LglCntntMCatIsSelect` |  | |  |  |
+| `LglCntntMCatIsMultiSelection` |  | |  |  |
+| `LglCntntMCatIsObsolete` |  | |  |  |
+| `LglCntntMCatModel` |  | |  |  |
+| `LglCntntMCategoryValue` |  | |  |  |
+| `LglCntntMCatIsUpdateFromTable` |  | |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |
+| `LglCntntMParentCategory` |  | |  |  |
+| `LglCntntMRootCategory` |  | |  |  |
+| `LglCntntMCatPurpose` |  | |  |  |
+| `LglCntntMCatIsSystGenerated` |  | |  |  |
+| `LglCntntMCatConstant` |  | |  |  |
+| `LglCntntMCategoryName` |  | |  |  |
+| `LglCntntMCategoryNameSyst` |  | |  |  |
+| `LglCntntMCategoryNameInEnglish` |  | |  |  |
 
 ## Source Code
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `PrcgConditionAmountSign` | `cast ( substring( domvalue_l, 1, 1 ) as knega )` |
-| `PricingConditionAmountSignText` | `cast ( ddtext as val_text )` |
-| `_PricingConditionAmountSign` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `PrcgConditionAmountSign` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as knega )` |
+| `PricingConditionAmountSignText` |  | |  | `cast ( ddtext as val_text )` |
+| `_PricingConditionAmountSign` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

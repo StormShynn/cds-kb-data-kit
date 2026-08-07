@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope2CalculationMethod` | `cast( _Source.GHGScope2CalculationMethod as fincs_ghgscp2calculationmethod preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope2CalculationMethod` | ✓ | |  | `cast( _Source.GHGScope2CalculationMethod as fincs_ghgscp2calculationmethod preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

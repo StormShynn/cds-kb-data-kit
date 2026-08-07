@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerRatingProcedure` | `tpz21.grade_method` |
-| `BPRatingIsRequired` | `tpz21.flg_required` |
-| `BusinessPartnerRatingIsDefault` | `tpz21.flg_default` |
-| `BPRatingStandardAccessDays` | `tpz21.grade_meth_permitted_period` |
-| `BPRatgPermittedPerdIsRelevant` | `''` |
-| `_Text` | *Association* |
-| `_BPRating` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |
+| `BPRatingIsRequired` |  | |  | `flg_required` |
+| `BusinessPartnerRatingIsDefault` |  | |  | `flg_default` |
+| `BPRatingStandardAccessDays` |  | |  | `grade_meth_permitted_period` |
+| `BPRatgPermittedPerdIsRelevant` |  | |  | `''` |
+| `_Text` | | ✓ | | |
+| `_BPRating` | | ✓ | | |
 
 ## Associations
 

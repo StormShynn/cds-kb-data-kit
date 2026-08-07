@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenture` | `JointVenture` |
-| key `JointVentureEquityType` | `JointVentureEquityType` |
-| key `JntVntrEquityFundingDateValue` | `JntVntrEquityFundingDateValue` |
-| `JointVentureEquityGroup` | `JointVentureEquityGroup` |
-| `JointVentureEquityGroupActive` | `JointVentureEquityGroupActive` |
-| `JointVentureDefBillCurrency` | `JointVentureDefBillCurrency` |
-| `_JointVenture` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JointVentureEquityType` | ✓ | |  |  |
+| `JntVntrEquityFundingDateValue` | ✓ | |  |  |
+| `JointVentureEquityGroup` |  | |  |  |
+| `JointVentureEquityGroupActive` |  | |  |  |
+| `JointVentureDefBillCurrency` |  | |  |  |
+| `_JointVenture` | | ✓ | | |
 
 ## Source Code
 

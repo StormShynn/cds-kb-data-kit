@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ConditionUsage` | `ConditionUsage` |
-| key `ConditionApplication` | `ConditionApplication` |
-| key `ConditionExclusionGroup` | `ConditionExclusionGroup` |
-| `ConditionExclusionGroupText` | `ConditionExclusionGroupText` |
-| `_SlsPrcgCndnExclusionGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ConditionUsage` | ✓ | |  |  |
+| `ConditionApplication` | ✓ | |  |  |
+| `ConditionExclusionGroup` | ✓ | |  |  |
+| `ConditionExclusionGroupText` |  | |  |  |
+| `_SlsPrcgCndnExclusionGroup` | | ✓ | | |
 
 ## Associations
 

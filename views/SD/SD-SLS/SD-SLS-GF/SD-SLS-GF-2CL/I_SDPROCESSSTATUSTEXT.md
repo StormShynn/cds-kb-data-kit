@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDProcessStatus` | `statu` |
-| key `Language` | `spras` |
-| `SDProcessStatusDesc` | `bezei` |
-| `_SDProcessStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDProcessStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `SDProcessStatusDesc` |  | |  | `bezei` |
+| `_SDProcessStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

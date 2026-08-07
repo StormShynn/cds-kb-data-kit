@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `AddressID` |
-| key `AddressPersonID` | `AddressPersonID` |
-| `CommMediumSequenceNumber` | `CommMediumSequenceNumber` |
-| `FaxNumberCountry` | `FaxNumberCountry` |
-| `FaxAreaCodeSubscriberNumber` | `FaxAreaCodeSubscriberNumber` |
-| `FaxExtensionNumber` | `FaxExtensionNumber` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `_FaxNumberCountry` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |
+| `AddressPersonID` | ✓ | |  |  |
+| `CommMediumSequenceNumber` |  | |  |  |
+| `FaxNumberCountry` |  | |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |
+| `FaxExtensionNumber` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `_FaxNumberCountry` | | ✓ | | |
 
 ## Source Code
 

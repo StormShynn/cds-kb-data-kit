@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserStatus` | `tj30.estat` |
-| key `StatusProfile` | `tj30.stsma` |
-| `StatusAuthorizationKey` | `tj30.bersl` |
-| `StatusSequenceNumber` | `tj30.stonr` |
-| `StatusDisplayPosition` | `tj30.linep` |
-| `StatusDisplayPriority` | `tj30.statp` |
-| `_UserStatusText` | *Association* |
-| `_StatusProfile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserStatus` | ✓ | |  | `estat` |
+| `StatusProfile` | ✓ | |  | `stsma` |
+| `StatusAuthorizationKey` |  | |  | `bersl` |
+| `StatusSequenceNumber` |  | |  | `stonr` |
+| `StatusDisplayPosition` |  | |  | `linep` |
+| `StatusDisplayPriority` |  | |  | `statp` |
+| `_UserStatusText` | | ✓ | | |
+| `_StatusProfile` | | ✓ | | |
 
 ## Associations
 

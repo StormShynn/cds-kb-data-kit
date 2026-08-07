@@ -28,44 +28,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgReqDocument` | `billreqno` |
-| `CABillgReqCategory` | `billreqcat` |
-| `CABillgReqType` | `billreqtype` |
-| `CABillgReqReason` | `billreqrsn` |
-| `CAApplicationArea` | `applk` |
-| `ContractAccount` | `vkont` |
-| `BusinessPartner` | `cast(gpart as bu_partner preserving type)` |
-| `CAInvoicingDocument` | `inv_ref` |
-| `CABillgReqDescription` | `billreq_descr` |
-| `CABillgReqStatus` | `billreqstatus` |
-| `CABillgReqTotalAmount` | `billreq_total_amt` |
-| `CABillgReqTotalAmountCurrency` | `billreq_total_curr` |
-| `CABillgReqTotalAmtTxIsIncluded` | `billreq_total_tax_included` |
-| `CABillgReqCreationUser` | `crname` |
-| `CABillgReqCreationDate` | `crdate` |
-| `CABillgReqCreationTime` | `crtime` |
-| `CABillgReqChangeUser` | `chname` |
-| `CABillgReqChangeDate` | `chdate` |
-| `CABillgReqChangeTime` | `chtime` |
-| `CAClrfctnExist` | `cfc_exists` |
-| `CABillgReqReference` | `reference` |
-| `CABillgReqNumberOfItems` | `billreq_recnum` |
-| `LogicalSystem` | `log_system` |
-| `CABllbleItmListId` | `bitlist_id` |
-| `CADeletionDate` | `loedt` |
-| `CABillgReqCompletionDate` | `completion_date` |
-| `_CABillgReqStatus` | *Association* |
-| `_CABillgReqCategory` | *Association* |
-| `_CABillgReqType` | *Association* |
-| `_CABillgReqReason` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CABillgReqTotalAmountCurrency` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_ContractAccountHeader` | *Association* |
-| `_ContractAccountPartner` | *Association* |
-| `_CAInvcgDocHeader` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgReqDocument` | ✓ | |  | `billreqno` |
+| `CABillgReqCategory` |  | |  | `billreqcat` |
+| `CABillgReqType` |  | |  | `billreqtype` |
+| `CABillgReqReason` |  | |  | `billreqrsn` |
+| `CAApplicationArea` |  | |  | `applk` |
+| `ContractAccount` |  | |  | `vkont` |
+| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type)` |
+| `CAInvoicingDocument` |  | |  | `inv_ref` |
+| `CABillgReqDescription` |  | |  | `billreq_descr` |
+| `CABillgReqStatus` |  | |  | `billreqstatus` |
+| `CABillgReqTotalAmount` |  | |  | `billreq_total_amt` |
+| `CABillgReqTotalAmountCurrency` |  | |  | `billreq_total_curr` |
+| `CABillgReqTotalAmtTxIsIncluded` |  | |  | `billreq_total_tax_included` |
+| `CABillgReqCreationUser` |  | |  | `crname` |
+| `CABillgReqCreationDate` |  | |  | `crdate` |
+| `CABillgReqCreationTime` |  | |  | `crtime` |
+| `CABillgReqChangeUser` |  | |  | `chname` |
+| `CABillgReqChangeDate` |  | |  | `chdate` |
+| `CABillgReqChangeTime` |  | |  | `chtime` |
+| `CAClrfctnExist` |  | |  | `cfc_exists` |
+| `CABillgReqReference` |  | |  | `reference` |
+| `CABillgReqNumberOfItems` |  | |  | `billreq_recnum` |
+| `LogicalSystem` |  | |  | `log_system` |
+| `CABllbleItmListId` |  | |  | `bitlist_id` |
+| `CADeletionDate` |  | |  | `loedt` |
+| `CABillgReqCompletionDate` |  | |  | `completion_date` |
+| `_CABillgReqStatus` | | ✓ | | |
+| `_CABillgReqCategory` | | ✓ | | |
+| `_CABillgReqType` | | ✓ | | |
+| `_CABillgReqReason` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CABillgReqTotalAmountCurrency` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_ContractAccountHeader` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
+| `_CAInvcgDocHeader` | | ✓ | | |
 
 ## Associations
 

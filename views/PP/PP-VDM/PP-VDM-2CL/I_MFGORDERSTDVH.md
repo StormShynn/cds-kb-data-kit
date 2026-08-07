@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturingOrder` | `ManufacturingOrder` |
-| `ManufacturingOrderText` | `ManufacturingOrderText` |
-| `ManufacturingOrderCategory` | `ManufacturingOrderCategory` |
-| `ManufacturingOrderType` | `ManufacturingOrderType` |
-| `ProductionPlant` | `ProductionPlant` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  |  |
+| `ManufacturingOrderText` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ManufacturingOrderType` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
 
 ## Source Code
 

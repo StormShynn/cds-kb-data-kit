@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAWorkflowCheckReason` | `c4eye` |
-| `CAPaymentIsForbiddenBfrConf` | `xspza` |
-| `CAClearingIsForbiddenBfrConf` | `xspag` |
-| `CADunningIsForbiddenBfrConf` | `xspma` |
-| `CAIntrstIsForbiddenBfrConf` | `xspzi` |
-| `CADocChangeIsForbiddenBfrConf` | `xblae` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAWorkflowCheckReason` | ✓ | |  | `c4eye` |
+| `CAPaymentIsForbiddenBfrConf` |  | |  | `xspza` |
+| `CAClearingIsForbiddenBfrConf` |  | |  | `xspag` |
+| `CADunningIsForbiddenBfrConf` |  | |  | `xspma` |
+| `CAIntrstIsForbiddenBfrConf` |  | |  | `xspzi` |
+| `CADocChangeIsForbiddenBfrConf` |  | |  | `xblae` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

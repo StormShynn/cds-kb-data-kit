@@ -29,48 +29,48 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `SalesSchedulingAgreement.SalesSchedulingAgreement` |
-| `SalesSchedgAgrmtType` | `SalesSchedulingAgreement.SalesSchedgAgrmtType` |
-| `SalesOrganization` | `SalesSchedulingAgreement.SalesOrganization` |
-| `DistributionChannel` | `SalesSchedulingAgreement.DistributionChannel` |
-| `OrganizationDivision` | `SalesSchedulingAgreement.OrganizationDivision` |
-| `SoldToParty` | `SalesSchedulingAgreement.SoldToParty` |
-| `CustomerGroup` | `SalesSchedulingAgreement.CustomerGroup` |
-| `PurchaseOrderByCustomer` | `SalesSchedulingAgreement.PurchaseOrderByCustomer` |
-| `AgrmtValdtyStartDate` | `SalesSchedulingAgreement.AgrmtValdtyStartDate` |
-| `AgrmtValdtyEndDate` | `SalesSchedulingAgreement.AgrmtValdtyEndDate` |
-| `SalesSchedgAgrmtDate` | `SalesSchedulingAgreement.SalesSchedgAgrmtDate` |
-| `SDDocumentReason` | `SalesSchedulingAgreement.SDDocumentReason` |
-| `IncotermsClassification` | `SalesSchedulingAgreement.IncotermsClassification` |
-| `IncotermsTransferLocation` | `SalesSchedulingAgreement.IncotermsTransferLocation` |
-| `IncotermsLocation1` | `SalesSchedulingAgreement.IncotermsLocation1` |
-| `IncotermsLocation2` | `SalesSchedulingAgreement.IncotermsLocation2` |
-| `IncotermsVersion` | `SalesSchedulingAgreement.IncotermsVersion` |
-| `CustomerPaymentTerms` | `SalesSchedulingAgreement.CustomerPaymentTerms` |
-| `PaymentMethod` | `SalesSchedulingAgreement.PaymentMethod` |
-| `PricingDate` | `SalesSchedulingAgreement.PricingDate` |
-| `SalesGroup` | `SalesSchedulingAgreement.SalesGroup` |
-| `SalesOffice` | `SalesSchedulingAgreement.SalesOffice` |
-| `SalesDistrict` | `SalesSchedulingAgreement.SalesDistrict` |
-| `CreatedByUser` | `SalesSchedulingAgreement.CreatedByUser` |
-| `LastChangedByUser` | `SalesSchedulingAgreement.LastChangedByUser` |
-| `SalesDocumentCreationDateTime` | `SalesSchedulingAgreement.SalesDocumentCreationDateTime` |
-| `CreationDate` | `SalesSchedulingAgreement.CreationDate` |
-| `CreationTime` | `SalesSchedulingAgreement.CreationTime` |
-| `LastChangeDate` | `SalesSchedulingAgreement.LastChangeDate` |
-| `LastChangeDateTime` | `SalesSchedulingAgreement.LastChangeDateTime` |
-| `OverallSDDocumentRejectionSts` | `SalesSchedulingAgreement.OverallSDDocumentRejectionSts` |
-| `OverallSDProcessStatus` | `SalesSchedulingAgreement.OverallSDProcessStatus` |
-| `DelivSchedTypeMRPRlvnceCode` | `SalesSchedulingAgreement.DelivSchedTypeMRPRlvnceCode` |
-| `MatlUsageIndicator` | `SalesSchedulingAgreement.MatlUsageIndicator` |
-| `TotalNetAmount` | `SalesSchedulingAgreement.TotalNetAmount` |
-| `TransactionCurrency` | `SalesSchedulingAgreement.TransactionCurrency` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_Text` | *Association* |
-| `_PricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  |  |
+| `SalesSchedgAgrmtType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `AgrmtValdtyStartDate` |  | |  |  |
+| `AgrmtValdtyEndDate` |  | |  |  |
+| `SalesSchedgAgrmtDate` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `SalesDocumentCreationDateTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `DelivSchedTypeMRPRlvnceCode` |  | |  |  |
+| `MatlUsageIndicator` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
 
 ## Source Code
 

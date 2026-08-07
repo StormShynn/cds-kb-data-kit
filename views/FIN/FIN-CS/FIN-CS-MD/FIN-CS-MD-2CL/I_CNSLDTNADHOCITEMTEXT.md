@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_AdhocItemT.langu` |
-| key `ConsolidationChartOfAccounts` | `cast(_AdhocItemT.itclg as fincs_conschartofaccounts preserving type )` |
-| `CnsldtnAdhocItem` | `}] key _AdhocItemT.adhocitem` |
-| `CnsldtnAdhocItemText` | `_AdhocItemT.adhocitemtext` |
-| `CnsldtnAdhocItemLongText` | `_AdhocItemT.adhocitemlongtext` |
-| `_Language` | *Association* |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_CnsldtnAdhocItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_AdhocItemT` | `langu` |
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(_AdhocItemT.itclg as fincs_conschartofaccounts preserving type )` |
+| `CnsldtnAdhocItem` |  | |  | `}] key _AdhocItemT.adhocitem` |
+| `CnsldtnAdhocItemText` |  | | `_AdhocItemT` | `adhocitemtext` |
+| `CnsldtnAdhocItemLongText` |  | | `_AdhocItemT` | `adhocitemlongtext` |
+| `_Language` | | ✓ | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_CnsldtnAdhocItem` | | ✓ | | |
 
 ## Associations
 

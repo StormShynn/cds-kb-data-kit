@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationVersion` | `cast ( _tf201.rvers as fincs_consolidationversion preserving type )` |
-| key `Language` | `_tf201.langu` |
-| `ConsolidationVersionText` | `cast (_tf201.txt as fincs_consolidationversiontext preserving type )` |
-| `_Language` | *Association* |
-| `_CnsldtnVersion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationVersion` | ✓ | |  | `cast ( _tf201.rvers as fincs_consolidationversion preserving type )` |
+| `Language` | ✓ | | `_tf201` | `langu` |
+| `ConsolidationVersionText` |  | |  | `cast (_tf201.txt as fincs_consolidationversiontext preserving type )` |
+| `_Language` | | ✓ | | |
+| `_CnsldtnVersion` | | ✓ | | |
 
 ## Associations
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast(bukrs as fis_bukrs preserving type)` |
-| key `DunningArea` | `cast(maber as farp_maber preserving type)` |
-| `_CompanyCode` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` |
+| `DunningArea` | ✓ | |  | `cast(maber as farp_maber preserving type)` |
+| `_CompanyCode` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

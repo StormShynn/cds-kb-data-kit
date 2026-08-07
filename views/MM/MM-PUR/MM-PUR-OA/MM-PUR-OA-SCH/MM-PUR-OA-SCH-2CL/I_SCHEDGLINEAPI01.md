@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `I_Schedgline.SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `I_Schedgline.SchedulingAgreementItem` |
-| key `ScheduleLine` | `I_Schedgline.ScheduleLine` |
-| `DelivDateCategory` | `I_Schedgline.DelivDateCategory` |
-| `ScheduleLineDeliveryDate` | `I_Schedgline.ScheduleLineDeliveryDate` |
-| `SchedLineStscDeliveryDate` | `I_Schedgline.SchedLineStscDeliveryDate` |
-| `ScheduleLineDeliveryTime` | `I_Schedgline.ScheduleLineDeliveryTime` |
-| `OrderQuantityUnit` | `_SchedgAgrmtItm.OrderQuantityUnit` |
-| `ScheduleLineOrderQuantity` | `I_Schedgline.ScheduleLineOrderQuantity` |
-| `PurchaseRequisition` | `I_Schedgline.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `I_Schedgline.PurchaseRequisitionItem` |
-| `RoughGoodsReceiptQty` | `I_Schedgline.RoughGoodsReceiptQty` |
-| `ScheduleLineIsFixed` | `I_Schedgline.ScheduleLineIsFixed` |
-| `NoOfRemindersOfScheduleLine` | `I_Schedgline.NoOfRemindersOfScheduleLine` |
-| `PrevDelivQtyOfScheduleLine` | `I_Schedgline.PrevDelivQtyOfScheduleLine` |
-| `SourceOfCreation` | `I_Schedgline.SourceOfCreation` |
-| `_SchedgagrmthdrApi01` | *Association* |
-| `_SchedgAgrmtItmApi01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |
+| `OrderQuantityUnit` |  | | `_SchedgAgrmtItm` | `OrderQuantityUnit` |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |
+| `ScheduleLineIsFixed` |  | |  |  |
+| `NoOfRemindersOfScheduleLine` |  | |  |  |
+| `PrevDelivQtyOfScheduleLine` |  | |  |  |
+| `SourceOfCreation` |  | |  |  |
+| `_SchedgagrmthdrApi01` | | ✓ | | |
+| `_SchedgAgrmtItmApi01` | | ✓ | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GoodsMovementRefDocType` | `cast ( cast ( substring( domvalue_l, 1, 2 ) as abap.char( 2 ) ) as kzbew )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GoodsMovementRefDocType` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 2 ) as abap.char( 2 ) ) as kzbew )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

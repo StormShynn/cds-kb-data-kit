@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| key `ServiceEntrySheetItem` | `ServiceEntrySheetItem` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `IsDeleted` | `IsDeleted` |
-| `Service` | `Service` |
-| `ServiceEntrySheetItemDesc` | `ServiceEntrySheetItemDesc` |
-| `ServicePerformer` | `ServicePerformer` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `MultipleAcctAssgmtDistribution` | `MultipleAcctAssgmtDistribution` |
-| `WorkItem` | `WorkItem` |
-| `ConfirmedQuantity` | `ConfirmedQuantity` |
-| `QuantityUnit` | `QuantityUnit` |
-| `ServicePerformanceDate` | `ServicePerformanceDate` |
-| `OriginObject` | `OriginObject` |
-| `NetAmount` | `NetAmount` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `Currency` | `_ServiceEntrySheet.Currency` |
-| `PurgDocItemExternalReference` | `PurgDocItemExternalReference` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Plant` | `Plant` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangeUser` |
-| `_ServiceEntrySheet` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `Service` |  | |  |  |
+| `ServiceEntrySheetItemDesc` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `ConfirmedQuantity` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `ServicePerformanceDate` |  | |  |  |
+| `OriginObject` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `Currency` |  | | `_ServiceEntrySheet` | `Currency` |
+| `PurgDocItemExternalReference` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  | `LastChangeUser` |
+| `_ServiceEntrySheet` | | ✓ | | |
 
 ## Associations
 

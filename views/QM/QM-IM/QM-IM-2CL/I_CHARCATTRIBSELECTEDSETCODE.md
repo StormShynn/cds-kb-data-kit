@@ -27,23 +27,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SelectedCodeSetPlant` | `qpac.werks` |
-| key `SelectedCodeSet` | `qpac.auswahlmge` |
-| key `CharacteristicAttributeCodeGrp` | `qpac.codegruppe` |
-| key `CharacteristicAttributeCode` | `qpac.code` |
-| `CharcAttributeValuation` | `qpac.bewertung` |
-| `CodeIsInactive` | `qpac.geloescht` |
-| `DefectClass` | `qpac.fehlklasse` |
-| `CharcAttribSeldSetCodeCrtedBy` | `qpac.ersteller` |
-| `CharcAttribSeldSetCodeCrtedOn` | `qpac.e_datum` |
-| `CharcAttribSeldSetCodeChgdBy` | `qpac.aenderer` |
-| `CharcAttribSeldSetCodeChgdOn` | `qpac.a_datum` |
-| `_CharcAttributeCodeGrp` | *Association* |
-| `_CharcAttributeCode` | *Association* |
-| `_CodeIsInactive` | *Association* |
-| `_CharcAttribSelectedCodeSet` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SelectedCodeSetPlant` | ✓ | |  | `werks` |
+| `SelectedCodeSet` | ✓ | |  | `auswahlmge` |
+| `CharacteristicAttributeCodeGrp` | ✓ | |  | `codegruppe` |
+| `CharacteristicAttributeCode` | ✓ | |  | `code` |
+| `CharcAttributeValuation` |  | |  | `bewertung` |
+| `CodeIsInactive` |  | |  | `geloescht` |
+| `DefectClass` |  | |  | `fehlklasse` |
+| `CharcAttribSeldSetCodeCrtedBy` |  | |  | `ersteller` |
+| `CharcAttribSeldSetCodeCrtedOn` |  | |  | `e_datum` |
+| `CharcAttribSeldSetCodeChgdBy` |  | |  | `aenderer` |
+| `CharcAttribSeldSetCodeChgdOn` |  | |  | `a_datum` |
+| `_CharcAttributeCodeGrp` | | ✓ | | |
+| `_CharcAttributeCode` | | ✓ | | |
+| `_CodeIsInactive` | | ✓ | | |
+| `_CharcAttribSelectedCodeSet` | | ✓ | | |
 
 ## Associations
 

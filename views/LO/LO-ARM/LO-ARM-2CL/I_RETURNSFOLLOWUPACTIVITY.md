@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReturnsFollowUpActivity` | `FollowUpDefault.fu_code` |
-| `_Text` | *Association* |
-| `_Text_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReturnsFollowUpActivity` | ✓ | |  | `fu_code` |
+| `_Text` | | ✓ | | |
+| `_Text_2` | | ✓ | | |
 
 ## Associations
 

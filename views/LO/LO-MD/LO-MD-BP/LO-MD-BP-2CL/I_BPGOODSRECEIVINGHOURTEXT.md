@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPGoodsReceivingHoursCode` | `tvwat.wanid` |
-| key `Language` | `tvwat.spras` |
-| `BPGoodsReceivingHoursText` | `tvwat.vtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPGoodsReceivingHoursCode` | ✓ | |  | `wanid` |
+| `Language` | ✓ | |  | `spras` |
+| `BPGoodsReceivingHoursText` |  | |  | `vtext` |
 
 ## Source Code
 

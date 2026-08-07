@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `dd07t.ddlanguage` |
-| key `BusinessPartnerRatingTrend` | `cast ( dd07t.domvalue_l as bp_tendency )` |
-| `BusinessPartnerRatingTrendDesc` | `dd07t.ddtext` |
-| `_BPRatingTrend` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BusinessPartnerRatingTrend` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_tendency )` |
+| `BusinessPartnerRatingTrendDesc` |  | |  | `ddtext` |
+| `_BPRatingTrend` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

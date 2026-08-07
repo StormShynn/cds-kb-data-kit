@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaxCalculationProcedure` | `I_TaxCode.TaxCalculationProcedure` |
-| key `TaxCode` | `I_TaxCode.TaxCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaxCalculationProcedure` | ✓ | |  |  |
+| `TaxCode` | ✓ | |  |  |
 
 ## Source Code
 

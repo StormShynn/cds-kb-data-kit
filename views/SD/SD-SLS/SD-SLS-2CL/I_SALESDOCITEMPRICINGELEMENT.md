@@ -29,60 +29,60 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `SalesDocument.SalesDocument` |
-| key `SalesDocumentItem` | `cast(PricingDocumentItem as posnr_va preserving type)` |
-| key `PricingProcedureStep` | `PricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `PricingElement.ConditionApplication` |
-| `ConditionType` | `PricingElement.ConditionType` |
-| `PricingDateTime` | `PricingElement.PricingDateTime` |
-| `PriceConditionDeterminationDte` | `PricingElement.PriceConditionDeterminationDte` |
-| `ConditionCalculationType` | `PricingElement.ConditionCalculationType` |
-| `ConditionBaseValue` | `PricingElement.ConditionBaseValue` |
-| `ConditionRateValue` | `PricingElement.ConditionRateValue` |
-| `ConditionCurrency` | `PricingElement.ConditionCurrency` |
-| `ConditionQuantity` | `PricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `PricingElement.ConditionQuantityUnit` |
-| `ConditionCategory` | `PricingElement.ConditionCategory` |
-| `ConditionIsForStatistics` | `PricingElement.ConditionIsForStatistics` |
-| `PricingScaleType` | `PricingElement.PricingScaleType` |
-| `IsRelevantForAccrual` | `PricingElement.IsRelevantForAccrual` |
-| `CndnIsRelevantForInvoiceList` | `PricingElement.CndnIsRelevantForInvoiceList` |
-| `ConditionOrigin` | `PricingElement.ConditionOrigin` |
-| `IsGroupCondition` | `PricingElement.IsGroupCondition` |
-| `IsGroupCondition_2` | `PricingElement.IsGroupCondition_2` |
-| `ConditionRecord` | `PricingElement.ConditionRecord` |
-| `ConditionSequentialNumber` | `PricingElement.ConditionSequentialNumber` |
-| `TaxCode` | `PricingElement.TaxCode` |
-| `WithholdingTaxCode` | `PricingElement.WithholdingTaxCode` |
-| `CndnRoundingOffDiffAmount` | `PricingElement.CndnRoundingOffDiffAmount` |
-| `ConditionAmount` | `PricingElement.ConditionAmount` |
-| `TransactionCurrency` | `PricingElement.TransactionCurrency` |
-| `ConditionControl` | `PricingElement.ConditionControl` |
-| `ConditionInactiveReason` | `PricingElement.ConditionInactiveReason` |
-| `ConditionClass` | `PricingElement.ConditionClass` |
-| `PrcgProcedureCounterForHeader` | `PricingElement.PrcgProcedureCounterForHeader` |
-| `FactorForConditionBasisValue` | `PricingElement.FactorForConditionBasisValue` |
-| `StructureCondition` | `PricingElement.StructureCondition` |
-| `PeriodFactorForCndnBasisValue` | `PricingElement.PeriodFactorForCndnBasisValue` |
-| `PricingScaleBasis` | `PricingElement.PricingScaleBasis` |
-| `ConditionScaleBasisValue` | `PricingElement.ConditionScaleBasisValue` |
-| `ConditionScaleBasisUnit` | `PricingElement.ConditionScaleBasisUnit` |
-| `ConditionScaleBasisCurrency` | `PricingElement.ConditionScaleBasisCurrency` |
-| `CndnIsRelevantForIntcoBilling` | `PricingElement.CndnIsRelevantForIntcoBilling` |
-| `ConditionIsManuallyChanged` | `PricingElement.ConditionIsManuallyChanged` |
-| `ConditionIsForConfiguration` | `PricingElement.ConditionIsForConfiguration` |
-| `VariantCondition` | `PricingElement.VariantCondition` |
-| `ConditionRateAmount` | `PricingElement.ConditionRateAmount` |
-| `ConditionRateRatio` | `PricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `PricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `PricingElement.ConditionBaseAmount` |
-| `ConditionBaseQuantity` | `PricingElement.ConditionBaseQuantity` |
-| `SDDocumentCategory` | `SalesDocument.SDDocumentCategory` |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  |  |
+| `SalesDocumentItem` | ✓ | |  | `cast(PricingDocumentItem as posnr_va preserving type)` |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `PricingDateTime` |  | |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionBaseValue` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `IsRelevantForAccrual` |  | |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `IsGroupCondition` |  | |  |  |
+| `IsGroupCondition_2` |  | |  |  |
+| `ConditionRecord` |  | |  |  |
+| `ConditionSequentialNumber` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `WithholdingTaxCode` |  | |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionControl` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |
+| `StructureCondition` |  | |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |
+| `PricingScaleBasis` |  | |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |
+| `VariantCondition` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
 
 ## Associations
 

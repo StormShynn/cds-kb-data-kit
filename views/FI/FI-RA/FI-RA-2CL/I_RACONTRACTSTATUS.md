@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RevnAcctgContractStatus` | `cast(dd07l.domvalue_l as farr_contract_status)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RevnAcctgContractStatus` | ✓ | |  | `cast(dd07l.domvalue_l as farr_contract_status)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

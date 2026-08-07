@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CompanyCode` | `bukrs` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` |  | |  | `bukrs` |
 
 ## Source Code
 

@@ -29,50 +29,50 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChargeItemUUID` | `cast(db_key as /scmtms/vdm_chrg_itm_db_key preserving type)` |
-| `TransportationChargeUUID` | `cast(parent_key as /scmtms/vdm_transpcharge_uuid preserving type )` |
-| `RefTransportationOrderNodeUUID` | `cast(ref_key as /scmtms/vdm_tor_ref_db_nde_key preserving type)` |
-| `RefTransportationOrderUUID` | `cast(ref_root_key as /scmtms/vdm_tor_ref_db_key preserving type)` |
-| `TranspChargeCalcLevel` | `root_level` |
-| `TranspChargePostingStatus` | `invoicing` |
-| `HostObjectSAPObjectType` | `cast( case bintohex( host_bo_key ) when '80E0ED0A0C021DEE8CE07DB4266D17C4' then 'TransportationOrder' when '80E0ED0A0DD11DDEB4EA8E4375A74E6B' then 'SupplierFreightInvoiceRequest' else '' end as sap_object_type_raw )` |
-| `HostObjNodeSAPObjectNodeType` | `cast( case bintohex( host_node_key ) when '80E0ED0A0C021DDE8CE07DB5DFAD0818' then 'TransportationOrder' when '80E0ED0A0DD11DEEB4EA8E44A108915B' then 'SupplierFreightInvoiceRequest' else '' end as sap_object_node_type )` |
-| `TranspChargeHostDocumentUUID` | `cast(host_root_key as /scmtms/vdm_tcc_hst_doc_uuid preserving type )` |
-| `TransportationAgreementUUID` | `cast(uuid057 as /scmtms/vdm_tcm_agreement_uuid preserving type )` |
-| `TranspChrgCalcSheetUUID` | `cast(uuid020 as /scmtms/vdm_tcm_calcsheet_uuid preserving type )` |
-| `TranspChargeCalcStatus` | `calc_status` |
-| `BusinessPartnerUUID` | `cast(party_uuid as bu_partner_guid preserving type)` |
-| `TranspDimnWeightProfile` | `dim_wt_profile` |
-| `TranspChrgItemExchangeRateDate` | `exchdate_doc` |
-| `TranspChrgItemDocCurrency` | `cast(currcode016 as /scmtms/vdm_tcc_doc_currency preserving type )` |
-| `TranspChrgItmTotAmtInDocCrcy` | `cast( cast( amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_doc_amount )` |
-| `TranspChrgItemLoclCurrency` | `cast(currcode016lcl as /scmtms/vdm_tcc_loc_currency preserving type )` |
-| `TranspChrgItmTotAmtInLoclCrcy` | `cast( cast( amountlcl as abap.dec(31,6) ) * 10000 as /scmtms/vdm_local_amount )` |
-| `TranspChrgItmInvcdAmount` | `cast( cast( invoiced_amt as abap.dec(31,6)) * 10000 as /scmtms/vdm_invc_amount_ml )` |
-| `TranspChrgItmInvcdAmtCrcy` | `cast( invoiced_amt_curr as /scmtms/vdm_invc_amount_crcy preserving type )` |
-| `TranspChargeItemIsHeaderCharge` | `cast(is_header_charge as /scmtms/vdm_tcc_item_is_header preserving type )` |
-| `TranspChargeCalculationDateTme` | `calcdate_tstmp` |
-| `TranspChargePaymentTerms` | `zterm` |
-| `TranspChargePostingDate` | `posting_date` |
-| `TranspChargeItemTypeCode` | `type_code` |
-| `TranspChargeCalcLevelRefUUID` | `cast(host_key as transpchargecalclevelrefuuid preserving type )` |
-| `TranspChrgCalcDteTmeIsChanged` | `fix_calcdate` |
-| `_TranspChargePostingStatus` | *Association* |
-| `_TranspChargeCalcLevel` | *Association* |
-| `_TranspChargeCalcStatus` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_TranspChargeDocumentCurrency` | *Association* |
-| `_TranspChrgItemLoclCurrency` | *Association* |
-| `_TranspChrgItmInvcdAmtCrcy` | *Association* |
-| `_TransportationAgreement` | *Association* |
-| `_TranspDimnWeightProfile` | *Association* |
-| `_TranspChargeCalcSheet` | *Association* |
-| `_PaymentTermsText` | *Association* |
-| `_TransportationOrderCharge` | *Association* |
-| `_TransportationChargeElement` | *Association* |
-| `_TranspChargeExchRate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChargeItemUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_chrg_itm_db_key preserving type)` |
+| `TransportationChargeUUID` |  | |  | `cast(parent_key as /scmtms/vdm_transpcharge_uuid preserving type )` |
+| `RefTransportationOrderNodeUUID` |  | |  | `cast(ref_key as /scmtms/vdm_tor_ref_db_nde_key preserving type)` |
+| `RefTransportationOrderUUID` |  | |  | `cast(ref_root_key as /scmtms/vdm_tor_ref_db_key preserving type)` |
+| `TranspChargeCalcLevel` |  | |  | `root_level` |
+| `TranspChargePostingStatus` |  | |  | `invoicing` |
+| `HostObjectSAPObjectType` |  | |  | `cast( case bintohex( host_bo_key ) when '80E0ED0A0C021DEE8CE07DB4266D17C4' then 'TransportationOrder' when '80E0ED0A0DD11DDEB4EA8E4375A74E6B' then 'SupplierFreightInvoiceRequest' else '' end as sap_object_type_raw )` |
+| `HostObjNodeSAPObjectNodeType` |  | |  | `cast( case bintohex( host_node_key ) when '80E0ED0A0C021DDE8CE07DB5DFAD0818' then 'TransportationOrder' when '80E0ED0A0DD11DEEB4EA8E44A108915B' then 'SupplierFreightInvoiceRequest' else '' end as sap_object_node_type )` |
+| `TranspChargeHostDocumentUUID` |  | |  | `cast(host_root_key as /scmtms/vdm_tcc_hst_doc_uuid preserving type )` |
+| `TransportationAgreementUUID` |  | |  | `cast(uuid057 as /scmtms/vdm_tcm_agreement_uuid preserving type )` |
+| `TranspChrgCalcSheetUUID` |  | |  | `cast(uuid020 as /scmtms/vdm_tcm_calcsheet_uuid preserving type )` |
+| `TranspChargeCalcStatus` |  | |  | `calc_status` |
+| `BusinessPartnerUUID` |  | |  | `cast(party_uuid as bu_partner_guid preserving type)` |
+| `TranspDimnWeightProfile` |  | |  | `dim_wt_profile` |
+| `TranspChrgItemExchangeRateDate` |  | |  | `exchdate_doc` |
+| `TranspChrgItemDocCurrency` |  | |  | `cast(currcode016 as /scmtms/vdm_tcc_doc_currency preserving type )` |
+| `TranspChrgItmTotAmtInDocCrcy` |  | |  | `cast( cast( amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_doc_amount )` |
+| `TranspChrgItemLoclCurrency` |  | |  | `cast(currcode016lcl as /scmtms/vdm_tcc_loc_currency preserving type )` |
+| `TranspChrgItmTotAmtInLoclCrcy` |  | |  | `cast( cast( amountlcl as abap.dec(31,6) ) * 10000 as /scmtms/vdm_local_amount )` |
+| `TranspChrgItmInvcdAmount` |  | |  | `cast( cast( invoiced_amt as abap.dec(31,6)) * 10000 as /scmtms/vdm_invc_amount_ml )` |
+| `TranspChrgItmInvcdAmtCrcy` |  | |  | `cast( invoiced_amt_curr as /scmtms/vdm_invc_amount_crcy preserving type )` |
+| `TranspChargeItemIsHeaderCharge` |  | |  | `cast(is_header_charge as /scmtms/vdm_tcc_item_is_header preserving type )` |
+| `TranspChargeCalculationDateTme` |  | |  | `calcdate_tstmp` |
+| `TranspChargePaymentTerms` |  | |  | `zterm` |
+| `TranspChargePostingDate` |  | |  | `posting_date` |
+| `TranspChargeItemTypeCode` |  | |  | `type_code` |
+| `TranspChargeCalcLevelRefUUID` |  | |  | `cast(host_key as transpchargecalclevelrefuuid preserving type )` |
+| `TranspChrgCalcDteTmeIsChanged` |  | |  | `fix_calcdate` |
+| `_TranspChargePostingStatus` | | ✓ | | |
+| `_TranspChargeCalcLevel` | | ✓ | | |
+| `_TranspChargeCalcStatus` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_TranspChargeDocumentCurrency` | | ✓ | | |
+| `_TranspChrgItemLoclCurrency` | | ✓ | | |
+| `_TranspChrgItmInvcdAmtCrcy` | | ✓ | | |
+| `_TransportationAgreement` | | ✓ | | |
+| `_TranspDimnWeightProfile` | | ✓ | | |
+| `_TranspChargeCalcSheet` | | ✓ | | |
+| `_PaymentTermsText` | | ✓ | | |
+| `_TransportationOrderCharge` | | ✓ | | |
+| `_TransportationChargeElement` | | ✓ | | |
+| `_TranspChargeExchRate` | | ✓ | | |
 
 ## Associations
 

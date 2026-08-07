@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `YearMonth` | `month.yearmonth` |
-| `CalendarMonth` | `month.calendarmonth` |
-| `CalendarYear` | `month.calendaryear` |
-| `CalendarQuarter` | `month.calendarquarter` |
-| `IsLeapYear` | `year.isleapyear` |
-| `NumberOfDays` | `month.numberofdays` |
-| `FirstDayOfMonthDate` | `month.firstdayofmonthdate` |
-| `LastDayOfMonthDate` | `month.lastdayofmonthdate` |
-| `HalfYear` | `month.halfyear` |
-| `_CalendarMonth` | *Association* |
-| `_CalendarQuarter` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `YearMonth` | ✓ | |  | `yearmonth` |
+| `CalendarMonth` |  | |  | `calendarmonth` |
+| `CalendarYear` |  | |  | `calendaryear` |
+| `CalendarQuarter` |  | |  | `calendarquarter` |
+| `IsLeapYear` |  | |  | `isleapyear` |
+| `NumberOfDays` |  | |  | `numberofdays` |
+| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` |
+| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` |
+| `HalfYear` |  | |  | `halfyear` |
+| `_CalendarMonth` | | ✓ | | |
+| `_CalendarQuarter` | | ✓ | | |
 
 ## Associations
 

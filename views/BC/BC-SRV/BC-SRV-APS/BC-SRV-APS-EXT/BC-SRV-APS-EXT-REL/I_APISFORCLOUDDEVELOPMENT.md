@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReleasedObjectType` | `object_type` |
-| key `ReleasedObjectName` | `object_key` |
-| key `ObjectDirectoryType` | `tadir_object` |
-| key `ObjectDirectoryName` | `tadir_obj_name` |
-| `ReleaseState` | `state` |
-| `ReleaseStateDescription` | `state_description` |
-| `PlannedDecommissioningDate` | `decommissioning_date` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReleasedObjectType` | ✓ | |  | `object_type` |
+| `ReleasedObjectName` | ✓ | |  | `object_key` |
+| `ObjectDirectoryType` | ✓ | |  | `tadir_object` |
+| `ObjectDirectoryName` | ✓ | |  | `tadir_obj_name` |
+| `ReleaseState` |  | |  | `state` |
+| `ReleaseStateDescription` |  | |  | `state_description` |
+| `PlannedDecommissioningDate` |  | |  | `decommissioning_date` |
 
 ## Source Code
 

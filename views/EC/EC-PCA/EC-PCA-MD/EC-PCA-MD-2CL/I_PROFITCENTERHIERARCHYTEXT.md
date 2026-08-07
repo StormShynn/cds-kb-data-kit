@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `hrrp_dirt_n.hrycls` |
-| key `ProfitCenterHierarchy` | `cast(hrrp_dirt_n.hryid as fis_hryid_prctr preserving type )` |
-| key `ValidityEndDate` | `hrrp_dirt_n.hryvalto` |
-| key `Language` | `hrrp_dirt_n.spras` |
-| `ValidityStartDate` | `hrrp_dirt_n.hryvalfrom` |
-| `ProfitCenterHierarchyName` | `hrrp_dirt_n.hrytxt` |
-| `_ControllingAreaText` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `hrycls` |
+| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_prctr preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `ProfitCenterHierarchyName` |  | |  | `hrytxt` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -31,29 +31,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMInboundDelivery` | `EWMInboundDelivery` |
-| `InboundDeliveryUUID` | `InboundDeliveryUUID` |
-| `SAPObjectNodeType` | `SAPObjectNodeType` |
-| `EWMInboundDeliveryUUIDHex` | `EWMInboundDeliveryUUIDHex` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `EWMDeliveryDocumentCategory` | `EWMDeliveryDocumentCategory` |
-| `EWMDeliveryDocumentType` | `EWMDeliveryDocumentType` |
-| `ShipFromParty` | `ShipFromParty` |
-| `ShipFromPartyName` | `ShipFromPartyName` |
-| `EWMShipFromIsBusPurposeCmpltd` | `EWMShipFromIsBusPurposeCmpltd` |
-| `Carrier` | `Carrier` |
-| `CarrierName` | `CarrierName` |
-| `EWMCarrierIsBusPurposeCmpltd` | `EWMCarrierIsBusPurposeCmpltd` |
-| `AdvancedShippingNotification` | `AdvancedShippingNotification` |
-| `InboundDelivery` | `InboundDelivery` |
-| `PlannedDeliveryUTCDateTime` | `cast(PlannedDeliveryUTCDateTime as ewm_de_plan_dlv_date preserving type)` |
-| `ReceivingOffice` | `ReceivingOffice` |
-| `EWMDelivLastChangeUTCDateTime` | `EWMDelivLastChangeUTCDateTime` |
-| `WarehouseTimeZone` | `WarehouseTimeZone` |
-| `_WhseInbDeliveryItem` | *Association* |
-| `_HDMRelation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMInboundDelivery` | ✓ | |  |  |
+| `InboundDeliveryUUID` |  | |  |  |
+| `SAPObjectNodeType` |  | |  |  |
+| `EWMInboundDeliveryUUIDHex` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  |  |
+| `EWMDeliveryDocumentType` |  | |  |  |
+| `ShipFromParty` |  | |  |  |
+| `ShipFromPartyName` |  | |  |  |
+| `EWMShipFromIsBusPurposeCmpltd` |  | |  |  |
+| `Carrier` |  | |  |  |
+| `CarrierName` |  | |  |  |
+| `EWMCarrierIsBusPurposeCmpltd` |  | |  |  |
+| `AdvancedShippingNotification` |  | |  |  |
+| `InboundDelivery` |  | |  |  |
+| `PlannedDeliveryUTCDateTime` |  | |  | `cast(PlannedDeliveryUTCDateTime as ewm_de_plan_dlv_date preserving type)` |
+| `ReceivingOffice` |  | |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  |  |
+| `WarehouseTimeZone` |  | |  |  |
+| `_WhseInbDeliveryItem` | | ✓ | | |
+| `_HDMRelation` | | ✓ | | |
 
 ## Source Code
 

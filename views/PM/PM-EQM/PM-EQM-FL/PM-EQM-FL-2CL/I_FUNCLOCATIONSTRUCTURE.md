@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FuncLocationStructure` | `t370s.tplkz` |
-| `FuncLocationStructureEditMask` | `t370s.editm` |
-| `FuncLocationStrucHierLevels` | `t370s.stufm` |
-| `FuncLocStrucIdentifyingLevel` | `t370s.level_kz` |
-| `FuncLocStruc2ndIdentifyingLvl` | `t370s.level_kz2` |
-| `FuncnlLocationStructureCodeOID` | `cast( t370s.tplkz as funclocationstructure_oid )` |
-| `_FuncLocationStructureText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FuncLocationStructure` | ✓ | |  | `tplkz` |
+| `FuncLocationStructureEditMask` |  | |  | `editm` |
+| `FuncLocationStrucHierLevels` |  | |  | `stufm` |
+| `FuncLocStrucIdentifyingLevel` |  | |  | `level_kz` |
+| `FuncLocStruc2ndIdentifyingLvl` |  | |  | `level_kz2` |
+| `FuncnlLocationStructureCodeOID` |  | |  | `cast( t370s.tplkz as funclocationstructure_oid )` |
+| `_FuncLocationStructureText` | | ✓ | | |
 
 ## Associations
 

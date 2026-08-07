@@ -33,21 +33,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturn` | `CustomerReturnItemText.CustomerReturn` |
-| key `CustomerReturnItem` | `CustomerReturnItemText.CustomerReturnItem` |
-| key `Language` | `CustomerReturnItemText.Language` |
-| key `LongTextID` | `CustomerReturnItemText.LongTextID` |
-| `LongTextIDForEdit` | `CustomerReturnItemText.LongTextIDForEdit` |
-| `LanguageForEdit` | `CustomerReturnItemText.LanguageForEdit` |
-| `LongText` | `CustomerReturnItemText.LongText` |
-| `CustomerReturnType` | `CustomerReturnItemText.CustomerReturnType` |
-| `SalesOrganization` | `CustomerReturnItemText.SalesOrganization` |
-| `DistributionChannel` | `CustomerReturnItemText.DistributionChannel` |
-| `OrganizationDivision` | `CustomerReturnItemText.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_CustomerReturn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |
+| `CustomerReturnItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `CustomerReturnType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_CustomerReturn` | | ✓ | | |
 
 ## Source Code
 

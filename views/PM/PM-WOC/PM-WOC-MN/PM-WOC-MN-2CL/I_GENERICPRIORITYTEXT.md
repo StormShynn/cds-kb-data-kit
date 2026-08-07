@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t356_t.spras` |
-| key `GenericPriorityType` | `t356_t.artpr` |
-| key `PriorityCode` | `t356_t.priok` |
-| `GenericPriorityDesc` | `t356_t.priokx` |
-| `_GenericPriority` | *Association* |
-| `_GenericPriorityType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `GenericPriorityType` | ✓ | |  | `artpr` |
+| `PriorityCode` | ✓ | |  | `priok` |
+| `GenericPriorityDesc` |  | |  | `priokx` |
+| `_GenericPriority` | | ✓ | | |
+| `_GenericPriorityType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

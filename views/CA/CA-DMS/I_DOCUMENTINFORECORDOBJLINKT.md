@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tdwot.langu` |
-| key `LinkedSAPObject` | `tdwot.dokob` |
-| `ObjectDescription` | `tdwot.ktxt` |
-| `ObjectType` | `tdwot.objab` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `LinkedSAPObject` | ✓ | |  | `dokob` |
+| `ObjectDescription` |  | |  | `ktxt` |
+| `ObjectType` |  | |  | `objab` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

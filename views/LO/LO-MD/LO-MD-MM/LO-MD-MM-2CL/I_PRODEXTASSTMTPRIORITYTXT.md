@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdExtAssortmentPriority` | `pflks` |
-| key `Language` | `spras` |
-| `ProdExtAssortmentPriorityText` | `vtext` |
-| `_ProdExtAssortmentPriority` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdExtAssortmentPriority` | ✓ | |  | `pflks` |
+| `Language` | ✓ | |  | `spras` |
+| `ProdExtAssortmentPriorityText` |  | |  | `vtext` |
+| `_ProdExtAssortmentPriority` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QuotaArrangement` | `QuotaArrangement` |
-| key `QuotaArrangementItem` | `QuotaArrangementItem` |
-| `MaterialProcurementCategory` | `MaterialProcurementCategory` |
-| `MaterialProcurementType` | `MaterialProcurementType` |
-| `Supplier` | `Supplier` |
-| `SupplyingPlant` | `SupplyingPlant` |
-| `PurchasingSourceQuota` | `PurchasingSourceQuota` |
-| `QuotaBaseQuantity` | `QuotaBaseQuantity` |
-| `QuotaAllocatedQuantity` | `QuotaAllocatedQuantity` |
-| `QuotaMaximumQuantity` | `QuotaMaximumQuantity` |
-| `ProductionVersion` | `ProductionVersion` |
-| `MaterialMaxLotSizeQuantity` | `MaterialMaxLotSizeQuantity` |
-| `MaterialMinLotSizeQuantity` | `MaterialMinLotSizeQuantity` |
-| `MaterialRoundingProfile` | `MaterialRoundingProfile` |
-| `SourceOfSupplyIsAssignedOnce` | `SourceOfSupplyIsAssignedOnce` |
-| `MaximumReleaseQuantity` | `MaximumReleaseQuantity` |
-| `QuotaReleasePeriodType` | `QuotaReleasePeriodType` |
-| `NumberOfPeriodsPerRelQuantity` | `NumberOfPeriodsPerRelQuantity` |
-| `QuotaDeterminationPriority` | `QuotaDeterminationPriority` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `PlannedDeliveryDurationInDays` | `PlannedDeliveryDurationInDays` |
-| `Plant` | `Plant` |
-| `MaterialBaseUnit` | `MaterialBaseUnit` |
-| `AuthorizationGroup` | `I_PurgQuotaArrgmtItem._Supplier.AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `I_PurgQuotaArrgmtItem._Supplier.IsBusinessPurposeCompleted` |
-| `DataControllerSet` | `I_PurgQuotaArrgmtItem._Supplier.DataControllerSet` |
-| `DataController1` | `I_PurgQuotaArrgmtItem._Supplier.DataController1` |
-| `DataController2` | `I_PurgQuotaArrgmtItem._Supplier.DataController2` |
-| `DataController3` | `I_PurgQuotaArrgmtItem._Supplier.DataController3` |
-| `DataController4` | `I_PurgQuotaArrgmtItem._Supplier.DataController4` |
-| `DataController5` | `I_PurgQuotaArrgmtItem._Supplier.DataController5` |
-| `DataController6` | `I_PurgQuotaArrgmtItem._Supplier.DataController6` |
-| `DataController7` | `I_PurgQuotaArrgmtItem._Supplier.DataController7` |
-| `DataController8` | `I_PurgQuotaArrgmtItem._Supplier.DataController8` |
-| `DataController9` | `I_PurgQuotaArrgmtItem._Supplier.DataController9` |
-| `DataController10` | `I_PurgQuotaArrgmtItem._Supplier.DataController10` |
-| `_PurgQuotaArrgmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QuotaArrangement` | ✓ | |  |  |
+| `QuotaArrangementItem` | ✓ | |  |  |
+| `MaterialProcurementCategory` |  | |  |  |
+| `MaterialProcurementType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplyingPlant` |  | |  |  |
+| `PurchasingSourceQuota` |  | |  |  |
+| `QuotaBaseQuantity` |  | |  |  |
+| `QuotaAllocatedQuantity` |  | |  |  |
+| `QuotaMaximumQuantity` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `MaterialMaxLotSizeQuantity` |  | |  |  |
+| `MaterialMinLotSizeQuantity` |  | |  |  |
+| `MaterialRoundingProfile` |  | |  |  |
+| `SourceOfSupplyIsAssignedOnce` |  | |  |  |
+| `MaximumReleaseQuantity` |  | |  |  |
+| `QuotaReleasePeriodType` |  | |  |  |
+| `NumberOfPeriodsPerRelQuantity` |  | |  |  |
+| `QuotaDeterminationPriority` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |
+| `Plant` |  | |  |  |
+| `MaterialBaseUnit` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_PurgQuotaArrgmt` | | ✓ | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerBusinessPurpose` | `cast ( dd07l.domvalue_l as bp_business_purpose )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerBusinessPurpose` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_business_purpose )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

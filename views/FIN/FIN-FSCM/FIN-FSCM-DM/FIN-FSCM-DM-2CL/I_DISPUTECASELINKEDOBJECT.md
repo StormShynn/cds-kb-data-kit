@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LogicalSystem` | `logsys` |
-| key `ObjectType` | `obj_type` |
-| key `ObjectKey` | `obj_key` |
-| key `RelationToLinkedObject` | `cast ( relation as dispute_relationship preserving type )` |
-| key `DisputeCaseUUID` | `case_guid_loc` |
-| `ObjectClassification` | `classification` |
-| `ObjectIsConfirmed` | `is_confirmed` |
-| `ObjectIsVoided` | `is_voided` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LogicalSystem` | ✓ | |  | `logsys` |
+| `ObjectType` | ✓ | |  | `obj_type` |
+| `ObjectKey` | ✓ | |  | `obj_key` |
+| `RelationToLinkedObject` | ✓ | |  | `cast ( relation as dispute_relationship preserving type )` |
+| `DisputeCaseUUID` | ✓ | |  | `case_guid_loc` |
+| `ObjectClassification` |  | |  | `classification` |
+| `ObjectIsConfirmed` |  | |  | `is_confirmed` |
+| `ObjectIsVoided` |  | |  | `is_voided` |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassInternalID` | `ClassDescription.clint` |
-| key `Language` | `ClassDescription.spras` |
-| `ClassDescription` | `cast( ClassDescription.kschl as klsbez preserving type )` |
-| `ClassKeywordPositionNumber` | `ClassDescription.klpos` |
-| `_Language` | *Association* |
-| `_Class` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassInternalID` | ✓ | |  | `clint` |
+| `Language` | ✓ | |  | `spras` |
+| `ClassDescription` |  | |  | `cast( ClassDescription.kschl as klsbez preserving type )` |
+| `ClassKeywordPositionNumber` |  | |  | `klpos` |
+| `_Language` | | ✓ | | |
+| `_Class` | | ✓ | | |
 
 ## Associations
 

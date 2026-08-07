@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostCtrActivityTypeCategory` | `cast( domvalue_l as latyp )` |
-| key `Language` | `cast( ddlanguage as spras )` |
-| `CostCtrActivityTypeCatName` | `cast(ddtext as fis_latyp_text)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostCtrActivityTypeCategory` | ✓ | |  | `cast( domvalue_l as latyp )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `CostCtrActivityTypeCatName` |  | |  | `cast(ddtext as fis_latyp_text)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

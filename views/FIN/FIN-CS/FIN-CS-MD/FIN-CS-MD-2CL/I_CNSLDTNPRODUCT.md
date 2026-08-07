@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `cast( Product as fincs_product preserving type )` |
-| `AdditionalMasterDataSource` | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `CreationDateTime` | `cast( min ( CreationDateTime ) as fincs_creationdatetime preserving type )` |
-| `_Text` | *Association* |
-| `_ProductHierNode` | *Association* |
-| `_MDSource` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast( Product as fincs_product preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
+| `CreationDateTime` |  | |  | `cast( min ( CreationDateTime ) as fincs_creationdatetime preserving type )` |
+| `_Text` | | ✓ | | |
+| `_ProductHierNode` | | ✓ | | |
+| `_MDSource` | | ✓ | | |
 
 ## Associations
 

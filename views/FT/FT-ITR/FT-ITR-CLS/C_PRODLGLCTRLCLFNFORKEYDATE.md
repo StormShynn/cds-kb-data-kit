@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `LegalRegulation` | `LegalRegulation` |
-| `ControlClass` | `ControlClass` |
-| `IsTrdCmplncControlRelevant` | `IsTrdCmplncControlRelevant` |
-| `ControlGrouping` | `ControlGrouping` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `TrdClassfctnRemark` | `TrdClassfctnRemark` |
-| `_Product` | *Association* |
-| `_ControlGroupingText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `LegalRegulation` | ✓ | |  |  |
+| `ControlClass` |  | |  |  |
+| `IsTrdCmplncControlRelevant` |  | |  |  |
+| `ControlGrouping` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `TrdClassfctnRemark` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ControlGroupingText` | | ✓ | | |
 
 ## Associations
 

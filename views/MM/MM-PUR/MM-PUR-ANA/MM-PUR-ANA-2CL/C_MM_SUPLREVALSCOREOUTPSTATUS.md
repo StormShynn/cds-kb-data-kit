@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScoreOutputStatus` | `cast( SuplrEvalScoreOutputStatus as mmpur_ana_de_output_act_typ)` |
-| `SuplrEvalScoreOutputStatusText` | `_Text[1: Language = $session.system_language ].SuplrEvalScoreOutputStatusText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScoreOutputStatus` | ✓ | |  | `cast( SuplrEvalScoreOutputStatus as mmpur_ana_de_output_act_typ)` |
+| `SuplrEvalScoreOutputStatusText` |  | |  | `_Text[1: Language = $session.system_language ].SuplrEvalScoreOutputStatusText` |
 
 ## Source Code
 

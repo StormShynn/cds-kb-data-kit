@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequest` | `DebitMemoRequestPricingElement.DebitMemoRequest` |
-| key `PricingProcedureStep` | `DebitMemoRequestPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `DebitMemoRequestPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `DebitMemoRequestPricingElement.ConditionApplication` |
-| `ConditionType` | `DebitMemoRequestPricingElement.ConditionType` |
-| `ConditionTypeName` | `DebitMemoRequestPricingElement.ConditionTypeName` |
-| `ConditionCalculationType` | `DebitMemoRequestPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `DebitMemoRequestPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `DebitMemoRequestPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `DebitMemoRequestPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `DebitMemoRequestPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `DebitMemoRequestPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `DebitMemoRequestPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `DebitMemoRequestPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `DebitMemoRequestPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `DebitMemoRequestPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `DebitMemoRequestPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `DebitMemoRequestPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `DebitMemoRequestPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `DebitMemoRequestPricingElement.ConditionInactiveReason` |
-| `ConditionRateValueIsAmount` | `DebitMemoRequestPricingElement.ConditionRateValueIsAmount` |
-| `ConditionRateValueIsRatio` | `DebitMemoRequestPricingElement.ConditionRateValueIsRatio` |
-| `ConditionRateValueIsNull` | `DebitMemoRequestPricingElement.ConditionRateValueIsNull` |
-| `ConditionQuantityIsNull` | `DebitMemoRequestPricingElement.ConditionQuantityIsNull` |
-| `ConditionAmountIsNull` | `DebitMemoRequestPricingElement.ConditionAmountIsNull` |
-| `DebitMemoRequestType` | `DebitMemoRequestPricingElement.DebitMemoRequestType` |
-| `SalesOrganization` | `DebitMemoRequestPricingElement.SalesOrganization` |
-| `DistributionChannel` | `DebitMemoRequestPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `DebitMemoRequestPricingElement.OrganizationDivision` |
-| `_DebitMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionRateValueIsAmount` |  | |  |  |
+| `ConditionRateValueIsRatio` |  | |  |  |
+| `ConditionRateValueIsNull` |  | |  |  |
+| `ConditionQuantityIsNull` |  | |  |  |
+| `ConditionAmountIsNull` |  | |  |  |
+| `DebitMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_DebitMemoRequest` | | ✓ | | |
 
 ## Source Code
 

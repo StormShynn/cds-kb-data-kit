@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `FinTransNoticePeriodUnit` | `cast( dd07t.domvalue_l as tb_skuend )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `FinTransNoticePeriodUnitName` | `cast( dd07t.ddtext as tb_skuend_name preserving type )` |
-| `_NoticePeriodUnit` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `FinTransNoticePeriodUnit` | ✓ | |  | `cast( dd07t.domvalue_l as tb_skuend )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `FinTransNoticePeriodUnitName` |  | |  | `cast( dd07t.ddtext as tb_skuend_name preserving type )` |
+| `_NoticePeriodUnit` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

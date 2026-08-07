@@ -27,42 +27,42 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `RECORD_ID` | `formreg.RECORD_ID` |
-| `FORM_APP_NAME` | `formreg.FORM_APP_NAME` |
-| `FORM_NAME` | `formreg.FORM_NAME` |
-| `FORM_VERSION` | `formreg.FORM_VERSION` |
-| `FORM_INSTANCE_ID` | `formreg.FORM_INSTANCE_ID` |
-| `FORM_STATUS` | `formreg.FORM_STATUS` |
-| `BOR_OBJTYP` | `formreg.BOR_OBJTYP` |
-| `OBJECT_TYPE` | `formreg.OBJECT_TYPE` |
-| `OBJECT_KEY` | `formreg.OBJECT_KEY` |
-| `OBJECT_GROUP` | `formreg.OBJECT_GROUP` |
-| `OBJECT_GROUP_1` | `formreg.OBJECT_GROUP_1` |
-| `OBJECT_DESCR` | `formreg.OBJECT_DESCR` |
-| `TECH_ENTITY_TYPE` | `formreg.TECH_ENTITY_TYPE` |
-| `TECH_ENTITY_KEY` | `formreg.TECH_ENTITY_KEY` |
-| `PARENT_OBJECT_TYPE` | `formreg.PARENT_OBJECT_TYPE` |
-| `PARENT_OBJECT_KEY` | `formreg.PARENT_OBJECT_KEY` |
-| `OBJECT_KEY_EXT` | `formreg.OBJECT_KEY_EXT` |
-| `DF_AGENT_ID` | `formreg.DF_AGENT_ID` |
-| `SYS_COMP` | `formreg.SYS_COMP` |
-| `TENANT_ID` | `formreg.TENANT_ID` |
-| `ORG_ID` | `formreg.ORG_ID` |
-| `FLAG_MANDATORY` | `formreg.FLAG_MANDATORY` |
-| `MOBILE_APP` | `formreg.MOBILE_APP` |
-| `DELETED` | `formreg.DELETED` |
-| `ACTIVE` | `formreg.ACTIVE` |
-| `FORM_UPDATE_TS` | `formreg.FORM_UPDATE_TS` |
-| `FLAG_FINAL` | `formreg.FLAG_FINAL` |
-| `CREATED_BY` | `formreg.CREATED_BY` |
-| `CREATED_TS` | `formreg.CREATED_TS` |
-| `CHANGED_BY` | `formreg.CHANGED_BY` |
-| `CHANGED_TS` | `formreg.CHANGED_TS` |
-| `REGISTRY_ID` | `formreg_tbl_func.REGISTRY_ID` |
-| `DF_HOST_NAME` | `formreg_tbl_func.DF_HOST_NAME` |
-| `FORM_INSTANCE_LINK` | `formreg_tbl_func.FORM_INSTANCE_LINK` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RECORD_ID` |  | |  |  |
+| `FORM_APP_NAME` |  | |  |  |
+| `FORM_NAME` |  | |  |  |
+| `FORM_VERSION` |  | |  |  |
+| `FORM_INSTANCE_ID` |  | |  |  |
+| `FORM_STATUS` |  | |  |  |
+| `BOR_OBJTYP` |  | |  |  |
+| `OBJECT_TYPE` |  | |  |  |
+| `OBJECT_KEY` |  | |  |  |
+| `OBJECT_GROUP` |  | |  |  |
+| `OBJECT_GROUP_1` |  | |  |  |
+| `OBJECT_DESCR` |  | |  |  |
+| `TECH_ENTITY_TYPE` |  | |  |  |
+| `TECH_ENTITY_KEY` |  | |  |  |
+| `PARENT_OBJECT_TYPE` |  | |  |  |
+| `PARENT_OBJECT_KEY` |  | |  |  |
+| `OBJECT_KEY_EXT` |  | |  |  |
+| `DF_AGENT_ID` |  | |  |  |
+| `SYS_COMP` |  | |  |  |
+| `TENANT_ID` |  | |  |  |
+| `ORG_ID` |  | |  |  |
+| `FLAG_MANDATORY` |  | |  |  |
+| `MOBILE_APP` |  | |  |  |
+| `DELETED` |  | |  |  |
+| `ACTIVE` |  | |  |  |
+| `FORM_UPDATE_TS` |  | |  |  |
+| `FLAG_FINAL` |  | |  |  |
+| `CREATED_BY` |  | |  |  |
+| `CREATED_TS` |  | |  |  |
+| `CHANGED_BY` |  | |  |  |
+| `CHANGED_TS` |  | |  |  |
+| `REGISTRY_ID` |  | |  |  |
+| `DF_HOST_NAME` |  | |  |  |
+| `FORM_INSTANCE_LINK` |  | |  |  |
 
 ## Source Code
 

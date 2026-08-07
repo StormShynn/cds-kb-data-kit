@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterialStatus` | `t415s.stlst` |
-| `_BillOfMaterialStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterialStatus` | ✓ | |  | `stlst` |
+| `_BillOfMaterialStatusText` | | ✓ | | |
 
 ## Associations
 

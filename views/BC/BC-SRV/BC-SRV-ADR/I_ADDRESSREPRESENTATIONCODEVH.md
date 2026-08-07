@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressRepresentationCode` | `AddressRepresentationCode` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressRepresentationCode` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `ManufacturerPartProfile` | `mprof` |
-| `ManufacturerPartProfileName` | `mpnpt` |
-| `_Language` | *Association* |
-| `_ManufacturerPartProfile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ManufacturerPartProfile` | ✓ | |  | `mprof` |
+| `ManufacturerPartProfileName` |  | |  | `mpnpt` |
+| `_Language` | | ✓ | | |
+| `_ManufacturerPartProfile` | | ✓ | | |
 
 ## Associations
 

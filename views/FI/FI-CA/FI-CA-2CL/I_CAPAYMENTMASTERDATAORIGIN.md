@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAOriginOfPaymentMasterData` | `cast( left( domvalue_l, 1 ) as pay_par_orig_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAOriginOfPaymentMasterData` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pay_par_orig_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

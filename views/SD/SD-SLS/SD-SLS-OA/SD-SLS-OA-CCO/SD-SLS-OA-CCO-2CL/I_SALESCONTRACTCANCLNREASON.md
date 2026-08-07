@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContractCanclnReason` | `kuegru` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContractCanclnReason` | ✓ | |  | `kuegru` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

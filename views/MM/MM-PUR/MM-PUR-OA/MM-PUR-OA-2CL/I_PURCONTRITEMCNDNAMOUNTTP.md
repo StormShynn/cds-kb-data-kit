@@ -30,51 +30,51 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `PurchaseContract` |
-| key `PurchaseContractItem` | `PurchaseContractItem` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| key `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionTextID` | `ConditionTextID` |
-| `ConditionCalculationTypeShort` | `ConditionCalculationTypeShort` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionToBaseQtyNmrtr` | `ConditionToBaseQtyNmrtr` |
-| `ConditionToBaseQtyDnmntr` | `ConditionToBaseQtyDnmntr` |
-| `BaseUnit` | `BaseUnit` |
-| `ConditionLowerLimit` | `ConditionLowerLimit` |
-| `ConditionUpperLimit` | `ConditionUpperLimit` |
-| `ConditionLowerLimitAmount` | `ConditionLowerLimitAmount` |
-| `ConditionLowerLimitRatio` | `ConditionLowerLimitRatio` |
-| `ConditionUpperLimitAmount` | `ConditionUpperLimitAmount` |
-| `ConditionUpperLimitRatio` | `ConditionUpperLimitRatio` |
-| `ConditionAlternativeCurrency` | `ConditionAlternativeCurrency` |
-| `ConditionExclusion` | `ConditionExclusion` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `AdditionalValueDays` | `AdditionalValueDays` |
-| `FixedValueDate` | `FixedValueDate` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CndnMaxNumberOfSalesOrders` | `CndnMaxNumberOfSalesOrders` |
-| `PricingScaleType` | `PricingScaleType` |
-| `PricingScaleBasis` | `PricingScaleBasis` |
-| `PricingScaleLine` | `PricingScaleLine` |
-| `ConditionHasScales` | `ConditionHasScales` |
-| `PricingScaleCheckingRule` | `PricingScaleCheckingRule` |
-| `MinimumConditionBasisValue` | `MinimumConditionBasisValue` |
-| `MaximumConditionBasisValue` | `MaximumConditionBasisValue` |
-| `MaximumConditionAmount` | `MaximumConditionAmount` |
-| `ConditionReleaseStatus` | `ConditionReleaseStatus` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_PurContrItemCndnValdty` | *Association* |
-| `_PurContract` | *Association* |
-| `_PurContrItmScales` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTextID` |  | |  |  |
+| `ConditionCalculationTypeShort` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ConditionLowerLimit` |  | |  |  |
+| `ConditionUpperLimit` |  | |  |  |
+| `ConditionLowerLimitAmount` |  | |  |  |
+| `ConditionLowerLimitRatio` |  | |  |  |
+| `ConditionUpperLimitAmount` |  | |  |  |
+| `ConditionUpperLimitRatio` |  | |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |
+| `ConditionExclusion` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `AdditionalValueDays` |  | |  |  |
+| `FixedValueDate` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CndnMaxNumberOfSalesOrders` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `PricingScaleBasis` |  | |  |  |
+| `PricingScaleLine` |  | |  |  |
+| `ConditionHasScales` |  | |  |  |
+| `PricingScaleCheckingRule` |  | |  |  |
+| `MinimumConditionBasisValue` |  | |  |  |
+| `MaximumConditionBasisValue` |  | |  |  |
+| `MaximumConditionAmount` |  | |  |  |
+| `ConditionReleaseStatus` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_PurContrItemCndnValdty` | | ✓ | | |
+| `_PurContract` | | ✓ | | |
+| `_PurContrItmScales` | | ✓ | | |
 
 ## Source Code
 

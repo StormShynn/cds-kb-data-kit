@@ -29,106 +29,106 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvoicingDocument` | `invdocno` |
-| `CAApplicationArea` | `applk` |
-| `CAInvcgProcess` | `inv_process` |
-| `CAInvcgType` | `inv_type` |
-| `CAInvcgCategory` | `inv_category` |
-| `CAInvcgTechnicalDocumentType` | `cast(techdoctype as techdoctype_gfn_kk preserving type)` |
-| `CAInvcgTargetProcess` | `targprocess` |
-| `BusinessPartner` | `cast(gpart as bu_partner preserving type)` |
-| `ContractAccount` | `vkont` |
-| `CAInvcgMasterDataType` | `mdcat` |
-| `AltvContractAcctForCollvBills` | `abwvk` |
-| `CASubstituteDocumentNumber` | `cast(abwbl as abwbl_gfn_kk preserving type )` |
-| `CreatedByUser` | `crname` |
-| `CAInvcgCreationDate` | `crdate` |
-| `CAInvcgCreationTime` | `crtime` |
-| `CAInvcgDocCreationMode` | `crmode` |
-| `CAInvcgNmbrOfInvoicingDocItems` | `recnum` |
-| `CABllbleItmNumber` | `cast(bit_number as bit_number_gfn_kk preserving type)` |
-| `CAInvcgDocInternalNumber` | `invrunno` |
-| `CAReconciliationKey` | `fikey` |
-| `CAPostingDate` | `budat` |
-| `DocumentDate` | `bldat` |
-| `CANetDueDate` | `faedn` |
-| `CACashDiscountDueDate` | `faeds` |
-| `CACashDiscountRate` | `sktpz` |
-| `TransactionCurrency` | `total_curr` |
-| `CAAmountInTransactionCurrency` | `total_amt` |
-| `CAInvcgIsDocumentPosted` | `invoiced` |
-| `CAInvcgIsDocumentSimulated` | `simulated` |
-| `CAInvcgIsDocumentPreliminary` | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` |
-| `CAInvcgPreliminaryCategory` | `cast(prlinv_cat as prlinv_cat_gfn_kk preserving type)` |
-| `CAPrelimInvcgDocValue` | `prlinv_cnt` |
-| `CAPreliminaryInvcgDocStatus` | `cast(prlinv_status as prlinv_status_gfn_kk preserving type)` |
-| `CAInvcgDocumentReversalReason` | `revreason` |
-| `CAInvcgReversalDocument` | `cast(reversaldoc as inv_reversaldoc_gfn_kk preserving type)` |
-| `CAInvcgReversedDocument` | `cast(reverseddoc as inv_reverseddoc_gfn_kk preserving type)` |
-| `CAInvcgCorrectionCategory` | `cast(corrcat as corrcat_gfn_kk preserving type)` |
-| `CAInvcgDocumentPrintDate` | `printdate` |
-| `CAInvcgDocIsLockedForPrinting` | `printlock` |
-| `CAPaymentMethod` | `pymet` |
-| `CAPaymentFormNumber` | `nrzas` |
-| `CAInvcgDocFormID` | `form_id` |
-| `ApplicationForm` | `formkey` |
-| `FormIDForAttachedPaymentMedium` | `zlsch` |
-| `CAInvcgDocumentType` | `doctype` |
-| `CAKeyIdentification` | `exkid` |
-| `CAOfficialDocumentNumber` | `cast(exbel as exbel_no_conv_kk)` |
-| `CAPartnerSettlementRule` | `ptsrl` |
-| `CompanyCode` | `bukrs` |
-| `BusinessPlace` | `bupla` |
-| `CAContract` | `vtref` |
-| `CASubApplication` | `subap` |
-| `CAInvcgBaseDate` | `invoice_basedate` |
-| `CAInvcgDocPeriodCategory` | `invpercat` |
-| `CAInvcgDocPeriodDate` | `invperiod` |
-| `CAInvcgDocPeriodStartDate` | `invperiod_from` |
-| `CADunningCounter` | `mazae` |
-| `CAInvcgDocHasChargeOrDiscItems` | `cast(chgdoc_ex as chgdoc_ex_gfn_kk preserving type)` |
-| `CAInvcgDocHasControlDoc` | `cast(cfcsimulated as inv_cfcsimulated_gfn_kk preserving type)` |
-| `CAInvcgBolloTaxPostStatus` | `bollotax` |
-| `CAInvcgDocIsPartOfList` | `xsubinv` |
-| `CAInvcgDocHasObjectRelation` | `xinvdoc_x` |
-| `CAInvcgDocHasSEPAPreNotif` | `sepa_prenot` |
-| `CAInvcgDocExternal` | `cast(ext_invdocno as ext_invdocno_gfn_kk preserving type)` |
-| `CAInvcgAdjustmentDocument` | `adjustmentdoc` |
-| `CAInvcgAdjustedDocument` | `cast(adjusteddoc as adjustedinvdoc_gfn_kk preserving type)` |
-| `NameNumberRangeObject` | `cast('FKKINV' as nrobj)` |
-| `CAClassificationKey` | `dfkkinvdoc_h.opord` |
-| `_BusinessPartner` | *Association* |
-| `_ContractAccountHeader` | *Association* |
-| `_ContractAccountPartner` | *Association* |
-| `_AltvContractAcctForCollvBills` | *Association* |
-| `_CAInvcgDocHeader` | *Association* |
-| `_CAInvcgReversalDocument` | *Association* |
-| `_CAInvcgReversedDocument` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_CAInvcgPreliminaryCategory` | *Association* |
-| `_CAPreliminaryInvcgDocStatus` | *Association* |
-| `_CAInvcgDocReversalReason` | *Association* |
-| `_CAInvcgDocLockedforPrint` | *Association* |
-| `_CAInvcgProcess` | *Association* |
-| `_CAInvcgCategory` | *Association* |
-| `_CAInvcgType` | *Association* |
-| `_CAInvcgDocumentType` | *Association* |
-| `_CASubApplication` | *Association* |
-| `_CAInvcgPeriodCat` | *Association* |
-| `_CAInvcgTargetProc` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CAInvcgCorrectionCat` | *Association* |
-| `_CAInvcgDocChrgDiscItems` | *Association* |
-| `_CAInvcgDocCreationMode` | *Association* |
-| `_CAInvcgMasterDataType` | *Association* |
-| `_CAInvcgDocTechDocType` | *Association* |
-| `_CAInvcgDocPartOfList` | *Association* |
-| `_CAInvcgBolloTaxPostStatus` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_CAReconciliationKey` | *Association* |
-| `_ProviderContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` |
+| `CAApplicationArea` |  | |  | `applk` |
+| `CAInvcgProcess` |  | |  | `inv_process` |
+| `CAInvcgType` |  | |  | `inv_type` |
+| `CAInvcgCategory` |  | |  | `inv_category` |
+| `CAInvcgTechnicalDocumentType` |  | |  | `cast(techdoctype as techdoctype_gfn_kk preserving type)` |
+| `CAInvcgTargetProcess` |  | |  | `targprocess` |
+| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type)` |
+| `ContractAccount` |  | |  | `vkont` |
+| `CAInvcgMasterDataType` |  | |  | `mdcat` |
+| `AltvContractAcctForCollvBills` |  | |  | `abwvk` |
+| `CASubstituteDocumentNumber` |  | |  | `cast(abwbl as abwbl_gfn_kk preserving type )` |
+| `CreatedByUser` |  | |  | `crname` |
+| `CAInvcgCreationDate` |  | |  | `crdate` |
+| `CAInvcgCreationTime` |  | |  | `crtime` |
+| `CAInvcgDocCreationMode` |  | |  | `crmode` |
+| `CAInvcgNmbrOfInvoicingDocItems` |  | |  | `recnum` |
+| `CABllbleItmNumber` |  | |  | `cast(bit_number as bit_number_gfn_kk preserving type)` |
+| `CAInvcgDocInternalNumber` |  | |  | `invrunno` |
+| `CAReconciliationKey` |  | |  | `fikey` |
+| `CAPostingDate` |  | |  | `budat` |
+| `DocumentDate` |  | |  | `bldat` |
+| `CANetDueDate` |  | |  | `faedn` |
+| `CACashDiscountDueDate` |  | |  | `faeds` |
+| `CACashDiscountRate` |  | |  | `sktpz` |
+| `TransactionCurrency` |  | |  | `total_curr` |
+| `CAAmountInTransactionCurrency` |  | |  | `total_amt` |
+| `CAInvcgIsDocumentPosted` |  | |  | `invoiced` |
+| `CAInvcgIsDocumentSimulated` |  | |  | `simulated` |
+| `CAInvcgIsDocumentPreliminary` |  | |  | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` |
+| `CAInvcgPreliminaryCategory` |  | |  | `cast(prlinv_cat as prlinv_cat_gfn_kk preserving type)` |
+| `CAPrelimInvcgDocValue` |  | |  | `prlinv_cnt` |
+| `CAPreliminaryInvcgDocStatus` |  | |  | `cast(prlinv_status as prlinv_status_gfn_kk preserving type)` |
+| `CAInvcgDocumentReversalReason` |  | |  | `revreason` |
+| `CAInvcgReversalDocument` |  | |  | `cast(reversaldoc as inv_reversaldoc_gfn_kk preserving type)` |
+| `CAInvcgReversedDocument` |  | |  | `cast(reverseddoc as inv_reverseddoc_gfn_kk preserving type)` |
+| `CAInvcgCorrectionCategory` |  | |  | `cast(corrcat as corrcat_gfn_kk preserving type)` |
+| `CAInvcgDocumentPrintDate` |  | |  | `printdate` |
+| `CAInvcgDocIsLockedForPrinting` |  | |  | `printlock` |
+| `CAPaymentMethod` |  | |  | `pymet` |
+| `CAPaymentFormNumber` |  | |  | `nrzas` |
+| `CAInvcgDocFormID` |  | |  | `form_id` |
+| `ApplicationForm` |  | |  | `formkey` |
+| `FormIDForAttachedPaymentMedium` |  | |  | `zlsch` |
+| `CAInvcgDocumentType` |  | |  | `doctype` |
+| `CAKeyIdentification` |  | |  | `exkid` |
+| `CAOfficialDocumentNumber` |  | |  | `cast(exbel as exbel_no_conv_kk)` |
+| `CAPartnerSettlementRule` |  | |  | `ptsrl` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `BusinessPlace` |  | |  | `bupla` |
+| `CAContract` |  | |  | `vtref` |
+| `CASubApplication` |  | |  | `subap` |
+| `CAInvcgBaseDate` |  | |  | `invoice_basedate` |
+| `CAInvcgDocPeriodCategory` |  | |  | `invpercat` |
+| `CAInvcgDocPeriodDate` |  | |  | `invperiod` |
+| `CAInvcgDocPeriodStartDate` |  | |  | `invperiod_from` |
+| `CADunningCounter` |  | |  | `mazae` |
+| `CAInvcgDocHasChargeOrDiscItems` |  | |  | `cast(chgdoc_ex as chgdoc_ex_gfn_kk preserving type)` |
+| `CAInvcgDocHasControlDoc` |  | |  | `cast(cfcsimulated as inv_cfcsimulated_gfn_kk preserving type)` |
+| `CAInvcgBolloTaxPostStatus` |  | |  | `bollotax` |
+| `CAInvcgDocIsPartOfList` |  | |  | `xsubinv` |
+| `CAInvcgDocHasObjectRelation` |  | |  | `xinvdoc_x` |
+| `CAInvcgDocHasSEPAPreNotif` |  | |  | `sepa_prenot` |
+| `CAInvcgDocExternal` |  | |  | `cast(ext_invdocno as ext_invdocno_gfn_kk preserving type)` |
+| `CAInvcgAdjustmentDocument` |  | |  | `adjustmentdoc` |
+| `CAInvcgAdjustedDocument` |  | |  | `cast(adjusteddoc as adjustedinvdoc_gfn_kk preserving type)` |
+| `NameNumberRangeObject` |  | |  | `cast('FKKINV' as nrobj)` |
+| `CAClassificationKey` |  | |  | `opord` |
+| `_BusinessPartner` | | ✓ | | |
+| `_ContractAccountHeader` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
+| `_AltvContractAcctForCollvBills` | | ✓ | | |
+| `_CAInvcgDocHeader` | | ✓ | | |
+| `_CAInvcgReversalDocument` | | ✓ | | |
+| `_CAInvcgReversedDocument` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_CAInvcgPreliminaryCategory` | | ✓ | | |
+| `_CAPreliminaryInvcgDocStatus` | | ✓ | | |
+| `_CAInvcgDocReversalReason` | | ✓ | | |
+| `_CAInvcgDocLockedforPrint` | | ✓ | | |
+| `_CAInvcgProcess` | | ✓ | | |
+| `_CAInvcgCategory` | | ✓ | | |
+| `_CAInvcgType` | | ✓ | | |
+| `_CAInvcgDocumentType` | | ✓ | | |
+| `_CASubApplication` | | ✓ | | |
+| `_CAInvcgPeriodCat` | | ✓ | | |
+| `_CAInvcgTargetProc` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAInvcgCorrectionCat` | | ✓ | | |
+| `_CAInvcgDocChrgDiscItems` | | ✓ | | |
+| `_CAInvcgDocCreationMode` | | ✓ | | |
+| `_CAInvcgMasterDataType` | | ✓ | | |
+| `_CAInvcgDocTechDocType` | | ✓ | | |
+| `_CAInvcgDocPartOfList` | | ✓ | | |
+| `_CAInvcgBolloTaxPostStatus` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_CAReconciliationKey` | | ✓ | | |
+| `_ProviderContract` | | ✓ | | |
 
 ## Associations
 

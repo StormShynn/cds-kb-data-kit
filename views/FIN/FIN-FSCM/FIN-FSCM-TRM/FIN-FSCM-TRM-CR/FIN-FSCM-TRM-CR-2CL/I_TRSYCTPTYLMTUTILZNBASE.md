@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LimitUtilizationBase` | `sli` |
-| `LmtUtilznIsCrtedBySglTransChk` | `egp` |
-| `_LmtUtilznBaseText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LimitUtilizationBase` | ✓ | |  | `sli` |
+| `LmtUtilznIsCrtedBySglTransChk` |  | |  | `egp` |
+| `_LmtUtilznBaseText` | | ✓ | | |
 
 ## Associations
 

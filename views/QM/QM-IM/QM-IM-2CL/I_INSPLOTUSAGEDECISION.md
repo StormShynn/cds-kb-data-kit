@@ -27,41 +27,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `qave.prueflos` |
-| `InspLotUsageDecisionLevel` | `qave.kzart` |
-| `InspLotUsageDecisionInternalID` | `qave.zaehler` |
-| `InspectionLotQualityScore` | `qave.qkennzahl` |
-| `InspLotUsageDecisionCatalog` | `qave.vkatart` |
-| `SelectedCodeSetPlant` | `qave.vwerks` |
-| `InspLotUsgeDcsnSelectedSet` | `qave.vauswahlmg` |
-| `InspLotUsageDecisionCodeGroup` | `cast( qave.vcodegrp as vdm_qvgruppe preserving type )` |
-| `InspectionLotUsageDecisionCode` | `}] qave.vcode` |
-| `InspLotUsgeDcsnDynValuation` | `qave.dbewertung` |
-| `InspLotUsageDecisionValuation` | `qave.vbewertung` |
-| `InspLotUsgeDcsnFollowUpAction` | `qave.vfolgeakti` |
-| `InspectionLotUsageDecidedBy` | `cast( qave.vname as vdm_qvname preserving type )` |
-| `InspectionLotUsageDecidedOn` | `cast( qave.vdatum as vdm_qvedatum preserving type )` |
-| `InspLotUsageDecisionTime` | `cast( qave.vezeiterf as vdm_qvezeiterf preserving type )` |
-| `InspLotUsageDecisionChangedBy` | `cast( qave.vaename as vdm_qvaename preserving type )` |
-| `InspLotUsageDecisionChangedOn` | `cast( qave.vaedatum as vdm_qvaedatum preserving type )` |
-| `InspLotUsgeDcsnChangedTime` | `cast( qave.vezeitaen as vdm_qvezeitaen preserving type )` |
-| `InspLotUsgeDcsnHasLongText` | `cast( qave.ltextkz as vdm_qltextave preserving type )` |
-| `_InspectionLot` | *Association* |
-| `_InspLotUsgeDcsnLongText` | *Association* |
-| `_InspLotUsgeDcsnSelectedSet` | *Association* |
-| `_UsageDcsnSelectedCodeSet` | *Association* |
-| `_UsageDecisionCodeGroup` | *Association* |
-| `_UsageDecisionCode` | *Association* |
-| `_InspectionLotUsageDecidedBy` | *Association* |
-| `_InspLotUsageDecisionChangedBy` | *Association* |
-| `_UsgeDecidedByUserContactCard` | *Association* |
-| `_UsgeDcsnChgdByUserContactCard` | *Association* |
-| `_SelectedCodeSetPlant` | *Association* |
-| `_InspLotUsgeDcsnHasLongText` | *Association* |
-| `_UsageDecisionValuation` | *Association* |
-| `_UsgeDcsnValuationText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |
+| `InspLotUsageDecisionLevel` |  | |  | `kzart` |
+| `InspLotUsageDecisionInternalID` |  | |  | `zaehler` |
+| `InspectionLotQualityScore` |  | |  | `qkennzahl` |
+| `InspLotUsageDecisionCatalog` |  | |  | `vkatart` |
+| `SelectedCodeSetPlant` |  | |  | `vwerks` |
+| `InspLotUsgeDcsnSelectedSet` |  | |  | `vauswahlmg` |
+| `InspLotUsageDecisionCodeGroup` |  | |  | `cast( qave.vcodegrp as vdm_qvgruppe preserving type )` |
+| `InspectionLotUsageDecisionCode` |  | |  | `}] qave.vcode` |
+| `InspLotUsgeDcsnDynValuation` |  | |  | `dbewertung` |
+| `InspLotUsageDecisionValuation` |  | |  | `vbewertung` |
+| `InspLotUsgeDcsnFollowUpAction` |  | |  | `vfolgeakti` |
+| `InspectionLotUsageDecidedBy` |  | |  | `cast( qave.vname as vdm_qvname preserving type )` |
+| `InspectionLotUsageDecidedOn` |  | |  | `cast( qave.vdatum as vdm_qvedatum preserving type )` |
+| `InspLotUsageDecisionTime` |  | |  | `cast( qave.vezeiterf as vdm_qvezeiterf preserving type )` |
+| `InspLotUsageDecisionChangedBy` |  | |  | `cast( qave.vaename as vdm_qvaename preserving type )` |
+| `InspLotUsageDecisionChangedOn` |  | |  | `cast( qave.vaedatum as vdm_qvaedatum preserving type )` |
+| `InspLotUsgeDcsnChangedTime` |  | |  | `cast( qave.vezeitaen as vdm_qvezeitaen preserving type )` |
+| `InspLotUsgeDcsnHasLongText` |  | |  | `cast( qave.ltextkz as vdm_qltextave preserving type )` |
+| `_InspectionLot` | | ✓ | | |
+| `_InspLotUsgeDcsnLongText` | | ✓ | | |
+| `_InspLotUsgeDcsnSelectedSet` | | ✓ | | |
+| `_UsageDcsnSelectedCodeSet` | | ✓ | | |
+| `_UsageDecisionCodeGroup` | | ✓ | | |
+| `_UsageDecisionCode` | | ✓ | | |
+| `_InspectionLotUsageDecidedBy` | | ✓ | | |
+| `_InspLotUsageDecisionChangedBy` | | ✓ | | |
+| `_UsgeDecidedByUserContactCard` | | ✓ | | |
+| `_UsgeDcsnChgdByUserContactCard` | | ✓ | | |
+| `_SelectedCodeSetPlant` | | ✓ | | |
+| `_InspLotUsgeDcsnHasLongText` | | ✓ | | |
+| `_UsageDecisionValuation` | | ✓ | | |
+| `_UsgeDcsnValuationText` | | ✓ | | |
 
 ## Associations
 

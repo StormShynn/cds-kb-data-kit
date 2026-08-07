@@ -30,62 +30,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RepetitiveMfgConfirmation` | `RepetitiveMfgConfirmation` |
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| `PostingDate` | `PostingDate` |
-| `DocumentDate` | `DocumentDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `ConfirmationPlant` | `ConfirmationPlant` |
-| `ReportingPointOperation` | `ReportingPointOperation` |
-| `RepetitiveMfgConfScenario` | `RepetitiveMfgConfScenario` |
-| `RptvMfgConfProcessingType` | `RptvMfgConfProcessingType` |
-| `RptvMfgConfReversedCode` | `RptvMfgConfReversedCode` |
-| `Material` | `Material` |
-| `Plant` | `Plant` |
-| `Reservation` | `Reservation` |
-| `ReservationItem` | `ReservationItem` |
-| `ReservationRecordType` | `ReservationRecordType` |
-| `StorageLocation` | `StorageLocation` |
-| `ProductionSupplyArea` | `ProductionSupplyArea` |
-| `Batch` | `Batch` |
-| `InventoryValuationType` | `InventoryValuationType` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `GoodsMovementRefDocType` | `GoodsMovementRefDocType` |
-| `InventoryUsabilityCode` | `InventoryUsabilityCode` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `InventorySpecialStockValnType` | `InventorySpecialStockValnType` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `Supplier` | `Supplier` |
-| `Customer` | `Customer` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `ReservationIsFinallyIssued` | `ReservationIsFinallyIssued` |
-| `IsCompletelyDelivered` | `IsCompletelyDelivered` |
-| `ShelfLifeExpirationDate` | `ShelfLifeExpirationDate` |
-| `ManufactureDate` | `ManufactureDate` |
-| `StorageType` | `StorageType` |
-| `StorageBin` | `StorageBin` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `EWMStorageBin` | `EWMStorageBin` |
-| `EntryUnit` | `EntryUnit` |
-| `EntryUnitISOCode` | `EntryUnitISOCode` |
-| `EntryUnitSAPCode` | `EntryUnitSAPCode` |
-| `QuantityInEntryUnit` | `QuantityInEntryUnit` |
-| `_Customer` | *Association* |
-| `_CustomerCompanyByPlant` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_EntryUnit` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_RepetitiveMfgConfirmationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RepetitiveMfgConfirmation` | ✓ | |  |  |
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `ConfirmationPlant` |  | |  |  |
+| `ReportingPointOperation` |  | |  |  |
+| `RepetitiveMfgConfScenario` |  | |  |  |
+| `RptvMfgConfProcessingType` |  | |  |  |
+| `RptvMfgConfReversedCode` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `ReservationItem` |  | |  |  |
+| `ReservationRecordType` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ProductionSupplyArea` |  | |  |  |
+| `Batch` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `GoodsMovementRefDocType` |  | |  |  |
+| `InventoryUsabilityCode` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |
+| `ManufactureDate` |  | |  |  |
+| `StorageType` |  | |  |  |
+| `StorageBin` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `EWMStorageBin` |  | |  |  |
+| `EntryUnit` |  | |  |  |
+| `EntryUnitISOCode` |  | |  |  |
+| `EntryUnitSAPCode` |  | |  |  |
+| `QuantityInEntryUnit` |  | |  |  |
+| `_Customer` | | ✓ | | |
+| `_CustomerCompanyByPlant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_EntryUnit` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_RepetitiveMfgConfirmationTP` | | ✓ | | |
 
 ## Source Code
 

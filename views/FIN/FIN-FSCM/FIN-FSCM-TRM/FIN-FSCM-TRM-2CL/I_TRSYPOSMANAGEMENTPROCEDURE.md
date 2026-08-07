@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TrsyPosManagementProcedure` | `cast(TrsyPosManagementProcedure.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |
-| `TrsyLdgrPosMgmtCat` | `TrsyPosManagementProcedure.deriv_cat` |
-| `TrsyPosMgmtProcedStpCat1` | `TrsyPosManagementProcedure.step_cat_1` |
-| `TrsyPosMgmtProcedStpProced1` | `TrsyPosManagementProcedure.procedure_1` |
-| `TrsyPosMgmtProcedStpCat2` | `TrsyPosManagementProcedure.step_cat_2` |
-| `TrsyPosMgmtProcedStpProced2` | `TrsyPosManagementProcedure.procedure_2` |
-| `TrsyPosMgmtProcedStpCat3` | `TrsyPosManagementProcedure.step_cat_3` |
-| `TrsyPosMgmtProcedStpProced3` | `TrsyPosManagementProcedure.procedure_3` |
-| `TrsyPosMgmtProcedStpCat4` | `TrsyPosManagementProcedure.step_cat_4` |
-| `TrsyPosMgmtProcedStpProced4` | `TrsyPosManagementProcedure.procedure_4` |
-| `TrsyPosMgmtProcedStpCat5` | `TrsyPosManagementProcedure.step_cat_5` |
-| `TrsyPosMgmtProcedStpProced5` | `TrsyPosManagementProcedure.procedure_5` |
-| `TrsyPosMgmtProcedValnBase` | `TrsyPosManagementProcedure.val_amount_base` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TrsyPosManagementProcedure` | ✓ | |  | `cast(TrsyPosManagementProcedure.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |
+| `TrsyLdgrPosMgmtCat` |  | |  | `deriv_cat` |
+| `TrsyPosMgmtProcedStpCat1` |  | |  | `step_cat_1` |
+| `TrsyPosMgmtProcedStpProced1` |  | |  | `procedure_1` |
+| `TrsyPosMgmtProcedStpCat2` |  | |  | `step_cat_2` |
+| `TrsyPosMgmtProcedStpProced2` |  | |  | `procedure_2` |
+| `TrsyPosMgmtProcedStpCat3` |  | |  | `step_cat_3` |
+| `TrsyPosMgmtProcedStpProced3` |  | |  | `procedure_3` |
+| `TrsyPosMgmtProcedStpCat4` |  | |  | `step_cat_4` |
+| `TrsyPosMgmtProcedStpProced4` |  | |  | `procedure_4` |
+| `TrsyPosMgmtProcedStpCat5` |  | |  | `step_cat_5` |
+| `TrsyPosMgmtProcedStpProced5` |  | |  | `procedure_5` |
+| `TrsyPosMgmtProcedValnBase` |  | |  | `val_amount_base` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

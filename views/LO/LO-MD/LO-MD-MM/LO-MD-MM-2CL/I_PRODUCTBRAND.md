@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductBrand` | `brand_id` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductBrand` | ✓ | |  | `brand_id` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

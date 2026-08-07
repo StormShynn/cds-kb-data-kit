@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnFSItemCashFlow` | `cast( _FSItemAttribValue.CnsldtnFSItemAttributeValue as fincs_fsitemcashflow preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnFSItemCashFlow` | ✓ | |  | `cast( _FSItemAttribValue.CnsldtnFSItemAttributeValue as fincs_fsitemcashflow preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `cast( ktopl as fis_ktopl preserving type)` |
-| `CorporateGroupChartOfAccounts` | `kktpl` |
-| `ChartOfAcctsIsBlocked` | `xsper` |
-| `MaintenanceLanguage` | `dspra` |
-| `_CorpGroupChartOfAccountsText` | *Association* |
-| `_Text` | *Association* |
-| `_Language` | *Association* |
-| `_CorpGroupChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `cast( ktopl as fis_ktopl preserving type)` |
+| `CorporateGroupChartOfAccounts` |  | |  | `kktpl` |
+| `ChartOfAcctsIsBlocked` |  | |  | `xsper` |
+| `MaintenanceLanguage` |  | |  | `dspra` |
+| `_CorpGroupChartOfAccountsText` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_CorpGroupChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

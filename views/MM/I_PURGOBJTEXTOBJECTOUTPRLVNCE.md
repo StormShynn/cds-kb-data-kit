@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurgOutputOperationCode` | `druvo` |
-| key `PurchasingObjectCategory` | `bstyp` |
-| key `PurchasingDocumentType` | `bsart` |
-| key `TextObjectCategory` | `tdobject` |
-| key `TextObjectType` | `tdid` |
-| `PurgTextPrintSequenceValue` | `drflg` |
-| `TextObjectKey` | `txnam` |
-| `PurgTextTitleIsPrinted` | `titdr` |
-| `_PurgOutputOperationCode` | *Association* |
-| `_PurchasingObjectCategory` | *Association* |
-| `_PurchasingDocumentType` | *Association* |
-| `_TextObjectCategory` | *Association* |
-| `_TextObjectType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurgOutputOperationCode` | ✓ | |  | `druvo` |
+| `PurchasingObjectCategory` | ✓ | |  | `bstyp` |
+| `PurchasingDocumentType` | ✓ | |  | `bsart` |
+| `TextObjectCategory` | ✓ | |  | `tdobject` |
+| `TextObjectType` | ✓ | |  | `tdid` |
+| `PurgTextPrintSequenceValue` |  | |  | `drflg` |
+| `TextObjectKey` |  | |  | `txnam` |
+| `PurgTextTitleIsPrinted` |  | |  | `titdr` |
+| `_PurgOutputOperationCode` | | ✓ | | |
+| `_PurchasingObjectCategory` | | ✓ | | |
+| `_PurchasingDocumentType` | | ✓ | | |
+| `_TextObjectCategory` | | ✓ | | |
+| `_TextObjectType` | | ✓ | | |
 
 ## Associations
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CollectionPriority` | `cast(priority as udm_coll_priority preserving type)` |
-| `ValuationThresholdPercent` | `percentage_from` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CollectionPriority` | ✓ | |  | `cast(priority as udm_coll_priority preserving type)` |
+| `ValuationThresholdPercent` |  | |  | `percentage_from` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

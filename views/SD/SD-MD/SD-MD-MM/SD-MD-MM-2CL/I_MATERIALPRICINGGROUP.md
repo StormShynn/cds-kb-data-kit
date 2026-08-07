@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialPricingGroup` | `kondm` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialPricingGroup` | ✓ | |  | `kondm` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

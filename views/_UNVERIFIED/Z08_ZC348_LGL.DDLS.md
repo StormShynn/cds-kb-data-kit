@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Carrid` | `FlightsSchedule.carrid` |
-| key `Connid` | `FlightsSchedule.connid` |
-| `Countryfr` | `FlightsSchedule.countryfr` |
-| `Cityfrom` | `FlightsSchedule.cityfrom` |
-| `Airpfrom` | `FlightsSchedule.airpfrom` |
-| `Countryto` | `FlightsSchedule.countryto` |
-| `Cityto` | `FlightsSchedule.cityto` |
-| `_Flights` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Carrid` | ✓ | |  | `carrid` |
+| `Connid` | ✓ | |  | `connid` |
+| `Countryfr` |  | |  | `countryfr` |
+| `Cityfrom` |  | |  | `cityfrom` |
+| `Airpfrom` |  | |  | `airpfrom` |
+| `Countryto` |  | |  | `countryto` |
+| `Cityto` |  | |  | `cityto` |
+| `_Flights` | | ✓ | | |
 
 ## Associations
 

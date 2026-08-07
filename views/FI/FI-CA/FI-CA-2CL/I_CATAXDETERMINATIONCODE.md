@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `CATaxDeterminationCode` | `ermwskz` |
-| key `CATaxDetnCodeValidFromDate` | `ab` |
-| `CATaxDetnCodeValidToDate` | `bis` |
-| `TaxCode` | `mwskz` |
-| `TaxCalculationProcedure` | `_Country.TaxCalculationProcedure` |
-| `_Country` | *Association* |
-| `_TaxCalculationProcedure` | *Association* |
-| `_TaxCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `CATaxDeterminationCode` | ✓ | |  | `ermwskz` |
+| `CATaxDetnCodeValidFromDate` | ✓ | |  | `ab` |
+| `CATaxDetnCodeValidToDate` |  | |  | `bis` |
+| `TaxCode` |  | |  | `mwskz` |
+| `TaxCalculationProcedure` |  | | `_Country` | `TaxCalculationProcedure` |
+| `_Country` | | ✓ | | |
+| `_TaxCalculationProcedure` | | ✓ | | |
+| `_TaxCode` | | ✓ | | |
 
 ## Associations
 

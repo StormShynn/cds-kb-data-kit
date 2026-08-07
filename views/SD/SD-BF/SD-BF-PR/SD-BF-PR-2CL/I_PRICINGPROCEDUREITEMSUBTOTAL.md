@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrcgProcedItemSubtotal` | `cast ( substring( domvalue_l, 1, 1 ) as kzwiw )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrcgProcedItemSubtotal` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kzwiw )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

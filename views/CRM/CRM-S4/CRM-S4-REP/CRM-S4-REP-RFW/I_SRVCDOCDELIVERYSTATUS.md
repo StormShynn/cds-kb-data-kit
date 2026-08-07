@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcDocItmDeliveryStatus` | `domvalue_l` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_SrvcDocDeliveryStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcDocItmDeliveryStatus` | ✓ | |  | `domvalue_l` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_SrvcDocDeliveryStatusText` | | ✓ | | |
 
 ## Associations
 

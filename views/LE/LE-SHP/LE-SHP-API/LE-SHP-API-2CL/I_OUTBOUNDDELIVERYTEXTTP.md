@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OutboundDelivery` | `OutboundDelivery` |
-| key `Language` | `Language` |
-| key `LongTextID` | `LongTextID` |
-| `LongText` | `LongText` |
-| `_Delivery` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OutboundDelivery` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongText` |  | |  |  |
+| `_Delivery` | | ✓ | | |
 
 ## Source Code
 

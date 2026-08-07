@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtProcessCat` | `cast( dd07l.domvalue_l as wlf_settlmt_process_cat )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtProcessCat` | ✓ | |  | `cast( dd07l.domvalue_l as wlf_settlmt_process_cat )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

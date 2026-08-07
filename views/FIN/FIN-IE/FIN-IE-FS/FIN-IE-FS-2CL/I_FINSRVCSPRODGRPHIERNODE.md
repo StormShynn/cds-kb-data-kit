@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `]` | `parent: ['ParentNode' ]` |
-| `['HierarchyNode']` | `child: ['HierarchyNode']` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `]` |  | |  | `parent: ['ParentNode' ]` |
+| `['HierarchyNode']` |  | |  | `child: ['HierarchyNode']` |
 
 ## Source Code
 

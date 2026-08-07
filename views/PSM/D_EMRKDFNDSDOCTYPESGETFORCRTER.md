@@ -25,9 +25,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EarmarkedFundsDocumentCategory` | `fmre_bltyp` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EarmarkedFundsDocumentCategory` |  | |  | `fmre_bltyp` |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `GrantID` | `cast( _Source.GrantID as fincs_grant preserving type )` |
-| `GrantName` | `cast( _Source.GrantName as fincs_grantname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_Grant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `GrantID` | ✓ | |  | `cast( _Source.GrantID as fincs_grant preserving type )` |
+| `GrantName` |  | |  | `cast( _Source.GrantName as fincs_grantname preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_Grant` | | ✓ | | |
 
 ## Associations
 

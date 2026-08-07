@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `lgnum` |
-| key `EWMWaveType` | `wave_type` |
-| `_Warehouse` | *Association* |
-| `_WaveTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  | `lgnum` |
+| `EWMWaveType` | ✓ | |  | `wave_type` |
+| `_Warehouse` | | ✓ | | |
+| `_WaveTypeText` | | ✓ | | |
 
 ## Associations
 

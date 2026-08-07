@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdnRsceToolControlProfile` | `txt.steuf` |
-| key `Language` | `txt.spras` |
-| `ProdnRsceToolControlPrflName` | `txt.stftxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdnRsceToolControlProfile` | ✓ | |  | `steuf` |
+| `Language` | ✓ | |  | `spras` |
+| `ProdnRsceToolControlPrflName` |  | |  | `stftxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

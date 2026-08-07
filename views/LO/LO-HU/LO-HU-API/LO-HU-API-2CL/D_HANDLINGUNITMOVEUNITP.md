@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `HandlingUnitExternalID` | `exidv` |
-| `HandlingUnitGoodsMovementEvent` | `huwbevent` |
-| `ReceivingPlant` | `umwrk` |
-| `ReceivingStorageLocation` | `umlgo` |
-| `ReceivingStorageBin` | `/scwm/lgpla` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HandlingUnitExternalID` |  | |  | `exidv` |
+| `HandlingUnitGoodsMovementEvent` |  | |  | `huwbevent` |
+| `ReceivingPlant` |  | |  | `umwrk` |
+| `ReceivingStorageLocation` |  | |  | `umlgo` |
+| `ReceivingStorageBin` |  | |  | `/scwm/lgpla` |
 
 ## Source Code
 

@@ -31,56 +31,56 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectUUID` | `ProjectUUID` |
-| `ProjectSummaryTaskUUID` | `ProjectSummaryTaskUUID` |
-| `ProjectInternalID` | `ProjectInternalID` |
-| `Project` | `Project` |
-| `ProjectCategory` | `ProjectCategory` |
-| `ProjectDescription` | `ProjectDescription` |
-| `EnterpriseProjectType` | `EnterpriseProjectType` |
-| `PriorityCode` | `PriorityCode` |
-| `ProjectStartDate` | `ProjectStartDate` |
-| `ProjectEndDate` | `ProjectEndDate` |
-| `ActualStartDate` | `ActualStartDate` |
-| `ActualEndDate` | `ActualEndDate` |
-| `CustomerUUID` | `CustomerUUID` |
-| `EnterpriseProjectServiceOrg` | `EnterpriseProjectServiceOrg` |
-| `EntProjectIsConfidential` | `EntProjectIsConfidential` |
-| `RestrictedTimePosting` | `RestrictedTimePosting` |
-| `ProcessingStatus` | `ProcessingStatus` |
-| `ResponsibleCostCenter` | `ResponsibleCostCenter` |
-| `ProfitCenter` | `ProfitCenter` |
-| `ProjectProfileCode` | `ProjectProfileCode` |
-| `FunctionalArea` | `FunctionalArea` |
-| `CompanyCode` | `CompanyCode` |
-| `ControllingArea` | `ControllingArea` |
-| `Plant` | `Plant` |
-| `Location` | `Location` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `ProjectCurrency` | `ProjectCurrency` |
-| `AvailabilityControlProfile` | `AvailabilityControlProfile` |
-| `AvailabilityControlIsActive` | `AvailabilityControlIsActive` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `IsBillingRelevant` | `IsBillingRelevant` |
-| `InvestmentProfile` | `InvestmentProfile` |
-| `ProjectLastChangedDateTime` | `ProjectLastChangedDateTime` |
-| `EntProjIsMultiSlsOrdItmsEnbld` | `EntProjIsMultiSlsOrdItmsEnbld` |
-| `ResultAnalysisInternalID` | `ResultAnalysisInternalID` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `EntProjHasProjectStockEnabled` | `EntProjHasProjectStockEnabled` |
-| `InventorySpecialStockValnType` | `InventorySpecialStockValnType` |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EnterpriseProjectJVA` | *Association* |
-| `_EntProjectPublicSector` | *Association* |
-| `_EntProjBlkFunc` | *Association* |
-| `_EntProjRole` | *Association* |
-| `_EntProjTeamMember` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  |  |
+| `ProjectSummaryTaskUUID` |  | |  |  |
+| `ProjectInternalID` |  | |  |  |
+| `Project` |  | |  |  |
+| `ProjectCategory` |  | |  |  |
+| `ProjectDescription` |  | |  |  |
+| `EnterpriseProjectType` |  | |  |  |
+| `PriorityCode` |  | |  |  |
+| `ProjectStartDate` |  | |  |  |
+| `ProjectEndDate` |  | |  |  |
+| `ActualStartDate` |  | |  |  |
+| `ActualEndDate` |  | |  |  |
+| `CustomerUUID` |  | |  |  |
+| `EnterpriseProjectServiceOrg` |  | |  |  |
+| `EntProjectIsConfidential` |  | |  |  |
+| `RestrictedTimePosting` |  | |  |  |
+| `ProcessingStatus` |  | |  |  |
+| `ResponsibleCostCenter` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ProjectProfileCode` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Location` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `ProjectCurrency` |  | |  |  |
+| `AvailabilityControlProfile` |  | |  |  |
+| `AvailabilityControlIsActive` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `IsBillingRelevant` |  | |  |  |
+| `InvestmentProfile` |  | |  |  |
+| `ProjectLastChangedDateTime` |  | |  |  |
+| `EntProjIsMultiSlsOrdItmsEnbld` |  | |  |  |
+| `ResultAnalysisInternalID` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `EntProjHasProjectStockEnabled` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EnterpriseProjectJVA` | | ✓ | | |
+| `_EntProjectPublicSector` | | ✓ | | |
+| `_EntProjBlkFunc` | | ✓ | | |
+| `_EntProjRole` | | ✓ | | |
+| `_EntProjTeamMember` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
 
 ## Source Code
 

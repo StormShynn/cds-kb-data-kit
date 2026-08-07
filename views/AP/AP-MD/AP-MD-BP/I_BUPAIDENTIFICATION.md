@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `partner` |
-| key `BPIdentificationType` | `type` |
-| key `BPIdentificationNumber` | `idnumber` |
-| `BPIdnNmbrIssuingInstitute` | `institute` |
-| `BPIdentificationEntryDate` | `entry_date` |
-| `Country` | `country` |
-| `Region` | `region` |
-| `ValidityStartDate` | `valid_date_from` |
-| `ValidityEndDate` | `valid_date_to` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `_BusinessPartner` | *Association* |
-| `_BuPaIdentificationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `BPIdentificationType` | ✓ | |  | `type` |
+| `BPIdentificationNumber` | ✓ | |  | `idnumber` |
+| `BPIdnNmbrIssuingInstitute` |  | |  | `institute` |
+| `BPIdentificationEntryDate` |  | |  | `entry_date` |
+| `Country` |  | |  | `country` |
+| `Region` |  | |  | `region` |
+| `ValidityStartDate` |  | |  | `valid_date_from` |
+| `ValidityEndDate` |  | |  | `valid_date_to` |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `_BusinessPartner` | | ✓ | | |
+| `_BuPaIdentificationType` | | ✓ | | |
 
 ## Associations
 

@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `PrecedingProcFlowItem.SubsequentDocument` |
-| key `SalesDocumentItem` | `PrecedingProcFlowItem.SubsequentDocumentItem` |
-| key `DocRelationshipUUID` | `PrecedingProcFlowItem.DocRelationshipUUID` |
-| `SDDocumentCategory` | `PrecedingProcFlowItem.SubsequentDocumentCategory` |
-| `PrecedingDocument` | `PrecedingProcFlowItem.PrecedingDocument` |
-| `PrecedingDocumentItem` | `PrecedingProcFlowItem.PrecedingDocumentItem` |
-| `PrecedingDocumentCategory` | `PrecedingProcFlowItem.PrecedingDocumentCategory` |
-| `ProcessFlowLevel` | `PrecedingProcFlowItem.ProcessFlowLevel` |
-| `CreationDate` | `PrecedingProcFlowItem.CreationDate` |
-| `CreationTime` | `PrecedingProcFlowItem.CreationTime` |
-| `LastChangeDate` | `PrecedingProcFlowItem.LastChangeDate` |
-| `SalesDocumentType` | `SalesDocumentItem.SalesDocumentType` |
-| `SalesOrganization` | `SalesDocumentItem.SalesOrganization` |
-| `DistributionChannel` | `SalesDocumentItem.DistributionChannel` |
-| `OrganizationDivision` | `SalesDocumentItem.OrganizationDivision` |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `SubsequentDocument` |
+| `SalesDocumentItem` | ✓ | |  | `SubsequentDocumentItem` |
+| `DocRelationshipUUID` | ✓ | |  |  |
+| `SDDocumentCategory` |  | |  | `SubsequentDocumentCategory` |
+| `PrecedingDocument` |  | |  |  |
+| `PrecedingDocumentItem` |  | |  |  |
+| `PrecedingDocumentCategory` |  | |  |  |
+| `ProcessFlowLevel` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
 
 ## Associations
 

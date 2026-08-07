@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ContractAccountCategory` | `vktyp_kk` |
-| `ContractAccountExtReference` | `vkona_kk` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccountCategory` |  | |  | `vktyp_kk` |
+| `ContractAccountExtReference` |  | |  | `vkona_kk` |
 
 ## Source Code
 

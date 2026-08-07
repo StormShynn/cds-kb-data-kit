@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerGroup` | `cast( CustomerGroup as fincs_customergroup preserving type )` |
-| `AdditionalMasterDataSource` | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | *Association* |
-| `_CustomerGroupHierNode` | *Association* |
-| `_MDSource` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerGroup` | ✓ | |  | `cast( CustomerGroup as fincs_customergroup preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
+| `_Text` | | ✓ | | |
+| `_CustomerGroupHierNode` | | ✓ | | |
+| `_MDSource` | | ✓ | | |
 
 ## Associations
 

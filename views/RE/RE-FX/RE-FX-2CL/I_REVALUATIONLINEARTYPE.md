@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REValuationLinearType` | `cast( dd07l.domvalue_l as recestraightlinetype )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REValuationLinearType` | ✓ | |  | `cast( dd07l.domvalue_l as recestraightlinetype )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

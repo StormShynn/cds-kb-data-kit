@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `Currency` | `waers` |
-| `CurrencyName` | `cast(ltext as ltext_cds preserving type)` |
-| `CurrencyShortName` | `ktext` |
-| `_Currency` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `Currency` | ✓ | |  | `waers` |
+| `CurrencyName` |  | |  | `cast(ltext as ltext_cds preserving type)` |
+| `CurrencyShortName` |  | |  | `ktext` |
+| `_Currency` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

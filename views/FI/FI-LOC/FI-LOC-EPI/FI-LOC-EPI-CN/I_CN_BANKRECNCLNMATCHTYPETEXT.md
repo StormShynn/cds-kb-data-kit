@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankReconciliationMatchType` | `cast(left(domvalue_l,1) as epic_brs_matched_indicator preserving type )` |
-| key `Language` | `cast(ddlanguage as spras preserving type )` |
-| `BkReconciliationMatchTypeName` | `cast(ddtext as epic_brs_matched_indicator_txt preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankReconciliationMatchType` | ✓ | |  | `cast(left(domvalue_l,1) as epic_brs_matched_indicator preserving type )` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
+| `BkReconciliationMatchTypeName` |  | |  | `cast(ddtext as epic_brs_matched_indicator_txt preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

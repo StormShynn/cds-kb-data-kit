@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ForeignExchangeFixingReference` | `fix_id` |
-| `_FixingReferenceText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ForeignExchangeFixingReference` | ✓ | |  | `fix_id` |
+| `_FixingReferenceText` | | ✓ | | |
 
 ## Associations
 

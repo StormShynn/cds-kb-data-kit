@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CostComponent` | `ck_element` |
-| `CostComponentName` | `ck_txele` |
-| `TotalAmountInCoCodeCrcy` | `total_amt` |
-| `FixedAmountInCoCodeCrcy` | `total_amt` |
-| `TotalAmountInCtrlgAreaCrcy` | `total_amt` |
-| `FixedAmountInCtrlgAreaCrcy` | `total_amt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostComponent` |  | |  | `ck_element` |
+| `CostComponentName` |  | |  | `ck_txele` |
+| `TotalAmountInCoCodeCrcy` |  | |  | `total_amt` |
+| `FixedAmountInCoCodeCrcy` |  | |  | `total_amt` |
+| `TotalAmountInCtrlgAreaCrcy` |  | |  | `total_amt` |
+| `FixedAmountInCtrlgAreaCrcy` |  | |  | `total_amt` |
 
 ## Source Code
 

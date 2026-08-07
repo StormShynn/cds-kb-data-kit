@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Language` | `} key lang` |
-| key `CollectionProfile` | `coll_profile` |
-| `CollectionsProfileName` | `coll_profile_txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` |  | |  | `} key lang` |
+| `CollectionProfile` | ✓ | |  | `coll_profile` |
+| `CollectionsProfileName` |  | |  | `coll_profile_txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

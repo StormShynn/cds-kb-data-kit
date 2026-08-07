@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotationType` | `cast( SalesDocumentType as sales_quotation_type preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotationType` | ✓ | |  | `cast( SalesDocumentType as sales_quotation_type preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DaylightSavingRule` | `ttzdt.dstrule` |
-| key `Language` | `ttzdt.language` |
-| `DaylightSavingRuleText` | `ttzdt.descript` |
-| `_DaylightSavingRule` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DaylightSavingRule` | ✓ | |  | `dstrule` |
+| `Language` | ✓ | |  | `language` |
+| `DaylightSavingRuleText` |  | |  | `descript` |
+| `_DaylightSavingRule` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

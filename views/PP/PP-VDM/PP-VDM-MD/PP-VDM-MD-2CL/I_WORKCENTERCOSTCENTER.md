@@ -31,44 +31,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterInternalID` | `crco.objid` |
-| key `WorkCenterTypeCode` | `crco.objty` |
-| key `CostCenterAllocation` | `cast(crco.lanum as pph_lanum preserving type)` |
-| key `ValidityEndDate` | `crco.endda` |
-| `ValidityStartDate` | `crco.begda` |
-| `LastChangeDate` | `crco.aedat_kost` |
-| `LastChangedByUser` | `crco.aenam_kost` |
-| `Plant` | `_WorkCenter.Plant` |
-| `WorkCenterCategoryCode` | `_WorkCenter.WorkCenterCategoryCode` |
-| `ControllingArea` | `cast(crco.kokrs as fis_kokrs preserving type)` |
-| `CostCenter` | `crco.kostl` |
-| `CostCtrActivityType` | `crco.lstar` |
-| `CostCtrActivityTypeQtyUnit` | `crco.leinh` |
-| `BusinessProcess` | `crco.prz` |
-| `ActivityDescOriginType` | `cast(crco.actxy as pph_actxy preserving type)` |
-| `CostCenterActivityAltvDescID` | `cast(crco.actxk as pph_actxk preserving type)` |
-| `CostCenterActivityTypeFormula` | `cast(crco.forml as ap_form_c1 preserving type)` |
-| `CostCtrActyTypeIsReferenced` | `crco.lstar_ref` |
-| `CostCtrActyTypeIncntvWageCode` | `crco.bde` |
-| `CostCtrActyTypeRecdTypeGrpCode` | `crco.sakl` |
-| `_WorkCenter` | *Association* |
-| `_WorkCenterTypeCode` | *Association* |
-| `_WorkCenterCategory` | *Association* |
-| `_Plant` | *Association* |
-| `_StartDate` | *Association* |
-| `_EndDate` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CostCenter` | *Association* |
-| `_ActivityType` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_BusinessProcess` | *Association* |
-| `_ActivityDescOriginType` | *Association* |
-| `_ActivityAlternativeText` | *Association* |
-| `_CostCenterText` | *Association* |
-| `_CostCtrActivityTypeFormula` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  | `objid` |
+| `WorkCenterTypeCode` | ✓ | |  | `objty` |
+| `CostCenterAllocation` | ✓ | |  | `cast(crco.lanum as pph_lanum preserving type)` |
+| `ValidityEndDate` | ✓ | |  | `endda` |
+| `ValidityStartDate` |  | |  | `begda` |
+| `LastChangeDate` |  | |  | `aedat_kost` |
+| `LastChangedByUser` |  | |  | `aenam_kost` |
+| `Plant` |  | | `_WorkCenter` | `Plant` |
+| `WorkCenterCategoryCode` |  | | `_WorkCenter` | `WorkCenterCategoryCode` |
+| `ControllingArea` |  | |  | `cast(crco.kokrs as fis_kokrs preserving type)` |
+| `CostCenter` |  | |  | `kostl` |
+| `CostCtrActivityType` |  | |  | `lstar` |
+| `CostCtrActivityTypeQtyUnit` |  | |  | `leinh` |
+| `BusinessProcess` |  | |  | `prz` |
+| `ActivityDescOriginType` |  | |  | `cast(crco.actxy as pph_actxy preserving type)` |
+| `CostCenterActivityAltvDescID` |  | |  | `cast(crco.actxk as pph_actxk preserving type)` |
+| `CostCenterActivityTypeFormula` |  | |  | `cast(crco.forml as ap_form_c1 preserving type)` |
+| `CostCtrActyTypeIsReferenced` |  | |  | `lstar_ref` |
+| `CostCtrActyTypeIncntvWageCode` |  | |  | `bde` |
+| `CostCtrActyTypeRecdTypeGrpCode` |  | |  | `sakl` |
+| `_WorkCenter` | | ✓ | | |
+| `_WorkCenterTypeCode` | | ✓ | | |
+| `_WorkCenterCategory` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StartDate` | | ✓ | | |
+| `_EndDate` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_ActivityType` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_BusinessProcess` | | ✓ | | |
+| `_ActivityDescOriginType` | | ✓ | | |
+| `_ActivityAlternativeText` | | ✓ | | |
+| `_CostCenterText` | | ✓ | | |
+| `_CostCtrActivityTypeFormula` | | ✓ | | |
 
 ## Associations
 

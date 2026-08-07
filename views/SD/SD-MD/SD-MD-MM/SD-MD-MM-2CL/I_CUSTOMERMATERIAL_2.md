@@ -32,42 +32,42 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrganization` | `vkorg` |
-| key `DistributionChannel` | `vtweg` |
-| key `Customer` | `kunnr` |
-| key `Product` | `cast( matnr as productnumber preserving type )` |
-| `MaterialByCustomer` | `kdmat` |
-| `MaterialDescriptionByCustomer` | `postx` |
-| `RoundingProfile` | `rdprf` |
-| `Plant` | `werks` |
-| `DeliveryPriority` | `lprio` |
-| `MinDeliveryQtyInBaseUnit` | `minlf` |
-| `BaseUnit` | `meins` |
-| `CustomerMaterialSearchTerm` | `sortl` |
-| `PartialDeliveryIsAllowed` | `kztlf` |
-| `MaxNmbrOfPartialDelivery` | `antlf` |
-| `UnderdelivTolrtdLmtRatioInPct` | `untto` |
-| `OverdelivTolrtdLmtRatioInPct` | `uebto` |
-| `UnlimitedOverdeliveryIsAllowed` | `uebtk` |
-| `CustomerMaterialItemUsage` | `vwpos` |
-| `SalesUnit` | `vrkme_t` |
-| `SalesQtyToBaseQtyDnmntr` | `umvkn_t` |
-| `SalesQtyToBaseQtyNmrtr` | `umvkz_t` |
-| `LastChangedByUser` | `last_changed_by_user` |
-| `LastChangeDateTime` | `case tstmp_is_valid(cast(upd_tmstmp as abap.dec(15,0))) when 0 then cast( dats_tims_to_tstmp( erdat, '000000', 'UTC', $session.client, 'NULL' ) as last_changed_date_time ) else cast( upd_tmstmp as last_changed_date_time ) end` |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Customer` | *Association* |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_DeliveryPriority` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_PartialDeliveryIsAllowed` | *Association* |
-| `_CustomerMaterialItemUsage` | *Association* |
-| `_AdditionalCustomerMaterial` | *Association* |
-| `_LastChangedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  | `vkorg` |
+| `DistributionChannel` | ✓ | |  | `vtweg` |
+| `Customer` | ✓ | |  | `kunnr` |
+| `Product` | ✓ | |  | `cast( matnr as productnumber preserving type )` |
+| `MaterialByCustomer` |  | |  | `kdmat` |
+| `MaterialDescriptionByCustomer` |  | |  | `postx` |
+| `RoundingProfile` |  | |  | `rdprf` |
+| `Plant` |  | |  | `werks` |
+| `DeliveryPriority` |  | |  | `lprio` |
+| `MinDeliveryQtyInBaseUnit` |  | |  | `minlf` |
+| `BaseUnit` |  | |  | `meins` |
+| `CustomerMaterialSearchTerm` |  | |  | `sortl` |
+| `PartialDeliveryIsAllowed` |  | |  | `kztlf` |
+| `MaxNmbrOfPartialDelivery` |  | |  | `antlf` |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  | `untto` |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  | `uebto` |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  | `uebtk` |
+| `CustomerMaterialItemUsage` |  | |  | `vwpos` |
+| `SalesUnit` |  | |  | `vrkme_t` |
+| `SalesQtyToBaseQtyDnmntr` |  | |  | `umvkn_t` |
+| `SalesQtyToBaseQtyNmrtr` |  | |  | `umvkz_t` |
+| `LastChangedByUser` |  | |  | `last_changed_by_user` |
+| `LastChangeDateTime` |  | |  | `case tstmp_is_valid(cast(upd_tmstmp as abap.dec(15,0))) when 0 then cast( dats_tims_to_tstmp( erdat, '000000', 'UTC', $session.client, 'NULL' ) as last_changed_date_time ) else cast( upd_tmstmp as last_changed_date_time ) end` |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_DeliveryPriority` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_PartialDeliveryIsAllowed` | | ✓ | | |
+| `_CustomerMaterialItemUsage` | | ✓ | | |
+| `_AdditionalCustomerMaterial` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
 
 ## Associations
 

@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceOrder` | `MaintenanceOrder` |
-| key `PartnerFunction` | `PartnerFunction` |
-| key `MaintenanceOrderPartner` | `MaintenanceOrderPartner` |
-| `_MaintenanceOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `MaintenanceOrderPartner` | ✓ | |  |  |
+| `_MaintenanceOrder` | | ✓ | | |
 
 ## Source Code
 

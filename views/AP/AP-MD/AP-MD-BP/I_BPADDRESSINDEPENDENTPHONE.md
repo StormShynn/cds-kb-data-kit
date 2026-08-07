@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `_BusinessPartner.BusinessPartner` |
-| key `AddressID` | `BPAddressIndependentPhone.AddressID` |
-| key `Person` | `BPAddressIndependentPhone.AddressPersonID` |
-| key `OrdinalNumber` | `BPAddressIndependentPhone.CommMediumSequenceNumber` |
-| `DestinationLocationCountry` | `BPAddressIndependentPhone.PhoneNumberCountry` |
-| `IsDefaultPhoneNumber` | `case when PhoneNumberType = '1' then cast('X' as boole_d) else cast(' ' as boole_d) end` |
-| `OrdinalNumberForEdit` | `BPAddressIndependentPhone.CommMediumSequenceNumber` |
-| `AddressIDForEdit` | `BPAddressIndependentPhone.AddressID` |
-| `CommNumberIsNotUsed` | `cast ( '' as ad_flnouse )` |
-| `PhoneNumber` | `BPAddressIndependentPhone.PhoneAreaCodeSubscriberNumber` |
-| `PhoneNumberExtension` | `BPAddressIndependentPhone.PhoneExtensionNumber` |
-| `InternationalPhoneNumber` | `BPAddressIndependentPhone.InternationalPhoneNumber` |
-| `PhoneIsSMSEnabled` | `cast ('' as ad_flgsms)` |
-| `PhoneNumberType` | `BPAddressIndependentPhone.PhoneNumberType` |
-| `ValidityStartDateTime` | `cast ( BPAddressIndependentPhone.ValidityStartDate as ad_valfrom )` |
-| `ValidityEndDateTime` | `cast ( BPAddressIndependentPhone.ValidityEndDate as ad_valto )` |
-| `ValidityStartDate` | `BPAddressIndependentPhone.ValidityStartDate` |
-| `ValidityEndDate` | `BPAddressIndependentPhone.ValidityEndDate` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `AddressCommunicationRemarkText` | `_AddressCommunicationRemark.CommunicationRemarkText` |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |
+| `AddressID` | ✓ | |  |  |
+| `Person` | ✓ | |  | `AddressPersonID` |
+| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |
+| `DestinationLocationCountry` |  | |  | `PhoneNumberCountry` |
+| `IsDefaultPhoneNumber` |  | |  | `case when PhoneNumberType = '1' then cast('X' as boole_d) else cast(' ' as boole_d) end` |
+| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` |
+| `AddressIDForEdit` |  | |  | `AddressID` |
+| `CommNumberIsNotUsed` |  | |  | `cast ( '' as ad_flnouse )` |
+| `PhoneNumber` |  | |  | `PhoneAreaCodeSubscriberNumber` |
+| `PhoneNumberExtension` |  | |  | `PhoneExtensionNumber` |
+| `InternationalPhoneNumber` |  | |  |  |
+| `PhoneIsSMSEnabled` |  | |  | `cast ('' as ad_flgsms)` |
+| `PhoneNumberType` |  | |  |  |
+| `ValidityStartDateTime` |  | |  | `cast ( BPAddressIndependentPhone.ValidityStartDate as ad_valfrom )` |
+| `ValidityEndDateTime` |  | |  | `cast ( BPAddressIndependentPhone.ValidityEndDate as ad_valto )` |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Associations
 

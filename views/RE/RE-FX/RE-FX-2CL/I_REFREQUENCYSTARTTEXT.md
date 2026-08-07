@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `REFrequencyStart` | `cast( dd07t.domvalue_l as recdvdmmonthfrom )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `REFrequencyStartName` | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | *Association* |
-| `_REFrequencyStart` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `REFrequencyStart` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmmonthfrom )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `REFrequencyStartName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_REFrequencyStart` | | ✓ | | |
 
 ## Associations
 

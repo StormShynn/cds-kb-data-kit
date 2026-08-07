@@ -30,24 +30,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsShptVoyageUUID` | `FldLogsShptVoyageUUID` |
-| key `FldLogsVoyageStageID` | `FldLogsVoyageStageID` |
-| `FldLogsSrcePlnt` | `FldLogsSrcePlnt` |
-| `FldLogsDestPlnt` | `FldLogsDestPlnt` |
-| `FldLogsShptVoyageStatusCode` | `FldLogsShptVoyageStatusCode` |
-| `FldLogsVoyageSrceStage` | `FldLogsVoyageSrceStage` |
-| `FldLogsVoyageDestStage` | `FldLogsVoyageDestStage` |
-| `FldLogsVoyagePlndArrvlDate` | `FldLogsVoyagePlndArrvlDate` |
-| `FldLogsVoyagePlndDeptrDate` | `FldLogsVoyagePlndDeptrDate` |
-| `FldLogsVoyageStgeChangeDateTme` | `FldLogsVoyageStgeChangeDateTme` |
-| `FldLogsVoyPlannedStartTime` | `FldLogsVoyPlannedStartTime` |
-| `FldLogsVoyPlannedEndTime` | `FldLogsVoyPlannedEndTime` |
-| `_VoyStsText` | *Association* |
-| `_SrcePlantText` | *Association* |
-| `_DestPlantText` | *Association* |
-| `_Voyage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsShptVoyageUUID` | ✓ | |  |  |
+| `FldLogsVoyageStageID` | ✓ | |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |
+| `FldLogsDestPlnt` |  | |  |  |
+| `FldLogsShptVoyageStatusCode` |  | |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |
+| `FldLogsVoyagePlndArrvlDate` |  | |  |  |
+| `FldLogsVoyagePlndDeptrDate` |  | |  |  |
+| `FldLogsVoyageStgeChangeDateTme` |  | |  |  |
+| `FldLogsVoyPlannedStartTime` |  | |  |  |
+| `FldLogsVoyPlannedEndTime` |  | |  |  |
+| `_VoyStsText` | | ✓ | | |
+| `_SrcePlantText` | | ✓ | | |
+| `_DestPlantText` | | ✓ | | |
+| `_Voyage` | | ✓ | | |
 
 ## Source Code
 

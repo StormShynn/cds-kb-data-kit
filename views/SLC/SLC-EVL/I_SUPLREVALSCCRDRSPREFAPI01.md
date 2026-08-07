@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScorecardRefUUID` | `SuplrEvalScorecardRefUUID` |
-| `SuplrEvalScorecardUUID` | `SuplrEvalScorecardUUID` |
-| `SuplrEvalRspUUID` | `SuplrEvalRspUUID` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScorecardRefUUID` | ✓ | |  |  |
+| `SuplrEvalScorecardUUID` |  | |  |  |
+| `SuplrEvalRspUUID` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
 
 ## Source Code
 

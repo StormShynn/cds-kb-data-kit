@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GoodsMovementCode` | `cast(substring(domvalue_l, 1, 2) as gm_code)` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `GoodsMovementCodeName` | `cast(ddtext as nsdm_gds_mvt_code_name preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_GoodsMovementCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GoodsMovementCode` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as gm_code)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `GoodsMovementCodeName` |  | |  | `cast(ddtext as nsdm_gds_mvt_code_name preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_GoodsMovementCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

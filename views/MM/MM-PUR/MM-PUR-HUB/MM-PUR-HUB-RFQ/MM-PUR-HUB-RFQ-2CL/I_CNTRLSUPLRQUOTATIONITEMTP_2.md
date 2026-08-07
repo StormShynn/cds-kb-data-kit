@@ -30,57 +30,57 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralSupplierQuotation` | `CentralSupplierQuotation` |
-| key `CentralSupplierQuotationItem` | `CentralSupplierQuotationItem` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentItemText` | `PurchasingDocumentItemText` |
-| `PurchasingCentralMaterial` | `PurchasingCentralMaterial` |
-| `ProductTypeCode` | `ProductTypeCode` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `SupplierMaterialNumber` | `SupplierMaterialNumber` |
-| `ManufacturerPartNmbr` | `ManufacturerPartNmbr` |
-| `Manufacturer` | `Manufacturer` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Plant` | `Plant` |
-| `ManualDeliveryAddressID` | `ManualDeliveryAddressID` |
-| `ReferenceDeliveryAddressID` | `ReferenceDeliveryAddressID` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `RequirementTracking` | `RequirementTracking` |
-| `OrderPriceUnit` | `OrderPriceUnit` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
-| `ScheduleLineOrderQuantity` | `ScheduleLineOrderQuantity` |
-| `ScheduleLineDeliveryDate` | `ScheduleLineDeliveryDate` |
-| `PerformancePeriodStartDate` | `PerformancePeriodStartDate` |
-| `PerformancePeriodEndDate` | `PerformancePeriodEndDate` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `OrderItemQtyToBaseQtyNmrtr` | `OrderItemQtyToBaseQtyNmrtr` |
-| `OrderItemQtyToBaseQtyDnmntr` | `OrderItemQtyToBaseQtyDnmntr` |
-| `OrderQuantity` | `OrderQuantity` |
-| `PurgDocPriceDate` | `PurgDocPriceDate` |
-| `BaseUnit` | `BaseUnit` |
-| `NetAmount` | `NetAmount` |
-| `GrossAmount` | `GrossAmount` |
-| `EffectiveAmount` | `EffectiveAmount` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `AddressID` | `AddressID` |
-| `ItemDeliveryAddressID` | `ItemDeliveryAddressID` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `CentralRequestForQuotation` | `CentralRequestForQuotation` |
-| `CentralRequestForQuotationItem` | `CentralRequestForQuotationItem` |
-| `PurchasingDocumentItemCategory` | `PurchasingDocumentItemCategory` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_CentralSupplierQuotation` | *Association* |
-| `_CntrlSupplierQtanItemPricing` | *Association* |
-| `_CntrlSuplrQuotationItemDistr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralSupplierQuotation` | ✓ | |  |  |
+| `CentralSupplierQuotationItem` | ✓ | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |
+| `PurchasingCentralMaterial` |  | |  |  |
+| `ProductTypeCode` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
+| `OrderQuantity` |  | |  |  |
+| `PurgDocPriceDate` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `GrossAmount` |  | |  |  |
+| `EffectiveAmount` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `CentralRequestForQuotation` |  | |  |  |
+| `CentralRequestForQuotationItem` |  | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_CentralSupplierQuotation` | | ✓ | | |
+| `_CntrlSupplierQtanItemPricing` | | ✓ | | |
+| `_CntrlSuplrQuotationItemDistr` | | ✓ | | |
 
 ## Source Code
 

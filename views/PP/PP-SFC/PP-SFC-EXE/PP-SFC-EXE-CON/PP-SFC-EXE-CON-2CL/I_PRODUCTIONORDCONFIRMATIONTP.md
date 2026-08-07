@@ -30,108 +30,108 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfirmationGroup` | `ConfirmationGroup` |
-| key `ConfirmationCount` | `ConfirmationCount` |
-| `OrderID` | `OrderID` |
-| `Sequence` | `Sequence` |
-| `OrderOperation` | `OrderOperation` |
-| `OrderSuboperation` | `OrderSuboperation` |
-| `OrderType` | `OrderType` |
-| `OrderOperationInternalID` | `OrderOperationInternalID` |
-| `ConfirmationText` | `ConfirmationText` |
-| `Language` | `Language` |
-| `Material` | `Material` |
-| `OrderPlannedTotalQty` | `OrderPlannedTotalQty` |
-| `ProductionUnit` | `ProductionUnit` |
-| `FinalConfirmationType` | `FinalConfirmationType` |
-| `OpenReservationsIsCleared` | `OpenReservationsIsCleared` |
-| `IsReversed` | `IsReversed` |
-| `IsReversal` | `IsReversal` |
-| `OrderConfirmationRecordType` | `OrderConfirmationRecordType` |
-| `ConfirmationEntryDate` | `ConfirmationEntryDate` |
-| `ConfirmationEntryTime` | `ConfirmationEntryTime` |
-| `EnteredByUser` | `EnteredByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ConfirmationExternalEntryDate` | `ConfirmationExternalEntryDate` |
-| `ConfirmationExternalEntryTime` | `ConfirmationExternalEntryTime` |
-| `EnteredByExternalUser` | `EnteredByExternalUser` |
-| `ExternalSystemConfirmation` | `ExternalSystemConfirmation` |
-| `Plant` | `Plant` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `WorkCenter` | `WorkCenter` |
-| `CapacityCategoryCode` | `CapacityCategoryCode` |
-| `CapacityRequirementSplit` | `CapacityRequirementSplit` |
-| `Personnel` | `Personnel` |
-| `TimeRecording` | `TimeRecording` |
-| `EmployeeWageType` | `EmployeeWageType` |
-| `EmployeeWageGroup` | `EmployeeWageGroup` |
-| `BreakDurationUnit` | `BreakDurationUnit` |
-| `BreakDurationUnitISOCode` | `BreakDurationUnitISOCode` |
-| `BreakDurationUnitSAPCode` | `BreakDurationUnitSAPCode` |
-| `ConfirmedBreakDuration` | `ConfirmedBreakDuration` |
-| `EmployeeSuitability` | `EmployeeSuitability` |
-| `NumberOfEmployees` | `NumberOfEmployees` |
-| `PostingDate` | `PostingDate` |
-| `ConfirmedExecutionStartDate` | `ConfirmedExecutionStartDate` |
-| `ConfirmedExecutionStartTime` | `ConfirmedExecutionStartTime` |
-| `ConfirmedSetupEndDate` | `ConfirmedSetupEndDate` |
-| `ConfirmedSetupEndTime` | `ConfirmedSetupEndTime` |
-| `ConfirmedProcessingStartDate` | `ConfirmedProcessingStartDate` |
-| `ConfirmedProcessingStartTime` | `ConfirmedProcessingStartTime` |
-| `ConfirmedProcessingEndDate` | `ConfirmedProcessingEndDate` |
-| `ConfirmedProcessingEndTime` | `ConfirmedProcessingEndTime` |
-| `ConfirmedTeardownStartDate` | `ConfirmedTeardownStartDate` |
-| `ConfirmedTeardownStartTime` | `ConfirmedTeardownStartTime` |
-| `ConfirmedExecutionEndDate` | `ConfirmedExecutionEndDate` |
-| `ConfirmedExecutionEndTime` | `ConfirmedExecutionEndTime` |
-| `ConfirmationUnit` | `ConfirmationUnit` |
-| `ConfirmationUnitISOCode` | `ConfirmationUnitISOCode` |
-| `ConfirmationUnitSAPCode` | `ConfirmationUnitSAPCode` |
-| `ConfirmationYieldQuantity` | `ConfirmationYieldQuantity` |
-| `ConfirmationScrapQuantity` | `ConfirmationScrapQuantity` |
-| `ConfirmationReworkQuantity` | `ConfirmationReworkQuantity` |
-| `VarianceReasonCode` | `VarianceReasonCode` |
-| `OpWorkQuantityUnit1` | `OpWorkQuantityUnit1` |
-| `WorkQuantityUnit1ISOCode` | `WorkQuantityUnit1ISOCode` |
-| `WorkQuantityUnit1SAPCode` | `WorkQuantityUnit1SAPCode` |
-| `OpConfirmedWorkQuantity1` | `OpConfirmedWorkQuantity1` |
-| `NoFurtherOpWorkQuantity1IsExpd` | `NoFurtherOpWorkQuantity1IsExpd` |
-| `OpWorkQuantityUnit2` | `OpWorkQuantityUnit2` |
-| `WorkQuantityUnit2ISOCode` | `WorkQuantityUnit2ISOCode` |
-| `WorkQuantityUnit2SAPCode` | `WorkQuantityUnit2SAPCode` |
-| `OpConfirmedWorkQuantity2` | `OpConfirmedWorkQuantity2` |
-| `NoFurtherOpWorkQuantity2IsExpd` | `NoFurtherOpWorkQuantity2IsExpd` |
-| `OpWorkQuantityUnit3` | `OpWorkQuantityUnit3` |
-| `WorkQuantityUnit3ISOCode` | `WorkQuantityUnit3ISOCode` |
-| `WorkQuantityUnit3SAPCode` | `WorkQuantityUnit3SAPCode` |
-| `OpConfirmedWorkQuantity3` | `OpConfirmedWorkQuantity3` |
-| `NoFurtherOpWorkQuantity3IsExpd` | `NoFurtherOpWorkQuantity3IsExpd` |
-| `OpWorkQuantityUnit4` | `OpWorkQuantityUnit4` |
-| `WorkQuantityUnit4ISOCode` | `WorkQuantityUnit4ISOCode` |
-| `WorkQuantityUnit4SAPCode` | `WorkQuantityUnit4SAPCode` |
-| `OpConfirmedWorkQuantity4` | `OpConfirmedWorkQuantity4` |
-| `NoFurtherOpWorkQuantity4IsExpd` | `NoFurtherOpWorkQuantity4IsExpd` |
-| `OpWorkQuantityUnit5` | `OpWorkQuantityUnit5` |
-| `WorkQuantityUnit5ISOCode` | `WorkQuantityUnit5ISOCode` |
-| `WorkQuantityUnit5SAPCode` | `WorkQuantityUnit5SAPCode` |
-| `OpConfirmedWorkQuantity5` | `OpConfirmedWorkQuantity5` |
-| `NoFurtherOpWorkQuantity5IsExpd` | `NoFurtherOpWorkQuantity5IsExpd` |
-| `OpWorkQuantityUnit6` | `OpWorkQuantityUnit6` |
-| `WorkQuantityUnit6ISOCode` | `WorkQuantityUnit6ISOCode` |
-| `WorkQuantityUnit6SAPCode` | `WorkQuantityUnit6SAPCode` |
-| `OpConfirmedWorkQuantity6` | `OpConfirmedWorkQuantity6` |
-| `NoFurtherOpWorkQuantity6IsExpd` | `NoFurtherOpWorkQuantity6IsExpd` |
-| `BusinessProcessEntryUnit` | `BusinessProcessEntryUnit` |
-| `BusProcessEntrUnitISOCode` | `BusProcessEntrUnitISOCode` |
-| `BusProcessEntryUnitSAPCode` | `BusProcessEntryUnitSAPCode` |
-| `BusinessProcessConfirmedQty` | `BusinessProcessConfirmedQty` |
-| `NoFurtherBusinessProcQtyIsExpd` | `NoFurtherBusinessProcQtyIsExpd` |
-| `ShiftGrouping` | `ShiftGrouping` |
-| `ShiftDefinition` | `ShiftDefinition` |
-| `_ProdnOrdConfMatlDocItm` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfirmationGroup` | ✓ | |  |  |
+| `ConfirmationCount` | ✓ | |  |  |
+| `OrderID` |  | |  |  |
+| `Sequence` |  | |  |  |
+| `OrderOperation` |  | |  |  |
+| `OrderSuboperation` |  | |  |  |
+| `OrderType` |  | |  |  |
+| `OrderOperationInternalID` |  | |  |  |
+| `ConfirmationText` |  | |  |  |
+| `Language` |  | |  |  |
+| `Material` |  | |  |  |
+| `OrderPlannedTotalQty` |  | |  |  |
+| `ProductionUnit` |  | |  |  |
+| `FinalConfirmationType` |  | |  |  |
+| `OpenReservationsIsCleared` |  | |  |  |
+| `IsReversed` |  | |  |  |
+| `IsReversal` |  | |  |  |
+| `OrderConfirmationRecordType` |  | |  |  |
+| `ConfirmationEntryDate` |  | |  |  |
+| `ConfirmationEntryTime` |  | |  |  |
+| `EnteredByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ConfirmationExternalEntryDate` |  | |  |  |
+| `ConfirmationExternalEntryTime` |  | |  |  |
+| `EnteredByExternalUser` |  | |  |  |
+| `ExternalSystemConfirmation` |  | |  |  |
+| `Plant` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `CapacityCategoryCode` |  | |  |  |
+| `CapacityRequirementSplit` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `TimeRecording` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `BreakDurationUnit` |  | |  |  |
+| `BreakDurationUnitISOCode` |  | |  |  |
+| `BreakDurationUnitSAPCode` |  | |  |  |
+| `ConfirmedBreakDuration` |  | |  |  |
+| `EmployeeSuitability` |  | |  |  |
+| `NumberOfEmployees` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `ConfirmedExecutionStartDate` |  | |  |  |
+| `ConfirmedExecutionStartTime` |  | |  |  |
+| `ConfirmedSetupEndDate` |  | |  |  |
+| `ConfirmedSetupEndTime` |  | |  |  |
+| `ConfirmedProcessingStartDate` |  | |  |  |
+| `ConfirmedProcessingStartTime` |  | |  |  |
+| `ConfirmedProcessingEndDate` |  | |  |  |
+| `ConfirmedProcessingEndTime` |  | |  |  |
+| `ConfirmedTeardownStartDate` |  | |  |  |
+| `ConfirmedTeardownStartTime` |  | |  |  |
+| `ConfirmedExecutionEndDate` |  | |  |  |
+| `ConfirmedExecutionEndTime` |  | |  |  |
+| `ConfirmationUnit` |  | |  |  |
+| `ConfirmationUnitISOCode` |  | |  |  |
+| `ConfirmationUnitSAPCode` |  | |  |  |
+| `ConfirmationYieldQuantity` |  | |  |  |
+| `ConfirmationScrapQuantity` |  | |  |  |
+| `ConfirmationReworkQuantity` |  | |  |  |
+| `VarianceReasonCode` |  | |  |  |
+| `OpWorkQuantityUnit1` |  | |  |  |
+| `WorkQuantityUnit1ISOCode` |  | |  |  |
+| `WorkQuantityUnit1SAPCode` |  | |  |  |
+| `OpConfirmedWorkQuantity1` |  | |  |  |
+| `NoFurtherOpWorkQuantity1IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit2` |  | |  |  |
+| `WorkQuantityUnit2ISOCode` |  | |  |  |
+| `WorkQuantityUnit2SAPCode` |  | |  |  |
+| `OpConfirmedWorkQuantity2` |  | |  |  |
+| `NoFurtherOpWorkQuantity2IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit3` |  | |  |  |
+| `WorkQuantityUnit3ISOCode` |  | |  |  |
+| `WorkQuantityUnit3SAPCode` |  | |  |  |
+| `OpConfirmedWorkQuantity3` |  | |  |  |
+| `NoFurtherOpWorkQuantity3IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit4` |  | |  |  |
+| `WorkQuantityUnit4ISOCode` |  | |  |  |
+| `WorkQuantityUnit4SAPCode` |  | |  |  |
+| `OpConfirmedWorkQuantity4` |  | |  |  |
+| `NoFurtherOpWorkQuantity4IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit5` |  | |  |  |
+| `WorkQuantityUnit5ISOCode` |  | |  |  |
+| `WorkQuantityUnit5SAPCode` |  | |  |  |
+| `OpConfirmedWorkQuantity5` |  | |  |  |
+| `NoFurtherOpWorkQuantity5IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit6` |  | |  |  |
+| `WorkQuantityUnit6ISOCode` |  | |  |  |
+| `WorkQuantityUnit6SAPCode` |  | |  |  |
+| `OpConfirmedWorkQuantity6` |  | |  |  |
+| `NoFurtherOpWorkQuantity6IsExpd` |  | |  |  |
+| `BusinessProcessEntryUnit` |  | |  |  |
+| `BusProcessEntrUnitISOCode` |  | |  |  |
+| `BusProcessEntryUnitSAPCode` |  | |  |  |
+| `BusinessProcessConfirmedQty` |  | |  |  |
+| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |
+| `ShiftGrouping` |  | |  |  |
+| `ShiftDefinition` |  | |  |  |
+| `_ProdnOrdConfMatlDocItm` | | ✓ | | |
 
 ## Source Code
 

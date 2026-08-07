@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `mamt.matnr` |
-| key `Language` | `mamt.spras` |
-| key `ProductUnit` | `mamt.meinh` |
-| key `ProductUnitTextSeqNum` | `mamt.lfdnr` |
-| key `ProductUnitShortTextCode` | `mamt.mtxid` |
-| `ProductDescription` | `mamt.maktm` |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `Language` | ✓ | |  | `spras` |
+| `ProductUnit` | ✓ | |  | `meinh` |
+| `ProductUnitTextSeqNum` | ✓ | |  | `lfdnr` |
+| `ProductUnitShortTextCode` | ✓ | |  | `mtxid` |
+| `ProductDescription` |  | |  | `maktm` |
+| `_Product` | | ✓ | | |
 
 ## Associations
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ObjectDependencyName` | `ObjectDependencyName` |
-| key `ChangeNumber` | `ChangeNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `IsDeleted` | `IsDeleted` |
-| `_ObjectDependency` | *Association* |
-| `_SourceCodeLine` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ObjectDependencyName` | ✓ | |  |  |
+| `ChangeNumber` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `_ObjectDependency` | | ✓ | | |
+| `_SourceCodeLine` | | ✓ | | |
 
 ## Source Code
 

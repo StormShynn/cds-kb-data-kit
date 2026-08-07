@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `ConsolidationChartOfAccounts` |
-| key `CnsldtnAdhocItem` | `CnsldtnAdhocItem` |
-| `CnsldtnAdhocItemText` | `cast(_AdhocItem._Text[1: Language=$session.system_language].CnsldtnAdhocItemText as fincs_description_text_60 preserving type)` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  |  |
+| `CnsldtnAdhocItem` | ✓ | |  |  |
+| `CnsldtnAdhocItemText` |  | |  | `cast(_AdhocItem._Text[1: Language=$session.system_language].CnsldtnAdhocItemText as fincs_description_text_60 preserving type)` |
 
 ## Source Code
 

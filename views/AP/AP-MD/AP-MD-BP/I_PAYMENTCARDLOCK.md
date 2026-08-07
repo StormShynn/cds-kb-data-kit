@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentCardLock` | `cclock` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentCardLock` | ✓ | |  | `cclock` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

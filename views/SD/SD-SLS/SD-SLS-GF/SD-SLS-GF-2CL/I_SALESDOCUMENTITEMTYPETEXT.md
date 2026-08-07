@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocumentItemType` | `SUBSTRING(dd07t.domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `SalesDocumentItemTypeName` | `ddtext` |
-| `_SalesDocumentItemType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentItemType` | ✓ | |  | `SUBSTRING(dd07t.domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SalesDocumentItemTypeName` |  | |  | `ddtext` |
+| `_SalesDocumentItemType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

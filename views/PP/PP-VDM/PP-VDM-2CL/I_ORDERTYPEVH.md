@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderType` | `OrderType` |
-| `OrderCategory` | `OrderCategory` |
-| `_OrderCategory` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderType` | ✓ | |  |  |
+| `OrderCategory` |  | |  |  |
+| `_OrderCategory` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

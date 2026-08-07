@@ -31,38 +31,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListSequence` | `TaskListSequence` |
-| key `TaskListOperationInternalId` | `TaskListOperationInternalId` |
-| key `TaskListOpBOMItmInternalID` | `TaskListOpBOMItmInternalID` |
-| key `TaskListOpBOMItmIntVersCounter` | `TaskListOpBOMItmIntVersCounter` |
-| `MaintenanceTaskListOperation` | `MaintenanceTaskListOperation` |
-| `Material` | `Material` |
-| `MaterialName` | `MaterialName` |
-| `BillOfMaterialItemQuantity` | `BillOfMaterialItemQuantity` |
-| `BillOfMaterialItemCategory` | `BillOfMaterialItemCategory` |
-| `BillOfMaterialItemUnit` | `BillOfMaterialItemUnit` |
-| `ResvnIsMRPRlvtOrPurReqnIsCrted` | `ResvnIsMRPRlvtOrPurReqnIsCrted` |
-| `MatlCompIsMarkedForBackflush` | `MatlCompIsMarkedForBackflush` |
-| `SafetyRelevantObject` | `SafetyRelevantObject` |
-| `BillOfMaterialItemCategoryDesc` | `BillOfMaterialItemCategoryDesc` |
-| `MatlsPlngRelevancyCodeName` | `MatlsPlngRelevancyCodeName` |
-| `SafetyRelevanceActionDesc` | `SafetyRelevanceActionDesc` |
-| `Plant` | `Plant` |
-| `TaskListStatus` | `TaskListStatus` |
-| `ResponsiblePlannerGroup` | `ResponsiblePlannerGroup` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `ControllingArea` | `ControllingArea` |
-| `CostCenter` | `CostCenter` |
-| `MaintenancePlant` | `MaintenancePlant` |
-| `_Header` | *Association* |
-| `_NonHistOp` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListSequence` | ✓ | |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |
+| `TaskListOpBOMItmInternalID` | ✓ | |  |  |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialName` |  | |  |  |
+| `BillOfMaterialItemQuantity` |  | |  |  |
+| `BillOfMaterialItemCategory` |  | |  |  |
+| `BillOfMaterialItemUnit` |  | |  |  |
+| `ResvnIsMRPRlvtOrPurReqnIsCrted` |  | |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |
+| `SafetyRelevantObject` |  | |  |  |
+| `BillOfMaterialItemCategoryDesc` |  | |  |  |
+| `MatlsPlngRelevancyCodeName` |  | |  |  |
+| `SafetyRelevanceActionDesc` |  | |  |  |
+| `Plant` |  | |  |  |
+| `TaskListStatus` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_NonHistOp` | | ✓ | | |
 
 ## Source Code
 

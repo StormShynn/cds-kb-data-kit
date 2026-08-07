@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CompanyCode` | `bukrs` |
-| `ProdCmplncLogsDocumentCategory` | `ehfnd_log_doc_category` |
-| `DepartureCountry` | `ehfnd_departure_country` |
-| `DestinationCountry` | `ehfnd_destination_country` |
-| `DngrsGoodsMainModeOfTransport` | `ehfnd_req_mot` |
-| `D_PCLgsDcGetMxdLdgIcmtsCntryP` | `_TransitCountries : composition[0..*] of D_PCLgsDcGetMxdLdgIcmtsCntryP` |
-| `D_PCLgsDcGetMxdLdgIcmtsProdP` | `_Products : composition[0..*] of D_PCLgsDcGetMxdLdgIcmtsProdP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` |  | |  | `bukrs` |
+| `ProdCmplncLogsDocumentCategory` |  | |  | `ehfnd_log_doc_category` |
+| `DepartureCountry` |  | |  | `ehfnd_departure_country` |
+| `DestinationCountry` |  | |  | `ehfnd_destination_country` |
+| `DngrsGoodsMainModeOfTransport` |  | |  | `ehfnd_req_mot` |
+| `D_PCLgsDcGetMxdLdgIcmtsCntryP` |  | |  | `_TransitCountries : composition[0..*] of D_PCLgsDcGetMxdLdgIcmtsCntryP` |
+| `D_PCLgsDcGetMxdLdgIcmtsProdP` |  | |  | `_Products : composition[0..*] of D_PCLgsDcGetMxdLdgIcmtsProdP` |
 
 ## Source Code
 

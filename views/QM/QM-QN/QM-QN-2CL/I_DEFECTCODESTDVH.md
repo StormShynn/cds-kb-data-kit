@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DefectCodeGroup` | `DefectCodeGroup` |
-| key `DefectCode` | `DefectCode` |
-| `CodeIsInactive` | `CodeIsInactive` |
-| `DefectCodeGroupAndCode` | `cast( concat_with_space( DefectCodeGroup, DefectCode, 1) as qdefect_code_group_and_code preserving type )` |
-| `CodeGroupStatus` | `CodeGroupStatus` |
-| `_Text` | *Association* |
-| `_DefectCodeGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DefectCodeGroup` | ✓ | |  |  |
+| `DefectCode` | ✓ | |  |  |
+| `CodeIsInactive` |  | |  |  |
+| `DefectCodeGroupAndCode` |  | |  | `cast( concat_with_space( DefectCodeGroup, DefectCode, 1) as qdefect_code_group_and_code preserving type )` |
+| `CodeGroupStatus` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_DefectCodeGroup` | | ✓ | | |
 
 ## Source Code
 

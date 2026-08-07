@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `Country` |
-| `Description` | `_Text[1: Language = $session.system_language].CountryName` |
-| `CountryThreeLetterISOCode` | `CountryThreeLetterISOCode` |
-| `CountryThreeDigitISOCode` | `CountryThreeDigitISOCode` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  |  |
+| `Description` |  | |  | `_Text[1: Language = $session.system_language].CountryName` |
+| `CountryThreeLetterISOCode` |  | |  |  |
+| `CountryThreeDigitISOCode` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdCmplncLogsDocumentUUID` | `ProdCmplncLogsDocumentUUID` |
-| key `ProdCmplncLogsDocumentStage` | `ProdCmplncLogsDocumentStage` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `DepartureCountry` | `DepartureCountry` |
-| `DestinationCountry` | `DestinationCountry` |
-| `DngrsGoodsModeOfTransport` | `DngrsGoodsModeOfTransport` |
-| `_Document` | *Association* |
-| `_StageItem` | *Association* |
-| `_TransitCountry` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |
+| `ProdCmplncLogsDocumentStage` | ✓ | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `DepartureCountry` |  | |  |  |
+| `DestinationCountry` |  | |  |  |
+| `DngrsGoodsModeOfTransport` |  | |  |  |
+| `_Document` | | ✓ | | |
+| `_StageItem` | | ✓ | | |
+| `_TransitCountry` | | ✓ | | |
 
 ## Source Code
 

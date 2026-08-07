@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `Language` | `spras` |
-| key `JntOpgAgrmt` | `joa` |
-| `JntOpgAgrmtText` | `jtext` |
-| `JntOpgAgrmtLongText` | `ltext` |
-| `_Language` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `Language` | ✓ | |  | `spras` |
+| `JntOpgAgrmt` | ✓ | |  | `joa` |
+| `JntOpgAgrmtText` |  | |  | `jtext` |
+| `JntOpgAgrmtLongText` |  | |  | `ltext` |
+| `_Language` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Associations
 

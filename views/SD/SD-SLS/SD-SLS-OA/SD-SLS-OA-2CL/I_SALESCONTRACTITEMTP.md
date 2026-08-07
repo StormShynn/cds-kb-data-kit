@@ -32,38 +32,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContract` | `SalesContractItem.SalesContract` |
-| key `SalesContractItem` | `SalesContractItem.SalesContractItem` |
-| `SalesContractItemCategory` | `SalesContractItem.SalesContractItemCategory` |
-| `Product` | `SalesContractItem.Product` |
-| `ProductGroup` | `SalesContractItem.ProductGroup` |
-| `MaterialByCustomer` | `SalesContractItem.MaterialByCustomer` |
-| `PurchaseOrderByCustomer` | `SalesContractItem.PurchaseOrderByCustomer` |
-| `RequestedQuantity` | `SalesContractItem.RequestedQuantity` |
-| `RequestedQuantityUnit` | `SalesContractItem.RequestedQuantityUnit` |
-| `TargetQuantity` | `SalesContractItem.TargetQuantity` |
-| `TargetQuantityUnit` | `SalesContractItem.TargetQuantityUnit` |
-| `ItemGrossWeight` | `SalesContractItem.ItemGrossWeight` |
-| `ItemNetWeight` | `SalesContractItem.ItemNetWeight` |
-| `ItemWeightUnit` | `SalesContractItem.ItemWeightUnit` |
-| `ItemVolume` | `SalesContractItem.ItemVolume` |
-| `ItemVolumeUnit` | `SalesContractItem.ItemVolumeUnit` |
-| `Plant` | `SalesContractItem.Plant` |
-| `StorageLocation` | `SalesContractItem.StorageLocation` |
-| `MaterialPricingGroup` | `SalesContractItem.MaterialPricingGroup` |
-| `SDProcessStatus` | `SalesContractItem.SDProcessStatus` |
-| `NetAmount` | `SalesContractItem.NetAmount` |
-| `TransactionCurrency` | `SalesContractItem.TransactionCurrency` |
-| `SalesContractType` | `SalesContractItem.SalesContractType` |
-| `SalesOrganization` | `SalesContractItem.SalesOrganization` |
-| `DistributionChannel` | `SalesContractItem.DistributionChannel` |
-| `OrganizationDivision` | `SalesContractItem.OrganizationDivision` |
-| `_SalesContract` | *Association* |
-| `_ItemText` | *Association* |
-| `_ItemPricingElement` | *Association* |
-| `_ItemBillingPlan` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |
+| `SalesContractItem` | ✓ | |  |  |
+| `SalesContractItemCategory` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `RequestedQuantity` |  | |  |  |
+| `RequestedQuantityUnit` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetQuantityUnit` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `MaterialPricingGroup` |  | |  |  |
+| `SDProcessStatus` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `SalesContractType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesContract` | | ✓ | | |
+| `_ItemText` | | ✓ | | |
+| `_ItemPricingElement` | | ✓ | | |
+| `_ItemBillingPlan` | | ✓ | | |
 
 ## Source Code
 

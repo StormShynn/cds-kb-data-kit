@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationGroup` | `tragr` |
-| key `Language` | `spras` |
-| `TransportationGroupName` | `vtext` |
-| `_TransportationGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationGroup` | ✓ | |  | `tragr` |
+| `Language` | ✓ | |  | `spras` |
+| `TransportationGroupName` |  | |  | `vtext` |
+| `_TransportationGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

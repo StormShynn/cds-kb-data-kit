@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocItemCategory` | `itm_type` |
-| `ServiceObjectType` | `object_type` |
-| `ItemIsBillingRelevant` | `_ServiceDocItemTypeSlsSttg.ItemIsBillingRelevant` |
-| `StatusProfile` | `user_stat_proc` |
-| `SrvcMgmtPrtnDetnProcedure` | `part_determ_proc` |
-| `_ServiceDocItemCategoryText` | *Association* |
-| `_ServiceDocItemTypeSlsSttg` | *Association* |
-| `_SrvcMgmtPrtnDetnProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |
+| `ServiceObjectType` |  | |  | `object_type` |
+| `ItemIsBillingRelevant` |  | | `_ServiceDocItemTypeSlsSttg` | `ItemIsBillingRelevant` |
+| `StatusProfile` |  | |  | `user_stat_proc` |
+| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` |
+| `_ServiceDocItemCategoryText` | | ✓ | | |
+| `_ServiceDocItemTypeSlsSttg` | | ✓ | | |
+| `_SrvcMgmtPrtnDetnProcedure` | | ✓ | | |
 
 ## Associations
 

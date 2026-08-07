@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternalRealEstateNumber` | `intreno` |
-| `REStatusObject` | `objnr` |
-| `REContractSubjectDescription` | `cast (xcnsubject as vibdcnvdmxcnsubject preserving type )` |
-| `REContractSubjectNumber` | `cast (adjustnumber as vibdcnvdmsubjectobjnr preserving type )` |
-| `ExternalId` | `extid` |
-| `REAccountingObjectType` | `cast(substring(acctobjnr,1,2) as recaobjtype )` |
-| `REAccountingObject` | `cast(acctobjnr as rebdvdmacctobjnr preserving type )` |
-| `REContractSubjectType` | `cnsubjecttype` |
-| `REContractSubjectClass` | `cnsubjectclass` |
-| `_CostCenter` | *Association* |
-| `_WBSElement` | *Association* |
-| `_InternalOrder` | *Association* |
-| `_REContractSubjectClass` | *Association* |
-| `_REContractSubjectType` | *Association* |
-| `_REAccountingObject` | *Association* |
-| `_REContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  | `intreno` |
+| `REStatusObject` |  | |  | `objnr` |
+| `REContractSubjectDescription` |  | |  | `cast (xcnsubject as vibdcnvdmxcnsubject preserving type )` |
+| `REContractSubjectNumber` |  | |  | `cast (adjustnumber as vibdcnvdmsubjectobjnr preserving type )` |
+| `ExternalId` |  | |  | `extid` |
+| `REAccountingObjectType` |  | |  | `cast(substring(acctobjnr,1,2) as recaobjtype )` |
+| `REAccountingObject` |  | |  | `cast(acctobjnr as rebdvdmacctobjnr preserving type )` |
+| `REContractSubjectType` |  | |  | `cnsubjecttype` |
+| `REContractSubjectClass` |  | |  | `cnsubjectclass` |
+| `_CostCenter` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_InternalOrder` | | ✓ | | |
+| `_REContractSubjectClass` | | ✓ | | |
+| `_REContractSubjectType` | | ✓ | | |
+| `_REAccountingObject` | | ✓ | | |
+| `_REContract` | | ✓ | | |
 
 ## Associations
 

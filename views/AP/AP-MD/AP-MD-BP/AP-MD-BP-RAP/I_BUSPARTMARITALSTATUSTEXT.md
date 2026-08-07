@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `MaritalStatus` | `marst` |
-| `MaritalStatusName` | `bez20` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `MaritalStatus` | ✓ | |  | `marst` |
+| `MaritalStatusName` |  | |  | `bez20` |
 
 ## Source Code
 

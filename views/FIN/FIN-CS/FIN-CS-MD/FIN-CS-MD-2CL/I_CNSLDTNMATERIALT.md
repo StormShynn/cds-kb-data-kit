@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Source.Language` |
-| key `Material` | `cast(_Source.Material as fincs_material preserving type )` |
-| `AdditionalMasterDataSource` | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` | `cast(_Source.MaterialName as fincs_description_text_40 preserving type )` |
-| `MaterialName` | `cast(_Source.MaterialName as fincs_description_text_40 preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_Material` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |
+| `Material` | ✓ | |  | `cast(_Source.Material as fincs_material preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
+| `AdditionalMasterDataText` |  | |  | `cast(_Source.MaterialName as fincs_description_text_40 preserving type )` |
+| `MaterialName` |  | |  | `cast(_Source.MaterialName as fincs_description_text_40 preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_Material` | | ✓ | | |
 
 ## Associations
 

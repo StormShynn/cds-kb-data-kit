@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `BillingDocument` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `ContactPerson` | `ContactPerson` |
-| `ReferenceBusinessPartner` | `ReferenceBusinessPartner` |
-| `BusinessPartnerAddressUUID` | `BusinessPartnerAddressUUID` |
-| `_BillingDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `BusinessPartnerAddressUUID` |  | |  |  |
+| `_BillingDocument` | | ✓ | | |
 
 ## Source Code
 

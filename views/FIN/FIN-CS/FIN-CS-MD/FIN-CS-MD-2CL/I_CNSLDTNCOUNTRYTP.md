@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `_CnsldtnCountry.Country` |
-| `CnsldtnIsAdditionalMasterData` | `_CnsldtnCountry.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnCountryTextTP` | `_Text as _Text : redirected to composition child I_CnsldtnCountryTextTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | | `_CnsldtnCountry` | `Country` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnCountry` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnCountryTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnCountryTextTP` |
 
 ## Source Code
 

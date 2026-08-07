@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TextId` | `ttxid.tdid` |
-| `Description` | `ttxit.tdtext` |
-| `TextObject` | `ttxid.tdobject` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TextId` | ✓ | |  | `tdid` |
+| `Description` |  | |  | `tdtext` |
+| `TextObject` |  | |  | `tdobject` |
 
 ## Source Code
 

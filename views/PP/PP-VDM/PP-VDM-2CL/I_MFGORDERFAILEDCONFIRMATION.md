@@ -27,134 +27,134 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfirmationApplicationOrigin` | `afrv.ConfirmationApplicationOrigin` |
-| key `FailedOrderConfirmationGroup` | `afrv.FailedOrderConfirmationGroup` |
-| key `FailedOrderConfirmation` | `afrv.FailedOrderConfirmation` |
-| `FailedOrderConfirmationText` | `afrv.FailedOrderConfirmationText` |
-| `ConfirmationEntryDate` | `afrv.ConfirmationEntryDate` |
-| `ConfirmationEntryTime` | `afrv.ConfirmationEntryTime` |
-| `ConfirmationExternalEntryDate` | `afrv.ConfirmationExternalEntryDate` |
-| `ConfirmationExternalEntryTime` | `afrv.ConfirmationExternalEntryTime` |
-| `EnteredByExternalUser` | `afrv.EnteredByExternalUser` |
-| `OpenReservationsIsCleared` | `afrv.OpenReservationsIsCleared` |
-| `IsFinalConfirmation` | `afrv.IsFinalConfirmation` |
-| `FinalConfirmationType` | `afrv.FinalConfirmationType` |
-| `OrderConfirmationRecordType` | `afrv.OrderConfirmationRecordType` |
-| `SequentialPlantDataCollection` | `afrv.SequentialPlantDataCollection` |
-| `ConfirmationGroup` | `afrv.ConfirmationGroup` |
-| `ConfirmationCount` | `afrv.ConfirmationCount` |
-| `ManufacturingOrderCategory` | `afrv.OrderCategory` |
-| `ManufacturingOrder` | `afrv.OrderID` |
-| `ManufacturingOrderSequence` | `afrv.Sequence` |
-| `ManufacturingOrderOperation` | `afrv.Operation` |
-| `Plant` | `afrv.Plant` |
-| `WorkCenter` | `afrv.WorkCenter` |
-| `CapacityCategory` | `afrv.CapacityCategory` |
-| `CapacityRequirementSplit` | `afrv.CapacityRequirementSplit` |
-| `TimeSheetAccountingDocument` | `afrv.TimeSheetAccountingDocument` |
-| `BusinessArea` | `afrv.BusinessArea` |
-| `CompanyCode` | `afrv.CompanyCode` |
-| `ControllingArea` | `afrv.ControllingArea` |
-| `CostCenter` | `afrv.CostCenter` |
-| `CostObject` | `afrv.CostObject` |
-| `FundsCenter` | `afrv.FundsCenter` |
-| `Fund` | `afrv.Fund` |
-| `Personnel` | `afrv.Personnel` |
-| `TimeRecording` | `afrv.TimeRecording` |
-| `EmployeeWageType` | `afrv.EmployeeWageType` |
-| `EmployeeWageGroup` | `afrv.EmployeeWageGroup` |
-| `EmployeeSuitability` | `afrv.EmployeeSuitability` |
-| `NumberOfEmployees` | `afrv.NumberOfEmployees` |
-| `PostingDate` | `afrv.PostingDate` |
-| `PostingDateYear` | `afrv.PostingDateYear` |
-| `ConfirmedExecutionStartDate` | `afrv.ConfirmedExecutionStartDate` |
-| `ConfirmedExecutionStartTime` | `afrv.ConfirmedExecutionStartTime` |
-| `ConfirmedSetupEndDate` | `afrv.ConfirmedSetupEndDate` |
-| `ConfirmedSetupEndTime` | `afrv.ConfirmedSetupEndTime` |
-| `ConfirmedProcessingStartDate` | `afrv.ConfirmedProcessingStartDate` |
-| `ConfirmedProcessingStartTime` | `afrv.ConfirmedProcessingStartTime` |
-| `ConfirmedProcessingEndDate` | `afrv.ConfirmedProcessingEndDate` |
-| `ConfirmedProcessingEndTime` | `afrv.ConfirmedProcessingEndTime` |
-| `ConfirmedTeardownStartDate` | `afrv.ConfirmedTeardownStartDate` |
-| `ConfirmedTeardownStartTime` | `afrv.ConfirmedTeardownStartTime` |
-| `ConfirmedExecutionEndDate` | `afrv.ConfirmedExecutionEndDate` |
-| `ConfirmedExecutionEndTime` | `afrv.ConfirmedExecutionEndTime` |
-| `ActualForecastEndDate` | `afrv.ActualForecastEndDate` |
-| `ActualForecastEndTime` | `afrv.ActualForecastEndTime` |
-| `ConfirmationUnit` | `afrv.ConfirmationUnit` |
-| `ConfirmationYieldQuantity` | `afrv.ConfirmationYieldQuantity` |
-| `ConfirmationScrapQuantity` | `afrv.ConfirmationScrapQuantity` |
-| `ConfirmationReworkQuantity` | `afrv.ConfirmationReworkQuantity` |
-| `ConfirmationTotalQuantity` | `afrv.ConfirmationTotalQuantity` |
-| `VarianceReasonCode` | `afrv.VarianceReasonCode` |
-| `OpWorkQuantityUnit1` | `afrv.OpWorkQuantityUnit1` |
-| `OpConfirmedWorkQuantity1` | `afrv.OpConfirmedWorkQuantity1` |
-| `NoFurtherOpWorkQuantity1IsExpd` | `afrv.NoFurtherOpWorkQuantity1IsExpd` |
-| `OpWorkQuantityUnit2` | `afrv.OpWorkQuantityUnit2` |
-| `OpConfirmedWorkQuantity2` | `afrv.OpConfirmedWorkQuantity2` |
-| `NoFurtherOpWorkQuantity2IsExpd` | `afrv.NoFurtherOpWorkQuantity2IsExpd` |
-| `OpWorkQuantityUnit3` | `afrv.OpWorkQuantityUnit3` |
-| `OpConfirmedWorkQuantity3` | `afrv.OpConfirmedWorkQuantity3` |
-| `NoFurtherOpWorkQuantity3IsExpd` | `afrv.NoFurtherOpWorkQuantity3IsExpd` |
-| `OpWorkQuantityUnit4` | `afrv.OpWorkQuantityUnit4` |
-| `OpConfirmedWorkQuantity4` | `afrv.OpConfirmedWorkQuantity4` |
-| `NoFurtherOpWorkQuantity4IsExpd` | `afrv.NoFurtherOpWorkQuantity4IsExpd` |
-| `OpWorkQuantityUnit5` | `afrv.OpWorkQuantityUnit5` |
-| `OpConfirmedWorkQuantity5` | `afrv.OpConfirmedWorkQuantity5` |
-| `NoFurtherOpWorkQuantity5IsExpd` | `afrv.NoFurtherOpWorkQuantity5IsExpd` |
-| `OpWorkQuantityUnit6` | `afrv.OpWorkQuantityUnit6` |
-| `OpConfirmedWorkQuantity6` | `afrv.OpConfirmedWorkQuantity6` |
-| `NoFurtherOpWorkQuantity6IsExpd` | `afrv.NoFurtherOpWorkQuantity6IsExpd` |
-| `BusinessProcess` | `afrv.BusinessProcess` |
-| `BusinessProcessEntryUnit` | `afrv.BusinessProcessEntryUnit` |
-| `BusinessProcessConfirmedQty` | `afrv.BusinessProcessConfirmedQty` |
-| `NoFurtherBusinessProcQtyIsExpd` | `afrv.NoFurtherBusinessProcQtyIsExpd` |
-| `BusinessProcRemainingQtyUnit` | `afrv.BusinessProcRemainingQtyUnit` |
-| `BusinessProcessRemainingQty` | `afrv.BusinessProcessRemainingQty` |
-| `ActualDurationUnit` | `afrv.ActualDurationUnit` |
-| `ActualDuration` | `afrv.ActualDuration` |
-| `BreakDurationUnit` | `afrv.BreakDurationUnit` |
-| `ConfirmedBreakDuration` | `afrv.ConfirmedBreakDuration` |
-| `_ManufacturingOrderCategory` | *Association* |
-| `_ManufacturingOrder` | *Association* |
-| `_ManufacturingOrderSequence` | *Association* |
-| `_ManufacturingOrderOperation` | *Association* |
-| `_FailedConfirmationLog` | *Association* |
-| `_FailedOrderConfirmationGroup` | *Association* |
-| `_ConfirmationApplOrigin` | *Association* |
-| `_ConfirmationRecordType` | *Association* |
-| `_FinalConfirmationType` | *Association* |
-| `_ConfirmationGroup` | *Association* |
-| `_ConfirmationCount` | *Association* |
-| `_Plant` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_CapacityCategory` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CostCenter` | *Association* |
-| `_FundsCenter` | *Association* |
-| `_Fund` | *Association* |
-| `_BusinessProcess` | *Association* |
-| `_BusinessProcessUnit` | *Association* |
-| `_ConfirmationUnit` | *Association* |
-| `_WorkQuantityUnit1` | *Association* |
-| `_WorkQuantityUnit2` | *Association* |
-| `_WorkQuantityUnit3` | *Association* |
-| `_WorkQuantityUnit4` | *Association* |
-| `_WorkQuantityUnit5` | *Association* |
-| `_WorkQuantityUnit6` | *Association* |
-| `_ActualDurationUnit` | *Association* |
-| `_BreakDurationUnit` | *Association* |
-| `_VarianceReason` | *Association* |
-| `_EmployeeWageGroup` | *Association* |
-| `_EmployeeSuitability` | *Association* |
-| `_Employee` | *Association* |
-| `_PersonWorkAgreement` | *Association* |
-| `_PostingDate` | *Association* |
-| `_PostingDateYear` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfirmationApplicationOrigin` | ✓ | |  |  |
+| `FailedOrderConfirmationGroup` | ✓ | |  |  |
+| `FailedOrderConfirmation` | ✓ | |  |  |
+| `FailedOrderConfirmationText` |  | |  |  |
+| `ConfirmationEntryDate` |  | |  |  |
+| `ConfirmationEntryTime` |  | |  |  |
+| `ConfirmationExternalEntryDate` |  | |  |  |
+| `ConfirmationExternalEntryTime` |  | |  |  |
+| `EnteredByExternalUser` |  | |  |  |
+| `OpenReservationsIsCleared` |  | |  |  |
+| `IsFinalConfirmation` |  | |  |  |
+| `FinalConfirmationType` |  | |  |  |
+| `OrderConfirmationRecordType` |  | |  |  |
+| `SequentialPlantDataCollection` |  | |  |  |
+| `ConfirmationGroup` |  | |  |  |
+| `ConfirmationCount` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  | `OrderCategory` |
+| `ManufacturingOrder` |  | |  | `OrderID` |
+| `ManufacturingOrderSequence` |  | |  | `Sequence` |
+| `ManufacturingOrderOperation` |  | |  | `Operation` |
+| `Plant` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `CapacityCategory` |  | |  |  |
+| `CapacityRequirementSplit` |  | |  |  |
+| `TimeSheetAccountingDocument` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `Fund` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `TimeRecording` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `EmployeeSuitability` |  | |  |  |
+| `NumberOfEmployees` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `PostingDateYear` |  | |  |  |
+| `ConfirmedExecutionStartDate` |  | |  |  |
+| `ConfirmedExecutionStartTime` |  | |  |  |
+| `ConfirmedSetupEndDate` |  | |  |  |
+| `ConfirmedSetupEndTime` |  | |  |  |
+| `ConfirmedProcessingStartDate` |  | |  |  |
+| `ConfirmedProcessingStartTime` |  | |  |  |
+| `ConfirmedProcessingEndDate` |  | |  |  |
+| `ConfirmedProcessingEndTime` |  | |  |  |
+| `ConfirmedTeardownStartDate` |  | |  |  |
+| `ConfirmedTeardownStartTime` |  | |  |  |
+| `ConfirmedExecutionEndDate` |  | |  |  |
+| `ConfirmedExecutionEndTime` |  | |  |  |
+| `ActualForecastEndDate` |  | |  |  |
+| `ActualForecastEndTime` |  | |  |  |
+| `ConfirmationUnit` |  | |  |  |
+| `ConfirmationYieldQuantity` |  | |  |  |
+| `ConfirmationScrapQuantity` |  | |  |  |
+| `ConfirmationReworkQuantity` |  | |  |  |
+| `ConfirmationTotalQuantity` |  | |  |  |
+| `VarianceReasonCode` |  | |  |  |
+| `OpWorkQuantityUnit1` |  | |  |  |
+| `OpConfirmedWorkQuantity1` |  | |  |  |
+| `NoFurtherOpWorkQuantity1IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit2` |  | |  |  |
+| `OpConfirmedWorkQuantity2` |  | |  |  |
+| `NoFurtherOpWorkQuantity2IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit3` |  | |  |  |
+| `OpConfirmedWorkQuantity3` |  | |  |  |
+| `NoFurtherOpWorkQuantity3IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit4` |  | |  |  |
+| `OpConfirmedWorkQuantity4` |  | |  |  |
+| `NoFurtherOpWorkQuantity4IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit5` |  | |  |  |
+| `OpConfirmedWorkQuantity5` |  | |  |  |
+| `NoFurtherOpWorkQuantity5IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit6` |  | |  |  |
+| `OpConfirmedWorkQuantity6` |  | |  |  |
+| `NoFurtherOpWorkQuantity6IsExpd` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `BusinessProcessEntryUnit` |  | |  |  |
+| `BusinessProcessConfirmedQty` |  | |  |  |
+| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |
+| `BusinessProcRemainingQtyUnit` |  | |  |  |
+| `BusinessProcessRemainingQty` |  | |  |  |
+| `ActualDurationUnit` |  | |  |  |
+| `ActualDuration` |  | |  |  |
+| `BreakDurationUnit` |  | |  |  |
+| `ConfirmedBreakDuration` |  | |  |  |
+| `_ManufacturingOrderCategory` | | ✓ | | |
+| `_ManufacturingOrder` | | ✓ | | |
+| `_ManufacturingOrderSequence` | | ✓ | | |
+| `_ManufacturingOrderOperation` | | ✓ | | |
+| `_FailedConfirmationLog` | | ✓ | | |
+| `_FailedOrderConfirmationGroup` | | ✓ | | |
+| `_ConfirmationApplOrigin` | | ✓ | | |
+| `_ConfirmationRecordType` | | ✓ | | |
+| `_FinalConfirmationType` | | ✓ | | |
+| `_ConfirmationGroup` | | ✓ | | |
+| `_ConfirmationCount` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_CapacityCategory` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_FundsCenter` | | ✓ | | |
+| `_Fund` | | ✓ | | |
+| `_BusinessProcess` | | ✓ | | |
+| `_BusinessProcessUnit` | | ✓ | | |
+| `_ConfirmationUnit` | | ✓ | | |
+| `_WorkQuantityUnit1` | | ✓ | | |
+| `_WorkQuantityUnit2` | | ✓ | | |
+| `_WorkQuantityUnit3` | | ✓ | | |
+| `_WorkQuantityUnit4` | | ✓ | | |
+| `_WorkQuantityUnit5` | | ✓ | | |
+| `_WorkQuantityUnit6` | | ✓ | | |
+| `_ActualDurationUnit` | | ✓ | | |
+| `_BreakDurationUnit` | | ✓ | | |
+| `_VarianceReason` | | ✓ | | |
+| `_EmployeeWageGroup` | | ✓ | | |
+| `_EmployeeSuitability` | | ✓ | | |
+| `_Employee` | | ✓ | | |
+| `_PersonWorkAgreement` | | ✓ | | |
+| `_PostingDate` | | ✓ | | |
+| `_PostingDateYear` | | ✓ | | |
 
 ## Associations
 

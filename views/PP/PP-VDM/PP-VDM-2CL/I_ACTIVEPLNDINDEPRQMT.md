@@ -27,27 +27,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlndIndepRqmtInternalID` | `pbim.PlndIndepRqmtInternalID` |
-| `PlndIndepRqmtVersion` | `pbim.PlndIndepRqmtVersion` |
-| `Product` | `pbim.Product` |
-| `Plant` | `pbim.Plant` |
-| `MRPArea` | `pbim.MRPArea` |
-| `PlndIndepRqmtType` | `pbim.PlndIndepRqmtType` |
-| `RequirementPlan` | `pbim.RequirementPlan` |
-| `ExternalRequirementPlan` | `pbim.ExternalRequirementPlan` |
-| `RequirementSegment` | `pbim.RequirementSegment` |
-| `SalesOrder` | `pbim.SalesOrder` |
-| `SalesOrderItem` | `pbim.SalesOrderItem` |
-| `WBSElementInternalID` | `pbim.WBSElementInternalID` |
-| `WBSElementInternalID_2` | `pbim.WBSElementInternalID_2` |
-| `InventorySpecialStockType` | `pbim.InventorySpecialStockType` |
-| `InventorySpecialStockValnType` | `pbim.InventorySpecialStockValnType` |
-| `ConsumptionPosting` | `pbim.ConsumptionPosting` |
-| `AccountAssignmentCategory` | `pbim.AccountAssignmentCategory` |
-| `PlndIndepRqmtLastChgdDateTime` | `pbim.PlndIndepRqmtLastChgdDateTime` |
-| `_ActivePlndIndepRqmtItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlndIndepRqmtInternalID` | ✓ | |  |  |
+| `PlndIndepRqmtVersion` |  | |  |  |
+| `Product` |  | |  |  |
+| `Plant` |  | |  |  |
+| `MRPArea` |  | |  |  |
+| `PlndIndepRqmtType` |  | |  |  |
+| `RequirementPlan` |  | |  |  |
+| `ExternalRequirementPlan` |  | |  |  |
+| `RequirementSegment` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementInternalID_2` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `PlndIndepRqmtLastChgdDateTime` |  | |  |  |
+| `_ActivePlndIndepRqmtItem` | | ✓ | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IT_ElectronicDocRejectionCode` | `cast(domvalue_l as edoc_it_reject_code)` |
-| key `Language` | `ddlanguage` |
-| `IT_ElectronicDocRejectCodeText` | `ddtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IT_ElectronicDocRejectionCode` | ✓ | |  | `cast(domvalue_l as edoc_it_reject_code)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `IT_ElectronicDocRejectCodeText` |  | |  | `ddtext` |
 
 ## Source Code
 

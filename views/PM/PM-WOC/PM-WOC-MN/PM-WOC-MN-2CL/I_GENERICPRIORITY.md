@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GenericPriorityType` | `t356.artpr` |
-| key `PriorityCode` | `t356.priok` |
-| `GenericStartDateShiftFactor` | `t356.tagbn` |
-| `GenericStrtDateShiftFactorUnit` | `t356.ehtbg` |
-| `GenericEndDateShiftFactor` | `t356.tagen` |
-| `GenericEndDateShiftFactorUnit` | `t356.ehten` |
-| `GenericPriorityColorCode` | `t356.priocc` |
-| `LtstAcceptableCompltnDteFactor` | `t356.lacd_unit` |
-| `LtstAcceptableCompltnDteUoM` | `t356.lacd_uom` |
-| `_GenericPriorityType` | *Association* |
-| `_GenericPriorityText` | *Association* |
-| `_GenericStrtDateShiftFctrUnit` | *Association* |
-| `_GenericEndDateShiftFactorUnit` | *Association* |
-| `_LtstAcceptableCompltnDteUoM` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GenericPriorityType` | ✓ | |  | `artpr` |
+| `PriorityCode` | ✓ | |  | `priok` |
+| `GenericStartDateShiftFactor` |  | |  | `tagbn` |
+| `GenericStrtDateShiftFactorUnit` |  | |  | `ehtbg` |
+| `GenericEndDateShiftFactor` |  | |  | `tagen` |
+| `GenericEndDateShiftFactorUnit` |  | |  | `ehten` |
+| `GenericPriorityColorCode` |  | |  | `priocc` |
+| `LtstAcceptableCompltnDteFactor` |  | |  | `lacd_unit` |
+| `LtstAcceptableCompltnDteUoM` |  | |  | `lacd_uom` |
+| `_GenericPriorityType` | | ✓ | | |
+| `_GenericPriorityText` | | ✓ | | |
+| `_GenericStrtDateShiftFctrUnit` | | ✓ | | |
+| `_GenericEndDateShiftFactorUnit` | | ✓ | | |
+| `_LtstAcceptableCompltnDteUoM` | | ✓ | | |
 
 ## Associations
 

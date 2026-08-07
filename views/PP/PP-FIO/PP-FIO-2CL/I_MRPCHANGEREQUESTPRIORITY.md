@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPRequestPriority` | `prioritycode` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPRequestPriority` | ✓ | |  | `prioritycode` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

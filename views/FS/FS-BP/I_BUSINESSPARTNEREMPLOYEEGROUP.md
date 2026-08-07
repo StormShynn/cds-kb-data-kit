@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerEmployeeGroup` | `tp05.staff_grp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerEmployeeGroup` | ✓ | |  | `staff_grp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

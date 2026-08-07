@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceInboundEntryType` | `cast( dd07l.domvalue_l as invoice_inbound_entry_type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceInboundEntryType` | ✓ | |  | `cast( dd07l.domvalue_l as invoice_inbound_entry_type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

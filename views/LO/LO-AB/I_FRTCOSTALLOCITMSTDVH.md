@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FreightCostAllocationDocument` | `FreightCostAllocationDocument` |
-| key `FrtCostAllocDocumentItem` | `FrtCostAllocDocumentItem` |
-| `_FrtCostAllocDoc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FreightCostAllocationDocument` | ✓ | |  |  |
+| `FrtCostAllocDocumentItem` | ✓ | |  |  |
+| `_FrtCostAllocDoc` | | ✓ | | |
 
 ## Source Code
 

@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CashPoolAssignment` | `CashPoolAssignment` |
-| `CashPoolAssignmentText` | `CashPoolAssignmentText` |
-| `CashPool` | `CashPool` |
-| `CashPoolAssgmtIsHeadBkAcct` | `CashPoolAssgmtIsHeadBkAcct` |
-| `CashPoolAssgmtIsDeleted` | `CashPoolAssgmtIsDeleted` |
-| `CashPoolAssgmtValdtyStrtDte` | `CashPoolAssgmtValdtyStrtDte` |
-| `CashPoolAssgmtValdtyEndDte` | `CashPoolAssgmtValdtyEndDte` |
-| `BankAccountInternalID` | `BankAccountInternalID` |
-| `PaymentMethod` | `PaymentMethod` |
-| `TargetBalanceAmount` | `TargetBalanceAmount` |
-| `MinTransferAmount` | `MinTransferAmount` |
-| `MaxTransferAmount` | `MaxTransferAmount` |
-| `Note` | `Note` |
-| `CreatedByUser` | `CashPoolCreatedByUser` |
-| `LastChangedByUser` | `CashPoolLastChangedByUser` |
-| `CreationDateTime` | `CashPoolCreationDateTime` |
-| `LocalLastChangeDateTime` | `CashPoolLastChangeDateTime` |
-| `BankAccountCurrency` | `_BankAccount.BankAccountCurrency` |
-| `_BankAccount` | *Association* |
-| `_IsDeletedText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CashPoolAssignment` | ✓ | |  |  |
+| `CashPoolAssignmentText` |  | |  |  |
+| `CashPool` |  | |  |  |
+| `CashPoolAssgmtIsHeadBkAcct` |  | |  |  |
+| `CashPoolAssgmtIsDeleted` |  | |  |  |
+| `CashPoolAssgmtValdtyStrtDte` |  | |  |  |
+| `CashPoolAssgmtValdtyEndDte` |  | |  |  |
+| `BankAccountInternalID` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `TargetBalanceAmount` |  | |  |  |
+| `MinTransferAmount` |  | |  |  |
+| `MaxTransferAmount` |  | |  |  |
+| `Note` |  | |  |  |
+| `CreatedByUser` |  | |  | `CashPoolCreatedByUser` |
+| `LastChangedByUser` |  | |  | `CashPoolLastChangedByUser` |
+| `CreationDateTime` |  | |  | `CashPoolCreationDateTime` |
+| `LocalLastChangeDateTime` |  | |  | `CashPoolLastChangeDateTime` |
+| `BankAccountCurrency` |  | | `_BankAccount` | `BankAccountCurrency` |
+| `_BankAccount` | | ✓ | | |
+| `_IsDeletedText` | | ✓ | | |
 
 ## Source Code
 

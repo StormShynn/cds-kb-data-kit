@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SecurityClassPositionUUID` | `SecurityClassPos.os_guid` |
-| `CompanyCode` | `SecurityClassPos.company_code` |
-| `SecurityAccount` | `SecurityClassPos.security_account` |
-| `SecurityClass` | `SecurityClassPos.security_id` |
-| `Portfolio` | `SecurityClassPos.portfolio` |
-| `TreasuryFinancialObject` | `SecurityClassPos.objnr` |
-| `_SecurityClass` | *Association* |
-| `_SecurityAccount` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_TreasuryPortfolio` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SecurityClassPositionUUID` | ✓ | |  | `os_guid` |
+| `CompanyCode` |  | |  | `company_code` |
+| `SecurityAccount` |  | |  | `security_account` |
+| `SecurityClass` |  | |  | `security_id` |
+| `Portfolio` |  | |  | `portfolio` |
+| `TreasuryFinancialObject` |  | |  | `objnr` |
+| `_SecurityClass` | | ✓ | | |
+| `_SecurityAccount` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_TreasuryPortfolio` | | ✓ | | |
 
 ## Associations
 

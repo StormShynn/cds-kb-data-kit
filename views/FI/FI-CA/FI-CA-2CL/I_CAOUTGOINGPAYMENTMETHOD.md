@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `Country` |
-| key `CAOutgoingPaymentMethod` | `CAPaymentMethod` |
-| `BankDetailsOfBPAreRequired` | `BankDetailsOfBPAreRequired` |
-| `AddressDetailsAreRequired` | `AddressDetailsAreRequired` |
-| `IsPaytMethForIncomingPayments` | `IsPaytMethForIncomingPayments` |
-| `CAIsPaytMethForPostOffcBkAcct` | `CAIsPaytMethForPostOffcBkAcct` |
-| `ChequeIsCreatedWithPaytMeth` | `ChequeIsCreatedWithPaytMeth` |
-| `IsPaytMethForEUInternalTransf` | `IsPaytMethForEUInternalTransf` |
-| `CAPaymentMethodProcessingType` | `CAPaymentMethodProcessingType` |
-| `CAPaymentMediumFormat` | `CAPaymentMediumFormat` |
-| `CAPaytMediumFormatSupplement` | `CAPaytMediumFormatSupplement` |
-| `CAPaymentOrderIsCreated` | `CAPaymentOrderIsCreated` |
-| `CAPaytMethForBillerDirect` | `CAPaytMethForBillerDirect` |
-| `CAIsPaytSlipWithRefNmbrProced` | `CAIsPaytSlipWithRefNmbrProced` |
-| `CAPaytMethAddressIsNotRequired` | `CAPaytMethAddressIsNotRequired` |
-| `BR_CABoletoAssignmentType` | `BR_CABoletoAssignmentType` |
-| `CAPaymentMethodNotificationCat` | `CAPaymentMethodNotificationCat` |
-| `ContrAcctgIBANOrSWIFTRqmtCode` | `ContrAcctgIBANOrSWIFTRqmtCode` |
-| `CASEPAMandateIsRequired` | `CASEPAMandateIsRequired` |
-| `CASEPAPrenotificationIsCreated` | `CASEPAPrenotificationIsCreated` |
-| `CARealTimePaymentCategory` | `CARealTimePaymentCategory` |
-| `_Country` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  |  |
+| `CAOutgoingPaymentMethod` | ✓ | |  | `CAPaymentMethod` |
+| `BankDetailsOfBPAreRequired` |  | |  |  |
+| `AddressDetailsAreRequired` |  | |  |  |
+| `IsPaytMethForIncomingPayments` |  | |  |  |
+| `CAIsPaytMethForPostOffcBkAcct` |  | |  |  |
+| `ChequeIsCreatedWithPaytMeth` |  | |  |  |
+| `IsPaytMethForEUInternalTransf` |  | |  |  |
+| `CAPaymentMethodProcessingType` |  | |  |  |
+| `CAPaymentMediumFormat` |  | |  |  |
+| `CAPaytMediumFormatSupplement` |  | |  |  |
+| `CAPaymentOrderIsCreated` |  | |  |  |
+| `CAPaytMethForBillerDirect` |  | |  |  |
+| `CAIsPaytSlipWithRefNmbrProced` |  | |  |  |
+| `CAPaytMethAddressIsNotRequired` |  | |  |  |
+| `BR_CABoletoAssignmentType` |  | |  |  |
+| `CAPaymentMethodNotificationCat` |  | |  |  |
+| `ContrAcctgIBANOrSWIFTRqmtCode` |  | |  |  |
+| `CASEPAMandateIsRequired` |  | |  |  |
+| `CASEPAPrenotificationIsCreated` |  | |  |  |
+| `CARealTimePaymentCategory` |  | |  |  |
+| `_Country` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

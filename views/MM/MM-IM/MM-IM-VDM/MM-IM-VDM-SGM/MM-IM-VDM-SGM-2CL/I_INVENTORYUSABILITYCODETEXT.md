@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventoryUsabilityCode` | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as insmk )` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `InventoryUsabilityCodeName` | `cast ( ddtext as pi_usability_code_text preserving type )` |
-| `_InventoryUsabilityCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryUsabilityCode` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as insmk )` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `InventoryUsabilityCodeName` |  | |  | `cast ( ddtext as pi_usability_code_text preserving type )` |
+| `_InventoryUsabilityCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,46 +29,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `PurchaseOrderScheduleLine` | `PurchaseOrderScheduleLine` |
-| `PerformancePeriodStartDate` | `PerformancePeriodStartDate` |
-| `PerformancePeriodEndDate` | `PerformancePeriodEndDate` |
-| `DelivDateCategory` | `DelivDateCategory` |
-| `ScheduleLineDeliveryDate` | `ScheduleLineDeliveryDate` |
-| `SchedLineStscDeliveryDate` | `SchedLineStscDeliveryDate` |
-| `ScheduleLineDeliveryTime` | `ScheduleLineDeliveryTime` |
-| `ScheduleLineOrderQuantity` | `ScheduleLineOrderQuantity` |
-| `RoughGoodsReceiptQty` | `RoughGoodsReceiptQty` |
-| `PurchaseOrderQuantityUnit` | `PurchaseOrderQuantityUnit` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `SourceOfCreation` | `SourceOfCreation` |
-| `PrevDelivQtyOfScheduleLine` | `PrevDelivQtyOfScheduleLine` |
-| `NoOfRemindersOfScheduleLine` | `NoOfRemindersOfScheduleLine` |
-| `ScheduleLineIsFixed` | `ScheduleLineIsFixed` |
-| `ScheduleLineCommittedQuantity` | `ScheduleLineCommittedQuantity` |
-| `Reservation` | `Reservation` |
-| `ProductAvailabilityDate` | `ProductAvailabilityDate` |
-| `MaterialStagingTime` | `MaterialStagingTime` |
-| `TransportationPlanningDate` | `TransportationPlanningDate` |
-| `TransportationPlanningTime` | `TransportationPlanningTime` |
-| `LoadingDate` | `LoadingDate` |
-| `LoadingTime` | `LoadingTime` |
-| `GoodsIssueDate` | `GoodsIssueDate` |
-| `GoodsIssueTime` | `GoodsIssueTime` |
-| `STOLatestPossibleGRDate` | `STOLatestPossibleGRDate` |
-| `STOLatestPossibleGRTime` | `STOLatestPossibleGRTime` |
-| `StockTransferDeliveredQuantity` | `StockTransferDeliveredQuantity` |
-| `ScheduleLineIssuedQuantity` | `ScheduleLineIssuedQuantity` |
-| `MRPRelevantQuantity` | `MRPRelevantQuantity` |
-| `Batch` | `Batch` |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
-| `_SubcontractingComponent` | *Association* |
-| `_PurchaseOrderQuantityUnitText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `PurchaseOrderScheduleLine` | ✓ | |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `SourceOfCreation` |  | |  |  |
+| `PrevDelivQtyOfScheduleLine` |  | |  |  |
+| `NoOfRemindersOfScheduleLine` |  | |  |  |
+| `ScheduleLineIsFixed` |  | |  |  |
+| `ScheduleLineCommittedQuantity` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `ProductAvailabilityDate` |  | |  |  |
+| `MaterialStagingTime` |  | |  |  |
+| `TransportationPlanningDate` |  | |  |  |
+| `TransportationPlanningTime` |  | |  |  |
+| `LoadingDate` |  | |  |  |
+| `LoadingTime` |  | |  |  |
+| `GoodsIssueDate` |  | |  |  |
+| `GoodsIssueTime` |  | |  |  |
+| `STOLatestPossibleGRDate` |  | |  |  |
+| `STOLatestPossibleGRTime` |  | |  |  |
+| `StockTransferDeliveredQuantity` |  | |  |  |
+| `ScheduleLineIssuedQuantity` |  | |  |  |
+| `MRPRelevantQuantity` |  | |  |  |
+| `Batch` |  | |  |  |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
+| `_SubcontractingComponent` | | ✓ | | |
+| `_PurchaseOrderQuantityUnitText` | | ✓ | | |
 
 ## Associations
 

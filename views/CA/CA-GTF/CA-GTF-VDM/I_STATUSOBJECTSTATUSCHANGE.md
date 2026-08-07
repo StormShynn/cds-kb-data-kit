@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StatusObject` | `objnr` |
-| key `StatusCode` | `stat` |
-| key `StatusObjectStatusChangeNumber` | `chgnr` |
-| `LastChangedByUser` | `usnam` |
-| `LastChangeDate` | `udate` |
-| `LastChangeTime` | `utime` |
-| `ChangeTransactionCode` | `cdtcode` |
-| `StatusIsInactive` | `inact` |
-| `StatusChangeOperationCode` | `chind` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatusObject` | ✓ | |  | `objnr` |
+| `StatusCode` | ✓ | |  | `stat` |
+| `StatusObjectStatusChangeNumber` | ✓ | |  | `chgnr` |
+| `LastChangedByUser` |  | |  | `usnam` |
+| `LastChangeDate` |  | |  | `udate` |
+| `LastChangeTime` |  | |  | `utime` |
+| `ChangeTransactionCode` |  | |  | `cdtcode` |
+| `StatusIsInactive` |  | |  | `inact` |
+| `StatusChangeOperationCode` |  | |  | `chind` |
 
 ## Source Code
 

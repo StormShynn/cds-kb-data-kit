@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationDocTypeHierarchy` | `cast(_Hierarchy.hryid as fincs_doctypehierarchy preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.hryvalto` |
-| `ValidityStartDate` | `_Hierarchy.hryvalfrom` |
-| `LastChangedByUser` | `cast(_Hierarchy.upduser as fincs_lastchangedbyuser preserving type )` |
-| `LastChangeDateTime` | `cast(_Hierarchy.updtime as fincs_lastchangedatetime preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationDocTypeHierarchy` | ✓ | |  | `cast(_Hierarchy.hryid as fincs_doctypehierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `hryvalto` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `hryvalfrom` |
+| `LastChangedByUser` |  | |  | `cast(_Hierarchy.upduser as fincs_lastchangedbyuser preserving type )` |
+| `LastChangeDateTime` |  | |  | `cast(_Hierarchy.updtime as fincs_lastchangedatetime preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkforcePersonExternalID` | `WorkforcePersonExternalID` |
-| `BusinessPartner` | `BusinessPartner` |
-| `WorkforcePersonExternalUUID` | `WorkforcePersonExternalUUID` |
-| `FullName` | `FullName` |
-| `FirstName` | `FirstName` |
-| `MiddleName` | `MiddleName` |
-| `BirthName` | `BirthName` |
-| `LastName` | `LastName` |
-| `AdditionalLastName` | `AdditionalLastName` |
-| `Initials` | `Initials` |
-| `LastNamePrefix` | `LastNamePrefix` |
-| `LastNameSecondPrefix` | `LastNameSecondPrefix` |
-| `AcademicTitle` | `AcademicTitle` |
-| `AcademicTitle2` | `AcademicTitle2` |
-| `NativePreferredLanguage` | `NativePreferredLanguage` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `I_WorkAssignmentTP_1` | `WorkforcePerson._WorkAssignment : redirected to composition child I_WorkAssignmentTP_1` |
-| `I_WorkforcePersonSkillTagTP_1` | `WorkforcePerson._WorkforcePersonSkillTags : redirected to composition child I_WorkforcePersonSkillTagTP_1` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `WorkforcePersonExternalUUID` |  | |  |  |
+| `FullName` |  | |  |  |
+| `FirstName` |  | |  |  |
+| `MiddleName` |  | |  |  |
+| `BirthName` |  | |  |  |
+| `LastName` |  | |  |  |
+| `AdditionalLastName` |  | |  |  |
+| `Initials` |  | |  |  |
+| `LastNamePrefix` |  | |  |  |
+| `LastNameSecondPrefix` |  | |  |  |
+| `AcademicTitle` |  | |  |  |
+| `AcademicTitle2` |  | |  |  |
+| `NativePreferredLanguage` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `I_WorkAssignmentTP_1` |  | |  | `WorkforcePerson._WorkAssignment : redirected to composition child I_WorkAssignmentTP_1` |
+| `I_WorkforcePersonSkillTagTP_1` |  | |  | `WorkforcePerson._WorkforcePersonSkillTags : redirected to composition child I_WorkforcePersonSkillTagTP_1` |
 
 ## Source Code
 

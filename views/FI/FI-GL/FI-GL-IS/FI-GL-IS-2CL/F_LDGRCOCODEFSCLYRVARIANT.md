@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Ledger` | `Ledger` |
-| key `CompanyCode` | `CompanyCode` |
-| `FiscalYearVariant` | `FiscalYearVariant` |
-| `_Ledger` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Ledger` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `_Ledger` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Source Code
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `RealEstateObjectType` | `objtype` |
-| key `RETermType` | `termtype` |
-| `RETermTypeName` | `xtermtype` |
-| `_RETermType` | *Association* |
-| `_REObjectType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `RealEstateObjectType` | ✓ | |  | `objtype` |
+| `RETermType` | ✓ | |  | `termtype` |
+| `RETermTypeName` |  | |  | `xtermtype` |
+| `_RETermType` | | ✓ | | |
+| `_REObjectType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

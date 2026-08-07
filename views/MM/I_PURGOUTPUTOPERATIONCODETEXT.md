@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurgOutputOperationCode` | `cast ( dd07t.domvalue_l as druvo )` |
-| key `Language` | `cast ( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PurgOutputOperationCodeName` | `cast( dd07t.ddtext as mmpur_output_operation_codname preserving type )` |
-| `_Language` | *Association* |
-| `_PurgOutputOperationCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurgOutputOperationCode` | ✓ | |  | `cast ( dd07t.domvalue_l as druvo )` |
+| `Language` | ✓ | |  | `cast ( dd07t.ddlanguage as spras preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PurgOutputOperationCodeName` |  | |  | `cast( dd07t.ddtext as mmpur_output_operation_codname preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PurgOutputOperationCode` | | ✓ | | |
 
 ## Associations
 

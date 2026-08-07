@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConsolidationChartOfAccounts` | `fincs_conschartofaccounts` |
-| `ConsolidationVersion` | `fincs_consolidationversion` |
-| `FiscalYear` | `fincs_fiscalyear` |
-| `FiscalPeriod` | `fincs_period` |
-| `ConsolidationTask` | `fincs_tsk` |
-| `ConsolidationUnit` | `fincs_consolidationunit` |
-| `CnsldtnTskRunIsBlkdUponUsrReq` | `fincs_taskrun_blockbyuser` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  | `fincs_conschartofaccounts` |
+| `ConsolidationVersion` |  | |  | `fincs_consolidationversion` |
+| `FiscalYear` |  | |  | `fincs_fiscalyear` |
+| `FiscalPeriod` |  | |  | `fincs_period` |
+| `ConsolidationTask` |  | |  | `fincs_tsk` |
+| `ConsolidationUnit` |  | |  | `fincs_consolidationunit` |
+| `CnsldtnTskRunIsBlkdUponUsrReq` |  | |  | `fincs_taskrun_blockbyuser` |
 
 ## Source Code
 

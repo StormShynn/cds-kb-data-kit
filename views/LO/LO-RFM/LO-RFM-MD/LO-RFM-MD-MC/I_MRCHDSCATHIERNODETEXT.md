@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MrchdsCategoryHierarchyNode` | `cast(MrchdsCatHiernode.class as rfm_mrchdcathiernode preserving type )` |
-| key `Language` | `text.spras` |
-| `MrchdsCatHierNodeText` | `text.kschl` |
-| `ClassInternalID` | `MrchdsCatHiernode.clint` |
-| `ClassKeywordPositionNumber` | `text.klpos` |
-| `_MrchdsCategoryHierarchyNode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MrchdsCategoryHierarchyNode` | ✓ | |  | `cast(MrchdsCatHiernode.class as rfm_mrchdcathiernode preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `MrchdsCatHierNodeText` |  | |  | `kschl` |
+| `ClassInternalID` |  | |  | `clint` |
+| `ClassKeywordPositionNumber` |  | |  | `klpos` |
+| `_MrchdsCategoryHierarchyNode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

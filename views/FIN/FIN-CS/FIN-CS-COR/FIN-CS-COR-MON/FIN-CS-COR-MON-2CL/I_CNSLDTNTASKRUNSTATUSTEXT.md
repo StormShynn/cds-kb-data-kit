@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( DomainText.ddlanguage as spras preserving type )` |
-| key `ConsolidationTaskRunStatus` | `cast( left( DomainText.domvalue_l,2 ) as fincs_taskrun_status preserving type )` |
-| `ConsolidationTaskRunStatusText` | `cast( DomainText.ddtext as fincs_taskrun_status_txt preserving type )` |
-| `DomainValue` | `DomainText.domvalue_l` |
-| `_CnsldtnTaskRunStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( DomainText.ddlanguage as spras preserving type )` |
+| `ConsolidationTaskRunStatus` | ✓ | |  | `cast( left( DomainText.domvalue_l,2 ) as fincs_taskrun_status preserving type )` |
+| `ConsolidationTaskRunStatusText` |  | |  | `cast( DomainText.ddtext as fincs_taskrun_status_txt preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_CnsldtnTaskRunStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

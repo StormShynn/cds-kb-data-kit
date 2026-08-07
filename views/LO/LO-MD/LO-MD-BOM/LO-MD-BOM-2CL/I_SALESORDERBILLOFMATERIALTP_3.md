@@ -34,74 +34,74 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `bom_header.BillOfMaterial` |
-| key `BillOfMaterialCategory` | `bom_header.BillOfMaterialCategory` |
-| key `BillOfMaterialVariant` | `bom_header.BillOfMaterialVariant` |
-| key `BillOfMaterialVersion` | `bom_header.BillOfMaterialVersion` |
-| key `EngineeringChangeDocument` | `bom_header.EngineeringChangeDocument` |
-| key `Material` | `bom_header.Material` |
-| key `Plant` | `bom_header.Plant` |
-| `SalesOrder` | `bom_header.SalesOrder` |
-| `SalesOrderItem` | `bom_header.SalesOrderItem` |
-| `BillOfMaterialHeaderUUID` | `bom_header.BillOfMaterialHeaderUUID` |
-| `BillOfMaterialVariantUsage` | `bom_header.BillOfMaterialVariantUsage` |
-| `EngineeringChangeDocForEdit` | `bom_header.EngineeringChangeDocForEdit` |
-| `IsMultipleBOMAlt` | `bom_header.IsMultipleBOMAlt` |
-| `BOMHeaderInternalChangeCount` | `bom_header.BOMHeaderInternalChangeCount` |
-| `BOMUsagePriority` | `bom_header.BOMUsagePriority` |
-| `BillOfMaterialAuthsnGrp` | `bom_header.BillOfMaterialAuthsnGrp` |
-| `BOMVersionStatus` | `bom_header.BOMVersionStatus` |
-| `IsVersionBillOfMaterial` | `bom_header.IsVersionBillOfMaterial` |
-| `IsLatestBOMVersion` | `bom_header.IsLatestBOMVersion` |
-| `IsConfiguredMaterial` | `bom_header.IsConfiguredMaterial` |
-| `BOMTechnicalType` | `bom_header.BOMTechnicalType` |
-| `BOMGroup` | `bom_header.BOMGroup` |
-| `BOMHeaderText` | `bom_header.BOMHeaderText` |
-| `BOMAlternativeText` | `bom_header.BOMAlternativeText` |
-| `BillOfMaterialStatus` | `bom_header.BillOfMaterialStatus` |
-| `ValidityStartDate` | `bom_header.ValidityStartDate` |
-| `ValidityEndDate` | `bom_header.ValidityEndDate` |
-| `ChgToEngineeringChgDocument` | `bom_header.ChgToEngineeringChgDocument` |
-| `IsMarkedForDeletion` | `bom_header.IsMarkedForDeletion` |
-| `IsALE` | `bom_header.IsALE` |
-| `MatFromLotSizeQuantity` | `bom_header.MatFromLotSizeQuantity` |
-| `MaterialToLotSizeQuantity` | `bom_header.MaterialToLotSizeQuantity` |
-| `BOMHeaderBaseUnit` | `bom_header.BOMHeaderBaseUnit` |
-| `BOMHeaderQuantityInBaseUnit` | `bom_header.BOMHeaderQuantityInBaseUnit` |
-| `RecordCreationDate` | `bom_header.RecordCreationDate` |
-| `LastChangeDate` | `bom_header.LastChangeDate` |
-| `LastChangedByUser` | `bom_header.LastChangedByUser` |
-| `CreatedByUser` | `bom_header.CreatedByUser` |
-| `BOMIsToBeDeleted` | `bom_header.BOMIsToBeDeleted` |
-| `DocumentIsCreatedByCAD` | `bom_header.DocumentIsCreatedByCAD` |
-| `LaboratoryOrDesignOffice` | `bom_header.LaboratoryOrDesignOffice` |
-| `BOMAssetNtwkHndovrIsRelevant` | `bom_header.BOMAssetNtwkHndovrIsRelevant` |
-| `LastChangeDateTime` | `bom_header.LastChangeDateTime` |
-| `SoldToParty` | `bom_header.SoldToParty` |
-| `PurchaseOrderByCustomer` | `bom_header.PurchaseOrderByCustomer` |
-| `IndicatorIsBOMWithDateHistory` | `bom_header.IndicatorIsBOMWithDateHistory` |
-| `IndicatorIsBOMChangedWithHist` | `bom_header.IndicatorIsBOMChangedWithHist` |
-| `AlternativeUnit` | `bom_header.AlternativeUnit` |
-| `BOMExplosionApplication` | `bom_header.BOMExplosionApplication` |
-| `DefaultValidFromDate` | `bom_header.DefaultValidFromDate` |
-| `BillOfMaterialHdrDetailsText` | `bom_header.BillOfMaterialHdrDetailsText` |
-| `ProductDescription` | `bom_header.ProductDescription` |
-| `PlantName` | `bom_header.PlantName` |
-| `IsAttachmentsEnabled` | `bom_header.IsAttachmentsEnabled` |
-| `QuantityInBaseUnitIsHidden` | `bom_header.QuantityInBaseUnitIsHidden` |
-| `ProductIsConfigurable` | `bom_header.ProductIsConfigurable` |
-| `MaterialType` | `bom_header.MaterialType` |
-| `MaterialName` | `bom_header.MaterialName` |
-| `MaterialBOMObjectID` | `bom_header.MaterialBOMObjectID` |
-| `LongTextLanguage` | `bom_header.LongTextLanguage` |
-| `BOMPrioritizedVersion` | `bom_header.BOMPrioritizedVersion` |
-| `BOMPredecessorVersion` | `bom_header.BOMPredecessorVersion` |
-| `BOMIsConfigurable` | `bom_header.BOMIsConfigurable` |
-| `BOMIsArchivedForDeletion` | `bom_header.BOMIsArchivedForDeletion` |
-| `_BillOfMaterialUsage` | *Association* |
-| `_BillOfMaterialItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialCategory` | ✓ | |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |
+| `BillOfMaterialVersion` | ✓ | |  |  |
+| `EngineeringChangeDocument` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `BillOfMaterialHeaderUUID` |  | |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |
+| `EngineeringChangeDocForEdit` |  | |  |  |
+| `IsMultipleBOMAlt` |  | |  |  |
+| `BOMHeaderInternalChangeCount` |  | |  |  |
+| `BOMUsagePriority` |  | |  |  |
+| `BillOfMaterialAuthsnGrp` |  | |  |  |
+| `BOMVersionStatus` |  | |  |  |
+| `IsVersionBillOfMaterial` |  | |  |  |
+| `IsLatestBOMVersion` |  | |  |  |
+| `IsConfiguredMaterial` |  | |  |  |
+| `BOMTechnicalType` |  | |  |  |
+| `BOMGroup` |  | |  |  |
+| `BOMHeaderText` |  | |  |  |
+| `BOMAlternativeText` |  | |  |  |
+| `BillOfMaterialStatus` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChgToEngineeringChgDocument` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `IsALE` |  | |  |  |
+| `MatFromLotSizeQuantity` |  | |  |  |
+| `MaterialToLotSizeQuantity` |  | |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |
+| `BOMHeaderQuantityInBaseUnit` |  | |  |  |
+| `RecordCreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `BOMIsToBeDeleted` |  | |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |
+| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `IndicatorIsBOMWithDateHistory` |  | |  |  |
+| `IndicatorIsBOMChangedWithHist` |  | |  |  |
+| `AlternativeUnit` |  | |  |  |
+| `BOMExplosionApplication` |  | |  |  |
+| `DefaultValidFromDate` |  | |  |  |
+| `BillOfMaterialHdrDetailsText` |  | |  |  |
+| `ProductDescription` |  | |  |  |
+| `PlantName` |  | |  |  |
+| `IsAttachmentsEnabled` |  | |  |  |
+| `QuantityInBaseUnitIsHidden` |  | |  |  |
+| `ProductIsConfigurable` |  | |  |  |
+| `MaterialType` |  | |  |  |
+| `MaterialName` |  | |  |  |
+| `MaterialBOMObjectID` |  | |  |  |
+| `LongTextLanguage` |  | |  |  |
+| `BOMPrioritizedVersion` |  | |  |  |
+| `BOMPredecessorVersion` |  | |  |  |
+| `BOMIsConfigurable` |  | |  |  |
+| `BOMIsArchivedForDeletion` |  | |  |  |
+| `_BillOfMaterialUsage` | | ✓ | | |
+| `_BillOfMaterialItem` | | ✓ | | |
 
 ## Source Code
 

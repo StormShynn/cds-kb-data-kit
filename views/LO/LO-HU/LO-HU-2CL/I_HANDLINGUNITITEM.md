@@ -28,48 +28,48 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HandlingUnitInternalID` | `venum` |
-| key `HandlingUnitItem` | `vepos` |
-| `HandlingUnitExternalID` | `_HandlingUnitHeader.HandlingUnitExternalID` |
-| `HandlingUnitTypeOfContent` | `velin` |
-| `HandlingUnitReferenceDocument` | `vbeln` |
-| `HandlingUnitRefDocumentItem` | `posnr` |
-| `SDDocumentCategory` | `vbtyp` |
-| `HandlingUnitNestedInternalID` | `unvel` |
-| `HandlingUnitQuantity` | `vemng` |
-| `HandlingUnitQuantityUnit` | `vemeh` |
-| `HandlingUnitAltUnitOfMeasure` | `altme` |
-| `HandlingUnitNrOfAuxPackgMat` | `veanz` |
-| `HandlingUnitItemIsSupplement` | `kzbei` |
-| `Material` | `matnr` |
-| `Batch` | `charg` |
-| `Plant` | `werks` |
-| `StorageLocation` | `lgort` |
-| `ConfigurationObject` | `cuobj` |
-| `InventorySpecialStockType` | `sobkz` |
-| `SpecialStockNumber` | `sonum` |
-| `HandlingUnitInspectLotNumber` | `qplos` |
-| `HandlingUnitNumberOfSerialNumb` | `anzsn` |
-| `SerialNumberProfile` | `serail` |
-| `SalesDocumentItemCategory` | `pstyv` |
-| `HandlingUnitGenDeliveryItem` | `posnr_gen` |
-| `MaterialByCustomer` | `p_material` |
-| `HandlingUnitGoodsReceiptDate` | `wdatu` |
-| `ShelfLifeExpirationDate` | `vfdat` |
-| `StockSegment` | `sgt_scat` |
-| `HandlingUnitItemUUID` | `handle_vepo` |
-| `_HandlingUnitHeader` | *Association* |
-| `_Plant` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_AlternativeUnitOfMeasure` | *Association* |
-| `_Material` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_HandlingUnitSerialNumber` | *Association* |
-| `_SalesDocumentItemCategory` | *Association* |
-| `_Batch` | *Association* |
-| `_JITCallCompMaterialBasic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HandlingUnitInternalID` | ✓ | |  | `venum` |
+| `HandlingUnitItem` | ✓ | |  | `vepos` |
+| `HandlingUnitExternalID` |  | | `_HandlingUnitHeader` | `HandlingUnitExternalID` |
+| `HandlingUnitTypeOfContent` |  | |  | `velin` |
+| `HandlingUnitReferenceDocument` |  | |  | `vbeln` |
+| `HandlingUnitRefDocumentItem` |  | |  | `posnr` |
+| `SDDocumentCategory` |  | |  | `vbtyp` |
+| `HandlingUnitNestedInternalID` |  | |  | `unvel` |
+| `HandlingUnitQuantity` |  | |  | `vemng` |
+| `HandlingUnitQuantityUnit` |  | |  | `vemeh` |
+| `HandlingUnitAltUnitOfMeasure` |  | |  | `altme` |
+| `HandlingUnitNrOfAuxPackgMat` |  | |  | `veanz` |
+| `HandlingUnitItemIsSupplement` |  | |  | `kzbei` |
+| `Material` |  | |  | `matnr` |
+| `Batch` |  | |  | `charg` |
+| `Plant` |  | |  | `werks` |
+| `StorageLocation` |  | |  | `lgort` |
+| `ConfigurationObject` |  | |  | `cuobj` |
+| `InventorySpecialStockType` |  | |  | `sobkz` |
+| `SpecialStockNumber` |  | |  | `sonum` |
+| `HandlingUnitInspectLotNumber` |  | |  | `qplos` |
+| `HandlingUnitNumberOfSerialNumb` |  | |  | `anzsn` |
+| `SerialNumberProfile` |  | |  | `serail` |
+| `SalesDocumentItemCategory` |  | |  | `pstyv` |
+| `HandlingUnitGenDeliveryItem` |  | |  | `posnr_gen` |
+| `MaterialByCustomer` |  | |  | `p_material` |
+| `HandlingUnitGoodsReceiptDate` |  | |  | `wdatu` |
+| `ShelfLifeExpirationDate` |  | |  | `vfdat` |
+| `StockSegment` |  | |  | `sgt_scat` |
+| `HandlingUnitItemUUID` |  | |  | `handle_vepo` |
+| `_HandlingUnitHeader` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_AlternativeUnitOfMeasure` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_HandlingUnitSerialNumber` | | ✓ | | |
+| `_SalesDocumentItemCategory` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_JITCallCompMaterialBasic` | | ✓ | | |
 
 ## Associations
 

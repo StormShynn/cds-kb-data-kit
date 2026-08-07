@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnit` | `cast ( _Source.ConsolidationUnit as fincs_consolidationunit preserving type )` |
-| `Country` | `_Source.Country` |
-| `ConsolidationUnitLink` | `_Source.ConsolidationUnitLink` |
-| `ConsolidationUnitLinkLabel` | `_Source.ConsolidationUnitLinkLabel` |
-| `I_CnsldtnUnitTextTP` | `_Text as _Text : redirected to composition child I_CnsldtnUnitTextTP` |
-| `I_CnsldtnUnitByTimeTP` | `_CnsldtnUnitByTime as _CnsldtnUnitByTime : redirected to composition child I_CnsldtnUnitByTimeTP` |
-| `I_CnsldtnUnitByTimeVersionTP` | `_CnsldtnUnitByTimeVersion as _CnsldtnUnitByTimeVersion : redirected to composition child I_CnsldtnUnitByTimeVersionTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | |  | `cast ( _Source.ConsolidationUnit as fincs_consolidationunit preserving type )` |
+| `Country` |  | | `_Source` | `Country` |
+| `ConsolidationUnitLink` |  | | `_Source` | `ConsolidationUnitLink` |
+| `ConsolidationUnitLinkLabel` |  | | `_Source` | `ConsolidationUnitLinkLabel` |
+| `I_CnsldtnUnitTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnUnitTextTP` |
+| `I_CnsldtnUnitByTimeTP` |  | |  | `_CnsldtnUnitByTime as _CnsldtnUnitByTime : redirected to composition child I_CnsldtnUnitByTimeTP` |
+| `I_CnsldtnUnitByTimeVersionTP` |  | |  | `_CnsldtnUnitByTimeVersion as _CnsldtnUnitByTimeVersion : redirected to composition child I_CnsldtnUnitByTimeVersionTP` |
 
 ## Source Code
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CARevnAcctgTransfRecordOrigin` | `cast( left( domvalue_l, 1 ) as ra_oi_orig_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CARevnAcctgTransfRecdOrignText` | `cast( ddtext as ra_oi_orig_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CARevnAcctgTransfRecordOrigin` | ✓ | |  | `cast( left( domvalue_l, 1 ) as ra_oi_orig_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CARevnAcctgTransfRecdOrignText` |  | |  | `cast( ddtext as ra_oi_orig_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

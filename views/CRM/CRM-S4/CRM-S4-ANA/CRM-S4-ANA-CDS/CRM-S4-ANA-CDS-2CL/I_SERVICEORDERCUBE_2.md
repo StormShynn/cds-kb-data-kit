@@ -28,78 +28,78 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceObjectType` | `ServiceObjectType` |
-| key `ServiceOrder` | `ServiceOrder` |
-| `ServiceOrderDescription` | `ServiceOrderDescription` |
-| `ServiceOrderStatus` | `ServiceOrderStatus` |
-| `ServiceOrderStatusName` | `_SrvcDocLifecycleStatus._ServiceDocumentStatusText [1: Language=$session.system_language].ServiceDocumentStatusName` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `RefBusinessSolutionOrder` | `RefBusinessSolutionOrder` |
-| `SoldToParty` | `SoldToParty` |
-| `ResponsibleEmployee` | `ResponsibleEmployee` |
-| `ContactPersonBusinessPartnerId` | `ContactPerson` |
-| `RequestedServiceEndDate` | `RequestedServiceEndDate` |
-| `ServiceDocumentCreationDate` | `ServiceDocumentCreationDate` |
-| `SrvcOrdCreationQuarter` | `SrvcOrdCreationQuarter` |
-| `SrvcOrdCreationMonth` | `SrvcOrdCreationMonth` |
-| `SrvcOrdCreationYear` | `SrvcOrdCreationYear` |
-| `ServiceDocumentPriority` | `ServiceDocumentPriority` |
-| `ServiceDocumentHasError` | `ServiceDocumentHasError` |
-| `ServiceDocNetAmount` | `} ServiceDocNetAmount` |
-| `NumberOfIncomingServiceOrders` | `NumberOfIncomingServiceOrders` |
-| `NumberOfOpenServiceOrders` | `NumberOfOpenServiceOrders` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `SalesOrganizationOrgUnitID` | `SalesOrganizationOrgUnitID` |
-| `SalesOfficeOrgUnitID` | `SalesOfficeOrgUnitID` |
-| `SalesGroupOrgUnitID` | `SalesGroupOrgUnitID` |
-| `ServiceOrganization` | `ServiceOrganization` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `NmbrOfIncompleteServiceOrders` | `NmbrOfIncompleteServiceOrders` |
-| `NumberOfOverdueServiceOrders` | `NumberOfOverdueServiceOrders` |
-| `SrvcOrdHasConfdItem` | `SrvcOrdHasConfdItem` |
-| `ServiceDocumentIsOpen` | `ServiceDocumentIsOpen` |
-| `ServiceReferenceObjectType` | `ServiceReferenceObjectType` |
-| `SrvcRefObjIsMainObject` | `SrvcRefObjIsMainObject` |
-| `ProductID` | `ProductID` |
-| `SerialNumber` | `SerialNumber` |
-| `Equipment` | `Equipment` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `RespyMgmtServiceTeam` | `RespyMgmtServiceTeam` |
-| `RespyMgmtServiceTeamDesc` | `RespyMgmtServiceTeamDesc` |
-| `TeamName` | `TeamName` |
-| `_ServiceDocumentIsOpen` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_ServiceDocumentStatus` | *Association* |
-| `_SrvcDocLifecycleStatus` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_ServiceDocumentPriority` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_ServiceDocHasError` | *Association* |
-| `_SrvcOrdConfStatus` | *Association* |
-| `_SalesOrganizationOrgUnit` | *Association* |
-| `_SalesOrganizationOrgUnit_2` | *Association* |
-| `_SalesOfficeOrgUnit` | *Association* |
-| `_SalesOfficeOrgUnit_2` | *Association* |
-| `_SalesGroupOrgUnit` | *Association* |
-| `_SalesGroupOrgUnit_2` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_Period` | *Association* |
-| `_ServiceDocRefObj` | *Association* |
-| `_ServiceTeamHeader` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceOrderDescription` |  | |  |  |
+| `ServiceOrderStatus` |  | |  |  |
+| `ServiceOrderStatusName` |  | |  | `_SrvcDocLifecycleStatus._ServiceDocumentStatusText [1: Language=$session.system_language].ServiceDocumentStatusName` |
+| `ServiceDocumentType` |  | |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |
+| `RequestedServiceEndDate` |  | |  |  |
+| `ServiceDocumentCreationDate` |  | |  |  |
+| `SrvcOrdCreationQuarter` |  | |  |  |
+| `SrvcOrdCreationMonth` |  | |  |  |
+| `SrvcOrdCreationYear` |  | |  |  |
+| `ServiceDocumentPriority` |  | |  |  |
+| `ServiceDocumentHasError` |  | |  |  |
+| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
+| `NumberOfIncomingServiceOrders` |  | |  |  |
+| `NumberOfOpenServiceOrders` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |
+| `ServiceOrganization` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `NmbrOfIncompleteServiceOrders` |  | |  |  |
+| `NumberOfOverdueServiceOrders` |  | |  |  |
+| `SrvcOrdHasConfdItem` |  | |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |
+| `ServiceReferenceObjectType` |  | |  |  |
+| `SrvcRefObjIsMainObject` |  | |  |  |
+| `ProductID` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |
+| `RespyMgmtServiceTeamDesc` |  | |  |  |
+| `TeamName` |  | |  |  |
+| `_ServiceDocumentIsOpen` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_ServiceDocumentStatus` | | ✓ | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_ServiceDocumentPriority` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_ServiceDocHasError` | | ✓ | | |
+| `_SrvcOrdConfStatus` | | ✓ | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | |
+| `_SalesGroupOrgUnit` | | ✓ | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_Period` | | ✓ | | |
+| `_ServiceDocRefObj` | | ✓ | | |
+| `_ServiceTeamHeader` | | ✓ | | |
 
 ## Associations
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `EU_EDocCommChannel` | `comm_channel` |
-| `ElectronicDocPartyIdType` | `party_id_type` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `EU_EDocCommChannel` | ✓ | |  | `comm_channel` |
+| `ElectronicDocPartyIdType` |  | |  | `party_id_type` |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalLocation` | `FunctionalLocation` |
-| key `ClassType` | `ClassType` |
-| key `CharcValuePositionNumber` | `CharcValuePositionNumber` |
-| key `CharcInternalID` | `CharcInternalID` |
-| `FunctionalLocationLabelName` | `FunctionalLocationLabelName` |
-| `Characteristic` | `Characteristic` |
-| `CharcDataType` | `CharcDataType` |
-| `ClassInternalID` | `ClassInternalID` |
-| `KeyDate` | `KeyDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `CharcValueIntervalType` | `CharcValueDependency` |
-| `CharcValue` | `CharcValue` |
-| `CharcFromNumericValue` | `CharcFromNumericValue` |
-| `CharcFromNumericValueUnit` | `CharcFromNumericValueUnit` |
-| `CharcToNumericValue` | `CharcToNumericValue` |
-| `CharcToNumericValueUnit` | `CharcToNumericValueUnit` |
-| `CharcFromDecimalValue` | `CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `CharcToDecimalValue` |
-| `CharcFromAmount` | `CharcFromAmount` |
-| `CharcToAmount` | `CharcToAmount` |
-| `Currency` | `Currency` |
-| `CharcFromDate` | `CharcFromDate` |
-| `CharcToDate` | `CharcToDate` |
-| `CharcFromTime` | `CharcFromTime` |
-| `CharcToTime` | `CharcToTime` |
-| `CharcMaintAuthGrp` | `CharcMaintAuthGrp` |
-| `ClassMaintAuthGrp` | `ClassMaintAuthGrp` |
-| `ClassClassfctnAuthGrp` | `ClassClassfctnAuthGrp` |
-| `_Characteristic` | *Association* |
-| `_FunctionalLocation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |
+| `ClassType` | ✓ | |  |  |
+| `CharcValuePositionNumber` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |
+| `Characteristic` |  | |  |  |
+| `CharcDataType` |  | |  |  |
+| `ClassInternalID` |  | |  |  |
+| `KeyDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `CharcValueIntervalType` |  | |  | `CharcValueDependency` |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `CharcMaintAuthGrp` |  | |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |
+| `_Characteristic` | | ✓ | | |
+| `_FunctionalLocation` | | ✓ | | |
 
 ## Source Code
 

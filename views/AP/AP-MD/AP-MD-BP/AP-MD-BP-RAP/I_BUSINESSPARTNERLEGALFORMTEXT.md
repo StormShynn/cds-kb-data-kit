@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `LegalForm` | `legal_enty` |
-| `LegalFormShortName` | `textshort` |
-| `LegalFormDescription` | `textlong` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `LegalForm` | ✓ | |  | `legal_enty` |
+| `LegalFormShortName` |  | |  | `textshort` |
+| `LegalFormDescription` |  | |  | `textlong` |
 
 ## Source Code
 

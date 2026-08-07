@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Reservation` | `comp.Reservation` |
-| key `ReservationItem` | `comp.ReservationItem` |
-| key `RecordType` | `comp.RecordType` |
-| key `LongTextLanguage` | `cast(comp.LongTextLanguage as pph_longtextlang preserving type)` |
-| `ManufacturingOrder` | `cast(comp.OrderID as co_aufnr preserving type)` |
-| `ManufacturingOrderSequence` | `comp.Sequence` |
-| `ManufacturingOrderOperation` | `comp.OrderOperation` |
-| `ManufacturingOrderComponent` | `cast(comp.BillOfMaterialItemNumber as eam_order_component preserving type)` |
-| `MaterialComponentText` | `comp.MaterialComponentText` |
-| `MaterialComponentSecondText` | `comp.MaterialComponentSecondText` |
-| `OrderComponentLongText` | `text.OrderComponentLongText` |
-| `_LongTextLanguage` | *Association* |
-| `_MfgOrder` | *Association* |
-| `_MfgOrderComponent` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Reservation` | ✓ | |  |  |
+| `ReservationItem` | ✓ | |  |  |
+| `RecordType` | ✓ | |  |  |
+| `LongTextLanguage` | ✓ | |  | `cast(comp.LongTextLanguage as pph_longtextlang preserving type)` |
+| `ManufacturingOrder` |  | |  | `cast(comp.OrderID as co_aufnr preserving type)` |
+| `ManufacturingOrderSequence` |  | |  | `Sequence` |
+| `ManufacturingOrderOperation` |  | |  | `OrderOperation` |
+| `ManufacturingOrderComponent` |  | |  | `cast(comp.BillOfMaterialItemNumber as eam_order_component preserving type)` |
+| `MaterialComponentText` |  | |  |  |
+| `MaterialComponentSecondText` |  | |  |  |
+| `OrderComponentLongText` |  | |  |  |
+| `_LongTextLanguage` | | ✓ | | |
+| `_MfgOrder` | | ✓ | | |
+| `_MfgOrderComponent` | | ✓ | | |
 
 ## Associations
 

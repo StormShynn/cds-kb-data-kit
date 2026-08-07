@@ -30,59 +30,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequest` | `DebitMemoRequestItem.DebitMemoRequest` |
-| key `DebitMemoRequestItem` | `DebitMemoRequestItem.DebitMemoRequestItem` |
-| `HigherLevelItem` | `DebitMemoRequestItem.HigherLevelItem` |
-| `DebitMemoRequestItemCategory` | `DebitMemoRequestItem.DebitMemoRequestItemCategory` |
-| `DebitMemoRequestItemText` | `DebitMemoRequestItem.DebitMemoRequestItemText` |
-| `PurchaseOrderByCustomer` | `DebitMemoRequestItem.PurchaseOrderByCustomer` |
-| `Product` | `DebitMemoRequestItem.Product` |
-| `MaterialByCustomer` | `DebitMemoRequestItem.MaterialByCustomer` |
-| `ProductGroup` | `DebitMemoRequestItem.ProductGroup` |
-| `MaterialPricingGroup` | `DebitMemoRequestItem.MaterialPricingGroup` |
-| `Batch` | `DebitMemoRequestItem.Batch` |
-| `PricingDate` | `DebitMemoRequestItem.PricingDate` |
-| `RequestedQuantity` | `DebitMemoRequestItem.RequestedQuantity` |
-| `RequestedQuantityUnit` | `DebitMemoRequestItem.RequestedQuantityUnit` |
-| `NetAmount` | `DebitMemoRequestItem.NetAmount` |
-| `TransactionCurrency` | `DebitMemoRequestItem.TransactionCurrency` |
-| `ItemBillingBlockReason` | `DebitMemoRequestItem.ItemBillingBlockReason` |
-| `Plant` | `DebitMemoRequestItem.Plant` |
-| `TargetQuantity` | `DebitMemoRequestItem.TargetQuantity` |
-| `TargetQuantityUnit` | `DebitMemoRequestItem.TargetQuantityUnit` |
-| `ItemGrossWeight` | `DebitMemoRequestItem.ItemGrossWeight` |
-| `ItemNetWeight` | `DebitMemoRequestItem.ItemNetWeight` |
-| `ItemWeightUnit` | `DebitMemoRequestItem.ItemWeightUnit` |
-| `ItemVolume` | `DebitMemoRequestItem.ItemVolume` |
-| `ItemVolumeUnit` | `DebitMemoRequestItem.ItemVolumeUnit` |
-| `ServicesRenderedDate` | `DebitMemoRequestItem.ServicesRenderedDate` |
-| `SalesDocumentRjcnReason` | `DebitMemoRequestItem.SalesDocumentRjcnReason` |
-| `TaxAmount` | `DebitMemoRequestItem.TaxAmount` |
-| `IncotermsClassification` | `DebitMemoRequestItem.IncotermsClassification` |
-| `IncotermsLocation1` | `DebitMemoRequestItem.IncotermsLocation1` |
-| `IncotermsLocation2` | `DebitMemoRequestItem.IncotermsLocation2` |
-| `IncotermsVersion` | `DebitMemoRequestItem.IncotermsVersion` |
-| `BillingDocumentDate` | `DebitMemoRequestItem.BillingDocumentDate` |
-| `CustomerPaymentTerms` | `DebitMemoRequestItem.CustomerPaymentTerms` |
-| `ProfitCenter` | `DebitMemoRequestItem.ProfitCenter` |
-| `ReferenceSDDocument` | `DebitMemoRequestItem.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `DebitMemoRequestItem.ReferenceSDDocumentItem` |
-| `SDProcessStatus` | `DebitMemoRequestItem.SDProcessStatus` |
-| `OrderRelatedBillingStatus` | `DebitMemoRequestItem.OrderRelatedBillingStatus` |
-| `BillingBlockStatus` | `DebitMemoRequestItem.BillingBlockStatus` |
-| `ItemGeneralIncompletionStatus` | `DebitMemoRequestItem.ItemGeneralIncompletionStatus` |
-| `SDDocumentRejectionStatus` | `DebitMemoRequestItem.SDDocumentRejectionStatus` |
-| `TotalSDDocReferenceStatus` | `DebitMemoRequestItem.TotalSDDocReferenceStatus` |
-| `DebitMemoRequestType` | `DebitMemoRequestItem.DebitMemoRequestType` |
-| `OrganizationDivision` | `DebitMemoRequestItem.OrganizationDivision` |
-| `SalesOrganization` | `DebitMemoRequestItem.SalesOrganization` |
-| `DistributionChannel` | `DebitMemoRequestItem.DistributionChannel` |
-| `_DebitMemoRequest` | *Association* |
-| `_ItemPartner` | *Association* |
-| `_ItemText` | *Association* |
-| `_ItemPricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |
+| `DebitMemoRequestItem` | ✓ | |  |  |
+| `HigherLevelItem` |  | |  |  |
+| `DebitMemoRequestItemCategory` |  | |  |  |
+| `DebitMemoRequestItemText` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `Product` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `MaterialPricingGroup` |  | |  |  |
+| `Batch` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `RequestedQuantity` |  | |  |  |
+| `RequestedQuantityUnit` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ItemBillingBlockReason` |  | |  |  |
+| `Plant` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetQuantityUnit` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |
+| `TaxAmount` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `SDProcessStatus` |  | |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |
+| `BillingBlockStatus` |  | |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |
+| `DebitMemoRequestType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `_DebitMemoRequest` | | ✓ | | |
+| `_ItemPartner` | | ✓ | | |
+| `_ItemText` | | ✓ | | |
+| `_ItemPricingElement` | | ✓ | | |
 
 ## Source Code
 

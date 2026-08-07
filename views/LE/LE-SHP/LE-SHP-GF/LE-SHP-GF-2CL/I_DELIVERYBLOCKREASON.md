@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryBlockReason` | `lifsp` |
-| `DeliveryDueListBlock` | `spevi` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryBlockReason` | ✓ | |  | `lifsp` |
+| `DeliveryDueListBlock` |  | |  | `spevi` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

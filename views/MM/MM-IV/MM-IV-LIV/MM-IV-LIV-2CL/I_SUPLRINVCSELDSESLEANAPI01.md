@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `I_SuplrInvcSeldSrvcEntrShtLean.SupplierInvoice` |
-| key `FiscalYear` | `I_SuplrInvcSeldSrvcEntrShtLean.FiscalYear` |
-| key `ServiceEntrySheet` | `I_SuplrInvcSeldSrvcEntrShtLean.ServiceEntrySheet` |
-| key `ServiceEntrySheetItem` | `I_SuplrInvcSeldSrvcEntrShtLean.ServiceEntrySheetItem` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

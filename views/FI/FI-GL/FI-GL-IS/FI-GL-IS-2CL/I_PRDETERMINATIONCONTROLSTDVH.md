@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PriceDeterminationControl` | `PriceDeterminationControl` |
-| `DomainValue` | `DomainValue` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PriceDeterminationControl` | ✓ | |  |  |
+| `DomainValue` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

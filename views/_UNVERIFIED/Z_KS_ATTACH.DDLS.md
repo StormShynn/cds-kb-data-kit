@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TravelId` | `travel_id` |
-| key `Id` | `id` |
-| `Commt` | `commt` |
-| `Attach` | `attach` |
-| `Filename` | `filename` |
-| `Filetype` | `filetype` |
-| `CreatedBy` | `created_by` |
-| `CreatedAt` | `created_at` |
-| `LastChangedBy` | `last_changed_by` |
-| `LastChangedAt` | `last_changed_at` |
-| `_Travel` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TravelId` | ✓ | |  | `travel_id` |
+| `Id` | ✓ | |  | `id` |
+| `Commt` |  | |  | `commt` |
+| `Attach` |  | |  | `attach` |
+| `Filename` |  | |  | `filename` |
+| `Filetype` |  | |  | `filetype` |
+| `CreatedBy` |  | |  | `created_by` |
+| `CreatedAt` |  | |  | `created_at` |
+| `LastChangedBy` |  | |  | `last_changed_by` |
+| `LastChangedAt` |  | |  | `last_changed_at` |
+| `_Travel` | | ✓ | | |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingControlCategory` | `substring( domvalue_l, 1, 8 )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingControlCategory` | ✓ | |  | `substring( domvalue_l, 1, 8 )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

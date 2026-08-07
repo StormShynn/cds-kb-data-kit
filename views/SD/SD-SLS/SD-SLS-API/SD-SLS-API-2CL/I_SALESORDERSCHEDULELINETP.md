@@ -32,33 +32,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrderScheduleLine.SalesOrder` |
-| key `SalesOrderItem` | `SalesOrderScheduleLine.SalesOrderItem` |
-| key `ScheduleLine` | `SalesOrderScheduleLine.ScheduleLine` |
-| `ScheduleLineForEdit` | `SalesOrderScheduleLine.ScheduleLineForEdit` |
-| `ScheduleLineCategory` | `SalesOrderScheduleLine.ScheduleLineCategory` |
-| `OrderQuantityUnit` | `SalesOrderScheduleLine.OrderQuantityUnit` |
-| `OrderQuantitySAPUnit` | `SalesOrderScheduleLine.OrderQuantitySAPUnit` |
-| `ScheduleLineOrderQuantity` | `SalesOrderScheduleLine.ScheduleLineOrderQuantity` |
-| `ConfdOrderQtyByMatlAvailCheck` | `SalesOrderScheduleLine.ConfdOrderQtyByMatlAvailCheck` |
-| `DeliveredQtyInOrderQtyUnit` | `SalesOrderScheduleLine.DeliveredQtyInOrderQtyUnit` |
-| `OpenConfdDelivQtyInOrdQtyUnit` | `SalesOrderScheduleLine.OpenConfdDelivQtyInOrdQtyUnit` |
-| `CorrectedQtyInOrderQtyUnit` | `SalesOrderScheduleLine.CorrectedQtyInOrderQtyUnit` |
-| `DeliveryDate` | `SalesOrderScheduleLine.DeliveryDate` |
-| `RequestedDeliveryDate` | `SalesOrderScheduleLine.RequestedDeliveryDate` |
-| `ConfirmedDeliveryDate` | `SalesOrderScheduleLine.ConfirmedDeliveryDate` |
-| `DelivBlockReasonForSchedLine` | `SalesOrderScheduleLine.DelivBlockReasonForSchedLine` |
-| `PurchaseRequisition` | `SalesOrderScheduleLine.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `SalesOrderScheduleLine.PurchaseRequisitionItem` |
-| `GoodsMovementType` | `SalesOrderScheduleLine.GoodsMovementType` |
-| `SalesOrderType` | `SalesOrderScheduleLine.SalesOrderType` |
-| `SalesOrganization` | `SalesOrderScheduleLine.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderScheduleLine.DistributionChannel` |
-| `OrganizationDivision` | `SalesOrderScheduleLine.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `ScheduleLineForEdit` |  | |  |  |
+| `ScheduleLineCategory` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OrderQuantitySAPUnit` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |
+| `DeliveredQtyInOrderQtyUnit` |  | |  |  |
+| `OpenConfdDelivQtyInOrdQtyUnit` |  | |  |  |
+| `CorrectedQtyInOrderQtyUnit` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `RequestedDeliveryDate` |  | |  |  |
+| `ConfirmedDeliveryDate` |  | |  |  |
+| `DelivBlockReasonForSchedLine` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
 
 ## Source Code
 

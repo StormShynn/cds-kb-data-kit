@@ -28,82 +28,82 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceQuotation` | `ServiceQuotation` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `ServiceQuotationType` | `ServiceQuotationType` |
-| `ServiceQuotationUUID` | `ServiceQuotationUUID` |
-| `ServiceQuotationDescription` | `ServiceQuotationDescription` |
-| `Language` | `Language` |
-| `PostingDate` | `PostingDate` |
-| `ServiceDocCreationDateTime` | `ServiceDocCreationDateTime` |
-| `ServiceDocChangedDateTime` | `ServiceDocChangedDateTime` |
-| `ServiceDocumentCreatedByUser` | `ServiceDocumentCreatedByUser` |
-| `ServiceDocumentChangedByUser` | `ServiceDocumentChangedByUser` |
-| `SoldToParty` | `SoldToParty` |
-| `ShipToParty` | `ShipToParty` |
-| `ContactPersonBusinessPartnerId` | `ContactPersonBusinessPartnerId` |
-| `RespEmployeeBusinessPartnerId` | `RespEmployeeBusinessPartnerId` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesOrganizationOrgUnitID` | `SalesOrganizationOrgUnitID` |
-| `SalesOfficeOrgUnitID` | `SalesOfficeOrgUnitID` |
-| `SalesGroupOrgUnitID` | `SalesGroupOrgUnitID` |
-| `ServiceOrganization` | `ServiceOrganization` |
-| `RespyMgmtServiceTeam` | `RespyMgmtServiceTeam` |
-| `RespyMgmtGlobalTeamID` | `RespyMgmtGlobalTeamID` |
-| `ServiceQuotationIsNew` | `ServiceQuotationIsNew` |
-| `ServiceQuotationIsInProcess` | `ServiceQuotationIsInProcess` |
-| `ServiceQuotationIsReleased` | `ServiceQuotationIsReleased` |
-| `ServiceQuotationIsCompleted` | `ServiceQuotationIsCompleted` |
-| `ServiceQuotationStatus` | `ServiceQuotationStatus` |
-| `ServiceQuotationHasError` | `ServiceQuotationHasError` |
-| `SrvcDocRejectionStatus` | `SrvcDocRejectionStatus` |
-| `RequestedServiceStartDateTime` | `RequestedServiceStartDateTime` |
-| `RequestedServiceEndDateTime` | `RequestedServiceEndDateTime` |
-| `SrvcQtanValidityStartDateTime` | `SrvcQtanValidityStartDateTime` |
-| `SrvcQtanValidityEndDateTime` | `SrvcQtanValidityEndDateTime` |
-| `ServiceDocumentPriority` | `ServiceDocumentPriority` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `ServiceDocGrossAmount` | `} ServiceDocGrossAmount` |
-| `ServiceDocNetAmount` | `} ServiceDocNetAmount` |
-| `ServiceDocTaxAmount` | `} ServiceDocTaxAmount` |
-| `PricingDocument` | `PricingDocument` |
-| `SrvcQuotationRejectionReason` | `SrvcQuotationRejectionReason` |
-| `ServiceQtanExtReference` | `ServiceQtanExtReference` |
-| `ReferenceServiceContract` | `ReferenceServiceContract` |
-| `_ServiceObjType` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesOrganizationOrgUnit_2` | *Association* |
-| `_SalesOfficeOrgUnit_2` | *Association* |
-| `_SalesGroupOrgUnit_2` | *Association* |
-| `_ServiceOrganizationOrgUnit_2` | *Association* |
-| `_ServiceTeamHeader` | *Association* |
-| `_SrvcQtanStatus` | *Association* |
-| `_ServiceDocumentPriority` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_SrvcDocumentRejectionReason` | *Association* |
-| `_ServiceQuotationItemTP` | *Association* |
-| `_SrvcQtanReferenceObjectTP` | *Association* |
-| `_SrvcQtanPriceElementTP` | *Association* |
-| `_SrvcQtanAppointmentTP` | *Association* |
-| `_SrvcQtanDurationTP` | *Association* |
-| `_SrvcQtanFUPSrvcOrdTP` | *Association* |
-| `_SrvcQtanLongTextTP` | *Association* |
-| `_SrvcQtanPartnerTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `ServiceQuotationType` |  | |  |  |
+| `ServiceQuotationUUID` |  | |  |  |
+| `ServiceQuotationDescription` |  | |  |  |
+| `Language` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |
+| `ServiceOrganization` |  | |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |
+| `ServiceQuotationIsNew` |  | |  |  |
+| `ServiceQuotationIsInProcess` |  | |  |  |
+| `ServiceQuotationIsReleased` |  | |  |  |
+| `ServiceQuotationIsCompleted` |  | |  |  |
+| `ServiceQuotationStatus` |  | |  |  |
+| `ServiceQuotationHasError` |  | |  |  |
+| `SrvcDocRejectionStatus` |  | |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |
+| `SrvcQtanValidityStartDateTime` |  | |  |  |
+| `SrvcQtanValidityEndDateTime` |  | |  |  |
+| `ServiceDocumentPriority` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
+| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
+| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
+| `PricingDocument` |  | |  |  |
+| `SrvcQuotationRejectionReason` |  | |  |  |
+| `ServiceQtanExtReference` |  | |  |  |
+| `ReferenceServiceContract` |  | |  |  |
+| `_ServiceObjType` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
+| `_ServiceTeamHeader` | | ✓ | | |
+| `_SrvcQtanStatus` | | ✓ | | |
+| `_ServiceDocumentPriority` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | |
+| `_ServiceQuotationItemTP` | | ✓ | | |
+| `_SrvcQtanReferenceObjectTP` | | ✓ | | |
+| `_SrvcQtanPriceElementTP` | | ✓ | | |
+| `_SrvcQtanAppointmentTP` | | ✓ | | |
+| `_SrvcQtanDurationTP` | | ✓ | | |
+| `_SrvcQtanFUPSrvcOrdTP` | | ✓ | | |
+| `_SrvcQtanLongTextTP` | | ✓ | | |
+| `_SrvcQtanPartnerTP` | | ✓ | | |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `cast( kokrs as fis_kokrs preserving type )` |
-| key `CostOriginType` | `koaty` |
-| key `CostOriginGroup` | `hrkft` |
-| `_Text` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CostOriginType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |
+| `CostOriginType` | ✓ | |  | `koaty` |
+| `CostOriginGroup` | ✓ | |  | `hrkft` |
+| `_Text` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CostOriginType` | | ✓ | | |
 
 ## Associations
 

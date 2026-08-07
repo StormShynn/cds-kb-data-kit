@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_DomainText.Language as spras preserving type )` |
-| key `CnsldtnAdhocSetBrkdwnType` | `cast(left(_DomainText.DomainValue, 1) as fincs_adhocsetbrkdwntype preserving type )` |
-| `CnsldtnAdhocSetBrkdwnTypeText` | `cast(_DomainText.DomainValueText as fincs_adhocsetbrkdwntype_desc preserving type )` |
-| `DomainValue` | `_DomainText.DomainValue` |
-| `_CnsldtnAdhocSetBrkdwnType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainText.Language as spras preserving type )` |
+| `CnsldtnAdhocSetBrkdwnType` | ✓ | |  | `cast(left(_DomainText.DomainValue, 1) as fincs_adhocsetbrkdwntype preserving type )` |
+| `CnsldtnAdhocSetBrkdwnTypeText` |  | |  | `cast(_DomainText.DomainValueText as fincs_adhocsetbrkdwntype_desc preserving type )` |
+| `DomainValue` |  | | `_DomainText` | `DomainValue` |
+| `_CnsldtnAdhocSetBrkdwnType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

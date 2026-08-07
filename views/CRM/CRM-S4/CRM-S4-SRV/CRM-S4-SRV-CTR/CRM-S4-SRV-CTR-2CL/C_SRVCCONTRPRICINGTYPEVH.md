@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PricingType` | `PricingType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PricingType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

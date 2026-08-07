@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGEnergyMix` | `cast( dd07l.domvalue_l as sufnd_vdm_ghgenergymix )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGEnergyMix` | ✓ | |  | `cast( dd07l.domvalue_l as sufnd_vdm_ghgenergymix )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

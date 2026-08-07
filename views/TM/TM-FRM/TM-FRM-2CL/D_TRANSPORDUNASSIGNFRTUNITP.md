@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `/scmtms/vdm_freight_unit_uuid` | `key FreightUnitUUID : /scmtms/vdm_freight_unit_uuid` |
-| `D_FreightUnitUnassignParameter` | `_FreightUnits : composition [0..*] of D_FreightUnitUnassignParameter` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `/scmtms/vdm_freight_unit_uuid` |  | |  | `key FreightUnitUUID : /scmtms/vdm_freight_unit_uuid` |
+| `D_FreightUnitUnassignParameter` |  | |  | `_FreightUnits : composition [0..*] of D_FreightUnitUnassignParameter` |
 
 ## Source Code
 

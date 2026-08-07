@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintOrdOpCompCostingRelevancy` | `selkz` |
-| key `Language` | `langu` |
-| `CostingRelevantDescription` | `tck09.stext` |
-| `_MaintOrdOpCompCostRelevancy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintOrdOpCompCostingRelevancy` | ✓ | |  | `selkz` |
+| `Language` | ✓ | |  | `langu` |
+| `CostingRelevantDescription` |  | |  | `stext` |
+| `_MaintOrdOpCompCostRelevancy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentStatus` | `cast(CustMgmtLifecycleUserStatus as crms4_stat_lifecycle preserving type )` |
-| `_ServiceDocumentStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentStatus` | ✓ | |  | `cast(CustMgmtLifecycleUserStatus as crms4_stat_lifecycle preserving type )` |
+| `_ServiceDocumentStatusText` | | ✓ | | |
 
 ## Associations
 

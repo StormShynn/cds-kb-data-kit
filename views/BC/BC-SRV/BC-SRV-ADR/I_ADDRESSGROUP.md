@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressGroup` | `tsad7.addr_group` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressGroup` | ✓ | |  | `addr_group` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

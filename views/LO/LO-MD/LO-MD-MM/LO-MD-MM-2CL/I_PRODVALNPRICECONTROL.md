@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventoryValuationProcedure` | `cast ( domvalue_l as vprsv )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryValuationProcedure` | ✓ | |  | `cast ( domvalue_l as vprsv )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

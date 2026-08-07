@@ -31,27 +31,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Costing.Product` |
-| key `Plant` | `Costing.Plant` |
-| `IsCoProduct` | `Costing.IsCoProduct` |
-| `CostingLotSize` | `Costing.CostingLotSize` |
-| `TaskListGroup` | `Costing.TaskListGroup` |
-| `TaskListType` | `Costing.TaskListType` |
-| `CostingSpecialProcurementType` | `Costing.CostingSpecialProcurementType` |
-| `SourceBOMAlternative` | `Costing.SourceBOMAlternative` |
-| `ProductBOMUsage` | `Costing.ProductBOMUsage` |
-| `ProductIsCostingRelevant` | `Costing.ProductIsCostingRelevant` |
-| `TaskListGroupCounter` | `Costing.TaskListGroupCounter` |
-| `VarianceKey` | `Costing.VarianceKey` |
-| `CostingProductionVersion` | `Costing.CostingProductionVersion` |
-| `IsFixedPriceCoProduct` | `Costing.IsFixedPriceCoProduct` |
-| `BaseUnit` | `_Product.BaseUnit` |
-| `_Product` | *Association* |
-| `_BillOfMaterialUsageText` | *Association* |
-| `_ProductDescription` | *Association* |
-| `_BaseUnitOfMeasureText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `IsCoProduct` |  | |  |  |
+| `CostingLotSize` |  | |  |  |
+| `TaskListGroup` |  | |  |  |
+| `TaskListType` |  | |  |  |
+| `CostingSpecialProcurementType` |  | |  |  |
+| `SourceBOMAlternative` |  | |  |  |
+| `ProductBOMUsage` |  | |  |  |
+| `ProductIsCostingRelevant` |  | |  |  |
+| `TaskListGroupCounter` |  | |  |  |
+| `VarianceKey` |  | |  |  |
+| `CostingProductionVersion` |  | |  |  |
+| `IsFixedPriceCoProduct` |  | |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |
+| `_Product` | | ✓ | | |
+| `_BillOfMaterialUsageText` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | |
 
 ## Associations
 

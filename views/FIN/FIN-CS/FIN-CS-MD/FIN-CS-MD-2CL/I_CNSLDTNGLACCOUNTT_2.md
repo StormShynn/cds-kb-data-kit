@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Source.Language` |
-| key `ChartOfAccounts` | `cast( _Source.ChartOfAccounts as fincs_chartofaccounts preserving type )` |
-| `GLAccount` | `}] key cast( _Source.GLAccount as fincs_glaccount preserving type )` |
-| `AdditionalMasterDataSource` | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `GLAccountName` | `cast( _Source.GLAccountName as fincs_glaccountname preserving type )` |
-| `GLAccountLongName` | `cast( _Source.GLAccountLongName as fincs_long_description_50 preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_GLAccount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |
+| `ChartOfAccounts` | ✓ | |  | `cast( _Source.ChartOfAccounts as fincs_chartofaccounts preserving type )` |
+| `GLAccount` |  | |  | `}] key cast( _Source.GLAccount as fincs_glaccount preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
+| `GLAccountName` |  | |  | `cast( _Source.GLAccountName as fincs_glaccountname preserving type )` |
+| `GLAccountLongName` |  | |  | `cast( _Source.GLAccountLongName as fincs_long_description_50 preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
 
 ## Associations
 

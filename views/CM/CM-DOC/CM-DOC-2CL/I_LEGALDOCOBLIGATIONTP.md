@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDocOblgnUUID` | `LglCntntMDocOblgnUUID` |
-| `LglCntntMDocumentUUID` | `LglCntntMDocumentUUID` |
-| `LglCntntMDocObligation` | `LglCntntMDocObligation` |
-| `LglCntntMDocOblgnType` | `LglCntntMDocOblgnType` |
-| `LglCntntMDocument` | `LglCntntMDocument` |
-| `LglCntntMDocOblgnRisk` | `LglCntntMDocOblgnRisk` |
-| `LglCntntMDocOblgnStrtDte` | `LglCntntMDocOblgnStrtDte` |
-| `LglCntntMDocOblgnEndDte` | `LglCntntMDocOblgnEndDte` |
-| `LglCntntMDocOblgnHasRem` | `LglCntntMDocOblgnHasRem` |
-| `_Document` | *Association* |
-| `_LegalDocOblgnRcpnt` | *Association* |
-| `_LegalDocOblgnEntity` | *Association* |
-| `_LegalDocOblgnRem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocOblgnUUID` | ✓ | |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |
+| `LglCntntMDocObligation` |  | |  |  |
+| `LglCntntMDocOblgnType` |  | |  |  |
+| `LglCntntMDocument` |  | |  |  |
+| `LglCntntMDocOblgnRisk` |  | |  |  |
+| `LglCntntMDocOblgnStrtDte` |  | |  |  |
+| `LglCntntMDocOblgnEndDte` |  | |  |  |
+| `LglCntntMDocOblgnHasRem` |  | |  |  |
+| `_Document` | | ✓ | | |
+| `_LegalDocOblgnRcpnt` | | ✓ | | |
+| `_LegalDocOblgnEntity` | | ✓ | | |
+| `_LegalDocOblgnRem` | | ✓ | | |
 
 ## Source Code
 

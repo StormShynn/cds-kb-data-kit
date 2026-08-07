@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AdditionalMaterialGroup5` | `mvgr5` |
-| key `Language` | `spras` |
-| `AdditionalMaterialGroup5Name` | `bezei` |
-| `_AdditionalMaterialGroup5` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AdditionalMaterialGroup5` | ✓ | |  | `mvgr5` |
+| `Language` | ✓ | |  | `spras` |
+| `AdditionalMaterialGroup5Name` |  | |  | `bezei` |
+| `_AdditionalMaterialGroup5` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

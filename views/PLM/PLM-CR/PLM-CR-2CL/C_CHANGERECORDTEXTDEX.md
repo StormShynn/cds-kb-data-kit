@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeRecordReferenceTextUUID` | `ChangeRecordReferenceTextUUID` |
-| `Language` | `Language` |
-| `ChangeRecordReferenceUUID` | `ChangeRecordReferenceUUID` |
-| `ChangeRecordUUID` | `ChangeRecordUUID` |
-| `ChgRecordDescriptionText` | `ChgRecordDescriptionText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeRecordReferenceTextUUID` | ✓ | |  |  |
+| `Language` |  | |  |  |
+| `ChangeRecordReferenceUUID` |  | |  |  |
+| `ChangeRecordUUID` |  | |  |  |
+| `ChgRecordDescriptionText` |  | |  |  |
 
 ## Source Code
 

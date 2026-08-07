@@ -28,76 +28,76 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `AccountAssignmentNumber` | `AccountAssignmentNumber` |
-| `CostCenter` | `CostCenter` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `Quantity` | `Quantity` |
-| `PurchaseOrderQuantityUnit` | `OrderQuantityUnit` |
-| `MultipleAcctAssgmtDistrPercent` | `MultipleAcctAssgmtDistrPercent` |
-| `PurgDocNetAmount` | `PurgDocNetAmount` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `IsDeleted` | `IsDeleted` |
-| `GLAccount` | `GLAccount` |
-| `BusinessArea` | `BusinessArea` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `FixedAsset` | `FixedAsset` |
-| `OrderID` | `OrderID` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `ControllingArea` | `ControllingArea` |
-| `CostObject` | `CostObject` |
-| `ProfitabilitySegment` | `cast( case when ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad( ProfitabilitySegment_2, 10, '0' ) end as rkeobjnr_numc )` |
-| `ProfitabilitySegment_2` | `ProfitabilitySegment_2` |
-| `ProfitCenter` | `ProfitCenter` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElementInternalID_2` | `WBSElementInternalID_2` |
-| `ProjectNetworkInternalID` | `ProjectNetworkInternalID` |
-| `CommitmentItem` | `CommitmentItem` |
-| `CommitmentItemShortID` | `CommitmentItemShortID` |
-| `FundsCenter` | `FundsCenter` |
-| `Fund` | `Fund` |
-| `FunctionalArea` | `FunctionalArea` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `IsFinallyInvoiced` | `IsFinallyInvoiced` |
-| `RealEstateObject` | `cast (REInternalFinNumber as imkey preserving type )` |
-| `REInternalFinNumber` | `REInternalFinNumber` |
-| `NetworkActivityInternalID` | `NetworkActivityInternalID` |
-| `PartnerAccountNumber` | `PartnerAccountNumber` |
-| `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `SettlementReferenceDate` | `SettlementReferenceDate` |
-| `OrderInternalID` | `OrderInternalID` |
-| `OrderIntBillOfOperationsItem` | `OrderIntBillOfOperationsItem` |
-| `TaxCode` | `TaxCode` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `NonDeductibleInputTaxAmount` | `NonDeductibleInputTaxAmount` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `BusinessProcess` | `BusinessProcess` |
-| `GrantID` | `GrantID` |
-| `BudgetPeriod` | `BudgetPeriod` |
-| `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| `EarmarkedFundsItem` | `EarmarkedFundsItem` |
-| `EarmarkedFundsDocumentItem` | `EarmarkedFundsDocumentItem` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceDocument` | `ServiceDocument` |
-| `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `ValidityDate` | `ValidityDate` |
-| `ChartOfAccounts` | `ChartOfAccounts` |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CostCenterText` | *Association* |
-| `_GLAccountText` | *Association* |
-| `_BusinessAreaText` | *Association* |
-| `_ProfitCenterText` | *Association* |
-| `_TaxJurisdictionText` | *Association* |
-| `_PurchaseOrderQuantityUnitText` | *Association* |
-| `_DocumentCurrencyText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `AccountAssignmentNumber` | ✓ | |  |  |
+| `CostCenter` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  | `OrderQuantityUnit` |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
+| `PurgDocNetAmount` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `ProfitabilitySegment` |  | |  | `cast( case when ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad( ProfitabilitySegment_2, 10, '0' ) end as rkeobjnr_numc )` |
+| `ProfitabilitySegment_2` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementInternalID_2` |  | |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |
+| `CommitmentItem` |  | |  |  |
+| `CommitmentItemShortID` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `IsFinallyInvoiced` |  | |  |  |
+| `RealEstateObject` |  | |  | `cast (REInternalFinNumber as imkey preserving type )` |
+| `REInternalFinNumber` |  | |  |  |
+| `NetworkActivityInternalID` |  | |  |  |
+| `PartnerAccountNumber` |  | |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |
+| `SettlementReferenceDate` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |
+| `EarmarkedFundsItem` |  | |  |  |
+| `EarmarkedFundsDocumentItem` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `ValidityDate` |  | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CostCenterText` | | ✓ | | |
+| `_GLAccountText` | | ✓ | | |
+| `_BusinessAreaText` | | ✓ | | |
+| `_ProfitCenterText` | | ✓ | | |
+| `_TaxJurisdictionText` | | ✓ | | |
+| `_PurchaseOrderQuantityUnitText` | | ✓ | | |
+| `_DocumentCurrencyText` | | ✓ | | |
 
 ## Associations
 

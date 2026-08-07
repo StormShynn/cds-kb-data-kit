@@ -31,48 +31,48 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `EWMWarehouse` | `EWMWarehouse` |
-| key `EntitledToDisposeParty` | `EntitledToDisposeParty` |
-| `ProductInternalUUID` | `ProductInternalUUID` |
-| `SupplyChainUnitUUID` | `SupplyChainUnitUUID` |
-| `EWMPartyEntitledToDisposeUUID` | `EWMPartyEntitledToDisposeUUID` |
-| `BaseUnit` | `BaseUnit` |
-| `EWMProductProcessBlockProfile` | `EWMProductProcessBlockProfile` |
-| `EWMProcessTypeControlCode` | `EWMProcessTypeControlCode` |
-| `EWMProductLoadCategory` | `EWMProductLoadCategory` |
-| `EWMStggAreaDeterminationGroup` | `EWMStggAreaDeterminationGroup` |
-| `EWMIsCnsmpnRlvtForValAddedSrvc` | `EWMIsCnsmpnRlvtForValAddedSrvc` |
-| `RequiredMinShelfLife` | `RequiredMinShelfLife` |
-| `EWMPtwyControlStrategy` | `EWMPtwyControlStrategy` |
-| `EWMStorageSectionMethod` | `EWMStorageSectionMethod` |
-| `EWMStorageBinType` | `EWMStorageBinType` |
-| `EWMBulkStorageMethod` | `EWMBulkStorageMethod` |
-| `EWMStockRemovalControlStrategy` | `EWMStockRemovalControlStrategy` |
-| `EWMStockDeterminationGroup` | `EWMStockDeterminationGroup` |
-| `EWMProdTwoStepPickingRelevant` | `EWMProdTwoStepPickingRelevant` |
-| `EWMSltgRequirementQuantity` | `EWMSltgRequirementQuantity` |
-| `EWMSltgNumberOfSalesOrderItems` | `EWMSltgNumberOfSalesOrderItems` |
-| `EWMSltgRecmddStorageQuantity` | `EWMSltgRecmddStorageQuantity` |
-| `EWMSlottingWeightSizeCode` | `EWMSlottingWeightSizeCode` |
-| `EWMSlottingVolumeSizeCode` | `EWMSlottingVolumeSizeCode` |
-| `EWMSlottingLengthSizeCode` | `EWMSlottingLengthSizeCode` |
-| `EWMSlottingWidthSizeCode` | `EWMSlottingWidthSizeCode` |
-| `EWMSlottingHeightSizeCode` | `EWMSlottingHeightSizeCode` |
-| `EWMPhysInventoryCountingCycle` | `EWMPhysInventoryCountingCycle` |
-| `EWMProdBackflushWthdrwlMethod` | `EWMProdBackflushWthdrwlMethod` |
-| `EWMKitQuantityCorrelation` | `EWMKitQuantityCorrelation` |
-| `EWMQuantityAdjustmentProfile` | `EWMQuantityAdjustmentProfile` |
-| `EWMMrchdsDistrQtyClassfctn` | `EWMMrchdsDistrQtyClassfctn` |
-| `EWMPreferredUnit` | `EWMPreferredUnit` |
-| `EWMQualityInspectionGroup` | `EWMQualityInspectionGroup` |
-| `_BusinessPartner` | *Association* |
-| `_Product` | *Association* |
-| `_ProductEWMStorageType` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_UnitOfMeasureText_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `EWMWarehouse` | ✓ | |  |  |
+| `EntitledToDisposeParty` | ✓ | |  |  |
+| `ProductInternalUUID` |  | |  |  |
+| `SupplyChainUnitUUID` |  | |  |  |
+| `EWMPartyEntitledToDisposeUUID` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `EWMProductProcessBlockProfile` |  | |  |  |
+| `EWMProcessTypeControlCode` |  | |  |  |
+| `EWMProductLoadCategory` |  | |  |  |
+| `EWMStggAreaDeterminationGroup` |  | |  |  |
+| `EWMIsCnsmpnRlvtForValAddedSrvc` |  | |  |  |
+| `RequiredMinShelfLife` |  | |  |  |
+| `EWMPtwyControlStrategy` |  | |  |  |
+| `EWMStorageSectionMethod` |  | |  |  |
+| `EWMStorageBinType` |  | |  |  |
+| `EWMBulkStorageMethod` |  | |  |  |
+| `EWMStockRemovalControlStrategy` |  | |  |  |
+| `EWMStockDeterminationGroup` |  | |  |  |
+| `EWMProdTwoStepPickingRelevant` |  | |  |  |
+| `EWMSltgRequirementQuantity` |  | |  |  |
+| `EWMSltgNumberOfSalesOrderItems` |  | |  |  |
+| `EWMSltgRecmddStorageQuantity` |  | |  |  |
+| `EWMSlottingWeightSizeCode` |  | |  |  |
+| `EWMSlottingVolumeSizeCode` |  | |  |  |
+| `EWMSlottingLengthSizeCode` |  | |  |  |
+| `EWMSlottingWidthSizeCode` |  | |  |  |
+| `EWMSlottingHeightSizeCode` |  | |  |  |
+| `EWMPhysInventoryCountingCycle` |  | |  |  |
+| `EWMProdBackflushWthdrwlMethod` |  | |  |  |
+| `EWMKitQuantityCorrelation` |  | |  |  |
+| `EWMQuantityAdjustmentProfile` |  | |  |  |
+| `EWMMrchdsDistrQtyClassfctn` |  | |  |  |
+| `EWMPreferredUnit` |  | |  |  |
+| `EWMQualityInspectionGroup` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductEWMStorageType` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_UnitOfMeasureText_2` | | ✓ | | |
 
 ## Source Code
 

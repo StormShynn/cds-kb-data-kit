@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `EWMWarehouse` |
-| key `EntitledToDisposeParty` | `EntitledToDisposeParty` |
-| key `EWMProductionSupplyArea` | `EWMProductionSupplyArea` |
-| key `Product` | `Product` |
-| `ProductUUID` | `ProductUUID` |
-| `EWMStorageBin` | `EWMStorageBin` |
-| `EWMStagingMethod` | `EWMStagingMethod` |
-| `EWMQtyCalcTypeForStaging` | `EWMQtyCalcTypeForStaging` |
-| `EWMReplnmtForPartsQuantity` | `EWMReplnmtForPartsQuantity` |
-| `EWMProdnSupAreaMinProdQty` | `EWMProdnSupAreaMinProdQty` |
-| `EWMStagingQuantityUnit` | `EWMStagingQuantityUnit` |
-| `EWMWhseProcessTypeForStaging` | `EWMWhseProcessTypeForStaging` |
-| `EWMWhseProcTypeToClearPSArea` | `EWMWhseProcTypeToClearPSArea` |
-| `_EWMProductionSupplyAreaText` | *Association* |
-| `_ProductText` | *Association* |
-| `_EWMStagingMethodText` | *Association* |
-| `_EWMQtyCalcTypeForStagingText` | *Association* |
-| `_EWMWhseProcTypeForStagingText` | *Association* |
-| `_WhseProcTypeToClearPSAreaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  |  |
+| `EntitledToDisposeParty` | ✓ | |  |  |
+| `EWMProductionSupplyArea` | ✓ | |  |  |
+| `Product` | ✓ | |  |  |
+| `ProductUUID` |  | |  |  |
+| `EWMStorageBin` |  | |  |  |
+| `EWMStagingMethod` |  | |  |  |
+| `EWMQtyCalcTypeForStaging` |  | |  |  |
+| `EWMReplnmtForPartsQuantity` |  | |  |  |
+| `EWMProdnSupAreaMinProdQty` |  | |  |  |
+| `EWMStagingQuantityUnit` |  | |  |  |
+| `EWMWhseProcessTypeForStaging` |  | |  |  |
+| `EWMWhseProcTypeToClearPSArea` |  | |  |  |
+| `_EWMProductionSupplyAreaText` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_EWMStagingMethodText` | | ✓ | | |
+| `_EWMQtyCalcTypeForStagingText` | | ✓ | | |
+| `_EWMWhseProcTypeForStagingText` | | ✓ | | |
+| `_WhseProcTypeToClearPSAreaText` | | ✓ | | |
 
 ## Associations
 

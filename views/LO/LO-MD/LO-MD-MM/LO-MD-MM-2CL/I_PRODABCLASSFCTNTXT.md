@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialABCClassification` | `cast(maabc as abcindicator preserving type )` |
-| key `Language` | `tmabct.spras` |
-| `MaterialABCClassificationDesc` | `tmabc` |
-| `_ABCIndicator` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialABCClassification` | ✓ | |  | `cast(maabc as abcindicator preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `MaterialABCClassificationDesc` |  | |  | `tmabc` |
+| `_ABCIndicator` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

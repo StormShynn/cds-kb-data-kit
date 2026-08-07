@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `EWMWarehouse` |
-| key `WarehouseTask` | `cast( WarehouseTask as /scwm/tanum_noconv preserving type )` |
-| key `WarehouseTaskItem` | `cast( '0000' as /scwm/tapos_noconv preserving type )` |
-| key `EWMSerialNumber` | `cast( EWMSerialNumber as char30 preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  |  |
+| `WarehouseTask` | ✓ | |  | `cast( WarehouseTask as /scwm/tanum_noconv preserving type )` |
+| `WarehouseTaskItem` | ✓ | |  | `cast( '0000' as /scwm/tapos_noconv preserving type )` |
+| `EWMSerialNumber` | ✓ | |  | `cast( EWMSerialNumber as char30 preserving type )` |
 
 ## Source Code
 

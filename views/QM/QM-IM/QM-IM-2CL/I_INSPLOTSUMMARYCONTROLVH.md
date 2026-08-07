@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLotOrigin` | `InspectionLotOrigin` |
-| key `InspLotSummaryControl` | `InspLotSummaryControl` |
-| `_InspectionLotOrigin` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLotOrigin` | ✓ | |  |  |
+| `InspLotSummaryControl` | ✓ | |  |  |
+| `_InspectionLotOrigin` | | ✓ | | |
 
 ## Source Code
 

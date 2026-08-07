@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialDataSource` | `cast( _Source.FinancialDataSource as fincs_financialdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialDataSource` | ✓ | |  | `cast( _Source.FinancialDataSource as fincs_financialdatasource preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(ddlanguage as spras preserving type )` |
-| key `CnsldtnSubassignment` | `cast(case rollname when 'RTCUR' then 'TransactionCurrency' when 'FC_BUPTR' then 'PartnerConsolidationUnit' when 'FC_SITYP' then 'SubItemCategory' when 'FC_SITEM' then 'SubItem' when 'MEINS' then 'BaseUnit' else '' end as fincs_subassignment )` |
-| `CnsldtnSubassignmentText` | `cast ( scrtext_l as fincs_subassignmenttext preserving type )` |
-| `_Language` | *Association* |
-| `_CnsldtnSubassignment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
+| `CnsldtnSubassignment` | ✓ | |  | `cast(case rollname when 'RTCUR' then 'TransactionCurrency' when 'FC_BUPTR' then 'PartnerConsolidationUnit' when 'FC_SITYP' then 'SubItemCategory' when 'FC_SITEM' then 'SubItem' when 'MEINS' then 'BaseUnit' else '' end as fincs_subassignment )` |
+| `CnsldtnSubassignmentText` |  | |  | `cast ( scrtext_l as fincs_subassignmenttext preserving type )` |
+| `_Language` | | ✓ | | |
+| `_CnsldtnSubassignment` | | ✓ | | |
 
 ## Associations
 

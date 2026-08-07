@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `ForecastPeriodType` | `cast(perkz as periotype preserving type)` |
-| key `ProdFcstRequirementsSplitCode` | `auftl` |
-| `NumberOfDailyFcstRequirements` | `anztg` |
-| `NumberOfWeeklyFcstRequirements` | `anzwo` |
-| `_Plant` | *Association* |
-| `_ForecastPeriodType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `ForecastPeriodType` | ✓ | |  | `cast(perkz as periotype preserving type)` |
+| `ProdFcstRequirementsSplitCode` | ✓ | |  | `auftl` |
+| `NumberOfDailyFcstRequirements` |  | |  | `anztg` |
+| `NumberOfWeeklyFcstRequirements` |  | |  | `anzwo` |
+| `_Plant` | | ✓ | | |
+| `_ForecastPeriodType` | | ✓ | | |
 
 ## Associations
 

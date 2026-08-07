@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Status` | `t141t.mmsta` |
-| key `Language` | `spras` |
-| `MaterialUsabilityProfileName` | `cast(t141t.mtstb as crossplantstatustext preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Status` | ✓ | |  | `mmsta` |
+| `Language` | ✓ | |  | `spras` |
+| `MaterialUsabilityProfileName` |  | |  | `cast(t141t.mtstb as crossplantstatustext preserving type )` |
 
 ## Source Code
 

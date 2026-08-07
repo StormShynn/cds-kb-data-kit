@@ -30,59 +30,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationOrder` | `TransportationOrder` |
-| `TransportationOrderType` | `TransportationOrderType` |
-| `TransportationOrderCategory` | `TransportationOrderCategory` |
-| `TransportationShippingType` | `TransportationShippingType` |
-| `MovementType` | `MovementType` |
-| `TransportationMode` | `TransportationMode` |
-| `TransportationModeCategory` | `TransportationModeCategory` |
-| `CarrierUUID` | `CarrierUUID` |
-| `Carrier` | `Carrier` |
-| `StandardCarrierAlphaCode` | `StandardCarrierAlphaCode` |
-| `TranspOrdExecutingCarrierUUID` | `TranspOrdExecutingCarrierUUID` |
-| `TranspOrdExecutingCarrier` | `TranspOrdExecutingCarrier` |
-| `ShipperUUID` | `ShipperUUID` |
-| `Shipper` | `Shipper` |
-| `ShipperAddressID` | `ShipperAddressID` |
-| `ConsigneeUUID` | `ConsigneeUUID` |
-| `Consignee` | `Consignee` |
-| `ConsigneeAddressID` | `ConsigneeAddressID` |
-| `TranspPurgOrg` | `TranspPurgOrg` |
-| `TranspPurgOrgExtID` | `TranspPurgOrgExtID` |
-| `TranspPurgGroup` | `TranspPurgGroup` |
-| `TranspPurgGroupExtID` | `TranspPurgGroupExtID` |
-| `PurgOrgCompanyCode` | `PurgOrgCompanyCode` |
-| `CarrierAccountNumber` | `CarrierAccountNumber` |
-| `TranspOrdPartnerReference` | `TranspOrdPartnerReference` |
-| `MasterBillOfLading` | `MasterBillOfLading` |
-| `TranspOrdResponsiblePerson` | `TranspOrdResponsiblePerson` |
-| `TranspOrdHasMltplExectgPties` | `TranspOrdHasMltplExectgPties` |
-| `TranspOrdInvoicingCarrierLevel` | `TranspOrdInvoicingCarrierLevel` |
-| `TranspOrdOrderDateTime` | `TranspOrdOrderDateTime` |
-| `TranspOrdLifeCycleStatus` | `TranspOrdLifeCycleStatus` |
-| `TranspOrderSubcontrgSts` | `TranspOrderSubcontrgSts` |
-| `TransportationOrderConfSts` | `TransportationOrderConfSts` |
-| `TransportationOrderExecSts` | `TransportationOrderExecSts` |
-| `TranspOrdGoodsMovementStatus` | `TranspOrdGoodsMovementStatus` |
-| `TranspOrdWhseProcessingStatus` | `TranspOrdWhseProcessingStatus` |
-| `TranspOrderDngrsGdsSts` | `TranspOrderDngrsGdsSts` |
-| `TranspOrdExecutionIsBlocked` | `TranspOrdExecutionIsBlocked` |
-| `TransportationOrderCrtnType` | `TransportationOrderCrtnType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `I_FreightBookingBPTP` | `FreightBooking._TransportationOrderBP as _FreightBookingBusinessPartner : redirected to composition child I_FreightBookingBPTP` |
-| `I_FreightBookingDocRefTP` | `FreightBooking._TranspOrdDocumentReference as _FreightBookingDocRef : redirected to composition child I_FreightBookingDocRefTP` |
-| `I_FreightBookingItemTP` | `FreightBooking._TransportationOrderItem as _FreightBookingItem : redirected to composition child I_FreightBookingItemTP` |
-| `I_FreightBookingStopTP` | `FreightBooking._TransportationOrderStop as _FreightBookingStop : redirected to composition child I_FreightBookingStopTP` |
-| `I_FreightBookingEventTP` | `FreightBooking._TransportationOrderEvent as _FreightBookingEvent : redirected to composition child I_FreightBookingEventTP` |
-| `I_FreightBookingChargeTP` | `FreightBooking._TransportationOrderCharge as _FreightBookingCharge : redirected to composition child I_FreightBookingChargeTP` |
-| `I_FrtBkgMainBPAddrDfltRprstnTP` | `FreightBooking._TrOrdMainBPAddrDfltRprstn as _FrtBkgMainBPAddrDfltRprstn : redirected to composition child I_FrtBkgMainBPAddrDfltRprstnTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderUUID` | ✓ | |  |  |
+| `TransportationOrder` |  | |  |  |
+| `TransportationOrderType` |  | |  |  |
+| `TransportationOrderCategory` |  | |  |  |
+| `TransportationShippingType` |  | |  |  |
+| `MovementType` |  | |  |  |
+| `TransportationMode` |  | |  |  |
+| `TransportationModeCategory` |  | |  |  |
+| `CarrierUUID` |  | |  |  |
+| `Carrier` |  | |  |  |
+| `StandardCarrierAlphaCode` |  | |  |  |
+| `TranspOrdExecutingCarrierUUID` |  | |  |  |
+| `TranspOrdExecutingCarrier` |  | |  |  |
+| `ShipperUUID` |  | |  |  |
+| `Shipper` |  | |  |  |
+| `ShipperAddressID` |  | |  |  |
+| `ConsigneeUUID` |  | |  |  |
+| `Consignee` |  | |  |  |
+| `ConsigneeAddressID` |  | |  |  |
+| `TranspPurgOrg` |  | |  |  |
+| `TranspPurgOrgExtID` |  | |  |  |
+| `TranspPurgGroup` |  | |  |  |
+| `TranspPurgGroupExtID` |  | |  |  |
+| `PurgOrgCompanyCode` |  | |  |  |
+| `CarrierAccountNumber` |  | |  |  |
+| `TranspOrdPartnerReference` |  | |  |  |
+| `MasterBillOfLading` |  | |  |  |
+| `TranspOrdResponsiblePerson` |  | |  |  |
+| `TranspOrdHasMltplExectgPties` |  | |  |  |
+| `TranspOrdInvoicingCarrierLevel` |  | |  |  |
+| `TranspOrdOrderDateTime` |  | |  |  |
+| `TranspOrdLifeCycleStatus` |  | |  |  |
+| `TranspOrderSubcontrgSts` |  | |  |  |
+| `TransportationOrderConfSts` |  | |  |  |
+| `TransportationOrderExecSts` |  | |  |  |
+| `TranspOrdGoodsMovementStatus` |  | |  |  |
+| `TranspOrdWhseProcessingStatus` |  | |  |  |
+| `TranspOrderDngrsGdsSts` |  | |  |  |
+| `TranspOrdExecutionIsBlocked` |  | |  |  |
+| `TransportationOrderCrtnType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `I_FreightBookingBPTP` |  | |  | `FreightBooking._TransportationOrderBP as _FreightBookingBusinessPartner : redirected to composition child I_FreightBookingBPTP` |
+| `I_FreightBookingDocRefTP` |  | |  | `FreightBooking._TranspOrdDocumentReference as _FreightBookingDocRef : redirected to composition child I_FreightBookingDocRefTP` |
+| `I_FreightBookingItemTP` |  | |  | `FreightBooking._TransportationOrderItem as _FreightBookingItem : redirected to composition child I_FreightBookingItemTP` |
+| `I_FreightBookingStopTP` |  | |  | `FreightBooking._TransportationOrderStop as _FreightBookingStop : redirected to composition child I_FreightBookingStopTP` |
+| `I_FreightBookingEventTP` |  | |  | `FreightBooking._TransportationOrderEvent as _FreightBookingEvent : redirected to composition child I_FreightBookingEventTP` |
+| `I_FreightBookingChargeTP` |  | |  | `FreightBooking._TransportationOrderCharge as _FreightBookingCharge : redirected to composition child I_FreightBookingChargeTP` |
+| `I_FrtBkgMainBPAddrDfltRprstnTP` |  | |  | `FreightBooking._TrOrdMainBPAddrDfltRprstn as _FrtBkgMainBPAddrDfltRprstn : redirected to composition child I_FrtBkgMainBPAddrDfltRprstnTP` |
 
 ## Source Code
 

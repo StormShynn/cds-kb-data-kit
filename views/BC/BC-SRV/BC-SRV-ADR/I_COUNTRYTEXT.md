@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `Language` | `spras` |
-| `CountryName` | `landx50` |
-| `NationalityName` | `natio` |
-| `NationalityLongName` | `natio50` |
-| `CountryShortName` | `landx` |
-| `_Language` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `Language` | ✓ | |  | `spras` |
+| `CountryName` |  | |  | `landx50` |
+| `NationalityName` |  | |  | `natio` |
+| `NationalityLongName` |  | |  | `natio50` |
+| `CountryShortName` |  | |  | `landx` |
+| `_Language` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

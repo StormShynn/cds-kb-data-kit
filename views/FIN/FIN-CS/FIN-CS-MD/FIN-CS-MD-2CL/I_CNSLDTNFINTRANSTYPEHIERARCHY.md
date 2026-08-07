@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnFinTransTypeHierarchy` | `cast(_Hierarchy.CnsldtnUniversalHierarchy as fincs_fintransactiontypehier preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
-| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnFinTransTypeHierarchy` | ✓ | |  | `cast(_Hierarchy.CnsldtnUniversalHierarchy as fincs_fintransactiontypehier preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

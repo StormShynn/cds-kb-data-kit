@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `ProjectRoleCategory` | `cast( dd07t.domvalue_l as /s4ppm/tv_role_category )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `ProjectRoleCategoryText` | `cast( dd07t.ddtext as /s4ppm/tv_role_category_name preserving type )` |
-| `_Language` | *Association* |
-| `_EntProjectRoleCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ProjectRoleCategory` | ✓ | |  | `cast( dd07t.domvalue_l as /s4ppm/tv_role_category )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `ProjectRoleCategoryText` |  | |  | `cast( dd07t.ddtext as /s4ppm/tv_role_category_name preserving type )` |
+| `_Language` | | ✓ | | |
+| `_EntProjectRoleCategory` | | ✓ | | |
 
 ## Associations
 

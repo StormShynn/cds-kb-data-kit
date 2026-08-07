@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `partner` |
-| `BusinessPartnerName` | `_BusinessPartner.BusinessPartnerName` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `CreditCheckRule` | `check_rule` |
-| `CreditScoreAndLimitCalcRule` | `limit_rule` |
-| `CreditRiskClass` | `risk_class` |
-| `CreditAccountGroup` | `credit_group` |
-| `CrdtMgmtBusinessPartnerGroup` | `credit_group` |
-| `_BusinessPartner` | *Association* |
-| `_CreditRiskClass` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `BusinessPartnerName` |  | | `_BusinessPartner` | `BusinessPartnerName` |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `CreditCheckRule` |  | |  | `check_rule` |
+| `CreditScoreAndLimitCalcRule` |  | |  | `limit_rule` |
+| `CreditRiskClass` |  | |  | `risk_class` |
+| `CreditAccountGroup` |  | |  | `credit_group` |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  | `credit_group` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CreditRiskClass` | | ✓ | | |
 
 ## Associations
 

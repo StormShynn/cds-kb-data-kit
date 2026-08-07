@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'I_FiscalYearVariant'` | `name: 'I_FiscalYearVariant'` |
-| `'FiscalYearVariant'` | `element: 'FiscalYearVariant'` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'I_FiscalYearVariant'` |  | |  | `name: 'I_FiscalYearVariant'` |
+| `'FiscalYearVariant'` |  | |  | `element: 'FiscalYearVariant'` |
 
 ## Source Code
 

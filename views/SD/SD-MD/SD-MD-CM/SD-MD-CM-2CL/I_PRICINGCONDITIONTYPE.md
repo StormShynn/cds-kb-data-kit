@@ -31,53 +31,53 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionApplication` | `_t685.kappl` |
-| key `ConditionType` | `_t685.kschl` |
-| `ConditionUsage` | `_t685.kvewe` |
-| `AccessSequence` | `_t685.kozgf` |
-| `ConditionClass` | `_t685a.koaid` |
-| `ConditionCalculationType` | `cast(_t685a.krech as krech_long)` |
-| `ConditionCategory` | `_t685a.kntyp` |
-| `PrcgCndnAmountRoundingRule` | `_t685a.txprf` |
-| `PricingConditionFunction` | `_t685a.purp` |
-| `StructureCondition` | `_t685a.kdupl` |
-| `PrcgConditionAmountSign` | `_t685a.knega` |
-| `IsGroupCondition` | `_t685a.kgrpe` |
-| `PrcgCndnRndngDiffsIsSettled` | `_t685a.rdifa` |
-| `PrcgGroupConditionRoutine` | `_t685a.grlnr` |
-| `CndnManualEntries` | `_t685a.kmanu` |
-| `CndnAppliesHeader` | `_t685a.kkopf` |
-| `CndnAppliesItems` | `_t685a.kposi` |
-| `PrcgCndnTypeDeletionIsAllowed` | `_t685a.kaend_loe` |
-| `PrcgCndnAmountChangedIsAllowed` | `_t685a.kaend_btr` |
-| `PrcgCndnCnvrsnFctrChgIsAllowed` | `_t685a.kaend_ufk` |
-| `PrcgCndnValChgIsAllwd` | `_t685a.kaend_wrt` |
-| `PrcgCndnPrpsdValidFromDateCode` | `_t685.dtvob` |
-| `PrcgCndnPrpsdValidToDateCode` | `_t685.datvo` |
-| `PricingProcedure` | `_t685a.kalsm` |
-| `PrcgConditionDeletionMethod` | `_t685a.kdele` |
-| `CndnIsRelevantForLimitValue` | `_t685a.koupd` |
-| `PricingScaleBasisShort` | `_t685a.kzbzg` |
-| `PricingScaleCheckingRule` | `_t685a.kstpr` |
-| `PricingScaleType` | `_t685a.stfkz` |
-| `PricingScaleRoutine` | `_t685a.kofrs` |
-| `PricingScaleUnit` | `_t685a.grmen` |
-| `PrcgCndnCrcyCnvrsnIsAftMltpl` | `_t685a.ganzz` |
-| `IsRelevantForAccrual` | `_t685a.kruek` |
-| `CndnIsForVariantConfiguration` | `_t685a.kvarc` |
-| `PrcgCndnQtyCnvrsnIsActivated` | `_t685a.kmeng` |
-| `CndnIsRelevantForIntcoBilling` | `_t685a.kfkiv` |
-| `ConditionExclusion` | `_t685a.kznep` |
-| `PricingDateIdentificationCode` | `_t685a.kprdt` |
-| `CndnValueZeroProcgCode` | `_t685a.val_zero` |
-| `IsRelevantForSalesPriceCalc` | `_t685a.vkkal` |
-| `ConditionTypeIsInclusionPoint` | `_t685a.isinclusionpoint` |
-| `PricingSubprocedureMaxStep` | `_t685a.pricingsubproceduremaxstep` |
-| `_ConditionApplication` | *Association* |
-| `_Text` | *Association* |
-| `_Text_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionApplication` | ✓ | | `_t685` | `kappl` |
+| `ConditionType` | ✓ | | `_t685` | `kschl` |
+| `ConditionUsage` |  | | `_t685` | `kvewe` |
+| `AccessSequence` |  | | `_t685` | `kozgf` |
+| `ConditionClass` |  | | `_t685a` | `koaid` |
+| `ConditionCalculationType` |  | |  | `cast(_t685a.krech as krech_long)` |
+| `ConditionCategory` |  | | `_t685a` | `kntyp` |
+| `PrcgCndnAmountRoundingRule` |  | | `_t685a` | `txprf` |
+| `PricingConditionFunction` |  | | `_t685a` | `purp` |
+| `StructureCondition` |  | | `_t685a` | `kdupl` |
+| `PrcgConditionAmountSign` |  | | `_t685a` | `knega` |
+| `IsGroupCondition` |  | | `_t685a` | `kgrpe` |
+| `PrcgCndnRndngDiffsIsSettled` |  | | `_t685a` | `rdifa` |
+| `PrcgGroupConditionRoutine` |  | | `_t685a` | `grlnr` |
+| `CndnManualEntries` |  | | `_t685a` | `kmanu` |
+| `CndnAppliesHeader` |  | | `_t685a` | `kkopf` |
+| `CndnAppliesItems` |  | | `_t685a` | `kposi` |
+| `PrcgCndnTypeDeletionIsAllowed` |  | | `_t685a` | `kaend_loe` |
+| `PrcgCndnAmountChangedIsAllowed` |  | | `_t685a` | `kaend_btr` |
+| `PrcgCndnCnvrsnFctrChgIsAllowed` |  | | `_t685a` | `kaend_ufk` |
+| `PrcgCndnValChgIsAllwd` |  | | `_t685a` | `kaend_wrt` |
+| `PrcgCndnPrpsdValidFromDateCode` |  | | `_t685` | `dtvob` |
+| `PrcgCndnPrpsdValidToDateCode` |  | | `_t685` | `datvo` |
+| `PricingProcedure` |  | | `_t685a` | `kalsm` |
+| `PrcgConditionDeletionMethod` |  | | `_t685a` | `kdele` |
+| `CndnIsRelevantForLimitValue` |  | | `_t685a` | `koupd` |
+| `PricingScaleBasisShort` |  | | `_t685a` | `kzbzg` |
+| `PricingScaleCheckingRule` |  | | `_t685a` | `kstpr` |
+| `PricingScaleType` |  | | `_t685a` | `stfkz` |
+| `PricingScaleRoutine` |  | | `_t685a` | `kofrs` |
+| `PricingScaleUnit` |  | | `_t685a` | `grmen` |
+| `PrcgCndnCrcyCnvrsnIsAftMltpl` |  | | `_t685a` | `ganzz` |
+| `IsRelevantForAccrual` |  | | `_t685a` | `kruek` |
+| `CndnIsForVariantConfiguration` |  | | `_t685a` | `kvarc` |
+| `PrcgCndnQtyCnvrsnIsActivated` |  | | `_t685a` | `kmeng` |
+| `CndnIsRelevantForIntcoBilling` |  | | `_t685a` | `kfkiv` |
+| `ConditionExclusion` |  | | `_t685a` | `kznep` |
+| `PricingDateIdentificationCode` |  | | `_t685a` | `kprdt` |
+| `CndnValueZeroProcgCode` |  | | `_t685a` | `val_zero` |
+| `IsRelevantForSalesPriceCalc` |  | | `_t685a` | `vkkal` |
+| `ConditionTypeIsInclusionPoint` |  | | `_t685a` | `isinclusionpoint` |
+| `PricingSubprocedureMaxStep` |  | | `_t685a` | `pricingsubproceduremaxstep` |
+| `_ConditionApplication` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_Text_2` | | ✓ | | |
 
 ## Associations
 

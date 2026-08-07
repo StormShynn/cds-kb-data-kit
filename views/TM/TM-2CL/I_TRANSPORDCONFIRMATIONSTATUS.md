@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderConfSts` | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_confirm_status preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderConfSts` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_confirm_status preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

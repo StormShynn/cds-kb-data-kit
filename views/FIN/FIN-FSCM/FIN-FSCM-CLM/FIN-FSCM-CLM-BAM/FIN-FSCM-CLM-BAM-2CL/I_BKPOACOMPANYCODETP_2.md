@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankPowerOfAttorneyUUID` | `BankPowerOfAttorneyUUID` |
-| key `BkPOACompanyCodeUUID` | `BkPOACompanyCodeUUID` |
-| `BkPOACompanyCode` | `BkPOACompanyCode` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_BankPowerOfAttorney` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` | ✓ | |  |  |
+| `BkPOACompanyCodeUUID` | ✓ | |  |  |
+| `BkPOACompanyCode` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_BankPowerOfAttorney` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Source Code
 

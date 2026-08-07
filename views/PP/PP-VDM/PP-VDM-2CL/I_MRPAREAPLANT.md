@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPArea` | `mdlw.berid` |
-| key `MRPAreaPlant` | `cast(mdlw.werks as werzg preserving type)` |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPArea` | ✓ | |  | `berid` |
+| `MRPAreaPlant` | ✓ | |  | `cast(mdlw.werks as werzg preserving type)` |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

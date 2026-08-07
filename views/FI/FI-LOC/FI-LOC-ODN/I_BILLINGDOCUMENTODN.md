@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AFDFUniqueKeyUUID` | `AFDFUniqueKeyUUID` |
-| key `BillingDocument` | `cast( AFDFDocumentKey1 as vbeln_vf )` |
-| `OfficialDocumentNumberCountry` | `OfficialDocumentNumberCountry` |
-| `OfficialDocumentNumberType` | `OfficialDocumentNumberType` |
-| `OfficialDocumentNumber` | `OfficialDocumentNumber` |
-| `ODNLegalDateTimeText` | `ODNLegalDateTimeText` |
-| `OfficialDocumentNumberIntType` | `OfficialDocumentNumberIntType` |
-| `OfficialDocumentNumberTypeText` | `OfficialDocumentNumberTypeText` |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AFDFUniqueKeyUUID` | ✓ | |  |  |
+| `BillingDocument` | ✓ | |  | `cast( AFDFDocumentKey1 as vbeln_vf )` |
+| `OfficialDocumentNumberCountry` |  | |  |  |
+| `OfficialDocumentNumberType` |  | |  |  |
+| `OfficialDocumentNumber` |  | |  |  |
+| `ODNLegalDateTimeText` |  | |  |  |
+| `OfficialDocumentNumberIntType` |  | |  |  |
+| `OfficialDocumentNumberTypeText` |  | |  |  |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

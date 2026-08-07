@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PriceListType` | `pltyp` |
-| key `Language` | `spras` |
-| `PriceListTypeName` | `ptext` |
-| `_PriceListType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PriceListType` | ✓ | |  | `pltyp` |
+| `Language` | ✓ | |  | `spras` |
+| `PriceListTypeName` |  | |  | `ptext` |
+| `_PriceListType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

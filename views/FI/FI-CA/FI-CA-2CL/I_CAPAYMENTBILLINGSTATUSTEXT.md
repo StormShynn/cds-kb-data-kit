@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPaymentBillingStatus` | `cast( left( dd07t.domvalue_l, 1 ) as xsett_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAPaymentBillingStatusText` | `cast( ddtext as xsett_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPaymentBillingStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xsett_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAPaymentBillingStatusText` |  | |  | `cast( ddtext as xsett_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

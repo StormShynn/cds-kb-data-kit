@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PlannedStartDate` | `/s4ppm/tv_ltst_start_date` |
-| `PlannedEndDate` | `/s4ppm/tv_ltst_end_date` |
-| `EntProjElmntDistributionOption` | `/s4ppm/tv_distributiontype` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlannedStartDate` |  | |  | `/s4ppm/tv_ltst_start_date` |
+| `PlannedEndDate` |  | |  | `/s4ppm/tv_ltst_end_date` |
+| `EntProjElmntDistributionOption` |  | |  | `/s4ppm/tv_distributiontype` |
 
 ## Source Code
 

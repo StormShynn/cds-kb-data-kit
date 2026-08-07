@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `Customer` |
-| key `CompanyCode` | `CompanyCode` |
-| `Country` | `_Customer.Country` |
-| `BPCustomerName` | `_Customer.BPCustomerName` |
-| `CompanyCodeName` | `_CompanyCode.CompanyCodeName` |
-| `_Customer` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `Country` |  | | `_Customer` | `Country` |
+| `BPCustomerName` |  | | `_Customer` | `BPCustomerName` |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |
+| `_Customer` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Source Code
 

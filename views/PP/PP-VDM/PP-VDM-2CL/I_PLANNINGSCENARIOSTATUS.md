@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPPlanningScenarioStatus` | `cast( substring(l.domvalue_l, 1, 1) as psact preserving type)` |
-| `DomainValue` | `l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPPlanningScenarioStatus` | ✓ | |  | `cast( substring(l.domvalue_l, 1, 1) as psact preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

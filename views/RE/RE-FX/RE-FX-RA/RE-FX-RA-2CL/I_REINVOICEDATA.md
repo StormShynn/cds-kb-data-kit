@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `REInvoiceNumber` | `REInvoiceNumber` |
-| key `FiscalYear` | `FiscalYear` |
-| `REInvoiceUUID` | `REInvoiceUUID` |
-| `REProcessUUID` | `REProcessUUID` |
-| `REContractType` | `_REContract.REContractType` |
-| `REAuthorizationGroup` | `_REContract.REAuthorizationGroup` |
-| `Partner` | `Partner` |
-| `Role` | `Role` |
-| `StatusObject` | `StatusObject` |
-| `RealEstateContract` | `RealEstateContract` |
-| `RealEstateProcess` | `RealEstateProcess` |
-| `REInvoiceDuePeriodStartDate` | `REInvoiceDuePeriodStartDate` |
-| `REInvoiceDuePeriodEndDate` | `REInvoiceDuePeriodEndDate` |
-| `REInvoiceIsReversed` | `REInvoiceIsReversed` |
-| `GrossAmountInCoCodeCurrency` | `GrossAmountInCoCodeCurrency` |
-| `NetAmountInCoCodeCurrency` | `NetAmountInCoCodeCurrency` |
-| `RETrnsltnRuleLoclTaxAmount` | `RETrnsltnRuleLoclTaxAmount` |
-| `Currency` | `Currency` |
-| `_CompanyCode` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartnerRole` | *Association* |
-| `_REProcess` | *Association* |
-| `_REContract` | *Association* |
-| `_REInvoiceItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `REInvoiceNumber` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `REInvoiceUUID` |  | |  |  |
+| `REProcessUUID` |  | |  |  |
+| `REContractType` |  | | `_REContract` | `REContractType` |
+| `REAuthorizationGroup` |  | | `_REContract` | `REAuthorizationGroup` |
+| `Partner` |  | |  |  |
+| `Role` |  | |  |  |
+| `StatusObject` |  | |  |  |
+| `RealEstateContract` |  | |  |  |
+| `RealEstateProcess` |  | |  |  |
+| `REInvoiceDuePeriodStartDate` |  | |  |  |
+| `REInvoiceDuePeriodEndDate` |  | |  |  |
+| `REInvoiceIsReversed` |  | |  |  |
+| `GrossAmountInCoCodeCurrency` |  | |  |  |
+| `NetAmountInCoCodeCurrency` |  | |  |  |
+| `RETrnsltnRuleLoclTaxAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartnerRole` | | ✓ | | |
+| `_REProcess` | | ✓ | | |
+| `_REContract` | | ✓ | | |
+| `_REInvoiceItem` | | ✓ | | |
 
 ## Associations
 

@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAOpenItemListUUID` | `guid` |
-| key `OpenItemKeyDate` | `keydate` |
-| `CAOpenItemListName` | `txt50` |
-| `CAMassActivityType` | `aktyp` |
-| `CAMassRunDate` | `laufd` |
-| `CAMassRunID` | `laufi` |
-| `CreatedByUser` | `ernam` |
-| `CreationDateTime` | `cast(timestamp as timestampl)` |
-| `TransactionCode` | `tcode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAOpenItemListUUID` | ✓ | |  | `guid` |
+| `OpenItemKeyDate` | ✓ | |  | `keydate` |
+| `CAOpenItemListName` |  | |  | `txt50` |
+| `CAMassActivityType` |  | |  | `aktyp` |
+| `CAMassRunDate` |  | |  | `laufd` |
+| `CAMassRunID` |  | |  | `laufi` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDateTime` |  | |  | `cast(timestamp as timestampl)` |
+| `TransactionCode` |  | |  | `tcode` |
 
 ## Source Code
 

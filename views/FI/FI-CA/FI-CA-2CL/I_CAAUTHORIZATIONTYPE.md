@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAAuthorizationType` | `cast ( left( dd07l.domvalue_l, 1 ) as auart_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAAuthorizationType` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as auart_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

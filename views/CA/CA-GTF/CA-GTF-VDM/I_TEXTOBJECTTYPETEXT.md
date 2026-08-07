@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TextObjectCategory` | `ttxit.tdobject` |
-| key `TextObjectType` | `ttxit.tdid` |
-| key `Language` | `ttxit.tdspras` |
-| `TextObjectTypeName` | `ttxit.tdtext` |
-| `_TextObjectCategory` | *Association* |
-| `_Language` | *Association* |
-| `_TextObjectType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TextObjectCategory` | ✓ | |  | `tdobject` |
+| `TextObjectType` | ✓ | |  | `tdid` |
+| `Language` | ✓ | |  | `tdspras` |
+| `TextObjectTypeName` |  | |  | `tdtext` |
+| `_TextObjectCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_TextObjectType` | | ✓ | | |
 
 ## Associations
 

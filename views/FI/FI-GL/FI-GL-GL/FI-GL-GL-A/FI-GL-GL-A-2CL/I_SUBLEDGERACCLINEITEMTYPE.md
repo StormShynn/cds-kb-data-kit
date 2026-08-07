@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SubLedgerAcctLineItemType` | `finsts_slalitty.slalittype` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SubLedgerAcctLineItemType` | ✓ | |  | `slalittype` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

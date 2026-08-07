@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `ktopl` |
-| key `GLAccount` | `saknr` |
-| key `Language` | `spras` |
-| `GLAccountName` | `cast( txt20 as fis_txt20_skat_20 preserving type )` |
-| `GLAccountLongName` | `cast( txt50 as fis_txt50_skat preserving type )` |
-| `LastChangeDateTime` | `last_changed_ts` |
-| `_ChartOfAccountsText` | *Association* |
-| `_Language` | *Association* |
-| `_ChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `ktopl` |
+| `GLAccount` | ✓ | |  | `saknr` |
+| `Language` | ✓ | |  | `spras` |
+| `GLAccountName` |  | |  | `cast( txt20 as fis_txt20_skat_20 preserving type )` |
+| `GLAccountLongName` |  | |  | `cast( txt50 as fis_txt50_skat preserving type )` |
+| `LastChangeDateTime` |  | |  | `last_changed_ts` |
+| `_ChartOfAccountsText` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

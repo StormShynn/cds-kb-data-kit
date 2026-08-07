@@ -30,67 +30,67 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsContainerUUID` | `FldLogsContainerUUID` |
-| `FldLogsContainerID` | `FldLogsContainerID` |
-| `Equipment` | `Equipment` |
-| `EquipmentType` | `EquipmentType` |
-| `EquipmentGroup` | `EquipmentGroup` |
-| `FldLogsContainerText` | `FldLogsContainerText` |
-| `FldLogsContainerCategory` | `FldLogsContainerCategory` |
-| `FldLogsShptCtnStsCriticality` | `FldLogsShptCtnStsCriticality` |
-| `FldLogsContainerStatus` | `FldLogsContainerStatus` |
-| `FldLogsContainerSafeLoadQty` | `FldLogsContainerSafeLoadQty` |
-| `FldLogsContainerSafeLoadUnit` | `FldLogsContainerSafeLoadUnit` |
-| `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `FldLogsCtnCurrentLocation` | `FldLogsCtnCurrentLocation` |
-| `FldLogsCtnCurrentStorageLoc` | `FldLogsCtnCurrentStorageLoc` |
-| `FldLogsCtnRentalStartDate` | `FldLogsCtnRentalStartDate` |
-| `FldLogsCtnRentalExpiryDate` | `FldLogsCtnRentalExpiryDate` |
-| `Material` | `Material` |
-| `FldLogsCtnCubicCapacity` | `FldLogsCtnCubicCapacity` |
-| `FldLogsCtnCubicCapacityUnit` | `FldLogsCtnCubicCapacityUnit` |
-| `FldLogsCtnInteriorLength` | `FldLogsCtnInteriorLength` |
-| `FldLogsCtnInteriorWidth` | `FldLogsCtnInteriorWidth` |
-| `FldLogsCtnInteriorHeight` | `FldLogsCtnInteriorHeight` |
-| `FldLogsCtnInteriorDimnUnit` | `FldLogsCtnInteriorDimnUnit` |
-| `FldLogsCtnMaximumLength` | `FldLogsCtnMaximumLength` |
-| `FldLogsCtnMaximumWidth` | `FldLogsCtnMaximumWidth` |
-| `FldLogsCtnMaximumDimnUnit` | `FldLogsCtnMaximumDimnUnit` |
-| `FldLogsContainerFootprintQty` | `FldLogsContainerFootprintQty` |
-| `FldLogsContainerFootprintUnit` | `FldLogsContainerFootprintUnit` |
-| `FldLogsCtnMaxGrossWeight` | `FldLogsCtnMaxGrossWeight` |
-| `FldLogsCtnMaxGrossWeightUnit` | `FldLogsCtnMaxGrossWeightUnit` |
-| `FldLogsContainerTareWeight` | `FldLogsContainerTareWeight` |
-| `FldLogsContainerTareWeightUnit` | `FldLogsContainerTareWeightUnit` |
-| `FldLogsContainerTareVolume` | `FldLogsContainerTareVolume` |
-| `FldLogsContainerTareVolumeUnit` | `FldLogsContainerTareVolumeUnit` |
-| `FldLogsCtnIsTemperatureCtrld` | `FldLogsCtnIsTemperatureCtrld` |
-| `FldLogsCtnMinCtrlTemperature` | `FldLogsCtnMinCtrlTemperature` |
-| `FldLogsCtnMaxCtrlTemperature` | `FldLogsCtnMaxCtrlTemperature` |
-| `FldLogsCtnTemperatureUnit` | `FldLogsCtnTemperatureUnit` |
-| `FldLogsContainerVentilation` | `FldLogsContainerVentilation` |
-| `ExternalResourceID` | `ExternalResourceID` |
-| `FldLogsContainerOwner` | `FldLogsContainerOwner` |
-| `FldLogsCtnOwnerBusinessPartner` | `FldLogsCtnOwnerBusinessPartner` |
-| `FldLogsCtnIsRented` | `FldLogsCtnIsRented` |
-| `FldLogsCtnIsSupplierOwned` | `FldLogsCtnIsSupplierOwned` |
-| `FldLogsCtnIsThirdPartyOwned` | `FldLogsCtnIsThirdPartyOwned` |
-| `FieldLogisticsCtnIsOwned` | `FieldLogisticsCtnIsOwned` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `SuplrCoIsBusPrpsCmpltd` | `SuplrCoIsBusPrpsCmpltd` |
-| `EquipmentCategory` | `EquipmentCategory` |
-| `FldLogsIsCreateEquipment` | `FldLogsIsCreateEquipment` |
-| `FldLogsIsDeleteEquipment` | `FldLogsIsDeleteEquipment` |
-| `FldLogsCtnMaximumHeight` | `FldLogsCtnMaximumHeight` |
-| `FldLogsCtnChangeDateTime` | `FldLogsCtnChangeDateTime` |
-| `FldLogsCtnFootprintHasError` | `FldLogsCtnFootprintHasError` |
-| `FldLogsCtnTareVolumeHasError` | `FldLogsCtnTareVolumeHasError` |
-| `FldLogsCtnCubicCapHasError` | `FldLogsCtnCubicCapHasError` |
-| `FldLogsContainerExternalID` | `FldLogsContainerExternalID` |
-| `FldLogsCtnHasIntNmbrRngeCrted` | `FldLogsCtnHasIntNmbrRngeCrted` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsContainerUUID` | ✓ | |  |  |
+| `FldLogsContainerID` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `EquipmentType` |  | |  |  |
+| `EquipmentGroup` |  | |  |  |
+| `FldLogsContainerText` |  | |  |  |
+| `FldLogsContainerCategory` |  | |  |  |
+| `FldLogsShptCtnStsCriticality` |  | |  |  |
+| `FldLogsContainerStatus` |  | |  |  |
+| `FldLogsContainerSafeLoadQty` |  | |  |  |
+| `FldLogsContainerSafeLoadUnit` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `FldLogsCtnCurrentLocation` |  | |  |  |
+| `FldLogsCtnCurrentStorageLoc` |  | |  |  |
+| `FldLogsCtnRentalStartDate` |  | |  |  |
+| `FldLogsCtnRentalExpiryDate` |  | |  |  |
+| `Material` |  | |  |  |
+| `FldLogsCtnCubicCapacity` |  | |  |  |
+| `FldLogsCtnCubicCapacityUnit` |  | |  |  |
+| `FldLogsCtnInteriorLength` |  | |  |  |
+| `FldLogsCtnInteriorWidth` |  | |  |  |
+| `FldLogsCtnInteriorHeight` |  | |  |  |
+| `FldLogsCtnInteriorDimnUnit` |  | |  |  |
+| `FldLogsCtnMaximumLength` |  | |  |  |
+| `FldLogsCtnMaximumWidth` |  | |  |  |
+| `FldLogsCtnMaximumDimnUnit` |  | |  |  |
+| `FldLogsContainerFootprintQty` |  | |  |  |
+| `FldLogsContainerFootprintUnit` |  | |  |  |
+| `FldLogsCtnMaxGrossWeight` |  | |  |  |
+| `FldLogsCtnMaxGrossWeightUnit` |  | |  |  |
+| `FldLogsContainerTareWeight` |  | |  |  |
+| `FldLogsContainerTareWeightUnit` |  | |  |  |
+| `FldLogsContainerTareVolume` |  | |  |  |
+| `FldLogsContainerTareVolumeUnit` |  | |  |  |
+| `FldLogsCtnIsTemperatureCtrld` |  | |  |  |
+| `FldLogsCtnMinCtrlTemperature` |  | |  |  |
+| `FldLogsCtnMaxCtrlTemperature` |  | |  |  |
+| `FldLogsCtnTemperatureUnit` |  | |  |  |
+| `FldLogsContainerVentilation` |  | |  |  |
+| `ExternalResourceID` |  | |  |  |
+| `FldLogsContainerOwner` |  | |  |  |
+| `FldLogsCtnOwnerBusinessPartner` |  | |  |  |
+| `FldLogsCtnIsRented` |  | |  |  |
+| `FldLogsCtnIsSupplierOwned` |  | |  |  |
+| `FldLogsCtnIsThirdPartyOwned` |  | |  |  |
+| `FieldLogisticsCtnIsOwned` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `SuplrCoIsBusPrpsCmpltd` |  | |  |  |
+| `EquipmentCategory` |  | |  |  |
+| `FldLogsIsCreateEquipment` |  | |  |  |
+| `FldLogsIsDeleteEquipment` |  | |  |  |
+| `FldLogsCtnMaximumHeight` |  | |  |  |
+| `FldLogsCtnChangeDateTime` |  | |  |  |
+| `FldLogsCtnFootprintHasError` |  | |  |  |
+| `FldLogsCtnTareVolumeHasError` |  | |  |  |
+| `FldLogsCtnCubicCapHasError` |  | |  |  |
+| `FldLogsContainerExternalID` |  | |  |  |
+| `FldLogsCtnHasIntNmbrRngeCrted` |  | |  |  |
 
 ## Source Code
 

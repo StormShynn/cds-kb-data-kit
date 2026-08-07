@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `cast( kokrs as fis_kokrs preserving type )` |
-| key `CostCtrActivityType` | `lstar` |
-| key `ValidityEndDate` | `datbi` |
-| `ValidityStartDate` | `datab` |
-| `CostCtrActivityTypeQtyUnit` | `leinh` |
-| `CostCtrActivityTypeCategory` | `latyp` |
-| `AllocationCostElement` | `vksta` |
-| `CostCtrActivityTypeOutpQtyUnit` | `auseh` |
-| `CreationDate` | `ersda` |
-| `EnteredByUser` | `usnam` |
-| `CostOriginGroup` | `hrkft` |
-| `ActlPostgCostCenterActyTypeCat` | `latypi` |
-| `OutputQuantityFactor` | `ausfk` |
-| `ActivityTypeIsBlocked` | `sprkz` |
-| `FixedCostIsPredistributed` | `fixvo` |
-| `PriceAllocationMethod` | `tarkz` |
-| `PeriodPriceIsAverage` | `yrate` |
-| `ActualPriceAllocationMethod` | `tarkz_i` |
-| `ActualQuantityIsSetManually` | `manist` |
-| `PlanQuantityIsSetManually` | `manplan` |
-| `CostCtrActivityTypeValidCat` | `kstty` |
-| `CostCtrActyTypeIsCtrlgRlvtComp` | `lark1` |
-| `CostCtrActyTypeIsHumRsceRlvt` | `lark2` |
-| `_ControllingAreaText` | *Association* |
-| `_Text` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CostCenterCategory` | *Association* |
-| `_CostCtrActivityTypeCategory` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_CostCtrActivityTypeHierNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |
+| `CostCtrActivityType` | ✓ | |  | `lstar` |
+| `ValidityEndDate` | ✓ | |  | `datbi` |
+| `ValidityStartDate` |  | |  | `datab` |
+| `CostCtrActivityTypeQtyUnit` |  | |  | `leinh` |
+| `CostCtrActivityTypeCategory` |  | |  | `latyp` |
+| `AllocationCostElement` |  | |  | `vksta` |
+| `CostCtrActivityTypeOutpQtyUnit` |  | |  | `auseh` |
+| `CreationDate` |  | |  | `ersda` |
+| `EnteredByUser` |  | |  | `usnam` |
+| `CostOriginGroup` |  | |  | `hrkft` |
+| `ActlPostgCostCenterActyTypeCat` |  | |  | `latypi` |
+| `OutputQuantityFactor` |  | |  | `ausfk` |
+| `ActivityTypeIsBlocked` |  | |  | `sprkz` |
+| `FixedCostIsPredistributed` |  | |  | `fixvo` |
+| `PriceAllocationMethod` |  | |  | `tarkz` |
+| `PeriodPriceIsAverage` |  | |  | `yrate` |
+| `ActualPriceAllocationMethod` |  | |  | `tarkz_i` |
+| `ActualQuantityIsSetManually` |  | |  | `manist` |
+| `PlanQuantityIsSetManually` |  | |  | `manplan` |
+| `CostCtrActivityTypeValidCat` |  | |  | `kstty` |
+| `CostCtrActyTypeIsCtrlgRlvtComp` |  | |  | `lark1` |
+| `CostCtrActyTypeIsHumRsceRlvt` |  | |  | `lark2` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CostCenterCategory` | | ✓ | | |
+| `_CostCtrActivityTypeCategory` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_CostCtrActivityTypeHierNode` | | ✓ | | |
 
 ## Associations
 

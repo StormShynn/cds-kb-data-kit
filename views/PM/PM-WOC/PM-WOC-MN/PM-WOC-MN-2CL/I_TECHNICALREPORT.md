@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CatalogProfile` | `t352b.rbnr` |
-| `NotificationCategory` | `qmtyp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CatalogProfile` | ✓ | |  | `rbnr` |
+| `NotificationCategory` |  | |  | `qmtyp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

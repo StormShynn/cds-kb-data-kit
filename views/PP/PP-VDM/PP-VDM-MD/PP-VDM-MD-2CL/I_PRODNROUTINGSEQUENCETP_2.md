@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionRoutingGroup` | `ProductionRoutingGroup` |
-| key `ProductionRouting` | `ProductionRouting` |
-| key `ProductionRoutingSequence` | `ProductionRoutingSequence` |
-| key `ProductionRoutingSqncIntVers` | `ProductionRoutingSqncIntVers` |
-| `IsDeleted` | `IsDeleted` |
-| `IsImplicitlyDeleted` | `IsImplicitlyDeleted` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `SequenceCategory` | `SequenceCategory` |
-| `BillOfOperationsRefSequence` | `BillOfOperationsRefSequence` |
-| `BOOSqncBranchOpInternalID` | `BOOSqncBranchOpInternalID` |
-| `BOOSqncReturnOpInternalID` | `BOOSqncReturnOpInternalID` |
-| `MinimumLotSizeQuantity` | `MinimumLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `MaximumLotSizeQuantity` |
-| `BillOfOperationsUnit` | `BillOfOperationsUnit` |
-| `SequenceText` | `SequenceText` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_NonSqnc` | *Association* |
-| `_ProdnRtgTP` | *Association* |
-| `_Header` | *Association* |
-| `_Operation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |
+| `ProductionRouting` | ✓ | |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |
+| `ProductionRoutingSqncIntVers` | ✓ | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `SequenceCategory` |  | |  |  |
+| `BillOfOperationsRefSequence` |  | |  |  |
+| `BOOSqncBranchOpInternalID` |  | |  |  |
+| `BOOSqncReturnOpInternalID` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `BillOfOperationsUnit` |  | |  |  |
+| `SequenceText` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_NonSqnc` | | ✓ | | |
+| `_ProdnRtgTP` | | ✓ | | |
+| `_Header` | | ✓ | | |
+| `_Operation` | | ✓ | | |
 
 ## Source Code
 

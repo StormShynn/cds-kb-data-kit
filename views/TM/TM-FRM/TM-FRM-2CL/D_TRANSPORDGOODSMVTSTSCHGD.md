@@ -26,16 +26,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TransportationOrder` | `/scmtms/tor_id` |
-| `TransportationOrderType` | `/scmtms/tor_type` |
-| `TransportationMode` | `/scmtms/trmodcode` |
-| `TransportationShippingType` | `/scmtms/shipping_type` |
-| `Carrier` | `/scmtms/pty_carrier` |
-| `TranspPurgOrgExtID` | `/scmtms/vdm_pur_org_ext_id` |
-| `TranspOrdGoodsMovementStatus` | `/scmtms/dlv_goods_movem_status` |
-| `D_TranspOrdGoodsMvtStsBfr` | `__before : composition [1..1] of D_TranspOrdGoodsMvtStsBfr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrder` |  | |  | `/scmtms/tor_id` |
+| `TransportationOrderType` |  | |  | `/scmtms/tor_type` |
+| `TransportationMode` |  | |  | `/scmtms/trmodcode` |
+| `TransportationShippingType` |  | |  | `/scmtms/shipping_type` |
+| `Carrier` |  | |  | `/scmtms/pty_carrier` |
+| `TranspPurgOrgExtID` |  | |  | `/scmtms/vdm_pur_org_ext_id` |
+| `TranspOrdGoodsMovementStatus` |  | |  | `/scmtms/dlv_goods_movem_status` |
+| `D_TranspOrdGoodsMvtStsBfr` |  | |  | `__before : composition [1..1] of D_TranspOrdGoodsMvtStsBfr` |
 
 ## Source Code
 

@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerStandardUsage` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerStandardUsage` | ✓ | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

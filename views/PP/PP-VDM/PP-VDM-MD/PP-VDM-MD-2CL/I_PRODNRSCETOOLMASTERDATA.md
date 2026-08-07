@@ -28,65 +28,65 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionResourceType` | `cast(crfh.objty as productionresourcetype preserving type)` |
-| key `ProductionResourceInternalID` | `cast(crfh.objid as pph_fhmid preserving type)` |
-| `ProdnRsceToolCategory` | `crfh.fhmar` |
-| `ProdnRsceToolCategory_2` | `cast(crfh.fhmar as mpe_fhmar preserving type)` |
-| `ProductionResourceToolGroup1` | `crfh.fgru1` |
-| `ProductionResourceToolGroup2` | `crfh.fgru2` |
-| `ProductionResourceUsage` | `crfh.planv` |
-| `MiscPRTAuthorizationGroup` | `crfh.brgru` |
-| `ProdnRsceToolControlProfile` | `crfh.steuf` |
-| `ChangeNumber` | `cast(crfh.aennr as changenumber preserving type)` |
-| `ProdnRsceToolStandardTextCode` | `crfh.ktsch` |
-| `ProdnRsceToolTotQtyCalcFormula` | `crfh.mgform` |
-| `ProdnRsceToolUsageQtyCalcFmla` | `crfh.ewform` |
-| `ProdnRsceToolBaseUnit` | `crfh.baseh` |
-| `CreationDate` | `crfh.andat` |
-| `CreatedByUser` | `cast(crfh.annam as vdm_createdbyuserid preserving type)` |
-| `LastChangeDate` | `crfh.aedat` |
-| `LastChangedByUser` | `crfh.aenam` |
-| `StartDateOffsetReferenceCode` | `cast(crfh.bzoffb as startdateoffsetreferencecode preserving type)` |
-| `StartDateOffsetDuration` | `cast(crfh.offstb as startdateoffsetduration preserving type)` |
-| `StartDateOffsetDurationUnit` | `crfh.ehoffb` |
-| `EndDateOffsetReferenceCode` | `cast(crfh.bzoffe as enddateoffsetreferencecode preserving type)` |
-| `EndDateOffsetDuration` | `cast(crfh.offste as enddateoffsetduration preserving type)` |
-| `EndDateOffsetDurationUnit` | `crfh.ehoffe` |
-| `EndDateOffsetDurnIsReferenced` | `cast(crfh.offste_ref as vdm_oekzr preserving type)` |
-| `StartDateOffstDurnIsReferenced` | `cast(crfh.offstb_ref as vdm_obkzr preserving type)` |
-| `EndDteOffstRefCodeIsReferenced` | `cast(crfh.bzoffe_ref as vdm_bekzr preserving type)` |
-| `StartDateOffsetRefCodeIsRefcd` | `cast(crfh.bzoffb_ref as vdm_bbkzr preserving type)` |
-| `PRTTotQtyCalcFmlaIsReferenced` | `cast(crfh.mgform_ref as vdm_mfkzr preserving type)` |
-| `PRTUsgeQtyCalcFmlaIsReferenced` | `cast(crfh.ewform_ref as vdm_efkzr preserving type)` |
-| `PRTControlProfileIsReferenced` | `cast(crfh.steuf_ref as vdm_stkzr preserving type)` |
-| `PRTStdTextCodeIsReferenced` | `cast(crfh.ktsch_ref as vdm_ktkzr preserving type)` |
-| `ShopFloorRtgPRTIsRegistrable` | `crfh.registrable` |
-| `ProdnRsceToolPlntLoc` | `crfh.stowk` |
-| `ProductionResourceToolStatus` | `crfh.status` |
-| `ProdnRsceToolIsDeleted` | `crfh.loekz` |
-| `ProductionResourceToolLocation` | `crfh.stort` |
-| `ProdPRTLoadRecordsAreCreated` | `crfh.kzkbl` |
-| `_ProductionResourceType` | *Association* |
-| `_ProdnRsceToolCategory` | *Association* |
-| `_ProdnRsceToolCategory_2` | *Association* |
-| `_ProdnRsceToolCategory_3` | *Association* |
-| `_ProdnRsceToolGroup1` | *Association* |
-| `_ProdnRsceToolGroup2` | *Association* |
-| `_ProductionResourceUsage` | *Association* |
-| `_ProdnRsceToolControlProfile` | *Association* |
-| `_ProdnRsceToolStandardText` | *Association* |
-| `_ChangeMaster` | *Association* |
-| `_ProdnRsceToolTotQtyCalcFmla` | *Association* |
-| `_ProdnRsceToolUsageQtyCalcFmla` | *Association* |
-| `_StartDateOffsetReferenceCode` | *Association* |
-| `_EndDateOffsetReferenceCode` | *Association* |
-| `_StartDateOffsetDurationUnit` | *Association* |
-| `_EndDateOffsetDurationUnit` | *Association* |
-| `_ProdnRsceToolBaseUnit` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionResourceType` | ✓ | |  | `cast(crfh.objty as productionresourcetype preserving type)` |
+| `ProductionResourceInternalID` | ✓ | |  | `cast(crfh.objid as pph_fhmid preserving type)` |
+| `ProdnRsceToolCategory` |  | |  | `fhmar` |
+| `ProdnRsceToolCategory_2` |  | |  | `cast(crfh.fhmar as mpe_fhmar preserving type)` |
+| `ProductionResourceToolGroup1` |  | |  | `fgru1` |
+| `ProductionResourceToolGroup2` |  | |  | `fgru2` |
+| `ProductionResourceUsage` |  | |  | `planv` |
+| `MiscPRTAuthorizationGroup` |  | |  | `brgru` |
+| `ProdnRsceToolControlProfile` |  | |  | `steuf` |
+| `ChangeNumber` |  | |  | `cast(crfh.aennr as changenumber preserving type)` |
+| `ProdnRsceToolStandardTextCode` |  | |  | `ktsch` |
+| `ProdnRsceToolTotQtyCalcFormula` |  | |  | `mgform` |
+| `ProdnRsceToolUsageQtyCalcFmla` |  | |  | `ewform` |
+| `ProdnRsceToolBaseUnit` |  | |  | `baseh` |
+| `CreationDate` |  | |  | `andat` |
+| `CreatedByUser` |  | |  | `cast(crfh.annam as vdm_createdbyuserid preserving type)` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `StartDateOffsetReferenceCode` |  | |  | `cast(crfh.bzoffb as startdateoffsetreferencecode preserving type)` |
+| `StartDateOffsetDuration` |  | |  | `cast(crfh.offstb as startdateoffsetduration preserving type)` |
+| `StartDateOffsetDurationUnit` |  | |  | `ehoffb` |
+| `EndDateOffsetReferenceCode` |  | |  | `cast(crfh.bzoffe as enddateoffsetreferencecode preserving type)` |
+| `EndDateOffsetDuration` |  | |  | `cast(crfh.offste as enddateoffsetduration preserving type)` |
+| `EndDateOffsetDurationUnit` |  | |  | `ehoffe` |
+| `EndDateOffsetDurnIsReferenced` |  | |  | `cast(crfh.offste_ref as vdm_oekzr preserving type)` |
+| `StartDateOffstDurnIsReferenced` |  | |  | `cast(crfh.offstb_ref as vdm_obkzr preserving type)` |
+| `EndDteOffstRefCodeIsReferenced` |  | |  | `cast(crfh.bzoffe_ref as vdm_bekzr preserving type)` |
+| `StartDateOffsetRefCodeIsRefcd` |  | |  | `cast(crfh.bzoffb_ref as vdm_bbkzr preserving type)` |
+| `PRTTotQtyCalcFmlaIsReferenced` |  | |  | `cast(crfh.mgform_ref as vdm_mfkzr preserving type)` |
+| `PRTUsgeQtyCalcFmlaIsReferenced` |  | |  | `cast(crfh.ewform_ref as vdm_efkzr preserving type)` |
+| `PRTControlProfileIsReferenced` |  | |  | `cast(crfh.steuf_ref as vdm_stkzr preserving type)` |
+| `PRTStdTextCodeIsReferenced` |  | |  | `cast(crfh.ktsch_ref as vdm_ktkzr preserving type)` |
+| `ShopFloorRtgPRTIsRegistrable` |  | |  | `registrable` |
+| `ProdnRsceToolPlntLoc` |  | |  | `stowk` |
+| `ProductionResourceToolStatus` |  | |  | `status` |
+| `ProdnRsceToolIsDeleted` |  | |  | `loekz` |
+| `ProductionResourceToolLocation` |  | |  | `stort` |
+| `ProdPRTLoadRecordsAreCreated` |  | |  | `kzkbl` |
+| `_ProductionResourceType` | | ✓ | | |
+| `_ProdnRsceToolCategory` | | ✓ | | |
+| `_ProdnRsceToolCategory_2` | | ✓ | | |
+| `_ProdnRsceToolCategory_3` | | ✓ | | |
+| `_ProdnRsceToolGroup1` | | ✓ | | |
+| `_ProdnRsceToolGroup2` | | ✓ | | |
+| `_ProductionResourceUsage` | | ✓ | | |
+| `_ProdnRsceToolControlProfile` | | ✓ | | |
+| `_ProdnRsceToolStandardText` | | ✓ | | |
+| `_ChangeMaster` | | ✓ | | |
+| `_ProdnRsceToolTotQtyCalcFmla` | | ✓ | | |
+| `_ProdnRsceToolUsageQtyCalcFmla` | | ✓ | | |
+| `_StartDateOffsetReferenceCode` | | ✓ | | |
+| `_EndDateOffsetReferenceCode` | | ✓ | | |
+| `_StartDateOffsetDurationUnit` | | ✓ | | |
+| `_EndDateOffsetDurationUnit` | | ✓ | | |
+| `_ProdnRsceToolBaseUnit` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACorrespondenceActivityCode` | `corr_ackey` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACorrespondenceActivityCode` | ✓ | |  | `corr_ackey` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

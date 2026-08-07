@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `DeliverySelectionDate` | `lfdat_a` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliverySelectionDate` |  | |  | `lfdat_a` |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `name:'I_Currency'` | `name:'I_Currency'` |
-| `element:'Currency'` | `element:'Currency'` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `name:'I_Currency'` |  | |  |  |
+| `element:'Currency'` |  | |  |  |
 
 ## Source Code
 

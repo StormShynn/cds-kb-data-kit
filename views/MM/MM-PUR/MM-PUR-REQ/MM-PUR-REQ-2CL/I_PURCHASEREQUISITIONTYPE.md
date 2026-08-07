@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseRequisitionType` | `PurchasingDocumentType` |
-| `PurchasingDocumentSubtype` | `PurchasingDocumentSubtype` |
-| `PurgHasFlxblWorkflowApproval` | `PurgHasFlxblWorkflowApproval` |
-| `IsPurReqnOvrlRel` | `IsPurReqnOvrlRel` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseRequisitionType` | ✓ | |  | `PurchasingDocumentType` |
+| `PurchasingDocumentSubtype` |  | |  |  |
+| `PurgHasFlxblWorkflowApproval` |  | |  |  |
+| `IsPurReqnOvrlRel` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

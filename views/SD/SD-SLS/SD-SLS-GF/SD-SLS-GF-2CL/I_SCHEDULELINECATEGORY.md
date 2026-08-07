@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ScheduleLineCategory` | `cast (ettyp as vdm_sd_schedule_line_cat preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ScheduleLineCategory` | ✓ | |  | `cast (ettyp as vdm_sd_schedule_line_cat preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

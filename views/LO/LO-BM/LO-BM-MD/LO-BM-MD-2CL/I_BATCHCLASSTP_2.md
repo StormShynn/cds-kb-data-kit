@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `BatchIdentifyingPlant` | `BatchIdentifyingPlant` |
-| key `Batch` | `Batch` |
-| `ClassInternalID` | `ClassInternalID` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `ClassType` | `ClassType` |
-| `_BatchTP` | *Association* |
-| `_Class` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `BatchIdentifyingPlant` | ✓ | |  |  |
+| `Batch` | ✓ | |  |  |
+| `ClassInternalID` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ClassType` |  | |  |  |
+| `_BatchTP` | | ✓ | | |
+| `_Class` | | ✓ | | |
 
 ## Source Code
 

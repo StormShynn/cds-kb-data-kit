@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterInternalID` | `WorkCenterInternalID` |
-| key `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| key `CapacityCategoryAllocation` | `CapacityCategoryAllocation` |
-| key `CapacityInternalID` | `CapacityInternalID` |
-| key `CapacityActiveVersion` | `CapacityActiveVersion` |
-| key `IntervalEndDate` | `IntervalEndDate` |
-| key `WeekDay` | `WeekDay` |
-| key `AvailableCapacityShift` | `AvailableCapacityShift` |
-| `IntervalStartDate` | `IntervalStartDate` |
-| `WorkDayRule` | `WorkDayRule` |
-| `ShiftDefinition` | `ShiftDefinition` |
-| `ShiftStartTime` | `ShiftStartTime` |
-| `ShiftEndTime` | `ShiftEndTime` |
-| `ShiftDefValidityStartDate` | `ShiftDefValidityStartDate` |
-| `ShiftDefValidityEndDate` | `ShiftDefValidityEndDate` |
-| `CapacityNumberOfCapacities` | `CapacityNumberOfCapacities` |
-| `CapacityPlanUtilizationPercent` | `CapacityPlanUtilizationPercent` |
-| `CapacityBreakDuration` | `CapacityBreakDuration` |
-| `OperatingDurationInSeconds` | `OperatingDurationInSeconds` |
-| `TotOperatingDurationInSeconds` | `TotOperatingDurationInSeconds` |
-| `CapacityLastChangeDateTime` | `CapacityLastChangeDateTime` |
-| `_Header` | *Association* |
-| `_Interval` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |
+| `CapacityCategoryAllocation` | ✓ | |  |  |
+| `CapacityInternalID` | ✓ | |  |  |
+| `CapacityActiveVersion` | ✓ | |  |  |
+| `IntervalEndDate` | ✓ | |  |  |
+| `WeekDay` | ✓ | |  |  |
+| `AvailableCapacityShift` | ✓ | |  |  |
+| `IntervalStartDate` |  | |  |  |
+| `WorkDayRule` |  | |  |  |
+| `ShiftDefinition` |  | |  |  |
+| `ShiftStartTime` |  | |  |  |
+| `ShiftEndTime` |  | |  |  |
+| `ShiftDefValidityStartDate` |  | |  |  |
+| `ShiftDefValidityEndDate` |  | |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |
+| `CapacityBreakDuration` |  | |  |  |
+| `OperatingDurationInSeconds` |  | |  |  |
+| `TotOperatingDurationInSeconds` |  | |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_Interval` | | ✓ | | |
 
 ## Source Code
 

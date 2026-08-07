@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressPersonID` | `Person.AddressPersonID` |
-| `AddressRepresentationCode` | `Person.AddressRepresentationCode` |
-| `FormOfAddress` | `Person.FormOfAddress` |
-| `GivenName` | `Person.GivenName` |
-| `FamilyName` | `Person.FamilyName` |
-| `PersonBirthName` | `Person.PersonBirthName` |
-| `PersonMiddleName` | `Person.PersonMiddleName` |
-| `SecondFamilyName` | `Person.SecondFamilyName` |
-| `AcademicTitle` | `Person.AcademicTitle` |
-| `AcademicTitle2` | `Person.AcademicTitle2` |
-| `FamilyNamePrefix` | `Person.FamilyNamePrefix` |
-| `FamilyNameSecondPrefix` | `Person.FamilyNameSecondPrefix` |
-| `PersonNameSupplementCode` | `Person.PersonNameSupplementCode` |
-| `PersonNickname` | `Person.PersonNickname` |
-| `NameInitials` | `Person.NameInitials` |
-| `PersonFullName` | `Person.PersonFullName` |
-| `CorrespondenceLanguage` | `Person.CorrespondenceLanguage` |
-| `AddressPersonSearchTerm1` | `Person.AddressPersonSearchTerm1` |
-| `AddressPersonSearchTerm2` | `Person.AddressPersonSearchTerm2` |
-| `_DfltRprstnPerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressPersonID` | ✓ | |  |  |
+| `AddressRepresentationCode` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `GivenName` |  | |  |  |
+| `FamilyName` |  | |  |  |
+| `PersonBirthName` |  | |  |  |
+| `PersonMiddleName` |  | |  |  |
+| `SecondFamilyName` |  | |  |  |
+| `AcademicTitle` |  | |  |  |
+| `AcademicTitle2` |  | |  |  |
+| `FamilyNamePrefix` |  | |  |  |
+| `FamilyNameSecondPrefix` |  | |  |  |
+| `PersonNameSupplementCode` |  | |  |  |
+| `PersonNickname` |  | |  |  |
+| `NameInitials` |  | |  |  |
+| `PersonFullName` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `AddressPersonSearchTerm1` |  | |  |  |
+| `AddressPersonSearchTerm2` |  | |  |  |
+| `_DfltRprstnPerson` | | ✓ | | |
 
 ## Associations
 

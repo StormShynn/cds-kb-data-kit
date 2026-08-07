@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListVersionCounter` | `TaskListVersionCounter` |
-| `TextObjectKey` | `TextObjectKey` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `PlainLongText` | `PlainLongText` |
-| `Language` | `Language` |
-| `_Header` | *Association* |
-| `_MaintenanceTaskList` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListVersionCounter` | ✓ | |  |  |
+| `TextObjectKey` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `PlainLongText` |  | |  |  |
+| `Language` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_MaintenanceTaskList` | | ✓ | | |
 
 ## Source Code
 

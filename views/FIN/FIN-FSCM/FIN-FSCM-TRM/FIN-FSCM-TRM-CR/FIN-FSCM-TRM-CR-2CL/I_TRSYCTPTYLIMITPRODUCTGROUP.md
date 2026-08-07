@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LimitProductGroup` | `slpg` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LimitProductGroup` | ✓ | |  | `slpg` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

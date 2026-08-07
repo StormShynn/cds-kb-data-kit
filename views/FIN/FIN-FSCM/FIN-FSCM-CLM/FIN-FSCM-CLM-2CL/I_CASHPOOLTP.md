@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CashPool` | `CashPool` |
-| `CashPoolIsDeleted` | `CashPoolIsDeleted` |
-| `CashPoolType` | `CashPoolType` |
-| `CashPoolTransfDrctn` | `CashPoolTransfDrctn` |
-| `CashPoolSrvcPrvdr` | `CashPoolSrvcPrvdr` |
-| `CashPoolBalCalcPrfl` | `CashPoolBalCalcPrfl` |
-| `PlanningLevel` | `PlanningLevel` |
-| `IHBBusinessPartner` | `IHBBusinessPartner` |
-| `IHBBankKey` | `IHBBankKey` |
-| `IHBBankAreaCountry` | `IHBBankAreaCountry` |
-| `BankManagedCashPoolAuthGrp` | `BankManagedCashPoolAuthGrp` |
-| `CashConcentrationGroup` | `CashConcentrationGroup` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_HeaderAssignment` | *Association* |
-| `_SubAssignment` | *Association* |
-| `_Desc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CashPool` | ✓ | |  |  |
+| `CashPoolIsDeleted` |  | |  |  |
+| `CashPoolType` |  | |  |  |
+| `CashPoolTransfDrctn` |  | |  |  |
+| `CashPoolSrvcPrvdr` |  | |  |  |
+| `CashPoolBalCalcPrfl` |  | |  |  |
+| `PlanningLevel` |  | |  |  |
+| `IHBBusinessPartner` |  | |  |  |
+| `IHBBankKey` |  | |  |  |
+| `IHBBankAreaCountry` |  | |  |  |
+| `BankManagedCashPoolAuthGrp` |  | |  |  |
+| `CashConcentrationGroup` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_HeaderAssignment` | | ✓ | | |
+| `_SubAssignment` | | ✓ | | |
+| `_Desc` | | ✓ | | |
 
 ## Source Code
 

@@ -28,45 +28,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DisputeCaseUUID` | `DisputeCaseUUID` |
-| `DisputeCaseCoordinator` | `DisputeCaseCoordinator` |
-| `DisputeCaseRootCause` | `DisputeCaseRootCause` |
-| `CaseProcessingDeadlineDate` | `CaseProcessingDeadlineDate` |
-| `OriginalAmount` | `} OriginalAmount` |
-| `DisputedAmount` | `} DisputedAmount` |
-| `PaidAmount` | `} PaidAmount` |
-| `CreditedAmount` | `} CreditedAmount` |
-| `WriteOffAmount` | `} WriteOffAmount` |
-| `ManuallyClearedAmount` | `} ManuallyClearedAmount` |
-| `DisputeCaseCurrency` | `DisputeCaseCurrency` |
-| `CustomerDisputedAmount` | `} CustomerDisputedAmount` |
-| `CustomerDisputedCurrency` | `CustomerDisputedCurrency` |
-| `ContactPersonName` | `ContactPersonName` |
-| `ContactPersonEmailAddress` | `ContactPersonEmailAddress` |
-| `ContactPersonPhoneNumber` | `ContactPersonPhoneNumber` |
-| `Customer` | `Customer` |
-| `CompanyCode` | `CompanyCode` |
-| `CaseType` | `CaseType` |
-| `CaseID` | `CaseID` |
-| `CaseExternalReference` | `CaseExternalReference` |
-| `CaseCreatedBy` | `CaseCreatedBy` |
-| `CaseCreatedOn` | `CaseCreatedOn` |
-| `CaseLastChangedBy` | `CaseLastChangedBy` |
-| `CaseLastChangedOn` | `CaseLastChangedOn` |
-| `CaseClosedBy` | `CaseClosedBy` |
-| `CaseClosedTime` | `CaseClosedTime` |
-| `CasePlannedCloseDate` | `CasePlannedCloseDate` |
-| `CaseProcessor` | `CaseProcessor` |
-| `CaseResponsible` | `CaseResponsible` |
-| `CaseTitle` | `CaseTitle` |
-| `CaseEscalationReason` | `CaseEscalationReason` |
-| `CaseCategory` | `CaseCategory` |
-| `CasePriority` | `CasePriority` |
-| `CaseStatus` | `CaseStatus` |
-| `CaseSystemStatus` | `CaseSystemStatus` |
-| `CaseReason` | `CaseReason` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DisputeCaseUUID` | ✓ | |  |  |
+| `DisputeCaseCoordinator` |  | |  |  |
+| `DisputeCaseRootCause` |  | |  |  |
+| `CaseProcessingDeadlineDate` |  | |  |  |
+| `OriginalAmount` |  | |  | `} OriginalAmount` |
+| `DisputedAmount` |  | |  | `} DisputedAmount` |
+| `PaidAmount` |  | |  | `} PaidAmount` |
+| `CreditedAmount` |  | |  | `} CreditedAmount` |
+| `WriteOffAmount` |  | |  | `} WriteOffAmount` |
+| `ManuallyClearedAmount` |  | |  | `} ManuallyClearedAmount` |
+| `DisputeCaseCurrency` |  | |  |  |
+| `CustomerDisputedAmount` |  | |  | `} CustomerDisputedAmount` |
+| `CustomerDisputedCurrency` |  | |  |  |
+| `ContactPersonName` |  | |  |  |
+| `ContactPersonEmailAddress` |  | |  |  |
+| `ContactPersonPhoneNumber` |  | |  |  |
+| `Customer` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CaseType` |  | |  |  |
+| `CaseID` |  | |  |  |
+| `CaseExternalReference` |  | |  |  |
+| `CaseCreatedBy` |  | |  |  |
+| `CaseCreatedOn` |  | |  |  |
+| `CaseLastChangedBy` |  | |  |  |
+| `CaseLastChangedOn` |  | |  |  |
+| `CaseClosedBy` |  | |  |  |
+| `CaseClosedTime` |  | |  |  |
+| `CasePlannedCloseDate` |  | |  |  |
+| `CaseProcessor` |  | |  |  |
+| `CaseResponsible` |  | |  |  |
+| `CaseTitle` |  | |  |  |
+| `CaseEscalationReason` |  | |  |  |
+| `CaseCategory` |  | |  |  |
+| `CasePriority` |  | |  |  |
+| `CaseStatus` |  | |  |  |
+| `CaseSystemStatus` |  | |  |  |
+| `CaseReason` |  | |  |  |
 
 ## Source Code
 

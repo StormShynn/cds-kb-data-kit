@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| `SrvcDocLogTextIdentifier` | `SrvcDocLogTextIdentifier` |
-| `TextObjectCategory` | `TextObjectCategory` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `SrvcDocLongTextMimeType` | `SrvcDocLongTextMimeType` |
-| `BusinessSolutionOrderLongText` | `BusinessSolutionOrderLongText` |
-| `_BusinessSolutionOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SrvcDocLogTextIdentifier` |  | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |
+| `BusinessSolutionOrderLongText` |  | |  |  |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
 
 ## Source Code
 

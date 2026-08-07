@@ -30,39 +30,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PeriodType` | `PeriodType` |
-| key `EndDate` | `EndDate` |
-| key `YearPeriod` | `YearPeriod` |
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| key `StorageLocation` | `StorageLocation` |
-| key `Batch` | `Batch` |
-| key `Supplier` | `Supplier` |
-| key `SDDocument` | `SDDocument` |
-| key `SDDocumentItem` | `SDDocumentItem` |
-| key `WBSElementInternalID` | `WBSElementInternalID` |
-| key `Customer` | `Customer` |
-| key `InventoryStockType` | `InventoryStockType` |
-| key `InventorySpecialStockType` | `InventorySpecialStockType` |
-| key `FiscalYearVariant` | `FiscalYearVariant` |
-| key `MaterialBaseUnit` | `MaterialBaseUnit` |
-| `CostEstimate` | `CostEstimate` |
-| `CompanyCode` | `CompanyCode` |
-| `MatlWrhsStkQtyInMatlBaseUnit` | `MatlWrhsStkQtyInMatlBaseUnit` |
-| `_Material` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_InventoryStockType` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_FiscalYearVariant` | *Association* |
-| `_InvtryPrcByPeriodEndDate` | *Association* |
-| `_CurrentInvtryPrice` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PeriodType` | ✓ | |  |  |
+| `EndDate` | ✓ | |  |  |
+| `YearPeriod` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `StorageLocation` | ✓ | |  |  |
+| `Batch` | ✓ | |  |  |
+| `Supplier` | ✓ | |  |  |
+| `SDDocument` | ✓ | |  |  |
+| `SDDocumentItem` | ✓ | |  |  |
+| `WBSElementInternalID` | ✓ | |  |  |
+| `Customer` | ✓ | |  |  |
+| `InventoryStockType` | ✓ | |  |  |
+| `InventorySpecialStockType` | ✓ | |  |  |
+| `FiscalYearVariant` | ✓ | |  |  |
+| `MaterialBaseUnit` | ✓ | |  |  |
+| `CostEstimate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |
+| `_Material` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_InventoryStockType` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_InvtryPrcByPeriodEndDate` | | ✓ | | |
+| `_CurrentInvtryPrice` | | ✓ | | |
 
 ## Associations
 

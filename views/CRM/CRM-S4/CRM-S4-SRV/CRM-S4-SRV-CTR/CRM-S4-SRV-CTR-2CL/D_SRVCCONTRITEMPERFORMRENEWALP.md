@@ -26,13 +26,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SrvcTransChgReqRcvdOnDateTime` | `timestamp` |
-| `SrvcContrItemDuration` | `timedura` |
-| `SrvcContrItemDurationUnit` | `timeunitdu` |
-| `PurchaseOrderByCustomer` | `crmt_po_number_sold` |
-| `ServiceContractItemIsReleased` | `crms4_serv_contr_auto_release` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcTransChgReqRcvdOnDateTime` |  | |  | `timestamp` |
+| `SrvcContrItemDuration` |  | |  | `timedura` |
+| `SrvcContrItemDurationUnit` |  | |  | `timeunitdu` |
+| `PurchaseOrderByCustomer` |  | |  | `crmt_po_number_sold` |
+| `ServiceContractItemIsReleased` |  | |  | `crms4_serv_contr_auto_release` |
 
 ## Source Code
 

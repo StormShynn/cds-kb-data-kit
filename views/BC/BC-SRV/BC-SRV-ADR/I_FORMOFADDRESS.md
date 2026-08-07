@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FormOfAddress` | `tsad3.title` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FormOfAddress` | ✓ | |  | `title` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

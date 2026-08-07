@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountAssignmentCategory` | `t163k.knttp` |
-| `ConsumptionPosting` | `t163k.kzvbr` |
-| `InventorySpecialStockType` | `t163k.sobkz` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountAssignmentCategory` | ✓ | |  | `knttp` |
+| `ConsumptionPosting` |  | |  | `kzvbr` |
+| `InventorySpecialStockType` |  | |  | `sobkz` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

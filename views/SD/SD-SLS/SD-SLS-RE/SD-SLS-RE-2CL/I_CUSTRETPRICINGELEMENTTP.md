@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturn` | `CustomerReturnPricingElement.CustomerReturn` |
-| key `PricingProcedureStep` | `CustomerReturnPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `CustomerReturnPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `CustomerReturnPricingElement.ConditionApplication` |
-| `ConditionType` | `CustomerReturnPricingElement.ConditionType` |
-| `ConditionTypeName` | `CustomerReturnPricingElement.ConditionTypeName` |
-| `ConditionCalculationType` | `CustomerReturnPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `CustomerReturnPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `CustomerReturnPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `CustomerReturnPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `CustomerReturnPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `CustomerReturnPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `CustomerReturnPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `CustomerReturnPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `CustomerReturnPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `CustomerReturnPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `CustomerReturnPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `CustomerReturnPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `CustomerReturnPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `CustomerReturnPricingElement.ConditionInactiveReason` |
-| `ConditionRateValueIsAmount` | `CustomerReturnPricingElement.ConditionRateValueIsAmount` |
-| `ConditionRateValueIsRatio` | `CustomerReturnPricingElement.ConditionRateValueIsRatio` |
-| `ConditionRateValueIsNull` | `CustomerReturnPricingElement.ConditionRateValueIsNull` |
-| `ConditionQuantityIsNull` | `CustomerReturnPricingElement.ConditionQuantityIsNull` |
-| `ConditionAmountIsNull` | `CustomerReturnPricingElement.ConditionAmountIsNull` |
-| `CustomerReturnType` | `CustomerReturnPricingElement.CustomerReturnType` |
-| `SalesOrganization` | `CustomerReturnPricingElement.SalesOrganization` |
-| `DistributionChannel` | `CustomerReturnPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `CustomerReturnPricingElement.OrganizationDivision` |
-| `_CustomerReturn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionRateValueIsAmount` |  | |  |  |
+| `ConditionRateValueIsRatio` |  | |  |  |
+| `ConditionRateValueIsNull` |  | |  |  |
+| `ConditionQuantityIsNull` |  | |  |  |
+| `ConditionAmountIsNull` |  | |  |  |
+| `CustomerReturnType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_CustomerReturn` | | ✓ | | |
 
 ## Source Code
 

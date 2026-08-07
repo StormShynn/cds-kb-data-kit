@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RealEstateObjectType` | `tbo00.obart` |
-| key `REAuthorizationGroup` | `tivcaauthgrp.authgrp` |
-| `_Text` | *Association* |
-| `_REObjectType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RealEstateObjectType` | ✓ | |  | `obart` |
+| `REAuthorizationGroup` | ✓ | |  | `authgrp` |
+| `_Text` | | ✓ | | |
+| `_REObjectType` | | ✓ | | |
 
 ## Associations
 

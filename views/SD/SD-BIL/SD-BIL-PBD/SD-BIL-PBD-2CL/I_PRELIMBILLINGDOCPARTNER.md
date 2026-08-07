@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrelimBillingDocument` | `cast( Partner.BillingDocument as prelim_billing_document preserving type )` |
-| key `PartnerFunction` | `cast(Partner.PartnerFunction as parvw_unv preserving type )` |
-| `Customer` | `Partner.Customer` |
-| `Supplier` | `Partner.Supplier` |
-| `Personnel` | `Partner.Personnel` |
-| `ContactPerson` | `Partner.ContactPerson` |
-| `ReferenceBusinessPartner` | `Partner.ReferenceBusinessPartner` |
-| `AddressID` | `Partner.AddressID` |
-| `AddressPersonID` | `Partner.AddressPersonID` |
-| `AddressObjectType` | `Partner.AddressObjectType` |
-| `SDDocPartnerAddressRefType` | `Partner.SDDocPartnerAddressRefType` |
-| `VATRegistration` | `Partner.VATRegistration` |
-| `UnloadingPointName` | `Partner.UnloadingPointName` |
-| `_PrelimBillingDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrelimBillingDocument` | ✓ | |  | `cast( Partner.BillingDocument as prelim_billing_document preserving type )` |
+| `PartnerFunction` | ✓ | |  | `cast(Partner.PartnerFunction as parvw_unv preserving type )` |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `VATRegistration` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `_PrelimBillingDocument` | | ✓ | | |
 
 ## Associations
 

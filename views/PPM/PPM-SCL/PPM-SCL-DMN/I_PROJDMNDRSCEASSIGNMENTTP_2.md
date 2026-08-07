@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjDmndRsceAssgmtUUID` | `ProjDmndRsceAssgmtUUID` |
-| `ProjectDemandWorkUUID` | `ProjectDemandWorkUUID` |
-| `ProjectDemandUUID` | `ProjectDemandUUID` |
-| `ProjDmndRsceAssgmt` | `ProjDmndRsceAssgmt` |
-| `ProjDmndRsceAssgmtQuantity` | `} ProjDmndRsceAssgmtQuantity` |
-| `ProjDmndRsceAssgmtQuantityUnit` | `ProjDmndRsceAssgmtQuantityUnit` |
-| `ProjectUUID` | `ProjectUUID` |
-| `ReferencedObjectUUID` | `ReferencedObjectUUID` |
-| `ProjectDemandSupplyIdentifier` | `ProjectDemandSupplyIdentifier` |
-| `ProjectDemandSupplyDeliveryOrg` | `ProjectDemandSupplyDeliveryOrg` |
-| `ProjectDemandSourceOfSupply` | `ProjectDemandSourceOfSupply` |
-| `ProjAssgmtLastUpdateSource` | `ProjAssgmtLastUpdateSource` |
-| `ProjDmndRsceWorkAssgmtOID` | `ProjDmndRsceWorkAssgmtOID` |
-| `ProjDmndRsceWrkfrcPersonOID` | `ProjDmndRsceWrkfrcPersonOID` |
-| `ProjDmndRsceAssgmtStartDate` | `ProjDmndRsceAssgmtStartDate` |
-| `ProjDmndRsceAssgmtEndDate` | `ProjDmndRsceAssgmtEndDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Root` | *Association* |
-| `_Work` | *Association* |
-| `_RsceAssgmtQuantityUnit` | *Association* |
-| `_AssgmtDistribution` | *Association* |
-| `_PersonWorkAgreement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjDmndRsceAssgmtUUID` | ✓ | |  |  |
+| `ProjectDemandWorkUUID` |  | |  |  |
+| `ProjectDemandUUID` |  | |  |  |
+| `ProjDmndRsceAssgmt` |  | |  |  |
+| `ProjDmndRsceAssgmtQuantity` |  | |  | `} ProjDmndRsceAssgmtQuantity` |
+| `ProjDmndRsceAssgmtQuantityUnit` |  | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `ReferencedObjectUUID` |  | |  |  |
+| `ProjectDemandSupplyIdentifier` |  | |  |  |
+| `ProjectDemandSupplyDeliveryOrg` |  | |  |  |
+| `ProjectDemandSourceOfSupply` |  | |  |  |
+| `ProjAssgmtLastUpdateSource` |  | |  |  |
+| `ProjDmndRsceWorkAssgmtOID` |  | |  |  |
+| `ProjDmndRsceWrkfrcPersonOID` |  | |  |  |
+| `ProjDmndRsceAssgmtStartDate` |  | |  |  |
+| `ProjDmndRsceAssgmtEndDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Root` | | ✓ | | |
+| `_Work` | | ✓ | | |
+| `_RsceAssgmtQuantityUnit` | | ✓ | | |
+| `_AssgmtDistribution` | | ✓ | | |
+| `_PersonWorkAgreement` | | ✓ | | |
 
 ## Source Code
 

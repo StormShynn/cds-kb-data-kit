@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionPlanGroup` | `InspectionPlanGroup` |
-| key `InspectionPlan` | `InspectionPlan` |
-| `HasChangeNumber` | `HasChangeNumber` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_InspPlanVersion` | *Association* |
-| `_MatlAssgmtVersion` | *Association* |
-| `_InspPlanOperation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  |  |
+| `InspectionPlan` | ✓ | |  |  |
+| `HasChangeNumber` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_InspPlanVersion` | | ✓ | | |
+| `_MatlAssgmtVersion` | | ✓ | | |
+| `_InspPlanOperation` | | ✓ | | |
 
 ## Source Code
 

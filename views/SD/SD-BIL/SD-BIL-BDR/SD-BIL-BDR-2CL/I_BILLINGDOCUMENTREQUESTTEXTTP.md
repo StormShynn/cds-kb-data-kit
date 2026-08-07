@@ -34,13 +34,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequest` | `BillingDocumentRequest` |
-| key `Language` | `Language` |
-| key `LongTextID` | `LongTextID` |
-| `LongText` | `LongText` |
-| `_BillingDocumentRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongText` |  | |  |  |
+| `_BillingDocumentRequest` | | ✓ | | |
 
 ## Source Code
 

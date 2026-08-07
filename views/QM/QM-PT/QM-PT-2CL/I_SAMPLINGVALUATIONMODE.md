@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingValuationMode` | `qdbm.bewertmod` |
-| `SmplgValnIsByNcnfrmngUnits` | `qdbm.kzattrfe` |
-| `SamplingValuationIsByDefects` | `qdbm.kzattrfz` |
-| `SmplgValnIsByStdDvtnMethod` | `qdbm.kzvars` |
-| `SamplingValuationIsByCode` | `qdbm.kzcod` |
-| `SamplingValuationIsManually` | `qdbm.kzman` |
-| `SmplgValnIsByQltyCtrlChart` | `qdbm.kzqrk` |
-| `SmplgValnIsByToleranceLimits` | `qdbm.kzknull` |
-| `SmplgValnIsWithoutParameter` | `qdbm.kzohnebewp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingValuationMode` | ✓ | |  | `bewertmod` |
+| `SmplgValnIsByNcnfrmngUnits` |  | |  | `kzattrfe` |
+| `SamplingValuationIsByDefects` |  | |  | `kzattrfz` |
+| `SmplgValnIsByStdDvtnMethod` |  | |  | `kzvars` |
+| `SamplingValuationIsByCode` |  | |  | `kzcod` |
+| `SamplingValuationIsManually` |  | |  | `kzman` |
+| `SmplgValnIsByQltyCtrlChart` |  | |  | `kzqrk` |
+| `SmplgValnIsByToleranceLimits` |  | |  | `kzknull` |
+| `SmplgValnIsWithoutParameter` |  | |  | `kzohnebewp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

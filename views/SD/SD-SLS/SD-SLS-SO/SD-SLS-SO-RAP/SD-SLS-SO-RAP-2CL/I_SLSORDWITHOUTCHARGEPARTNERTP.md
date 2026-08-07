@@ -30,22 +30,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutCharge` | `SalesOrderWithoutChargePartner.SalesOrderWithoutCharge` |
-| key `PartnerFunction` | `SalesOrderWithoutChargePartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `SalesOrderWithoutChargePartner.PartnerFunctionForEdit` |
-| `Customer` | `SalesOrderWithoutChargePartner.Customer` |
-| `Supplier` | `SalesOrderWithoutChargePartner.Supplier` |
-| `Personnel` | `SalesOrderWithoutChargePartner.Personnel` |
-| `ContactPerson` | `SalesOrderWithoutChargePartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `SalesOrderWithoutChargePartner.ReferenceBusinessPartner` |
-| `Partner` | `SalesOrderWithoutChargePartner.Partner` |
-| `SalesOrderWithoutChargeType` | `SalesOrderWithoutChargePartner.SalesOrderWithoutChargeType` |
-| `SalesOrganization` | `SalesOrderWithoutChargePartner.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderWithoutChargePartner.DistributionChannel` |
-| `OrganizationDivision` | `SalesOrderWithoutChargePartner.OrganizationDivision` |
-| `_SalesOrderWithoutCharge` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesOrderWithoutCharge` | | ✓ | | |
 
 ## Source Code
 

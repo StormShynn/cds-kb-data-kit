@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DistrStatusByDecentralizedWrhs` | `cast(left(dd07t.domvalue_l, 1) as vlstk preserving type )` |
-| key `Language` | `ddlanguage` |
-| `DistrStatusByDectrlzdWrhsDesc` | `ddtext` |
-| `_DistrStatusByDectrlzdWrhs` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DistrStatusByDecentralizedWrhs` | ✓ | |  | `cast(left(dd07t.domvalue_l, 1) as vlstk preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `DistrStatusByDectrlzdWrhsDesc` |  | |  | `ddtext` |
+| `_DistrStatusByDectrlzdWrhs` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

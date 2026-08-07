@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REArchitectureObjectUUID` | `REArchitectureObjectUUID` |
-| `REArchitectureObjectType` | `REArchitectureObjectType` |
-| `InternalRealEstateNumber` | `InternalRealEstateNumber` |
-| `REStatusObject` | `REStatusObject` |
-| `REArchitectureObjectOID` | `REArchitectureObjectOID` |
-| `REArchitectureObjectNumber` | `REArchitectureObjectNumber` |
-| `REArchtrObjectAlternativeID` | `REArchtrObjectAlternativeID` |
-| `REArchitectureObjectName` | `REArchitectureObjectName` |
-| `REIdentificationKey` | `REIdentificationKey` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `REAuthorizationGroup` | `REAuthorizationGroup` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REArchitectureObjectUUID` | ✓ | |  |  |
+| `REArchitectureObjectType` |  | |  |  |
+| `InternalRealEstateNumber` |  | |  |  |
+| `REStatusObject` |  | |  |  |
+| `REArchitectureObjectOID` |  | |  |  |
+| `REArchitectureObjectNumber` |  | |  |  |
+| `REArchtrObjectAlternativeID` |  | |  |  |
+| `REArchitectureObjectName` |  | |  |  |
+| `REIdentificationKey` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `REAuthorizationGroup` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
 
 ## Associations
 

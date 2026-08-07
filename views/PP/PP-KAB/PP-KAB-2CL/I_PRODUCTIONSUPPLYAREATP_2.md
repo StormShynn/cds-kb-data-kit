@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionSupplyArea` | `ProductionSupplyArea` |
-| key `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `ProductionSupplyAreaRespPerson` | `ProductionSupplyAreaRespPerson` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `ShiftGrouping` | `ShiftGrouping` |
-| `ShiftSequence` | `ShiftSequence` |
-| `PullIntervalInWorkdays` | `PullIntervalInWorkdays` |
-| `PullIntervalInMinutes` | `PullIntervalInMinutes` |
-| `UnloadingWarehouseStagingArea` | `UnloadingWarehouseStagingArea` |
-| `AutomotiveLoadingPoint` | `AutomotiveLoadingPoint` |
-| `ProductionSupplyAreaAddressID` | `ProductionSupplyAreaAddressID` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_ProductionSupplyAreaAddress` | *Association* |
-| `_ProductionSupplyAreaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionSupplyArea` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ProductionSupplyAreaRespPerson` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `ShiftGrouping` |  | |  |  |
+| `ShiftSequence` |  | |  |  |
+| `PullIntervalInWorkdays` |  | |  |  |
+| `PullIntervalInMinutes` |  | |  |  |
+| `UnloadingWarehouseStagingArea` |  | |  |  |
+| `AutomotiveLoadingPoint` |  | |  |  |
+| `ProductionSupplyAreaAddressID` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_ProductionSupplyAreaAddress` | | ✓ | | |
+| `_ProductionSupplyAreaText` | | ✓ | | |
 
 ## Source Code
 

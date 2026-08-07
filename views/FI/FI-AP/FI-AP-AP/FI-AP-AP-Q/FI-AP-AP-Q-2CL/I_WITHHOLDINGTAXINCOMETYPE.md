@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `t059e.land1` |
-| key `WithholdingTaxIncomeType` | `t059e.qekar` |
-| `_Country` | *Association* |
-| `_IncomeTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` |
+| `_Country` | | ✓ | | |
+| `_IncomeTypeText` | | ✓ | | |
 
 ## Associations
 

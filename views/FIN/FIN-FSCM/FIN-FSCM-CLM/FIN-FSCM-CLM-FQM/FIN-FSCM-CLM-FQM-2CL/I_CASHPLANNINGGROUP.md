@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CashPlanningGroup` | `grupp` |
-| `PlanningLevel` | `ebene` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CashPlanningGroup` | ✓ | |  | `grupp` |
+| `PlanningLevel` |  | |  | `ebene` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

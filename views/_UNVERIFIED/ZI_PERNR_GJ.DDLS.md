@@ -35,22 +35,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ZcPernrId` | `zc_pernrid` |
-| `ZcEmpName` | `zc_emp_name` |
-| `ZcOrgehCode` | `zc_orgehcode` |
-| `Zchp` | `zc_hp` |
-| `zcorgehname` | `_Orgehcode.zcorgehname` |
-| `CreatedBy` | `created_by` |
-| `CreatedAt` | `created_at` |
-| `LastChangedBy` | `last_changed_by` |
-| `LastChangedAt` | `last_changed_at` |
-| `LocalLastChangedAt` | `local_last_changed_at` |
-| `Attachment` | `attachment` |
-| `MimeType` | `mime_type` |
-| `FileName` | `file_name` |
-| `_PERNR_QVIEW` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ZcPernrId` | ✓ | |  | `zc_pernrid` |
+| `ZcEmpName` |  | |  | `zc_emp_name` |
+| `ZcOrgehCode` |  | |  | `zc_orgehcode` |
+| `Zchp` |  | |  | `zc_hp` |
+| `zcorgehname` |  | | `_Orgehcode` | `zcorgehname` |
+| `CreatedBy` |  | |  | `created_by` |
+| `CreatedAt` |  | |  | `created_at` |
+| `LastChangedBy` |  | |  | `last_changed_by` |
+| `LastChangedAt` |  | |  | `last_changed_at` |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
+| `Attachment` |  | |  | `attachment` |
+| `MimeType` |  | |  | `mime_type` |
+| `FileName` |  | |  | `file_name` |
+| `_PERNR_QVIEW` | | ✓ | | |
 
 ## Associations
 

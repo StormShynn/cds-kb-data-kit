@@ -30,27 +30,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SubsequentProcFlowItem.SalesDocument` |
-| key `SalesOrderItem` | `SubsequentProcFlowItem.SalesDocumentItem` |
-| key `DocRelationshipUUID` | `SubsequentProcFlowItem.DocRelationshipUUID` |
-| `SubsequentDocument` | `SubsequentProcFlowItem.SubsequentDocument` |
-| `SubsequentDocumentItem` | `SubsequentProcFlowItem.SubsequentDocumentItem` |
-| `SubsequentDocumentCategory` | `SubsequentProcFlowItem.SubsequentDocumentCategory` |
-| `ProcessFlowLevel` | `SubsequentProcFlowItem.ProcessFlowLevel` |
-| `SubsqntDocItmPrecdgDocument` | `SubsqntDocItmPrecdgDocument` |
-| `SubsqntDocItmPrecdgDocItem` | `SubsqntDocItmPrecdgDocItem` |
-| `SubsqntDocItmPrecdgDocCategory` | `SubsqntDocItmPrecdgDocCategory` |
-| `CreationDate` | `SubsequentProcFlowItem.CreationDate` |
-| `CreationTime` | `SubsequentProcFlowItem.CreationTime` |
-| `LastChangeDate` | `SubsequentProcFlowItem.LastChangeDate` |
-| `SalesOrderType` | `_SalesOrder.SalesOrderType` |
-| `SalesOrganization` | `_SalesOrder.SalesOrganization` |
-| `DistributionChannel` | `_SalesOrder.DistributionChannel` |
-| `OrganizationDivision` | `_SalesOrder.OrganizationDivision` |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `SalesDocument` |
+| `SalesOrderItem` | ✓ | |  | `SalesDocumentItem` |
+| `DocRelationshipUUID` | ✓ | |  |  |
+| `SubsequentDocument` |  | |  |  |
+| `SubsequentDocumentItem` |  | |  |  |
+| `SubsequentDocumentCategory` |  | |  |  |
+| `ProcessFlowLevel` |  | |  |  |
+| `SubsqntDocItmPrecdgDocument` |  | |  |  |
+| `SubsqntDocItmPrecdgDocItem` |  | |  |  |
+| `SubsqntDocItmPrecdgDocCategory` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
 
 ## Associations
 

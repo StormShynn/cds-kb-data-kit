@@ -42,21 +42,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowTaskInternalID` | `_Workflowtask.WorkflowTaskInternalID` |
-| `PurchaseOrder` | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |
-| `PurchaseOrderType` | `_PurchaseOrder.PurchaseOrderType` |
-| `DocumentCurrency` | `_PurchaseOrder.DocumentCurrency` |
-| `PurchaseOrderNetAmount` | `cast((_PurchaseOrderNetAmount.PurchaseOrderNetAmount) as mm_pur_order_tot_net_amount )` |
-| `PurOrdWrkflwTskCreationUTCDate` | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `PurOrdWrkflwTskCreationUTCTime` | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `PurOrdWrkflwTaskDueUTCDate` | `cast(tstmp_to_dats( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
-| `PurOrdWrkflwTaskDueUTCTime` | `cast(tstmp_to_tims( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
-| `Supplier` | `_PurchaseOrder.Supplier` |
-| `CreatedByUser` | `cast(_User.UserDescription as mm_oa_user_fullname )` |
-| `SupplierName` | `_Supplier.SupplierName` |
-| `POHeaderTextPlainLongText` | `_PurchaseOrderPlainLongText.PlainLongText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |
+| `PurchaseOrder` |  | |  | `cast(substring(_WorkflowTaskApplObject.TechnicalWrkflwObject, 1 , 10 ) as ebeln )` |
+| `PurchaseOrderType` |  | | `_PurchaseOrder` | `PurchaseOrderType` |
+| `DocumentCurrency` |  | | `_PurchaseOrder` | `DocumentCurrency` |
+| `PurchaseOrderNetAmount` |  | |  | `cast((_PurchaseOrderNetAmount.PurchaseOrderNetAmount) as mm_pur_order_tot_net_amount )` |
+| `PurOrdWrkflwTskCreationUTCDate` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
+| `PurOrdWrkflwTskCreationUTCTime` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |
+| `PurOrdWrkflwTaskDueUTCDate` |  | |  | `cast(tstmp_to_dats( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
+| `PurOrdWrkflwTaskDueUTCTime` |  | |  | `cast(tstmp_to_tims( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
+| `Supplier` |  | | `_PurchaseOrder` | `Supplier` |
+| `CreatedByUser` |  | |  | `cast(_User.UserDescription as mm_oa_user_fullname )` |
+| `SupplierName` |  | | `_Supplier` | `SupplierName` |
+| `POHeaderTextPlainLongText` |  | | `_PurchaseOrderPlainLongText` | `PlainLongText` |
 
 ## Source Code
 

@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t157e.spras` |
-| key `GoodsMovementType` | `t157e.bwart` |
-| key `GoodsMovementReasonCode` | `t157e.grund` |
-| `GoodsMovementReasonName` | `t157e.grtxt` |
-| `_Language` | *Association* |
-| `_GoodsMovementType` | *Association* |
-| `_GoodsMovementReasonCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `GoodsMovementType` | ✓ | |  | `bwart` |
+| `GoodsMovementReasonCode` | ✓ | |  | `grund` |
+| `GoodsMovementReasonName` |  | |  | `grtxt` |
+| `_Language` | | ✓ | | |
+| `_GoodsMovementType` | | ✓ | | |
+| `_GoodsMovementReasonCode` | | ✓ | | |
 
 ## Associations
 

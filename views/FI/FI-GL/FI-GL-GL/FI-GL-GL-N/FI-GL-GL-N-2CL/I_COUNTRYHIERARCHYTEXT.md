@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CountryHierarchy` | `cast(hrrp_dirt_n.hryid as fis_hryid_country preserving type )` |
-| key `ValidityEndDate` | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| key `Language` | `spras` |
-| `ValidityStartDate` | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `CountryHierarchyName` | `hrytxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CountryHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_country preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
+| `CountryHierarchyName` |  | |  | `hrytxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

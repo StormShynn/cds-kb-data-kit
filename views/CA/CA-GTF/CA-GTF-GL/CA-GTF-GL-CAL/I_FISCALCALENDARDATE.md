@@ -28,39 +28,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYearVariant` | `P_FiscalCalendarDate.fiscal_year_variant` |
-| key `CalendarDate` | `P_FiscalCalendarDate.calendar_date` |
-| `FiscalYear` | `P_FiscalCalendarDate.fiscal_year` |
-| `FiscalYearStartDate` | `P_FiscalCalendarDate.fiscal_year_start_date` |
-| `FiscalYearEndDate` | `P_FiscalCalendarDate.fiscal_year_end_date` |
-| `FiscalPeriod` | `P_FiscalCalendarDate.fiscal_period` |
-| `FiscalPeriodStartDate` | `P_FiscalCalendarDate.fiscal_period_start_date` |
-| `FiscalPeriodEndDate` | `P_FiscalCalendarDate.fiscal_period_end_date` |
-| `FiscalQuarter` | `P_FiscalCalendarDate.fiscal_quarter` |
-| `FiscalQuarterStartDate` | `P_FiscalCalendarDate.fiscal_quarter_start_date` |
-| `FiscalQuarterEndDate` | `P_FiscalCalendarDate.fiscal_quarter_end_date` |
-| `FiscalWeek` | `P_FiscalCalendarDate.fiscal_week` |
-| `FiscalWeekStartDate` | `P_FiscalCalendarDate.fiscal_week_start_date` |
-| `FiscalWeekEndDate` | `P_FiscalCalendarDate.fiscal_week_end_date` |
-| `FiscalYearPeriod` | `P_FiscalCalendarDate.fiscal_year_period` |
-| `FiscalYearQuarter` | `P_FiscalCalendarDate.fiscal_year_quarter` |
-| `FiscalYearWeek` | `P_FiscalCalendarDate.fiscal_year_week` |
-| `FiscalYearConsecutiveNumber` | `cast(P_FiscalCalendarDate.fiscal_year as fins_fiscalyear_i)` |
-| `FiscalPeriodConsecutiveNumber` | `P_FiscalCalendarDate.fiscal_year_period_int` |
-| `FiscalQuarterConsecutiveNumber` | `P_FiscalCalendarDate.fiscal_year_quarter_int` |
-| `FiscalWeekConsecutiveNumber` | `P_FiscalCalendarDate.fiscal_year_week_int` |
-| `_FiscalYearVariant` | *Association* |
-| `_CalendarDate` | *Association* |
-| `_Text` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_FiscalPeriod` | *Association* |
-| `_FiscalQuarter` | *Association* |
-| `_FiscalWeek` | *Association* |
-| `_FiscalYearPeriod` | *Association* |
-| `_FiscalYearQuarter` | *Association* |
-| `_FiscalYearWeek` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  | `fiscal_year_variant` |
+| `CalendarDate` | ✓ | |  | `calendar_date` |
+| `FiscalYear` |  | |  | `fiscal_year` |
+| `FiscalYearStartDate` |  | |  | `fiscal_year_start_date` |
+| `FiscalYearEndDate` |  | |  | `fiscal_year_end_date` |
+| `FiscalPeriod` |  | |  | `fiscal_period` |
+| `FiscalPeriodStartDate` |  | |  | `fiscal_period_start_date` |
+| `FiscalPeriodEndDate` |  | |  | `fiscal_period_end_date` |
+| `FiscalQuarter` |  | |  | `fiscal_quarter` |
+| `FiscalQuarterStartDate` |  | |  | `fiscal_quarter_start_date` |
+| `FiscalQuarterEndDate` |  | |  | `fiscal_quarter_end_date` |
+| `FiscalWeek` |  | |  | `fiscal_week` |
+| `FiscalWeekStartDate` |  | |  | `fiscal_week_start_date` |
+| `FiscalWeekEndDate` |  | |  | `fiscal_week_end_date` |
+| `FiscalYearPeriod` |  | |  | `fiscal_year_period` |
+| `FiscalYearQuarter` |  | |  | `fiscal_year_quarter` |
+| `FiscalYearWeek` |  | |  | `fiscal_year_week` |
+| `FiscalYearConsecutiveNumber` |  | |  | `cast(P_FiscalCalendarDate.fiscal_year as fins_fiscalyear_i)` |
+| `FiscalPeriodConsecutiveNumber` |  | |  | `fiscal_year_period_int` |
+| `FiscalQuarterConsecutiveNumber` |  | |  | `fiscal_year_quarter_int` |
+| `FiscalWeekConsecutiveNumber` |  | |  | `fiscal_year_week_int` |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_CalendarDate` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_FiscalPeriod` | | ✓ | | |
+| `_FiscalQuarter` | | ✓ | | |
+| `_FiscalWeek` | | ✓ | | |
+| `_FiscalYearPeriod` | | ✓ | | |
+| `_FiscalYearQuarter` | | ✓ | | |
+| `_FiscalYearWeek` | | ✓ | | |
 
 ## Associations
 

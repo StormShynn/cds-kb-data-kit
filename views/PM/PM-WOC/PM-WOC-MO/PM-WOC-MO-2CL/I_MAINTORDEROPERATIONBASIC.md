@@ -28,78 +28,78 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceOrder` | `afko.aufnr` |
-| key `MaintenanceOrderOperation` | `cast (afvc.vornr as maintenanceorderoperation preserving type )` |
-| `MaintenanceOrderSubOperation` | `cast ( '0000' as maintenanceordersuboperation )` |
-| `MaintOrderRoutingNumber` | `afvc.aufpl` |
-| `MaintOrderOperationCounter` | `afvc.aplzl` |
-| `Plant` | `afvc.werks` |
-| `OperationWorkCenterTypeCode` | `'A'` |
-| `OperationWorkCenterInternalID` | `afvc.arbid` |
-| `OperationControlKey` | `afvc.steus` |
-| `OperationDescription` | `afvc.ltxa1` |
-| `OperationStandardTextCode` | `afvc.ktsch` |
-| `Language` | `cast(afvc.txtsp as spras preserving type )` |
-| `NumberOfTimeTickets` | `afvc.loanz` |
-| `OperationPurgInfoRecdSearchTxt` | `afvc.sortl` |
-| `OperationSupplier` | `afvc.lifnr` |
-| `OpExternalProcessingPrice` | `afvc.preis` |
-| `MaintOrdOpProcgPriceUnitValue` | `afvc.peinh` |
-| `CostElement` | `afvc.sakto` |
-| `OpExternalProcessingCurrency` | `afvc.waers` |
-| `OperationPurchasingInfoRecord` | `afvc.infnr` |
-| `PurchasingOrganization` | `afvc.ekorg` |
-| `PurchasingGroup` | `afvc.ekgrp` |
-| `MaterialGroup` | `afvc.matkl` |
-| `OpPurchaseOutlineAgreement` | `cast (afvc.ebeln as konnr preserving type )` |
-| `OpPurchaseOutlineAgreementItem` | `cast (afvc.ebelp as ktpnr preserving type)` |
-| `OperationRequisitionerName` | `afvc.afnam` |
-| `OperationTrackingNumber` | `afvc.bednr` |
-| `NumberOfCapacities` | `afvc.anzzl` |
-| `OperationWorkPercent` | `afvc.prznt` |
-| `OperationCalculationControl` | `afvc.indet` |
-| `ActivityType` | `afvc.larnt` |
-| `OperationSystemCondition` | `afvc.anlzu` |
-| `OperationGoodsRecipientName` | `afvc.wempf` |
-| `OperationUnloadingPointName` | `afvc.ablad` |
-| `OperationPersonResponsible` | `afvc.pernr` |
-| `Equipment` | `afvc.equnr` |
-| `FunctionalLocation` | `cast( afvc.tplnr as vdm_eam_tplnr preserving type )` |
-| `BusinessArea` | `afvc.gsber` |
-| `ProfitCenter` | `afvc.prctr` |
-| `CostingSheet` | `afvc.kalsm` |
-| `TaxJurisdiction` | `afvc.txjcd` |
-| `FunctionalArea` | `afvc.func_area` |
-| `Assembly` | `afvc.istru` |
-| `MaintOperationExecStageCode` | `cast( afvc.maintopexecutionphasecode as eam_premainpost_cds preserving type )` |
-| `CostCtrActivityType` | `afvc.larnt` |
-| `ReqgCostCenterControllingArea` | `afvc.anfkokrs` |
-| `CapacityRequirement` | `afvc.bedid` |
-| `CapacityRequirementItem` | `afvc.bedzl` |
-| `PurchaseRequisition` | `afvc.banfn` |
-| `MaintOrderOperationInternalID` | `afvc.objnr` |
-| `PurchaseRequisitionItem` | `afvc.bnfpo` |
-| `MaintOrderConfirmation` | `afvc.rueck` |
-| `OperationMilestoneUsageCode` | `afvc.mlstn` |
-| `MaintOrderConfCntrValue` | `afvc.rmzhl` |
-| `OperationHasLongText` | `cast ( case afvc.txtsp when '' then '' else 'X' end as xfeld preserving type)` |
-| `ControllingArea` | `aufk.kokrs` |
-| `MaintOrdOpProcessPhaseCode` | `afvc.maintordopprocessphasecode` |
-| `MaintOrdOpProcessSubPhaseCode` | `afvc.maintordopprocesssubphasecode` |
-| `MaintOperationalChecklistType` | `afvc.cl_type` |
-| `_MaintenanceOrder` | *Association* |
-| `_Plant` | *Association* |
-| `_OperationControlKey` | *Association* |
-| `_Language` | *Association* |
-| `_Supplier` | *Association* |
-| `_OpExternalProcessingCurrency` | *Association* |
-| `_PersonResponsible` | *Association* |
-| `_Assembly` | *Association* |
-| `_MaintOperationExecStageCode` | *Association* |
-| `_EAMProcessPhase` | *Association* |
-| `_EAMProcessSubPhase` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  | `aufnr` |
+| `MaintenanceOrderOperation` | ✓ | |  | `cast (afvc.vornr as maintenanceorderoperation preserving type )` |
+| `MaintenanceOrderSubOperation` |  | |  | `cast ( '0000' as maintenanceordersuboperation )` |
+| `MaintOrderRoutingNumber` |  | |  | `aufpl` |
+| `MaintOrderOperationCounter` |  | |  | `aplzl` |
+| `Plant` |  | |  | `werks` |
+| `OperationWorkCenterTypeCode` |  | |  | `'A'` |
+| `OperationWorkCenterInternalID` |  | |  | `arbid` |
+| `OperationControlKey` |  | |  | `steus` |
+| `OperationDescription` |  | |  | `ltxa1` |
+| `OperationStandardTextCode` |  | |  | `ktsch` |
+| `Language` |  | |  | `cast(afvc.txtsp as spras preserving type )` |
+| `NumberOfTimeTickets` |  | |  | `loanz` |
+| `OperationPurgInfoRecdSearchTxt` |  | |  | `sortl` |
+| `OperationSupplier` |  | |  | `lifnr` |
+| `OpExternalProcessingPrice` |  | |  | `preis` |
+| `MaintOrdOpProcgPriceUnitValue` |  | |  | `peinh` |
+| `CostElement` |  | |  | `sakto` |
+| `OpExternalProcessingCurrency` |  | |  | `waers` |
+| `OperationPurchasingInfoRecord` |  | |  | `infnr` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `PurchasingGroup` |  | |  | `ekgrp` |
+| `MaterialGroup` |  | |  | `matkl` |
+| `OpPurchaseOutlineAgreement` |  | |  | `cast (afvc.ebeln as konnr preserving type )` |
+| `OpPurchaseOutlineAgreementItem` |  | |  | `cast (afvc.ebelp as ktpnr preserving type)` |
+| `OperationRequisitionerName` |  | |  | `afnam` |
+| `OperationTrackingNumber` |  | |  | `bednr` |
+| `NumberOfCapacities` |  | |  | `anzzl` |
+| `OperationWorkPercent` |  | |  | `prznt` |
+| `OperationCalculationControl` |  | |  | `indet` |
+| `ActivityType` |  | |  | `larnt` |
+| `OperationSystemCondition` |  | |  | `anlzu` |
+| `OperationGoodsRecipientName` |  | |  | `wempf` |
+| `OperationUnloadingPointName` |  | |  | `ablad` |
+| `OperationPersonResponsible` |  | |  | `pernr` |
+| `Equipment` |  | |  | `equnr` |
+| `FunctionalLocation` |  | |  | `cast( afvc.tplnr as vdm_eam_tplnr preserving type )` |
+| `BusinessArea` |  | |  | `gsber` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `CostingSheet` |  | |  | `kalsm` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `FunctionalArea` |  | |  | `func_area` |
+| `Assembly` |  | |  | `istru` |
+| `MaintOperationExecStageCode` |  | |  | `cast( afvc.maintopexecutionphasecode as eam_premainpost_cds preserving type )` |
+| `CostCtrActivityType` |  | |  | `larnt` |
+| `ReqgCostCenterControllingArea` |  | |  | `anfkokrs` |
+| `CapacityRequirement` |  | |  | `bedid` |
+| `CapacityRequirementItem` |  | |  | `bedzl` |
+| `PurchaseRequisition` |  | |  | `banfn` |
+| `MaintOrderOperationInternalID` |  | |  | `objnr` |
+| `PurchaseRequisitionItem` |  | |  | `bnfpo` |
+| `MaintOrderConfirmation` |  | |  | `rueck` |
+| `OperationMilestoneUsageCode` |  | |  | `mlstn` |
+| `MaintOrderConfCntrValue` |  | |  | `rmzhl` |
+| `OperationHasLongText` |  | |  | `cast ( case afvc.txtsp when '' then '' else 'X' end as xfeld preserving type)` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `MaintOrdOpProcessPhaseCode` |  | |  | `maintordopprocessphasecode` |
+| `MaintOrdOpProcessSubPhaseCode` |  | |  | `maintordopprocesssubphasecode` |
+| `MaintOperationalChecklistType` |  | |  | `cl_type` |
+| `_MaintenanceOrder` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_OperationControlKey` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_OpExternalProcessingCurrency` | | ✓ | | |
+| `_PersonResponsible` | | ✓ | | |
+| `_Assembly` | | ✓ | | |
+| `_MaintOperationExecStageCode` | | ✓ | | |
+| `_EAMProcessPhase` | | ✓ | | |
+| `_EAMProcessSubPhase` | | ✓ | | |
 
 ## Associations
 

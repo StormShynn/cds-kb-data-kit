@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(t.ddlanguage as spras preserving type)` |
-| key `ForecastPeriodType` | `cast(substring(t.domvalue_l, 1, 1) as periotype preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `ForecastPeriodTypeName` | `t.ddtext` |
-| `_Language` | *Association* |
-| `_ForecastPeriodType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
+| `ForecastPeriodType` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as periotype preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `ForecastPeriodTypeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_ForecastPeriodType` | | ✓ | | |
 
 ## Associations
 

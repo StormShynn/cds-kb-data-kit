@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RequestForQuotation` | `I_PurchasingDocumentItem.PurchasingDocument` |
-| key `RequestForQuotationItem` | `cast (I_PurchasingDocumentItem.PurchasingDocumentItem as vdm_requestforquotationitem preserving type)` |
-| `PurchasingDocumentCategory` | `I_PurchasingDocumentItem.PurchasingDocumentCategory` |
-| `PurchasingDocumentItemText` | `I_PurchasingDocumentItem.PurchasingDocumentItemText` |
-| `Material` | `I_PurchasingDocumentItem.Material` |
-| `ManufacturerMaterial` | `I_PurchasingDocumentItem.ManufacturerMaterial` |
-| `ManufacturerPartNmbr` | `I_PurchasingDocumentItem.ManufacturerPartNmbr` |
-| `Manufacturer` | `I_PurchasingDocumentItem.Manufacturer` |
-| `MaterialGroup` | `I_PurchasingDocumentItem.MaterialGroup` |
-| `Plant` | `I_PurchasingDocumentItem.Plant` |
-| `ManualDeliveryAddressID` | `I_PurchasingDocumentItem.ManualDeliveryAddressID` |
-| `ReferenceDeliveryAddressID` | `I_PurchasingDocumentItem.ReferenceDeliveryAddressID` |
-| `IncotermsClassification` | `I_PurchasingDocumentItem.IncotermsClassification` |
-| `IncotermsTransferLocation` | `I_PurchasingDocumentItem.IncotermsTransferLocation` |
-| `IncotermsLocation1` | `I_PurchasingDocumentItem.IncotermsLocation1` |
-| `IncotermsLocation2` | `I_PurchasingDocumentItem.IncotermsLocation2` |
-| `OrderQuantityUnit` | `I_PurchasingDocumentItem.OrderQuantityUnit` |
-| `OrderItemQtyToBaseQtyNmrtr` | `I_PurchasingDocumentItem.OrderItemQtyToBaseQtyNmrtr` |
-| `OrderItemQtyToBaseQtyDnmntr` | `I_PurchasingDocumentItem.OrderItemQtyToBaseQtyDnmntr` |
-| `BaseUnit` | `I_PurchasingDocumentItem.BaseUnit` |
-| `PurchaseRequisition` | `I_PurchasingDocumentItem.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `I_PurchasingDocumentItem.PurchaseRequisitionItem` |
-| `_RequestForQuotation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RequestForQuotation` | ✓ | |  | `PurchasingDocument` |
+| `RequestForQuotationItem` | ✓ | |  | `cast (I_PurchasingDocumentItem.PurchasingDocumentItem as vdm_requestforquotationitem preserving type)` |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |
+| `Material` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `_RequestForQuotation` | | ✓ | | |
 
 ## Associations
 

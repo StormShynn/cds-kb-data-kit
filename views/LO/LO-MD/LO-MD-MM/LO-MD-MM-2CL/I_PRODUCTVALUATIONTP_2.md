@@ -30,41 +30,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `ValuationArea` | `ValuationArea` |
-| key `ValuationType` | `ValuationType` |
-| `ValuationClass` | `ValuationClass` |
-| `PriceDeterminationControl` | `PriceDeterminationControl` |
-| `StandardPrice` | `StandardPrice` |
-| `ProductPriceUnitQuantity` | `ProductPriceUnitQuantity` |
-| `InventoryValuationProcedure` | `InventoryValuationProcedure` |
-| `MovingAveragePrice` | `MovingAveragePrice` |
-| `ValuationCategory` | `ValuationCategory` |
-| `ProductUsageType` | `ProductUsageType` |
-| `ProductOriginType` | `ProductOriginType` |
-| `IsProducedInhouse` | `IsProducedInhouse` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `ValuationClassSalesOrderStock` | `ValuationClassSalesOrderStock` |
-| `ProjectStockValuationClass` | `ProjectStockValuationClass` |
-| `Currency` | `Currency` |
-| `BaseUnit` | `BaseUnit` |
-| `ValuationMarginPercent` | `ValuationMarginPercent` |
-| `_Product` | *Association* |
-| `_ProductValuationAccounting` | *Association* |
-| `_ProductValuationLedgerAccount` | *Association* |
-| `_ProductValuationLedgerPrices` | *Association* |
-| `_ProductValuationCosting` | *Association* |
-| `_ValuationClass` | *Association* |
-| `_PriceDeterminationControl` | *Association* |
-| `_InventoryValnProcedure` | *Association* |
-| `_BR_MaterialUsage` | *Association* |
-| `_BR_MaterialOrigin` | *Association* |
-| `_ValnClassSalesOrderStock` | *Association* |
-| `_ValnClassProjectStock` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `ValuationType` | ✓ | |  |  |
+| `ValuationClass` |  | |  |  |
+| `PriceDeterminationControl` |  | |  |  |
+| `StandardPrice` |  | |  |  |
+| `ProductPriceUnitQuantity` |  | |  |  |
+| `InventoryValuationProcedure` |  | |  |  |
+| `MovingAveragePrice` |  | |  |  |
+| `ValuationCategory` |  | |  |  |
+| `ProductUsageType` |  | |  |  |
+| `ProductOriginType` |  | |  |  |
+| `IsProducedInhouse` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `ValuationClassSalesOrderStock` |  | |  |  |
+| `ProjectStockValuationClass` |  | |  |  |
+| `Currency` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ValuationMarginPercent` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductValuationAccounting` | | ✓ | | |
+| `_ProductValuationLedgerAccount` | | ✓ | | |
+| `_ProductValuationLedgerPrices` | | ✓ | | |
+| `_ProductValuationCosting` | | ✓ | | |
+| `_ValuationClass` | | ✓ | | |
+| `_PriceDeterminationControl` | | ✓ | | |
+| `_InventoryValnProcedure` | | ✓ | | |
+| `_BR_MaterialUsage` | | ✓ | | |
+| `_BR_MaterialOrigin` | | ✓ | | |
+| `_ValnClassSalesOrderStock` | | ✓ | | |
+| `_ValnClassProjectStock` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Source Code
 

@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElmntDeliverableUUID` | `Deliverable.entprojelmntdeliverableuuid` |
-| `ProjectElementUUID` | `Deliverable.projectelementuuid` |
-| `ProjectUUID` | `Deliverable.projectuuid` |
-| `EntProjElmntDeliverableType` | `Deliverable.entprojelmntdeliverabletype` |
-| `EntProjElmntDlvbrlQuantity` | `Deliverable.entprojelmntdlvbrlquantity` |
-| `EntProjElmntDlvbrlQuantityUnit` | `Deliverable.entprojelmntdlvbrlquantityunit` |
-| `EntProjElmntDlvbrlRevnAmount` | `Deliverable.entprojelmntdlvbrlrevnamount` |
-| `EntProjElmntDlvbrlRevnCurrency` | `Deliverable.entprojelmntdlvbrlrevncurrency` |
-| `CreatedByUser` | `Deliverable.created_by` |
-| `CreationDateTime` | `Deliverable.created_on` |
-| `LastChangedByUser` | `Deliverable.changed_by` |
-| `LastChangeDateTime` | `Deliverable.changed_on` |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EnPrjElmDlvbrlDistrRevn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElmntDeliverableUUID` | ✓ | |  | `entprojelmntdeliverableuuid` |
+| `ProjectElementUUID` |  | |  | `projectelementuuid` |
+| `ProjectUUID` |  | |  | `projectuuid` |
+| `EntProjElmntDeliverableType` |  | |  | `entprojelmntdeliverabletype` |
+| `EntProjElmntDlvbrlQuantity` |  | |  | `entprojelmntdlvbrlquantity` |
+| `EntProjElmntDlvbrlQuantityUnit` |  | |  | `entprojelmntdlvbrlquantityunit` |
+| `EntProjElmntDlvbrlRevnAmount` |  | |  | `entprojelmntdlvbrlrevnamount` |
+| `EntProjElmntDlvbrlRevnCurrency` |  | |  | `entprojelmntdlvbrlrevncurrency` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDateTime` |  | |  | `created_on` |
+| `LastChangedByUser` |  | |  | `changed_by` |
+| `LastChangeDateTime` |  | |  | `changed_on` |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EnPrjElmDlvbrlDistrRevn` | | ✓ | | |
 
 ## Associations
 

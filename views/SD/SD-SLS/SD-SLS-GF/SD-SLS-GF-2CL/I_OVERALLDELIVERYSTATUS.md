@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallDeliveryStatus` | `cast ( substring(dd07l.domvalue_l, 1, 1) as lfstk preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallDeliveryStatus` | ✓ | |  | `cast ( substring(dd07l.domvalue_l, 1, 1) as lfstk preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
-| key `ServiceRefObjectSequenceNumber` | `ServiceRefObjectSequenceNumber` |
-| `SerialNumber` | `SerialNumber` |
-| `ServiceReferenceEquipment` | `ServiceReferenceEquipment` |
-| `ServiceRefFunctionalLocation` | `ServiceRefFunctionalLocation` |
-| `ServiceReferenceProduct` | `ServiceReferenceProduct` |
-| `SrvcRefObjIsMainObject` | `SrvcRefObjIsMainObject` |
-| `_BusinessSolutionOrder` | *Association* |
-| `_BusinessSolutionOrderItem` | *Association* |
-| `_EquipmentText` | *Association* |
-| `_FunctionalLocationText` | *Association* |
-| `_ProductText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |
+| `SerialNumber` |  | |  |  |
+| `ServiceReferenceEquipment` |  | |  |  |
+| `ServiceRefFunctionalLocation` |  | |  |  |
+| `ServiceReferenceProduct` |  | |  |  |
+| `SrvcRefObjIsMainObject` |  | |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | |
+| `_BusinessSolutionOrderItem` | | ✓ | | |
+| `_EquipmentText` | | ✓ | | |
+| `_FunctionalLocationText` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
 
 ## Source Code
 

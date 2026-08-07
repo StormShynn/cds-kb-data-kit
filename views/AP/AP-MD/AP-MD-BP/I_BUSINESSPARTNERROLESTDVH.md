@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerRole` | `BusinessPartnerRole` |
-| `RoleCategory` | `RoleCategory` |
-| `_BusinessPartnerRoleText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerRole` | ✓ | |  |  |
+| `RoleCategory` |  | |  |  |
+| `_BusinessPartnerRoleText` | | ✓ | | |
 
 ## Source Code
 

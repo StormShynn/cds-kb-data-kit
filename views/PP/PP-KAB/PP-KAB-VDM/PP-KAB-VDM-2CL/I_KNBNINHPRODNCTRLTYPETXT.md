@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KnbnCtrlCycInhProdnCtrlType` | `cast(substring(domvalue_l, 1, 1) as pksar)` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `KnbnInhProdnCtrlTypeName` | `cast(ddtext as vdm_pksar_text preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_KnbnInhProdnCtrlType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KnbnCtrlCycInhProdnCtrlType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pksar)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `KnbnInhProdnCtrlTypeName` |  | |  | `cast(ddtext as vdm_pksar_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_KnbnInhProdnCtrlType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

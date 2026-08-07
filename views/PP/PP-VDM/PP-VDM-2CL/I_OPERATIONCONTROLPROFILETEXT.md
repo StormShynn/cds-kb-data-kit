@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `txt.spras` |
-| key `OperationControlProfile` | `cast(txt.steus as pph_steus preserving type)` |
-| `OperationControlProfileName` | `cast(txt.txt as pph_steutxt preserving type)` |
-| `_Profile` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `OperationControlProfile` | ✓ | |  | `cast(txt.steus as pph_steus preserving type)` |
+| `OperationControlProfileName` |  | |  | `cast(txt.txt as pph_steutxt preserving type)` |
+| `_Profile` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

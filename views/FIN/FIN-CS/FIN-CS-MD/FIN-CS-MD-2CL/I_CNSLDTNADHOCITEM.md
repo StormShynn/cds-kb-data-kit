@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast(_AdhocItem.itclg as fincs_conschartofaccounts preserving type )` |
-| `CnsldtnAdhocItem` | `}] key _AdhocItem.adhocitem` |
-| `CnsldtnAdhocSet` | `}] _AdhocItem.adhocset` |
-| `FinancialStatementItem` | `cast ( '' as fincs_md_finstatementitem )` |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_CnsldtnAdhocSet` | *Association* |
-| `_CnsldtnFinStmntItem` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(_AdhocItem.itclg as fincs_conschartofaccounts preserving type )` |
+| `CnsldtnAdhocItem` |  | |  | `}] key _AdhocItem.adhocitem` |
+| `CnsldtnAdhocSet` |  | |  | `}] _AdhocItem.adhocset` |
+| `FinancialStatementItem` |  | |  | `cast ( '' as fincs_md_finstatementitem )` |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_CnsldtnAdhocSet` | | ✓ | | |
+| `_CnsldtnFinStmntItem` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

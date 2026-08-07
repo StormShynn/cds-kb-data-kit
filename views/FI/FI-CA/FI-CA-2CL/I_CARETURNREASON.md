@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAReturnReason` | `rlgrd` |
-| key `HouseBank` | `hbkid` |
-| `CAReturnType` | `rltyp` |
-| `CAReturnHistoryDays` | `histt` |
-| `CACreditWorthinessRatingValue` | `bonig` |
-| `CAClarificationAccount` | `klaeh` |
-| `CAChequeVoidingReason` | `voidr` |
-| `_HouseBank` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAReturnReason` | ✓ | |  | `rlgrd` |
+| `HouseBank` | ✓ | |  | `hbkid` |
+| `CAReturnType` |  | |  | `rltyp` |
+| `CAReturnHistoryDays` |  | |  | `histt` |
+| `CACreditWorthinessRatingValue` |  | |  | `bonig` |
+| `CAClarificationAccount` |  | |  | `klaeh` |
+| `CAChequeVoidingReason` |  | |  | `voidr` |
+| `_HouseBank` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

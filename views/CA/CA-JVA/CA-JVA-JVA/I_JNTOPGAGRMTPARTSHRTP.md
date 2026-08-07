@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JntOpgAgrmtPartShr.CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmtPartShr.JntOpgAgrmt` |
-| key `JntOpgAgrmtEquityGrp` | `JntOpgAgrmtPartShr.JntOpgAgrmtEquityGrp` |
-| key `JointVenturePartner` | `JntOpgAgrmtPartShr.JointVenturePartner` |
-| `JntVntrEquityShare` | `JntOpgAgrmtPartShr.JntVntrEquityShare` |
-| `JntVntrOwnrIsSuspended` | `JntOpgAgrmtPartShr.JntVntrOwnrIsSuspended` |
-| `JntVntrOwnrSuspendedPerd` | `JntOpgAgrmtPartShr.JntVntrOwnrSuspendedPerd` |
-| `JntVntrOwnrSuspendedYr` | `JntOpgAgrmtPartShr.JntVntrOwnrSuspendedYr` |
-| `JntVntrOwnrIsNotSuspended` | `JntOpgAgrmtPartShr.JntVntrOwnrIsNotSuspended` |
-| `JntVntrOwnrNotSuspendedPerd` | `JntOpgAgrmtPartShr.JntVntrOwnrNotSuspendedPerd` |
-| `JntVntrOwnrNotSuspendedYr` | `JntOpgAgrmtPartShr.JntVntrOwnrNotSuspendedYr` |
-| `JntVntrPayIsStppd` | `JntOpgAgrmtPartShr.JntVntrPayIsStppd` |
-| `JntVntrOperatorAddressArea` | `JntOpgAgrmtPartShr.JntVntrOperatorAddressArea` |
-| `_JntOpgAgrmtEquityGrp` | *Association* |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  |  |
+| `JointVenturePartner` | ✓ | |  |  |
+| `JntVntrEquityShare` |  | |  |  |
+| `JntVntrOwnrIsSuspended` |  | |  |  |
+| `JntVntrOwnrSuspendedPerd` |  | |  |  |
+| `JntVntrOwnrSuspendedYr` |  | |  |  |
+| `JntVntrOwnrIsNotSuspended` |  | |  |  |
+| `JntVntrOwnrNotSuspendedPerd` |  | |  |  |
+| `JntVntrOwnrNotSuspendedYr` |  | |  |  |
+| `JntVntrPayIsStppd` |  | |  |  |
+| `JntVntrOperatorAddressArea` |  | |  |  |
+| `_JntOpgAgrmtEquityGrp` | | ✓ | | |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Source Code
 

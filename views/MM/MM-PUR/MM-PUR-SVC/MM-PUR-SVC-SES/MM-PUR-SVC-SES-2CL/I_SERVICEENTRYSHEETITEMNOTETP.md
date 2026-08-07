@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| key `ServiceEntrySheetItem` | `ServiceEntrySheetItem` |
-| key `NoteBasicUUID` | `NoteBasicUUID` |
-| `ServiceEntrySheetItemUniqueID` | `ServiceEntrySheetItemUniqueID` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Plant` | `Plant` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `NoteBasicObjectNodeType` | `NoteBasicObjectNodeType` |
-| `NoteBasicType` | `NoteBasicType` |
-| `NoteBasicLanguage` | `NoteBasicLanguage` |
-| `NoteBasicContent` | `NoteBasicContent` |
-| `_ServiceEntrySheet` | *Association* |
-| `_ServiceEntrySheetItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |
+| `NoteBasicUUID` | ✓ | |  |  |
+| `ServiceEntrySheetItemUniqueID` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `NoteBasicObjectNodeType` |  | |  |  |
+| `NoteBasicType` |  | |  |  |
+| `NoteBasicLanguage` |  | |  |  |
+| `NoteBasicContent` |  | |  |  |
+| `_ServiceEntrySheet` | | ✓ | | |
+| `_ServiceEntrySheetItem` | | ✓ | | |
 
 ## Source Code
 

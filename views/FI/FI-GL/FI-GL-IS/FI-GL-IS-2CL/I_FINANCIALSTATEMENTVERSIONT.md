@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialStatementVariant` | `versn` |
-| key `Language` | `spras` |
-| `FinancialStatementVariantName` | `vstxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialStatementVariant` | ✓ | |  | `versn` |
+| `Language` | ✓ | |  | `spras` |
+| `FinancialStatementVariantName` |  | |  | `vstxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

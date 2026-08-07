@@ -28,191 +28,191 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceObjectType` | `objtype_h` |
-| key `ServiceDocument` | `object_id` |
-| `ServiceDocumentUUID` | `header_guid` |
-| `ServiceDocumentCharUUID` | `header_guid_char` |
-| `ServiceDocumentType` | `process_type` |
-| `ServiceDocumentDescription` | `description_h` |
-| `Language` | `descr_language` |
-| `PostingDate` | `posting_date` |
-| `ServiceDocumentTemplateType` | `template_type` |
-| `ServiceDocCreationDateTime` | `created_at_h` |
-| `ServiceDocChangedDateTime` | `changed_at_h` |
-| `ServiceDocumentCreatedByUser` | `created_by_h` |
-| `ServiceDocumentChangedByUser` | `changed_by_h` |
-| `PricingDocument` | `pricing_document` |
-| `PricingProcedure` | `pricing_procedure` |
-| `RefBusinessSolutionOrder` | `refbussolnord` |
-| `SrvcDocIsMaintServiceOrder` | `is_maintenance_order` |
-| `BusinessActivityCategory` | `category` |
-| `ServiceDocumentPriority` | `priority` |
-| `ServiceDocNetAmount` | `} net_value_h` |
-| `ServiceDocGrossAmount` | `} gross_value_h` |
-| `ServiceDocTaxAmount` | `} tax_amount_h` |
-| `SoldToParty` | `sold_to_party` |
-| `SoldToPartyRegion` | `sold_to_region` |
-| `SoldToPartyCountry` | `sold_to_country` |
-| `ServiceTeam` | `service_team` |
-| `ResponsibleEmployee` | `person_resp` |
-| `ServiceEmployee` | `service_employee` |
-| `ContactPerson` | `contact_person` |
-| `ShipToParty` | `ship_to_party` |
-| `BillToParty` | `bill_to_party` |
-| `PayerParty` | `payer` |
-| `SrvcDocTmplValdtyStartDateTime` | `cast( valid_from as crms4_template_start preserving type )` |
-| `SrvcDocTmplValdtyEndDateTime` | `cast( valid_to as crms4_template_end preserving type )` |
-| `RequestedServiceStartDateTime` | `srv_cust_beg` |
-| `RequestedServiceEndDateTime` | `srv_cust_end` |
-| `ServiceContractStartDateTime` | `contstart` |
-| `ServiceContractEndDateTime` | `contend` |
-| `SrvcContrEarliestStartDateTime` | `sc_earliest_start_date` |
-| `SrvcContrLatestEndDateTime` | `sc_latest_end_date` |
-| `SrvcQtanValidityStartDateTime` | `cast( quot_start as crms4_cont_start )` |
-| `SrvcQtanValidityEndDateTime` | `cast( quot_end as crms4_cont_end )` |
-| `PaymentTerms` | `pmnttrms` |
-| `PaymentMethod` | `payment_method` |
-| `SrvcSEPAMandateRelevance` | `sepa_on` |
-| `SEPAMandate` | `mandate_id` |
-| `WBSElementInternalID` | `wbs_element` |
-| `TransactionCurrency` | `currency` |
-| `TaxDepartureCountry` | `tax_dep_cty` |
-| `VATRegistrationCountry` | `tax_dest_cty` |
-| `CustomerTaxClassification1` | `taxk1` |
-| `CustomerTaxClassification2` | `taxk2` |
-| `CustomerTaxClassification3` | `taxk3` |
-| `CustomerTaxClassification4` | `taxk4` |
-| `CustomerTaxClassification5` | `taxk5` |
-| `CustomerTaxClassification6` | `taxk6` |
-| `CustomerTaxClassification7` | `taxk7` |
-| `CustomerTaxClassification8` | `taxk8` |
-| `CustomerTaxClassification9` | `taxk9` |
-| `PurchaseOrderByCustomer` | `po_number_sold` |
-| `CustomerPurchaseOrderDate` | `po_date_sold` |
-| `ServiceDocumentRejectionReason` | `rejection` |
-| `Region` | `region` |
-| `SrvcDocCustHierarchyRelevance` | `cust_hierarchy_relevance` |
-| `CustomerHierarchyBranchUUID` | `custh_branch_uuid` |
-| `SrvcDocCustomerHierarchyOrigin` | `custh_branch_uuid_ori` |
-| `ServiceDocumentStatus` | `stat_lifecycle` |
-| `ServiceDocumentIsReleased` | `stat_released` |
-| `ServiceDocumentHasError` | `stat_error` |
-| `ServiceDocBillingStatus` | `stat_billing` |
-| `ServiceDocIsReleasedForBilling` | `stat_for_billing` |
-| `ServiceDocumentIsRejected` | `stat_cancelled` |
-| `ServiceDocumentIsOpen` | `stat_open` |
-| `SrvcDocTransferStatus` | `stat_transfer` |
-| `ServiceDocumentIsQuotation` | `stat_quotation` |
-| `ServiceConfirmationIsFinal` | `stat_final_conf` |
-| `ServiceContractCanclnSts` | `stat_contract_cancelled` |
-| `MaintSrvcOrdExecutionStatus` | `stat_maintenance` |
-| `SrvcDocExecutionStatus` | `stat_maintenance` |
-| `SrvcDocDeliveryStatus` | `stat_delivery` |
-| `SrvcDocGoodsIssueStatus` | `stat_goods_issue` |
-| `SrvcDocRejectionStatus` | `stat_rejection` |
-| `SalesOrganizationOrgUnitID` | `sales_org` |
-| `SalesOfficeOrgUnitID` | `sales_office` |
-| `SalesGroupOrgUnitID` | `sales_group` |
-| `DistributionChannel` | `dis_channel` |
-| `Division` | `division` |
-| `ServiceOrganization` | `service_org` |
-| `ResponsibleServiceOrganization` | `service_org_resp` |
-| `SalesOrganization` | `sales_org_sd` |
-| `SalesOffice` | `sales_office_sd` |
-| `SalesGroup` | `sales_group_sd` |
-| `RespyMgmtServiceTeam` | `service_team_rm` |
-| `EnterpriseServiceOrganization` | `enterprise_service_org` |
-| `BillingBlockReason` | `billing_block` |
-| `ServiceReasonSchema` | `asp_id_01` |
-| `ServiceReasonCategory` | `cat_id_01` |
-| `ServiceDefectSchema` | `asp_id_02` |
-| `ServiceDefectCategory` | `cat_id_02` |
-| `ServiceFirstResponseByDateTime` | `srv_rfirst` |
-| `ServiceDueByDateTime` | `due_on` |
-| `ErlstRequestedDeliveryDateTime` | `cast(req_dlv_date_h as tzntstmps)` |
-| `RecommendedServicePriority` | `rec_priority` |
-| `ServiceDocumentUrgency` | `urgency` |
-| `ServiceDocumentImpact` | `impact` |
-| `ServiceEscalationLevel` | `escalation` |
-| `ServiceDocumentProblemCategory` | `problem_category` |
-| `ServiceRisk` | `risk` |
-| `ServiceDocumentCanclnParty` | `cancparty` |
-| `ServiceDocumentCanclnReason` | `canc_reason` |
-| `ReferenceInHouseRepair` | `ref_inhouse_repair` |
-| `ReferenceInHouseRepairItem` | `ref_inhouse_repair_item` |
-| `RefInHouseRepairIsExisting` | `has_ref_inhouse_repair` |
-| `SrvcDocTemplateSearchTermText` | `templ_searchterm` |
-| `SrvcDocCreditStatus` | `stat_credit` |
-| `SrvcDocBslnCostPostgStatus` | `stat_bsln_cost_postg` |
-| `SrvcDocContinuousCostStatus` | `stat_cont_cost_calc` |
-| `ShippingCondition` | `ship_cond` |
-| `CustomerPriceGroup` | `price_grp` |
-| `SrvcDocAcctAssgmtObjectType` | `cast(ac_object_type as crmt_ac_object_type_no_conv preserving type )` |
-| `SrvcDocAcctAssgmtObject` | `ac_assignment` |
-| `DeliveryPriority` | `dlv_prio` |
-| `IncotermsPart1` | `incoterms1` |
-| `IncotermsPart2` | `incoterms2` |
-| `ContractAccount` | `contract_account` |
-| `_SoldToParty` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_ServiceTeam` | *Association* |
-| `_ServiceEmployee` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_BillToParty` | *Association* |
-| `_PayerParty` | *Association* |
-| `_SoldToPartyToCustomer` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_ServiceDocumentPriority` | *Association* |
-| `_ServiceDocumentStatus` | *Association* |
-| `_SrvcDocLifecycleStatus` | *Association* |
-| `_ServiceDocBillingStatus` | *Association* |
-| `_SrvcDocIsRelForBillgSts` | *Association* |
-| `_ServiceDocHasError` | *Association* |
-| `_ServiceDocumentIsOpen` | *Association* |
-| `_BillingBlockReason` | *Association* |
-| `_ActivityCategory` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_SrvcSEPAMandateRelevance` | *Association* |
-| `_FixedPrice` | *Association* |
-| `_SalesOrganizationOrgUnit` | *Association* |
-| `_SalesOfficeOrgUnit` | *Association* |
-| `_SalesGroupOrgUnit` | *Association* |
-| `_ServiceOrganizationOrgUnit` | *Association* |
-| `_RespSrvcOrganizationOrgUnit` | *Association* |
-| `_SalesOrganizationOrgUnit_2` | *Association* |
-| `_SalesOfficeOrgUnit_2` | *Association* |
-| `_SalesGroupOrgUnit_2` | *Association* |
-| `_ServiceOrganizationOrgUnit_2` | *Association* |
-| `_RespSrvcOrganizationOrgUnit_2` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_Division` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_SrvcDocumentRejectionReason` | *Association* |
-| `_SoldToPartyCountry` | *Association* |
-| `_TaxDepartureCountry` | *Association* |
-| `_VATRegistrationCountry` | *Association* |
-| `_SoldToPartyRegion` | *Association* |
-| `_Region` | *Association* |
-| `_ServiceRisk` | *Association* |
-| `_ServiceDocProblemCategory` | *Association* |
-| `_ServiceTeamHeader` | *Association* |
-| `_EnterpriseServiceOrg` | *Association* |
-| `_ServiceContractCanclnSts` | *Association* |
-| `_SrvcDocTransferStatus` | *Association* |
-| `_SrvcDocCreditStatus` | *Association* |
-| `_SrvcDocBslnCostPostgStatus` | *Association* |
-| `_SrvcDocContinuousCostStatus` | *Association* |
-| `_PaymentMethod` | *Association* |
-| `_SrvcDocExecutionStatus` | *Association* |
-| `_SrvcDocIsQuotation` | *Association* |
-| `_SrvcDocIsQuotation_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  | `objtype_h` |
+| `ServiceDocument` | ✓ | |  | `object_id` |
+| `ServiceDocumentUUID` |  | |  | `header_guid` |
+| `ServiceDocumentCharUUID` |  | |  | `header_guid_char` |
+| `ServiceDocumentType` |  | |  | `process_type` |
+| `ServiceDocumentDescription` |  | |  | `description_h` |
+| `Language` |  | |  | `descr_language` |
+| `PostingDate` |  | |  | `posting_date` |
+| `ServiceDocumentTemplateType` |  | |  | `template_type` |
+| `ServiceDocCreationDateTime` |  | |  | `created_at_h` |
+| `ServiceDocChangedDateTime` |  | |  | `changed_at_h` |
+| `ServiceDocumentCreatedByUser` |  | |  | `created_by_h` |
+| `ServiceDocumentChangedByUser` |  | |  | `changed_by_h` |
+| `PricingDocument` |  | |  | `pricing_document` |
+| `PricingProcedure` |  | |  | `pricing_procedure` |
+| `RefBusinessSolutionOrder` |  | |  | `refbussolnord` |
+| `SrvcDocIsMaintServiceOrder` |  | |  | `is_maintenance_order` |
+| `BusinessActivityCategory` |  | |  | `category` |
+| `ServiceDocumentPriority` |  | |  | `priority` |
+| `ServiceDocNetAmount` |  | |  | `} net_value_h` |
+| `ServiceDocGrossAmount` |  | |  | `} gross_value_h` |
+| `ServiceDocTaxAmount` |  | |  | `} tax_amount_h` |
+| `SoldToParty` |  | |  | `sold_to_party` |
+| `SoldToPartyRegion` |  | |  | `sold_to_region` |
+| `SoldToPartyCountry` |  | |  | `sold_to_country` |
+| `ServiceTeam` |  | |  | `service_team` |
+| `ResponsibleEmployee` |  | |  | `person_resp` |
+| `ServiceEmployee` |  | |  | `service_employee` |
+| `ContactPerson` |  | |  | `contact_person` |
+| `ShipToParty` |  | |  | `ship_to_party` |
+| `BillToParty` |  | |  | `bill_to_party` |
+| `PayerParty` |  | |  | `payer` |
+| `SrvcDocTmplValdtyStartDateTime` |  | |  | `cast( valid_from as crms4_template_start preserving type )` |
+| `SrvcDocTmplValdtyEndDateTime` |  | |  | `cast( valid_to as crms4_template_end preserving type )` |
+| `RequestedServiceStartDateTime` |  | |  | `srv_cust_beg` |
+| `RequestedServiceEndDateTime` |  | |  | `srv_cust_end` |
+| `ServiceContractStartDateTime` |  | |  | `contstart` |
+| `ServiceContractEndDateTime` |  | |  | `contend` |
+| `SrvcContrEarliestStartDateTime` |  | |  | `sc_earliest_start_date` |
+| `SrvcContrLatestEndDateTime` |  | |  | `sc_latest_end_date` |
+| `SrvcQtanValidityStartDateTime` |  | |  | `cast( quot_start as crms4_cont_start )` |
+| `SrvcQtanValidityEndDateTime` |  | |  | `cast( quot_end as crms4_cont_end )` |
+| `PaymentTerms` |  | |  | `pmnttrms` |
+| `PaymentMethod` |  | |  | `payment_method` |
+| `SrvcSEPAMandateRelevance` |  | |  | `sepa_on` |
+| `SEPAMandate` |  | |  | `mandate_id` |
+| `WBSElementInternalID` |  | |  | `wbs_element` |
+| `TransactionCurrency` |  | |  | `currency` |
+| `TaxDepartureCountry` |  | |  | `tax_dep_cty` |
+| `VATRegistrationCountry` |  | |  | `tax_dest_cty` |
+| `CustomerTaxClassification1` |  | |  | `taxk1` |
+| `CustomerTaxClassification2` |  | |  | `taxk2` |
+| `CustomerTaxClassification3` |  | |  | `taxk3` |
+| `CustomerTaxClassification4` |  | |  | `taxk4` |
+| `CustomerTaxClassification5` |  | |  | `taxk5` |
+| `CustomerTaxClassification6` |  | |  | `taxk6` |
+| `CustomerTaxClassification7` |  | |  | `taxk7` |
+| `CustomerTaxClassification8` |  | |  | `taxk8` |
+| `CustomerTaxClassification9` |  | |  | `taxk9` |
+| `PurchaseOrderByCustomer` |  | |  | `po_number_sold` |
+| `CustomerPurchaseOrderDate` |  | |  | `po_date_sold` |
+| `ServiceDocumentRejectionReason` |  | |  | `rejection` |
+| `Region` |  | |  | `region` |
+| `SrvcDocCustHierarchyRelevance` |  | |  | `cust_hierarchy_relevance` |
+| `CustomerHierarchyBranchUUID` |  | |  | `custh_branch_uuid` |
+| `SrvcDocCustomerHierarchyOrigin` |  | |  | `custh_branch_uuid_ori` |
+| `ServiceDocumentStatus` |  | |  | `stat_lifecycle` |
+| `ServiceDocumentIsReleased` |  | |  | `stat_released` |
+| `ServiceDocumentHasError` |  | |  | `stat_error` |
+| `ServiceDocBillingStatus` |  | |  | `stat_billing` |
+| `ServiceDocIsReleasedForBilling` |  | |  | `stat_for_billing` |
+| `ServiceDocumentIsRejected` |  | |  | `stat_cancelled` |
+| `ServiceDocumentIsOpen` |  | |  | `stat_open` |
+| `SrvcDocTransferStatus` |  | |  | `stat_transfer` |
+| `ServiceDocumentIsQuotation` |  | |  | `stat_quotation` |
+| `ServiceConfirmationIsFinal` |  | |  | `stat_final_conf` |
+| `ServiceContractCanclnSts` |  | |  | `stat_contract_cancelled` |
+| `MaintSrvcOrdExecutionStatus` |  | |  | `stat_maintenance` |
+| `SrvcDocExecutionStatus` |  | |  | `stat_maintenance` |
+| `SrvcDocDeliveryStatus` |  | |  | `stat_delivery` |
+| `SrvcDocGoodsIssueStatus` |  | |  | `stat_goods_issue` |
+| `SrvcDocRejectionStatus` |  | |  | `stat_rejection` |
+| `SalesOrganizationOrgUnitID` |  | |  | `sales_org` |
+| `SalesOfficeOrgUnitID` |  | |  | `sales_office` |
+| `SalesGroupOrgUnitID` |  | |  | `sales_group` |
+| `DistributionChannel` |  | |  | `dis_channel` |
+| `Division` |  | |  | `division` |
+| `ServiceOrganization` |  | |  | `service_org` |
+| `ResponsibleServiceOrganization` |  | |  | `service_org_resp` |
+| `SalesOrganization` |  | |  | `sales_org_sd` |
+| `SalesOffice` |  | |  | `sales_office_sd` |
+| `SalesGroup` |  | |  | `sales_group_sd` |
+| `RespyMgmtServiceTeam` |  | |  | `service_team_rm` |
+| `EnterpriseServiceOrganization` |  | |  | `enterprise_service_org` |
+| `BillingBlockReason` |  | |  | `billing_block` |
+| `ServiceReasonSchema` |  | |  | `asp_id_01` |
+| `ServiceReasonCategory` |  | |  | `cat_id_01` |
+| `ServiceDefectSchema` |  | |  | `asp_id_02` |
+| `ServiceDefectCategory` |  | |  | `cat_id_02` |
+| `ServiceFirstResponseByDateTime` |  | |  | `srv_rfirst` |
+| `ServiceDueByDateTime` |  | |  | `due_on` |
+| `ErlstRequestedDeliveryDateTime` |  | |  | `cast(req_dlv_date_h as tzntstmps)` |
+| `RecommendedServicePriority` |  | |  | `rec_priority` |
+| `ServiceDocumentUrgency` |  | |  | `urgency` |
+| `ServiceDocumentImpact` |  | |  | `impact` |
+| `ServiceEscalationLevel` |  | |  | `escalation` |
+| `ServiceDocumentProblemCategory` |  | |  | `problem_category` |
+| `ServiceRisk` |  | |  | `risk` |
+| `ServiceDocumentCanclnParty` |  | |  | `cancparty` |
+| `ServiceDocumentCanclnReason` |  | |  | `canc_reason` |
+| `ReferenceInHouseRepair` |  | |  | `ref_inhouse_repair` |
+| `ReferenceInHouseRepairItem` |  | |  | `ref_inhouse_repair_item` |
+| `RefInHouseRepairIsExisting` |  | |  | `has_ref_inhouse_repair` |
+| `SrvcDocTemplateSearchTermText` |  | |  | `templ_searchterm` |
+| `SrvcDocCreditStatus` |  | |  | `stat_credit` |
+| `SrvcDocBslnCostPostgStatus` |  | |  | `stat_bsln_cost_postg` |
+| `SrvcDocContinuousCostStatus` |  | |  | `stat_cont_cost_calc` |
+| `ShippingCondition` |  | |  | `ship_cond` |
+| `CustomerPriceGroup` |  | |  | `price_grp` |
+| `SrvcDocAcctAssgmtObjectType` |  | |  | `cast(ac_object_type as crmt_ac_object_type_no_conv preserving type )` |
+| `SrvcDocAcctAssgmtObject` |  | |  | `ac_assignment` |
+| `DeliveryPriority` |  | |  | `dlv_prio` |
+| `IncotermsPart1` |  | |  | `incoterms1` |
+| `IncotermsPart2` |  | |  | `incoterms2` |
+| `ContractAccount` |  | |  | `contract_account` |
+| `_SoldToParty` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_ServiceTeam` | | ✓ | | |
+| `_ServiceEmployee` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_SoldToPartyToCustomer` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_ServiceDocumentPriority` | | ✓ | | |
+| `_ServiceDocumentStatus` | | ✓ | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | |
+| `_ServiceDocBillingStatus` | | ✓ | | |
+| `_SrvcDocIsRelForBillgSts` | | ✓ | | |
+| `_ServiceDocHasError` | | ✓ | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | |
+| `_BillingBlockReason` | | ✓ | | |
+| `_ActivityCategory` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | |
+| `_FixedPrice` | | ✓ | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | |
+| `_SalesGroupOrgUnit` | | ✓ | | |
+| `_ServiceOrganizationOrgUnit` | | ✓ | | |
+| `_RespSrvcOrganizationOrgUnit` | | ✓ | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
+| `_RespSrvcOrganizationOrgUnit_2` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | |
+| `_SoldToPartyCountry` | | ✓ | | |
+| `_TaxDepartureCountry` | | ✓ | | |
+| `_VATRegistrationCountry` | | ✓ | | |
+| `_SoldToPartyRegion` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_ServiceRisk` | | ✓ | | |
+| `_ServiceDocProblemCategory` | | ✓ | | |
+| `_ServiceTeamHeader` | | ✓ | | |
+| `_EnterpriseServiceOrg` | | ✓ | | |
+| `_ServiceContractCanclnSts` | | ✓ | | |
+| `_SrvcDocTransferStatus` | | ✓ | | |
+| `_SrvcDocCreditStatus` | | ✓ | | |
+| `_SrvcDocBslnCostPostgStatus` | | ✓ | | |
+| `_SrvcDocContinuousCostStatus` | | ✓ | | |
+| `_PaymentMethod` | | ✓ | | |
+| `_SrvcDocExecutionStatus` | | ✓ | | |
+| `_SrvcDocIsQuotation` | | ✓ | | |
+| `_SrvcDocIsQuotation_2` | | ✓ | | |
 
 ## Associations
 

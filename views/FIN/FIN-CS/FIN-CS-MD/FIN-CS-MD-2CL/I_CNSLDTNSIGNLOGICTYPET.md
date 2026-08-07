@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_DomainT.Language as spras preserving type )` |
-| key `ConsolidationSignLogicType` | `cast(left(_DomainT.DomainValue, 1) as fincs_signlogictype preserving type )` |
-| `ConsolidationSignLogicTypeText` | `cast(_DomainT.DomainValueText as fincs_signlogictypetext preserving type )` |
-| `DomainValue` | `_DomainT.DomainValue` |
-| `_SignLogicType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
+| `ConsolidationSignLogicType` | ✓ | |  | `cast(left(_DomainT.DomainValue, 1) as fincs_signlogictype preserving type )` |
+| `ConsolidationSignLogicTypeText` |  | |  | `cast(_DomainT.DomainValueText as fincs_signlogictypetext preserving type )` |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |
+| `_SignLogicType` | | ✓ | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnit` | `cast ( _Source.ConsolidationUnit as fincs_consolidationunit preserving type )` |
-| key `FromFiscalYearPeriod` | `_Source.FromFiscalYearPeriod` |
-| `ToFiscalYearPeriod` | `_Source.ToFiscalYearPeriod` |
-| `ConsolidationUnitLocalCurrency` | `_Source.ConsolidationUnitLocalCurrency` |
-| `Company` | `_Source.Company` |
-| `I_CnsldtnUnitTP` | `_CnsldtnUnit as _CnsldtnUnit : redirected to parent I_CnsldtnUnitTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | |  | `cast ( _Source.ConsolidationUnit as fincs_consolidationunit preserving type )` |
+| `FromFiscalYearPeriod` | ✓ | | `_Source` | `FromFiscalYearPeriod` |
+| `ToFiscalYearPeriod` |  | | `_Source` | `ToFiscalYearPeriod` |
+| `ConsolidationUnitLocalCurrency` |  | | `_Source` | `ConsolidationUnitLocalCurrency` |
+| `Company` |  | | `_Source` | `Company` |
+| `I_CnsldtnUnitTP` |  | |  | `_CnsldtnUnit as _CnsldtnUnit : redirected to parent I_CnsldtnUnitTP` |
 
 ## Source Code
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingRunType` | `CostingRunType` |
-| key `FiscalYear` | `cast( FiscalYear as fis_gjahr_no_conv preserving type )` |
-| key `FiscalPeriod` | `cast( FiscalPeriod as fins_fiscalperiod preserving type )` |
-| `CostingRunTypeName` | `CostingRunTypeName` |
-| `CostingRunReferenceType` | `CostingRunReferenceType` |
-| `CostingRunReferenceTypeName` | `CostingRunReferenceTypeName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingRunType` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  | `cast( FiscalYear as fis_gjahr_no_conv preserving type )` |
+| `FiscalPeriod` | ✓ | |  | `cast( FiscalPeriod as fins_fiscalperiod preserving type )` |
+| `CostingRunTypeName` |  | |  |  |
+| `CostingRunReferenceType` |  | |  |  |
+| `CostingRunReferenceTypeName` |  | |  |  |
 
 ## Source Code
 

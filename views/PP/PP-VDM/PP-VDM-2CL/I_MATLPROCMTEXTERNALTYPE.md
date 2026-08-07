@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialProcurementExtType` | `typ.MaterialProcurementExtType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialProcurementExtType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,89 +29,89 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| key `EarmarkedFundsDocumentItem` | `EarmarkedFundsDocumentItem` |
-| `EarmarkedFundsDocItemForEdit` | `EarmarkedFundsDocItemForEdit` |
-| `ControllingArea` | `ControllingArea` |
-| `CompanyCode` | `CompanyCode` |
-| `FinancialManagementArea` | `FinancialManagementArea` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `PostingDate` | `PostingDate` |
-| `EmrkdFndsDocItmCreatedByUser` | `EmrkdFndsDocItmCreatedByUser` |
-| `EmrkdFndsDocItmCreationDate` | `EmrkdFndsDocItmCreationDate` |
-| `EmrkdFndsDocItmLastChgdByUsr` | `EmrkdFndsDocItmLastChgdByUsr` |
-| `EmrkdFndsDocItmLastChangeDate` | `EmrkdFndsDocItmLastChangeDate` |
-| `PubSecBdgtAcctRevnExpnCode` | `PubSecBdgtAcctRevnExpnCode` |
-| `GLAccount` | `GLAccount` |
-| `CostCenter` | `CostCenter` |
-| `InternalOrder` | `InternalOrder` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `CostElement` | `CostElement` |
-| `CommitmentItem` | `CommitmentItem` |
-| `FundsCenter` | `FundsCenter` |
-| `Fund` | `Fund` |
-| `FundedProgram` | `FundedProgram` |
-| `BudgetPeriod` | `BudgetPeriod` |
-| `FunctionalArea` | `FunctionalArea` |
-| `GrantID` | `GrantID` |
-| `BusinessArea` | `BusinessArea` |
-| `Product` | `Product` |
-| `Supplier` | `Supplier` |
-| `Customer` | `Customer` |
-| `AlternativePayee` | `AlternativePayee` |
-| `DocumentItemText` | `DocumentItemText` |
-| `EmrkdFndsReferenceDocumentItem` | `EmrkdFndsReferenceDocumentItem` |
-| `DueDate` | `DueDate` |
-| `EmrkdFndsItmCompletionDate` | `EmrkdFndsItmCompletionDate` |
-| `EmrkdFndsDocItmGroupingNumber` | `EmrkdFndsDocItmGroupingNumber` |
-| `ProfitCenter` | `ProfitCenter` |
-| `EmrkdFndsItmPrdcssrDocCat` | `EmrkdFndsItmPrdcssrDocCat` |
-| `EmrkdFndsItmPredecessor` | `EmrkdFndsItmPredecessor` |
-| `EmrkdFndsItmPrdcssrItem` | `EmrkdFndsItmPrdcssrItem` |
-| `EmrkdFndsItmPrdcssrCompleted` | `EmrkdFndsItmPrdcssrCompleted` |
-| `PrdcssrFundsReservationDoc` | `PrdcssrFundsReservationDoc` |
-| `PrdcssrFundsReservationDocItem` | `PrdcssrFundsReservationDocItem` |
-| `PrdcssrFundsPreCmtmtDoc` | `PrdcssrFundsPreCmtmtDoc` |
-| `PrdcssrFundsPreCmtmtDocItem` | `PrdcssrFundsPreCmtmtDocItem` |
-| `EmrkdFndsItmIsCompleted` | `EmrkdFndsItmIsCompleted` |
-| `EmrkdFndsItmIsStatistical` | `EmrkdFndsItmIsStatistical` |
-| `EmrkdFndsItmIsDeleted` | `EmrkdFndsItmIsDeleted` |
-| `EmrkdFndsItmIsSender` | `EmrkdFndsItmIsSender` |
-| `EmrkdFndsItmIsReceiver` | `EmrkdFndsItmIsReceiver` |
-| `EmrkdFndsItmManualEditBlock` | `EmrkdFndsItmManualEditBlock` |
-| `EmrkdFndsItmIsBlkdAgainstUsage` | `EmrkdFndsItmIsBlkdAgainstUsage` |
-| `EmrkdFndsItmIsUnlimited` | `EmrkdFndsItmIsUnlimited` |
-| `EmrkdFndsItmToleranceLmtInPct` | `EmrkdFndsItmToleranceLmtInPct` |
-| `EmrkdFndsOverrideGlobTolerance` | `EmrkdFndsOverrideGlobTolerance` |
-| `EmrkdFndsItmIsApproved` | `EmrkdFndsItmIsApproved` |
-| `EmrkdFndsItmNoCarryforward` | `EmrkdFndsItmNoCarryforward` |
-| `EmrkdFndsAcctAssgmtChangeable` | `EmrkdFndsAcctAssgmtChangeable` |
-| `EmrkdFndsHasValueAdjustments` | `EmrkdFndsHasValueAdjustments` |
-| `EmrkdFndsItmCnsmpnInCCCrcyOnly` | `EmrkdFndsItmCnsmpnInCCCrcyOnly` |
-| `EmrkdFndsDocItmNmbrOfProcgItms` | `EmrkdFndsDocItmNmbrOfProcgItms` |
-| `PubSecSplitBatchNumberID` | `PubSecSplitBatchNumberID` |
-| `PubSecSplitAuthznGroup` | `PubSecSplitAuthznGroup` |
-| `EmrkdFndsAmountInTransCrcy` | `EmrkdFndsAmountInTransCrcy` |
-| `EmrkdFndsRelAmtInTransCrcy` | `EmrkdFndsRelAmtInTransCrcy` |
-| `EmrkdFndsOpenAmtInTransCrcy` | `EmrkdFndsOpenAmtInTransCrcy` |
-| `EmrkdFndsChgdAmtInTransCrcy` | `EmrkdFndsChgdAmtInTransCrcy` |
-| `EmrkdFndsCnsmdAmtInTransCrcy` | `EmrkdFndsCnsmdAmtInTransCrcy` |
-| `EmrkdFndsOriglAmtInTransCrcy` | `EmrkdFndsOriglAmtInTransCrcy` |
-| `EmrkdFndsAmountInCCCrcy` | `EmrkdFndsAmountInCCCrcy` |
-| `EmrkdFndsRelAmtInCCCrcy` | `EmrkdFndsRelAmtInCCCrcy` |
-| `EmrkdFndsOpenAmtInCCCrcy` | `EmrkdFndsOpenAmtInCCCrcy` |
-| `EmrkdFndsChgdAmtInCCCrcy` | `EmrkdFndsChgdAmtInCCCrcy` |
-| `EmrkdFndsCnsmdAmtInCCCrcy` | `EmrkdFndsCnsmdAmtInCCCrcy` |
-| `EmrkdFndsOriglAmtInCCCrcy` | `EmrkdFndsOriglAmtInCCCrcy` |
-| `I_EarmarkedFundsDocumentTP` | `efitm._EarmarkedFundsDocument : redirected to parent I_EarmarkedFundsDocumentTP` |
-| `I_EmrkdFndsDocItmMnlReducnTP` | `efitm._EmrkdFndsDocItmMnlReducn : redirected to composition child I_EmrkdFndsDocItmMnlReducnTP` |
-| `_Fund` | *Association* |
-| `_Grant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EarmarkedFundsDocument` | ✓ | |  |  |
+| `EarmarkedFundsDocumentItem` | ✓ | |  |  |
+| `EarmarkedFundsDocItemForEdit` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `FinancialManagementArea` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `EmrkdFndsDocItmCreatedByUser` |  | |  |  |
+| `EmrkdFndsDocItmCreationDate` |  | |  |  |
+| `EmrkdFndsDocItmLastChgdByUsr` |  | |  |  |
+| `EmrkdFndsDocItmLastChangeDate` |  | |  |  |
+| `PubSecBdgtAcctRevnExpnCode` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `InternalOrder` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `CommitmentItem` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FundedProgram` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `Product` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `AlternativePayee` |  | |  |  |
+| `DocumentItemText` |  | |  |  |
+| `EmrkdFndsReferenceDocumentItem` |  | |  |  |
+| `DueDate` |  | |  |  |
+| `EmrkdFndsItmCompletionDate` |  | |  |  |
+| `EmrkdFndsDocItmGroupingNumber` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `EmrkdFndsItmPrdcssrDocCat` |  | |  |  |
+| `EmrkdFndsItmPredecessor` |  | |  |  |
+| `EmrkdFndsItmPrdcssrItem` |  | |  |  |
+| `EmrkdFndsItmPrdcssrCompleted` |  | |  |  |
+| `PrdcssrFundsReservationDoc` |  | |  |  |
+| `PrdcssrFundsReservationDocItem` |  | |  |  |
+| `PrdcssrFundsPreCmtmtDoc` |  | |  |  |
+| `PrdcssrFundsPreCmtmtDocItem` |  | |  |  |
+| `EmrkdFndsItmIsCompleted` |  | |  |  |
+| `EmrkdFndsItmIsStatistical` |  | |  |  |
+| `EmrkdFndsItmIsDeleted` |  | |  |  |
+| `EmrkdFndsItmIsSender` |  | |  |  |
+| `EmrkdFndsItmIsReceiver` |  | |  |  |
+| `EmrkdFndsItmManualEditBlock` |  | |  |  |
+| `EmrkdFndsItmIsBlkdAgainstUsage` |  | |  |  |
+| `EmrkdFndsItmIsUnlimited` |  | |  |  |
+| `EmrkdFndsItmToleranceLmtInPct` |  | |  |  |
+| `EmrkdFndsOverrideGlobTolerance` |  | |  |  |
+| `EmrkdFndsItmIsApproved` |  | |  |  |
+| `EmrkdFndsItmNoCarryforward` |  | |  |  |
+| `EmrkdFndsAcctAssgmtChangeable` |  | |  |  |
+| `EmrkdFndsHasValueAdjustments` |  | |  |  |
+| `EmrkdFndsItmCnsmpnInCCCrcyOnly` |  | |  |  |
+| `EmrkdFndsDocItmNmbrOfProcgItms` |  | |  |  |
+| `PubSecSplitBatchNumberID` |  | |  |  |
+| `PubSecSplitAuthznGroup` |  | |  |  |
+| `EmrkdFndsAmountInTransCrcy` |  | |  |  |
+| `EmrkdFndsRelAmtInTransCrcy` |  | |  |  |
+| `EmrkdFndsOpenAmtInTransCrcy` |  | |  |  |
+| `EmrkdFndsChgdAmtInTransCrcy` |  | |  |  |
+| `EmrkdFndsCnsmdAmtInTransCrcy` |  | |  |  |
+| `EmrkdFndsOriglAmtInTransCrcy` |  | |  |  |
+| `EmrkdFndsAmountInCCCrcy` |  | |  |  |
+| `EmrkdFndsRelAmtInCCCrcy` |  | |  |  |
+| `EmrkdFndsOpenAmtInCCCrcy` |  | |  |  |
+| `EmrkdFndsChgdAmtInCCCrcy` |  | |  |  |
+| `EmrkdFndsCnsmdAmtInCCCrcy` |  | |  |  |
+| `EmrkdFndsOriglAmtInCCCrcy` |  | |  |  |
+| `I_EarmarkedFundsDocumentTP` |  | |  | `efitm._EarmarkedFundsDocument : redirected to parent I_EarmarkedFundsDocumentTP` |
+| `I_EmrkdFndsDocItmMnlReducnTP` |  | |  | `efitm._EmrkdFndsDocItmMnlReducn : redirected to composition child I_EmrkdFndsDocItmMnlReducnTP` |
+| `_Fund` | | ✓ | | |
+| `_Grant` | | ✓ | | |
 
 ## Source Code
 

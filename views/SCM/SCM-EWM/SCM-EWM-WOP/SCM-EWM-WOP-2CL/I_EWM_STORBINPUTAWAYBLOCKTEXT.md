@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'IEWMSBINBLPUTTXT'` | `sqlViewName: 'IEWMSBINBLPUTTXT'` |
-| `true` | `compiler.compareFilter: true` |
-| `preserveKey` | `true` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'IEWMSBINBLPUTTXT'` |  | |  | `sqlViewName: 'IEWMSBINBLPUTTXT'` |
+| `true` |  | |  | `compiler.compareFilter: true` |
+| `preserveKey` |  | |  | `true` |
 
 ## Source Code
 

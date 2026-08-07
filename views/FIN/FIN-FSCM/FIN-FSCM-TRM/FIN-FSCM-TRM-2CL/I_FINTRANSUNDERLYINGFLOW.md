@@ -28,80 +28,80 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OptionUnderlyingTransaction` | `cast( rfha as option_underlying_transaction preserving type )` |
-| key `FinancialInstrumentActivity` | `rfhazu` |
-| key `FinTransFlowCreationDate` | `dcrdat` |
-| key `FinTransFlowCreationTime` | `cast( tcrtim as ftr_flow_creation_time preserving type )` |
-| key `FinTransFlowNumber` | `rfhazb` |
-| `CreatedByUser` | `UnderlyingFlow.cruser` |
-| `FinTransCreationDate` | `cast( UnderlyingFlow.dcrdat as ftr_creation_date preserving type )` |
-| `FinTransCreationTime` | `UnderlyingFlow.tcrtim` |
-| `LastChangedByUser` | `UnderlyingFlow.upuser` |
-| `LastChangeDate` | `UnderlyingFlow.dupdat` |
-| `FinInstrumentLastChangedTime` | `UnderlyingFlow.tuptim` |
-| `TreasuryContractType` | `UnderlyingFlow.rantyp` |
-| `FinTransFlowType` | `UnderlyingFlow.sfhazba` |
-| `FinTransFlowCategory` | `cast( UnderlyingFlow.sbktyp as ftr_flow_category preserving type )` |
-| `FinTransFlowPaytAmtDirection` | `cast( UnderlyingFlow.ssign as ftr_flow_payment_amt_direction preserving type )` |
-| `FinancialTransactionDirection` | `UnderlyingFlow.rkondgr` |
-| `FinTransFlowSource` | `UnderlyingFlow.sherkunft` |
-| `PayerPayee` | `UnderlyingFlow.rpzahl` |
-| `FinTransFlowPaymentDate` | `cast( UnderlyingFlow.dzterm as ftr_flow_payment_date preserving type )` |
-| `FinTransFlowPaytAmt` | `cast( UnderlyingFlow.bzbetr as ftr_flow_payment_amount preserving type )` |
-| `FinTransFlowPaytAmtCrcy` | `UnderlyingFlow.wzbetr` |
-| `FinTransFlowInLoclCrcyPaytAmt` | `UnderlyingFlow.bhwbetr` |
-| `FinTransFlowLoclCrcyCnvrsnRate` | `cast( UnderlyingFlow.khwkurs as ftr_flow_locl_crcy_cnvrsn_rate preserving type )` |
-| `CalculationDate` | `UnderlyingFlow.dvalut` |
-| `CalculationPeriodStartDate` | `UnderlyingFlow.dbervon` |
-| `CalculationPeriodEndDate` | `UnderlyingFlow.dberbis` |
-| `CalcPeriodEndDateIsInclusive` | `UnderlyingFlow.sinclbis` |
-| `CalcPeriodStartDateIsExclusive` | `UnderlyingFlow.sexclvon` |
-| `CalcPeriodEndDateIsMonthEnd` | `UnderlyingFlow.sultbis` |
-| `CalcPeriodStartDateIsMonthEnd` | `UnderlyingFlow.sultvon` |
-| `NumberOfCalculationDays` | `UnderlyingFlow.atage` |
-| `NrOfBaseDaysPerCalcPeriod` | `UnderlyingFlow.abastage` |
-| `InterestCalculationMethod` | `UnderlyingFlow.szbmeth` |
-| `FinTransFlowCalcBaseAmount` | `UnderlyingFlow.bbasis` |
-| `FinTransFlowCalcBaseAmountCrcy` | `UnderlyingFlow.wbasis` |
-| `IntrstCalcMethFactoryCalendar` | `UnderlyingFlow.skalidwt` |
-| `InterestBaseDaysMethod` | `UnderlyingFlow.stgbasis` |
-| `InterestCalculationType` | `cast ( case when UnderlyingFlow.jexpozins = 'X' then '1' when UnderlyingFlow.jexpozins = 'L' then '5' when UnderlyingFlow.stgbasis = '1' then '2' when UnderlyingFlow.stgbasis = 'D' then '3' when UnderlyingFlow.jexpointfactor = 'X' then '4' when UnderlyingFlow.jexpointfactor = 'L' then '6' when UnderlyingFlow.jexpointfactor = 'A' then '7' else '0' end as tfmsintcalc preserving type )` |
-| `ConditionPercentageRate` | `UnderlyingFlow.pkond` |
-| `FinCndnPctgRateFixingDate` | `UnderlyingFlow.dpkond` |
-| `FinTransFlowIntrstRateFixDate` | `UnderlyingFlow.dzfest` |
-| `FinTransPositionValueDate` | `UnderlyingFlow.dbestand` |
-| `FinTransFlowPositionAmount` | `cast( UnderlyingFlow.bbbetr as ftr_position_amount preserving type )` |
-| `FinTransFlwPosAmtCrcy` | `UnderlyingFlow.wbbetr` |
-| `FinTransFlowNomAmt` | `cast( UnderlyingFlow.bnwhr as ftr_flow_norminal_amount preserving type )` |
-| `FinTransFlowNomAmtCrcy` | `cast( UnderlyingFlow.wprice as ftr_flow_norminal_amount_crcy preserving type )` |
-| `MarketValueInQtanCurrency` | `UnderlyingFlow.bebetr` |
-| `QuotationCurrency` | `UnderlyingFlow.webetr` |
-| `FinTransTradedNumberOfUnits` | `cast( UnderlyingFlow.astueck as ftr_fintrans_units_l )` |
-| `FinTransTrdPriceCrcyUnitRate` | `cast( UnderlyingFlow.buprc as ftr_price preserving type )` |
-| `FinTransTradedPriceCrcyUnit` | `cast( UnderlyingFlow.srunit as ftr_traded_price_currency_unit preserving type )` |
-| `SecurityExchange` | `UnderlyingFlow.rhandpl` |
-| `FinConditionItem` | `UnderlyingFlow.rkond` |
-| `ConditionItemValidityStartDate` | `UnderlyingFlow.dguel_kp` |
-| `FinConditionSubItem` | `UnderlyingFlow.nstufe` |
-| `InterestConditionType` | `UnderlyingFlow.skoart` |
-| `FinInstrConditionLogicGroup` | `cast( UnderlyingFlow.logic_rkond as ftr_instr_cndn_logic_group preserving type )` |
-| `FinCndnCrsRefcdAccmlnCndnGrp` | `UnderlyingFlow.sum_rkond` |
-| `FinTransFlwReltdAccumulatingID` | `UnderlyingFlow.sum_id_source` |
-| `FinTransFlowAccumulatingFlowID` | `UnderlyingFlow.sum_id_sum` |
-| `FinTransTradedPricePercent` | `cast( UnderlyingFlow.bpprc as ftr_price_percent preserving type )` |
-| `_ContractType` | *Association* |
-| `_FlowType` | *Association* |
-| `_FlowCategory` | *Association* |
-| `_PayerPayee` | *Association* |
-| `_PaymentCurrency` | *Association* |
-| `_BaseAmtCurrency` | *Association* |
-| `_QuotationCurrency` | *Association* |
-| `_PositionAmountCurrency` | *Association* |
-| `_NominalCurrency` | *Association* |
-| `_InterestCalculationMethod` | *Association* |
-| `_OptnUndrlgAllocation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OptionUnderlyingTransaction` | ✓ | |  | `cast( rfha as option_underlying_transaction preserving type )` |
+| `FinancialInstrumentActivity` | ✓ | |  | `rfhazu` |
+| `FinTransFlowCreationDate` | ✓ | |  | `dcrdat` |
+| `FinTransFlowCreationTime` | ✓ | |  | `cast( tcrtim as ftr_flow_creation_time preserving type )` |
+| `FinTransFlowNumber` | ✓ | |  | `rfhazb` |
+| `CreatedByUser` |  | |  | `cruser` |
+| `FinTransCreationDate` |  | |  | `cast( UnderlyingFlow.dcrdat as ftr_creation_date preserving type )` |
+| `FinTransCreationTime` |  | |  | `tcrtim` |
+| `LastChangedByUser` |  | |  | `upuser` |
+| `LastChangeDate` |  | |  | `dupdat` |
+| `FinInstrumentLastChangedTime` |  | |  | `tuptim` |
+| `TreasuryContractType` |  | |  | `rantyp` |
+| `FinTransFlowType` |  | |  | `sfhazba` |
+| `FinTransFlowCategory` |  | |  | `cast( UnderlyingFlow.sbktyp as ftr_flow_category preserving type )` |
+| `FinTransFlowPaytAmtDirection` |  | |  | `cast( UnderlyingFlow.ssign as ftr_flow_payment_amt_direction preserving type )` |
+| `FinancialTransactionDirection` |  | |  | `rkondgr` |
+| `FinTransFlowSource` |  | |  | `sherkunft` |
+| `PayerPayee` |  | |  | `rpzahl` |
+| `FinTransFlowPaymentDate` |  | |  | `cast( UnderlyingFlow.dzterm as ftr_flow_payment_date preserving type )` |
+| `FinTransFlowPaytAmt` |  | |  | `cast( UnderlyingFlow.bzbetr as ftr_flow_payment_amount preserving type )` |
+| `FinTransFlowPaytAmtCrcy` |  | |  | `wzbetr` |
+| `FinTransFlowInLoclCrcyPaytAmt` |  | |  | `bhwbetr` |
+| `FinTransFlowLoclCrcyCnvrsnRate` |  | |  | `cast( UnderlyingFlow.khwkurs as ftr_flow_locl_crcy_cnvrsn_rate preserving type )` |
+| `CalculationDate` |  | |  | `dvalut` |
+| `CalculationPeriodStartDate` |  | |  | `dbervon` |
+| `CalculationPeriodEndDate` |  | |  | `dberbis` |
+| `CalcPeriodEndDateIsInclusive` |  | |  | `sinclbis` |
+| `CalcPeriodStartDateIsExclusive` |  | |  | `sexclvon` |
+| `CalcPeriodEndDateIsMonthEnd` |  | |  | `sultbis` |
+| `CalcPeriodStartDateIsMonthEnd` |  | |  | `sultvon` |
+| `NumberOfCalculationDays` |  | |  | `atage` |
+| `NrOfBaseDaysPerCalcPeriod` |  | |  | `abastage` |
+| `InterestCalculationMethod` |  | |  | `szbmeth` |
+| `FinTransFlowCalcBaseAmount` |  | |  | `bbasis` |
+| `FinTransFlowCalcBaseAmountCrcy` |  | |  | `wbasis` |
+| `IntrstCalcMethFactoryCalendar` |  | |  | `skalidwt` |
+| `InterestBaseDaysMethod` |  | |  | `stgbasis` |
+| `InterestCalculationType` |  | |  | `cast ( case when UnderlyingFlow.jexpozins = 'X' then '1' when UnderlyingFlow.jexpozins = 'L' then '5' when UnderlyingFlow.stgbasis = '1' then '2' when UnderlyingFlow.stgbasis = 'D' then '3' when UnderlyingFlow.jexpointfactor = 'X' then '4' when UnderlyingFlow.jexpointfactor = 'L' then '6' when UnderlyingFlow.jexpointfactor = 'A' then '7' else '0' end as tfmsintcalc preserving type )` |
+| `ConditionPercentageRate` |  | |  | `pkond` |
+| `FinCndnPctgRateFixingDate` |  | |  | `dpkond` |
+| `FinTransFlowIntrstRateFixDate` |  | |  | `dzfest` |
+| `FinTransPositionValueDate` |  | |  | `dbestand` |
+| `FinTransFlowPositionAmount` |  | |  | `cast( UnderlyingFlow.bbbetr as ftr_position_amount preserving type )` |
+| `FinTransFlwPosAmtCrcy` |  | |  | `wbbetr` |
+| `FinTransFlowNomAmt` |  | |  | `cast( UnderlyingFlow.bnwhr as ftr_flow_norminal_amount preserving type )` |
+| `FinTransFlowNomAmtCrcy` |  | |  | `cast( UnderlyingFlow.wprice as ftr_flow_norminal_amount_crcy preserving type )` |
+| `MarketValueInQtanCurrency` |  | |  | `bebetr` |
+| `QuotationCurrency` |  | |  | `webetr` |
+| `FinTransTradedNumberOfUnits` |  | |  | `cast( UnderlyingFlow.astueck as ftr_fintrans_units_l )` |
+| `FinTransTrdPriceCrcyUnitRate` |  | |  | `cast( UnderlyingFlow.buprc as ftr_price preserving type )` |
+| `FinTransTradedPriceCrcyUnit` |  | |  | `cast( UnderlyingFlow.srunit as ftr_traded_price_currency_unit preserving type )` |
+| `SecurityExchange` |  | |  | `rhandpl` |
+| `FinConditionItem` |  | |  | `rkond` |
+| `ConditionItemValidityStartDate` |  | |  | `dguel_kp` |
+| `FinConditionSubItem` |  | |  | `nstufe` |
+| `InterestConditionType` |  | |  | `skoart` |
+| `FinInstrConditionLogicGroup` |  | |  | `cast( UnderlyingFlow.logic_rkond as ftr_instr_cndn_logic_group preserving type )` |
+| `FinCndnCrsRefcdAccmlnCndnGrp` |  | |  | `sum_rkond` |
+| `FinTransFlwReltdAccumulatingID` |  | |  | `sum_id_source` |
+| `FinTransFlowAccumulatingFlowID` |  | |  | `sum_id_sum` |
+| `FinTransTradedPricePercent` |  | |  | `cast( UnderlyingFlow.bpprc as ftr_price_percent preserving type )` |
+| `_ContractType` | | ✓ | | |
+| `_FlowType` | | ✓ | | |
+| `_FlowCategory` | | ✓ | | |
+| `_PayerPayee` | | ✓ | | |
+| `_PaymentCurrency` | | ✓ | | |
+| `_BaseAmtCurrency` | | ✓ | | |
+| `_QuotationCurrency` | | ✓ | | |
+| `_PositionAmountCurrency` | | ✓ | | |
+| `_NominalCurrency` | | ✓ | | |
+| `_InterestCalculationMethod` | | ✓ | | |
+| `_OptnUndrlgAllocation` | | ✓ | | |
 
 ## Associations
 

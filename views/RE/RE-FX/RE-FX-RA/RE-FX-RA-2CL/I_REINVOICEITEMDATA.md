@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REInvoiceUUID` | `REInvoiceUUID` |
-| key `REInvoiceItemNumber` | `REInvoiceItemNumber` |
-| `REStatusObjectCalculation` | `REStatusObjectCalculation` |
-| `REConditionType` | `REConditionType` |
-| `REFlowType` | `REFlowType` |
-| `CalculationPeriodStartDate` | `CalculationPeriodStartDate` |
-| `CalculationPeriodEndDate` | `CalculationPeriodEndDate` |
-| `RETaxType` | `RETaxType` |
-| `RETaxGroup` | `RETaxGroup` |
-| `PaymentTerms` | `PaymentTerms` |
-| `NetDueDate` | `NetDueDate` |
-| `ReferenceDocumentType` | `ReferenceDocumentType` |
-| `OriginalReferenceDocument` | `OriginalReferenceDocument` |
-| `RETaxDate` | `RETaxDate` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REInvoiceUUID` | ✓ | |  |  |
+| `REInvoiceItemNumber` | ✓ | |  |  |
+| `REStatusObjectCalculation` |  | |  |  |
+| `REConditionType` |  | |  |  |
+| `REFlowType` |  | |  |  |
+| `CalculationPeriodStartDate` |  | |  |  |
+| `CalculationPeriodEndDate` |  | |  |  |
+| `RETaxType` |  | |  |  |
+| `RETaxGroup` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `NetDueDate` |  | |  |  |
+| `ReferenceDocumentType` |  | |  |  |
+| `OriginalReferenceDocument` |  | |  |  |
+| `RETaxDate` |  | |  |  |
 
 ## Source Code
 

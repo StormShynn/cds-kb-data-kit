@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutCharge` | `cast(Partner.SalesDocument as sales_order_without_charge preserving type)` |
-| key `SalesOrderWithoutChargeItem` | `cast(Partner.SalesDocumentItem as sales_order_without_charge_itm preserving type)` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `ContactPerson` | `ContactPerson` |
-| `Partner` | `Partner` |
-| `FullName` | `FullName` |
-| `ReferenceBusinessPartner` | `ReferenceBusinessPartner` |
-| `AddressID` | `AddressID` |
-| `AddressPersonID` | `AddressPersonID` |
-| `AddressObjectType` | `AddressObjectType` |
-| `SDDocPartnerAddressRefType` | `SDDocPartnerAddressRefType` |
-| `BPAddrDeterminationTransaction` | `BPAddrDeterminationTransaction` |
-| `BPRefAddressIDForDocSpcfcAddr` | `BPRefAddressIDForDocSpcfcAddr` |
-| `InternationalPhoneNumber` | `InternationalPhoneNumber` |
-| `InternationalMobilePhoneNumber` | `InternationalMobilePhoneNumber` |
-| `EmailAddress` | `EmailAddress` |
-| `_SalesOrderWithoutCharge` | *Association* |
-| `_SalesOrderWithoutChargeItem` | *Association* |
-| `_PartnerFunction` | *Association* |
-| `_Address` | *Association* |
-| `_DfltAddrRprstn` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
-| `_BPRefAddressForDocSpcfcAddr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  | `cast(Partner.SalesDocument as sales_order_without_charge preserving type)` |
+| `SalesOrderWithoutChargeItem` | ✓ | |  | `cast(Partner.SalesDocumentItem as sales_order_without_charge_itm preserving type)` |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `Partner` |  | |  |  |
+| `FullName` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `InternationalPhoneNumber` |  | |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `_SalesOrderWithoutCharge` | | ✓ | | |
+| `_SalesOrderWithoutChargeItem` | | ✓ | | |
+| `_PartnerFunction` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_DfltAddrRprstn` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_BPRefAddressForDocSpcfcAddr` | | ✓ | | |
 
 ## Associations
 

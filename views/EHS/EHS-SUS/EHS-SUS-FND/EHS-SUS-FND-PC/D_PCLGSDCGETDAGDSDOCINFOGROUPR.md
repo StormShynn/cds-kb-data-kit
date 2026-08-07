@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `DangerousGoodsGroupingText` | `dangerousgoodsgroupingtext` |
-| `DangerousGoodsGroupingQty` | `dangerousgoodsgroupingqty` |
-| `DngrsGdsGroupingQtySAPUnit` | `dngrsgdsgroupingqtysapunit` |
-| `DngrsGdsGroupingQtyISOUnit` | `dngrsgdsgroupingqtyisounit` |
-| `_Root` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DangerousGoodsGroupingText` |  | |  | `dangerousgoodsgroupingtext` |
+| `DangerousGoodsGroupingQty` |  | |  | `dangerousgoodsgroupingqty` |
+| `DngrsGdsGroupingQtySAPUnit` |  | |  | `dngrsgdsgroupingqtysapunit` |
+| `DngrsGdsGroupingQtyISOUnit` |  | |  | `dngrsgdsgroupingqtyisounit` |
+| `_Root` | | ✓ | | |
 
 ## Source Code
 

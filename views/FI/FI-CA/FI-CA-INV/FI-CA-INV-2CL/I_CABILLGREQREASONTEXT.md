@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgReqReason` | `billreqrsn` |
-| key `Language` | `langu` |
-| `CABillgReqReasonText` | `cast( billreqrsn_txt as billreqrsn_txt_gfn_kk preserving type )` |
-| `_CABillgReqReason` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgReqReason` | ✓ | |  | `billreqrsn` |
+| `Language` | ✓ | |  | `langu` |
+| `CABillgReqReasonText` |  | |  | `cast( billreqrsn_txt as billreqrsn_txt_gfn_kk preserving type )` |
+| `_CABillgReqReason` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

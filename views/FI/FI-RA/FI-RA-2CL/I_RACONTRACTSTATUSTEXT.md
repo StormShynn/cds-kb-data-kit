@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(dd07t.ddlanguage as spras preserving type)` |
-| key `RevnAcctgContractStatus` | `dd07t.domvalue_l` |
-| `RevnAcctgContractStatusName` | `cast(dd07t.ddtext as farr_cds_contr_status_text preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_RAContractStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
+| `RevnAcctgContractStatus` | ✓ | |  | `domvalue_l` |
+| `RevnAcctgContractStatusName` |  | |  | `cast(dd07t.ddtext as farr_cds_contr_status_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_RAContractStatus` | | ✓ | | |
 
 ## Associations
 

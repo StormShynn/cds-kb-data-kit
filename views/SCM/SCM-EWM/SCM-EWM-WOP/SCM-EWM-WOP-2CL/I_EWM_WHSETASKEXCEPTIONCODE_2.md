@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `lgnum` |
-| key `WarehouseTask` | `cast( tanum as /scwm/tanum_noconv preserving type )` |
-| key `WarehouseTaskItem` | `cast( tapos as /scwm/tapos_noconv preserving type )` |
-| key `WarehouseTaskExceptionCode` | `exccode` |
-| key `BusinessContext` | `buscon` |
-| key `BusinessContextExecutionStep` | `exec_step` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  | `lgnum` |
+| `WarehouseTask` | ✓ | |  | `cast( tanum as /scwm/tanum_noconv preserving type )` |
+| `WarehouseTaskItem` | ✓ | |  | `cast( tapos as /scwm/tapos_noconv preserving type )` |
+| `WarehouseTaskExceptionCode` | ✓ | |  | `exccode` |
+| `BusinessContext` | ✓ | |  | `buscon` |
+| `BusinessContextExecutionStep` | ✓ | |  | `exec_step` |
 
 ## Source Code
 

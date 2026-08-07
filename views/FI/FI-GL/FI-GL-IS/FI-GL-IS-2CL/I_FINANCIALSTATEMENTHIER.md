@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialStatementHierarchy` | `hrrp_dir_n.hryid_42` |
-| key `ValidityEndDate` | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
-| `ValidityStartDate` | `case when hrrp_dir_n.hrysource = 'UH' then hrrp_dir_n.hryvalfrom else cast( '19000101' as fis_datab ) end` |
-| `HierarchyType` | `hrrp_dir_n.hrytyp` |
-| `LastChangedByUser` | `hrrp_dir_n.upduser` |
-| `LastChangeTime` | `hrrp_dir_n.updtime` |
-| `LastChangeDateTime` | `hrrp_dir_n.updtime` |
-| `ChartOfAccounts` | `cast( hrrp_dir_n.ktopl as char80 )` |
-| `FinancialStatementAssetsItem` | `cast( hrrp_dir_n.aktva as char80 )` |
-| `FinStatementLiabilitiesItem` | `cast( hrrp_dir_n.pssva as char80 )` |
-| `FinancialStatementNetLossItem` | `cast( hrrp_dir_n.ergak as char80 )` |
-| `FinStatementNetProfitItem` | `cast( hrrp_dir_n.ergpa as char80 )` |
-| `FinStatementProfitAndLossItem` | `cast( hrrp_dir_n.erggv as char80 )` |
-| `FinancialStatementOrphansItem` | `cast( hrrp_dir_n.zuord as char80 )` |
-| `FinancialStatementNotesItem` | `cast( hrrp_dir_n.anhng as char80 )` |
-| `GroupChartOfAccountIsUsed` | `cast( hrrp_dir_n.xergs as char80 )` |
-| `FunctionalAreaIsUsed` | `cast( hrrp_dir_n.funareaassigned as char80 )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialStatementHierarchy` | ✓ | |  | `hryid_42` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
+| `ValidityStartDate` |  | |  | `case when hrrp_dir_n.hrysource = 'UH' then hrrp_dir_n.hryvalfrom else cast( '19000101' as fis_datab ) end` |
+| `HierarchyType` |  | |  | `hrytyp` |
+| `LastChangedByUser` |  | |  | `upduser` |
+| `LastChangeTime` |  | |  | `updtime` |
+| `LastChangeDateTime` |  | |  | `updtime` |
+| `ChartOfAccounts` |  | |  | `cast( hrrp_dir_n.ktopl as char80 )` |
+| `FinancialStatementAssetsItem` |  | |  | `cast( hrrp_dir_n.aktva as char80 )` |
+| `FinStatementLiabilitiesItem` |  | |  | `cast( hrrp_dir_n.pssva as char80 )` |
+| `FinancialStatementNetLossItem` |  | |  | `cast( hrrp_dir_n.ergak as char80 )` |
+| `FinStatementNetProfitItem` |  | |  | `cast( hrrp_dir_n.ergpa as char80 )` |
+| `FinStatementProfitAndLossItem` |  | |  | `cast( hrrp_dir_n.erggv as char80 )` |
+| `FinancialStatementOrphansItem` |  | |  | `cast( hrrp_dir_n.zuord as char80 )` |
+| `FinancialStatementNotesItem` |  | |  | `cast( hrrp_dir_n.anhng as char80 )` |
+| `GroupChartOfAccountIsUsed` |  | |  | `cast( hrrp_dir_n.xergs as char80 )` |
+| `FunctionalAreaIsUsed` |  | |  | `cast( hrrp_dir_n.funareaassigned as char80 )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

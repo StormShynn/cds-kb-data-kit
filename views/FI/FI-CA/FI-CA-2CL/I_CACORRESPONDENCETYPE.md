@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACorrespondenceType` | `cotyp` |
-| `CAApplicationArea` | `cast( left( applk, 1 ) as applk_kk preserving type )` |
-| `CAPeriodicCorrespondence` | `cotrg` |
-| `IsInboundCorrespondence` | `incorr` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACorrespondenceType` | ✓ | |  | `cotyp` |
+| `CAApplicationArea` |  | |  | `cast( left( applk, 1 ) as applk_kk preserving type )` |
+| `CAPeriodicCorrespondence` |  | |  | `cotrg` |
+| `IsInboundCorrespondence` |  | |  | `incorr` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

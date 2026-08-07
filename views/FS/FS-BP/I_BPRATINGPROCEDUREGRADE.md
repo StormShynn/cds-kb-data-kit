@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerRatingProcedure` | `tpz22.grade_method` |
-| key `BusinessPartnerRatingGrade` | `tpz22.grade` |
-| `BusinessPartnerRatingRanking` | `tpz22.ranking` |
-| `_Text` | *Association* |
-| `_RatingProcedure` | *Association* |
-| `_BPRating` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |
+| `BusinessPartnerRatingGrade` | ✓ | |  | `grade` |
+| `BusinessPartnerRatingRanking` |  | |  | `ranking` |
+| `_Text` | | ✓ | | |
+| `_RatingProcedure` | | ✓ | | |
+| `_BPRating` | | ✓ | | |
 
 ## Associations
 

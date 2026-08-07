@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REConditionGroup` | `condgroup` |
-| key `REConditionType` | `condtype` |
-| `REConditionTypeDisplayOrder` | `displayorder` |
-| `REExtConditionPurpose` | `condpurposeext` |
-| `REAdjustmentRule` | `adjmrule` |
-| `REConditionTypeIsAutoDefault` | `typeautodefault` |
-| `REConditionTypeIsLocked` | `cdtypelocked` |
-| `REConditionTypeIsHidden` | `cdtypehide` |
-| `REIsExclForNewAssgmt` | `cuexcludeassign` |
-| `_REConditionType` | *Association* |
-| `_REConditionGroup` | *Association* |
-| `_REAdjustmentRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REConditionGroup` | ✓ | |  | `condgroup` |
+| `REConditionType` | ✓ | |  | `condtype` |
+| `REConditionTypeDisplayOrder` |  | |  | `displayorder` |
+| `REExtConditionPurpose` |  | |  | `condpurposeext` |
+| `REAdjustmentRule` |  | |  | `adjmrule` |
+| `REConditionTypeIsAutoDefault` |  | |  | `typeautodefault` |
+| `REConditionTypeIsLocked` |  | |  | `cdtypelocked` |
+| `REConditionTypeIsHidden` |  | |  | `cdtypehide` |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
+| `_REConditionType` | | ✓ | | |
+| `_REConditionGroup` | | ✓ | | |
+| `_REAdjustmentRule` | | ✓ | | |
 
 ## Associations
 

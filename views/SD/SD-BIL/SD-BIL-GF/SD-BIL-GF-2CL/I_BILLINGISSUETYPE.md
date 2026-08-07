@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingIssueType` | `cast( dd07l.domvalue_l as vf_todo )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingIssueType` | ✓ | |  | `cast( dd07l.domvalue_l as vf_todo )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

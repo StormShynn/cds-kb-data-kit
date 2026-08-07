@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `RequestForQuotation` | `vdm_requestforquotation` |
-| `Supplier` | `md_supplier` |
-| `Language` | `spras` |
-| `BindingPeriodValidityEndDate` | `ebndt` |
-| `SupplierQuotationExternalID` | `angnr` |
-| `QuotationSubmissionDate` | `ihran` |
-| `FollowOnDocumentCategory` | `followondoccat` |
-| `PurgDocFollowOnDocumentType` | `followondoctype` |
-| `D_SuplrQtanCrteFrmRFQItemP` | `_Items : composition [0..*] of D_SuplrQtanCrteFrmRFQItemP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RequestForQuotation` |  | |  | `vdm_requestforquotation` |
+| `Supplier` |  | |  | `md_supplier` |
+| `Language` |  | |  | `spras` |
+| `BindingPeriodValidityEndDate` |  | |  | `ebndt` |
+| `SupplierQuotationExternalID` |  | |  | `angnr` |
+| `QuotationSubmissionDate` |  | |  | `ihran` |
+| `FollowOnDocumentCategory` |  | |  | `followondoccat` |
+| `PurgDocFollowOnDocumentType` |  | |  | `followondoctype` |
+| `D_SuplrQtanCrteFrmRFQItemP` |  | |  | `_Items : composition [0..*] of D_SuplrQtanCrteFrmRFQItemP` |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EquipmentCategory` | `t370u.eqtyp` |
-| key `Language` | `t370u.spras` |
-| `EquipmentCategoryDesc` | `t370u.typtx` |
-| `_EquipmentCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EquipmentCategory` | ✓ | |  | `eqtyp` |
+| `Language` | ✓ | |  | `spras` |
+| `EquipmentCategoryDesc` |  | |  | `typtx` |
+| `_EquipmentCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

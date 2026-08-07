@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TrdClassfctnNmbrSchm` | `Class.TrdClassfctnNmbrSchm` |
-| key `TrdClassfctnNmbrSchmCntnt` | `Class.TrdClassfctnNmbrSchmCntnt` |
-| key `Product` | `Class.Product` |
-| key `ValidityStartDate` | `Class.ValidityStartDate` |
-| `ValidityEndDate` | `Class.ValidityEndDate` |
-| `CommodityCode` | `cast (_CommodityCode.TrdClassfctnNmbr as /sapsll/comco)` |
-| `Country` | `_TrdClassfctnNmbrSchmUsge.Country` |
-| `CustomsUnitOfMeasure` | `_CommodityCode.CustomsUnitOfMeasure` |
-| `UnitOfMeasureSystem` | `_CommodityCode.UnitOfMeasureSystem` |
-| `SecondCustomsUnitOfMeasure` | `_CommodityCode.SecondCustomsUnitOfMeasure` |
-| `SecondSupplementaryUnit` | `_CommodityCode.SecondSupplementaryUnit` |
-| `SupplementaryUnit` | `_CommodityCode.SupplementaryUnit` |
-| `_CommodityCodeText` | *Association* |
-| `_TrdClassfctnNmbrSchm` | *Association* |
-| `_Country` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TrdClassfctnNmbrSchm` | ✓ | |  |  |
+| `TrdClassfctnNmbrSchmCntnt` | ✓ | |  |  |
+| `Product` | ✓ | |  |  |
+| `ValidityStartDate` | ✓ | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `CommodityCode` |  | |  | `cast (_CommodityCode.TrdClassfctnNmbr as /sapsll/comco)` |
+| `Country` |  | | `_TrdClassfctnNmbrSchmUsge` | `Country` |
+| `CustomsUnitOfMeasure` |  | | `_CommodityCode` | `CustomsUnitOfMeasure` |
+| `UnitOfMeasureSystem` |  | | `_CommodityCode` | `UnitOfMeasureSystem` |
+| `SecondCustomsUnitOfMeasure` |  | | `_CommodityCode` | `SecondCustomsUnitOfMeasure` |
+| `SecondSupplementaryUnit` |  | | `_CommodityCode` | `SecondSupplementaryUnit` |
+| `SupplementaryUnit` |  | | `_CommodityCode` | `SupplementaryUnit` |
+| `_CommodityCodeText` | | ✓ | | |
+| `_TrdClassfctnNmbrSchm` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Associations
 

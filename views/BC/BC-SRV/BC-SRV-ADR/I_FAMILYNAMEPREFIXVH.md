@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FamilyNamePrefix` | `FamilyNamePrefix` |
-| `FamilyNamePrefixName` | `FamilyNamePrefixName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FamilyNamePrefix` | ✓ | |  |  |
+| `FamilyNamePrefixName` |  | |  |  |
 
 ## Source Code
 

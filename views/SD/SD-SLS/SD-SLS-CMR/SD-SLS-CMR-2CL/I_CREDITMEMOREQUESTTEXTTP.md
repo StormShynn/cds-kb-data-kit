@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `CreditMemoRequestText.CreditMemoRequest` |
-| key `Language` | `CreditMemoRequestText.Language` |
-| key `LongTextID` | `CreditMemoRequestText.LongTextID` |
-| `LongTextIDForEdit` | `CreditMemoRequestText.LongTextIDForEdit` |
-| `LanguageForEdit` | `CreditMemoRequestText.LanguageForEdit` |
-| `LongText` | `CreditMemoRequestText.LongText` |
-| `CreditMemoRequestType` | `CreditMemoRequestText.CreditMemoRequestType` |
-| `SalesOrganization` | `CreditMemoRequestText.SalesOrganization` |
-| `DistributionChannel` | `CreditMemoRequestText.DistributionChannel` |
-| `OrganizationDivision` | `CreditMemoRequestText.OrganizationDivision` |
-| `_CreditMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `CreditMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_CreditMemoRequest` | | ✓ | | |
 
 ## Source Code
 

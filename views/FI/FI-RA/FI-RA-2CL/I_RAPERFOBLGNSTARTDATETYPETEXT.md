@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(dd07t.ddlanguage as spras preserving type)` |
-| key `PerfOblgnStartDateType` | `cast(dd07t.domvalue_l as farr_start_date_type)` |
-| `PerfOblgnStartDateTypeText` | `dd07t.ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_RAStartDateType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
+| `PerfOblgnStartDateType` | ✓ | |  | `cast(dd07t.domvalue_l as farr_start_date_type)` |
+| `PerfOblgnStartDateTypeText` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_RAStartDateType` | | ✓ | | |
 
 ## Associations
 

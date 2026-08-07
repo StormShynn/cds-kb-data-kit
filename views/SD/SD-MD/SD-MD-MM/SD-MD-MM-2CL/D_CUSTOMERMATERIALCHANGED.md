@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Material` | `matnr` |
-| `MaterialByCustomer` | `matnr_ku` |
-| `MaterialDescriptionByCustomer` | `postx` |
-| `Plant` | `werks_d` |
-| `DeliveryPriority` | `lprio` |
-| `MinDeliveryQtyInBaseUnit` | `minlf` |
-| `BaseUnit` | `meins` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` |  | |  | `matnr` |
+| `MaterialByCustomer` |  | |  | `matnr_ku` |
+| `MaterialDescriptionByCustomer` |  | |  | `postx` |
+| `Plant` |  | |  | `werks_d` |
+| `DeliveryPriority` |  | |  | `lprio` |
+| `MinDeliveryQtyInBaseUnit` |  | |  | `minlf` |
+| `BaseUnit` |  | |  | `meins` |
 
 ## Source Code
 

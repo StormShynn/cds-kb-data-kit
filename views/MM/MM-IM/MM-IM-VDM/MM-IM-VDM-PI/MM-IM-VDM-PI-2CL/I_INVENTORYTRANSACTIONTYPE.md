@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventoryTransactionType` | `vgart` |
-| `IsPhysicalInventoryRelevant` | `xikpf` |
-| `IsMaterialDocumentRelevant` | `xmkpf` |
-| `IsReservationRelevant` | `xrkpf` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryTransactionType` | ✓ | |  | `vgart` |
+| `IsPhysicalInventoryRelevant` |  | |  | `xikpf` |
+| `IsMaterialDocumentRelevant` |  | |  | `xmkpf` |
+| `IsReservationRelevant` |  | |  | `xrkpf` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

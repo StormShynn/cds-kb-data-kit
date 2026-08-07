@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `CH_ElectronicDocAcctgDocType` | `blart` |
-| `CH_ElectronicDocTypeText` | `ltext` |
-| `_DocumentType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `CH_ElectronicDocAcctgDocType` | ✓ | |  | `blart` |
+| `CH_ElectronicDocTypeText` |  | |  | `ltext` |
+| `_DocumentType` | | ✓ | | |
 
 ## Associations
 

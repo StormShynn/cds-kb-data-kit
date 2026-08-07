@@ -38,22 +38,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Petname` | `petname` |
-| `Pettype` | `pettype` |
-| `Petage` | `petage` |
-| `Petowner` | `petowner` |
-| `CreatedBy` | `created_by` |
-| `ChangedBy` | `changed_by` |
-| `LocinstLastchangeDate` | `locinst_lastchange_date` |
-| `LocinstLastchangeTime` | `locinst_lastchange_time` |
-| `LocinstLastchangeTstmpl` | `locinst_lastchange_tstmpl` |
-| `LocinstLastchangeUtcl` | `locinst_lastchange_utcl` |
-| `LastchangeDate` | `lastchange_date` |
-| `LastchangeTime` | `lastchange_time` |
-| `LastchangeTstmpl` | `lastchange_tstmpl` |
-| `LastchangeUtcl` | `lastchange_utcl` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Petname` | ✓ | |  | `petname` |
+| `Pettype` |  | |  | `pettype` |
+| `Petage` |  | |  | `petage` |
+| `Petowner` |  | |  | `petowner` |
+| `CreatedBy` |  | |  | `created_by` |
+| `ChangedBy` |  | |  | `changed_by` |
+| `LocinstLastchangeDate` |  | |  | `locinst_lastchange_date` |
+| `LocinstLastchangeTime` |  | |  | `locinst_lastchange_time` |
+| `LocinstLastchangeTstmpl` |  | |  | `locinst_lastchange_tstmpl` |
+| `LocinstLastchangeUtcl` |  | |  | `locinst_lastchange_utcl` |
+| `LastchangeDate` |  | |  | `lastchange_date` |
+| `LastchangeTime` |  | |  | `lastchange_time` |
+| `LastchangeTstmpl` |  | |  | `lastchange_tstmpl` |
+| `LastchangeUtcl` |  | |  | `lastchange_utcl` |
 
 ## Source Code
 

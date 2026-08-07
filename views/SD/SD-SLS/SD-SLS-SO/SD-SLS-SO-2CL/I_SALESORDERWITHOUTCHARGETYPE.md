@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutChargeType` | `cast ( SalesDocumentType as sales_order_wthout_charge_type preserving type )` |
-| `SalesOrderWthoutChrgProcgType` | `SalesDocumentProcessingType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutChargeType` | ✓ | |  | `cast ( SalesDocumentType as sales_order_wthout_charge_type preserving type )` |
+| `SalesOrderWthoutChrgProcgType` |  | |  | `SalesDocumentProcessingType` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentBlockingReason` | `I_SupplierInvoiceBlock.PaymentBlockingReason` |
-| key `CompanyCode` | `I_SupplierInvoiceBlock.CompanyCode` |
-| key `FiscalYear` | `I_SupplierInvoiceBlock.FiscalYear` |
-| key `InvoicingParty` | `I_SupplierInvoiceBlock.InvoicingParty` |
-| key `SupplierInvoice` | `I_SupplierInvoiceBlock.SupplierInvoice` |
-| key `CreatedByUser` | `I_SupplierInvoiceBlock.CreatedByUser` |
-| key `PostingDate` | `I_SupplierInvoiceBlock.PostingDate` |
-| key `PurchasingGroup` | `I_SupplierInvoiceBlock.PurchasingGroup` |
-| key `NetDueDate` | `I_SupplierInvoiceBlock.NetDueDate` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentBlockingReason` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `InvoicingParty` | ✓ | |  |  |
+| `SupplierInvoice` | ✓ | |  |  |
+| `CreatedByUser` | ✓ | |  |  |
+| `PostingDate` | ✓ | |  |  |
+| `PurchasingGroup` | ✓ | |  |  |
+| `NetDueDate` | ✓ | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

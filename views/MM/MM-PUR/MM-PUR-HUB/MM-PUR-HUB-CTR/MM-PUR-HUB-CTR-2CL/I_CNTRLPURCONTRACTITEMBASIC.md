@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `ActivePurchasingDocument` |
-| key `CentralPurchaseContractItem` | `Item.CentralPurchaseContractItem` |
-| `CntrlPurContractItemText` | `Item.PurchaseContractItemText` |
-| `PurchasingDocumentItemCategory` | `Item.PurchasingDocumentItemCategory` |
-| `MaterialGroup` | `cast ( Item.ProductGroup as matkl preserving type )` |
-| `ProcmtHubExtReferencedMaterial` | `Item.ProcmtHubExtReferencedMaterial` |
-| `NetPriceQuantity` | `Item.NetPriceQuantity` |
-| `OrderPriceUnit` | `Item.OrderPriceUnit` |
-| `TargetQuantity` | `Item.TargetQuantity` |
-| `CntrlPurContrItmTargetAmount` | `Item.CntrlPurContrItmTargetAmount` |
-| `ContractNetPriceAmount` | `Item.ContractNetPriceAmount` |
-| `OrderQuantityUnit` | `Item.OrderQuantityUnit` |
-| `PurgDocReleaseOrderQuantity` | `Item.PurgDocReleaseOrderQuantity` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `Item.OrdPriceUnitToOrderUnitDnmntr` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `Item.OrderPriceUnitToOrderUnitNmrtr` |
-| `DocumentCurrency` | `Item.DocumentCurrency` |
-| `TaxCode` | `Item.TaxCode` |
-| `EvaldRcptSettlmtIsAllowed` | `Item.EvaldRcptSettlmtIsAllowed` |
-| `PurchasingContractDeletionCode` | `Item.PurchasingContractDeletionCode` |
-| `PurgDocItmBlkRsnCode` | `Item.PurgDocItmBlkRsnCode` |
-| `PurchasingParentItem` | `Item.PurchasingParentItem` |
-| `IsOutline` | `Item.IsStatisticalItem` |
-| `_CentralPurchaseContractBasic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  | `ActivePurchasingDocument` |
+| `CentralPurchaseContractItem` | ✓ | |  |  |
+| `CntrlPurContractItemText` |  | |  | `PurchaseContractItemText` |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `MaterialGroup` |  | |  | `cast ( Item.ProductGroup as matkl preserving type )` |
+| `ProcmtHubExtReferencedMaterial` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `CntrlPurContrItmTargetAmount` |  | |  |  |
+| `ContractNetPriceAmount` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `PurgDocReleaseOrderQuantity` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
+| `PurchasingContractDeletionCode` |  | |  |  |
+| `PurgDocItmBlkRsnCode` |  | |  |  |
+| `PurchasingParentItem` |  | |  |  |
+| `IsOutline` |  | |  | `IsStatisticalItem` |
+| `_CentralPurchaseContractBasic` | | ✓ | | |
 
 ## Associations
 

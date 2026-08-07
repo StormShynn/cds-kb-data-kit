@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentIsReleased` | `domvalue_l` |
-| `_SrvcDocReleaseStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentIsReleased` | ✓ | |  | `domvalue_l` |
+| `_SrvcDocReleaseStatusText` | | ✓ | | |
 
 ## Associations
 

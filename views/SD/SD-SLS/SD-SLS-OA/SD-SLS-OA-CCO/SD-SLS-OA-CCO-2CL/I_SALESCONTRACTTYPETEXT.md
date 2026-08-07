@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContractType` | `SalesContractType.SalesContractType` |
-| key `Language` | `Text.Language` |
-| `SalesContractTypeName` | `cast( Text.SalesDocumentTypeName as sd_sales_contract_type_name preserving type )` |
-| `_SalesContractType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContractType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SalesContractTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_sales_contract_type_name preserving type )` |
+| `_SalesContractType` | | ✓ | | |
 
 ## Associations
 

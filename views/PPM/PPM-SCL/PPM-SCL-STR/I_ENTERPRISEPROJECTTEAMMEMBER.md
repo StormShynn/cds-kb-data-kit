@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TeamMemberUUID` | `guid` |
-| `BusinessPartnerUUID` | `bupa_guid` |
-| `ProjectUUID` | `project_guid` |
-| `CreatedByUser` | `created_by` |
-| `CreationDateTime` | `created_on` |
-| `LastChangedByUser` | `changed_by` |
-| `LastChangeDateTime` | `changed_on` |
-| `_Project` | *Association* |
-| `_Entitlement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TeamMemberUUID` | ✓ | |  | `guid` |
+| `BusinessPartnerUUID` |  | |  | `bupa_guid` |
+| `ProjectUUID` |  | |  | `project_guid` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDateTime` |  | |  | `created_on` |
+| `LastChangedByUser` |  | |  | `changed_by` |
+| `LastChangeDateTime` |  | |  | `changed_on` |
+| `_Project` | | ✓ | | |
+| `_Entitlement` | | ✓ | | |
 
 ## Associations
 

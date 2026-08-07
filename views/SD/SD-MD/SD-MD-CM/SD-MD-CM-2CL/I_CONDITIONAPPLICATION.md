@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionApplication` | `kappl` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

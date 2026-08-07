@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `IT_ElectronicDocDeliveredDate` | `IT_ElectronicDocDeliveredDate` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `IT_ElectronicDocInvoiceNumber` | `IT_ElectronicDocInvoiceNumber` |
-| `PurchasingDocumentAmount` | `PurchasingDocumentAmount` |
-| `PurchaseOrderCurrency` | `PurchaseOrderCurrency` |
-| `IT_ElectronicDocExchSystemID` | `IT_ElectronicDocExchSystemID` |
-| `IT_ElectronicDocRecipientTaxID` | `IT_ElectronicDocRecipientTaxID` |
-| `IT_ElectronicDocRcpntEmailAddr` | `IT_ElectronicDocRcpntEmailAddr` |
-| `IT_ElectronicDocExtDocType` | `IT_ElectronicDocExtDocType` |
-| `IT_ElectronicDocRejectionCode` | `IT_ElectronicDocRejectionCode` |
-| `IT_ElectronicDocRejectionText` | `IT_ElectronicDocRejectionText` |
-| `IT_ElectronicDocRjcnEmailAddr` | `IT_ElectronicDocRjcnEmailAddr` |
-| `IT_ElectronicDocSuplrCtryCode` | `IT_ElectronicDocSuplrCtryCode` |
-| `IT_ElectronicDocSuplrTaxID` | `IT_ElectronicDocSuplrTaxID` |
-| `IT_ElectronicDocSupplierName` | `IT_ElectronicDocSupplierName` |
-| `_ElectronicRejectCode` | *Association* |
-| `_CountryText` | *Association* |
-| `_CurrencyText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `IT_ElectronicDocDeliveredDate` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `IT_ElectronicDocInvoiceNumber` |  | |  |  |
+| `PurchasingDocumentAmount` |  | |  |  |
+| `PurchaseOrderCurrency` |  | |  |  |
+| `IT_ElectronicDocExchSystemID` |  | |  |  |
+| `IT_ElectronicDocRecipientTaxID` |  | |  |  |
+| `IT_ElectronicDocRcpntEmailAddr` |  | |  |  |
+| `IT_ElectronicDocExtDocType` |  | |  |  |
+| `IT_ElectronicDocRejectionCode` |  | |  |  |
+| `IT_ElectronicDocRejectionText` |  | |  |  |
+| `IT_ElectronicDocRjcnEmailAddr` |  | |  |  |
+| `IT_ElectronicDocSuplrCtryCode` |  | |  |  |
+| `IT_ElectronicDocSuplrTaxID` |  | |  |  |
+| `IT_ElectronicDocSupplierName` |  | |  |  |
+| `_ElectronicRejectCode` | | ✓ | | |
+| `_CountryText` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
 
 ## Source Code
 

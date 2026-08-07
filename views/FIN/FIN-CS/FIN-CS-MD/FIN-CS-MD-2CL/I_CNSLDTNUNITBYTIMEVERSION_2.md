@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnit` | `_UnitByTimeVersion.ConsolidationUnit` |
-| key `ConsolidationVersion` | `_UnitByTimeVersion.ConsolidationVersion` |
-| key `FromFiscalYearPeriod` | `_UnitByTimeVersion.FromFiscalYearPeriod` |
-| `ToFiscalYearPeriod` | `ToFiscalYearPeriod` |
-| `ConsolidationUnitIsPartnerOnly` | `ConsolidationUnitIsPartnerOnly` |
-| `CnsldtnCrcyTranslationMethod` | `CnsldtnCrcyTranslationMethod` |
-| `CnsldtnTaxRate` | `CnsldtnTaxRate` |
-| `FiscalYearVariant` | `FiscalYearVariant` |
-| `CnsldtnUnivJournalIntegType` | `CnsldtnUnivJournalIntegType` |
-| `CnsldtnGroupCrcyIsLeadingCrcy` | `CnsldtnGroupCrcyIsLeadingCrcy` |
-| `CnsldtnUnitLocalCrcySource` | `CnsldtnUnitLocalCrcySource` |
-| `CnsldtnUnitGroupCrcySource` | `CnsldtnUnitGroupCrcySource` |
-| `CnsldtnUploadMethod` | `CnsldtnUploadMethod` |
-| `CnsldtnUnitDataCollection` | `_UnitByTimeVersion.CnsldtnUnitDataCollection` |
-| `ConsolidationUnitPartner` | `_UnitByTimeVersion.ConsolidationUnitPartner` |
-| `ConsolidationUnitPostingRule` | `_UnitByTimeVersion.ConsolidationUnitPostingRule` |
-| `ConsolidationUnitValidation` | `_UnitByTimeVersion.ConsolidationUnitValidation` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | | `_UnitByTimeVersion` | `ConsolidationUnit` |
+| `ConsolidationVersion` | ✓ | | `_UnitByTimeVersion` | `ConsolidationVersion` |
+| `FromFiscalYearPeriod` | ✓ | | `_UnitByTimeVersion` | `FromFiscalYearPeriod` |
+| `ToFiscalYearPeriod` |  | |  |  |
+| `ConsolidationUnitIsPartnerOnly` |  | |  |  |
+| `CnsldtnCrcyTranslationMethod` |  | |  |  |
+| `CnsldtnTaxRate` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `CnsldtnUnivJournalIntegType` |  | |  |  |
+| `CnsldtnGroupCrcyIsLeadingCrcy` |  | |  |  |
+| `CnsldtnUnitLocalCrcySource` |  | |  |  |
+| `CnsldtnUnitGroupCrcySource` |  | |  |  |
+| `CnsldtnUploadMethod` |  | |  |  |
+| `CnsldtnUnitDataCollection` |  | | `_UnitByTimeVersion` | `CnsldtnUnitDataCollection` |
+| `ConsolidationUnitPartner` |  | | `_UnitByTimeVersion` | `ConsolidationUnitPartner` |
+| `ConsolidationUnitPostingRule` |  | | `_UnitByTimeVersion` | `ConsolidationUnitPostingRule` |
+| `ConsolidationUnitValidation` |  | | `_UnitByTimeVersion` | `ConsolidationUnitValidation` |
 
 ## Associations
 

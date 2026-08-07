@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `FinancialDataSource` | `_Text.FinancialDataSource` |
-| `FinancialDataSourceName` | `_Text.FinancialDataSourceName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinancialDataSourceTP` | `_FinancialDataSource as _FinancialDataSource : redirected to parent I_CnsldtnFinancialDataSourceTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `FinancialDataSource` | ✓ | | `_Text` | `FinancialDataSource` |
+| `FinancialDataSourceName` |  | | `_Text` | `FinancialDataSourceName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnFinancialDataSourceTP` |  | |  | `_FinancialDataSource as _FinancialDataSource : redirected to parent I_CnsldtnFinancialDataSourceTP` |
 
 ## Source Code
 

@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDDocument` | `SDDocument` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `ContactPerson` | `ContactPerson` |
-| `ReferenceBusinessPartner` | `ReferenceBusinessPartner` |
-| `AddressID` | `AddressID` |
-| `AddressPersonID` | `AddressPersonID` |
-| `AddressObjectType` | `AddressObjectType` |
-| `SDDocPartnerAddressRefType` | `SDDocPartnerAddressRefType` |
-| `BPAddrDeterminationTransaction` | `BPAddrDeterminationTransaction` |
-| `BPRefAddressIDForDocSpcfcAddr` | `BPRefAddressIDForDocSpcfcAddr` |
-| `PartnerIsOneTimeAccount` | `PartnerIsOneTimeAccount` |
-| `SDDocPartnerAddrIsDocSpecific` | `SDDocPartnerAddrIsDocSpecific` |
-| `VATRegistration` | `VATRegistration` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `CountryCode` | `CountryCode` |
-| `CustomerHierarchyType` | `CustomerHierarchyType` |
-| `CustIsPrcDetnRlvt` | `CustIsPrcDetnRlvt` |
-| `CustomerIsRebateRelevant` | `CustomerIsRebateRelevant` |
-| `CustomerHierarchyLevel` | `CustomerHierarchyLevel` |
-| `CustomerHierarchyFixedLevel` | `CustomerHierarchyFixedLevel` |
-| `TransportZone` | `TransportZone` |
-| `_PartnerFunction` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_WorkforcePersonMappings` | *Association* |
-| `_Address` | *Association* |
-| `_DfltAddrRprstn` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
-| `_PersonWorkplaceAddrDfltRprstn` | *Association* |
-| `_BPRefAddressForDocSpcfcAddr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDDocument` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `PartnerIsOneTimeAccount` |  | |  |  |
+| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |
+| `VATRegistration` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `CountryCode` |  | |  |  |
+| `CustomerHierarchyType` |  | |  |  |
+| `CustIsPrcDetnRlvt` |  | |  |  |
+| `CustomerIsRebateRelevant` |  | |  |  |
+| `CustomerHierarchyLevel` |  | |  |  |
+| `CustomerHierarchyFixedLevel` |  | |  |  |
+| `TransportZone` |  | |  |  |
+| `_PartnerFunction` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_WorkforcePersonMappings` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_DfltAddrRprstn` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_PersonWorkplaceAddrDfltRprstn` | | ✓ | | |
+| `_BPRefAddressForDocSpcfcAddr` | | ✓ | | |
 
 ## Source Code
 

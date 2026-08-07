@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyNodeText.Language` |
-| key `ConsolidationCustomerHierarchy` | `cast(_HierarchyNodeText.UniversalHierarchy as fincs_customerhierarchy preserving type )` |
-| key `HierarchyNode` | `_HierarchyNodeText.HierarchyNode` |
-| key `ValidityEndDate` | `_HierarchyNodeText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyNodeText.ValidityStartDate` |
-| `ParentNode` | `_HierarchyNodeText.ParentNode` |
-| `HierarchyVersion` | `_HierarchyNodeText.HierarchyVersion` |
-| `HierarchyNodeText` | `_HierarchyNodeText.HierarchyNodeText` |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
+| `ConsolidationCustomerHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.UniversalHierarchy as fincs_customerhierarchy preserving type )` |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t009t.spras` |
-| key `FiscalYearVariant` | `cast( t009t.periv as fis_periv preserving type )` |
-| `FiscalYearVariantDescription` | `cast(t009t.ltext as fis_periv_desc preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `FiscalYearVariant` | ✓ | |  | `cast( t009t.periv as fis_periv preserving type )` |
+| `FiscalYearVariantDescription` |  | |  | `cast(t009t.ltext as fis_periv_desc preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

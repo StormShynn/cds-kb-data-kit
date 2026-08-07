@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CN_TaxInvcDeductionType` | `dedt.CN_TaxInvcDeductionType` |
-| key `Language` | `Language` |
-| `CN_TaxInvcDeductionTypeTxt` | `dedt.CN_TaxInvcDeductionTypeTxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CN_TaxInvcDeductionType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `CN_TaxInvcDeductionTypeTxt` |  | |  |  |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

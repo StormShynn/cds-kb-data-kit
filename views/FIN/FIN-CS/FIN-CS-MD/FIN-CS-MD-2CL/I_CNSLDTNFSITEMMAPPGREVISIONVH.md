@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `_Source.ConsolidationChartOfAccounts` |
-| key `ChartOfAccounts` | `_Source.ChartOfAccounts` |
-| key `CnsldtnFSItemMapping` | `_Source.CnsldtnFSItemMapping` |
-| key `CnsldtnFSItemMappingRevision` | `_Source.CnsldtnFSItemMappingRevision` |
-| `CnsldtnFSItemMappgRevisionText` | `cast( _Source._Text[1: Language=$session.system_language].CnsldtnFSItemMappgRevisionText as fincs_description_text_60 preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |
+| `ChartOfAccounts` | ✓ | | `_Source` | `ChartOfAccounts` |
+| `CnsldtnFSItemMapping` | ✓ | | `_Source` | `CnsldtnFSItemMapping` |
+| `CnsldtnFSItemMappingRevision` | ✓ | | `_Source` | `CnsldtnFSItemMappingRevision` |
+| `CnsldtnFSItemMappgRevisionText` |  | |  | `cast( _Source._Text[1: Language=$session.system_language].CnsldtnFSItemMappgRevisionText as fincs_description_text_60 preserving type )` |
 
 ## Source Code
 

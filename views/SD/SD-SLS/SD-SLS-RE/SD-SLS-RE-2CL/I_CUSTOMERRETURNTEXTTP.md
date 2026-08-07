@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturn` | `CustomerReturnText.CustomerReturn` |
-| key `Language` | `CustomerReturnText.Language` |
-| key `LongTextID` | `CustomerReturnText.LongTextID` |
-| `LongTextIDForEdit` | `CustomerReturnText.LongTextIDForEdit` |
-| `LanguageForEdit` | `CustomerReturnText.LanguageForEdit` |
-| `LongText` | `CustomerReturnText.LongText` |
-| `CustomerReturnType` | `CustomerReturnText.CustomerReturnType` |
-| `SalesOrganization` | `CustomerReturnText.SalesOrganization` |
-| `DistributionChannel` | `CustomerReturnText.DistributionChannel` |
-| `OrganizationDivision` | `CustomerReturnText.OrganizationDivision` |
-| `_CustomerReturn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `CustomerReturnType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_CustomerReturn` | | ✓ | | |
 
 ## Source Code
 

@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FactoryCalendarLanguage` | `FactoryCalendarLanguage` |
-| key `FactoryCalendarID` | `FactoryCalendarID` |
-| `FactoryCalendarDescription` | `FactoryCalendarDescription` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FactoryCalendarLanguage` | ✓ | |  |  |
+| `FactoryCalendarID` | ✓ | |  |  |
+| `FactoryCalendarDescription` |  | |  |  |
 
 ## Source Code
 

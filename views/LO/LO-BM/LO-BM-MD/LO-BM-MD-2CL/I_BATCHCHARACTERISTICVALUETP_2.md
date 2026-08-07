@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `BatchIdentifyingPlant` | `BatchIdentifyingPlant` |
-| key `Batch` | `Batch` |
-| key `CharcInternalID` | `CharcInternalID` |
-| key `ClfnCharcValuePositionNumber` | `ClfnCharcValuePositionNumber` |
-| `CharcValueIntervalType` | `CharcValueIntervalType` |
-| `CharcValue` | `CharcValue` |
-| `CharcFromNumericValue` | `CharcFromNumericValue` |
-| `CharcFromNumericValueUnit` | `CharcFromNumericValueUnit` |
-| `CharcToNumericValue` | `CharcToNumericValue` |
-| `CharcToNumericValueUnit` | `CharcToNumericValueUnit` |
-| `CharcFromDecimalValue` | `CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `CharcToDecimalValue` |
-| `CharcFromAmount` | `CharcFromAmount` |
-| `CharcToAmount` | `CharcToAmount` |
-| `Currency` | `Currency` |
-| `CharcFromDate` | `CharcFromDate` |
-| `CharcToDate` | `CharcToDate` |
-| `CharcFromTime` | `CharcFromTime` |
-| `CharcToTime` | `CharcToTime` |
-| `CharcAuthor` | `CharcAuthor` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `ClassType` | `ClassType` |
-| `_BatchCharacteristicTP` | *Association* |
-| `_BatchTP` | *Association* |
-| `_ClfnCharacteristic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `BatchIdentifyingPlant` | ✓ | |  |  |
+| `Batch` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `ClfnCharcValuePositionNumber` | ✓ | |  |  |
+| `CharcValueIntervalType` |  | |  |  |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `CharcAuthor` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ClassType` |  | |  |  |
+| `_BatchCharacteristicTP` | | ✓ | | |
+| `_BatchTP` | | ✓ | | |
+| `_ClfnCharacteristic` | | ✓ | | |
 
 ## Source Code
 

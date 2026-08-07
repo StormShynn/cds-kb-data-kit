@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PartnerFunction` | `parvw_unv` |
-| `Customer` | `kunnr` |
-| `BusinessPartnerAddressUUID` | `bu_address_guid` |
-| `ContactPerson` | `parnr` |
-| `Personnel` | `pernr_d` |
-| `Supplier` | `lifnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PartnerFunction` |  | |  | `parvw_unv` |
+| `Customer` |  | |  | `kunnr` |
+| `BusinessPartnerAddressUUID` |  | |  | `bu_address_guid` |
+| `ContactPerson` |  | |  | `parnr` |
+| `Personnel` |  | |  | `pernr_d` |
+| `Supplier` |  | |  | `lifnr` |
 
 ## Source Code
 

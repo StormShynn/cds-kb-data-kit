@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateDimensionUUID` | `cast(db_key as /scmtms/transprate_dim_uuid preserving type)` |
-| `TranspRateValidityUUID` | `cast(parent_key as /scmtms/transprate_val_uuid preserving type)` |
-| `TransportationRateUUID` | `cast(root_key as /scmtms/transpratetable_uuid preserving type)` |
-| `TranspRateDimnScaleItem01UUID` | `cast(scale_item_key01 as /scmtms/vdm_sc_item_01_uuid preserving type)` |
-| `TranspRateDimnScaleItem02UUID` | `cast(scale_item_key02 as /scmtms/vdm_sc_item_02_uuid preserving type)` |
-| `TranspRateDimnScaleItem03UUID` | `cast(scale_item_key03 as /scmtms/vdm_sc_item_03_uuid preserving type)` |
-| `TranspRateDimnScaleItem04UUID` | `cast(scale_item_key04 as /scmtms/vdm_sc_item_04_uuid preserving type)` |
-| `TransportationRateCurrency` | `rate_curr` |
-| `TranspRateAmountInRateCrcy` | `cast(cast( rate as abap.dec(31,6) ) * 10000 as /scmtms/vdm_rt_amt_in_rt_curr)` |
-| `_TransportationRateCurrency` | *Association* |
-| `_TransportationRate` | *Association* |
-| `_TransportationRateValidity` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateDimensionUUID` | ✓ | |  | `cast(db_key as /scmtms/transprate_dim_uuid preserving type)` |
+| `TranspRateValidityUUID` |  | |  | `cast(parent_key as /scmtms/transprate_val_uuid preserving type)` |
+| `TransportationRateUUID` |  | |  | `cast(root_key as /scmtms/transpratetable_uuid preserving type)` |
+| `TranspRateDimnScaleItem01UUID` |  | |  | `cast(scale_item_key01 as /scmtms/vdm_sc_item_01_uuid preserving type)` |
+| `TranspRateDimnScaleItem02UUID` |  | |  | `cast(scale_item_key02 as /scmtms/vdm_sc_item_02_uuid preserving type)` |
+| `TranspRateDimnScaleItem03UUID` |  | |  | `cast(scale_item_key03 as /scmtms/vdm_sc_item_03_uuid preserving type)` |
+| `TranspRateDimnScaleItem04UUID` |  | |  | `cast(scale_item_key04 as /scmtms/vdm_sc_item_04_uuid preserving type)` |
+| `TransportationRateCurrency` |  | |  | `rate_curr` |
+| `TranspRateAmountInRateCrcy` |  | |  | `cast(cast( rate as abap.dec(31,6) ) * 10000 as /scmtms/vdm_rt_amt_in_rt_curr)` |
+| `_TransportationRateCurrency` | | ✓ | | |
+| `_TransportationRate` | | ✓ | | |
+| `_TransportationRateValidity` | | ✓ | | |
 
 ## Associations
 

@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `WithholdingTaxType` | `witht` |
-| key `WithholdingTaxCode` | `wt_withcd` |
-| `OfficialWhldgTaxCode` | `qscod` |
-| `WhldgTaxRelevantPercent` | `qproz` |
-| `WithholdingTaxPercent` | `qsatz` |
-| `WhldgTaxCalcFormulaIsUsed` | `xqfor` |
-| `Region` | `regio` |
-| `ProvincialTaxCode` | `fprcd` |
-| `WithholdingTaxIncomeType` | `qekar` |
-| `WithholdingTaxPostingRule` | `wt_posin` |
-| `WhldgTaxReferenceText` | `withcd2` |
-| `_Country` | *Association* |
-| `_CodeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `WithholdingTaxType` | ✓ | |  | `witht` |
+| `WithholdingTaxCode` | ✓ | |  | `wt_withcd` |
+| `OfficialWhldgTaxCode` |  | |  | `qscod` |
+| `WhldgTaxRelevantPercent` |  | |  | `qproz` |
+| `WithholdingTaxPercent` |  | |  | `qsatz` |
+| `WhldgTaxCalcFormulaIsUsed` |  | |  | `xqfor` |
+| `Region` |  | |  | `regio` |
+| `ProvincialTaxCode` |  | |  | `fprcd` |
+| `WithholdingTaxIncomeType` |  | |  | `qekar` |
+| `WithholdingTaxPostingRule` |  | |  | `wt_posin` |
+| `WhldgTaxReferenceText` |  | |  | `withcd2` |
+| `_Country` | | ✓ | | |
+| `_CodeText` | | ✓ | | |
 
 ## Associations
 

@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `PurchaseContract` |
-| key `PurchaseContractItem` | `PurchaseContractItem` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_ContractItem` | *Association* |
-| `_PurContract` | *Association* |
-| `_PurContrItemCndnAmount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_ContractItem` | | ✓ | | |
+| `_PurContract` | | ✓ | | |
+| `_PurContrItemCndnAmount` | | ✓ | | |
 
 ## Source Code
 

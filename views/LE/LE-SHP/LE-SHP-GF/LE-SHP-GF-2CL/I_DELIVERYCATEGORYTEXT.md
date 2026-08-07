@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryCategory` | `SUBSTRING(domvalue_l, 1, 2)` |
-| key `Language` | `ddlanguage` |
-| `DeliveryCategoryName` | `ddtext` |
-| `_DeliveryCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryCategory` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 2)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `DeliveryCategoryName` |  | |  | `ddtext` |
+| `_DeliveryCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

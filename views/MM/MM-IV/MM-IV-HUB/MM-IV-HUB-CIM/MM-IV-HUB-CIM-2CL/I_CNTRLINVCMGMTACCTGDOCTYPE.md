@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingDocumentType` | `cast(DocumentTypeText.AccountingDocumentType as cimic_accounting_document_type)` |
-| key `LanguageISOCode` | `cast(DocumentTypeText._Language.LanguageISOCode as cimic_nte_langu)` |
-| `AccountingDocumentTypeName` | `cast(DocumentTypeText.AccountingDocumentTypeName as cimic_acct_document_type_name)` |
-| `AssetAccountPostingIsAllowed` | `cast(t003.xkoaa as cimic_posting_to_asset_account )` |
-| `MatlAcctPostingIsAllowed` | `cast(t003.xkoam as cimic_posting_to_material_acct )` |
-| `GLAccountPostingIsAllowed` | `cast(t003.xkoas as cimic_posting_to_gl_account )` |
-| `AuthorizationGroup` | `t003.brgru` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingDocumentType` | ✓ | |  | `cast(DocumentTypeText.AccountingDocumentType as cimic_accounting_document_type)` |
+| `LanguageISOCode` | ✓ | |  | `cast(DocumentTypeText._Language.LanguageISOCode as cimic_nte_langu)` |
+| `AccountingDocumentTypeName` |  | |  | `cast(DocumentTypeText.AccountingDocumentTypeName as cimic_acct_document_type_name)` |
+| `AssetAccountPostingIsAllowed` |  | |  | `cast(t003.xkoaa as cimic_posting_to_asset_account )` |
+| `MatlAcctPostingIsAllowed` |  | |  | `cast(t003.xkoam as cimic_posting_to_material_acct )` |
+| `GLAccountPostingIsAllowed` |  | |  | `cast(t003.xkoas as cimic_posting_to_gl_account )` |
+| `AuthorizationGroup` |  | |  | `brgru` |
 
 ## Source Code
 

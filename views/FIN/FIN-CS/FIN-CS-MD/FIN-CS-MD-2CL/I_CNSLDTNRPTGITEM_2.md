@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `_CnsldtnFSItem_2.ConsolidationChartOfAccounts` |
-| key `ConsolidationReportingItem` | `cast ( _CnsldtnFSItem_2.CnsldtnFinancialStatementItem as fincs_reportingitem preserving type )` |
-| `CreationDateTime` | `_CnsldtnFSItem_2.CreationDateTime` |
-| `_Text` | *Association* |
-| `_HierarchyNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_CnsldtnFSItem_2` | `ConsolidationChartOfAccounts` |
+| `ConsolidationReportingItem` | ✓ | |  | `cast ( _CnsldtnFSItem_2.CnsldtnFinancialStatementItem as fincs_reportingitem preserving type )` |
+| `CreationDateTime` |  | | `_CnsldtnFSItem_2` | `CreationDateTime` |
+| `_Text` | | ✓ | | |
+| `_HierarchyNode` | | ✓ | | |
 
 ## Associations
 

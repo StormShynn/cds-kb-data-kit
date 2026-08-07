@@ -31,58 +31,58 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccount` | `skb1.saknr` |
-| key `CompanyCode` | `skb1.bukrs` |
-| `AuthorizationGroup` | `skb1.begru` |
-| `AccountingClerk` | `skb1.busab` |
-| `LastInterestCalcRunDate` | `skb1.datlz` |
-| `CreationDate` | `skb1.erdat` |
-| `CreatedByUser` | `skb1.ernam` |
-| `LastChangeDateTime` | `cast(case when skb1.last_changed_ts = 0 then cast( '19700101010101' as timestamp ) else skb1.last_changed_ts end as timestamp)` |
-| `PlanningLevel` | `skb1.fdlev` |
-| `HouseBank` | `skb1.hbkid` |
-| `HouseBankAccount` | `skb1.hktid` |
-| `ExchRateDifferencesAccountDetn` | `skb1.kdfsl` |
-| `ReconciliationAccountType` | `skb1.mitkz` |
-| `TaxCategory` | `skb1.mwskz` |
-| `InterestCalculationCode` | `skb1.vzskz` |
-| `GLAccountCurrency` | `skb1.waers` |
-| `ReconciliationAcctIsChangeable` | `skb1.xmitk` |
-| `IsManagedExternally` | `cast( substring(skb1.wmeth, 1, 1) as fac_gl_acct_extern_ind )` |
-| `IsAutomaticallyPosted` | `skb1.xintb` |
-| `LineItemDisplayIsEnabled` | `skb1.xkres` |
-| `SupplementIsAllowed` | `skb1.xnkon` |
-| `IsOpenItemManaged` | `skb1.xopvw` |
-| `InterestCalculationDate` | `skb1.zindt` |
-| `IntrstCalcFrequencyInMonths` | `skb1.zinrt` |
-| `AcctgDocItmDisplaySequenceRule` | `skb1.zuawa` |
-| `AlternativeGLAccount` | `cast(skb1.altkt as fis_alternativeglaccount preserving type )` |
-| `JointVentureRecoveryCode` | `skb1.recid` |
-| `CommitmentItem` | `skb1.fipos` |
-| `CommitmentItemShortID` | `cast(skb1.fipos as fmis_ci_internalname preserving type)` |
-| `TaxCodeIsRequired` | `skb1.xmwno` |
-| `BalanceHasLocalCurrency` | `skb1.xsalh` |
-| `ValuationGroup` | `skb1.bewgp` |
-| `APARToleranceGroup` | `skb1.togru` |
-| `AccountIsBlockedForPosting` | `skb1.xspeb` |
-| `AccountIsMarkedForDeletion` | `skb1.xloeb` |
-| `ClearingIsLedgerGroupSpecific` | `skb1.xlgclr` |
-| `CashPlanningGroup` | `skb1.fdgrv` |
-| `IsCashFlowAccount` | `skb1.xgkon` |
-| `GLAcctInflationKey` | `skb1.infky` |
-| `FieldStatusGroup` | `skb1.fstag` |
-| `MultiCurrencyAccountingCode` | `skb1.mcakey` |
-| `IsExtendedOpenItemManaged` | `skb1.x_uj_clr` |
-| `_CompanyCode` | *Association* |
-| `_Text` | *Association* |
-| `_User` | *Association* |
-| `_Reconciliationaccttype` | *Association* |
-| `_JointVentureRecovery` | *Association* |
-| `_MultiCurrencyAccounting` | *Association* |
-| `_TaxCategory` | *Association* |
-| `_GLAcctInCoCodeStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccount` | ✓ | |  | `saknr` |
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `AccountingClerk` |  | |  | `busab` |
+| `LastInterestCalcRunDate` |  | |  | `datlz` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `LastChangeDateTime` |  | |  | `cast(case when skb1.last_changed_ts = 0 then cast( '19700101010101' as timestamp ) else skb1.last_changed_ts end as timestamp)` |
+| `PlanningLevel` |  | |  | `fdlev` |
+| `HouseBank` |  | |  | `hbkid` |
+| `HouseBankAccount` |  | |  | `hktid` |
+| `ExchRateDifferencesAccountDetn` |  | |  | `kdfsl` |
+| `ReconciliationAccountType` |  | |  | `mitkz` |
+| `TaxCategory` |  | |  | `mwskz` |
+| `InterestCalculationCode` |  | |  | `vzskz` |
+| `GLAccountCurrency` |  | |  | `waers` |
+| `ReconciliationAcctIsChangeable` |  | |  | `xmitk` |
+| `IsManagedExternally` |  | |  | `cast( substring(skb1.wmeth, 1, 1) as fac_gl_acct_extern_ind )` |
+| `IsAutomaticallyPosted` |  | |  | `xintb` |
+| `LineItemDisplayIsEnabled` |  | |  | `xkres` |
+| `SupplementIsAllowed` |  | |  | `xnkon` |
+| `IsOpenItemManaged` |  | |  | `xopvw` |
+| `InterestCalculationDate` |  | |  | `zindt` |
+| `IntrstCalcFrequencyInMonths` |  | |  | `zinrt` |
+| `AcctgDocItmDisplaySequenceRule` |  | |  | `zuawa` |
+| `AlternativeGLAccount` |  | |  | `cast(skb1.altkt as fis_alternativeglaccount preserving type )` |
+| `JointVentureRecoveryCode` |  | |  | `recid` |
+| `CommitmentItem` |  | |  | `fipos` |
+| `CommitmentItemShortID` |  | |  | `cast(skb1.fipos as fmis_ci_internalname preserving type)` |
+| `TaxCodeIsRequired` |  | |  | `xmwno` |
+| `BalanceHasLocalCurrency` |  | |  | `xsalh` |
+| `ValuationGroup` |  | |  | `bewgp` |
+| `APARToleranceGroup` |  | |  | `togru` |
+| `AccountIsBlockedForPosting` |  | |  | `xspeb` |
+| `AccountIsMarkedForDeletion` |  | |  | `xloeb` |
+| `ClearingIsLedgerGroupSpecific` |  | |  | `xlgclr` |
+| `CashPlanningGroup` |  | |  | `fdgrv` |
+| `IsCashFlowAccount` |  | |  | `xgkon` |
+| `GLAcctInflationKey` |  | |  | `infky` |
+| `FieldStatusGroup` |  | |  | `fstag` |
+| `MultiCurrencyAccountingCode` |  | |  | `mcakey` |
+| `IsExtendedOpenItemManaged` |  | |  | `x_uj_clr` |
+| `_CompanyCode` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_User` | | ✓ | | |
+| `_Reconciliationaccttype` | | ✓ | | |
+| `_JointVentureRecovery` | | ✓ | | |
+| `_MultiCurrencyAccounting` | | ✓ | | |
+| `_TaxCategory` | | ✓ | | |
+| `_GLAcctInCoCodeStatus` | | ✓ | | |
 
 ## Associations
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IT_ElectronicDocRejectionCode` | `IT_ElectronicDocRejectionCode` |
-| key `Language` | `Language` |
-| `IT_ElectronicDocRejectCodeText` | `IT_ElectronicDocRejectCodeText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IT_ElectronicDocRejectionCode` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `IT_ElectronicDocRejectCodeText` |  | |  |  |
 
 ## Source Code
 

@@ -28,35 +28,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Branch` | `Branch` |
-| key `CompanyCode` | `CompanyCode` |
-| `TaxNumber1` | `TaxNumber1` |
-| `VATRegistration` | `TaxNumber2` |
-| `CompanyName` | `CompanyName` |
-| `ReportingCompany` | `CorporationNumber` |
-| `TaxInvoiceRepresentativeName` | `TaxInvoiceRepresentativeName` |
-| `IndustryType` | `IndustryType` |
-| `BusinessType` | `BusinessType` |
-| `DistrictTaxOffice` | `DistrictTaxOffice` |
-| `BusinessPlaceName` | `BusinessPlaceName` |
-| `PostalCode` | `PostalCode` |
-| `AddressName` | `cast( AddressName as idkr_addressname)` |
-| `PhoneNumber` | `PhoneNumber` |
-| `CityName` | `CityName` |
-| `StreetName` | `StreetName` |
-| `HouseNumber` | `HouseNumber` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `ResponsibleDepartmentName` | `ResponsibleDepartmentName` |
-| `ResponsiblePersonName` | `ResponsiblePersonName` |
-| `ResponsiblePersonEmailAddress` | `ResponsiblePersonEmailAddress` |
-| `NatlTaxServiceRegnNumber` | `NatlTaxServiceRegnNumber` |
-| `TaxInvoiceRepresentativeName1` | `TaxInvoiceRepresentativeName1` |
-| `IndustryTypeList` | `IndustryTypeList` |
-| `BusinessTypeList` | `BusinessTypeList` |
-| `MobilePhoneNumber` | `MobilePhoneNumber` |
-| `KR_TaxBusinessCode` | `KR_TaxBusinessCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Branch` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `TaxNumber1` |  | |  |  |
+| `VATRegistration` |  | |  | `TaxNumber2` |
+| `CompanyName` |  | |  |  |
+| `ReportingCompany` |  | |  | `CorporationNumber` |
+| `TaxInvoiceRepresentativeName` |  | |  |  |
+| `IndustryType` |  | |  |  |
+| `BusinessType` |  | |  |  |
+| `DistrictTaxOffice` |  | |  |  |
+| `BusinessPlaceName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `AddressName` |  | |  | `cast( AddressName as idkr_addressname)` |
+| `PhoneNumber` |  | |  |  |
+| `CityName` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `ResponsibleDepartmentName` |  | |  |  |
+| `ResponsiblePersonName` |  | |  |  |
+| `ResponsiblePersonEmailAddress` |  | |  |  |
+| `NatlTaxServiceRegnNumber` |  | |  |  |
+| `TaxInvoiceRepresentativeName1` |  | |  |  |
+| `IndustryTypeList` |  | |  |  |
+| `BusinessTypeList` |  | |  |  |
+| `MobilePhoneNumber` |  | |  |  |
+| `KR_TaxBusinessCode` |  | |  |  |
 
 ## Source Code
 

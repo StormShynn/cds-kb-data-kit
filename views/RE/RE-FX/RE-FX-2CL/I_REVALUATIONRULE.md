@@ -27,42 +27,42 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REValuationRule` | `cerule` |
-| `AccountingPrinciple` | `accprinciple` |
-| `REValuationType` | `cetype` |
-| `REIsValuationPerformAutomatic` | `cetypeautoeval` |
-| `REIsValuationCompleteAutomatic` | `cetypeautocomplete` |
-| `REValuationConditionGroup` | `cdgroup` |
-| `REValuationLinearType` | `straightlinetype` |
-| `REFlowTypeLinear` | `flowtypestraightlining` |
-| `REFlowTypeLinearNegative` | `flowtypestraightlining_ne` |
-| `REFlowTypeInterest` | `flowtypeinterest` |
-| `REFlowTypeClearing` | `flowtypepayment` |
-| `REFlowTypeRepayment` | `flowtyperepayment` |
-| `REFlowTypeAsset` | `flowtypeacquisition` |
-| `REFlowTypeDepreciation` | `flowtypedepreciation` |
-| `REValuationClassification` | `cesltype` |
-| `REIsCndnAndRmngShareLinearize` | `ceisslrest` |
-| `REValuationIntegrationType` | `integrationtype` |
-| `REIsExclForNewAssgmt` | `cuexcludeassign` |
-| `REIsValuationRuleInformational` | `isinformationalrule` |
-| `InterestCalculationMethod` | `interestcalcmethod` |
-| `_AccountingPrinciple` | *Association* |
-| `_REValuationType` | *Association* |
-| `_REValuationConditionGrp` | *Association* |
-| `_REValuationLinearType` | *Association* |
-| `_REFlowTypeLinear` | *Association* |
-| `_REFlowTypeInterest` | *Association* |
-| `_REFlowTypeLinearNegative` | *Association* |
-| `_REFlowTypeClearing` | *Association* |
-| `_REFlowTypeRepayment` | *Association* |
-| `_REFlowTypeAsset` | *Association* |
-| `_REFlowTypeDepreciation` | *Association* |
-| `_REValuationClassification` | *Association* |
-| `_REValuationIntegType` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REValuationRule` | ✓ | |  | `cerule` |
+| `AccountingPrinciple` |  | |  | `accprinciple` |
+| `REValuationType` |  | |  | `cetype` |
+| `REIsValuationPerformAutomatic` |  | |  | `cetypeautoeval` |
+| `REIsValuationCompleteAutomatic` |  | |  | `cetypeautocomplete` |
+| `REValuationConditionGroup` |  | |  | `cdgroup` |
+| `REValuationLinearType` |  | |  | `straightlinetype` |
+| `REFlowTypeLinear` |  | |  | `flowtypestraightlining` |
+| `REFlowTypeLinearNegative` |  | |  | `flowtypestraightlining_ne` |
+| `REFlowTypeInterest` |  | |  | `flowtypeinterest` |
+| `REFlowTypeClearing` |  | |  | `flowtypepayment` |
+| `REFlowTypeRepayment` |  | |  | `flowtyperepayment` |
+| `REFlowTypeAsset` |  | |  | `flowtypeacquisition` |
+| `REFlowTypeDepreciation` |  | |  | `flowtypedepreciation` |
+| `REValuationClassification` |  | |  | `cesltype` |
+| `REIsCndnAndRmngShareLinearize` |  | |  | `ceisslrest` |
+| `REValuationIntegrationType` |  | |  | `integrationtype` |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
+| `REIsValuationRuleInformational` |  | |  | `isinformationalrule` |
+| `InterestCalculationMethod` |  | |  | `interestcalcmethod` |
+| `_AccountingPrinciple` | | ✓ | | |
+| `_REValuationType` | | ✓ | | |
+| `_REValuationConditionGrp` | | ✓ | | |
+| `_REValuationLinearType` | | ✓ | | |
+| `_REFlowTypeLinear` | | ✓ | | |
+| `_REFlowTypeInterest` | | ✓ | | |
+| `_REFlowTypeLinearNegative` | | ✓ | | |
+| `_REFlowTypeClearing` | | ✓ | | |
+| `_REFlowTypeRepayment` | | ✓ | | |
+| `_REFlowTypeAsset` | | ✓ | | |
+| `_REFlowTypeDepreciation` | | ✓ | | |
+| `_REValuationClassification` | | ✓ | | |
+| `_REValuationIntegType` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectUUID` | `EnterpriseProjectElement.ProjectUUID` |
-| key `ProjectElementUUID` | `EnterpriseProjectElement.ProjectElementUUID` |
-| `Project` | `EnterpriseProjectElement._Project.Project` |
-| `ProjectElement` | `EnterpriseProjectElement.ProjectElement` |
-| `ProjectElementDescription` | `EnterpriseProjectElement.ProjectElementDescription` |
-| `PlannedStartDate` | `EnterpriseProjectElement.PlannedStartDate` |
-| `PlannedEndDate` | `EnterpriseProjectElement.PlannedEndDate` |
-| `EntProjectElementType` | `EnterpriseProjectElement.EntProjectElementType` |
-| `EntProjElmntDeliverableType` | `EntProjElmntDlvbrlRevenue.EntProjElmntDeliverableType` |
-| `EntProjElmntDlvbrlQuantity` | `EntProjElmntDlvbrlRevenue.EntProjElmntDlvbrlQuantity` |
-| `EntProjElmntDlvbrlQuantityUnit` | `EntProjElmntDlvbrlRevenue.EntProjElmntDlvbrlQuantityUnit` |
-| `EntProjElmntDlvbrlRevnAmount` | `EntProjElmntDlvbrlRevenue.EntProjElmntDlvbrlRevnAmount` |
-| `PlndEffortQty` | `EntPrjElmntWrkDmndPlndEfrts.PlndEffortQty` |
-| `UnitOfMeasure` | `EntPrjElmntWrkDmndPlndEfrts.UnitOfMeasure` |
-| `PlndCostAmt` | `EntPrjElmntDmndPlndCostRevn.PlndCostAmt` |
-| `PlndRevnAmt` | `EntPrjElmntDmndPlndCostRevn.PlndRevnAmt` |
-| `Currency` | `EnterpriseProjectElement._Project.Currency` |
-| `_Project` | `EnterpriseProjectElement._Project` |
-| `_EnterpriseProjectForUser` | `EnterpriseProjectElement._EnterpriseProjectForUser` |
-| `_EntProjElmntDlvbrlTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  |  |
+| `ProjectElementUUID` | ✓ | |  |  |
+| `Project` |  | |  |  |
+| `ProjectElement` |  | |  |  |
+| `ProjectElementDescription` |  | |  |  |
+| `PlannedStartDate` |  | |  |  |
+| `PlannedEndDate` |  | |  |  |
+| `EntProjectElementType` |  | |  |  |
+| `EntProjElmntDeliverableType` |  | |  |  |
+| `EntProjElmntDlvbrlQuantity` |  | |  |  |
+| `EntProjElmntDlvbrlQuantityUnit` |  | |  |  |
+| `EntProjElmntDlvbrlRevnAmount` |  | |  |  |
+| `PlndEffortQty` |  | |  |  |
+| `UnitOfMeasure` |  | |  |  |
+| `PlndCostAmt` |  | |  |  |
+| `PlndRevnAmt` |  | |  |  |
+| `Currency` |  | |  |  |
+| `_Project` |  | |  |  |
+| `_EnterpriseProjectForUser` |  | |  |  |
+| `_EntProjElmntDlvbrlTypeText` | | ✓ | | |
 
 ## Associations
 

@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TrdClassfctnNmbrSchm` | `TrdClassfctnNmbrSchm` |
-| key `CustomsTariffNumber` | `CustomsTariffNumber` |
-| `TrdClassfctnNmbrSchmCntnt` | `TrdClassfctnNmbrSchmCntnt` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `TrdClassfctnNmbrForOfclDesc` | `TrdClassfctnNmbrForOfclDesc` |
-| `TrdClassfctnNmbrForCnctntdDesc` | `TrdClassfctnNmbrForCnctntdDesc` |
-| `UnitOfMeasureSystem` | `UnitOfMeasureSystem` |
-| `CustomsUnitOfMeasure` | `CustomsUnitOfMeasure` |
-| `SecondCustomsUnitOfMeasure` | `SecondCustomsUnitOfMeasure` |
-| `SupplementaryUnit` | `SupplementaryUnit` |
-| `SecondSupplementaryUnit` | `SecondSupplementaryUnit` |
-| `_Date` | *Association* |
-| `_OfficialDesc` | *Association* |
-| `_CnctntdDesc` | *Association* |
-| `_TrdClassfctnNmbrSchmCntnt` | *Association* |
-| `_TrdClassfctnNmbrSchm` | *Association* |
-| `_SupplementaryUnit` | *Association* |
-| `_SecondSupplementaryUnit` | *Association* |
-| `_CustomsUnitOfMeasure` | *Association* |
-| `_SecondCustomsUnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TrdClassfctnNmbrSchm` | ✓ | |  |  |
+| `CustomsTariffNumber` | ✓ | |  |  |
+| `TrdClassfctnNmbrSchmCntnt` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `TrdClassfctnNmbrForOfclDesc` |  | |  |  |
+| `TrdClassfctnNmbrForCnctntdDesc` |  | |  |  |
+| `UnitOfMeasureSystem` |  | |  |  |
+| `CustomsUnitOfMeasure` |  | |  |  |
+| `SecondCustomsUnitOfMeasure` |  | |  |  |
+| `SupplementaryUnit` |  | |  |  |
+| `SecondSupplementaryUnit` |  | |  |  |
+| `_Date` | | ✓ | | |
+| `_OfficialDesc` | | ✓ | | |
+| `_CnctntdDesc` | | ✓ | | |
+| `_TrdClassfctnNmbrSchmCntnt` | | ✓ | | |
+| `_TrdClassfctnNmbrSchm` | | ✓ | | |
+| `_SupplementaryUnit` | | ✓ | | |
+| `_SecondSupplementaryUnit` | | ✓ | | |
+| `_CustomsUnitOfMeasure` | | ✓ | | |
+| `_SecondCustomsUnitOfMeasure` | | ✓ | | |
 
 ## Associations
 

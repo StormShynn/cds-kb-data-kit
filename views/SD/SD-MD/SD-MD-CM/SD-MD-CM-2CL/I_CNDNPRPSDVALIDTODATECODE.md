@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrcgCndnPrpsdValidToDateCode` | `cast ( substring( domvalue_l, 1, 1 ) as datvo )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrcgCndnPrpsdValidToDateCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as datvo )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

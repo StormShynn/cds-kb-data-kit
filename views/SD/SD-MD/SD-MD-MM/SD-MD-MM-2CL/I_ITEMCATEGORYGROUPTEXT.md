@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ItemCategoryGroup` | `mtpos` |
-| key `Language` | `spras` |
-| `ItemCategoryGroupName` | `bezei` |
-| `_ItemCategoryGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ItemCategoryGroup` | ✓ | |  | `mtpos` |
+| `Language` | ✓ | |  | `spras` |
+| `ItemCategoryGroupName` |  | |  | `bezei` |
+| `_ItemCategoryGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

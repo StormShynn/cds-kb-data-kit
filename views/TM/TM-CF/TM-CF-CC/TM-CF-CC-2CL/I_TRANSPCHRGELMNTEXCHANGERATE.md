@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChrgExchangeRateUUID` | `cast(db_key as /scmtms/vdm_tcc_exch_rate_uuid preserving type )` |
-| `TransportationChargeUUID` | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type )` |
-| `TranspChargeElementUUID` | `cast(parent_key as /scmtms/vdm_chrg_element_uuid preserving type )` |
-| `SourceCurrency` | `cast(unitcurncy as fcurr_curr preserving type )` |
-| `TargetCurrency` | `cast(quotedcurncy as tcurr_curr preserving type )` |
-| `TranspChrgExchangeRate` | `rate` |
-| `TranspExchRateIsManuallyChgd` | `cast(fixed as transpexchrateismanuallychgd preserving type )` |
-| `TranspChrgExchangeRateType` | `exchgratetco05_i` |
-| `ExchangeRateDate` | `quotedate` |
-| `TranspExchRateDateIsMnllyChgd` | `fix_exchrate_date` |
-| `_TransportationCharge` | *Association* |
-| `_TranspChrgExchangeRateType` | *Association* |
-| `_SourceCurrency` | *Association* |
-| `_TargetCurrency` | *Association* |
-| `_TransportationChargeElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChrgExchangeRateUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tcc_exch_rate_uuid preserving type )` |
+| `TransportationChargeUUID` |  | |  | `cast(root_key as /scmtms/vdm_transpcharge_uuid preserving type )` |
+| `TranspChargeElementUUID` |  | |  | `cast(parent_key as /scmtms/vdm_chrg_element_uuid preserving type )` |
+| `SourceCurrency` |  | |  | `cast(unitcurncy as fcurr_curr preserving type )` |
+| `TargetCurrency` |  | |  | `cast(quotedcurncy as tcurr_curr preserving type )` |
+| `TranspChrgExchangeRate` |  | |  | `rate` |
+| `TranspExchRateIsManuallyChgd` |  | |  | `cast(fixed as transpexchrateismanuallychgd preserving type )` |
+| `TranspChrgExchangeRateType` |  | |  | `exchgratetco05_i` |
+| `ExchangeRateDate` |  | |  | `quotedate` |
+| `TranspExchRateDateIsMnllyChgd` |  | |  | `fix_exchrate_date` |
+| `_TransportationCharge` | | ✓ | | |
+| `_TranspChrgExchangeRateType` | | ✓ | | |
+| `_SourceCurrency` | | ✓ | | |
+| `_TargetCurrency` | | ✓ | | |
+| `_TransportationChargeElement` | | ✓ | | |
 
 ## Associations
 

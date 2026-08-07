@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcInternalID` | `CharcRestriction.CharcInternalID` |
-| key `ClassType` | `CharcRestriction.ClassType` |
-| `_ClassType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  |  |
+| `ClassType` | ✓ | |  |  |
+| `_ClassType` | | ✓ | | |
 
 ## Associations
 

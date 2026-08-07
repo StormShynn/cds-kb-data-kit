@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `tdwa.dokar` |
-| `ConfigDeprecationCode` | `configdeprecationcode` |
-| `DocInfoRecdNumberAssignType` | `numvg` |
-| `DocInfoRecdInternalNumberRange` | `inumnr` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |
+| `DocInfoRecdNumberAssignType` |  | |  | `numvg` |
+| `DocInfoRecdInternalNumberRange` |  | |  | `inumnr` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

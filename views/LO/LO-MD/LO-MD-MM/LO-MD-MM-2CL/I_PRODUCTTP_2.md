@@ -30,147 +30,147 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| `ProductType` | `ProductType` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `CrossPlantStatus` | `CrossPlantStatus` |
-| `CrossPlantStatusValidityDate` | `CrossPlantStatusValidityDate` |
-| `ProductOldID` | `ProductOldID` |
-| `GrossWeight` | `GrossWeight` |
-| `WeightUnit` | `WeightUnit` |
-| `ProductGroup` | `ProductGroup` |
-| `BaseUnit` | `BaseUnit` |
-| `ItemCategoryGroup` | `ItemCategoryGroup` |
-| `NetWeight` | `NetWeight` |
-| `Division` | `Division` |
-| `VolumeUnit` | `VolumeUnit` |
-| `ProductVolume` | `ProductVolume` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `ANPCode` | `ANPCode` |
-| `SizeOrDimensionText` | `SizeOrDimensionText` |
-| `IndustryStandardName` | `IndustryStandardName` |
-| `ProductStandardID` | `ProductStandardID` |
-| `InternationalArticleNumberCat` | `InternationalArticleNumberCat` |
-| `ProductIsConfigurable` | `ProductIsConfigurable` |
-| `IsBatchManagementRequired` | `IsBatchManagementRequired` |
-| `ExternalProductGroup` | `ExternalProductGroup` |
-| `CrossPlantConfigurableProduct` | `CrossPlantConfigurableProduct` |
-| `SerialNoExplicitnessLevel` | `SerialNoExplicitnessLevel` |
-| `IsApprovedBatchRecordReqd` | `IsApprovedBatchRecordReqd` |
-| `HandlingIndicator` | `HandlingIndicator` |
-| `WarehouseProductGroup` | `WarehouseProductGroup` |
-| `WarehouseStorageCondition` | `WarehouseStorageCondition` |
-| `StandardHandlingUnitType` | `StandardHandlingUnitType` |
-| `SerialNumberProfile` | `SerialNumberProfile` |
-| `IsPilferable` | `IsPilferable` |
-| `IsRelevantForHzdsSubstances` | `IsRelevantForHzdsSubstances` |
-| `QuarantinePeriod` | `QuarantinePeriod` |
-| `TimeUnitForQuarantinePeriod` | `TimeUnitForQuarantinePeriod` |
-| `QualityInspectionGroup` | `QualityInspectionGroup` |
-| `HandlingUnitType` | `HandlingUnitType` |
-| `HasVariableTareWeight` | `HasVariableTareWeight` |
-| `MaximumPackagingLength` | `MaximumPackagingLength` |
-| `MaximumPackagingWidth` | `MaximumPackagingWidth` |
-| `MaximumPackagingHeight` | `MaximumPackagingHeight` |
-| `MaximumCapacity` | `MaximumCapacity` |
-| `OvercapacityTolerance` | `OvercapacityTolerance` |
-| `UnitForMaxPackagingDimensions` | `UnitForMaxPackagingDimensions` |
-| `BaseUnitSpecificProductLength` | `BaseUnitSpecificProductLength` |
-| `BaseUnitSpecificProductWidth` | `BaseUnitSpecificProductWidth` |
-| `BaseUnitSpecificProductHeight` | `BaseUnitSpecificProductHeight` |
-| `ProductMeasurementUnit` | `ProductMeasurementUnit` |
-| `ArticleCategory` | `ArticleCategory` |
-| `IndustrySector` | `IndustrySector` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangeTime` | `LastChangeTime` |
-| `DangerousGoodsIndProfile` | `DangerousGoodsIndProfile` |
-| `ProductDocumentChangeNumber` | `ProductDocumentChangeNumber` |
-| `ProductDocumentPageCount` | `ProductDocumentPageCount` |
-| `ProductDocumentPageNumber` | `ProductDocumentPageNumber` |
-| `DocumentIsCreatedByCAD` | `DocumentIsCreatedByCAD` |
-| `ProductionOrInspectionMemoTxt` | `ProductionOrInspectionMemoTxt` |
-| `ProductionMemoPageFormat` | `ProductionMemoPageFormat` |
-| `ProductIsHighlyViscous` | `ProductIsHighlyViscous` |
-| `TransportIsInBulk` | `TransportIsInBulk` |
-| `ProdEffctyParamValsAreAssigned` | `ProdEffctyParamValsAreAssigned` |
-| `ProdIsEnvironmentallyRelevant` | `ProdIsEnvironmentallyRelevant` |
-| `LaboratoryOrDesignOffice` | `LaboratoryOrDesignOffice` |
-| `PackagingProductGroup` | `PackagingProductGroup` |
-| `PackingReferenceProduct` | `PackingReferenceProduct` |
-| `BasicProduct` | `BasicProduct` |
-| `ProductDocumentNumber` | `ProductDocumentNumber` |
-| `ProductDocumentVersion` | `ProductDocumentVersion` |
-| `ProductDocumentType` | `ProductDocumentType` |
-| `ProductDocumentPageFormat` | `ProductDocumentPageFormat` |
-| `ProdChmlCmplncRelevanceCode` | `ProdChmlCmplncRelevanceCode` |
-| `DiscountInKindEligibility` | `DiscountInKindEligibility` |
-| `ProdCompetitorCustomerNumber` | `ProdCompetitorCustomerNumber` |
-| `ProductHierarchy` | `ProductHierarchy` |
-| `ProdAllocDetnProcedure` | `ProdAllocDetnProcedure` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `RetailArticleBrand` | `RetailArticleBrand` |
-| `ProductValidStartDate` | `ProductValidStartDate` |
-| `ContentUnit` | `ContentUnit` |
-| `ProductNetContentQuantity` | `ProductNetContentQuantity` |
-| `ProductGrossContentQuantity` | `ProductGrossContentQuantity` |
-| `ProductValidEndDate` | `ProductValidEndDate` |
-| `AssortmentListType` | `AssortmentListType` |
-| `TextilePartsIsWithAnimalOrigin` | `TextilePartsIsWithAnimalOrigin` |
-| `ProductSeasonUsageCategory` | `ProductSeasonUsageCategory` |
-| `BillOfMaterialIsForEmpties` | `BillOfMaterialIsForEmpties` |
-| `ServiceAgreement` | `ServiceAgreement` |
-| `ConsumptionValueCategory` | `ConsumptionValueCategory` |
-| `GoodsIssueUnit` | `GoodsIssueUnit` |
-| `RegionOfOrigin` | `RegionOfOrigin` |
-| `ValuationClass` | `ValuationClass` |
-| `SalesUnit` | `SalesUnit` |
-| `ProductManufacturerNumber` | `ProductManufacturerNumber` |
-| `ManufacturerNumber` | `ManufacturerNumber` |
-| `ManufacturerPartProfile` | `ManufacturerPartProfile` |
-| `OwnInventoryManagedProduct` | `OwnInventoryManagedProduct` |
-| `_ProductType` | `_ProductType_1` |
-| `_ProductDescription` | *Association* |
-| `_ProductUnitOfMeasure` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_ProductSalesDelivery` | *Association* |
-| `_ProductSales` | *Association* |
-| `_ProductProcurement` | *Association* |
-| `_ProductQualityManagement` | *Association* |
-| `_ProductValuation` | *Association* |
-| `_ProductStorage` | *Association* |
-| `_ProductEWMWarehouse` | *Association* |
-| `_ProductChangeMaster` | *Association* |
-| `_ProductBasicText` | *Association* |
-| `_ProductInspectionText` | *Association* |
-| `_ProductPurchaseOrderText` | *Association* |
-| `_ProductInternalComment` | *Association* |
-| `_ProductGroup_2` | *Association* |
-| `_CountryOfOrigin` | *Association* |
-| `_ValuationClass` | *Association* |
-| `_Brand` | *Association* |
-| `_IndustrySector` | *Association* |
-| `_ConsumptionValueCategoryText` | *Association* |
-| `_ProductStatusText` | *Association* |
-| `_IntArticleNumberText` | *Association* |
-| `_ExtProdGrpText` | *Association* |
-| `_SerialNoExplicitnessLevelTxt` | *Association* |
-| `_ChemicalComplianceRlvtText` | *Association* |
-| `_ArticleCategoryText` | *Association* |
-| `_SalesUnitText` | *Association* |
-| `_ProductMeasurementUnit` | *Association* |
-| `_ContentUnit` | *Association* |
-| `_TimeUnitForQuarantinePeriod` | *Association* |
-| `_UnitForMaxPackaging` | *Association* |
-| `_GoodsIssueUnit` | *Association* |
-| `_ValuationClassText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ProductType` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `CrossPlantStatus` |  | |  |  |
+| `CrossPlantStatusValidityDate` |  | |  |  |
+| `ProductOldID` |  | |  |  |
+| `GrossWeight` |  | |  |  |
+| `WeightUnit` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ItemCategoryGroup` |  | |  |  |
+| `NetWeight` |  | |  |  |
+| `Division` |  | |  |  |
+| `VolumeUnit` |  | |  |  |
+| `ProductVolume` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `ANPCode` |  | |  |  |
+| `SizeOrDimensionText` |  | |  |  |
+| `IndustryStandardName` |  | |  |  |
+| `ProductStandardID` |  | |  |  |
+| `InternationalArticleNumberCat` |  | |  |  |
+| `ProductIsConfigurable` |  | |  |  |
+| `IsBatchManagementRequired` |  | |  |  |
+| `ExternalProductGroup` |  | |  |  |
+| `CrossPlantConfigurableProduct` |  | |  |  |
+| `SerialNoExplicitnessLevel` |  | |  |  |
+| `IsApprovedBatchRecordReqd` |  | |  |  |
+| `HandlingIndicator` |  | |  |  |
+| `WarehouseProductGroup` |  | |  |  |
+| `WarehouseStorageCondition` |  | |  |  |
+| `StandardHandlingUnitType` |  | |  |  |
+| `SerialNumberProfile` |  | |  |  |
+| `IsPilferable` |  | |  |  |
+| `IsRelevantForHzdsSubstances` |  | |  |  |
+| `QuarantinePeriod` |  | |  |  |
+| `TimeUnitForQuarantinePeriod` |  | |  |  |
+| `QualityInspectionGroup` |  | |  |  |
+| `HandlingUnitType` |  | |  |  |
+| `HasVariableTareWeight` |  | |  |  |
+| `MaximumPackagingLength` |  | |  |  |
+| `MaximumPackagingWidth` |  | |  |  |
+| `MaximumPackagingHeight` |  | |  |  |
+| `MaximumCapacity` |  | |  |  |
+| `OvercapacityTolerance` |  | |  |  |
+| `UnitForMaxPackagingDimensions` |  | |  |  |
+| `BaseUnitSpecificProductLength` |  | |  |  |
+| `BaseUnitSpecificProductWidth` |  | |  |  |
+| `BaseUnitSpecificProductHeight` |  | |  |  |
+| `ProductMeasurementUnit` |  | |  |  |
+| `ArticleCategory` |  | |  |  |
+| `IndustrySector` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `DangerousGoodsIndProfile` |  | |  |  |
+| `ProductDocumentChangeNumber` |  | |  |  |
+| `ProductDocumentPageCount` |  | |  |  |
+| `ProductDocumentPageNumber` |  | |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |
+| `ProductionOrInspectionMemoTxt` |  | |  |  |
+| `ProductionMemoPageFormat` |  | |  |  |
+| `ProductIsHighlyViscous` |  | |  |  |
+| `TransportIsInBulk` |  | |  |  |
+| `ProdEffctyParamValsAreAssigned` |  | |  |  |
+| `ProdIsEnvironmentallyRelevant` |  | |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |
+| `PackagingProductGroup` |  | |  |  |
+| `PackingReferenceProduct` |  | |  |  |
+| `BasicProduct` |  | |  |  |
+| `ProductDocumentNumber` |  | |  |  |
+| `ProductDocumentVersion` |  | |  |  |
+| `ProductDocumentType` |  | |  |  |
+| `ProductDocumentPageFormat` |  | |  |  |
+| `ProdChmlCmplncRelevanceCode` |  | |  |  |
+| `DiscountInKindEligibility` |  | |  |  |
+| `ProdCompetitorCustomerNumber` |  | |  |  |
+| `ProductHierarchy` |  | |  |  |
+| `ProdAllocDetnProcedure` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `RetailArticleBrand` |  | |  |  |
+| `ProductValidStartDate` |  | |  |  |
+| `ContentUnit` |  | |  |  |
+| `ProductNetContentQuantity` |  | |  |  |
+| `ProductGrossContentQuantity` |  | |  |  |
+| `ProductValidEndDate` |  | |  |  |
+| `AssortmentListType` |  | |  |  |
+| `TextilePartsIsWithAnimalOrigin` |  | |  |  |
+| `ProductSeasonUsageCategory` |  | |  |  |
+| `BillOfMaterialIsForEmpties` |  | |  |  |
+| `ServiceAgreement` |  | |  |  |
+| `ConsumptionValueCategory` |  | |  |  |
+| `GoodsIssueUnit` |  | |  |  |
+| `RegionOfOrigin` |  | |  |  |
+| `ValuationClass` |  | |  |  |
+| `SalesUnit` |  | |  |  |
+| `ProductManufacturerNumber` |  | |  |  |
+| `ManufacturerNumber` |  | |  |  |
+| `ManufacturerPartProfile` |  | |  |  |
+| `OwnInventoryManagedProduct` |  | |  |  |
+| `_ProductType` |  | |  | `_ProductType_1` |
+| `_ProductDescription` | | ✓ | | |
+| `_ProductUnitOfMeasure` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_ProductSalesDelivery` | | ✓ | | |
+| `_ProductSales` | | ✓ | | |
+| `_ProductProcurement` | | ✓ | | |
+| `_ProductQualityManagement` | | ✓ | | |
+| `_ProductValuation` | | ✓ | | |
+| `_ProductStorage` | | ✓ | | |
+| `_ProductEWMWarehouse` | | ✓ | | |
+| `_ProductChangeMaster` | | ✓ | | |
+| `_ProductBasicText` | | ✓ | | |
+| `_ProductInspectionText` | | ✓ | | |
+| `_ProductPurchaseOrderText` | | ✓ | | |
+| `_ProductInternalComment` | | ✓ | | |
+| `_ProductGroup_2` | | ✓ | | |
+| `_CountryOfOrigin` | | ✓ | | |
+| `_ValuationClass` | | ✓ | | |
+| `_Brand` | | ✓ | | |
+| `_IndustrySector` | | ✓ | | |
+| `_ConsumptionValueCategoryText` | | ✓ | | |
+| `_ProductStatusText` | | ✓ | | |
+| `_IntArticleNumberText` | | ✓ | | |
+| `_ExtProdGrpText` | | ✓ | | |
+| `_SerialNoExplicitnessLevelTxt` | | ✓ | | |
+| `_ChemicalComplianceRlvtText` | | ✓ | | |
+| `_ArticleCategoryText` | | ✓ | | |
+| `_SalesUnitText` | | ✓ | | |
+| `_ProductMeasurementUnit` | | ✓ | | |
+| `_ContentUnit` | | ✓ | | |
+| `_TimeUnitForQuarantinePeriod` | | ✓ | | |
+| `_UnitForMaxPackaging` | | ✓ | | |
+| `_GoodsIssueUnit` | | ✓ | | |
+| `_ValuationClassText` | | ✓ | | |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtProcessType` | `SettlmtProcessType` |
-| key `Language` | `Language` |
-| `SettlmtProcessTypeDesc` | `SettlmtProcessTypeDesc` |
-| `_Language` | *Association* |
-| `_SettlmtProcessType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtProcessType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SettlmtProcessTypeDesc` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_SettlmtProcessType` | | ✓ | | |
 
 ## Associations
 

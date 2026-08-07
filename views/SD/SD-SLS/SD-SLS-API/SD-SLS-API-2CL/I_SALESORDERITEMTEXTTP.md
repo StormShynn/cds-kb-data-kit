@@ -33,21 +33,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrderItemText.SalesOrder` |
-| key `SalesOrderItem` | `SalesOrderItemText.SalesOrderItem` |
-| key `Language` | `SalesOrderItemText.Language` |
-| key `LongTextID` | `SalesOrderItemText.LongTextID` |
-| `LongTextIDForEdit` | `SalesOrderItemText.LongTextIDForEdit` |
-| `LanguageForEdit` | `SalesOrderItemText.LanguageForEdit` |
-| `LongText` | `SalesOrderItemText.LongText` |
-| `SalesOrderType` | `SalesOrderItemText.SalesOrderType` |
-| `SalesOrganization` | `SalesOrderItemText.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderItemText.DistributionChannel` |
-| `OrganizationDivision` | `SalesOrderItemText.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
 
 ## Source Code
 

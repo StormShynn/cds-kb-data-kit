@@ -29,59 +29,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountAssignmentNumber` | `AccountAssignmentNumber` |
-| key `PurchaseContractItem` | `PurchaseContractItem` |
-| key `PurchaseContract` | `PurchaseContract` |
-| `CostCenter` | `CostCenter` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `Quantity` | `Quantity` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `MultipleAcctAssgmtDistrPercent` | `MultipleAcctAssgmtDistrPercent` |
-| `PurgDocNetAmount` | `PurgDocNetAmount` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `IsDeleted` | `IsDeleted` |
-| `GLAccount` | `GLAccount` |
-| `BusinessArea` | `BusinessArea` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `FixedAsset` | `FixedAsset` |
-| `OrderID` | `OrderID` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `ControllingArea` | `ControllingArea` |
-| `CostObject` | `CostObject` |
-| `ProfitCenter` | `ProfitCenter` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSDescription` | `WBSDescription` |
-| `ProjectNetworkInternalID` | `ProjectNetworkInternalID` |
-| `CommitmentItemShortID` | `CommitmentItemShortID` |
-| `FundsCenter` | `FundsCenter` |
-| `Fund` | `Fund` |
-| `FunctionalArea` | `FunctionalArea` |
-| `LastChangedDate` | `LastChangedDate` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `IsFinallyInvoiced` | `IsFinallyInvoiced` |
-| `NetworkActivityInternalID` | `NetworkActivityInternalID` |
-| `PartnerAccountNumber` | `PartnerAccountNumber` |
-| `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `SettlementReferenceDate` | `SettlementReferenceDate` |
-| `OrderInternalID` | `OrderInternalID` |
-| `OrderIntBillOfOperationsItem` | `OrderIntBillOfOperationsItem` |
-| `TaxCode` | `TaxCode` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `NonDeductibleInputTaxAmount` | `NonDeductibleInputTaxAmount` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `BusinessProcess` | `BusinessProcess` |
-| `GrantID` | `GrantID` |
-| `BudgetPeriod` | `BudgetPeriod` |
-| `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| `ValidityDate` | `ValidityDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_PurchaseContractItem` | *Association* |
-| `_PurContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountAssignmentNumber` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `PurchaseContract` | ✓ | |  |  |
+| `CostCenter` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
+| `PurgDocNetAmount` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSDescription` |  | |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |
+| `CommitmentItemShortID` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `LastChangedDate` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `IsFinallyInvoiced` |  | |  |  |
+| `NetworkActivityInternalID` |  | |  |  |
+| `PartnerAccountNumber` |  | |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |
+| `SettlementReferenceDate` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |
+| `ValidityDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_PurchaseContractItem` | | ✓ | | |
+| `_PurContract` | | ✓ | | |
 
 ## Source Code
 

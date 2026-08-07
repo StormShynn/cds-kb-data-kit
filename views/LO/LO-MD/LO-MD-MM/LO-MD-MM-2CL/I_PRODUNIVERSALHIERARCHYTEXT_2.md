@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `text.spras` |
-| key `ProdUnivHierarchy` | `cast(substring(text.hryid, 6, 26 ) as prod_hier_id )` |
-| key `ProdHierarchyValidityEndDate` | `text.hryvalto` |
-| `ProdHierarchyValidityStartDate` | `text.hryvalfrom` |
-| `ProdUnivHierarchyText` | `hrytxt` |
-| `HierarchyType` | `dir.hrytyp` |
-| `_ProductHierarchy` | *Association* |
-| `_LanguageText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ProdUnivHierarchy` | ✓ | |  | `cast(substring(text.hryid, 6, 26 ) as prod_hier_id )` |
+| `ProdHierarchyValidityEndDate` | ✓ | |  | `hryvalto` |
+| `ProdHierarchyValidityStartDate` |  | |  | `hryvalfrom` |
+| `ProdUnivHierarchyText` |  | |  | `hrytxt` |
+| `HierarchyType` |  | |  | `hrytyp` |
+| `_ProductHierarchy` | | ✓ | | |
+| `_LanguageText` | | ✓ | | |
 
 ## Associations
 

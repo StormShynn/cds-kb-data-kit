@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `lfb5.lifnr` |
-| key `CompanyCode` | `lfb5.bukrs` |
-| key `DunningArea` | `lfb5.maber` |
-| `DunningRecipient` | `lfb5.lfrma` |
-| `LegDunningProcedureOn` | `lfb5.gmvdt` |
-| `LastDunnedOn` | `lfb5.madat` |
-| `DunningProcedure` | `lfb5.mahna` |
-| `DunningLevel` | `lfb5.mahns` |
-| `DunningBlock` | `lfb5.mansp` |
-| `DunningClerk` | `lfb5.busab` |
-| `_SupplierCompany` | *Association* |
-| `_DunningArea` | *Association* |
-| `_DunningAreaText` | *Association* |
-| `_DunningProcedure` | *Association* |
-| `_DunningProcedureText` | *Association* |
-| `_DunningBlock` | *Association* |
-| `_DunningBlockText` | *Association* |
-| `_DunningClerk` | *Association* |
-| `_DunningRecipient` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `DunningArea` | ✓ | |  | `maber` |
+| `DunningRecipient` |  | |  | `lfrma` |
+| `LegDunningProcedureOn` |  | |  | `gmvdt` |
+| `LastDunnedOn` |  | |  | `madat` |
+| `DunningProcedure` |  | |  | `mahna` |
+| `DunningLevel` |  | |  | `mahns` |
+| `DunningBlock` |  | |  | `mansp` |
+| `DunningClerk` |  | |  | `busab` |
+| `_SupplierCompany` | | ✓ | | |
+| `_DunningArea` | | ✓ | | |
+| `_DunningAreaText` | | ✓ | | |
+| `_DunningProcedure` | | ✓ | | |
+| `_DunningProcedureText` | | ✓ | | |
+| `_DunningBlock` | | ✓ | | |
+| `_DunningBlockText` | | ✓ | | |
+| `_DunningClerk` | | ✓ | | |
+| `_DunningRecipient` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

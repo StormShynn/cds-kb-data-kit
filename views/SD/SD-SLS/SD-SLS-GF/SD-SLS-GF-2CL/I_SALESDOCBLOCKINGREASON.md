@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocumentBlockingReason` | `aufsp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentBlockingReason` | ✓ | |  | `aufsp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

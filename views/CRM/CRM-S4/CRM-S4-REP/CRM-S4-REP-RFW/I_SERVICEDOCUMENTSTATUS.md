@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentStatus` | `domvalue_l` |
-| `_ServiceDocumentStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentStatus` | ✓ | |  | `domvalue_l` |
+| `_ServiceDocumentStatusText` | | ✓ | | |
 
 ## Associations
 

@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| key `PurchasingOrganization` | `PurchasingOrganization` |
-| key `PurchasingInfoRecordCategory` | `PurchasingInfoRecordCategory` |
-| key `Plant` | `Plant` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| key `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
-| `ConditionType` | `ConditionType` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionCalculationTypeShort` | `ConditionCalculationTypeShort` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `ConditionToBaseQtyNmrtr` | `ConditionToBaseQtyNmrtr` |
-| `ConditionToBaseQtyDnmntr` | `ConditionToBaseQtyDnmntr` |
-| `BaseUnit` | `BaseUnit` |
-| `Material` | `Material` |
-| `MaterialGroup` | `MaterialGroup` |
-| `PurgDocOrderQuantityUnit` | `PurgDocOrderQuantityUnit` |
-| `ConditionCurrency` | `ConditionCurrency` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |
+| `PurchasingInfoRecordCategory` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionCalculationTypeShort` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `PurgDocOrderQuantityUnit` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
 
 ## Source Code
 

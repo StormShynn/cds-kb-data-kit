@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REArchitectureObjectRltnUUID` | `nodeuuid` |
-| `REArchitectureObjectOID` | `nodeoid` |
-| `REArchitectureObjectParentOID` | `parentoid` |
-| `REArchitectureObjectUUID` | `architectureobjectuuid` |
-| `_REArchitectureObject` | *Association* |
-| `_REArchitectureObjectParent` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REArchitectureObjectRltnUUID` | ✓ | |  | `nodeuuid` |
+| `REArchitectureObjectOID` |  | |  | `nodeoid` |
+| `REArchitectureObjectParentOID` |  | |  | `parentoid` |
+| `REArchitectureObjectUUID` |  | |  | `architectureobjectuuid` |
+| `_REArchitectureObject` | | ✓ | | |
+| `_REArchitectureObjectParent` | | ✓ | | |
 
 ## Associations
 

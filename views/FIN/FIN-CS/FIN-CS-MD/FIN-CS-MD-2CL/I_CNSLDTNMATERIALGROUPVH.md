@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialGroup` | `MaterialGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialGroup` | ✓ | |  |  |
 
 ## Source Code
 

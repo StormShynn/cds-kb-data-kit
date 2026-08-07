@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallProfile` | `cast(pabprf as vdm_pabprf preserving type )` |
-| `JITCallOutboundType` | `pabart` |
-| `JITCallPartnerRole` | `cast(pabpar as vdm_pabpar preserving type )` |
-| `JITCallSummarizationStrategy` | `pabzus` |
-| `JITCallTimeDefinition` | `pabztd` |
-| `JITCallGRPostingControl` | `goods_receipt_posting_control` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallProfile` | ✓ | |  | `cast(pabprf as vdm_pabprf preserving type )` |
+| `JITCallOutboundType` |  | |  | `pabart` |
+| `JITCallPartnerRole` |  | |  | `cast(pabpar as vdm_pabpar preserving type )` |
+| `JITCallSummarizationStrategy` |  | |  | `pabzus` |
+| `JITCallTimeDefinition` |  | |  | `pabztd` |
+| `JITCallGRPostingControl` |  | |  | `goods_receipt_posting_control` |
 
 ## Source Code
 

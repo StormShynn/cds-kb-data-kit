@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UsageDecisionCodeGroup` | `qpct.codegruppe` |
-| key `UsageDecisionCode` | `qpct.code` |
-| key `Language` | `sprache` |
-| `UsageDecisionCodeText` | `cast( kurztext as vdm_qtxt_code preserving type )` |
-| `_UsageDecisionCodeGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UsageDecisionCodeGroup` | ✓ | |  | `codegruppe` |
+| `UsageDecisionCode` | ✓ | |  | `code` |
+| `Language` | ✓ | |  | `sprache` |
+| `UsageDecisionCodeText` |  | |  | `cast( kurztext as vdm_qtxt_code preserving type )` |
+| `_UsageDecisionCodeGroup` | | ✓ | | |
 
 ## Associations
 

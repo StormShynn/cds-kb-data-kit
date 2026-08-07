@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAProviderContractStatus` | `cast( left( dd07t.domvalue_l,1 ) as status_vt_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAProviderContractStatusText` | `cast ( ddtext as status_vt_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAProviderContractStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as status_vt_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAProviderContractStatusText` |  | |  | `cast ( ddtext as status_vt_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

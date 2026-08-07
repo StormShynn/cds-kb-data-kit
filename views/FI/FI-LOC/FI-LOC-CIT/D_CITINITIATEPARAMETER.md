@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `FSItemMappingUUID` | `char32` |
-| `FiscalYear` | `fis_gjahr_no_conv` |
-| `CompanyCode` | `fis_bukrs` |
-| `AccountingDocument` | `farp_belnr_d` |
-| `Ledger` | `fis_rldnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FSItemMappingUUID` |  | |  | `char32` |
+| `FiscalYear` |  | |  | `fis_gjahr_no_conv` |
+| `CompanyCode` |  | |  | `fis_bukrs` |
+| `AccountingDocument` |  | |  | `farp_belnr_d` |
+| `Ledger` |  | |  | `fis_rldnr` |
 
 ## Source Code
 

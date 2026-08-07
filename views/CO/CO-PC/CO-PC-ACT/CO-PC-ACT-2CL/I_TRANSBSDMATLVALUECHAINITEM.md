@@ -29,47 +29,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostEstimate` | `CostEstimate` |
-| key `CurrencyRole` | `CurrencyRole` |
-| key `Ledger` | `Ledger` |
-| key `FiscalYearPeriod` | `cast( FiscalYearPeriod as fins_fyearperiod )` |
-| key `MaterialLedgerCategory` | `MaterialLedgerCategory` |
-| key `ProcessCategory` | `ProcessCategory` |
-| key `MatlLdgrDocIsCostingRelevant` | `MatlLdgrDocIsCostingRelevant` |
-| key `ProcurementAlternative` | `ProcurementAlternative` |
-| key `ProductionProcess` | `ProductionProcess` |
-| key `MovementType` | `MovementType` |
-| key `GLAccount` | `GLAccount` |
-| `PriceDeterminationControl` | `PriceDeterminationControl` |
-| `ValuationArea` | `ValuationArea` |
-| `Material` | `Material` |
-| `InventoryValuationType` | `InventoryValuationType` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `Supplier` | `Supplier` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `MaterialLedgerCategoryText` | `MaterialLedgerCategoryText` |
-| `ProcessCategoryName` | `ProcessCategoryName` |
-| `GoodsMovementTypeName` | `GoodsMovementTypeName` |
-| `GLAccountName` | `GLAccountName` |
-| `InventorySpecialStockTypeName` | `InventorySpecialStockTypeName` |
-| `TotalVltdStockQuantity` | `TotalVltdStockQuantity` |
-| `ValuationQuantityUnit` | `ValuationQuantityUnit` |
-| `InventoryAmtInDspCrcy` | `InventoryAmtInDspCrcy` |
-| `InvtryTransacAmtInDisplayCrcy` | `InvtryTransacAmtInDisplayCrcy` |
-| `PriceDiffAmtInDisplayCrcy` | `PriceDiffAmtInDisplayCrcy` |
-| `ExchRateDiffAmtInDspCurrency` | `ExchRateDiffAmtInDspCurrency` |
-| `Currency` | `Currency` |
-| `ControllingArea` | `ControllingArea` |
-| `ControllingValuationType` | `ControllingValuationType` |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_Ledger` | *Association* |
-| `_Currency` | *Association* |
-| `_QuantityUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostEstimate` | ✓ | |  |  |
+| `CurrencyRole` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `FiscalYearPeriod` | ✓ | |  | `cast( FiscalYearPeriod as fins_fyearperiod )` |
+| `MaterialLedgerCategory` | ✓ | |  |  |
+| `ProcessCategory` | ✓ | |  |  |
+| `MatlLdgrDocIsCostingRelevant` | ✓ | |  |  |
+| `ProcurementAlternative` | ✓ | |  |  |
+| `ProductionProcess` | ✓ | |  |  |
+| `MovementType` | ✓ | |  |  |
+| `GLAccount` | ✓ | |  |  |
+| `PriceDeterminationControl` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `Material` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `MaterialLedgerCategoryText` |  | |  |  |
+| `ProcessCategoryName` |  | |  |  |
+| `GoodsMovementTypeName` |  | |  |  |
+| `GLAccountName` |  | |  |  |
+| `InventorySpecialStockTypeName` |  | |  |  |
+| `TotalVltdStockQuantity` |  | |  |  |
+| `ValuationQuantityUnit` |  | |  |  |
+| `InventoryAmtInDspCrcy` |  | |  |  |
+| `InvtryTransacAmtInDisplayCrcy` |  | |  |  |
+| `PriceDiffAmtInDisplayCrcy` |  | |  |  |
+| `ExchRateDiffAmtInDspCurrency` |  | |  |  |
+| `Currency` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ControllingValuationType` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_QuantityUnit` | | ✓ | | |
 
 ## Associations
 

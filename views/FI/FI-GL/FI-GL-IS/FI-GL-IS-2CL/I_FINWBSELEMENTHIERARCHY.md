@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WBSElementHierarchy` | `R_FinWBSElementHierarchy.WBSElementHierarchy` |
-| key `ValidityEndDate` | `R_FinWBSElementHierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `R_FinWBSElementHierarchy.ValidityStartDate` |
-| `HierarchyType` | `R_FinWBSElementHierarchy.HierarchyType` |
-| `LastChangedByUser` | `R_FinWBSElementHierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `R_FinWBSElementHierarchy.LastChangeDateTime` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WBSElementHierarchy` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `HierarchyType` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

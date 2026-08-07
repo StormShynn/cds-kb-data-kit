@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `PurchasingDocumentOrigin` | `cast( dd07t.domvalue_l as vdm_purhasingdocumentorigin )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PurchasingDocumentOriginName` | `cast( dd07t.ddtext as purchasingdocumentoriginname preserving type )` |
-| `_Language` | *Association* |
-| `_PurchasingDocumentOrigin` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PurchasingDocumentOrigin` | ✓ | |  | `cast( dd07t.domvalue_l as vdm_purhasingdocumentorigin )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PurchasingDocumentOriginName` |  | |  | `cast( dd07t.ddtext as purchasingdocumentoriginname preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PurchasingDocumentOrigin` | | ✓ | | |
 
 ## Associations
 

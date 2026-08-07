@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessTransactionType` | `tj01t.vrgng` |
-| key `Language` | `tj01t.spras` |
-| `BusinessTransactionTypeName` | `tj01t.txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessTransactionType` | ✓ | |  | `vrgng` |
+| `Language` | ✓ | |  | `spras` |
+| `BusinessTransactionTypeName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

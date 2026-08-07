@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VATRegistrationOrigin` | `cast(SUBSTRING(domvalue_l, 1, 1) as stceg_h preserving type)` |
-| key `Language` | `ddlanguage` |
-| `VATRegistrationOriginName` | `cast(ddtext as stceg_h_text preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_VATRegistrationOrigin` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VATRegistrationOrigin` | ✓ | |  | `cast(SUBSTRING(domvalue_l, 1, 1) as stceg_h preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `VATRegistrationOriginName` |  | |  | `cast(ddtext as stceg_h_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_VATRegistrationOrigin` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

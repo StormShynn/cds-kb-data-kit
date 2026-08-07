@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TotalCreditCheckStatus` | `statu` |
-| key `Language` | `spras` |
-| `TotalCreditCheckStatusDesc` | `bezei` |
-| `_TotalCreditCheckStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TotalCreditCheckStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `TotalCreditCheckStatusDesc` |  | |  | `bezei` |
+| `_TotalCreditCheckStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

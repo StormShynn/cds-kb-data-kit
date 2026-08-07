@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgPreliminaryCategory` | `cast( prlinv_cat as prlinv_cat_gfn_kk preserving type )` |
-| key `Language` | `langu` |
-| `CAInvcgPreliminaryCategoryTxt` | `cast( text as prlinv_cat_txt_gfn_kk preserving type )` |
-| `_Language` | *Association* |
-| `_CAInvcgPreliminaryCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgPreliminaryCategory` | ✓ | |  | `cast( prlinv_cat as prlinv_cat_gfn_kk preserving type )` |
+| `Language` | ✓ | |  | `langu` |
+| `CAInvcgPreliminaryCategoryTxt` |  | |  | `cast( text as prlinv_cat_txt_gfn_kk preserving type )` |
+| `_Language` | | ✓ | | |
+| `_CAInvcgPreliminaryCategory` | | ✓ | | |
 
 ## Associations
 

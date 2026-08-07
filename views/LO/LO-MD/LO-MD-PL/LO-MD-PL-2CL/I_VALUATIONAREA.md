@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ValuationArea` | `bwkey` |
-| `CompanyCode` | `bukrs` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ValuationArea` | ✓ | |  | `bwkey` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

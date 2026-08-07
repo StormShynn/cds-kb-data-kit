@@ -32,53 +32,53 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `bom_header.BillOfMaterial` |
-| key `BillOfMaterialCategory` | `bom_header.BillOfMaterialCategory` |
-| key `BillOfMaterialVariant` | `bom_header.BillOfMaterialVariant` |
-| key `BillOfMaterialVersion` | `bom_header.BillOfMaterialVersion` |
-| key `EngineeringChangeDocument` | `bom_header.EngineeringChangeDocument` |
-| key `Material` | `bom_header.Material` |
-| key `Plant` | `bom_header.Plant` |
-| `BillOfMaterialHeaderUUID` | `bom_header.BillOfMaterialHeaderUUID` |
-| `BillOfMaterialVariantUsage` | `bom_header.BillOfMaterialVariantUsage` |
-| `EngineeringChangeDocForEdit` | `bom_header.EngineeringChangeDocForEdit` |
-| `IsMultipleBOMAlt` | `bom_header.IsMultipleBOMAlt` |
-| `BOMHeaderInternalChangeCount` | `bom_header.BOMHeaderInternalChangeCount` |
-| `BOMUsagePriority` | `bom_header.BOMUsagePriority` |
-| `BillOfMaterialAuthsnGrp` | `bom_header.BillOfMaterialAuthsnGrp` |
-| `BOMVersionStatus` | `bom_header.BOMVersionStatus` |
-| `IsVersionBillOfMaterial` | `bom_header.IsVersionBillOfMaterial` |
-| `IsLatestBOMVersion` | `bom_header.IsLatestBOMVersion` |
-| `IsConfiguredMaterial` | `bom_header.IsConfiguredMaterial` |
-| `BOMTechnicalType` | `bom_header.BOMTechnicalType` |
-| `BOMGroup` | `bom_header.BOMGroup` |
-| `BOMHeaderText` | `bom_header.BOMHeaderText` |
-| `BOMAlternativeText` | `bom_header.BOMAlternativeText` |
-| `BillOfMaterialStatus` | `bom_header.BillOfMaterialStatus` |
-| `HeaderValidityStartDate` | `bom_header.HeaderValidityStartDate` |
-| `HeaderValidityEndDate` | `bom_header.HeaderValidityEndDate` |
-| `ChgToEngineeringChgDocument` | `bom_header.ChgToEngineeringChgDocument` |
-| `IsMarkedForDeletion` | `bom_header.IsMarkedForDeletion` |
-| `IsALE` | `bom_header.IsALE` |
-| `MatFromLotSizeQuantity` | `bom_header.MatFromLotSizeQuantity` |
-| `MaterialToLotSizeQuantity` | `bom_header.MaterialToLotSizeQuantity` |
-| `BOMHeaderBaseUnit` | `bom_header.BOMHeaderBaseUnit` |
-| `BOMHeaderQuantityInBaseUnit` | `bom_header.BOMHeaderQuantityInBaseUnit` |
-| `RecordCreationDate` | `bom_header.RecordCreationDate` |
-| `LastChangeDate` | `bom_header.LastChangeDate` |
-| `CreatedByUser` | `bom_header.CreatedByUser` |
-| `LastChangedByUser` | `bom_header.LastChangedByUser` |
-| `BOMIsToBeDeleted` | `bom_header.BOMIsToBeDeleted` |
-| `DocumentIsCreatedByCAD` | `bom_header.DocumentIsCreatedByCAD` |
-| `LaboratoryOrDesignOffice` | `bom_header.LaboratoryOrDesignOffice` |
-| `LastChangeDateTime` | `bom_header.LastChangeDateTime` |
-| `ProductDescription` | `bom_header.ProductDescription` |
-| `PlantName` | `bom_header.PlantName` |
-| `BillOfMaterialHdrDetailsText` | `bom_header.BillOfMaterialHdrDetailsText` |
-| `SelectedBillOfMaterialVersion` | `SelectedBillOfMaterialVersion` |
-| `_BillOfMaterialItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialCategory` | ✓ | |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |
+| `BillOfMaterialVersion` | ✓ | |  |  |
+| `EngineeringChangeDocument` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `BillOfMaterialHeaderUUID` |  | |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |
+| `EngineeringChangeDocForEdit` |  | |  |  |
+| `IsMultipleBOMAlt` |  | |  |  |
+| `BOMHeaderInternalChangeCount` |  | |  |  |
+| `BOMUsagePriority` |  | |  |  |
+| `BillOfMaterialAuthsnGrp` |  | |  |  |
+| `BOMVersionStatus` |  | |  |  |
+| `IsVersionBillOfMaterial` |  | |  |  |
+| `IsLatestBOMVersion` |  | |  |  |
+| `IsConfiguredMaterial` |  | |  |  |
+| `BOMTechnicalType` |  | |  |  |
+| `BOMGroup` |  | |  |  |
+| `BOMHeaderText` |  | |  |  |
+| `BOMAlternativeText` |  | |  |  |
+| `BillOfMaterialStatus` |  | |  |  |
+| `HeaderValidityStartDate` |  | |  |  |
+| `HeaderValidityEndDate` |  | |  |  |
+| `ChgToEngineeringChgDocument` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `IsALE` |  | |  |  |
+| `MatFromLotSizeQuantity` |  | |  |  |
+| `MaterialToLotSizeQuantity` |  | |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |
+| `BOMHeaderQuantityInBaseUnit` |  | |  |  |
+| `RecordCreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `BOMIsToBeDeleted` |  | |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ProductDescription` |  | |  |  |
+| `PlantName` |  | |  |  |
+| `BillOfMaterialHdrDetailsText` |  | |  |  |
+| `SelectedBillOfMaterialVersion` |  | |  |  |
+| `_BillOfMaterialItem` | | ✓ | | |
 
 ## Source Code
 

@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspMeansOfTransport` | `ttype` |
-| `TransportationMode` | `trmodcode` |
-| `MeansOfTransportIsPassive` | `passive` |
-| `_TransportationMode` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspMeansOfTransport` | ✓ | |  | `ttype` |
+| `TransportationMode` |  | |  | `trmodcode` |
+| `MeansOfTransportIsPassive` |  | |  | `passive` |
+| `_TransportationMode` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAStorageLocationOfTaxSuplmnt` | `cast( left( domvalue_l,2 ) as utloc_ut_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAStorLocOfTaxSuplmntText` | `cast( ddtext as utloc_ut_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAStorageLocationOfTaxSuplmnt` | ✓ | |  | `cast( left( domvalue_l,2 ) as utloc_ut_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAStorLocOfTaxSuplmntText` |  | |  | `cast( ddtext as utloc_ut_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

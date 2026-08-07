@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPTaxType` | `taxtype` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPTaxType` | ✓ | |  | `taxtype` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

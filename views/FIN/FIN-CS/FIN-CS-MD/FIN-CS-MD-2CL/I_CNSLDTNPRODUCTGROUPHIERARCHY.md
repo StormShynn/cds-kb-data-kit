@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnProductGroupHierarchy` | `cast(_Hierarchy.UniversalHierarchy as fincs_productgrouphierarchy preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
-| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnProductGroupHierarchy` | ✓ | |  | `cast(_Hierarchy.UniversalHierarchy as fincs_productgrouphierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

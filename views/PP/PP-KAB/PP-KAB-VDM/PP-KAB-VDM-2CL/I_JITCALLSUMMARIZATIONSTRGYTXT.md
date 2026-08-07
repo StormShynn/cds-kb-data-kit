@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallSummarizationStrategy` | `cast(substring(domvalue_l, 1, 1) as pabzus)` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `JITCallSummarizationStrgyName` | `cast(ddtext as vdm_pabzus_text preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_JITCallSummarizationStrategy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallSummarizationStrategy` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pabzus)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `JITCallSummarizationStrgyName` |  | |  | `cast(ddtext as vdm_pabzus_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_JITCallSummarizationStrategy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

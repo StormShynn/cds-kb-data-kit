@@ -30,106 +30,106 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYear` | `FiscalYear` |
-| key `ReferenceDocument` | `ReferenceDocument` |
-| key `ControllingArea` | `ControllingArea` |
-| key `ReferenceDocumentItem` | `ReferenceDocumentItem` |
-| key `LedgerGLLineItem` | `LedgerGLLineItem` |
-| key `ReferenceDocumentType` | `ReferenceDocumentType` |
-| key `ReferenceDocumentContext` | `ReferenceDocumentContext` |
-| key `AccountingDocument` | `AccountingDocument` |
-| `FiscalYearForEdit` | `FiscalYearForEdit` |
-| `ReferenceDocumentForEdit` | `ReferenceDocumentForEdit` |
-| `ControllingAreaForEdit` | `ControllingAreaForEdit` |
-| `ReferenceDocumentItemForEdit` | `ReferenceDocumentItemForEdit` |
-| `LedgerGLLineItemForEdit` | `LedgerGLLineItemForEdit` |
-| `ReferenceDocumentTypeForEdit` | `ReferenceDocumentTypeForEdit` |
-| `AccountingDocumentForEdit` | `AccountingDocumentForEdit` |
-| `ReferenceDocumentContextFoEd` | `ReferenceDocumentContextFoEd` |
-| `CompanyCode` | `CompanyCode` |
-| `SenderCompanyCode` | `SenderCompanyCode` |
-| `ControllingDocumentItem` | `ControllingDocumentItem` |
-| `SourceLedger` | `SourceLedger` |
-| `AccountAssignment` | `AccountAssignment` |
-| `AccountAssignmentType` | `AccountAssignmentType` |
-| `PartnerAccountAssignment` | `PartnerAccountAssignment` |
-| `PartnerAccountAssignmentType` | `PartnerAccountAssignmentType` |
-| `PartnerCostCenter` | `PartnerCostCenter` |
-| `SenderCostCenter` | `SenderCostCenter` |
-| `DocumentItemText` | `DocumentItemText` |
-| `GLAccount` | `GLAccount` |
-| `BaseUnit` | `BaseUnit` |
-| `Quantity` | `} Quantity` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `AmountInTransactionCurrency` | `} AmountInTransactionCurrency` |
-| `TransactionSubitem` | `TransactionSubitem` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `AmountInCompanyCodeCurrency` | `} AmountInCompanyCodeCurrency` |
-| `GlobalCurrency` | `GlobalCurrency` |
-| `AmountInGlobalCurrency` | `} AmountInGlobalCurrency` |
-| `PartnerWBSElementExternalID` | `PartnerWBSElementExternalID` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `PartnerServiceDocumentType` | `PartnerServiceDocumentType` |
-| `PartnerServiceDocument` | `PartnerServiceDocument` |
-| `PartnerServiceDocumentItem` | `PartnerServiceDocumentItem` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceDocument` | `ServiceDocument` |
-| `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `PartnerOrder` | `PartnerOrder` |
-| `OrderID` | `OrderID` |
-| `PartnerSalesDocument` | `PartnerSalesDocument` |
-| `PartnerSalesDocumentItem` | `PartnerSalesDocumentItem` |
-| `SalesDocument` | `SalesDocument` |
-| `SalesDocumentItem` | `SalesDocumentItem` |
-| `WorkItem` | `WorkItem` |
-| `PartnerWorkItem` | `PartnerWorkItem` |
-| `PersonnelNumber` | `PersonnelNumber` |
-| `ControllingBusTransacType` | `ControllingBusTransacType` |
-| `Fund` | `Fund` |
-| `FunctionalArea` | `FunctionalArea` |
-| `GrantID` | `GrantID` |
-| `BudgetPeriod` | `BudgetPeriod` |
-| `SenderCostRecoveryCode` | `SenderCostRecoveryCode` |
-| `PartnerFund` | `PartnerFund` |
-| `PartnerFunctionalArea` | `PartnerFunctionalArea` |
-| `PartnerGrant` | `PartnerGrant` |
-| `PartnerBudgetPeriod` | `PartnerBudgetPeriod` |
-| `PartnerCostRecoveryCode` | `PartnerCostRecoveryCode` |
-| `ProfitabilitySegment` | `ProfitabilitySegment` |
-| `ProfitabilitySegmentIsAssigned` | `ProfitabilitySegmentIsAssigned` |
-| `PartnerProfitabilitySegment` | `PartnerProfitabilitySegment` |
-| `PartProfitabilitySgmtIsAssgd` | `PartProfitabilitySgmtIsAssgd` |
-| `ReceiverRECompanyCode` | `ReceiverRECompanyCode` |
-| `SenderRECompanyCode` | `SenderRECompanyCode` |
-| `AccountingIndicatorCode` | `AccountingIndicatorCode` |
-| `RcvrAcctgIndCode` | `RcvrAcctgIndCode` |
-| `RealEstateContract` | `RealEstateContract` |
-| `RealEstatePartnerContract` | `RealEstatePartnerContract` |
-| `ServicesRenderedDate` | `ServicesRenderedDate` |
-| `FreeDefinedCurrency1` | `FreeDefinedCurrency1` |
-| `AmountInFreeDefinedCurrency1` | `} AmountInFreeDefinedCurrency1` |
-| `FreeDefinedCurrency2` | `FreeDefinedCurrency2` |
-| `AmountInFreeDefinedCurrency2` | `} AmountInFreeDefinedCurrency2` |
-| `FreeDefinedCurrency3` | `FreeDefinedCurrency3` |
-| `AmountInFreeDefinedCurrency3` | `} AmountInFreeDefinedCurrency3` |
-| `FreeDefinedCurrency4` | `FreeDefinedCurrency4` |
-| `AmountInFreeDefinedCurrency4` | `} AmountInFreeDefinedCurrency4` |
-| `FreeDefinedCurrency5` | `FreeDefinedCurrency5` |
-| `AmountInFreeDefinedCurrency5` | `} AmountInFreeDefinedCurrency5` |
-| `FreeDefinedCurrency6` | `FreeDefinedCurrency6` |
-| `AmountInFreeDefinedCurrency6` | `} AmountInFreeDefinedCurrency6` |
-| `FreeDefinedCurrency7` | `FreeDefinedCurrency7` |
-| `AmountInFreeDefinedCurrency7` | `} AmountInFreeDefinedCurrency7` |
-| `FreeDefinedCurrency8` | `FreeDefinedCurrency8` |
-| `AmountInFreeDefinedCurrency8` | `} AmountInFreeDefinedCurrency8` |
-| `FunctionalCurrency` | `FunctionalCurrency` |
-| `AmountInFunctionalCurrency` | `} AmountInFunctionalCurrency` |
-| `OperatingConcern` | `OperatingConcern` |
-| `_Header` | *Association* |
-| `_SenderProfitabilitySegment` | *Association* |
-| `_ReceiverProfitabilitySegment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYear` | ✓ | |  |  |
+| `ReferenceDocument` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `ReferenceDocumentItem` | ✓ | |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |
+| `ReferenceDocumentType` | ✓ | |  |  |
+| `ReferenceDocumentContext` | ✓ | |  |  |
+| `AccountingDocument` | ✓ | |  |  |
+| `FiscalYearForEdit` |  | |  |  |
+| `ReferenceDocumentForEdit` |  | |  |  |
+| `ControllingAreaForEdit` |  | |  |  |
+| `ReferenceDocumentItemForEdit` |  | |  |  |
+| `LedgerGLLineItemForEdit` |  | |  |  |
+| `ReferenceDocumentTypeForEdit` |  | |  |  |
+| `AccountingDocumentForEdit` |  | |  |  |
+| `ReferenceDocumentContextFoEd` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `SenderCompanyCode` |  | |  |  |
+| `ControllingDocumentItem` |  | |  |  |
+| `SourceLedger` |  | |  |  |
+| `AccountAssignment` |  | |  |  |
+| `AccountAssignmentType` |  | |  |  |
+| `PartnerAccountAssignment` |  | |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |
+| `PartnerCostCenter` |  | |  |  |
+| `SenderCostCenter` |  | |  |  |
+| `DocumentItemText` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `Quantity` |  | |  | `} Quantity` |
+| `TransactionCurrency` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  | `} AmountInTransactionCurrency` |
+| `TransactionSubitem` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `} AmountInCompanyCodeCurrency` |
+| `GlobalCurrency` |  | |  |  |
+| `AmountInGlobalCurrency` |  | |  | `} AmountInGlobalCurrency` |
+| `PartnerWBSElementExternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `PartnerServiceDocumentType` |  | |  |  |
+| `PartnerServiceDocument` |  | |  |  |
+| `PartnerServiceDocumentItem` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `PartnerOrder` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `PartnerSalesDocument` |  | |  |  |
+| `PartnerSalesDocumentItem` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `PartnerWorkItem` |  | |  |  |
+| `PersonnelNumber` |  | |  |  |
+| `ControllingBusTransacType` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `SenderCostRecoveryCode` |  | |  |  |
+| `PartnerFund` |  | |  |  |
+| `PartnerFunctionalArea` |  | |  |  |
+| `PartnerGrant` |  | |  |  |
+| `PartnerBudgetPeriod` |  | |  |  |
+| `PartnerCostRecoveryCode` |  | |  |  |
+| `ProfitabilitySegment` |  | |  |  |
+| `ProfitabilitySegmentIsAssigned` |  | |  |  |
+| `PartnerProfitabilitySegment` |  | |  |  |
+| `PartProfitabilitySgmtIsAssgd` |  | |  |  |
+| `ReceiverRECompanyCode` |  | |  |  |
+| `SenderRECompanyCode` |  | |  |  |
+| `AccountingIndicatorCode` |  | |  |  |
+| `RcvrAcctgIndCode` |  | |  |  |
+| `RealEstateContract` |  | |  |  |
+| `RealEstatePartnerContract` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  | `} AmountInFreeDefinedCurrency1` |
+| `FreeDefinedCurrency2` |  | |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  | `} AmountInFreeDefinedCurrency2` |
+| `FreeDefinedCurrency3` |  | |  |  |
+| `AmountInFreeDefinedCurrency3` |  | |  | `} AmountInFreeDefinedCurrency3` |
+| `FreeDefinedCurrency4` |  | |  |  |
+| `AmountInFreeDefinedCurrency4` |  | |  | `} AmountInFreeDefinedCurrency4` |
+| `FreeDefinedCurrency5` |  | |  |  |
+| `AmountInFreeDefinedCurrency5` |  | |  | `} AmountInFreeDefinedCurrency5` |
+| `FreeDefinedCurrency6` |  | |  |  |
+| `AmountInFreeDefinedCurrency6` |  | |  | `} AmountInFreeDefinedCurrency6` |
+| `FreeDefinedCurrency7` |  | |  |  |
+| `AmountInFreeDefinedCurrency7` |  | |  | `} AmountInFreeDefinedCurrency7` |
+| `FreeDefinedCurrency8` |  | |  |  |
+| `AmountInFreeDefinedCurrency8` |  | |  | `} AmountInFreeDefinedCurrency8` |
+| `FunctionalCurrency` |  | |  |  |
+| `AmountInFunctionalCurrency` |  | |  | `} AmountInFunctionalCurrency` |
+| `OperatingConcern` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_SenderProfitabilitySegment` | | ✓ | | |
+| `_ReceiverProfitabilitySegment` | | ✓ | | |
 
 ## Source Code
 

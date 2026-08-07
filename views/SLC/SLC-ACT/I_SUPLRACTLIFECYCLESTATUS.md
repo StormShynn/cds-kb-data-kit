@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrActyLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/act_lifecycle_stat_cd preserving type )` |
-| `_SuplrActLifecycleStatusText` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrActyLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/act_lifecycle_stat_cd preserving type )` |
+| `_SuplrActLifecycleStatusText` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

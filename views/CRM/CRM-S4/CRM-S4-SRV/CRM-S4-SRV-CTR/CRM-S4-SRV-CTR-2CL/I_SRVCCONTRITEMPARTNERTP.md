@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `ServiceContractItem` | `ServiceContractItem` |
-| key `CustMgmtPartnerFunction` | `CustMgmtPartnerFunction` |
-| key `CustMgmtBusinessPartner` | `CustMgmtBusinessPartner` |
-| `CustMgmtPartFunctionCategory` | `CustMgmtPartFunctionCategory` |
-| `CustMgmtPartnerIsMainPartner` | `CustMgmtPartnerIsMainPartner` |
-| `_SrvcMgmtPartnerFunctionText` | *Association* |
-| `_ServiceContractItemTP` | *Association* |
-| `_ServiceContractTP` | *Association* |
-| `_SrvcContrItmPartnerAddressTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceContractItem` | ✓ | |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |
+| `CustMgmtPartFunctionCategory` |  | |  |  |
+| `CustMgmtPartnerIsMainPartner` |  | |  |  |
+| `_SrvcMgmtPartnerFunctionText` | | ✓ | | |
+| `_ServiceContractItemTP` | | ✓ | | |
+| `_ServiceContractTP` | | ✓ | | |
+| `_SrvcContrItmPartnerAddressTP` | | ✓ | | |
 
 ## Source Code
 

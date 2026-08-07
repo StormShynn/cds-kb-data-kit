@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EventRaisedDateTime` | `vdm_lastchangedon` |
-| `DebitMemoRequestType` | `auart_unv` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `OrganizationDivision` | `spart` |
-| `SoldToParty` | `kunnr` |
-| `DebitMemoRequestItemCategory` | `pstyv` |
-| `Product` | `matnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
+| `DebitMemoRequestType` |  | |  | `auart_unv` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SoldToParty` |  | |  | `kunnr` |
+| `DebitMemoRequestItemCategory` |  | |  | `pstyv` |
+| `Product` |  | |  | `matnr` |
 
 ## Source Code
 

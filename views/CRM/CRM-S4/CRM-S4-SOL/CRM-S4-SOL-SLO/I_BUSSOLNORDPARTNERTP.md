@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `CustMgmtPartnerFunction` | `CustMgmtPartnerFunction` |
-| key `CustMgmtBusinessPartner` | `CustMgmtBusinessPartner` |
-| `CustMgmtPartFunctionCategory` | `CustMgmtPartFunctionCategory` |
-| `CustMgmtPartnerIsMainPartner` | `CustMgmtPartnerIsMainPartner` |
-| `_BusSolnOrdPartnerAddressTP` | *Association* |
-| `_BusinessSolutionOrderTP` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_PartnerFunction` | *Association* |
-| `_SrvcMgmtPartnerFunctionText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |
+| `CustMgmtPartFunctionCategory` |  | |  |  |
+| `CustMgmtPartnerIsMainPartner` |  | |  |  |
+| `_BusSolnOrdPartnerAddressTP` | | ✓ | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_PartnerFunction` | | ✓ | | |
+| `_SrvcMgmtPartnerFunctionText` | | ✓ | | |
 
 ## Source Code
 

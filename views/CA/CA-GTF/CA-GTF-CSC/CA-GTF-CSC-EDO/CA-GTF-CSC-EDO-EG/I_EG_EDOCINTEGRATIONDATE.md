@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| `EG_EDocActiveDate` | `EG_EDocActiveDate` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `EG_EDocActiveDate` |  | |  |  |
 
 ## Source Code
 

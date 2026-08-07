@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABusinessTransactionProcess` | `cast( left( dd07t.domvalue_l, 8 ) as evl_proid_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CABusTransProcessName` | `cast( ddtext as evl_proid_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABusinessTransactionProcess` | ✓ | |  | `cast( left( dd07t.domvalue_l, 8 ) as evl_proid_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CABusTransProcessName` |  | |  | `cast( ddtext as evl_proid_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

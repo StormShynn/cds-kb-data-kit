@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrganizationalChange` | `OrganizationalChange` |
-| key `ControllingArea` | `ControllingArea` |
-| key `ProfitCenter` | `ProfitCenter` |
-| `ControllingAreaForEdit` | `ControllingAreaForEdit` |
-| `ProfitCenterForEdit` | `ProfitCenterForEdit` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_OrganizationalChange` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrganizationalChange` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `ProfitCenter` | ✓ | |  |  |
+| `ControllingAreaForEdit` |  | |  |  |
+| `ProfitCenterForEdit` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_OrganizationalChange` | | ✓ | | |
 
 ## Source Code
 

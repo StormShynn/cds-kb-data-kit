@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerBirthDateStatus` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerBirthDateStatus` | ✓ | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

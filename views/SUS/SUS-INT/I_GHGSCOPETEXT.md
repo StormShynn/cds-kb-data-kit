@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `GHGScope` | `cast( dd07t.domvalue_l as sufnd_vdm_ghgscope )` |
-| `GHGScopeName` | `cast( dd07t.ddtext as sufnd_vdm_ghgscopename preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `GHGScope` | ✓ | |  | `cast( dd07t.domvalue_l as sufnd_vdm_ghgscope )` |
+| `GHGScopeName` |  | |  | `cast( dd07t.ddtext as sufnd_vdm_ghgscopename preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,61 +30,61 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `SalesDocument.SalesDocument` |
-| key `PaymentPlanItem` | `PaymentPlanItem` |
-| `PaymentPlan` | `PaymentItemDetails.PaymentPlan` |
-| `SalesDocumentType` | `SalesDocument.SalesDocumentType` |
-| `OrganizationDivision` | `SalesDocument.OrganizationDivision` |
-| `SalesOrganization` | `SalesDocument.SalesOrganization` |
-| `DistributionChannel` | `SalesDocument.DistributionChannel` |
-| `SDDocumentCategory` | `SalesDocument.SDDocumentCategory` |
-| `ElectronicPaymentType` | `ElectronicPaymentType` |
-| `ElectronicPayment` | `ElectronicPayment` |
-| `ElectronicPaymentSequence` | `ElectronicPaymentSequence` |
-| `EPaytValidityStartDate` | `EPaytValidityStartDate` |
-| `EPaytValidityEndDate` | `EPaytValidityEndDate` |
-| `ElectronicPaymentHolderName` | `ElectronicPaymentHolderName` |
-| `ElectronicPaymentEntryMode` | `ElectronicPaymentEntryMode` |
-| `AuthorizedAmountInAuthznCrcy` | `AuthorizedAmountInAuthznCrcy` |
-| `AuthorizationCurrency` | `AuthorizationCurrency` |
-| `AuthorizationByDigitalPaytSrvc` | `AuthorizationByDigitalPaytSrvc` |
-| `AuthorizationByAcquirer` | `AuthorizationByAcquirer` |
-| `AuthorizationDate` | `AuthorizationDate` |
-| `AuthorizationTime` | `AuthorizationTime` |
-| `MerchantByClearingHouse` | `MerchantByClearingHouse` |
-| `ElectronicPaymentIsSettled` | `ElectronicPaymentIsSettled` |
-| `ElectronicPaymentTerminal` | `ElectronicPaymentTerminal` |
-| `EPaytPaymentSettlement` | `EPaytPaymentSettlement` |
-| `EPaytByDigitalPaymentSrvc` | `EPaytByDigitalPaymentSrvc` |
-| `PaymentServiceProvider` | `PaymentServiceProvider` |
-| `PaymentByPaymentServicePrvdr` | `PaymentByPaymentServicePrvdr` |
-| `TransactionByPaytSrvcPrvdr` | `TransactionByPaytSrvcPrvdr` |
-| `PaymentCardAuthznRelationID` | `PaymentCardAuthznRelationID` |
-| `ElectronicPaymentCallStatus` | `ElectronicPaymentCallStatus` |
-| `EPaytAuthorizationResult` | `EPaytAuthorizationResult` |
-| `EPaytToBeAuthorizedAmount` | `EPaytToBeAuthorizedAmount` |
-| `EPaytAuthorizationIsExpired` | `EPaytAuthorizationIsExpired` |
-| `EPaytAmountIsChanged` | `EPaytAmountIsChanged` |
-| `PreauthorizationIsRequested` | `PreauthorizationIsRequested` |
-| `AuthorizationStatusName` | `AuthorizationStatusName` |
-| `MaximumToBeAuthorizedAmount` | `MaximumToBeAuthorizedAmount` |
-| `TransactionCurrency` | `PaymentItemDetails.TransactionCurrency` |
-| `PaytPlnForAuthorizationItem` | `PaytPlnForAuthorizationItem` |
-| `PaytPlnItmForAuthorizationItem` | `PaytPlnItmForAuthorizationItem` |
-| `PaymentPlanAuthorizationItem` | `PaymentPlanAuthorizationItem` |
-| `PaymentPlanRelatedBillgStatus` | `PaymentPlanRelatedBillgStatus` |
-| `EPaytAuthorizationType` | `EPaytAuthorizationType` |
-| `_SalesDocument` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_SalesDocumentType` | *Association* |
-| `_OrganizationDivision` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_PaymentCardType` | *Association* |
-| `_AuthorizationCurrency` | *Association* |
-| `_PaymentCardMerchant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  |  |
+| `PaymentPlanItem` | ✓ | |  |  |
+| `PaymentPlan` |  | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `ElectronicPaymentType` |  | |  |  |
+| `ElectronicPayment` |  | |  |  |
+| `ElectronicPaymentSequence` |  | |  |  |
+| `EPaytValidityStartDate` |  | |  |  |
+| `EPaytValidityEndDate` |  | |  |  |
+| `ElectronicPaymentHolderName` |  | |  |  |
+| `ElectronicPaymentEntryMode` |  | |  |  |
+| `AuthorizedAmountInAuthznCrcy` |  | |  |  |
+| `AuthorizationCurrency` |  | |  |  |
+| `AuthorizationByDigitalPaytSrvc` |  | |  |  |
+| `AuthorizationByAcquirer` |  | |  |  |
+| `AuthorizationDate` |  | |  |  |
+| `AuthorizationTime` |  | |  |  |
+| `MerchantByClearingHouse` |  | |  |  |
+| `ElectronicPaymentIsSettled` |  | |  |  |
+| `ElectronicPaymentTerminal` |  | |  |  |
+| `EPaytPaymentSettlement` |  | |  |  |
+| `EPaytByDigitalPaymentSrvc` |  | |  |  |
+| `PaymentServiceProvider` |  | |  |  |
+| `PaymentByPaymentServicePrvdr` |  | |  |  |
+| `TransactionByPaytSrvcPrvdr` |  | |  |  |
+| `PaymentCardAuthznRelationID` |  | |  |  |
+| `ElectronicPaymentCallStatus` |  | |  |  |
+| `EPaytAuthorizationResult` |  | |  |  |
+| `EPaytToBeAuthorizedAmount` |  | |  |  |
+| `EPaytAuthorizationIsExpired` |  | |  |  |
+| `EPaytAmountIsChanged` |  | |  |  |
+| `PreauthorizationIsRequested` |  | |  |  |
+| `AuthorizationStatusName` |  | |  |  |
+| `MaximumToBeAuthorizedAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `PaytPlnForAuthorizationItem` |  | |  |  |
+| `PaytPlnItmForAuthorizationItem` |  | |  |  |
+| `PaymentPlanAuthorizationItem` |  | |  |  |
+| `PaymentPlanRelatedBillgStatus` |  | |  |  |
+| `EPaytAuthorizationType` |  | |  |  |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_SalesDocumentType` | | ✓ | | |
+| `_OrganizationDivision` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_PaymentCardType` | | ✓ | | |
+| `_AuthorizationCurrency` | | ✓ | | |
+| `_PaymentCardMerchant` | | ✓ | | |
 
 ## Associations
 

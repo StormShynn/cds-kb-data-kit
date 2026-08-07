@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerAccountGroup` | `CustomerAccountGroup` |
-| `_CustomerAccountGroupText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerAccountGroup` | ✓ | |  |  |
+| `_CustomerAccountGroupText` | | ✓ | | |
 
 ## Source Code
 

@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMInboundDelivery` | `EWMInboundDelivery` |
-| `InboundDeliveryUUID` | `InboundDeliveryUUID` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `EWMDeliveryDocumentCategory` | `DeliveryDocumentCategory` |
-| `EWMDeliveryDocumentType` | `InboundDeliveryDocumentType` |
-| `ShipFromParty` | `ShipFromParty` |
-| `ShipFromPartyName` | `cast(ShipFromPartyName as ewm_de_ship_from_party_name preserving type)` |
-| `EWMShipFromIsBusPurposeCmpltd` | `EWMShipFromIsBusPurposeCmpltd` |
-| `Carrier` | `Carrier` |
-| `CarrierName` | `cast(CarrierName as ewm_de_carrier_name preserving type)` |
-| `EWMCarrierIsBusPurposeCmpltd` | `EWMCarrierIsBusPurposeCmpltd` |
-| `AdvancedShippingNotification` | `AdvancedShippingNotification` |
-| `InboundDelivery` | `cast(_Reference.EWMRefDeliveryDocumentNumber as /scwm/sp_docno_erp)` |
-| `PlannedDeliveryUTCDateTime` | `_PlannedDeliveryDateTime.DeliveryRelatedStartDateTime` |
-| `ReceivingOffice` | `ReceivingOffice` |
-| `EWMWhseReqHasHandlingUnit` | `_HUExists.EWMWhseReqHasHandlingUnit` |
-| `EWMDeliveryCreationUTCDateTime` | `EWMDeliveryCreationUTCDateTime` |
-| `EWMDelivLastChangeUTCDateTime` | `case when EWMDelivLastChangeUTCDateTime is initial then cast(EWMDeliveryCreationUTCDateTime as tzntstmps preserving type) else cast(EWMDelivLastChangeUTCDateTime as tzntstmps preserving type) end` |
-| `WarehouseTimeZone` | `_WarehouseTimezone.TimeZoneID` |
-| `_WarehouseText` | *Association* |
-| `_InboundDeliveryHdrTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMInboundDelivery` | ✓ | |  |  |
+| `InboundDeliveryUUID` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  | `DeliveryDocumentCategory` |
+| `EWMDeliveryDocumentType` |  | |  | `InboundDeliveryDocumentType` |
+| `ShipFromParty` |  | |  |  |
+| `ShipFromPartyName` |  | |  | `cast(ShipFromPartyName as ewm_de_ship_from_party_name preserving type)` |
+| `EWMShipFromIsBusPurposeCmpltd` |  | |  |  |
+| `Carrier` |  | |  |  |
+| `CarrierName` |  | |  | `cast(CarrierName as ewm_de_carrier_name preserving type)` |
+| `EWMCarrierIsBusPurposeCmpltd` |  | |  |  |
+| `AdvancedShippingNotification` |  | |  |  |
+| `InboundDelivery` |  | |  | `cast(_Reference.EWMRefDeliveryDocumentNumber as /scwm/sp_docno_erp)` |
+| `PlannedDeliveryUTCDateTime` |  | | `_PlannedDeliveryDateTime` | `DeliveryRelatedStartDateTime` |
+| `ReceivingOffice` |  | |  |  |
+| `EWMWhseReqHasHandlingUnit` |  | | `_HUExists` | `EWMWhseReqHasHandlingUnit` |
+| `EWMDeliveryCreationUTCDateTime` |  | |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  | `case when EWMDelivLastChangeUTCDateTime is initial then cast(EWMDeliveryCreationUTCDateTime as tzntstmps preserving type) else cast(EWMDelivLastChangeUTCDateTime as tzntstmps preserving type) end` |
+| `WarehouseTimeZone` |  | | `_WarehouseTimezone` | `TimeZoneID` |
+| `_WarehouseText` | | ✓ | | |
+| `_InboundDeliveryHdrTypeText` | | ✓ | | |
 
 ## Associations
 

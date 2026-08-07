@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PickingConfirmationStatus` | `statu` |
-| key `Language` | `spras` |
-| `PickingConfirmationStatusDesc` | `bezei` |
-| `_PickingConfirmationStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PickingConfirmationStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `PickingConfirmationStatusDesc` |  | |  | `bezei` |
+| `_PickingConfirmationStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

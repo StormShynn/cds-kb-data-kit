@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElmntWorkItemUUID` | `EntProjElmntWorkItemUUID` |
-| `EntProjElmntWorkItem` | `EntProjElmntWorkItem` |
-| `EntProjElmntWorkItemName` | `EntProjElmntWorkItemName` |
-| `EntProjElmntWorkItemIsInactive` | `EntProjElmntWorkItemIsInactive` |
-| `EntProjElmntWorkItemIsCnfgrd` | `EntProjElmntWorkItemIsCnfgrd` |
-| `ProjectUUID` | `ProjectUUID` |
-| `ProjectElementUUID` | `ProjectElementUUID` |
-| `EntProjElmntWrkItmLastUpdtSrce` | `EntProjElmntWrkItmLastUpdtSrce` |
-| `EntProjElmntWrkItmCrtedByUsr` | `EntProjElmntWrkItmCrtedByUsr` |
-| `EntProjElmntWrkItmCrtnDteTme` | `EntProjElmntWrkItmCrtnDteTme` |
-| `EntProjElmntWrkItmLstChgByUsr` | `EntProjElmntWrkItmLstChgByUsr` |
-| `EntProjElmntWrkItmLstChgDteTme` | `EntProjElmntWrkItmLstChgDteTme` |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElmntWorkItemUUID` | ✓ | |  |  |
+| `EntProjElmntWorkItem` |  | |  |  |
+| `EntProjElmntWorkItemName` |  | |  |  |
+| `EntProjElmntWorkItemIsInactive` |  | |  |  |
+| `EntProjElmntWorkItemIsCnfgrd` |  | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `ProjectElementUUID` |  | |  |  |
+| `EntProjElmntWrkItmLastUpdtSrce` |  | |  |  |
+| `EntProjElmntWrkItmCrtedByUsr` |  | |  |  |
+| `EntProjElmntWrkItmCrtnDteTme` |  | |  |  |
+| `EntProjElmntWrkItmLstChgByUsr` |  | |  |  |
+| `EntProjElmntWrkItmLstChgDteTme` |  | |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
 
 ## Source Code
 

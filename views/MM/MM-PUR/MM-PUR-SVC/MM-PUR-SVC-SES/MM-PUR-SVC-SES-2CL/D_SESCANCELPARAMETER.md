@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PostingDate` | `mmpur_ses_posting_date` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PostingDate` |  | |  | `mmpur_ses_posting_date` |
 
 ## Source Code
 

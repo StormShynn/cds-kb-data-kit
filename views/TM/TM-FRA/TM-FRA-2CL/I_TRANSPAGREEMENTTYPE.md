@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationAgreementType` | `cast( fagtypeid103 as /scmtms/vdm_fag_type_code preserving type )` |
-| `_TranspAgreementTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationAgreementType` | ✓ | |  | `cast( fagtypeid103 as /scmtms/vdm_fag_type_code preserving type )` |
+| `_TranspAgreementTypeText` | | ✓ | | |
 
 ## Associations
 

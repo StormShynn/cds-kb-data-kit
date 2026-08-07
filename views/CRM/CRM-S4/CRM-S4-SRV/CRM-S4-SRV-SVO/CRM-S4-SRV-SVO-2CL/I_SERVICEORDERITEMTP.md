@@ -30,96 +30,96 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrder` | `ServiceOrder` |
-| key `ServiceOrderItem` | `ServiceOrderItem` |
-| `ServiceDocumentItemObjectType` | `ServiceDocumentItemObjectType` |
-| `ServiceOrderItemCategory` | `ServiceOrderItemCategory` |
-| `ServiceOrderItemUUID` | `ServiceOrderItemUUID` |
-| `ParentServiceOrderItem` | `ParentServiceOrderItem` |
-| `ServiceOrderItemDescription` | `ServiceOrderItemDescription` |
-| `Language` | `Language` |
-| `ServiceDocItemCreationDateTime` | `ServiceDocItemCreationDateTime` |
-| `ServiceDocItemChangedDateTime` | `ServiceDocItemChangedDateTime` |
-| `ServiceDocItemCreatedByUser` | `ServiceDocItemCreatedByUser` |
-| `ServiceDocItemChangedByUser` | `ServiceDocItemChangedByUser` |
-| `Product` | `Product` |
-| `Quantity` | `Quantity` |
-| `QuantityUnit` | `QuantityUnit` |
-| `SoldToParty` | `SoldToParty` |
-| `ShipToParty` | `ShipToParty` |
-| `BillToParty` | `BillToParty` |
-| `PayerParty` | `PayerParty` |
-| `PaymentTerms` | `PaymentTerms` |
-| `PaymentMethod` | `PaymentMethod` |
-| `SEPAMandate` | `SEPAMandate` |
-| `SrvcSEPAMandateRelevance` | `SrvcSEPAMandateRelevance` |
-| `ContactPersonBusinessPartnerId` | `ContactPersonBusinessPartnerId` |
-| `RespEmployeeBusinessPartnerId` | `RespEmployeeBusinessPartnerId` |
-| `ExecutingServiceEmployee` | `ExecutingServiceEmployee` |
-| `ServicePerformer` | `ServicePerformer` |
-| `RespyMgmtServiceTeam` | `RespyMgmtServiceTeam` |
-| `RespyMgmtGlobalTeamID` | `RespyMgmtGlobalTeamID` |
-| `ServiceOrderItemIsNew` | `ServiceOrderItemIsNew` |
-| `ServiceOrderItemIsInProcess` | `ServiceOrderItemIsInProcess` |
-| `ServiceOrderItemIsReleased` | `ServiceOrderItemIsReleased` |
-| `ServiceOrderItemIsCompleted` | `ServiceOrderItemIsCompleted` |
-| `ServiceOrderItemStatus` | `ServiceOrderItemStatus` |
-| `SrvcOrdItmReldForBillgStatus` | `SrvcOrdItmReldForBillgStatus` |
-| `ServiceOrderItemBillingStatus` | `ServiceOrderItemBillingStatus` |
-| `ServiceOrderItemIsRejected` | `ServiceOrderItemIsRejected` |
-| `ServiceOrderItemHasError` | `ServiceOrderItemHasError` |
-| `SrvcDocItemTransferStatus` | `SrvcDocItemTransferStatus` |
-| `SrvcOrdItemExecutionStatus` | `SrvcOrdItemExecutionStatus` |
-| `SrvcOrdItemCreditStatus` | `SrvcOrdItemCreditStatus` |
-| `RequestedServiceStartDateTime` | `RequestedServiceStartDateTime` |
-| `RequestedServiceEndDateTime` | `RequestedServiceEndDateTime` |
-| `ServiceFirstResponseByDateTime` | `ServiceFirstResponseByDateTime` |
-| `SrvcDocItemSLADueByDateTime` | `SrvcDocItemSLADueByDateTime` |
-| `PlannedServiceStartDateTime` | `PlannedServiceStartDateTime` |
-| `PlannedServiceEndDateTime` | `PlannedServiceEndDateTime` |
-| `ServiceDuration` | `} ServiceDuration` |
-| `ServiceDurationUnit` | `ServiceDurationUnit` |
-| `SrvcContrDetnIsSpprsd` | `SrvcContrDetnIsSpprsd` |
-| `TimeSheetOvertimeCategory` | `TimeSheetOvertimeCategory` |
-| `ProfitCenter` | `ProfitCenter` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `ServiceDocItemGrossAmount` | `} ServiceDocItemGrossAmount` |
-| `ServiceDocumentItemNetAmount` | `} ServiceDocumentItemNetAmount` |
-| `ServiceDocumentItemTaxAmount` | `} ServiceDocumentItemTaxAmount` |
-| `BillableControl` | `BillableControl` |
-| `ServiceOrdItemRejectionReason` | `ServiceOrdItemRejectionReason` |
-| `SrvcOrdExtReference` | `SrvcOrdExtReference` |
-| `SrvcOrdItemExtReference` | `SrvcOrdItemExtReference` |
-| `ReferenceServiceContract` | `ReferenceServiceContract` |
-| `ReferenceServiceContractItem` | `ReferenceServiceContractItem` |
-| `RefServiceOrderTemplate` | `RefServiceOrderTemplate` |
-| `RefServiceOrderTemplateItem` | `RefServiceOrderTemplateItem` |
-| `ReferenceServiceQtan` | `ReferenceServiceQtan` |
-| `ReferenceServiceQtanItem` | `ReferenceServiceQtanItem` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `FSMServiceActivity` | `FSMServiceActivity` |
-| `_Product` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_BillableControl` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_SrvcSEPAMandateRelevance` | *Association* |
-| `_ServiceOrderTP` | *Association* |
-| `_SrvcOrdItemReferenceObjectTP` | *Association* |
-| `_SrvcOrdItmPartnerTP` | *Association* |
-| `_SrvcOrdItemPriceElementTP` | *Association* |
-| `_SrvcOrdItmUserStatusTP` | *Association* |
-| `_SrvcOrdItemAppointmentTP` | *Association* |
-| `_SrvcOrdItemDurationTP` | *Association* |
-| `_SrvcOrdItmFUPBillgDocTP` | *Association* |
-| `_SrvcOrdItmFUPEntrySheetTP` | *Association* |
-| `_SrvcOrdItmFUPPurchaseOrderTP` | *Association* |
-| `_SrvcOrdItmFUPPurReqnTP` | *Association* |
-| `_SrvcOrdItmFUPSrvcConfTP` | *Association* |
-| `_SrvcOrdItmFUPSuplrInvcTP` | *Association* |
-| `_SrvcOrdItmFUPMaintOrdTP` | *Association* |
-| `_SrvcOrdItemLongTextTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |
+| `ServiceOrderItemCategory` |  | |  |  |
+| `ServiceOrderItemUUID` |  | |  |  |
+| `ParentServiceOrderItem` |  | |  |  |
+| `ServiceOrderItemDescription` |  | |  |  |
+| `Language` |  | |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |
+| `Product` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `SEPAMandate` |  | |  |  |
+| `SrvcSEPAMandateRelevance` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |
+| `ExecutingServiceEmployee` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |
+| `ServiceOrderItemIsNew` |  | |  |  |
+| `ServiceOrderItemIsInProcess` |  | |  |  |
+| `ServiceOrderItemIsReleased` |  | |  |  |
+| `ServiceOrderItemIsCompleted` |  | |  |  |
+| `ServiceOrderItemStatus` |  | |  |  |
+| `SrvcOrdItmReldForBillgStatus` |  | |  |  |
+| `ServiceOrderItemBillingStatus` |  | |  |  |
+| `ServiceOrderItemIsRejected` |  | |  |  |
+| `ServiceOrderItemHasError` |  | |  |  |
+| `SrvcDocItemTransferStatus` |  | |  |  |
+| `SrvcOrdItemExecutionStatus` |  | |  |  |
+| `SrvcOrdItemCreditStatus` |  | |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |
+| `ServiceFirstResponseByDateTime` |  | |  |  |
+| `SrvcDocItemSLADueByDateTime` |  | |  |  |
+| `PlannedServiceStartDateTime` |  | |  |  |
+| `PlannedServiceEndDateTime` |  | |  |  |
+| `ServiceDuration` |  | |  | `} ServiceDuration` |
+| `ServiceDurationUnit` |  | |  |  |
+| `SrvcContrDetnIsSpprsd` |  | |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ServiceDocItemGrossAmount` |  | |  | `} ServiceDocItemGrossAmount` |
+| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceDocumentItemNetAmount` |
+| `ServiceDocumentItemTaxAmount` |  | |  | `} ServiceDocumentItemTaxAmount` |
+| `BillableControl` |  | |  |  |
+| `ServiceOrdItemRejectionReason` |  | |  |  |
+| `SrvcOrdExtReference` |  | |  |  |
+| `SrvcOrdItemExtReference` |  | |  |  |
+| `ReferenceServiceContract` |  | |  |  |
+| `ReferenceServiceContractItem` |  | |  |  |
+| `RefServiceOrderTemplate` |  | |  |  |
+| `RefServiceOrderTemplateItem` |  | |  |  |
+| `ReferenceServiceQtan` |  | |  |  |
+| `ReferenceServiceQtanItem` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `FSMServiceActivity` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_BillableControl` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | |
+| `_ServiceOrderTP` | | ✓ | | |
+| `_SrvcOrdItemReferenceObjectTP` | | ✓ | | |
+| `_SrvcOrdItmPartnerTP` | | ✓ | | |
+| `_SrvcOrdItemPriceElementTP` | | ✓ | | |
+| `_SrvcOrdItmUserStatusTP` | | ✓ | | |
+| `_SrvcOrdItemAppointmentTP` | | ✓ | | |
+| `_SrvcOrdItemDurationTP` | | ✓ | | |
+| `_SrvcOrdItmFUPBillgDocTP` | | ✓ | | |
+| `_SrvcOrdItmFUPEntrySheetTP` | | ✓ | | |
+| `_SrvcOrdItmFUPPurchaseOrderTP` | | ✓ | | |
+| `_SrvcOrdItmFUPPurReqnTP` | | ✓ | | |
+| `_SrvcOrdItmFUPSrvcConfTP` | | ✓ | | |
+| `_SrvcOrdItmFUPSuplrInvcTP` | | ✓ | | |
+| `_SrvcOrdItmFUPMaintOrdTP` | | ✓ | | |
+| `_SrvcOrdItemLongTextTP` | | ✓ | | |
 
 ## Source Code
 

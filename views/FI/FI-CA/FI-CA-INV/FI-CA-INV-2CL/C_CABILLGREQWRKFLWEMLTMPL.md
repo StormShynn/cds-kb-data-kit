@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowTaskInternalID` | `Workflowtask.WorkflowTaskInternalID` |
-| `CABillgReqDocument` | `_CABillgReq.CABillgReqDocument` |
-| `CABillgReqTotalAmountCurrency` | `_CABillgReq.CABillgReqTotalAmountCurrency` |
-| `CABillgReqType` | `_CABillgReq.CABillgReqType` |
-| `CABillgReqReason` | `_CABillgReq.CABillgReqReason` |
-| `CABillgReqCreationDate` | `_CABillgReq.CABillgReqCreationDate` |
-| `CABillgReqDescription` | `_CABillgReq.CABillgReqDescription` |
-| `WorkflowTaskURL` | `_WorkflowTaskURL.WorkflowTaskURL` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | |  |  |
+| `CABillgReqDocument` |  | | `_CABillgReq` | `CABillgReqDocument` |
+| `CABillgReqTotalAmountCurrency` |  | | `_CABillgReq` | `CABillgReqTotalAmountCurrency` |
+| `CABillgReqType` |  | | `_CABillgReq` | `CABillgReqType` |
+| `CABillgReqReason` |  | | `_CABillgReq` | `CABillgReqReason` |
+| `CABillgReqCreationDate` |  | | `_CABillgReq` | `CABillgReqCreationDate` |
+| `CABillgReqDescription` |  | | `_CABillgReq` | `CABillgReqDescription` |
+| `WorkflowTaskURL` |  | | `_WorkflowTaskURL` | `WorkflowTaskURL` |
 
 ## Associations
 

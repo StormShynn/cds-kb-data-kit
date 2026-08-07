@@ -29,184 +29,184 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnTaskLogUUID` | `item.CnsldtnTaskLogUUID` |
-| key `CnsldtnTaskLogItemUUID` | `item.CnsldtnTaskLogItemUUID` |
-| `CnsldtnTaskLogItemType` | `item.CnsldtnTaskLogItemType` |
-| `AssignmentReference` | `item.AssignmentReference` |
-| `PostingFiscalYear` | `item.PostingFiscalYear` |
-| `ConsolidationDocumentNumber` | `item.ConsolidationDocumentNumber` |
-| `ConsolidationVersion` | `item.ConsolidationVersion` |
-| `CnsldtnJrnlEntryAmtLoclCrcy` | `item.CnsldtnJrnlEntryAmtLoclCrcy` |
-| `CnsldtnJrnlEntryAmtInLoclCrcy` | `item.CnsldtnJrnlEntryAmtInLoclCrcy` |
-| `CnsldtnJrnlEntryAmtGrpCrcy` | `item.CnsldtnJrnlEntryAmtGrpCrcy` |
-| `CnsldtnJrnlEntryAmtInGrpCrcy` | `item.CnsldtnJrnlEntryAmtInGrpCrcy` |
-| `CnsldtnJrnlEntryAmtTransCrcy` | `item.CnsldtnJrnlEntryAmtTransCrcy` |
-| `CnsldtnJrnlEntryAmtInTransCrcy` | `item.CnsldtnJrnlEntryAmtInTransCrcy` |
-| `CnsldtnJrnlEntryQtyBaseUnit` | `item.CnsldtnJrnlEntryQtyBaseUnit` |
-| `CnsldtnJrnlEntryQtyInBsUnt` | `item.CnsldtnJrnlEntryQtyInBsUnt` |
-| `CnsldtnTriggeringAmtLoclCrcy` | `item.CnsldtnTriggeringAmtLoclCrcy` |
-| `CnsldtnTriggeringAmtInLoclCrcy` | `item.CnsldtnTriggeringAmtInLoclCrcy` |
-| `CnsldtnTriggeringAmtGrpCrcy` | `item.CnsldtnTriggeringAmtGrpCrcy` |
-| `CnsldtnTriggeringAmtInGrpCrcy` | `item.CnsldtnTriggeringAmtInGrpCrcy` |
-| `CnsldtnTriggeringAmtTransCrcy` | `item.CnsldtnTriggeringAmtTransCrcy` |
-| `CnsldtnTriggeringAmtInTC` | `item.CnsldtnTriggeringAmtInTC` |
-| `CnsldtnTriggeringQtyBaseUnit` | `item.CnsldtnTriggeringQtyBaseUnit` |
-| `CnsldtnTriggeringQtyInBsUnt` | `item.CnsldtnTriggeringQtyInBsUnt` |
-| `ConsolidationUnit` | `item.ConsolidationUnit` |
-| `ConsolidationChartOfAccounts` | `item.ConsolidationChartOfAccounts` |
-| `CnsldtnFinancialStatementItem` | `item.CnsldtnFinancialStatementItem` |
-| `PartnerConsolidationUnit` | `item.PartnerConsolidationUnit` |
-| `ConsolidationGroup` | `item.ConsolidationGroup` |
-| `CompanyCode` | `item.CompanyCode` |
-| `SubItemCategory` | `item.SubItemCategory` |
-| `SubItem` | `item.SubItem` |
-| `PostingLevel` | `item.PostingLevel` |
-| `ConsolidationApportionment` | `item.ConsolidationApportionment` |
-| `CurrencyConversionsDiffType` | `item.CurrencyConversionsDiffType` |
-| `ConsolidationDocumentType` | `item.ConsolidationDocumentType` |
-| `InvesteeConsolidationUnit` | `item.InvesteeConsolidationUnit` |
-| `InvestmentActivityType` | `item.InvestmentActivityType` |
-| `InvestmentActivity` | `item.InvestmentActivity` |
-| `PostingDate` | `item.PostingDate` |
-| `PartnerCostCenter` | `item.PartnerCostCenter` |
-| `FinancialTransactionType` | `item.FinancialTransactionType` |
-| `CustomerGroup` | `item.CustomerGroup` |
-| `CnsldtnTskLgItmRowNmbr` | `item.CnsldtnTskLgItmRowNmbr` |
-| `FiscalPeriod` | `item.FiscalPeriod` |
-| `FinancialServicesBranch` | `item.FinancialServicesBranch` |
-| `GHGScope2CalculationMethod` | `item.GHGScope2CalculationMethod` |
-| `CashLedgerAccount` | `item.CashLedgerAccount` |
-| `CnsldtnCashLedgerChartOfAccts` | `item.CnsldtnCashLedgerChartOfAccts` |
-| `GHGScope2ContractualInstrument` | `item.GHGScope2ContractualInstrument` |
-| `CustomerSupplierCountry` | `item.CustomerSupplierCountry` |
-| `FinancialDataSource` | `item.FinancialDataSource` |
-| `CnsldtnLogHeaderDateTime` | `item.CnsldtnLogHeaderDateTime` |
-| `Fund` | `item.Fund` |
-| `GHGCategory` | `item.GHGCategory` |
-| `GHGScope` | `item.GHGScope` |
-| `GrantID` | `item.GrantID` |
-| `SustainabilityModeOfTransport` | `item.SustainabilityModeOfTransport` |
-| `FinancialServicesProductGroup` | `item.FinancialServicesProductGroup` |
-| `SoldProduct` | `item.SoldProduct` |
-| `SoldProductGroup` | `item.SoldProductGroup` |
-| `WBSElementExternalID` | `item.WBSElementExternalID` |
-| `ConsolidationLedger` | `item.ConsolidationLedger` |
-| `BillingDocumentType` | `item.BillingDocumentType` |
-| `BillToParty` | `item.BillToParty` |
-| `BusinessArea` | `item.BusinessArea` |
-| `ChartOfAccounts` | `item.ChartOfAccounts` |
-| `Customer` | `item.Customer` |
-| `Material` | `item.Material` |
-| `Plant` | `item.Plant` |
-| `Segment` | `item.Segment` |
-| `CnsldtnTaskLogItemLatestRecord` | `item.CnsldtnTaskLogItemLatestRecord` |
-| `CnsldtnTskLgNode` | `item.CnsldtnTskLgNode` |
-| `CnsldtnTskLgParNode` | `item.CnsldtnTskLgParNode` |
-| `ConsolidationAcquisitionPeriod` | `item.ConsolidationAcquisitionPeriod` |
-| `ConsolidationAcquisitionYear` | `item.ConsolidationAcquisitionYear` |
-| `ConsolidationDimension` | `item.ConsolidationDimension` |
-| `ControllingArea` | `item.ControllingArea` |
-| `CostCenter` | `item.CostCenter` |
-| `CustomerSupplierCorporateGroup` | `item.CustomerSupplierCorporateGroup` |
-| `CustomerSupplierIndustry` | `item.CustomerSupplierIndustry` |
-| `DistributionChannel` | `item.DistributionChannel` |
-| `FinancialManagementArea` | `item.FinancialManagementArea` |
-| `FunctionalArea` | `item.FunctionalArea` |
-| `GLAccount` | `item.GLAccount` |
-| `MaterialGroup` | `item.MaterialGroup` |
-| `OrderID` | `item.OrderID` |
-| `Division` | `item.Division` |
-| `PartnerBusinessArea` | `item.PartnerBusinessArea` |
-| `PartnerCompany` | `item.PartnerCompany` |
-| `PartnerFunctionalArea` | `item.PartnerFunctionalArea` |
-| `PartnerProfitCenter` | `item.PartnerProfitCenter` |
-| `PartnerSegment` | `item.PartnerSegment` |
-| `PartnerWBSElementExternalID` | `item.PartnerWBSElementExternalID` |
-| `ProfitCenter` | `item.ProfitCenter` |
-| `SalesDistrict` | `item.SalesDistrict` |
-| `SalesOrganization` | `item.SalesOrganization` |
-| `ShipToParty` | `item.ShipToParty` |
-| `Supplier` | `item.Supplier` |
-| `GHGDataQualityCharacteristic` | `item.GHGDataQualityCharacteristic` |
-| `GHGEnergyClassification` | `item.GHGEnergyClassification` |
-| `GHGEnergyMix` | `item.GHGEnergyMix` |
-| `GHGEnergySourcingType` | `item.GHGEnergySourcingType` |
-| `WBSElementInternalID` | `item.WBSElementInternalID` |
-| `ProjectExternalID` | `item.ProjectExternalID` |
-| `CnsldtnAdhocItem` | `item.CnsldtnAdhocItem` |
-| `CnsldtnAdhocSet` | `item.CnsldtnAdhocSet` |
-| `CnsldtnAdhocSetItem` | `item.CnsldtnAdhocSetItem` |
-| `_ConsolidationTaskLog` | *Association* |
-| `_ConsolidationTaskLogMessage` | *Association* |
-| `_CnsldtnVersion` | *Association* |
-| `_CnsldtnJrnlEntryAmtLoclCrcy` | *Association* |
-| `_CnsldtnJrnlEntryAmtGrpCrcy` | *Association* |
-| `_CnsldtnJrnlEntryAmtTransCrcy` | *Association* |
-| `_CnsldtnJrnlEntryQtyBaseUnit` | *Association* |
-| `_CnsldtnTriggeringAmtLoclCrcy` | *Association* |
-| `_CnsldtnTriggeringAmtGrpCrcy` | *Association* |
-| `_CnsldtnTriggeringAmtTransCrcy` | *Association* |
-| `_CnsldtnTriggeringQtyBaseUnit` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_CnsldtnFSItem` | *Association* |
-| `_CnsldtnUnitPartner` | *Association* |
-| `_CnsldtnGroup` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_CnsldtnSubitemCategory` | *Association* |
-| `_CnsldtnSubItem` | *Association* |
-| `_CnsldtnPostingLevel` | *Association* |
-| `_CnsldtnApportionment` | *Association* |
-| `_CnsldtnCrcyCnvrsnDiffType` | *Association* |
-| `_CnsldtnDocumentType` | *Association* |
-| `_CnsldtnUnitInvestee` | *Association* |
-| `_CnsldtnInvmtActy` | *Association* |
-| `_CnsldtnFinTransType` | *Association* |
-| `_CnsldtnCustomerGroup` | *Association* |
-| `_CnsldtnGHGScp2CalcMethod` | *Association* |
-| `_CnsldtnCashLedgerAccount` | *Association* |
-| `_CnsldtnCashLedgerChartOfAccts` | *Association* |
-| `_CnsldtnGHGScp2CntrctlInstr` | *Association* |
-| `_CnsldtnCountry` | *Association* |
-| `_CnsldtnGHGCategory` | *Association* |
-| `_CnsldtnGHGScope` | *Association* |
-| `_CnsldtnSustModeOfTransport` | *Association* |
-| `_CnsldtnProduct` | *Association* |
-| `_CnsldtnProductGroup` | *Association* |
-| `_CnsldtnBillingDocumentType` | *Association* |
-| `_CnsldtnBusinessArea` | *Association* |
-| `_CnsldtnCustomer` | *Association* |
-| `_CnsldtnMaterial` | *Association* |
-| `_CnsldtnPlant` | *Association* |
-| `_CnsldtnSegment` | *Association* |
-| `_CnsldtnTaskLogItemType` | *Association* |
-| `_CnsldtnDimension` | *Association* |
-| `_CnsldtnControllingArea` | *Association* |
-| `_CnsldtnCostCenter` | *Association* |
-| `_CnsldtnDistributionChannel` | *Association* |
-| `_CnsldtnFinancialDataSource` | *Association* |
-| `_CnsldtnFinManagementArea` | *Association* |
-| `_CnsldtnFinServicesBranch` | *Association* |
-| `_CnsldtnFunctionalArea` | *Association* |
-| `_CnsldtnFund` | *Association* |
-| `_CnsldtnGrant` | *Association* |
-| `_CnsldtnMaterialGroup` | *Association* |
-| `_CnsldtnOrder` | *Association* |
-| `_CnsldtnDivision` | *Association* |
-| `_CnsldtnBusinessAreaPartner` | *Association* |
-| `_CnsldtnFunctionalAreaPartner` | *Association* |
-| `_CnsldtnProfitCenterPartner` | *Association* |
-| `_CnsldtnSegmentPartner` | *Association* |
-| `_CnsldtnProfitCenter` | *Association* |
-| `_CnsldtnSalesDistrict` | *Association* |
-| `_CnsldtnSalesOrganization` | *Association* |
-| `_CnsldtnSupplier` | *Association* |
-| `_CnsldtnGHGDtaQltyCharc` | *Association* |
-| `_CnsldtnGHGEngyClassification` | *Association* |
-| `_CnsldtnGHGEnergyMix` | *Association* |
-| `_CnsldtnGHGEnergySourcingType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemType` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `PostingFiscalYear` |  | |  |  |
+| `ConsolidationDocumentNumber` |  | |  |  |
+| `ConsolidationVersion` |  | |  |  |
+| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  |  |
+| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  |  |
+| `CnsldtnTriggeringAmtLoclCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtInLoclCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtGrpCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtInGrpCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtTransCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtInTC` |  | |  |  |
+| `CnsldtnTriggeringQtyBaseUnit` |  | |  |  |
+| `CnsldtnTriggeringQtyInBsUnt` |  | |  |  |
+| `ConsolidationUnit` |  | |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |
+| `ConsolidationGroup` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `SubItemCategory` |  | |  |  |
+| `SubItem` |  | |  |  |
+| `PostingLevel` |  | |  |  |
+| `ConsolidationApportionment` |  | |  |  |
+| `CurrencyConversionsDiffType` |  | |  |  |
+| `ConsolidationDocumentType` |  | |  |  |
+| `InvesteeConsolidationUnit` |  | |  |  |
+| `InvestmentActivityType` |  | |  |  |
+| `InvestmentActivity` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `PartnerCostCenter` |  | |  |  |
+| `FinancialTransactionType` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `CnsldtnTskLgItmRowNmbr` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FinancialServicesBranch` |  | |  |  |
+| `GHGScope2CalculationMethod` |  | |  |  |
+| `CashLedgerAccount` |  | |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  |  |
+| `GHGScope2ContractualInstrument` |  | |  |  |
+| `CustomerSupplierCountry` |  | |  |  |
+| `FinancialDataSource` |  | |  |  |
+| `CnsldtnLogHeaderDateTime` |  | |  |  |
+| `Fund` |  | |  |  |
+| `GHGCategory` |  | |  |  |
+| `GHGScope` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `SustainabilityModeOfTransport` |  | |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |
+| `SoldProduct` |  | |  |  |
+| `SoldProductGroup` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `ConsolidationLedger` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Segment` |  | |  |  |
+| `CnsldtnTaskLogItemLatestRecord` |  | |  |  |
+| `CnsldtnTskLgNode` |  | |  |  |
+| `CnsldtnTskLgParNode` |  | |  |  |
+| `ConsolidationAcquisitionPeriod` |  | |  |  |
+| `ConsolidationAcquisitionYear` |  | |  |  |
+| `ConsolidationDimension` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `FinancialManagementArea` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `Division` |  | |  |  |
+| `PartnerBusinessArea` |  | |  |  |
+| `PartnerCompany` |  | |  |  |
+| `PartnerFunctionalArea` |  | |  |  |
+| `PartnerProfitCenter` |  | |  |  |
+| `PartnerSegment` |  | |  |  |
+| `PartnerWBSElementExternalID` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `GHGDataQualityCharacteristic` |  | |  |  |
+| `GHGEnergyClassification` |  | |  |  |
+| `GHGEnergyMix` |  | |  |  |
+| `GHGEnergySourcingType` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `ProjectExternalID` |  | |  |  |
+| `CnsldtnAdhocItem` |  | |  |  |
+| `CnsldtnAdhocSet` |  | |  |  |
+| `CnsldtnAdhocSetItem` |  | |  |  |
+| `_ConsolidationTaskLog` | | ✓ | | |
+| `_ConsolidationTaskLogMessage` | | ✓ | | |
+| `_CnsldtnVersion` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | |
+| `_CnsldtnTriggeringAmtLoclCrcy` | | ✓ | | |
+| `_CnsldtnTriggeringAmtGrpCrcy` | | ✓ | | |
+| `_CnsldtnTriggeringAmtTransCrcy` | | ✓ | | |
+| `_CnsldtnTriggeringQtyBaseUnit` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_CnsldtnFSItem` | | ✓ | | |
+| `_CnsldtnUnitPartner` | | ✓ | | |
+| `_CnsldtnGroup` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | |
+| `_CnsldtnSubItem` | | ✓ | | |
+| `_CnsldtnPostingLevel` | | ✓ | | |
+| `_CnsldtnApportionment` | | ✓ | | |
+| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | |
+| `_CnsldtnDocumentType` | | ✓ | | |
+| `_CnsldtnUnitInvestee` | | ✓ | | |
+| `_CnsldtnInvmtActy` | | ✓ | | |
+| `_CnsldtnFinTransType` | | ✓ | | |
+| `_CnsldtnCustomerGroup` | | ✓ | | |
+| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | |
+| `_CnsldtnCashLedgerAccount` | | ✓ | | |
+| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | |
+| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | |
+| `_CnsldtnCountry` | | ✓ | | |
+| `_CnsldtnGHGCategory` | | ✓ | | |
+| `_CnsldtnGHGScope` | | ✓ | | |
+| `_CnsldtnSustModeOfTransport` | | ✓ | | |
+| `_CnsldtnProduct` | | ✓ | | |
+| `_CnsldtnProductGroup` | | ✓ | | |
+| `_CnsldtnBillingDocumentType` | | ✓ | | |
+| `_CnsldtnBusinessArea` | | ✓ | | |
+| `_CnsldtnCustomer` | | ✓ | | |
+| `_CnsldtnMaterial` | | ✓ | | |
+| `_CnsldtnPlant` | | ✓ | | |
+| `_CnsldtnSegment` | | ✓ | | |
+| `_CnsldtnTaskLogItemType` | | ✓ | | |
+| `_CnsldtnDimension` | | ✓ | | |
+| `_CnsldtnControllingArea` | | ✓ | | |
+| `_CnsldtnCostCenter` | | ✓ | | |
+| `_CnsldtnDistributionChannel` | | ✓ | | |
+| `_CnsldtnFinancialDataSource` | | ✓ | | |
+| `_CnsldtnFinManagementArea` | | ✓ | | |
+| `_CnsldtnFinServicesBranch` | | ✓ | | |
+| `_CnsldtnFunctionalArea` | | ✓ | | |
+| `_CnsldtnFund` | | ✓ | | |
+| `_CnsldtnGrant` | | ✓ | | |
+| `_CnsldtnMaterialGroup` | | ✓ | | |
+| `_CnsldtnOrder` | | ✓ | | |
+| `_CnsldtnDivision` | | ✓ | | |
+| `_CnsldtnBusinessAreaPartner` | | ✓ | | |
+| `_CnsldtnFunctionalAreaPartner` | | ✓ | | |
+| `_CnsldtnProfitCenterPartner` | | ✓ | | |
+| `_CnsldtnSegmentPartner` | | ✓ | | |
+| `_CnsldtnProfitCenter` | | ✓ | | |
+| `_CnsldtnSalesDistrict` | | ✓ | | |
+| `_CnsldtnSalesOrganization` | | ✓ | | |
+| `_CnsldtnSupplier` | | ✓ | | |
+| `_CnsldtnGHGDtaQltyCharc` | | ✓ | | |
+| `_CnsldtnGHGEngyClassification` | | ✓ | | |
+| `_CnsldtnGHGEnergyMix` | | ✓ | | |
+| `_CnsldtnGHGEnergySourcingType` | | ✓ | | |
 
 ## Associations
 

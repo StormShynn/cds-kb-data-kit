@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| key `BR_CTePartnerServiceTaker` | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as logbr_srv_taker_cte preserving type)` |
-| `BR_CTePartnerServiceTakerDesc` | `cast ( ddtext as logbr_srv_taker_cte_descr preserving type )` |
-| `_BR_CTePartnerServiceTaker` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `BR_CTePartnerServiceTaker` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as logbr_srv_taker_cte preserving type)` |
+| `BR_CTePartnerServiceTakerDesc` |  | |  | `cast ( ddtext as logbr_srv_taker_cte_descr preserving type )` |
+| `_BR_CTePartnerServiceTaker` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RecipientLocationCode` | `RecipientLocationCode` |
-| key `Plant` | `Plant` |
-| `RecipientLocationStatus` | `RecipientLocationStatus` |
-| `_RecipientLocationCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RecipientLocationCode` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `RecipientLocationStatus` |  | |  |  |
+| `_RecipientLocationCode` | | ✓ | | |
 
 ## Associations
 

@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspAgrmtPaymentTermUUID` | `cast( db_key as /scmtms/vdm_fag_payt_term_uuid preserving type )` |
-| `TranspAgreementItemUUID` | `cast( parent_key as /scmtms/transpagrmt_itm_uuid preserving type )` |
-| `TransportationAgreementUUID` | `cast( root_key as /scmtms/transpagrmt_uuid preserving type )` |
-| `TransportationPaymentTerms` | `cast( zterm as /scmtms/vdm_payment_terms preserving type )` |
-| `_PaymentTermText` | *Association* |
-| `_TransportationAgreement` | *Association* |
-| `_TranspAgreementItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspAgrmtPaymentTermUUID` | ✓ | |  | `cast( db_key as /scmtms/vdm_fag_payt_term_uuid preserving type )` |
+| `TranspAgreementItemUUID` |  | |  | `cast( parent_key as /scmtms/transpagrmt_itm_uuid preserving type )` |
+| `TransportationAgreementUUID` |  | |  | `cast( root_key as /scmtms/transpagrmt_uuid preserving type )` |
+| `TransportationPaymentTerms` |  | |  | `cast( zterm as /scmtms/vdm_payment_terms preserving type )` |
+| `_PaymentTermText` | | ✓ | | |
+| `_TransportationAgreement` | | ✓ | | |
+| `_TranspAgreementItem` | | ✓ | | |
 
 ## Associations
 

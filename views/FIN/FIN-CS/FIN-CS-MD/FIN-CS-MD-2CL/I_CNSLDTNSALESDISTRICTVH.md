@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDistrict` | `SalesDistrict` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDistrict` | ✓ | |  |  |
 
 ## Source Code
 

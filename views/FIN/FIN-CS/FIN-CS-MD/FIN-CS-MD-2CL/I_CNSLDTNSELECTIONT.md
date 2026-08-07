@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Source.Language` |
-| key `ConsolidationSelection` | `cast(left(_Source.FinancialSelection, 20) as fincs_consolidationselection preserving type)` |
-| `ConsolidationSelectionText` | `cast(_Source.FinancialSelectionText as fincs_cnsldtnselection_desc preserving type)` |
-| `FinancialSelection` | `_Source.FinancialSelection` |
-| `_Selection` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |
+| `ConsolidationSelection` | ✓ | |  | `cast(left(_Source.FinancialSelection, 20) as fincs_consolidationselection preserving type)` |
+| `ConsolidationSelectionText` |  | |  | `cast(_Source.FinancialSelectionText as fincs_cnsldtnselection_desc preserving type)` |
+| `FinancialSelection` |  | | `_Source` | `FinancialSelection` |
+| `_Selection` | | ✓ | | |
 
 ## Associations
 

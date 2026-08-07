@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryPaymentRequestGrouping` | `cast( dd07l.domvalue_l as tb_sprgrd )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryPaymentRequestGrouping` | ✓ | |  | `cast( dd07l.domvalue_l as tb_sprgrd )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| key `NoteBasicUUID` | `NoteBasicUUID` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `NoteBasicObjectNodeType` | `NoteBasicObjectNodeType` |
-| `NoteBasicType` | `NoteBasicType` |
-| `NoteBasicLanguage` | `NoteBasicLanguage` |
-| `NoteBasicContent` | `NoteBasicContent` |
-| `_ServiceEntrySheet` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `NoteBasicUUID` | ✓ | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `NoteBasicObjectNodeType` |  | |  |  |
+| `NoteBasicType` |  | |  |  |
+| `NoteBasicLanguage` |  | |  |  |
+| `NoteBasicContent` |  | |  |  |
+| `_ServiceEntrySheet` | | ✓ | | |
 
 ## Source Code
 

@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TransportationOrderItemUUID` | `/scmtms/toritmuuid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderItemUUID` |  | |  | `/scmtms/toritmuuid` |
 
 ## Source Code
 

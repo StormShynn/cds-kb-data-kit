@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `lgnum` |
-| key `EntitledToDisposeParty` | `entitled` |
-| key `EWMStorageBin` | `lgpla` |
-| key `Product` | `matnr` |
-| `ProductUUID` | `cast( matid as raw16 preserving type )` |
-| `EWMStorageType` | `lgtyp` |
-| `EWMMaximumStorageQuantity` | `maxqty` |
-| `EWMMaximumStorageQuantityUnit` | `maxqty_uom_dsp` |
-| `EWMMinimumStorageQuantity` | `minqty` |
-| `EWMMinimumStorageQuantityUnit` | `minqty_uom_dsp` |
-| `EWMFixedBinAssgmtCreatedDteTme` | `cast ( created_at as ewm_de_fixedbinassgmtcreateddt preserving type )` |
-| `EWMFixedBinAssgmtCreatedByUser` | `cast ( created_by as ewm_de_fixedbinassgmtcreatedby preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  | `lgnum` |
+| `EntitledToDisposeParty` | ✓ | |  | `entitled` |
+| `EWMStorageBin` | ✓ | |  | `lgpla` |
+| `Product` | ✓ | |  | `matnr` |
+| `ProductUUID` |  | |  | `cast( matid as raw16 preserving type )` |
+| `EWMStorageType` |  | |  | `lgtyp` |
+| `EWMMaximumStorageQuantity` |  | |  | `maxqty` |
+| `EWMMaximumStorageQuantityUnit` |  | |  | `maxqty_uom_dsp` |
+| `EWMMinimumStorageQuantity` |  | |  | `minqty` |
+| `EWMMinimumStorageQuantityUnit` |  | |  | `minqty_uom_dsp` |
+| `EWMFixedBinAssgmtCreatedDteTme` |  | |  | `cast ( created_at as ewm_de_fixedbinassgmtcreateddt preserving type )` |
+| `EWMFixedBinAssgmtCreatedByUser` |  | |  | `cast ( created_by as ewm_de_fixedbinassgmtcreatedby preserving type )` |
 
 ## Source Code
 

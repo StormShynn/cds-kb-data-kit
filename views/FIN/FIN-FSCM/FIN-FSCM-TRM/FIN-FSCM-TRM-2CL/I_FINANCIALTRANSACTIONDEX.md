@@ -29,145 +29,145 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `FiancialTransaction.CompanyCode` |
-| key `FinancialTransaction` | `FiancialTransaction.FinancialTransaction` |
-| `FinTransCreationDate` | `FiancialTransaction.FinTransCreationDate` |
-| `FinTransCreationTime` | `FiancialTransaction.FinTransCreationTime` |
-| `LastChangeDate` | `FiancialTransaction.LastChangeDate` |
-| `FinInstrumentLastChangedTime` | `FiancialTransaction.FinInstrumentLastChangedTime` |
-| `TreasuryContractType` | `FiancialTransaction.TreasuryContractType` |
-| `FinancialInstrProductCategory` | `FiancialTransaction.FinancialInstrProductCategory` |
-| `FinancialInstrumentProductType` | `FiancialTransaction.FinancialInstrumentProductType` |
-| `FinInstrTransactionCategory` | `FiancialTransaction.FinInstrTransactionCategory` |
-| `FinancialInstrTransactionType` | `FiancialTransaction.FinancialInstrTransactionType` |
-| `TermStartDate` | `FiancialTransaction.TermStartDate` |
-| `FinTransNoticePeriod` | `FiancialTransaction.FinTransNoticePeriod` |
-| `FinTransNoticePeriodUnit` | `FiancialTransaction.FinTransNoticePeriodUnit` |
-| `FinTransFactoryCalendar1` | `FiancialTransaction.FinTransFactoryCalendar1` |
-| `FinTransFactoryCalendar2` | `FiancialTransaction.FinTransFactoryCalendar2` |
-| `Counterparty` | `FiancialTransaction.Counterparty` |
-| `FinancialInstrumentGuarantor` | `FiancialTransaction.FinancialInstrumentGuarantor` |
-| `Portfolio` | `FiancialTransaction.Portfolio` |
-| `TreasuryFinanceProject` | `FiancialTransaction.TreasuryFinanceProject` |
-| `FinancialInstrumentAssignment` | `FiancialTransaction.FinancialInstrumentAssignment` |
-| `FinancialInstrumentReference` | `FiancialTransaction.FinancialInstrumentReference` |
-| `FinancialInstrCharacteristic` | `FiancialTransaction.FinancialInstrCharacteristic` |
-| `ControllingArea` | `_CompanyCode.ControllingArea` |
-| `CostCenter` | `FiancialTransaction.CostCenter` |
-| `HedgingClassification` | `FiancialTransaction.HedgingClassification` |
-| `HedgeRequestIdentifier` | `FiancialTransaction.HedgeRequestIdentifier` |
-| `ProfitCenter` | `FiancialTransaction.ProfitCenter` |
-| `WBSElementInternalID` | `FiancialTransaction.WBSElementInternalID` |
-| `TreasuryFacilityCompanyCode` | `FiancialTransaction.TreasuryFacilityCompanyCode` |
-| `TreasuryFacility` | `FiancialTransaction.TreasuryFacility` |
-| `FinancialInstrumentStatus` | `FiancialTransaction.FinancialInstrumentStatus` |
-| `FinTransReleaseStatus` | `FiancialTransaction.FinTransReleaseStatus` |
-| `TransactionCurrency` | `FiancialTransaction.TransactionCurrency` |
-| `FinInstrumentOutgoingCurrency` | `FiancialTransaction.FinInstrumentOutgoingCurrency` |
-| `FinInstrumentIncomingCurrency` | `FiancialTransaction.FinInstrumentIncomingCurrency` |
-| `TradedCurrency` | `FiancialTransaction.TradedCurrency` |
-| `SecurityClass` | `FiancialTransaction.SecurityClass` |
-| `ClassificationOfFinInstr` | `FiancialTransaction.ClassificationOfFinInstr` |
-| `SecurityAccount` | `FiancialTransaction.SecurityAccount` |
-| `FinTransIsRiskMitigating` | `FiancialTransaction.FinTransIsRiskMitigating` |
-| `FinInstrLastActiveActivity` | `FiancialTransaction.FinInstrLastActiveActivity` |
-| `TrsyTradedAmountBuySellCode` | `FiancialTransaction.TrsyTradedAmountBuySellCode` |
-| `Segment` | `FiancialTransaction.Segment` |
-| `OnBehalfOfCompany` | `FiancialTransaction.OnBehalfOfCompany` |
-| `MarketIdentifierCode` | `FiancialTransaction.MarketIdentifierCode` |
-| `FinTransRoundingCategory` | `FiancialTransaction.FinTransRoundingCategory` |
-| `FinTransGeneralValuationClass` | `FiancialTransaction.FinTransGeneralValuationClass` |
-| `Fund` | `FiancialTransaction.Fund` |
-| `GrantID` | `FiancialTransaction.GrantID` |
-| `FinTransAuthorizationGroup` | `FiancialTransaction.FinTransAuthorizationGroup` |
-| `BusinessPlace` | `FiancialTransaction.BusinessPlace` |
-| `FunctionalArea` | `FiancialTransaction.FunctionalArea` |
-| `TrsyPosCustomDiffntnTerm1` | `FiancialTransaction.TrsyPosCustomDiffntnTerm1` |
-| `TrsyPosCustomDiffntnTerm2` | `FiancialTransaction.TrsyPosCustomDiffntnTerm2` |
-| `TrsyPosCustomDiffntnTerm3` | `FiancialTransaction.TrsyPosCustomDiffntnTerm3` |
-| `TrsyPosCustomDiffntnTerm4` | `FiancialTransaction.TrsyPosCustomDiffntnTerm4` |
-| `TrsyPosCustomDiffntnTerm5` | `FiancialTransaction.TrsyPosCustomDiffntnTerm5` |
-| `UniqueProductIdentifier` | `FiancialTransaction.UniqueProductIdentifier` |
-| `InternationalSecuritiesIdnNmbr` | `FiancialTransaction.InternationalSecuritiesIdnNmbr` |
-| `ReportTrackingNumber` | `FiancialTransaction.ReportTrackingNumber` |
-| `FinTransOptionNumber` | `FiancialTransaction.FinTransOptionNumber` |
-| `FinancialInstrActivityCategory` | `CurrentActivity.FinancialInstrActivityCategory` |
-| `TermEndDate` | `CurrentActivity.TermEndDate` |
-| `FinTransTermCategory` | `CurrentActivity.FinTransTermCategory` |
-| `FinTransTermStartEndInclusive` | `CurrentActivity.FinTransTermStartEndInclusive` |
-| `FinTransNoticeDate` | `CurrentActivity.FinTransNoticeDate` |
-| `FinTransActyConclusionDate` | `CurrentActivity.FinTransActyConclusionDate` |
-| `FinTransActyConclusionTime` | `CurrentActivity.FinTransActyConclusionTime` |
-| `FinTransActyConclusionTimeZone` | `CurrentActivity.FinTransActyConclusionTimeZone` |
-| `FinTransRolloverDate` | `CurrentActivity.FinTransRolloverDate` |
-| `FinTransExerciseDate` | `CurrentActivity.FinTransExerciseDate` |
-| `FinTransOrderValidityEndDate` | `CurrentActivity.FinTransOrderValidityEndDate` |
-| `FinTransFixingDate` | `CurrentActivity.FinTransFixingDate` |
-| `ForeignExchangeFixingReference` | `CurrentActivity.ForeignExchangeFixingReference` |
-| `Trader` | `CurrentActivity.Trader` |
-| `FinancialInstrContactPerson` | `CurrentActivity.FinancialInstrContactPerson` |
-| `FinInstrExternalReference` | `CurrentActivity.FinInstrExternalReference` |
-| `TreasuryReversalReason` | `CurrentActivity.TreasuryReversalReason` |
-| `LeadingCurrency` | `CurrentActivity.LeadingCurrency` |
-| `FollowingCurrency` | `CurrentActivity.FollowingCurrency` |
-| `ExchangeRate` | `CurrentActivity.ExchangeRate` |
-| `SpotExchangeRate` | `CurrentActivity.SpotExchangeRate` |
-| `SwapExchangeRate` | `CurrentActivity.SwapExchangeRate` |
-| `LiquidityEffectValue` | `CurrentActivity.LiquidityEffectValue` |
-| `CurrencyPair` | `CurrentActivity.CurrencyPair` |
-| `EffectiveInterestRate` | `CurrentActivity.EffectiveInterestRate` |
-| `EffectiveInterestMethod` | `CurrentActivity.EffectiveInterestMethod` |
-| `LetterOfCredit` | `CurrentActivity.LetterOfCredit` |
-| `TreasuryApplicant` | `CurrentActivity.TreasuryApplicant` |
-| `TreasuryBeneficiary` | `CurrentActivity.TreasuryBeneficiary` |
-| `TrsyMnllyEnteredBnfcyName` | `CurrentActivity.TrsyMnllyEnteredBnfcyName` |
-| `TrsyMnllyEnteredApplcntName` | `CurrentActivity.TrsyMnllyEnteredApplcntName` |
-| `TreasuryAdvisingBank` | `CurrentActivity.TreasuryAdvisingBank` |
-| `TreasuryIssuingBank` | `CurrentActivity.TreasuryIssuingBank` |
-| `BankGuaranteeNumber` | `CurrentActivity.BankGuaranteeNumber` |
-| `BankGuaranteeType` | `CurrentActivity.BankGuaranteeType` |
-| `_CompanyCode` | *Association* |
-| `_ContractType` | *Association* |
-| `_FinancialInstrProdCat` | *Association* |
-| `_FinancialInstrProdType` | *Association* |
-| `_FinInstrTransCat` | *Association* |
-| `_FinancialInstrTransType` | *Association* |
-| `_NoticePeriodUnit` | *Association* |
-| `_Calendar` | *Association* |
-| `_Calendar2` | *Association* |
-| `_Counterparty` | *Association* |
-| `_Guarantor` | *Association* |
-| `_Portfolio` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CostCenter` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_Assignment` | *Association* |
-| `_Reference` | *Association* |
-| `_Characteristics` | *Association* |
-| `_GeneralValuationClass` | *Association* |
-| `_TreasuryHedgingClassfctn` | *Association* |
-| `_WBSElement` | *Association* |
-| `_FacilityCompanyCode` | *Association* |
-| `_Status` | *Association* |
-| `_ReleaseStatus` | *Association* |
-| `_Currency` | *Association* |
-| `_OutgoingCurrency` | *Association* |
-| `_IncomingCurrency` | *Association* |
-| `_TradedCurrency` | *Association* |
-| `_SecurityClass` | *Association* |
-| `_SecurityAccount` | *Association* |
-| `_TimeZone` | *Association* |
-| `_FixingReference` | *Association* |
-| `_ReversalReason` | *Association* |
-| `_LeadingCurrency` | *Association* |
-| `_FollowingCurrency` | *Association* |
-| `_Applicant` | *Association* |
-| `_Beneficiary` | *Association* |
-| `_AdvisingBank` | *Association* |
-| `_IssuingBank` | *Association* |
-| `_ActivityCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `FinancialTransaction` | ✓ | |  |  |
+| `FinTransCreationDate` |  | |  |  |
+| `FinTransCreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `FinInstrumentLastChangedTime` |  | |  |  |
+| `TreasuryContractType` |  | |  |  |
+| `FinancialInstrProductCategory` |  | |  |  |
+| `FinancialInstrumentProductType` |  | |  |  |
+| `FinInstrTransactionCategory` |  | |  |  |
+| `FinancialInstrTransactionType` |  | |  |  |
+| `TermStartDate` |  | |  |  |
+| `FinTransNoticePeriod` |  | |  |  |
+| `FinTransNoticePeriodUnit` |  | |  |  |
+| `FinTransFactoryCalendar1` |  | |  |  |
+| `FinTransFactoryCalendar2` |  | |  |  |
+| `Counterparty` |  | |  |  |
+| `FinancialInstrumentGuarantor` |  | |  |  |
+| `Portfolio` |  | |  |  |
+| `TreasuryFinanceProject` |  | |  |  |
+| `FinancialInstrumentAssignment` |  | |  |  |
+| `FinancialInstrumentReference` |  | |  |  |
+| `FinancialInstrCharacteristic` |  | |  |  |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
+| `CostCenter` |  | |  |  |
+| `HedgingClassification` |  | |  |  |
+| `HedgeRequestIdentifier` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `TreasuryFacilityCompanyCode` |  | |  |  |
+| `TreasuryFacility` |  | |  |  |
+| `FinancialInstrumentStatus` |  | |  |  |
+| `FinTransReleaseStatus` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `FinInstrumentOutgoingCurrency` |  | |  |  |
+| `FinInstrumentIncomingCurrency` |  | |  |  |
+| `TradedCurrency` |  | |  |  |
+| `SecurityClass` |  | |  |  |
+| `ClassificationOfFinInstr` |  | |  |  |
+| `SecurityAccount` |  | |  |  |
+| `FinTransIsRiskMitigating` |  | |  |  |
+| `FinInstrLastActiveActivity` |  | |  |  |
+| `TrsyTradedAmountBuySellCode` |  | |  |  |
+| `Segment` |  | |  |  |
+| `OnBehalfOfCompany` |  | |  |  |
+| `MarketIdentifierCode` |  | |  |  |
+| `FinTransRoundingCategory` |  | |  |  |
+| `FinTransGeneralValuationClass` |  | |  |  |
+| `Fund` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `FinTransAuthorizationGroup` |  | |  |  |
+| `BusinessPlace` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `TrsyPosCustomDiffntnTerm1` |  | |  |  |
+| `TrsyPosCustomDiffntnTerm2` |  | |  |  |
+| `TrsyPosCustomDiffntnTerm3` |  | |  |  |
+| `TrsyPosCustomDiffntnTerm4` |  | |  |  |
+| `TrsyPosCustomDiffntnTerm5` |  | |  |  |
+| `UniqueProductIdentifier` |  | |  |  |
+| `InternationalSecuritiesIdnNmbr` |  | |  |  |
+| `ReportTrackingNumber` |  | |  |  |
+| `FinTransOptionNumber` |  | |  |  |
+| `FinancialInstrActivityCategory` |  | |  |  |
+| `TermEndDate` |  | |  |  |
+| `FinTransTermCategory` |  | |  |  |
+| `FinTransTermStartEndInclusive` |  | |  |  |
+| `FinTransNoticeDate` |  | |  |  |
+| `FinTransActyConclusionDate` |  | |  |  |
+| `FinTransActyConclusionTime` |  | |  |  |
+| `FinTransActyConclusionTimeZone` |  | |  |  |
+| `FinTransRolloverDate` |  | |  |  |
+| `FinTransExerciseDate` |  | |  |  |
+| `FinTransOrderValidityEndDate` |  | |  |  |
+| `FinTransFixingDate` |  | |  |  |
+| `ForeignExchangeFixingReference` |  | |  |  |
+| `Trader` |  | |  |  |
+| `FinancialInstrContactPerson` |  | |  |  |
+| `FinInstrExternalReference` |  | |  |  |
+| `TreasuryReversalReason` |  | |  |  |
+| `LeadingCurrency` |  | |  |  |
+| `FollowingCurrency` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `SpotExchangeRate` |  | |  |  |
+| `SwapExchangeRate` |  | |  |  |
+| `LiquidityEffectValue` |  | |  |  |
+| `CurrencyPair` |  | |  |  |
+| `EffectiveInterestRate` |  | |  |  |
+| `EffectiveInterestMethod` |  | |  |  |
+| `LetterOfCredit` |  | |  |  |
+| `TreasuryApplicant` |  | |  |  |
+| `TreasuryBeneficiary` |  | |  |  |
+| `TrsyMnllyEnteredBnfcyName` |  | |  |  |
+| `TrsyMnllyEnteredApplcntName` |  | |  |  |
+| `TreasuryAdvisingBank` |  | |  |  |
+| `TreasuryIssuingBank` |  | |  |  |
+| `BankGuaranteeNumber` |  | |  |  |
+| `BankGuaranteeType` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_ContractType` | | ✓ | | |
+| `_FinancialInstrProdCat` | | ✓ | | |
+| `_FinancialInstrProdType` | | ✓ | | |
+| `_FinInstrTransCat` | | ✓ | | |
+| `_FinancialInstrTransType` | | ✓ | | |
+| `_NoticePeriodUnit` | | ✓ | | |
+| `_Calendar` | | ✓ | | |
+| `_Calendar2` | | ✓ | | |
+| `_Counterparty` | | ✓ | | |
+| `_Guarantor` | | ✓ | | |
+| `_Portfolio` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_Assignment` | | ✓ | | |
+| `_Reference` | | ✓ | | |
+| `_Characteristics` | | ✓ | | |
+| `_GeneralValuationClass` | | ✓ | | |
+| `_TreasuryHedgingClassfctn` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_FacilityCompanyCode` | | ✓ | | |
+| `_Status` | | ✓ | | |
+| `_ReleaseStatus` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_OutgoingCurrency` | | ✓ | | |
+| `_IncomingCurrency` | | ✓ | | |
+| `_TradedCurrency` | | ✓ | | |
+| `_SecurityClass` | | ✓ | | |
+| `_SecurityAccount` | | ✓ | | |
+| `_TimeZone` | | ✓ | | |
+| `_FixingReference` | | ✓ | | |
+| `_ReversalReason` | | ✓ | | |
+| `_LeadingCurrency` | | ✓ | | |
+| `_FollowingCurrency` | | ✓ | | |
+| `_Applicant` | | ✓ | | |
+| `_Beneficiary` | | ✓ | | |
+| `_AdvisingBank` | | ✓ | | |
+| `_IssuingBank` | | ✓ | | |
+| `_ActivityCategory` | | ✓ | | |
 
 ## Associations
 

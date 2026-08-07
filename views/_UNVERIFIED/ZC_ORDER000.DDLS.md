@@ -33,20 +33,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UUID` | `UUID` |
-| `OrderID` | `OrderID` |
-| `OrderDate` | `OrderDate` |
-| `CustomerName` | `CustomerName` |
-| `LocalCreatedBy` | `LocalCreatedBy` |
-| `LocalCreatedAt` | `LocalCreatedAt` |
-| `LocalLastChangedBy` | `LocalLastChangedBy` |
-| `LocalLastChangedAt` | `LocalLastChangedAt` |
-| `LastChangedAt` | `LastChangedAt` |
-| `Status` | `Status` |
-| `_BaseEntity` | *Association* |
-| `_OrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UUID` | ✓ | |  |  |
+| `OrderID` |  | |  |  |
+| `OrderDate` |  | |  |  |
+| `CustomerName` |  | |  |  |
+| `LocalCreatedBy` |  | |  |  |
+| `LocalCreatedAt` |  | |  |  |
+| `LocalLastChangedBy` |  | |  |  |
+| `LocalLastChangedAt` |  | |  |  |
+| `LastChangedAt` |  | |  |  |
+| `Status` |  | |  |  |
+| `_BaseEntity` | | ✓ | | |
+| `_OrderItem` | | ✓ | | |
 
 ## Associations
 

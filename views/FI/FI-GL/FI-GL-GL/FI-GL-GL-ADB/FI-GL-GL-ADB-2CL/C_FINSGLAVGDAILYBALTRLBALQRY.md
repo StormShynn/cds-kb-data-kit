@@ -28,100 +28,100 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Ledger` | `] } Ledger` |
-| `CompanyCode` | `CompanyCode` |
-| `CompanyCodeName` | `_CompanyCode.CompanyCodeName` |
-| `GLAccount` | `GLAccount` |
-| `localized` | `_GLAccountInChartOfAccounts._Text.GLAccountName : localized` |
-| `PostingDate` | `PostingDate` |
-| `FiscalYear` | `FiscalYear` |
-| `LedgerFiscalYear` | `LedgerFiscalYear` |
-| `ProfitCenter` | `ProfitCenter` |
-| `ControllingArea` | `ControllingArea` |
-| `ControllingAreaName` | `_ControllingArea.ControllingAreaName` |
-| `Segment` | `Segment` |
-| `CostCenter` | `CostCenter` |
-| `PartnerProfitCenter` | `PartnerProfitCenter` |
-| `PartnerFunctionalArea` | `PartnerFunctionalArea` |
-| `PartnerCompany` | `PartnerCompany` |
-| `PartnerSegment` | `PartnerSegment` |
-| `FiscalYearVariant` | `FiscalYearVariant` |
-| `ChartOfAccounts` | `ChartOfAccounts` |
-| `FinancialServicesProductGroup` | `}] FinancialServicesProductGroup` |
-| `FinancialServicesBranch` | `}] FinancialServicesBranch` |
-| `FinancialDataSource` | `}] FinancialDataSource` |
-| `CustomerGroup` | `}] CustomerGroup` |
-| `CustomerSupplierCountry` | `}] CustomerSupplierCountry` |
-| `CustomerSupplierIndustry` | `}] CustomerSupplierIndustry` |
-| `cuky` | `virtual BalanceTransactionCurrency : abap.cuky` |
-| `AmountInBalanceTransacCrcy` | `curr_to_decfloat_amount( AmountInBalanceTransacCrcy )` |
-| `PriorDayBalInBalTransCrcy` | `PriorDayBalInBalTransCrcy` |
-| `CurDayActyAmtInBalTransCrcy` | `CurDayActyAmtInBalTransCrcy` |
-| `PriorMonthBalInBalTransCrcy` | `PriorMonthBalInBalTransCrcy` |
-| `CurMonthActyAmtInBalTransCrcy` | `CurMonthActyAmtInBalTransCrcy` |
-| `YTDBalInBalTransCrcy` | `YTDBalInBalTransCrcy` |
-| `MTDAvgDailyBalInBalTransCrcy` | `MTDAvgDailyBalInBalTransCrcy` |
-| `QTDAvgDailyBalInBalTransCrcy` | `QTDAvgDailyBalInBalTransCrcy` |
-| `YTDAvgDailyBalInBalTransCrcy` | `YTDAvgDailyBalInBalTransCrcy` |
-| `MTDAvgActyAmtInBalTransCrcy` | `MTDAvgActyAmtInBalTransCrcy` |
-| `QTDActyAmtInBalTransCrcy` | `QTDActyAmtInBalTransCrcy` |
-| `AmountInCompanyCodeCurrency` | `curr_to_decfloat_amount( AmountInCompanyCodeCurrency )` |
-| `PriorDayBalInCCCrcy` | `PriorDayBalInCCCrcy` |
-| `CurDayActyAmtInCCCrcy` | `CurDayActyAmtInCCCrcy` |
-| `PriorMonthBalInCCCrcy` | `PriorMonthBalInCCCrcy` |
-| `CurMonthActyAmtInCCCrcy` | `CurMonthActyAmtInCCCrcy` |
-| `YTDBalInCCCrcy` | `YTDBalInCCCrcy` |
-| `MTDAvgDailyBalInCCCrcy` | `MTDAvgDailyBalInCCCrcy` |
-| `QTDAvgDailyBalInCCCrcy` | `QTDAvgDailyBalInCCCrcy` |
-| `YTDAvgDailyBalInCCCrcy` | `YTDAvgDailyBalInCCCrcy` |
-| `MTDAvgActyAmtInCCCrcy` | `MTDAvgActyAmtInCCCrcy` |
-| `QTDActyAmtInCCCrcy` | `QTDActyAmtInCCCrcy` |
-| `AmountInGlobalCurrency` | `curr_to_decfloat_amount( AmountInGlobalCurrency )` |
-| `PriorDayBalInGlobCrcy` | `PriorDayBalInGlobCrcy` |
-| `CurDayActyAmtInGlobCrcy` | `CurDayActyAmtInGlobCrcy` |
-| `PriorMonthBalInGlobCrcy` | `PriorMonthBalInGlobCrcy` |
-| `CurMonthActyAmtInGlobCrcy` | `CurMonthActyAmtInGlobCrcy` |
-| `YTDBalInGlobCrcy` | `YTDBalInGlobCrcy` |
-| `MTDAvgDailyBalInGlobCrcy` | `MTDAvgDailyBalInGlobCrcy` |
-| `QTDAvgDailyBalInGlobCrcy` | `QTDAvgDailyBalInGlobCrcy` |
-| `YTDAvgDailyBalInGlobCrcy` | `YTDAvgDailyBalInGlobCrcy` |
-| `MTDAvgActyAmtInGlobCrcy` | `MTDAvgActyAmtInGlobCrcy` |
-| `QTDActyAmtInGlobCrcy` | `QTDActyAmtInGlobCrcy` |
-| `AmountInFunctionalCurrency` | `curr_to_decfloat_amount( AmountInFunctionalCurrency )` |
-| `PriorDayBalInFuncnlCrcy` | `PriorDayBalInFuncnlCrcy` |
-| `CurDayActyAmtInFuncnlCrcy` | `CurDayActyAmtInFuncnlCrcy` |
-| `PriorMonthBalInFuncnlCrcy` | `PriorMonthBalInFuncnlCrcy` |
-| `CurMonthActyAmtInFuncnlCrcy` | `CurMonthActyAmtInFuncnlCrcy` |
-| `YTDBalInFuncnlCrcy` | `YTDBalInFuncnlCrcy` |
-| `MTDAvgDailyBalInFuncnlCrcy` | `MTDAvgDailyBalInFuncnlCrcy` |
-| `QTDAvgDailyBalInFuncnlCrcy` | `QTDAvgDailyBalInFuncnlCrcy` |
-| `YTDAvgDailyBalInFuncnlCrcy` | `YTDAvgDailyBalInFuncnlCrcy` |
-| `MTDAvgActyAmtInFuncnlCrcy` | `MTDAvgActyAmtInFuncnlCrcy` |
-| `QTDActyAmtInFuncnlCrcy` | `QTDActyAmtInFuncnlCrcy` |
-| `AmountInFreeDefinedCurrency1` | `curr_to_decfloat_amount( AmountInFreeDefinedCurrency1 )` |
-| `PriorDayBalInFDCrcy1` | `PriorDayBalInFDCrcy1` |
-| `CurDayActyAmtInFDCrcy1` | `CurDayActyAmtInFDCrcy1` |
-| `PriorMonthBalInFDCrcy1` | `PriorMonthBalInFDCrcy1` |
-| `CurMonthActyAmtInFDCrcy1` | `CurMonthActyAmtInFDCrcy1` |
-| `YTDBalInFDCrcy1` | `YTDBalInFDCrcy1` |
-| `MTDAvgDailyBalInFDCrcy1` | `MTDAvgDailyBalInFDCrcy1` |
-| `QTDAvgDailyBalInFDCrcy1` | `QTDAvgDailyBalInFDCrcy1` |
-| `YTDAvgDailyBalInFDCrcy1` | `YTDAvgDailyBalInFDCrcy1` |
-| `MTDAvgActyAmtInFDCrcy1` | `MTDAvgActyAmtInFDCrcy1` |
-| `QTDActyAmtInFDCrcy1` | `QTDActyAmtInFDCrcy1` |
-| `AmountInFreeDefinedCurrency2` | `curr_to_decfloat_amount( AmountInFreeDefinedCurrency2 )` |
-| `PriorDayBalInFDCrcy2` | `PriorDayBalInFDCrcy2` |
-| `CurDayActyAmtInFDCrcy2` | `CurDayActyAmtInFDCrcy2` |
-| `PriorMonthBalInFDCrcy2` | `PriorMonthBalInFDCrcy2` |
-| `CurMonthActyAmtInFDCrcy2` | `CurMonthActyAmtInFDCrcy2` |
-| `YTDBalInFDCrcy2` | `YTDBalInFDCrcy2` |
-| `MTDAvgDailyBalInFDCrcy2` | `MTDAvgDailyBalInFDCrcy2` |
-| `QTDAvgDailyBalInFDCrcy2` | `QTDAvgDailyBalInFDCrcy2` |
-| `YTDAvgDailyBalInFDCrcy2` | `YTDAvgDailyBalInFDCrcy2` |
-| `MTDAvgActyAmtInFDCrcy2` | `MTDAvgActyAmtInFDCrcy2` |
-| `QTDActyAmtInFDCrcy2` | `QTDActyAmtInFDCrcy2` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Ledger` |  | |  | `] } Ledger` |
+| `CompanyCode` |  | |  |  |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |
+| `GLAccount` |  | |  |  |
+| `localized` |  | |  | `_GLAccountInChartOfAccounts._Text.GLAccountName : localized` |
+| `PostingDate` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `LedgerFiscalYear` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ControllingAreaName` |  | | `_ControllingArea` | `ControllingAreaName` |
+| `Segment` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `PartnerProfitCenter` |  | |  |  |
+| `PartnerFunctionalArea` |  | |  |  |
+| `PartnerCompany` |  | |  |  |
+| `PartnerSegment` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `FinancialServicesProductGroup` |  | |  | `}] FinancialServicesProductGroup` |
+| `FinancialServicesBranch` |  | |  | `}] FinancialServicesBranch` |
+| `FinancialDataSource` |  | |  | `}] FinancialDataSource` |
+| `CustomerGroup` |  | |  | `}] CustomerGroup` |
+| `CustomerSupplierCountry` |  | |  | `}] CustomerSupplierCountry` |
+| `CustomerSupplierIndustry` |  | |  | `}] CustomerSupplierIndustry` |
+| `cuky` |  | |  | `virtual BalanceTransactionCurrency : abap.cuky` |
+| `AmountInBalanceTransacCrcy` |  | |  | `curr_to_decfloat_amount( AmountInBalanceTransacCrcy )` |
+| `PriorDayBalInBalTransCrcy` |  | |  |  |
+| `CurDayActyAmtInBalTransCrcy` |  | |  |  |
+| `PriorMonthBalInBalTransCrcy` |  | |  |  |
+| `CurMonthActyAmtInBalTransCrcy` |  | |  |  |
+| `YTDBalInBalTransCrcy` |  | |  |  |
+| `MTDAvgDailyBalInBalTransCrcy` |  | |  |  |
+| `QTDAvgDailyBalInBalTransCrcy` |  | |  |  |
+| `YTDAvgDailyBalInBalTransCrcy` |  | |  |  |
+| `MTDAvgActyAmtInBalTransCrcy` |  | |  |  |
+| `QTDActyAmtInBalTransCrcy` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `curr_to_decfloat_amount( AmountInCompanyCodeCurrency )` |
+| `PriorDayBalInCCCrcy` |  | |  |  |
+| `CurDayActyAmtInCCCrcy` |  | |  |  |
+| `PriorMonthBalInCCCrcy` |  | |  |  |
+| `CurMonthActyAmtInCCCrcy` |  | |  |  |
+| `YTDBalInCCCrcy` |  | |  |  |
+| `MTDAvgDailyBalInCCCrcy` |  | |  |  |
+| `QTDAvgDailyBalInCCCrcy` |  | |  |  |
+| `YTDAvgDailyBalInCCCrcy` |  | |  |  |
+| `MTDAvgActyAmtInCCCrcy` |  | |  |  |
+| `QTDActyAmtInCCCrcy` |  | |  |  |
+| `AmountInGlobalCurrency` |  | |  | `curr_to_decfloat_amount( AmountInGlobalCurrency )` |
+| `PriorDayBalInGlobCrcy` |  | |  |  |
+| `CurDayActyAmtInGlobCrcy` |  | |  |  |
+| `PriorMonthBalInGlobCrcy` |  | |  |  |
+| `CurMonthActyAmtInGlobCrcy` |  | |  |  |
+| `YTDBalInGlobCrcy` |  | |  |  |
+| `MTDAvgDailyBalInGlobCrcy` |  | |  |  |
+| `QTDAvgDailyBalInGlobCrcy` |  | |  |  |
+| `YTDAvgDailyBalInGlobCrcy` |  | |  |  |
+| `MTDAvgActyAmtInGlobCrcy` |  | |  |  |
+| `QTDActyAmtInGlobCrcy` |  | |  |  |
+| `AmountInFunctionalCurrency` |  | |  | `curr_to_decfloat_amount( AmountInFunctionalCurrency )` |
+| `PriorDayBalInFuncnlCrcy` |  | |  |  |
+| `CurDayActyAmtInFuncnlCrcy` |  | |  |  |
+| `PriorMonthBalInFuncnlCrcy` |  | |  |  |
+| `CurMonthActyAmtInFuncnlCrcy` |  | |  |  |
+| `YTDBalInFuncnlCrcy` |  | |  |  |
+| `MTDAvgDailyBalInFuncnlCrcy` |  | |  |  |
+| `QTDAvgDailyBalInFuncnlCrcy` |  | |  |  |
+| `YTDAvgDailyBalInFuncnlCrcy` |  | |  |  |
+| `MTDAvgActyAmtInFuncnlCrcy` |  | |  |  |
+| `QTDActyAmtInFuncnlCrcy` |  | |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  | `curr_to_decfloat_amount( AmountInFreeDefinedCurrency1 )` |
+| `PriorDayBalInFDCrcy1` |  | |  |  |
+| `CurDayActyAmtInFDCrcy1` |  | |  |  |
+| `PriorMonthBalInFDCrcy1` |  | |  |  |
+| `CurMonthActyAmtInFDCrcy1` |  | |  |  |
+| `YTDBalInFDCrcy1` |  | |  |  |
+| `MTDAvgDailyBalInFDCrcy1` |  | |  |  |
+| `QTDAvgDailyBalInFDCrcy1` |  | |  |  |
+| `YTDAvgDailyBalInFDCrcy1` |  | |  |  |
+| `MTDAvgActyAmtInFDCrcy1` |  | |  |  |
+| `QTDActyAmtInFDCrcy1` |  | |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  | `curr_to_decfloat_amount( AmountInFreeDefinedCurrency2 )` |
+| `PriorDayBalInFDCrcy2` |  | |  |  |
+| `CurDayActyAmtInFDCrcy2` |  | |  |  |
+| `PriorMonthBalInFDCrcy2` |  | |  |  |
+| `CurMonthActyAmtInFDCrcy2` |  | |  |  |
+| `YTDBalInFDCrcy2` |  | |  |  |
+| `MTDAvgDailyBalInFDCrcy2` |  | |  |  |
+| `QTDAvgDailyBalInFDCrcy2` |  | |  |  |
+| `YTDAvgDailyBalInFDCrcy2` |  | |  |  |
+| `MTDAvgActyAmtInFDCrcy2` |  | |  |  |
+| `QTDActyAmtInFDCrcy2` |  | |  |  |
 
 ## Source Code
 

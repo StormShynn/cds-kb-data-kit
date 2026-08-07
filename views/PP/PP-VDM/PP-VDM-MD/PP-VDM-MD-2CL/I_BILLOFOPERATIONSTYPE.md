@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `cast(plnty as billofoperationstype preserving type)` |
-| `BillOfOperationsApplication` | `cast(plnaw as billofoperationsapplication preserving type)` |
-| `_Text` | *Association* |
-| `_BillOfOperationsApplication` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  | `cast(plnty as billofoperationstype preserving type)` |
+| `BillOfOperationsApplication` |  | |  | `cast(plnaw as billofoperationsapplication preserving type)` |
+| `_Text` | | ✓ | | |
+| `_BillOfOperationsApplication` | | ✓ | | |
 
 ## Associations
 

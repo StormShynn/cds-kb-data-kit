@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharacteristicAttributeCodeGrp` | `codegruppe` |
-| key `CharacteristicAttributeCode` | `code` |
-| `CharcAttributeCodeStatus` | `inaktiv` |
-| `CharcAttribCodeCreatedBy` | `qpcd.ersteller` |
-| `CharcAttribCodeCreatedOn` | `qpcd.e_datum` |
-| `CharcAttribCodeLastChgdBy` | `qpcd.aenderer` |
-| `CharcAttribCodeLastChangedOn` | `qpcd.a_datum` |
-| `_CharcAttributeCodeGrp` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharacteristicAttributeCodeGrp` | ✓ | |  | `codegruppe` |
+| `CharacteristicAttributeCode` | ✓ | |  | `code` |
+| `CharcAttributeCodeStatus` |  | |  | `inaktiv` |
+| `CharcAttribCodeCreatedBy` |  | |  | `ersteller` |
+| `CharcAttribCodeCreatedOn` |  | |  | `e_datum` |
+| `CharcAttribCodeLastChgdBy` |  | |  | `aenderer` |
+| `CharcAttribCodeLastChangedOn` |  | |  | `a_datum` |
+| `_CharcAttributeCodeGrp` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

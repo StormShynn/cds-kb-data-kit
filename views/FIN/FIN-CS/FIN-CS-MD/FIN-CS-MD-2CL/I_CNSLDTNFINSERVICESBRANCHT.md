@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `FinancialServicesBranch` | `cast( _Source.FinancialServicesBranch as fincs_financialservicesbranch preserving type )` |
-| `FinancialServicesBranchName` | `cast( _Source.FinancialServicesBranchName as fincs_finservicesbranchname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_FinancialServicesBranch` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `FinancialServicesBranch` | ✓ | |  | `cast( _Source.FinancialServicesBranch as fincs_financialservicesbranch preserving type )` |
+| `FinancialServicesBranchName` |  | |  | `cast( _Source.FinancialServicesBranchName as fincs_finservicesbranchname preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_FinancialServicesBranch` | | ✓ | | |
 
 ## Associations
 

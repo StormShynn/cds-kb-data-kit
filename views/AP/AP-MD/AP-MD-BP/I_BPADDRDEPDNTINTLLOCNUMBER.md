@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartnerAddrDepILN.partner` |
-| key `AddressID` | `BusinessPartnerAddrDepILN.addrnumber` |
-| `InternationalLocationNumber1` | `BusinessPartnerAddrDepILN.location_1` |
-| `InternationalLocationNumber2` | `BusinessPartnerAddrDepILN.location_2` |
-| `InternationalLocationNumber3` | `BusinessPartnerAddrDepILN.location_3` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `_BusinessPartner` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `AddressID` | ✓ | |  | `addrnumber` |
+| `InternationalLocationNumber1` |  | |  | `location_1` |
+| `InternationalLocationNumber2` |  | |  | `location_2` |
+| `InternationalLocationNumber3` |  | |  | `location_3` |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `_BusinessPartner` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
 
 ## Associations
 

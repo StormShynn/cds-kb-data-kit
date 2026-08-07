@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocIsReleasedForBilling` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `ServiceDocIsReldForBillingName` | `ddtext` |
-| `_SrvcDocIsRelForBillgSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocIsReleasedForBilling` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ServiceDocIsReldForBillingName` |  | |  | `ddtext` |
+| `_SrvcDocIsRelForBillgSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

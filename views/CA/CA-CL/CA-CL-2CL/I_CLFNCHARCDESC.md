@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcInternalID` | `cast ( CharcDesc.atinn as atinn_no_conv preserving type )` |
-| key `Language` | `CharcDesc.spras` |
-| key `TimeIntervalNumber` | `CharcDesc.adzhl` |
-| `CharcDescription` | `cast ( CharcDesc.atbez as charcdescription preserving type )` |
-| `ChangeNumber` | `CharcDesc.aennr` |
-| `ValidityStartDate` | `CharcDesc.datuv` |
-| `ValidityEndDate` | `CharcDesc.datub` |
-| `IsDeleted` | `CharcDesc.lkenz` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  | `cast ( CharcDesc.atinn as atinn_no_conv preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `TimeIntervalNumber` | ✓ | |  | `adzhl` |
+| `CharcDescription` |  | |  | `cast ( CharcDesc.atbez as charcdescription preserving type )` |
+| `ChangeNumber` |  | |  | `aennr` |
+| `ValidityStartDate` |  | |  | `datuv` |
+| `ValidityEndDate` |  | |  | `datub` |
+| `IsDeleted` |  | |  | `lkenz` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

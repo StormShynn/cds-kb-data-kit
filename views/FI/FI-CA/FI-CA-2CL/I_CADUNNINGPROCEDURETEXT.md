@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningProcedure` | `mahnv` |
-| key `Language` | `spras` |
-| `CADunningProcedureName` | `mtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningProcedure` | ✓ | |  | `mahnv` |
+| `Language` | ✓ | |  | `spras` |
+| `CADunningProcedureName` |  | |  | `mtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

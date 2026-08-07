@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityManagementSystem` | `qssysfam` |
-| key `QualityMgmtSystemForSupplier` | `qssys` |
-| `_QualityManagementSystem` | *Association* |
-| `_QualityMgmtSystemForSupplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityManagementSystem` | ✓ | |  | `qssysfam` |
+| `QualityMgmtSystemForSupplier` | ✓ | |  | `qssys` |
+| `_QualityManagementSystem` | | ✓ | | |
+| `_QualityMgmtSystemForSupplier` | | ✓ | | |
 
 ## Associations
 

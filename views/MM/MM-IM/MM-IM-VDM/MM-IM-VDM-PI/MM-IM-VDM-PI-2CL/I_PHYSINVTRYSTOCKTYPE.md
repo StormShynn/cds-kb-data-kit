@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PhysicalInventoryStockType` | `bstar` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PhysicalInventoryStockType` | ✓ | |  | `bstar` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

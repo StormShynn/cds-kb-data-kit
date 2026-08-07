@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionDateUUID` | `LegalTransactionDateUUID` |
-| `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LglCntntMFromDate` | `LglCntntMFromDate` |
-| `LglCntntMToDate` | `LglCntntMToDate` |
-| `LglCntntMDateType` | `LglCntntMDateType` |
-| `LegalTransDateChangeReason` | `LegalTransDateChangeReason` |
-| `LegalTransactionMandatoryFlag` | `LegalTransactionMandatoryFlag` |
-| `LglCntntMIsIntegRelevant` | `LglCntntMIsIntegRelevant` |
-| `LglCntntMIsAddedByIntegVarbl` | `LglCntntMIsAddedByIntegVarbl` |
-| `_LegalTransaction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionDateUUID` | ✓ | |  |  |
+| `LegalTransactionUUID` |  | |  |  |
+| `LglCntntMFromDate` |  | |  |  |
+| `LglCntntMToDate` |  | |  |  |
+| `LglCntntMDateType` |  | |  |  |
+| `LegalTransDateChangeReason` |  | |  |  |
+| `LegalTransactionMandatoryFlag` |  | |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |
+| `_LegalTransaction` | | ✓ | | |
 
 ## Source Code
 

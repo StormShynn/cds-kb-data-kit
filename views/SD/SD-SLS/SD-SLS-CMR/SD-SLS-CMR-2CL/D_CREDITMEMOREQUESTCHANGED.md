@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EventRaisedDateTime` | `vdm_lastchangedon` |
-| `CreditMemoRequestType` | `auart_unv` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `OrganizationDivision` | `spart` |
-| `SoldToParty` | `kunnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
+| `CreditMemoRequestType` |  | |  | `auart_unv` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SoldToParty` |  | |  | `kunnr` |
 
 ## Source Code
 

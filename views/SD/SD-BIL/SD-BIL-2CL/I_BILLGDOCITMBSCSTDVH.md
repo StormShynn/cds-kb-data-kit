@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `BillingDocument` |
-| key `BillingDocumentItem` | `BillingDocumentItem` |
-| `BillingDocumentItemText` | `BillingDocumentItemText` |
-| `BillingDocumentType` | `BillingDocumentType` |
-| `SalesOrganization` | `SalesOrganization` |
-| `_BillingDocumentBasic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `BillingDocumentItem` | ✓ | |  |  |
+| `BillingDocumentItemText` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `_BillingDocumentBasic` | | ✓ | | |
 
 ## Source Code
 

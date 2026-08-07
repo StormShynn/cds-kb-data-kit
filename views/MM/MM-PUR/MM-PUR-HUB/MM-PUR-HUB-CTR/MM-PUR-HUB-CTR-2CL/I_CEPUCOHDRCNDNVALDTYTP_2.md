@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `_CntrlPurContrHdrCndnAmount` | *Association* |
-| `_CentralPurchaseContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `_CntrlPurContrHdrCndnAmount` | | ✓ | | |
+| `_CentralPurchaseContract` | | ✓ | | |
 
 ## Source Code
 

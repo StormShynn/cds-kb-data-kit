@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `_CnsldtnGLAccount.ChartOfAccounts` |
-| key `GLAccount` | `_CnsldtnGLAccount.GLAccount` |
-| `CnsldtnIsAdditionalMasterData` | `_CnsldtnGLAccount.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnGLAccountTextTP` | `_Text as _Text : redirected to composition child I_CnsldtnGLAccountTextTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | | `_CnsldtnGLAccount` | `ChartOfAccounts` |
+| `GLAccount` | ✓ | | `_CnsldtnGLAccount` | `GLAccount` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnGLAccount` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnGLAccountTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnGLAccountTextTP` |
 
 ## Source Code
 

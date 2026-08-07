@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlanningLevel` | `ebene` |
-| key `Language` | `spras` |
-| `PlanningLevelDescription` | `cast( ltext as fclm_pl_desc preserving type )` |
-| `PlanningLevelName` | `cast( ktext as fclm_pl_name preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlanningLevel` | ✓ | |  | `ebene` |
+| `Language` | ✓ | |  | `spras` |
+| `PlanningLevelDescription` |  | |  | `cast( ltext as fclm_pl_desc preserving type )` |
+| `PlanningLevelName` |  | |  | `cast( ktext as fclm_pl_name preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

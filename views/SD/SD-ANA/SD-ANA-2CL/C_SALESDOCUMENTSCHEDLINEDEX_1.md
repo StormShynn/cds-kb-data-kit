@@ -30,112 +30,112 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `ScheduleLine.SalesDocument` |
-| key `SalesDocumentItem` | `ScheduleLine.SalesDocumentItem` |
-| key `ScheduleLine` | `ScheduleLine.ScheduleLine` |
-| `CreationDate` | `SalesDocumentItem.CreationDate` |
-| `CreationTime` | `SalesDocumentItem.CreationTime` |
-| `LastChangeDate` | `SalesDocumentItem.LastChangeDate` |
-| `SDDocumentCategory` | `SalesDocument.SDDocumentCategory` |
-| `SalesDocumentType` | `SalesDocument.SalesDocumentType` |
-| `SalesDocumentItemCategory` | `SalesDocumentItem.SalesDocumentItemCategory` |
-| `ScheduleLineCategory` | `ScheduleLine.ScheduleLineCategory` |
-| `SalesOrganization` | `SalesDocument.SalesOrganization` |
-| `DistributionChannel` | `SalesDocument.DistributionChannel` |
-| `Division` | `SalesDocumentItem.Division` |
-| `SalesGroup` | `SalesDocument.SalesGroup` |
-| `SalesOffice` | `SalesDocument.SalesOffice` |
-| `PricingDate` | `SalesDocument.PricingDate` |
-| `NetPriceQuantityUnit` | `SalesDocumentItem.NetPriceQuantityUnit` |
-| `NetPriceQuantity` | `SalesDocumentItem.NetPriceQuantity` |
-| `NetPriceAmount` | `SalesDocumentItem.NetPriceAmount` |
-| `PriceDetnExchangeRate` | `SalesDocument.PriceDetnExchangeRate` |
-| `Material` | `SalesDocumentItem.Material` |
-| `MaterialGroup` | `SalesDocumentItem.MaterialGroup` |
-| `ProductGroup` | `SalesDocumentItem.ProductGroup` |
-| `Product` | `SalesDocumentItem.Product` |
-| `ProductHierarchyNode` | `SalesDocumentItem.ProductHierarchyNode` |
-| `ProductAvailabilityDate` | `ScheduleLine.ProductAvailabilityDate` |
-| `InternationalArticleNumber` | `SalesDocumentItem.InternationalArticleNumber` |
-| `OriginallyRequestedMaterial` | `SalesDocumentItem.OriginallyRequestedMaterial` |
-| `MaterialSubstitutionReason` | `SalesDocumentItem.MaterialSubstitutionReason` |
-| `Batch` | `SalesDocumentItem.Batch` |
-| `AdditionalMaterialGroup1` | `SalesDocumentItem.AdditionalMaterialGroup1` |
-| `AdditionalMaterialGroup2` | `SalesDocumentItem.AdditionalMaterialGroup2` |
-| `AdditionalMaterialGroup3` | `SalesDocumentItem.AdditionalMaterialGroup3` |
-| `AdditionalMaterialGroup4` | `SalesDocumentItem.AdditionalMaterialGroup4` |
-| `AdditionalMaterialGroup5` | `SalesDocumentItem.AdditionalMaterialGroup5` |
-| `SoldToParty` | `SalesDocument.SoldToParty` |
-| `AdditionalCustomerGroup1` | `SalesDocument.AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `SalesDocument.AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `SalesDocument.AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `SalesDocument.AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `SalesDocument.AdditionalCustomerGroup5` |
-| `CustomerGroup` | `SalesDocument.CustomerGroup` |
-| `SDDocumentReason` | `SalesDocument.SDDocumentReason` |
-| `IsConfirmedDelivSchedLine` | `ScheduleLine.IsConfirmedDelivSchedLine` |
-| `IsRequestedDelivSchedLine` | `ScheduleLine.IsRequestedDelivSchedLine` |
-| `TargetQuantityUnit` | `SalesDocumentItem.TargetQuantityUnit` |
-| `CorrectedQtyInOrderQtyUnit` | `ScheduleLine.CorrectedQtyInOrderQtyUnit` |
-| `OrderQuantityUnit` | `ScheduleLine.OrderQuantityUnit` |
-| `ConfdOrderQtyByMatlAvailCheck` | `ScheduleLine.ConfdOrderQtyByMatlAvailCheck` |
-| `ScheduleLineOrderQuantity` | `ScheduleLine.ScheduleLineOrderQuantity` |
-| `OpenConfdDelivQtyInBaseUnit` | `ScheduleLine.OpenConfdDelivQtyInBaseUnit` |
-| `OpenDeliveryNetAmount` | `ScheduleLine.OpenDeliveryNetAmount` |
-| `OpenReqdDelivQtyInOrdQtyUnit` | `ScheduleLine.OpenReqdDelivQtyInOrdQtyUnit` |
-| `OpenReqdDelivQtyInBaseUnit` | `ScheduleLine.OpenReqdDelivQtyInBaseUnit` |
-| `OpenConfdDelivQtyInOrdQtyUnit` | `ScheduleLine.OpenConfdDelivQtyInOrdQtyUnit` |
-| `TargetToBaseQuantityDnmntr` | `SalesDocumentItem.TargetToBaseQuantityDnmntr` |
-| `TargetToBaseQuantityNmrtr` | `SalesDocumentItem.TargetToBaseQuantityNmrtr` |
-| `OrderToBaseQuantityDnmntr` | `SalesDocumentItem.OrderToBaseQuantityDnmntr` |
-| `OrderToBaseQuantityNmrtr` | `SalesDocumentItem.OrderToBaseQuantityNmrtr` |
-| `BaseUnit` | `SalesDocumentItem.BaseUnit` |
-| `ItemVolumeUnit` | `SalesDocumentItem.ItemVolumeUnit` |
-| `SalesDocumentRjcnReason` | `SalesDocumentItem.SalesDocumentRjcnReason` |
-| `ItemWeightUnit` | `SalesDocumentItem.ItemWeightUnit` |
-| `SalesDistrict` | `SalesDocument.SalesDistrict` |
-| `DeliveryDate` | `ScheduleLine.DeliveryDate` |
-| `RequestedDeliveryDate` | `SalesDocument.RequestedDeliveryDate` |
-| `ServicesRenderedDate` | `SalesDocument.ServicesRenderedDate` |
-| `StatisticsCurrency` | `SalesDocument.StatisticsCurrency` |
-| `ShipToParty` | `SalesDocumentItem.ShipToParty` |
-| `PayerParty` | `SalesDocumentItem.PayerParty` |
-| `BillToParty` | `SalesDocumentItem.BillToParty` |
-| `Route` | `SalesDocumentItem.Route` |
-| `Plant` | `SalesDocumentItem.Plant` |
-| `StorageLocation` | `SalesDocumentItem.StorageLocation` |
-| `ShippingPoint` | `SalesDocumentItem.ShippingPoint` |
-| `IncotermsClassification` | `SalesDocument.IncotermsClassification` |
-| `IncotermsTransferLocation` | `SalesDocument.IncotermsTransferLocation` |
-| `IncotermsVersion` | `SalesDocument.IncotermsVersion` |
-| `DeliveryBlockReason` | `SalesDocument.DeliveryBlockReason` |
-| `ConfdSchedLineReqdDelivDate` | `ScheduleLine.ConfdSchedLineReqdDelivDate` |
-| `ConfirmedDeliveryDate` | `ScheduleLine.ConfirmedDeliveryDate` |
-| `MRPRequiredQuantityInBaseUnit` | `ScheduleLine.MRPRequiredQuantityInBaseUnit` |
-| `DelivBlockReasonForSchedLine` | `ScheduleLine.DelivBlockReasonForSchedLine` |
-| `LoadingDate` | `ScheduleLine.LoadingDate` |
-| `TransportationPlanningDate` | `ScheduleLine.TransportationPlanningDate` |
-| `GoodsIssueDate` | `ScheduleLine.GoodsIssueDate` |
-| `ItemOrderProbabilityInPercent` | `SalesDocumentItem.ItemOrderProbabilityInPercent` |
-| `BindingPeriodValidityStartDate` | `SalesDocument.BindingPeriodValidityStartDate` |
-| `BindingPeriodValidityEndDate` | `SalesDocument.BindingPeriodValidityEndDate` |
-| `BillingCompanyCode` | `SalesDocument.BillingCompanyCode` |
-| `BillingDocumentDate` | `SalesDocument.BillingDocumentDate` |
-| `ItemBillingBlockReason` | `SalesDocumentItem.ItemBillingBlockReason` |
-| `ExchangeRateType` | `SalesDocument.ExchangeRateType` |
-| `ExchangeRateDate` | `SalesDocument.ExchangeRateDate` |
-| `FiscalYearVariant` | `CompanyCode.FiscalYearVariant` |
-| `TransactionCurrency` | `SalesDocumentItem.TransactionCurrency` |
-| `CustomerAccountAssignmentGroup` | `SalesDocument.CustomerAccountAssignmentGroup` |
-| `ReferenceSDDocumentCategory` | `SalesDocumentItem.ReferenceSDDocumentCategory` |
-| `SDDocumentRejectionStatus` | `SalesDocumentItem.SDDocumentRejectionStatus` |
-| `ItemDeliveryIncompletionStatus` | `SalesDocumentItem.ItemDeliveryIncompletionStatus` |
-| `ItemGeneralIncompletionStatus` | `SalesDocumentItem.ItemGeneralIncompletionStatus` |
-| `ItemBillingIncompletionStatus` | `SalesDocumentItem.ItemBillingIncompletionStatus` |
-| `PricingIncompletionStatus` | `SalesDocumentItem.PricingIncompletionStatus` |
-| `_SalesDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  |  |
+| `SalesDocumentItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `SalesDocumentItemCategory` |  | |  |  |
+| `ScheduleLineCategory` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductHierarchyNode` |  | |  |  |
+| `ProductAvailabilityDate` |  | |  |  |
+| `InternationalArticleNumber` |  | |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |
+| `MaterialSubstitutionReason` |  | |  |  |
+| `Batch` |  | |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `IsConfirmedDelivSchedLine` |  | |  |  |
+| `IsRequestedDelivSchedLine` |  | |  |  |
+| `TargetQuantityUnit` |  | |  |  |
+| `CorrectedQtyInOrderQtyUnit` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `OpenConfdDelivQtyInBaseUnit` |  | |  |  |
+| `OpenDeliveryNetAmount` |  | |  |  |
+| `OpenReqdDelivQtyInOrdQtyUnit` |  | |  |  |
+| `OpenReqdDelivQtyInBaseUnit` |  | |  |  |
+| `OpenConfdDelivQtyInOrdQtyUnit` |  | |  |  |
+| `TargetToBaseQuantityDnmntr` |  | |  |  |
+| `TargetToBaseQuantityNmrtr` |  | |  |  |
+| `OrderToBaseQuantityDnmntr` |  | |  |  |
+| `OrderToBaseQuantityNmrtr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `RequestedDeliveryDate` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `StatisticsCurrency` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `Route` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ShippingPoint` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `DeliveryBlockReason` |  | |  |  |
+| `ConfdSchedLineReqdDelivDate` |  | |  |  |
+| `ConfirmedDeliveryDate` |  | |  |  |
+| `MRPRequiredQuantityInBaseUnit` |  | |  |  |
+| `DelivBlockReasonForSchedLine` |  | |  |  |
+| `LoadingDate` |  | |  |  |
+| `TransportationPlanningDate` |  | |  |  |
+| `GoodsIssueDate` |  | |  |  |
+| `ItemOrderProbabilityInPercent` |  | |  |  |
+| `BindingPeriodValidityStartDate` |  | |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |
+| `BillingCompanyCode` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `ItemBillingBlockReason` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |
+| `ItemDeliveryIncompletionStatus` |  | |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |
+| `ItemBillingIncompletionStatus` |  | |  |  |
+| `PricingIncompletionStatus` |  | |  |  |
+| `_SalesDocument` | | ✓ | | |
 
 ## Associations
 

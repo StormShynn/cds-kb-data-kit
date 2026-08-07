@@ -30,30 +30,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `I_SupplierInvoiceItemAsset.SupplierInvoice` |
-| key `FiscalYear` | `I_SupplierInvoiceItemAsset.FiscalYear` |
-| key `SupplierInvoiceItem` | `cast ( cast ( coalesce ( cast ( I_SupplierInvoiceItemAsset.OrdinalNumber as abap.int2 ) - _GlItemCount.NumberOfItems , cast ( I_SupplierInvoiceItemAsset.OrdinalNumber as abap.int2 ) ) as char0016 ) as cobl_nr)` |
-| `CompanyCode` | `I_SupplierInvoiceItemAsset.CompanyCode` |
-| `MasterFixedAsset` | `I_SupplierInvoiceItemAsset.MasterFixedAsset` |
-| `FixedAsset` | `I_SupplierInvoiceItemAsset.FixedAsset` |
-| `DebitCreditCode` | `I_SupplierInvoiceItemAsset.DebitCreditCode` |
-| `DocumentCurrency` | `I_SupplierInvoiceItemAsset.DocumentCurrency` |
-| `SupplierInvoiceItemAmount` | `I_SupplierInvoiceItemAsset.SupplierInvoiceItemAmount` |
-| `QuantityUnit` | `I_SupplierInvoiceItemAsset.QuantityUnit` |
-| `Quantity` | `I_SupplierInvoiceItemAsset.Quantity` |
-| `TaxCode` | `I_SupplierInvoiceItemAsset.TaxCode` |
-| `TaxJurisdiction` | `I_SupplierInvoiceItemAsset.TaxJurisdiction` |
-| `TaxCountry` | `I_SupplierInvoiceItemAsset.TaxCountry` |
-| `TaxDeterminationDate` | `I_SupplierInvoiceItemAsset.TaxDeterminationDate` |
-| `AssignmentReference` | `I_SupplierInvoiceItemAsset.AssignmentReference` |
-| `SupplierInvoiceItemText` | `I_SupplierInvoiceItemAsset.SupplierInvoiceItemText` |
-| `IsNotCashDiscountLiable` | `I_SupplierInvoiceItemAsset.IsNotCashDiscountLiable` |
-| `ProfitCenter` | `I_SupplierInvoiceItemAsset.ProfitCenter` |
-| `AssetValueDate` | `I_SupplierInvoiceItemAsset.AssetValueDate` |
-| `GLAccount` | `I_SupplierInvoiceItemAsset.GLAccount` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `SupplierInvoiceItem` | ✓ | |  | `cast ( cast ( coalesce ( cast ( I_SupplierInvoiceItemAsset.OrdinalNumber as abap.int2 ) - _GlItemCount.NumberOfItems , cast ( I_SupplierInvoiceItemAsset.OrdinalNumber as abap.int2 ) ) as char0016 ) as cobl_nr)` |
+| `CompanyCode` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `TaxDeterminationDate` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `SupplierInvoiceItemText` |  | |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `AssetValueDate` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

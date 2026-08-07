@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWaveStatus` | `cast( Domain.domvalue_l as /scwm/de_stwave )as EWMWaveStatus` |
-| key `Language` | `Domain.ddlanguage` |
-| `EWMWaveStatusName` | `Domain.ddtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWaveStatus` | ✓ | |  | `cast( Domain.domvalue_l as /scwm/de_stwave )as EWMWaveStatus` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `EWMWaveStatusName` |  | |  | `ddtext` |
 
 ## Source Code
 

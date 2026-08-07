@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `SlsSchedgAgrmtText.SalesSchedulingAgreement` |
-| key `Language` | `SlsSchedgAgrmtText.Language` |
-| key `LongTextID` | `SlsSchedgAgrmtText.LongTextID` |
-| `LongTextIDForEdit` | `SlsSchedgAgrmtText.LongTextIDForEdit` |
-| `LanguageForEdit` | `SlsSchedgAgrmtText.LanguageForEdit` |
-| `LongText` | `SlsSchedgAgrmtText.LongText` |
-| `SalesSchedgAgrmtType` | `SlsSchedgAgrmtText.SalesSchedgAgrmtType` |
-| `SalesOrganization` | `SlsSchedgAgrmtText.SalesOrganization` |
-| `DistributionChannel` | `SlsSchedgAgrmtText.DistributionChannel` |
-| `OrganizationDivision` | `SlsSchedgAgrmtText.OrganizationDivision` |
-| `_SalesSchedulingAgreement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `SalesSchedgAgrmtType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesSchedulingAgreement` | | ✓ | | |
 
 ## Source Code
 

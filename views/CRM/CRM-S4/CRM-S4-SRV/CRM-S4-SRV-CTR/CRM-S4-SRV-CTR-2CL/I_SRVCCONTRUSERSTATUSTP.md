@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `UserStatus` | `UserStatus` |
-| `StatusProfile` | `StatusProfile` |
-| `_ServiceContractTP` | *Association* |
-| `_StatusCode` | *Association* |
-| `_StatusProfile` | *Association* |
-| `_UserStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `UserStatus` | ✓ | |  |  |
+| `StatusProfile` |  | |  |  |
+| `_ServiceContractTP` | | ✓ | | |
+| `_StatusCode` | | ✓ | | |
+| `_StatusProfile` | | ✓ | | |
+| `_UserStatusText` | | ✓ | | |
 
 ## Source Code
 

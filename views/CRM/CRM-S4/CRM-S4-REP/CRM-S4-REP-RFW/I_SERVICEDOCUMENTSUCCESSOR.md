@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentRelationUUID` | `relationid` |
-| key `ServiceDocRltnSequenceNumber` | `posno` |
-| `ServiceDocumentRelationType` | `breltyp` |
-| `ServiceDocumentUUID` | `objguid_a_sel` |
-| `ServiceObjectType` | `objtype_a_sel` |
-| `ServiceDocumentRelationKind` | `vona_kind` |
-| `ServiceDocumentSuccessorUUID` | `objguid_b_sel` |
-| `ServiceDocSuccessor` | `objkey_b_sel` |
-| `ServiceDocSuccessorBusObjType` | `objtype_b_sel` |
-| `_ServiceDoc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentRelationUUID` | ✓ | |  | `relationid` |
+| `ServiceDocRltnSequenceNumber` | ✓ | |  | `posno` |
+| `ServiceDocumentRelationType` |  | |  | `breltyp` |
+| `ServiceDocumentUUID` |  | |  | `objguid_a_sel` |
+| `ServiceObjectType` |  | |  | `objtype_a_sel` |
+| `ServiceDocumentRelationKind` |  | |  | `vona_kind` |
+| `ServiceDocumentSuccessorUUID` |  | |  | `objguid_b_sel` |
+| `ServiceDocSuccessor` |  | |  | `objkey_b_sel` |
+| `ServiceDocSuccessorBusObjType` |  | |  | `objtype_b_sel` |
+| `_ServiceDoc` | | ✓ | | |
 
 ## Associations
 

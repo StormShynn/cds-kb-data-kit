@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(dd07t.ddlanguage as spras preserving type)` |
-| key `RevnAcctgConditionCategory` | `cast(dd07t.domvalue_l as farr_condition_category)` |
-| `RevnAcctgConditionCategoryName` | `dd07t.ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_RAConditionCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
+| `RevnAcctgConditionCategory` | ✓ | |  | `cast(dd07t.domvalue_l as farr_condition_category)` |
+| `RevnAcctgConditionCategoryName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_RAConditionCategory` | | ✓ | | |
 
 ## Associations
 

@@ -30,50 +30,50 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsShptItemUUID` | `FldLogsShptItemUUID` |
-| `FldLogsReferenceDocCategory` | `FldLogsReferenceDocCategory` |
-| `FldLogsReferenceDocumentNumber` | `FldLogsReferenceDocumentNumber` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| `FldLogsShptItmWrkOrdItmID` | `FldLogsShptItmWrkOrdItmID` |
-| `FldLogsShptItmProjDmndItmID` | `FldLogsShptItmProjDmndItmID` |
-| `FldLogsShptItmSTOItmID` | `FldLogsShptItmSTOItmID` |
-| `FldLogsShptItmOutbDelivItmID` | `FldLogsShptItmOutbDelivItmID` |
-| `FldLogsShptItmODOItemID` | `FldLogsShptItmODOItemID` |
-| `FldLogsShptItmHndlgUnitID` | `FldLogsShptItmHndlgUnitID` |
-| `HandlingUnitExternalID` | `HandlingUnitExternalID` |
-| `PackagingMaterial` | `PackagingMaterial` |
-| `GrossVolume` | `GrossVolume` |
-| `VolumeUnit` | `VolumeUnit` |
-| `GrossWeight` | `GrossWeight` |
-| `WeightUnit` | `WeightUnit` |
-| `MaterialName` | `MaterialName` |
-| `FldLogsContainerUnitUUID` | `FldLogsContainerUnitUUID` |
-| `FldLogsShptItmStsCode` | `FldLogsShptItmStsCode` |
-| `FldLogsSrceStorLocID` | `FldLogsSrceStorLocID` |
-| `FldLogsSrcePlnt` | `FldLogsSrcePlnt` |
-| `FldLogsDestStorLocID` | `FldLogsDestStorLocID` |
-| `FldLogsDestPlnt` | `FldLogsDestPlnt` |
-| `FldLogsDelivDueDate` | `FldLogsDelivDueDate` |
-| `FldLogsVoyageAssignmentStatus` | `FldLogsVoyageAssignmentStatus` |
-| `FldLogsVoyAssgmtStatusText` | `FldLogsVoyAssgmtStatusText` |
-| `FldLogsGrossVolume` | `FldLogsGrossVolume` |
-| `FldLogsGrossVolumeUnit` | `FldLogsGrossVolumeUnit` |
-| `ProductGrossWeight` | `ProductGrossWeight` |
-| `ProductWeightUnit` | `ProductWeightUnit` |
-| `QuantityInBaseUnit` | `QuantityInBaseUnit` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `FldLogsShptItmChangedDateTime` | `FldLogsShptItmChangedDateTime` |
-| `FldLogsShptItemCurrentPlant` | `FldLogsShptItemCurrentPlant` |
-| `FldLogsShptItemCurShipgPoint` | `FldLogsShptItemCurShipgPoint` |
-| `FldLogsShptItemActualWeight` | `FldLogsShptItemActualWeight` |
-| `FldLogsShptItemActlWeightUnit` | `FldLogsShptItemActlWeightUnit` |
-| `FieldLogisticsKitIdentifier` | `FieldLogisticsKitIdentifier` |
-| `HandlingUnitQuantity` | `HandlingUnitQuantity` |
-| `HandlingUnitQuantityUnit` | `HandlingUnitQuantityUnit` |
-| `_ShptCtnUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsShptItemUUID` | ✓ | |  |  |
+| `FldLogsReferenceDocCategory` |  | |  |  |
+| `FldLogsReferenceDocumentNumber` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `FldLogsShptItmWrkOrdItmID` |  | |  |  |
+| `FldLogsShptItmProjDmndItmID` |  | |  |  |
+| `FldLogsShptItmSTOItmID` |  | |  |  |
+| `FldLogsShptItmOutbDelivItmID` |  | |  |  |
+| `FldLogsShptItmODOItemID` |  | |  |  |
+| `FldLogsShptItmHndlgUnitID` |  | |  |  |
+| `HandlingUnitExternalID` |  | |  |  |
+| `PackagingMaterial` |  | |  |  |
+| `GrossVolume` |  | |  |  |
+| `VolumeUnit` |  | |  |  |
+| `GrossWeight` |  | |  |  |
+| `WeightUnit` |  | |  |  |
+| `MaterialName` |  | |  |  |
+| `FldLogsContainerUnitUUID` |  | |  |  |
+| `FldLogsShptItmStsCode` |  | |  |  |
+| `FldLogsSrceStorLocID` |  | |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |
+| `FldLogsDestStorLocID` |  | |  |  |
+| `FldLogsDestPlnt` |  | |  |  |
+| `FldLogsDelivDueDate` |  | |  |  |
+| `FldLogsVoyageAssignmentStatus` |  | |  |  |
+| `FldLogsVoyAssgmtStatusText` |  | |  |  |
+| `FldLogsGrossVolume` |  | |  |  |
+| `FldLogsGrossVolumeUnit` |  | |  |  |
+| `ProductGrossWeight` |  | |  |  |
+| `ProductWeightUnit` |  | |  |  |
+| `QuantityInBaseUnit` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `FldLogsShptItmChangedDateTime` |  | |  |  |
+| `FldLogsShptItemCurrentPlant` |  | |  |  |
+| `FldLogsShptItemCurShipgPoint` |  | |  |  |
+| `FldLogsShptItemActualWeight` |  | |  |  |
+| `FldLogsShptItemActlWeightUnit` |  | |  |  |
+| `FieldLogisticsKitIdentifier` |  | |  |  |
+| `HandlingUnitQuantity` |  | |  |  |
+| `HandlingUnitQuantityUnit` |  | |  |  |
+| `_ShptCtnUnit` | | ✓ | | |
 
 ## Source Code
 

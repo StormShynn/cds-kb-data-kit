@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CndnManualEntries` | `cast ( substring( domvalue_l, 1, 1 ) as kmanu )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CndnManualEntries` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kmanu )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

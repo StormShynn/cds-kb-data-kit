@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `_CnsldtnCostCenter.ControllingArea` |
-| key `CostCenter` | `_CnsldtnCostCenter.CostCenter` |
-| `CnsldtnIsAdditionalMasterData` | `_CnsldtnCostCenter.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnCostCenterTextTP` | `_Text as _Text : redirected to composition child I_CnsldtnCostCenterTextTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | | `_CnsldtnCostCenter` | `ControllingArea` |
+| `CostCenter` | ✓ | | `_CnsldtnCostCenter` | `CostCenter` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnCostCenter` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnCostCenterTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnCostCenterTextTP` |
 
 ## Source Code
 

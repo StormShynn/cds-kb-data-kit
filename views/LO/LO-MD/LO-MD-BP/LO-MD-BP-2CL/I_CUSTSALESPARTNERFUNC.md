@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `knvp.kunnr` |
-| key `SalesOrganization` | `knvp.vkorg` |
-| key `DistributionChannel` | `knvp.vtweg` |
-| key `Division` | `knvp.spart` |
-| key `PartnerCounter` | `knvp.parza` |
-| key `PartnerFunction` | `knvp.parvw` |
-| `PartnerFunctionType` | `tpar.nrart` |
-| `BPCustomerNumber` | `case when tpar.nrart = 'KU' then knvp.kunn2 when tpar.nrart = 'LI' then knvp.lifnr when tpar.nrart = 'AP' then knvp.parnr when tpar.nrart = 'PE' then knvp.pernr else '' end` |
-| `CustomerPartnerDescription` | `knvp.knref` |
-| `DefaultPartner` | `knvp.defpa` |
-| `Supplier` | `knvp.lifnr` |
-| `PersonnelNumber` | `knvp.pernr` |
-| `ContactPerson` | `knvp.parnr` |
-| `AddressID` | `knvp.adrnr` |
-| `_CustomerSalesArea` | *Association* |
-| `_Customer` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_CustSalesPartnerCounter` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `SalesOrganization` | ✓ | |  | `vkorg` |
+| `DistributionChannel` | ✓ | |  | `vtweg` |
+| `Division` | ✓ | |  | `spart` |
+| `PartnerCounter` | ✓ | |  | `parza` |
+| `PartnerFunction` | ✓ | |  | `parvw` |
+| `PartnerFunctionType` |  | |  | `nrart` |
+| `BPCustomerNumber` |  | |  | `case when tpar.nrart = 'KU' then knvp.kunn2 when tpar.nrart = 'LI' then knvp.lifnr when tpar.nrart = 'AP' then knvp.parnr when tpar.nrart = 'PE' then knvp.pernr else '' end` |
+| `CustomerPartnerDescription` |  | |  | `knref` |
+| `DefaultPartner` |  | |  | `defpa` |
+| `Supplier` |  | |  | `lifnr` |
+| `PersonnelNumber` |  | |  | `pernr` |
+| `ContactPerson` |  | |  | `parnr` |
+| `AddressID` |  | |  | `adrnr` |
+| `_CustomerSalesArea` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_CustSalesPartnerCounter` | | ✓ | | |
 
 ## Associations
 

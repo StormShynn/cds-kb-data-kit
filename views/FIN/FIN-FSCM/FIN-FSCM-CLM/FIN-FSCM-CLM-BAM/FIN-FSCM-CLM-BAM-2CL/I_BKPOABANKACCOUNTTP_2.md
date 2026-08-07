@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankPowerOfAttorneyUUID` | `BankPowerOfAttorneyUUID` |
-| key `BkPOABankAccountUUID` | `BkPOABankAccountUUID` |
-| `BankAccountInternalID` | `BankAccountInternalID` |
-| `BkPOABkAcctAssignmentDateTime` | `BkPOABkAcctAssignmentDateTime` |
-| `BkPOABkAcctRemovalDateTime` | `BkPOABkAcctRemovalDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_BankPowerOfAttorney` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` | ✓ | |  |  |
+| `BkPOABankAccountUUID` | ✓ | |  |  |
+| `BankAccountInternalID` |  | |  |  |
+| `BkPOABkAcctAssignmentDateTime` |  | |  |  |
+| `BkPOABkAcctRemovalDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_BankPowerOfAttorney` | | ✓ | | |
 
 ## Source Code
 

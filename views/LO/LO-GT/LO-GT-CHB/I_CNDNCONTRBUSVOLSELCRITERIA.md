@@ -28,128 +28,128 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConditionContract` | `}] } key ConditionContract` |
-| key `CndnContrBusVolUUID` | `CndnContrBusVolUUID` |
-| `BusVolFieldCombnType` | `BusVolFieldCombnType` |
-| `BusVolFldCombnGroup` | `BusVolFldCombnGroup` |
-| `CndnContrBusVolSign` | `CndnContrBusVolSign` |
-| `BusVolSelectionGroup` | `BusVolSelectionGroup` |
-| `CndnContrSupplier` | `}] } CndnContrSupplier` |
-| `CndnContrCustomer` | `}] } CndnContrCustomer` |
-| `CndnContrBusVolValidFrom` | `CndnContrBusVolValidFrom` |
-| `CndnContrBusVolValidTo` | `CndnContrBusVolValidTo` |
-| `Supplier` | `}] } Supplier` |
-| `Customer` | `}] } Customer` |
-| `CompanyCode` | `}] } CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `Plant` | `}] } Plant` |
-| `SupplierSubrange` | `SupplierSubrange` |
-| `ProductGroup` | `}] } ProductGroup` |
-| `Product` | `}] } Product` |
-| `ProductType` | `ProductType` |
-| `CndnContrCustomerList` | `}] } CndnContrCustomerList` |
-| `CndnContrSupplierList` | `}] } CndnContrSupplierList` |
-| `CndnContrPlantList` | `}] } CndnContrPlantList` |
-| `CustomerHierarchy` | `}] } CustomerHierarchy` |
-| `ProductHierarchy` | `ProductHierarchy` |
-| `SalesSpcfcProductGroup1` | `SalesSpcfcProductGroup1` |
-| `SalesSpcfcProductGroup2` | `SalesSpcfcProductGroup2` |
-| `SalesSpcfcProductGroup3` | `SalesSpcfcProductGroup3` |
-| `SalesSpcfcProductGroup4` | `SalesSpcfcProductGroup4` |
-| `SalesSpcfcProductGroup5` | `SalesSpcfcProductGroup5` |
-| `CndnContrBusVolList` | `CndnContrBusVolList` |
-| `SalesOrderReason` | `SalesOrderReason` |
-| `Manufacturer` | `}] } Manufacturer` |
-| `RoyaltyRecipient` | `}] } RoyaltyRecipient` |
-| `CommissionRecipient` | `}] } CommissionRecipient` |
-| `WorkerCommissionRecipient` | `}] } WorkerCommissionRecipient` |
-| `ShipToParty` | `ShipToParty` |
-| `PayerParty` | `PayerParty` |
-| `AdditionalCustomerGroup1` | `AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `AdditionalCustomerGroup5` |
-| `CustomerGroup` | `CustomerGroup` |
-| `CustomerConditionGroup1` | `CustomerConditionGroup1` |
-| `CustomerConditionGroup2` | `CustomerConditionGroup2` |
-| `CustomerConditionGroup3` | `CustomerConditionGroup3` |
-| `CustomerConditionGroup4` | `CustomerConditionGroup4` |
-| `CustomerConditionGroup5` | `CustomerConditionGroup5` |
-| `ProdUnivHierarchyNode` | `ProdUnivHierarchyNode` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `ProductCommissionGroup` | `ProductCommissionGroup` |
-| `PricingReferenceProduct` | `PricingReferenceProduct` |
-| `SoldProduct` | `SoldProduct` |
-| `SalesDistrict` | `SalesDistrict` |
-| `ProductPricingGroup` | `ProductPricingGroup` |
-| `SalesVolumeRebateGroup` | `SalesVolumeRebateGroup` |
-| `BizVolSelCndnContrProcVar` | `BizVolSelCndnContrProcVar` |
-| `BizVolSelConditionContract` | `BizVolSelConditionContract` |
-| `CndnContrSuplrInvcDlvCostCat` | `CndnContrSuplrInvcDlvCostCat` |
-| `CustomerHierarchyRootNode` | `CustomerHierarchyRootNode` |
-| `CustomerHierarchyNodeID` | `CustomerHierarchyNodeID` |
-| `CustomerHierarchyNodeType` | `CustomerHierarchyNodeType` |
-| `CndnContrSourceBusVolUUID` | `CndnContrSourceBusVolUUID` |
-| `_BusVolFieldCombnType` | *Association* |
-| `_CndnContrBusVolSign` | *Association* |
-| `_BusVolSelectionGroup` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_CustomerHierarchy` | *Association* |
-| `_ProductHierarchy` | *Association* |
-| `_SalesSpcfcProductGroup1` | *Association* |
-| `_SalesSpcfcProductGroup2` | *Association* |
-| `_SalesSpcfcProductGroup3` | *Association* |
-| `_SalesSpcfcProductGroup4` | *Association* |
-| `_SalesSpcfcProductGroup5` | *Association* |
-| `_ConditionContract` | *Association* |
-| `_ProductType` | *Association* |
-| `_SalesOrderReason` | *Association* |
-| `_Manufacturer` | *Association* |
-| `_RoyaltyRecipient` | *Association* |
-| `_CommissionRecipient` | *Association* |
-| `_CndnContrSupplier` | *Association* |
-| `_CndnContrCustomer` | *Association* |
-| `_CndnContrCustomerList` | *Association* |
-| `_CndnContrSupplierList` | *Association* |
-| `_CndnContrPlantList` | *Association* |
-| `_BizVolSelConditionContract` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_WorkerCommissionRecipient` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_PayerParty` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_AdditionalCustomerGroup1` | *Association* |
-| `_AdditionalCustomerGroup2` | *Association* |
-| `_AdditionalCustomerGroup3` | *Association* |
-| `_AdditionalCustomerGroup4` | *Association* |
-| `_AdditionalCustomerGroup5` | *Association* |
-| `_Country` | *Association* |
-| `_Region` | *Association* |
-| `_PricingReferenceProduct` | *Association* |
-| `_SoldProduct` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_BizVolSelCndnContrProcVar` | *Association* |
-| `_CndnContrSuplrInvcDlvCostCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionContract` |  | |  | `}] } key ConditionContract` |
+| `CndnContrBusVolUUID` | ✓ | |  |  |
+| `BusVolFieldCombnType` |  | |  |  |
+| `BusVolFldCombnGroup` |  | |  |  |
+| `CndnContrBusVolSign` |  | |  |  |
+| `BusVolSelectionGroup` |  | |  |  |
+| `CndnContrSupplier` |  | |  | `}] } CndnContrSupplier` |
+| `CndnContrCustomer` |  | |  | `}] } CndnContrCustomer` |
+| `CndnContrBusVolValidFrom` |  | |  |  |
+| `CndnContrBusVolValidTo` |  | |  |  |
+| `Supplier` |  | |  | `}] } Supplier` |
+| `Customer` |  | |  | `}] } Customer` |
+| `CompanyCode` |  | |  | `}] } CompanyCode` |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `Plant` |  | |  | `}] } Plant` |
+| `SupplierSubrange` |  | |  |  |
+| `ProductGroup` |  | |  | `}] } ProductGroup` |
+| `Product` |  | |  | `}] } Product` |
+| `ProductType` |  | |  |  |
+| `CndnContrCustomerList` |  | |  | `}] } CndnContrCustomerList` |
+| `CndnContrSupplierList` |  | |  | `}] } CndnContrSupplierList` |
+| `CndnContrPlantList` |  | |  | `}] } CndnContrPlantList` |
+| `CustomerHierarchy` |  | |  | `}] } CustomerHierarchy` |
+| `ProductHierarchy` |  | |  |  |
+| `SalesSpcfcProductGroup1` |  | |  |  |
+| `SalesSpcfcProductGroup2` |  | |  |  |
+| `SalesSpcfcProductGroup3` |  | |  |  |
+| `SalesSpcfcProductGroup4` |  | |  |  |
+| `SalesSpcfcProductGroup5` |  | |  |  |
+| `CndnContrBusVolList` |  | |  |  |
+| `SalesOrderReason` |  | |  |  |
+| `Manufacturer` |  | |  | `}] } Manufacturer` |
+| `RoyaltyRecipient` |  | |  | `}] } RoyaltyRecipient` |
+| `CommissionRecipient` |  | |  | `}] } CommissionRecipient` |
+| `WorkerCommissionRecipient` |  | |  | `}] } WorkerCommissionRecipient` |
+| `ShipToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `CustomerConditionGroup1` |  | |  |  |
+| `CustomerConditionGroup2` |  | |  |  |
+| `CustomerConditionGroup3` |  | |  |  |
+| `CustomerConditionGroup4` |  | |  |  |
+| `CustomerConditionGroup5` |  | |  |  |
+| `ProdUnivHierarchyNode` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `ProductCommissionGroup` |  | |  |  |
+| `PricingReferenceProduct` |  | |  |  |
+| `SoldProduct` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `ProductPricingGroup` |  | |  |  |
+| `SalesVolumeRebateGroup` |  | |  |  |
+| `BizVolSelCndnContrProcVar` |  | |  |  |
+| `BizVolSelConditionContract` |  | |  |  |
+| `CndnContrSuplrInvcDlvCostCat` |  | |  |  |
+| `CustomerHierarchyRootNode` |  | |  |  |
+| `CustomerHierarchyNodeID` |  | |  |  |
+| `CustomerHierarchyNodeType` |  | |  |  |
+| `CndnContrSourceBusVolUUID` |  | |  |  |
+| `_BusVolFieldCombnType` | | ✓ | | |
+| `_CndnContrBusVolSign` | | ✓ | | |
+| `_BusVolSelectionGroup` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_CustomerHierarchy` | | ✓ | | |
+| `_ProductHierarchy` | | ✓ | | |
+| `_SalesSpcfcProductGroup1` | | ✓ | | |
+| `_SalesSpcfcProductGroup2` | | ✓ | | |
+| `_SalesSpcfcProductGroup3` | | ✓ | | |
+| `_SalesSpcfcProductGroup4` | | ✓ | | |
+| `_SalesSpcfcProductGroup5` | | ✓ | | |
+| `_ConditionContract` | | ✓ | | |
+| `_ProductType` | | ✓ | | |
+| `_SalesOrderReason` | | ✓ | | |
+| `_Manufacturer` | | ✓ | | |
+| `_RoyaltyRecipient` | | ✓ | | |
+| `_CommissionRecipient` | | ✓ | | |
+| `_CndnContrSupplier` | | ✓ | | |
+| `_CndnContrCustomer` | | ✓ | | |
+| `_CndnContrCustomerList` | | ✓ | | |
+| `_CndnContrSupplierList` | | ✓ | | |
+| `_CndnContrPlantList` | | ✓ | | |
+| `_BizVolSelConditionContract` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_WorkerCommissionRecipient` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_PricingReferenceProduct` | | ✓ | | |
+| `_SoldProduct` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_BizVolSelCndnContrProcVar` | | ✓ | | |
+| `_CndnContrSuplrInvcDlvCostCat` | | ✓ | | |
 
 ## Associations
 

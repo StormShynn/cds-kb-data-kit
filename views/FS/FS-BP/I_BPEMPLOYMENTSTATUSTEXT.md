@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tp11t.langu` |
-| key `BPEmploymentStatus` | `tp11t.employment` |
-| `BPEmploymentStatusDescription` | `tp11t.employm_t` |
-| `_BPEmploymentStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `BPEmploymentStatus` | ✓ | |  | `employment` |
+| `BPEmploymentStatusDescription` |  | |  | `employm_t` |
+| `_BPEmploymentStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

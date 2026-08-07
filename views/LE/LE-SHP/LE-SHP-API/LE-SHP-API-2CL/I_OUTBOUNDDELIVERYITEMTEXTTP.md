@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OutboundDelivery` | `OutboundDelivery` |
-| key `OutboundDeliveryItem` | `OutboundDeliveryItem` |
-| key `Language` | `Language` |
-| key `LongTextID` | `LongTextID` |
-| `LongText` | `LongText` |
-| `_Delivery` | *Association* |
-| `_Item` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OutboundDelivery` | ✓ | |  |  |
+| `OutboundDeliveryItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongText` |  | |  |  |
+| `_Delivery` | | ✓ | | |
+| `_Item` | | ✓ | | |
 
 ## Source Code
 

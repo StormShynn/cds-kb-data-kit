@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassGroup` | `ClassGroup` |
-| `_Text` | `_ClassGroupText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassGroup` | ✓ | |  |  |
+| `_Text` |  | |  | `_ClassGroupText` |
 
 ## Source Code
 

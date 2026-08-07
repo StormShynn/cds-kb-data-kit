@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrder` | `ServiceOrder` |
-| key `PurchaseOrder` | `PurchaseOrder` |
-| `_ServiceOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |
+| `PurchaseOrder` | ✓ | |  |  |
+| `_ServiceOrderTP` | | ✓ | | |
 
 ## Source Code
 

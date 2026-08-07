@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocBillingStatus` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `ServiceDocBillingStatusName` | `ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_ServiceDocBillingStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocBillingStatus` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ServiceDocBillingStatusName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_ServiceDocBillingStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccountHierarchy` | `cast ( hrrp_nodet_n.hryid_42 as fis_glaccthier preserving type )` |
-| key `HierarchyNode` | `hrrp_nodet_n.hrynode` |
-| key `ValidityEndDate` | `hrrp_nodet_n.hryvalto` |
-| key `Language` | `hrrp_nodet_n.spras` |
-| `HierarchyNodeText` | `hrrp_nodet_n.nodetxt` |
-| `HierarchyNodeShortText` | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |
-| `ValidityStartDate` | `hrrp_nodet_n.hryvalfrom` |
-| `_Language` | *Association* |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountHierarchy` | ✓ | |  | `cast ( hrrp_nodet_n.hryid_42 as fis_glaccthier preserving type )` |
+| `HierarchyNode` | ✓ | |  | `hrynode` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `Language` | ✓ | |  | `spras` |
+| `HierarchyNodeText` |  | |  | `nodetxt` |
+| `HierarchyNodeShortText` |  | |  | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `_Language` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

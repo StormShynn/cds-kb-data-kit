@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `P_PaymentMethodText.Country` |
-| key `PaymentMethod` | `P_PaymentMethodText.PaymentMethod` |
-| key `Language` | `P_PaymentMethodText.Language` |
-| `PaymentMethodDescription` | `P_PaymentMethodText.PaymentMethodDescription` |
-| `_Country` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  |  |
+| `PaymentMethod` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `PaymentMethodDescription` |  | |  |  |
+| `_Country` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

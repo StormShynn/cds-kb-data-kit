@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IndustrySystemType` | `istype` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IndustrySystemType` | ✓ | |  | `istype` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

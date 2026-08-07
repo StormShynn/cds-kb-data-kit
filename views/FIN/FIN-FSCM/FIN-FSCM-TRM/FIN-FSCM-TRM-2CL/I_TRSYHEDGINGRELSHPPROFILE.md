@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HedgingProfile` | `cast(TrsyHedgingRelshpProfile.hrel_profile as ftr_gen_hdgg_profile preserving type)` |
-| `TrsyHedgingRelshpScenario` | `cast(TrsyHedgingRelshpProfile.hrel_scene_cat as ftr_gen_hrel_scenario preserving type)` |
-| `_TrsyHedgingRelshpScenario` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HedgingProfile` | ✓ | |  | `cast(TrsyHedgingRelshpProfile.hrel_profile as ftr_gen_hdgg_profile preserving type)` |
+| `TrsyHedgingRelshpScenario` |  | |  | `cast(TrsyHedgingRelshpProfile.hrel_scene_cat as ftr_gen_hrel_scenario preserving type)` |
+| `_TrsyHedgingRelshpScenario` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

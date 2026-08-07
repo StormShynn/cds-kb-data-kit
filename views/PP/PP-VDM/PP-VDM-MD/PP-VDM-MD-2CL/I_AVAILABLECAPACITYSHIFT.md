@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityInternalID` | `kapa.kapid` |
-| key `AvailableCapacityType` | `kapa.versn` |
-| key `ValidityEndDate` | `kapa.datub` |
-| key `WeekDay` | `cast(substring (kapa.tagnr, 3, 1) as vdm_weekday)` |
-| key `AvailableCapacityShift` | `kapa.schnr` |
-| `CapacityNumberOfCapacities` | `kapa.anzhl` |
-| `WorkDayRule` | `cast(kapa.fabtg as workdayrule preserving type)` |
-| `ShiftDefinition` | `kapa.tprog` |
-| `CapacityPlanUtilizationPercent` | `kapa.ngrad` |
-| `CapacityStartTimeID` | `kapa.begzt` |
-| `CapacityEndTimeID` | `kapa.endzt` |
-| `OperatingDurationInSeconds` | `kapa.einzt` |
-| `BreakDurationInSeconds` | `kapa.pause` |
-| `TotOperatingDurationInSeconds` | `kapa.kapaz` |
-| `_Capacity` | *Association* |
-| `_AvailableCapacityType` | *Association* |
-| `_EndDate` | *Association* |
-| `_WeekDay` | *Association* |
-| `_WorkDayRule` | *Association* |
-| `_ShiftDefinition` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  | `kapid` |
+| `AvailableCapacityType` | ✓ | |  | `versn` |
+| `ValidityEndDate` | ✓ | |  | `datub` |
+| `WeekDay` | ✓ | |  | `cast(substring (kapa.tagnr, 3, 1) as vdm_weekday)` |
+| `AvailableCapacityShift` | ✓ | |  | `schnr` |
+| `CapacityNumberOfCapacities` |  | |  | `anzhl` |
+| `WorkDayRule` |  | |  | `cast(kapa.fabtg as workdayrule preserving type)` |
+| `ShiftDefinition` |  | |  | `tprog` |
+| `CapacityPlanUtilizationPercent` |  | |  | `ngrad` |
+| `CapacityStartTimeID` |  | |  | `begzt` |
+| `CapacityEndTimeID` |  | |  | `endzt` |
+| `OperatingDurationInSeconds` |  | |  | `einzt` |
+| `BreakDurationInSeconds` |  | |  | `pause` |
+| `TotOperatingDurationInSeconds` |  | |  | `kapaz` |
+| `_Capacity` | | ✓ | | |
+| `_AvailableCapacityType` | | ✓ | | |
+| `_EndDate` | | ✓ | | |
+| `_WeekDay` | | ✓ | | |
+| `_WorkDayRule` | | ✓ | | |
+| `_ShiftDefinition` | | ✓ | | |
 
 ## Associations
 

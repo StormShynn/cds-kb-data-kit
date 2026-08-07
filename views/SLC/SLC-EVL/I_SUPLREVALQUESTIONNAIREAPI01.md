@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SLCQnaireUUID` | `SLCQnaireUUID` |
-| `SLCQnaire` | `SLCQnaire` |
-| `Language` | `Language` |
-| `SLCQnaireName` | `SLCQnaireName` |
-| `CreatedByUser` | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangedByUser` | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `SLCQnaireLifecycleStatus` | `SLCQnaireLifecycleStatus` |
-| `SLCQnaireConsistencyStatus` | `SLCQnaireConsistencyStatus` |
-| `SLCQnaireOvrlTranslationSts` | `SLCQnaireOvrlTranslationSts` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SLCQnaireUUID` | ✓ | |  |  |
+| `SLCQnaire` |  | |  |  |
+| `Language` |  | |  |  |
+| `SLCQnaireName` |  | |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
+| `CreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `SLCQnaireLifecycleStatus` |  | |  |  |
+| `SLCQnaireConsistencyStatus` |  | |  |  |
+| `SLCQnaireOvrlTranslationSts` |  | |  |  |
 
 ## Source Code
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PerfOblgnFulfillmentType` | `cast(dd07l.domvalue_l as farr_fulfill_type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PerfOblgnFulfillmentType` | ✓ | |  | `cast(dd07l.domvalue_l as farr_fulfill_type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

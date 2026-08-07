@@ -31,27 +31,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumber` | `ChangeNumber` |
-| key `Material` | `Material` |
-| `ChgNmbrAlternativeDateID` | `ChgNmbrAlternativeDateID` |
-| `SAPObjectTechnicalID` | `SAPObjectTechnicalID` |
-| `ObjMgmtRecdDescription` | `ObjMgmtRecdDescription` |
-| `ObjMgmtRecdItemUUID` | `ObjMgmtRecdItemUUID` |
-| `ObjMgmtRecdLastChangedAt` | `ObjMgmtRecdLastChangedAt` |
-| `ObjMgmtRecdLastChangedBy` | `ObjMgmtRecdLastChangedBy` |
-| `ObjMgmtRecdCreationDate` | `ObjMgmtRecdCreationDate` |
-| `ObjMgmtRecdCreatedBy` | `ObjMgmtRecdCreatedBy` |
-| `ObjMgmtRecdObjLastChangedAt` | `ObjMgmtRecdObjLastChangedAt` |
-| `ObjMgmtRecdObjLastChangedBy` | `ObjMgmtRecdObjLastChangedBy` |
-| `ObjMgmtRecdObjIsLockedForChg` | `ObjMgmtRecdObjIsLockedForChg` |
-| `ObjMgmtRecdObjIsPlanned` | `ObjMgmtRecdObjIsPlanned` |
-| `ObjMgmtRecdObjRevisionLevel` | `ObjMgmtRecdObjRevisionLevel` |
-| `ChgNmbrAlternativeDateCounter` | `ChgNmbrAlternativeDateCounter` |
-| `ChangeNumberLastChgdDateTime` | `ChangeNumberLastChgdDateTime` |
-| `_ChangeMaster` | *Association* |
-| `_ChangeMasterAltDate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `ChgNmbrAlternativeDateID` |  | |  |  |
+| `SAPObjectTechnicalID` |  | |  |  |
+| `ObjMgmtRecdDescription` |  | |  |  |
+| `ObjMgmtRecdItemUUID` |  | |  |  |
+| `ObjMgmtRecdLastChangedAt` |  | |  |  |
+| `ObjMgmtRecdLastChangedBy` |  | |  |  |
+| `ObjMgmtRecdCreationDate` |  | |  |  |
+| `ObjMgmtRecdCreatedBy` |  | |  |  |
+| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |
+| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |
+| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |
+| `ObjMgmtRecdObjIsPlanned` |  | |  |  |
+| `ObjMgmtRecdObjRevisionLevel` |  | |  |  |
+| `ChgNmbrAlternativeDateCounter` |  | |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |
+| `_ChangeMaster` | | ✓ | | |
+| `_ChangeMasterAltDate` | | ✓ | | |
 
 ## Source Code
 

@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PersonWorkAgreement` | `cast(dets.workforce_assgmt_id as persno preserving type )` |
-| key `CompanyCode` | `dets.company_code` |
-| `PersonWorkAgreementExternalID` | `case when keymap.user_id is not null then cast ( keymap.user_id as /shcm/workagreement_externalid ) else cast ( dets.workforce_assgmt_id as /shcm/workagreement_externalid ) end` |
-| `PersonWorkAgrmtAuthznGrpg` | `cast ('' as vdsk1 )` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PersonWorkAgreement` | ✓ | |  | `cast(dets.workforce_assgmt_id as persno preserving type )` |
+| `CompanyCode` | ✓ | |  | `company_code` |
+| `PersonWorkAgreementExternalID` |  | |  | `case when keymap.user_id is not null then cast ( keymap.user_id as /shcm/workagreement_externalid ) else cast ( dets.workforce_assgmt_id as /shcm/workagreement_externalid ) end` |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast ('' as vdsk1 )` |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

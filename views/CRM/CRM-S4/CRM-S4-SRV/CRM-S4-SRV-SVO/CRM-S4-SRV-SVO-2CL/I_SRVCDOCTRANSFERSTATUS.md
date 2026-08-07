@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcDocTransferStatus` | `cast ( domvalue_l as crms4_stat_transfer )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_ServiceDocTransferStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcDocTransferStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_transfer )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_ServiceDocTransferStatusText` | | ✓ | | |
 
 ## Associations
 

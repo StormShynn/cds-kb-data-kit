@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderID` | `SalesOrder.order_id` |
-| key `OemID` | `SalesOrder.oem_id` |
-| key `Model` | `SalesOrder.model` |
-| key `Grade` | `SalesOrder.grade` |
-| key `ModelYear` | `SalesOrder.model_year` |
-| key `Color` | `SalesOrder.color` |
-| `OrderDate` | `SalesOrder.order_date` |
-| `CustomerID` | `SalesOrder.customer_id` |
-| `Price` | `SalesOrder.price` |
-| `CurrencyCode` | `SalesOrder.currency_code` |
-| `DeliveryDate` | `SalesOrder.delivery_date` |
-| `CreatedBy` | `SalesOrder.created_by` |
-| `LastChangedBy` | `SalesOrder.last_changed_by` |
-| `LastChangedAt` | `SalesOrder.local_last_changed_at` |
-| `_Oem` | *Association* |
-| `_Models` | *Association* |
-| `_Inventory` | *Association* |
-| `_Customer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderID` | ✓ | |  | `order_id` |
+| `OemID` | ✓ | |  | `oem_id` |
+| `Model` | ✓ | |  | `model` |
+| `Grade` | ✓ | |  | `grade` |
+| `ModelYear` | ✓ | |  | `model_year` |
+| `Color` | ✓ | |  | `color` |
+| `OrderDate` |  | |  | `order_date` |
+| `CustomerID` |  | |  | `customer_id` |
+| `Price` |  | |  | `price` |
+| `CurrencyCode` |  | |  | `currency_code` |
+| `DeliveryDate` |  | |  | `delivery_date` |
+| `CreatedBy` |  | |  | `created_by` |
+| `LastChangedBy` |  | |  | `last_changed_by` |
+| `LastChangedAt` |  | |  | `local_last_changed_at` |
+| `_Oem` | | ✓ | | |
+| `_Models` | | ✓ | | |
+| `_Inventory` | | ✓ | | |
+| `_Customer` | | ✓ | | |
 
 ## Associations
 

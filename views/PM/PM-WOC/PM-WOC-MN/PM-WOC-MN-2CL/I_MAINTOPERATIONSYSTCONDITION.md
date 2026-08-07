@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OperationSystemCondition` | `anlzu` |
-| `ProdnWrkCtrIsRsrvdByPlntMaint` | `kapao` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OperationSystemCondition` | ✓ | |  | `anlzu` |
+| `ProdnWrkCtrIsRsrvdByPlntMaint` |  | |  | `kapao` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

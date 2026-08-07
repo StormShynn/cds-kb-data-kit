@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturingOrder` | `ManufacturingOrder` |
-| key `ManufacturingOrderSequence` | `ManufacturingOrderSequence` |
-| `MfgOrderSequenceText` | `MfgOrderSequenceText` |
-| `ManufacturingOrderCategory` | `ManufacturingOrderCategory` |
-| `ManufacturingOrderType` | `ManufacturingOrderType` |
-| `ProductionPlant` | `ProductionPlant` |
-| `_MfgOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  |  |
+| `ManufacturingOrderSequence` | ✓ | |  |  |
+| `MfgOrderSequenceText` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ManufacturingOrderType` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `_MfgOrder` | | ✓ | | |
 
 ## Source Code
 

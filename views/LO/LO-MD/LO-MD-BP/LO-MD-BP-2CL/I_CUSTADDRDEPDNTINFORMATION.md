@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `kna1_addr.kunnr` |
-| key `AddressID` | `kna1_addr.adrnr` |
-| `ExpressTrainStationName` | `kna1_addr.bahne` |
-| `TrainStationName` | `kna1_addr.bahns` |
-| `CityCode` | `kna1_addr.cityc` |
-| `County` | `kna1_addr.counc` |
-| `CustomerHasUnloadingPoint` | `kna1_addr.exabl` |
-| `_Customer` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `AddressID` | ✓ | |  | `adrnr` |
+| `ExpressTrainStationName` |  | |  | `bahne` |
+| `TrainStationName` |  | |  | `bahns` |
+| `CityCode` |  | |  | `cityc` |
+| `County` |  | |  | `counc` |
+| `CustomerHasUnloadingPoint` |  | |  | `exabl` |
+| `_Customer` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
 
 ## Associations
 

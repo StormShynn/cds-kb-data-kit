@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Ledger` | `finsc_ledger_rep.rldnr` |
-| key `SourceLedger` | `finsc_ledger_rep.rldnr_pers` |
-| `_Ledger` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Ledger` | ✓ | |  | `rldnr` |
+| `SourceLedger` | ✓ | |  | `rldnr_pers` |
+| `_Ledger` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

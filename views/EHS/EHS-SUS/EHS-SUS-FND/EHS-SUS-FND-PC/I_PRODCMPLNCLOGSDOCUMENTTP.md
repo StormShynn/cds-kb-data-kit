@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdCmplncLogsDocumentUUID` | `ProdCmplncLogsDocumentUUID` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ProdCmplncLogsDocument` | `ProdCmplncLogsDocument` |
-| `BusinessSystemName` | `BusinessSystemName` |
-| `ProdCmplncLogsDocumentCategory` | `ProdCmplncLogsDocumentCategory` |
-| `ProdCmplncLogsDocumentStatus` | `ProdCmplncLogsDocumentStatus` |
-| `ProdMktbltyCheckIsRequested` | `ProdMktbltyCheckIsRequested` |
-| `SftyDtaShtCheckIsRequested` | `SftyDtaShtCheckIsRequested` |
-| `DangerousGoodsCheckIsRequested` | `DangerousGoodsCheckIsRequested` |
-| `ChmlSuplrCheckIsRequested` | `ChmlSuplrCheckIsRequested` |
-| `GoodsIssueIsPosted` | `GoodsIssueIsPosted` |
-| `ActualGoodsMovementDate` | `ActualGoodsMovementDate` |
-| `ActualGoodsMovementTime` | `ActualGoodsMovementTime` |
-| `ActualGoodsIssueTimeZone` | `ActualGoodsIssueTimeZone` |
-| `_Item` | *Association* |
-| `_Stage` | *Association* |
-| `_StatusMessage` | *Association* |
-| `_MnllyOvrwrtnAddr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ProdCmplncLogsDocument` |  | |  |  |
+| `BusinessSystemName` |  | |  |  |
+| `ProdCmplncLogsDocumentCategory` |  | |  |  |
+| `ProdCmplncLogsDocumentStatus` |  | |  |  |
+| `ProdMktbltyCheckIsRequested` |  | |  |  |
+| `SftyDtaShtCheckIsRequested` |  | |  |  |
+| `DangerousGoodsCheckIsRequested` |  | |  |  |
+| `ChmlSuplrCheckIsRequested` |  | |  |  |
+| `GoodsIssueIsPosted` |  | |  |  |
+| `ActualGoodsMovementDate` |  | |  |  |
+| `ActualGoodsMovementTime` |  | |  |  |
+| `ActualGoodsIssueTimeZone` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Stage` | | ✓ | | |
+| `_StatusMessage` | | ✓ | | |
+| `_MnllyOvrwrtnAddr` | | ✓ | | |
 
 ## Source Code
 

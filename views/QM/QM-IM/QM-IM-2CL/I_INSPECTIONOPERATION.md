@@ -28,36 +28,36 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `qaop.prueflos` |
-| key `InspPlanOperationInternalID` | `qaop.vorglfnr` |
-| `OrderInternalBillOfOperations` | `qaop.aufpl` |
-| `OrderOperationInternalID` | `afvc.aplzl` |
-| `InspectionOperation` | `afvc.vornr` |
-| `InspectionOperationPlant` | `afvc.werks` |
-| `BillOfOperationsType` | `afvc.plnty` |
-| `BillOfOperationsGroup` | `afvc.plnnr` |
-| `BillOfOperationsVariant` | `afvc.plnal` |
-| `BOOOperationInternalID` | `afvc.plnkn` |
-| `BillOfOperationsVersion` | `afvc.tl_versn` |
-| `WorkCenterInternalID` | `afvc.arbid` |
-| `StatusObject` | `afvc.objnr` |
-| `OperationControlProfile` | `afvc.steus` |
-| `OperationConfirmation` | `afvc.rueck` |
-| `InspectionSubSystem` | `afvc.subsys` |
-| `OperationText` | `afvc.ltxa1` |
-| `InspSbstIsTimeRelated` | `afvc.qkzprzeit` |
-| `InspSbstHasNoTimeOrQuantity` | `afvc.qkzprfrei` |
-| `Sequence` | `afvc.aplfl` |
-| `InspSbstCompletionConfirmation` | `afvc.qppktabs` |
-| `_InspectionLot` | *Association* |
-| `_InspectionCharacteristic` | *Association* |
-| `_InspectionSubset` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_Plant` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_InspectionOperationStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |
+| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |
+| `OrderInternalBillOfOperations` |  | |  | `aufpl` |
+| `OrderOperationInternalID` |  | |  | `aplzl` |
+| `InspectionOperation` |  | |  | `vornr` |
+| `InspectionOperationPlant` |  | |  | `werks` |
+| `BillOfOperationsType` |  | |  | `plnty` |
+| `BillOfOperationsGroup` |  | |  | `plnnr` |
+| `BillOfOperationsVariant` |  | |  | `plnal` |
+| `BOOOperationInternalID` |  | |  | `plnkn` |
+| `BillOfOperationsVersion` |  | |  | `tl_versn` |
+| `WorkCenterInternalID` |  | |  | `arbid` |
+| `StatusObject` |  | |  | `objnr` |
+| `OperationControlProfile` |  | |  | `steus` |
+| `OperationConfirmation` |  | |  | `rueck` |
+| `InspectionSubSystem` |  | |  | `subsys` |
+| `OperationText` |  | |  | `ltxa1` |
+| `InspSbstIsTimeRelated` |  | |  | `qkzprzeit` |
+| `InspSbstHasNoTimeOrQuantity` |  | |  | `qkzprfrei` |
+| `Sequence` |  | |  | `aplfl` |
+| `InspSbstCompletionConfirmation` |  | |  | `qppktabs` |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionCharacteristic` | | ✓ | | |
+| `_InspectionSubset` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_InspectionOperationStatus` | | ✓ | | |
 
 ## Associations
 

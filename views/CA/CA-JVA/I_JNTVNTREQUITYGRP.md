@@ -27,26 +27,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `JointVenture` | `cast( vname as jv_name preserving type )` |
-| key `JntOpgAgrmtEquityGrp` | `egrup` |
-| `JntOpgAgrmtEquityGrpText` | `coalesce( _JntVntrEquityGrpText[1:Language = $session.system_language ].JntOpgAgrmtEquityGrpText, _JntVntrEquityGrpText[1:Language = 'E' ].JntOpgAgrmtEquityGrpText )` |
-| `JntVntrOperatedShare` | `opshare` |
-| `JntVntrNonOperatedShare` | `nopshare` |
-| `JointVentureEquityGroupActive` | `egroupact` |
-| `JntVntrEquityGrpIsSuspended` | `egroupsus` |
-| `JntVntrEquityGrpSuspendedPerd` | `grpsusper` |
-| `JntVntrEquityGrpSuspendedYr` | `grpsusyear` |
-| `JntVntrEquityGrpIsNotSuspended` | `egroupusus` |
-| `JntVntrGrpNotSuspendedPerd` | `grpususper` |
-| `JntVntrGrpNotSuspendedYr` | `grpususyer` |
-| `JntVntrNetProfitIntrstGrp` | `npigroup` |
-| `_CompanyCode` | *Association* |
-| `_JointVentureMasterFld` | *Association* |
-| `_JntVntrEquityGrpText` | *Association* |
-| `_JointVentureSuspenseText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |
+| `JntOpgAgrmtEquityGrpText` |  | |  | `coalesce( _JntVntrEquityGrpText[1:Language = $session.system_language ].JntOpgAgrmtEquityGrpText, _JntVntrEquityGrpText[1:Language = 'E' ].JntOpgAgrmtEquityGrpText )` |
+| `JntVntrOperatedShare` |  | |  | `opshare` |
+| `JntVntrNonOperatedShare` |  | |  | `nopshare` |
+| `JointVentureEquityGroupActive` |  | |  | `egroupact` |
+| `JntVntrEquityGrpIsSuspended` |  | |  | `egroupsus` |
+| `JntVntrEquityGrpSuspendedPerd` |  | |  | `grpsusper` |
+| `JntVntrEquityGrpSuspendedYr` |  | |  | `grpsusyear` |
+| `JntVntrEquityGrpIsNotSuspended` |  | |  | `egroupusus` |
+| `JntVntrGrpNotSuspendedPerd` |  | |  | `grpususper` |
+| `JntVntrGrpNotSuspendedYr` |  | |  | `grpususyer` |
+| `JntVntrNetProfitIntrstGrp` |  | |  | `npigroup` |
+| `_CompanyCode` | | ✓ | | |
+| `_JointVentureMasterFld` | | ✓ | | |
+| `_JntVntrEquityGrpText` | | ✓ | | |
+| `_JointVentureSuspenseText` | | ✓ | | |
 
 ## Associations
 

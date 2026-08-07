@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RAPostLevelOfContractBalance` | `cast(dd07l.domvalue_l as farr_liability_post_mode)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RAPostLevelOfContractBalance` | ✓ | |  | `cast(dd07l.domvalue_l as farr_liability_post_mode)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

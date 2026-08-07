@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerPaytGuarProced` | `kabss` |
-| key `Language` | `spras` |
-| `CustomerPaytGuarProcedName` | `bezei` |
-| `_CustomerPaytGuarProced` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerPaytGuarProced` | ✓ | |  | `kabss` |
+| `Language` | ✓ | |  | `spras` |
+| `CustomerPaytGuarProcedName` |  | |  | `bezei` |
+| `_CustomerPaytGuarProced` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

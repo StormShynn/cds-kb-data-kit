@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| `FinancialTransaction` | `, useAsTemplate: true }] key FinancialTransaction` |
-| key `FinancialTransactionNPVType` | `FinancialTransactionNPVType` |
-| key `NetPresentValueValidityDate` | `NetPresentValueValidityDate` |
-| `NetPresentValueAmountInNPVCrcy` | `NetPresentValueAmountInNPVCrcy` |
-| `NetPresentValueCurrency` | `NetPresentValueCurrency` |
-| `IntrinsicValueAmountInNPVCrcy` | `IntrinsicValueAmountInNPVCrcy` |
-| `TimeValueAmountInNPVCrcy` | `TimeValueAmountInNPVCrcy` |
-| `CleanPriceAmountInNPVCrcy` | `CleanPriceAmountInNPVCrcy` |
-| `IncomingNPVAmountInNPVCrcy` | `IncomingNPVAmountInNPVCrcy` |
-| `OutgoingNPVAmountInNPVCrcy` | `OutgoingNPVAmountInNPVCrcy` |
-| `RiskFreeNPVAmountInNPVCrcy` | `RiskFreeNPVAmountInNPVCrcy` |
-| `CreditValueAdjmtAmtInNPVCrcy` | `CreditValueAdjmtAmtInNPVCrcy` |
-| `DebitValueAdjmtAmtInNPVCrcy` | `DebitValueAdjmtAmtInNPVCrcy` |
-| `_CompanyCode` | *Association* |
-| `_FinancialTransaction` | *Association* |
-| `_NPVType` | *Association* |
-| `_NPVTypeText` | *Association* |
-| `_NPVCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `FinancialTransaction` |  | |  | `, useAsTemplate: true }] key FinancialTransaction` |
+| `FinancialTransactionNPVType` | ✓ | |  |  |
+| `NetPresentValueValidityDate` | ✓ | |  |  |
+| `NetPresentValueAmountInNPVCrcy` |  | |  |  |
+| `NetPresentValueCurrency` |  | |  |  |
+| `IntrinsicValueAmountInNPVCrcy` |  | |  |  |
+| `TimeValueAmountInNPVCrcy` |  | |  |  |
+| `CleanPriceAmountInNPVCrcy` |  | |  |  |
+| `IncomingNPVAmountInNPVCrcy` |  | |  |  |
+| `OutgoingNPVAmountInNPVCrcy` |  | |  |  |
+| `RiskFreeNPVAmountInNPVCrcy` |  | |  |  |
+| `CreditValueAdjmtAmtInNPVCrcy` |  | |  |  |
+| `DebitValueAdjmtAmtInNPVCrcy` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_FinancialTransaction` | | ✓ | | |
+| `_NPVType` | | ✓ | | |
+| `_NPVTypeText` | | ✓ | | |
+| `_NPVCurrency` | | ✓ | | |
 
 ## Source Code
 

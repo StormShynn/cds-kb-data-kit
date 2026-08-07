@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrder` |
-| `DistributionChannel` | `DistributionChannel` |
-| `OrganizationDivision` | `OrganizationDivision` |
-| `SalesOrderType` | `SalesOrderType` |
-| `SalesOrganization` | `SalesOrganization` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
 
 ## Source Code
 

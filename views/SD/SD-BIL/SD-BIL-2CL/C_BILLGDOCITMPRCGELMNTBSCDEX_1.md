@@ -28,93 +28,93 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PricingDocument` | `PrcgElmnt.PricingDocument` |
-| key `PricingDocumentItem` | `PrcgElmnt.PricingDocumentItem` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `BillingDocument` | `BItm.BillingDocument` |
-| `BillingDocumentItem` | `BItm.BillingDocumentItem` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionCategory` | `ConditionCategory` |
-| `ConditionClass` | `ConditionClass` |
-| `BillingDocumentCategory` | `BItm.BillingDocumentCategory` |
-| `BillingDocumentType` | `BItm.BillingDocumentType` |
-| `SDDocumentCategory` | `BItm.SDDocumentCategory` |
-| `SalesDocumentItemCategory` | `BItm.SalesDocumentItemCategory` |
-| `SalesDocumentItemType` | `BItm.SalesDocumentItemType` |
-| `ReturnItemProcessingType` | `BItm.ReturnItemProcessingType` |
-| `LastChangeDate` | `_BDoc.LastChangeDate` |
-| `CreationDate` | `BItm.CreationDate` |
-| `CreationTime` | `BItm.CreationTime` |
-| `SalesOrganization` | `BItm.SalesOrganization` |
-| `DistributionChannel` | `BItm.DistributionChannel` |
-| `OrganizationDivision` | `BItm.OrganizationDivision` |
-| `SalesOffice` | `BItm.SalesOffice` |
-| `SalesGroup` | `BItm.SalesGroup` |
-| `SoldToParty` | `BItm.SoldToParty` |
-| `PayerParty` | `BItm.PayerParty` |
-| `BillToParty` | `BItm.BillToParty` |
-| `ShipToParty` | `BItm.ShipToParty` |
-| `SalesEmployee` | `BItm.SalesEmployee` |
-| `ResponsibleEmployee` | `BItm.ResponsibleEmployee` |
-| `Material` | `BItm.Material` |
-| `Product` | `BItm.Product` |
-| `Division` | `BItm.Division` |
-| `InternationalArticleNumber` | `BItm.InternationalArticleNumber` |
-| `OriginallyRequestedMaterial` | `BItm.OriginallyRequestedMaterial` |
-| `MaterialGroup` | `BItm.MaterialGroup` |
-| `ProductGroup` | `BItm.ProductGroup` |
-| `AdditionalMaterialGroup1` | `BItm.AdditionalMaterialGroup1` |
-| `AdditionalMaterialGroup2` | `BItm.AdditionalMaterialGroup2` |
-| `AdditionalMaterialGroup3` | `BItm.AdditionalMaterialGroup3` |
-| `AdditionalMaterialGroup4` | `BItm.AdditionalMaterialGroup4` |
-| `AdditionalMaterialGroup5` | `BItm.AdditionalMaterialGroup5` |
-| `MaterialCommissionGroup` | `BItm.MaterialCommissionGroup` |
-| `ConditionIsForStatistics` | `ConditionIsForStatistics` |
-| `ConditionOrigin` | `ConditionOrigin` |
-| `ConditionAmount` | `ConditionAmount` |
-| `TransactionCurrency` | `PrcgElmnt.TransactionCurrency` |
-| `ConditionInactiveReason` | `ConditionInactiveReason` |
-| `ConditionIsForConfiguration` | `ConditionIsForConfiguration` |
-| `VariantCondition` | `VariantCondition` |
-| `ExchangeRateType` | `_BDoc.ExchangeRateType` |
-| `PricingDate` | `BItm.PricingDate` |
-| `PriceDetnExchangeRate` | `BItm.PriceDetnExchangeRate` |
-| `PriceDetnExchangeRateDate` | `BItm.PriceDetnExchangeRateDate` |
-| `StatisticalValueControl` | `BItm.StatisticalValueControl` |
-| `BillingDocumentDate` | `BItm.BillingDocumentDate` |
-| `BillingDocumentIsCancelled` | `_BDoc.BillingDocumentIsCancelled` |
-| `BillingDocumentIsTemporary` | `BItm.BillingDocumentIsTemporary` |
-| `BillingQuantityUnit` | `BItm.BillingQuantityUnit` |
-| `BillingQuantity` | `BItm.BillingQuantity` |
-| `ServicesRenderedDate` | `BItm.ServicesRenderedDate` |
-| `BillingPlanRule` | `BItm.BillingPlanRule` |
-| `CompanyCode` | `BItm.CompanyCode` |
-| `AccountingExchangeRate` | `_BDoc.AccountingExchangeRate` |
-| `StatisticsCurrency` | `_BDoc.StatisticsCurrency` |
-| `FiscalYear` | `_BDoc.FiscalYear` |
-| `FiscalPeriod` | `_BDoc.FiscalPeriod` |
-| `Currency` | `_BDoc._CompanyCode.Currency` |
-| `FiscalYearVariant` | `_BDoc._CompanyCode.FiscalYearVariant` |
-| `ControllingArea` | `BItm.ControllingArea` |
-| `CostCenter` | `BItm.CostCenter` |
-| `StatisticsExchangeRate` | `BItm.StatisticsExchangeRate` |
-| `CustomerGroup` | `BItm.CustomerGroup` |
-| `SalesDistrict` | `BItm.SalesDistrict` |
-| `AdditionalCustomerGroup1` | `BItm.AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `BItm.AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `BItm.AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `BItm.AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `BItm.AdditionalCustomerGroup5` |
-| `OverallBillingStatus` | `BItm.OverallBillingStatus` |
-| `ReferenceSDDocument` | `BItm.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `BItm.ReferenceSDDocumentItem` |
-| `ReferenceSDDocumentCategory` | `BItm.ReferenceSDDocumentCategory` |
-| `SalesDocument` | `BItm.SalesDocument` |
-| `SalesDocumentItem` | `BItm.SalesDocumentItem` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PricingDocument` | ✓ | |  |  |
+| `PricingDocumentItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `BillingDocument` |  | |  |  |
+| `BillingDocumentItem` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `BillingDocumentCategory` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `SalesDocumentItemCategory` |  | |  |  |
+| `SalesDocumentItemType` |  | |  |  |
+| `ReturnItemProcessingType` |  | |  |  |
+| `LastChangeDate` |  | | `_BDoc` | `LastChangeDate` |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `SalesEmployee` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  |  |
+| `Division` |  | |  |  |
+| `InternationalArticleNumber` |  | |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |
+| `MaterialCommissionGroup` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |
+| `VariantCondition` |  | |  |  |
+| `ExchangeRateType` |  | | `_BDoc` | `ExchangeRateType` |
+| `PricingDate` |  | |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |
+| `PriceDetnExchangeRateDate` |  | |  |  |
+| `StatisticalValueControl` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `BillingDocumentIsCancelled` |  | | `_BDoc` | `BillingDocumentIsCancelled` |
+| `BillingDocumentIsTemporary` |  | |  |  |
+| `BillingQuantityUnit` |  | |  |  |
+| `BillingQuantity` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `BillingPlanRule` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `AccountingExchangeRate` |  | | `_BDoc` | `AccountingExchangeRate` |
+| `StatisticsCurrency` |  | | `_BDoc` | `StatisticsCurrency` |
+| `FiscalYear` |  | | `_BDoc` | `FiscalYear` |
+| `FiscalPeriod` |  | | `_BDoc` | `FiscalPeriod` |
+| `Currency` |  | | `_BDoc._CompanyCode` | `Currency` |
+| `FiscalYearVariant` |  | | `_BDoc._CompanyCode` | `FiscalYearVariant` |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `StatisticsExchangeRate` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `OverallBillingStatus` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
 
 ## Associations
 

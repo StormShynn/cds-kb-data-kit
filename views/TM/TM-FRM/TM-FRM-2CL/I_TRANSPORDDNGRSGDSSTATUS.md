@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrderDngrsGdsSts` | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tor_dg_status preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrderDngrsGdsSts` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tor_dg_status preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

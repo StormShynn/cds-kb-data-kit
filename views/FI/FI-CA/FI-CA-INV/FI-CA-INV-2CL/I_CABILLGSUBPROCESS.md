@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgSubprocess` | `_TFK8104.subprocess` |
-| `_CABillgSubprocessText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgSubprocess` | ✓ | | `_TFK8104` | `subprocess` |
+| `_CABillgSubprocessText` | | ✓ | | |
 
 ## Associations
 

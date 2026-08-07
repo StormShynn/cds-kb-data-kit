@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMCntxtIntCntctUUID` | `LglCntntMCntxtIntCntctUUID` |
-| `LglCntntMContextUUID` | `LglCntntMContextUUID` |
-| `LglCntntMRank` | `LglCntntMRank` |
-| `LglCntntMIntCntctUser` | `LglCntntMIntCntctUser` |
-| `LglCntntMIntContactTeam` | `LglCntntMIntContactTeam` |
-| `LglCntntMIntCntctType` | `LglCntntMIntCntctType` |
-| `LglCntntMIntContactUserType` | `LglCntntMIntContactUserType` |
-| `LglCntntMIsMandatory` | `LglCntntMIsMandatory` |
-| `LglCntntMIsIntegRelevant` | `LglCntntMIsIntegRelevant` |
-| `_LCMContextTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMCntxtIntCntctUUID` | ✓ | |  |  |
+| `LglCntntMContextUUID` |  | |  |  |
+| `LglCntntMRank` |  | |  |  |
+| `LglCntntMIntCntctUser` |  | |  |  |
+| `LglCntntMIntContactTeam` |  | |  |  |
+| `LglCntntMIntCntctType` |  | |  |  |
+| `LglCntntMIntContactUserType` |  | |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |
+| `_LCMContextTP` | | ✓ | | |
 
 ## Source Code
 

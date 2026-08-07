@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABusinessTransactionActivity` | `cast( left( dd07l.domvalue_l, 4 ) as evl_actid_kk preserving type )` |
-| `_CABusTransActivityText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABusinessTransactionActivity` | ✓ | |  | `cast( left( dd07l.domvalue_l, 4 ) as evl_actid_kk preserving type )` |
+| `_CABusTransActivityText` | | ✓ | | |
 
 ## Associations
 

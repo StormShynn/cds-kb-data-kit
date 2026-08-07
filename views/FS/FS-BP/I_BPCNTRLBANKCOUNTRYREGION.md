@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPCentralBankCountryRegion` | `tplzb.country_key` |
-| `_Text` | *Association* |
-| `_BPFinancialServicesReporting` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPCentralBankCountryRegion` | ✓ | |  | `country_key` |
+| `_Text` | | ✓ | | |
+| `_BPFinancialServicesReporting` | | ✓ | | |
 
 ## Associations
 

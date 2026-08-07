@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `RegionOfOrigin` | `RegionOfOrigin` |
-| `ConsumptionTaxCtrlCode` | `ConsumptionTaxCtrlCode` |
-| `ExportAndImportProductGroup` | `ExportAndImportProductGroup` |
-| `ProductCASNumber` | `ProductCASNumber` |
-| `ProdIntlTradeClassification` | `ProdIntlTradeClassification` |
-| `_Product` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_CountryOfOrigin` | *Association* |
-| `_RegionOfOrigin` | *Association* |
-| `_ProductDescription` | *Association* |
-| `_CountryOfOriginText` | *Association* |
-| `_RegionText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `RegionOfOrigin` |  | |  |  |
+| `ConsumptionTaxCtrlCode` |  | |  |  |
+| `ExportAndImportProductGroup` |  | |  |  |
+| `ProductCASNumber` |  | |  |  |
+| `ProdIntlTradeClassification` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_CountryOfOrigin` | | ✓ | | |
+| `_RegionOfOrigin` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
+| `_CountryOfOriginText` | | ✓ | | |
+| `_RegionText` | | ✓ | | |
 
 ## Source Code
 

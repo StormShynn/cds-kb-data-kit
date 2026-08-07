@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DistributionChannel` | `DistributionChannel` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DistributionChannel` | ✓ | |  |  |
 
 ## Source Code
 

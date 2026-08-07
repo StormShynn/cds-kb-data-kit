@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentContainerRefType` | `refty` |
-| `CADocumentContainerRefCategory` | `refcat` |
-| `_DocCtnRefTypeText` | *Association* |
-| `_DocCtnRefCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentContainerRefType` | ✓ | |  | `refty` |
+| `CADocumentContainerRefCategory` |  | |  | `refcat` |
+| `_DocCtnRefTypeText` | | ✓ | | |
+| `_DocCtnRefCat` | | ✓ | | |
 
 ## Associations
 

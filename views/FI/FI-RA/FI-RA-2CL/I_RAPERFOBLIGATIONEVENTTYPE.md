@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PerfOblgnEventType` | `event_type` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PerfOblgnEventType` | ✓ | |  | `event_type` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

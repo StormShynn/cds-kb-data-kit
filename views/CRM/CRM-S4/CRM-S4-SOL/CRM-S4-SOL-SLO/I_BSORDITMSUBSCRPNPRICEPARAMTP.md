@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
-| key `SubscrpnPrcgParameter` | `SubscrpnPrcgParameter` |
-| `SubscrpnParameterDecimalValue` | `SubscrpnParameterDecimalValue` |
-| `SubscrpnPrcgParamValType` | `SubscrpnPrcgParamValType` |
-| `SubscrpnParamDfltDecimalValue` | `SubscrpnParamDfltDecimalValue` |
-| `SubscrpnPrcgParamValIsSpcfd` | `SubscrpnPrcgParamValIsSpcfd` |
-| `_SubscriptionBillingItem` | *Association* |
-| `_SubscriptionBilling` | *Association* |
-| `_SrvcSubscrpnParamValTypeText` | *Association* |
-| `_BusinessSolutionOrderItemTP` | *Association* |
-| `_BusinessSolutionOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |
+| `SubscrpnPrcgParameter` | ✓ | |  |  |
+| `SubscrpnParameterDecimalValue` |  | |  |  |
+| `SubscrpnPrcgParamValType` |  | |  |  |
+| `SubscrpnParamDfltDecimalValue` |  | |  |  |
+| `SubscrpnPrcgParamValIsSpcfd` |  | |  |  |
+| `_SubscriptionBillingItem` | | ✓ | | |
+| `_SubscriptionBilling` | | ✓ | | |
+| `_SrvcSubscrpnParamValTypeText` | | ✓ | | |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
 
 ## Source Code
 

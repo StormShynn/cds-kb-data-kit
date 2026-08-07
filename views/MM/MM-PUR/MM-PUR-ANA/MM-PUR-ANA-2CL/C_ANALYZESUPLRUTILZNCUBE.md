@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `Supplier` |
-| `SupplierAccountGroup` | `SupplierAccountGroup` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `Country` | `P_TotalNumberOfSuppliers.Country` |
-| `Region` | `Region` |
-| `NmbrOfAvailableSuppliers` | `NmbrOfAvailableSuppliers` |
-| `NumberOfContracts` | `NumberOfContracts` |
-| `_Country` | *Association* |
-| `_Region` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  |  |
+| `SupplierAccountGroup` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `NmbrOfAvailableSuppliers` |  | |  |  |
+| `NumberOfContracts` |  | |  |  |
+| `_Country` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

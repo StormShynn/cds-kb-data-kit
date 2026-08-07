@@ -27,38 +27,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcInternalID` | `CharacteristicValue.CharcInternalID` |
-| key `CharcValuePositionNumber` | `CharacteristicValue.CharcValuePositionNumber` |
-| `CharcValueParentPositionNumber` | `CharacteristicValue.CharcValueParentPositionNumber` |
-| `CharcValueHasChild` | `CharacteristicValue.CharcValueHasChild` |
-| `CharcValueDependency` | `CharacteristicValue.CharcValueIntervalType` |
-| `CharcValue` | `CharacteristicValue.CharcValue` |
-| `CharcFromNumericValue` | `CharacteristicValue.CharcFromNumericValue` |
-| `CharcToNumericValue` | `CharacteristicValue.CharcToNumericValue` |
-| `IsDefaultValue` | `CharacteristicValue.IsDefaultValue` |
-| `CharcFromNumericValueUnit` | `CharacteristicValue.CharcFromNumericValueUnit` |
-| `CharcToNumericValueUnit` | `CharacteristicValue.CharcToNumericValueUnit` |
-| `CharcFromDecimalValue` | `CharacteristicValue.CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `CharacteristicValue.CharcToDecimalValue` |
-| `CharcFromDate` | `CharacteristicValue.CharcFromDate` |
-| `CharcToDate` | `CharacteristicValue.CharcToDate` |
-| `CharcFromTime` | `CharacteristicValue.CharcFromTime` |
-| `CharcToTime` | `CharacteristicValue.CharcToTime` |
-| `CharcFromAmount` | `CharacteristicValue.CharcFromAmount` |
-| `CharcToAmount` | `CharacteristicValue.CharcToAmount` |
-| `Currency` | `CharacteristicValue.Currency` |
-| `LongTextID` | `CharacteristicValue.LongTextID` |
-| `ChangeNumber` | `CharacteristicValue.ChangeNumber` |
-| `ValidityStartDate` | `CharacteristicValue.ValidityStartDate` |
-| `ValidityEndDate` | `CharacteristicValue.ValidityEndDate` |
-| `DocumentInfoRecordDocNumber` | `CharacteristicValue.DocumentInfoRecordDocNumber` |
-| `DocumentInfoRecordDocPart` | `CharacteristicValue.DocumentInfoRecordDocPart` |
-| `DocumentInfoRecordDocVersion` | `CharacteristicValue.DocumentInfoRecordDocVersion` |
-| `DocumentInfoRecordDocType` | `CharacteristicValue.DocumentInfoRecordDocType` |
-| `_Characteristic` | *Association* |
-| `_CharacteristicValueDesc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  |  |
+| `CharcValuePositionNumber` | ✓ | |  |  |
+| `CharcValueParentPositionNumber` |  | |  |  |
+| `CharcValueHasChild` |  | |  |  |
+| `CharcValueDependency` |  | |  | `CharcValueIntervalType` |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `IsDefaultValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `LongTextID` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `DocumentInfoRecordDocNumber` |  | |  |  |
+| `DocumentInfoRecordDocPart` |  | |  |  |
+| `DocumentInfoRecordDocVersion` |  | |  |  |
+| `DocumentInfoRecordDocType` |  | |  |  |
+| `_Characteristic` | | ✓ | | |
+| `_CharacteristicValueDesc` | | ✓ | | |
 
 ## Associations
 

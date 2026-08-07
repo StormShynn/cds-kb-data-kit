@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ValuationArea` | `bwkey` |
-| key `CostingOverheadGroup` | `kosgr` |
-| `OverheadCode` | `zschl` |
-| `_ValuationArea` | *Association* |
-| `_CostingOverheadGroupText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ValuationArea` | ✓ | |  | `bwkey` |
+| `CostingOverheadGroup` | ✓ | |  | `kosgr` |
+| `OverheadCode` |  | |  | `zschl` |
+| `_ValuationArea` | | ✓ | | |
+| `_CostingOverheadGroupText` | | ✓ | | |
 
 ## Associations
 

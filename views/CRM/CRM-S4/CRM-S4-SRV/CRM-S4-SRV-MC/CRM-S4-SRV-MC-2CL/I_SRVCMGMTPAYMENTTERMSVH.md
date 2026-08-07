@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentTerms` | `PaymentTerms.PaymentTerms` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentTerms` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

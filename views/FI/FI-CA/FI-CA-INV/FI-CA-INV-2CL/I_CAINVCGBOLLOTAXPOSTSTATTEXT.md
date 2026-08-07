@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgBolloTaxPostStatus` | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_bollotax_kk preserving type )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgBolloTaxPostStatText` | `cast ( ddtext as inv_bollotax_txt_gfn_kk preserving type )` |
-| `_CAInvcgBolloTaxPostStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgBolloTaxPostStatus` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_bollotax_kk preserving type )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CAInvcgBolloTaxPostStatText` |  | |  | `cast ( ddtext as inv_bollotax_txt_gfn_kk preserving type )` |
+| `_CAInvcgBolloTaxPostStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

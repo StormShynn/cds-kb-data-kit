@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClfnObjectID` | `ObjectClass.ClfnObjectID` |
-| key `ClfnObjectTable` | `ObjectClass.ClfnObjectTable` |
-| key `ClassInternalID` | `ObjectClass.ClassInternalID` |
-| key `ClassType` | `ObjectClass.ClassType` |
-| `ClfnObjectInternalID` | `ObjectClass.ClfnObjectInternalID` |
-| `ClfnStatus` | `ObjectClass.ClfnStatus` |
-| `ClassPositionNumber` | `ObjectClass.ClassPositionNumber` |
-| `ClassIsStandardClass` | `ObjectClass.ClassIsStandardClass` |
-| `BOMIsRecursive` | `ObjectClass.BOMIsRecursive` |
-| `ChangeNumber` | `ObjectClass.ChangeNumber` |
-| `ValidityStartDate` | `ObjectClass.ValidityStartDate` |
-| `ValidityEndDate` | `ObjectClass.ValidityEndDate` |
-| `LastChangeDateTime` | `ObjectClass.LastChangeDateTime` |
-| `_Class` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClfnObjectID` | ✓ | |  |  |
+| `ClfnObjectTable` | ✓ | |  |  |
+| `ClassInternalID` | ✓ | |  |  |
+| `ClassType` | ✓ | |  |  |
+| `ClfnObjectInternalID` |  | |  |  |
+| `ClfnStatus` |  | |  |  |
+| `ClassPositionNumber` |  | |  |  |
+| `ClassIsStandardClass` |  | |  |  |
+| `BOMIsRecursive` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Class` | | ✓ | | |
 
 ## Associations
 

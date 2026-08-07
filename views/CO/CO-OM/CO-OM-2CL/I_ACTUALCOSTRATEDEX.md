@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingCostRateUUID` | `AccountingCostRateUUID` |
-| `CurrencyRole` | `CurrencyRole` |
-| `Ledger` | `Ledger` |
-| `CompanyCode` | `CompanyCode` |
-| `CostCenter` | `CostCenter` |
-| `ActivityType` | `ActivityType` |
-| `ValidityStartFiscalYear` | `ValidityStartFiscalYear` |
-| `ValidityStartFiscalPeriod` | `ValidityStartFiscalPeriod` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndFiscalYear` | `ValidityEndFiscalYear` |
-| `ValidityEndFiscalPeriod` | `ValidityEndFiscalPeriod` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ControllingArea` | `ControllingArea` |
-| `Currency` | `Currency` |
-| `CostRateTotalAmount` | `CostRateTotalAmount` |
-| `CostRateFixedAmount` | `CostRateFixedAmount` |
-| `CostRateVarblAmount` | `CostRateVarblAmount` |
-| `CostRateScaleFactor` | `CostRateScaleFactor` |
-| `CostCtrActivityTypeQtyUnit` | `CostCtrActivityTypeQtyUnit` |
-| `PlanningCategory` | `PlanningCategory` |
-| `BusinessTransactionType` | `BusinessTransactionType` |
-| `ComponentBreakdown` | `ComponentBreakdown` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingCostRateUUID` | ✓ | |  |  |
+| `CurrencyRole` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CostRateTotalAmount` |  | |  |  |
+| `CostRateFixedAmount` |  | |  |  |
+| `CostRateVarblAmount` |  | |  |  |
+| `CostRateScaleFactor` |  | |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  |
+| `PlanningCategory` |  | |  |  |
+| `BusinessTransactionType` |  | |  |  |
+| `ComponentBreakdown` |  | |  |  |
 
 ## Source Code
 

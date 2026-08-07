@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `sprache` |
-| key `InspQualityScoreProcedure` | `qkzverf` |
-| `InspQltyScoreProcedureTxt` | `qkz_text` |
-| `_InspQualityScoreProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |
+| `InspQualityScoreProcedure` | ✓ | |  | `qkzverf` |
+| `InspQltyScoreProcedureTxt` |  | |  | `qkz_text` |
+| `_InspQualityScoreProcedure` | | ✓ | | |
 
 ## Associations
 

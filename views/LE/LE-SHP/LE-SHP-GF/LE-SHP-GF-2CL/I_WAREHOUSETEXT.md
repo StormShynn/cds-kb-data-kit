@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Warehouse` | `lgnum` |
-| key `Language` | `spras` |
-| `WarehouseName` | `lnumt` |
-| `_Warehouse` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Warehouse` | ✓ | |  | `lgnum` |
+| `Language` | ✓ | |  | `spras` |
+| `WarehouseName` |  | |  | `lnumt` |
+| `_Warehouse` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

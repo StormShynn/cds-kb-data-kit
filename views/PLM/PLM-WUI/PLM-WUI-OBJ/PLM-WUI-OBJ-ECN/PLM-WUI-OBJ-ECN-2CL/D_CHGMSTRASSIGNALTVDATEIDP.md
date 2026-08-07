@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ChgNmbrAlternativeDateID` | `cc_aedtn` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChgNmbrAlternativeDateID` |  | |  | `cc_aedtn` |
 
 ## Source Code
 

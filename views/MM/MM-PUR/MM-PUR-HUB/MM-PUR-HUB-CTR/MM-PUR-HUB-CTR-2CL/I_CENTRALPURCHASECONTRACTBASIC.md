@@ -30,41 +30,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `cast (ActivePurchasingDocument as vdm_centralpurchasecontract preserving type)` |
-| `PurchaseContractType` | `PurchaseContractType` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentSubtype` | `PurchasingDocumentSubtype` |
-| `Supplier` | `Supplier` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `PurchasingDocumentName` | `PurchasingDocumentName` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `PurchaseContractTargetAmount` | `PurchaseContractTargetAmount` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `ReleaseCode` | `ReleaseCode` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `ExchangeRateIsFixed` | `ExchangeRateIsFixed` |
-| `PurgDocChangeRequestStatus` | `PurgDocChangeRequestStatus` |
-| `PurgDocIsChgVers` | `PurgDocIsChgVers` |
-| `PurchasingDocumentDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `_CentralPurchaseContractItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  | `cast (ActivePurchasingDocument as vdm_centralpurchasecontract preserving type)` |
+| `PurchaseContractType` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingDocumentName` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `ReleaseCode` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `PurgDocChangeRequestStatus` |  | |  |  |
+| `PurgDocIsChgVers` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `_CentralPurchaseContractItem` | | ✓ | | |
 
 ## Associations
 

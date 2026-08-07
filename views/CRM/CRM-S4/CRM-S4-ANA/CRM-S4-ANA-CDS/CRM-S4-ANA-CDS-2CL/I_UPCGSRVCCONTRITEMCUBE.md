@@ -28,78 +28,78 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceObjectType` | `ServiceObjectType` |
-| key `ServiceContract` | `ServiceContract` |
-| key `ServiceContractItem` | `ServiceContractItem` |
-| `ServiceDocument` | `ServiceDocument` |
-| `ServiceContractType` | `ServiceContractType` |
-| `ServiceContractDescription` | `ServiceContractDescription` |
-| `ServiceContractItemProduct` | `ServiceContractItemProduct` |
-| `ServiceContractItemStartDate` | `ServiceContractItemStartDate` |
-| `ServiceContractItemEndDate` | `ServiceContractItemEndDate` |
-| `SrvcContrStartMonth` | `_StartingPeriod.CalendarMonth` |
-| `SrvcContrStartQuarter` | `_StartingPeriod.CalendarQuarter` |
-| `SrvcContrStartYear` | `_StartingPeriod.CalendarYear` |
-| `SrvcContrEndMonth` | `_ExpiringPeriod.CalendarMonth` |
-| `SrvcContrEndQuarter` | `_ExpiringPeriod.CalendarQuarter` |
-| `SrvcContrEndYear` | `_ExpiringPeriod.CalendarYear` |
-| `ServiceDocItemCreationDate` | `ServiceDocItemCreationDate` |
-| `PostingDate` | `PostingDate` |
-| `ServiceContractItemStatus` | `ServiceContractItemStatus` |
-| `ServiceContractItemCanclnParty` | `ServiceContractItemCanclnParty` |
-| `ServiceContractItmCanclnReason` | `ServiceContractItmCanclnReason` |
-| `ProfitCenter` | `ProfitCenter` |
-| `ControllingArea` | `ControllingArea` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `SoldToParty` | `SoldToParty` |
-| `RespEmployeeBusinessPartnerId` | `RespEmployeeBusinessPartnerId` |
-| `RefBusinessSolutionOrder` | `RefBusinessSolutionOrder` |
-| `SoldToPartyCountry` | `SoldToPartyCountry` |
-| `SoldToPartyRegion` | `SoldToPartyRegion` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `DisplayCurrency` | `$parameters.P_DisplayCurrency` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `ServiceContractItemNetAmount` | `} ServiceContractItemNetAmount` |
-| `NmbrOfServiceContractItems` | `NmbrOfServiceContractItems` |
-| `ExprdSrvcContrItemNetAmount` | `} ExprdSrvcContrItemNetAmount` |
-| `ExprgSrvcContrItemNetAmount` | `} ExprgSrvcContrItemNetAmount` |
-| `NrOfExprgServiceContractItems` | `NrOfExprgServiceContractItems` |
-| `CancldSrvcContrItemNetAmount` | `} CancldSrvcContrItemNetAmount` |
-| `NrOfCancldServiceContractItems` | `NrOfCancldServiceContractItems` |
-| `SrvcContrItemLostNetAmount` | `} SrvcContrItemLostNetAmount` |
-| `ReldServiceContractNetAmount` | `} ReldServiceContractNetAmount` |
-| `NrOfReldServiceContractItems` | `NrOfReldServiceContractItems` |
-| `_StartingCalendarMonth` | `_StartingPeriod._CalendarMonth` |
-| `_ExpiringCalendarMonth` | `_ExpiringPeriod._CalendarMonth` |
-| `_StartingPeriod` | *Association* |
-| `_ExpiringPeriod` | *Association* |
-| `_ServiceContract` | *Association* |
-| `_ServiceDocument` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_Product` | *Association* |
-| `_ServiceDocItemStatus` | *Association* |
-| `_SrvcDocItmLifecycleStatus` | *Association* |
-| `_CancelParty` | *Association* |
-| `_CancelReason` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_SoldToPartyCountry` | *Association* |
-| `_SoldToPartyRegion` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_TransactionCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceContractItem` | ✓ | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceContractType` |  | |  |  |
+| `ServiceContractDescription` |  | |  |  |
+| `ServiceContractItemProduct` |  | |  |  |
+| `ServiceContractItemStartDate` |  | |  |  |
+| `ServiceContractItemEndDate` |  | |  |  |
+| `SrvcContrStartMonth` |  | | `_StartingPeriod` | `CalendarMonth` |
+| `SrvcContrStartQuarter` |  | | `_StartingPeriod` | `CalendarQuarter` |
+| `SrvcContrStartYear` |  | | `_StartingPeriod` | `CalendarYear` |
+| `SrvcContrEndMonth` |  | | `_ExpiringPeriod` | `CalendarMonth` |
+| `SrvcContrEndQuarter` |  | | `_ExpiringPeriod` | `CalendarQuarter` |
+| `SrvcContrEndYear` |  | | `_ExpiringPeriod` | `CalendarYear` |
+| `ServiceDocItemCreationDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `ServiceContractItemStatus` |  | |  |  |
+| `ServiceContractItemCanclnParty` |  | |  |  |
+| `ServiceContractItmCanclnReason` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |
+| `SoldToPartyCountry` |  | |  |  |
+| `SoldToPartyRegion` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |
+| `TransactionCurrency` |  | |  |  |
+| `ServiceContractItemNetAmount` |  | |  | `} ServiceContractItemNetAmount` |
+| `NmbrOfServiceContractItems` |  | |  |  |
+| `ExprdSrvcContrItemNetAmount` |  | |  | `} ExprdSrvcContrItemNetAmount` |
+| `ExprgSrvcContrItemNetAmount` |  | |  | `} ExprgSrvcContrItemNetAmount` |
+| `NrOfExprgServiceContractItems` |  | |  |  |
+| `CancldSrvcContrItemNetAmount` |  | |  | `} CancldSrvcContrItemNetAmount` |
+| `NrOfCancldServiceContractItems` |  | |  |  |
+| `SrvcContrItemLostNetAmount` |  | |  | `} SrvcContrItemLostNetAmount` |
+| `ReldServiceContractNetAmount` |  | |  | `} ReldServiceContractNetAmount` |
+| `NrOfReldServiceContractItems` |  | |  |  |
+| `_StartingCalendarMonth` |  | | `_StartingPeriod` | `_CalendarMonth` |
+| `_ExpiringCalendarMonth` |  | | `_ExpiringPeriod` | `_CalendarMonth` |
+| `_StartingPeriod` | | ✓ | | |
+| `_ExpiringPeriod` | | ✓ | | |
+| `_ServiceContract` | | ✓ | | |
+| `_ServiceDocument` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ServiceDocItemStatus` | | ✓ | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
+| `_CancelParty` | | ✓ | | |
+| `_CancelReason` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_SoldToPartyCountry` | | ✓ | | |
+| `_SoldToPartyRegion` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
 
 ## Associations
 

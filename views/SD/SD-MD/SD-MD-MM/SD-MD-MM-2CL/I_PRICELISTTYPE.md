@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PriceListType` | `pltyp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PriceListType` | ✓ | |  | `pltyp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

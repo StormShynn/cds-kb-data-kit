@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `bp1010.partnr` |
-| `BusPartCreditStanding` | `bp1010.solvncy` |
-| `BPCreditStandingStatus` | `bp1010.sol_inf` |
-| `CreditRatingAgency` | `bp1010.sol_ins` |
-| `BPCreditStandingComment` | `bp1010.sol_txt` |
-| `BPCreditStandingDate` | `bp1010.sol_i_d` |
-| `BPCreditStandingRating` | `bp1010.rating` |
-| `BPLegalProceedingStatus` | `bp1010.lgl_proc` |
-| `BPLglProceedingInitiationDate` | `bp1010.lgl_proc_d` |
-| `BusinessPartnerIsUnderOath` | `bp1010.de_oath` |
-| `BusinessPartnerOathDate` | `bp1010.de_oa_d` |
-| `BusinessPartnerIsBankrupt` | `bp1010.bankrup` |
-| `BusinessPartnerBankruptcyDate` | `bp1010.bnkry_d` |
-| `BPForeclosureIsInitiated` | `bp1010.foreclo` |
-| `BPForeclosureDate` | `bp1010.forcl_d` |
-| `BPCrdtWrthnssAccessChkIsActive` | `''` |
-| `_BusinessPartner` | *Association* |
-| `_BPFinancialServicesExtn` | *Association* |
-| `_BPCreditStanding` | *Association* |
-| `_BPCreditStandingStatus` | *Association* |
-| `_CreditRatingAgency` | *Association* |
-| `_BPCreditWorthinessRating` | *Association* |
-| `_BPLegalProceedingStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partnr` |
+| `BusPartCreditStanding` |  | |  | `solvncy` |
+| `BPCreditStandingStatus` |  | |  | `sol_inf` |
+| `CreditRatingAgency` |  | |  | `sol_ins` |
+| `BPCreditStandingComment` |  | |  | `sol_txt` |
+| `BPCreditStandingDate` |  | |  | `sol_i_d` |
+| `BPCreditStandingRating` |  | |  | `rating` |
+| `BPLegalProceedingStatus` |  | |  | `lgl_proc` |
+| `BPLglProceedingInitiationDate` |  | |  | `lgl_proc_d` |
+| `BusinessPartnerIsUnderOath` |  | |  | `de_oath` |
+| `BusinessPartnerOathDate` |  | |  | `de_oa_d` |
+| `BusinessPartnerIsBankrupt` |  | |  | `bankrup` |
+| `BusinessPartnerBankruptcyDate` |  | |  | `bnkry_d` |
+| `BPForeclosureIsInitiated` |  | |  | `foreclo` |
+| `BPForeclosureDate` |  | |  | `forcl_d` |
+| `BPCrdtWrthnssAccessChkIsActive` |  | |  | `''` |
+| `_BusinessPartner` | | ✓ | | |
+| `_BPFinancialServicesExtn` | | ✓ | | |
+| `_BPCreditStanding` | | ✓ | | |
+| `_BPCreditStandingStatus` | | ✓ | | |
+| `_CreditRatingAgency` | | ✓ | | |
+| `_BPCreditWorthinessRating` | | ✓ | | |
+| `_BPLegalProceedingStatus` | | ✓ | | |
 
 ## Associations
 

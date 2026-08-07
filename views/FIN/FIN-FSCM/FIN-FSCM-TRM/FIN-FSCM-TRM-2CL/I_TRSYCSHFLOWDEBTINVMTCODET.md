@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TrsyCshFlowDebtInvmtCode` | `cast(left(domvalue_l, 1) as ftr_debt_invest_indicator preserving type)` |
-| key `Language` | `DomainText.ddlanguage` |
-| `TrsyCshFlowDebtInvmtCodeName` | `DomainText.ddtext` |
-| `_TrsyCshFlowDebtInvmtCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TrsyCshFlowDebtInvmtCode` | ✓ | |  | `cast(left(domvalue_l, 1) as ftr_debt_invest_indicator preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TrsyCshFlowDebtInvmtCodeName` |  | |  | `ddtext` |
+| `_TrsyCshFlowDebtInvmtCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

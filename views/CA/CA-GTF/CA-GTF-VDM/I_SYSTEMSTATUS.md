@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SystemStatus` | `tj02.istat` |
-| `StatusIsHidden` | `tj02.nodis` |
-| `_SystemStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SystemStatus` | ✓ | |  | `istat` |
+| `StatusIsHidden` |  | |  | `nodis` |
+| `_SystemStatusText` | | ✓ | | |
 
 ## Associations
 

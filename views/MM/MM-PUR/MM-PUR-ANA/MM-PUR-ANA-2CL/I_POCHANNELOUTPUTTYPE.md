@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrderOutputIsAutomated` | `cast ( dd07l.domvalue_l as mm_a_output_channel_type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrderOutputIsAutomated` | ✓ | |  | `cast ( dd07l.domvalue_l as mm_a_output_channel_type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

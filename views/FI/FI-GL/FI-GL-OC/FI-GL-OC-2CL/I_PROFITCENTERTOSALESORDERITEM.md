@@ -33,34 +33,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `cast(kdauf as vbeln_va preserving type)` |
-| key `SalesDocumentItem` | `cast(kdpos as posnr_va preserving type)` |
-| key `ValidityStartDate` | `valid_from` |
-| `ValidityEndDate` | `valid_to` |
-| `ControllingArea` | `kokrs` |
-| `CompanyCode` | `bukrs` |
-| `ProfitCenterBeforeOrglChange` | `prctr_old` |
-| `ProfitCenter` | `prctr` |
-| `OrganizationalChange` | `orgl_change` |
-| `OrglChangeReassignmentStatus` | `reassgmt_status` |
-| `ProfitCenterDerivationSrceType` | `prctr_drvtn_source_type` |
-| `SourceWBSElementInternalID` | `srce_ps_psp_pnr` |
-| `SourceProjectInternalID` | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |
-| `SourceProduct` | `srce_matnr` |
-| `SourcePlant` | `srce_werks` |
-| `SourceOrder` | `cast(srce_aufnr as aufnr preserving type)` |
-| `SourceCostCenter` | `cast(srce_kostl as kostl preserving type)` |
-| `_OrglChgReassignmentStatus` | *Association* |
-| `_ProfitCtrDerivationSrceType` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
-| `_OrglChange` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_ProfitCtr` | *Association* |
-| `_ProfitCenterBeforeOrglChange` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `cast(kdauf as vbeln_va preserving type)` |
+| `SalesDocumentItem` | ✓ | |  | `cast(kdpos as posnr_va preserving type)` |
+| `ValidityStartDate` | ✓ | |  | `valid_from` |
+| `ValidityEndDate` |  | |  | `valid_to` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `OrganizationalChange` |  | |  | `orgl_change` |
+| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |
+| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |
+| `SourceWBSElementInternalID` |  | |  | `srce_ps_psp_pnr` |
+| `SourceProjectInternalID` |  | |  | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |
+| `SourceProduct` |  | |  | `srce_matnr` |
+| `SourcePlant` |  | |  | `srce_werks` |
+| `SourceOrder` |  | |  | `cast(srce_aufnr as aufnr preserving type)` |
+| `SourceCostCenter` |  | |  | `cast(srce_kostl as kostl preserving type)` |
+| `_OrglChgReassignmentStatus` | | ✓ | | |
+| `_ProfitCtrDerivationSrceType` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
+| `_OrglChange` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_ProfitCtr` | | ✓ | | |
+| `_ProfitCenterBeforeOrglChange` | | ✓ | | |
 
 ## Associations
 

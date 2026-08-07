@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_FSItemAttribValueTxt.Language` |
-| key `CnsldtnFSItemScope` | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemscope preserving type )` |
-| `CnsldtnFSItemScopeText` | `_FSItemAttribValueTxt.CnsldtnFSItemAttribValueText` |
-| `CnsldtnFSItemScopeLongText` | `_FSItemAttribValueTxt.CnsldtnFSItemAttribValLongText` |
-| `_CnsldtnFSItemScope` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |
+| `CnsldtnFSItemScope` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemscope preserving type )` |
+| `CnsldtnFSItemScopeText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |
+| `CnsldtnFSItemScopeLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |
+| `_CnsldtnFSItemScope` | | ✓ | | |
 
 ## Associations
 

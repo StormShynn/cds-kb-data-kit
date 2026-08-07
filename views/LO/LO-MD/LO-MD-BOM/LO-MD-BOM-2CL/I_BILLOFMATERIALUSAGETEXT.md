@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `BillOfMaterialVariantUsage` | `stlan` |
-| `BillOfMaterialVariantUsageDesc` | `antxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
+| `BillOfMaterialVariantUsageDesc` |  | |  | `antxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

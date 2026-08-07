@@ -31,81 +31,81 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| key `ServiceEntrySheetItem` | `ServiceEntrySheetItem` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `PurgDocumentItemDeletionCode` | `PurgDocumentItemDeletionCode` |
-| `Service` | `Service` |
-| `ServiceEntrySheetItemDesc` | `ServiceEntrySheetItemDesc` |
-| `ServicePerformer` | `ServicePerformer` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `MultipleAcctAssgmtDistribution` | `MultipleAcctAssgmtDistribution` |
-| `WorkItem` | `WorkItem` |
-| `ConfirmedQuantity` | `ConfirmedQuantity` |
-| `QuantityUnit` | `QuantityUnit` |
-| `OrderPriceUnit` | `OrderPriceUnit` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
-| `QtyInPurchaseOrderPriceUnit` | `QtyInPurchaseOrderPriceUnit` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `ServicePerformanceDate` | `ServicePerformanceDate` |
-| `ServicePerformanceEndDate` | `ServicePerformanceEndDate` |
-| `PerformancePeriodStartDate` | `PerformancePeriodStartDate` |
-| `PerformancePeriodEndDate` | `PerformancePeriodEndDate` |
-| `OriginObject` | `OriginObject` |
-| `Currency` | `Currency` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `SESItemMaterialGroupIsInitial` | `SESItemMaterialGroupIsInitial` |
-| `MaterialGroup` | `MaterialGroup` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `Plant` | `Plant` |
-| `PurgDocItemExternalReference` | `PurgDocItemExternalReference` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `ParentObjectIsDeleted` | `ParentObjectIsDeleted` |
-| `PurOrderItemPlant` | `PurOrderItemPlant` |
-| `PurchaseOrderType` | `PurchaseOrderType` |
-| `Supplier` | `Supplier` |
-| `PurchaseOrderItemMaterialGroup` | `PurchaseOrderItemMaterialGroup` |
-| `PurchaseOrderItemQuantity` | `PurchaseOrderItemQuantity` |
-| `PurchaseOrderItemQuantityUnit` | `PurchaseOrderItemQuantityUnit` |
-| `PurchaseOrderItemNetAmount` | `PurchaseOrderItemNetAmount` |
-| `PurchaseOrderCurrency` | `PurchaseOrderCurrency` |
-| `PurchaseOrderItemCompanyCode` | `PurchaseOrderItemCompanyCode` |
-| `OverdelivTolrtdLmtRatioInPct` | `OverdelivTolrtdLmtRatioInPct` |
-| `PurchaseOrderItemCategory` | `PurchaseOrderItemCategory` |
-| `ExpectedOverallLimitAmount` | `ExpectedOverallLimitAmount` |
-| `OverallLimitAmount` | `OverallLimitAmount` |
-| `TotalConfirmedQuantity` | `TotalConfirmedQuantity` |
-| `OpenQuantity` | `OpenQuantity` |
-| `OpenAmountInPurchaseOrderCrcy` | `OpenAmountInPurchaseOrderCrcy` |
-| `NetAmount` | `NetAmount` |
-| `NetAmountInPurchaseOrderCrcy` | `NetAmountInPurchaseOrderCrcy` |
-| `NonDeductibleInputTaxAmount` | `NonDeductibleInputTaxAmount` |
-| `SESNetAmountInclSalesTax` | `SESNetAmountInclSalesTax` |
-| `TaxCode` | `TaxCode` |
-| `TaxCountry` | `TaxCountry` |
-| `TaxDeterminationDate` | `TaxDeterminationDate` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `TaxCalculationProcedure` | `TaxCalculationProcedure` |
-| `MaterialType` | `MaterialType` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `PurgDocProductType` | `PurgDocProductType` |
-| `SESItemIsFinalEntry` | `SESItemIsFinalEntry` |
-| `_ServiceEntrySheet` | *Association* |
-| `_AccountAssignment` | *Association* |
-| `_SESPricingElement` | *Association* |
-| `_ServiceEntrySheetItemNote` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `PurgDocumentItemDeletionCode` |  | |  |  |
+| `Service` |  | |  |  |
+| `ServiceEntrySheetItemDesc` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `ConfirmedQuantity` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `QtyInPurchaseOrderPriceUnit` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `ServicePerformanceDate` |  | |  |  |
+| `ServicePerformanceEndDate` |  | |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |
+| `OriginObject` |  | |  |  |
+| `Currency` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `SESItemMaterialGroupIsInitial` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PurgDocItemExternalReference` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `ParentObjectIsDeleted` |  | |  |  |
+| `PurOrderItemPlant` |  | |  |  |
+| `PurchaseOrderType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PurchaseOrderItemMaterialGroup` |  | |  |  |
+| `PurchaseOrderItemQuantity` |  | |  |  |
+| `PurchaseOrderItemQuantityUnit` |  | |  |  |
+| `PurchaseOrderItemNetAmount` |  | |  |  |
+| `PurchaseOrderCurrency` |  | |  |  |
+| `PurchaseOrderItemCompanyCode` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `PurchaseOrderItemCategory` |  | |  |  |
+| `ExpectedOverallLimitAmount` |  | |  |  |
+| `OverallLimitAmount` |  | |  |  |
+| `TotalConfirmedQuantity` |  | |  |  |
+| `OpenQuantity` |  | |  |  |
+| `OpenAmountInPurchaseOrderCrcy` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `NetAmountInPurchaseOrderCrcy` |  | |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |
+| `SESNetAmountInclSalesTax` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `TaxDeterminationDate` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TaxCalculationProcedure` |  | |  |  |
+| `MaterialType` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `PurgDocProductType` |  | |  |  |
+| `SESItemIsFinalEntry` |  | |  |  |
+| `_ServiceEntrySheet` | | ✓ | | |
+| `_AccountAssignment` | | ✓ | | |
+| `_SESPricingElement` | | ✓ | | |
+| `_ServiceEntrySheetItemNote` | | ✓ | | |
 
 ## Source Code
 

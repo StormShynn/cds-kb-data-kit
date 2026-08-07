@@ -27,108 +27,108 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `I_Notification.Notification` |
-| `MasterLanguage` | `I_Notification.MasterLanguage` |
-| `NotificationOrigin` | `I_Notification.NotificationOrigin` |
-| `NotificationType` | `I_Notification.NotificationType` |
-| `NotifProcessingPhase` | `I_Notification.NotifProcessingPhase` |
-| `NotificationText` | `I_Notification.NotificationText` |
-| `NotificationPriorityType` | `I_Notification.NotificationPriorityType` |
-| `NotificationPriority` | `I_Notification.NotificationPriority` |
-| `NotificationStatusObject` | `I_Notification.NotificationStatusObject` |
-| `IsBusinessPurposeCompleted` | `I_Notification.IsBusinessPurposeCompleted` |
-| `IsDeleted` | `I_Notification.IsDeleted` |
-| `CreatedByUser` | `I_Notification.CreatedByUser` |
-| `LastChangedByUser` | `I_Notification.LastChangedByUser` |
-| `NotificationCatalog` | `I_Notification.NotificationCatalog` |
-| `NotificationCodeGroup` | `I_Notification.NotificationCodeGroup` |
-| `NotificationCodeID` | `cast( I_Notification.NotificationCodeID as vdm_qmcod preserving type )` |
-| `NotificationComplaintQuantity` | `I_Notification.NotificationComplaintQuantity` |
-| `NotificationInternalQuantity` | `I_Notification.NotificationInternalQuantity` |
-| `NotificationExternalQty` | `I_Notification.NotificationExternalQty` |
-| `NotificationQuantityUnit` | `I_Notification.NotificationQuantityUnit` |
-| `NotificationReferenceQuantity` | `I_Notification.NotificationReferenceQuantity` |
-| `NotifReturnDeliveryQuantity` | `I_Notification.NotifReturnDeliveryQuantity` |
-| `CreationDate` | `I_Notification.CreationDate` |
-| `LastChangedDate` | `I_Notification.LastChangedDate` |
-| `NotificationCreationTime` | `I_Notification.NotificationCreationTime` |
-| `NotificationReportingDate` | `I_Notification.NotificationReportingDate` |
-| `NotificationCompletionDate` | `I_Notification.NotificationCompletionDate` |
-| `NotificationRequiredStartDate` | `I_Notification.NotificationRequiredStartDate` |
-| `NotificationRequiredStartTime` | `I_Notification.NotificationRequiredStartTime` |
-| `NotificationRequiredEndDate` | `I_Notification.NotificationRequiredEndDate` |
-| `NotificationRequiredEndTime` | `I_Notification.NotificationRequiredEndTime` |
-| `CustomerPurchaseOrderDate` | `I_Notification.CustomerPurchaseOrderDate` |
-| `NotificationReturnDeliveryDate` | `I_Notification.NotificationReturnDeliveryDate` |
-| `NotificationTimeZone` | `cast ( I_Notification.NotificationTimeZone as vdm_qtzonso preserving type )` |
-| `ChangedDateTime` | `I_Notification.ChangedDateTime` |
-| `Supplier` | `I_Notification.Supplier` |
-| `Customer` | `I_Notification.Customer` |
-| `ReportedByUser` | `I_Notification.ReportedByUser` |
-| `Material` | `I_Notification.Material` |
-| `MaterialGroup` | `I_Notification.MaterialGroup` |
-| `Plant` | `I_Notification.Plant` |
-| `ProductionOrder` | `I_Notification.ProductionOrder` |
-| `MfgOrderInternalID` | `I_Notification.MfgOrderInternalID` |
-| `ProductionVersion` | `I_Notification.ProductionVersion` |
-| `PurchasingDocument` | `I_Notification.PurchasingDocument` |
-| `PurchasingDocumentItem` | `I_Notification.PurchasingDocumentItem` |
-| `PurchasingOrganization` | `I_Notification.PurchasingOrganization` |
-| `PurchasingGroup` | `I_Notification.PurchasingGroup` |
-| `ActiveDivision` | `I_Notification.ActiveDivision` |
-| `SalesOrganization` | `I_Notification.SalesOrganization` |
-| `DistributionChannel` | `I_Notification.DistributionChannel` |
-| `WBSElementInternalID` | `I_Notification.WBSElementInternalID` |
-| `WorkCenterTypeCode` | `I_Notification.WorkCenterTypeCode` |
-| `MainWorkCenterInternalID` | `I_Notification.MainWorkCenterInternalID` |
-| `MainWorkCenterPlant` | `I_Notification.MainWorkCenterPlant` |
-| `InspectionLot` | `I_Notification.InspectionLot` |
-| `OrderOperationInternalID` | `I_Notification.OrderOperationInternalID` |
-| `Batch` | `I_Notification.Batch` |
-| `Manufacturer` | `I_Notification.Manufacturer` |
-| `MaterialDocumentYear` | `I_Notification.MaterialDocumentYear` |
-| `MaterialDocument` | `I_Notification.MaterialDocument` |
-| `MaterialDocumentItem` | `I_Notification.MaterialDocumentItem` |
-| `AdditionalDeviceData` | `I_Notification.AdditionalDeviceData` |
-| `NotificationLinkedNotification` | `cast( I_Notification.NotificationLinkedNotification as vdm_qwrnum preserving type )` |
-| `NotificationExtReferenceNumber` | `cast( I_Notification.NotificationExtReferenceNumber as vdm_qmextnr preserving type )` |
-| `OrderDocument` | `I_Notification.OrderDocument` |
-| `OrderDocumentItem` | `I_Notification.OrderDocumentItem` |
-| `DeliveryDocument` | `I_Notification.DeliveryDocument` |
-| `DeliveryDocumentItem` | `I_Notification.DeliveryDocumentItem` |
-| `PurchaseOrderByCustomer` | `I_Notification.PurchaseOrderByCustomer` |
-| `ProductionDate` | `I_Notification.ProductionDate` |
-| `_NotificationItem` | `_QualityNotificationItem` |
-| `_QualityNotificationPartner` | *Association* |
-| `_QualityNotificationItem` | *Association* |
-| `_QltyNotificationTask` | *Association* |
-| `_QltyNotificationActivity` | *Association* |
-| `_QltyNotificationHdrTask` | *Association* |
-| `_QltyNotificationHdrActivity` | *Association* |
-| `_QltyNotificationLongText` | *Association* |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_ProductGroup_2` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_PurchasingDocument` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_NotificationQuantityUnit` | *Association* |
-| `_WBSElement` | *Association* |
-| `_InspectionLot` | *Association* |
-| `_InspectionOperation` | *Association* |
-| `_OrderOperationBasic` | *Association* |
-| `_NotificationType` | *Association* |
-| `_NotificationPriority` | *Association* |
-| `_NotificationCatalog` | *Association* |
-| `_NotificationCodeGroup` | *Association* |
-| `_NotificationCode` | *Association* |
-| `_NotifProcessingPhase` | *Association* |
-| `_StsObjConcatActiveStsILL` | *Association* |
-| `_CreatedByUserContactCard` | *Association* |
-| `_LastChangedByUserContactCard` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |
+| `MasterLanguage` |  | |  |  |
+| `NotificationOrigin` |  | |  |  |
+| `NotificationType` |  | |  |  |
+| `NotifProcessingPhase` |  | |  |  |
+| `NotificationText` |  | |  |  |
+| `NotificationPriorityType` |  | |  |  |
+| `NotificationPriority` |  | |  |  |
+| `NotificationStatusObject` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `NotificationCatalog` |  | |  |  |
+| `NotificationCodeGroup` |  | |  |  |
+| `NotificationCodeID` |  | |  | `cast( I_Notification.NotificationCodeID as vdm_qmcod preserving type )` |
+| `NotificationComplaintQuantity` |  | |  |  |
+| `NotificationInternalQuantity` |  | |  |  |
+| `NotificationExternalQty` |  | |  |  |
+| `NotificationQuantityUnit` |  | |  |  |
+| `NotificationReferenceQuantity` |  | |  |  |
+| `NotifReturnDeliveryQuantity` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedDate` |  | |  |  |
+| `NotificationCreationTime` |  | |  |  |
+| `NotificationReportingDate` |  | |  |  |
+| `NotificationCompletionDate` |  | |  |  |
+| `NotificationRequiredStartDate` |  | |  |  |
+| `NotificationRequiredStartTime` |  | |  |  |
+| `NotificationRequiredEndDate` |  | |  |  |
+| `NotificationRequiredEndTime` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `NotificationReturnDeliveryDate` |  | |  |  |
+| `NotificationTimeZone` |  | |  | `cast ( I_Notification.NotificationTimeZone as vdm_qtzonso preserving type )` |
+| `ChangedDateTime` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `ReportedByUser` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProductionOrder` |  | |  |  |
+| `MfgOrderInternalID` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `ActiveDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |
+| `MainWorkCenterPlant` |  | |  |  |
+| `InspectionLot` |  | |  |  |
+| `OrderOperationInternalID` |  | |  |  |
+| `Batch` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `MaterialDocumentItem` |  | |  |  |
+| `AdditionalDeviceData` |  | |  |  |
+| `NotificationLinkedNotification` |  | |  | `cast( I_Notification.NotificationLinkedNotification as vdm_qwrnum preserving type )` |
+| `NotificationExtReferenceNumber` |  | |  | `cast( I_Notification.NotificationExtReferenceNumber as vdm_qmextnr preserving type )` |
+| `OrderDocument` |  | |  |  |
+| `OrderDocumentItem` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `ProductionDate` |  | |  |  |
+| `_NotificationItem` |  | |  | `_QualityNotificationItem` |
+| `_QualityNotificationPartner` | | ✓ | | |
+| `_QualityNotificationItem` | | ✓ | | |
+| `_QltyNotificationTask` | | ✓ | | |
+| `_QltyNotificationActivity` | | ✓ | | |
+| `_QltyNotificationHdrTask` | | ✓ | | |
+| `_QltyNotificationHdrActivity` | | ✓ | | |
+| `_QltyNotificationLongText` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductGroup_2` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_PurchasingDocument` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_NotificationQuantityUnit` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionOperation` | | ✓ | | |
+| `_OrderOperationBasic` | | ✓ | | |
+| `_NotificationType` | | ✓ | | |
+| `_NotificationPriority` | | ✓ | | |
+| `_NotificationCatalog` | | ✓ | | |
+| `_NotificationCodeGroup` | | ✓ | | |
+| `_NotificationCode` | | ✓ | | |
+| `_NotifProcessingPhase` | | ✓ | | |
+| `_StsObjConcatActiveStsILL` | | ✓ | | |
+| `_CreatedByUserContactCard` | | ✓ | | |
+| `_LastChangedByUserContactCard` | | ✓ | | |
 
 ## Associations
 

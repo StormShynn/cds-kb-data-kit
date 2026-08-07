@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostComponentStructure` | `CostComponentStructure` |
-| key `CostComponent` | `CostComponent` |
-| `CostComponentName` | `_CostComponentText.CostComponentName` |
-| `_CostComponentText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostComponentStructure` | ✓ | |  |  |
+| `CostComponent` | ✓ | |  |  |
+| `CostComponentName` |  | | `_CostComponentText` | `CostComponentName` |
+| `_CostComponentText` | | ✓ | | |
 
 ## Associations
 

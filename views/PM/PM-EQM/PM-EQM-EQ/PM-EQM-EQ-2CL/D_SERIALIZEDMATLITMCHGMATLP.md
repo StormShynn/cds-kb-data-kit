@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Material` | `matnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` |  | |  | `matnr` |
 
 ## Source Code
 

@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OutboundDelivery` | `OutboundDelivery` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `AddressID` | `AddressID` |
-| `AddressPersonID` | `AddressPersonID` |
-| `ContactPerson` | `ContactPerson` |
-| `_Delivery` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OutboundDelivery` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `_Delivery` | | ✓ | | |
 
 ## Source Code
 

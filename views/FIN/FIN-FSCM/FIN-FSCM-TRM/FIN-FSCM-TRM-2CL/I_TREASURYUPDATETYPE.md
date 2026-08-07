@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryUpdateType` | `TreasuryUpdateType.dis_flowtype` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryUpdateType` | ✓ | |  | `dis_flowtype` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

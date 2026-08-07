@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABusTransDocumentType` | `cast ( left( dd07l.domvalue_l, 4 ) as evl_doctyp_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABusTransDocumentType` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 4 ) as evl_doctyp_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

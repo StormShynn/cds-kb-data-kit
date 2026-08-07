@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtDoc` | `SettlmtDoc` |
-| `AlternativeInvoicingParty` | `AlternativeInvoicingParty` |
-| `SuplrSettlmtCompanyCode` | `SuplrSettlmtCompanyCode` |
-| `BillToParty` | `BillToParty` |
-| `CustSettlmtCompanyCode` | `CustSettlmtCompanyCode` |
-| `InvoicingParty` | `InvoicingParty` |
-| `PayeeParty` | `PayeeParty` |
-| `PayerParty` | `PayerParty` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `SalesOrganization` | `SalesOrganization` |
-| `SettlmtDocType` | `SettlmtDocType` |
-| `SettlmtDocAuthznCat` | `SettlmtDocAuthznCat` |
-| `_AlternativeInvoicingParty` | *Association* |
-| `_AltvInvoicingPartyCompany` | *Association* |
-| `_BillToParty` | *Association* |
-| `_BillToPartyCompany` | *Association* |
-| `_InvoicingParty` | *Association* |
-| `_InvoicingPartyCompany` | *Association* |
-| `_PayeeParty` | *Association* |
-| `_PayeePartyCompany` | *Association* |
-| `_PayerParty` | *Association* |
-| `_PayerPartyCompany` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtDoc` | ✓ | |  |  |
+| `AlternativeInvoicingParty` |  | |  |  |
+| `SuplrSettlmtCompanyCode` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `CustSettlmtCompanyCode` |  | |  |  |
+| `InvoicingParty` |  | |  |  |
+| `PayeeParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `SettlmtDocType` |  | |  |  |
+| `SettlmtDocAuthznCat` |  | |  |  |
+| `_AlternativeInvoicingParty` | | ✓ | | |
+| `_AltvInvoicingPartyCompany` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_BillToPartyCompany` | | ✓ | | |
+| `_InvoicingParty` | | ✓ | | |
+| `_InvoicingPartyCompany` | | ✓ | | |
+| `_PayeeParty` | | ✓ | | |
+| `_PayeePartyCompany` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_PayerPartyCompany` | | ✓ | | |
 
 ## Source Code
 

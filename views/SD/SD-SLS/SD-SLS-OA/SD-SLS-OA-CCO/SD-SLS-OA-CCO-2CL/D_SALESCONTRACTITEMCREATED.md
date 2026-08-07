@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EventRaisedDateTime` | `vdm_lastchangedon` |
-| `SalesContractType` | `auart_unv` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `OrganizationDivision` | `spart` |
-| `SoldToParty` | `kunnr` |
-| `SalesContractItemCategory` | `pstyv` |
-| `Product` | `matnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
+| `SalesContractType` |  | |  | `auart_unv` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SoldToParty` |  | |  | `kunnr` |
+| `SalesContractItemCategory` |  | |  | `pstyv` |
+| `Product` |  | |  | `matnr` |
 
 ## Source Code
 

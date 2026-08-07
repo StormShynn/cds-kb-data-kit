@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `HeaderValidityEndDate` | `datub` |
-| `HeaderValidityStartDate` | `datuv` |
-| `BillOfMaterialComponent` | `idnrk` |
-| `BillOfMaterialVariant` | `stalt` |
-| `BillOfMaterialVersion` | `bom_version` |
-| `BillOfMaterialCategory` | `stlty` |
-| `Plant` | `werks_d` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HeaderValidityEndDate` |  | |  | `datub` |
+| `HeaderValidityStartDate` |  | |  | `datuv` |
+| `BillOfMaterialComponent` |  | |  | `idnrk` |
+| `BillOfMaterialVariant` |  | |  | `stalt` |
+| `BillOfMaterialVersion` |  | |  | `bom_version` |
+| `BillOfMaterialCategory` |  | |  | `stlty` |
+| `Plant` |  | |  | `werks_d` |
 
 ## Source Code
 

@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ValidityStartDate` | `cc_ccdat` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ValidityStartDate` |  | |  | `cc_ccdat` |
 
 ## Source Code
 

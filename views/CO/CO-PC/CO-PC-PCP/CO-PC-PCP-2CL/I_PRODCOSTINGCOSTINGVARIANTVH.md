@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingVariant` | `CostingVariant` |
-| `CostingVariantName` | `CostingVariantName` |
-| `ValuationVariant` | `ValuationVariant` |
-| `ValuationVariantName` | `ValuationVariantName` |
-| `CostingType` | `CostingType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingVariant` | ✓ | |  |  |
+| `CostingVariantName` |  | |  |  |
+| `ValuationVariant` |  | |  |  |
+| `ValuationVariantName` |  | |  |  |
+| `CostingType` |  | |  |  |
 
 ## Source Code
 

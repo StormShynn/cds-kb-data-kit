@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowScenarioDefinition` | `WorkflowScenarioDefinition.WorkflowScenarioDefinition` |
-| key `Language` | `WorkflowDefinitionText.Language` |
-| `WorkflowScenarioDefinitionName` | `WorkflowDefinitionText.WorkflowTaskDefinitionName` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowScenarioDefinition` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `WorkflowScenarioDefinitionName` |  | |  | `WorkflowTaskDefinitionName` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

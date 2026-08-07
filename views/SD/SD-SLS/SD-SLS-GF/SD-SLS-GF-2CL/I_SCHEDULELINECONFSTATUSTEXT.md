@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ScheduleLineConfirmationStatus` | `substring(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `ScheduleLineConfStatusDesc` | `ddtext` |
-| `_ScheduleLineConfStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ScheduleLineConfirmationStatus` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ScheduleLineConfStatusDesc` |  | |  | `ddtext` |
+| `_ScheduleLineConfStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

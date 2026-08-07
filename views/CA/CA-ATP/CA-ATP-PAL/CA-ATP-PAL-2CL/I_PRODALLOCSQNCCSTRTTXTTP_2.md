@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocSqncConstraintUUID` | `ProdAllocSqncConstraintUUID` |
-| key `Language` | `Language` |
-| `ProdAllocSqncConstraintDesc` | `ProdAllocSqncConstraintDesc` |
-| `ProductAllocationSequenceUUID` | `ProductAllocationSequenceUUID` |
-| `_ProdAllocationSequenceTP` | *Association* |
-| `_ProdAllocSqncCstrtTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocSqncConstraintUUID` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ProdAllocSqncConstraintDesc` |  | |  |  |
+| `ProductAllocationSequenceUUID` |  | |  |  |
+| `_ProdAllocationSequenceTP` | | ✓ | | |
+| `_ProdAllocSqncCstrtTP` | | ✓ | | |
 
 ## Source Code
 

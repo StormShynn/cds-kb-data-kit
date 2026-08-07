@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionSequentialNumber` | `ConditionSequentialNumber` |
-| key `Language` | `Language` |
-| `ConditionText` | `ConditionText` |
-| `_Supplement` | *Association* |
-| `_ConditionRecord` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionSequentialNumber` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ConditionText` |  | |  |  |
+| `_Supplement` | | ✓ | | |
+| `_ConditionRecord` | | ✓ | | |
 
 ## Source Code
 

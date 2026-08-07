@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityManagementSystem` | `tq02b.qssysfam` |
-| `QltyMgmtSystIsCertified` | `tq02b.qssyszert` |
-| `QltyMgmtSystValuation` | `tq02b.qssysbew` |
-| `QualityManagementSystemOID` | `case when I_MdiOidConfiguration.Context is initial then cast( tq02b.qssysfam as qualitymanagementsystemoid ) when I_MdiOidConfiguration.Context is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), tq02b.qssysfam ) as qualitymanagementsystemoid ) end` |
-| `_QltyMgmtSystemText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityManagementSystem` | ✓ | |  | `qssysfam` |
+| `QltyMgmtSystIsCertified` |  | |  | `qssyszert` |
+| `QltyMgmtSystValuation` |  | |  | `qssysbew` |
+| `QualityManagementSystemOID` |  | |  | `case when I_MdiOidConfiguration.Context is initial then cast( tq02b.qssysfam as qualitymanagementsystemoid ) when I_MdiOidConfiguration.Context is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), tq02b.qssysfam ) as qualitymanagementsystemoid ) end` |
+| `_QltyMgmtSystemText` | | ✓ | | |
 
 ## Associations
 

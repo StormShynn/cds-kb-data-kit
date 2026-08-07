@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `BillingDocument` | `BillingDocument` |
-| `_ServiceContractTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `BillingDocument` | ✓ | |  |  |
+| `_ServiceContractTP` | | ✓ | | |
 
 ## Source Code
 

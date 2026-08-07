@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanContainerStatusSequence` | `pksfg` |
-| `KanbanContainerWaitStatusUse` | `sfgs1` |
-| `KanbanContainerEmptyStatusUse` | `sfgs2` |
-| `KanbanContainerInProcStatusUse` | `sfgs3` |
-| `KanbanContainerInTrnstStsUse` | `sfgs4` |
-| `KanbanContainerFullStatusUse` | `sfgs5` |
-| `KanbanContainerInUseStatusUse` | `sfgs6` |
-| `KnbnCtnStatusTrnstnHasOwnActy` | `pkakt` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanContainerStatusSequence` | ✓ | |  | `pksfg` |
+| `KanbanContainerWaitStatusUse` |  | |  | `sfgs1` |
+| `KanbanContainerEmptyStatusUse` |  | |  | `sfgs2` |
+| `KanbanContainerInProcStatusUse` |  | |  | `sfgs3` |
+| `KanbanContainerInTrnstStsUse` |  | |  | `sfgs4` |
+| `KanbanContainerFullStatusUse` |  | |  | `sfgs5` |
+| `KanbanContainerInUseStatusUse` |  | |  | `sfgs6` |
+| `KnbnCtnStatusTrnstnHasOwnActy` |  | |  | `pkakt` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -30,43 +30,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMOutboundDeliveryOrder` | `EWMOutboundDeliveryOrder` |
-| `OutboundDeliveryOrderUUID` | `OutboundDeliveryOrderUUID` |
-| `SAPObjectNodeType` | `SAPObjectNodeType` |
-| `EWMOutbDeliveryOrderUUIDHex` | `EWMOutbDeliveryOrderUUIDHex` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `EWMDeliveryDocumentCategory` | `EWMDeliveryDocumentCategory` |
-| `EWMDeliveryDocumentType` | `EWMDeliveryDocumentType` |
-| `ShipToParty` | `ShipToParty` |
-| `ShipToPartyName` | `ShipToPartyName` |
-| `EWMShipToIsBusPurposeCmpltd` | `EWMShipToIsBusPurposeCmpltd` |
-| `Carrier` | `Carrier` |
-| `CarrierName` | `CarrierName` |
-| `EWMCarrierIsBusPurposeCmpltd` | `EWMCarrierIsBusPurposeCmpltd` |
-| `OutboundDelivery` | `OutboundDelivery` |
-| `FreightOrder` | `FreightOrder` |
-| `MasterBillOfLading` | `MasterBillOfLading` |
-| `TranspOrdPartnerReference` | `TranspOrdPartnerReference` |
-| `BusinessSystemName` | `BusinessSystemName` |
-| `EWMShippingReadinessStatus` | `EWMShippingReadinessStatus` |
-| `PlannedDeliveryUTCDateTime` | `PlannedDeliveryUTCDateTime` |
-| `PlannedOutOfYardUTCDateTime` | `PlannedOutOfYardUTCDateTime` |
-| `WarehouseTimeZone` | `WarehouseTimeZone` |
-| `IncotermsPart1` | `IncotermsPart1` |
-| `IncotermsPart2` | `IncotermsPart2` |
-| `EWMRoute` | `EWMRoute` |
-| `RouteName` | `RouteName` |
-| `SalesOrganization` | `SalesOrganization` |
-| `ShippingOffice` | `ShippingOffice` |
-| `EWMMeansOfTransport` | `EWMMeansOfTransport` |
-| `EWMMeansOfTransportType` | `EWMMeansOfTransportType` |
-| `EWMTranspPlanningType` | `EWMTranspPlanningType` |
-| `EWMDelivLastChangeUTCDateTime` | `EWMDelivLastChangeUTCDateTime` |
-| `EWMWhseReqHasWarehouseTask` | `EWMWhseReqHasWarehouseTask` |
-| `_WhseOutbDeliveryOrderItem` | *Association* |
-| `_HDMRelation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMOutboundDeliveryOrder` | ✓ | |  |  |
+| `OutboundDeliveryOrderUUID` |  | |  |  |
+| `SAPObjectNodeType` |  | |  |  |
+| `EWMOutbDeliveryOrderUUIDHex` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  |  |
+| `EWMDeliveryDocumentType` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `ShipToPartyName` |  | |  |  |
+| `EWMShipToIsBusPurposeCmpltd` |  | |  |  |
+| `Carrier` |  | |  |  |
+| `CarrierName` |  | |  |  |
+| `EWMCarrierIsBusPurposeCmpltd` |  | |  |  |
+| `OutboundDelivery` |  | |  |  |
+| `FreightOrder` |  | |  |  |
+| `MasterBillOfLading` |  | |  |  |
+| `TranspOrdPartnerReference` |  | |  |  |
+| `BusinessSystemName` |  | |  |  |
+| `EWMShippingReadinessStatus` |  | |  |  |
+| `PlannedDeliveryUTCDateTime` |  | |  |  |
+| `PlannedOutOfYardUTCDateTime` |  | |  |  |
+| `WarehouseTimeZone` |  | |  |  |
+| `IncotermsPart1` |  | |  |  |
+| `IncotermsPart2` |  | |  |  |
+| `EWMRoute` |  | |  |  |
+| `RouteName` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `ShippingOffice` |  | |  |  |
+| `EWMMeansOfTransport` |  | |  |  |
+| `EWMMeansOfTransportType` |  | |  |  |
+| `EWMTranspPlanningType` |  | |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  |  |
+| `EWMWhseReqHasWarehouseTask` |  | |  |  |
+| `_WhseOutbDeliveryOrderItem` | | ✓ | | |
+| `_HDMRelation` | | ✓ | | |
 
 ## Source Code
 

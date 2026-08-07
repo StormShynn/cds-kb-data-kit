@@ -27,35 +27,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LegalTransaction` | `LegalTransaction` |
-| `LegalTransactionTitle` | `LegalTransactionTitle` |
-| `LglCntntMContextUUID` | `LglCntntMContextUUID` |
-| `LegalTransactionHealth` | `LegalTransactionHealth` |
-| `LglCntntMLanguage` | `LglCntntMLanguage` |
-| `LglTransWrkFlwModInstce` | `LglTransWrkFlwModInstce` |
-| `LegalTransactionSource` | `LegalTransactionSource` |
-| `LglCntntMAgingTemperature` | `LglCntntMAgingTemperature` |
-| `LglCntntMRtntnPerdStartDate` | `LglCntntMRtntnPerdStartDate` |
-| `LglCntntMGovLaw` | `LglCntntMGovLaw` |
-| `LglCntntMMainOrgType` | `LglCntntMMainOrgType` |
-| `LglCntntMLongTextUUID` | `LglCntntMLongTextUUID` |
-| `CopiedFromLegalTransactionUUID` | `LglCntntMCrtedFrmLglTransUUID` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `LglCntntMLongText` | `LglCntntMLongText` |
-| `LglCntntMLongTextMimeType` | `LglCntntMLongTextMimeType` |
-| `LglCntntMProfile` | `LglCntntMProfile` |
-| `LglTransAccessLvl` | `LglTransAccessLvl` |
-| `LglCntntMMainOrgCoCode` | `LglCntntMMainOrgCoCode` |
-| `LglCntntMMainOrgSalesOrg` | `LglCntntMMainOrgSalesOrg` |
-| `LglCntntMMainOrgPurOrg` | `LglCntntMMainOrgPurOrg` |
-| `LglCntntMCreatedByUser` | `LglCntntMCreatedByUser` |
-| `LglCntntMCreatedUTCDateTime` | `LglCntntMCreatedUTCDateTime` |
-| `LglCntntMChangedByUser` | `LglCntntMChangedByUser` |
-| `LglCntntMChangedUTCDateTime` | `LglCntntMChangedUTCDateTime` |
-| `_LegalContextAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionUUID` | ✓ | |  |  |
+| `LegalTransaction` |  | |  |  |
+| `LegalTransactionTitle` |  | |  |  |
+| `LglCntntMContextUUID` |  | |  |  |
+| `LegalTransactionHealth` |  | |  |  |
+| `LglCntntMLanguage` |  | |  |  |
+| `LglTransWrkFlwModInstce` |  | |  |  |
+| `LegalTransactionSource` |  | |  |  |
+| `LglCntntMAgingTemperature` |  | |  |  |
+| `LglCntntMRtntnPerdStartDate` |  | |  |  |
+| `LglCntntMGovLaw` |  | |  |  |
+| `LglCntntMMainOrgType` |  | |  |  |
+| `LglCntntMLongTextUUID` |  | |  |  |
+| `CopiedFromLegalTransactionUUID` |  | |  | `LglCntntMCrtedFrmLglTransUUID` |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `LglCntntMLongText` |  | |  |  |
+| `LglCntntMLongTextMimeType` |  | |  |  |
+| `LglCntntMProfile` |  | |  |  |
+| `LglTransAccessLvl` |  | |  |  |
+| `LglCntntMMainOrgCoCode` |  | |  |  |
+| `LglCntntMMainOrgSalesOrg` |  | |  |  |
+| `LglCntntMMainOrgPurOrg` |  | |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |
+| `_LegalContextAPI01` | | ✓ | | |
 
 ## Associations
 

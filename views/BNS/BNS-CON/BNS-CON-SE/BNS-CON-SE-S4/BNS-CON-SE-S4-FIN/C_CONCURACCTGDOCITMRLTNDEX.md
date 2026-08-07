@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConcurSystemKey` | `ConcurSystemKey` |
-| key `ConcurDocumentType` | `ConcurDocumentType` |
-| key `ConcurDocumentID` | `ConcurDocumentID` |
-| key `ConcurDocumentRevisionNumber` | `ConcurDocumentRevisionNumber` |
-| key `ConcurEntryIdentifier` | `ConcurEntryIdentifier` |
-| key `CompanyCode` | `CompanyCode` |
-| key `JournalEntry` | `JournalEntry` |
-| key `ConcurDocumentFiscalYear` | `ConcurDocumentFiscalYear` |
-| key `ReferenceDocumentItem` | `ReferenceDocumentItem` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConcurSystemKey` | ✓ | |  |  |
+| `ConcurDocumentType` | ✓ | |  |  |
+| `ConcurDocumentID` | ✓ | |  |  |
+| `ConcurDocumentRevisionNumber` | ✓ | |  |  |
+| `ConcurEntryIdentifier` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `JournalEntry` | ✓ | |  |  |
+| `ConcurDocumentFiscalYear` | ✓ | |  |  |
+| `ReferenceDocumentItem` | ✓ | |  |  |
 
 ## Source Code
 

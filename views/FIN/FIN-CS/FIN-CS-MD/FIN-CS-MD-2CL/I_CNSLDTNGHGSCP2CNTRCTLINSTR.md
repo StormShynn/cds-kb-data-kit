@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope2ContractualInstrument` | `cast( _Source.GHGScope2ContractualInstrument as fincs_ghgscp2cntrctlinstrument preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope2ContractualInstrument` | ✓ | |  | `cast( _Source.GHGScope2ContractualInstrument as fincs_ghgscp2cntrctlinstrument preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

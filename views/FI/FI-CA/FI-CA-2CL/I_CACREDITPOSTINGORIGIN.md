@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OriginalSourceOfCredit` | `cast( left( dd07l.domvalue_l, 1 ) as orig_credit_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OriginalSourceOfCredit` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as orig_credit_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -31,46 +31,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionType` | `ConditionType` |
-| `AccessSequence` | `AccessSequence` |
-| `ConditionClass` | `ConditionClass` |
-| `ConditionCalculationType` | `ConditionCalculationType` |
-| `ConditionCategory` | `ConditionCategory` |
-| `PrcgCndnAmountRoundingRule` | `PrcgCndnAmountRoundingRule` |
-| `PricingConditionFunction` | `PricingConditionFunction` |
-| `StructureCondition` | `StructureCondition` |
-| `PrcgConditionAmountSign` | `PrcgConditionAmountSign` |
-| `IsGroupCondition` | `IsGroupCondition` |
-| `PrcgCndnRndngDiffsIsSettled` | `PrcgCndnRndngDiffsIsSettled` |
-| `PrcgGroupConditionRoutine` | `PrcgGroupConditionRoutine` |
-| `CndnManualEntries` | `CndnManualEntries` |
-| `CndnAppliesHeader` | `CndnAppliesHeader` |
-| `CndnAppliesItems` | `CndnAppliesItems` |
-| `PrcgCndnTypeDeletionIsAllowed` | `PrcgCndnTypeDeletionIsAllowed` |
-| `PrcgCndnAmountChangedIsAllowed` | `PrcgCndnAmountChangedIsAllowed` |
-| `PrcgCndnCnvrsnFctrChgIsAllowed` | `PrcgCndnCnvrsnFctrChgIsAllowed` |
-| `PrcgCndnValChgIsAllwd` | `PrcgCndnValChgIsAllwd` |
-| `PrcgCndnPrpsdValidFromDateCode` | `PrcgCndnPrpsdValidFromDateCode` |
-| `PrcgCndnPrpsdValidToDateCode` | `PrcgCndnPrpsdValidToDateCode` |
-| `PricingProcedure` | `PricingProcedure` |
-| `PrcgConditionDeletionMethod` | `PrcgConditionDeletionMethod` |
-| `CndnIsRelevantForLimitValue` | `CndnIsRelevantForLimitValue` |
-| `PricingScaleBasisShort` | `PricingScaleBasisShort` |
-| `PricingScaleCheckingRule` | `PricingScaleCheckingRule` |
-| `PricingScaleType` | `PricingScaleType` |
-| `PricingScaleRoutine` | `PricingScaleRoutine` |
-| `PricingScaleUnit` | `PricingScaleUnit` |
-| `PrcgCndnCrcyCnvrsnIsAftMltpl` | `PrcgCndnCrcyCnvrsnIsAftMltpl` |
-| `IsRelevantForAccrual` | `IsRelevantForAccrual` |
-| `CndnIsForVariantConfiguration` | `CndnIsForVariantConfiguration` |
-| `PrcgCndnQtyCnvrsnIsActivated` | `PrcgCndnQtyCnvrsnIsActivated` |
-| `CndnIsRelevantForIntcoBilling` | `CndnIsRelevantForIntcoBilling` |
-| `PricingDateIdentificationCode` | `PricingDateIdentificationCode` |
-| `CndnValueZeroProcgCode` | `CndnValueZeroProcgCode` |
-| `ConditionTypeIsInclusionPoint` | `ConditionTypeIsInclusionPoint` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionType` | ✓ | |  |  |
+| `AccessSequence` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `PrcgCndnAmountRoundingRule` |  | |  |  |
+| `PricingConditionFunction` |  | |  |  |
+| `StructureCondition` |  | |  |  |
+| `PrcgConditionAmountSign` |  | |  |  |
+| `IsGroupCondition` |  | |  |  |
+| `PrcgCndnRndngDiffsIsSettled` |  | |  |  |
+| `PrcgGroupConditionRoutine` |  | |  |  |
+| `CndnManualEntries` |  | |  |  |
+| `CndnAppliesHeader` |  | |  |  |
+| `CndnAppliesItems` |  | |  |  |
+| `PrcgCndnTypeDeletionIsAllowed` |  | |  |  |
+| `PrcgCndnAmountChangedIsAllowed` |  | |  |  |
+| `PrcgCndnCnvrsnFctrChgIsAllowed` |  | |  |  |
+| `PrcgCndnValChgIsAllwd` |  | |  |  |
+| `PrcgCndnPrpsdValidFromDateCode` |  | |  |  |
+| `PrcgCndnPrpsdValidToDateCode` |  | |  |  |
+| `PricingProcedure` |  | |  |  |
+| `PrcgConditionDeletionMethod` |  | |  |  |
+| `CndnIsRelevantForLimitValue` |  | |  |  |
+| `PricingScaleBasisShort` |  | |  |  |
+| `PricingScaleCheckingRule` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `PricingScaleRoutine` |  | |  |  |
+| `PricingScaleUnit` |  | |  |  |
+| `PrcgCndnCrcyCnvrsnIsAftMltpl` |  | |  |  |
+| `IsRelevantForAccrual` |  | |  |  |
+| `CndnIsForVariantConfiguration` |  | |  |  |
+| `PrcgCndnQtyCnvrsnIsActivated` |  | |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |
+| `PricingDateIdentificationCode` |  | |  |  |
+| `CndnValueZeroProcgCode` |  | |  |  |
+| `ConditionTypeIsInclusionPoint` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `t024d.werks` |
-| key `MRPController` | `cast(t024d.dispo as pph_dispo preserving type)` |
-| `MRPControllerName` | `cast(t024d.dsnam as pph_dsnam preserving type)` |
-| `MRPControllerPhoneNumber` | `cast(t024d.dstel as pph_dstel preserving type)` |
-| `PurchasingGroup` | `t024d.ekgrp` |
-| `BusinessArea` | `t024d.gsber` |
-| `ProfitCenter` | `t024d.prctr` |
-| `UserID` | `case t024d.usrtyp when 'US' then t024d.usrkey else '' end` |
-| `_Plant` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_User` | *Association* |
-| `_PlantText` | *Association* |
-| `_BusinessAreaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `MRPController` | ✓ | |  | `cast(t024d.dispo as pph_dispo preserving type)` |
+| `MRPControllerName` |  | |  | `cast(t024d.dsnam as pph_dsnam preserving type)` |
+| `MRPControllerPhoneNumber` |  | |  | `cast(t024d.dstel as pph_dstel preserving type)` |
+| `PurchasingGroup` |  | |  | `ekgrp` |
+| `BusinessArea` |  | |  | `gsber` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `UserID` |  | |  | `case t024d.usrtyp when 'US' then t024d.usrkey else '' end` |
+| `_Plant` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_User` | | ✓ | | |
+| `_PlantText` | | ✓ | | |
+| `_BusinessAreaText` | | ✓ | | |
 
 ## Associations
 

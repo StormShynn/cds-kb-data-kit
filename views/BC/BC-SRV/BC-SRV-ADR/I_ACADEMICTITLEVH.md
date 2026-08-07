@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AcademicTitle` | `AcademicTitle` |
-| `AcademicTitleName` | `AcademicTitleName` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AcademicTitle` | ✓ | |  |  |
+| `AcademicTitleName` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionRoutingGroup` | `ProductionRoutingGroup` |
-| key `ProductionRouting` | `ProductionRouting` |
-| key `ProductionRoutingSequence` | `ProductionRoutingSequence` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_ProdnRtgTP` | *Association* |
-| `_Header` | *Association* |
-| `_Sequence` | *Association* |
-| `_Operation` | *Association* |
-| `_SubOp` | *Association* |
-| `_OpCompAlloc` | *Association* |
-| `_OpDocPRTAssgmt` | *Association* |
-| `_OpEquipPRTAssgmt` | *Association* |
-| `_OpMatlPRTAssgmt` | *Association* |
-| `_OpMiscPRTAssgmt` | *Association* |
-| `_OpInspCharcsAssgmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |
+| `ProductionRouting` | ✓ | |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_ProdnRtgTP` | | ✓ | | |
+| `_Header` | | ✓ | | |
+| `_Sequence` | | ✓ | | |
+| `_Operation` | | ✓ | | |
+| `_SubOp` | | ✓ | | |
+| `_OpCompAlloc` | | ✓ | | |
+| `_OpDocPRTAssgmt` | | ✓ | | |
+| `_OpEquipPRTAssgmt` | | ✓ | | |
+| `_OpMatlPRTAssgmt` | | ✓ | | |
+| `_OpMiscPRTAssgmt` | | ✓ | | |
+| `_OpInspCharcsAssgmt` | | ✓ | | |
 
 ## Source Code
 

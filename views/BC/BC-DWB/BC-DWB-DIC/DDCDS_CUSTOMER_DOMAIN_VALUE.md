@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `domain_name` | `cast( dd07l.domname as abap.char(30))` |
-| key `value_position` | `cast( dd07l.valpos as abap.numc(4))` |
-| `value_low` | `dd07l.domvalue_l` |
-| `value_high` | `dd07l.domvalue_h` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `domain_name` | ✓ | |  | `cast( dd07l.domname as abap.char(30))` |
+| `value_position` | ✓ | |  | `cast( dd07l.valpos as abap.numc(4))` |
+| `value_low` |  | |  | `domvalue_l` |
+| `value_high` |  | |  | `domvalue_h` |
 
 ## Source Code
 

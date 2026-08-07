@@ -32,33 +32,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenturePartner` | `JointVenturePartner` |
-| `JointVenturePartner2ShortText` | `JointVenturePartner2ShortText` |
-| `JntVntrIntcoCode` | `JntVntrIntcoCode` |
-| `JntVntrCashCallThld` | `JntVntrCashCallThld` |
-| `JntVntrHardCopyBillgIsSupp` | `JntVntrHardCopyBillgIsSupp` |
-| `JntVntrOwnrIsEDITo` | `JntVntrOwnrIsEDITo` |
-| `JntVentureIsConvenienceNetting` | `JntVentureIsConvenienceNetting` |
-| `JntVntrBillgFormat` | `JntVntrBillgFormat` |
-| `TaxCode` | `TaxCode` |
-| `EDIReceiver` | `EDIReceiver` |
-| `JntVntrPartnerProcessGrp` | `JntVntrPartnerProcessGrp` |
-| `JntVntrPartEquityCashCallThld` | `JntVntrPartEquityCashCallThld` |
-| `JntVntrPartProjCashCallThld` | `JntVntrPartProjCashCallThld` |
-| `ResponsibleContact` | `ResponsibleContact` |
-| `ContactPhoneNumber` | `ContactPhoneNumber` |
-| `JntVntrGeneratedExpndtrSet` | `JntVntrGeneratedExpndtrSet` |
-| `Currency` | `Currency` |
-| `JntVntrBillgThldDebit` | `JntVntrBillgThldDebit` |
-| `JntVntrBillgThldCredit` | `JntVntrBillgThldCredit` |
-| `JntVntrBillgThldIsActive` | `JntVntrBillgThldIsActive` |
-| `JntVntrBillgReportsAreSpprsd` | `JntVntrBillgReportsAreSpprsd` |
-| `JntVntrSeparateBillgIsPrepared` | `JntVntrSeparateBillgIsPrepared` |
-| `_BusinessPartner` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenturePartner` | ✓ | |  |  |
+| `JointVenturePartner2ShortText` |  | |  |  |
+| `JntVntrIntcoCode` |  | |  |  |
+| `JntVntrCashCallThld` |  | |  |  |
+| `JntVntrHardCopyBillgIsSupp` |  | |  |  |
+| `JntVntrOwnrIsEDITo` |  | |  |  |
+| `JntVentureIsConvenienceNetting` |  | |  |  |
+| `JntVntrBillgFormat` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `EDIReceiver` |  | |  |  |
+| `JntVntrPartnerProcessGrp` |  | |  |  |
+| `JntVntrPartEquityCashCallThld` |  | |  |  |
+| `JntVntrPartProjCashCallThld` |  | |  |  |
+| `ResponsibleContact` |  | |  |  |
+| `ContactPhoneNumber` |  | |  |  |
+| `JntVntrGeneratedExpndtrSet` |  | |  |  |
+| `Currency` |  | |  |  |
+| `JntVntrBillgThldDebit` |  | |  |  |
+| `JntVntrBillgThldCredit` |  | |  |  |
+| `JntVntrBillgThldIsActive` |  | |  |  |
+| `JntVntrBillgReportsAreSpprsd` |  | |  |  |
+| `JntVntrSeparateBillgIsPrepared` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Source Code
 

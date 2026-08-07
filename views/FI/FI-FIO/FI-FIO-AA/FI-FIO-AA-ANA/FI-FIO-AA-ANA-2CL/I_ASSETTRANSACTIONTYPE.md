@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AssetTransactionType` | `bwasl` |
-| `AssetTransactionTypeGroup` | `bwagrp` |
-| `AstTransTypeIsFrbdnInMnlPostg` | `xabuch` |
-| `DefaultDebitCreditCode` | `anshkz` |
-| `AstRetirementRevenueIsRequired` | `xerlos` |
-| `_Text` | *Association* |
-| `_TransactionTypeGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssetTransactionType` | ✓ | |  | `bwasl` |
+| `AssetTransactionTypeGroup` |  | |  | `bwagrp` |
+| `AstTransTypeIsFrbdnInMnlPostg` |  | |  | `xabuch` |
+| `DefaultDebitCreditCode` |  | |  | `anshkz` |
+| `AstRetirementRevenueIsRequired` |  | |  | `xerlos` |
+| `_Text` | | ✓ | | |
+| `_TransactionTypeGroup` | | ✓ | | |
 
 ## Associations
 

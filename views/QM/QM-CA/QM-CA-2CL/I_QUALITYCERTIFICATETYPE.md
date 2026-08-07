@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityCertificateType` | `tq05.zgtyp` |
-| `QualityCertificateTypeOID` | `case when I_MdiOidConfiguration.Context is initial then cast( tq05.zgtyp as qualitycertificatetypeoid ) when I_MdiOidConfiguration.Context is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), tq05.zgtyp ) as qualitycertificatetypeoid ) end` |
-| `_QualityCertificateTypeT` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityCertificateType` | ✓ | |  | `zgtyp` |
+| `QualityCertificateTypeOID` |  | |  | `case when I_MdiOidConfiguration.Context is initial then cast( tq05.zgtyp as qualitycertificatetypeoid ) when I_MdiOidConfiguration.Context is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), tq05.zgtyp ) as qualitycertificatetypeoid ) end` |
+| `_QualityCertificateTypeT` | | ✓ | | |
 
 ## Associations
 

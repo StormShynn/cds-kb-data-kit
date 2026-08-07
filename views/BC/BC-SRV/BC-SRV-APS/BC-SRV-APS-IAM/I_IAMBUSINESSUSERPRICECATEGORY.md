@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserID` | `cast( bu_weight.UserID as aps_userid preserving type )` |
-| key `BusinessUserPriceCategory` | `price_tag.usrprc_id` |
-| `_Text` | *Association* |
-| `_BusinessUser` | *Association* |
-| `_IAMBusinessUserLogonDetails` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserID` | ✓ | |  | `cast( bu_weight.UserID as aps_userid preserving type )` |
+| `BusinessUserPriceCategory` | ✓ | |  | `usrprc_id` |
+| `_Text` | | ✓ | | |
+| `_BusinessUser` | | ✓ | | |
+| `_IAMBusinessUserLogonDetails` | | ✓ | | |
 
 ## Associations
 

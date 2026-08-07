@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanReplenishmentStrgyType` | `KanbanReplenishmentStrgyType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanReplenishmentStrgyType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

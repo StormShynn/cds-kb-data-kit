@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentGuaranteeForm` | `absfo` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentGuaranteeForm` | ✓ | |  | `absfo` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

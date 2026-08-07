@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionResultOrigin` | `qergdath` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionResultOrigin` | ✓ | |  | `qergdath` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

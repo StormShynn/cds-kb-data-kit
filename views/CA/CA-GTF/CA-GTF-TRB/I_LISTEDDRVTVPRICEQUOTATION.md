@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DerivativeContrSpecification` | `DerivativeContrSpecification` |
-| key `MarketIdentifierCode` | `MarketIdentifierCode` |
-| key `MaturityKeyDate` | `MaturityKeyDate` |
-| key `PriceQuotationType` | `PriceQuotationType` |
-| key `PriceQuotationDate` | `PriceQuotationDate` |
-| key `PriceQuotationTime` | `PriceQuotationTime` |
-| key `ValidityStartUTCDateTime` | `ValidityStartUTCDateTime` |
-| `TimeToMaturity` | `TimeToMaturity` |
-| `PriceQuotation` | `PriceQuotation` |
-| `UnitOfMeasure` | `UnitOfMeasure` |
-| `Currency` | `Currency` |
-| `CreatedByUser` | `CreatedByUser` |
-| `IsDeleted` | `IsDeleted` |
-| `_DerivativeContrSpecification` | *Association* |
-| `_MarketIdentifierCode` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Currency` | *Association* |
-| `_PriceQuotationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DerivativeContrSpecification` | ✓ | |  |  |
+| `MarketIdentifierCode` | ✓ | |  |  |
+| `MaturityKeyDate` | ✓ | |  |  |
+| `PriceQuotationType` | ✓ | |  |  |
+| `PriceQuotationDate` | ✓ | |  |  |
+| `PriceQuotationTime` | ✓ | |  |  |
+| `ValidityStartUTCDateTime` | ✓ | |  |  |
+| `TimeToMaturity` |  | |  |  |
+| `PriceQuotation` |  | |  |  |
+| `UnitOfMeasure` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `_DerivativeContrSpecification` | | ✓ | | |
+| `_MarketIdentifierCode` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_PriceQuotationType` | | ✓ | | |
 
 ## Source Code
 

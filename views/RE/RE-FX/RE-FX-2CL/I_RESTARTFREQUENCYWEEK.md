@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REStartFrequencyWeek` | `cast( dd07l.domvalue_l as recdvdmweekfrom )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REStartFrequencyWeek` | ✓ | |  | `cast( dd07l.domvalue_l as recdvdmweekfrom )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

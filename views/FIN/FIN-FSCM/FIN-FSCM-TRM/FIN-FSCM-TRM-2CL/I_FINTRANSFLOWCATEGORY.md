@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinTransFlowCategory` | `cast( sbktyp as ftr_flow_category preserving type )` |
-| `_FlowCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinTransFlowCategory` | ✓ | |  | `cast( sbktyp as ftr_flow_category preserving type )` |
+| `_FlowCategoryText` | | ✓ | | |
 
 ## Associations
 

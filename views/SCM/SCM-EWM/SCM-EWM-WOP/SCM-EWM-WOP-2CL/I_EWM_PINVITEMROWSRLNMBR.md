@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `EWMWarehouse` |
-| key `PhysicalInventoryDocNumber` | `PhysicalInventoryDocNumber` |
-| key `PhysicalInventoryDocYear` | `PhysicalInventoryDocYear` |
-| key `LineIndexOfPInvItem` | `LineIndexOfPInvItem` |
-| key `PhysicalInventoryItemNumber` | `PhysicalInventoryItemNumber` |
-| key `EWMPhysInvtrySrlNmbrSqnc` | `EWMPhysInvtrySrlNmbrSqnc` |
-| key `EWMPInvSrlNmbrProcgStatus` | `EWMPInvSrlNmbrProcgStatus` |
-| `EWMSerialNumber` | `EWMSerialNumber` |
-| `ActivityArea` | `ActivityArea` |
-| `PhysicalInventoryDocumentUUID` | `PhysicalInventoryDocumentUUID` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  |  |
+| `PhysicalInventoryDocNumber` | ✓ | |  |  |
+| `PhysicalInventoryDocYear` | ✓ | |  |  |
+| `LineIndexOfPInvItem` | ✓ | |  |  |
+| `PhysicalInventoryItemNumber` | ✓ | |  |  |
+| `EWMPhysInvtrySrlNmbrSqnc` | ✓ | |  |  |
+| `EWMPInvSrlNmbrProcgStatus` | ✓ | |  |  |
+| `EWMSerialNumber` |  | |  |  |
+| `ActivityArea` |  | |  |  |
+| `PhysicalInventoryDocumentUUID` |  | |  |  |
 
 ## Source Code
 

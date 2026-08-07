@@ -27,35 +27,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `company_code` |
-| key `AccountingPrinciple` | `acct_principle` |
-| key `RevenueAccountingContract` | `cast(contract_id as farr_cds_contract_id preserving type)` |
-| key `RevnAcctgReconciliationKey` | `recon_key` |
-| `FiscalYearPeriod` | `substring(recon_key, 1, 7)` |
-| `FiscalYear` | `gjahr` |
-| `FiscalPeriod` | `poper` |
-| `RevnAcctgRecnclnKeyStatus` | `status` |
-| `RAProspectiveSplitDate` | `pro_split_date` |
-| `RARecnclnKeyRunID` | `runid` |
-| key `RAParallelizationSubareaValue` | `keypp` |
-| `RARecnclnKeyCreatedByUser` | `created_by` |
-| `RARecnclnKeyCreationDateTime` | `created_on` |
-| `RARecnclnKeyChangedByUser` | `last_changed_by` |
-| `RARecnclnKeyLastChangeDateTime` | `last_changed_on` |
-| `RAContrLiabilityAssetIsCalcd` | `liab_asset_flag` |
-| `ContrLiabilityAssetValueDate` | `value_date` |
-| `OriginalReferenceDocumentType` | `awtyp` |
-| `ReferenceDocumentLogicalSystem` | `awsys` |
-| `ReferenceDocumentContext` | `aworg` |
-| `ReferenceDocument` | `awref` |
-| `_RevenueAccountingContract` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_AccountingPrinciple` | *Association* |
-| `_RAReconciliationKeyStatus` | *Association* |
-| `_ChangedByUser` | *Association* |
-| `_CreatedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `company_code` |
+| `AccountingPrinciple` | ✓ | |  | `acct_principle` |
+| `RevenueAccountingContract` | ✓ | |  | `cast(contract_id as farr_cds_contract_id preserving type)` |
+| `RevnAcctgReconciliationKey` | ✓ | |  | `recon_key` |
+| `FiscalYearPeriod` |  | |  | `substring(recon_key, 1, 7)` |
+| `FiscalYear` |  | |  | `gjahr` |
+| `FiscalPeriod` |  | |  | `poper` |
+| `RevnAcctgRecnclnKeyStatus` |  | |  | `status` |
+| `RAProspectiveSplitDate` |  | |  | `pro_split_date` |
+| `RARecnclnKeyRunID` |  | |  | `runid` |
+| `RAParallelizationSubareaValue` | ✓ | |  | `keypp` |
+| `RARecnclnKeyCreatedByUser` |  | |  | `created_by` |
+| `RARecnclnKeyCreationDateTime` |  | |  | `created_on` |
+| `RARecnclnKeyChangedByUser` |  | |  | `last_changed_by` |
+| `RARecnclnKeyLastChangeDateTime` |  | |  | `last_changed_on` |
+| `RAContrLiabilityAssetIsCalcd` |  | |  | `liab_asset_flag` |
+| `ContrLiabilityAssetValueDate` |  | |  | `value_date` |
+| `OriginalReferenceDocumentType` |  | |  | `awtyp` |
+| `ReferenceDocumentLogicalSystem` |  | |  | `awsys` |
+| `ReferenceDocumentContext` |  | |  | `aworg` |
+| `ReferenceDocument` |  | |  | `awref` |
+| `_RevenueAccountingContract` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_AccountingPrinciple` | | ✓ | | |
+| `_RAReconciliationKeyStatus` | | ✓ | | |
+| `_ChangedByUser` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
 
 ## Associations
 

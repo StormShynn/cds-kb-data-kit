@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentSupplements` | `cast( left( dd07t.domvalue_l, 1 ) as appdx_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CADocumentSupplementText` | `cast( ddtext as appdx_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentSupplements` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as appdx_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CADocumentSupplementText` |  | |  | `cast( ddtext as appdx_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

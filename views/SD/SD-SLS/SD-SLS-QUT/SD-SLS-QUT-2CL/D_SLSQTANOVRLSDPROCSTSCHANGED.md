@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EventRaisedDateTime` | `vdm_lastchangedon` |
-| `SalesQuotationType` | `auart_unv` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `OrganizationDivision` | `spart` |
-| `SoldToParty` | `kunnr` |
-| `OverallSDProcessStatus` | `gbstk` |
-| `PreviousOverallSDProcessStatus` | `gbstk` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
+| `SalesQuotationType` |  | |  | `auart_unv` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SoldToParty` |  | |  | `kunnr` |
+| `OverallSDProcessStatus` |  | |  | `gbstk` |
+| `PreviousOverallSDProcessStatus` |  | |  | `gbstk` |
 
 ## Source Code
 

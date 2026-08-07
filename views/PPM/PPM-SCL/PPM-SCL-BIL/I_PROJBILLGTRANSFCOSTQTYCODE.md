@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjBillgTransfCostQtyCode` | `cast( substring( domvalue_l, 1, 1 ) as pbe_transfer_qty_costs preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_PrjBillgTransfCostQtyCodeTxt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjBillgTransfCostQtyCode` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbe_transfer_qty_costs preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_PrjBillgTransfCostQtyCodeTxt` | | ✓ | | |
 
 ## Source Code
 

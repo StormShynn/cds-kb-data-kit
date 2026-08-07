@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReceivableFinancingStatus` | `ReceivableFinancingStatus` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReceivableFinancingStatus` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

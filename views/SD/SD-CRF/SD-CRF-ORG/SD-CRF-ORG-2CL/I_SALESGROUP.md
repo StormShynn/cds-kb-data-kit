@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesGroup` | `vkgrp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesGroup` | ✓ | |  | `vkgrp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

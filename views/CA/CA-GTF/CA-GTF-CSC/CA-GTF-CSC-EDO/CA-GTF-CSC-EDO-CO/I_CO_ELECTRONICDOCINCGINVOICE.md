@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `CO_ElectronicDocOfclInvcNmbr` | `CO_ElectronicDocOfclInvcNmbr` |
-| `CO_ElectronicDocSupplierName` | `CO_ElectronicDocSupplierName` |
-| `CO_ElectronicDocPurOrdByCust` | `CO_ElectronicDocPurOrdByCust` |
-| `CO_ElectronicDocInvcTotAmount` | `CO_ElectronicDocInvcTotAmount` |
-| `Currency` | `Currency` |
-| `CO_ElectronicDocIsAccepted` | `CO_ElectronicDocIsAccepted` |
-| `CO_EDocSignatureBinary` | `CO_EDocSignatureBinary` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `CO_ElectronicDocOfclInvcNmbr` |  | |  |  |
+| `CO_ElectronicDocSupplierName` |  | |  |  |
+| `CO_ElectronicDocPurOrdByCust` |  | |  |  |
+| `CO_ElectronicDocInvcTotAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CO_ElectronicDocIsAccepted` |  | |  |  |
+| `CO_EDocSignatureBinary` |  | |  |  |
 
 ## Source Code
 

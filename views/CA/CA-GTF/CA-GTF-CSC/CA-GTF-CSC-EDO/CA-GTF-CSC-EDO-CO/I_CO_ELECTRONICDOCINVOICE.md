@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `CO_ElectronicDocOfficialNumber` | `CO_ElectronicDocOfficialNumber` |
-| `CO_ElectronicDocUniqueID` | `CO_ElectronicDocUniqueID` |
-| `CO_ElectronicDocIsSentToCust` | `CO_ElectronicDocIsSentToCust` |
-| `CO_EDocSignatureBinary` | `CO_EDocSignatureBinary` |
-| `CO_ElectronicDocDateTime` | `CO_ElectronicDocDateTime` |
-| `CO_ElectronicDocVarblKey` | `CO_ElectronicDocVarblKey` |
-| `CO_ElectronicDocTrackID` | `CO_ElectronicDocTrackID` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `CO_ElectronicDocOfficialNumber` |  | |  |  |
+| `CO_ElectronicDocUniqueID` |  | |  |  |
+| `CO_ElectronicDocIsSentToCust` |  | |  |  |
+| `CO_EDocSignatureBinary` |  | |  |  |
+| `CO_ElectronicDocDateTime` |  | |  |  |
+| `CO_ElectronicDocVarblKey` |  | |  |  |
+| `CO_ElectronicDocTrackID` |  | |  |  |
 
 ## Source Code
 

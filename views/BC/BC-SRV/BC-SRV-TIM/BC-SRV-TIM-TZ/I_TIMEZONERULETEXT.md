@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeZoneRule` | `ttzrt.zonerule` |
-| key `Language` | `ttzrt.language` |
-| `TimeZoneRuleText` | `ttzrt.descript` |
-| `_TimeZoneRule` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeZoneRule` | ✓ | |  | `zonerule` |
+| `Language` | ✓ | |  | `language` |
+| `TimeZoneRuleText` |  | |  | `descript` |
+| `_TimeZoneRule` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

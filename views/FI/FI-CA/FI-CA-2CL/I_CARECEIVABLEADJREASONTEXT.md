@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAReceivableAdjustmentReason` | `grund` |
-| key `Language` | `spras` |
-| `CAReceivableAdjustReasonName` | `txt30` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAReceivableAdjustmentReason` | ✓ | |  | `grund` |
+| `Language` | ✓ | |  | `spras` |
+| `CAReceivableAdjustReasonName` |  | |  | `txt30` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

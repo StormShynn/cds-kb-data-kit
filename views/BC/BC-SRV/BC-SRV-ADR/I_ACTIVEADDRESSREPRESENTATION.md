@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressRepresentationCode` | `AddressRepresentation.AddressRepresentationCode` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressRepresentationCode` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

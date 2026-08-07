@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `knvi.kunnr` |
-| key `SalesOrganization` | `tvkwz.vkorg` |
-| key `DistributionChannel` | `tvkwz.vtweg` |
-| key `Division` | `tvta.spart` |
-| key `DepartureCountry` | `aland` |
-| key `CustomerTaxCategory` | `tatyp` |
-| `CustomerTaxClassification` | `taxkd` |
-| `AuthorizationGroup` | `_Customer.AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `_Customer.IsBusinessPurposeCompleted` |
-| `_Customer` | *Association* |
-| `_CustomerSalesArea` | *Association* |
-| `_Country` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `SalesOrganization` | ✓ | |  | `vkorg` |
+| `DistributionChannel` | ✓ | |  | `vtweg` |
+| `Division` | ✓ | |  | `spart` |
+| `DepartureCountry` | ✓ | |  | `aland` |
+| `CustomerTaxCategory` | ✓ | |  | `tatyp` |
+| `CustomerTaxClassification` |  | |  | `taxkd` |
+| `AuthorizationGroup` |  | | `_Customer` | `AuthorizationGroup` |
+| `IsBusinessPurposeCompleted` |  | | `_Customer` | `IsBusinessPurposeCompleted` |
+| `_Customer` | | ✓ | | |
+| `_CustomerSalesArea` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
 
 ## Associations
 

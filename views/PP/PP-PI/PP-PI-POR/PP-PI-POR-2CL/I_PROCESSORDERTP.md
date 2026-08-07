@@ -29,129 +29,129 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcessOrder` | `ProcessOrder` |
-| `ManufacturingOrderCategory` | `ManufacturingOrderCategory` |
-| `ProcessOrderType` | `ProcessOrderType` |
-| `ProcessOrderText` | `ProcessOrderText` |
-| `OrderHasLongText` | `OrderHasLongText` |
-| `LongTextLanguage` | `LongTextLanguage` |
-| `OrderImportance` | `OrderImportance` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `IsCompletelyDelivered` | `IsCompletelyDelivered` |
-| `OrderHasMultipleItems` | `OrderHasMultipleItems` |
-| `OrderIsPartOfCollectiveOrder` | `OrderIsPartOfCollectiveOrder` |
-| `OrderIsNotCostedAutomatically` | `OrderIsNotCostedAutomatically` |
-| `OrdIsNotSchedldAutomatically` | `OrdIsNotSchedldAutomatically` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `Product` | `Product` |
-| `StorageLocation` | `StorageLocation` |
-| `Batch` | `Batch` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `InventoryUsabilityCode` | `InventoryUsabilityCode` |
-| `MaterialGoodsReceiptDuration` | `MaterialGoodsReceiptDuration` |
-| `QuantityDistributionKey` | `QuantityDistributionKey` |
-| `OrderInternalID` | `OrderInternalID` |
-| `ReferenceOrder` | `ReferenceOrder` |
-| `ProductionPlant` | `ProductionPlant` |
-| `PlanningPlant` | `PlanningPlant` |
-| `MRPArea` | `MRPArea` |
-| `MRPController` | `MRPController` |
-| `ProductionSupervisor` | `ProductionSupervisor` |
-| `ProductionSchedulingProfile` | `ProductionSchedulingProfile` |
-| `ResponsiblePlannerGroup` | `ResponsiblePlannerGroup` |
-| `ProductionVersion` | `ProductionVersion` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `Reservation` | `Reservation` |
-| `SettlementReservation` | `SettlementReservation` |
-| `PlannedOrder` | `PlannedOrder` |
-| `CapacityRequirement` | `CapacityRequirement` |
-| `BasicSchedulingType` | `BasicSchedulingType` |
-| `ForecastSchedulingType` | `ForecastSchedulingType` |
-| `SchedulingIsAllowingForBreaks` | `SchedulingIsAllowingForBreaks` |
-| `ObjectInternalID` | `ObjectInternalID` |
-| `CapacityRqmtHasNotToBeCreated` | `CapacityRqmtHasNotToBeCreated` |
-| `MasterRecipeProduct` | `MasterRecipeProduct` |
-| `BillOfOperationsType` | `BillOfOperationsType` |
-| `MasterRecipeGroup` | `MasterRecipeGroup` |
-| `MasterRecipe` | `MasterRecipe` |
-| `MasterRecipeInternalVersion` | `MasterRecipeInternalVersion` |
-| `MasterRecipeUsage` | `MasterRecipeUsage` |
-| `MasterRecipeExplosionDate` | `MasterRecipeExplosionDate` |
-| `MasterRecipeValidityStartDate` | `MasterRecipeValidityStartDate` |
-| `BillOfMaterialCategory` | `BillOfMaterialCategory` |
-| `BillOfMaterialInternalID` | `BillOfMaterialInternalID` |
-| `BillOfMaterialVariant` | `BillOfMaterialVariant` |
-| `BillOfMaterialVariantUsage` | `BillOfMaterialVariantUsage` |
-| `BillOfMaterialVersion` | `BillOfMaterialVersion` |
-| `BOMExplosionDate` | `BOMExplosionDate` |
-| `BOMValidityStartDate` | `BOMValidityStartDate` |
-| `BusinessArea` | `BusinessArea` |
-| `CompanyCode` | `CompanyCode` |
-| `ControllingArea` | `ControllingArea` |
-| `ProfitCenter` | `ProfitCenter` |
-| `CostCenter` | `CostCenter` |
-| `ResponsibleCostCenter` | `ResponsibleCostCenter` |
-| `CostElement` | `CostElement` |
-| `CostingSheet` | `CostingSheet` |
-| `GLAccount` | `GLAccount` |
-| `ProductCostCollector` | `ProductCostCollector` |
-| `ActualCostsCostingVariant` | `ActualCostsCostingVariant` |
-| `PlannedCostsCostingVariant` | `PlannedCostsCostingVariant` |
-| `ControllingObjectClass` | `ControllingObjectClass` |
-| `FunctionalArea` | `FunctionalArea` |
-| `OverheadCode` | `OverheadCode` |
-| `ResultAnalysisInternalID` | `ResultAnalysisInternalID` |
-| `VarianceKey` | `VarianceKey` |
-| `EventBasedProcessingKey` | `EventBasedProcessingKey` |
-| `EventBasedPostingMethod` | `EventBasedPostingMethod` |
-| `OrderSettlementTriggerType` | `OrderSettlementTriggerType` |
-| `SchedulingFloatProfile` | `SchedulingFloatProfile` |
-| `FloatBeforeProductionInWrkDays` | `FloatBeforeProductionInWrkDays` |
-| `FloatAfterProductionInWorkDays` | `FloatAfterProductionInWorkDays` |
-| `ReleasePeriodInWorkDays` | `ReleasePeriodInWorkDays` |
-| `OrderPlannedStartDate` | `OrderPlannedStartDate` |
-| `OrderPlannedStartTime` | `OrderPlannedStartTime` |
-| `OrderPlannedEndDate` | `OrderPlannedEndDate` |
-| `OrderPlannedEndTime` | `OrderPlannedEndTime` |
-| `OrderPlannedReleaseDate` | `OrderPlannedReleaseDate` |
-| `OrderScheduledStartDate` | `OrderScheduledStartDate` |
-| `OrderScheduledStartTime` | `OrderScheduledStartTime` |
-| `OrderScheduledEndDate` | `OrderScheduledEndDate` |
-| `OrderScheduledEndTime` | `OrderScheduledEndTime` |
-| `OrderScheduledReleaseDate` | `OrderScheduledReleaseDate` |
-| `OrderActualStartDate` | `OrderActualStartDate` |
-| `OrderActualStartTime` | `OrderActualStartTime` |
-| `OrderActualEndDate` | `OrderActualEndDate` |
-| `OrderActualReleaseDate` | `OrderActualReleaseDate` |
-| `OrderConfirmedEndDate` | `OrderConfirmedEndDate` |
-| `OrderConfirmedEndTime` | `OrderConfirmedEndTime` |
-| `TotalCommitmentDate` | `TotalCommitmentDate` |
-| `TechnicalCompletionDate` | `TechnicalCompletionDate` |
-| `ProductionUnit` | `ProductionUnit` |
-| `OrderPlannedTotalQty` | `OrderPlannedTotalQty` |
-| `OrderPlannedScrapQty` | `OrderPlannedScrapQty` |
-| `OrderConfirmedYieldQty` | `OrderConfirmedYieldQty` |
-| `OrderConfirmedScrapQty` | `OrderConfirmedScrapQty` |
-| `ExpectedDeviationQuantity` | `ExpectedDeviationQuantity` |
-| `ActualDeliveredQuantity` | `ActualDeliveredQuantity` |
-| `_Item` | *Association* |
-| `_Operation` | *Association* |
-| `_Component` | *Association* |
-| `_SerialNumber` | *Association* |
-| `_PostingRule` | *Association* |
-| `_OrderOperationCapacity` | *Association* |
-| `_OrderPhaseCapacity` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcessOrder` | ✓ | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ProcessOrderType` |  | |  |  |
+| `ProcessOrderText` |  | |  |  |
+| `OrderHasLongText` |  | |  |  |
+| `LongTextLanguage` |  | |  |  |
+| `OrderImportance` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `OrderHasMultipleItems` |  | |  |  |
+| `OrderIsPartOfCollectiveOrder` |  | |  |  |
+| `OrderIsNotCostedAutomatically` |  | |  |  |
+| `OrdIsNotSchedldAutomatically` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `Product` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `Batch` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `InventoryUsabilityCode` |  | |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |
+| `QuantityDistributionKey` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `ReferenceOrder` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `PlanningPlant` |  | |  |  |
+| `MRPArea` |  | |  |  |
+| `MRPController` |  | |  |  |
+| `ProductionSupervisor` |  | |  |  |
+| `ProductionSchedulingProfile` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `SettlementReservation` |  | |  |  |
+| `PlannedOrder` |  | |  |  |
+| `CapacityRequirement` |  | |  |  |
+| `BasicSchedulingType` |  | |  |  |
+| `ForecastSchedulingType` |  | |  |  |
+| `SchedulingIsAllowingForBreaks` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `CapacityRqmtHasNotToBeCreated` |  | |  |  |
+| `MasterRecipeProduct` |  | |  |  |
+| `BillOfOperationsType` |  | |  |  |
+| `MasterRecipeGroup` |  | |  |  |
+| `MasterRecipe` |  | |  |  |
+| `MasterRecipeInternalVersion` |  | |  |  |
+| `MasterRecipeUsage` |  | |  |  |
+| `MasterRecipeExplosionDate` |  | |  |  |
+| `MasterRecipeValidityStartDate` |  | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BillOfMaterialInternalID` |  | |  |  |
+| `BillOfMaterialVariant` |  | |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |
+| `BillOfMaterialVersion` |  | |  |  |
+| `BOMExplosionDate` |  | |  |  |
+| `BOMValidityStartDate` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ResponsibleCostCenter` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `CostingSheet` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `ProductCostCollector` |  | |  |  |
+| `ActualCostsCostingVariant` |  | |  |  |
+| `PlannedCostsCostingVariant` |  | |  |  |
+| `ControllingObjectClass` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `OverheadCode` |  | |  |  |
+| `ResultAnalysisInternalID` |  | |  |  |
+| `VarianceKey` |  | |  |  |
+| `EventBasedProcessingKey` |  | |  |  |
+| `EventBasedPostingMethod` |  | |  |  |
+| `OrderSettlementTriggerType` |  | |  |  |
+| `SchedulingFloatProfile` |  | |  |  |
+| `FloatBeforeProductionInWrkDays` |  | |  |  |
+| `FloatAfterProductionInWorkDays` |  | |  |  |
+| `ReleasePeriodInWorkDays` |  | |  |  |
+| `OrderPlannedStartDate` |  | |  |  |
+| `OrderPlannedStartTime` |  | |  |  |
+| `OrderPlannedEndDate` |  | |  |  |
+| `OrderPlannedEndTime` |  | |  |  |
+| `OrderPlannedReleaseDate` |  | |  |  |
+| `OrderScheduledStartDate` |  | |  |  |
+| `OrderScheduledStartTime` |  | |  |  |
+| `OrderScheduledEndDate` |  | |  |  |
+| `OrderScheduledEndTime` |  | |  |  |
+| `OrderScheduledReleaseDate` |  | |  |  |
+| `OrderActualStartDate` |  | |  |  |
+| `OrderActualStartTime` |  | |  |  |
+| `OrderActualEndDate` |  | |  |  |
+| `OrderActualReleaseDate` |  | |  |  |
+| `OrderConfirmedEndDate` |  | |  |  |
+| `OrderConfirmedEndTime` |  | |  |  |
+| `TotalCommitmentDate` |  | |  |  |
+| `TechnicalCompletionDate` |  | |  |  |
+| `ProductionUnit` |  | |  |  |
+| `OrderPlannedTotalQty` |  | |  |  |
+| `OrderPlannedScrapQty` |  | |  |  |
+| `OrderConfirmedYieldQty` |  | |  |  |
+| `OrderConfirmedScrapQty` |  | |  |  |
+| `ExpectedDeviationQuantity` |  | |  |  |
+| `ActualDeliveredQuantity` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Operation` | | ✓ | | |
+| `_Component` | | ✓ | | |
+| `_SerialNumber` | | ✓ | | |
+| `_PostingRule` | | ✓ | | |
+| `_OrderOperationCapacity` | | ✓ | | |
+| `_OrderPhaseCapacity` | | ✓ | | |
 
 ## Source Code
 

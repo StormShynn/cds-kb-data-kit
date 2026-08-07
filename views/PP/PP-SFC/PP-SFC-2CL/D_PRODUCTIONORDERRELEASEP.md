@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `OrdRelIsPmtdDsptMisgParts` | `abap_boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrdRelIsPmtdDsptMisgParts` |  | |  | `abap_boolean` |
 
 ## Source Code
 

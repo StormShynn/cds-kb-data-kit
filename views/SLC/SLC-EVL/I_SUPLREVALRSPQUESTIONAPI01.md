@@ -27,30 +27,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalRspQuestionUUID` | `SuplrEvalRspQuestionUUID` |
-| `SuplrEvalRspUUID` | `SuplrEvalRspUUID` |
-| `SuplrEvalRspSectionUUID` | `SuplrEvalRspSectionUUID` |
-| `SuplrEvalRspBrnchgQuestionUUID` | `SuplrEvalRspBrnchgQuestionUUID` |
-| `SuplrEvalRspBrnchgQstnValnUUID` | `SuplrEvalRspBrnchgQstnValnUUID` |
-| `SuplrEvalRspBrnchgQuestionValn` | `SuplrEvalRspBrnchgQuestionValn` |
-| `SuplrEvalRspBrnchgQuestion` | `SuplrEvalRspBrnchgQuestion` |
-| `SuplrEvalReqQuestionUUID` | `SuplrEvalReqQuestionUUID` |
-| `SupplierEvalQuestion` | `SupplierEvalQuestion` |
-| `SupplierEvalRequestQuestion` | `SupplierEvalRequestQuestion` |
-| `QuestionName` | `QuestionName` |
-| `SLCQuestionType` | `SLCQuestionType` |
-| `WeightingFactor` | `WeightingFactor` |
-| `MinimalScore` | `MinimalScore` |
-| `TargetScore` | `TargetScore` |
-| `SLCQuestionAttachmentOption` | `SLCQuestionAttachmentOption` |
-| `IsDisqualifyingQuestion` | `IsDisqualifyingQuestion` |
-| `SLCPreferredAnswer` | `SLCPreferredAnswer` |
-| `NumberOfResponses` | `NumberOfResponses` |
-| `IsQuestionCommentEnabled` | `IsQuestionCommentEnabled` |
-| `SuplrEvalOrdinalNumber` | `SuplrEvalOrdinalNumber` |
-| `IsMandatoryQuestion` | `IsMandatoryQuestion` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalRspQuestionUUID` | ✓ | |  |  |
+| `SuplrEvalRspUUID` |  | |  |  |
+| `SuplrEvalRspSectionUUID` |  | |  |  |
+| `SuplrEvalRspBrnchgQuestionUUID` |  | |  |  |
+| `SuplrEvalRspBrnchgQstnValnUUID` |  | |  |  |
+| `SuplrEvalRspBrnchgQuestionValn` |  | |  |  |
+| `SuplrEvalRspBrnchgQuestion` |  | |  |  |
+| `SuplrEvalReqQuestionUUID` |  | |  |  |
+| `SupplierEvalQuestion` |  | |  |  |
+| `SupplierEvalRequestQuestion` |  | |  |  |
+| `QuestionName` |  | |  |  |
+| `SLCQuestionType` |  | |  |  |
+| `WeightingFactor` |  | |  |  |
+| `MinimalScore` |  | |  |  |
+| `TargetScore` |  | |  |  |
+| `SLCQuestionAttachmentOption` |  | |  |  |
+| `IsDisqualifyingQuestion` |  | |  |  |
+| `SLCPreferredAnswer` |  | |  |  |
+| `NumberOfResponses` |  | |  |  |
+| `IsQuestionCommentEnabled` |  | |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |
+| `IsMandatoryQuestion` |  | |  |  |
 
 ## Source Code
 

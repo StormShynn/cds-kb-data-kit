@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ValuationArea` | `ValuationArea` |
-| `CompanyCode` | `CompanyCode` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ValuationArea` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

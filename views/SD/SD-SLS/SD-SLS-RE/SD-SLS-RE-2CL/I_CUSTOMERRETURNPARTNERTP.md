@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturn` | `CustomerReturnPartner.CustomerReturn` |
-| key `PartnerFunction` | `CustomerReturnPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `CustomerReturnPartner.PartnerFunctionForEdit` |
-| `Customer` | `CustomerReturnPartner.Customer` |
-| `Supplier` | `CustomerReturnPartner.Supplier` |
-| `Personnel` | `CustomerReturnPartner.Personnel` |
-| `ContactPerson` | `CustomerReturnPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `CustomerReturnPartner.ReferenceBusinessPartner` |
-| `Partner` | `CustomerReturnPartner.Partner` |
-| `CustomerReturnType` | `CustomerReturnPartner.CustomerReturnType` |
-| `SalesOrganization` | `CustomerReturnPartner.SalesOrganization` |
-| `DistributionChannel` | `CustomerReturnPartner.DistributionChannel` |
-| `OrganizationDivision` | `CustomerReturnPartner.OrganizationDivision` |
-| `_CustomerReturn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `CustomerReturnType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_CustomerReturn` | | ✓ | | |
 
 ## Source Code
 

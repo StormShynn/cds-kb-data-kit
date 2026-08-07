@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPTaxComplianceType` | `type` |
-| key `BPTaxComplianceCountryRegion` | `country` |
-| key `BPTaxComplianceRegion` | `region` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPTaxComplianceType` | ✓ | |  | `type` |
+| `BPTaxComplianceCountryRegion` | ✓ | |  | `country` |
+| `BPTaxComplianceRegion` | ✓ | |  | `region` |
 
 ## Source Code
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PurchaseContractTargetAmount` | `ktwrt` |
-| `DocumentCurrency` | `waers` |
-| `PurContractPrevTargetAmount` | `ktwrt` |
-| `PurContrPrevDocumentCurrency` | `waers` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContractTargetAmount` |  | |  | `ktwrt` |
+| `DocumentCurrency` |  | |  | `waers` |
+| `PurContractPrevTargetAmount` |  | |  | `ktwrt` |
+| `PurContrPrevDocumentCurrency` |  | |  | `waers` |
 
 ## Source Code
 

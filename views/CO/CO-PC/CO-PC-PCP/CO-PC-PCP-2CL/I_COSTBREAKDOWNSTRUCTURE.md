@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostBreakdownStructure` | `CostBreakdownStructure` |
-| `CostBreakdownType` | `CostBreakdownType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostBreakdownStructure` | ✓ | |  |  |
+| `CostBreakdownType` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

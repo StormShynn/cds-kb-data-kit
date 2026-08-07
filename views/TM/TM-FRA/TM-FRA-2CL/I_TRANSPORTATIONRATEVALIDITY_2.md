@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateValidityUUID` | `cast(db_key as /scmtms/transprate_val_uuid preserving type)` |
-| `TransportationRateUUID` | `cast(parent_key as /scmtms/transpratetable_uuid preserving type)` |
-| `TranspRateValidityCurrency` | `cast( case when currency = '%' then cast('' as /scmtms/vdm_rt_valdty_curr) else currency end as /scmtms/vdm_rt_valdty_curr)` |
-| `TranspRateTblValidityPctUnit` | `cast( case when currency = '%' then cast( '%' as abap.char( 3 )) else '' end as /scmtms/vdm_rt_valdty_pct_unit)` |
-| `TranspRateValidityLfcycStatus` | `cast(lifecyclestatus as /scmtms/vdm_rt_valdty_lfcycsts preserving type)` |
-| `TranspRateValidityEndDate` | `cast(valid_end_dt as /scmtms/vdm_rt_valdty_end_dt preserving type)` |
-| `TranspRateValidityStartDate` | `cast(valid_start_dt as /scmtms/vdm_rt_valdty_strt_dt preserving type)` |
-| `_TranspRateValidityCurrency` | *Association* |
-| `_TranspRateTableValdtySts` | *Association* |
-| `_TranspRateValidityPctUnit` | *Association* |
-| `_TransportationRate` | *Association* |
-| `_TranspRateCalculationRule` | *Association* |
-| `_TranspRateDimension01` | *Association* |
-| `_TranspRateDimension02` | *Association* |
-| `_TranspRateDimension03` | *Association* |
-| `_TranspRateDimension04` | *Association* |
-| `_TranspRateDimension05` | *Association* |
-| `_TranspRateDimension06` | *Association* |
-| `_TranspRateDimension07` | *Association* |
-| `_TranspRateDimension08` | *Association* |
-| `_TranspRateDimension09` | *Association* |
-| `_TranspRateDimension10` | *Association* |
-| `_TranspRateDimension11` | *Association* |
-| `_TranspRateDimension12` | *Association* |
-| `_TranspRateDimension13` | *Association* |
-| `_TranspRateDimension14` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateValidityUUID` | ✓ | |  | `cast(db_key as /scmtms/transprate_val_uuid preserving type)` |
+| `TransportationRateUUID` |  | |  | `cast(parent_key as /scmtms/transpratetable_uuid preserving type)` |
+| `TranspRateValidityCurrency` |  | |  | `cast( case when currency = '%' then cast('' as /scmtms/vdm_rt_valdty_curr) else currency end as /scmtms/vdm_rt_valdty_curr)` |
+| `TranspRateTblValidityPctUnit` |  | |  | `cast( case when currency = '%' then cast( '%' as abap.char( 3 )) else '' end as /scmtms/vdm_rt_valdty_pct_unit)` |
+| `TranspRateValidityLfcycStatus` |  | |  | `cast(lifecyclestatus as /scmtms/vdm_rt_valdty_lfcycsts preserving type)` |
+| `TranspRateValidityEndDate` |  | |  | `cast(valid_end_dt as /scmtms/vdm_rt_valdty_end_dt preserving type)` |
+| `TranspRateValidityStartDate` |  | |  | `cast(valid_start_dt as /scmtms/vdm_rt_valdty_strt_dt preserving type)` |
+| `_TranspRateValidityCurrency` | | ✓ | | |
+| `_TranspRateTableValdtySts` | | ✓ | | |
+| `_TranspRateValidityPctUnit` | | ✓ | | |
+| `_TransportationRate` | | ✓ | | |
+| `_TranspRateCalculationRule` | | ✓ | | |
+| `_TranspRateDimension01` | | ✓ | | |
+| `_TranspRateDimension02` | | ✓ | | |
+| `_TranspRateDimension03` | | ✓ | | |
+| `_TranspRateDimension04` | | ✓ | | |
+| `_TranspRateDimension05` | | ✓ | | |
+| `_TranspRateDimension06` | | ✓ | | |
+| `_TranspRateDimension07` | | ✓ | | |
+| `_TranspRateDimension08` | | ✓ | | |
+| `_TranspRateDimension09` | | ✓ | | |
+| `_TranspRateDimension10` | | ✓ | | |
+| `_TranspRateDimension11` | | ✓ | | |
+| `_TranspRateDimension12` | | ✓ | | |
+| `_TranspRateDimension13` | | ✓ | | |
+| `_TranspRateDimension14` | | ✓ | | |
 
 ## Associations
 

@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BillingDocOutputDataBinary` | `billingdocoutputdatabinary` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocOutputDataBinary` |  | |  | `billingdocoutputdatabinary` |
 
 ## Source Code
 

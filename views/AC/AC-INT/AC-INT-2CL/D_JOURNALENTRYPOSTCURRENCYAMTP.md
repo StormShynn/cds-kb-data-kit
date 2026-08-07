@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CurrencyRole` | `curtp` |
-| `Currency` | `waers` |
-| `ExchangeRate` | `ukursp` |
-| `IndirectQuotedExchangeRate` | `ukursm` |
-| `wrbtr` | `} JournalEntryItemAmount : wrbtr` |
-| `wmwst` | `} TaxAmount : wmwst` |
-| `fwbas` | `} TaxBaseAmount : fwbas` |
-| `wskto` | `} CashDiscountBaseAmount : wskto` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CurrencyRole` |  | |  | `curtp` |
+| `Currency` |  | |  | `waers` |
+| `ExchangeRate` |  | |  | `ukursp` |
+| `IndirectQuotedExchangeRate` |  | |  | `ukursm` |
+| `wrbtr` |  | |  | `} JournalEntryItemAmount : wrbtr` |
+| `wmwst` |  | |  | `} TaxAmount : wmwst` |
+| `fwbas` |  | |  | `} TaxBaseAmount : fwbas` |
+| `wskto` |  | |  | `} CashDiscountBaseAmount : wskto` |
 
 ## Source Code
 

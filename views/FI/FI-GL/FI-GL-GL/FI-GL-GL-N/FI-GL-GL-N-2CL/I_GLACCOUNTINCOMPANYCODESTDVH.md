@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccount` | `GLAccount` |
-| key `CompanyCode` | `CompanyCode` |
-| `_Text` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccount` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Source Code
 

@@ -28,61 +28,61 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnTaskLogUUID` | `item.CnsldtnTaskLogUUID` |
-| key `CnsldtnTaskLogItemUUID` | `item.CnsldtnTaskLogItemUUID` |
-| `CnsldtnTaskLogItemType` | `item.CnsldtnTaskLogItemType` |
-| `ConsolidationGroup` | `item.ConsolidationGroup` |
-| `ConsolidationUnit` | `item.ConsolidationUnit` |
-| `CnsldtnFinancialStatementItem` | `item.CnsldtnFinancialStatementItem` |
-| `SubItemCategory` | `item.SubItemCategory` |
-| `SubItem` | `item.SubItem` |
-| `CnsldtnJrnlEntryAmtLoclCrcy` | `item.CnsldtnJrnlEntryAmtLoclCrcy` |
-| `CnsldtnJrnlEntryAmtInLoclCrcy` | `case when item.CnsldtnTaskLogItemType = 'CU' then cast(item.CnsldtnJrnlEntryAmtInLoclCrcy as fins_vhcur12 preserving type) else cast('0' as fins_vhcur12) end` |
-| `CnsldtnJrnlEntryAmtGrpCrcy` | `item.CnsldtnJrnlEntryAmtGrpCrcy` |
-| `CnsldtnJrnlEntryAmtInGrpCrcy` | `item.CnsldtnJrnlEntryAmtInGrpCrcy` |
-| `SequenceNumber` | `item.SequenceNumber` |
-| `CnsldtnCrcyTranslationMethod` | `item.ConsolidationMethod` |
-| `CnsldtnRefExchangeRateType` | `item.CnsldtnRefExchangeRateType` |
-| `CnsldtnRefExchangeRateValue` | `item.CnsldtnRefExchangeRateValue` |
-| `CnsldtnExchangeRateType` | `item.CnsldtnExchangeRateType` |
-| `CnsldtnExchangeRateValue` | `item.CnsldtnExchangeRateValue` |
-| `CnsldtnCrcyTranslationKey` | `item.CnsldtnCrcyTranslationKey` |
-| `CnsldtnCrcyTrnsltnDiffFSItem` | `item.CnsldtnCrcyTrnsltnDiffFSItem` |
-| `CnsldtnCrcyTrnsltnDiffSubitem` | `item.CnsldtnCrcyTrnsltnDiffSubitem` |
-| `CalculatedDiffAmount` | `case when item.CnsldtnTaskLogItemType = 'CU' then item.CalculatedDiffAmount else cast('0' as fincs_diffamount) end` |
-| `CalculatedRefAmount` | `case when item.CnsldtnTaskLogItemType = 'CU' then item.CalculatedRefAmount else cast('0' as fincs_refamount) end` |
-| `ConsolidationSelection` | `item.ConsolidationSelection` |
-| `FinancialServicesBranch` | `item.FinancialServicesBranch` |
-| `GHGScope2CalculationMethod` | `item.GHGScope2CalculationMethod` |
-| `CashLedgerAccount` | `item.CashLedgerAccount` |
-| `CnsldtnCashLedgerChartOfAccts` | `item.CnsldtnCashLedgerChartOfAccts` |
-| `GHGScope2ContractualInstrument` | `item.GHGScope2ContractualInstrument` |
-| `FinancialDataSource` | `item.FinancialDataSource` |
-| `FinancialManagementArea` | `item.FinancialManagementArea` |
-| `Fund` | `item.Fund` |
-| `GHGCategory` | `item.GHGCategory` |
-| `GHGScope` | `item.GHGScope` |
-| `GrantID` | `item.GrantID` |
-| `SustainabilityModeOfTransport` | `item.SustainabilityModeOfTransport` |
-| `FinancialServicesProductGroup` | `item.FinancialServicesProductGroup` |
-| `_ConsolidationTaskLog` | *Association* |
-| `_CnsldtnGroup` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnSubitemCategory` | *Association* |
-| `_CnsldtnSubItem` | *Association* |
-| `_CnsldtnJrnlEntryAmtLoclCrcy` | *Association* |
-| `_CnsldtnJrnlEntryAmtGrpCrcy` | *Association* |
-| `_CnsldtnMethod` | *Association* |
-| `_CnsldtnItemDiff` | *Association* |
-| `_CnsldtnGHGScp2CalcMethod` | *Association* |
-| `_CnsldtnCashLedgerAccount` | *Association* |
-| `_CnsldtnCashLedgerChartOfAccts` | *Association* |
-| `_CnsldtnGHGScp2CntrctlInstr` | *Association* |
-| `_CnsldtnGHGCategory` | *Association* |
-| `_CnsldtnGHGScope` | *Association* |
-| `_CnsldtnSustModeOfTransport` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemType` |  | |  |  |
+| `ConsolidationGroup` |  | |  |  |
+| `ConsolidationUnit` |  | |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |
+| `SubItemCategory` |  | |  |  |
+| `SubItem` |  | |  |  |
+| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  | `case when item.CnsldtnTaskLogItemType = 'CU' then cast(item.CnsldtnJrnlEntryAmtInLoclCrcy as fins_vhcur12 preserving type) else cast('0' as fins_vhcur12) end` |
+| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  |  |
+| `SequenceNumber` |  | |  |  |
+| `CnsldtnCrcyTranslationMethod` |  | |  | `ConsolidationMethod` |
+| `CnsldtnRefExchangeRateType` |  | |  |  |
+| `CnsldtnRefExchangeRateValue` |  | |  |  |
+| `CnsldtnExchangeRateType` |  | |  |  |
+| `CnsldtnExchangeRateValue` |  | |  |  |
+| `CnsldtnCrcyTranslationKey` |  | |  |  |
+| `CnsldtnCrcyTrnsltnDiffFSItem` |  | |  |  |
+| `CnsldtnCrcyTrnsltnDiffSubitem` |  | |  |  |
+| `CalculatedDiffAmount` |  | |  | `case when item.CnsldtnTaskLogItemType = 'CU' then item.CalculatedDiffAmount else cast('0' as fincs_diffamount) end` |
+| `CalculatedRefAmount` |  | |  | `case when item.CnsldtnTaskLogItemType = 'CU' then item.CalculatedRefAmount else cast('0' as fincs_refamount) end` |
+| `ConsolidationSelection` |  | |  |  |
+| `FinancialServicesBranch` |  | |  |  |
+| `GHGScope2CalculationMethod` |  | |  |  |
+| `CashLedgerAccount` |  | |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  |  |
+| `GHGScope2ContractualInstrument` |  | |  |  |
+| `FinancialDataSource` |  | |  |  |
+| `FinancialManagementArea` |  | |  |  |
+| `Fund` |  | |  |  |
+| `GHGCategory` |  | |  |  |
+| `GHGScope` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `SustainabilityModeOfTransport` |  | |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |
+| `_ConsolidationTaskLog` | | ✓ | | |
+| `_CnsldtnGroup` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | |
+| `_CnsldtnSubItem` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | |
+| `_CnsldtnMethod` | | ✓ | | |
+| `_CnsldtnItemDiff` | | ✓ | | |
+| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | |
+| `_CnsldtnCashLedgerAccount` | | ✓ | | |
+| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | |
+| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | |
+| `_CnsldtnGHGCategory` | | ✓ | | |
+| `_CnsldtnGHGScope` | | ✓ | | |
+| `_CnsldtnSustModeOfTransport` | | ✓ | | |
 
 ## Associations
 

@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdInvoicingCarrierLevel` | `cast(substring(domvalue_l, 1, 2) as /scmtms/pymt_ind preserving type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdInvoicingCarrierLevel` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/pymt_ind preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

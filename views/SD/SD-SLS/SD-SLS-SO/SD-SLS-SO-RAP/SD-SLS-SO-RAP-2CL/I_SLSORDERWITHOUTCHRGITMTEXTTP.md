@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SalesOrderWithoutCharge` | `key SlsOrderWithoutChargeItemText. SalesOrderWithoutCharge` |
-| `SalesOrderWithoutChargeItem` | `key SlsOrderWithoutChargeItemText. SalesOrderWithoutChargeItem` |
-| key `Language` | `SlsOrderWithoutChargeItemText.Language` |
-| key `LongTextID` | `SlsOrderWithoutChargeItemText.LongTextID` |
-| `LongTextIDForEdit` | `SlsOrderWithoutChargeItemText.LongTextIDForEdit` |
-| `LanguageForEdit` | `SlsOrderWithoutChargeItemText.LanguageForEdit` |
-| `LongText` | `SlsOrderWithoutChargeItemText.LongText` |
-| `SalesOrderWithoutChargeType` | `SlsOrderWithoutChargeItemText.SalesOrderWithoutChargeType` |
-| `SalesOrganization` | `SlsOrderWithoutChargeItemText.SalesOrganization` |
-| `DistributionChannel` | `SlsOrderWithoutChargeItemText.DistributionChannel` |
-| `OrganizationDivision` | `SlsOrderWithoutChargeItemText.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesOrderWithoutCharge` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutCharge` |  | |  | `key SlsOrderWithoutChargeItemText. SalesOrderWithoutCharge` |
+| `SalesOrderWithoutChargeItem` |  | |  | `key SlsOrderWithoutChargeItemText. SalesOrderWithoutChargeItem` |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesOrderWithoutCharge` | | ✓ | | |
 
 ## Source Code
 

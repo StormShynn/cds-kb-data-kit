@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `Division` | `_Text.Division` |
-| `DivisionName` | `_Text.DivisionName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnDivisionTP` | `_Division as _Division : redirected to parent I_CnsldtnDivisionTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `Division` | ✓ | | `_Text` | `Division` |
+| `DivisionName` |  | | `_Text` | `DivisionName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnDivisionTP` |  | |  | `_Division as _Division : redirected to parent I_CnsldtnDivisionTP` |
 
 ## Source Code
 

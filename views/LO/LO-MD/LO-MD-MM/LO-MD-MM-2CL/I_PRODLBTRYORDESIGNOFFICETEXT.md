@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( spras as spras preserving type )` |
-| key `LaboratoryOrDesignOffice` | `cast( labor as labor preserving type )` |
-| `LaboratoryOrDesignOfficeName` | `lbtxt` |
-| `_Language` | *Association* |
-| `_LabOffice` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( spras as spras preserving type )` |
+| `LaboratoryOrDesignOffice` | ✓ | |  | `cast( labor as labor preserving type )` |
+| `LaboratoryOrDesignOfficeName` |  | |  | `lbtxt` |
+| `_Language` | | ✓ | | |
+| `_LabOffice` | | ✓ | | |
 
 ## Associations
 

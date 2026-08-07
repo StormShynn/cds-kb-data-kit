@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `stlnr` |
-| key `BillOfMaterialVariant` | `stlal` |
-| key `Material` | `matnr` |
-| key `Plant` | `werks` |
-| key `BillOfMaterialVariantUsage` | `stlan` |
-| key `SalesOrder` | `vbeln` |
-| key `SalesOrderItem` | `vbpos` |
-| `BillOfMaterialCategory` | `cast ('K' as stlty preserving type)` |
-| `_BillOfMaterialUsage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  | `stlnr` |
+| `BillOfMaterialVariant` | ✓ | |  | `stlal` |
+| `Material` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
+| `SalesOrder` | ✓ | |  | `vbeln` |
+| `SalesOrderItem` | ✓ | |  | `vbpos` |
+| `BillOfMaterialCategory` |  | |  | `cast ('K' as stlty preserving type)` |
+| `_BillOfMaterialUsage` | | ✓ | | |
 
 ## Associations
 

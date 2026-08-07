@@ -35,31 +35,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassName` | `ClassDef.clsname` |
-| `TadirType` | `case when Class.clstype = '0' then 'CLAS' else 'INTF' end` |
-| `Category` | `ClassDef.category` |
-| `Exposure` | `ClassDef.exposure` |
-| `State` | `ClassDef.state` |
-| `CreatedBy` | `ClassDef.author` |
-| `CreatedOn` | `ClassDef.createdon` |
-| `ChangedBy` | `case when ClassDef.changedby <> '' then ClassDef.changedby else ClassDef.author end` |
-| `ChangedOn` | `case when ClassDef.changedon <> '00000000' then ClassDef.changedon else ClassDef.createdon end` |
-| `IsAbstract` | `ClassDef.clsabstrct` |
-| `IsFinal` | `ClassDef.clsfinal` |
-| `ReferencedObject` | `ClassDef.refclsname` |
-| `HasFixPointArithmetic` | `ClassDef.fixpt` |
-| `ABAPVersion` | `ClassDef.unicode` |
-| `ProgramStatus` | `ClassDef.rstat` |
-| `ReleaseNumber` | `ClassDef.r3release` |
-| `MessageClass` | `ClassDef.msg_id` |
-| `ProxyClassCategory` | `ClassDef.clsproxy` |
-| `IsSharedMemoryEnabled` | `ClassDef.clssharedmemory` |
-| `HasUnitTests` | `ClassDef.with_unit_tests` |
-| `DurationType` | `ClassDef.duration_type` |
-| `RiskLevel` | `ClassDef.risk_level` |
-| `IsOpenedForPackage` | `ClassDef.within_package` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassName` | ✓ | |  | `clsname` |
+| `TadirType` |  | |  | `case when Class.clstype = '0' then 'CLAS' else 'INTF' end` |
+| `Category` |  | |  | `category` |
+| `Exposure` |  | |  | `exposure` |
+| `State` |  | |  | `state` |
+| `CreatedBy` |  | |  | `author` |
+| `CreatedOn` |  | |  | `createdon` |
+| `ChangedBy` |  | |  | `case when ClassDef.changedby <> '' then ClassDef.changedby else ClassDef.author end` |
+| `ChangedOn` |  | |  | `case when ClassDef.changedon <> '00000000' then ClassDef.changedon else ClassDef.createdon end` |
+| `IsAbstract` |  | |  | `clsabstrct` |
+| `IsFinal` |  | |  | `clsfinal` |
+| `ReferencedObject` |  | |  | `refclsname` |
+| `HasFixPointArithmetic` |  | |  | `fixpt` |
+| `ABAPVersion` |  | |  | `unicode` |
+| `ProgramStatus` |  | |  | `rstat` |
+| `ReleaseNumber` |  | |  | `r3release` |
+| `MessageClass` |  | |  | `msg_id` |
+| `ProxyClassCategory` |  | |  | `clsproxy` |
+| `IsSharedMemoryEnabled` |  | |  | `clssharedmemory` |
+| `HasUnitTests` |  | |  | `with_unit_tests` |
+| `DurationType` |  | |  | `duration_type` |
+| `RiskLevel` |  | |  | `risk_level` |
+| `IsOpenedForPackage` |  | |  | `within_package` |
 
 ## Source Code
 

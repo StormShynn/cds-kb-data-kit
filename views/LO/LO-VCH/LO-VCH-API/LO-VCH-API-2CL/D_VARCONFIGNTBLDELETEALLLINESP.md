@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ChangeNumber` | `aennr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumber` |  | |  | `aennr` |
 
 ## Source Code
 

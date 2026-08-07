@@ -28,58 +28,58 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConditionRecord` | `knumh` |
-| `ConditionSequentialNumber` | `kopos` |
-| `ConditionTable` | `kotabnr_char` |
-| `ConditionApplication` | `kappl` |
-| `ConditionType` | `kschl` |
-| `ConditionValidityEndDate` | `datbi` |
-| `ConditionValidityStartDate` | `datab` |
-| `CreatedByUser` | `ernam` |
-| `CreationDate` | `erdat` |
-| `ConditionTextID` | `knumt` |
-| `PricingScaleType` | `stfkz` |
-| `PricingScaleBasis` | `kzbzg` |
-| `ConditionScaleQuantity` | `kstbm` |
-| `ConditionScaleQuantityUnit` | `konms` |
-| `ConditionScaleAmount` | `kstbw` |
-| `ConditionScaleAmountCurrency` | `konws` |
-| `ConditionCalculationType` | `krech` |
-| `ConditionRateValue` | `kbetr_kond` |
-| `ConditionRateValueUnit` | `konwa` |
-| `ConditionRateRatio` | `vfprc_element_ratio` |
-| `ConditionRateRatioUnit` | `msehiunit` |
-| `ConditionRateAmount` | `vfprc_element_amount` |
-| `ConditionCurrency` | `konwa` |
-| `ConditionQuantity` | `kpein` |
-| `ConditionQuantityUnit` | `kmein` |
-| `ConditionToBaseQtyNmrtr` | `kumza` |
-| `ConditionToBaseQtyDnmntr` | `kumne` |
-| `BaseUnit` | `meins` |
-| `ConditionLowerLimit` | `mxwrt` |
-| `ConditionUpperLimit` | `gkwrt` |
-| `ConditionLowerLimitAmount` | `vfprc_element_amount` |
-| `ConditionLowerLimitRatio` | `vfprc_element_ratio` |
-| `ConditionUpperLimitAmount` | `vfprc_element_amount` |
-| `ConditionUpperLimitRatio` | `vfprc_element_ratio` |
-| `ConditionAlternativeCurrency` | `kwaeh` |
-| `ConditionExclusion` | `kznep` |
-| `ConditionIsDeleted` | `loevm_ko` |
-| `AdditionalValueDays` | `valtg` |
-| `FixedValueDate` | `valdt` |
-| `PaymentTerms` | `dzterm` |
-| `CndnMaxNumberOfSalesOrders` | `anzauf` |
-| `MinimumConditionBasisValue` | `mikbas` |
-| `MaximumConditionBasisValue` | `mxkbas` |
-| `MaximumConditionAmount` | `komxwrt` |
-| `IncrementalScale` | `klf_stg` |
-| `PricingScaleLine` | `klf_kal` |
-| `SalesPriceApprovalRequest` | `priceapprovalrequest` |
-| `PrevApprovedConditionRecord` | `knumh_prev_aprvd` |
-| `LastChangeDateTime` | `timestampl` |
-| `D_SlsPrcgCndnRecordValidityR` | `_Validity : composition [1..*] of D_SlsPrcgCndnRecordValidityR` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionRecord` |  | |  | `knumh` |
+| `ConditionSequentialNumber` |  | |  | `kopos` |
+| `ConditionTable` |  | |  | `kotabnr_char` |
+| `ConditionApplication` |  | |  | `kappl` |
+| `ConditionType` |  | |  | `kschl` |
+| `ConditionValidityEndDate` |  | |  | `datbi` |
+| `ConditionValidityStartDate` |  | |  | `datab` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDate` |  | |  | `erdat` |
+| `ConditionTextID` |  | |  | `knumt` |
+| `PricingScaleType` |  | |  | `stfkz` |
+| `PricingScaleBasis` |  | |  | `kzbzg` |
+| `ConditionScaleQuantity` |  | |  | `kstbm` |
+| `ConditionScaleQuantityUnit` |  | |  | `konms` |
+| `ConditionScaleAmount` |  | |  | `kstbw` |
+| `ConditionScaleAmountCurrency` |  | |  | `konws` |
+| `ConditionCalculationType` |  | |  | `krech` |
+| `ConditionRateValue` |  | |  | `kbetr_kond` |
+| `ConditionRateValueUnit` |  | |  | `konwa` |
+| `ConditionRateRatio` |  | |  | `vfprc_element_ratio` |
+| `ConditionRateRatioUnit` |  | |  | `msehiunit` |
+| `ConditionRateAmount` |  | |  | `vfprc_element_amount` |
+| `ConditionCurrency` |  | |  | `konwa` |
+| `ConditionQuantity` |  | |  | `kpein` |
+| `ConditionQuantityUnit` |  | |  | `kmein` |
+| `ConditionToBaseQtyNmrtr` |  | |  | `kumza` |
+| `ConditionToBaseQtyDnmntr` |  | |  | `kumne` |
+| `BaseUnit` |  | |  | `meins` |
+| `ConditionLowerLimit` |  | |  | `mxwrt` |
+| `ConditionUpperLimit` |  | |  | `gkwrt` |
+| `ConditionLowerLimitAmount` |  | |  | `vfprc_element_amount` |
+| `ConditionLowerLimitRatio` |  | |  | `vfprc_element_ratio` |
+| `ConditionUpperLimitAmount` |  | |  | `vfprc_element_amount` |
+| `ConditionUpperLimitRatio` |  | |  | `vfprc_element_ratio` |
+| `ConditionAlternativeCurrency` |  | |  | `kwaeh` |
+| `ConditionExclusion` |  | |  | `kznep` |
+| `ConditionIsDeleted` |  | |  | `loevm_ko` |
+| `AdditionalValueDays` |  | |  | `valtg` |
+| `FixedValueDate` |  | |  | `valdt` |
+| `PaymentTerms` |  | |  | `dzterm` |
+| `CndnMaxNumberOfSalesOrders` |  | |  | `anzauf` |
+| `MinimumConditionBasisValue` |  | |  | `mikbas` |
+| `MaximumConditionBasisValue` |  | |  | `mxkbas` |
+| `MaximumConditionAmount` |  | |  | `komxwrt` |
+| `IncrementalScale` |  | |  | `klf_stg` |
+| `PricingScaleLine` |  | |  | `klf_kal` |
+| `SalesPriceApprovalRequest` |  | |  | `priceapprovalrequest` |
+| `PrevApprovedConditionRecord` |  | |  | `knumh_prev_aprvd` |
+| `LastChangeDateTime` |  | |  | `timestampl` |
+| `D_SlsPrcgCndnRecordValidityR` |  | |  | `_Validity : composition [1..*] of D_SlsPrcgCndnRecordValidityR` |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallOrdReltdBillgStatus` | `statu` |
-| key `Language` | `spras` |
-| `OverallOrdReltdBillgStsDesc` | `bezei` |
-| `_OverallOrdReltdBillgStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallOrdReltdBillgStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `OverallOrdReltdBillgStsDesc` |  | |  | `bezei` |
+| `_OverallOrdReltdBillgStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

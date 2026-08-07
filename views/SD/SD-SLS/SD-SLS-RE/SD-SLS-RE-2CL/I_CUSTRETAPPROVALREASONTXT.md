@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `CustReturnApprovalReasonText.Language` |
-| key `CustomerReturnApprovalReason` | `CustReturnApprovalReasonText.SalesDocApprovalReason` |
-| `CustReturnApprovalReasonName` | `CustReturnApprovalReasonText.SalesDocApprovalReasonName` |
-| `_CustomerReturnApprovalReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `CustomerReturnApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
+| `CustReturnApprovalReasonName` |  | |  | `SalesDocApprovalReasonName` |
+| `_CustomerReturnApprovalReason` | | ✓ | | |
 
 ## Associations
 

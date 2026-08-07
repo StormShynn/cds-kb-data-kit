@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MerchandiseCategory` | `cast (MrchdsCategory.class as rfm_mrchdscategory )` |
-| key `Characteristic` | `Characteristic.atnam` |
-| `CharcInternalID` | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |
-| `_Characteristic` | *Association* |
-| `_CharacteristicDesc` | *Association* |
-| `_MerchandiseCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MerchandiseCategory` | ✓ | |  | `cast (MrchdsCategory.class as rfm_mrchdscategory )` |
+| `Characteristic` | ✓ | |  | `atnam` |
+| `CharcInternalID` |  | |  | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |
+| `_Characteristic` | | ✓ | | |
+| `_CharacteristicDesc` | | ✓ | | |
+| `_MerchandiseCategory` | | ✓ | | |
 
 ## Associations
 

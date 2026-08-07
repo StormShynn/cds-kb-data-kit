@@ -27,104 +27,104 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallCompGrpUUID` | `db_key` |
-| `JITHeaderUUID` | `parent_key` |
-| `InternalJITCallNumber` | `int_call_num` |
-| `JITCallComponentGrpItemNumber` | `jitcallcomponentgrpitemnumber` |
-| `CompGrpNumber` | `comp_grp_num` |
-| `JITPredecessorCompGrpItmNmbr` | `jitpredecessorcompgrpitmnmbr` |
-| `ExtCompGrpNumber` | `ext_comp_grp_num` |
-| `CompGrpMatl` | `comp_grp_mat` |
-| `CustCompGrpMatl` | `cust_comp_grp_mat` |
-| `CustSupplyArea` | `cust_sup_area` |
-| `UnloadingPointName` | `ablad` |
-| `Plant` | `werks` |
-| `CustAssemblyLoc` | `fldpo` |
-| `ShippingPoint` | `vstel` |
-| `StorageLocation` | `lgort` |
-| `ProductionVersion` | `productionversion` |
-| `JITDelivConfControl` | `jitdelivconfcontrol` |
-| `JITSuperPckgGrpUUID` | `jitsuperpckggrpuuid` |
-| `TransmittedExtStatusByMfr` | `ext_stat_trans` |
-| `TransmittedExtStsUpdtdDteTme` | `transmittedextstsupdtddtetme` |
-| `JITExtStatusAtSupplier` | `ext_stat` |
-| `JITExtStatusUpdtdOn` | `ext_stat_updated_on` |
-| `JITIntProcessingStatus` | `int_stat` |
-| `JITIntStatusUpdtdOn` | `int_stat_updated_on` |
-| `SupplyControlID` | `supply_cntrl` |
-| `SupplyControlUUID` | `supplycontroluuid` |
-| `JITActionCtrl` | `action_cntrl` |
-| `RequirementDateTime` | `requirement_dt` |
-| `PlannedShippingDateTime` | `planned_shipping_dt` |
-| `ActualShippingDateTime` | `actual_shipping_dt` |
-| `MaterialAvailabilityDate` | `material_availability_date` |
-| `MaterialAvailabilityTime` | `material_availability_time` |
-| `RequestedDeliveryDate` | `wldat` |
-| `RequestedDeliveryTime` | `wluhr` |
-| `WarehouseNumber` | `lgnum` |
-| `DeliveryCreationDate` | `ledat` |
-| `ProductionStartDate` | `prodn_start_date` |
-| `JITProductionStartTime` | `jitproductionstarttime` |
-| `ProductionEndDate` | `prodn_end_date` |
-| `DeliveryCreationTime` | `deliverycreationtime` |
-| `JITIntSequenceNumber` | `int_sequence_num` |
-| `JITExtSequenceNumber` | `ext_sequence_num` |
-| `JITFormattedSequenceNumber` | `formatted_sequence_num` |
-| `JITFormattedSequenceNmbrPrefix` | `formatted_sequence_num_prefix` |
-| `JITFrmtdSqncNmbrIntervalRange` | `interval_range` |
-| `JITDelivSqncGrpID` | `jitdelivsqncgrpid` |
-| `JITDelivSqncGrpUUID` | `jitdelivsqncgrpuuid` |
-| `DeliveryStatus` | `deli_crea_stat` |
-| `PickingStatus` | `pick_stat` |
-| `GoodsMovementStatus` | `goods_mvmt_stat` |
-| `JITCompGrpDocPckgGrpSts` | `pkg_grp_stat` |
-| `JITCompGrpDocRelToProdnSts` | `r2p_stat` |
-| `JITCompGrpDocConfToProdnSts` | `cp_stat` |
-| `OverallBillingStatus` | `bill_stat` |
-| `HandlingUnitStatus` | `hu_stat` |
-| `JITPackingConfirmationStatus` | `pack_stat` |
-| `JITReleaseForPackingStatus` | `r2pck_stat` |
-| `JITCallCompGrpCancellationSts` | `cancellationstatus` |
-| `RequestedQuantity` | `requestedquantity` |
-| `QuantityUnit` | `quantityunit` |
-| `NetWeight` | `netweight` |
-| `GrossWeight` | `grossweight` |
-| `WeightUnit` | `weightunit` |
-| `LocalLastChangeDateTime` | `locallastchangedatetime` |
-| `_JITInbCallComponent` | *Association* |
-| `_ProductCompGrp` | *Association* |
-| `_SupplierExtStatus` | *Association* |
-| `_JITInternalStatus` | *Association* |
-| `_Plant` | *Association* |
-| `_JITSupplyControlHeader` | *Association* |
-| `_ShippingPoint` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_JITPckgGrpItemRef` | *Association* |
-| `_JITCallCompGrpCanclnStatus` | *Association* |
-| `_ProductionVersion` | *Association* |
-| `_JITPackingGrpCreationStatus` | *Association* |
-| `_JITDeliveryStatus` | *Association* |
-| `_JITGoodsMovementStatus` | *Association* |
-| `_JITBillingStatus` | *Association* |
-| `_JITReleaseToProductionStatus` | *Association* |
-| `_JITProdnConfirmationStatus` | *Association* |
-| `_JITReleaseToPackingStatus` | *Association* |
-| `_JITPackingConfStatus` | *Association* |
-| `_JITHndlgUnitCrtnStatus` | *Association* |
-| `_JITPckgGrpStatus` | *Association* |
-| `_JITPckgGrpHeader` | *Association* |
-| `_JITCompGrpEnhanced` | *Association* |
-| `_JITCallCompGrpRefTextEnhcd` | *Association* |
-| `_JITCallHdrRefTextEnhcd` | *Association* |
-| `_JITDelivSqncGrpHeaderBasic` | *Association* |
-| `_JITActionCtrl` | *Association* |
-| `_JITDelivConfControl` | *Association* |
-| `_JITInboundCall` | *Association* |
-| `_JITInbCallActionLog` | *Association* |
-| `_JITInbCallCompGrpRefText` | *Association* |
-| `_JITInbCallCompGrpDocRef` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallCompGrpUUID` | ✓ | |  | `db_key` |
+| `JITHeaderUUID` |  | |  | `parent_key` |
+| `InternalJITCallNumber` |  | |  | `int_call_num` |
+| `JITCallComponentGrpItemNumber` |  | |  | `jitcallcomponentgrpitemnumber` |
+| `CompGrpNumber` |  | |  | `comp_grp_num` |
+| `JITPredecessorCompGrpItmNmbr` |  | |  | `jitpredecessorcompgrpitmnmbr` |
+| `ExtCompGrpNumber` |  | |  | `ext_comp_grp_num` |
+| `CompGrpMatl` |  | |  | `comp_grp_mat` |
+| `CustCompGrpMatl` |  | |  | `cust_comp_grp_mat` |
+| `CustSupplyArea` |  | |  | `cust_sup_area` |
+| `UnloadingPointName` |  | |  | `ablad` |
+| `Plant` |  | |  | `werks` |
+| `CustAssemblyLoc` |  | |  | `fldpo` |
+| `ShippingPoint` |  | |  | `vstel` |
+| `StorageLocation` |  | |  | `lgort` |
+| `ProductionVersion` |  | |  | `productionversion` |
+| `JITDelivConfControl` |  | |  | `jitdelivconfcontrol` |
+| `JITSuperPckgGrpUUID` |  | |  | `jitsuperpckggrpuuid` |
+| `TransmittedExtStatusByMfr` |  | |  | `ext_stat_trans` |
+| `TransmittedExtStsUpdtdDteTme` |  | |  | `transmittedextstsupdtddtetme` |
+| `JITExtStatusAtSupplier` |  | |  | `ext_stat` |
+| `JITExtStatusUpdtdOn` |  | |  | `ext_stat_updated_on` |
+| `JITIntProcessingStatus` |  | |  | `int_stat` |
+| `JITIntStatusUpdtdOn` |  | |  | `int_stat_updated_on` |
+| `SupplyControlID` |  | |  | `supply_cntrl` |
+| `SupplyControlUUID` |  | |  | `supplycontroluuid` |
+| `JITActionCtrl` |  | |  | `action_cntrl` |
+| `RequirementDateTime` |  | |  | `requirement_dt` |
+| `PlannedShippingDateTime` |  | |  | `planned_shipping_dt` |
+| `ActualShippingDateTime` |  | |  | `actual_shipping_dt` |
+| `MaterialAvailabilityDate` |  | |  | `material_availability_date` |
+| `MaterialAvailabilityTime` |  | |  | `material_availability_time` |
+| `RequestedDeliveryDate` |  | |  | `wldat` |
+| `RequestedDeliveryTime` |  | |  | `wluhr` |
+| `WarehouseNumber` |  | |  | `lgnum` |
+| `DeliveryCreationDate` |  | |  | `ledat` |
+| `ProductionStartDate` |  | |  | `prodn_start_date` |
+| `JITProductionStartTime` |  | |  | `jitproductionstarttime` |
+| `ProductionEndDate` |  | |  | `prodn_end_date` |
+| `DeliveryCreationTime` |  | |  | `deliverycreationtime` |
+| `JITIntSequenceNumber` |  | |  | `int_sequence_num` |
+| `JITExtSequenceNumber` |  | |  | `ext_sequence_num` |
+| `JITFormattedSequenceNumber` |  | |  | `formatted_sequence_num` |
+| `JITFormattedSequenceNmbrPrefix` |  | |  | `formatted_sequence_num_prefix` |
+| `JITFrmtdSqncNmbrIntervalRange` |  | |  | `interval_range` |
+| `JITDelivSqncGrpID` |  | |  | `jitdelivsqncgrpid` |
+| `JITDelivSqncGrpUUID` |  | |  | `jitdelivsqncgrpuuid` |
+| `DeliveryStatus` |  | |  | `deli_crea_stat` |
+| `PickingStatus` |  | |  | `pick_stat` |
+| `GoodsMovementStatus` |  | |  | `goods_mvmt_stat` |
+| `JITCompGrpDocPckgGrpSts` |  | |  | `pkg_grp_stat` |
+| `JITCompGrpDocRelToProdnSts` |  | |  | `r2p_stat` |
+| `JITCompGrpDocConfToProdnSts` |  | |  | `cp_stat` |
+| `OverallBillingStatus` |  | |  | `bill_stat` |
+| `HandlingUnitStatus` |  | |  | `hu_stat` |
+| `JITPackingConfirmationStatus` |  | |  | `pack_stat` |
+| `JITReleaseForPackingStatus` |  | |  | `r2pck_stat` |
+| `JITCallCompGrpCancellationSts` |  | |  | `cancellationstatus` |
+| `RequestedQuantity` |  | |  | `requestedquantity` |
+| `QuantityUnit` |  | |  | `quantityunit` |
+| `NetWeight` |  | |  | `netweight` |
+| `GrossWeight` |  | |  | `grossweight` |
+| `WeightUnit` |  | |  | `weightunit` |
+| `LocalLastChangeDateTime` |  | |  | `locallastchangedatetime` |
+| `_JITInbCallComponent` | | ✓ | | |
+| `_ProductCompGrp` | | ✓ | | |
+| `_SupplierExtStatus` | | ✓ | | |
+| `_JITInternalStatus` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_JITSupplyControlHeader` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_JITPckgGrpItemRef` | | ✓ | | |
+| `_JITCallCompGrpCanclnStatus` | | ✓ | | |
+| `_ProductionVersion` | | ✓ | | |
+| `_JITPackingGrpCreationStatus` | | ✓ | | |
+| `_JITDeliveryStatus` | | ✓ | | |
+| `_JITGoodsMovementStatus` | | ✓ | | |
+| `_JITBillingStatus` | | ✓ | | |
+| `_JITReleaseToProductionStatus` | | ✓ | | |
+| `_JITProdnConfirmationStatus` | | ✓ | | |
+| `_JITReleaseToPackingStatus` | | ✓ | | |
+| `_JITPackingConfStatus` | | ✓ | | |
+| `_JITHndlgUnitCrtnStatus` | | ✓ | | |
+| `_JITPckgGrpStatus` | | ✓ | | |
+| `_JITPckgGrpHeader` | | ✓ | | |
+| `_JITCompGrpEnhanced` | | ✓ | | |
+| `_JITCallCompGrpRefTextEnhcd` | | ✓ | | |
+| `_JITCallHdrRefTextEnhcd` | | ✓ | | |
+| `_JITDelivSqncGrpHeaderBasic` | | ✓ | | |
+| `_JITActionCtrl` | | ✓ | | |
+| `_JITDelivConfControl` | | ✓ | | |
+| `_JITInboundCall` | | ✓ | | |
+| `_JITInbCallActionLog` | | ✓ | | |
+| `_JITInbCallCompGrpRefText` | | ✓ | | |
+| `_JITInbCallCompGrpDocRef` | | ✓ | | |
 
 ## Associations
 

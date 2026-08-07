@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `knvi_addr.kunnr` |
-| key `SalesOrganization` | `SalesAreaTax.SalesOrganization` |
-| key `DistributionChannel` | `SalesAreaTax.DistributionChannel` |
-| key `Division` | `SalesAreaTax.Division` |
-| key `AddressID` | `knvi_addr.adrnr` |
-| key `DepartureCountry` | `knvi_addr.aland` |
-| key `CustomerTaxCategory` | `knvi_addr.tatyp` |
-| `CustomerTaxClassification` | `knvi_addr.taxkd` |
-| `_CustomerSalesAreaTax` | *Association* |
-| `_Customer` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
-| `_CustomerSalesArea` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `SalesOrganization` | ✓ | |  |  |
+| `DistributionChannel` | ✓ | |  |  |
+| `Division` | ✓ | |  |  |
+| `AddressID` | ✓ | |  | `adrnr` |
+| `DepartureCountry` | ✓ | |  | `aland` |
+| `CustomerTaxCategory` | ✓ | |  | `tatyp` |
+| `CustomerTaxClassification` |  | |  | `taxkd` |
+| `_CustomerSalesAreaTax` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
+| `_CustomerSalesArea` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

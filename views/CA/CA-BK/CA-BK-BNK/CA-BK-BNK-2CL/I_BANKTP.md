@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankCountry` | `BankCountry` |
-| key `BankInternalID` | `BankInternalID` |
-| `LongBankName` | `LongBankName` |
-| `LongBankBranch` | `LongBankBranch` |
-| `SWIFTCode` | `SWIFTCode` |
-| `BankNetworkGrouping` | `BankNetworkGrouping` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `BankNumber` | `BankNumber` |
-| `BankCategory` | `BankCategory` |
-| `I_BankAddressTP` | `Bank._BankAddress : redirected to composition child I_BankAddressTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankCountry` | ✓ | |  |  |
+| `BankInternalID` | ✓ | |  |  |
+| `LongBankName` |  | |  |  |
+| `LongBankBranch` |  | |  |  |
+| `SWIFTCode` |  | |  |  |
+| `BankNetworkGrouping` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `BankNumber` |  | |  |  |
+| `BankCategory` |  | |  |  |
+| `I_BankAddressTP` |  | |  | `Bank._BankAddress : redirected to composition child I_BankAddressTP` |
 
 ## Source Code
 

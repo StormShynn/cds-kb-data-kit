@@ -31,59 +31,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| `PurchaseContractType` | `PurchaseContractType` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `CreationDate` | `CreationDate` |
-| `Supplier` | `Supplier` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `PurchaseContractTargetAmount` | `PurchaseContractTargetAmount` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `QuotationSubmissionDate` | `QuotationSubmissionDate` |
-| `SupplierQuotation` | `SupplierQuotation` |
-| `CorrespncExternalReference` | `CorrespncExternalReference` |
-| `CorrespncInternalReference` | `CorrespncInternalReference` |
-| `SupplierRespSalesPersonName` | `SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `SupplierPhoneNumber` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `PurchasingDocumentName` | `PurchasingDocumentName` |
-| `PurchasingProcessingStatus` | `PurchasingProcessingStatus` |
-| `PurgContractIsInPreparation` | `PurgContractIsInPreparation` |
-| `CntrlPurContrFlxblDistrIsAllwd` | `CntrlPurContrFlxblDistrIsAllwd` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `ActivePurchasingDocument` | `ActivePurchasingDocument` |
-| `PurchasingDocumentVersion` | `PurchasingDocumentVersion` |
-| `PurchasingDocumentOrigin` | `PurchasingDocumentOrigin` |
-| `PurgDocIsChgVers` | `PurgDocIsChgVers` |
-| `IsCancelled` | `IsCancelled` |
-| `CntrlPurContrDistributionSts` | `CntrlPurContrDistributionSts` |
-| `PurchasingDocVersionReasonCode` | `PurchasingDocVersionReasonCode` |
-| `PurchasingDocumentSubtype` | `PurchasingDocumentSubtype` |
-| `ProcmtHubCompanyCodeGroupingID` | `ProcmtHubCompanyCodeGroupingID` |
-| `_CentralPurchaseContractItem` | *Association* |
-| `_CentralPurchaseContrHdrDistr` | *Association* |
-| `_CntrlPurContractHdrNotes` | *Association* |
-| `_CntrlPurContrHdrCndnValidity` | *Association* |
-| `_CntrlPurContrVersionHistory` | *Association* |
-| `_SubordCntrlPurContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `PurchaseContractType` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `SupplierQuotation` |  | |  |  |
+| `CorrespncExternalReference` |  | |  |  |
+| `CorrespncInternalReference` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PurchasingDocumentName` |  | |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |
+| `PurgContractIsInPreparation` |  | |  |  |
+| `CntrlPurContrFlxblDistrIsAllwd` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `ActivePurchasingDocument` |  | |  |  |
+| `PurchasingDocumentVersion` |  | |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |
+| `PurgDocIsChgVers` |  | |  |  |
+| `IsCancelled` |  | |  |  |
+| `CntrlPurContrDistributionSts` |  | |  |  |
+| `PurchasingDocVersionReasonCode` |  | |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |
+| `ProcmtHubCompanyCodeGroupingID` |  | |  |  |
+| `_CentralPurchaseContractItem` | | ✓ | | |
+| `_CentralPurchaseContrHdrDistr` | | ✓ | | |
+| `_CntrlPurContractHdrNotes` | | ✓ | | |
+| `_CntrlPurContrHdrCndnValidity` | | ✓ | | |
+| `_CntrlPurContrVersionHistory` | | ✓ | | |
+| `_SubordCntrlPurContract` | | ✓ | | |
 
 ## Source Code
 

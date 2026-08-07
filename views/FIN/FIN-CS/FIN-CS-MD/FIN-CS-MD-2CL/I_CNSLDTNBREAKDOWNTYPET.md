@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_DomainT.Language as spras preserving type )` |
-| key `ConsolidationBreakdownType` | `cast(_DomainT.DomainValue as fincs_breakdowntype )` |
-| `ConsolidationBreakdownTypeText` | `cast(_DomainT.DomainValueText as fincs_breakdowntype_text preserving type )` |
-| `DomainValue` | `_DomainT.DomainValue` |
-| `_BreakdownType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
+| `ConsolidationBreakdownType` | ✓ | |  | `cast(_DomainT.DomainValue as fincs_breakdowntype )` |
+| `ConsolidationBreakdownTypeText` |  | |  | `cast(_DomainT.DomainValueText as fincs_breakdowntype_text preserving type )` |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |
+| `_BreakdownType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

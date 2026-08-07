@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoiceUploadFileUUID` | `SupplierInvoiceUploadFileUUID` |
-| `SupplierInvoiceUploadUUID` | `SupplierInvoiceUploadUUID` |
-| `UploadedSupplierInvoiceUUID` | `UploadedSupplierInvoiceUUID` |
-| `SuplrInvcUpldFileLifeCycStatus` | `SuplrInvcUpldFileLifeCycStatus` |
-| `FileName` | `FileName` |
-| `CompanyCode` | `_Upload.CompanyCode` |
-| `_UploadedSupplierInvoiceAPI01` | *Association* |
-| `_SupplierInvoiceUploadAPI01` | *Association* |
-| `_LifecycleStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoiceUploadFileUUID` | ✓ | |  |  |
+| `SupplierInvoiceUploadUUID` |  | |  |  |
+| `UploadedSupplierInvoiceUUID` |  | |  |  |
+| `SuplrInvcUpldFileLifeCycStatus` |  | |  |  |
+| `FileName` |  | |  |  |
+| `CompanyCode` |  | | `_Upload` | `CompanyCode` |
+| `_UploadedSupplierInvoiceAPI01` | | ✓ | | |
+| `_SupplierInvoiceUploadAPI01` | | ✓ | | |
+| `_LifecycleStatusText` | | ✓ | | |
 
 ## Associations
 

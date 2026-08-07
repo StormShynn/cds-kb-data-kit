@@ -33,13 +33,13 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `customer` | `kunnr` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `Division` | `spart` |
-| `ShippingPoint` | `vstel` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `customer` |  | |  | `kunnr` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `Division` |  | |  | `spart` |
+| `ShippingPoint` |  | |  | `vstel` |
 
 ## Source Code
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaxCategory` | `TaxCategory` |
-| `TaxRate` | `TaxRate` |
-| `IsDeleted` | `IsDeleted` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaxCategory` | ✓ | |  |  |
+| `TaxRate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

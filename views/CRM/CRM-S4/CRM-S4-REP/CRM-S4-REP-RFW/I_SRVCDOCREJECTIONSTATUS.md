@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentIsRejected` | `domvalue_l` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_SrvcDocRejectionStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentIsRejected` | ✓ | |  | `domvalue_l` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_SrvcDocRejectionStatusText` | | ✓ | | |
 
 ## Associations
 

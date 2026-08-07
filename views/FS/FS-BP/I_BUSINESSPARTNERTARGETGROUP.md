@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerTargetGroup` | `tp13.group_d` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerTargetGroup` | ✓ | |  | `group_d` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

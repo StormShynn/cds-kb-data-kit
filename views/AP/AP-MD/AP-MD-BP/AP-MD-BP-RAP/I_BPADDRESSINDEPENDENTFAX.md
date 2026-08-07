@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `_BusinessPartner.BusinessPartner` |
-| key `AddressID` | `AddressID` |
-| key `AddressPersonID` | `AddressPersonID` |
-| key `CommMediumSequenceNumber` | `CommMediumSequenceNumber` |
-| `FaxNumberCountry` | `FaxNumberCountry` |
-| `FaxAreaCodeSubscriberNumber` | `FaxAreaCodeSubscriberNumber` |
-| `FaxExtensionNumber` | `FaxExtensionNumber` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `FaxNumberIsCurrentDefault` | `FaxNumberIsCurrentDefault` |
-| `ValidityStartDateTime` | `cast ( ValidityStartDate as ad_valfrom )` |
-| `ValidityEndDateTime` | `cast ( ValidityEndDate as ad_valto )` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `_BusinessPartner` | *Association* |
-| `_AddressCommunicationRemark` | *Association* |
-| `_AddressCommunicationUsage` | *Association* |
-| `_FaxNumberCountry` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |
+| `AddressID` | ✓ | |  |  |
+| `AddressPersonID` | ✓ | |  |  |
+| `CommMediumSequenceNumber` | ✓ | |  |  |
+| `FaxNumberCountry` |  | |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |
+| `FaxExtensionNumber` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `FaxNumberIsCurrentDefault` |  | |  |  |
+| `ValidityStartDateTime` |  | |  | `cast ( ValidityStartDate as ad_valfrom )` |
+| `ValidityEndDateTime` |  | |  | `cast ( ValidityEndDate as ad_valto )` |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_AddressCommunicationRemark` | | ✓ | | |
+| `_AddressCommunicationUsage` | | ✓ | | |
+| `_FaxNumberCountry` | | ✓ | | |
 
 ## Associations
 

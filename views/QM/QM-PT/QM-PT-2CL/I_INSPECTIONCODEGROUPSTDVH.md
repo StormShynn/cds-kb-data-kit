@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionCatalog` | `InspectionCatalog` |
-| key `InspectionCodeGroup` | `InspectionCodeGroup` |
-| `CodeGroupStatus` | `CodeGroupStatus` |
-| `_Text` | *Association* |
-| `_InspectionCatalog` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionCatalog` | ✓ | |  |  |
+| `InspectionCodeGroup` | ✓ | |  |  |
+| `CodeGroupStatus` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_InspectionCatalog` | | ✓ | | |
 
 ## Source Code
 

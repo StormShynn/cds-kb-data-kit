@@ -30,56 +30,56 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `ChangeDocObjectClass` | `ChangeDocObjectClass` |
-| key `ChangeDocument` | `ChangeDocument` |
-| key `DatabaseTable` | `DatabaseTable` |
-| key `ChangeDocTableKey` | `ChangeDocTableKey` |
-| key `ChangeDocDatabaseTableField` | `ChangeDocDatabaseTableField` |
-| key `ChangeDocItemChangeType` | `ChangeDocItemChangeType` |
-| `ChangeDocObject` | `ChangeDocObject` |
-| `CreatedByUser` | `CreatedByUser` |
-| `FirstName` | `FirstName` |
-| `LastName` | `LastName` |
-| `Department` | `Department` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `ChangeTransactionCode` | `ChangeTransactionCode` |
-| `DatabaseTableText` | `DatabaseTableText` |
-| `ChangeDocFieldNameDesc` | `ChangeDocFieldNameDesc` |
-| `ChangeDocPreviousUnit` | `ChangeDocPreviousUnit` |
-| `ChangeDocNewUnit` | `ChangeDocNewUnit` |
-| `ChangeDocPreviousCurrency` | `ChangeDocPreviousCurrency` |
-| `ChangeDocNewCurrency` | `ChangeDocNewCurrency` |
-| `ChangeDocPreviousFieldValue` | `ChangeDocPreviousFieldValue` |
-| `ChangeDocNewFieldValue` | `ChangeDocNewFieldValue` |
-| `ChangeDocChangeTypeText` | `ChangeDocChangeTypeText` |
-| `ChangeDocTextIsChanged` | `ChangeDocTextIsChanged` |
-| `Plant` | `Plant` |
-| `ProductSalesOrg` | `ProductSalesOrg` |
-| `ProductDistributionChnl` | `ProductDistributionChnl` |
-| `ValuationArea` | `ValuationArea` |
-| `WarehouseNumber` | `WarehouseNumber` |
-| `MaintenanceStatus` | `MaintenanceStatus` |
-| `MaintenanceStatus1` | `MaintenanceStatus1` |
-| `MaintenanceStatus2` | `MaintenanceStatus2` |
-| `MaintenanceStatus3` | `MaintenanceStatus3` |
-| `MaintenanceStatus4` | `MaintenanceStatus4` |
-| `MaintenanceStatus5` | `MaintenanceStatus5` |
-| `MaintenanceStatus6` | `MaintenanceStatus6` |
-| `MaintenanceStatus7` | `MaintenanceStatus7` |
-| `MaintenanceStatus8` | `MaintenanceStatus8` |
-| `MaintenanceStatus9` | `MaintenanceStatus9` |
-| `MaintenanceStatus10` | `MaintenanceStatus10` |
-| `MaintenanceStatus11` | `MaintenanceStatus11` |
-| `MaintenanceStatus12` | `MaintenanceStatus12` |
-| `MaintenanceStatus13` | `MaintenanceStatus13` |
-| `MaintenanceStatus14` | `MaintenanceStatus14` |
-| `MaintenanceStatus15` | `MaintenanceStatus15` |
-| `_CreatedByUserContactCard` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |
+| `ChangeDocument` | ✓ | |  |  |
+| `DatabaseTable` | ✓ | |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |
+| `ChangeDocObject` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `FirstName` |  | |  |  |
+| `LastName` |  | |  |  |
+| `Department` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `ChangeTransactionCode` |  | |  |  |
+| `DatabaseTableText` |  | |  |  |
+| `ChangeDocFieldNameDesc` |  | |  |  |
+| `ChangeDocPreviousUnit` |  | |  |  |
+| `ChangeDocNewUnit` |  | |  |  |
+| `ChangeDocPreviousCurrency` |  | |  |  |
+| `ChangeDocNewCurrency` |  | |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |
+| `ChangeDocChangeTypeText` |  | |  |  |
+| `ChangeDocTextIsChanged` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProductSalesOrg` |  | |  |  |
+| `ProductDistributionChnl` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `WarehouseNumber` |  | |  |  |
+| `MaintenanceStatus` |  | |  |  |
+| `MaintenanceStatus1` |  | |  |  |
+| `MaintenanceStatus2` |  | |  |  |
+| `MaintenanceStatus3` |  | |  |  |
+| `MaintenanceStatus4` |  | |  |  |
+| `MaintenanceStatus5` |  | |  |  |
+| `MaintenanceStatus6` |  | |  |  |
+| `MaintenanceStatus7` |  | |  |  |
+| `MaintenanceStatus8` |  | |  |  |
+| `MaintenanceStatus9` |  | |  |  |
+| `MaintenanceStatus10` |  | |  |  |
+| `MaintenanceStatus11` |  | |  |  |
+| `MaintenanceStatus12` |  | |  |  |
+| `MaintenanceStatus13` |  | |  |  |
+| `MaintenanceStatus14` |  | |  |  |
+| `MaintenanceStatus15` |  | |  |  |
+| `_CreatedByUserContactCard` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Source Code
 

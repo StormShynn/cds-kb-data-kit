@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaxCalculationProcedure` | `TaxCalculationProcedure` |
-| `Language` | `Language` |
-| `PricingProcedureName` | `PricingProcedureName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaxCalculationProcedure` | ✓ | |  |  |
+| `Language` |  | |  |  |
+| `PricingProcedureName` |  | |  |  |
 
 ## Source Code
 

@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShippingPoint` | `ShippingPoint` |
-| `ShippingPointName` | `_Text[1: Language=$session.system_language].ShippingPointName` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShippingPoint` | ✓ | |  |  |
+| `ShippingPointName` |  | |  | `_Text[1: Language=$session.system_language].ShippingPointName` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

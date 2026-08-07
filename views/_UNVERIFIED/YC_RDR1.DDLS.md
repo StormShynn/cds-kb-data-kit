@@ -37,28 +37,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Id` | `Id` |
-| key `Docentry` | `Docentry` |
-| `Itemcode` | `Itemcode` |
-| `Description` | `Description` |
-| `Unit` | `Unit` |
-| `Quantity` | `Quantity` |
-| `Currency` | `Currency` |
-| `Price` | `Price` |
-| `Linetotal` | `Linetotal` |
-| `Whscode` | `Whscode` |
-| `Whsname` | `Whsname` |
-| `Taxcode` | `Taxcode` |
-| `Taxamount` | `Taxamount` |
-| `Freetext` | `Freetext` |
-| `CreatedBy` | `CreatedBy` |
-| `CreatedAt` | `CreatedAt` |
-| `Lastchangedat` | `Lastchangedat` |
-| `DocNum` | `_header.Docnum` |
-| `CardName` | `_header.Cardname` |
-| `_header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Id` | ✓ | |  |  |
+| `Docentry` | ✓ | |  |  |
+| `Itemcode` |  | |  |  |
+| `Description` |  | |  |  |
+| `Unit` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `Currency` |  | |  |  |
+| `Price` |  | |  |  |
+| `Linetotal` |  | |  |  |
+| `Whscode` |  | |  |  |
+| `Whsname` |  | |  |  |
+| `Taxcode` |  | |  |  |
+| `Taxamount` |  | |  |  |
+| `Freetext` |  | |  |  |
+| `CreatedBy` |  | |  |  |
+| `CreatedAt` |  | |  |  |
+| `Lastchangedat` |  | |  |  |
+| `DocNum` |  | | `_header` | `Docnum` |
+| `CardName` |  | | `_header` | `Cardname` |
+| `_header` | | ✓ | | |
 
 ## Source Code
 

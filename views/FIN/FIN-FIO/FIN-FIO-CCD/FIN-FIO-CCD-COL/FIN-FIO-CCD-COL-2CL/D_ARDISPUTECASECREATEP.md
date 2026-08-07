@@ -26,32 +26,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `DisputeCaseCoordinator` | `udm_coordinator` |
-| `DisputeCaseRootCause` | `udm_root_ccode` |
-| `CaseProcessingDeadlineDate` | `udm_due_date` |
-| `CustomerDisputedAmount` | `udm_custdisp_amt` |
-| `CustomerDisputedCurrency` | `udm_custdisp_curr` |
-| `ContactPersonName` | `udm_contact_name` |
-| `ContactPersonEmailAddress` | `udm_contact_email` |
-| `ContactPersonPhoneNumber` | `udm_contact_phone` |
-| `Customer` | `udm_kunnr` |
-| `CompanyCode` | `bukrs` |
-| `CaseExternalReference` | `scmg_ext_ref` |
-| `CasePlannedCloseDate` | `scmg_plan_end_date` |
-| `CaseProcessor` | `scmg_processor` |
-| `CaseResponsible` | `scmg_responsible` |
-| `CaseTitle` | `scmg_case_title` |
-| `CaseEscalationReason` | `scmg_escal_reason` |
-| `CaseCategory` | `scmg_category` |
-| `CasePriority` | `scmg_priority` |
-| `CaseStatus` | `scmgstatusonr` |
-| `CaseReason` | `scmg_reason_code` |
-| `D_ARDsputCaseCrteCustDsputItmP` | `_CustDsputItems : composition [0..*] of D_ARDsputCaseCrteCustDsputItmP` |
-| `D_ARDisputeCaseCrteDsputdItmP` | `_DisputedItems : composition [0..*] of D_ARDisputeCaseCrteDsputdItmP` |
-| `D_ARDisputeCaseCreateNoteP` | `_Notes : composition [0..*] of D_ARDisputeCaseCreateNoteP` |
-| `D_ARDisputeCaseCreateAttchP` | `_Attachments : composition [0..*] of D_ARDisputeCaseCreateAttchP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DisputeCaseCoordinator` |  | |  | `udm_coordinator` |
+| `DisputeCaseRootCause` |  | |  | `udm_root_ccode` |
+| `CaseProcessingDeadlineDate` |  | |  | `udm_due_date` |
+| `CustomerDisputedAmount` |  | |  | `udm_custdisp_amt` |
+| `CustomerDisputedCurrency` |  | |  | `udm_custdisp_curr` |
+| `ContactPersonName` |  | |  | `udm_contact_name` |
+| `ContactPersonEmailAddress` |  | |  | `udm_contact_email` |
+| `ContactPersonPhoneNumber` |  | |  | `udm_contact_phone` |
+| `Customer` |  | |  | `udm_kunnr` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `CaseExternalReference` |  | |  | `scmg_ext_ref` |
+| `CasePlannedCloseDate` |  | |  | `scmg_plan_end_date` |
+| `CaseProcessor` |  | |  | `scmg_processor` |
+| `CaseResponsible` |  | |  | `scmg_responsible` |
+| `CaseTitle` |  | |  | `scmg_case_title` |
+| `CaseEscalationReason` |  | |  | `scmg_escal_reason` |
+| `CaseCategory` |  | |  | `scmg_category` |
+| `CasePriority` |  | |  | `scmg_priority` |
+| `CaseStatus` |  | |  | `scmgstatusonr` |
+| `CaseReason` |  | |  | `scmg_reason_code` |
+| `D_ARDsputCaseCrteCustDsputItmP` |  | |  | `_CustDsputItems : composition [0..*] of D_ARDsputCaseCrteCustDsputItmP` |
+| `D_ARDisputeCaseCrteDsputdItmP` |  | |  | `_DisputedItems : composition [0..*] of D_ARDisputeCaseCrteDsputdItmP` |
+| `D_ARDisputeCaseCreateNoteP` |  | |  | `_Notes : composition [0..*] of D_ARDisputeCaseCreateNoteP` |
+| `D_ARDisputeCaseCreateAttchP` |  | |  | `_Attachments : composition [0..*] of D_ARDisputeCaseCreateAttchP` |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TechObjIsEquipOrFuncnlLoc` | `cast( dd07l.domvalue_l as eams_tec_obj_type_value )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TechObjIsEquipOrFuncnlLoc` | ✓ | |  | `cast( dd07l.domvalue_l as eams_tec_obj_type_value )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

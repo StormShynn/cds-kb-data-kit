@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPElementCategory` | `cast(MRPElementCategory as vdm_delkz preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPElementCategory` | ✓ | |  | `cast(MRPElementCategory as vdm_delkz preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

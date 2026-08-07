@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportZone` | `zone1` |
-| key `CountryCode` | `land1` |
-| key `Language` | `spras` |
-| `TransportZoneDescription` | `vtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportZone` | ✓ | |  | `zone1` |
+| `CountryCode` | ✓ | |  | `land1` |
+| `Language` | ✓ | |  | `spras` |
+| `TransportZoneDescription` |  | |  | `vtext` |
 
 ## Source Code
 

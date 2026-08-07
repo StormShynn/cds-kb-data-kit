@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGEnergyClassification` | `cast( _Source.GHGEnergyClassification as fincs_ghgenergyclassification preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGEnergyClassification` | ✓ | |  | `cast( _Source.GHGEnergyClassification as fincs_ghgenergyclassification preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

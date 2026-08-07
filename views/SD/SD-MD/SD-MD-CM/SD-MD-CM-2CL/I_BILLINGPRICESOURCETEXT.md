@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `BillingPriceSource` | `cast ( substring( domvalue_l, 1, 1 ) as prsqu1 )` |
-| `BillingPriceSourceName` | `cast ( ddtext as price_element_price_srce_descr )` |
-| `_BillingPriceSource` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `BillingPriceSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as prsqu1 )` |
+| `BillingPriceSourceName` |  | |  | `cast ( ddtext as price_element_price_srce_descr )` |
+| `_BillingPriceSource` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

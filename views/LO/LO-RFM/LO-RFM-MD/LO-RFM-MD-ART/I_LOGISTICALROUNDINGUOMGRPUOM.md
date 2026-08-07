@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LogisticalRoundingUoMGroup` | `megru` |
-| key `LogisticalRoundingUoMGroupUoM` | `meins` |
-| `_UnitOfMeasure` | *Association* |
-| `_LogisticalRoundingUoMGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LogisticalRoundingUoMGroup` | ✓ | |  | `megru` |
+| `LogisticalRoundingUoMGroupUoM` | ✓ | |  | `meins` |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_LogisticalRoundingUoMGroup` | | ✓ | | |
 
 ## Associations
 

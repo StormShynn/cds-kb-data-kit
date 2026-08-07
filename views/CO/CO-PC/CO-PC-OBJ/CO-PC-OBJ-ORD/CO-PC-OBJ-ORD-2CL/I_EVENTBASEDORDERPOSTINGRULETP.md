@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EventBasedDistrPostingRuleUUID` | `EventBasedDistrPostingRuleUUID` |
-| `SAPObjectNodeType` | `SAPObjectNodeType` |
-| `ControllingObject` | `ControllingObject` |
-| `ControllingObjectType` | `ControllingObjectType` |
-| `EventBasedDistributionRuleSqnc` | `EventBasedDistributionRuleSqnc` |
-| `EventBasedDistributionType` | `EventBasedDistributionType` |
-| `EvtBsdDistrSourceStructure` | `EvtBsdDistrSourceStructure` |
-| `EvtBsdDistrSourceAssignment` | `EvtBsdDistrSourceAssignment` |
-| `EventBasedDistrRateInPercent` | `EventBasedDistrRateInPercent` |
-| `EvtBsdDistrEquivalenceFactor` | `EvtBsdDistrEquivalenceFactor` |
-| `EventBasedDistributionDfltRule` | `EventBasedDistributionDfltRule` |
-| `EvtBsdDistrTracingFctrDetnMeth` | `EvtBsdDistrTracingFctrDetnMeth` |
-| `MfgOrdNonMatlRcvrAcctDetnMeth` | `MfgOrdNonMatlRcvrAcctDetnMeth` |
-| `OrderID` | `OrderID` |
-| `OrderItem` | `OrderItem` |
-| `OrderCategory` | `OrderCategory` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `PartnerControllingObjectType` | `PartnerControllingObjectType` |
-| `EvtBsdPostingRuleReceiver` | `EvtBsdPostingRuleReceiver` |
-| `EvtBsdPostingRuleReceiverText` | `EvtBsdPostingRuleReceiverText` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `RecentlyChangedDateTime` | `RecentlyChangedDateTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventBasedDistrPostingRuleUUID` | ✓ | |  |  |
+| `SAPObjectNodeType` |  | |  |  |
+| `ControllingObject` |  | |  |  |
+| `ControllingObjectType` |  | |  |  |
+| `EventBasedDistributionRuleSqnc` |  | |  |  |
+| `EventBasedDistributionType` |  | |  |  |
+| `EvtBsdDistrSourceStructure` |  | |  |  |
+| `EvtBsdDistrSourceAssignment` |  | |  |  |
+| `EventBasedDistrRateInPercent` |  | |  |  |
+| `EvtBsdDistrEquivalenceFactor` |  | |  |  |
+| `EventBasedDistributionDfltRule` |  | |  |  |
+| `EvtBsdDistrTracingFctrDetnMeth` |  | |  |  |
+| `MfgOrdNonMatlRcvrAcctDetnMeth` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `OrderItem` |  | |  |  |
+| `OrderCategory` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `PartnerControllingObjectType` |  | |  |  |
+| `EvtBsdPostingRuleReceiver` |  | |  |  |
+| `EvtBsdPostingRuleReceiverText` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `RecentlyChangedDateTime` |  | |  |  |
 
 ## Source Code
 

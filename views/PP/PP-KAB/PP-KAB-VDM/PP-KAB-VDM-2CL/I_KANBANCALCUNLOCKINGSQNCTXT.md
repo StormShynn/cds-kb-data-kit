@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanCalcUnlockingSequence` | `cast(substring(domvalue_l, 1, 1) as rfent)` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `KanbanCalcUnlkngSqncName` | `cast(ddtext as vdm_unlkngseq_text preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_KnbnCalcUnlkngSequence` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanCalcUnlockingSequence` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as rfent)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `KanbanCalcUnlkngSqncName` |  | |  | `cast(ddtext as vdm_unlkngseq_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_KnbnCalcUnlkngSequence` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

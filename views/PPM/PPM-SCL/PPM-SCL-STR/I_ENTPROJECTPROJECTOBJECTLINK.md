@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjectObjectLinkUUID` | `EntProjectObjectLinkUUID` |
-| `ProjectUUID` | `cast( ProjectUUID as /s4ppm/tv_project_uuid preserving type )` |
-| `ProjectElementUUID` | `cast( ProjectElementUUID as /s4ppm/tv_project_element_uuid preserving type )` |
-| `EntProjectObjectLinkType` | `EntProjectObjectLinkType` |
-| `ReferencedObjectUUID` | `cast( ReferencedObjectUUID as /s4ppm/tv_ref_object_uuid preserving type )` |
-| `ReferencedObjectIdentifier` | `ReferencedObjectIdentifier` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `cast( LastChangedByUser as /s4ppm/tv_changed_by preserving type )` |
-| `LastChangeDateTime` | `cast( LastChangeDateTime as abp_lastchange_tstmpl preserving type )` |
-| `_EnterpriseProject` | *Association* |
-| `_ObjectLinkType` | *Association* |
-| `_ObjectLinkTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjectObjectLinkUUID` | ✓ | |  |  |
+| `ProjectUUID` |  | |  | `cast( ProjectUUID as /s4ppm/tv_project_uuid preserving type )` |
+| `ProjectElementUUID` |  | |  | `cast( ProjectElementUUID as /s4ppm/tv_project_element_uuid preserving type )` |
+| `EntProjectObjectLinkType` |  | |  |  |
+| `ReferencedObjectUUID` |  | |  | `cast( ReferencedObjectUUID as /s4ppm/tv_ref_object_uuid preserving type )` |
+| `ReferencedObjectIdentifier` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  | `cast( LastChangedByUser as /s4ppm/tv_changed_by preserving type )` |
+| `LastChangeDateTime` |  | |  | `cast( LastChangeDateTime as abp_lastchange_tstmpl preserving type )` |
+| `_EnterpriseProject` | | ✓ | | |
+| `_ObjectLinkType` | | ✓ | | |
+| `_ObjectLinkTypeText` | | ✓ | | |
 
 ## Associations
 

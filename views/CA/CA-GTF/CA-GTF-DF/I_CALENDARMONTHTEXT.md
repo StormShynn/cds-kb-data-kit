@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CalendarMonth` | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as calendarmonth )` |
-| key `Language` | `dd07t.ddlanguage` |
-| `CalendarMonthName` | `dd07t.ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_CalendarMonth` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CalendarMonth` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as calendarmonth )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `CalendarMonthName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_CalendarMonth` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,73 +28,73 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentNumber` | `opbel` |
-| `CAReconciliationKey` | `fikey` |
-| `CAApplicationArea` | `applk` |
-| `CADocumentType` | `blart` |
-| `CADocumentOriginCode` | `herkf` |
-| `CreatedByUser` | `ernam` |
-| `CreationDate` | `cpudt` |
-| `CreationTime` | `cputm` |
-| `TransactionCurrency` | `waers` |
-| `DocumentDate` | `bldat` |
-| `CAPostingDate` | `budat` |
-| `ExchangeRateDate` | `wwert` |
-| `CAReferenceDocument` | `xblnr` |
-| `CAReturnReason` | `rlgrd` |
-| `CAPostingReason` | `abgrd` |
-| `CASeparateDocIsCreatedInGL` | `xeibh` |
-| `ReferenceDocumentType` | `awtyp` |
-| `OriginalReferenceDocument` | `awkey` |
-| `CAReversedDocumentNumber` | `stbel` |
-| `CADocumentClass` | `bltyp` |
-| `CAClearingInformation` | `aginf` |
-| `CATaxCompanyCode` | `stbuk` |
-| `CAReversalDocumentNumber` | `storb` |
-| `CADocumentSupplements` | `appdx` |
-| `LogicalSystem` | `awsys` |
-| `CADocumentVersion` | `versn` |
-| `CAWorkflowCheckReason` | `c4eye` |
-| `CAWorkflowCheckProcess` | `c4eyp` |
-| `CADocumentTransactionClass` | `tatyp` |
-| `CADocumentTypeForGLTransfer` | `hbbla` |
-| `CADocContainsCashFlowItems` | `xcsha` |
-| `CAStorageLocationOfTaxSuplmnt` | `utloc` |
-| `CATaxCodeWasExchanged` | `xtxch` |
-| `TaxReportingDate` | `vatdate` |
-| `TaxFulfillmentDate` | `fulfilldate` |
-| `CARequestedPeriodForGLTransfer` | `wnper` |
-| `IsIndividualPosting` | `xsing` |
-| `CADocumentIsAged` | `xdaag` |
-| `LastChangeDate` | `chdate` |
-| `LastChangeTime` | `chtime` |
-| `CAInvcgRefPostingDocType` | `cadoctype` |
-| `CAInvoicingDocument` | `invdocno` |
-| `CA1stCountrySpecificReference` | `glo_ref1_hd` |
-| `CAFirstCountrySpecificDate` | `glo_dat1_hd` |
-| `CAClassificationKey` | `opord` |
-| `_AccountingDocType` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CAClearingInformation` | *Association* |
-| `_CADocTransactionClass` | *Association* |
-| `_CADocumentClass` | *Association* |
-| `_CADocumentOriginCode` | *Association* |
-| `_CADocumentSupplement` | *Association* |
-| `_CADocumentType` | *Association* |
-| `_CADocumentVersion` | *Association* |
-| `_CAInvcgDocument` | *Association* |
-| `_CAInvcgRefPostgDocType` | *Association* |
-| `_CAPostingReason` | *Association* |
-| `_CAReturnReason` | *Association* |
-| `_CARequestedSpecialPeriod` | *Association* |
-| `_CATaxSupplementStorageLoc` | *Association* |
-| `_CAWorkflowCheckReason` | *Association* |
-| `_CAWorkflowCheckProcess` | *Association* |
-| `_CATaxCompanyCode` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_CreatedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  | `opbel` |
+| `CAReconciliationKey` |  | |  | `fikey` |
+| `CAApplicationArea` |  | |  | `applk` |
+| `CADocumentType` |  | |  | `blart` |
+| `CADocumentOriginCode` |  | |  | `herkf` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDate` |  | |  | `cpudt` |
+| `CreationTime` |  | |  | `cputm` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `DocumentDate` |  | |  | `bldat` |
+| `CAPostingDate` |  | |  | `budat` |
+| `ExchangeRateDate` |  | |  | `wwert` |
+| `CAReferenceDocument` |  | |  | `xblnr` |
+| `CAReturnReason` |  | |  | `rlgrd` |
+| `CAPostingReason` |  | |  | `abgrd` |
+| `CASeparateDocIsCreatedInGL` |  | |  | `xeibh` |
+| `ReferenceDocumentType` |  | |  | `awtyp` |
+| `OriginalReferenceDocument` |  | |  | `awkey` |
+| `CAReversedDocumentNumber` |  | |  | `stbel` |
+| `CADocumentClass` |  | |  | `bltyp` |
+| `CAClearingInformation` |  | |  | `aginf` |
+| `CATaxCompanyCode` |  | |  | `stbuk` |
+| `CAReversalDocumentNumber` |  | |  | `storb` |
+| `CADocumentSupplements` |  | |  | `appdx` |
+| `LogicalSystem` |  | |  | `awsys` |
+| `CADocumentVersion` |  | |  | `versn` |
+| `CAWorkflowCheckReason` |  | |  | `c4eye` |
+| `CAWorkflowCheckProcess` |  | |  | `c4eyp` |
+| `CADocumentTransactionClass` |  | |  | `tatyp` |
+| `CADocumentTypeForGLTransfer` |  | |  | `hbbla` |
+| `CADocContainsCashFlowItems` |  | |  | `xcsha` |
+| `CAStorageLocationOfTaxSuplmnt` |  | |  | `utloc` |
+| `CATaxCodeWasExchanged` |  | |  | `xtxch` |
+| `TaxReportingDate` |  | |  | `vatdate` |
+| `TaxFulfillmentDate` |  | |  | `fulfilldate` |
+| `CARequestedPeriodForGLTransfer` |  | |  | `wnper` |
+| `IsIndividualPosting` |  | |  | `xsing` |
+| `CADocumentIsAged` |  | |  | `xdaag` |
+| `LastChangeDate` |  | |  | `chdate` |
+| `LastChangeTime` |  | |  | `chtime` |
+| `CAInvcgRefPostingDocType` |  | |  | `cadoctype` |
+| `CAInvoicingDocument` |  | |  | `invdocno` |
+| `CA1stCountrySpecificReference` |  | |  | `glo_ref1_hd` |
+| `CAFirstCountrySpecificDate` |  | |  | `glo_dat1_hd` |
+| `CAClassificationKey` |  | |  | `opord` |
+| `_AccountingDocType` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAClearingInformation` | | ✓ | | |
+| `_CADocTransactionClass` | | ✓ | | |
+| `_CADocumentClass` | | ✓ | | |
+| `_CADocumentOriginCode` | | ✓ | | |
+| `_CADocumentSupplement` | | ✓ | | |
+| `_CADocumentType` | | ✓ | | |
+| `_CADocumentVersion` | | ✓ | | |
+| `_CAInvcgDocument` | | ✓ | | |
+| `_CAInvcgRefPostgDocType` | | ✓ | | |
+| `_CAPostingReason` | | ✓ | | |
+| `_CAReturnReason` | | ✓ | | |
+| `_CARequestedSpecialPeriod` | | ✓ | | |
+| `_CATaxSupplementStorageLoc` | | ✓ | | |
+| `_CAWorkflowCheckReason` | | ✓ | | |
+| `_CAWorkflowCheckProcess` | | ✓ | | |
+| `_CATaxCompanyCode` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
 
 ## Associations
 

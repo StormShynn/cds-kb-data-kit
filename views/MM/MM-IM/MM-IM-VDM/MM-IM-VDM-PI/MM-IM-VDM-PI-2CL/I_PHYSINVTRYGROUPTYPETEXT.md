@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| key `PhysicalInventoryGroupType` | `cast ( substring( domvalue_l, 1, 2 ) as keord preserving type)` |
-| `PhysicalInventoryGroupTypeName` | `cast ( substring ( ddtext, 1, 60 ) as val_text preserving type)` |
-| `_PhysInvtryGroupType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `PhysicalInventoryGroupType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as keord preserving type)` |
+| `PhysicalInventoryGroupTypeName` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as val_text preserving type)` |
+| `_PhysInvtryGroupType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

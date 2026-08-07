@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EU_EDocPaymentMeans` | `cast(dd07t.domvalue_l as edoc_eu_paym_means)` |
-| key `Language` | `ddlanguage` |
-| `EU_EDocPaymentMeansText` | `ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EU_EDocPaymentMeans` | ✓ | |  | `cast(dd07t.domvalue_l as edoc_eu_paym_means)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `EU_EDocPaymentMeansText` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `Country` | `country` |
-| key `Region` | `region` |
-| key `SecondaryRegion` | `county_code` |
-| key `TertiaryRegion` | `township_code` |
-| `TertiaryRegionName` | `township` |
-| `_Country` | *Association* |
-| `_Region` | *Association* |
-| `_SecondaryRegion` | *Association* |
-| `_TertiaryRegion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `Country` | ✓ | |  | `country` |
+| `Region` | ✓ | |  | `region` |
+| `SecondaryRegion` | ✓ | |  | `county_code` |
+| `TertiaryRegion` | ✓ | |  | `township_code` |
+| `TertiaryRegionName` |  | |  | `township` |
+| `_Country` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_SecondaryRegion` | | ✓ | | |
+| `_TertiaryRegion` | | ✓ | | |
 
 ## Associations
 

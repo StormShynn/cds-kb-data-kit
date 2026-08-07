@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanCalcDelInitCtns` | `cast ( right(domvalue_l, 1) as loewn preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanCalcDelInitCtns` | ✓ | |  | `cast ( right(domvalue_l, 1) as loewn preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

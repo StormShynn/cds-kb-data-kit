@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope` | `_Source.GHGScope` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope` | ✓ | | `_Source` | `GHGScope` |
 
 ## Source Code
 

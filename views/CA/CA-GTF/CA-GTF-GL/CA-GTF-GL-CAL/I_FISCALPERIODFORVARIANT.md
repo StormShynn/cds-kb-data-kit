@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYearVariant` | `P_FiscalYearPeriod.fiscal_year_variant` |
-| key `FiscalYear` | `P_FiscalYearPeriod.fiscal_year` |
-| key `FiscalPeriod` | `P_FiscalYearPeriod.fiscal_period` |
-| `FiscalPeriodStartDate` | `P_FiscalYearPeriod.fiscal_period_start_date` |
-| `FiscalPeriodEndDate` | `P_FiscalYearPeriod.fiscal_period_end_date` |
-| `IsSpecialPeriod` | `P_FiscalYearPeriod.is_special_period` |
-| `FiscalYearStartDate` | `P_FiscalYearPeriod.fiscal_year_start_date` |
-| `FiscalYearEndDate` | `P_FiscalYearPeriod.fiscal_year_end_date` |
-| `FiscalYearPeriod` | `P_FiscalYearPeriod.fiscal_year_period` |
-| `NextFiscalPeriod` | `P_FiscalYearPeriod.next_fiscal_period` |
-| `NextFiscalPeriodFiscalYear` | `P_FiscalYearPeriod.next_fiscal_period_fiscal_year` |
-| `_FiscalYearVariant` | *Association* |
-| `_FiscalPeriodStartDate` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  | `fiscal_year_variant` |
+| `FiscalYear` | ✓ | |  | `fiscal_year` |
+| `FiscalPeriod` | ✓ | |  | `fiscal_period` |
+| `FiscalPeriodStartDate` |  | |  | `fiscal_period_start_date` |
+| `FiscalPeriodEndDate` |  | |  | `fiscal_period_end_date` |
+| `IsSpecialPeriod` |  | |  | `is_special_period` |
+| `FiscalYearStartDate` |  | |  | `fiscal_year_start_date` |
+| `FiscalYearEndDate` |  | |  | `fiscal_year_end_date` |
+| `FiscalYearPeriod` |  | |  | `fiscal_year_period` |
+| `NextFiscalPeriod` |  | |  | `next_fiscal_period` |
+| `NextFiscalPeriodFiscalYear` |  | |  | `next_fiscal_period_fiscal_year` |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_FiscalPeriodStartDate` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

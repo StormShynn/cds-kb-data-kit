@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAStatisticalCodeOfOriginItem` | `cast( left( dd07l.domvalue_l,1 ) as astkz_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAStatisticalCodeOfOriginItem` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as astkz_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `edoc_guid` |
-| `PortugueseInvoiceNumber` | `invoice_no` |
-| `PT_ElectronicDocIsSigned` | `sign_exists` |
-| `PT_ElectronicDocRequestID` | `request_id` |
-| `PT_ElectronicDocStatusDate` | `status_issue_date` |
-| `PT_ElectronicDocStatusTime` | `status_issue_time` |
-| `PT_ElectronicDocInvoiceID` | `uuid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |
+| `PortugueseInvoiceNumber` |  | |  | `invoice_no` |
+| `PT_ElectronicDocIsSigned` |  | |  | `sign_exists` |
+| `PT_ElectronicDocRequestID` |  | |  | `request_id` |
+| `PT_ElectronicDocStatusDate` |  | |  | `status_issue_date` |
+| `PT_ElectronicDocStatusTime` |  | |  | `status_issue_time` |
+| `PT_ElectronicDocInvoiceID` |  | |  | `uuid` |
 
 ## Source Code
 

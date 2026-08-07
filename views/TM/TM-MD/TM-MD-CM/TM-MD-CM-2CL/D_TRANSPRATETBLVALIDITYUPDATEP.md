@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TranspRateIncrDecrInPct` | `/scmtms/percentage_amt` |
-| `TranspRateAmountInRateCrcy` | `/scmtms/amount` |
-| `TranspRateValidityCurrency` | `/scmtms/currency` |
-| `TranspRateValidityPctUnit` | `msehi` |
-| `TranspRateSignIncrDecr` | `/scmtms/sign` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateIncrDecrInPct` |  | |  | `/scmtms/percentage_amt` |
+| `TranspRateAmountInRateCrcy` |  | |  | `/scmtms/amount` |
+| `TranspRateValidityCurrency` |  | |  | `/scmtms/currency` |
+| `TranspRateValidityPctUnit` |  | |  | `msehi` |
+| `TranspRateSignIncrDecr` |  | |  | `/scmtms/sign` |
 
 ## Source Code
 

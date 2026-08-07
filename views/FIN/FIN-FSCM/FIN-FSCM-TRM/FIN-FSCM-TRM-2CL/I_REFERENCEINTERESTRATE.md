@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReferenceInterestRate` | `ReferenceInterestRate.referenz` |
-| `EffectiveDate` | `ReferenceInterestRate.datab` |
-| `Currency` | `ReferenceInterestRate.waers` |
-| `LongText` | `ReferenceInterestRate.zilabez` |
-| `TextDescription` | `ReferenceInterestRate.zikubez` |
-| `RefIntrstRateTenorTerm` | `ReferenceInterestRate.laufzeit` |
-| `RefIntrstRateTenorTermUnit` | `ReferenceInterestRate.masseinh` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceInterestRate` | ✓ | |  | `referenz` |
+| `EffectiveDate` |  | |  | `datab` |
+| `Currency` |  | |  | `waers` |
+| `LongText` |  | |  | `zilabez` |
+| `TextDescription` |  | |  | `zikubez` |
+| `RefIntrstRateTenorTerm` |  | |  | `laufzeit` |
+| `RefIntrstRateTenorTermUnit` |  | |  | `masseinh` |
 
 ## Source Code
 

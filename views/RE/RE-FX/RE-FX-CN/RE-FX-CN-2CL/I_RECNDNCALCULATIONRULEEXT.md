@@ -28,38 +28,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RECalculationRule` | `calcruleext` |
-| `REInternalCalculationRule` | `calcruleint` |
-| `RECalculationRuleParam1` | `calcrulepara1` |
-| `RERuleFieldModifSttg1` | `calcrulepamocu1` |
-| `RERuleFieldModifAppl1` | `calcrulepamoap1` |
-| `RECalculationRuleParam2` | `calcrulepara2` |
-| `RERuleFieldModifSttg2` | `calcrulepamocu2` |
-| `RERuleFieldModifAppl2` | `calcrulepamoap2` |
-| `REDistributionIsIndependent` | `calcrulenodist` |
-| `REDistributionRule` | `distruleext` |
-| `RECalculationRuleIsModifiable` | `calcrulemod` |
-| `REUnitPriceRoundingType` | `roundtype` |
-| `REUnitPriceNmbrOfDcmlsToRound` | `rounddecimal` |
-| `REUnitPriceRoundingThreshold` | `roundunit` |
-| `RECndnAmountRoundingType` | `caroundtype` |
-| `RECndnAmountNmbrOfDcmlsToRound` | `carounddecimal` |
-| `RECndnAmountRoundingThreshold` | `caroundunit` |
-| `REGrossOrNetRounding` | `caroundgrne` |
-| `REFullDistributionRule` | `distcomplete` |
-| `_Text` | *Association* |
-| `_RECndnCalculationRuleInt` | *Association* |
-| `_RERuleFieldModifSttg1` | *Association* |
-| `_RERuleFieldModifSttg2` | *Association* |
-| `_RERuleFieldModifAppl1` | *Association* |
-| `_RERuleFieldModifAppl2` | *Association* |
-| `_RECndnDistributionRuleExt` | *Association* |
-| `_RERoundingTypeForUnitPrc` | *Association* |
-| `_RERoundingTypeForCndnAmt` | *Association* |
-| `_REGrossOrNetRounding` | *Association* |
-| `_REFullDistributionRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RECalculationRule` | ✓ | |  | `calcruleext` |
+| `REInternalCalculationRule` |  | |  | `calcruleint` |
+| `RECalculationRuleParam1` |  | |  | `calcrulepara1` |
+| `RERuleFieldModifSttg1` |  | |  | `calcrulepamocu1` |
+| `RERuleFieldModifAppl1` |  | |  | `calcrulepamoap1` |
+| `RECalculationRuleParam2` |  | |  | `calcrulepara2` |
+| `RERuleFieldModifSttg2` |  | |  | `calcrulepamocu2` |
+| `RERuleFieldModifAppl2` |  | |  | `calcrulepamoap2` |
+| `REDistributionIsIndependent` |  | |  | `calcrulenodist` |
+| `REDistributionRule` |  | |  | `distruleext` |
+| `RECalculationRuleIsModifiable` |  | |  | `calcrulemod` |
+| `REUnitPriceRoundingType` |  | |  | `roundtype` |
+| `REUnitPriceNmbrOfDcmlsToRound` |  | |  | `rounddecimal` |
+| `REUnitPriceRoundingThreshold` |  | |  | `roundunit` |
+| `RECndnAmountRoundingType` |  | |  | `caroundtype` |
+| `RECndnAmountNmbrOfDcmlsToRound` |  | |  | `carounddecimal` |
+| `RECndnAmountRoundingThreshold` |  | |  | `caroundunit` |
+| `REGrossOrNetRounding` |  | |  | `caroundgrne` |
+| `REFullDistributionRule` |  | |  | `distcomplete` |
+| `_Text` | | ✓ | | |
+| `_RECndnCalculationRuleInt` | | ✓ | | |
+| `_RERuleFieldModifSttg1` | | ✓ | | |
+| `_RERuleFieldModifSttg2` | | ✓ | | |
+| `_RERuleFieldModifAppl1` | | ✓ | | |
+| `_RERuleFieldModifAppl2` | | ✓ | | |
+| `_RECndnDistributionRuleExt` | | ✓ | | |
+| `_RERoundingTypeForUnitPrc` | | ✓ | | |
+| `_RERoundingTypeForCndnAmt` | | ✓ | | |
+| `_REGrossOrNetRounding` | | ✓ | | |
+| `_REFullDistributionRule` | | ✓ | | |
 
 ## Associations
 

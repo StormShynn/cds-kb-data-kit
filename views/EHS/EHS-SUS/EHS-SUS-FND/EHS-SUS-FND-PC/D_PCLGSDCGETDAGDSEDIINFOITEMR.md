@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProdCmplncLogsDocumentItem` | `ehfnd_log_doc_posnr` |
-| `Product` | `ehfnd_mat_id` |
-| `DangerousGoodsEDIControllerTxt` | `dangerousgoodsedicontrollertxt` |
-| `DangerousGoodsEDIBasicInfoTxt` | `dangerousgoodsedibasicinfotxt` |
-| `DngrsGoodsEDIExtendedInfoTxt` | `dngrsgoodsediextendedinfotxt` |
-| `DngrsGdsEDIRlvtRegulationsTxt` | `dngrsgdsedirlvtregulationstxt` |
-| `_Root` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocumentItem` |  | |  | `ehfnd_log_doc_posnr` |
+| `Product` |  | |  | `ehfnd_mat_id` |
+| `DangerousGoodsEDIControllerTxt` |  | |  | `dangerousgoodsedicontrollertxt` |
+| `DangerousGoodsEDIBasicInfoTxt` |  | |  | `dangerousgoodsedibasicinfotxt` |
+| `DngrsGoodsEDIExtendedInfoTxt` |  | |  | `dngrsgoodsediextendedinfotxt` |
+| `DngrsGdsEDIRlvtRegulationsTxt` |  | |  | `dngrsgdsedirlvtregulationstxt` |
+| `_Root` | | ✓ | | |
 
 ## Source Code
 

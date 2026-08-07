@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryCategory` | `SUBSTRING(dd07l.domvalue_l, 1, 2)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryCategory` | ✓ | |  | `SUBSTRING(dd07l.domvalue_l, 1, 2)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

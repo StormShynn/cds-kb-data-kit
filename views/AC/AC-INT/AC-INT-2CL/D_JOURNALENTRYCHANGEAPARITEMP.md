@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `GLAccountLineItem` | `docln6` |
-| `DocumentItemText` | `sgtxt` |
-| `AssignmentReference` | `dzuonr` |
-| `SpecialGLAccountAssignment` | `hzuon` |
-| `Reference1IDByBusinessPartner` | `xref1` |
-| `Reference2IDByBusinessPartner` | `xref2` |
-| `Reference3IDByBusinessPartner` | `xref3` |
-| `BPBankAccountInternalID` | `bvtyp` |
-| `HouseBank` | `hbkid` |
-| `HouseBankAccount` | `hktid` |
-| `InvoiceReference` | `rebzg` |
-| `InvoiceReferenceFiscalYear` | `rebzj` |
-| `InvoiceItemReference` | `rebzz` |
-| `PaymentCurrency` | `pycur` |
-| `pyamt` | `} AmountInPaymentCurrency : pyamt` |
-| `LastDunningDate` | `madat` |
-| `DunningBlockingReason` | `mansp` |
-| `DunningLevel` | `mahns_d` |
-| `DunningKey` | `mschl` |
-| `PaymentTerms` | `dzterm` |
-| `DueCalculationBaseDate` | `dzfbdt` |
-| `CashDiscount1Days` | `dzbd1t` |
-| `CashDiscount2Days` | `dzbd2t` |
-| `NetPaymentDays` | `dzbd3t` |
-| `CashDiscount1Percent` | `dzbd1p` |
-| `CashDiscount2Percent` | `dzbd2p` |
-| `PaymentMethod` | `dzlsch` |
-| `PaymentBlockingReason` | `dzlspr` |
-| `FixedCashDiscount` | `dzbfix` |
-| `PaymentDifferenceReason` | `rstgr` |
-| `_JournalEntryChange` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountLineItem` |  | |  | `docln6` |
+| `DocumentItemText` |  | |  | `sgtxt` |
+| `AssignmentReference` |  | |  | `dzuonr` |
+| `SpecialGLAccountAssignment` |  | |  | `hzuon` |
+| `Reference1IDByBusinessPartner` |  | |  | `xref1` |
+| `Reference2IDByBusinessPartner` |  | |  | `xref2` |
+| `Reference3IDByBusinessPartner` |  | |  | `xref3` |
+| `BPBankAccountInternalID` |  | |  | `bvtyp` |
+| `HouseBank` |  | |  | `hbkid` |
+| `HouseBankAccount` |  | |  | `hktid` |
+| `InvoiceReference` |  | |  | `rebzg` |
+| `InvoiceReferenceFiscalYear` |  | |  | `rebzj` |
+| `InvoiceItemReference` |  | |  | `rebzz` |
+| `PaymentCurrency` |  | |  | `pycur` |
+| `pyamt` |  | |  | `} AmountInPaymentCurrency : pyamt` |
+| `LastDunningDate` |  | |  | `madat` |
+| `DunningBlockingReason` |  | |  | `mansp` |
+| `DunningLevel` |  | |  | `mahns_d` |
+| `DunningKey` |  | |  | `mschl` |
+| `PaymentTerms` |  | |  | `dzterm` |
+| `DueCalculationBaseDate` |  | |  | `dzfbdt` |
+| `CashDiscount1Days` |  | |  | `dzbd1t` |
+| `CashDiscount2Days` |  | |  | `dzbd2t` |
+| `NetPaymentDays` |  | |  | `dzbd3t` |
+| `CashDiscount1Percent` |  | |  | `dzbd1p` |
+| `CashDiscount2Percent` |  | |  | `dzbd2p` |
+| `PaymentMethod` |  | |  | `dzlsch` |
+| `PaymentBlockingReason` |  | |  | `dzlspr` |
+| `FixedCashDiscount` |  | |  | `dzbfix` |
+| `PaymentDifferenceReason` |  | |  | `rstgr` |
+| `_JournalEntryChange` | | ✓ | | |
 
 ## Source Code
 

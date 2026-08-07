@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionClass` | `cast ( substring( domvalue_l, 1, 1 ) as koaid )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionClass` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as koaid )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

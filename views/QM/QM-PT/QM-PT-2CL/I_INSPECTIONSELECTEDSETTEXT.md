@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SelectedCodeSetPlant` | `qpamtxt.werks` |
-| key `InspectionCatalog` | `qpamtxt.katalogart` |
-| key `SelectedCodeSet` | `qpamtxt.auswahlmge` |
-| key `Language` | `qpamtxt.language` |
-| `SelectedCodeSetText` | `cast( qpamtxt.ktx01 as vdm_qktextam preserving type )` |
-| `_SelectedSetPlant` | *Association* |
-| `_InspectionCatalog` | *Association* |
-| `_InspectionSelectedSet` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SelectedCodeSetPlant` | ✓ | |  | `werks` |
+| `InspectionCatalog` | ✓ | |  | `katalogart` |
+| `SelectedCodeSet` | ✓ | |  | `auswahlmge` |
+| `Language` | ✓ | |  | `language` |
+| `SelectedCodeSetText` |  | |  | `cast( qpamtxt.ktx01 as vdm_qktextam preserving type )` |
+| `_SelectedSetPlant` | | ✓ | | |
+| `_InspectionCatalog` | | ✓ | | |
+| `_InspectionSelectedSet` | | ✓ | | |
 
 ## Associations
 

@@ -27,23 +27,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
-| key `VarConfignInstceBusObjectKey` | `VarConfignInstceBusObjectKey` |
-| key `VarConfignInstceBusObjectType` | `VarConfignInstceBusObjectType` |
-| key `VariantConfigurationInstance` | `VariantConfigurationInstance` |
-| key `CharcInternalID` | `CharcInternalID` |
-| key `CharcValue` | `CharcValue` |
-| key `CharcFromNumericValue` | `CharcFromNumericValue` |
-| key `CharcToNumericValue` | `CharcToNumericValue` |
-| `CharcReferenceTable` | `CharcReferenceTable` |
-| `CharcReferenceTableField` | `CharcReferenceTableField` |
-| `Characteristic` | `Characteristic` |
-| `VariantConfigurationDate` | `VariantConfigurationDate` |
-| `_BusinessSolutionOrderItemTP` | *Association* |
-| `_BusinessSolutionOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |
+| `VarConfignInstceBusObjectKey` | ✓ | |  |  |
+| `VarConfignInstceBusObjectType` | ✓ | |  |  |
+| `VariantConfigurationInstance` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `CharcValue` | ✓ | |  |  |
+| `CharcFromNumericValue` | ✓ | |  |  |
+| `CharcToNumericValue` | ✓ | |  |  |
+| `CharcReferenceTable` |  | |  |  |
+| `CharcReferenceTableField` |  | |  |  |
+| `Characteristic` |  | |  |  |
+| `VariantConfigurationDate` |  | |  |  |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
 
 ## Source Code
 

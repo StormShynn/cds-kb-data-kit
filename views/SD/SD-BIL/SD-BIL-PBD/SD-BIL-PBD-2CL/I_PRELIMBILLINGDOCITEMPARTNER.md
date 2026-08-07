@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrelimBillingDocument` | `cast( Partner.BillingDocument as prelim_billing_document preserving type )` |
-| `PrelimBillingDocumentItem` | `}] key cast( Partner.BillingDocumentItem as prelim_billing_document_item preserving type )` |
-| key `PartnerFunction` | `cast(Partner.PartnerFunction as parvw_unv preserving type )` |
-| `Customer` | `Partner.Customer` |
-| `Supplier` | `Partner.Supplier` |
-| `Personnel` | `Partner.Personnel` |
-| `AddressID` | `Partner.AddressID` |
-| `ContactPerson` | `Partner.ContactPerson` |
-| `AddressPersonID` | `Partner.AddressPersonID` |
-| `_PrelimBillingDocument` | *Association* |
-| `_Item` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrelimBillingDocument` | ✓ | |  | `cast( Partner.BillingDocument as prelim_billing_document preserving type )` |
+| `PrelimBillingDocumentItem` |  | |  | `}] key cast( Partner.BillingDocumentItem as prelim_billing_document_item preserving type )` |
+| `PartnerFunction` | ✓ | |  | `cast(Partner.PartnerFunction as parvw_unv preserving type )` |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `_PrelimBillingDocument` | | ✓ | | |
+| `_Item` | | ✓ | | |
 
 ## Associations
 

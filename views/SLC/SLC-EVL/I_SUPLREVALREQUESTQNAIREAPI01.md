@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalReqQuestionnaireUUID` | `SuplrEvalReqQuestionnaireUUID` |
-| `SuplrEvalReqUUID` | `SuplrEvalReqUUID` |
-| `SuplrEvalOrdinalNumber` | `SuplrEvalOrdinalNumber` |
-| `QuestionnaireName` | `QuestionnaireName` |
-| `IsScoringRelevant` | `IsScoringRelevant` |
-| `WeightingFactor` | `WeightingFactor` |
-| `MinimalScore` | `MinimalScore` |
-| `TargetScore` | `TargetScore` |
-| `CalculatedScore` | `CalculatedScore` |
-| `NumberOfResponses` | `NumberOfResponses` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalReqQuestionnaireUUID` | ✓ | |  |  |
+| `SuplrEvalReqUUID` |  | |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |
+| `QuestionnaireName` |  | |  |  |
+| `IsScoringRelevant` |  | |  |  |
+| `WeightingFactor` |  | |  |  |
+| `MinimalScore` |  | |  |  |
+| `TargetScore` |  | |  |  |
+| `CalculatedScore` |  | |  |  |
+| `NumberOfResponses` |  | |  |  |
 
 ## Source Code
 

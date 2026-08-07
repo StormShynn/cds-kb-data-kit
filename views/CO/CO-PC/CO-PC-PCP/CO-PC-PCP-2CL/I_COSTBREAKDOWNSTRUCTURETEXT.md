@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `CostBreakdownStructure` | `cost_comp_struc` |
-| `CostBreakdownStructureName` | `name` |
-| `_CostBreakdownStructure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `CostBreakdownStructure` | ✓ | |  | `cost_comp_struc` |
+| `CostBreakdownStructureName` |  | |  | `name` |
+| `_CostBreakdownStructure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

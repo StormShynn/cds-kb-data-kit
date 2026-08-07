@@ -34,16 +34,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `client` | `units_of_measurement.mandt` |
-| `unit_of_measurement` | `units_of_measurement.msehi` |
-| `iso_code` | `units_of_measurement.isocode` |
-| `language` | `units_of_measurement_texts.spras` |
-| `commercial_format` | `units_of_measurement_texts.mseh3` |
-| `technical_format` | `units_of_measurement_texts.mseh6` |
-| `short_text` | `units_of_measurement_texts.mseht` |
-| `long_text` | `units_of_measurement_texts.msehl` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `client` |  | |  | `mandt` |
+| `unit_of_measurement` |  | |  | `msehi` |
+| `iso_code` |  | |  | `isocode` |
+| `language` |  | |  | `spras` |
+| `commercial_format` |  | |  | `mseh3` |
+| `technical_format` |  | |  | `mseh6` |
+| `short_text` |  | |  | `mseht` |
+| `long_text` |  | |  | `msehl` |
 
 ## Source Code
 

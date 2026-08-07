@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrderTemplate` | `ServiceOrderTemplate` |
-| key `CustMgmtPartnerFunction` | `CustMgmtPartnerFunction` |
-| key `CustMgmtBusinessPartner` | `CustMgmtBusinessPartner` |
-| `CustMgmtPartnerIsMainPartner` | `CustMgmtPartnerIsMainPartner` |
-| `_BusinessPartner` | *Association* |
-| `_PartnerFunction` | *Association* |
-| `_ServiceOrderTemplateTP` | *Association* |
-| `_SrvcOrdTmplPartnerAddressTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrderTemplate` | ✓ | |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |
+| `CustMgmtPartnerIsMainPartner` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_PartnerFunction` | | ✓ | | |
+| `_ServiceOrderTemplateTP` | | ✓ | | |
+| `_SrvcOrdTmplPartnerAddressTP` | | ✓ | | |
 
 ## Source Code
 

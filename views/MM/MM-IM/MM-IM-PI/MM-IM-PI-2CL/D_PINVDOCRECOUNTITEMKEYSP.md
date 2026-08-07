@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PhysicalInventoryDocumentItem` | `pi_item_number` |
-| `_RecountSettings` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PhysicalInventoryDocumentItem` |  | |  | `pi_item_number` |
+| `_RecountSettings` | | ✓ | | |
 
 ## Source Code
 

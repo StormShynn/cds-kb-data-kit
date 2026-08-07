@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PhysInvtryDeletionStatus` | `cast ( substring( domvalue_l, 1, 1 ) as pi_hdr_deletion_status_code preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PhysInvtryDeletionStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as pi_hdr_deletion_status_code preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

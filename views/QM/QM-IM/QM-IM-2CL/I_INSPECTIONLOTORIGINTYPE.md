@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLotOrigin` | `cast( tq32.herkunft as vdm_qherk preserving type )` |
-| key `InspectionLotOriginVariant` | `tq32.variante` |
-| `InspectionLotType` | `tq32.art` |
-| `_InspectionLotOrigin` | *Association* |
-| `_InspectionLotType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLotOrigin` | ✓ | |  | `cast( tq32.herkunft as vdm_qherk preserving type )` |
+| `InspectionLotOriginVariant` | ✓ | |  | `variante` |
+| `InspectionLotType` |  | |  | `art` |
+| `_InspectionLotOrigin` | | ✓ | | |
+| `_InspectionLotType` | | ✓ | | |
 
 ## Associations
 

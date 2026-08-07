@@ -27,28 +27,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateDimensionUUID` | `cast(db_key as /scmtms/transprate_dim_uuid preserving type)` |
-| `TranspRateValidityUUID` | `cast(parent_key as /scmtms/transprate_val_uuid preserving type)` |
-| `TransportationRateUUID` | `cast(root_key as /scmtms/transpratetable_uuid preserving type)` |
-| `TranspRateDimnScaleItem01UUID` | `cast(scale_item_key01 as /scmtms/vdm_sc_item_01_uuid preserving type)` |
-| `TranspRateDimnScaleItem02UUID` | `cast(scale_item_key02 as /scmtms/vdm_sc_item_02_uuid preserving type)` |
-| `TranspRateDimnScaleItem03UUID` | `cast(scale_item_key03 as /scmtms/vdm_sc_item_03_uuid preserving type)` |
-| `TranspRateDimnScaleItem04UUID` | `cast(scale_item_key04 as /scmtms/vdm_sc_item_04_uuid preserving type)` |
-| `TranspRateDimnScaleItem05UUID` | `cast(scale_item_key05 as /scmtms/vdm_sc_item_05_uuid preserving type)` |
-| `TranspRateDimnScaleItem06UUID` | `cast(scale_item_key06 as /scmtms/vdm_sc_item_06_uuid preserving type)` |
-| `TranspRateDimnScaleItem07UUID` | `cast(scale_item_key07 as /scmtms/vdm_sc_item_07_uuid preserving type)` |
-| `TranspRateDimnScaleItem08UUID` | `cast(scale_item_key08 as /scmtms/vdm_sc_item_08_uuid preserving type)` |
-| `TranspRateDimnScaleItem09UUID` | `cast(scale_item_key09 as /scmtms/vdm_sc_item_09_uuid preserving type)` |
-| `TranspRateDimnScaleItem10UUID` | `cast(scale_item_key10 as /scmtms/vdm_sc_item_10_uuid preserving type)` |
-| `TranspRateDimnScaleItem11UUID` | `cast(scale_item_key11 as /scmtms/vdm_sc_item_11_uuid preserving type)` |
-| `TranspRateDimnScaleItem12UUID` | `cast(scale_item_key12 as /scmtms/vdm_sc_item_12_uuid preserving type)` |
-| `TransportationRateCurrency` | `rate_curr` |
-| `TranspRateAmountInRateCrcy` | `cast(cast( rate as abap.dec(31,6) ) * 10000 as /scmtms/vdm_rt_amt_in_rt_curr)` |
-| `_TransportationRateCurrency` | *Association* |
-| `_TransportationRate` | *Association* |
-| `_TransportationRateValidity` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateDimensionUUID` | ✓ | |  | `cast(db_key as /scmtms/transprate_dim_uuid preserving type)` |
+| `TranspRateValidityUUID` |  | |  | `cast(parent_key as /scmtms/transprate_val_uuid preserving type)` |
+| `TransportationRateUUID` |  | |  | `cast(root_key as /scmtms/transpratetable_uuid preserving type)` |
+| `TranspRateDimnScaleItem01UUID` |  | |  | `cast(scale_item_key01 as /scmtms/vdm_sc_item_01_uuid preserving type)` |
+| `TranspRateDimnScaleItem02UUID` |  | |  | `cast(scale_item_key02 as /scmtms/vdm_sc_item_02_uuid preserving type)` |
+| `TranspRateDimnScaleItem03UUID` |  | |  | `cast(scale_item_key03 as /scmtms/vdm_sc_item_03_uuid preserving type)` |
+| `TranspRateDimnScaleItem04UUID` |  | |  | `cast(scale_item_key04 as /scmtms/vdm_sc_item_04_uuid preserving type)` |
+| `TranspRateDimnScaleItem05UUID` |  | |  | `cast(scale_item_key05 as /scmtms/vdm_sc_item_05_uuid preserving type)` |
+| `TranspRateDimnScaleItem06UUID` |  | |  | `cast(scale_item_key06 as /scmtms/vdm_sc_item_06_uuid preserving type)` |
+| `TranspRateDimnScaleItem07UUID` |  | |  | `cast(scale_item_key07 as /scmtms/vdm_sc_item_07_uuid preserving type)` |
+| `TranspRateDimnScaleItem08UUID` |  | |  | `cast(scale_item_key08 as /scmtms/vdm_sc_item_08_uuid preserving type)` |
+| `TranspRateDimnScaleItem09UUID` |  | |  | `cast(scale_item_key09 as /scmtms/vdm_sc_item_09_uuid preserving type)` |
+| `TranspRateDimnScaleItem10UUID` |  | |  | `cast(scale_item_key10 as /scmtms/vdm_sc_item_10_uuid preserving type)` |
+| `TranspRateDimnScaleItem11UUID` |  | |  | `cast(scale_item_key11 as /scmtms/vdm_sc_item_11_uuid preserving type)` |
+| `TranspRateDimnScaleItem12UUID` |  | |  | `cast(scale_item_key12 as /scmtms/vdm_sc_item_12_uuid preserving type)` |
+| `TransportationRateCurrency` |  | |  | `rate_curr` |
+| `TranspRateAmountInRateCrcy` |  | |  | `cast(cast( rate as abap.dec(31,6) ) * 10000 as /scmtms/vdm_rt_amt_in_rt_curr)` |
+| `_TransportationRateCurrency` | | ✓ | | |
+| `_TransportationRate` | | ✓ | | |
+| `_TransportationRateValidity` | | ✓ | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PhysicalInventoryGroupType` | `cast ( substring( domvalue_l, 1, 2 ) as keord preserving type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PhysicalInventoryGroupType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as keord preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

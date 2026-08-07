@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `simpleType` | `cast( enum.simpleType as abap.char(30) )` |
-| key `enumIdentifier` | `cast( enum.enumIdentifier as abap.char(30) )` |
-| key `enumValue` | `cast( enum.enumValue as abap.char(3) )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `simpleType` | ✓ | |  | `cast( enum.simpleType as abap.char(30) )` |
+| `enumIdentifier` | ✓ | |  | `cast( enum.enumIdentifier as abap.char(30) )` |
+| `enumValue` | ✓ | |  | `cast( enum.enumValue as abap.char(3) )` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

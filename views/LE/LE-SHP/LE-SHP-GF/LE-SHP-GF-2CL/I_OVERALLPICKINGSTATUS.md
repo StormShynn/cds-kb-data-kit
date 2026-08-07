@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallPickingStatus` | `cast(left(dd07l.domvalue_l, 1 ) as kostk preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallPickingStatus` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as kostk preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

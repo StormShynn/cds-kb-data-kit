@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityInternalID` | `CapacityInternalID` |
-| `Plant` | `Plant` |
-| `Capacity` | `Capacity` |
-| `CapacityCategoryCode` | `CapacityCategoryCode` |
-| `CapacityActiveVersion` | `CapacityActiveVersion` |
-| `CapacityIsFinite` | `CapacityIsFinite` |
-| `CapacityIsPooled` | `CapacityIsPooled` |
-| `CapacityHasIndivCapacities` | `CapacityHasIndivCapacities` |
-| `CapacityIsExcldFrmLongTermPlng` | `CapacityIsExcldFrmLongTermPlng` |
-| `CapacityNumberOfCapacities` | `CapacityNumberOfCapacities` |
-| `CapacityResponsiblePlanner` | `CapacityResponsiblePlanner` |
-| `CapacityPlanUtilizationPercent` | `CapacityPlanUtilizationPercent` |
-| `CapacityBreakDuration` | `CapacityBreakDuration` |
-| `CapIsUsedInMultiOperations` | `CapIsUsedInMultiOperations` |
-| `ReferencedCapacityInternalID` | `ReferencedCapacityInternalID` |
-| `CapOverloadThresholdInPercent` | `CapOverloadThresholdInPercent` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `ShiftGroup` | `ShiftGroup` |
-| `CapacityStartTimeID` | `CapacityStartTimeID` |
-| `CapacityEndTimeID` | `CapacityEndTimeID` |
-| `CapacityQuantityUnit` | `CapacityQuantityUnit` |
-| `CapacityBaseQtyUnit` | `CapacityBaseQtyUnit` |
-| `CapacityLastChangeDateTime` | `CapacityLastChangeDateTime` |
-| `_Interval` | *Association* |
-| `_Description` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  |  |
+| `Plant` |  | |  |  |
+| `Capacity` |  | |  |  |
+| `CapacityCategoryCode` |  | |  |  |
+| `CapacityActiveVersion` |  | |  |  |
+| `CapacityIsFinite` |  | |  |  |
+| `CapacityIsPooled` |  | |  |  |
+| `CapacityHasIndivCapacities` |  | |  |  |
+| `CapacityIsExcldFrmLongTermPlng` |  | |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |
+| `CapacityResponsiblePlanner` |  | |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |
+| `CapacityBreakDuration` |  | |  |  |
+| `CapIsUsedInMultiOperations` |  | |  |  |
+| `ReferencedCapacityInternalID` |  | |  |  |
+| `CapOverloadThresholdInPercent` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `ShiftGroup` |  | |  |  |
+| `CapacityStartTimeID` |  | |  |  |
+| `CapacityEndTimeID` |  | |  |  |
+| `CapacityQuantityUnit` |  | |  |  |
+| `CapacityBaseQtyUnit` |  | |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |
+| `_Interval` | | ✓ | | |
+| `_Description` | | ✓ | | |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurReqnOrResvnGeneration` | `cast ( domvalue_l as audisp_plus )` |
-| `_PurReqnOrResvnGenerationText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurReqnOrResvnGeneration` | ✓ | |  | `cast ( domvalue_l as audisp_plus )` |
+| `_PurReqnOrResvnGenerationText` | | ✓ | | |
 
 ## Associations
 

@@ -28,61 +28,61 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionPlanGroup` | `BillOfOperationsGroup` |
-| key `InspectionPlan` | `BillOfOperationsVariant` |
-| key `InspectionPlanInternalVersion` | `BOOInternalVersionCounter` |
-| `BillOfOperationsType` | `BillOfOperationsType` |
-| `IsDeleted` | `IsDeleted` |
-| `IsImplicitlyDeleted` | `IsImplicitlyDeleted` |
-| `BillOfOperationsDesc` | `BillOfOperationsDesc` |
-| `Plant` | `Plant` |
-| `BillOfOperationsUsage` | `BillOfOperationsUsage` |
-| `BillOfOperationsStatus` | `BillOfOperationsStatus` |
-| `ResponsiblePlannerGroup` | `ResponsiblePlannerGroup` |
-| `MinimumLotSizeQuantity` | `MinimumLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `MaximumLotSizeQuantity` |
-| `BillOfOperationsUnit` | `BillOfOperationsUnit` |
-| `ReplacedBillOfOperations` | `ReplacedBillOfOperations` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `InspSubsetFieldCombination` | `InspSubsetFieldCombination` |
-| `InspectionPartialLotAssignment` | `InspectionPartialLot` |
-| `SmplDrawingProcedure` | `SmplDrawingProcedure` |
-| `SmplDrawingProcedureVersion` | `SmplDrawingProcedureVersion` |
-| `InspectionLotDynamicLevel` | `InspectionLotDynamicLevel` |
-| `InspLotDynamicRule` | `InspLotDynamicRule` |
-| `InspExternalNumberingOfValues` | `InspExternalNumberingOfValues` |
-| `InspLotDynamicCriteria` | `InspLotDynamicCriteria` |
-| `InspPlanHasMultipleSpec` | `InspPlanHasMultipleSpec` |
-| `MatlIsConsideredForDynModif` | `cast( substring(InspLotDynamicCriteria,1,1) as qmatkz preserving type )` |
-| `SuplrIsConsideredForDynModif` | `cast( substring(InspLotDynamicCriteria,2,1) as qlifkz preserving type )` |
-| `MfrIsConsideredForDynModif` | `cast( substring(InspLotDynamicCriteria,3,1) as qherstkz preserving type )` |
-| `CustIsConsideredForDynModif` | `cast( substring(InspLotDynamicCriteria,4,1) as qkundkz preserving type )` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_InspectionPlan` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_Plant` | *Association* |
-| `_BillOfOperationsUsage` | *Association* |
-| `_BillOfOperationsStatus` | *Association* |
-| `_ResponsiblePlannerGroup` | *Association* |
-| `_BillOfOperationsUnit` | *Association* |
-| `_InspSubsetFieldCombination` | *Association* |
-| `_SampleDrawingProcedure` | *Association* |
-| `_SmplDrwgProcedureVersion` | *Association* |
-| `_InspectionLotDynamicLevel` | *Association* |
-| `_InspLotDynamicRule` | *Association* |
-| `_InspExtNumbering` | *Association* |
-| `_ChangeMaster` | *Association* |
-| `_InspPartialLotAssignment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  | `BillOfOperationsGroup` |
+| `InspectionPlan` | ✓ | |  | `BillOfOperationsVariant` |
+| `InspectionPlanInternalVersion` | ✓ | |  | `BOOInternalVersionCounter` |
+| `BillOfOperationsType` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |
+| `BillOfOperationsDesc` |  | |  |  |
+| `Plant` |  | |  |  |
+| `BillOfOperationsUsage` |  | |  |  |
+| `BillOfOperationsStatus` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `BillOfOperationsUnit` |  | |  |  |
+| `ReplacedBillOfOperations` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `InspSubsetFieldCombination` |  | |  |  |
+| `InspectionPartialLotAssignment` |  | |  | `InspectionPartialLot` |
+| `SmplDrawingProcedure` |  | |  |  |
+| `SmplDrawingProcedureVersion` |  | |  |  |
+| `InspectionLotDynamicLevel` |  | |  |  |
+| `InspLotDynamicRule` |  | |  |  |
+| `InspExternalNumberingOfValues` |  | |  |  |
+| `InspLotDynamicCriteria` |  | |  |  |
+| `InspPlanHasMultipleSpec` |  | |  |  |
+| `MatlIsConsideredForDynModif` |  | |  | `cast( substring(InspLotDynamicCriteria,1,1) as qmatkz preserving type )` |
+| `SuplrIsConsideredForDynModif` |  | |  | `cast( substring(InspLotDynamicCriteria,2,1) as qlifkz preserving type )` |
+| `MfrIsConsideredForDynModif` |  | |  | `cast( substring(InspLotDynamicCriteria,3,1) as qherstkz preserving type )` |
+| `CustIsConsideredForDynModif` |  | |  | `cast( substring(InspLotDynamicCriteria,4,1) as qkundkz preserving type )` |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_InspectionPlan` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_BillOfOperationsUsage` | | ✓ | | |
+| `_BillOfOperationsStatus` | | ✓ | | |
+| `_ResponsiblePlannerGroup` | | ✓ | | |
+| `_BillOfOperationsUnit` | | ✓ | | |
+| `_InspSubsetFieldCombination` | | ✓ | | |
+| `_SampleDrawingProcedure` | | ✓ | | |
+| `_SmplDrwgProcedureVersion` | | ✓ | | |
+| `_InspectionLotDynamicLevel` | | ✓ | | |
+| `_InspLotDynamicRule` | | ✓ | | |
+| `_InspExtNumbering` | | ✓ | | |
+| `_ChangeMaster` | | ✓ | | |
+| `_InspPartialLotAssignment` | | ✓ | | |
 
 ## Associations
 

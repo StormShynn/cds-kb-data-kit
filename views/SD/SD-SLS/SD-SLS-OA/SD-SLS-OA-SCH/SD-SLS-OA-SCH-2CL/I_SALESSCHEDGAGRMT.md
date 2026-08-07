@@ -28,148 +28,148 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `cast(SalesDocument as vdm_sales_schedg_agrmt preserving type)` |
-| `SDDocumentCategory` | `SDDocumentCategory` |
-| `SalesSchedgAgrmtType` | `cast(SalesDocumentType as vdm_sales_schedg_agrmt_type preserving type)` |
-| `SalesSchedgAgrmtProcessingType` | `SalesDocumentProcessingType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `OrganizationDivision` | `OrganizationDivision` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesOffice` | `SalesOffice` |
-| `SoldToParty` | `cast( SoldToParty as sd_schedg_agrmt_sold_to_party preserving type )` |
-| `CustomerGroup` | `CustomerGroup` |
-| `AdditionalCustomerGroup1` | `AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `AdditionalCustomerGroup5` |
-| `SalesSchedgAgrmtDate` | `SalesDocumentDate` |
-| `SDDocumentReason` | `SDDocumentReason` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderType` | `CustomerPurchaseOrderType` |
-| `CustomerPurchaseOrderDate` | `CustomerPurchaseOrderDate` |
-| `CustomerPurchaseOrderSuplmnt` | `CustomerPurchaseOrderSuplmnt` |
-| `SalesDistrict` | `SalesDistrict` |
-| `TotalNetAmount` | `TotalNetAmount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `PricingDate` | `PricingDate` |
-| `PriceDetnExchangeRate` | `PriceDetnExchangeRate` |
-| `SalesSchedgAgrmtCondition` | `SalesDocumentCondition` |
-| `SDPricingProcedure` | `SDPricingProcedure` |
-| `RequestedDeliveryDate` | `RequestedDeliveryDate` |
-| `ShippingType` | `ShippingType` |
-| `ShippingCondition` | `ShippingCondition` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `DeliveryBlockReason` | `DeliveryBlockReason` |
-| `DelivSchedTypeMRPRlvnceCode` | `DelivSchedTypeMRPRlvnceCode` |
-| `AgrmtValdtyStartDate` | `cast(AgrmtValdtyStartDate as sd_schedg_agrmt_valid_from preserving type )` |
-| `AgrmtValdtyEndDate` | `cast(AgrmtValdtyEndDate as sd_schedg_agrmt_valid_to preserving type )` |
-| `MatlUsageIndicator` | `MatlUsageIndicator` |
-| `BillingCompanyCode` | `BillingCompanyCode` |
-| `BillingDocumentDate` | `BillingDocumentDate` |
-| `HeaderBillingBlockReason` | `HeaderBillingBlockReason` |
-| `CustomerPaymentTerms` | `CustomerPaymentTerms` |
-| `PaymentMethod` | `PaymentMethod` |
-| `FiscalYear` | `FiscalYear` |
-| `FiscalPeriod` | `FiscalPeriod` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `ControllingArea` | `ControllingArea` |
-| `OverallSDProcessStatus` | `OverallSDProcessStatus` |
-| `OverallSDDocumentRejectionSts` | `OverallSDDocumentRejectionSts` |
-| `TotalBlockStatus` | `TotalBlockStatus` |
-| `OverallDelivConfStatus` | `OverallDelivConfStatus` |
-| `OverallTotalDeliveryStatus` | `OverallTotalDeliveryStatus` |
-| `OverallDeliveryStatus` | `OverallDeliveryStatus` |
-| `OverallDeliveryBlockStatus` | `OverallDeliveryBlockStatus` |
-| `OverallBillingBlockStatus` | `OverallBillingBlockStatus` |
-| `TotalCreditCheckStatus` | `TotalCreditCheckStatus` |
-| `CentralCreditCheckStatus` | `CentralCreditCheckStatus` |
-| `CentralCreditChkTechErrSts` | `CentralCreditChkTechErrSts` |
-| `HdrGeneralIncompletionStatus` | `HdrGeneralIncompletionStatus` |
-| `OverallPricingIncompletionSts` | `OverallPricingIncompletionSts` |
-| `HeaderDelivIncompletionStatus` | `HeaderDelivIncompletionStatus` |
-| `HeaderBillgIncompletionStatus` | `HeaderBillgIncompletionStatus` |
-| `OvrlItmGeneralIncompletionSts` | `OvrlItmGeneralIncompletionSts` |
-| `OvrlItmBillingIncompletionSts` | `OvrlItmBillingIncompletionSts` |
-| `OvrlItmDelivIncompletionSts` | `OvrlItmDelivIncompletionSts` |
-| `OverallTrdCmplncEmbargoSts` | `OverallTrdCmplncEmbargoSts` |
-| `OvrlTrdCmplncSnctndListChkSts` | `OvrlTrdCmplncSnctndListChkSts` |
-| `OvrlTrdCmplncLegalCtrlChkSts` | `OvrlTrdCmplncLegalCtrlChkSts` |
-| `OverallChmlCmplncStatus` | `OverallChmlCmplncStatus` |
-| `OverallDangerousGoodsStatus` | `OverallDangerousGoodsStatus` |
-| `OverallSafetyDataSheetStatus` | `OverallSafetyDataSheetStatus` |
-| `_Partner` | *Association* |
-| `_PricingElement` | *Association* |
-| `_Item` | *Association* |
-| `_SalesSchedgAgrmtType` | *Association* |
-| `_DelivSchedTypeMRPRlvnceCode` | *Association* |
-| `_StandardPartner` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_OrganizationDivision` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_AdditionalCustomerGroup1` | *Association* |
-| `_AdditionalCustomerGroup2` | *Association* |
-| `_AdditionalCustomerGroup3` | *Association* |
-| `_AdditionalCustomerGroup4` | *Association* |
-| `_AdditionalCustomerGroup5` | *Association* |
-| `_SDDocumentReason` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_ShippingType` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_IncotermsVersion` | *Association* |
-| `_DeliveryBlockReason` | *Association* |
-| `_BillingCompanyCode` | *Association* |
-| `_HeaderBillingBlockReason` | *Association* |
-| `_CustomerPaymentTerms` | *Association* |
-| `_ExchangeRateType` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_OverallSDProcessStatus` | *Association* |
-| `_OverallSDDocumentRejectionSts` | *Association* |
-| `_TotalBlockStatus` | *Association* |
-| `_OverallDelivConfStatus` | *Association* |
-| `_OverallTotalDeliveryStatus` | *Association* |
-| `_OverallDeliveryStatus` | *Association* |
-| `_OverallDeliveryBlockStatus` | *Association* |
-| `_OverallBillingBlockStatus` | *Association* |
-| `_TotalCreditCheckStatus` | *Association* |
-| `_CentralCreditCheckStatus` | *Association* |
-| `_CentralCreditChkTechErrSts` | *Association* |
-| `_HdrGeneralIncompletionStatus` | *Association* |
-| `_OverallPricingIncompletionSts` | *Association* |
-| `_HeaderDelivIncompletionStatus` | *Association* |
-| `_HeaderBillgIncompletionStatus` | *Association* |
-| `_OvrlItmGeneralIncompletionSts` | *Association* |
-| `_OvrlItmBillingIncompletionSts` | *Association* |
-| `_OvrlItmDelivIncompletionSts` | *Association* |
-| `_OvrlTradeCmplncEmbargoStatus` | *Association* |
-| `_OvTrdCmplncSnctndListChkSts` | *Association* |
-| `_OvrlTrdCmplncLegalCtrlChkSts` | *Association* |
-| `_OverallChmlCmplncStatus` | *Association* |
-| `_OverallDangerousGoodsStatus` | *Association* |
-| `_OvrlSftyDataSheetSts` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  | `cast(SalesDocument as vdm_sales_schedg_agrmt preserving type)` |
+| `SDDocumentCategory` |  | |  |  |
+| `SalesSchedgAgrmtType` |  | |  | `cast(SalesDocumentType as vdm_sales_schedg_agrmt_type preserving type)` |
+| `SalesSchedgAgrmtProcessingType` |  | |  | `SalesDocumentProcessingType` |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SoldToParty` |  | |  | `cast( SoldToParty as sd_schedg_agrmt_sold_to_party preserving type )` |
+| `CustomerGroup` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `SalesSchedgAgrmtDate` |  | |  | `SalesDocumentDate` |
+| `SDDocumentReason` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `CustomerPurchaseOrderSuplmnt` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |
+| `SalesSchedgAgrmtCondition` |  | |  | `SalesDocumentCondition` |
+| `SDPricingProcedure` |  | |  |  |
+| `RequestedDeliveryDate` |  | |  |  |
+| `ShippingType` |  | |  |  |
+| `ShippingCondition` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `DeliveryBlockReason` |  | |  |  |
+| `DelivSchedTypeMRPRlvnceCode` |  | |  |  |
+| `AgrmtValdtyStartDate` |  | |  | `cast(AgrmtValdtyStartDate as sd_schedg_agrmt_valid_from preserving type )` |
+| `AgrmtValdtyEndDate` |  | |  | `cast(AgrmtValdtyEndDate as sd_schedg_agrmt_valid_to preserving type )` |
+| `MatlUsageIndicator` |  | |  |  |
+| `BillingCompanyCode` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |
+| `TotalBlockStatus` |  | |  |  |
+| `OverallDelivConfStatus` |  | |  |  |
+| `OverallTotalDeliveryStatus` |  | |  |  |
+| `OverallDeliveryStatus` |  | |  |  |
+| `OverallDeliveryBlockStatus` |  | |  |  |
+| `OverallBillingBlockStatus` |  | |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |
+| `CentralCreditCheckStatus` |  | |  |  |
+| `CentralCreditChkTechErrSts` |  | |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |
+| `OverallPricingIncompletionSts` |  | |  |  |
+| `HeaderDelivIncompletionStatus` |  | |  |  |
+| `HeaderBillgIncompletionStatus` |  | |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |
+| `OvrlItmBillingIncompletionSts` |  | |  |  |
+| `OvrlItmDelivIncompletionSts` |  | |  |  |
+| `OverallTrdCmplncEmbargoSts` |  | |  |  |
+| `OvrlTrdCmplncSnctndListChkSts` |  | |  |  |
+| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  |  |
+| `OverallChmlCmplncStatus` |  | |  |  |
+| `OverallDangerousGoodsStatus` |  | |  |  |
+| `OverallSafetyDataSheetStatus` |  | |  |  |
+| `_Partner` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
+| `_Item` | | ✓ | | |
+| `_SalesSchedgAgrmtType` | | ✓ | | |
+| `_DelivSchedTypeMRPRlvnceCode` | | ✓ | | |
+| `_StandardPartner` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_OrganizationDivision` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | |
+| `_SDDocumentReason` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_ShippingType` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_IncotermsVersion` | | ✓ | | |
+| `_DeliveryBlockReason` | | ✓ | | |
+| `_BillingCompanyCode` | | ✓ | | |
+| `_HeaderBillingBlockReason` | | ✓ | | |
+| `_CustomerPaymentTerms` | | ✓ | | |
+| `_ExchangeRateType` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_OverallSDProcessStatus` | | ✓ | | |
+| `_OverallSDDocumentRejectionSts` | | ✓ | | |
+| `_TotalBlockStatus` | | ✓ | | |
+| `_OverallDelivConfStatus` | | ✓ | | |
+| `_OverallTotalDeliveryStatus` | | ✓ | | |
+| `_OverallDeliveryStatus` | | ✓ | | |
+| `_OverallDeliveryBlockStatus` | | ✓ | | |
+| `_OverallBillingBlockStatus` | | ✓ | | |
+| `_TotalCreditCheckStatus` | | ✓ | | |
+| `_CentralCreditCheckStatus` | | ✓ | | |
+| `_CentralCreditChkTechErrSts` | | ✓ | | |
+| `_HdrGeneralIncompletionStatus` | | ✓ | | |
+| `_OverallPricingIncompletionSts` | | ✓ | | |
+| `_HeaderDelivIncompletionStatus` | | ✓ | | |
+| `_HeaderBillgIncompletionStatus` | | ✓ | | |
+| `_OvrlItmGeneralIncompletionSts` | | ✓ | | |
+| `_OvrlItmBillingIncompletionSts` | | ✓ | | |
+| `_OvrlItmDelivIncompletionSts` | | ✓ | | |
+| `_OvrlTradeCmplncEmbargoStatus` | | ✓ | | |
+| `_OvTrdCmplncSnctndListChkSts` | | ✓ | | |
+| `_OvrlTrdCmplncLegalCtrlChkSts` | | ✓ | | |
+| `_OverallChmlCmplncStatus` | | ✓ | | |
+| `_OverallDangerousGoodsStatus` | | ✓ | | |
+| `_OvrlSftyDataSheetSts` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
 
 ## Associations
 

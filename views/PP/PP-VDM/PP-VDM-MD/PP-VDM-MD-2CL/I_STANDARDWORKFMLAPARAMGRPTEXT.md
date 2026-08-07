@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `StandardWorkFormulaParamGroup` | `vgwts` |
-| `StandardWorkFmlaParamGroupDesc` | `txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `StandardWorkFormulaParamGroup` | ✓ | |  | `vgwts` |
+| `StandardWorkFmlaParamGroupDesc` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

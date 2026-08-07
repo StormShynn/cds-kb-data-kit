@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryReferenceCategory` | `cast( reftyp as trsy_ref_cat preserving type )` |
-| key `TreasuryReferenceNumber` | `cast( refnr as trsy_ref_nmbr preserving type )` |
-| key `TreasuryFinancialObject` | `objnr` |
-| `TreasuryReferenceItemStatus` | `cast( status as trsy_ref_item_status preserving type )` |
-| `TreasuryReferenceItemRanking` | `cast( rrang as trsy_ref_item_ranking preserving type )` |
-| `TrsyReferenceItemCreatedByUser` | `cast( cruser as trsy_ref_item_cruser preserving type )` |
-| `TrsyReferenceItemCreationDate` | `cast( dcrdat as trsy_ref_item_dcrdat preserving type )` |
-| `TrsyReferenceItemCreationTime` | `cast( tcrtim as trsy_ref_item_tcrtim preserving type )` |
-| `TrsyRefItemLastChangedByUser` | `cast( upuser as trsy_ref_item_upuser preserving type )` |
-| `TrsyRefItemLastChangeDate` | `cast( dupdat as trsy_ref_item_dupdat preserving type )` |
-| `TrsyRefItemLastChangeTime` | `cast( tuptim as trsy_ref_item_tuptim preserving type )` |
-| `TreasuryReferenceStatus` | `_TreasuryReference.TreasuryReferenceStatus` |
-| `_FinancialTransaction` | *Association* |
-| `_TreasuryReferenceCategory` | *Association* |
-| `_TreasuryReference` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryReferenceCategory` | ✓ | |  | `cast( reftyp as trsy_ref_cat preserving type )` |
+| `TreasuryReferenceNumber` | ✓ | |  | `cast( refnr as trsy_ref_nmbr preserving type )` |
+| `TreasuryFinancialObject` | ✓ | |  | `objnr` |
+| `TreasuryReferenceItemStatus` |  | |  | `cast( status as trsy_ref_item_status preserving type )` |
+| `TreasuryReferenceItemRanking` |  | |  | `cast( rrang as trsy_ref_item_ranking preserving type )` |
+| `TrsyReferenceItemCreatedByUser` |  | |  | `cast( cruser as trsy_ref_item_cruser preserving type )` |
+| `TrsyReferenceItemCreationDate` |  | |  | `cast( dcrdat as trsy_ref_item_dcrdat preserving type )` |
+| `TrsyReferenceItemCreationTime` |  | |  | `cast( tcrtim as trsy_ref_item_tcrtim preserving type )` |
+| `TrsyRefItemLastChangedByUser` |  | |  | `cast( upuser as trsy_ref_item_upuser preserving type )` |
+| `TrsyRefItemLastChangeDate` |  | |  | `cast( dupdat as trsy_ref_item_dupdat preserving type )` |
+| `TrsyRefItemLastChangeTime` |  | |  | `cast( tuptim as trsy_ref_item_tuptim preserving type )` |
+| `TreasuryReferenceStatus` |  | | `_TreasuryReference` | `TreasuryReferenceStatus` |
+| `_FinancialTransaction` | | ✓ | | |
+| `_TreasuryReferenceCategory` | | ✓ | | |
+| `_TreasuryReference` | | ✓ | | |
 
 ## Associations
 

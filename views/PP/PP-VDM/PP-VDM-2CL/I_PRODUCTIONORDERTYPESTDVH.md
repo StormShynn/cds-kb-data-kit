@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionOrderType` | `ProductionOrderType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionOrderType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

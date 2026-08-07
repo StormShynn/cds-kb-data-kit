@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfirmationGroup` | `afru.rueck` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfirmationGroup` | ✓ | |  | `rueck` |
 
 ## Source Code
 

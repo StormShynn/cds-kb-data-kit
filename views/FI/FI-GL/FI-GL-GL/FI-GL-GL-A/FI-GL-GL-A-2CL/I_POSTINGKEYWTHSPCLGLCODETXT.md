@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tbslt.spras` |
-| key `PostingKey` | `cast(tbsl.bschl as fis_bschl preserving type)` |
-| key `SpecialGLCode` | `cast(tbslt.umskz as fac_umskz preserving type )` |
-| `FinancialAccountType` | `cast (tbsl.koart as farp_koart preserving type )` |
-| `PostingKeyName` | `cast (tbslt.ltext as fis_bschl_name preserving type )` |
-| `_Language` | *Association* |
-| `_PostingKey` | *Association* |
-| `_SpecialGLCode` | *Association* |
-| `_FinancialAccountType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `PostingKey` | ✓ | |  | `cast(tbsl.bschl as fis_bschl preserving type)` |
+| `SpecialGLCode` | ✓ | |  | `cast(tbslt.umskz as fac_umskz preserving type )` |
+| `FinancialAccountType` |  | |  | `cast (tbsl.koart as farp_koart preserving type )` |
+| `PostingKeyName` |  | |  | `cast (tbslt.ltext as fis_bschl_name preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PostingKey` | | ✓ | | |
+| `_SpecialGLCode` | | ✓ | | |
+| `_FinancialAccountType` | | ✓ | | |
 
 ## Associations
 

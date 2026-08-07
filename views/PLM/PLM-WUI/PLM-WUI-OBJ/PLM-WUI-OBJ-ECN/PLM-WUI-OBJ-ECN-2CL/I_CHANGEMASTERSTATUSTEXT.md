@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumberStatus` | `cast ( aenst as /plmb/ecn_status )` |
-| key `Language` | `spras` |
-| `ChangeNumberStatusText` | `aestx` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumberStatus` | ✓ | |  | `cast ( aenst as /plmb/ecn_status )` |
+| `Language` | ✓ | |  | `spras` |
+| `ChangeNumberStatusText` |  | |  | `aestx` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

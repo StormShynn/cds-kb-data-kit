@@ -32,24 +32,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjDemandMaterialSupplyUUID` | `ProjDemandMaterialSupplyUUID` |
-| `ProjectDemandMaterialUUID` | `ProjectDemandMaterialUUID` |
-| `ProjectDemandUUID` | `ProjectDemandUUID` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `ProjectDemandRequirementPlan` | `ProjectDemandRequirementPlan` |
-| `ProjDmndPlndIndepRqmtItem` | `ProjDmndPlndIndepRqmtItem` |
-| `ProjectDemandReservation` | `ProjectDemandReservation` |
-| `ProjectDemandReservationItem` | `ProjectDemandReservationItem` |
-| `ProjectDemandHasReservation` | `ProjectDemandHasReservation` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Root` | *Association* |
-| `_Material` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjDemandMaterialSupplyUUID` | ✓ | |  |  |
+| `ProjectDemandMaterialUUID` |  | |  |  |
+| `ProjectDemandUUID` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `ProjectDemandRequirementPlan` |  | |  |  |
+| `ProjDmndPlndIndepRqmtItem` |  | |  |  |
+| `ProjectDemandReservation` |  | |  |  |
+| `ProjectDemandReservationItem` |  | |  |  |
+| `ProjectDemandHasReservation` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Root` | | ✓ | | |
+| `_Material` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgDocItemCrtnMethod` | `cast ( substring( dd07t.domvalue_l,1,1 ) as invitem_crmet_kk preserving type )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgDocItmCrtnMethodText` | `cast ( ddtext as invitem_crmet_txt_gfn_kk preserving type )` |
-| `_CAInvcgDocItmCrtnMethod` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as invitem_crmet_kk preserving type )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CAInvcgDocItmCrtnMethodText` |  | |  | `cast ( ddtext as invitem_crmet_txt_gfn_kk preserving type )` |
+| `_CAInvcgDocItmCrtnMethod` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

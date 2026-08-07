@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `ktopl` |
-| key `GLAccountGroup` | `ktoks` |
-| key `Language` | `spras` |
-| `AccountGroupName` | `txt30` |
-| `_Language` | *Association* |
-| `_ChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `ktopl` |
+| `GLAccountGroup` | ✓ | |  | `ktoks` |
+| `Language` | ✓ | |  | `spras` |
+| `AccountGroupName` |  | |  | `txt30` |
+| `_Language` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

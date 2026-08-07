@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocumentRjcnReason` | `abgru` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentRjcnReason` | ✓ | |  | `abgru` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_Text.langu as fincs_language preserving type )` |
-| key `ConsolidationMethod` | `cast(_Text.cmeth as fincs_method preserving type )` |
-| `ConsolidationMethodText` | `cast (_Text.txt as fincs_methodtext preserving type)` |
-| `ConsolidationTaskCategory` | `cast( _tf550.cactt as fincs_taskcategory preserving type )` |
-| `_Language` | *Association* |
-| `_Method` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_Text.langu as fincs_language preserving type )` |
+| `ConsolidationMethod` | ✓ | |  | `cast(_Text.cmeth as fincs_method preserving type )` |
+| `ConsolidationMethodText` |  | |  | `cast (_Text.txt as fincs_methodtext preserving type)` |
+| `ConsolidationTaskCategory` |  | |  | `cast( _tf550.cactt as fincs_taskcategory preserving type )` |
+| `_Language` | | ✓ | | |
+| `_Method` | | ✓ | | |
 
 ## Associations
 

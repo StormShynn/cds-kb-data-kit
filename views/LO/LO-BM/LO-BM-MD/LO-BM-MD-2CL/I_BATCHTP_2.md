@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `BatchIdentifyingPlant` | `BatchIdentifyingPlant` |
-| key `Batch` | `Batch` |
-| `BatchIsMarkedForDeletion` | `BatchIsMarkedForDeletion` |
-| `MatlBatchIsInRstrcdUseStock` | `MatlBatchIsInRstrcdUseStock` |
-| `Supplier` | `Supplier` |
-| `BatchBySupplier` | `BatchBySupplier` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `RegionOfOrigin` | `RegionOfOrigin` |
-| `MatlBatchAvailabilityDate` | `MatlBatchAvailabilityDate` |
-| `ShelfLifeExpirationDate` | `ShelfLifeExpirationDate` |
-| `ManufactureDate` | `ManufactureDate` |
-| `FreeDefinedDate1` | `FreeDefinedDate1` |
-| `FreeDefinedDate2` | `FreeDefinedDate2` |
-| `FreeDefinedDate3` | `FreeDefinedDate3` |
-| `FreeDefinedDate4` | `FreeDefinedDate4` |
-| `FreeDefinedDate5` | `FreeDefinedDate5` |
-| `FreeDefinedDate6` | `FreeDefinedDate6` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `BatchExtWhseMgmtInternalId` | `BatchExtWhseMgmtInternalId` |
-| `_BatchPlantTP` | *Association* |
-| `_BatchClassTP` | *Association* |
-| `_BatchCharacteristicTP` | *Association* |
-| `_BatchTextTP` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `BatchIdentifyingPlant` | ✓ | |  |  |
+| `Batch` | ✓ | |  |  |
+| `BatchIsMarkedForDeletion` |  | |  |  |
+| `MatlBatchIsInRstrcdUseStock` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `BatchBySupplier` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `RegionOfOrigin` |  | |  |  |
+| `MatlBatchAvailabilityDate` |  | |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |
+| `ManufactureDate` |  | |  |  |
+| `FreeDefinedDate1` |  | |  |  |
+| `FreeDefinedDate2` |  | |  |  |
+| `FreeDefinedDate3` |  | |  |  |
+| `FreeDefinedDate4` |  | |  |  |
+| `FreeDefinedDate5` |  | |  |  |
+| `FreeDefinedDate6` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `BatchExtWhseMgmtInternalId` |  | |  |  |
+| `_BatchPlantTP` | | ✓ | | |
+| `_BatchClassTP` | | ✓ | | |
+| `_BatchCharacteristicTP` | | ✓ | | |
+| `_BatchTextTP` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Source Code
 

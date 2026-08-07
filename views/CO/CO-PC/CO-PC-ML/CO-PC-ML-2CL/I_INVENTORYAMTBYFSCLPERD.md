@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Ledger` | `Ledger` |
-| key `CompanyCode` | `CompanyCode` |
-| key `CostEstimate` | `CostEstimate` |
-| `Material` | `Material` |
-| `ValuationType` | `ValuationType` |
-| `ValuationArea` | `ValuationArea` |
-| `InvtryValnSpecialStockType` | `InvtryValnSpecialStockType` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `Supplier` | `Supplier` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `FiscalPeriod` | `$parameters.P_FiscalPeriod` |
-| `FiscalYear` | `$parameters.P_FiscalYear` |
-| `ValuationQuantity` | `ValuationQuantity` |
-| `UnitOfMeasure` | `UnitOfMeasure` |
-| `AmountInCompanyCodeCurrency` | `} AmountInCompanyCodeCurrency` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `AmountInGlobalCurrency` | `} AmountInGlobalCurrency` |
-| `GlobalCurrency` | `GlobalCurrency` |
-| `AmountInFreeDefinedCurrency1` | `} AmountInFreeDefinedCurrency1` |
-| `FreeDefinedCurrency1` | `FreeDefinedCurrency1` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Ledger` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `CostEstimate` | ✓ | |  |  |
+| `Material` |  | |  |  |
+| `ValuationType` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `InvtryValnSpecialStockType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `FiscalPeriod` |  | |  | `$parameters.P_FiscalPeriod` |
+| `FiscalYear` |  | |  | `$parameters.P_FiscalYear` |
+| `ValuationQuantity` |  | |  |  |
+| `UnitOfMeasure` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `} AmountInCompanyCodeCurrency` |
+| `CompanyCodeCurrency` |  | |  |  |
+| `AmountInGlobalCurrency` |  | |  | `} AmountInGlobalCurrency` |
+| `GlobalCurrency` |  | |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  | `} AmountInFreeDefinedCurrency1` |
+| `FreeDefinedCurrency1` |  | |  |  |
 
 ## Source Code
 

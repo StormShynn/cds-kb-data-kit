@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharacteristicAttributeCodeGrp` | `qpgr.codegruppe` |
-| `CodeGroupIsInactive` | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |
-| `CodeGroupStatus` | `qpgr.status` |
-| `CharcAttribCodeGroupCrtedBy` | `qpgr.ersteller` |
-| `CharcAttribCodeGroupCrtedOn` | `qpgr.e_datum` |
-| `CharcAttribCodeGroupLastChgdBy` | `qpgr.aenderer` |
-| `CharcAttribCodeGroupLastChgdOn` | `qpgr.a_datum` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharacteristicAttributeCodeGrp` | ✓ | |  | `codegruppe` |
+| `CodeGroupIsInactive` |  | |  | `case qpgr.inaktiv when ' ' then cast( ' ' as vdm_qm_codegroupisinactive preserving type ) else cast( 'X' as vdm_qm_codegroupisinactive preserving type ) end` |
+| `CodeGroupStatus` |  | |  | `status` |
+| `CharcAttribCodeGroupCrtedBy` |  | |  | `ersteller` |
+| `CharcAttribCodeGroupCrtedOn` |  | |  | `e_datum` |
+| `CharcAttribCodeGroupLastChgdBy` |  | |  | `aenderer` |
+| `CharcAttribCodeGroupLastChgdOn` |  | |  | `a_datum` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

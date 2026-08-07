@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspLotDynamicRule` | `cast( dynregel as vdm_qdynregel preserving type )` |
-| key `InspLotDynRuleStage` | `prstufe` |
-| `InspectionSeverity` | `prschaerfe` |
-| `InspectionLotIsSkipped` | `kzskip` |
-| `InspectionsRqdToReduceStge` | `anzprred` |
-| `InspectionsToTightenStage` | `anzprver` |
-| `InspRejectionsToReduceStage` | `anzrwred` |
-| `InspRejectionsToTightenStage` | `anzrwver` |
-| `NextDynRuleStgeIfInspAccepted` | `redstufe` |
-| `NextDynRuleStgeIfInspRejected` | `verstufe` |
-| `InspLotDynRuleStageMaxSkips` | `maxskipdr` |
-| `_InspLotDynamicRule` | *Association* |
-| `_Text` | *Association* |
-| `_InspectionSeverity` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspLotDynamicRule` | ✓ | |  | `cast( dynregel as vdm_qdynregel preserving type )` |
+| `InspLotDynRuleStage` | ✓ | |  | `prstufe` |
+| `InspectionSeverity` |  | |  | `prschaerfe` |
+| `InspectionLotIsSkipped` |  | |  | `kzskip` |
+| `InspectionsRqdToReduceStge` |  | |  | `anzprred` |
+| `InspectionsToTightenStage` |  | |  | `anzprver` |
+| `InspRejectionsToReduceStage` |  | |  | `anzrwred` |
+| `InspRejectionsToTightenStage` |  | |  | `anzrwver` |
+| `NextDynRuleStgeIfInspAccepted` |  | |  | `redstufe` |
+| `NextDynRuleStgeIfInspRejected` |  | |  | `verstufe` |
+| `InspLotDynRuleStageMaxSkips` |  | |  | `maxskipdr` |
+| `_InspLotDynamicRule` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_InspectionSeverity` | | ✓ | | |
 
 ## Associations
 

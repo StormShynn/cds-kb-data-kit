@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentNumber` | `CADocumentNumber` |
-| key `CARepetitionItemNumber` | `CARepetitionItemNumber` |
-| key `CABPItemNumber` | `CABPItemNumber` |
-| key `CASubItemNumber` | `CASubItemNumber` |
-| key `CABusinessProcess` | `CABusinessProcess` |
-| key `CABusinessLockReason` | `CABusinessLockReason` |
-| key `CABusinessLockValidFrom` | `CABusinessLockValidFrom` |
-| key `CABusinessLockValidTo` | `CABusinessLockValidTo` |
-| `_DocHeader` | *Association* |
-| `_BPItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  |  |
+| `CARepetitionItemNumber` | ✓ | |  |  |
+| `CABPItemNumber` | ✓ | |  |  |
+| `CASubItemNumber` | ✓ | |  |  |
+| `CABusinessProcess` | ✓ | |  |  |
+| `CABusinessLockReason` | ✓ | |  |  |
+| `CABusinessLockValidFrom` | ✓ | |  |  |
+| `CABusinessLockValidTo` | ✓ | |  |  |
+| `_DocHeader` | | ✓ | | |
+| `_BPItem` | | ✓ | | |
 
 ## Source Code
 

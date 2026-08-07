@@ -31,143 +31,143 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContract` | `cast(SDIA.SalesDocument as sales_contract preserving type)` |
-| key `SalesContractItem` | `cast(SDIA.SalesDocumentItem as sales_contract_item preserving type)` |
-| `SalesContractType` | `SDIA.SalesDocumentType` |
-| `SalesContractItemType` | `SDIA.SalesDocumentItemType` |
-| `SalesContractItemCategory` | `SDIA.SalesDocumentItemCategory` |
-| `CreatedByUser` | `SDIA.CreatedByUser` |
-| `CreationDate` | `SDIA.CreationDate` |
-| `CreationTime` | `SDIA.CreationTime` |
-| `LastChangeDate` | `SDIA.LastChangeDate` |
-| `CreationDateYear` | `cast(CalendarDate.CalendarYear as creation_date_year)` |
-| `CreationDateYearQuarter` | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |
-| `CreationDateYearMonth` | `cast(CalendarDate.YearMonth as creation_date_year_month)` |
-| `SalesOrganization` | `SDIA.SalesOrganization` |
-| `DistributionChannel` | `SDIA.DistributionChannel` |
-| `OrganizationDivision` | `cast(SDIA.OrganizationDivision as organization_division preserving type)` |
-| `Division` | `SDIA.Division` |
-| `SalesOffice` | `SDIA.SalesOffice` |
-| `SalesGroup` | `SDIA.SalesGroup` |
-| `PartnerCompany` | `SDIA._SoldToParty.TradingPartner` |
-| `SoldToParty` | `SDIA.SoldToParty` |
-| `ShipToParty` | `SDIA.ShipToParty` |
-| `SalesEmployee` | `SDIA.SalesEmployee` |
-| `ResponsibleEmployee` | `SDIA.ResponsibleEmployee` |
-| `CustomerGroup` | `SDIA.CustomerGroup` |
-| `AdditionalCustomerGroup1` | `SDIA.AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `SDIA.AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `SDIA.AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `SDIA.AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `SDIA.AdditionalCustomerGroup5` |
-| `SalesContractDate` | `SDIA.SalesDocumentDate` |
-| `SDDocumentReason` | `SDIA.SDDocumentReason` |
-| `PurchaseOrderByCustomer` | `SDIA.PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderDate` | `SDIA.CustomerPurchaseOrderDate` |
-| `SalesContractItemText` | `SDIA.SalesDocumentItemText` |
-| `SalesDocumentRjcnReason` | `SDIA.SalesDocumentRjcnReason` |
-| `OutlineAgreementTargetAmount` | `SDIA.OutlineAgreementTargetAmount` |
-| `TargetQuantity` | `SDIA.TargetQuantity` |
-| `TargetQuantityUnit` | `SDIA.TargetQuantityUnit` |
-| `SalesContractValidityStartDate` | `SDIA.AgrmtValdtyStartDate` |
-| `SalesContractValidityEndDate` | `SDIA.AgrmtValdtyEndDate` |
-| `SalesContractCanclnParty` | `SDIA.SalesContractCanclnParty` |
-| `SalesContractCanclnReason` | `SDIA.SalesContractCanclnReason` |
-| `SalesContractFollowUpAction` | `SDIA.SalesContractFollowUpAction` |
-| `ContractPartnerCanclnDocDate` | `SDIA.ContractPartnerCanclnDocDate` |
-| `Material` | `SDIA.Material` |
-| `Product` | `cast(SDIA.Material as productnumber preserving type)` |
-| `MaterialGroup` | `SDIA.MaterialGroup` |
-| `ProductGroup` | `SDIA.ProductGroup` |
-| `AdditionalMaterialGroup1` | `SDIA.AdditionalMaterialGroup1` |
-| `AdditionalMaterialGroup2` | `SDIA.AdditionalMaterialGroup2` |
-| `AdditionalMaterialGroup3` | `SDIA.AdditionalMaterialGroup3` |
-| `AdditionalMaterialGroup4` | `SDIA.AdditionalMaterialGroup4` |
-| `AdditionalMaterialGroup5` | `SDIA.AdditionalMaterialGroup5` |
-| `Plant` | `SDIA.Plant` |
-| `StorageLocation` | `SDIA.StorageLocation` |
-| `MainItemPricingRefProduct` | `MainItemPricingRefProduct` |
-| `HigherLevelItem` | `HigherLevelItem` |
-| `BillOfMaterial` | `BillOfMaterial` |
-| `PropagatePrftbltySgmt2BOM` | `PropagatePrftbltySgmt2BOM` |
-| `CostDeterminationIsRequired` | `CostDeterminationIsRequired` |
-| `ItemWeightUnit` | `SDIA.ItemWeightUnit` |
-| `ItemGrossWeight` | `SDIA.ItemGrossWeight` |
-| `ItemNetWeight` | `SDIA.ItemNetWeight` |
-| `ItemVolumeUnit` | `SDIA.ItemVolumeUnit` |
-| `ItemVolume` | `SDIA.ItemVolume` |
-| `PricingDate` | `SDIA.PricingDate` |
-| `SalesDistrict` | `SDIA.SalesDistrict` |
-| `TaxAmount` | `SDIA.TaxAmount` |
-| `CostAmount` | `SDIA.CostAmount` |
-| `Subtotal1Amount` | `SDIA.Subtotal1Amount` |
-| `Subtotal2Amount` | `SDIA.Subtotal2Amount` |
-| `Subtotal3Amount` | `SDIA.Subtotal3Amount` |
-| `Subtotal4Amount` | `SDIA.Subtotal4Amount` |
-| `Subtotal5Amount` | `SDIA.Subtotal5Amount` |
-| `Subtotal6Amount` | `SDIA.Subtotal6Amount` |
-| `BaseUnit` | `SDIA.BaseUnit` |
-| `TransactionCurrency` | `SDIA.TransactionCurrency` |
-| `DisplayCurrency` | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
-| `BillingCompanyCode` | `SDIA.BillingCompanyCode` |
-| `BillingDocumentDate` | `SDIA.BillingDocumentDate` |
-| `ItemBillingBlockReason` | `SDIA.ItemBillingBlockReason` |
-| `CustomerPaymentTerms` | `SDIA.CustomerPaymentTerms` |
-| `PaymentMethod` | `SDIA.PaymentMethod` |
-| `FixedValueDate` | `SDIA.FixedValueDate` |
-| `AdditionalValueDays` | `SDIA.AdditionalValueDays` |
-| `FiscalYear` | `SDIA.FiscalYear` |
-| `FiscalPeriod` | `SDIA.FiscalPeriod` |
-| `BusinessArea` | `SDIA.BusinessArea` |
-| `ProfitCenter` | `SDIA.ProfitCenter` |
-| `CustomerAccountAssignmentGroup` | `SDIA.CustomerAccountAssignmentGroup` |
-| `SalesContractTargetValue` | `SDIA.SalesContractTargetValue` |
-| `SalesContractTargetAmount` | `SDIA.SalesContractTargetAmount` |
-| `IncomingSlsContractNetAmount` | `cast( SDIA.SalesContractTargetAmount as incg_sls_contr_net_amt )` |
-| `SalesContractReleasedAmount` | `cast( ReleasedSalesContract.SalesContractReleasedAmount as reld_sls_contr_tgt_val )` |
-| `SalesContractTargetQuantity` | `SDIA.SalesContractTargetQuantity` |
-| `IncomingSlsContractQuantity` | `cast( SDIA.SalesContractTargetQuantity as incg_sls_contr_qty )` |
-| `SalesContractTargetValueInDC` | `cast( currency_conversion( amount => SDIA.SalesContractTargetValue, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sls_contr_tgt_val_in_dc )` |
-| `SalesContractTargetAmountInDC` | `cast( currency_conversion( amount => SDIA.SalesContractTargetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sls_contr_tgt_val_in_dc )` |
-| `IncomingSlsContractNetAmtInDC` | `cast( currency_conversion( amount => SDIA.SalesContractTargetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as incg_sls_contr_net_amt_in_dc )` |
-| `SalesContractReleasedAmtInDC` | `cast( ReleasedSalesContract.SalesContractReleasedAmtInDC as reld_sls_contr_tgt_val_in_dc )` |
-| `ReferenceSDDocument` | `SDIA.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `SDIA.ReferenceSDDocumentItem` |
-| `ReferenceSDDocumentCategory` | `SDIA.ReferenceSDDocumentCategory` |
-| `OverallSDProcessStatus` | `cast(SDIA.OverallSDProcessStatus as overall_sd_process_status preserving type)` |
-| `OverallSDDocumentRejectionSts` | `cast(SDIA.OverallSDDocumentRejectionSts as ovrl_sd_doc_rejection_status preserving type)` |
-| `TotalBlockStatus` | `SDIA.TotalBlockStatus` |
-| `OverallDelivConfStatus` | `cast(SDIA.OverallDelivConfStatus as overall_delivery_conf_status preserving type)` |
-| `OverallTotalDeliveryStatus` | `cast(SDIA.OverallTotalDeliveryStatus as itms_ovrl_delivery_status preserving type)` |
-| `OverallDeliveryStatus` | `cast(SDIA.OverallDeliveryStatus as overall_delivery_status preserving type)` |
-| `OverallDeliveryBlockStatus` | `cast(SDIA.OverallDeliveryBlockStatus as overall_delivery_block_status preserving type)` |
-| `OverallOrdReltdBillgStatus` | `cast(SDIA.OverallOrdReltdBillgStatus as ovrl_ord_rel_billg_status preserving type)` |
-| `OverallBillingBlockStatus` | `cast(SDIA.OverallBillingBlockStatus as overall_billing_block_status preserving type)` |
-| `OverallTotalSDDocRefStatus` | `cast(SDIA.OverallTotalSDDocRefStatus as ovrl_reference_status preserving type)` |
-| `OverallSDDocReferenceStatus` | `cast(SDIA.OverallSDDocReferenceStatus as ovrl_sd_doc_reference_status preserving type)` |
-| `HdrGeneralIncompletionStatus` | `cast(SDIA.HdrGeneralIncompletionStatus as hdr_general_incompltn_status preserving type)` |
-| `HeaderDelivIncompletionStatus` | `cast(SDIA.HeaderDelivIncompletionStatus as hdrdelivincompletionstatus preserving type)` |
-| `HeaderBillgIncompletionStatus` | `cast(SDIA.HeaderBillgIncompletionStatus as hdrbillgincompletionstatus preserving type)` |
-| `OvrlItmGeneralIncompletionSts` | `cast(SDIA.OvrlItmGeneralIncompletionSts as itms_ovrl_incompletion_status preserving type)` |
-| `OvrlItmBillingIncompletionSts` | `cast(SDIA.OvrlItmBillingIncompletionSts as ovrl_itms_incompltn_sts_billg preserving type)` |
-| `OvrlItmDelivIncompletionSts` | `cast(SDIA.OvrlItmDelivIncompletionSts as ovrl_items_dlv_incompltn_sts preserving type)` |
-| `SDProcessStatus` | `cast(SDIA.SDProcessStatus as sd_doc_process_status preserving type)` |
-| `DeliveryConfirmationStatus` | `cast(SDIA.DeliveryConfirmationStatus as delivery_confirmation_status preserving type)` |
-| `TotalDeliveryStatus` | `SDIA.TotalDeliveryStatus` |
-| `DeliveryStatus` | `SDIA.DeliveryStatus` |
-| `DeliveryBlockStatus` | `SDIA.DeliveryBlockStatus` |
-| `OrderRelatedBillingStatus` | `SDIA.OrderRelatedBillingStatus` |
-| `BillingBlockStatus` | `SDIA.BillingBlockStatus` |
-| `ItemGeneralIncompletionStatus` | `cast(SDIA.ItemGeneralIncompletionStatus as item_general_incompletion_sts preserving type)` |
-| `ItemBillingIncompletionStatus` | `cast(SDIA.ItemBillingIncompletionStatus as itms_incompltn_sts_billg preserving type)` |
-| `ItemDeliveryIncompletionStatus` | `cast(SDIA.ItemDeliveryIncompletionStatus as itm_deliv_incompletion_status preserving type)` |
-| `SDDocumentRejectionStatus` | `cast(SDIA.SDDocumentRejectionStatus as sd_doc_rejection_status preserving type)` |
-| `TotalSDDocReferenceStatus` | `SDIA.TotalSDDocReferenceStatus` |
-| `_SalesContract` | *Association* |
-| `_SalesContractType` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContract` | ✓ | |  | `cast(SDIA.SalesDocument as sales_contract preserving type)` |
+| `SalesContractItem` | ✓ | |  | `cast(SDIA.SalesDocumentItem as sales_contract_item preserving type)` |
+| `SalesContractType` |  | |  | `SalesDocumentType` |
+| `SalesContractItemType` |  | |  | `SalesDocumentItemType` |
+| `SalesContractItemCategory` |  | |  | `SalesDocumentItemCategory` |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |
+| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |
+| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  | `cast(SDIA.OrganizationDivision as organization_division preserving type)` |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `PartnerCompany` |  | |  | `TradingPartner` |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `SalesEmployee` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `SalesContractDate` |  | |  | `SalesDocumentDate` |
+| `SDDocumentReason` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `SalesContractItemText` |  | |  | `SalesDocumentItemText` |
+| `SalesDocumentRjcnReason` |  | |  |  |
+| `OutlineAgreementTargetAmount` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetQuantityUnit` |  | |  |  |
+| `SalesContractValidityStartDate` |  | |  | `AgrmtValdtyStartDate` |
+| `SalesContractValidityEndDate` |  | |  | `AgrmtValdtyEndDate` |
+| `SalesContractCanclnParty` |  | |  |  |
+| `SalesContractCanclnReason` |  | |  |  |
+| `SalesContractFollowUpAction` |  | |  |  |
+| `ContractPartnerCanclnDocDate` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  | `cast(SDIA.Material as productnumber preserving type)` |
+| `MaterialGroup` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `MainItemPricingRefProduct` |  | |  |  |
+| `HigherLevelItem` |  | |  |  |
+| `BillOfMaterial` |  | |  |  |
+| `PropagatePrftbltySgmt2BOM` |  | |  |  |
+| `CostDeterminationIsRequired` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `TaxAmount` |  | |  |  |
+| `CostAmount` |  | |  |  |
+| `Subtotal1Amount` |  | |  |  |
+| `Subtotal2Amount` |  | |  |  |
+| `Subtotal3Amount` |  | |  |  |
+| `Subtotal4Amount` |  | |  |  |
+| `Subtotal5Amount` |  | |  |  |
+| `Subtotal6Amount` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
+| `BillingCompanyCode` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `ItemBillingBlockReason` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `FixedValueDate` |  | |  |  |
+| `AdditionalValueDays` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |
+| `SalesContractTargetValue` |  | |  |  |
+| `SalesContractTargetAmount` |  | |  |  |
+| `IncomingSlsContractNetAmount` |  | |  | `cast( SDIA.SalesContractTargetAmount as incg_sls_contr_net_amt )` |
+| `SalesContractReleasedAmount` |  | |  | `cast( ReleasedSalesContract.SalesContractReleasedAmount as reld_sls_contr_tgt_val )` |
+| `SalesContractTargetQuantity` |  | |  |  |
+| `IncomingSlsContractQuantity` |  | |  | `cast( SDIA.SalesContractTargetQuantity as incg_sls_contr_qty )` |
+| `SalesContractTargetValueInDC` |  | |  | `cast( currency_conversion( amount => SDIA.SalesContractTargetValue, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sls_contr_tgt_val_in_dc )` |
+| `SalesContractTargetAmountInDC` |  | |  | `cast( currency_conversion( amount => SDIA.SalesContractTargetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sls_contr_tgt_val_in_dc )` |
+| `IncomingSlsContractNetAmtInDC` |  | |  | `cast( currency_conversion( amount => SDIA.SalesContractTargetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as incg_sls_contr_net_amt_in_dc )` |
+| `SalesContractReleasedAmtInDC` |  | |  | `cast( ReleasedSalesContract.SalesContractReleasedAmtInDC as reld_sls_contr_tgt_val_in_dc )` |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  | `cast(SDIA.OverallSDProcessStatus as overall_sd_process_status preserving type)` |
+| `OverallSDDocumentRejectionSts` |  | |  | `cast(SDIA.OverallSDDocumentRejectionSts as ovrl_sd_doc_rejection_status preserving type)` |
+| `TotalBlockStatus` |  | |  |  |
+| `OverallDelivConfStatus` |  | |  | `cast(SDIA.OverallDelivConfStatus as overall_delivery_conf_status preserving type)` |
+| `OverallTotalDeliveryStatus` |  | |  | `cast(SDIA.OverallTotalDeliveryStatus as itms_ovrl_delivery_status preserving type)` |
+| `OverallDeliveryStatus` |  | |  | `cast(SDIA.OverallDeliveryStatus as overall_delivery_status preserving type)` |
+| `OverallDeliveryBlockStatus` |  | |  | `cast(SDIA.OverallDeliveryBlockStatus as overall_delivery_block_status preserving type)` |
+| `OverallOrdReltdBillgStatus` |  | |  | `cast(SDIA.OverallOrdReltdBillgStatus as ovrl_ord_rel_billg_status preserving type)` |
+| `OverallBillingBlockStatus` |  | |  | `cast(SDIA.OverallBillingBlockStatus as overall_billing_block_status preserving type)` |
+| `OverallTotalSDDocRefStatus` |  | |  | `cast(SDIA.OverallTotalSDDocRefStatus as ovrl_reference_status preserving type)` |
+| `OverallSDDocReferenceStatus` |  | |  | `cast(SDIA.OverallSDDocReferenceStatus as ovrl_sd_doc_reference_status preserving type)` |
+| `HdrGeneralIncompletionStatus` |  | |  | `cast(SDIA.HdrGeneralIncompletionStatus as hdr_general_incompltn_status preserving type)` |
+| `HeaderDelivIncompletionStatus` |  | |  | `cast(SDIA.HeaderDelivIncompletionStatus as hdrdelivincompletionstatus preserving type)` |
+| `HeaderBillgIncompletionStatus` |  | |  | `cast(SDIA.HeaderBillgIncompletionStatus as hdrbillgincompletionstatus preserving type)` |
+| `OvrlItmGeneralIncompletionSts` |  | |  | `cast(SDIA.OvrlItmGeneralIncompletionSts as itms_ovrl_incompletion_status preserving type)` |
+| `OvrlItmBillingIncompletionSts` |  | |  | `cast(SDIA.OvrlItmBillingIncompletionSts as ovrl_itms_incompltn_sts_billg preserving type)` |
+| `OvrlItmDelivIncompletionSts` |  | |  | `cast(SDIA.OvrlItmDelivIncompletionSts as ovrl_items_dlv_incompltn_sts preserving type)` |
+| `SDProcessStatus` |  | |  | `cast(SDIA.SDProcessStatus as sd_doc_process_status preserving type)` |
+| `DeliveryConfirmationStatus` |  | |  | `cast(SDIA.DeliveryConfirmationStatus as delivery_confirmation_status preserving type)` |
+| `TotalDeliveryStatus` |  | |  |  |
+| `DeliveryStatus` |  | |  |  |
+| `DeliveryBlockStatus` |  | |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |
+| `BillingBlockStatus` |  | |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  | `cast(SDIA.ItemGeneralIncompletionStatus as item_general_incompletion_sts preserving type)` |
+| `ItemBillingIncompletionStatus` |  | |  | `cast(SDIA.ItemBillingIncompletionStatus as itms_incompltn_sts_billg preserving type)` |
+| `ItemDeliveryIncompletionStatus` |  | |  | `cast(SDIA.ItemDeliveryIncompletionStatus as itm_deliv_incompletion_status preserving type)` |
+| `SDDocumentRejectionStatus` |  | |  | `cast(SDIA.SDDocumentRejectionStatus as sd_doc_rejection_status preserving type)` |
+| `TotalSDDocReferenceStatus` |  | |  |  |
+| `_SalesContract` | | ✓ | | |
+| `_SalesContractType` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Associations
 

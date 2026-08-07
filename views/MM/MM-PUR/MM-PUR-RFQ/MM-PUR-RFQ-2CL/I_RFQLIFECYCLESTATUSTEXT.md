@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RFQLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as vdm_rfq_lfst_cd )` |
-| key `Language` | `ddlanguage` |
-| `RFQLifecycleStatusName` | `cast( ddtext as vdm_rfq_lfst_descr )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RFQLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as vdm_rfq_lfst_cd )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `RFQLifecycleStatusName` |  | |  | `cast( ddtext as vdm_rfq_lfst_descr )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

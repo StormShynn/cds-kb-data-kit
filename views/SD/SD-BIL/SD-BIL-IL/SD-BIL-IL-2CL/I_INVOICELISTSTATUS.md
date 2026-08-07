@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceListStatus` | `cast(dd07l.domvalue_l as relik)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceListStatus` | ✓ | |  | `cast(dd07l.domvalue_l as relik)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

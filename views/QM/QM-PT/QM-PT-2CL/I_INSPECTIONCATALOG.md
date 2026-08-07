@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionCatalog` | `tq15.katalogart` |
-| `_InspectionCatalogText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionCatalog` | ✓ | |  | `katalogart` |
+| `_InspectionCatalogText` | | ✓ | | |
 
 ## Associations
 

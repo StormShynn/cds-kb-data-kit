@@ -30,41 +30,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bsec.bukrs` |
-| key `AccountingDocument` | `bsec.belnr` |
-| key `FiscalYear` | `bsec.gjahr` |
-| key `AccountingDocumentItem` | `bsec.buzei` |
-| `BusinessPartnerName1` | `cast(bsec.name1 as ad_name1)` |
-| `BusinessPartnerName2` | `cast(bsec.name2 as ad_name2)` |
-| `BusinessPartnerName3` | `cast(bsec.name3 as ad_name3)` |
-| `BusinessPartnerName4` | `cast(bsec.name4 as ad_name4)` |
-| `Country` | `bsec.land1` |
-| `CityName` | `cast(bsec.ort01 as ad_city1)` |
-| `POBox` | `bsec.pfach` |
-| `POBoxPostalCode` | `bsec.pstl2` |
-| `PostalCode` | `bsec.pstlz` |
-| `Region` | `bsec.regio` |
-| `TaxID1` | `bsec.stcd1` |
-| `TaxID2` | `bsec.stcd2` |
-| `TaxID3` | `bsec.stcd3` |
-| `TaxID4` | `bsec.stcd4` |
-| `TaxID5` | `bsec.stcd5` |
-| `StreetAddressName` | `bsec.stras` |
-| `TaxNumberType` | `bsec.stcdt` |
-| `AddressID` | `bsec.adrnr` |
-| `AccountingClerkInternetAddress` | `bsec.intad` |
-| `IsNaturalPerson` | `cast(bsec.stkzn as bu_natural_person)` |
-| `AuthorizationGroup` | `bsec.begru` |
-| `PayeeIsAlternativePayee` | `case bsec.xcpdk when 'X' then cast('' as farp_isalternativepayee) else cast ('X' as farp_isalternativepayee) end` |
-| `Supplier` | `_OperationalAcctgDocItem.Supplier` |
-| `_CompanyCode` | *Association* |
-| `_JournalEntry` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_Address` | *Association* |
-| `_OperationalAcctgDocItem` | *Association* |
-| `_SupplierCompany` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `AccountingDocument` | ✓ | |  | `belnr` |
+| `FiscalYear` | ✓ | |  | `gjahr` |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` |
+| `BusinessPartnerName1` |  | |  | `cast(bsec.name1 as ad_name1)` |
+| `BusinessPartnerName2` |  | |  | `cast(bsec.name2 as ad_name2)` |
+| `BusinessPartnerName3` |  | |  | `cast(bsec.name3 as ad_name3)` |
+| `BusinessPartnerName4` |  | |  | `cast(bsec.name4 as ad_name4)` |
+| `Country` |  | |  | `land1` |
+| `CityName` |  | |  | `cast(bsec.ort01 as ad_city1)` |
+| `POBox` |  | |  | `pfach` |
+| `POBoxPostalCode` |  | |  | `pstl2` |
+| `PostalCode` |  | |  | `pstlz` |
+| `Region` |  | |  | `regio` |
+| `TaxID1` |  | |  | `stcd1` |
+| `TaxID2` |  | |  | `stcd2` |
+| `TaxID3` |  | |  | `stcd3` |
+| `TaxID4` |  | |  | `stcd4` |
+| `TaxID5` |  | |  | `stcd5` |
+| `StreetAddressName` |  | |  | `stras` |
+| `TaxNumberType` |  | |  | `stcdt` |
+| `AddressID` |  | |  | `adrnr` |
+| `AccountingClerkInternetAddress` |  | |  | `intad` |
+| `IsNaturalPerson` |  | |  | `cast(bsec.stkzn as bu_natural_person)` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `PayeeIsAlternativePayee` |  | |  | `case bsec.xcpdk when 'X' then cast('' as farp_isalternativepayee) else cast ('X' as farp_isalternativepayee) end` |
+| `Supplier` |  | | `_OperationalAcctgDocItem` | `Supplier` |
+| `_CompanyCode` | | ✓ | | |
+| `_JournalEntry` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_OperationalAcctgDocItem` | | ✓ | | |
+| `_SupplierCompany` | | ✓ | | |
 
 ## Associations
 

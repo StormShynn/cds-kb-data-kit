@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `BillOfMaterial` |
-| key `BillOfMaterialCategory` | `BillOfMaterialCategory` |
-| key `BillOfMaterialItemNodeNumber` | `BillOfMaterialItemNodeNumber` |
-| key `BOMItemInternalChangeCount` | `BOMItemInternalChangeCount` |
-| key `BOMSubItemNumberValue` | `BOMSubItemNumberValue` |
-| `BillOfMaterialItemUnit` | `BillOfMaterialItemUnit` |
-| `BillOfMaterialSubItemQuantity` | `BillOfMaterialSubItemQuantity` |
-| `BOMSubItemInstallationPoint` | `BOMSubItemInstallationPoint` |
-| `BillOfMaterialSubItemText` | `BillOfMaterialSubItemText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialCategory` | ✓ | |  |  |
+| `BillOfMaterialItemNodeNumber` | ✓ | |  |  |
+| `BOMItemInternalChangeCount` | ✓ | |  |  |
+| `BOMSubItemNumberValue` | ✓ | |  |  |
+| `BillOfMaterialItemUnit` |  | |  |  |
+| `BillOfMaterialSubItemQuantity` |  | |  |  |
+| `BOMSubItemInstallationPoint` |  | |  |  |
+| `BillOfMaterialSubItemText` |  | |  |  |
 
 ## Source Code
 

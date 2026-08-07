@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassInternalID` | `ClassCharc.ClassInternalID` |
-| key `CharcPositionNumber` | `ClassCharc.CharcPositionNumber` |
-| key `ValidityEndDate` | `ClassCharc.ValidityEndDate` |
-| `TimeIntervalNumber` | `ClassCharc.TimeIntervalNumber` |
-| `CharcInternalID` | `ClassCharc.CharcInternalID` |
-| `OverwrittenCharcInternalID` | `ClassCharc.OverwrittenCharcInternalID` |
-| `ClfnOrganizationalArea` | `ClassCharc.ClfnOrganizationalArea` |
-| `ClassType` | `ClassCharc.ClassType` |
-| `ChangeNumber` | `ClassCharc.ChangeNumber` |
-| `ValidityStartDate` | `ClassCharc.ValidityStartDate` |
-| `IsDeleted` | `ClassCharc.IsDeleted` |
-| `CharcOriginText` | `ClassCharc.CharcOriginText` |
-| `CharcIsProposalRelevant` | `ClassCharc.CharcIsProposalRelevant` |
-| `CharcIsPrptnOrProdUnitRelevant` | `ClassCharc.CharcIsPrptnOrProdUnitRelevant` |
-| `CharcIsPrintRelevant` | `ClassCharc.CharcIsPrintRelevant` |
-| `CharcIsSearchRelevant` | `ClassCharc.CharcIsSearchRelevant` |
-| `CharcIsDisplayRelevant` | `ClassCharc.CharcIsDisplayRelevant` |
-| `_Class` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassInternalID` | ✓ | |  |  |
+| `CharcPositionNumber` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `TimeIntervalNumber` |  | |  |  |
+| `CharcInternalID` |  | |  |  |
+| `OverwrittenCharcInternalID` |  | |  |  |
+| `ClfnOrganizationalArea` |  | |  |  |
+| `ClassType` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `CharcOriginText` |  | |  |  |
+| `CharcIsProposalRelevant` |  | |  |  |
+| `CharcIsPrptnOrProdUnitRelevant` |  | |  |  |
+| `CharcIsPrintRelevant` |  | |  |  |
+| `CharcIsSearchRelevant` |  | |  |  |
+| `CharcIsDisplayRelevant` |  | |  |  |
+| `_Class` | | ✓ | | |
 
 ## Associations
 

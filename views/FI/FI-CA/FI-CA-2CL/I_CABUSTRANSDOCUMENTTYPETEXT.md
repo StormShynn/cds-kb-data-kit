@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABusTransDocumentType` | `cast( left( dd07t.domvalue_l, 4 ) as evl_doctyp_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CABusTransDocumentTypeText` | `cast( ddtext as evl_doctyp_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABusTransDocumentType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as evl_doctyp_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CABusTransDocumentTypeText` |  | |  | `cast( ddtext as evl_doctyp_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

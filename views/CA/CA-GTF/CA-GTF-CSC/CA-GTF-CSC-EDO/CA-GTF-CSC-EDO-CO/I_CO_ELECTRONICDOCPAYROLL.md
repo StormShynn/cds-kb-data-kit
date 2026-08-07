@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `CO_ElectronicDocPyrlUniqueID` | `CO_ElectronicDocPyrlUniqueID` |
-| `CO_ElectronicDocPayrollNumber` | `CO_ElectronicDocPayrollNumber` |
-| `CO_ElectronicDocEmployeeCode` | `CO_ElectronicDocEmployeeCode` |
-| `CO_ElectronicDocPayrollDateTxt` | `CO_ElectronicDocPayrollDateTxt` |
-| `CO_ElectronicDocXMLType` | `CO_ElectronicDocXMLType` |
-| `CO_ElectronicDocGnrtnDateText` | `CO_ElectronicDocGnrtnDateText` |
-| `CO_ElectronicDocGnrtnTimeText` | `CO_ElectronicDocGnrtnTimeText` |
-| `CO_ElectronicDocumentNoteType` | `CO_ElectronicDocumentNoteType` |
-| `CO_ElectronicDocNoveltyFlag` | `CO_ElectronicDocNoveltyFlag` |
-| `CO_ElectronicDocumentZipKeyVal` | `CO_ElectronicDocumentZipKeyVal` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `CO_ElectronicDocPyrlUniqueID` |  | |  |  |
+| `CO_ElectronicDocPayrollNumber` |  | |  |  |
+| `CO_ElectronicDocEmployeeCode` |  | |  |  |
+| `CO_ElectronicDocPayrollDateTxt` |  | |  |  |
+| `CO_ElectronicDocXMLType` |  | |  |  |
+| `CO_ElectronicDocGnrtnDateText` |  | |  |  |
+| `CO_ElectronicDocGnrtnTimeText` |  | |  |  |
+| `CO_ElectronicDocumentNoteType` |  | |  |  |
+| `CO_ElectronicDocNoveltyFlag` |  | |  |  |
+| `CO_ElectronicDocumentZipKeyVal` |  | |  |  |
 
 ## Source Code
 

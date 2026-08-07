@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProductionVersion` | `char4` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionVersion` |  | |  | `char4` |
 
 ## Source Code
 

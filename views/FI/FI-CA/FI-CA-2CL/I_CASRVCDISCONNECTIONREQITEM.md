@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAServiceDisconnectionRequest` | `dscpnr` |
-| key `CADocumentNumber` | `opbel` |
-| key `CARepetitionItemNumber` | `opupw` |
-| key `CABPItemNumber` | `opupk` |
-| key `CASubItemNumber` | `opupz` |
-| `CADunningAmount` | `mbetm` |
-| `TransactionCurrency` | `waers` |
-| `CADunningAmountInLocalCurrency` | `mbetc` |
-| `LocalCurrency` | `wersc` |
-| `_TransactionCurrency` | *Association* |
-| `_LocalCurrency` | *Association* |
-| `_CADocumentBPItem_2` | *Association* |
-| `_CADocument_2` | *Association* |
-| `_CADocumentBPItem` | *Association* |
-| `_CADocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |
+| `CADocumentNumber` | ✓ | |  | `opbel` |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` |
+| `CABPItemNumber` | ✓ | |  | `opupk` |
+| `CASubItemNumber` | ✓ | |  | `opupz` |
+| `CADunningAmount` |  | |  | `mbetm` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `CADunningAmountInLocalCurrency` |  | |  | `mbetc` |
+| `LocalCurrency` |  | |  | `wersc` |
+| `_TransactionCurrency` | | ✓ | | |
+| `_LocalCurrency` | | ✓ | | |
+| `_CADocumentBPItem_2` | | ✓ | | |
+| `_CADocument_2` | | ✓ | | |
+| `_CADocumentBPItem` | | ✓ | | |
+| `_CADocument` | | ✓ | | |
 
 ## Associations
 

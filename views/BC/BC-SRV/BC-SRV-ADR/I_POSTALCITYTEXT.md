@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `Country` | `country` |
-| key `CityNumber` | `city_code` |
-| `CityName` | `city_name` |
-| `_Country` | *Association* |
-| `_PostalCity` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `Country` | ✓ | |  | `country` |
+| `CityNumber` | ✓ | |  | `city_code` |
+| `CityName` |  | |  | `city_name` |
+| `_Country` | | ✓ | | |
+| `_PostalCity` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `ConfigurationDeprecationCode` | `cast( dd07t.domvalue_l as config_deprecation_code )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `ConfignDeprecationCodeName` | `cast( dd07t.ddtext as config_deprecation_code_name preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ConfigurationDeprecationCode` | ✓ | |  | `cast( dd07t.domvalue_l as config_deprecation_code )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `ConfignDeprecationCodeName` |  | |  | `cast( dd07t.ddtext as config_deprecation_code_name preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

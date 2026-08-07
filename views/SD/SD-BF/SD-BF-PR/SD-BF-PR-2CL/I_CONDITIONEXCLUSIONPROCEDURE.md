@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionExclusionProcedure` | `cast( dd07l.domvalue_l as kauvf )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionExclusionProcedure` | ✓ | |  | `cast( dd07l.domvalue_l as kauvf )` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

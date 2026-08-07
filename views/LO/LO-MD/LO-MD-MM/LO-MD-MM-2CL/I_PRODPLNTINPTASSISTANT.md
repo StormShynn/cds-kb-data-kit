@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `mara.matnr` |
-| key `Plant` | `v_marc_md.werks` |
-| `ProductType` | `mtart` |
-| `ProductGroup` | `matkl` |
-| `BaseUnit` | `meins` |
-| `AuthorizationGroup` | `begru` |
-| `MRPType` | `dismm` |
-| `MRPController` | `dispo` |
-| `MRPGroup` | `disgr` |
-| `LotSizingProcedure` | `disls` |
-| `MinimumLotSizeQuantity` | `bstmi` |
-| `PlanningTimeFence` | `fxhor` |
-| `SafetyDuration` | `shzet` |
-| `GoodsReceiptDuration` | `webaz` |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_BaseUnitOfMeasureText` | *Association* |
-| `_ProductType` | *Association* |
-| `_ProductTypeName` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_ProductGroupText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `ProductType` |  | |  | `mtart` |
+| `ProductGroup` |  | |  | `matkl` |
+| `BaseUnit` |  | |  | `meins` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `MRPType` |  | |  | `dismm` |
+| `MRPController` |  | |  | `dispo` |
+| `MRPGroup` |  | |  | `disgr` |
+| `LotSizingProcedure` |  | |  | `disls` |
+| `MinimumLotSizeQuantity` |  | |  | `bstmi` |
+| `PlanningTimeFence` |  | |  | `fxhor` |
+| `SafetyDuration` |  | |  | `shzet` |
+| `GoodsReceiptDuration` |  | |  | `webaz` |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | |
+| `_ProductType` | | ✓ | | |
+| `_ProductTypeName` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_ProductGroupText` | | ✓ | | |
 
 ## Associations
 

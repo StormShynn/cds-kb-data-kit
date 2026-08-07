@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentNumber` | `CADocumentNumber` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `CATaxCompanyCode` | `CATaxCompanyCode` |
-| `CAStorageLocationOfTaxSuplmnt` | `CAStorageLocationOfTaxSuplmnt` |
-| `CATaxCodeWasExchanged` | `CATaxCodeWasExchanged` |
-| `TaxReportingDate` | `TaxReportingDate` |
-| `CAReconciliationKey` | `CAReconciliationKey` |
-| `CASeparateDocIsCreatedInGL` | `CASeparateDocIsCreatedInGL` |
-| `CARequestedPeriodForGLTransfer` | `CARequestedPeriodForGLTransfer` |
-| `CAApplicationArea` | `CAApplicationArea` |
-| `CADocumentType` | `CADocumentType` |
-| `CADocumentOriginCode` | `CADocumentOriginCode` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `DocumentDate` | `DocumentDate` |
-| `CAPostingDate` | `CAPostingDate` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `CAReferenceDocument` | `CAReferenceDocument` |
-| `CAReturnReason` | `CAReturnReason` |
-| `CAPostingReason` | `CAPostingReason` |
-| `ReferenceDocumentType` | `ReferenceDocumentType` |
-| `OriginalReferenceDocument` | `OriginalReferenceDocument` |
-| `CAReversedDocumentNumber` | `CAReversedDocumentNumber` |
-| `CAClearingInformation` | `CAClearingInformation` |
-| `CAReversalDocumentNumber` | `CAReversalDocumentNumber` |
-| `CADocumentSupplements` | `CADocumentSupplements` |
-| `LogicalSystem` | `LogicalSystem` |
-| `CAWorkflowCheckReason` | `CAWorkflowCheckReason` |
-| `CAWorkflowCheckProcess` | `CAWorkflowCheckProcess` |
-| `CADocumentTransactionClass` | `CADocumentTransactionClass` |
-| `CADocContainsCashFlowItems` | `CADocContainsCashFlowItems` |
-| `CADocumentClass` | `CADocumentClass` |
-| `CADocumentVersion` | `CADocumentVersion` |
-| `IsIndividualPosting` | `IsIndividualPosting` |
-| `CADocumentIsAged` | `CADocumentIsAged` |
-| `_BPItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CATaxCompanyCode` |  | |  |  |
+| `CAStorageLocationOfTaxSuplmnt` |  | |  |  |
+| `CATaxCodeWasExchanged` |  | |  |  |
+| `TaxReportingDate` |  | |  |  |
+| `CAReconciliationKey` |  | |  |  |
+| `CASeparateDocIsCreatedInGL` |  | |  |  |
+| `CARequestedPeriodForGLTransfer` |  | |  |  |
+| `CAApplicationArea` |  | |  |  |
+| `CADocumentType` |  | |  |  |
+| `CADocumentOriginCode` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `CAPostingDate` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `CAReferenceDocument` |  | |  |  |
+| `CAReturnReason` |  | |  |  |
+| `CAPostingReason` |  | |  |  |
+| `ReferenceDocumentType` |  | |  |  |
+| `OriginalReferenceDocument` |  | |  |  |
+| `CAReversedDocumentNumber` |  | |  |  |
+| `CAClearingInformation` |  | |  |  |
+| `CAReversalDocumentNumber` |  | |  |  |
+| `CADocumentSupplements` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `CAWorkflowCheckReason` |  | |  |  |
+| `CAWorkflowCheckProcess` |  | |  |  |
+| `CADocumentTransactionClass` |  | |  |  |
+| `CADocContainsCashFlowItems` |  | |  |  |
+| `CADocumentClass` |  | |  |  |
+| `CADocumentVersion` |  | |  |  |
+| `IsIndividualPosting` |  | |  |  |
+| `CADocumentIsAged` |  | |  |  |
+| `_BPItem` | | ✓ | | |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationAnswer` | `answer` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationAnswer` | ✓ | |  | `answer` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

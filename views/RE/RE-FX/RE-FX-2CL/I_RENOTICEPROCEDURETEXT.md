@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `RENoticeProcedure` | `ntproc` |
-| `RENoticeProcedureDescription` | `xntproc` |
-| `_RENoticeProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `RENoticeProcedure` | ✓ | |  | `ntproc` |
+| `RENoticeProcedureDescription` |  | |  | `xntproc` |
+| `_RENoticeProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

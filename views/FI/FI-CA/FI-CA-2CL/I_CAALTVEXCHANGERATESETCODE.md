@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAAltvExchangeRateSetCode` | `cast ( left( dd07l.domvalue_l, 1 ) as xdexr_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAAltvExchangeRateSetCode` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as xdexr_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

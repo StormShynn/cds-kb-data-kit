@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `SupplierConfirmation.PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `SequentialNmbrOfSuplrConf` | `SequentialNmbrOfSuplrConf` |
-| `SupplierConfirmationCategory` | `SupplierConfirmationCategory` |
-| `DeliveryDate` | `DeliveryDate` |
-| `DelivDateCategory` | `DelivDateCategory` |
-| `DeliveryTime` | `DeliveryTime` |
-| `CreationDate` | `SupplierConfirmation.CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `ConfirmedQuantity` | `ConfirmedQuantity` |
-| `MRPRelevantQuantity` | `MRPRelevantQuantity` |
-| `SuplrConfCreationCategory` | `SuplrConfCreationCategory` |
-| `IsDeleted` | `IsDeleted` |
-| `ConfIsRelevantToMRP` | `ConfIsRelevantToMRP` |
-| `SupplierConfirmationExtNumber` | `ExternalReferenceDocumentID` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| `ManufacturerPartProfile` | `ManufacturerPartProfile` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `NumberOfReminders` | `NumberOfReminders` |
-| `Batch` | `Batch` |
-| `DeliveryIsInPlant` | `DeliveryIsInPlant` |
-| `HandoverDate` | `HandoverDate` |
-| `HandoverTime` | `HandoverTime` |
-| `PerformancePeriodStartDate` | `PerformancePeriodStartDate` |
-| `PerformancePeriodEndDate` | `PerformancePeriodEndDate` |
-| `ServicePerformer` | `ServicePerformer` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `SupplierConfirmation` | `SupplierConfirmation` |
-| `SupplierConfirmationItem` | `SupplierConfirmationItem` |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `SequentialNmbrOfSuplrConf` | ✓ | |  |  |
+| `SupplierConfirmationCategory` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `DeliveryTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `ConfirmedQuantity` |  | |  |  |
+| `MRPRelevantQuantity` |  | |  |  |
+| `SuplrConfCreationCategory` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ConfIsRelevantToMRP` |  | |  |  |
+| `SupplierConfirmationExtNumber` |  | |  | `ExternalReferenceDocumentID` |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `ManufacturerPartProfile` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `NumberOfReminders` |  | |  |  |
+| `Batch` |  | |  |  |
+| `DeliveryIsInPlant` |  | |  |  |
+| `HandoverDate` |  | |  |  |
+| `HandoverTime` |  | |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `SupplierConfirmation` |  | |  |  |
+| `SupplierConfirmationItem` |  | |  |  |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
 
 ## Associations
 

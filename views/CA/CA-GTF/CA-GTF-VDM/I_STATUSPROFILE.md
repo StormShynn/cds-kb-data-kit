@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StatusProfile` | `tj20.stsma` |
-| `MasterLanguage` | `tj20.pflsp` |
-| `_StatusProfileText` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatusProfile` | ✓ | |  | `stsma` |
+| `MasterLanguage` |  | |  | `pflsp` |
+| `_StatusProfileText` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

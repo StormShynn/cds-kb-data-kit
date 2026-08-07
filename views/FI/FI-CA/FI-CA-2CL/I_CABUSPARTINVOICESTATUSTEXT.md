@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABusPartnerInvoiceStatus` | `cast( left( dd07t.domvalue_l,2 ) as inv_status_dc_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CABusPartnerInvoiceStatusText` | `cast( ddtext as inv_status_dc_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABusPartnerInvoiceStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l,2 ) as inv_status_dc_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CABusPartnerInvoiceStatusText` |  | |  | `cast( ddtext as inv_status_dc_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLotType` | `InspectionLotType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLotType` | ✓ | |  |  |
 
 ## Source Code
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPEmploymentStatus` | `tp11.employment` |
-| `_Text` | *Association* |
-| `_BPEmployment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPEmploymentStatus` | ✓ | |  | `employment` |
+| `_Text` | | ✓ | | |
+| `_BPEmployment` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnVersionRunMode` | `_CnsldtnVersionRunMode.CnsldtnVersionRunMode` |
-| `DomainValue` | `_CnsldtnVersionRunMode.DomainValue` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnVersionRunMode` | ✓ | | `_CnsldtnVersionRunMode` | `CnsldtnVersionRunMode` |
+| `DomainValue` |  | | `_CnsldtnVersionRunMode` | `DomainValue` |
 
 ## Source Code
 

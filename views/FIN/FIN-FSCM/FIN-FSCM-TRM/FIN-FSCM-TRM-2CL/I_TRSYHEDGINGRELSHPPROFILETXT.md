@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HedgingProfile` | `cast(TrsyHedgingRelshpProfileTxt.hrel_profl as ftr_gen_hdgg_profile preserving type)` |
-| key `Language` | `TrsyHedgingRelshpProfileTxt.spras` |
-| `TrsyHedgingRelshpProfileName` | `cast(TrsyHedgingRelshpProfileTxt.hrel_profl_descr as ftr_gen_hdgg_profile_name preserving type)` |
-| `_TrsyHedgingRelshpProfile` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HedgingProfile` | ✓ | |  | `cast(TrsyHedgingRelshpProfileTxt.hrel_profl as ftr_gen_hdgg_profile preserving type)` |
+| `Language` | ✓ | |  | `spras` |
+| `TrsyHedgingRelshpProfileName` |  | |  | `cast(TrsyHedgingRelshpProfileTxt.hrel_profl_descr as ftr_gen_hdgg_profile_name preserving type)` |
+| `_TrsyHedgingRelshpProfile` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

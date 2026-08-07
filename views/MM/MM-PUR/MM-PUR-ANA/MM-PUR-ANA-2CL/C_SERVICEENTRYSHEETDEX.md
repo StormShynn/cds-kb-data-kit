@@ -30,36 +30,36 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| `ServiceEntrySheetName` | `ServiceEntrySheetName` |
-| `Supplier` | `Supplier` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `IsDeleted` | `IsDeleted` |
-| `ApprovalStatus` | `ApprovalStatus` |
-| `ApprovalDateTime` | `ApprovalDateTime` |
-| `ResponsiblePerson` | `ResponsiblePerson` |
-| `Currency` | `Currency` |
-| `MaterialDocument` | `MaterialDocument` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `PurgDocExternalSystem` | `PurgDocExternalSystem` |
-| `PurgDocExternalReference` | `PurgDocExternalReference` |
-| `PostingDate` | `PostingDate` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_ServiceEntrySheetItemDEX` | *Association* |
-| `_Supplier` | *Association* |
-| `_PurchaseOrder` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_ServiceEntrySheetItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `ServiceEntrySheetName` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ApprovalStatus` |  | |  |  |
+| `ApprovalDateTime` |  | |  |  |
+| `ResponsiblePerson` |  | |  |  |
+| `Currency` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `PurgDocExternalSystem` |  | |  |  |
+| `PurgDocExternalReference` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_ServiceEntrySheetItemDEX` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_PurchaseOrder` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_ServiceEntrySheetItem` | | ✓ | | |
 
 ## Associations
 

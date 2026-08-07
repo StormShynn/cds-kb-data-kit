@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_tfk2617t.langu` |
-| key `CAApplicationArea` | `_tfk2617t.applk` |
-| key `CAInvcgChargeAndDiscountKey` | `_tfk2617t.chgkey` |
-| `CAInvcgChrgAndDiscKeyText` | `_tfk2617t.text` |
-| `_ApplArea` | *Association* |
-| `_CAInvcgChrgAndDiscKey` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_tfk2617t` | `langu` |
+| `CAApplicationArea` | ✓ | | `_tfk2617t` | `applk` |
+| `CAInvcgChargeAndDiscountKey` | ✓ | | `_tfk2617t` | `chgkey` |
+| `CAInvcgChrgAndDiscKeyText` |  | | `_tfk2617t` | `text` |
+| `_ApplArea` | | ✓ | | |
+| `_CAInvcgChrgAndDiscKey` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

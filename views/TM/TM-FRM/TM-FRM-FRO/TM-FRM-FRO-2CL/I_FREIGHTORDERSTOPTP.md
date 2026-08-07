@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderStopUUID` | `TransportationOrderStopUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationOrderStop` | `TransportationOrderStop` |
-| `TranspOrdStopCategory` | `TranspOrdStopCategory` |
-| `TranspOrdStopRole` | `TranspOrdStopRole` |
-| `LocationAdditionalUUID` | `LocationAdditionalUUID` |
-| `LocationId` | `LocationId` |
-| `LocationUNCode` | `LocationUNCode` |
-| `LocationIATACode` | `LocationIATACode` |
-| `TranspOrdStopPlanTranspDteTme` | `TranspOrdStopPlanTranspDteTme` |
-| `TranspOrdStopDteTme` | `TranspOrdStopDteTme` |
-| `TranspOrdStopApptStrtDteTme` | `TranspOrdStopApptStrtDteTme` |
-| `TranspOrdStopApptEndDteTme` | `TranspOrdStopApptEndDteTme` |
-| `TranspStopCarrConfStrtDteTme` | `TranspStopCarrConfStrtDteTme` |
-| `TranspStopCarrConfEndDteTme` | `TranspStopCarrConfEndDteTme` |
-| `TranspOrdStopSequencePosition` | `TranspOrdStopSequencePosition` |
-| `TranspOrdStopHndlgExecStatus` | `TranspOrdStopHndlgExecStatus` |
-| `TranspOrdStopExecIsBlocked` | `TranspOrdStopExecIsBlocked` |
-| `I_FreightOrderTP` | `FreightOrderStop._TransportationOrder as _FreightOrder : redirected to parent I_FreightOrderTP` |
-| `I_FreightOrderStageTP` | `FreightOrderStop._TranspOrderStage as _FreightOrderStage : redirected to composition child I_FreightOrderStageTP` |
-| `I_FrtOrdStopLocAdDfRpnTP` | `FreightOrderStop._TrOrdStopLocAddrDfltRprstn as _FrtOrdStopLocAddrDfltRprstn : redirected to composition child I_FrtOrdStopLocAdDfRpnTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderStopUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TransportationOrderStop` |  | |  |  |
+| `TranspOrdStopCategory` |  | |  |  |
+| `TranspOrdStopRole` |  | |  |  |
+| `LocationAdditionalUUID` |  | |  |  |
+| `LocationId` |  | |  |  |
+| `LocationUNCode` |  | |  |  |
+| `LocationIATACode` |  | |  |  |
+| `TranspOrdStopPlanTranspDteTme` |  | |  |  |
+| `TranspOrdStopDteTme` |  | |  |  |
+| `TranspOrdStopApptStrtDteTme` |  | |  |  |
+| `TranspOrdStopApptEndDteTme` |  | |  |  |
+| `TranspStopCarrConfStrtDteTme` |  | |  |  |
+| `TranspStopCarrConfEndDteTme` |  | |  |  |
+| `TranspOrdStopSequencePosition` |  | |  |  |
+| `TranspOrdStopHndlgExecStatus` |  | |  |  |
+| `TranspOrdStopExecIsBlocked` |  | |  |  |
+| `I_FreightOrderTP` |  | |  | `FreightOrderStop._TransportationOrder as _FreightOrder : redirected to parent I_FreightOrderTP` |
+| `I_FreightOrderStageTP` |  | |  | `FreightOrderStop._TranspOrderStage as _FreightOrderStage : redirected to composition child I_FreightOrderStageTP` |
+| `I_FrtOrdStopLocAdDfRpnTP` |  | |  | `FreightOrderStop._TrOrdStopLocAddrDfltRprstn as _FrtOrdStopLocAddrDfltRprstn : redirected to composition child I_FrtOrdStopLocAdDfRpnTP` |
 
 ## Source Code
 

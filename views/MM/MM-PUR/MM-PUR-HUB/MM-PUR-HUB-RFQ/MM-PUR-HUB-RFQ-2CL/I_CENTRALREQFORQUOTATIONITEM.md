@@ -29,52 +29,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralRequestForQuotation` | `CentralRequestForQuotation` |
-| key `CentralRequestForQuotationItem` | `CentralRequestForQuotationItem` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentItemText` | `PurchasingDocumentItemText` |
-| `ProductType` | `ProductType` |
-| `ProductTypeCode` | `ProductTypeCode` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `ManufacturerPartNmbr` | `ManufacturerPartNmbr` |
-| `Manufacturer` | `Manufacturer` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Plant` | `Plant` |
-| `ManualDeliveryAddressID` | `ManualDeliveryAddressID` |
-| `ReferenceDeliveryAddressID` | `ReferenceDeliveryAddressID` |
-| `AddressID` | `AddressID` |
-| `ItemDeliveryAddressID` | `ItemDeliveryAddressID` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `OrderItemQtyToBaseQtyNmrtr` | `OrderItemQtyToBaseQtyNmrtr` |
-| `OrderItemQtyToBaseQtyDnmntr` | `OrderItemQtyToBaseQtyDnmntr` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
-| `BaseUnit` | `BaseUnit` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `RequirementTracking` | `RequirementTracking` |
-| `PurchasingCentralMaterial` | `PurchasingCentralMaterial` |
-| `PurchasingDocumentItemCategory` | `PurchasingDocumentItemCategory` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `_CentralRequestForQuotation` | *Association* |
-| `_PurchasingDocumentCategory` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_Plant` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_CntrlSupplierQuotationItem` | *Association* |
-| `_CntrlReqForQtanScheduleLine` | *Association* |
-| `_CentralRFQItemDistribution` | *Association* |
-| `_ProductType` | *Association* |
-| `_Manufacturer` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_PurgDocumentItemCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralRequestForQuotation` | ✓ | |  |  |
+| `CentralRequestForQuotationItem` | ✓ | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |
+| `ProductType` |  | |  |  |
+| `ProductTypeCode` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `PurchasingCentralMaterial` |  | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `_CentralRequestForQuotation` | | ✓ | | |
+| `_PurchasingDocumentCategory` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_CntrlSupplierQuotationItem` | | ✓ | | |
+| `_CntrlReqForQtanScheduleLine` | | ✓ | | |
+| `_CentralRFQItemDistribution` | | ✓ | | |
+| `_ProductType` | | ✓ | | |
+| `_Manufacturer` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_PurgDocumentItemCategory` | | ✓ | | |
 
 ## Associations
 

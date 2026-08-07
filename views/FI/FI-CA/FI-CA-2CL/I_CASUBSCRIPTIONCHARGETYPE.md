@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CASubscriptionChargeType` | `cast( left( dd07l.domvalue_l,2 ) as charge_type_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CASubscriptionChargeType` | ✓ | |  | `cast( left( dd07l.domvalue_l,2 ) as charge_type_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

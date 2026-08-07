@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierQuotationType` | `cast(source_doc_type as vdm_qtn_doc_type preserving type )` |
-| key `FollowOnDocumentCategory` | `target_doc_cat` |
-| key `FollowOnDocumentType` | `cast(target_doc_type as followondoctype preserving type )` |
-| `_SupplierQuotationType` | *Association* |
-| `_FollowOnDocumentCategory` | *Association* |
-| `_DocTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierQuotationType` | ✓ | |  | `cast(source_doc_type as vdm_qtn_doc_type preserving type )` |
+| `FollowOnDocumentCategory` | ✓ | |  | `target_doc_cat` |
+| `FollowOnDocumentType` | ✓ | |  | `cast(target_doc_type as followondoctype preserving type )` |
+| `_SupplierQuotationType` | | ✓ | | |
+| `_FollowOnDocumentCategory` | | ✓ | | |
+| `_DocTypeText` | | ✓ | | |
 
 ## Associations
 

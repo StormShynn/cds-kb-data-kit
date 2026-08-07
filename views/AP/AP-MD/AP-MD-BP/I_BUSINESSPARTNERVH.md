@@ -32,33 +32,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner.BusinessPartner` |
-| `FormOfAddress` | `BusinessPartner.FormOfAddress` |
-| `FormOfAddressName` | `_FormOfAddressText.FormOfAddressName` |
-| `BusinessPartnerName` | `BusinessPartner.BusinessPartnerName` |
-| `BusinessPartnerCategory` | `BusinessPartner.BusinessPartnerCategory` |
-| `BusinessPartnerIDByExtSystem` | `BusinessPartner.BusinessPartnerIDByExtSystem` |
-| `FirstName` | `BusinessPartner.FirstName` |
-| `LastName` | `BusinessPartner.LastName` |
-| `OrganizationBPName1` | `BusinessPartner.OrganizationBPName1` |
-| `GroupBusinessPartnerName1` | `BusinessPartner.GroupBusinessPartnerName1` |
-| `BirthDate` | `BusinessPartner.BirthDate` |
-| `AuthorizationGroup` | `BusinessPartner.AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `BusinessPartner.IsBusinessPurposeCompleted` |
-| `DataControllerSet` | `BusinessPartner.DataControllerSet` |
-| `DataController1` | `BusinessPartner.DataController1` |
-| `DataController2` | `BusinessPartner.DataController2` |
-| `DataController3` | `BusinessPartner.DataController3` |
-| `DataController4` | `BusinessPartner.DataController4` |
-| `DataController5` | `BusinessPartner.DataController5` |
-| `DataController6` | `BusinessPartner.DataController6` |
-| `DataController7` | `BusinessPartner.DataController7` |
-| `DataController8` | `BusinessPartner.DataController8` |
-| `DataController9` | `BusinessPartner.DataController9` |
-| `DataController10` | `BusinessPartner.DataController10` |
-| `_FormOfAddressText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `FormOfAddressName` |  | | `_FormOfAddressText` | `FormOfAddressName` |
+| `BusinessPartnerName` |  | |  |  |
+| `BusinessPartnerCategory` |  | |  |  |
+| `BusinessPartnerIDByExtSystem` |  | |  |  |
+| `FirstName` |  | |  |  |
+| `LastName` |  | |  |  |
+| `OrganizationBPName1` |  | |  |  |
+| `GroupBusinessPartnerName1` |  | |  |  |
+| `BirthDate` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_FormOfAddressText` | | ✓ | | |
 
 ## Associations
 

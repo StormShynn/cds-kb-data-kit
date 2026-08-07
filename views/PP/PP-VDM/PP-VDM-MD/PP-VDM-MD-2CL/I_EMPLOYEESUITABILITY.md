@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `EmployeeSuitability` | `qualf` |
-| `_Plant` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `EmployeeSuitability` | ✓ | |  | `qualf` |
+| `_Plant` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `PurgAggrgdSftyDataSheetStatus` | `cast( dd07t.domvalue_l as mmpur_pc_total_status_sds )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PurgAggrgdSftyDataSheetStsName` | `cast( dd07t.ddtext as mmpur_pc_total_status_sds_dscr preserving type )` |
-| `_Language` | *Association* |
-| `_PurgAggrgdSftyDataSheetStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PurgAggrgdSftyDataSheetStatus` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_total_status_sds )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PurgAggrgdSftyDataSheetStsName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_total_status_sds_dscr preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PurgAggrgdSftyDataSheetStatus` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionResultStatus` | `tq76.status` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionResultStatus` | ✓ | |  | `status` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

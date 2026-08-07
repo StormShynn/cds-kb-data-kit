@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressType` | `adr_kind` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressType` | ✓ | |  | `adr_kind` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

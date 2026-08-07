@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShippingType` | `vsart` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShippingType` | ✓ | |  | `vsart` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

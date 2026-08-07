@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectEntitlementUUID` | `entitlmnt.guid` |
-| `ProjectUUID` | `entitlmnt.project_guid` |
-| `ProjectRoleUUID` | `entitlmnt.role_guid` |
-| `TeamMemberUUID` | `entitlmnt.team_member_guid` |
-| `CreatedByUser` | `entitlmnt.created_by` |
-| `CreationDateTime` | `entitlmnt.created_on` |
-| `LastChangedByUser` | `entitlmnt.changed_by` |
-| `LastChangeDateTime` | `entitlmnt.changed_on` |
-| `_Project` | *Association* |
-| `_Role` | *Association* |
-| `_TeamMember` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectEntitlementUUID` | ✓ | |  | `guid` |
+| `ProjectUUID` |  | |  | `project_guid` |
+| `ProjectRoleUUID` |  | |  | `role_guid` |
+| `TeamMemberUUID` |  | |  | `team_member_guid` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDateTime` |  | |  | `created_on` |
+| `LastChangedByUser` |  | |  | `changed_by` |
+| `LastChangeDateTime` |  | |  | `changed_on` |
+| `_Project` | | ✓ | | |
+| `_Role` | | ✓ | | |
+| `_TeamMember` | | ✓ | | |
 
 ## Associations
 

@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast( finsc_ld_cmp.bukrs as fis_bukrs preserving type )` |
-| key `Ledger` | `cast( finsc_ld_cmp.rldnr as fis_rldnr preserving type )` |
-| key `FiscalYear` | `I_FiscalYearPeriod.FiscalYear` |
-| key `FiscalPeriod` | `I_FiscalYearPeriod.FiscalPeriod` |
-| `FiscalYearVariant` | `I_FiscalYearPeriod.FiscalYearVariant` |
-| `FiscalPeriodStartDate` | `I_FiscalYearPeriod.FiscalPeriodStartDate` |
-| `FiscalPeriodEndDate` | `I_FiscalYearPeriod.FiscalPeriodEndDate` |
-| `IsSpecialPeriod` | `I_FiscalYearPeriod.IsSpecialPeriod` |
-| `FiscalYearStartDate` | `I_FiscalYearPeriod.FiscalYearStartDate` |
-| `FiscalYearEndDate` | `I_FiscalYearPeriod.FiscalYearEndDate` |
-| `NextFiscalPeriod` | `I_FiscalYearPeriod.NextFiscalPeriod` |
-| `NextFiscalPeriodFiscalYear` | `I_FiscalYearPeriod.NextFiscalPeriodFiscalYear` |
-| `FiscalYearPeriod` | `I_FiscalYearPeriod.FiscalYearPeriod` |
-| `_LedgerText` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Ledger` | *Association* |
-| `_FiscalYearVariant` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_FiscalYearForVariant` | *Association* |
-| `_Text` | *Association* |
-| `_FiscalYearForLedger` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( finsc_ld_cmp.bukrs as fis_bukrs preserving type )` |
+| `Ledger` | ✓ | |  | `cast( finsc_ld_cmp.rldnr as fis_rldnr preserving type )` |
+| `FiscalYear` | ✓ | |  |  |
+| `FiscalPeriod` | ✓ | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `FiscalPeriodStartDate` |  | |  |  |
+| `FiscalPeriodEndDate` |  | |  |  |
+| `IsSpecialPeriod` |  | |  |  |
+| `FiscalYearStartDate` |  | |  |  |
+| `FiscalYearEndDate` |  | |  |  |
+| `NextFiscalPeriod` |  | |  |  |
+| `NextFiscalPeriodFiscalYear` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `_LedgerText` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_FiscalYearForVariant` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_FiscalYearForLedger` | | ✓ | | |
 
 ## Associations
 

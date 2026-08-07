@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PCLgsDcItmPackgInstructionUUID` | `PCLgsDcItmPackgInstructionUUID` |
-| `ProdCmplncLogsDocumentUUID` | `ProdCmplncLogsDocumentUUID` |
-| `ProdCmplncLogsDocumentItem` | `ProdCmplncLogsDocumentItem` |
-| `PackingInstructionSystemUUID` | `PackingInstructionSystemUUID` |
-| `PackingInstructionNumber` | `PackingInstructionNumber` |
-| `NumberOfHandlingUnits` | `NumberOfHandlingUnits` |
-| `CreationUTCDateTime` | `CreationUTCDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeUTCDateTime` | `LastChangeUTCDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_Item` | *Association* |
-| `_Document` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PCLgsDcItmPackgInstructionUUID` | ✓ | |  |  |
+| `ProdCmplncLogsDocumentUUID` |  | |  |  |
+| `ProdCmplncLogsDocumentItem` |  | |  |  |
+| `PackingInstructionSystemUUID` |  | |  |  |
+| `PackingInstructionNumber` |  | |  |  |
+| `NumberOfHandlingUnits` |  | |  |  |
+| `CreationUTCDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeUTCDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Document` | | ✓ | | |
 
 ## Source Code
 

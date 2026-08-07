@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `hrrp_dirt_n.hrycls` |
-| key `CostCtrActivityTypeHierarchy` | `cast(hrrp_dirt_n.hryid as fis_hryid_cctracttytpe)` |
-| key `ValidityEndDate` | `hrrp_dirt_n.hryvalto` |
-| key `Language` | `spras` |
-| `ValidityStartDate` | `hrrp_dirt_n.hryvalfrom` |
-| `CostCtrActivityTypeHierName` | `hrytxt` |
-| `_ControllingAreaText` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `hrycls` |
+| `CostCtrActivityTypeHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_cctracttytpe)` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `CostCtrActivityTypeHierName` |  | |  | `hrytxt` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

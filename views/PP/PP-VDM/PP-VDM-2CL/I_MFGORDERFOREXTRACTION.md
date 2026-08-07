@@ -27,175 +27,175 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturingOrder` | `cast(head.OrderID as manufacturingorder preserving type)` |
-| `ManufacturingOrderItem` | `item.OrderItem` |
-| `ManufacturingOrderCategory` | `head.OrderCategory` |
-| `ManufacturingOrderType` | `head.OrderType` |
-| `ManufacturingOrderText` | `cast(head.OrderDescription as manufacturingordertext preserving type)` |
-| `ManufacturingOrderHasLongText` | `head.OrderHasLongText` |
-| `LongTextLanguage` | `head.LongTextLanguage` |
-| `ManufacturingOrderImportance` | `cast(hdr2.PriorityCode as orderimportancecode preserving type)` |
-| `IsMarkedForDeletion` | `head.IsMarkedForDeletion` |
-| `IsCompletelyDelivered` | `item.IsCompletelyDelivered` |
-| `MfgOrderIsPartOfCollvOrder` | `hdr2.MfgOrderIsPartOfCollvOrder` |
-| `MfgOrderHierarchyLevel` | `hdr2.MfgOrderHierarchyLevel` |
-| `MfgOrderHierarchyLevelValue` | `hdr2.OrderHierarchyLevelValue` |
-| `MfgOrderHierarchyPathValue` | `hdr2.OrderHierarchyPathValue` |
-| `OrderIsNotCostedAutomatically` | `hdr2.OrderIsNotCostedAutomatically` |
-| `OrdIsNotSchedldAutomatically` | `hdr2.OrdIsNotSchedldAutomatically` |
-| `ProdnProcgIsFlexible` | `hdr2.ProdnProcgIsFlexible` |
-| `CreationDate` | `cast(head.CreationDate as ordercreationdate preserving type)` |
-| `CreationTime` | `cast(head.CreationTime as ordercreationtime preserving type)` |
-| `CreatedByUser` | `head.CreatedByUser` |
-| `LastChangeDate` | `head.LastChangeDate` |
-| `LastChangeTime` | `head.LastChangeTime` |
-| `LastChangedByUser` | `head.LastChangedByUser` |
-| `Material` | `item.Material` |
-| `Product` | `cast(item.Material as productnumber preserving type)` |
-| `StorageLocation` | `item.StorageLocation` |
-| `Batch` | `item.Batch` |
-| `GoodsRecipientName` | `item.GoodsRecipientName` |
-| `UnloadingPointName` | `item.UnloadingPointName` |
-| `InventoryUsabilityCode` | `item.InventoryUsabilityCode` |
-| `MaterialGoodsReceiptDuration` | `item.MaterialGoodsReceiptDuration` |
-| `MfgOrderInternalID` | `cast(hdr2.OrderInternalID as pph_aufpl preserving type)` |
-| `ReferenceOrder` | `head.ReferenceOrder` |
-| `LeadingOrder` | `hdr2.LeadingOrder` |
-| `SuperiorOrder` | `hdr2.MfgOrderSuperiorMfgOrder` |
-| `ProductionPlant` | `cast(head.Plant as pwwrk preserving type)` |
-| `PlanningPlant` | `item.MRPPlant` |
-| `MRPArea` | `item.MRPArea` |
-| `MRPController` | `cast(hdr2.MRPController as pph_dispo preserving type)` |
-| `ProductionSupervisor` | `cast(hdr2.ProductionSupervisor as pph_fevor preserving type)` |
-| `ProductionSchedulingProfile` | `cast(hdr2.ProductionSchedulingProfile as pph_prodprf preserving type)` |
-| `ResponsiblePlannerGroup` | `hdr2.ResponsiblePlannerGroup` |
-| `ProductionVersion` | `item.ProductionVersion` |
-| `SalesOrder` | `item.SalesOrder` |
-| `SalesOrderItem` | `item.SalesOrderItem` |
-| `WBSElementInternalID` | `item.WBSElementInternalID_2` |
-| `Reservation` | `hdr2.Reservation` |
-| `SettlementReservation` | `cast(hdr2.SettlementReservation as settlmntres preserving type)` |
-| `MfgOrderConfirmation` | `hdr2.MfgOrderConfirmation` |
-| `NumberOfMfgOrderConfirmations` | `cast(hdr2.MfgOrderConfirmationCount as pph_noofconf preserving type)` |
-| `PlannedOrder` | `item.PlannedOrder` |
-| `CapacityRequirement` | `hdr2.CapacityRequirement` |
-| `InspectionLot` | `hdr2.InspectionLot` |
-| `ChangeNumber` | `hdr2.ChangeNumber` |
-| `BasicSchedulingType` | `cast(hdr2.BasicSchedulingType as basicschedtype preserving type)` |
-| `ForecastSchedulingType` | `cast(hdr2.ForecastSchedulingType as forecastschedtype preserving type)` |
-| `ObjectInternalID` | `cast(head.ObjectInternalID as pph_objnr preserving type)` |
-| `ProductConfiguration` | `cast(item.ProductConfiguration as product_configuration preserving type)` |
-| `EffectivityParameterVariant` | `item.EffectivityParameterVariant` |
-| `ConditionApplication` | `head.ConditionApplication` |
-| `CapacityActiveVersion` | `hdr2.CapacityActiveVersion` |
-| `CapacityRqmtHasNotToBeCreated` | `hdr2.CapacityRqmtHasNotToBeCreated` |
-| `OrderSequenceNumber` | `hdr2.OrderSequenceNumber` |
-| `MfgOrderSplitStatus` | `hdr2.MfgOrderSplitStatus` |
-| `BillOfOperationsMaterial` | `hdr2.Material` |
-| `BillOfOperationsType` | `hdr2.BillOfOperationsType` |
-| `BillOfOperationsGroup` | `hdr2.BillOfOperationsGroup` |
-| `BillOfOperationsVariant` | `hdr2.BillOfOperationsVariant` |
-| `BOOInternalVersionCounter` | `hdr2.BOOInternalVersionCounter` |
-| `BillOfOperationsUsage` | `hdr2.BillOfOperationsUsage` |
-| `BillOfOperationsVersion` | `hdr2.BillOfOperationsVersion` |
-| `BOOExplosionDate` | `hdr2.BOOExplosionDate` |
-| `BOOValidityStartDate` | `hdr2.BOOValidityStartDate` |
-| `BillOfMaterialCategory` | `hdr2.BillOfMaterialCategory` |
-| `BillOfMaterial` | `hdr2.BillOfMaterial` |
-| `BillOfMaterialVariant` | `hdr2.BillOfMaterialVariant` |
-| `BillOfMaterialVariantUsage` | `hdr2.BillOfMaterialVariantUsage` |
-| `BillOfMaterialVersion` | `hdr2.BillOfMaterialVersion` |
-| `BillOfMaterialStatus` | `hdr2.BillOfMaterialStatus` |
-| `BOMExplosionDate` | `hdr2.BOMExplosionDate` |
-| `BOMValidityStartDate` | `hdr2.BOMValidityStartDate` |
-| `BusinessArea` | `head.BusinessArea` |
-| `CompanyCode` | `head.CompanyCode` |
-| `ControllingArea` | `head.ControllingArea` |
-| `ProfitCenter` | `head.ProfitCenter` |
-| `CostCenter` | `head.CostCenter` |
-| `ResponsibleCostCenter` | `head.ResponsibleCostCenter` |
-| `CostElement` | `head.CostElement` |
-| `GLAccount` | `head.GLAccount` |
-| `ProductCostCollector` | `head.ProductCostCollector` |
-| `ActualCostsCostingVariant` | `hdr2.ActualCostsCostingVariant` |
-| `PlannedCostsCostingVariant` | `hdr2.PlannedCostsCostingVariant` |
-| `ControllingObjectClass` | `cast(head.ControllingObjectClass as pph_scope preserving type)` |
-| `FunctionalArea` | `head.FunctionalArea` |
-| `EventBasedPostingMethod` | `head.EventBasedPostingMethod` |
-| `EventBasedProcessingKey` | `head.EventBasedProcessingKey` |
-| `OrderSettlementTriggerType` | `head.OrderSettlementTriggerType` |
-| `SchedulingFloatProfile` | `hdr2.SchedulingFloatProfile` |
-| `FloatBeforeProductionInWrkDays` | `hdr2.FloatBeforeProductionInWrkDays` |
-| `FloatAfterProductionInWorkDays` | `hdr2.FloatAfterProductionInWorkDays` |
-| `ReleasePeriodInWorkDays` | `hdr2.ReleasePeriodInWorkDays` |
-| `MfgOrderPlannedStartDate` | `cast(hdr2.PlannedStartDate as mfgorderplannedstartdate preserving type)` |
-| `MfgOrderPlannedStartTime` | `cast(hdr2.PlannedStartTime as mfgorderplannedstarttime preserving type)` |
-| `MfgOrderPlannedEndDate` | `cast(hdr2.PlannedEndDate as mfgorderplannedenddate preserving type)` |
-| `MfgOrderPlannedEndTime` | `cast(hdr2.PlannedEndTime as mfgorderplannedendtime preserving type)` |
-| `MfgOrderPlannedReleaseDate` | `cast(hdr2.PlannedReleaseDate as mfgorderplannedreleasedate preserving type)` |
-| `MfgOrderScheduledStartDate` | `cast(hdr2.ScheduledBasicStartDate as mfgorderscheduledstartdate preserving type)` |
-| `MfgOrderScheduledStartTime` | `cast(hdr2.ScheduledBasicStartTime as mfgorderscheduledstarttime preserving type)` |
-| `MfgOrderScheduledEndDate` | `cast(hdr2.ScheduledBasicEndDate as mfgorderscheduledenddate preserving type)` |
-| `MfgOrderScheduledEndTime` | `cast(hdr2.ScheduledBasicEndTime as mfgorderscheduledendtime preserving type)` |
-| `MfgOrderScheduledReleaseDate` | `cast(hdr2.ScheduledReleaseDate as mfgorderscheduledreleasedate preserving type)` |
-| `MfgOrderActualStartDate` | `cast(hdr2.ActualStartDate as mfgorderactualstartdate preserving type)` |
-| `MfgOrderActualStartTime` | `cast(hdr2.ActualStartTime as mfgorderactualstarttime preserving type)` |
-| `MfgOrderConfirmedEndDate` | `cast(hdr2.ConfirmedEndDate as mfgorderconfirmedenddate preserving type)` |
-| `MfgOrderConfirmedEndTime` | `cast(hdr2.ConfirmedEndTime as mfgorderconfirmedendtime preserving type)` |
-| `MfgOrderActualReleaseDate` | `cast(hdr2.ActualReleasedDate as mfgorderactualreleasedate preserving type)` |
-| `MfgOrderTotalCommitmentDate` | `item.TotalCommitmentDate` |
-| `MfgOrderItemActualDeliveryDate` | `item.ActualDeliveryDate` |
-| `MfgOrderActualCompletionDate` | `head.TechnicalCompletionDate` |
-| `ProductionUnit` | `cast(hdr2.BaseUnit as productionunit preserving type)` |
-| `MfgOrderPlannedTotalQty` | `cast(hdr2.OrderPlannedTotalQty as mfgorderplannedtotalqty preserving type)` |
-| `MfgOrderPlannedScrapQty` | `cast(hdr2.OrderPlannedScrapQty as mfgorderplannedscrapqty preserving type)` |
-| `MfgOrderConfirmedYieldQty` | `cast(hdr2.OrderConfirmedYieldQty as co_igmng preserving type)` |
-| `MfgOrderConfirmedScrapQty` | `cast(hdr2.OrderConfirmedScrapQty as co_iasmg preserving type)` |
-| `MfgOrderConfirmedReworkQty` | `hdr2.MfgOrderConfirmedReworkQty` |
-| `ExpectedDeviationQuantity` | `cast(item.MfgOrderItemActualDeviationQty as co_mimez preserving type)` |
-| `ActualDeliveredQuantity` | `item.MfgOrderItemGoodsReceiptQty` |
-| `Currency` | `head.Currency` |
-| `GoodsReceiptAmount` | `item.GoodsReceiptAmountInCoCodeCrcy` |
-| `_ReferenceOrder` | *Association* |
-| `_LeadingOrder` | *Association* |
-| `_SuperiorOrder` | *Association* |
-| `_OrderInternalID` | *Association* |
-| `_MfgOrderLongText` | *Association* |
-| `_LongTextLanguage` | *Association* |
-| `_ProductionUnit` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_ProductionPlant` | *Association* |
-| `_PlanningPlant` | *Association* |
-| `_MRPArea` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Batch` | *Association* |
-| `_Product` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_ProductStorageLocation` | *Association* |
-| `_ProductPlantMRPArea` | *Association* |
-| `_BillOfOperationsMaterial` | *Association* |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_EnterpriseProjectElement` | *Association* |
-| `_ChangeNumber` | *Association* |
-| `_GLAccount` | *Association* |
-| `_CostElement` | *Association* |
-| `_ActualCostsCostingVariant` | *Association* |
-| `_PlannedCostsCostingVariant` | *Association* |
-| `_MRPController` | *Association* |
-| `_ProductionSupervisor` | *Association* |
-| `_ProductionSchedulingProfile` | *Association* |
-| `_ResponsiblePlannerGroup` | *Association* |
-| `_SchedulingFloatProfile` | *Association* |
-| `_BillOfOperations` | *Association* |
-| `_BillOfOperationsChangeState` | *Association* |
-| `_ProductionVersion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  | `cast(head.OrderID as manufacturingorder preserving type)` |
+| `ManufacturingOrderItem` |  | |  | `OrderItem` |
+| `ManufacturingOrderCategory` |  | |  | `OrderCategory` |
+| `ManufacturingOrderType` |  | |  | `OrderType` |
+| `ManufacturingOrderText` |  | |  | `cast(head.OrderDescription as manufacturingordertext preserving type)` |
+| `ManufacturingOrderHasLongText` |  | |  | `OrderHasLongText` |
+| `LongTextLanguage` |  | |  |  |
+| `ManufacturingOrderImportance` |  | |  | `cast(hdr2.PriorityCode as orderimportancecode preserving type)` |
+| `IsMarkedForDeletion` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `MfgOrderIsPartOfCollvOrder` |  | |  |  |
+| `MfgOrderHierarchyLevel` |  | |  |  |
+| `MfgOrderHierarchyLevelValue` |  | |  | `OrderHierarchyLevelValue` |
+| `MfgOrderHierarchyPathValue` |  | |  | `OrderHierarchyPathValue` |
+| `OrderIsNotCostedAutomatically` |  | |  |  |
+| `OrdIsNotSchedldAutomatically` |  | |  |  |
+| `ProdnProcgIsFlexible` |  | |  |  |
+| `CreationDate` |  | |  | `cast(head.CreationDate as ordercreationdate preserving type)` |
+| `CreationTime` |  | |  | `cast(head.CreationTime as ordercreationtime preserving type)` |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  | `cast(item.Material as productnumber preserving type)` |
+| `StorageLocation` |  | |  |  |
+| `Batch` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `InventoryUsabilityCode` |  | |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |
+| `MfgOrderInternalID` |  | |  | `cast(hdr2.OrderInternalID as pph_aufpl preserving type)` |
+| `ReferenceOrder` |  | |  |  |
+| `LeadingOrder` |  | |  |  |
+| `SuperiorOrder` |  | |  | `MfgOrderSuperiorMfgOrder` |
+| `ProductionPlant` |  | |  | `cast(head.Plant as pwwrk preserving type)` |
+| `PlanningPlant` |  | |  | `MRPPlant` |
+| `MRPArea` |  | |  |  |
+| `MRPController` |  | |  | `cast(hdr2.MRPController as pph_dispo preserving type)` |
+| `ProductionSupervisor` |  | |  | `cast(hdr2.ProductionSupervisor as pph_fevor preserving type)` |
+| `ProductionSchedulingProfile` |  | |  | `cast(hdr2.ProductionSchedulingProfile as pph_prodprf preserving type)` |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |
+| `Reservation` |  | |  |  |
+| `SettlementReservation` |  | |  | `cast(hdr2.SettlementReservation as settlmntres preserving type)` |
+| `MfgOrderConfirmation` |  | |  |  |
+| `NumberOfMfgOrderConfirmations` |  | |  | `cast(hdr2.MfgOrderConfirmationCount as pph_noofconf preserving type)` |
+| `PlannedOrder` |  | |  |  |
+| `CapacityRequirement` |  | |  |  |
+| `InspectionLot` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `BasicSchedulingType` |  | |  | `cast(hdr2.BasicSchedulingType as basicschedtype preserving type)` |
+| `ForecastSchedulingType` |  | |  | `cast(hdr2.ForecastSchedulingType as forecastschedtype preserving type)` |
+| `ObjectInternalID` |  | |  | `cast(head.ObjectInternalID as pph_objnr preserving type)` |
+| `ProductConfiguration` |  | |  | `cast(item.ProductConfiguration as product_configuration preserving type)` |
+| `EffectivityParameterVariant` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `CapacityActiveVersion` |  | |  |  |
+| `CapacityRqmtHasNotToBeCreated` |  | |  |  |
+| `OrderSequenceNumber` |  | |  |  |
+| `MfgOrderSplitStatus` |  | |  |  |
+| `BillOfOperationsMaterial` |  | |  | `Material` |
+| `BillOfOperationsType` |  | |  |  |
+| `BillOfOperationsGroup` |  | |  |  |
+| `BillOfOperationsVariant` |  | |  |  |
+| `BOOInternalVersionCounter` |  | |  |  |
+| `BillOfOperationsUsage` |  | |  |  |
+| `BillOfOperationsVersion` |  | |  |  |
+| `BOOExplosionDate` |  | |  |  |
+| `BOOValidityStartDate` |  | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BillOfMaterial` |  | |  |  |
+| `BillOfMaterialVariant` |  | |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |
+| `BillOfMaterialVersion` |  | |  |  |
+| `BillOfMaterialStatus` |  | |  |  |
+| `BOMExplosionDate` |  | |  |  |
+| `BOMValidityStartDate` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ResponsibleCostCenter` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `ProductCostCollector` |  | |  |  |
+| `ActualCostsCostingVariant` |  | |  |  |
+| `PlannedCostsCostingVariant` |  | |  |  |
+| `ControllingObjectClass` |  | |  | `cast(head.ControllingObjectClass as pph_scope preserving type)` |
+| `FunctionalArea` |  | |  |  |
+| `EventBasedPostingMethod` |  | |  |  |
+| `EventBasedProcessingKey` |  | |  |  |
+| `OrderSettlementTriggerType` |  | |  |  |
+| `SchedulingFloatProfile` |  | |  |  |
+| `FloatBeforeProductionInWrkDays` |  | |  |  |
+| `FloatAfterProductionInWorkDays` |  | |  |  |
+| `ReleasePeriodInWorkDays` |  | |  |  |
+| `MfgOrderPlannedStartDate` |  | |  | `cast(hdr2.PlannedStartDate as mfgorderplannedstartdate preserving type)` |
+| `MfgOrderPlannedStartTime` |  | |  | `cast(hdr2.PlannedStartTime as mfgorderplannedstarttime preserving type)` |
+| `MfgOrderPlannedEndDate` |  | |  | `cast(hdr2.PlannedEndDate as mfgorderplannedenddate preserving type)` |
+| `MfgOrderPlannedEndTime` |  | |  | `cast(hdr2.PlannedEndTime as mfgorderplannedendtime preserving type)` |
+| `MfgOrderPlannedReleaseDate` |  | |  | `cast(hdr2.PlannedReleaseDate as mfgorderplannedreleasedate preserving type)` |
+| `MfgOrderScheduledStartDate` |  | |  | `cast(hdr2.ScheduledBasicStartDate as mfgorderscheduledstartdate preserving type)` |
+| `MfgOrderScheduledStartTime` |  | |  | `cast(hdr2.ScheduledBasicStartTime as mfgorderscheduledstarttime preserving type)` |
+| `MfgOrderScheduledEndDate` |  | |  | `cast(hdr2.ScheduledBasicEndDate as mfgorderscheduledenddate preserving type)` |
+| `MfgOrderScheduledEndTime` |  | |  | `cast(hdr2.ScheduledBasicEndTime as mfgorderscheduledendtime preserving type)` |
+| `MfgOrderScheduledReleaseDate` |  | |  | `cast(hdr2.ScheduledReleaseDate as mfgorderscheduledreleasedate preserving type)` |
+| `MfgOrderActualStartDate` |  | |  | `cast(hdr2.ActualStartDate as mfgorderactualstartdate preserving type)` |
+| `MfgOrderActualStartTime` |  | |  | `cast(hdr2.ActualStartTime as mfgorderactualstarttime preserving type)` |
+| `MfgOrderConfirmedEndDate` |  | |  | `cast(hdr2.ConfirmedEndDate as mfgorderconfirmedenddate preserving type)` |
+| `MfgOrderConfirmedEndTime` |  | |  | `cast(hdr2.ConfirmedEndTime as mfgorderconfirmedendtime preserving type)` |
+| `MfgOrderActualReleaseDate` |  | |  | `cast(hdr2.ActualReleasedDate as mfgorderactualreleasedate preserving type)` |
+| `MfgOrderTotalCommitmentDate` |  | |  | `TotalCommitmentDate` |
+| `MfgOrderItemActualDeliveryDate` |  | |  | `ActualDeliveryDate` |
+| `MfgOrderActualCompletionDate` |  | |  | `TechnicalCompletionDate` |
+| `ProductionUnit` |  | |  | `cast(hdr2.BaseUnit as productionunit preserving type)` |
+| `MfgOrderPlannedTotalQty` |  | |  | `cast(hdr2.OrderPlannedTotalQty as mfgorderplannedtotalqty preserving type)` |
+| `MfgOrderPlannedScrapQty` |  | |  | `cast(hdr2.OrderPlannedScrapQty as mfgorderplannedscrapqty preserving type)` |
+| `MfgOrderConfirmedYieldQty` |  | |  | `cast(hdr2.OrderConfirmedYieldQty as co_igmng preserving type)` |
+| `MfgOrderConfirmedScrapQty` |  | |  | `cast(hdr2.OrderConfirmedScrapQty as co_iasmg preserving type)` |
+| `MfgOrderConfirmedReworkQty` |  | |  |  |
+| `ExpectedDeviationQuantity` |  | |  | `cast(item.MfgOrderItemActualDeviationQty as co_mimez preserving type)` |
+| `ActualDeliveredQuantity` |  | |  | `MfgOrderItemGoodsReceiptQty` |
+| `Currency` |  | |  |  |
+| `GoodsReceiptAmount` |  | |  | `GoodsReceiptAmountInCoCodeCrcy` |
+| `_ReferenceOrder` | | ✓ | | |
+| `_LeadingOrder` | | ✓ | | |
+| `_SuperiorOrder` | | ✓ | | |
+| `_OrderInternalID` | | ✓ | | |
+| `_MfgOrderLongText` | | ✓ | | |
+| `_LongTextLanguage` | | ✓ | | |
+| `_ProductionUnit` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_ProductionPlant` | | ✓ | | |
+| `_PlanningPlant` | | ✓ | | |
+| `_MRPArea` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_ProductStorageLocation` | | ✓ | | |
+| `_ProductPlantMRPArea` | | ✓ | | |
+| `_BillOfOperationsMaterial` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_ChangeNumber` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
+| `_CostElement` | | ✓ | | |
+| `_ActualCostsCostingVariant` | | ✓ | | |
+| `_PlannedCostsCostingVariant` | | ✓ | | |
+| `_MRPController` | | ✓ | | |
+| `_ProductionSupervisor` | | ✓ | | |
+| `_ProductionSchedulingProfile` | | ✓ | | |
+| `_ResponsiblePlannerGroup` | | ✓ | | |
+| `_SchedulingFloatProfile` | | ✓ | | |
+| `_BillOfOperations` | | ✓ | | |
+| `_BillOfOperationsChangeState` | | ✓ | | |
+| `_ProductionVersion` | | ✓ | | |
 
 ## Associations
 

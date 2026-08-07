@@ -27,38 +27,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAWriteOffDocumentNumber` | `abbel` |
-| key `CADocumentNumber` | `opbel` |
-| key `CARepetitionItemNumber` | `opupw` |
-| key `CABPItemNumber` | `opupk` |
-| key `CASubItemNumber` | `opupz` |
-| `CompanyCode` | `bukrs` |
-| `BusinessPartner` | `gpart` |
-| `ContractAccount` | `vkont` |
-| `TransactionCurrency` | `waers` |
-| `CAAmountInTransactionCurrency` | `betrw` |
-| `CAWriteOffReason` | `abgrd` |
-| `CAWriteOffDate` | `abdat` |
-| `CAStatisticalItemCode` | `stakz` |
-| `CADocumentOriginCode` | `herkf` |
-| `CADocumentType` | `blart` |
-| `CAWriteOffIsReversed` | `xrvsd` |
-| `CAMassRunDate` | `laufd` |
-| `CAMassRunID` | `laufi` |
-| `_BusinessPartner` | *Association* |
-| `_CADocumentBPItem` | *Association* |
-| `_CADocument` | *Association* |
-| `_CAWriteOffDocument` | *Association* |
-| `_CADocumentOriginCode` | *Association* |
-| `_CADocumentType` | *Association* |
-| `_CAStatisticalItemCode` | *Association* |
-| `_CAWriteOffReason` | *Association* |
-| `_ContractAccount` | *Association* |
-| `_ContractAccountPartner` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_TransactionCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAWriteOffDocumentNumber` | ✓ | |  | `abbel` |
+| `CADocumentNumber` | ✓ | |  | `opbel` |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` |
+| `CABPItemNumber` | ✓ | |  | `opupk` |
+| `CASubItemNumber` | ✓ | |  | `opupz` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `BusinessPartner` |  | |  | `gpart` |
+| `ContractAccount` |  | |  | `vkont` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` |
+| `CAWriteOffReason` |  | |  | `abgrd` |
+| `CAWriteOffDate` |  | |  | `abdat` |
+| `CAStatisticalItemCode` |  | |  | `stakz` |
+| `CADocumentOriginCode` |  | |  | `herkf` |
+| `CADocumentType` |  | |  | `blart` |
+| `CAWriteOffIsReversed` |  | |  | `xrvsd` |
+| `CAMassRunDate` |  | |  | `laufd` |
+| `CAMassRunID` |  | |  | `laufi` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CADocumentBPItem` | | ✓ | | |
+| `_CADocument` | | ✓ | | |
+| `_CAWriteOffDocument` | | ✓ | | |
+| `_CADocumentOriginCode` | | ✓ | | |
+| `_CADocumentType` | | ✓ | | |
+| `_CAStatisticalItemCode` | | ✓ | | |
+| `_CAWriteOffReason` | | ✓ | | |
+| `_ContractAccount` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
 
 ## Associations
 

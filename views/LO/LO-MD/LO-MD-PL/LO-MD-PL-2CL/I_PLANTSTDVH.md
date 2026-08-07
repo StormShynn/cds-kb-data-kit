@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| `PlantName` | `cast(name1 as werks_name)` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `PlantName` |  | |  | `cast(name1 as werks_name)` |
 
 ## Source Code
 

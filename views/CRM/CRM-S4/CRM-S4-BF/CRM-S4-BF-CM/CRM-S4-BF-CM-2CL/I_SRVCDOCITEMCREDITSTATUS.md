@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcDocItemCreditStatus` | `cast ( domvalue_l as crms4_stat_credit_i )` |
-| `DomainValue` | `domvalue_l` |
-| `_SrvcDocItemCreditStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcDocItemCreditStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_credit_i )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_SrvcDocItemCreditStatusText` | | ✓ | | |
 
 ## Associations
 

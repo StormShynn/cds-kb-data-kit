@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Supplier` | `lifnr` |
-| `DeliveryDate` | `lfdat_v` |
-| `DeliveryTime` | `lfuhr` |
-| `DeliveryDocumentBySupplier` | `lifex` |
-| `MeansOfTransportType` | `traty` |
-| `MeansOfTransport` | `traid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` |  | |  | `lifnr` |
+| `DeliveryDate` |  | |  | `lfdat_v` |
+| `DeliveryTime` |  | |  | `lfuhr` |
+| `DeliveryDocumentBySupplier` |  | |  | `lifex` |
+| `MeansOfTransportType` |  | |  | `traty` |
+| `MeansOfTransport` |  | |  | `traid` |
 
 ## Source Code
 

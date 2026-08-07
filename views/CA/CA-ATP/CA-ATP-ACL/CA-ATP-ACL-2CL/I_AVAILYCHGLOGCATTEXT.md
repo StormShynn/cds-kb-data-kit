@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(ddlanguage as spras preserving type )` |
-| key `AvailabilityChangeLogCategory` | `cast ( domvalue_l as atpnetchgcategory )` |
-| `DomainValue` | `domvalue_l` |
-| `AvailyChgLogCategoryDesc` | `cast( ddtext as atp_acl_category_text preserving type )` |
-| `_Language` | *Association* |
-| `_ACLCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
+| `AvailabilityChangeLogCategory` | ✓ | |  | `cast ( domvalue_l as atpnetchgcategory )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `AvailyChgLogCategoryDesc` |  | |  | `cast( ddtext as atp_acl_category_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_ACLCat` | | ✓ | | |
 
 ## Associations
 

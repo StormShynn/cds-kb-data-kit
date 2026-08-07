@@ -29,32 +29,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowTaskInternalID` | `_Workflowtask.WorkflowTaskInternalID` |
-| `SupplierInvoice` | `_SupplierInvoice.SupplierInvoice` |
-| `SAPObjectNodeRepresentation` | `_WorkflowTaskApplObject.SAPObjectNodeRepresentation` |
-| `SuplrInvcWrkflwTaskDesc` | `_TaskTitle.WorkflowTaskName` |
-| `SuplrInvcWrkflwTaskType` | `_Workflowtask.WorkflowTaskType` |
-| `SuplrInvcWrkflwTskTypeDesc` | `_Workflowtask._TaskType._Text[1:Language=$session.system_language].WorkflowTaskTypeDesc` |
-| `SuplrInvcWrkflwTaskStatus` | `_Workflowtask.WorkflowTaskStatus` |
-| `SuplrInvcWrkflwTskStatusDesc` | `_Workflowtask._TaskStatus._Text[1:Language=$session.system_language].WorkflowTaskStatusDesc` |
-| `WorkflowTaskCreatedByUser` | `_Workflowtask.WorkflowTaskCreatedByUser` |
-| `SuplrInvcWrkflwTskCrtnDateTime` | `_Workflowtask.WrkflwTskCreationUTCDateTime` |
-| `WorkflowTaskCurrentUser` | `_Workflowtask.WorkflowTaskCurrentUser` |
-| `FullName` | `_User.UserDescription` |
-| `ApprovedByUserFullName` | `_ApproverUser.UserDescription` |
-| `WorkflowTaskDefinition` | `_Workflowtask.WorkflowTaskDefinition` |
-| `WorkflowTaskDueUTCDateTime` | `_Workflowtask._TaskDueDate.WorkflowTaskDueUTCDateTime` |
-| `FiscalYear` | `_SupplierInvoice.FiscalYear` |
-| `CompanyCode` | `_SupplierInvoice.CompanyCode` |
-| `CompanyCodeName` | `_CompanyCodeText.CompanyCodeName` |
-| `InvoicingParty` | `_SupplierInvoice.InvoicingParty` |
-| `SupplierName` | `_SupplierText.SupplierName` |
-| `BPSupplierName` | `_SupplierText.BPSupplierName` |
-| `InvoiceGrossAmount` | `_SupplierInvoice.InvoiceGrossAmount` |
-| `DocumentCurrency` | `_SupplierInvoice.DocumentCurrency` |
-| `WorkflowTaskResultComment` | `_WorkflowTaskResultComment.WorkflowTaskResultComment` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |
+| `SupplierInvoice` |  | | `_SupplierInvoice` | `SupplierInvoice` |
+| `SAPObjectNodeRepresentation` |  | | `_WorkflowTaskApplObject` | `SAPObjectNodeRepresentation` |
+| `SuplrInvcWrkflwTaskDesc` |  | | `_TaskTitle` | `WorkflowTaskName` |
+| `SuplrInvcWrkflwTaskType` |  | | `_Workflowtask` | `WorkflowTaskType` |
+| `SuplrInvcWrkflwTskTypeDesc` |  | |  | `_Workflowtask._TaskType._Text[1:Language=$session.system_language].WorkflowTaskTypeDesc` |
+| `SuplrInvcWrkflwTaskStatus` |  | | `_Workflowtask` | `WorkflowTaskStatus` |
+| `SuplrInvcWrkflwTskStatusDesc` |  | |  | `_Workflowtask._TaskStatus._Text[1:Language=$session.system_language].WorkflowTaskStatusDesc` |
+| `WorkflowTaskCreatedByUser` |  | | `_Workflowtask` | `WorkflowTaskCreatedByUser` |
+| `SuplrInvcWrkflwTskCrtnDateTime` |  | | `_Workflowtask` | `WrkflwTskCreationUTCDateTime` |
+| `WorkflowTaskCurrentUser` |  | | `_Workflowtask` | `WorkflowTaskCurrentUser` |
+| `FullName` |  | | `_User` | `UserDescription` |
+| `ApprovedByUserFullName` |  | | `_ApproverUser` | `UserDescription` |
+| `WorkflowTaskDefinition` |  | | `_Workflowtask` | `WorkflowTaskDefinition` |
+| `WorkflowTaskDueUTCDateTime` |  | | `_Workflowtask._TaskDueDate` | `WorkflowTaskDueUTCDateTime` |
+| `FiscalYear` |  | | `_SupplierInvoice` | `FiscalYear` |
+| `CompanyCode` |  | | `_SupplierInvoice` | `CompanyCode` |
+| `CompanyCodeName` |  | | `_CompanyCodeText` | `CompanyCodeName` |
+| `InvoicingParty` |  | | `_SupplierInvoice` | `InvoicingParty` |
+| `SupplierName` |  | | `_SupplierText` | `SupplierName` |
+| `BPSupplierName` |  | | `_SupplierText` | `BPSupplierName` |
+| `InvoiceGrossAmount` |  | | `_SupplierInvoice` | `InvoiceGrossAmount` |
+| `DocumentCurrency` |  | | `_SupplierInvoice` | `DocumentCurrency` |
+| `WorkflowTaskResultComment` |  | | `_WorkflowTaskResultComment` | `WorkflowTaskResultComment` |
 
 ## Source Code
 

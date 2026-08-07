@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `t042z.land1` |
-| key `PaymentMethod` | `cast( t042z.zlsch as farp_schzw_bseg )` |
-| `PaymentMethodName` | `cast( case when t042zt.text2 is null or t042zt.text2 = '' then t042z.text1 else t042zt.text2 end as farp_schzw_text)` |
-| `PaymentMethodIsUsedForCheck` | `xschk` |
-| `PaytMethIsUsdForBillOfExchange` | `xwech` |
-| `PaytMethIsUsdForChkBillOfExch` | `xswec` |
-| `IsPaytMethForIncomingPayments` | `xeinz` |
-| `PaytMethIsUsdForBOEPaytReq` | `xwanf` |
-| `PaytMethIsUsdForPaymentRequest` | `xzanf` |
-| `BankCollectionAuthznIsRequired` | `xezer` |
-| `_Country` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `PaymentMethod` | ✓ | |  | `cast( t042z.zlsch as farp_schzw_bseg )` |
+| `PaymentMethodName` |  | |  | `cast( case when t042zt.text2 is null or t042zt.text2 = '' then t042z.text1 else t042zt.text2 end as farp_schzw_text)` |
+| `PaymentMethodIsUsedForCheck` |  | |  | `xschk` |
+| `PaytMethIsUsdForBillOfExchange` |  | |  | `xwech` |
+| `PaytMethIsUsdForChkBillOfExch` |  | |  | `xswec` |
+| `IsPaytMethForIncomingPayments` |  | |  | `xeinz` |
+| `PaytMethIsUsdForBOEPaytReq` |  | |  | `xwanf` |
+| `PaytMethIsUsdForPaymentRequest` |  | |  | `xzanf` |
+| `BankCollectionAuthznIsRequired` |  | |  | `xezer` |
+| `_Country` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

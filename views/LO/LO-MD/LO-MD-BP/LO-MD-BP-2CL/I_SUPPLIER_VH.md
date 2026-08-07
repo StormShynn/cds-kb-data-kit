@@ -31,28 +31,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `I_Supplier.Supplier` |
-| `SupplierName` | `I_Supplier.OrganizationBPName1` |
-| `BusinessPartnerName1` | `I_Supplier.BusinessPartnerName1` |
-| `BPSupplierName` | `I_Supplier.BPSupplierName` |
-| `AuthorizationGroup` | `I_Supplier.AuthorizationGroup` |
-| `SupplierAccountGroup` | `I_Supplier.SupplierAccountGroup` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `BusinessPartner` | `I_Supplier._SupplierToBusinessPartner._BusinessPartner.BusinessPartner` |
-| `BusinessPartnerType` | `I_Supplier._SupplierToBusinessPartner._BusinessPartner.BusinessPartnerType` |
-| `DataControllerSet` | `I_Supplier.DataControllerSet` |
-| `DataController1` | `I_Supplier.DataController1` |
-| `DataController2` | `I_Supplier.DataController2` |
-| `DataController3` | `I_Supplier.DataController3` |
-| `DataController4` | `I_Supplier.DataController4` |
-| `DataController5` | `I_Supplier.DataController5` |
-| `DataController6` | `I_Supplier.DataController6` |
-| `DataController7` | `I_Supplier.DataController7` |
-| `DataController8` | `I_Supplier.DataController8` |
-| `DataController9` | `I_Supplier.DataController9` |
-| `DataController10` | `I_Supplier.DataController10` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  |  |
+| `SupplierName` |  | |  | `OrganizationBPName1` |
+| `BusinessPartnerName1` |  | |  |  |
+| `BPSupplierName` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `SupplierAccountGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `BusinessPartnerType` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
 
 ## Source Code
 

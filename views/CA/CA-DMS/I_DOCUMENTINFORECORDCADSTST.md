@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Value.ddlanguage` |
-| key `IsDocInfoRecdCreatedFromCAD` | `Value.domvalue_l` |
-| `CADStatusDescription` | `ddtext` |
-| `_DocumentInfoRecordCADSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `IsDocInfoRecdCreatedFromCAD` | ✓ | |  | `domvalue_l` |
+| `CADStatusDescription` |  | |  | `ddtext` |
+| `_DocumentInfoRecordCADSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

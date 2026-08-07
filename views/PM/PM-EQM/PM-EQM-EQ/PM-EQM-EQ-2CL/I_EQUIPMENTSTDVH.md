@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Equipment` | `} } key Equipment` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `_EquipmentText` | *Association* |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` |  | |  | `} } key Equipment` |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `_EquipmentText` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Source Code
 

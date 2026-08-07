@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `project_id` | `project_id` |
-| `description` | `description` |
-| `atc_run_series` | `atc_run_series` |
-| `_atc_result_headers` | *Association* |
-| `_latest_atc_findings` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `project_id` | ✓ | |  |  |
+| `description` |  | |  |  |
+| `atc_run_series` |  | |  |  |
+| `_atc_result_headers` | | ✓ | | |
+| `_latest_atc_findings` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BOPTriangularDealRelevancy` | `cast ( substring( domvalue_l, 1, 1 ) as boptriangulardealrelevancy )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOPTriangularDealRelevancy` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as boptriangulardealrelevancy )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

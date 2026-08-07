@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `BillingDocument` |
-| key `BillingDocumentItem` | `BillingDocumentItem` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `PartnerIsSpecificForSDDocItem` | `PartnerIsSpecificForSDDocItem` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `ContactPerson` | `ContactPerson` |
-| `BusinessPartnerAddressUUID` | `BusinessPartnerAddressUUID` |
-| `ReferenceBusinessPartner` | `ReferenceBusinessPartner` |
-| `_Item` | *Association* |
-| `_BillingDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `BillingDocumentItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `BusinessPartnerAddressUUID` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_BillingDocument` | | ✓ | | |
 
 ## Source Code
 

@@ -29,47 +29,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| `PurchaseContractType` | `PurchaseContractType` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `Supplier` | `Supplier` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `PurchaseContractTargetAmount` | `PurchaseContractTargetAmount` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `QuotationSubmissionDate` | `QuotationSubmissionDate` |
-| `SupplierQuotation` | `SupplierQuotation` |
-| `CorrespncExternalReference` | `CorrespncExternalReference` |
-| `CorrespncInternalReference` | `CorrespncInternalReference` |
-| `SupplierRespSalesPersonName` | `SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `SupplierPhoneNumber` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `PurchasingDocumentName` | `PurchasingDocumentName` |
-| `CntrlPurContrFlxblDistrIsAllwd` | `CntrlPurContrFlxblDistrIsAllwd` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `ActivePurchasingDocument` | `ActivePurchasingDocument` |
-| `PurchasingDocumentVersion` | `PurchasingDocumentVersion` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `PurchasingDocVersionReasonCode` | `PurchasingDocVersionReasonCode` |
-| `PurchasingDocVersionStatus` | `PurchasingDocVersionStatus` |
-| `_CntrlPurContr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `PurchaseContractType` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `SupplierQuotation` |  | |  |  |
+| `CorrespncExternalReference` |  | |  |  |
+| `CorrespncInternalReference` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PurchasingDocumentName` |  | |  |  |
+| `CntrlPurContrFlxblDistrIsAllwd` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `ActivePurchasingDocument` |  | |  |  |
+| `PurchasingDocumentVersion` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `PurchasingDocVersionReasonCode` |  | |  |  |
+| `PurchasingDocVersionStatus` |  | |  |  |
+| `_CntrlPurContr` | | ✓ | | |
 
 ## Source Code
 

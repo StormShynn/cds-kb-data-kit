@@ -34,14 +34,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentCategory` | `cast( domvalue_l as fktyp )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `BillingDocumentCategoryName` | `cast( ddtext as billingdocumentcategoryname preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_BillingDocumentCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentCategory` | ✓ | |  | `cast( domvalue_l as fktyp )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `BillingDocumentCategoryName` |  | |  | `cast( ddtext as billingdocumentcategoryname preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_BillingDocumentCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

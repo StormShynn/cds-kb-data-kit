@@ -29,50 +29,50 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `I_Schedgagrmthdr.SchedulingAgreement` |
-| `CompanyCode` | `I_Schedgagrmthdr.CompanyCode` |
-| `PurchasingDocumentCategory` | `I_Schedgagrmthdr.PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `I_Schedgagrmthdr.PurchasingDocumentType` |
-| `PurchasingDocumentTypeName` | `I_Schedgagrmthdr.PurchasingDocumentTypeName` |
-| `CreatedByUser` | `I_Schedgagrmthdr.CreatedByUser` |
-| `CreationDate` | `I_Schedgagrmthdr.CreationDate` |
-| `Language` | `I_Schedgagrmthdr.Language` |
-| `PurchasingOrganization` | `I_Schedgagrmthdr.PurchasingOrganization` |
-| `PurchasingGroup` | `I_Schedgagrmthdr.PurchasingGroup` |
-| `DocumentCurrency` | `I_Schedgagrmthdr.DocumentCurrency` |
-| `IncotermsClassification` | `I_Schedgagrmthdr.IncotermsClassification` |
-| `IncotermsTransferLocation` | `I_Schedgagrmthdr.IncotermsTransferLocation` |
-| `PaymentTerms` | `I_Schedgagrmthdr.PaymentTerms` |
-| `CashDiscount1Days` | `I_Schedgagrmthdr.CashDiscount1Days` |
-| `CashDiscount2Days` | `I_Schedgagrmthdr.CashDiscount2Days` |
-| `CashDiscount1Percent` | `I_Schedgagrmthdr.CashDiscount1Percent` |
-| `CashDiscount2Percent` | `I_Schedgagrmthdr.CashDiscount2Percent` |
-| `NetPaymentDays` | `I_Schedgagrmthdr.NetPaymentDays` |
-| `TargetAmount` | `I_Schedgagrmthdr.TargetAmount` |
-| `ExchangeRate` | `I_Schedgagrmthdr.ExchangeRate` |
-| `ExchangeRateIsFixed` | `I_Schedgagrmthdr.ExchangeRateIsFixed` |
-| `IncotermsLocation1` | `I_Schedgagrmthdr.IncotermsLocation1` |
-| `IncotermsLocation2` | `I_Schedgagrmthdr.IncotermsLocation2` |
-| `IncotermsVersion` | `I_Schedgagrmthdr.IncotermsVersion` |
-| `PurchasingDocumentOrderDate` | `I_Schedgagrmthdr.PurchasingDocumentOrderDate` |
-| `ScheduleAgreementHasReleaseDoc` | `I_Schedgagrmthdr.ScheduleAgreementHasReleaseDoc` |
-| `Supplier` | `I_Schedgagrmthdr.Supplier` |
-| `SupplierAddressID` | `I_Schedgagrmthdr.SupplierAddressID` |
-| `ValidityStartDate` | `I_Schedgagrmthdr.ValidityStartDate` |
-| `ValidityEndDate` | `I_Schedgagrmthdr.ValidityEndDate` |
-| `PurchasingDocumentOrigin` | `I_Schedgagrmthdr.PurchasingDocumentOrigin` |
-| `PurchasingDocumentDeletionCode` | `I_Schedgagrmthdr.PurchasingDocumentDeletionCode` |
-| `QuotationSubmissionDate` | `I_Schedgagrmthdr.QuotationSubmissionDate` |
-| `SupplierQuotationExternalID` | `I_Schedgagrmthdr.SupplierQuotationExternalID` |
-| `SupplierRespSalesPersonName` | `I_Schedgagrmthdr.SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `I_Schedgagrmthdr.SupplierPhoneNumber` |
-| `InvoicingParty` | `I_Schedgagrmthdr.InvoicingParty` |
-| `SupplyingSupplier` | `I_Schedgagrmthdr.SupplyingSupplier` |
-| `CompanyVATRegistration` | `I_Schedgagrmthdr.CompanyVATRegistration` |
-| `VATRegistrationCountry` | `I_Schedgagrmthdr.VATRegistrationCountry` |
-| `LastChangeDateTime` | `I_Schedgagrmthdr.LastChangeDateTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `PurchasingDocumentTypeName` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `Language` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `TargetAmount` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `PurchasingDocumentOrderDate` |  | |  |  |
+| `ScheduleAgreementHasReleaseDoc` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierAddressID` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `InvoicingParty` |  | |  |  |
+| `SupplyingSupplier` |  | |  |  |
+| `CompanyVATRegistration` |  | |  |  |
+| `VATRegistrationCountry` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
 
 ## Associations
 

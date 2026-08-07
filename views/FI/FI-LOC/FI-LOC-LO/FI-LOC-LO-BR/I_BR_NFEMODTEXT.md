@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `BR_NFeTextNumber` | `textnum` |
-| `BR_NFeSortDescription` | `text` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BR_NFeTextNumber` | ✓ | |  | `textnum` |
+| `BR_NFeSortDescription` |  | |  | `text` |
 
 ## Source Code
 

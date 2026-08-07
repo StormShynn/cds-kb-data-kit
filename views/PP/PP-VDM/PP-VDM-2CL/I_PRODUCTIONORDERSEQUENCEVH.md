@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderInternalID` | `OrderInternalID` |
-| key `SequenceInternalID` | `SequenceInternalID` |
-| `ProductionOrder` | `ProductionOrder` |
-| `ProductionOrderSequence` | `ProductionOrderSequence` |
-| `ProductionOrderSequenceText` | `ProductionOrderSequenceText` |
-| `SequenceCategory` | `SequenceCategory` |
-| `ProductionOrderType` | `ProductionOrderType` |
-| `ProductionPlant` | `ProductionPlant` |
-| `_ProductionOrderInternal` | *Association* |
-| `_SequenceCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderInternalID` | ✓ | |  |  |
+| `SequenceInternalID` | ✓ | |  |  |
+| `ProductionOrder` |  | |  |  |
+| `ProductionOrderSequence` |  | |  |  |
+| `ProductionOrderSequenceText` |  | |  |  |
+| `SequenceCategory` |  | |  |  |
+| `ProductionOrderType` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `_ProductionOrderInternal` | | ✓ | | |
+| `_SequenceCategory` | | ✓ | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAChargesSchema` | `chgid` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAChargesSchema` | ✓ | |  | `chgid` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

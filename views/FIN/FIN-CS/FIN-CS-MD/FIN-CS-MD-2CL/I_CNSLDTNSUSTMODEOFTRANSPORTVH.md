@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SustainabilityModeOfTransport` | `_Source.SustainabilityModeOfTransport` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SustainabilityModeOfTransport` | ✓ | | `_Source` | `SustainabilityModeOfTransport` |
 
 ## Source Code
 

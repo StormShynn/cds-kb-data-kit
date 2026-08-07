@@ -30,45 +30,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierQuotation` | `I_SupplierQuotation.SupplierQuotation` |
-| `CompanyCode` | `I_SupplierQuotation.CompanyCode` |
-| `PurchasingDocumentCategory` | `I_SupplierQuotation.PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `I_SupplierQuotation.PurchasingDocumentType` |
-| `Supplier` | `I_SupplierQuotation.Supplier` |
-| `CreatedByUser` | `I_SupplierQuotation.CreatedByUser` |
-| `CreationDate` | `I_SupplierQuotation.CreationDate` |
-| `LastChangeDateTime` | `I_SupplierQuotation.LastChangeDateTime` |
-| `Language` | `I_SupplierQuotation.Language` |
-| `DocumentCurrency` | `I_SupplierQuotation.DocumentCurrency` |
-| `IncotermsClassification` | `I_SupplierQuotation.IncotermsClassification` |
-| `IncotermsTransferLocation` | `I_SupplierQuotation.IncotermsTransferLocation` |
-| `IncotermsVersion` | `I_SupplierQuotation.IncotermsVersion` |
-| `IncotermsLocation1` | `I_SupplierQuotation.IncotermsLocation1` |
-| `IncotermsLocation2` | `I_SupplierQuotation.IncotermsLocation2` |
-| `PaymentTerms` | `I_SupplierQuotation.PaymentTerms` |
-| `CashDiscount1Days` | `I_SupplierQuotation.CashDiscount1Days` |
-| `CashDiscount2Days` | `I_SupplierQuotation.CashDiscount2Days` |
-| `CashDiscount1Percent` | `I_SupplierQuotation.CashDiscount1Percent` |
-| `CashDiscount2Percent` | `I_SupplierQuotation.CashDiscount2Percent` |
-| `NetPaymentDays` | `I_SupplierQuotation.NetPaymentDays` |
-| `PricingProcedure` | `I_SupplierQuotation.PricingProcedure` |
-| `PurchasingDocumentCondition` | `I_SupplierQuotation.PurchasingDocumentCondition` |
-| `PurchasingOrganization` | `I_SupplierQuotation.PurchasingOrganization` |
-| `PurchasingGroup` | `I_SupplierQuotation.PurchasingGroup` |
-| `PurchasingDocumentOrderDate` | `I_SupplierQuotation.PurchasingDocumentOrderDate` |
-| `RequestForQuotation` | `I_SupplierQuotation.RequestForQuotation` |
-| `SupplierQuotationExternalID` | `I_SupplierQuotation.SupplierQuotationExternalID` |
-| `QuotationSubmissionDate` | `I_SupplierQuotation.QuotationSubmissionDate` |
-| `QuotationLatestSubmissionDate` | `I_SupplierQuotation.QuotationLatestSubmissionDate` |
-| `BindingPeriodValidityEndDate` | `I_SupplierQuotation.BindingPeriodValidityEndDate` |
-| `ExchangeRate` | `I_SupplierQuotation.ExchangeRate` |
-| `ExchangeRateIsFixed` | `I_SupplierQuotation.ExchangeRateIsFixed` |
-| `QTNLifecycleStatus` | `I_SupplierQuotation.QtnLifecycleStatus` |
-| `FollowOnDocumentCategory` | `I_SupplierQuotation.FollowOnDocumentCategory` |
-| `FollowOnDocumentType` | `I_SupplierQuotation.FollowOnDocumentType` |
-| `IsEndOfPurposeBlocked` | `I_SupplierQuotation.IsEndOfPurposeBlocked` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierQuotation` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `Language` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `PricingProcedure` |  | |  |  |
+| `PurchasingDocumentCondition` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingDocumentOrderDate` |  | |  |  |
+| `RequestForQuotation` |  | |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `QuotationLatestSubmissionDate` |  | |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `QTNLifecycleStatus` |  | |  | `QtnLifecycleStatus` |
+| `FollowOnDocumentCategory` |  | |  |  |
+| `FollowOnDocumentType` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
 
 ## Associations
 

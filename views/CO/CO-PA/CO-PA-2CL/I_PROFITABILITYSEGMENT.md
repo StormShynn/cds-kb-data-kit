@@ -27,75 +27,75 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProfitabilitySegment` | `ProfSeg.paobjnr` |
-| `ControllingArea` | `kokrs` |
-| `CompanyCode` | `bukrs` |
-| `CostCenter` | `copa_kostl` |
-| `FunctionalArea` | `fkber` |
-| `BusinessArea` | `gsber` |
-| `SalesDocument` | `cast( kaufn as vbeln_va preserving type )` |
-| `SalesDocumentItem` | `kdpos` |
-| `Customer` | `kndnr` |
-| `CostObject` | `kstrg` |
-| `PartnerProfitCenter` | `pprctr` |
-| `ProfitCenter` | `prctr` |
-| `WBSElementInternalID` | `cast( pspnr as fis_wbsint_no_conv preserving type )` |
-| `Segment` | `segment` |
-| `ServiceDocumentType` | `service_doc_type` |
-| `ServiceDocument` | `service_doc_id` |
-| `ServiceDocumentItem` | `service_doc_item_id` |
-| `BusinessSolutionOrder` | `solution_order_id` |
-| `BusinessSolutionOrderItem` | `solution_order_item_id` |
-| `ProviderContract` | `vtkey` |
-| `ProviderContractItem` | `vtpos` |
-| `Plant` | `werks` |
-| `OrderID` | `AUFNR` |
-| `SoldProduct` | `artnr` |
-| `CustomerSupplierIndustry` | `brsch` |
-| `SalesDistrict` | `bzirk` |
-| `BillingDocumentType` | `fkart` |
-| `CustomerGroup` | `kdgrp` |
-| `BillToParty` | `kunre` |
-| `ShipToParty` | `kunwe` |
-| `CustomerSupplierCountry` | `land1` |
-| `SoldProductGroup` | `matkl` |
-| `OrganizationDivision` | `spart` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `IncmpltSummableValnQtyUnt` | `meinh` |
-| `AdditionalQuantity1Unit` | `qunit1` |
-| `AdditionalQuantity2Unit` | `qunit2` |
-| `AdditionalQuantity3Unit` | `qunit3` |
-| `CreationDateTime` | `timestamp` |
-| `_CompanyCode` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_PartnerProfitCenter` | *Association* |
-| `_CostCenter` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_FunctionalArea` | *Association* |
-| `_SoldProductGroup` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
-| `_Customer` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_CustomerSupplierCountry` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_BillToParty` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_BillingDocumentType` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_Plant` | *Association* |
-| `_ProviderContract` | *Association* |
-| `_ProviderContractItem` | *Association* |
-| `_AdditionalQuantity1Unit` | *Association* |
-| `_AdditionalQuantity2Unit` | *Association* |
-| `_AdditionalQuantity3Unit` | *Association* |
-| `_IncmpltSummableValnQtyUnt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProfitabilitySegment` | ✓ | |  | `paobjnr` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `CostCenter` |  | |  | `copa_kostl` |
+| `FunctionalArea` |  | |  | `fkber` |
+| `BusinessArea` |  | |  | `gsber` |
+| `SalesDocument` |  | |  | `cast( kaufn as vbeln_va preserving type )` |
+| `SalesDocumentItem` |  | |  | `kdpos` |
+| `Customer` |  | |  | `kndnr` |
+| `CostObject` |  | |  | `kstrg` |
+| `PartnerProfitCenter` |  | |  | `pprctr` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `WBSElementInternalID` |  | |  | `cast( pspnr as fis_wbsint_no_conv preserving type )` |
+| `Segment` |  | |  | `segment` |
+| `ServiceDocumentType` |  | |  | `service_doc_type` |
+| `ServiceDocument` |  | |  | `service_doc_id` |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |
+| `BusinessSolutionOrder` |  | |  | `solution_order_id` |
+| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` |
+| `ProviderContract` |  | |  | `vtkey` |
+| `ProviderContractItem` |  | |  | `vtpos` |
+| `Plant` |  | |  | `werks` |
+| `OrderID` |  | |  | `AUFNR` |
+| `SoldProduct` |  | |  | `artnr` |
+| `CustomerSupplierIndustry` |  | |  | `brsch` |
+| `SalesDistrict` |  | |  | `bzirk` |
+| `BillingDocumentType` |  | |  | `fkart` |
+| `CustomerGroup` |  | |  | `kdgrp` |
+| `BillToParty` |  | |  | `kunre` |
+| `ShipToParty` |  | |  | `kunwe` |
+| `CustomerSupplierCountry` |  | |  | `land1` |
+| `SoldProductGroup` |  | |  | `matkl` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `IncmpltSummableValnQtyUnt` |  | |  | `meinh` |
+| `AdditionalQuantity1Unit` |  | |  | `qunit1` |
+| `AdditionalQuantity2Unit` |  | |  | `qunit2` |
+| `AdditionalQuantity3Unit` |  | |  | `qunit3` |
+| `CreationDateTime` |  | |  | `timestamp` |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_PartnerProfitCenter` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
+| `_SoldProductGroup` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_CustomerSupplierCountry` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_BillingDocumentType` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ProviderContract` | | ✓ | | |
+| `_ProviderContractItem` | | ✓ | | |
+| `_AdditionalQuantity1Unit` | | ✓ | | |
+| `_AdditionalQuantity2Unit` | | ✓ | | |
+| `_AdditionalQuantity3Unit` | | ✓ | | |
+| `_IncmpltSummableValnQtyUnt` | | ✓ | | |
 
 ## Associations
 

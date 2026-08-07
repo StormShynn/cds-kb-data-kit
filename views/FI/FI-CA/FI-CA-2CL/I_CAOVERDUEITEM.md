@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentNumber` | `CADocumentNumber` |
-| key `CARepetitionItemNumber` | `CARepetitionItemNumber` |
-| key `CABPItemNumber` | `CABPItemNumber` |
-| key `CASubItemNumber` | `CASubItemNumber` |
-| key `CAPromiseToPay` | `CAPromiseToPay` |
-| key `CANetDueDate` | `CANetDueDate` |
-| `CAOverdueItemOrigin` | `CAOverdueItemOrigin` |
-| `CompanyCode` | `CompanyCode` |
-| `BusinessPartner` | `BusinessPartner` |
-| `ContractAccount` | `ContractAccount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `CAAmountInTransactionCurrency` | `CAAmountInTransactionCurrency` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `CAAmountInLocalCurrency` | `CAAmountInLocalCurrency` |
-| `_BusinessPartner` | *Association* |
-| `_CADocument_2` | *Association* |
-| `_CADocumentBPItem_2` | *Association* |
-| `_CAOverdueItemOrigin` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ContractAccount` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_CADocumentBPItem` | *Association* |
-| `_CADocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  |  |
+| `CARepetitionItemNumber` | ✓ | |  |  |
+| `CABPItemNumber` | ✓ | |  |  |
+| `CASubItemNumber` | ✓ | |  |  |
+| `CAPromiseToPay` | ✓ | |  |  |
+| `CANetDueDate` | ✓ | |  |  |
+| `CAOverdueItemOrigin` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `ContractAccount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `CAAmountInTransactionCurrency` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `CAAmountInLocalCurrency` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_CADocument_2` | | ✓ | | |
+| `_CADocumentBPItem_2` | | ✓ | | |
+| `_CAOverdueItemOrigin` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ContractAccount` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_CADocumentBPItem` | | ✓ | | |
+| `_CADocument` | | ✓ | | |
 
 ## Associations
 

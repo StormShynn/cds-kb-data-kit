@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `Language` | `_Text.Language` |
-| `BillOfOperationsTypeName` | `_Text.BillOfOperationsTypeName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `Language` | ✓ | | `_Text` | `Language` |
+| `BillOfOperationsTypeName` |  | | `_Text` | `BillOfOperationsTypeName` |
 
 ## Source Code
 

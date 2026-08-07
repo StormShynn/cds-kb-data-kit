@@ -27,32 +27,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAServiceDisconnectionRequest` | `dscpnr` |
-| key `CAServiceReconnectionRequest` | `recpnr` |
-| key `CASrvcReconncnReqIsInvalid` | `xrpinv` |
-| key `CASrvcReconncnReqIsObsolete` | `xiobs` |
-| `CASrvcReconncnReqStatus` | `cast( case when xrpinv = 'X' then 'I' when xiobs = 'X' then 'O' else 'V' end as recreq_stat_kk preserving type )` |
-| `BusinessPartner` | `cast( gpart as bu_partner preserving type )` |
-| `ContractAccount` | `cast( vkont as vkont_gfn_kk preserving type )` |
-| `CAContract` | `cast( vtref as vtref_kk preserving type )` |
-| `CASubApplication` | `subap` |
-| `CADunningAmount` | `mbetm` |
-| `TransactionCurrency` | `waers` |
-| `CAClearingAmountInClearingCrcy` | `augbt` |
-| `CAClearingCurrency` | `augwa` |
-| `CreatedByUser` | `uname` |
-| `CreationDate` | `crdate` |
-| `CreationTime` | `crtime` |
-| `_BusinessPartner` | *Association* |
-| `_CAProviderContract` | *Association* |
-| `_CASrvcReconncnReqStatus` | *Association* |
-| `_CASubApplication` | *Association* |
-| `_ContractAccount` | *Association* |
-| `_ContractAccountPartner` | *Association* |
-| `_ClearingCurrency` | *Association* |
-| `_TransactionCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |
+| `CAServiceReconnectionRequest` | ✓ | |  | `recpnr` |
+| `CASrvcReconncnReqIsInvalid` | ✓ | |  | `xrpinv` |
+| `CASrvcReconncnReqIsObsolete` | ✓ | |  | `xiobs` |
+| `CASrvcReconncnReqStatus` |  | |  | `cast( case when xrpinv = 'X' then 'I' when xiobs = 'X' then 'O' else 'V' end as recreq_stat_kk preserving type )` |
+| `BusinessPartner` |  | |  | `cast( gpart as bu_partner preserving type )` |
+| `ContractAccount` |  | |  | `cast( vkont as vkont_gfn_kk preserving type )` |
+| `CAContract` |  | |  | `cast( vtref as vtref_kk preserving type )` |
+| `CASubApplication` |  | |  | `subap` |
+| `CADunningAmount` |  | |  | `mbetm` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `CAClearingAmountInClearingCrcy` |  | |  | `augbt` |
+| `CAClearingCurrency` |  | |  | `augwa` |
+| `CreatedByUser` |  | |  | `uname` |
+| `CreationDate` |  | |  | `crdate` |
+| `CreationTime` |  | |  | `crtime` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CAProviderContract` | | ✓ | | |
+| `_CASrvcReconncnReqStatus` | | ✓ | | |
+| `_CASubApplication` | | ✓ | | |
+| `_ContractAccount` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
+| `_ClearingCurrency` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
 
 ## Associations
 

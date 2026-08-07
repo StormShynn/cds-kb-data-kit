@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `e.Material` |
-| key `SerialNumber` | `e.SerialNumber` |
-| `Equipment` | `ess.Equipment` |
-| `Plant` | `ess.Plant` |
-| `StorageLocation` | `ess.StorageLocation` |
-| `Customer` | `ess.Customer` |
-| `Supplier` | `ess.Supplier` |
-| `SalesOrder` | `ess.SalesOrder` |
-| `SalesOrderItem` | `}] ess.SalesOrderItem` |
-| `InventorySpecialStockType` | `ess.InventorySpecialStockType` |
-| `WBSElementInternalID` | `ess.WBSElementInternalID` |
-| `Batch` | `ess.Batch` |
-| `InventoryStockType` | `ess.InventoryStockType` |
-| `StockOwner` | `ess.StockOwner` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `SerialNumber` | ✓ | |  |  |
+| `Equipment` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  | `}] ess.SalesOrderItem` |
+| `InventorySpecialStockType` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `Batch` |  | |  |  |
+| `InventoryStockType` |  | |  |  |
+| `StockOwner` |  | |  |  |
 
 ## Source Code
 

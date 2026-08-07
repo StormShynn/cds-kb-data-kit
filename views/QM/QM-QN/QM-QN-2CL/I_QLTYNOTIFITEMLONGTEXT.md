@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `I_NotificationItemLongText.Notification` |
-| key `NotificationItem` | `I_NotificationItemLongText.NotificationItem` |
-| key `Language` | `I_NotificationItemLongText.Language` |
-| key `LongTextInternalNumber` | `I_NotificationItemLongText.LongTextInternalNumber` |
-| `LongTextID` | `I_NotificationItemLongText.LongTextID` |
-| `NotificationItemLongText` | `I_NotificationItemLongText.NotificationItemLongText` |
-| `MimeType` | `cast( I_NotificationItemLongText.MimeType as w3conttype )` |
-| `LongTextCreatedByUser` | `I_NotificationItemLongText.LongTextCreatedByUser` |
-| `LongTextCreatedAt` | `I_NotificationItemLongText.LongTextCreatedAt` |
-| `LongTextLastChangedByUser` | `I_NotificationItemLongText.LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` | `I_NotificationItemLongText.LongTextLastChangedAt` |
-| `_QltyNotification` | *Association* |
-| `_QualityNotificationItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |
+| `NotificationItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextInternalNumber` | ✓ | |  |  |
+| `LongTextID` |  | |  |  |
+| `NotificationItemLongText` |  | |  |  |
+| `MimeType` |  | |  | `cast( I_NotificationItemLongText.MimeType as w3conttype )` |
+| `LongTextCreatedByUser` |  | |  |  |
+| `LongTextCreatedAt` |  | |  |  |
+| `LongTextLastChangedByUser` |  | |  |  |
+| `LongTextLastChangedAt` |  | |  |  |
+| `_QltyNotification` | | ✓ | | |
+| `_QualityNotificationItem` | | ✓ | | |
 
 ## Associations
 

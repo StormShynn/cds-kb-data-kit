@@ -28,68 +28,68 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `qase.prueflos` |
-| key `InspPlanOperationInternalID` | `qase.vorglfnr` |
-| key `InspectionCharacteristic` | `qase.merknr` |
-| key `InspResultValueInternalID` | `qase.detailerg` |
-| `InspectionResultAttribute` | `qase.attribut` |
-| `InspResultItemInternalID` | `qase.stuecknr` |
-| `InspectionSubsetInternalID` | `qase.probenr` |
-| `InspectionResultMeasuredValue` | `qase.messwert` |
-| `InspResultHasMeasuredValue` | `cast(case qase.messwertni when '*' then 'X' else qase.messwertni end as qmesswrtni preserving type )` |
-| `InspectionResultOriginalValue` | `qase.original_input` |
-| `InspectionResultText` | `cast( qase.pruefbemkt as vdm_qinspectionvalueresultdesc preserving type )` |
-| `InspectionResultHasLongText` | `qase.prltextkz` |
-| `Language` | `qase.ltextspr` |
-| `InspLotSingleUnitNumber` | `qase.estuecknr` |
-| `InspectionResultItem` | `qase.serialnr` |
-| `InspRsltFreeDefinedTestEquip` | `qase.maschine` |
-| `InspectionValuationResult` | `qase.mbewertg` |
-| `CharacteristicAttributeCodeGrp` | `qase.gruppe1` |
-| `InspectionResultCodeGroup2` | `qase.gruppe2` |
-| `InspectionResultCodeGroup3` | `qase.gruppe3` |
-| `InspectionResultCodeGroup4` | `qase.gruppe4` |
-| `InspectionResultCodeGroup5` | `qase.gruppe5` |
-| `CharacteristicAttributeCode` | `qase.code1` |
-| `InspectionResultCode2` | `qase.code2` |
-| `InspectionResultCode3` | `qase.code3` |
-| `InspectionResultCode4` | `qase.code4` |
-| `InspectionResultCode5` | `qase.code5` |
-| `CharcAttributeCodeVers` | `qase.version1` |
-| `InspectionResultCode2Vers` | `qase.version2` |
-| `InspectionResultCode3Vers` | `qase.version3` |
-| `InspectionResultCode4Vers` | `qase.version4` |
-| `InspectionResultCode5Vers` | `qase.version5` |
-| `CharacteristicAttributeCatalog` | `qase.katalgart1` |
-| `InspectionResultCatalog2` | `qase.katalgart2` |
-| `InspectionResultCatalog3` | `qase.katalgart3` |
-| `InspectionResultCatalog4` | `qase.katalgart4` |
-| `InspectionResultCatalog5` | `qase.katalgart5` |
-| `Inspector` | `qase.pruefer` |
-| `InspectionStartDate` | `qase.pruefdatuv` |
-| `InspectionStartTime` | `qase.pruefzeitv` |
-| `InspectionEndDate` | `qase.pruefdatub` |
-| `InspectionEndTime` | `qase.pruefzeitb` |
-| `InspectionNumberOfDefects` | `qase.anzfehler` |
-| `DefectClass` | `qase.fehlklas` |
-| `InspResultNrOfAddlDcmlsPlaces` | `qase.diff_dec_places` |
-| `CreatedByUser` | `qase.ersteller` |
-| `CreationDate` | `qase.erstelldat` |
-| `LastChangedByUser` | `qase.aenderer` |
-| `LastChangeDate` | `qase.aenderdat` |
-| `ChangedTime` | `qase.zeitaend` |
-| `CreationTime` | `qase.zeiterstl` |
-| `_InspectionLot` | *Association* |
-| `_InspectionOperation` | *Association* |
-| `_InspectionCharacteristic` | *Association* |
-| `_InspSubsetCharacteristic` | *Association* |
-| `_InspResultValueLongText` | *Association* |
-| `_CharcAttributeCodeGrp` | *Association* |
-| `_CharcAttributeCode` | *Association* |
-| `_InspectionResultAttribute` | *Association* |
-| `_InspectionValuationResult` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |
+| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |
+| `InspectionCharacteristic` | ✓ | |  | `merknr` |
+| `InspResultValueInternalID` | ✓ | |  | `detailerg` |
+| `InspectionResultAttribute` |  | |  | `attribut` |
+| `InspResultItemInternalID` |  | |  | `stuecknr` |
+| `InspectionSubsetInternalID` |  | |  | `probenr` |
+| `InspectionResultMeasuredValue` |  | |  | `messwert` |
+| `InspResultHasMeasuredValue` |  | |  | `cast(case qase.messwertni when '*' then 'X' else qase.messwertni end as qmesswrtni preserving type )` |
+| `InspectionResultOriginalValue` |  | |  | `original_input` |
+| `InspectionResultText` |  | |  | `cast( qase.pruefbemkt as vdm_qinspectionvalueresultdesc preserving type )` |
+| `InspectionResultHasLongText` |  | |  | `prltextkz` |
+| `Language` |  | |  | `ltextspr` |
+| `InspLotSingleUnitNumber` |  | |  | `estuecknr` |
+| `InspectionResultItem` |  | |  | `serialnr` |
+| `InspRsltFreeDefinedTestEquip` |  | |  | `maschine` |
+| `InspectionValuationResult` |  | |  | `mbewertg` |
+| `CharacteristicAttributeCodeGrp` |  | |  | `gruppe1` |
+| `InspectionResultCodeGroup2` |  | |  | `gruppe2` |
+| `InspectionResultCodeGroup3` |  | |  | `gruppe3` |
+| `InspectionResultCodeGroup4` |  | |  | `gruppe4` |
+| `InspectionResultCodeGroup5` |  | |  | `gruppe5` |
+| `CharacteristicAttributeCode` |  | |  | `code1` |
+| `InspectionResultCode2` |  | |  | `code2` |
+| `InspectionResultCode3` |  | |  | `code3` |
+| `InspectionResultCode4` |  | |  | `code4` |
+| `InspectionResultCode5` |  | |  | `code5` |
+| `CharcAttributeCodeVers` |  | |  | `version1` |
+| `InspectionResultCode2Vers` |  | |  | `version2` |
+| `InspectionResultCode3Vers` |  | |  | `version3` |
+| `InspectionResultCode4Vers` |  | |  | `version4` |
+| `InspectionResultCode5Vers` |  | |  | `version5` |
+| `CharacteristicAttributeCatalog` |  | |  | `katalgart1` |
+| `InspectionResultCatalog2` |  | |  | `katalgart2` |
+| `InspectionResultCatalog3` |  | |  | `katalgart3` |
+| `InspectionResultCatalog4` |  | |  | `katalgart4` |
+| `InspectionResultCatalog5` |  | |  | `katalgart5` |
+| `Inspector` |  | |  | `pruefer` |
+| `InspectionStartDate` |  | |  | `pruefdatuv` |
+| `InspectionStartTime` |  | |  | `pruefzeitv` |
+| `InspectionEndDate` |  | |  | `pruefdatub` |
+| `InspectionEndTime` |  | |  | `pruefzeitb` |
+| `InspectionNumberOfDefects` |  | |  | `anzfehler` |
+| `DefectClass` |  | |  | `fehlklas` |
+| `InspResultNrOfAddlDcmlsPlaces` |  | |  | `diff_dec_places` |
+| `CreatedByUser` |  | |  | `ersteller` |
+| `CreationDate` |  | |  | `erstelldat` |
+| `LastChangedByUser` |  | |  | `aenderer` |
+| `LastChangeDate` |  | |  | `aenderdat` |
+| `ChangedTime` |  | |  | `zeitaend` |
+| `CreationTime` |  | |  | `zeiterstl` |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionOperation` | | ✓ | | |
+| `_InspectionCharacteristic` | | ✓ | | |
+| `_InspSubsetCharacteristic` | | ✓ | | |
+| `_InspResultValueLongText` | | ✓ | | |
+| `_CharcAttributeCodeGrp` | | ✓ | | |
+| `_CharcAttributeCode` | | ✓ | | |
+| `_InspectionResultAttribute` | | ✓ | | |
+| `_InspectionValuationResult` | | ✓ | | |
 
 ## Associations
 

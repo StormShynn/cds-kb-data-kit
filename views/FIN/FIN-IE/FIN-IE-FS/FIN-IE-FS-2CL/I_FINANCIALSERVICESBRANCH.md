@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialServicesBranch` | `branch_id` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialServicesBranch` | ✓ | |  | `branch_id` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

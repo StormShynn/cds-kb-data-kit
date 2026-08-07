@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityInternalID` | `CapacityInternalID` |
-| `CapacityCategoryCode` | `CapacityCategoryCode` |
-| `Capacity` | `Capacity` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  |  |
+| `CapacityCategoryCode` |  | |  |  |
+| `Capacity` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

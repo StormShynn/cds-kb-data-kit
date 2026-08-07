@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductPlanningStrategy` | `strat.stra1` |
-| `PlndIndepRqmtRqmtType` | `strat.bedvp` |
-| `CustomerRequirementRqmtType` | `strat.bedku` |
-| `_Text` | *Association* |
-| `_PlndIndepRqmtRqmtType` | *Association* |
-| `_CustomerRqmtRqmtType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductPlanningStrategy` | ✓ | |  | `stra1` |
+| `PlndIndepRqmtRqmtType` |  | |  | `bedvp` |
+| `CustomerRequirementRqmtType` |  | |  | `bedku` |
+| `_Text` | | ✓ | | |
+| `_PlndIndepRqmtRqmtType` | | ✓ | | |
+| `_CustomerRqmtRqmtType` | | ✓ | | |
 
 ## Associations
 

@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `WithholdingTaxCode` | `qsskz` |
-| `OfficialWhldgTaxCode` | `qscod` |
-| `WhldgTaxCodeName` | `qsbez` |
-| `WhldgTaxRelevantPercent` | `qproz` |
-| `WithholdingTaxPercent` | `qsatz` |
-| `Region` | `bland` |
-| `ProvincialTaxCode` | `fprcd` |
-| `WithholdingTaxIncomeType` | `qekar` |
-| `GermanReunificationTaxPercent` | `qsats` |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `WithholdingTaxCode` | ✓ | |  | `qsskz` |
+| `OfficialWhldgTaxCode` |  | |  | `qscod` |
+| `WhldgTaxCodeName` |  | |  | `qsbez` |
+| `WhldgTaxRelevantPercent` |  | |  | `qproz` |
+| `WithholdingTaxPercent` |  | |  | `qsatz` |
+| `Region` |  | |  | `bland` |
+| `ProvincialTaxCode` |  | |  | `fprcd` |
+| `WithholdingTaxIncomeType` |  | |  | `qekar` |
+| `GermanReunificationTaxPercent` |  | |  | `qsats` |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

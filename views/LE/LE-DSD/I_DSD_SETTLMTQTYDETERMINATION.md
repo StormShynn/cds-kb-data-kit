@@ -27,47 +27,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DSD_SettlementDocument` | `sld_doc_id` |
-| key `Material` | `matnr` |
-| key `AssgdSettlementSequenceNumber` | `assigned_seq` |
-| key `SettlementDifferenceReason` | `reason` |
-| key `CtrlParamForQuantityDifference` | `spec_return` |
-| key `Plant` | `plant` |
-| key `Batch` | `charg` |
-| `TargetQuantity` | `} quan_planned` |
-| `SettlmtInitLoadingConfQuantity` | `} quan_lc_init` |
-| `SettlmtInitLoadgConfDiffQty` | `} quan_lc_init_dif` |
-| `SettlmtInitialCheckOutQuantity` | `} quan_co_init` |
-| `SettlmtInitChkOutDiffQuantity` | `} quan_co_init_dif` |
-| `SettlmtPlannedReloadQuantity` | `} quan_rld_plan` |
-| `SettlmtReloadCheckInQuantity` | `} quan_rld_ci` |
-| `SettlmtRldLoadingConfQuantity` | `} quan_rld_lc` |
-| `SettlmtRldLoadgConfDiffQty` | `} quan_rld_lc_diff` |
-| `SettlmtReloadCheckOutQuantity` | `} quan_rld_co` |
-| `SettlmtRldCheckOutDiffQuantity` | `} quan_rld_co_diff` |
-| `SettlmtPlndFnlCheckInQuantity` | `} quan_ci_plan` |
-| `SettlmtFinalCheckInQuantity` | `} quan_ci` |
-| `SettlmtFnlCheckInDiffQuantity` | `} quan_ci_diff` |
-| `SettlmtPlndLoadgConfQuantity` | `} quan_lc_plan_sum` |
-| `SettlementLoadingConfQuantity` | `} quan_lc_sum` |
-| `SettlmtLoadgConfDiffQuantity` | `} quan_lc_diff_sum` |
-| `SettlmtPlannedCheckOutQuantity` | `} quan_co_plan_sum` |
-| `SettlementCheckOutQuantity` | `} quan_co_sum` |
-| `SettlmtCheckOutDiffQuantity` | `} quan_co_diff_sum` |
-| `SettlmtPlannedCheckInQuantity` | `} quan_ci_plan_sum` |
-| `SettlementCheckInQuantity` | `} quan_ci_sum` |
-| `SettlementCheckInDiffQuantity` | `} quan_ci_diff_sum` |
-| `UnitOfMeasure` | `uom_for_quan` |
-| `SettlementToleranceGroup` | `tolgrp_id` |
-| `ValuationType` | `bwtar` |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_Batch` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_ControlParameter` | *Association* |
-| `_ToleranceGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DSD_SettlementDocument` | ✓ | |  | `sld_doc_id` |
+| `Material` | ✓ | |  | `matnr` |
+| `AssgdSettlementSequenceNumber` | ✓ | |  | `assigned_seq` |
+| `SettlementDifferenceReason` | ✓ | |  | `reason` |
+| `CtrlParamForQuantityDifference` | ✓ | |  | `spec_return` |
+| `Plant` | ✓ | |  | `plant` |
+| `Batch` | ✓ | |  | `charg` |
+| `TargetQuantity` |  | |  | `} quan_planned` |
+| `SettlmtInitLoadingConfQuantity` |  | |  | `} quan_lc_init` |
+| `SettlmtInitLoadgConfDiffQty` |  | |  | `} quan_lc_init_dif` |
+| `SettlmtInitialCheckOutQuantity` |  | |  | `} quan_co_init` |
+| `SettlmtInitChkOutDiffQuantity` |  | |  | `} quan_co_init_dif` |
+| `SettlmtPlannedReloadQuantity` |  | |  | `} quan_rld_plan` |
+| `SettlmtReloadCheckInQuantity` |  | |  | `} quan_rld_ci` |
+| `SettlmtRldLoadingConfQuantity` |  | |  | `} quan_rld_lc` |
+| `SettlmtRldLoadgConfDiffQty` |  | |  | `} quan_rld_lc_diff` |
+| `SettlmtReloadCheckOutQuantity` |  | |  | `} quan_rld_co` |
+| `SettlmtRldCheckOutDiffQuantity` |  | |  | `} quan_rld_co_diff` |
+| `SettlmtPlndFnlCheckInQuantity` |  | |  | `} quan_ci_plan` |
+| `SettlmtFinalCheckInQuantity` |  | |  | `} quan_ci` |
+| `SettlmtFnlCheckInDiffQuantity` |  | |  | `} quan_ci_diff` |
+| `SettlmtPlndLoadgConfQuantity` |  | |  | `} quan_lc_plan_sum` |
+| `SettlementLoadingConfQuantity` |  | |  | `} quan_lc_sum` |
+| `SettlmtLoadgConfDiffQuantity` |  | |  | `} quan_lc_diff_sum` |
+| `SettlmtPlannedCheckOutQuantity` |  | |  | `} quan_co_plan_sum` |
+| `SettlementCheckOutQuantity` |  | |  | `} quan_co_sum` |
+| `SettlmtCheckOutDiffQuantity` |  | |  | `} quan_co_diff_sum` |
+| `SettlmtPlannedCheckInQuantity` |  | |  | `} quan_ci_plan_sum` |
+| `SettlementCheckInQuantity` |  | |  | `} quan_ci_sum` |
+| `SettlementCheckInDiffQuantity` |  | |  | `} quan_ci_diff_sum` |
+| `UnitOfMeasure` |  | |  | `uom_for_quan` |
+| `SettlementToleranceGroup` |  | |  | `tolgrp_id` |
+| `ValuationType` |  | |  | `bwtar` |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_ControlParameter` | | ✓ | | |
+| `_ToleranceGroup` | | ✓ | | |
 
 ## Associations
 

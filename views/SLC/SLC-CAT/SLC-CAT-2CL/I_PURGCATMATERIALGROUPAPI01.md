@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurCatMaterialGroupUUID` | `PurCatMaterialGroupUUID` |
-| `PurgCatUUID` | `PurgCatUUID` |
-| `MaterialGroup` | `MaterialGroup` |
-| `_PurchasingCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurCatMaterialGroupUUID` | ✓ | |  |  |
+| `PurgCatUUID` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `_PurchasingCategory` | | ✓ | | |
 
 ## Associations
 

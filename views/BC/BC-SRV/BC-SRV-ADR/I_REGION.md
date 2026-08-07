@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `t005s.land1` |
-| key `Region` | `t005s.bland` |
-| `_RegionText` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `Region` | ✓ | |  | `bland` |
+| `_RegionText` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| key `ScheduleLine` | `ScheduleLine` |
-| `DelivDateCategory` | `DelivDateCategory` |
-| `ScheduleLineDeliveryDate` | `ScheduleLineDeliveryDate` |
-| `SchedLineStscDeliveryDate` | `SchedLineStscDeliveryDate` |
-| `ScheduleLineDeliveryTime` | `ScheduleLineDeliveryTime` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `ScheduleLineOrderQuantity` | `ScheduleLineOrderQuantity` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `RoughGoodsReceiptQty` | `RoughGoodsReceiptQty` |
-| `ScheduleLineIsFixed` | `ScheduleLineIsFixed` |
-| `PrevDelivQtyOfScheduleLine` | `PrevDelivQtyOfScheduleLine` |
-| `SourceOfCreation` | `SourceOfCreation` |
-| `ScheduleLineOpenQuantity` | `ScheduleLineOpenQuantity` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_SchedgAgrmtItm` | *Association* |
-| `_SchedgAgrmtSubcontrgComp` | *Association* |
-| `_PurSchedgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |
+| `ScheduleLineIsFixed` |  | |  |  |
+| `PrevDelivQtyOfScheduleLine` |  | |  |  |
+| `SourceOfCreation` |  | |  |  |
+| `ScheduleLineOpenQuantity` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_SchedgAgrmtItm` | | ✓ | | |
+| `_SchedgAgrmtSubcontrgComp` | | ✓ | | |
+| `_PurSchedgAgrmt` | | ✓ | | |
 
 ## Source Code
 

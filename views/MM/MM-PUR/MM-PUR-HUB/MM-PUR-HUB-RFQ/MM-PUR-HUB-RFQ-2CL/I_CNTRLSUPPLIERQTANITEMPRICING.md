@@ -32,78 +32,78 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralSupplierQuotation` | `R_CntrlSupplierQtanItemPricing.CentralSupplierQuotation` |
-| key `CentralSupplierQuotationItem` | `R_CntrlSupplierQtanItemPricing.CentralSupplierQuotationItem` |
-| key `PricingDocument` | `R_CntrlSupplierQtanItemPricing.PricingDocument` |
-| key `PricingDocumentItem` | `R_CntrlSupplierQtanItemPricing.PricingDocumentItem` |
-| key `PricingProcedureStep` | `R_CntrlSupplierQtanItemPricing.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `R_CntrlSupplierQtanItemPricing.PricingProcedureCounter` |
-| `ConditionApplication` | `R_CntrlSupplierQtanItemPricing.ConditionApplication` |
-| `ConditionType` | `R_CntrlSupplierQtanItemPricing.ConditionType` |
-| `PricingDateTime` | `R_CntrlSupplierQtanItemPricing.PricingDateTime` |
-| `PriceConditionDeterminationDte` | `cast( LEFT(R_CntrlSupplierQtanItemPricing.PricingDateTime, 8) as abap.dats )` |
-| `ConditionCalculationType` | `R_CntrlSupplierQtanItemPricing.ConditionCalculationType` |
-| `ConditionBaseValue` | `R_CntrlSupplierQtanItemPricing.ConditionBaseValue` |
-| `ConditionRateValue` | `R_CntrlSupplierQtanItemPricing.ConditionRateValue` |
-| `ConditionCurrency` | `R_CntrlSupplierQtanItemPricing.ConditionCurrency` |
-| `PriceDetnExchangeRate` | `R_CntrlSupplierQtanItemPricing.PriceDetnExchangeRate` |
-| `ConditionQuantity` | `R_CntrlSupplierQtanItemPricing.ConditionQuantity` |
-| `ConditionQuantityUnit` | `R_CntrlSupplierQtanItemPricing.ConditionQuantityUnit` |
-| `ConditionToBaseQtyNmrtr` | `R_CntrlSupplierQtanItemPricing.ConditionToBaseQtyNmrtr` |
-| `ConditionToBaseQtyDnmntr` | `R_CntrlSupplierQtanItemPricing.ConditionToBaseQtyDnmntr` |
-| `ConditionCategory` | `R_CntrlSupplierQtanItemPricing.ConditionCategory` |
-| `ConditionIsForStatistics` | `R_CntrlSupplierQtanItemPricing.ConditionIsForStatistics` |
-| `PricingScaleType` | `R_CntrlSupplierQtanItemPricing.PricingScaleType` |
-| `IsRelevantForAccrual` | `R_CntrlSupplierQtanItemPricing.IsRelevantForAccrual` |
-| `CndnIsRelevantForInvoiceList` | `R_CntrlSupplierQtanItemPricing.CndnIsRelevantForInvoiceList` |
-| `ConditionOrigin` | `R_CntrlSupplierQtanItemPricing.ConditionOrigin` |
-| `IsGroupCondition` | `R_CntrlSupplierQtanItemPricing.IsGroupCondition` |
-| `AccessNumberOfAccessSequence` | `R_CntrlSupplierQtanItemPricing.AccessNumberOfAccessSequence` |
-| `ConditionRecord` | `R_CntrlSupplierQtanItemPricing.ConditionRecord` |
-| `ConditionSequentialNumber` | `R_CntrlSupplierQtanItemPricing.ConditionSequentialNumber` |
-| `AccountKeyForGLAccount` | `R_CntrlSupplierQtanItemPricing.AccountKeyForGLAccount` |
-| `GLAccount` | `R_CntrlSupplierQtanItemPricing.GLAccount` |
-| `TaxCode` | `R_CntrlSupplierQtanItemPricing.TaxCode` |
-| `AcctKeyForAccrualsGLAccount` | `R_CntrlSupplierQtanItemPricing.AcctKeyForAccrualsGLAccount` |
-| `AccrualsGLAccount` | `R_CntrlSupplierQtanItemPricing.AccrualsGLAccount` |
-| `WithholdingTaxCode` | `R_CntrlSupplierQtanItemPricing.WithholdingTaxCode` |
-| `FreightSupplier` | `R_CntrlSupplierQtanItemPricing.FreightSupplier` |
-| `CndnRoundingOffDiffAmount` | `R_CntrlSupplierQtanItemPricing.CndnRoundingOffDiffAmount` |
-| `ConditionAmount` | `R_CntrlSupplierQtanItemPricing.ConditionAmount` |
-| `TransactionCurrency` | `R_CntrlSupplierQtanItemPricing.TransactionCurrency` |
-| `ConditionControl` | `R_CntrlSupplierQtanItemPricing.ConditionControl` |
-| `ConditionInactiveReason` | `R_CntrlSupplierQtanItemPricing.ConditionInactiveReason` |
-| `ConditionClass` | `R_CntrlSupplierQtanItemPricing.ConditionClass` |
-| `PrcgProcedureCounterForHeader` | `R_CntrlSupplierQtanItemPricing.PrcgProcedureCounterForHeader` |
-| `FactorForConditionBasisValue` | `R_CntrlSupplierQtanItemPricing.FactorForConditionBasisValue` |
-| `StructureCondition` | `R_CntrlSupplierQtanItemPricing.StructureCondition` |
-| `PeriodFactorForCndnBasisValue` | `R_CntrlSupplierQtanItemPricing.PeriodFactorForCndnBasisValue` |
-| `PricingScaleBasis` | `R_CntrlSupplierQtanItemPricing.PricingScaleBasis` |
-| `ConditionScaleBasisValue` | `R_CntrlSupplierQtanItemPricing.ConditionScaleBasisValue` |
-| `ConditionScaleBasisUnit` | `R_CntrlSupplierQtanItemPricing.ConditionScaleBasisUnit` |
-| `ConditionScaleBasisCurrency` | `R_CntrlSupplierQtanItemPricing.ConditionScaleBasisCurrency` |
-| `ConditionAlternativeCurrency` | `R_CntrlSupplierQtanItemPricing.ConditionAlternativeCurrency` |
-| `ConditionAmountInLocalCrcy` | `R_CntrlSupplierQtanItemPricing.ConditionAmountInLocalCrcy` |
-| `CndnIsRelevantForIntcoBilling` | `R_CntrlSupplierQtanItemPricing.CndnIsRelevantForIntcoBilling` |
-| `ConditionIsManuallyChanged` | `R_CntrlSupplierQtanItemPricing.ConditionIsManuallyChanged` |
-| `BillingPriceSource` | `R_CntrlSupplierQtanItemPricing.BillingPriceSource` |
-| `TaxJurisdictionLevel` | `R_CntrlSupplierQtanItemPricing.TaxJurisdictionLevel` |
-| `ConditionByteSequence` | `R_CntrlSupplierQtanItemPricing.ConditionByteSequence` |
-| `CndnIsRelevantForLimitValue` | `R_CntrlSupplierQtanItemPricing.CndnIsRelevantForLimitValue` |
-| `ConditionBasisLimitExceeded` | `R_CntrlSupplierQtanItemPricing.ConditionBasisLimitExceeded` |
-| `ConditionAmountLimitExceeded` | `R_CntrlSupplierQtanItemPricing.ConditionAmountLimitExceeded` |
-| `CumulatedConditionBasisValue` | `R_CntrlSupplierQtanItemPricing.CumulatedConditionBasisValue` |
-| `CustomerRebateRecipient` | `R_CntrlSupplierQtanItemPricing.CustomerRebateRecipient` |
-| `ConditionIsForConfiguration` | `R_CntrlSupplierQtanItemPricing.ConditionIsForConfiguration` |
-| `VariantCondition` | `R_CntrlSupplierQtanItemPricing.VariantCondition` |
-| `ConditionAcctAssgmtRelevance` | `R_CntrlSupplierQtanItemPricing.ConditionAcctAssgmtRelevance` |
-| `ConditionMatrixMaintRelevance` | `R_CntrlSupplierQtanItemPricing.ConditionMatrixMaintRelevance` |
-| `ConfigblParametersAndFormulas` | `R_CntrlSupplierQtanItemPricing.ConfigblParametersAndFormulas` |
-| `ConditionAdjustedQuantity` | `R_CntrlSupplierQtanItemPricing.ConditionAdjustedQuantity` |
-| `_CentralSupplierQuotation` | *Association* |
-| `_CntrlSupplierQuotationItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralSupplierQuotation` | ✓ | |  |  |
+| `CentralSupplierQuotationItem` | ✓ | |  |  |
+| `PricingDocument` | ✓ | |  |  |
+| `PricingDocumentItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `PricingDateTime` |  | |  |  |
+| `PriceConditionDeterminationDte` |  | |  | `cast( LEFT(R_CntrlSupplierQtanItemPricing.PricingDateTime, 8) as abap.dats )` |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionBaseValue` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `IsRelevantForAccrual` |  | |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `IsGroupCondition` |  | |  |  |
+| `AccessNumberOfAccessSequence` |  | |  |  |
+| `ConditionRecord` |  | |  |  |
+| `ConditionSequentialNumber` |  | |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `AcctKeyForAccrualsGLAccount` |  | |  |  |
+| `AccrualsGLAccount` |  | |  |  |
+| `WithholdingTaxCode` |  | |  |  |
+| `FreightSupplier` |  | |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionControl` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |
+| `StructureCondition` |  | |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |
+| `PricingScaleBasis` |  | |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |
+| `ConditionAmountInLocalCrcy` |  | |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `BillingPriceSource` |  | |  |  |
+| `TaxJurisdictionLevel` |  | |  |  |
+| `ConditionByteSequence` |  | |  |  |
+| `CndnIsRelevantForLimitValue` |  | |  |  |
+| `ConditionBasisLimitExceeded` |  | |  |  |
+| `ConditionAmountLimitExceeded` |  | |  |  |
+| `CumulatedConditionBasisValue` |  | |  |  |
+| `CustomerRebateRecipient` |  | |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |
+| `VariantCondition` |  | |  |  |
+| `ConditionAcctAssgmtRelevance` |  | |  |  |
+| `ConditionMatrixMaintRelevance` |  | |  |  |
+| `ConfigblParametersAndFormulas` |  | |  |  |
+| `ConditionAdjustedQuantity` |  | |  |  |
+| `_CentralSupplierQuotation` | | ✓ | | |
+| `_CntrlSupplierQuotationItem` | | ✓ | | |
 
 ## Associations
 

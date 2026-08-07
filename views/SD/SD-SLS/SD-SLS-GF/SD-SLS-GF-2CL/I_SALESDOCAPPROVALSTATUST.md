@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocApprovalStatus` | `substring(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `SalesDocApprovalStatusDesc` | `ddtext` |
-| `_SalesDocApprovalStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocApprovalStatus` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SalesDocApprovalStatusDesc` |  | |  | `ddtext` |
+| `_SalesDocApprovalStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

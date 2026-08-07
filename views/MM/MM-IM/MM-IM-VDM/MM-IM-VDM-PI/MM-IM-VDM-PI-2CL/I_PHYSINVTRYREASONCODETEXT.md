@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t157e.spras` |
-| key `GoodsMovementType` | `t157e.bwart` |
-| key `ReasonForPhysInvtryDifference` | `t157e.grund` |
-| `ReasonForPhysInvtryDiffText` | `t157e.grtxt` |
-| `_Language` | *Association* |
-| `_GoodsMovementType` | *Association* |
-| `_PhysInvtryReasonCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `GoodsMovementType` | ✓ | |  | `bwart` |
+| `ReasonForPhysInvtryDifference` | ✓ | |  | `grund` |
+| `ReasonForPhysInvtryDiffText` |  | |  | `grtxt` |
+| `_Language` | | ✓ | | |
+| `_GoodsMovementType` | | ✓ | | |
+| `_PhysInvtryReasonCode` | | ✓ | | |
 
 ## Associations
 

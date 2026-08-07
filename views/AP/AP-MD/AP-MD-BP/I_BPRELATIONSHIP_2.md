@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RelationshipNumber` | `relnr` |
-| key `BusinessPartner1` | `partner1` |
-| key `BusinessPartner2` | `partner2` |
-| key `ValidityEndDate` | `date_to` |
-| `ValidityStartDate` | `date_from` |
-| `IsStandardRelationship` | `xdfrel` |
-| `RelationshipCategory` | `reltyp` |
-| `BPRelationshipType` | `relkind` |
-| `BusPartRelshpIsRoleDefinition` | `xrf` |
-| `CreatedByUser` | `crusr` |
-| `CreationDate` | `crdat` |
-| `CreationTime` | `crtim` |
-| `LastChangedByUser` | `chusr` |
-| `LastChangeDate` | `chdat` |
-| `LastChangeTime` | `chtim` |
-| `_BusinessPartner1` | *Association* |
-| `_BusinessPartner2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RelationshipNumber` | ✓ | |  | `relnr` |
+| `BusinessPartner1` | ✓ | |  | `partner1` |
+| `BusinessPartner2` | ✓ | |  | `partner2` |
+| `ValidityEndDate` | ✓ | |  | `date_to` |
+| `ValidityStartDate` |  | |  | `date_from` |
+| `IsStandardRelationship` |  | |  | `xdfrel` |
+| `RelationshipCategory` |  | |  | `reltyp` |
+| `BPRelationshipType` |  | |  | `relkind` |
+| `BusPartRelshpIsRoleDefinition` |  | |  | `xrf` |
+| `CreatedByUser` |  | |  | `crusr` |
+| `CreationDate` |  | |  | `crdat` |
+| `CreationTime` |  | |  | `crtim` |
+| `LastChangedByUser` |  | |  | `chusr` |
+| `LastChangeDate` |  | |  | `chdat` |
+| `LastChangeTime` |  | |  | `chtim` |
+| `_BusinessPartner1` | | ✓ | | |
+| `_BusinessPartner2` | | ✓ | | |
 
 ## Associations
 

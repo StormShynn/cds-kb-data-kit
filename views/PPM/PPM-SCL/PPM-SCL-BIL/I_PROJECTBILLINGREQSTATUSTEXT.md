@@ -34,14 +34,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `ProjectBillingRequestStatus` | `cast( substring( domvalue_l, 1, 1 ) as pbr_doc_status preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `ProjectBillingReqStatusText` | `ddtext` |
-| `_Language` | *Association* |
-| `_ProjectBillingRequestStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ProjectBillingRequestStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbr_doc_status preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `ProjectBillingReqStatusText` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_ProjectBillingRequestStatus` | | ✓ | | |
 
 ## Associations
 

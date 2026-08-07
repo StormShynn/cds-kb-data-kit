@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `CnsldtnSubitemCategory` | `_HierarchyText.CnsldtnSubitemCategory` |
-| key `ConsolidationSubitemHierarchy` | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_subitemhierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `ConsolidationSubitemHierText` | `cast(_HierarchyText.UniversalHierarchyText as fincs_subitemhierarchytext preserving type )` |
-| `_SubitemCategory` | *Association* |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `CnsldtnSubitemCategory` | ✓ | | `_HierarchyText` | `CnsldtnSubitemCategory` |
+| `ConsolidationSubitemHierarchy` | ✓ | |  | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_subitemhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `ConsolidationSubitemHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_subitemhierarchytext preserving type )` |
+| `_SubitemCategory` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

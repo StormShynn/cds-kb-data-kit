@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurReqnReleaseStatus` | `cast(substring(domvalue_l, 1, 2) as banpr preserving type)` |
-| key `Language` | `ddlanguage` |
-| `PurReqnReleaseStatusDesc` | `ddtext` |
-| `_PurReqnReleaseStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurReqnReleaseStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as banpr preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `PurReqnReleaseStatusDesc` |  | |  | `ddtext` |
+| `_PurReqnReleaseStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

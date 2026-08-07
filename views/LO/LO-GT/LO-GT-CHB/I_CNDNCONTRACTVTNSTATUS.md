@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CndnContrActvtnStatus` | `cast( dd07l.domvalue_l as wcb_cc_state )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CndnContrActvtnStatus` | ✓ | |  | `cast( dd07l.domvalue_l as wcb_cc_state )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

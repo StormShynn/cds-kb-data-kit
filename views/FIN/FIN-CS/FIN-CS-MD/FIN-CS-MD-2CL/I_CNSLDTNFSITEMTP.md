@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `_Source.ConsolidationChartOfAccounts` |
-| key `CnsldtnFinancialStatementItem` | `_Source.CnsldtnFinancialStatementItem` |
-| `ConsolidationFSItemType` | `_Source.ConsolidationFSItemType` |
-| `ConsolidationBreakdownCategory` | `_Source.ConsolidationBreakdownCategory` |
-| `CnsldtnFSItemIsForCnsldtnOnly` | `_Source.CnsldtnFSItemIsForCnsldtnOnly` |
-| `CnsldtnFSItemPostingIsBlocked` | `_Source.CnsldtnFSItemPostingIsBlocked` |
-| `CnsldtnFSItemIsNetBalCarryFwd` | `_Source.CnsldtnFSItemIsNetBalCarryFwd` |
-| `CnsldtnFSItemLink` | `_Source.CnsldtnFSItemLink` |
-| `CnsldtnFSItemLinkLabel` | `_Source.CnsldtnFSItemLinkLabel` |
-| `CnsldtnSignLogicIsFSItemSpcfc` | `_Source.CnsldtnSignLogicIsFSItemSpcfc` |
-| `ConsolidationSignLogicType` | `_Source.ConsolidationSignLogicType` |
-| `_Text` | *Association* |
-| `_CnsldtnFSItemByTimeVersion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |
+| `CnsldtnFinancialStatementItem` | ✓ | | `_Source` | `CnsldtnFinancialStatementItem` |
+| `ConsolidationFSItemType` |  | | `_Source` | `ConsolidationFSItemType` |
+| `ConsolidationBreakdownCategory` |  | | `_Source` | `ConsolidationBreakdownCategory` |
+| `CnsldtnFSItemIsForCnsldtnOnly` |  | | `_Source` | `CnsldtnFSItemIsForCnsldtnOnly` |
+| `CnsldtnFSItemPostingIsBlocked` |  | | `_Source` | `CnsldtnFSItemPostingIsBlocked` |
+| `CnsldtnFSItemIsNetBalCarryFwd` |  | | `_Source` | `CnsldtnFSItemIsNetBalCarryFwd` |
+| `CnsldtnFSItemLink` |  | | `_Source` | `CnsldtnFSItemLink` |
+| `CnsldtnFSItemLinkLabel` |  | | `_Source` | `CnsldtnFSItemLinkLabel` |
+| `CnsldtnSignLogicIsFSItemSpcfc` |  | | `_Source` | `CnsldtnSignLogicIsFSItemSpcfc` |
+| `ConsolidationSignLogicType` |  | | `_Source` | `ConsolidationSignLogicType` |
+| `_Text` | | ✓ | | |
+| `_CnsldtnFSItemByTimeVersion` | | ✓ | | |
 
 ## Source Code
 

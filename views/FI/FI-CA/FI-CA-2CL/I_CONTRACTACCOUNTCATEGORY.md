@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContractAccountCategory` | `vktyp` |
-| key `CAApplicationArea` | `applk` |
-| `CAOnlyOneBPIsAllowed` | `xgein` |
-| `CAOnlyOneContractIsAllowed` | `xvein` |
-| `CAIsCollectiveBillAccount` | `samrg` |
-| `CAIsOneTimeAccount` | `cpd` |
-| `_ApplArea` | `_CAApplicationArea` |
-| `_CAApplicationArea` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccountCategory` | ✓ | |  | `vktyp` |
+| `CAApplicationArea` | ✓ | |  | `applk` |
+| `CAOnlyOneBPIsAllowed` |  | |  | `xgein` |
+| `CAOnlyOneContractIsAllowed` |  | |  | `xvein` |
+| `CAIsCollectiveBillAccount` |  | |  | `samrg` |
+| `CAIsOneTimeAccount` |  | |  | `cpd` |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |
+| `_CAApplicationArea` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

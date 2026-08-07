@@ -27,26 +27,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAApplicationArea` | `tfktvo.applk` |
-| key `CAMainTransaction` | `tfktvo.hvorg` |
-| key `CASubTransaction` | `tfktvo.tvorg` |
-| `CAMainTransactionForReversal` | `tfktvo.hvorg_rev` |
-| `CASubTransactionForReversal` | `tfktvo.tvorg_rev` |
-| `CADueDateDeterminationRule` | `tfktvo.faetp` |
-| `CAWithholdingTaxAmountType` | `tfktvo.qsvtp` |
-| `CARuleForAddlReceivables` | `tfktvo.rladdr` |
-| `CAIsPaymentTransaction` | `tfktvo.xpayt` |
-| `_ApplArea` | `_CAApplicationArea` |
-| `_MainTransaction` | `_CAMainTransaction` |
-| `_MainTransactionRev` | `_CAReversalMainTransaction` |
-| `_SubTransactionRev` | `_CAReversalSubTransaction` |
-| `_CAApplicationArea` | *Association* |
-| `_CAMainTransaction` | *Association* |
-| `_CAReversalMainTransaction` | *Association* |
-| `_CAReversalSubTransaction` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | |  | `applk` |
+| `CAMainTransaction` | ✓ | |  | `hvorg` |
+| `CASubTransaction` | ✓ | |  | `tvorg` |
+| `CAMainTransactionForReversal` |  | |  | `hvorg_rev` |
+| `CASubTransactionForReversal` |  | |  | `tvorg_rev` |
+| `CADueDateDeterminationRule` |  | |  | `faetp` |
+| `CAWithholdingTaxAmountType` |  | |  | `qsvtp` |
+| `CARuleForAddlReceivables` |  | |  | `rladdr` |
+| `CAIsPaymentTransaction` |  | |  | `xpayt` |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |
+| `_MainTransaction` |  | |  | `_CAMainTransaction` |
+| `_MainTransactionRev` |  | |  | `_CAReversalMainTransaction` |
+| `_SubTransactionRev` |  | |  | `_CAReversalSubTransaction` |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAMainTransaction` | | ✓ | | |
+| `_CAReversalMainTransaction` | | ✓ | | |
+| `_CAReversalSubTransaction` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

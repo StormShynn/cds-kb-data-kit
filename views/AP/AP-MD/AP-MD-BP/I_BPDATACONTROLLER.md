@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `partner` |
-| key `DataControllerName` | `data_ctrlr` |
-| key `BPDataPurposeText` | `purpose` |
-| `BPDataControllerIsDerived` | `data_ctrlr_derived` |
-| `DataControlAssignmentStatus` | `asgmt_status` |
-| `PurposeDerived` | `pur_derived` |
-| `PurposeType` | `purpose_type` |
-| `BusinessPurposeFlag` | `eop_flag` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `DataControllerName` | ✓ | |  | `data_ctrlr` |
+| `BPDataPurposeText` | ✓ | |  | `purpose` |
+| `BPDataControllerIsDerived` |  | |  | `data_ctrlr_derived` |
+| `DataControlAssignmentStatus` |  | |  | `asgmt_status` |
+| `PurposeDerived` |  | |  | `pur_derived` |
+| `PurposeType` |  | |  | `purpose_type` |
+| `BusinessPurposeFlag` |  | |  | `eop_flag` |
 
 ## Source Code
 

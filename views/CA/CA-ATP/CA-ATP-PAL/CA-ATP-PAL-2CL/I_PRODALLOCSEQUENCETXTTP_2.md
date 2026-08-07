@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductAllocationSequenceUUID` | `ProductAllocationSequenceUUID` |
-| key `Language` | `Language` |
-| `ProductAllocationSequenceDesc` | `ProductAllocationSequenceDesc` |
-| `_ProdAllocationSequenceTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductAllocationSequenceUUID` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ProductAllocationSequenceDesc` |  | |  |  |
+| `_ProdAllocationSequenceTP` | | ✓ | | |
 
 ## Source Code
 

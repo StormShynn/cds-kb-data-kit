@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `client` | `client` |
-| key `fiscal_year_variant` | `cast( fiscal_year_variant as fis_periv preserving type )` |
-| key `calendar_date` | `cast( calendar_date as calendardate preserving type )` |
-| `fiscal_year` | `cast( fiscal_year as fis_gjahr_no_conv preserving type )` |
-| `fiscal_year_start_date` | `fiscal_year_start_date` |
-| `fiscal_year_end_date` | `fiscal_year_end_date` |
-| `fiscal_period` | `fiscal_period` |
-| `fiscal_period_start_date` | `fiscal_period_start_date` |
-| `fiscal_period_end_date` | `fiscal_period_end_date` |
-| `fiscal_quarter` | `fiscal_quarter` |
-| `fiscal_quarter_start_date` | `fiscal_quarter_start_date` |
-| `fiscal_quarter_end_date` | `fiscal_quarter_end_date` |
-| `fiscal_week` | `fiscal_week` |
-| `fiscal_week_start_date` | `fiscal_week_start_date` |
-| `fiscal_week_end_date` | `fiscal_week_end_date` |
-| `fiscal_year_period` | `cast( fiscal_year_period as fins_fyearperiod preserving type )` |
-| `fiscal_year_quarter` | `fiscal_year_quarter` |
-| `fiscal_year_week` | `fiscal_year_week` |
-| `fiscal_year_period_int` | `fiscal_year_period_int` |
-| `fiscal_year_quarter_int` | `fiscal_year_quarter_int` |
-| `fiscal_year_week_int` | `fiscal_year_week_int` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `client` |  | |  |  |
+| `fiscal_year_variant` | ✓ | |  | `cast( fiscal_year_variant as fis_periv preserving type )` |
+| `calendar_date` | ✓ | |  | `cast( calendar_date as calendardate preserving type )` |
+| `fiscal_year` |  | |  | `cast( fiscal_year as fis_gjahr_no_conv preserving type )` |
+| `fiscal_year_start_date` |  | |  |  |
+| `fiscal_year_end_date` |  | |  |  |
+| `fiscal_period` |  | |  |  |
+| `fiscal_period_start_date` |  | |  |  |
+| `fiscal_period_end_date` |  | |  |  |
+| `fiscal_quarter` |  | |  |  |
+| `fiscal_quarter_start_date` |  | |  |  |
+| `fiscal_quarter_end_date` |  | |  |  |
+| `fiscal_week` |  | |  |  |
+| `fiscal_week_start_date` |  | |  |  |
+| `fiscal_week_end_date` |  | |  |  |
+| `fiscal_year_period` |  | |  | `cast( fiscal_year_period as fins_fyearperiod preserving type )` |
+| `fiscal_year_quarter` |  | |  |  |
+| `fiscal_year_week` |  | |  |  |
+| `fiscal_year_period_int` |  | |  |  |
+| `fiscal_year_quarter_int` |  | |  |  |
+| `fiscal_year_week_int` |  | |  |  |
 
 ## Source Code
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryPosition` | `trlt_position.os_guid` |
-| `TreasuryPositionZeroDate` | `trlt_position.zero_pos_date` |
-| `TreasuryPosAssetLiabilityCode` | `cast(trlt_position.active_passive as ftr_gen_asset_liab_indicator preserving type)` |
-| `TrsyPosManagementProcedure` | `cast(trlt_position.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |
-| `PositionCurrency` | `position_curr` |
-| `ValuationCurrency` | `valuation_curr` |
-| `CreatedByUser` | `rerf` |
-| `FirstResponseByDate` | `derf` |
-| `CorrespondenceCreationTime` | `terf` |
-| `_PositionIdentifier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryPosition` | ✓ | |  | `os_guid` |
+| `TreasuryPositionZeroDate` |  | |  | `zero_pos_date` |
+| `TreasuryPosAssetLiabilityCode` |  | |  | `cast(trlt_position.active_passive as ftr_gen_asset_liab_indicator preserving type)` |
+| `TrsyPosManagementProcedure` |  | |  | `cast(trlt_position.pos_man_proc as ftr_gen_pos_man_proc preserving type)` |
+| `PositionCurrency` |  | |  | `position_curr` |
+| `ValuationCurrency` |  | |  | `valuation_curr` |
+| `CreatedByUser` |  | |  | `rerf` |
+| `FirstResponseByDate` |  | |  | `derf` |
+| `CorrespondenceCreationTime` |  | |  | `terf` |
+| `_PositionIdentifier` | | ✓ | | |
 
 ## Associations
 

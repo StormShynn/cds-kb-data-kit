@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGEnergyClassification` | `_Source.GHGEnergyClassification` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGEnergyClassification` | ✓ | | `_Source` | `GHGEnergyClassification` |
 
 ## Source Code
 

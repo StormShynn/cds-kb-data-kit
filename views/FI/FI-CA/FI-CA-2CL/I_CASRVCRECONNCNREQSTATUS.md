@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CASrvcReconncnReqStatus` | `cast( left( domvalue_l, 1 ) as recreq_stat_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CASrvcReconncnReqStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as recreq_stat_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

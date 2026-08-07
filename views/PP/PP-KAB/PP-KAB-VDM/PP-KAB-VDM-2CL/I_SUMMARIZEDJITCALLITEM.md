@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallNumber` | `pabnum` |
-| key `JITCallItemNumber` | `pabpos` |
-| `Product` | `matnr` |
-| `SummarizedJITCallQtyInBaseUnit` | `pabmng` |
-| `BaseUnit` | `meins` |
-| `PurchasingDocument` | `ebeln` |
-| `PurchasingDocumentItem` | `ebelp` |
-| `UnloadingPointName` | `ablad` |
-| `ProductionSupplyArea` | `prvbe` |
-| `SumzdJITCallPlndDelivDateTime` | `pabtim` |
-| `GoodsReceiptIsExisting` | `pabwef` |
-| `GoodsReceiptQtyInBaseUnit` | `pabwem` |
-| `Plant` | `_SummarizedJITCall.Plant` |
-| `Supplier` | `_SummarizedJITCall.Supplier` |
-| `OutputPartnerForSumzdJITCall` | `_SummarizedJITCall.OutputPartnerForSumzdJITCall` |
-| `_SummarizedJITCall` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_OutputPartner` | *Association* |
-| `_OutputPartnerCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallNumber` | ✓ | |  | `pabnum` |
+| `JITCallItemNumber` | ✓ | |  | `pabpos` |
+| `Product` |  | |  | `matnr` |
+| `SummarizedJITCallQtyInBaseUnit` |  | |  | `pabmng` |
+| `BaseUnit` |  | |  | `meins` |
+| `PurchasingDocument` |  | |  | `ebeln` |
+| `PurchasingDocumentItem` |  | |  | `ebelp` |
+| `UnloadingPointName` |  | |  | `ablad` |
+| `ProductionSupplyArea` |  | |  | `prvbe` |
+| `SumzdJITCallPlndDelivDateTime` |  | |  | `pabtim` |
+| `GoodsReceiptIsExisting` |  | |  | `pabwef` |
+| `GoodsReceiptQtyInBaseUnit` |  | |  | `pabwem` |
+| `Plant` |  | | `_SummarizedJITCall` | `Plant` |
+| `Supplier` |  | | `_SummarizedJITCall` | `Supplier` |
+| `OutputPartnerForSumzdJITCall` |  | | `_SummarizedJITCall` | `OutputPartnerForSumzdJITCall` |
+| `_SummarizedJITCall` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_OutputPartner` | | ✓ | | |
+| `_OutputPartnerCompanyByPlant` | | ✓ | | |
 
 ## Associations
 

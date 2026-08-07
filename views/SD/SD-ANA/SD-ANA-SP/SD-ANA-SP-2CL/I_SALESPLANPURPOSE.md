@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesPlanPurpose` | `cast ( substring( domvalue_l, 1, 1 ) as sales_plan_purpose )` |
-| `SalesPlanType` | `cast (case when domvalue_l = '0' or domvalue_l = '1' then '' else 'X' end as sales_plan_type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesPlanPurpose` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as sales_plan_purpose )` |
+| `SalesPlanType` |  | |  | `cast (case when domvalue_l = '0' or domvalue_l = '1' then '' else 'X' end as sales_plan_type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

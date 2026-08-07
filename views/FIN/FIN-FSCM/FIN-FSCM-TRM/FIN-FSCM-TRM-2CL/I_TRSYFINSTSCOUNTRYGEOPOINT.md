@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `country` |
-| `CountryCenterGeoPoint` | `geo_location` |
-| `_Country` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `country` |
+| `CountryCenterGeoPoint` |  | |  | `geo_location` |
+| `_Country` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

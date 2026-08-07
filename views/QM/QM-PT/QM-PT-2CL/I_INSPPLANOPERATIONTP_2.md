@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionPlanGroup` | `InspectionPlanGroup` |
-| key `BOOOperationInternalID` | `BOOOperationInternalID` |
-| key `InspectionPlan` | `InspectionPlan` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `IsDeleted` | `IsDeleted` |
-| `_InspPlanVersion` | *Association* |
-| `_InspPlanOpVersion` | *Association* |
-| `_InspPlanOpCharcVers` | *Association* |
-| `_InspPlanDepdntCharcVers` | *Association* |
-| `_InspPlan` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |
+| `InspectionPlan` | ✓ | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `_InspPlanVersion` | | ✓ | | |
+| `_InspPlanOpVersion` | | ✓ | | |
+| `_InspPlanOpCharcVers` | | ✓ | | |
+| `_InspPlanDepdntCharcVers` | | ✓ | | |
+| `_InspPlan` | | ✓ | | |
 
 ## Source Code
 

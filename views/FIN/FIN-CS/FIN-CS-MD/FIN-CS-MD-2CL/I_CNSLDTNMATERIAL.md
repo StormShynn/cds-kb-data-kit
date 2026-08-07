@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `cast(Material as fincs_material preserving type )` |
-| `AdditionalMasterDataSource` | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | *Association* |
-| `_MaterialHierNode` | *Association* |
-| `_MDSource` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  | `cast(Material as fincs_material preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
+| `_Text` | | ✓ | | |
+| `_MaterialHierNode` | | ✓ | | |
+| `_MDSource` | | ✓ | | |
 
 ## Associations
 

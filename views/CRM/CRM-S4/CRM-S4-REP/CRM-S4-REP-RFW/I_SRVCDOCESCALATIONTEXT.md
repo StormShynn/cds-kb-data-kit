@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEscalationLevel` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `ServiceEscalationLevelName` | `ddtext` |
-| `_SrvcDocEscalation` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEscalationLevel` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ServiceEscalationLevelName` |  | |  | `ddtext` |
+| `_SrvcDocEscalation` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

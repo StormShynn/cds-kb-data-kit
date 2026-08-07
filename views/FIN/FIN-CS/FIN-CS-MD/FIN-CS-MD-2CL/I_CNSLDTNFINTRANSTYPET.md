@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Source.Language` |
-| key `FinancialTransactionType` | `cast( _Source.FinancialTransactionType as fincs_financialtransactiontype preserving type )` |
-| `AdditionalMasterDataSource` | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` | `cast ( _Source.FinancialTransactionTypeName as fincs_description_text_20 preserving type )` |
-| `FinancialTransactionTypeName` | `cast( _Source.FinancialTransactionTypeName as fincs_financialtranstype_desc preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_FinTransType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |
+| `FinancialTransactionType` | ✓ | |  | `cast( _Source.FinancialTransactionType as fincs_financialtransactiontype preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
+| `AdditionalMasterDataText` |  | |  | `cast ( _Source.FinancialTransactionTypeName as fincs_description_text_20 preserving type )` |
+| `FinancialTransactionTypeName` |  | |  | `cast( _Source.FinancialTransactionTypeName as fincs_financialtranstype_desc preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_FinTransType` | | ✓ | | |
 
 ## Associations
 

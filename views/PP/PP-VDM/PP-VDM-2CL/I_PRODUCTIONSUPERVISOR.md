@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `t024f.werks` |
-| key `ProductionSupervisor` | `cast(t024f.fevor as pph_fevor preserving type)` |
-| `ProductionSupervisorName` | `cast(t024f.txt as txt_fevor preserving type)` |
-| `ProductionSchedulingProfile` | `cast(t024f.sfcpf as pph_prodprf preserving type)` |
-| `_Plant` | *Association* |
-| `_ProductionSchedulingProfile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `ProductionSupervisor` | ✓ | |  | `cast(t024f.fevor as pph_fevor preserving type)` |
+| `ProductionSupervisorName` |  | |  | `cast(t024f.txt as txt_fevor preserving type)` |
+| `ProductionSchedulingProfile` |  | |  | `cast(t024f.sfcpf as pph_prodprf preserving type)` |
+| `_Plant` | | ✓ | | |
+| `_ProductionSchedulingProfile` | | ✓ | | |
 
 ## Associations
 

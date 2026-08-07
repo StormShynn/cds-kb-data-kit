@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `AccessSequence` | `kozgf` |
-| `AccessSequenceText` | `vtxtm` |
-| `_SalesPricingAccessSequence` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `AccessSequence` | ✓ | |  | `kozgf` |
+| `AccessSequenceText` |  | |  | `vtxtm` |
+| `_SalesPricingAccessSequence` | | ✓ | | |
 
 ## Associations
 

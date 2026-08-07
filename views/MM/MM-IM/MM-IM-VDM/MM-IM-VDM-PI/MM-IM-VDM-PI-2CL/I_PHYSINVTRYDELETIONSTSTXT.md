@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| key `PhysInvtryDeletionStatus` | `cast ( substring( domvalue_l, 1, 1 ) as pi_hdr_deletion_status_code preserving type)` |
-| `PhysInvtryDeletionStatusText` | `cast ( substring ( ddtext, 1, 60 ) as val_text preserving type )` |
-| `_PhysInvtryDeletionSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `PhysInvtryDeletionStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as pi_hdr_deletion_status_code preserving type)` |
+| `PhysInvtryDeletionStatusText` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as val_text preserving type )` |
+| `_PhysInvtryDeletionSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDocCategoryUUID` | `LglCntntMDocCategoryUUID` |
-| `LglCntntMDocParCatUUID` | `LglCntntMDocParCatUUID` |
-| `LglCntntMDocumentUUID` | `LglCntntMDocumentUUID` |
-| `LglCntntMCategory` | `LglCntntMCategory` |
-| `_Document` | *Association* |
-| `_LegalDocParCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocCategoryUUID` | ✓ | |  |  |
+| `LglCntntMDocParCatUUID` |  | |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |
+| `LglCntntMCategory` |  | |  |  |
+| `_Document` | | ✓ | | |
+| `_LegalDocParCategory` | | ✓ | | |
 
 ## Source Code
 

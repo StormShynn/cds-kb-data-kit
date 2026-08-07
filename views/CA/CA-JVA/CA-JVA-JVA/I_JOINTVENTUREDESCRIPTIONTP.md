@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `Language` | `Language` |
-| key `JointVenture` | `JointVenture` |
-| `JointVentureName` | `JointVentureName` |
-| `_JointVenture` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JointVentureName` |  | |  |  |
+| `_JointVenture` | | ✓ | | |
 
 ## Source Code
 

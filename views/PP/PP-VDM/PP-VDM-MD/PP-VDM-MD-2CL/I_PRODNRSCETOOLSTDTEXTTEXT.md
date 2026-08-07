@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdnRsceToolStandardTextCode` | `cast(txt.vlsch as cf_ktsch preserving type)` |
-| key `Language` | `txt.spras` |
-| `ProdnRsceToolStdTextCodeName` | `txt.txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdnRsceToolStandardTextCode` | ✓ | |  | `cast(txt.vlsch as cf_ktsch preserving type)` |
+| `Language` | ✓ | |  | `spras` |
+| `ProdnRsceToolStdTextCodeName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

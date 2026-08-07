@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReferenceDocumentType` | `cast(awtyp as fis_awtyp preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceDocumentType` | ✓ | |  | `cast(awtyp as fis_awtyp preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

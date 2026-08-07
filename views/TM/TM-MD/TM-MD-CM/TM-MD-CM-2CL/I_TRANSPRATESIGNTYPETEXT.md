@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateSignType` | `cast(substring(domvalue_l, 1, 1) as /scmtms/sign_indicator preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspRateSignTypeText` | `cast(ddtext as /scmtms/vdm_rate_sign_ind_text preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspRateSignType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateSignType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/sign_indicator preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspRateSignTypeText` |  | |  | `cast(ddtext as /scmtms/vdm_rate_sign_ind_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspRateSignType` | | ✓ | | |
 
 ## Associations
 

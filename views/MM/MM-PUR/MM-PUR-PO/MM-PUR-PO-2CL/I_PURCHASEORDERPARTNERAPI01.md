@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `partner.PurchaseOrder` |
-| key `PurchasingOrganization` | `partner.PurchasingOrganization` |
-| key `SupplierSubrange` | `SupplierSubrange` |
-| key `Plant` | `Plant` |
-| key `PartnerFunction` | `cast ( PartnerFunction as parvw preserving type )` |
-| key `PartnerCounter` | `PartnerCounter` |
-| `CreatedByUser` | `partner.CreatedByUser` |
-| `CreationDate` | `partner.CreationDate` |
-| `Supplier` | `partner.Supplier` |
-| `SupplierHierarchyCategory` | `SupplierHierarchyCategory` |
-| `SupplierContact` | `SupplierContact` |
-| `EmploymentInternalID` | `EmploymentInternalID` |
-| `DefaultPartner` | `DefaultPartner` |
-| `_PurchaseOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |
+| `SupplierSubrange` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  | `cast ( PartnerFunction as parvw preserving type )` |
+| `PartnerCounter` | ✓ | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierHierarchyCategory` |  | |  |  |
+| `SupplierContact` |  | |  |  |
+| `EmploymentInternalID` |  | |  |  |
+| `DefaultPartner` |  | |  |  |
+| `_PurchaseOrder` | | ✓ | | |
 
 ## Associations
 

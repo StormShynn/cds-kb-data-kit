@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditRiskClass` | `cast(risk_class as farp_risk_class preserving type)` |
-| key `Language` | `langu` |
-| `CreditRiskClassName` | `risk_class_txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditRiskClass` | ✓ | |  | `cast(risk_class as farp_risk_class preserving type)` |
+| `Language` | ✓ | |  | `langu` |
+| `CreditRiskClassName` |  | |  | `risk_class_txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

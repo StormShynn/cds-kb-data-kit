@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `TreasuryReversalReason` | `sstogrd` |
-| `TreasuryReversalReasonName` | `xlangbez` |
-| `_Language` | *Association* |
-| `_ReversalReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `TreasuryReversalReason` | ✓ | |  | `sstogrd` |
+| `TreasuryReversalReasonName` |  | |  | `xlangbez` |
+| `_Language` | | ✓ | | |
+| `_ReversalReason` | | ✓ | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalDocumentSource` | `LegalDocumentSource` |
-| key `Language` | `Language` |
-| `LglCntntMDocumentSourceText` | `LglCntntMDocumentSourceText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalDocumentSource` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LglCntntMDocumentSourceText` |  | |  |  |
 
 ## Source Code
 

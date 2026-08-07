@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostEstimate` | `CostEstimate` |
-| key `Ledger` | `Ledger` |
-| key `CurrencyRole` | `CurrencyRole` |
-| `FiscalPeriod` | `FiscalPeriod` |
-| `FiscalYear` | `FiscalYear` |
-| `FiscalYearPeriod` | `FiscalYearPeriod` |
-| `Material` | `Material` |
-| `ValuationArea` | `ValuationArea` |
-| `InventoryValuationType` | `InventoryValuationType` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `Supplier` | `Supplier` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `CompanyCode` | `CompanyCode` |
-| `ValuationQuantityUnit` | `ValuationQuantityUnit` |
-| `BaseUnit` | `BaseUnit` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `MaterialPriceControl` | `MaterialPriceControl` |
-| `MaterialPriceUnitQty` | `MaterialPriceUnitQty` |
-| `Currency` | `Currency` |
-| `InventoryPrice` | `InventoryPrice` |
-| `StandardPrice` | `StandardPrice` |
-| `ActualPrice` | `ActualPrice` |
-| `LedgerName` | `LedgerName` |
-| `CurrencyRoleName` | `CurrencyRoleName` |
-| `LegalCurrencyRole` | `LegalCurrencyRole` |
-| `LegalCurrencyRoleName` | `LegalCurrencyRoleName` |
-| `AccountingValuationView` | `AccountingValuationView` |
-| `AcctgValnVwSubviewCombinedName` | `AcctgValnVwSubviewCombinedName` |
-| `LedgerValnCrcyRoleIsUsedInLogs` | `LedgerValnCrcyRoleIsUsedInLogs` |
-| `_CurrencyRole` | *Association* |
-| `_Ledger` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostEstimate` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `CurrencyRole` | ✓ | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `Material` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ValuationQuantityUnit` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `MaterialPriceControl` |  | |  |  |
+| `MaterialPriceUnitQty` |  | |  |  |
+| `Currency` |  | |  |  |
+| `InventoryPrice` |  | |  |  |
+| `StandardPrice` |  | |  |  |
+| `ActualPrice` |  | |  |  |
+| `LedgerName` |  | |  |  |
+| `CurrencyRoleName` |  | |  |  |
+| `LegalCurrencyRole` |  | |  |  |
+| `LegalCurrencyRoleName` |  | |  |  |
+| `AccountingValuationView` |  | |  |  |
+| `AcctgValnVwSubviewCombinedName` |  | |  |  |
+| `LedgerValnCrcyRoleIsUsedInLogs` |  | |  |  |
+| `_CurrencyRole` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
 
 ## Associations
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditSegment` | `cast( credit_sgmnt as farp_credit_segment preserving type)` |
-| key `Language` | `langu` |
-| `CreditSegmentName` | `credit_sgmnt_txt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditSegment` | ✓ | |  | `cast( credit_sgmnt as farp_credit_segment preserving type)` |
+| `Language` | ✓ | |  | `langu` |
+| `CreditSegmentName` |  | |  | `credit_sgmnt_txt` |
 
 ## Source Code
 

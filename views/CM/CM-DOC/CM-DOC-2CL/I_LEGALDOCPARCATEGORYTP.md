@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDocParCatUUID` | `LglCntntMDocParCatUUID` |
-| `LglCntntMDocumentUUID` | `LglCntntMDocumentUUID` |
-| `LglCntntMParentCategory` | `LglCntntMParentCategory` |
-| `_Document` | *Association* |
-| `_LegalDocCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocParCatUUID` | ✓ | |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |
+| `LglCntntMParentCategory` |  | |  |  |
+| `_Document` | | ✓ | | |
+| `_LegalDocCategory` | | ✓ | | |
 
 ## Source Code
 

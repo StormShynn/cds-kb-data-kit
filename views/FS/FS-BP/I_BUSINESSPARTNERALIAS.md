@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `partner` |
-| key `BPAliasPositionNumber` | `alposnr` |
-| `BusinessPartnerAliasName` | `alname` |
-| `_BusinessPartner` | *Association* |
-| `_BPFinancialServicesExtn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `BPAliasPositionNumber` | ✓ | |  | `alposnr` |
+| `BusinessPartnerAliasName` |  | |  | `alname` |
+| `_BusinessPartner` | | ✓ | | |
+| `_BPFinancialServicesExtn` | | ✓ | | |
 
 ## Associations
 

@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowTaskInternalID` | `I_WorkflowTask.WorkflowTaskInternalID` |
-| `WorkflowInternalID` | `TopLevelWorkflowTask` |
-| `WorkflowTaskExternalStatus` | `WorkflowTaskStatus` |
-| `WorkflowTaskDefinition` | `WorkflowTaskDefinition` |
-| `WorkflowTaskProcessor` | `WorkflowTaskCurrentUser` |
-| `WorkflowTaskProcessorRole` | `WorkflowTaskProcessorRole` |
-| `WrkflwTskCreationUTCDateTime` | `WrkflwTskCreationUTCDateTime` |
-| `WrkflwTskCompletionUTCDateTime` | `WrkflwTskCompletionUTCDateTime` |
-| `WorkflowTaskStepType` | `WorkflowTaskStepType` |
-| `WorkflowScenarioDefinition` | `TopLevelWorkflowTaskDefinition` |
-| `WorkflowScenarioDefinitionVers` | `WorkflowTaskDefinitionVersion` |
-| `WorkflowTaskResult` | `WorkflowTaskResult.WorkflowTaskResult` |
-| `_WorkflowTaskExternalStatus` | *Association* |
-| `_WorkflowTaskProcessor` | *Association* |
-| `_WorkflowTaskProcessor_2` | *Association* |
-| `_WorkflowTaskStepType` | *Association* |
-| `_WorkflowRecipients` | *Association* |
-| `_WorkflowRecipients_2` | *Association* |
-| `_WorkflowTaskStepResult` | *Association* |
-| `_WorkflowAgentRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | |  |  |
+| `WorkflowInternalID` |  | |  | `TopLevelWorkflowTask` |
+| `WorkflowTaskExternalStatus` |  | |  | `WorkflowTaskStatus` |
+| `WorkflowTaskDefinition` |  | |  |  |
+| `WorkflowTaskProcessor` |  | |  | `WorkflowTaskCurrentUser` |
+| `WorkflowTaskProcessorRole` |  | |  |  |
+| `WrkflwTskCreationUTCDateTime` |  | |  |  |
+| `WrkflwTskCompletionUTCDateTime` |  | |  |  |
+| `WorkflowTaskStepType` |  | |  |  |
+| `WorkflowScenarioDefinition` |  | |  | `TopLevelWorkflowTaskDefinition` |
+| `WorkflowScenarioDefinitionVers` |  | |  | `WorkflowTaskDefinitionVersion` |
+| `WorkflowTaskResult` |  | |  |  |
+| `_WorkflowTaskExternalStatus` | | ✓ | | |
+| `_WorkflowTaskProcessor` | | ✓ | | |
+| `_WorkflowTaskProcessor_2` | | ✓ | | |
+| `_WorkflowTaskStepType` | | ✓ | | |
+| `_WorkflowRecipients` | | ✓ | | |
+| `_WorkflowRecipients_2` | | ✓ | | |
+| `_WorkflowTaskStepResult` | | ✓ | | |
+| `_WorkflowAgentRule` | | ✓ | | |
 
 ## Associations
 

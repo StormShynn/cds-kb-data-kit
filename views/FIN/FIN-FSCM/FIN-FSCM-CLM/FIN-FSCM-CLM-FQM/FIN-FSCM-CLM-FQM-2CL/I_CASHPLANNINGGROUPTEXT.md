@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CashPlanningGroup` | `grupp` |
-| key `Language` | `spras` |
-| `CashPlanningGroupName` | `cast( textk as fclm_grupp_txtk )` |
-| `CashPlanningGroupDescription` | `cast( textl as fclm_grupp_txtl )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CashPlanningGroup` | ✓ | |  | `grupp` |
+| `Language` | ✓ | |  | `spras` |
+| `CashPlanningGroupName` |  | |  | `cast( textk as fclm_grupp_txtk )` |
+| `CashPlanningGroupDescription` |  | |  | `cast( textl as fclm_grupp_txtl )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

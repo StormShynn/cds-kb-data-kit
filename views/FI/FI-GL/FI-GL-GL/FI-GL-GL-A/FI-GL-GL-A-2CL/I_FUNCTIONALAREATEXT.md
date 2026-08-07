@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `FunctionalArea` | `fkber` |
-| `FunctionalAreaName` | `cast( fkbtx as fis_fkbtx )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `FunctionalArea` | ✓ | |  | `fkber` |
+| `FunctionalAreaName` |  | |  | `cast( fkbtx as fis_fkbtx )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

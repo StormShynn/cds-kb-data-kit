@@ -28,69 +28,69 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalLocation` | `iflot.tplnr` |
-| `FunctionalLocationOID` | `iflot.functionallocationoid` |
-| `FuncLocationStructure` | `iflot.tplkz` |
-| `FunctionalLocationCategory` | `iflot.fltyp` |
-| `WorkCenterInternalID` | `iflot.lgwid` |
-| `WorkCenterTypeCode` | `iflot.pm_objty` |
-| `TechnicalObjectType` | `iflot.eqart` |
-| `MaintObjectLocAcctAssgmtNmbr` | `iflot.iloan` |
-| `ConstructionMaterial` | `iflot.submt` |
-| `CreatedByUser` | `iflot.ernam` |
-| `CreationDate` | `iflot.erdat` |
-| `LastChangedByUser` | `iflot.aenam` |
-| `LastChangeDate` | `iflot.aedat` |
-| `AssetManufacturerName` | `iflot.herst` |
-| `ManufacturerPartTypeName` | `iflot.typbz` |
-| `MaintenancePlannerGroup` | `}] iflot.ingrp` |
-| `MaintenancePlanningPlant` | `iflot.iwerk` |
-| `CatalogProfile` | `iflot.rbnr` |
-| `AuthorizationGroup` | `iflot.begru` |
-| `SuperiorFunctionalLocation` | `iflot.tplma` |
-| `ManufacturerCountry` | `iflot.herld` |
-| `ConstructionYear` | `iflot.baujj` |
-| `ConstructionMonth` | `iflot.baumm` |
-| `AcquisitionValue` | `iflot.answt` |
-| `Currency` | `iflot.waers` |
-| `AcquisitionDate` | `iflot.ansdt` |
-| `MaintObjectInternalID` | `iflot.objnr` |
-| `FuncnlLocPosInSuperiorTechObj` | `iflot.posnr` |
-| `ManufacturerPartNmbr` | `iflot.mapar` |
-| `ManufacturerSerialNumber` | `iflot.serge` |
-| `InventoryNumber` | `iflot.invnr` |
-| `GrossWeight` | `iflot.brgew` |
-| `GrossWeightUnit` | `iflot.gewei` |
-| `SizeOrDimensionText` | `iflot.groes` |
-| `OperationStartDate` | `iflot.datab` |
-| `LastChangeDateTime` | `iflot.changeddatetime` |
-| `EquipmentInstallationIsAllowed` | `iflot.iequi` |
-| `OnePieceOfEquipmentIsAllowed` | `iflot.einzl` |
-| `FunctionalLocationEndOfUseDate` | `iflot.endofuse` |
-| `_FunctionalLocationCategory` | *Association* |
-| `_TechnicalObjectType` | *Association* |
-| `_WorkCenterType` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_LocationAccountAssignment` | *Association* |
-| `_FunctionalLocationText` | *Association* |
-| `_SuperiorFunctionalLocation` | *Association* |
-| `_SupFunctionalLocationText` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_MaintenancePlanningPlant` | *Association* |
-| `_MaintenancePlannerGroup` | *Association* |
-| `_ManufacturerCountry` | *Association* |
-| `_Currency` | *Association* |
-| `_FunctionalLocationCodeCatalog` | *Association* |
-| `_FuncLocationStructure` | *Association* |
-| `_FunctionalLocationLabel` | *Association* |
-| `_ConstructionMaterial` | *Association* |
-| `_GrossWeightUnit` | *Association* |
-| `_LinearAssetManagementData` | *Association* |
-| `_Status` | *Association* |
-| `_PlantMaintenancePartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  | `tplnr` |
+| `FunctionalLocationOID` |  | |  | `functionallocationoid` |
+| `FuncLocationStructure` |  | |  | `tplkz` |
+| `FunctionalLocationCategory` |  | |  | `fltyp` |
+| `WorkCenterInternalID` |  | |  | `lgwid` |
+| `WorkCenterTypeCode` |  | |  | `pm_objty` |
+| `TechnicalObjectType` |  | |  | `eqart` |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  | `iloan` |
+| `ConstructionMaterial` |  | |  | `submt` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDate` |  | |  | `erdat` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `AssetManufacturerName` |  | |  | `herst` |
+| `ManufacturerPartTypeName` |  | |  | `typbz` |
+| `MaintenancePlannerGroup` |  | |  | `}] iflot.ingrp` |
+| `MaintenancePlanningPlant` |  | |  | `iwerk` |
+| `CatalogProfile` |  | |  | `rbnr` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `SuperiorFunctionalLocation` |  | |  | `tplma` |
+| `ManufacturerCountry` |  | |  | `herld` |
+| `ConstructionYear` |  | |  | `baujj` |
+| `ConstructionMonth` |  | |  | `baumm` |
+| `AcquisitionValue` |  | |  | `answt` |
+| `Currency` |  | |  | `waers` |
+| `AcquisitionDate` |  | |  | `ansdt` |
+| `MaintObjectInternalID` |  | |  | `objnr` |
+| `FuncnlLocPosInSuperiorTechObj` |  | |  | `posnr` |
+| `ManufacturerPartNmbr` |  | |  | `mapar` |
+| `ManufacturerSerialNumber` |  | |  | `serge` |
+| `InventoryNumber` |  | |  | `invnr` |
+| `GrossWeight` |  | |  | `brgew` |
+| `GrossWeightUnit` |  | |  | `gewei` |
+| `SizeOrDimensionText` |  | |  | `groes` |
+| `OperationStartDate` |  | |  | `datab` |
+| `LastChangeDateTime` |  | |  | `changeddatetime` |
+| `EquipmentInstallationIsAllowed` |  | |  | `iequi` |
+| `OnePieceOfEquipmentIsAllowed` |  | |  | `einzl` |
+| `FunctionalLocationEndOfUseDate` |  | |  | `endofuse` |
+| `_FunctionalLocationCategory` | | ✓ | | |
+| `_TechnicalObjectType` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_LocationAccountAssignment` | | ✓ | | |
+| `_FunctionalLocationText` | | ✓ | | |
+| `_SuperiorFunctionalLocation` | | ✓ | | |
+| `_SupFunctionalLocationText` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_MaintenancePlanningPlant` | | ✓ | | |
+| `_MaintenancePlannerGroup` | | ✓ | | |
+| `_ManufacturerCountry` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_FunctionalLocationCodeCatalog` | | ✓ | | |
+| `_FuncLocationStructure` | | ✓ | | |
+| `_FunctionalLocationLabel` | | ✓ | | |
+| `_ConstructionMaterial` | | ✓ | | |
+| `_GrossWeightUnit` | | ✓ | | |
+| `_LinearAssetManagementData` | | ✓ | | |
+| `_Status` | | ✓ | | |
+| `_PlantMaintenancePartner` | | ✓ | | |
 
 ## Associations
 

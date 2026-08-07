@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `cast(SalesDocument as vdm_sales_order preserving type)` |
-| key `BillingPlan` | `SalesDocumentBillingPlan.BillingPlan` |
-| `BillingPlanCategory` | `SalesDocumentBillingPlan.BillingPlanCategory` |
-| `BillingPlanUsageCategory` | `SalesDocumentBillingPlan.BillingPlanUsageCategory` |
-| `BillingPlanType` | `SalesDocumentBillingPlan.BillingPlanType` |
-| `BillingPlanStartDate` | `SalesDocumentBillingPlan.BillingPlanStartDate` |
-| `BillingPlanStartDateRule` | `SalesDocumentBillingPlan.BillingPlanStartDateRule` |
-| `BillingPlanEndDate` | `SalesDocumentBillingPlan.BillingPlanEndDate` |
-| `BillingPlanEndDateRule` | `SalesDocumentBillingPlan.BillingPlanEndDateRule` |
-| `BillingPlanSearchTerm` | `SalesDocumentBillingPlan.BillingPlanSearchTerm` |
-| `ReferenceBillingPlan` | `SalesDocumentBillingPlan.ReferenceBillingPlan` |
-| `SalesOrderType` | `_SalesOrder.SalesOrderType` |
-| `SalesOrganization` | `_SalesOrder.SalesOrganization` |
-| `DistributionChannel` | `_SalesOrder.DistributionChannel` |
-| `OrganizationDivision` | `_SalesOrder.OrganizationDivision` |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderBillingPlanItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |
+| `BillingPlan` | ✓ | |  |  |
+| `BillingPlanCategory` |  | |  |  |
+| `BillingPlanUsageCategory` |  | |  |  |
+| `BillingPlanType` |  | |  |  |
+| `BillingPlanStartDate` |  | |  |  |
+| `BillingPlanStartDateRule` |  | |  |  |
+| `BillingPlanEndDate` |  | |  |  |
+| `BillingPlanEndDateRule` |  | |  |  |
+| `BillingPlanSearchTerm` |  | |  |  |
+| `ReferenceBillingPlan` |  | |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderBillingPlanItem` | | ✓ | | |
 
 ## Associations
 

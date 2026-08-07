@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `stlnr` |
-| key `BillOfMaterialVariant` | `stlal` |
-| key `Equipment` | `equnr` |
-| key `Plant` | `werks` |
-| key `BillOfMaterialVariantUsage` | `stlan` |
-| `BillOfMaterialCategory` | `cast ('E' as stlty preserving type)` |
-| `_BillOfMaterialUsage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  | `stlnr` |
+| `BillOfMaterialVariant` | ✓ | |  | `stlal` |
+| `Equipment` | ✓ | |  | `equnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
+| `BillOfMaterialCategory` |  | |  | `cast ('E' as stlty preserving type)` |
+| `_BillOfMaterialUsage` | | ✓ | | |
 
 ## Associations
 

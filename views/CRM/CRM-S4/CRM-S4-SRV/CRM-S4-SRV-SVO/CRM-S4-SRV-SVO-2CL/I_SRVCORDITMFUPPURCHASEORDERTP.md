@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrder` | `ServiceOrder` |
-| key `ServiceOrderItem` | `ServiceOrderItem` |
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `_ServiceOrderItem` | *Association* |
-| `_ServiceOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `_ServiceOrderItem` | | ✓ | | |
+| `_ServiceOrderTP` | | ✓ | | |
 
 ## Source Code
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequestType` | `BillingDocumentRequestType.BillingDocumentRequestType` |
-| key `Language` | `Text.Language` |
-| `BillingDocumentRequestTypeName` | `cast ( Text.BillingProcessDocumentTypeName as billingdocumentrequesttypename preserving type )` |
-| `_BillingDocumentRequestType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequestType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `BillingDocumentRequestTypeName` |  | |  | `cast ( Text.BillingProcessDocumentTypeName as billingdocumentrequesttypename preserving type )` |
+| `_BillingDocumentRequestType` | | ✓ | | |
 
 ## Source Code
 

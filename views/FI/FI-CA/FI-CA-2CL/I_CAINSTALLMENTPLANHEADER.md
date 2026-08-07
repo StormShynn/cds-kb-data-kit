@@ -28,49 +28,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInstallmentPlan` | `rpnum` |
-| `CAInstallmentPlanCategory` | `rpcat` |
-| `CAInstlmntPlanDeactivationDate` | `deadt` |
-| `CAInstlmntPlanDeactivationType` | `deman` |
-| `CADeactivationOpenAmountInTC` | `deoff` |
-| `TransactionCurrency` | `waers` |
-| `CAInstlmntPlanDactvtnRsn` | `deagd` |
-| `CAInstallmentPlanStartDate` | `sttdt` |
-| `CAInstallmentPlanEndDate` | `enddt` |
-| `CANumberOfInstallments` | `ninst` |
-| `ContractAccount` | `vkont` |
-| `BusinessPartner` | `gpart` |
-| `CAContract` | `vtref` |
-| `CompanyCode` | `bukrs` |
-| `CAInstlmntPlanIntrstCalcType` | `dzins` |
-| `CAIntrstAndChargesAreDistrd` | `gzver` |
-| `CAInterestDueCategory` | `faein` |
-| `CAInstlmntPlanDactvtnEntryDate` | `dpudt` |
-| `CAInstlmntPlanDactvtnEntryTime` | `dputm` |
-| `CAWorkflowCheckReason` | `c4eye` |
-| `CAWorkflowCheckProcess` | `c4eyp` |
-| `CASubApplication` | `subap` |
-| `CANumberOfAddlIntrstInstlmnts` | `anzintrt` |
-| `CAInterestCalculationStartDate` | `sttin` |
-| `CAInstlmntPlnIsChgdByInvoicing` | `invip` |
-| `CAPredecessorInstallmentPlan` | `orig_rpnum` |
-| `CAInstlmntPlanGoodwillValue` | `gwval` |
-| `CAInstallmentPlanIssueDate` | `cpudt` |
-| `CAInstallmentPlanIssueTime` | `cputm` |
-| `_BusinessPartner` | *Association* |
-| `_CAInstallmentPlanCategory` | *Association* |
-| `_CAPredecessorInstallmentPlan` | *Association* |
-| `_CAInstlmntPlanDactvtnRsn` | *Association* |
-| `_CAProviderContract` | *Association* |
-| `_CASubApplication` | *Association* |
-| `_CAWorkflowCheckReason` | *Association* |
-| `_CAWorkflowCheckProcess` | *Association* |
-| `_ContractAccount` | *Association* |
-| `_ContractAccountPartner` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_TransactionCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInstallmentPlan` | ✓ | |  | `rpnum` |
+| `CAInstallmentPlanCategory` |  | |  | `rpcat` |
+| `CAInstlmntPlanDeactivationDate` |  | |  | `deadt` |
+| `CAInstlmntPlanDeactivationType` |  | |  | `deman` |
+| `CADeactivationOpenAmountInTC` |  | |  | `deoff` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `CAInstlmntPlanDactvtnRsn` |  | |  | `deagd` |
+| `CAInstallmentPlanStartDate` |  | |  | `sttdt` |
+| `CAInstallmentPlanEndDate` |  | |  | `enddt` |
+| `CANumberOfInstallments` |  | |  | `ninst` |
+| `ContractAccount` |  | |  | `vkont` |
+| `BusinessPartner` |  | |  | `gpart` |
+| `CAContract` |  | |  | `vtref` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `CAInstlmntPlanIntrstCalcType` |  | |  | `dzins` |
+| `CAIntrstAndChargesAreDistrd` |  | |  | `gzver` |
+| `CAInterestDueCategory` |  | |  | `faein` |
+| `CAInstlmntPlanDactvtnEntryDate` |  | |  | `dpudt` |
+| `CAInstlmntPlanDactvtnEntryTime` |  | |  | `dputm` |
+| `CAWorkflowCheckReason` |  | |  | `c4eye` |
+| `CAWorkflowCheckProcess` |  | |  | `c4eyp` |
+| `CASubApplication` |  | |  | `subap` |
+| `CANumberOfAddlIntrstInstlmnts` |  | |  | `anzintrt` |
+| `CAInterestCalculationStartDate` |  | |  | `sttin` |
+| `CAInstlmntPlnIsChgdByInvoicing` |  | |  | `invip` |
+| `CAPredecessorInstallmentPlan` |  | |  | `orig_rpnum` |
+| `CAInstlmntPlanGoodwillValue` |  | |  | `gwval` |
+| `CAInstallmentPlanIssueDate` |  | |  | `cpudt` |
+| `CAInstallmentPlanIssueTime` |  | |  | `cputm` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CAInstallmentPlanCategory` | | ✓ | | |
+| `_CAPredecessorInstallmentPlan` | | ✓ | | |
+| `_CAInstlmntPlanDactvtnRsn` | | ✓ | | |
+| `_CAProviderContract` | | ✓ | | |
+| `_CASubApplication` | | ✓ | | |
+| `_CAWorkflowCheckReason` | | ✓ | | |
+| `_CAWorkflowCheckProcess` | | ✓ | | |
+| `_ContractAccount` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
 
 ## Associations
 

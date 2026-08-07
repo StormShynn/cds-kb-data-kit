@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryRelatedBillingStatus` | `statu` |
-| key `Language` | `spras` |
-| `DeliveryRelatedBillgStatusDesc` | `bezei` |
-| `_DeliveryRelatedBillingStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryRelatedBillingStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `DeliveryRelatedBillgStatusDesc` |  | |  | `bezei` |
+| `_DeliveryRelatedBillingStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

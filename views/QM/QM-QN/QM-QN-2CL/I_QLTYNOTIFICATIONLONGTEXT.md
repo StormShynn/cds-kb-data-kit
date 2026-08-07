@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `}` | `usageType: { dataClass: #TRANSACTIONAL, sizeCategory: #L, serviceQuality: #C }` |
-| `'ItemCounter'` | `representativeKey: 'ItemCounter'` |
-| `]` | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `}` |  | |  | `usageType: { dataClass: #TRANSACTIONAL, sizeCategory: #L, serviceQuality: #C }` |
+| `'ItemCounter'` |  | |  | `representativeKey: 'ItemCounter'` |
+| `]` |  | |  | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]` |
 
 ## Source Code
 

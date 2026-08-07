@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectElementUUID` | `ProjectElementUUID` |
-| `ProjectUUID` | `ProjectUUID` |
-| `Fund` | `Fund` |
-| `FundIsFixAssigned` | `FundIsFixAssigned` |
-| `FunctionalAreaIsFixAssigned` | `FunctionalAreaIsFixAssigned` |
-| `GrantID` | `GrantID` |
-| `GrantIsFixAssigned` | `GrantIsFixAssigned` |
-| `SponsoredProgram` | `SponsoredProgram` |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EnterpriseProject` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectElementUUID` | ✓ | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FundIsFixAssigned` |  | |  |  |
+| `FunctionalAreaIsFixAssigned` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `GrantIsFixAssigned` |  | |  |  |
+| `SponsoredProgram` |  | |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
 
 ## Source Code
 

@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductGroupHierarchy` | `cast(hrrp_dirt_n.hryid as fis_hryid_productgroup preserving type )` |
-| key `ValidityEndDate` | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| key `Language` | `spras` |
-| `ValidityStartDate` | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `ProductGroupHierarchyName` | `hrytxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductGroupHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_productgroup preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
+| `ProductGroupHierarchyName` |  | |  | `hrytxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

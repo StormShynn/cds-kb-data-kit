@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `SingleWarehouseDeliveryCode` | `cast( left(dd07t.domvalue_l, 1 ) as lnspl_likp preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `SglWarehouseDeliveryCodeName` | `dd07t.ddtext` |
-| `_Language` | *Association* |
-| `_SglWhseDelivCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `SingleWarehouseDeliveryCode` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1 ) as lnspl_likp preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `SglWarehouseDeliveryCodeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_SglWhseDelivCode` | | ✓ | | |
 
 ## Associations
 

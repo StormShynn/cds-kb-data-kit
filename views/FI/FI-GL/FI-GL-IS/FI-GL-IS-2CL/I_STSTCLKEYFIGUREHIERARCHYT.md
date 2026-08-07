@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `hrrp_dirt_n.hrycls` |
-| key `StatisticalKeyFigureHierarchy` | `hrrp_dirt_n.hryid_42` |
-| key `ValidityEndDate` | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| key `Language` | `spras` |
-| `ValidityStartDate` | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `StatKeyFigureHierarchyName` | `hrytxt` |
-| `_ControllingAreaText` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `hrycls` |
+| `StatisticalKeyFigureHierarchy` | ✓ | |  | `hryid_42` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
+| `StatKeyFigureHierarchyName` |  | |  | `hrytxt` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

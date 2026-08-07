@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `ProdAllocChkPeriodCnsmpnType` | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkperiodcnsmpntype preserving type )` |
-| `ProdAllocChkPerdCnsmpnTypeDesc` | `cast( ddtext as prodallocchkperdcnsmpntypedesc preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Language` | *Association* |
-| `_ProdAllocChkPerdCnsmpnType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `ProdAllocChkPeriodCnsmpnType` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkperiodcnsmpntype preserving type )` |
+| `ProdAllocChkPerdCnsmpnTypeDesc` |  | |  | `cast( ddtext as prodallocchkperdcnsmpntypedesc preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_ProdAllocChkPerdCnsmpnType` | | ✓ | | |
 
 ## Associations
 

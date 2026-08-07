@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JVACtbckAcctMappgIntraBsc.CompanyCode` |
-| key `FromGLAccount` | `JVACtbckAcctMappgIntraBsc.FromGLAccount` |
-| `ToGLAccount` | `JVACtbckAcctMappgIntraBsc.ToGLAccount` |
-| `CutbackAccount` | `JVACtbckAcctMappgIntraBsc.CutbackAccount` |
-| `JVAIsToKeepOriginalAccount` | `JVACtbckAcctMappgIntraBsc.JVAIsToKeepOriginalAccount` |
-| `_CompanyCode` | *Association* |
-| `_FromGLAccount` | *Association* |
-| `_ToGLAccount` | *Association* |
-| `_CutbackAccount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `FromGLAccount` | ✓ | |  |  |
+| `ToGLAccount` |  | |  |  |
+| `CutbackAccount` |  | |  |  |
+| `JVAIsToKeepOriginalAccount` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_FromGLAccount` | | ✓ | | |
+| `_ToGLAccount` | | ✓ | | |
+| `_CutbackAccount` | | ✓ | | |
 
 ## Associations
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADisputeExternalCallerCode` | `cast( left( dd07t.domvalue_l, 3 ) as calld_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CADisputeExtCallerCodeText` | `cast( ddtext as calld_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADisputeExternalCallerCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as calld_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CADisputeExtCallerCodeText` |  | |  | `cast( ddtext as calld_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

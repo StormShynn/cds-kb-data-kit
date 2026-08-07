@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDProcessStatus` | `substring(dd07l.domvalue_l, 1, 1)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDProcessStatus` | ✓ | |  | `substring(dd07l.domvalue_l, 1, 1)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

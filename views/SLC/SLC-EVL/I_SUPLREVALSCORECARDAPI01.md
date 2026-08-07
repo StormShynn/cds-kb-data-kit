@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScorecardUUID` | `SuplrEvalScorecardUUID` |
-| `SupplierEvalScorecard` | `SupplierEvalScorecard` |
-| `SuplrEvalScorecardName` | `SuplrEvalScorecardName` |
-| `SuplrEvalStartDate` | `SuplrEvalStartDate` |
-| `SuplrEvalEndDate` | `SuplrEvalEndDate` |
-| `PurgCatUUID` | `PurgCatUUID` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `SuplrEvalIsFinal` | `SuplrEvalIsFinal` |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScorecardUUID` | ✓ | |  |  |
+| `SupplierEvalScorecard` |  | |  |  |
+| `SuplrEvalScorecardName` |  | |  |  |
+| `SuplrEvalStartDate` |  | |  |  |
+| `SuplrEvalEndDate` |  | |  |  |
+| `PurgCatUUID` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
+| `SuplrEvalIsFinal` |  | |  |  |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

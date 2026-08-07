@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionApplication` | `_PricingConditionType.ConditionApplication` |
-| key `ConditionType` | `_PricingConditionType.ConditionType` |
-| `ConditionClass` | `_PricingConditionType.ConditionClass` |
-| `TaxConditionTypeOID` | `case when _MdiOidConfiguration.Context is initial or _MdiOidConfiguration.ComposeOid is initial then cast( concat( concat(_PricingConditionType.ConditionApplication, '-'), _PricingConditionType.ConditionType ) as tax_condition_type_oid ) when _MdiOidConfiguration.Context is not initial then cast( concat( concat( concat( concat(_MdiOidConfiguration.Context, ':' ), _PricingConditionType.ConditionApplication), '-' ), _PricingConditionType.ConditionType ) as tax_condition_type_oid ) end` |
-| `_ConditionApplication` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionApplication` | ✓ | | `_PricingConditionType` | `ConditionApplication` |
+| `ConditionType` | ✓ | | `_PricingConditionType` | `ConditionType` |
+| `ConditionClass` |  | | `_PricingConditionType` | `ConditionClass` |
+| `TaxConditionTypeOID` |  | |  | `case when _MdiOidConfiguration.Context is initial or _MdiOidConfiguration.ComposeOid is initial then cast( concat( concat(_PricingConditionType.ConditionApplication, '-'), _PricingConditionType.ConditionType ) as tax_condition_type_oid ) when _MdiOidConfiguration.Context is not initial then cast( concat( concat( concat( concat(_MdiOidConfiguration.Context, ':' ), _PricingConditionType.ConditionApplication), '-' ), _PricingConditionType.ConditionType ) as tax_condition_type_oid ) end` |
+| `_ConditionApplication` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

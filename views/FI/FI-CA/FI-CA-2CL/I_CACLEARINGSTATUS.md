@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAClearingStatus` | `cast( left( domvalue_l, 1 ) as augst_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAClearingStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as augst_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

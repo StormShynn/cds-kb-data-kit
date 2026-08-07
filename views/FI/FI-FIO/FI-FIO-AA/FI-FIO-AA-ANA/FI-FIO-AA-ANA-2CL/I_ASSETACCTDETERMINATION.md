@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AssetAccountDetermination` | `gl_account_det` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssetAccountDetermination` | ✓ | |  | `gl_account_det` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

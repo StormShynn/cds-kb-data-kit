@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `_QltyNotifItemLongText.QualityNotification` |
-| key `NotificationItem` | `_QltyNotifItemLongText.NotificationItem` |
-| key `LongTextInternalNumber` | `_QltyNotifItemLongText.LongTextInternalNumber` |
-| key `Language` | `_QltyNotifItemLongText.Language` |
-| `LongTextID` | `_QltyNotifItemLongText.LongTextID` |
-| `NotificationItemLongText` | `_QltyNotifItemLongText.NotificationItemLongText` |
-| `LongTextCreatedByUser` | `_QltyNotifItemLongText.LongTextCreatedByUser` |
-| `LongTextCreatedAt` | `_QltyNotifItemLongText.LongTextCreatedAt` |
-| `LongTextLastChangedByUser` | `_QltyNotifItemLongText.LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` | `_QltyNotifItemLongText.LongTextLastChangedAt` |
-| `I_QualityNotificationItemTP` | `_QltyNotifItemLongText._QualityNotificationItem : redirected to parent I_QualityNotificationItemTP` |
-| `I_QltyNotificationTP` | `_QltyNotifItemLongText._QltyNotification : redirected to I_QltyNotificationTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | | `_QltyNotifItemLongText` | `QualityNotification` |
+| `NotificationItem` | ✓ | | `_QltyNotifItemLongText` | `NotificationItem` |
+| `LongTextInternalNumber` | ✓ | | `_QltyNotifItemLongText` | `LongTextInternalNumber` |
+| `Language` | ✓ | | `_QltyNotifItemLongText` | `Language` |
+| `LongTextID` |  | | `_QltyNotifItemLongText` | `LongTextID` |
+| `NotificationItemLongText` |  | | `_QltyNotifItemLongText` | `NotificationItemLongText` |
+| `LongTextCreatedByUser` |  | | `_QltyNotifItemLongText` | `LongTextCreatedByUser` |
+| `LongTextCreatedAt` |  | | `_QltyNotifItemLongText` | `LongTextCreatedAt` |
+| `LongTextLastChangedByUser` |  | | `_QltyNotifItemLongText` | `LongTextLastChangedByUser` |
+| `LongTextLastChangedAt` |  | | `_QltyNotifItemLongText` | `LongTextLastChangedAt` |
+| `I_QualityNotificationItemTP` |  | |  | `_QltyNotifItemLongText._QualityNotificationItem : redirected to parent I_QualityNotificationItemTP` |
+| `I_QltyNotificationTP` |  | |  | `_QltyNotifItemLongText._QltyNotification : redirected to I_QltyNotificationTP` |
 
 ## Source Code
 

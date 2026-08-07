@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlanningStrategyGroup` | `grp.strgr` |
-| `MainPlanningStrategy` | `grp.hptst` |
-| `_Text` | *Association* |
-| `_MainPlanningStrategy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlanningStrategyGroup` | ✓ | |  | `strgr` |
+| `MainPlanningStrategy` |  | |  | `hptst` |
+| `_Text` | | ✓ | | |
+| `_MainPlanningStrategy` | | ✓ | | |
 
 ## Associations
 

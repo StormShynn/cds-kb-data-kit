@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductProfileCode` | `cast(t141.mmsta as profilecode preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductProfileCode` | ✓ | |  | `cast(t141.mmsta as profilecode preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

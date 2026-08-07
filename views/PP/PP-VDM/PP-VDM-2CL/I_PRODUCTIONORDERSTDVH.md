@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionOrder` | `ProductionOrder` |
-| `ProductionOrderText` | `ProductionOrderText` |
-| `OrderCategory` | `OrderCategory` |
-| `ProductionOrderType` | `ProductionOrderType` |
-| `ProductionPlant` | `ProductionPlant` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionOrder` | ✓ | |  |  |
+| `ProductionOrderText` |  | |  |  |
+| `OrderCategory` |  | |  |  |
+| `ProductionOrderType` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
 
 ## Source Code
 

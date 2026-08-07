@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlanningCategory` | `PlanningCategory` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlanningCategory` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

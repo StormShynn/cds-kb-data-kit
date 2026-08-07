@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| `SuplrCsgnmtPplineWthdrwlStatus` | `SuplrCsgnmtPplineWthdrwlStatus` |
-| `DocumentDate` | `DocumentDate` |
-| `PostingDate` | `PostingDate` |
-| `CompanyCode` | `CompanyCode` |
-| `IssgOrRcvgStkIdfgSpclStkType` | `IssgOrRcvgStkIdfgSpclStkType` |
-| `ConsignmentPipelineSupplier` | `ConsignmentPipelineSupplier` |
-| `Plant` | `Plant` |
-| `Material` | `Material` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `BusinessArea` | `BusinessArea` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `SuplrCsgnmtPplineWthdrwlAmount` | `} SuplrCsgnmtPplineWthdrwlAmount` |
-| `SupCsgnmtPplineWthdrwlQtyUnit` | `SupCsgnmtPplineWthdrwlQtyUnit` |
-| `SuplrCsgnmtPplineWthdrwlQty` | `} SuplrCsgnmtPplineWthdrwlQty` |
-| `GLAccount` | `GLAccount` |
-| `TaxCode` | `TaxCode` |
-| `NonDeductibleInputTaxAmount` | `} NonDeductibleInputTaxAmount` |
-| `ProfitCenter` | `ProfitCenter` |
-| `TaxCountry` | `TaxCountry` |
-| `_SupCsgnmtPplineInvcHistAPI01` | *Association* |
-| `_SupplierCompany` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `SuplrCsgnmtPplineWthdrwlStatus` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `IssgOrRcvgStkIdfgSpclStkType` |  | |  |  |
+| `ConsignmentPipelineSupplier` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Material` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `SuplrCsgnmtPplineWthdrwlAmount` |  | |  | `} SuplrCsgnmtPplineWthdrwlAmount` |
+| `SupCsgnmtPplineWthdrwlQtyUnit` |  | |  |  |
+| `SuplrCsgnmtPplineWthdrwlQty` |  | |  | `} SuplrCsgnmtPplineWthdrwlQty` |
+| `GLAccount` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  | `} NonDeductibleInputTaxAmount` |
+| `ProfitCenter` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `_SupCsgnmtPplineInvcHistAPI01` | | ✓ | | |
+| `_SupplierCompany` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

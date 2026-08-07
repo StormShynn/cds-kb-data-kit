@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `BusinessTransactionType` | `cast(cbttype as fis_custbttype preserving type )` |
-| `BusinessTransactionTypeName` | `cast(txt as fins_custbttype_text preserving type)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `BusinessTransactionType` | ✓ | |  | `cast(cbttype as fis_custbttype preserving type )` |
+| `BusinessTransactionTypeName` |  | |  | `cast(txt as fins_custbttype_text preserving type)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

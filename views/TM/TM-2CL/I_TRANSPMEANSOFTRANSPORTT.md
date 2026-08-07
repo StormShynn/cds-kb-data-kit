@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspMeansOfTransport` | `ttype` |
-| key `Language` | `spras` |
-| `MeansOfTransportDesc` | `ttypetxt` |
-| `_Language` | *Association* |
-| `_MeansOfTransport` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspMeansOfTransport` | ✓ | |  | `ttype` |
+| `Language` | ✓ | |  | `spras` |
+| `MeansOfTransportDesc` |  | |  | `ttypetxt` |
+| `_Language` | | ✓ | | |
+| `_MeansOfTransport` | | ✓ | | |
 
 ## Associations
 

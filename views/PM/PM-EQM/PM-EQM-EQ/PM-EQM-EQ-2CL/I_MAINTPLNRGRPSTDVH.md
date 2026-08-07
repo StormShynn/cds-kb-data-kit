@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| key `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `MaintenancePlannerGroupName` | `MaintenancePlannerGroupName` |
-| `_MaintenancePlanningPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlannerGroup` | ✓ | |  |  |
+| `MaintenancePlanningPlant` | ✓ | |  |  |
+| `MaintenancePlannerGroupName` |  | |  |  |
+| `_MaintenancePlanningPlant` | | ✓ | | |
 
 ## Source Code
 

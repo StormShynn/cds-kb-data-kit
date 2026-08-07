@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABllbleItmCostType` | `cast(co_type as co_type_gfn_kk preserving type)` |
-| `_CABllbleItmCostTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABllbleItmCostType` | ✓ | |  | `cast(co_type as co_type_gfn_kk preserving type)` |
+| `_CABllbleItmCostTypeText` | | ✓ | | |
 
 ## Associations
 

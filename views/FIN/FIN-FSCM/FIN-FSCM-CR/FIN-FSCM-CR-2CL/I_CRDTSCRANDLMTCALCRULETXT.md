@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditScoreAndLimitCalcRule` | `limit_rule` |
-| key `Language` | `langu` |
-| `CrdtScoreAndLimitCalcRuleName` | `text50` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditScoreAndLimitCalcRule` | ✓ | |  | `limit_rule` |
+| `Language` | ✓ | |  | `langu` |
+| `CrdtScoreAndLimitCalcRuleName` |  | |  | `text50` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

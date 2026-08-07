@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOffice` | `vkbur` |
-| key `SalesGroup` | `vkgrp` |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOffice` | ✓ | |  | `vkbur` |
+| `SalesGroup` | ✓ | |  | `vkgrp` |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
 
 ## Associations
 

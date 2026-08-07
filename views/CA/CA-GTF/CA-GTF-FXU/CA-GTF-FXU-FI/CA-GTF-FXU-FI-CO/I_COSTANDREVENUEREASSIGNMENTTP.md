@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYear` | `FiscalYear` |
-| key `ReferenceDocument` | `ReferenceDocument` |
-| key `ControllingArea` | `ControllingArea` |
-| key `ReferenceDocumentType` | `ReferenceDocumentType` |
-| key `ReferenceDocumentContext` | `ReferenceDocumentContext` |
-| `FiscalYearForEdit` | `FiscalYearForEdit` |
-| `ReferenceDocumentForEdit` | `ReferenceDocumentForEdit` |
-| `ControllingAreaForEdit` | `ControllingAreaForEdit` |
-| `ReferenceDocumentTypeForEdit` | `ReferenceDocumentTypeForEdit` |
-| `ReferenceDocumentContextFoEd` | `ReferenceDocumentContextFoEd` |
-| `AccountingDocumentHeaderText` | `AccountingDocumentHeaderText` |
-| `DocumentDate` | `DocumentDate` |
-| `PostingDate` | `PostingDate` |
-| `FiscalPeriod` | `FiscalPeriod` |
-| `FiscalYearPeriod` | `FiscalYearPeriod` |
-| `AccountingDocumentCreationDate` | `AccountingDocumentCreationDate` |
-| `AccountingDocCreatedByUser` | `AccountingDocCreatedByUser` |
-| `IsReversal` | `IsReversal` |
-| `IsReversed` | `IsReversed` |
-| `ControllingDocumentStatus` | `ControllingDocumentStatus` |
-| `AllocationPostingType` | `AllocationPostingType` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `ReversalReferenceDocument` | `ReversalReferenceDocument` |
-| `ReversedReferenceDocument` | `ReversedReferenceDocument` |
-| `GlobalCurrency` | `GlobalCurrency` |
-| `TotalAmountInGlobalCurrency` | `} TotalAmountInGlobalCurrency` |
-| `AccountingDocumentType` | `AccountingDocumentType` |
-| `ControllingBusTransacType` | `ControllingBusTransacType` |
-| `CostRevenueReassignmentType` | `CostRevenueReassignmentType` |
-| `_Item` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYear` | ✓ | |  |  |
+| `ReferenceDocument` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `ReferenceDocumentType` | ✓ | |  |  |
+| `ReferenceDocumentContext` | ✓ | |  |  |
+| `FiscalYearForEdit` |  | |  |  |
+| `ReferenceDocumentForEdit` |  | |  |  |
+| `ControllingAreaForEdit` |  | |  |  |
+| `ReferenceDocumentTypeForEdit` |  | |  |  |
+| `ReferenceDocumentContextFoEd` |  | |  |  |
+| `AccountingDocumentHeaderText` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `AccountingDocumentCreationDate` |  | |  |  |
+| `AccountingDocCreatedByUser` |  | |  |  |
+| `IsReversal` |  | |  |  |
+| `IsReversed` |  | |  |  |
+| `ControllingDocumentStatus` |  | |  |  |
+| `AllocationPostingType` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `ReversalReferenceDocument` |  | |  |  |
+| `ReversedReferenceDocument` |  | |  |  |
+| `GlobalCurrency` |  | |  |  |
+| `TotalAmountInGlobalCurrency` |  | |  | `} TotalAmountInGlobalCurrency` |
+| `AccountingDocumentType` |  | |  |  |
+| `ControllingBusTransacType` |  | |  |  |
+| `CostRevenueReassignmentType` |  | |  |  |
+| `_Item` | | ✓ | | |
 
 ## Source Code
 

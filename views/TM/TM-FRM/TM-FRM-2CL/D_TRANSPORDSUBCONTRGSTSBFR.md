@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TranspOrderSubcontrgSts` | `/scmtms/tor_subcontr_status` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrderSubcontrgSts` |  | |  | `/scmtms/tor_subcontr_status` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationVersion` | `_CnsldtnVersion.ConsolidationVersion` |
-| `ConsolidationVersionText` | `cast(_CnsldtnVersion._Text[1: Language=$session.system_language].ConsolidationVersionText as fincs_description_text_30 preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationVersion` | ✓ | | `_CnsldtnVersion` | `ConsolidationVersion` |
+| `ConsolidationVersionText` |  | |  | `cast(_CnsldtnVersion._Text[1: Language=$session.system_language].ConsolidationVersionText as fincs_description_text_30 preserving type )` |
 
 ## Source Code
 

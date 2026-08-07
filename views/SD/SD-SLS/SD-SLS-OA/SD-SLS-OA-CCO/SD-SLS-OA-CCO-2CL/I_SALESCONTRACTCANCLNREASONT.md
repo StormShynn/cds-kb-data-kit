@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContractCanclnReason` | `kuegru` |
-| key `Language` | `spras` |
-| `SalesContractCanclnReasonText` | `bezei` |
-| `_SalesContractCanclnReason` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContractCanclnReason` | ✓ | |  | `kuegru` |
+| `Language` | ✓ | |  | `spras` |
+| `SalesContractCanclnReasonText` |  | |  | `bezei` |
+| `_SalesContractCanclnReason` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

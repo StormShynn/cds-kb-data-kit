@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `ConsolidationSegmentHierarchy` | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_segmenthierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `ConsolidationSegmentHierText` | `_HierarchyText.UniversalHierarchyText` |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `ConsolidationSegmentHierarchy` | ✓ | |  | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_segmenthierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `ConsolidationSegmentHierText` |  | | `_HierarchyText` | `UniversalHierarchyText` |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

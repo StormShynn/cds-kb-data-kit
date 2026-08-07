@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspCalculationMethodType` | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tcm_calc_mthd_type preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspCalcMethTypeDescription` | `cast(ddtext as /scmtms/vdm_tcm_calc_mthd_typt preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspCalculationMethodType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspCalculationMethodType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tcm_calc_mthd_type preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspCalcMethTypeDescription` |  | |  | `cast(ddtext as /scmtms/vdm_tcm_calc_mthd_typt preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspCalculationMethodType` | | ✓ | | |
 
 ## Associations
 

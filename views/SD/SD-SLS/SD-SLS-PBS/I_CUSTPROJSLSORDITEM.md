@@ -29,43 +29,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerProject` | `CustProjSlsOrd.CustomerProject` |
-| key `SalesOrderItem` | `SalesOrderItem.SalesOrderItem` |
-| `SalesOrder` | `SalesOrderItem.SalesOrder` |
-| `SalesOrderItemCategory` | `SalesOrderItemCategory` |
-| `Material` | `Material` |
-| `Product` | `Product` |
-| `SalesOrderItemText` | `SalesOrderItemText` |
-| `ProfitCenter` | `ProfitCenter` |
-| `CappedNetAmount` | `CappedNetAmount` |
-| `CappedNetAmtAlertThldInPct` | `CappedNetAmtAlertThldInPct` |
-| `MaterialByCustomer` | `MaterialByCustomer` |
-| `NetAmount` | `NetAmount` |
-| `TransactionCurrency` | `SalesOrderItem.TransactionCurrency` |
-| `WBSElement` | `WBSElement` |
-| `WBSElementInternalID` | `SalesOrderItem.WBSElementInternalID` |
-| `PurchaseOrderByCustomer` | `SalesOrderItem.PurchaseOrderByCustomer` |
-| `UnderlyingPurchaseOrderItem` | `SalesOrderItem.UnderlyingPurchaseOrderItem` |
-| `CustomerPaymentTerms` | `SalesOrderItem.CustomerPaymentTerms` |
-| `BillingPlan` | `BillingPlan` |
-| `TotalStandAloneSellingPrice` | `TotalStandAloneSellingPrice` |
-| `SalesDocumentRjcnReason` | `SalesDocumentRjcnReason` |
-| `SDDocumentRejectionStatus` | `SDDocumentRejectionStatus` |
-| `SDProcessStatus` | `SDProcessStatus` |
-| `ItemBillingBlockReason` | `SalesOrderItem.ItemBillingBlockReason` |
-| `SalesOrderType` | `CustProjSlsOrd.SalesOrderType` |
-| `OrganizationDivision` | `CustProjSlsOrd.OrganizationDivision` |
-| `SalesOrganization` | `CustProjSlsOrd.SalesOrganization` |
-| `DistributionChannel` | `CustProjSlsOrd.DistributionChannel` |
-| `_SalesOrder` | *Association* |
-| `_CustProjSlsOrd` | *Association* |
-| `_CustomerProject` | *Association* |
-| `_CustProjSlsOrdItemWorkPckg` | *Association* |
-| `_CustProjSlsOrdItmBillgPlnItm` | *Association* |
-| `_Material` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerProject` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItemCategory` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  |  |
+| `SalesOrderItemText` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CappedNetAmount` |  | |  |  |
+| `CappedNetAmtAlertThldInPct` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `WBSElement` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `UnderlyingPurchaseOrderItem` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `BillingPlan` |  | |  |  |
+| `TotalStandAloneSellingPrice` |  | |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |
+| `SDProcessStatus` |  | |  |  |
+| `ItemBillingBlockReason` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `_SalesOrder` | | ✓ | | |
+| `_CustProjSlsOrd` | | ✓ | | |
+| `_CustomerProject` | | ✓ | | |
+| `_CustProjSlsOrdItemWorkPckg` | | ✓ | | |
+| `_CustProjSlsOrdItmBillgPlnItm` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Associations
 

@@ -26,75 +26,75 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `BusinessSolutionOrderUUID` | `BusinessSolutionOrderUUID` |
-| `ServiceDocumentCharUUID` | `ServiceDocumentCharUUID` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `BusSolnOrdDescription` | `BusSolnOrdDescription` |
-| `Language` | `Language` |
-| `PostingDate` | `PostingDate` |
-| `ServiceDocCreationDateTime` | `ServiceDocCreationDateTime` |
-| `ServiceDocChangedDateTime` | `ServiceDocChangedDateTime` |
-| `ServiceDocumentCreatedByUser` | `ServiceDocumentCreatedByUser` |
-| `ServiceDocumentChangedByUser` | `ServiceDocumentChangedByUser` |
-| `ServiceDocGrossAmount` | `ServiceDocGrossAmount` |
-| `BusSolnOrdNetAmount` | `BusSolnOrdNetAmount` |
-| `ServiceDocTaxAmount` | `ServiceDocTaxAmount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `SoldToParty` | `SoldToParty` |
-| `SoldToPartyCountry` | `SoldToPartyCountry` |
-| `SoldToPartyRegion` | `SoldToPartyRegion` |
-| `ShipToParty` | `ShipToParty` |
-| `BillToParty` | `BillToParty` |
-| `PayerParty` | `PayerParty` |
-| `RespEmployeeBusinessPartnerId` | `RespEmployeeBusinessPartnerId` |
-| `ContactPersonBusinessPartnerId` | `ContactPersonBusinessPartnerId` |
-| `PaymentTerms` | `PaymentTerms` |
-| `PaymentMethod` | `PaymentMethod` |
-| `SalesOrganization` | `SalesOrganization` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `Region` | `Region` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderDate` | `CustomerPurchaseOrderDate` |
-| `ServiceDocumentRejectionReason` | `ServiceDocumentRejectionReason` |
-| `BusSolnOrdStatus` | `BusSolnOrdStatus` |
-| `BusSolnOrdIsReleased` | `BusSolnOrdIsReleased` |
-| `BusSolnOrdHasError` | `BusSolnOrdHasError` |
-| `ServiceDocumentIsOpen` | `ServiceDocumentIsOpen` |
-| `BusSolnOrdRejectionStatus` | `BusSolnOrdRejectionStatus` |
-| `BusSolnOrdExtReference` | `_ExtRefBusinessSolutionOrder.CustMgmtExtRefID` |
-| `_BillToParty` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_PayerParty` | *Association* |
-| `_PaymentMethod` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_Region` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_ServiceDocHasError` | *Association* |
-| `_ServiceDocumentIsOpen` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_SoldToPartyCountry` | *Association* |
-| `_SoldToPartyRegion` | *Association* |
-| `_SrvcDocLifecycleStatus` | *Association* |
-| `_SrvcDocumentRejectionReason` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_SrvcDocHeaderLongText` | *Association* |
-| `_CustMgmtPartner` | *Association* |
-| `_BusSolutionOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `BusinessSolutionOrderUUID` |  | |  |  |
+| `ServiceDocumentCharUUID` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `BusSolnOrdDescription` |  | |  |  |
+| `Language` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |
+| `BusSolnOrdNetAmount` |  | |  |  |
+| `ServiceDocTaxAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `SoldToPartyCountry` |  | |  |  |
+| `SoldToPartyRegion` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `Region` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `ServiceDocumentRejectionReason` |  | |  |  |
+| `BusSolnOrdStatus` |  | |  |  |
+| `BusSolnOrdIsReleased` |  | |  |  |
+| `BusSolnOrdHasError` |  | |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |
+| `BusSolnOrdRejectionStatus` |  | |  |  |
+| `BusSolnOrdExtReference` |  | | `_ExtRefBusinessSolutionOrder` | `CustMgmtExtRefID` |
+| `_BillToParty` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_PaymentMethod` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_ServiceDocHasError` | | ✓ | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_SoldToPartyCountry` | | ✓ | | |
+| `_SoldToPartyRegion` | | ✓ | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_SrvcDocHeaderLongText` | | ✓ | | |
+| `_CustMgmtPartner` | | ✓ | | |
+| `_BusSolutionOrderItem` | | ✓ | | |
 
 ## Source Code
 

@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `EarmarkedFundsDocEntryStatus` | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as fmr_mvstat preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `EarmarkedFundsDocEntryStsText` | `cast ( ddtext as fmis_efd_entrystatustext preserving type )` |
-| `_Language` | *Association* |
-| `_EarmarkedFundsDocEntryStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `EarmarkedFundsDocEntryStatus` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as fmr_mvstat preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `EarmarkedFundsDocEntryStsText` |  | |  | `cast ( ddtext as fmis_efd_entrystatustext preserving type )` |
+| `_Language` | | ✓ | | |
+| `_EarmarkedFundsDocEntryStatus` | | ✓ | | |
 
 ## Associations
 

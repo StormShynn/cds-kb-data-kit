@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `SettlmtMgmtSemanticCode` | `semantic_type` |
-| `SettlmtMgmtSemanticCodeDesc` | `semantic_type_name` |
-| `_SettlmtMgmtSemanticCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `SettlmtMgmtSemanticCode` | ✓ | |  | `semantic_type` |
+| `SettlmtMgmtSemanticCodeDesc` |  | |  | `semantic_type_name` |
+| `_SettlmtMgmtSemanticCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

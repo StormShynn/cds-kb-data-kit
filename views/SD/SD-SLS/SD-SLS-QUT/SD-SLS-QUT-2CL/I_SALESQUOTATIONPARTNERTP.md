@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotation` | `SalesQuotationPartner.SalesQuotation` |
-| key `PartnerFunction` | `SalesQuotationPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `SalesQuotationPartner.PartnerFunctionForEdit` |
-| `Customer` | `SalesQuotationPartner.Customer` |
-| `Supplier` | `SalesQuotationPartner.Supplier` |
-| `Personnel` | `SalesQuotationPartner.Personnel` |
-| `ContactPerson` | `SalesQuotationPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `SalesQuotationPartner.ReferenceBusinessPartner` |
-| `Partner` | `SalesQuotationPartner.Partner` |
-| `SalesQuotationType` | `SalesQuotationPartner.SalesQuotationType` |
-| `SalesOrganization` | `SalesQuotationPartner.SalesOrganization` |
-| `DistributionChannel` | `SalesQuotationPartner.DistributionChannel` |
-| `OrganizationDivision` | `SalesQuotationPartner.OrganizationDivision` |
-| `_SalesQuotation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `SalesQuotationType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesQuotation` | | ✓ | | |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintNotifDetectionCatalog` | `eam_detcat.detectioncatalog` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintNotifDetectionCatalog` | ✓ | |  | `detectioncatalog` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

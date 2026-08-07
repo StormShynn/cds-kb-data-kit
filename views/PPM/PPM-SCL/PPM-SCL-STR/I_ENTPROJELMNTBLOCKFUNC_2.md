@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElementFunctionUUID` | `BlockFunction.guid` |
-| `ProjectUUID` | `BlockFunction.project_guid` |
-| `ProjectElementUUID` | `BlockFunction.parent_object_guid` |
-| `EntProjElementFunctionID` | `BlockFunction.function_id` |
-| `EntProjElementFunctionIsBlkd` | `BlockFunction.is_blocked` |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElementFunctionUUID` | ✓ | |  | `guid` |
+| `ProjectUUID` |  | |  | `project_guid` |
+| `ProjectElementUUID` |  | |  | `parent_object_guid` |
+| `EntProjElementFunctionID` |  | |  | `function_id` |
+| `EntProjElementFunctionIsBlkd` |  | |  | `is_blocked` |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectElement` | | ✓ | | |
 
 ## Source Code
 

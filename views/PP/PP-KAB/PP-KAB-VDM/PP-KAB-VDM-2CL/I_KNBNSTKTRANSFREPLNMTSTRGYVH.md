@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StockTransferReplnmtStrategy` | `StockTransferReplnmtStrategy` |
-| key `Plant` | `Plant` |
-| `_Text` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StockTransferReplnmtStrategy` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Source Code
 

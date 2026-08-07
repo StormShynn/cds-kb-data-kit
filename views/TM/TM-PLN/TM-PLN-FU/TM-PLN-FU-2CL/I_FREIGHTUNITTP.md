@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationOrder` | `TransportationOrder` |
-| `TransportationOrderType` | `TransportationOrderType` |
-| `TransportationOrderCategory` | `TransportationOrderCategory` |
-| `TransportationMode` | `TransportationMode` |
-| `TransportationModeCategory` | `TransportationModeCategory` |
-| `ShipperUUID` | `ShipperUUID` |
-| `Shipper` | `Shipper` |
-| `ShipperAddressID` | `ShipperAddressID` |
-| `ConsigneeUUID` | `ConsigneeUUID` |
-| `Consignee` | `Consignee` |
-| `ConsigneeAddressID` | `ConsigneeAddressID` |
-| `TranspOrdResponsiblePerson` | `TranspOrdResponsiblePerson` |
-| `TranspOrdLifeCycleStatus` | `TranspOrdLifeCycleStatus` |
-| `TranspOrderDngrsGdsSts` | `TranspOrderDngrsGdsSts` |
-| `TranspOrdPlanningBlock` | `TranspOrdPlanningBlock` |
-| `TranspOrdExecutionIsBlocked` | `TranspOrdExecutionIsBlocked` |
-| `TranspOrdGoodsMovementStatus` | `TranspOrdGoodsMovementStatus` |
-| `TranspOrdWhseProcessingStatus` | `TranspOrdWhseProcessingStatus` |
-| `TranspOrdPlanningStatus` | `TranspOrdPlanningStatus` |
-| `TransportationOrderCrtnType` | `TransportationOrderCrtnType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `TranspPurgOrgExtID` | `TranspPurgOrgExtID` |
-| `TranspPurgGroupExtID` | `TranspPurgGroupExtID` |
-| `I_FreightUnitBusinessPartnerTP` | `FreightUnit._TransportationOrderBP as _FreightUnitBusinessPartner : redirected to composition child I_FreightUnitBusinessPartnerTP` |
-| `I_FreightUnitDocRefTP` | `FreightUnit._TranspOrdDocumentReference as _FreightUnitDocumentReference : redirected to composition child I_FreightUnitDocRefTP` |
-| `I_FreightUnitItemTP` | `FreightUnit._TransportationOrderItem as _FreightUnitItem : redirected to composition child I_FreightUnitItemTP` |
-| `I_FreightUnitStopTP` | `FreightUnit._TransportationOrderStop as _FreightUnitStop : redirected to composition child I_FreightUnitStopTP` |
-| `I_FrtUntMainBPAddrDfltRprstnTP` | `FreightUnit._TrOrdMainBPAddrDfltRprstn as _FrtUnitMainBPAddrDfltRprstn : redirected to composition child I_FrtUntMainBPAddrDfltRprstnTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderUUID` | ✓ | |  |  |
+| `TransportationOrder` |  | |  |  |
+| `TransportationOrderType` |  | |  |  |
+| `TransportationOrderCategory` |  | |  |  |
+| `TransportationMode` |  | |  |  |
+| `TransportationModeCategory` |  | |  |  |
+| `ShipperUUID` |  | |  |  |
+| `Shipper` |  | |  |  |
+| `ShipperAddressID` |  | |  |  |
+| `ConsigneeUUID` |  | |  |  |
+| `Consignee` |  | |  |  |
+| `ConsigneeAddressID` |  | |  |  |
+| `TranspOrdResponsiblePerson` |  | |  |  |
+| `TranspOrdLifeCycleStatus` |  | |  |  |
+| `TranspOrderDngrsGdsSts` |  | |  |  |
+| `TranspOrdPlanningBlock` |  | |  |  |
+| `TranspOrdExecutionIsBlocked` |  | |  |  |
+| `TranspOrdGoodsMovementStatus` |  | |  |  |
+| `TranspOrdWhseProcessingStatus` |  | |  |  |
+| `TranspOrdPlanningStatus` |  | |  |  |
+| `TransportationOrderCrtnType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `TranspPurgOrgExtID` |  | |  |  |
+| `TranspPurgGroupExtID` |  | |  |  |
+| `I_FreightUnitBusinessPartnerTP` |  | |  | `FreightUnit._TransportationOrderBP as _FreightUnitBusinessPartner : redirected to composition child I_FreightUnitBusinessPartnerTP` |
+| `I_FreightUnitDocRefTP` |  | |  | `FreightUnit._TranspOrdDocumentReference as _FreightUnitDocumentReference : redirected to composition child I_FreightUnitDocRefTP` |
+| `I_FreightUnitItemTP` |  | |  | `FreightUnit._TransportationOrderItem as _FreightUnitItem : redirected to composition child I_FreightUnitItemTP` |
+| `I_FreightUnitStopTP` |  | |  | `FreightUnit._TransportationOrderStop as _FreightUnitStop : redirected to composition child I_FreightUnitStopTP` |
+| `I_FrtUntMainBPAddrDfltRprstnTP` |  | |  | `FreightUnit._TrOrdMainBPAddrDfltRprstn as _FrtUnitMainBPAddrDfltRprstn : redirected to composition child I_FrtUntMainBPAddrDfltRprstnTP` |
 
 ## Source Code
 

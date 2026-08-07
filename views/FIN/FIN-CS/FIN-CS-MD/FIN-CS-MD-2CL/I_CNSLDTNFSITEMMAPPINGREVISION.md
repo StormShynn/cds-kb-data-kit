@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast( _Source.ritclg as fincs_conschartofaccounts preserving type )` |
-| key `ChartOfAccounts` | `cast( _Source.ktopl as fincs_chartofaccounts preserving type )` |
-| key `CnsldtnFSItemMapping` | `cast( _Source.mapping_id as fincs_fsitemmapping preserving type )` |
-| key `CnsldtnFSItemMappingRevision` | `cast( _Source.revision as fincs_fsitemmappingrevision preserving type )` |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_CnsldtnFSItemMapping` | *Association* |
-| `_Text` | *Association* |
-| `_CnsldtnFSItemGLAccountMapping` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( _Source.ritclg as fincs_conschartofaccounts preserving type )` |
+| `ChartOfAccounts` | ✓ | |  | `cast( _Source.ktopl as fincs_chartofaccounts preserving type )` |
+| `CnsldtnFSItemMapping` | ✓ | |  | `cast( _Source.mapping_id as fincs_fsitemmapping preserving type )` |
+| `CnsldtnFSItemMappingRevision` | ✓ | |  | `cast( _Source.revision as fincs_fsitemmappingrevision preserving type )` |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_CnsldtnFSItemMapping` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_CnsldtnFSItemGLAccountMapping` | | ✓ | | |
 
 ## Associations
 

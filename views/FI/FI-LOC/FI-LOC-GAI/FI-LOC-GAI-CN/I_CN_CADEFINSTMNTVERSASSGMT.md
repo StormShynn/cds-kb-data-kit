@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `CN_CADENatlStdRelVersion` | `cade_natl_std_rel_ver` |
-| `FinancialStatementVariant` | `versn` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |
+| `FinancialStatementVariant` |  | |  | `versn` |
 
 ## Source Code
 

@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ApplicationLog` | `log.lognumber` |
-| `ApplicationLogHandle` | `log.log_handle` |
-| `ApplicationLogObject` | `log.object` |
-| `ApplicationLogSubobject` | `log.subobject` |
-| `ApplicationJobDescription` | `log.extnumber` |
-| `NumberOfAlerts` | `log.msg_cnt_al` |
-| `NumberOfErrorMessages` | `log.msg_cnt_e` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ApplicationLog` | ✓ | |  | `lognumber` |
+| `ApplicationLogHandle` |  | |  | `log_handle` |
+| `ApplicationLogObject` |  | |  | `object` |
+| `ApplicationLogSubobject` |  | |  | `subobject` |
+| `ApplicationJobDescription` |  | |  | `extnumber` |
+| `NumberOfAlerts` |  | |  | `msg_cnt_al` |
+| `NumberOfErrorMessages` |  | |  | `msg_cnt_e` |
 
 ## Source Code
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialPosition` | `FinancialPositionDef.fin_pos` |
-| `FinancialPositionName` | `FinancialPositionDef.fin_pos_name` |
-| `FinancialPositionGroup` | `FinancialPositionDef.fin_pos_grp` |
-| `FinancialPositionDataSource` | `FinancialPositionDef.datasource` |
-| `FinPositionAssetLiabilityCode` | `FinancialPositionGroupDef.FinPositionAssetLiabilityCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialPosition` | ✓ | |  | `fin_pos` |
+| `FinancialPositionName` |  | |  | `fin_pos_name` |
+| `FinancialPositionGroup` |  | |  | `fin_pos_grp` |
+| `FinancialPositionDataSource` |  | |  | `datasource` |
+| `FinPositionAssetLiabilityCode` |  | |  |  |
 
 ## Associations
 

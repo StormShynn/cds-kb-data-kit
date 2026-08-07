@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallSDDocumentRejectionSts` | `statu` |
-| key `Language` | `spras` |
-| `OvrlSDDocumentRejectionStsDesc` | `bezei` |
-| `_OverallSDDocumentRejectionSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallSDDocumentRejectionSts` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `OvrlSDDocumentRejectionStsDesc` |  | |  | `bezei` |
+| `_OverallSDDocumentRejectionSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

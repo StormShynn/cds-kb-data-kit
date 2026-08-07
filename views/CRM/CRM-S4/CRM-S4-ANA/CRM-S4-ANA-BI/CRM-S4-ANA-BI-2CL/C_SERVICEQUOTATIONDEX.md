@@ -28,40 +28,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceObjectType` | `ServiceQuotation.ServiceObjectType` |
-| key `ServiceDocument` | `ServiceQuotation.ServiceDocument` |
-| `ServiceDocumentDescription` | `ServiceQuotation.ServiceDocumentDescription` |
-| `RequestedServiceStartDateTime` | `ServiceQuotation.RequestedServiceStartDateTime` |
-| `RequestedServiceEndDateTime` | `ServiceQuotation.RequestedServiceEndDateTime` |
-| `SrvcQtanValidityStartDateTime` | `ServiceQuotation.SrvcQtanValidityStartDateTime` |
-| `SrvcQtanValidityEndDateTime` | `ServiceQuotation.SrvcQtanValidityEndDateTime` |
-| `ServiceDocumentIsReleased` | `ServiceQuotation.ServiceDocumentIsReleased` |
-| `ServiceDocumentIsOpen` | `ServiceQuotation.ServiceDocumentIsOpen` |
-| `ServiceDocumentIsRejected` | `ServiceQuotation.ServiceDocumentIsRejected` |
-| `ServiceDocumentStatus` | `ServiceQuotation.ServiceDocumentStatus` |
-| `SalesOrganization` | `ServiceQuotation.SalesOrganization` |
-| `DistributionChannel` | `ServiceQuotation.DistributionChannel` |
-| `Division` | `ServiceQuotation.Division` |
-| `SalesOffice` | `ServiceQuotation.SalesOffice` |
-| `SalesGroup` | `ServiceQuotation.SalesGroup` |
-| `ContactPersonBusinessPartnerId` | `ServiceQuotation.ContactPerson` |
-| `RespyMgmtGlobalTeamID` | `ServiceQuotation._ServiceTeamHeader.RespyMgmtGlobalTeamID` |
-| `SoldToParty` | `ServiceQuotation.SoldToParty` |
-| `ShipToParty` | `ServiceQuotation.ShipToParty` |
-| `PaymentTerms` | `ServiceQuotation.PaymentTerms` |
-| `ServiceDocumentRejectionReason` | `ServiceQuotation.ServiceDocumentRejectionReason` |
-| `TransactionCurrency` | `ServiceQuotation.TransactionCurrency` |
-| `ServiceDocGrossAmount` | `} ServiceQuotation.ServiceDocGrossAmount` |
-| `ServiceDocNetAmount` | `} ServiceQuotation.ServiceDocNetAmount` |
-| `ServiceDocTaxAmount` | `} ServiceQuotation.ServiceDocTaxAmount` |
-| `ReferenceInHouseRepair` | `ServiceQuotation.ReferenceInHouseRepair` |
-| `ServiceDocumentType` | `ServiceQuotation.ServiceDocumentType` |
-| `SerialNumber` | `ServiceQtanRefObj.SerialNumber` |
-| `Equipment` | `ServiceQtanRefObj.Equipment` |
-| `SrvcQtanFunctionalLocation` | `cast ( ServiceQtanRefObj.FunctionalLocation as functionallocation preserving type )` |
-| `ProductID` | `ServiceQtanRefObj.ProductID` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |
+| `ServiceDocument` | ✓ | |  |  |
+| `ServiceDocumentDescription` |  | |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |
+| `SrvcQtanValidityStartDateTime` |  | |  |  |
+| `SrvcQtanValidityEndDateTime` |  | |  |  |
+| `ServiceDocumentIsReleased` |  | |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |
+| `ServiceDocumentIsRejected` |  | |  |  |
+| `ServiceDocumentStatus` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |
+| `RespyMgmtGlobalTeamID` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `ServiceDocumentRejectionReason` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ServiceDocGrossAmount` |  | |  | `} ServiceQuotation.ServiceDocGrossAmount` |
+| `ServiceDocNetAmount` |  | |  | `} ServiceQuotation.ServiceDocNetAmount` |
+| `ServiceDocTaxAmount` |  | |  | `} ServiceQuotation.ServiceDocTaxAmount` |
+| `ReferenceInHouseRepair` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `SrvcQtanFunctionalLocation` |  | |  | `cast ( ServiceQtanRefObj.FunctionalLocation as functionallocation preserving type )` |
+| `ProductID` |  | |  |  |
 
 ## Associations
 

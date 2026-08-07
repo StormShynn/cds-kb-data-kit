@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgFunction` | `_tfk2601t.inv_function` |
-| key `Language` | `_tfk2601t.langu` |
-| `CAInvcgFunctionText` | `_tfk2601t.text` |
-| `_CAInvcgFunction` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgFunction` | ✓ | | `_tfk2601t` | `inv_function` |
+| `Language` | ✓ | | `_tfk2601t` | `langu` |
+| `CAInvcgFunctionText` |  | | `_tfk2601t` | `text` |
+| `_CAInvcgFunction` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

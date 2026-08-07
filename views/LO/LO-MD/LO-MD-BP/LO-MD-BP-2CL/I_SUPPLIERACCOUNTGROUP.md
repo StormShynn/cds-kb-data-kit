@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierAccountGroup` | `t077k.ktokk` |
-| `BPSchemaPurgOrganizationLevel` | `parge` |
-| `SupplierAccountGroupOID` | `case when I_MdiOidConfiguration.Context is initial or I_MdiOidConfiguration.ComposeOid is initial then cast( t077k.ktokk as supplieraccountgroup_oid ) when I_MdiOidConfiguration.Context is not initial and I_MdiOidConfiguration.ComposeOid is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), t077k.ktokk ) as supplieraccountgroup_oid ) end` |
-| `_SupplierAccountGroupText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierAccountGroup` | ✓ | |  | `ktokk` |
+| `BPSchemaPurgOrganizationLevel` |  | |  | `parge` |
+| `SupplierAccountGroupOID` |  | |  | `case when I_MdiOidConfiguration.Context is initial or I_MdiOidConfiguration.ComposeOid is initial then cast( t077k.ktokk as supplieraccountgroup_oid ) when I_MdiOidConfiguration.Context is not initial and I_MdiOidConfiguration.ComposeOid is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), t077k.ktokk ) as supplieraccountgroup_oid ) end` |
+| `_SupplierAccountGroupText` | | ✓ | | |
 
 ## Associations
 

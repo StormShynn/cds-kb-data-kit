@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ConditionApplication` | `ConditionApplication` |
-| key `ConditionType` | `ConditionType` |
-| `ConditionTypeName` | `ConditionTypeName` |
-| `_TaxConditionType` | *Association* |
-| `_ConditionApplication` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ConditionApplication` | ✓ | |  |  |
+| `ConditionType` | ✓ | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `_TaxConditionType` | | ✓ | | |
+| `_ConditionApplication` | | ✓ | | |
 
 ## Associations
 

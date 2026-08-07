@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPPlanningScenarioStatus` | `cast( substring(txt.domvalue_l, 1, 1) as psact preserving type)` |
-| key `Language` | `txt.ddlanguage` |
-| `MRPPlanningScenarioStatusName` | `txt.ddtext` |
-| `DomainValue` | `txt.domvalue_l` |
-| `_Language` | *Association* |
-| `_PlanningScenarioStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPPlanningScenarioStatus` | ✓ | |  | `cast( substring(txt.domvalue_l, 1, 1) as psact preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `MRPPlanningScenarioStatusName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_PlanningScenarioStatus` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PricingScaleBasis` | `cast ( substring( domvalue_l, 1, 3 ) as kzbzg_long )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PricingScaleBasis` | ✓ | |  | `cast ( substring( domvalue_l, 1, 3 ) as kzbzg_long )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

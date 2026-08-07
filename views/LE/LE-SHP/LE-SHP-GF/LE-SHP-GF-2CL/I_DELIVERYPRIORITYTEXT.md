@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryPriority` | `lprio` |
-| key `Language` | `spras` |
-| `DeliveryPriorityDesc` | `bezei` |
-| `_DeliveryPriority` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryPriority` | ✓ | |  | `lprio` |
+| `Language` | ✓ | |  | `spras` |
+| `DeliveryPriorityDesc` |  | |  | `bezei` |
+| `_DeliveryPriority` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

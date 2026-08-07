@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningProcedureCategory` | `mvtyp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningProcedureCategory` | ✓ | |  | `mvtyp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

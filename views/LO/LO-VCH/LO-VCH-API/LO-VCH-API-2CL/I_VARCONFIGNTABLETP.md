@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VarConfignTblName` | `VarConfignTblName` |
-| `VarConfignTblStatus` | `VarConfignTblStatus` |
-| `VarConfignTblGroup` | `VarConfignTblGroup` |
-| `VarConfignTblCustomStorageName` | `VarConfignTblCustomStorageName` |
-| `VarConfignTblCstmStorIsActive` | `VarConfignTblCstmStorIsActive` |
-| `VarConfignTblIsDecisionTable` | `VarConfignTblIsDecisionTable` |
-| `EngineProcessingMode` | `EngineProcessingMode` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `VarCnfTblCstmStorLnkLstChgDate` | `VarCnfTblCstmStorLnkLstChgDate` |
-| `VarCnfTblCstmStorLnkLstChgTime` | `VarCnfTblCstmStorLnkLstChgTime` |
-| `VarCnfTblCstmStorLnkLastChgdBy` | `VarCnfTblCstmStorLnkLastChgdBy` |
-| `VarConfignTblLstChgDateTime` | `VarConfignTblLstChgDateTime` |
-| `_Column` | *Association* |
-| `_Text` | *Association* |
-| `_ValueAssignmentAlternative` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |
+| `VarConfignTblStatus` |  | |  |  |
+| `VarConfignTblGroup` |  | |  |  |
+| `VarConfignTblCustomStorageName` |  | |  |  |
+| `VarConfignTblCstmStorIsActive` |  | |  |  |
+| `VarConfignTblIsDecisionTable` |  | |  |  |
+| `EngineProcessingMode` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `VarCnfTblCstmStorLnkLstChgDate` |  | |  |  |
+| `VarCnfTblCstmStorLnkLstChgTime` |  | |  |  |
+| `VarCnfTblCstmStorLnkLastChgdBy` |  | |  |  |
+| `VarConfignTblLstChgDateTime` |  | |  |  |
+| `_Column` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_ValueAssignmentAlternative` | | ✓ | | |
 
 ## Source Code
 

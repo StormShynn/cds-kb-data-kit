@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalTemplateLifecycleSts` | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/sep_lifecycle_stat_cd preserving type )` |
-| `_SuplrEvalTmplLifecycleStsT` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalTemplateLifecycleSts` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/sep_lifecycle_stat_cd preserving type )` |
+| `_SuplrEvalTmplLifecycleStsT` | | ✓ | | |
 
 ## Associations
 

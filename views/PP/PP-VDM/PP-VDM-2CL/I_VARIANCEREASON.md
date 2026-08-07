@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `trug.werks` |
-| key `VarianceReasonCode` | `cast(trug.grund as pph_agrnd preserving type)` |
-| `_Plant` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `VarianceReasonCode` | ✓ | |  | `cast(trug.grund as pph_agrnd preserving type)` |
+| `_Plant` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

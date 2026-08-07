@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnSalesDistrictHierarchy` | `cast(_Hierarchy.UniversalHierarchy as fincs_salesdistricthierarchy preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
-| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnSalesDistrictHierarchy` | ✓ | |  | `cast(_Hierarchy.UniversalHierarchy as fincs_salesdistricthierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

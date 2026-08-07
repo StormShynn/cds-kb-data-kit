@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerDiffTypeValue` | `dfval` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerDiffTypeValue` | ✓ | |  | `dfval` |
 
 ## Source Code
 

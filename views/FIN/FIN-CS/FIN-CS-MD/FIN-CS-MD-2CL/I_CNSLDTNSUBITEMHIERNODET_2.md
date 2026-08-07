@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyNodeText.Language` |
-| key `CnsldtnSubitemCategory` | `_HierarchyNodeText.CnsldtnSubitemCategory` |
-| key `ConsolidationSubitemHierarchy` | `cast( _HierarchyNodeText.CnsldtnUniversalHierarchy as fincs_subitemhierarchy preserving type )` |
-| key `HierarchyNode` | `_HierarchyNodeText.HierarchyNode` |
-| key `ValidityEndDate` | `_HierarchyNodeText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyNodeText.ValidityStartDate` |
-| `ParentNode` | `_HierarchyNodeText.ParentNode` |
-| `HierarchyVersion` | `_HierarchyNodeText.HierarchyVersion` |
-| `HierarchyNodeText` | `_HierarchyNodeText.HierarchyNodeText` |
-| `_SubitemCategory` | *Association* |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
+| `CnsldtnSubitemCategory` | ✓ | | `_HierarchyNodeText` | `CnsldtnSubitemCategory` |
+| `ConsolidationSubitemHierarchy` | ✓ | |  | `cast( _HierarchyNodeText.CnsldtnUniversalHierarchy as fincs_subitemhierarchy preserving type )` |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
+| `_SubitemCategory` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

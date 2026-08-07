@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListSequence` | `TaskListSequence` |
-| key `TaskListOperationInternalId` | `TaskListOperationInternalId` |
-| key `MaintenancePackage` | `MaintenancePackage` |
-| key `MaintPckgTskListOpAllocIntNmbr` | `MaintPckgTskListOpAllocIntNmbr` |
-| `MaintenancePackageText` | `MaintenancePackageText` |
-| `MaintenanceTaskListOperation` | `MaintenanceTaskListOperation` |
-| `OperationText` | `OperationText` |
-| `MaintTaskListSubOperation` | `MaintTaskListSubOperation` |
-| `ChangeNumber` | `ChangeNumber` |
-| `TaskListStatus` | `TaskListStatus` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `ControllingArea` | `ControllingArea` |
-| `MaintenancePlant` | `MaintenancePlant` |
-| `CostCenter` | `CostCenter` |
-| `ResponsiblePlannerGroup` | `ResponsiblePlannerGroup` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `Plant` | `Plant` |
-| `_Header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListSequence` | ✓ | |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |
+| `MaintenancePackage` | ✓ | |  |  |
+| `MaintPckgTskListOpAllocIntNmbr` | ✓ | |  |  |
+| `MaintenancePackageText` |  | |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `MaintTaskListSubOperation` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `TaskListStatus` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `_Header` | | ✓ | | |
 
 ## Source Code
 

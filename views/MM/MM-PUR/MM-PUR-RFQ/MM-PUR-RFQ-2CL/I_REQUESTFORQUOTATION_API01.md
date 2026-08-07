@@ -28,44 +28,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RequestForQuotation` | `I_RequestForQuotation.RequestForQuotation` |
-| `CompanyCode` | `I_RequestForQuotation.CompanyCode` |
-| `PurchasingDocumentCategory` | `I_RequestForQuotation.PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `I_RequestForQuotation.PurchasingDocumentType` |
-| `CreatedByUser` | `I_RequestForQuotation.CreatedByUser` |
-| `CreationDate` | `I_RequestForQuotation.CreationDate` |
-| `LastChangeDateTime` | `I_RequestForQuotation.LastChangeDateTime` |
-| `Language` | `I_RequestForQuotation.Language` |
-| `PurchasingOrganization` | `I_RequestForQuotation.PurchasingOrganization` |
-| `PurchasingGroup` | `I_RequestForQuotation.PurchasingGroup` |
-| `DocumentCurrency` | `I_RequestForQuotation.DocumentCurrency` |
-| `IncotermsClassification` | `I_RequestForQuotation.IncotermsClassification` |
-| `IncotermsTransferLocation` | `I_RequestForQuotation.IncotermsTransferLocation` |
-| `IncotermsVersion` | `I_RequestForQuotation.IncotermsVersion` |
-| `IncotermsLocation1` | `I_RequestForQuotation.IncotermsLocation1` |
-| `IncotermsLocation2` | `I_RequestForQuotation.IncotermsLocation2` |
-| `PaymentTerms` | `I_RequestForQuotation.PaymentTerms` |
-| `CashDiscount1Days` | `I_RequestForQuotation.CashDiscount1Days` |
-| `CashDiscount2Days` | `I_RequestForQuotation.CashDiscount2Days` |
-| `CashDiscount1Percent` | `I_RequestForQuotation.CashDiscount1Percent` |
-| `CashDiscount2Percent` | `I_RequestForQuotation.CashDiscount2Percent` |
-| `NetPaymentDays` | `I_RequestForQuotation.NetPaymentDays` |
-| `ValidityStartDate` | `I_RequestForQuotation.ValidityStartDate` |
-| `ValidityEndDate` | `I_RequestForQuotation.ValidityEndDate` |
-| `RFQPublishingDate` | `I_RequestForQuotation.RFQPublishingDate` |
-| `QuotationLatestSubmissionDate` | `I_RequestForQuotation.QuotationLatestSubmissionDate` |
-| `BindingPeriodValidityEndDate` | `I_RequestForQuotation.BindingPeriodValidityEndDate` |
-| `TargetAmount` | `I_RequestForQuotation.TargetAmount` |
-| `RFQLifecycleStatus` | `I_RequestForQuotation.RFQLifecycleStatus` |
-| `RequestForQuotationName` | `I_RequestForQuotation.RequestForQuotationName` |
-| `QuotationEarliestSubmsnDate` | `I_RequestForQuotation.QuotationEarliestSubmsnDate` |
-| `LatestRegistrationDate` | `I_RequestForQuotation.LatestRegistrationDate` |
-| `CorrespncInternalReference` | `I_RequestForQuotation.CorrespncInternalReference` |
-| `FollowOnDocumentCategory` | `I_RequestForQuotation.FollowOnDocumentCategory` |
-| `FollowOnDocumentType` | `I_RequestForQuotation.FollowOnDocumentType` |
-| `IsEndOfPurposeBlocked` | `I_RequestForQuotation.IsEndOfPurposeBlocked` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RequestForQuotation` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `Language` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `RFQPublishingDate` |  | |  |  |
+| `QuotationLatestSubmissionDate` |  | |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |
+| `TargetAmount` |  | |  |  |
+| `RFQLifecycleStatus` |  | |  |  |
+| `RequestForQuotationName` |  | |  |  |
+| `QuotationEarliestSubmsnDate` |  | |  |  |
+| `LatestRegistrationDate` |  | |  |  |
+| `CorrespncInternalReference` |  | |  |  |
+| `FollowOnDocumentCategory` |  | |  |  |
+| `FollowOnDocumentType` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
 
 ## Associations
 

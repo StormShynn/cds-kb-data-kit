@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPaymentExceptionReason` | `poken` |
-| `CAErrorLevelInPaymentRun` | `errorlevel` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPaymentExceptionReason` | ✓ | |  | `poken` |
+| `CAErrorLevelInPaymentRun` |  | |  | `errorlevel` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

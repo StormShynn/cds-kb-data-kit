@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessTransactionType` | `cast(domvalue_l as transaction_type)` |
-| key `Language` | `cast(ddlanguage as spras)` |
-| `BusinessTransactionTypeName` | `ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessTransactionType` | ✓ | |  | `cast(domvalue_l as transaction_type)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras)` |
+| `BusinessTransactionTypeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

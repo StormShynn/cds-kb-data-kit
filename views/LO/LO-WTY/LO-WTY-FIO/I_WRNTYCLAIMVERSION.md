@@ -27,49 +27,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WrntyVersionUUID` | `pnguid` |
-| `WrntyClaimHeaderUUID` | `header_guid` |
-| `WrntyVersionNumber` | `cast(versn as wty_versn preserving type )` |
-| `WarrantyClaimVersionCategory` | `kateg` |
-| `WrntyDecisionCode` | `v_rejcd` |
-| `WarrantyClaimVersionPartner` | `v_parnr` |
-| `WrntyClaimVersionPartnerRole` | `cast(v_parvw as parvw_unv preserving type )` |
-| `WarrantyClaimVersionIsActive` | `aktiv` |
-| `WrntyBillingDocumentDate` | `fkdat` |
-| `WrntyDocumentCondition` | `knumv` |
-| `WrntyCurrencyCode` | `v_crncy` |
-| `WrntyPriceExchangeRateDate` | `prsdt` |
-| `WrntyExchangeRateForPrice` | `cast(kursk as fis_absolute_exchangerate preserving type)` |
-| `WrntyNumberPrecedingVersion` | `prev_version` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `Division` | `spart` |
-| `WrntyVersionForReversePosting` | `reversal` |
-| `PurchasingOrganization` | `ekorg` |
-| `WarrantyVersionPricingStatus` | `pricing_ok` |
-| `WrntyVersIsReldForShipgToPart` | `compsend` |
-| `WarrantyClaimChangeDateTime` | `timstmp` |
-| `WrntyClaimCreationDate` | `creadat` |
-| `CreatedByUser` | `creaby` |
-| `WrntyClaimChangedDate` | `chngdat` |
-| `LastChangedByUser` | `chngby` |
-| `WarrantyClaimVersionText` | `pntext` |
-| `WarrantyVersionRprstvID` | `vers_representativeid` |
-| `WrntyCustClmProcessingStatus` | `_WrntyClaimHeader.WrntyCustClmProcessingStatus` |
-| `WrntySuplrClmProcessingStatus` | `_WrntyClaimHeader.WrntySuplrClmProcessingStatus` |
-| `_WrntyClaimHeader` | *Association* |
-| `_Header` | *Association* |
-| `_WrntyClaimItem` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_DecisionCode` | *Association* |
-| `_VersionCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WrntyVersionUUID` | ✓ | |  | `pnguid` |
+| `WrntyClaimHeaderUUID` |  | |  | `header_guid` |
+| `WrntyVersionNumber` |  | |  | `cast(versn as wty_versn preserving type )` |
+| `WarrantyClaimVersionCategory` |  | |  | `kateg` |
+| `WrntyDecisionCode` |  | |  | `v_rejcd` |
+| `WarrantyClaimVersionPartner` |  | |  | `v_parnr` |
+| `WrntyClaimVersionPartnerRole` |  | |  | `cast(v_parvw as parvw_unv preserving type )` |
+| `WarrantyClaimVersionIsActive` |  | |  | `aktiv` |
+| `WrntyBillingDocumentDate` |  | |  | `fkdat` |
+| `WrntyDocumentCondition` |  | |  | `knumv` |
+| `WrntyCurrencyCode` |  | |  | `v_crncy` |
+| `WrntyPriceExchangeRateDate` |  | |  | `prsdt` |
+| `WrntyExchangeRateForPrice` |  | |  | `cast(kursk as fis_absolute_exchangerate preserving type)` |
+| `WrntyNumberPrecedingVersion` |  | |  | `prev_version` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `Division` |  | |  | `spart` |
+| `WrntyVersionForReversePosting` |  | |  | `reversal` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `WarrantyVersionPricingStatus` |  | |  | `pricing_ok` |
+| `WrntyVersIsReldForShipgToPart` |  | |  | `compsend` |
+| `WarrantyClaimChangeDateTime` |  | |  | `timstmp` |
+| `WrntyClaimCreationDate` |  | |  | `creadat` |
+| `CreatedByUser` |  | |  | `creaby` |
+| `WrntyClaimChangedDate` |  | |  | `chngdat` |
+| `LastChangedByUser` |  | |  | `chngby` |
+| `WarrantyClaimVersionText` |  | |  | `pntext` |
+| `WarrantyVersionRprstvID` |  | |  | `vers_representativeid` |
+| `WrntyCustClmProcessingStatus` |  | | `_WrntyClaimHeader` | `WrntyCustClmProcessingStatus` |
+| `WrntySuplrClmProcessingStatus` |  | | `_WrntyClaimHeader` | `WrntySuplrClmProcessingStatus` |
+| `_WrntyClaimHeader` | | ✓ | | |
+| `_Header` | | ✓ | | |
+| `_WrntyClaimItem` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_DecisionCode` | | ✓ | | |
+| `_VersionCategory` | | ✓ | | |
 
 ## Associations
 

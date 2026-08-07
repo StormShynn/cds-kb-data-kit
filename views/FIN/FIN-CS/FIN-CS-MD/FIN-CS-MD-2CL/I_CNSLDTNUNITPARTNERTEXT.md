@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_UnitAttributeValueT.Language` |
-| key `ConsolidationUnitPartner` | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitpartner preserving type )` |
-| `ConsolidationUnitPartnerText` | `_UnitAttributeValueT.CnsldtnUnitAttribValText` |
-| `CnsldtnUnitPartnerLongText` | `_UnitAttributeValueT.CnsldtnUnitAttribValLongText` |
-| `_CnsldtnUnitPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_UnitAttributeValueT` | `Language` |
+| `ConsolidationUnitPartner` | ✓ | |  | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitpartner preserving type )` |
+| `ConsolidationUnitPartnerText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValText` |
+| `CnsldtnUnitPartnerLongText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValLongText` |
+| `_CnsldtnUnitPartner` | | ✓ | | |
 
 ## Associations
 

@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditControlArea` | `CreditControlArea` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditControlArea` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

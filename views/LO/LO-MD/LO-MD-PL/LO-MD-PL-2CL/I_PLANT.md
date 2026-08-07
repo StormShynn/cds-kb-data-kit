@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| `PlantName` | `cast(name1 as werks_name preserving type )` |
-| `ValuationArea` | `bwkey` |
-| `PlantCustomer` | `kunnr` |
-| `PlantSupplier` | `lifnr` |
-| `FactoryCalendar` | `fabkl` |
-| `DefaultPurchasingOrganization` | `ekorg` |
-| `SalesOrganization` | `vkorg` |
-| `AddressID` | `adrnr` |
-| `PlantCategory` | `vlfkz` |
-| `DistributionChannel` | `vtweg` |
-| `Division` | `spart` |
-| `Language` | `spras` |
-| `IsMarkedForArchiving` | `achvm` |
-| `_OrganizationAddress` | *Association* |
-| `_StandardOrganizationAddress` | *Association* |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
-| `_ResponsiblePurchaseOrg` | *Association* |
-| `_PlantCategoryText` | *Association* |
-| `_ValuationArea` | *Association* |
-| `_MRPArea` | *Association* |
-| `_PlantHierarchyNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `PlantName` |  | |  | `cast(name1 as werks_name preserving type )` |
+| `ValuationArea` |  | |  | `bwkey` |
+| `PlantCustomer` |  | |  | `kunnr` |
+| `PlantSupplier` |  | |  | `lifnr` |
+| `FactoryCalendar` |  | |  | `fabkl` |
+| `DefaultPurchasingOrganization` |  | |  | `ekorg` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `AddressID` |  | |  | `adrnr` |
+| `PlantCategory` |  | |  | `vlfkz` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `Division` |  | |  | `spart` |
+| `Language` |  | |  | `spras` |
+| `IsMarkedForArchiving` |  | |  | `achvm` |
+| `_OrganizationAddress` | | ✓ | | |
+| `_StandardOrganizationAddress` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_ResponsiblePurchaseOrg` | | ✓ | | |
+| `_PlantCategoryText` | | ✓ | | |
+| `_ValuationArea` | | ✓ | | |
+| `_MRPArea` | | ✓ | | |
+| `_PlantHierarchyNode` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OvrlTrdCmplncSnctndListChkSts` | `substring(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `OvrlTrdCmplncSnctndListStsDesc` | `ddtext` |
-| `_OvrlTrdCmplncSnctndListChkSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OvrlTrdCmplncSnctndListChkSts` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `OvrlTrdCmplncSnctndListStsDesc` |  | |  | `ddtext` |
+| `_OvrlTrdCmplncSnctndListChkSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

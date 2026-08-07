@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingProcedure` | `I_SamplingProcedure.SamplingProcedure` |
-| `SamplingType` | `SamplingType` |
-| `SamplingValuationMode` | `SamplingValuationMode` |
-| `SamplingScheme` | `SamplingScheme` |
-| `QualityControlChartType` | `QualityControlChartType` |
-| `SamplingProcedureIsBlocked` | `SamplingProcedureIsBlocked` |
-| `SamplingProcedureInspSubset` | `SamplingProcedureInspSubset` |
-| `SamplingProcedureMltplSamples` | `SamplingProcedureMltplSamples` |
-| `_InspSubsetFieldCombination` | *Association* |
-| `_SamplingProcedureInspSubset` | *Association* |
-| `_SamplingType` | *Association* |
-| `_SamplingValuationMode` | *Association* |
-| `_SamplingScheme` | *Association* |
-| `_QualityControlChartType` | *Association* |
-| `_SmplgProcedMltplSamples` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingProcedure` | ✓ | |  |  |
+| `SamplingType` |  | |  |  |
+| `SamplingValuationMode` |  | |  |  |
+| `SamplingScheme` |  | |  |  |
+| `QualityControlChartType` |  | |  |  |
+| `SamplingProcedureIsBlocked` |  | |  |  |
+| `SamplingProcedureInspSubset` |  | |  |  |
+| `SamplingProcedureMltplSamples` |  | |  |  |
+| `_InspSubsetFieldCombination` | | ✓ | | |
+| `_SamplingProcedureInspSubset` | | ✓ | | |
+| `_SamplingType` | | ✓ | | |
+| `_SamplingValuationMode` | | ✓ | | |
+| `_SamplingScheme` | | ✓ | | |
+| `_QualityControlChartType` | | ✓ | | |
+| `_SmplgProcedMltplSamples` | | ✓ | | |
 
 ## Associations
 

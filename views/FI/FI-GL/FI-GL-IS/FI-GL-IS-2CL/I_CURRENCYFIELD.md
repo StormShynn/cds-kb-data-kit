@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CurrencyField` | `cast( dd07l.domvalue_l as fis_crcy_role_field )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CurrencyField` | ✓ | |  | `cast( dd07l.domvalue_l as fis_crcy_role_field )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

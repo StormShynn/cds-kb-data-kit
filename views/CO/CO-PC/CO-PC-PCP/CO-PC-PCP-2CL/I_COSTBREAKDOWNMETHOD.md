@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ComponentBreakdownMethod` | `ComponentBreakdownMethod` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ComponentBreakdownMethod` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

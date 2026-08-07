@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StatusProfile` | `tj20.stsma` |
-| key `Language` | `tj20t.spras` |
-| `StatusProfileName` | `tj20t.txt` |
-| `_StatusProfile` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatusProfile` | ✓ | |  | `stsma` |
+| `Language` | ✓ | |  | `spras` |
+| `StatusProfileName` |  | |  | `txt` |
+| `_StatusProfile` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

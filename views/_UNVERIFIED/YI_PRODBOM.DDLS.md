@@ -38,18 +38,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Productid` | `Productid` |
-| key `Bomid` | `Bomid` |
-| `Bomname` | `Bomname` |
-| `LastChangedAt` | `LastChangedAt` |
-| `CreatedBy` | `CreatedBy` |
-| `CreatedAt` | `CreatedAt` |
-| `LocalLastChangedBy` | `LocalLastChangedBy` |
-| `LastChangedBy` | `LastChangedBy` |
-| `LocalLastChangedAt` | `LocalLastChangedAt` |
-| `_prod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Productid` | ✓ | |  |  |
+| `Bomid` | ✓ | |  |  |
+| `Bomname` |  | |  |  |
+| `LastChangedAt` |  | |  |  |
+| `CreatedBy` |  | |  |  |
+| `CreatedAt` |  | |  |  |
+| `LocalLastChangedBy` |  | |  |  |
+| `LastChangedBy` |  | |  |  |
+| `LocalLastChangedAt` |  | |  |  |
+| `_prod` | | ✓ | | |
 
 ## Source Code
 

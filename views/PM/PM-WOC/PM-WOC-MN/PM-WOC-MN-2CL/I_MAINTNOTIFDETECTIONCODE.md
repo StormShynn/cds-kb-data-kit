@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintNotifDetectionCode` | `eam_dtctncode.detectioncode` |
-| `IsDeactivated` | `deactivated` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintNotifDetectionCode` | ✓ | |  | `detectioncode` |
+| `IsDeactivated` |  | |  | `deactivated` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

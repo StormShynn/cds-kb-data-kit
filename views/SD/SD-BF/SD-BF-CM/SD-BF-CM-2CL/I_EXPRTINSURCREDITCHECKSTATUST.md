@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ExprtInsurCreditCheckStatus` | `statu` |
-| key `Language` | `spras` |
-| `ExprtInsurCreditCheckStsDesc` | `bezei` |
-| `_ExprtInsurCreditCheckStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ExprtInsurCreditCheckStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `ExprtInsurCreditCheckStsDesc` |  | |  | `bezei` |
+| `_ExprtInsurCreditCheckStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SLCQuestionType` | `cast( substring( domvalue_l, 1, 2) as /srmsmc/qst_dtyp_format_code)` |
-| `_SLCQuestionTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SLCQuestionType` | ✓ | |  | `cast( substring( domvalue_l, 1, 2) as /srmsmc/qst_dtyp_format_code)` |
+| `_SLCQuestionTypeText` | | ✓ | | |
 
 ## Associations
 

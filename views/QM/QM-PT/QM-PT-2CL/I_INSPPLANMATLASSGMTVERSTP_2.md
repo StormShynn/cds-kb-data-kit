@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| key `InspectionPlanGroup` | `InspectionPlanGroup` |
-| key `InspectionPlan` | `InspectionPlan` |
-| key `InspPlanMatlAssignment` | `InspPlanMatlAssignment` |
-| key `InspPlanMatlAssgmtIntVersion` | `InspPlanMatlAssgmtIntVersion` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `IsDeleted` | `IsDeleted` |
-| `Supplier` | `Supplier` |
-| `Customer` | `Customer` |
-| `MultipleSpecificationObject` | `MultipleSpecificationObject` |
-| `MultipleSpecificationObjType` | `MultipleSpecificationObjType` |
-| `BOOSearchText` | `BOOSearchText` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
-| `_InspPlan` | *Association* |
-| `_InspectionPlanVersion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `InspectionPlanGroup` | ✓ | |  |  |
+| `InspectionPlan` | ✓ | |  |  |
+| `InspPlanMatlAssignment` | ✓ | |  |  |
+| `InspPlanMatlAssgmtIntVersion` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `MultipleSpecificationObject` |  | |  |  |
+| `MultipleSpecificationObjType` |  | |  |  |
+| `BOOSearchText` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_InspPlan` | | ✓ | | |
+| `_InspectionPlanVersion` | | ✓ | | |
 
 ## Source Code
 

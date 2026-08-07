@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPProcedure` | `cast(substring(t.domvalue_l, 1, 1) as disvf preserving type)` |
-| key `Language` | `cast(t.ddlanguage as spras preserving type)` |
-| `MRPProcedureName` | `cast(t.ddtext as mrpprocedurename preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `_MRPProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPProcedure` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as disvf preserving type)` |
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
+| `MRPProcedureName` |  | |  | `cast(t.ddtext as mrpprocedurename preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_MRPProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

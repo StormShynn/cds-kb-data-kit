@@ -29,62 +29,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListSequence` | `TaskListSequence` |
-| key `TaskListOperationInternalId` | `TaskListOperationInternalId` |
-| key `TaskListOpBOMItmIntVersCounter` | `TaskListOpBOMItmIntVersCounter` |
-| `MaintenanceTaskListOperation` | `MaintenanceTaskListOperation` |
-| `MaintTaskListSubOperation` | `MaintTaskListSubOperation` |
-| `MaintOperationExecStageCode` | `MaintOperationExecStageCode` |
-| `OperationText` | `OperationText` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `WorkCenter` | `WorkCenter` |
-| `Plant` | `Plant` |
-| `Assembly` | `Assembly` |
-| `OperationCalculationControl` | `OperationCalculationControl` |
-| `OpPlannedWorkQuantity` | `OpPlannedWorkQuantity` |
-| `OpWorkQuantityUnit` | `OpWorkQuantityUnit` |
-| `NumberOfCapacities` | `NumberOfCapacities` |
-| `PurchaseOrderQty` | `@ Semantics.quantity.unitOfMeasure: 'PurchaseOrderQuantityUnit' PurchaseOrderQty` |
-| `PurchaseOrderQuantityUnit` | `PurchaseOrderQuantityUnit` |
-| `OperationStandardDuration` | `OperationStandardDuration` |
-| `OperationStandardDurationUnit` | `OperationStandardDurationUnit` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `MaterialGroup` | `MaterialGroup` |
-| `OpExternalProcessingPrice` | `OpExternalProcessingPrice` |
-| `OpExternalProcessingCurrency` | `OpExternalProcessingCurrency` |
-| `CostElement` | `CostElement` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `Supplier` | `Supplier` |
-| `ChangeNumber` | `ChangeNumber` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `SupplierAccountGroup` | `SupplierAccountGroup` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `TaskListStatus` | `TaskListStatus` |
-| `ResponsiblePlannerGroup` | `ResponsiblePlannerGroup` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `ControllingArea` | `ControllingArea` |
-| `CostCenter` | `CostCenter` |
-| `MaintenancePlant` | `MaintenancePlant` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `TechnicalObject` | `TechnicalObject` |
-| `TechObjIsEquipOrFuncnlLoc` | `TechObjIsEquipOrFuncnlLoc` |
-| `_Header` | *Association* |
-| `_NonHistOp` | *Association* |
-| `_OpMaterial` | *Association* |
-| `_OpRelation` | *Association* |
-| `_SubOp` | *Association* |
-| `_OpLongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListSequence` | ✓ | |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |
+| `MaintTaskListSubOperation` |  | |  |  |
+| `MaintOperationExecStageCode` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Assembly` |  | |  |  |
+| `OperationCalculationControl` |  | |  |  |
+| `OpPlannedWorkQuantity` |  | |  |  |
+| `OpWorkQuantityUnit` |  | |  |  |
+| `NumberOfCapacities` |  | |  |  |
+| `PurchaseOrderQty` |  | |  | `@ Semantics.quantity.unitOfMeasure: 'PurchaseOrderQuantityUnit' PurchaseOrderQty` |
+| `PurchaseOrderQuantityUnit` |  | |  |  |
+| `OperationStandardDuration` |  | |  |  |
+| `OperationStandardDurationUnit` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `SupplierAccountGroup` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `TaskListStatus` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `TechnicalObject` |  | |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_NonHistOp` | | ✓ | | |
+| `_OpMaterial` | | ✓ | | |
+| `_OpRelation` | | ✓ | | |
+| `_SubOp` | | ✓ | | |
+| `_OpLongText` | | ✓ | | |
 
 ## Source Code
 

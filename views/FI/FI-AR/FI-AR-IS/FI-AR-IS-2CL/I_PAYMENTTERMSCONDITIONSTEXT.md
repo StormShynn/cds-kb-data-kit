@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentTerms` | `cast( zterm as farp_dzterm preserving type )` |
-| key `PaymentTermsValidityMonthDay` | `ztagg` |
-| key `Language` | `spras` |
-| `PaymentTermsConditionDesc` | `cast( text1 as fis_payment_terms_cndns_desc preserving type )` |
-| `_Language` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_PaymentTermsConditions` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentTerms` | ✓ | |  | `cast( zterm as farp_dzterm preserving type )` |
+| `PaymentTermsValidityMonthDay` | ✓ | |  | `ztagg` |
+| `Language` | ✓ | |  | `spras` |
+| `PaymentTermsConditionDesc` |  | |  | `cast( text1 as fis_payment_terms_cndns_desc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_PaymentTermsConditions` | | ✓ | | |
 
 ## Associations
 

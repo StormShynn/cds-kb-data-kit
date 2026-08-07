@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPaymentCompanyCode` | `bukrs` |
-| key `CAHouseBankReference` | `eigbv` |
-| `HouseBank` | `cast(hbkid as farp_hbkid preserving type)` |
-| `HouseBankAccount` | `cast(hktid as fac_hktid preserving type)` |
-| `UserCodeAtBank` | `bnkid` |
-| `CARegisteredNameOfPayerAtBank` | `aufbz` |
-| `_Text` | *Association* |
-| `_CompCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPaymentCompanyCode` | ✓ | |  | `bukrs` |
+| `CAHouseBankReference` | ✓ | |  | `eigbv` |
+| `HouseBank` |  | |  | `cast(hbkid as farp_hbkid preserving type)` |
+| `HouseBankAccount` |  | |  | `cast(hktid as fac_hktid preserving type)` |
+| `UserCodeAtBank` |  | |  | `bnkid` |
+| `CARegisteredNameOfPayerAtBank` |  | |  | `aufbz` |
+| `_Text` | | ✓ | | |
+| `_CompCode` | | ✓ | | |
 
 ## Associations
 

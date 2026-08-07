@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnitPostingRule` | `_CnsldtnUnitPostingRule.ConsolidationUnitPostingRule` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnitPostingRule` | ✓ | | `_CnsldtnUnitPostingRule` | `ConsolidationUnitPostingRule` |
 
 ## Source Code
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACollectionStep` | `step` |
-| key `Language` | `spras` |
-| `CACollectionStepName` | `stept` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACollectionStep` | ✓ | |  | `step` |
+| `Language` | ✓ | |  | `spras` |
+| `CACollectionStepName` |  | |  | `stept` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChrgCalcBaseUUID` | `TranspChrgCalcBaseUUID` |
-| `TranspChargeItemElementUUID` | `TranspChargeItemElementUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspChrgCalculationBase` | `TranspChrgCalculationBase` |
-| `TranspScaleItemQuantityUnit` | `TranspScaleItemQuantityUnit` |
-| `TranspScaleItemQuantity` | `TranspScaleItemQuantity` |
-| `TranspScaleItemCurrency` | `TranspScaleItemCurrency` |
-| `TranspScaleItemAmount` | `TranspScaleItemAmount` |
-| `TranspScaleItemValueChar` | `TranspScaleItemValueChar` |
-| `TranspDataSourceQtyUnit` | `TranspDataSourceQtyUnit` |
-| `TranspDataSourceQuantity` | `TranspDataSourceQuantity` |
-| `TranspDataSourceCurrency` | `TranspDataSourceCurrency` |
-| `TranspDataSourceAmount` | `TranspDataSourceAmount` |
-| `TranspDataSourceValueChar` | `TranspDataSourceValueChar` |
-| `I_FrtOrdChrgElementTP` | `_TranspOrdChrgElmnt as _FrtOrdChrgElement : redirected to parent I_FrtOrdChrgElementTP` |
-| `I_FreightOrderTP` | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChrgCalcBaseUUID` | ✓ | |  |  |
+| `TranspChargeItemElementUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspChrgCalculationBase` |  | |  |  |
+| `TranspScaleItemQuantityUnit` |  | |  |  |
+| `TranspScaleItemQuantity` |  | |  |  |
+| `TranspScaleItemCurrency` |  | |  |  |
+| `TranspScaleItemAmount` |  | |  |  |
+| `TranspScaleItemValueChar` |  | |  |  |
+| `TranspDataSourceQtyUnit` |  | |  |  |
+| `TranspDataSourceQuantity` |  | |  |  |
+| `TranspDataSourceCurrency` |  | |  |  |
+| `TranspDataSourceAmount` |  | |  |  |
+| `TranspDataSourceValueChar` |  | |  |  |
+| `I_FrtOrdChrgElementTP` |  | |  | `_TranspOrdChrgElmnt as _FrtOrdChrgElement : redirected to parent I_FrtOrdChrgElementTP` |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
 
 ## Source Code
 

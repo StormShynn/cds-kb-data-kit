@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `edoc_guid` |
-| `SA_ElectronicDocUniqueID` | `uuid` |
-| `SA_ElectronicDocSequenceNumber` | `counter_num` |
-| `SA_ElectronicDocInvcTransCode` | `inv_trans_code` |
-| `SA_EDocLgclSolnUUID` | `egs_id` |
-| `SA_EDocPrevInvoiceHashBinary` | `previous_inv_hash` |
-| `SA_EDocQRCodeNmbrBinary` | `qr_code` |
-| `SA_EDocCryptographicStmpIdBnry` | `cryptographic_stamp` |
-| `SA_ElectronicDocHasWarning` | `acpt_with_warning` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |
+| `SA_ElectronicDocUniqueID` |  | |  | `uuid` |
+| `SA_ElectronicDocSequenceNumber` |  | |  | `counter_num` |
+| `SA_ElectronicDocInvcTransCode` |  | |  | `inv_trans_code` |
+| `SA_EDocLgclSolnUUID` |  | |  | `egs_id` |
+| `SA_EDocPrevInvoiceHashBinary` |  | |  | `previous_inv_hash` |
+| `SA_EDocQRCodeNmbrBinary` |  | |  | `qr_code` |
+| `SA_EDocCryptographicStmpIdBnry` |  | |  | `cryptographic_stamp` |
+| `SA_ElectronicDocHasWarning` |  | |  | `acpt_with_warning` |
 
 ## Source Code
 

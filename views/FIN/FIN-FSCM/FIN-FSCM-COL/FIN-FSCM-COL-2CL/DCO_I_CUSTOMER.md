@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `customer` |
-| key `LogicalSystem` | `logical_system` |
-| `IsBusinessPurposeCompleted` | `purpose_is_completed` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `customer` |
+| `LogicalSystem` | ✓ | |  | `logical_system` |
+| `IsBusinessPurposeCompleted` |  | |  | `purpose_is_completed` |
 
 ## Source Code
 

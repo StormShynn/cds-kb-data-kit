@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinSrvcsProductGroupHierarchy` | `cast (HierDirectory.HierarchyShortID as ffs_hryid_product_group preserving type )` |
-| key `HierarchyNode` | `HierNode.HierarchyNode` |
-| key `ValidityEndDate` | `HierNode.ValidityEndDate` |
-| key `Language` | `HierNode.Language` |
-| `HierarchyNodeText` | `HierNode.HierarchyNodeText` |
-| `HierarchyNodeShortText` | `cast(substring(HierNode.HierarchyNodeText, 1, 20) as ffs_node_short_text preserving type )` |
-| `ValidityStartDate` | `HierNode.ValidityStartDate` |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinSrvcsProductGroupHierarchy` | ✓ | |  | `cast (HierDirectory.HierarchyShortID as ffs_hryid_product_group preserving type )` |
+| `HierarchyNode` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `HierarchyNodeText` |  | |  |  |
+| `HierarchyNodeShortText` |  | |  | `cast(substring(HierNode.HierarchyNodeText, 1, 20) as ffs_node_short_text preserving type )` |
+| `ValidityStartDate` |  | |  |  |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjDmndAssgmtStatus` | `cast( substring(domvalue_l, 1, 2 ) as tv_proj_dmnd_assgmt_status )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_AssignmentStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjDmndAssgmtStatus` | ✓ | |  | `cast( substring(domvalue_l, 1, 2 ) as tv_proj_dmnd_assgmt_status )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_AssignmentStatusText` | | ✓ | | |
 
 ## Source Code
 

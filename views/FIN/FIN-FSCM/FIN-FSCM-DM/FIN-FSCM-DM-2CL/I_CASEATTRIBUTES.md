@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CaseUUID` | `CaseUniqueID` |
-| `CaseID` | `CaseID` |
-| `CaseProcessor` | `CaseProcessor` |
-| `DisputeCaseProcessorFullName` | `_User.UserDescription` |
-| `CreationDateTime` | `cast( CaseCreatedOn as char17 )` |
-| `CloseDateTime` | `cast( CaseClosedTime as char17 )` |
-| `CaseReason` | `CaseReason` |
-| `CaseType` | `CaseType` |
-| `CaseStatusProfile` | `CaseStatusProfile` |
-| `CaseProcessingStatus` | `CaseStatus` |
-| `DisputeCasePriority` | `CasePriority` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CaseUUID` | ✓ | |  | `CaseUniqueID` |
+| `CaseID` |  | |  |  |
+| `CaseProcessor` |  | |  |  |
+| `DisputeCaseProcessorFullName` |  | | `_User` | `UserDescription` |
+| `CreationDateTime` |  | |  | `cast( CaseCreatedOn as char17 )` |
+| `CloseDateTime` |  | |  | `cast( CaseClosedTime as char17 )` |
+| `CaseReason` |  | |  |  |
+| `CaseType` |  | |  |  |
+| `CaseStatusProfile` |  | |  |  |
+| `CaseProcessingStatus` |  | |  | `CaseStatus` |
+| `DisputeCasePriority` |  | |  | `CasePriority` |
 
 ## Associations
 

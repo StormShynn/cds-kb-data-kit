@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| key `BR_CTeServiceType` | `cast( substring(domvalue_l, 1, 1) as logbr_srv_typ_cte preserving type )` |
-| `BR_CTeServiceTypeDesc` | `ddtext` |
-| `_BR_CTeServiceType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `BR_CTeServiceType` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as logbr_srv_typ_cte preserving type )` |
+| `BR_CTeServiceTypeDesc` |  | |  | `ddtext` |
+| `_BR_CTeServiceType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

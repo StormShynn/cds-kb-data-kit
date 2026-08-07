@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgOffsettingCategory` | `offset_cat` |
-| key `Language` | `cast( langu as spras preserving type )` |
-| `CAInvcgOffsettingCategoryTxt` | `cast( text as inv_offset_cat_txt_gfn_kk preserving type )` |
-| `_CAInvcgOffsettingCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgOffsettingCategory` | ✓ | |  | `offset_cat` |
+| `Language` | ✓ | |  | `cast( langu as spras preserving type )` |
+| `CAInvcgOffsettingCategoryTxt` |  | |  | `cast( text as inv_offset_cat_txt_gfn_kk preserving type )` |
+| `_CAInvcgOffsettingCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

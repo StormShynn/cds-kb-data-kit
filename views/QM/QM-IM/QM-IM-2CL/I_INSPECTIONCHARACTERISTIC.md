@@ -28,136 +28,136 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `qamv.prueflos` |
-| key `InspPlanOperationInternalID` | `qamv.vorglfnr` |
-| key `InspectionCharacteristic` | `qamv.merknr` |
-| `InspectionSpecificationText` | `cast( qamv.kurztext as vdm_qmkkurztxt preserving type )` |
-| `InspectionCharacteristicText` | `cast( qamv.kurztext as vdm_qmkkurztxt preserving type )` |
-| `InspCharcLongTextLanguage` | `qamv.ltextspr` |
-| `HasInspCharcPrtlSmpl` | `qamv.tstichprkz` |
-| `BOOCharacteristicInspRelevance` | `qamv.char_relevance` |
-| `InspCharcUnplannedProcessing` | `qamv.aktppkt` |
-| `InspSpecIsQuantitative` | `cast(substring(qamv.steuerkz,1,1) as vdm_qkzqunmk preserving type )` |
-| `InspSpecIsMeasuredValueRqd` | `cast(substring(qamv.steuerkz,2,1) as qkzqumk preserving type )` |
-| `InspSpecIsSelectedSetRequired` | `cast(substring(qamv.steuerkz,3,1) as qkzpkat preserving type )` |
-| `InspSpecIsLongTermInspection` | `cast(substring(qamv.steuerkz,8,1) as qlzeitkz preserving type )` |
-| `InspSpecRecordingType` | `cast(substring(qamv.steuerkz,9,1) as qestukz preserving type )` |
-| `InspResultIsDocumentationRqd` | `cast(substring(qamv.steuerkz,10,1) as qdokukz preserving type )` |
-| `InspSpecCharcCategory` | `cast(substring(qamv.steuerkz,11,1) as qrzwang preserving type )` |
-| `InspSpecResultCalculation` | `cast(substring(qamv.steuerkz,15,1) as qkzformel preserving type )` |
-| `InspSpecHasSamplingProcedure` | `cast(substring(qamv.steuerkz,16,1) as qstichpr preserving type )` |
-| `InspSpecIsDefectRecordingRqd` | `cast( substring(qamv.steuerkz,19,1) as qbfhlzhl preserving type )` |
-| `InspSpecIsDefectsRecgAutomatic` | `cast( substring(qamv.steuerkz,23,1) as qfehlrec preserving type )` |
-| `InspSpecIsChgDocRequired` | `cast(substring(qamv.steuerkz,24,1) as qkzaenbel preserving type )` |
-| `InspSpecHasControlChart` | `cast(substring(qamv.steuerkz,25,1) as qspcmk preserving type )` |
-| `InspCharcIsNotPlanned` | `cast( niplanmkkz as vdm_qniplanmk preserving type )` |
-| `InspectionMethod` | `qamv.pmethode` |
-| `InspectionMethodPlant` | `cast( qamv.qmtb_werks as vdm_qmtb_werks preserving type )` |
-| `InspectionMethodVersion` | `qamv.pmtversion` |
-| `InspCharcInspSpecRefType` | `qamv.qpmk_ref` |
-| `InspectionSpecificationPlant` | `cast( qamv.qpmk_werks as vdm_qpmk_werks preserving type )` |
-| `InspectionSpecification` | `qamv.verwmerkm` |
-| `InspectionSpecificationVersion` | `qamv.mkversion` |
-| `InspCharcPrtlSmpl` | `qamv.physprobe` |
-| `InspectionCharacteristicStatus` | `qamv.satzstatus` |
-| `InspSpecDecimalPlaces` | `qamv.stellen` |
-| `SamplingProcedure` | `qamv.stichprver` |
-| `InspectionSpecificationUnit` | `qamv.masseinhsw` |
-| `BOOCharcMatlToSampleUnitRate` | `qamv.fakplanme` |
-| `BOOCharcSampleToMatlUnitRate` | `qamv.fakprobme` |
-| `DefectFractionEstimationProced` | `qamv.antverf` |
-| `InspSampleValuationRule` | `qamv.bewregel` |
-| `QuantityUnit` | `qamv.probemgeh` |
-| `InspCharacteristicSampleSize` | `qamv.sollstpumf` |
-| `InspCharacteristicSampleUnit` | `qamv.probemgeh` |
-| `InspSpecSampleQuantityFactor` | `qamv.probmgfak` |
-| `InspSpecTargetValue` | `qamv.sollwert` |
-| `InspSpecHasTargetValue` | `qamv.sollwni` |
-| `InspSpecUpperLimit` | `qamv.toleranzob` |
-| `InspSpecHasUpperLimit` | `qamv.tolobni` |
-| `InspSpecLowerLimit` | `qamv.toleranzun` |
-| `InspSpecHasLowerLimit` | `qamv.tolunni` |
-| `InspSpecUpperPlausibilityLimit` | `qamv.plausioben` |
-| `InspSpecHasUprPlausibilityLmt` | `qamv.plausiobni` |
-| `InspSpecLowerPlausibilityLimit` | `qamv.plausiunte` |
-| `InspSpecHasLowrPlausibilityLmt` | `qamv.plausiunni` |
-| `InspSpecImportanceCode` | `qamv.merkgew` |
-| `InspLotTestEquipInternalID` | `qamv.pzlfh` |
-| `CharacteristicAttributeCatalog` | `qamv.katalgart1` |
-| `SelectedCodeSet` | `qamv.auswmenge1` |
-| `SelectedCodeSetPlant` | `qamv.auswmgwrk1` |
-| `InspSpecAdditionalCatalog2` | `qamv.katalgart2` |
-| `InspSpecAdditionalCatalog3` | `qamv.katalgart3` |
-| `InspSpecAdditionalCatalog4` | `qamv.katalgart4` |
-| `InspSpecAdditionalCatalog5` | `qamv.katalgart5` |
-| `InspSpecAddlSeldCodeSetPlant2` | `qamv.auswmgwrk2` |
-| `InspSpecAddlSeldCodeSetPlant3` | `qamv.auswmgwrk3` |
-| `InspSpecAddlSeldCodeSetPlant4` | `qamv.auswmgwrk4` |
-| `InspSpecAddlSeldCodeSetPlant5` | `qamv.auswmgwrk5` |
-| `InspSpecAdditionalSelectedSet2` | `case qamv.katab2 when 'X' then qamv.auswmenge2 else '' end` |
-| `InspSpecAdditionalCodeGroup2` | `case qamv.katab2 when ' ' then qamv.auswmenge2 else '' end` |
-| `InspSpecAdditionalSelectedSet3` | `case qamv.katab3 when 'X' then qamv.auswmenge3 else '' end` |
-| `InspSpecAdditionalCodeGroup3` | `case qamv.katab3 when ' ' then qamv.auswmenge3 else '' end` |
-| `InspSpecAdditionalSelectedSet4` | `case qamv.katab4 when 'X' then qamv.auswmenge4 else '' end` |
-| `InspSpecAdditionalCodeGroup4` | `case qamv.katab4 when ' ' then qamv.auswmenge4 else '' end` |
-| `InspSpecAdditionalSelectedSet5` | `case qamv.katab5 when 'X' then qamv.auswmenge5 else '' end` |
-| `InspSpecAdditionalCodeGroup5` | `case qamv.katab5 when ' ' then qamv.auswmenge5 else '' end` |
-| `InspSpecificationHasLongText` | `cast( qamv.ltextkz as vdm_qkz preserving type )` |
-| `InspectorQualification` | `qamv.pruefquali` |
-| `InspSpecHasFormula` | `qamv.formelsl` |
-| `InspSpecFormula1` | `qamv.formel1` |
-| `InspSpecFormula2` | `qamv.formel2` |
-| `InspSpecInformationField1` | `qamv.dummy10` |
-| `InspSpecInformationField2` | `qamv.dummy20` |
-| `InspSpecInformationField3` | `qamv.dummy40` |
-| `InspSpecDefectCodeGrpRjcnLower` | `qamv.codegr9u` |
-| `InspSpecDefectCodeRjcnLower` | `qamv.code9u` |
-| `InspSpecDefectCodeGrpRjcnUpper` | `qamv.codegr9o` |
-| `InspSpecDefectCodeRjcnUpper` | `qamv.code9o` |
-| `InspSpecDefectCodeGrpRejection` | `qamv.codegrqual` |
-| `InspSpecDefectCodeRejection` | `qamv.codequal` |
-| `InspectionScope` | `qamv.pruefumf` |
-| `InspCharcQuantity` | `qamv.pruefumf` |
-| `InspectionLotSampleUnit` | `qamv.mengeneinh` |
-| `InspSpecControlIndicators` | `qamv.steuerkz` |
-| `UnplndCharcInspSubsetIntID` | `qamv.ppktungemk` |
-| `InspLotDynamicRule` | `cast( qamv.qdynregel as vdm_qdynregel preserving type )` |
-| `QualityLevelInternalID` | `qamv.zaehlerql` |
-| `SamplingProcedureInspSubset` | `qamv.kzrast` |
-| `InspectionsNotSkippedDnmntr` | `qamv.raster` |
-| `QltyCtrlChartAggrgnCriterion` | `qamv.spckrit` |
-| `BOOCharcGroup` | `qamv.chargroup` |
-| `BOOCharcSourceCharc` | `qamv.chargroup_cref` |
-| `BOOCharcGroupDivision` | `qamv.divisionint` |
-| `ProductionOrderOperationActy` | `qamv.oa_id` |
-| `ProductionOrderOpActyVers` | `qamv.oa_version_no` |
-| `InspCharcConfirmationNumber` | `qamv.rueckmelnr` |
-| `BOOCharacteristicVersion` | `qamv.zaehl` |
-| `InspCharcCreationDate` | `qamv.erstelldat` |
-| `InspCharcCreatedBy` | `qamv.ersteller` |
-| `InspSpecInputProcedure` | `qamv.inpproc` |
-| `_InspectionLot` | *Association* |
-| `_InspectionOperation` | *Association* |
-| `_InspectionResult` | *Association* |
-| `_CharcAttribSelectedCodeSet` | *Association* |
-| `_InspSpecImportanceCode` | *Association* |
-| `_InspectionSpecificationUnit` | *Association* |
-| `_InspCharacteristicSampleUnit` | *Association* |
-| `_QuantityUnit` | *Association* |
-| `_InspCharacteristicStatus` | *Association* |
-| `_InspCharacteristic` | *Association* |
-| `_InspSubsetCharacteristic` | *Association* |
-| `_InspSampleResult` | *Association* |
-| `_InspectionResultValue` | *Association* |
-| `_InspSpecificationVersion` | *Association* |
-| `_InspectionSpecification` | *Association* |
-| `_InspectionSpecificationPlant` | *Association* |
-| `_InspectionMethodVersion` | *Association* |
-| `_InspectionMethodPlant` | *Association* |
-| `_InspLotDynamicRule` | *Association* |
-| `_BOOCharcInspRelevance` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |
+| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |
+| `InspectionCharacteristic` | ✓ | |  | `merknr` |
+| `InspectionSpecificationText` |  | |  | `cast( qamv.kurztext as vdm_qmkkurztxt preserving type )` |
+| `InspectionCharacteristicText` |  | |  | `cast( qamv.kurztext as vdm_qmkkurztxt preserving type )` |
+| `InspCharcLongTextLanguage` |  | |  | `ltextspr` |
+| `HasInspCharcPrtlSmpl` |  | |  | `tstichprkz` |
+| `BOOCharacteristicInspRelevance` |  | |  | `char_relevance` |
+| `InspCharcUnplannedProcessing` |  | |  | `aktppkt` |
+| `InspSpecIsQuantitative` |  | |  | `cast(substring(qamv.steuerkz,1,1) as vdm_qkzqunmk preserving type )` |
+| `InspSpecIsMeasuredValueRqd` |  | |  | `cast(substring(qamv.steuerkz,2,1) as qkzqumk preserving type )` |
+| `InspSpecIsSelectedSetRequired` |  | |  | `cast(substring(qamv.steuerkz,3,1) as qkzpkat preserving type )` |
+| `InspSpecIsLongTermInspection` |  | |  | `cast(substring(qamv.steuerkz,8,1) as qlzeitkz preserving type )` |
+| `InspSpecRecordingType` |  | |  | `cast(substring(qamv.steuerkz,9,1) as qestukz preserving type )` |
+| `InspResultIsDocumentationRqd` |  | |  | `cast(substring(qamv.steuerkz,10,1) as qdokukz preserving type )` |
+| `InspSpecCharcCategory` |  | |  | `cast(substring(qamv.steuerkz,11,1) as qrzwang preserving type )` |
+| `InspSpecResultCalculation` |  | |  | `cast(substring(qamv.steuerkz,15,1) as qkzformel preserving type )` |
+| `InspSpecHasSamplingProcedure` |  | |  | `cast(substring(qamv.steuerkz,16,1) as qstichpr preserving type )` |
+| `InspSpecIsDefectRecordingRqd` |  | |  | `cast( substring(qamv.steuerkz,19,1) as qbfhlzhl preserving type )` |
+| `InspSpecIsDefectsRecgAutomatic` |  | |  | `cast( substring(qamv.steuerkz,23,1) as qfehlrec preserving type )` |
+| `InspSpecIsChgDocRequired` |  | |  | `cast(substring(qamv.steuerkz,24,1) as qkzaenbel preserving type )` |
+| `InspSpecHasControlChart` |  | |  | `cast(substring(qamv.steuerkz,25,1) as qspcmk preserving type )` |
+| `InspCharcIsNotPlanned` |  | |  | `cast( niplanmkkz as vdm_qniplanmk preserving type )` |
+| `InspectionMethod` |  | |  | `pmethode` |
+| `InspectionMethodPlant` |  | |  | `cast( qamv.qmtb_werks as vdm_qmtb_werks preserving type )` |
+| `InspectionMethodVersion` |  | |  | `pmtversion` |
+| `InspCharcInspSpecRefType` |  | |  | `qpmk_ref` |
+| `InspectionSpecificationPlant` |  | |  | `cast( qamv.qpmk_werks as vdm_qpmk_werks preserving type )` |
+| `InspectionSpecification` |  | |  | `verwmerkm` |
+| `InspectionSpecificationVersion` |  | |  | `mkversion` |
+| `InspCharcPrtlSmpl` |  | |  | `physprobe` |
+| `InspectionCharacteristicStatus` |  | |  | `satzstatus` |
+| `InspSpecDecimalPlaces` |  | |  | `stellen` |
+| `SamplingProcedure` |  | |  | `stichprver` |
+| `InspectionSpecificationUnit` |  | |  | `masseinhsw` |
+| `BOOCharcMatlToSampleUnitRate` |  | |  | `fakplanme` |
+| `BOOCharcSampleToMatlUnitRate` |  | |  | `fakprobme` |
+| `DefectFractionEstimationProced` |  | |  | `antverf` |
+| `InspSampleValuationRule` |  | |  | `bewregel` |
+| `QuantityUnit` |  | |  | `probemgeh` |
+| `InspCharacteristicSampleSize` |  | |  | `sollstpumf` |
+| `InspCharacteristicSampleUnit` |  | |  | `probemgeh` |
+| `InspSpecSampleQuantityFactor` |  | |  | `probmgfak` |
+| `InspSpecTargetValue` |  | |  | `sollwert` |
+| `InspSpecHasTargetValue` |  | |  | `sollwni` |
+| `InspSpecUpperLimit` |  | |  | `toleranzob` |
+| `InspSpecHasUpperLimit` |  | |  | `tolobni` |
+| `InspSpecLowerLimit` |  | |  | `toleranzun` |
+| `InspSpecHasLowerLimit` |  | |  | `tolunni` |
+| `InspSpecUpperPlausibilityLimit` |  | |  | `plausioben` |
+| `InspSpecHasUprPlausibilityLmt` |  | |  | `plausiobni` |
+| `InspSpecLowerPlausibilityLimit` |  | |  | `plausiunte` |
+| `InspSpecHasLowrPlausibilityLmt` |  | |  | `plausiunni` |
+| `InspSpecImportanceCode` |  | |  | `merkgew` |
+| `InspLotTestEquipInternalID` |  | |  | `pzlfh` |
+| `CharacteristicAttributeCatalog` |  | |  | `katalgart1` |
+| `SelectedCodeSet` |  | |  | `auswmenge1` |
+| `SelectedCodeSetPlant` |  | |  | `auswmgwrk1` |
+| `InspSpecAdditionalCatalog2` |  | |  | `katalgart2` |
+| `InspSpecAdditionalCatalog3` |  | |  | `katalgart3` |
+| `InspSpecAdditionalCatalog4` |  | |  | `katalgart4` |
+| `InspSpecAdditionalCatalog5` |  | |  | `katalgart5` |
+| `InspSpecAddlSeldCodeSetPlant2` |  | |  | `auswmgwrk2` |
+| `InspSpecAddlSeldCodeSetPlant3` |  | |  | `auswmgwrk3` |
+| `InspSpecAddlSeldCodeSetPlant4` |  | |  | `auswmgwrk4` |
+| `InspSpecAddlSeldCodeSetPlant5` |  | |  | `auswmgwrk5` |
+| `InspSpecAdditionalSelectedSet2` |  | |  | `case qamv.katab2 when 'X' then qamv.auswmenge2 else '' end` |
+| `InspSpecAdditionalCodeGroup2` |  | |  | `case qamv.katab2 when ' ' then qamv.auswmenge2 else '' end` |
+| `InspSpecAdditionalSelectedSet3` |  | |  | `case qamv.katab3 when 'X' then qamv.auswmenge3 else '' end` |
+| `InspSpecAdditionalCodeGroup3` |  | |  | `case qamv.katab3 when ' ' then qamv.auswmenge3 else '' end` |
+| `InspSpecAdditionalSelectedSet4` |  | |  | `case qamv.katab4 when 'X' then qamv.auswmenge4 else '' end` |
+| `InspSpecAdditionalCodeGroup4` |  | |  | `case qamv.katab4 when ' ' then qamv.auswmenge4 else '' end` |
+| `InspSpecAdditionalSelectedSet5` |  | |  | `case qamv.katab5 when 'X' then qamv.auswmenge5 else '' end` |
+| `InspSpecAdditionalCodeGroup5` |  | |  | `case qamv.katab5 when ' ' then qamv.auswmenge5 else '' end` |
+| `InspSpecificationHasLongText` |  | |  | `cast( qamv.ltextkz as vdm_qkz preserving type )` |
+| `InspectorQualification` |  | |  | `pruefquali` |
+| `InspSpecHasFormula` |  | |  | `formelsl` |
+| `InspSpecFormula1` |  | |  | `formel1` |
+| `InspSpecFormula2` |  | |  | `formel2` |
+| `InspSpecInformationField1` |  | |  | `dummy10` |
+| `InspSpecInformationField2` |  | |  | `dummy20` |
+| `InspSpecInformationField3` |  | |  | `dummy40` |
+| `InspSpecDefectCodeGrpRjcnLower` |  | |  | `codegr9u` |
+| `InspSpecDefectCodeRjcnLower` |  | |  | `code9u` |
+| `InspSpecDefectCodeGrpRjcnUpper` |  | |  | `codegr9o` |
+| `InspSpecDefectCodeRjcnUpper` |  | |  | `code9o` |
+| `InspSpecDefectCodeGrpRejection` |  | |  | `codegrqual` |
+| `InspSpecDefectCodeRejection` |  | |  | `codequal` |
+| `InspectionScope` |  | |  | `pruefumf` |
+| `InspCharcQuantity` |  | |  | `pruefumf` |
+| `InspectionLotSampleUnit` |  | |  | `mengeneinh` |
+| `InspSpecControlIndicators` |  | |  | `steuerkz` |
+| `UnplndCharcInspSubsetIntID` |  | |  | `ppktungemk` |
+| `InspLotDynamicRule` |  | |  | `cast( qamv.qdynregel as vdm_qdynregel preserving type )` |
+| `QualityLevelInternalID` |  | |  | `zaehlerql` |
+| `SamplingProcedureInspSubset` |  | |  | `kzrast` |
+| `InspectionsNotSkippedDnmntr` |  | |  | `raster` |
+| `QltyCtrlChartAggrgnCriterion` |  | |  | `spckrit` |
+| `BOOCharcGroup` |  | |  | `chargroup` |
+| `BOOCharcSourceCharc` |  | |  | `chargroup_cref` |
+| `BOOCharcGroupDivision` |  | |  | `divisionint` |
+| `ProductionOrderOperationActy` |  | |  | `oa_id` |
+| `ProductionOrderOpActyVers` |  | |  | `oa_version_no` |
+| `InspCharcConfirmationNumber` |  | |  | `rueckmelnr` |
+| `BOOCharacteristicVersion` |  | |  | `zaehl` |
+| `InspCharcCreationDate` |  | |  | `erstelldat` |
+| `InspCharcCreatedBy` |  | |  | `ersteller` |
+| `InspSpecInputProcedure` |  | |  | `inpproc` |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionOperation` | | ✓ | | |
+| `_InspectionResult` | | ✓ | | |
+| `_CharcAttribSelectedCodeSet` | | ✓ | | |
+| `_InspSpecImportanceCode` | | ✓ | | |
+| `_InspectionSpecificationUnit` | | ✓ | | |
+| `_InspCharacteristicSampleUnit` | | ✓ | | |
+| `_QuantityUnit` | | ✓ | | |
+| `_InspCharacteristicStatus` | | ✓ | | |
+| `_InspCharacteristic` | | ✓ | | |
+| `_InspSubsetCharacteristic` | | ✓ | | |
+| `_InspSampleResult` | | ✓ | | |
+| `_InspectionResultValue` | | ✓ | | |
+| `_InspSpecificationVersion` | | ✓ | | |
+| `_InspectionSpecification` | | ✓ | | |
+| `_InspectionSpecificationPlant` | | ✓ | | |
+| `_InspectionMethodVersion` | | ✓ | | |
+| `_InspectionMethodPlant` | | ✓ | | |
+| `_InspLotDynamicRule` | | ✓ | | |
+| `_BOOCharcInspRelevance` | | ✓ | | |
 
 ## Associations
 

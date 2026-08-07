@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionUsage` | `ConditionUsage` |
-| key `ConditionApplication` | `ConditionApplication` |
-| key `PricingProcedure` | `PricingProcedure` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `ConditionType` | `ConditionType` |
-| `PrcgProcedItemFromRefStep` | `PrcgProcedItemFromRefStep` |
-| `PrcgProcedItemToRefStep` | `PrcgProcedItemToRefStep` |
-| `ConditionIsManuallyDtmnd` | `ConditionIsManuallyDtmnd` |
-| `PrcgProcedItemSubtotal` | `PrcgProcedItemSubtotal` |
-| `ConditionIsForStatistics` | `ConditionIsForStatistics` |
-| `AccountKeyForGLAccount` | `AccountKeyForGLAccount` |
-| `AcctKeyForAccrualsGLAccount` | `AcctKeyForAccrualsGLAccount` |
-| `PricingProcedureItemPrintType` | `PricingProcedureItemPrintType` |
-| `ConditionIsMandatory` | `ConditionIsMandatory` |
-| `CndnIsAcctDetnRelevant` | `CndnIsAcctDetnRelevant` |
-| `InclusionPointFromToIsCopied` | `InclusionPointFromToIsCopied` |
-| `_ConditionUsage` | *Association* |
-| `_ConditionApplication` | *Association* |
-| `_ConditionType` | *Association* |
-| `_PrcgProcedItemPrntType` | *Association* |
-| `_Text` | *Association* |
-| `_PurchasingPricingProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  |  |
+| `ConditionApplication` | ✓ | |  |  |
+| `PricingProcedure` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionType` |  | |  |  |
+| `PrcgProcedItemFromRefStep` |  | |  |  |
+| `PrcgProcedItemToRefStep` |  | |  |  |
+| `ConditionIsManuallyDtmnd` |  | |  |  |
+| `PrcgProcedItemSubtotal` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |
+| `AcctKeyForAccrualsGLAccount` |  | |  |  |
+| `PricingProcedureItemPrintType` |  | |  |  |
+| `ConditionIsMandatory` |  | |  |  |
+| `CndnIsAcctDetnRelevant` |  | |  |  |
+| `InclusionPointFromToIsCopied` |  | |  |  |
+| `_ConditionUsage` | | ✓ | | |
+| `_ConditionApplication` | | ✓ | | |
+| `_ConditionType` | | ✓ | | |
+| `_PrcgProcedItemPrntType` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_PurchasingPricingProcedure` | | ✓ | | |
 
 ## Associations
 

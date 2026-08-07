@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocCheckMethod` | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckmethod preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocCheckMethod` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckmethod preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcDocItmGoodsIssueStatus` | `domvalue_l` |
-| `_SrvcDocGoodsIssueStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcDocItmGoodsIssueStatus` | ✓ | |  | `domvalue_l` |
+| `_SrvcDocGoodsIssueStatusText` | | ✓ | | |
 
 ## Associations
 

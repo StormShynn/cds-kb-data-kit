@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `ChartOfAccounts` |
-| key `GLAccount` | `GLAccount` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  |  |
+| `GLAccount` | ✓ | |  |  |
 
 ## Source Code
 

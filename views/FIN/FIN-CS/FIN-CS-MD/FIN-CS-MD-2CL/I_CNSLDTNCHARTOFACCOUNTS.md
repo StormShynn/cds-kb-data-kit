@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast(itclg as fincs_conschartofaccounts preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(itclg as fincs_conschartofaccounts preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

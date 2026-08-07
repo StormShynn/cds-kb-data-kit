@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MovementType` | `movem_type` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MovementType` | ✓ | |  | `movem_type` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

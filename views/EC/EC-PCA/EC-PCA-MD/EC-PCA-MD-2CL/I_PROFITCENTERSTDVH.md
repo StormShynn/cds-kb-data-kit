@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `ControllingArea` |
-| key `ProfitCenter` | `ProfitCenter` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `_Text` | *Association* |
-| `_ControllingArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |
+| `ProfitCenter` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
 
 ## Source Code
 

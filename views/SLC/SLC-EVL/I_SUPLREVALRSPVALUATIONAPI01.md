@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalRspValuationUUID` | `SuplrEvalRspValuationUUID` |
-| `SuplrEvalRspUUID` | `SuplrEvalRspUUID` |
-| `SuplrEvalRspQuestionUUID` | `SuplrEvalRspQuestionUUID` |
-| `SuplrEvalReqQuestionValueUUID` | `SuplrEvalReqQuestionValueUUID` |
-| `IsQuestionAnswerYes` | `IsQuestionAnswerYes` |
-| `AnswerScore` | `AnswerScore` |
-| `AnswerText` | `AnswerText` |
-| `SupplierEvalResponseValuation` | `SupplierEvalResponseValuation` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalRspValuationUUID` | ✓ | |  |  |
+| `SuplrEvalRspUUID` |  | |  |  |
+| `SuplrEvalRspQuestionUUID` |  | |  |  |
+| `SuplrEvalReqQuestionValueUUID` |  | |  |  |
+| `IsQuestionAnswerYes` |  | |  |  |
+| `AnswerScore` |  | |  |  |
+| `AnswerText` |  | |  |  |
+| `SupplierEvalResponseValuation` |  | |  |  |
 
 ## Source Code
 

@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StockTransportOrder` | `StockTransportOrder` |
-| key `StockTransportOrderItem` | `StockTransportOrderItem` |
-| `ShippingCondition` | `ShippingCondition` |
-| `ShippingPoint` | `ShippingPoint` |
-| `Route` | `Route` |
-| `LoadingGroup` | `LoadingGroup` |
-| `TransportationGroup` | `TransportationGroup` |
-| `DeliveryPriority` | `DeliveryPriority` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `StockTransportOrderType` | `StockTransportOrderType` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Plant` | `Plant` |
-| `_StockTransportOrderItem` | *Association* |
-| `_StockTransportOrder` | *Association* |
-| `_PurchasingDocument` | *Association* |
-| `_PurchasingDocumentItem` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_ShippingPoint` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |
+| `StockTransportOrderItem` | ✓ | |  |  |
+| `ShippingCondition` |  | |  |  |
+| `ShippingPoint` |  | |  |  |
+| `Route` |  | |  |  |
+| `LoadingGroup` |  | |  |  |
+| `TransportationGroup` |  | |  |  |
+| `DeliveryPriority` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `StockTransportOrderType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `_StockTransportOrderItem` | | ✓ | | |
+| `_StockTransportOrder` | | ✓ | | |
+| `_PurchasingDocument` | | ✓ | | |
+| `_PurchasingDocumentItem` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgSchedule` | `_tfk2606.inv_schedule` |
-| `_CAInvcgScheduleText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgSchedule` | ✓ | | `_tfk2606` | `inv_schedule` |
+| `_CAInvcgScheduleText` | | ✓ | | |
 
 ## Associations
 

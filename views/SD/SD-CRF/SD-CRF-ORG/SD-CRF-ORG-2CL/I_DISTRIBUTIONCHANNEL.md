@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DistributionChannel` | `vtweg` |
-| `DistributionChannelOID` | `cast( vtweg as distributionchannel_oid )` |
-| `_Text` | *Association* |
-| `_DistrChannelHierarchyNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DistributionChannel` | ✓ | |  | `vtweg` |
+| `DistributionChannelOID` |  | |  | `cast( vtweg as distributionchannel_oid )` |
+| `_Text` | | ✓ | | |
+| `_DistrChannelHierarchyNode` | | ✓ | | |
 
 ## Associations
 

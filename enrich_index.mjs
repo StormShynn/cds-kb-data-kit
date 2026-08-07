@@ -96,11 +96,26 @@ for (let i = 0; i < viewFiles.length; i++) {
   // which means the row is actually one of the view's associations
   // (appended to the same table) rather than a data field.
   if (fieldsTable) {
+    // Current table shape has Key/Association as their own columns (index
+    // 1/2) — see src/template.mjs's renderFieldsTable. Older files
+    // reparse-fields.mjs hasn't rewritten yet (or Hub-metadata-only views,
+    // which it skips entirely) still have the "key `Name`" text + trailing
+    // "*Association*" cell it replaced; both are handled here so
+    // field-index.json stays correct regardless of which shape a given
+    // view's Fields table is currently in.
+    const isNewShape = fieldsTable.header[1] === 'Key';
     for (const row of fieldsTable.rows) {
-      if (row[row.length - 1] === '*Association*') continue;
-      let fieldName = row[0];
-      const isKey = fieldName.startsWith('key ');
-      if (isKey) fieldName = fieldName.slice(4).trim();
+      let fieldName, isKey;
+      if (isNewShape) {
+        if (row[2] === '✓') continue; // association row, not a data field
+        fieldName = row[0];
+        isKey = row[1] === '✓';
+      } else {
+        if (row[row.length - 1] === '*Association*') continue;
+        fieldName = row[0];
+        isKey = fieldName.startsWith('key ');
+        if (isKey) fieldName = fieldName.slice(4).trim();
+      }
       if (!fieldName) continue;
       const key = fieldName.toUpperCase();
       (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo });

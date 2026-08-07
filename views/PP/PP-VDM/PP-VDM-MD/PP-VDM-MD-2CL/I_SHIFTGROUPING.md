@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShiftGrouping` | `grp.schgrup` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShiftGrouping` | ✓ | |  | `schgrup` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

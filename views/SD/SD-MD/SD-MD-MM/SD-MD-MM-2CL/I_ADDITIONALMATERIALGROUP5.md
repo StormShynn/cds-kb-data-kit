@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AdditionalMaterialGroup5` | `mvgr5` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AdditionalMaterialGroup5` | ✓ | |  | `mvgr5` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

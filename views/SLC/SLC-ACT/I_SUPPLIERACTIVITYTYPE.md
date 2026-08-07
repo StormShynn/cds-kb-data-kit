@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrActyType` | `act_type` |
-| `_SupplierActivityTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrActyType` | ✓ | |  | `act_type` |
+| `_SupplierActivityTypeText` | | ✓ | | |
 
 ## Associations
 

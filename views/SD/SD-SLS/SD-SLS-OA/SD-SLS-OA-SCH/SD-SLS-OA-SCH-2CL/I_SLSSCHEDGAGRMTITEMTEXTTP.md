@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `SalesSchedgAgrmtItemText.SalesSchedulingAgreement` |
-| key `SalesSchedulingAgreementItem` | `SalesSchedgAgrmtItemText.SalesSchedulingAgreementItem` |
-| key `Language` | `SalesSchedgAgrmtItemText.Language` |
-| key `LongTextID` | `SalesSchedgAgrmtItemText.LongTextID` |
-| `LongTextIDForEdit` | `SalesSchedgAgrmtItemText.LongTextIDForEdit` |
-| `LanguageForEdit` | `SalesSchedgAgrmtItemText.LanguageForEdit` |
-| `LongText` | `SalesSchedgAgrmtItemText.LongText` |
-| `SalesSchedgAgrmtType` | `SalesSchedgAgrmtItemText.SalesSchedgAgrmtType` |
-| `OrganizationDivision` | `SalesSchedgAgrmtItemText.OrganizationDivision` |
-| `SalesOrganization` | `SalesSchedgAgrmtItemText.SalesOrganization` |
-| `DistributionChannel` | `SalesSchedgAgrmtItemText.DistributionChannel` |
-| `_Item` | *Association* |
-| `_SalesSchedulingAgreement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  |  |
+| `SalesSchedulingAgreementItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `SalesSchedgAgrmtType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesSchedulingAgreement` | | ✓ | | |
 
 ## Source Code
 

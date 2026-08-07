@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_tf181.langu` |
-| key `ConsolidationGroup` | `cast( _tf181.congr as fincs_md_congr preserving type )` |
-| `ConsolidationGroupText` | `cast ( _tf181.txtsh as fincs_congr_short_text preserving type )` |
-| `ConsolidationGroupMediumText` | `cast ( _tf181.txtmi as fincs_congr_medium_text preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_tf181` | `langu` |
+| `ConsolidationGroup` | ✓ | |  | `cast( _tf181.congr as fincs_md_congr preserving type )` |
+| `ConsolidationGroupText` |  | |  | `cast ( _tf181.txtsh as fincs_congr_short_text preserving type )` |
+| `ConsolidationGroupMediumText` |  | |  | `cast ( _tf181.txtmi as fincs_congr_medium_text preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

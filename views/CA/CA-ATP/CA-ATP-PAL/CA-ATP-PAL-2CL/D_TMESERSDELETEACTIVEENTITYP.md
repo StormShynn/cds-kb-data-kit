@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TmeSersWthAssgmtIsDeltd` | `tmeserswthassgmtisdeltd` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TmeSersWthAssgmtIsDeltd` |  | |  | `tmeserswthassgmtisdeltd` |
 
 ## Source Code
 

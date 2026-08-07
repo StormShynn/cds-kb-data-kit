@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectServiceOrganizationUUID` | `ProjectServiceOrganizationUUID` |
-| `ProjectServiceOrganization` | `ProjectServiceOrganization` |
-| `ProjectServiceOrganizationOID` | `ProjectServiceOrganizationOID` |
-| `ProjSrvcOrgIsTimePostingAllwd` | `ProjSrvcOrgIsTimePostingAllwd` |
-| `ProjSrvcOrgIsProjDeliveryOrg` | `ProjSrvcOrgIsProjDeliveryOrg` |
-| `ProjSrvcOrgIsResourceOrg` | `ProjSrvcOrgIsResourceOrg` |
-| `ProjSrvcOrgControllingArea` | `ProjSrvcOrgControllingArea` |
-| `ProjSrvcOrgCompanyCode` | `ProjSrvcOrgCompanyCode` |
-| `ProjSrvcOrgSalesOrg` | `ProjSrvcOrgSalesOrg` |
-| `ProjSrvcOrgDivision` | `ProjSrvcOrgDivision` |
-| `ProjSrvcOrgDistributionChannel` | `ProjSrvcOrgDistributionChannel` |
-| `ProjSrvcOrgPurchaseOrg` | `ProjSrvcOrgPurchaseOrg` |
-| `ProjSrvcOrgPlant` | `ProjSrvcOrgPlant` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Text` | *Association* |
-| `_CostCenter` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectServiceOrganizationUUID` | ✓ | |  |  |
+| `ProjectServiceOrganization` |  | |  |  |
+| `ProjectServiceOrganizationOID` |  | |  |  |
+| `ProjSrvcOrgIsTimePostingAllwd` |  | |  |  |
+| `ProjSrvcOrgIsProjDeliveryOrg` |  | |  |  |
+| `ProjSrvcOrgIsResourceOrg` |  | |  |  |
+| `ProjSrvcOrgControllingArea` |  | |  |  |
+| `ProjSrvcOrgCompanyCode` |  | |  |  |
+| `ProjSrvcOrgSalesOrg` |  | |  |  |
+| `ProjSrvcOrgDivision` |  | |  |  |
+| `ProjSrvcOrgDistributionChannel` |  | |  |  |
+| `ProjSrvcOrgPurchaseOrg` |  | |  |  |
+| `ProjSrvcOrgPlant` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
 
 ## Associations
 

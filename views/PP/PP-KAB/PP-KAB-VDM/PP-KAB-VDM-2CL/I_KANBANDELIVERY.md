@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanContainer` | `pkkey` |
-| `SoldToParty` | `kunnr` |
-| `CustomerReferenceNumber` | `bstkd` |
-| `DeliveryDocument` | `vlien` |
-| `DeliveryDocumentItem` | `vliep` |
-| `Plant` | `_KanbanContainer.Plant` |
-| `Supplier` | `_KanbanContainer.Supplier` |
-| `_KanbanContainer` | *Association* |
-| `_Customer` | *Association* |
-| `_CustomerCompanyByPlant` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanContainer` | ✓ | |  | `pkkey` |
+| `SoldToParty` |  | |  | `kunnr` |
+| `CustomerReferenceNumber` |  | |  | `bstkd` |
+| `DeliveryDocument` |  | |  | `vlien` |
+| `DeliveryDocumentItem` |  | |  | `vliep` |
+| `Plant` |  | | `_KanbanContainer` | `Plant` |
+| `Supplier` |  | | `_KanbanContainer` | `Supplier` |
+| `_KanbanContainer` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_CustomerCompanyByPlant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
 
 ## Associations
 

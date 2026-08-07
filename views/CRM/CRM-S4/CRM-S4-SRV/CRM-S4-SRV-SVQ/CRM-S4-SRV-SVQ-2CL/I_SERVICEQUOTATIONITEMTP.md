@@ -29,63 +29,63 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceQuotation` | `ServiceQuotation` |
-| key `ServiceQuotationItem` | `ServiceQuotationItem` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `ServiceDocumentItemObjectType` | `ServiceDocumentItemObjectType` |
-| `ServiceQtanItemCategory` | `ServiceQtanItemCategory` |
-| `ServiceQuotationItemUUID` | `ServiceQuotationItemUUID` |
-| `ParentServiceQuotationItem` | `ParentServiceQuotationItem` |
-| `ServiceQtanItemDescription` | `ServiceQtanItemDescription` |
-| `Language` | `Language` |
-| `ServiceDocItemCreationDateTime` | `ServiceDocItemCreationDateTime` |
-| `ServiceDocItemChangedDateTime` | `ServiceDocItemChangedDateTime` |
-| `ServiceDocItemCreatedByUser` | `ServiceDocItemCreatedByUser` |
-| `ServiceDocItemChangedByUser` | `ServiceDocItemChangedByUser` |
-| `Product` | `Product` |
-| `Quantity` | `Quantity` |
-| `QuantityUnit` | `QuantityUnit` |
-| `SoldToParty` | `SoldToParty` |
-| `ShipToParty` | `ShipToParty` |
-| `ContactPersonBusinessPartnerId` | `ContactPersonBusinessPartnerId` |
-| `RespEmployeeBusinessPartnerId` | `RespEmployeeBusinessPartnerId` |
-| `ServicePerformer` | `ServicePerformer` |
-| `RespyMgmtServiceTeam` | `RespyMgmtServiceTeam` |
-| `RespyMgmtGlobalTeamID` | `RespyMgmtGlobalTeamID` |
-| `ServiceQuotationItemIsNew` | `ServiceQuotationItemIsNew` |
-| `SrvcQtanItemIsInProcess` | `SrvcQtanItemIsInProcess` |
-| `ServiceQuotationItemIsReleased` | `ServiceQuotationItemIsReleased` |
-| `ServiceQtanItemIsCompleted` | `ServiceQtanItemIsCompleted` |
-| `SrvcQtanItemStatus` | `SrvcQtanItemStatus` |
-| `ServiceQuotationItemIsRejected` | `ServiceQuotationItemIsRejected` |
-| `ServiceQuotationItemIsAccepted` | `ServiceQuotationItemIsAccepted` |
-| `ServiceQuotationItemHasError` | `ServiceQuotationItemHasError` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `ServiceDocItemGrossAmount` | `} ServiceDocItemGrossAmount` |
-| `ServiceDocumentItemNetAmount` | `} ServiceDocumentItemNetAmount` |
-| `ServiceDocumentItemTaxAmount` | `} ServiceDocumentItemTaxAmount` |
-| `ServiceQtanItemExtReference` | `ServiceQtanItemExtReference` |
-| `ServiceQtanExtReference` | `ServiceQtanExtReference` |
-| `ReferenceServiceContract` | `ReferenceServiceContract` |
-| `ReferenceServiceContractItem` | `ReferenceServiceContractItem` |
-| `_ServiceDocument` | *Association* |
-| `_ServicePerformer` | *Association* |
-| `_Product` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_SrvcQtanItmStatus` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_ServiceQuotationTP` | *Association* |
-| `_SrvcQtanItemRefObjectTP` | *Association* |
-| `_SrvcQtanItemPriceElementTP` | *Association* |
-| `_SrvcQtanItemAppointmentTP` | *Association* |
-| `_SrvcQtanItemDurationTP` | *Association* |
-| `_SrvcQtanItmFUPSrvcOrdTP` | *Association* |
-| `_SrvcQtanItemLongTextTP` | *Association* |
-| `_SrvcQtanItemPartnerTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |
+| `ServiceQuotationItem` | ✓ | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |
+| `ServiceQtanItemCategory` |  | |  |  |
+| `ServiceQuotationItemUUID` |  | |  |  |
+| `ParentServiceQuotationItem` |  | |  |  |
+| `ServiceQtanItemDescription` |  | |  |  |
+| `Language` |  | |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |
+| `Product` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |
+| `ServiceQuotationItemIsNew` |  | |  |  |
+| `SrvcQtanItemIsInProcess` |  | |  |  |
+| `ServiceQuotationItemIsReleased` |  | |  |  |
+| `ServiceQtanItemIsCompleted` |  | |  |  |
+| `SrvcQtanItemStatus` |  | |  |  |
+| `ServiceQuotationItemIsRejected` |  | |  |  |
+| `ServiceQuotationItemIsAccepted` |  | |  |  |
+| `ServiceQuotationItemHasError` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ServiceDocItemGrossAmount` |  | |  | `} ServiceDocItemGrossAmount` |
+| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceDocumentItemNetAmount` |
+| `ServiceDocumentItemTaxAmount` |  | |  | `} ServiceDocumentItemTaxAmount` |
+| `ServiceQtanItemExtReference` |  | |  |  |
+| `ServiceQtanExtReference` |  | |  |  |
+| `ReferenceServiceContract` |  | |  |  |
+| `ReferenceServiceContractItem` |  | |  |  |
+| `_ServiceDocument` | | ✓ | | |
+| `_ServicePerformer` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_SrvcQtanItmStatus` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_ServiceQuotationTP` | | ✓ | | |
+| `_SrvcQtanItemRefObjectTP` | | ✓ | | |
+| `_SrvcQtanItemPriceElementTP` | | ✓ | | |
+| `_SrvcQtanItemAppointmentTP` | | ✓ | | |
+| `_SrvcQtanItemDurationTP` | | ✓ | | |
+| `_SrvcQtanItmFUPSrvcOrdTP` | | ✓ | | |
+| `_SrvcQtanItemLongTextTP` | | ✓ | | |
+| `_SrvcQtanItemPartnerTP` | | ✓ | | |
 
 ## Source Code
 

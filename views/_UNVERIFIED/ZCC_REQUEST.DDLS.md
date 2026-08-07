@@ -37,44 +37,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RequestUuid` | `RequestUuid` |
-| `RequestId` | `RequestId` |
-| `ImageUrl` | `ImageUrl` |
-| `RequestType` | `RequestType` |
-| `FinancialYear` | `FinancialYear` |
-| `WbsType` | `WbsType` |
-| `Title` | `Title` |
-| `ProjectType` | `ProjectType` |
-| `Description` | `Description` |
-| `CompanyCode` | `CompanyCode` |
-| `Justification` | `Justification` |
-| `Source` | `Source` |
-| `SendApprover` | `SendApprover` |
-| `Priority` | `Priority` |
-| `OverallStatus` | `OverallStatus` |
-| `localized` | `_OverallStatus._Text.Text as OverallStatusText : localized` |
-| `ReplicationStatus` | `ReplicationStatus` |
-| `CriticalityStatus` | `CriticalityStatus` |
-| `Attachment` | `Attachment` |
-| `MimeType` | `MimeType` |
-| `FileName` | `FileName` |
-| `IntegerValue` | `IntegerValue` |
-| `ProgressIntegerValue` | `ProgressIntegerValue` |
-| `LocalCreatedBy` | `LocalCreatedBy` |
-| `LocalCreatedAt` | `LocalCreatedAt` |
-| `LocalLastChangedBy` | `LocalLastChangedBy` |
-| `LocalLastChangedAt` | `LocalLastChangedAt` |
-| `LastChangedAt` | `LastChangedAt` |
-| `_OverallStatus` | *Association* |
-| `_Cfin` | *Association* |
-| `_Sap` | *Association* |
-| `_Approver` | *Association* |
-| `_Logs` | *Association* |
-| `_Msg` | *Association* |
-| `_File` | *Association* |
-| `_Company` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RequestUuid` | ✓ | |  |  |
+| `RequestId` |  | |  |  |
+| `ImageUrl` |  | |  |  |
+| `RequestType` |  | |  |  |
+| `FinancialYear` |  | |  |  |
+| `WbsType` |  | |  |  |
+| `Title` |  | |  |  |
+| `ProjectType` |  | |  |  |
+| `Description` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Justification` |  | |  |  |
+| `Source` |  | |  |  |
+| `SendApprover` |  | |  |  |
+| `Priority` |  | |  |  |
+| `OverallStatus` |  | |  |  |
+| `localized` |  | |  | `_OverallStatus._Text.Text as OverallStatusText : localized` |
+| `ReplicationStatus` |  | |  |  |
+| `CriticalityStatus` |  | |  |  |
+| `Attachment` |  | |  |  |
+| `MimeType` |  | |  |  |
+| `FileName` |  | |  |  |
+| `IntegerValue` |  | |  |  |
+| `ProgressIntegerValue` |  | |  |  |
+| `LocalCreatedBy` |  | |  |  |
+| `LocalCreatedAt` |  | |  |  |
+| `LocalLastChangedBy` |  | |  |  |
+| `LocalLastChangedAt` |  | |  |  |
+| `LastChangedAt` |  | |  |  |
+| `_OverallStatus` | | ✓ | | |
+| `_Cfin` | | ✓ | | |
+| `_Sap` | | ✓ | | |
+| `_Approver` | | ✓ | | |
+| `_Logs` | | ✓ | | |
+| `_Msg` | | ✓ | | |
+| `_File` | | ✓ | | |
+| `_Company` | | ✓ | | |
 
 ## Source Code
 

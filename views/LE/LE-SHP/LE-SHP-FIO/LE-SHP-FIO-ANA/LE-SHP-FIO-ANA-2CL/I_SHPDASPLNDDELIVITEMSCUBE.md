@@ -29,62 +29,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OutboundDelivery` | `OutboundDelivery` |
-| key `OutboundDeliveryItem` | `OutboundDeliveryItem` |
-| `Product` | `Product` |
-| `RatioUnit` | `cast ('%' as abap.unit( 3 ))` |
-| `HundredInPercent` | `100` |
-| `PlannedGoodsIssueDate` | `PlannedGoodsIssueDate` |
-| `AdjustedPlannedGoodsIssueDate` | `AdjustedPlannedGoodsIssueDate` |
-| `ActualGoodsMovementDate` | `ActualGoodsMovementDate` |
-| `DeliveryPriority` | `DeliveryPriority` |
-| `ReferenceSDDocument` | `ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `} ] ReferenceSDDocumentItem` |
-| `ReferenceSDDocumentCategory` | `ReferenceSDDocumentCategory` |
-| `DeliveryDocumentType` | `DeliveryDocumentType` |
-| `GoodsMovementStatus` | `GoodsMovementStatus` |
-| `ReceivingPlant` | `ReceivingPlant` |
-| `ShipToParty` | `ShipToParty` |
-| `ShippingCondition` | `ShippingCondition` |
-| `ShippingPoint` | `ShippingPoint` |
-| `SoldToParty` | `SoldToParty` |
-| `ProposedDeliveryRoute` | `ProposedDeliveryRoute` |
-| `ProductGroup` | `ProductGroup` |
-| `Plant` | `Plant` |
-| `TransportationGroup` | `TransportationGroup` |
-| `Warehouse` | `Warehouse` |
-| `CalendarYear` | `} CalendarYear` |
-| `CalendarQuarter` | `CalendarQuarter` |
-| `CalendarMonth` | `CalendarMonth` |
-| `CalendarWeek` | `CalendarWeek` |
-| `YearMonth` | `YearMonth` |
-| `YearQuarter` | `YearQuarter` |
-| `YearWeek` | `YearWeek` |
-| `CustomerClassification` | `CustomerClassification` |
-| `ForwardingAgent` | `ForwardingAgent` |
-| `CreationDate` | `CreationDate` |
-| `NumberOfDeliveryItems` | `cast ( 1 as anz_lief_pos )` |
-| `NmbrOfShpdAsPlndDelivItems` | `NmbrOfShpdAsPlndDelivItems` |
-| `GIToPlndGIDelayInDays` | `GIToPlndGIDelayInDays` |
-| `MaxGIToPlndGIDelayInDays` | `cast ( GIToPlndGIDelayInDays as max_gi_to_plnd_gi_delay )` |
-| `_CustomerClassification` | *Association* |
-| `_DeliveryDocumentType` | *Association* |
-| `_DeliveryPriority` | *Association* |
-| `_ForwardingAgent` | *Association* |
-| `_GoodsMovementStatus` | *Association* |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_ReceivingPlant` | *Association* |
-| `_ReferenceSDDocumentCategory` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_ShippingPoint` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_TransportationGroup` | *Association* |
-| `_Warehouse` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OutboundDelivery` | ✓ | |  |  |
+| `OutboundDeliveryItem` | ✓ | |  |  |
+| `Product` |  | |  |  |
+| `RatioUnit` |  | |  | `cast ('%' as abap.unit( 3 ))` |
+| `HundredInPercent` |  | |  | `100` |
+| `PlannedGoodsIssueDate` |  | |  |  |
+| `AdjustedPlannedGoodsIssueDate` |  | |  |  |
+| `ActualGoodsMovementDate` |  | |  |  |
+| `DeliveryPriority` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  | `} ] ReferenceSDDocumentItem` |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `DeliveryDocumentType` |  | |  |  |
+| `GoodsMovementStatus` |  | |  |  |
+| `ReceivingPlant` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `ShippingCondition` |  | |  |  |
+| `ShippingPoint` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ProposedDeliveryRoute` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `TransportationGroup` |  | |  |  |
+| `Warehouse` |  | |  |  |
+| `CalendarYear` |  | |  | `} CalendarYear` |
+| `CalendarQuarter` |  | |  |  |
+| `CalendarMonth` |  | |  |  |
+| `CalendarWeek` |  | |  |  |
+| `YearMonth` |  | |  |  |
+| `YearQuarter` |  | |  |  |
+| `YearWeek` |  | |  |  |
+| `CustomerClassification` |  | |  |  |
+| `ForwardingAgent` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `NumberOfDeliveryItems` |  | |  | `cast ( 1 as anz_lief_pos )` |
+| `NmbrOfShpdAsPlndDelivItems` |  | |  |  |
+| `GIToPlndGIDelayInDays` |  | |  |  |
+| `MaxGIToPlndGIDelayInDays` |  | |  | `cast ( GIToPlndGIDelayInDays as max_gi_to_plnd_gi_delay )` |
+| `_CustomerClassification` | | ✓ | | |
+| `_DeliveryDocumentType` | | ✓ | | |
+| `_DeliveryPriority` | | ✓ | | |
+| `_ForwardingAgent` | | ✓ | | |
+| `_GoodsMovementStatus` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_ReceivingPlant` | | ✓ | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_TransportationGroup` | | ✓ | | |
+| `_Warehouse` | | ✓ | | |
 
 ## Associations
 

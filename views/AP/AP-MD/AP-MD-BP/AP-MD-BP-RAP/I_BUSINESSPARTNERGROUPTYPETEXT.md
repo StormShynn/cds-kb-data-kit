@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `BusinessPartnerGroupType` | `partgrptyp` |
-| `BusPartGroupTypeShortDesc` | `textshort` |
-| `BusinessPartnerGroupTypeDesc` | `textlong` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BusinessPartnerGroupType` | ✓ | |  | `partgrptyp` |
+| `BusPartGroupTypeShortDesc` |  | |  | `textshort` |
+| `BusinessPartnerGroupTypeDesc` |  | |  | `textlong` |
 
 ## Source Code
 

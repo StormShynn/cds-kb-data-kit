@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaxJurisdictionCalcProcedure` | `kalsm` |
-| key `TaxJurisdiction` | `cast( txjcd as fis_txjcd )` |
-| `CashDiscountBaseAmtIsNetAmt` | `xskfn` |
-| `TaxBaseAmountIsNetAmount` | `xmwsn` |
-| `_Text` | *Association* |
-| `_TaxJurisCalcProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaxJurisdictionCalcProcedure` | ✓ | |  | `kalsm` |
+| `TaxJurisdiction` | ✓ | |  | `cast( txjcd as fis_txjcd )` |
+| `CashDiscountBaseAmtIsNetAmt` |  | |  | `xskfn` |
+| `TaxBaseAmountIsNetAmount` |  | |  | `xmwsn` |
+| `_Text` | | ✓ | | |
+| `_TaxJurisCalcProcedure` | | ✓ | | |
 
 ## Associations
 

@@ -30,51 +30,51 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TriggerPointNumber` | `cast(mlst.ProjectMilestone as pph_mlst_zaehl preserving type)` |
-| `TriggerPointName` | `cast(mlst.MilestoneDescription as pph_mlst_ktext preserving type)` |
-| `OrderInternalID` | `oper.OrderInternalBillOfOperations` |
-| `OrderOperationInternalID` | `oper.OrderIntBillOfOperationsItem` |
-| `TriggerPointInternalID` | `cast(mlst.ProjectMilestoneInternalID as pph_mlst_intid preserving type)` |
-| `IsMarkedForDeletion` | `mlst.IsDeleted` |
-| `TriggerPointUsage` | `mlst.UsageCode` |
-| `CreationDate` | `mlst.CreationDate` |
-| `LastChangeDate` | `mlst.LastChangeDate` |
-| `CreatedByUser` | `mlst.CreatedByUser` |
-| `LastChangedByUser` | `mlst.LastChangedByUser` |
-| `ProductionOrder` | `cast(oper.ManufacturingOrder as vdm_manufacturingorder preserving type)` |
-| `ProductionOrderType` | `cast(oper.ManufacturingOrderType as vdm_prodnordertype preserving type)` |
-| `ProductionOrderSequence` | `cast(oper.ManufacturingOrderSequence as vdm_prodnordersequence preserving type)` |
-| `ProductionOrderOperation` | `cast(oper.ManufacturingOrderOperation_2 as vdm_prodnorderoperation preserving type)` |
-| `ProductionPlant` | `oper.ProductionPlant` |
-| `WorkCenterType` | `oper.WorkCenterTypeCode_2` |
-| `WorkCenterInternalID` | `oper.WorkCenterInternalID` |
-| `OperationControlProfile` | `cast(oper.OperationControlProfile as pph_steus preserving type)` |
-| `ScheduledBasicDate` | `mlst.ScheduledBasicDate` |
-| `FixedBasicDate` | `mlst.FixedBasicDate` |
-| `ActualEndDate` | `mlst.ActualEndDate` |
-| `ScheduledForecastedDate` | `mlst.ScheduledForecastedDate` |
-| `TrggrPtReleaseStopIsActive` | `mlst.MlstnReleaseStopIsActive` |
-| `TrggrPtIsUsedForTrggrPtFunc` | `cast(mlst.MlstnIsUsedforMlstnFunc as vdm_pp_wflow preserving type)` |
-| `TrggrPtIsMarkedForCreateOrder` | `cast(mlst.MlstnIsMarkedForCreateNtwk as vdm_pp_incnw preserving type)` |
-| `TrggrPtIsMarkedForInsertRefOp` | `cast(mlst.MlstnIsMarkedForIncludeSubNtwk as vdm_pp_incpn preserving type)` |
-| `TrggrPtIsMarkedForRelPrevOp` | `cast(mlst.MlstnIsMarkedForCreateSubNtwk as vdm_pp_incsn preserving type)` |
-| `TrggrPtIsMarkedForRelFllwngOp` | `cast(mlst.MlstnIsMarkedForRelFllwngActy as vdm_pp_relsu preserving type)` |
-| `TrggrPtIsMarkedForRelUpToStop` | `mlst.MlstnIsMarkedForRelUptoStopInd` |
-| `TrggrPtIsMrkdForStartWrkflwTsk` | `mlst.MlstnIsMarkedForStrtWrkflwTsk` |
-| `_OrderInternalID` | *Association* |
-| `_ProductionOrderType` | *Association* |
-| `_WorkCenterType` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_TriggerPointUsage` | *Association* |
-| `_TriggerPointText` | *Association* |
-| `_ProductionOrderHeader` | *Association* |
-| `_ProductionOrderSequence` | *Association* |
-| `_ProductionPlantText` | *Association* |
-| `_ProductionOrderText` | *Association* |
-| `_WorkCenterText` | *Association* |
-| `_ProductionOrderOperation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TriggerPointNumber` | ✓ | |  | `cast(mlst.ProjectMilestone as pph_mlst_zaehl preserving type)` |
+| `TriggerPointName` |  | |  | `cast(mlst.MilestoneDescription as pph_mlst_ktext preserving type)` |
+| `OrderInternalID` |  | |  | `OrderInternalBillOfOperations` |
+| `OrderOperationInternalID` |  | |  | `OrderIntBillOfOperationsItem` |
+| `TriggerPointInternalID` |  | |  | `cast(mlst.ProjectMilestoneInternalID as pph_mlst_intid preserving type)` |
+| `IsMarkedForDeletion` |  | |  | `IsDeleted` |
+| `TriggerPointUsage` |  | |  | `UsageCode` |
+| `CreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ProductionOrder` |  | |  | `cast(oper.ManufacturingOrder as vdm_manufacturingorder preserving type)` |
+| `ProductionOrderType` |  | |  | `cast(oper.ManufacturingOrderType as vdm_prodnordertype preserving type)` |
+| `ProductionOrderSequence` |  | |  | `cast(oper.ManufacturingOrderSequence as vdm_prodnordersequence preserving type)` |
+| `ProductionOrderOperation` |  | |  | `cast(oper.ManufacturingOrderOperation_2 as vdm_prodnorderoperation preserving type)` |
+| `ProductionPlant` |  | |  |  |
+| `WorkCenterType` |  | |  | `WorkCenterTypeCode_2` |
+| `WorkCenterInternalID` |  | |  |  |
+| `OperationControlProfile` |  | |  | `cast(oper.OperationControlProfile as pph_steus preserving type)` |
+| `ScheduledBasicDate` |  | |  |  |
+| `FixedBasicDate` |  | |  |  |
+| `ActualEndDate` |  | |  |  |
+| `ScheduledForecastedDate` |  | |  |  |
+| `TrggrPtReleaseStopIsActive` |  | |  | `MlstnReleaseStopIsActive` |
+| `TrggrPtIsUsedForTrggrPtFunc` |  | |  | `cast(mlst.MlstnIsUsedforMlstnFunc as vdm_pp_wflow preserving type)` |
+| `TrggrPtIsMarkedForCreateOrder` |  | |  | `cast(mlst.MlstnIsMarkedForCreateNtwk as vdm_pp_incnw preserving type)` |
+| `TrggrPtIsMarkedForInsertRefOp` |  | |  | `cast(mlst.MlstnIsMarkedForIncludeSubNtwk as vdm_pp_incpn preserving type)` |
+| `TrggrPtIsMarkedForRelPrevOp` |  | |  | `cast(mlst.MlstnIsMarkedForCreateSubNtwk as vdm_pp_incsn preserving type)` |
+| `TrggrPtIsMarkedForRelFllwngOp` |  | |  | `cast(mlst.MlstnIsMarkedForRelFllwngActy as vdm_pp_relsu preserving type)` |
+| `TrggrPtIsMarkedForRelUpToStop` |  | |  | `MlstnIsMarkedForRelUptoStopInd` |
+| `TrggrPtIsMrkdForStartWrkflwTsk` |  | |  | `MlstnIsMarkedForStrtWrkflwTsk` |
+| `_OrderInternalID` | | ✓ | | |
+| `_ProductionOrderType` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_TriggerPointUsage` | | ✓ | | |
+| `_TriggerPointText` | | ✓ | | |
+| `_ProductionOrderHeader` | | ✓ | | |
+| `_ProductionOrderSequence` | | ✓ | | |
+| `_ProductionPlantText` | | ✓ | | |
+| `_ProductionOrderText` | | ✓ | | |
+| `_WorkCenterText` | | ✓ | | |
+| `_ProductionOrderOperation` | | ✓ | | |
 
 ## Associations
 

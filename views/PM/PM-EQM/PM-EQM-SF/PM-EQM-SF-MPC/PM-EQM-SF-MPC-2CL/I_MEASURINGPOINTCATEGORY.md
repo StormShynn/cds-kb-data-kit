@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MeasuringPointCategory` | `mptyp` |
-| `MeasurementPositionNumber` | `suniq` |
-| `MeasuringPointCatalogType` | `codct` |
-| `OnlineMessageType` | `mrmes` |
-| `MsmtDocumentTimeDiffThreshold` | `toler` |
-| `MsrgPtCategoryIsValid` | `valid` |
-| `MsrgPtHasLinearAttributes` | `lfe_ind` |
-| `MsrgPtCategoryIsBusEvtEnabled` | `event_ind` |
-| `_MeasuringPointCategoryText` | *Association* |
-| `_MeasuringPointCatalog` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MeasuringPointCategory` | ✓ | |  | `mptyp` |
+| `MeasurementPositionNumber` |  | |  | `suniq` |
+| `MeasuringPointCatalogType` |  | |  | `codct` |
+| `OnlineMessageType` |  | |  | `mrmes` |
+| `MsmtDocumentTimeDiffThreshold` |  | |  | `toler` |
+| `MsrgPtCategoryIsValid` |  | |  | `valid` |
+| `MsrgPtHasLinearAttributes` |  | |  | `lfe_ind` |
+| `MsrgPtCategoryIsBusEvtEnabled` |  | |  | `event_ind` |
+| `_MeasuringPointCategoryText` | | ✓ | | |
+| `_MeasuringPointCatalog` | | ✓ | | |
 
 ## Associations
 

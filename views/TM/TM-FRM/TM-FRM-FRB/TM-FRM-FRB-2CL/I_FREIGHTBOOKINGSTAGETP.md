@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderStageUUID` | `TransportationOrderStageUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationOrderStage` | `TransportationOrderStage` |
-| `TranspOrdStageType` | `TranspOrdStageType` |
-| `TranspOrdStageCategory` | `TranspOrdStageCategory` |
-| `TransportationMode` | `TransportationMode` |
-| `TransportationModeCategory` | `TransportationModeCategory` |
-| `TransportationShippingType` | `TransportationShippingType` |
-| `TranspOrdStageVoyage` | `TranspOrdStageVoyage` |
-| `TranspOrdStageVessel` | `TranspOrdStageVessel` |
-| `TranspOrdStgeInvcgCarrLvl` | `TranspOrdStgeInvcgCarrLvl` |
-| `CarrierUUID` | `CarrierUUID` |
-| `Carrier` | `Carrier` |
-| `TranspOrdStageSCACCode` | `TranspOrdStageSCACCode` |
-| `TranspOrdStgeInvcgCarrUUID` | `TranspOrdStgeInvcgCarrUUID` |
-| `TranspOrdStageInvoicingCarrier` | `TranspOrdStageInvoicingCarrier` |
-| `TranspOrdStgeInvcgSCACCode` | `TranspOrdStgeInvcgSCACCode` |
-| `TranspOrdStageDistance` | `TranspOrdStageDistance` |
-| `TranspOrdStageDistanceUnit` | `TranspOrdStageDistanceUnit` |
-| `TranspOrdStageNetDuration` | `TranspOrdStageNetDuration` |
-| `TranspOrdStageSrceStopUUID` | `TranspOrdStageSrceStopUUID` |
-| `TranspOrdStageDestStopUUID` | `TranspOrdStageDestStopUUID` |
-| `I_FreightBookingStopTP` | `FreightBookingStage._TranspOrderStop as _FreightBookingStop : redirected to parent I_FreightBookingStopTP` |
-| `I_FrtBkgStgeBPAddrDfltRprstnTP` | `FreightBookingStage._TrOrdStgeBPAddrDfltRprstn as _FrtBkgStageBPAddrDfltRprstn : redirected to composition child I_FrtBkgStgeBPAddrDfltRprstnTP` |
-| `I_FreightBookingTP` | `FreightBookingStage._TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderStageUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TransportationOrderStage` |  | |  |  |
+| `TranspOrdStageType` |  | |  |  |
+| `TranspOrdStageCategory` |  | |  |  |
+| `TransportationMode` |  | |  |  |
+| `TransportationModeCategory` |  | |  |  |
+| `TransportationShippingType` |  | |  |  |
+| `TranspOrdStageVoyage` |  | |  |  |
+| `TranspOrdStageVessel` |  | |  |  |
+| `TranspOrdStgeInvcgCarrLvl` |  | |  |  |
+| `CarrierUUID` |  | |  |  |
+| `Carrier` |  | |  |  |
+| `TranspOrdStageSCACCode` |  | |  |  |
+| `TranspOrdStgeInvcgCarrUUID` |  | |  |  |
+| `TranspOrdStageInvoicingCarrier` |  | |  |  |
+| `TranspOrdStgeInvcgSCACCode` |  | |  |  |
+| `TranspOrdStageDistance` |  | |  |  |
+| `TranspOrdStageDistanceUnit` |  | |  |  |
+| `TranspOrdStageNetDuration` |  | |  |  |
+| `TranspOrdStageSrceStopUUID` |  | |  |  |
+| `TranspOrdStageDestStopUUID` |  | |  |  |
+| `I_FreightBookingStopTP` |  | |  | `FreightBookingStage._TranspOrderStop as _FreightBookingStop : redirected to parent I_FreightBookingStopTP` |
+| `I_FrtBkgStgeBPAddrDfltRprstnTP` |  | |  | `FreightBookingStage._TrOrdStgeBPAddrDfltRprstn as _FrtBkgStageBPAddrDfltRprstn : redirected to composition child I_FrtBkgStgeBPAddrDfltRprstnTP` |
+| `I_FreightBookingTP` |  | |  | `FreightBookingStage._TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
 
 ## Source Code
 

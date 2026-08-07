@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanControlCycleCategory` | `KanbanControlCycleCategory` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanControlCycleCategory` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `ControllingArea` |
-| key `ProfitCenter` | `ProfitCenter` |
-| key `CompanyCode` | `coalesce( _PrftCtrSpcfcCoCodeAssgmt.CompanyCode, _CompanyCode.CompanyCode )` |
-| `JointVentureObjectType` | `_PrftCtrSpcfcCoCodeAssgmt.JointVentureObjectType` |
-| `JointVentureClass` | `_PrftCtrSpcfcCoCodeAssgmt.JointVentureClass` |
-| `JointVentureSubClass` | `_PrftCtrSpcfcCoCodeAssgmt.JointVentureSubClass` |
-| `JointVenture` | `_PrftCtrSpcfcCoCodeAssgmt.JointVenture` |
-| `JointVentureRecoveryCode` | `_PrftCtrSpcfcCoCodeAssgmt.JointVentureRecoveryCode` |
-| `JointVentureEquityType` | `_PrftCtrSpcfcCoCodeAssgmt.JointVentureEquityType` |
-| `_CompanyCode` | *Association* |
-| `_ControllingArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |
+| `ProfitCenter` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  | `coalesce( _PrftCtrSpcfcCoCodeAssgmt.CompanyCode, _CompanyCode.CompanyCode )` |
+| `JointVentureObjectType` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureObjectType` |
+| `JointVentureClass` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureClass` |
+| `JointVentureSubClass` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureSubClass` |
+| `JointVenture` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVenture` |
+| `JointVentureRecoveryCode` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureRecoveryCode` |
+| `JointVentureEquityType` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureEquityType` |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
 
 ## Associations
 

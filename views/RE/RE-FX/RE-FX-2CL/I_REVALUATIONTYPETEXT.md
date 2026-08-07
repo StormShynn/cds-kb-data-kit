@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `REValuationType` | `cast( dd07t.domvalue_l as rececetype )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `REValuationTypeName` | `dd07t.ddtext` |
-| `_Language` | *Association* |
-| `_REValuationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `REValuationType` | ✓ | |  | `cast( dd07t.domvalue_l as rececetype )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `REValuationTypeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_REValuationType` | | ✓ | | |
 
 ## Associations
 

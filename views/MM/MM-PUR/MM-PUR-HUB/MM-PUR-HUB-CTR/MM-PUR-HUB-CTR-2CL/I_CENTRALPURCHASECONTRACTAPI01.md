@@ -30,56 +30,56 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| `PurchaseContractType` | `PurchaseContractType` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `Supplier` | `Supplier` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `CreationDate` | `CreationDate` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `PurchaseContractTargetAmount` | `PurchaseContractTargetAmount` |
-| `ExchangeRate` | `cast (ExchangeRate as abap.char(12))` |
-| `PurContractExchangeRateValue` | `cast (ExchangeRate as abap.char(12))` |
-| `ExchangeRateIsFixed` | `ExchangeRateIsFixed` |
-| `SupplyingSupplier` | `SupplyingSupplier` |
-| `QuotationSubmissionDate` | `QuotationSubmissionDate` |
-| `SupplierQuotation` | `SupplierQuotation` |
-| `CorrespncExternalReference` | `CorrespncExternalReference` |
-| `CorrespncInternalReference` | `CorrespncInternalReference` |
-| `SupplierRespSalesPersonName` | `SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `SupplierPhoneNumber` |
-| `ReleaseCode` | `ReleaseCode` |
-| `CreatedByUser` | `CreatedByUser` |
-| `PurchasingDocumentDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `PurchasingProcessingStatus` | `PurchasingProcessingStatus` |
-| `ActivePurchasingDocument` | `ActivePurchasingDocument` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `PurgContractIsInPreparation` | `cast ('' as boolean)` |
-| `PurchasingDocumentName` | `PurchasingDocumentName` |
-| `PurchasingDocumentSubtype` | `PurchasingDocumentSubtype` |
-| `CntrlPurContrDistributionSts` | `_CntrlPurContrAggrgnDistrSts.CntrlPurContrDistributionSts` |
-| `CntrlPurContrFlxblDistrIsAllwd` | `CntrlPurContrFlxblDistrIsAllwd` |
-| `PurgDocIsChgVers` | `PurgDocIsChgVers` |
-| `_CentralPurchaseContractItem` | *Association* |
-| `_CntrlPurContrDistrMessages` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `PurchaseContractType` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |
+| `ExchangeRate` |  | |  | `cast (ExchangeRate as abap.char(12))` |
+| `PurContractExchangeRateValue` |  | |  | `cast (ExchangeRate as abap.char(12))` |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `SupplyingSupplier` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `SupplierQuotation` |  | |  |  |
+| `CorrespncExternalReference` |  | |  |  |
+| `CorrespncInternalReference` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `ReleaseCode` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |
+| `ActivePurchasingDocument` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `PurgContractIsInPreparation` |  | |  | `cast ('' as boolean)` |
+| `PurchasingDocumentName` |  | |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |
+| `CntrlPurContrDistributionSts` |  | | `_CntrlPurContrAggrgnDistrSts` | `CntrlPurContrDistributionSts` |
+| `CntrlPurContrFlxblDistrIsAllwd` |  | |  |  |
+| `PurgDocIsChgVers` |  | |  |  |
+| `_CentralPurchaseContractItem` | | ✓ | | |
+| `_CntrlPurContrDistrMessages` | | ✓ | | |
 
 ## Associations
 

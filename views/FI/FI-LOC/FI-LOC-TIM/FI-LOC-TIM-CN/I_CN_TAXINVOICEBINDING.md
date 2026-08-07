@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CN_TaxInvcBindgUUID` | `cast( _item.CN_TaxInvcBindgUUID as ficntaxinvc_bnd_uuid preserving type )` |
-| key `CN_TaxInvcBindgItmUUID` | `_item.CN_TaxInvcBindgItmUUID` |
-| `CN_TaxInvcUUID` | `cast( _item.CN_TaxInvcUUID as ficntaxinvc_uuid preserving type)` |
-| `CN_TaxEntityID` | `_item.CN_TaxEntityID` |
-| `CN_TaxInvcBindgSrceBusObjType` | `cast( _head.CN_TaxInvcBindgSrceBusObjType as ficntaxinvc_bnd_src_bo_type preserving type)` |
-| `CN_TaxInvcBindgSrceBusObjKey` | `_head.CN_TaxInvcBindgSrceBusObjKey` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CN_TaxInvcBindgUUID` | ✓ | |  | `cast( _item.CN_TaxInvcBindgUUID as ficntaxinvc_bnd_uuid preserving type )` |
+| `CN_TaxInvcBindgItmUUID` | ✓ | | `_item` | `CN_TaxInvcBindgItmUUID` |
+| `CN_TaxInvcUUID` |  | |  | `cast( _item.CN_TaxInvcUUID as ficntaxinvc_uuid preserving type)` |
+| `CN_TaxEntityID` |  | | `_item` | `CN_TaxEntityID` |
+| `CN_TaxInvcBindgSrceBusObjType` |  | |  | `cast( _head.CN_TaxInvcBindgSrceBusObjType as ficntaxinvc_bnd_src_bo_type preserving type)` |
+| `CN_TaxInvcBindgSrceBusObjKey` |  | | `_head` | `CN_TaxInvcBindgSrceBusObjKey` |
 
 ## Source Code
 

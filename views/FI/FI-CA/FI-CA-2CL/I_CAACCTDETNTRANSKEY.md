@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CATransactionKeyAccountDetn` | `cast( left( dd07l.domvalue_l,3 ) as ktosl_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CATransactionKeyAccountDetn` | ✓ | |  | `cast( left( dd07l.domvalue_l,3 ) as ktosl_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

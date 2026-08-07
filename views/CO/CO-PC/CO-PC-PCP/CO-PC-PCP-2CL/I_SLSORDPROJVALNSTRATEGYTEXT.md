@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SlsOrdProjValnStrategy` | `cast( domvalue_l as fpc_val_strat_sls_order )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `SlsOrdProjValnStrgyName` | `cast( ddtext as fpc_val_strat_sls_ord_name preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SlsOrdProjValnStrategy` | ✓ | |  | `cast( domvalue_l as fpc_val_strat_sls_order )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `SlsOrdProjValnStrgyName` |  | |  | `cast( ddtext as fpc_val_strat_sls_ord_name preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

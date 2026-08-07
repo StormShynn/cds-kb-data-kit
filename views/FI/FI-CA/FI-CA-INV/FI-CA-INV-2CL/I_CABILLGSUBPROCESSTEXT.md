@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgSubprocess` | `_tfk8104t.subprocess` |
-| key `Language` | `_tfk8104t.langu` |
-| `CABillgSubprocessText` | `cast( _tfk8104t.text as subprocess_txt_gfn_kk preserving type )` |
-| `_CABillgSubprocess` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgSubprocess` | ✓ | | `_tfk8104t` | `subprocess` |
+| `Language` | ✓ | | `_tfk8104t` | `langu` |
+| `CABillgSubprocessText` |  | |  | `cast( _tfk8104t.text as subprocess_txt_gfn_kk preserving type )` |
+| `_CABillgSubprocess` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

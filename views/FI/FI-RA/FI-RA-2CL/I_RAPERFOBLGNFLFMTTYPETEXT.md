@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(dd07t.ddlanguage as spras preserving type)` |
-| key `PerfOblgnFulfillmentType` | `cast(dd07t.domvalue_l as farr_fulfill_type)` |
-| `PerfOblgnFulfillmentTypeName` | `dd07t.ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_RAPerfOblgnFlfmtType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
+| `PerfOblgnFulfillmentType` | ✓ | |  | `cast(dd07t.domvalue_l as farr_fulfill_type)` |
+| `PerfOblgnFulfillmentTypeName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_RAPerfOblgnFlfmtType` | | ✓ | | |
 
 ## Associations
 

@@ -32,28 +32,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `cast(SalesDocument as vdm_sales_order preserving type)` |
-| key `SalesOrderItem` | `cast(SalesDocumentItem as sales_order_item preserving type)` |
-| key `BillingPlan` | `SalesDocItemBillingPlan.BillingPlan` |
-| `BillingPlanCategory` | `SalesDocItemBillingPlan.BillingPlanCategory` |
-| `BillingPlanUsageCategory` | `SalesDocItemBillingPlan.BillingPlanUsageCategory` |
-| `BillingPlanType` | `SalesDocItemBillingPlan.BillingPlanType` |
-| `BillingPlanStartDate` | `SalesDocItemBillingPlan.BillingPlanStartDate` |
-| `BillingPlanStartDateRule` | `SalesDocItemBillingPlan.BillingPlanStartDateRule` |
-| `BillingPlanEndDate` | `SalesDocItemBillingPlan.BillingPlanEndDate` |
-| `BillingPlanEndDateRule` | `SalesDocItemBillingPlan.BillingPlanEndDateRule` |
-| `ReferenceBillingPlan` | `SalesDocItemBillingPlan.ReferenceBillingPlan` |
-| `BillingPlanIsInHeader` | `SalesDocItemBillingPlan.BillingPlanIsInHeader` |
-| `BillingPlanSearchTerm` | `SalesDocItemBillingPlan.BillingPlanSearchTerm` |
-| `SalesOrderType` | `_SalesOrder.SalesOrderType` |
-| `SalesOrganization` | `_SalesOrder.SalesOrganization` |
-| `DistributionChannel` | `_SalesOrder.DistributionChannel` |
-| `OrganizationDivision` | `_SalesOrder.OrganizationDivision` |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_SlsOrderItemBillingPlanItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |
+| `SalesOrderItem` | ✓ | |  | `cast(SalesDocumentItem as sales_order_item preserving type)` |
+| `BillingPlan` | ✓ | |  |  |
+| `BillingPlanCategory` |  | |  |  |
+| `BillingPlanUsageCategory` |  | |  |  |
+| `BillingPlanType` |  | |  |  |
+| `BillingPlanStartDate` |  | |  |  |
+| `BillingPlanStartDateRule` |  | |  |  |
+| `BillingPlanEndDate` |  | |  |  |
+| `BillingPlanEndDateRule` |  | |  |  |
+| `ReferenceBillingPlan` |  | |  |  |
+| `BillingPlanIsInHeader` |  | |  |  |
+| `BillingPlanSearchTerm` |  | |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_SlsOrderItemBillingPlanItem` | | ✓ | | |
 
 ## Associations
 

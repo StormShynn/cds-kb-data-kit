@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `SustainabilityModeOfTransport` | `cast( _Source.SustainabilityModeOfTransport as fincs_sustmodeoftransport preserving type )` |
-| `SustModeOfTransportName` | `cast( _Source.SustModeOfTransportName as fincs_sustmodeoftransportname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_SustainabilityModeOfTransport` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `SustainabilityModeOfTransport` | ✓ | |  | `cast( _Source.SustainabilityModeOfTransport as fincs_sustmodeoftransport preserving type )` |
+| `SustModeOfTransportName` |  | |  | `cast( _Source.SustModeOfTransportName as fincs_sustmodeoftransportname preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_SustainabilityModeOfTransport` | | ✓ | | |
 
 ## Associations
 

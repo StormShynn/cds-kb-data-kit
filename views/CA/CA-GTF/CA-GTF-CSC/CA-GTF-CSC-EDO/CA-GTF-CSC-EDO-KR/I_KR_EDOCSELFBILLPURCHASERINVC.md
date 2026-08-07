@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `edoc_guid` |
-| `KR_EDocSelfBillPurrApprovalNo` | `apprvl_no` |
-| `KR_EDocSelfBillPurrHeadQtrs` | `busplc_hq` |
-| `KR_EDocSelfBillPurrReceipt` | `rcpt_billg` |
-| `KR_EDocSelfBillPurrSupplier` | `supplier` |
-| `KR_EDocSelfBillPurrBizPlace` | `bupla` |
-| `KR_EDocSelfBillPurrTaxCode` | `tax_code` |
-| `KR_EDocSelfBillPurrSubmsnID` | `ref_submit_id` |
-| `KR_EDocSelfBillPurrTaxInvcType` | `tax_invoice_type` |
-| `KR_EDocSelfBillPurrSuplrName` | `vend_name` |
-| `KR_EDocSelfBillPurrTaxBaseVal` | `tax_base_amt` |
-| `KR_EDocSelfBillPurrTaxValue` | `tax_amount` |
-| `KR_EDocSelfBillPurrAmountValue` | `amount` |
-| `KR_EDocSelfBillPurrCurrency` | `waers` |
-| `KR_EDocSelfBillPurrTrnstnDate` | `transition_date` |
-| `KR_EDocSelfBillPurrStsRsnText` | `status_reason` |
-| `KR_EDocSelfBillPurrAmendReason` | `amendmt_reason` |
-| `KR_EDocSelfBillPurrOriglApprvl` | `origl_apprvl_no` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |
+| `KR_EDocSelfBillPurrApprovalNo` |  | |  | `apprvl_no` |
+| `KR_EDocSelfBillPurrHeadQtrs` |  | |  | `busplc_hq` |
+| `KR_EDocSelfBillPurrReceipt` |  | |  | `rcpt_billg` |
+| `KR_EDocSelfBillPurrSupplier` |  | |  | `supplier` |
+| `KR_EDocSelfBillPurrBizPlace` |  | |  | `bupla` |
+| `KR_EDocSelfBillPurrTaxCode` |  | |  | `tax_code` |
+| `KR_EDocSelfBillPurrSubmsnID` |  | |  | `ref_submit_id` |
+| `KR_EDocSelfBillPurrTaxInvcType` |  | |  | `tax_invoice_type` |
+| `KR_EDocSelfBillPurrSuplrName` |  | |  | `vend_name` |
+| `KR_EDocSelfBillPurrTaxBaseVal` |  | |  | `tax_base_amt` |
+| `KR_EDocSelfBillPurrTaxValue` |  | |  | `tax_amount` |
+| `KR_EDocSelfBillPurrAmountValue` |  | |  | `amount` |
+| `KR_EDocSelfBillPurrCurrency` |  | |  | `waers` |
+| `KR_EDocSelfBillPurrTrnstnDate` |  | |  | `transition_date` |
+| `KR_EDocSelfBillPurrStsRsnText` |  | |  | `status_reason` |
+| `KR_EDocSelfBillPurrAmendReason` |  | |  | `amendmt_reason` |
+| `KR_EDocSelfBillPurrOriglApprvl` |  | |  | `origl_apprvl_no` |
 
 ## Source Code
 

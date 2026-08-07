@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturingOrder` | `stat.ManufacturingOrder` |
-| key `StatusCode` | `stat.StatusCode` |
-| key `Language` | `cast(text.Language as spras preserving type)` |
-| `StatusProfile` | `stat.StatusProfile` |
-| `StatusShortName` | `cast(text.StatusShortName as vdm_pp_jtxt04 preserving type)` |
-| `StatusName` | `cast(text.StatusName as vdm_pp_jtxt30 preserving type)` |
-| `_ManufacturingOrderStatus` | *Association* |
-| `_ManufacturingOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  |  |
+| `StatusCode` | ✓ | |  |  |
+| `Language` | ✓ | |  | `cast(text.Language as spras preserving type)` |
+| `StatusProfile` |  | |  |  |
+| `StatusShortName` |  | |  | `cast(text.StatusShortName as vdm_pp_jtxt04 preserving type)` |
+| `StatusName` |  | |  | `cast(text.StatusName as vdm_pp_jtxt30 preserving type)` |
+| `_ManufacturingOrderStatus` | | ✓ | | |
+| `_ManufacturingOrder` | | ✓ | | |
 
 ## Associations
 

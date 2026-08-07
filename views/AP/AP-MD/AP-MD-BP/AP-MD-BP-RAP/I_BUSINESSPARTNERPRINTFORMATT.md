@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerPrintFormat` | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as bu_print_mode )` |
-| key `Language` | `ddlanguage` |
-| `BusinessPartnerPrintFormatText` | `ddtext` |
-| `DomainValue` | `domvalue_l` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerPrintFormat` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as bu_print_mode )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BusinessPartnerPrintFormatText` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
 
 ## Source Code
 

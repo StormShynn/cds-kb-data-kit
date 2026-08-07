@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDocType` | `LglCntntMDocType` |
-| key `Language` | `Language` |
-| `LglCntntMDocTypeText` | `LglCntntMDocTypeText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LglCntntMDocTypeText` |  | |  |  |
 
 ## Source Code
 

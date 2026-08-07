@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturingOrder` | `item.ManufacturingOrder` |
-| key `ManufacturingOrderItem` | `item.ManufacturingOrderItem` |
-| key `SerialNumber` | `cast(objk.SerialNumber as gernr preserving type)` |
-| `MaintenanceItemObjectList` | `objk.MaintenanceItemObjectList` |
-| `MaintenanceItemObject` | `objk.MaintenanceItemObject` |
-| `Equipment` | `objk.Equipment` |
-| `Equipment_2` | `cast(objk.Equipment as equnr preserving type)` |
-| `Product` | `item.Product` |
-| `ProductionPlant` | `item.ProductionPlant` |
-| `PlanningPlant` | `item.PlanningPlant` |
-| `MRPController` | `item.MRPController` |
-| `ProductionSupervisor` | `item.ProductionSupervisor` |
-| `ManufacturingOrderCategory` | `item.ManufacturingOrderCategory` |
-| `ManufacturingOrderType` | `item.ManufacturingOrderType` |
-| `SerialNumberProfile` | `item.SerialNumberAssgmtProfile` |
-| `DocumentDate` | `sern.SerialNumberAssignmentDate` |
-| `_MfgOrderItem` | *Association* |
-| `_Equipment` | *Association* |
-| `_Equipment_2` | *Association* |
-| `_EquipmentText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  |  |
+| `ManufacturingOrderItem` | ✓ | |  |  |
+| `SerialNumber` | ✓ | |  | `cast(objk.SerialNumber as gernr preserving type)` |
+| `MaintenanceItemObjectList` |  | |  |  |
+| `MaintenanceItemObject` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `Equipment_2` |  | |  | `cast(objk.Equipment as equnr preserving type)` |
+| `Product` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `PlanningPlant` |  | |  |  |
+| `MRPController` |  | |  |  |
+| `ProductionSupervisor` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ManufacturingOrderType` |  | |  |  |
+| `SerialNumberProfile` |  | |  | `SerialNumberAssgmtProfile` |
+| `DocumentDate` |  | |  | `SerialNumberAssignmentDate` |
+| `_MfgOrderItem` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
+| `_Equipment_2` | | ✓ | | |
+| `_EquipmentText` | | ✓ | | |
 
 ## Associations
 

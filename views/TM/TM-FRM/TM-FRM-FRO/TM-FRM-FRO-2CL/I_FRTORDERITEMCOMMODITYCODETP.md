@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdItemCommodityCodeUUID` | `TranspOrdItemCommodityCodeUUID` |
-| `TransportationOrderItemUUID` | `TransportationOrderItemUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspOrdItemCommodityCode` | `TranspOrdItemCommodityCode` |
-| `TrOrdItmCmmdtyCodeNmbrngSchm` | `TrOrdItmCmmdtyCodeNmbrngSchm` |
-| `I_FreightOrderTP` | `FreightOrderItemCommodityCode._TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `I_FreightOrderItemTP` | `FreightOrderItemCommodityCode._TransportationOrderItem as _FreightOrderItem : redirected to parent I_FreightOrderItemTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdItemCommodityCodeUUID` | ✓ | |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspOrdItemCommodityCode` |  | |  |  |
+| `TrOrdItmCmmdtyCodeNmbrngSchm` |  | |  |  |
+| `I_FreightOrderTP` |  | |  | `FreightOrderItemCommodityCode._TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| `I_FreightOrderItemTP` |  | |  | `FreightOrderItemCommodityCode._TransportationOrderItem as _FreightOrderItem : redirected to parent I_FreightOrderItemTP` |
 
 ## Source Code
 

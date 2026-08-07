@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentIsReleased` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `SrvcDocReleasedStatusText` | `ddtext` |
-| `_SrvcDocReleaseStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentIsReleased` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SrvcDocReleasedStatusText` |  | |  | `ddtext` |
+| `_SrvcDocReleaseStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

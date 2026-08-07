@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UniversalHierarchy` | `Node.hryid` |
-| key `HierarchyNode` | `Node.hrynode` |
-| key `CustUnivHierarchyValidEndDate` | `cast(Node.hryvalto as custhierarchyvalidityenddate preserving type )` |
-| `CustUnivHierarchyValidStartDte` | `cast(Node.hryvalfrom as custhierarchyvaliditystartdate preserving type )` |
-| `CustUnivHierarchyType` | `Node.hrytyp` |
-| `CustUnivHierarchyShortID` | `_hierarchydirectory.hrysid` |
-| `CustUnivHierarchyParentNode` | `Node.parnode` |
-| `CustUnivHierarchyNodeType` | `Node.nodetype` |
-| `CustUnivHierarchyNodeValue` | `Node.nodevalue` |
-| `Customer` | `cast( _NodeAttribute.hryattrvalue as kunnr)` |
-| `CustUnivHierarchyNodeSequence` | `Node.hryseqnbr` |
-| `CustUnivHierarchyNodeLevel` | `Node.hrylevel` |
-| `CustUnivHierarchyLeafValue` | `Node.leafvalue` |
-| `_CustUnivHierarchy` | *Association* |
-| `_Text` | *Association* |
-| `_Customer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UniversalHierarchy` | ✓ | |  | `hryid` |
+| `HierarchyNode` | ✓ | |  | `hrynode` |
+| `CustUnivHierarchyValidEndDate` | ✓ | |  | `cast(Node.hryvalto as custhierarchyvalidityenddate preserving type )` |
+| `CustUnivHierarchyValidStartDte` |  | |  | `cast(Node.hryvalfrom as custhierarchyvaliditystartdate preserving type )` |
+| `CustUnivHierarchyType` |  | |  | `hrytyp` |
+| `CustUnivHierarchyShortID` |  | | `_hierarchydirectory` | `hrysid` |
+| `CustUnivHierarchyParentNode` |  | |  | `parnode` |
+| `CustUnivHierarchyNodeType` |  | |  | `nodetype` |
+| `CustUnivHierarchyNodeValue` |  | |  | `nodevalue` |
+| `Customer` |  | |  | `cast( _NodeAttribute.hryattrvalue as kunnr)` |
+| `CustUnivHierarchyNodeSequence` |  | |  | `hryseqnbr` |
+| `CustUnivHierarchyNodeLevel` |  | |  | `hrylevel` |
+| `CustUnivHierarchyLeafValue` |  | |  | `leafvalue` |
+| `_CustUnivHierarchy` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_Customer` | | ✓ | | |
 
 ## Associations
 

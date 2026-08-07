@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYearVariant` | `cast( t009c.periv as fis_periv preserving type )` |
-| key `FiscalYear` | `cast( t009c.bdatj as fins_gjahr_no_conv preserving type )` |
-| `_FiscalYearVariant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  | `cast( t009c.periv as fis_periv preserving type )` |
+| `FiscalYear` | ✓ | |  | `cast( t009c.bdatj as fins_gjahr_no_conv preserving type )` |
+| `_FiscalYearVariant` | | ✓ | | |
 
 ## Associations
 

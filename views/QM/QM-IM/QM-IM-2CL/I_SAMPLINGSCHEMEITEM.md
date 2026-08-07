@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingScheme` | `stprplan` |
-| key `SmplgSchmItemSequentialNumber` | `zaehlpos` |
-| `SmplgSchmAccptblQltyLevelPct` | `aqlwert` |
-| `_SamplingScheme` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingScheme` | ✓ | |  | `stprplan` |
+| `SmplgSchmItemSequentialNumber` | ✓ | |  | `zaehlpos` |
+| `SmplgSchmAccptblQltyLevelPct` |  | |  | `aqlwert` |
+| `_SamplingScheme` | | ✓ | | |
 
 ## Associations
 

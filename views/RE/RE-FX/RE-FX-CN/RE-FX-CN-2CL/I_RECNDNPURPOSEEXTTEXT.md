@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `REExtConditionPurpose` | `condpurposeext` |
-| `RECndnPurposeExtName` | `xmcondpurposeext` |
-| `_REConditionPurposeExt` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `REExtConditionPurpose` | ✓ | |  | `condpurposeext` |
+| `RECndnPurposeExtName` |  | |  | `xmcondpurposeext` |
+| `_REConditionPurposeExt` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

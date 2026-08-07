@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPaymentSpecificationCategory` | `cast( left( domvalue_l, 1 ) as pdtyp_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPaymentSpecificationCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pdtyp_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

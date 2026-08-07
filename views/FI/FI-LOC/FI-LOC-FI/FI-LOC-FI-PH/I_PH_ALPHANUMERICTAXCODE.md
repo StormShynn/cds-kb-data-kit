@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `country` |
-| key `AlphanumericTaxCode` | `fiph_atc` |
-| `_Country` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `country` |
+| `AlphanumericTaxCode` | ✓ | |  | `fiph_atc` |
+| `_Country` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

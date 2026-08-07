@@ -30,35 +30,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalLocation` | `FunctionalLocation` |
-| key `PartnerFunction` | `cast(PartnerFunction as parvw_unv preserving type )` |
-| key `FuncnlLocPartnerObjectNmbr` | `FuncnlLocPartnerObjectNmbr` |
-| `FunctionalLocationLabelName` | `FunctionalLocationLabelName` |
-| `Partner` | `Partner` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `MaintObjectInternalID` | `MaintObjectInternalID` |
-| `PartnerFunctionType` | `PartnerFunctionType` |
-| `CntctPersnIsBusPrpsCompleted` | `CntctPersnIsBusPrpsCompleted` |
-| `CntctPersnCustomerAccountGroup` | `CntctPersnCustomerAccountGroup` |
-| `CntctPersnCustomerAuthznGroup` | `CntctPersnCustomerAuthznGroup` |
-| `CntctPersnSupplierAccountGroup` | `CntctPersnSupplierAccountGroup` |
-| `CntctPersnSupplierAuthznGroup` | `CntctPersnSupplierAuthznGroup` |
-| `CustomerIsBusPrpsCmpltd` | `CustomerIsBusPrpsCmpltd` |
-| `CustomerAccountGroup` | `CustomerAccountGroup` |
-| `CustomerAuthznGrp` | `CustomerAuthznGrp` |
-| `EmployeeIsBusPrpsCmpltd` | `EmployeeIsBusPrpsCmpltd` |
-| `EmployeeAuthznGroup` | `EmployeeAuthznGroup` |
-| `SupplierIsBusPrpsCmpltd` | `SupplierIsBusPrpsCmpltd` |
-| `SupplierAccountGroup` | `SupplierAccountGroup` |
-| `SupplierAuthznGrp` | `SupplierAuthznGrp` |
-| `_FunctionalLocation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  | `cast(PartnerFunction as parvw_unv preserving type )` |
+| `FuncnlLocPartnerObjectNmbr` | ✓ | |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |
+| `Partner` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `MaintObjectInternalID` |  | |  |  |
+| `PartnerFunctionType` |  | |  |  |
+| `CntctPersnIsBusPrpsCompleted` |  | |  |  |
+| `CntctPersnCustomerAccountGroup` |  | |  |  |
+| `CntctPersnCustomerAuthznGroup` |  | |  |  |
+| `CntctPersnSupplierAccountGroup` |  | |  |  |
+| `CntctPersnSupplierAuthznGroup` |  | |  |  |
+| `CustomerIsBusPrpsCmpltd` |  | |  |  |
+| `CustomerAccountGroup` |  | |  |  |
+| `CustomerAuthznGrp` |  | |  |  |
+| `EmployeeIsBusPrpsCmpltd` |  | |  |  |
+| `EmployeeAuthznGroup` |  | |  |  |
+| `SupplierIsBusPrpsCmpltd` |  | |  |  |
+| `SupplierAccountGroup` |  | |  |  |
+| `SupplierAuthznGrp` |  | |  |  |
+| `_FunctionalLocation` | | ✓ | | |
 
 ## Source Code
 

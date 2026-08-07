@@ -26,18 +26,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccountHierarchy` | `GLAccountHierarchy` |
-| key `HierarchyNode` | `HierarchyNode` |
-| key `SemanticTag` | `SemanticTag` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| key `ValidityStartDate` | `ValidityStartDate` |
-| key `FunctionalArea` | `FunctionalArea` |
-| `_Hierarchy` | *Association* |
-| `_GLAccountHierarchyNode` | *Association* |
-| `_SemanticTag` | *Association* |
-| `_FunctionalArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountHierarchy` | ✓ | |  |  |
+| `HierarchyNode` | ✓ | |  |  |
+| `SemanticTag` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` | ✓ | |  |  |
+| `FunctionalArea` | ✓ | |  |  |
+| `_Hierarchy` | | ✓ | | |
+| `_GLAccountHierarchyNode` | | ✓ | | |
+| `_SemanticTag` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
 
 ## Source Code
 

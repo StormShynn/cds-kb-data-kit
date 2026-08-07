@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillableControl` | `cast( bemot as fis_bemot preserving type )` |
-| key `Language` | `spras` |
-| `BillableControlName` | `cast( bemot_txt as fis_bemot_name preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillableControl` | ✓ | |  | `cast( bemot as fis_bemot preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `BillableControlName` |  | |  | `cast( bemot_txt as fis_bemot_name preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TR_ElectronicDocTaxID` | `TR_ElectronicDocTaxID` |
-| key `TR_EDocBusinessPartnerAlias` | `TR_EDocBusinessPartnerAlias` |
-| key `TR_EDocMasterID` | `TR_EDocMasterID` |
-| key `TR_EDocBusinessPartnerType` | `TR_EDocBusinessPartnerType` |
-| `TR_EDocTaxpayerName` | `TR_EDocTaxpayerName` |
-| `TR_EDocTaxPayerIdnType` | `TR_EDocTaxPayerIdnType` |
-| `TR_ElectronicDocumentScenario` | `TR_ElectronicDocumentScenario` |
-| `TR_EDocFirstAliasRegnDateData` | `TR_EDocFirstAliasRegnDateData` |
-| `TR_EDocFirstAliasRegnTimeData` | `TR_EDocFirstAliasRegnTimeData` |
-| `TR_EDocIsDefaultAlias` | `TR_EDocIsDefaultAlias` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TR_ElectronicDocTaxID` | ✓ | |  |  |
+| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |
+| `TR_EDocMasterID` | ✓ | |  |  |
+| `TR_EDocBusinessPartnerType` | ✓ | |  |  |
+| `TR_EDocTaxpayerName` |  | |  |  |
+| `TR_EDocTaxPayerIdnType` |  | |  |  |
+| `TR_ElectronicDocumentScenario` |  | |  |  |
+| `TR_EDocFirstAliasRegnDateData` |  | |  |  |
+| `TR_EDocFirstAliasRegnTimeData` |  | |  |  |
+| `TR_EDocIsDefaultAlias` |  | |  |  |
 
 ## Source Code
 

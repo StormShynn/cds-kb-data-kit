@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentTypeHierarchy` | `cast(hrrp_dirt_n.hryid as fis_hryid_billingdoctype preserving type )` |
-| key `ValidityEndDate` | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| key `Language` | `spras` |
-| `ValidityStartDate` | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `BillingDocumentHierarchyName` | `hrytxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentTypeHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_billingdoctype preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
+| `BillingDocumentHierarchyName` |  | |  | `hrytxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyNodeText.Language` |
-| key `CnsldtnPlantHierarchy` | `cast(_HierarchyNodeText.UniversalHierarchy as fincs_planthierarchy preserving type )` |
-| key `HierarchyNode` | `_HierarchyNodeText.HierarchyNode` |
-| key `ValidityEndDate` | `_HierarchyNodeText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyNodeText.ValidityStartDate` |
-| `ParentNode` | `_HierarchyNodeText.ParentNode` |
-| `HierarchyVersion` | `_HierarchyNodeText.HierarchyVersion` |
-| `HierarchyNodeText` | `_HierarchyNodeText.HierarchyNodeText` |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
+| `CnsldtnPlantHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.UniversalHierarchy as fincs_planthierarchy preserving type )` |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

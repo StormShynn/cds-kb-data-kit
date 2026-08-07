@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StatusTrend` | `trend` |
-| key `Language` | `langu` |
-| `StatusTrendDescription` | `description` |
-| `_Language` | *Association* |
-| `_Key` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatusTrend` | ✓ | |  | `trend` |
+| `Language` | ✓ | |  | `langu` |
+| `StatusTrendDescription` |  | |  | `description` |
+| `_Language` | | ✓ | | |
+| `_Key` | | ✓ | | |
 
 ## Associations
 

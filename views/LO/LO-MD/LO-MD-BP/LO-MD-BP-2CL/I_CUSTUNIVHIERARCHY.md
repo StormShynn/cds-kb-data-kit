@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UniversalHierarchy` | `dir.hryid` |
-| key `CustUnivHierarchyValidEndDate` | `dir.hryvalto` |
-| `CustUnivHierarchyValidStartDte` | `dir.hryvalfrom` |
-| `CustUnivHierarchyShortID` | `dir.hrysid` |
-| `SalesOrganization` | `dir.salesorganization` |
-| `DistributionChannel` | `dir.distributionchannel` |
-| `Division` | `dir.division` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UniversalHierarchy` | ✓ | |  | `hryid` |
+| `CustUnivHierarchyValidEndDate` | ✓ | |  | `hryvalto` |
+| `CustUnivHierarchyValidStartDte` |  | |  | `hryvalfrom` |
+| `CustUnivHierarchyShortID` |  | |  | `hrysid` |
+| `SalesOrganization` |  | |  | `salesorganization` |
+| `DistributionChannel` |  | |  | `distributionchannel` |
+| `Division` |  | |  | `division` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

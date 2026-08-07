@@ -31,40 +31,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| key `Person` | `Person` |
-| key `OrdinalNumber` | `OrdinalNumber` |
-| `OrdinalNumberForEdit` | `OrdinalNumberForEdit` |
-| `MobilePhoneCountry` | `MobilePhoneCountry` |
-| `IsDefaultPhoneNumber` | `IsDefaultPhoneNumber` |
-| `MobilePhoneNumber` | `MobilePhoneNumber` |
-| `CompleteTelephoneNumber` | `CompleteTelephoneNumber` |
-| `PhoneNumberType` | `PhoneNumberType` |
-| `TelephoneCountryPrefix` | `TelephoneCountryPrefix` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_PhoneNumberCountry` | *Association* |
-| `_PhoneNumberType` | *Association* |
-| `_AuthorizationGroup` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_TelCountryPrefix` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `Person` | ✓ | |  |  |
+| `OrdinalNumber` | ✓ | |  |  |
+| `OrdinalNumberForEdit` |  | |  |  |
+| `MobilePhoneCountry` |  | |  |  |
+| `IsDefaultPhoneNumber` |  | |  |  |
+| `MobilePhoneNumber` |  | |  |  |
+| `CompleteTelephoneNumber` |  | |  |  |
+| `PhoneNumberType` |  | |  |  |
+| `TelephoneCountryPrefix` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_PhoneNumberCountry` | | ✓ | | |
+| `_PhoneNumberType` | | ✓ | | |
+| `_AuthorizationGroup` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_TelCountryPrefix` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
 
 ## Source Code
 

@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `ServiceContractItem` | `ServiceContractItem` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `ServiceContractItemDescription` | `ServiceContractItemDescription` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `RespEmployeeBusinessPartnerId` | `RespEmployeeBusinessPartnerId` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `_ServiceContractItemEnhcd` | *Association* |
-| `_ServiceContract` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceContractItem` | ✓ | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `ServiceContractItemDescription` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `_ServiceContractItemEnhcd` | | ✓ | | |
+| `_ServiceContract` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
 
 ## Associations
 

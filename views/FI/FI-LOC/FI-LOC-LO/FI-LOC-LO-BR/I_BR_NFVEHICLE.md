@@ -28,49 +28,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `docnum` |
-| key `BR_NotaFiscalItem` | `itmnum` |
-| `VehicleModel` | `cmod` |
-| `VehicleModelYear` | `cast(anomod as logbr_veh_model_year preserving type)` |
-| `VehicleYearOfManufacture` | `cast(anofab as logbr_manufacturing_year preserving type)` |
-| `VehicleType` | `cast(tpveic as logbr_vehicletype preserving type )` |
-| `VehicleFuelType` | `cast(tpcomb as logbr_vehiclefueltype preserving type)` |
-| `VehicleEnginePower` | `cast(pot as logbr_engine_power preserving type)` |
-| `VehicleCylinderCapacityValue` | `cilin` |
-| `VehicleEngineNumber` | `nmotor` |
-| `VehicleCarMakerColor` | `cast(ccor as logbr_veh_color preserving type)` |
-| `VehiclePaintingType` | `tppint` |
-| `BR_NFeVehicleDENATRANColor` | `ccordenatran` |
-| `VehicleColorDesc` | `xcor` |
-| `VehicleChassis` | `chassi` |
-| `VehicleSerialNumber` | `nserie` |
-| `VehicleNetWeightUnit` | `cast('TO' as msehi)` |
-| `VehicleNetWeight` | `cast(pesol as logbr_vehiclenetweight)` |
-| `VehicleGrossWeightUnit` | `cast('TO' as msehi)` |
-| `VehicleGrossWeight` | `cast(pesob as logbr_vehiclegrossweight)` |
-| `VehicleMaximumCapacityValue` | `cast(lota as logbr_veh_max_capacity preserving type)` |
-| `VehicleMaxTractionCapacity` | `cast(cmt as logbr_max_traction_cap preserving type)` |
-| `DistanceBetweenAxlesQtyValue` | `cast(dist as logbr_dist_axels preserving type)` |
-| `VehicleUsage` | `espveic` |
-| `BR_NFItemVINCondition` | `vin` |
-| `VehicleCondition` | `condveic` |
-| `VehicleRestriction` | `cast(tprest as logbr_vehiclerestriction preserving type)` |
-| `VehicleOperationType` | `cast(tpop as logbr_vehicleoperationtype preserving type)` |
-| `_VehicleNetWeightUnit` | *Association* |
-| `_VehicleGrossWeightUnit` | *Association* |
-| `_BR_VehicleCondition` | *Association* |
-| `_BR_VehicleFuelType` | *Association* |
-| `_BR_VehicleFuelType_2` | *Association* |
-| `_BR_VehicleOperationType` | *Association* |
-| `_BR_VehicleRestriction` | *Association* |
-| `_BR_VehicleUsage` | *Association* |
-| `_BR_VehicleUsage_2` | *Association* |
-| `_BR_NFeVehDENATRANColor` | *Association* |
-| `_BR_NFItemVINCondition` | *Association* |
-| `_BR_VehicleType` | *Association* |
-| `_BR_VehicleType_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |
+| `VehicleModel` |  | |  | `cmod` |
+| `VehicleModelYear` |  | |  | `cast(anomod as logbr_veh_model_year preserving type)` |
+| `VehicleYearOfManufacture` |  | |  | `cast(anofab as logbr_manufacturing_year preserving type)` |
+| `VehicleType` |  | |  | `cast(tpveic as logbr_vehicletype preserving type )` |
+| `VehicleFuelType` |  | |  | `cast(tpcomb as logbr_vehiclefueltype preserving type)` |
+| `VehicleEnginePower` |  | |  | `cast(pot as logbr_engine_power preserving type)` |
+| `VehicleCylinderCapacityValue` |  | |  | `cilin` |
+| `VehicleEngineNumber` |  | |  | `nmotor` |
+| `VehicleCarMakerColor` |  | |  | `cast(ccor as logbr_veh_color preserving type)` |
+| `VehiclePaintingType` |  | |  | `tppint` |
+| `BR_NFeVehicleDENATRANColor` |  | |  | `ccordenatran` |
+| `VehicleColorDesc` |  | |  | `xcor` |
+| `VehicleChassis` |  | |  | `chassi` |
+| `VehicleSerialNumber` |  | |  | `nserie` |
+| `VehicleNetWeightUnit` |  | |  | `cast('TO' as msehi)` |
+| `VehicleNetWeight` |  | |  | `cast(pesol as logbr_vehiclenetweight)` |
+| `VehicleGrossWeightUnit` |  | |  | `cast('TO' as msehi)` |
+| `VehicleGrossWeight` |  | |  | `cast(pesob as logbr_vehiclegrossweight)` |
+| `VehicleMaximumCapacityValue` |  | |  | `cast(lota as logbr_veh_max_capacity preserving type)` |
+| `VehicleMaxTractionCapacity` |  | |  | `cast(cmt as logbr_max_traction_cap preserving type)` |
+| `DistanceBetweenAxlesQtyValue` |  | |  | `cast(dist as logbr_dist_axels preserving type)` |
+| `VehicleUsage` |  | |  | `espveic` |
+| `BR_NFItemVINCondition` |  | |  | `vin` |
+| `VehicleCondition` |  | |  | `condveic` |
+| `VehicleRestriction` |  | |  | `cast(tprest as logbr_vehiclerestriction preserving type)` |
+| `VehicleOperationType` |  | |  | `cast(tpop as logbr_vehicleoperationtype preserving type)` |
+| `_VehicleNetWeightUnit` | | ✓ | | |
+| `_VehicleGrossWeightUnit` | | ✓ | | |
+| `_BR_VehicleCondition` | | ✓ | | |
+| `_BR_VehicleFuelType` | | ✓ | | |
+| `_BR_VehicleFuelType_2` | | ✓ | | |
+| `_BR_VehicleOperationType` | | ✓ | | |
+| `_BR_VehicleRestriction` | | ✓ | | |
+| `_BR_VehicleUsage` | | ✓ | | |
+| `_BR_VehicleUsage_2` | | ✓ | | |
+| `_BR_NFeVehDENATRANColor` | | ✓ | | |
+| `_BR_NFItemVINCondition` | | ✓ | | |
+| `_BR_VehicleType` | | ✓ | | |
+| `_BR_VehicleType_2` | | ✓ | | |
 
 ## Associations
 

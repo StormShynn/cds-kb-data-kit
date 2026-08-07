@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PostingDate` | `fis_budat` |
-| `ReasonForPhysInvtryDifference` | `grdif` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PostingDate` |  | |  | `fis_budat` |
+| `ReasonForPhysInvtryDifference` |  | |  | `grdif` |
 
 ## Source Code
 

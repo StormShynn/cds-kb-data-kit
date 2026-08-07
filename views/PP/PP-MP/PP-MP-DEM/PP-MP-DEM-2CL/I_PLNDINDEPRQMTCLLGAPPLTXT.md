@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `PlndIndepRqmtCllgAppl` | `cast( dd07t.domvalue_l as pph_pir_calling_appl )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PlndIndepRqmtCllgApplTxt` | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | *Association* |
-| `_PlndIndepRqmtCllgAppl` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PlndIndepRqmtCllgAppl` | ✓ | |  | `cast( dd07t.domvalue_l as pph_pir_calling_appl )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PlndIndepRqmtCllgApplTxt` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PlndIndepRqmtCllgAppl` | | ✓ | | |
 
 ## Associations
 

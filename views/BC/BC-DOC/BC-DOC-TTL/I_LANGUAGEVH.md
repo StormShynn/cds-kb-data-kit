@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| `LanguageISOCode` | `LanguageISOCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `LanguageISOCode` |  | |  |  |
 
 ## Source Code
 

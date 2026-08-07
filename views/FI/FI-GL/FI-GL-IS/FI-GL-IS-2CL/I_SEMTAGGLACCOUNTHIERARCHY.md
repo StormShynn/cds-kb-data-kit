@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccountHierarchy` | `GLAccountHierarchy` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `HierarchyType` | `HierarchyType` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountHierarchy` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `HierarchyType` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

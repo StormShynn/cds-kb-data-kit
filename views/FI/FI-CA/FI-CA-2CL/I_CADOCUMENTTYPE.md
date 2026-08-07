@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentType` | `tfk003.blart` |
-| key `CAApplicationArea` | `tfk003.applk` |
-| `CACrossCompCodePostgIsAllowed` | `tfk003.xgsub` |
-| `CAManualPostingIsForbidden` | `tfk003.xintf` |
-| `CANegativePostingCode` | `tfk003.negbl` |
-| `_ApplArea` | `_CAApplicationArea` |
-| `_CAApplicationArea` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentType` | ✓ | |  | `blart` |
+| `CAApplicationArea` | ✓ | |  | `applk` |
+| `CACrossCompCodePostgIsAllowed` |  | |  | `xgsub` |
+| `CAManualPostingIsForbidden` |  | |  | `xintf` |
+| `CANegativePostingCode` |  | |  | `negbl` |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |
+| `_CAApplicationArea` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

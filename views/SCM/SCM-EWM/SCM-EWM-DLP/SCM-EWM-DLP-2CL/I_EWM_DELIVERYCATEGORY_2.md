@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMDeliveryDocumentCategory` | `category` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMDeliveryDocumentCategory` | ✓ | |  | `category` |
 
 ## Source Code
 

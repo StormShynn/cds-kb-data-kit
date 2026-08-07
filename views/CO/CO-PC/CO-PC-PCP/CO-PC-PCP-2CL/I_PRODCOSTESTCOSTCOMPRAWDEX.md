@@ -29,143 +29,143 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingReferenceObject` | `keph.CostingReferenceObject` |
-| key `CostEstimate` | `keph.CostEstimate` |
-| key `CostingType` | `keph.CostingType` |
-| key `CostingDate` | `keph.CostingDate` |
-| key `CostingVersion` | `keph.CostingVersion` |
-| key `ValuationVariant` | `keph.ValuationVariant` |
-| key `CostIsEnteredManually` | `keph.CostIsEnteredManually` |
-| key `CostingPartnerNumber` | `keph.CostingPartnerNumber` |
-| key `CostComponentSplitType` | `keph.CostComponentSplitType` |
-| key `CostIsInCtrlgAreaCrcy` | `keph.CostIsInCtrlgAreaCrcy` |
-| key `IsCostComponentSplitLowerLevel` | `keph.IsCostComponentSplitLowerLevel` |
-| key `CostEstWQSIsInclAdditiveCosts` | `keph.CostEstWQSIsInclAdditiveCosts` |
-| key `CostCompSpltDrctPrtnCharc` | `keph.CostCompSpltDrctPrtnCharc` |
-| `Currency` | `cast ( case when keph.CostIsInCtrlgAreaCrcy = 'X' then _ProductCostEstimate.ControllingAreaCurrency when keph.CostIsInCtrlgAreaCrcy = ' ' then _ProductCostEstimate.CompanyCodeCurrency end as waers )` |
-| `CostComponentCostField1Amt` | `keph.CostComponentCostField1Amt` |
-| `CostComponentCostField2Amt` | `keph.CostComponentCostField2Amt` |
-| `CostComponentCostField3Amt` | `keph.CostComponentCostField3Amt` |
-| `CostComponentCostField4Amt` | `keph.CostComponentCostField4Amt` |
-| `CostComponentCostField5Amt` | `keph.CostComponentCostField5Amt` |
-| `CostComponentCostField6Amt` | `keph.CostComponentCostField6Amt` |
-| `CostComponentCostField7Amt` | `keph.CostComponentCostField7Amt` |
-| `CostComponentCostField8Amt` | `keph.CostComponentCostField8Amt` |
-| `CostComponentCostField9Amt` | `keph.CostComponentCostField9Amt` |
-| `CostComponentCostField10Amt` | `keph.CostComponentCostField10Amt` |
-| `CostComponentCostField11Amt` | `keph.CostComponentCostField11Amt` |
-| `CostComponentCostField12Amt` | `keph.CostComponentCostField12Amt` |
-| `CostComponentCostField13Amt` | `keph.CostComponentCostField13Amt` |
-| `CostComponentCostField14Amt` | `keph.CostComponentCostField14Amt` |
-| `CostComponentCostField15Amt` | `keph.CostComponentCostField15Amt` |
-| `CostComponentCostField16Amt` | `keph.CostComponentCostField16Amt` |
-| `CostComponentCostField17Amt` | `keph.CostComponentCostField17Amt` |
-| `CostComponentCostField18Amt` | `keph.CostComponentCostField18Amt` |
-| `CostComponentCostField19Amt` | `keph.CostComponentCostField19Amt` |
-| `CostComponentCostField20Amt` | `keph.CostComponentCostField20Amt` |
-| `CostComponentCostField21Amt` | `keph.CostComponentCostField21Amt` |
-| `CostComponentCostField22Amt` | `keph.CostComponentCostField22Amt` |
-| `CostComponentCostField23Amt` | `keph.CostComponentCostField23Amt` |
-| `CostComponentCostField24Amt` | `keph.CostComponentCostField24Amt` |
-| `CostComponentCostField25Amt` | `keph.CostComponentCostField25Amt` |
-| `CostComponentCostField26Amt` | `keph.CostComponentCostField26Amt` |
-| `CostComponentCostField27Amt` | `keph.CostComponentCostField27Amt` |
-| `CostComponentCostField28Amt` | `keph.CostComponentCostField28Amt` |
-| `CostComponentCostField29Amt` | `keph.CostComponentCostField29Amt` |
-| `CostComponentCostField30Amt` | `keph.CostComponentCostField30Amt` |
-| `CostComponentCostField31Amt` | `keph.CostComponentCostField31Amt` |
-| `CostComponentCostField32Amt` | `keph.CostComponentCostField32Amt` |
-| `CostComponentCostField33Amt` | `keph.CostComponentCostField33Amt` |
-| `CostComponentCostField34Amt` | `keph.CostComponentCostField34Amt` |
-| `CostComponentCostField35Amt` | `keph.CostComponentCostField35Amt` |
-| `CostComponentCostField36Amt` | `keph.CostComponentCostField36Amt` |
-| `CostComponentCostField37Amt` | `keph.CostComponentCostField37Amt` |
-| `CostComponentCostField38Amt` | `keph.CostComponentCostField38Amt` |
-| `CostComponentCostField39Amt` | `keph.CostComponentCostField39Amt` |
-| `CostComponentCostField40Amt` | `keph.CostComponentCostField40Amt` |
-| `CostComponentCostField41Amt` | `keph.CostComponentCostField41Amt` |
-| `CostComponentCostField42Amt` | `keph.CostComponentCostField42Amt` |
-| `CostComponentCostField43Amt` | `keph.CostComponentCostField43Amt` |
-| `CostComponentCostField44Amt` | `keph.CostComponentCostField44Amt` |
-| `CostComponentCostField45Amt` | `keph.CostComponentCostField45Amt` |
-| `CostComponentCostField46Amt` | `keph.CostComponentCostField46Amt` |
-| `CostComponentCostField47Amt` | `keph.CostComponentCostField47Amt` |
-| `CostComponentCostField48Amt` | `keph.CostComponentCostField48Amt` |
-| `CostComponentCostField49Amt` | `keph.CostComponentCostField49Amt` |
-| `CostComponentCostField50Amt` | `keph.CostComponentCostField50Amt` |
-| `CostComponentCostField51Amt` | `keph.CostComponentCostField51Amt` |
-| `CostComponentCostField52Amt` | `keph.CostComponentCostField52Amt` |
-| `CostComponentCostField53Amt` | `keph.CostComponentCostField53Amt` |
-| `CostComponentCostField54Amt` | `keph.CostComponentCostField54Amt` |
-| `CostComponentCostField55Amt` | `keph.CostComponentCostField55Amt` |
-| `CostComponentCostField56Amt` | `keph.CostComponentCostField56Amt` |
-| `CostComponentCostField57Amt` | `keph.CostComponentCostField57Amt` |
-| `CostComponentCostField58Amt` | `keph.CostComponentCostField58Amt` |
-| `CostComponentCostField59Amt` | `keph.CostComponentCostField59Amt` |
-| `CostComponentCostField60Amt` | `keph.CostComponentCostField60Amt` |
-| `CostComponentCostField61Amt` | `keph.CostComponentCostField61Amt` |
-| `CostComponentCostField62Amt` | `keph.CostComponentCostField62Amt` |
-| `CostComponentCostField63Amt` | `keph.CostComponentCostField63Amt` |
-| `CostComponentCostField64Amt` | `keph.CostComponentCostField64Amt` |
-| `CostComponentCostField65Amt` | `keph.CostComponentCostField65Amt` |
-| `CostComponentCostField66Amt` | `keph.CostComponentCostField66Amt` |
-| `CostComponentCostField67Amt` | `keph.CostComponentCostField67Amt` |
-| `CostComponentCostField68Amt` | `keph.CostComponentCostField68Amt` |
-| `CostComponentCostField69Amt` | `keph.CostComponentCostField69Amt` |
-| `CostComponentCostField70Amt` | `keph.CostComponentCostField70Amt` |
-| `CostComponentCostField71Amt` | `keph.CostComponentCostField71Amt` |
-| `CostComponentCostField72Amt` | `keph.CostComponentCostField72Amt` |
-| `CostComponentCostField73Amt` | `keph.CostComponentCostField73Amt` |
-| `CostComponentCostField74Amt` | `keph.CostComponentCostField74Amt` |
-| `CostComponentCostField75Amt` | `keph.CostComponentCostField75Amt` |
-| `CostComponentCostField76Amt` | `keph.CostComponentCostField76Amt` |
-| `CostComponentCostField77Amt` | `keph.CostComponentCostField77Amt` |
-| `CostComponentCostField78Amt` | `keph.CostComponentCostField78Amt` |
-| `CostComponentCostField79Amt` | `keph.CostComponentCostField79Amt` |
-| `CostComponentCostField80Amt` | `keph.CostComponentCostField80Amt` |
-| `CostComponentCostField81Amt` | `keph.CostComponentCostField81Amt` |
-| `CostComponentCostField82Amt` | `keph.CostComponentCostField82Amt` |
-| `CostComponentCostField83Amt` | `keph.CostComponentCostField83Amt` |
-| `CostComponentCostField84Amt` | `keph.CostComponentCostField84Amt` |
-| `CostComponentCostField85Amt` | `keph.CostComponentCostField85Amt` |
-| `CostComponentCostField86Amt` | `keph.CostComponentCostField86Amt` |
-| `CostComponentCostField87Amt` | `keph.CostComponentCostField87Amt` |
-| `CostComponentCostField88Amt` | `keph.CostComponentCostField88Amt` |
-| `CostComponentCostField89Amt` | `keph.CostComponentCostField89Amt` |
-| `CostComponentCostField90Amt` | `keph.CostComponentCostField90Amt` |
-| `CostComponentCostField91Amt` | `keph.CostComponentCostField91Amt` |
-| `CostComponentCostField92Amt` | `keph.CostComponentCostField92Amt` |
-| `CostComponentCostField93Amt` | `keph.CostComponentCostField93Amt` |
-| `CostComponentCostField94Amt` | `keph.CostComponentCostField94Amt` |
-| `CostComponentCostField95Amt` | `keph.CostComponentCostField95Amt` |
-| `CostComponentCostField96Amt` | `keph.CostComponentCostField96Amt` |
-| `CostComponentCostField97Amt` | `keph.CostComponentCostField97Amt` |
-| `CostComponentCostField98Amt` | `keph.CostComponentCostField98Amt` |
-| `CostComponentCostField99Amt` | `keph.CostComponentCostField99Amt` |
-| `CostComponentCostField100Amt` | `keph.CostComponentCostField100Amt` |
-| `CostComponentCostField101Amt` | `keph.CostComponentCostField101Amt` |
-| `CostComponentCostField102Amt` | `keph.CostComponentCostField102Amt` |
-| `CostComponentCostField103Amt` | `keph.CostComponentCostField103Amt` |
-| `CostComponentCostField104Amt` | `keph.CostComponentCostField104Amt` |
-| `CostComponentCostField105Amt` | `keph.CostComponentCostField105Amt` |
-| `CostComponentCostField106Amt` | `keph.CostComponentCostField106Amt` |
-| `CostComponentCostField107Amt` | `keph.CostComponentCostField107Amt` |
-| `CostComponentCostField108Amt` | `keph.CostComponentCostField108Amt` |
-| `CostComponentCostField109Amt` | `keph.CostComponentCostField109Amt` |
-| `CostComponentCostField110Amt` | `keph.CostComponentCostField110Amt` |
-| `CostComponentCostField111Amt` | `keph.CostComponentCostField111Amt` |
-| `CostComponentCostField112Amt` | `keph.CostComponentCostField112Amt` |
-| `CostComponentCostField113Amt` | `keph.CostComponentCostField113Amt` |
-| `CostComponentCostField114Amt` | `keph.CostComponentCostField114Amt` |
-| `CostComponentCostField115Amt` | `keph.CostComponentCostField115Amt` |
-| `CostComponentCostField116Amt` | `keph.CostComponentCostField116Amt` |
-| `CostComponentCostField117Amt` | `keph.CostComponentCostField117Amt` |
-| `CostComponentCostField118Amt` | `keph.CostComponentCostField118Amt` |
-| `CostComponentCostField119Amt` | `keph.CostComponentCostField119Amt` |
-| `CostComponentCostField120Amt` | `keph.CostComponentCostField120Amt` |
-| `_ProductCostEstimate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingReferenceObject` | ✓ | |  |  |
+| `CostEstimate` | ✓ | |  |  |
+| `CostingType` | ✓ | |  |  |
+| `CostingDate` | ✓ | |  |  |
+| `CostingVersion` | ✓ | |  |  |
+| `ValuationVariant` | ✓ | |  |  |
+| `CostIsEnteredManually` | ✓ | |  |  |
+| `CostingPartnerNumber` | ✓ | |  |  |
+| `CostComponentSplitType` | ✓ | |  |  |
+| `CostIsInCtrlgAreaCrcy` | ✓ | |  |  |
+| `IsCostComponentSplitLowerLevel` | ✓ | |  |  |
+| `CostEstWQSIsInclAdditiveCosts` | ✓ | |  |  |
+| `CostCompSpltDrctPrtnCharc` | ✓ | |  |  |
+| `Currency` |  | |  | `cast ( case when keph.CostIsInCtrlgAreaCrcy = 'X' then _ProductCostEstimate.ControllingAreaCurrency when keph.CostIsInCtrlgAreaCrcy = ' ' then _ProductCostEstimate.CompanyCodeCurrency end as waers )` |
+| `CostComponentCostField1Amt` |  | |  |  |
+| `CostComponentCostField2Amt` |  | |  |  |
+| `CostComponentCostField3Amt` |  | |  |  |
+| `CostComponentCostField4Amt` |  | |  |  |
+| `CostComponentCostField5Amt` |  | |  |  |
+| `CostComponentCostField6Amt` |  | |  |  |
+| `CostComponentCostField7Amt` |  | |  |  |
+| `CostComponentCostField8Amt` |  | |  |  |
+| `CostComponentCostField9Amt` |  | |  |  |
+| `CostComponentCostField10Amt` |  | |  |  |
+| `CostComponentCostField11Amt` |  | |  |  |
+| `CostComponentCostField12Amt` |  | |  |  |
+| `CostComponentCostField13Amt` |  | |  |  |
+| `CostComponentCostField14Amt` |  | |  |  |
+| `CostComponentCostField15Amt` |  | |  |  |
+| `CostComponentCostField16Amt` |  | |  |  |
+| `CostComponentCostField17Amt` |  | |  |  |
+| `CostComponentCostField18Amt` |  | |  |  |
+| `CostComponentCostField19Amt` |  | |  |  |
+| `CostComponentCostField20Amt` |  | |  |  |
+| `CostComponentCostField21Amt` |  | |  |  |
+| `CostComponentCostField22Amt` |  | |  |  |
+| `CostComponentCostField23Amt` |  | |  |  |
+| `CostComponentCostField24Amt` |  | |  |  |
+| `CostComponentCostField25Amt` |  | |  |  |
+| `CostComponentCostField26Amt` |  | |  |  |
+| `CostComponentCostField27Amt` |  | |  |  |
+| `CostComponentCostField28Amt` |  | |  |  |
+| `CostComponentCostField29Amt` |  | |  |  |
+| `CostComponentCostField30Amt` |  | |  |  |
+| `CostComponentCostField31Amt` |  | |  |  |
+| `CostComponentCostField32Amt` |  | |  |  |
+| `CostComponentCostField33Amt` |  | |  |  |
+| `CostComponentCostField34Amt` |  | |  |  |
+| `CostComponentCostField35Amt` |  | |  |  |
+| `CostComponentCostField36Amt` |  | |  |  |
+| `CostComponentCostField37Amt` |  | |  |  |
+| `CostComponentCostField38Amt` |  | |  |  |
+| `CostComponentCostField39Amt` |  | |  |  |
+| `CostComponentCostField40Amt` |  | |  |  |
+| `CostComponentCostField41Amt` |  | |  |  |
+| `CostComponentCostField42Amt` |  | |  |  |
+| `CostComponentCostField43Amt` |  | |  |  |
+| `CostComponentCostField44Amt` |  | |  |  |
+| `CostComponentCostField45Amt` |  | |  |  |
+| `CostComponentCostField46Amt` |  | |  |  |
+| `CostComponentCostField47Amt` |  | |  |  |
+| `CostComponentCostField48Amt` |  | |  |  |
+| `CostComponentCostField49Amt` |  | |  |  |
+| `CostComponentCostField50Amt` |  | |  |  |
+| `CostComponentCostField51Amt` |  | |  |  |
+| `CostComponentCostField52Amt` |  | |  |  |
+| `CostComponentCostField53Amt` |  | |  |  |
+| `CostComponentCostField54Amt` |  | |  |  |
+| `CostComponentCostField55Amt` |  | |  |  |
+| `CostComponentCostField56Amt` |  | |  |  |
+| `CostComponentCostField57Amt` |  | |  |  |
+| `CostComponentCostField58Amt` |  | |  |  |
+| `CostComponentCostField59Amt` |  | |  |  |
+| `CostComponentCostField60Amt` |  | |  |  |
+| `CostComponentCostField61Amt` |  | |  |  |
+| `CostComponentCostField62Amt` |  | |  |  |
+| `CostComponentCostField63Amt` |  | |  |  |
+| `CostComponentCostField64Amt` |  | |  |  |
+| `CostComponentCostField65Amt` |  | |  |  |
+| `CostComponentCostField66Amt` |  | |  |  |
+| `CostComponentCostField67Amt` |  | |  |  |
+| `CostComponentCostField68Amt` |  | |  |  |
+| `CostComponentCostField69Amt` |  | |  |  |
+| `CostComponentCostField70Amt` |  | |  |  |
+| `CostComponentCostField71Amt` |  | |  |  |
+| `CostComponentCostField72Amt` |  | |  |  |
+| `CostComponentCostField73Amt` |  | |  |  |
+| `CostComponentCostField74Amt` |  | |  |  |
+| `CostComponentCostField75Amt` |  | |  |  |
+| `CostComponentCostField76Amt` |  | |  |  |
+| `CostComponentCostField77Amt` |  | |  |  |
+| `CostComponentCostField78Amt` |  | |  |  |
+| `CostComponentCostField79Amt` |  | |  |  |
+| `CostComponentCostField80Amt` |  | |  |  |
+| `CostComponentCostField81Amt` |  | |  |  |
+| `CostComponentCostField82Amt` |  | |  |  |
+| `CostComponentCostField83Amt` |  | |  |  |
+| `CostComponentCostField84Amt` |  | |  |  |
+| `CostComponentCostField85Amt` |  | |  |  |
+| `CostComponentCostField86Amt` |  | |  |  |
+| `CostComponentCostField87Amt` |  | |  |  |
+| `CostComponentCostField88Amt` |  | |  |  |
+| `CostComponentCostField89Amt` |  | |  |  |
+| `CostComponentCostField90Amt` |  | |  |  |
+| `CostComponentCostField91Amt` |  | |  |  |
+| `CostComponentCostField92Amt` |  | |  |  |
+| `CostComponentCostField93Amt` |  | |  |  |
+| `CostComponentCostField94Amt` |  | |  |  |
+| `CostComponentCostField95Amt` |  | |  |  |
+| `CostComponentCostField96Amt` |  | |  |  |
+| `CostComponentCostField97Amt` |  | |  |  |
+| `CostComponentCostField98Amt` |  | |  |  |
+| `CostComponentCostField99Amt` |  | |  |  |
+| `CostComponentCostField100Amt` |  | |  |  |
+| `CostComponentCostField101Amt` |  | |  |  |
+| `CostComponentCostField102Amt` |  | |  |  |
+| `CostComponentCostField103Amt` |  | |  |  |
+| `CostComponentCostField104Amt` |  | |  |  |
+| `CostComponentCostField105Amt` |  | |  |  |
+| `CostComponentCostField106Amt` |  | |  |  |
+| `CostComponentCostField107Amt` |  | |  |  |
+| `CostComponentCostField108Amt` |  | |  |  |
+| `CostComponentCostField109Amt` |  | |  |  |
+| `CostComponentCostField110Amt` |  | |  |  |
+| `CostComponentCostField111Amt` |  | |  |  |
+| `CostComponentCostField112Amt` |  | |  |  |
+| `CostComponentCostField113Amt` |  | |  |  |
+| `CostComponentCostField114Amt` |  | |  |  |
+| `CostComponentCostField115Amt` |  | |  |  |
+| `CostComponentCostField116Amt` |  | |  |  |
+| `CostComponentCostField117Amt` |  | |  |  |
+| `CostComponentCostField118Amt` |  | |  |  |
+| `CostComponentCostField119Amt` |  | |  |  |
+| `CostComponentCostField120Amt` |  | |  |  |
+| `_ProductCostEstimate` | | ✓ | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VarConfignTblName` | `VarConfignTblName` |
-| key `VarConfignTblValAssgmtAltvID` | `VarConfignTblValAssgmtAltvID` |
-| `_Item` | *Association* |
-| `_Table` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |
+| `VarConfignTblValAssgmtAltvID` | ✓ | |  |  |
+| `_Item` | | ✓ | | |
+| `_Table` | | ✓ | | |
 
 ## Source Code
 

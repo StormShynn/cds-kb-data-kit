@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrelimBillingDocument` | `PrelimBillingDocument` |
-| key `PrelimBillingDocumentItem` | `PrelimBillingDocumentItem` |
-| `BillingDocumentItemText` | `BillingDocumentItemText` |
-| `BillingDocumentType` | `BillingDocumentType` |
-| `SalesOrganization` | `SalesOrganization` |
-| `_PrelimBillingDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrelimBillingDocument` | ✓ | |  |  |
+| `PrelimBillingDocumentItem` | ✓ | |  |  |
+| `BillingDocumentItemText` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `_PrelimBillingDocument` | | ✓ | | |
 
 ## Source Code
 

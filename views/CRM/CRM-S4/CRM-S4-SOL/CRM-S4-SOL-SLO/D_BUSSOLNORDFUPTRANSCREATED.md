@@ -25,14 +25,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ServiceDocumentItemObjectType` | `crmt_swo_objtyp_process_item` |
-| `ServiceDocSuccessor` | `crmt_object_id_db` |
-| `ServiceDocumentSuccessorUUID` | `crmt_object_guid` |
-| `ServiceDocumentItemSuccessor` | `crms4_successor_document` |
-| `ServiceDocItmSuccessorUUID` | `crmt_pred_item_guid` |
-| `BSOrdFollowUpSAPObjectType` | `followupsapobjecttype` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentItemObjectType` |  | |  | `crmt_swo_objtyp_process_item` |
+| `ServiceDocSuccessor` |  | |  | `crmt_object_id_db` |
+| `ServiceDocumentSuccessorUUID` |  | |  | `crmt_object_guid` |
+| `ServiceDocumentItemSuccessor` |  | |  | `crms4_successor_document` |
+| `ServiceDocItmSuccessorUUID` |  | |  | `crmt_pred_item_guid` |
+| `BSOrdFollowUpSAPObjectType` |  | |  | `followupsapobjecttype` |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillgDocReqBillgSts` | `statu` |
-| key `Language` | `spras` |
-| `BillgDocReqBillgStsDesc` | `bezei` |
-| `_BillgDocReqBillgSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillgDocReqBillgSts` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `BillgDocReqBillgStsDesc` |  | |  | `bezei` |
+| `_BillgDocReqBillgSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

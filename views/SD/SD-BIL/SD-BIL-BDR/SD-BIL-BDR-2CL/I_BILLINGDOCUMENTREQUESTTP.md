@@ -33,81 +33,81 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequest` | `BillingDocumentRequest` |
-| `SDDocumentCategory` | `SDDocumentCategory` |
-| `BillingDocumentRequestType` | `BillingDocumentRequestType` |
-| `ProposedBillingDocumentType` | `ProposedBillingDocumentType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LogicalSystem` | `LogicalSystem` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `BillingDocumentDate` | `BillingDocumentDate` |
-| `BillgDocReqCombinationCriteria` | `BillgDocReqCombinationCriteria` |
-| `TotalNetAmount` | `TotalNetAmount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `TotalTaxAmount` | `TotalTaxAmount` |
-| `CustomerPriceGroup` | `CustomerPriceGroup` |
-| `PriceListType` | `PriceListType` |
-| `TaxDepartureCountry` | `TaxDepartureCountry` |
-| `VATRegistration` | `VATRegistration` |
-| `VATRegistrationOrigin` | `VATRegistrationOrigin` |
-| `VATRegistrationCountry` | `VATRegistrationCountry` |
-| `CustomerTaxClassification1` | `CustomerTaxClassification1` |
-| `CustomerTaxClassification2` | `CustomerTaxClassification2` |
-| `CustomerTaxClassification3` | `CustomerTaxClassification3` |
-| `CustomerTaxClassification4` | `CustomerTaxClassification4` |
-| `CustomerTaxClassification5` | `CustomerTaxClassification5` |
-| `CustomerTaxClassification6` | `CustomerTaxClassification6` |
-| `CustomerTaxClassification7` | `CustomerTaxClassification7` |
-| `CustomerTaxClassification8` | `CustomerTaxClassification8` |
-| `CustomerTaxClassification9` | `CustomerTaxClassification9` |
-| `SDPricingProcedure` | `SDPricingProcedure` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `PayerParty` | `PayerParty` |
-| `ContractAccount` | `ContractAccount` |
-| `CustomerPaymentTerms` | `CustomerPaymentTerms` |
-| `PaymentMethod` | `PaymentMethod` |
-| `FixedValueDate` | `FixedValueDate` |
-| `AdditionalValueDays` | `AdditionalValueDays` |
-| `SEPAMandate` | `SEPAMandate` |
-| `CompanyCode` | `CompanyCode` |
-| `CustomerAccountAssignmentGroup` | `CustomerAccountAssignmentGroup` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `DocumentReferenceID` | `DocumentReferenceID` |
-| `DunningArea` | `DunningArea` |
-| `DunningBlockingReason` | `DunningBlockingReason` |
-| `DunningKey` | `DunningKey` |
-| `ReferenceDocument` | `ReferenceDocument` |
-| `ReferenceDocumentLogicalSystem` | `ReferenceDocumentLogicalSystem` |
-| `ReferenceDocSDDocCategory` | `ReferenceDocSDDocCategory` |
-| `SoldToParty` | `SoldToParty` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `CustomerGroup` | `CustomerGroup` |
-| `Country` | `Country` |
-| `CityCode` | `CityCode` |
-| `SalesDistrict` | `SalesDistrict` |
-| `Region` | `Region` |
-| `County` | `County` |
-| `CreditControlArea` | `CreditControlArea` |
-| `PricingDocument` | `PricingDocument` |
-| `OverallBillingDocReqStatus` | `OverallBillingDocReqStatus` |
-| `BillingIssueType` | `BillingIssueType` |
-| `OverallPricingIncompletionSts` | `OverallPricingIncompletionSts` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `BillingDocumentRequestType` |  | |  |  |
+| `ProposedBillingDocumentType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `BillgDocReqCombinationCriteria` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `TotalTaxAmount` |  | |  |  |
+| `CustomerPriceGroup` |  | |  |  |
+| `PriceListType` |  | |  |  |
+| `TaxDepartureCountry` |  | |  |  |
+| `VATRegistration` |  | |  |  |
+| `VATRegistrationOrigin` |  | |  |  |
+| `VATRegistrationCountry` |  | |  |  |
+| `CustomerTaxClassification1` |  | |  |  |
+| `CustomerTaxClassification2` |  | |  |  |
+| `CustomerTaxClassification3` |  | |  |  |
+| `CustomerTaxClassification4` |  | |  |  |
+| `CustomerTaxClassification5` |  | |  |  |
+| `CustomerTaxClassification6` |  | |  |  |
+| `CustomerTaxClassification7` |  | |  |  |
+| `CustomerTaxClassification8` |  | |  |  |
+| `CustomerTaxClassification9` |  | |  |  |
+| `SDPricingProcedure` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `ContractAccount` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `FixedValueDate` |  | |  |  |
+| `AdditionalValueDays` |  | |  |  |
+| `SEPAMandate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `DocumentReferenceID` |  | |  |  |
+| `DunningArea` |  | |  |  |
+| `DunningBlockingReason` |  | |  |  |
+| `DunningKey` |  | |  |  |
+| `ReferenceDocument` |  | |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  |  |
+| `ReferenceDocSDDocCategory` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `Country` |  | |  |  |
+| `CityCode` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `Region` |  | |  |  |
+| `County` |  | |  |  |
+| `CreditControlArea` |  | |  |  |
+| `PricingDocument` |  | |  |  |
+| `OverallBillingDocReqStatus` |  | |  |  |
+| `BillingIssueType` |  | |  |  |
+| `OverallPricingIncompletionSts` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

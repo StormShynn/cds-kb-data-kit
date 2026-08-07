@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| `FiscalMonthCurrentPeriod` | `lfmon` |
-| `ProductCurrentFiscalYear` | `cast ( lfgja as cmd_prd_lfgja preserving type )` |
-| `FiscalMonthPreviousPeriod` | `vmmon` |
-| `ProdPreviousPeriodFiscalYear` | `cast ( vmgja as cmd_prd_vmgja preserving type )` |
-| `FiscalMonthLastYear` | `vjmon` |
-| `ProductLastFiscalYear` | `cast (vjgja as cmd_prd_vjgja preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `FiscalMonthCurrentPeriod` |  | |  | `lfmon` |
+| `ProductCurrentFiscalYear` |  | |  | `cast ( lfgja as cmd_prd_lfgja preserving type )` |
+| `FiscalMonthPreviousPeriod` |  | |  | `vmmon` |
+| `ProdPreviousPeriodFiscalYear` |  | |  | `cast ( vmgja as cmd_prd_vmgja preserving type )` |
+| `FiscalMonthLastYear` |  | |  | `vjmon` |
+| `ProductLastFiscalYear` |  | |  | `cast (vjgja as cmd_prd_vjgja preserving type )` |
 
 ## Source Code
 

@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IHBAcctFeeDetailUUID` | `IHBAcctFeeDetailUUID` |
-| `IHBAcctFeeUUID` | `IHBAcctFeeUUID` |
-| `IHBObjectUUID` | `IHBObjectUUID` |
-| `IHBAcctFeeRefUUID` | `IHBAcctFeeRefUUID` |
-| `IHBAcctFeeNmbrOfEvtsScaleFrom` | `IHBAcctFeeNmbrOfEvtsScaleFrom` |
-| `IHBAcctFeeAmount` | `IHBAcctFeeAmount` |
-| `IHBAcctFeeCurrency` | `IHBAcctFeeCurrency` |
-| `IHBObjectTotalChangedDateTime` | `IHBObjectTotalChangedDateTime` |
-| `IHBObjectCreatedDateTime` | `IHBObjectCreatedDateTime` |
-| `IHBObjectCreatedByUser` | `IHBObjectCreatedByUser` |
-| `IHBObjectChangedDateTime` | `IHBObjectChangedDateTime` |
-| `IHBObjectChangedByUser` | `IHBObjectChangedByUser` |
-| `_IHBFeeTP` | *Association* |
-| `_IHBMasterDataObjectTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IHBAcctFeeDetailUUID` | ✓ | |  |  |
+| `IHBAcctFeeUUID` |  | |  |  |
+| `IHBObjectUUID` |  | |  |  |
+| `IHBAcctFeeRefUUID` |  | |  |  |
+| `IHBAcctFeeNmbrOfEvtsScaleFrom` |  | |  |  |
+| `IHBAcctFeeAmount` |  | |  |  |
+| `IHBAcctFeeCurrency` |  | |  |  |
+| `IHBObjectTotalChangedDateTime` |  | |  |  |
+| `IHBObjectCreatedDateTime` |  | |  |  |
+| `IHBObjectCreatedByUser` |  | |  |  |
+| `IHBObjectChangedDateTime` |  | |  |  |
+| `IHBObjectChangedByUser` |  | |  |  |
+| `_IHBFeeTP` | | ✓ | | |
+| `_IHBMasterDataObjectTP` | | ✓ | | |
 
 ## Source Code
 

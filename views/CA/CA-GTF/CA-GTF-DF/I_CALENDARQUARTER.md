@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CalendarQuarter` | `cast ( substring( domvalue_l, 1, 1 ) as calendarquarter )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CalendarQuarter` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as calendarquarter )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

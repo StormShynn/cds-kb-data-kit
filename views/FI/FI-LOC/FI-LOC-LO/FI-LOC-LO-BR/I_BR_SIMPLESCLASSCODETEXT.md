@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| key `BR_SIMPLESClassCode` | `cast ( domvalue_l as logbr_simples_class )` |
-| `BR_SIMPLESClassCodeDesc` | `cast ( ddtext as logbr_simples_class_desc preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_BR_SIMPLESClassCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `BR_SIMPLESClassCode` | ✓ | |  | `cast ( domvalue_l as logbr_simples_class )` |
+| `BR_SIMPLESClassCodeDesc` |  | |  | `cast ( ddtext as logbr_simples_class_desc preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_BR_SIMPLESClassCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

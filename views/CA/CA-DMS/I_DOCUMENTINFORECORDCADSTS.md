@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IsDocInfoRecdCreatedFromCAD` | `substring( Domval.domvalue_l, 1, 1 )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IsDocInfoRecdCreatedFromCAD` | ✓ | |  | `substring( Domval.domvalue_l, 1, 1 )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

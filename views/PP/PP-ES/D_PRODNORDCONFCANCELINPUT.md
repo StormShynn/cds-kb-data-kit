@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PostingDate` | `pph_budat` |
-| `ConfirmationText` | `pph_rtext` |
-| `ExternalSystemConfirmation` | `ru_extid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PostingDate` |  | |  | `pph_budat` |
+| `ConfirmationText` |  | |  | `pph_rtext` |
+| `ExternalSystemConfirmation` |  | |  | `ru_extid` |
 
 ## Source Code
 

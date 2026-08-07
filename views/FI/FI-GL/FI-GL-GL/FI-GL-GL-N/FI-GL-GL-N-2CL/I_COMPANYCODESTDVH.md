@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `t001.bukrs` |
-| `CompanyCodeName` | `t001.butxt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CompanyCodeName` |  | |  | `butxt` |
 
 ## Source Code
 

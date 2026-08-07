@@ -34,17 +34,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CourseId` | `CourseId` |
-| `Title` | `Title` |
-| `Level` | `Level` |
-| `Instructor` | `Instructor` |
-| `CreatedBy` | `CreatedBy` |
-| `CreatedAt` | `CreatedAt` |
-| `LastChangedBy` | `LastChangedBy` |
-| `LastChangedAt` | `LastChangedAt` |
-| `LocalLastChangedAt` | `LocalLastChangedAt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CourseId` | ✓ | |  |  |
+| `Title` |  | |  |  |
+| `Level` |  | |  |  |
+| `Instructor` |  | |  |  |
+| `CreatedBy` |  | |  |  |
+| `CreatedAt` |  | |  |  |
+| `LastChangedBy` |  | |  |  |
+| `LastChangedAt` |  | |  |  |
+| `LocalLastChangedAt` |  | |  |  |
 
 ## Source Code
 

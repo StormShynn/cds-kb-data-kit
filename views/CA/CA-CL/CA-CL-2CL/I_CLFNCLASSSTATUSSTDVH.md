@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassType` | `ClassType` |
-| key `ClassStatus` | `ClassStatus` |
-| `_Text` | `_ClassStatusText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassType` | ✓ | |  |  |
+| `ClassStatus` | ✓ | |  |  |
+| `_Text` |  | |  | `_ClassStatusText` |
 
 ## Source Code
 

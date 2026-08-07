@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentCondition` | `zahlkond` |
-| key `Language` | `spras` |
-| `PaymentConditionName` | `text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentCondition` | ✓ | |  | `zahlkond` |
+| `Language` | ✓ | |  | `spras` |
+| `PaymentConditionName` |  | |  | `text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `Supplier` | `Supplier` |
-| `Material` | `Material` |
-| `MaterialGroup` | `MaterialGroup` |
-| `CreationDate` | `CreationDate` |
-| `IsDeleted` | `IsDeleted` |
-| `PurchasingInfoRecordDesc` | `PurchasingInfoRecordDesc` |
-| `PurgInfoRecNonStockItmSortTerm` | `PurgInfoRecNonStockItmSortTerm` |
-| `PurgDocOrderQuantityUnit` | `PurgDocOrderQuantityUnit` |
-| `OrderItemQtyToBaseQtyNmrtr` | `OrderItemQtyToBaseQtyNmrtr` |
-| `OrderItemQtyToBaseQtyDnmntr` | `OrderItemQtyToBaseQtyDnmntr` |
-| `SupplierMaterialNumber` | `SupplierMaterialNumber` |
-| `SupplierRespSalesPersonName` | `SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `SupplierPhoneNumber` |
-| `BaseUnit` | `BaseUnit` |
-| `SupplierMaterialGroup` | `SupplierMaterialGroup` |
-| `PriorSupplier` | `PriorSupplier` |
-| `AvailabilityStartDate` | `AvailabilityStartDate` |
-| `AvailabilityEndDate` | `AvailabilityEndDate` |
-| `VarblPurOrdUnitIsActive` | `VarblPurOrdUnitIsActive` |
-| `Manufacturer` | `Manufacturer` |
-| `IsRegularSupplier` | `IsRegularSupplier` |
-| `SupplierSubrange` | `SupplierSubrange` |
-| `NoDaysReminder1` | `NoDaysReminder1` |
-| `NoDaysReminder2` | `NoDaysReminder2` |
-| `NoDaysReminder3` | `NoDaysReminder3` |
-| `ProductPurchasePointsQty` | `ProductPurchasePointsQty` |
-| `ProductPurchasePointsQtyUnit` | `ProductPurchasePointsQtyUnit` |
-| `SupplierSubrangeSortNumber` | `SupplierSubrangeSortNumber` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `_BaseUnit` | *Association* |
-| `_Material` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_PurgDocOrderQuantityUnit` | *Association* |
-| `_Supplier` | *Association* |
-| `_PurgInfoRecdOrgPlntData` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |
+| `Supplier` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `PurchasingInfoRecordDesc` |  | |  |  |
+| `PurgInfoRecNonStockItmSortTerm` |  | |  |  |
+| `PurgDocOrderQuantityUnit` |  | |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `SupplierMaterialGroup` |  | |  |  |
+| `PriorSupplier` |  | |  |  |
+| `AvailabilityStartDate` |  | |  |  |
+| `AvailabilityEndDate` |  | |  |  |
+| `VarblPurOrdUnitIsActive` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `IsRegularSupplier` |  | |  |  |
+| `SupplierSubrange` |  | |  |  |
+| `NoDaysReminder1` |  | |  |  |
+| `NoDaysReminder2` |  | |  |  |
+| `NoDaysReminder3` |  | |  |  |
+| `ProductPurchasePointsQty` |  | |  |  |
+| `ProductPurchasePointsQtyUnit` |  | |  |  |
+| `SupplierSubrangeSortNumber` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `_BaseUnit` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_PurgDocOrderQuantityUnit` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_PurgInfoRecdOrgPlntData` | | ✓ | | |
 
 ## Source Code
 

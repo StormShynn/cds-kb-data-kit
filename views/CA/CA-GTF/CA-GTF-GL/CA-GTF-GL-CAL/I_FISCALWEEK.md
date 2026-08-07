@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYearVariant` | `P_FiscalYearWeek.FiscalYearVariant` |
-| key `FiscalYear` | `P_FiscalYearWeek.FiscalYear` |
-| key `FiscalYearWeek` | `P_FiscalYearWeek.FiscalYearWeek` |
-| key `FiscalWeek` | `P_FiscalYearWeek.FiscalWeek` |
-| `FiscalYearStartDate` | `P_FiscalYearWeek.FiscalYearStartDate` |
-| `FiscalYearEndDate` | `P_FiscalYearWeek.FiscalYearEndDate` |
-| `FiscalWeekStartDate` | `P_FiscalYearWeek.FiscalWeekStartDate` |
-| `FiscalWeekEndDate` | `P_FiscalYearWeek.FiscalWeekEndDate` |
-| `FiscalWeekConsecutiveNumber` | `P_FiscalYearWeek.FiscalWeekConsecutiveNumber` |
-| `NextFiscalYearWeek` | `P_FiscalYearWeek.NextFiscalYearWeek` |
-| `NextFiscalWeek` | `P_FiscalYearWeek.NextFiscalWeek` |
-| `NextFiscalWeekStartDate` | `P_FiscalYearWeek.NextFiscalWeekStartDate` |
-| `NextFiscalWeekEndDate` | `P_FiscalYearWeek.NextFiscalWeekEndDate` |
-| `NextFsclWeekConsecutiveNmbr` | `P_FiscalYearWeek.NextFsclWeekConsecutiveNmbr` |
-| `_FiscalYear` | *Association* |
-| `_FiscalYearWeek` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `FiscalYearWeek` | ✓ | |  |  |
+| `FiscalWeek` | ✓ | |  |  |
+| `FiscalYearStartDate` |  | |  |  |
+| `FiscalYearEndDate` |  | |  |  |
+| `FiscalWeekStartDate` |  | |  |  |
+| `FiscalWeekEndDate` |  | |  |  |
+| `FiscalWeekConsecutiveNumber` |  | |  |  |
+| `NextFiscalYearWeek` |  | |  |  |
+| `NextFiscalWeek` |  | |  |  |
+| `NextFiscalWeekStartDate` |  | |  |  |
+| `NextFiscalWeekEndDate` |  | |  |  |
+| `NextFsclWeekConsecutiveNmbr` |  | |  |  |
+| `_FiscalYear` | | ✓ | | |
+| `_FiscalYearWeek` | | ✓ | | |
 
 ## Associations
 

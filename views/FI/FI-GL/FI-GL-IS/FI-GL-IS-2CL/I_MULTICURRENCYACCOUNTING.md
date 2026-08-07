@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MultiCurrencyAccountingCode` | `mcakey` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MultiCurrencyAccountingCode` | ✓ | |  | `mcakey` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

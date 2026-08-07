@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `I_CompanyCode.CompanyCode` |
-| `CompanyCodeName` | `I_CompanyCode.CompanyCodeName` |
-| `CityName` | `I_CompanyCode.CityName` |
-| `Country` | `I_CompanyCode.Country` |
-| `Currency` | `I_CompanyCode.Currency` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `CompanyCodeName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `Country` |  | |  |  |
+| `Currency` |  | |  |  |
 
 ## Source Code
 

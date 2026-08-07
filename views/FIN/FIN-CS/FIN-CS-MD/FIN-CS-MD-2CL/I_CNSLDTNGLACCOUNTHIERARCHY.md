@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `_Hierarchy.ChartOfAccounts` |
-| key `CnsldtnGLAccountHierarchy` | `cast(_Hierarchy.UniversalHierarchy as fincs_glaccounthierarchy preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
-| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
-| `_ChartOfAccounts` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | | `_Hierarchy` | `ChartOfAccounts` |
+| `CnsldtnGLAccountHierarchy` | ✓ | |  | `cast(_Hierarchy.UniversalHierarchy as fincs_glaccounthierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

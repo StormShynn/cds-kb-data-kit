@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ManufacturingOrder` | `manufacturingorder` |
-| `ProcessOrderType` | `aufart` |
-| `ProductionPlant` | `pwwrk` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrder` |  | |  | `manufacturingorder` |
+| `ProcessOrderType` |  | |  | `aufart` |
+| `ProductionPlant` |  | |  | `pwwrk` |
 
 ## Source Code
 

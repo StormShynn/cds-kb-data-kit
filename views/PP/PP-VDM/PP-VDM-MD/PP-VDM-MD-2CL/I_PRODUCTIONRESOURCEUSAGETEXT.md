@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `txt.spras` |
-| key `ProductionResourceUsage` | `txt.planv` |
-| `ProductionResourceUsageDesc` | `txt.txt` |
-| `_Language` | *Association* |
-| `_ProductionResourceUsage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ProductionResourceUsage` | ✓ | |  | `planv` |
+| `ProductionResourceUsageDesc` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
+| `_ProductionResourceUsage` | | ✓ | | |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `CnsldtnDivisionHierarchy` | `cast(_HierarchyText.UniversalHierarchy as fincs_divisionhierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnDivisionHierarchyText` | `cast(_HierarchyText.UniversalHierarchyText as fincs_divisionhierarchytext preserving type )` |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `CnsldtnDivisionHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_divisionhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnDivisionHierarchyText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_divisionhierarchytext preserving type )` |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

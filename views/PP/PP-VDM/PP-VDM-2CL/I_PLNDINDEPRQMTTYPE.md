@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlndIndepRqmtType` | `cast(typ.bedae as pph_bedae preserving type)` |
-| `RequirementsClass` | `cast(typ.bedar as vdm_bedar preserving type)` |
-| `_Text` | *Association* |
-| `_RequirementClass` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlndIndepRqmtType` | ✓ | |  | `cast(typ.bedae as pph_bedae preserving type)` |
+| `RequirementsClass` |  | |  | `cast(typ.bedar as vdm_bedar preserving type)` |
+| `_Text` | | ✓ | | |
+| `_RequirementClass` | | ✓ | | |
 
 ## Associations
 

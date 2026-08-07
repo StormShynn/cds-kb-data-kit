@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAReversalReason` | `rvrsn` |
-| key `Language` | `spras` |
-| `CAReversalReasonText` | `ltext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAReversalReason` | ✓ | |  | `rvrsn` |
+| `Language` | ✓ | |  | `spras` |
+| `CAReversalReasonText` |  | |  | `ltext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `['ParentMrchdsCatCmpltHierNode']` | `parent: ['ParentMrchdsCatCmpltHierNode']` |
-| `['MrchdsCatCmpltHierNode']` | `child : ['MrchdsCatCmpltHierNode']` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `['ParentMrchdsCatCmpltHierNode']` |  | |  | `parent: ['ParentMrchdsCatCmpltHierNode']` |
+| `['MrchdsCatCmpltHierNode']` |  | |  | `child : ['MrchdsCatCmpltHierNode']` |
 
 ## Source Code
 

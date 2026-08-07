@@ -28,41 +28,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConditionContract` | `}] } key ConditionContract` |
-| `SettlmtDoc` | `}] } key SettlmtDoc` |
-| `SettlmtDocItem` | `}] } key SettlmtDocItem` |
-| key `SetldBusVolDocCategory` | `SetldBusVolDocCategory` |
-| key `SetldBusVolDocKey1` | `SetldBusVolDocKey1` |
-| key `SetldBusVolDocKey2` | `SetldBusVolDocKey2` |
-| key `SetldBusVolDocKey3` | `SetldBusVolDocKey3` |
-| key `SetldBusVolDocItem` | `SetldBusVolDocItem` |
-| `BusVolSelDteForSettlmt` | `BusVolSelDteForSettlmt` |
-| `SettledBusVolQty` | `SettledBusVolQty` |
-| `SettledBusVolQtyUnit` | `SettledBusVolQtyUnit` |
-| `SettledBusVolAmount1` | `SettledBusVolAmount1` |
-| `SettledBusVolAmount2` | `SettledBusVolAmount2` |
-| `SettledBusVolAmount3` | `SettledBusVolAmount3` |
-| `SettledBusVolAmount4` | `SettledBusVolAmount4` |
-| `SettledBusVolNetWeight` | `SettledBusVolNetWeight` |
-| `SettledBusVolGrossWeight` | `SettledBusVolGrossWeight` |
-| `SettledBusVolWeightUnit` | `SettledBusVolWeightUnit` |
-| `SettledBusVolVolume` | `SettledBusVolVolume` |
-| `SettledBusVolVolumeUnit` | `SettledBusVolVolumeUnit` |
-| `SettledBusVolPointsQty` | `SettledBusVolPointsQty` |
-| `SettledBusVolPointsQtyUnit` | `SettledBusVolPointsQtyUnit` |
-| `SettlmtDocType` | `SettlmtDocType` |
-| `BusVolDocCurrency` | `BusVolDocCurrency` |
-| `_SettlmtDoc` | *Association* |
-| `_SettlmtDocItem` | *Association* |
-| `_ConditionContract` | *Association* |
-| `_SetldBusVolDocCategory` | *Association* |
-| `_SettledBusVolQtyUnit` | *Association* |
-| `_SettledBusVolWeightUnit` | *Association* |
-| `_SettledBusVolVolumeUnit` | *Association* |
-| `_SettledBusVolPointsQtyUnit` | *Association* |
-| `_BusVolDocCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionContract` |  | |  | `}] } key ConditionContract` |
+| `SettlmtDoc` |  | |  | `}] } key SettlmtDoc` |
+| `SettlmtDocItem` |  | |  | `}] } key SettlmtDocItem` |
+| `SetldBusVolDocCategory` | ✓ | |  |  |
+| `SetldBusVolDocKey1` | ✓ | |  |  |
+| `SetldBusVolDocKey2` | ✓ | |  |  |
+| `SetldBusVolDocKey3` | ✓ | |  |  |
+| `SetldBusVolDocItem` | ✓ | |  |  |
+| `BusVolSelDteForSettlmt` |  | |  |  |
+| `SettledBusVolQty` |  | |  |  |
+| `SettledBusVolQtyUnit` |  | |  |  |
+| `SettledBusVolAmount1` |  | |  |  |
+| `SettledBusVolAmount2` |  | |  |  |
+| `SettledBusVolAmount3` |  | |  |  |
+| `SettledBusVolAmount4` |  | |  |  |
+| `SettledBusVolNetWeight` |  | |  |  |
+| `SettledBusVolGrossWeight` |  | |  |  |
+| `SettledBusVolWeightUnit` |  | |  |  |
+| `SettledBusVolVolume` |  | |  |  |
+| `SettledBusVolVolumeUnit` |  | |  |  |
+| `SettledBusVolPointsQty` |  | |  |  |
+| `SettledBusVolPointsQtyUnit` |  | |  |  |
+| `SettlmtDocType` |  | |  |  |
+| `BusVolDocCurrency` |  | |  |  |
+| `_SettlmtDoc` | | ✓ | | |
+| `_SettlmtDocItem` | | ✓ | | |
+| `_ConditionContract` | | ✓ | | |
+| `_SetldBusVolDocCategory` | | ✓ | | |
+| `_SettledBusVolQtyUnit` | | ✓ | | |
+| `_SettledBusVolWeightUnit` | | ✓ | | |
+| `_SettledBusVolVolumeUnit` | | ✓ | | |
+| `_SettledBusVolPointsQtyUnit` | | ✓ | | |
+| `_BusVolDocCurrency` | | ✓ | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tswlt.langu` |
-| key `TimeSheetWrkLocCode` | `cast( tswlt.wrkloc as cats_ssc_wrkloc preserving type )` |
-| key `TimeSheetWrkLocEndDate` | `tswlt.endda` |
-| `TimeSheetWrkLocCodeName` | `cast( tswlt.text as cats_ssc_wrkloctext preserving type )` |
-| `_TimeSheetWrkLoc` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `TimeSheetWrkLocCode` | ✓ | |  | `cast( tswlt.wrkloc as cats_ssc_wrkloc preserving type )` |
+| `TimeSheetWrkLocEndDate` | ✓ | |  | `endda` |
+| `TimeSheetWrkLocCodeName` |  | |  | `cast( tswlt.text as cats_ssc_wrkloctext preserving type )` |
+| `_TimeSheetWrkLoc` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

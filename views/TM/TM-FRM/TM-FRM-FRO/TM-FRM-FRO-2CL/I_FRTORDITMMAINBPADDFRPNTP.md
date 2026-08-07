@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderItemUUID` | `TransportationOrderItemUUID` |
-| key `TranspOrdBizPartnerFunction` | `TranspOrdBizPartnerFunction` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `AddressID` | `AddressID` |
-| `AddresseeFullName` | `AddresseeFullName` |
-| `CityName` | `CityName` |
-| `PostalCode` | `PostalCode` |
-| `StreetName` | `StreetName` |
-| `HouseNumber` | `HouseNumber` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `EmailAddress` | `EmailAddress` |
-| `InternationalPhoneNumber` | `InternationalPhoneNumber` |
-| `InternationalMobilePhoneNumber` | `InternationalMobilePhoneNumber` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `I_FreightOrderTP` | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `I_FreightOrderItemTP` | `_TransportationOrderItem as _FreightOrderItem : redirected to parent I_FreightOrderItemTP` |
-| `I_FrtOrdItmMainBPAdAdRpnTP` | `_TrOrdItmMnBPAddrAddlRprstn as _FrtOrdItmMainBPAddrAddlRprstn : redirected to composition child I_FrtOrdItmMainBPAdAdRpnTP` |
-| `_PartnerFunction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderItemUUID` | ✓ | |  |  |
+| `TranspOrdBizPartnerFunction` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddresseeFullName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `InternationalPhoneNumber` |  | |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| `I_FreightOrderItemTP` |  | |  | `_TransportationOrderItem as _FreightOrderItem : redirected to parent I_FreightOrderItemTP` |
+| `I_FrtOrdItmMainBPAdAdRpnTP` |  | |  | `_TrOrdItmMnBPAddrAddlRprstn as _FrtOrdItmMainBPAddrAddlRprstn : redirected to composition child I_FrtOrdItmMainBPAdAdRpnTP` |
+| `_PartnerFunction` | | ✓ | | |
 
 ## Source Code
 

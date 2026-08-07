@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingPlan` | `BillingPlan` |
-| `BillingPlanCategory` | `BillingPlanCategory` |
-| `BillingPlanUsageCategory` | `BillingPlanUsageCategory` |
-| `BillingPlanType` | `BillingPlanType` |
-| `BillingPlanStartDate` | `BillingPlanStartDate` |
-| `BillingPlanStartDateRule` | `BillingPlanStartDateRule` |
-| `BillingPlanEndDate` | `BillingPlanEndDate` |
-| `BillingPlanEndDateRule` | `BillingPlanEndDateRule` |
-| `BillingPlanSearchTerm` | `BillingPlanSearchTerm` |
-| `SalesDocument` | `SalesDocument` |
-| `ReferenceBillingPlan` | `ReferenceBillingPlan` |
-| `_SDBillingPlanItem` | *Association* |
-| `_BillingPlanCategory` | *Association* |
-| `_BillingPlanUsageCategory` | *Association* |
-| `_BillingPlanType` | *Association* |
-| `_StartDateRule` | *Association* |
-| `_EndDateRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingPlan` | ✓ | |  |  |
+| `BillingPlanCategory` |  | |  |  |
+| `BillingPlanUsageCategory` |  | |  |  |
+| `BillingPlanType` |  | |  |  |
+| `BillingPlanStartDate` |  | |  |  |
+| `BillingPlanStartDateRule` |  | |  |  |
+| `BillingPlanEndDate` |  | |  |  |
+| `BillingPlanEndDateRule` |  | |  |  |
+| `BillingPlanSearchTerm` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `ReferenceBillingPlan` |  | |  |  |
+| `_SDBillingPlanItem` | | ✓ | | |
+| `_BillingPlanCategory` | | ✓ | | |
+| `_BillingPlanUsageCategory` | | ✓ | | |
+| `_BillingPlanType` | | ✓ | | |
+| `_StartDateRule` | | ✓ | | |
+| `_EndDateRule` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocContainerDocItemRefType` | `cast( left( dd07l.domvalue_l, 2 ) as oprty_dc_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocContainerDocItemRefType` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2 ) as oprty_dc_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

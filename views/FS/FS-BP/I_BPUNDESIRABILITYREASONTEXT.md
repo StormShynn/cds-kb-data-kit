@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(tp18t.langu as langu preserving type)` |
-| key `UndesirabilityReason` | `cast(tp18t.unw_reason as bp_unw_reason preserving type)` |
-| `UndesirabilityReasonDesc` | `tp18t.unw_text` |
-| `_BPUndesirabilityReason` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(tp18t.langu as langu preserving type)` |
+| `UndesirabilityReason` | ✓ | |  | `cast(tp18t.unw_reason as bp_unw_reason preserving type)` |
+| `UndesirabilityReasonDesc` |  | |  | `unw_text` |
+| `_BPUndesirabilityReason` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

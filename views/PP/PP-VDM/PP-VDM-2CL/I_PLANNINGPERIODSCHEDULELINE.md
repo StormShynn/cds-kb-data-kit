@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPPlant` | `cast(ppsl.werks as werks_d preserving type)` |
-| key `MRPPlanningCalendar` | `cast(ppsl.mrppp as mrppp preserving type)` |
-| key `PlngPerdScheduleLineEndDate` | `cast(ppsl.ppbis as vdm_ppbis preserving type)` |
-| key `PlngPerdScheduleLineStartDate` | `cast(ppsl.ppvon as vdm_ppvon preserving type)` |
-| `PlngPerdScheduleLineInternalID` | `cast(ppsl.pperi as vdm_pperi preserving type)` |
-| `PlngPerdScheduleLineIsFixed` | `cast(ppsl.ppfix as vdm_ppfix preserving type)` |
-| `_Plant` | *Association* |
-| `_PlanningCalendar` | *Association* |
-| `_PlanningPeriod` | *Association* |
-| `_StartDate` | *Association* |
-| `_EndDate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPPlant` | ✓ | |  | `cast(ppsl.werks as werks_d preserving type)` |
+| `MRPPlanningCalendar` | ✓ | |  | `cast(ppsl.mrppp as mrppp preserving type)` |
+| `PlngPerdScheduleLineEndDate` | ✓ | |  | `cast(ppsl.ppbis as vdm_ppbis preserving type)` |
+| `PlngPerdScheduleLineStartDate` | ✓ | |  | `cast(ppsl.ppvon as vdm_ppvon preserving type)` |
+| `PlngPerdScheduleLineInternalID` |  | |  | `cast(ppsl.pperi as vdm_pperi preserving type)` |
+| `PlngPerdScheduleLineIsFixed` |  | |  | `cast(ppsl.ppfix as vdm_ppfix preserving type)` |
+| `_Plant` | | ✓ | | |
+| `_PlanningCalendar` | | ✓ | | |
+| `_PlanningPeriod` | | ✓ | | |
+| `_StartDate` | | ✓ | | |
+| `_EndDate` | | ✓ | | |
 
 ## Associations
 

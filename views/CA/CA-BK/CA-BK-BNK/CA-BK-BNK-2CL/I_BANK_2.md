@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankCountry` | `bk.banks` |
-| key `BankInternalID` | `bk.bankl` |
-| `CreationDate` | `bk.erdat` |
-| `CreatedByUser` | `bk.ernam` |
-| `BankName` | `bk.banka` |
-| `Region` | `bk.provz` |
-| `StreetName` | `bk.stras` |
-| `ShortStreetName` | `bk.stras` |
-| `CityName` | `bk.ort01` |
-| `ShortCityName` | `bk.ort01` |
-| `SWIFTCode` | `bk.swift` |
-| `BankNetworkGrouping` | `bk.bgrup` |
-| `IsPostBankAccount` | `bk.xpgro` |
-| `IsMarkedForDeletion` | `bk.loevm` |
-| `Bank` | `bk.bnklz` |
-| `PostOfficeBankAccount` | `bk.pskto` |
-| `Branch` | `bk.brnch` |
-| `BankBranch` | `bk.brnch` |
-| `CheckDigitCalculationMethod` | `bk.chkme` |
-| `BankDataFileFormat` | `bk.vers` |
-| `AddressID` | `bk.adrnr` |
-| `BankCategory` | `ad.bintk` |
-| `_Address` | *Association* |
-| `_BankAddress` | *Association* |
-| `_Region` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankCountry` | ✓ | |  | `banks` |
+| `BankInternalID` | ✓ | |  | `bankl` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `BankName` |  | |  | `banka` |
+| `Region` |  | |  | `provz` |
+| `StreetName` |  | |  | `stras` |
+| `ShortStreetName` |  | |  | `stras` |
+| `CityName` |  | |  | `ort01` |
+| `ShortCityName` |  | |  | `ort01` |
+| `SWIFTCode` |  | |  | `swift` |
+| `BankNetworkGrouping` |  | |  | `bgrup` |
+| `IsPostBankAccount` |  | |  | `xpgro` |
+| `IsMarkedForDeletion` |  | |  | `loevm` |
+| `Bank` |  | |  | `bnklz` |
+| `PostOfficeBankAccount` |  | |  | `pskto` |
+| `Branch` |  | |  | `brnch` |
+| `BankBranch` |  | |  | `brnch` |
+| `CheckDigitCalculationMethod` |  | |  | `chkme` |
+| `BankDataFileFormat` |  | |  | `vers` |
+| `AddressID` |  | |  | `adrnr` |
+| `BankCategory` |  | |  | `bintk` |
+| `_Address` | | ✓ | | |
+| `_BankAddress` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

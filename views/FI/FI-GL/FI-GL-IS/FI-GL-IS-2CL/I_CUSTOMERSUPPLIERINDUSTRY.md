@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Industry` | `cast(brsch as fis_brsch preserving type )` |
-| `_Text` | *Association* |
-| `_IndustryHierarchyNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Industry` | ✓ | |  | `cast(brsch as fis_brsch preserving type )` |
+| `_Text` | | ✓ | | |
+| `_IndustryHierarchyNode` | | ✓ | | |
 
 ## Associations
 

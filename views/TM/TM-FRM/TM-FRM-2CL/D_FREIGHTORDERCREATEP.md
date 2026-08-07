@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TransportationOrder` | `/scmtms/tor_id` |
-| `TransportationOrderType` | `/scmtms/tor_type` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrder` |  | |  | `/scmtms/tor_id` |
+| `TransportationOrderType` |  | |  | `/scmtms/tor_type` |
 
 ## Source Code
 

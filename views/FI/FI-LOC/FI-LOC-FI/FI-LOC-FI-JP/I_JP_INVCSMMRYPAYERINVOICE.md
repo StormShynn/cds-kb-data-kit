@@ -28,35 +28,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast( bukrs as fis_bukrs )` |
-| key `InvcSmmryPayerInvc` | `cast( invsumnr as isjp_pinr )` |
-| `InvcSmmryPayer` | `cast( invsumpayer as isjp_ispayer )` |
-| `InvcSmmryPayerInvcGrpgUnit` | `cast( pigrunit as isjp_pigrunit )` |
-| `Currency` | `cast ( waers as waers)` |
-| `InvcSmmryRecipient` | `cast( invsumrecip as isjp_recipient )` |
-| `InvcSmmryGroupingUnit` | `cast( grunit as isjp_grpunit )` |
-| `InvcSmmryClosingDate` | `cast( closdate as isjp_closedate )` |
-| `InvcSmmryDueDate` | `cast( netdt as isjp_duedate )` |
-| `InvcSmmryNetAmount` | `cast( netamnt as isjp_netamnt )` |
-| `InvcSmmryTaxAmount` | `cast( taxamnt as isjp_taxamnt )` |
-| `InvcSmmryGrossAmount` | `cast(netamnt + taxamnt as isjp_grossamnt )` |
-| `InvcSmmryAmountPaid` | `cast( paidamnt as isjp_amntpaid )` |
-| `InvcSmmryPrevInvoicedAmt` | `cast( previnvamnt as isjp_previnvamnt )` |
-| `InvcSmmryCarryForwardAmt` | `cast( carfwdamnt as isjp_carfwdamnt )` |
-| `InvcSmmryPrevClosingDate` | `cast( prevclosdate as isjp_preclosedate )` |
-| `InvcSmmryPrevDueDate` | `cast( prevnetdt as isjp_preduedate )` |
-| `InvcSmmryPrevPayerInvoice` | `cast( previnvsumnr as isjp_prepinr )` |
-| `InvcSmmryNextPayerInvoice` | `cast( nextinvsumnr as isjp_nextpinr )` |
-| `InvcSmmryOpenAmt` | `cast( openamnt as isjp_amntopen )` |
-| `ClearingDate` | `cast( cleardate as fis_augdt )` |
-| `InvcSmmryIsCancelled` | `cast( cancelled as isjp_micancelled )` |
-| `NumberOfOpenItems` | `cast( nropenitems as farp_number_of_open_items )` |
-| `InvcSmmryBankCountry` | `cast( banks as isjp_banks )` |
-| `InvcSmmryBank` | `cast( bankl as isjp_bankl )` |
-| `InvcSmmryVirtualAcctNo` | `cast( virtacctnr as isjp_virtacctnr )` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs )` |
+| `InvcSmmryPayerInvc` | ✓ | |  | `cast( invsumnr as isjp_pinr )` |
+| `InvcSmmryPayer` |  | |  | `cast( invsumpayer as isjp_ispayer )` |
+| `InvcSmmryPayerInvcGrpgUnit` |  | |  | `cast( pigrunit as isjp_pigrunit )` |
+| `Currency` |  | |  | `cast ( waers as waers)` |
+| `InvcSmmryRecipient` |  | |  | `cast( invsumrecip as isjp_recipient )` |
+| `InvcSmmryGroupingUnit` |  | |  | `cast( grunit as isjp_grpunit )` |
+| `InvcSmmryClosingDate` |  | |  | `cast( closdate as isjp_closedate )` |
+| `InvcSmmryDueDate` |  | |  | `cast( netdt as isjp_duedate )` |
+| `InvcSmmryNetAmount` |  | |  | `cast( netamnt as isjp_netamnt )` |
+| `InvcSmmryTaxAmount` |  | |  | `cast( taxamnt as isjp_taxamnt )` |
+| `InvcSmmryGrossAmount` |  | |  | `cast(netamnt + taxamnt as isjp_grossamnt )` |
+| `InvcSmmryAmountPaid` |  | |  | `cast( paidamnt as isjp_amntpaid )` |
+| `InvcSmmryPrevInvoicedAmt` |  | |  | `cast( previnvamnt as isjp_previnvamnt )` |
+| `InvcSmmryCarryForwardAmt` |  | |  | `cast( carfwdamnt as isjp_carfwdamnt )` |
+| `InvcSmmryPrevClosingDate` |  | |  | `cast( prevclosdate as isjp_preclosedate )` |
+| `InvcSmmryPrevDueDate` |  | |  | `cast( prevnetdt as isjp_preduedate )` |
+| `InvcSmmryPrevPayerInvoice` |  | |  | `cast( previnvsumnr as isjp_prepinr )` |
+| `InvcSmmryNextPayerInvoice` |  | |  | `cast( nextinvsumnr as isjp_nextpinr )` |
+| `InvcSmmryOpenAmt` |  | |  | `cast( openamnt as isjp_amntopen )` |
+| `ClearingDate` |  | |  | `cast( cleardate as fis_augdt )` |
+| `InvcSmmryIsCancelled` |  | |  | `cast( cancelled as isjp_micancelled )` |
+| `NumberOfOpenItems` |  | |  | `cast( nropenitems as farp_number_of_open_items )` |
+| `InvcSmmryBankCountry` |  | |  | `cast( banks as isjp_banks )` |
+| `InvcSmmryBank` |  | |  | `cast( bankl as isjp_bankl )` |
+| `InvcSmmryVirtualAcctNo` |  | |  | `cast( virtacctnr as isjp_virtacctnr )` |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

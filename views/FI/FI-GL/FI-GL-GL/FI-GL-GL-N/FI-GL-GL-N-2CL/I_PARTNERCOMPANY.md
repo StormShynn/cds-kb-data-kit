@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PartnerCompany` | `PartnerCompany.Company` |
-| `CompanyName` | `PartnerCompany.CompanyName` |
-| `Language` | `PartnerCompany.CompanyLanguage` |
-| `_Language` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_GLAccount` | *Association* |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
-| `_GlobalCompanyHierNode` | *Association* |
-| `_PartnerCompanySupplierAuthzn` | *Association* |
-| `_PartnerCompanyCustomerAuthzn` | *Association* |
-| `_PartnerCompanyGLAcctAuthzn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PartnerCompany` | ✓ | |  | `Company` |
+| `CompanyName` |  | |  |  |
+| `Language` |  | |  | `CompanyLanguage` |
+| `_Language` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_GlobalCompanyHierNode` | | ✓ | | |
+| `_PartnerCompanySupplierAuthzn` | | ✓ | | |
+| `_PartnerCompanyCustomerAuthzn` | | ✓ | | |
+| `_PartnerCompanyGLAcctAuthzn` | | ✓ | | |
 
 ## Associations
 

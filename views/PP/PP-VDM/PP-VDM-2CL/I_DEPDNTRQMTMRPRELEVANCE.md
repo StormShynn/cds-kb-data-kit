@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DependentRqmtMRPRelevance` | `cast(substring(l.domvalue_l, 1, 1) as pph_ahdis preserving type)` |
-| `DomainValue` | `l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DependentRqmtMRPRelevance` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as pph_ahdis preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

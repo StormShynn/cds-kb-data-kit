@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrder` | `ServiceOrder` |
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| `_ServiceOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `_ServiceOrderTP` | | ✓ | | |
 
 ## Source Code
 

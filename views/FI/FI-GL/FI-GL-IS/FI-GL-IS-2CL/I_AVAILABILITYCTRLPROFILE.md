@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AvailabilityControlProfile` | `profile` |
-| `AvailabilityControlProfileType` | `profile_type` |
-| `AvailyCtrlTimeRangeType` | `time_range` |
-| `BudgetCurrencyRole` | `budget_currency_type` |
-| `_Text` | *Association* |
-| `_SemanticTag` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AvailabilityControlProfile` | ✓ | |  | `profile` |
+| `AvailabilityControlProfileType` |  | |  | `profile_type` |
+| `AvailyCtrlTimeRangeType` |  | |  | `time_range` |
+| `BudgetCurrencyRole` |  | |  | `budget_currency_type` |
+| `_Text` | | ✓ | | |
+| `_SemanticTag` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnCreationMode` | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_crmode_kk preserving type)` |
-| `_CABillgPlnCreationModeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnCreationMode` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_crmode_kk preserving type)` |
+| `_CABillgPlnCreationModeText` | | ✓ | | |
 
 ## Associations
 

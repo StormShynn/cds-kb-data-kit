@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `plpo.plnty` |
-| key `BillOfOperationsGroup` | `plpo.plnnr` |
-| key `BOOOperationInternalID` | `plpo.plnkn` |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  | `plnty` |
+| `BillOfOperationsGroup` | ✓ | |  | `plnnr` |
+| `BOOOperationInternalID` | ✓ | |  | `plnkn` |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_MethodText.Language` |
-| key `CnsldtnCrcyTranslationMethod` | `cast ( _MethodText.ConsolidationMethod as fincs_crcy_trnsltn_method preserving type )` |
-| `CnsldtnCrcyTrnsltnMethodText` | `cast ( _MethodText.ConsolidationMethodText as fincs_crcy_trnsltn_method_text preserving type )` |
-| `_Language` | *Association* |
-| `_CnsldtnCrcyTrnsltnMethod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_MethodText` | `Language` |
+| `CnsldtnCrcyTranslationMethod` | ✓ | |  | `cast ( _MethodText.ConsolidationMethod as fincs_crcy_trnsltn_method preserving type )` |
+| `CnsldtnCrcyTrnsltnMethodText` |  | |  | `cast ( _MethodText.ConsolidationMethodText as fincs_crcy_trnsltn_method_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_CnsldtnCrcyTrnsltnMethod` | | ✓ | | |
 
 ## Associations
 

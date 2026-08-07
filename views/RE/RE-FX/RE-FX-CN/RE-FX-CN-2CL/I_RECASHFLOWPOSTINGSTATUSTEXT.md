@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `CashFlowPostingStatus` | `cast( dd07t.domvalue_l as recdcfstatus )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `RECashFlowPostingStatusName` | `dd07t.ddtext` |
-| `_Language` | *Association* |
-| `_RECashFlowPostingStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `CashFlowPostingStatus` | ✓ | |  | `cast( dd07t.domvalue_l as recdcfstatus )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `RECashFlowPostingStatusName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_RECashFlowPostingStatus` | | ✓ | | |
 
 ## Associations
 

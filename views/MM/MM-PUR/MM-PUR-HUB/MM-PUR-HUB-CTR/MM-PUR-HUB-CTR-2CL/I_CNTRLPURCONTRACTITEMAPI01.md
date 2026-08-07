@@ -30,54 +30,54 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| key `CentralPurchaseContractItem` | `CentralPurchaseContractItem` |
-| `PurchasingDocumentItemCategory` | `PurchasingDocumentItemCategory` |
-| `FormattedPurchaseContractItem` | `FormattedPurchaseContractItem` |
-| `MaterialGroup` | `MaterialGroup` |
-| `PurchasingCentralMaterial` | `PurchasingCentralMaterial` |
-| `ProcmtHubExtReferencedMaterial` | `ProcmtHubExtReferencedMaterial` |
-| `CntrlPurContractItemText` | `PurchaseContractItemText` |
-| `ProductType` | `ProductType` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `OrderPriceUnit` | `OrderPriceUnit` |
-| `TargetQuantity` | `TargetQuantity` |
-| `CntrlPurContrItmTargetAmount` | `CntrlPurContrItmTargetAmount` |
-| `ContractNetPriceAmount` | `ContractNetPriceAmount` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `PurgDocReleaseOrderQuantity` | `PurgDocReleaseOrderQuantity` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `NoDaysReminder1` | `NoDaysReminder1` |
-| `NoDaysReminder2` | `NoDaysReminder2` |
-| `NoDaysReminder3` | `NoDaysReminder3` |
-| `PurgDocOrderAcknNumber` | `PurgDocOrderAcknNumber` |
-| `RequirementTracking` | `RequirementTracking` |
-| `SupplierMaterialNumber` | `SupplierMaterialNumber` |
-| `IsOrderAcknRqd` | `IsOrderAcknRqd` |
-| `PurgDocEstimatedPrice` | `PurgDocEstimatedPrice` |
-| `PriceIsToBePrinted` | `PriceIsToBePrinted` |
-| `UnderdelivTolrtdLmtRatioInPct` | `UnderdelivTolrtdLmtRatioInPct` |
-| `OverdelivTolrtdLmtRatioInPct` | `OverdelivTolrtdLmtRatioInPct` |
-| `UnlimitedOverdeliveryIsAllowed` | `UnlimitedOverdeliveryIsAllowed` |
-| `StockType` | `StockType` |
-| `TaxCode` | `TaxCode` |
-| `ShippingInstruction` | `ShippingInstruction` |
-| `GoodsReceiptIsExpected` | `GoodsReceiptIsExpected` |
-| `GoodsReceiptIsNonValuated` | `GoodsReceiptIsNonValuated` |
-| `InvoiceIsExpected` | `InvoiceIsExpected` |
-| `InvoiceIsGoodsReceiptBased` | `InvoiceIsGoodsReceiptBased` |
-| `EvaldRcptSettlmtIsAllowed` | `EvaldRcptSettlmtIsAllowed` |
-| `PurchasingContractDeletionCode` | `PurchasingContractDeletionCode` |
-| `ActivePurchasingDocument` | `ActivePurchasingDocument` |
-| `PurgDocItmBlkRsnCode` | `PurgDocItmBlkRsnCode` |
-| `PurchasingParentItem` | `PurchasingParentItem` |
-| `IsOutline` | `IsStatisticalItem` |
-| `_CentralPurchaseContract` | *Association* |
-| `_CntrlPurConItmDistribution` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `CentralPurchaseContractItem` | ✓ | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `FormattedPurchaseContractItem` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `PurchasingCentralMaterial` |  | |  |  |
+| `ProcmtHubExtReferencedMaterial` |  | |  |  |
+| `CntrlPurContractItemText` |  | |  | `PurchaseContractItemText` |
+| `ProductType` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `CntrlPurContrItmTargetAmount` |  | |  |  |
+| `ContractNetPriceAmount` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `PurgDocReleaseOrderQuantity` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `NoDaysReminder1` |  | |  |  |
+| `NoDaysReminder2` |  | |  |  |
+| `NoDaysReminder3` |  | |  |  |
+| `PurgDocOrderAcknNumber` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `IsOrderAcknRqd` |  | |  |  |
+| `PurgDocEstimatedPrice` |  | |  |  |
+| `PriceIsToBePrinted` |  | |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
+| `StockType` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `ShippingInstruction` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
+| `PurchasingContractDeletionCode` |  | |  |  |
+| `ActivePurchasingDocument` |  | |  |  |
+| `PurgDocItmBlkRsnCode` |  | |  |  |
+| `PurchasingParentItem` |  | |  |  |
+| `IsOutline` |  | |  | `IsStatisticalItem` |
+| `_CentralPurchaseContract` | | ✓ | | |
+| `_CntrlPurConItmDistribution` | | ✓ | | |
 
 ## Associations
 

@@ -34,22 +34,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContract` | `SalesContractItemBillingPlan.SalesContract` |
-| key `SalesContractItem` | `SalesContractItemBillingPlan.SalesContractItem` |
-| key `BillingPlan` | `SalesContractItemBillingPlan.BillingPlan` |
-| `BillingPlanType` | `SalesContractItemBillingPlan.BillingPlanType` |
-| `BillingPlanStartDate` | `SalesContractItemBillingPlan.BillingPlanStartDate` |
-| `BillingPlanStartDateRule` | `SalesContractItemBillingPlan.BillingPlanStartDateRule` |
-| `ReferenceBillingPlan` | `SalesContractItemBillingPlan.ReferenceBillingPlan` |
-| `SalesContractType` | `SalesContractItemBillingPlan.SalesContractType` |
-| `SalesOrganization` | `SalesContractItemBillingPlan.SalesOrganization` |
-| `DistributionChannel` | `SalesContractItemBillingPlan.DistributionChannel` |
-| `OrganizationDivision` | `SalesContractItemBillingPlan.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesContract` | *Association* |
-| `_ItemBillingPlanItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |
+| `SalesContractItem` | ✓ | |  |  |
+| `BillingPlan` | ✓ | |  |  |
+| `BillingPlanType` |  | |  |  |
+| `BillingPlanStartDate` |  | |  |  |
+| `BillingPlanStartDateRule` |  | |  |  |
+| `ReferenceBillingPlan` |  | |  |  |
+| `SalesContractType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesContract` | | ✓ | | |
+| `_ItemBillingPlanItem` | | ✓ | | |
 
 ## Source Code
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeRecordUUID` | `ChangeRecordUUID` |
-| `ChangeRecord` | `ChangeRecord` |
-| `ChangeRecordType` | `ChangeRecordType` |
-| `ChangeRecordStatus` | `ChangeRecordStatus` |
-| `ChangeRecordLifecycleStatus` | `ChangeRecordLifecycleStatus` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `ChgRecdReasonForChange` | `ChgRecdReasonForChange` |
-| `ChangeRecordDetailDescription` | `ChangeRecordDetailDescription` |
-| `ChgRecordDescriptionText` | `ChgRecordDescriptionText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeRecordUUID` | ✓ | |  |  |
+| `ChangeRecord` |  | |  |  |
+| `ChangeRecordType` |  | |  |  |
+| `ChangeRecordStatus` |  | |  |  |
+| `ChangeRecordLifecycleStatus` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ChgRecdReasonForChange` |  | |  |  |
+| `ChangeRecordDetailDescription` |  | |  |  |
+| `ChgRecordDescriptionText` |  | |  |  |
 
 ## Source Code
 

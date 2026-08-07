@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SumzdJITCallMessageIsProcessed` | `cast(substring(txt.domvalue_l, 1, 1) as pabdkz preserving type)` |
-| key `Language` | `cast(txt.ddlanguage as spras preserving type)` |
-| `SumzdJITCallMsgProcessingName` | `cast(txt.ddtext as vdm_sumjitcallmsgisprocdname preserving type)` |
-| `DomainValue` | `txt.domvalue_l` |
-| `_SumzdJITCallMsgIsProcd` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SumzdJITCallMessageIsProcessed` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pabdkz preserving type)` |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
+| `SumzdJITCallMsgProcessingName` |  | |  | `cast(txt.ddtext as vdm_sumjitcallmsgisprocdname preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_SumzdJITCallMsgIsProcd` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

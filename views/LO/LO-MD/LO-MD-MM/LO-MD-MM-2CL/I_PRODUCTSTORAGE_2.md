@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `mara.matnr` |
-| `StorageConditions` | `mara.raube` |
-| `TemperatureConditionInd` | `mara.tempb` |
-| `HazardousMaterialNumber` | `mara.stoff` |
-| `NmbrOfGROrGISlipsToPrintQty` | `mara.wesch` |
-| `LabelType` | `mara.etiar` |
-| `LabelForm` | `mara.etifo` |
-| `MinRemainingShelfLife` | `mara.mhdrz` |
-| `ProductExpirationDateCode` | `mara.sled_bbd` |
-| `StorageBinInstruction` | `mara.behvo` |
-| `TotalShelfLifeStoragePercent` | `mara.mhdlp` |
-| `ShelfLifeExpirationDatePeriod` | `cast(mara.iprkz as shelflifeexpirationdateperiod preserving type )` |
-| `ShelfLifeExprtnDateRndngRule` | `mara.rdmhd` |
-| `AuthorizationGroup` | `mara.begru` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `TotalShelfLife` | `mara.mhdhb` |
-| `BaseUnit` | `mara.meins` |
-| `_Product` | *Association* |
-| `_StorageCondition` | *Association* |
-| `_TemperatureConditionInd` | *Association* |
-| `_TemperatureConditionText` | *Association* |
-| `_ShelfLifeExprtnDateRndngRule` | *Association* |
-| `_StorageBinInstruction` | *Association* |
-| `_LabelForm` | *Association* |
-| `_ShelfLifeExpirationDatePeriod` | *Association* |
-| `_LabelType` | *Association* |
-| `_ProductExpirationDateCode` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_ShelfLifeExprtnDatePeriodText` | *Association* |
-| `_ProductDescription` | *Association* |
-| `_BaseUnitOfMeasureText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `StorageConditions` |  | |  | `raube` |
+| `TemperatureConditionInd` |  | |  | `tempb` |
+| `HazardousMaterialNumber` |  | |  | `stoff` |
+| `NmbrOfGROrGISlipsToPrintQty` |  | |  | `wesch` |
+| `LabelType` |  | |  | `etiar` |
+| `LabelForm` |  | |  | `etifo` |
+| `MinRemainingShelfLife` |  | |  | `mhdrz` |
+| `ProductExpirationDateCode` |  | |  | `sled_bbd` |
+| `StorageBinInstruction` |  | |  | `behvo` |
+| `TotalShelfLifeStoragePercent` |  | |  | `mhdlp` |
+| `ShelfLifeExpirationDatePeriod` |  | |  | `cast(mara.iprkz as shelflifeexpirationdateperiod preserving type )` |
+| `ShelfLifeExprtnDateRndngRule` |  | |  | `rdmhd` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `TotalShelfLife` |  | |  | `mhdhb` |
+| `BaseUnit` |  | |  | `meins` |
+| `_Product` | | ✓ | | |
+| `_StorageCondition` | | ✓ | | |
+| `_TemperatureConditionInd` | | ✓ | | |
+| `_TemperatureConditionText` | | ✓ | | |
+| `_ShelfLifeExprtnDateRndngRule` | | ✓ | | |
+| `_StorageBinInstruction` | | ✓ | | |
+| `_LabelForm` | | ✓ | | |
+| `_ShelfLifeExpirationDatePeriod` | | ✓ | | |
+| `_LabelType` | | ✓ | | |
+| `_ProductExpirationDateCode` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_ShelfLifeExprtnDatePeriodText` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | |
 
 ## Associations
 

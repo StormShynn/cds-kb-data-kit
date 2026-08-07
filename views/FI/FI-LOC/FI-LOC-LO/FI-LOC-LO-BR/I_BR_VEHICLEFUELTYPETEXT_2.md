@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `VehicleFuelType` | `cast ( tpcomb as logbr_vehiclefueltype preserving type )` |
-| `VehicleFuelTypeDesc` | `cast( tpcombt as logbr_vehiclefueldescription preserving type )` |
-| `_VehicleFuelType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `VehicleFuelType` | ✓ | |  | `cast ( tpcomb as logbr_vehiclefueltype preserving type )` |
+| `VehicleFuelTypeDesc` |  | |  | `cast( tpcombt as logbr_vehiclefueldescription preserving type )` |
+| `_VehicleFuelType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

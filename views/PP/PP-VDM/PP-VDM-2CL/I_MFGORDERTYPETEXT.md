@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturingOrderType` | `cast(txt.OrderType as manufacturingordertype preserving type)` |
-| key `Language` | `cast(txt.Language as spras preserving type)` |
-| `ManufacturingOrderTypeName` | `cast(txt.OrderTypeName as manufacturingordertypename preserving type)` |
-| `_OrderType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrderType` | ✓ | |  | `cast(txt.OrderType as manufacturingordertype preserving type)` |
+| `Language` | ✓ | |  | `cast(txt.Language as spras preserving type)` |
+| `ManufacturingOrderTypeName` |  | |  | `cast(txt.OrderTypeName as manufacturingordertypename preserving type)` |
+| `_OrderType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IndustrySystemType` | `istype` |
-| key `IndustrySector` | `ind_sector` |
-| `_Text` | *Association* |
-| `_BusPartIndustrySystem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IndustrySystemType` | ✓ | |  | `istype` |
+| `IndustrySector` | ✓ | |  | `ind_sector` |
+| `_Text` | | ✓ | | |
+| `_BusPartIndustrySystem` | | ✓ | | |
 
 ## Associations
 

@@ -30,43 +30,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `EWMWarehouse` | `EWMWarehouse` |
-| key `EntitledToDisposeParty` | `EntitledToDisposeParty` |
-| key `EWMStorageType` | `EWMStorageType` |
-| `ProductInternalUUID` | `ProductInternalUUID` |
-| `SupplyChainUnitUUID` | `SupplyChainUnitUUID` |
-| `EWMPartyEntitledToDisposeUUID` | `EWMPartyEntitledToDisposeUUID` |
-| `EWMStorageSectionMethod` | `EWMStorageSectionMethod` |
-| `EWMStorageBinType` | `EWMStorageBinType` |
-| `EWMMaximumNumberOfBins` | `EWMMaximumNumberOfBins` |
-| `EWMMaximumStorageQuantity` | `EWMMaximumStorageQuantity` |
-| `EWMMaxStorQuantityBaseUnit` | `EWMMaxStorQuantityBaseUnit` |
-| `EWMMaxStorQuantityDisplayUnit` | `EWMMaxStorQuantityDisplayUnit` |
-| `EWMMinimumStorageQuantity` | `EWMMinimumStorageQuantity` |
-| `EWMMinStorQuantityBaseUnit` | `EWMMinStorQuantityBaseUnit` |
-| `EWMMinStorQuantityDisplayUnit` | `EWMMinStorQuantityDisplayUnit` |
-| `EWMMinReplnmtQuantity` | `EWMMinReplnmtQuantity` |
-| `EWMMinReplnmtQtyBaseUnit` | `EWMMinReplnmtQtyBaseUnit` |
-| `EWMMinReplnmtQtyDisplayUnit` | `EWMMinReplnmtQtyDisplayUnit` |
-| `EWMMinStorQtyOfMaxStorQtyInPct` | `EWMMinStorQtyOfMaxStorQtyInPct` |
-| `EWMSpltPtwyThresholdInPercent` | `EWMSpltPtwyThresholdInPercent` |
-| `EWMProdIsSplitOnPtwy` | `EWMProdIsSplitOnPtwy` |
-| `EWMProdIsSkippedOnPtwy` | `EWMProdIsSkippedOnPtwy` |
-| `EWMHasNoReplenishment` | `EWMHasNoReplenishment` |
-| `EWMStorageBinSearchRule` | `EWMStorageBinSearchRule` |
-| `EWMProdQuantityClassification` | `EWMProdQuantityClassification` |
-| `EWMProdPtwyQtyClassification` | `EWMProdPtwyQtyClassification` |
-| `EWMPtwySequence` | `EWMPtwySequence` |
-| `_ProductEWMWarehouse` | *Association* |
-| `_Product` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_MaxStorageQtyDisplayUnitText` | *Association* |
-| `_MinStorageQtyDisplayUnitText` | *Association* |
-| `_MinReplnmtQtyDisplayUnitText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `EWMWarehouse` | ✓ | |  |  |
+| `EntitledToDisposeParty` | ✓ | |  |  |
+| `EWMStorageType` | ✓ | |  |  |
+| `ProductInternalUUID` |  | |  |  |
+| `SupplyChainUnitUUID` |  | |  |  |
+| `EWMPartyEntitledToDisposeUUID` |  | |  |  |
+| `EWMStorageSectionMethod` |  | |  |  |
+| `EWMStorageBinType` |  | |  |  |
+| `EWMMaximumNumberOfBins` |  | |  |  |
+| `EWMMaximumStorageQuantity` |  | |  |  |
+| `EWMMaxStorQuantityBaseUnit` |  | |  |  |
+| `EWMMaxStorQuantityDisplayUnit` |  | |  |  |
+| `EWMMinimumStorageQuantity` |  | |  |  |
+| `EWMMinStorQuantityBaseUnit` |  | |  |  |
+| `EWMMinStorQuantityDisplayUnit` |  | |  |  |
+| `EWMMinReplnmtQuantity` |  | |  |  |
+| `EWMMinReplnmtQtyBaseUnit` |  | |  |  |
+| `EWMMinReplnmtQtyDisplayUnit` |  | |  |  |
+| `EWMMinStorQtyOfMaxStorQtyInPct` |  | |  |  |
+| `EWMSpltPtwyThresholdInPercent` |  | |  |  |
+| `EWMProdIsSplitOnPtwy` |  | |  |  |
+| `EWMProdIsSkippedOnPtwy` |  | |  |  |
+| `EWMHasNoReplenishment` |  | |  |  |
+| `EWMStorageBinSearchRule` |  | |  |  |
+| `EWMProdQuantityClassification` |  | |  |  |
+| `EWMProdPtwyQtyClassification` |  | |  |  |
+| `EWMPtwySequence` |  | |  |  |
+| `_ProductEWMWarehouse` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_MaxStorageQtyDisplayUnitText` | | ✓ | | |
+| `_MinStorageQtyDisplayUnitText` | | ✓ | | |
+| `_MinReplnmtQtyDisplayUnitText` | | ✓ | | |
 
 ## Source Code
 

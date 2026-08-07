@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ConsolidationUnit` | `cast(ConsolidationUnit as fincs_elim_unit preserving type )` |
-| `ConsolidationUnitMdmText` | `cast(ConsolidationUnitMdmText as fincs_description_text_50 preserving type )` |
-| `_CnsldtnUnit` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ConsolidationUnit` | ✓ | |  | `cast(ConsolidationUnit as fincs_elim_unit preserving type )` |
+| `ConsolidationUnitMdmText` |  | |  | `cast(ConsolidationUnitMdmText as fincs_description_text_50 preserving type )` |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

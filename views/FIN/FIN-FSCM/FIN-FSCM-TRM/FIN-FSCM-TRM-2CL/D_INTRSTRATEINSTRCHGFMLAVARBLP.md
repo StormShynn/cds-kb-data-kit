@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `FinancialTransactionDirection` | `tb_rkondgr` |
-| `FinConditionItem` | `tb_kond` |
-| `ConditionItemValidityStartDate` | `dguel_kp` |
-| `FinCndnFormulaVariable` | `tb_varname` |
-| `FinInstrConditionLogicGroup` | `ftr_instr_cndn_logic_group` |
-| `ConditionPercentageRate` | `pkond` |
-| `ReferenceInterestRate` | `szsref` |
-| `_Condition` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialTransactionDirection` |  | |  | `tb_rkondgr` |
+| `FinConditionItem` |  | |  | `tb_kond` |
+| `ConditionItemValidityStartDate` |  | |  | `dguel_kp` |
+| `FinCndnFormulaVariable` |  | |  | `tb_varname` |
+| `FinInstrConditionLogicGroup` |  | |  | `ftr_instr_cndn_logic_group` |
+| `ConditionPercentageRate` |  | |  | `pkond` |
+| `ReferenceInterestRate` |  | |  | `szsref` |
+| `_Condition` | | ✓ | | |
 
 ## Source Code
 

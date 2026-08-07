@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `sprsl` |
-| key `QualityMgmtSystemForSupplier` | `qssys` |
-| `QltyMgmtSystemForSupplierText` | `qstext` |
-| `_Language` | *Association* |
-| `_QualityMgmtSystemForSupplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprsl` |
+| `QualityMgmtSystemForSupplier` | ✓ | |  | `qssys` |
+| `QltyMgmtSystemForSupplierText` |  | |  | `qstext` |
+| `_Language` | | ✓ | | |
+| `_QualityMgmtSystemForSupplier` | | ✓ | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControlRecipeDestinationType` | `cast( substring(txt.domvalue_l, 1, 1) as comty preserving type)` |
-| key `Language` | `cast(txt.ddlanguage as spras preserving type)` |
-| `ControlRecipeDestTypeName` | `cast(txt.ddtext as destinationtypename preserving type)` |
-| `DomainValue` | `txt.domvalue_l` |
-| `_Language` | *Association* |
-| `_DestinationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControlRecipeDestinationType` | ✓ | |  | `cast( substring(txt.domvalue_l, 1, 1) as comty preserving type)` |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
+| `ControlRecipeDestTypeName` |  | |  | `cast(txt.ddtext as destinationtypename preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_DestinationType` | | ✓ | | |
 
 ## Associations
 

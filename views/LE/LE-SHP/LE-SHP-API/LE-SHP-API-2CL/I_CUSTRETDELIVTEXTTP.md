@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturnDelivery` | `CustomerReturnDelivery` |
-| key `Language` | `Language` |
-| key `LongTextID` | `LongTextID` |
-| `LongText` | `LongText` |
-| `_Delivery` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturnDelivery` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongText` |  | |  |  |
+| `_Delivery` | | ✓ | | |
 
 ## Source Code
 

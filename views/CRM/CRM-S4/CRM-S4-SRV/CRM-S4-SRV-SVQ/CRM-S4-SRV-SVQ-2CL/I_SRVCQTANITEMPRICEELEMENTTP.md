@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceQuotation` | `ServiceQuotation` |
-| key `ServiceQuotationItem` | `ServiceQuotationItem` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `PrcgProcedureCounterForHeader` | `PrcgProcedureCounterForHeader` |
-| `ConditionType` | `ConditionType` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionCurrency` | `ConditionCurrency` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionInactiveReason` | `ConditionInactiveReason` |
-| `_ConditionQuantityUnit` | *Association* |
-| `_ConditionInactiveReason` | *Association* |
-| `_ServiceQuotationItemTP` | *Association* |
-| `_ServiceQuotationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |
+| `ServiceQuotationItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `_ConditionQuantityUnit` | | ✓ | | |
+| `_ConditionInactiveReason` | | ✓ | | |
+| `_ServiceQuotationItemTP` | | ✓ | | |
+| `_ServiceQuotationTP` | | ✓ | | |
 
 ## Source Code
 

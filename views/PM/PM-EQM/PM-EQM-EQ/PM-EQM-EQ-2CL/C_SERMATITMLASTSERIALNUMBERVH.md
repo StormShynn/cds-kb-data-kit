@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material.Material` |
-| `EquipMaterialLastSerialNumber` | `LastSerialNumber.EquipMaterialLastSerialNumber` |
-| `AuthorizationGroup` | `Material.AuthorizationGroup` |
-| `MaterialGroup` | `Material.MaterialGroup` |
-| `MaterialType` | `Material.MaterialType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `EquipMaterialLastSerialNumber` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `MaterialType` |  | |  |  |
 
 ## Source Code
 

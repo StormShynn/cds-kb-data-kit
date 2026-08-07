@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ArchitecturalObjectNumber` | `ArchitecturalObjectNumber` |
-| key `TechnicalObjectType` | `TechnicalObjectType` |
-| key `DocumentText` | `DocumentText` |
-| key `Language` | `Language` |
-| key `PurchaseContract` | `PurchaseContract` |
-| key `PurchaseContractItem` | `PurchaseContractItem` |
-| `NoteDescription` | `NoteDescription` |
-| `FixedIndicator` | `FixedIndicator` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_PurchaseContractItem` | *Association* |
-| `_PurContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ArchitecturalObjectNumber` | ✓ | |  |  |
+| `TechnicalObjectType` | ✓ | |  |  |
+| `DocumentText` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `NoteDescription` |  | |  |  |
+| `FixedIndicator` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_PurchaseContractItem` | | ✓ | | |
+| `_PurContract` | | ✓ | | |
 
 ## Source Code
 

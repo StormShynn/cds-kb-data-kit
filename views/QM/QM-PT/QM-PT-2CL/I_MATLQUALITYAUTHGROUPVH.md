@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MatlQualityAuthorizationGroup` | `MatlQualityAuthorizationGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MatlQualityAuthorizationGroup` | ✓ | |  |  |
 
 ## Source Code
 

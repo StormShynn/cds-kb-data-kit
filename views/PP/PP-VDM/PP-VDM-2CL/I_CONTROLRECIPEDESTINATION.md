@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `tc52.werks` |
-| key `ControlRecipeDestination` | `cast(tc52.phseq as vdm_phseq preserving type)` |
-| `ControlRecipeDestinationType` | `tc52.comty` |
-| `ControlRecipeDestinationName` | `tc52.sebez` |
-| `DigitalSignatureIsRequired` | `tc52.elec_sign` |
-| `NumberOfPhasesDisplayed` | `tc52.vis_phases` |
-| `_Plant` | *Association* |
-| `_Type` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `ControlRecipeDestination` | ✓ | |  | `cast(tc52.phseq as vdm_phseq preserving type)` |
+| `ControlRecipeDestinationType` |  | |  | `comty` |
+| `ControlRecipeDestinationName` |  | |  | `sebez` |
+| `DigitalSignatureIsRequired` |  | |  | `elec_sign` |
+| `NumberOfPhasesDisplayed` |  | |  | `vis_phases` |
+| `_Plant` | | ✓ | | |
+| `_Type` | | ✓ | | |
 
 ## Associations
 

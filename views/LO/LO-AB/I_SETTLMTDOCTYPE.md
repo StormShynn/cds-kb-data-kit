@@ -27,37 +27,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtDocType` | `SettlmtDocType` |
-| `SAPObjectType` | `SAPObjectType` |
-| `SettlmtDocCat` | `SettlmtDocCat` |
-| `SettlmtCat` | `SettlmtCat` |
-| `SettlmtBusProcVar` | `SettlmtBusProcVar` |
-| `SettlmtBusProcCat` | `SettlmtBusProcCat` |
-| `SettlmtRptgDisplayVariant` | `SettlmtRptgDisplayVariant` |
-| `SettlmtMgmtPrcgApplCat` | `SettlmtMgmtPrcgApplCat` |
-| `SettlmtTxCodeTxTypeChkCat` | `SettlmtTxCodeTxTypeChkCat` |
-| `SettlmtDataXtrctnCat` | `SettlmtDataXtrctnCat` |
-| `SettlmtHdrTxtDetnProced` | `SettlmtHdrTxtDetnProced` |
-| `SettlmtItmTxtDetnProced` | `SettlmtItmTxtDetnProced` |
-| `JournalEntryType` | `JournalEntryType` |
-| `AltvJournalEntryType` | `AltvJournalEntryType` |
-| `SettlmtDocTypeOfCollection` | `SettlmtDocTypeOfCollection` |
-| `SettlmtMgmtDocItemDistrCat` | `SettlmtMgmtDocItemDistrCat` |
-| `_Text` | *Association* |
-| `_SettlmtDocCat` | *Association* |
-| `_SettlmtCat` | *Association* |
-| `_SettlmtBusProcVar` | *Association* |
-| `_SettlmtBusProcCat` | *Association* |
-| `_SettlmtRptgDisplayVariant` | *Association* |
-| `_SettlmtMgmtPrcgApplCat` | *Association* |
-| `_SettlmtTxCodeTxTypeChkCat` | *Association* |
-| `_SettlmtHdrTxtDetnProced` | *Association* |
-| `_SettlmtItmTxtDetnProced` | *Association* |
-| `_SettlmtDocTypeOfCollection` | *Association* |
-| `_SettlmtMgmtDocItemDistrCat` | *Association* |
-| `_SettlmtDataXtrctnCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtDocType` | ✓ | |  |  |
+| `SAPObjectType` |  | |  |  |
+| `SettlmtDocCat` |  | |  |  |
+| `SettlmtCat` |  | |  |  |
+| `SettlmtBusProcVar` |  | |  |  |
+| `SettlmtBusProcCat` |  | |  |  |
+| `SettlmtRptgDisplayVariant` |  | |  |  |
+| `SettlmtMgmtPrcgApplCat` |  | |  |  |
+| `SettlmtTxCodeTxTypeChkCat` |  | |  |  |
+| `SettlmtDataXtrctnCat` |  | |  |  |
+| `SettlmtHdrTxtDetnProced` |  | |  |  |
+| `SettlmtItmTxtDetnProced` |  | |  |  |
+| `JournalEntryType` |  | |  |  |
+| `AltvJournalEntryType` |  | |  |  |
+| `SettlmtDocTypeOfCollection` |  | |  |  |
+| `SettlmtMgmtDocItemDistrCat` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_SettlmtDocCat` | | ✓ | | |
+| `_SettlmtCat` | | ✓ | | |
+| `_SettlmtBusProcVar` | | ✓ | | |
+| `_SettlmtBusProcCat` | | ✓ | | |
+| `_SettlmtRptgDisplayVariant` | | ✓ | | |
+| `_SettlmtMgmtPrcgApplCat` | | ✓ | | |
+| `_SettlmtTxCodeTxTypeChkCat` | | ✓ | | |
+| `_SettlmtHdrTxtDetnProced` | | ✓ | | |
+| `_SettlmtItmTxtDetnProced` | | ✓ | | |
+| `_SettlmtDocTypeOfCollection` | | ✓ | | |
+| `_SettlmtMgmtDocItemDistrCat` | | ✓ | | |
+| `_SettlmtDataXtrctnCat` | | ✓ | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDApprovalReason` | `apm_approval_reason` |
-| `WorkflowIsExternal` | `external_workflow` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDApprovalReason` | ✓ | |  | `apm_approval_reason` |
+| `WorkflowIsExternal` |  | |  | `external_workflow` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

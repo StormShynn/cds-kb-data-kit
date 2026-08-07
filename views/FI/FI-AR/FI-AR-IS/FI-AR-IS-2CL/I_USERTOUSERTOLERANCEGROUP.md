@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserID` | `usnam` |
-| `UserToleranceGroup` | `cast( rfpro as fins_rfpro )` |
-| `_UserToleranceGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserID` | ✓ | |  | `usnam` |
+| `UserToleranceGroup` |  | |  | `cast( rfpro as fins_rfpro )` |
+| `_UserToleranceGroup` | | ✓ | | |
 
 ## Associations
 

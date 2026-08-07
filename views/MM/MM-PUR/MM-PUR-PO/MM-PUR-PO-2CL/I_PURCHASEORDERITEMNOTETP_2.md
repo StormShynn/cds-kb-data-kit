@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| `PlainLongText` | `PlainLongText` |
-| `PurchaseOrderItemUniqueID` | `PurchaseOrderItemUniqueID` |
-| `_Language` | *Association* |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `PlainLongText` |  | |  |  |
+| `PurchaseOrderItemUniqueID` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
 
 ## Source Code
 

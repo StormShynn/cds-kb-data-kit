@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationReportingLevel` | `cast(left(_Domain.DomainValue, 2) as fincs_reportinglevel preserving type )` |
-| `DomainValue` | `_Domain.DomainValue` |
-| `_Text` | *Association* |
-| `_Text_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationReportingLevel` | ✓ | |  | `cast(left(_Domain.DomainValue, 2) as fincs_reportinglevel preserving type )` |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |
+| `_Text` | | ✓ | | |
+| `_Text_2` | | ✓ | | |
 
 ## Associations
 

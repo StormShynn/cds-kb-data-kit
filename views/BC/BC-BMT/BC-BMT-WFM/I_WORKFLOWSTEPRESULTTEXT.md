@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowScenarioDefinition` | `WorkflowStepTypeNode.WorkflowScenarioDefinition` |
-| key `WorkflowScenarioDefinitionVers` | `WorkflowStepTypeNode.WorkflowScenarioDefinitionVers` |
-| key `WorkflowStepType` | `WorkflowStepTypeNode.WorkflowStepType` |
-| key `WorkflowStepResult` | `WorkflowStepTypeNode.WorkflowStepResult` |
-| key `Language` | `WorfklowStepText.Language` |
-| `WorkflowStepResultText` | `WorfklowStepText.WorkflowStepText` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowScenarioDefinition` | ✓ | |  |  |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  |  |
+| `WorkflowStepType` | ✓ | |  |  |
+| `WorkflowStepResult` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `WorkflowStepResultText` |  | |  | `WorkflowStepText` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

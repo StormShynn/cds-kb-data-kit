@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdItemSerialNumberUUID` | `TranspOrdItemSerialNumberUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationOrderItemUUID` | `TransportationOrderItemUUID` |
-| `TranspOrdItemSerialNumber` | `TranspOrdItemSerialNumber` |
-| `I_FreightUnitTP` | `FreightUnitItemSerialNumber._TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |
-| `I_FreightUnitItemTP` | `FreightUnitItemSerialNumber._TransportationOrderItem as _FreightUnitItem : redirected to parent I_FreightUnitItemTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdItemSerialNumberUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |
+| `TranspOrdItemSerialNumber` |  | |  |  |
+| `I_FreightUnitTP` |  | |  | `FreightUnitItemSerialNumber._TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |
+| `I_FreightUnitItemTP` |  | |  | `FreightUnitItemSerialNumber._TransportationOrderItem as _FreightUnitItem : redirected to parent I_FreightUnitItemTP` |
 
 ## Source Code
 

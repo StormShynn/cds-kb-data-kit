@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinTransFlowFixingBlkgReason` | `cast( dd07l.domvalue_l as tb_ssprgrd )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinTransFlowFixingBlkgReason` | ✓ | |  | `cast( dd07l.domvalue_l as tb_ssprgrd )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

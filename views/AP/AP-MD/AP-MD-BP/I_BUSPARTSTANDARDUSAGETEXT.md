@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `BusinessPartnerStandardUsage` | `domvalue_l` |
-| `BusPartStandardUsageText` | `ddtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BusinessPartnerStandardUsage` | ✓ | |  | `domvalue_l` |
+| `BusPartStandardUsageText` |  | |  | `ddtext` |
 
 ## Source Code
 

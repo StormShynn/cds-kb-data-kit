@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `ValuationArea` | `ValuationArea` |
-| key `ValuationType` | `ValuationType` |
-| key `CurrencyRole` | `CurrencyRole` |
-| key `Ledger` | `Ledger` |
-| `ProductPriceControl` | `ProductPriceControl` |
-| `ProductPriceUnitQuantity` | `ProductPriceUnitQuantity` |
-| `Currency` | `Currency` |
-| `MovingAveragePrice` | `MovingAveragePrice` |
-| `StandardPrice` | `StandardPrice` |
-| `CompanyCode` | `CompanyCode` |
-| `BaseUnit` | `BaseUnit` |
-| `_Product` | *Association* |
-| `_ProductValuation` | *Association* |
-| `_ProdValnPriceControlText` | *Association* |
-| `_CurrencyText` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `ValuationType` | ✓ | |  |  |
+| `CurrencyRole` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `ProductPriceControl` |  | |  |  |
+| `ProductPriceUnitQuantity` |  | |  |  |
+| `Currency` |  | |  |  |
+| `MovingAveragePrice` |  | |  |  |
+| `StandardPrice` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductValuation` | | ✓ | | |
+| `_ProdValnPriceControlText` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
 
 ## Source Code
 

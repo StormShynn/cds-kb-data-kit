@@ -29,72 +29,72 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlan` | `mpla.warpl` |
-| `MaintenancePlanDesc` | `mpla.wptxt` |
-| `CreationDate` | `mpla.ersdt` |
-| `CreatedByUser` | `mpla.ernam` |
-| `LastChangeDate` | `mpla.aedat` |
-| `LastChangedByUser` | `mpla.aenam` |
-| `MaintenanceStrategy` | `mpla.strat` |
-| `SchedulingDuration` | `mpla.abrho` |
-| `Equipment` | `mpla.equnr` |
-| `FunctionalLocation` | `mpla.tplnr` |
-| `Customer` | `mpla.kunum` |
-| `NumberOfMaintenanceItems` | `mpla.anzps` |
-| `Language` | `mpla.langu` |
-| `CycleModificationRatio` | `mpla.sfakt` |
-| `MaintPlanSchedgIndicator` | `mpla.stich` |
-| `CallHorizonPercent` | `mpla.horiz` |
-| `CallHorizonInDays` | `mpla.horiz_days` |
-| `AuthorizationGroup` | `mpla.begru` |
-| `MaintenancePlanInternalID` | `mpla.objnr` |
-| `MaintenanceCall` | `mpla.abnum` |
-| `MaintenancePlanCategory` | `mpla.mptyp` |
-| `SchedulingDurationUnit` | `mpla.hunit` |
-| `BasicStartDate` | `mpla.stadt` |
-| `MaintPlanFreeDefinedAttrib` | `mpla.plan_sort` |
-| `FactoryCalendar` | `mpla.fabkl` |
-| `MaintPlanIsLockedAgainstCalls` | `mpla.lvorm` |
-| `LastChangeDateTime` | `mpla.changeddatetime` |
-| `LateCompletionShiftInPercent` | `mpla.vspos` |
-| `EarlyCompletionShiftInPercent` | `mpla.vsneg` |
-| `LateCompletionTolerancePercent` | `mpla.topos` |
-| `EarlyCompletionTolerancePct` | `mpla.toneg` |
-| `MaintenanceCallHorizonCalcType` | `cast (mpla.horiz_qualifier as eam_cc_callhorizon_calc_type preserving type)` |
-| `MaintPlanLogicalOperatorCode` | `mpla.andor` |
-| `MultipleCounterPlanShiftFactor` | `mpla.mcp_sf` |
-| `MaintPlanStartCntrReadingValue` | `mpla.szaeh` |
-| `SchedulingStartDate` | `mpla.start_date` |
-| `SchedulingStartTime` | `mpla.start_time` |
-| `MaintPlanEndCntrReadingValue` | `mpla.end_counter` |
-| `SchedulingEndDate` | `mpla.enddt_for_sched` |
-| `MaintenanceLeadFloatInDays` | `mpla.puffp` |
-| `MaintPlnStrtBufDurationInDays` | `mpla.tgoon` |
-| `MaintPlanStartBufferUnit` | `cast('TAG' as hunit)` |
-| `PrdcssrCallObjCompltnIsRqd` | `mpla.call_confirm` |
-| `MaintenancePlanHasLongText` | `mpla.ltknz` |
-| `MaintenancePlanCallObject` | `_MaintenancePlanCatParam.MaintenancePlanCallObject` |
-| `_StatusObjectActiveStatus` | *Association* |
-| `_MaintenanceItem` | *Association* |
-| `_MaintenancePlanCatParam` | *Association* |
-| `_Customer` | *Association* |
-| `_Equipment` | *Association* |
-| `_FunctionalLocationLabel` | *Association* |
-| `_MaintenanceCall` | *Association* |
-| `_MaintPlanCallHistory` | *Association* |
-| `_MaintenanceStrategy` | *Association* |
-| `_FactoryCalendar` | *Association* |
-| `_MaintenanceCycle` | *Association* |
-| `_MaintenancePlanCycle` | *Association* |
-| `_SchedulingIndicator` | *Association* |
-| `_SchedulingDurationUnit` | *Association* |
-| `_LogicalOperator` | *Association* |
-| `_AuthorizationGroup` | *Association* |
-| `_MaintCallConfIsRequired` | *Association* |
-| `_MaintenancePlanSortField` | *Association* |
-| `_MaintPlanStartBufferUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlan` | ✓ | |  | `warpl` |
+| `MaintenancePlanDesc` |  | |  | `wptxt` |
+| `CreationDate` |  | |  | `ersdt` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `MaintenanceStrategy` |  | |  | `strat` |
+| `SchedulingDuration` |  | |  | `abrho` |
+| `Equipment` |  | |  | `equnr` |
+| `FunctionalLocation` |  | |  | `tplnr` |
+| `Customer` |  | |  | `kunum` |
+| `NumberOfMaintenanceItems` |  | |  | `anzps` |
+| `Language` |  | |  | `langu` |
+| `CycleModificationRatio` |  | |  | `sfakt` |
+| `MaintPlanSchedgIndicator` |  | |  | `stich` |
+| `CallHorizonPercent` |  | |  | `horiz` |
+| `CallHorizonInDays` |  | |  | `horiz_days` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `MaintenancePlanInternalID` |  | |  | `objnr` |
+| `MaintenanceCall` |  | |  | `abnum` |
+| `MaintenancePlanCategory` |  | |  | `mptyp` |
+| `SchedulingDurationUnit` |  | |  | `hunit` |
+| `BasicStartDate` |  | |  | `stadt` |
+| `MaintPlanFreeDefinedAttrib` |  | |  | `plan_sort` |
+| `FactoryCalendar` |  | |  | `fabkl` |
+| `MaintPlanIsLockedAgainstCalls` |  | |  | `lvorm` |
+| `LastChangeDateTime` |  | |  | `changeddatetime` |
+| `LateCompletionShiftInPercent` |  | |  | `vspos` |
+| `EarlyCompletionShiftInPercent` |  | |  | `vsneg` |
+| `LateCompletionTolerancePercent` |  | |  | `topos` |
+| `EarlyCompletionTolerancePct` |  | |  | `toneg` |
+| `MaintenanceCallHorizonCalcType` |  | |  | `cast (mpla.horiz_qualifier as eam_cc_callhorizon_calc_type preserving type)` |
+| `MaintPlanLogicalOperatorCode` |  | |  | `andor` |
+| `MultipleCounterPlanShiftFactor` |  | |  | `mcp_sf` |
+| `MaintPlanStartCntrReadingValue` |  | |  | `szaeh` |
+| `SchedulingStartDate` |  | |  | `start_date` |
+| `SchedulingStartTime` |  | |  | `start_time` |
+| `MaintPlanEndCntrReadingValue` |  | |  | `end_counter` |
+| `SchedulingEndDate` |  | |  | `enddt_for_sched` |
+| `MaintenanceLeadFloatInDays` |  | |  | `puffp` |
+| `MaintPlnStrtBufDurationInDays` |  | |  | `tgoon` |
+| `MaintPlanStartBufferUnit` |  | |  | `cast('TAG' as hunit)` |
+| `PrdcssrCallObjCompltnIsRqd` |  | |  | `call_confirm` |
+| `MaintenancePlanHasLongText` |  | |  | `ltknz` |
+| `MaintenancePlanCallObject` |  | | `_MaintenancePlanCatParam` | `MaintenancePlanCallObject` |
+| `_StatusObjectActiveStatus` | | ✓ | | |
+| `_MaintenanceItem` | | ✓ | | |
+| `_MaintenancePlanCatParam` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
+| `_FunctionalLocationLabel` | | ✓ | | |
+| `_MaintenanceCall` | | ✓ | | |
+| `_MaintPlanCallHistory` | | ✓ | | |
+| `_MaintenanceStrategy` | | ✓ | | |
+| `_FactoryCalendar` | | ✓ | | |
+| `_MaintenanceCycle` | | ✓ | | |
+| `_MaintenancePlanCycle` | | ✓ | | |
+| `_SchedulingIndicator` | | ✓ | | |
+| `_SchedulingDurationUnit` | | ✓ | | |
+| `_LogicalOperator` | | ✓ | | |
+| `_AuthorizationGroup` | | ✓ | | |
+| `_MaintCallConfIsRequired` | | ✓ | | |
+| `_MaintenancePlanSortField` | | ✓ | | |
+| `_MaintPlanStartBufferUnit` | | ✓ | | |
 
 ## Associations
 

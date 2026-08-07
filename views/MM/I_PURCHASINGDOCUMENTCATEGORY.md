@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingDocumentCategory` | `cast (cast(substring(dd07l.domvalue_l ,1,1) as abap.char( 1 ) ) as ebstyp )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingDocumentCategory` | ✓ | |  | `cast (cast(substring(dd07l.domvalue_l ,1,1) as abap.char( 1 ) ) as ebstyp )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

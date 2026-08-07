@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsContainerUUID` | `FldLogsContainerUUID` |
-| key `FldLogsCertificateNumber` | `FldLogsCertificateNumber` |
-| `FldLogsCertNumberForEdit` | `FldLogsCertificateNumber` |
-| `FldLogsCertificateType` | `FldLogsCertificateType` |
-| `FldLogsCertStartDate` | `FldLogsCertStartDate` |
-| `FldLogsCertEndDate` | `FldLogsCertEndDate` |
-| `FldLogsNextCertificateDate` | `FldLogsNextCertificateDate` |
-| `FldLogsCtnCertificateStatus` | `FldLogsCtnCertificateStatus` |
-| `FldLogsCtnCertStsCriticality` | `FldLogsCtnCertStsCriticality` |
-| `FldLogsCtnCertLoclLstChgDteTme` | `FldLogsCtnCertLoclLstChgDteTme` |
-| `_CertificateTypeText` | *Association* |
-| `_CertText` | *Association* |
-| `_Container` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsContainerUUID` | ✓ | |  |  |
+| `FldLogsCertificateNumber` | ✓ | |  |  |
+| `FldLogsCertNumberForEdit` |  | |  | `FldLogsCertificateNumber` |
+| `FldLogsCertificateType` |  | |  |  |
+| `FldLogsCertStartDate` |  | |  |  |
+| `FldLogsCertEndDate` |  | |  |  |
+| `FldLogsNextCertificateDate` |  | |  |  |
+| `FldLogsCtnCertificateStatus` |  | |  |  |
+| `FldLogsCtnCertStsCriticality` |  | |  |  |
+| `FldLogsCtnCertLoclLstChgDteTme` |  | |  |  |
+| `_CertificateTypeText` | | ✓ | | |
+| `_CertText` | | ✓ | | |
+| `_Container` | | ✓ | | |
 
 ## Source Code
 

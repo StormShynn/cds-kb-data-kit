@@ -30,139 +30,139 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `cast(kna1.kunnr as kunnr preserving type)` |
-| `CustomerName` | `cast(substring(rtrim(replace(concat(name1, concat(' &@', name2)), '&@', ''),' '),1,80) as md_customer_name)` |
-| `CustomerFullName` | `cast(concat( concat( concat( concat( concat( concat_with_space( anred, name1, 1 ), name2 ), name3 ), name4 ), '/' ), concat_with_space(pstlz, ort01, 1 ) ) as md_customer_full_name)` |
-| `BPCustomerName` | `cast(substring(rtrim(replace(concat(_AddressDefaultRepresentation.AddresseeName1, concat(' &@', _AddressDefaultRepresentation.AddresseeName2)), '&@', ''),' '),1,81) as customername_2)` |
-| `BPCustomerFullName` | `cast(concat( concat_with_space( concat_with_space( concat_with_space(_AddressDefaultRepresentation.AddresseeName1, _AddressDefaultRepresentation.AddresseeName2,1 ), _AddressDefaultRepresentation.AddresseeName3,1 ), _AddressDefaultRepresentation.AddresseeName4,1 ), ' ' ) as md_customer_full_name)` |
-| `CreatedByUser` | `kna1.ernam` |
-| `CreationDate` | `kna1.erdat` |
-| `AddressID` | `kna1.adrnr` |
-| `CustomerClassification` | `kna1.kukla` |
-| `VATRegistration` | `kna1.stceg` |
-| `CustomerAccountGroup` | `kna1.ktokd` |
-| `AuthorizationGroup` | `kna1.begru` |
-| `DeliveryIsBlocked` | `kna1.lifsd` |
-| `PostingIsBlocked` | `kna1.sperr` |
-| `BillingIsBlockedForCustomer` | `kna1.faksd` |
-| `OrderIsBlockedForCustomer` | `kna1.aufsd` |
-| `InternationalLocationNumber1` | `kna1.bbbnr` |
-| `IsOneTimeAccount` | `kna1.xcpdk` |
-| `TaxJurisdiction` | `kna1.txjcd` |
-| `Industry` | `kna1.brsch` |
-| `TaxNumberType` | `kna1.stcdt` |
-| `TaxNumber1` | `kna1.stcd1` |
-| `TaxNumber2` | `kna1.stcd2` |
-| `TaxNumber3` | `kna1.stcd3` |
-| `TaxNumber4` | `kna1.stcd4` |
-| `TaxNumber5` | `kna1.stcd5` |
-| `TaxNumber6` | `kna1.stcd6` |
-| `CustomerCorporateGroup` | `kna1.konzs` |
-| `Supplier` | `kna1.lifnr` |
-| `NielsenRegion` | `kna1.niels` |
-| `IndustryCode1` | `kna1.bran1` |
-| `IndustryCode2` | `kna1.bran2` |
-| `IndustryCode3` | `kna1.bran3` |
-| `IndustryCode4` | `kna1.bran4` |
-| `IndustryCode5` | `kna1.bran5` |
-| `Country` | `kna1.land1` |
-| `OrganizationBPName1` | `kna1.name1` |
-| `OrganizationBPName2` | `kna1.name2` |
-| `CityName` | `kna1.ort01` |
-| `PostalCode` | `kna1.pstlz` |
-| `StreetName` | `kna1.stras` |
-| `SortField` | `kna1.sortl` |
-| `FaxNumber` | `kna1.telfx` |
-| `BR_SUFRAMACode` | `kna1.suframa` |
-| `Region` | `kna1.regio` |
-| `TelephoneNumber1` | `kna1.telf1` |
-| `TelephoneNumber2` | `kna1.telf2` |
-| `AlternativePayerAccount` | `kna1.knrza` |
-| `DataMediumExchangeIndicator` | `kna1.dtams` |
-| `VATLiability` | `kna1.stkzu` |
-| `IsBusinessPurposeCompleted` | `kna1.cvp_xblck` |
-| `ResponsibleType` | `kna1.fityp` |
-| `FiscalAddress` | `kna1.fiskn` |
-| `NFPartnerIsNaturalPerson` | `kna1.stkzn` |
-| `DeletionIndicator` | `kna1.loevm` |
-| `Language` | `kna1.spras` |
-| `TradingPartner` | `kna1.vbund` |
-| `DeliveryDateTypeRule` | `kna1.delivery_date_rule` |
-| `ExpressTrainStationName` | `kna1.bahne` |
-| `TrainStationName` | `kna1.bahns` |
-| `InternationalLocationNumber2` | `kna1.bbsnr` |
-| `InternationalLocationNumber3` | `kna1.bubkz` |
-| `CityCode` | `kna1.cityc` |
-| `County` | `kna1.counc` |
-| `CustomerHasUnloadingPoint` | `kna1.exabl` |
-| `CustomerWorkingTimeCalendar` | `kna1.knazk` |
-| `IsCompetitor` | `kna1.dear1` |
-| `TaxInvoiceRepresentativeName` | `j_1kfrepre` |
-| `BusinessType` | `j_1kftbus` |
-| `IndustryType` | `j_1kftind` |
-| `TW_CollvBillingIsSupported` | `consolidate_invoice` |
-| `AlternativePayeeIsAllowed` | `xzemp` |
-| `FreeDefinedAttribute01` | `katr1` |
-| `FreeDefinedAttribute02` | `katr2` |
-| `FreeDefinedAttribute03` | `katr3` |
-| `FreeDefinedAttribute04` | `katr4` |
-| `FreeDefinedAttribute05` | `katr5` |
-| `FreeDefinedAttribute06` | `katr6` |
-| `FreeDefinedAttribute07` | `katr7` |
-| `FreeDefinedAttribute08` | `katr8` |
-| `FreeDefinedAttribute09` | `katr9` |
-| `FreeDefinedAttribute10` | `katr10` |
-| `PaymentReason` | `kna1.paytrsn` |
-| `CustomerConditionGroup1` | `kna1.kdkg1` |
-| `CustomerConditionGroup2` | `kna1.kdkg2` |
-| `CustomerConditionGroup3` | `kna1.kdkg3` |
-| `CustomerConditionGroup4` | `kna1.kdkg4` |
-| `CustomerConditionGroup5` | `kna1.kdkg5` |
-| `IsSalesProspect` | `kna1.dear3` |
-| `PaymentIsBlockedForCustomer` | `kna1.sperz` |
-| `IsConsumer` | `kna1.dear6` |
-| `DataControllerSet` | `kna1.xdcset` |
-| `DataController1` | `kna1.data_ctrlr1` |
-| `DataController2` | `kna1.data_ctrlr2` |
-| `DataController3` | `kna1.data_ctrlr3` |
-| `DataController4` | `kna1.data_ctrlr4` |
-| `DataController5` | `kna1.data_ctrlr5` |
-| `DataController6` | `kna1.data_ctrlr6` |
-| `DataController7` | `kna1.data_ctrlr7` |
-| `DataController8` | `kna1.data_ctrlr8` |
-| `DataController9` | `kna1.data_ctrlr9` |
-| `DataController10` | `kna1.data_ctrlr10` |
-| `BusinessPartnerName1` | `_AddressDefaultRepresentation.AddresseeName1` |
-| `BusinessPartnerName2` | `_AddressDefaultRepresentation.AddresseeName2` |
-| `BusinessPartnerName3` | `_AddressDefaultRepresentation.AddresseeName3` |
-| `BusinessPartnerName4` | `_AddressDefaultRepresentation.AddresseeName4` |
-| `BPAddrCityName` | `_AddressDefaultRepresentation.CityName` |
-| `BPAddrStreetName` | `_AddressDefaultRepresentation.StreetName` |
-| `AddressSearchTerm1` | `_AddressDefaultRepresentation.AddressSearchTerm1` |
-| `AddressSearchTerm2` | `_AddressDefaultRepresentation.AddressSearchTerm2` |
-| `DistrictName` | `_AddressDefaultRepresentation.DistrictName` |
-| `POBoxDeviatingCityName` | `_AddressDefaultRepresentation.POBoxDeviatingCityName` |
-| `BusinessPartnerFormOfAddress` | `_AddressDefaultRepresentation.FormOfAddress` |
-| `BR_ICMSTaxPayerType` | `kna1.icmstaxpay` |
-| `_CustomerToBusinessPartner` | *Association* |
-| `_CorrespondingSupplier` | *Association* |
-| `_CustomerAccountGroupText` | *Association* |
-| `_CustomerClassification` | *Association* |
-| `_CustomerClassificationText` | *Association* |
-| `_CustomerCompany` | *Association* |
-| `_CustomerSalesArea` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_StandardAddress` | *Association* |
-| `_CustomerSalesAreaTax` | *Association* |
-| `_CustomerAddr` | *Association* |
-| `_CustomerAddrSalesAreaTax` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_CustomerHierarchyNode` | *Association* |
-| `_GlobalCompany` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
-| `_AddressRepresentation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `cast(kna1.kunnr as kunnr preserving type)` |
+| `CustomerName` |  | |  | `cast(substring(rtrim(replace(concat(name1, concat(' &@', name2)), '&@', ''),' '),1,80) as md_customer_name)` |
+| `CustomerFullName` |  | |  | `cast(concat( concat( concat( concat( concat( concat_with_space( anred, name1, 1 ), name2 ), name3 ), name4 ), '/' ), concat_with_space(pstlz, ort01, 1 ) ) as md_customer_full_name)` |
+| `BPCustomerName` |  | |  | `cast(substring(rtrim(replace(concat(_AddressDefaultRepresentation.AddresseeName1, concat(' &@', _AddressDefaultRepresentation.AddresseeName2)), '&@', ''),' '),1,81) as customername_2)` |
+| `BPCustomerFullName` |  | |  | `cast(concat( concat_with_space( concat_with_space( concat_with_space(_AddressDefaultRepresentation.AddresseeName1, _AddressDefaultRepresentation.AddresseeName2,1 ), _AddressDefaultRepresentation.AddresseeName3,1 ), _AddressDefaultRepresentation.AddresseeName4,1 ), ' ' ) as md_customer_full_name)` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDate` |  | |  | `erdat` |
+| `AddressID` |  | |  | `adrnr` |
+| `CustomerClassification` |  | |  | `kukla` |
+| `VATRegistration` |  | |  | `stceg` |
+| `CustomerAccountGroup` |  | |  | `ktokd` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `DeliveryIsBlocked` |  | |  | `lifsd` |
+| `PostingIsBlocked` |  | |  | `sperr` |
+| `BillingIsBlockedForCustomer` |  | |  | `faksd` |
+| `OrderIsBlockedForCustomer` |  | |  | `aufsd` |
+| `InternationalLocationNumber1` |  | |  | `bbbnr` |
+| `IsOneTimeAccount` |  | |  | `xcpdk` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `Industry` |  | |  | `brsch` |
+| `TaxNumberType` |  | |  | `stcdt` |
+| `TaxNumber1` |  | |  | `stcd1` |
+| `TaxNumber2` |  | |  | `stcd2` |
+| `TaxNumber3` |  | |  | `stcd3` |
+| `TaxNumber4` |  | |  | `stcd4` |
+| `TaxNumber5` |  | |  | `stcd5` |
+| `TaxNumber6` |  | |  | `stcd6` |
+| `CustomerCorporateGroup` |  | |  | `konzs` |
+| `Supplier` |  | |  | `lifnr` |
+| `NielsenRegion` |  | |  | `niels` |
+| `IndustryCode1` |  | |  | `bran1` |
+| `IndustryCode2` |  | |  | `bran2` |
+| `IndustryCode3` |  | |  | `bran3` |
+| `IndustryCode4` |  | |  | `bran4` |
+| `IndustryCode5` |  | |  | `bran5` |
+| `Country` |  | |  | `land1` |
+| `OrganizationBPName1` |  | |  | `name1` |
+| `OrganizationBPName2` |  | |  | `name2` |
+| `CityName` |  | |  | `ort01` |
+| `PostalCode` |  | |  | `pstlz` |
+| `StreetName` |  | |  | `stras` |
+| `SortField` |  | |  | `sortl` |
+| `FaxNumber` |  | |  | `telfx` |
+| `BR_SUFRAMACode` |  | |  | `suframa` |
+| `Region` |  | |  | `regio` |
+| `TelephoneNumber1` |  | |  | `telf1` |
+| `TelephoneNumber2` |  | |  | `telf2` |
+| `AlternativePayerAccount` |  | |  | `knrza` |
+| `DataMediumExchangeIndicator` |  | |  | `dtams` |
+| `VATLiability` |  | |  | `stkzu` |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck` |
+| `ResponsibleType` |  | |  | `fityp` |
+| `FiscalAddress` |  | |  | `fiskn` |
+| `NFPartnerIsNaturalPerson` |  | |  | `stkzn` |
+| `DeletionIndicator` |  | |  | `loevm` |
+| `Language` |  | |  | `spras` |
+| `TradingPartner` |  | |  | `vbund` |
+| `DeliveryDateTypeRule` |  | |  | `delivery_date_rule` |
+| `ExpressTrainStationName` |  | |  | `bahne` |
+| `TrainStationName` |  | |  | `bahns` |
+| `InternationalLocationNumber2` |  | |  | `bbsnr` |
+| `InternationalLocationNumber3` |  | |  | `bubkz` |
+| `CityCode` |  | |  | `cityc` |
+| `County` |  | |  | `counc` |
+| `CustomerHasUnloadingPoint` |  | |  | `exabl` |
+| `CustomerWorkingTimeCalendar` |  | |  | `knazk` |
+| `IsCompetitor` |  | |  | `dear1` |
+| `TaxInvoiceRepresentativeName` |  | |  | `j_1kfrepre` |
+| `BusinessType` |  | |  | `j_1kftbus` |
+| `IndustryType` |  | |  | `j_1kftind` |
+| `TW_CollvBillingIsSupported` |  | |  | `consolidate_invoice` |
+| `AlternativePayeeIsAllowed` |  | |  | `xzemp` |
+| `FreeDefinedAttribute01` |  | |  | `katr1` |
+| `FreeDefinedAttribute02` |  | |  | `katr2` |
+| `FreeDefinedAttribute03` |  | |  | `katr3` |
+| `FreeDefinedAttribute04` |  | |  | `katr4` |
+| `FreeDefinedAttribute05` |  | |  | `katr5` |
+| `FreeDefinedAttribute06` |  | |  | `katr6` |
+| `FreeDefinedAttribute07` |  | |  | `katr7` |
+| `FreeDefinedAttribute08` |  | |  | `katr8` |
+| `FreeDefinedAttribute09` |  | |  | `katr9` |
+| `FreeDefinedAttribute10` |  | |  | `katr10` |
+| `PaymentReason` |  | |  | `paytrsn` |
+| `CustomerConditionGroup1` |  | |  | `kdkg1` |
+| `CustomerConditionGroup2` |  | |  | `kdkg2` |
+| `CustomerConditionGroup3` |  | |  | `kdkg3` |
+| `CustomerConditionGroup4` |  | |  | `kdkg4` |
+| `CustomerConditionGroup5` |  | |  | `kdkg5` |
+| `IsSalesProspect` |  | |  | `dear3` |
+| `PaymentIsBlockedForCustomer` |  | |  | `sperz` |
+| `IsConsumer` |  | |  | `dear6` |
+| `DataControllerSet` |  | |  | `xdcset` |
+| `DataController1` |  | |  | `data_ctrlr1` |
+| `DataController2` |  | |  | `data_ctrlr2` |
+| `DataController3` |  | |  | `data_ctrlr3` |
+| `DataController4` |  | |  | `data_ctrlr4` |
+| `DataController5` |  | |  | `data_ctrlr5` |
+| `DataController6` |  | |  | `data_ctrlr6` |
+| `DataController7` |  | |  | `data_ctrlr7` |
+| `DataController8` |  | |  | `data_ctrlr8` |
+| `DataController9` |  | |  | `data_ctrlr9` |
+| `DataController10` |  | |  | `data_ctrlr10` |
+| `BusinessPartnerName1` |  | | `_AddressDefaultRepresentation` | `AddresseeName1` |
+| `BusinessPartnerName2` |  | | `_AddressDefaultRepresentation` | `AddresseeName2` |
+| `BusinessPartnerName3` |  | | `_AddressDefaultRepresentation` | `AddresseeName3` |
+| `BusinessPartnerName4` |  | | `_AddressDefaultRepresentation` | `AddresseeName4` |
+| `BPAddrCityName` |  | | `_AddressDefaultRepresentation` | `CityName` |
+| `BPAddrStreetName` |  | | `_AddressDefaultRepresentation` | `StreetName` |
+| `AddressSearchTerm1` |  | | `_AddressDefaultRepresentation` | `AddressSearchTerm1` |
+| `AddressSearchTerm2` |  | | `_AddressDefaultRepresentation` | `AddressSearchTerm2` |
+| `DistrictName` |  | | `_AddressDefaultRepresentation` | `DistrictName` |
+| `POBoxDeviatingCityName` |  | | `_AddressDefaultRepresentation` | `POBoxDeviatingCityName` |
+| `BusinessPartnerFormOfAddress` |  | | `_AddressDefaultRepresentation` | `FormOfAddress` |
+| `BR_ICMSTaxPayerType` |  | |  | `icmstaxpay` |
+| `_CustomerToBusinessPartner` | | ✓ | | |
+| `_CorrespondingSupplier` | | ✓ | | |
+| `_CustomerAccountGroupText` | | ✓ | | |
+| `_CustomerClassification` | | ✓ | | |
+| `_CustomerClassificationText` | | ✓ | | |
+| `_CustomerCompany` | | ✓ | | |
+| `_CustomerSalesArea` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_StandardAddress` | | ✓ | | |
+| `_CustomerSalesAreaTax` | | ✓ | | |
+| `_CustomerAddr` | | ✓ | | |
+| `_CustomerAddrSalesAreaTax` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_CustomerHierarchyNode` | | ✓ | | |
+| `_GlobalCompany` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
+| `_AddressRepresentation` | | ✓ | | |
 
 ## Associations
 

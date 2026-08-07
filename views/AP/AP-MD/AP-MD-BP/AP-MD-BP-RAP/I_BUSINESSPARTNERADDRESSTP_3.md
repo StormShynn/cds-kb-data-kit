@@ -33,84 +33,84 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| `AddressIDForEdit` | `AddressIDForEdit` |
-| `BusinessPartnerAddressUUID` | `BusinessPartnerAddressUUID` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `CareOfName` | `CareOfName` |
-| `StreetPrefixName` | `StreetPrefixName` |
-| `AdditionalStreetPrefixName` | `AdditionalStreetPrefixName` |
-| `HouseNumber` | `HouseNumber` |
-| `StreetName` | `StreetName` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `StreetSuffixName` | `StreetSuffixName` |
-| `AdditionalStreetSuffixName` | `AdditionalStreetSuffixName` |
-| `HomeCityName` | `HomeCityName` |
-| `District` | `District` |
-| `DistrictName` | `DistrictName` |
-| `PostalCode` | `PostalCode` |
-| `CityName` | `CityName` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `AddressTimeZone` | `AddressTimeZone` |
-| `TransportZone` | `TransportZone` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `CompanyPostalCode` | `CompanyPostalCode` |
-| `DeliveryServiceTypeCode` | `DeliveryServiceTypeCode` |
-| `DeliveryServiceNumber` | `DeliveryServiceNumber` |
-| `POBox` | `POBox` |
-| `POBoxIsWithoutNumber` | `POBoxIsWithoutNumber` |
-| `POBoxPostalCode` | `POBoxPostalCode` |
-| `POBoxLobbyName` | `POBoxLobbyName` |
-| `POBoxDeviatingCityName` | `POBoxDeviatingCityName` |
-| `POBoxDeviatingRegion` | `POBoxDeviatingRegion` |
-| `POBoxDeviatingCountry` | `POBoxDeviatingCountry` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `PrfrdCommMediumType` | `PrfrdCommMediumType` |
-| `AddressLine1Text` | `AddressLine1Text` |
-| `FormattedAddress` | `FormattedAddress` |
-| `CompleteAddress` | `CompleteAddress` |
-| `BPAddressIsProtected` | `BPAddressIsProtected` |
-| `StandardUsage` | `StandardUsage` |
-| `AddressNonDeliverableReason` | `AddressNonDeliverableReason` |
-| `PostBoxNonDeliverableReason` | `PostBoxNonDeliverableReason` |
-| `Building` | `Building` |
-| `Floor` | `Floor` |
-| `RoomNumber` | `RoomNumber` |
-| `County` | `County` |
-| `BPCountyText` | `BPCountyText` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_BPProtectedAddress` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartnerAddressUsage` | *Association* |
-| `_BusinessPartnerPhoneNumber` | *Association* |
-| `_BusPartMobileNumber` | *Association* |
-| `_BusPartFaxNumber` | *Association* |
-| `_BusinessPartnerEmailAddress` | *Association* |
-| `_BusPartWebsiteURL` | *Association* |
-| `_BusPartScriptedOrgAddress` | *Association* |
-| `_BusPartScriptedPersonAddress` | *Association* |
-| `_BusPartScriptedGroupAddress` | *Association* |
-| `_StandardPhoneNumber` | *Association* |
-| `_StandardMobileNumber` | *Association* |
-| `_StandardFaxNumber` | *Association* |
-| `_StandardEmailAddress` | *Association* |
-| `_StandardWebsiteURL` | *Association* |
-| `_CountryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `AddressIDForEdit` |  | |  |  |
+| `BusinessPartnerAddressUUID` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `CareOfName` |  | |  |  |
+| `StreetPrefixName` |  | |  |  |
+| `AdditionalStreetPrefixName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `StreetSuffixName` |  | |  |  |
+| `AdditionalStreetSuffixName` |  | |  |  |
+| `HomeCityName` |  | |  |  |
+| `District` |  | |  |  |
+| `DistrictName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `CityName` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `AddressTimeZone` |  | |  |  |
+| `TransportZone` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `CompanyPostalCode` |  | |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |
+| `DeliveryServiceNumber` |  | |  |  |
+| `POBox` |  | |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `POBoxLobbyName` |  | |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `PrfrdCommMediumType` |  | |  |  |
+| `AddressLine1Text` |  | |  |  |
+| `FormattedAddress` |  | |  |  |
+| `CompleteAddress` |  | |  |  |
+| `BPAddressIsProtected` |  | |  |  |
+| `StandardUsage` |  | |  |  |
+| `AddressNonDeliverableReason` |  | |  |  |
+| `PostBoxNonDeliverableReason` |  | |  |  |
+| `Building` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `County` |  | |  |  |
+| `BPCountyText` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_BPProtectedAddress` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartnerAddressUsage` | | ✓ | | |
+| `_BusinessPartnerPhoneNumber` | | ✓ | | |
+| `_BusPartMobileNumber` | | ✓ | | |
+| `_BusPartFaxNumber` | | ✓ | | |
+| `_BusinessPartnerEmailAddress` | | ✓ | | |
+| `_BusPartWebsiteURL` | | ✓ | | |
+| `_BusPartScriptedOrgAddress` | | ✓ | | |
+| `_BusPartScriptedPersonAddress` | | ✓ | | |
+| `_BusPartScriptedGroupAddress` | | ✓ | | |
+| `_StandardPhoneNumber` | | ✓ | | |
+| `_StandardMobileNumber` | | ✓ | | |
+| `_StandardFaxNumber` | | ✓ | | |
+| `_StandardEmailAddress` | | ✓ | | |
+| `_StandardWebsiteURL` | | ✓ | | |
+| `_CountryText` | | ✓ | | |
 
 ## Source Code
 

@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentType` | `PRT.DocumentType` |
-| key `DocumentInfoRecord` | `PRT.DocumentInfoRecord` |
-| key `DocumentVersion` | `PRT.DocumentVersion` |
-| key `DocumentPart` | `PRT.DocumentPart` |
-| `ProductionResourceType` | `PRT.ProductionResourceType` |
-| `ProductionResourceInternalID` | `PRT.ProductionResourceInternalID` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `InternalDocumentStatus` | `InternalDocumentStatus` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_DocumentType` | *Association* |
-| `_DocumentNumber` | *Association* |
-| `_DocumentVersion` | *Association* |
-| `_DocumentInfoRecord` | *Association* |
-| `_ProductionResourceType` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentType` | ✓ | |  |  |
+| `DocumentInfoRecord` | ✓ | |  |  |
+| `DocumentVersion` | ✓ | |  |  |
+| `DocumentPart` | ✓ | |  |  |
+| `ProductionResourceType` |  | |  |  |
+| `ProductionResourceInternalID` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `InternalDocumentStatus` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_DocumentType` | | ✓ | | |
+| `_DocumentNumber` | | ✓ | | |
+| `_DocumentVersion` | | ✓ | | |
+| `_DocumentInfoRecord` | | ✓ | | |
+| `_ProductionResourceType` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
 
 ## Source Code
 

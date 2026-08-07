@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrderDngrsGdsSts` | `cast(domvalue_l as /scmtms/vdm_tor_dg_status)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrderDngrsGdsStsDesc` | `cast( ddtext as /scmtms/vdm_tor_dg_status_desc preserving type )` |
-| `_Language` | *Association* |
-| `_TranspOrdDngrsGdsStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrderDngrsGdsSts` | ✓ | |  | `cast(domvalue_l as /scmtms/vdm_tor_dg_status)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrderDngrsGdsStsDesc` |  | |  | `cast( ddtext as /scmtms/vdm_tor_dg_status_desc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdDngrsGdsStatus` | | ✓ | | |
 
 ## Associations
 

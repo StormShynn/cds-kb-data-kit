@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserID` | `UserID` |
-| `FullName` | `FullName` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserID` | ✓ | |  |  |
+| `FullName` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
 
 ## Source Code
 

@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceList` | `vbeln` |
-| key `InvoiceListItem` | `posnr` |
-| `BillingDocument` | `vbeln_vf` |
-| `NetAmount` | `netwr` |
-| `TaxAmount` | `mwsbp` |
-| `GrossAmount` | `cast(netwr + mwsbp + kwert_rl + mwsbp_rl as brtwert_rl)` |
-| `RemunerationNetAmount` | `kwert_rl` |
-| `RemunerationTaxAmount` | `mwsbp_rl` |
-| `TransactionCurrency` | `_BillingDocument.TransactionCurrency` |
-| `PricingIsIncomplete` | `uvprs` |
-| `SoldToParty` | `kunag` |
-| `LogicalSystem` | `logsys` |
-| `_InvoiceList` | *Association* |
-| `_BillingDocument` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_LogicalSystem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceList` | ✓ | |  | `vbeln` |
+| `InvoiceListItem` | ✓ | |  | `posnr` |
+| `BillingDocument` |  | |  | `vbeln_vf` |
+| `NetAmount` |  | |  | `netwr` |
+| `TaxAmount` |  | |  | `mwsbp` |
+| `GrossAmount` |  | |  | `cast(netwr + mwsbp + kwert_rl + mwsbp_rl as brtwert_rl)` |
+| `RemunerationNetAmount` |  | |  | `kwert_rl` |
+| `RemunerationTaxAmount` |  | |  | `mwsbp_rl` |
+| `TransactionCurrency` |  | | `_BillingDocument` | `TransactionCurrency` |
+| `PricingIsIncomplete` |  | |  | `uvprs` |
+| `SoldToParty` |  | |  | `kunag` |
+| `LogicalSystem` |  | |  | `logsys` |
+| `_InvoiceList` | | ✓ | | |
+| `_BillingDocument` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_LogicalSystem` | | ✓ | | |
 
 ## Associations
 

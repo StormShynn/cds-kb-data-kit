@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SLCQnaireLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/qnr_lifecycle_stat_cd preserving type)` |
-| key `Language` | `ddlanguage` |
-| `SLCQnaireLifecycleStatusName` | `ddtext` |
-| `_Language` | *Association* |
-| `_SLCQnaireLifecycleSts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SLCQnaireLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/qnr_lifecycle_stat_cd preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SLCQnaireLifecycleStatusName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_SLCQnaireLifecycleSts` | | ✓ | | |
 
 ## Associations
 

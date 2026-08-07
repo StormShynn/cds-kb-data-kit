@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialFreightGroup` | `mfrgr` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialFreightGroup` | ✓ | |  | `mfrgr` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

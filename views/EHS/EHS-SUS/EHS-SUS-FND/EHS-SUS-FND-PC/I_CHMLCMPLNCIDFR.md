@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChmlCmplncIdfrUUID` | `chmlcmplncidfruuid` |
-| `CreationUTCDateTime` | `creationutcdatetime` |
-| `CreatedByUser` | `createdbyuser` |
-| `LastChangeUTCDateTime` | `lastchangeutcdatetime` |
-| `LastChangedByUser` | `lastchangedbyuser` |
-| `ChmlCmplncIdfrParentID` | `cast( chmlcmplncidfrparentid as ehfnd_internal_nr_nc preserving type )` |
-| `ChmlCmplncIdfrParentUUID` | `chmlcmplncidfrparentuuid` |
-| `ChmlCmplncIdfrParentType` | `chmlcmplncidfrparenttype` |
-| `ChmlCmplncIdfrProcgStatus` | `chmlcmplncidfrprocgstatus` |
-| `ChmlCmplncIdfrProcessor` | `chmlcmplncidfrprocessor` |
-| `ChmlCmplncIdfrReldByUser` | `chmlcmplncidfrreldbyuser` |
-| `ValidityStartDateTime` | `validitystartdatetime` |
-| `ValidityEndDateTime` | `validityenddatetime` |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_ChmlCmplncInfo` | *Association* |
-| `_Processor` | *Association* |
-| `_ReleasedByUser` | *Association* |
-| `_ChmlCmplncIdfrValue` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChmlCmplncIdfrUUID` | ✓ | |  | `chmlcmplncidfruuid` |
+| `CreationUTCDateTime` |  | |  | `creationutcdatetime` |
+| `CreatedByUser` |  | |  | `createdbyuser` |
+| `LastChangeUTCDateTime` |  | |  | `lastchangeutcdatetime` |
+| `LastChangedByUser` |  | |  | `lastchangedbyuser` |
+| `ChmlCmplncIdfrParentID` |  | |  | `cast( chmlcmplncidfrparentid as ehfnd_internal_nr_nc preserving type )` |
+| `ChmlCmplncIdfrParentUUID` |  | |  | `chmlcmplncidfrparentuuid` |
+| `ChmlCmplncIdfrParentType` |  | |  | `chmlcmplncidfrparenttype` |
+| `ChmlCmplncIdfrProcgStatus` |  | |  | `chmlcmplncidfrprocgstatus` |
+| `ChmlCmplncIdfrProcessor` |  | |  | `chmlcmplncidfrprocessor` |
+| `ChmlCmplncIdfrReldByUser` |  | |  | `chmlcmplncidfrreldbyuser` |
+| `ValidityStartDateTime` |  | |  | `validitystartdatetime` |
+| `ValidityEndDateTime` |  | |  | `validityenddatetime` |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_ChmlCmplncInfo` | | ✓ | | |
+| `_Processor` | | ✓ | | |
+| `_ReleasedByUser` | | ✓ | | |
+| `_ChmlCmplncIdfrValue` | | ✓ | | |
 
 ## Associations
 

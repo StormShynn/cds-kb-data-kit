@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionSpecificationPlant` | `qpmt.zaehler` |
-| key `InspectionSpecification` | `cast( qpmt.mkmnr as vdm_qmerknr preserving type )` |
-| key `InspectionSpecificationVersion` | `qpmt.version` |
-| key `Language` | `qpmt.sprache` |
-| `InspectionSpecificationText` | `cast( qpmt.kurztext as vdm_qmerknr_text preserving type )` |
-| `_InspSpecificationPlant` | *Association* |
-| `_InspectionSpecification` | *Association* |
-| `_InspSpecificationVersion` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionSpecificationPlant` | ✓ | |  | `zaehler` |
+| `InspectionSpecification` | ✓ | |  | `cast( qpmt.mkmnr as vdm_qmerknr preserving type )` |
+| `InspectionSpecificationVersion` | ✓ | |  | `version` |
+| `Language` | ✓ | |  | `sprache` |
+| `InspectionSpecificationText` |  | |  | `cast( qpmt.kurztext as vdm_qmerknr_text preserving type )` |
+| `_InspSpecificationPlant` | | ✓ | | |
+| `_InspectionSpecification` | | ✓ | | |
+| `_InspSpecificationVersion` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

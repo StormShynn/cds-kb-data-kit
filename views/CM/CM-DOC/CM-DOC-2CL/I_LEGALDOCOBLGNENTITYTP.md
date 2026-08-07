@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDocOblgnEntityUUID` | `LglCntntMDocOblgnEntityUUID` |
-| `LglCntntMDocOblgnUUID` | `LglCntntMDocOblgnUUID` |
-| `LglCntntMDocumentUUID` | `LglCntntMDocumentUUID` |
-| `LglCntntMDocObligation` | `LglCntntMDocObligation` |
-| `LglCntntMEntity` | `LglCntntMEntity` |
-| `LglCntntMEntityType` | `LglCntntMEntityType` |
-| `LglCntntMTechEntityType` | `LglCntntMTechEntityType` |
-| `_Document` | *Association* |
-| `_LegalDocObligation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocOblgnEntityUUID` | ✓ | |  |  |
+| `LglCntntMDocOblgnUUID` |  | |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |
+| `LglCntntMDocObligation` |  | |  |  |
+| `LglCntntMEntity` |  | |  |  |
+| `LglCntntMEntityType` |  | |  |  |
+| `LglCntntMTechEntityType` |  | |  |  |
+| `_Document` | | ✓ | | |
+| `_LegalDocObligation` | | ✓ | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAAuthorizationGroupObject` | `bgobj` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

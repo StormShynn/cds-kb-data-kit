@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReferencedObjectUUID` | `hier.object_id` |
-| key `Activity` | `usr.activity` |
-| key `UserID` | `sub.user_id_subst` |
-| key `SubstitutedUser` | `sub.user_id` |
-| `ObjectType` | `usr.type` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferencedObjectUUID` | ✓ | |  | `object_id` |
+| `Activity` | ✓ | |  | `activity` |
+| `UserID` | ✓ | |  | `user_id_subst` |
+| `SubstitutedUser` | ✓ | |  | `user_id` |
+| `ObjectType` |  | |  | `type` |
 
 ## Source Code
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContractCanclnSts` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `ServiceContractCanclnStsName` | `ddtext` |
-| `_ServiceContractCanclnSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContractCanclnSts` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ServiceContractCanclnStsName` |  | |  | `ddtext` |
+| `_ServiceContractCanclnSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

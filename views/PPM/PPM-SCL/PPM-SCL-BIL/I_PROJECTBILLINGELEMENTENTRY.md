@@ -31,83 +31,83 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjBillgElmntEntrItmUUID` | `ProjectBillingElementEntry.projbillgelmntentritmuuid` |
-| `ProjectBillingElementUUID` | `ProjectBillingElementEntry.projectbillingelementuuid` |
-| `ProjBillgElmntEntrSourceType` | `ProjectBillingElementEntry.projbillgelmntentrsourcetype` |
-| `WBSElementInternalID` | `ProjectBillingElementEntry.wbselementinternalid` |
-| `Material` | `ProjectBillingElementEntry.material` |
-| `QuantityUnit` | `ProjectBillingElementEntry.quantityunit` |
-| `ProjBillgElmntEntrIsCancelled` | `ProjectBillingElementEntry.projbillgelmntentriscancelled` |
-| `PricingDate` | `ProjectBillingElementEntry.pricingdate` |
-| `NetPriceAmountIsManual` | `ProjectBillingElementEntry.netpriceamountismanual` |
-| `TransactionCurrency` | `ProjectBillingElementEntry.transactioncurrency` |
-| `ProjectCurrency` | `ProjectBillingElementEntry.projectcurrency` |
-| `GlobalCurrency` | `ProjectBillingElementEntry.globalcurrency` |
-| `DocumentCurrency` | `ProjectBillingElementEntry.documentcurrency` |
-| `ServicesRenderedDate` | `ProjectBillingElementEntry.servicesrendereddate` |
-| `OriginalTotalQuantity` | `ProjectBillingElementEntry.originaltotalquantity` |
-| `OriginalAmountInTransacCrcy` | `ProjectBillingElementEntry.originalamountintransaccrcy` |
-| `OriginalAmountInProjectCrcy` | `ProjectBillingElementEntry.originalamountinprojectcrcy` |
-| `OriginalAmountInGlobalCurrency` | `ProjectBillingElementEntry.originalamountinglobalcurrency` |
-| `OpenQuantity` | `ProjectBillingElementEntry.openquantity` |
-| `OpenAmountInTransCrcy` | `ProjectBillingElementEntry.openamountintranscrcy` |
-| `OpenAmountInProjectCurrency` | `ProjectBillingElementEntry.openamountinprojectcurrency` |
-| `OpenAmountInGlobalCurrency` | `ProjectBillingElementEntry.openamountinglobalcurrency` |
-| `ToBeBilledQuantity` | `ProjectBillingElementEntry.tobebilledquantity` |
-| `ToBeBilledAmtInTransCrcy` | `ProjectBillingElementEntry.tobebilledamtintranscrcy` |
-| `ToBeBilledAmtInProjCurrency` | `ProjectBillingElementEntry.tobebilledamtinprojcurrency` |
-| `ToBeBilledAmtInGlobCurrency` | `ProjectBillingElementEntry.tobebilledamtinglobcurrency` |
-| `ToBeWrittenOffQuantity` | `ProjectBillingElementEntry.tobewrittenoffquantity` |
-| `ToBeWrittenOffAmtInTransCrcy` | `ProjectBillingElementEntry.tobewrittenoffamtintranscrcy` |
-| `ToBeWrittenOffAmtInProjectCrcy` | `ProjectBillingElementEntry.tobewrittenoffamtinprojectcrcy` |
-| `ToBeWrittenOffAmtInGlobalCrcy` | `ProjectBillingElementEntry.tobewrittenoffamtinglobalcrcy` |
-| `ToBePostponedQuantity` | `ProjectBillingElementEntry.tobepostponedquantity` |
-| `ToBePostponedAmtInTransacCrcy` | `ProjectBillingElementEntry.tobepostponedamtintransaccrcy` |
-| `ToBePostponedAmtInProjectCrcy` | `ProjectBillingElementEntry.tobepostponedamtinprojectcrcy` |
-| `ToBePostponedAmtInGlobalCrcy` | `ProjectBillingElementEntry.tobepostponedamtinglobalcrcy` |
-| `BillableRevenueAmtInDocCrcy` | `ProjectBillingElementEntry.billablerevenueamtindoccrcy` |
-| `ManualNetPriceAmtInDocCrcy` | `ProjectBillingElementEntry.manualnetpriceamtindoccrcy` |
-| `NetPriceAmountInDocCrcy` | `ProjectBillingElementEntry.netpriceamountindoccrcy` |
-| `NetPriceQuantity` | `ProjectBillingElementEntry.netpricequantity` |
-| `NetPriceQuantityUnit` | `ProjectBillingElementEntry.netpricequantityunit` |
-| `OriginalRevenueAmtInDocCrcy` | `ProjectBillingElementEntry.originalrevenueamtindoccrcy` |
-| `OpenRevenueAmtInDocCrcy` | `ProjectBillingElementEntry.openrevenueamtindoccrcy` |
-| `ProjBillgElmntEntrIsReversed` | `ProjectBillingElementEntry.projbillgelmntentrisreversed` |
-| `ProjBillgElmntEntrIsReversal` | `ProjectBillingElementEntry.projbillgelmntentrisreversal` |
-| `PrjBlgElmEntrCanclnSrceCode` | `ProjectBillingElementEntry.prjblgelmentrcanclnsrcecode` |
-| `PrjBlgElmEntrCreatedByUser` | `ProjectBillingElementEntry.prjblgelmentrcreatedbyuser` |
-| `PrjBlgElmEntrCreatedAtDteTme` | `ProjectBillingElementEntry.prjblgelmentrcreatedatdtetme` |
-| `PrjBlgElmEntrLastChgdByUser` | `ProjectBillingElementEntry.prjblgelmentrlastchgdbyuser` |
-| `PrjBlgElmEntrLastChgdAtDteTme` | `ProjectBillingElementEntry.prjblgelmentrlastchgdatdtetme` |
-| `PrjBlgElmEntryLongText` | `ProjectBillingElementEntry.prjblgelmentrylongtext` |
-| `ProjectBillingElementEntryDesc` | `ProjectBillingElementEntry.projectbillingelemententrydesc` |
-| `ProjBillgTransfCostQtyCode` | `ProjectBillingElementEntry.projbillgtransfcostqtycode` |
-| `ProjBillgItmValIsNotActualCost` | `ProjectBillingElementEntry.projbillgitmvalisnotactualcost` |
-| `ProjBillgElementEntryObject` | `ProjectBillingElementEntry.projbillgelemententryobject` |
-| `PostingDate` | `ProjectBillingElementEntry.postingdate` |
-| `_Material` | *Association* |
-| `_ProjectBillingElement` | *Association* |
-| `_ProjectBillingElementEntrFlw` | *Association* |
-| `_PrjBlgElmEntrJrnlEntrLink` | *Association* |
-| `_PrjBlgElmEntrBillgPlnLink` | *Association* |
-| `_WBSElement` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_TransactionCurrencyText` | *Association* |
-| `_ProjectCurrency` | *Association* |
-| `_ProjectCurrencyText` | *Association* |
-| `_GlobalCurrency` | *Association* |
-| `_GlobalCurrencyText` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_DocumentCurrencyText` | *Association* |
-| `_QuantityUnit` | *Association* |
-| `_ProjBillgElmntEntrSourceType` | *Association* |
-| `_PrjBlgElmEntrSrceTypeText` | *Association* |
-| `_PrjBlgElmEntrCanclnSrceCode` | *Association* |
-| `_PrjBlgElmEntrCanclnSrcCdText` | *Association* |
-| `_ProjBillgTransfCostQtyCode` | *Association* |
-| `_PrjBillgTransfCostQtyCodeTxt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjBillgElmntEntrItmUUID` | ✓ | |  | `projbillgelmntentritmuuid` |
+| `ProjectBillingElementUUID` |  | |  | `projectbillingelementuuid` |
+| `ProjBillgElmntEntrSourceType` |  | |  | `projbillgelmntentrsourcetype` |
+| `WBSElementInternalID` |  | |  | `wbselementinternalid` |
+| `Material` |  | |  | `material` |
+| `QuantityUnit` |  | |  | `quantityunit` |
+| `ProjBillgElmntEntrIsCancelled` |  | |  | `projbillgelmntentriscancelled` |
+| `PricingDate` |  | |  | `pricingdate` |
+| `NetPriceAmountIsManual` |  | |  | `netpriceamountismanual` |
+| `TransactionCurrency` |  | |  | `transactioncurrency` |
+| `ProjectCurrency` |  | |  | `projectcurrency` |
+| `GlobalCurrency` |  | |  | `globalcurrency` |
+| `DocumentCurrency` |  | |  | `documentcurrency` |
+| `ServicesRenderedDate` |  | |  | `servicesrendereddate` |
+| `OriginalTotalQuantity` |  | |  | `originaltotalquantity` |
+| `OriginalAmountInTransacCrcy` |  | |  | `originalamountintransaccrcy` |
+| `OriginalAmountInProjectCrcy` |  | |  | `originalamountinprojectcrcy` |
+| `OriginalAmountInGlobalCurrency` |  | |  | `originalamountinglobalcurrency` |
+| `OpenQuantity` |  | |  | `openquantity` |
+| `OpenAmountInTransCrcy` |  | |  | `openamountintranscrcy` |
+| `OpenAmountInProjectCurrency` |  | |  | `openamountinprojectcurrency` |
+| `OpenAmountInGlobalCurrency` |  | |  | `openamountinglobalcurrency` |
+| `ToBeBilledQuantity` |  | |  | `tobebilledquantity` |
+| `ToBeBilledAmtInTransCrcy` |  | |  | `tobebilledamtintranscrcy` |
+| `ToBeBilledAmtInProjCurrency` |  | |  | `tobebilledamtinprojcurrency` |
+| `ToBeBilledAmtInGlobCurrency` |  | |  | `tobebilledamtinglobcurrency` |
+| `ToBeWrittenOffQuantity` |  | |  | `tobewrittenoffquantity` |
+| `ToBeWrittenOffAmtInTransCrcy` |  | |  | `tobewrittenoffamtintranscrcy` |
+| `ToBeWrittenOffAmtInProjectCrcy` |  | |  | `tobewrittenoffamtinprojectcrcy` |
+| `ToBeWrittenOffAmtInGlobalCrcy` |  | |  | `tobewrittenoffamtinglobalcrcy` |
+| `ToBePostponedQuantity` |  | |  | `tobepostponedquantity` |
+| `ToBePostponedAmtInTransacCrcy` |  | |  | `tobepostponedamtintransaccrcy` |
+| `ToBePostponedAmtInProjectCrcy` |  | |  | `tobepostponedamtinprojectcrcy` |
+| `ToBePostponedAmtInGlobalCrcy` |  | |  | `tobepostponedamtinglobalcrcy` |
+| `BillableRevenueAmtInDocCrcy` |  | |  | `billablerevenueamtindoccrcy` |
+| `ManualNetPriceAmtInDocCrcy` |  | |  | `manualnetpriceamtindoccrcy` |
+| `NetPriceAmountInDocCrcy` |  | |  | `netpriceamountindoccrcy` |
+| `NetPriceQuantity` |  | |  | `netpricequantity` |
+| `NetPriceQuantityUnit` |  | |  | `netpricequantityunit` |
+| `OriginalRevenueAmtInDocCrcy` |  | |  | `originalrevenueamtindoccrcy` |
+| `OpenRevenueAmtInDocCrcy` |  | |  | `openrevenueamtindoccrcy` |
+| `ProjBillgElmntEntrIsReversed` |  | |  | `projbillgelmntentrisreversed` |
+| `ProjBillgElmntEntrIsReversal` |  | |  | `projbillgelmntentrisreversal` |
+| `PrjBlgElmEntrCanclnSrceCode` |  | |  | `prjblgelmentrcanclnsrcecode` |
+| `PrjBlgElmEntrCreatedByUser` |  | |  | `prjblgelmentrcreatedbyuser` |
+| `PrjBlgElmEntrCreatedAtDteTme` |  | |  | `prjblgelmentrcreatedatdtetme` |
+| `PrjBlgElmEntrLastChgdByUser` |  | |  | `prjblgelmentrlastchgdbyuser` |
+| `PrjBlgElmEntrLastChgdAtDteTme` |  | |  | `prjblgelmentrlastchgdatdtetme` |
+| `PrjBlgElmEntryLongText` |  | |  | `prjblgelmentrylongtext` |
+| `ProjectBillingElementEntryDesc` |  | |  | `projectbillingelemententrydesc` |
+| `ProjBillgTransfCostQtyCode` |  | |  | `projbillgtransfcostqtycode` |
+| `ProjBillgItmValIsNotActualCost` |  | |  | `projbillgitmvalisnotactualcost` |
+| `ProjBillgElementEntryObject` |  | |  | `projbillgelemententryobject` |
+| `PostingDate` |  | |  | `postingdate` |
+| `_Material` | | ✓ | | |
+| `_ProjectBillingElement` | | ✓ | | |
+| `_ProjectBillingElementEntrFlw` | | ✓ | | |
+| `_PrjBlgElmEntrJrnlEntrLink` | | ✓ | | |
+| `_PrjBlgElmEntrBillgPlnLink` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_TransactionCurrencyText` | | ✓ | | |
+| `_ProjectCurrency` | | ✓ | | |
+| `_ProjectCurrencyText` | | ✓ | | |
+| `_GlobalCurrency` | | ✓ | | |
+| `_GlobalCurrencyText` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_DocumentCurrencyText` | | ✓ | | |
+| `_QuantityUnit` | | ✓ | | |
+| `_ProjBillgElmntEntrSourceType` | | ✓ | | |
+| `_PrjBlgElmEntrSrceTypeText` | | ✓ | | |
+| `_PrjBlgElmEntrCanclnSrceCode` | | ✓ | | |
+| `_PrjBlgElmEntrCanclnSrcCdText` | | ✓ | | |
+| `_ProjBillgTransfCostQtyCode` | | ✓ | | |
+| `_PrjBillgTransfCostQtyCodeTxt` | | ✓ | | |
 
 ## Associations
 

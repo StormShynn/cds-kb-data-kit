@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `document.dokar` |
-| `DocumentInfoRecordDocNumber` | `}] key document.doknr` |
-| `DocumentInfoRecordDocVersion` | `}] key document.dokvr` |
-| key `DocumentInfoRecordDocPart` | `document.doktl` |
-| `DocumentDescription` | `_DocDescription[1:Language = $session.system_language].DocumentDescription` |
-| `_TEXT` | *Association* |
-| `_DocType` | *Association* |
-| `_DocNumber` | *Association* |
-| `_DocVersion` | *Association* |
-| `_DocDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
+| `DocumentInfoRecordDocNumber` |  | |  | `}] key document.doknr` |
+| `DocumentInfoRecordDocVersion` |  | |  | `}] key document.dokvr` |
+| `DocumentInfoRecordDocPart` | ✓ | |  | `doktl` |
+| `DocumentDescription` |  | |  | `_DocDescription[1:Language = $session.system_language].DocumentDescription` |
+| `_TEXT` | | ✓ | | |
+| `_DocType` | | ✓ | | |
+| `_DocNumber` | | ✓ | | |
+| `_DocVersion` | | ✓ | | |
+| `_DocDescription` | | ✓ | | |
 
 ## Associations
 

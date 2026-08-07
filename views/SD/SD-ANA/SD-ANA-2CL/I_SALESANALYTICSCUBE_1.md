@@ -27,145 +27,145 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `SalesDocument` |
-| key `SalesDocumentItem` | `SalesDocumentItem` |
-| key `ScheduleLine` | `ScheduleLine` |
-| key `BillingPlan` | `BillingPlan` |
-| key `BillingPlanItem` | `BillingPlanItem` |
-| key `DeliveryDocument` | `DeliveryDocument` |
-| key `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| key `BillingDocument` | `BillingDocument` |
-| key `BillingDocumentItem` | `BillingDocumentItem` |
-| `SoldToParty` | `SoldToParty` |
-| `SoldToPartyName` | `SoldToPartyName` |
-| `CustomerGroup` | `CustomerGroup` |
-| `AdditionalCustomerGroup1` | `AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `AdditionalCustomerGroup5` |
-| `Customer` | `cast (SoldToParty as kunnr)` |
-| `SDDocumentCategory` | `SDDocumentCategory` |
-| `SDDocumentObject` | `SDDocumentObject` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `PartnerCompany` | `_SoldToParty.TradingPartner` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesDistrict` | `SalesDistrict` |
-| `Material` | `Material` |
-| `Product` | `Product` |
-| `OriginallyRequestedMaterial` | `OriginallyRequestedMaterial` |
-| `InternationalArticleNumber` | `InternationalArticleNumber` |
-| `ProductHierarchyNode` | `ProductHierarchyNode` |
-| `MaterialGroup` | `MaterialGroup` |
-| `ProductGroup` | `ProductGroup` |
-| `AdditionalMaterialGroup1` | `AdditionalMaterialGroup1` |
-| `AdditionalMaterialGroup2` | `AdditionalMaterialGroup2` |
-| `AdditionalMaterialGroup3` | `AdditionalMaterialGroup3` |
-| `AdditionalMaterialGroup4` | `AdditionalMaterialGroup4` |
-| `AdditionalMaterialGroup5` | `AdditionalMaterialGroup5` |
-| `ProfitCenter` | `ProfitCenter` |
-| `BillingDocumentDate` | `cast(PSA.CalendarDate as billing_document_date)` |
-| `BillingDocumentDateYear` | `cast(Period.CalendarYear as billing_document_date_year)` |
-| `BillingDocDateCalendarQuarter` | `cast(Period.CalendarQuarter as billing_doc_date_cal_quarter )` |
-| `BillingDocDateCalendarMonth` | `cast(Period.CalendarMonth as billing_doc_date_cal_month )` |
-| `BillingDocDateYearQuarter` | `cast(Period.YearQuarter as billing_doc_date_year_quarter)` |
-| `BillingDocDateYearMonth` | `cast(Period.YearMonth as billing_doc_date_year_month)` |
-| `SalesDocumentType` | `SalesDocumentType` |
-| `ShippingPoint` | `ShippingPoint` |
-| `BillingDocumentType` | `BillingDocumentType` |
-| `CalendarDate` | `PSA.CalendarDate` |
-| `CreationDate` | `CreationDate` |
-| `DeliveryDate` | `DeliveryDate` |
-| `SalesOrder` | `cast( case when SDDocumentCategory = 'C' then SalesDocument end as vdm_sales_order )` |
-| `OpnSOForOrdReltdInvcsNetAmount` | `OpnSOForOrdReltdInvcsNetAmount` |
-| `OpnSOForOrdReltdInvcsNetAmtDC` | `cast ( currency_conversion( amount => OpnSOForOrdReltdInvcsNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_ords_for_ordrelinv_amt_idc)` |
-| `OpnSlsOrdsForOrdReltdInvcsQty` | `OpnSlsOrdsForOrdReltdInvcsQty` |
-| `OpnRetsForOrdReltdInvcsNetAmt` | `OpnRetsForOrdReltdInvcsNetAmt` |
-| `OpnRetsOrdReltdInvcsNetAmtInDC` | `cast ( currency_conversion( amount => OpnRetsForOrdReltdInvcsNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_rets_for_invc_net_amt_idc)` |
-| `OpnRetsForOrdReltdInvcsQty` | `OpnRetsForOrdReltdInvcsQty` |
-| `OpenSlsOrdersForDelivNetAmount` | `OpenSlsOrdersForDelivNetAmount` |
-| `OpnSlsOrdsForDelivAmtInDspCrcy` | `cast ( currency_conversion( amount => OpenSlsOrdersForDelivNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_ord_for_del_amt_idc)` |
-| `OpnSlsOrdrsForDelivQuantity` | `OpnSlsOrdrsForDelivQuantity` |
-| `OpnSlsOrdsForInvcPlansNetAmt` | `OpnSlsOrdsForInvcPlansNetAmt` |
-| `OpnSlsOrdsForInvcPlansNetAmtDC` | `cast ( currency_conversion( amount => OpnSlsOrdsForInvcPlansNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_ord_for_iplan_amt_idc)` |
-| `OpnOutbDelivsForInvcNetAmt` | `OpnOutbDelivsForInvcNetAmt` |
-| `OpnOutbDelivsForInvcNetAmtInDC` | `cast ( currency_conversion( amount => OpnOutbDelivsForInvcNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_dlv_for_inv_amt_idc )` |
-| `OpnOutbDelivsForInvcQty` | `OpnOutbDelivsForInvcQty` |
-| `ShpdNotInvcdDelivsNetAmount` | `ShpdNotInvcdDelivsNetAmount` |
-| `ShpdNotInvcdDelivsNetAmount_2` | `ShpdNotInvcdDelivsNetAmount_2` |
-| `ShpdNotInvcdDelivsNetAmtInDC` | `cast ( currency_conversion( amount => ShpdNotInvcdDelivsNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_shppd_dlv_for_inv_amt_idc)` |
-| `ShpdNotInvcdDelivsQuantity` | `ShpdNotInvcdDelivsQuantity` |
-| `SalesVolumeNetAmount` | `SalesVolumeNetAmount` |
-| `SalesVolumeNetAmount_2` | `SalesVolumeNetAmount_2` |
-| `SlsVolumeNetAmtInDspCrcy` | `cast ( currency_conversion( amount => SalesVolumeNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as mc_umnetwr)` |
-| `SalesVolumeQuantity` | `SalesVolumeQuantity` |
-| `SalesProfitMarginNetAmount` | `SalesProfitMarginNetAmount` |
-| `SalesProfitMarginNetAmount_2` | `SalesProfitMarginNetAmount_2` |
-| `SlsProfitMargNetAmtInDspCrcy` | `cast ( currency_conversion( amount => SalesProfitMarginNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as prf_marg_net_amt_idc)` |
-| `CustomerCreditMemoNetAmount` | `CustomerCreditMemoNetAmount` |
-| `CustomerCreditMemoNetAmount_2` | `CustomerCreditMemoNetAmount_2` |
-| `CustCrdtMemoNetAmtInDspCrcy` | `cast ( currency_conversion( amount => CustomerCreditMemoNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as mc_gunetwr)` |
-| `CustCreditMemoQuantity` | `CustCreditMemoQuantity` |
-| `Subtotal1Amount` | `Subtotal1Amount` |
-| `Subtotal1AmountInDC` | `cast ( currency_conversion( amount => Subtotal1Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount1_idc)` |
-| `Subtotal2Amount` | `Subtotal2Amount` |
-| `Subtotal2AmountInDC` | `cast ( currency_conversion( amount => Subtotal2Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount2_idc)` |
-| `Subtotal3Amount` | `Subtotal3Amount` |
-| `Subtotal3AmountInDC` | `cast ( currency_conversion( amount => Subtotal3Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount3_idc)` |
-| `Subtotal4Amount` | `Subtotal4Amount` |
-| `Subtotal4AmountInDC` | `cast ( currency_conversion( amount => Subtotal4Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount4_idc)` |
-| `Subtotal5Amount` | `Subtotal5Amount` |
-| `Subtotal5AmountInDC` | `cast ( currency_conversion( amount => Subtotal5Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount5_idc)` |
-| `Subtotal6Amount` | `Subtotal6Amount` |
-| `Subtotal6AmountInDC` | `cast ( currency_conversion( amount => Subtotal6Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount6_idc)` |
-| `CustCrdtMemoPrftMargNetAmt` | `CustCrdtMemoPrftMargNetAmt` |
-| `CustCrdtMemoPrftMargNetAmtInDC` | `cast ( currency_conversion( amount => CustCrdtMemoPrftMargNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cm_prf_marg_net_amt_idc)` |
-| `DisplayCurrency` | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `StatisticsCurrency` | `StatisticsCurrency` |
-| `BaseUnit` | `BaseUnit` |
-| `_DisplayCurrency` | *Association* |
-| `_Customer` | *Association* |
-| `_ShippingPoint` | *Association* |
-| `_BillingDocumentType` | *Association* |
-| `_SDDocumentObject` | *Association* |
-| `_BillingDocDateCalendarMonth` | *Association* |
-| `_BillingDocDateCalendarQuarter` | *Association* |
-| `_ProductHierarchyNode` | *Association* |
-| `_SalesDocumentType` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_AdditionalCustomerGroup1` | *Association* |
-| `_AdditionalCustomerGroup2` | *Association* |
-| `_AdditionalCustomerGroup3` | *Association* |
-| `_AdditionalCustomerGroup4` | *Association* |
-| `_AdditionalCustomerGroup5` | *Association* |
-| `_AdditionalMaterialGroup1` | *Association* |
-| `_AdditionalMaterialGroup2` | *Association* |
-| `_AdditionalMaterialGroup3` | *Association* |
-| `_AdditionalMaterialGroup4` | *Association* |
-| `_AdditionalMaterialGroup5` | *Association* |
-| `_StatisticsCurrency` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_Material` | *Association* |
-| `_Product` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_OriginallyRequestedMaterial` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_SDDocumentCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  |  |
+| `SalesDocumentItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `BillingPlan` | ✓ | |  |  |
+| `BillingPlanItem` | ✓ | |  |  |
+| `DeliveryDocument` | ✓ | |  |  |
+| `DeliveryDocumentItem` | ✓ | |  |  |
+| `BillingDocument` | ✓ | |  |  |
+| `BillingDocumentItem` | ✓ | |  |  |
+| `SoldToParty` |  | |  |  |
+| `SoldToPartyName` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `Customer` |  | |  | `cast (SoldToParty as kunnr)` |
+| `SDDocumentCategory` |  | |  |  |
+| `SDDocumentObject` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `PartnerCompany` |  | | `_SoldToParty` | `TradingPartner` |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |
+| `InternationalArticleNumber` |  | |  |  |
+| `ProductHierarchyNode` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `BillingDocumentDate` |  | |  | `cast(PSA.CalendarDate as billing_document_date)` |
+| `BillingDocumentDateYear` |  | |  | `cast(Period.CalendarYear as billing_document_date_year)` |
+| `BillingDocDateCalendarQuarter` |  | |  | `cast(Period.CalendarQuarter as billing_doc_date_cal_quarter )` |
+| `BillingDocDateCalendarMonth` |  | |  | `cast(Period.CalendarMonth as billing_doc_date_cal_month )` |
+| `BillingDocDateYearQuarter` |  | |  | `cast(Period.YearQuarter as billing_doc_date_year_quarter)` |
+| `BillingDocDateYearMonth` |  | |  | `cast(Period.YearMonth as billing_doc_date_year_month)` |
+| `SalesDocumentType` |  | |  |  |
+| `ShippingPoint` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `CalendarDate` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `SalesOrder` |  | |  | `cast( case when SDDocumentCategory = 'C' then SalesDocument end as vdm_sales_order )` |
+| `OpnSOForOrdReltdInvcsNetAmount` |  | |  |  |
+| `OpnSOForOrdReltdInvcsNetAmtDC` |  | |  | `cast ( currency_conversion( amount => OpnSOForOrdReltdInvcsNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_ords_for_ordrelinv_amt_idc)` |
+| `OpnSlsOrdsForOrdReltdInvcsQty` |  | |  |  |
+| `OpnRetsForOrdReltdInvcsNetAmt` |  | |  |  |
+| `OpnRetsOrdReltdInvcsNetAmtInDC` |  | |  | `cast ( currency_conversion( amount => OpnRetsForOrdReltdInvcsNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_rets_for_invc_net_amt_idc)` |
+| `OpnRetsForOrdReltdInvcsQty` |  | |  |  |
+| `OpenSlsOrdersForDelivNetAmount` |  | |  |  |
+| `OpnSlsOrdsForDelivAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => OpenSlsOrdersForDelivNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_ord_for_del_amt_idc)` |
+| `OpnSlsOrdrsForDelivQuantity` |  | |  |  |
+| `OpnSlsOrdsForInvcPlansNetAmt` |  | |  |  |
+| `OpnSlsOrdsForInvcPlansNetAmtDC` |  | |  | `cast ( currency_conversion( amount => OpnSlsOrdsForInvcPlansNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_ord_for_iplan_amt_idc)` |
+| `OpnOutbDelivsForInvcNetAmt` |  | |  |  |
+| `OpnOutbDelivsForInvcNetAmtInDC` |  | |  | `cast ( currency_conversion( amount => OpnOutbDelivsForInvcNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_dlv_for_inv_amt_idc )` |
+| `OpnOutbDelivsForInvcQty` |  | |  |  |
+| `ShpdNotInvcdDelivsNetAmount` |  | |  |  |
+| `ShpdNotInvcdDelivsNetAmount_2` |  | |  |  |
+| `ShpdNotInvcdDelivsNetAmtInDC` |  | |  | `cast ( currency_conversion( amount => ShpdNotInvcdDelivsNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as opn_shppd_dlv_for_inv_amt_idc)` |
+| `ShpdNotInvcdDelivsQuantity` |  | |  |  |
+| `SalesVolumeNetAmount` |  | |  |  |
+| `SalesVolumeNetAmount_2` |  | |  |  |
+| `SlsVolumeNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => SalesVolumeNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as mc_umnetwr)` |
+| `SalesVolumeQuantity` |  | |  |  |
+| `SalesProfitMarginNetAmount` |  | |  |  |
+| `SalesProfitMarginNetAmount_2` |  | |  |  |
+| `SlsProfitMargNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => SalesProfitMarginNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as prf_marg_net_amt_idc)` |
+| `CustomerCreditMemoNetAmount` |  | |  |  |
+| `CustomerCreditMemoNetAmount_2` |  | |  |  |
+| `CustCrdtMemoNetAmtInDspCrcy` |  | |  | `cast ( currency_conversion( amount => CustomerCreditMemoNetAmount_2, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as mc_gunetwr)` |
+| `CustCreditMemoQuantity` |  | |  |  |
+| `Subtotal1Amount` |  | |  |  |
+| `Subtotal1AmountInDC` |  | |  | `cast ( currency_conversion( amount => Subtotal1Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount1_idc)` |
+| `Subtotal2Amount` |  | |  |  |
+| `Subtotal2AmountInDC` |  | |  | `cast ( currency_conversion( amount => Subtotal2Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount2_idc)` |
+| `Subtotal3Amount` |  | |  |  |
+| `Subtotal3AmountInDC` |  | |  | `cast ( currency_conversion( amount => Subtotal3Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount3_idc)` |
+| `Subtotal4Amount` |  | |  |  |
+| `Subtotal4AmountInDC` |  | |  | `cast ( currency_conversion( amount => Subtotal4Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount4_idc)` |
+| `Subtotal5Amount` |  | |  |  |
+| `Subtotal5AmountInDC` |  | |  | `cast ( currency_conversion( amount => Subtotal5Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount5_idc)` |
+| `Subtotal6Amount` |  | |  |  |
+| `Subtotal6AmountInDC` |  | |  | `cast ( currency_conversion( amount => Subtotal6Amount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as subtotalamount6_idc)` |
+| `CustCrdtMemoPrftMargNetAmt` |  | |  |  |
+| `CustCrdtMemoPrftMargNetAmtInDC` |  | |  | `cast ( currency_conversion( amount => CustCrdtMemoPrftMargNetAmt, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => PSA.CalendarDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cm_prf_marg_net_amt_idc)` |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
+| `TransactionCurrency` |  | |  |  |
+| `StatisticsCurrency` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `_DisplayCurrency` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
+| `_BillingDocumentType` | | ✓ | | |
+| `_SDDocumentObject` | | ✓ | | |
+| `_BillingDocDateCalendarMonth` | | ✓ | | |
+| `_BillingDocDateCalendarQuarter` | | ✓ | | |
+| `_ProductHierarchyNode` | | ✓ | | |
+| `_SalesDocumentType` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | |
+| `_StatisticsCurrency` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_OriginallyRequestedMaterial` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
 
 ## Associations
 

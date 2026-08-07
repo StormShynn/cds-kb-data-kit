@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QuotaArrangement` | `QuotaArrangement` |
-| `Material` | `Material` |
-| `Plant` | `Plant` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `UserDescription` | `UserDescription` |
-| `MaterialBaseUnit` | `MaterialBaseUnit` |
-| `MinQtyForSpltQuota` | `MinQtyForSpltQuota` |
-| `_PurgQuotaArrgmtItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QuotaArrangement` | ✓ | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `UserDescription` |  | |  |  |
+| `MaterialBaseUnit` |  | |  |  |
+| `MinQtyForSpltQuota` |  | |  |  |
+| `_PurgQuotaArrgmtItem` | | ✓ | | |
 
 ## Source Code
 

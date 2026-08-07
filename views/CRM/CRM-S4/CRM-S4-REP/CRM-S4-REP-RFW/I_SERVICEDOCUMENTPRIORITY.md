@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentPriority` | `priority` |
-| `_ServiceDocumentPriorityText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentPriority` | ✓ | |  | `priority` |
+| `_ServiceDocumentPriorityText` | | ✓ | | |
 
 ## Associations
 

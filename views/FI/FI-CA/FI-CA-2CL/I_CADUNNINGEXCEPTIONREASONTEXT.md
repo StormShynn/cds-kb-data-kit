@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningExceptionReason` | `poken` |
-| key `Language` | `spras` |
-| `CADunningExceptionReasonName` | `poket` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningExceptionReason` | ✓ | |  | `poken` |
+| `Language` | ✓ | |  | `spras` |
+| `CADunningExceptionReasonName` |  | |  | `poket` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

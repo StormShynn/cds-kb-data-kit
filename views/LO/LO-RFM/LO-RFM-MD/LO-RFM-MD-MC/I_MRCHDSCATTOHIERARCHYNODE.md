@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MerchandiseCategory` | `cast (MrchdsCategory.class as rfm_mrchdscategory )` |
-| `MrchdsCategoryHierarchyNode` | `cast (MrchdsCatHiernode.class as rfm_mrchdcathiernode preserving type )` |
-| `_MerchandiseCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MerchandiseCategory` | ✓ | |  | `cast (MrchdsCategory.class as rfm_mrchdscategory )` |
+| `MrchdsCategoryHierarchyNode` |  | |  | `cast (MrchdsCatHiernode.class as rfm_mrchdcathiernode preserving type )` |
+| `_MerchandiseCategory` | | ✓ | | |
 
 ## Associations
 

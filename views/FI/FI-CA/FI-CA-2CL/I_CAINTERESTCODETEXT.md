@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInterestCode` | `ikey` |
-| key `Language` | `spras` |
-| `CAInterestCodeName` | `text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInterestCode` | ✓ | |  | `ikey` |
+| `Language` | ✓ | |  | `spras` |
+| `CAInterestCodeName` |  | |  | `text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

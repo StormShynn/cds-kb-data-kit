@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `BillOfMaterial` |
-| key `BillOfMaterialVariant` | `BillOfMaterialVariant` |
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| key `BillOfMaterialVariantUsage` | `BillOfMaterialVariantUsage` |
-| `BillOfMaterialCategory` | `BillOfMaterialCategory` |
-| `BOMHeaderBaseUnit` | `BOMHeaderBaseUnit` |
-| `MatFromLotSizeQuantity` | `MatFromLotSizeQuantity` |
-| `MaterialToLotSizeQuantity` | `MaterialToLotSizeQuantity` |
-| `IsConfiguredMaterial` | `IsConfiguredMaterial` |
-| `MaterialBOMObjectID` | `MaterialBOMObjectID` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |
+| `MatFromLotSizeQuantity` |  | |  |  |
+| `MaterialToLotSizeQuantity` |  | |  |  |
+| `IsConfiguredMaterial` |  | |  |  |
+| `MaterialBOMObjectID` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
 
 ## Source Code
 

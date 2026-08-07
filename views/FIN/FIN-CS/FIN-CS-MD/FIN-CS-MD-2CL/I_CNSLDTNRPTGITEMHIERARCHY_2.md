@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast( left( _Hierarchy.HierarchyClass, 2) as fincs_conschartofaccounts preserving type )` |
-| key `ConsolidationReportingItemHier` | `cast( substring( _Hierarchy.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
-| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( left( _Hierarchy.HierarchyClass, 2) as fincs_conschartofaccounts preserving type )` |
+| `ConsolidationReportingItemHier` | ✓ | |  | `cast( substring( _Hierarchy.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

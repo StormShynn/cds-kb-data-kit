@@ -27,51 +27,51 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `I_NotificationTask.Notification` |
-| key `NotificationTask` | `I_NotificationTask.NotificationTask` |
-| `QualityTask` | `cast( ' ' as char16 preserving type )` |
-| `QualityTaskOrigin` | `I_NotificationTask.QualityTaskOrigin` |
-| `NotificationTaskText` | `I_NotificationTask.NotificationTaskText` |
-| `IsDeleted` | `I_NotificationTask.IsDeleted` |
-| `NotifProcessingPhase` | `I_QltyNotification.NotifProcessingPhase` |
-| `NotifTaskPlannedStartDate` | `I_NotificationTask.NotifTaskPlannedStartDate` |
-| `NotifTaskPlannedStartTime` | `I_NotificationTask.NotifTaskPlannedStartTime` |
-| `NotifTaskPlannedEndDate` | `I_NotificationTask.NotifTaskPlannedEndDate` |
-| `NotifTaskPlannedEndTime` | `I_NotificationTask.NotifTaskPlannedEndTime` |
-| `StatusObject` | `I_NotificationTask.StatusObject` |
-| `NotifTaskTimeZone` | `I_NotificationTask.NotifTaskTimeZone` |
-| `NotifTaskCompletedByUser` | `I_NotificationTask.NotifTaskCompletedByUser` |
-| `NotifTaskCompletionDate` | `I_NotificationTask.NotifTaskCompletionDate` |
-| `NotifTaskCompletionTime` | `I_NotificationTask.NotifTaskCompletionTime` |
-| `NotifTaskResubmissionDate` | `I_NotificationTask.NotifTaskResubmissionDate` |
-| `NotifTaskResubmissionTime` | `I_NotificationTask.NotifTaskResubmissionTime` |
-| `ResponsiblePersonFunctionCode` | `cast(I_NotificationTask.ResponsiblePersonFunctionCode as qmsm_parvw preserving type )` |
-| `ResponsiblePerson` | `I_NotificationTask.ResponsiblePerson` |
-| `NotificationTaskSortNumber` | `I_NotificationTask.NotificationTaskSortNumber` |
-| `NotificationItem` | `I_NotificationTask.NotificationItem` |
-| `NotificationCauseID` | `I_NotificationTask.NotificationCauseID` |
-| `NotificationType` | `I_QltyNotification.NotificationType` |
-| `Plant` | `I_QltyNotification.Plant` |
-| `IsBusinessPurposeCompleted` | `I_QltyNotification.IsBusinessPurposeCompleted` |
-| `QualityTaskCodeCatalog` | `cast( I_NotificationTask.NotificationTaskCatalog as vdm_qn_makat preserving type )` |
-| `QualityTaskCodeGroup` | `cast( I_NotificationTask.NotificationTaskCodeGroup as vdm_qn_magrp preserving type )` |
-| `QualityTaskCode` | `I_NotificationTask.NotificationTaskCode` |
-| `QltyTaskTimeBasedEffort` | `I_NotificationTask.QltyTaskTimeBasedEffort` |
-| `QltyTaskTimeBasedEffortUoM` | `I_NotificationTask.QltyTaskTimeBasedEffortUoM` |
-| `ChangedDateTime` | `I_NotificationTask.ChangedDateTime` |
-| `CreatedByUser` | `I_NotificationTask.CreatedByUser` |
-| `CreationDate` | `I_NotificationTask.CreationDate` |
-| `CreationTime` | `I_NotificationTask.CreationTime` |
-| `LastChangedByUser` | `I_NotificationTask.LastChangedByUser` |
-| `LastChangeDate` | `I_NotificationTask.LastChangeDate` |
-| `LastChangeTime` | `I_NotificationTask.LastChangeTime` |
-| `_Notification` | *Association* |
-| `_QltyTskCodeGroup` | *Association* |
-| `_QltyTskCode` | *Association* |
-| `_QltyNotificationTaskLongText` | *Association* |
-| `_QltyTskProcTimeUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |
+| `NotificationTask` | ✓ | |  |  |
+| `QualityTask` |  | |  | `cast( ' ' as char16 preserving type )` |
+| `QualityTaskOrigin` |  | |  |  |
+| `NotificationTaskText` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `NotifProcessingPhase` |  | |  |  |
+| `NotifTaskPlannedStartDate` |  | |  |  |
+| `NotifTaskPlannedStartTime` |  | |  |  |
+| `NotifTaskPlannedEndDate` |  | |  |  |
+| `NotifTaskPlannedEndTime` |  | |  |  |
+| `StatusObject` |  | |  |  |
+| `NotifTaskTimeZone` |  | |  |  |
+| `NotifTaskCompletedByUser` |  | |  |  |
+| `NotifTaskCompletionDate` |  | |  |  |
+| `NotifTaskCompletionTime` |  | |  |  |
+| `NotifTaskResubmissionDate` |  | |  |  |
+| `NotifTaskResubmissionTime` |  | |  |  |
+| `ResponsiblePersonFunctionCode` |  | |  | `cast(I_NotificationTask.ResponsiblePersonFunctionCode as qmsm_parvw preserving type )` |
+| `ResponsiblePerson` |  | |  |  |
+| `NotificationTaskSortNumber` |  | |  |  |
+| `NotificationItem` |  | |  |  |
+| `NotificationCauseID` |  | |  |  |
+| `NotificationType` |  | |  |  |
+| `Plant` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `QualityTaskCodeCatalog` |  | |  | `cast( I_NotificationTask.NotificationTaskCatalog as vdm_qn_makat preserving type )` |
+| `QualityTaskCodeGroup` |  | |  | `cast( I_NotificationTask.NotificationTaskCodeGroup as vdm_qn_magrp preserving type )` |
+| `QualityTaskCode` |  | |  | `NotificationTaskCode` |
+| `QltyTaskTimeBasedEffort` |  | |  |  |
+| `QltyTaskTimeBasedEffortUoM` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `_Notification` | | ✓ | | |
+| `_QltyTskCodeGroup` | | ✓ | | |
+| `_QltyTskCode` | | ✓ | | |
+| `_QltyNotificationTaskLongText` | | ✓ | | |
+| `_QltyTskProcTimeUnit` | | ✓ | | |
 
 ## Associations
 

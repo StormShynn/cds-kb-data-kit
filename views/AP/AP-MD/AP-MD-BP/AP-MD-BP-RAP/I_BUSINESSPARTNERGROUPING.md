@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerGrouping` | `bu_group` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerGrouping` | ✓ | |  | `bu_group` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

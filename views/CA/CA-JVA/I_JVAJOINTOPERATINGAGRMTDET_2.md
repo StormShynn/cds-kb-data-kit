@@ -27,91 +27,91 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `_JointVentureMasterFld.CompanyCode` |
-| key `JntOpgAgrmt` | `_JntOpgAgrmt.JntOpgAgrmt` |
-| key `JointVenture` | `_JointVentureMasterFld.JointVenture` |
-| key `JointVentureEquityType` | `_JntVntrValdInvmtGrp.JointVentureEquityType` |
-| key `JointVentureEquityGroup` | `_JntVntrValdInvmtGrp.JointVentureEquityGroup` |
-| key `JointVenturePartner` | `_JntVntrPartOwnrEquityShr.JointVenturePartner` |
-| key `JntVntrIntcoCode` | `_JointVentureIntcoVenture.JntVntrIntcoCode` |
-| `JntVntrContractNmbr` | `_JntOpgAgrmt.JntVntrContractNmbr` |
-| `JntVntrPayrollClearingSet` | `_JntOpgAgrmt.JntVntrPayrollClearingSet` |
-| `JntVntrConstructionExclsnSet` | `_JntOpgAgrmt.JntVntrConstructionExclsnSet` |
-| `JntVntrCatastropheExclsnSet` | `_JntOpgAgrmt.JntVntrCatastropheExclsnSet` |
-| `JntVntrConstructionOvhdRule` | `_JntOpgAgrmt.JntVntrConstructionOvhdRule` |
-| `JntVntrCatastropheOvhdRule` | `_JntOpgAgrmt.JntVntrCatastropheOvhdRule` |
-| `JVAOvhdPercentProdg` | `_JntOpgAgrmt.JVAOvhdPercentProdg` |
-| `JVAExclsnAcctSetPercentProdg` | `_JntOpgAgrmt.JVAExclsnAcctSetPercentProdg` |
-| `JVAOvhdPercentDev` | `_JntOpgAgrmt.JVAOvhdPercentDev` |
-| `JVAExclsnAcctSetPercentDev` | `_JntOpgAgrmt.JVAExclsnAcctSetPercentDev` |
-| `JntVntrExplorationOvhdRule` | `_JntOpgAgrmt.JntVntrExplorationOvhdRule` |
-| `JntVntrDrillingOvhdRule` | `_JntOpgAgrmt.JntVntrDrillingOvhdRule` |
-| `JntVntrCapitalExclsnSet` | `_JntOpgAgrmt.JntVntrCapitalExclsnSet` |
-| `JntVntrOvhdOffsetCostCtr` | `_JntOpgAgrmt.JntVntrOvhdOffsetCostCtr` |
-| `JntOpgAgrmtProdgWellThld` | `_JntOpgAgrmt.JntOpgAgrmtProdgWellThld` |
-| `JntVntrOvhdRecurringDoc` | `_JntOpgAgrmt.JntVntrOvhdRecurringDoc` |
-| `JntVntrOvhdFlatRateAmt` | `} _JntOpgAgrmt.JntVntrOvhdFlatRateAmt` |
-| `JntVntrExpnIsEscalated` | `_JntOpgAgrmt.JntVntrExpnIsEscalated` |
-| `JntOpgAgrmtClass` | `_JntOpgAgrmt.JntOpgAgrmtClass` |
-| `JntOpgAgrmtDrillingPayRate` | `_JntOpgAgrmt.JntOpgAgrmtDrillingPayRate` |
-| `JntOpgAgrmtNonDrillingPayRate` | `_JntOpgAgrmt.JntOpgAgrmtNonDrillingPayRate` |
-| `JointVenturePaymentTerms` | `_JointVentureMasterFld.JointVenturePaymentTerms` |
-| `JointVentureBillingMethod` | `_JointVentureMasterFld.JointVentureBillingMethod` |
-| `JointVentureType` | `_JointVentureMasterFld.JointVentureType` |
-| `JointVentureOperator` | `_JointVentureMasterFld.JointVentureOperator` |
-| `JointVentureTaxCode` | `_JointVentureMasterFld.JointVentureTaxCode` |
-| `JVAVentureClass` | `_JointVentureMasterFld.JVAVentureClass` |
-| `JntVntrInceptionToDateData` | `_JointVentureMasterFld.JntVntrInceptionToDateData` |
-| `JntVntrBillgCutbackIsBlk` | `_JointVentureMasterFld.JntVntrBillgCutbackIsBlk` |
-| `JntVntrTaxJurisdiction` | `_JointVentureMasterFld.JntVntrTaxJurisdiction` |
-| `JntVntrOutPaymentTerms` | `_JointVentureMasterFld.JntVntrOutPaymentTerms` |
-| `JntVntrOutTaxCode` | `_JointVentureMasterFld.JntVntrOutTaxCode` |
-| `JntVntrOutTaxJurisdiction` | `_JointVentureMasterFld.JntVntrOutTaxJurisdiction` |
-| `JntVntrNonBillgFormat` | `_JointVentureMasterFld.JntVntrNonBillgFormat` |
-| `JntVntrBillgFrqcy` | `_JointVentureMasterFld.JntVntrBillgFrqcy` |
-| `JntVntrDrillingPayRate` | `_JointVentureMasterFld.JntVntrDrillingPayRate` |
-| `JntVntrNonDrillingPayRate` | `_JointVentureMasterFld.JntVntrNonDrillingPayRate` |
-| `JntVntrParentCoOvhdExpnCostCtr` | `_JointVentureMasterFld.JntVntrParentCoOvhdExpnCostCtr` |
-| `JntVntrParentCoOvhdProject` | `_JointVentureMasterFld.JntVntrParentCoOvhdProject` |
-| `JntVntrParentCoOvhdExpnOrder` | `_JointVentureMasterFld.JntVntrParentCoOvhdExpnOrder` |
-| `JntVntrSubstituteCostCtr` | `_JointVentureMasterFld.JntVntrSubstituteCostCtr` |
-| `JntVntrFundingGroup` | `_JointVentureMasterFld.JntVntrFundingGroup` |
-| `JntVntrCrcyIsFundingCrcy` | `_JointVentureMasterFld.JntVntrCrcyIsFundingCrcy` |
-| `JntVntrProperty` | `_JointVentureMasterFld.JntVntrProperty` |
-| `JntVntrBillgThldDebit` | `} _JointVentureMasterFld.JntVntrBillgThldDebit` |
-| `JntVntrBillgThldCredit` | `} _JointVentureMasterFld.JntVntrBillgThldCredit` |
-| `JntVntrBillgThldIsActive` | `_JointVentureMasterFld.JntVntrBillgThldIsActive` |
-| `JntVntrPaymentTermSchema` | `_JointVentureMasterFld.JntVntrPaymentTermSchema` |
-| `JVAVentureIntrstCalcGrpID` | `_JointVentureMasterFld.JVAVentureIntrstCalcGrpID` |
-| `JntVntrEquityFundingDateValue` | `_JntVntrValdInvmtGrp.JntVntrEquityFundingDateValue` |
-| `JVAEquityGroupFromDate` | `cast ( cast ( 99999999 - cast( _JntVntrValdInvmtGrp.JntVntrEquityFundingDateValue as abap.int4 ) as abap.char ( 12 ) ) as abap.dats )` |
-| `JointVentureEquityGroupActive` | `_JntVntrValdInvmtGrp.JointVentureEquityGroupActive` |
-| `JointVentureDefBillCurrency` | `_JntVntrValdInvmtGrp.JointVentureDefBillCurrency` |
-| `JVAFundingGrpInEquityGrp` | `_JntVntrValdInvmtGrp.JVAFundingGrpInEquityGrp` |
-| `JVAEquityGroupIntrstCalcGrpID` | `_JntVntrValdInvmtGrp.JVAEquityGroupIntrstCalcGrpID` |
-| `JointVentureEquityTypeName` | `_JntVntrValdInvmtGrp.JointVentureEquityTypeName` |
-| `JointVentureIntcoVenture` | `_JointVentureIntcoVenture.JointVentureIntcoVenture` |
-| `JointVentureIntcoEquityGrp` | `_JointVentureIntcoVenture.JointVentureIntcoEquityGrp` |
-| `JntVntrEquityShare` | `_JntVntrPartOwnrEquityShr.JntVntrEquityShare` |
-| `JntVntrOwnrIsSuspended` | `_JntVntrPartOwnrEquityShr.JntVntrOwnrIsSuspended` |
-| `JntVntrOwnrSuspendedPerd` | `_JntVntrPartOwnrEquityShr.JntVntrOwnrSuspendedPerd` |
-| `JntVntrOwnrSuspendedYr` | `_JntVntrPartOwnrEquityShr.JntVntrOwnrSuspendedYr` |
-| `JntVntrOwnrIsNotSuspended` | `_JntVntrPartOwnrEquityShr.JntVntrOwnrIsNotSuspended` |
-| `JntVntrOwnrNotSuspendedPerd` | `_JntVntrPartOwnrEquityShr.JntVntrOwnrNotSuspendedPerd` |
-| `JntVntrOwnrNotSuspendedYr` | `_JntVntrPartOwnrEquityShr.JntVntrOwnrNotSuspendedYr` |
-| `JntVntrInterestType` | `_JntVntrPartOwnrEquityShr.JntVntrInterestType` |
-| `JntVntrOpgRcvryPercent` | `_JntVntrPartOwnrEquityShr.JntVntrOpgRcvryPercent` |
-| `JntVntrDrillingRcvryPercent` | `_JntVntrPartOwnrEquityShr.JntVntrDrillingRcvryPercent` |
-| `JntVntrPayIsStppd` | `_JntVntrPartOwnrEquityShr.JntVntrPayIsStppd` |
-| `JntVntrPartWrkgIntrstPerd` | `_JntVntrPartOwnrEquityShr.JntVntrPartWrkgIntrstPerd` |
-| `JntVntrPartWrkgIntrstYrValue` | `_JntVntrPartOwnrEquityShr.JntVntrPartWrkgIntrstYrValue` |
-| `JntVntrCarriedIntrstGrp` | `_JntVntrPartOwnrEquityShr.JntVntrCarriedIntrstGrp` |
-| `JntVntrNetProfitIntrstGrp` | `_JntVntrPartOwnrEquityShr.JntVntrNetProfitIntrstGrp` |
-| `JntVntrOperatorAddressArea` | `_JntVntrPartOwnrEquityShr.JntVntrOperatorAddressArea` |
-| `Currency` | `_CompanyCode.Currency` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | | `_JointVentureMasterFld` | `CompanyCode` |
+| `JntOpgAgrmt` | ✓ | | `_JntOpgAgrmt` | `JntOpgAgrmt` |
+| `JointVenture` | ✓ | | `_JointVentureMasterFld` | `JointVenture` |
+| `JointVentureEquityType` | ✓ | | `_JntVntrValdInvmtGrp` | `JointVentureEquityType` |
+| `JointVentureEquityGroup` | ✓ | | `_JntVntrValdInvmtGrp` | `JointVentureEquityGroup` |
+| `JointVenturePartner` | ✓ | | `_JntVntrPartOwnrEquityShr` | `JointVenturePartner` |
+| `JntVntrIntcoCode` | ✓ | | `_JointVentureIntcoVenture` | `JntVntrIntcoCode` |
+| `JntVntrContractNmbr` |  | | `_JntOpgAgrmt` | `JntVntrContractNmbr` |
+| `JntVntrPayrollClearingSet` |  | | `_JntOpgAgrmt` | `JntVntrPayrollClearingSet` |
+| `JntVntrConstructionExclsnSet` |  | | `_JntOpgAgrmt` | `JntVntrConstructionExclsnSet` |
+| `JntVntrCatastropheExclsnSet` |  | | `_JntOpgAgrmt` | `JntVntrCatastropheExclsnSet` |
+| `JntVntrConstructionOvhdRule` |  | | `_JntOpgAgrmt` | `JntVntrConstructionOvhdRule` |
+| `JntVntrCatastropheOvhdRule` |  | | `_JntOpgAgrmt` | `JntVntrCatastropheOvhdRule` |
+| `JVAOvhdPercentProdg` |  | | `_JntOpgAgrmt` | `JVAOvhdPercentProdg` |
+| `JVAExclsnAcctSetPercentProdg` |  | | `_JntOpgAgrmt` | `JVAExclsnAcctSetPercentProdg` |
+| `JVAOvhdPercentDev` |  | | `_JntOpgAgrmt` | `JVAOvhdPercentDev` |
+| `JVAExclsnAcctSetPercentDev` |  | | `_JntOpgAgrmt` | `JVAExclsnAcctSetPercentDev` |
+| `JntVntrExplorationOvhdRule` |  | | `_JntOpgAgrmt` | `JntVntrExplorationOvhdRule` |
+| `JntVntrDrillingOvhdRule` |  | | `_JntOpgAgrmt` | `JntVntrDrillingOvhdRule` |
+| `JntVntrCapitalExclsnSet` |  | | `_JntOpgAgrmt` | `JntVntrCapitalExclsnSet` |
+| `JntVntrOvhdOffsetCostCtr` |  | | `_JntOpgAgrmt` | `JntVntrOvhdOffsetCostCtr` |
+| `JntOpgAgrmtProdgWellThld` |  | | `_JntOpgAgrmt` | `JntOpgAgrmtProdgWellThld` |
+| `JntVntrOvhdRecurringDoc` |  | | `_JntOpgAgrmt` | `JntVntrOvhdRecurringDoc` |
+| `JntVntrOvhdFlatRateAmt` |  | |  | `} _JntOpgAgrmt.JntVntrOvhdFlatRateAmt` |
+| `JntVntrExpnIsEscalated` |  | | `_JntOpgAgrmt` | `JntVntrExpnIsEscalated` |
+| `JntOpgAgrmtClass` |  | | `_JntOpgAgrmt` | `JntOpgAgrmtClass` |
+| `JntOpgAgrmtDrillingPayRate` |  | | `_JntOpgAgrmt` | `JntOpgAgrmtDrillingPayRate` |
+| `JntOpgAgrmtNonDrillingPayRate` |  | | `_JntOpgAgrmt` | `JntOpgAgrmtNonDrillingPayRate` |
+| `JointVenturePaymentTerms` |  | | `_JointVentureMasterFld` | `JointVenturePaymentTerms` |
+| `JointVentureBillingMethod` |  | | `_JointVentureMasterFld` | `JointVentureBillingMethod` |
+| `JointVentureType` |  | | `_JointVentureMasterFld` | `JointVentureType` |
+| `JointVentureOperator` |  | | `_JointVentureMasterFld` | `JointVentureOperator` |
+| `JointVentureTaxCode` |  | | `_JointVentureMasterFld` | `JointVentureTaxCode` |
+| `JVAVentureClass` |  | | `_JointVentureMasterFld` | `JVAVentureClass` |
+| `JntVntrInceptionToDateData` |  | | `_JointVentureMasterFld` | `JntVntrInceptionToDateData` |
+| `JntVntrBillgCutbackIsBlk` |  | | `_JointVentureMasterFld` | `JntVntrBillgCutbackIsBlk` |
+| `JntVntrTaxJurisdiction` |  | | `_JointVentureMasterFld` | `JntVntrTaxJurisdiction` |
+| `JntVntrOutPaymentTerms` |  | | `_JointVentureMasterFld` | `JntVntrOutPaymentTerms` |
+| `JntVntrOutTaxCode` |  | | `_JointVentureMasterFld` | `JntVntrOutTaxCode` |
+| `JntVntrOutTaxJurisdiction` |  | | `_JointVentureMasterFld` | `JntVntrOutTaxJurisdiction` |
+| `JntVntrNonBillgFormat` |  | | `_JointVentureMasterFld` | `JntVntrNonBillgFormat` |
+| `JntVntrBillgFrqcy` |  | | `_JointVentureMasterFld` | `JntVntrBillgFrqcy` |
+| `JntVntrDrillingPayRate` |  | | `_JointVentureMasterFld` | `JntVntrDrillingPayRate` |
+| `JntVntrNonDrillingPayRate` |  | | `_JointVentureMasterFld` | `JntVntrNonDrillingPayRate` |
+| `JntVntrParentCoOvhdExpnCostCtr` |  | | `_JointVentureMasterFld` | `JntVntrParentCoOvhdExpnCostCtr` |
+| `JntVntrParentCoOvhdProject` |  | | `_JointVentureMasterFld` | `JntVntrParentCoOvhdProject` |
+| `JntVntrParentCoOvhdExpnOrder` |  | | `_JointVentureMasterFld` | `JntVntrParentCoOvhdExpnOrder` |
+| `JntVntrSubstituteCostCtr` |  | | `_JointVentureMasterFld` | `JntVntrSubstituteCostCtr` |
+| `JntVntrFundingGroup` |  | | `_JointVentureMasterFld` | `JntVntrFundingGroup` |
+| `JntVntrCrcyIsFundingCrcy` |  | | `_JointVentureMasterFld` | `JntVntrCrcyIsFundingCrcy` |
+| `JntVntrProperty` |  | | `_JointVentureMasterFld` | `JntVntrProperty` |
+| `JntVntrBillgThldDebit` |  | |  | `} _JointVentureMasterFld.JntVntrBillgThldDebit` |
+| `JntVntrBillgThldCredit` |  | |  | `} _JointVentureMasterFld.JntVntrBillgThldCredit` |
+| `JntVntrBillgThldIsActive` |  | | `_JointVentureMasterFld` | `JntVntrBillgThldIsActive` |
+| `JntVntrPaymentTermSchema` |  | | `_JointVentureMasterFld` | `JntVntrPaymentTermSchema` |
+| `JVAVentureIntrstCalcGrpID` |  | | `_JointVentureMasterFld` | `JVAVentureIntrstCalcGrpID` |
+| `JntVntrEquityFundingDateValue` |  | | `_JntVntrValdInvmtGrp` | `JntVntrEquityFundingDateValue` |
+| `JVAEquityGroupFromDate` |  | |  | `cast ( cast ( 99999999 - cast( _JntVntrValdInvmtGrp.JntVntrEquityFundingDateValue as abap.int4 ) as abap.char ( 12 ) ) as abap.dats )` |
+| `JointVentureEquityGroupActive` |  | | `_JntVntrValdInvmtGrp` | `JointVentureEquityGroupActive` |
+| `JointVentureDefBillCurrency` |  | | `_JntVntrValdInvmtGrp` | `JointVentureDefBillCurrency` |
+| `JVAFundingGrpInEquityGrp` |  | | `_JntVntrValdInvmtGrp` | `JVAFundingGrpInEquityGrp` |
+| `JVAEquityGroupIntrstCalcGrpID` |  | | `_JntVntrValdInvmtGrp` | `JVAEquityGroupIntrstCalcGrpID` |
+| `JointVentureEquityTypeName` |  | | `_JntVntrValdInvmtGrp` | `JointVentureEquityTypeName` |
+| `JointVentureIntcoVenture` |  | | `_JointVentureIntcoVenture` | `JointVentureIntcoVenture` |
+| `JointVentureIntcoEquityGrp` |  | | `_JointVentureIntcoVenture` | `JointVentureIntcoEquityGrp` |
+| `JntVntrEquityShare` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrEquityShare` |
+| `JntVntrOwnrIsSuspended` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrOwnrIsSuspended` |
+| `JntVntrOwnrSuspendedPerd` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrOwnrSuspendedPerd` |
+| `JntVntrOwnrSuspendedYr` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrOwnrSuspendedYr` |
+| `JntVntrOwnrIsNotSuspended` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrOwnrIsNotSuspended` |
+| `JntVntrOwnrNotSuspendedPerd` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrOwnrNotSuspendedPerd` |
+| `JntVntrOwnrNotSuspendedYr` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrOwnrNotSuspendedYr` |
+| `JntVntrInterestType` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrInterestType` |
+| `JntVntrOpgRcvryPercent` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrOpgRcvryPercent` |
+| `JntVntrDrillingRcvryPercent` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrDrillingRcvryPercent` |
+| `JntVntrPayIsStppd` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrPayIsStppd` |
+| `JntVntrPartWrkgIntrstPerd` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrPartWrkgIntrstPerd` |
+| `JntVntrPartWrkgIntrstYrValue` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrPartWrkgIntrstYrValue` |
+| `JntVntrCarriedIntrstGrp` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrCarriedIntrstGrp` |
+| `JntVntrNetProfitIntrstGrp` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrNetProfitIntrstGrp` |
+| `JntVntrOperatorAddressArea` |  | | `_JntVntrPartOwnrEquityShr` | `JntVntrOperatorAddressArea` |
+| `Currency` |  | | `_CompanyCode` | `Currency` |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

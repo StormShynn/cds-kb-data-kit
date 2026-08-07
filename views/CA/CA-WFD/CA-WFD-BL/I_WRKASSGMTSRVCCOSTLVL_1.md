@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkAssignmentExternalID` | `_Assignment.WorkAssignmentExternalID` |
-| key `Country2DigitISOCode` | `_Assignment.Country2DigitISOCode` |
-| key `StartDate` | `_SrvcCostLvl.StartDate` |
-| `WorkforcePersonExternalID` | `_Assignment.WorkforcePersonExternalID` |
-| `EndDate` | `_SrvcCostLvl.EndDate` |
-| `ServiceCostLevel` | `_SrvcCostLvl.ServiceCostLevel` |
-| `IsBlocked` | `_Assignment.IsBlocked` |
-| `_WorkAssignment` | *Association* |
-| `_WorkforcePerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |
+| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |
+| `StartDate` | ✓ | | `_SrvcCostLvl` | `StartDate` |
+| `WorkforcePersonExternalID` |  | | `_Assignment` | `WorkforcePersonExternalID` |
+| `EndDate` |  | | `_SrvcCostLvl` | `EndDate` |
+| `ServiceCostLevel` |  | | `_SrvcCostLvl` | `ServiceCostLevel` |
+| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |
+| `_WorkAssignment` | | ✓ | | |
+| `_WorkforcePerson` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocConsistencyStatus` | `cast ( substring( domvalue_l, 1, 2 ) as prodallocconsistencystatus preserving type )` |
-| key `Language` | `ddlanguage` |
-| `ProdAllocConstcyStatusDesc` | `cast( ddtext as prodallocconsistencystatusdesc preserving type )` |
-| `_Language` | *Association* |
-| `_ProdAllocConsistencyStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocConsistencyStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocconsistencystatus preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ProdAllocConstcyStatusDesc` |  | |  | `cast( ddtext as prodallocconsistencystatusdesc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_ProdAllocConsistencyStatus` | | ✓ | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityRequirementOrigin` | `cast(substring(txt.domvalue_l, 1, 1) as capacityrequirementorigin preserving type)` |
-| key `Language` | `cast(txt.ddlanguage as spras preserving type)` |
-| `CapacityRequirementOriginName` | `cast(txt.ddtext as capacityrequirementoriginname preserving type)` |
-| `DomainValue` | `txt.domvalue_l` |
-| `_Language` | *Association* |
-| `_CapacityRequirementOrigin` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityRequirementOrigin` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as capacityrequirementorigin preserving type)` |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
+| `CapacityRequirementOriginName` |  | |  | `cast(txt.ddtext as capacityrequirementoriginname preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_CapacityRequirementOrigin` | | ✓ | | |
 
 ## Associations
 

@@ -28,22 +28,22 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Id` | `id` |
-| key `Ssn` | `ssn` |
-| `Role` | `role` |
-| `Name` | `name` |
-| `Dob` | `dob` |
-| `Email` | `email` |
-| `CountryCode` | `country_code` |
-| `PhoneNumber` | `phone_number` |
-| `Createdby` | `createdby` |
-| `Createdat` | `createdat` |
-| `Lastchangedby` | `lastchangedby` |
-| `Lastchangedat` | `lastchangedat` |
-| `Locallastchanged` | `locallastchanged` |
-| `_Membership` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Id` | ✓ | |  | `id` |
+| `Ssn` | ✓ | |  | `ssn` |
+| `Role` |  | |  | `role` |
+| `Name` |  | |  | `name` |
+| `Dob` |  | |  | `dob` |
+| `Email` |  | |  | `email` |
+| `CountryCode` |  | |  | `country_code` |
+| `PhoneNumber` |  | |  | `phone_number` |
+| `Createdby` |  | |  | `createdby` |
+| `Createdat` |  | |  | `createdat` |
+| `Lastchangedby` |  | |  | `lastchangedby` |
+| `Lastchangedat` |  | |  | `lastchangedat` |
+| `Locallastchanged` |  | |  | `locallastchanged` |
+| `_Membership` | | ✓ | | |
 
 ## Associations
 

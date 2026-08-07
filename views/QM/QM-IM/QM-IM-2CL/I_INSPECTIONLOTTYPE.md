@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLotType` | `tq30.art` |
-| `BillOfOperationsUsage` | `tq30.pplverw` |
-| `SelectedCodeSet` | `tq30.vemenge` |
-| `SelectedCodeSetHasSamePlant` | `tq30.kzvewerks` |
-| `_Text` | *Association* |
-| `_SelectedCodeSetHasSamePlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLotType` | ✓ | |  | `art` |
+| `BillOfOperationsUsage` |  | |  | `pplverw` |
+| `SelectedCodeSet` |  | |  | `vemenge` |
+| `SelectedCodeSetHasSamePlant` |  | |  | `kzvewerks` |
+| `_Text` | | ✓ | | |
+| `_SelectedCodeSetHasSamePlant` | | ✓ | | |
 
 ## Associations
 

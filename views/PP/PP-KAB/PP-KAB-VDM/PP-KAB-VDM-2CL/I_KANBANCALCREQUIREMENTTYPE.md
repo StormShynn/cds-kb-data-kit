@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `matnr` |
-| key `Plant` | `werks` |
-| key `StorageLocation` | `lgort` |
-| `PlndIndepRqmtsAreConsdrd` | `flg_indreq` |
-| `CustRqmtsAreConsdrd` | `flg_cusreq` |
-| `StkTransfRqmtsAreConsdrd` | `flg_strreq` |
-| `NonAssgdDepdntRqmtsAreConsdrd` | `flg_depreq` |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `StorageLocation` | ✓ | |  | `lgort` |
+| `PlndIndepRqmtsAreConsdrd` |  | |  | `flg_indreq` |
+| `CustRqmtsAreConsdrd` |  | |  | `flg_cusreq` |
+| `StkTransfRqmtsAreConsdrd` |  | |  | `flg_strreq` |
+| `NonAssgdDepdntRqmtsAreConsdrd` |  | |  | `flg_depreq` |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
 
 ## Associations
 

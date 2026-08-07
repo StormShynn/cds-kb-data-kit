@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ComponentBreakdownMethod` | `ComponentBreakdownMethod` |
-| `ComponentBreakdownMethodType` | `ComponentBreakdownMethodType` |
-| `CostBreakdownStructure` | `CostBreakdownStructure` |
-| `QuantityBreakdownStructure` | `QuantityBreakdownStructure` |
-| `_CostBreakdownStructure` | *Association* |
-| `_QtyComponentStructure` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ComponentBreakdownMethod` | ✓ | |  |  |
+| `ComponentBreakdownMethodType` |  | |  |  |
+| `CostBreakdownStructure` |  | |  |  |
+| `QuantityBreakdownStructure` |  | |  |  |
+| `_CostBreakdownStructure` | | ✓ | | |
+| `_QtyComponentStructure` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

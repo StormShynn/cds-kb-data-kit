@@ -29,43 +29,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintOrderConf` | `MaintOrderConf` |
-| key `MaintOrderConfCntrValue` | `MaintOrderConfCntrValue` |
-| `MaintenanceOrder` | `MaintenanceOrder` |
-| `MaintenanceOrderOperation` | `MaintenanceOrderOperation` |
-| `MaintenanceOrderSubOperation` | `MaintenanceOrderSubOperation` |
-| `PersonnelNumber` | `PersonnelNumber` |
-| `ActualWorkQuantity` | `ActualWorkQuantity` |
-| `ActualWorkQuantityUnit` | `ActualWorkQuantityUnit` |
-| `ActualDuration` | `ActualDuration` |
-| `ActualDurationUnit` | `ActualDurationUnit` |
-| `OperationConfirmedStartDate` | `OperationConfirmedStartDate` |
-| `OperationConfirmedStartTime` | `OperationConfirmedStartTime` |
-| `OperationConfirmedEndDate` | `OperationConfirmedEndDate` |
-| `OperationConfirmedEndTime` | `OperationConfirmedEndTime` |
-| `IsFinalConfirmation` | `IsFinalConfirmation` |
-| `NoFurtherWorkQuantityIsExpd` | `NoFurtherWorkQuantityIsExpd` |
-| `RemainingWorkQuantity` | `RemainingWorkQuantity` |
-| `RemainingWorkQuantityUnit` | `RemainingWorkQuantityUnit` |
-| `PostingDate` | `PostingDate` |
-| `ActivityType` | `ActivityType` |
-| `OpenReservationsIsCleared` | `OpenReservationsIsCleared` |
-| `ConfirmationText` | `ConfirmationText` |
-| `EmployeeWageType` | `EmployeeWageType` |
-| `EmployeeWageGroup` | `EmployeeWageGroup` |
-| `VarianceReasonCode` | `VarianceReasonCode` |
-| `CapacityInternalID` | `CapacityInternalID` |
-| `NmbrOfMaintTechnicianCapSplits` | `NmbrOfMaintTechnicianCapSplits` |
-| `MaterialDocument` | `MaterialDocument` |
-| `AccountingIndicatorCode` | `AccountingIndicatorCode` |
-| `ActyConfFcstdEndDate` | `ActyConfFcstdEndDate` |
-| `ActyConfFcstdEndTime` | `ActyConfFcstdEndTime` |
-| `IsReversed` | `IsReversed` |
-| `IsReversal` | `IsReversal` |
-| `CancldMaintOrderConfCntrValue` | `CancldMaintOrderConfCntrValue` |
-| `_LongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintOrderConf` | ✓ | |  |  |
+| `MaintOrderConfCntrValue` | ✓ | |  |  |
+| `MaintenanceOrder` |  | |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |
+| `MaintenanceOrderSubOperation` |  | |  |  |
+| `PersonnelNumber` |  | |  |  |
+| `ActualWorkQuantity` |  | |  |  |
+| `ActualWorkQuantityUnit` |  | |  |  |
+| `ActualDuration` |  | |  |  |
+| `ActualDurationUnit` |  | |  |  |
+| `OperationConfirmedStartDate` |  | |  |  |
+| `OperationConfirmedStartTime` |  | |  |  |
+| `OperationConfirmedEndDate` |  | |  |  |
+| `OperationConfirmedEndTime` |  | |  |  |
+| `IsFinalConfirmation` |  | |  |  |
+| `NoFurtherWorkQuantityIsExpd` |  | |  |  |
+| `RemainingWorkQuantity` |  | |  |  |
+| `RemainingWorkQuantityUnit` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `OpenReservationsIsCleared` |  | |  |  |
+| `ConfirmationText` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `VarianceReasonCode` |  | |  |  |
+| `CapacityInternalID` |  | |  |  |
+| `NmbrOfMaintTechnicianCapSplits` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `AccountingIndicatorCode` |  | |  |  |
+| `ActyConfFcstdEndDate` |  | |  |  |
+| `ActyConfFcstdEndTime` |  | |  |  |
+| `IsReversed` |  | |  |  |
+| `IsReversal` |  | |  |  |
+| `CancldMaintOrderConfCntrValue` |  | |  |  |
+| `_LongText` | | ✓ | | |
 
 ## Source Code
 

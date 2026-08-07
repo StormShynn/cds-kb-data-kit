@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope2ContractualInstrument` | `GHGScope2ContractualInstrument` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope2ContractualInstrument` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

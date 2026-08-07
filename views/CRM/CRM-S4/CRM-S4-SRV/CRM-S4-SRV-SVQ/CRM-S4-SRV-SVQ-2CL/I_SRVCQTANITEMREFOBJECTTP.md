@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceQuotation` | `ServiceQuotation` |
-| key `ServiceQuotationItem` | `ServiceQuotationItem` |
-| key `ServiceRefObjectSequenceNumber` | `ServiceRefObjectSequenceNumber` |
-| `SerialNumber` | `SerialNumber` |
-| `ServiceReferenceEquipment` | `ServiceReferenceEquipment` |
-| `ServiceRefFunctionalLocation` | `ServiceRefFunctionalLocation` |
-| `ServiceReferenceProduct` | `ServiceReferenceProduct` |
-| `SrvcRefObjIsMainObject` | `SrvcRefObjIsMainObject` |
-| `_ServiceQuotationItemTP` | *Association* |
-| `_ServiceQuotationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |
+| `ServiceQuotationItem` | ✓ | |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |
+| `SerialNumber` |  | |  |  |
+| `ServiceReferenceEquipment` |  | |  |  |
+| `ServiceRefFunctionalLocation` |  | |  |  |
+| `ServiceReferenceProduct` |  | |  |  |
+| `SrvcRefObjIsMainObject` |  | |  |  |
+| `_ServiceQuotationItemTP` | | ✓ | | |
+| `_ServiceQuotationTP` | | ✓ | | |
 
 ## Source Code
 

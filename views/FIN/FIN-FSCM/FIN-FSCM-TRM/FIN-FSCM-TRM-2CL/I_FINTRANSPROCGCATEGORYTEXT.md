@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `FinancialInstrProductCategory` | `sanlf` |
-| key `FinInstrTransactionCategory` | `sfgtyp` |
-| key `FinTransProcessingCategory` | `abwtyp` |
-| `FinTransProcessingCategoryName` | `xabrbez` |
-| `_Language` | *Association* |
-| `_ProductCategory` | *Association* |
-| `_TransactionCategory` | *Association* |
-| `_ProcessingCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlf` |
+| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |
+| `FinTransProcessingCategory` | ✓ | |  | `abwtyp` |
+| `FinTransProcessingCategoryName` |  | |  | `xabrbez` |
+| `_Language` | | ✓ | | |
+| `_ProductCategory` | | ✓ | | |
+| `_TransactionCategory` | | ✓ | | |
+| `_ProcessingCategory` | | ✓ | | |
 
 ## Associations
 

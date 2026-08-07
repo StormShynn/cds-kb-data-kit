@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| key `Person` | `Person` |
-| key `OrdinalNumber` | `OrdinalNumber` |
-| `OrdinalNumberForEdit` | `OrdinalNumberForEdit` |
-| `FaxNumberCountry` | `FaxNumberCountry` |
-| `FaxAreaCodeSubscriberNumber` | `FaxAreaCodeSubscriberNumber` |
-| `FaxExtensionNumber` | `FaxExtensionNumber` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `FaxNumberIsCurrentDefault` | `FaxNumberIsCurrentDefault` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_AddressCommunicationRemark` | *Association* |
-| `_AddressCommunicationUsage` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_FaxNumberCountry` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `Person` | ✓ | |  |  |
+| `OrdinalNumber` | ✓ | |  |  |
+| `OrdinalNumberForEdit` |  | |  |  |
+| `FaxNumberCountry` |  | |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |
+| `FaxExtensionNumber` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `FaxNumberIsCurrentDefault` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_AddressCommunicationRemark` | | ✓ | | |
+| `_AddressCommunicationUsage` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_FaxNumberCountry` | | ✓ | | |
 
 ## Source Code
 

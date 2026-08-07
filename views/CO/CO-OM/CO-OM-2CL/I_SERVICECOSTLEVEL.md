@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceCostLevel` | `srv_cost_level` |
-| key `ValidityStartDate` | `start_date` |
-| `ValidityEndDate` | `end_date` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceCostLevel` | ✓ | |  | `srv_cost_level` |
+| `ValidityStartDate` | ✓ | |  | `start_date` |
+| `ValidityEndDate` |  | |  | `end_date` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

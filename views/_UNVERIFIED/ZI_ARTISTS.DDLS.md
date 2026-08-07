@@ -33,15 +33,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntityKey` | `entity_key` |
-| `Name` | `name` |
-| `CreatedBy` | `created_by` |
-| `CreatedAt` | `created_at` |
-| `LastChangedBy` | `last_changed_by` |
-| `LastChangedAt` | `last_changed_at` |
-| `LocalLastChangedAt` | `local_last_changed_at` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntityKey` | ✓ | |  | `entity_key` |
+| `Name` |  | |  | `name` |
+| `CreatedBy` |  | |  | `created_by` |
+| `CreatedAt` |  | |  | `created_at` |
+| `LastChangedBy` |  | |  | `last_changed_by` |
+| `LastChangedAt` |  | |  | `last_changed_at` |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
 
 ## Source Code
 

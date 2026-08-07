@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ServicesRenderedDate` | `fbuda` |
-| `ProjectBillingRequestUUID` | `pbr_uuid` |
-| `BillingPlanUsageCategory` | `sdbp_bpcat` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServicesRenderedDate` |  | |  | `fbuda` |
+| `ProjectBillingRequestUUID` |  | |  | `pbr_uuid` |
+| `BillingPlanUsageCategory` |  | |  | `sdbp_bpcat` |
 
 ## Source Code
 

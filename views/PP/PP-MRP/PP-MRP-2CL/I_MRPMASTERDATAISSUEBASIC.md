@@ -27,34 +27,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `d.Material` |
-| key `Plant` | `d.Plant` |
-| key `MRPArea` | `d.MRPArea` |
-| key `MRPMasterDataIssueSource` | `cast(coalesce( i.source_of_issue, 'H') as pph_source_of_issue preserving type )` |
-| key `MRPMasterDataIssueItemCount` | `cast(coalesce( i.counter, 0 ) as pph_counter preserving type )` |
-| `SystemMessageIdentification` | `cast(coalesce(i.msgid,'PPH_MRP') as msgid preserving type )` |
-| `SystemMessageType` | `cast(coalesce(i.msgty,'I') as msgty preserving type )` |
-| `SystemMessageNumber` | `cast(coalesce(i.msgno,'130') as msgno preserving type)` |
-| `SystemMessageVariable1` | `cast(i.msgv1 as ehprc_msgv1 preserving type)` |
-| `SystemMessageVariable2` | `cast(i.msgv2 as ehprc_msgv2 preserving type)` |
-| `SystemMessageVariable3` | `cast(i.msgv3 as ehprc_msgv3 preserving type)` |
-| `SystemMessageVariable4` | `cast(i.msgv4 as ehprc_msgv4 preserving type)` |
-| `MRPMessageLogUUID` | `cast(i.log_uuid as pph_mrp_log_uuid preserving type)` |
-| `CreationDateTime` | `cast(coalesce(i.timestamp,d.MaterialLastMRPDateTime) as pph_issue_created_timestamp preserving type )` |
-| `MRPIssueIsAccepted` | `cast(coalesce(i.isaccepted, '') as pph_issue_accepted preserving type )` |
-| `MRPIssueAcceptedByUser` | `cast(i.accepted_by as pph_issue_acc_uname preserving type )` |
-| `MRPIssueAcceptanceDateTime` | `cast(coalesce(i.accepted_at, 0) as pph_issue_acc_timestamp preserving type )` |
-| `_Material` | *Association* |
-| `_Plant` | *Association* |
-| `_MaterialPlant` | *Association* |
-| `_MRPArea` | *Association* |
-| `_MRPMasterDataIssueSource` | *Association* |
-| `_AcceptedByUser` | *Association* |
-| `_PlantText` | *Association* |
-| `_MaterialText` | *Association* |
-| `_MRPAreaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `MRPArea` | ✓ | |  |  |
+| `MRPMasterDataIssueSource` | ✓ | |  | `cast(coalesce( i.source_of_issue, 'H') as pph_source_of_issue preserving type )` |
+| `MRPMasterDataIssueItemCount` | ✓ | |  | `cast(coalesce( i.counter, 0 ) as pph_counter preserving type )` |
+| `SystemMessageIdentification` |  | |  | `cast(coalesce(i.msgid,'PPH_MRP') as msgid preserving type )` |
+| `SystemMessageType` |  | |  | `cast(coalesce(i.msgty,'I') as msgty preserving type )` |
+| `SystemMessageNumber` |  | |  | `cast(coalesce(i.msgno,'130') as msgno preserving type)` |
+| `SystemMessageVariable1` |  | |  | `cast(i.msgv1 as ehprc_msgv1 preserving type)` |
+| `SystemMessageVariable2` |  | |  | `cast(i.msgv2 as ehprc_msgv2 preserving type)` |
+| `SystemMessageVariable3` |  | |  | `cast(i.msgv3 as ehprc_msgv3 preserving type)` |
+| `SystemMessageVariable4` |  | |  | `cast(i.msgv4 as ehprc_msgv4 preserving type)` |
+| `MRPMessageLogUUID` |  | |  | `cast(i.log_uuid as pph_mrp_log_uuid preserving type)` |
+| `CreationDateTime` |  | |  | `cast(coalesce(i.timestamp,d.MaterialLastMRPDateTime) as pph_issue_created_timestamp preserving type )` |
+| `MRPIssueIsAccepted` |  | |  | `cast(coalesce(i.isaccepted, '') as pph_issue_accepted preserving type )` |
+| `MRPIssueAcceptedByUser` |  | |  | `cast(i.accepted_by as pph_issue_acc_uname preserving type )` |
+| `MRPIssueAcceptanceDateTime` |  | |  | `cast(coalesce(i.accepted_at, 0) as pph_issue_acc_timestamp preserving type )` |
+| `_Material` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_MaterialPlant` | | ✓ | | |
+| `_MRPArea` | | ✓ | | |
+| `_MRPMasterDataIssueSource` | | ✓ | | |
+| `_AcceptedByUser` | | ✓ | | |
+| `_PlantText` | | ✓ | | |
+| `_MaterialText` | | ✓ | | |
+| `_MRPAreaText` | | ✓ | | |
 
 ## Associations
 

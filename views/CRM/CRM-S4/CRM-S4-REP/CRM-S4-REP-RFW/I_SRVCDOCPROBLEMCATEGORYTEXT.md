@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'ISRVCDOCPCATTXT'` | `sqlViewName: 'ISRVCDOCPCATTXT'` |
-| `preserveKey` | `true` |
-| `true` | `compiler.compareFilter: true` |
-| `}` | `buffering: { status: #ACTIVE, type: #FULL }` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'ISRVCDOCPCATTXT'` |  | |  | `sqlViewName: 'ISRVCDOCPCATTXT'` |
+| `preserveKey` |  | |  | `true` |
+| `true` |  | |  | `compiler.compareFilter: true` |
+| `}` |  | |  | `buffering: { status: #ACTIVE, type: #FULL }` |
 
 ## Source Code
 

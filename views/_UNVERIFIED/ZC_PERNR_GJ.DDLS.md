@@ -37,20 +37,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ZcPernrId` | `ZcPernrId` |
-| `ZcEmpName` | `ZcEmpName` |
-| `ZcOrgehCode` | `ZcOrgehCode` |
-| `zcorgehname` | `zcorgehname` |
-| `Zchp` | `Zchp` |
-| `CreatedBy` | `CreatedBy` |
-| `CreatedAt` | `CreatedAt` |
-| `LastChangedBy` | `LastChangedBy` |
-| `LastChangedAt` | `LastChangedAt` |
-| `Attachment` | `Attachment` |
-| `MimeType` | `MimeType` |
-| `FileName` | `FileName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ZcPernrId` | ✓ | |  |  |
+| `ZcEmpName` |  | |  |  |
+| `ZcOrgehCode` |  | |  |  |
+| `zcorgehname` |  | |  |  |
+| `Zchp` |  | |  |  |
+| `CreatedBy` |  | |  |  |
+| `CreatedAt` |  | |  |  |
+| `LastChangedBy` |  | |  |  |
+| `LastChangedAt` |  | |  |  |
+| `Attachment` |  | |  |  |
+| `MimeType` |  | |  |  |
+| `FileName` |  | |  |  |
 
 ## Source Code
 

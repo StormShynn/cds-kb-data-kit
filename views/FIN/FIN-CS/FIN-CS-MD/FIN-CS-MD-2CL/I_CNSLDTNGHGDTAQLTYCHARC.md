@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGDataQualityCharacteristic` | `cast( _Source.GHGDataQualityCharacteristic as fincs_ghgdtaqltycharc preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGDataQualityCharacteristic` | ✓ | |  | `cast( _Source.GHGDataQualityCharacteristic as fincs_ghgdtaqltycharc preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

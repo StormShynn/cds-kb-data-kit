@@ -29,61 +29,61 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityRequirement` | `CapacityRequirement` |
-| key `CapacityRequirementItem` | `CapacityRequirementItem` |
-| key `CapacityRqmtItemCapacity` | `CapacityRqmtItemCapacity` |
-| `ProcessOrder` | `ProcessOrder` |
-| `OrderInternalID` | `OrderInternalID` |
-| `OrderPhaseInternalID` | `OrderPhaseInternalID` |
-| `ManufacturingOrderCategory` | `ManufacturingOrderCategory` |
-| `ProcessOrderType` | `ProcessOrderType` |
-| `Plant` | `Plant` |
-| `ProcessOrderPhase` | `ProcessOrderPhase` |
-| `SuperiorOperationIntIDOfPhase` | `SuperiorOperationIntIDOfPhase` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `CapacityRqmtConfirmation` | `CapacityRqmtConfirmation` |
-| `CapacityInternalID` | `CapacityInternalID` |
-| `CapacityRequirementDistrKey` | `CapacityRequirementDistrKey` |
-| `SuperiorOperationInternalID` | `SuperiorOperationInternalID` |
-| `CapacityRequirementUnit` | `CapacityRequirementUnit` |
-| `ScheduledCapReqOpSegProcgDurn` | `ScheduledCapReqOpSegProcgDurn` |
-| `RemainingCapReqOpSegProcgDurn` | `RemainingCapReqOpSegProcgDurn` |
-| `OperationEarliestStartDate` | `OperationEarliestStartDate` |
-| `OperationEarliestStartTime` | `OperationEarliestStartTime` |
-| `OperationEarliestEndDate` | `OperationEarliestEndDate` |
-| `OperationEarliestEndTime` | `OperationEarliestEndTime` |
-| `OperationLatestStartDate` | `OperationLatestStartDate` |
-| `OperationLatestStartTime` | `OperationLatestStartTime` |
-| `OperationLatestEndDate` | `OperationLatestEndDate` |
-| `OperationLatestEndTime` | `OperationLatestEndTime` |
-| `ActualStartDate` | `ActualStartDate` |
-| `ActualStartTime` | `ActualStartTime` |
-| `ActualEndDate` | `ActualEndDate` |
-| `ActualEndTime` | `ActualEndTime` |
-| `ErlstSchedldProcStrtDte` | `ErlstSchedldProcStrtDte` |
-| `ErlstSchedldProcStrtTime` | `ErlstSchedldProcStrtTime` |
-| `ErlstSchedldTrdwnStrtDte` | `ErlstSchedldTrdwnStrtDte` |
-| `ErlstSchedldTrdwnStrtTime` | `ErlstSchedldTrdwnStrtTime` |
-| `LtstSchedldProcStrtDte` | `LtstSchedldProcStrtDte` |
-| `LtstSchedldProcStrtTime` | `LtstSchedldProcStrtTime` |
-| `LtstSchedldTrdwnStrtDte` | `LtstSchedldTrdwnStrtDte` |
-| `LtstSchedldTrdwnStrtTime` | `LtstSchedldTrdwnStrtTime` |
-| `_OrderInternalID` | *Association* |
-| `_ProcessOrderType` | *Association* |
-| `_ProcessOrderOperation` | *Association* |
-| `_Plant` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_CapacityRequirement` | *Association* |
-| `_CapacityRequirementItem` | *Association* |
-| `_CapacityRequirementConf` | *Association* |
-| `_Capacity` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Order` | *Association* |
-| `_Operation` | *Association* |
-| `_Phase` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityRequirement` | ✓ | |  |  |
+| `CapacityRequirementItem` | ✓ | |  |  |
+| `CapacityRqmtItemCapacity` | ✓ | |  |  |
+| `ProcessOrder` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `OrderPhaseInternalID` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ProcessOrderType` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProcessOrderPhase` |  | |  |  |
+| `SuperiorOperationIntIDOfPhase` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `CapacityRqmtConfirmation` |  | |  |  |
+| `CapacityInternalID` |  | |  |  |
+| `CapacityRequirementDistrKey` |  | |  |  |
+| `SuperiorOperationInternalID` |  | |  |  |
+| `CapacityRequirementUnit` |  | |  |  |
+| `ScheduledCapReqOpSegProcgDurn` |  | |  |  |
+| `RemainingCapReqOpSegProcgDurn` |  | |  |  |
+| `OperationEarliestStartDate` |  | |  |  |
+| `OperationEarliestStartTime` |  | |  |  |
+| `OperationEarliestEndDate` |  | |  |  |
+| `OperationEarliestEndTime` |  | |  |  |
+| `OperationLatestStartDate` |  | |  |  |
+| `OperationLatestStartTime` |  | |  |  |
+| `OperationLatestEndDate` |  | |  |  |
+| `OperationLatestEndTime` |  | |  |  |
+| `ActualStartDate` |  | |  |  |
+| `ActualStartTime` |  | |  |  |
+| `ActualEndDate` |  | |  |  |
+| `ActualEndTime` |  | |  |  |
+| `ErlstSchedldProcStrtDte` |  | |  |  |
+| `ErlstSchedldProcStrtTime` |  | |  |  |
+| `ErlstSchedldTrdwnStrtDte` |  | |  |  |
+| `ErlstSchedldTrdwnStrtTime` |  | |  |  |
+| `LtstSchedldProcStrtDte` |  | |  |  |
+| `LtstSchedldProcStrtTime` |  | |  |  |
+| `LtstSchedldTrdwnStrtDte` |  | |  |  |
+| `LtstSchedldTrdwnStrtTime` |  | |  |  |
+| `_OrderInternalID` | | ✓ | | |
+| `_ProcessOrderType` | | ✓ | | |
+| `_ProcessOrderOperation` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_CapacityRequirement` | | ✓ | | |
+| `_CapacityRequirementItem` | | ✓ | | |
+| `_CapacityRequirementConf` | | ✓ | | |
+| `_Capacity` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_Operation` | | ✓ | | |
+| `_Phase` | | ✓ | | |
 
 ## Source Code
 

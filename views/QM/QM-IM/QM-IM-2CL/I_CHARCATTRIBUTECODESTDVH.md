@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharacteristicAttributeCodeGrp` | `CharacteristicAttributeCodeGrp` |
-| key `CharacteristicAttributeCode` | `CharacteristicAttributeCode` |
-| `_Text` | *Association* |
-| `_CharcAttributeCodeGrp` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharacteristicAttributeCodeGrp` | ✓ | |  |  |
+| `CharacteristicAttributeCode` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
+| `_CharcAttributeCodeGrp` | | ✓ | | |
 
 ## Source Code
 

@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowTaskInternalID` | `_Workflowtask.WorkflowTaskInternalID` |
-| `ProcmtHubPurchaseRequisition` | `_PurchaseRequisitionItem.ProcmtHubPurchaseRequisition` |
-| `ProcmtHubPurRequisitionItem` | `_PurchaseRequisitionItem.ProcmtHubPurRequisitionItem` |
-| `ProcmtHubPurRequisitionType` | `_PurchaseRequisitionItem.ProcmtHubPurRequisitionType` |
-| `ProcurementHubSourceSystem` | `_PurchaseRequisitionItem.ProcurementHubSourceSystem` |
-| `PrmtHbWrkflwTskCrtnUTCDte` | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `PrmtHbWrkflwTskCrtnUTCTme` | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `PrmtHbWrkflwTskDuUTCDte` | `cast(tstmp_to_dats( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
-| `PrmtHbWrkflwTskDuUTCTme` | `cast(tstmp_to_tims( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
-| `ProcmtHubSupplier` | `_PurchaseRequisitionItem.ProcmtHubSupplier` |
-| `CreatedByUserDescription` | `_User.UserDescription` |
-| `SupplierName` | `_Supplier.SupplierName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_Workflowtask` | `WorkflowTaskInternalID` |
+| `ProcmtHubPurchaseRequisition` |  | | `_PurchaseRequisitionItem` | `ProcmtHubPurchaseRequisition` |
+| `ProcmtHubPurRequisitionItem` |  | | `_PurchaseRequisitionItem` | `ProcmtHubPurRequisitionItem` |
+| `ProcmtHubPurRequisitionType` |  | | `_PurchaseRequisitionItem` | `ProcmtHubPurRequisitionType` |
+| `ProcurementHubSourceSystem` |  | | `_PurchaseRequisitionItem` | `ProcurementHubSourceSystem` |
+| `PrmtHbWrkflwTskCrtnUTCDte` |  | |  | `cast(tstmp_to_dats( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
+| `PrmtHbWrkflwTskCrtnUTCTme` |  | |  | `cast(tstmp_to_tims( _Workflowtask.WrkflwTskCreationUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_lst )` |
+| `PrmtHbWrkflwTskDuUTCDte` |  | |  | `cast(tstmp_to_dats( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_led )` |
+| `PrmtHbWrkflwTskDuUTCTme` |  | |  | `cast(tstmp_to_tims( _TaskDueDate.WorkflowTaskDueUTCDateTime, 'UTC', $session.client, 'NULL' ) as sww_let )` |
+| `ProcmtHubSupplier` |  | | `_PurchaseRequisitionItem` | `ProcmtHubSupplier` |
+| `CreatedByUserDescription` |  | | `_User` | `UserDescription` |
+| `SupplierName` |  | | `_Supplier` | `SupplierName` |
 
 ## Source Code
 

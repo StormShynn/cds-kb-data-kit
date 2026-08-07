@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `Material` | `_Text.Material` |
-| `MaterialName` | `_Text.MaterialName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnMaterialTP` | `_Material as _Material : redirected to parent I_CnsldtnMaterialTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `Material` | ✓ | | `_Text` | `Material` |
+| `MaterialName` |  | | `_Text` | `MaterialName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnMaterialTP` |  | |  | `_Material as _Material : redirected to parent I_CnsldtnMaterialTP` |
 
 ## Source Code
 

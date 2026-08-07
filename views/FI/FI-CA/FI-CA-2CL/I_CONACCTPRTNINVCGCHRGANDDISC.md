@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContractAccount` | `vkont` |
-| key `BusinessPartner` | `gpart` |
-| key `CAInvcgChargeAndDiscountKey` | `chgkey` |
-| key `CAInvcgChrgAndDiscKeyStartDate` | `date_from` |
-| `CAInvcgChrgAndDiscKeyEndDate` | `date_to` |
-| `CAApplicationArea` | `cast( 'C' as applk_kk preserving type )` |
-| `_BusinessPartner` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CAInvcgChrgAndDiscKey` | *Association* |
-| `_ContractAccount` | *Association* |
-| `_ContractAccountPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  | `vkont` |
+| `BusinessPartner` | ✓ | |  | `gpart` |
+| `CAInvcgChargeAndDiscountKey` | ✓ | |  | `chgkey` |
+| `CAInvcgChrgAndDiscKeyStartDate` | ✓ | |  | `date_from` |
+| `CAInvcgChrgAndDiscKeyEndDate` |  | |  | `date_to` |
+| `CAApplicationArea` |  | |  | `cast( 'C' as applk_kk preserving type )` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAInvcgChrgAndDiscKey` | | ✓ | | |
+| `_ContractAccount` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
 
 ## Associations
 

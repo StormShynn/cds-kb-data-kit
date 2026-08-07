@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `matnr` |
-| key `Plant` | `werks` |
-| key `StorageLocation` | `lgort` |
-| key `ProductionSupplyArea` | `prvbe` |
-| `KnbnCalcRqmtDistrWeightValue` | `weight` |
-| `KnbnCalcTotalRqmtDistrWgtValue` | `wtsum` |
-| `KnbnCalcRqmtDistrWgtPct` | `wprcnt` |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_ProductionSupplyArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `StorageLocation` | ✓ | |  | `lgort` |
+| `ProductionSupplyArea` | ✓ | |  | `prvbe` |
+| `KnbnCalcRqmtDistrWeightValue` |  | |  | `weight` |
+| `KnbnCalcTotalRqmtDistrWgtValue` |  | |  | `wtsum` |
+| `KnbnCalcRqmtDistrWgtPct` |  | |  | `wprcnt` |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_ProductionSupplyArea` | | ✓ | | |
 
 ## Associations
 

@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkforcePersonExternalID` | `Worker.WorkforcePersonExternalID` |
-| `BusinessPartner` | `Worker.BusinessPartner` |
-| `FirstName` | `BusinessPartner.FirstName` |
-| `MiddleName` | `BusinessPartner.MiddleName` |
-| `LastName` | `BusinessPartner.LastName` |
-| `FullName` | `BusinessPartner.PersonFullName` |
-| `BirthName` | `BusinessPartner.BusinessPartnerBirthName` |
-| `Initials` | `BusinessPartner.Initials` |
-| `NativePreferredLanguage` | `BusinessPartner.CorrespondenceLanguage` |
-| `IsBusinessPurposeCompleted` | `BusinessPartner.IsBusinessPurposeCompleted` |
-| `DataControllerSet` | `BusinessPartner.DataControllerSet` |
-| `DataController1` | `BusinessPartner.DataController1` |
-| `DataController2` | `BusinessPartner.DataController2` |
-| `DataController3` | `BusinessPartner.DataController3` |
-| `DataController4` | `BusinessPartner.DataController4` |
-| `DataController5` | `BusinessPartner.DataController5` |
-| `DataController6` | `BusinessPartner.DataController6` |
-| `DataController7` | `BusinessPartner.DataController7` |
-| `DataController8` | `BusinessPartner.DataController8` |
-| `DataController9` | `BusinessPartner.DataController9` |
-| `DataController10` | `BusinessPartner.DataController10` |
-| `AuthorizationGroup` | `BusinessPartner.AuthorizationGroup` |
-| `_WorkAssignment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `FirstName` |  | |  |  |
+| `MiddleName` |  | |  |  |
+| `LastName` |  | |  |  |
+| `FullName` |  | |  | `PersonFullName` |
+| `BirthName` |  | |  | `BusinessPartnerBirthName` |
+| `Initials` |  | |  |  |
+| `NativePreferredLanguage` |  | |  | `CorrespondenceLanguage` |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `_WorkAssignment` | | ✓ | | |
 
 ## Associations
 

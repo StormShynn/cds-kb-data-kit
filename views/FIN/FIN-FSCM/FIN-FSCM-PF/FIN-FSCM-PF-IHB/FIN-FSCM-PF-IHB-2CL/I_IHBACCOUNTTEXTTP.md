@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IHBAccountUUID` | `IHBAccountUUID` |
-| key `IHBAccountLanguage` | `IHBAccountLanguage` |
-| `IHBAccountDescription` | `IHBAccountDescription` |
-| `IHBAccountChangedDateTime` | `IHBAccountChangedDateTime` |
-| `_IHBAccountTP` | *Association* |
-| `_IHBAccount` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IHBAccountUUID` | ✓ | |  |  |
+| `IHBAccountLanguage` | ✓ | |  |  |
+| `IHBAccountDescription` |  | |  |  |
+| `IHBAccountChangedDateTime` |  | |  |  |
+| `_IHBAccountTP` | | ✓ | | |
+| `_IHBAccount` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Source Code
 

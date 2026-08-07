@@ -27,39 +27,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClfnObjectID` | `ObjectHeader.ClfnObjectID` |
-| key `ClfnObjectTable` | `ObjectHeader.ClfnObjectTable` |
-| key `CharcInternalID` | `Valuation.CharcInternalID` |
-| key `CharcValuePositionNumber` | `Valuation.CharcValuePositionNumber` |
-| key `ClfnObjectType` | `Valuation.ClfnObjectType` |
-| key `ClassType` | `Valuation.ClassType` |
-| key `TimeIntervalNumber` | `Valuation.TimeIntervalNumber` |
-| `ClfnObjectInternalID` | `ObjectHeader.ClfnObjectInternalID` |
-| `CharcValueIntervalType` | `Valuation.CharcValueIntervalType` |
-| `CharcValue` | `Valuation.CharcValue` |
-| `CharcFromNumericValue` | `Valuation.CharcFromNumericValue` |
-| `CharcFromNumericValueUnit` | `Valuation.CharcFromNumericValueUnit` |
-| `CharcToNumericValue` | `Valuation.CharcToNumericValue` |
-| `CharcToNumericValueUnit` | `Valuation.CharcToNumericValueUnit` |
-| `CharcFromDecimalValue` | `Valuation.CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `Valuation.CharcToDecimalValue` |
-| `CharcFromAmount` | `Valuation.CharcFromAmount` |
-| `CharcToAmount` | `Valuation.CharcToAmount` |
-| `Currency` | `Valuation.Currency` |
-| `CharcFromDate` | `Valuation.CharcFromDate` |
-| `CharcToDate` | `Valuation.CharcToDate` |
-| `CharcFromTime` | `Valuation.CharcFromTime` |
-| `CharcToTime` | `Valuation.CharcToTime` |
-| `CharacteristicAuthor` | `Valuation.CharacteristicAuthor` |
-| `IsDeleted` | `Valuation.IsDeleted` |
-| `ChangeNumber` | `Valuation.ChangeNumber` |
-| `CharcValueSortPosition` | `Valuation.CharcValueSortPosition` |
-| `ValidityStartDate` | `Valuation.ValidityStartDate` |
-| `ValidityEndDate` | `Valuation.ValidityEndDate` |
-| `LastChangeDateTime` | `ObjectHeader.LastChangeDateTime` |
-| `_Characteristic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClfnObjectID` | ✓ | |  |  |
+| `ClfnObjectTable` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `CharcValuePositionNumber` | ✓ | |  |  |
+| `ClfnObjectType` | ✓ | |  |  |
+| `ClassType` | ✓ | |  |  |
+| `TimeIntervalNumber` | ✓ | |  |  |
+| `ClfnObjectInternalID` |  | |  |  |
+| `CharcValueIntervalType` |  | |  |  |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `CharacteristicAuthor` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `CharcValueSortPosition` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Characteristic` | | ✓ | | |
 
 ## Associations
 

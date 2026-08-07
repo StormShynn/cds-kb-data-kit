@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingScheme` | `stprplan` |
-| key `SmplgSchmItemSequentialNumber` | `zaehlpos` |
-| key `InspectionSeverity` | `prschaerfe` |
-| key `SmplgSchmInstrnSequentialNmbr` | `zaehlanw` |
-| `SmplgSchemeMaxLotSizeValue` | `losumf` |
-| `SmplgSchemeHasMaxLotSize` | `cast (losumfni as vdm_qm_smpl_sm_has_max_lot_sz preserving type )` |
-| `SamplingSchemeSampleSizeValue` | `stprumf` |
-| `SamplingSchemeAcceptanceValue` | `annahmez` |
-| `SamplingSchemeRejectionValue` | `rueckwez` |
-| `InspSampleAcceptanceFactor` | `kfaktor` |
-| `InspSampleHasAcceptanceFactor` | `cast (kfaktorni as vdm_qm_smpl_schm_has_accpt_fct preserving type )` |
-| `_SamplingScheme` | *Association* |
-| `_SamplingSchemeItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingScheme` | ✓ | |  | `stprplan` |
+| `SmplgSchmItemSequentialNumber` | ✓ | |  | `zaehlpos` |
+| `InspectionSeverity` | ✓ | |  | `prschaerfe` |
+| `SmplgSchmInstrnSequentialNmbr` | ✓ | |  | `zaehlanw` |
+| `SmplgSchemeMaxLotSizeValue` |  | |  | `losumf` |
+| `SmplgSchemeHasMaxLotSize` |  | |  | `cast (losumfni as vdm_qm_smpl_sm_has_max_lot_sz preserving type )` |
+| `SamplingSchemeSampleSizeValue` |  | |  | `stprumf` |
+| `SamplingSchemeAcceptanceValue` |  | |  | `annahmez` |
+| `SamplingSchemeRejectionValue` |  | |  | `rueckwez` |
+| `InspSampleAcceptanceFactor` |  | |  | `kfaktor` |
+| `InspSampleHasAcceptanceFactor` |  | |  | `cast (kfaktorni as vdm_qm_smpl_schm_has_accpt_fct preserving type )` |
+| `_SamplingScheme` | | ✓ | | |
+| `_SamplingSchemeItem` | | ✓ | | |
 
 ## Associations
 

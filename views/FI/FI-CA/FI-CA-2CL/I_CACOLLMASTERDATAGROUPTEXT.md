@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACollectionsMasterDataGroup` | `cmgrp` |
-| key `Language` | `spras` |
-| `CACollMasterDataGroupName` | `descr` |
-| `_CACollMasterDataGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACollectionsMasterDataGroup` | ✓ | |  | `cmgrp` |
+| `Language` | ✓ | |  | `spras` |
+| `CACollMasterDataGroupName` |  | |  | `descr` |
+| `_CACollMasterDataGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

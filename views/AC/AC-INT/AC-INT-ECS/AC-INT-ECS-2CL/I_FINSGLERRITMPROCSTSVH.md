@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinSGLErrorItemStatus` | `cast( domvalue_l as char1 )` |
-| `FinSGLErrorItemStatusText` | `cast( ddtext as char10 )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinSGLErrorItemStatus` | ✓ | |  | `cast( domvalue_l as char1 )` |
+| `FinSGLErrorItemStatusText` |  | |  | `cast( ddtext as char10 )` |
 
 ## Source Code
 

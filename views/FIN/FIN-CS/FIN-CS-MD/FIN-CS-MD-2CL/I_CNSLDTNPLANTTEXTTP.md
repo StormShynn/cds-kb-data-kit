@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `Plant` | `_Text.Plant` |
-| `PlantName` | `_Text.PlantName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnPlantTP` | `_Plant as _Plant : redirected to parent I_CnsldtnPlantTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `Plant` | ✓ | | `_Text` | `Plant` |
+| `PlantName` |  | | `_Text` | `PlantName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnPlantTP` |  | |  | `_Plant as _Plant : redirected to parent I_CnsldtnPlantTP` |
 
 ## Source Code
 

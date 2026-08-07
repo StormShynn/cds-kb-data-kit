@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequest` | `DebitMemoReqItemPartnerTP.DebitMemoRequest` |
-| key `DebitMemoRequestItem` | `DebitMemoReqItemPartnerTP.DebitMemoRequestItem` |
-| key `PartnerFunction` | `DebitMemoReqItemPartnerTP.PartnerFunction` |
-| `PartnerFunctionForEdit` | `DebitMemoReqItemPartnerTP.PartnerFunctionForEdit` |
-| `Customer` | `DebitMemoReqItemPartnerTP.Customer` |
-| `Supplier` | `DebitMemoReqItemPartnerTP.Supplier` |
-| `Personnel` | `DebitMemoReqItemPartnerTP.Personnel` |
-| `ContactPerson` | `DebitMemoReqItemPartnerTP.ContactPerson` |
-| `ReferenceBusinessPartner` | `DebitMemoReqItemPartnerTP.ReferenceBusinessPartner` |
-| `Partner` | `DebitMemoReqItemPartnerTP.Partner` |
-| `PartnerIsSpecificForSDDocItem` | `DebitMemoReqItemPartnerTP.PartnerIsSpecificForSDDocItem` |
-| `DebitMemoRequestType` | `DebitMemoReqItemPartnerTP.DebitMemoRequestType` |
-| `SalesOrganization` | `DebitMemoReqItemPartnerTP.SalesOrganization` |
-| `DistributionChannel` | `DebitMemoReqItemPartnerTP.DistributionChannel` |
-| `OrganizationDivision` | `DebitMemoReqItemPartnerTP.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_DebitMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |
+| `DebitMemoRequestItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |
+| `DebitMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_DebitMemoRequest` | | ✓ | | |
 
 ## Source Code
 

@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAProviderContract` | `ProviderContract` |
-| `BusinessPartner` | `BusinessPartner` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `CAProviderContractName` | `CAProviderContractName` |
-| `CAProviderContractExtReference` | `CAProviderContractExtReference` |
-| `CAPrvdrContrStartDateTime` | `CAPrvdrContrStartDateTime` |
-| `CAPrvdrContrEndDateTime` | `CAPrvdrContrEndDateTime` |
-| `CAAuthorizationGroup` | `CAAuthorizationGroup` |
-| `CompanyCode` | `CompanyCode` |
-| `TimeZoneID` | `TimeZoneID` |
-| `CAProviderContractCategory` | `CAProviderContractCategory` |
-| `CAProviderContractMigrtnStatus` | `CAProviderContractMigrtnStatus` |
-| `CAProviderContractType` | `CAProviderContractType` |
-| `CAProviderContractStatus` | `CAProviderContractStatus` |
-| `CAProviderContractSender` | `CAProviderContractSender` |
-| `PrvdrContrEarliestEndDateTime` | `PrvdrContrEarliestEndDateTime` |
-| `MinNrOfMonthsForContractPeriod` | `MinNrOfMonthsForContractPeriod` |
-| `NrOfMonthsForContractRenewal` | `NrOfMonthsForContractRenewal` |
-| `NrOfDaysForContrNoticePeriod` | `NrOfDaysForContrNoticePeriod` |
-| `BudgetBillingPlanType` | `BudgetBillingPlanType` |
-| `_BusinessPartner` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_CAAuthorizationGroup` | *Association* |
-| `_CompCode` | *Association* |
-| `_TimeZone` | *Association* |
-| `_ProviderContractCategory` | *Association* |
-| `_ProviderContractMigrtnSts` | *Association* |
-| `_ProviderContractType` | *Association* |
-| `_ProviderContractStatus` | *Association* |
-| `_ProviderContractSender` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAProviderContract` | ✓ | |  | `ProviderContract` |
+| `BusinessPartner` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `CAProviderContractName` |  | |  |  |
+| `CAProviderContractExtReference` |  | |  |  |
+| `CAPrvdrContrStartDateTime` |  | |  |  |
+| `CAPrvdrContrEndDateTime` |  | |  |  |
+| `CAAuthorizationGroup` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `TimeZoneID` |  | |  |  |
+| `CAProviderContractCategory` |  | |  |  |
+| `CAProviderContractMigrtnStatus` |  | |  |  |
+| `CAProviderContractType` |  | |  |  |
+| `CAProviderContractStatus` |  | |  |  |
+| `CAProviderContractSender` |  | |  |  |
+| `PrvdrContrEarliestEndDateTime` |  | |  |  |
+| `MinNrOfMonthsForContractPeriod` |  | |  |  |
+| `NrOfMonthsForContractRenewal` |  | |  |  |
+| `NrOfDaysForContrNoticePeriod` |  | |  |  |
+| `BudgetBillingPlanType` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_CAAuthorizationGroup` | | ✓ | | |
+| `_CompCode` | | ✓ | | |
+| `_TimeZone` | | ✓ | | |
+| `_ProviderContractCategory` | | ✓ | | |
+| `_ProviderContractMigrtnSts` | | ✓ | | |
+| `_ProviderContractType` | | ✓ | | |
+| `_ProviderContractStatus` | | ✓ | | |
+| `_ProviderContractSender` | | ✓ | | |
 
 ## Associations
 

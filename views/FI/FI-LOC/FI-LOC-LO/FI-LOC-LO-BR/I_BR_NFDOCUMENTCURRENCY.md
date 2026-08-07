@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `NFDocument.docnum` |
-| `SalesDocumentCurrency` | `NFDocument.waerk` |
-| `_SalesDocumentCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `SalesDocumentCurrency` |  | |  | `waerk` |
+| `_SalesDocumentCurrency` | | ✓ | | |
 
 ## Associations
 

@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LglCntntMDocFileFrmt` | `lcm_doc_dms_file_format` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocFileFrmt` |  | |  | `lcm_doc_dms_file_format` |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REContractType` | `contracttype` |
-| `ContractStartDate` | `contractstartdate` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REContractType` | ✓ | |  | `contracttype` |
+| `ContractStartDate` |  | |  | `contractstartdate` |
 
 ## Source Code
 

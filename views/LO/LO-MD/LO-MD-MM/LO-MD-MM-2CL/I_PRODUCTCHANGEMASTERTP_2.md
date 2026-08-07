@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `ChangeNumber` | `ChangeNumber` |
-| `RevisionLevel` | `RevisionLevel` |
-| `_ChangeMaster` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ChangeNumber` | ✓ | |  |  |
+| `RevisionLevel` |  | |  |  |
+| `_ChangeMaster` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Source Code
 

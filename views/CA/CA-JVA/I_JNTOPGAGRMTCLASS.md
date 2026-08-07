@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `JntOpgAgrmtClass` | `aclass` |
-| `JntOpgAgrmtNmbrRange` | `anrange` |
-| `_CompanyCode` | *Association* |
-| `_JntOpgAgrmtClassText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JntOpgAgrmtClass` | ✓ | |  | `aclass` |
+| `JntOpgAgrmtNmbrRange` |  | |  | `anrange` |
+| `_CompanyCode` | | ✓ | | |
+| `_JntOpgAgrmtClassText` | | ✓ | | |
 
 ## Associations
 

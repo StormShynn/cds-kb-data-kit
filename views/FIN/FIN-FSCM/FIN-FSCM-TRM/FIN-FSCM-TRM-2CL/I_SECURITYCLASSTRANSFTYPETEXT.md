@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `SecurityClassTransferType` | `swerttyp` |
-| `SecurityClassTransferTypeName` | `cast (xkurzbez as ftr_gen_security_typ_id_name preserving type)` |
-| `ScrtyClTransfTypeDescription` | `cast (xlangbez as ftr_gen_security_typ_id_lname preserving type)` |
-| `_Language` | *Association* |
-| `_SecurityClassTransferType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `SecurityClassTransferType` | ✓ | |  | `swerttyp` |
+| `SecurityClassTransferTypeName` |  | |  | `cast (xkurzbez as ftr_gen_security_typ_id_name preserving type)` |
+| `ScrtyClTransfTypeDescription` |  | |  | `cast (xlangbez as ftr_gen_security_typ_id_lname preserving type)` |
+| `_Language` | | ✓ | | |
+| `_SecurityClassTransferType` | | ✓ | | |
 
 ## Associations
 

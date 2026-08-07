@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DateFunction` | `datefunction` |
-| key `FiscalYearVariant` | `datefunctionfiscalyearvariant` |
-| key `DateFunctionValidityDate` | `valid_for_date` |
-| `DateFunctionStartDate` | `datefunctionstartdate` |
-| `DateFunctionEndDate` | `datefunctionenddate` |
-| `FiscalWeekStart` | `fiscalweekstart` |
-| `FiscalYearWeekStart` | `fiscalyearweekstart` |
-| `FiscalWeekEnd` | `fiscalweekend` |
-| `FiscalYearWeekEnd` | `fiscalyearweekend` |
-| `FiscalPeriodStart` | `fiscalperiodstart` |
-| `FiscalYearPeriodStart` | `fiscalyearperiodstart` |
-| `FiscalPeriodEnd` | `fiscalperiodend` |
-| `FiscalYearPeriodEnd` | `fiscalyearperiodend` |
-| `FiscalPeriodSingle` | `fiscalperiodsingle` |
-| `FiscalYearPeriodSingle` | `fiscalyearperiodsingle` |
-| `FiscalQuarterStart` | `fiscalquarterstart` |
-| `FiscalYearQuarterStart` | `fiscalyearquarterstart` |
-| `FiscalQuarterEnd` | `fiscalquarterend` |
-| `FiscalYearQuarterEnd` | `fiscalyearquarterend` |
-| `FiscalYearStart` | `fiscalyearstart` |
-| `FiscalYearEnd` | `fiscalyearend` |
-| `_DateFunction` | *Association* |
-| `_FiscalYearVariant` | *Association* |
-| `_ValidityDate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DateFunction` | ✓ | |  | `datefunction` |
+| `FiscalYearVariant` | ✓ | |  | `datefunctionfiscalyearvariant` |
+| `DateFunctionValidityDate` | ✓ | |  | `valid_for_date` |
+| `DateFunctionStartDate` |  | |  | `datefunctionstartdate` |
+| `DateFunctionEndDate` |  | |  | `datefunctionenddate` |
+| `FiscalWeekStart` |  | |  | `fiscalweekstart` |
+| `FiscalYearWeekStart` |  | |  | `fiscalyearweekstart` |
+| `FiscalWeekEnd` |  | |  | `fiscalweekend` |
+| `FiscalYearWeekEnd` |  | |  | `fiscalyearweekend` |
+| `FiscalPeriodStart` |  | |  | `fiscalperiodstart` |
+| `FiscalYearPeriodStart` |  | |  | `fiscalyearperiodstart` |
+| `FiscalPeriodEnd` |  | |  | `fiscalperiodend` |
+| `FiscalYearPeriodEnd` |  | |  | `fiscalyearperiodend` |
+| `FiscalPeriodSingle` |  | |  | `fiscalperiodsingle` |
+| `FiscalYearPeriodSingle` |  | |  | `fiscalyearperiodsingle` |
+| `FiscalQuarterStart` |  | |  | `fiscalquarterstart` |
+| `FiscalYearQuarterStart` |  | |  | `fiscalyearquarterstart` |
+| `FiscalQuarterEnd` |  | |  | `fiscalquarterend` |
+| `FiscalYearQuarterEnd` |  | |  | `fiscalyearquarterend` |
+| `FiscalYearStart` |  | |  | `fiscalyearstart` |
+| `FiscalYearEnd` |  | |  | `fiscalyearend` |
+| `_DateFunction` | | ✓ | | |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_ValidityDate` | | ✓ | | |
 
 ## Associations
 

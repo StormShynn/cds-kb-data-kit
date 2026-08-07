@@ -29,148 +29,148 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| `Material` | `Material` |
-| `Batch` | `Batch` |
-| `Plant` | `Plant` |
-| `InspectionLotOrigin` | `InspectionLotOrigin` |
-| `OrderInternalBillOfOperations` | `OrderInternalBillOfOperations` |
-| `ManufacturingOrder` | `ManufacturingOrder` |
-| `InspectionLotText` | `InspectionLotText` |
-| `InspectionLotType` | `InspectionLotType` |
-| `InspectionLotQuantity` | `InspectionLotQuantity` |
-| `InspectionLotActualQuantity` | `InspectionLotActualQuantity` |
-| `InspectionLotDefectiveQuantity` | `InspectionLotDefectiveQuantity` |
-| `InspectionLotQuantityUnit` | `InspectionLotQuantityUnit` |
-| `InspLotCreatedOnLocalDate` | `InspLotCreatedOnLocalDate` |
-| `InspSubsetFieldCombination` | `InspSubsetFieldCombination` |
-| `InspLotNmbrOpenLongTermCharc` | `InspLotNmbrOpenLongTermCharc` |
-| `StatusObject` | `StatusObject` |
-| `StatusObjectCategory` | `StatusObjectCategory` |
-| `InspectionLotObjectText` | `InspectionLotObjectText` |
-| `MatlQualityAuthorizationGroup` | `MatlQualityAuthorizationGroup` |
-| `InspectionLotHasQuantity` | `InspectionLotHasQuantity` |
-| `InspLotIsCreatedAutomatically` | `InspLotIsCreatedAutomatically` |
-| `InspectionLotHasPartialLots` | `InspectionLotHasPartialLots` |
-| `InspLotHasSubsets` | `InspLotHasSubsets` |
-| `InspLotIsAutomUsgeDcsnPossible` | `InspLotIsAutomUsgeDcsnPossible` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `GoodsReceiptIsMovedToBlkdStock` | `GoodsReceiptIsMovedToBlkdStock` |
-| `InspLotIsDocumentationRequired` | `InspLotIsDocumentationRequired` |
-| `InspLotIsTaskListRequired` | `InspLotIsTaskListRequired` |
-| `InspLotHasManualSampleSize` | `InspLotHasManualSampleSize` |
-| `InspectionLotApproval` | `InspectionLotApproval` |
-| `InspLotIsBatchRequired` | `InspLotIsBatchRequired` |
-| `InspLotIsStockPostingCompleted` | `InspLotIsStockPostingCompleted` |
-| `InspectionLotHasUsageDecision` | `InspectionLotHasUsageDecision` |
-| `NumberOfSerialNumbers` | `NumberOfSerialNumbers` |
-| `InspLotIsSerialNmbrPossible` | `InspLotIsSerialNmbrPossible` |
-| `InspectionLotIsSkipped` | `InspectionLotIsSkipped` |
-| `InspectionLotIsFullInspection` | `InspectionLotIsFullInspection` |
-| `InspectionLotDynamicLevel` | `InspectionLotDynamicLevel` |
-| `SamplingProcedure` | `SamplingProcedure` |
-| `InspLotCreatedOnLocalTime` | `InspLotCreatedOnLocalTime` |
-| `InspectionLotCreatedBy` | `InspectionLotCreatedBy` |
-| `InspectionLotCreatedOn` | `InspectionLotCreatedOn` |
-| `InspectionLotCreatedOnTime` | `InspectionLotCreatedOnTime` |
-| `InspectionLotChangedBy` | `InspectionLotChangedBy` |
-| `InspectionLotChangeDate` | `InspectionLotChangeDate` |
-| `InspectionLotChangeTime` | `InspectionLotChangeTime` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `InspectionLotStartDate` | `InspectionLotStartDate` |
-| `InspectionLotStartTime` | `InspectionLotStartTime` |
-| `InspectionLotEndDate` | `InspectionLotEndDate` |
-| `InspectionLotEndTime` | `InspectionLotEndTime` |
-| `BillOfOperationsType` | `BillOfOperationsType` |
-| `BillOfOperationsGroup` | `BillOfOperationsGroup` |
-| `BillOfOperationsUsage` | `BillOfOperationsUsage` |
-| `BillOfOperationsVariant` | `BillOfOperationsVariant` |
-| `BillOfOperationsChangeStateID` | `BillOfOperationsChangeStateID` |
-| `InspectionSubsetType` | `InspectionSubsetType` |
-| `InspLotSelectionMaterial` | `InspLotSelectionMaterial` |
-| `InspLotSelMatlRevisionLvl` | `InspLotSelMatlRevisionLvl` |
-| `InspLotSelectionPlant` | `InspLotSelectionPlant` |
-| `InspLotSelectionSupplier` | `InspLotSelectionSupplier` |
-| `InspLotSelectionManufacturer` | `InspLotSelectionManufacturer` |
-| `InspLotSelectionCustomer` | `InspLotSelectionCustomer` |
-| `InspLotSelBillOfOperationsUsge` | `InspLotSelBillOfOperationsUsge` |
-| `InspLotSelectionValidFromDate` | `InspLotSelectionValidFromDate` |
-| `ProductionVersion` | `ProductionVersion` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `BatchBySupplier` | `BatchBySupplier` |
-| `Manufacturer` | `Manufacturer` |
-| `ManufacturerPartNmbr` | `ManufacturerPartNmbr` |
-| `MaterialRevisionLevel` | `MaterialRevisionLevel` |
-| `MaterialIsBatchManaged` | `MaterialIsBatchManaged` |
-| `BatchStorageLocation` | `BatchStorageLocation` |
-| `MaterialCompIsSpecialStock` | `MaterialCompIsSpecialStock` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingDocument` | `PurchasingDocument` |
-| `PurchasingDocumentItem` | `PurchasingDocumentItem` |
-| `ScheduleLine` | `ScheduleLine` |
-| `AccountingDocumentType` | `AccountingDocumentType` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `MaterialDocument` | `MaterialDocument` |
-| `MaterialDocumentItem` | `MaterialDocumentItem` |
-| `MatlDocLatestPostgDate` | `MatlDocLatestPostgDate` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `InspectionLotPlant` | `InspectionLotPlant` |
-| `InspectionLotStorageLocation` | `InspectionLotStorageLocation` |
-| `Warehouse` | `Warehouse` |
-| `StorageType` | `StorageType` |
-| `StorageBin` | `StorageBin` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| `InspectionDeliveryCategory` | `InspectionDeliveryCategory` |
-| `Route` | `Route` |
-| `BillToPartyCountry` | `BillToPartyCountry` |
-| `SoldToParty` | `SoldToParty` |
-| `SalesOrganization` | `SalesOrganization` |
-| `MaterialByCustomer` | `MaterialByCustomer` |
-| `Language` | `Language` |
-| `InspLotNmbrAddlRecordedCharc` | `InspLotNmbrAddlRecordedCharc` |
-| `InspLotNmbrOpenShortTermCharc` | `InspLotNmbrOpenShortTermCharc` |
-| `InspectionLotSampleQuantity` | `InspectionLotSampleQuantity` |
-| `InspectionLotSampleUnit` | `InspectionLotSampleUnit` |
-| `InspLotDynamicRule` | `InspLotDynamicRule` |
-| `InspLotDynamicTrggrPoint` | `InspLotDynamicTrggrPoint` |
-| `InspectionDynamicStage` | `InspectionDynamicStage` |
-| `InspectionSeverity` | `InspectionSeverity` |
-| `InspLotQtyToFree` | `InspLotQtyToFree` |
-| `InspLotQtyToScrap` | `InspLotQtyToScrap` |
-| `InspLotQtyToSample` | `InspLotQtyToSample` |
-| `InspLotQtyToBlocked` | `InspLotQtyToBlocked` |
-| `InspLotQtyToReserves` | `InspLotQtyToReserves` |
-| `InspLotQtyToAnotherMaterial` | `InspLotQtyToAnotherMaterial` |
-| `InspLotMaterialPostedTo` | `InspLotMaterialPostedTo` |
-| `InspLotBatchTransferredTo` | `InspLotBatchTransferredTo` |
-| `InspLotQtyReturnedToSupplier` | `InspLotQtyReturnedToSupplier` |
-| `InspLotQtyToSpecialStock` | `InspLotQtyToSpecialStock` |
-| `InspLotQtyToOtherStock` | `InspLotQtyToOtherStock` |
-| `InspLotQtyToBePosted` | `InspLotQtyToBePosted` |
-| `InspLotSmplQtyForLongTermChar` | `InspLotSmplQtyForLongTermChar` |
-| `InspLotQtyInspected` | `InspLotQtyInspected` |
-| `InspLotQtyDestroyed` | `InspLotQtyDestroyed` |
-| `InspectionLotScrapRatio` | `InspectionLotScrapRatio` |
-| `InspLotUsageDecisionTool` | `InspLotUsageDecisionTool` |
-| `InspectionLotAllowedScrapRatio` | `InspectionLotAllowedScrapRatio` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `PurchasingDocumentItemCategory` | `PurchasingDocumentItemCategory` |
-| `SerialNumberProfile` | `SerialNumberProfile` |
-| `InspLotExternalNumber` | `InspLotExternalNumber` |
-| `InspectionLotPriorityPoints` | `InspectionLotPriorityPoints` |
-| `InspLotForFirstArticleInsp` | `InspLotForFirstArticleInsp` |
-| `_InspectionLotUsageDecision` | *Association* |
-| `_InspectionLotStatus` | *Association* |
-| `_InspLotMatlDocItem` | *Association* |
-| `_InspectionOperation` | *Association* |
-| `_InspLotSerialNumber` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `Material` |  | |  |  |
+| `Batch` |  | |  |  |
+| `Plant` |  | |  |  |
+| `InspectionLotOrigin` |  | |  |  |
+| `OrderInternalBillOfOperations` |  | |  |  |
+| `ManufacturingOrder` |  | |  |  |
+| `InspectionLotText` |  | |  |  |
+| `InspectionLotType` |  | |  |  |
+| `InspectionLotQuantity` |  | |  |  |
+| `InspectionLotActualQuantity` |  | |  |  |
+| `InspectionLotDefectiveQuantity` |  | |  |  |
+| `InspectionLotQuantityUnit` |  | |  |  |
+| `InspLotCreatedOnLocalDate` |  | |  |  |
+| `InspSubsetFieldCombination` |  | |  |  |
+| `InspLotNmbrOpenLongTermCharc` |  | |  |  |
+| `StatusObject` |  | |  |  |
+| `StatusObjectCategory` |  | |  |  |
+| `InspectionLotObjectText` |  | |  |  |
+| `MatlQualityAuthorizationGroup` |  | |  |  |
+| `InspectionLotHasQuantity` |  | |  |  |
+| `InspLotIsCreatedAutomatically` |  | |  |  |
+| `InspectionLotHasPartialLots` |  | |  |  |
+| `InspLotHasSubsets` |  | |  |  |
+| `InspLotIsAutomUsgeDcsnPossible` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `GoodsReceiptIsMovedToBlkdStock` |  | |  |  |
+| `InspLotIsDocumentationRequired` |  | |  |  |
+| `InspLotIsTaskListRequired` |  | |  |  |
+| `InspLotHasManualSampleSize` |  | |  |  |
+| `InspectionLotApproval` |  | |  |  |
+| `InspLotIsBatchRequired` |  | |  |  |
+| `InspLotIsStockPostingCompleted` |  | |  |  |
+| `InspectionLotHasUsageDecision` |  | |  |  |
+| `NumberOfSerialNumbers` |  | |  |  |
+| `InspLotIsSerialNmbrPossible` |  | |  |  |
+| `InspectionLotIsSkipped` |  | |  |  |
+| `InspectionLotIsFullInspection` |  | |  |  |
+| `InspectionLotDynamicLevel` |  | |  |  |
+| `SamplingProcedure` |  | |  |  |
+| `InspLotCreatedOnLocalTime` |  | |  |  |
+| `InspectionLotCreatedBy` |  | |  |  |
+| `InspectionLotCreatedOn` |  | |  |  |
+| `InspectionLotCreatedOnTime` |  | |  |  |
+| `InspectionLotChangedBy` |  | |  |  |
+| `InspectionLotChangeDate` |  | |  |  |
+| `InspectionLotChangeTime` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `InspectionLotStartDate` |  | |  |  |
+| `InspectionLotStartTime` |  | |  |  |
+| `InspectionLotEndDate` |  | |  |  |
+| `InspectionLotEndTime` |  | |  |  |
+| `BillOfOperationsType` |  | |  |  |
+| `BillOfOperationsGroup` |  | |  |  |
+| `BillOfOperationsUsage` |  | |  |  |
+| `BillOfOperationsVariant` |  | |  |  |
+| `BillOfOperationsChangeStateID` |  | |  |  |
+| `InspectionSubsetType` |  | |  |  |
+| `InspLotSelectionMaterial` |  | |  |  |
+| `InspLotSelMatlRevisionLvl` |  | |  |  |
+| `InspLotSelectionPlant` |  | |  |  |
+| `InspLotSelectionSupplier` |  | |  |  |
+| `InspLotSelectionManufacturer` |  | |  |  |
+| `InspLotSelectionCustomer` |  | |  |  |
+| `InspLotSelBillOfOperationsUsge` |  | |  |  |
+| `InspLotSelectionValidFromDate` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `BatchBySupplier` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |
+| `MaterialRevisionLevel` |  | |  |  |
+| `MaterialIsBatchManaged` |  | |  |  |
+| `BatchStorageLocation` |  | |  |  |
+| `MaterialCompIsSpecialStock` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `ScheduleLine` |  | |  |  |
+| `AccountingDocumentType` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `MaterialDocumentItem` |  | |  |  |
+| `MatlDocLatestPostgDate` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `InspectionLotPlant` |  | |  |  |
+| `InspectionLotStorageLocation` |  | |  |  |
+| `Warehouse` |  | |  |  |
+| `StorageType` |  | |  |  |
+| `StorageBin` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `InspectionDeliveryCategory` |  | |  |  |
+| `Route` |  | |  |  |
+| `BillToPartyCountry` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `Language` |  | |  |  |
+| `InspLotNmbrAddlRecordedCharc` |  | |  |  |
+| `InspLotNmbrOpenShortTermCharc` |  | |  |  |
+| `InspectionLotSampleQuantity` |  | |  |  |
+| `InspectionLotSampleUnit` |  | |  |  |
+| `InspLotDynamicRule` |  | |  |  |
+| `InspLotDynamicTrggrPoint` |  | |  |  |
+| `InspectionDynamicStage` |  | |  |  |
+| `InspectionSeverity` |  | |  |  |
+| `InspLotQtyToFree` |  | |  |  |
+| `InspLotQtyToScrap` |  | |  |  |
+| `InspLotQtyToSample` |  | |  |  |
+| `InspLotQtyToBlocked` |  | |  |  |
+| `InspLotQtyToReserves` |  | |  |  |
+| `InspLotQtyToAnotherMaterial` |  | |  |  |
+| `InspLotMaterialPostedTo` |  | |  |  |
+| `InspLotBatchTransferredTo` |  | |  |  |
+| `InspLotQtyReturnedToSupplier` |  | |  |  |
+| `InspLotQtyToSpecialStock` |  | |  |  |
+| `InspLotQtyToOtherStock` |  | |  |  |
+| `InspLotQtyToBePosted` |  | |  |  |
+| `InspLotSmplQtyForLongTermChar` |  | |  |  |
+| `InspLotQtyInspected` |  | |  |  |
+| `InspLotQtyDestroyed` |  | |  |  |
+| `InspectionLotScrapRatio` |  | |  |  |
+| `InspLotUsageDecisionTool` |  | |  |  |
+| `InspectionLotAllowedScrapRatio` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `SerialNumberProfile` |  | |  |  |
+| `InspLotExternalNumber` |  | |  |  |
+| `InspectionLotPriorityPoints` |  | |  |  |
+| `InspLotForFirstArticleInsp` |  | |  |  |
+| `_InspectionLotUsageDecision` | | ✓ | | |
+| `_InspectionLotStatus` | | ✓ | | |
+| `_InspLotMatlDocItem` | | ✓ | | |
+| `_InspectionOperation` | | ✓ | | |
+| `_InspLotSerialNumber` | | ✓ | | |
 
 ## Source Code
 

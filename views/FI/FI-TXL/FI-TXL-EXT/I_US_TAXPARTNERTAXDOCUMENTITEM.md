@@ -32,109 +32,109 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `US_TaxPartnerTaxDocument` | `etxdci.docnr` |
-| key `US_TaxPartnerTaxDocumentItem` | `etxdci.itemnr` |
-| `CompanyCode` | `_TaxDoc.CompanyCode` |
-| `ShipToParty` | `cast(etxdci.shipto as kunwe preserving type)` |
-| `SoldToParty` | `cast(etxdci.soldto as kunag preserving type)` |
-| `MaterialGroup` | `cast(etxdci.matkl as matkl preserving type)` |
-| `TaxCalculationDate` | `cast(case etxdci.tax_date_return when '' then '00000000' else etxdci.tax_date_return end as fis_externaltaxcalculationdate)` |
-| `PostingDate` | `cast(etxdci.post_date as fis_budat preserving type)` |
-| `DocumentDate` | `cast(etxdci.doc_date as fis_bldat preserving type)` |
-| `ServicesRenderedDate` | `cast(etxdci.sr_date as fbuda preserving type)` |
-| `TaxCode` | `cast(etxdci.mwskz as fis_mwskz preserving type)` |
-| `CostCenter` | `cast(etxdci.kostl as fis_kostl preserving type)` |
-| `US_TaxState` | `cast(etxdci.tax_state as fis_externaltaxstate preserving type)` |
-| `TaxBaseAmountInTransCrcy` | `} cast(etxdci.amount as fwbas_shl preserving type)` |
-| `TransactionCurrency` | `_TaxDoc.TransactionCurrency` |
-| `CompanyCodeCurrency` | `_TaxDoc.CompanyCodeCurrency` |
-| `DebitCreditCode` | `cast(case etxdci.credit_ind when '0' then 'H' else 'S' end as gl_shkzg preserving type)` |
-| `ShipFromAddressTaxJurisdiction` | `cast(etxdci.txjcd_sf as txjcd_sf preserving type)` |
-| `ShipToAddressTaxJurisdiction` | `cast(etxdci.txjcd_st as txjcd_st preserving type)` |
-| `PointOfOrderAcceptanceTxJx` | `cast(etxdci.txjcd_poa as txjcd_poa preserving type)` |
-| `PointOfOrderOriginTxJx` | `cast(etxdci.txjcd_poo as txjcd_poo preserving type)` |
-| `BillToParty` | `cast(etxdci.billto as kunre preserving type)` |
-| `TaxDepartureCountry` | `etxdci.country` |
-| `PurchasingDocument` | `etxdci.ebeln` |
-| `SDDocumentCategory` | `etxdci.vbtyp` |
-| `SDDocument` | `etxdci.vbeln` |
-| `US_TaxPartnerReceivedTaxDate` | `cast(etxdci.tax_date as fis_etxtaxpartnerreceiveddate preserving type)` |
-| `US_TaxProduct` | `etxdci.matnr` |
-| `QuantityInBaseUnit` | `cast( etxdci.quantity as menge_d preserving type )` |
-| `SalesMeasureUnit` | `cast( etxdci.unit as vrkme preserving type )` |
-| `MainItemPricingRefMaterial` | `etxdci.upmat` |
-| `TaxType` | `cast( etxdci.apar_ind as mwart preserving type )` |
-| `UnitedStatesTaxCategory` | `cast( etxdci.tax_type as txind_007a preserving type )` |
-| `FreightAmount` | `} cast(etxdci.freight_am as fis_etxdc_etdfrtamount preserving type)` |
-| `WBSElementInternalID` | `cast(etxdci.wbs_element as ps_s4_pspnr preserving type)` |
-| `Supplier` | `cast(etxdci.supplier as md_supplier preserving type)` |
-| `TaxBaseAmountInCoCodeCrcy` | `} cast(etxdci.gl_taxbas as hwbas_shl preserving type)` |
-| `US_TaxFreeDefinedValue1` | `cast(etxdci.extension_field001 as fis_etxdc_extension_field001 preserving type)` |
-| `US_TaxFreeDefinedValue2` | `cast(etxdci.extension_field002 as fis_etxdc_extension_field002 preserving type)` |
-| `US_TaxFreeDefinedValue3` | `cast(etxdci.extension_field003 as fis_etxdc_extension_field003 preserving type)` |
-| `US_TaxFreeDefinedValue4` | `cast(etxdci.extension_field004 as fis_etxdc_extension_field004 preserving type)` |
-| `US_TaxFreeDefinedValue5` | `cast(etxdci.extension_field005 as fis_etxdc_extension_field005 preserving type)` |
-| `US_TaxFreeDefinedValue6` | `cast(etxdci.extension_field006 as fis_etxdc_extension_field006 preserving type)` |
-| `US_TaxFreeDefinedValue7` | `cast(etxdci.extension_field007 as fis_etxdc_extension_field007 preserving type)` |
-| `US_TaxFreeDefinedValue8` | `cast(etxdci.extension_field008 as fis_etxdc_extension_field008 preserving type)` |
-| `US_TaxFreeDefinedValue9` | `cast(etxdci.extension_field009 as fis_etxdc_extension_field009 preserving type)` |
-| `US_TaxFreeDefinedValue10` | `cast(etxdci.extension_field010 as fis_etxdc_extension_field010 preserving type)` |
-| `US_TaxFreeDefinedValue11` | `cast(etxdci.extension_field011 as fis_etxdc_extension_field011 preserving type)` |
-| `US_TaxFreeDefinedValue12` | `cast(etxdci.extension_field012 as fis_etxdc_extension_field012 preserving type)` |
-| `US_TaxFreeDefinedValue13` | `cast(etxdci.extension_field013 as fis_etxdc_extension_field013 preserving type)` |
-| `US_TaxFreeDefinedValue14` | `cast(etxdci.extension_field014 as fis_etxdc_extension_field014 preserving type)` |
-| `US_TaxFreeDefinedValue15` | `cast(etxdci.extension_field015 as fis_etxdc_extension_field015 preserving type)` |
-| `US_TaxFreeDefinedValue16` | `cast(etxdci.extension_field016 as fis_etxdc_extension_field016 preserving type)` |
-| `US_TaxFreeDefinedValue17` | `cast(etxdci.extension_field017 as fis_etxdc_extension_field017 preserving type)` |
-| `US_TaxFreeDefinedValue18` | `cast(etxdci.extension_field018 as fis_etxdc_extension_field018 preserving type)` |
-| `US_TaxFreeDefinedValue19` | `cast(etxdci.extension_field019 as fis_etxdc_extension_field019 preserving type)` |
-| `US_TaxFreeDefinedValue20` | `cast(etxdci.extension_field020 as fis_etxdc_extension_field020 preserving type)` |
-| `US_TaxFreeDefinedValue21` | `cast(etxdci.extension_field021 as fis_etxdc_extension_field021 preserving type)` |
-| `US_TaxFreeDefinedValue22` | `cast(etxdci.extension_field022 as fis_etxdc_extension_field022 preserving type)` |
-| `US_TaxFreeDefinedValue23` | `cast(etxdci.extension_field023 as fis_etxdc_extension_field023 preserving type)` |
-| `US_TaxFreeDefinedValue24` | `cast(etxdci.extension_field024 as fis_etxdc_extension_field024 preserving type)` |
-| `US_TaxFreeDefinedValue25` | `cast(etxdci.extension_field025 as fis_etxdc_extension_field025 preserving type)` |
-| `US_TaxFreeDefinedValue26` | `cast(etxdci.extension_field026 as fis_etxdc_extension_field026 preserving type)` |
-| `US_TaxFreeDefinedValue27` | `cast(etxdci.extension_field027 as fis_etxdc_extension_field027 preserving type)` |
-| `US_TaxFreeDefinedValue28` | `cast(etxdci.extension_field028 as fis_etxdc_extension_field028 preserving type)` |
-| `US_TaxFreeDefinedValue29` | `cast(etxdci.extension_field029 as fis_etxdc_extension_field029 preserving type)` |
-| `US_TaxFreeDefinedValue30` | `cast(etxdci.extension_field030 as fis_etxdc_extension_field030 preserving type)` |
-| `US_TaxFreeDefinedValue31` | `cast(etxdci.extension_field031 as fis_etxdc_extension_field031 preserving type)` |
-| `US_TaxFreeDefinedValue32` | `cast(etxdci.extension_field032 as fis_etxdc_extension_field032 preserving type)` |
-| `US_TaxFreeDefinedValue33` | `cast(etxdci.extension_field033 as fis_etxdc_extension_field033 preserving type)` |
-| `US_TaxFreeDefinedValue34` | `cast(etxdci.extension_field034 as fis_etxdc_extension_field034 preserving type)` |
-| `US_TaxFreeDefinedValue35` | `cast(etxdci.extension_field035 as fis_etxdc_extension_field035 preserving type)` |
-| `US_TaxFreeDefinedValue36` | `cast(etxdci.extension_field036 as fis_etxdc_extension_field036 preserving type)` |
-| `US_TaxFreeDefinedValue37` | `cast(etxdci.extension_field037 as fis_etxdc_extension_field037 preserving type)` |
-| `US_TaxFreeDefinedValue38` | `cast(etxdci.extension_field038 as fis_etxdc_extension_field038 preserving type)` |
-| `US_TaxFreeDefinedValue39` | `cast(etxdci.extension_field039 as fis_etxdc_extension_field039 preserving type)` |
-| `US_TaxFreeDefinedValue40` | `cast(etxdci.extension_field040 as fis_etxdc_extension_field040 preserving type)` |
-| `US_TaxFreeDefinedValue41` | `cast(etxdci.extension_field041 as fis_etxdc_extension_field041 preserving type)` |
-| `US_TaxFreeDefinedValue42` | `cast(etxdci.extension_field042 as fis_etxdc_extension_field042 preserving type)` |
-| `US_TaxFreeDefinedValue43` | `cast(etxdci.extension_field043 as fis_etxdc_extension_field043 preserving type)` |
-| `US_TaxFreeDefinedValue44` | `cast(etxdci.extension_field044 as fis_etxdc_extension_field044 preserving type)` |
-| `US_TaxFreeDefinedValue45` | `cast(etxdci.extension_field045 as fis_etxdc_extension_field045 preserving type)` |
-| `US_TaxFreeDefinedValue46` | `cast(etxdci.extension_field046 as fis_etxdc_extension_field046 preserving type)` |
-| `US_TaxFreeDefinedValue47` | `cast(etxdci.extension_field047 as fis_etxdc_extension_field047 preserving type)` |
-| `US_TaxFreeDefinedValue48` | `cast(etxdci.extension_field048 as fis_etxdc_extension_field048 preserving type)` |
-| `US_TaxFreeDefinedValue49` | `cast(etxdci.extension_field049 as fis_etxdc_extension_field049 preserving type)` |
-| `US_TaxFreeDefinedValue50` | `cast(etxdci.extension_field050 as fis_etxdc_extension_field050 preserving type)` |
-| `US_ItmTxExtExmpRsnCode` | `cast(etxdci.exreason as ext_detcode preserving type)` |
-| `_TaxType` | *Association* |
-| `_TaxDoc` | *Association* |
-| `_Jurisdiction` | *Association* |
-| `_DebitCreditCode` | *Association* |
-| `_Product` | *Association* |
-| `_UnitedStatesTaxCategory` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartner1` | *Association* |
-| `_BusinessPartner2` | *Association* |
-| `_BusinessPartner3` | *Association* |
-| `_Supplier` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `US_TaxPartnerTaxDocument` | ✓ | |  | `docnr` |
+| `US_TaxPartnerTaxDocumentItem` | ✓ | |  | `itemnr` |
+| `CompanyCode` |  | | `_TaxDoc` | `CompanyCode` |
+| `ShipToParty` |  | |  | `cast(etxdci.shipto as kunwe preserving type)` |
+| `SoldToParty` |  | |  | `cast(etxdci.soldto as kunag preserving type)` |
+| `MaterialGroup` |  | |  | `cast(etxdci.matkl as matkl preserving type)` |
+| `TaxCalculationDate` |  | |  | `cast(case etxdci.tax_date_return when '' then '00000000' else etxdci.tax_date_return end as fis_externaltaxcalculationdate)` |
+| `PostingDate` |  | |  | `cast(etxdci.post_date as fis_budat preserving type)` |
+| `DocumentDate` |  | |  | `cast(etxdci.doc_date as fis_bldat preserving type)` |
+| `ServicesRenderedDate` |  | |  | `cast(etxdci.sr_date as fbuda preserving type)` |
+| `TaxCode` |  | |  | `cast(etxdci.mwskz as fis_mwskz preserving type)` |
+| `CostCenter` |  | |  | `cast(etxdci.kostl as fis_kostl preserving type)` |
+| `US_TaxState` |  | |  | `cast(etxdci.tax_state as fis_externaltaxstate preserving type)` |
+| `TaxBaseAmountInTransCrcy` |  | |  | `} cast(etxdci.amount as fwbas_shl preserving type)` |
+| `TransactionCurrency` |  | | `_TaxDoc` | `TransactionCurrency` |
+| `CompanyCodeCurrency` |  | | `_TaxDoc` | `CompanyCodeCurrency` |
+| `DebitCreditCode` |  | |  | `cast(case etxdci.credit_ind when '0' then 'H' else 'S' end as gl_shkzg preserving type)` |
+| `ShipFromAddressTaxJurisdiction` |  | |  | `cast(etxdci.txjcd_sf as txjcd_sf preserving type)` |
+| `ShipToAddressTaxJurisdiction` |  | |  | `cast(etxdci.txjcd_st as txjcd_st preserving type)` |
+| `PointOfOrderAcceptanceTxJx` |  | |  | `cast(etxdci.txjcd_poa as txjcd_poa preserving type)` |
+| `PointOfOrderOriginTxJx` |  | |  | `cast(etxdci.txjcd_poo as txjcd_poo preserving type)` |
+| `BillToParty` |  | |  | `cast(etxdci.billto as kunre preserving type)` |
+| `TaxDepartureCountry` |  | |  | `country` |
+| `PurchasingDocument` |  | |  | `ebeln` |
+| `SDDocumentCategory` |  | |  | `vbtyp` |
+| `SDDocument` |  | |  | `vbeln` |
+| `US_TaxPartnerReceivedTaxDate` |  | |  | `cast(etxdci.tax_date as fis_etxtaxpartnerreceiveddate preserving type)` |
+| `US_TaxProduct` |  | |  | `matnr` |
+| `QuantityInBaseUnit` |  | |  | `cast( etxdci.quantity as menge_d preserving type )` |
+| `SalesMeasureUnit` |  | |  | `cast( etxdci.unit as vrkme preserving type )` |
+| `MainItemPricingRefMaterial` |  | |  | `upmat` |
+| `TaxType` |  | |  | `cast( etxdci.apar_ind as mwart preserving type )` |
+| `UnitedStatesTaxCategory` |  | |  | `cast( etxdci.tax_type as txind_007a preserving type )` |
+| `FreightAmount` |  | |  | `} cast(etxdci.freight_am as fis_etxdc_etdfrtamount preserving type)` |
+| `WBSElementInternalID` |  | |  | `cast(etxdci.wbs_element as ps_s4_pspnr preserving type)` |
+| `Supplier` |  | |  | `cast(etxdci.supplier as md_supplier preserving type)` |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `} cast(etxdci.gl_taxbas as hwbas_shl preserving type)` |
+| `US_TaxFreeDefinedValue1` |  | |  | `cast(etxdci.extension_field001 as fis_etxdc_extension_field001 preserving type)` |
+| `US_TaxFreeDefinedValue2` |  | |  | `cast(etxdci.extension_field002 as fis_etxdc_extension_field002 preserving type)` |
+| `US_TaxFreeDefinedValue3` |  | |  | `cast(etxdci.extension_field003 as fis_etxdc_extension_field003 preserving type)` |
+| `US_TaxFreeDefinedValue4` |  | |  | `cast(etxdci.extension_field004 as fis_etxdc_extension_field004 preserving type)` |
+| `US_TaxFreeDefinedValue5` |  | |  | `cast(etxdci.extension_field005 as fis_etxdc_extension_field005 preserving type)` |
+| `US_TaxFreeDefinedValue6` |  | |  | `cast(etxdci.extension_field006 as fis_etxdc_extension_field006 preserving type)` |
+| `US_TaxFreeDefinedValue7` |  | |  | `cast(etxdci.extension_field007 as fis_etxdc_extension_field007 preserving type)` |
+| `US_TaxFreeDefinedValue8` |  | |  | `cast(etxdci.extension_field008 as fis_etxdc_extension_field008 preserving type)` |
+| `US_TaxFreeDefinedValue9` |  | |  | `cast(etxdci.extension_field009 as fis_etxdc_extension_field009 preserving type)` |
+| `US_TaxFreeDefinedValue10` |  | |  | `cast(etxdci.extension_field010 as fis_etxdc_extension_field010 preserving type)` |
+| `US_TaxFreeDefinedValue11` |  | |  | `cast(etxdci.extension_field011 as fis_etxdc_extension_field011 preserving type)` |
+| `US_TaxFreeDefinedValue12` |  | |  | `cast(etxdci.extension_field012 as fis_etxdc_extension_field012 preserving type)` |
+| `US_TaxFreeDefinedValue13` |  | |  | `cast(etxdci.extension_field013 as fis_etxdc_extension_field013 preserving type)` |
+| `US_TaxFreeDefinedValue14` |  | |  | `cast(etxdci.extension_field014 as fis_etxdc_extension_field014 preserving type)` |
+| `US_TaxFreeDefinedValue15` |  | |  | `cast(etxdci.extension_field015 as fis_etxdc_extension_field015 preserving type)` |
+| `US_TaxFreeDefinedValue16` |  | |  | `cast(etxdci.extension_field016 as fis_etxdc_extension_field016 preserving type)` |
+| `US_TaxFreeDefinedValue17` |  | |  | `cast(etxdci.extension_field017 as fis_etxdc_extension_field017 preserving type)` |
+| `US_TaxFreeDefinedValue18` |  | |  | `cast(etxdci.extension_field018 as fis_etxdc_extension_field018 preserving type)` |
+| `US_TaxFreeDefinedValue19` |  | |  | `cast(etxdci.extension_field019 as fis_etxdc_extension_field019 preserving type)` |
+| `US_TaxFreeDefinedValue20` |  | |  | `cast(etxdci.extension_field020 as fis_etxdc_extension_field020 preserving type)` |
+| `US_TaxFreeDefinedValue21` |  | |  | `cast(etxdci.extension_field021 as fis_etxdc_extension_field021 preserving type)` |
+| `US_TaxFreeDefinedValue22` |  | |  | `cast(etxdci.extension_field022 as fis_etxdc_extension_field022 preserving type)` |
+| `US_TaxFreeDefinedValue23` |  | |  | `cast(etxdci.extension_field023 as fis_etxdc_extension_field023 preserving type)` |
+| `US_TaxFreeDefinedValue24` |  | |  | `cast(etxdci.extension_field024 as fis_etxdc_extension_field024 preserving type)` |
+| `US_TaxFreeDefinedValue25` |  | |  | `cast(etxdci.extension_field025 as fis_etxdc_extension_field025 preserving type)` |
+| `US_TaxFreeDefinedValue26` |  | |  | `cast(etxdci.extension_field026 as fis_etxdc_extension_field026 preserving type)` |
+| `US_TaxFreeDefinedValue27` |  | |  | `cast(etxdci.extension_field027 as fis_etxdc_extension_field027 preserving type)` |
+| `US_TaxFreeDefinedValue28` |  | |  | `cast(etxdci.extension_field028 as fis_etxdc_extension_field028 preserving type)` |
+| `US_TaxFreeDefinedValue29` |  | |  | `cast(etxdci.extension_field029 as fis_etxdc_extension_field029 preserving type)` |
+| `US_TaxFreeDefinedValue30` |  | |  | `cast(etxdci.extension_field030 as fis_etxdc_extension_field030 preserving type)` |
+| `US_TaxFreeDefinedValue31` |  | |  | `cast(etxdci.extension_field031 as fis_etxdc_extension_field031 preserving type)` |
+| `US_TaxFreeDefinedValue32` |  | |  | `cast(etxdci.extension_field032 as fis_etxdc_extension_field032 preserving type)` |
+| `US_TaxFreeDefinedValue33` |  | |  | `cast(etxdci.extension_field033 as fis_etxdc_extension_field033 preserving type)` |
+| `US_TaxFreeDefinedValue34` |  | |  | `cast(etxdci.extension_field034 as fis_etxdc_extension_field034 preserving type)` |
+| `US_TaxFreeDefinedValue35` |  | |  | `cast(etxdci.extension_field035 as fis_etxdc_extension_field035 preserving type)` |
+| `US_TaxFreeDefinedValue36` |  | |  | `cast(etxdci.extension_field036 as fis_etxdc_extension_field036 preserving type)` |
+| `US_TaxFreeDefinedValue37` |  | |  | `cast(etxdci.extension_field037 as fis_etxdc_extension_field037 preserving type)` |
+| `US_TaxFreeDefinedValue38` |  | |  | `cast(etxdci.extension_field038 as fis_etxdc_extension_field038 preserving type)` |
+| `US_TaxFreeDefinedValue39` |  | |  | `cast(etxdci.extension_field039 as fis_etxdc_extension_field039 preserving type)` |
+| `US_TaxFreeDefinedValue40` |  | |  | `cast(etxdci.extension_field040 as fis_etxdc_extension_field040 preserving type)` |
+| `US_TaxFreeDefinedValue41` |  | |  | `cast(etxdci.extension_field041 as fis_etxdc_extension_field041 preserving type)` |
+| `US_TaxFreeDefinedValue42` |  | |  | `cast(etxdci.extension_field042 as fis_etxdc_extension_field042 preserving type)` |
+| `US_TaxFreeDefinedValue43` |  | |  | `cast(etxdci.extension_field043 as fis_etxdc_extension_field043 preserving type)` |
+| `US_TaxFreeDefinedValue44` |  | |  | `cast(etxdci.extension_field044 as fis_etxdc_extension_field044 preserving type)` |
+| `US_TaxFreeDefinedValue45` |  | |  | `cast(etxdci.extension_field045 as fis_etxdc_extension_field045 preserving type)` |
+| `US_TaxFreeDefinedValue46` |  | |  | `cast(etxdci.extension_field046 as fis_etxdc_extension_field046 preserving type)` |
+| `US_TaxFreeDefinedValue47` |  | |  | `cast(etxdci.extension_field047 as fis_etxdc_extension_field047 preserving type)` |
+| `US_TaxFreeDefinedValue48` |  | |  | `cast(etxdci.extension_field048 as fis_etxdc_extension_field048 preserving type)` |
+| `US_TaxFreeDefinedValue49` |  | |  | `cast(etxdci.extension_field049 as fis_etxdc_extension_field049 preserving type)` |
+| `US_TaxFreeDefinedValue50` |  | |  | `cast(etxdci.extension_field050 as fis_etxdc_extension_field050 preserving type)` |
+| `US_ItmTxExtExmpRsnCode` |  | |  | `cast(etxdci.exreason as ext_detcode preserving type)` |
+| `_TaxType` | | ✓ | | |
+| `_TaxDoc` | | ✓ | | |
+| `_Jurisdiction` | | ✓ | | |
+| `_DebitCreditCode` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_UnitedStatesTaxCategory` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartner1` | | ✓ | | |
+| `_BusinessPartner2` | | ✓ | | |
+| `_BusinessPartner3` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
 
 ## Associations
 

@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEscalationLevel` | `domvalue_l` |
-| `_SrvcDocEscalationText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEscalationLevel` | ✓ | |  | `domvalue_l` |
+| `_SrvcDocEscalationText` | | ✓ | | |
 
 ## Associations
 

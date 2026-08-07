@@ -30,58 +30,58 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectDemandUUID` | `ProjectDemandUUID` |
-| `ProjectDemand` | `ProjectDemand` |
-| `ProjectDemandName` | `ProjectDemandName` |
-| `ProjectDemandDescription` | `ProjectDemandDescription` |
-| `ProjectDemandCategory` | `ProjectDemandCategory` |
-| `ProjectDemandType` | `ProjectDemandType` |
-| `ReferencedObjectUUID` | `ReferencedObjectUUID` |
-| `ProjectDemandStatus` | `ProjectDemandStatus` |
-| `ProjectDemandDateMaintenance` | `ProjectDemandDateMaintenance` |
-| `ProjectDemandStartDate` | `ProjectDemandStartDate` |
-| `ProjectDemandEndDate` | `ProjectDemandEndDate` |
-| `ProjectDemandReleasedDateTime` | `ProjectDemandReleasedDateTime` |
-| `ProjDmndActualSupplyDate` | `ProjDmndActualSupplyDate` |
-| `ProjectDemandPerUnitAmount` | `} ProjectDemandPerUnitAmount` |
-| `ProjectDemandRequestCurrency` | `ProjectDemandRequestCurrency` |
-| `ProjectDemandRequestNetAmount` | `} ProjectDemandRequestNetAmount` |
-| `ProjDmndReqNetAmountCurrency` | `ProjDmndReqNetAmountCurrency` |
-| `ProjectDemandOverallAmount` | `} ProjectDemandOverallAmount` |
-| `ProjDmndRequestedQuantity` | `} ProjDmndRequestedQuantity` |
-| `ProjDmndRequestedQuantityUnit` | `ProjDmndRequestedQuantityUnit` |
-| `PriceUnitQty` | `PriceUnitQty` |
-| `Plant` | `Plant` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `ProjectDemandLastChangedByUser` | `ProjectDemandLastChangedByUser` |
-| `ProjDemandLastChangeDateTime` | `ProjDemandLastChangeDateTime` |
-| `ProjectUUID` | `ProjectUUID` |
-| `ProjectDemandOverallRevenue` | `} ProjectDemandOverallRevenue` |
-| `ProjDmndOverallRevenueCurrency` | `ProjDmndOverallRevenueCurrency` |
-| `ProjDmndDataModelVersion` | `ProjDmndDataModelVersion` |
-| `_Material` | *Association* |
-| `_Service` | *Association* |
-| `_Work` | *Association* |
-| `_Expense` | *Association* |
-| `_ProjDmndQuantityUnit` | *Association* |
-| `_Plant` | *Association* |
-| `_ProjectDemandCategory` | *Association* |
-| `_ProjectDemandType` | *Association* |
-| `_WorkPackage` | *Association* |
-| `_ProjectDemandStatus` | *Association* |
-| `_ProjectDemandCurrency` | *Association* |
-| `_ProjectDemandNetCurrency` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_PurchasingOrganisation` | *Association* |
-| `_Project` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectDemandUUID` | ✓ | |  |  |
+| `ProjectDemand` |  | |  |  |
+| `ProjectDemandName` |  | |  |  |
+| `ProjectDemandDescription` |  | |  |  |
+| `ProjectDemandCategory` |  | |  |  |
+| `ProjectDemandType` |  | |  |  |
+| `ReferencedObjectUUID` |  | |  |  |
+| `ProjectDemandStatus` |  | |  |  |
+| `ProjectDemandDateMaintenance` |  | |  |  |
+| `ProjectDemandStartDate` |  | |  |  |
+| `ProjectDemandEndDate` |  | |  |  |
+| `ProjectDemandReleasedDateTime` |  | |  |  |
+| `ProjDmndActualSupplyDate` |  | |  |  |
+| `ProjectDemandPerUnitAmount` |  | |  | `} ProjectDemandPerUnitAmount` |
+| `ProjectDemandRequestCurrency` |  | |  |  |
+| `ProjectDemandRequestNetAmount` |  | |  | `} ProjectDemandRequestNetAmount` |
+| `ProjDmndReqNetAmountCurrency` |  | |  |  |
+| `ProjectDemandOverallAmount` |  | |  | `} ProjectDemandOverallAmount` |
+| `ProjDmndRequestedQuantity` |  | |  | `} ProjDmndRequestedQuantity` |
+| `ProjDmndRequestedQuantityUnit` |  | |  |  |
+| `PriceUnitQty` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ProjectDemandLastChangedByUser` |  | |  |  |
+| `ProjDemandLastChangeDateTime` |  | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `ProjectDemandOverallRevenue` |  | |  | `} ProjectDemandOverallRevenue` |
+| `ProjDmndOverallRevenueCurrency` |  | |  |  |
+| `ProjDmndDataModelVersion` |  | |  |  |
+| `_Material` | | ✓ | | |
+| `_Service` | | ✓ | | |
+| `_Work` | | ✓ | | |
+| `_Expense` | | ✓ | | |
+| `_ProjDmndQuantityUnit` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ProjectDemandCategory` | | ✓ | | |
+| `_ProjectDemandType` | | ✓ | | |
+| `_WorkPackage` | | ✓ | | |
+| `_ProjectDemandStatus` | | ✓ | | |
+| `_ProjectDemandCurrency` | | ✓ | | |
+| `_ProjectDemandNetCurrency` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_PurchasingOrganisation` | | ✓ | | |
+| `_Project` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
 
 ## Associations
 

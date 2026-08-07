@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RuntimeHierarchy` | `hryid` |
-| key `ValidityEndDate` | `cast(hryvalto as fis_datbi preserving type )` |
-| key `HierarchyNode` | `hrynode` |
-| key `HierarchyNodeClass` | `nodecls` |
-| key `ParentNode` | `parnode` |
-| key `Language` | `spras` |
-| `HierarchyType` | `hrytyp` |
-| `ValidityStartDate` | `cast(hryvalfrom as fis_datab preserving type)` |
-| `HierarchyNodeText` | `nodetxt` |
-| `ControllingArea` | `kokrs` |
-| `ChartOfAccounts` | `ktopl` |
-| `ConsolidationChartOfAccounts` | `itclg` |
-| `SubItemCategory` | `sityp` |
-| `ValidationScenarioID` | `scen_id` |
-| `FinancialManagementArea` | `fikrs` |
-| `FinMgmtAreaFiscalYear` | `fma_fisyear` |
-| `HierarchyNodeIsTimeDependent` | `node_timedep` |
-| `UniversalHierNodeID` | `uhnodeid` |
-| `UniversalHierNodeParentID` | `par_uhnodeid` |
-| `_Language` | *Association* |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RuntimeHierarchy` | ✓ | |  | `hryid` |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |
+| `HierarchyNode` | ✓ | |  | `hrynode` |
+| `HierarchyNodeClass` | ✓ | |  | `nodecls` |
+| `ParentNode` | ✓ | |  | `parnode` |
+| `Language` | ✓ | |  | `spras` |
+| `HierarchyType` |  | |  | `hrytyp` |
+| `ValidityStartDate` |  | |  | `cast(hryvalfrom as fis_datab preserving type)` |
+| `HierarchyNodeText` |  | |  | `nodetxt` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `ChartOfAccounts` |  | |  | `ktopl` |
+| `ConsolidationChartOfAccounts` |  | |  | `itclg` |
+| `SubItemCategory` |  | |  | `sityp` |
+| `ValidationScenarioID` |  | |  | `scen_id` |
+| `FinancialManagementArea` |  | |  | `fikrs` |
+| `FinMgmtAreaFiscalYear` |  | |  | `fma_fisyear` |
+| `HierarchyNodeIsTimeDependent` |  | |  | `node_timedep` |
+| `UniversalHierNodeID` |  | |  | `uhnodeid` |
+| `UniversalHierNodeParentID` |  | |  | `par_uhnodeid` |
+| `_Language` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

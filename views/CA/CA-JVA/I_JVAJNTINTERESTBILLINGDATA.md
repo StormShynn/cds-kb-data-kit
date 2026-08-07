@@ -28,73 +28,73 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JVItem.CompanyCode` |
-| key `FiscalYear` | `JVItem.FiscalYear` |
-| key `AccountingDocument` | `JVItem.AccountingDocument` |
-| key `LedgerGLLineItem` | `JVItem.LedgerGLLineItem` |
-| key `Ledger` | `JVItem.SourceLedger` |
-| `PostingDate` | `JVItem.PostingDate` |
-| `FiscalPeriod` | `JVItem.FiscalPeriod` |
-| `LedgerFiscalYear` | `JVItem.LedgerFiscalYear` |
-| `FiscalYearVariant` | `JVItem.FiscalYearVariant` |
-| `JointVenture` | `JVItem.JointVenture` |
-| `JointVentureName` | `coalesce( _JointVentureDesc[1:Language = $session.system_language].JointVentureName, JVItem._JointVentureDesc[1:Language = $session.system_language].JointVentureName )` |
-| `JointVentureEquityGroup` | `JVItem.JointVentureEquityGroup` |
-| `JointVentureCostRecoveryCode` | `JVItem.JointVentureCostRecoveryCode` |
-| `JointVenturePartner` | `JVItem.JointVenturePartner` |
-| `TransactionCurrency` | `JVItem.TransactionCurrency` |
-| `AmountInTransactionCurrency` | `} JVItem.AmountInTransactionCurrency` |
-| `CompanyCodeCurrency` | `JVItem.CompanyCodeCurrency` |
-| `AmountInCompanyCodeCurrency` | `} JVItem.AmountInCompanyCodeCurrency` |
-| `GlobalCurrency` | `JVItem.GlobalCurrency` |
-| `AmountInGlobalCurrency` | `} JVItem.AmountInGlobalCurrency` |
-| `FunctionalCurrency` | `JVItem.FunctionalCurrency` |
-| `AmountInFunctionalCurrency` | `} JVItem.AmountInFunctionalCurrency` |
-| `FreeDefinedCurrency1` | `JVItem.FreeDefinedCurrency1` |
-| `AmountInFreeDefinedCurrency1` | `} JVItem.AmountInFreeDefinedCurrency1` |
-| `FreeDefinedCurrency2` | `JVItem.FreeDefinedCurrency2` |
-| `AmountInFreeDefinedCurrency2` | `} JVItem.AmountInFreeDefinedCurrency2` |
-| `FreeDefinedCurrency3` | `JVItem.FreeDefinedCurrency3` |
-| `AmountInFreeDefinedCurrency3` | `} JVItem.AmountInFreeDefinedCurrency3` |
-| `FreeDefinedCurrency4` | `JVItem.FreeDefinedCurrency4` |
-| `AmountInFreeDefinedCurrency4` | `} JVItem. AmountInFreeDefinedCurrency4` |
-| `FreeDefinedCurrency5` | `JVItem.FreeDefinedCurrency5` |
-| `AmountInFreeDefinedCurrency5` | `} JVItem.AmountInFreeDefinedCurrency5` |
-| `FreeDefinedCurrency6` | `JVItem.FreeDefinedCurrency6` |
-| `AmountInFreeDefinedCurrency6` | `} JVItem.AmountInFreeDefinedCurrency6` |
-| `FreeDefinedCurrency7` | `JVItem.FreeDefinedCurrency7` |
-| `AmountInFreeDefinedCurrency7` | `} JVItem.AmountInFreeDefinedCurrency7` |
-| `FreeDefinedCurrency8` | `JVItem.FreeDefinedCurrency8` |
-| `AmountInFreeDefinedCurrency8` | `} JVItem.AmountInFreeDefinedCurrency8` |
-| `JVAFundingCurrency1` | `cast( JVItem.JVAFundingCurrency as jv_fundcur preserving type )` |
-| `AmountInJVAFundingCurrency` | `} cast( JVItem.AmountInJVAFundingCurrency as jv_fundamt preserving type )` |
-| `JVAExpenditureType` | `BillIndex.JVAExpenditureType` |
-| `JVAProjIsAuthzdForCptlExpndtr` | `BillIndex.JVAProjIsAuthzdForCptlExpndtr` |
-| `JntVntrAuthznForExpndtrObject` | `cast( _WBSElementBasicData.WBSElementExternalID as jv_afenum_cds )` |
-| `CostCenter` | `JVItem.CostCenter` |
-| `CostCenterName` | `_CostCenterText.CostCenterName` |
-| `ControllingArea` | `JVItem.ControllingArea` |
-| `ChartOfAccounts` | `JVItem.ChartOfAccounts` |
-| `WBSElementExternalID` | `JVItem.WBSElementExternalID` |
-| `WBSDescription` | `JVItem._WBSElementBasicData.WBSDescription` |
-| `WBSElementInternalID` | `JVItem.WBSElementInternalID` |
-| `OrderID` | `JVItem.OrderID` |
-| `SuperiorOrder` | `JVItem.SuperiorOrder` |
-| `AssetTransactionType` | `JVItem.AssetTransactionType` |
-| `GLAccount` | `JVItem.GLAccount` |
-| `JntIntrstBillgClass` | `BillIndex.JntIntrstBillgClass` |
-| `JntIntrstBillgSubClass` | `BillIndex.JntIntrstBillgSubClass` |
-| `JntIntrstBillgSubClass2` | `BillIndex.JntIntrstBillgSubClass2` |
-| `JntVntrCostTypeText` | `BillIndex.JntVntrCostTypeText` |
-| `JntIntrstBillgCostObjectType` | `BillIndex.JntIntrstBillgCostObjectType` |
-| `JntVntrSuspenseStatusText` | `cast( case when BillIndex.JntIntrstBillgClass is not initial and BillIndex.JntIntrstBillgSubClass is not initial and BillIndex.JntIntrstBillgSubClass2 is not initial then concat( concat( BillIndex.JntIntrstBillgClass, '/' ), concat( concat( BillIndex.JntIntrstBillgSubClass,'/' ), BillIndex.JntIntrstBillgSubClass2 ) ) when BillIndex.JntIntrstBillgClass is not initial and BillIndex.JntIntrstBillgSubClass is not initial then concat( concat( BillIndex.JntIntrstBillgClass, '/' ), BillIndex.JntIntrstBillgSubClass ) when BillIndex.JntIntrstBillgClass is not initial then BillIndex.JntIntrstBillgClass else ' ' end as abap.char(33) )` |
-| `_FiscalPeriod` | `JVItem._FiscalPeriodCompanyCode` |
-| `_WBSElementBasicDataText` | `JVItem._WBSElementBasicData` |
-| `_JournalEntry` | *Association* |
-| `_CostCenter` | *Association* |
-| `_CostCenterText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `AccountingDocument` | ✓ | |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |
+| `Ledger` | ✓ | |  | `SourceLedger` |
+| `PostingDate` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `LedgerFiscalYear` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `JointVenture` |  | |  |  |
+| `JointVentureName` |  | |  | `coalesce( _JointVentureDesc[1:Language = $session.system_language].JointVentureName, JVItem._JointVentureDesc[1:Language = $session.system_language].JointVentureName )` |
+| `JointVentureEquityGroup` |  | |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |
+| `JointVenturePartner` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  | `} JVItem.AmountInTransactionCurrency` |
+| `CompanyCodeCurrency` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `} JVItem.AmountInCompanyCodeCurrency` |
+| `GlobalCurrency` |  | |  |  |
+| `AmountInGlobalCurrency` |  | |  | `} JVItem.AmountInGlobalCurrency` |
+| `FunctionalCurrency` |  | |  |  |
+| `AmountInFunctionalCurrency` |  | |  | `} JVItem.AmountInFunctionalCurrency` |
+| `FreeDefinedCurrency1` |  | |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  | `} JVItem.AmountInFreeDefinedCurrency1` |
+| `FreeDefinedCurrency2` |  | |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  | `} JVItem.AmountInFreeDefinedCurrency2` |
+| `FreeDefinedCurrency3` |  | |  |  |
+| `AmountInFreeDefinedCurrency3` |  | |  | `} JVItem.AmountInFreeDefinedCurrency3` |
+| `FreeDefinedCurrency4` |  | |  |  |
+| `AmountInFreeDefinedCurrency4` |  | |  | `} JVItem. AmountInFreeDefinedCurrency4` |
+| `FreeDefinedCurrency5` |  | |  |  |
+| `AmountInFreeDefinedCurrency5` |  | |  | `} JVItem.AmountInFreeDefinedCurrency5` |
+| `FreeDefinedCurrency6` |  | |  |  |
+| `AmountInFreeDefinedCurrency6` |  | |  | `} JVItem.AmountInFreeDefinedCurrency6` |
+| `FreeDefinedCurrency7` |  | |  |  |
+| `AmountInFreeDefinedCurrency7` |  | |  | `} JVItem.AmountInFreeDefinedCurrency7` |
+| `FreeDefinedCurrency8` |  | |  |  |
+| `AmountInFreeDefinedCurrency8` |  | |  | `} JVItem.AmountInFreeDefinedCurrency8` |
+| `JVAFundingCurrency1` |  | |  | `cast( JVItem.JVAFundingCurrency as jv_fundcur preserving type )` |
+| `AmountInJVAFundingCurrency` |  | |  | `} cast( JVItem.AmountInJVAFundingCurrency as jv_fundamt preserving type )` |
+| `JVAExpenditureType` |  | |  |  |
+| `JVAProjIsAuthzdForCptlExpndtr` |  | |  |  |
+| `JntVntrAuthznForExpndtrObject` |  | |  | `cast( _WBSElementBasicData.WBSElementExternalID as jv_afenum_cds )` |
+| `CostCenter` |  | |  |  |
+| `CostCenterName` |  | | `_CostCenterText` | `CostCenterName` |
+| `ControllingArea` |  | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `WBSDescription` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `SuperiorOrder` |  | |  |  |
+| `AssetTransactionType` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `JntIntrstBillgClass` |  | |  |  |
+| `JntIntrstBillgSubClass` |  | |  |  |
+| `JntIntrstBillgSubClass2` |  | |  |  |
+| `JntVntrCostTypeText` |  | |  |  |
+| `JntIntrstBillgCostObjectType` |  | |  |  |
+| `JntVntrSuspenseStatusText` |  | |  | `cast( case when BillIndex.JntIntrstBillgClass is not initial and BillIndex.JntIntrstBillgSubClass is not initial and BillIndex.JntIntrstBillgSubClass2 is not initial then concat( concat( BillIndex.JntIntrstBillgClass, '/' ), concat( concat( BillIndex.JntIntrstBillgSubClass,'/' ), BillIndex.JntIntrstBillgSubClass2 ) ) when BillIndex.JntIntrstBillgClass is not initial and BillIndex.JntIntrstBillgSubClass is not initial then concat( concat( BillIndex.JntIntrstBillgClass, '/' ), BillIndex.JntIntrstBillgSubClass ) when BillIndex.JntIntrstBillgClass is not initial then BillIndex.JntIntrstBillgClass else ' ' end as abap.char(33) )` |
+| `_FiscalPeriod` |  | |  | `_FiscalPeriodCompanyCode` |
+| `_WBSElementBasicDataText` |  | |  | `_WBSElementBasicData` |
+| `_JournalEntry` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_CostCenterText` | | ✓ | | |
 
 ## Associations
 

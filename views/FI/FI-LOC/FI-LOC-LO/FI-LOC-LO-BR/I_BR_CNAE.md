@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_CNAE` | `_BR_CNAE.j_1bcnae` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_CNAE` | ✓ | | `_BR_CNAE` | `j_1bcnae` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

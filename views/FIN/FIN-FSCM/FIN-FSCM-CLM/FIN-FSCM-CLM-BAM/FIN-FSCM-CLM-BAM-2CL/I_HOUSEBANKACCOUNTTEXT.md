@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `CompanyCode` | `bukrs` |
-| key `HouseBank` | `hbkid` |
-| key `HouseBankAccount` | `hktid` |
-| `HouseBankAccountDescription` | `text1` |
-| `_Language` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_HouseBank` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `HouseBank` | ✓ | |  | `hbkid` |
+| `HouseBankAccount` | ✓ | |  | `hktid` |
+| `HouseBankAccountDescription` |  | |  | `text1` |
+| `_Language` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_HouseBank` | | ✓ | | |
 
 ## Associations
 

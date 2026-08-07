@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequest` | `BillingDocumentRequest` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `ContactPerson` | `ContactPerson` |
-| `ReferenceBusinessPartner` | `ReferenceBusinessPartner` |
-| `BusinessPartnerAddressUUID` | `BusinessPartnerAddressUUID` |
-| `_BillingDocumentRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `BusinessPartnerAddressUUID` |  | |  |  |
+| `_BillingDocumentRequest` | | ✓ | | |
 
 ## Source Code
 

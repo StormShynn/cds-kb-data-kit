@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `dd07t.ddlanguage` |
-| key `BusinessPartnerRiskGroup` | `cast ( dd07t.domvalue_l as bp_risk_group )` |
-| `BPRiskGroupDescription` | `dd07t.ddtext` |
-| `_BPRiskGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BusinessPartnerRiskGroup` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_risk_group )` |
+| `BPRiskGroupDescription` |  | |  | `ddtext` |
+| `_BPRiskGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MatlAccountAssignmentGroup` | `ktgrm` |
-| key `Language` | `spras` |
-| `MatlAccountAssignmentGroupName` | `vtext` |
-| `_MatlAccountAssignmentGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MatlAccountAssignmentGroup` | ✓ | |  | `ktgrm` |
+| `Language` | ✓ | |  | `spras` |
+| `MatlAccountAssignmentGroupName` |  | |  | `vtext` |
+| `_MatlAccountAssignmentGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

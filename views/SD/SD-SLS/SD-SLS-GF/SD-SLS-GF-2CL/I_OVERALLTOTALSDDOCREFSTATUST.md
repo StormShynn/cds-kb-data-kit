@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallTotalSDDocRefStatus` | `statu` |
-| key `Language` | `spras` |
-| `OverallTotalSDDocRefStatusDesc` | `bezei` |
-| `_OverallTotalSDDocRefStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallTotalSDDocRefStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `OverallTotalSDDocRefStatusDesc` |  | |  | `bezei` |
+| `_OverallTotalSDDocRefStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

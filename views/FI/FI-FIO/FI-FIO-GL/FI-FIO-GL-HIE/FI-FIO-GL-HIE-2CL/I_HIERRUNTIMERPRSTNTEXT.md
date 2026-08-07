@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RuntimeHierarchy` | `hryid` |
-| key `ValidityEndDate` | `cast(hryvalto as fis_datbi preserving type )` |
-| key `Language` | `spras` |
-| `HierarchyType` | `hrytyp` |
-| `ValidityStartDate` | `cast(hryvalfrom as fis_datab preserving type )` |
-| `HierarchyName` | `hrytxt` |
-| `HierarchyClass` | `hrycls` |
-| `ControllingArea` | `kokrs` |
-| `ChartOfAccounts` | `ktopl` |
-| `ConsolidationChartOfAccounts` | `itclg` |
-| `SubItemCategory` | `sityp` |
-| `ValidationScenarioID` | `scen_id` |
-| `FinancialManagementArea` | `fikrs` |
-| `FinMgmtAreaFiscalYear` | `fma_fisyear` |
-| `HierarchyNodeIsTimeDependent` | `node_timedep` |
-| `_Language` | *Association* |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RuntimeHierarchy` | ✓ | |  | `hryid` |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `HierarchyType` |  | |  | `hrytyp` |
+| `ValidityStartDate` |  | |  | `cast(hryvalfrom as fis_datab preserving type )` |
+| `HierarchyName` |  | |  | `hrytxt` |
+| `HierarchyClass` |  | |  | `hrycls` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `ChartOfAccounts` |  | |  | `ktopl` |
+| `ConsolidationChartOfAccounts` |  | |  | `itclg` |
+| `SubItemCategory` |  | |  | `sityp` |
+| `ValidationScenarioID` |  | |  | `scen_id` |
+| `FinancialManagementArea` |  | |  | `fikrs` |
+| `FinMgmtAreaFiscalYear` |  | |  | `fma_fisyear` |
+| `HierarchyNodeIsTimeDependent` |  | |  | `node_timedep` |
+| `_Language` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

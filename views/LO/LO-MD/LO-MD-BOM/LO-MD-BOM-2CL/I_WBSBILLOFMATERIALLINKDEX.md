@@ -34,19 +34,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WBSElementInternalID` | `WBSElementInternalID` |
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| key `BillOfMaterialVariantUsage` | `BillOfMaterialVariantUsage` |
-| key `BillOfMaterial` | `BillOfMaterial` |
-| key `BillOfMaterialVariant` | `BillOfMaterialVariant` |
-| `BillOfMaterialCategory` | `BillOfMaterialCategory` |
-| `RecordCreationDate` | `RecordCreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WBSElementInternalID` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `RecordCreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
 
 ## Source Code
 

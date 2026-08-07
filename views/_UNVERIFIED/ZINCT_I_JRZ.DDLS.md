@@ -35,23 +35,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IncUuid` | `IncUuid` |
-| `IncidentId` | `IncidentId` |
-| `Title` | `Title` |
-| `Description` | `Description` |
-| `Status` | `Status` |
-| `Priority` | `Priority` |
-| `Creationdate` | `Creationdate` |
-| `Changedate` | `Changedate` |
-| `LocalCreatedBy` | `LocalCreatedBy` |
-| `LocalCreatedAt` | `LocalCreatedAt` |
-| `LocalLastChangedBy` | `LocalLastChangedBy` |
-| `LocalLastChangedAt` | `LocalLastChangedAt` |
-| `LastChangedAt` | `LastChangedAt` |
-| `_Status` | *Association* |
-| `_Priority` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IncUuid` | ✓ | |  |  |
+| `IncidentId` |  | |  |  |
+| `Title` |  | |  |  |
+| `Description` |  | |  |  |
+| `Status` |  | |  |  |
+| `Priority` |  | |  |  |
+| `Creationdate` |  | |  |  |
+| `Changedate` |  | |  |  |
+| `LocalCreatedBy` |  | |  |  |
+| `LocalCreatedAt` |  | |  |  |
+| `LocalLastChangedBy` |  | |  |  |
+| `LocalLastChangedAt` |  | |  |  |
+| `LastChangedAt` |  | |  |  |
+| `_Status` | | ✓ | | |
+| `_Priority` | | ✓ | | |
 
 ## Source Code
 

@@ -30,41 +30,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RequestForQuotation` | `RequestForQuotation` |
-| key `RequestForQuotationItem` | `RequestForQuotationItem` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentItemText` | `PurchasingDocumentItemText` |
-| `Material` | `Material` |
-| `ProductTypeCode` | `ProductTypeCode` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `ManufacturerPartNmbr` | `ManufacturerPartNmbr` |
-| `Manufacturer` | `Manufacturer` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Plant` | `Plant` |
-| `ManualDeliveryAddressID` | `ManualDeliveryAddressID` |
-| `ReferenceDeliveryAddressID` | `ReferenceDeliveryAddressID` |
-| `AddressID` | `AddressID` |
-| `ItemDeliveryAddressID` | `ItemDeliveryAddressID` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `ScheduleLineDeliveryDate` | `ScheduleLineDeliveryDate` |
-| `ScheduleLineOrderQuantity` | `ScheduleLineOrderQuantity` |
-| `PerformancePeriodStartDate` | `PerformancePeriodStartDate` |
-| `PerformancePeriodEndDate` | `PerformancePeriodEndDate` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `OrderItemQtyToBaseQtyNmrtr` | `OrderItemQtyToBaseQtyNmrtr` |
-| `OrderItemQtyToBaseQtyDnmntr` | `OrderItemQtyToBaseQtyDnmntr` |
-| `BaseUnit` | `BaseUnit` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `PurchasingInfoRecordUpdateCode` | `PurchasingInfoRecordUpdateCode` |
-| `PurchasingDocumentItemCategory` | `PurchasingDocumentItemCategory` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_RequestForQuotation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RequestForQuotation` | ✓ | |  |  |
+| `RequestForQuotationItem` | ✓ | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |
+| `Material` |  | |  |  |
+| `ProductTypeCode` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `PurchasingInfoRecordUpdateCode` |  | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_RequestForQuotation` | | ✓ | | |
 
 ## Source Code
 

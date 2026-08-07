@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerRatingTrend` | `cast ( dd07l.domvalue_l as bp_tendency )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerRatingTrend` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_tendency )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallTrdCmplncEmbargoSts` | `substring(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `OverallTrdCmplncEmbargoStsDesc` | `ddtext` |
-| `_OverallTrdCmplncEmbargoSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallTrdCmplncEmbargoSts` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `OverallTrdCmplncEmbargoStsDesc` |  | |  | `ddtext` |
+| `_OverallTrdCmplncEmbargoSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

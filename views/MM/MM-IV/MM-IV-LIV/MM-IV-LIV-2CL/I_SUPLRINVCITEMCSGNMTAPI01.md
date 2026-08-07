@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `consignment.SupplierInvoice` |
-| key `FiscalYear` | `consignment.FiscalYear` |
-| key `SupplierInvoiceItem` | `consignment.SupplierInvoiceItem` |
-| `MaterialDocument` | `consignment.MaterialDocument` |
-| `MaterialDocumentYear` | `consignment.MaterialDocumentYear` |
-| `MaterialDocumentItem` | `consignment.MaterialDocumentItem` |
-| `Material` | `consignment.Material` |
-| `CompanyCode` | `consignment.CompanyCode` |
-| `Plant` | `consignment.Plant` |
-| `DocumentCurrency` | `consignment.DocumentCurrency` |
-| `SupplierInvoiceItemAmount` | `consignment.SupplierInvoiceItemAmount` |
-| `DebitCreditCode` | `consignment.DebitCreditCode` |
-| `TaxCode` | `consignment.TaxCode` |
-| `TaxJurisdiction` | `consignment.TaxJurisdiction` |
-| `QuantityUnit` | `consignment.QuantityUnit` |
-| `Quantity` | `consignment.Quantity` |
-| `BusinessArea` | `consignment.BusinessArea` |
-| `GLAccount` | `consignment.GLAccount` |
-| `ProfitCenter` | `consignment.ProfitCenter` |
-| `TaxCountry` | `consignment.TaxCountry` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `MaterialDocumentItem` |  | |  |  |
+| `Material` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

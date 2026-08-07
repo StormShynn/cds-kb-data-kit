@@ -29,46 +29,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `Supplier` | `Supplier` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `Material` | `Material` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Plant` | `Plant` |
-| `Region` | `_Supplier.Region` |
-| `Country` | `_Supplier.Country` |
-| `PurchasingCategory` | `PurchasingCategory` |
-| `PurgCatName` | `PurgCatName` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `CalendarMonth` | `_CalendarDate.CalendarMonth` |
-| `CalendarYear` | `_CalendarDate.CalendarYear` |
-| `CalendarWeek` | `_CalendarDate.CalendarWeek` |
-| `CalendarQuarter` | `_CalendarDate.CalendarQuarter` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `PostingDate` | `PostingDate` |
-| `NmbrOfReturnedPartsMainMeasure` | `NmbrOfReturnedPartsMainMeasure` |
-| `NmbrOfReceivedPartsMainMeasure` | `NmbrOfReceivedPartsMainMeasure` |
-| `NmbrOfReturnedPartsSecondMsr` | `NmbrOfReturnedPartsSecondMsr` |
-| `NotificationComplaintQuantity` | `NotificationComplaintQuantity` |
-| `GoodsReceiptQtyInOrderUnit` | `GoodsReceiptQtyInOrderUnit` |
-| `PurgCatUUID` | `PurgCatUUID` |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_Plant` | *Association* |
-| `_CalendarDate` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_Material` | *Association* |
-| `_Supplier` | *Association* |
-| `_PurchasingCategory` | *Association* |
-| `_Country` | *Association* |
-| `_SupplierRegion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `Supplier` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Region` |  | | `_Supplier` | `Region` |
+| `Country` |  | | `_Supplier` | `Country` |
+| `PurchasingCategory` |  | |  |  |
+| `PurgCatName` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `CalendarMonth` |  | | `_CalendarDate` | `CalendarMonth` |
+| `CalendarYear` |  | | `_CalendarDate` | `CalendarYear` |
+| `CalendarWeek` |  | | `_CalendarDate` | `CalendarWeek` |
+| `CalendarQuarter` |  | | `_CalendarDate` | `CalendarQuarter` |
+| `OrderQuantityUnit` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `NmbrOfReturnedPartsMainMeasure` |  | |  |  |
+| `NmbrOfReceivedPartsMainMeasure` |  | |  |  |
+| `NmbrOfReturnedPartsSecondMsr` |  | |  |  |
+| `NotificationComplaintQuantity` |  | |  |  |
+| `GoodsReceiptQtyInOrderUnit` |  | |  |  |
+| `PurgCatUUID` |  | |  |  |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_CalendarDate` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_PurchasingCategory` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_SupplierRegion` | | ✓ | | |
 
 ## Associations
 

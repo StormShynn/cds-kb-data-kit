@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `PurReqnOrResvnGeneration` | `cast ( domvalue_l as audisp_plus )` |
-| `PurReqnOrResvnGenerationName` | `dd07t.ddtext` |
-| `_PurReqnOrResvnGeneration` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `PurReqnOrResvnGeneration` | ✓ | |  | `cast ( domvalue_l as audisp_plus )` |
+| `PurReqnOrResvnGenerationName` |  | |  | `ddtext` |
+| `_PurReqnOrResvnGeneration` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

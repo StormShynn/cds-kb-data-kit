@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcDocIsAccepted` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `SrvcDocAcceptanceStatusText` | `ddtext` |
-| `_SrvcQtanAcceptanceStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcDocIsAccepted` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SrvcDocAcceptanceStatusText` |  | |  | `ddtext` |
+| `_SrvcQtanAcceptanceStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

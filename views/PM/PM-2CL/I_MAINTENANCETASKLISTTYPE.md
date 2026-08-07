@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `I_BillOfOperationsType.BillOfOperationsType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  | `BillOfOperationsType` |
 
 ## Source Code
 

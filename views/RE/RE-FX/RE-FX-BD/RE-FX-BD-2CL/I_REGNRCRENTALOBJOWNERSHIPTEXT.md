@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REGnrcRentalObjOwnershipID` | `ownershipid` |
-| key `Language` | `spras` |
-| `REGnrcRentalObjOwnershipIDText` | `description` |
-| `_REGnrcRentalObjOwnership` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REGnrcRentalObjOwnershipID` | ✓ | |  | `ownershipid` |
+| `Language` | ✓ | |  | `spras` |
+| `REGnrcRentalObjOwnershipIDText` |  | |  | `description` |
+| `_REGnrcRentalObjOwnership` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

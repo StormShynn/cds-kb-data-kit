@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `MaintenancePlant` | `swerk` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlant` |  | |  | `swerk` |
 
 ## Source Code
 

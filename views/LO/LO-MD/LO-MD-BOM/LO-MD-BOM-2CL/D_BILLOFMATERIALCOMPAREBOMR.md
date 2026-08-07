@@ -31,85 +31,85 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BOMCompareUUID` | `guid` |
-| `BOMComponentPrimary` | `idnrk` |
-| `BOMComponentSecondary` | `idnrk` |
-| `BOMComparisonResult` | `bom_comp_result` |
-| `MaterialTypePrimary` | `mtart` |
-| `MaterialTypeSecondary` | `mtart` |
-| `PrimBOMItemQuantity` | `kmpmg` |
-| `SecdryBOMItemQuantity` | `kmpmg` |
-| `BOMItemCategoryPrimary` | `postp` |
-| `ItemCategorySecdryBOMValue` | `postp` |
-| `BOMItemNumberPrimary` | `sposn` |
-| `BOMItemNumberSecondary` | `sposn` |
-| `CompleteMaintStatusPrimary` | `vpsta` |
-| `CompleteMaintStatusSecondary` | `vpsta` |
-| `BOMItemDescriptionPrimary` | `maktx` |
-| `BOMItemDescriptionSecondary` | `maktx` |
-| `PrimBOMHdrBaseUoM` | `meins` |
-| `BOMHeaderBaseUnitSecondary` | `meins` |
-| `BOMItemUnitPrimary` | `kmpme` |
-| `BOMItemUnitSecondary` | `kmpme` |
-| `IsProductionRelevantPrimary` | `sanfe` |
-| `IsProductionRelevantSecondary` | `sanfe` |
-| `PrimBOMItemIsCostingRelevant` | `cs_sanka` |
-| `SecdryBOMItemIsCostingRelevant` | `cs_sanka` |
-| `PrimaryBOMHeaderIsDeleted` | `lkenz` |
-| `SecondaryBOMHeaderIsDeleted` | `lkenz` |
-| `SpclProcurementTypeSecdryBOM` | `cs_sobsl` |
-| `PrimBOMIsMaterialConfigurable` | `kzkfg` |
-| `PrimaryBOMIsMaterialProvision` | `beikz` |
-| `IsCADPrimary` | `cadpo` |
-| `LeadTimeOffsetPrimBOMValue` | `nlfzt` |
-| `PrimaryBOMPurchasingGroupValue` | `ekgrp` |
-| `DeliveryTimeInDaysPrimBOM` | `lifzt` |
-| `PrimaryBOMSupplier` | `lifnr` |
-| `PrimaryBOMItemPrice` | `cprei` |
-| `PrimaryBOMItemPriceUnits` | `waers` |
-| `NmbrVarblSizeItemPrimBOMQty` | `roanz` |
-| `Size1PrimaryBOMQuantity` | `roms1` |
-| `Size2PrimaryBOMQuantity` | `roms2` |
-| `Size3PrimaryBOMQuantity` | `roms3` |
-| `PrimBOMVarblSizeItemQuantity` | `romen` |
-| `PrimaryBOMFormulaKeyValue` | `rform` |
-| `GoodsReceiptDurationInPrimBOM` | `webaz` |
-| `MaterialGroupPrimaryBOM` | `matkl` |
-| `PrimBOMSpecialProcurementType` | `cs_sobsl` |
-| `SecdryBOMMatlIsConfigurable` | `kzkfg` |
-| `SecdryBOMIsMaterialProvision` | `beikz` |
-| `SecondaryBOMIsCAD` | `cadpo` |
-| `LeadTimeOffsetSecdryBOMValue` | `nlfzt` |
-| `SecdryBOMPurchasingGroupValue` | `ekgrp` |
-| `DeliveryTimeInDaysSecdryBOM` | `lifzt` |
-| `SecondaryBOMSupplierValue` | `lifnr` |
-| `SecondaryBOMItemPrice` | `cprei` |
-| `SecdryBOMItemPriceUnit` | `waers` |
-| `NmbrVarblSizeItemSecdryBOMQty` | `roanz` |
-| `Size1SecondaryQuantity` | `roms1` |
-| `Size2SecondaryQuantity` | `roms2` |
-| `Size3SecondaryQuantity` | `roms3` |
-| `SecdryBOMVarblSizeItemQuantity` | `romen` |
-| `SecondaryBOMFormulaKeyValue` | `rform` |
-| `GoodsReceiptDurationSecdryBOM` | `webaz` |
-| `MaterialGroupSecondaryBOM` | `matkl` |
-| `PrimBOMComponentLevelValue` | `stufe` |
-| `SecdryBOMComponentLevelValue` | `stufe` |
-| `CompDiffInBOMComparisonQty` | `kmpmg` |
-| `PrimBOMParentCompValue` | `matnr` |
-| `SecdryBOMParentCompValue` | `matnr` |
-| `BOMComparisonIsSummarized` | `lkenz` |
-| `PrimaryBOMValue` | `stnum` |
-| `BOMNmbrNextLevelPrimBOMValue` | `stnum` |
-| `SecondaryBOMValue` | `stnum` |
-| `BOMNmbrNextLevelSecdryBOMValue` | `stnum` |
-| `ComparisonResultValue` | `cs_comparison_result` |
-| `PrimaryBOMComponentIndexValue` | `sytabix` |
-| `SecdryBOMComponentIndexValue` | `sytabix` |
-| `BOMItemCategoryPrimaryDesc` | `pttxt` |
-| `BOMItemCategorySecondaryDesc` | `pttxt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOMCompareUUID` |  | |  | `guid` |
+| `BOMComponentPrimary` |  | |  | `idnrk` |
+| `BOMComponentSecondary` |  | |  | `idnrk` |
+| `BOMComparisonResult` |  | |  | `bom_comp_result` |
+| `MaterialTypePrimary` |  | |  | `mtart` |
+| `MaterialTypeSecondary` |  | |  | `mtart` |
+| `PrimBOMItemQuantity` |  | |  | `kmpmg` |
+| `SecdryBOMItemQuantity` |  | |  | `kmpmg` |
+| `BOMItemCategoryPrimary` |  | |  | `postp` |
+| `ItemCategorySecdryBOMValue` |  | |  | `postp` |
+| `BOMItemNumberPrimary` |  | |  | `sposn` |
+| `BOMItemNumberSecondary` |  | |  | `sposn` |
+| `CompleteMaintStatusPrimary` |  | |  | `vpsta` |
+| `CompleteMaintStatusSecondary` |  | |  | `vpsta` |
+| `BOMItemDescriptionPrimary` |  | |  | `maktx` |
+| `BOMItemDescriptionSecondary` |  | |  | `maktx` |
+| `PrimBOMHdrBaseUoM` |  | |  | `meins` |
+| `BOMHeaderBaseUnitSecondary` |  | |  | `meins` |
+| `BOMItemUnitPrimary` |  | |  | `kmpme` |
+| `BOMItemUnitSecondary` |  | |  | `kmpme` |
+| `IsProductionRelevantPrimary` |  | |  | `sanfe` |
+| `IsProductionRelevantSecondary` |  | |  | `sanfe` |
+| `PrimBOMItemIsCostingRelevant` |  | |  | `cs_sanka` |
+| `SecdryBOMItemIsCostingRelevant` |  | |  | `cs_sanka` |
+| `PrimaryBOMHeaderIsDeleted` |  | |  | `lkenz` |
+| `SecondaryBOMHeaderIsDeleted` |  | |  | `lkenz` |
+| `SpclProcurementTypeSecdryBOM` |  | |  | `cs_sobsl` |
+| `PrimBOMIsMaterialConfigurable` |  | |  | `kzkfg` |
+| `PrimaryBOMIsMaterialProvision` |  | |  | `beikz` |
+| `IsCADPrimary` |  | |  | `cadpo` |
+| `LeadTimeOffsetPrimBOMValue` |  | |  | `nlfzt` |
+| `PrimaryBOMPurchasingGroupValue` |  | |  | `ekgrp` |
+| `DeliveryTimeInDaysPrimBOM` |  | |  | `lifzt` |
+| `PrimaryBOMSupplier` |  | |  | `lifnr` |
+| `PrimaryBOMItemPrice` |  | |  | `cprei` |
+| `PrimaryBOMItemPriceUnits` |  | |  | `waers` |
+| `NmbrVarblSizeItemPrimBOMQty` |  | |  | `roanz` |
+| `Size1PrimaryBOMQuantity` |  | |  | `roms1` |
+| `Size2PrimaryBOMQuantity` |  | |  | `roms2` |
+| `Size3PrimaryBOMQuantity` |  | |  | `roms3` |
+| `PrimBOMVarblSizeItemQuantity` |  | |  | `romen` |
+| `PrimaryBOMFormulaKeyValue` |  | |  | `rform` |
+| `GoodsReceiptDurationInPrimBOM` |  | |  | `webaz` |
+| `MaterialGroupPrimaryBOM` |  | |  | `matkl` |
+| `PrimBOMSpecialProcurementType` |  | |  | `cs_sobsl` |
+| `SecdryBOMMatlIsConfigurable` |  | |  | `kzkfg` |
+| `SecdryBOMIsMaterialProvision` |  | |  | `beikz` |
+| `SecondaryBOMIsCAD` |  | |  | `cadpo` |
+| `LeadTimeOffsetSecdryBOMValue` |  | |  | `nlfzt` |
+| `SecdryBOMPurchasingGroupValue` |  | |  | `ekgrp` |
+| `DeliveryTimeInDaysSecdryBOM` |  | |  | `lifzt` |
+| `SecondaryBOMSupplierValue` |  | |  | `lifnr` |
+| `SecondaryBOMItemPrice` |  | |  | `cprei` |
+| `SecdryBOMItemPriceUnit` |  | |  | `waers` |
+| `NmbrVarblSizeItemSecdryBOMQty` |  | |  | `roanz` |
+| `Size1SecondaryQuantity` |  | |  | `roms1` |
+| `Size2SecondaryQuantity` |  | |  | `roms2` |
+| `Size3SecondaryQuantity` |  | |  | `roms3` |
+| `SecdryBOMVarblSizeItemQuantity` |  | |  | `romen` |
+| `SecondaryBOMFormulaKeyValue` |  | |  | `rform` |
+| `GoodsReceiptDurationSecdryBOM` |  | |  | `webaz` |
+| `MaterialGroupSecondaryBOM` |  | |  | `matkl` |
+| `PrimBOMComponentLevelValue` |  | |  | `stufe` |
+| `SecdryBOMComponentLevelValue` |  | |  | `stufe` |
+| `CompDiffInBOMComparisonQty` |  | |  | `kmpmg` |
+| `PrimBOMParentCompValue` |  | |  | `matnr` |
+| `SecdryBOMParentCompValue` |  | |  | `matnr` |
+| `BOMComparisonIsSummarized` |  | |  | `lkenz` |
+| `PrimaryBOMValue` |  | |  | `stnum` |
+| `BOMNmbrNextLevelPrimBOMValue` |  | |  | `stnum` |
+| `SecondaryBOMValue` |  | |  | `stnum` |
+| `BOMNmbrNextLevelSecdryBOMValue` |  | |  | `stnum` |
+| `ComparisonResultValue` |  | |  | `cs_comparison_result` |
+| `PrimaryBOMComponentIndexValue` |  | |  | `sytabix` |
+| `SecdryBOMComponentIndexValue` |  | |  | `sytabix` |
+| `BOMItemCategoryPrimaryDesc` |  | |  | `pttxt` |
+| `BOMItemCategorySecondaryDesc` |  | |  | `pttxt` |
 
 ## Source Code
 

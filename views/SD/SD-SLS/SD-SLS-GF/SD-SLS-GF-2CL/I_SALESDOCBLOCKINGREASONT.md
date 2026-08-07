@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocumentBlockingReason` | `aufsp` |
-| key `Language` | `spras` |
-| `SalesDocBlockingReasonName` | `vtext` |
-| `_SalesDocumentBlockingReason` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentBlockingReason` | ✓ | |  | `aufsp` |
+| `Language` | ✓ | |  | `spras` |
+| `SalesDocBlockingReasonName` |  | |  | `vtext` |
+| `_SalesDocumentBlockingReason` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

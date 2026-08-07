@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceConfirmation` | `ServiceConfirmation` |
-| key `ServiceConfirmationItem` | `ServiceConfirmationItem` |
-| key `ServiceRefObjectSequenceNumber` | `ServiceRefObjectSequenceNumber` |
-| `SerialNumber` | `SerialNumber` |
-| `ServiceReferenceEquipment` | `ServiceReferenceEquipment` |
-| `ManufacturerSerialNumber` | `ManufacturerSerialNumber` |
-| `_ServiceConfirmationItemTP` | *Association* |
-| `_ServiceConfirmationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |
+| `ServiceConfirmationItem` | ✓ | |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |
+| `SerialNumber` |  | |  |  |
+| `ServiceReferenceEquipment` |  | |  |  |
+| `ManufacturerSerialNumber` |  | |  |  |
+| `_ServiceConfirmationItemTP` | | ✓ | | |
+| `_ServiceConfirmationTP` | | ✓ | | |
 
 ## Source Code
 

@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REContractNoticeReason` | `ntreason` |
-| `REContractNoticeParty` | `ntparty` |
-| `REIsExtraordinaryNotice` | `ntextraord` |
-| `REVacancyReason` | `vacreasondef` |
-| `REIsExclForNewAssgmt` | `cuexcludeassign` |
-| `_Text` | *Association* |
-| `_REContractNoticeParty` | *Association* |
-| `_REVacancyReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REContractNoticeReason` | ✓ | |  | `ntreason` |
+| `REContractNoticeParty` |  | |  | `ntparty` |
+| `REIsExtraordinaryNotice` |  | |  | `ntextraord` |
+| `REVacancyReason` |  | |  | `vacreasondef` |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
+| `_Text` | | ✓ | | |
+| `_REContractNoticeParty` | | ✓ | | |
+| `_REVacancyReason` | | ✓ | | |
 
 ## Associations
 

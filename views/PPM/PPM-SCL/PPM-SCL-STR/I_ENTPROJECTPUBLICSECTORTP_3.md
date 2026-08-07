@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectUUID` | `ProjectUUID` |
-| `Fund` | `Fund` |
-| `FundIsFixAssigned` | `FundIsFixAssigned` |
-| `FunctionalAreaIsFixAssigned` | `FunctionalAreaIsFixAssigned` |
-| `GrantID` | `GrantID` |
-| `GrantIsFixAssigned` | `GrantIsFixAssigned` |
-| `SponsoredProgram` | `SponsoredProgram` |
-| `_EnterpriseProject` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  |  |
+| `Fund` |  | |  |  |
+| `FundIsFixAssigned` |  | |  |  |
+| `FunctionalAreaIsFixAssigned` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `GrantIsFixAssigned` |  | |  |  |
+| `SponsoredProgram` |  | |  |  |
+| `_EnterpriseProject` | | ✓ | | |
 
 ## Source Code
 

@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope2CalculationMethod` | `_Source.GHGScope2CalculationMethod` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope2CalculationMethod` | ✓ | | `_Source` | `GHGScope2CalculationMethod` |
 
 ## Source Code
 

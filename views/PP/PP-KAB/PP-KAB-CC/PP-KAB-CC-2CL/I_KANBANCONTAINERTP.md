@@ -29,57 +29,57 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanContainer` | `KanbanContainer` |
-| `KanbanControlCycle` | `KanbanControlCycle` |
-| `KanbanControlCycleItem` | `KanbanControlCycleItem` |
-| `KanbanContainerStatus` | `KanbanContainerStatus` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `PreviousKanbanContainerStatus` | `PreviousKanbanContainerStatus` |
-| `PreviousLastChangeDate` | `PreviousLastChangeDate` |
-| `PreviousLastChangeTime` | `PreviousLastChangeTime` |
-| `IsLocked` | `IsLocked` |
-| `IsDeleted` | `IsDeleted` |
-| `ChangedPackgInstrnDataIsAvail` | `ChangedPackgInstrnDataIsAvail` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `BaseUnit` | `BaseUnit` |
-| `ActualQuantityInBaseUnit` | `ActualQuantityInBaseUnit` |
-| `RequestedQuantityInBaseUnit` | `RequestedQuantityInBaseUnit` |
-| `PlannedReceiptDateTime` | `PlannedReceiptDateTime` |
-| `Plant` | `Plant` |
-| `Supplier` | `Supplier` |
-| `PlannedOrder` | `PlannedOrder` |
-| `OrderID` | `OrderID` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocument` | `PurchasingDocument` |
-| `PurchasingDocumentItem` | `PurchasingDocumentItem` |
-| `SequentialNmbrOfSuplrConf` | `SequentialNmbrOfSuplrConf` |
-| `SalesDocument` | `SalesDocument` |
-| `SalesDocumentItem` | `SalesDocumentItem` |
-| `Reservation` | `Reservation` |
-| `ReservationItem` | `ReservationItem` |
-| `TransferRequirementNumber` | `TransferRequirementNumber` |
-| `TransferRequirementItem` | `TransferRequirementItem` |
-| `JITCallNumber` | `JITCallNumber` |
-| `JITCallItemNumber` | `JITCallItemNumber` |
-| `BackflushReportingPoint` | `BackflushReportingPoint` |
-| `Warehouse` | `Warehouse` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `WarehouseTask` | `WarehouseTask` |
-| `EWMWarehouseRequest` | `EWMWarehouseRequest` |
-| `EWMWarehouseRequestItem` | `EWMWarehouseRequestItem` |
-| `MaterialDocument` | `MaterialDocument` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `MaterialDocumentItem` | `MaterialDocumentItem` |
-| `WhseGoodsMovementDocument` | `WhseGoodsMovementDocument` |
-| `WhseGoodsMovementDocumentItem` | `WhseGoodsMovementDocumentItem` |
-| `RepetitiveMfgConfirmation` | `RepetitiveMfgConfirmation` |
-| `_KanbanControlCycle` | *Association* |
-| `_Plant` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanContainer` | ✓ | |  |  |
+| `KanbanControlCycle` |  | |  |  |
+| `KanbanControlCycleItem` |  | |  |  |
+| `KanbanContainerStatus` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `PreviousKanbanContainerStatus` |  | |  |  |
+| `PreviousLastChangeDate` |  | |  |  |
+| `PreviousLastChangeTime` |  | |  |  |
+| `IsLocked` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ChangedPackgInstrnDataIsAvail` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ActualQuantityInBaseUnit` |  | |  |  |
+| `RequestedQuantityInBaseUnit` |  | |  |  |
+| `PlannedReceiptDateTime` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PlannedOrder` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `SequentialNmbrOfSuplrConf` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `ReservationItem` |  | |  |  |
+| `TransferRequirementNumber` |  | |  |  |
+| `TransferRequirementItem` |  | |  |  |
+| `JITCallNumber` |  | |  |  |
+| `JITCallItemNumber` |  | |  |  |
+| `BackflushReportingPoint` |  | |  |  |
+| `Warehouse` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `WarehouseTask` |  | |  |  |
+| `EWMWarehouseRequest` |  | |  |  |
+| `EWMWarehouseRequestItem` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `MaterialDocumentItem` |  | |  |  |
+| `WhseGoodsMovementDocument` |  | |  |  |
+| `WhseGoodsMovementDocumentItem` |  | |  |  |
+| `RepetitiveMfgConfirmation` |  | |  |  |
+| `_KanbanControlCycle` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
 
 ## Source Code
 

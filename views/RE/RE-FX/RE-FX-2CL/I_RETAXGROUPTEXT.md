@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `TaxGroup` | `taxgroup` |
-| `TaxGroupName` | `xmtaxgroup` |
-| `_RETaxGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `TaxGroup` | ✓ | |  | `taxgroup` |
+| `TaxGroupName` |  | |  | `xmtaxgroup` |
+| `_RETaxGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

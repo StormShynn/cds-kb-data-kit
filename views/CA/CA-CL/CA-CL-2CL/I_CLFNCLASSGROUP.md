@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassGroup` | `ClassGroup.klagr` |
-| `ConfigurationDeprecationCode` | `ClassGroup.configurationdeprecationcode` |
-| `_ClassGroupText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassGroup` | ✓ | |  | `klagr` |
+| `ConfigurationDeprecationCode` |  | |  | `configurationdeprecationcode` |
+| `_ClassGroupText` | | ✓ | | |
 
 ## Source Code
 

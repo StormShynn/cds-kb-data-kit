@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentHasError` | `domvalue_l` |
-| `_ServiceDocHasErrorText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentHasError` | ✓ | |  | `domvalue_l` |
+| `_ServiceDocHasErrorText` | | ✓ | | |
 
 ## Associations
 

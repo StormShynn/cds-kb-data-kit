@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(langu as spras preserving type )` |
-| key `ConsolidationDocumentType` | `cast(docty as fincs_documenttype preserving type )` |
-| `ConsolidationDocumentTypeText` | `cast(txt as fincs_description_text_30 preserving type )` |
-| `_Language` | *Association* |
-| `_DocumentType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(langu as spras preserving type )` |
+| `ConsolidationDocumentType` | ✓ | |  | `cast(docty as fincs_documenttype preserving type )` |
+| `ConsolidationDocumentTypeText` |  | |  | `cast(txt as fincs_description_text_30 preserving type )` |
+| `_Language` | | ✓ | | |
+| `_DocumentType` | | ✓ | | |
 
 ## Associations
 

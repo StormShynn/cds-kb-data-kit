@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ConditionUsage` | `ConditionUsage` |
-| key `ConditionApplication` | `ConditionApplication` |
-| key `PricingProcedure` | `PricingProcedure` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `ConditionTypeName` | `ConditionTypeName` |
-| `_ConditionApplication` | *Association* |
-| `_ConditionUsage` | *Association* |
-| `_PurgPricingProcedureItem` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ConditionUsage` | ✓ | |  |  |
+| `ConditionApplication` | ✓ | |  |  |
+| `PricingProcedure` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `_ConditionApplication` | | ✓ | | |
+| `_ConditionUsage` | | ✓ | | |
+| `_PurgPricingProcedureItem` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

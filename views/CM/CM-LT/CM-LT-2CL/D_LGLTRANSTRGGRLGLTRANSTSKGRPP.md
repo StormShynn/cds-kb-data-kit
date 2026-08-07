@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LglCntntMTaskGroupUUID` | `lcm_uuid` |
-| `LglCntntMWrkflwDocLink` | `lcm_lt_wrkflw_doclink` |
-| `LglCntntMContextUUID` | `lcm_uuid` |
-| `LegalTransactionUUID` | `lcm_uuid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMTaskGroupUUID` |  | |  | `lcm_uuid` |
+| `LglCntntMWrkflwDocLink` |  | |  | `lcm_lt_wrkflw_doclink` |
+| `LglCntntMContextUUID` |  | |  | `lcm_uuid` |
+| `LegalTransactionUUID` |  | |  | `lcm_uuid` |
 
 ## Source Code
 

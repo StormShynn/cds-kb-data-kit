@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_SchedgAgrmtItm` | *Association* |
-| `_SchedgAgrmtItmCndnAmount` | *Association* |
-| `_PurSchedgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_SchedgAgrmtItm` | | ✓ | | |
+| `_SchedgAgrmtItmCndnAmount` | | ✓ | | |
+| `_PurSchedgAgrmt` | | ✓ | | |
 
 ## Source Code
 

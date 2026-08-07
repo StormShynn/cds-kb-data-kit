@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `ProductSalesOrg` | `ProductSalesOrg` |
-| key `ProductDistributionChnl` | `ProductDistributionChnl` |
-| key `Plant` | `Plant` |
-| `StoreSaleStartDate` | `StoreSaleStartDate` |
-| `StoreSaleEndDate` | `StoreSaleEndDate` |
-| `ProductSalesStatus` | `ProductSalesStatus` |
-| `ProductSalesStatusValidityDate` | `ProductSalesStatusValidityDate` |
-| `PointOfSalesDiscountIsAllowed` | `PointOfSalesDiscountIsAllowed` |
-| `ScalesGroup` | `ScalesGroup` |
-| `ProdSlsDelivPOSIsPriceRequired` | `ProdSlsDelivPOSIsPriceRequired` |
-| `ProdSlsDelivRepeatKey` | `ProdSlsDelivRepeatKey` |
-| `_Product` | *Association* |
-| `_ProductSalesDelivery` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ProductSalesOrg` | ✓ | |  |  |
+| `ProductDistributionChnl` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `StoreSaleStartDate` |  | |  |  |
+| `StoreSaleEndDate` |  | |  |  |
+| `ProductSalesStatus` |  | |  |  |
+| `ProductSalesStatusValidityDate` |  | |  |  |
+| `PointOfSalesDiscountIsAllowed` |  | |  |  |
+| `ScalesGroup` |  | |  |  |
+| `ProdSlsDelivPOSIsPriceRequired` |  | |  |  |
+| `ProdSlsDelivRepeatKey` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductSalesDelivery` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Source Code
 

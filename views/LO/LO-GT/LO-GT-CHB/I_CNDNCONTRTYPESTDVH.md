@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CndnContrType` | `CndnContrType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CndnContrType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

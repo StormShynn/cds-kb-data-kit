@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CrdtMgmtBusinessPartnerGroup` | `cred_group` |
-| key `Language` | `langu` |
-| `CrdtMgmtBusPartnerGroupName` | `cred_group_txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CrdtMgmtBusinessPartnerGroup` | ✓ | |  | `cred_group` |
+| `Language` | ✓ | |  | `langu` |
+| `CrdtMgmtBusPartnerGroupName` |  | |  | `cred_group_txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

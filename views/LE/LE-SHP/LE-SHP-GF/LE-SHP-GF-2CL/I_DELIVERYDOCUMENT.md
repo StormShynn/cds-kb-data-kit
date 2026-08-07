@@ -32,250 +32,250 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryDocument` | `vbeln` |
-| `SDDocumentCategory` | `vbtyp` |
-| `DeliveryDocumentType` | `lfart` |
-| `CreatedByUser` | `ernam` |
-| `CreationDate` | `erdat` |
-| `CreationTime` | `erzet` |
-| `LastChangedByUser` | `aenam` |
-| `LastChangeDate` | `aedat` |
-| `ShippingPoint` | `vstel` |
-| `SalesOrganization` | `vkorg` |
-| `SalesOffice` | `vkbur` |
-| `CompleteDeliveryIsDefined` | `autlf` |
-| `OrderCombinationIsAllowed` | `kzazu` |
-| `DeliveryPriority` | `lprio` |
-| `DeliveryBlockReason` | `lifsk` |
-| `Supplier` | `cast(lifnr as md_supplier)` |
-| `DeliveryDocumentBySupplier` | `lifex` |
-| `DeliveryIsInPlant` | `imwrk` |
-| `ReceivingPlant` | `werks` |
-| `Warehouse` | `lgnum` |
-| `IsExportDelivery` | `expkz` |
-| `OrderID` | `ternr` |
-| `HeaderGrossWeight` | `btgew` |
-| `HeaderNetWeight` | `ntgew` |
-| `HeaderWeightUnit` | `gewei` |
-| `HeaderVolume` | `volum` |
-| `HeaderVolumeUnit` | `voleh` |
-| `IsDeliveryForSingleWarehouse` | `lispl` |
-| `GoodsIssueOrReceiptSlipNumber` | `xabln` |
-| `WarehouseGate` | `lgtor` |
-| `WarehouseStagingArea` | `} ] lgbzo` |
-| `MeansOfTransportRefMaterial` | `trmtyp` |
-| `SpecialProcessingCode` | `sdabw` |
-| `ExternalIdentificationType` | `spe_lifex_type` |
-| `DeliveryVersion` | `dlv_version` |
-| `PickedItemsLocation` | `berot` |
-| `DocumentDate` | `bldat` |
-| `PickingDate` | `kodat` |
-| `PickingTime` | `kouhr` |
-| `TotalNumberOfPackage` | `anzpk` |
-| `LoadingPoint` | `lstel` |
-| `LoadingDate` | `lddat` |
-| `LoadingTime` | `lduhr` |
-| `BillOfLading` | `bolnr` |
-| `HandlingUnitInStock` | `vestk` |
-| `ShipToParty` | `kunnr` |
-| `ShippingType` | `vsart` |
-| `DeliveryDate` | `lfdat` |
-| `DeliveryTime` | `lfuhr` |
-| `ShippingCondition` | `vsbed` |
-| `ShipmentBlockReason` | `trspg` |
-| `TransportationPlanningDate` | `tddat` |
-| `TransportationPlanningTime` | `tduhr` |
-| `ProposedDeliveryRoute` | `route` |
-| `ActualDeliveryRoute` | `routa` |
-| `RouteSchedule` | `aulwe` |
-| `PlannedGoodsIssueDate` | `wadat` |
-| `GoodsIssueTime` | `wauhr` |
-| `ActualGoodsMovementDate` | `wadat_ist` |
-| `ActualGoodsMovementTime` | `spe_wauhr_ist` |
-| `IncotermsVersion` | `incov` |
-| `IncotermsClassification` | `inco1` |
-| `IncotermsTransferLocation` | `inco2` |
-| `IncotermsLocation1` | `inco2_l` |
-| `IncotermsLocation2` | `inco3_l` |
-| `ExternalTransportSystem` | `tpsid` |
-| `TransportationGroup` | `tragr` |
-| `MeansOfTransport` | `traid` |
-| `MeansOfTransportType` | `traty` |
-| `UnloadingPointName` | `ablad` |
-| `ProofOfDeliveryDate` | `podat` |
-| `ConfirmationTime` | `potim` |
-| `FactoryCalendarByCustomer` | `knfak` |
-| `ShippingLocationTimeZone` | `tzonis` |
-| `ReceivingLocationTimeZone` | `tzonrc` |
-| `IntercompanyBillingDate` | `fkdiv` |
-| `BillingDocumentDate` | `fkdat` |
-| `HeaderBillingBlockReason` | `faksk` |
-| `InternalFinancialDocument` | `lcnum` |
-| `PaymentGuaranteeProcedure` | `abssc` |
-| `DepreciationPercentage` | `akprz` |
-| `NextShippingDate` | `cmngv` |
-| `CustomerCreditAccount` | `knkli` |
-| `CentralCreditChkTechErrSts` | `cmps_te` |
-| `ReleasedCreditAmount` | `amtbl` |
-| `ControllingAreaCurrency` | `cmwae` |
-| `CreditBlockReleaseDate` | `cmfre` |
-| `SoldToParty` | `kunag` |
-| `CustomerGroup` | `kdgrp` |
-| `SalesDistrict` | `bzirk` |
-| `TransactionCurrency` | `waerk` |
-| `StatisticsCurrency` | `stwae` |
-| `OverallIntcoBillingStatus` | `case when fkivk is initial then ico_fkivk when fkivk = 'A' then case when ico_fkivk = 'B' or ico_fkivk = 'C' then 'B' else fkivk end when fkivk = 'B' then 'B' when fkivk = 'C' then case when ico_fkivk = 'A' or ico_fkivk = 'B' then 'B' else fkivk end else fkivk end` |
-| `OverallSDProcessStatus` | `gbstk` |
-| `TotalBlockStatus` | `spstg` |
-| `OverallDelivConfStatus` | `bestk` |
-| `TransportationPlanningStatus` | `trsta` |
-| `OverallPickingConfStatus` | `koquk` |
-| `OverallPickingStatus` | `kostk` |
-| `OverallPackingStatus` | `pkstk` |
-| `OverallWarehouseActivityStatus` | `lvstk` |
-| `DistrStatusByDecentralizedWrhs` | `vlstk` |
-| `OverallGoodsMovementStatus` | `wbstk` |
-| `OverallDelivReltdBillgStatus` | `fkstk` |
-| `OverallProofOfDeliveryStatus` | `pdstk` |
-| `HdrGeneralIncompletionStatus` | `uvall` |
-| `HeaderDelivIncompletionStatus` | `uvvlk` |
-| `HeaderPickgIncompletionStatus` | `uvpik` |
-| `HeaderPackingIncompletionSts` | `uvpak` |
-| `HdrGoodsMvtIncompletionStatus` | `uvwak` |
-| `HeaderBillgIncompletionStatus` | `uvfak` |
-| `OvrlItmGeneralIncompletionSts` | `uvals` |
-| `OvrlItmPackingIncompletionSts` | `uvpas` |
-| `OvrlItmPickingIncompletionSts` | `uvpis` |
-| `OvrlItmDelivIncompletionSts` | `uvvls` |
-| `OvrlItmGdsMvtIncompletionSts` | `uvwas` |
-| `TotalCreditCheckStatus` | `cmgst` |
-| `FinDocCreditCheckStatus` | `likp.cmpsi` |
-| `PaytAuthsnCreditCheckSts` | `likp.cmpsk` |
-| `CentralCreditCheckStatus` | `likp.cmps_cm` |
-| `ExprtInsurCreditCheckStatus` | `likp.cmpsj` |
-| `MaxDocValueCreditCheckStatus` | `cmpsc` |
-| `PaymentTermCreditCheckStatus` | `cmpsd` |
-| `ShippingGroupNumber` | `likp.rfm_psst_group` |
-| `PricingDocument` | `knumv` |
-| `SalesOrgForIntcoBilling` | `vkoiv` |
-| `DistrChnlForIntcoBilling` | `vtwiv` |
-| `DivisionForIntcoBilling` | `spaiv` |
-| `IntercompanyBillingType` | `fkaiv` |
-| `FactoryCalendarForIntcoBilling` | `pioiv` |
-| `IntercompanyBillingCustomer` | `kuniv` |
-| `DeliveryDocumentCondition` | `knump` |
-| `TotalNetAmount` | `netwr` |
-| `ReferenceDocumentNumber` | `xblnr` |
-| `DeletionIndicator` | `spe_loekz` |
-| `OverallChmlCmplncStatus` | `total_pcsta` |
-| `OverallDangerousGoodsStatus` | `total_dgsta` |
-| `OverallSafetyDataSheetStatus` | `total_sdssta` |
-| `OverallTrdCmplncEmbargoSts` | `total_emcst` |
-| `OvrlTrdCmplncSnctndListChkSts` | `total_slcst` |
-| `OvrlTrdCmplncLegalCtrlChkSts` | `total_lccst` |
-| `IsCorrectionDelivery` | `klief` |
-| `ReadyForWarehouseExecStatus` | `tm_whse_exec` |
-| `DelivAdvncdShipgRcvgRlvnce` | `tm_adv_ship_recv` |
-| `DelivIsQtyCrrtnAdvncShipgRcvg` | `corr_ind` |
-| `EU_DeliveryARCStatus` | `total_arc_status` |
-| `IntcoExtActlTransfOfCtrlDteTme` | `ext_act_date_tocd` |
-| `IntcoExtPlndTransfOfCtrlDteTme` | `ext_plan_date_tocd` |
-| `IntcoExtTransfOfCtrlDteTmeTmzn` | `ext_tzone_tocd` |
-| `IntcoIntActlTransfOfCtrlDteTme` | `int_act_date_tocd` |
-| `IntcoIntPlndTransfOfCtrlDteTme` | `int_plan_date_tocd` |
-| `IntcoIntTransfOfCtrlDteTmeTmzn` | `int_tzone_tocd` |
-| `LogisticsExecutionScenario` | `spe_le_scenario` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_DeliveryDocumentType` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_ShippingPoint` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_DeliveryPriority` | *Association* |
-| `_DeliveryBlockReason` | *Association* |
-| `_Supplier` | *Association* |
-| `_ReceivingPlant` | *Association* |
-| `_Warehouse` | *Association* |
-| `_OrderID` | *Association* |
-| `_HeaderWeightUnit` | *Association* |
-| `_HeaderVolumeUnit` | *Association* |
-| `_WarehouseGate` | *Association* |
-| `_WarehouseStagingArea` | *Association* |
-| `_MeansOfTransportRefMaterial` | *Association* |
-| `_SpecialProcessingCode` | *Association* |
-| `_LoadingPoint` | *Association* |
-| `_HandlingUnitInStock` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_ShippingType` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_ShipmentBlockReason` | *Association* |
-| `_ProposedDeliveryRoute` | *Association* |
-| `_ActualDeliveryRoute` | *Association* |
-| `_IncotermsVersion` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_TransportationGroup` | *Association* |
-| `_MeansOfTransportType` | *Association* |
-| `_HeaderBillingBlockReason` | *Association* |
-| `_PaymentGuaranteeProcedure` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_StatisticsCurrency` | *Association* |
-| `_OverallSDProcessStatus` | *Association* |
-| `_TotalBlockStatus` | *Association* |
-| `_OverallDelivConfStatus` | *Association* |
-| `_TransportationPlanningSts` | *Association* |
-| `_OverallPickingConfStatus` | *Association* |
-| `_OverallPickingStatus` | *Association* |
-| `_OverallPackingStatus` | *Association* |
-| `_OvrlWarehouseActyStatus` | *Association* |
-| `_DistrStatusByDectrlzdWrhs` | *Association* |
-| `_OverallGoodsMovementStatus` | *Association* |
-| `_OverallDelivReltdBillgStatus` | *Association* |
-| `_OverallIntcoBillingStatus` | *Association* |
-| `_OverallProofOfDeliveryStatus` | *Association* |
-| `_HdrGeneralIncompletionStatus` | *Association* |
-| `_HeaderDelivIncompletionStatus` | *Association* |
-| `_HeaderPickgIncompletionStatus` | *Association* |
-| `_HeaderPackingIncompletionSts` | *Association* |
-| `_HdrGoodsMvtIncompletionStatus` | *Association* |
-| `_HeaderBillgIncompletionStatus` | *Association* |
-| `_OvrlItmGeneralIncompletionSts` | *Association* |
-| `_OvrlItmPackingIncompletionSts` | *Association* |
-| `_OvrlItmPickingIncompletionSts` | *Association* |
-| `_OvrlItmDelivIncompletionSts` | *Association* |
-| `_OvrlItmGdsMvtIncompletionSts` | *Association* |
-| `_TotalCreditCheckStatus` | *Association* |
-| `_FinDocCreditCheckStatus` | *Association* |
-| `_PaytAuthsnCreditCheckSts` | *Association* |
-| `_CentralCreditCheckStatus` | *Association* |
-| `_ExprtInsurCreditCheckStatus` | *Association* |
-| `_CentralCreditChkTechErrSts` | *Association* |
-| `_CustomerCreditAccount` | *Association* |
-| `_ControllingAreaCurrency` | *Association* |
-| `_MaxDocValueCreditCheckStatus` | *Association* |
-| `_PaymentTermCreditCheckStatus` | *Association* |
-| `_MaterialDocumentHeader` | *Association* |
-| `_MaterialDocumentHeader_2` | *Association* |
-| `_PackingStatusText` | *Association* |
-| `_OverallChmlCmplncStatus` | *Association* |
-| `_OverallDangerousGoodsStatus` | *Association* |
-| `_OvrlSftyDataSheetSts` | *Association* |
-| `_OverallTrdCmplncEmbargoSts` | *Association* |
-| `_OvrlTrdCmplncSnctndListChkSts` | *Association* |
-| `_OvrlTrdCmplncLegalCtrlChkSts` | *Association* |
-| `_ExciseTaxStatus` | *Association* |
-| `_ExternalTCOTimezone` | *Association* |
-| `_InternalTCOTimezone` | *Association* |
-| `_WarehouseExecutionStatus` | *Association* |
-| `_DelivAdvncdShipgRcvgRlvnce` | *Association* |
-| `_LogisticsExecScenario` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryDocument` | ✓ | |  | `vbeln` |
+| `SDDocumentCategory` |  | |  | `vbtyp` |
+| `DeliveryDocumentType` |  | |  | `lfart` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreationTime` |  | |  | `erzet` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `ShippingPoint` |  | |  | `vstel` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `SalesOffice` |  | |  | `vkbur` |
+| `CompleteDeliveryIsDefined` |  | |  | `autlf` |
+| `OrderCombinationIsAllowed` |  | |  | `kzazu` |
+| `DeliveryPriority` |  | |  | `lprio` |
+| `DeliveryBlockReason` |  | |  | `lifsk` |
+| `Supplier` |  | |  | `cast(lifnr as md_supplier)` |
+| `DeliveryDocumentBySupplier` |  | |  | `lifex` |
+| `DeliveryIsInPlant` |  | |  | `imwrk` |
+| `ReceivingPlant` |  | |  | `werks` |
+| `Warehouse` |  | |  | `lgnum` |
+| `IsExportDelivery` |  | |  | `expkz` |
+| `OrderID` |  | |  | `ternr` |
+| `HeaderGrossWeight` |  | |  | `btgew` |
+| `HeaderNetWeight` |  | |  | `ntgew` |
+| `HeaderWeightUnit` |  | |  | `gewei` |
+| `HeaderVolume` |  | |  | `volum` |
+| `HeaderVolumeUnit` |  | |  | `voleh` |
+| `IsDeliveryForSingleWarehouse` |  | |  | `lispl` |
+| `GoodsIssueOrReceiptSlipNumber` |  | |  | `xabln` |
+| `WarehouseGate` |  | |  | `lgtor` |
+| `WarehouseStagingArea` |  | |  | `} ] lgbzo` |
+| `MeansOfTransportRefMaterial` |  | |  | `trmtyp` |
+| `SpecialProcessingCode` |  | |  | `sdabw` |
+| `ExternalIdentificationType` |  | |  | `spe_lifex_type` |
+| `DeliveryVersion` |  | |  | `dlv_version` |
+| `PickedItemsLocation` |  | |  | `berot` |
+| `DocumentDate` |  | |  | `bldat` |
+| `PickingDate` |  | |  | `kodat` |
+| `PickingTime` |  | |  | `kouhr` |
+| `TotalNumberOfPackage` |  | |  | `anzpk` |
+| `LoadingPoint` |  | |  | `lstel` |
+| `LoadingDate` |  | |  | `lddat` |
+| `LoadingTime` |  | |  | `lduhr` |
+| `BillOfLading` |  | |  | `bolnr` |
+| `HandlingUnitInStock` |  | |  | `vestk` |
+| `ShipToParty` |  | |  | `kunnr` |
+| `ShippingType` |  | |  | `vsart` |
+| `DeliveryDate` |  | |  | `lfdat` |
+| `DeliveryTime` |  | |  | `lfuhr` |
+| `ShippingCondition` |  | |  | `vsbed` |
+| `ShipmentBlockReason` |  | |  | `trspg` |
+| `TransportationPlanningDate` |  | |  | `tddat` |
+| `TransportationPlanningTime` |  | |  | `tduhr` |
+| `ProposedDeliveryRoute` |  | |  | `route` |
+| `ActualDeliveryRoute` |  | |  | `routa` |
+| `RouteSchedule` |  | |  | `aulwe` |
+| `PlannedGoodsIssueDate` |  | |  | `wadat` |
+| `GoodsIssueTime` |  | |  | `wauhr` |
+| `ActualGoodsMovementDate` |  | |  | `wadat_ist` |
+| `ActualGoodsMovementTime` |  | |  | `spe_wauhr_ist` |
+| `IncotermsVersion` |  | |  | `incov` |
+| `IncotermsClassification` |  | |  | `inco1` |
+| `IncotermsTransferLocation` |  | |  | `inco2` |
+| `IncotermsLocation1` |  | |  | `inco2_l` |
+| `IncotermsLocation2` |  | |  | `inco3_l` |
+| `ExternalTransportSystem` |  | |  | `tpsid` |
+| `TransportationGroup` |  | |  | `tragr` |
+| `MeansOfTransport` |  | |  | `traid` |
+| `MeansOfTransportType` |  | |  | `traty` |
+| `UnloadingPointName` |  | |  | `ablad` |
+| `ProofOfDeliveryDate` |  | |  | `podat` |
+| `ConfirmationTime` |  | |  | `potim` |
+| `FactoryCalendarByCustomer` |  | |  | `knfak` |
+| `ShippingLocationTimeZone` |  | |  | `tzonis` |
+| `ReceivingLocationTimeZone` |  | |  | `tzonrc` |
+| `IntercompanyBillingDate` |  | |  | `fkdiv` |
+| `BillingDocumentDate` |  | |  | `fkdat` |
+| `HeaderBillingBlockReason` |  | |  | `faksk` |
+| `InternalFinancialDocument` |  | |  | `lcnum` |
+| `PaymentGuaranteeProcedure` |  | |  | `abssc` |
+| `DepreciationPercentage` |  | |  | `akprz` |
+| `NextShippingDate` |  | |  | `cmngv` |
+| `CustomerCreditAccount` |  | |  | `knkli` |
+| `CentralCreditChkTechErrSts` |  | |  | `cmps_te` |
+| `ReleasedCreditAmount` |  | |  | `amtbl` |
+| `ControllingAreaCurrency` |  | |  | `cmwae` |
+| `CreditBlockReleaseDate` |  | |  | `cmfre` |
+| `SoldToParty` |  | |  | `kunag` |
+| `CustomerGroup` |  | |  | `kdgrp` |
+| `SalesDistrict` |  | |  | `bzirk` |
+| `TransactionCurrency` |  | |  | `waerk` |
+| `StatisticsCurrency` |  | |  | `stwae` |
+| `OverallIntcoBillingStatus` |  | |  | `case when fkivk is initial then ico_fkivk when fkivk = 'A' then case when ico_fkivk = 'B' or ico_fkivk = 'C' then 'B' else fkivk end when fkivk = 'B' then 'B' when fkivk = 'C' then case when ico_fkivk = 'A' or ico_fkivk = 'B' then 'B' else fkivk end else fkivk end` |
+| `OverallSDProcessStatus` |  | |  | `gbstk` |
+| `TotalBlockStatus` |  | |  | `spstg` |
+| `OverallDelivConfStatus` |  | |  | `bestk` |
+| `TransportationPlanningStatus` |  | |  | `trsta` |
+| `OverallPickingConfStatus` |  | |  | `koquk` |
+| `OverallPickingStatus` |  | |  | `kostk` |
+| `OverallPackingStatus` |  | |  | `pkstk` |
+| `OverallWarehouseActivityStatus` |  | |  | `lvstk` |
+| `DistrStatusByDecentralizedWrhs` |  | |  | `vlstk` |
+| `OverallGoodsMovementStatus` |  | |  | `wbstk` |
+| `OverallDelivReltdBillgStatus` |  | |  | `fkstk` |
+| `OverallProofOfDeliveryStatus` |  | |  | `pdstk` |
+| `HdrGeneralIncompletionStatus` |  | |  | `uvall` |
+| `HeaderDelivIncompletionStatus` |  | |  | `uvvlk` |
+| `HeaderPickgIncompletionStatus` |  | |  | `uvpik` |
+| `HeaderPackingIncompletionSts` |  | |  | `uvpak` |
+| `HdrGoodsMvtIncompletionStatus` |  | |  | `uvwak` |
+| `HeaderBillgIncompletionStatus` |  | |  | `uvfak` |
+| `OvrlItmGeneralIncompletionSts` |  | |  | `uvals` |
+| `OvrlItmPackingIncompletionSts` |  | |  | `uvpas` |
+| `OvrlItmPickingIncompletionSts` |  | |  | `uvpis` |
+| `OvrlItmDelivIncompletionSts` |  | |  | `uvvls` |
+| `OvrlItmGdsMvtIncompletionSts` |  | |  | `uvwas` |
+| `TotalCreditCheckStatus` |  | |  | `cmgst` |
+| `FinDocCreditCheckStatus` |  | |  | `cmpsi` |
+| `PaytAuthsnCreditCheckSts` |  | |  | `cmpsk` |
+| `CentralCreditCheckStatus` |  | |  | `cmps_cm` |
+| `ExprtInsurCreditCheckStatus` |  | |  | `cmpsj` |
+| `MaxDocValueCreditCheckStatus` |  | |  | `cmpsc` |
+| `PaymentTermCreditCheckStatus` |  | |  | `cmpsd` |
+| `ShippingGroupNumber` |  | |  | `rfm_psst_group` |
+| `PricingDocument` |  | |  | `knumv` |
+| `SalesOrgForIntcoBilling` |  | |  | `vkoiv` |
+| `DistrChnlForIntcoBilling` |  | |  | `vtwiv` |
+| `DivisionForIntcoBilling` |  | |  | `spaiv` |
+| `IntercompanyBillingType` |  | |  | `fkaiv` |
+| `FactoryCalendarForIntcoBilling` |  | |  | `pioiv` |
+| `IntercompanyBillingCustomer` |  | |  | `kuniv` |
+| `DeliveryDocumentCondition` |  | |  | `knump` |
+| `TotalNetAmount` |  | |  | `netwr` |
+| `ReferenceDocumentNumber` |  | |  | `xblnr` |
+| `DeletionIndicator` |  | |  | `spe_loekz` |
+| `OverallChmlCmplncStatus` |  | |  | `total_pcsta` |
+| `OverallDangerousGoodsStatus` |  | |  | `total_dgsta` |
+| `OverallSafetyDataSheetStatus` |  | |  | `total_sdssta` |
+| `OverallTrdCmplncEmbargoSts` |  | |  | `total_emcst` |
+| `OvrlTrdCmplncSnctndListChkSts` |  | |  | `total_slcst` |
+| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  | `total_lccst` |
+| `IsCorrectionDelivery` |  | |  | `klief` |
+| `ReadyForWarehouseExecStatus` |  | |  | `tm_whse_exec` |
+| `DelivAdvncdShipgRcvgRlvnce` |  | |  | `tm_adv_ship_recv` |
+| `DelivIsQtyCrrtnAdvncShipgRcvg` |  | |  | `corr_ind` |
+| `EU_DeliveryARCStatus` |  | |  | `total_arc_status` |
+| `IntcoExtActlTransfOfCtrlDteTme` |  | |  | `ext_act_date_tocd` |
+| `IntcoExtPlndTransfOfCtrlDteTme` |  | |  | `ext_plan_date_tocd` |
+| `IntcoExtTransfOfCtrlDteTmeTmzn` |  | |  | `ext_tzone_tocd` |
+| `IntcoIntActlTransfOfCtrlDteTme` |  | |  | `int_act_date_tocd` |
+| `IntcoIntPlndTransfOfCtrlDteTme` |  | |  | `int_plan_date_tocd` |
+| `IntcoIntTransfOfCtrlDteTmeTmzn` |  | |  | `int_tzone_tocd` |
+| `LogisticsExecutionScenario` |  | |  | `spe_le_scenario` |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_DeliveryDocumentType` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_DeliveryPriority` | | ✓ | | |
+| `_DeliveryBlockReason` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_ReceivingPlant` | | ✓ | | |
+| `_Warehouse` | | ✓ | | |
+| `_OrderID` | | ✓ | | |
+| `_HeaderWeightUnit` | | ✓ | | |
+| `_HeaderVolumeUnit` | | ✓ | | |
+| `_WarehouseGate` | | ✓ | | |
+| `_WarehouseStagingArea` | | ✓ | | |
+| `_MeansOfTransportRefMaterial` | | ✓ | | |
+| `_SpecialProcessingCode` | | ✓ | | |
+| `_LoadingPoint` | | ✓ | | |
+| `_HandlingUnitInStock` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_ShippingType` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_ShipmentBlockReason` | | ✓ | | |
+| `_ProposedDeliveryRoute` | | ✓ | | |
+| `_ActualDeliveryRoute` | | ✓ | | |
+| `_IncotermsVersion` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_TransportationGroup` | | ✓ | | |
+| `_MeansOfTransportType` | | ✓ | | |
+| `_HeaderBillingBlockReason` | | ✓ | | |
+| `_PaymentGuaranteeProcedure` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_StatisticsCurrency` | | ✓ | | |
+| `_OverallSDProcessStatus` | | ✓ | | |
+| `_TotalBlockStatus` | | ✓ | | |
+| `_OverallDelivConfStatus` | | ✓ | | |
+| `_TransportationPlanningSts` | | ✓ | | |
+| `_OverallPickingConfStatus` | | ✓ | | |
+| `_OverallPickingStatus` | | ✓ | | |
+| `_OverallPackingStatus` | | ✓ | | |
+| `_OvrlWarehouseActyStatus` | | ✓ | | |
+| `_DistrStatusByDectrlzdWrhs` | | ✓ | | |
+| `_OverallGoodsMovementStatus` | | ✓ | | |
+| `_OverallDelivReltdBillgStatus` | | ✓ | | |
+| `_OverallIntcoBillingStatus` | | ✓ | | |
+| `_OverallProofOfDeliveryStatus` | | ✓ | | |
+| `_HdrGeneralIncompletionStatus` | | ✓ | | |
+| `_HeaderDelivIncompletionStatus` | | ✓ | | |
+| `_HeaderPickgIncompletionStatus` | | ✓ | | |
+| `_HeaderPackingIncompletionSts` | | ✓ | | |
+| `_HdrGoodsMvtIncompletionStatus` | | ✓ | | |
+| `_HeaderBillgIncompletionStatus` | | ✓ | | |
+| `_OvrlItmGeneralIncompletionSts` | | ✓ | | |
+| `_OvrlItmPackingIncompletionSts` | | ✓ | | |
+| `_OvrlItmPickingIncompletionSts` | | ✓ | | |
+| `_OvrlItmDelivIncompletionSts` | | ✓ | | |
+| `_OvrlItmGdsMvtIncompletionSts` | | ✓ | | |
+| `_TotalCreditCheckStatus` | | ✓ | | |
+| `_FinDocCreditCheckStatus` | | ✓ | | |
+| `_PaytAuthsnCreditCheckSts` | | ✓ | | |
+| `_CentralCreditCheckStatus` | | ✓ | | |
+| `_ExprtInsurCreditCheckStatus` | | ✓ | | |
+| `_CentralCreditChkTechErrSts` | | ✓ | | |
+| `_CustomerCreditAccount` | | ✓ | | |
+| `_ControllingAreaCurrency` | | ✓ | | |
+| `_MaxDocValueCreditCheckStatus` | | ✓ | | |
+| `_PaymentTermCreditCheckStatus` | | ✓ | | |
+| `_MaterialDocumentHeader` | | ✓ | | |
+| `_MaterialDocumentHeader_2` | | ✓ | | |
+| `_PackingStatusText` | | ✓ | | |
+| `_OverallChmlCmplncStatus` | | ✓ | | |
+| `_OverallDangerousGoodsStatus` | | ✓ | | |
+| `_OvrlSftyDataSheetSts` | | ✓ | | |
+| `_OverallTrdCmplncEmbargoSts` | | ✓ | | |
+| `_OvrlTrdCmplncSnctndListChkSts` | | ✓ | | |
+| `_OvrlTrdCmplncLegalCtrlChkSts` | | ✓ | | |
+| `_ExciseTaxStatus` | | ✓ | | |
+| `_ExternalTCOTimezone` | | ✓ | | |
+| `_InternalTCOTimezone` | | ✓ | | |
+| `_WarehouseExecutionStatus` | | ✓ | | |
+| `_DelivAdvncdShipgRcvgRlvnce` | | ✓ | | |
+| `_LogisticsExecScenario` | | ✓ | | |
 
 ## Associations
 

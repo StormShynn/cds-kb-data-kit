@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CommunicationMediumType` | `CommunicationMediumType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CommunicationMediumType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

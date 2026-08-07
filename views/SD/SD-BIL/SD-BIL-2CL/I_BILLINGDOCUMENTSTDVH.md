@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `BillingDocument` |
-| `BillingDocumentType` | `BillingDocumentType` |
-| `SalesOrganization` | `SalesOrganization` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
 
 ## Source Code
 

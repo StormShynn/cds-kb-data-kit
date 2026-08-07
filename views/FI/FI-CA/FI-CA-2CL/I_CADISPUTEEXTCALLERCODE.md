@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADisputeExternalCallerCode` | `cast( left( dd07l.domvalue_l, 3 ) as calld_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADisputeExternalCallerCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as calld_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

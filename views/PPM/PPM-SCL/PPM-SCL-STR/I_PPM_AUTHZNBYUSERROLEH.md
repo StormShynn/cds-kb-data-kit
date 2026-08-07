@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReferencedObjectUUID` | `hier.object_id` |
-| key `Activity` | `RoleAuth.activity` |
-| key `UserID` | `UserRole.uname` |
-| key `AuthorizationRoleID` | `RoleAuth.role_id` |
-| `ObjectType` | `hier.object_type` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferencedObjectUUID` | ✓ | |  | `object_id` |
+| `Activity` | ✓ | |  | `activity` |
+| `UserID` | ✓ | |  | `uname` |
+| `AuthorizationRoleID` | ✓ | |  | `role_id` |
+| `ObjectType` |  | |  | `object_type` |
 
 ## Source Code
 

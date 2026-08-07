@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionSchedulingProfile` | `cast(tco43.co_prodprf as pph_prodprf preserving type)` |
-| key `Plant` | `tco43.werks` |
-| `OrderCategory` | `cast(tco43.autyp as pph_autyp preserving type)` |
-| `GRIsPostedAutomatically` | `tco43.autwe` |
-| `MfgOrderEWMSynchronousPosting` | `tco43.sync_gm_for_ewm` |
-| `_Plant` | *Association* |
-| `_OrderCategory` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionSchedulingProfile` | ✓ | |  | `cast(tco43.co_prodprf as pph_prodprf preserving type)` |
+| `Plant` | ✓ | |  | `werks` |
+| `OrderCategory` |  | |  | `cast(tco43.autyp as pph_autyp preserving type)` |
+| `GRIsPostedAutomatically` |  | |  | `autwe` |
+| `MfgOrderEWMSynchronousPosting` |  | |  | `sync_gm_for_ewm` |
+| `_Plant` | | ✓ | | |
+| `_OrderCategory` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

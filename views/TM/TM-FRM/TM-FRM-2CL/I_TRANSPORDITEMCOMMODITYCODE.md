@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdItemCommodityCodeUUID` | `cast(db_key as /scmtms/vdm_tor_itm_cc_uuid preserving type)` |
-| `TransportationOrderUUID` | `cast(root_key as /scmtms/vdm_tor_db_key preserving type)` |
-| `TransportationOrderItemUUID` | `cast(parent_key as /scmtms/vdm_tor_item_db_key preserving type)` |
-| `TranspOrdItemCommodityCode` | `ccode` |
-| `TrOrdItmCmmdtyCodeNmbrngSchm` | `cast(stcts as /scmtms/stcts preserving type )` |
-| `_TransportationOrder` | *Association* |
-| `_NumberingScheme` | *Association* |
-| `_TransportationOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdItemCommodityCodeUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_tor_itm_cc_uuid preserving type)` |
+| `TransportationOrderUUID` |  | |  | `cast(root_key as /scmtms/vdm_tor_db_key preserving type)` |
+| `TransportationOrderItemUUID` |  | |  | `cast(parent_key as /scmtms/vdm_tor_item_db_key preserving type)` |
+| `TranspOrdItemCommodityCode` |  | |  | `ccode` |
+| `TrOrdItmCmmdtyCodeNmbrngSchm` |  | |  | `cast(stcts as /scmtms/stcts preserving type )` |
+| `_TransportationOrder` | | ✓ | | |
+| `_NumberingScheme` | | ✓ | | |
+| `_TransportationOrderItem` | | ✓ | | |
 
 ## Associations
 

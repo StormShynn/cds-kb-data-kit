@@ -30,30 +30,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REArchitectureObjectUUID` | `_REArchitectureObjectData.REArchitectureObjectUUID` |
-| `InternalRealEstateNumber` | `_REObjectAddress.InternalRealEstateNumber` |
-| `AddressID` | `_REObjectAddress.AddressID` |
-| `REAddressObjType` | `_REObjectAddress.REAddressObjType` |
-| `StreetName` | `_REObjectAddress._Address.StreetName` |
-| `HouseNumber` | `_REObjectAddress._Address.HouseNumber` |
-| `CityName` | `_REObjectAddress._Address.CityName` |
-| `PostalCode` | `_REObjectAddress._Address.PostalCode` |
-| `Country` | `_REObjectAddress._Address.Country` |
-| `Region` | `_REObjectAddress._Address.Region` |
-| `SecondaryRegionName` | `_REObjectAddress._Address.SecondaryRegionName` |
-| `StreetPrefixName` | `_REObjectAddress._Address.StreetPrefixName1` |
-| `AdditionalStreetPrefixName` | `_REObjectAddress._Address.StreetPrefixName2` |
-| `StreetSuffixName` | `_REObjectAddress._Address.StreetSuffixName1` |
-| `AdditionalStreetSuffixName` | `_REObjectAddress._Address.StreetSuffixName2` |
-| `HouseNumberSupplementText` | `_REObjectAddress._Address.HouseNumberSupplementText` |
-| `District` | `cast(_REObjectAddress._Address.DistrictName as ort02_gp)` |
-| `Building` | `_REObjectAddress._Address.Building` |
-| `Floor` | `_REObjectAddress._Address.Floor` |
-| `RoomNumber` | `_REObjectAddress._Address.RoomNumber` |
-| `TertiaryRegionName` | `_REObjectAddress._Address.TertiaryRegionName` |
-| `_REArchitectureObject` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REArchitectureObjectUUID` | ✓ | | `_REArchitectureObjectData` | `REArchitectureObjectUUID` |
+| `InternalRealEstateNumber` |  | | `_REObjectAddress` | `InternalRealEstateNumber` |
+| `AddressID` |  | | `_REObjectAddress` | `AddressID` |
+| `REAddressObjType` |  | | `_REObjectAddress` | `REAddressObjType` |
+| `StreetName` |  | | `_REObjectAddress._Address` | `StreetName` |
+| `HouseNumber` |  | | `_REObjectAddress._Address` | `HouseNumber` |
+| `CityName` |  | | `_REObjectAddress._Address` | `CityName` |
+| `PostalCode` |  | | `_REObjectAddress._Address` | `PostalCode` |
+| `Country` |  | | `_REObjectAddress._Address` | `Country` |
+| `Region` |  | | `_REObjectAddress._Address` | `Region` |
+| `SecondaryRegionName` |  | | `_REObjectAddress._Address` | `SecondaryRegionName` |
+| `StreetPrefixName` |  | | `_REObjectAddress._Address` | `StreetPrefixName1` |
+| `AdditionalStreetPrefixName` |  | | `_REObjectAddress._Address` | `StreetPrefixName2` |
+| `StreetSuffixName` |  | | `_REObjectAddress._Address` | `StreetSuffixName1` |
+| `AdditionalStreetSuffixName` |  | | `_REObjectAddress._Address` | `StreetSuffixName2` |
+| `HouseNumberSupplementText` |  | | `_REObjectAddress._Address` | `HouseNumberSupplementText` |
+| `District` |  | |  | `cast(_REObjectAddress._Address.DistrictName as ort02_gp)` |
+| `Building` |  | | `_REObjectAddress._Address` | `Building` |
+| `Floor` |  | | `_REObjectAddress._Address` | `Floor` |
+| `RoomNumber` |  | | `_REObjectAddress._Address` | `RoomNumber` |
+| `TertiaryRegionName` |  | | `_REObjectAddress._Address` | `TertiaryRegionName` |
+| `_REArchitectureObject` | | ✓ | | |
 
 ## Associations
 

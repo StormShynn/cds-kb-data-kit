@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `CnsldtnSalesOrgHierarchy` | `cast(_HierarchyText.UniversalHierarchy as fincs_salesorghierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnSalesOrgHierarchyText` | `cast(_HierarchyText.UniversalHierarchyText as fincs_salesorghierarchytext preserving type )` |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `CnsldtnSalesOrgHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_salesorghierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnSalesOrgHierarchyText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_salesorghierarchytext preserving type )` |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

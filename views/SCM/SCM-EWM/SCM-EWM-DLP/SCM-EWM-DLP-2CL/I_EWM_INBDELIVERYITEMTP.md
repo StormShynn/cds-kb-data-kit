@@ -31,73 +31,73 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMInboundDelivery` | `EWMInboundDelivery` |
-| key `EWMInboundDeliveryItem` | `EWMInboundDeliveryItem` |
-| `InboundDeliveryUUID` | `InboundDeliveryUUID` |
-| `InboundDeliveryItemUUID` | `InboundDeliveryItemUUID` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `WarehouseTimeZone` | `WarehouseTimeZone` |
-| `EWMDeliveryDocumentCategory` | `EWMDeliveryDocumentCategory` |
-| `EWMInboundDeliveryItemCategory` | `EWMInboundDeliveryItemCategory` |
-| `EWMInboundDeliveryItemType` | `EWMInboundDeliveryItemType` |
-| `Product` | `Product` |
-| `ProductExternalID` | `ProductExternalID` |
-| `Batch` | `Batch` |
-| `EWMWhseReqItmBatchIsCreated` | `EWMWhseReqItmBatchIsCreated` |
-| `EWMBatchBySupplierPlanned` | `EWMBatchBySupplierPlanned` |
-| `EWMProductBySupplier` | `EWMProductBySupplier` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `ProductQuantity` | `ProductQuantity` |
-| `QuantityUnit` | `QuantityUnit` |
-| `EWMInbDelivItmQuantitySAPCode` | `EWMInbDelivItmQuantitySAPCode` |
-| `EWMInbDelivItmQuantityISOCode` | `EWMInbDelivItmQuantityISOCode` |
-| `EWMWhseReqItmBatSpltParentItem` | `EWMWhseReqItmBatSpltParentItem` |
-| `EWMWhseReqItmHierParentItem` | `EWMWhseReqItmHierParentItem` |
-| `SerialNumberRequiredLevel` | `SerialNumberRequiredLevel` |
-| `EWMWhseReqItmBBDSLEDUTCDteTme` | `EWMWhseReqItmBBDSLEDUTCDteTme` |
-| `EWMWhseReqItmProdnDteTme` | `EWMWhseReqItmProdnDteTme` |
-| `StagingAreaGroup` | `StagingAreaGroup` |
-| `StagingArea` | `StagingArea` |
-| `StagingBay` | `StagingBay` |
-| `GoodsReceiptStatus` | `GoodsReceiptStatus` |
-| `EWMGoodsReceiptAndDistrStatus` | `EWMGoodsReceiptAndDistrStatus` |
-| `PlanningPutawayStatus` | `PlanningPutawayStatus` |
-| `EWMPlndPutawayAndDistrStatus` | `EWMPlndPutawayAndDistrStatus` |
-| `PutawayStatus` | `PutawayStatus` |
-| `EWMPutawayAndDistrStatus` | `EWMPutawayAndDistrStatus` |
-| `CompletionStatus` | `CompletionStatus` |
-| `OverallBlockStatus` | `OverallBlockStatus` |
-| `FldLogsStatus` | `FldLogsStatus` |
-| `WarehouseProcessType` | `WarehouseProcessType` |
-| `GoodsMovementBin` | `GoodsMovementBin` |
-| `EWMProductionSupplyArea` | `EWMProductionSupplyArea` |
-| `EWMDelivLastChangeUTCDateTime` | `EWMDelivLastChangeUTCDateTime` |
-| `EntitledToDisposeParty` | `EntitledToDisposeParty` |
-| `EntitledToDisposePartyName` | `EntitledToDisposePartyName` |
-| `EWMStockUsage` | `EWMStockUsage` |
-| `EWMStockType` | `EWMStockType` |
-| `EWMStockOwner` | `EWMStockOwner` |
-| `EWMStockOwnerName` | `EWMStockOwnerName` |
-| `EWMGoodsRecipient` | `EWMGoodsRecipient` |
-| `EWMRecipientLocationName` | `EWMRecipientLocationName` |
-| `DeliveryItemStockTypeDetnCode` | `DeliveryItemStockTypeDetnCode` |
-| `ExternalStockDocumentNumber` | `ExternalStockDocumentNumber` |
-| `StockDocumentCategory` | `StockDocumentCategory` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `SpecialStockIdfgSalesOrder` | `SpecialStockIdfgSalesOrder` |
-| `SpecialStockIdfgSalesOrderItem` | `SpecialStockIdfgSalesOrderItem` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `ManufacturingOrder` | `ManufacturingOrder` |
-| `Reservation` | `Reservation` |
-| `MaintenanceOrderOperation` | `MaintenanceOrderOperation` |
-| `MaintenanceOrder` | `MaintenanceOrder` |
-| `InboundDelivery` | `InboundDelivery` |
-| `InboundDeliveryItem` | `InboundDeliveryItem` |
-| `_WhseInbDeliveryHead` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMInboundDelivery` | ✓ | |  |  |
+| `EWMInboundDeliveryItem` | ✓ | |  |  |
+| `InboundDeliveryUUID` |  | |  |  |
+| `InboundDeliveryItemUUID` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `WarehouseTimeZone` |  | |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  |  |
+| `EWMInboundDeliveryItemCategory` |  | |  |  |
+| `EWMInboundDeliveryItemType` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductExternalID` |  | |  |  |
+| `Batch` |  | |  |  |
+| `EWMWhseReqItmBatchIsCreated` |  | |  |  |
+| `EWMBatchBySupplierPlanned` |  | |  |  |
+| `EWMProductBySupplier` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `ProductQuantity` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `EWMInbDelivItmQuantitySAPCode` |  | |  |  |
+| `EWMInbDelivItmQuantityISOCode` |  | |  |  |
+| `EWMWhseReqItmBatSpltParentItem` |  | |  |  |
+| `EWMWhseReqItmHierParentItem` |  | |  |  |
+| `SerialNumberRequiredLevel` |  | |  |  |
+| `EWMWhseReqItmBBDSLEDUTCDteTme` |  | |  |  |
+| `EWMWhseReqItmProdnDteTme` |  | |  |  |
+| `StagingAreaGroup` |  | |  |  |
+| `StagingArea` |  | |  |  |
+| `StagingBay` |  | |  |  |
+| `GoodsReceiptStatus` |  | |  |  |
+| `EWMGoodsReceiptAndDistrStatus` |  | |  |  |
+| `PlanningPutawayStatus` |  | |  |  |
+| `EWMPlndPutawayAndDistrStatus` |  | |  |  |
+| `PutawayStatus` |  | |  |  |
+| `EWMPutawayAndDistrStatus` |  | |  |  |
+| `CompletionStatus` |  | |  |  |
+| `OverallBlockStatus` |  | |  |  |
+| `FldLogsStatus` |  | |  |  |
+| `WarehouseProcessType` |  | |  |  |
+| `GoodsMovementBin` |  | |  |  |
+| `EWMProductionSupplyArea` |  | |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  |  |
+| `EntitledToDisposeParty` |  | |  |  |
+| `EntitledToDisposePartyName` |  | |  |  |
+| `EWMStockUsage` |  | |  |  |
+| `EWMStockType` |  | |  |  |
+| `EWMStockOwner` |  | |  |  |
+| `EWMStockOwnerName` |  | |  |  |
+| `EWMGoodsRecipient` |  | |  |  |
+| `EWMRecipientLocationName` |  | |  |  |
+| `DeliveryItemStockTypeDetnCode` |  | |  |  |
+| `ExternalStockDocumentNumber` |  | |  |  |
+| `StockDocumentCategory` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `ManufacturingOrder` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |
+| `MaintenanceOrder` |  | |  |  |
+| `InboundDelivery` |  | |  |  |
+| `InboundDeliveryItem` |  | |  |  |
+| `_WhseInbDeliveryHead` | | ✓ | | |
 
 ## Source Code
 

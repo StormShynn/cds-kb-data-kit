@@ -28,44 +28,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `AccountingDocument` | `belnr` |
-| key `FiscalYear` | `cast(gjahr as fis_gjahr_no_conv preserving type)` |
-| key `AccountingDocumentItem` | `buzei` |
-| `Cheque` | `cast(boeno as chect)` |
-| `BillOfExchangeIssueDate` | `wdate` |
-| `BillOfExchangeUsageDate` | `wverd` |
-| `BillOfExchangeUsage` | `cast( wevwv as farp_wverw preserving type )` |
-| `PlannedBillOfExchangeUsage` | `wevwv` |
-| `BillOfExchangeDrawer` | `wname` |
-| `BillOfExchangeDrawerCityName` | `wort1` |
-| `BillOfExchangeDrawee` | `wbzog` |
-| `BillOfExchangeDraweeCityName` | `wort2` |
-| `BillOfExchangeDomicileText` | `wbank` |
-| `BillOfExchangeIsAccepted` | `xaktz` |
-| `Region` | `regio` |
-| `BillOfExchangeDocumentStatus` | `wstat` |
-| `BillOfExchangeIsProtested` | `wgbkz` |
-| `BillOfExchangeProtest` | `wgbkz` |
-| `BillOfExchangeIsOnDemand` | `xsiwe` |
-| `BusinessPlace` | `bupla` |
-| `BusinessSectionCode` | `secco` |
-| `BillOfExchangePortfolio` | `portf` |
-| `BillOfExchangeCntrlBankLocText` | `wlzbp` |
-| `BOEDraweeBankKey` | `bank` |
-| `BillOfExchangeDataAgingDate` | `_dataaging` |
-| `IsBusinessPurposeCompleted` | `cast( ' ' as cvp_xblck preserving type )` |
-| `AuthorizationGroup` | `cast( ' ' as brgru preserving type )` |
-| `BankAccount` | `accou` |
-| `BOESupplierForPresentation` | `vendr` |
-| `BOEReferenceProcedure` | `reference_procedure` |
-| `BOEReferenceObjectKey` | `reference_object_key` |
-| `_OperationalAcctgDocItem` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_JournalEntry` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `AccountingDocument` | ✓ | |  | `belnr` |
+| `FiscalYear` | ✓ | |  | `cast(gjahr as fis_gjahr_no_conv preserving type)` |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` |
+| `Cheque` |  | |  | `cast(boeno as chect)` |
+| `BillOfExchangeIssueDate` |  | |  | `wdate` |
+| `BillOfExchangeUsageDate` |  | |  | `wverd` |
+| `BillOfExchangeUsage` |  | |  | `cast( wevwv as farp_wverw preserving type )` |
+| `PlannedBillOfExchangeUsage` |  | |  | `wevwv` |
+| `BillOfExchangeDrawer` |  | |  | `wname` |
+| `BillOfExchangeDrawerCityName` |  | |  | `wort1` |
+| `BillOfExchangeDrawee` |  | |  | `wbzog` |
+| `BillOfExchangeDraweeCityName` |  | |  | `wort2` |
+| `BillOfExchangeDomicileText` |  | |  | `wbank` |
+| `BillOfExchangeIsAccepted` |  | |  | `xaktz` |
+| `Region` |  | |  | `regio` |
+| `BillOfExchangeDocumentStatus` |  | |  | `wstat` |
+| `BillOfExchangeIsProtested` |  | |  | `wgbkz` |
+| `BillOfExchangeProtest` |  | |  | `wgbkz` |
+| `BillOfExchangeIsOnDemand` |  | |  | `xsiwe` |
+| `BusinessPlace` |  | |  | `bupla` |
+| `BusinessSectionCode` |  | |  | `secco` |
+| `BillOfExchangePortfolio` |  | |  | `portf` |
+| `BillOfExchangeCntrlBankLocText` |  | |  | `wlzbp` |
+| `BOEDraweeBankKey` |  | |  | `bank` |
+| `BillOfExchangeDataAgingDate` |  | |  | `_dataaging` |
+| `IsBusinessPurposeCompleted` |  | |  | `cast( ' ' as cvp_xblck preserving type )` |
+| `AuthorizationGroup` |  | |  | `cast( ' ' as brgru preserving type )` |
+| `BankAccount` |  | |  | `accou` |
+| `BOESupplierForPresentation` |  | |  | `vendr` |
+| `BOEReferenceProcedure` |  | |  | `reference_procedure` |
+| `BOEReferenceObjectKey` |  | |  | `reference_object_key` |
+| `_OperationalAcctgDocItem` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_JournalEntry` | | ✓ | | |
 
 ## Associations
 

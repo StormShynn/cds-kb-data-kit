@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcurementHubSourceSystem` | `be_source_sys` |
-| `ProcurementHubSourceSystemName` | `be_source_sys_name` |
-| `ProcmtHubLogicalSystem` | `logsys` |
-| `ProcmtHubBackendBusSyst` | `be_business_system` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcurementHubSourceSystem` | ✓ | |  | `be_source_sys` |
+| `ProcurementHubSourceSystemName` |  | |  | `be_source_sys_name` |
+| `ProcmtHubLogicalSystem` |  | |  | `logsys` |
+| `ProcmtHubBackendBusSyst` |  | |  | `be_business_system` |
 
 ## Source Code
 

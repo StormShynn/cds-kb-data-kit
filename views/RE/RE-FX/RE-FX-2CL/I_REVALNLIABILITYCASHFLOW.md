@@ -27,89 +27,89 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternalRealEstateNumber` | `REValuationCashflow.InternalRealEstateNumber` |
-| key `REValuationRuleUUID` | `REValuationCashflow.REValuationRuleUUID` |
-| key `REValuationProcessUUID` | `REValuationCashflow.REValuationProcessUUID` |
-| key `REValuationCashFlowRecordUUID` | `REValuationCashflow.REValuationCashFlowRecordUUID` |
-| `RETermNumber` | `REValuationCashflow.RETermNumber` |
-| `REValuationRule` | `REValuationCashflow.REValuationRule` |
-| `RECashFlowType` | `REValuationCashflow.RECashFlowType` |
-| `CashFlowItemOrigin` | `REValuationCashflow.CashFlowItemOrigin` |
-| `REStatusObject` | `REValuationCashflow.REStatusObject` |
-| `REStatusObjectAsset` | `REValuationCashflow.REStatusObjectAsset` |
-| `REConditionUUID` | `REValuationCashflow.REConditionUUID` |
-| `ValidityStartDate` | `REValuationCashflow.ValidityStartDate` |
-| `CalculationPeriodStartDate` | `REValuationCashflow.CalculationPeriodStartDate` |
-| `CalculationPeriodEndDate` | `REValuationCashflow.CalculationPeriodEndDate` |
-| `NumberOfDays` | `REValuationCashflow.NumberOfDays` |
-| `REPositionDueDate` | `REValuationCashflow.REPositionDueDate` |
-| `PaymentDueDate` | `REValuationCashflow.PaymentDueDate` |
-| `CalculationDate` | `REValuationCashflow.CalculationDate` |
-| `REConditionCurrency` | `REValuationCashflow.REConditionCurrency` |
-| `REInterestRate` | `REValuationCashflow.REInterestRate` |
-| `REValuationIsInitialCost` | `REValuationCashflow.REValuationIsInitialCost` |
-| `REValuationIsLiabilityDiff` | `REValuationCashflow.REValuationIsLiabilityDiff` |
-| `REIsDeferralAdjustment` | `REValuationCashflow.REIsDeferralAdjustment` |
-| `REIsAssetRetirementObligation` | `REValuationCashflow.REIsAssetRetirementObligation` |
-| `REValnIsCompleteRetirement` | `REValuationCashflow.REValnIsCompleteRetirement` |
-| `REIsRetroActiveChange` | `REValuationCashflow.REIsRetroActiveChange` |
-| `REValuationIsReduction` | `REValuationCashflow.REValuationIsReduction` |
-| `REDocumentReferenceUUID` | `REValuationCashflow.REDocumentReferenceUUID` |
-| `REDocumentReference2UUID` | `REValuationCashflow.REDocumentReference2UUID` |
-| `REDocumentReference3UUID` | `REValuationCashflow.REDocumentReference3UUID` |
-| `REDocumentReference4UUID` | `REValuationCashflow.REDocumentReference4UUID` |
-| `CreatedByUser` | `REValuationCashflow.CreatedByUser` |
-| `CreationDate` | `REValuationCashflow.CreationDate` |
-| `CreationTime` | `REValuationCashflow.CreationTime` |
-| `RESourceOfCreation` | `REValuationCashflow.RESourceOfCreation` |
-| `LastChangedByUser` | `REValuationCashflow.LastChangedByUser` |
-| `LastChangeDate` | `REValuationCashflow.LastChangeDate` |
-| `LastChangeTime` | `REValuationCashflow.LastChangeTime` |
-| `RESourceOfChange` | `REValuationCashflow.RESourceOfChange` |
-| `IsReversed` | `REValuationCashflow.IsReversed` |
-| `SplitCashFlowRecordUUID` | `REValuationCashflow.SplitCashFlowRecordUUID` |
-| `RecordIsBasisForSplit` | `REValuationCashflow.RecordIsBasisForSplit` |
-| `REValuationEngine` | `REValuationCashflow.REValuationEngine` |
-| `RECashFlowPositionAmount` | `case when REValuationCashflow.RECashFlowType = '1' or REValuationCashflow.RECashFlowType = '3' then case when REValuationCashflow._REBookedFlowType.DebitCreditCode = 'H' then REValuationCashflow.RECashFlowPositionAmount else REValuationCashflow.RECashFlowPositionAmount * ( -1 ) end else case when REValuationCashflow._REBookedFlowType.DebitCreditCode = 'H' then REValuationCashflow.RECashFlowPositionAmount * ( -1 ) else REValuationCashflow.RECashFlowPositionAmount end end` |
-| `RETaxType` | `REValuationCashflow.RETaxType` |
-| `RETaxGroup` | `REValuationCashflow.RETaxGroup` |
-| `TaxJurisdiction` | `REValuationCashflow.TaxJurisdiction` |
-| `REIsConditionGrossAmount` | `REValuationCashflow.REIsConditionGrossAmount` |
-| `TaxCountry` | `REValuationCashflow.TaxCountry` |
-| `REFlowType` | `REValuationCashflow.REFlowType` |
-| `REOriginalFlowType` | `REValuationCashflow.REOriginalFlowType` |
-| `RERelshpOriglToFlowType` | `REValuationCashflow.RERelshpOriglToFlowType` |
-| `CashFlowPostingStatus` | `REValuationCashflow.CashFlowPostingStatus` |
-| `IsToBeArchived` | `REValuationCashflow.IsToBeArchived` |
-| `REOriglDueDate` | `REValuationCashflow.REOriglDueDate` |
-| `REConditionType` | `REValuationCashflow.REConditionType` |
-| `PostingDate` | `REValuationCashflow.PostingDate` |
-| `DocumentDate` | `REValuationCashflow.DocumentDate` |
-| `ExchangeRateDate` | `REValuationCashflow.ExchangeRateDate` |
-| `REReversalForUUID` | `REValuationCashflow.REReversalForUUID` |
-| `REReversalByUUID` | `REValuationCashflow.REReversalByUUID` |
-| `REFollowUpPostingUUID` | `REValuationCashflow.REFollowUpPostingUUID` |
-| `REBookedFlowType` | `REValuationCashflow.REBookedFlowType` |
-| `RERelshpBookedToFlowType` | `REValuationCashflow.RERelshpBookedToFlowType` |
-| `RETaxCalcDate` | `REValuationCashflow.RETaxCalcDate` |
-| `REModifiedDueDate` | `REValuationCashflow.REModifiedDueDate` |
-| `RECalcDueDate` | `REValuationCashflow.RECalcDueDate` |
-| `RECurrencyTranslationRule` | `REValuationCashflow.RECurrencyTranslationRule` |
-| `REIsPostInConditionCurrency` | `REValuationCashflow.REIsPostInConditionCurrency` |
-| `REPlndTranslationDate` | `REValuationCashflow.REPlndTranslationDate` |
-| `REActlTranslationDate` | `REValuationCashflow.REActlTranslationDate` |
-| `REOriglActlTranslationDate` | `REValuationCashflow.REOriglActlTranslationDate` |
-| `REIsTranslationDateFrmCashFlow` | `REValuationCashflow.REIsTranslationDateFrmCashFlow` |
-| `TaxCalculationProcedure` | `REValuationCashflow._REContract._CompanyCode._Country.TaxCalculationProcedure` |
-| `_REValuationTerm` | *Association* |
-| `_REValuationRule` | *Association* |
-| `_RECashFlowType` | *Association* |
-| `_RECurrencyTranslationRule` | *Association* |
-| `_RERelevantProcessData` | *Association* |
-| `_TaxJurisdictionCalcProcedure` | *Association* |
-| `_TaxJurisdiction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  |  |
+| `REValuationRuleUUID` | ✓ | |  |  |
+| `REValuationProcessUUID` | ✓ | |  |  |
+| `REValuationCashFlowRecordUUID` | ✓ | |  |  |
+| `RETermNumber` |  | |  |  |
+| `REValuationRule` |  | |  |  |
+| `RECashFlowType` |  | |  |  |
+| `CashFlowItemOrigin` |  | |  |  |
+| `REStatusObject` |  | |  |  |
+| `REStatusObjectAsset` |  | |  |  |
+| `REConditionUUID` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `CalculationPeriodStartDate` |  | |  |  |
+| `CalculationPeriodEndDate` |  | |  |  |
+| `NumberOfDays` |  | |  |  |
+| `REPositionDueDate` |  | |  |  |
+| `PaymentDueDate` |  | |  |  |
+| `CalculationDate` |  | |  |  |
+| `REConditionCurrency` |  | |  |  |
+| `REInterestRate` |  | |  |  |
+| `REValuationIsInitialCost` |  | |  |  |
+| `REValuationIsLiabilityDiff` |  | |  |  |
+| `REIsDeferralAdjustment` |  | |  |  |
+| `REIsAssetRetirementObligation` |  | |  |  |
+| `REValnIsCompleteRetirement` |  | |  |  |
+| `REIsRetroActiveChange` |  | |  |  |
+| `REValuationIsReduction` |  | |  |  |
+| `REDocumentReferenceUUID` |  | |  |  |
+| `REDocumentReference2UUID` |  | |  |  |
+| `REDocumentReference3UUID` |  | |  |  |
+| `REDocumentReference4UUID` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `RESourceOfCreation` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `RESourceOfChange` |  | |  |  |
+| `IsReversed` |  | |  |  |
+| `SplitCashFlowRecordUUID` |  | |  |  |
+| `RecordIsBasisForSplit` |  | |  |  |
+| `REValuationEngine` |  | |  |  |
+| `RECashFlowPositionAmount` |  | |  | `case when REValuationCashflow.RECashFlowType = '1' or REValuationCashflow.RECashFlowType = '3' then case when REValuationCashflow._REBookedFlowType.DebitCreditCode = 'H' then REValuationCashflow.RECashFlowPositionAmount else REValuationCashflow.RECashFlowPositionAmount * ( -1 ) end else case when REValuationCashflow._REBookedFlowType.DebitCreditCode = 'H' then REValuationCashflow.RECashFlowPositionAmount * ( -1 ) else REValuationCashflow.RECashFlowPositionAmount end end` |
+| `RETaxType` |  | |  |  |
+| `RETaxGroup` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `REIsConditionGrossAmount` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `REFlowType` |  | |  |  |
+| `REOriginalFlowType` |  | |  |  |
+| `RERelshpOriglToFlowType` |  | |  |  |
+| `CashFlowPostingStatus` |  | |  |  |
+| `IsToBeArchived` |  | |  |  |
+| `REOriglDueDate` |  | |  |  |
+| `REConditionType` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `REReversalForUUID` |  | |  |  |
+| `REReversalByUUID` |  | |  |  |
+| `REFollowUpPostingUUID` |  | |  |  |
+| `REBookedFlowType` |  | |  |  |
+| `RERelshpBookedToFlowType` |  | |  |  |
+| `RETaxCalcDate` |  | |  |  |
+| `REModifiedDueDate` |  | |  |  |
+| `RECalcDueDate` |  | |  |  |
+| `RECurrencyTranslationRule` |  | |  |  |
+| `REIsPostInConditionCurrency` |  | |  |  |
+| `REPlndTranslationDate` |  | |  |  |
+| `REActlTranslationDate` |  | |  |  |
+| `REOriglActlTranslationDate` |  | |  |  |
+| `REIsTranslationDateFrmCashFlow` |  | |  |  |
+| `TaxCalculationProcedure` |  | |  |  |
+| `_REValuationTerm` | | ✓ | | |
+| `_REValuationRule` | | ✓ | | |
+| `_RECashFlowType` | | ✓ | | |
+| `_RECurrencyTranslationRule` | | ✓ | | |
+| `_RERelevantProcessData` | | ✓ | | |
+| `_TaxJurisdictionCalcProcedure` | | ✓ | | |
+| `_TaxJurisdiction` | | ✓ | | |
 
 ## Associations
 

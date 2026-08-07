@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| key `SupplierInvoice` | `SupplierInvoice` |
-| key `FiscalYear` | `FiscalYear` |
-| key `SupplierInvoiceItem` | `SupplierInvoiceItem` |
-| `CompanyCode` | `_SupCsgnmtPplineWthdrwlAPI01.CompanyCode` |
-| `Plant` | `_SupCsgnmtPplineWthdrwlAPI01.Plant` |
-| `_SuplrCsgnmtPplineWthdrwlDEX` | *Association* |
-| `_SupplierInvoiceDEX` | *Association* |
-| `_SupplierInvoiceItemDEX` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |
+| `CompanyCode` |  | | `_SupCsgnmtPplineWthdrwlAPI01` | `CompanyCode` |
+| `Plant` |  | | `_SupCsgnmtPplineWthdrwlAPI01` | `Plant` |
+| `_SuplrCsgnmtPplineWthdrwlDEX` | | ✓ | | |
+| `_SupplierInvoiceDEX` | | ✓ | | |
+| `_SupplierInvoiceItemDEX` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

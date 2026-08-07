@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast(itclg as fincs_conschartofaccounts preserving type )` |
-| key `Language` | `langu` |
-| `ConsolidationChartOfAcctsText` | `cast(txt as fincs_description_text_30 preserving type )` |
-| `_Language` | *Association* |
-| `_ChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(itclg as fincs_conschartofaccounts preserving type )` |
+| `Language` | ✓ | |  | `langu` |
+| `ConsolidationChartOfAcctsText` |  | |  | `cast(txt as fincs_description_text_30 preserving type )` |
+| `_Language` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

@@ -28,133 +28,133 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `ExtSourceSystem` | `ExtSourceSystem` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `PurchasingDocumentDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `RequisitionerName` | `RequisitionerName` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Material` | `Material` |
-| `MaterialType` | `MaterialType` |
-| `SupplierMaterialNumber` | `SupplierMaterialNumber` |
-| `SupplierSubrange` | `SupplierSubrange` |
-| `ManufacturerPartNmbr` | `ManufacturerPartNmbr` |
-| `Manufacturer` | `Manufacturer` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `PurchaseOrderItemText` | `PurchaseOrderItemText` |
-| `ProductType` | `ProductType` |
-| `ArticleCategory` | `ArticleCategory` |
-| `CrossPlantConfigurableProduct` | `CrossPlantConfigurableProduct` |
-| `BaseUnit` | `BaseUnit` |
-| `PurchaseOrderItemCategory` | `PurchaseOrderItemCategory` |
-| `CommodityCode` | `CommodityCode` |
-| `MaterialFreightGroup` | `MaterialFreightGroup` |
-| `ItemVolumeUnit` | `ItemVolumeUnit` |
-| `ItemWeightUnit` | `ItemWeightUnit` |
-| `InternationalArticleNumber` | `InternationalArticleNumber` |
-| `PlndOrderReplnmtElmntType` | `PlndOrderReplnmtElmntType` |
-| `ProductPurchasePointsQtyUnit` | `ProductPurchasePointsQtyUnit` |
-| `CompanyCode` | `CompanyCode` |
-| `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `ManualDeliveryAddressID` | `ManualDeliveryAddressID` |
-| `ReferenceDeliveryAddressID` | `ReferenceDeliveryAddressID` |
-| `IsCompletelyDelivered` | `IsCompletelyDelivered` |
-| `UnderdelivTolrtdLmtRatioInPct` | `UnderdelivTolrtdLmtRatioInPct` |
-| `PlannedDeliveryDurationInDays` | `PlannedDeliveryDurationInDays` |
-| `GoodsReceiptDurationInDays` | `GoodsReceiptDurationInDays` |
-| `PartialDeliveryIsAllowed` | `PartialDeliveryIsAllowed` |
-| `GoodsReceiptLatestCreationDate` | `GoodsReceiptLatestCreationDate` |
-| `OverdelivTolrtdLmtRatioInPct` | `OverdelivTolrtdLmtRatioInPct` |
-| `Customer` | `Customer` |
-| `Subcontractor` | `Subcontractor` |
-| `SupplierIsSubcontractor` | `SupplierIsSubcontractor` |
-| `ServicePerformer` | `ServicePerformer` |
-| `ProductPurchasePointsQty` | `ProductPurchasePointsQty` |
-| `PurchaseOrderQuantityUnit` | `PurchaseOrderQuantityUnit` |
-| `OrderItemQtyToBaseQtyNmrtr` | `OrderItemQtyToBaseQtyNmrtr` |
-| `OrderItemQtyToBaseQtyDnmntr` | `OrderItemQtyToBaseQtyDnmntr` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `IsFinallyInvoiced` | `IsFinallyInvoiced` |
-| `GoodsReceiptIsExpected` | `GoodsReceiptIsExpected` |
-| `InvoiceIsExpected` | `InvoiceIsExpected` |
-| `InvoiceIsGoodsReceiptBased` | `InvoiceIsGoodsReceiptBased` |
-| `EvaldRcptSettlmtIsAllowed` | `EvaldRcptSettlmtIsAllowed` |
-| `UnlimitedOverdeliveryIsAllowed` | `UnlimitedOverdeliveryIsAllowed` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `RequirementTracking` | `RequirementTracking` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `PurchasingParentItem` | `PurchasingParentItem` |
-| `OrderPriceUnit` | `OrderPriceUnit` |
-| `PriceIsToBePrinted` | `PriceIsToBePrinted` |
-| `PartialInvoiceDistribution` | `PartialInvoiceDistribution` |
-| `MultipleAcctAssgmtDistribution` | `MultipleAcctAssgmtDistribution` |
-| `PricingDateControl` | `PricingDateControl` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `ProfitCenter` | `ProfitCenter` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `IsStatisticalItem` | `IsStatisticalItem` |
-| `IsReturnsItem` | `IsReturnsItem` |
-| `PurchasingOrderReason` | `PurchasingOrderReason` |
-| `IntrastatServiceCode` | `IntrastatServiceCode` |
-| `DiscountInKindEligibility` | `DiscountInKindEligibility` |
-| `PurgItemIsBlockedForDelivery` | `PurgItemIsBlockedForDelivery` |
-| `SupplierConfirmationControlKey` | `SupplierConfirmationControlKey` |
-| `PriorSupplier` | `PriorSupplier` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `NetAmount` | `NetAmount` |
-| `GrossAmount` | `GrossAmount` |
-| `EffectiveAmount` | `EffectiveAmount` |
-| `Subtotal1Amount` | `Subtotal1Amount` |
-| `Subtotal2Amount` | `Subtotal2Amount` |
-| `Subtotal3Amount` | `Subtotal3Amount` |
-| `Subtotal4Amount` | `Subtotal4Amount` |
-| `Subtotal5Amount` | `Subtotal5Amount` |
-| `Subtotal6Amount` | `Subtotal6Amount` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `OrderQuantity` | `OrderQuantity` |
-| `ItemVolume` | `ItemVolume` |
-| `ItemGrossWeight` | `ItemGrossWeight` |
-| `ItemNetWeight` | `ItemNetWeight` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
-| `GoodsReceiptIsNonValuated` | `GoodsReceiptIsNonValuated` |
-| `TaxCode` | `TaxCode` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `ShippingInstruction` | `ShippingInstruction` |
-| `NonDeductibleInputTaxAmount` | `NonDeductibleInputTaxAmount` |
-| `StockType` | `StockType` |
-| `ValuationType` | `ValuationType` |
-| `ValuationCategory` | `ValuationCategory` |
-| `ItemIsRejectedBySupplier` | `ItemIsRejectedBySupplier` |
-| `PurgDocPriceDate` | `PurgDocPriceDate` |
-| `PurgDocReleaseOrderQuantity` | `PurgDocReleaseOrderQuantity` |
-| `EarmarkedFunds` | `EarmarkedFunds` |
-| `EarmarkedFundsItem` | `EarmarkedFundsItem` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `DeliveryDocumentType` | `DeliveryDocumentType` |
-| `IssuingStorageLocation` | `IssuingStorageLocation` |
-| `AllocationTable` | `AllocationTable` |
-| `AllocationTableItem` | `AllocationTableItem` |
-| `RetailPromotion` | `RetailPromotion` |
-| `DownPaymentType` | `DownPaymentType` |
-| `DownPaymentPercentageOfTotAmt` | `DownPaymentPercentageOfTotAmt` |
-| `DownPaymentAmount` | `DownPaymentAmount` |
-| `DownPaymentDueDate` | `DownPaymentDueDate` |
-| `ExpectedOverallLimitAmount` | `ExpectedOverallLimitAmount` |
-| `OverallLimitAmount` | `OverallLimitAmount` |
-| `RequirementSegment` | `RequirementSegment` |
-| `_ProcmtHubPurchaseOrderHeader` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `ExtSourceSystem` | ✓ | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `RequisitionerName` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialType` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `SupplierSubrange` |  | |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `PurchaseOrderItemText` |  | |  |  |
+| `ProductType` |  | |  |  |
+| `ArticleCategory` |  | |  |  |
+| `CrossPlantConfigurableProduct` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `PurchaseOrderItemCategory` |  | |  |  |
+| `CommodityCode` |  | |  |  |
+| `MaterialFreightGroup` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `InternationalArticleNumber` |  | |  |  |
+| `PlndOrderReplnmtElmntType` |  | |  |  |
+| `ProductPurchasePointsQtyUnit` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |
+| `GoodsReceiptDurationInDays` |  | |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |
+| `GoodsReceiptLatestCreationDate` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Subcontractor` |  | |  |  |
+| `SupplierIsSubcontractor` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `ProductPurchasePointsQty` |  | |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `IsFinallyInvoiced` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `PurchasingParentItem` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `PriceIsToBePrinted` |  | |  |  |
+| `PartialInvoiceDistribution` |  | |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |
+| `PricingDateControl` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `IsStatisticalItem` |  | |  |  |
+| `IsReturnsItem` |  | |  |  |
+| `PurchasingOrderReason` |  | |  |  |
+| `IntrastatServiceCode` |  | |  |  |
+| `DiscountInKindEligibility` |  | |  |  |
+| `PurgItemIsBlockedForDelivery` |  | |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |
+| `PriorSupplier` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `GrossAmount` |  | |  |  |
+| `EffectiveAmount` |  | |  |  |
+| `Subtotal1Amount` |  | |  |  |
+| `Subtotal2Amount` |  | |  |  |
+| `Subtotal3Amount` |  | |  |  |
+| `Subtotal4Amount` |  | |  |  |
+| `Subtotal5Amount` |  | |  |  |
+| `Subtotal6Amount` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `OrderQuantity` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `ShippingInstruction` |  | |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |
+| `StockType` |  | |  |  |
+| `ValuationType` |  | |  |  |
+| `ValuationCategory` |  | |  |  |
+| `ItemIsRejectedBySupplier` |  | |  |  |
+| `PurgDocPriceDate` |  | |  |  |
+| `PurgDocReleaseOrderQuantity` |  | |  |  |
+| `EarmarkedFunds` |  | |  |  |
+| `EarmarkedFundsItem` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `DeliveryDocumentType` |  | |  |  |
+| `IssuingStorageLocation` |  | |  |  |
+| `AllocationTable` |  | |  |  |
+| `AllocationTableItem` |  | |  |  |
+| `RetailPromotion` |  | |  |  |
+| `DownPaymentType` |  | |  |  |
+| `DownPaymentPercentageOfTotAmt` |  | |  |  |
+| `DownPaymentAmount` |  | |  |  |
+| `DownPaymentDueDate` |  | |  |  |
+| `ExpectedOverallLimitAmount` |  | |  |  |
+| `OverallLimitAmount` |  | |  |  |
+| `RequirementSegment` |  | |  |  |
+| `_ProcmtHubPurchaseOrderHeader` | | ✓ | | |
 
 ## Associations
 

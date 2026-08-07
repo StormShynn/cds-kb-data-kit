@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessObjectType` | `subobj_category` |
-| key `Language` | `langu` |
-| `BusinessObjectTypeName` | `s_description_20` |
-| `BusinessObjectTypeDescription` | `s_description` |
-| `_Language` | *Association* |
-| `_BusinessObjectType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessObjectType` | ✓ | |  | `subobj_category` |
+| `Language` | ✓ | |  | `langu` |
+| `BusinessObjectTypeName` |  | |  | `s_description_20` |
+| `BusinessObjectTypeDescription` |  | |  | `s_description` |
+| `_Language` | | ✓ | | |
+| `_BusinessObjectType` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryGeneralValuationClass` | `cast(com_val_class as ftr_gen_fin_instr_val_class)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryGeneralValuationClass` | ✓ | |  | `cast(com_val_class as ftr_gen_fin_instr_val_class)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `Country` | `country` |
-| key `RETaxType` | `taxtype` |
-| `RETaxTypeName` | `xmtaxtype` |
-| `_RETaxType` | *Association* |
-| `_Country` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `Country` | ✓ | |  | `country` |
+| `RETaxType` | ✓ | |  | `taxtype` |
+| `RETaxTypeName` |  | |  | `xmtaxtype` |
+| `_RETaxType` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

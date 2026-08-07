@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAClearingInformation` | `cast( left( dd07t.domvalue_l, 1 ) as aginf_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAClearingInformationText` | `cast( ddtext as aginf_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAClearingInformation` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as aginf_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAClearingInformationText` |  | |  | `cast( ddtext as aginf_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

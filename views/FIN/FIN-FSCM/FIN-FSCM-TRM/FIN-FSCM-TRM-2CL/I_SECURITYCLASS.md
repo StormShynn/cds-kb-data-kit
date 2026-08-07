@@ -28,76 +28,76 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SecurityClass` | `SecurityClass` |
-| `FinancialInstrProductCategory` | `FinancialInstrProductCategory` |
-| `FinancialInstrumentProductType` | `FinancialInstrumentProductType` |
-| `SecurityClassName` | `SecurityClassName` |
-| `SecurityClassDescription` | `SecurityClassDescription` |
-| `Issuer` | `Issuer` |
-| `SecurityClassIsListed` | `SecurityClassIsListed` |
-| `SecurityClassQuotation` | `SecurityClassQuotation` |
-| `IssueCurrency` | `IssueCurrency` |
-| `SecurityClassIsPledgeable` | `SecurityClassIsPledgeable` |
-| `ScrtyClassGenClassification` | `ScrtyClassGenClassification` |
-| `SecurityClassTransferType` | `SecurityClassTransferType` |
-| `SecurityClassStatus` | `SecurityClassStatus` |
-| `SecurityClassIssuePriceValue` | `SecurityClassIssuePriceValue` |
-| `IssueRateInPercent` | `IssueRateInPercent` |
-| `ScrtyClMinimalNumberOfUnits` | `ScrtyClMinimalNumberOfUnits` |
-| `SecurityClassCreatedByUser` | `SecurityClassCreatedByUser` |
-| `SecurityClassCreationDate` | `SecurityClassCreationDate` |
-| `SecurityClassCreationTime` | `SecurityClassCreationTime` |
-| `SecurityClassCreationSource` | `SecurityClassCreationSource` |
-| `SecurityClassLastChangedByUser` | `SecurityClassLastChangedByUser` |
-| `SecurityClassLastChangedDate` | `SecurityClassLastChangedDate` |
-| `SecurityClassLastChangedTime` | `SecurityClassLastChangedTime` |
-| `SecurityClassLastChangedSource` | `SecurityClassLastChangedSource` |
-| `SecurityClassIssueStartDate` | `SecurityClassIssueStartDate` |
-| `SecurityClassNomPerStockValue` | `SecurityClassNomPerStockValue` |
-| `SecurityClassStockCategory` | `SecurityClassStockCategory` |
-| `SecurityClassStockForm` | `SecurityClassStockForm` |
-| `SecurityClassFundType` | `SecurityClassFundType` |
-| `SecurityClassFundCategory` | `SecurityClassFundCategory` |
-| `SecurityClassFundVolumeAmount` | `SecurityClassFundVolumeAmount` |
-| `ScrtyClIssuePremiumInPercent` | `ScrtyClIssuePremiumInPercent` |
-| `SecurityClassTaxClassification` | `SecurityClassTaxClassification` |
-| `BondClassification` | `BondClassification` |
-| `BondCertificateNominalAmount` | `BondCertificateNominalAmount` |
-| `BondCertPerTrdgUnitNominalAmt` | `BondCertPerTrdgUnitNominalAmt` |
-| `SecurityClassFinalDueDate` | `SecurityClassFinalDueDate` |
-| `ScrtyClCalcPeriodStartDate` | `ScrtyClCalcPeriodStartDate` |
-| `ScrtyClCompatibleTermEndDate` | `ScrtyClCompatibleTermEndDate` |
-| `ScrtyClExpectedTermEndDate` | `ScrtyClExpectedTermEndDate` |
-| `ScrtyClIsCalcdWthNomPerTrdgUnt` | `ScrtyClIsCalcdWthNomPerTrdgUnt` |
-| `ScrtyClTrancheClassification` | `ScrtyClTrancheClassification` |
-| `SecurityClassAssetPool` | `SecurityClassAssetPool` |
-| `IntrstCalcFnlDuDteIsIncld` | `IntrstCalcFnlDuDteIsIncld` |
-| `SecurityClassShareholdingType` | `SecurityClassShareholdingType` |
-| `ScrtyClShareholdingStructure` | `ScrtyClShareholdingStructure` |
-| `_SecurityClassBond` | *Association* |
-| `_SecurityClassStock` | *Association* |
-| `_SecurityClassLstdDerivative` | *Association* |
-| `_SecurityClassIssuer` | *Association* |
-| `_SecurityClassQuotation` | *Association* |
-| `_SecurityClassTransferType` | *Association* |
-| `_SecurityClassGenClassfctn` | *Association* |
-| `_FinancialInstrProductType` | *Association* |
-| `_FinancialInstrProdCat` | *Association* |
-| `_SecurityClRgtyRptgHeader` | *Association* |
-| `_SecurityClassConditionHeader` | *Association* |
-| `_SecurityClassPayInPriceRate` | *Association* |
-| `_SecurityClassCondition` | *Association* |
-| `_SecuritySwap` | *Association* |
-| `_SecurityClassSecondaryIndex` | *Association* |
-| `_TreasurySPPISecurity` | *Association* |
-| `_SecurityClassRating` | *Association* |
-| `_SecurityClassExchange` | *Association* |
-| `_SecurityClassAssetPool` | *Association* |
-| `_InstlmntBondPrtnAssignment` | *Association* |
-| `_BondRedemptionSchedule` | *Association* |
-| `_ScrtyClSubscrpnPeriod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SecurityClass` | ✓ | |  |  |
+| `FinancialInstrProductCategory` |  | |  |  |
+| `FinancialInstrumentProductType` |  | |  |  |
+| `SecurityClassName` |  | |  |  |
+| `SecurityClassDescription` |  | |  |  |
+| `Issuer` |  | |  |  |
+| `SecurityClassIsListed` |  | |  |  |
+| `SecurityClassQuotation` |  | |  |  |
+| `IssueCurrency` |  | |  |  |
+| `SecurityClassIsPledgeable` |  | |  |  |
+| `ScrtyClassGenClassification` |  | |  |  |
+| `SecurityClassTransferType` |  | |  |  |
+| `SecurityClassStatus` |  | |  |  |
+| `SecurityClassIssuePriceValue` |  | |  |  |
+| `IssueRateInPercent` |  | |  |  |
+| `ScrtyClMinimalNumberOfUnits` |  | |  |  |
+| `SecurityClassCreatedByUser` |  | |  |  |
+| `SecurityClassCreationDate` |  | |  |  |
+| `SecurityClassCreationTime` |  | |  |  |
+| `SecurityClassCreationSource` |  | |  |  |
+| `SecurityClassLastChangedByUser` |  | |  |  |
+| `SecurityClassLastChangedDate` |  | |  |  |
+| `SecurityClassLastChangedTime` |  | |  |  |
+| `SecurityClassLastChangedSource` |  | |  |  |
+| `SecurityClassIssueStartDate` |  | |  |  |
+| `SecurityClassNomPerStockValue` |  | |  |  |
+| `SecurityClassStockCategory` |  | |  |  |
+| `SecurityClassStockForm` |  | |  |  |
+| `SecurityClassFundType` |  | |  |  |
+| `SecurityClassFundCategory` |  | |  |  |
+| `SecurityClassFundVolumeAmount` |  | |  |  |
+| `ScrtyClIssuePremiumInPercent` |  | |  |  |
+| `SecurityClassTaxClassification` |  | |  |  |
+| `BondClassification` |  | |  |  |
+| `BondCertificateNominalAmount` |  | |  |  |
+| `BondCertPerTrdgUnitNominalAmt` |  | |  |  |
+| `SecurityClassFinalDueDate` |  | |  |  |
+| `ScrtyClCalcPeriodStartDate` |  | |  |  |
+| `ScrtyClCompatibleTermEndDate` |  | |  |  |
+| `ScrtyClExpectedTermEndDate` |  | |  |  |
+| `ScrtyClIsCalcdWthNomPerTrdgUnt` |  | |  |  |
+| `ScrtyClTrancheClassification` |  | |  |  |
+| `SecurityClassAssetPool` |  | |  |  |
+| `IntrstCalcFnlDuDteIsIncld` |  | |  |  |
+| `SecurityClassShareholdingType` |  | |  |  |
+| `ScrtyClShareholdingStructure` |  | |  |  |
+| `_SecurityClassBond` | | ✓ | | |
+| `_SecurityClassStock` | | ✓ | | |
+| `_SecurityClassLstdDerivative` | | ✓ | | |
+| `_SecurityClassIssuer` | | ✓ | | |
+| `_SecurityClassQuotation` | | ✓ | | |
+| `_SecurityClassTransferType` | | ✓ | | |
+| `_SecurityClassGenClassfctn` | | ✓ | | |
+| `_FinancialInstrProductType` | | ✓ | | |
+| `_FinancialInstrProdCat` | | ✓ | | |
+| `_SecurityClRgtyRptgHeader` | | ✓ | | |
+| `_SecurityClassConditionHeader` | | ✓ | | |
+| `_SecurityClassPayInPriceRate` | | ✓ | | |
+| `_SecurityClassCondition` | | ✓ | | |
+| `_SecuritySwap` | | ✓ | | |
+| `_SecurityClassSecondaryIndex` | | ✓ | | |
+| `_TreasurySPPISecurity` | | ✓ | | |
+| `_SecurityClassRating` | | ✓ | | |
+| `_SecurityClassExchange` | | ✓ | | |
+| `_SecurityClassAssetPool` | | ✓ | | |
+| `_InstlmntBondPrtnAssignment` | | ✓ | | |
+| `_BondRedemptionSchedule` | | ✓ | | |
+| `_ScrtyClSubscrpnPeriod` | | ✓ | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast(bukrs as fis_bukrs preserving type)` |
-| key `DunningArea` | `cast(maber as farp_maber preserving type)` |
-| key `Language` | `spras` |
-| `DunningAreaName` | `cast(text1 as farp_text1_047n preserving type)` |
-| `_CompanyCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` |
+| `DunningArea` | ✓ | |  | `cast(maber as farp_maber preserving type)` |
+| `Language` | ✓ | |  | `spras` |
+| `DunningAreaName` |  | |  | `cast(text1 as farp_text1_047n preserving type)` |
+| `_CompanyCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

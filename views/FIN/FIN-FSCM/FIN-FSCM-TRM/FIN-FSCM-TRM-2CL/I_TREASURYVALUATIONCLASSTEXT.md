@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryValuationArea` | `TreasuryValuationClassText.valuation_area` |
-| key `TreasuryValuationClass` | `cast(TreasuryValuationClassText.valuation_class as ftr_gen_valuation_class preserving type)` |
-| key `Language` | `TreasuryValuationClassText.spras` |
-| `TreasuryValuationClassName` | `cast(TreasuryValuationClassText.val_class_name as ftr_gen_valuation_class_name preserving type )` |
-| `_TreasuryValuationClass` | *Association* |
-| `_Language` | *Association* |
-| `_TreasuryValuationArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryValuationArea` | ✓ | |  | `valuation_area` |
+| `TreasuryValuationClass` | ✓ | |  | `cast(TreasuryValuationClassText.valuation_class as ftr_gen_valuation_class preserving type)` |
+| `Language` | ✓ | |  | `spras` |
+| `TreasuryValuationClassName` |  | |  | `cast(TreasuryValuationClassText.val_class_name as ftr_gen_valuation_class_name preserving type )` |
+| `_TreasuryValuationClass` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_TreasuryValuationArea` | | ✓ | | |
 
 ## Associations
 

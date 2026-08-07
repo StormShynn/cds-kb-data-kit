@@ -29,117 +29,117 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceNotification` | `MaintenanceNotif.MaintenanceNotification` |
-| `MaintNotifInternalID` | `MaintenanceNotif.MaintNotifInternalID` |
-| `NotificationText` | `MaintenanceNotif.NotificationText` |
-| `MaintPriority` | `MaintenanceNotif.MaintPriority` |
-| `MaintPriorityType` | `MaintenanceNotif.MaintPriorityType` |
-| `NotificationType` | `MaintenanceNotif.NotificationType` |
-| `NotifProcessingPhase` | `MaintenanceNotif.NotifProcessingPhase` |
-| `CreatedByUser` | `MaintenanceNotif.CreatedByUser` |
-| `LastChangedByUser` | `MaintenanceNotif.LastChangedByUser` |
-| `CreationDate` | `MaintenanceNotif.CreationDate` |
-| `LastChangeTime` | `MaintenanceNotif.LastChangeTime` |
-| `LastChangeDate` | `MaintenanceNotif.LastChangeDate` |
-| `LastChangeDateTime` | `MaintenanceNotif.LastChangeDateTime` |
-| `CreationTime` | `MaintenanceNotif.CreationTime` |
-| `CreationDateTime` | `MaintenanceNotif.CreationDateTime` |
-| `ReportedByUser` | `MaintenanceNotif.ReportedByUser` |
-| `ReporterFullName` | `MaintenanceNotif.ReporterFullName` |
-| `PersonResponsible` | `MaintenanceNotif.PersonResponsible` |
-| `MalfunctionEffect` | `MaintenanceNotif.MalfunctionEffect` |
-| `MalfunctionStartDate` | `MaintenanceNotif.MalfunctionStartDate` |
-| `MalfunctionStartTime` | `MaintenanceNotif.MalfunctionStartTime` |
-| `MalfunctionStartDateTime` | `MaintenanceNotif.MalfunctionStartDateTime` |
-| `MalfunctionEndDate` | `MaintenanceNotif.MalfunctionEndDate` |
-| `MalfunctionEndTime` | `MaintenanceNotif.MalfunctionEndTime` |
-| `MalfunctionEndDateTime` | `MaintenanceNotif.MalfunctionEndDateTime` |
-| `MaintNotificationCatalog` | `MaintenanceNotif.MaintNotificationCatalog` |
-| `MaintNotificationCode` | `MaintenanceNotif.MaintNotificationCode` |
-| `MaintNotificationCodeGroup` | `MaintenanceNotif.MaintNotificationCodeGroup` |
-| `CatalogProfile` | `MaintenanceNotif.CatalogProfile` |
-| `NotificationCreationDate` | `MaintenanceNotif.NotificationCreationDate` |
-| `NotificationCreationTime` | `MaintenanceNotif.NotificationCreationTime` |
-| `NotificationCreationDateTime` | `MaintenanceNotif.NotificationCreationDateTime` |
-| `NotificationTimeZone` | `MaintenanceNotif.NotificationTimeZone` |
-| `RequiredStartDate` | `MaintenanceNotif.RequiredStartDate` |
-| `RequiredStartTime` | `MaintenanceNotif.RequiredStartTime` |
-| `MaintNotifRqdStartDateTime` | `MaintenanceNotif.MaintNotifRqdStartDateTime` |
-| `RequiredEndDate` | `MaintenanceNotif.RequiredEndDate` |
-| `RequiredEndTime` | `MaintenanceNotif.RequiredEndTime` |
-| `MaintNotifRqdEndDateTime` | `MaintenanceNotif.MaintNotifRqdEndDateTime` |
-| `LatestAcceptableCompletionDate` | `MaintenanceNotif.LatestAcceptableCompletionDate` |
-| `MaintenanceObjectIsDown` | `MaintenanceNotif.MaintenanceObjectIsDown` |
-| `TextObjectCategory` | `MaintenanceNotif.TextObjectCategory` |
-| `TextObjectType` | `MaintenanceNotif.TextObjectType` |
-| `TechnicalObject` | `MaintenanceNotif.TechnicalObject` |
-| `TechObjIsEquipOrFuncnlLoc` | `MaintenanceNotif.TechObjIsEquipOrFuncnlLoc` |
-| `TechnicalObjectLabel` | `MaintenanceNotif.TechnicalObjectLabel` |
-| `MaintenancePlanningPlant` | `MaintenanceNotif.MaintenancePlanningPlant` |
-| `MaintenancePlannerGroup` | `MaintenanceNotif.MaintenancePlannerGroup` |
-| `AssetManufacturerName` | `MaintenanceNotif.AssetManufacturerName` |
-| `PlantSection` | `MaintenanceNotif.PlantSection` |
-| `ABCIndicator` | `MaintenanceNotif.ABCIndicator` |
-| `SuperiorTechnicalObjectLabel` | `MaintenanceNotif.SuperiorTechnicalObjectLabel` |
-| `ManufacturerPartTypeName` | `MaintenanceNotif.ManufacturerPartTypeName` |
-| `FunctionalLocation` | `MaintenanceNotif.FunctionalLocation` |
-| `FunctionalLocationLabelName` | `MaintenanceNotif.FunctionalLocationLabelName` |
-| `AssetLocation` | `MaintenanceNotif.AssetLocation` |
-| `LocationName` | `MaintenanceNotif.LocationName` |
-| `TechnicalObjectCategory` | `MaintenanceNotif.TechnicalObjectCategory` |
-| `TechnicalObjectType` | `MaintenanceNotif.TechnicalObjectType` |
-| `MaintenancePlant` | `MaintenanceNotif.MaintenancePlant` |
-| `WorkCenterInternalID` | `MaintenanceNotif.WorkCenterInternalID` |
-| `MaintenanceWorkCenterPlant` | `MaintenanceNotif.MaintenanceWorkCenterPlant` |
-| `MainWorkCenter` | `MaintenanceNotif.MainWorkCenter` |
-| `MaintenanceWorkCenter` | `MaintenanceNotif.MaintenanceWorkCenter` |
-| `WorkCenterTypeCode` | `MaintenanceNotif.WorkCenterTypeCode` |
-| `MainWorkCenterPlant` | `MaintenanceNotif.MainWorkCenterPlant` |
-| `LocationDescription` | `MaintenanceNotif.LocationDescription` |
-| `NmbrOfOpenMaintNotifications` | `MaintenanceNotif.NmbrOfOpenMaintNotifications` |
-| `NumberOfOrders` | `MaintenanceNotif.NumberOfOrders` |
-| `MaintWorkRequestAttchKey` | `MaintenanceNotif.MaintWorkRequestAttchKey` |
-| `MaintNotifWithLeadingZeros` | `MaintenanceNotif.MaintNotifWithLeadingZeros` |
-| `MaintNotifSourceApplication` | `MaintenanceNotif.MaintNotifSourceApplication` |
-| `ActiveTechnicalObject` | `MaintenanceNotif.ActiveTechnicalObject` |
-| `MaintNotifRespPartnerFunction` | `MaintenanceNotif.MaintNotifRespPartnerFunction` |
-| `PersonResponsibleName` | `MaintenanceNotif.PersonResponsibleName` |
-| `ConcatenatedActiveSystStsName` | `MaintenanceNotif.ConcatenatedActiveSystStsName` |
-| `ConcatenatedActiveUserStsName` | `MaintenanceNotif.ConcatenatedActiveUserStsName` |
-| `MaintenanceOrder` | `MaintenanceNotif.MaintenanceOrder` |
-| `MaintenanceOrderType` | `MaintenanceNotif.MaintenanceOrderType` |
-| `MaintEvtIsCreatedByCurrentUser` | `MaintenanceNotif.MaintEvtIsCreatedByCurrentUser` |
-| `MaintenanceActivityType` | `MaintenanceNotif.MaintenanceActivityType` |
-| `MaintObjDowntimeDurationUnit` | `MaintenanceNotif.MaintObjDowntimeDurationUnit` |
-| `MaintObjectDowntimeDuration` | `MaintenanceNotif.MaintObjectDowntimeDuration` |
-| `NotificationReferenceDate` | `MaintenanceNotif.NotificationReferenceDate` |
-| `NotificationReferenceTime` | `MaintenanceNotif.NotificationReferenceTime` |
-| `NotificationCompletionDate` | `MaintenanceNotif.NotificationCompletionDate` |
-| `CompletionTime` | `MaintenanceNotif.CompletionTime` |
-| `AssetRoom` | `MaintenanceNotif.AssetRoom` |
-| `MaintNotifProcessPhaseCode` | `MaintenanceNotif.MaintNotifProcessPhaseCode` |
-| `MaintNotifProcessSubPhaseCode` | `MaintenanceNotif.MaintNotifProcessSubPhaseCode` |
-| `MaintNotifRejectionReasonCode` | `MaintenanceNotif.MaintNotifRejectionReasonCode` |
-| `MaintNotifExtReferenceNumber` | `MaintenanceNotif.MaintNotifExtReferenceNumber` |
-| `MaintenanceTaskListType` | `MaintenanceNotif.MaintenanceTaskListType` |
-| `TaskListGroup` | `MaintenanceNotif.TaskListGroup` |
-| `TaskListGroupCounter` | `MaintenanceNotif.TaskListGroupCounter` |
-| `TaskList` | `MaintenanceNotif.TaskList` |
-| `TaskListKeyDate` | `MaintenanceNotif.TaskListKeyDate` |
-| `MaintNotifDetectionCatalog` | `MaintenanceNotif.MaintNotifDetectionCatalog` |
-| `MaintNotifDetectionCodeGroup` | `MaintenanceNotif.MaintNotifDetectionCodeGroup` |
-| `MaintNotifDetectionCode` | `MaintenanceNotif.MaintNotifDetectionCode` |
-| `TechObjInstallationLocation` | `MaintenanceNotif.TechObjInstallationLocation` |
-| `IdentifyingLabel` | `MaintenanceNotif.IdentifyingLabel` |
-| `WorkRequestTextTemplate` | `MaintenanceNotif.WorkRequestTextTemplate` |
-| `_MalfunctionEffect` | *Association* |
-| `_PMNotifMaintenanceData` | *Association* |
-| `_MaintNotifPersonResponsible` | *Association* |
-| `_ActiveSystemStatus` | *Association* |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceNotification` | ✓ | |  |  |
+| `MaintNotifInternalID` |  | |  |  |
+| `NotificationText` |  | |  |  |
+| `MaintPriority` |  | |  |  |
+| `MaintPriorityType` |  | |  |  |
+| `NotificationType` |  | |  |  |
+| `NotifProcessingPhase` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `ReportedByUser` |  | |  |  |
+| `ReporterFullName` |  | |  |  |
+| `PersonResponsible` |  | |  |  |
+| `MalfunctionEffect` |  | |  |  |
+| `MalfunctionStartDate` |  | |  |  |
+| `MalfunctionStartTime` |  | |  |  |
+| `MalfunctionStartDateTime` |  | |  |  |
+| `MalfunctionEndDate` |  | |  |  |
+| `MalfunctionEndTime` |  | |  |  |
+| `MalfunctionEndDateTime` |  | |  |  |
+| `MaintNotificationCatalog` |  | |  |  |
+| `MaintNotificationCode` |  | |  |  |
+| `MaintNotificationCodeGroup` |  | |  |  |
+| `CatalogProfile` |  | |  |  |
+| `NotificationCreationDate` |  | |  |  |
+| `NotificationCreationTime` |  | |  |  |
+| `NotificationCreationDateTime` |  | |  |  |
+| `NotificationTimeZone` |  | |  |  |
+| `RequiredStartDate` |  | |  |  |
+| `RequiredStartTime` |  | |  |  |
+| `MaintNotifRqdStartDateTime` |  | |  |  |
+| `RequiredEndDate` |  | |  |  |
+| `RequiredEndTime` |  | |  |  |
+| `MaintNotifRqdEndDateTime` |  | |  |  |
+| `LatestAcceptableCompletionDate` |  | |  |  |
+| `MaintenanceObjectIsDown` |  | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `TextObjectType` |  | |  |  |
+| `TechnicalObject` |  | |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
+| `TechnicalObjectLabel` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `AssetManufacturerName` |  | |  |  |
+| `PlantSection` |  | |  |  |
+| `ABCIndicator` |  | |  |  |
+| `SuperiorTechnicalObjectLabel` |  | |  |  |
+| `ManufacturerPartTypeName` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |
+| `AssetLocation` |  | |  |  |
+| `LocationName` |  | |  |  |
+| `TechnicalObjectCategory` |  | |  |  |
+| `TechnicalObjectType` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `MaintenanceWorkCenterPlant` |  | |  |  |
+| `MainWorkCenter` |  | |  |  |
+| `MaintenanceWorkCenter` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `MainWorkCenterPlant` |  | |  |  |
+| `LocationDescription` |  | |  |  |
+| `NmbrOfOpenMaintNotifications` |  | |  |  |
+| `NumberOfOrders` |  | |  |  |
+| `MaintWorkRequestAttchKey` |  | |  |  |
+| `MaintNotifWithLeadingZeros` |  | |  |  |
+| `MaintNotifSourceApplication` |  | |  |  |
+| `ActiveTechnicalObject` |  | |  |  |
+| `MaintNotifRespPartnerFunction` |  | |  |  |
+| `PersonResponsibleName` |  | |  |  |
+| `ConcatenatedActiveSystStsName` |  | |  |  |
+| `ConcatenatedActiveUserStsName` |  | |  |  |
+| `MaintenanceOrder` |  | |  |  |
+| `MaintenanceOrderType` |  | |  |  |
+| `MaintEvtIsCreatedByCurrentUser` |  | |  |  |
+| `MaintenanceActivityType` |  | |  |  |
+| `MaintObjDowntimeDurationUnit` |  | |  |  |
+| `MaintObjectDowntimeDuration` |  | |  |  |
+| `NotificationReferenceDate` |  | |  |  |
+| `NotificationReferenceTime` |  | |  |  |
+| `NotificationCompletionDate` |  | |  |  |
+| `CompletionTime` |  | |  |  |
+| `AssetRoom` |  | |  |  |
+| `MaintNotifProcessPhaseCode` |  | |  |  |
+| `MaintNotifProcessSubPhaseCode` |  | |  |  |
+| `MaintNotifRejectionReasonCode` |  | |  |  |
+| `MaintNotifExtReferenceNumber` |  | |  |  |
+| `MaintenanceTaskListType` |  | |  |  |
+| `TaskListGroup` |  | |  |  |
+| `TaskListGroupCounter` |  | |  |  |
+| `TaskList` |  | |  |  |
+| `TaskListKeyDate` |  | |  |  |
+| `MaintNotifDetectionCatalog` |  | |  |  |
+| `MaintNotifDetectionCodeGroup` |  | |  |  |
+| `MaintNotifDetectionCode` |  | |  |  |
+| `TechObjInstallationLocation` |  | |  |  |
+| `IdentifyingLabel` |  | |  |  |
+| `WorkRequestTextTemplate` |  | |  |  |
+| `_MalfunctionEffect` | | ✓ | | |
+| `_PMNotifMaintenanceData` | | ✓ | | |
+| `_MaintNotifPersonResponsible` | | ✓ | | |
+| `_ActiveSystemStatus` | | ✓ | | |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
 
 ## Source Code
 

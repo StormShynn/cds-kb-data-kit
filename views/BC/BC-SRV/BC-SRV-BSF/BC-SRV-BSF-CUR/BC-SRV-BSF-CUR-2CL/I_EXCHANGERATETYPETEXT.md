@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ExchangeRateType` | `kurst` |
-| key `Language` | `spras` |
-| `ExchangeRateTypeName` | `curvw` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ExchangeRateType` | ✓ | |  | `kurst` |
+| `Language` | ✓ | |  | `spras` |
+| `ExchangeRateTypeName` |  | |  | `curvw` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

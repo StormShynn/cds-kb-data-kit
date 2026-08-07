@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `MsmtRdngIntervalEndDate` | `imrc_idate` |
-| `MsmtRdngIntervalEndTime` | `imrc_itime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MsmtRdngIntervalEndDate` |  | |  | `imrc_idate` |
+| `MsmtRdngIntervalEndTime` |  | |  | `imrc_itime` |
 
 ## Source Code
 

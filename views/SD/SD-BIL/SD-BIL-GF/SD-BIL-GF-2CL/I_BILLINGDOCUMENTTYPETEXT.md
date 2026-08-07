@@ -34,13 +34,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentType` | `fkart` |
-| key `Language` | `spras` |
-| `BillingDocumentTypeName` | `vtext` |
-| `_BillingDocumentType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentType` | ✓ | |  | `fkart` |
+| `Language` | ✓ | |  | `spras` |
+| `BillingDocumentTypeName` |  | |  | `vtext` |
+| `_BillingDocumentType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

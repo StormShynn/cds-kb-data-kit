@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SegmentHierarchy` | `cast(hrrp_dir_n.hryid as fis_hryid_segment preserving type )` |
-| key `ValidityEndDate` | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
-| `ValidityStartDate` | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |
-| `LastChangedByUser` | `hrrp_dir_n.upduser` |
-| `LastChangeDateTime` | `hrrp_dir_n.updtime` |
-| `LastChangeTime` | `hrrp_dir_n.updtime` |
-| `HierarchyShortID` | `hrrp_dir_n.hrysid` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SegmentHierarchy` | ✓ | |  | `cast(hrrp_dir_n.hryid as fis_hryid_segment preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |
+| `LastChangedByUser` |  | |  | `upduser` |
+| `LastChangeDateTime` |  | |  | `updtime` |
+| `LastChangeTime` |  | |  | `updtime` |
+| `HierarchyShortID` |  | |  | `hrysid` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

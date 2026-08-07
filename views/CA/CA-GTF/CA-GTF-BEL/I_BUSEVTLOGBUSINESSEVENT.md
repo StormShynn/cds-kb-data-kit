@@ -28,46 +28,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessEventUUID` | `BusinessEventUUID` |
-| key `SAPObjectType` | `SAPObjectType` |
-| key `BusEvtLogCreationDate` | `BusEvtLogCreationDate` |
-| `SAPObjectNodeType` | `SAPObjectNodeType` |
-| `EventOperation` | `EventOperation` |
-| `SAPBusinessObjectNodeKey1` | `SAPBusinessObjectNodeKey1` |
-| `SAPBusinessObjectNodeKey2` | `SAPBusinessObjectNodeKey2` |
-| `SAPBusinessObjectNodeKey3` | `SAPBusinessObjectNodeKey3` |
-| `SAPBusinessObjectNodeKey4` | `SAPBusinessObjectNodeKey4` |
-| `SAPBusinessObjectNodeKey5` | `SAPBusinessObjectNodeKey5` |
-| `SAPBusinessObjectNodeKey6` | `SAPBusinessObjectNodeKey6` |
-| `SAPBusinessObjectNodeKey7` | `SAPBusinessObjectNodeKey7` |
-| `SAPBusinessObjectNodeKey8` | `SAPBusinessObjectNodeKey8` |
-| `CreatedByUser` | `CreatedByUser` |
-| `BusEvtLogCreationDateTime` | `BusEvtLogCreationDateTime` |
-| `BusinessEventLogLogicalSystem` | `BusinessEventLogLogicalSystem` |
-| `BusEvtLogIsDeleted` | `BusEvtLogIsDeleted` |
-| `BusinessEventLogEventVersion` | `BusinessEventLogEventVersion` |
-| `BusEvtLogTransactionID` | `BusEvtLogTransactionID` |
-| `BusEvtLogLastChangedDateTime` | `BusEvtLogLastChangedDateTime` |
-| `IsTechnicalUser` | `IsTechnicalUser` |
-| `BusinessEventLogSource` | `BusinessEventLogSource` |
-| `EventProducerNamespace` | `EventProducerNamespace` |
-| `BusEvtLogEventHasFullPayload` | `BusEvtLogEventHasFullPayload` |
-| `BusEvtLogUserInteractionType` | `BusEvtLogUserInteractionType` |
-| `BusEvtLgUsrIntactnTypeValue` | `BusEvtLgUsrIntactnTypeValue` |
-| `ChangeDocument` | `ChangeDocument` |
-| `ChangeDocItemChangeType` | `ChangeDocItemChangeType` |
-| `SAPBusinessObjectNodeKey1Name` | `SAPBusinessObjectNodeKey1Name` |
-| `SAPBusinessObjectNodeKey2Name` | `SAPBusinessObjectNodeKey2Name` |
-| `SAPBusinessObjectNodeKey3Name` | `SAPBusinessObjectNodeKey3Name` |
-| `SAPBusinessObjectNodeKey4Name` | `SAPBusinessObjectNodeKey4Name` |
-| `SAPBusinessObjectNodeKey5Name` | `SAPBusinessObjectNodeKey5Name` |
-| `SAPBusinessObjectNodeKey6Name` | `SAPBusinessObjectNodeKey6Name` |
-| `SAPBusinessObjectNodeKey7Name` | `SAPBusinessObjectNodeKey7Name` |
-| `SAPBusinessObjectNodeKey8Name` | `SAPBusinessObjectNodeKey8Name` |
-| `BusEvtLogReferenceEventUUID` | `BusEvtLogReferenceEventUUID` |
-| `BusEvtLogBusinessActivity` | `BusEvtLogBusinessActivity` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessEventUUID` | ✓ | |  |  |
+| `SAPObjectType` | ✓ | |  |  |
+| `BusEvtLogCreationDate` | ✓ | |  |  |
+| `SAPObjectNodeType` |  | |  |  |
+| `EventOperation` |  | |  |  |
+| `SAPBusinessObjectNodeKey1` |  | |  |  |
+| `SAPBusinessObjectNodeKey2` |  | |  |  |
+| `SAPBusinessObjectNodeKey3` |  | |  |  |
+| `SAPBusinessObjectNodeKey4` |  | |  |  |
+| `SAPBusinessObjectNodeKey5` |  | |  |  |
+| `SAPBusinessObjectNodeKey6` |  | |  |  |
+| `SAPBusinessObjectNodeKey7` |  | |  |  |
+| `SAPBusinessObjectNodeKey8` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `BusEvtLogCreationDateTime` |  | |  |  |
+| `BusinessEventLogLogicalSystem` |  | |  |  |
+| `BusEvtLogIsDeleted` |  | |  |  |
+| `BusinessEventLogEventVersion` |  | |  |  |
+| `BusEvtLogTransactionID` |  | |  |  |
+| `BusEvtLogLastChangedDateTime` |  | |  |  |
+| `IsTechnicalUser` |  | |  |  |
+| `BusinessEventLogSource` |  | |  |  |
+| `EventProducerNamespace` |  | |  |  |
+| `BusEvtLogEventHasFullPayload` |  | |  |  |
+| `BusEvtLogUserInteractionType` |  | |  |  |
+| `BusEvtLgUsrIntactnTypeValue` |  | |  |  |
+| `ChangeDocument` |  | |  |  |
+| `ChangeDocItemChangeType` |  | |  |  |
+| `SAPBusinessObjectNodeKey1Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey2Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey3Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey4Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey5Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey6Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey7Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey8Name` |  | |  |  |
+| `BusEvtLogReferenceEventUUID` |  | |  |  |
+| `BusEvtLogBusinessActivity` |  | |  |  |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Warehouse` | `lgnum` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Warehouse` | ✓ | |  | `lgnum` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

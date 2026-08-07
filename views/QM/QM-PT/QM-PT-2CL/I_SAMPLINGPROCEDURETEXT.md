@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingProcedure` | `qdsvt.stichprver` |
-| key `Language` | `qdsvt.sprache` |
-| `SamplingProcedureText` | `qdsvt.kurztext` |
-| `_SamplingProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingProcedure` | ✓ | |  | `stichprver` |
+| `Language` | ✓ | |  | `sprache` |
+| `SamplingProcedureText` |  | |  | `kurztext` |
+| `_SamplingProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

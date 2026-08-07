@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintNotifDetectionCatalog` | `detectioncatalog` |
-| key `MaintNotifDetectionCodeGroup` | `detectioncodegroup` |
-| `MaintNotifDetectionCatalogText` | `_DetectionCtlgText[1:Language=$session.system_language].MaintNotifDetectionCatalogText` |
-| `MaintNotifDetectionCodeGrpTxt` | `_DetectCodeGroupText[1:Language=$session.system_language].MaintNotifDetectionCodeGrpTxt` |
-| `_DetectionCatalog` | *Association* |
-| `_DetectionCodeGroup` | *Association* |
-| `_DetectionCtlgText` | *Association* |
-| `_DetectCodeGroupText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintNotifDetectionCatalog` | ✓ | |  | `detectioncatalog` |
+| `MaintNotifDetectionCodeGroup` | ✓ | |  | `detectioncodegroup` |
+| `MaintNotifDetectionCatalogText` |  | |  | `_DetectionCtlgText[1:Language=$session.system_language].MaintNotifDetectionCatalogText` |
+| `MaintNotifDetectionCodeGrpTxt` |  | |  | `_DetectCodeGroupText[1:Language=$session.system_language].MaintNotifDetectionCodeGrpTxt` |
+| `_DetectionCatalog` | | ✓ | | |
+| `_DetectionCodeGroup` | | ✓ | | |
+| `_DetectionCtlgText` | | ✓ | | |
+| `_DetectCodeGroupText` | | ✓ | | |
 
 ## Associations
 

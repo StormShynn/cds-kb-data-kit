@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShiftDefinition` | `def.kaptprog` |
-| key `ShiftGrouping` | `def.schgrup` |
-| key `ShiftEndDate` | `def.endda` |
-| `ShiftEndTime` | `def.endzt` |
-| `ShiftStartDate` | `def.begda` |
-| `ShiftStartTime` | `def.begzt` |
-| `OperatingDurationInSeconds` | `def.einzt` |
-| `WorkBreakSchedule` | `def.paplan` |
-| `DailyWorkSchedule` | `def.tprog` |
-| `DailyWorkScheduleGroup` | `def.motpr` |
-| `DailyWorkScheduleVariant` | `def.varia` |
-| `ValidityEndDate` | `cast(def.endda as vdm_validityend preserving type)` |
-| `_Text` | *Association* |
-| `_Text2` | *Association* |
-| `_ShiftGrouping` | *Association* |
-| `_EndDate` | *Association* |
-| `_StartDate` | *Association* |
-| `_WorkBreakSchedule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShiftDefinition` | ✓ | |  | `kaptprog` |
+| `ShiftGrouping` | ✓ | |  | `schgrup` |
+| `ShiftEndDate` | ✓ | |  | `endda` |
+| `ShiftEndTime` |  | |  | `endzt` |
+| `ShiftStartDate` |  | |  | `begda` |
+| `ShiftStartTime` |  | |  | `begzt` |
+| `OperatingDurationInSeconds` |  | |  | `einzt` |
+| `WorkBreakSchedule` |  | |  | `paplan` |
+| `DailyWorkSchedule` |  | |  | `tprog` |
+| `DailyWorkScheduleGroup` |  | |  | `motpr` |
+| `DailyWorkScheduleVariant` |  | |  | `varia` |
+| `ValidityEndDate` |  | |  | `cast(def.endda as vdm_validityend preserving type)` |
+| `_Text` | | ✓ | | |
+| `_Text2` | | ✓ | | |
+| `_ShiftGrouping` | | ✓ | | |
+| `_EndDate` | | ✓ | | |
+| `_StartDate` | | ✓ | | |
+| `_WorkBreakSchedule` | | ✓ | | |
 
 ## Associations
 

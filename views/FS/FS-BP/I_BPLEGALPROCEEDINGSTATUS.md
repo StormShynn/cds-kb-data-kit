@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPLegalProceedingStatus` | `fsbpcc_lgl_proc.lgl_proc` |
-| `_Text` | *Association* |
-| `_BPCreditWorthiness` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPLegalProceedingStatus` | ✓ | |  | `lgl_proc` |
+| `_Text` | | ✓ | | |
+| `_BPCreditWorthiness` | | ✓ | | |
 
 ## Associations
 

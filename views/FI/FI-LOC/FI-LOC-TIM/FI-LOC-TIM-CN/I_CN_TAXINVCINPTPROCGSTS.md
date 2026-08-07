@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CN_TaxInvcInptProcgSts` | `cast(dd07v.domvalue_l as ficntaxinvc_input_status)` |
-| `DomainValue` | `dd07v.domvalue_l` |
-| `Language` | `ddlanguage` |
-| `DocumentStatusDesc` | `dd07v.ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CN_TaxInvcInptProcgSts` | ✓ | |  | `cast(dd07v.domvalue_l as ficntaxinvc_input_status)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `Language` |  | |  | `ddlanguage` |
+| `DocumentStatusDesc` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

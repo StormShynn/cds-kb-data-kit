@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `comp_code` |
-| key `FixedAssetUsageObject` | `usage_object` |
-| key `FixedAssetUsageObjectDeprArea` | `depr_area` |
-| key `ValidityEndDate` | `valid_to_date` |
-| `ValidityStartDate` | `valid_from_date` |
-| `CapacityInProductionUnit` | `total_units` |
-| `BaseUnit` | `_UsageObject.BaseUnit` |
-| `_UsageObject` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |
+| `FixedAssetUsageObjectDeprArea` | ✓ | |  | `depr_area` |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` |
+| `ValidityStartDate` |  | |  | `valid_from_date` |
+| `CapacityInProductionUnit` |  | |  | `total_units` |
+| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` |
+| `_UsageObject` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

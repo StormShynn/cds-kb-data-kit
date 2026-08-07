@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgDocumentReversalReason` | `_tfk2661t.revreason` |
-| key `Language` | `_tfk2661t.langu` |
-| `CAInvcgDocReversalReasonText` | `cast( _tfk2661t.text as revreason_txt_gfn_kk preserving type )` |
-| `_CAInvcgDocReversalReason` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgDocumentReversalReason` | ✓ | | `_tfk2661t` | `revreason` |
+| `Language` | ✓ | | `_tfk2661t` | `langu` |
+| `CAInvcgDocReversalReasonText` |  | |  | `cast( _tfk2661t.text as revreason_txt_gfn_kk preserving type )` |
+| `_CAInvcgDocReversalReason` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

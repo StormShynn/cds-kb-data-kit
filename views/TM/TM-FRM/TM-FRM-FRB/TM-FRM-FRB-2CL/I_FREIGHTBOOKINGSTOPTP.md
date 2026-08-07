@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderStopUUID` | `TransportationOrderStopUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationOrderStop` | `TransportationOrderStop` |
-| `TranspOrdStopCategory` | `TranspOrdStopCategory` |
-| `TranspOrdStopRole` | `TranspOrdStopRole` |
-| `LocationAdditionalUUID` | `LocationAdditionalUUID` |
-| `LocationId` | `LocationId` |
-| `LocationUNCode` | `LocationUNCode` |
-| `LocationIATACode` | `LocationIATACode` |
-| `TranspOrdStopPlanTranspDteTme` | `TranspOrdStopPlanTranspDteTme` |
-| `TranspOrdStopDteTme` | `TranspOrdStopDteTme` |
-| `TranspOrdStopApptStrtDteTme` | `TranspOrdStopApptStrtDteTme` |
-| `TranspOrdStopApptEndDteTme` | `TranspOrdStopApptEndDteTme` |
-| `TranspStopCarrConfStrtDteTme` | `TranspStopCarrConfStrtDteTme` |
-| `TranspStopCarrConfEndDteTme` | `TranspStopCarrConfEndDteTme` |
-| `TranspOrdStopDocCutOffDateTime` | `TranspOrdStopDocCutOffDateTime` |
-| `TranspOrdStopCrgoCutOffDteTme` | `TranspOrdStopCrgoCutOffDteTme` |
-| `TranspOrdStopVGMCutOffDateTime` | `TranspOrdStopVGMCutOffDateTime` |
-| `TranspOrdStopSequencePosition` | `TranspOrdStopSequencePosition` |
-| `TranspOrdStopHndlgExecStatus` | `TranspOrdStopHndlgExecStatus` |
-| `TranspOrdStopExecIsBlocked` | `TranspOrdStopExecIsBlocked` |
-| `I_FreightBookingTP` | `FreightBookingStop._TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |
-| `I_FreightBookingStageTP` | `FreightBookingStop._TranspOrderStage as _FreightBookingStage : redirected to composition child I_FreightBookingStageTP` |
-| `I_FrtBkgStopLocAdDfRpnTP` | `FreightBookingStop._TrOrdStopLocAddrDfltRprstn as _FrtBkgStopLocAddrDfltRprstn : redirected to composition child I_FrtBkgStopLocAdDfRpnTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderStopUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TransportationOrderStop` |  | |  |  |
+| `TranspOrdStopCategory` |  | |  |  |
+| `TranspOrdStopRole` |  | |  |  |
+| `LocationAdditionalUUID` |  | |  |  |
+| `LocationId` |  | |  |  |
+| `LocationUNCode` |  | |  |  |
+| `LocationIATACode` |  | |  |  |
+| `TranspOrdStopPlanTranspDteTme` |  | |  |  |
+| `TranspOrdStopDteTme` |  | |  |  |
+| `TranspOrdStopApptStrtDteTme` |  | |  |  |
+| `TranspOrdStopApptEndDteTme` |  | |  |  |
+| `TranspStopCarrConfStrtDteTme` |  | |  |  |
+| `TranspStopCarrConfEndDteTme` |  | |  |  |
+| `TranspOrdStopDocCutOffDateTime` |  | |  |  |
+| `TranspOrdStopCrgoCutOffDteTme` |  | |  |  |
+| `TranspOrdStopVGMCutOffDateTime` |  | |  |  |
+| `TranspOrdStopSequencePosition` |  | |  |  |
+| `TranspOrdStopHndlgExecStatus` |  | |  |  |
+| `TranspOrdStopExecIsBlocked` |  | |  |  |
+| `I_FreightBookingTP` |  | |  | `FreightBookingStop._TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |
+| `I_FreightBookingStageTP` |  | |  | `FreightBookingStop._TranspOrderStage as _FreightBookingStage : redirected to composition child I_FreightBookingStageTP` |
+| `I_FrtBkgStopLocAdDfRpnTP` |  | |  | `FreightBookingStop._TrOrdStopLocAddrDfltRprstn as _FrtBkgStopLocAddrDfltRprstn : redirected to composition child I_FrtBkgStopLocAdDfRpnTP` |
 
 ## Source Code
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingPlanRule` | `SUBSTRING(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `BillingPlanRuleName` | `ddtext` |
-| `_BillingPlanRule` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingPlanRule` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BillingPlanRuleName` |  | |  | `ddtext` |
+| `_BillingPlanRule` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

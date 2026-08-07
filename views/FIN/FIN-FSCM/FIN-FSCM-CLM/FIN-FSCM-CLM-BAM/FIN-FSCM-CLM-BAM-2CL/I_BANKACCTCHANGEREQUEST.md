@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankAccountChangeRequest` | `cr.request_id` |
-| `BankAcctChangeReqHeadingText` | `cr.title` |
-| `BankAccountAction` | `cr.account_action` |
-| `BankAccountActionText` | `_actionText.BankAccountActionText` |
-| `BankAccountChangeRequestStatus` | `cr.request_status` |
-| `BankAccountReqStatusText` | `_requestStatusText.BankAccountReqStatusText` |
-| `CreatedByUser` | `cr.created_by` |
-| `CreationDate` | `cr.created_on` |
-| `BankAcctChangeRequestDueDate` | `cr.duedate` |
-| `LastChangedByUser` | `cr.lastchged_by` |
-| `BankAcctRequestProcess` | `cr.request_process` |
-| `BankAccountChangeRequestStep` | `cr.request_step` |
-| `LastChangeDate` | `cr.lastchged_on` |
-| `LastChangeTime` | `cr.lastchged_tm` |
-| `CreationTime` | `cr.created_tm` |
-| `ChangeRequestIsBypassCheck` | `cr.bypass_check_mass` |
-| `ChgReqBypassChkIsHidn` | `cast ( case when bypass_check_mass = 'X' then '' else 'X' end as boolean preserving type )` |
-| `_Bankaccount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankAccountChangeRequest` | ✓ | |  | `request_id` |
+| `BankAcctChangeReqHeadingText` |  | |  | `title` |
+| `BankAccountAction` |  | |  | `account_action` |
+| `BankAccountActionText` |  | | `_actionText` | `BankAccountActionText` |
+| `BankAccountChangeRequestStatus` |  | |  | `request_status` |
+| `BankAccountReqStatusText` |  | | `_requestStatusText` | `BankAccountReqStatusText` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDate` |  | |  | `created_on` |
+| `BankAcctChangeRequestDueDate` |  | |  | `duedate` |
+| `LastChangedByUser` |  | |  | `lastchged_by` |
+| `BankAcctRequestProcess` |  | |  | `request_process` |
+| `BankAccountChangeRequestStep` |  | |  | `request_step` |
+| `LastChangeDate` |  | |  | `lastchged_on` |
+| `LastChangeTime` |  | |  | `lastchged_tm` |
+| `CreationTime` |  | |  | `created_tm` |
+| `ChangeRequestIsBypassCheck` |  | |  | `bypass_check_mass` |
+| `ChgReqBypassChkIsHidn` |  | |  | `cast ( case when bypass_check_mass = 'X' then '' else 'X' end as boolean preserving type )` |
+| `_Bankaccount` | | ✓ | | |
 
 ## Associations
 

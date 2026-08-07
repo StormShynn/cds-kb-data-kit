@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaxCalculationProcedure` | `kalsm` |
-| key `TaxCode` | `cast(mwskz as fis_mwskz preserving type)` |
-| `TaxType` | `mwart` |
-| `TargetTaxCode` | `cast(zmwsk as farp_dzmwsk preserving type)` |
-| `EUTaxClassification` | `egrkz` |
-| `IsSalesTaxes` | `xslta` |
-| `TaxCategory` | `cast(txind as smwsk)` |
-| `UnitedStatesTaxCategory` | `cast(txind as txind_007a preserving type)` |
-| `TaxReturnCountry` | `lstml` |
-| `TaxTolerancePercent` | `cast(tolerance as fot_tax_tolerance preserving type)` |
-| `EUAcqnInputTaxCode` | `zmwsk_ese` |
-| `EUAcqnOutputTaxCode` | `zmwsk_esa` |
-| `TaxCodeIsInactive` | `xinact` |
-| `MiniOneStopShopTxRptgCntry` | `mossc` |
-| `OneStopShopTaxReportingCountry` | `mossc` |
-| `OneStopShopScheme` | `oss_classification` |
-| `_Text` | *Association* |
-| `_TaxType` | *Association* |
-| `_TaxCalculationProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaxCalculationProcedure` | ✓ | |  | `kalsm` |
+| `TaxCode` | ✓ | |  | `cast(mwskz as fis_mwskz preserving type)` |
+| `TaxType` |  | |  | `mwart` |
+| `TargetTaxCode` |  | |  | `cast(zmwsk as farp_dzmwsk preserving type)` |
+| `EUTaxClassification` |  | |  | `egrkz` |
+| `IsSalesTaxes` |  | |  | `xslta` |
+| `TaxCategory` |  | |  | `cast(txind as smwsk)` |
+| `UnitedStatesTaxCategory` |  | |  | `cast(txind as txind_007a preserving type)` |
+| `TaxReturnCountry` |  | |  | `lstml` |
+| `TaxTolerancePercent` |  | |  | `cast(tolerance as fot_tax_tolerance preserving type)` |
+| `EUAcqnInputTaxCode` |  | |  | `zmwsk_ese` |
+| `EUAcqnOutputTaxCode` |  | |  | `zmwsk_esa` |
+| `TaxCodeIsInactive` |  | |  | `xinact` |
+| `MiniOneStopShopTxRptgCntry` |  | |  | `mossc` |
+| `OneStopShopTaxReportingCountry` |  | |  | `mossc` |
+| `OneStopShopScheme` |  | |  | `oss_classification` |
+| `_Text` | | ✓ | | |
+| `_TaxType` | | ✓ | | |
+| `_TaxCalculationProcedure` | | ✓ | | |
 
 ## Associations
 

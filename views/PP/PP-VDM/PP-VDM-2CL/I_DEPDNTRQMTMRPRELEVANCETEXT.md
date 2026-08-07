@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t.ddlanguage` |
-| key `DependentRqmtMRPRelevance` | `cast(substring(t.domvalue_l, 1, 1) as pph_ahdis preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `DependentRqmtMRPRelevanceName` | `t.ddtext` |
-| `_Language` | *Association* |
-| `_DependentRqmtMRPRelevance` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `DependentRqmtMRPRelevance` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as pph_ahdis preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `DependentRqmtMRPRelevanceName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_DependentRqmtMRPRelevance` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `PrcgConditionDeletionMethod` | `cast ( substring( domvalue_l, 1, 1 ) as kdele )` |
-| `PrcgCndnDeletionMethodText` | `cast ( ddtext as val_text )` |
-| `_PrcgConditionDeletionMethod` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `PrcgConditionDeletionMethod` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kdele )` |
+| `PrcgCndnDeletionMethodText` |  | |  | `cast ( ddtext as val_text )` |
+| `_PrcgConditionDeletionMethod` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

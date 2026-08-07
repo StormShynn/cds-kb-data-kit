@@ -28,90 +28,90 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnTaskLogUUID` | `item.CnsldtnTaskLogUUID` |
-| key `CnsldtnTaskLogItemUUID` | `item.CnsldtnTaskLogItemUUID` |
-| `CnsldtnTaskLogItemType` | `item.CnsldtnTaskLogItemType` |
-| `AssignmentReference` | `item.AssignmentReference` |
-| `ConsolidationLedger` | `item.ConsolidationLedger` |
-| `PostingFiscalYear` | `item.PostingFiscalYear` |
-| `ConsolidationVersion` | `item.ConsolidationVersion` |
-| `ConsolidationUnit` | `item.ConsolidationUnit` |
-| `ConsolidationChartOfAccounts` | `item.ConsolidationChartOfAccounts` |
-| `CnsldtnFinancialStatementItem` | `item.CnsldtnFinancialStatementItem` |
-| `PartnerConsolidationUnit` | `item.PartnerConsolidationUnit` |
-| `ConsolidationGroup` | `item.ConsolidationGroup` |
-| `CompanyCode` | `item.CompanyCode` |
-| `SubItemCategory` | `item.SubItemCategory` |
-| `SubItem` | `item.SubItem` |
-| `PostingLevel` | `item.PostingLevel` |
-| `ConsolidationApportionment` | `item.ConsolidationApportionment` |
-| `CurrencyConversionsDiffType` | `item.CurrencyConversionsDiffType` |
-| `InvesteeConsolidationUnit` | `item.InvesteeConsolidationUnit` |
-| `InvestmentActivityType` | `item.InvestmentActivityType` |
-| `InvestmentActivity` | `item.InvestmentActivity` |
-| `PostingDate` | `item.PostingDate` |
-| `CnsldtnJrnlEntryAmtLoclCrcy` | `item.CnsldtnJrnlEntryAmtLoclCrcy` |
-| `CnsldtnJrnlEntryAmtInLoclCrcy` | `item.CnsldtnJrnlEntryAmtInLoclCrcy` |
-| `CnsldtnJrnlEntryAmtGrpCrcy` | `item.CnsldtnJrnlEntryAmtGrpCrcy` |
-| `CnsldtnJrnlEntryAmtInGrpCrcy` | `item.CnsldtnJrnlEntryAmtInGrpCrcy` |
-| `CnsldtnJrnlEntryAmtTransCrcy` | `item.CnsldtnJrnlEntryAmtTransCrcy` |
-| `CnsldtnJrnlEntryAmtInTransCrcy` | `item.CnsldtnJrnlEntryAmtInTransCrcy` |
-| `CnsldtnJrnlEntryQtyBaseUnit` | `item.CnsldtnJrnlEntryQtyBaseUnit` |
-| `CnsldtnJrnlEntryQtyInBsUnt` | `item.CnsldtnJrnlEntryQtyInBsUnt` |
-| `PartnerCostCenter` | `item.PartnerCostCenter` |
-| `FinancialTransactionType` | `item.FinancialTransactionType` |
-| `CustomerGroup` | `item.CustomerGroup` |
-| `CustomerSupplierCountry` | `item.CustomerSupplierCountry` |
-| `CnsldtnTskLgItmRowNmbr` | `item.CnsldtnTskLgItmRowNmbr` |
-| `FiscalPeriod` | `item.FiscalPeriod` |
-| `FinancialServicesBranch` | `item.FinancialServicesBranch` |
-| `GHGScope2CalculationMethod` | `item.GHGScope2CalculationMethod` |
-| `CashLedgerAccount` | `item.CashLedgerAccount` |
-| `CnsldtnCashLedgerChartOfAccts` | `item.CnsldtnCashLedgerChartOfAccts` |
-| `GHGScope2ContractualInstrument` | `item.GHGScope2ContractualInstrument` |
-| `FinancialDataSource` | `item.FinancialDataSource` |
-| `CnsldtnLogHeaderDateTime` | `item.CnsldtnLogHeaderDateTime` |
-| `Fund` | `item.Fund` |
-| `GHGCategory` | `item.GHGCategory` |
-| `GHGScope` | `item.GHGScope` |
-| `GrantID` | `item.GrantID` |
-| `SustainabilityModeOfTransport` | `item.SustainabilityModeOfTransport` |
-| `FinancialServicesProductGroup` | `item.FinancialServicesProductGroup` |
-| `SoldProduct` | `item.SoldProduct` |
-| `SoldProductGroup` | `item.SoldProductGroup` |
-| `_ConsolidationTaskLog` | *Association* |
-| `_CnsldtnVersion` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_CnsldtnFSItem` | *Association* |
-| `_CnsldtnUnitPartner` | *Association* |
-| `_CnsldtnGroup` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_CnsldtnSubitemCategory` | *Association* |
-| `_CnsldtnSubItem` | *Association* |
-| `_CnsldtnPostingLevel` | *Association* |
-| `_CnsldtnApportionment` | *Association* |
-| `_CnsldtnCrcyCnvrsnDiffType` | *Association* |
-| `_CnsldtnUnitInvestee` | *Association* |
-| `_CnsldtnInvmtActy` | *Association* |
-| `_CnsldtnJrnlEntryAmtLoclCrcy` | *Association* |
-| `_CnsldtnJrnlEntryAmtGrpCrcy` | *Association* |
-| `_CnsldtnJrnlEntryAmtTransCrcy` | *Association* |
-| `_CnsldtnJrnlEntryQtyBaseUnit` | *Association* |
-| `_CnsldtnFinTransType` | *Association* |
-| `_CnsldtnCustomerGroup` | *Association* |
-| `_CnsldtnCountry` | *Association* |
-| `_CnsldtnGHGScp2CalcMethod` | *Association* |
-| `_CnsldtnCashLedgerAccount` | *Association* |
-| `_CnsldtnCashLedgerChartOfAccts` | *Association* |
-| `_CnsldtnGHGScp2CntrctlInstr` | *Association* |
-| `_CnsldtnGHGCategory` | *Association* |
-| `_CnsldtnGHGScope` | *Association* |
-| `_CnsldtnSustModeOfTransport` | *Association* |
-| `_CnsldtnProduct` | *Association* |
-| `_CnsldtnProductGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemType` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `ConsolidationLedger` |  | |  |  |
+| `PostingFiscalYear` |  | |  |  |
+| `ConsolidationVersion` |  | |  |  |
+| `ConsolidationUnit` |  | |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |
+| `ConsolidationGroup` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `SubItemCategory` |  | |  |  |
+| `SubItem` |  | |  |  |
+| `PostingLevel` |  | |  |  |
+| `ConsolidationApportionment` |  | |  |  |
+| `CurrencyConversionsDiffType` |  | |  |  |
+| `InvesteeConsolidationUnit` |  | |  |  |
+| `InvestmentActivityType` |  | |  |  |
+| `InvestmentActivity` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  |  |
+| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  |  |
+| `PartnerCostCenter` |  | |  |  |
+| `FinancialTransactionType` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `CustomerSupplierCountry` |  | |  |  |
+| `CnsldtnTskLgItmRowNmbr` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FinancialServicesBranch` |  | |  |  |
+| `GHGScope2CalculationMethod` |  | |  |  |
+| `CashLedgerAccount` |  | |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  |  |
+| `GHGScope2ContractualInstrument` |  | |  |  |
+| `FinancialDataSource` |  | |  |  |
+| `CnsldtnLogHeaderDateTime` |  | |  |  |
+| `Fund` |  | |  |  |
+| `GHGCategory` |  | |  |  |
+| `GHGScope` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `SustainabilityModeOfTransport` |  | |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |
+| `SoldProduct` |  | |  |  |
+| `SoldProductGroup` |  | |  |  |
+| `_ConsolidationTaskLog` | | ✓ | | |
+| `_CnsldtnVersion` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_CnsldtnFSItem` | | ✓ | | |
+| `_CnsldtnUnitPartner` | | ✓ | | |
+| `_CnsldtnGroup` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | |
+| `_CnsldtnSubItem` | | ✓ | | |
+| `_CnsldtnPostingLevel` | | ✓ | | |
+| `_CnsldtnApportionment` | | ✓ | | |
+| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | |
+| `_CnsldtnUnitInvestee` | | ✓ | | |
+| `_CnsldtnInvmtActy` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | |
+| `_CnsldtnFinTransType` | | ✓ | | |
+| `_CnsldtnCustomerGroup` | | ✓ | | |
+| `_CnsldtnCountry` | | ✓ | | |
+| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | |
+| `_CnsldtnCashLedgerAccount` | | ✓ | | |
+| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | |
+| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | |
+| `_CnsldtnGHGCategory` | | ✓ | | |
+| `_CnsldtnGHGScope` | | ✓ | | |
+| `_CnsldtnSustModeOfTransport` | | ✓ | | |
+| `_CnsldtnProduct` | | ✓ | | |
+| `_CnsldtnProductGroup` | | ✓ | | |
 
 ## Associations
 

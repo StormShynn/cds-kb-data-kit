@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScorecardQnaireUUID` | `SuplrEvalScorecardQnaireUUID` |
-| `QuestionnaireName` | `QuestionnaireName` |
-| `SupplierEvalScorecardQnaire` | `SupplierEvalScorecardQnaire` |
-| `SuplrEvalScorecardRtQnaireUUID` | `SuplrEvalScorecardRtQnaireUUID` |
-| `MinimalScore` | `MinimalScore` |
-| `TargetScore` | `TargetScore` |
-| `CalculatedScore` | `CalculatedScore` |
-| `NumberOfResponses` | `NumberOfResponses` |
-| `WeightingFactor` | `WeightingFactor` |
-| `SuplrEvalOrdinalNumber` | `SuplrEvalOrdinalNumber` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScorecardQnaireUUID` | ✓ | |  |  |
+| `QuestionnaireName` |  | |  |  |
+| `SupplierEvalScorecardQnaire` |  | |  |  |
+| `SuplrEvalScorecardRtQnaireUUID` |  | |  |  |
+| `MinimalScore` |  | |  |  |
+| `TargetScore` |  | |  |  |
+| `CalculatedScore` |  | |  |  |
+| `NumberOfResponses` |  | |  |  |
+| `WeightingFactor` |  | |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |
 
 ## Source Code
 

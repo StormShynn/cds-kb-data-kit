@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentOriginCode` | `DocOriginCode.CADocumentOriginCode` |
-| key `CAPostingReason` | `cast( WriteOffReasonText.CAWriteOffReason as bugrd_kk preserving type )` |
-| key `Language` | `WriteOffReasonText.Language` |
-| `CAPostingReasonName` | `cast( WriteOffReasonText.CAWriteOffReasonName as potxt_kk preserving type )` |
-| `_DocOriginCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentOriginCode` | ✓ | |  |  |
+| `CAPostingReason` | ✓ | |  | `cast( WriteOffReasonText.CAWriteOffReason as bugrd_kk preserving type )` |
+| `Language` | ✓ | |  |  |
+| `CAPostingReasonName` |  | |  | `cast( WriteOffReasonText.CAWriteOffReasonName as potxt_kk preserving type )` |
+| `_DocOriginCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

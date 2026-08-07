@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductGroup` | `ProductGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductGroup` | ✓ | |  |  |
 
 ## Source Code
 

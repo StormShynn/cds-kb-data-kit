@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `PrcgProcedItemSubtotal` | `cast ( substring( domvalue_l, 1, 1 ) as kzwiw )` |
-| `PrcgProcedItemSubtotalText` | `cast ( ddtext as val_text )` |
-| `_PricingProcedureItemSubtotal` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `PrcgProcedItemSubtotal` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kzwiw )` |
+| `PrcgProcedItemSubtotalText` |  | |  | `cast ( ddtext as val_text )` |
+| `_PricingProcedureItemSubtotal` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

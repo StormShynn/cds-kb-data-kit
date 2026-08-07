@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateTableScaleRefUUID` | `TranspRateTableScaleRefUUID` |
-| `TransportationRateTableUUID` | `TransportationRateTableUUID` |
-| `TransportationScaleUUID` | `TransportationScaleUUID` |
-| `TransportationAgreementUUID` | `TransportationAgreementUUID` |
-| `TranspRateTableDimensionIndex` | `TranspRateTableDimensionIndex` |
-| `TransportationCalculationBase` | `TransportationCalculationBase` |
-| `TranspRateTblScRefMinValIsSupp` | `TranspRateTblScRefMinValIsSupp` |
-| `TranspRateTblScRefMaxValIsSupp` | `TranspRateTblScRefMaxValIsSupp` |
-| `TranspRateTblScaleRefScaleType` | `TranspRateTblScaleRefScaleType` |
-| `TranspRateTblScaleRefQtyUnit` | `TranspRateTblScaleRefQtyUnit` |
-| `TranspRateTblScaleRefCurrency` | `TranspRateTblScaleRefCurrency` |
-| `TranspRateTblScaleRefCalcType` | `TranspRateTblScaleRefCalcType` |
-| `TranspRateTblScRefNoValIsSupp` | `TranspRateTblScRefNoValIsSupp` |
-| `TranspRateScRefIsRlvtForBrkWgt` | `TranspRateScRefIsRlvtForBrkWgt` |
-| `TranspCmmdtyCodeNmbrngSchm` | `TranspCmmdtyCodeNmbrngSchm` |
-| `I_FreightAgreementTP` | `FrtAgrmtRateTableScaleRef._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FreightAgreementRateTableTP` | `FrtAgrmtRateTableScaleRef._FreightAgreementRateTable : redirected to parent I_FreightAgreementRateTableTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateTableScaleRefUUID` | ✓ | |  |  |
+| `TransportationRateTableUUID` |  | |  |  |
+| `TransportationScaleUUID` |  | |  |  |
+| `TransportationAgreementUUID` |  | |  |  |
+| `TranspRateTableDimensionIndex` |  | |  |  |
+| `TransportationCalculationBase` |  | |  |  |
+| `TranspRateTblScRefMinValIsSupp` |  | |  |  |
+| `TranspRateTblScRefMaxValIsSupp` |  | |  |  |
+| `TranspRateTblScaleRefScaleType` |  | |  |  |
+| `TranspRateTblScaleRefQtyUnit` |  | |  |  |
+| `TranspRateTblScaleRefCurrency` |  | |  |  |
+| `TranspRateTblScaleRefCalcType` |  | |  |  |
+| `TranspRateTblScRefNoValIsSupp` |  | |  |  |
+| `TranspRateScRefIsRlvtForBrkWgt` |  | |  |  |
+| `TranspCmmdtyCodeNmbrngSchm` |  | |  |  |
+| `I_FreightAgreementTP` |  | |  | `FrtAgrmtRateTableScaleRef._FreightAgreement : redirected to I_FreightAgreementTP` |
+| `I_FreightAgreementRateTableTP` |  | |  | `FrtAgrmtRateTableScaleRef._FreightAgreementRateTable : redirected to parent I_FreightAgreementRateTableTP` |
 
 ## Source Code
 

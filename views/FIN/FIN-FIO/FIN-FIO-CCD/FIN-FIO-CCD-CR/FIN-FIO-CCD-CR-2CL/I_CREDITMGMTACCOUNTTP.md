@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `CreditSegment` | `CreditSegment` |
-| `BusinessPartnerIsCritical` | `BusinessPartnerIsCritical` |
-| `CreditAccountIsBlocked` | `CreditAccountIsBlocked` |
-| `CreditAccountBlockReason` | `CreditAccountBlockReason` |
-| `CreditAccountResubmissionDate` | `CreditAccountResubmissionDate` |
-| `CreditLimitAmount` | `} CreditLimitAmount` |
-| `CreditLimitValidityEndDate` | `CreditLimitValidityEndDate` |
-| `CreditLimitLastChangeDate` | `CreditLimitLastChangeDate` |
-| `CreditLimitCalculatedAmount` | `} CreditLimitCalculatedAmount` |
-| `CreditLimitIsZero` | `CreditLimitIsZero` |
-| `CreditLimitRequestedAmount` | `} CreditLimitRequestedAmount` |
-| `CrdtLmtIsReqdFrmAutomCalc` | `CrdtLmtIsReqdFrmAutomCalc` |
-| `CreditLimitReqdValidityEndDate` | `CreditLimitReqdValidityEndDate` |
-| `CreditLimitRequestDate` | `CreditLimitRequestDate` |
-| `CreditSegmentCurrency` | `CreditSegmentCurrency` |
-| `_CrdtMBusinessPartnerTP` | *Association* |
-| `_CrdtMAcctCrdtInsuranceTP` | *Association* |
-| `_CrdtMAcctCollateralTP` | *Association* |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `CreditSegment` | ✓ | |  |  |
+| `BusinessPartnerIsCritical` |  | |  |  |
+| `CreditAccountIsBlocked` |  | |  |  |
+| `CreditAccountBlockReason` |  | |  |  |
+| `CreditAccountResubmissionDate` |  | |  |  |
+| `CreditLimitAmount` |  | |  | `} CreditLimitAmount` |
+| `CreditLimitValidityEndDate` |  | |  |  |
+| `CreditLimitLastChangeDate` |  | |  |  |
+| `CreditLimitCalculatedAmount` |  | |  | `} CreditLimitCalculatedAmount` |
+| `CreditLimitIsZero` |  | |  |  |
+| `CreditLimitRequestedAmount` |  | |  | `} CreditLimitRequestedAmount` |
+| `CrdtLmtIsReqdFrmAutomCalc` |  | |  |  |
+| `CreditLimitReqdValidityEndDate` |  | |  |  |
+| `CreditLimitRequestDate` |  | |  |  |
+| `CreditSegmentCurrency` |  | |  |  |
+| `_CrdtMBusinessPartnerTP` | | ✓ | | |
+| `_CrdtMAcctCrdtInsuranceTP` | | ✓ | | |
+| `_CrdtMAcctCollateralTP` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Source Code
 

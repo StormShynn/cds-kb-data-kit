@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialManagementArea` | `FinancialManagementArea` |
-| key `FinMgmtAreaFiscalYear` | `FinMgmtAreaFiscalYear` |
-| `FinMgmtAreaFiscalYearVariant` | `FinMgmtAreaFiscalYearVariant` |
-| `FinMgmtAreaFiscalYearStartDate` | `FinMgmtAreaFiscalYearStartDate` |
-| `FinMgmtAreaFiscalYearEndDate` | `FinMgmtAreaFiscalYearEndDate` |
-| `CommitmentItemFiscalYear` | `CommitmentItemFiscalYear` |
-| `_FinMgmtArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  |  |
+| `FinMgmtAreaFiscalYear` | ✓ | |  |  |
+| `FinMgmtAreaFiscalYearVariant` |  | |  |  |
+| `FinMgmtAreaFiscalYearStartDate` |  | |  |  |
+| `FinMgmtAreaFiscalYearEndDate` |  | |  |  |
+| `CommitmentItemFiscalYear` |  | |  |  |
+| `_FinMgmtArea` | | ✓ | | |
 
 ## Source Code
 

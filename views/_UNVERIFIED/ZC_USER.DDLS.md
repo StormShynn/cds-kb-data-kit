@@ -29,23 +29,23 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EmpId` | `EmpId` |
-| key `DevId` | `DevId` |
-| `DevDescription` | `DevDescription` |
-| `Attachment` | `Attachment` |
-| `Mimetype` | `Mimetype` |
-| `Filename` | `Filename` |
-| `FileStatus` | `FileStatus` |
-| `Criticality` | `Criticality` |
-| `TemplateStatus` | `TemplateStatus` |
-| `TemplateCriticality` | `TemplateCriticality` |
-| `LocalCreatedBy` | `LocalCreatedBy` |
-| `LocalCreatedAt` | `LocalCreatedAt` |
-| `LocalLastChangedBy` | `LocalLastChangedBy` |
-| `LocalLastChangedAt` | `LocalLastChangedAt` |
-| `_UserDev` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EmpId` | ✓ | |  |  |
+| `DevId` | ✓ | |  |  |
+| `DevDescription` |  | |  |  |
+| `Attachment` |  | |  |  |
+| `Mimetype` |  | |  |  |
+| `Filename` |  | |  |  |
+| `FileStatus` |  | |  |  |
+| `Criticality` |  | |  |  |
+| `TemplateStatus` |  | |  |  |
+| `TemplateCriticality` |  | |  |  |
+| `LocalCreatedBy` |  | |  |  |
+| `LocalCreatedAt` |  | |  |  |
+| `LocalLastChangedBy` |  | |  |  |
+| `LocalLastChangedAt` |  | |  |  |
+| `_UserDev` | | ✓ | | |
 
 ## Source Code
 

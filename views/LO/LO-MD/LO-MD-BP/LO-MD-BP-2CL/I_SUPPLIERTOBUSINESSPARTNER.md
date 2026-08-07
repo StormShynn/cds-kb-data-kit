@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerUUID` | `partner_guid` |
-| `Supplier` | `cvi_vend_link.vendor` |
-| `_BusinessPartner` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |
+| `Supplier` |  | |  | `vendor` |
+| `_BusinessPartner` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

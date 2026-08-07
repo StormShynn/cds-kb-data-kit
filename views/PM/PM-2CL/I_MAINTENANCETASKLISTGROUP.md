@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `BillOfOperationsGroup` |
-| `_BillOfOperationsType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `_BillOfOperationsType` | | ✓ | | |
 
 ## Associations
 

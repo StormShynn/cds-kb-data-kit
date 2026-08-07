@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspCalculationSheetUUID` | `cast(db_key as /scmtms/transpcalcsheet_uuid preserving type)` |
-| `TransportationAgreementUUID` | `cast(owner_key as /scmtms/transpagrmt_uuid preserving type)` |
-| `TranspAgreementItemUUID` | `cast(agrmt_item_key as /scmtms/transpagrmt_itm_uuid preserving type)` |
-| `TranspChargeCalculationSheet` | `cast(tccs_id047 as /scmtms/vdm_fag_calc_sheet preserving type)` |
-| `_TransportationAgreement` | *Association* |
-| `_TranspAgreementItem` | *Association* |
-| `_TranspChrgCalcSheetItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspCalculationSheetUUID` | ✓ | |  | `cast(db_key as /scmtms/transpcalcsheet_uuid preserving type)` |
+| `TransportationAgreementUUID` |  | |  | `cast(owner_key as /scmtms/transpagrmt_uuid preserving type)` |
+| `TranspAgreementItemUUID` |  | |  | `cast(agrmt_item_key as /scmtms/transpagrmt_itm_uuid preserving type)` |
+| `TranspChargeCalculationSheet` |  | |  | `cast(tccs_id047 as /scmtms/vdm_fag_calc_sheet preserving type)` |
+| `_TransportationAgreement` | | ✓ | | |
+| `_TranspAgreementItem` | | ✓ | | |
+| `_TranspChrgCalcSheetItem` | | ✓ | | |
 
 ## Associations
 

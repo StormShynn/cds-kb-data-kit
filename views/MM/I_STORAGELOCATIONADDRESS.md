@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `StorageLocation` | `lgort` |
-| key `StorLocAddressSequenceNumber` | `lfdnr` |
-| `AddressID` | `adrnr` |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Address` | *Association* |
-| `_Address_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `StorageLocation` | ✓ | |  | `lgort` |
+| `StorLocAddressSequenceNumber` | ✓ | |  | `lfdnr` |
+| `AddressID` |  | |  | `adrnr` |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_Address_2` | | ✓ | | |
 
 ## Associations
 

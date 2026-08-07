@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtApplSts` | `SettlmtApplSts` |
-| key `Language` | `Language` |
-| `SettlmtApplStsDesc` | `SettlmtApplStsDesc` |
-| `_Language` | *Association* |
-| `_SettlmtApplSts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtApplSts` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SettlmtApplStsDesc` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_SettlmtApplSts` | | ✓ | | |
 
 ## Associations
 

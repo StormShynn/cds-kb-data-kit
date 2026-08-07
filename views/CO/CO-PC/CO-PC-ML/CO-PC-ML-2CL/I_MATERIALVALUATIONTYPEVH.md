@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventoryValuationType` | `vb.BWTAR` |
-| key `Plant` | `vb.BWKEY` |
-| `InventoryValuationCategory` | `vb.BWTTY` |
-| `InventoryValuationCategoryName` | `_InventoryValCategoryText.InventoryValuationCategoryName` |
-| `ValuationArea` | `vb.BWKEY` |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryValuationType` | ✓ | |  | `BWTAR` |
+| `Plant` | ✓ | |  | `BWKEY` |
+| `InventoryValuationCategory` |  | |  | `BWTTY` |
+| `InventoryValuationCategoryName` |  | | `_InventoryValCategoryText` | `InventoryValuationCategoryName` |
+| `ValuationArea` |  | |  | `BWKEY` |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

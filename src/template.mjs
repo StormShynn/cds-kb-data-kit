@@ -102,6 +102,34 @@ function renderPropertyTable(view) {
 
 // ── Fields table ────────────────────────────────────────────────────────────
 
+// Splits a field's source expression into the association alias it's
+// reached through (if any) and the field behind it — "_Assoc.Field" becomes
+// via="_Assoc", source="Field" — instead of leaving that in one dotted
+// string. Only pure "alias.field[.field...]" paths qualify; anything with
+// an operator/call/space in it (a cast, case, or other computed expression)
+// is left whole in `source` with no `via`, since there's no alias to pull
+// out of it. Returns both blank when there's no expression, or the
+// expression is just the field's own name repeated (nothing to add).
+function splitViaSource(expression, fieldName) {
+  if (!expression || expression === fieldName) return { via: '', source: '' };
+  const isPureQualifiedPath = /^\w+(?:\.\w+)*$/.test(expression);
+  if (isPureQualifiedPath && expression.includes('.')) {
+    const dot = expression.lastIndexOf('.');
+    const via = expression.slice(0, dot);
+    const source = expression.slice(dot + 1);
+    // Only surface `via` for a real association traversal — by CDS
+    // convention its alias starts with "_" (see parser.mjs's association
+    // regexes). A qualified reference through anything else is just the
+    // view's own base FROM alias repeated on every column (a DDL style
+    // choice, not a traversal) and adds no information beyond the field
+    // name — treat it like an unqualified reference instead of surfacing
+    // that alias as "Via" on every single row.
+    if (via.startsWith('_')) return { via, source };
+    return { via: '', source: source === fieldName ? '' : source };
+  }
+  return { via: '', source: expression };
+}
+
 export function renderFieldsTable(view) {
   const fields = view.fields || [];
   const associations = view.associations || [];
@@ -112,48 +140,50 @@ export function renderFieldsTable(view) {
 
   // Fields sourced from the Hub catalog (no DDL) carry type/length/description
   // that DDL-parsed fields don't — show the fuller table when that data is
-  // actually present, otherwise keep the plain Field/Data Source layout.
+  // actually present, otherwise keep the plain Field/Source layout.
   // This only changes what's DISPLAYED for a field; it has no effect on
   // frontmatter tags/release_state, which other workflows key off of.
   const hasRichMetadata = fields.some(f => f.dataType || f.description);
 
+  // Field, Key, and Association are always the first 3 columns in either
+  // table shape — a bare "key `Name`"/"*Association*" marker mixed into a
+  // text column meant something else (a value, an expression) couldn't be
+  // told apart from the marker without re-parsing that text; a dedicated
+  // column per marker means "is this a key" and "is this an association
+  // nav property, not a data field" are their own answer, not a substring
+  // to detect.
   const rows = [];
 
   if (hasRichMetadata) {
     for (const f of fields) {
-      const name = f.isKey ? `key \`${f.name}\`` : `\`${f.name}\``;
       const type = f.dataType ? `\`${f.dataType}${f.length ? `(${f.length})` : ''}\`` : '';
-      rows.push(`| ${name} | ${type} | ${f.description || ''} |`);
+      rows.push(`| \`${f.name}\` | ${f.isKey ? '✓' : ''} | | ${type} | ${f.description || ''} |`);
     }
     for (const a of associations) {
       if (a.isInSelect !== false) {
-        rows.push(`| \`${a.alias}\` | | *Association* |`);
+        rows.push(`| \`${a.alias}\` | | ✓ | | |`);
       }
     }
     if (rows.length === 0) return '';
     return [
       '## Fields',
       '',
-      '| Field | Type | Description |',
-      '|---|---|---|',
+      '| Field | Key | Association | Type | Description |',
+      '|---|---|---|---|---|',
       ...rows,
     ].join('\n');
   }
 
-  // Regular fields
+  // Regular (DDL-derived) fields
   for (const f of fields) {
-    const dataSource = f.expression || f.name;
-    if (f.isKey) {
-      rows.push(`| key \`${f.name}\` | \`${dataSource}\` |`);
-    } else {
-      rows.push(`| \`${f.name}\` | \`${dataSource}\` |`);
-    }
+    const { via, source } = splitViaSource(f.expression, f.name);
+    rows.push(`| \`${f.name}\` | ${f.isKey ? '✓' : ''} | | ${via ? `\`${via}\`` : ''} | ${source ? `\`${source}\`` : ''} |`);
   }
 
   // Associations listed in select list
   for (const a of associations) {
     if (a.isInSelect !== false) {
-      rows.push(`| \`${a.alias}\` | *Association* |`);
+      rows.push(`| \`${a.alias}\` | | ✓ | | |`);
     }
   }
 
@@ -162,8 +192,8 @@ export function renderFieldsTable(view) {
   return [
     '## Fields',
     '',
-    '| Field | Data Source |',
-    '|---|---|',
+    '| Field | Key | Association | Via | Source |',
+    '|---|---|---|---|---|',
     ...rows,
   ].join('\n');
 }

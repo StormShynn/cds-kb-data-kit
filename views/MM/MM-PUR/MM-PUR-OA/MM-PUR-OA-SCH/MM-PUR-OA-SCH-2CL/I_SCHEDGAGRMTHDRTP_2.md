@@ -30,63 +30,63 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `PurchasingDocumentType` |
-| `PurchasingDocumentSubtype` | `PurchasingDocumentSubtype` |
-| `PurchasingDocumentTypeName` | `PurchasingDocumentTypeName` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreatedByUserFullName` | `CreatedByUserFullName` |
-| `CreationDate` | `CreationDate` |
-| `Language` | `Language` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `TargetAmount` | `TargetAmount` |
-| `AbsoluteExchangeRate` | `AbsoluteExchangeRate` |
-| `ExchRateIsIndirectQuotation` | `ExchRateIsIndirectQuotation` |
-| `EffectiveExchangeRate` | `EffectiveExchangeRate` |
-| `ExchangeRateIsFixed` | `ExchangeRateIsFixed` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `PurchasingDocumentOrderDate` | `PurchasingDocumentOrderDate` |
-| `ScheduleAgreementHasReleaseDoc` | `ScheduleAgreementHasReleaseDoc` |
-| `Supplier` | `Supplier` |
-| `SupplierAddressID` | `SupplierAddressID` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `PurchasingDocumentOrigin` | `PurchasingDocumentOrigin` |
-| `QuotationSubmissionDate` | `QuotationSubmissionDate` |
-| `SupplierQuotationExternalID` | `SupplierQuotationExternalID` |
-| `VATRegistrationCountry` | `VATRegistrationCountry` |
-| `InvoicingParty` | `InvoicingParty` |
-| `SupplyingSupplier` | `SupplyingSupplier` |
-| `SupplierRespSalesPersonName` | `SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `SupplierPhoneNumber` |
-| `CorrespncExternalReference` | `CorrespncExternalReference` |
-| `CorrespncInternalReference` | `CorrespncInternalReference` |
-| `CompanyVATRegistration` | `CompanyVATRegistration` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `PurchasingDocumentDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `ReleaseIsNotCompleted` | `ReleaseIsNotCompleted` |
-| `PurchasingCompletenessStatus` | `PurchasingCompletenessStatus` |
-| `PurchasingProcessingStatus` | `PurchasingProcessingStatus` |
-| `_SchedgAgrmtItm` | *Association* |
-| `_SchedgAgrmtPartner` | *Association* |
-| `_SchedgAgrmtHeaderNotes` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |
+| `PurchasingDocumentTypeName` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreatedByUserFullName` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `Language` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `TargetAmount` |  | |  |  |
+| `AbsoluteExchangeRate` |  | |  |  |
+| `ExchRateIsIndirectQuotation` |  | |  |  |
+| `EffectiveExchangeRate` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PurchasingDocumentOrderDate` |  | |  |  |
+| `ScheduleAgreementHasReleaseDoc` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierAddressID` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |
+| `VATRegistrationCountry` |  | |  |  |
+| `InvoicingParty` |  | |  |  |
+| `SupplyingSupplier` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `CorrespncExternalReference` |  | |  |  |
+| `CorrespncInternalReference` |  | |  |  |
+| `CompanyVATRegistration` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |
+| `PurchasingCompletenessStatus` |  | |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |
+| `_SchedgAgrmtItm` | | ✓ | | |
+| `_SchedgAgrmtPartner` | | ✓ | | |
+| `_SchedgAgrmtHeaderNotes` | | ✓ | | |
 
 ## Source Code
 

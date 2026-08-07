@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListSequence` | `TaskListSequence` |
-| key `TaskListOperationInternalId` | `TaskListOperationInternalId` |
-| key `TaskListOpBOMItmIntVersCounter` | `TaskListOpBOMItmIntVersCounter` |
-| `MaintenanceTaskListOperation` | `MaintenanceTaskListOperation` |
-| `TextObjectKey` | `TextObjectKey` |
-| `Language` | `Language` |
-| `PlainLongText` | `PlainLongText` |
-| `_Header` | *Association* |
-| `_Operation` | *Association* |
-| `_NonHistOp` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListSequence` | ✓ | |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |
+| `TextObjectKey` |  | |  |  |
+| `Language` |  | |  |  |
+| `PlainLongText` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_Operation` | | ✓ | | |
+| `_NonHistOp` | | ✓ | | |
 
 ## Source Code
 

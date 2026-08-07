@@ -27,23 +27,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `JointVenture` | `cast( vname as jv_name preserving type )` |
-| key `JointVentureEquityType` | `etype` |
-| key `JntVntrEquityFundingDateValue` | `fdate` |
-| `JointVentureEquityFundingDate` | `fdate` |
-| `JointVentureEquityGroup` | `egrup` |
-| `JointVentureEquityGroupActive` | `egroupact` |
-| `JointVentureDefBillCurrency` | `bcurr` |
-| `JVAFundingGrpInEquityGrp` | `fundgroup` |
-| `JVAEquityGroupIntrstCalcGrpID` | `ic_group` |
-| `JointVentureEquityTypeName` | `_JntVntrEquityTypeDesc.JointVentureEquityTypeName` |
-| `_CompanyCode` | *Association* |
-| `_JointVenture` | *Association* |
-| `_JntVntrEquityType` | *Association* |
-| `_JntVntrEquityTypeDesc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` |
+| `JointVentureEquityType` | ✓ | |  | `etype` |
+| `JntVntrEquityFundingDateValue` | ✓ | |  | `fdate` |
+| `JointVentureEquityFundingDate` |  | |  | `fdate` |
+| `JointVentureEquityGroup` |  | |  | `egrup` |
+| `JointVentureEquityGroupActive` |  | |  | `egroupact` |
+| `JointVentureDefBillCurrency` |  | |  | `bcurr` |
+| `JVAFundingGrpInEquityGrp` |  | |  | `fundgroup` |
+| `JVAEquityGroupIntrstCalcGrpID` |  | |  | `ic_group` |
+| `JointVentureEquityTypeName` |  | | `_JntVntrEquityTypeDesc` | `JointVentureEquityTypeName` |
+| `_CompanyCode` | | ✓ | | |
+| `_JointVenture` | | ✓ | | |
+| `_JntVntrEquityType` | | ✓ | | |
+| `_JntVntrEquityTypeDesc` | | ✓ | | |
 
 ## Associations
 

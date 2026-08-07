@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |
-| key `FiscalYear` | `I_FiscalYearPeriod.FiscalYear` |
-| key `FiscalPeriod` | `I_FiscalYearPeriod.FiscalPeriod` |
-| `FiscalYearVariant` | `I_FiscalYearPeriod.FiscalYearVariant` |
-| `FiscalPeriodStartDate` | `I_FiscalYearPeriod.FiscalPeriodStartDate` |
-| `FiscalPeriodEndDate` | `I_FiscalYearPeriod.FiscalPeriodEndDate` |
-| `IsSpecialPeriod` | `I_FiscalYearPeriod.IsSpecialPeriod` |
-| `FiscalYearStartDate` | `I_FiscalYearPeriod.FiscalYearStartDate` |
-| `FiscalYearEndDate` | `I_FiscalYearPeriod.FiscalYearEndDate` |
-| `NextFiscalPeriod` | `I_FiscalYearPeriod.NextFiscalPeriod` |
-| `NextFiscalPeriodFiscalYear` | `I_FiscalYearPeriod.NextFiscalPeriodFiscalYear` |
-| `FiscalYearPeriod` | `I_FiscalYearPeriod.FiscalYearPeriod` |
-| `_FiscalYearVariant` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |
+| `FiscalYear` | ✓ | |  |  |
+| `FiscalPeriod` | ✓ | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `FiscalPeriodStartDate` |  | |  |  |
+| `FiscalPeriodEndDate` |  | |  |  |
+| `IsSpecialPeriod` |  | |  |  |
+| `FiscalYearStartDate` |  | |  |  |
+| `FiscalYearEndDate` |  | |  |  |
+| `NextFiscalPeriod` |  | |  |  |
+| `NextFiscalPeriodFiscalYear` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

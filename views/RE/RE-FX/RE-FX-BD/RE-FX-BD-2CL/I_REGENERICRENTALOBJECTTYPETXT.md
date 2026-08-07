@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `REGenericRentalObjectType` | `cast( dd07t.domvalue_l as regoobjtype )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `REGenericRentalObjectTypeText` | `dd07t.ddtext` |
-| `_Language` | *Association* |
-| `_REGenericRentalObjectType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `REGenericRentalObjectType` | ✓ | |  | `cast( dd07t.domvalue_l as regoobjtype )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `REGenericRentalObjectTypeText` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_REGenericRentalObjectType` | | ✓ | | |
 
 ## Associations
 

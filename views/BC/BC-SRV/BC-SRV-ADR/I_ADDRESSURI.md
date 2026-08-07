@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `AddressID` |
-| key `AddressPersonID` | `AddressPersonID` |
-| key `CommMediumSequenceNumber` | `CommMediumSequenceNumber` |
-| `AddressManagementURIType` | `AddressManagementURIType` |
-| `URLIsCurrentDefault` | `URLIsCurrentDefault` |
-| `UniformResourceIdentifier` | `UniformResourceIdentifier` |
-| `_AddressCommunicationRemark` | *Association* |
-| `_AddressCommunicationUsage` | *Association* |
-| `_AddressManagementURIType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |
+| `AddressPersonID` | ✓ | |  |  |
+| `CommMediumSequenceNumber` | ✓ | |  |  |
+| `AddressManagementURIType` |  | |  |  |
+| `URLIsCurrentDefault` |  | |  |  |
+| `UniformResourceIdentifier` |  | |  |  |
+| `_AddressCommunicationRemark` | | ✓ | | |
+| `_AddressCommunicationUsage` | | ✓ | | |
+| `_AddressManagementURIType` | | ✓ | | |
 
 ## Associations
 

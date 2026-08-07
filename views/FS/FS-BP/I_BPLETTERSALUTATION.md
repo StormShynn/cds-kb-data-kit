@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPLetterSalutation` | `tp02.title_let` |
-| `BusinessPartnerCategory` | `tp02.type` |
-| `_Text` | *Association* |
-| `_BPFinancialServicesExtn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPLetterSalutation` | ✓ | |  | `title_let` |
+| `BusinessPartnerCategory` |  | |  | `type` |
+| `_Text` | | ✓ | | |
+| `_BPFinancialServicesExtn` | | ✓ | | |
 
 ## Associations
 

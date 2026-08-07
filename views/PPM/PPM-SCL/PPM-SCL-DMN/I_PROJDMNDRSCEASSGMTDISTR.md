@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjDmndRsceAssgmtDistrUUID` | `ProjDmndRsceAssgmtDistrUUID` |
-| `ProjDmndRsceAssgmtUUID` | `ProjDmndRsceAssgmtUUID` |
-| `ProjectDemandUUID` | `ProjectDemandUUID` |
-| `ProjDmndRsceAssgmtDistrYearVal` | `ProjDmndRsceAssgmtDistrYearVal` |
-| `ProjDmndRsceAssgmtDistrPerdVal` | `ProjDmndRsceAssgmtDistrPerdVal` |
-| `ProjDmndRsceAssgmtDistrQty` | `} ProjDmndRsceAssgmtDistrQty` |
-| `ProjDmndRsceAssgmtDistrQtyUnit` | `ProjDmndRsceAssgmtDistrQtyUnit` |
-| `ProjDmndRsceDistrPerdAmt` | `} ProjDmndRsceDistrPerdAmt` |
-| `ProjDmndRsceDistrPerdAmtCur` | `ProjDmndRsceDistrPerdAmtCur` |
-| `ProjDmndRsceDistrRevenueAmt` | `} ProjDmndRsceDistrRevenueAmt` |
-| `ProjDmndRsceDistrRevenueAmtCur` | `ProjDmndRsceDistrRevenueAmtCur` |
-| `ProjDmndRsceAssgmtDistrStrtDte` | `ProjDmndRsceAssgmtDistrStrtDte` |
-| `ProjDmndRsceAssgmtDistrEndDte` | `ProjDmndRsceAssgmtDistrEndDte` |
-| `ProjDmndRsceDistrIsNotSupplied` | `ProjDmndRsceDistrIsNotSupplied` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Assignment` | *Association* |
-| `_Root` | *Association* |
-| `_ProjDmndRsceDistrQtyUnit` | *Association* |
-| `_ProjDmndRsceDistrPerdAmtCur` | *Association* |
-| `_ProjDmndRsceDistrRevnAmtCur` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjDmndRsceAssgmtDistrUUID` | ✓ | |  |  |
+| `ProjDmndRsceAssgmtUUID` |  | |  |  |
+| `ProjectDemandUUID` |  | |  |  |
+| `ProjDmndRsceAssgmtDistrYearVal` |  | |  |  |
+| `ProjDmndRsceAssgmtDistrPerdVal` |  | |  |  |
+| `ProjDmndRsceAssgmtDistrQty` |  | |  | `} ProjDmndRsceAssgmtDistrQty` |
+| `ProjDmndRsceAssgmtDistrQtyUnit` |  | |  |  |
+| `ProjDmndRsceDistrPerdAmt` |  | |  | `} ProjDmndRsceDistrPerdAmt` |
+| `ProjDmndRsceDistrPerdAmtCur` |  | |  |  |
+| `ProjDmndRsceDistrRevenueAmt` |  | |  | `} ProjDmndRsceDistrRevenueAmt` |
+| `ProjDmndRsceDistrRevenueAmtCur` |  | |  |  |
+| `ProjDmndRsceAssgmtDistrStrtDte` |  | |  |  |
+| `ProjDmndRsceAssgmtDistrEndDte` |  | |  |  |
+| `ProjDmndRsceDistrIsNotSupplied` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Assignment` | | ✓ | | |
+| `_Root` | | ✓ | | |
+| `_ProjDmndRsceDistrQtyUnit` | | ✓ | | |
+| `_ProjDmndRsceDistrPerdAmtCur` | | ✓ | | |
+| `_ProjDmndRsceDistrRevnAmtCur` | | ✓ | | |
 
 ## Associations
 

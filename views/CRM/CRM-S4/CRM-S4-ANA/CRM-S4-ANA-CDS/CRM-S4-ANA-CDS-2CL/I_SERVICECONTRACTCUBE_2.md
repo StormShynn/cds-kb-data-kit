@@ -28,76 +28,76 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceObjectType` | `ServiceObjectType` |
-| key `ServiceContract` | `ServiceContract` |
-| `ServiceDocumentDescription` | `ServiceDocumentDescription` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceContractType` | `ServiceContractType` |
-| `RefBusinessSolutionOrder` | `RefBusinessSolutionOrder` |
-| `ServiceDocumentStatus` | `ServiceDocumentStatus` |
-| `ServiceContractStatus` | `ServiceContractStatus` |
-| `ServiceDocumentIsOpen` | `ServiceDocumentIsOpen` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `DisplayCurrency` | `cast(:P_DisplayCurrency as currency)` |
-| `ServiceDocNetAmount` | `} currency_conversion( amount => ServiceDocNetAmount, source_currency => TransactionCurrency, target_currency => $parameters.P_DisplayCurrency, exchange_rate_type => 'M', exchange_rate_date => cast( $session.system_date as abap.dats), error_handling => 'KEEP_UNCONVERTED' )` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesOrganizationOrgUnitID` | `SalesOrganizationOrgUnitID` |
-| `SalesOfficeOrgUnitID` | `SalesOfficeOrgUnitID` |
-| `SalesGroupOrgUnitID` | `SalesGroupOrgUnitID` |
-| `ServiceOrganization` | `ServiceOrganization` |
-| `ServiceContractStartDate` | `ServiceContractStartDate` |
-| `ServiceContractEndDate` | `ServiceContractEndDate` |
-| `ServiceContractStartDateTime` | `ServiceContractStartDateTime` |
-| `ServiceContractEndDateTime` | `ServiceContractEndDateTime` |
-| `FirstDayOfMonthDate` | `FirstDayOfMonthDate` |
-| `LastDayOfMonthDate` | `LastDayOfMonthDate` |
-| `StartOfMonthDateTime` | `cast(cast(cast(concat(FirstDayOfMonthDate, '000000') as abap.numc(15)) as abap.dec(15,0)) as tzntstmps preserving type)` |
-| `EndOfMonthDateTime` | `cast(cast(cast(concat(LastDayOfMonthDate, '000000') as abap.numc(15)) as abap.dec(15,0)) as tzntstmps preserving type)` |
-| `SoldToPartyCountry` | `SoldToPartyCountry` |
-| `SoldToPartyRegion` | `SoldToPartyRegion` |
-| `SoldToParty` | `SoldToParty` |
-| `ResponsibleEmployee` | `ResponsibleEmployee` |
-| `ContactPersonBusinessPartnerId` | `ContactPerson` |
-| `ShipToParty` | `ShipToParty` |
-| `NmbrOfExpiredSrvcContracts` | `NmbrOfExpiredSrvcContracts` |
-| `NmbrOfExpiredSrvcContrCurWeek` | `NmbrOfExpiredSrvcContrCurWeek` |
-| `NmbrOfExpiredSrvcContrNextWeek` | `NmbrOfExpiredSrvcContrNextWeek` |
-| `NmbrOfExpiredSrvcContrIn2Weeks` | `NmbrOfExpiredSrvcContrIn2Weeks` |
-| `NmbrOfExpiredSrvcContrIn3Weeks` | `NmbrOfExpiredSrvcContrIn3Weeks` |
-| `IsExpired` | `IsExpired` |
-| `_ServiceObjType` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_ServiceContractType` | *Association* |
-| `_ServiceDocumentStatus` | *Association* |
-| `_SrvcDocLifecycleStatus` | *Association* |
-| `_ServiceContractStatus` | *Association* |
-| `_ServiceDocumentIsOpen` | *Association* |
-| `_CurrentDate` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesGroupOrgUnit` | *Association* |
-| `_SalesGroupOrgUnit_2` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesOfficeOrgUnit` | *Association* |
-| `_SalesOfficeOrgUnit_2` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SalesOrganizationOrgUnit` | *Association* |
-| `_SalesOrganizationOrgUnit_2` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_SoldToPartyCountry` | *Association* |
-| `_SoldToPartyRegion` | *Association* |
-| `_TransactionCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceDocumentDescription` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceContractType` |  | |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |
+| `ServiceDocumentStatus` |  | |  |  |
+| `ServiceContractStatus` |  | |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as currency)` |
+| `ServiceDocNetAmount` |  | |  | `} currency_conversion( amount => ServiceDocNetAmount, source_currency => TransactionCurrency, target_currency => $parameters.P_DisplayCurrency, exchange_rate_type => 'M', exchange_rate_date => cast( $session.system_date as abap.dats), error_handling => 'KEEP_UNCONVERTED' )` |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |
+| `ServiceOrganization` |  | |  |  |
+| `ServiceContractStartDate` |  | |  |  |
+| `ServiceContractEndDate` |  | |  |  |
+| `ServiceContractStartDateTime` |  | |  |  |
+| `ServiceContractEndDateTime` |  | |  |  |
+| `FirstDayOfMonthDate` |  | |  |  |
+| `LastDayOfMonthDate` |  | |  |  |
+| `StartOfMonthDateTime` |  | |  | `cast(cast(cast(concat(FirstDayOfMonthDate, '000000') as abap.numc(15)) as abap.dec(15,0)) as tzntstmps preserving type)` |
+| `EndOfMonthDateTime` |  | |  | `cast(cast(cast(concat(LastDayOfMonthDate, '000000') as abap.numc(15)) as abap.dec(15,0)) as tzntstmps preserving type)` |
+| `SoldToPartyCountry` |  | |  |  |
+| `SoldToPartyRegion` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |
+| `ShipToParty` |  | |  |  |
+| `NmbrOfExpiredSrvcContracts` |  | |  |  |
+| `NmbrOfExpiredSrvcContrCurWeek` |  | |  |  |
+| `NmbrOfExpiredSrvcContrNextWeek` |  | |  |  |
+| `NmbrOfExpiredSrvcContrIn2Weeks` |  | |  |  |
+| `NmbrOfExpiredSrvcContrIn3Weeks` |  | |  |  |
+| `IsExpired` |  | |  |  |
+| `_ServiceObjType` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_ServiceContractType` | | ✓ | | |
+| `_ServiceDocumentStatus` | | ✓ | | |
+| `_SrvcDocLifecycleStatus` | | ✓ | | |
+| `_ServiceContractStatus` | | ✓ | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | |
+| `_CurrentDate` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesGroupOrgUnit` | | ✓ | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_SoldToPartyCountry` | | ✓ | | |
+| `_SoldToPartyRegion` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
 
 ## Associations
 

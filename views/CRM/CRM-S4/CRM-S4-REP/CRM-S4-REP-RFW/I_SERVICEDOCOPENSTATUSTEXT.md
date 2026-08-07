@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentIsOpen` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `ServiceDocumentIsOpenName` | `ddtext` |
-| `_ServiceDocOpenStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentIsOpen` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ServiceDocumentIsOpenName` |  | |  | `ddtext` |
+| `_ServiceDocOpenStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

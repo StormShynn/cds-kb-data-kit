@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyNodeText.Language` |
-| key `CnsldtnGrantHierarchy` | `cast(_HierarchyNodeText.UniversalHierarchy as fincs_granthierarchy preserving type )` |
-| key `HierarchyNode` | `_HierarchyNodeText.HierarchyNode` |
-| key `ValidityEndDate` | `_HierarchyNodeText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyNodeText.ValidityStartDate` |
-| `ParentNode` | `_HierarchyNodeText.ParentNode` |
-| `HierarchyVersion` | `_HierarchyNodeText.HierarchyVersion` |
-| `HierarchyNodeText` | `_HierarchyNodeText.HierarchyNodeText` |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
+| `CnsldtnGrantHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.UniversalHierarchy as fincs_granthierarchy preserving type )` |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

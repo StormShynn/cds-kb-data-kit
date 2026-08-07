@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequest` | `DebitMemoRequestItemText.DebitMemoRequest` |
-| key `DebitMemoRequestItem` | `DebitMemoRequestItemText.DebitMemoRequestItem` |
-| key `Language` | `DebitMemoRequestItemText.Language` |
-| key `LongTextID` | `DebitMemoRequestItemText.LongTextID` |
-| `LongTextIDForEdit` | `DebitMemoRequestItemText.LongTextIDForEdit` |
-| `LanguageForEdit` | `DebitMemoRequestItemText.LanguageForEdit` |
-| `LongText` | `DebitMemoRequestItemText.LongText` |
-| `DebitMemoRequestType` | `DebitMemoRequestItemText.DebitMemoRequestType` |
-| `SalesOrganization` | `DebitMemoRequestItemText.SalesOrganization` |
-| `DistributionChannel` | `DebitMemoRequestItemText.DistributionChannel` |
-| `OrganizationDivision` | `DebitMemoRequestItemText.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_DebitMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |
+| `DebitMemoRequestItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `DebitMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_DebitMemoRequest` | | ✓ | | |
 
 ## Source Code
 

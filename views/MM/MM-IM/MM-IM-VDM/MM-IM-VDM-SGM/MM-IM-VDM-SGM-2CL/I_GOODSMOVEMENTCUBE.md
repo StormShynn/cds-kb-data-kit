@@ -29,153 +29,153 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| key `MaterialDocumentRecordType` | `MaterialDocumentRecordType` |
-| `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `Material` | `Material` |
-| `Batch` | `Batch` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `InventoryStockType` | `InventoryStockType` |
-| `StockOwner` | `StockOwner` |
-| `CompanyCode` | `CompanyCode` |
-| `InventorySpecialStockValnType` | `InventorySpecialStockValnType` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `MaterialBaseUnit` | `MaterialBaseUnit` |
-| `IsReversalMovementType` | `IsReversalMovementType` |
-| `MaterialGroup` | `I_AugmentedGoodsMovement._Material.MaterialGroup` |
-| `MaterialType` | `I_AugmentedGoodsMovement._Material.MaterialType` |
-| `IssuingOrReceivingPlant` | `IssuingOrReceivingPlant` |
-| `IssuingOrReceivingStorageLoc` | `IssuingOrReceivingStorageLoc` |
-| `IssgOrRcvgMaterial` | `IssgOrRcvgMaterial` |
-| `IssgOrRcvgBatch` | `IssgOrRcvgBatch` |
-| `IssgOrRcvgSpclStockInd` | `IssgOrRcvgSpclStockInd` |
-| `IssuingOrReceivingStockType` | `IssuingOrReceivingStockType` |
-| `ResourceID` | `ResourceID` |
-| `IssgOrRcvgResourceID` | `IssgOrRcvgResourceID` |
-| `GoodsMovementIsCancelled` | `GoodsMovementIsCancelled` |
-| `GoodsMovementCancellationType` | `GoodsMovementCancellationType` |
-| `DocumentDate` | `DocumentDate` |
-| `PostingDate` | `PostingDate` |
-| `FiscalYearVariant` | `FiscalYearVariant` |
-| `FiscalYear` | `FiscalYear` |
-| `FiscalYearPeriod` | `FiscalYearPeriod` |
-| `YearDay` | `YearDay` |
-| `YearWeek` | `YearWeek` |
-| `YearMonth` | `YearMonth` |
-| `YearQuarter` | `YearQuarter` |
-| `CalendarQuarter` | `CalendarQuarter` |
-| `CalendarMonth` | `CalendarMonth` |
-| `CalendarWeek` | `CalendarWeek` |
-| `CalendarDay` | `CalendarDay` |
-| `WeekDay` | `WeekDay` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `ManufacturingOrder` | `ManufacturingOrder` |
-| `ManufacturingOrderItem` | `ManufacturingOrderItem` |
-| `PurchasingGroup` | `I_AugmentedGoodsMovement._PurchaseOrder.PurchasingGroup` |
-| `PurchasingOrganization` | `cast(I_AugmentedGoodsMovement._PurchaseOrder.PurchasingOrganization as nsdm_ekorg preserving type)` |
-| `SalesOrganization` | `I_AugmentedGoodsMovement._SalesOrder.SalesOrganization` |
-| `DistributionChannel` | `I_AugmentedGoodsMovement._SalesOrder.DistributionChannel` |
-| `OrganizationDivision` | `cast(I_AugmentedGoodsMovement._SalesOrder.OrganizationDivision as nsdm_sales_division preserving type)` |
-| `SalesGroup` | `I_AugmentedGoodsMovement._SalesOrder.SalesGroup` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `GoodsMovementReasonCode` | `GoodsMovementReasonCode` |
-| `InventoryValuationType` | `InventoryValuationType` |
-| `Supplier` | `Supplier` |
-| `Customer` | `Customer` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `CostObject` | `CostObject` |
-| `CostCenter` | `CostCenter` |
-| `ControllingArea` | `ControllingArea` |
-| `ProfitabilitySegment` | `ProfitabilitySegment` |
-| `ProfitabilitySegment_2` | `ProfitabilitySegment_2` |
-| `ProfitCenter` | `ProfitCenter` |
-| `GLAccount` | `GLAccount` |
-| `FunctionalArea` | `FunctionalArea` |
-| `StockChangeCategory` | `StockChangeCategory` |
-| `IsEffectiveGoodsMovement` | `IsEffectiveGoodsMovement` |
-| `IsConsumptionMovement` | `IsConsumptionMovement` |
-| `IsCrossPlantTransfer` | `IsCrossPlantTransfer` |
-| `IsStorageLocChangeByTransf` | `IsStorageLocChangeByTransf` |
-| `IsMaterialChangeByTransf` | `IsMaterialChangeByTransf` |
-| `IsBatchChangeByTransf` | `IsBatchChangeByTransf` |
-| `IsSpclStkTypeChangeByTransf` | `IsSpclStkTypeChangeByTransf` |
-| `IsStockTypeChangeByTransf` | `IsStockTypeChangeByTransf` |
-| `NumberOfGoodsMovements` | `NumberOfGoodsMovements` |
-| `NumberOfGoodsIssues` | `NumberOfGoodsIssues` |
-| `NumberOfGoodsReceipts` | `NumberOfGoodsReceipts` |
-| `GoodsMovementStkAmtInCCCrcy` | `GoodsMovementStkAmtInCCCrcy` |
-| `GoodsMvtCnsmpnAmtInCCCrcy` | `GoodsMvtCnsmpnAmtInCCCrcy` |
-| `GoodsIssueAmountInCoCodeCrcy` | `GoodsIssueAmountInCoCodeCrcy` |
-| `GoodsReceiptAmountInCoCodeCrcy` | `GoodsReceiptAmountInCoCodeCrcy` |
-| `MatlStkChangeQtyInBaseUnit` | `MatlStkChangeQtyInBaseUnit` |
-| `MatlCnsmpnQtyInMatlBaseUnit` | `MatlCnsmpnQtyInMatlBaseUnit` |
-| `MinCnsmpnQtyInBaseUnit` | `cast( abs(MatlCnsmpnQtyInMatlBaseUnit) as nsdm_min_cons_qty preserving type)` |
-| `MaxCnsmpnQtyInBaseUnit` | `cast( abs(MatlCnsmpnQtyInMatlBaseUnit) as nsdm_max_cons_qty preserving type)` |
-| `GoodsIssueQtyInBaseUnit` | `GoodsIssueQtyInBaseUnit` |
-| `MinGoodsIssueQtyInBaseUnit` | `cast( abs(GoodsIssueQtyInBaseUnit) as nsdm_min_gi_qty preserving type)` |
-| `MaxGoodsIssueQtyInBaseUnit` | `cast( abs(GoodsIssueQtyInBaseUnit) as nsdm_max_gi_qty preserving type)` |
-| `GoodsReceiptQtyInBaseUnit` | `GoodsReceiptQtyInBaseUnit` |
-| `MinGoodsRcptQtyInBaseUnit` | `cast( abs(GoodsReceiptQtyInBaseUnit) as nsdm_min_gr_qty preserving type)` |
-| `MaxGoodsRcptQtyInBaseUnit` | `cast( abs(GoodsReceiptQtyInBaseUnit) as nsdm_max_gr_qty preserving type)` |
-| `TotalGdsMvtQtyInBaseUnit` | `TotalGdsMvtQtyInBaseUnit` |
-| `FirstGoodsMovementPostingDate` | `cast ( PostingDate as nsdm_first_mvt_posting_date preserving type)` |
-| `LastGoodsMovementPostingDate` | `cast ( PostingDate as nsdm_last_mvt_posting_date preserving type)` |
-| `IsStorLocAuthznCheckActive` | `IsStorLocAuthznCheckActive` |
-| `IsIssgOrRcvgStorLocAuthChkActv` | `IsIssgOrRcvgStorLocAuthChkActv` |
-| `_PurchasingGroup` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_Product` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_Batch` | *Association* |
-| `_MaterialType` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Material` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_InventoryStockType` | *Association* |
-| `_IssgOrRcvgMaterial` | *Association* |
-| `_IssuingOrReceivingPlant` | *Association* |
-| `_IssuingOrReceivingStorageLoc` | *Association* |
-| `_IssgOrRcvgSpclStockInd` | *Association* |
-| `_IssuingOrReceivingStockType` | *Association* |
-| `_CostCenter` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_AccountAssignmentCategory` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_GLAccount` | *Association* |
-| `_FunctionalArea` | *Association* |
-| `_GoodsMovementType` | *Association* |
-| `_GoodsMovementReasonCode` | *Association* |
-| `_InventoryValuationType` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Currency` | *Association* |
-| `_MaterialBaseUnit` | *Association* |
-| `_StockChangeCategory` | *Association* |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_CustomerCompanyByPlant` | *Association* |
-| `_BPStockOwner` | *Association* |
-| `_ResourceBasic` | *Association* |
-| `_IssgOrRcvgResourceBasic` | *Association* |
-| `_CancelationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `MaterialDocumentRecordType` | ✓ | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `Material` |  | |  |  |
+| `Batch` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `InventoryStockType` |  | |  |  |
+| `StockOwner` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `MaterialBaseUnit` |  | |  |  |
+| `IsReversalMovementType` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `MaterialType` |  | |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  |  |
+| `IssgOrRcvgMaterial` |  | |  |  |
+| `IssgOrRcvgBatch` |  | |  |  |
+| `IssgOrRcvgSpclStockInd` |  | |  |  |
+| `IssuingOrReceivingStockType` |  | |  |  |
+| `ResourceID` |  | |  |  |
+| `IssgOrRcvgResourceID` |  | |  |  |
+| `GoodsMovementIsCancelled` |  | |  |  |
+| `GoodsMovementCancellationType` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `YearDay` |  | |  |  |
+| `YearWeek` |  | |  |  |
+| `YearMonth` |  | |  |  |
+| `YearQuarter` |  | |  |  |
+| `CalendarQuarter` |  | |  |  |
+| `CalendarMonth` |  | |  |  |
+| `CalendarWeek` |  | |  |  |
+| `CalendarDay` |  | |  |  |
+| `WeekDay` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `ManufacturingOrder` |  | |  |  |
+| `ManufacturingOrderItem` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingOrganization` |  | |  | `cast(I_AugmentedGoodsMovement._PurchaseOrder.PurchasingOrganization as nsdm_ekorg preserving type)` |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  | `cast(I_AugmentedGoodsMovement._SalesOrder.OrganizationDivision as nsdm_sales_division preserving type)` |
+| `SalesGroup` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `GoodsMovementReasonCode` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ProfitabilitySegment` |  | |  |  |
+| `ProfitabilitySegment_2` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `StockChangeCategory` |  | |  |  |
+| `IsEffectiveGoodsMovement` |  | |  |  |
+| `IsConsumptionMovement` |  | |  |  |
+| `IsCrossPlantTransfer` |  | |  |  |
+| `IsStorageLocChangeByTransf` |  | |  |  |
+| `IsMaterialChangeByTransf` |  | |  |  |
+| `IsBatchChangeByTransf` |  | |  |  |
+| `IsSpclStkTypeChangeByTransf` |  | |  |  |
+| `IsStockTypeChangeByTransf` |  | |  |  |
+| `NumberOfGoodsMovements` |  | |  |  |
+| `NumberOfGoodsIssues` |  | |  |  |
+| `NumberOfGoodsReceipts` |  | |  |  |
+| `GoodsMovementStkAmtInCCCrcy` |  | |  |  |
+| `GoodsMvtCnsmpnAmtInCCCrcy` |  | |  |  |
+| `GoodsIssueAmountInCoCodeCrcy` |  | |  |  |
+| `GoodsReceiptAmountInCoCodeCrcy` |  | |  |  |
+| `MatlStkChangeQtyInBaseUnit` |  | |  |  |
+| `MatlCnsmpnQtyInMatlBaseUnit` |  | |  |  |
+| `MinCnsmpnQtyInBaseUnit` |  | |  | `cast( abs(MatlCnsmpnQtyInMatlBaseUnit) as nsdm_min_cons_qty preserving type)` |
+| `MaxCnsmpnQtyInBaseUnit` |  | |  | `cast( abs(MatlCnsmpnQtyInMatlBaseUnit) as nsdm_max_cons_qty preserving type)` |
+| `GoodsIssueQtyInBaseUnit` |  | |  |  |
+| `MinGoodsIssueQtyInBaseUnit` |  | |  | `cast( abs(GoodsIssueQtyInBaseUnit) as nsdm_min_gi_qty preserving type)` |
+| `MaxGoodsIssueQtyInBaseUnit` |  | |  | `cast( abs(GoodsIssueQtyInBaseUnit) as nsdm_max_gi_qty preserving type)` |
+| `GoodsReceiptQtyInBaseUnit` |  | |  |  |
+| `MinGoodsRcptQtyInBaseUnit` |  | |  | `cast( abs(GoodsReceiptQtyInBaseUnit) as nsdm_min_gr_qty preserving type)` |
+| `MaxGoodsRcptQtyInBaseUnit` |  | |  | `cast( abs(GoodsReceiptQtyInBaseUnit) as nsdm_max_gr_qty preserving type)` |
+| `TotalGdsMvtQtyInBaseUnit` |  | |  |  |
+| `FirstGoodsMovementPostingDate` |  | |  | `cast ( PostingDate as nsdm_first_mvt_posting_date preserving type)` |
+| `LastGoodsMovementPostingDate` |  | |  | `cast ( PostingDate as nsdm_last_mvt_posting_date preserving type)` |
+| `IsStorLocAuthznCheckActive` |  | |  |  |
+| `IsIssgOrRcvgStorLocAuthChkActv` |  | |  |  |
+| `_PurchasingGroup` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_MaterialType` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_InventoryStockType` | | ✓ | | |
+| `_IssgOrRcvgMaterial` | | ✓ | | |
+| `_IssuingOrReceivingPlant` | | ✓ | | |
+| `_IssuingOrReceivingStorageLoc` | | ✓ | | |
+| `_IssgOrRcvgSpclStockInd` | | ✓ | | |
+| `_IssuingOrReceivingStockType` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_AccountAssignmentCategory` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
+| `_GoodsMovementType` | | ✓ | | |
+| `_GoodsMovementReasonCode` | | ✓ | | |
+| `_InventoryValuationType` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_MaterialBaseUnit` | | ✓ | | |
+| `_StockChangeCategory` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_CustomerCompanyByPlant` | | ✓ | | |
+| `_BPStockOwner` | | ✓ | | |
+| `_ResourceBasic` | | ✓ | | |
+| `_IssgOrRcvgResourceBasic` | | ✓ | | |
+| `_CancelationType` | | ✓ | | |
 
 ## Associations
 

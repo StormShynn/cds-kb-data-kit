@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjBillgElmntEntrItmUUID` | `PrjBlgElmEntrBillgPlnLink.projbillgelmntentritmuuid` |
-| `BillingPlan` | `PrjBlgElmEntrBillgPlnLink.billingplan` |
-| `BillingPlanItem` | `PrjBlgElmEntrBillgPlnLink.billingplanitem` |
-| `CreatedByUser` | `PrjBlgElmEntrBillgPlnLink.createdbyuser` |
-| `CreationDateTime` | `PrjBlgElmEntrBillgPlnLink.creationdatetime` |
-| `LastChangedByUser` | `PrjBlgElmEntrBillgPlnLink.lastchangedbyuser` |
-| `LastChangeDateTime` | `PrjBlgElmEntrBillgPlnLink.lastchangedatetime` |
-| `_ProjectBillingElementEntry` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjBillgElmntEntrItmUUID` | ✓ | |  | `projbillgelmntentritmuuid` |
+| `BillingPlan` |  | |  | `billingplan` |
+| `BillingPlanItem` |  | |  | `billingplanitem` |
+| `CreatedByUser` |  | |  | `createdbyuser` |
+| `CreationDateTime` |  | |  | `creationdatetime` |
+| `LastChangedByUser` |  | |  | `lastchangedbyuser` |
+| `LastChangeDateTime` |  | |  | `lastchangedatetime` |
+| `_ProjectBillingElementEntry` | | ✓ | | |
 
 ## Associations
 

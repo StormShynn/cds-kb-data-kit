@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassType` | `ClassTypeText.klart` |
-| key `Language` | `ClassTypeText.spras` |
-| `ClassTypeName` | `ClassTypeText.artxt` |
-| `_Language` | *Association* |
-| `_ClassTypeBasic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassType` | ✓ | |  | `klart` |
+| `Language` | ✓ | |  | `spras` |
+| `ClassTypeName` |  | |  | `artxt` |
+| `_Language` | | ✓ | | |
+| `_ClassTypeBasic` | | ✓ | | |
 
 ## Associations
 

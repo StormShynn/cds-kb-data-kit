@@ -36,14 +36,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CarrierId` | `a.carrier_id` |
-| key `ConnectionId` | `c.connection_id` |
-| key `FlightDate` | `f.flight_date` |
-| `Name` | `a.name` |
-| `AirportFromId` | `c.airport_from_id` |
-| `AirportToId` | `c.airport_to_id` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CarrierId` | ✓ | |  | `carrier_id` |
+| `ConnectionId` | ✓ | |  | `connection_id` |
+| `FlightDate` | ✓ | |  | `flight_date` |
+| `Name` |  | |  | `name` |
+| `AirportFromId` |  | |  | `airport_from_id` |
+| `AirportToId` |  | |  | `airport_to_id` |
 
 ## Source Code
 

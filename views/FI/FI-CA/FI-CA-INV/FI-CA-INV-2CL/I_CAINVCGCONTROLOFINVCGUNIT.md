@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgControlOfInvoicingUnit` | `cast ( substring( dd07l.domvalue_l,1,1 ) as separate_inv_kk preserving type )` |
-| `_CAInvcgControlOfInvcgUnitTxt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgControlOfInvoicingUnit` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as separate_inv_kk preserving type )` |
+| `_CAInvcgControlOfInvcgUnitTxt` | | ✓ | | |
 
 ## Associations
 

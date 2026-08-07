@@ -30,165 +30,165 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Reservation` | `comp.Reservation` |
-| key `ReservationItem` | `comp.ReservationItem` |
-| key `ReservationRecordType` | `comp.RecordType` |
-| `MaterialGroup` | `comp.MaterialGroup` |
-| `Material` | `comp.Material` |
-| `Plant` | `comp.Plant` |
-| `ProductionOrderType` | `cast(comp.OrderType as vdm_prodnordertype preserving type)` |
-| `ProductionOrder` | `cast(comp.OrderID as vdm_manufacturingorder preserving type)` |
-| `ProductionOrderSequence` | `cast(comp.Sequence as vdm_prodnordersequence preserving type)` |
-| `SequenceCategory` | `comp.SequenceCategory` |
-| `ProductionOrderOperation` | `cast(comp.OrderOperation as vdm_prodnorderoperation preserving type)` |
-| `ProductionPlant` | `comp.ProductionPlant` |
-| `OrderInternalID` | `comp.OrderInternalID` |
-| `OrderOperationInternalID` | `comp.OrderOperationInternalID` |
-| `MatlCompRequirementDate` | `comp.MatlCompRequirementDate` |
-| `MatlCompRequirementTime` | `comp.MatlCompRequirementTime` |
-| `LatestRequirementDate` | `comp.LatestRequirementDate` |
-| `ReservationIsFinallyIssued` | `comp.ReservationIsFinallyIssued` |
-| `MatlCompIsMarkedForDeletion` | `comp.MatlCompIsMarkedForDeletion` |
-| `MaterialComponentIsMissing` | `comp.MaterialComponentIsMissing` |
-| `IsBulkMaterialComponent` | `comp.IsBulkMaterialComponent` |
-| `MatlCompIsMarkedForBackflush` | `comp.MatlCompIsMarkedForBackflush` |
-| `MatlCompIsTextItem` | `comp.MatlCompIsTextItem` |
-| `MaterialPlanningRelevance` | `comp.MaterialPlanningRelevance` |
-| `MatlCompIsConfigurable` | `comp.MatlCompIsConfigurable` |
-| `MaterialComponentIsClassified` | `comp.MaterialComponentIsClassified` |
-| `MaterialCompIsIntraMaterial` | `comp.MaterialCompIsIntraMaterial` |
-| `MaterialIsDirectlyProduced` | `comp.MaterialIsDirectlyProduced` |
-| `MaterialIsDirectlyProcured` | `comp.MaterialIsDirectlyProcured` |
-| `MaterialComponentText` | `comp.MaterialComponentText` |
-| `MaterialComponentSecondText` | `comp.MaterialComponentSecondText` |
-| `MaterialComponentHasLongText` | `comp.MaterialComponentHasLongText` |
-| `LongTextLanguage` | `comp.LongTextLanguage` |
-| `RequirementType` | `comp.RequirementType` |
-| `SalesOrder` | `comp.SalesOrder` |
-| `SalesOrderItem` | `comp.SalesOrderItem` |
-| `WBSElementInternalID` | `comp.WBSElementInternalID` |
-| `ProductConfiguration` | `comp.ProductConfiguration` |
-| `ChangeNumber` | `comp.ChangeNumber` |
-| `MaterialRevisionLevel` | `comp.MaterialRevisionLevel` |
-| `EffectivityParameterVariant` | `comp.EffectivityParameterVariant` |
-| `MaterialComponentSortText` | `comp.MaterialComponentSortText` |
-| `ObjectInternalID` | `comp.ObjectInternalID` |
-| `BillOfMaterialCategory` | `comp.BillOfMaterialCategory` |
-| `BillOfMaterialInternalID` | `comp.BillOfMaterialInternalID` |
-| `BillOfMaterialVariant` | `comp.BillOfMaterialVariant` |
-| `BillOfMaterialItemNodeNumber` | `comp.BOMItem` |
-| `BillOfMaterialItemCategory` | `comp.BOMItemCategory` |
-| `BillOfMaterialItemNumber` | `comp.BillOfMaterialItemNumber` |
-| `PurchasingInfoRecord` | `comp.PurchasingInfoRecord` |
-| `PurchasingGroup` | `comp.PurchasingGroup` |
-| `PurchaseRequisition` | `comp.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `comp.PurchaseRequisitionItem` |
-| `PurchasingDocument` | `cast(comp.PurchaseOrder as pph_ebeln preserving type)` |
-| `PurchasingDocumentItem` | `cast(comp.PurchaseOrderItem as pph_ebelp preserving type)` |
-| `Supplier` | `comp.Supplier` |
-| `DeliveryDurationInDays` | `comp.DeliveryDurationInDays` |
-| `MaterialGoodsReceiptDuration` | `comp.MaterialGoodsReceiptDuration` |
-| `ExternalProcessingPrice` | `comp.ExternalProcessingPrice` |
-| `NumberOfOperationPriceUnits` | `comp.NumberOfPriceUnits` |
-| `GoodsMovementIsAllowed` | `comp.GoodsMovementIsAllowed` |
-| `StorageLocation` | `comp.StorageLocation` |
-| `DebitCreditCode` | `comp.DebitCreditCode` |
-| `GoodsMovementType` | `comp.GoodsMovementType` |
-| `InventorySpecialStockType` | `comp.InventorySpecialStockType` |
-| `InventorySpecialStockValnType` | `comp.InventorySpecialStockValnType` |
-| `ConsumptionPosting` | `comp.ConsumptionPosting` |
-| `SupplyArea` | `comp.SupplyArea` |
-| `GoodsRecipientName` | `comp.GoodsRecipientName` |
-| `UnloadingPointName` | `comp.UnloadingPointName` |
-| `StockSegment` | `comp.StockSegment` |
-| `RequirementSegment` | `comp.RequirementSegment` |
-| `MaterialStaging` | `comp.MaterialStaging` |
-| `Batch` | `comp.Batch` |
-| `BatchEntryDeterminationCode` | `comp.BatchEntryDeterminationCode` |
-| `BatchSplitType` | `comp.BatchSplitType` |
-| `BatchMasterReservationItem` | `comp.BatchMasterReservationItem` |
-| `BatchClassification` | `comp.BatchClassification` |
-| `MaterialCompCostingRelevancy` | `comp.MaterialCompCostingRelevancy` |
-| `BusinessArea` | `comp.BusinessArea` |
-| `CompanyCode` | `comp.CompanyCode` |
-| `GLAccount` | `comp.GLAccount` |
-| `FunctionalArea` | `comp.FunctionalArea` |
-| `ControllingArea` | `comp.ControllingArea` |
-| `AccountAssignmentCategory` | `comp.AccountAssignmentCategory` |
-| `MaterialCompIsVariableSized` | `comp.MaterialCompIsVariableSized` |
-| `VariableSizeItemUnit` | `comp.VariableSizeItemUnit` |
-| `VariableSizeItemQuantity` | `comp.VariableSizeItemQuantity` |
-| `VariableSizeComponentUnit` | `comp.VariableSizeComponentUnit` |
-| `VariableSizeComponentQuantity` | `comp.VariableSizeComponentQuantity` |
-| `VariableSizeDimensionUnit` | `comp.VariableSizeDimensionUnit` |
-| `VariableSizeDimension1` | `comp.VariableSizeDimension1` |
-| `VariableSizeDimension2` | `comp.VariableSizeDimension2` |
-| `VariableSizeDimension3` | `comp.VariableSizeDimension3` |
-| `VariableSizeCompFormulaKey` | `comp.VariableSizeCompFormulaKey` |
-| `MaterialCompIsAlternativeItem` | `comp.MaterialCompIsAlternativeItem` |
-| `AlternativeItemGroup` | `comp.AlternativeItemGroup` |
-| `AlternativeItemStrategy` | `comp.AlternativeItemStrategy` |
-| `AlternativeItemPriority` | `comp.AlternativeItemPriority` |
-| `UsageProbabilityPercent` | `comp.UsageProbabilityPercent` |
-| `AlternativeMstrReservationItem` | `comp.AlternativeMstrReservationItem` |
-| `MaterialComponentIsPhantomItem` | `comp.MaterialComponentIsPhantomItem` |
-| `OrderPathValue` | `comp.OrderPathValue` |
-| `OrderLevelValue` | `comp.OrderLevelValue` |
-| `Assembly` | `comp.Assembly` |
-| `AssemblyOrderPathValue` | `comp.AssemblyOrderPathValue` |
-| `AssemblyOrderLevelValue` | `comp.AssemblyOrderLevelValue` |
-| `DiscontinuationGroup` | `comp.DiscontinuationGroup` |
-| `MatlCompDiscontinuationType` | `comp.MatlCompDiscontinuationType` |
-| `MatlCompIsFollowUpMaterial` | `comp.MatlCompIsFollowUpMaterial` |
-| `FollowUpGroup` | `comp.FollowUpGroup` |
-| `FollowUpMaterial` | `comp.FollowUpMaterial` |
-| `FollowUpMaterialIsActive` | `comp.FollowUpMaterialIsActive` |
-| `DiscontinuationMasterResvnItem` | `comp.DiscontinuationMasterResvnItem` |
-| `LeadTimeOffset` | `comp.LeadTimeOffset` |
-| `OperationLeadTimeOffsetUnit` | `comp.OperationLeadTimeOffsetUnit` |
-| `OperationLeadTimeOffset` | `comp.OperationLeadTimeOffset` |
-| `QuantityIsFixed` | `comp.QuantityIsFixed` |
-| `ScrapQtyIsNetScrap` | `comp.IsNetScrap` |
-| `ComponentScrapInPercent` | `comp.ComponentScrapInPercent` |
-| `OperationScrapInPercent` | `comp.OperationScrapInPercent` |
-| `MaterialQtyToBaseQtyNmrtr` | `comp.MaterialQtyToBaseQtyNmrtr` |
-| `MaterialQtyToBaseQtyDnmntr` | `comp.MaterialQtyToBaseQtyDnmntr` |
-| `BaseUnit` | `comp.BaseUnit` |
-| `RequiredQuantity` | `comp.RequiredQuantity` |
-| `WithdrawnQuantity` | `comp.WithdrawnQuantity` |
-| `ConfirmedAvailableQuantity` | `comp.ConfirmedAvailableQuantity` |
-| `MaterialCompOriginalQuantity` | `comp.MaterialCompOriginalQuantity` |
-| `EntryUnit` | `comp.EntryUnit` |
-| `GoodsMovementEntryQty` | `comp.GoodsMovementEntryQty` |
-| `Currency` | `comp.Currency` |
-| `WithdrawnQuantityAmount` | `comp.WithdrawnQuantityAmount` |
-| `_Assembly` | `comp._PhantomAssembly` |
-| `_Reservation` | *Association* |
-| `_ReservationItem` | *Association* |
-| `_ReservationRecordType` | *Association* |
-| `_ProductionOrderType` | *Association* |
-| `_ProductionOrderHeader` | *Association* |
-| `_ProductionOrderSequence` | *Association* |
-| `_ProductionOrderText` | *Association* |
-| `_ProductionPlantText` | *Association* |
-| `_PlantText` | *Association* |
-| `_MaterialText` | *Association* |
-| `_WBSElementText` | *Association* |
-| `_StorageLocationText` | *Association* |
-| `_SupplyAreaText` | *Association* |
-| `_SupplierText` | *Association* |
-| `_PurchasingGroupText` | *Association* |
-| `_AssemblyText` | *Association* |
-| `_FollowUpMaterialText` | *Association* |
-| `_StatusObjectText` | *Association* |
-| `_BusinessAreaText` | *Association* |
-| `_CompanyCodeText` | *Association* |
-| `_ControllingAreaText` | *Association* |
-| `_FunctionalAreaText` | *Association* |
-| `_ProductionOrderOperation` | *Association* |
-| `_LongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Reservation` | ✓ | |  |  |
+| `ReservationItem` | ✓ | |  |  |
+| `ReservationRecordType` | ✓ | |  | `RecordType` |
+| `MaterialGroup` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProductionOrderType` |  | |  | `cast(comp.OrderType as vdm_prodnordertype preserving type)` |
+| `ProductionOrder` |  | |  | `cast(comp.OrderID as vdm_manufacturingorder preserving type)` |
+| `ProductionOrderSequence` |  | |  | `cast(comp.Sequence as vdm_prodnordersequence preserving type)` |
+| `SequenceCategory` |  | |  |  |
+| `ProductionOrderOperation` |  | |  | `cast(comp.OrderOperation as vdm_prodnorderoperation preserving type)` |
+| `ProductionPlant` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `OrderOperationInternalID` |  | |  |  |
+| `MatlCompRequirementDate` |  | |  |  |
+| `MatlCompRequirementTime` |  | |  |  |
+| `LatestRequirementDate` |  | |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |
+| `MatlCompIsMarkedForDeletion` |  | |  |  |
+| `MaterialComponentIsMissing` |  | |  |  |
+| `IsBulkMaterialComponent` |  | |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |
+| `MatlCompIsTextItem` |  | |  |  |
+| `MaterialPlanningRelevance` |  | |  |  |
+| `MatlCompIsConfigurable` |  | |  |  |
+| `MaterialComponentIsClassified` |  | |  |  |
+| `MaterialCompIsIntraMaterial` |  | |  |  |
+| `MaterialIsDirectlyProduced` |  | |  |  |
+| `MaterialIsDirectlyProcured` |  | |  |  |
+| `MaterialComponentText` |  | |  |  |
+| `MaterialComponentSecondText` |  | |  |  |
+| `MaterialComponentHasLongText` |  | |  |  |
+| `LongTextLanguage` |  | |  |  |
+| `RequirementType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `ProductConfiguration` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `MaterialRevisionLevel` |  | |  |  |
+| `EffectivityParameterVariant` |  | |  |  |
+| `MaterialComponentSortText` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BillOfMaterialInternalID` |  | |  |  |
+| `BillOfMaterialVariant` |  | |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  | `BOMItem` |
+| `BillOfMaterialItemCategory` |  | |  | `BOMItemCategory` |
+| `BillOfMaterialItemNumber` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `PurchasingDocument` |  | |  | `cast(comp.PurchaseOrder as pph_ebeln preserving type)` |
+| `PurchasingDocumentItem` |  | |  | `cast(comp.PurchaseOrderItem as pph_ebelp preserving type)` |
+| `Supplier` |  | |  |  |
+| `DeliveryDurationInDays` |  | |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |
+| `ExternalProcessingPrice` |  | |  |  |
+| `NumberOfOperationPriceUnits` |  | |  | `NumberOfPriceUnits` |
+| `GoodsMovementIsAllowed` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `SupplyArea` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `StockSegment` |  | |  |  |
+| `RequirementSegment` |  | |  |  |
+| `MaterialStaging` |  | |  |  |
+| `Batch` |  | |  |  |
+| `BatchEntryDeterminationCode` |  | |  |  |
+| `BatchSplitType` |  | |  |  |
+| `BatchMasterReservationItem` |  | |  |  |
+| `BatchClassification` |  | |  |  |
+| `MaterialCompCostingRelevancy` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `MaterialCompIsVariableSized` |  | |  |  |
+| `VariableSizeItemUnit` |  | |  |  |
+| `VariableSizeItemQuantity` |  | |  |  |
+| `VariableSizeComponentUnit` |  | |  |  |
+| `VariableSizeComponentQuantity` |  | |  |  |
+| `VariableSizeDimensionUnit` |  | |  |  |
+| `VariableSizeDimension1` |  | |  |  |
+| `VariableSizeDimension2` |  | |  |  |
+| `VariableSizeDimension3` |  | |  |  |
+| `VariableSizeCompFormulaKey` |  | |  |  |
+| `MaterialCompIsAlternativeItem` |  | |  |  |
+| `AlternativeItemGroup` |  | |  |  |
+| `AlternativeItemStrategy` |  | |  |  |
+| `AlternativeItemPriority` |  | |  |  |
+| `UsageProbabilityPercent` |  | |  |  |
+| `AlternativeMstrReservationItem` |  | |  |  |
+| `MaterialComponentIsPhantomItem` |  | |  |  |
+| `OrderPathValue` |  | |  |  |
+| `OrderLevelValue` |  | |  |  |
+| `Assembly` |  | |  |  |
+| `AssemblyOrderPathValue` |  | |  |  |
+| `AssemblyOrderLevelValue` |  | |  |  |
+| `DiscontinuationGroup` |  | |  |  |
+| `MatlCompDiscontinuationType` |  | |  |  |
+| `MatlCompIsFollowUpMaterial` |  | |  |  |
+| `FollowUpGroup` |  | |  |  |
+| `FollowUpMaterial` |  | |  |  |
+| `FollowUpMaterialIsActive` |  | |  |  |
+| `DiscontinuationMasterResvnItem` |  | |  |  |
+| `LeadTimeOffset` |  | |  |  |
+| `OperationLeadTimeOffsetUnit` |  | |  |  |
+| `OperationLeadTimeOffset` |  | |  |  |
+| `QuantityIsFixed` |  | |  |  |
+| `ScrapQtyIsNetScrap` |  | |  | `IsNetScrap` |
+| `ComponentScrapInPercent` |  | |  |  |
+| `OperationScrapInPercent` |  | |  |  |
+| `MaterialQtyToBaseQtyNmrtr` |  | |  |  |
+| `MaterialQtyToBaseQtyDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `RequiredQuantity` |  | |  |  |
+| `WithdrawnQuantity` |  | |  |  |
+| `ConfirmedAvailableQuantity` |  | |  |  |
+| `MaterialCompOriginalQuantity` |  | |  |  |
+| `EntryUnit` |  | |  |  |
+| `GoodsMovementEntryQty` |  | |  |  |
+| `Currency` |  | |  |  |
+| `WithdrawnQuantityAmount` |  | |  |  |
+| `_Assembly` |  | |  | `_PhantomAssembly` |
+| `_Reservation` | | ✓ | | |
+| `_ReservationItem` | | ✓ | | |
+| `_ReservationRecordType` | | ✓ | | |
+| `_ProductionOrderType` | | ✓ | | |
+| `_ProductionOrderHeader` | | ✓ | | |
+| `_ProductionOrderSequence` | | ✓ | | |
+| `_ProductionOrderText` | | ✓ | | |
+| `_ProductionPlantText` | | ✓ | | |
+| `_PlantText` | | ✓ | | |
+| `_MaterialText` | | ✓ | | |
+| `_WBSElementText` | | ✓ | | |
+| `_StorageLocationText` | | ✓ | | |
+| `_SupplyAreaText` | | ✓ | | |
+| `_SupplierText` | | ✓ | | |
+| `_PurchasingGroupText` | | ✓ | | |
+| `_AssemblyText` | | ✓ | | |
+| `_FollowUpMaterialText` | | ✓ | | |
+| `_StatusObjectText` | | ✓ | | |
+| `_BusinessAreaText` | | ✓ | | |
+| `_CompanyCodeText` | | ✓ | | |
+| `_ControllingAreaText` | | ✓ | | |
+| `_FunctionalAreaText` | | ✓ | | |
+| `_ProductionOrderOperation` | | ✓ | | |
+| `_LongText` | | ✓ | | |
 
 ## Associations
 

@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HandlingUnitItem` | `HandlingUnitItem` |
-| key `HandlingUnitExternalID` | `HandlingUnitExternalID` |
-| key `Warehouse` | `Warehouse` |
-| key `StockItemUUID` | `StockItemUUID` |
-| key `SerialNumber` | `SerialNumber` |
-| `Equipment` | `Equipment` |
-| `HandlingUnitInternalID` | `HandlingUnitInternalID` |
-| `Material` | `Material` |
-| `_HandlingUnit` | *Association* |
-| `_HandlingUnitItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HandlingUnitItem` | ✓ | |  |  |
+| `HandlingUnitExternalID` | ✓ | |  |  |
+| `Warehouse` | ✓ | |  |  |
+| `StockItemUUID` | ✓ | |  |  |
+| `SerialNumber` | ✓ | |  |  |
+| `Equipment` |  | |  |  |
+| `HandlingUnitInternalID` |  | |  |  |
+| `Material` |  | |  |  |
+| `_HandlingUnit` | | ✓ | | |
+| `_HandlingUnitItem` | | ✓ | | |
 
 ## Source Code
 

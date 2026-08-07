@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FundPeriodicity` | `periodicity` |
-| key `Language` | `spras` |
-| `FundPeriodicityText` | `description` |
-| `_Language` | *Association* |
-| `_FundPeriodicity` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FundPeriodicity` | ✓ | |  | `periodicity` |
+| `Language` | ✓ | |  | `spras` |
+| `FundPeriodicityText` |  | |  | `description` |
+| `_Language` | | ✓ | | |
+| `_FundPeriodicity` | | ✓ | | |
 
 ## Associations
 

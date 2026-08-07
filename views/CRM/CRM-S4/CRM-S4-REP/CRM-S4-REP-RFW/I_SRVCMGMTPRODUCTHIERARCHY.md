@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcProductHierarchy` | `cast ( ProductHierarchy as abap.char(20) )` |
-| `_SrvcMgmtProductHierarchyText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcProductHierarchy` | ✓ | |  | `cast ( ProductHierarchy as abap.char(20) )` |
+| `_SrvcMgmtProductHierarchyText` | | ✓ | | |
 
 ## Associations
 

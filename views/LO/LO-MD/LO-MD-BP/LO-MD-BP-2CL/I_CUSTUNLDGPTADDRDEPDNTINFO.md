@@ -28,44 +28,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `kunnr` |
-| key `AddressID` | `adrnr` |
-| key `UnloadingPointName` | `ablad` |
-| `CustomerFactoryCalenderCode` | `knfak` |
-| `BPGoodsReceivingHoursCode` | `wanid` |
-| `IsDfltBPUnloadingPoint` | `defab` |
-| `MondayMorningOpeningTime` | `moab1` |
-| `MondayMorningClosingTime` | `mobi1` |
-| `MondayAfternoonOpeningTime` | `moab2` |
-| `MondayAfternoonClosingTime` | `mobi2` |
-| `TuesdayMorningOpeningTime` | `diab1` |
-| `TuesdayMorningClosingTime` | `dibi1` |
-| `TuesdayAfternoonOpeningTime` | `diab2` |
-| `TuesdayAfternoonClosingTime` | `dibi2` |
-| `WednesdayMorningOpeningTime` | `miab1` |
-| `WednesdayMorningClosingTime` | `mibi1` |
-| `WednesdayAfternoonOpeningTime` | `miab2` |
-| `WednesdayAfternoonClosingTime` | `mibi2` |
-| `ThursdayMorningOpeningTime` | `doab1` |
-| `ThursdayMorningClosingTime` | `dobi1` |
-| `ThursdayAfternoonOpeningTime` | `doab2` |
-| `ThursdayAfternoonClosingTime` | `dobi2` |
-| `FridayMorningOpeningTime` | `frab1` |
-| `FridayMorningClosingTime` | `frbi1` |
-| `FridayAfternoonOpeningTime` | `frab2` |
-| `FridayAfternoonClosingTime` | `frbi2` |
-| `SaturdayMorningOpeningTime` | `saab1` |
-| `SaturdayMorningClosingTime` | `sabi1` |
-| `SaturdayAfternoonOpeningTime` | `saab2` |
-| `SaturdayAfternoonClosingTime` | `sabi2` |
-| `SundayMorningOpeningTime` | `soab1` |
-| `SundayMorningClosingTime` | `sobi1` |
-| `SundayAfternoonOpeningTime` | `soab2` |
-| `SundayAfternoonClosingTime` | `sobi2` |
-| `_Customer` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `AddressID` | ✓ | |  | `adrnr` |
+| `UnloadingPointName` | ✓ | |  | `ablad` |
+| `CustomerFactoryCalenderCode` |  | |  | `knfak` |
+| `BPGoodsReceivingHoursCode` |  | |  | `wanid` |
+| `IsDfltBPUnloadingPoint` |  | |  | `defab` |
+| `MondayMorningOpeningTime` |  | |  | `moab1` |
+| `MondayMorningClosingTime` |  | |  | `mobi1` |
+| `MondayAfternoonOpeningTime` |  | |  | `moab2` |
+| `MondayAfternoonClosingTime` |  | |  | `mobi2` |
+| `TuesdayMorningOpeningTime` |  | |  | `diab1` |
+| `TuesdayMorningClosingTime` |  | |  | `dibi1` |
+| `TuesdayAfternoonOpeningTime` |  | |  | `diab2` |
+| `TuesdayAfternoonClosingTime` |  | |  | `dibi2` |
+| `WednesdayMorningOpeningTime` |  | |  | `miab1` |
+| `WednesdayMorningClosingTime` |  | |  | `mibi1` |
+| `WednesdayAfternoonOpeningTime` |  | |  | `miab2` |
+| `WednesdayAfternoonClosingTime` |  | |  | `mibi2` |
+| `ThursdayMorningOpeningTime` |  | |  | `doab1` |
+| `ThursdayMorningClosingTime` |  | |  | `dobi1` |
+| `ThursdayAfternoonOpeningTime` |  | |  | `doab2` |
+| `ThursdayAfternoonClosingTime` |  | |  | `dobi2` |
+| `FridayMorningOpeningTime` |  | |  | `frab1` |
+| `FridayMorningClosingTime` |  | |  | `frbi1` |
+| `FridayAfternoonOpeningTime` |  | |  | `frab2` |
+| `FridayAfternoonClosingTime` |  | |  | `frbi2` |
+| `SaturdayMorningOpeningTime` |  | |  | `saab1` |
+| `SaturdayMorningClosingTime` |  | |  | `sabi1` |
+| `SaturdayAfternoonOpeningTime` |  | |  | `saab2` |
+| `SaturdayAfternoonClosingTime` |  | |  | `sabi2` |
+| `SundayMorningOpeningTime` |  | |  | `soab1` |
+| `SundayMorningClosingTime` |  | |  | `sobi1` |
+| `SundayAfternoonOpeningTime` |  | |  | `soab2` |
+| `SundayAfternoonClosingTime` |  | |  | `sobi2` |
+| `_Customer` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
 
 ## Associations
 

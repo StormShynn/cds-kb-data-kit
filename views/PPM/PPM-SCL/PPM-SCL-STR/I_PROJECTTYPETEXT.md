@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectType` | `tcj1t.prart` |
-| key `Language` | `tcj1t.langu` |
-| `ProjectTypeName` | `tcj1t.pratx` |
-| `_ProjectType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectType` | ✓ | |  | `prart` |
+| `Language` | ✓ | |  | `langu` |
+| `ProjectTypeName` |  | |  | `pratx` |
+| `_ProjectType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

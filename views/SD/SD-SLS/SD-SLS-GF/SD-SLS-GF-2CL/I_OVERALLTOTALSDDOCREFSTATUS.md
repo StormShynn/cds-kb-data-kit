@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallTotalSDDocRefStatus` | `substring(dd07l.domvalue_l, 1, 1)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallTotalSDDocRefStatus` | ✓ | |  | `substring(dd07l.domvalue_l, 1, 1)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

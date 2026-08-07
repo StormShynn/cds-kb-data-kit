@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYearVariant` | `I_FiscalYearVariant.FiscalYearVariant` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  |  |
 
 ## Source Code
 

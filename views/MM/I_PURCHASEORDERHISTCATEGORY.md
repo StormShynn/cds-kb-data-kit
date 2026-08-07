@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrderHistCategory` | `bewtp` |
-| `SubsequentDebitCreditIsAllowed` | `tbtkz` |
-| `_PurchaseOrderHistCategName` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrderHistCategory` | ✓ | |  | `bewtp` |
+| `SubsequentDebitCreditIsAllowed` |  | |  | `tbtkz` |
+| `_PurchaseOrderHistCategName` | | ✓ | | |
 
 ## Associations
 

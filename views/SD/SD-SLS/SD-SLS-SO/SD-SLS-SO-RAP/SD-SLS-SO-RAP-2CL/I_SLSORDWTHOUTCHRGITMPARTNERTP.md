@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutCharge` | `SlsOrdWithoutChargeItemPartner.SalesOrderWithoutCharge` |
-| key `SalesOrderWithoutChargeItem` | `SlsOrdWithoutChargeItemPartner.SalesOrderWithoutChargeItem` |
-| key `PartnerFunction` | `SlsOrdWithoutChargeItemPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `SlsOrdWithoutChargeItemPartner.PartnerFunctionForEdit` |
-| `Customer` | `SlsOrdWithoutChargeItemPartner.Customer` |
-| `Supplier` | `SlsOrdWithoutChargeItemPartner.Supplier` |
-| `Personnel` | `SlsOrdWithoutChargeItemPartner.Personnel` |
-| `ContactPerson` | `SlsOrdWithoutChargeItemPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `SlsOrdWithoutChargeItemPartner.ReferenceBusinessPartner` |
-| `Partner` | `SlsOrdWithoutChargeItemPartner.Partner` |
-| `PartnerIsSpecificForSDDocItem` | `SlsOrdWithoutChargeItemPartner.PartnerIsSpecificForSDDocItem` |
-| `SalesOrderWithoutChargeType` | `SlsOrdWithoutChargeItemPartner.SalesOrderWithoutChargeType` |
-| `SalesOrganization` | `SlsOrdWithoutChargeItemPartner.SalesOrganization` |
-| `DistributionChannel` | `SlsOrdWithoutChargeItemPartner.DistributionChannel` |
-| `OrganizationDivision` | `SlsOrdWithoutChargeItemPartner.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesOrderWithoutCharge` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  |  |
+| `SalesOrderWithoutChargeItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesOrderWithoutCharge` | | ✓ | | |
 
 ## Source Code
 

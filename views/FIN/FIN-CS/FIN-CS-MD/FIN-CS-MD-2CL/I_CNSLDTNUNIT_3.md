@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnit` | `cast ( bunit as fincs_consolidationunit preserving type )` |
-| `Country` | `cntry` |
-| `ConsolidationUnitLink` | `link` |
-| `ConsolidationUnitLinkLabel` | `linklabel` |
-| `ConsolidationDimension` | `dimen` |
-| `Company` | `cast(_Company.Company as fincs_company preserving type )` |
-| `ETag` | `etag` |
-| `_CnsldtnDimension` | *Association* |
-| `_Text` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | |  | `cast ( bunit as fincs_consolidationunit preserving type )` |
+| `Country` |  | |  | `cntry` |
+| `ConsolidationUnitLink` |  | |  | `link` |
+| `ConsolidationUnitLinkLabel` |  | |  | `linklabel` |
+| `ConsolidationDimension` |  | |  | `dimen` |
+| `Company` |  | |  | `cast(_Company.Company as fincs_company preserving type )` |
+| `ETag` |  | |  | `etag` |
+| `_CnsldtnDimension` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

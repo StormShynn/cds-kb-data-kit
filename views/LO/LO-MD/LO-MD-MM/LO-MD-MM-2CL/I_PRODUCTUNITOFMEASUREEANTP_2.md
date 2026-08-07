@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `AlternativeUnit` | `AlternativeUnit` |
-| key `ConsecutiveNumber` | `ConsecutiveNumber` |
-| `ProductStandardID` | `ProductStandardID` |
-| `InternationalArticleNumberCat` | `InternationalArticleNumberCat` |
-| `IsMainGlobalTradeItemNumber` | `IsMainGlobalTradeItemNumber` |
-| `_ProductUnitOfMeasure` | *Association* |
-| `_Product` | *Association* |
-| `_IntlArticleNumberCatText` | *Association* |
-| `_AlternativeUnitText` | *Association* |
-| `_ProductDescription_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `AlternativeUnit` | ✓ | |  |  |
+| `ConsecutiveNumber` | ✓ | |  |  |
+| `ProductStandardID` |  | |  |  |
+| `InternationalArticleNumberCat` |  | |  |  |
+| `IsMainGlobalTradeItemNumber` |  | |  |  |
+| `_ProductUnitOfMeasure` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_IntlArticleNumberCatText` | | ✓ | | |
+| `_AlternativeUnitText` | | ✓ | | |
+| `_ProductDescription_2` | | ✓ | | |
 
 ## Source Code
 

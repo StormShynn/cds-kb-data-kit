@@ -27,32 +27,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
-| key `SubscriptionRateElement` | `SubscriptionRateElement` |
-| key `SubscriptionRateSubElement` | `SubscriptionRateSubElement` |
-| key `SubscrpnBillgPrcElmntSpec` | `SubscrpnBillgPrcElmntSpec` |
-| key `SubscrpnBillgPricingField` | `SubscrpnBillgPricingField` |
-| key `SubscrpnBillgPrcAgreementLine` | `SubscrpnBillgPrcAgreementLine` |
-| `SubscrpnBillgPricingScaleType` | `SubscrpnBillgPricingScaleType` |
-| `SubscrpnBillgCndnCalcType` | `SubscrpnBillgCndnCalcType` |
-| `ConditionScaleAmount` | `ConditionScaleAmount` |
-| `ConditionScaleQuantity` | `ConditionScaleQuantity` |
-| `ConditionScaleQuantityUnit` | `ConditionScaleQuantityUnit` |
-| `ConditionScaleAmountCurrency` | `ConditionScaleAmountCurrency` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionCurrency` | `ConditionCurrency` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionRateRatio` | `ConditionRateRatio` |
-| `SbscrBilgCndnScaleLineIsUnlmtd` | `SbscrBilgCndnScaleLineIsUnlmtd` |
-| `_SubscriptionBillingItem` | *Association* |
-| `_SubscrpnBillgCndnCalcTypeTxt` | *Association* |
-| `_SubscrpnBillgPrcgScTypeText` | *Association* |
-| `_BusinessSolutionOrderItemTP` | *Association* |
-| `_BusinessSolutionOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |
+| `SubscriptionRateElement` | ✓ | |  |  |
+| `SubscriptionRateSubElement` | ✓ | |  |  |
+| `SubscrpnBillgPrcElmntSpec` | ✓ | |  |  |
+| `SubscrpnBillgPricingField` | ✓ | |  |  |
+| `SubscrpnBillgPrcAgreementLine` | ✓ | |  |  |
+| `SubscrpnBillgPricingScaleType` |  | |  |  |
+| `SubscrpnBillgCndnCalcType` |  | |  |  |
+| `ConditionScaleAmount` |  | |  |  |
+| `ConditionScaleQuantity` |  | |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `SbscrBilgCndnScaleLineIsUnlmtd` |  | |  |  |
+| `_SubscriptionBillingItem` | | ✓ | | |
+| `_SubscrpnBillgCndnCalcTypeTxt` | | ✓ | | |
+| `_SubscrpnBillgPrcgScTypeText` | | ✓ | | |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
 
 ## Source Code
 

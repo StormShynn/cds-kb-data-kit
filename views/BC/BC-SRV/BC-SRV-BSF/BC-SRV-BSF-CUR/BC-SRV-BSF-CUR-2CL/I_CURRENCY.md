@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Currency` | `tcurc.waers` |
-| `Decimals` | `cast(COALESCE(tcurx.currdec, 2) as currdec_cds)` |
-| `CurrencyISOCode` | `cast(tcurc.isocd as isocd_cds)` |
-| `AlternativeCurrencyKey` | `cast(tcurc.altwr as altwr_cds)` |
-| `IsPrimaryCurrencyForISOCrcy` | `tcurc.xprimary` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Currency` | ✓ | |  | `waers` |
+| `Decimals` |  | |  | `cast(COALESCE(tcurx.currdec, 2) as currdec_cds)` |
+| `CurrencyISOCode` |  | |  | `cast(tcurc.isocd as isocd_cds)` |
+| `AlternativeCurrencyKey` |  | |  | `cast(tcurc.altwr as altwr_cds)` |
+| `IsPrimaryCurrencyForISOCrcy` |  | |  | `xprimary` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

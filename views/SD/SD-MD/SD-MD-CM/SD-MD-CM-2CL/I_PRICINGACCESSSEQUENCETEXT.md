@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `ConditionUsage` | `kvewe` |
-| key `ConditionApplication` | `kappl` |
-| key `AccessSequence` | `kozgf` |
-| `AccessSequenceText` | `vtxtm` |
-| `_PricingAccessSequence` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `AccessSequence` | ✓ | |  | `kozgf` |
+| `AccessSequenceText` |  | |  | `vtxtm` |
+| `_PricingAccessSequence` | | ✓ | | |
 
 ## Associations
 

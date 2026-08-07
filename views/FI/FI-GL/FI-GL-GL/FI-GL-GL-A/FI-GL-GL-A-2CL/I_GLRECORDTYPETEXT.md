@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `GLRecordType` | `cast( substring(domvalue_l, 1, 1) as rrcty )` |
-| `GLRecordTypeName` | `cast( ddtext as fis_glrecordtypename preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `GLRecordType` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as rrcty )` |
+| `GLRecordTypeName` |  | |  | `cast( ddtext as fis_glrecordtypename preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

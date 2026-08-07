@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintNotifDetectionCatalog` | `eam_detcat_t.detectioncatalog` |
-| key `Language` | `eam_detcat_t.language` |
-| `MaintNotifDetectionCatalogText` | `cast( eam_detcat_t.detectioncatalogtext as detectioncatalogtext preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintNotifDetectionCatalog` | ✓ | |  | `detectioncatalog` |
+| `Language` | ✓ | |  | `language` |
+| `MaintNotifDetectionCatalogText` |  | |  | `cast( eam_detcat_t.detectioncatalogtext as detectioncatalogtext preserving type )` |
 
 ## Source Code
 

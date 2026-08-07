@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `RequestForQuotationItem` | `vdm_requestforquotationitem` |
-| `OrderQuantity` | `etmen` |
-| `NetPriceAmount` | `netpr` |
-| `DocumentCurrency` | `waers` |
-| `NetPriceQuantity` | `vdm_price_unit` |
-| `SupplierMaterialNumber` | `idnlf` |
-| `Manufacturer` | `mfrnr` |
-| `ManufacturerPartNmbr` | `mfrpn` |
-| `OrderQuantityUnit` | `bstme` |
-| `D_SuplrQtanCrteFrmRFQPrcgItmP` | `_PricingItems : composition [0..*] of D_SuplrQtanCrteFrmRFQPrcgItmP` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RequestForQuotationItem` |  | |  | `vdm_requestforquotationitem` |
+| `OrderQuantity` |  | |  | `etmen` |
+| `NetPriceAmount` |  | |  | `netpr` |
+| `DocumentCurrency` |  | |  | `waers` |
+| `NetPriceQuantity` |  | |  | `vdm_price_unit` |
+| `SupplierMaterialNumber` |  | |  | `idnlf` |
+| `Manufacturer` |  | |  | `mfrnr` |
+| `ManufacturerPartNmbr` |  | |  | `mfrpn` |
+| `OrderQuantityUnit` |  | |  | `bstme` |
+| `D_SuplrQtanCrteFrmRFQPrcgItmP` |  | |  | `_PricingItems : composition [0..*] of D_SuplrQtanCrteFrmRFQPrcgItmP` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

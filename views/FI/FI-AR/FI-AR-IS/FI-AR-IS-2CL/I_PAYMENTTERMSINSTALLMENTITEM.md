@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentTerms` | `zterm` |
-| key `PaymentTermsInstallmentItem` | `cast ( ratnr as farp_ratnr preserving type )` |
-| `InstallmentItemPercent` | `ratpz` |
-| `InstallmentItemPaymentTerms` | `cast ( ratzt as farp_ratzt preserving type )` |
-| `_PaymentTerms` | *Association* |
-| `_InstallmentItemPaymentTerms` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentTerms` | ✓ | |  | `zterm` |
+| `PaymentTermsInstallmentItem` | ✓ | |  | `cast ( ratnr as farp_ratnr preserving type )` |
+| `InstallmentItemPercent` |  | |  | `ratpz` |
+| `InstallmentItemPaymentTerms` |  | |  | `cast ( ratzt as farp_ratzt preserving type )` |
+| `_PaymentTerms` | | ✓ | | |
+| `_InstallmentItemPaymentTerms` | | ✓ | | |
 
 ## Associations
 

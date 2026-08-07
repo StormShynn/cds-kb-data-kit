@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VarianceReasonCode` | `cast(txt.grund as pph_agrnd preserving type)` |
-| key `Plant` | `txt.werks` |
-| key `Language` | `cast(txt.spras as spras preserving type)` |
-| `VarianceReasonName` | `cast(txt.grdtx as pph_grdtx preserving type)` |
-| `_Plant` | *Association* |
-| `_Language` | *Association* |
-| `_VarianceReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VarianceReasonCode` | ✓ | |  | `cast(txt.grund as pph_agrnd preserving type)` |
+| `Plant` | ✓ | |  | `werks` |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
+| `VarianceReasonName` |  | |  | `cast(txt.grdtx as pph_grdtx preserving type)` |
+| `_Plant` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_VarianceReason` | | ✓ | | |
 
 ## Associations
 

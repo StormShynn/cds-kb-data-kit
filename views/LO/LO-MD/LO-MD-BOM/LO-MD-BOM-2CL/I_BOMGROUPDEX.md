@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BOMGroupUUID` | `BOMGroupUUID` |
-| `ParentBOMGroupUUID` | `ParentBOMGroupUUID` |
-| `BOMGroupName` | `BOMGroupName` |
-| `BOMGroupDescription` | `BOMGroupDescription` |
-| `CreationDateTime` | `CreationDateTime` |
-| `BOMGroupLastChangedDateTime` | `BOMGroupLastChangedDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOMGroupUUID` | ✓ | |  |  |
+| `ParentBOMGroupUUID` |  | |  |  |
+| `BOMGroupName` |  | |  |  |
+| `BOMGroupDescription` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `BOMGroupLastChangedDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
 
 ## Source Code
 

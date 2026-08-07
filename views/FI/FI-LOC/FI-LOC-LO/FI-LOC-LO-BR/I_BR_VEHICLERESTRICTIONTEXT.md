@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `VehicleRestriction` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehiclerestriction preserving type )` |
-| `VehicleRestrictionDesc` | `cast( ddtext as logbr_vehiclerestrictiondesc preserving type )` |
-| `_VehicleRestriction` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `VehicleRestriction` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehiclerestriction preserving type )` |
+| `VehicleRestrictionDesc` |  | |  | `cast( ddtext as logbr_vehiclerestrictiondesc preserving type )` |
+| `_VehicleRestriction` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

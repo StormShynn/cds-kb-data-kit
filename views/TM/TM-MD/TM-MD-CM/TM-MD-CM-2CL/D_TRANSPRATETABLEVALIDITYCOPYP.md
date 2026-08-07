@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TranspRateValidityCpyStartDate` | `/scmtms/val_date_from` |
-| `TranspRateValidityCpyEndDate` | `/scmtms/val_date_to` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateValidityCpyStartDate` |  | |  | `/scmtms/val_date_from` |
+| `TranspRateValidityCpyEndDate` |  | |  | `/scmtms/val_date_to` |
 
 ## Source Code
 

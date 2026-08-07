@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TranspOrdLifeCycleStatus` | `/scmtms/tor_lc_status` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdLifeCycleStatus` |  | |  | `/scmtms/tor_lc_status` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

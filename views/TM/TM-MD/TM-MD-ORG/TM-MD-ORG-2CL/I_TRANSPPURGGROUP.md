@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspPurgGroup` | `cast( PurchasingGroup as /scmtms/purch_grp preserving type )` |
-| `TranspPurgGroupName` | `cast( PurchasingGroupName as /scmtms/purch_grp_name preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspPurgGroup` | ✓ | |  | `cast( PurchasingGroup as /scmtms/purch_grp preserving type )` |
+| `TranspPurgGroupName` |  | |  | `cast( PurchasingGroupName as /scmtms/purch_grp_name preserving type )` |
 
 ## Source Code
 

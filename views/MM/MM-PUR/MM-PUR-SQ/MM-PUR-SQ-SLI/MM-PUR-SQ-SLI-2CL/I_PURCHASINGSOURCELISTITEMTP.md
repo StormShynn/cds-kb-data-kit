@@ -30,57 +30,57 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SourceListRecord` | `SourceListRecord` |
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| `MaterialForEdit` | `MaterialForEdit` |
-| `PlantForEdit` | `PlantForEdit` |
-| `SourceListRecordForEdit` | `SourceListRecordForEdit` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUserName` | `CreatedByUserName` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `Supplier` | `Supplier` |
-| `OutlineAgreement` | `OutlineAgreement` |
-| `PurchaseOutlineAgreement` | `PurchaseOutlineAgreement` |
-| `PurchaseOutlineAgreementItem` | `PurchaseOutlineAgreementItem` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `SupplyingPlant` | `SupplyingPlant` |
-| `SupplierIsFixed` | `SupplierIsFixed` |
-| `PurOutlineAgreementIsFixed` | `PurOutlineAgreementIsFixed` |
-| `IssgPlantIsFixed` | `IssgPlantIsFixed` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `SourceOfSupplyIsBlocked` | `SourceOfSupplyIsBlocked` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `SourceListRecordCategory` | `SourceListRecordCategory` |
-| `MRPSourcingControl` | `MRPSourcingControl` |
-| `MRPArea` | `MRPArea` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `OriginSystem` | `OriginSystem` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `SourceOfSupplyIsFixed` | `SourceOfSupplyIsFixed` |
-| `SourceListStatus` | `SourceListStatus` |
-| `SourceListStatusCriticality` | `SourceListStatusCriticality` |
-| `SupplierName` | `SupplierName` |
-| `PlantName` | `PlantName` |
-| `MaterialName` | `MaterialName` |
-| `SupplyingPlantName` | `SupplyingPlantName` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_PurchaseContract` | *Association* |
-| `_PurchaseContractItem` | *Association* |
-| `_LogicalSystem` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_MaterialPlanningUsage` | *Association* |
-| `_PurchasingSourceStatus` | *Association* |
-| `_MaterialText` | *Association* |
-| `_Supplier` | *Association* |
-| `_Material` | *Association* |
-| `_Plant` | *Association* |
-| `_SupplyingPlant` | *Association* |
-| `_PurchasingSourceTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SourceListRecord` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `MaterialForEdit` |  | |  |  |
+| `PlantForEdit` |  | |  |  |
+| `SourceListRecordForEdit` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUserName` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `OutlineAgreement` |  | |  |  |
+| `PurchaseOutlineAgreement` |  | |  |  |
+| `PurchaseOutlineAgreementItem` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `SupplyingPlant` |  | |  |  |
+| `SupplierIsFixed` |  | |  |  |
+| `PurOutlineAgreementIsFixed` |  | |  |  |
+| `IssgPlantIsFixed` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `SourceOfSupplyIsBlocked` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `SourceListRecordCategory` |  | |  |  |
+| `MRPSourcingControl` |  | |  |  |
+| `MRPArea` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OriginSystem` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `SourceOfSupplyIsFixed` |  | |  |  |
+| `SourceListStatus` |  | |  |  |
+| `SourceListStatusCriticality` |  | |  |  |
+| `SupplierName` |  | |  |  |
+| `PlantName` |  | |  |  |
+| `MaterialName` |  | |  |  |
+| `SupplyingPlantName` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_PurchaseContract` | | ✓ | | |
+| `_PurchaseContractItem` | | ✓ | | |
+| `_LogicalSystem` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_MaterialPlanningUsage` | | ✓ | | |
+| `_PurchasingSourceStatus` | | ✓ | | |
+| `_MaterialText` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_SupplyingPlant` | | ✓ | | |
+| `_PurchasingSourceTP` | | ✓ | | |
 
 ## Source Code
 

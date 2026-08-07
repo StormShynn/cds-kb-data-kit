@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationScaleItemUUID` | `cast(db_key as /scmtms/vdm_rt_sc_item_uuid preserving type)` |
-| `TransportationScaleUUID` | `cast(parent_key as /scmtms/vdm_rate_scale_uuid preserving type)` |
-| `TransportationRateUUID` | `_TransportationScale.TransportationRateUUID` |
-| `TransportationCalculationType` | `cast(calc_typ as /scmtms/vdm_calc_type preserving type)` |
-| `TranspScaleItemQuantityUnit` | `cast(uom as /scmtms/vdm_rt_sc_itm_qty_unit preserving type)` |
-| `TranspScaleItemQuantity` | `scaval_quan` |
-| `TranspScaleItemCharacterValue` | `cast(scaval_char as /scmtms/vdm_sc_itm_char_value preserving type)` |
-| `TranspScaleItemCurrency` | `currcode` |
-| `TranspScaleItemAmount` | `cast( cast( scaval_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_sc_item_amount )` |
-| `TranspScaleItemRefFieldName` | `scaval_ref_field` |
-| `_TranspRateScaleReference` | *Association* |
-| `_TranspScaleItemQuantityUnit` | *Association* |
-| `_TranspScaleItemCurrency` | *Association* |
-| `_TransportationCalculationType` | *Association* |
-| `_TransportationRate` | *Association* |
-| `_TransportationScale` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationScaleItemUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_rt_sc_item_uuid preserving type)` |
+| `TransportationScaleUUID` |  | |  | `cast(parent_key as /scmtms/vdm_rate_scale_uuid preserving type)` |
+| `TransportationRateUUID` |  | | `_TransportationScale` | `TransportationRateUUID` |
+| `TransportationCalculationType` |  | |  | `cast(calc_typ as /scmtms/vdm_calc_type preserving type)` |
+| `TranspScaleItemQuantityUnit` |  | |  | `cast(uom as /scmtms/vdm_rt_sc_itm_qty_unit preserving type)` |
+| `TranspScaleItemQuantity` |  | |  | `scaval_quan` |
+| `TranspScaleItemCharacterValue` |  | |  | `cast(scaval_char as /scmtms/vdm_sc_itm_char_value preserving type)` |
+| `TranspScaleItemCurrency` |  | |  | `currcode` |
+| `TranspScaleItemAmount` |  | |  | `cast( cast( scaval_amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_sc_item_amount )` |
+| `TranspScaleItemRefFieldName` |  | |  | `scaval_ref_field` |
+| `_TranspRateScaleReference` | | ✓ | | |
+| `_TranspScaleItemQuantityUnit` | | ✓ | | |
+| `_TranspScaleItemCurrency` | | ✓ | | |
+| `_TransportationCalculationType` | | ✓ | | |
+| `_TransportationRate` | | ✓ | | |
+| `_TransportationScale` | | ✓ | | |
 
 ## Associations
 

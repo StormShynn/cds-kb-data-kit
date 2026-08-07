@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionOrder` | `cast(affl.OrderID as vdm_manufacturingorder preserving type)` |
-| key `ProductionOrderSequence` | `cast(affl.Sequence as vdm_prodnordersequence preserving type)` |
-| `OrderInternalID` | `affl.OrderInternalID` |
-| `SequenceInternalID` | `affl.SequenceInternalID` |
-| `SequenceCategory` | `affl.SequenceCategory` |
-| `ProductionOrderType` | `cast(affl.OrderType as vdm_prodnordertype preserving type)` |
-| `ProductionOrderSequenceText` | `cast(affl.SequenceText as vdm_flgtext preserving type)` |
-| `SequenceHasLongText` | `affl.SequenceHasLongText` |
-| `LongTextLanguage` | `cast(affl.Language as pph_longtextlang preserving type)` |
-| `SequenceBranchOperation` | `cast(vornr1.Operation_2 as vdm_vornr1 preserving type)` |
-| `SequenceReturnOperation` | `cast(vornr2.Operation_2 as vdm_vornr2 preserving type)` |
-| `ProductionPlant` | `affl.ProductionPlant` |
-| `BillOfOperationsType` | `affl.BillOfOperationsType` |
-| `BillOfOperationsGroup` | `affl.BillOfOperationsGroup` |
-| `BillOfOperationsVariant` | `affl.BillOfOperations` |
-| `BillOfOperationsSequence` | `affl.ReferenceSequence` |
-| `SequenceSchedulingAlignment` | `affl.SequenceSchedulingAlignment` |
-| `ObjectInternalID` | `affl.ObjectInternalID` |
-| `BillOfOperationsUnit` | `affl.BillOfOperationsUnit` |
-| `MinimumLotSizeQuantity` | `affl.MinimumLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `affl.MaximumLotSizeQuantity` |
-| `_SequenceInternalID` | `affl._OrderSequence` |
-| `_ProductionOrderType` | *Association* |
-| `_BillOfOperationsVariant` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_StatusObject` | *Association* |
-| `_ProductionOrderText` | *Association* |
-| `_ProductionPlantText` | *Association* |
-| `_StatusObjectText` | *Association* |
-| `_ProductionOrderHeader` | *Association* |
-| `_ProductionOrderOperation` | *Association* |
-| `_LongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionOrder` | ✓ | |  | `cast(affl.OrderID as vdm_manufacturingorder preserving type)` |
+| `ProductionOrderSequence` | ✓ | |  | `cast(affl.Sequence as vdm_prodnordersequence preserving type)` |
+| `OrderInternalID` |  | |  |  |
+| `SequenceInternalID` |  | |  |  |
+| `SequenceCategory` |  | |  |  |
+| `ProductionOrderType` |  | |  | `cast(affl.OrderType as vdm_prodnordertype preserving type)` |
+| `ProductionOrderSequenceText` |  | |  | `cast(affl.SequenceText as vdm_flgtext preserving type)` |
+| `SequenceHasLongText` |  | |  |  |
+| `LongTextLanguage` |  | |  | `cast(affl.Language as pph_longtextlang preserving type)` |
+| `SequenceBranchOperation` |  | |  | `cast(vornr1.Operation_2 as vdm_vornr1 preserving type)` |
+| `SequenceReturnOperation` |  | |  | `cast(vornr2.Operation_2 as vdm_vornr2 preserving type)` |
+| `ProductionPlant` |  | |  |  |
+| `BillOfOperationsType` |  | |  |  |
+| `BillOfOperationsGroup` |  | |  |  |
+| `BillOfOperationsVariant` |  | |  | `BillOfOperations` |
+| `BillOfOperationsSequence` |  | |  | `ReferenceSequence` |
+| `SequenceSchedulingAlignment` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `BillOfOperationsUnit` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `_SequenceInternalID` |  | |  | `_OrderSequence` |
+| `_ProductionOrderType` | | ✓ | | |
+| `_BillOfOperationsVariant` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_StatusObject` | | ✓ | | |
+| `_ProductionOrderText` | | ✓ | | |
+| `_ProductionPlantText` | | ✓ | | |
+| `_StatusObjectText` | | ✓ | | |
+| `_ProductionOrderHeader` | | ✓ | | |
+| `_ProductionOrderOperation` | | ✓ | | |
+| `_LongText` | | ✓ | | |
 
 ## Associations
 

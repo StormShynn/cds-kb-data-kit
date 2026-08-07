@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowScenarioDefinition` | `_reuse.wfd_id` |
-| key `WorkflowScenarioDefinitionVers` | `_reuse.version` |
-| key `WorkflowAgentRule` | `_reuse.ruse_label` |
-| key `Language` | `_text.language` |
-| `WorkflowAgentRuleText` | `_text.text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowScenarioDefinition` | ✓ | | `_reuse` | `wfd_id` |
+| `WorkflowScenarioDefinitionVers` | ✓ | | `_reuse` | `version` |
+| `WorkflowAgentRule` | ✓ | | `_reuse` | `ruse_label` |
+| `Language` | ✓ | | `_text` | `language` |
+| `WorkflowAgentRuleText` |  | | `_text` | `text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `JntOpgAgrmt` | `joa` |
-| `JntOpgAgrmtText` | `coalesce( _JntOpgAgrmtText[1:Language = $session.system_language ].JntOpgAgrmtText , _JntOpgAgrmtText[1:Language = 'E' ].JntOpgAgrmtText )` |
-| `_CompanyCode` | *Association* |
-| `_JntOpgAgrmtText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JntOpgAgrmt` | ✓ | |  | `joa` |
+| `JntOpgAgrmtText` |  | |  | `coalesce( _JntOpgAgrmtText[1:Language = $session.system_language ].JntOpgAgrmtText , _JntOpgAgrmtText[1:Language = 'E' ].JntOpgAgrmtText )` |
+| `_CompanyCode` | | ✓ | | |
+| `_JntOpgAgrmtText` | | ✓ | | |
 
 ## Associations
 

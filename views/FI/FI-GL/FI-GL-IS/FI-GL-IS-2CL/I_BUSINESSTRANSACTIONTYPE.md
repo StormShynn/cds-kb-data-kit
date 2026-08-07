@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessTransactionType` | `cast(cbttype as fis_custbttype preserving type )` |
-| `BusinessTransactionCategory` | `cast(bttype as fis_bttype preserving type )` |
-| `BusTransIsSubjToPerdControl` | `xperiodcontrol` |
-| `PeriodControlIsLedgerSpecific` | `xperiodbyledger` |
-| `BusinessTransTypeIsInactive` | `inactive` |
-| `_Text` | *Association* |
-| `_BusTransacTypeHierNode` | *Association* |
-| `_BusinessTransactionCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessTransactionType` | ✓ | |  | `cast(cbttype as fis_custbttype preserving type )` |
+| `BusinessTransactionCategory` |  | |  | `cast(bttype as fis_bttype preserving type )` |
+| `BusTransIsSubjToPerdControl` |  | |  | `xperiodcontrol` |
+| `PeriodControlIsLedgerSpecific` |  | |  | `xperiodbyledger` |
+| `BusinessTransTypeIsInactive` |  | |  | `inactive` |
+| `_Text` | | ✓ | | |
+| `_BusTransacTypeHierNode` | | ✓ | | |
+| `_BusinessTransactionCategory` | | ✓ | | |
 
 ## Associations
 

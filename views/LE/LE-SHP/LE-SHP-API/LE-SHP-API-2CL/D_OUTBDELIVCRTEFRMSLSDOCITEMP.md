@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ReferenceSDDocument` | `vbeln` |
-| `ReferenceSDDocumentItem` | `posnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceSDDocument` |  | |  | `vbeln` |
+| `ReferenceSDDocumentItem` |  | |  | `posnr` |
 
 ## Source Code
 

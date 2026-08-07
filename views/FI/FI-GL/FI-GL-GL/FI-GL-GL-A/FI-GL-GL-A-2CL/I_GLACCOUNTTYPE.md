@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccountType` | `cast(domvalue_l as glaccount_type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_GLAccountTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountType` | ✓ | |  | `cast(domvalue_l as glaccount_type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_GLAccountTypeText` | | ✓ | | |
 
 ## Associations
 

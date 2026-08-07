@@ -29,44 +29,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChargeItemElementUUID` | `TranspChargeItemElementUUID` |
-| `TranspChargeItemUUID` | `TranspChargeItemUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationRateUUID` | `TransportationRateUUID` |
-| `TranspCalculationSheetItem` | `TranspCalculationSheetItem` |
-| `TranspChargeType` | `TranspChargeType` |
-| `TranspCalcResolutionBase` | `TranspCalcResolutionBase` |
-| `TranspCalculationDateType` | `TranspCalculationDateType` |
-| `TranspChargeCalculationDateTme` | `TranspChargeCalculationDateTme` |
-| `TranspChargeCalculationCrcy` | `TranspChargeCalculationCrcy` |
-| `TranspChargeCalcAmtInCalcCrcy` | `TranspChargeCalcAmtInCalcCrcy` |
-| `TransportationRateCurrency` | `TransportationRateCurrency` |
-| `TranspRateAmountInRateCrcy` | `TranspRateAmountInRateCrcy` |
-| `TransportationRatePctUnit` | `TransportationRatePctUnit` |
-| `TransportationRateAmountPct` | `TransportationRateAmountPct` |
-| `TranspRateAmtIsManuallyChanged` | `TranspRateAmtIsManuallyChanged` |
-| `TranspChrgLineNumber` | `TranspChrgLineNumber` |
-| `TranspChrgRefFromLineNumber` | `TranspChrgRefFromLineNumber` |
-| `TranspChrgRefToLineNumber` | `TranspChrgRefToLineNumber` |
-| `TranspChargeDocumentCurrency` | `TranspChargeDocumentCurrency` |
-| `TranspChrgAmountInDocCurrency` | `TranspChrgAmountInDocCurrency` |
-| `TranspChargeLocalCurrency` | `TranspChargeLocalCurrency` |
-| `TranspChrgAmountInLoclCurrency` | `TranspChrgAmountInLoclCurrency` |
-| `TranspIndexRateTableUUID` | `TranspIndexRateTableUUID` |
-| `TransportationRate` | `TransportationRate` |
-| `TranspChargeIsMandatory` | `TranspChargeIsMandatory` |
-| `TranspDimnWeightProfile` | `TranspDimnWeightProfile` |
-| `TranspCalculationMethodType` | `TranspCalculationMethodType` |
-| `TranspCalculationMethodName` | `TranspCalculationMethodName` |
-| `TranspChargeCalcStatus` | `TranspChargeCalcStatus` |
-| `TranspChargePostingStatus` | `TranspChargePostingStatus` |
-| `I_FreightOrderChargeItemTP` | `_TranspOrderChargeItem as _FreightOrderChargeItem : redirected to parent I_FreightOrderChargeItemTP` |
-| `I_FrtOrdChrgCalcBaseTP` | `_TranspOrdChrgCalcBase as _FrtOrdChrgCalcBase : redirected to composition child I_FrtOrdChrgCalcBaseTP` |
-| `I_FrtOrdChrgCalcRuleTP` | `_TranspOrdChrgCalcRule as _FrtOrdChrgCalcRule : redirected to composition child I_FrtOrdChrgCalcRuleTP` |
-| `I_FrtOrdChrgElmntExchRateTP` | `_TranspOrdChrgElmntExchRate as _FrtOrdChrgElmntExchRate : redirected to composition child I_FrtOrdChrgElmntExchRateTP` |
-| `I_FreightOrderTP` | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChargeItemElementUUID` | ✓ | |  |  |
+| `TranspChargeItemUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TransportationRateUUID` |  | |  |  |
+| `TranspCalculationSheetItem` |  | |  |  |
+| `TranspChargeType` |  | |  |  |
+| `TranspCalcResolutionBase` |  | |  |  |
+| `TranspCalculationDateType` |  | |  |  |
+| `TranspChargeCalculationDateTme` |  | |  |  |
+| `TranspChargeCalculationCrcy` |  | |  |  |
+| `TranspChargeCalcAmtInCalcCrcy` |  | |  |  |
+| `TransportationRateCurrency` |  | |  |  |
+| `TranspRateAmountInRateCrcy` |  | |  |  |
+| `TransportationRatePctUnit` |  | |  |  |
+| `TransportationRateAmountPct` |  | |  |  |
+| `TranspRateAmtIsManuallyChanged` |  | |  |  |
+| `TranspChrgLineNumber` |  | |  |  |
+| `TranspChrgRefFromLineNumber` |  | |  |  |
+| `TranspChrgRefToLineNumber` |  | |  |  |
+| `TranspChargeDocumentCurrency` |  | |  |  |
+| `TranspChrgAmountInDocCurrency` |  | |  |  |
+| `TranspChargeLocalCurrency` |  | |  |  |
+| `TranspChrgAmountInLoclCurrency` |  | |  |  |
+| `TranspIndexRateTableUUID` |  | |  |  |
+| `TransportationRate` |  | |  |  |
+| `TranspChargeIsMandatory` |  | |  |  |
+| `TranspDimnWeightProfile` |  | |  |  |
+| `TranspCalculationMethodType` |  | |  |  |
+| `TranspCalculationMethodName` |  | |  |  |
+| `TranspChargeCalcStatus` |  | |  |  |
+| `TranspChargePostingStatus` |  | |  |  |
+| `I_FreightOrderChargeItemTP` |  | |  | `_TranspOrderChargeItem as _FreightOrderChargeItem : redirected to parent I_FreightOrderChargeItemTP` |
+| `I_FrtOrdChrgCalcBaseTP` |  | |  | `_TranspOrdChrgCalcBase as _FrtOrdChrgCalcBase : redirected to composition child I_FrtOrdChrgCalcBaseTP` |
+| `I_FrtOrdChrgCalcRuleTP` |  | |  | `_TranspOrdChrgCalcRule as _FrtOrdChrgCalcRule : redirected to composition child I_FrtOrdChrgCalcRuleTP` |
+| `I_FrtOrdChrgElmntExchRateTP` |  | |  | `_TranspOrdChrgElmntExchRate as _FrtOrdChrgElmntExchRate : redirected to composition child I_FrtOrdChrgElmntExchRateTP` |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
 
 ## Source Code
 

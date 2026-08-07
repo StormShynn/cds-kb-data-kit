@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SustainabilityModeOfTransport` | `SustainabilityModeOfTransport` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SustainabilityModeOfTransport` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

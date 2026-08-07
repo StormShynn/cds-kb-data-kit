@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `ControllingArea` |
-| key `ProfitCenter` | `ProfitCenter` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| key `CompanyCode` | `CompanyCode` |
-| `CompanyCodeForEdit` | `CompanyCodeForEdit` |
-| `CompanyCodeName` | `CompanyCodeName` |
-| `PrftCtrIsAssignedToCompCode` | `PrftCtrIsAssignedToCompCode` |
-| `JointVenture` | `JointVenture` |
-| `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `JointVentureEquityType` | `JointVentureEquityType` |
-| `JointVentureObjectType` | `JointVentureObjectType` |
-| `JointVentureClass` | `JointVentureClass` |
-| `JointVentureSubClass` | `JointVentureSubClass` |
-| `_ProfitCenterTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |
+| `ProfitCenter` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `CompanyCodeForEdit` |  | |  |  |
+| `CompanyCodeName` |  | |  |  |
+| `PrftCtrIsAssignedToCompCode` |  | |  |  |
+| `JointVenture` |  | |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |
+| `JointVentureEquityType` |  | |  |  |
+| `JointVentureObjectType` |  | |  |  |
+| `JointVentureClass` |  | |  |  |
+| `JointVentureSubClass` |  | |  |  |
+| `_ProfitCenterTP` | | ✓ | | |
 
 ## Source Code
 

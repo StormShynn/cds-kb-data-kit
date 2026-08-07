@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomFieldID` | `name` |
-| key `Language` | `language` |
-| key `Code` | `code` |
-| `Description` | `description` |
-| `_Code` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomFieldID` | ✓ | |  | `name` |
+| `Language` | ✓ | |  | `language` |
+| `Code` | ✓ | |  | `code` |
+| `Description` |  | |  | `description` |
+| `_Code` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

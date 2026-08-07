@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Country` | `land1` |
-| `_Root` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` |  | |  | `land1` |
+| `_Root` | | ✓ | | |
 
 ## Source Code
 

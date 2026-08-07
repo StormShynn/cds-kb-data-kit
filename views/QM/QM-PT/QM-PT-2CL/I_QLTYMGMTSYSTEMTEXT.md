@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityManagementSystem` | `tq02u.qssysfam` |
-| key `Language` | `tq02u.sprsl` |
-| `QualityManagementSystemText` | `cast( tq02u.qstext as vdm_qmsystem_text preserving type )` |
-| `_Language` | *Association* |
-| `_QualityManagementSystem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityManagementSystem` | ✓ | |  | `qssysfam` |
+| `Language` | ✓ | |  | `sprsl` |
+| `QualityManagementSystemText` |  | |  | `cast( tq02u.qstext as vdm_qmsystem_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_QualityManagementSystem` | | ✓ | | |
 
 ## Associations
 

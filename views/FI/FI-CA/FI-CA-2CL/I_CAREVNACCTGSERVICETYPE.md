@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CARevenueAccountingServiceType` | `service_type` |
-| `_CARevnAcctgServiceTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CARevenueAccountingServiceType` | ✓ | |  | `service_type` |
+| `_CARevnAcctgServiceTypeText` | | ✓ | | |
 
 ## Associations
 

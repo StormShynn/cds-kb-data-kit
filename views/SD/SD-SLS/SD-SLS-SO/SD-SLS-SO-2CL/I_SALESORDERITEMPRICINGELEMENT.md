@@ -32,76 +32,76 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `cast(SalesDocument as vdm_sales_order preserving type)` |
-| key `SalesOrderItem` | `cast(SalesDocumentItem as sales_order_item preserving type)` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `PricingDateTime` | `PricingDateTime` |
-| `PriceConditionDeterminationDte` | `PriceConditionDeterminationDte` |
-| `ConditionCalculationType` | `ConditionCalculationType` |
-| `ConditionBaseValue` | `ConditionBaseValue` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionCurrency` | `ConditionCurrency` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionCategory` | `ConditionCategory` |
-| `ConditionIsForStatistics` | `ConditionIsForStatistics` |
-| `PricingScaleType` | `PricingScaleType` |
-| `IsRelevantForAccrual` | `IsRelevantForAccrual` |
-| `CndnIsRelevantForInvoiceList` | `CndnIsRelevantForInvoiceList` |
-| `ConditionOrigin` | `ConditionOrigin` |
-| `IsGroupCondition` | `IsGroupCondition` |
-| `IsGroupCondition_2` | `IsGroupCondition_2` |
-| `ConditionRecord` | `ConditionRecord` |
-| `ConditionSequentialNumber` | `ConditionSequentialNumber` |
-| `TaxCode` | `TaxCode` |
-| `WithholdingTaxCode` | `WithholdingTaxCode` |
-| `CndnRoundingOffDiffAmount` | `CndnRoundingOffDiffAmount` |
-| `ConditionAmount` | `ConditionAmount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `ConditionControl` | `ConditionControl` |
-| `ConditionInactiveReason` | `ConditionInactiveReason` |
-| `ConditionClass` | `ConditionClass` |
-| `PrcgProcedureCounterForHeader` | `PrcgProcedureCounterForHeader` |
-| `FactorForConditionBasisValue` | `FactorForConditionBasisValue` |
-| `StructureCondition` | `StructureCondition` |
-| `PeriodFactorForCndnBasisValue` | `PeriodFactorForCndnBasisValue` |
-| `PricingScaleBasis` | `PricingScaleBasis` |
-| `ConditionScaleBasisValue` | `ConditionScaleBasisValue` |
-| `ConditionScaleBasisUnit` | `ConditionScaleBasisUnit` |
-| `ConditionScaleBasisCurrency` | `ConditionScaleBasisCurrency` |
-| `CndnIsRelevantForIntcoBilling` | `CndnIsRelevantForIntcoBilling` |
-| `ConditionIsManuallyChanged` | `ConditionIsManuallyChanged` |
-| `ConditionIsForConfiguration` | `ConditionIsForConfiguration` |
-| `VariantCondition` | `VariantCondition` |
-| `ConditionRateAmount` | `ConditionRateAmount` |
-| `ConditionRateRatio` | `ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `ConditionBaseAmount` |
-| `ConditionBaseQuantity` | `ConditionBaseQuantity` |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_ConditionApplication` | *Association* |
-| `_PricingConditionType` | *Association* |
-| `_ConditionCalculationType` | *Association* |
-| `_ConditionCurrency` | *Association* |
-| `_Currency` | *Association* |
-| `_ConditionQuantityUnit` | *Association* |
-| `_ConditionCategory` | *Association* |
-| `_ConditionOrigin` | *Association* |
-| `_ConditionControl` | *Association* |
-| `_ConditionInactiveReason` | *Association* |
-| `_ConditionClass` | *Association* |
-| `_PricingScaleBasis` | *Association* |
-| `_ScaleUnitOfMeasure` | *Association* |
-| `_ScaleCurrency` | *Association* |
-| `_VariantCondition` | *Association* |
-| `_StructureCondition` | *Association* |
-| `_ConditionRateRatioUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(SalesDocument as vdm_sales_order preserving type)` |
+| `SalesOrderItem` | ✓ | |  | `cast(SalesDocumentItem as sales_order_item preserving type)` |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `PricingDateTime` |  | |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionBaseValue` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `IsRelevantForAccrual` |  | |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `IsGroupCondition` |  | |  |  |
+| `IsGroupCondition_2` |  | |  |  |
+| `ConditionRecord` |  | |  |  |
+| `ConditionSequentialNumber` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `WithholdingTaxCode` |  | |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionControl` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |
+| `StructureCondition` |  | |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |
+| `PricingScaleBasis` |  | |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |
+| `VariantCondition` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_ConditionApplication` | | ✓ | | |
+| `_PricingConditionType` | | ✓ | | |
+| `_ConditionCalculationType` | | ✓ | | |
+| `_ConditionCurrency` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_ConditionQuantityUnit` | | ✓ | | |
+| `_ConditionCategory` | | ✓ | | |
+| `_ConditionOrigin` | | ✓ | | |
+| `_ConditionControl` | | ✓ | | |
+| `_ConditionInactiveReason` | | ✓ | | |
+| `_ConditionClass` | | ✓ | | |
+| `_PricingScaleBasis` | | ✓ | | |
+| `_ScaleUnitOfMeasure` | | ✓ | | |
+| `_ScaleCurrency` | | ✓ | | |
+| `_VariantCondition` | | ✓ | | |
+| `_StructureCondition` | | ✓ | | |
+| `_ConditionRateRatioUnit` | | ✓ | | |
 
 ## Associations
 

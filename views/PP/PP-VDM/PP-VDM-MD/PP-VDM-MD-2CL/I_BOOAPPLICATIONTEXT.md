@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsApplication` | `cast(t.plnaw as billofoperationsapplication preserving type)` |
-| key `Language` | `cast(t.spras as spras preserving type)` |
-| `BOOApplicationName` | `cast(t.text40 as plnat preserving type)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsApplication` | ✓ | |  | `cast(t.plnaw as billofoperationsapplication preserving type)` |
+| `Language` | ✓ | |  | `cast(t.spras as spras preserving type)` |
+| `BOOApplicationName` |  | |  | `cast(t.text40 as plnat preserving type)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

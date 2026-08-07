@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankPowerOfAttorneyUUID` | `BankPowerOfAttorneyUUID` |
-| key `BkPOABankAccountSelectionUUID` | `BkPOABankAccountSelectionUUID` |
-| `BkPOABkAcctSelectionField` | `BkPOABkAcctSelectionField` |
-| `BkPOABkAcctSelectionSign` | `BkPOABkAcctSelectionSign` |
-| `BkPOABkAcctSelectionOption` | `BkPOABkAcctSelectionOption` |
-| `BkPOABkAcctSelectionLowValue` | `BkPOABkAcctSelectionLowValue` |
-| `BkPOABkAcctSelectionHighValue` | `BkPOABkAcctSelectionHighValue` |
-| `BkPOABkAcctSelectionGroup` | `BkPOABkAcctSelectionGroup` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_BankPowerOfAttorney` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` | ✓ | |  |  |
+| `BkPOABankAccountSelectionUUID` | ✓ | |  |  |
+| `BkPOABkAcctSelectionField` |  | |  |  |
+| `BkPOABkAcctSelectionSign` |  | |  |  |
+| `BkPOABkAcctSelectionOption` |  | |  |  |
+| `BkPOABkAcctSelectionLowValue` |  | |  |  |
+| `BkPOABkAcctSelectionHighValue` |  | |  |  |
+| `BkPOABkAcctSelectionGroup` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_BankPowerOfAttorney` | | ✓ | | |
 
 ## Source Code
 

@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingType` | `CostingType` |
-| `CostingTypeName` | `_CostingTypeText.CostingTypeName` |
-| `_CostingTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingType` | ✓ | |  |  |
+| `CostingTypeName` |  | | `_CostingTypeText` | `CostingTypeName` |
+| `_CostingTypeText` | | ✓ | | |
 
 ## Associations
 

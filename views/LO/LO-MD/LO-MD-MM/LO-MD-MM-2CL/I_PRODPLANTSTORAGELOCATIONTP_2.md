@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| key `StorageLocation` | `StorageLocation` |
-| `WarehouseStorageBin` | `WarehouseStorageBin` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `LeanWrhsManagementPickingArea` | `LeanWrhsManagementPickingArea` |
-| `_ProductPlant` | *Association* |
-| `_Product` | *Association* |
-| `_ProductDescription_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `StorageLocation` | ✓ | |  |  |
+| `WarehouseStorageBin` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `LeanWrhsManagementPickingArea` |  | |  |  |
+| `_ProductPlant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductDescription_2` | | ✓ | | |
 
 ## Source Code
 

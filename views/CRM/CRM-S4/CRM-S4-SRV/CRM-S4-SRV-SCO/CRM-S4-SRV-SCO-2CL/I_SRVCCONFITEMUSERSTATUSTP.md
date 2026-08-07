@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceConfirmation` | `ServiceConfirmation` |
-| key `ServiceConfirmationItem` | `ServiceConfirmationItem` |
-| key `UserStatus` | `UserStatus` |
-| `StatusProfile` | `StatusProfile` |
-| `_StatusCode` | *Association* |
-| `_StatusProfile` | *Association* |
-| `_ServiceConfirmationItemTP` | *Association* |
-| `_ServiceConfirmationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |
+| `ServiceConfirmationItem` | ✓ | |  |  |
+| `UserStatus` | ✓ | |  |  |
+| `StatusProfile` |  | |  |  |
+| `_StatusCode` | | ✓ | | |
+| `_StatusProfile` | | ✓ | | |
+| `_ServiceConfirmationItemTP` | | ✓ | | |
+| `_ServiceConfirmationTP` | | ✓ | | |
 
 ## Source Code
 

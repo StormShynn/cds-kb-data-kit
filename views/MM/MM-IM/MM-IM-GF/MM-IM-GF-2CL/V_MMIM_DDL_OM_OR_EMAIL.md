@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialDocument` | `_MaterialDocumentRecord.MaterialDocument` |
-| key `MaterialDocumentYear` | `_MaterialDocumentRecord.MaterialDocumentYear` |
-| key `MaterialDocumentItem` | `_MaterialDocumentRecord.MaterialDocumentItem` |
-| `PurchaseOrder` | `_MaterialDocumentRecord.PurchaseOrder` |
-| `PurchaseOrderItem` | `_MaterialDocumentRecord.PurchaseOrderItem` |
-| `Material` | `_MaterialDocumentRecord.Material` |
-| `Plant` | `_MaterialDocumentRecord.Plant` |
-| `StorageLocation` | `_MaterialDocumentRecord.StorageLocation` |
-| `Batch` | `_MaterialDocumentRecord.Batch` |
-| `Quantity` | `_MaterialDocumentRecord.EntryUnit` |
-| `UnitOfMeasure` | `_MaterialDocumentRecord.QuantityInEntryUnit` |
-| `OrderQuantity` | `_MaterialDocumentRecord.QtyInPurchaseOrderPriceUnit` |
-| `OrderUnitOfMeasure` | `_MaterialDocumentRecord.OrderPriceUnit` |
-| `Vendor` | `_MaterialDocumentRecord.Supplier` |
-| `FullNameOfPerson` | `_AddressPersonName.PersonFullName` |
-| `CalendarDay` | `substring(_MaterialDocumentRecord.CreationDate, 7, 2)` |
-| `CalendarMonth` | `substring(_MaterialDocumentRecord.CreationDate, 5, 2)` |
-| `CalendarYear` | `substring(_MaterialDocumentRecord.CreationDate, 1, 4)` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocument` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocument` |
+| `MaterialDocumentYear` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocumentYear` |
+| `MaterialDocumentItem` | ✓ | | `_MaterialDocumentRecord` | `MaterialDocumentItem` |
+| `PurchaseOrder` |  | | `_MaterialDocumentRecord` | `PurchaseOrder` |
+| `PurchaseOrderItem` |  | | `_MaterialDocumentRecord` | `PurchaseOrderItem` |
+| `Material` |  | | `_MaterialDocumentRecord` | `Material` |
+| `Plant` |  | | `_MaterialDocumentRecord` | `Plant` |
+| `StorageLocation` |  | | `_MaterialDocumentRecord` | `StorageLocation` |
+| `Batch` |  | | `_MaterialDocumentRecord` | `Batch` |
+| `Quantity` |  | | `_MaterialDocumentRecord` | `EntryUnit` |
+| `UnitOfMeasure` |  | | `_MaterialDocumentRecord` | `QuantityInEntryUnit` |
+| `OrderQuantity` |  | | `_MaterialDocumentRecord` | `QtyInPurchaseOrderPriceUnit` |
+| `OrderUnitOfMeasure` |  | | `_MaterialDocumentRecord` | `OrderPriceUnit` |
+| `Vendor` |  | | `_MaterialDocumentRecord` | `Supplier` |
+| `FullNameOfPerson` |  | | `_AddressPersonName` | `PersonFullName` |
+| `CalendarDay` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 7, 2)` |
+| `CalendarMonth` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 5, 2)` |
+| `CalendarYear` |  | |  | `substring(_MaterialDocumentRecord.CreationDate, 1, 4)` |
 
 ## Source Code
 

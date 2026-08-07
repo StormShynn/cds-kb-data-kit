@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CommunicationMediumType` | `comm_type` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CommunicationMediumType` | ✓ | |  | `comm_type` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

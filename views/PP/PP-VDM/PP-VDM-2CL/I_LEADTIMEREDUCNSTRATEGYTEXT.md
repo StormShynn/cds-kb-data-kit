@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `txt.werks` |
-| key `LeadTimeReductionStrategy` | `txt.rstra` |
-| key `Language` | `txt.spras` |
-| `LeadTimeReductionStrategyName` | `txt.txt` |
-| `_Language` | *Association* |
-| `_Plant` | *Association* |
-| `_Strategy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `LeadTimeReductionStrategy` | ✓ | |  | `rstra` |
+| `Language` | ✓ | |  | `spras` |
+| `LeadTimeReductionStrategyName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Strategy` | | ✓ | | |
 
 ## Associations
 

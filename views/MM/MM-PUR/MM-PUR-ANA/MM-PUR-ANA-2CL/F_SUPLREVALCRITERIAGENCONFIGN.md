@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SuplrEvalCritraDelivCompleted` | `SuplrEvalCritraDelivCompleted` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalCritraDelivCompleted` |  | |  |  |
 
 ## Source Code
 

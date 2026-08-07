@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDDocumentObject` | `cast(SUBSTRING(dd07t.domvalue_l, 1, 1) as sd_doc_object preserving type )` |
-| key `Language` | `ddlanguage` |
-| `SDDocumentObjectName` | `cast(ddtext as sd_doc_object_name)` |
-| `_SDDocumentObject` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDDocumentObject` | ✓ | |  | `cast(SUBSTRING(dd07t.domvalue_l, 1, 1) as sd_doc_object preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SDDocumentObjectName` |  | |  | `cast(ddtext as sd_doc_object_name)` |
+| `_SDDocumentObject` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

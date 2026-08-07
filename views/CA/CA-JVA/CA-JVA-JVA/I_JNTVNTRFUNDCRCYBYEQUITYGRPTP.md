@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenture` | `JointVenture` |
-| key `JointVentureEquityGroup` | `JointVentureEquityGroup` |
-| key `JointVentureFundingCrcy` | `JointVentureFundingCrcy` |
-| `HouseBank` | `HouseBank` |
-| `HouseBankAccount` | `HouseBankAccount` |
-| `JntVntrFundingGroup` | `JntVntrFundingGroup` |
-| `JVAVentureIntrstCalcGrpID` | `JVAVentureIntrstCalcGrpID` |
-| `_JointVentureEquityGroup` | *Association* |
-| `_JointVenture` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JointVentureEquityGroup` | ✓ | |  |  |
+| `JointVentureFundingCrcy` | ✓ | |  |  |
+| `HouseBank` |  | |  |  |
+| `HouseBankAccount` |  | |  |  |
+| `JntVntrFundingGroup` |  | |  |  |
+| `JVAVentureIntrstCalcGrpID` |  | |  |  |
+| `_JointVentureEquityGroup` | | ✓ | | |
+| `_JointVenture` | | ✓ | | |
 
 ## Source Code
 

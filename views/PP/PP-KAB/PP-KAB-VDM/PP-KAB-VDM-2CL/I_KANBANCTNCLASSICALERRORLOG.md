@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanControlCycle` | `pknum` |
-| key `KanbanControlCycleItem` | `pkpos` |
-| key `KanbanContainer` | `_KanbanContainer.KanbanContainer` |
-| `Plant` | `_KanbanControlCycle.Plant` |
-| `SystemMessageClass` | `msgid` |
-| `SystemMessageNumber` | `msgnr` |
-| `SystemMessageType` | `msgty` |
-| `SystemMessageVariable1` | `cast(msgv1 as vdm_pk_msg_var_1 preserving type)` |
-| `SystemMessageVariable2` | `cast(msgv2 as vdm_pk_msg_var_2 preserving type)` |
-| `SystemMessageVariable3` | `cast(msgv3 as vdm_pk_msg_var_3 preserving type)` |
-| `SystemMessageVariable4` | `cast(msgv4 as vdm_pk_msg_var_4 preserving type)` |
-| `ErrorOccurrenceDate` | `saedt` |
-| `ErrorOccurrenceTime` | `saeuz` |
-| `PreviousKanbanContainerStatus` | `sfgsv` |
-| `TargetKanbanContainerStatus` | `sfgsn` |
-| `Supplier` | `_KanbanContainer.Supplier` |
-| `_KanbanControlCycle` | *Association* |
-| `_KanbanControlCycleItem` | *Association* |
-| `_KanbanContainer` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanControlCycle` | ✓ | |  | `pknum` |
+| `KanbanControlCycleItem` | ✓ | |  | `pkpos` |
+| `KanbanContainer` | ✓ | | `_KanbanContainer` | `KanbanContainer` |
+| `Plant` |  | | `_KanbanControlCycle` | `Plant` |
+| `SystemMessageClass` |  | |  | `msgid` |
+| `SystemMessageNumber` |  | |  | `msgnr` |
+| `SystemMessageType` |  | |  | `msgty` |
+| `SystemMessageVariable1` |  | |  | `cast(msgv1 as vdm_pk_msg_var_1 preserving type)` |
+| `SystemMessageVariable2` |  | |  | `cast(msgv2 as vdm_pk_msg_var_2 preserving type)` |
+| `SystemMessageVariable3` |  | |  | `cast(msgv3 as vdm_pk_msg_var_3 preserving type)` |
+| `SystemMessageVariable4` |  | |  | `cast(msgv4 as vdm_pk_msg_var_4 preserving type)` |
+| `ErrorOccurrenceDate` |  | |  | `saedt` |
+| `ErrorOccurrenceTime` |  | |  | `saeuz` |
+| `PreviousKanbanContainerStatus` |  | |  | `sfgsv` |
+| `TargetKanbanContainerStatus` |  | |  | `sfgsn` |
+| `Supplier` |  | | `_KanbanContainer` | `Supplier` |
+| `_KanbanControlCycle` | | ✓ | | |
+| `_KanbanControlCycleItem` | | ✓ | | |
+| `_KanbanContainer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
 
 ## Associations
 

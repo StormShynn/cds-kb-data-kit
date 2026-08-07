@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalRspPartyAddressUUID` | `SuplrEvalRspPartyAddressUUID` |
-| `SuplrEvalRspUUID` | `SuplrEvalRspUUID` |
-| `SuplrEvalRspPartyUUID` | `SuplrEvalRspPartyUUID` |
-| `FullName` | `FullName` |
-| `Department` | `Department` |
-| `PhoneNumber` | `PhoneNumber` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalRspPartyAddressUUID` | ✓ | |  |  |
+| `SuplrEvalRspUUID` |  | |  |  |
+| `SuplrEvalRspPartyUUID` |  | |  |  |
+| `FullName` |  | |  |  |
+| `Department` |  | |  |  |
+| `PhoneNumber` |  | |  |  |
 
 ## Source Code
 

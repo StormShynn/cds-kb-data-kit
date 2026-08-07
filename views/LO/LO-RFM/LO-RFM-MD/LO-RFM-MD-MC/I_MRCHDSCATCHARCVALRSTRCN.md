@@ -28,33 +28,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MerchandiseCategory` | `cast (MrchdsCategory.class as rfm_mrchdscategory)` |
-| key `Characteristic` | `Characteristic.atnam` |
-| key `ClfnCharcValuePositionNumber` | `CharcValRestriction.CharcValuePositionNumber` |
-| `CharcInternalID` | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |
-| `ClfnObjectID` | `CharcValRestriction.ClfnObjectID` |
-| `CharcValue` | `CharcValRestriction.CharcValue` |
-| `CharcFromNumericValue` | `CharcValRestriction.CharcFromNumericValue` |
-| `CharcFromNumericValueUnit` | `CharcValRestriction.CharcFromNumericValueUnit` |
-| `CharcToNumericValue` | `CharcValRestriction.CharcToNumericValue` |
-| `CharcToNumericValueUnit` | `CharcValRestriction.CharcToNumericValueUnit` |
-| `CharcValueIntervalType` | `CharcValRestriction.CharcValueIntervalType` |
-| `IsDeleted` | `CharcValRestriction.IsDeleted` |
-| `CharcFromDecimalValue` | `CharcValRestriction.CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `CharcValRestriction.CharcToDecimalValue` |
-| `CharcFromAmount` | `CharcValRestriction.CharcFromAmount` |
-| `CharcToAmount` | `CharcValRestriction.CharcToAmount` |
-| `Currency` | `CharcValRestriction.Currency` |
-| `CharcFromDate` | `CharcValRestriction.CharcFromDate` |
-| `CharcToDate` | `CharcValRestriction.CharcToDate` |
-| `CharcFromTime` | `CharcValRestriction.CharcFromTime` |
-| `CharcToTime` | `CharcValRestriction.CharcToTime` |
-| `_Characteristic` | *Association* |
-| `_CharacteristicDesc` | *Association* |
-| `_MerchandiseCategory` | *Association* |
-| `_MrchdsCategoryCharacteristic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MerchandiseCategory` | ✓ | |  | `cast (MrchdsCategory.class as rfm_mrchdscategory)` |
+| `Characteristic` | ✓ | |  | `atnam` |
+| `ClfnCharcValuePositionNumber` | ✓ | |  | `CharcValuePositionNumber` |
+| `CharcInternalID` |  | |  | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |
+| `ClfnObjectID` |  | |  |  |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcValueIntervalType` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `_Characteristic` | | ✓ | | |
+| `_CharacteristicDesc` | | ✓ | | |
+| `_MerchandiseCategory` | | ✓ | | |
+| `_MrchdsCategoryCharacteristic` | | ✓ | | |
 
 ## Associations
 

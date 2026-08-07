@@ -31,41 +31,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdCmplncLogsDocumentUUID` | `ProdCmplncLogsDocumentUUID` |
-| key `ProdCmplncLogsDocumentItem` | `ProdCmplncLogsDocumentItem` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `Product` | `Product` |
-| `DepartureCountry` | `DepartureCountry` |
-| `DestinationCountry` | `DestinationCountry` |
-| `GoodsIssueDate` | `GoodsIssueDate` |
-| `SalesOrganization` | `SalesOrganization` |
-| `Plant` | `Plant` |
-| `Supplier` | `Supplier` |
-| `Customer` | `Customer` |
-| `ProdCmplncShipToPartyBusPrtn` | `ProdCmplncShipToPartyBusPrtn` |
-| `ProdCmplncShipToPartyAddressID` | `ProdCmplncShipToPartyAddressID` |
-| `ProdCmplncSftyDataShtRcpntPty` | `ProdCmplncSftyDataShtRcpntPty` |
-| `PCSftyDataShtRcpntAddrID` | `PCSftyDataShtRcpntAddrID` |
-| `DngrsGoodsMainModeOfTransport` | `DngrsGoodsMainModeOfTransport` |
-| `ShippedQuantityInOrderQtyUnit` | `ShippedQuantityInOrderQtyUnit` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `ProdCmplncLogsDocCntctPersnUsr` | `ProdCmplncLogsDocCntctPersnUsr` |
-| `ProdCmplncMarketabilityStatus` | `ProdCmplncMarketabilityStatus` |
-| `ProdCmplncMktbltyStatusReason` | `ProdCmplncMktbltyStatusReason` |
-| `ProdCmplncDngrsGoodsStatus` | `ProdCmplncDngrsGoodsStatus` |
-| `DangerousGoodsStatusReason` | `DangerousGoodsStatusReason` |
-| `ProdCmplncSftyDataSheetStatus` | `ProdCmplncSftyDataSheetStatus` |
-| `ProdCmplncSDSStatusReason` | `ProdCmplncSDSStatusReason` |
-| `ChmlSuplrChkStatus` | `ChmlSuplrChkStatus` |
-| `ChmlSuplrChkStatusReason` | `ChmlSuplrChkStatusReason` |
-| `SftyDtaShtRcpntPtyDetnType` | `SftyDtaShtRcpntPtyDetnType` |
-| `_PackingInstruction` | *Association* |
-| `_Document` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocumentUUID` | ✓ | |  |  |
+| `ProdCmplncLogsDocumentItem` | ✓ | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `Product` |  | |  |  |
+| `DepartureCountry` |  | |  |  |
+| `DestinationCountry` |  | |  |  |
+| `GoodsIssueDate` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `ProdCmplncShipToPartyBusPrtn` |  | |  |  |
+| `ProdCmplncShipToPartyAddressID` |  | |  |  |
+| `ProdCmplncSftyDataShtRcpntPty` |  | |  |  |
+| `PCSftyDataShtRcpntAddrID` |  | |  |  |
+| `DngrsGoodsMainModeOfTransport` |  | |  |  |
+| `ShippedQuantityInOrderQtyUnit` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `ProdCmplncLogsDocCntctPersnUsr` |  | |  |  |
+| `ProdCmplncMarketabilityStatus` |  | |  |  |
+| `ProdCmplncMktbltyStatusReason` |  | |  |  |
+| `ProdCmplncDngrsGoodsStatus` |  | |  |  |
+| `DangerousGoodsStatusReason` |  | |  |  |
+| `ProdCmplncSftyDataSheetStatus` |  | |  |  |
+| `ProdCmplncSDSStatusReason` |  | |  |  |
+| `ChmlSuplrChkStatus` |  | |  |  |
+| `ChmlSuplrChkStatusReason` |  | |  |  |
+| `SftyDtaShtRcpntPtyDetnType` |  | |  |  |
+| `_PackingInstruction` | | ✓ | | |
+| `_Document` | | ✓ | | |
 
 ## Source Code
 

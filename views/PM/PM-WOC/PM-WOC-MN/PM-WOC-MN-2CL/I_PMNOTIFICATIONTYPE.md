@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `NotificationType` | `qmart` |
-| `NumberRange` | `tq80.qmnuk` |
-| `NotificationOrigin` | `herkz` |
-| `IsExternalNumberRange` | `_NumberRangeIntervals.externind` |
-| `MaintPriorityType` | `artpr` |
-| `NotificationCategory` | `qmtyp` |
-| `LongTextIsNotChangeable` | `qmltxt02` |
-| `UserCanBeNotified` | `case when _PartnerRoles.parvw is not null then 'X' else '' end` |
-| `UserMustBeNotified` | `case when _PartnerRoles.papfl = 'X' then 'X' else '' end` |
-| `NotifiedUserCanBeDeleted` | `case when _PartnerRoles.aendb = 'X' then '' else 'X' end` |
-| `IsNotificationCreationType` | `tq80.reqmaintapp_use` |
-| `CatalogProfile` | `tq80.rbnr` |
-| `MaintNotifObjPrtCodeCatalog` | `tq80.otkat` |
-| `MaintNotifDamageCodeCatalog` | `tq80.fekat` |
-| `MaintNotifCauseCodeCatalog` | `tq80.urkat` |
-| `MaintNotifTaskCodeCatalog` | `tq80.makat` |
-| `MaintNotifActivityCodeCatalog` | `tq80.mfkat` |
-| `MaintNotifRespPartnerFunction` | `tq80.parvw_vera` |
-| `MaintenanceOrderType` | `tq80.auart` |
-| `MaintNotifCodgCatalogTypeCode` | `tq80.sakat` |
-| `MaintNotifTypeHasActvPhseModel` | `tq80.maintnotiftypehasactvphsemodel` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `NotificationType` | ✓ | |  | `qmart` |
+| `NumberRange` |  | |  | `qmnuk` |
+| `NotificationOrigin` |  | |  | `herkz` |
+| `IsExternalNumberRange` |  | | `_NumberRangeIntervals` | `externind` |
+| `MaintPriorityType` |  | |  | `artpr` |
+| `NotificationCategory` |  | |  | `qmtyp` |
+| `LongTextIsNotChangeable` |  | |  | `qmltxt02` |
+| `UserCanBeNotified` |  | |  | `case when _PartnerRoles.parvw is not null then 'X' else '' end` |
+| `UserMustBeNotified` |  | |  | `case when _PartnerRoles.papfl = 'X' then 'X' else '' end` |
+| `NotifiedUserCanBeDeleted` |  | |  | `case when _PartnerRoles.aendb = 'X' then '' else 'X' end` |
+| `IsNotificationCreationType` |  | |  | `reqmaintapp_use` |
+| `CatalogProfile` |  | |  | `rbnr` |
+| `MaintNotifObjPrtCodeCatalog` |  | |  | `otkat` |
+| `MaintNotifDamageCodeCatalog` |  | |  | `fekat` |
+| `MaintNotifCauseCodeCatalog` |  | |  | `urkat` |
+| `MaintNotifTaskCodeCatalog` |  | |  | `makat` |
+| `MaintNotifActivityCodeCatalog` |  | |  | `mfkat` |
+| `MaintNotifRespPartnerFunction` |  | |  | `parvw_vera` |
+| `MaintenanceOrderType` |  | |  | `auart` |
+| `MaintNotifCodgCatalogTypeCode` |  | |  | `sakat` |
+| `MaintNotifTypeHasActvPhseModel` |  | |  | `maintnotiftypehasactvphsemodel` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

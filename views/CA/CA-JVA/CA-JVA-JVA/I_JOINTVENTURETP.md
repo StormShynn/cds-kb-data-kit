@@ -29,59 +29,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenture` | `JointVenture` |
-| `JointVentureName` | `JointVentureName` |
-| `JointVenturePaymentTerms` | `JointVenturePaymentTerms` |
-| `JointVentureBillingMethod` | `JointVentureBillingMethod` |
-| `JointVentureType` | `JointVentureType` |
-| `JointVentureOperator` | `JointVentureOperator` |
-| `JVAVentureClass` | `JVAVentureClass` |
-| `JntOpgAgrmt` | `JntOpgAgrmt` |
-| `JntVntrBillgCutbackIsBlk` | `JntVntrBillgCutbackIsBlk` |
-| `JntVntrInceptionToDateData` | `JntVntrInceptionToDateData` |
-| `JntVntrCurrentMonthBillg` | `JntVntrCurrentMonthBillg` |
-| `JntVntrYearToDateBillg` | `JntVntrYearToDateBillg` |
-| `JntVntrInceptionToDateBillg` | `JntVntrInceptionToDateBillg` |
-| `JntVntrFundingGroup` | `JntVntrFundingGroup` |
-| `JointVentureCreatedByUser` | `JointVentureCreatedByUser` |
-| `JntVntrTimeCreated` | `JntVntrTimeCreated` |
-| `JntVntrDateCreated` | `JntVntrDateCreated` |
-| `JntVntrCreationDateTime` | `JntVntrCreationDateTime` |
-| `JointVentureLastChangedByUser` | `JointVentureLastChangedByUser` |
-| `JntVntrTimeLastChanged` | `JntVntrTimeLastChanged` |
-| `JntVntrDateLastChanged` | `JntVntrDateLastChanged` |
-| `JntVntrLastChangedDateTime` | `JntVntrLastChangedDateTime` |
-| `JntVntrBillgFrqcy` | `JntVntrBillgFrqcy` |
-| `JntVntrBillgFormat` | `JntVntrBillgFormat` |
-| `JntVntrNonBillgFormat` | `JntVntrNonBillgFormat` |
-| `JointVentureTaxCode` | `JointVentureTaxCode` |
-| `JntVntrTaxJurisdiction` | `JntVntrTaxJurisdiction` |
-| `JntVntrOutTaxCode` | `JntVntrOutTaxCode` |
-| `JntVntrOutTaxJurisdiction` | `JntVntrOutTaxJurisdiction` |
-| `JntVntrOutPaymentTerms` | `JntVntrOutPaymentTerms` |
-| `JntVntrDrillingPayRate` | `JntVntrDrillingPayRate` |
-| `JntVntrNonDrillingPayRate` | `JntVntrNonDrillingPayRate` |
-| `JntVntrParentCoOvhdExpnCostCtr` | `JntVntrParentCoOvhdExpnCostCtr` |
-| `JntVntrParentCoOvhdProject` | `JntVntrParentCoOvhdProject` |
-| `JntVntrParentCoOvhdExpnOrder` | `JntVntrParentCoOvhdExpnOrder` |
-| `JntVntrSubstituteCostCtr` | `JntVntrSubstituteCostCtr` |
-| `JntVntrCrcyIsFundingCrcy` | `JntVntrCrcyIsFundingCrcy` |
-| `JntVntrProperty` | `JntVntrProperty` |
-| `Currency` | `Currency` |
-| `JntVntrBillgThldDebit` | `} JntVntrBillgThldDebit` |
-| `JntVntrBillgThldCredit` | `} JntVntrBillgThldCredit` |
-| `JntVntrBillgThldIsActive` | `JntVntrBillgThldIsActive` |
-| `JntVntrPaymentTermSchema` | `JntVntrPaymentTermSchema` |
-| `JVAVentureIntrstCalcGrpID` | `JVAVentureIntrstCalcGrpID` |
-| `_Currency` | *Association* |
-| `_JointVentureEquityGroup` | *Association* |
-| `_JointVentureDescription` | *Association* |
-| `_JointVentureEquityType` | *Association* |
-| `_JntVntrParCompanyOverhead` | *Association* |
-| `_JntVntrOvhdBurdenRatePct` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JointVentureName` |  | |  |  |
+| `JointVenturePaymentTerms` |  | |  |  |
+| `JointVentureBillingMethod` |  | |  |  |
+| `JointVentureType` |  | |  |  |
+| `JointVentureOperator` |  | |  |  |
+| `JVAVentureClass` |  | |  |  |
+| `JntOpgAgrmt` |  | |  |  |
+| `JntVntrBillgCutbackIsBlk` |  | |  |  |
+| `JntVntrInceptionToDateData` |  | |  |  |
+| `JntVntrCurrentMonthBillg` |  | |  |  |
+| `JntVntrYearToDateBillg` |  | |  |  |
+| `JntVntrInceptionToDateBillg` |  | |  |  |
+| `JntVntrFundingGroup` |  | |  |  |
+| `JointVentureCreatedByUser` |  | |  |  |
+| `JntVntrTimeCreated` |  | |  |  |
+| `JntVntrDateCreated` |  | |  |  |
+| `JntVntrCreationDateTime` |  | |  |  |
+| `JointVentureLastChangedByUser` |  | |  |  |
+| `JntVntrTimeLastChanged` |  | |  |  |
+| `JntVntrDateLastChanged` |  | |  |  |
+| `JntVntrLastChangedDateTime` |  | |  |  |
+| `JntVntrBillgFrqcy` |  | |  |  |
+| `JntVntrBillgFormat` |  | |  |  |
+| `JntVntrNonBillgFormat` |  | |  |  |
+| `JointVentureTaxCode` |  | |  |  |
+| `JntVntrTaxJurisdiction` |  | |  |  |
+| `JntVntrOutTaxCode` |  | |  |  |
+| `JntVntrOutTaxJurisdiction` |  | |  |  |
+| `JntVntrOutPaymentTerms` |  | |  |  |
+| `JntVntrDrillingPayRate` |  | |  |  |
+| `JntVntrNonDrillingPayRate` |  | |  |  |
+| `JntVntrParentCoOvhdExpnCostCtr` |  | |  |  |
+| `JntVntrParentCoOvhdProject` |  | |  |  |
+| `JntVntrParentCoOvhdExpnOrder` |  | |  |  |
+| `JntVntrSubstituteCostCtr` |  | |  |  |
+| `JntVntrCrcyIsFundingCrcy` |  | |  |  |
+| `JntVntrProperty` |  | |  |  |
+| `Currency` |  | |  |  |
+| `JntVntrBillgThldDebit` |  | |  | `} JntVntrBillgThldDebit` |
+| `JntVntrBillgThldCredit` |  | |  | `} JntVntrBillgThldCredit` |
+| `JntVntrBillgThldIsActive` |  | |  |  |
+| `JntVntrPaymentTermSchema` |  | |  |  |
+| `JVAVentureIntrstCalcGrpID` |  | |  |  |
+| `_Currency` | | ✓ | | |
+| `_JointVentureEquityGroup` | | ✓ | | |
+| `_JointVentureDescription` | | ✓ | | |
+| `_JointVentureEquityType` | | ✓ | | |
+| `_JntVntrParCompanyOverhead` | | ✓ | | |
+| `_JntVntrOvhdBurdenRatePct` | | ✓ | | |
 
 ## Source Code
 

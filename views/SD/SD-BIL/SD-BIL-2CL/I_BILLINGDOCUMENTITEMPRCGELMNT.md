@@ -32,69 +32,69 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `PricingElement.BillingDocument` |
-| key `BillingDocumentItem` | `PricingElement.BillingDocumentItem` |
-| key `PricingProcedureStep` | `PricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `PricingElement.ConditionApplication` |
-| `ConditionType` | `PricingElement.ConditionType` |
-| `PricingDateTime` | `PricingElement.PricingDateTime` |
-| `PriceConditionDeterminationDte` | `PricingElement.PriceConditionDeterminationDte` |
-| `ConditionCalculationType` | `PricingElement.ConditionCalculationType` |
-| `ConditionBaseValue` | `PricingElement.ConditionBaseValue` |
-| `ConditionRateValue` | `PricingElement.ConditionRateValue` |
-| `ConditionCurrency` | `PricingElement.ConditionCurrency` |
-| `ConditionQuantity` | `PricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `PricingElement.ConditionQuantityUnit` |
-| `ConditionCategory` | `PricingElement.ConditionCategory` |
-| `ConditionIsForStatistics` | `PricingElement.ConditionIsForStatistics` |
-| `PricingScaleType` | `PricingElement.PricingScaleType` |
-| `IsRelevantForAccrual` | `PricingElement.IsRelevantForAccrual` |
-| `CndnIsRelevantForInvoiceList` | `PricingElement.CndnIsRelevantForInvoiceList` |
-| `ConditionOrigin` | `PricingElement.ConditionOrigin` |
-| `IsGroupCondition` | `PricingElement.IsGroupCondition` |
-| `IsGroupCondition_2` | `PricingElement.IsGroupCondition_2` |
-| `ConditionRecord` | `PricingElement.ConditionRecord` |
-| `ConditionSequentialNumber` | `PricingElement.ConditionSequentialNumber` |
-| `TaxCode` | `PricingElement.TaxCode` |
-| `WithholdingTaxCode` | `PricingElement.WithholdingTaxCode` |
-| `CndnRoundingOffDiffAmount` | `PricingElement.CndnRoundingOffDiffAmount` |
-| `ConditionAmount` | `PricingElement.ConditionAmount` |
-| `TransactionCurrency` | `PricingElement.TransactionCurrency` |
-| `ConditionControl` | `PricingElement.ConditionControl` |
-| `ConditionInactiveReason` | `PricingElement.ConditionInactiveReason` |
-| `ConditionClass` | `PricingElement.ConditionClass` |
-| `PrcgProcedureCounterForHeader` | `PricingElement.PrcgProcedureCounterForHeader` |
-| `FactorForConditionBasisValue` | `PricingElement.FactorForConditionBasisValue` |
-| `StructureCondition` | `PricingElement.StructureCondition` |
-| `PeriodFactorForCndnBasisValue` | `PricingElement.PeriodFactorForCndnBasisValue` |
-| `PricingScaleBasis` | `PricingElement.PricingScaleBasis` |
-| `ConditionScaleBasisValue` | `PricingElement.ConditionScaleBasisValue` |
-| `ConditionScaleBasisUnit` | `PricingElement.ConditionScaleBasisUnit` |
-| `ConditionScaleBasisCurrency` | `PricingElement.ConditionScaleBasisCurrency` |
-| `CndnIsRelevantForIntcoBilling` | `PricingElement.CndnIsRelevantForIntcoBilling` |
-| `ConditionIsManuallyChanged` | `PricingElement.ConditionIsManuallyChanged` |
-| `ConditionIsForConfiguration` | `PricingElement.ConditionIsForConfiguration` |
-| `VariantCondition` | `PricingElement.VariantCondition` |
-| `ConditionRateAmount` | `PricingElement.ConditionRateAmount` |
-| `ConditionBaseAmount` | `PricingElement.ConditionBaseAmount` |
-| `ConditionBaseQuantity` | `PricingElement.ConditionBaseQuantity` |
-| `ConditionRateRatio` | `PricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `PricingElement.ConditionRateRatioUnit` |
-| `ConditionScaleBaseAmount` | `PricingElement.ConditionScaleBaseAmount` |
-| `ConditionScaleBaseQuantity` | `PricingElement.ConditionScaleBaseQuantity` |
-| `ConditionAbsoluteExchangeRate` | `PricingElement.ConditionAbsoluteExchangeRate` |
-| `ConditionExchRateIsIndrctQtan` | `PricingElement.ConditionExchRateIsIndrctQtan` |
-| `ConditionToBaseQtyNmrtr` | `PricingElement.ConditionToBaseQtyNmrtr` |
-| `ConditionToBaseQtyDnmntr` | `PricingElement.ConditionToBaseQtyDnmntr` |
-| `AccessNumberOfAccessSequence` | `PricingElement.AccessNumberOfAccessSequence` |
-| `AccountKeyForGLAccount` | `PricingElement.AccountKeyForGLAccount` |
-| `GLAccount` | `PricingElement.GLAccount` |
-| `AccrualsGLAccount` | `PricingElement.AccrualsGLAccount` |
-| `_BillingDocument` | *Association* |
-| `_Item` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `BillingDocumentItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `PricingDateTime` |  | |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionBaseValue` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `IsRelevantForAccrual` |  | |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `IsGroupCondition` |  | |  |  |
+| `IsGroupCondition_2` |  | |  |  |
+| `ConditionRecord` |  | |  |  |
+| `ConditionSequentialNumber` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `WithholdingTaxCode` |  | |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionControl` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |
+| `StructureCondition` |  | |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |
+| `PricingScaleBasis` |  | |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |
+| `VariantCondition` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionScaleBaseAmount` |  | |  |  |
+| `ConditionScaleBaseQuantity` |  | |  |  |
+| `ConditionAbsoluteExchangeRate` |  | |  |  |
+| `ConditionExchRateIsIndrctQtan` |  | |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |
+| `AccessNumberOfAccessSequence` |  | |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `AccrualsGLAccount` |  | |  |  |
+| `_BillingDocument` | | ✓ | | |
+| `_Item` | | ✓ | | |
 
 ## Associations
 

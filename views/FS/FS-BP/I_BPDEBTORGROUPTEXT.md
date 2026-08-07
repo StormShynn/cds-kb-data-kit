@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `dd07t.ddlanguage` |
-| key `BusinessPartnerDebtorGroup` | `cast ( dd07t.domvalue_l as bp_debtor_group )` |
-| `BPDebtorGroupDescription` | `dd07t.ddtext` |
-| `_BPDebtorGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BusinessPartnerDebtorGroup` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_debtor_group )` |
+| `BPDebtorGroupDescription` |  | |  | `ddtext` |
+| `_BPDebtorGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierQualificationLevel` | `qualification` |
-| `_SupplierQualificationLvlText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierQualificationLevel` | ✓ | |  | `qualification` |
+| `_SupplierQualificationLvlText` | | ✓ | | |
 
 ## Associations
 

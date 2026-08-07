@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcItemRelshpType` | `item_relationship_type` |
-| `_ItemRelationshipTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcItemRelshpType` | ✓ | |  | `item_relationship_type` |
+| `_ItemRelationshipTypeText` | | ✓ | | |
 
 ## Associations
 

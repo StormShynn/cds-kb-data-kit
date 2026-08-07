@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `j_1bnfe_export.docnum` |
-| key `BR_NotaFiscalItem` | `j_1bnfe_export.itmnum` |
-| key `BR_NFItemExprtSqncNumber` | `cast(j_1bnfe_export.exp_seq as logbr_nfe_expseq preserving type)` |
-| `BaseUnit` | `_BR_NFItemBaseUnit.BaseUnit` |
-| `BR_NFItemExprtRegNumber` | `cast(j_1bnfe_export.nre as logbr_nfe_nre preserving type)` |
-| `BR_NFItemExprtNFeAccessKey` | `cast(j_1bnfe_export.chnfe as logbr_nfe_chnfe preserving type)` |
-| `BR_NFItemExportRealQty` | `cast(j_1bnfe_export.qexport as logbr_nfe_qexport preserving type)` |
-| `BR_NFItmExprtDrwbkConcession` | `cast('' as j_1bnfe_exp_draw_back)` |
-| `BR_NFExportDrawbackConcession` | `cast(j_1bnfe_export.ndraw as logbr_nfe_exp_draw_back preserving type)` |
-| `_BR_NotaFiscalItem` | *Association* |
-| `_BaseUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |
+| `BR_NFItemExprtSqncNumber` | ✓ | |  | `cast(j_1bnfe_export.exp_seq as logbr_nfe_expseq preserving type)` |
+| `BaseUnit` |  | | `_BR_NFItemBaseUnit` | `BaseUnit` |
+| `BR_NFItemExprtRegNumber` |  | |  | `cast(j_1bnfe_export.nre as logbr_nfe_nre preserving type)` |
+| `BR_NFItemExprtNFeAccessKey` |  | |  | `cast(j_1bnfe_export.chnfe as logbr_nfe_chnfe preserving type)` |
+| `BR_NFItemExportRealQty` |  | |  | `cast(j_1bnfe_export.qexport as logbr_nfe_qexport preserving type)` |
+| `BR_NFItmExprtDrwbkConcession` |  | |  | `cast('' as j_1bnfe_exp_draw_back)` |
+| `BR_NFExportDrawbackConcession` |  | |  | `cast(j_1bnfe_export.ndraw as logbr_nfe_exp_draw_back preserving type)` |
+| `_BR_NotaFiscalItem` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
 
 ## Associations
 

@@ -26,21 +26,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RecrrgSuplrInvcTmplInstceUUID` | `_Forcast.RecrrgSuplrInvcTmplInstceUUID` |
-| `RecrrgSuplrInvcTmplUUID` | `_Forcast.RecrrgSuplrInvcTmplUUID` |
-| `RecrrgSuplrInvcTmplInstance` | `_Forcast.RecrrgSuplrInvcTmplInstance` |
-| `RecurrenceInstanceStatus` | `_Forcast.RecurrenceInstanceStatus` |
-| `RecurrenceInstanceStatusName` | `_RecurrenceStatusText._Text[ Language = $session.system_language ].RecurrenceStatusName` |
-| `PostingDate` | `_Forcast.PostingDate` |
-| `AccountingDocument` | `_Forcast.AccountingDocument` |
-| `FiscalYear` | `_Forcast.FiscalYear` |
-| `TransactionCurrency` | `_Forcast.TransactionCurrency` |
-| `AmountInTransactionCurrency` | `_Forcast.AmountInTransactionCurrency` |
-| `CompanyCode` | `_Tmpl.CompanyCode` |
-| `OriginalReferenceDocument` | `_Forcast.OriginalReferenceDocument` |
-| `_Tmpl` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RecrrgSuplrInvcTmplInstceUUID` | ✓ | | `_Forcast` | `RecrrgSuplrInvcTmplInstceUUID` |
+| `RecrrgSuplrInvcTmplUUID` |  | | `_Forcast` | `RecrrgSuplrInvcTmplUUID` |
+| `RecrrgSuplrInvcTmplInstance` |  | | `_Forcast` | `RecrrgSuplrInvcTmplInstance` |
+| `RecurrenceInstanceStatus` |  | | `_Forcast` | `RecurrenceInstanceStatus` |
+| `RecurrenceInstanceStatusName` |  | |  | `_RecurrenceStatusText._Text[ Language = $session.system_language ].RecurrenceStatusName` |
+| `PostingDate` |  | | `_Forcast` | `PostingDate` |
+| `AccountingDocument` |  | | `_Forcast` | `AccountingDocument` |
+| `FiscalYear` |  | | `_Forcast` | `FiscalYear` |
+| `TransactionCurrency` |  | | `_Forcast` | `TransactionCurrency` |
+| `AmountInTransactionCurrency` |  | | `_Forcast` | `AmountInTransactionCurrency` |
+| `CompanyCode` |  | | `_Tmpl` | `CompanyCode` |
+| `OriginalReferenceDocument` |  | | `_Forcast` | `OriginalReferenceDocument` |
+| `_Tmpl` | | ✓ | | |
 
 ## Associations
 

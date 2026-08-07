@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VarCnfConstraintNetName` | `VarCnfConstraintNetName` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Constraint` | *Association* |
-| `_HistoricalConstraintNet` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VarCnfConstraintNetName` | ✓ | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Constraint` | | ✓ | | |
+| `_HistoricalConstraintNet` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

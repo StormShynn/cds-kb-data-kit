@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| key `ConditionType` | `ConditionType` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `ConditionRateRatioUnit` | `ConditionRateRatioUnit` |
-| `ConditionRateAmount` | `ConditionRateAmount` |
-| `ConditionCalculationTypeShort` | `ConditionCalculationTypeShort` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `_ScheduleAgreement` | *Association* |
-| `_ScheduleAgreementItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionType` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCalculationTypeShort` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `_ScheduleAgreement` | | ✓ | | |
+| `_ScheduleAgreementItem` | | ✓ | | |
 
 ## Associations
 

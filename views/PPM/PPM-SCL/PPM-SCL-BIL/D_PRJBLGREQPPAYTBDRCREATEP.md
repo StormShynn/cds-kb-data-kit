@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BillingWBSElementInternalID` | `ps_s4_pspnr` |
-| `PrjBlgElmPlndPpaytType` | `pbe_prepaymenttype` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingWBSElementInternalID` |  | |  | `ps_s4_pspnr` |
+| `PrjBlgElmPlndPpaytType` |  | |  | `pbe_prepaymenttype` |
 
 ## Source Code
 

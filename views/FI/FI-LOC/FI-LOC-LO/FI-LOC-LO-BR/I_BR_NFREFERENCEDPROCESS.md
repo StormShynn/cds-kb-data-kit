@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `NFReferencedProcess.docnum` |
-| key `BR_NFReferencedProcessSqncNmbr` | `NFReferencedProcess.counter` |
-| `BR_NFReferencedProcIdentifier` | `cast(NFReferencedProcess.nproc as logbr_nf_process_id)` |
-| `BR_NFReferencedProcessOrigin` | `NFReferencedProcess.indproc` |
-| `BR_NFTypeOfConcessionAct` | `cast(NFReferencedProcess.tpato as logbr_type_concession_act preserving type )` |
-| `_BR_NFReferencedProcOrign` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NFReferencedProcessSqncNmbr` | ✓ | |  | `counter` |
+| `BR_NFReferencedProcIdentifier` |  | |  | `cast(NFReferencedProcess.nproc as logbr_nf_process_id)` |
+| `BR_NFReferencedProcessOrigin` |  | |  | `indproc` |
+| `BR_NFTypeOfConcessionAct` |  | |  | `cast(NFReferencedProcess.tpato as logbr_type_concession_act preserving type )` |
+| `_BR_NFReferencedProcOrign` | | ✓ | | |
 
 ## Associations
 

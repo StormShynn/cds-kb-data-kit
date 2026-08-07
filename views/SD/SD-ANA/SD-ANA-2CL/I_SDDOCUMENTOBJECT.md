@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDDocumentObject` | `cast(SUBSTRING(dd07l.domvalue_l, 1, 1) as sd_doc_object preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDDocumentObject` | ✓ | |  | `cast(SUBSTRING(dd07l.domvalue_l, 1, 1) as sd_doc_object preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StatisticalKeyFigure` | `StatisticalKeyFigure` |
-| key `ControllingArea` | `ControllingArea` |
-| `StstcKeyFigCategory` | `cast(StstcKeyFigCategory as fis_ui_grtyp preserving type)` |
-| `_Text` | *Association* |
-| `_ControllingArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatisticalKeyFigure` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `StstcKeyFigCategory` |  | |  | `cast(StstcKeyFigCategory as fis_ui_grtyp preserving type)` |
+| `_Text` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
 
 ## Source Code
 

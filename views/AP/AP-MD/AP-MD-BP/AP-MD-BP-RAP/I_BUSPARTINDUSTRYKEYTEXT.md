@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `IndustrySystemType` | `istype` |
-| key `IndustrySector` | `ind_sector` |
-| `IndustryKeyDescription` | `text` |
-| `_BusPartIndustryKey` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `IndustrySystemType` | ✓ | |  | `istype` |
+| `IndustrySector` | ✓ | |  | `ind_sector` |
+| `IndustryKeyDescription` |  | |  | `text` |
+| `_BusPartIndustryKey` | | ✓ | | |
 
 ## Associations
 

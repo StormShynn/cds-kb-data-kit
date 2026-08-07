@@ -34,45 +34,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `BankIdentification` | `BankIdentification` |
-| `BankIdnForEditValue` | `BankIdnForEditValue` |
-| `BankCountryKey` | `BankCountryKey` |
-| `BankName` | `BankName` |
-| `BankNumber` | `BankNumber` |
-| `SWIFTCode` | `SWIFTCode` |
-| `BankControlKey` | `BankControlKey` |
-| `BankAccountHolderName` | `BankAccountHolderName` |
-| `BankAccountName` | `BankAccountName` |
-| `BankValidityStartDate` | `BankValidityStartDate` |
-| `BankValidityEndDate` | `BankValidityEndDate` |
-| `IBAN` | `IBAN` |
-| `IBANValidityStartDate` | `IBANValidityStartDate` |
-| `BankAccount` | `BankAccount` |
-| `BankAccountReferenceText` | `BankAccountReferenceText` |
-| `CollectionAuthInd` | `CollectionAuthInd` |
-| `BusinessPartnerExternalBankID` | `BusinessPartnerExternalBankID` |
-| `BPBankDetailsChangeDate` | `BPBankDetailsChangeDate` |
-| `BPBankDetailsChangeTargetID` | `BPBankDetailsChangeTargetID` |
-| `BPBankIsProtected` | `BPBankIsProtected` |
-| `CityName` | `CityName` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_Bank` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_IBAN` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `BankIdentification` | ✓ | |  |  |
+| `BankIdnForEditValue` |  | |  |  |
+| `BankCountryKey` |  | |  |  |
+| `BankName` |  | |  |  |
+| `BankNumber` |  | |  |  |
+| `SWIFTCode` |  | |  |  |
+| `BankControlKey` |  | |  |  |
+| `BankAccountHolderName` |  | |  |  |
+| `BankAccountName` |  | |  |  |
+| `BankValidityStartDate` |  | |  |  |
+| `BankValidityEndDate` |  | |  |  |
+| `IBAN` |  | |  |  |
+| `IBANValidityStartDate` |  | |  |  |
+| `BankAccount` |  | |  |  |
+| `BankAccountReferenceText` |  | |  |  |
+| `CollectionAuthInd` |  | |  |  |
+| `BusinessPartnerExternalBankID` |  | |  |  |
+| `BPBankDetailsChangeDate` |  | |  |  |
+| `BPBankDetailsChangeTargetID` |  | |  |  |
+| `BPBankIsProtected` |  | |  |  |
+| `CityName` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_Bank` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_IBAN` | | ✓ | | |
 
 ## Source Code
 

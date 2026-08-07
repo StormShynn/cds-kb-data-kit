@@ -30,88 +30,88 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `KeyDate` | `KeyDate` |
-| `ControllingArea` | `ControllingArea` |
-| `FiscalYear` | `FiscalYear` |
-| `FiscalPeriod` | `FiscalPeriod` |
-| `BudgetCarryingCostCenter` | `BudgetCarryingCostCenter` |
-| `GLAccountHierarchy` | `GLAccountHierarchy` |
-| `HierarchyNode` | `HierarchyNode` |
-| `GLAccountHierNodeSemanticKey` | `GLAccountHierNodeSemanticKey` |
-| `CompanyCode` | `CompanyCode` |
-| `ChartOfAccounts` | `ChartOfAccounts` |
-| `OrderID` | `OrderID` |
-| `AccountingDocumentType` | `AccountingDocumentType` |
-| `Customer` | `Customer` |
-| `Segment` | `Segment` |
-| `BusinessArea` | `BusinessArea` |
-| `ProfitCenter` | `ProfitCenter` |
-| `Supplier` | `Supplier` |
-| `SalesOrganization` | `SalesOrganization` |
-| `Plant` | `Plant` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `ValuationArea` | `ValuationArea` |
-| `SalesDocument` | `SalesDocument` |
-| `CostCenter` | `CostCenter` |
-| `GLAccount` | `GLAccount` |
-| `Ledger` | `Ledger` |
-| `DistributionChannel` | `DistributionChannel` |
-| `PlanningCategory` | `PlanningCategory` |
-| `OrganizationDivision` | `OrganizationDivision` |
-| `ServiceDocument` | `ServiceDocument` |
-| `FinancialAccountType` | `FinancialAccountType` |
-| `AssetClass` | `AssetClass` |
-| `GlobalCurrency` | `GlobalCurrency` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `LedgerFiscalYear` | `LedgerFiscalYear` |
-| `FiscalYearVariant` | `FiscalYearVariant` |
-| `PredictionLedger` | `PredictionLedger` |
-| `PostingDate` | `PostingDate` |
-| `FunctionalArea` | `FunctionalArea` |
-| `BudgetCarryingCostCenterName` | `BudgetCarryingCostCenterName` |
-| `CostCenterName` | `CostCenterName` |
-| `GLAccountName` | `GLAccountName` |
-| `HierarchyNodeText` | `HierarchyNodeText` |
-| `GLAccountHierarchyName` | `GLAccountHierarchyName` |
-| `PlanningCategoryName` | `PlanningCategoryName` |
-| `JointVenture` | `JointVenture` |
-| `JointVentureName` | `JointVentureName` |
-| `JointVentureEquityGroup` | `JointVentureEquityGroup` |
-| `JointVentureEquityGroupName` | `JointVentureEquityGroupName` |
-| `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `JointVentureRecoveryCodeName` | `JointVentureRecoveryCodeName` |
-| `PlanAmountInCompanyCodeCrcy` | `PlanAmountInCompanyCodeCrcy` |
-| `BudgetAmountInCompanyCodeCrcy` | `BudgetAmountInCompanyCodeCrcy` |
-| `ActualCostAmtInCCCrcy` | `ActualCostAmtInCCCrcy` |
-| `CmtmtCostInCCCrcy` | `CmtmtCostInCCCrcy` |
-| `TotAssgdAmtInCoCodeCurrency` | `TotAssgdAmtInCoCodeCurrency` |
-| `AvailableBdgtAmtInCoCodeCrcy` | `AvailableBdgtAmtInCoCodeCrcy` |
-| `PlanAmountInGlobalCurrency` | `PlanAmountInGlobalCurrency` |
-| `BudgetInGlobalCrcy` | `BudgetInGlobalCrcy` |
-| `ActualCostInGlobalCrcy` | `ActualCostInGlobalCrcy` |
-| `CmtmtCostInGlobalCurrency` | `CmtmtCostInGlobalCurrency` |
-| `TotAssgdAmtInGlobalCurrency` | `TotAssgdAmtInGlobalCurrency` |
-| `AvailableBudgetInGlobalCrcy` | `AvailableBudgetInGlobalCrcy` |
-| `_GlobalCurrency` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_FiscalPeriodForVariant` | *Association* |
-| `_LedgerFiscalYearForVariant` | *Association* |
-| `_FiscalYearVariant` | *Association* |
-| `_GLAccountHierarchyNode` | *Association* |
-| `_Ledger` | *Association* |
-| `_Order` | *Association* |
-| `_AccountingDocumentType` | *Association* |
-| `_Customer` | *Association* |
-| `_CurrentProfitCenter` | *Association* |
-| `_CurrentCostCenter` | *Association* |
-| `_Supplier` | *Association* |
-| `_GLAccountInCompanyCode` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_ServiceDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KeyDate` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `BudgetCarryingCostCenter` |  | |  |  |
+| `GLAccountHierarchy` |  | |  |  |
+| `HierarchyNode` |  | |  |  |
+| `GLAccountHierNodeSemanticKey` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `AccountingDocumentType` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Segment` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `PlanningCategory` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `FinancialAccountType` |  | |  |  |
+| `AssetClass` |  | |  |  |
+| `GlobalCurrency` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `LedgerFiscalYear` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `PredictionLedger` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `BudgetCarryingCostCenterName` |  | |  |  |
+| `CostCenterName` |  | |  |  |
+| `GLAccountName` |  | |  |  |
+| `HierarchyNodeText` |  | |  |  |
+| `GLAccountHierarchyName` |  | |  |  |
+| `PlanningCategoryName` |  | |  |  |
+| `JointVenture` |  | |  |  |
+| `JointVentureName` |  | |  |  |
+| `JointVentureEquityGroup` |  | |  |  |
+| `JointVentureEquityGroupName` |  | |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |
+| `JointVentureRecoveryCodeName` |  | |  |  |
+| `PlanAmountInCompanyCodeCrcy` |  | |  |  |
+| `BudgetAmountInCompanyCodeCrcy` |  | |  |  |
+| `ActualCostAmtInCCCrcy` |  | |  |  |
+| `CmtmtCostInCCCrcy` |  | |  |  |
+| `TotAssgdAmtInCoCodeCurrency` |  | |  |  |
+| `AvailableBdgtAmtInCoCodeCrcy` |  | |  |  |
+| `PlanAmountInGlobalCurrency` |  | |  |  |
+| `BudgetInGlobalCrcy` |  | |  |  |
+| `ActualCostInGlobalCrcy` |  | |  |  |
+| `CmtmtCostInGlobalCurrency` |  | |  |  |
+| `TotAssgdAmtInGlobalCurrency` |  | |  |  |
+| `AvailableBudgetInGlobalCrcy` |  | |  |  |
+| `_GlobalCurrency` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_FiscalPeriodForVariant` | | ✓ | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_GLAccountHierarchyNode` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_AccountingDocumentType` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_CurrentProfitCenter` | | ✓ | | |
+| `_CurrentCostCenter` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_GLAccountInCompanyCode` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_ServiceDocument` | | ✓ | | |
 
 ## Associations
 

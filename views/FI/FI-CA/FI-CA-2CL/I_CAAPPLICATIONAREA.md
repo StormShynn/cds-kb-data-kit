@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAApplicationArea` | `applk` |
-| `CAApplicationAreaIsActive` | `aktiv` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | |  | `applk` |
+| `CAApplicationAreaIsActive` |  | |  | `aktiv` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

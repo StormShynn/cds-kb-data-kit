@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `cast( ControllingArea as fincs_controllingarea preserving type )` |
-| `ProfitCenter` | `}] key cast( ProfitCenter as fincs_elim_profitcenter preserving type )` |
-| `_ControllingArea` | *Association* |
-| `_Text_2` | *Association* |
-| `_Text` | *Association* |
-| `_ProfitCenterHierNode_2` | *Association* |
-| `_TmprlNde` | *Association* |
-| `_ProfitCenterHierNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( ControllingArea as fincs_controllingarea preserving type )` |
+| `ProfitCenter` |  | |  | `}] key cast( ProfitCenter as fincs_elim_profitcenter preserving type )` |
+| `_ControllingArea` | | ✓ | | |
+| `_Text_2` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_ProfitCenterHierNode_2` | | ✓ | | |
+| `_TmprlNde` | | ✓ | | |
+| `_ProfitCenterHierNode` | | ✓ | | |
 
 ## Associations
 

@@ -28,55 +28,55 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DefectInternalID` | `_Defect.DefectInternalID` |
-| `Defect` | `_Defect.Defect` |
-| `DefectCategory` | `_Defect.DefectCategory` |
-| `CreatedByUser` | `_Defect.CreatedByUser` |
-| `CreationDate` | `_Defect.CreationDate` |
-| `CreationTime` | `_Defect.CreationTime` |
-| `LastChangedByUser` | `_Defect.LastChangedByUser` |
-| `LastChangeDate` | `_Defect.LastChangeDate` |
-| `LastChangeTime` | `_Defect.LastChangeTime` |
-| `DefectText` | `_Defect.DefectText` |
-| `DefectCodeCatalog` | `_Defect.DefectCodeCatalog` |
-| `DefectCodeGroup` | `_Defect.DefectCodeGroup` |
-| `DefectCode` | `_Defect.DefectCode` |
-| `DefectLocationCatalog` | `_Defect.DefectLocationCatalog` |
-| `DefectLocationCodeGroup` | `_Defect.DefectLocationCodeGroup` |
-| `DefectLocationCode` | `_Defect.DefectLocationCode` |
-| `DefectiveQuantity` | `_Defect.DefectiveQuantity` |
-| `DefectiveQuantityUnit` | `_Defect.DefectiveQuantityUnit` |
-| `ManufacturingOrder` | `_Defect.ProductionOrder` |
-| `OrderInternalID` | `_Defect.OrderInternalID` |
-| `ManufacturingOrderOperation` | `cast( _Defect.ProductionOrderOperation as vdm_vornr preserving type )` |
-| `ManufacturingOrderSequence` | `_Defect.ProductionOrderSequence` |
-| `DefectClass` | `_Defect.DefectClass` |
-| `NumberOfDefects` | `_Defect.NumberOfDefects` |
-| `InspPlanOperationInternalID` | `_Defect.InspPlanOperationInternalID` |
-| `InspectionCharacteristic` | `_Defect.InspectionCharacteristic` |
-| `InspectionSubsetInternalID` | `_Defect.InspectionSubsetInternalID` |
-| `MaterialSample` | `_Defect.MaterialSample` |
-| `WorkCenterTypeCode` | `_Defect.WorkCenterTypeCode` |
-| `MainWorkCenterInternalID` | `_Defect.MainWorkCenterInternalID` |
-| `MainWorkCenterPlant` | `_Defect.MainWorkCenterPlant` |
-| `MainWorkCenter` | `_Defect.MainWorkCenter` |
-| `IsDeleted` | `_Defect.IsDeleted` |
-| `DefectOrigin` | `_Defect.DefectOrigin` |
-| `Material` | `_Defect.Material` |
-| `Batch` | `_Defect.Batch` |
-| `Plant` | `_Defect.Plant` |
-| `InspectionLot` | `_Defect.InspectionLot` |
-| `ChangedDateTime` | `_Defect.ChangedDateTime` |
-| `DefectLifecycleStatus` | `_Defect.DefectLifecycleStatus` |
-| `ProblemAnalysisStatus` | `_Defect.ProblemAnalysisStatus` |
-| `QualityIssueReference` | `_Defect.QualityIssueReference` |
-| `MasterLanguage` | `_Defect.MasterLanguage` |
-| `DefectUUID` | `_Defect.DefectUUID` |
-| `_InspectionLot` | `_Defect._InspectionLot` |
-| `_DefectLongText` | *Association* |
-| `_DefectSerialNumber` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DefectInternalID` | ✓ | | `_Defect` | `DefectInternalID` |
+| `Defect` |  | | `_Defect` | `Defect` |
+| `DefectCategory` |  | | `_Defect` | `DefectCategory` |
+| `CreatedByUser` |  | | `_Defect` | `CreatedByUser` |
+| `CreationDate` |  | | `_Defect` | `CreationDate` |
+| `CreationTime` |  | | `_Defect` | `CreationTime` |
+| `LastChangedByUser` |  | | `_Defect` | `LastChangedByUser` |
+| `LastChangeDate` |  | | `_Defect` | `LastChangeDate` |
+| `LastChangeTime` |  | | `_Defect` | `LastChangeTime` |
+| `DefectText` |  | | `_Defect` | `DefectText` |
+| `DefectCodeCatalog` |  | | `_Defect` | `DefectCodeCatalog` |
+| `DefectCodeGroup` |  | | `_Defect` | `DefectCodeGroup` |
+| `DefectCode` |  | | `_Defect` | `DefectCode` |
+| `DefectLocationCatalog` |  | | `_Defect` | `DefectLocationCatalog` |
+| `DefectLocationCodeGroup` |  | | `_Defect` | `DefectLocationCodeGroup` |
+| `DefectLocationCode` |  | | `_Defect` | `DefectLocationCode` |
+| `DefectiveQuantity` |  | | `_Defect` | `DefectiveQuantity` |
+| `DefectiveQuantityUnit` |  | | `_Defect` | `DefectiveQuantityUnit` |
+| `ManufacturingOrder` |  | | `_Defect` | `ProductionOrder` |
+| `OrderInternalID` |  | | `_Defect` | `OrderInternalID` |
+| `ManufacturingOrderOperation` |  | |  | `cast( _Defect.ProductionOrderOperation as vdm_vornr preserving type )` |
+| `ManufacturingOrderSequence` |  | | `_Defect` | `ProductionOrderSequence` |
+| `DefectClass` |  | | `_Defect` | `DefectClass` |
+| `NumberOfDefects` |  | | `_Defect` | `NumberOfDefects` |
+| `InspPlanOperationInternalID` |  | | `_Defect` | `InspPlanOperationInternalID` |
+| `InspectionCharacteristic` |  | | `_Defect` | `InspectionCharacteristic` |
+| `InspectionSubsetInternalID` |  | | `_Defect` | `InspectionSubsetInternalID` |
+| `MaterialSample` |  | | `_Defect` | `MaterialSample` |
+| `WorkCenterTypeCode` |  | | `_Defect` | `WorkCenterTypeCode` |
+| `MainWorkCenterInternalID` |  | | `_Defect` | `MainWorkCenterInternalID` |
+| `MainWorkCenterPlant` |  | | `_Defect` | `MainWorkCenterPlant` |
+| `MainWorkCenter` |  | | `_Defect` | `MainWorkCenter` |
+| `IsDeleted` |  | | `_Defect` | `IsDeleted` |
+| `DefectOrigin` |  | | `_Defect` | `DefectOrigin` |
+| `Material` |  | | `_Defect` | `Material` |
+| `Batch` |  | | `_Defect` | `Batch` |
+| `Plant` |  | | `_Defect` | `Plant` |
+| `InspectionLot` |  | | `_Defect` | `InspectionLot` |
+| `ChangedDateTime` |  | | `_Defect` | `ChangedDateTime` |
+| `DefectLifecycleStatus` |  | | `_Defect` | `DefectLifecycleStatus` |
+| `ProblemAnalysisStatus` |  | | `_Defect` | `ProblemAnalysisStatus` |
+| `QualityIssueReference` |  | | `_Defect` | `QualityIssueReference` |
+| `MasterLanguage` |  | | `_Defect` | `MasterLanguage` |
+| `DefectUUID` |  | | `_Defect` | `DefectUUID` |
+| `_InspectionLot` |  | | `_Defect` | `_InspectionLot` |
+| `_DefectLongText` | | ✓ | | |
+| `_DefectSerialNumber` | | ✓ | | |
 
 ## Source Code
 

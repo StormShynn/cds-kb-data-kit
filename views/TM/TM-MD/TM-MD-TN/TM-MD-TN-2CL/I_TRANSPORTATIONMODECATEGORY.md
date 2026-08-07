@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationModeCategory` | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tor_trmod_cat preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationModeCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tor_trmod_cat preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

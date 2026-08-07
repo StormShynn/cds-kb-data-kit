@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingVariant` | `CostingVariant` |
-| `CostingVariantName` | `_CostingVariantText.CostingVariantName` |
-| `ValuationVariant` | `ValuationVariant` |
-| `ValuationVariantName` | `_CostingValuationVarText.ValuationVariantName` |
-| `CostingType` | `CostingType` |
-| `CostingReferenceObject` | `CostingReferenceObject` |
-| `_CostingVariantText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingVariant` | ✓ | |  |  |
+| `CostingVariantName` |  | | `_CostingVariantText` | `CostingVariantName` |
+| `ValuationVariant` |  | |  |  |
+| `ValuationVariantName` |  | | `_CostingValuationVarText` | `ValuationVariantName` |
+| `CostingType` |  | |  |  |
+| `CostingReferenceObject` |  | |  |  |
+| `_CostingVariantText` | | ✓ | | |
 
 ## Associations
 

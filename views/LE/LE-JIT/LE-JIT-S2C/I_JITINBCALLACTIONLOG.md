@@ -27,40 +27,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallActionLogUUID` | `db_key` |
-| `JITHeaderUUID` | `root_key` |
-| `JITCallCompGrpUUID` | `parent_key` |
-| `ApplicationLogObject` | `object` |
-| `ApplicationLogSubobject` | `subobject` |
-| `JITCallProcessingLogID` | `lognumber` |
-| `JITFioriApplicationName` | `fiori_application_name` |
-| `JITCallActionSource` | `action_source` |
-| `JITAction` | `action_code` |
-| `JITCallActionStatus` | `action_status` |
-| `TriggeredByUser` | `aluser` |
-| `CreationDateTime` | `crea_date_time` |
-| `JITFioriID` | `jitfioriid` |
-| `JITApplicationLogHandle` | `jitapplicationloghandle` |
-| `JITApplicationLogSeverity` | `jitapplicationlogseverity` |
-| `JITActionLogAdditionalNote` | `jitactionlogadditionalnote` |
-| `JITPreIntProcessingStatus` | `jitpreintprocessingstatus` |
-| `JITPostIntProcessingStatus` | `jitpostintprocessingstatus` |
-| `JITFrameAction` | `jitframeaction` |
-| `_JITInboundCall` | *Association* |
-| `_ProcessedByUser` | *Association* |
-| `_JITAction` | *Association* |
-| `_JITFrameAction` | *Association* |
-| `_JITCallActionSource` | *Association* |
-| `_JITCallActionStatus` | *Association* |
-| `_JITApplicationID` | *Association* |
-| `_JITPreInternalStatus` | *Association* |
-| `_JITPostInternalStatus` | *Association* |
-| `_JITApplicationLog` | *Association* |
-| `_JITApplicationLogObject` | *Association* |
-| `_JITApplicationLogSubobject` | *Association* |
-| `_JITInbCallComponentGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallActionLogUUID` | ✓ | |  | `db_key` |
+| `JITHeaderUUID` |  | |  | `root_key` |
+| `JITCallCompGrpUUID` |  | |  | `parent_key` |
+| `ApplicationLogObject` |  | |  | `object` |
+| `ApplicationLogSubobject` |  | |  | `subobject` |
+| `JITCallProcessingLogID` |  | |  | `lognumber` |
+| `JITFioriApplicationName` |  | |  | `fiori_application_name` |
+| `JITCallActionSource` |  | |  | `action_source` |
+| `JITAction` |  | |  | `action_code` |
+| `JITCallActionStatus` |  | |  | `action_status` |
+| `TriggeredByUser` |  | |  | `aluser` |
+| `CreationDateTime` |  | |  | `crea_date_time` |
+| `JITFioriID` |  | |  | `jitfioriid` |
+| `JITApplicationLogHandle` |  | |  | `jitapplicationloghandle` |
+| `JITApplicationLogSeverity` |  | |  | `jitapplicationlogseverity` |
+| `JITActionLogAdditionalNote` |  | |  | `jitactionlogadditionalnote` |
+| `JITPreIntProcessingStatus` |  | |  | `jitpreintprocessingstatus` |
+| `JITPostIntProcessingStatus` |  | |  | `jitpostintprocessingstatus` |
+| `JITFrameAction` |  | |  | `jitframeaction` |
+| `_JITInboundCall` | | ✓ | | |
+| `_ProcessedByUser` | | ✓ | | |
+| `_JITAction` | | ✓ | | |
+| `_JITFrameAction` | | ✓ | | |
+| `_JITCallActionSource` | | ✓ | | |
+| `_JITCallActionStatus` | | ✓ | | |
+| `_JITApplicationID` | | ✓ | | |
+| `_JITPreInternalStatus` | | ✓ | | |
+| `_JITPostInternalStatus` | | ✓ | | |
+| `_JITApplicationLog` | | ✓ | | |
+| `_JITApplicationLogObject` | | ✓ | | |
+| `_JITApplicationLogSubobject` | | ✓ | | |
+| `_JITInbCallComponentGroup` | | ✓ | | |
 
 ## Associations
 

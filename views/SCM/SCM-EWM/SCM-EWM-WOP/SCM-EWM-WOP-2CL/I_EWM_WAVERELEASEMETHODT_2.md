@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWaveReleaseMethod` | `cast( Domain.domvalue_l as /scwm/de_rls_mthd)as EWMWaveReleaseMethod` |
-| key `Language` | `Domain.ddlanguage` |
-| `EWMWaveReleaseMethodName` | `Domain.ddtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWaveReleaseMethod` | ✓ | |  | `cast( Domain.domvalue_l as /scwm/de_rls_mthd)as EWMWaveReleaseMethod` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `EWMWaveReleaseMethodName` |  | |  | `ddtext` |
 
 ## Source Code
 

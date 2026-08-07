@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocumentType` | `auart` |
-| key `Language` | `spras` |
-| `SalesDocumentTypeName` | `bezei` |
-| `_SalesDocumentType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentType` | ✓ | |  | `auart` |
+| `Language` | ✓ | |  | `spras` |
+| `SalesDocumentTypeName` |  | |  | `bezei` |
+| `_SalesDocumentType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

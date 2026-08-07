@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `TargetCurrencyRole` | `cast( curtype as fins_target_crcyrole preserving type )` |
-| `TargetCurrency` | `cast(waers as fac_targetcurrency preserving type )` |
-| `SourceCurrencyRole` | `cast( source_curtype as fins_source_crcyrole preserving type )` |
-| `ExchangeRateType` | `kurst` |
-| `CurrencyTranslationDateType` | `curdt` |
-| `_CompanyCode` | *Association* |
-| `_TargetCurrencyRole` | *Association* |
-| `_SourceCurrencyRole` | *Association* |
-| `_TargetCurrency` | *Association* |
-| `_ExchangeRateType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `TargetCurrencyRole` | ✓ | |  | `cast( curtype as fins_target_crcyrole preserving type )` |
+| `TargetCurrency` |  | |  | `cast(waers as fac_targetcurrency preserving type )` |
+| `SourceCurrencyRole` |  | |  | `cast( source_curtype as fins_source_crcyrole preserving type )` |
+| `ExchangeRateType` |  | |  | `kurst` |
+| `CurrencyTranslationDateType` |  | |  | `curdt` |
+| `_CompanyCode` | | ✓ | | |
+| `_TargetCurrencyRole` | | ✓ | | |
+| `_SourceCurrencyRole` | | ✓ | | |
+| `_TargetCurrency` | | ✓ | | |
+| `_ExchangeRateType` | | ✓ | | |
 
 ## Associations
 

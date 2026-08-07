@@ -30,65 +30,65 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsContainerUUID` | `FldLogsContainerUUID` |
-| `FldLogsContainerID` | `FldLogsContainerID` |
-| `Equipment` | `Equipment` |
-| `EquipmentType` | `EquipmentType` |
-| `EquipmentGroup` | `EquipmentGroup` |
-| `FldLogsContainerText` | `FldLogsContainerText` |
-| `FldLogsContainerCategory` | `FldLogsContainerCategory` |
-| `FldLogsContainerStatus` | `FldLogsContainerStatus` |
-| `FldLogsContainerSafeLoadQty` | `FldLogsContainerSafeLoadQty` |
-| `FldLogsContainerSafeLoadUnit` | `FldLogsContainerSafeLoadUnit` |
-| `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `FldLogsCtnCurrentLocation` | `FldLogsCtnCurrentLocation` |
-| `FldLogsCtnCurrentStorageLoc` | `FldLogsCtnCurrentStorageLoc` |
-| `FldLogsCtnRentalStartDate` | `FldLogsCtnRentalStartDate` |
-| `FldLogsCtnRentalExpiryDate` | `FldLogsCtnRentalExpiryDate` |
-| `Material` | `Material` |
-| `FldLogsCtnCubicCapacity` | `FldLogsCtnCubicCapacity` |
-| `FldLogsCtnCubicCapacityUnit` | `FldLogsCtnCubicCapacityUnit` |
-| `FldLogsCtnInteriorLength` | `FldLogsCtnInteriorLength` |
-| `FldLogsCtnInteriorWidth` | `FldLogsCtnInteriorWidth` |
-| `FldLogsCtnInteriorHeight` | `FldLogsCtnInteriorHeight` |
-| `FldLogsCtnInteriorDimnUnit` | `FldLogsCtnInteriorDimnUnit` |
-| `FldLogsCtnMaximumLength` | `FldLogsCtnMaximumLength` |
-| `FldLogsCtnMaximumWidth` | `FldLogsCtnMaximumWidth` |
-| `FldLogsCtnMaximumDimnUnit` | `FldLogsCtnMaximumDimnUnit` |
-| `FldLogsContainerFootprintQty` | `FldLogsContainerFootprintQty` |
-| `FldLogsContainerFootprintUnit` | `FldLogsContainerFootprintUnit` |
-| `FldLogsCtnMaxGrossWeight` | `FldLogsCtnMaxGrossWeight` |
-| `FldLogsCtnMaxGrossWeightUnit` | `FldLogsCtnMaxGrossWeightUnit` |
-| `FldLogsContainerTareWeight` | `FldLogsContainerTareWeight` |
-| `FldLogsContainerTareWeightUnit` | `FldLogsContainerTareWeightUnit` |
-| `FldLogsContainerTareVolume` | `FldLogsContainerTareVolume` |
-| `FldLogsContainerTareVolumeUnit` | `FldLogsContainerTareVolumeUnit` |
-| `FldLogsCtnIsTemperatureCtrld` | `FldLogsCtnIsTemperatureCtrld` |
-| `FldLogsCtnMinCtrlTemperature` | `FldLogsCtnMinCtrlTemperature` |
-| `FldLogsCtnMaxCtrlTemperature` | `FldLogsCtnMaxCtrlTemperature` |
-| `FldLogsCtnTemperatureUnit` | `FldLogsCtnTemperatureUnit` |
-| `FldLogsContainerVentilation` | `FldLogsContainerVentilation` |
-| `ExternalResourceID` | `ExternalResourceID` |
-| `FldLogsContainerOwner` | `FldLogsContainerOwner` |
-| `FldLogsCtnOwnerBusinessPartner` | `FldLogsCtnOwnerBusinessPartner` |
-| `FldLogsCtnIsRented` | `FldLogsCtnIsRented` |
-| `FldLogsCtnIsSupplierOwned` | `FldLogsCtnIsSupplierOwned` |
-| `FldLogsCtnIsThirdPartyOwned` | `FldLogsCtnIsThirdPartyOwned` |
-| `FieldLogisticsCtnIsOwned` | `FieldLogisticsCtnIsOwned` |
-| `FldLogsCtnChangeDateTime` | `FldLogsCtnChangeDateTime` |
-| `FldLogsCtnLastChangeDateTime` | `FldLogsCtnLastChangeDateTime` |
-| `FldLogsCertEndDate` | `FldLogsCertEndDate` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `SuplrCoIsBusPrpsCmpltd` | `SuplrCoIsBusPrpsCmpltd` |
-| `EquipmentCategory` | `EquipmentCategory` |
-| `FldLogsIsCreateEquipment` | `FldLogsIsCreateEquipment` |
-| `FldLogsIsDeleteEquipment` | `FldLogsIsDeleteEquipment` |
-| `FldLogsCtnMaximumHeight` | `FldLogsCtnMaximumHeight` |
-| `FldLogsContainerExternalID` | `FldLogsContainerExternalID` |
-| `_Certificate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsContainerUUID` | ✓ | |  |  |
+| `FldLogsContainerID` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `EquipmentType` |  | |  |  |
+| `EquipmentGroup` |  | |  |  |
+| `FldLogsContainerText` |  | |  |  |
+| `FldLogsContainerCategory` |  | |  |  |
+| `FldLogsContainerStatus` |  | |  |  |
+| `FldLogsContainerSafeLoadQty` |  | |  |  |
+| `FldLogsContainerSafeLoadUnit` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `FldLogsCtnCurrentLocation` |  | |  |  |
+| `FldLogsCtnCurrentStorageLoc` |  | |  |  |
+| `FldLogsCtnRentalStartDate` |  | |  |  |
+| `FldLogsCtnRentalExpiryDate` |  | |  |  |
+| `Material` |  | |  |  |
+| `FldLogsCtnCubicCapacity` |  | |  |  |
+| `FldLogsCtnCubicCapacityUnit` |  | |  |  |
+| `FldLogsCtnInteriorLength` |  | |  |  |
+| `FldLogsCtnInteriorWidth` |  | |  |  |
+| `FldLogsCtnInteriorHeight` |  | |  |  |
+| `FldLogsCtnInteriorDimnUnit` |  | |  |  |
+| `FldLogsCtnMaximumLength` |  | |  |  |
+| `FldLogsCtnMaximumWidth` |  | |  |  |
+| `FldLogsCtnMaximumDimnUnit` |  | |  |  |
+| `FldLogsContainerFootprintQty` |  | |  |  |
+| `FldLogsContainerFootprintUnit` |  | |  |  |
+| `FldLogsCtnMaxGrossWeight` |  | |  |  |
+| `FldLogsCtnMaxGrossWeightUnit` |  | |  |  |
+| `FldLogsContainerTareWeight` |  | |  |  |
+| `FldLogsContainerTareWeightUnit` |  | |  |  |
+| `FldLogsContainerTareVolume` |  | |  |  |
+| `FldLogsContainerTareVolumeUnit` |  | |  |  |
+| `FldLogsCtnIsTemperatureCtrld` |  | |  |  |
+| `FldLogsCtnMinCtrlTemperature` |  | |  |  |
+| `FldLogsCtnMaxCtrlTemperature` |  | |  |  |
+| `FldLogsCtnTemperatureUnit` |  | |  |  |
+| `FldLogsContainerVentilation` |  | |  |  |
+| `ExternalResourceID` |  | |  |  |
+| `FldLogsContainerOwner` |  | |  |  |
+| `FldLogsCtnOwnerBusinessPartner` |  | |  |  |
+| `FldLogsCtnIsRented` |  | |  |  |
+| `FldLogsCtnIsSupplierOwned` |  | |  |  |
+| `FldLogsCtnIsThirdPartyOwned` |  | |  |  |
+| `FieldLogisticsCtnIsOwned` |  | |  |  |
+| `FldLogsCtnChangeDateTime` |  | |  |  |
+| `FldLogsCtnLastChangeDateTime` |  | |  |  |
+| `FldLogsCertEndDate` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `SuplrCoIsBusPrpsCmpltd` |  | |  |  |
+| `EquipmentCategory` |  | |  |  |
+| `FldLogsIsCreateEquipment` |  | |  |  |
+| `FldLogsIsDeleteEquipment` |  | |  |  |
+| `FldLogsCtnMaximumHeight` |  | |  |  |
+| `FldLogsContainerExternalID` |  | |  |  |
+| `_Certificate` | | ✓ | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOffice` | `vkbur` |
-| key `Language` | `spras` |
-| `SalesOfficeName` | `cast(bezei as salesofficename preserving type)` |
-| `_SalesOffice` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOffice` | ✓ | |  | `vkbur` |
+| `Language` | ✓ | |  | `spras` |
+| `SalesOfficeName` |  | |  | `cast(bezei as salesofficename preserving type)` |
+| `_SalesOffice` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -33,36 +33,36 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrganization` | `CustomerMaterial.SalesOrganization` |
-| key `DistributionChannel` | `CustomerMaterial.DistributionChannel` |
-| key `Customer` | `CustomerMaterial.Customer` |
-| key `Product` | `CustomerMaterial.Product` |
-| `SalesOrganizationForEdit` | `SalesOrganizationForEdit` |
-| `DistributionChannelForEdit` | `DistributionChannelForEdit` |
-| `CustomerForEdit` | `CustomerForEdit` |
-| `ProductForEdit` | `ProductForEdit` |
-| `MaterialByCustomer` | `CustomerMaterial.MaterialByCustomer` |
-| `MaterialDescriptionByCustomer` | `CustomerMaterial.MaterialDescriptionByCustomer` |
-| `CustomerMaterialSearchTerm` | `CustomerMaterialSearchTerm` |
-| `Plant` | `CustomerMaterial.Plant` |
-| `DeliveryPriority` | `CustomerMaterial.DeliveryPriority` |
-| `MinDeliveryQtyInBaseUnit` | `CustomerMaterial.MinDeliveryQtyInBaseUnit` |
-| `BaseUnit` | `CustomerMaterial.BaseUnit` |
-| `PartialDeliveryIsAllowed` | `PartialDeliveryIsAllowed` |
-| `MaxNmbrOfPartialDelivery` | `MaxNmbrOfPartialDelivery` |
-| `UnderdelivTolrtdLmtRatioInPct` | `UnderdelivTolrtdLmtRatioInPct` |
-| `OverdelivTolrtdLmtRatioInPct` | `OverdelivTolrtdLmtRatioInPct` |
-| `UnlimitedOverdeliveryIsAllowed` | `UnlimitedOverdeliveryIsAllowed` |
-| `CustomerMaterialItemUsage` | `CustomerMaterialItemUsage` |
-| `SalesUnit` | `SalesUnit` |
-| `SalesQtyToBaseQtyDnmntr` | `SalesQtyToBaseQtyDnmntr` |
-| `SalesQtyToBaseQtyNmrtr` | `SalesQtyToBaseQtyNmrtr` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Text` | *Association* |
-| `_Customer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  |  |
+| `DistributionChannel` | ✓ | |  |  |
+| `Customer` | ✓ | |  |  |
+| `Product` | ✓ | |  |  |
+| `SalesOrganizationForEdit` |  | |  |  |
+| `DistributionChannelForEdit` |  | |  |  |
+| `CustomerForEdit` |  | |  |  |
+| `ProductForEdit` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `MaterialDescriptionByCustomer` |  | |  |  |
+| `CustomerMaterialSearchTerm` |  | |  |  |
+| `Plant` |  | |  |  |
+| `DeliveryPriority` |  | |  |  |
+| `MinDeliveryQtyInBaseUnit` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |
+| `MaxNmbrOfPartialDelivery` |  | |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
+| `CustomerMaterialItemUsage` |  | |  |  |
+| `SalesUnit` |  | |  |  |
+| `SalesQtyToBaseQtyDnmntr` |  | |  |  |
+| `SalesQtyToBaseQtyNmrtr` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_Customer` | | ✓ | | |
 
 ## Source Code
 

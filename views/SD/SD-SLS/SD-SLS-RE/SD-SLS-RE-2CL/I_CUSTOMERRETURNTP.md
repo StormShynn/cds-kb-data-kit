@@ -31,54 +31,54 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturn` | `CustomerReturn.CustomerReturn` |
-| `CustomerReturnType` | `CustomerReturn.CustomerReturnType` |
-| `CustomerReturnDate` | `CustomerReturn.CustomerReturnDate` |
-| `SoldToParty` | `CustomerReturn.SoldToParty` |
-| `SalesOrganization` | `CustomerReturn.SalesOrganization` |
-| `DistributionChannel` | `CustomerReturn.DistributionChannel` |
-| `OrganizationDivision` | `CustomerReturn.OrganizationDivision` |
-| `SalesOffice` | `CustomerReturn.SalesOffice` |
-| `SalesGroup` | `CustomerReturn.SalesGroup` |
-| `SalesDistrict` | `CustomerReturn.SalesDistrict` |
-| `CreatedByUser` | `CustomerReturn.CreatedByUser` |
-| `CreationDate` | `CustomerReturn.CreationDate` |
-| `LastChangeDate` | `CustomerReturn.LastChangeDate` |
-| `LastChangeDateTime` | `CustomerReturn.LastChangeDateTime` |
-| `PurchaseOrderByCustomer` | `CustomerReturn.PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderType` | `CustomerReturn.CustomerPurchaseOrderType` |
-| `CustomerPurchaseOrderDate` | `CustomerReturn.CustomerPurchaseOrderDate` |
-| `SDDocumentReason` | `CustomerReturn.SDDocumentReason` |
-| `PricingDate` | `CustomerReturn.PricingDate` |
-| `RequestedDeliveryDate` | `CustomerReturn.RequestedDeliveryDate` |
-| `TotalNetAmount` | `CustomerReturn.TotalNetAmount` |
-| `TransactionCurrency` | `CustomerReturn.TransactionCurrency` |
-| `HeaderBillingBlockReason` | `CustomerReturn.HeaderBillingBlockReason` |
-| `DeliveryBlockReason` | `CustomerReturn.DeliveryBlockReason` |
-| `IncotermsClassification` | `CustomerReturn.IncotermsClassification` |
-| `IncotermsTransferLocation` | `CustomerReturn.IncotermsTransferLocation` |
-| `IncotermsLocation1` | `CustomerReturn.IncotermsLocation1` |
-| `IncotermsLocation2` | `CustomerReturn.IncotermsLocation2` |
-| `IncotermsVersion` | `CustomerReturn.IncotermsVersion` |
-| `CustomerPaymentTerms` | `CustomerReturn.CustomerPaymentTerms` |
-| `PaymentMethod` | `CustomerReturn.PaymentMethod` |
-| `CustomerReturnApprovalReason` | `CustomerReturn.CustomerReturnApprovalReason` |
-| `SalesDocApprovalStatus` | `CustomerReturn.SalesDocApprovalStatus` |
-| `ReferenceSDDocument` | `CustomerReturn.ReferenceSDDocument` |
-| `ReferenceSDDocumentCategory` | `CustomerReturn.ReferenceSDDocumentCategory` |
-| `RetsMgmtProcess` | `CustomerReturn.RetsMgmtProcess` |
-| `RetsMgmtLogProcgStatus` | `CustomerReturn.RetsMgmtLogProcgStatus` |
-| `RetsMgmtCompnProcgStatus` | `CustomerReturn.RetsMgmtCompnProcgStatus` |
-| `RetsMgmtProcessingStatus` | `CustomerReturn.RetsMgmtProcessingStatus` |
-| `OverallSDProcessStatus` | `CustomerReturn.OverallSDProcessStatus` |
-| `TotalCreditCheckStatus` | `CustomerReturn.TotalCreditCheckStatus` |
-| `OverallSDDocumentRejectionSts` | `CustomerReturn.OverallSDDocumentRejectionSts` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_Text` | *Association* |
-| `_PricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  |  |
+| `CustomerReturnType` |  | |  |  |
+| `CustomerReturnDate` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `RequestedDeliveryDate` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |
+| `DeliveryBlockReason` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `CustomerReturnApprovalReason` |  | |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `RetsMgmtProcess` |  | |  |  |
+| `RetsMgmtLogProcgStatus` |  | |  |  |
+| `RetsMgmtCompnProcgStatus` |  | |  |  |
+| `RetsMgmtProcessingStatus` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
 
 ## Source Code
 

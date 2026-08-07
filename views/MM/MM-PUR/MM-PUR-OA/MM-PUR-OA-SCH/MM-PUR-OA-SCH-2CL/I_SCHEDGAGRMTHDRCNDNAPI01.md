@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| key `ConditionType` | `ConditionType` |
-| key `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `_SchedgAgrmtHdr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionType` | ✓ | |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `_SchedgAgrmtHdr` | | ✓ | | |
 
 ## Associations
 

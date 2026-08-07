@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeRecordUUID` | `P_ChangeRecordMyInboxTask.ChangeRecordUUID` |
-| key `ProcessRouteTask` | `_ProcessRouteTask.ProcessRouteTask` |
-| `ChangeRecord` | `P_ChangeRecordMyInboxTask.ChangeRecord` |
-| `ProcessRoute` | `ProcessRoute` |
-| `ProcessRouteActivityArea` | `ProcessRouteActivityArea` |
-| `ChgRecordDescriptionText` | `P_ChangeRecordMyInboxTask.ChgRecordDescriptionText` |
-| `ChangeRecordType` | `P_ChangeRecordMyInboxTask.ChangeRecordType` |
-| `ChangeRecordTypeDesc` | `_ChangeRecordTypeVH.ChangeRecordTypeDesc` |
-| `ChangeRecordStatus` | `P_ChangeRecordMyInboxTask.ChangeRecordStatus` |
-| `ChangeRecordStatusDescription` | `_UserStatusVH.ChangeRecordStatusDescription` |
-| `PersonFullName` | `_ChangeRecordContactPerson.PersonFullName` |
-| `ChgRecdExpectedCompletionDate` | `ChgRecdExpectedCompletionDate` |
-| `ChgRecdAddlAttribDetailDesc` | `ChangeRecordDetailDescription` |
-| `Partner` | `P_ChangeRecordMyInboxTask.Partner` |
-| `_ChangeRecordType` | *Association* |
-| `_ChangeRecordTypeVH` | *Association* |
-| `_UserStatusVH` | *Association* |
-| `_ChangeRecordContactPerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeRecordUUID` | ✓ | |  |  |
+| `ProcessRouteTask` | ✓ | | `_ProcessRouteTask` | `ProcessRouteTask` |
+| `ChangeRecord` |  | |  |  |
+| `ProcessRoute` |  | |  |  |
+| `ProcessRouteActivityArea` |  | |  |  |
+| `ChgRecordDescriptionText` |  | |  |  |
+| `ChangeRecordType` |  | |  |  |
+| `ChangeRecordTypeDesc` |  | | `_ChangeRecordTypeVH` | `ChangeRecordTypeDesc` |
+| `ChangeRecordStatus` |  | |  |  |
+| `ChangeRecordStatusDescription` |  | | `_UserStatusVH` | `ChangeRecordStatusDescription` |
+| `PersonFullName` |  | | `_ChangeRecordContactPerson` | `PersonFullName` |
+| `ChgRecdExpectedCompletionDate` |  | |  |  |
+| `ChgRecdAddlAttribDetailDesc` |  | |  | `ChangeRecordDetailDescription` |
+| `Partner` |  | |  |  |
+| `_ChangeRecordType` | | ✓ | | |
+| `_ChangeRecordTypeVH` | | ✓ | | |
+| `_UserStatusVH` | | ✓ | | |
+| `_ChangeRecordContactPerson` | | ✓ | | |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `SuplrEvalRelevantDocCategory` | `cast( cast ( substring( dd07t.domvalue_l, 1, 1 ) as abap.char( 1 ) ) as mmpur_ana_de_se_doc_config )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `SuplrEvalRelevantDocCatTxt` | `cast( dd07t.ddtext as mmpur_ana_de_se_doc_cat_cf_txt preserving type )` |
-| `_Language` | *Association* |
-| `_DocConfigCatValue` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `SuplrEvalRelevantDocCategory` | ✓ | |  | `cast( cast ( substring( dd07t.domvalue_l, 1, 1 ) as abap.char( 1 ) ) as mmpur_ana_de_se_doc_config )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `SuplrEvalRelevantDocCatTxt` |  | |  | `cast( dd07t.ddtext as mmpur_ana_de_se_doc_cat_cf_txt preserving type )` |
+| `_Language` | | ✓ | | |
+| `_DocConfigCatValue` | | ✓ | | |
 
 ## Associations
 

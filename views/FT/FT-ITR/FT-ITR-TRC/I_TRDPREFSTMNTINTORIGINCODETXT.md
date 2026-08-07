@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `TrdPrefStmntInternalOriginCode` | `cast(domvalue_l as /sapsll/prene_r3)` |
-| `TrdPrefStmntIntOriginCodeDesc` | `cast(ddtext as /sapsll/prene_desc_r3)` |
-| `_Language` | *Association* |
-| `_TrdPrefStmntIntOriginCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TrdPrefStmntInternalOriginCode` | ✓ | |  | `cast(domvalue_l as /sapsll/prene_r3)` |
+| `TrdPrefStmntIntOriginCodeDesc` |  | |  | `cast(ddtext as /sapsll/prene_desc_r3)` |
+| `_Language` | | ✓ | | |
+| `_TrdPrefStmntIntOriginCode` | | ✓ | | |
 
 ## Associations
 

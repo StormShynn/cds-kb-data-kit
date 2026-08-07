@@ -28,35 +28,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocRelationshipUUID` | `DocRelationshipUUID` |
-| `PrecedingDocument` | `PrecedingDocument` |
-| `PrecedingDocumentItem` | `PrecedingDocumentItem` |
-| `PrecedingDocumentCategory` | `PrecedingDocumentCategory` |
-| `SubsequentDocument` | `SubsequentDocument` |
-| `SubsequentDocumentItem` | `SubsequentDocumentItem` |
-| `SubsequentDocumentCategory` | `SubsequentDocumentCategory` |
-| `ProcessFlowLevel` | `ProcessFlowLevel` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `QuantityInBaseUnit` | `QuantityInBaseUnit` |
-| `RefQuantityInOrdQtyUnitAsFloat` | `RefQuantityInOrdQtyUnitAsFloat` |
-| `RefQuantityInBaseUnitAsFloat` | `RefQuantityInBaseUnitAsFloat` |
-| `BaseUnit` | `BaseUnit` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `SDFulfillmentCalculationRule` | `SDFulfillmentCalculationRule` |
-| `NetAmount` | `NetAmount` |
-| `StatisticsCurrency` | `StatisticsCurrency` |
-| `TransferOrderInWrhsMgmtIsConfd` | `TransferOrderInWrhsMgmtIsConfd` |
-| `WarehouseNumber` | `WarehouseNumber` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `BillingPlan` | `BillingPlan` |
-| `BillingPlanItem` | `BillingPlanItem` |
-| `_BaseUnit` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_StatisticsCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocRelationshipUUID` | ✓ | |  |  |
+| `PrecedingDocument` |  | |  |  |
+| `PrecedingDocumentItem` |  | |  |  |
+| `PrecedingDocumentCategory` |  | |  |  |
+| `SubsequentDocument` |  | |  |  |
+| `SubsequentDocumentItem` |  | |  |  |
+| `SubsequentDocumentCategory` |  | |  |  |
+| `ProcessFlowLevel` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `QuantityInBaseUnit` |  | |  |  |
+| `RefQuantityInOrdQtyUnitAsFloat` |  | |  |  |
+| `RefQuantityInBaseUnitAsFloat` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `SDFulfillmentCalculationRule` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `StatisticsCurrency` |  | |  |  |
+| `TransferOrderInWrhsMgmtIsConfd` |  | |  |  |
+| `WarehouseNumber` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `BillingPlan` |  | |  |  |
+| `BillingPlanItem` |  | |  |  |
+| `_BaseUnit` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_StatisticsCurrency` | | ✓ | | |
 
 ## Source Code
 

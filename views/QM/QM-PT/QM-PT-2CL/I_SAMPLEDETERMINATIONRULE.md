@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SampleDeterminationRule` | `qdfb.fbkey` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SampleDeterminationRule` | ✓ | |  | `fbkey` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

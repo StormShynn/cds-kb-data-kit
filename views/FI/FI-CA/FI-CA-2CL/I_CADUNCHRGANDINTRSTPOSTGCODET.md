@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunChrgAndIntrstPostgCode` | `cast( left( dd07t.domvalue_l, 1 ) as cpost_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CADunChrgAndIntrstPostgCodeTxt` | `cast( ddtext as cpost_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunChrgAndIntrstPostgCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as cpost_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CADunChrgAndIntrstPostgCodeTxt` |  | |  | `cast( ddtext as cpost_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

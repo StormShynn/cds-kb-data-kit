@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgDocOriginProcess` | `_tfk2641.srcprocess` |
-| `_CABillgDocOriginProcessText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgDocOriginProcess` | ✓ | | `_tfk2641` | `srcprocess` |
+| `_CABillgDocOriginProcessText` | | ✓ | | |
 
 ## Associations
 

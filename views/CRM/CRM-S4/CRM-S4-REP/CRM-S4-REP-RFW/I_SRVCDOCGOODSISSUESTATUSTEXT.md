@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcDocItmGoodsIssueStatus` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `SrvcDocGoodsIssueStatusText` | `ddtext` |
-| `_SrvcDocGoodsIssueStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcDocItmGoodsIssueStatus` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SrvcDocGoodsIssueStatusText` |  | |  | `ddtext` |
+| `_SrvcDocGoodsIssueStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

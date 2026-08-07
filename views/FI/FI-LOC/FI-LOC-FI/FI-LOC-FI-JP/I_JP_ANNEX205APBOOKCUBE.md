@@ -29,59 +29,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Supplier` | `}] key Supplier` |
-| key `SourceLedger` | `SourceLedger` |
-| key `CompanyCode` | `CompanyCode` |
-| key `FiscalYear` | `FiscalYear` |
-| key `AccountingDocument` | `AccountingDocument` |
-| key `LedgerGLLineItem` | `LedgerGLLineItem` |
-| key `Ledger` | `Ledger` |
-| `PurchasingDocument` | `PurchasingDocument` |
-| `JP_Annex205APLeadingAcctgDoc` | `JP_Annex205APLeadingAcctgDoc` |
-| `AccountingDocumentType` | `AccountingDocumentType` |
-| `FiscalPeriod` | `FiscalPeriod` |
-| `PostingDate` | `PostingDate` |
-| `DocumentDate` | `DocumentDate` |
-| `ClearingDate` | `ClearingDate` |
-| `AccountingDocumentHeaderText` | `_Header.AccountingDocumentHeaderText` |
-| `DocumentItemText` | `DocumentItemText` |
-| `ChartOfAccounts` | `ChartOfAccounts` |
-| `GLAccount` | `GLAccount` |
-| `ReferenceDocument` | `ReferenceDocument` |
-| `ReferenceDocumentItem` | `ReferenceDocumentItem` |
-| `PurchasingDocumentItem` | `PurchasingDocumentItem` |
-| `Product` | `Product` |
-| `DebitCreditCodeName` | `DebitCreditCodeName` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `AmountInTransactionCurrency` | `} cast( AmountInTransactionCurrency as fis_wsl preserving type )` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `AmountInCompanyCodeCurrency` | `} cast( AmountInCompanyCodeCurrency as fis_hsl preserving type )` |
-| `AcctsPyblAmtInCCCrcy` | `} case FinancialAccountType when 'K' then cast( AmountInCompanyCodeCurrency as fins_cfs_accpay preserving type ) else cast ( cast ('0' as abap.curr( 23,2)) as fins_cfs_accpay preserving type ) end` |
-| `BaseUnit` | `BaseUnit` |
-| `Quantity` | `} cast( abs(Quantity) as glo_jp_anx20_quantity preserving type )` |
-| `OrderPriceUnit` | `_PurchasingDocumentItem.OrderPriceUnit` |
-| `NetPriceQuantity` | `} cast( _PurchasingDocumentItem.NetPriceQuantity as glo_jp_netpriceqty )` |
-| `NetPriceAmount` | `} _PurchasingDocumentItem.NetPriceAmount` |
-| `DocumentCurrency` | `_PurchasingDocumentItem.DocumentCurrency` |
-| `_SourceLedger` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_JournalEntry` | *Association* |
-| `_Ledger` | *Association* |
-| `_Supplier` | *Association* |
-| `_Product` | *Association* |
-| `_PurchasingDocument` | *Association* |
-| `_PurchasingDocumentItem` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_DebitCreditCode` | *Association* |
-| `_GLAccountInChartOfAccounts` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_AccountingDocumentType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` |  | |  | `}] key Supplier` |
+| `SourceLedger` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `AccountingDocument` | ✓ | |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `JP_Annex205APLeadingAcctgDoc` |  | |  |  |
+| `AccountingDocumentType` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `ClearingDate` |  | |  |  |
+| `AccountingDocumentHeaderText` |  | | `_Header` | `AccountingDocumentHeaderText` |
+| `DocumentItemText` |  | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `ReferenceDocument` |  | |  |  |
+| `ReferenceDocumentItem` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `Product` |  | |  |  |
+| `DebitCreditCodeName` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  | `} cast( AmountInTransactionCurrency as fis_wsl preserving type )` |
+| `CompanyCodeCurrency` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `} cast( AmountInCompanyCodeCurrency as fis_hsl preserving type )` |
+| `AcctsPyblAmtInCCCrcy` |  | |  | `} case FinancialAccountType when 'K' then cast( AmountInCompanyCodeCurrency as fins_cfs_accpay preserving type ) else cast ( cast ('0' as abap.curr( 23,2)) as fins_cfs_accpay preserving type ) end` |
+| `BaseUnit` |  | |  |  |
+| `Quantity` |  | |  | `} cast( abs(Quantity) as glo_jp_anx20_quantity preserving type )` |
+| `OrderPriceUnit` |  | | `_PurchasingDocumentItem` | `OrderPriceUnit` |
+| `NetPriceQuantity` |  | |  | `} cast( _PurchasingDocumentItem.NetPriceQuantity as glo_jp_netpriceqty )` |
+| `NetPriceAmount` |  | |  | `} _PurchasingDocumentItem.NetPriceAmount` |
+| `DocumentCurrency` |  | | `_PurchasingDocumentItem` | `DocumentCurrency` |
+| `_SourceLedger` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_JournalEntry` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_PurchasingDocument` | | ✓ | | |
+| `_PurchasingDocumentItem` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_DebitCreditCode` | | ✓ | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_AccountingDocumentType` | | ✓ | | |
 
 ## Associations
 

@@ -30,48 +30,48 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProposalTaxPostingIdentifier` | `TaxPropslItem.ptxnr` |
-| key `ProposalTaxPostingItem` | `TaxPropslItem.ptxit` |
-| `DeliveringPlant` | `TaxPropslItem.werks` |
-| `ReceivingPlant` | `TaxPropslItem.umwrk` |
-| `MaterialDocumentItem` | `TaxPropslItem.zeile` |
-| `OutboundDeliveryItem` | `TaxPropslItem.posnr` |
-| `Batch` | `TaxPropslItem.charg` |
-| `HigherLvlItmOfBatSpltItm` | `TaxPropslItem.uecha` |
-| `MaterialIsIntBatchManaged` | `TaxPropslItem.xchar` |
-| `ReversedMaterialDocumentItem` | `TaxPropslItem.smblp` |
-| `Material` | `TaxPropslItem.matnr` |
-| `TransactionCurrency` | `_TaxProposalHeader.TransactionCurrency` |
-| `ForeignTradeStstclCurrency` | `_TaxProposalHeader.ForeignTradeStstclCurrency` |
-| `QuantityInEntryUnit` | `} TaxPropslItem.fkimg` |
-| `SalesUnit` | `TaxPropslItem.vrkme` |
-| `QuantityInEntryUnitBaseUnit` | `} TaxPropslItem.fklmg` |
-| `BaseUnit` | `TaxPropslItem.meins` |
-| `MaterialNetWeight` | `} TaxPropslItem.ntgew` |
-| `WeightUnit` | `TaxPropslItem.gewei` |
-| `ServicesRenderedDate` | `TaxPropslItem.fbuda` |
-| `PriceDetnExchangeRate` | `cast( TaxPropslItem.kursk as kursk_not_converted preserving type )` |
-| `ItemNetAmountOfBillingDoc` | `} TaxPropslItem.netwr` |
-| `PrecdgSDDocCategory` | `TaxPropslItem.vgtyp` |
-| `SalesDocument` | `TaxPropslItem.aubel` |
-| `SalesDocumentItem` | `TaxPropslItem.aupos` |
-| `SalesDocumentItemText` | `TaxPropslItem.arktx` |
-| `SalesDocumentItemCategory` | `TaxPropslItem.pstyv` |
-| `SDDocumentCategory` | `TaxPropslItem.autyp` |
-| `ItemGrossAmountOfBillingDoc` | `} TaxPropslItem.brtwr` |
-| `ForeignTradeStstclAmt` | `TaxPropslItem.grwrt` |
-| `CountryOfOrigin` | `TaxPropslItem.spe_herkl` |
-| `RegionOfOrigin` | `TaxPropslItem.spe_herkr` |
-| `CommodityCode` | `TaxPropslItem.itm_comco` |
-| `SpecialStockIdfgCustomer` | `TaxPropslItem.nsdm_kunnr` |
-| `SoldToParty` | `TaxPropslItem.kunag` |
-| `SoldToPartyAddressID` | `TaxPropslItem.kunag_adr` |
-| `ShipToParty` | `TaxPropslItem.kunwe` |
-| `ShipToPartyAddressID` | `TaxPropslItem.kunwe_adr` |
-| `CompanyCode` | `_TaxProposalHeader.CompanyCode` |
-| `_TaxProposalHeader` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProposalTaxPostingIdentifier` | ✓ | |  | `ptxnr` |
+| `ProposalTaxPostingItem` | ✓ | |  | `ptxit` |
+| `DeliveringPlant` |  | |  | `werks` |
+| `ReceivingPlant` |  | |  | `umwrk` |
+| `MaterialDocumentItem` |  | |  | `zeile` |
+| `OutboundDeliveryItem` |  | |  | `posnr` |
+| `Batch` |  | |  | `charg` |
+| `HigherLvlItmOfBatSpltItm` |  | |  | `uecha` |
+| `MaterialIsIntBatchManaged` |  | |  | `xchar` |
+| `ReversedMaterialDocumentItem` |  | |  | `smblp` |
+| `Material` |  | |  | `matnr` |
+| `TransactionCurrency` |  | | `_TaxProposalHeader` | `TransactionCurrency` |
+| `ForeignTradeStstclCurrency` |  | | `_TaxProposalHeader` | `ForeignTradeStstclCurrency` |
+| `QuantityInEntryUnit` |  | |  | `} TaxPropslItem.fkimg` |
+| `SalesUnit` |  | |  | `vrkme` |
+| `QuantityInEntryUnitBaseUnit` |  | |  | `} TaxPropslItem.fklmg` |
+| `BaseUnit` |  | |  | `meins` |
+| `MaterialNetWeight` |  | |  | `} TaxPropslItem.ntgew` |
+| `WeightUnit` |  | |  | `gewei` |
+| `ServicesRenderedDate` |  | |  | `fbuda` |
+| `PriceDetnExchangeRate` |  | |  | `cast( TaxPropslItem.kursk as kursk_not_converted preserving type )` |
+| `ItemNetAmountOfBillingDoc` |  | |  | `} TaxPropslItem.netwr` |
+| `PrecdgSDDocCategory` |  | |  | `vgtyp` |
+| `SalesDocument` |  | |  | `aubel` |
+| `SalesDocumentItem` |  | |  | `aupos` |
+| `SalesDocumentItemText` |  | |  | `arktx` |
+| `SalesDocumentItemCategory` |  | |  | `pstyv` |
+| `SDDocumentCategory` |  | |  | `autyp` |
+| `ItemGrossAmountOfBillingDoc` |  | |  | `} TaxPropslItem.brtwr` |
+| `ForeignTradeStstclAmt` |  | |  | `grwrt` |
+| `CountryOfOrigin` |  | |  | `spe_herkl` |
+| `RegionOfOrigin` |  | |  | `spe_herkr` |
+| `CommodityCode` |  | |  | `itm_comco` |
+| `SpecialStockIdfgCustomer` |  | |  | `nsdm_kunnr` |
+| `SoldToParty` |  | |  | `kunag` |
+| `SoldToPartyAddressID` |  | |  | `kunag_adr` |
+| `ShipToParty` |  | |  | `kunwe` |
+| `ShipToPartyAddressID` |  | |  | `kunwe_adr` |
+| `CompanyCode` |  | | `_TaxProposalHeader` | `CompanyCode` |
+| `_TaxProposalHeader` | | ✓ | | |
 
 ## Associations
 

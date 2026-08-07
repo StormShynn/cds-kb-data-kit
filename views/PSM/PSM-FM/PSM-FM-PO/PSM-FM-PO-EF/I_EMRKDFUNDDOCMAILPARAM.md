@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| `EarmarkedFundsDocumentType` | `EarmarkedFundsDocumentType` |
-| `EarmarkedFundsDocumentCategory` | `EarmarkedFundsDocumentCategory` |
-| `CompanyCode` | `CompanyCode` |
-| `EmrkdFndsDocLastChangedByUser` | `EmrkdFndsDocLastChangedByUser` |
-| `EmrkdFndsDocCreatedByUser` | `EmrkdFndsDocCreatedByUser` |
-| `_EarmarkedFundsDocumentItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EarmarkedFundsDocument` | ✓ | |  |  |
+| `EarmarkedFundsDocumentType` |  | |  |  |
+| `EarmarkedFundsDocumentCategory` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `EmrkdFndsDocLastChangedByUser` |  | |  |  |
+| `EmrkdFndsDocCreatedByUser` |  | |  |  |
+| `_EarmarkedFundsDocumentItem` | | ✓ | | |
 
 ## Source Code
 

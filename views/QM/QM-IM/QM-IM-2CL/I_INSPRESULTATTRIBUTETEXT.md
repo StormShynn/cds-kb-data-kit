@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionResultAttribute` | `tq77t.attribut` |
-| key `Language` | `tq77t.sprache` |
-| `InspectionResultAttributeText` | `tq77t.kurztext` |
-| `_Language` | *Association* |
-| `_InspectionResultAttribute` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionResultAttribute` | ✓ | |  | `attribut` |
+| `Language` | ✓ | |  | `sprache` |
+| `InspectionResultAttributeText` |  | |  | `kurztext` |
+| `_Language` | | ✓ | | |
+| `_InspectionResultAttribute` | | ✓ | | |
 
 ## Associations
 

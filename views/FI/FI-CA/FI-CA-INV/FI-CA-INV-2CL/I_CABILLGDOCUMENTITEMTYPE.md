@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgDocumentItemType` | `CAInvcgDocumentItemType` |
-| `_CABillgDocumentItemTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgDocumentItemType` | ✓ | |  | `CAInvcgDocumentItemType` |
+| `_CABillgDocumentItemTypeText` | | ✓ | | |
 
 ## Associations
 

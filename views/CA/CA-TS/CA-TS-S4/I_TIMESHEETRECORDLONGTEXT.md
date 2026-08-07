@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeSheetRecord` | `catsdb.counter` |
-| key `Language` | `_TextObjectPlainLongText.Language` |
-| `PlainLongText` | `_TextObjectPlainLongText.PlainLongText` |
-| `_TextObjectPlainLongText` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeSheetRecord` | ✓ | |  | `counter` |
+| `Language` | ✓ | | `_TextObjectPlainLongText` | `Language` |
+| `PlainLongText` |  | | `_TextObjectPlainLongText` | `PlainLongText` |
+| `_TextObjectPlainLongText` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

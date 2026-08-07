@@ -31,55 +31,55 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotation` | `SalesQuotationItem.SalesQuotation` |
-| key `SalesQuotationItem` | `SalesQuotationItem.SalesQuotationItem` |
-| `HigherLevelItem` | `SalesQuotationItem.HigherLevelItem` |
-| `SalesQuotationItemCategory` | `SalesQuotationItem.SalesQuotationItemCategory` |
-| `SalesQuotationItemText` | `SalesQuotationItem.SalesQuotationItemText` |
-| `Product` | `SalesQuotationItem.Product` |
-| `ProductGroup` | `SalesQuotationItem.ProductGroup` |
-| `MaterialByCustomer` | `SalesQuotationItem.MaterialByCustomer` |
-| `PurchaseOrderByCustomer` | `SalesQuotationItem.PurchaseOrderByCustomer` |
-| `ItemOrderProbabilityInPercent` | `SalesQuotationItem.ItemOrderProbabilityInPercent` |
-| `RequestedQuantity` | `SalesQuotationItem.RequestedQuantity` |
-| `RequestedQuantityUnit` | `SalesQuotationItem.RequestedQuantityUnit` |
-| `ItemGrossWeight` | `SalesQuotationItem.ItemGrossWeight` |
-| `ItemNetWeight` | `SalesQuotationItem.ItemNetWeight` |
-| `ItemWeightUnit` | `SalesQuotationItem.ItemWeightUnit` |
-| `ItemVolume` | `SalesQuotationItem.ItemVolume` |
-| `ItemVolumeUnit` | `SalesQuotationItem.ItemVolumeUnit` |
-| `AlternativeToItem` | `SalesQuotationItem.AlternativeToItem` |
-| `Batch` | `SalesQuotationItem.Batch` |
-| `Plant` | `SalesQuotationItem.Plant` |
-| `IncotermsClassification` | `SalesQuotationItem.IncotermsClassification` |
-| `IncotermsLocation1` | `SalesQuotationItem.IncotermsLocation1` |
-| `IncotermsLocation2` | `SalesQuotationItem.IncotermsLocation2` |
-| `IncotermsVersion` | `SalesQuotationItem.IncotermsVersion` |
-| `CustomerPaymentTerms` | `SalesQuotationItem.CustomerPaymentTerms` |
-| `MaterialPricingGroup` | `SalesQuotationItem.MaterialPricingGroup` |
-| `SalesDocumentRjcnReason` | `SalesQuotationItem.SalesDocumentRjcnReason` |
-| `TransactionCurrency` | `SalesQuotationItem.TransactionCurrency` |
-| `ProfitCenter` | `SalesQuotationItem.ProfitCenter` |
-| `PricingDate` | `SalesQuotationItem.PricingDate` |
-| `ReferenceSDDocument` | `SalesQuotationItem.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `SalesQuotationItem.ReferenceSDDocumentItem` |
-| `NetAmount` | `SalesQuotationItem.NetAmount` |
-| `SDProcessStatus` | `SalesQuotationItem.SDProcessStatus` |
-| `SDDocumentRejectionStatus` | `SalesQuotationItem.SDDocumentRejectionStatus` |
-| `ItemGeneralIncompletionStatus` | `SalesQuotationItem.ItemGeneralIncompletionStatus` |
-| `TotalSDDocReferenceStatus` | `SalesQuotationItem.TotalSDDocReferenceStatus` |
-| `SDDocReferenceStatus` | `SalesQuotationItem.SDDocReferenceStatus` |
-| `PricingIncompletionStatus` | `SalesQuotationItem.PricingIncompletionStatus` |
-| `SalesQuotationType` | `SalesQuotationItem.SalesQuotationType` |
-| `SalesOrganization` | `SalesQuotationItem.SalesOrganization` |
-| `DistributionChannel` | `SalesQuotationItem.DistributionChannel` |
-| `OrganizationDivision` | `SalesQuotationItem.OrganizationDivision` |
-| `_SalesQuotation` | *Association* |
-| `_ItemPartner` | *Association* |
-| `_ItemText` | *Association* |
-| `_ItemPricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |
+| `SalesQuotationItem` | ✓ | |  |  |
+| `HigherLevelItem` |  | |  |  |
+| `SalesQuotationItemCategory` |  | |  |  |
+| `SalesQuotationItemText` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `ItemOrderProbabilityInPercent` |  | |  |  |
+| `RequestedQuantity` |  | |  |  |
+| `RequestedQuantityUnit` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `AlternativeToItem` |  | |  |  |
+| `Batch` |  | |  |  |
+| `Plant` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `MaterialPricingGroup` |  | |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `SDProcessStatus` |  | |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |
+| `SDDocReferenceStatus` |  | |  |  |
+| `PricingIncompletionStatus` |  | |  |  |
+| `SalesQuotationType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesQuotation` | | ✓ | | |
+| `_ItemPartner` | | ✓ | | |
+| `_ItemText` | | ✓ | | |
+| `_ItemPricingElement` | | ✓ | | |
 
 ## Source Code
 

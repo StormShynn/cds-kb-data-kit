@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrganizationalChange` | `orgl_change` |
-| key `Language` | `langu` |
-| `OrganizationalChangeName` | `orgl_change_name` |
-| `LastChangeDateTime` | `last_changed_on` |
-| `LastChangedByUser` | `last_changed_by` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrganizationalChange` | ✓ | |  | `orgl_change` |
+| `Language` | ✓ | |  | `langu` |
+| `OrganizationalChangeName` |  | |  | `orgl_change_name` |
+| `LastChangeDateTime` |  | |  | `last_changed_on` |
+| `LastChangedByUser` |  | |  | `last_changed_by` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

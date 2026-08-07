@@ -30,64 +30,64 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `AccountingDocument` | `belnr` |
-| key `FiscalYear` | `gjahr` |
-| key `AccountingDocumentItem` | `buzei` |
-| key `WithholdingTaxType` | `witht` |
-| `WithholdingTaxCode` | `wt_withcd` |
-| `WhldgTaxBaseAmtInCoCodeCrcy` | `wt_qsshh` |
-| `WhldgTaxBaseAmtInTransacCrcy` | `wt_qsshb` |
-| `WhldgTaxBaseAmtInAddlCrcy2` | `wt_qssh2` |
-| `WhldgTaxBaseAmtInAddlCrcy3` | `wt_qssh3` |
-| `WhldgTaxBaseIsEnteredManually` | `wt_basman` |
-| `WhldgTaxAmtInCoCodeCrcy` | `wt_qbshh` |
-| `WhldgTaxAmtInTransacCrcy` | `wt_qbshb` |
-| `WhldgTaxAmtInAddlCrcy2` | `wt_qbsh2` |
-| `WhldgTaxAmtInAddlCrcy3` | `wt_qbsh3` |
-| `WhldgTaxIsEnteredManually` | `wt_amnman` |
-| `WhldgTaxItemStatus` | `wt_stat` |
-| `WhldgTaxExmptAmtInCoCodeCrcy` | `wt_qsfhh` |
-| `WhldgTaxExmptAmtInTransacCrcy` | `wt_qsfhb` |
-| `WhldgTaxExmptAmtInAddlCrcy2` | `wt_qsfh2` |
-| `WhldgTaxExmptAmtInAddlCrcy3` | `wt_qsfh3` |
-| `MnllyEnteredWHTAmtInTransCrcy` | `wt_qbuihb` |
-| `MnllyEnteredWHTAmtInCoCodeCrcy` | `wt_qbuihh` |
-| `WhldgTaxExmptCertificate` | `wt_wtexmn` |
-| `FinancialAccountType` | `koart` |
-| `CustomerSupplierAccount` | `wt_acco` |
-| `GLAccount` | `hkont` |
-| `SupplierRecipientType` | `qsrec` |
-| `ClearingAccountingDocument` | `augbl` |
-| `ClearingDate` | `augdt` |
-| `WithholdingTaxExmptPercent` | `wt_qszrt` |
-| `WithholdingTaxPercent` | `qsatz` |
-| `IsSelfWhldgTax` | `wt_slfwtpd` |
-| `IsGrossingUp` | `wt_gruwtpd` |
-| `WithholdingTaxCertificate` | `ctnumber` |
-| `WhldgTaxCertDate` | `ctissuedate` |
-| `IN_ClrgWithholdingTaxDocument` | `j_1iintchln` |
-| `IN_ClrgWithholdingTaxDate` | `j_1iintchdt` |
-| `IN_ReferenceDocumentNumber` | `j_1irebzg` |
-| `DownPaymentIsCleared` | `wt_downc` |
-| `DocumentIsPartialExempted` | `fiwtin_par_exem` |
-| `IN_WhldgTaxRecordTypeTrans` | `j_1iewtrec` |
-| `Country` | `_CompanyCode.Country` |
-| `CompanyCodeCurrency` | `_CompanyCode.Currency` |
-| `DocumentCurrency` | `_AccountingDocument.Currency` |
-| `AdditionalCurrency1` | `_AccountingDocument.AdditionalCurrency1` |
-| `AdditionalCurrency2` | `_AccountingDocument.AdditionalCurrency2` |
-| `RptgWhldgTxBaseAmtInCoCodeCrcy` | `j_1af_wt_repbs` |
-| `_CompanyCode` | *Association* |
-| `_AccountingDocument` | *Association* |
-| `_GLAccount` | *Association* |
-| `_WithholdingTaxCode` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_AdditionalCurrency1` | *Association* |
-| `_AdditionalCurrency2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `AccountingDocument` | ✓ | |  | `belnr` |
+| `FiscalYear` | ✓ | |  | `gjahr` |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` |
+| `WithholdingTaxType` | ✓ | |  | `witht` |
+| `WithholdingTaxCode` |  | |  | `wt_withcd` |
+| `WhldgTaxBaseAmtInCoCodeCrcy` |  | |  | `wt_qsshh` |
+| `WhldgTaxBaseAmtInTransacCrcy` |  | |  | `wt_qsshb` |
+| `WhldgTaxBaseAmtInAddlCrcy2` |  | |  | `wt_qssh2` |
+| `WhldgTaxBaseAmtInAddlCrcy3` |  | |  | `wt_qssh3` |
+| `WhldgTaxBaseIsEnteredManually` |  | |  | `wt_basman` |
+| `WhldgTaxAmtInCoCodeCrcy` |  | |  | `wt_qbshh` |
+| `WhldgTaxAmtInTransacCrcy` |  | |  | `wt_qbshb` |
+| `WhldgTaxAmtInAddlCrcy2` |  | |  | `wt_qbsh2` |
+| `WhldgTaxAmtInAddlCrcy3` |  | |  | `wt_qbsh3` |
+| `WhldgTaxIsEnteredManually` |  | |  | `wt_amnman` |
+| `WhldgTaxItemStatus` |  | |  | `wt_stat` |
+| `WhldgTaxExmptAmtInCoCodeCrcy` |  | |  | `wt_qsfhh` |
+| `WhldgTaxExmptAmtInTransacCrcy` |  | |  | `wt_qsfhb` |
+| `WhldgTaxExmptAmtInAddlCrcy2` |  | |  | `wt_qsfh2` |
+| `WhldgTaxExmptAmtInAddlCrcy3` |  | |  | `wt_qsfh3` |
+| `MnllyEnteredWHTAmtInTransCrcy` |  | |  | `wt_qbuihb` |
+| `MnllyEnteredWHTAmtInCoCodeCrcy` |  | |  | `wt_qbuihh` |
+| `WhldgTaxExmptCertificate` |  | |  | `wt_wtexmn` |
+| `FinancialAccountType` |  | |  | `koart` |
+| `CustomerSupplierAccount` |  | |  | `wt_acco` |
+| `GLAccount` |  | |  | `hkont` |
+| `SupplierRecipientType` |  | |  | `qsrec` |
+| `ClearingAccountingDocument` |  | |  | `augbl` |
+| `ClearingDate` |  | |  | `augdt` |
+| `WithholdingTaxExmptPercent` |  | |  | `wt_qszrt` |
+| `WithholdingTaxPercent` |  | |  | `qsatz` |
+| `IsSelfWhldgTax` |  | |  | `wt_slfwtpd` |
+| `IsGrossingUp` |  | |  | `wt_gruwtpd` |
+| `WithholdingTaxCertificate` |  | |  | `ctnumber` |
+| `WhldgTaxCertDate` |  | |  | `ctissuedate` |
+| `IN_ClrgWithholdingTaxDocument` |  | |  | `j_1iintchln` |
+| `IN_ClrgWithholdingTaxDate` |  | |  | `j_1iintchdt` |
+| `IN_ReferenceDocumentNumber` |  | |  | `j_1irebzg` |
+| `DownPaymentIsCleared` |  | |  | `wt_downc` |
+| `DocumentIsPartialExempted` |  | |  | `fiwtin_par_exem` |
+| `IN_WhldgTaxRecordTypeTrans` |  | |  | `j_1iewtrec` |
+| `Country` |  | | `_CompanyCode` | `Country` |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |
+| `DocumentCurrency` |  | | `_AccountingDocument` | `Currency` |
+| `AdditionalCurrency1` |  | | `_AccountingDocument` | `AdditionalCurrency1` |
+| `AdditionalCurrency2` |  | | `_AccountingDocument` | `AdditionalCurrency2` |
+| `RptgWhldgTxBaseAmtInCoCodeCrcy` |  | |  | `j_1af_wt_repbs` |
+| `_CompanyCode` | | ✓ | | |
+| `_AccountingDocument` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
+| `_WithholdingTaxCode` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_AdditionalCurrency1` | | ✓ | | |
+| `_AdditionalCurrency2` | | ✓ | | |
 
 ## Associations
 

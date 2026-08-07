@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesProductHierarchyPurpose` | `salesproducthierarchypurpose` |
-| key `SalesOrganization` | `salesorganization` |
-| key `DistributionChannel` | `distributionchannel` |
-| key `UniversalHierVersValidTo` | `universalhierversvalidto` |
-| `UniversalHierVersValidFrom` | `universalhierversvalidfrom` |
-| `ProductHierarchy` | `producthierarchy` |
-| `LastChangeDateTime` | `cast( lastchangedatetime as last_changed_date_time preserving type )` |
-| `_SalesProductHierarchyPurpose` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesProductHierarchyPurpose` | ✓ | |  | `salesproducthierarchypurpose` |
+| `SalesOrganization` | ✓ | |  | `salesorganization` |
+| `DistributionChannel` | ✓ | |  | `distributionchannel` |
+| `UniversalHierVersValidTo` | ✓ | |  | `universalhierversvalidto` |
+| `UniversalHierVersValidFrom` |  | |  | `universalhierversvalidfrom` |
+| `ProductHierarchy` |  | |  | `producthierarchy` |
+| `LastChangeDateTime` |  | |  | `cast( lastchangedatetime as last_changed_date_time preserving type )` |
+| `_SalesProductHierarchyPurpose` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
 
 ## Associations
 

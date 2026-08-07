@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlndIndepRqmtCllgAppl` | `cast( dd07l.domvalue_l as pph_pir_calling_appl )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlndIndepRqmtCllgAppl` | ✓ | |  | `cast( dd07l.domvalue_l as pph_pir_calling_appl )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `string` | `key context : abap.string` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `string` |  | |  | `key context : abap.string` |
 
 ## Source Code
 

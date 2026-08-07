@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `Plant` |
-| key `ForecastPeriodType` | `ForecastPeriodType` |
-| key `ProdFcstRequirementsSplitCode` | `ProdFcstRequirementsSplitCode` |
-| `_Plant` | *Association* |
-| `_ForecastPeriodType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `ForecastPeriodType` | ✓ | |  |  |
+| `ProdFcstRequirementsSplitCode` | ✓ | |  |  |
+| `_Plant` | | ✓ | | |
+| `_ForecastPeriodType` | | ✓ | | |
 
 ## Source Code
 

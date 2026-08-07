@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `BR_NFReferencedProcessOrigin` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_processorigin preserving type )` |
-| `BR_NFReferencedProcOriginDesc` | `cast( ddtext as logbr_processorigindescription preserving type )` |
-| `_BR_NFReferencedProcessOrigin` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `BR_NFReferencedProcessOrigin` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_processorigin preserving type )` |
+| `BR_NFReferencedProcOriginDesc` |  | |  | `cast( ddtext as logbr_processorigindescription preserving type )` |
+| `_BR_NFReferencedProcessOrigin` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChrgCalcBaseUUID` | `TranspChrgCalcBaseUUID` |
-| `TranspChargeItemElementUUID` | `TranspChargeItemElementUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspChrgCalculationBase` | `TranspChrgCalculationBase` |
-| `TranspScaleItemQuantityUnit` | `TranspScaleItemQuantityUnit` |
-| `TranspScaleItemQuantity` | `TranspScaleItemQuantity` |
-| `TranspScaleItemCurrency` | `TranspScaleItemCurrency` |
-| `TranspScaleItemAmount` | `TranspScaleItemAmount` |
-| `TranspScaleItemValueChar` | `TranspScaleItemValueChar` |
-| `TranspDataSourceQtyUnit` | `TranspDataSourceQtyUnit` |
-| `TranspDataSourceQuantity` | `TranspDataSourceQuantity` |
-| `TranspDataSourceCurrency` | `TranspDataSourceCurrency` |
-| `TranspDataSourceAmount` | `TranspDataSourceAmount` |
-| `TranspDataSourceValueChar` | `TranspDataSourceValueChar` |
-| `I_FrtBkgChrgElementTP` | `_TranspOrdChrgElmnt as _FreightBookingChrgElmnt : redirected to parent I_FrtBkgChrgElementTP` |
-| `I_FreightBookingTP` | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChrgCalcBaseUUID` | ✓ | |  |  |
+| `TranspChargeItemElementUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspChrgCalculationBase` |  | |  |  |
+| `TranspScaleItemQuantityUnit` |  | |  |  |
+| `TranspScaleItemQuantity` |  | |  |  |
+| `TranspScaleItemCurrency` |  | |  |  |
+| `TranspScaleItemAmount` |  | |  |  |
+| `TranspScaleItemValueChar` |  | |  |  |
+| `TranspDataSourceQtyUnit` |  | |  |  |
+| `TranspDataSourceQuantity` |  | |  |  |
+| `TranspDataSourceCurrency` |  | |  |  |
+| `TranspDataSourceAmount` |  | |  |  |
+| `TranspDataSourceValueChar` |  | |  |  |
+| `I_FrtBkgChrgElementTP` |  | |  | `_TranspOrdChrgElmnt as _FreightBookingChrgElmnt : redirected to parent I_FrtBkgChrgElementTP` |
+| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
 
 ## Source Code
 

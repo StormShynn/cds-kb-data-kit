@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ControllingArea` | `ControllingArea` |
-| key `StatisticalKeyFigure` | `StatisticalKeyFigure` |
-| `LanguageForEdit` | `LanguageForEdit` |
-| `StatisticalKeyFigureName` | `StatisticalKeyFigureName` |
-| `_StatisticalKeyFigureTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `StatisticalKeyFigure` | ✓ | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `StatisticalKeyFigureName` |  | |  |  |
+| `_StatisticalKeyFigureTP` | | ✓ | | |
 
 ## Source Code
 

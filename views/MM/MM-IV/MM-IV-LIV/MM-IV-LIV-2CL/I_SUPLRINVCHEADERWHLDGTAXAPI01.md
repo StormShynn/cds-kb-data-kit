@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `I_SuplrInvcHeaderWhldgTax.SupplierInvoice` |
-| key `FiscalYear` | `I_SuplrInvcHeaderWhldgTax.FiscalYear` |
-| key `WithholdingTaxType` | `WithholdingTaxType` |
-| `DocumentCurrency` | `I_SuplrInvcHeaderWhldgTax.DocumentCurrency` |
-| `WithholdingTaxCode` | `WithholdingTaxCode` |
-| `WithholdingTaxBaseAmount` | `WithholdingTaxBaseAmount` |
-| `ManuallyEnteredWhldgTaxAmount` | `ManuallyEnteredWhldgTaxAmount` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `WithholdingTaxType` | ✓ | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `WithholdingTaxCode` |  | |  |  |
+| `WithholdingTaxBaseAmount` |  | |  |  |
+| `ManuallyEnteredWhldgTaxAmount` |  | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

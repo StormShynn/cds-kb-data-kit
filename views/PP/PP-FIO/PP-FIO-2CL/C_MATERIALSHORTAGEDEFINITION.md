@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialShortageProfile` | `MaterialShortageProfile` |
-| key `MaterialShortageProfileCount` | `MaterialShortageProfileCount` |
-| `MaterialShortageDefinition` | `concat(MaterialShortageProfile, MaterialShortageProfileCount)` |
-| `DemandCategoryGroup` | `DemandCategoryGroup` |
-| `ReceiptCategoryGroup` | `ReceiptCategoryGroup` |
-| `EvaluationHorizonInDays` | `EvaluationHorizonInDays` |
-| `MaterialShortageDefinitionName` | `MaterialShortageDefinitionName` |
-| `UncoveredDemandIsCalculated` | `UncoveredDemandIsCalculated` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialShortageProfile` | ✓ | |  |  |
+| `MaterialShortageProfileCount` | ✓ | |  |  |
+| `MaterialShortageDefinition` |  | |  | `concat(MaterialShortageProfile, MaterialShortageProfileCount)` |
+| `DemandCategoryGroup` |  | |  |  |
+| `ReceiptCategoryGroup` |  | |  |  |
+| `EvaluationHorizonInDays` |  | |  |  |
+| `MaterialShortageDefinitionName` |  | |  |  |
+| `UncoveredDemandIsCalculated` |  | |  |  |
 
 ## Associations
 

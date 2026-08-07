@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CashFlowID` | `fqm_flow.flow_id` |
-| key `ValidFrom` | `fqm_flow.valid_from` |
-| `CompanyCode` | `fqm_flow.company_code` |
-| `OriginSystem` | `fqm_flow.origin_system` |
-| `OriginApplication` | `fqm_flow.origin_application` |
-| `OriginDocument` | `fqm_flow.origin_document_id` |
-| `OriginTransaction` | `fqm_flow.origin_transaction_id` |
-| `OriginTransactionQualifier` | `fqm_flow.origin_trans_qualifier` |
-| `CashFlow` | `fqm_flow.origin_flow_id` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CashFlowID` | ✓ | |  | `flow_id` |
+| `ValidFrom` | ✓ | |  | `valid_from` |
+| `CompanyCode` |  | |  | `company_code` |
+| `OriginSystem` |  | |  | `origin_system` |
+| `OriginApplication` |  | |  | `origin_application` |
+| `OriginDocument` |  | |  | `origin_document_id` |
+| `OriginTransaction` |  | |  | `origin_transaction_id` |
+| `OriginTransactionQualifier` |  | |  | `origin_trans_qualifier` |
+| `CashFlow` |  | |  | `origin_flow_id` |
 
 ## Source Code
 

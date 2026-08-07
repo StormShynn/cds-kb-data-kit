@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TrsyCshFlowDebtInvmtCode` | `cast(left(DomainValue.domvalue_l, 1) as ftr_debt_invest_indicator preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TrsyCshFlowDebtInvmtCode` | ✓ | |  | `cast(left(DomainValue.domvalue_l, 1) as ftr_debt_invest_indicator preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

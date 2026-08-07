@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallDelivConfStatus` | `statu` |
-| key `Language` | `spras` |
-| `OverallDelivConfStatusDesc` | `bezei` |
-| `_OverallDelivConfStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallDelivConfStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `OverallDelivConfStatusDesc` |  | |  | `bezei` |
+| `_OverallDelivConfStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

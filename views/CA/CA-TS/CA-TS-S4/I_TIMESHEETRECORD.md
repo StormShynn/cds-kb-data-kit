@@ -27,65 +27,65 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeSheetRecord` | `catsdb.counter` |
-| `PersonWorkAgreement` | `catsdb.pernr` |
-| `TimeSheetDate` | `catsdb.workdate` |
-| `WBSElementInternalID` | `cast(catsdb.rproj as ps_s4_pspnr preserving type)` |
-| `ActivityType` | `catsdb.lstar` |
-| `WorkItem` | `catsdb.work_item_id` |
-| `RecordedHours` | `catsdb.catshours` |
-| `HoursUnitOfMeasure` | `catsdb.meinh` |
-| `PurchaseOrder` | `catsdb.sebeln` |
-| `PurchaseOrderItem` | `catsdb.sebelp` |
-| `RecordedAmount` | `catsdb.catsamount` |
-| `Currency` | `catsdb.waers` |
-| `RecordedQuantity` | `catsdb.catsquantity` |
-| `UnitOfMeasure` | `catsdb.unit` |
-| `ReceiverCostCenter` | `catsdb.rkostl` |
-| `SenderCostCenter` | `catsdb.skostl` |
-| `InternalOrder` | `catsdb.raufnr` |
-| `ServiceDocumentType` | `catsdb.service_doc_type` |
-| `ServiceDocument` | `catsdb.service_doc_id` |
-| `ServiceDocumentItem` | `catsdb.service_doc_item_id` |
-| `ControllingArea` | `catsdb.kokrs` |
-| `TimeSheetTaskType` | `catsdb.tasktype` |
-| `TimeSheetTaskLevel` | `catsdb.tasklevel` |
-| `TimeSheetTaskComponent` | `catsdb.taskcomponent` |
-| `CompanyCode` | `catsdb.bukrs` |
-| `TimeSheetNote` | `catsdb.ltxa1` |
-| `TimeSheetStatus` | `catsdb.status` |
-| `RejectionReason` | `catsdb.reason` |
-| `TimeSheetPredecessorRecord` | `catsdb.refcounter` |
-| `TimeSheetCreationDate` | `catsdb.ersda` |
-| `TimeSheetEntryTime` | `catsdb.erstm` |
-| `CreatedByUser` | `catsdb.ernam` |
-| `LastChangedByUser` | `catsdb.aenam` |
-| `TimeSheetApprovedByUser` | `catsdb.apnam` |
-| `TimeSheetApprovedDate` | `catsdb.apdat` |
-| `TimeSheetLastChangedDate` | `catsdb.laeda` |
-| `TimeSheetLastChangedTime` | `catsdb.laetm` |
-| `AccountingIndicatorCode` | `catsdb.bemot` |
-| `WorkflowTaskInternalID` | `catsdb.workitemid` |
-| `TimeSheetWrkLocCode` | `catsdb.wtart` |
-| `TimeSheetOvertimeCategory` | `catsdb.overtimecat` |
-| `TimeSheetHasLongText` | `catsdb.longtext` |
-| `TimeSheetAccountingDocument` | `catsdb.belnr` |
-| `SenderPubSecFund` | `catsdb.s_fund` |
-| `SendingPubSecFunctionalArea` | `catsdb.s_func_area` |
-| `SenderPubSecGrant` | `catsdb.s_grant_nbr` |
-| `SenderPubSecBudgetPeriod` | `catsdb.sbudget_pd` |
-| `ReceiverPubSecFund` | `catsdb.fund` |
-| `ReceiverPubSecFuncnlArea` | `catsdb.func_area` |
-| `ReceiverPubSecGrant` | `catsdb.grant_nbr` |
-| `ReceiverPubSecBudgetPeriod` | `catsdb.budget_pd` |
-| `_TimeSheetRejReasonText` | *Association* |
-| `_TimeSheetStatusText` | *Association* |
-| `_TimeSheetWrkLoc` | *Association* |
-| `_TimeSheetTaskTypeText` | *Association* |
-| `_TimeSheetOvertimeCatText` | *Association* |
-| `_TimeSheetRecordLongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeSheetRecord` | ✓ | |  | `counter` |
+| `PersonWorkAgreement` |  | |  | `pernr` |
+| `TimeSheetDate` |  | |  | `workdate` |
+| `WBSElementInternalID` |  | |  | `cast(catsdb.rproj as ps_s4_pspnr preserving type)` |
+| `ActivityType` |  | |  | `lstar` |
+| `WorkItem` |  | |  | `work_item_id` |
+| `RecordedHours` |  | |  | `catshours` |
+| `HoursUnitOfMeasure` |  | |  | `meinh` |
+| `PurchaseOrder` |  | |  | `sebeln` |
+| `PurchaseOrderItem` |  | |  | `sebelp` |
+| `RecordedAmount` |  | |  | `catsamount` |
+| `Currency` |  | |  | `waers` |
+| `RecordedQuantity` |  | |  | `catsquantity` |
+| `UnitOfMeasure` |  | |  | `unit` |
+| `ReceiverCostCenter` |  | |  | `rkostl` |
+| `SenderCostCenter` |  | |  | `skostl` |
+| `InternalOrder` |  | |  | `raufnr` |
+| `ServiceDocumentType` |  | |  | `service_doc_type` |
+| `ServiceDocument` |  | |  | `service_doc_id` |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `TimeSheetTaskType` |  | |  | `tasktype` |
+| `TimeSheetTaskLevel` |  | |  | `tasklevel` |
+| `TimeSheetTaskComponent` |  | |  | `taskcomponent` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `TimeSheetNote` |  | |  | `ltxa1` |
+| `TimeSheetStatus` |  | |  | `status` |
+| `RejectionReason` |  | |  | `reason` |
+| `TimeSheetPredecessorRecord` |  | |  | `refcounter` |
+| `TimeSheetCreationDate` |  | |  | `ersda` |
+| `TimeSheetEntryTime` |  | |  | `erstm` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `TimeSheetApprovedByUser` |  | |  | `apnam` |
+| `TimeSheetApprovedDate` |  | |  | `apdat` |
+| `TimeSheetLastChangedDate` |  | |  | `laeda` |
+| `TimeSheetLastChangedTime` |  | |  | `laetm` |
+| `AccountingIndicatorCode` |  | |  | `bemot` |
+| `WorkflowTaskInternalID` |  | |  | `workitemid` |
+| `TimeSheetWrkLocCode` |  | |  | `wtart` |
+| `TimeSheetOvertimeCategory` |  | |  | `overtimecat` |
+| `TimeSheetHasLongText` |  | |  | `longtext` |
+| `TimeSheetAccountingDocument` |  | |  | `belnr` |
+| `SenderPubSecFund` |  | |  | `s_fund` |
+| `SendingPubSecFunctionalArea` |  | |  | `s_func_area` |
+| `SenderPubSecGrant` |  | |  | `s_grant_nbr` |
+| `SenderPubSecBudgetPeriod` |  | |  | `sbudget_pd` |
+| `ReceiverPubSecFund` |  | |  | `fund` |
+| `ReceiverPubSecFuncnlArea` |  | |  | `func_area` |
+| `ReceiverPubSecGrant` |  | |  | `grant_nbr` |
+| `ReceiverPubSecBudgetPeriod` |  | |  | `budget_pd` |
+| `_TimeSheetRejReasonText` | | ✓ | | |
+| `_TimeSheetStatusText` | | ✓ | | |
+| `_TimeSheetWrkLoc` | | ✓ | | |
+| `_TimeSheetTaskTypeText` | | ✓ | | |
+| `_TimeSheetOvertimeCatText` | | ✓ | | |
+| `_TimeSheetRecordLongText` | | ✓ | | |
 
 ## Associations
 

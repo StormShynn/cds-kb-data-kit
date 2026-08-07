@@ -30,98 +30,98 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `SupplierInvoice` |
-| key `FiscalYear` | `FiscalYear` |
-| `SupplierInvoiceWthnFiscalYear` | `cast( concat(SupplierInvoice , FiscalYear) as mmiv_belnr_gjahr_internal )` |
-| `CompanyCode` | `CompanyCode` |
-| `DocumentDate` | `DocumentDate` |
-| `PostingDate` | `PostingDate` |
-| `InvoiceReceiptDate` | `InvoiceReceiptDate` |
-| `SupplierInvoiceIDByInvcgParty` | `SupplierInvoiceIDByInvcgParty` |
-| `InvoicingParty` | `InvoicingParty` |
-| `IsInvoice` | `IsInvoice` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `InvoiceGrossAmount` | `InvoiceGrossAmount` |
-| `ExchangeRate` | `ExchangeRate` |
-| `AccountingDocumentType` | `AccountingDocumentType` |
-| `SupplierInvoiceStatus` | `SupplierInvoiceStatus` |
-| `SupplierInvoiceOrigin` | `SupplierInvoiceOrigin` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `InvoiceReference` | `InvoiceReference` |
-| `InvoiceReferenceFiscalYear` | `InvoiceReferenceFiscalYear` |
-| `AssignmentReference` | `AssignmentReference` |
-| `TaxIsCalculatedAutomatically` | `TaxIsCalculatedAutomatically` |
-| `BusinessPlace` | `BusinessPlace` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `SuplrInvcLstChgDteTmeTxt` | `cast( SuplrInvcLastChangeDateTime as mmiv_si_lastchangedatetime_txt )` |
-| `UnplannedDeliveryCost` | `UnplannedDeliveryCost` |
-| `UnplannedDeliveryCostTaxCode` | `UnplannedDeliveryCostTaxCode` |
-| `UnplndDelivCostTaxJurisdiction` | `UnplndDelivCostTaxJurisdiction` |
-| `DocumentHeaderText` | `DocumentHeaderText` |
-| `SupplierPostingLineItemText` | `SupplierPostingLineItemText` |
-| `PaymentTerms` | `PaymentTerms` |
-| `DueCalculationBaseDate` | `DueCalculationBaseDate` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `ManualCashDiscount` | `ManualCashDiscount` |
-| `FixedCashDiscount` | `FixedCashDiscount` |
-| `StateCentralBankPaymentReason` | `StateCentralBankPaymentReason` |
-| `SupplyingCountry` | `SupplyingCountry` |
-| `BPBankAccountInternalID` | `BPBankAccountInternalID` |
-| `PaymentMethod` | `PaymentMethod` |
-| `PaymentReference` | `PaymentReference` |
-| `PaytSlipWthRefSubscriber` | `PaytSlipWthRefSubscriber` |
-| `PaytSlipWthRefCheckDigit` | `PaytSlipWthRefCheckDigit` |
-| `PaytSlipWthRefReference` | `PaytSlipWthRefReference` |
-| `PaymentReason` | `PaymentReason` |
-| `ReverseDocument` | `ReverseDocument` |
-| `ReverseDocumentFiscalYear` | `ReverseDocumentFiscalYear` |
-| `SuplrInvcManuallyReducedAmount` | `SuplrInvcManuallyReducedAmount` |
-| `SuplrInvcAutomReducedAmount` | `SuplrInvcAutomReducedAmount` |
-| `TaxDeterminationDate` | `TaxDeterminationDate` |
-| `TaxReportingDate` | `TaxReportingDate` |
-| `TaxFulfillmentDate` | `TaxFulfillmentDate` |
-| `TaxCountry` | `TaxCountry` |
-| `UnplndDeliveryCostTaxCountry` | `UnplndDeliveryCostTaxCountry` |
-| `DeliveryOfGoodsReportingCntry` | `DeliveryOfGoodsReportingCntry` |
-| `SupplierVATRegistration` | `SupplierVATRegistration` |
-| `IsEUTriangularDeal` | `IsEUTriangularDeal` |
-| `SuplrInvcDebitCrdtCodeDelivery` | `SuplrInvcDebitCrdtCodeDelivery` |
-| `SuplrInvcDebitCrdtCodeReturns` | `SuplrInvcDebitCrdtCodeReturns` |
-| `ElectronicInvoiceUUID` | `ElectronicInvoiceUUID` |
-| `JrnlEntryCntrySpecificRef1` | `JrnlEntryCntrySpecificRef1` |
-| `JrnlEntryCntrySpecificDate1` | `JrnlEntryCntrySpecificDate1` |
-| `JrnlEntryCntrySpecificRef2` | `JrnlEntryCntrySpecificRef2` |
-| `JrnlEntryCntrySpecificDate2` | `JrnlEntryCntrySpecificDate2` |
-| `JrnlEntryCntrySpecificRef3` | `JrnlEntryCntrySpecificRef3` |
-| `JrnlEntryCntrySpecificDate3` | `JrnlEntryCntrySpecificDate3` |
-| `JrnlEntryCntrySpecificRef4` | `JrnlEntryCntrySpecificRef4` |
-| `JrnlEntryCntrySpecificDate4` | `JrnlEntryCntrySpecificDate4` |
-| `JrnlEntryCntrySpecificRef5` | `JrnlEntryCntrySpecificRef5` |
-| `JrnlEntryCntrySpecificDate5` | `JrnlEntryCntrySpecificDate5` |
-| `JrnlEntryCntrySpecificBP1` | `JrnlEntryCntrySpecificBP1` |
-| `JrnlEntryCntrySpecificBP2` | `JrnlEntryCntrySpecificBP2` |
-| `_CompanyCode` | *Association* |
-| `_Currency` | *Association* |
-| `_SuplrInvcItemPurOrdRefAPI01` | *Association* |
-| `_SuplrInvoiceItemGLAcctAPI01` | *Association* |
-| `_SuplrInvcItemMaterialAPI01` | *Association* |
-| `_SuplrInvcItemAssetAPI01` | *Association* |
-| `_SupplierInvoiceTaxAPI01` | *Association* |
-| `_SuplrInvcHeaderWhldgTaxAPI01` | *Association* |
-| `_SuplrInvcSeldPurgDocAPI01` | *Association* |
-| `_SuplrInvcSeldDelivNoteAPI01` | *Association* |
-| `_SuplrInvcSeldInbBOLAPI01` | *Association* |
-| `_SuplrInvcSeldSESLeanAPI01` | *Association* |
-| `_SuplrInvcItemCsgnmtAPI01` | *Association* |
-| `_SupplierInvoiceBlockAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `SupplierInvoiceWthnFiscalYear` |  | |  | `cast( concat(SupplierInvoice , FiscalYear) as mmiv_belnr_gjahr_internal )` |
+| `CompanyCode` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `InvoiceReceiptDate` |  | |  |  |
+| `SupplierInvoiceIDByInvcgParty` |  | |  |  |
+| `InvoicingParty` |  | |  |  |
+| `IsInvoice` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `InvoiceGrossAmount` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `AccountingDocumentType` |  | |  |  |
+| `SupplierInvoiceStatus` |  | |  |  |
+| `SupplierInvoiceOrigin` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `InvoiceReference` |  | |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `TaxIsCalculatedAutomatically` |  | |  |  |
+| `BusinessPlace` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `SuplrInvcLstChgDteTmeTxt` |  | |  | `cast( SuplrInvcLastChangeDateTime as mmiv_si_lastchangedatetime_txt )` |
+| `UnplannedDeliveryCost` |  | |  |  |
+| `UnplannedDeliveryCostTaxCode` |  | |  |  |
+| `UnplndDelivCostTaxJurisdiction` |  | |  |  |
+| `DocumentHeaderText` |  | |  |  |
+| `SupplierPostingLineItemText` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `DueCalculationBaseDate` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `ManualCashDiscount` |  | |  |  |
+| `FixedCashDiscount` |  | |  |  |
+| `StateCentralBankPaymentReason` |  | |  |  |
+| `SupplyingCountry` |  | |  |  |
+| `BPBankAccountInternalID` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `PaymentReference` |  | |  |  |
+| `PaytSlipWthRefSubscriber` |  | |  |  |
+| `PaytSlipWthRefCheckDigit` |  | |  |  |
+| `PaytSlipWthRefReference` |  | |  |  |
+| `PaymentReason` |  | |  |  |
+| `ReverseDocument` |  | |  |  |
+| `ReverseDocumentFiscalYear` |  | |  |  |
+| `SuplrInvcManuallyReducedAmount` |  | |  |  |
+| `SuplrInvcAutomReducedAmount` |  | |  |  |
+| `TaxDeterminationDate` |  | |  |  |
+| `TaxReportingDate` |  | |  |  |
+| `TaxFulfillmentDate` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `UnplndDeliveryCostTaxCountry` |  | |  |  |
+| `DeliveryOfGoodsReportingCntry` |  | |  |  |
+| `SupplierVATRegistration` |  | |  |  |
+| `IsEUTriangularDeal` |  | |  |  |
+| `SuplrInvcDebitCrdtCodeDelivery` |  | |  |  |
+| `SuplrInvcDebitCrdtCodeReturns` |  | |  |  |
+| `ElectronicInvoiceUUID` |  | |  |  |
+| `JrnlEntryCntrySpecificRef1` |  | |  |  |
+| `JrnlEntryCntrySpecificDate1` |  | |  |  |
+| `JrnlEntryCntrySpecificRef2` |  | |  |  |
+| `JrnlEntryCntrySpecificDate2` |  | |  |  |
+| `JrnlEntryCntrySpecificRef3` |  | |  |  |
+| `JrnlEntryCntrySpecificDate3` |  | |  |  |
+| `JrnlEntryCntrySpecificRef4` |  | |  |  |
+| `JrnlEntryCntrySpecificDate4` |  | |  |  |
+| `JrnlEntryCntrySpecificRef5` |  | |  |  |
+| `JrnlEntryCntrySpecificDate5` |  | |  |  |
+| `JrnlEntryCntrySpecificBP1` |  | |  |  |
+| `JrnlEntryCntrySpecificBP2` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_SuplrInvcItemPurOrdRefAPI01` | | ✓ | | |
+| `_SuplrInvoiceItemGLAcctAPI01` | | ✓ | | |
+| `_SuplrInvcItemMaterialAPI01` | | ✓ | | |
+| `_SuplrInvcItemAssetAPI01` | | ✓ | | |
+| `_SupplierInvoiceTaxAPI01` | | ✓ | | |
+| `_SuplrInvcHeaderWhldgTaxAPI01` | | ✓ | | |
+| `_SuplrInvcSeldPurgDocAPI01` | | ✓ | | |
+| `_SuplrInvcSeldDelivNoteAPI01` | | ✓ | | |
+| `_SuplrInvcSeldInbBOLAPI01` | | ✓ | | |
+| `_SuplrInvcSeldSESLeanAPI01` | | ✓ | | |
+| `_SuplrInvcItemCsgnmtAPI01` | | ✓ | | |
+| `_SupplierInvoiceBlockAPI01` | | ✓ | | |
 
 ## Associations
 

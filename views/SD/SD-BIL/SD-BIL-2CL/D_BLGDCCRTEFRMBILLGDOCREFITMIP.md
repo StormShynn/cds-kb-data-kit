@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ReferenceBillingDocumentItem` | `posnr_vf` |
-| `BillingQuantity` | `fkimg` |
-| `BillingQuantityUnit` | `vrkme` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceBillingDocumentItem` |  | |  | `posnr_vf` |
+| `BillingQuantity` |  | |  | `fkimg` |
+| `BillingQuantityUnit` |  | |  | `vrkme` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

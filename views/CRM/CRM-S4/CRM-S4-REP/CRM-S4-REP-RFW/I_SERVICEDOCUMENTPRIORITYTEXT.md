@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentPriority` | `priority` |
-| key `Language` | `langu` |
-| `ServiceDocumentPriorityName` | `txt_long` |
-| `_ServiceDocumentPriority` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentPriority` | ✓ | |  | `priority` |
+| `Language` | ✓ | |  | `langu` |
+| `ServiceDocumentPriorityName` |  | |  | `txt_long` |
+| `_ServiceDocumentPriority` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

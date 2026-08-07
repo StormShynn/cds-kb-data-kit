@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingDocumentCatGroup` | `cast( dd07l.domvalue_l as fis_bstat_grp )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingDocumentCatGroup` | ✓ | |  | `cast( dd07l.domvalue_l as fis_bstat_grp )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

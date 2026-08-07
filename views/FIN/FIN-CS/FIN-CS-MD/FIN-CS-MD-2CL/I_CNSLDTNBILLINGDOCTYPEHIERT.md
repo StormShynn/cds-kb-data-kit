@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `CnsldtnBillingDocTypeHierarchy` | `cast(_HierarchyText.UniversalHierarchy as fincs_billingdoctypehierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnBillingDocTypeHierText` | `cast(_HierarchyText.UniversalHierarchyText as fincs_billingdoctypehiertext preserving type )` |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `CnsldtnBillingDocTypeHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_billingdoctypehierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnBillingDocTypeHierText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_billingdoctypehiertext preserving type )` |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

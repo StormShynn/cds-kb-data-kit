@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurgAggrgdProdMarketabilitySts` | `cast( dd07l.domvalue_l as mmpur_pc_total_status_pma )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurgAggrgdProdMarketabilitySts` | ✓ | |  | `cast( dd07l.domvalue_l as mmpur_pc_total_status_pma )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

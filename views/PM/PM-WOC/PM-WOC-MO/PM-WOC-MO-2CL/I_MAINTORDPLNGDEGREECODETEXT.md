@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceOrderPlanningCode` | `cast(dd07t.domvalue_l as auf_plknz)` |
-| key `Language` | `dd07t.ddlanguage` |
-| `MaintOrderPlanningCodeName` | `dd07t.ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceOrderPlanningCode` | ✓ | |  | `cast(dd07t.domvalue_l as auf_plknz)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `MaintOrderPlanningCodeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

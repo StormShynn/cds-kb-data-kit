@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `_MaintenanceObjectListItem.Equipment` |
-| key `ManufacturingOrder` | `_MaintObjListManufacturingOrd.ManufacturingOrder` |
-| key `ManufacturingOrderItem` | `_MaintObjListManufacturingOrd.ManufacturingOrderItem` |
-| `Material` | `_MaintenanceObjectListItem.Material` |
-| `SerialNumber` | `_MaintenanceObjectListItem.SerialNumber` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
+| `ManufacturingOrder` | ✓ | | `_MaintObjListManufacturingOrd` | `ManufacturingOrder` |
+| `ManufacturingOrderItem` | ✓ | | `_MaintObjListManufacturingOrd` | `ManufacturingOrderItem` |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
 
 ## Source Code
 

@@ -29,43 +29,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMContextUUID` | `LglCntntMContextUUID` |
-| `LglCntntMContext` | `LglCntntMContext` |
-| `LglCntntMContextVersion` | `LglCntntMContextVersion` |
-| `LglCntntMContextTitle` | `LglCntntMContextTitle` |
-| `LglCntntMContextOwner` | `LglCntntMContextOwner` |
-| `LglCntntMProfile` | `LglCntntMProfile` |
-| `LglCntntMContextStatus` | `LglCntntMContextStatus` |
-| `LglCntntMIntegrationType` | `LglCntntMIntegrationType` |
-| `LglCntntMContextValidFromDate` | `LglCntntMContextValidFromDate` |
-| `LglCntntMContextValidToDate` | `LglCntntMContextValidToDate` |
-| `LglCntntMCntxtLanguage` | `LglCntntMCntxtLanguage` |
-| `LglCntntMPrevCntxtVers` | `LglCntntMPrevCntxtVers` |
-| `LglCntntMCntxtIsReadOnly` | `LglCntntMCntxtIsReadOnly` |
-| `LglCntntMGovLaw` | `LglCntntMGovLaw` |
-| `LglCntntMCntxtAccessLvl` | `LglCntntMCntxtAccessLvl` |
-| `LglCntntMMainOrgType` | `LglCntntMMainOrgType` |
-| `LglCntntMMainOrgCoCode` | `LglCntntMMainOrgCoCode` |
-| `LglCntntMMainOrgSalesOrg` | `LglCntntMMainOrgSalesOrg` |
-| `LglCntntMMainOrgPurOrg` | `LglCntntMMainOrgPurOrg` |
-| `LglCntntMCreatedByUser` | `LglCntntMCreatedByUser` |
-| `LglCntntMCreatedUTCDateTime` | `LglCntntMCreatedUTCDateTime` |
-| `LglCntntMChangedByUser` | `LglCntntMChangedByUser` |
-| `LglCntntMChangedUTCDateTime` | `LglCntntMChangedUTCDateTime` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `_LCMCtxExtContactTP` | *Association* |
-| `_LCMCtxIntContactTP` | *Association* |
-| `_LCMContextEntityTP` | *Association* |
-| `_LCMContextRelationshipTP` | *Association* |
-| `_LCMContextObjectLinksTP` | *Association* |
-| `_LCMContextCategoryGroupTP` | *Association* |
-| `_LCMContextDateTP` | *Association* |
-| `_LglCntntMContextDocTP` | *Association* |
-| `_LglCntntMCntxtRnwlAndTermnTP` | *Association* |
-| `_LglCntntMCntxtPhseTP` | *Association* |
-| `_LglCntntMCntxtRuleGroupTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMContextUUID` | ✓ | |  |  |
+| `LglCntntMContext` |  | |  |  |
+| `LglCntntMContextVersion` |  | |  |  |
+| `LglCntntMContextTitle` |  | |  |  |
+| `LglCntntMContextOwner` |  | |  |  |
+| `LglCntntMProfile` |  | |  |  |
+| `LglCntntMContextStatus` |  | |  |  |
+| `LglCntntMIntegrationType` |  | |  |  |
+| `LglCntntMContextValidFromDate` |  | |  |  |
+| `LglCntntMContextValidToDate` |  | |  |  |
+| `LglCntntMCntxtLanguage` |  | |  |  |
+| `LglCntntMPrevCntxtVers` |  | |  |  |
+| `LglCntntMCntxtIsReadOnly` |  | |  |  |
+| `LglCntntMGovLaw` |  | |  |  |
+| `LglCntntMCntxtAccessLvl` |  | |  |  |
+| `LglCntntMMainOrgType` |  | |  |  |
+| `LglCntntMMainOrgCoCode` |  | |  |  |
+| `LglCntntMMainOrgSalesOrg` |  | |  |  |
+| `LglCntntMMainOrgPurOrg` |  | |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `_LCMCtxExtContactTP` | | ✓ | | |
+| `_LCMCtxIntContactTP` | | ✓ | | |
+| `_LCMContextEntityTP` | | ✓ | | |
+| `_LCMContextRelationshipTP` | | ✓ | | |
+| `_LCMContextObjectLinksTP` | | ✓ | | |
+| `_LCMContextCategoryGroupTP` | | ✓ | | |
+| `_LCMContextDateTP` | | ✓ | | |
+| `_LglCntntMContextDocTP` | | ✓ | | |
+| `_LglCntntMCntxtRnwlAndTermnTP` | | ✓ | | |
+| `_LglCntntMCntxtPhseTP` | | ✓ | | |
+| `_LglCntntMCntxtRuleGroupTP` | | ✓ | | |
 
 ## Source Code
 

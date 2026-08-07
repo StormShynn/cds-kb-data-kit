@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceQuotation` | `ServiceQuotation` |
-| key `SrvcDocAppointmentType` | `SrvcDocAppointmentType` |
-| `SrvcDocApptStartDateTime` | `SrvcDocApptStartDateTime` |
-| `SrvcDocApptEndDateTime` | `SrvcDocApptEndDateTime` |
-| `_ServiceQuotationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |
+| `SrvcDocAppointmentType` | ✓ | |  |  |
+| `SrvcDocApptStartDateTime` |  | |  |  |
+| `SrvcDocApptEndDateTime` |  | |  |  |
+| `_ServiceQuotationTP` | | ✓ | | |
 
 ## Source Code
 

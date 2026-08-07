@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDDocumentReason` | `augru` |
-| `RetroBillingUsage` | `vauna` |
-| `SelfBillingValueItem` | `vaugv` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDDocumentReason` | ✓ | |  | `augru` |
+| `RetroBillingUsage` |  | |  | `vauna` |
+| `SelfBillingValueItem` |  | |  | `vaugv` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

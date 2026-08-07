@@ -32,35 +32,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `project_code` | `project_code` |
-| key `code` | `code` |
-| `description` | `description` |
-| `status` | `status` |
-| `status_previous` | `status_previous` |
-| `progress` | `progress` |
-| `estimation` | `estimation` |
-| `time_unit` | `time_unit` |
-| `plan_end_date` | `plan_end_date` |
-| `plan_end_ts_utc` | `plan_end_ts_utc` |
-| `ended_on` | `ended_on` |
-| `secondsToDeadline` | `case when plan_end_ts_utc > 0 then case when ended_on > 0 then TSTMP_SECONDS_BETWEEN(ended_on,plan_end_ts_utc,'INITIAL') else TSTMP_SECONDS_BETWEEN(tstmp_current_utctimestamp(),plan_end_ts_utc,'INITIAL') end else 0 end` |
-| `functional_responsible` | `functional_responsible` |
-| `technical_responsible` | `technical_responsible` |
-| `crea_date_time` | `crea_date_time` |
-| `crea_uname` | `crea_uname` |
-| `lchg_date_time` | `lchg_date_time` |
-| `lchg_uname` | `lchg_uname` |
-| `_project` | *Association* |
-| `_functionalUserInfo` | *Association* |
-| `_technicalUserInfo` | *Association* |
-| `_timeUnit` | *Association* |
-| `_status` | *Association* |
-| `_transportRequests` | *Association* |
-| `_comments` | *Association* |
-| `_timeLog` | *Association* |
-| `_totalHours` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `project_code` | ✓ | |  |  |
+| `code` | ✓ | |  |  |
+| `description` |  | |  |  |
+| `status` |  | |  |  |
+| `status_previous` |  | |  |  |
+| `progress` |  | |  |  |
+| `estimation` |  | |  |  |
+| `time_unit` |  | |  |  |
+| `plan_end_date` |  | |  |  |
+| `plan_end_ts_utc` |  | |  |  |
+| `ended_on` |  | |  |  |
+| `secondsToDeadline` |  | |  | `case when plan_end_ts_utc > 0 then case when ended_on > 0 then TSTMP_SECONDS_BETWEEN(ended_on,plan_end_ts_utc,'INITIAL') else TSTMP_SECONDS_BETWEEN(tstmp_current_utctimestamp(),plan_end_ts_utc,'INITIAL') end else 0 end` |
+| `functional_responsible` |  | |  |  |
+| `technical_responsible` |  | |  |  |
+| `crea_date_time` |  | |  |  |
+| `crea_uname` |  | |  |  |
+| `lchg_date_time` |  | |  |  |
+| `lchg_uname` |  | |  |  |
+| `_project` | | ✓ | | |
+| `_functionalUserInfo` | | ✓ | | |
+| `_technicalUserInfo` | | ✓ | | |
+| `_timeUnit` | | ✓ | | |
+| `_status` | | ✓ | | |
+| `_transportRequests` | | ✓ | | |
+| `_comments` | | ✓ | | |
+| `_timeLog` | | ✓ | | |
+| `_totalHours` | | ✓ | | |
 
 ## Associations
 

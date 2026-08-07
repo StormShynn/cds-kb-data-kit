@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `BillOfOperationsType` | `cast(plnty as billofoperationstype preserving type)` |
-| `BillOfOperationsTypeName` | `txt` |
-| `_Language` | *Association* |
-| `_BillOfOperationsType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BillOfOperationsType` | ✓ | |  | `cast(plnty as billofoperationstype preserving type)` |
+| `BillOfOperationsTypeName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
 
 ## Associations
 

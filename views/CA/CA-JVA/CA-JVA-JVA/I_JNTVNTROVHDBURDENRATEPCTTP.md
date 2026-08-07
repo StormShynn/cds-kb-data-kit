@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenture` | `JointVenture` |
-| key `JointVentureBurdenRateType` | `JointVentureBurdenRateType` |
-| `JointVentureOvhdBurdenRatePct` | `JointVentureOvhdBurdenRatePct` |
-| `_JointVenture` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JointVentureBurdenRateType` | ✓ | |  |  |
+| `JointVentureOvhdBurdenRatePct` |  | |  |  |
+| `_JointVenture` | | ✓ | | |
 
 ## Source Code
 

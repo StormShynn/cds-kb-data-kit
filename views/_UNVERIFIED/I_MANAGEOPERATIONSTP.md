@@ -42,78 +42,78 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderInternalBillOfOperations` | `OrderInternalBillOfOperations` |
-| key `OrderIntBillOfOperationsItem` | `OrderIntBillOfOperationsItem` |
-| `ManufacturingOrder` | `cast(I_MfgOrderOperationCube.ManufacturingOrder as aufnr preserving type)` |
-| `ManufacturingOrderOperation` | `ManufacturingOrderOperation` |
-| `MfgOrderOperationText` | `MfgOrderOperationText` |
-| `ManufacturingOrderSubOperation` | `ManufacturingOrderSubOperation` |
-| `ManufacturingOrderSequence` | `ManufacturingOrderSequence` |
-| `ProductionPlant` | `ProductionPlant` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `WorkCenter` | `WorkCenter` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `ManufacturingOrderCategory` | `ManufacturingOrderCategory` |
-| `ManufacturingOrderType` | `ManufacturingOrderType` |
-| `ProductionSupervisor` | `ProductionSupervisor` |
-| `MRPController` | `MRPController` |
-| `MRPControllerName` | `_MRPController.MRPControllerName` |
-| `NumberOfConfirmationSlips` | `NumberOfConfirmationSlips` |
-| `OperationImportance` | `OperationImportance` |
-| `NumberOfTimeTickets` | `NumberOfTimeTickets` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `OperationIsClosed` | `OperationIsClosed` |
-| `OperationIsTechlyCompleted` | `OperationIsTechlyCompleted` |
-| `OperationIsDelivered` | `OperationIsDelivered` |
-| `OperationIsPartiallyDelivered` | `OperationIsPartiallyDelivered` |
-| `OperationIsPartiallyConfirmed` | `OperationIsPartiallyConfirmed` |
-| `OperationIsPrinted` | `OperationIsPrinted` |
-| `OperationIsReleased` | `OperationIsReleased` |
-| `OperationIsCreated` | `OperationIsCreated` |
-| `OperationIsScheduled` | `OperationIsScheduled` |
-| `OperationIsConfirmed` | `OperationIsConfirmed` |
-| `OperationIsDeleted` | `OperationIsDeleted` |
-| `OpPlannedTotalQuantity` | `OpPlannedTotalQuantity` |
-| `OpTotalConfirmedYieldQty` | `OpTotalConfirmedYieldQty` |
-| `OperationReferenceQuantity` | `OperationReferenceQuantity` |
-| `OpPlannedScrapQuantity` | `OpPlannedScrapQuantity` |
-| `OperationConfirmedReworkQty` | `OperationConfirmedReworkQty` |
-| `OpTotalConfirmedScrapQty` | `OpTotalConfirmedScrapQty` |
-| `OperationUnit` | `OperationUnit` |
-| `OpLtstSchedldExecStrtDte` | `OpLtstSchedldExecStrtDte` |
-| `OpLtstSchedldExecStrtTme` | `OpLtstSchedldExecStrtTme` |
-| `OpLtstSchedldExecEndDte` | `OpLtstSchedldExecEndDte` |
-| `OpLtstSchedldExecEndTme` | `OpLtstSchedldExecEndTme` |
-| `OpActualExecutionStartDate` | `OpActualExecutionStartDate` |
-| `OpActualExecutionStartTime` | `OpActualExecutionStartTime` |
-| `OpActualExecutionEndDate` | `OpActualExecutionEndDate` |
-| `OpActualExecutionEndTime` | `OpActualExecutionEndTime` |
-| `OperationExecutionEndIsLate` | `OperationExecutionEndIsLate` |
-| `OperationExecutionStartIsLate` | `OperationExecutionStartIsLate` |
-| `OperationYieldDeviationQty` | `OperationYieldDeviationQty` |
-| `PlannedCurrentStrtDateDvtnDurn` | `PlannedCurrentStrtDateDvtnDurn` |
-| `PlannedActualStartDateDvtnDurn` | `PlannedActualStartDateDvtnDurn` |
-| `PlannedCurrentEndDateDvtnDurn` | `PlannedCurrentEndDateDvtnDurn` |
-| `PlannedActualEndDateDvtnDurn` | `PlannedActualEndDateDvtnDurn` |
-| `ExecutionStartLatenessInHours` | `case OperationExecutionStartIsLate when 'X' then case when (OperationIsPartiallyConfirmed = ' ' and OperationIsReleased = 'X' and OperationIsConfirmed = '' and (PlannedCurrentStrtDateDvtnDurn > 0 )) then (cast(PlannedCurrentStrtDateDvtnDurn as abap.fltp) / 3600.00) else (cast(PlannedActualStartDateDvtnDurn as abap.fltp) / 3600.00) end else 0 end` |
-| `ExecutionEndLatenessInHours` | `case OperationExecutionEndIsLate when 'X' then case when (OperationIsConfirmed = ' ' and OperationIsPartiallyConfirmed = 'X' and OperationIsConfirmed = '' and (PlannedCurrentEndDateDvtnDurn > 0 ) ) then (cast(PlannedCurrentEndDateDvtnDurn as abap.fltp) / 3600.00) else (cast(PlannedActualEndDateDvtnDurn as abap.fltp) / 3600.00) end else 0 end` |
-| `ExecutionStartLatenessInMins` | `case OperationExecutionStartIsLate when 'X' then case when (OperationIsPartiallyConfirmed = ' ' and OperationIsReleased = 'X' and OperationIsConfirmed = '' and (PlannedCurrentStrtDateDvtnDurn > 0 )) then (cast(PlannedCurrentStrtDateDvtnDurn as abap.fltp) / 60.00) else (cast(PlannedActualStartDateDvtnDurn as abap.fltp) / 60.00) end else 0 end` |
-| `ExecutionEndLatenessInMinutes` | `case OperationExecutionEndIsLate when 'X' then case when (OperationIsConfirmed = ' ' and OperationIsPartiallyConfirmed = 'X' and OperationIsConfirmed = '' and (PlannedCurrentEndDateDvtnDurn > 0 ) ) then (cast(PlannedCurrentEndDateDvtnDurn as abap.fltp) / 60.00) else (cast(PlannedActualEndDateDvtnDurn as abap.fltp) / 60.00) end else 0 end` |
-| `OperationStartDeviationDays` | `cast(PlannedCurrentStrtDateDvtnDurn as abap.fltp)/ 86400.00` |
-| `PlannedEndDateDvtnInDays` | `cast(PlannedCurrentEndDateDvtnDurn as abap.fltp)/ 86400.00` |
-| `_WorkCenterBySemanticKey` | *Association* |
-| `_ProductionPlant` | *Association* |
-| `_OperationUnit` | *Association* |
-| `_OrdInternalBillOfOperations` | *Association* |
-| `_MfgOrderSequence` | *Association* |
-| `_MfgOrderCategory` | *Association* |
-| `_MfgOrderType` | *Association* |
-| `_ProductionSupervisor` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_WorkCenterType` | *Association* |
-| `_MRPController` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderInternalBillOfOperations` | ✓ | |  |  |
+| `OrderIntBillOfOperationsItem` | ✓ | |  |  |
+| `ManufacturingOrder` |  | |  | `cast(I_MfgOrderOperationCube.ManufacturingOrder as aufnr preserving type)` |
+| `ManufacturingOrderOperation` |  | |  |  |
+| `MfgOrderOperationText` |  | |  |  |
+| `ManufacturingOrderSubOperation` |  | |  |  |
+| `ManufacturingOrderSequence` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ManufacturingOrderType` |  | |  |  |
+| `ProductionSupervisor` |  | |  |  |
+| `MRPController` |  | |  |  |
+| `MRPControllerName` |  | | `_MRPController` | `MRPControllerName` |
+| `NumberOfConfirmationSlips` |  | |  |  |
+| `OperationImportance` |  | |  |  |
+| `NumberOfTimeTickets` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `OperationIsClosed` |  | |  |  |
+| `OperationIsTechlyCompleted` |  | |  |  |
+| `OperationIsDelivered` |  | |  |  |
+| `OperationIsPartiallyDelivered` |  | |  |  |
+| `OperationIsPartiallyConfirmed` |  | |  |  |
+| `OperationIsPrinted` |  | |  |  |
+| `OperationIsReleased` |  | |  |  |
+| `OperationIsCreated` |  | |  |  |
+| `OperationIsScheduled` |  | |  |  |
+| `OperationIsConfirmed` |  | |  |  |
+| `OperationIsDeleted` |  | |  |  |
+| `OpPlannedTotalQuantity` |  | |  |  |
+| `OpTotalConfirmedYieldQty` |  | |  |  |
+| `OperationReferenceQuantity` |  | |  |  |
+| `OpPlannedScrapQuantity` |  | |  |  |
+| `OperationConfirmedReworkQty` |  | |  |  |
+| `OpTotalConfirmedScrapQty` |  | |  |  |
+| `OperationUnit` |  | |  |  |
+| `OpLtstSchedldExecStrtDte` |  | |  |  |
+| `OpLtstSchedldExecStrtTme` |  | |  |  |
+| `OpLtstSchedldExecEndDte` |  | |  |  |
+| `OpLtstSchedldExecEndTme` |  | |  |  |
+| `OpActualExecutionStartDate` |  | |  |  |
+| `OpActualExecutionStartTime` |  | |  |  |
+| `OpActualExecutionEndDate` |  | |  |  |
+| `OpActualExecutionEndTime` |  | |  |  |
+| `OperationExecutionEndIsLate` |  | |  |  |
+| `OperationExecutionStartIsLate` |  | |  |  |
+| `OperationYieldDeviationQty` |  | |  |  |
+| `PlannedCurrentStrtDateDvtnDurn` |  | |  |  |
+| `PlannedActualStartDateDvtnDurn` |  | |  |  |
+| `PlannedCurrentEndDateDvtnDurn` |  | |  |  |
+| `PlannedActualEndDateDvtnDurn` |  | |  |  |
+| `ExecutionStartLatenessInHours` |  | |  | `case OperationExecutionStartIsLate when 'X' then case when (OperationIsPartiallyConfirmed = ' ' and OperationIsReleased = 'X' and OperationIsConfirmed = '' and (PlannedCurrentStrtDateDvtnDurn > 0 )) then (cast(PlannedCurrentStrtDateDvtnDurn as abap.fltp) / 3600.00) else (cast(PlannedActualStartDateDvtnDurn as abap.fltp) / 3600.00) end else 0 end` |
+| `ExecutionEndLatenessInHours` |  | |  | `case OperationExecutionEndIsLate when 'X' then case when (OperationIsConfirmed = ' ' and OperationIsPartiallyConfirmed = 'X' and OperationIsConfirmed = '' and (PlannedCurrentEndDateDvtnDurn > 0 ) ) then (cast(PlannedCurrentEndDateDvtnDurn as abap.fltp) / 3600.00) else (cast(PlannedActualEndDateDvtnDurn as abap.fltp) / 3600.00) end else 0 end` |
+| `ExecutionStartLatenessInMins` |  | |  | `case OperationExecutionStartIsLate when 'X' then case when (OperationIsPartiallyConfirmed = ' ' and OperationIsReleased = 'X' and OperationIsConfirmed = '' and (PlannedCurrentStrtDateDvtnDurn > 0 )) then (cast(PlannedCurrentStrtDateDvtnDurn as abap.fltp) / 60.00) else (cast(PlannedActualStartDateDvtnDurn as abap.fltp) / 60.00) end else 0 end` |
+| `ExecutionEndLatenessInMinutes` |  | |  | `case OperationExecutionEndIsLate when 'X' then case when (OperationIsConfirmed = ' ' and OperationIsPartiallyConfirmed = 'X' and OperationIsConfirmed = '' and (PlannedCurrentEndDateDvtnDurn > 0 ) ) then (cast(PlannedCurrentEndDateDvtnDurn as abap.fltp) / 60.00) else (cast(PlannedActualEndDateDvtnDurn as abap.fltp) / 60.00) end else 0 end` |
+| `OperationStartDeviationDays` |  | |  | `cast(PlannedCurrentStrtDateDvtnDurn as abap.fltp)/ 86400.00` |
+| `PlannedEndDateDvtnInDays` |  | |  | `cast(PlannedCurrentEndDateDvtnDurn as abap.fltp)/ 86400.00` |
+| `_WorkCenterBySemanticKey` | | ✓ | | |
+| `_ProductionPlant` | | ✓ | | |
+| `_OperationUnit` | | ✓ | | |
+| `_OrdInternalBillOfOperations` | | ✓ | | |
+| `_MfgOrderSequence` | | ✓ | | |
+| `_MfgOrderCategory` | | ✓ | | |
+| `_MfgOrderType` | | ✓ | | |
+| `_ProductionSupervisor` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
+| `_MRPController` | | ✓ | | |
 
 ## Associations
 

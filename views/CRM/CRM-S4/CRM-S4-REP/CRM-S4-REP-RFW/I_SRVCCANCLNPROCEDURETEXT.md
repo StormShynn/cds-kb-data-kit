@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcCanclnProcedure` | `cancproc` |
-| key `Language` | `langu` |
-| `SrvcCanclnProcedureText` | `cancproc_t` |
-| `_SrvcCanclnProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcCanclnProcedure` | ✓ | |  | `cancproc` |
+| `Language` | ✓ | |  | `langu` |
+| `SrvcCanclnProcedureText` |  | |  | `cancproc_t` |
+| `_SrvcCanclnProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

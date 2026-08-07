@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlan` | `MaintenancePlan` |
-| key `MaintenancePlanCycle` | `MaintenancePlanCycle` |
-| `MaintenanceStrategy` | `MaintenanceStrategy` |
-| `MaintPlanCycRcrrcIntervalQty` | `MaintPlanCycRcrrcIntervalQty` |
-| `MaintPlanCycRcrrcIntervalUnit` | `MaintPlanCycRcrrcIntervalUnit` |
-| `MaintPlanCycleDesc` | `MaintPlanCycleDesc` |
-| `MeasuringPoint` | `MeasuringPoint` |
-| `MaintPlanCycleStartOffsetValue` | `MaintPlanCycleStartOffsetValue` |
-| `MaintCycleNextPlndCntrRdng` | `MaintCycleNextPlndCntrRdng` |
-| `MaintenancePlanCycleIsInactive` | `MaintenancePlanCycleIsInactive` |
-| `CycleSetSequence` | `CycleSetSequence` |
-| `CycleSetSequenceRepeatFactor` | `CycleSetSequenceRepeatFactor` |
-| `MaintPlnStrtBufDurationInDays` | `MaintPlnStrtBufDurationInDays` |
-| `CharcValueUnit` | `CharcValueUnit` |
-| `_MaintenancePlan` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlan` | ✓ | |  |  |
+| `MaintenancePlanCycle` | ✓ | |  |  |
+| `MaintenanceStrategy` |  | |  |  |
+| `MaintPlanCycRcrrcIntervalQty` |  | |  |  |
+| `MaintPlanCycRcrrcIntervalUnit` |  | |  |  |
+| `MaintPlanCycleDesc` |  | |  |  |
+| `MeasuringPoint` |  | |  |  |
+| `MaintPlanCycleStartOffsetValue` |  | |  |  |
+| `MaintCycleNextPlndCntrRdng` |  | |  |  |
+| `MaintenancePlanCycleIsInactive` |  | |  |  |
+| `CycleSetSequence` |  | |  |  |
+| `CycleSetSequenceRepeatFactor` |  | |  |  |
+| `MaintPlnStrtBufDurationInDays` |  | |  |  |
+| `CharcValueUnit` |  | |  |  |
+| `_MaintenancePlan` | | ✓ | | |
 
 ## Source Code
 

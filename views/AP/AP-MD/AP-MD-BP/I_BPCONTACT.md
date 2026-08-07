@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RelationshipNumber` | `but050.relnr` |
-| key `BusinessPartnerCompany` | `partner1` |
-| key `BusinessPartnerPerson` | `partner2` |
-| key `ValidityEndDate` | `date_to` |
-| `ValidityStartDate` | `date_from` |
-| `IsStandardRelationship` | `xdfrel` |
-| `RelationshipCategory` | `reltyp` |
-| `_BusinessPartnerCompany` | *Association* |
-| `_BusinessPartnerPerson` | *Association* |
-| `_ContactAddress` | *Association* |
-| `_ContactRelationship` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RelationshipNumber` | ✓ | |  | `relnr` |
+| `BusinessPartnerCompany` | ✓ | |  | `partner1` |
+| `BusinessPartnerPerson` | ✓ | |  | `partner2` |
+| `ValidityEndDate` | ✓ | |  | `date_to` |
+| `ValidityStartDate` |  | |  | `date_from` |
+| `IsStandardRelationship` |  | |  | `xdfrel` |
+| `RelationshipCategory` |  | |  | `reltyp` |
+| `_BusinessPartnerCompany` | | ✓ | | |
+| `_BusinessPartnerPerson` | | ✓ | | |
+| `_ContactAddress` | | ✓ | | |
+| `_ContactRelationship` | | ✓ | | |
 
 ## Associations
 

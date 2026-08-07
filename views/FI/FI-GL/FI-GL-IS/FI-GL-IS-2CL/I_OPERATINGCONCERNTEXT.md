@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OperatingConcern` | `erkrs` |
-| key `Language` | `spras` |
-| `OperatingConcernName` | `erkrs_bz` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OperatingConcern` | ✓ | |  | `erkrs` |
+| `Language` | ✓ | |  | `spras` |
+| `OperatingConcernName` |  | |  | `erkrs_bz` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

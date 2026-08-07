@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADefaultClearingRstrcnCode` | `cast( left( dd07l.domvalue_l, 1 ) as augrs_def_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADefaultClearingRstrcnCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as augrs_def_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

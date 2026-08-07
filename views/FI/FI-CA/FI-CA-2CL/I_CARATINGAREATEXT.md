@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CARatingArea` | `tfk_ra_def_t.rating_area` |
-| key `Language` | `tfk_ra_def_t.langu` |
-| `CARatingAreaDescription` | `tfk_ra_def_t.ra_txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CARatingArea` | ✓ | |  | `rating_area` |
+| `Language` | ✓ | |  | `langu` |
+| `CARatingAreaDescription` |  | |  | `ra_txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

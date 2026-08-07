@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventoryStockType` | `cast(substring( domvalue_l, 1, 2 ) as nsdm_lbbsa)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryStockType` | ✓ | |  | `cast(substring( domvalue_l, 1, 2 ) as nsdm_lbbsa)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

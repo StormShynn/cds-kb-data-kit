@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProductionVersionLock` | `mksp` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionVersionLock` |  | |  | `mksp` |
 
 ## Source Code
 

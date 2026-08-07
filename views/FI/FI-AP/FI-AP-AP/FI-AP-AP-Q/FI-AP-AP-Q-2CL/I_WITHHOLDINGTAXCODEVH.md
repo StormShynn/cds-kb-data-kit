@@ -30,24 +30,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `Country` |
-| key `WithholdingTaxType` | `WithholdingTaxType` |
-| key `WithholdingTaxCode` | `WithholdingTaxCode` |
-| `OfficialWhldgTaxCode` | `OfficialWhldgTaxCode` |
-| `WhldgTaxRelevantPercent` | `WhldgTaxRelevantPercent` |
-| `WithholdingTaxPercent` | `WithholdingTaxPercent` |
-| `WhldgTaxCalcFormulaIsUsed` | `WhldgTaxCalcFormulaIsUsed` |
-| `Region` | `Region` |
-| `ProvincialTaxCode` | `ProvincialTaxCode` |
-| `WithholdingTaxIncomeType` | `WithholdingTaxIncomeType` |
-| `WithholdingTaxPostingRule` | `WithholdingTaxPostingRule` |
-| `WhldgTaxReferenceText` | `WhldgTaxReferenceText` |
-| `_Country` | *Association* |
-| `_TaxCodeText` | *Association* |
-| `_RegionText` | *Association* |
-| `_IncomeTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  |  |
+| `WithholdingTaxType` | ✓ | |  |  |
+| `WithholdingTaxCode` | ✓ | |  |  |
+| `OfficialWhldgTaxCode` |  | |  |  |
+| `WhldgTaxRelevantPercent` |  | |  |  |
+| `WithholdingTaxPercent` |  | |  |  |
+| `WhldgTaxCalcFormulaIsUsed` |  | |  |  |
+| `Region` |  | |  |  |
+| `ProvincialTaxCode` |  | |  |  |
+| `WithholdingTaxIncomeType` |  | |  |  |
+| `WithholdingTaxPostingRule` |  | |  |  |
+| `WhldgTaxReferenceText` |  | |  |  |
+| `_Country` | | ✓ | | |
+| `_TaxCodeText` | | ✓ | | |
+| `_RegionText` | | ✓ | | |
+| `_IncomeTypeText` | | ✓ | | |
 
 ## Associations
 

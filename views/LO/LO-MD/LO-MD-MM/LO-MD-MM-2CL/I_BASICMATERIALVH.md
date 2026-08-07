@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BasicMaterial` | `BasicMaterial` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BasicMaterial` | ✓ | |  |  |
 
 ## Source Code
 

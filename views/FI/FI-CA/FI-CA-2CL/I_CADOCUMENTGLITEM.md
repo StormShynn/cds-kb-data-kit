@@ -29,131 +29,131 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentNumber` | `opbel` |
-| key `CAGLItemNumber` | `opupk` |
-| `CompanyCode` | `bukrs` |
-| `BusinessArea` | `gsber` |
-| `BusinessPlace` | `bupla` |
-| `Segment` | `segment` |
-| `ProfitCenter` | `prctr` |
-| `PartnerCompany` | `vbund` |
-| `GLAccount` | `hkont` |
-| `WBSElementInternalID` | `cast(ps_psp_pnr as ps_s4_pspnr preserving type )` |
-| `ValueDate` | `valut` |
-| `CAExchangeRate` | `cast( abs( kursf ) as fis_absolute_exchangerate preserving type )` |
-| `ExchRateIsIndirectQuotation` | `cast( case when kursf < 0 then 'X' when kursf >= 0 then ' ' end as fis_indirect_quotation preserving type )` |
-| `TransactionCurrency` | `_CADocument.TransactionCurrency` |
-| `Currency` | `_CompanyCode.Currency` |
-| `CAAmountInLocalCurrency` | `betrh` |
-| `CAAmountInTransactionCurrency` | `betrw` |
-| `CAAmountInSecondCurrency` | `betr2` |
-| `CAAmountInThirdCurrency` | `betr3` |
-| `CAAccountAssignmentCategory` | `kontt` |
-| `CAAccountAssignment` | `kontl` |
-| `CostCenter` | `kostl` |
-| `SalesOrder` | `kdauf` |
-| `SalesOrderItem` | `kdpos` |
-| `CAReconciliationKey` | `fikey` |
-| `CAInternalPostingReasonCode` | `intbu` |
-| `CANegativePostingControlCode` | `negbu` |
-| `CAGLPostingCurrency` | `pswsl` |
-| `LedgerGroup` | `ldgrp` |
-| `ProfitabilitySegment_2` | `paobjnr` |
-| `ProfitabilitySegmentChanges` | `pasubnr` |
-| `PlanningLevel` | `fdlev` |
-| `CARepetitionGroup` | `whgrp` |
-| `CATransactionKeyAccountDetn` | `ktosl` |
-| `ConditionType` | `kschl` |
-| `CAIsSeparateLineItemInGL` | `xeiph` |
-| `QuantityInBaseUnit` | `menge` |
-| `BaseUnit` | `meins` |
-| `CAGroupingKeyDocumentItems` | `psgrp` |
-| `TaxCode` | `mwskz` |
-| `CASupplementaryTaxCode` | `mwszkz` |
-| `CAWithholdingTaxSupplement` | `qssew` |
-| `CAOtherTaxCode` | `strkz` |
-| `CAGroupingCodeForTaxItems` | `txgrp` |
-| `TaxJurisdiction` | `txjcd` |
-| `CAEnteredTaxJurisdictionCode` | `txjco` |
-| `CATaxJurisdictionLevelCounter` | `txcnt` |
-| `CATaxExceptionID` | `txexk` |
-| `CATaxDate` | `txdat` |
-| `CATaxBaseAmountInLocalCurrency` | `sbash` |
-| `CATaxBaseAmount` | `sbasw` |
-| `CANonDeductibleTxAmtInDocCrcy` | `ndtax` |
-| `CANonDeductibleTxAmtInLoclCrcy` | `ndtxh` |
-| `CAContainsNonDeductibleInptTax` | `xndtx` |
-| `CATaxRate` | `stprz` |
-| `GrossIncomeTaxActivityCode` | `gricd` |
-| `EmploymentTaxDistributionType` | `gityp` |
-| `CATaxPortionInLocalCurrency` | `sctax` |
-| `CATaxPortionInTransCurrency` | `sttax` |
-| `CATaxIsCalculatedExternally` | `xustpd` |
-| `CAAltvExchangeRateSetCode` | `xdexr` |
-| `TaxCountry` | `tax_country` |
-| `TransToTaxCntryCrcyCnvrsnFctr` | `taxc_factor` |
-| `CAIsCashFlowItem` | `xcsha` |
-| `CACashFlowAccount` | `reacc` |
-| `CACashFlowCompanyCode` | `rebuk` |
-| `HouseBank` | `hbkid` |
-| `HouseBankAccount` | `hktid` |
-| `QuantitySignCode` | `squan` |
-| `BankStatementShortID` | `kukey` |
-| `BankStatementItem` | `esnum` |
-| `CashManagementLinkType` | `ltype` |
-| `CashManagementLink` | `lnkid` |
-| `CAItmIsCreatedByPostgInterface` | `xintb` |
-| `CAStatusOfEuroConversion` | `eurou` |
-| `CAProfitAnalysisUpdtIsDirect` | `xcopa` |
-| `CAInvcgGroupingKey` | `invgr` |
-| `CACtrlFieldForAcctAssgmtDistr` | `aasta` |
-| `CAUpdateMethodForFundsMgmt` | `fmtyp` |
-| `OriginalFinancialMgmtArea` | `origfikrs` |
-| `OriglYearForFinMgmtAcctAssgmt` | `budgetyear` |
-| `EarmarkedFundsDocument` | `kblnr` |
-| `ChartOfAccounts` | `_CompanyCode.ChartOfAccounts` |
-| `Country` | `_CompanyCode.Country` |
-| `TaxCalculationProcedure` | `_CompanyCode._Country.TaxCalculationProcedure` |
-| `ProfitabilitySegment` | `cast( case when paobjnr > '9999999999' then '9999999999' else lpad( paobjnr, 10, '0' ) end as rkeobjnr_numc )` |
-| `CAAltvExchangeRateForTaxItem` | `xdexr` |
-| `CATaxItemHasAltvExchangeRate` | `xdexr` |
-| `EarmarkedFunds` | `kblnr` |
-| `_AcctAssgmtCat` | `_CAAccountAssignmentCategory` |
-| `_CompCode` | `_CompanyCode` |
-| `_CompCodeCashFlow` | `_CashFlowCompanyCode` |
-| `_OtherTaxCode` | `_CAOtherTaxCode` |
-| `_WhldgTaxSuplmnt` | `_CAWithholdingTaxSupplement` |
-| `_BusinessArea` | *Association* |
-| `_CAAccountAssignmentCategory` | *Association* |
-| `_CAAcctAssgmtDistrCode` | *Association* |
-| `_CAAcctDetnTransKey` | *Association* |
-| `_CAAltvExchangeRateSetCode` | *Association* |
-| `_CADocument` | *Association* |
-| `_CAEuroConversionStatus` | *Association* |
-| `_CAIntPostingReasonCode` | *Association* |
-| `_CANegativePostingCtrlCode` | *Association* |
-| `_CANonDcblInputTaxCode` | *Association* |
-| `_CAOtherTaxCode` | *Association* |
-| `_CAWithholdingTaxSupplement` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_CashFlowCompanyCode` | *Association* |
-| `_Country` | *Association* |
-| `_TaxCountry` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_GLPostingCurrency` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_GLAccount` | *Association* |
-| `_CashFlowAccount` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_PartnerCompany` | *Association* |
-| `_Segment` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_DocHeader` | *Association* |
-| `_GLAccountInCompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  | `opbel` |
+| `CAGLItemNumber` | ✓ | |  | `opupk` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `BusinessArea` |  | |  | `gsber` |
+| `BusinessPlace` |  | |  | `bupla` |
+| `Segment` |  | |  | `segment` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `PartnerCompany` |  | |  | `vbund` |
+| `GLAccount` |  | |  | `hkont` |
+| `WBSElementInternalID` |  | |  | `cast(ps_psp_pnr as ps_s4_pspnr preserving type )` |
+| `ValueDate` |  | |  | `valut` |
+| `CAExchangeRate` |  | |  | `cast( abs( kursf ) as fis_absolute_exchangerate preserving type )` |
+| `ExchRateIsIndirectQuotation` |  | |  | `cast( case when kursf < 0 then 'X' when kursf >= 0 then ' ' end as fis_indirect_quotation preserving type )` |
+| `TransactionCurrency` |  | | `_CADocument` | `TransactionCurrency` |
+| `Currency` |  | | `_CompanyCode` | `Currency` |
+| `CAAmountInLocalCurrency` |  | |  | `betrh` |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` |
+| `CAAmountInSecondCurrency` |  | |  | `betr2` |
+| `CAAmountInThirdCurrency` |  | |  | `betr3` |
+| `CAAccountAssignmentCategory` |  | |  | `kontt` |
+| `CAAccountAssignment` |  | |  | `kontl` |
+| `CostCenter` |  | |  | `kostl` |
+| `SalesOrder` |  | |  | `kdauf` |
+| `SalesOrderItem` |  | |  | `kdpos` |
+| `CAReconciliationKey` |  | |  | `fikey` |
+| `CAInternalPostingReasonCode` |  | |  | `intbu` |
+| `CANegativePostingControlCode` |  | |  | `negbu` |
+| `CAGLPostingCurrency` |  | |  | `pswsl` |
+| `LedgerGroup` |  | |  | `ldgrp` |
+| `ProfitabilitySegment_2` |  | |  | `paobjnr` |
+| `ProfitabilitySegmentChanges` |  | |  | `pasubnr` |
+| `PlanningLevel` |  | |  | `fdlev` |
+| `CARepetitionGroup` |  | |  | `whgrp` |
+| `CATransactionKeyAccountDetn` |  | |  | `ktosl` |
+| `ConditionType` |  | |  | `kschl` |
+| `CAIsSeparateLineItemInGL` |  | |  | `xeiph` |
+| `QuantityInBaseUnit` |  | |  | `menge` |
+| `BaseUnit` |  | |  | `meins` |
+| `CAGroupingKeyDocumentItems` |  | |  | `psgrp` |
+| `TaxCode` |  | |  | `mwskz` |
+| `CASupplementaryTaxCode` |  | |  | `mwszkz` |
+| `CAWithholdingTaxSupplement` |  | |  | `qssew` |
+| `CAOtherTaxCode` |  | |  | `strkz` |
+| `CAGroupingCodeForTaxItems` |  | |  | `txgrp` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `CAEnteredTaxJurisdictionCode` |  | |  | `txjco` |
+| `CATaxJurisdictionLevelCounter` |  | |  | `txcnt` |
+| `CATaxExceptionID` |  | |  | `txexk` |
+| `CATaxDate` |  | |  | `txdat` |
+| `CATaxBaseAmountInLocalCurrency` |  | |  | `sbash` |
+| `CATaxBaseAmount` |  | |  | `sbasw` |
+| `CANonDeductibleTxAmtInDocCrcy` |  | |  | `ndtax` |
+| `CANonDeductibleTxAmtInLoclCrcy` |  | |  | `ndtxh` |
+| `CAContainsNonDeductibleInptTax` |  | |  | `xndtx` |
+| `CATaxRate` |  | |  | `stprz` |
+| `GrossIncomeTaxActivityCode` |  | |  | `gricd` |
+| `EmploymentTaxDistributionType` |  | |  | `gityp` |
+| `CATaxPortionInLocalCurrency` |  | |  | `sctax` |
+| `CATaxPortionInTransCurrency` |  | |  | `sttax` |
+| `CATaxIsCalculatedExternally` |  | |  | `xustpd` |
+| `CAAltvExchangeRateSetCode` |  | |  | `xdexr` |
+| `TaxCountry` |  | |  | `tax_country` |
+| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  | `taxc_factor` |
+| `CAIsCashFlowItem` |  | |  | `xcsha` |
+| `CACashFlowAccount` |  | |  | `reacc` |
+| `CACashFlowCompanyCode` |  | |  | `rebuk` |
+| `HouseBank` |  | |  | `hbkid` |
+| `HouseBankAccount` |  | |  | `hktid` |
+| `QuantitySignCode` |  | |  | `squan` |
+| `BankStatementShortID` |  | |  | `kukey` |
+| `BankStatementItem` |  | |  | `esnum` |
+| `CashManagementLinkType` |  | |  | `ltype` |
+| `CashManagementLink` |  | |  | `lnkid` |
+| `CAItmIsCreatedByPostgInterface` |  | |  | `xintb` |
+| `CAStatusOfEuroConversion` |  | |  | `eurou` |
+| `CAProfitAnalysisUpdtIsDirect` |  | |  | `xcopa` |
+| `CAInvcgGroupingKey` |  | |  | `invgr` |
+| `CACtrlFieldForAcctAssgmtDistr` |  | |  | `aasta` |
+| `CAUpdateMethodForFundsMgmt` |  | |  | `fmtyp` |
+| `OriginalFinancialMgmtArea` |  | |  | `origfikrs` |
+| `OriglYearForFinMgmtAcctAssgmt` |  | |  | `budgetyear` |
+| `EarmarkedFundsDocument` |  | |  | `kblnr` |
+| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` |
+| `Country` |  | | `_CompanyCode` | `Country` |
+| `TaxCalculationProcedure` |  | | `_CompanyCode._Country` | `TaxCalculationProcedure` |
+| `ProfitabilitySegment` |  | |  | `cast( case when paobjnr > '9999999999' then '9999999999' else lpad( paobjnr, 10, '0' ) end as rkeobjnr_numc )` |
+| `CAAltvExchangeRateForTaxItem` |  | |  | `xdexr` |
+| `CATaxItemHasAltvExchangeRate` |  | |  | `xdexr` |
+| `EarmarkedFunds` |  | |  | `kblnr` |
+| `_AcctAssgmtCat` |  | |  | `_CAAccountAssignmentCategory` |
+| `_CompCode` |  | |  | `_CompanyCode` |
+| `_CompCodeCashFlow` |  | |  | `_CashFlowCompanyCode` |
+| `_OtherTaxCode` |  | |  | `_CAOtherTaxCode` |
+| `_WhldgTaxSuplmnt` |  | |  | `_CAWithholdingTaxSupplement` |
+| `_BusinessArea` | | ✓ | | |
+| `_CAAccountAssignmentCategory` | | ✓ | | |
+| `_CAAcctAssgmtDistrCode` | | ✓ | | |
+| `_CAAcctDetnTransKey` | | ✓ | | |
+| `_CAAltvExchangeRateSetCode` | | ✓ | | |
+| `_CADocument` | | ✓ | | |
+| `_CAEuroConversionStatus` | | ✓ | | |
+| `_CAIntPostingReasonCode` | | ✓ | | |
+| `_CANegativePostingCtrlCode` | | ✓ | | |
+| `_CANonDcblInputTaxCode` | | ✓ | | |
+| `_CAOtherTaxCode` | | ✓ | | |
+| `_CAWithholdingTaxSupplement` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_CashFlowCompanyCode` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_TaxCountry` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_GLPostingCurrency` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
+| `_CashFlowAccount` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_PartnerCompany` | | ✓ | | |
+| `_Segment` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_DocHeader` | | ✓ | | |
+| `_GLAccountInCompanyCode` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SLCConsistencyStatus` | `cast( domvalue_l as /srmsmc/consistency_stcd )` |
-| `_SLCConsistencyStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SLCConsistencyStatus` | ✓ | |  | `cast( domvalue_l as /srmsmc/consistency_stcd )` |
+| `_SLCConsistencyStatusText` | | ✓ | | |
 
 ## Associations
 

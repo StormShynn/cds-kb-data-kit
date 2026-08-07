@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AssetAcctTransClassfctn` | `movcat` |
-| key `Language` | `langu` |
-| `AssetAcctTransClassfctnName` | `cast (description as faa_movcat_text)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssetAcctTransClassfctn` | ✓ | |  | `movcat` |
+| `Language` | ✓ | |  | `langu` |
+| `AssetAcctTransClassfctnName` |  | |  | `cast (description as faa_movcat_text)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

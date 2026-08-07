@@ -27,37 +27,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtProcessType` | `SettlmtProcessType` |
-| `SettlmtProcessCat` | `SettlmtProcessCat` |
-| `SettlmtPartnerCat` | `SettlmtPartnerCat` |
-| `CrsCoSettlmtCat` | `CrsCoSettlmtCat` |
-| `SettlmtBusProcVar` | `SettlmtBusProcVar` |
-| `LogisticsDataEntryCat` | `LogisticsDataEntryCat` |
-| `SettlmtHasFullOrglData` | `SettlmtHasFullOrglData` |
-| `SettlmtTxCodeDetnCat` | `SettlmtTxCodeDetnCat` |
-| `SettlmtNoTxCodeErrHndlgCat` | `SettlmtNoTxCodeErrHndlgCat` |
-| `CustHasAltvAcctAssgmtFields` | `CustHasAltvAcctAssgmtFields` |
-| `SettlmtDocType` | `SettlmtDocType` |
-| `SettlmtApplStsGrp` | `SettlmtApplStsGrp` |
-| `SettlmtCollectionCategory` | `SettlmtCollectionCategory` |
-| `SettlmtProcTypeOfCollection` | `SettlmtProcTypeOfCollection` |
-| `SettlmtDocTypeOfCollection` | `SettlmtDocTypeOfCollection` |
-| `_SettlmtProcessCat` | *Association* |
-| `_SettlmtPartnerCat` | *Association* |
-| `_CrsCoSettlmtCat` | *Association* |
-| `_SettlmtBusProcVar` | *Association* |
-| `_LogisticsDataEntryCat` | *Association* |
-| `_SettlmtTxCodeDetnCat` | *Association* |
-| `_SettlmtNoTxCodeErrHndlgCat` | *Association* |
-| `_SettlmtDocType` | *Association* |
-| `_SettlmtStsApplStsGrp` | *Association* |
-| `_SettlmtApplStsGrpStsAssgmt` | *Association* |
-| `_SettlmtCollectionCategory` | *Association* |
-| `_SettlmtProcTypeOfCollection` | *Association* |
-| `_SettlmtDocTypeOfCollection` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtProcessType` | ✓ | |  |  |
+| `SettlmtProcessCat` |  | |  |  |
+| `SettlmtPartnerCat` |  | |  |  |
+| `CrsCoSettlmtCat` |  | |  |  |
+| `SettlmtBusProcVar` |  | |  |  |
+| `LogisticsDataEntryCat` |  | |  |  |
+| `SettlmtHasFullOrglData` |  | |  |  |
+| `SettlmtTxCodeDetnCat` |  | |  |  |
+| `SettlmtNoTxCodeErrHndlgCat` |  | |  |  |
+| `CustHasAltvAcctAssgmtFields` |  | |  |  |
+| `SettlmtDocType` |  | |  |  |
+| `SettlmtApplStsGrp` |  | |  |  |
+| `SettlmtCollectionCategory` |  | |  |  |
+| `SettlmtProcTypeOfCollection` |  | |  |  |
+| `SettlmtDocTypeOfCollection` |  | |  |  |
+| `_SettlmtProcessCat` | | ✓ | | |
+| `_SettlmtPartnerCat` | | ✓ | | |
+| `_CrsCoSettlmtCat` | | ✓ | | |
+| `_SettlmtBusProcVar` | | ✓ | | |
+| `_LogisticsDataEntryCat` | | ✓ | | |
+| `_SettlmtTxCodeDetnCat` | | ✓ | | |
+| `_SettlmtNoTxCodeErrHndlgCat` | | ✓ | | |
+| `_SettlmtDocType` | | ✓ | | |
+| `_SettlmtStsApplStsGrp` | | ✓ | | |
+| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | |
+| `_SettlmtCollectionCategory` | | ✓ | | |
+| `_SettlmtProcTypeOfCollection` | | ✓ | | |
+| `_SettlmtDocTypeOfCollection` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

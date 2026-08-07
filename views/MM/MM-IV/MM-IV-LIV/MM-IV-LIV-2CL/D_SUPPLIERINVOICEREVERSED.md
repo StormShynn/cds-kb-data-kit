@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `FiscalYear` | `gjahr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYear` |  | |  | `gjahr` |
 
 ## Source Code
 

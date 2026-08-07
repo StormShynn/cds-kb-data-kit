@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ExchangeRateType` | `ExchangeRateType` |
-| key `SourceCurrency` | `SourceCurrency` |
-| key `TargetCurrency` | `TargetCurrency` |
-| key `ExchangeRateEffectiveDate` | `ExchangeRateEffectiveDate` |
-| `ExchangeRateTypeForEdit` | `ExchangeRateTypeForEdit` |
-| `SourceCurrencyForEdit` | `SourceCurrencyForEdit` |
-| `TargetCurrencyForEdit` | `TargetCurrencyForEdit` |
-| `ExchangeRateEffectiveDateFoEd` | `ExchangeRateEffectiveDateFoEd` |
-| `ExchangeRate` | `ExchangeRate` |
-| `AlternativeExchangeRateType` | `AlternativeExchangeRateType` |
-| `NumberOfSourceCurrencyUnits` | `NumberOfSourceCurrencyUnits` |
-| `NumberOfTargetCurrencyUnits` | `NumberOfTargetCurrencyUnits` |
-| `ExchangeRateQuotation` | `ExchangeRateQuotation` |
-| `AbsoluteExchangeRate` | `AbsoluteExchangeRate` |
-| `DirectQuotedEffectiveExchRate` | `DirectQuotedEffectiveExchRate` |
-| `IndirectQuotedEffctvExchRate` | `IndirectQuotedEffctvExchRate` |
-| `CurrencyPair` | `CurrencyPair` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ExchangeRateType` | ✓ | |  |  |
+| `SourceCurrency` | ✓ | |  |  |
+| `TargetCurrency` | ✓ | |  |  |
+| `ExchangeRateEffectiveDate` | ✓ | |  |  |
+| `ExchangeRateTypeForEdit` |  | |  |  |
+| `SourceCurrencyForEdit` |  | |  |  |
+| `TargetCurrencyForEdit` |  | |  |  |
+| `ExchangeRateEffectiveDateFoEd` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `AlternativeExchangeRateType` |  | |  |  |
+| `NumberOfSourceCurrencyUnits` |  | |  |  |
+| `NumberOfTargetCurrencyUnits` |  | |  |  |
+| `ExchangeRateQuotation` |  | |  |  |
+| `AbsoluteExchangeRate` |  | |  |  |
+| `DirectQuotedEffectiveExchRate` |  | |  |  |
+| `IndirectQuotedEffctvExchRate` |  | |  |  |
+| `CurrencyPair` |  | |  |  |
 
 ## Source Code
 

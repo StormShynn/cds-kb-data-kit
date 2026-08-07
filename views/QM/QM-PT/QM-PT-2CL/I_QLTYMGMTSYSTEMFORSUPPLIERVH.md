@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityMgmtSystemForSupplier` | `QualityMgmtSystemForSupplier` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityMgmtSystemForSupplier` | ✓ | |  |  |
 
 ## Source Code
 

@@ -32,23 +32,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `Partner.BillingDocument` |
-| key `PartnerFunction` | `Partner.PartnerFunction` |
-| `Customer` | `Partner.Customer` |
-| `Supplier` | `Partner.Supplier` |
-| `Personnel` | `Partner.Personnel` |
-| `AddressID` | `Partner.AddressID` |
-| `AddressObjectType` | `Partner.AddressObjectType` |
-| `ContactPerson` | `Partner.ContactPerson` |
-| `AddressPersonID` | `Partner.AddressPersonID` |
-| `ReferenceBusinessPartner` | `Partner.ReferenceBusinessPartner` |
-| `SDDocPartnerAddressRefType` | `Partner.SDDocPartnerAddressRefType` |
-| `VATRegistration` | `Partner.VATRegistration` |
-| `UnloadingPointName` | `Partner.UnloadingPointName` |
-| `BPRefAddressIDForDocSpcfcAddr` | `Partner.BPRefAddressIDForDocSpcfcAddr` |
-| `_BillingDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `VATRegistration` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `_BillingDocument` | | ✓ | | |
 
 ## Associations
 

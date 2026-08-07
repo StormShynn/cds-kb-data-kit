@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PersonNameSupplementCode` | `PersonNameSupplementCode` |
-| `NameSupplement` | `NameSupplement` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PersonNameSupplementCode` | ✓ | |  |  |
+| `NameSupplement` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

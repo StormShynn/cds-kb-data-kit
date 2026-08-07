@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| key `Language` | `Language` |
-| `InspectionLotLongText` | `InspectionLotLongText` |
-| `LongTextCreatedByUser` | `LongTextCreatedByUser` |
-| `LongTextCreatedAt` | `LongTextCreatedAt` |
-| `LongTextLastChangedByUser` | `LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` | `LongTextLastChangedAt` |
-| `_InspectionLot` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `InspectionLotLongText` |  | |  |  |
+| `LongTextCreatedByUser` |  | |  |  |
+| `LongTextCreatedAt` |  | |  |  |
+| `LongTextLastChangedByUser` |  | |  |  |
+| `LongTextLastChangedAt` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

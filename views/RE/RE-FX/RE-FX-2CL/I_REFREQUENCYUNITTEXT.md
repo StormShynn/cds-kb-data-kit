@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `REFrequencyUnit` | `cast( dd07t.domvalue_l as recdvdmfrequencyunit )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `REFrequencyUnitName` | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | *Association* |
-| `_REFrequencyUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `REFrequencyUnit` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmfrequencyunit )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `REFrequencyUnitName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_REFrequencyUnit` | | ✓ | | |
 
 ## Associations
 

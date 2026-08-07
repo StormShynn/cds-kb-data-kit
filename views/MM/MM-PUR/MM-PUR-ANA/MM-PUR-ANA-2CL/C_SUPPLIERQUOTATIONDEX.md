@@ -31,59 +31,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierQuotation` | `SupplierQuotation.SupplierQuotation` |
-| `CompanyCode` | `SupplierQuotation.CompanyCode` |
-| `PurchasingDocumentCategory` | `SupplierQuotation.PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `SupplierQuotation.PurchasingDocumentType` |
-| `Supplier` | `SupplierQuotation.Supplier` |
-| `CreatedByUser` | `SupplierQuotation.CreatedByUser` |
-| `CreationDate` | `SupplierQuotation.CreationDate` |
-| `LastChangeDateTime` | `SupplierQuotation.LastChangeDateTime` |
-| `Language` | `SupplierQuotation.Language` |
-| `DocumentCurrency` | `SupplierQuotation.DocumentCurrency` |
-| `IncotermsClassification` | `SupplierQuotation.IncotermsClassification` |
-| `IncotermsTransferLocation` | `SupplierQuotation.IncotermsTransferLocation` |
-| `IncotermsVersion` | `SupplierQuotation.IncotermsVersion` |
-| `IncotermsLocation1` | `SupplierQuotation.IncotermsLocation1` |
-| `IncotermsLocation2` | `SupplierQuotation.IncotermsLocation2` |
-| `PaymentTerms` | `SupplierQuotation.PaymentTerms` |
-| `CashDiscount1Days` | `SupplierQuotation.CashDiscount1Days` |
-| `CashDiscount2Days` | `SupplierQuotation.CashDiscount2Days` |
-| `CashDiscount1Percent` | `SupplierQuotation.CashDiscount1Percent` |
-| `CashDiscount2Percent` | `SupplierQuotation.CashDiscount2Percent` |
-| `NetPaymentDays` | `SupplierQuotation.NetPaymentDays` |
-| `PricingProcedure` | `SupplierQuotation.PricingProcedure` |
-| `PricingDocument` | `SupplierQuotation.PurchasingDocumentCondition` |
-| `PurchasingOrganization` | `SupplierQuotation.PurchasingOrganization` |
-| `PurchasingGroup` | `SupplierQuotation.PurchasingGroup` |
-| `PurchasingDocumentOrderDate` | `SupplierQuotation.PurchasingDocumentOrderDate` |
-| `RequestForQuotation` | `SupplierQuotation.RequestForQuotation` |
-| `SupplierQuotationExternalID` | `SupplierQuotation.SupplierQuotationExternalID` |
-| `QuotationSubmissionDate` | `SupplierQuotation.QuotationSubmissionDate` |
-| `QuotationLatestSubmissionDate` | `SupplierQuotation.QuotationLatestSubmissionDate` |
-| `BindingPeriodValidityEndDate` | `SupplierQuotation.BindingPeriodValidityEndDate` |
-| `ExchangeRate` | `SupplierQuotation.ExchangeRate` |
-| `ExchangeRateIsFixed` | `SupplierQuotation.ExchangeRateIsFixed` |
-| `QtnLifecycleStatus` | `SupplierQuotation.QTNLifecycleStatus` |
-| `FollowOnDocumentCategory` | `SupplierQuotation.FollowOnDocumentCategory` |
-| `PurgDocFollowOnDocumentType` | `SupplierQuotation.FollowOnDocumentType` |
-| `IsEndOfPurposeBlocked` | `SupplierQuotation.IsEndOfPurposeBlocked` |
-| `_RequestForQuotation` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_PurchasingDocumentCategory` | *Association* |
-| `_PurchasingDocumentType` | *Association* |
-| `_Supplier` | *Association* |
-| `_Language` | *Association* |
-| `_Currency` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_IncotermsVersion` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_FollowOnDocumentCategory` | *Association* |
-| `_PurgDocFollowOnDocumentType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierQuotation` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `Language` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `PricingProcedure` |  | |  |  |
+| `PricingDocument` |  | |  | `PurchasingDocumentCondition` |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingDocumentOrderDate` |  | |  |  |
+| `RequestForQuotation` |  | |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `QuotationLatestSubmissionDate` |  | |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `QtnLifecycleStatus` |  | |  | `QTNLifecycleStatus` |
+| `FollowOnDocumentCategory` |  | |  |  |
+| `PurgDocFollowOnDocumentType` |  | |  | `FollowOnDocumentType` |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `_RequestForQuotation` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_PurchasingDocumentCategory` | | ✓ | | |
+| `_PurchasingDocumentType` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_IncotermsVersion` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_FollowOnDocumentCategory` | | ✓ | | |
+| `_PurgDocFollowOnDocumentType` | | ✓ | | |
 
 ## Associations
 

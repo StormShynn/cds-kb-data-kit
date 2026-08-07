@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DefectCodeGroup` | `cast( qpcd.codegruppe as vdm_qfegrp preserving type )` |
-| key `DefectCode` | `cast( qpcd.code as vdm_qfecod preserving type )` |
-| `CodeIsInactive` | `case qpcd.inaktiv when ' ' then cast( ' ' as vdm_qm_codeisinactive preserving type ) else cast( 'X' as vdm_qm_codeisinactive preserving type ) end` |
-| `DefectClass` | `qpcd.fehlklasse` |
-| `CodeGroupStatus` | `_DefectCodeGroup.CodeGroupStatus` |
-| `_DefectCodeGroup` | *Association* |
-| `_Text` | *Association* |
-| `_DefectClass` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DefectCodeGroup` | ✓ | |  | `cast( qpcd.codegruppe as vdm_qfegrp preserving type )` |
+| `DefectCode` | ✓ | |  | `cast( qpcd.code as vdm_qfecod preserving type )` |
+| `CodeIsInactive` |  | |  | `case qpcd.inaktiv when ' ' then cast( ' ' as vdm_qm_codeisinactive preserving type ) else cast( 'X' as vdm_qm_codeisinactive preserving type ) end` |
+| `DefectClass` |  | |  | `fehlklasse` |
+| `CodeGroupStatus` |  | | `_DefectCodeGroup` | `CodeGroupStatus` |
+| `_DefectCodeGroup` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_DefectClass` | | ✓ | | |
 
 ## Associations
 

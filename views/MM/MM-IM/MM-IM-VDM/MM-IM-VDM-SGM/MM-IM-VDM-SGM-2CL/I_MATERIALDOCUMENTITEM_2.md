@@ -32,157 +32,157 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| `Material` | `Material` |
-| `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `StorageType` | `StorageType` |
-| `StorageBin` | `StorageBin` |
-| `Batch` | `Batch` |
-| `ShelfLifeExpirationDate` | `ShelfLifeExpirationDate` |
-| `ManufactureDate` | `ManufactureDate` |
-| `Supplier` | `Supplier` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `WBSElementInternalID` | `cast(WBSElementInternalID as nsdm_wbselement_internal_id preserving type)` |
-| `Customer` | `Customer` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `InventoryStockType` | `InventoryStockType` |
-| `StockOwner` | `StockOwner` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `InventoryUsabilityCode` | `InventoryUsabilityCode` |
-| `QuantityInBaseUnit` | `QuantityInBaseUnit` |
-| `MaterialBaseUnit` | `MaterialBaseUnit` |
-| `QuantityInEntryUnit` | `QuantityInEntryUnit` |
-| `EntryUnit` | `EntryUnit` |
-| `PostingDate` | `PostingDate` |
-| `DocumentDate` | `DocumentDate` |
-| `ReservationItemRecordType` | `ReservationRecordType` |
-| `TotalGoodsMvtAmtInCCCrcy` | `TotalGoodsMvtAmtInCCCrcy` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `InventoryValuationType` | `InventoryValuationType` |
-| `ReservationIsFinallyIssued` | `ReservationIsFinallyIssued` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `OrderID` | `OrderID` |
-| `OrderItem` | `OrderItem` |
-| `MaintOrderRoutingNumber` | `MaintOrderRoutingNumber` |
-| `MaintOrderOperationCounter` | `MaintOrderOperationCounter` |
-| `Reservation` | `Reservation` |
-| `ReservationItem` | `ReservationItem` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| `ReversedMaterialDocumentYear` | `ReversedMaterialDocumentYear` |
-| `ReversedMaterialDocument` | `ReversedMaterialDocument` |
-| `ReversedMaterialDocumentItem` | `ReversedMaterialDocumentItem` |
-| `RvslOfGoodsReceiptIsAllowed` | `RvslOfGoodsReceiptIsAllowed` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `GoodsMovementReasonCode` | `GoodsMovementReasonCode` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `CostCenter` | `CostCenter` |
-| `GLAccount` | `GLAccount` |
-| `ServicePerformer` | `ServicePerformer` |
-| `PersonWorkAgreement` | `PersonWorkAgreement` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `WorkItem` | `WorkItem` |
-| `ServicesRenderedDate` | `ServicesRenderedDate` |
-| `IssgOrRcvgMaterial` | `IssgOrRcvgMaterial` |
-| `IssuingOrReceivingPlant` | `IssuingOrReceivingPlant` |
-| `IssuingOrReceivingStorageLoc` | `IssuingOrReceivingStorageLoc` |
-| `IssgOrRcvgBatch` | `IssgOrRcvgBatch` |
-| `IssgOrRcvgSpclStockInd` | `IssgOrRcvgSpclStockInd` |
-| `IssuingOrReceivingValType` | `IssuingOrReceivingValType` |
-| `CompanyCode` | `CompanyCode` |
-| `BusinessArea` | `BusinessArea` |
-| `ControllingArea` | `ControllingArea` |
-| `FiscalYearPeriod` | `FiscalYearPeriod` |
-| `FiscalYearVariant` | `FiscalYearVariant` |
-| `GoodsMovementRefDocType` | `GoodsMovementRefDocType` |
-| `IsCompletelyDelivered` | `IsCompletelyDelivered` |
-| `MaterialDocumentItemText` | `MaterialDocumentItemText` |
-| `IsAutomaticallyCreated` | `IsAutomaticallyCreated` |
-| `SerialNumbersAreCreatedAutomly` | `SerialNumbersAreCreatedAutomly` |
-| `GoodsReceiptType` | `GoodsReceiptType` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `MultiAcctAssgmtOriglMatlDocItm` | `MultiAcctAssgmtOriglMatlDocItm` |
-| `MultipleAccountAssignmentCode` | `MultipleAccountAssignmentCode` |
-| `GoodsMovementIsCancelled` | `GoodsMovementIsCancelled` |
-| `IssuingOrReceivingStockType` | `IssuingOrReceivingStockType` |
-| `ManufacturingOrder` | `ManufacturingOrder` |
-| `ManufacturingOrderItem` | `ManufacturingOrderItem` |
-| `MaterialDocumentLine` | `MaterialDocumentLine` |
-| `MaterialDocumentParentLine` | `MaterialDocumentParentLine` |
-| `SpecialStockIdfgSalesOrder` | `SpecialStockIdfgSalesOrder` |
-| `SpecialStockIdfgSalesOrderItem` | `SpecialStockIdfgSalesOrderItem` |
-| `SpecialStockIdfgWBSElement` | `cast(SpecialStockIdfgWBSElement as nsdm_wbselement_internal_id preserving type)` |
-| `QtyInPurchaseOrderPriceUnit` | `QtyInPurchaseOrderPriceUnit` |
-| `OrderPriceUnit` | `OrderPriceUnit` |
-| `QuantityInDeliveryQtyUnit` | `QuantityInDeliveryQtyUnit` |
-| `DeliveryQuantityUnit` | `DeliveryQuantityUnit` |
-| `ProfitCenter` | `ProfitCenter` |
-| `ProductStandardID` | `_Product.ProductStandardID` |
-| `GdsMvtExtAmtInCoCodeCrcy` | `GdsMvtExtAmtInCoCodeCrcy` |
-| `ReferenceDocumentFiscalYear` | `ReferenceDocumentFiscalYear` |
-| `InvtryMgmtReferenceDocument` | `InvtryMgmtReferenceDocument` |
-| `InvtryMgmtRefDocumentItem` | `InvtryMgmtRefDocumentItem` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `EWMStorageBin` | `EWMStorageBin` |
-| `MaterialDocumentPostingType` | `MaterialDocumentPostingType` |
-| `OriginalMaterialDocumentItem` | `OriginalMaterialDocumentItem` |
-| `_MaterialDocumentYear` | *Association* |
-| `_MaterialDocumentHeader` | *Association* |
-| `_ReversedMatDoc` | *Association* |
-| `_ReversedMatDocItem` | *Association* |
-| `_Material` | *Association* |
-| `_IssgOrRcvgMaterial` | *Association* |
-| `_Plant` | *Association* |
-| `_IssuingOrReceivingPlant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_IssuingOrReceivingStorageLoc` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_CustomerCompanyByPlant` | *Association* |
-| `_BPStockOwner` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_IssgOrRcvgSpclStockInd` | *Association* |
-| `_InventoryStockType` | *Association* |
-| `_InventoryValuationType` | *Association* |
-| `_GoodsMovementType` | *Association* |
-| `_DebitCreditCode` | *Association* |
-| `_StockType` | *Association* |
-| `_StockType_2` | *Association* |
-| `_MaterialBaseUnit` | *Association* |
-| `_EntryUnit` | *Association* |
-| `_GLAccount` | *Association* |
-| `_CostCenter` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_PersonWorkAgreement` | *Association* |
-| `_AccountAssignmentCategory` | *Association* |
-| `_WorkItem` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_SalesOrderScheduleLine` | *Association* |
-| `_WBSElement` | *Association* |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
-| `_ProjectNetwork` | *Association* |
-| `_LogisticsOrder` | *Association* |
-| `_ManufacturingOrder` | *Association* |
-| `_DeliveryDocument` | *Association* |
-| `_DeliveryDocumentItem` | *Association* |
-| `_GoodsMvtTypeBySpclStkIndT` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `StorageType` |  | |  |  |
+| `StorageBin` |  | |  |  |
+| `Batch` |  | |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |
+| `ManufactureDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `WBSElementInternalID` |  | |  | `cast(WBSElementInternalID as nsdm_wbselement_internal_id preserving type)` |
+| `Customer` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `InventoryStockType` |  | |  |  |
+| `StockOwner` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `InventoryUsabilityCode` |  | |  |  |
+| `QuantityInBaseUnit` |  | |  |  |
+| `MaterialBaseUnit` |  | |  |  |
+| `QuantityInEntryUnit` |  | |  |  |
+| `EntryUnit` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `ReservationItemRecordType` |  | |  | `ReservationRecordType` |
+| `TotalGoodsMvtAmtInCCCrcy` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `OrderItem` |  | |  |  |
+| `MaintOrderRoutingNumber` |  | |  |  |
+| `MaintOrderOperationCounter` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `ReservationItem` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `ReversedMaterialDocumentYear` |  | |  |  |
+| `ReversedMaterialDocument` |  | |  |  |
+| `ReversedMaterialDocumentItem` |  | |  |  |
+| `RvslOfGoodsReceiptIsAllowed` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `GoodsMovementReasonCode` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `PersonWorkAgreement` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `IssgOrRcvgMaterial` |  | |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  |  |
+| `IssgOrRcvgBatch` |  | |  |  |
+| `IssgOrRcvgSpclStockInd` |  | |  |  |
+| `IssuingOrReceivingValType` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `GoodsMovementRefDocType` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `MaterialDocumentItemText` |  | |  |  |
+| `IsAutomaticallyCreated` |  | |  |  |
+| `SerialNumbersAreCreatedAutomly` |  | |  |  |
+| `GoodsReceiptType` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `MultiAcctAssgmtOriglMatlDocItm` |  | |  |  |
+| `MultipleAccountAssignmentCode` |  | |  |  |
+| `GoodsMovementIsCancelled` |  | |  |  |
+| `IssuingOrReceivingStockType` |  | |  |  |
+| `ManufacturingOrder` |  | |  |  |
+| `ManufacturingOrderItem` |  | |  |  |
+| `MaterialDocumentLine` |  | |  |  |
+| `MaterialDocumentParentLine` |  | |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
+| `SpecialStockIdfgWBSElement` |  | |  | `cast(SpecialStockIdfgWBSElement as nsdm_wbselement_internal_id preserving type)` |
+| `QtyInPurchaseOrderPriceUnit` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `QuantityInDeliveryQtyUnit` |  | |  |  |
+| `DeliveryQuantityUnit` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ProductStandardID` |  | | `_Product` | `ProductStandardID` |
+| `GdsMvtExtAmtInCoCodeCrcy` |  | |  |  |
+| `ReferenceDocumentFiscalYear` |  | |  |  |
+| `InvtryMgmtReferenceDocument` |  | |  |  |
+| `InvtryMgmtRefDocumentItem` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `EWMStorageBin` |  | |  |  |
+| `MaterialDocumentPostingType` |  | |  |  |
+| `OriginalMaterialDocumentItem` |  | |  |  |
+| `_MaterialDocumentYear` | | ✓ | | |
+| `_MaterialDocumentHeader` | | ✓ | | |
+| `_ReversedMatDoc` | | ✓ | | |
+| `_ReversedMatDocItem` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_IssgOrRcvgMaterial` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_IssuingOrReceivingPlant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_IssuingOrReceivingStorageLoc` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_CustomerCompanyByPlant` | | ✓ | | |
+| `_BPStockOwner` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_IssgOrRcvgSpclStockInd` | | ✓ | | |
+| `_InventoryStockType` | | ✓ | | |
+| `_InventoryValuationType` | | ✓ | | |
+| `_GoodsMovementType` | | ✓ | | |
+| `_DebitCreditCode` | | ✓ | | |
+| `_StockType` | | ✓ | | |
+| `_StockType_2` | | ✓ | | |
+| `_MaterialBaseUnit` | | ✓ | | |
+| `_EntryUnit` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_PersonWorkAgreement` | | ✓ | | |
+| `_AccountAssignmentCategory` | | ✓ | | |
+| `_WorkItem` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_SalesOrderScheduleLine` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
+| `_ProjectNetwork` | | ✓ | | |
+| `_LogisticsOrder` | | ✓ | | |
+| `_ManufacturingOrder` | | ✓ | | |
+| `_DeliveryDocument` | | ✓ | | |
+| `_DeliveryDocumentItem` | | ✓ | | |
+| `_GoodsMvtTypeBySpclStkIndT` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

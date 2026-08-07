@@ -32,20 +32,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `ProductSalesOrg` | `ProductSalesOrg` |
-| key `ProductDistributionChnl` | `ProductDistributionChnl` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| `ProductSalesDeliveryText` | `ProductSalesDeliveryText` |
-| `ProdLongTxtCreationDateTime` | `ProdLongTxtCreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `ProdLongTxtLastChangedDateTime` | `ProdLongTxtLastChangedDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_ProductSalesDelivery` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ProductSalesOrg` | ✓ | |  |  |
+| `ProductDistributionChnl` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ProductSalesDeliveryText` |  | |  |  |
+| `ProdLongTxtCreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `ProdLongTxtLastChangedDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_ProductSalesDelivery` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Source Code
 

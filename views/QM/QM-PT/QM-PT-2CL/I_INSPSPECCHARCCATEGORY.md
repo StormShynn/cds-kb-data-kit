@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspSpecCharcCategory` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qrzwang preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspSpecCharcCategory` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qrzwang preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

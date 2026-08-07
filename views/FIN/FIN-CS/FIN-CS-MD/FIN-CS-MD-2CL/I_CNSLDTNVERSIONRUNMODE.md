@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnVersionRunMode` | `cast(left(_Domain.DomainValue, 1) as fincs_versionrunmode preserving type )` |
-| `DomainValue` | `_Domain.DomainValue` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnVersionRunMode` | ✓ | |  | `cast(left(_Domain.DomainValue, 1) as fincs_versionrunmode preserving type )` |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

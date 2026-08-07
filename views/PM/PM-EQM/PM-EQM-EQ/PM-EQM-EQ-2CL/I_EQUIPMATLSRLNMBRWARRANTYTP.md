@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `SerialNumber` | `SerialNumber` |
-| key `Equipment` | `Equipment` |
-| key `WarrantyCategory` | `WarrantyCategory` |
-| `WarrantyType` | `WarrantyType` |
-| `MasterWarranty` | `MasterWarranty` |
-| `WarrantyStartDate` | `WarrantyStartDate` |
-| `WarrantyEndDate` | `WarrantyEndDate` |
-| `WrntyIsInhtdFromSuperiorObject` | `WrntyIsInhtdFromSuperiorObject` |
-| `WrntyIsPassedOnToChildObject` | `WrntyIsPassedOnToChildObject` |
-| `_EquipmentMaterialSerialNumber` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `SerialNumber` | ✓ | |  |  |
+| `Equipment` | ✓ | |  |  |
+| `WarrantyCategory` | ✓ | |  |  |
+| `WarrantyType` |  | |  |  |
+| `MasterWarranty` |  | |  |  |
+| `WarrantyStartDate` |  | |  |  |
+| `WarrantyEndDate` |  | |  |  |
+| `WrntyIsInhtdFromSuperiorObject` |  | |  |  |
+| `WrntyIsPassedOnToChildObject` |  | |  |  |
+| `_EquipmentMaterialSerialNumber` | | ✓ | | |
 
 ## Source Code
 

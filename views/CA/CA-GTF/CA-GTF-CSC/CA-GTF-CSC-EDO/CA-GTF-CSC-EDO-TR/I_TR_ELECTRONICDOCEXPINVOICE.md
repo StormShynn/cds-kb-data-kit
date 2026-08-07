@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `TR_ElectronicDocUniqueID` | `TR_ElectronicDocUniqueID` |
-| `TR_ElectronicDocEnvelopeID` | `TR_ElectronicDocEnvelopeID` |
-| `TR_ElectronicDocInvoiceID` | `TR_ElectronicDocInvoiceID` |
-| `TR_EDocBusinessPartnerAlias` | `TR_EDocBusinessPartnerAlias` |
-| `TR_ElectronicDocTaxID` | `TR_ElectronicDocTaxID` |
-| `TR_EDocTradeRefNumber` | `TR_EDocTradeRefNumber` |
-| `TR_EDocCustomRegNumber` | `TR_EDocCustomRegNumber` |
-| `TR_EDocRealExportDate` | `TR_EDocRealExportDate` |
-| `ShipToParty` | `ShipToParty` |
-| `TR_EDocTaxExclusiveAmount` | `TR_EDocTaxExclusiveAmount` |
-| `TR_ElectronicDocTaxAmount` | `TR_ElectronicDocTaxAmount` |
-| `TR_EDocTaxInclusiveAmount` | `TR_EDocTaxInclusiveAmount` |
-| `SalesCurrency` | `SalesCurrency` |
-| `TR_EDocShipToPartyName` | `TR_EDocShipToPartyName` |
-| `TR_EDocCancelReason` | `TR_EDocCancelReason` |
-| `TR_EDocCancelReasonCode` | `TR_EDocCancelReasonCode` |
-| `TR_ElectronicDocCompanyCode` | `_ElectronicDoc.ElectronicDocCompanyCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `TR_ElectronicDocUniqueID` |  | |  |  |
+| `TR_ElectronicDocEnvelopeID` |  | |  |  |
+| `TR_ElectronicDocInvoiceID` |  | |  |  |
+| `TR_EDocBusinessPartnerAlias` |  | |  |  |
+| `TR_ElectronicDocTaxID` |  | |  |  |
+| `TR_EDocTradeRefNumber` |  | |  |  |
+| `TR_EDocCustomRegNumber` |  | |  |  |
+| `TR_EDocRealExportDate` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `TR_EDocTaxExclusiveAmount` |  | |  |  |
+| `TR_ElectronicDocTaxAmount` |  | |  |  |
+| `TR_EDocTaxInclusiveAmount` |  | |  |  |
+| `SalesCurrency` |  | |  |  |
+| `TR_EDocShipToPartyName` |  | |  |  |
+| `TR_EDocCancelReason` |  | |  |  |
+| `TR_EDocCancelReasonCode` |  | |  |  |
+| `TR_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |
 
 ## Associations
 

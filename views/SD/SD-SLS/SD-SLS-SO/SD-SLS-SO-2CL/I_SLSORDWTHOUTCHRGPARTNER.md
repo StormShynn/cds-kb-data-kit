@@ -29,41 +29,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutCharge` | `cast(Partner.SalesDocument as sales_order_without_charge preserving type)` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `ContactPerson` | `ContactPerson` |
-| `Partner` | `Partner` |
-| `FullName` | `FullName` |
-| `ReferenceBusinessPartner` | `ReferenceBusinessPartner` |
-| `AddressID` | `AddressID` |
-| `AddressPersonID` | `AddressPersonID` |
-| `AddressObjectType` | `AddressObjectType` |
-| `SDDocPartnerAddressRefType` | `SDDocPartnerAddressRefType` |
-| `BPAddrDeterminationTransaction` | `BPAddrDeterminationTransaction` |
-| `BPRefAddressIDForDocSpcfcAddr` | `BPRefAddressIDForDocSpcfcAddr` |
-| `PartnerIsOneTimeAccount` | `PartnerIsOneTimeAccount` |
-| `SDDocPartnerAddrIsDocSpecific` | `SDDocPartnerAddrIsDocSpecific` |
-| `VATRegistration` | `VATRegistration` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `FormOfAddress` | `FormOfAddress` |
-| `InternationalPhoneNumber` | `InternationalPhoneNumber` |
-| `InternationalMobilePhoneNumber` | `InternationalMobilePhoneNumber` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `EmailAddress` | `EmailAddress` |
-| `_SalesOrderWithoutCharge` | *Association* |
-| `_PartnerFunction` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_Address` | *Association* |
-| `_DfltAddrRprstn` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
-| `_BPRefAddressForDocSpcfcAddr` | *Association* |
-| `_OrgNamePostalAddress` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  | `cast(Partner.SalesDocument as sales_order_without_charge preserving type)` |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `Partner` |  | |  |  |
+| `FullName` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `PartnerIsOneTimeAccount` |  | |  |  |
+| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |
+| `VATRegistration` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `InternationalPhoneNumber` |  | |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `_SalesOrderWithoutCharge` | | ✓ | | |
+| `_PartnerFunction` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_DfltAddrRprstn` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_BPRefAddressForDocSpcfcAddr` | | ✓ | | |
+| `_OrgNamePostalAddress` | | ✓ | | |
 
 ## Associations
 

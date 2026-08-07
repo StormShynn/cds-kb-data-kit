@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingCostRateUUID` | `AccountingCostRateUUID` |
-| `CompanyCode` | `CompanyCode` |
-| `CostCenter` | `CostCenter` |
-| `ActivityType` | `ActivityType` |
-| `Currency` | `Currency` |
-| `ControllingArea` | `ControllingArea` |
-| `ValidityStartFiscalYear` | `ValidityStartFiscalYear` |
-| `ValidityStartFiscalPeriod` | `ValidityStartFiscalPeriod` |
-| `ValidityEndFiscalYear` | `ValidityEndFiscalYear` |
-| `ValidityEndFiscalPeriod` | `ValidityEndFiscalPeriod` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `CostRateFixedAmount` | `CostRateFixedAmount` |
-| `CostRateVarblAmount` | `CostRateVarblAmount` |
-| `CostRateScaleFactor` | `CostRateScaleFactor` |
-| `CostCtrActivityTypeQtyUnit` | `CostCtrActivityTypeQtyUnit` |
-| `Ledger` | `Ledger` |
-| `CostRateIsOverwriteMode` | `CostRateIsOverwriteMode` |
-| `_CompanyCode` | *Association* |
-| `_CostCtrActivityTypeText` | *Association* |
-| `_ControllingAreaText` | *Association* |
-| `_LedgerText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingCostRateUUID` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `Currency` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `CostRateFixedAmount` |  | |  |  |
+| `CostRateVarblAmount` |  | |  |  |
+| `CostRateScaleFactor` |  | |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `CostRateIsOverwriteMode` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_CostCtrActivityTypeText` | | ✓ | | |
+| `_ControllingAreaText` | | ✓ | | |
+| `_LedgerText` | | ✓ | | |
 
 ## Source Code
 

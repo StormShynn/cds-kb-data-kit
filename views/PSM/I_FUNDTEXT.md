@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialManagementArea` | `fikrs` |
-| key `Fund` | `fincode` |
-| key `Language` | `spras` |
-| `FundName` | `cast( bezeich as fmis_fund_name preserving type )` |
-| `FundDescription` | `cast( beschr as fmis_fund_description preserving type )` |
-| `_FinMgmtArea` | *Association* |
-| `_Language` | *Association* |
-| `_Fund` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  | `fikrs` |
+| `Fund` | ✓ | |  | `fincode` |
+| `Language` | ✓ | |  | `spras` |
+| `FundName` |  | |  | `cast( bezeich as fmis_fund_name preserving type )` |
+| `FundDescription` |  | |  | `cast( beschr as fmis_fund_description preserving type )` |
+| `_FinMgmtArea` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_Fund` | | ✓ | | |
 
 ## Associations
 

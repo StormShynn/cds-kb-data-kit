@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t009c.spras` |
-| key `FiscalYearVariant` | `cast( t009c.periv as fis_periv preserving type )` |
-| key `FiscalPeriod` | `t009c.poper` |
-| key `FiscalYear` | `cast( t009c.bdatj as gjahr preserving type )` |
-| `FiscalPeriodShortName` | `t009c.ktext` |
-| `FiscalPeriodName` | `t009c.ltext` |
-| `_FiscalYearVariant` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `FiscalYearVariant` | ✓ | |  | `cast( t009c.periv as fis_periv preserving type )` |
+| `FiscalPeriod` | ✓ | |  | `poper` |
+| `FiscalYear` | ✓ | |  | `cast( t009c.bdatj as gjahr preserving type )` |
+| `FiscalPeriodShortName` |  | |  | `ktext` |
+| `FiscalPeriodName` |  | |  | `ltext` |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

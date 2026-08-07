@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlannedOrder` | `PlannedOrder` |
-| `MRPController` | `MRPController` |
-| `MRPPlant` | `MRPPlant` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlannedOrder` | ✓ | |  |  |
+| `MRPController` |  | |  |  |
+| `MRPPlant` |  | |  |  |
 
 ## Source Code
 

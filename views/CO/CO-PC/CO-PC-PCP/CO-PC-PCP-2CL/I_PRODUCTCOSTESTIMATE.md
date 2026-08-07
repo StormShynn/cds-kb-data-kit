@@ -29,111 +29,111 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingReferenceObject` | `CostingReferenceObject` |
-| key `CostEstimate` | `CostEstimate` |
-| key `CostingType` | `CostingType` |
-| key `CostingDate` | `CostingDate` |
-| key `CostingVersion` | `CostingVersion` |
-| key `ValuationVariant` | `ValuationVariant` |
-| key `CostIsEnteredManually` | `CostIsEnteredManually` |
-| `Product` | `Product` |
-| `Plant` | `Plant` |
-| `ValuationArea` | `ValuationArea` |
-| `ValuationType` | `ValuationType` |
-| `ControllingArea` | `ControllingArea` |
-| `CompanyCode` | `_ValuationArea.CompanyCode` |
-| `CostEstimateValidityStartDate` | `CostEstimateValidityStartDate` |
-| `CostEstimateValidityEndDate` | `CostEstimateValidityEndDate` |
-| `ValuationDate` | `ValuationDate` |
-| `QuantityStructureDate` | `QuantityStructureDate` |
-| `ProductionVersion` | `ProductionVersion` |
-| `BillOfMaterial` | `BillOfMaterial` |
-| `ProductBOMUsage` | `ProductBOMUsage` |
-| `AlternativeBillOfMaterial` | `AlternativeBillOfMaterial` |
-| `TaskListGroup` | `TaskListGroup` |
-| `TaskListType` | `TaskListType` |
-| `TaskListGroupCounter` | `TaskListGroupCounter` |
-| `CostingItemIsProductComp` | `CostingItemIsProductComp` |
-| `CostEstIsMarkedForDeletion` | `CostEstIsMarkedForDeletion` |
-| `CostingLotSize` | `CostingLotSize` |
-| `ValuationQuantityUnit` | `ValuationQuantityUnit` |
-| `CostEstimateCreatedByUser` | `CostEstimateCreatedByUser` |
-| `AdditiveCostCreatedByUser` | `AdditiveCostCreatedByUser` |
-| `CostEstimateCreationDate` | `CostEstimateCreationDate` |
-| `CostEstimateMarkingDate` | `CostEstimateMarkingDate` |
-| `CostEstimateMarkingUser` | `CostEstimateMarkedByUser` |
-| `CostEstimateMarkedByUser` | `CostEstimateMarkedByUser` |
-| `CostEstimateReleaseDate` | `CostEstimateReleaseDate` |
-| `CostEstimateReleaseUser` | `CostEstimateReleasedByUser` |
-| `CostEstimateReleasedByUser` | `CostEstimateReleasedByUser` |
-| `CostEstimateStatus` | `CostEstimateStatus` |
-| `CostingErrorMessageType` | `CostingErrorMessageType` |
-| `CostEstimateIsReleased` | `CostEstimateIsReleased` |
-| `CostEstIsMixedCosting` | `CostEstIsMixedCosting` |
-| `CostEstimateIsForProcmtAltv` | `CostEstimateIsForProcmtAltv` |
-| `ProcmtAltvCostEstimate` | `ProcmtAltvCostEstimate` |
-| `ProcessCategory` | `ProcessCategory` |
-| `CostgMixingRatioValue` | `CostgMixingRatioValue` |
-| `ProcmtAltvValuationVariant` | `ProcmtAltvValuationVariant` |
-| `SpecialProcurementType` | `SpecialProcurementType` |
-| `ProductProcurementType` | `ProductProcurementType` |
-| `SpecialProcurementPlant` | `SpecialProcurementPlant` |
-| `CostingSheet` | `CostingSheet` |
-| `CostingOverheadType` | `CostingOverheadType` |
-| `ProductValuationStrategy` | `ProductValuationStrategy` |
-| `ProductValnPurgInfoRecdStrgy` | `ProductValnPurgInfoRecdStrgy` |
-| `CostingVariant` | `CostingVariant` |
-| `Ledger` | `Ledger` |
-| `ReferenceLedger` | `ReferenceLedger` |
-| `CostingOverheadGroup` | `CostingOverheadGroup` |
-| `CostingOverhead` | `CostingOverhead` |
-| `PostingPeriod` | `PostingPeriod` |
-| `PostingFiscalYear` | `PostingFiscalYear` |
-| `CostingErrorLogID` | `CostingErrorLogID` |
-| `CostEstimateTransferControl` | `CostEstimateTransferControl` |
-| `LowLevelCode` | `LowLevelCode` |
-| `CostEstimateCostingLevel` | `CostEstimateCostingLevel` |
-| `CostComponentStructure` | `CostComponentStructure` |
-| `AuxiliaryCostCompStructure` | `AuxiliaryCostCompStructure` |
-| `BusinessArea` | `BusinessArea` |
-| `ProfitCenter` | `ProfitCenter` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `ControllingAreaCurrency` | `ControllingAreaCurrency` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `ComponentBreakdown` | `ComponentBreakdown` |
-| `EstimatedCostCostingRun` | `EstimatedCostCostingRun` |
-| `EstimatedCostCostingRunDate` | `EstimatedCostCostingRunDate` |
-| `ConfiguredProduct` | `ConfiguredProduct` |
-| `ProductIsCostedWithQtyStruc` | `ProductIsCostedWithQtyStruc` |
-| `_ProductCostEstimateItem` | *Association* |
-| `_Product` | *Association* |
-| `_ProductText` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_ProductValuation` | *Association* |
-| `_CostingType` | *Association* |
-| `_CostingTypeText` | *Association* |
-| `_CostingVersion` | *Association* |
-| `_CostingVersionText` | *Association* |
-| `_CostingVersionText_2` | *Association* |
-| `_CostingVariant` | *Association* |
-| `_CostingVariantText` | *Association* |
-| `_ValuationVariant` | *Association* |
-| `_CostingValuationVarText` | *Association* |
-| `_CostingOverheadGroupText` | *Association* |
-| `_Plant` | *Association* |
-| `_ValuationArea` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_ControllingAreaCurrency` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_LedgerText` | *Association* |
-| `_ProfitCenterText` | *Association* |
-| `_ProfitCenterText_2` | *Association* |
-| `_ControllingAreaText` | *Association* |
-| `_CompanyCodeText` | *Association* |
-| `_PlantText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingReferenceObject` | ✓ | |  |  |
+| `CostEstimate` | ✓ | |  |  |
+| `CostingType` | ✓ | |  |  |
+| `CostingDate` | ✓ | |  |  |
+| `CostingVersion` | ✓ | |  |  |
+| `ValuationVariant` | ✓ | |  |  |
+| `CostIsEnteredManually` | ✓ | |  |  |
+| `Product` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `ValuationType` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CompanyCode` |  | | `_ValuationArea` | `CompanyCode` |
+| `CostEstimateValidityStartDate` |  | |  |  |
+| `CostEstimateValidityEndDate` |  | |  |  |
+| `ValuationDate` |  | |  |  |
+| `QuantityStructureDate` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `BillOfMaterial` |  | |  |  |
+| `ProductBOMUsage` |  | |  |  |
+| `AlternativeBillOfMaterial` |  | |  |  |
+| `TaskListGroup` |  | |  |  |
+| `TaskListType` |  | |  |  |
+| `TaskListGroupCounter` |  | |  |  |
+| `CostingItemIsProductComp` |  | |  |  |
+| `CostEstIsMarkedForDeletion` |  | |  |  |
+| `CostingLotSize` |  | |  |  |
+| `ValuationQuantityUnit` |  | |  |  |
+| `CostEstimateCreatedByUser` |  | |  |  |
+| `AdditiveCostCreatedByUser` |  | |  |  |
+| `CostEstimateCreationDate` |  | |  |  |
+| `CostEstimateMarkingDate` |  | |  |  |
+| `CostEstimateMarkingUser` |  | |  | `CostEstimateMarkedByUser` |
+| `CostEstimateMarkedByUser` |  | |  |  |
+| `CostEstimateReleaseDate` |  | |  |  |
+| `CostEstimateReleaseUser` |  | |  | `CostEstimateReleasedByUser` |
+| `CostEstimateReleasedByUser` |  | |  |  |
+| `CostEstimateStatus` |  | |  |  |
+| `CostingErrorMessageType` |  | |  |  |
+| `CostEstimateIsReleased` |  | |  |  |
+| `CostEstIsMixedCosting` |  | |  |  |
+| `CostEstimateIsForProcmtAltv` |  | |  |  |
+| `ProcmtAltvCostEstimate` |  | |  |  |
+| `ProcessCategory` |  | |  |  |
+| `CostgMixingRatioValue` |  | |  |  |
+| `ProcmtAltvValuationVariant` |  | |  |  |
+| `SpecialProcurementType` |  | |  |  |
+| `ProductProcurementType` |  | |  |  |
+| `SpecialProcurementPlant` |  | |  |  |
+| `CostingSheet` |  | |  |  |
+| `CostingOverheadType` |  | |  |  |
+| `ProductValuationStrategy` |  | |  |  |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  |
+| `CostingVariant` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `ReferenceLedger` |  | |  |  |
+| `CostingOverheadGroup` |  | |  |  |
+| `CostingOverhead` |  | |  |  |
+| `PostingPeriod` |  | |  |  |
+| `PostingFiscalYear` |  | |  |  |
+| `CostingErrorLogID` |  | |  |  |
+| `CostEstimateTransferControl` |  | |  |  |
+| `LowLevelCode` |  | |  |  |
+| `CostEstimateCostingLevel` |  | |  |  |
+| `CostComponentStructure` |  | |  |  |
+| `AuxiliaryCostCompStructure` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `ControllingAreaCurrency` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `ComponentBreakdown` |  | |  |  |
+| `EstimatedCostCostingRun` |  | |  |  |
+| `EstimatedCostCostingRunDate` |  | |  |  |
+| `ConfiguredProduct` |  | |  |  |
+| `ProductIsCostedWithQtyStruc` |  | |  |  |
+| `_ProductCostEstimateItem` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_ProductValuation` | | ✓ | | |
+| `_CostingType` | | ✓ | | |
+| `_CostingTypeText` | | ✓ | | |
+| `_CostingVersion` | | ✓ | | |
+| `_CostingVersionText` | | ✓ | | |
+| `_CostingVersionText_2` | | ✓ | | |
+| `_CostingVariant` | | ✓ | | |
+| `_CostingVariantText` | | ✓ | | |
+| `_ValuationVariant` | | ✓ | | |
+| `_CostingValuationVarText` | | ✓ | | |
+| `_CostingOverheadGroupText` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ValuationArea` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_ControllingAreaCurrency` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_LedgerText` | | ✓ | | |
+| `_ProfitCenterText` | | ✓ | | |
+| `_ProfitCenterText_2` | | ✓ | | |
+| `_ControllingAreaText` | | ✓ | | |
+| `_CompanyCodeText` | | ✓ | | |
+| `_PlantText` | | ✓ | | |
 
 ## Associations
 

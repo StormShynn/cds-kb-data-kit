@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceQuotation` | `ServiceQuotation` |
-| key `SrvcDocDurationType` | `SrvcDocDurationType` |
-| `SrvcDocDurationValue` | `SrvcDocDurationValue` |
-| `SrvcDocDurationUnit` | `SrvcDocDurationUnit` |
-| `_ServiceQuotationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |
+| `SrvcDocDurationType` | ✓ | |  |  |
+| `SrvcDocDurationValue` |  | |  |  |
+| `SrvcDocDurationUnit` |  | |  |  |
+| `_ServiceQuotationTP` | | ✓ | | |
 
 ## Source Code
 

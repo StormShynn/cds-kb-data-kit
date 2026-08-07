@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ShareAll` | `abp_behv_draft_share_all_ind` |
-| `IsDeltaUpdate` | `abp_behv_draft_delta_upd_ind` |
-| `ABP_BEHV_DRAFT_USER_ACCESS` | `Users : composition [1..*] of ABP_BEHV_DRAFT_USER_ACCESS` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShareAll` |  | |  | `abp_behv_draft_share_all_ind` |
+| `IsDeltaUpdate` |  | |  | `abp_behv_draft_delta_upd_ind` |
+| `ABP_BEHV_DRAFT_USER_ACCESS` |  | |  | `Users : composition [1..*] of ABP_BEHV_DRAFT_USER_ACCESS` |
 
 ## Source Code
 

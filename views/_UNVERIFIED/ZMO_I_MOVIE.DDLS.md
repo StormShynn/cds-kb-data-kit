@@ -33,15 +33,15 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Guid` | `guid` |
-| `Title` | `title` |
-| `ReleaseYear` | `release_year` |
-| `Director` | `director` |
-| `GenreId` | `genre_id` |
-| `LastChangedAt` | `last_changed_at` |
-| `_Genre` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Guid` | ✓ | |  | `guid` |
+| `Title` |  | |  | `title` |
+| `ReleaseYear` |  | |  | `release_year` |
+| `Director` |  | |  | `director` |
+| `GenreId` |  | |  | `genre_id` |
+| `LastChangedAt` |  | |  | `last_changed_at` |
+| `_Genre` | | ✓ | | |
 
 ## Associations
 

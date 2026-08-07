@@ -32,23 +32,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderId` | `order_id` |
-| key `CustomerId` | `customer_id` |
-| key `AddressID` | `address_id` |
-| `OrderDate` | `order_date` |
-| `OrderStatus` | `order_status` |
-| `Quantiy` | `quantity` |
-| `BillingAdress` | `billing_adress` |
-| `DeliveryAdress` | `delivery_adress` |
-| `ItemCount` | `item_count` |
-| `Currency` | `currency` |
-| `TotalPrice` | `total_price` |
-| `LocalCreatedBy` | `local_created_by` |
-| `LocalCreatedAt` | `local_created_at` |
-| `LocalLastChangedBy` | `local_last_changed_by` |
-| `LocalLastChangedAt` | `local_last_changed_at` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderId` | ✓ | |  | `order_id` |
+| `CustomerId` | ✓ | |  | `customer_id` |
+| `AddressID` | ✓ | |  | `address_id` |
+| `OrderDate` |  | |  | `order_date` |
+| `OrderStatus` |  | |  | `order_status` |
+| `Quantiy` |  | |  | `quantity` |
+| `BillingAdress` |  | |  | `billing_adress` |
+| `DeliveryAdress` |  | |  | `delivery_adress` |
+| `ItemCount` |  | |  | `item_count` |
+| `Currency` |  | |  | `currency` |
+| `TotalPrice` |  | |  | `total_price` |
+| `LocalCreatedBy` |  | |  | `local_created_by` |
+| `LocalCreatedAt` |  | |  | `local_created_at` |
+| `LocalLastChangedBy` |  | |  | `local_last_changed_by` |
+| `LocalLastChangedAt` |  | |  | `local_last_changed_at` |
 
 ## Source Code
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdPurchaseTaxClassification` | `taxim` |
-| key `DestinationCountry` | `land1` |
-| `_Country` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdPurchaseTaxClassification` | ✓ | |  | `taxim` |
+| `DestinationCountry` | ✓ | |  | `land1` |
+| `_Country` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

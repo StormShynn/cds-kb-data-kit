@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspToleranceSpecification` | `tq29.toleranzsl` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspToleranceSpecification` | ✓ | |  | `toleranzsl` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

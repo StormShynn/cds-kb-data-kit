@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgProcess` | `_tfk2602t.inv_process` |
-| key `CAApplicationArea` | `_tfk2602t.applk` |
-| key `Language` | `_tfk2602t.langu` |
-| `CAInvcgProcessText` | `_tfk2602t.text` |
-| `_CAInvcgProcess` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgProcess` | ✓ | | `_tfk2602t` | `inv_process` |
+| `CAApplicationArea` | ✓ | | `_tfk2602t` | `applk` |
+| `Language` | ✓ | | `_tfk2602t` | `langu` |
+| `CAInvcgProcessText` |  | | `_tfk2602t` | `text` |
+| `_CAInvcgProcess` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

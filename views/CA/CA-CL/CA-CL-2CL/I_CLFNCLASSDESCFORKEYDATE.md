@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassInternalID` | `ClassInternalID` |
-| key `Language` | `Language` |
-| `ClassDescription` | `ClassDescription` |
-| `_Class` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassInternalID` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ClassDescription` |  | |  |  |
+| `_Class` | | ✓ | | |
 
 ## Associations
 

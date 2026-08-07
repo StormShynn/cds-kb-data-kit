@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Fund` | `Fund` |
-| key `FinancialManagementArea` | `FinancialManagementArea` |
-| `FundName` | `_Text[1:Language = $session.system_language].FundName` |
-| `FundDescription` | `_Text[1:Language = $session.system_language].FundDescription` |
-| `FundAuthznGrp` | `FundAuthznGrp` |
-| `FundFinMgmtAreaForAuthzn` | `FundFinMgmtAreaForAuthzn` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `FundPeriodicity` | `FundPeriodicity` |
-| `FundPeriodicityText` | `_FundPeriodicity._Text[1:Language = $session.system_language].FundPeriodicityText` |
-| `_FinMgmtArea` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Fund` | ✓ | |  |  |
+| `FinancialManagementArea` | ✓ | |  |  |
+| `FundName` |  | |  | `_Text[1:Language = $session.system_language].FundName` |
+| `FundDescription` |  | |  | `_Text[1:Language = $session.system_language].FundDescription` |
+| `FundAuthznGrp` |  | |  |  |
+| `FundFinMgmtAreaForAuthzn` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `FundPeriodicity` |  | |  |  |
+| `FundPeriodicityText` |  | |  | `_FundPeriodicity._Text[1:Language = $session.system_language].FundPeriodicityText` |
+| `_FinMgmtArea` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

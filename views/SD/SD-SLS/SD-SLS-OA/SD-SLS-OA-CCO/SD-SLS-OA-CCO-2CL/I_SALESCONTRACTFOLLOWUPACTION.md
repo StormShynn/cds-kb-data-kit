@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContractFollowUpAction` | `aktvt` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContractFollowUpAction` | ✓ | |  | `aktvt` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

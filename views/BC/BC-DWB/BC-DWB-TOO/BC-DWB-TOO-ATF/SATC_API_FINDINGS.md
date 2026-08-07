@@ -27,49 +27,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ResultId` | `ResultId` |
-| key `ItemId` | `ItemId` |
-| key `CheckRunIndex` | `CheckRunIndex` |
-| `CreatedOnItem` | `CreatedOnItem` |
-| `Status` | `cast( Status as I_SATC_API_ITEM_STATE preserving type )` |
-| `ChangedOn` | `ChangedOn` |
-| `module_id` | `module_id` |
-| `CheckVariant` | `CheckVariant` |
-| `ObjectName` | `ObjectName` |
-| `ObjectType` | `ObjectType` |
-| `PackageName` | `PackageName` |
-| `ContactPerson` | `ContactPerson` |
-| `ObjectProvider` | `ObjectProvider` |
-| `ApplicationComponent` | `ApplicationComponent` |
-| `DLVRelease` | `DLVRelease` |
-| `DLVUnit` | `DLVUnit` |
-| `TransportLayer` | `TransportLayer` |
-| `Responsible` | `Responsible` |
-| `module_msg_key` | `module_msg_key` |
-| `MessageTitle` | `MessageTitle` |
-| `QualityStandard` | `QualityStandard` |
-| `ChecksumVersion` | `ChecksumVersion` |
-| `Checksum` | `Checksum` |
-| `ExemptionKind` | `cast( ExemptionKind as I_SATC_API_EXEMPTION_KIND preserving type )` |
-| `ExemptionValidity` | `cast( ExemptionValidity as I_SATC_API_EXEMPTION_VAL preserving type )` |
-| `ExemptionApproval` | `cast( ExemptionApproval as I_SATC_API_EXEMPTION_APPR preserving type )` |
-| `ExemptionKindItem` | `cast( ExemptionKindItem as I_SATC_API_EXEMPTION_KIND preserving type )` |
-| `ExemptionValidityItem` | `cast( ExemptionValidityItem as I_SATC_API_EXEMPTION_VAL preserving type )` |
-| `ExemptionApprovalItem` | `cast( ExemptionApprovalItem as I_SATC_API_EXEMPTION_APPR preserving type )` |
-| `ExemptionId` | `ExemptionId` |
-| `FindingLocation` | `FindingLocation` |
-| `HasQuickfixes` | `cast( HasQuickfixes as I_SATC_API_FNDQF preserving type )` |
-| `LastChangedBy` | `LastChangedBy` |
-| `LastChangedOn` | `LastChangedOn` |
-| `Priority` | `cast( Priority as I_SATC_API_PRIORITY preserving type )` |
-| `CretatedOn` | `CretatedOn` |
-| `Host` | `Host` |
-| `StatusNew` | `cast( StatusNew as I_SATC_API_ITEM_STATE preserving type )` |
-| `StatusOld` | `cast( StatusOld as I_SATC_API_ITEM_STATE preserving type )` |
-| `RemarkText` | `RemarkText` |
-| `RemarkLink` | `RemarkLink` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ResultId` | ✓ | |  |  |
+| `ItemId` | ✓ | |  |  |
+| `CheckRunIndex` | ✓ | |  |  |
+| `CreatedOnItem` |  | |  |  |
+| `Status` |  | |  | `cast( Status as I_SATC_API_ITEM_STATE preserving type )` |
+| `ChangedOn` |  | |  |  |
+| `module_id` |  | |  |  |
+| `CheckVariant` |  | |  |  |
+| `ObjectName` |  | |  |  |
+| `ObjectType` |  | |  |  |
+| `PackageName` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ObjectProvider` |  | |  |  |
+| `ApplicationComponent` |  | |  |  |
+| `DLVRelease` |  | |  |  |
+| `DLVUnit` |  | |  |  |
+| `TransportLayer` |  | |  |  |
+| `Responsible` |  | |  |  |
+| `module_msg_key` |  | |  |  |
+| `MessageTitle` |  | |  |  |
+| `QualityStandard` |  | |  |  |
+| `ChecksumVersion` |  | |  |  |
+| `Checksum` |  | |  |  |
+| `ExemptionKind` |  | |  | `cast( ExemptionKind as I_SATC_API_EXEMPTION_KIND preserving type )` |
+| `ExemptionValidity` |  | |  | `cast( ExemptionValidity as I_SATC_API_EXEMPTION_VAL preserving type )` |
+| `ExemptionApproval` |  | |  | `cast( ExemptionApproval as I_SATC_API_EXEMPTION_APPR preserving type )` |
+| `ExemptionKindItem` |  | |  | `cast( ExemptionKindItem as I_SATC_API_EXEMPTION_KIND preserving type )` |
+| `ExemptionValidityItem` |  | |  | `cast( ExemptionValidityItem as I_SATC_API_EXEMPTION_VAL preserving type )` |
+| `ExemptionApprovalItem` |  | |  | `cast( ExemptionApprovalItem as I_SATC_API_EXEMPTION_APPR preserving type )` |
+| `ExemptionId` |  | |  |  |
+| `FindingLocation` |  | |  |  |
+| `HasQuickfixes` |  | |  | `cast( HasQuickfixes as I_SATC_API_FNDQF preserving type )` |
+| `LastChangedBy` |  | |  |  |
+| `LastChangedOn` |  | |  |  |
+| `Priority` |  | |  | `cast( Priority as I_SATC_API_PRIORITY preserving type )` |
+| `CretatedOn` |  | |  |  |
+| `Host` |  | |  |  |
+| `StatusNew` |  | |  | `cast( StatusNew as I_SATC_API_ITEM_STATE preserving type )` |
+| `StatusOld` |  | |  | `cast( StatusOld as I_SATC_API_ITEM_STATE preserving type )` |
+| `RemarkText` |  | |  |  |
+| `RemarkLink` |  | |  |  |
 
 ## Source Code
 

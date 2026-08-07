@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccountType` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `GLAccountTypeName` | `ddtext` |
-| `DomainValue` | `domvalue_l` |
-| `_GLAccountType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountType` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `GLAccountTypeName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_GLAccountType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

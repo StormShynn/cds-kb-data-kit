@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `JntOpgAgrmt` | `joa` |
-| key `JntVntrPenaltyCategory` | `pencat` |
-| `JntVntrNonSignatoryRcvryPct` | `nosigrp` |
-| `JntVntrNonConsentRcvryPnltyPct` | `noconrp` |
-| `_CompanyCode` | *Association* |
-| `_JntOpgAgrmt` | *Association* |
-| `_JntVntrPenaltyCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JntOpgAgrmt` | ✓ | |  | `joa` |
+| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |
+| `JntVntrNonSignatoryRcvryPct` |  | |  | `nosigrp` |
+| `JntVntrNonConsentRcvryPnltyPct` |  | |  | `noconrp` |
+| `_CompanyCode` | | ✓ | | |
+| `_JntOpgAgrmt` | | ✓ | | |
+| `_JntVntrPenaltyCategory` | | ✓ | | |
 
 ## Associations
 

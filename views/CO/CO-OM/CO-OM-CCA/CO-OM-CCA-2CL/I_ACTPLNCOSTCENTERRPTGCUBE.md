@@ -31,114 +31,114 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SourceLedger` | `APJEI.SourceLedger` |
-| key `Ledger` | `APJEI.Ledger` |
-| key `CompanyCode` | `APJEI.CompanyCode` |
-| key `FiscalYear` | `APJEI.FiscalYear` |
-| key `AccountingDocument` | `APJEI.AccountingDocument` |
-| key `FinancialPlanningReqTransSqnc` | `APJEI.FinancialPlanningReqTransSqnc` |
-| key `FinancialPlanningDataPacket` | `APJEI.FinancialPlanningDataPacket` |
-| key `ActualPlanJournalEntryItem` | `APJEI.ActualPlanJournalEntryItem` |
-| `LedgerGLLineItem` | `APJEI.LedgerGLLineItem` |
-| `FinancialPlanningEntryItem` | `APJEI.FinancialPlanningEntryItem` |
-| `ControllingArea` | `APJEI.ControllingArea` |
-| `LedgerFiscalYear` | `APJEI.LedgerFiscalYear` |
-| `GLAccount` | `APJEI.GLAccount` |
-| `ChartOfAccounts` | `APJEI.ChartOfAccounts` |
-| `ActualPlanCode` | `APJEI.ActualPlanCode` |
-| `DebitCreditCode` | `APJEI.DebitCreditCode` |
-| `ProfitCenter` | `APJEI.ProfitCenter` |
-| `CostCenter` | `APJEI.CostCenter` |
-| `ProjectExternalID` | `APJEI.ProjectExternalID` |
-| `PartnerProjectInternalID` | `APJEI.PartnerProjectInternalID` |
-| `PartnerProjectExternalID` | `APJEI.PartnerProjectExternalID` |
-| `WBSElementExternalID` | `APJEI.WBSElementExternalID` |
-| `PartnerWBSElementExternalID` | `APJEI.PartnerWBSElementExternalID` |
-| `FunctionalArea` | `APJEI.FunctionalArea` |
-| `Segment` | `APJEI.Segment` |
-| `CostCtrActivityType` | `APJEI.CostCtrActivityType` |
-| `CostAnalysisResource` | `APJEI.CostAnalysisResource` |
-| `OrderID` | `APJEI.OrderID` |
-| `WorkPackage` | `APJEI.WorkPackage` |
-| `PartnerAccountAssignmentType` | `APJEI.PartnerAccountAssignmentType` |
-| `PartnerCompanyCode` | `APJEI.PartnerCompanyCode` |
-| `PartnerProfitCenter` | `APJEI.PartnerProfitCenter` |
-| `PartnerCostCenter` | `APJEI.PartnerCostCenter` |
-| `PartnerFunctionalArea` | `APJEI.PartnerFunctionalArea` |
-| `PartnerSegment` | `APJEI.PartnerSegment` |
-| `PartnerCostCtrActivityType` | `APJEI.PartnerCostCtrActivityType` |
-| `PartnerOrder` | `APJEI.PartnerOrder_2` |
-| `PostingDate` | `APJEI.PostingDate` |
-| `DocumentDate` | `APJEI.DocumentDate` |
-| `FiscalPeriod` | `APJEI.FiscalPeriod` |
-| `FiscalYearPeriod` | `APJEI.FiscalYearPeriod` |
-| `FiscalYearVariant` | `APJEI.FiscalYearVariant` |
-| `PlanningCategory` | `APJEI.PlanningCategory` |
-| `ServicesRenderedDate` | `APJEI.ServicesRenderedDate` |
-| `AccountAssignmentType` | `APJEI.AccountAssignmentType` |
-| `BusinessTransactionCategory` | `APJEI.BusinessTransactionCategory` |
-| `BusinessTransactionType` | `APJEI.BusinessTransactionType` |
-| `FinancialTransactionType` | `APJEI.FinancialTransactionType` |
-| `Customer` | `APJEI.Customer` |
-| `Supplier` | `APJEI.Supplier` |
-| `IsStatisticalCostCenter` | `APJEI.IsStatisticalCostCenter` |
-| `IsCommitment` | `APJEI.IsCommitment` |
-| `TransactionCurrency` | `APJEI.TransactionCurrency` |
-| `CompanyCodeCurrency` | `APJEI.CompanyCodeCurrency` |
-| `GlobalCurrency` | `APJEI.GlobalCurrency` |
-| `FunctionalCurrency` | `APJEI.FunctionalCurrency` |
-| `FreeDefinedCurrency1` | `APJEI.FreeDefinedCurrency1` |
-| `CostSourceUnit` | `APJEI.CostSourceUnit` |
-| `AmountInTransactionCurrency` | `} APJEI.AmountInTransactionCurrency` |
-| `AmountInCompanyCodeCurrency` | `} APJEI.AmountInCompanyCodeCurrency` |
-| `AmountInGlobalCurrency` | `} APJEI.AmountInGlobalCurrency` |
-| `AmountInFunctionalCurrency` | `} APJEI.AmountInFunctionalCurrency` |
-| `AmountInFreeDefinedCurrency1` | `} APJEI.AmountInFreeDefinedCurrency1` |
-| `FixedAmountInGlobalCrcy` | `} APJEI.FixedAmountInGlobalCrcy` |
-| `FixedAmountInCoCodeCrcy` | `} APJEI.FixedAmountInCoCodeCrcy` |
-| `FixedAmountInTransCrcy` | `} APJEI.FixedAmountInTransCrcy` |
-| `ValuationQuantity` | `} APJEI.ValuationQuantity` |
-| `ValuationFixedQuantity` | `} APJEI.ValuationFixedQuantity` |
-| `BaseUnit` | `APJEI.BaseUnit` |
-| `Quantity` | `} APJEI.Quantity` |
-| `FixedQuantity` | `} APJEI.FixedQuantity` |
-| `ActualAmountInTransactionCrcy` | `} APJEI.ActualAmountInTransactionCrcy` |
-| `ActualAmountInCompanyCodeCrcy` | `} APJEI.ActualAmountInCompanyCodeCrcy` |
-| `ActualAmountInGlobalCurrency` | `} APJEI.ActualAmountInGlobalCurrency` |
-| `ActualAmountInFreeDfndCrcy1` | `} APJEI.ActualAmountInFreeDfndCrcy1` |
-| `ActualValuationQuantity` | `} APJEI.ActualValuationQuantity` |
-| `ActualQuantityInBaseUnit` | `} APJEI.ActualQuantityInBaseUnit` |
-| `PlanAmountInTransactionCrcy` | `} APJEI.PlanAmountInTransactionCrcy` |
-| `PlanAmountInCompanyCodeCrcy` | `} APJEI.PlanAmountInCompanyCodeCrcy` |
-| `PlanAmountInGlobalCurrency` | `} APJEI.PlanAmountInGlobalCurrency` |
-| `PlanAmountInFreeDefinedCrcy1` | `} APJEI.PlanAmountInFreeDefinedCrcy1` |
-| `PlanValuationQuantity` | `} APJEI.PlanValuationQuantity` |
-| `PlanPriceInGlobalCurrency` | `} APJEI.PlanPriceInGlobalCurrency` |
-| `PlanPriceInCompanyCodeCurrency` | `} APJEI.PlanPriceInCompanyCodeCurrency` |
-| `PlanPriceInTransactionCurrency` | `} APJEI.PlanPriceInTransactionCurrency` |
-| `ActlPlnDiffAmtInTransCrcy` | `} APJEI.ActlPlnDiffAmtInTransCrcy` |
-| `ActlPlnDiffAmtInCoCodeCrcy` | `} APJEI.ActlPlnDiffAmtInCoCodeCrcy` |
-| `ActlPlnDiffAmtInGlobalCrcy` | `} APJEI.ActlPlnDiffAmtInGlobalCrcy` |
-| `ActlPlnDiffAmtInFreeDfndCrcy1` | `} APJEI.ActlPlnDiffAmtInFreeDfndCrcy1` |
-| `ActlPanDiffValuationQuantity` | `} APJEI.ActlPanDiffValuationQuantity` |
-| `CalendarYear` | `APJEI._CalendarDate.CalendarYear` |
-| `CalendarQuarter` | `APJEI._CalendarDate.CalendarQuarter` |
-| `YearQuarter` | `APJEI._CalendarDate.YearQuarter` |
-| `CalendarMonth` | `APJEI._CalendarDate.CalendarMonth` |
-| `YearMonth` | `APJEI._CalendarDate.YearMonth` |
-| `CalendarWeek` | `APJEI._CalendarDate.CalendarWeek` |
-| `YearWeek` | `APJEI._CalendarDate.YearWeek` |
-| `FiscalQuarter` | `APJEI._FiscalCalendarDate.FiscalQuarter` |
-| `FiscalWeek` | `APJEI._FiscalCalendarDate.FiscalWeek` |
-| `FiscalYearQuarter` | `APJEI._FiscalCalendarDate.FiscalYearQuarter` |
-| `FiscalYearWeek` | `APJEI._FiscalCalendarDate.FiscalYearWeek` |
-| `_CalendarMonth` | *Association* |
-| `_CalendarQuarter` | *Association* |
-| `_CalendarYearMonth` | *Association* |
-| `_CurrentCostCenter` | *Association* |
-| `_CurrentProfitCenter` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SourceLedger` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `AccountingDocument` | ✓ | |  |  |
+| `FinancialPlanningReqTransSqnc` | ✓ | |  |  |
+| `FinancialPlanningDataPacket` | ✓ | |  |  |
+| `ActualPlanJournalEntryItem` | ✓ | |  |  |
+| `LedgerGLLineItem` |  | |  |  |
+| `FinancialPlanningEntryItem` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `LedgerFiscalYear` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `ActualPlanCode` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ProjectExternalID` |  | |  |  |
+| `PartnerProjectInternalID` |  | |  |  |
+| `PartnerProjectExternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `PartnerWBSElementExternalID` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `Segment` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `CostAnalysisResource` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `WorkPackage` |  | |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |
+| `PartnerCompanyCode` |  | |  |  |
+| `PartnerProfitCenter` |  | |  |  |
+| `PartnerCostCenter` |  | |  |  |
+| `PartnerFunctionalArea` |  | |  |  |
+| `PartnerSegment` |  | |  |  |
+| `PartnerCostCtrActivityType` |  | |  |  |
+| `PartnerOrder` |  | |  | `PartnerOrder_2` |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `PlanningCategory` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `AccountAssignmentType` |  | |  |  |
+| `BusinessTransactionCategory` |  | |  |  |
+| `BusinessTransactionType` |  | |  |  |
+| `FinancialTransactionType` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `IsStatisticalCostCenter` |  | |  |  |
+| `IsCommitment` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `GlobalCurrency` |  | |  |  |
+| `FunctionalCurrency` |  | |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |
+| `CostSourceUnit` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  | `} APJEI.AmountInTransactionCurrency` |
+| `AmountInCompanyCodeCurrency` |  | |  | `} APJEI.AmountInCompanyCodeCurrency` |
+| `AmountInGlobalCurrency` |  | |  | `} APJEI.AmountInGlobalCurrency` |
+| `AmountInFunctionalCurrency` |  | |  | `} APJEI.AmountInFunctionalCurrency` |
+| `AmountInFreeDefinedCurrency1` |  | |  | `} APJEI.AmountInFreeDefinedCurrency1` |
+| `FixedAmountInGlobalCrcy` |  | |  | `} APJEI.FixedAmountInGlobalCrcy` |
+| `FixedAmountInCoCodeCrcy` |  | |  | `} APJEI.FixedAmountInCoCodeCrcy` |
+| `FixedAmountInTransCrcy` |  | |  | `} APJEI.FixedAmountInTransCrcy` |
+| `ValuationQuantity` |  | |  | `} APJEI.ValuationQuantity` |
+| `ValuationFixedQuantity` |  | |  | `} APJEI.ValuationFixedQuantity` |
+| `BaseUnit` |  | |  |  |
+| `Quantity` |  | |  | `} APJEI.Quantity` |
+| `FixedQuantity` |  | |  | `} APJEI.FixedQuantity` |
+| `ActualAmountInTransactionCrcy` |  | |  | `} APJEI.ActualAmountInTransactionCrcy` |
+| `ActualAmountInCompanyCodeCrcy` |  | |  | `} APJEI.ActualAmountInCompanyCodeCrcy` |
+| `ActualAmountInGlobalCurrency` |  | |  | `} APJEI.ActualAmountInGlobalCurrency` |
+| `ActualAmountInFreeDfndCrcy1` |  | |  | `} APJEI.ActualAmountInFreeDfndCrcy1` |
+| `ActualValuationQuantity` |  | |  | `} APJEI.ActualValuationQuantity` |
+| `ActualQuantityInBaseUnit` |  | |  | `} APJEI.ActualQuantityInBaseUnit` |
+| `PlanAmountInTransactionCrcy` |  | |  | `} APJEI.PlanAmountInTransactionCrcy` |
+| `PlanAmountInCompanyCodeCrcy` |  | |  | `} APJEI.PlanAmountInCompanyCodeCrcy` |
+| `PlanAmountInGlobalCurrency` |  | |  | `} APJEI.PlanAmountInGlobalCurrency` |
+| `PlanAmountInFreeDefinedCrcy1` |  | |  | `} APJEI.PlanAmountInFreeDefinedCrcy1` |
+| `PlanValuationQuantity` |  | |  | `} APJEI.PlanValuationQuantity` |
+| `PlanPriceInGlobalCurrency` |  | |  | `} APJEI.PlanPriceInGlobalCurrency` |
+| `PlanPriceInCompanyCodeCurrency` |  | |  | `} APJEI.PlanPriceInCompanyCodeCurrency` |
+| `PlanPriceInTransactionCurrency` |  | |  | `} APJEI.PlanPriceInTransactionCurrency` |
+| `ActlPlnDiffAmtInTransCrcy` |  | |  | `} APJEI.ActlPlnDiffAmtInTransCrcy` |
+| `ActlPlnDiffAmtInCoCodeCrcy` |  | |  | `} APJEI.ActlPlnDiffAmtInCoCodeCrcy` |
+| `ActlPlnDiffAmtInGlobalCrcy` |  | |  | `} APJEI.ActlPlnDiffAmtInGlobalCrcy` |
+| `ActlPlnDiffAmtInFreeDfndCrcy1` |  | |  | `} APJEI.ActlPlnDiffAmtInFreeDfndCrcy1` |
+| `ActlPanDiffValuationQuantity` |  | |  | `} APJEI.ActlPanDiffValuationQuantity` |
+| `CalendarYear` |  | |  |  |
+| `CalendarQuarter` |  | |  |  |
+| `YearQuarter` |  | |  |  |
+| `CalendarMonth` |  | |  |  |
+| `YearMonth` |  | |  |  |
+| `CalendarWeek` |  | |  |  |
+| `YearWeek` |  | |  |  |
+| `FiscalQuarter` |  | |  |  |
+| `FiscalWeek` |  | |  |  |
+| `FiscalYearQuarter` |  | |  |  |
+| `FiscalYearWeek` |  | |  |  |
+| `_CalendarMonth` | | ✓ | | |
+| `_CalendarQuarter` | | ✓ | | |
+| `_CalendarYearMonth` | | ✓ | | |
+| `_CurrentCostCenter` | | ✓ | | |
+| `_CurrentProfitCenter` | | ✓ | | |
 
 ## Associations
 

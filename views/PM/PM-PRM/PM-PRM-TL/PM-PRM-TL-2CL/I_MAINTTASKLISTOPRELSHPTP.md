@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListSequence` | `TaskListSequence` |
-| key `TaskListOperationInternalId` | `TaskListOperationInternalId` |
-| key `TaskListOpBOMItmIntVersCounter` | `TaskListOpBOMItmIntVersCounter` |
-| `SuccssrBOOGroup` | `SuccssrBOOGroup` |
-| `SuccssrBOOOpInternalID` | `SuccssrBOOOpInternalID` |
-| `MaintenanceTaskListOperation` | `MaintenanceTaskListOperation` |
-| `SuperiorOperation` | `SuperiorOperation` |
-| `OperationText` | `OperationText` |
-| `MasterRecipeRelationshipType` | `MasterRecipeRelationshipType` |
-| `OperationIsSuccessor` | `OperationIsSuccessor` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `WorkCenter` | `WorkCenter` |
-| `Plant` | `Plant` |
-| `MaxTimeIntvlIsUsedForSchedg` | `MaxTimeIntvlIsUsedForSchedg` |
-| `TimeIntvlBtwnRelshp` | `TimeIntvlBtwnRelshp` |
-| `TimeIntvlBtwnRelshpUnit` | `TimeIntvlBtwnRelshpUnit` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `_Header` | *Association* |
-| `_Operation` | *Association* |
-| `_NonHistOp` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListSequence` | ✓ | |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  |  |
+| `SuccssrBOOGroup` |  | |  |  |
+| `SuccssrBOOOpInternalID` |  | |  |  |
+| `MaintenanceTaskListOperation` |  | |  |  |
+| `SuperiorOperation` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `MasterRecipeRelationshipType` |  | |  |  |
+| `OperationIsSuccessor` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `Plant` |  | |  |  |
+| `MaxTimeIntvlIsUsedForSchedg` |  | |  |  |
+| `TimeIntvlBtwnRelshp` |  | |  |  |
+| `TimeIntvlBtwnRelshpUnit` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_Operation` | | ✓ | | |
+| `_NonHistOp` | | ✓ | | |
 
 ## Source Code
 

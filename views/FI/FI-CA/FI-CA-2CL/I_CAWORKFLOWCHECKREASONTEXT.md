@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAWorkflowCheckReason` | `c4eye` |
-| key `Language` | `spras` |
-| `CAWorkflowCheckReasonName` | `ltext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAWorkflowCheckReason` | ✓ | |  | `c4eye` |
+| `Language` | ✓ | |  | `spras` |
+| `CAWorkflowCheckReasonName` |  | |  | `ltext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

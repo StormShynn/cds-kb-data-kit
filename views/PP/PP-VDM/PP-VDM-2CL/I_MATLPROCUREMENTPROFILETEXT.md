@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialProcurementProfile` | `cast(txt.sobsl as pph_sobsl preserving type)` |
-| key `Plant` | `txt.werks` |
-| key `Language` | `cast(txt.spras as spras preserving type)` |
-| `MaterialProcurementProfileName` | `cast(txt.ltext as materialprocurementprofilename preserving type)` |
-| `_Plant` | *Association* |
-| `_Language` | *Association* |
-| `_Profile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialProcurementProfile` | ✓ | |  | `cast(txt.sobsl as pph_sobsl preserving type)` |
+| `Plant` | ✓ | |  | `werks` |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
+| `MaterialProcurementProfileName` |  | |  | `cast(txt.ltext as materialprocurementprofilename preserving type)` |
+| `_Plant` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_Profile` | | ✓ | | |
 
 ## Associations
 

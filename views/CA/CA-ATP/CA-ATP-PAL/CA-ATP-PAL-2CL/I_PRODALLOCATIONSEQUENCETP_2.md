@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductAllocationSequenceUUID` | `ProductAllocationSequenceUUID` |
-| `ProductAllocationSequence` | `ProductAllocationSequence` |
-| `ProdAllocSqncConsumptionUnit` | `ProdAllocSqncConsumptionUnit` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ProdAllocationLifecycleStatus` | `ProdAllocationLifecycleStatus` |
-| `_ProdAllocSequenceTTP` | *Association* |
-| `_ProdAllocSqncAssgmtTP` | *Association* |
-| `_ProdAllocSqncGroupTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductAllocationSequenceUUID` | ✓ | |  |  |
+| `ProductAllocationSequence` |  | |  |  |
+| `ProdAllocSqncConsumptionUnit` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ProdAllocationLifecycleStatus` |  | |  |  |
+| `_ProdAllocSequenceTTP` | | ✓ | | |
+| `_ProdAllocSqncAssgmtTP` | | ✓ | | |
+| `_ProdAllocSqncGroupTP` | | ✓ | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SalesDocumentType` | `auart` |
-| `ReferenceSDDocument` | `vgbel` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentType` |  | |  | `auart` |
+| `ReferenceSDDocument` |  | |  | `vgbel` |
 
 ## Source Code
 

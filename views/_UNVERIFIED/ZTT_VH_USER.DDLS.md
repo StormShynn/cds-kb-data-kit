@@ -31,15 +31,15 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `userName` | `userName` |
-| `name` | `_userInfo.name_text` |
-| `firstName` | `_userInfo.name_first` |
-| `lastName` | `_userInfo.name_last` |
-| `middleName` | `_userInfo.namemiddle` |
-| `email` | `_emailAddress.smtp_addr` |
-| `telephone` | `_businessAddress.tel_number` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `userName` | ✓ | |  |  |
+| `name` |  | | `_userInfo` | `name_text` |
+| `firstName` |  | | `_userInfo` | `name_first` |
+| `lastName` |  | | `_userInfo` | `name_last` |
+| `middleName` |  | | `_userInfo` | `namemiddle` |
+| `email` |  | | `_emailAddress` | `smtp_addr` |
+| `telephone` |  | | `_businessAddress` | `tel_number` |
 
 ## Source Code
 

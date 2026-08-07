@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `Country` | `land1` |
-| key `Region` | `regio` |
-| key `TaxingCounty` | `counc` |
-| `TaxingCountyName` | `bezei` |
-| `_Country` | *Association* |
-| `_Region` | *Association* |
-| `_TaxingCounty` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `Country` | ✓ | |  | `land1` |
+| `Region` | ✓ | |  | `regio` |
+| `TaxingCounty` | ✓ | |  | `counc` |
+| `TaxingCountyName` |  | |  | `bezei` |
+| `_Country` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_TaxingCounty` | | ✓ | | |
 
 ## Associations
 

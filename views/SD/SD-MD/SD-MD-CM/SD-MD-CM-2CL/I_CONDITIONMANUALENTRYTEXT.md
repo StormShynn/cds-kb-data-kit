@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `CndnManualEntries` | `cast ( substring( domvalue_l, 1, 1 ) as kmanu )` |
-| `ConditionManualEntryText` | `cast ( ddtext as val_text )` |
-| `_ConditionManualEntry` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `CndnManualEntries` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kmanu )` |
+| `ConditionManualEntryText` |  | |  | `cast ( ddtext as val_text )` |
+| `_ConditionManualEntry` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

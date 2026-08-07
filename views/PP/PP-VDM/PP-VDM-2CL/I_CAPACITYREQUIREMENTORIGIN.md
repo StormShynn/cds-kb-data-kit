@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityRequirementOrigin` | `cast(substring(l.domvalue_l, 1, 1) as capacityrequirementorigin preserving type)` |
-| `DomainValue` | `l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityRequirementOrigin` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as capacityrequirementorigin preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

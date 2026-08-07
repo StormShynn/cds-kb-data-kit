@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Reservation` | `Reservation` |
-| `ResvnVerificationCompanyCode` | `ResvnVerificationCompanyCode` |
-| `ReservationDate` | `ReservationDate` |
-| `UserID` | `UserID` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `CostCenter` | `CostCenter` |
-| `AssetNumber` | `AssetNumber` |
-| `AssetSubNumber` | `AssetSubNumber` |
-| `OrderID` | `OrderID` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `,useAsTemplate: true } ] SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `IssuingOrReceivingPlant` | `IssuingOrReceivingPlant` |
-| `IssuingOrReceivingStorageLoc` | `} ] IssuingOrReceivingStorageLoc` |
-| `IsCheckedAgainstFactoryCal` | `IsCheckedAgainstFactoryCal` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `ControllingArea` | `ControllingArea` |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_GoodsMovementType` | *Association* |
-| `_VerificationCompanyCode` | *Association* |
-| `_Order` | *Association* |
-| `_CostCenter` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_IssuingOrReceivingPlant` | *Association* |
-| `_IssuingOrReceivingStorageLoc` | *Association* |
-| `_ReservationDocumentItemTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Reservation` | ✓ | |  |  |
+| `ResvnVerificationCompanyCode` |  | |  |  |
+| `ReservationDate` |  | |  |  |
+| `UserID` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `AssetNumber` |  | |  |  |
+| `AssetSubNumber` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  | `,useAsTemplate: true } ] SalesOrderItem` |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  | `} ] IssuingOrReceivingStorageLoc` |
+| `IsCheckedAgainstFactoryCal` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_GoodsMovementType` | | ✓ | | |
+| `_VerificationCompanyCode` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_IssuingOrReceivingPlant` | | ✓ | | |
+| `_IssuingOrReceivingStorageLoc` | | ✓ | | |
+| `_ReservationDocumentItemTP` | | ✓ | | |
 
 ## Source Code
 

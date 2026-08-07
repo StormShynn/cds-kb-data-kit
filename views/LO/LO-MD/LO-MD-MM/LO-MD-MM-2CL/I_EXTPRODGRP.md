@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ExternalProductGroup` | `cast(extwg as externalproductgroup preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ExternalProductGroup` | ✓ | |  | `cast(extwg as externalproductgroup preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

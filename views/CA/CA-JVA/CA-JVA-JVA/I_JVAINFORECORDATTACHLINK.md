@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `}` | `entity: { name: 'I_JointVentureCompanyCodeVH', element: 'CompanyCode' }` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `}` |  | |  | `entity: { name: 'I_JointVentureCompanyCodeVH', element: 'CompanyCode' }` |
 
 ## Source Code
 

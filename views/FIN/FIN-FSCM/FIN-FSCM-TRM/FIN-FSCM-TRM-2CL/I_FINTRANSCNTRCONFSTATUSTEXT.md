@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `FinTransCntrconfStatus` | `cast( dd07t.domvalue_l as tb_reconf )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `FinTransCntrconfStatusName` | `cast( dd07t.ddtext as tb_reconf_name preserving type )` |
-| `_CounterconfirmationStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `FinTransCntrconfStatus` | ✓ | |  | `cast( dd07t.domvalue_l as tb_reconf )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `FinTransCntrconfStatusName` |  | |  | `cast( dd07t.ddtext as tb_reconf_name preserving type )` |
+| `_CounterconfirmationStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,35 +30,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `BPIdentificationType` | `BPIdentificationType` |
-| key `BPIdentificationNumber` | `BPIdentificationNumber` |
-| `BPIdnNmbrIssuingInstitute` | `BPIdnNmbrIssuingInstitute` |
-| `BPIdentificationEntryDate` | `BPIdentificationEntryDate` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `BusinessPartnerCategory` | `BusinessPartnerCategory` |
-| `BPIdnTypeForEditValue` | `BPIdnTypeForEditValue` |
-| `BPIdnNumberForEditValue` | `BPIdnNumberForEditValue` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_BuPaIdentificationType` | *Association* |
-| `_BusinessPartnerCategory` | *Association* |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `BPIdentificationType` | ✓ | |  |  |
+| `BPIdentificationNumber` | ✓ | |  |  |
+| `BPIdnNmbrIssuingInstitute` |  | |  |  |
+| `BPIdentificationEntryDate` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `BusinessPartnerCategory` |  | |  |  |
+| `BPIdnTypeForEditValue` |  | |  |  |
+| `BPIdnNumberForEditValue` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_BuPaIdentificationType` | | ✓ | | |
+| `_BusinessPartnerCategory` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Source Code
 

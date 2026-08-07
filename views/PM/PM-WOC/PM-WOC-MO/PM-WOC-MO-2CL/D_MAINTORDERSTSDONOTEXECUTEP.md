@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `MaintOrderReferenceDateTime` | `timestamp` |
-| `MaintOrdCancellationAction` | `maintordcancellationaction` |
-| `AssignedMaintNotifIsToBeClosed` | `abap_boolean` |
-| `AssgdMaintNotifIsToBeRsetAlloc` | `abap_boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintOrderReferenceDateTime` |  | |  | `timestamp` |
+| `MaintOrdCancellationAction` |  | |  | `maintordcancellationaction` |
+| `AssignedMaintNotifIsToBeClosed` |  | |  | `abap_boolean` |
+| `AssgdMaintNotifIsToBeRsetAlloc` |  | |  | `abap_boolean` |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrcgCndnAmountRoundingRule` | `cast ( substring( domvalue_l, 1, 1 ) as txprf )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrcgCndnAmountRoundingRule` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as txprf )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

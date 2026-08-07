@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionBasisLimitExceeded` | `cast ( substring( domvalue_l, 1, 1 ) as kmxaw )` |
-| `_ConditionAmountLimitExceeded` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionBasisLimitExceeded` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kmxaw )` |
+| `_ConditionAmountLimitExceeded` | | ✓ | | |
 
 ## Associations
 

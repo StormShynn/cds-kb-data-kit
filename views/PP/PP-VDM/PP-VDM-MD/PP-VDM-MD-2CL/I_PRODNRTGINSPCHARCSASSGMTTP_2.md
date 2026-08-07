@@ -29,140 +29,140 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionRoutingGroup` | `ProductionRoutingGroup` |
-| key `ProductionRouting` | `ProductionRouting` |
-| key `ProductionRoutingSequence` | `ProductionRoutingSequence` |
-| key `ProductionRoutingOpIntID` | `ProductionRoutingOpIntID` |
-| key `BOOCharacteristic` | `BOOCharacteristic` |
-| key `BOOCharacteristicVersion` | `BOOCharacteristicVersion` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `IsDeleted` | `IsDeleted` |
-| `InspectionMethodPlant` | `InspectionMethodPlant` |
-| `InspectionMethod` | `InspectionMethod` |
-| `InspectionMethodVersion` | `InspectionMethodVersion` |
-| `InspSpecImportanceCode` | `InspSpecImportanceCode` |
-| `InspectorQualification` | `InspectorQualification` |
-| `BOOOperationPRTInternalID` | `BOOOperationPRTInternalID` |
-| `InspectionSpecificationPlant` | `InspectionSpecificationPlant` |
-| `InspectionSpecification` | `InspectionSpecification` |
-| `InspectionSpecificationVersion` | `InspectionSpecificationVersion` |
-| `BOOCharcHasInspSpecReference` | `BOOCharcHasInspSpecReference` |
-| `InspSpecControlIndicators` | `InspSpecControlIndicators` |
-| `InspSpecIsQuantitative` | `InspSpecIsQuantitative` |
-| `InspSpecIsQualitative` | `InspSpecIsQualitative` |
-| `InspSpecIsMeasuredValueRqd` | `InspSpecIsMeasuredValueRqd` |
-| `InspSpecIsSelectedSetRequired` | `InspSpecIsSelectedSetRequired` |
-| `InspSpecIsUpperLimitRequired` | `InspSpecIsUpperLimitRequired` |
-| `InspSpecIsLowerLimitRequired` | `InspSpecIsLowerLimitRequired` |
-| `InspSpecIsTargetValueInLimit` | `InspSpecIsTargetValueInLimit` |
-| `InspectionScope` | `InspectionScope` |
-| `InspSpecIsLongTermInspection` | `InspSpecIsLongTermInspection` |
-| `InspSpecRecordingType` | `InspSpecRecordingType` |
-| `InspResultIsDocumentationRqd` | `InspResultIsDocumentationRqd` |
-| `InspSpecCharcCategory` | `InspSpecCharcCategory` |
-| `InspSpecIsSampleQtyAdditive` | `InspSpecIsSampleQtyAdditive` |
-| `InspSpecIsDestructive` | `InspSpecIsDestructive` |
-| `InspSpecResultCalculation` | `InspSpecResultCalculation` |
-| `InspSpecHasNoFormula` | `InspSpecHasNoFormula` |
-| `InspSpecIsSamplingProcedRqd` | `InspSpecIsSamplingProcedRqd` |
-| `InspSpecIsScrapRelevant` | `InspSpecIsScrapRelevant` |
-| `InspSpecHasFixedCtrlIndicators` | `InspSpecHasFixedCtrlIndicators` |
-| `InspSpecIsDefectRecordingRqd` | `InspSpecIsDefectRecordingRqd` |
-| `InspSpecIsTestEquipmentRqd` | `InspSpecIsTestEquipmentRqd` |
-| `InspSpecIsDefectsRecgAutomatic` | `InspSpecIsDefectsRecgAutomatic` |
-| `InspSpecIsChgDocRequired` | `InspSpecIsChgDocRequired` |
-| `InspSpecIsControlChartUsed` | `InspSpecIsControlChartUsed` |
-| `InspSpecPrintControl` | `InspSpecPrintControl` |
-| `InspToleranceSpecification` | `InspToleranceSpecification` |
-| `InspSpecDecimalPlaces` | `InspSpecDecimalPlaces` |
-| `InspectionSpecificationUnit` | `InspectionSpecificationUnit` |
-| `InspSpecTargetValue` | `InspSpecTargetValue` |
-| `InspSpecHasTargetValue` | `InspSpecHasTargetValue` |
-| `InspSpecUpperLimit` | `InspSpecUpperLimit` |
-| `InspSpecLowerLimit` | `InspSpecLowerLimit` |
-| `InspSpecHasUpperLimit` | `InspSpecHasUpperLimit` |
-| `InspSpecHasLowerLimit` | `InspSpecHasLowerLimit` |
-| `InspSpecUpperPlausibilityLimit` | `InspSpecUpperPlausibilityLimit` |
-| `InspSpecHasUprPlausibilityLmt` | `InspSpecHasUprPlausibilityLmt` |
-| `InspSpecLowerPlausibilityLimit` | `InspSpecLowerPlausibilityLimit` |
-| `InspSpecHasLowrPlausibilityLmt` | `InspSpecHasLowrPlausibilityLmt` |
-| `InspSpecFirstUpperSpecLimit` | `InspSpecFirstUpperSpecLimit` |
-| `InspSpecHasFirstUpperSpecLimit` | `InspSpecHasFirstUpperSpecLimit` |
-| `InspSpecFirstLowerSpecLimit` | `InspSpecFirstLowerSpecLimit` |
-| `InspSpecHasFirstLowerSpecLimit` | `InspSpecHasFirstLowerSpecLimit` |
-| `InspSpecSecondUpperSpecLimit` | `InspSpecSecondUpperSpecLimit` |
-| `InspSpecHasSecondUprSpecLimit` | `InspSpecHasSecondUprSpecLimit` |
-| `InspSpecSecondLowerSpecLimit` | `InspSpecSecondLowerSpecLimit` |
-| `InspSpecHasSecondLowrSpecLimit` | `InspSpecHasSecondLowrSpecLimit` |
-| `InspSpecToleranceChgValidFrom` | `InspSpecToleranceChgValidFrom` |
-| `InspSpecToleranceChgValidTo` | `InspSpecToleranceChgValidTo` |
-| `InspSpecUpperSpecLimitChange` | `InspSpecUpperSpecLimitChange` |
-| `InspSpecHasUprSpecLimitChange` | `InspSpecHasUprSpecLimitChange` |
-| `InspSpecLowerSpecLimitChange` | `InspSpecLowerSpecLimitChange` |
-| `InspSpecHasLowrSpecLimitChange` | `InspSpecHasLowrSpecLimitChange` |
-| `InspSpecNumberOfClasses` | `InspSpecNumberOfClasses` |
-| `InspSpecClassWidthQty` | `InspSpecClassWidthQty` |
-| `InspSpecHasClassWidth` | `InspSpecHasClassWidth` |
-| `InspSpecClassMidpointQty` | `InspSpecClassMidpointQty` |
-| `InspSpecHasClassMidpoint` | `InspSpecHasClassMidpoint` |
-| `InspSpecHasFormula` | `InspSpecHasFormula` |
-| `InspSpecFormula1` | `InspSpecFormula1` |
-| `InspSpecFormula2` | `InspSpecFormula2` |
-| `InspSpecDefectCodeGrpRejection` | `InspSpecDefectCodeGrpRejection` |
-| `InspSpecDefectCodeRejection` | `InspSpecDefectCodeRejection` |
-| `InspSpecDefectCodeGrpRjcnUpper` | `InspSpecDefectCodeGrpRjcnUpper` |
-| `InspSpecDefectCodeRjcnUpper` | `InspSpecDefectCodeRjcnUpper` |
-| `InspSpecDefectCodeGrpRjcnLower` | `InspSpecDefectCodeGrpRjcnLower` |
-| `InspSpecDefectCodeRjcnLower` | `InspSpecDefectCodeRjcnLower` |
-| `SelectedCodeSet` | `SelectedCodeSet` |
-| `SelectedCodeSetPlant` | `SelectedCodeSetPlant` |
-| `InspSpecAdditionalCatalog2` | `InspSpecAdditionalCatalog2` |
-| `InspSpecAdditionalSelectedSet2` | `InspSpecAdditionalSelectedSet2` |
-| `InspSpecAdditionalCodeGroup2` | `InspSpecAdditionalCodeGroup2` |
-| `InspSpecAddlSeldCodeSetPlant2` | `InspSpecAddlSeldCodeSetPlant2` |
-| `InspSpecAdditionalCatalog3` | `InspSpecAdditionalCatalog3` |
-| `InspSpecAdditionalSelectedSet3` | `InspSpecAdditionalSelectedSet3` |
-| `InspSpecAdditionalCodeGroup3` | `InspSpecAdditionalCodeGroup3` |
-| `InspSpecAddlSeldCodeSetPlant3` | `InspSpecAddlSeldCodeSetPlant3` |
-| `InspSpecAdditionalCatalog4` | `InspSpecAdditionalCatalog4` |
-| `InspSpecAdditionalSelectedSet4` | `InspSpecAdditionalSelectedSet4` |
-| `InspSpecAdditionalCodeGroup4` | `InspSpecAdditionalCodeGroup4` |
-| `InspSpecAddlSeldCodeSetPlant4` | `InspSpecAddlSeldCodeSetPlant4` |
-| `InspSpecAdditionalCatalog5` | `InspSpecAdditionalCatalog5` |
-| `InspSpecAdditionalSelectedSet5` | `InspSpecAdditionalSelectedSet5` |
-| `InspSpecAdditionalCodeGroup5` | `InspSpecAdditionalCodeGroup5` |
-| `InspSpecAddlSeldCodeSetPlant5` | `InspSpecAddlSeldCodeSetPlant5` |
-| `SamplingProcedure` | `SamplingProcedure` |
-| `InspCharacteristicSampleUnit` | `InspCharacteristicSampleUnit` |
-| `BOOCharcSampleQuantity` | `BOOCharcSampleQuantity` |
-| `InspSpecInformationField1` | `InspSpecInformationField1` |
-| `InspSpecInformationField2` | `InspSpecInformationField2` |
-| `InspSpecInformationField3` | `InspSpecInformationField3` |
-| `InspectionSpecificationText` | `InspectionSpecificationText` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `MatlIsConsideredForDynModif` | `MatlIsConsideredForDynModif` |
-| `SuplrIsConsideredForDynModif` | `SuplrIsConsideredForDynModif` |
-| `MfrIsConsideredForDynModif` | `MfrIsConsideredForDynModif` |
-| `CustIsConsideredForDynModif` | `CustIsConsideredForDynModif` |
-| `InspLotDynamicRule` | `InspLotDynamicRule` |
-| `InspCharcDynModifRef` | `InspCharcDynModifRef` |
-| `QltyCtrlChartAggrgnCriterion` | `QltyCtrlChartAggrgnCriterion` |
-| `InspSpecInputProcedure` | `InspSpecInputProcedure` |
-| `BOOCharcGroup` | `BOOCharcGroup` |
-| `BOOCharcSourceCharc` | `BOOCharcSourceCharc` |
-| `BOOCharcGroupDivision` | `BOOCharcGroupDivision` |
-| `BillOfOperationsVersion` | `BillOfOperationsVersion` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_NonSqncTP` | *Association* |
-| `_Header` | *Association* |
-| `_ProdnRtgTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |
+| `ProductionRouting` | ✓ | |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |
+| `ProductionRoutingOpIntID` | ✓ | |  |  |
+| `BOOCharacteristic` | ✓ | |  |  |
+| `BOOCharacteristicVersion` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `InspectionMethodPlant` |  | |  |  |
+| `InspectionMethod` |  | |  |  |
+| `InspectionMethodVersion` |  | |  |  |
+| `InspSpecImportanceCode` |  | |  |  |
+| `InspectorQualification` |  | |  |  |
+| `BOOOperationPRTInternalID` |  | |  |  |
+| `InspectionSpecificationPlant` |  | |  |  |
+| `InspectionSpecification` |  | |  |  |
+| `InspectionSpecificationVersion` |  | |  |  |
+| `BOOCharcHasInspSpecReference` |  | |  |  |
+| `InspSpecControlIndicators` |  | |  |  |
+| `InspSpecIsQuantitative` |  | |  |  |
+| `InspSpecIsQualitative` |  | |  |  |
+| `InspSpecIsMeasuredValueRqd` |  | |  |  |
+| `InspSpecIsSelectedSetRequired` |  | |  |  |
+| `InspSpecIsUpperLimitRequired` |  | |  |  |
+| `InspSpecIsLowerLimitRequired` |  | |  |  |
+| `InspSpecIsTargetValueInLimit` |  | |  |  |
+| `InspectionScope` |  | |  |  |
+| `InspSpecIsLongTermInspection` |  | |  |  |
+| `InspSpecRecordingType` |  | |  |  |
+| `InspResultIsDocumentationRqd` |  | |  |  |
+| `InspSpecCharcCategory` |  | |  |  |
+| `InspSpecIsSampleQtyAdditive` |  | |  |  |
+| `InspSpecIsDestructive` |  | |  |  |
+| `InspSpecResultCalculation` |  | |  |  |
+| `InspSpecHasNoFormula` |  | |  |  |
+| `InspSpecIsSamplingProcedRqd` |  | |  |  |
+| `InspSpecIsScrapRelevant` |  | |  |  |
+| `InspSpecHasFixedCtrlIndicators` |  | |  |  |
+| `InspSpecIsDefectRecordingRqd` |  | |  |  |
+| `InspSpecIsTestEquipmentRqd` |  | |  |  |
+| `InspSpecIsDefectsRecgAutomatic` |  | |  |  |
+| `InspSpecIsChgDocRequired` |  | |  |  |
+| `InspSpecIsControlChartUsed` |  | |  |  |
+| `InspSpecPrintControl` |  | |  |  |
+| `InspToleranceSpecification` |  | |  |  |
+| `InspSpecDecimalPlaces` |  | |  |  |
+| `InspectionSpecificationUnit` |  | |  |  |
+| `InspSpecTargetValue` |  | |  |  |
+| `InspSpecHasTargetValue` |  | |  |  |
+| `InspSpecUpperLimit` |  | |  |  |
+| `InspSpecLowerLimit` |  | |  |  |
+| `InspSpecHasUpperLimit` |  | |  |  |
+| `InspSpecHasLowerLimit` |  | |  |  |
+| `InspSpecUpperPlausibilityLimit` |  | |  |  |
+| `InspSpecHasUprPlausibilityLmt` |  | |  |  |
+| `InspSpecLowerPlausibilityLimit` |  | |  |  |
+| `InspSpecHasLowrPlausibilityLmt` |  | |  |  |
+| `InspSpecFirstUpperSpecLimit` |  | |  |  |
+| `InspSpecHasFirstUpperSpecLimit` |  | |  |  |
+| `InspSpecFirstLowerSpecLimit` |  | |  |  |
+| `InspSpecHasFirstLowerSpecLimit` |  | |  |  |
+| `InspSpecSecondUpperSpecLimit` |  | |  |  |
+| `InspSpecHasSecondUprSpecLimit` |  | |  |  |
+| `InspSpecSecondLowerSpecLimit` |  | |  |  |
+| `InspSpecHasSecondLowrSpecLimit` |  | |  |  |
+| `InspSpecToleranceChgValidFrom` |  | |  |  |
+| `InspSpecToleranceChgValidTo` |  | |  |  |
+| `InspSpecUpperSpecLimitChange` |  | |  |  |
+| `InspSpecHasUprSpecLimitChange` |  | |  |  |
+| `InspSpecLowerSpecLimitChange` |  | |  |  |
+| `InspSpecHasLowrSpecLimitChange` |  | |  |  |
+| `InspSpecNumberOfClasses` |  | |  |  |
+| `InspSpecClassWidthQty` |  | |  |  |
+| `InspSpecHasClassWidth` |  | |  |  |
+| `InspSpecClassMidpointQty` |  | |  |  |
+| `InspSpecHasClassMidpoint` |  | |  |  |
+| `InspSpecHasFormula` |  | |  |  |
+| `InspSpecFormula1` |  | |  |  |
+| `InspSpecFormula2` |  | |  |  |
+| `InspSpecDefectCodeGrpRejection` |  | |  |  |
+| `InspSpecDefectCodeRejection` |  | |  |  |
+| `InspSpecDefectCodeGrpRjcnUpper` |  | |  |  |
+| `InspSpecDefectCodeRjcnUpper` |  | |  |  |
+| `InspSpecDefectCodeGrpRjcnLower` |  | |  |  |
+| `InspSpecDefectCodeRjcnLower` |  | |  |  |
+| `SelectedCodeSet` |  | |  |  |
+| `SelectedCodeSetPlant` |  | |  |  |
+| `InspSpecAdditionalCatalog2` |  | |  |  |
+| `InspSpecAdditionalSelectedSet2` |  | |  |  |
+| `InspSpecAdditionalCodeGroup2` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant2` |  | |  |  |
+| `InspSpecAdditionalCatalog3` |  | |  |  |
+| `InspSpecAdditionalSelectedSet3` |  | |  |  |
+| `InspSpecAdditionalCodeGroup3` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant3` |  | |  |  |
+| `InspSpecAdditionalCatalog4` |  | |  |  |
+| `InspSpecAdditionalSelectedSet4` |  | |  |  |
+| `InspSpecAdditionalCodeGroup4` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant4` |  | |  |  |
+| `InspSpecAdditionalCatalog5` |  | |  |  |
+| `InspSpecAdditionalSelectedSet5` |  | |  |  |
+| `InspSpecAdditionalCodeGroup5` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant5` |  | |  |  |
+| `SamplingProcedure` |  | |  |  |
+| `InspCharacteristicSampleUnit` |  | |  |  |
+| `BOOCharcSampleQuantity` |  | |  |  |
+| `InspSpecInformationField1` |  | |  |  |
+| `InspSpecInformationField2` |  | |  |  |
+| `InspSpecInformationField3` |  | |  |  |
+| `InspectionSpecificationText` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `MatlIsConsideredForDynModif` |  | |  |  |
+| `SuplrIsConsideredForDynModif` |  | |  |  |
+| `MfrIsConsideredForDynModif` |  | |  |  |
+| `CustIsConsideredForDynModif` |  | |  |  |
+| `InspLotDynamicRule` |  | |  |  |
+| `InspCharcDynModifRef` |  | |  |  |
+| `QltyCtrlChartAggrgnCriterion` |  | |  |  |
+| `InspSpecInputProcedure` |  | |  |  |
+| `BOOCharcGroup` |  | |  |  |
+| `BOOCharcSourceCharc` |  | |  |  |
+| `BOOCharcGroupDivision` |  | |  |  |
+| `BillOfOperationsVersion` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_NonSqncTP` | | ✓ | | |
+| `_Header` | | ✓ | | |
+| `_ProdnRtgTP` | | ✓ | | |
 
 ## Source Code
 

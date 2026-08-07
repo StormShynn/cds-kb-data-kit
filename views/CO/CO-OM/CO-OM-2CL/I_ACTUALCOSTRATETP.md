@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingCostRateUUID` | `AccountingCostRateUUID` |
-| `CompanyCode` | `CompanyCode` |
-| `CostCenter` | `CostCenter` |
-| `ActivityType` | `ActivityType` |
-| `Currency` | `Currency` |
-| `ControllingArea` | `ControllingArea` |
-| `CurrencyRole` | `CurrencyRole` |
-| `ValidityStartFiscalYear` | `ValidityStartFiscalYear` |
-| `ValidityStartFiscalPeriod` | `ValidityStartFiscalPeriod` |
-| `ValidityEndFiscalYear` | `ValidityEndFiscalYear` |
-| `ValidityEndFiscalPeriod` | `ValidityEndFiscalPeriod` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `CostRateFixedAmount` | `CostRateFixedAmount` |
-| `CostRateVarblAmount` | `CostRateVarblAmount` |
-| `CostRateScaleFactor` | `CostRateScaleFactor` |
-| `CostCtrActivityTypeQtyUnit` | `CostCtrActivityTypeQtyUnit` |
-| `Ledger` | `Ledger` |
-| `CostRateIsOverwriteMode` | `CostRateIsOverwriteMode` |
-| `_CostCenter` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ControllingAreaText` | *Association* |
-| `_CostCtrActivityTypeText` | *Association* |
-| `_LedgerText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingCostRateUUID` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `Currency` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CurrencyRole` |  | |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `CostRateFixedAmount` |  | |  |  |
+| `CostRateVarblAmount` |  | |  |  |
+| `CostRateScaleFactor` |  | |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `CostRateIsOverwriteMode` |  | |  |  |
+| `_CostCenter` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingAreaText` | | ✓ | | |
+| `_CostCtrActivityTypeText` | | ✓ | | |
+| `_LedgerText` | | ✓ | | |
 
 ## Source Code
 

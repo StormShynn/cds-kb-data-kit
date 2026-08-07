@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerRatingProcedure` | `BusinessPartnerRatingProcedure` |
-| key `BusinessPartnerRatingGrade` | `BusinessPartnerRatingGrade` |
-| `BusinessPartnerRatingRanking` | `BusinessPartnerRatingRanking` |
-| `_RatingProcedure` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerRatingProcedure` | ✓ | |  |  |
+| `BusinessPartnerRatingGrade` | ✓ | |  |  |
+| `BusinessPartnerRatingRanking` |  | |  |  |
+| `_RatingProcedure` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

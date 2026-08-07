@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `I_CostAnalysisResource.ControllingArea` |
-| key `CostAnalysisResource` | `I_CostAnalysisResource.CostAnalysisResource` |
-| key `ValidityEndDate` | `I_CostAnalysisResource.ValidityEndDate` |
-| `ValidityStartDate` | `I_CostAnalysisResource.ValidityStartDate` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |
+| `CostAnalysisResource` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
 
 ## Source Code
 

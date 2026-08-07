@@ -29,68 +29,68 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StatisticalKeyFigure` | `P_Finsskf.stagr` |
-| key `StatisticalKeyFigureItem` | `P_Finsskf.recid` |
-| key `ValidityStartDate` | `P_Finsskf.date_from` |
-| `StatisticalKeyFigureCategory` | `P_Finsskf.grtyp` |
-| `StatisticalKeyFigQtyUnit` | `P_Finsskf.runit` |
-| `StatisticalKeyFigureQuantity` | `} P_Finsskf.msl` |
-| `LastChangeDateTime` | `P_Finsskf.timestamp` |
-| `CompanyCode` | `P_Finsskf.rbukrs` |
-| `GLRecordType` | `P_Finsskf.rrcty` |
-| `PlanningCategory` | `P_Finsskf.category` |
-| `CostCenter` | `P_Finsskf.rcntr` |
-| `ProfitCenter` | `P_Finsskf.prctr` |
-| `FunctionalArea` | `P_Finsskf.rfarea` |
-| `BusinessArea` | `P_Finsskf.rbusa` |
-| `ControllingArea` | `P_Finsskf.kokrs` |
-| `Segment` | `P_Finsskf.segment` |
-| `ControllingBusTransacType` | `P_Finsskf.vorgn` |
-| `AccountAssignmentType` | `P_Finsskf.accasty` |
-| `LogicalSystem` | `P_Finsskf.logsys` |
-| `ControllingObject` | `P_Finsskf.objnr` |
-| `ControllingKeySubNumber` | `P_Finsskf.hrkft` |
-| `ControllingObjectClass` | `P_Finsskf.scope` |
-| `OrderID` | `P_Finsskf.aufnr` |
-| `OrderCategory` | `P_Finsskf.autyp` |
-| `WBSElementInternalID` | `P_Finsskf.ps_psp_pnr` |
-| `WBSElement` | `P_Finsskf.ps_posid` |
-| `ProjectInternalID` | `P_Finsskf.ps_prj_pnr` |
-| `Project` | `P_Finsskf.ps_pspid` |
-| `CostObject` | `P_Finsskf.kstrg` |
-| `Fund` | `P_Finsskf.rfund` |
-| `GrantID` | `P_Finsskf.rgrant_nbr` |
-| `BudgetPeriod` | `P_Finsskf.rbudget_pd` |
-| `SalesDocument` | `P_Finsskf.kdauf` |
-| `SalesDocumentItem` | `P_Finsskf.kdpos` |
-| `CostCtrActivityType` | `P_Finsskf.lstar` |
-| `ServiceDocumentType` | `P_Finsskf.service_doc_type` |
-| `ServiceDocument` | `P_Finsskf.service_doc_id` |
-| `ServiceDocumentItem` | `P_Finsskf.service_doc_item_id` |
-| `_FiscalCalYearPeriodForLedger` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_CostCenter` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_StatisticalKeyFigure` | *Association* |
-| `_StatisticalKeyFigureCat` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Segment` | *Association* |
-| `_FunctionalArea` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_Order` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
-| `_ControllingObject` | *Association* |
-| `_BudgetPeriod` | *Association* |
-| `_PlanningCategory` | *Association* |
-| `_ProjectBasicData` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_ServiceDocument` | *Association* |
-| `_ServiceDocumentItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatisticalKeyFigure` | ✓ | |  | `stagr` |
+| `StatisticalKeyFigureItem` | ✓ | |  | `recid` |
+| `ValidityStartDate` | ✓ | |  | `date_from` |
+| `StatisticalKeyFigureCategory` |  | |  | `grtyp` |
+| `StatisticalKeyFigQtyUnit` |  | |  | `runit` |
+| `StatisticalKeyFigureQuantity` |  | |  | `} P_Finsskf.msl` |
+| `LastChangeDateTime` |  | |  | `timestamp` |
+| `CompanyCode` |  | |  | `rbukrs` |
+| `GLRecordType` |  | |  | `rrcty` |
+| `PlanningCategory` |  | |  | `category` |
+| `CostCenter` |  | |  | `rcntr` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `FunctionalArea` |  | |  | `rfarea` |
+| `BusinessArea` |  | |  | `rbusa` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `Segment` |  | |  | `segment` |
+| `ControllingBusTransacType` |  | |  | `vorgn` |
+| `AccountAssignmentType` |  | |  | `accasty` |
+| `LogicalSystem` |  | |  | `logsys` |
+| `ControllingObject` |  | |  | `objnr` |
+| `ControllingKeySubNumber` |  | |  | `hrkft` |
+| `ControllingObjectClass` |  | |  | `scope` |
+| `OrderID` |  | |  | `aufnr` |
+| `OrderCategory` |  | |  | `autyp` |
+| `WBSElementInternalID` |  | |  | `ps_psp_pnr` |
+| `WBSElement` |  | |  | `ps_posid` |
+| `ProjectInternalID` |  | |  | `ps_prj_pnr` |
+| `Project` |  | |  | `ps_pspid` |
+| `CostObject` |  | |  | `kstrg` |
+| `Fund` |  | |  | `rfund` |
+| `GrantID` |  | |  | `rgrant_nbr` |
+| `BudgetPeriod` |  | |  | `rbudget_pd` |
+| `SalesDocument` |  | |  | `kdauf` |
+| `SalesDocumentItem` |  | |  | `kdpos` |
+| `CostCtrActivityType` |  | |  | `lstar` |
+| `ServiceDocumentType` |  | |  | `service_doc_type` |
+| `ServiceDocument` |  | |  | `service_doc_id` |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |
+| `_FiscalCalYearPeriodForLedger` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_StatisticalKeyFigure` | | ✓ | | |
+| `_StatisticalKeyFigureCat` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Segment` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
+| `_ControllingObject` | | ✓ | | |
+| `_BudgetPeriod` | | ✓ | | |
+| `_PlanningCategory` | | ✓ | | |
+| `_ProjectBasicData` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_ServiceDocument` | | ✓ | | |
+| `_ServiceDocumentItem` | | ✓ | | |
 
 ## Associations
 

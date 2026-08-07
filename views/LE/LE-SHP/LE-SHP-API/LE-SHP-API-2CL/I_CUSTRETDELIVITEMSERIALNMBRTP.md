@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturnDelivery` | `CustomerReturnDelivery` |
-| key `CustomerReturnDeliveryItem` | `CustomerReturnDeliveryItem` |
-| key `SerialNumber` | `SerialNumber` |
-| `Equipment` | `Equipment` |
-| `Material` | `Material` |
-| `_Delivery` | *Association* |
-| `_Item` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturnDelivery` | ✓ | |  |  |
+| `CustomerReturnDeliveryItem` | ✓ | |  |  |
+| `SerialNumber` | ✓ | |  |  |
+| `Equipment` |  | |  |  |
+| `Material` |  | |  |  |
+| `_Delivery` | | ✓ | | |
+| `_Item` | | ✓ | | |
 
 ## Source Code
 

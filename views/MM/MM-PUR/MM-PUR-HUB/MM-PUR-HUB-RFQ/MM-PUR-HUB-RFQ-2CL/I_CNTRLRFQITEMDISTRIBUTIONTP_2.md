@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralRequestForQuotation` | `CentralRequestForQuotation` |
-| key `CentralRequestForQuotationItem` | `CentralRequestForQuotationItem` |
-| key `DistributionKey` | `DistributionKey` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `PurchasingDocumentType` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `CompanyCode` | `CompanyCode` |
-| `Plant` | `Plant` |
-| `LogicalSystem` | `LogicalSystem` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `Currency` | `Currency` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `StorageLocation` | `StorageLocation` |
-| `CntrlPurgDistributionInPercent` | `CntrlPurgDistributionInPercent` |
-| `TargetQuantity` | `TargetQuantity` |
-| `PurgDocItmDistrLineDeltnCode` | `PurgDocItmDistrLineDeltnCode` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `DistributionType` | `DistributionType` |
-| `ProcurementHubSourceSystem` | `ProcurementHubSourceSystem` |
-| `ProcmtHubPurchaseRequisition` | `ProcmtHubPurchaseRequisition` |
-| `ProcmtHubPurRequisitionItem` | `ProcmtHubPurRequisitionItem` |
-| `PurReqnReleaseStatus` | `PurReqnReleaseStatus` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_CentralReqForQuotationItem` | *Association* |
-| `_CntrlRFQ` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralRequestForQuotation` | ✓ | |  |  |
+| `CentralRequestForQuotationItem` | ✓ | |  |  |
+| `DistributionKey` | ✓ | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `Currency` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `CntrlPurgDistributionInPercent` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `PurgDocItmDistrLineDeltnCode` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `DistributionType` |  | |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |
+| `ProcmtHubPurchaseRequisition` |  | |  |  |
+| `ProcmtHubPurRequisitionItem` |  | |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_CentralReqForQuotationItem` | | ✓ | | |
+| `_CntrlRFQ` | | ✓ | | |
 
 ## Source Code
 

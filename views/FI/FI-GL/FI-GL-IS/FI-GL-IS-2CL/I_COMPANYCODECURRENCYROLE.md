@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `comp_finsc_001a.bukrs` |
-| key `CurrencyRole` | `comp_finsc_001a.curtype` |
-| `Currency` | `comp_finsc_001a.waers` |
-| `_Currency` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_CurrencyRole` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CurrencyRole` | ✓ | |  | `curtype` |
+| `Currency` |  | |  | `waers` |
+| `_Currency` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_CurrencyRole` | | ✓ | | |
 
 ## Associations
 

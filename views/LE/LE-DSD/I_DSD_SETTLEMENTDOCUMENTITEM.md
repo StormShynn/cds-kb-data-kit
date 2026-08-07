@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DSD_SettlementDocument` | `_Item.sld_doc_id` |
-| key `DSD_TourNumber` | `_Item.tour_id` |
-| `TourDocumentType` | `_Item.obj_typ` |
-| `TourDocumentNumber` | `_Item.obj_id` |
-| `Plant` | `_Header.plant` |
-| `_TourDocumentType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DSD_SettlementDocument` | ✓ | | `_Item` | `sld_doc_id` |
+| `DSD_TourNumber` | ✓ | | `_Item` | `tour_id` |
+| `TourDocumentType` |  | | `_Item` | `obj_typ` |
+| `TourDocumentNumber` |  | | `_Item` | `obj_id` |
+| `Plant` |  | | `_Header` | `plant` |
+| `_TourDocumentType` | | ✓ | | |
 
 ## Associations
 

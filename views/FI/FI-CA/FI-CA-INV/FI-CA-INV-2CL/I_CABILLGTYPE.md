@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgType` | `_tfk8112.bill_type` |
-| `_CABillgTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgType` | ✓ | | `_tfk8112` | `bill_type` |
+| `_CABillgTypeText` | | ✓ | | |
 
 ## Associations
 

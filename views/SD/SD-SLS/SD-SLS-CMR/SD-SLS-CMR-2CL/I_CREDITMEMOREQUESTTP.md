@@ -30,62 +30,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `CreditMemoRequest.CreditMemoRequest` |
-| `CreditMemoRequestType` | `CreditMemoRequest.CreditMemoRequestType` |
-| `CreditMemoRequestDate` | `CreditMemoRequest.CreditMemoRequestDate` |
-| `ControllingArea` | `CreditMemoRequest.ControllingArea` |
-| `SoldToParty` | `CreditMemoRequest.SoldToParty` |
-| `CustomerName` | `CreditMemoRequest.CustomerName` |
-| `SalesOrganization` | `CreditMemoRequest.SalesOrganization` |
-| `DistributionChannel` | `CreditMemoRequest.DistributionChannel` |
-| `OrganizationDivision` | `CreditMemoRequest.OrganizationDivision` |
-| `ReferenceDistributionChannel` | `CreditMemoRequest.ReferenceDistributionChannel` |
-| `SalesOffice` | `CreditMemoRequest.SalesOffice` |
-| `SalesGroup` | `CreditMemoRequest.SalesGroup` |
-| `SalesDistrict` | `CreditMemoRequest.SalesDistrict` |
-| `PurchaseOrderByCustomer` | `CreditMemoRequest.PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderType` | `CreditMemoRequest.CustomerPurchaseOrderType` |
-| `CustomerPurchaseOrderDate` | `CreditMemoRequest.CustomerPurchaseOrderDate` |
-| `CustomerGroup` | `CreditMemoRequest.CustomerGroup` |
-| `SDDocumentReason` | `CreditMemoRequest.SDDocumentReason` |
-| `PricingDate` | `CreditMemoRequest.PricingDate` |
-| `TotalNetAmount` | `CreditMemoRequest.TotalNetAmount` |
-| `TransactionCurrency` | `CreditMemoRequest.TransactionCurrency` |
-| `HeaderBillingBlockReason` | `CreditMemoRequest.HeaderBillingBlockReason` |
-| `SDPricingProcedure` | `CreditMemoRequest.SDPricingProcedure` |
-| `IncotermsClassification` | `CreditMemoRequest.IncotermsClassification` |
-| `IncotermsVersion` | `CreditMemoRequest.IncotermsVersion` |
-| `IncotermsLocation1` | `CreditMemoRequest.IncotermsLocation1` |
-| `IncotermsLocation2` | `CreditMemoRequest.IncotermsLocation2` |
-| `CustomerPaymentTerms` | `CreditMemoRequest.CustomerPaymentTerms` |
-| `BillingCompanyCode` | `CreditMemoRequest.BillingCompanyCode` |
-| `PaymentMethod` | `CreditMemoRequest.PaymentMethod` |
-| `BillingDocumentDate` | `CreditMemoRequest.BillingDocumentDate` |
-| `ServicesRenderedDate` | `CreditMemoRequest.ServicesRenderedDate` |
-| `ReferenceSDDocument` | `CreditMemoRequest.ReferenceSDDocument` |
-| `ReferenceSDDocumentCategory` | `CreditMemoRequest.ReferenceSDDocumentCategory` |
-| `CreatedByUser` | `CreditMemoRequest.CreatedByUser` |
-| `CreationDate` | `CreditMemoRequest.CreationDate` |
-| `CreationTime` | `CreditMemoRequest.CreationTime` |
-| `SalesDocumentCreationDateTime` | `CreditMemoRequest.SalesDocumentCreationDateTime` |
-| `LastChangedByUser` | `CreditMemoRequest.LastChangedByUser` |
-| `LastChangeDateTime` | `CreditMemoRequest.LastChangeDateTime` |
-| `CreditMemoReqApprovalReason` | `CreditMemoRequest.CreditMemoReqApprovalReason` |
-| `SalesDocApprovalStatus` | `CreditMemoRequest.SalesDocApprovalStatus` |
-| `OverallBillingBlockStatus` | `CreditMemoRequest.OverallBillingBlockStatus` |
-| `OverallSDProcessStatus` | `CreditMemoRequest.OverallSDProcessStatus` |
-| `OverallSDDocumentRejectionSts` | `CreditMemoRequest.OverallSDDocumentRejectionSts` |
-| `OverallOrdReltdBillgStatus` | `CreditMemoRequest.OverallOrdReltdBillgStatus` |
-| `TotalBlockStatus` | `CreditMemoRequest.TotalBlockStatus` |
-| `HdrGeneralIncompletionStatus` | `CreditMemoRequest.HdrGeneralIncompletionStatus` |
-| `OvrlItmGeneralIncompletionSts` | `CreditMemoRequest.OvrlItmGeneralIncompletionSts` |
-| `OverallSDDocReferenceStatus` | `CreditMemoRequest.OverallSDDocReferenceStatus` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_Text` | *Association* |
-| `_PricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |
+| `CreditMemoRequestType` |  | |  |  |
+| `CreditMemoRequestDate` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `CustomerName` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `ReferenceDistributionChannel` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |
+| `SDPricingProcedure` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `BillingCompanyCode` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `SalesDocumentCreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreditMemoReqApprovalReason` |  | |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |
+| `OverallBillingBlockStatus` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |
+| `OverallOrdReltdBillgStatus` |  | |  |  |
+| `TotalBlockStatus` |  | |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
 
 ## Source Code
 

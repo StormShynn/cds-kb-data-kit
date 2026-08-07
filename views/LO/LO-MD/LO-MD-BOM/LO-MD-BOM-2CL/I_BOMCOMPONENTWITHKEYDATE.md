@@ -29,115 +29,115 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterialCategory` | `valid_items.BillOfMaterialCategory` |
-| key `BillOfMaterial` | `valid_items.BillOfMaterial` |
-| key `BillOfMaterialVariant` | `valid_items.BillOfMaterialVariant` |
-| key `BillOfMaterialItemNodeNumber` | `valid_items.BillOfMaterialItemNodeNumber` |
-| key `BillOfMaterialVersion` | `valid_items.BillOfMaterialVersion` |
-| key `BOMItemInternalChangeCount` | `valid_items.BOMItemInternalChangeCount` |
-| `ValidityStartDate` | `valid_items.ValidityStartDate` |
-| `ValidityEndDate` | `valid_items.ValidityEndDate` |
-| `EngineeringChangeDocument` | `valid_items.EngineeringChangeDocument` |
-| `ChgToEngineeringChgDocument` | `cast( valid_items.ChgToEngineeringChgDocument as aenra preserving type )` |
-| `InheritedNodeNumberForBOMItem` | `valid_items.InheritedNodeNumberForBOMItem` |
-| `InheritedNodeNumberVersionBOM` | `valid_items.InheritedNodeNumberVersionBOM` |
-| `BOMItemRecordCreationDate` | `valid_items.BOMItemRecordCreationDate` |
-| `BOMItemCreatedByUser` | `valid_items.BOMItemCreatedByUser` |
-| `BOMItemLastChangeDate` | `valid_items.BOMItemLastChangeDate` |
-| `BOMItemLastChangedByUser` | `valid_items.BOMItemLastChangedByUser` |
-| `BillOfMaterialComponent` | `valid_items.BillOfMaterialComponent` |
-| `BillOfMaterialItemCategory` | `valid_items.BillOfMaterialItemCategory` |
-| `BillOfMaterialItemNumber` | `valid_items.BillOfMaterialItemNumber` |
-| `BillOfMaterialItemUnit` | `case when _BOMItemCategory.FixedItemCategory = 'R' then UnitOfMeasureForVarSizeItem else valid_items.BillOfMaterialItemUnit end` |
-| `BillOfMaterialItemQuantity` | `case when _BOMItemCategory.FixedItemCategory = 'R' then NumberOfVariableSizeItem else valid_items.BillOfMaterialItemQuantity end` |
-| `IsAssembly` | `cast( valid_items.IsAssembly as stlkz preserving type )` |
-| `IsSubItem` | `valid_items.IsSubItem` |
-| `BOMItemSorter` | `valid_items.BOMItemSorter` |
-| `FixedQuantity` | `valid_items.FixedQuantity` |
-| `BOMItemHasFixedQuantity` | `valid_items.BOMItemHasFixedQuantity` |
-| `PurchasingGroup` | `valid_items.PurchasingGroup` |
-| `Currency` | `valid_items.Currency` |
-| `MaterialComponentPrice` | `valid_items.MaterialComponentPrice` |
-| `IdentifierBOMItem` | `valid_items.IdentifierBOMItem` |
-| `MaterialPriceUnitQty` | `valid_items.MaterialPriceUnitQty` |
-| `ComponentScrapInPercent` | `valid_items.ComponentScrapInPercent` |
-| `OperationScrapInPercent` | `valid_items.OperationScrapInPercent` |
-| `IsNetScrap` | `valid_items.IsNetScrap` |
-| `NumberOfVariableSizeItem` | `valid_items.NumberOfVariableSizeItem` |
-| `QuantityVariableSizeItem` | `valid_items.QuantityVariableSizeItem` |
-| `FormulaKey` | `valid_items.FormulaKey` |
-| `ComponentDescription` | `case when _BOMItemCategory.FixedItemCategory = 'L' or _BOMItemCategory.FixedItemCategory = 'C' then case when _MaterialText.MaterialName is not null or _MaterialText.MaterialName <> '' then _MaterialText.MaterialName else _MaterialTextEN.MaterialName end when _BOMItemCategory.FixedItemCategory = 'T' then valid_items.BOMItemDescription when _BOMItemCategory.FixedItemCategory = 'R' and (valid_items.BillOfMaterialComponent is not null) then case when _MaterialText.MaterialName is not null or _MaterialText.MaterialName <> '' then _MaterialText.MaterialName else _MaterialTextEN.MaterialName end when _BOMItemCategory.FixedItemCategory = 'R' and (valid_items.BillOfMaterialComponent = '') then valid_items.BOMItemDescription when _BOMItemCategory.FixedItemCategory = 'D' then case when _DocumentText.DocumentDescription is not null or _DocumentText.DocumentDescription <> '' then _DocumentText.DocumentDescription else _DocumentTextEN.DocumentDescription end when _BOMItemCategory.FixedItemCategory = 'K' then case when _Class._ClassDescription[1:Language = $session.system_language].ClassDescription is not null or _Class._ClassDescription[1:Language = $session.system_language].ClassDescription <> '' then _Class._ClassDescription[1:Language = $session.system_language].ClassDescription else _Class._ClassDescription[1:Language = 'E'].ClassDescription end when _BOMItemCategory.FixedItemCategory = 'N' and (valid_items.BillOfMaterialComponent <> '') then case when _MaterialText.MaterialName is not null or _MaterialText.MaterialName <> '' then _MaterialText.MaterialName else _MaterialTextEN.MaterialName end when _BOMItemCategory.FixedItemCategory = 'N' and (valid_items.BillOfMaterialComponent = '') then valid_items.BOMItemDescription end` |
-| `BOMItemDescription` | `valid_items.BOMItemDescription` |
-| `BOMItemText2` | `valid_items.BOMItemText2` |
-| `MaterialGroup` | `valid_items.MaterialGroup` |
-| `DocumentType` | `valid_items.DocumentType` |
-| `DocNumber` | `valid_items.DocNumber` |
-| `DocumentVersion` | `valid_items.DocumentVersion` |
-| `DocumentPart` | `valid_items.DocumentPart` |
-| `ClassNumber` | `valid_items.ClassNumber` |
-| `ClassType` | `valid_items.ClassType` |
-| `ResultingItemCategory` | `valid_items.ResultingItemCategory` |
-| `DependencyObjectNumber` | `valid_items.DependencyObjectNumber` |
-| `ObjectType` | `valid_items.ObjectType` |
-| `IsClassificationRelevant` | `valid_items.IsClassificationRelevant` |
-| `IsBulkMaterial` | `valid_items.IsBulkMaterial` |
-| `BOMItemIsSparePart` | `valid_items.BOMItemIsSparePart` |
-| `BOMItemIsSalesRelevant` | `valid_items.BOMItemIsSalesRelevant` |
-| `IsProductionRelevant` | `valid_items.IsProductionRelevant` |
-| `BOMItemIsPlantMaintRelevant` | `valid_items.BOMItemIsPlantMaintRelevant` |
-| `BOMItemIsCostingRelevant` | `valid_items.BOMItemIsCostingRelevant` |
-| `IsEngineeringRelevant` | `valid_items.IsEngineeringRelevant` |
-| `SpecialProcurementType` | `valid_items.SpecialProcurementType` |
-| `IsBOMRecursiveAllowed` | `valid_items.IsBOMRecursiveAllowed` |
-| `OperationLeadTimeOffset` | `valid_items.OperationLeadTimeOffset` |
-| `OpsLeadTimeOffsetUnit` | `valid_items.OpsLeadTimeOffsetUnit` |
-| `IsMaterialProvision` | `valid_items.IsMaterialProvision` |
-| `BOMIsRecursive` | `valid_items.BOMIsRecursive` |
-| `DocumentIsCreatedByCAD` | `valid_items.DocumentIsCreatedByCAD` |
-| `DistrKeyCompConsumption` | `valid_items.DistrKeyCompConsumption` |
-| `DeliveryDurationInDays` | `valid_items.DeliveryDurationInDays` |
-| `Creditor` | `valid_items.Creditor` |
-| `CostElement` | `valid_items.CostElement` |
-| `Size1` | `valid_items.Size1` |
-| `Size2` | `valid_items.Size2` |
-| `Size3` | `valid_items.Size3` |
-| `UnitOfMeasureForSize1To3` | `valid_items.UnitOfMeasureForSize1To3` |
-| `GoodsReceiptDuration` | `valid_items.GoodsReceiptDuration` |
-| `PurchasingOrganization` | `valid_items.PurchasingOrganization` |
-| `RequiredComponent` | `valid_items.RequiredComponent` |
-| `MultipleSelectionAllowed` | `valid_items.MultipleSelectionAllowed` |
-| `ProdOrderIssueLocation` | `valid_items.ProdOrderIssueLocation` |
-| `MaterialIsCoProduct` | `valid_items.MaterialIsCoProduct` |
-| `ExplosionType` | `valid_items.ExplosionType` |
-| `FollowUpGroup` | `valid_items.FollowUpGroup` |
-| `DiscontinuationGroup` | `valid_items.DiscontinuationGroup` |
-| `IsConfigurableBOM` | `valid_items.IsConfigurableBOM` |
-| `ReferencePoint` | `valid_items.ReferencePoint` |
-| `LeadTimeOffset` | `valid_items.LeadTimeOffset` |
-| `IsSoftwareComponent` | `valid_items.IsSoftwareComponent` |
-| `ProductionSupplyArea` | `valid_items.ProductionSupplyArea` |
-| `IsDeleted` | `valid_items.IsDeleted` |
-| `IsALE` | `valid_items.IsALE` |
-| `AlternativeItemGroup` | `valid_items.AlternativeItemGroup` |
-| `AlternativeItemPriority` | `valid_items.AlternativeItemPriority` |
-| `AlternativeItemStrategy` | `valid_items.AlternativeItemStrategy` |
-| `UsageProbabilityPercent` | `valid_items.UsageProbabilityPercent` |
-| `BillOfMaterialItemCategoryDesc` | `_BOMItemCategoryText.BillOfMaterialItemCategoryDesc` |
-| `MaterialComponentIsPhantomItem` | `cast ( valid_items.IsPhantomItem as dumps preserving type )` |
-| `IsPhantomItem` | `cast ( valid_items.IsPhantomItem as dumps preserving type )` |
-| `LastChangeDateTime` | `valid_items.LastChangeDateTime` |
-| `_BOMItemCategory` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Currency` | *Association* |
-| `_Mast` | *Association* |
-| `_Dost` | *Association* |
-| `_Prst` | *Association* |
-| `_Kdst` | *Association* |
-| `_Eqst` | *Association* |
-| `_Tpst` | *Association* |
-| `_Stst` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterialCategory` | ✓ | |  |  |
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |
+| `BillOfMaterialItemNodeNumber` | ✓ | |  |  |
+| `BillOfMaterialVersion` | ✓ | |  |  |
+| `BOMItemInternalChangeCount` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `EngineeringChangeDocument` |  | |  |  |
+| `ChgToEngineeringChgDocument` |  | |  | `cast( valid_items.ChgToEngineeringChgDocument as aenra preserving type )` |
+| `InheritedNodeNumberForBOMItem` |  | |  |  |
+| `InheritedNodeNumberVersionBOM` |  | |  |  |
+| `BOMItemRecordCreationDate` |  | |  |  |
+| `BOMItemCreatedByUser` |  | |  |  |
+| `BOMItemLastChangeDate` |  | |  |  |
+| `BOMItemLastChangedByUser` |  | |  |  |
+| `BillOfMaterialComponent` |  | |  |  |
+| `BillOfMaterialItemCategory` |  | |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |
+| `BillOfMaterialItemUnit` |  | |  | `case when _BOMItemCategory.FixedItemCategory = 'R' then UnitOfMeasureForVarSizeItem else valid_items.BillOfMaterialItemUnit end` |
+| `BillOfMaterialItemQuantity` |  | |  | `case when _BOMItemCategory.FixedItemCategory = 'R' then NumberOfVariableSizeItem else valid_items.BillOfMaterialItemQuantity end` |
+| `IsAssembly` |  | |  | `cast( valid_items.IsAssembly as stlkz preserving type )` |
+| `IsSubItem` |  | |  |  |
+| `BOMItemSorter` |  | |  |  |
+| `FixedQuantity` |  | |  |  |
+| `BOMItemHasFixedQuantity` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Currency` |  | |  |  |
+| `MaterialComponentPrice` |  | |  |  |
+| `IdentifierBOMItem` |  | |  |  |
+| `MaterialPriceUnitQty` |  | |  |  |
+| `ComponentScrapInPercent` |  | |  |  |
+| `OperationScrapInPercent` |  | |  |  |
+| `IsNetScrap` |  | |  |  |
+| `NumberOfVariableSizeItem` |  | |  |  |
+| `QuantityVariableSizeItem` |  | |  |  |
+| `FormulaKey` |  | |  |  |
+| `ComponentDescription` |  | |  | `case when _BOMItemCategory.FixedItemCategory = 'L' or _BOMItemCategory.FixedItemCategory = 'C' then case when _MaterialText.MaterialName is not null or _MaterialText.MaterialName <> '' then _MaterialText.MaterialName else _MaterialTextEN.MaterialName end when _BOMItemCategory.FixedItemCategory = 'T' then valid_items.BOMItemDescription when _BOMItemCategory.FixedItemCategory = 'R' and (valid_items.BillOfMaterialComponent is not null) then case when _MaterialText.MaterialName is not null or _MaterialText.MaterialName <> '' then _MaterialText.MaterialName else _MaterialTextEN.MaterialName end when _BOMItemCategory.FixedItemCategory = 'R' and (valid_items.BillOfMaterialComponent = '') then valid_items.BOMItemDescription when _BOMItemCategory.FixedItemCategory = 'D' then case when _DocumentText.DocumentDescription is not null or _DocumentText.DocumentDescription <> '' then _DocumentText.DocumentDescription else _DocumentTextEN.DocumentDescription end when _BOMItemCategory.FixedItemCategory = 'K' then case when _Class._ClassDescription[1:Language = $session.system_language].ClassDescription is not null or _Class._ClassDescription[1:Language = $session.system_language].ClassDescription <> '' then _Class._ClassDescription[1:Language = $session.system_language].ClassDescription else _Class._ClassDescription[1:Language = 'E'].ClassDescription end when _BOMItemCategory.FixedItemCategory = 'N' and (valid_items.BillOfMaterialComponent <> '') then case when _MaterialText.MaterialName is not null or _MaterialText.MaterialName <> '' then _MaterialText.MaterialName else _MaterialTextEN.MaterialName end when _BOMItemCategory.FixedItemCategory = 'N' and (valid_items.BillOfMaterialComponent = '') then valid_items.BOMItemDescription end` |
+| `BOMItemDescription` |  | |  |  |
+| `BOMItemText2` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `DocumentType` |  | |  |  |
+| `DocNumber` |  | |  |  |
+| `DocumentVersion` |  | |  |  |
+| `DocumentPart` |  | |  |  |
+| `ClassNumber` |  | |  |  |
+| `ClassType` |  | |  |  |
+| `ResultingItemCategory` |  | |  |  |
+| `DependencyObjectNumber` |  | |  |  |
+| `ObjectType` |  | |  |  |
+| `IsClassificationRelevant` |  | |  |  |
+| `IsBulkMaterial` |  | |  |  |
+| `BOMItemIsSparePart` |  | |  |  |
+| `BOMItemIsSalesRelevant` |  | |  |  |
+| `IsProductionRelevant` |  | |  |  |
+| `BOMItemIsPlantMaintRelevant` |  | |  |  |
+| `BOMItemIsCostingRelevant` |  | |  |  |
+| `IsEngineeringRelevant` |  | |  |  |
+| `SpecialProcurementType` |  | |  |  |
+| `IsBOMRecursiveAllowed` |  | |  |  |
+| `OperationLeadTimeOffset` |  | |  |  |
+| `OpsLeadTimeOffsetUnit` |  | |  |  |
+| `IsMaterialProvision` |  | |  |  |
+| `BOMIsRecursive` |  | |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |
+| `DistrKeyCompConsumption` |  | |  |  |
+| `DeliveryDurationInDays` |  | |  |  |
+| `Creditor` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `Size1` |  | |  |  |
+| `Size2` |  | |  |  |
+| `Size3` |  | |  |  |
+| `UnitOfMeasureForSize1To3` |  | |  |  |
+| `GoodsReceiptDuration` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `RequiredComponent` |  | |  |  |
+| `MultipleSelectionAllowed` |  | |  |  |
+| `ProdOrderIssueLocation` |  | |  |  |
+| `MaterialIsCoProduct` |  | |  |  |
+| `ExplosionType` |  | |  |  |
+| `FollowUpGroup` |  | |  |  |
+| `DiscontinuationGroup` |  | |  |  |
+| `IsConfigurableBOM` |  | |  |  |
+| `ReferencePoint` |  | |  |  |
+| `LeadTimeOffset` |  | |  |  |
+| `IsSoftwareComponent` |  | |  |  |
+| `ProductionSupplyArea` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsALE` |  | |  |  |
+| `AlternativeItemGroup` |  | |  |  |
+| `AlternativeItemPriority` |  | |  |  |
+| `AlternativeItemStrategy` |  | |  |  |
+| `UsageProbabilityPercent` |  | |  |  |
+| `BillOfMaterialItemCategoryDesc` |  | | `_BOMItemCategoryText` | `BillOfMaterialItemCategoryDesc` |
+| `MaterialComponentIsPhantomItem` |  | |  | `cast ( valid_items.IsPhantomItem as dumps preserving type )` |
+| `IsPhantomItem` |  | |  | `cast ( valid_items.IsPhantomItem as dumps preserving type )` |
+| `LastChangeDateTime` |  | |  |  |
+| `_BOMItemCategory` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_Mast` | | ✓ | | |
+| `_Dost` | | ✓ | | |
+| `_Prst` | | ✓ | | |
+| `_Kdst` | | ✓ | | |
+| `_Eqst` | | ✓ | | |
+| `_Tpst` | | ✓ | | |
+| `_Stst` | | ✓ | | |
 
 ## Associations
 

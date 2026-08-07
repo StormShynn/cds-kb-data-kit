@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BOPRptgCntry` | `country` |
-| key `BOPForm` | `form` |
-| key `BOPFormItem` | `item` |
-| key `Language` | `langu` |
-| `BOPFormItemDescription` | `description` |
-| `_BOPRptgCntry` | *Association* |
-| `_BOPForm` | *Association* |
-| `_BOPFormItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOPRptgCntry` | ✓ | |  | `country` |
+| `BOPForm` | ✓ | |  | `form` |
+| `BOPFormItem` | ✓ | |  | `item` |
+| `Language` | ✓ | |  | `langu` |
+| `BOPFormItemDescription` |  | |  | `description` |
+| `_BOPRptgCntry` | | ✓ | | |
+| `_BOPForm` | | ✓ | | |
+| `_BOPFormItem` | | ✓ | | |
 
 ## Associations
 

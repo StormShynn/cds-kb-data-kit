@@ -29,46 +29,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PhysicalInventoryDocument` | `cast(ikpf.iblnr as pi_document preserving type)` |
-| key `FiscalYear` | `ikpf.gjahr` |
-| `InventoryTransactionType` | `cast(ikpf.vgart as pi_transaction_type preserving type)` |
-| `Plant` | `ikpf.werks` |
-| `StorageLocation` | `ikpf.lgort` |
-| `InventorySpecialStockType` | `ikpf.sobkz` |
-| `DocumentDate` | `ikpf.bldat` |
-| `PhysInventoryPlannedCountDate` | `ikpf.gidat` |
-| `PhysicalInventoryLastCountDate` | `ikpf.zldat` |
-| `PostingDate` | `cast(ikpf.budat as mmim_postingdate preserving type)` |
-| `FiscalPeriod` | `cast(ikpf.monat as pi_monat preserving type)` |
-| `CreatedByUserName` | `cast(ikpf.usnam as pi_created_by_user preserving type)` |
-| `PostingIsBlockedForPhysInvtry` | `ikpf.sperr` |
-| `PhysicalInventoryCountStatus` | `ikpf.zstat` |
-| `PhysInvtryAdjustmentPostingSts` | `ikpf.dstat` |
-| `PhysInventoryReferenceNumber` | `cast(ikpf.xblni as pi_reference preserving type)` |
-| `PhysInvtryDeletionStatus` | `ikpf.lstat` |
-| `PhysInvtryDocHasQtySnapshot` | `cast(ikpf.xbufi as pi_book_inventory_freeze preserving type)` |
-| `PhysicalInventoryGroupType` | `ikpf.keord` |
-| `PhysicalInventoryGroup` | `ikpf.ordng` |
-| `PhysicalInventoryNumber` | `cast(ikpf.invnu as pi_number preserving type)` |
-| `PhysicalInventoryDocumentDesc` | `ikpf.ibltxt` |
-| `PhysicalInventoryType` | `cast(ikpf.invart as pi_type preserving type)` |
-| `LastChangeDateTime` | `ikpf.lastchange_datetime` |
-| `SalesPriceValuationIsActive` | `cast(t001k.xvkbw as pi_is_sp_valuation_active preserving type)` |
-| `ValuationArea` | `t001k.bwkey` |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_PhysInvtryDocItem` | *Association* |
-| `_PhysInvtryGroupType` | *Association* |
-| `_PhysInvtryType` | *Association* |
-| `_InventoryTransactionType` | *Association* |
-| `_PhysInvtryCountSts` | *Association* |
-| `_PhysInvtryDeletionSts` | *Association* |
-| `_PhysInvtryPostSts` | *Association* |
-| `_PhysInvtryDocFiscalYear` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PhysicalInventoryDocument` | ✓ | |  | `cast(ikpf.iblnr as pi_document preserving type)` |
+| `FiscalYear` | ✓ | |  | `gjahr` |
+| `InventoryTransactionType` |  | |  | `cast(ikpf.vgart as pi_transaction_type preserving type)` |
+| `Plant` |  | |  | `werks` |
+| `StorageLocation` |  | |  | `lgort` |
+| `InventorySpecialStockType` |  | |  | `sobkz` |
+| `DocumentDate` |  | |  | `bldat` |
+| `PhysInventoryPlannedCountDate` |  | |  | `gidat` |
+| `PhysicalInventoryLastCountDate` |  | |  | `zldat` |
+| `PostingDate` |  | |  | `cast(ikpf.budat as mmim_postingdate preserving type)` |
+| `FiscalPeriod` |  | |  | `cast(ikpf.monat as pi_monat preserving type)` |
+| `CreatedByUserName` |  | |  | `cast(ikpf.usnam as pi_created_by_user preserving type)` |
+| `PostingIsBlockedForPhysInvtry` |  | |  | `sperr` |
+| `PhysicalInventoryCountStatus` |  | |  | `zstat` |
+| `PhysInvtryAdjustmentPostingSts` |  | |  | `dstat` |
+| `PhysInventoryReferenceNumber` |  | |  | `cast(ikpf.xblni as pi_reference preserving type)` |
+| `PhysInvtryDeletionStatus` |  | |  | `lstat` |
+| `PhysInvtryDocHasQtySnapshot` |  | |  | `cast(ikpf.xbufi as pi_book_inventory_freeze preserving type)` |
+| `PhysicalInventoryGroupType` |  | |  | `keord` |
+| `PhysicalInventoryGroup` |  | |  | `ordng` |
+| `PhysicalInventoryNumber` |  | |  | `cast(ikpf.invnu as pi_number preserving type)` |
+| `PhysicalInventoryDocumentDesc` |  | |  | `ibltxt` |
+| `PhysicalInventoryType` |  | |  | `cast(ikpf.invart as pi_type preserving type)` |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` |
+| `SalesPriceValuationIsActive` |  | |  | `cast(t001k.xvkbw as pi_is_sp_valuation_active preserving type)` |
+| `ValuationArea` |  | |  | `bwkey` |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_PhysInvtryDocItem` | | ✓ | | |
+| `_PhysInvtryGroupType` | | ✓ | | |
+| `_PhysInvtryType` | | ✓ | | |
+| `_InventoryTransactionType` | | ✓ | | |
+| `_PhysInvtryCountSts` | | ✓ | | |
+| `_PhysInvtryDeletionSts` | | ✓ | | |
+| `_PhysInvtryPostSts` | | ✓ | | |
+| `_PhysInvtryDocFiscalYear` | | ✓ | | |
 
 ## Associations
 

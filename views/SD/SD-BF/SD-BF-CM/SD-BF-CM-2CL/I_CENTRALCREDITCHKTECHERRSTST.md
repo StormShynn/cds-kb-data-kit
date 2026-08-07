@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralCreditChkTechErrSts` | `statu` |
-| key `Language` | `spras` |
-| `CentralCreditChkTechErrStsDesc` | `bezei` |
-| `_CentralCreditChkTechErrSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralCreditChkTechErrSts` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `CentralCreditChkTechErrStsDesc` |  | |  | `bezei` |
+| `_CentralCreditChkTechErrSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

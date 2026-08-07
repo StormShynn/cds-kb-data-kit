@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlannedOrderActionControl` | `mdach` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlannedOrderActionControl` | ✓ | |  | `mdach` |
 
 ## Source Code
 

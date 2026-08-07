@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VarConfignTblName` | `VarConfignTblName` |
-| `VarConfignTblStatus` | `VarConfignTblStatus` |
-| `EngineProcessingMode` | `EngineProcessingMode` |
-| `VarConfignTblCntntLstChgDteTme` | `VarConfignTblCntntLstChgDteTme` |
-| `VarConfignTblCntntLastChgNo` | `VarConfignTblCntntLastChgNo` |
-| `_TableLine` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |
+| `VarConfignTblStatus` |  | |  |  |
+| `EngineProcessingMode` |  | |  |  |
+| `VarConfignTblCntntLstChgDteTme` |  | |  |  |
+| `VarConfignTblCntntLastChgNo` |  | |  |  |
+| `_TableLine` | | ✓ | | |
 
 ## Source Code
 

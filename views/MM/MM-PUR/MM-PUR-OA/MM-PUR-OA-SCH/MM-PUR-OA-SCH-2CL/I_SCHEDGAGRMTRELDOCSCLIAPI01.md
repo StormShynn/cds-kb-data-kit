@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| key `SchedulingAgreementReleaseType` | `SchedulingAgreementReleaseType` |
-| key `SchedulingAgreementRelease` | `SchedulingAgreementRelease` |
-| key `ScheduleLine` | `ScheduleLine` |
-| `ScheduleLineDeliveryDate` | `ScheduleLineDeliveryDate` |
-| `ScheduleLineDeliveryTime` | `ScheduleLineDeliveryTime` |
-| `ScheduledQuantity` | `ScheduledQuantity` |
-| `SchedgLineType` | `SchedgLineType` |
-| `BOMExplosion` | `BOMExplosion` |
-| `SourceOfCreation` | `SourceOfCreation` |
-| `PrevDelivQtyOfScheduleLine` | `PrevDelivQtyOfScheduleLine` |
-| `ReceivedQuantity` | `ReceivedQuantity` |
-| `DelivDateCategory` | `DelivDateCategory` |
-| `OrderQuantityUnit` | `_SchedgAgrmtReleaseDocAPI01.OrderQuantityUnit` |
-| `_SchedgAgrmtHdrAPI01` | *Association* |
-| `_SchedgAgrmtItmAPI01` | *Association* |
-| `_SchedgAgrmtReleaseDocAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `SchedulingAgreementReleaseType` | ✓ | |  |  |
+| `SchedulingAgreementRelease` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |
+| `ScheduledQuantity` |  | |  |  |
+| `SchedgLineType` |  | |  |  |
+| `BOMExplosion` |  | |  |  |
+| `SourceOfCreation` |  | |  |  |
+| `PrevDelivQtyOfScheduleLine` |  | |  |  |
+| `ReceivedQuantity` |  | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `OrderQuantityUnit` |  | | `_SchedgAgrmtReleaseDocAPI01` | `OrderQuantityUnit` |
+| `_SchedgAgrmtHdrAPI01` | | ✓ | | |
+| `_SchedgAgrmtItmAPI01` | | ✓ | | |
+| `_SchedgAgrmtReleaseDocAPI01` | | ✓ | | |
 
 ## Associations
 

@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'TechObjInspectionLevelCode'` | `representativeKey: 'TechObjInspectionLevelCode'` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'TechObjInspectionLevelCode'` |  | |  | `representativeKey: 'TechObjInspectionLevelCode'` |
 
 ## Source Code
 

@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ModProdSpecItemUUID` | `ModProdSpecItemUUID` |
-| `ModelProductSpecificationUUID` | `ModelProductSpecificationUUID` |
-| `ModelProductSpecification` | `ModelProductSpecification` |
-| `ModelProductSpecificationItem` | `ModelProductSpecificationItem` |
-| `ModProdSpecAlternativeItemID` | `ModProdSpecAlternativeItemID` |
-| `ModProdSpecFormattedItemID` | `ModProdSpecFormattedItemID` |
-| `Plant` | `Plant` |
-| `ModProdSpecItemParentID` | `ModProdSpecItemParentID` |
-| `PurchasingIsItemSet` | `PurchasingIsItemSet` |
-| `PurchasingDocumentItemCategory` | `PurchasingDocumentItemCategory` |
-| `ModProdSpecItemDescription` | `ModProdSpecItemDescription` |
-| `Product` | `Product` |
-| `ProductTypeCode` | `ProductTypeCode` |
-| `MaterialGroup` | `MaterialGroup` |
-| `OrderQuantity` | `OrderQuantity` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `HierarchyNode` | `HierarchyNode` |
-| `HierarchyParentNode` | `HierarchyParentNode` |
-| `HierarchyDistanceFromRoot` | `HierarchyDistanceFromRoot` |
-| `HierarchyDescendantCount` | `HierarchyDescendantCount` |
-| `HierarchyNodeOrdinalNumber` | `HierarchyNodeOrdinalNumber` |
-| `_ModelProductSpecificationTP` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_ProductTypeCode` | *Association* |
-| `_PurgDocumentItemCategory` | *Association* |
-| `_UnitValueHelp` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ModProdSpecItemUUID` | ✓ | |  |  |
+| `ModelProductSpecificationUUID` |  | |  |  |
+| `ModelProductSpecification` |  | |  |  |
+| `ModelProductSpecificationItem` |  | |  |  |
+| `ModProdSpecAlternativeItemID` |  | |  |  |
+| `ModProdSpecFormattedItemID` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ModProdSpecItemParentID` |  | |  |  |
+| `PurchasingIsItemSet` |  | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `ModProdSpecItemDescription` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductTypeCode` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `OrderQuantity` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `HierarchyNode` |  | |  |  |
+| `HierarchyParentNode` |  | |  |  |
+| `HierarchyDistanceFromRoot` |  | |  |  |
+| `HierarchyDescendantCount` |  | |  |  |
+| `HierarchyNodeOrdinalNumber` |  | |  |  |
+| `_ModelProductSpecificationTP` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductTypeCode` | | ✓ | | |
+| `_PurgDocumentItemCategory` | | ✓ | | |
+| `_UnitValueHelp` | | ✓ | | |
 
 ## Source Code
 

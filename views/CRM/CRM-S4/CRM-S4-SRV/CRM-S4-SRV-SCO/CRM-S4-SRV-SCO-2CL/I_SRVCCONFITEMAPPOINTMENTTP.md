@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceConfirmation` | `ServiceConfirmation` |
-| key `ServiceConfirmationItem` | `ServiceConfirmationItem` |
-| key `SrvcDocAppointmentType` | `SrvcDocAppointmentType` |
-| `SrvcDocApptStartDateTime` | `SrvcDocApptStartDateTime` |
-| `SrvcDocApptEndDateTime` | `SrvcDocApptEndDateTime` |
-| `_ServiceConfItemTP` | *Association* |
-| `_ServiceConfTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |
+| `ServiceConfirmationItem` | ✓ | |  |  |
+| `SrvcDocAppointmentType` | ✓ | |  |  |
+| `SrvcDocApptStartDateTime` |  | |  |  |
+| `SrvcDocApptEndDateTime` |  | |  |  |
+| `_ServiceConfItemTP` | | ✓ | | |
+| `_ServiceConfTP` | | ✓ | | |
 
 ## Source Code
 

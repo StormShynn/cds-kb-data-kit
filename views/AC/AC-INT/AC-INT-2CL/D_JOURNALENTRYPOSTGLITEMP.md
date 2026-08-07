@@ -29,59 +29,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `GLAccountLineItem` | `docln6` |
-| `ItemGroup` | `logvo` |
-| `CompanyCode` | `bukrs` |
-| `GLAccount` | `hkont` |
-| `DocumentItemText` | `sgtxt` |
-| `Reference1IDByBusinessPartner` | `xref1` |
-| `Reference2IDByBusinessPartner` | `xref2` |
-| `Reference3IDByBusinessPartner` | `xref3` |
-| `OplAcctgDocItmCntrySpcfcRef1` | `fac_glo_ref1` |
-| `AssignmentReference` | `acpi_zuonr` |
-| `FinancialTransactionType` | `rmvct` |
-| `TaxCode` | `mwskz` |
-| `TaxJurisdiction` | `txjcd` |
-| `TaxItemAcctgDocItemRef` | `taxps` |
-| `TaxCountry` | `fot_tax_country` |
-| `Plant` | `werks_d` |
-| `Material` | `matnr40` |
-| `BaseUnit` | `meins` |
-| `:menge_d` | `} Quantity :menge_d` |
-| `IsNotCashDiscountLiable` | `xskrl` |
-| `PartnerCompany` | `rassc` |
-| `BusinessPlace` | `acpi_branch` |
-| `ValueDate` | `valut` |
-| `HouseBank` | `hbkid` |
-| `HouseBankAccount` | `hktid` |
-| `ProfitCenter` | `prctr` |
-| `PartnerProfitCenter` | `pprctr` |
-| `Segment` | `fb_segment` |
-| `PartnerSegment` | `fb_psegment` |
-| `CostCenter` | `kostl` |
-| `CostCtrActivityType` | `lstar` |
-| `WBSElement` | `ps_posid_edit` |
-| `MasterFixedAsset` | `anln1` |
-| `FixedAsset` | `anln2` |
-| `SalesOrder` | `kdauf` |
-| `SalesOrderItem` | `kdpos` |
-| `FunctionalArea` | `fkber` |
-| `ServiceDocumentType` | `fco_srvdoc_type` |
-| `ServiceDocument` | `fco_srvdoc_id` |
-| `ServiceDocumentItem` | `fco_srvdoc_item_id` |
-| `PersonnelNumber` | `pernr_d` |
-| `WorkItem` | `/cpd/pfp_workitem_id` |
-| `OrderID` | `aufnr` |
-| `JointVenture` | `jv_name` |
-| `JointVentureRecoveryCode` | `jv_recind` |
-| `JointVentureEquityGroup` | `jv_egroup` |
-| `FinancialServicesProductGroup` | `ffs_product_group` |
-| `FinancialServicesBranch` | `ffs_branch_id` |
-| `FinancialDataSource` | `ffs_datasource_id` |
-| `D_JournalEntryPostCOPAP` | `_ProfitabilitySupplement : composition [0..1] of D_JournalEntryPostCOPAP` |
-| `_JournalEntryPost` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountLineItem` |  | |  | `docln6` |
+| `ItemGroup` |  | |  | `logvo` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `GLAccount` |  | |  | `hkont` |
+| `DocumentItemText` |  | |  | `sgtxt` |
+| `Reference1IDByBusinessPartner` |  | |  | `xref1` |
+| `Reference2IDByBusinessPartner` |  | |  | `xref2` |
+| `Reference3IDByBusinessPartner` |  | |  | `xref3` |
+| `OplAcctgDocItmCntrySpcfcRef1` |  | |  | `fac_glo_ref1` |
+| `AssignmentReference` |  | |  | `acpi_zuonr` |
+| `FinancialTransactionType` |  | |  | `rmvct` |
+| `TaxCode` |  | |  | `mwskz` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `TaxItemAcctgDocItemRef` |  | |  | `taxps` |
+| `TaxCountry` |  | |  | `fot_tax_country` |
+| `Plant` |  | |  | `werks_d` |
+| `Material` |  | |  | `matnr40` |
+| `BaseUnit` |  | |  | `meins` |
+| `:menge_d` |  | |  | `} Quantity :menge_d` |
+| `IsNotCashDiscountLiable` |  | |  | `xskrl` |
+| `PartnerCompany` |  | |  | `rassc` |
+| `BusinessPlace` |  | |  | `acpi_branch` |
+| `ValueDate` |  | |  | `valut` |
+| `HouseBank` |  | |  | `hbkid` |
+| `HouseBankAccount` |  | |  | `hktid` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `PartnerProfitCenter` |  | |  | `pprctr` |
+| `Segment` |  | |  | `fb_segment` |
+| `PartnerSegment` |  | |  | `fb_psegment` |
+| `CostCenter` |  | |  | `kostl` |
+| `CostCtrActivityType` |  | |  | `lstar` |
+| `WBSElement` |  | |  | `ps_posid_edit` |
+| `MasterFixedAsset` |  | |  | `anln1` |
+| `FixedAsset` |  | |  | `anln2` |
+| `SalesOrder` |  | |  | `kdauf` |
+| `SalesOrderItem` |  | |  | `kdpos` |
+| `FunctionalArea` |  | |  | `fkber` |
+| `ServiceDocumentType` |  | |  | `fco_srvdoc_type` |
+| `ServiceDocument` |  | |  | `fco_srvdoc_id` |
+| `ServiceDocumentItem` |  | |  | `fco_srvdoc_item_id` |
+| `PersonnelNumber` |  | |  | `pernr_d` |
+| `WorkItem` |  | |  | `/cpd/pfp_workitem_id` |
+| `OrderID` |  | |  | `aufnr` |
+| `JointVenture` |  | |  | `jv_name` |
+| `JointVentureRecoveryCode` |  | |  | `jv_recind` |
+| `JointVentureEquityGroup` |  | |  | `jv_egroup` |
+| `FinancialServicesProductGroup` |  | |  | `ffs_product_group` |
+| `FinancialServicesBranch` |  | |  | `ffs_branch_id` |
+| `FinancialDataSource` |  | |  | `ffs_datasource_id` |
+| `D_JournalEntryPostCOPAP` |  | |  | `_ProfitabilitySupplement : composition [0..1] of D_JournalEntryPostCOPAP` |
+| `_JournalEntryPost` | | ✓ | | |
 
 ## Source Code
 

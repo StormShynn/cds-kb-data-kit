@@ -39,160 +39,160 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Reservation` | `comp.Reservation` |
-| key `ReservationItem` | `comp.ReservationItem` |
-| `ManufacturingOrderCategory` | `comp.ManufacturingOrderCategory` |
-| `ManufacturingOrderType` | `comp.ManufacturingOrderType` |
-| `ManufacturingOrder` | `comp.ManufacturingOrder` |
-| `ManufacturingOrderSequence` | `comp.ManufacturingOrderSequence` |
-| `ManufacturingOrderOperation` | `comp.ManufacturingOrderOperation` |
-| `ProductionPlant` | `comp.ProductionPlant` |
-| `OrderInternalBillOfOperations` | `OrderInternalBillOfOperations` |
-| `OrderIntBillOfOperationsItem` | `OrderIntBillOfOperationsItem` |
-| `AssemblyMRPController` | `comp.AssemblyMRPController` |
-| `ProductionSupervisor` | `comp.ProductionSupervisor` |
-| `OrderIsReleased` | `status.OrderIsReleased` |
-| `OrderIsConfirmed` | `status.OrderIsConfirmed` |
-| `OrderIsDeleted` | `status.OrderIsDeleted` |
-| `OrderIsTechnicallyCompleted` | `status.OrderIsTechnicallyCompleted` |
-| `OrderIsClosed` | `status.OrderIsClosed` |
-| `OrderIsMarkedForDeletion` | `status.OrderIsMarkedForDeletion` |
-| `ReservationItemText` | `comp.ReservationItemText` |
-| `MatlCompRequirementDate` | `comp.MatlCompRequirementDate` |
-| `MatlCompRequirementTime` | `comp.MatlCompRequirementTime` |
-| `RequirementDateWeekDay` | `repdate.ReportingDateWeekDay` |
-| `RequirementDateWeek` | `repdate.ReportingDateWeek` |
-| `RequirementDateMonth` | `repdate.ReportingDateMonth` |
-| `RequirementDateYear` | `repdate.ReportingDateYear` |
-| `RequirementDateYearMonth` | `cast(concat(repdate.ReportingDateYear, repdate.ReportingDateMonth) as vdm_yearmonth)` |
-| `ReportingPeriod` | `cast(repdate.ReportingPeriod as pph_reportingperiod preserving type)` |
-| `RecordType` | `comp.RecordType` |
-| `RequirementType` | `comp.RequirementType` |
-| `ReservationItemCreationCode` | `comp.ReservationItemCreationCode` |
-| `ReservationIsFinallyIssued` | `comp.ReservationIsFinallyIssued` |
-| `MatlCompIsMarkedForDeletion` | `comp.MatlCompIsMarkedForDeletion` |
-| `MaterialComponentIsMissing` | `comp.MaterialComponentIsMissing` |
-| `IsBulkMaterialComponent` | `comp.IsBulkMaterialComponent` |
-| `MaterialCompIsVariableSized` | `comp.MaterialCompIsVariableSized` |
-| `MatlCompIsMarkedForBackflush` | `comp.MatlCompIsMarkedForBackflush` |
-| `MaterialCompIsAlternativeItem` | `comp.MaterialCompIsAlternativeItem` |
-| `MaterialComponentIsPhantomItem` | `comp.MaterialComponentIsPhantomItem` |
-| `MatlCompIsTextItem` | `comp.MatlCompIsTextItem` |
-| `MatlCompDiscontinuationType` | `comp.MatlCompDiscontinuationType` |
-| `MatlCompIsConfigurable` | `comp.MatlCompIsConfigurable` |
-| `UsageProbabilityPercent` | `comp.UsageProbabilityPercent` |
-| `MaterialGroup` | `comp.MaterialGroup` |
-| `Material` | `comp.Material` |
-| `Plant` | `comp.Plant` |
-| `MRPController` | `cast(_MaterialPlant.MRPController as pph_dispo preserving type)` |
-| `RequirementPlan` | `comp.RequirementPlan` |
-| `SalesOrder` | `comp.SalesOrder` |
-| `SalesOrderItem` | `comp.SalesOrderItem` |
-| `SalesDocument` | `comp.SalesDocument` |
-| `SalesDocumentItem` | `comp.SalesDocumentItem` |
-| `SDDocumentCategory` | `_SalesDocumentBasic.SDDocumentCategory` |
-| `WBSElementInternalID` | `comp.WBSElementInternalID` |
-| `ProductConfiguration` | `comp.ProductConfiguration` |
-| `BillOfMaterialCategory` | `comp.BillOfMaterialCategory` |
-| `BillOfMaterialInternalID` | `comp.BillOfMaterialInternalID` |
-| `BillOfMaterialVariant` | `comp.BillOfMaterialVariant` |
-| `BillOfMaterialItemNodeNumber` | `comp.BOMItem` |
-| `BillOfMaterialItemCategory` | `comp.BOMItemCategory` |
-| `BillOfMaterialItemNumber` | `comp.BillOfMaterialItemNumber` |
-| `BOMItemDescription` | `comp.BOMItemDescription` |
-| `BOMExplosionDateID` | `comp.BOMExplosion` |
-| `PurchasingInfoRecord` | `comp.PurchasingInfoRecord` |
-| `PurchasingGroup` | `comp.PurchasingGroup` |
-| `PurchaseRequisition` | `comp.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `comp.PurchaseRequisitionItem` |
-| `PurchaseOrder` | `comp.PurchaseOrder` |
-| `PurchaseOrderItem` | `comp.PurchaseOrderItem` |
-| `DeliveryDurationInDays` | `comp.DeliveryDurationInDays` |
-| `GoodsMovementIsAllowed` | `comp.GoodsMovementIsAllowed` |
-| `StorageLocation` | `comp.StorageLocation` |
-| `Batch` | `comp.Batch` |
-| `DebitCreditCode` | `comp.DebitCreditCode` |
-| `GoodsMovementType` | `comp.GoodsMovementType` |
-| `InventorySpecialStockType` | `comp.InventorySpecialStockType` |
-| `InventorySpecialStockValnType` | `comp.InventorySpecialStockValnType` |
-| `ConsumptionPosting` | `comp.ConsumptionPosting` |
-| `SupplyArea` | `comp.SupplyArea` |
-| `Warehouse` | `comp.Warehouse` |
-| `StorageType` | `comp.StorageType` |
-| `StorageBin` | `comp.StorageBin` |
-| `BusinessArea` | `comp.BusinessArea` |
-| `CompanyCode` | `comp.CompanyCode` |
-| `GLAccount` | `comp.GLAccount` |
-| `AccountAssignmentCategory` | `comp.AccountAssignmentCategory` |
-| `FunctionalArea` | `comp.FunctionalArea` |
-| `QuantityIsFixed` | `comp.QuantityIsFixed` |
-| `IsNetScrap` | `comp.IsNetScrap` |
-| `ComponentScrapInPercent` | `comp.ComponentScrapInPercent` |
-| `OperationScrapInPercent` | `comp.OperationScrapInPercent` |
-| `BaseUnit` | `comp.BaseUnit` |
-| `RequiredQuantity` | `cast(comp.RequiredQuantity as requirementquantity preserving type)` |
-| `WithdrawnQuantity` | `comp.WithdrawnQuantity` |
-| `OpenQuantity` | `(comp.RequiredQuantity - comp.WithdrawnQuantity)` |
-| `DeviationQuantity` | `cast((comp.WithdrawnQuantity - comp.RequiredQuantity) as deviationquantity)` |
-| `ConfirmedAvailableQuantity` | `comp.ConfirmedAvailableQuantity` |
-| `OriginalDemandQuantity` | `cast(Division( cast(comp.RequiredQuantity as abap.dec(16,5)),(1 + Division(comp.ComponentScrapInPercent,100,3)),3) as originaldemandquantity)` |
-| `ExcessConsumptionQuantity` | `cast(comp.WithdrawnQuantity - (Division( cast(comp.RequiredQuantity as abap.dec(16,5)),(1 + Division(comp.ComponentScrapInPercent,100,3)),3)) as excessconsumptionquantity)` |
-| `EntryUnit` | `comp.EntryUnit` |
-| `GoodsMovementEntryQty` | `comp.GoodsMovementEntryQty` |
-| `Currency` | `comp.Currency` |
-| `WithdrawnQuantityAmount` | `comp.WithdrawnQuantityAmount` |
-| `CompanyCodeCurrency` | `cast(_CompanyCode.Currency as vdm_v_company_code_currency preserving type)` |
-| `WithdrawnQtyAmountInCoCodeCry` | `case when Currency = _CompanyCode.Currency then comp.WithdrawnQuantityAmount else cast(currency_conversion( amount => comp.WithdrawnQuantityAmount, source_currency => comp.Currency, round => 'X', target_currency => _CompanyCode.Currency, exchange_rate_date => comp.MatlCompRequirementDate, error_handling => 'SET_TO_NULL' ) as wihthdrawnamountcocurcy preserving type) end` |
-| `FreeDefinedAmount1` | `1` |
-| `_GLAccount` | *Association* |
-| `_RequirementDate` | *Association* |
-| `_RequirementDateMonth` | *Association* |
-| `_RequirementDateYear` | *Association* |
-| `_RequirementDateWeekDay` | *Association* |
-| `_ReportingPeriod` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_MRPController` | *Association* |
-| `_Reservation` | *Association* |
-| `_MfgOrder` | *Association* |
-| `_MfgOrderSequence` | *Association* |
-| `_MfgOrderOperation` | *Association* |
-| `_MfgOrderOperationBySemanKey` | *Association* |
-| `_MfgOrderCategory` | *Association* |
-| `_MfgOrderType` | *Association* |
-| `_OrdInternalBillOfOperations` | *Association* |
-| `_ProductionPlant` | *Association* |
-| `_AssemblyMRPController` | *Association* |
-| `_ProductionSupervisor` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_Material` | *Association* |
-| `_MaterialPlant` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_GoodsMovementType` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_SupplyArea` | *Association* |
-| `_Warehouse` | *Association* |
-| `_BOMExplosion` | *Association* |
-| `_BOMItemCategory` | *Association* |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
-| `_WBSElement` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
-| `_PurchaseRequisition` | *Association* |
-| `_PurchaseRequisitionItem` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_FunctionalArea` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_EntryUnit` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Reservation` | ✓ | |  |  |
+| `ReservationItem` | ✓ | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ManufacturingOrderType` |  | |  |  |
+| `ManufacturingOrder` |  | |  |  |
+| `ManufacturingOrderSequence` |  | |  |  |
+| `ManufacturingOrderOperation` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `OrderInternalBillOfOperations` |  | |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |
+| `AssemblyMRPController` |  | |  |  |
+| `ProductionSupervisor` |  | |  |  |
+| `OrderIsReleased` |  | |  |  |
+| `OrderIsConfirmed` |  | |  |  |
+| `OrderIsDeleted` |  | |  |  |
+| `OrderIsTechnicallyCompleted` |  | |  |  |
+| `OrderIsClosed` |  | |  |  |
+| `OrderIsMarkedForDeletion` |  | |  |  |
+| `ReservationItemText` |  | |  |  |
+| `MatlCompRequirementDate` |  | |  |  |
+| `MatlCompRequirementTime` |  | |  |  |
+| `RequirementDateWeekDay` |  | |  | `ReportingDateWeekDay` |
+| `RequirementDateWeek` |  | |  | `ReportingDateWeek` |
+| `RequirementDateMonth` |  | |  | `ReportingDateMonth` |
+| `RequirementDateYear` |  | |  | `ReportingDateYear` |
+| `RequirementDateYearMonth` |  | |  | `cast(concat(repdate.ReportingDateYear, repdate.ReportingDateMonth) as vdm_yearmonth)` |
+| `ReportingPeriod` |  | |  | `cast(repdate.ReportingPeriod as pph_reportingperiod preserving type)` |
+| `RecordType` |  | |  |  |
+| `RequirementType` |  | |  |  |
+| `ReservationItemCreationCode` |  | |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |
+| `MatlCompIsMarkedForDeletion` |  | |  |  |
+| `MaterialComponentIsMissing` |  | |  |  |
+| `IsBulkMaterialComponent` |  | |  |  |
+| `MaterialCompIsVariableSized` |  | |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |
+| `MaterialCompIsAlternativeItem` |  | |  |  |
+| `MaterialComponentIsPhantomItem` |  | |  |  |
+| `MatlCompIsTextItem` |  | |  |  |
+| `MatlCompDiscontinuationType` |  | |  |  |
+| `MatlCompIsConfigurable` |  | |  |  |
+| `UsageProbabilityPercent` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `MRPController` |  | |  | `cast(_MaterialPlant.MRPController as pph_dispo preserving type)` |
+| `RequirementPlan` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
+| `SDDocumentCategory` |  | | `_SalesDocumentBasic` | `SDDocumentCategory` |
+| `WBSElementInternalID` |  | |  |  |
+| `ProductConfiguration` |  | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BillOfMaterialInternalID` |  | |  |  |
+| `BillOfMaterialVariant` |  | |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  | `BOMItem` |
+| `BillOfMaterialItemCategory` |  | |  | `BOMItemCategory` |
+| `BillOfMaterialItemNumber` |  | |  |  |
+| `BOMItemDescription` |  | |  |  |
+| `BOMExplosionDateID` |  | |  | `BOMExplosion` |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `DeliveryDurationInDays` |  | |  |  |
+| `GoodsMovementIsAllowed` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `Batch` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `SupplyArea` |  | |  |  |
+| `Warehouse` |  | |  |  |
+| `StorageType` |  | |  |  |
+| `StorageBin` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `QuantityIsFixed` |  | |  |  |
+| `IsNetScrap` |  | |  |  |
+| `ComponentScrapInPercent` |  | |  |  |
+| `OperationScrapInPercent` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `RequiredQuantity` |  | |  | `cast(comp.RequiredQuantity as requirementquantity preserving type)` |
+| `WithdrawnQuantity` |  | |  |  |
+| `OpenQuantity` |  | |  | `(comp.RequiredQuantity - comp.WithdrawnQuantity)` |
+| `DeviationQuantity` |  | |  | `cast((comp.WithdrawnQuantity - comp.RequiredQuantity) as deviationquantity)` |
+| `ConfirmedAvailableQuantity` |  | |  |  |
+| `OriginalDemandQuantity` |  | |  | `cast(Division( cast(comp.RequiredQuantity as abap.dec(16,5)),(1 + Division(comp.ComponentScrapInPercent,100,3)),3) as originaldemandquantity)` |
+| `ExcessConsumptionQuantity` |  | |  | `cast(comp.WithdrawnQuantity - (Division( cast(comp.RequiredQuantity as abap.dec(16,5)),(1 + Division(comp.ComponentScrapInPercent,100,3)),3)) as excessconsumptionquantity)` |
+| `EntryUnit` |  | |  |  |
+| `GoodsMovementEntryQty` |  | |  |  |
+| `Currency` |  | |  |  |
+| `WithdrawnQuantityAmount` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  | `cast(_CompanyCode.Currency as vdm_v_company_code_currency preserving type)` |
+| `WithdrawnQtyAmountInCoCodeCry` |  | |  | `case when Currency = _CompanyCode.Currency then comp.WithdrawnQuantityAmount else cast(currency_conversion( amount => comp.WithdrawnQuantityAmount, source_currency => comp.Currency, round => 'X', target_currency => _CompanyCode.Currency, exchange_rate_date => comp.MatlCompRequirementDate, error_handling => 'SET_TO_NULL' ) as wihthdrawnamountcocurcy preserving type) end` |
+| `FreeDefinedAmount1` |  | |  | `1` |
+| `_GLAccount` | | ✓ | | |
+| `_RequirementDate` | | ✓ | | |
+| `_RequirementDateMonth` | | ✓ | | |
+| `_RequirementDateYear` | | ✓ | | |
+| `_RequirementDateWeekDay` | | ✓ | | |
+| `_ReportingPeriod` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_MRPController` | | ✓ | | |
+| `_Reservation` | | ✓ | | |
+| `_MfgOrder` | | ✓ | | |
+| `_MfgOrderSequence` | | ✓ | | |
+| `_MfgOrderOperation` | | ✓ | | |
+| `_MfgOrderOperationBySemanKey` | | ✓ | | |
+| `_MfgOrderCategory` | | ✓ | | |
+| `_MfgOrderType` | | ✓ | | |
+| `_OrdInternalBillOfOperations` | | ✓ | | |
+| `_ProductionPlant` | | ✓ | | |
+| `_AssemblyMRPController` | | ✓ | | |
+| `_ProductionSupervisor` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_MaterialPlant` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_GoodsMovementType` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_SupplyArea` | | ✓ | | |
+| `_Warehouse` | | ✓ | | |
+| `_BOMExplosion` | | ✓ | | |
+| `_BOMItemCategory` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
+| `_PurchaseRequisition` | | ✓ | | |
+| `_PurchaseRequisitionItem` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_EntryUnit` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

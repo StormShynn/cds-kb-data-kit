@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContactPersonFunction` | `tb913.pafkt` |
-| key `Language` | `tb913.spras` |
-| `ContactPersonFunctionName` | `tb913.bez30` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContactPersonFunction` | ✓ | |  | `pafkt` |
+| `Language` | ✓ | |  | `spras` |
+| `ContactPersonFunctionName` |  | |  | `bez30` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

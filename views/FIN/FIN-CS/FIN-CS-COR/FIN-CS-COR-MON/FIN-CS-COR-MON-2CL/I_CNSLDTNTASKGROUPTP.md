@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationTaskGroup` | `ConsolidationTaskGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationTaskGroup` | ✓ | |  |  |
 
 ## Source Code
 

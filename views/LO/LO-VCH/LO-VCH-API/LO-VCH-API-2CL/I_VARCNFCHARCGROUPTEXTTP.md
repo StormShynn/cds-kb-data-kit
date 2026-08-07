@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfignCharacteristicGroup` | `ConfignCharacteristicGroup` |
-| key `ChangeNumber` | `ChangeNumber` |
-| key `Language` | `Language` |
-| `ConfignCharacteristicGroupDesc` | `ConfignCharacteristicGroupDesc` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Group` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfignCharacteristicGroup` | ✓ | |  |  |
+| `ChangeNumber` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ConfignCharacteristicGroupDesc` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Group` | | ✓ | | |
 
 ## Source Code
 

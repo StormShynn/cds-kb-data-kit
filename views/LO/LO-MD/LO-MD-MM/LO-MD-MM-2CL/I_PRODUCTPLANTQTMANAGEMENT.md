@@ -31,24 +31,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `PlantQualityMgmt.Product` |
-| key `Plant` | `PlantQualityMgmt.Plant` |
-| `MaximumStoragePeriod` | `PlantQualityMgmt.MaximumStoragePeriod` |
-| `QualityMgmtCtrlKey` | `PlantQualityMgmt.QualityMgmtCtrlKey` |
-| `MatlQualityAuthorizationGroup` | `PlantQualityMgmt.MatlQualityAuthorizationGroup` |
-| `HasPostToInspectionStock` | `PlantQualityMgmt. HasPostToInspectionStock` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `InspLotDocumentationIsRequired` | `PlantQualityMgmt.InspLotDocumentationIsRequired` |
-| `SuplrQualityManagementSystem` | `PlantQualityMgmt.SuplrQualityManagementSystem` |
-| `RecrrgInspIntervalTimeInDays` | `PlantQualityMgmt.RecrrgInspIntervalTimeInDays` |
-| `ProductQualityCertificateType` | `PlantQualityMgmt.ProductQualityCertificateType` |
-| `ProductPlantHasInspectionSetup` | `PlantQualityMgmt.ProductPlantHasInspectionSetup` |
-| `_Product` | *Association* |
-| `_QualityMgmtCtrlKey` | *Association* |
-| `_Plant` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `MaximumStoragePeriod` |  | |  |  |
+| `QualityMgmtCtrlKey` |  | |  |  |
+| `MatlQualityAuthorizationGroup` |  | |  |  |
+| `HasPostToInspectionStock` |  | |  | `PlantQualityMgmt. HasPostToInspectionStock` |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `InspLotDocumentationIsRequired` |  | |  |  |
+| `SuplrQualityManagementSystem` |  | |  |  |
+| `RecrrgInspIntervalTimeInDays` |  | |  |  |
+| `ProductQualityCertificateType` |  | |  |  |
+| `ProductPlantHasInspectionSetup` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_QualityMgmtCtrlKey` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Associations
 

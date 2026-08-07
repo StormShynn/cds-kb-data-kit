@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
-| key `Project` | `Project` |
-| `BusSolnOrderItemCharUUID` | `BusSolnOrderItemCharUUID` |
-| `_BusinessSolutionOrder` | *Association* |
-| `_BusinessSolutionOrderItem` | *Association* |
-| `_BusSolnOrdItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |
+| `Project` | ✓ | |  |  |
+| `BusSolnOrderItemCharUUID` |  | |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | |
+| `_BusinessSolutionOrderItem` | | ✓ | | |
+| `_BusSolnOrdItem` | | ✓ | | |
 
 ## Source Code
 

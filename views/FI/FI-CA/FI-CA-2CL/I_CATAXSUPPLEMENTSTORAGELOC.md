@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAStorageLocationOfTaxSuplmnt` | `cast( left( domvalue_l,2 ) as utloc_ut_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAStorageLocationOfTaxSuplmnt` | ✓ | |  | `cast( left( domvalue_l,2 ) as utloc_ut_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

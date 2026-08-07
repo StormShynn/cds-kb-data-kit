@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAScrtyDepDocBPItemStatus` | `cast( left( domvalue_l,1) as secdep_doci_status_kk )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAScrtyDepDocBPItemStatusText` | `cast( ddtext as secdep_doci_status_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAScrtyDepDocBPItemStatus` | ✓ | |  | `cast( left( domvalue_l,1) as secdep_doci_status_kk )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAScrtyDepDocBPItemStatusText` |  | |  | `cast( ddtext as secdep_doci_status_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

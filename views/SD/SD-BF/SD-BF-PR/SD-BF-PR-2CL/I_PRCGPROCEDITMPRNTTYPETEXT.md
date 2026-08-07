@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `PricingProcedureItemPrintType` | `cast ( substring( domvalue_l, 1, 1 ) as drukz )` |
-| `PrcgProcedItemPrintTypeName` | `cast ( ddtext as val_text )` |
-| `_PrcgProcedItemPrntType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `PricingProcedureItemPrintType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as drukz )` |
+| `PrcgProcedItemPrintTypeName` |  | |  | `cast ( ddtext as val_text )` |
+| `_PrcgProcedItemPrntType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

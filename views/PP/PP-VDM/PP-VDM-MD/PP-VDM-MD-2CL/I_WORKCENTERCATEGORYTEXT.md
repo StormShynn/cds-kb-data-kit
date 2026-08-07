@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterCategoryCode` | `txt.verwe` |
-| key `Language` | `cast(txt.spras as spras preserving type)` |
-| `WorkCenterCategoryName` | `cast(txt.ktext as pph_apverwetxt preserving type)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterCategoryCode` | ✓ | |  | `verwe` |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
+| `WorkCenterCategoryName` |  | |  | `cast(txt.ktext as pph_apverwetxt preserving type)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

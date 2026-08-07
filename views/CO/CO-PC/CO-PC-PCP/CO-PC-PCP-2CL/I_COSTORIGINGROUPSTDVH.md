@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostOriginGroup` | `CostOriginGroup` |
-| key `CostOriginType` | `CostOriginType` |
-| key `ControllingArea` | `ControllingArea` |
-| `_Text` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CostOriginType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostOriginGroup` | ✓ | |  |  |
+| `CostOriginType` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CostOriginType` | | ✓ | | |
 
 ## Source Code
 

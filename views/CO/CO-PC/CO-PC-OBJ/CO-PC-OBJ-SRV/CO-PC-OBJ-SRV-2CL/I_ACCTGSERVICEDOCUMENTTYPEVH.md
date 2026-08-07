@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceDocumentTypeName` | `ServiceDocumentTypeName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentType` | ✓ | |  |  |
+| `ServiceDocumentTypeName` |  | |  |  |
 
 ## Source Code
 

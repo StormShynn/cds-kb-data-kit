@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LaboratoryOrDesignOffice` | `t024l.labor` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LaboratoryOrDesignOffice` | ✓ | |  | `labor` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

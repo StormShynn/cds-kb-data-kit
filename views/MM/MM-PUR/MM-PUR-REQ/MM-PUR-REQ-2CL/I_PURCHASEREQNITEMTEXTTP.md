@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseRequisition` | `PurchaseRequisition` |
-| key `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| key `TextObjectCategory` | `TextObjectCategory` |
-| key `TextObjectKey` | `TextObjectKey` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| `PlainLongText` | `PlainLongText` |
-| `FixedIndicator` | `FixedIndicator` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_PurchaseRequisitionItem` | *Association* |
-| `_PurReqn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |
+| `PurchaseRequisitionItem` | ✓ | |  |  |
+| `TextObjectCategory` | ✓ | |  |  |
+| `TextObjectKey` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `PlainLongText` |  | |  |  |
+| `FixedIndicator` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_PurchaseRequisitionItem` | | ✓ | | |
+| `_PurReqn` | | ✓ | | |
 
 ## Source Code
 

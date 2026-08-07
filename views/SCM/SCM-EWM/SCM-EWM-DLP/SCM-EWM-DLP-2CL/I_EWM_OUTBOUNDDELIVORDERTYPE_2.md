@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMDeliveryDocumentCategory` | `EWMDeliveryDocumentCategory` |
-| key `EWMDeliveryDocumentType` | `EWMDeliveryDocumentType` |
-| `_DeliveryCategory` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMDeliveryDocumentCategory` | ✓ | |  |  |
+| `EWMDeliveryDocumentType` | ✓ | |  |  |
+| `_DeliveryCategory` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

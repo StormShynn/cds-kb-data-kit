@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocCharcConstraintStatus` | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccharcconstraintstatus preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocCharcConstraintStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccharcconstraintstatus preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

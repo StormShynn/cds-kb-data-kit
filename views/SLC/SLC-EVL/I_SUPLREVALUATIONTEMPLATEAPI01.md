@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalTemplateUUID` | `SuplrEvalTemplateUUID` |
-| `SupplierEvalTemplate` | `SupplierEvalTemplate` |
-| `SuplrEvalTemplateName` | `SuplrEvalTemplateName` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `SuplrEvalTmplDaysToRspDeadline` | `SuplrEvalTmplDaysToRspDeadline` |
-| `PurgCatUUID` | `PurgCatUUID` |
-| `SuplrEvalTmplOriginalLanguage` | `SuplrEvalTmplOriginalLanguage` |
-| `SuplrEvalTmplOvrlTranslSts` | `SuplrEvalTmplOvrlTranslSts` |
-| `SuplrEvalTemplateLifecycleSts` | `SuplrEvalTemplateLifecycleSts` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalTemplateUUID` | ✓ | |  |  |
+| `SupplierEvalTemplate` |  | |  |  |
+| `SuplrEvalTemplateName` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
+| `SuplrEvalTmplDaysToRspDeadline` |  | |  |  |
+| `PurgCatUUID` |  | |  |  |
+| `SuplrEvalTmplOriginalLanguage` |  | |  |  |
+| `SuplrEvalTmplOvrlTranslSts` |  | |  |  |
+| `SuplrEvalTemplateLifecycleSts` |  | |  |  |
 
 ## Source Code
 

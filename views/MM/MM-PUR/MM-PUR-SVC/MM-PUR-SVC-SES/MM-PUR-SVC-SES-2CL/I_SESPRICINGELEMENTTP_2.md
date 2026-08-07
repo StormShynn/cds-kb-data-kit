@@ -30,87 +30,87 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| key `ServiceEntrySheetItem` | `ServiceEntrySheetItem` |
-| key `PricingDocument` | `PricingDocument` |
-| key `PricingDocumentItem` | `PricingDocumentItem` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `PriceConditionDeterminationDte` | `PriceConditionDeterminationDte` |
-| `ConditionCalculationType` | `ConditionCalculationType` |
-| `ConditionBaseValue` | `ConditionBaseValue` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionCurrency` | `ConditionCurrency` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionToBaseQtyNmrtr` | `ConditionToBaseQtyNmrtr` |
-| `ConditionToBaseQtyDnmntr` | `ConditionToBaseQtyDnmntr` |
-| `ConditionCategory` | `ConditionCategory` |
-| `ConditionIsForStatistics` | `ConditionIsForStatistics` |
-| `PricingScaleType` | `PricingScaleType` |
-| `IsRelevantForAccrual` | `IsRelevantForAccrual` |
-| `CndnIsRelevantForInvoiceList` | `CndnIsRelevantForInvoiceList` |
-| `ConditionOrigin` | `ConditionOrigin` |
-| `IsGroupCondition` | `IsGroupCondition` |
-| `AccessNumberOfAccessSequence` | `AccessNumberOfAccessSequence` |
-| `ConditionRecord` | `ConditionRecord` |
-| `ConditionSequentialNumber` | `ConditionSequentialNumber` |
-| `AccountKeyForGLAccount` | `AccountKeyForGLAccount` |
-| `GLAccount` | `GLAccount` |
-| `TaxCode` | `TaxCode` |
-| `AcctKeyForAccrualsGLAccount` | `AcctKeyForAccrualsGLAccount` |
-| `AccrualsGLAccount` | `AccrualsGLAccount` |
-| `WithholdingTaxCode` | `WithholdingTaxCode` |
-| `FreightSupplier` | `FreightSupplier` |
-| `CndnRoundingOffDiffAmount` | `CndnRoundingOffDiffAmount` |
-| `ConditionAmount` | `ConditionAmount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `ConditionControl` | `ConditionControl` |
-| `ConditionInactiveReason` | `ConditionInactiveReason` |
-| `ConditionClass` | `ConditionClass` |
-| `PrcgProcedureCounterForHeader` | `PrcgProcedureCounterForHeader` |
-| `FactorForConditionBasisValue` | `FactorForConditionBasisValue` |
-| `StructureCondition` | `StructureCondition` |
-| `PeriodFactorForCndnBasisValue` | `PeriodFactorForCndnBasisValue` |
-| `PricingScaleBasis` | `PricingScaleBasis` |
-| `ConditionScaleBasisValue` | `ConditionScaleBasisValue` |
-| `ConditionScaleBasisUnit` | `ConditionScaleBasisUnit` |
-| `ConditionScaleBasisCurrency` | `ConditionScaleBasisCurrency` |
-| `ConditionAlternativeCurrency` | `ConditionAlternativeCurrency` |
-| `ConditionAmountInLocalCrcy` | `ConditionAmountInLocalCrcy` |
-| `CndnIsRelevantForIntcoBilling` | `CndnIsRelevantForIntcoBilling` |
-| `ConditionIsManuallyChanged` | `ConditionIsManuallyChanged` |
-| `BillingPriceSource` | `BillingPriceSource` |
-| `TaxJurisdictionLevel` | `TaxJurisdictionLevel` |
-| `ConditionByteSequence` | `ConditionByteSequence` |
-| `CndnIsRelevantForLimitValue` | `CndnIsRelevantForLimitValue` |
-| `ConditionBasisLimitExceeded` | `ConditionBasisLimitExceeded` |
-| `ConditionAmountLimitExceeded` | `ConditionAmountLimitExceeded` |
-| `CumulatedConditionBasisValue` | `CumulatedConditionBasisValue` |
-| `CustomerRebateRecipient` | `CustomerRebateRecipient` |
-| `ConditionIsForConfiguration` | `ConditionIsForConfiguration` |
-| `VariantCondition` | `VariantCondition` |
-| `ConditionAcctAssgmtRelevance` | `ConditionAcctAssgmtRelevance` |
-| `ConditionMatrixMaintRelevance` | `ConditionMatrixMaintRelevance` |
-| `ConfigblParametersAndFormulas` | `ConfigblParametersAndFormulas` |
-| `ConditionAdjustedQuantity` | `ConditionAdjustedQuantity` |
-| `ConditionTypeName` | `ConditionTypeName` |
-| `ConditionBaseValueIntlUnit` | `ConditionBaseValueIntlUnit` |
-| `ConditionBaseValueUnit` | `ConditionBaseValueUnit` |
-| `ConditionRateValueIntlUnit` | `ConditionRateValueIntlUnit` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `TaxCodeName` | `TaxCodeName` |
-| `ConditionIsDeletable` | `ConditionIsDeletable` |
-| `PricingProcedure` | `PricingProcedure` |
-| `SuperordinateDocument` | `SuperordinateDocument` |
-| `SuperordinateDocumentItem` | `SuperordinateDocumentItem` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_ServiceEntrySheetItem` | *Association* |
-| `_SESHeader` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |
+| `PricingDocument` | ✓ | |  |  |
+| `PricingDocumentItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionBaseValue` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `IsRelevantForAccrual` |  | |  |  |
+| `CndnIsRelevantForInvoiceList` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `IsGroupCondition` |  | |  |  |
+| `AccessNumberOfAccessSequence` |  | |  |  |
+| `ConditionRecord` |  | |  |  |
+| `ConditionSequentialNumber` |  | |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `AcctKeyForAccrualsGLAccount` |  | |  |  |
+| `AccrualsGLAccount` |  | |  |  |
+| `WithholdingTaxCode` |  | |  |  |
+| `FreightSupplier` |  | |  |  |
+| `CndnRoundingOffDiffAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionControl` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |
+| `FactorForConditionBasisValue` |  | |  |  |
+| `StructureCondition` |  | |  |  |
+| `PeriodFactorForCndnBasisValue` |  | |  |  |
+| `PricingScaleBasis` |  | |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |
+| `ConditionScaleBasisUnit` |  | |  |  |
+| `ConditionScaleBasisCurrency` |  | |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |
+| `ConditionAmountInLocalCrcy` |  | |  |  |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `BillingPriceSource` |  | |  |  |
+| `TaxJurisdictionLevel` |  | |  |  |
+| `ConditionByteSequence` |  | |  |  |
+| `CndnIsRelevantForLimitValue` |  | |  |  |
+| `ConditionBasisLimitExceeded` |  | |  |  |
+| `ConditionAmountLimitExceeded` |  | |  |  |
+| `CumulatedConditionBasisValue` |  | |  |  |
+| `CustomerRebateRecipient` |  | |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |
+| `VariantCondition` |  | |  |  |
+| `ConditionAcctAssgmtRelevance` |  | |  |  |
+| `ConditionMatrixMaintRelevance` |  | |  |  |
+| `ConfigblParametersAndFormulas` |  | |  |  |
+| `ConditionAdjustedQuantity` |  | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `ConditionBaseValueIntlUnit` |  | |  |  |
+| `ConditionBaseValueUnit` |  | |  |  |
+| `ConditionRateValueIntlUnit` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `TaxCodeName` |  | |  |  |
+| `ConditionIsDeletable` |  | |  |  |
+| `PricingProcedure` |  | |  |  |
+| `SuperordinateDocument` |  | |  |  |
+| `SuperordinateDocumentItem` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_ServiceEntrySheetItem` | | ✓ | | |
+| `_SESHeader` | | ✓ | | |
 
 ## Source Code
 

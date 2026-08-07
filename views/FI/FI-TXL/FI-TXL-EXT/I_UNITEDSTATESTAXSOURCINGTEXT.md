@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UnitedStatesTaxSourcing` | `cast(domvalue_l as fis_etxdc_sourcing)` |
-| key `Language` | `cast(ddlanguage as spras)` |
-| `UnitedStatesTaxSourcingName` | `ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UnitedStatesTaxSourcing` | ✓ | |  | `cast(domvalue_l as fis_etxdc_sourcing)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras)` |
+| `UnitedStatesTaxSourcingName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -32,329 +32,329 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `BillingDocumentItem.BillingDocument` |
-| key `BillingDocumentItem` | `BillingDocumentItem.BillingDocumentItem` |
-| `SalesDocumentItemCategory` | `BillingDocumentItem.SalesDocumentItemCategory` |
-| `SalesDocumentItemType` | `BillingDocumentItem.SalesDocumentItemType` |
-| `ReturnItemProcessingType` | `BillingDocumentItem.ReturnItemProcessingType` |
-| `CreatedByUser` | `BillingDocumentItem.CreatedByUser` |
-| `CreationDate` | `BillingDocumentItem.CreationDate` |
-| `CreationTime` | `BillingDocumentItem.CreationTime` |
-| `ReferenceLogicalSystem` | `BillingDocumentItem.ReferenceLogicalSystem` |
-| `OrganizationDivision` | `BillingDocumentItem.OrganizationDivision` |
-| `Division` | `BillingDocumentItem.Division` |
-| `SalesOffice` | `BillingDocumentItem.SalesOffice` |
-| `Material` | `cast(BillingDocumentItem.Product as matnr preserving type)` |
-| `Product` | `BillingDocumentItem.Product` |
-| `OriginallyRequestedMaterial` | `BillingDocumentItem.OriginallyRequestedMaterial` |
-| `InternationalArticleNumber` | `BillingDocumentItem.InternationalArticleNumber` |
-| `PricingReferenceMaterial` | `BillingDocumentItem.PricingReferenceMaterial` |
-| `Batch` | `} ] BillingDocumentItem.Batch` |
-| `ProductHierarchyNode` | `BillingDocumentItem.ProductHierarchyNode` |
-| `MaterialGroup` | `cast(BillingDocumentItem.ProductGroup as matkl preserving type)` |
-| `ProductGroup` | `BillingDocumentItem.ProductGroup` |
-| `AdditionalMaterialGroup1` | `BillingDocumentItem.AdditionalMaterialGroup1` |
-| `AdditionalMaterialGroup2` | `BillingDocumentItem.AdditionalMaterialGroup2` |
-| `AdditionalMaterialGroup3` | `BillingDocumentItem.AdditionalMaterialGroup3` |
-| `AdditionalMaterialGroup4` | `BillingDocumentItem.AdditionalMaterialGroup4` |
-| `AdditionalMaterialGroup5` | `BillingDocumentItem.AdditionalMaterialGroup5` |
-| `ProductConfiguration` | `BillingDocumentItem.ProductConfiguration` |
-| `MaterialCommissionGroup` | `BillingDocumentItem.MaterialCommissionGroup` |
-| `Plant` | `BillingDocumentItem.Plant` |
-| `StorageLocation` | `BillingDocumentItem.StorageLocation` |
-| `ReplacementPartType` | `BillingDocumentItem.ReplacementPartType` |
-| `MaterialGroupHierarchy1` | `BillingDocumentItem.MaterialGroupHierarchy1` |
-| `MaterialGroupHierarchy2` | `BillingDocumentItem.MaterialGroupHierarchy2` |
-| `PlantRegion` | `BillingDocumentItem.PlantRegion` |
-| `PlantCounty` | `BillingDocumentItem.PlantCounty` |
-| `PlantCity` | `BillingDocumentItem.PlantCity` |
-| `TransitPlant` | `BillingDocumentItem.TransitPlant` |
-| `ValueChainCategory` | `BillingDocumentItem.ValueChainCategory` |
-| `BOMExplosion` | `BillingDocumentItem.BOMExplosion` |
-| `MaterialDeterminationType` | `BillingDocumentItem.MaterialDeterminationType` |
-| `SoldProduct` | `BillingDocumentItem.SoldProduct` |
-| `BillingDocumentItemText` | `BillingDocumentItem.BillingDocumentItemText` |
-| `ServicesRenderedDate` | `BillingDocumentItem.ServicesRenderedDate` |
-| `BillingQuantity` | `BillingDocumentItem.BillingQuantity` |
-| `BillingQuantityUnit` | `BillingDocumentItem.BillingQuantityUnit` |
-| `BillingQuantityInBaseUnit` | `BillingDocumentItem.BillingQuantityInBaseUnit` |
-| `BaseUnit` | `BillingDocumentItem.BaseUnit` |
-| `MRPRequiredQuantityInBaseUnit` | `BillingDocumentItem.MRPRequiredQuantityInBaseUnit` |
-| `BillingToBaseQuantityDnmntr` | `BillingDocumentItem.BillingToBaseQuantityDnmntr` |
-| `BillingToBaseQuantityNmrtr` | `BillingDocumentItem.BillingToBaseQuantityNmrtr` |
-| `ItemGrossWeight` | `BillingDocumentItem.ItemGrossWeight` |
-| `ItemNetWeight` | `BillingDocumentItem.ItemNetWeight` |
-| `ItemWeightUnit` | `BillingDocumentItem.ItemWeightUnit` |
-| `ItemVolume` | `BillingDocumentItem.ItemVolume` |
-| `ItemVolumeUnit` | `BillingDocumentItem.ItemVolumeUnit` |
-| `BillToPartyCountry` | `BillingDocumentItem.BillToPartyCountry` |
-| `BillToPartyRegion` | `BillingDocumentItem.BillToPartyRegion` |
-| `BillingPlanRule` | `BillingDocumentItem.BillingPlanRule` |
-| `BillingPlan` | `BillingDocumentItem.BillingPlan` |
-| `BillingPlanItem` | `BillingDocumentItem.BillingPlanItem` |
-| `DownPaymentProcessingVariant` | `BillingDocumentItem.DownPaymentProcessingVariant` |
-| `DocumentBillingStatus` | `BillingDocumentItem.DocumentBillingStatus` |
-| `NetAmount` | `BillingDocumentItem.NetAmount` |
-| `TransactionCurrency` | `BillingDocumentItem.TransactionCurrency` |
-| `GrossAmount` | `BillingDocumentItem.GrossAmount` |
-| `PricingDate` | `BillingDocumentItem.PricingDate` |
-| `PriceDetnExchangeRate` | `BillingDocumentItem.PriceDetnExchangeRate` |
-| `PricingScaleQuantityInBaseUnit` | `BillingDocumentItem.PricingScaleQuantityInBaseUnit` |
-| `TaxAmount` | `BillingDocumentItem.TaxAmount` |
-| `CostAmount` | `BillingDocumentItem.CostAmount` |
-| `Subtotal1Amount` | `BillingDocumentItem.Subtotal1Amount` |
-| `Subtotal2Amount` | `BillingDocumentItem.Subtotal2Amount` |
-| `Subtotal3Amount` | `BillingDocumentItem.Subtotal3Amount` |
-| `Subtotal4Amount` | `BillingDocumentItem.Subtotal4Amount` |
-| `Subtotal5Amount` | `BillingDocumentItem.Subtotal5Amount` |
-| `Subtotal6Amount` | `BillingDocumentItem.Subtotal6Amount` |
-| `StatisticalValueControl` | `BillingDocumentItem.StatisticalValueControl` |
-| `CashDiscountIsDeductible` | `BillingDocumentItem.CashDiscountIsDeductible` |
-| `CustomerConditionGroup1` | `BillingDocumentItem.CustomerConditionGroup1` |
-| `CustomerConditionGroup2` | `BillingDocumentItem.CustomerConditionGroup2` |
-| `CustomerConditionGroup3` | `BillingDocumentItem.CustomerConditionGroup3` |
-| `CustomerConditionGroup4` | `BillingDocumentItem.CustomerConditionGroup4` |
-| `CustomerConditionGroup5` | `BillingDocumentItem.CustomerConditionGroup5` |
-| `ManualPriceChangeType` | `BillingDocumentItem.ManualPriceChangeType` |
-| `MaterialPricingGroup` | `BillingDocumentItem.MaterialPricingGroup` |
-| `StatisticsExchangeRate` | `BillingDocumentItem.StatisticsExchangeRate` |
-| `MainItemPricingRefMaterial` | `BillingDocumentItem.MainItemPricingRefMaterial` |
-| `MainItemMaterialPricingGroup` | `BillingDocumentItem.MainItemMaterialPricingGroup` |
-| `TimeSheetOvertimeCategory` | `BillingDocumentItem.TimeSheetOvertimeCategory` |
-| `PricingRelevance` | `BillingDocumentItem.PricingRelevance` |
-| `DepartureCountry` | `BillingDocumentItem.DepartureCountry` |
-| `TaxJurisdiction` | `BillingDocumentItem.TaxJurisdiction` |
-| `ProductTaxClassification1` | `BillingDocumentItem.ProductTaxClassification1` |
-| `ProductTaxClassification2` | `BillingDocumentItem.ProductTaxClassification2` |
-| `ProductTaxClassification3` | `BillingDocumentItem.ProductTaxClassification3` |
-| `ProductTaxClassification4` | `BillingDocumentItem.ProductTaxClassification4` |
-| `ProductTaxClassification5` | `BillingDocumentItem.ProductTaxClassification5` |
-| `ProductTaxClassification6` | `BillingDocumentItem.ProductTaxClassification6` |
-| `ProductTaxClassification7` | `BillingDocumentItem.ProductTaxClassification7` |
-| `ProductTaxClassification8` | `BillingDocumentItem.ProductTaxClassification8` |
-| `ProductTaxClassification9` | `BillingDocumentItem.ProductTaxClassification9` |
-| `ZeroVATRsn` | `BillingDocumentItem.ZeroVATRsn` |
-| `TaxCode` | `BillingDocumentItem.TaxCode` |
-| `TaxRateValidityStartDate` | `BillingDocumentItem.TaxRateValidityStartDate` |
-| `CountryOfOrigin` | `BillingDocumentItem.CountryOfOrigin` |
-| `RegionOfOrigin` | `BillingDocumentItem.RegionOfOrigin` |
-| `CommodityCode` | `BillingDocumentItem.CommodityCode` |
-| `EligibleAmountForCashDiscount` | `BillingDocumentItem.EligibleAmountForCashDiscount` |
-| `BusinessArea` | `BillingDocumentItem.BusinessArea` |
-| `ProfitCenter` | `BillingDocumentItem.ProfitCenter` |
-| `WBSElement` | `cast(BillingDocumentItem.WBSElementInternalID as ps_psp_pnr preserving type)` |
-| `WBSElementInternalID` | `BillingDocumentItem.WBSElementInternalID` |
-| `ProviderContract` | `BillingDocumentItem.ProviderContract` |
-| `ProviderContractItem` | `BillingDocumentItem.ProviderContractItem` |
-| `BillingPerformancePeriodStrDte` | `BillingDocumentItem.BillingPerformancePeriodStrDte` |
-| `BillingPeriodOfPerfStartDate` | `cast(BillingDocumentItem.BillingPerformancePeriodStrDte as fm_perop_fi_low preserving type)` |
-| `BillingPerformancePeriodEndDte` | `BillingDocumentItem.BillingPerformancePeriodEndDte` |
-| `BillingPeriodOfPerfEndDate` | `cast(BillingDocumentItem.BillingPerformancePeriodEndDte as fm_perop_fi_high preserving type)` |
-| `ControllingArea` | `BillingDocumentItem.ControllingArea` |
-| `ProfitabilitySegment` | `cast(case when BillingDocumentItem.ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad(BillingDocumentItem.ProfitabilitySegment_2, 10, '0') end as rkeobjnr_numc)` |
-| `ProfitabilitySegment_2` | `BillingDocumentItem.ProfitabilitySegment_2` |
-| `OrderID` | `BillingDocumentItem.OrderID` |
-| `CostCenter` | `BillingDocumentItem.CostCenter` |
-| `OriginSDDocument` | `BillingDocumentItem.OriginSDDocument` |
-| `OriginSDDocumentItem` | `BillingDocumentItem.OriginSDDocumentItem` |
-| `PriceDetnExchangeRateDate` | `BillingDocumentItem.PriceDetnExchangeRateDate` |
-| `MatlAccountAssignmentGroup` | `BillingDocumentItem.MatlAccountAssignmentGroup` |
-| `ReferenceSDDocument` | `BillingDocumentItem.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `BillingDocumentItem.ReferenceSDDocumentItem` |
-| `ReferenceSDDocumentCategory` | `BillingDocumentItem.ReferenceSDDocumentCategory` |
-| `SalesDocument` | `BillingDocumentItem.SalesDocument` |
-| `SalesDocumentItem` | `} ] BillingDocumentItem.SalesDocumentItem` |
-| `SalesSDDocumentCategory` | `BillingDocumentItem.SalesSDDocumentCategory` |
-| `HigherLevelItem` | `} ] BillingDocumentItem.HigherLevelItem` |
-| `HigherLvlItmOfBatSpltItm` | `BillingDocumentItem.HigherLvlItmOfBatSpltItm` |
-| `BillingDocumentItemInPartSgmt` | `BillingDocumentItem.BillingDocumentItemInPartSgmt` |
-| `ExternalReferenceDocument` | `BillingDocumentItem.ExternalReferenceDocument` |
-| `ExternalReferenceDocumentItem` | `cast(BillingDocumentItem.BillingDocExtReferenceDocItem as ext_reference_document_item preserving type)` |
-| `BillingDocExtReferenceDocItem` | `BillingDocumentItem.BillingDocExtReferenceDocItem` |
-| `PrelimBillingDocument` | `BillingDocumentItem.PrelimBillingDocument` |
-| `PrelimBillingDocumentItem` | `BillingDocumentItem.PrelimBillingDocumentItem` |
-| `SalesGroup` | `BillingDocumentItem.SalesGroup` |
-| `AdditionalCustomerGroup1` | `BillingDocumentItem.AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `BillingDocumentItem.AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `BillingDocumentItem.AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `BillingDocumentItem.AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `BillingDocumentItem.AdditionalCustomerGroup5` |
-| `SDDocumentReason` | `BillingDocumentItem.SDDocumentReason` |
-| `RetailPromotion` | `BillingDocumentItem.RetailPromotion` |
-| `RebateBasisAmount` | `BillingDocumentItem.RebateBasisAmount` |
-| `VolumeRebateGroup` | `BillingDocumentItem.VolumeRebateGroup` |
-| `ItemIsRelevantForCredit` | `BillingDocumentItem.ItemIsRelevantForCredit` |
-| `CreditRelatedPrice` | `BillingDocumentItem.CreditRelatedPrice` |
-| `SalesDeal` | `BillingDocumentItem.SalesDeal` |
-| `SalesPromotion` | `BillingDocumentItem.SalesPromotion` |
-| `SalesOrderSalesDistrict` | `BillingDocumentItem.SalesOrderSalesDistrict` |
-| `SalesOrderCustomerGroup` | `BillingDocumentItem.SalesOrderCustomerGroup` |
-| `SalesOrderCustomerPriceGroup` | `BillingDocumentItem.SalesOrderCustomerPriceGroup` |
-| `SalesOrderPriceListType` | `BillingDocumentItem.SalesOrderPriceListType` |
-| `SalesOrderSalesOrganization` | `BillingDocumentItem.SalesOrderSalesOrganization` |
-| `SalesOrderDistributionChannel` | `BillingDocumentItem.SalesOrderDistributionChannel` |
-| `SalesDocIsCreatedFromReference` | `BillingDocumentItem.SalesDocIsCreatedFromReference` |
-| `ShippingPoint` | `BillingDocumentItem.ShippingPoint` |
-| `ServiceDocumentType` | `BillingDocumentItem.ServiceDocumentType` |
-| `ServiceDocument` | `BillingDocumentItem.ServiceDocument` |
-| `ServiceDocumentItem` | `BillingDocumentItem.ServiceDocumentItem` |
-| `BusinessSolutionOrder` | `BillingDocumentItem.BusinessSolutionOrder` |
-| `BusinessSolutionOrderItem` | `BillingDocumentItem.BusinessSolutionOrderItem` |
-| `HigherLevelItemUsage` | `BillingDocumentItem.HigherLevelItemUsage` |
-| `BillingDocumentIsTemporary` | `BillingDocumentItem.BillingDocumentIsTemporary` |
-| `SDDocumentCategory` | `BillingDocumentItem.SDDocumentCategory` |
-| `BillingDocumentType` | `BillingDocumentItem.BillingDocumentType` |
-| `SalesOrganization` | `BillingDocumentItem.SalesOrganization` |
-| `DistributionChannel` | `BillingDocumentItem.DistributionChannel` |
-| `CustomerPriceGroup` | `BillingDocumentItem.CustomerPriceGroup` |
-| `CustomerGroup` | `BillingDocumentItem.CustomerGroup` |
-| `Country` | `BillingDocumentItem.Country` |
-| `Region` | `BillingDocumentItem.Region` |
-| `CityCode` | `BillingDocumentItem.CityCode` |
-| `SalesDistrict` | `BillingDocumentItem.SalesDistrict` |
-| `OverallSDProcessStatus` | `BillingDocumentItem.OverallSDProcessStatus` |
-| `OverallBillingStatus` | `BillingDocumentItem.OverallBillingStatus` |
-| `SoldToParty` | `BillingDocumentItem.SoldToParty` |
-| `PayerParty` | `BillingDocumentItem.PayerParty` |
-| `BillingDocumentDate` | `BillingDocumentItem.BillingDocumentDate` |
-| `CompanyCode` | `BillingDocumentItem.CompanyCode` |
-| `County` | `BillingDocumentItem.County` |
-| `CustomerRebateAgreement` | `BillingDocumentItem.CustomerRebateAgreement` |
-| `BillingDocumentCategory` | `BillingDocumentItem.BillingDocumentCategory` |
-| `PricingDocument` | `BillingDocumentItem.PricingDocument` |
-| `CancelledBillingDocument` | `BillingDocumentItem.CancelledBillingDocument` |
-| `ShipToParty` | `BillingDocumentItem.ShipToParty` |
-| `BillToParty` | `BillingDocumentItem.BillToParty` |
-| `SalesEmployee` | `BillingDocumentItem.SalesEmployee` |
-| `ResponsibleEmployee` | `BillingDocumentItem.ResponsibleEmployee` |
-| `CustomsPreference` | `BillingDocumentItem.CustomsPreference` |
-| `TrdPrefStmntExternalOriginCode` | `BillingDocumentItem.TrdPrefStmntExternalOriginCode` |
-| `TrdPrefStmntInternalOriginCode` | `BillingDocumentItem.TrdPrefStmntInternalOriginCode` |
-| `PricingIsIncomplete` | `BillingDocumentItem.PricingIsIncomplete` |
-| `_MaterialText` | *Association* |
-| `_ProductText` | *Association* |
-| `_SoldProductText` | *Association* |
-| `_OriginallyRequestedMatlText` | *Association* |
-| `_PricingReferenceMaterialText` | *Association* |
-| `_MainItemPricingRefMatlText` | *Association* |
-| `_MaterialGroupText` | *Association* |
-| `_ShippingPointText` | *Association* |
-| `_WBSElementText` | *Association* |
-| `_BusinessAreaText` | *Association* |
-| `_BillingDocumentBasic` | *Association* |
-| `_PartnerBasic` | *Association* |
-| `_PricingElementBasic` | *Association* |
-| `_SalesDocumentItemCategory` | *Association* |
-| `_SalesDocumentItemType` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_ReferenceLogicalSystem` | *Association* |
-| `_OrganizationDivision` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_Material` | *Association* |
-| `_Product` | *Association* |
-| `_SoldProduct` | *Association* |
-| `_OriginallyRequestedMaterial` | *Association* |
-| `_PricingReferenceMaterial` | *Association* |
-| `_Batch` | *Association* |
-| `_ProductHierarchyNode` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_AdditionalMaterialGroup1` | *Association* |
-| `_AdditionalMaterialGroup2` | *Association* |
-| `_AdditionalMaterialGroup3` | *Association* |
-| `_AdditionalMaterialGroup4` | *Association* |
-| `_AdditionalMaterialGroup5` | *Association* |
-| `_MaterialCommissionGroup` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_PlantRegion` | *Association* |
-| `_TransitPlant` | *Association* |
-| `_ValueChainCategory` | *Association* |
-| `_BillingQuantityUnit` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_ItemWeightUnit` | *Association* |
-| `_ItemVolumeUnit` | *Association* |
-| `_BillToPartyCountry` | *Association* |
-| `_BillToPartyRegion` | *Association* |
-| `_BillingPlanRule` | *Association* |
-| `_DownPaymentProcessingVariant` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_StatisticalValueControl` | *Association* |
-| `_MaterialPricingGroup` | *Association* |
-| `_MainItemPricingRefMaterial` | *Association* |
-| `_MainItemMaterialPricingGroup` | *Association* |
-| `_TimeSheetOvertimeCat` | *Association* |
-| `_PricingRelevance` | *Association* |
-| `_DepartureCountry` | *Association* |
-| `_CountryOfOrigin` | *Association* |
-| `_RegionOfOrigin` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_WBSElement` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_MatlAccountAssignmentGroup` | *Association* |
-| `_CostCenter` | *Association* |
-| `_CostCenter_2` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_ReferenceSalesDocumentItem` | *Association* |
-| `_ReferenceDeliveryDocumentItem` | *Association* |
-| `_ReferenceBillingDocItemBasic` | *Association* |
-| `_ReferenceSDDocumentCategory` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
-| `_SalesSDDocumentCategory` | *Association* |
-| `_HigherLevelItemBasic` | *Association* |
-| `_HigherLvlItmOfBatSpltItmBasic` | *Association* |
-| `_PrelimBillingDocument` | *Association* |
-| `_PrelimBillingDocumentItem` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_AdditionalCustomerGroup1` | *Association* |
-| `_AdditionalCustomerGroup2` | *Association* |
-| `_AdditionalCustomerGroup3` | *Association* |
-| `_AdditionalCustomerGroup4` | *Association* |
-| `_AdditionalCustomerGroup5` | *Association* |
-| `_SDDocumentReason` | *Association* |
-| `_RetailPromotion` | *Association* |
-| `_SalesDeal` | *Association* |
-| `_SalesOrderSalesDistrict` | *Association* |
-| `_SalesOrderCustomerGroup` | *Association* |
-| `_SalesOrderCustomerPriceGroup` | *Association* |
-| `_SalesOrderPriceListType` | *Association* |
-| `_SalesOrderSalesOrganization` | *Association* |
-| `_SalesOrderDistributionChannel` | *Association* |
-| `_ShippingPoint` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_ProviderContract` | *Association* |
-| `_ProviderContractItem` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_BillingDocumentCategory` | *Association* |
-| `_BillingDocumentType` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_CustomerPriceGroup` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_Country` | *Association* |
-| `_CityCode` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_Region` | *Association* |
-| `_County` | *Association* |
-| `_CancelledBillingDocumentBasic` | *Association* |
-| `_OverallSDProcessStatus` | *Association* |
-| `_OverallBillingStatus` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_PayerParty` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_BillToParty` | *Association* |
-| `_SalesEmployee` | *Association* |
-| `_ResponsibleEmployee` | *Association* |
-| `_SolutionOrder` | *Association* |
-| `_SolutionOrderItem` | *Association* |
-| `_CustomsPreference` | *Association* |
-| `_TrdPrefStmntIntOriginCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `BillingDocumentItem` | ✓ | |  |  |
+| `SalesDocumentItemCategory` |  | |  |  |
+| `SalesDocumentItemType` |  | |  |  |
+| `ReturnItemProcessingType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `ReferenceLogicalSystem` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `Material` |  | |  | `cast(BillingDocumentItem.Product as matnr preserving type)` |
+| `Product` |  | |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |
+| `InternationalArticleNumber` |  | |  |  |
+| `PricingReferenceMaterial` |  | |  |  |
+| `Batch` |  | |  | `} ] BillingDocumentItem.Batch` |
+| `ProductHierarchyNode` |  | |  |  |
+| `MaterialGroup` |  | |  | `cast(BillingDocumentItem.ProductGroup as matkl preserving type)` |
+| `ProductGroup` |  | |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |
+| `ProductConfiguration` |  | |  |  |
+| `MaterialCommissionGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ReplacementPartType` |  | |  |  |
+| `MaterialGroupHierarchy1` |  | |  |  |
+| `MaterialGroupHierarchy2` |  | |  |  |
+| `PlantRegion` |  | |  |  |
+| `PlantCounty` |  | |  |  |
+| `PlantCity` |  | |  |  |
+| `TransitPlant` |  | |  |  |
+| `ValueChainCategory` |  | |  |  |
+| `BOMExplosion` |  | |  |  |
+| `MaterialDeterminationType` |  | |  |  |
+| `SoldProduct` |  | |  |  |
+| `BillingDocumentItemText` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `BillingQuantity` |  | |  |  |
+| `BillingQuantityUnit` |  | |  |  |
+| `BillingQuantityInBaseUnit` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `MRPRequiredQuantityInBaseUnit` |  | |  |  |
+| `BillingToBaseQuantityDnmntr` |  | |  |  |
+| `BillingToBaseQuantityNmrtr` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `BillToPartyCountry` |  | |  |  |
+| `BillToPartyRegion` |  | |  |  |
+| `BillingPlanRule` |  | |  |  |
+| `BillingPlan` |  | |  |  |
+| `BillingPlanItem` |  | |  |  |
+| `DownPaymentProcessingVariant` |  | |  |  |
+| `DocumentBillingStatus` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `GrossAmount` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |
+| `PricingScaleQuantityInBaseUnit` |  | |  |  |
+| `TaxAmount` |  | |  |  |
+| `CostAmount` |  | |  |  |
+| `Subtotal1Amount` |  | |  |  |
+| `Subtotal2Amount` |  | |  |  |
+| `Subtotal3Amount` |  | |  |  |
+| `Subtotal4Amount` |  | |  |  |
+| `Subtotal5Amount` |  | |  |  |
+| `Subtotal6Amount` |  | |  |  |
+| `StatisticalValueControl` |  | |  |  |
+| `CashDiscountIsDeductible` |  | |  |  |
+| `CustomerConditionGroup1` |  | |  |  |
+| `CustomerConditionGroup2` |  | |  |  |
+| `CustomerConditionGroup3` |  | |  |  |
+| `CustomerConditionGroup4` |  | |  |  |
+| `CustomerConditionGroup5` |  | |  |  |
+| `ManualPriceChangeType` |  | |  |  |
+| `MaterialPricingGroup` |  | |  |  |
+| `StatisticsExchangeRate` |  | |  |  |
+| `MainItemPricingRefMaterial` |  | |  |  |
+| `MainItemMaterialPricingGroup` |  | |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |
+| `PricingRelevance` |  | |  |  |
+| `DepartureCountry` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `ProductTaxClassification1` |  | |  |  |
+| `ProductTaxClassification2` |  | |  |  |
+| `ProductTaxClassification3` |  | |  |  |
+| `ProductTaxClassification4` |  | |  |  |
+| `ProductTaxClassification5` |  | |  |  |
+| `ProductTaxClassification6` |  | |  |  |
+| `ProductTaxClassification7` |  | |  |  |
+| `ProductTaxClassification8` |  | |  |  |
+| `ProductTaxClassification9` |  | |  |  |
+| `ZeroVATRsn` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxRateValidityStartDate` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `RegionOfOrigin` |  | |  |  |
+| `CommodityCode` |  | |  |  |
+| `EligibleAmountForCashDiscount` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `WBSElement` |  | |  | `cast(BillingDocumentItem.WBSElementInternalID as ps_psp_pnr preserving type)` |
+| `WBSElementInternalID` |  | |  |  |
+| `ProviderContract` |  | |  |  |
+| `ProviderContractItem` |  | |  |  |
+| `BillingPerformancePeriodStrDte` |  | |  |  |
+| `BillingPeriodOfPerfStartDate` |  | |  | `cast(BillingDocumentItem.BillingPerformancePeriodStrDte as fm_perop_fi_low preserving type)` |
+| `BillingPerformancePeriodEndDte` |  | |  |  |
+| `BillingPeriodOfPerfEndDate` |  | |  | `cast(BillingDocumentItem.BillingPerformancePeriodEndDte as fm_perop_fi_high preserving type)` |
+| `ControllingArea` |  | |  |  |
+| `ProfitabilitySegment` |  | |  | `cast(case when BillingDocumentItem.ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad(BillingDocumentItem.ProfitabilitySegment_2, 10, '0') end as rkeobjnr_numc)` |
+| `ProfitabilitySegment_2` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `OriginSDDocument` |  | |  |  |
+| `OriginSDDocumentItem` |  | |  |  |
+| `PriceDetnExchangeRateDate` |  | |  |  |
+| `MatlAccountAssignmentGroup` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  | `} ] BillingDocumentItem.SalesDocumentItem` |
+| `SalesSDDocumentCategory` |  | |  |  |
+| `HigherLevelItem` |  | |  | `} ] BillingDocumentItem.HigherLevelItem` |
+| `HigherLvlItmOfBatSpltItm` |  | |  |  |
+| `BillingDocumentItemInPartSgmt` |  | |  |  |
+| `ExternalReferenceDocument` |  | |  |  |
+| `ExternalReferenceDocumentItem` |  | |  | `cast(BillingDocumentItem.BillingDocExtReferenceDocItem as ext_reference_document_item preserving type)` |
+| `BillingDocExtReferenceDocItem` |  | |  |  |
+| `PrelimBillingDocument` |  | |  |  |
+| `PrelimBillingDocumentItem` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `RetailPromotion` |  | |  |  |
+| `RebateBasisAmount` |  | |  |  |
+| `VolumeRebateGroup` |  | |  |  |
+| `ItemIsRelevantForCredit` |  | |  |  |
+| `CreditRelatedPrice` |  | |  |  |
+| `SalesDeal` |  | |  |  |
+| `SalesPromotion` |  | |  |  |
+| `SalesOrderSalesDistrict` |  | |  |  |
+| `SalesOrderCustomerGroup` |  | |  |  |
+| `SalesOrderCustomerPriceGroup` |  | |  |  |
+| `SalesOrderPriceListType` |  | |  |  |
+| `SalesOrderSalesOrganization` |  | |  |  |
+| `SalesOrderDistributionChannel` |  | |  |  |
+| `SalesDocIsCreatedFromReference` |  | |  |  |
+| `ShippingPoint` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `BusinessSolutionOrder` |  | |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |
+| `HigherLevelItemUsage` |  | |  |  |
+| `BillingDocumentIsTemporary` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `CustomerPriceGroup` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `CityCode` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `OverallBillingStatus` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `County` |  | |  |  |
+| `CustomerRebateAgreement` |  | |  |  |
+| `BillingDocumentCategory` |  | |  |  |
+| `PricingDocument` |  | |  |  |
+| `CancelledBillingDocument` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `SalesEmployee` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `CustomsPreference` |  | |  |  |
+| `TrdPrefStmntExternalOriginCode` |  | |  |  |
+| `TrdPrefStmntInternalOriginCode` |  | |  |  |
+| `PricingIsIncomplete` |  | |  |  |
+| `_MaterialText` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_SoldProductText` | | ✓ | | |
+| `_OriginallyRequestedMatlText` | | ✓ | | |
+| `_PricingReferenceMaterialText` | | ✓ | | |
+| `_MainItemPricingRefMatlText` | | ✓ | | |
+| `_MaterialGroupText` | | ✓ | | |
+| `_ShippingPointText` | | ✓ | | |
+| `_WBSElementText` | | ✓ | | |
+| `_BusinessAreaText` | | ✓ | | |
+| `_BillingDocumentBasic` | | ✓ | | |
+| `_PartnerBasic` | | ✓ | | |
+| `_PricingElementBasic` | | ✓ | | |
+| `_SalesDocumentItemCategory` | | ✓ | | |
+| `_SalesDocumentItemType` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_ReferenceLogicalSystem` | | ✓ | | |
+| `_OrganizationDivision` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_SoldProduct` | | ✓ | | |
+| `_OriginallyRequestedMaterial` | | ✓ | | |
+| `_PricingReferenceMaterial` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_ProductHierarchyNode` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | |
+| `_MaterialCommissionGroup` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_PlantRegion` | | ✓ | | |
+| `_TransitPlant` | | ✓ | | |
+| `_ValueChainCategory` | | ✓ | | |
+| `_BillingQuantityUnit` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_ItemWeightUnit` | | ✓ | | |
+| `_ItemVolumeUnit` | | ✓ | | |
+| `_BillToPartyCountry` | | ✓ | | |
+| `_BillToPartyRegion` | | ✓ | | |
+| `_BillingPlanRule` | | ✓ | | |
+| `_DownPaymentProcessingVariant` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_StatisticalValueControl` | | ✓ | | |
+| `_MaterialPricingGroup` | | ✓ | | |
+| `_MainItemPricingRefMaterial` | | ✓ | | |
+| `_MainItemMaterialPricingGroup` | | ✓ | | |
+| `_TimeSheetOvertimeCat` | | ✓ | | |
+| `_PricingRelevance` | | ✓ | | |
+| `_DepartureCountry` | | ✓ | | |
+| `_CountryOfOrigin` | | ✓ | | |
+| `_RegionOfOrigin` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_MatlAccountAssignmentGroup` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_CostCenter_2` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_ReferenceSalesDocumentItem` | | ✓ | | |
+| `_ReferenceDeliveryDocumentItem` | | ✓ | | |
+| `_ReferenceBillingDocItemBasic` | | ✓ | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
+| `_SalesSDDocumentCategory` | | ✓ | | |
+| `_HigherLevelItemBasic` | | ✓ | | |
+| `_HigherLvlItmOfBatSpltItmBasic` | | ✓ | | |
+| `_PrelimBillingDocument` | | ✓ | | |
+| `_PrelimBillingDocumentItem` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | |
+| `_SDDocumentReason` | | ✓ | | |
+| `_RetailPromotion` | | ✓ | | |
+| `_SalesDeal` | | ✓ | | |
+| `_SalesOrderSalesDistrict` | | ✓ | | |
+| `_SalesOrderCustomerGroup` | | ✓ | | |
+| `_SalesOrderCustomerPriceGroup` | | ✓ | | |
+| `_SalesOrderPriceListType` | | ✓ | | |
+| `_SalesOrderSalesOrganization` | | ✓ | | |
+| `_SalesOrderDistributionChannel` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_ProviderContract` | | ✓ | | |
+| `_ProviderContractItem` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_BillingDocumentCategory` | | ✓ | | |
+| `_BillingDocumentType` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_CustomerPriceGroup` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_CityCode` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_County` | | ✓ | | |
+| `_CancelledBillingDocumentBasic` | | ✓ | | |
+| `_OverallSDProcessStatus` | | ✓ | | |
+| `_OverallBillingStatus` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_SalesEmployee` | | ✓ | | |
+| `_ResponsibleEmployee` | | ✓ | | |
+| `_SolutionOrder` | | ✓ | | |
+| `_SolutionOrderItem` | | ✓ | | |
+| `_CustomsPreference` | | ✓ | | |
+| `_TrdPrefStmntIntOriginCode` | | ✓ | | |
 
 ## Associations
 

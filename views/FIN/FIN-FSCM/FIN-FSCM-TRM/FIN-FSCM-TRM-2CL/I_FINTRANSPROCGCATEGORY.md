@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialInstrProductCategory` | `sanlf` |
-| key `FinInstrTransactionCategory` | `sfgtyp` |
-| key `FinTransProcessingCategory` | `abwtyp` |
-| `_ProductCategory` | *Association* |
-| `_TransactionCategory` | *Association* |
-| `_ProcessingCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlf` |
+| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |
+| `FinTransProcessingCategory` | ✓ | |  | `abwtyp` |
+| `_ProductCategory` | | ✓ | | |
+| `_TransactionCategory` | | ✓ | | |
+| `_ProcessingCategoryText` | | ✓ | | |
 
 ## Associations
 

@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenture` | `JointVenture` |
-| key `JntOpgAgrmtEquityGrp` | `JntOpgAgrmtEquityGrp` |
-| key `JointVenturePartner` | `JointVenturePartner` |
-| `JointVenturePartnerShortText` | `JointVenturePartnerShortText` |
-| `JointVenturePartnerLongText` | `JointVenturePartnerLongText` |
-| `JntVntrEquityShare` | `JntVntrEquityShare` |
-| `JntVntrOwnrIsSuspended` | `JntVntrOwnrIsSuspended` |
-| `JntVntrOwnrSuspendedPerd` | `JntVntrOwnrSuspendedPerd` |
-| `JntVntrOwnrSuspendedYr` | `JntVntrOwnrSuspendedYr` |
-| `JntVntrOwnrIsNotSuspended` | `JntVntrOwnrIsNotSuspended` |
-| `JntVntrOwnrNotSuspendedPerd` | `JntVntrOwnrNotSuspendedPerd` |
-| `JntVntrOwnrNotSuspendedYr` | `JntVntrOwnrNotSuspendedYr` |
-| `JntVntrInterestType` | `JntVntrInterestType` |
-| `JntVntrDrillingRcvryPercent` | `JntVntrDrillingRcvryPercent` |
-| `JntVntrOpgRcvryPercent` | `JntVntrOpgRcvryPercent` |
-| `JntVntrPayIsStppd` | `JntVntrPayIsStppd` |
-| `JntVntrPartWrkgIntrstPerd` | `JntVntrPartWrkgIntrstPerd` |
-| `JntVntrPartWrkgIntrstYrValue` | `JntVntrPartWrkgIntrstYrValue` |
-| `JntVntrCarriedIntrstGrp` | `JntVntrCarriedIntrstGrp` |
-| `JntVntrNetProfitIntrstGrp` | `JntVntrNetProfitIntrstGrp` |
-| `JntVntrOperatorAddressArea` | `JntVntrOperatorAddressArea` |
-| `_JointVentureEquityGroup` | *Association* |
-| `_JointVenture` | *Association* |
-| `_JVACarriedInterest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  |  |
+| `JointVenturePartner` | ✓ | |  |  |
+| `JointVenturePartnerShortText` |  | |  |  |
+| `JointVenturePartnerLongText` |  | |  |  |
+| `JntVntrEquityShare` |  | |  |  |
+| `JntVntrOwnrIsSuspended` |  | |  |  |
+| `JntVntrOwnrSuspendedPerd` |  | |  |  |
+| `JntVntrOwnrSuspendedYr` |  | |  |  |
+| `JntVntrOwnrIsNotSuspended` |  | |  |  |
+| `JntVntrOwnrNotSuspendedPerd` |  | |  |  |
+| `JntVntrOwnrNotSuspendedYr` |  | |  |  |
+| `JntVntrInterestType` |  | |  |  |
+| `JntVntrDrillingRcvryPercent` |  | |  |  |
+| `JntVntrOpgRcvryPercent` |  | |  |  |
+| `JntVntrPayIsStppd` |  | |  |  |
+| `JntVntrPartWrkgIntrstPerd` |  | |  |  |
+| `JntVntrPartWrkgIntrstYrValue` |  | |  |  |
+| `JntVntrCarriedIntrstGrp` |  | |  |  |
+| `JntVntrNetProfitIntrstGrp` |  | |  |  |
+| `JntVntrOperatorAddressArea` |  | |  |  |
+| `_JointVentureEquityGroup` | | ✓ | | |
+| `_JointVenture` | | ✓ | | |
+| `_JVACarriedInterest` | | ✓ | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionScope` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qpumfkz preserving type )` |
-| key `Language` | `ddlanguage` |
-| `InspectionScopeText` | `cast( ddtext as vdm_qpumfkz_text preserving type )` |
-| `_Language` | *Association* |
-| `_InspectionScope` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionScope` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qpumfkz preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `InspectionScopeText` |  | |  | `cast( ddtext as vdm_qpumfkz_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_InspectionScope` | | ✓ | | |
 
 ## Associations
 

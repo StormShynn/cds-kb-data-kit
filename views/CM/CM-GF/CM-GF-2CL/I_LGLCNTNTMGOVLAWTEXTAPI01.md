@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMGovLaw` | `LglCntntMGovLaw` |
-| key `Language` | `Language` |
-| `LglCntntMGovLawText` | `LglCntntMGovLawText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMGovLaw` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LglCntntMGovLawText` |  | |  |  |
 
 ## Source Code
 

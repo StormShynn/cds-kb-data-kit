@@ -28,67 +28,67 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RowIndex` | `RowIndex` |
-| `Material` | `Material` |
-| `MRPPlant` | `MRPPlant` |
-| `MRPArea` | `MRPArea` |
-| `MRPPlanningSegmentType` | `MRPPlanningSegmentType` |
-| `MRPPlanningSegment` | `MRPPlanningSegment` |
-| `MaterialShortageDefinition` | `MaterialShortageDefinition` |
-| `MRPElementSupplyAggregation` | `MRPElementSupplyAggregation` |
-| `MRPElementDemandAggregation` | `MRPElementDemandAggregation` |
-| `MaterialExternalID` | `MaterialExternalID` |
-| `MRPElement` | `MRPElement` |
-| `MRPElementItem` | `MRPElementItem` |
-| `MRPElementScheduleLine` | `MRPElementScheduleLine` |
-| `MRPElementCategory` | `MRPElementCategory` |
-| `MRPElementCategoryShortName` | `MRPElementCategoryShortName` |
-| `MRPElementAvailyOrRqmtDate` | `MRPElementAvailyOrRqmtDate` |
-| `SupplyEndDate` | `SupplyEndDate` |
-| `SupplyStartDate` | `SupplyStartDate` |
-| `RequirementMRPDate` | `RequirementMRPDate` |
-| `MRPAvailableQuantity` | `MRPAvailableQuantity` |
-| `MRPElementOpenQuantity` | `MRPElementOpenQuantity` |
-| `MRPElementQuantityIsFirm` | `MRPElementQuantityIsFirm` |
-| `MRPElementDocumentType` | `MRPElementDocumentType` |
-| `StorageLocation` | `, useAsTemplate: true, additionalBinding: [{ element: 'Plant', localElement: 'MRPPlant' } ] }] } StorageLocation` |
-| `Assembly` | `Assembly` |
-| `ProductionVersion` | `, useAsTemplate: true, additionalBinding: [{ element: 'Product', localElement: 'Material' }, { element: 'Plant', localElement: 'MRPPlant' } ] }] } ProductionVersion` |
-| `SourceMRPElement` | `SourceMRPElement` |
-| `SourceMRPElement_2` | `SourceMRPElement_2` |
-| `SourceMRPElementItem` | `SourceMRPElementItem` |
-| `SourceMRPElementScheduleLine` | `SourceMRPElementScheduleLine` |
-| `SourceMRPElementCategory` | `SourceMRPElementCategory` |
-| `MRPElementBusinessPartner` | `MRPElementBusinessPartner` |
-| `MRPElementBusinessPartnerName` | `MRPElementBusinessPartnerName` |
-| `MRPElementBusinessPartnerType` | `MRPElementBusinessPartnerType` |
-| `MaterialBaseUnit` | `MaterialBaseUnit` |
-| `UnitOfMeasureCommercialName` | `UnitOfMeasureCommercialName` |
-| `TargetQuantityUnitDisplayDcmls` | `TargetQuantityUnitDisplayDcmls` |
-| `TargetQuantityUnitDcmls` | `TargetQuantityUnitDcmls` |
-| `MaterialBaseUnitDesc` | `MaterialBaseUnitDesc` |
-| `UnitOfMeasureName` | `UnitOfMeasureName` |
-| `MRPElementIsReleased` | `MRPElementIsReleased` |
-| `MRPElementIsPartiallyDelivered` | `MRPElementIsPartiallyDelivered` |
-| `MRPRequestStatus` | `MRPRequestStatus` |
-| `MRPRequestSupplierResponse` | `MRPRequestSupplierResponse` |
-| `MRPAvailability` | `MRPAvailability` |
-| `MRPEvaluationHorizonInDays` | `MRPEvaluationHorizonInDays` |
-| `MaterialSafetyStockQty` | `MaterialSafetyStockQty` |
-| `MRPElementDocumentTypeName` | `MRPElementDocumentTypeName` |
-| `MRPElementCategoryGroup` | `MRPElementCategoryGroup` |
-| `MRPElementCategoryGroupName` | `MRPElementCategoryGroupName` |
-| `SupplyIsInThePast` | `SupplyIsInThePast` |
-| `NumberOfAggregatedMRPElements` | `NumberOfAggregatedMRPElements` |
-| `ProductionPlant` | `ProductionPlant` |
-| `PlanningPlant` | `PlanningPlant` |
-| `ExceptionMessageNumber` | `ExceptionMessageNumber` |
-| `ExceptionMessageText` | `ExceptionMessageText` |
-| `ExceptionMessageNumber2` | `ExceptionMessageNumber2` |
-| `ExceptionMessageText2` | `ExceptionMessageText2` |
-| `MRPElementReschedulingDate` | `MRPElementReschedulingDate` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RowIndex` | ✓ | |  |  |
+| `Material` |  | |  |  |
+| `MRPPlant` |  | |  |  |
+| `MRPArea` |  | |  |  |
+| `MRPPlanningSegmentType` |  | |  |  |
+| `MRPPlanningSegment` |  | |  |  |
+| `MaterialShortageDefinition` |  | |  |  |
+| `MRPElementSupplyAggregation` |  | |  |  |
+| `MRPElementDemandAggregation` |  | |  |  |
+| `MaterialExternalID` |  | |  |  |
+| `MRPElement` |  | |  |  |
+| `MRPElementItem` |  | |  |  |
+| `MRPElementScheduleLine` |  | |  |  |
+| `MRPElementCategory` |  | |  |  |
+| `MRPElementCategoryShortName` |  | |  |  |
+| `MRPElementAvailyOrRqmtDate` |  | |  |  |
+| `SupplyEndDate` |  | |  |  |
+| `SupplyStartDate` |  | |  |  |
+| `RequirementMRPDate` |  | |  |  |
+| `MRPAvailableQuantity` |  | |  |  |
+| `MRPElementOpenQuantity` |  | |  |  |
+| `MRPElementQuantityIsFirm` |  | |  |  |
+| `MRPElementDocumentType` |  | |  |  |
+| `StorageLocation` |  | |  | `, useAsTemplate: true, additionalBinding: [{ element: 'Plant', localElement: 'MRPPlant' } ] }] } StorageLocation` |
+| `Assembly` |  | |  |  |
+| `ProductionVersion` |  | |  | `, useAsTemplate: true, additionalBinding: [{ element: 'Product', localElement: 'Material' }, { element: 'Plant', localElement: 'MRPPlant' } ] }] } ProductionVersion` |
+| `SourceMRPElement` |  | |  |  |
+| `SourceMRPElement_2` |  | |  |  |
+| `SourceMRPElementItem` |  | |  |  |
+| `SourceMRPElementScheduleLine` |  | |  |  |
+| `SourceMRPElementCategory` |  | |  |  |
+| `MRPElementBusinessPartner` |  | |  |  |
+| `MRPElementBusinessPartnerName` |  | |  |  |
+| `MRPElementBusinessPartnerType` |  | |  |  |
+| `MaterialBaseUnit` |  | |  |  |
+| `UnitOfMeasureCommercialName` |  | |  |  |
+| `TargetQuantityUnitDisplayDcmls` |  | |  |  |
+| `TargetQuantityUnitDcmls` |  | |  |  |
+| `MaterialBaseUnitDesc` |  | |  |  |
+| `UnitOfMeasureName` |  | |  |  |
+| `MRPElementIsReleased` |  | |  |  |
+| `MRPElementIsPartiallyDelivered` |  | |  |  |
+| `MRPRequestStatus` |  | |  |  |
+| `MRPRequestSupplierResponse` |  | |  |  |
+| `MRPAvailability` |  | |  |  |
+| `MRPEvaluationHorizonInDays` |  | |  |  |
+| `MaterialSafetyStockQty` |  | |  |  |
+| `MRPElementDocumentTypeName` |  | |  |  |
+| `MRPElementCategoryGroup` |  | |  |  |
+| `MRPElementCategoryGroupName` |  | |  |  |
+| `SupplyIsInThePast` |  | |  |  |
+| `NumberOfAggregatedMRPElements` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `PlanningPlant` |  | |  |  |
+| `ExceptionMessageNumber` |  | |  |  |
+| `ExceptionMessageText` |  | |  |  |
+| `ExceptionMessageNumber2` |  | |  |  |
+| `ExceptionMessageText2` |  | |  |  |
+| `MRPElementReschedulingDate` |  | |  |  |
 
 ## Source Code
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t041ct.spras` |
-| key `ReversalReason` | `t041ct.stgrd` |
-| `ReversalReasonName` | `cast ( t041ct.txt40 as fac_rvsl_rsn_name preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ReversalReason` | ✓ | |  | `stgrd` |
+| `ReversalReasonName` |  | |  | `cast ( t041ct.txt40 as fac_rvsl_rsn_name preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

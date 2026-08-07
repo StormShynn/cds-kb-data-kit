@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowExternalStatus` | `WorkflowTaskStatus` |
-| key `Language` | `Language` |
-| `WorkflowExternalStatusDesc` | `WorkflowTaskStatusDesc` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowExternalStatus` | ✓ | |  | `WorkflowTaskStatus` |
+| `Language` | ✓ | |  |  |
+| `WorkflowExternalStatusDesc` |  | |  | `WorkflowTaskStatusDesc` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

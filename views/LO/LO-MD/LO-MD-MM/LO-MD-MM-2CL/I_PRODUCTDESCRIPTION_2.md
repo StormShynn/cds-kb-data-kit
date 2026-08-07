@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `cast(makt.matnr as productnumber preserving type )` |
-| key `Language` | `makt.spras` |
-| `ProductDescription` | `cast(makt.maktx as productdescription preserving type )` |
-| `LanguageISOCode` | `cast(_Language.LanguageISOCode as languageisocode preserving type )` |
-| `_Product` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast(makt.matnr as productnumber preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `ProductDescription` |  | |  | `cast(makt.maktx as productdescription preserving type )` |
+| `LanguageISOCode` |  | |  | `cast(_Language.LanguageISOCode as languageisocode preserving type )` |
+| `_Product` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

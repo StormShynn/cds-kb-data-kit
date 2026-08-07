@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ScrtyClassGenClassification` | `alwpkl` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ScrtyClassGenClassification` | ✓ | |  | `alwpkl` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

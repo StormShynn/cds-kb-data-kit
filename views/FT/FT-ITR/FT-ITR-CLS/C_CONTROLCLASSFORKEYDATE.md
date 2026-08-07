@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalRegulation` | `LegalRegulation` |
-| key `ControlClass` | `ControlClass` |
-| `TrdClassfctnNmbrSchm` | `TrdClassfctnNmbrSchm` |
-| `TrdClassfctnNmbrSchmCntnt` | `TrdClassfctnNmbrSchmCntnt` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `TrdClassfctnNmbrForOfclDesc` | `TrdClassfctnNmbrForOfclDesc` |
-| `TrdClassfctnNmbrForCnctntdDesc` | `TrdClassfctnNmbrForCnctntdDesc` |
-| `_Date` | *Association* |
-| `_OfficialDesc` | *Association* |
-| `_CnctntdDesc` | *Association* |
-| `_TrdClassfctnNmbrSchmCntnt` | *Association* |
-| `_TrdClassfctnNmbrSchm` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalRegulation` | ✓ | |  |  |
+| `ControlClass` | ✓ | |  |  |
+| `TrdClassfctnNmbrSchm` |  | |  |  |
+| `TrdClassfctnNmbrSchmCntnt` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `TrdClassfctnNmbrForOfclDesc` |  | |  |  |
+| `TrdClassfctnNmbrForCnctntdDesc` |  | |  |  |
+| `_Date` | | ✓ | | |
+| `_OfficialDesc` | | ✓ | | |
+| `_CnctntdDesc` | | ✓ | | |
+| `_TrdClassfctnNmbrSchmCntnt` | | ✓ | | |
+| `_TrdClassfctnNmbrSchm` | | ✓ | | |
 
 ## Associations
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderInternalID` | `seq.OrderInternalID` |
-| key `SequenceInternalID` | `seq.SequenceInternalID` |
-| key `LongTextLanguage` | `cast(seq.Language as pph_longtextlang preserving type)` |
-| `ManufacturingOrder` | `cast(seq.OrderID as manufacturingorder preserving type)` |
-| `ManufacturingOrderSequence` | `cast(seq.Sequence as manufacturingordersequence preserving type)` |
-| `MfgOrderSequenceText` | `seq.SequenceText` |
-| `OrderSequenceLongText` | `text.OrderSequenceLongText` |
-| `_LongTextLanguage` | *Association* |
-| `_MfgOrder` | *Association* |
-| `_MfgOrderSequence` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderInternalID` | ✓ | |  |  |
+| `SequenceInternalID` | ✓ | |  |  |
+| `LongTextLanguage` | ✓ | |  | `cast(seq.Language as pph_longtextlang preserving type)` |
+| `ManufacturingOrder` |  | |  | `cast(seq.OrderID as manufacturingorder preserving type)` |
+| `ManufacturingOrderSequence` |  | |  | `cast(seq.Sequence as manufacturingordersequence preserving type)` |
+| `MfgOrderSequenceText` |  | |  | `SequenceText` |
+| `OrderSequenceLongText` |  | |  |  |
+| `_LongTextLanguage` | | ✓ | | |
+| `_MfgOrder` | | ✓ | | |
+| `_MfgOrderSequence` | | ✓ | | |
 
 ## Associations
 

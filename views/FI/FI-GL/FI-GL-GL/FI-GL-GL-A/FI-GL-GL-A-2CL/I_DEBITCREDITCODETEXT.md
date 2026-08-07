@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(ddlanguage as spras preserving type )` |
-| key `DebitCreditCode` | `cast( domvalue_l as fis_shkzg )` |
-| `DebitCreditCodeName` | `cast(ddtext as fis_shkzg_name preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
+| `DebitCreditCode` | ✓ | |  | `cast( domvalue_l as fis_shkzg )` |
+| `DebitCreditCodeName` |  | |  | `cast(ddtext as fis_shkzg_name preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

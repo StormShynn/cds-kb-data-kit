@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierClassification` | `classification` |
-| `SuplrClfnFromValue` | `from_value` |
-| `SuplrClfnToValue` | `to_value` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierClassification` | ✓ | |  | `classification` |
+| `SuplrClfnFromValue` |  | |  | `from_value` |
+| `SuplrClfnToValue` |  | |  | `to_value` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

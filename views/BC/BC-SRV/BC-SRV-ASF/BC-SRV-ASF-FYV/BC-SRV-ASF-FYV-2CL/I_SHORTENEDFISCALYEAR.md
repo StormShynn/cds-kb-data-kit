@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYearVariant` | `cast( t009y.periv as fis_periv preserving type )` |
-| key `FiscalYear` | `t009y.gjahr` |
-| `PostingPeriodsNumberVal` | `t009y.anzbp` |
-| `NumberOfSpecialPeriods` | `t009y.anzsp` |
-| `FiscalYearStartDate` | `t009y.gjbeg` |
-| `FiscalYearEndDate` | `t009y.gjend` |
-| `_FiscalYearVariant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  | `cast( t009y.periv as fis_periv preserving type )` |
+| `FiscalYear` | ✓ | |  | `gjahr` |
+| `PostingPeriodsNumberVal` |  | |  | `anzbp` |
+| `NumberOfSpecialPeriods` |  | |  | `anzsp` |
+| `FiscalYearStartDate` |  | |  | `gjbeg` |
+| `FiscalYearEndDate` |  | |  | `gjend` |
+| `_FiscalYearVariant` | | ✓ | | |
 
 ## Associations
 

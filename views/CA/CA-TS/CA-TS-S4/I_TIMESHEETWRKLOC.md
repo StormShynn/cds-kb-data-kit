@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeSheetWrkLocCode` | `tswl.wrkloc` |
-| key `TimeSheetWrkLocEndDate` | `tswl.endda` |
-| `TimeSheetWrkLocStartDate` | `tswl.begda` |
-| `TimeSheetWrkLocCntry` | `tswl.country` |
-| `TimeSheetWrkLocRegion` | `tswl.state` |
-| `_TimeSheetWrkLocText` | *Association* |
-| `_Country` | *Association* |
-| `_Region` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeSheetWrkLocCode` | ✓ | |  | `wrkloc` |
+| `TimeSheetWrkLocEndDate` | ✓ | |  | `endda` |
+| `TimeSheetWrkLocStartDate` |  | |  | `begda` |
+| `TimeSheetWrkLocCntry` |  | |  | `country` |
+| `TimeSheetWrkLocRegion` |  | |  | `state` |
+| `_TimeSheetWrkLocText` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Region` | | ✓ | | |
 
 ## Associations
 

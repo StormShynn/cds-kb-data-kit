@@ -32,45 +32,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrderItemPricingElement.SalesOrder` |
-| key `SalesOrderItem` | `SalesOrderItemPricingElement.SalesOrderItem` |
-| key `PricingProcedureStep` | `SalesOrderItemPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `SalesOrderItemPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `SalesOrderItemPricingElement.ConditionApplication` |
-| `ConditionType` | `SalesOrderItemPricingElement.ConditionType` |
-| `ConditionTypeName` | `SalesOrderItemPricingElement.ConditionTypeName` |
-| `ConditionCalculationType` | `SalesOrderItemPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `SalesOrderItemPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `SalesOrderItemPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `SalesOrderItemPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `SalesOrderItemPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `SalesOrderItemPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `SalesOrderItemPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `SalesOrderItemPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `SalesOrderItemPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `SalesOrderItemPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `SalesOrderItemPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `SalesOrderItemPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `SalesOrderItemPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `SalesOrderItemPricingElement.ConditionInactiveReason` |
-| `ConditionOrigin` | `SalesOrderItemPricingElement.ConditionOrigin` |
-| `ConditionRateValueIsAmount` | `SalesOrderItemPricingElement.ConditionRateValueIsAmount` |
-| `ConditionRateValueIsRatio` | `SalesOrderItemPricingElement.ConditionRateValueIsRatio` |
-| `ConditionBaseValueIsQuantity` | `SalesOrderItemPricingElement.ConditionBaseValueIsQuantity` |
-| `ConditionBaseValueIsAmount` | `SalesOrderItemPricingElement.ConditionBaseValueIsAmount` |
-| `ConditionQuantityIsNull` | `SalesOrderItemPricingElement.ConditionQuantityIsNull` |
-| `ConditionAmountIsNull` | `SalesOrderItemPricingElement.ConditionAmountIsNull` |
-| `PriceConditionDeterminationDte` | `SalesOrderItemPricingElement.PriceConditionDeterminationDte` |
-| `ConditionClass` | `SalesOrderItemPricingElement.ConditionClass` |
-| `ConditionRateValueIsNull` | `SalesOrderItemPricingElement.ConditionRateValueIsNull` |
-| `SalesOrderType` | `SalesOrderItemPricingElement.SalesOrderType` |
-| `SalesOrganization` | `SalesOrderItemPricingElement.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderItemPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `SalesOrderItemPricingElement.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `ConditionRateValueIsAmount` |  | |  |  |
+| `ConditionRateValueIsRatio` |  | |  |  |
+| `ConditionBaseValueIsQuantity` |  | |  |  |
+| `ConditionBaseValueIsAmount` |  | |  |  |
+| `ConditionQuantityIsNull` |  | |  |  |
+| `ConditionAmountIsNull` |  | |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `ConditionRateValueIsNull` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
 
 ## Source Code
 

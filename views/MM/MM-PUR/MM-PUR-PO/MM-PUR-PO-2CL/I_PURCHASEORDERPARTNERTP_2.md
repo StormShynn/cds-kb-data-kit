@@ -32,31 +32,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `SupplierSubrange` | `SupplierSubrange` |
-| `Plant` | `Plant` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PartnerCounter` | `PartnerCounter` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `PurchasingDocumentPartnerType` | `PurchasingDocumentPartnerType` |
-| `Supplier` | `Supplier` |
-| `SupplierHierarchyCategory` | `SupplierHierarchyCategory` |
-| `SupplierContact` | `SupplierContact` |
-| `PersonWorkAgreement` | `PersonWorkAgreement` |
-| `EmploymentInternalID` | `EmploymentInternalID` |
-| `DefaultPartner` | `DefaultPartner` |
-| `_PartnerFunction` | *Association* |
-| `_PartnerFunctionText` | *Association* |
-| `_PersonWorkAgreement` | *Association* |
-| `_Plant` | *Association* |
-| `_PurchaseOrderTP` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierContact` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `SupplierSubrange` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PartnerCounter` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `PurchasingDocumentPartnerType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierHierarchyCategory` |  | |  |  |
+| `SupplierContact` |  | |  |  |
+| `PersonWorkAgreement` |  | |  |  |
+| `EmploymentInternalID` |  | |  |  |
+| `DefaultPartner` |  | |  |  |
+| `_PartnerFunction` | | ✓ | | |
+| `_PartnerFunctionText` | | ✓ | | |
+| `_PersonWorkAgreement` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_PurchaseOrderTP` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierContact` | | ✓ | | |
 
 ## Source Code
 

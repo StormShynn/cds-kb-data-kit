@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionSupplyArea` | `ProductionSupplyArea` |
-| key `Plant` | `Plant` |
-| `_Text` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionSupplyArea` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Source Code
 

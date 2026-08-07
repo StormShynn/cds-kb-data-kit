@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tpz21t.spras` |
-| key `BusinessPartnerRatingProcedure` | `tpz21t.grade_method` |
-| `BPRatingProcedureDescription` | `tpz21t.text` |
-| `_BPRatingProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |
+| `BPRatingProcedureDescription` |  | |  | `text` |
+| `_BPRatingProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

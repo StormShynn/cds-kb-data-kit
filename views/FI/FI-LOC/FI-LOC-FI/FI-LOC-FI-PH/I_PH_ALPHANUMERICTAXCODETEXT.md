@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `country` |
-| key `AlphanumericTaxCode` | `fiph_atc` |
-| key `Language` | `langu` |
-| `IndustryKeyText` | `description` |
-| `_Country` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `country` |
+| `AlphanumericTaxCode` | ✓ | |  | `fiph_atc` |
+| `Language` | ✓ | |  | `langu` |
+| `IndustryKeyText` |  | |  | `description` |
+| `_Country` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

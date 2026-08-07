@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassType` | `Basic.klart` |
-| `ClfnObjectTable` | `Basic.obtab` |
-| `MultipleObjTableClfnIsAllowed` | `Basic.multobj` |
-| `ClfnNewNumberingIsAllowed` | `Basic.ausp_new` |
-| `ClassTypeIsInternal` | `Basic.intklart` |
-| `EngChangeMgmtIsAllowed` | `Basic.aediezuord` |
-| `MultipleClassIsAllowed` | `Basic.mfkls` |
-| `ClassTypeIsUsableInVarConfign` | `Basic.varklart` |
-| `_ClassTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassType` | ✓ | |  | `klart` |
+| `ClfnObjectTable` |  | |  | `obtab` |
+| `MultipleObjTableClfnIsAllowed` |  | |  | `multobj` |
+| `ClfnNewNumberingIsAllowed` |  | |  | `ausp_new` |
+| `ClassTypeIsInternal` |  | |  | `intklart` |
+| `EngChangeMgmtIsAllowed` |  | |  | `aediezuord` |
+| `MultipleClassIsAllowed` |  | |  | `mfkls` |
+| `ClassTypeIsUsableInVarConfign` |  | |  | `varklart` |
+| `_ClassTypeText` | | ✓ | | |
 
 ## Source Code
 

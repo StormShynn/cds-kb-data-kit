@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `SuplrEvalScoreOutputActionType` | `cast( domvalue_l as mmpur_ana_de_output_act_typ)` |
-| `SuplrEvalScoreOutpActnTypeText` | `cast(ddtext as mmpur_ana_de_output_act_typ_t)` |
-| `_Language` | *Association* |
-| `_OutputScoreType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `SuplrEvalScoreOutputActionType` | ✓ | |  | `cast( domvalue_l as mmpur_ana_de_output_act_typ)` |
+| `SuplrEvalScoreOutpActnTypeText` |  | |  | `cast(ddtext as mmpur_ana_de_output_act_typ_t)` |
+| `_Language` | | ✓ | | |
+| `_OutputScoreType` | | ✓ | | |
 
 ## Associations
 

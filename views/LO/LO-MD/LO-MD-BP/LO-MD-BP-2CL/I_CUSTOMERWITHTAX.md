@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `kunnr` |
-| key `CompanyCode` | `bukrs` |
-| key `WithholdingTaxType` | `witht` |
-| `WithholdingTaxCode` | `wt_withcd` |
-| `WithholdingTaxAgent` | `wt_agent` |
-| `ObligationDateBegin` | `wt_agtdf` |
-| `ObligationDateEnd` | `wt_agtdt` |
-| `WithholdingTaxNumber` | `wt_wtstcd` |
-| `WithholdingTaxCertificate` | `wt_exnr` |
-| `WithholdingTaxExmptPercent` | `wt_exrt` |
-| `ExemptionDateBegin` | `wt_exdf` |
-| `ExemptionDateEnd` | `wt_exdt` |
-| `ExemptionReason` | `wt_wtexrs` |
-| `RecipientType` | `qsrec` |
-| `_CompanyCode` | *Association* |
-| `_CustomerCompany` | *Association* |
-| `_Customer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `WithholdingTaxType` | ✓ | |  | `witht` |
+| `WithholdingTaxCode` |  | |  | `wt_withcd` |
+| `WithholdingTaxAgent` |  | |  | `wt_agent` |
+| `ObligationDateBegin` |  | |  | `wt_agtdf` |
+| `ObligationDateEnd` |  | |  | `wt_agtdt` |
+| `WithholdingTaxNumber` |  | |  | `wt_wtstcd` |
+| `WithholdingTaxCertificate` |  | |  | `wt_exnr` |
+| `WithholdingTaxExmptPercent` |  | |  | `wt_exrt` |
+| `ExemptionDateBegin` |  | |  | `wt_exdf` |
+| `ExemptionDateEnd` |  | |  | `wt_exdt` |
+| `ExemptionReason` |  | |  | `wt_wtexrs` |
+| `RecipientType` |  | |  | `qsrec` |
+| `_CompanyCode` | | ✓ | | |
+| `_CustomerCompany` | | ✓ | | |
+| `_Customer` | | ✓ | | |
 
 ## Associations
 

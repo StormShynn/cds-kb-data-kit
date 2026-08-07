@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `REContractNoticeParty` | `cast(domvalue_l as recnntparty)` |
-| `DomainValue` | `domvalue_l` |
-| `REContractNoticePartyName` | `cast( ddtext as recavdmdesc60 preserving type )` |
-| `_Language` | *Association* |
-| `_REContractNoticeParty` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `REContractNoticeParty` | ✓ | |  | `cast(domvalue_l as recnntparty)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `REContractNoticePartyName` |  | |  | `cast( ddtext as recavdmdesc60 preserving type )` |
+| `_Language` | | ✓ | | |
+| `_REContractNoticeParty` | | ✓ | | |
 
 ## Associations
 

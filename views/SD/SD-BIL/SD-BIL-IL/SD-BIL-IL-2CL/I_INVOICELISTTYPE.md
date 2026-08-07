@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceListType` | `cast(BillingProcessDocumentType as invoicelisttype preserving type)` |
-| `SDDocumentCategory` | `SDDocumentCategory` |
-| `IncrementItemNumber` | `IncrementItemNumber` |
-| `BillingDocumentCategory` | `BillingDocumentCategory` |
-| `_Text` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_BillingDocumentCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceListType` | ✓ | |  | `cast(BillingProcessDocumentType as invoicelisttype preserving type)` |
+| `SDDocumentCategory` |  | |  |  |
+| `IncrementItemNumber` |  | |  |  |
+| `BillingDocumentCategory` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_BillingDocumentCategory` | | ✓ | | |
 
 ## Source Code
 

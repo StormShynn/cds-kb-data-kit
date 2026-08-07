@@ -31,93 +31,93 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `ControllingArea` |
-| key `CostCenter` | `CostCenter` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ControllingAreaForEdit` | `ControllingAreaForEdit` |
-| `CostCenterForEdit` | `CostCenterForEdit` |
-| `ValidityEndDateForEdit` | `ValidityEndDateForEdit` |
-| `CostCenterName` | `CostCenterName` |
-| `CostCenterDescription` | `CostCenterDescription` |
-| `IsBlkdForPrimaryCostsPosting` | `IsBlkdForPrimaryCostsPosting` |
-| `IsBlockedForPlanPrimaryCosts` | `IsBlockedForPlanPrimaryCosts` |
-| `CompanyCode` | `CompanyCode` |
-| `BusinessArea` | `BusinessArea` |
-| `CostCenterCategory` | `CostCenterCategory` |
-| `CostCtrResponsiblePersonName` | `CostCtrResponsiblePersonName` |
-| `CostCtrResponsibleUser` | `CostCtrResponsibleUser` |
-| `CostCenterCurrency` | `CostCenterCurrency` |
-| `CostingSheet` | `CostingSheet` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `ProfitCenter` | `ProfitCenter` |
-| `Plant` | `Plant` |
-| `LogicalSystem` | `LogicalSystem` |
-| `CostCenterCreationDate` | `CostCenterCreationDate` |
-| `CostCenterCreatedByUser` | `CostCenterCreatedByUser` |
-| `IsBlkdForSecondaryCostsPosting` | `IsBlkdForSecondaryCostsPosting` |
-| `IsBlockedForRevenuePosting` | `IsBlockedForRevenuePosting` |
-| `IsBlockedForCommitmentPosting` | `IsBlockedForCommitmentPosting` |
-| `IsBlockedForPlanSecondaryCosts` | `IsBlockedForPlanSecondaryCosts` |
-| `IsBlockedForPlanRevenues` | `IsBlockedForPlanRevenues` |
-| `CostCenterAllocationMethod` | `CostCenterAllocationMethod` |
-| `ConsumptionQtyIsRecorded` | `ConsumptionQtyIsRecorded` |
-| `Department` | `Department` |
-| `Country` | `Country` |
-| `FormOfAddress` | `FormOfAddress` |
-| `AddressName` | `AddressName` |
-| `AddressAdditionalName` | `AddressAdditionalName` |
-| `CostCenterAddrName3` | `CostCenterAddrName3` |
-| `CostCenterAddrName4` | `CostCenterAddrName4` |
-| `CityName` | `CityName` |
-| `District` | `District` |
-| `StreetAddressName` | `StreetAddressName` |
-| `POBox` | `POBox` |
-| `PostalCode` | `PostalCode` |
-| `POBoxPostalCode` | `POBoxPostalCode` |
-| `Region` | `Region` |
-| `Language` | `Language` |
-| `TeleboxNumber` | `TeleboxNumber` |
-| `PhoneNumber1` | `PhoneNumber1` |
-| `PhoneNumber2` | `PhoneNumber2` |
-| `FaxNumber` | `FaxNumber` |
-| `TeletexNumber` | `TeletexNumber` |
-| `TelexNumber` | `TelexNumber` |
-| `DataCommunicationPhoneNumber` | `DataCommunicationPhoneNumber` |
-| `CostCenterPrinterDestination` | `CostCenterPrinterDestination` |
-| `CostCenterStandardHierArea` | `CostCenterStandardHierArea` |
-| `CostCenterFunction` | `CostCenterFunction` |
-| `CostCenterAlternativeFunction` | `CostCenterAlternativeFunction` |
-| `FunctionalArea` | `FunctionalArea` |
-| `ActyIndepFormulaPlanningTmpl` | `ActyIndepFormulaPlanningTmpl` |
-| `ActyDepdntFormulaPlanningTmpl` | `ActyDepdntFormulaPlanningTmpl` |
-| `ActyIndependentAllocationTmpl` | `ActyIndependentAllocationTmpl` |
-| `ActyDependentAllocationTmpl` | `ActyDependentAllocationTmpl` |
-| `ActlIndepStatisticalKeyFigures` | `ActlIndepStatisticalKeyFigures` |
-| `ActlDepStatisticalKeyFigures` | `ActlDepStatisticalKeyFigures` |
-| `JointVenture` | `JointVenture` |
-| `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `JointVentureEquityType` | `JointVentureEquityType` |
-| `JointVentureObjectType` | `JointVentureObjectType` |
-| `JointVentureClass` | `JointVentureClass` |
-| `JointVentureSubClass` | `JointVentureSubClass` |
-| `BudgetCarryingCostCenter` | `BudgetCarryingCostCenter` |
-| `AvailabilityControlProfile` | `AvailabilityControlProfile` |
-| `AvailabilityControlIsActive` | `AvailabilityControlIsActive` |
-| `Fund` | `Fund` |
-| `GrantID` | `GrantID` |
-| `FundIsFixAssigned` | `FundIsFixAssigned` |
-| `GrantIDIsFixAssigned` | `GrantIDIsFixAssigned` |
-| `FunctionalAreaIsFixAssigned` | `FunctionalAreaIsFixAssigned` |
-| `CostCenterIsBudgetCarrying` | `CostCenterIsBudgetCarrying` |
-| `ChangeDocObject` | `ChangeDocObject` |
-| `CostCenterCreationTime` | `CostCenterCreationTime` |
-| `CostCenterLastChangedByUser` | `CostCenterLastChangedByUser` |
-| `CostCenterLastChangedOnDate` | `CostCenterLastChangedOnDate` |
-| `CostCenterLastChangedAtTime` | `CostCenterLastChangedAtTime` |
-| `_CostCenterTextTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |
+| `CostCenter` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ControllingAreaForEdit` |  | |  |  |
+| `CostCenterForEdit` |  | |  |  |
+| `ValidityEndDateForEdit` |  | |  |  |
+| `CostCenterName` |  | |  |  |
+| `CostCenterDescription` |  | |  |  |
+| `IsBlkdForPrimaryCostsPosting` |  | |  |  |
+| `IsBlockedForPlanPrimaryCosts` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `CostCenterCategory` |  | |  |  |
+| `CostCtrResponsiblePersonName` |  | |  |  |
+| `CostCtrResponsibleUser` |  | |  |  |
+| `CostCenterCurrency` |  | |  |  |
+| `CostingSheet` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `Plant` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `CostCenterCreationDate` |  | |  |  |
+| `CostCenterCreatedByUser` |  | |  |  |
+| `IsBlkdForSecondaryCostsPosting` |  | |  |  |
+| `IsBlockedForRevenuePosting` |  | |  |  |
+| `IsBlockedForCommitmentPosting` |  | |  |  |
+| `IsBlockedForPlanSecondaryCosts` |  | |  |  |
+| `IsBlockedForPlanRevenues` |  | |  |  |
+| `CostCenterAllocationMethod` |  | |  |  |
+| `ConsumptionQtyIsRecorded` |  | |  |  |
+| `Department` |  | |  |  |
+| `Country` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `AddressName` |  | |  |  |
+| `AddressAdditionalName` |  | |  |  |
+| `CostCenterAddrName3` |  | |  |  |
+| `CostCenterAddrName4` |  | |  |  |
+| `CityName` |  | |  |  |
+| `District` |  | |  |  |
+| `StreetAddressName` |  | |  |  |
+| `POBox` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `Region` |  | |  |  |
+| `Language` |  | |  |  |
+| `TeleboxNumber` |  | |  |  |
+| `PhoneNumber1` |  | |  |  |
+| `PhoneNumber2` |  | |  |  |
+| `FaxNumber` |  | |  |  |
+| `TeletexNumber` |  | |  |  |
+| `TelexNumber` |  | |  |  |
+| `DataCommunicationPhoneNumber` |  | |  |  |
+| `CostCenterPrinterDestination` |  | |  |  |
+| `CostCenterStandardHierArea` |  | |  |  |
+| `CostCenterFunction` |  | |  |  |
+| `CostCenterAlternativeFunction` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `ActyIndepFormulaPlanningTmpl` |  | |  |  |
+| `ActyDepdntFormulaPlanningTmpl` |  | |  |  |
+| `ActyIndependentAllocationTmpl` |  | |  |  |
+| `ActyDependentAllocationTmpl` |  | |  |  |
+| `ActlIndepStatisticalKeyFigures` |  | |  |  |
+| `ActlDepStatisticalKeyFigures` |  | |  |  |
+| `JointVenture` |  | |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |
+| `JointVentureEquityType` |  | |  |  |
+| `JointVentureObjectType` |  | |  |  |
+| `JointVentureClass` |  | |  |  |
+| `JointVentureSubClass` |  | |  |  |
+| `BudgetCarryingCostCenter` |  | |  |  |
+| `AvailabilityControlProfile` |  | |  |  |
+| `AvailabilityControlIsActive` |  | |  |  |
+| `Fund` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `FundIsFixAssigned` |  | |  |  |
+| `GrantIDIsFixAssigned` |  | |  |  |
+| `FunctionalAreaIsFixAssigned` |  | |  |  |
+| `CostCenterIsBudgetCarrying` |  | |  |  |
+| `ChangeDocObject` |  | |  |  |
+| `CostCenterCreationTime` |  | |  |  |
+| `CostCenterLastChangedByUser` |  | |  |  |
+| `CostCenterLastChangedOnDate` |  | |  |  |
+| `CostCenterLastChangedAtTime` |  | |  |  |
+| `_CostCenterTextTP` | | ✓ | | |
 
 ## Source Code
 

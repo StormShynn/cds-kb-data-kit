@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast(ConsolidationChartOfAccounts as fincs_conschartofaccounts preserving type )` |
-| `ConsolidationBreakdownCategory` | `}] key cast(ConsolidationBreakdownCategory as fincs_breakdowncategory preserving type )` |
-| `_Text` | *Association* |
-| `_BreakdownBySubassignment` | *Association* |
-| `_CnsldtnChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(ConsolidationChartOfAccounts as fincs_conschartofaccounts preserving type )` |
+| `ConsolidationBreakdownCategory` |  | |  | `}] key cast(ConsolidationBreakdownCategory as fincs_breakdowncategory preserving type )` |
+| `_Text` | | ✓ | | |
+| `_BreakdownBySubassignment` | | ✓ | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

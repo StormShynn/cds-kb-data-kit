@@ -34,13 +34,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryDocumentType` | `lfart` |
-| key `Language` | `spras` |
-| `DeliveryDocumentTypeName` | `vtext` |
-| `_DeliveryDocumentType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryDocumentType` | ✓ | |  | `lfart` |
+| `Language` | ✓ | |  | `spras` |
+| `DeliveryDocumentTypeName` |  | |  | `vtext` |
+| `_DeliveryDocumentType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

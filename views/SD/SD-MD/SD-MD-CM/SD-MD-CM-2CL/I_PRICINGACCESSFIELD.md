@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionUsage` | `t682z.kvewe` |
-| key `ConditionApplication` | `t682z.kappl` |
-| key `AccessSequence` | `t682z.kozgf` |
-| key `AccessNumberOfAccessSequence` | `t682z.kolnr` |
-| key `ConditionTable` | `cast ( t682i.kotabnr as char03 )` |
-| key `PricingConditionField` | `t682z.zifna` |
-| `PrcgCndnAccDocumentStructure` | `t682z.qustr` |
-| `PrcgCndnAccessDocumentField` | `t682z.qufna` |
-| `PrcgCndnAccConstantValueSource` | `t682z.qudiw` |
-| `PrcgCndnValueInitialIsAllowed` | `t682z.kzini` |
-| `PricingConditionAccessType` | `t682z.fstst` |
-| `PricingConditionAccessPriority` | `t682z.mbwrt` |
-| `PrcgConditionAccessDirection` | `t682z.direction_hier_eval` |
-| `PrcgCndnAccessDistanceValue` | `t682z.dist_leaf_to_node_in_hlvls` |
-| `_PricingAccess` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `AccessSequence` | ✓ | |  | `kozgf` |
+| `AccessNumberOfAccessSequence` | ✓ | |  | `kolnr` |
+| `ConditionTable` | ✓ | |  | `cast ( t682i.kotabnr as char03 )` |
+| `PricingConditionField` | ✓ | |  | `zifna` |
+| `PrcgCndnAccDocumentStructure` |  | |  | `qustr` |
+| `PrcgCndnAccessDocumentField` |  | |  | `qufna` |
+| `PrcgCndnAccConstantValueSource` |  | |  | `qudiw` |
+| `PrcgCndnValueInitialIsAllowed` |  | |  | `kzini` |
+| `PricingConditionAccessType` |  | |  | `fstst` |
+| `PricingConditionAccessPriority` |  | |  | `mbwrt` |
+| `PrcgConditionAccessDirection` |  | |  | `direction_hier_eval` |
+| `PrcgCndnAccessDistanceValue` |  | |  | `dist_leaf_to_node_in_hlvls` |
+| `_PricingAccess` | | ✓ | | |
 
 ## Associations
 

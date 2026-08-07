@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `makt.matnr` |
-| key `Language` | `makt.spras` |
-| `ProductName` | `cast(makt.maktx as productdescription preserving type )` |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `Language` | ✓ | |  | `spras` |
+| `ProductName` |  | |  | `cast(makt.maktx as productdescription preserving type )` |
+| `_Product` | | ✓ | | |
 
 ## Associations
 

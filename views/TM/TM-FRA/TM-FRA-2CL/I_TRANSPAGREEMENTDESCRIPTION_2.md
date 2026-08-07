@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspAgreementDescUUID` | `cast(db_key as /scmtms/vdm_fag_desc_uuid preserving type)` |
-| `TransportationAgreementUUID` | `cast(parent_key as /scmtms/transpagrmt_uuid preserving type)` |
-| `TransportationAgreementDesc` | `cast(description as /scmtms/vdm_fag_desc preserving type)` |
-| `_TransportationAgreement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspAgreementDescUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_fag_desc_uuid preserving type)` |
+| `TransportationAgreementUUID` |  | |  | `cast(parent_key as /scmtms/transpagrmt_uuid preserving type)` |
+| `TransportationAgreementDesc` |  | |  | `cast(description as /scmtms/vdm_fag_desc preserving type)` |
+| `_TransportationAgreement` | | ✓ | | |
 
 ## Source Code
 

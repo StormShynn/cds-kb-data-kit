@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConditionType` | `kscha` |
-| `ConditionRateValue` | `kbetr` |
-| `ConditionCurrency` | `waers` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionType` |  | |  | `kscha` |
+| `ConditionRateValue` |  | |  | `kbetr` |
+| `ConditionCurrency` |  | |  | `waers` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

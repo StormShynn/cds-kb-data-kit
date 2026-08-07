@@ -27,26 +27,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryVehicleNumber` | `vehicle` |
-| key `StkVisibilitySequentialNumber` | `itm_no` |
-| `Material` | `matnr` |
-| `Batch` | `charg` |
-| `StockVisibilityVehicleQuantity` | `} quantity` |
-| `StockVisibilityStorLocQuantity` | `} quantity_ts` |
-| `UnitOfMeasure` | `meins` |
-| `DSD_TourIdentification` | `tour_id` |
-| `Plant` | `werks` |
-| `PlantAssignedToVehicle` | `werks_c` |
-| `StockVisibilityStatus` | `sv_status` |
-| `_Equipment` | *Association* |
-| `_Product` | *Association* |
-| `_Batch` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Plant` | *Association* |
-| `_PlantAssignedToVehicle` | *Association* |
-| `_StockVisibilityStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryVehicleNumber` | ✓ | |  | `vehicle` |
+| `StkVisibilitySequentialNumber` | ✓ | |  | `itm_no` |
+| `Material` |  | |  | `matnr` |
+| `Batch` |  | |  | `charg` |
+| `StockVisibilityVehicleQuantity` |  | |  | `} quantity` |
+| `StockVisibilityStorLocQuantity` |  | |  | `} quantity_ts` |
+| `UnitOfMeasure` |  | |  | `meins` |
+| `DSD_TourIdentification` |  | |  | `tour_id` |
+| `Plant` |  | |  | `werks` |
+| `PlantAssignedToVehicle` |  | |  | `werks_c` |
+| `StockVisibilityStatus` |  | |  | `sv_status` |
+| `_Equipment` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_PlantAssignedToVehicle` | | ✓ | | |
+| `_StockVisibilityStatus` | | ✓ | | |
 
 ## Associations
 

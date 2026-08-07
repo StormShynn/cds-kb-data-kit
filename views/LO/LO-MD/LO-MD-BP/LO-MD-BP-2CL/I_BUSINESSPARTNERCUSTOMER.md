@@ -33,105 +33,105 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `kna1.kunnr` |
-| key `BusinessPartner` | `but000.partner` |
-| `BusinessPartnerUUID` | `cvi_cust_link.partner_guid` |
-| `CustomerAccountGroup` | `kna1.ktokd` |
-| `AlternativePayerAccount` | `kna1.knrza` |
-| `DataMediumExchangeIndicator` | `kna1.dtams` |
-| `Supplier` | `kna1.lifnr` |
-| `CustomerClassification` | `kna1.kukla` |
-| `VATLiability` | `kna1.stkzu` |
-| `PostingIsBlocked` | `kna1.sperr` |
-| `DeliveryIsBlocked` | `kna1.lifsd` |
-| `BillingIsBlockedForCustomer` | `kna1.faksd` |
-| `OrderIsBlockedForCustomer` | `kna1.aufsd` |
-| `IsNaturalPerson` | `kna1.stkzn` |
-| `BusinessPartnerGrouping` | `but000.bu_group` |
-| `AuthorizationGroup` | `kna1.begru` |
-| `DeliveryDateTypeRule` | `kna1.delivery_date_rule` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `ExpressTrainStationName` | `kna1.bahne` |
-| `TrainStationName` | `kna1.bahns` |
-| `CityLocationCoordinatesCode` | `kna1.locco` |
-| `Plant` | `kna1.werks` |
-| `CustomerCorporateGroup` | `kna1.konzs` |
-| `DataExchangeInstructionKey` | `kna1.dtaws` |
-| `IndustryCode1` | `kna1.bran1` |
-| `IndustryCode2` | `kna1.bran2` |
-| `IndustryCode3` | `kna1.bran3` |
-| `IsCompetitor` | `kna1.dear1` |
-| `IsSalesPartner` | `kna1.dear2` |
-| `IsDefaultSoldToParty` | `kna1.dear5` |
-| `IsConsumer` | `kna1.dear6` |
-| `FiscalAddress` | `kna1.fiskn` |
-| `FreeDefinedAttribute03` | `kna1.katr3` |
-| `CustomerConditionGroup1` | `kna1.kdkg1` |
-| `CustomerConditionGroup2` | `kna1.kdkg2` |
-| `CustomerConditionGroup3` | `kna1.kdkg3` |
-| `CustomerConditionGroup4` | `kna1.kdkg4` |
-| `CustomerConditionGroup5` | `kna1.kdkg5` |
-| `AddressID` | `kna1.adrnr` |
-| `InternationalLocationNumber1` | `kna1.bbbnr` |
-| `InternationalLocationNumber2` | `kna1.bbsnr` |
-| `InternationalLocationNumber3` | `kna1.bubkz` |
-| `CityCode` | `kna1.cityc` |
-| `County` | `kna1.counc` |
-| `CustomerHasUnloadingPoint` | `kna1.exabl` |
-| `CustomerWorkingTimeCalendar` | `kna1.knazk` |
-| `IsBusinessPurposeCompleted` | `kna1.cvp_xblck` |
-| `BPIsEqualizationTaxSubject` | `cast (kna1.stkza as xfeld preserving type)` |
-| `Country` | `kna1.land1` |
-| `Region` | `kna1.regio` |
-| `DeletionIndicator` | `kna1.loevm` |
-| `Language` | `kna1.spras` |
-| `SalesIsBlockedForCustomer` | `cast (kna1.cassd as abap.char(1))` |
-| `PaymentReason` | `kna1.paytrsn` |
-| `CustomerCentralDeletionIsBlock` | `kna1.nodel` |
-| `AlternativePayerIsAllowed` | `kna1.xzemp` |
-| `BPPlannedAnnualSalesYear` | `kna1.umjah` |
-| `BPPlannedAnnualSalesCurrency` | `kna1.uwaer` |
-| `BPPlannedAnnualSalesAmount` | `kna1.umsat` |
-| `CustomerTradingPartnerID` | `kna1.vbund` |
-| `FiscalYearVariant` | `kna1.periv` |
-| `AccountTaxType` | `kna1.stcdt` |
-| `IndustryCode4` | `kna1.bran4` |
-| `IndustryCode5` | `kna1.bran5` |
-| `TaxInvoiceRepresentativeName` | `kna1.j_1kfrepre` |
-| `BusinessType` | `kna1.j_1kftbus` |
-| `IndustryType` | `kna1.j_1kftind` |
-| `FreeDefinedAttribute01` | `kna1.katr1` |
-| `FreeDefinedAttribute02` | `kna1.katr2` |
-| `FreeDefinedAttribute04` | `kna1.katr4` |
-| `FreeDefinedAttribute05` | `kna1.katr5` |
-| `FreeDefinedAttribute06` | `kna1.katr6` |
-| `FreeDefinedAttribute07` | `kna1.katr7` |
-| `FreeDefinedAttribute08` | `kna1.katr8` |
-| `FreeDefinedAttribute09` | `kna1.katr9` |
-| `FreeDefinedAttribute10` | `kna1.katr10` |
-| `DataControllerSet` | `kna1.xdcset` |
-| `DataController1` | `kna1.data_ctrlr1` |
-| `DataController2` | `kna1.data_ctrlr2` |
-| `DataController3` | `kna1.data_ctrlr3` |
-| `DataController4` | `kna1.data_ctrlr4` |
-| `DataController5` | `kna1.data_ctrlr5` |
-| `DataController6` | `kna1.data_ctrlr6` |
-| `DataController7` | `kna1.data_ctrlr7` |
-| `DataController8` | `kna1.data_ctrlr8` |
-| `DataController9` | `kna1.data_ctrlr9` |
-| `DataController10` | `kna1.data_ctrlr10` |
-| `_CustomerToBusinessPartner` | *Association* |
-| `_AccountGroupValueHelp` | *Association* |
-| `_CustomerAccountGroupText` | *Association* |
-| `_BillingBlockReasonValueHelp` | *Association* |
-| `_BillingBlockReasonText` | *Association* |
-| `_DelivBlkRsnValueHelp` | *Association* |
-| `_DeliveryBlockReasonText` | *Association* |
-| `_CustomerClassValueHelp` | *Association* |
-| `_CustomerClassificationText` | *Association* |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `BusinessPartnerUUID` |  | |  | `partner_guid` |
+| `CustomerAccountGroup` |  | |  | `ktokd` |
+| `AlternativePayerAccount` |  | |  | `knrza` |
+| `DataMediumExchangeIndicator` |  | |  | `dtams` |
+| `Supplier` |  | |  | `lifnr` |
+| `CustomerClassification` |  | |  | `kukla` |
+| `VATLiability` |  | |  | `stkzu` |
+| `PostingIsBlocked` |  | |  | `sperr` |
+| `DeliveryIsBlocked` |  | |  | `lifsd` |
+| `BillingIsBlockedForCustomer` |  | |  | `faksd` |
+| `OrderIsBlockedForCustomer` |  | |  | `aufsd` |
+| `IsNaturalPerson` |  | |  | `stkzn` |
+| `BusinessPartnerGrouping` |  | |  | `bu_group` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `DeliveryDateTypeRule` |  | |  | `delivery_date_rule` |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `ExpressTrainStationName` |  | |  | `bahne` |
+| `TrainStationName` |  | |  | `bahns` |
+| `CityLocationCoordinatesCode` |  | |  | `locco` |
+| `Plant` |  | |  | `werks` |
+| `CustomerCorporateGroup` |  | |  | `konzs` |
+| `DataExchangeInstructionKey` |  | |  | `dtaws` |
+| `IndustryCode1` |  | |  | `bran1` |
+| `IndustryCode2` |  | |  | `bran2` |
+| `IndustryCode3` |  | |  | `bran3` |
+| `IsCompetitor` |  | |  | `dear1` |
+| `IsSalesPartner` |  | |  | `dear2` |
+| `IsDefaultSoldToParty` |  | |  | `dear5` |
+| `IsConsumer` |  | |  | `dear6` |
+| `FiscalAddress` |  | |  | `fiskn` |
+| `FreeDefinedAttribute03` |  | |  | `katr3` |
+| `CustomerConditionGroup1` |  | |  | `kdkg1` |
+| `CustomerConditionGroup2` |  | |  | `kdkg2` |
+| `CustomerConditionGroup3` |  | |  | `kdkg3` |
+| `CustomerConditionGroup4` |  | |  | `kdkg4` |
+| `CustomerConditionGroup5` |  | |  | `kdkg5` |
+| `AddressID` |  | |  | `adrnr` |
+| `InternationalLocationNumber1` |  | |  | `bbbnr` |
+| `InternationalLocationNumber2` |  | |  | `bbsnr` |
+| `InternationalLocationNumber3` |  | |  | `bubkz` |
+| `CityCode` |  | |  | `cityc` |
+| `County` |  | |  | `counc` |
+| `CustomerHasUnloadingPoint` |  | |  | `exabl` |
+| `CustomerWorkingTimeCalendar` |  | |  | `knazk` |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck` |
+| `BPIsEqualizationTaxSubject` |  | |  | `cast (kna1.stkza as xfeld preserving type)` |
+| `Country` |  | |  | `land1` |
+| `Region` |  | |  | `regio` |
+| `DeletionIndicator` |  | |  | `loevm` |
+| `Language` |  | |  | `spras` |
+| `SalesIsBlockedForCustomer` |  | |  | `cast (kna1.cassd as abap.char(1))` |
+| `PaymentReason` |  | |  | `paytrsn` |
+| `CustomerCentralDeletionIsBlock` |  | |  | `nodel` |
+| `AlternativePayerIsAllowed` |  | |  | `xzemp` |
+| `BPPlannedAnnualSalesYear` |  | |  | `umjah` |
+| `BPPlannedAnnualSalesCurrency` |  | |  | `uwaer` |
+| `BPPlannedAnnualSalesAmount` |  | |  | `umsat` |
+| `CustomerTradingPartnerID` |  | |  | `vbund` |
+| `FiscalYearVariant` |  | |  | `periv` |
+| `AccountTaxType` |  | |  | `stcdt` |
+| `IndustryCode4` |  | |  | `bran4` |
+| `IndustryCode5` |  | |  | `bran5` |
+| `TaxInvoiceRepresentativeName` |  | |  | `j_1kfrepre` |
+| `BusinessType` |  | |  | `j_1kftbus` |
+| `IndustryType` |  | |  | `j_1kftind` |
+| `FreeDefinedAttribute01` |  | |  | `katr1` |
+| `FreeDefinedAttribute02` |  | |  | `katr2` |
+| `FreeDefinedAttribute04` |  | |  | `katr4` |
+| `FreeDefinedAttribute05` |  | |  | `katr5` |
+| `FreeDefinedAttribute06` |  | |  | `katr6` |
+| `FreeDefinedAttribute07` |  | |  | `katr7` |
+| `FreeDefinedAttribute08` |  | |  | `katr8` |
+| `FreeDefinedAttribute09` |  | |  | `katr9` |
+| `FreeDefinedAttribute10` |  | |  | `katr10` |
+| `DataControllerSet` |  | |  | `xdcset` |
+| `DataController1` |  | |  | `data_ctrlr1` |
+| `DataController2` |  | |  | `data_ctrlr2` |
+| `DataController3` |  | |  | `data_ctrlr3` |
+| `DataController4` |  | |  | `data_ctrlr4` |
+| `DataController5` |  | |  | `data_ctrlr5` |
+| `DataController6` |  | |  | `data_ctrlr6` |
+| `DataController7` |  | |  | `data_ctrlr7` |
+| `DataController8` |  | |  | `data_ctrlr8` |
+| `DataController9` |  | |  | `data_ctrlr9` |
+| `DataController10` |  | |  | `data_ctrlr10` |
+| `_CustomerToBusinessPartner` | | ✓ | | |
+| `_AccountGroupValueHelp` | | ✓ | | |
+| `_CustomerAccountGroupText` | | ✓ | | |
+| `_BillingBlockReasonValueHelp` | | ✓ | | |
+| `_BillingBlockReasonText` | | ✓ | | |
+| `_DelivBlkRsnValueHelp` | | ✓ | | |
+| `_DeliveryBlockReasonText` | | ✓ | | |
+| `_CustomerClassValueHelp` | | ✓ | | |
+| `_CustomerClassificationText` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Associations
 

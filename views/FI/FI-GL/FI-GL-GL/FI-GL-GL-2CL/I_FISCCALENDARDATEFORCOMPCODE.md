@@ -28,32 +28,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CalendarDate` | `I_FiscalCalendarDate.CalendarDate` |
-| key `CompanyCode` | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |
-| `FiscalYearVariant` | `I_FiscalCalendarDate.FiscalYearVariant` |
-| `FiscalYear` | `I_FiscalCalendarDate.FiscalYear` |
-| `FiscalYearStartDate` | `I_FiscalCalendarDate.FiscalYearStartDate` |
-| `FiscalYearEndDate` | `I_FiscalCalendarDate.FiscalYearEndDate` |
-| `FiscalPeriod` | `I_FiscalCalendarDate.FiscalPeriod` |
-| `FiscalPeriodStartDate` | `I_FiscalCalendarDate.FiscalPeriodStartDate` |
-| `FiscalPeriodEndDate` | `I_FiscalCalendarDate.FiscalPeriodEndDate` |
-| `FiscalQuarter` | `I_FiscalCalendarDate.FiscalQuarter` |
-| `FiscalQuarterStartDate` | `I_FiscalCalendarDate.FiscalQuarterStartDate` |
-| `FiscalQuarterEndDate` | `I_FiscalCalendarDate.FiscalQuarterEndDate` |
-| `FiscalWeek` | `I_FiscalCalendarDate.FiscalWeek` |
-| `FiscalWeekStartDate` | `I_FiscalCalendarDate.FiscalWeekStartDate` |
-| `FiscalWeekEndDate` | `I_FiscalCalendarDate.FiscalWeekEndDate` |
-| `FiscalYearPeriod` | `I_FiscalCalendarDate.FiscalYearPeriod` |
-| `FiscalYearQuarter` | `I_FiscalCalendarDate.FiscalYearQuarter` |
-| `FiscalYearWeek` | `I_FiscalCalendarDate.FiscalYearWeek` |
-| `FiscalYearConsecutiveNumber` | `I_FiscalCalendarDate.FiscalYearConsecutiveNumber` |
-| `FiscalPeriodConsecutiveNumber` | `I_FiscalCalendarDate.FiscalPeriodConsecutiveNumber` |
-| `FiscalQuarterConsecutiveNumber` | `I_FiscalCalendarDate.FiscalQuarterConsecutiveNumber` |
-| `FiscalWeekConsecutiveNumber` | `I_FiscalCalendarDate.FiscalWeekConsecutiveNumber` |
-| `_CompanyCode` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CalendarDate` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |
+| `FiscalYearVariant` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `FiscalYearStartDate` |  | |  |  |
+| `FiscalYearEndDate` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FiscalPeriodStartDate` |  | |  |  |
+| `FiscalPeriodEndDate` |  | |  |  |
+| `FiscalQuarter` |  | |  |  |
+| `FiscalQuarterStartDate` |  | |  |  |
+| `FiscalQuarterEndDate` |  | |  |  |
+| `FiscalWeek` |  | |  |  |
+| `FiscalWeekStartDate` |  | |  |  |
+| `FiscalWeekEndDate` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `FiscalYearQuarter` |  | |  |  |
+| `FiscalYearWeek` |  | |  |  |
+| `FiscalYearConsecutiveNumber` |  | |  |  |
+| `FiscalPeriodConsecutiveNumber` |  | |  |  |
+| `FiscalQuarterConsecutiveNumber` |  | |  |  |
+| `FiscalWeekConsecutiveNumber` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

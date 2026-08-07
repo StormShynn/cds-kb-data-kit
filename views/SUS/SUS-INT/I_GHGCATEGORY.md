@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGCategory` | `sufndd_ghg_cat.id` |
-| `GHGScope` | `sufndd_ghg_cat.scope` |
-| `_Text` | *Association* |
-| `_GHGScope` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGCategory` | ✓ | |  | `id` |
+| `GHGScope` |  | |  | `scope` |
+| `_Text` | | ✓ | | |
+| `_GHGScope` | | ✓ | | |
 
 ## Associations
 

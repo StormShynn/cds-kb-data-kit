@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalTemplatePartyUUID` | `SuplrEvalTemplatePartyUUID` |
-| `SuplrEvalTemplateUUID` | `SuplrEvalTemplateUUID` |
-| `UserID` | `UserID` |
-| `EmailAddress` | `EmailAddress` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `DataControllerSet` | `DataControllerSet` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalTemplatePartyUUID` | ✓ | |  |  |
+| `SuplrEvalTemplateUUID` |  | |  |  |
+| `UserID` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
 
 ## Source Code
 

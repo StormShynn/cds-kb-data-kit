@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TriggerPointUsage` | `UsageCode` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TriggerPointUsage` | ✓ | |  | `UsageCode` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

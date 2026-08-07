@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `dd07t.ddlanguage` |
-| key `BPCompanyRelationship` | `cast ( dd07t.domvalue_l as bp_comp_re )` |
-| `BPCompanyRelationshipDesc` | `dd07t.ddtext` |
-| `_BPCompanyRelationship` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BPCompanyRelationship` | ✓ | |  | `cast ( dd07t.domvalue_l as bp_comp_re )` |
+| `BPCompanyRelationshipDesc` |  | |  | `ddtext` |
+| `_BPCompanyRelationship` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

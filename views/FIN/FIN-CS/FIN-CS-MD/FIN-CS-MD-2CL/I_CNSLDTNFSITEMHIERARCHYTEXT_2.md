@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `ConsolidationChartOfAccounts` | `ConsolidationChartOfAccounts` |
-| key `CnsldtnFSItemHierarchy` | `cast( substring(_HierarchyText.UniversalHierarchy, 9, 10 ) as fincs_fsitemhierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnFSItemHierarchyText` | `_HierarchyText.UniversalHierarchyText` |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `ConsolidationChartOfAccounts` | ✓ | |  |  |
+| `CnsldtnFSItemHierarchy` | ✓ | |  | `cast( substring(_HierarchyText.UniversalHierarchy, 9, 10 ) as fincs_fsitemhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnFSItemHierarchyText` |  | | `_HierarchyText` | `UniversalHierarchyText` |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

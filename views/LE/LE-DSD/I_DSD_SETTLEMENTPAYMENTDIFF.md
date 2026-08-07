@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DSD_SettlementDocument` | `_PaymentDifferences.sld_doc_id` |
-| key `SettlementPaymentMethod` | `_PaymentDifferences.payment_type` |
-| `SettlementCheckOutAmount` | `} _PaymentDifferences.amount_co` |
-| `SettlementExpenditureAmount` | `} _PaymentDifferences.amount_expenses` |
-| `SettlementReceiptsAmount` | `} _PaymentDifferences.amount_earnings` |
-| `SettlementCheckInAmount` | `} _PaymentDifferences.amount_ci` |
-| `SettlementDifferencesAmount` | `} _PaymentDifferences.amount_diff` |
-| `SettlementDifferenceReason` | `_PaymentDifferences.reason` |
-| `Currency` | `_PaymentDifferences.currency_amount` |
-| `SettlmtPlndExpndtrRcptAmount` | `} _PaymentDifferences.amount_plan` |
-| `MoneyDifferenceWithinTolerance` | `_PaymentDifferences.amount_diff_eval` |
-| `SettlementToleranceGroup` | `_PaymentDifferences.tolgrp_id` |
-| `Plant` | `_Header.plant` |
-| `_PaymentMethod` | *Association* |
-| `_DifferenceReason` | *Association* |
-| `_Currency` | *Association* |
-| `_MoneyDifference` | *Association* |
-| `_ToleranceGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DSD_SettlementDocument` | ✓ | | `_PaymentDifferences` | `sld_doc_id` |
+| `SettlementPaymentMethod` | ✓ | | `_PaymentDifferences` | `payment_type` |
+| `SettlementCheckOutAmount` |  | |  | `} _PaymentDifferences.amount_co` |
+| `SettlementExpenditureAmount` |  | |  | `} _PaymentDifferences.amount_expenses` |
+| `SettlementReceiptsAmount` |  | |  | `} _PaymentDifferences.amount_earnings` |
+| `SettlementCheckInAmount` |  | |  | `} _PaymentDifferences.amount_ci` |
+| `SettlementDifferencesAmount` |  | |  | `} _PaymentDifferences.amount_diff` |
+| `SettlementDifferenceReason` |  | | `_PaymentDifferences` | `reason` |
+| `Currency` |  | | `_PaymentDifferences` | `currency_amount` |
+| `SettlmtPlndExpndtrRcptAmount` |  | |  | `} _PaymentDifferences.amount_plan` |
+| `MoneyDifferenceWithinTolerance` |  | | `_PaymentDifferences` | `amount_diff_eval` |
+| `SettlementToleranceGroup` |  | | `_PaymentDifferences` | `tolgrp_id` |
+| `Plant` |  | | `_Header` | `plant` |
+| `_PaymentMethod` | | ✓ | | |
+| `_DifferenceReason` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_MoneyDifference` | | ✓ | | |
+| `_ToleranceGroup` | | ✓ | | |
 
 ## Associations
 

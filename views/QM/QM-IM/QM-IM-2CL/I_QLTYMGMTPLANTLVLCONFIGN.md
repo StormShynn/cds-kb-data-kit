@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `tqss1.werks` |
-| `SelectedCodeSet` | `ppvemenge` |
-| `SelectedCodeSetPlant` | `ppvewerk` |
-| `InspSpecAddlDecimalPlaces` | `tqss1.nkstellof` |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `SelectedCodeSet` |  | |  | `ppvemenge` |
+| `SelectedCodeSetPlant` |  | |  | `ppvewerk` |
+| `InspSpecAddlDecimalPlaces` |  | |  | `nkstellof` |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

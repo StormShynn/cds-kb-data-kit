@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `plkz.BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `plkz.BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `plkz.BillOfOperationsVariant` |
-| `BillOfOperationsVersionType` | `plkz.BillOfOperationsVersionType` |
-| `LastUsageDate` | `plkz.LastUsageDate` |
-| `NumberOfUsages` | `plkz.NumberOfUsages` |
-| `HasChangeNumber` | `plkz.HasChangeNumber` |
-| `HasParameterEffectivity` | `plkz.HasParameterEffectivity` |
-| `LastChangeDate` | `plkz.LastChangeDate` |
-| `LastChangeTime` | `plkz.LastChangeTime` |
-| `LastChangedByUser` | `plkz.LastChangedByUser` |
-| `_BillOfOperationsChangeState` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_BOOMaterialAssignment` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsVersionType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |
+| `BillOfOperationsVersionType` |  | |  |  |
+| `LastUsageDate` |  | |  |  |
+| `NumberOfUsages` |  | |  |  |
+| `HasChangeNumber` |  | |  |  |
+| `HasParameterEffectivity` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_BillOfOperationsChangeState` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_BOOMaterialAssignment` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsVersionType` | | ✓ | | |
 
 ## Associations
 

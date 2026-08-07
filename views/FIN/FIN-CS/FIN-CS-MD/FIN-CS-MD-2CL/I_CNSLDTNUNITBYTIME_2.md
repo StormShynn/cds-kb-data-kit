@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnit` | `cast(ConsolidationUnit as fincs_consolidationunit preserving type )` |
-| key `FromFiscalYearPeriod` | `cast(FromFiscalYearPeriod as fincs_fromfiscalyearperiod)` |
-| `ToFiscalYearPeriod` | `cast(ToFiscalYearPeriod as fincs_tofiscalyearperiod)` |
-| `ConsolidationUnitLocalCurrency` | `cast(ConsolidationUnitLocalCurrency as fincs_unitlocalcurrency preserving type )` |
-| `Company` | `cast(Company as fincs_company preserving type )` |
-| `_Currency` | *Association* |
-| `_Company` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | |  | `cast(ConsolidationUnit as fincs_consolidationunit preserving type )` |
+| `FromFiscalYearPeriod` | ✓ | |  | `cast(FromFiscalYearPeriod as fincs_fromfiscalyearperiod)` |
+| `ToFiscalYearPeriod` |  | |  | `cast(ToFiscalYearPeriod as fincs_tofiscalyearperiod)` |
+| `ConsolidationUnitLocalCurrency` |  | |  | `cast(ConsolidationUnitLocalCurrency as fincs_unitlocalcurrency preserving type )` |
+| `Company` |  | |  | `cast(Company as fincs_company preserving type )` |
+| `_Currency` | | ✓ | | |
+| `_Company` | | ✓ | | |
 
 ## Associations
 

@@ -30,52 +30,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkforcePersonExternalID` | `WorkforcePersonExternalID` |
-| key `WorkAssignmentExternalID` | `WorkAssignmentExternalID` |
-| key `Country2DigitISOCode` | `Country2DigitISOCode` |
-| key `WorkAssignmentStartDate` | `WorkAssignmentStartDate` |
-| key `AddressNumber` | `AddressNumber` |
-| `BusinessPartner` | `BusinessPartner` |
-| `WorkAssignmentEndDate` | `WorkAssignmentEndDate` |
-| `Country` | `Country` |
-| `PostalCode` | `PostalCode` |
-| `Region` | `Region` |
-| `SecondaryRegion` | `SecondaryRegion` |
-| `SecondaryRegionName` | `SecondaryRegionName` |
-| `TertiaryRegion` | `TertiaryRegion` |
-| `TertiaryRegionName` | `TertiaryRegionName` |
-| `CityName` | `CityName` |
-| `DistrictName` | `DistrictName` |
-| `StreetPrefixName1` | `StreetPrefixName1` |
-| `StreetPrefixName2` | `StreetPrefixName2` |
-| `StreetName` | `StreetName` |
-| `StreetSuffixName1` | `StreetSuffixName1` |
-| `StreetSuffixName2` | `StreetSuffixName2` |
-| `HouseNumber` | `HouseNumber` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `Floor` | `Floor` |
-| `RoomNumber` | `RoomNumber` |
-| `CareOfName` | `CareOfName` |
-| `POBoxPostalCode` | `POBoxPostalCode` |
-| `IsBlocked` | `IsBlocked` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `_BPProtectedAddress` | *Association* |
-| `_WorkAssignment` | *Association* |
-| `_WorkforcePerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |
+| `WorkAssignmentExternalID` | ✓ | |  |  |
+| `Country2DigitISOCode` | ✓ | |  |  |
+| `WorkAssignmentStartDate` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `WorkAssignmentEndDate` |  | |  |  |
+| `Country` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `Region` |  | |  |  |
+| `SecondaryRegion` |  | |  |  |
+| `SecondaryRegionName` |  | |  |  |
+| `TertiaryRegion` |  | |  |  |
+| `TertiaryRegionName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `DistrictName` |  | |  |  |
+| `StreetPrefixName1` |  | |  |  |
+| `StreetPrefixName2` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `StreetSuffixName1` |  | |  |  |
+| `StreetSuffixName2` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `CareOfName` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `IsBlocked` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `_BPProtectedAddress` | | ✓ | | |
+| `_WorkAssignment` | | ✓ | | |
+| `_WorkforcePerson` | | ✓ | | |
 
 ## Source Code
 

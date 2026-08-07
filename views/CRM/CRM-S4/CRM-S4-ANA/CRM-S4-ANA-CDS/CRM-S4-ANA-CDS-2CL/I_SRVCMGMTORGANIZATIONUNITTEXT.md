@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrgUnitTypeIDConcatenated` | `otjid` |
-| key `Language` | `langu` |
-| `OrganizationalUnit` | `objid` |
-| `StartDate` | `begda` |
-| `EndDate` | `endda` |
-| `OrganizationalUnitShortName` | `short` |
-| `OrganizationalUnitName` | `stext` |
-| `_SrvcMgmtOrganizationUnit` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrgUnitTypeIDConcatenated` | ✓ | |  | `otjid` |
+| `Language` | ✓ | |  | `langu` |
+| `OrganizationalUnit` |  | |  | `objid` |
+| `StartDate` |  | |  | `begda` |
+| `EndDate` |  | |  | `endda` |
+| `OrganizationalUnitShortName` |  | |  | `short` |
+| `OrganizationalUnitName` |  | |  | `stext` |
+| `_SrvcMgmtOrganizationUnit` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

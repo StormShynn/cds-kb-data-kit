@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserID` | `UserID` |
-| `UserName` | `UserName` |
-| `UserGroup` | `UserGroup` |
-| `UserValidFrom` | `ValidFrom` |
-| `UserValidTo` | `ValidTo` |
-| `UserIsLocked` | `IsLocked` |
-| `UserLockStatus` | `LockStatus` |
-| `UserLogonLanguage` | `LogonLanguage` |
-| `UserDecimalFormat` | `DecimalFormat` |
-| `UserDateFormat` | `DateFormat` |
-| `UserTimeFormat` | `TimeFormat` |
-| `UserLocalTimeZone` | `LocalTimeZone` |
-| `UserLastLogonDate` | `LastLogonDate` |
-| `UserLastLogonTime` | `LastLogonTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangedDate` | `LastChangedDate` |
-| `LastChangedTime` | `LastChangedTime` |
-| `_BusinessUser` | *Association* |
-| `_Language` | *Association* |
-| `_TimeZone` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserID` | ✓ | |  |  |
+| `UserName` |  | |  |  |
+| `UserGroup` |  | |  |  |
+| `UserValidFrom` |  | |  | `ValidFrom` |
+| `UserValidTo` |  | |  | `ValidTo` |
+| `UserIsLocked` |  | |  | `IsLocked` |
+| `UserLockStatus` |  | |  | `LockStatus` |
+| `UserLogonLanguage` |  | |  | `LogonLanguage` |
+| `UserDecimalFormat` |  | |  | `DecimalFormat` |
+| `UserDateFormat` |  | |  | `DateFormat` |
+| `UserTimeFormat` |  | |  | `TimeFormat` |
+| `UserLocalTimeZone` |  | |  | `LocalTimeZone` |
+| `UserLastLogonDate` |  | |  | `LastLogonDate` |
+| `UserLastLogonTime` |  | |  | `LastLogonTime` |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangedDate` |  | |  |  |
+| `LastChangedTime` |  | |  |  |
+| `_BusinessUser` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_TimeZone` | | ✓ | | |
 
 ## Associations
 

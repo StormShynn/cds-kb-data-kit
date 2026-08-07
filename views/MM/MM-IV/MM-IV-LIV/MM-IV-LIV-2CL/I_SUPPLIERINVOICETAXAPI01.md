@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `I_SupplierInvoiceTax.SupplierInvoice` |
-| key `FiscalYear` | `I_SupplierInvoiceTax.FiscalYear` |
-| key `TaxCode` | `TaxCode` |
-| key `SupplierInvoiceTaxCounter` | `SupplierInvoiceTaxCounter` |
-| `DocumentCurrency` | `I_SupplierInvoiceTax.DocumentCurrency` |
-| `TaxAmount` | `TaxAmount` |
-| `TaxCalculationProcedure` | `TaxCalculationProcedure` |
-| `TaxBaseAmountInTransCrcy` | `TaxBaseAmountInTransCrcy` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `TaxAmountInCoCodeCrcy` | `TaxAmountInCoCodeCrcy` |
-| `TaxBaseAmountInCoCodeCrcy` | `TaxBaseAmountInCoCodeCrcy` |
-| `TaxCountry` | `I_SupplierInvoiceTax.TaxCountry` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `TaxCode` | ✓ | |  |  |
+| `SupplierInvoiceTaxCounter` | ✓ | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `TaxAmount` |  | |  |  |
+| `TaxCalculationProcedure` |  | |  |  |
+| `TaxBaseAmountInTransCrcy` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

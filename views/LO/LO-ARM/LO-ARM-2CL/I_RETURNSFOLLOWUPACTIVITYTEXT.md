@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReturnsFollowUpActivity` | `FollowUpDefault.fu_code` |
-| key `Language` | `FollowUpDefault.spras` |
-| `ReturnsFollowUpActivityDesc` | `case when FollowUpCustomerSpecific.fu_code_text is null or FollowUpCustomerSpecific.fu_code_text = '' then FollowUpDefault.fu_code_text else FollowUpCustomerSpecific.fu_code_text end` |
-| `_FollowUpActivity` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReturnsFollowUpActivity` | ✓ | |  | `fu_code` |
+| `Language` | ✓ | |  | `spras` |
+| `ReturnsFollowUpActivityDesc` |  | |  | `case when FollowUpCustomerSpecific.fu_code_text is null or FollowUpCustomerSpecific.fu_code_text = '' then FollowUpDefault.fu_code_text else FollowUpCustomerSpecific.fu_code_text end` |
+| `_FollowUpActivity` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

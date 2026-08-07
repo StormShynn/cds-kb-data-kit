@@ -29,47 +29,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceOrder` | `MaintenanceOrder` |
-| key `Ledger` | `Ledger` |
-| key `LedgerGroup` | `LedgerGroup` |
-| key `SettlementDistributionRuleGrp` | `SettlementDistributionRuleGrp` |
-| key `SettlmtDistrRuleSequence` | `SettlmtDistrRuleSequence` |
-| `ControllingObject` | `ControllingObject` |
-| `SettlementType` | `SettlementType` |
-| `DistributionSourceAssignment` | `DistributionSourceAssignment` |
-| `AccountAssignmentType` | `AccountAssignmentType` |
-| `SettlementPercentageRate` | `SettlementPercentageRate` |
-| `SettlementEquivalenceFactor` | `SettlementEquivalenceFactor` |
-| `SettlementAmount` | `SettlementAmount` |
-| `SettlementAmountCurrency` | `SettlementAmountCurrency` |
-| `ControllingArea` | `ControllingArea` |
-| `BusinessArea` | `BusinessArea` |
-| `CompanyCode` | `CompanyCode` |
-| `GLAccount` | `GLAccount` |
-| `ProfitCenter` | `ProfitCenter` |
-| `CostCenter` | `CostCenter` |
-| `OrderID` | `OrderID` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `FixedAsset` | `FixedAsset` |
-| `NetworkNumberForAcctAssgmt` | `NetworkNumberForAcctAssgmt` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `CostObject` | `CostObject` |
-| `BusinessProcess` | `BusinessProcess` |
-| `AltvSettlmtDistrRuleSequence` | `AltvSettlmtDistrRuleSequence` |
-| `ValidityStartFiscalPeriod` | `ValidityStartFiscalPeriod` |
-| `ValidityStartFiscalYear` | `ValidityStartFiscalYear` |
-| `ValidityEndFiscalPeriod` | `ValidityEndFiscalPeriod` |
-| `ValidityEndFiscalYear` | `ValidityEndFiscalYear` |
-| `SettlmtRule1stUsgeFiscalPeriod` | `SettlmtRule1stUsgeFiscalPeriod` |
-| `SettlmtRule1stUsageFiscalYear` | `SettlmtRule1stUsageFiscalYear` |
-| `SettlmtRuleLastUsgeFsclPeriod` | `SettlmtRuleLastUsgeFsclPeriod` |
-| `SettlmtRuleLastUsageFiscalYear` | `SettlmtRuleLastUsageFiscalYear` |
-| `SettlmtDistrRuleIsUsedInLedger` | `SettlmtDistrRuleIsUsedInLedger` |
-| `_MaintenanceOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `LedgerGroup` | ✓ | |  |  |
+| `SettlementDistributionRuleGrp` | ✓ | |  |  |
+| `SettlmtDistrRuleSequence` | ✓ | |  |  |
+| `ControllingObject` |  | |  |  |
+| `SettlementType` |  | |  |  |
+| `DistributionSourceAssignment` |  | |  |  |
+| `AccountAssignmentType` |  | |  |  |
+| `SettlementPercentageRate` |  | |  |  |
+| `SettlementEquivalenceFactor` |  | |  |  |
+| `SettlementAmount` |  | |  |  |
+| `SettlementAmountCurrency` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `NetworkNumberForAcctAssgmt` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `AltvSettlmtDistrRuleSequence` |  | |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |
+| `SettlmtRule1stUsgeFiscalPeriod` |  | |  |  |
+| `SettlmtRule1stUsageFiscalYear` |  | |  |  |
+| `SettlmtRuleLastUsgeFsclPeriod` |  | |  |  |
+| `SettlmtRuleLastUsageFiscalYear` |  | |  |  |
+| `SettlmtDistrRuleIsUsedInLedger` |  | |  |  |
+| `_MaintenanceOrder` | | ✓ | | |
 
 ## Source Code
 

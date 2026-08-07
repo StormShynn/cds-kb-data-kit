@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `cast (mara.matnr as productnumber preserving type )` |
-| `QltyMgmtInProcmtIsActive` | `mara.qmpur` |
-| `AuthorizationGroup` | `mara.begru` |
-| `CatalogProfile` | `mara.rbnrm` |
-| `_Product` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast (mara.matnr as productnumber preserving type )` |
+| `QltyMgmtInProcmtIsActive` |  | |  | `qmpur` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `CatalogProfile` |  | |  | `rbnrm` |
+| `_Product` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Associations
 

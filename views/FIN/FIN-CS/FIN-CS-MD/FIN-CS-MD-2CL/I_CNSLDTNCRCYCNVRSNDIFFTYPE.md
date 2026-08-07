@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CurrencyConversionsDiffType` | `cast(left(_Domain.DomainValue, 1) as fincs_currencycnvrsnsdifftype)` |
-| `DomainValue` | `_Domain.DomainValue` |
-| `_Text` | *Association* |
-| `_Text_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CurrencyConversionsDiffType` | ✓ | |  | `cast(left(_Domain.DomainValue, 1) as fincs_currencycnvrsnsdifftype)` |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |
+| `_Text` | | ✓ | | |
+| `_Text_2` | | ✓ | | |
 
 ## Associations
 

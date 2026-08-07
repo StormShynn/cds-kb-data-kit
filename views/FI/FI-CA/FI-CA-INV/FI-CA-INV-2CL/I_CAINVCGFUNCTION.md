@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgFunction` | `_tfk2601.inv_function` |
-| `_CAInvcgFunctionText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgFunction` | ✓ | | `_tfk2601` | `inv_function` |
+| `_CAInvcgFunctionText` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventorySpecialStockType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `MaterialDocumentItem` | `mblpo` |
-| `GoodsMovementType` | `bwart` |
-| `Plant` | `werks_d` |
-| `StorageLocation` | `lgort_d` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocumentItem` |  | |  | `mblpo` |
+| `GoodsMovementType` |  | |  | `bwart` |
+| `Plant` |  | |  | `werks_d` |
+| `StorageLocation` |  | |  | `lgort_d` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

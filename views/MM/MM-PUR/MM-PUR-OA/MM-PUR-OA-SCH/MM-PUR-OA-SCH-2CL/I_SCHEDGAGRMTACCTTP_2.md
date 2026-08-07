@@ -29,62 +29,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountAssignmentNumber` | `AccountAssignmentNumber` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| `CostCenter` | `CostCenter` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `NetworkActivity` | `NetworkActivity` |
-| `NetworkActivityDescription` | `NetworkActivityDescription` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `Quantity` | `Quantity` |
-| `MultipleAcctAssgmtDistrPercent` | `MultipleAcctAssgmtDistrPercent` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `PurgDocNetAmount` | `PurgDocNetAmount` |
-| `IsDeleted` | `IsDeleted` |
-| `GLAccount` | `GLAccount` |
-| `BusinessArea` | `BusinessArea` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `FixedAsset` | `FixedAsset` |
-| `OrderID` | `OrderID` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `ControllingArea` | `ControllingArea` |
-| `CostObject` | `CostObject` |
-| `ProfitCenter` | `ProfitCenter` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `CompanyCode` | `CompanyCode` |
-| `ProjectNetworkInternalID` | `ProjectNetworkInternalID` |
-| `CommitmentItem` | `CommitmentItem` |
-| `CommitmentItemShortID` | `CommitmentItemShortID` |
-| `FundsCenter` | `FundsCenter` |
-| `FunctionalArea` | `FunctionalArea` |
-| `LastChangedDate` | `LastChangedDate` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `IsFinallyInvoiced` | `IsFinallyInvoiced` |
-| `REInternalFinNumber` | `REInternalFinNumber` |
-| `NetworkActivityInternalID` | `NetworkActivityInternalID` |
-| `PartnerAccountNumber` | `PartnerAccountNumber` |
-| `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `SettlementReferenceDate` | `SettlementReferenceDate` |
-| `OrderInternalID` | `OrderInternalID` |
-| `OrderIntBillOfOperationsItem` | `OrderIntBillOfOperationsItem` |
-| `TaxCode` | `TaxCode` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `NonDeductibleInputTaxAmount` | `NonDeductibleInputTaxAmount` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `BusinessProcess` | `BusinessProcess` |
-| `GrantID` | `GrantID` |
-| `BudgetPeriod` | `BudgetPeriod` |
-| `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| `ValidityDate` | `ValidityDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_SchedgAgrmtItm` | *Association* |
-| `_PurSchedgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountAssignmentNumber` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `SchedulingAgreement` | ✓ | |  |  |
+| `CostCenter` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `NetworkActivity` |  | |  |  |
+| `NetworkActivityDescription` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `PurgDocNetAmount` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |
+| `CommitmentItem` |  | |  |  |
+| `CommitmentItemShortID` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `LastChangedDate` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `IsFinallyInvoiced` |  | |  |  |
+| `REInternalFinNumber` |  | |  |  |
+| `NetworkActivityInternalID` |  | |  |  |
+| `PartnerAccountNumber` |  | |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |
+| `SettlementReferenceDate` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |
+| `ValidityDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_SchedgAgrmtItm` | | ✓ | | |
+| `_PurSchedgAgrmt` | | ✓ | | |
 
 ## Source Code
 

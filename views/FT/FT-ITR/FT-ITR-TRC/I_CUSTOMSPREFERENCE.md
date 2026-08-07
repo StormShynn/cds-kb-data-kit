@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomsPreference` | `cast(domvalue_l as prefe)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomsPreference` | ✓ | |  | `cast(domvalue_l as prefe)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

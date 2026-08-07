@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `CndnValueZeroProcgCode` | `cast ( substring( domvalue_l, 1, 1 ) as val_zero )` |
-| `CndnValZeroProcessingCodeText` | `cast ( ddtext as val_text )` |
-| `_CndnValueZeroProcessingCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `CndnValueZeroProcgCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as val_zero )` |
+| `CndnValZeroProcessingCodeText` |  | |  | `cast ( ddtext as val_text )` |
+| `_CndnValueZeroProcessingCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

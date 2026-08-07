@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `CharacteristicGroupText.spras` |
-| key `CharcGroup` | `cast ( CharacteristicGroupText.atkla as charcgroup preserving type )` |
-| `CharcGroupName` | `CharacteristicGroupText.atklt` |
-| `_Language` | *Association* |
-| `_CharcGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `CharcGroup` | ✓ | |  | `cast ( CharacteristicGroupText.atkla as charcgroup preserving type )` |
+| `CharcGroupName` |  | |  | `atklt` |
+| `_Language` | | ✓ | | |
+| `_CharcGroup` | | ✓ | | |
 
 ## Associations
 

@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `ServiceContractItem` | `ServiceContractItem` |
-| key `ServiceRefObjectSequenceNumber` | `ServiceRefObjectSequenceNumber` |
-| `ServiceReferenceEquipment` | `ServiceReferenceEquipment` |
-| `ServiceRefFunctionalLocation` | `ServiceRefFunctionalLocation` |
-| `ServiceReferenceProduct` | `ServiceReferenceProduct` |
-| `_ServiceContractItemTP` | *Association* |
-| `_ServiceContractTP` | *Association* |
-| `_EquipmentText` | *Association* |
-| `_FunctionalLocationText` | *Association* |
-| `_ProductText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceContractItem` | ✓ | |  |  |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  |  |
+| `ServiceReferenceEquipment` |  | |  |  |
+| `ServiceRefFunctionalLocation` |  | |  |  |
+| `ServiceReferenceProduct` |  | |  |  |
+| `_ServiceContractItemTP` | | ✓ | | |
+| `_ServiceContractTP` | | ✓ | | |
+| `_EquipmentText` | | ✓ | | |
+| `_FunctionalLocationText` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
 
 ## Source Code
 

@@ -28,65 +28,65 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `plfh.BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `plfh.BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `plfh.BillOfOperationsVariant` |
-| key `BillOfOperationsSequence` | `plfh.BillOfOperationsSequence` |
-| key `BOOOperationInternalID` | `plfh.BOOOperationInternalID` |
-| key `BOOOperationPRTInternalID` | `plfh.BOOOperationPRTInternalID` |
-| key `BOOOperationPRTIntVersCounter` | `plfh.BOOOperationPRTIntVersCounter` |
-| `CreationDate` | `plfh.CreationDate` |
-| `CreatedByUser` | `plfh.CreatedByUser` |
-| `LastChangeDate` | `plfh.LastChangeDate` |
-| `LastChangedByUser` | `plfh.LastChangedByUser` |
-| `ValidityStartDate` | `plfh.ValidityStartDate` |
-| `ValidityEndDate` | `plfh.ValidityEndDate` |
-| `ChangeNumber` | `plfh.ChangeNumber` |
-| `IsDeleted` | `plfh.IsDeleted` |
-| `IsImplicitlyDeleted` | `plfh.IsImplicitlyDeleted` |
-| `ProductionResourceType` | `plfh.ProductionResourceType` |
-| `ProductionResourceInternalID` | `plfh.ProductionResourceInternalID` |
-| `ProdnRsceToolItemNumber` | `plfh.ProdnRsceToolItemNumber` |
-| `ProdnRsceToolControlProfile` | `plfh.ProdnRsceToolControlProfile` |
-| `ProdnRsceToolStandardTextCode` | `plfh.ProdnRsceToolStandardTextCode` |
-| `ProdnRsceToolText` | `plfh.ProdnRsceToolText` |
-| `ProdnRsceToolStdWorkQtyUnit` | `plfh.ProdnRsceToolStdWorkQtyUnit` |
-| `ProdnRsceToolStandardWorkQty` | `plfh.ProdnRsceToolStandardWorkQty` |
-| `ProdnRsceToolTotQtyCalcFormula` | `plfh.ProdnRsceToolTotQtyCalcFormula` |
-| `ProdnRsceToolUsageQuantityUnit` | `plfh.ProdnRsceToolUsageQuantityUnit` |
-| `ProdnRsceToolUsageQuantity` | `plfh.ProdnRsceToolUsageQuantity` |
-| `ProdnRsceToolUsageQtyCalcFmla` | `plfh.ProdnRsceToolUsageQtyCalcFmla` |
-| `StartDateOffsetReferenceCode` | `plfh.StartDateOffsetReferenceCode` |
-| `StartDateOffsetDurationUnit` | `plfh.StartDateOffsetDurationUnit` |
-| `StartDateOffsetDuration` | `plfh.StartDateOffsetDuration` |
-| `EndDateOffsetReferenceCode` | `plfh.EndDateOffsetReferenceCode` |
-| `EndDateOffsetDurationUnit` | `plfh.EndDateOffsetDurationUnit` |
-| `EndDateOffsetDuration` | `plfh.EndDateOffsetDuration` |
-| `_BillOfOperations` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_BillOfOperationsOperation` | *Association* |
-| `_BillOfOperationsOperationPRT` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BOOOperationInternalID` | *Association* |
-| `_BOOOperationPRTInternalID` | *Association* |
-| `_ChangeMaster` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_ProductionResourceType` | *Association* |
-| `_ProdnRsceToolMasterData` | *Association* |
-| `_ProdnRsceToolControlProfile` | *Association* |
-| `_ProdnRsceToolTotQtyCalcFmla` | *Association* |
-| `_ProdnRsceToolUsageQtyCalcFmla` | *Association* |
-| `_ProdnRsceToolStandardText` | *Association* |
-| `_ProductionResourceToolUnit` | *Association* |
-| `_ProdnResourceToolUsageUnit` | *Association* |
-| `_EndDateOffsetReferenceCode` | *Association* |
-| `_EndDateOffsetDurationUnit` | *Association* |
-| `_StartDateOffsetReferenceCode` | *Association* |
-| `_StartDateOffsetDurationUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |
+| `BillOfOperationsSequence` | ✓ | |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |
+| `BOOOperationPRTInternalID` | ✓ | |  |  |
+| `BOOOperationPRTIntVersCounter` | ✓ | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |
+| `ProductionResourceType` |  | |  |  |
+| `ProductionResourceInternalID` |  | |  |  |
+| `ProdnRsceToolItemNumber` |  | |  |  |
+| `ProdnRsceToolControlProfile` |  | |  |  |
+| `ProdnRsceToolStandardTextCode` |  | |  |  |
+| `ProdnRsceToolText` |  | |  |  |
+| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |
+| `ProdnRsceToolStandardWorkQty` |  | |  |  |
+| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |
+| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |
+| `ProdnRsceToolUsageQuantity` |  | |  |  |
+| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |
+| `StartDateOffsetReferenceCode` |  | |  |  |
+| `StartDateOffsetDurationUnit` |  | |  |  |
+| `StartDateOffsetDuration` |  | |  |  |
+| `EndDateOffsetReferenceCode` |  | |  |  |
+| `EndDateOffsetDurationUnit` |  | |  |  |
+| `EndDateOffsetDuration` |  | |  |  |
+| `_BillOfOperations` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_BillOfOperationsOperation` | | ✓ | | |
+| `_BillOfOperationsOperationPRT` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BOOOperationInternalID` | | ✓ | | |
+| `_BOOOperationPRTInternalID` | | ✓ | | |
+| `_ChangeMaster` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_ProductionResourceType` | | ✓ | | |
+| `_ProdnRsceToolMasterData` | | ✓ | | |
+| `_ProdnRsceToolControlProfile` | | ✓ | | |
+| `_ProdnRsceToolTotQtyCalcFmla` | | ✓ | | |
+| `_ProdnRsceToolUsageQtyCalcFmla` | | ✓ | | |
+| `_ProdnRsceToolStandardText` | | ✓ | | |
+| `_ProductionResourceToolUnit` | | ✓ | | |
+| `_ProdnResourceToolUsageUnit` | | ✓ | | |
+| `_EndDateOffsetReferenceCode` | | ✓ | | |
+| `_EndDateOffsetDurationUnit` | | ✓ | | |
+| `_StartDateOffsetReferenceCode` | | ✓ | | |
+| `_StartDateOffsetDurationUnit` | | ✓ | | |
 
 ## Associations
 

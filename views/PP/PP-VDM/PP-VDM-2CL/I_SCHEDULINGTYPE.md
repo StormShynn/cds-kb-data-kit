@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingType` | `cast(typ.termkz as pph_termkz preserving type)` |
-| `SchedulingIsPerformedForward` | `typ.vorwt` |
-| `SchedulingIsPerformedBackward` | `typ.ruekt` |
-| `SchedgIsPerformedFromCurDate` | `typ.tagdt` |
-| `CalcOfCapacityRqmtsIsPerformed` | `typ.nterm` |
-| `SchedulingTypeIsTimeBased` | `typ.eck_uhrzt` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingType` | ✓ | |  | `cast(typ.termkz as pph_termkz preserving type)` |
+| `SchedulingIsPerformedForward` |  | |  | `vorwt` |
+| `SchedulingIsPerformedBackward` |  | |  | `ruekt` |
+| `SchedgIsPerformedFromCurDate` |  | |  | `tagdt` |
+| `CalcOfCapacityRqmtsIsPerformed` |  | |  | `nterm` |
+| `SchedulingTypeIsTimeBased` |  | |  | `eck_uhrzt` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

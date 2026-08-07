@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `ControllingArea` | `ControllingArea` |
-| key `CnsldtnCostCenterHierarchy` | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_costcenterhierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnCostCenterHierarchyText` | `_HierarchyText.UniversalHierarchyText` |
-| `_ControllingArea` | *Association* |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `ControllingArea` | ✓ | |  |  |
+| `CnsldtnCostCenterHierarchy` | ✓ | |  | `cast(_HierarchyText.CnsldtnUniversalHierarchy as fincs_costcenterhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnCostCenterHierarchyText` |  | | `_HierarchyText` | `UniversalHierarchyText` |
+| `_ControllingArea` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HedgedItemUUID` | `cast(hitem.os_guid as ftr_gen_hitem preserving type)` |
-| `HedgedItem` | `cast(hitem.hitem_number as ftr_gen_hitem_number preserving type)` |
-| `HedgedItemFiscalYear` | `cast(hitem.fiscal_year as ftr_gen_hitem_fiscal_year preserving type)` |
-| `CompanyCode` | `cast(hitem.tr_acc_code as bukrs preserving type)` |
-| `TreasuryValuationArea` | `cast(hitem.valuation_area as tpm_val_area preserving type)` |
-| `HedgedItemName` | `cast(hitem.description as ftr_gen_hitem_descr preserving type)` |
-| `HedgingRelationshipUUID` | `cast(hitem.hrel_oid as ftr_gen_hrel_uuid preserving type)` |
-| `_HedgingRelationship` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_TreasuryValuationArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HedgedItemUUID` | ✓ | |  | `cast(hitem.os_guid as ftr_gen_hitem preserving type)` |
+| `HedgedItem` |  | |  | `cast(hitem.hitem_number as ftr_gen_hitem_number preserving type)` |
+| `HedgedItemFiscalYear` |  | |  | `cast(hitem.fiscal_year as ftr_gen_hitem_fiscal_year preserving type)` |
+| `CompanyCode` |  | |  | `cast(hitem.tr_acc_code as bukrs preserving type)` |
+| `TreasuryValuationArea` |  | |  | `cast(hitem.valuation_area as tpm_val_area preserving type)` |
+| `HedgedItemName` |  | |  | `cast(hitem.description as ftr_gen_hitem_descr preserving type)` |
+| `HedgingRelationshipUUID` |  | |  | `cast(hitem.hrel_oid as ftr_gen_hrel_uuid preserving type)` |
+| `_HedgingRelationship` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_TreasuryValuationArea` | | ✓ | | |
 
 ## Associations
 

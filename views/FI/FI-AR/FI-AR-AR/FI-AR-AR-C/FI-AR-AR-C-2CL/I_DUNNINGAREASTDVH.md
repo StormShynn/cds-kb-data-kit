@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `DunningArea` | `DunningArea` |
-| `_Text` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `DunningArea` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Source Code
 

@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WrntyClaimPartnerUUID` | `pguid` |
-| key `WrntyPartRole` | `cast(parvw as parvw_unv preserving type )` |
-| key `Partner` | `parnr` |
-| key `WarrantyInternalNumber` | `counter` |
-| `WrntyClaimHeaderUUID` | `header_guid` |
-| `WrntyAddress` | `adrnr` |
-| `WrntyPartTimezone` | `tzonsp` |
-| `ValidToDateTime` | `timstmp` |
-| `WrntyClaimCreationDate` | `creadat` |
-| `CreatedByUser` | `creaby` |
-| `WrntyClaimChangedDate` | `chngdat` |
-| `LastChangedByUser` | `chngby` |
-| `WrntyHandlingNumber` | `ref_handle` |
-| `DataControllerSet` | `_Supplier.DataControllerSet` |
-| `Supplier` | `_Supplier.Supplier` |
-| `_WrntyClaimHeader` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WrntyClaimPartnerUUID` | ✓ | |  | `pguid` |
+| `WrntyPartRole` | ✓ | |  | `cast(parvw as parvw_unv preserving type )` |
+| `Partner` | ✓ | |  | `parnr` |
+| `WarrantyInternalNumber` | ✓ | |  | `counter` |
+| `WrntyClaimHeaderUUID` |  | |  | `header_guid` |
+| `WrntyAddress` |  | |  | `adrnr` |
+| `WrntyPartTimezone` |  | |  | `tzonsp` |
+| `ValidToDateTime` |  | |  | `timstmp` |
+| `WrntyClaimCreationDate` |  | |  | `creadat` |
+| `CreatedByUser` |  | |  | `creaby` |
+| `WrntyClaimChangedDate` |  | |  | `chngdat` |
+| `LastChangedByUser` |  | |  | `chngby` |
+| `WrntyHandlingNumber` |  | |  | `ref_handle` |
+| `DataControllerSet` |  | | `_Supplier` | `DataControllerSet` |
+| `Supplier` |  | | `_Supplier` | `Supplier` |
+| `_WrntyClaimHeader` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

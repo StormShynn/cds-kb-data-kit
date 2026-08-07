@@ -27,36 +27,36 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderID` | `pcc.OrderID` |
-| `OrderDescription` | `cast(pcc.OrderDescription as pph_auftext preserving type)` |
-| `OrderType` | `pcc.OrderType` |
-| `CreatedByUser` | `pcc.CreatedByUser` |
-| `CreationDate` | `pcc.CreationDate` |
-| `LastChangedByUser` | `pcc.LastChangedByUser` |
-| `LastChangeDate` | `pcc.LastChangeDate` |
-| `IsMarkedForDeletion` | `pcc.IsMarkedForDeletion` |
-| `IsStatisticalOrder` | `pcc.IsStatisticalOrder` |
-| `ReferenceOrder` | `pcc.ReferenceOrder` |
-| `ObjectInternalID` | `pcc.ObjectInternalID` |
-| `Currency` | `pcc.Currency` |
-| `BaseUnit` | `pcc.BaseUnit` |
-| `Plant` | `pcc.Plant` |
-| `ProductionProcess` | `cast(pcc.ProductionProcess as fco_production_process preserving type)` |
-| `ControllingArea` | `pcc.ControllingArea` |
-| `CompanyCode` | `pcc.CompanyCode` |
-| `BusinessArea` | `pcc.BusinessArea` |
-| `ProfitCenter` | `pcc.ProfitCenter` |
-| `CostCenter` | `pcc.CostCenter` |
-| `ResponsibleCostCenter` | `pcc.ResponsibleCostCenter` |
-| `RequestingCostCenter` | `cast(pcc.RequestingCostCenter as fco_io_ps_akstl preserving type)` |
-| `FunctionalArea` | `pcc.FunctionalArea` |
-| `ActualCostsCostingVariant` | `pcc.ActualCostsCostingVariant` |
-| `PlannedCostsCostingVariant` | `pcc.PlannedCostsCostingVariant` |
-| `_BaseUnit` | *Association* |
-| `_Currency` | *Association* |
-| `_OrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderID` | ✓ | |  |  |
+| `OrderDescription` |  | |  | `cast(pcc.OrderDescription as pph_auftext preserving type)` |
+| `OrderType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `IsStatisticalOrder` |  | |  |  |
+| `ReferenceOrder` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `Currency` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProductionProcess` |  | |  | `cast(pcc.ProductionProcess as fco_production_process preserving type)` |
+| `ControllingArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ResponsibleCostCenter` |  | |  |  |
+| `RequestingCostCenter` |  | |  | `cast(pcc.RequestingCostCenter as fco_io_ps_akstl preserving type)` |
+| `FunctionalArea` |  | |  |  |
+| `ActualCostsCostingVariant` |  | |  |  |
+| `PlannedCostsCostingVariant` |  | |  |  |
+| `_BaseUnit` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_OrderItem` | | ✓ | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CostingVariant` | `ck_klvar` |
-| `Plant` | `werks_d` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingVariant` |  | |  | `ck_klvar` |
+| `Plant` |  | |  | `werks_d` |
 
 ## Source Code
 

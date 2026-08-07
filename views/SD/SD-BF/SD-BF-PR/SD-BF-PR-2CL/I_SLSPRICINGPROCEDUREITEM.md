@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PricingProcedure` | `PricingProcedure` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `ConditionUsage` | `ConditionUsage` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `PrcgProcedItemFromRefStep` | `PrcgProcedItemFromRefStep` |
-| `PrcgProcedItemToRefStep` | `PrcgProcedItemToRefStep` |
-| `ConditionIsManuallyDtmnd` | `ConditionIsManuallyDtmnd` |
-| `PrcgProcedItemSubtotal` | `PrcgProcedItemSubtotal` |
-| `ConditionIsForStatistics` | `ConditionIsForStatistics` |
-| `AccountKeyForGLAccount` | `AccountKeyForGLAccount` |
-| `AcctKeyForAccrualsGLAccount` | `AcctKeyForAccrualsGLAccount` |
-| `PricingProcedureItemPrintType` | `PricingProcedureItemPrintType` |
-| `ConditionIsMandatory` | `ConditionIsMandatory` |
-| `CndnIsAcctDetnRelevant` | `CndnIsAcctDetnRelevant` |
-| `PriceElementAccessLevel` | `PriceElementAccessLevel` |
-| `InclusionPointFromToIsCopied` | `InclusionPointFromToIsCopied` |
-| `_ConditionUsage` | *Association* |
-| `_ConditionApplication` | *Association* |
-| `_ConditionType` | *Association* |
-| `_PrcgProcedItemPrntType` | *Association* |
-| `_Text` | *Association* |
-| `_SalesPricingProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PricingProcedure` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionUsage` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `PrcgProcedItemFromRefStep` |  | |  |  |
+| `PrcgProcedItemToRefStep` |  | |  |  |
+| `ConditionIsManuallyDtmnd` |  | |  |  |
+| `PrcgProcedItemSubtotal` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `AccountKeyForGLAccount` |  | |  |  |
+| `AcctKeyForAccrualsGLAccount` |  | |  |  |
+| `PricingProcedureItemPrintType` |  | |  |  |
+| `ConditionIsMandatory` |  | |  |  |
+| `CndnIsAcctDetnRelevant` |  | |  |  |
+| `PriceElementAccessLevel` |  | |  |  |
+| `InclusionPointFromToIsCopied` |  | |  |  |
+| `_ConditionUsage` | | ✓ | | |
+| `_ConditionApplication` | | ✓ | | |
+| `_ConditionType` | | ✓ | | |
+| `_PrcgProcedItemPrntType` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_SalesPricingProcedure` | | ✓ | | |
 
 ## Associations
 

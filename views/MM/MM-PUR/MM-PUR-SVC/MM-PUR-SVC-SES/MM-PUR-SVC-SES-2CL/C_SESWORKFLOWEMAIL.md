@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowTaskInternalID` | `_WorkflowTask.WorkflowTaskInternalID` |
-| `WorkflowTaskResultComment` | `_WorkflowTaskResultComment.WorkflowTaskResultComment` |
-| `ServiceEntrySheet` | `_ServiceEntrySheet.ServiceEntrySheet` |
-| `ServiceEntrySheetName` | `_ServiceEntrySheet.ServiceEntrySheetName` |
-| `PurchasingOrganization` | `_ServiceEntrySheet.PurchasingOrganization` |
-| `PurchasingGroup` | `_ServiceEntrySheet.PurchasingGroup` |
-| `Supplier` | `_ServiceEntrySheet.Supplier` |
-| `PurchaseOrder` | `_ServiceEntrySheet.PurchaseOrder` |
-| `Currency` | `_ServiceEntrySheet.Currency` |
-| `TotalNetAmount` | `_Document.TotalNetAmount` |
-| `ApprovalStatus` | `_ServiceEntrySheet.ApprovalStatus` |
-| `ApprovedByUserFullName` | `cast(_ApproverUser.UserDescription as mm_oa_user_fullname )` |
-| `CreatedByUserName` | `cast(_SESCreatorUser.UserDescription as mm_oa_user_fullname )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_WorkflowTask` | `WorkflowTaskInternalID` |
+| `WorkflowTaskResultComment` |  | | `_WorkflowTaskResultComment` | `WorkflowTaskResultComment` |
+| `ServiceEntrySheet` |  | | `_ServiceEntrySheet` | `ServiceEntrySheet` |
+| `ServiceEntrySheetName` |  | | `_ServiceEntrySheet` | `ServiceEntrySheetName` |
+| `PurchasingOrganization` |  | | `_ServiceEntrySheet` | `PurchasingOrganization` |
+| `PurchasingGroup` |  | | `_ServiceEntrySheet` | `PurchasingGroup` |
+| `Supplier` |  | | `_ServiceEntrySheet` | `Supplier` |
+| `PurchaseOrder` |  | | `_ServiceEntrySheet` | `PurchaseOrder` |
+| `Currency` |  | | `_ServiceEntrySheet` | `Currency` |
+| `TotalNetAmount` |  | | `_Document` | `TotalNetAmount` |
+| `ApprovalStatus` |  | | `_ServiceEntrySheet` | `ApprovalStatus` |
+| `ApprovedByUserFullName` |  | |  | `cast(_ApproverUser.UserDescription as mm_oa_user_fullname )` |
+| `CreatedByUserName` |  | |  | `cast(_SESCreatorUser.UserDescription as mm_oa_user_fullname )` |
 
 ## Associations
 

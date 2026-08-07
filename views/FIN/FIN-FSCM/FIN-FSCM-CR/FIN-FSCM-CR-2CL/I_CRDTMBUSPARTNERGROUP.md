@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CrdtMgmtBusinessPartnerGroup` | `cred_group` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CrdtMgmtBusinessPartnerGroup` | ✓ | |  | `cred_group` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

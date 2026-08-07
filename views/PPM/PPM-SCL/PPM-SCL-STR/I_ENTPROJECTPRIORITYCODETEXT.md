@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `language` |
-| key `PriorityCode` | `cast(lpad(cast(priority as abap.char(3)),3,'0')as abap.numc(3))` |
-| `PriorityCodeName` | `text` |
-| `_Language` | *Association* |
-| `_PriorityCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `language` |
+| `PriorityCode` | ✓ | |  | `cast(lpad(cast(priority as abap.char(3)),3,'0')as abap.numc(3))` |
+| `PriorityCodeName` |  | |  | `text` |
+| `_Language` | | ✓ | | |
+| `_PriorityCode` | | ✓ | | |
 
 ## Associations
 

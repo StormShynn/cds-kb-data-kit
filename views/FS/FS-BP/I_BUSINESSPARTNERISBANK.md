@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `but0bank.partner` |
-| `BankKey` | `but0bank.bankl` |
-| `BankCountry` | `but0bank.banks` |
-| `BPMinimumReserve` | `but0bank.min_reserv` |
-| `_BusinessPartner` | *Association* |
-| `_BPFinancialServicesExtn` | *Association* |
-| `_BPMinimumReserve` | *Association* |
-| `_BPMinimumReserveText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `BankKey` |  | |  | `bankl` |
+| `BankCountry` |  | |  | `banks` |
+| `BPMinimumReserve` |  | |  | `min_reserv` |
+| `_BusinessPartner` | | ✓ | | |
+| `_BPFinancialServicesExtn` | | ✓ | | |
+| `_BPMinimumReserve` | | ✓ | | |
+| `_BPMinimumReserveText` | | ✓ | | |
 
 ## Associations
 

@@ -28,40 +28,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `_Sum.CompanyCode` |
-| key `AccountingDocument` | `_Sum.AccountingDocument` |
-| key `FiscalYear` | `_Sum.FiscalYear` |
-| key `AccountingDocumentItem` | `_Sum.AccountingDocumentItem` |
-| key `ControllingAreaCurrencyRole` | `_Sum.ControllingAreaCurrencyRole` |
-| key `ActiveValuationArea` | `_Sum.ActiveValuationArea` |
-| `StartingBalanceAmtInCoCodeCrcy` | `case when _Sum.FrgnCrcyValnDeltaLogicIsActive = '' then case when _Sum.EvaluationKeyDate = $parameters.P_FromPostingDate then _Sum.ValuationDiffAmtInCoCodeCrcy else 0.0 end else sum(_Sum.ValuationDiffAmtInCoCodeCrcy) end` |
-| `EndingBalanceAmtInCoCodeCrcy` | `0.0` |
-| `CompanyCodeCurrency` | `_Sum.CompanyCodeCurrency` |
-| `FrgnCrcyValnDeltaLogicIsActive` | `_Sum.FrgnCrcyValnDeltaLogicIsActive` |
-| `AssignmentReference` | `_Sum.AssignmentReference` |
-| `Creditor` | `_Sum.Creditor` |
-| `Debtor` | `_Sum.Debtor` |
-| `BusinessPartner` | `_Sum.BusinessPartner` |
-| `PostingDate` | `_Sum.PostingDate` |
-| `CndnContrType` | `_Sum.CndnContrType` |
-| `AuthorizationGroup` | `_Sum.AuthorizationGroup` |
-| `SupplierFinsAuthorizationGrp` | `_Sum.SupplierFinsAuthorizationGrp` |
-| `CustomerFinsAuthorizationGrp` | `_Sum.CustomerFinsAuthorizationGrp` |
-| `SupplierCompanyAuthznGroup` | `SupplierCompany.AuthorizationGroup` |
-| `CustomerCompanyAuthznGroup` | `CustomerCompany.AuthorizationGroup` |
-| `DataControllerSet` | `BusinessPartner.DataControllerSet` |
-| `DataController1` | `BusinessPartner.DataController1` |
-| `DataController2` | `BusinessPartner.DataController2` |
-| `DataController3` | `BusinessPartner.DataController3` |
-| `DataController4` | `BusinessPartner.DataController4` |
-| `DataController5` | `BusinessPartner.DataController5` |
-| `DataController6` | `BusinessPartner.DataController6` |
-| `DataController7` | `BusinessPartner.DataController7` |
-| `DataController8` | `BusinessPartner.DataController8` |
-| `DataController9` | `BusinessPartner.DataController9` |
-| `DataController10` | `BusinessPartner.DataController10` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | | `_Sum` | `CompanyCode` |
+| `AccountingDocument` | ✓ | | `_Sum` | `AccountingDocument` |
+| `FiscalYear` | ✓ | | `_Sum` | `FiscalYear` |
+| `AccountingDocumentItem` | ✓ | | `_Sum` | `AccountingDocumentItem` |
+| `ControllingAreaCurrencyRole` | ✓ | | `_Sum` | `ControllingAreaCurrencyRole` |
+| `ActiveValuationArea` | ✓ | | `_Sum` | `ActiveValuationArea` |
+| `StartingBalanceAmtInCoCodeCrcy` |  | |  | `case when _Sum.FrgnCrcyValnDeltaLogicIsActive = '' then case when _Sum.EvaluationKeyDate = $parameters.P_FromPostingDate then _Sum.ValuationDiffAmtInCoCodeCrcy else 0.0 end else sum(_Sum.ValuationDiffAmtInCoCodeCrcy) end` |
+| `EndingBalanceAmtInCoCodeCrcy` |  | |  | `0` |
+| `CompanyCodeCurrency` |  | | `_Sum` | `CompanyCodeCurrency` |
+| `FrgnCrcyValnDeltaLogicIsActive` |  | | `_Sum` | `FrgnCrcyValnDeltaLogicIsActive` |
+| `AssignmentReference` |  | | `_Sum` | `AssignmentReference` |
+| `Creditor` |  | | `_Sum` | `Creditor` |
+| `Debtor` |  | | `_Sum` | `Debtor` |
+| `BusinessPartner` |  | | `_Sum` | `BusinessPartner` |
+| `PostingDate` |  | | `_Sum` | `PostingDate` |
+| `CndnContrType` |  | | `_Sum` | `CndnContrType` |
+| `AuthorizationGroup` |  | | `_Sum` | `AuthorizationGroup` |
+| `SupplierFinsAuthorizationGrp` |  | | `_Sum` | `SupplierFinsAuthorizationGrp` |
+| `CustomerFinsAuthorizationGrp` |  | | `_Sum` | `CustomerFinsAuthorizationGrp` |
+| `SupplierCompanyAuthznGroup` |  | |  | `AuthorizationGroup` |
+| `CustomerCompanyAuthznGroup` |  | |  | `AuthorizationGroup` |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
 
 ## Source Code
 

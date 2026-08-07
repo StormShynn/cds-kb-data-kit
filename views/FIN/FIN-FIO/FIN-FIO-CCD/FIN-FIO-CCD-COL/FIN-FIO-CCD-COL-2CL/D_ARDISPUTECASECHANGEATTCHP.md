@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CaseAttachmentName` | `bapidocid` |
-| `MimeType` | `w3conttype` |
-| `UploadFileContentBinary` | `dispute_attachment_content` |
-| `_ChildToParent` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CaseAttachmentName` |  | |  | `bapidocid` |
+| `MimeType` |  | |  | `w3conttype` |
+| `UploadFileContentBinary` |  | |  | `dispute_attachment_content` |
+| `_ChildToParent` | | ✓ | | |
 
 ## Source Code
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `CAWithholdingTaxSupplement` | `qssew` |
-| `_Country` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `CAWithholdingTaxSupplement` | ✓ | |  | `qssew` |
+| `_Country` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

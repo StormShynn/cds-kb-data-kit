@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContractCanclnParty` | `canc_party` |
-| `_ServiceCancellationPartyText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContractCanclnParty` | ✓ | |  | `canc_party` |
+| `_ServiceCancellationPartyText` | | ✓ | | |
 
 ## Associations
 

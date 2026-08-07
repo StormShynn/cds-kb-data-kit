@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMRelshpType` | `LglCntntMRelshpType` |
-| key `Language` | `Language` |
-| `LglCntntMRelTypeName` | `LglCntntMRelTypeName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMRelshpType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LglCntntMRelTypeName` |  | |  |  |
 
 ## Source Code
 

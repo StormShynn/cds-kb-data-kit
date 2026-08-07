@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `FreightCostAllocationDocument` | `] } key FreightCostAllocationDocument` |
-| `SettlmtDocType` | `SettlmtDocType` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FreightCostAllocationDocument` |  | |  | `] } key FreightCostAllocationDocument` |
+| `SettlmtDocType` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
 
 ## Source Code
 

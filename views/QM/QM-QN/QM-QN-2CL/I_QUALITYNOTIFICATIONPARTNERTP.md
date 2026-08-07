@@ -30,22 +30,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `_QualityNotificationPartner.QualityNotification` |
-| key `PartnerFunction` | `_QualityNotificationPartner.PartnerFunction` |
-| key `NotificationPartnerObjectNmbr` | `_QualityNotificationPartner.NotificationPartnerObjectNmbr` |
-| `NotificationPartnerObject` | `_QualityNotificationPartner.NotificationPartnerObject` |
-| `NotificationObjectType` | `_QualityNotificationPartner.NotificationObjectType` |
-| `NotificationPartner` | `_QualityNotificationPartner.NotificationPartner` |
-| `CreatedByUser` | `_QualityNotificationPartner.CreatedByUser` |
-| `CreationDate` | `_QualityNotificationPartner.CreationDate` |
-| `CreationTime` | `_QualityNotificationPartner.CreationTime` |
-| `LastChangedByUser` | `_QualityNotificationPartner.LastChangedByUser` |
-| `LastChangeTime` | `_QualityNotificationPartner.LastChangeTime` |
-| `LastChangeDate` | `_QualityNotificationPartner.LastChangeDate` |
-| `IsDeleted` | `_QualityNotificationPartner.IsDeleted` |
-| `I_QltyNotificationTP` | `_QualityNotificationPartner._QltyNotification : redirected to parent I_QltyNotificationTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | | `_QualityNotificationPartner` | `QualityNotification` |
+| `PartnerFunction` | ✓ | | `_QualityNotificationPartner` | `PartnerFunction` |
+| `NotificationPartnerObjectNmbr` | ✓ | | `_QualityNotificationPartner` | `NotificationPartnerObjectNmbr` |
+| `NotificationPartnerObject` |  | | `_QualityNotificationPartner` | `NotificationPartnerObject` |
+| `NotificationObjectType` |  | | `_QualityNotificationPartner` | `NotificationObjectType` |
+| `NotificationPartner` |  | | `_QualityNotificationPartner` | `NotificationPartner` |
+| `CreatedByUser` |  | | `_QualityNotificationPartner` | `CreatedByUser` |
+| `CreationDate` |  | | `_QualityNotificationPartner` | `CreationDate` |
+| `CreationTime` |  | | `_QualityNotificationPartner` | `CreationTime` |
+| `LastChangedByUser` |  | | `_QualityNotificationPartner` | `LastChangedByUser` |
+| `LastChangeTime` |  | | `_QualityNotificationPartner` | `LastChangeTime` |
+| `LastChangeDate` |  | | `_QualityNotificationPartner` | `LastChangeDate` |
+| `IsDeleted` |  | | `_QualityNotificationPartner` | `IsDeleted` |
+| `I_QltyNotificationTP` |  | |  | `_QualityNotificationPartner._QltyNotification : redirected to parent I_QltyNotificationTP` |
 
 ## Source Code
 

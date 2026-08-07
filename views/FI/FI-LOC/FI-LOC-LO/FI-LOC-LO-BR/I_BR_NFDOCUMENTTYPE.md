@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NFDocumentType` | `_BR_NFDocumentType.doctyp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NFDocumentType` | ✓ | | `_BR_NFDocumentType` | `doctyp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

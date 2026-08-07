@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionCatalog` | `qpgt.katalogart` |
-| key `InspectionCodeGroup` | `qpgt.codegruppe` |
-| key `Language` | `qpgt.sprache` |
-| `InspSpecAddlCodeGroupText` | `cast( qpgt.kurztext as vdm_qktextgr preserving type )` |
-| `_InspectionCatalog` | *Association* |
-| `_InspectionCodeGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionCatalog` | ✓ | |  | `katalogart` |
+| `InspectionCodeGroup` | ✓ | |  | `codegruppe` |
+| `Language` | ✓ | |  | `sprache` |
+| `InspSpecAddlCodeGroupText` |  | |  | `cast( qpgt.kurztext as vdm_qktextgr preserving type )` |
+| `_InspectionCatalog` | | ✓ | | |
+| `_InspectionCodeGroup` | | ✓ | | |
 
 ## Associations
 

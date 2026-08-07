@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContract` | `SalesContractText.SalesContract` |
-| key `Language` | `SalesContractText.Language` |
-| key `LongTextID` | `SalesContractText.LongTextID` |
-| `LongTextIDForEdit` | `SalesContractText.LongTextIDForEdit` |
-| `LanguageForEdit` | `SalesContractText.LanguageForEdit` |
-| `LongText` | `SalesContractText.LongText` |
-| `SalesContractType` | `SalesContractText.SalesContractType` |
-| `SalesOrganization` | `SalesContractText.SalesOrganization` |
-| `DistributionChannel` | `SalesContractText.DistributionChannel` |
-| `OrganizationDivision` | `SalesContractText.OrganizationDivision` |
-| `_SalesContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `SalesContractType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesContract` | | ✓ | | |
 
 ## Source Code
 

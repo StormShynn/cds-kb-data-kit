@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurgCatIsInactive` | `cast ( substring( domvalue_l, 1, 1 ) as /srmsmc/inactive_status preserving type)` |
-| key `Language` | `ddlanguage` |
-| `PurgCatIsInactiveName` | `cast( ddtext as /srmsmc/status_descr preserving type)` |
-| `_Language` | *Association* |
-| `_InactiveStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurgCatIsInactive` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as /srmsmc/inactive_status preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `PurgCatIsInactiveName` |  | |  | `cast( ddtext as /srmsmc/status_descr preserving type)` |
+| `_Language` | | ✓ | | |
+| `_InactiveStatus` | | ✓ | | |
 
 ## Associations
 

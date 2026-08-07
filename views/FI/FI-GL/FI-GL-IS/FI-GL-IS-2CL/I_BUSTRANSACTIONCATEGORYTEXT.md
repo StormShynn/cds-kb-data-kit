@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `finsc_bttype_t.langu` |
-| key `BusinessTransactionCategory` | `cast(finsc_bttype_t.bttype as fis_bttype preserving type )` |
-| `BusTransactionCategoryName` | `cast(finsc_bttype_t.txt as fins_bttype_txt preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `BusinessTransactionCategory` | ✓ | |  | `cast(finsc_bttype_t.bttype as fis_bttype preserving type )` |
+| `BusTransactionCategoryName` |  | |  | `cast(finsc_bttype_t.txt as fins_bttype_txt preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

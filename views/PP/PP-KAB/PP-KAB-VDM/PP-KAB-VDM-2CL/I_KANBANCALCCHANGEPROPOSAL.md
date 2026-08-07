@@ -28,55 +28,55 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanControlCycle` | `pknum` |
-| `KnbnCalcChgPrpslCreationDate` | `kcedt` |
-| `KnbnControlCycleNextChangeDate` | `nexdt` |
-| `KnbnCalcNextNumberOfContainers` | `nexaz` |
-| `KnbnCalcNextContainerQty` | `nexmg` |
-| `KnbnCalcNextTriggerPointVal` | `nextri` |
-| `KnbnCalcEvalPeriodStartDate` | `kcvdt` |
-| `KnbnCalcEvalPeriodEndDate` | `kcbdt` |
-| `MaxNmbrOfKnbnCtnsInEvalPerd` | `pcmaa` |
-| `MaxKnbnCtnQtyInEvalPerd` | `pcmam` |
-| `MinNmbrOfKnbnCtnsInEvalPerd` | `pcmia` |
-| `MinKnbnCtnQtyInEvalPerd` | `pcmim` |
-| `RefillTmeNmbrOfKnbnCtns` | `pcmaa_rft` |
-| `RefillTmeKnbnCtnQty` | `pcmam_rft` |
-| `WaitTmeNmbrOfKnbnCtns` | `pcmaa_wt` |
-| `WaitTmeKnbnCtnQty` | `pcmam_wt` |
-| `TranspTmeNmbrOfKnbnCtns` | `pcmaa_itt` |
-| `TranspTmeKnbnCtnQty` | `pcmam_itt` |
-| `PullIntvlNmbrOfKnbnCtns` | `pcmaa_pit` |
-| `PullIntvlKnbnCtnQty` | `pcmam_pit` |
-| `CalBufNmbrOfKnbnCtns` | `pcmaa_calbuf` |
-| `CalBufKnbnCtnQty` | `pcmam_calbuf` |
-| `RqmtFluctuationNmbrOfKnbnCtn` | `pcmaa_volat` |
-| `RqmtFluctuationKnbnCtnQty` | `pcmam_volat` |
-| `RqmtBufNmbrOfKnbnCtns` | `pcmaa_dmbuf` |
-| `RqmtBufKnbnCtnQty` | `pcmam_dmbuf` |
-| `SupBufNmbrOfKnbnCtns` | `pcmaa_supbuf` |
-| `SupBufKnbnCtnQty` | `pcmam_supbuf` |
-| `ReplnmtLeadTmeNmbrOfKnbnCtns` | `pcmaa_nopara` |
-| `ReplnmtLeadTmeKnbnCtnQty` | `pcmam_nopara` |
-| `SftyFctrNmbrOfKnbnCtns` | `pcmaa_sfc` |
-| `SftyFctrKnbnCtnQty` | `pcmam_sfc` |
-| `CapBufNmbrOfCtns` | `pcmaa_capabuf` |
-| `CapBufKnbnCtnQty` | `pcmam_capabuf` |
-| `PlanningWorkCenter` | `capa_wrkct` |
-| `KanbanCtrlCycReplnmtTriggerGrp` | `triggr` |
-| `KanbanCalcTotalCapUtilznPct` | `capa_utl_t` |
-| `KanbanCalcProdnCapUtilznPct` | `capa_utl_p` |
-| `KanbanCalcSetupCapUtilznPct` | `capa_utl_s` |
-| `NrOfDaysWthoutRqmtsToBeIgnrd` | `kigdays` |
-| `MRPPlanningScenario` | `plscn` |
-| `BaseUnit` | `_KanbanControlCycle.BaseUnit` |
-| `Plant` | `_KanbanControlCycle.Plant` |
-| `Supplier` | `_KanbanControlCycle.Supplier` |
-| `_KanbanControlCycle` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanControlCycle` | ✓ | |  | `pknum` |
+| `KnbnCalcChgPrpslCreationDate` |  | |  | `kcedt` |
+| `KnbnControlCycleNextChangeDate` |  | |  | `nexdt` |
+| `KnbnCalcNextNumberOfContainers` |  | |  | `nexaz` |
+| `KnbnCalcNextContainerQty` |  | |  | `nexmg` |
+| `KnbnCalcNextTriggerPointVal` |  | |  | `nextri` |
+| `KnbnCalcEvalPeriodStartDate` |  | |  | `kcvdt` |
+| `KnbnCalcEvalPeriodEndDate` |  | |  | `kcbdt` |
+| `MaxNmbrOfKnbnCtnsInEvalPerd` |  | |  | `pcmaa` |
+| `MaxKnbnCtnQtyInEvalPerd` |  | |  | `pcmam` |
+| `MinNmbrOfKnbnCtnsInEvalPerd` |  | |  | `pcmia` |
+| `MinKnbnCtnQtyInEvalPerd` |  | |  | `pcmim` |
+| `RefillTmeNmbrOfKnbnCtns` |  | |  | `pcmaa_rft` |
+| `RefillTmeKnbnCtnQty` |  | |  | `pcmam_rft` |
+| `WaitTmeNmbrOfKnbnCtns` |  | |  | `pcmaa_wt` |
+| `WaitTmeKnbnCtnQty` |  | |  | `pcmam_wt` |
+| `TranspTmeNmbrOfKnbnCtns` |  | |  | `pcmaa_itt` |
+| `TranspTmeKnbnCtnQty` |  | |  | `pcmam_itt` |
+| `PullIntvlNmbrOfKnbnCtns` |  | |  | `pcmaa_pit` |
+| `PullIntvlKnbnCtnQty` |  | |  | `pcmam_pit` |
+| `CalBufNmbrOfKnbnCtns` |  | |  | `pcmaa_calbuf` |
+| `CalBufKnbnCtnQty` |  | |  | `pcmam_calbuf` |
+| `RqmtFluctuationNmbrOfKnbnCtn` |  | |  | `pcmaa_volat` |
+| `RqmtFluctuationKnbnCtnQty` |  | |  | `pcmam_volat` |
+| `RqmtBufNmbrOfKnbnCtns` |  | |  | `pcmaa_dmbuf` |
+| `RqmtBufKnbnCtnQty` |  | |  | `pcmam_dmbuf` |
+| `SupBufNmbrOfKnbnCtns` |  | |  | `pcmaa_supbuf` |
+| `SupBufKnbnCtnQty` |  | |  | `pcmam_supbuf` |
+| `ReplnmtLeadTmeNmbrOfKnbnCtns` |  | |  | `pcmaa_nopara` |
+| `ReplnmtLeadTmeKnbnCtnQty` |  | |  | `pcmam_nopara` |
+| `SftyFctrNmbrOfKnbnCtns` |  | |  | `pcmaa_sfc` |
+| `SftyFctrKnbnCtnQty` |  | |  | `pcmam_sfc` |
+| `CapBufNmbrOfCtns` |  | |  | `pcmaa_capabuf` |
+| `CapBufKnbnCtnQty` |  | |  | `pcmam_capabuf` |
+| `PlanningWorkCenter` |  | |  | `capa_wrkct` |
+| `KanbanCtrlCycReplnmtTriggerGrp` |  | |  | `triggr` |
+| `KanbanCalcTotalCapUtilznPct` |  | |  | `capa_utl_t` |
+| `KanbanCalcProdnCapUtilznPct` |  | |  | `capa_utl_p` |
+| `KanbanCalcSetupCapUtilznPct` |  | |  | `capa_utl_s` |
+| `NrOfDaysWthoutRqmtsToBeIgnrd` |  | |  | `kigdays` |
+| `MRPPlanningScenario` |  | |  | `plscn` |
+| `BaseUnit` |  | | `_KanbanControlCycle` | `BaseUnit` |
+| `Plant` |  | | `_KanbanControlCycle` | `Plant` |
+| `Supplier` |  | | `_KanbanControlCycle` | `Supplier` |
+| `_KanbanControlCycle` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
 
 ## Associations
 

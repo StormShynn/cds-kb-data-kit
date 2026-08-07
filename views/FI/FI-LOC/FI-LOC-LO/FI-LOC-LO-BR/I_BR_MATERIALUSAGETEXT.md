@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `BR_MaterialUsage` | `cast ( domvalue_l as logbr_matuse )` |
-| `BR_MaterialUsageDesc` | `cast ( ddtext as logbr_matusedesc preserving type )` |
-| `_BR_MaterialUsage` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `BR_MaterialUsage` | ✓ | |  | `cast ( domvalue_l as logbr_matuse )` |
+| `BR_MaterialUsageDesc` |  | |  | `cast ( ddtext as logbr_matusedesc preserving type )` |
+| `_BR_MaterialUsage` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

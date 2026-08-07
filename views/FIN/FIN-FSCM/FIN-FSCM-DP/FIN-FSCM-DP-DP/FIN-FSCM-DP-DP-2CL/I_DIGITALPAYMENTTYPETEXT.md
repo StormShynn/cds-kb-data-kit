@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `DigitalPaymentType` | `cast( dd07t.domvalue_l as dp_payment_type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `DigitalPaymentTypeName` | `cast( dd07t.ddtext as dp_payment_type_text preserving type )` |
-| `_Language` | *Association* |
-| `_DigitalPaymentType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `DigitalPaymentType` | ✓ | |  | `cast( dd07t.domvalue_l as dp_payment_type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `DigitalPaymentTypeName` |  | |  | `cast( dd07t.ddtext as dp_payment_type_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_DigitalPaymentType` | | ✓ | | |
 
 ## Associations
 

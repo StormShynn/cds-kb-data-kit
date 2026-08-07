@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmt` |
-| key `JntOpgAgrmtBurdenRateType` | `JntOpgAgrmtBurdenRateType` |
-| `JntOpgAgrmtOvhdBurdenRatePct` | `JntOpgAgrmtOvhdBurdenRatePct` |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JntOpgAgrmtBurdenRateType` | ✓ | |  |  |
+| `JntOpgAgrmtOvhdBurdenRatePct` |  | |  |  |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Source Code
 

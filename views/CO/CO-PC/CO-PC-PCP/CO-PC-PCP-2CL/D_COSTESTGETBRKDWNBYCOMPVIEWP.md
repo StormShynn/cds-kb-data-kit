@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CostComponentView` | `ck_sicht` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostComponentView` |  | |  | `ck_sicht` |
 
 ## Source Code
 

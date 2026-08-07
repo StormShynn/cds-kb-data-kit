@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReversalReason` | `t041c.stgrd` |
-| `IsNegativePosting` | `t041c.xnegp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReversalReason` | ✓ | |  | `stgrd` |
+| `IsNegativePosting` |  | |  | `xnegp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

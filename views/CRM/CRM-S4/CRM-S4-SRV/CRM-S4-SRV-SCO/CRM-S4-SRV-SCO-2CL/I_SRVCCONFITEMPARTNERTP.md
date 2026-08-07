@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceConfirmation` | `ServiceConfirmation` |
-| key `ServiceConfirmationItem` | `ServiceConfirmationItem` |
-| key `CustMgmtPartnerFunction` | `CustMgmtPartnerFunction` |
-| key `CustMgmtBusinessPartner` | `CustMgmtBusinessPartner` |
-| `CustMgmtPartnerIsMainPartner` | `CustMgmtPartnerIsMainPartner` |
-| `_SrvcConfItemPartnerAddressTP` | *Association* |
-| `_ServiceConfirmationItemTP` | *Association* |
-| `_ServiceConfirmationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |
+| `ServiceConfirmationItem` | ✓ | |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |
+| `CustMgmtPartnerIsMainPartner` |  | |  |  |
+| `_SrvcConfItemPartnerAddressTP` | | ✓ | | |
+| `_ServiceConfirmationItemTP` | | ✓ | | |
+| `_ServiceConfirmationTP` | | ✓ | | |
 
 ## Source Code
 

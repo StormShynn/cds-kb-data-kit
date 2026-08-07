@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElmntDlvbrlDistrUUID` | `DeliverableDistribution.entprojelmntdlvbrldistruuid` |
-| `EntProjElmntDeliverableUUID` | `DeliverableDistribution.entprojelmntdeliverableuuid` |
-| `ProjectElementUUID` | `DeliverableDistribution.projectelementuuid` |
-| `ProjectUUID` | `DeliverableDistribution.projectuuid` |
-| `EntProjElmntDlvbrlDistrYearVal` | `DeliverableDistribution.entprojelmntdlvbrldistryearval` |
-| `EntProjElmntDlvbrlDistrPerdVal` | `DeliverableDistribution.entprojelmntdlvbrldistrperdval` |
-| `EntProjElmntDlvbrlDistrQty` | `DeliverableDistribution.entprojelmntdlvbrldistrqty` |
-| `EntProjElmntDlvbrlDistrQtyUnit` | `DeliverableDistribution.entprojelmntdlvbrldistrqtyunit` |
-| `EntProjElmntDlvbrlDistrRevenue` | `DeliverableDistribution.entprojelmntdlvdistrrevenue` |
-| `EntPrjElmntDlvbrlDistrRevnCrcy` | `DeliverableDistribution.entprojelmntdlvdistrrevncurr` |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EntProjElmntDlvbrlRevenue` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElmntDlvbrlDistrUUID` | ✓ | |  | `entprojelmntdlvbrldistruuid` |
+| `EntProjElmntDeliverableUUID` |  | |  | `entprojelmntdeliverableuuid` |
+| `ProjectElementUUID` |  | |  | `projectelementuuid` |
+| `ProjectUUID` |  | |  | `projectuuid` |
+| `EntProjElmntDlvbrlDistrYearVal` |  | |  | `entprojelmntdlvbrldistryearval` |
+| `EntProjElmntDlvbrlDistrPerdVal` |  | |  | `entprojelmntdlvbrldistrperdval` |
+| `EntProjElmntDlvbrlDistrQty` |  | |  | `entprojelmntdlvbrldistrqty` |
+| `EntProjElmntDlvbrlDistrQtyUnit` |  | |  | `entprojelmntdlvbrldistrqtyunit` |
+| `EntProjElmntDlvbrlDistrRevenue` |  | |  | `entprojelmntdlvdistrrevenue` |
+| `EntPrjElmntDlvbrlDistrRevnCrcy` |  | |  | `entprojelmntdlvdistrrevncurr` |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EntProjElmntDlvbrlRevenue` | | ✓ | | |
 
 ## Associations
 

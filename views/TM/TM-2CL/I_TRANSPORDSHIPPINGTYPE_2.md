@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdShippingType` | `shipping_type` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdShippingType` | ✓ | |  | `shipping_type` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

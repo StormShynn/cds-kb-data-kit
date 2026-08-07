@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IncotermsClassification` | `inco1` |
-| key `Language` | `spras` |
-| `IncotermsClassificationName` | `cast(bezei as incoterms_classification_name preserving type )` |
-| `_IncotermsClassification` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IncotermsClassification` | ✓ | |  | `inco1` |
+| `Language` | ✓ | |  | `spras` |
+| `IncotermsClassificationName` |  | |  | `cast(bezei as incoterms_classification_name preserving type )` |
+| `_IncotermsClassification` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

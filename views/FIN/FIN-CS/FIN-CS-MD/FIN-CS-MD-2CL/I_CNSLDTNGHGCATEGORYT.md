@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `GHGCategory` | `cast( _Source.GHGCategory as fincs_ghgcategory preserving type )` |
-| `GHGCategoryName` | `cast( _Source.GHGCategoryName as fincs_ghgcategoryname preserving type )` |
-| `_Language` | *Association* |
-| `_GHGCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `GHGCategory` | ✓ | |  | `cast( _Source.GHGCategory as fincs_ghgcategory preserving type )` |
+| `GHGCategoryName` |  | |  | `cast( _Source.GHGCategoryName as fincs_ghgcategoryname preserving type )` |
+| `_Language` | | ✓ | | |
+| `_GHGCategory` | | ✓ | | |
 
 ## Associations
 

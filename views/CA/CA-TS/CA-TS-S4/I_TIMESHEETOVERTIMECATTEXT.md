@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `TimeSheetOvertimeCategory` | `overtimecat` |
-| `TimeSheetOvertimeCategoryText` | `text` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `TimeSheetOvertimeCategory` | ✓ | |  | `overtimecat` |
+| `TimeSheetOvertimeCategoryText` |  | |  | `text` |
 
 ## Source Code
 

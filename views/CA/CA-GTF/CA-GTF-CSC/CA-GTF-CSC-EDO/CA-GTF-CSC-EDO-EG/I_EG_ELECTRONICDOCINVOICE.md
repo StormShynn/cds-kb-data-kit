@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `EG_ElectronicDocOutgDocUnqID` | `EG_ElectronicDocOutgDocUnqID` |
-| `EG_ElectronicDocOutgRcvdDteTme` | `EG_ElectronicDocOutgRcvdDteTme` |
-| `EG_EDocOutgSubmsnUnqID` | `EG_EDocOutgSubmsnUnqID` |
-| `EG_EDocOutgCanclnAllwdDateTime` | `EG_EDocOutgCanclnAllwdDateTime` |
-| `EG_EDocOutgRjcnAllwdDateTime` | `EG_EDocOutgRjcnAllwdDateTime` |
-| `EG_EDocOutgCanclnRequestDteTme` | `EG_EDocOutgCanclnRequestDteTme` |
-| `EG_EDocOutgRejectionReqDateTme` | `EG_EDocOutgRejectionReqDateTme` |
-| `EG_EDocOutgCanclnReqDlydDteTme` | `EG_EDocOutgCanclnReqDlydDteTme` |
-| `EG_EDocOutgRjcnReqDlydDateTime` | `EG_EDocOutgRjcnReqDlydDateTime` |
-| `EG_EDocOutgDclnCanclnReqDteTme` | `EG_EDocOutgDclnCanclnReqDteTme` |
-| `EG_EDocOutgDclnRjcnReqDateTime` | `EG_EDocOutgDclnRjcnReqDateTime` |
-| `EG_ElectronicDocOutgDocumentID` | `EG_ElectronicDocOutgDocumentID` |
-| `EG_ElectronicDocOutgDocVersion` | `EG_ElectronicDocOutgDocVersion` |
-| `EG_EDocOutgIsCanclnAllwd` | `EG_EDocOutgIsCanclnAllwd` |
-| `EG_ElectronicDocOutgCanclnCode` | `EG_ElectronicDocOutgCanclnCode` |
-| `EG_ElectronicDocCanclnRsnDesc` | `EG_ElectronicDocCanclnRsnDesc` |
-| `EG_ElectronicDocCompanyCode` | `_ElectronicDoc.ElectronicDocCompanyCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `EG_ElectronicDocOutgDocUnqID` |  | |  |  |
+| `EG_ElectronicDocOutgRcvdDteTme` |  | |  |  |
+| `EG_EDocOutgSubmsnUnqID` |  | |  |  |
+| `EG_EDocOutgCanclnAllwdDateTime` |  | |  |  |
+| `EG_EDocOutgRjcnAllwdDateTime` |  | |  |  |
+| `EG_EDocOutgCanclnRequestDteTme` |  | |  |  |
+| `EG_EDocOutgRejectionReqDateTme` |  | |  |  |
+| `EG_EDocOutgCanclnReqDlydDteTme` |  | |  |  |
+| `EG_EDocOutgRjcnReqDlydDateTime` |  | |  |  |
+| `EG_EDocOutgDclnCanclnReqDteTme` |  | |  |  |
+| `EG_EDocOutgDclnRjcnReqDateTime` |  | |  |  |
+| `EG_ElectronicDocOutgDocumentID` |  | |  |  |
+| `EG_ElectronicDocOutgDocVersion` |  | |  |  |
+| `EG_EDocOutgIsCanclnAllwd` |  | |  |  |
+| `EG_ElectronicDocOutgCanclnCode` |  | |  |  |
+| `EG_ElectronicDocCanclnRsnDesc` |  | |  |  |
+| `EG_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |
 
 ## Associations
 

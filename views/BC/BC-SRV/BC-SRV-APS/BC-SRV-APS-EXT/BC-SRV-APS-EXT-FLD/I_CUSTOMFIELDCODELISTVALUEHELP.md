@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomFieldID` | `CustomFieldID` |
-| key `Code` | `Code` |
-| `Description` | `_CodeListDescription[1: Language = $session.system_language].Description` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomFieldID` | ✓ | |  |  |
+| `Code` | ✓ | |  |  |
+| `Description` |  | |  | `_CodeListDescription[1: Language = $session.system_language].Description` |
 
 ## Source Code
 

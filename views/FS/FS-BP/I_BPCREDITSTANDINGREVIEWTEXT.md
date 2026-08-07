@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tp12t.langu` |
-| key `BPCreditStandingReview` | `tp12t.kwg_cre` |
-| `BPCrdtStndgReviewDescription` | `tp12t.kwg_cre_t` |
-| `_BPCreditStandingReview` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `BPCreditStandingReview` | ✓ | |  | `kwg_cre` |
+| `BPCrdtStndgReviewDescription` |  | |  | `kwg_cre_t` |
+| `_BPCreditStandingReview` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

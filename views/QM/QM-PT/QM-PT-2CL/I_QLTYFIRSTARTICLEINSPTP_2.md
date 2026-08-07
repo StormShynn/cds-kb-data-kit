@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `QltyInProcmtIntID` | `QltyInProcmtIntID` |
-| key `QltyInProcmt1stArticleInsp` | `QltyInProcmt1stArticleInsp` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `InspLotUsageDecisionValuation` | `InspLotUsageDecisionValuation` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_QltyInProcurement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `QltyInProcmtIntID` | ✓ | |  |  |
+| `QltyInProcmt1stArticleInsp` | ✓ | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `InspLotUsageDecisionValuation` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_QltyInProcurement` | | ✓ | | |
 
 ## Source Code
 

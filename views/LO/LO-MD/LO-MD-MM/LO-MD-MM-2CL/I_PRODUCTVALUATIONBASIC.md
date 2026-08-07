@@ -29,55 +29,55 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Valuation.Product` |
-| key `ValuationArea` | `Valuation.ValuationArea` |
-| key `ValuationType` | `Valuation.ValuationType` |
-| `ValuationClass` | `Valuation.ValuationClass` |
-| `PriceDeterminationControl` | `Valuation.PriceDeterminationControl` |
-| `FiscalMonthCurrentPeriod` | `marv.lfmon` |
-| `FiscalYearCurrentPeriod` | `marv.lfgja` |
-| `StandardPrice` | `Valuation.StandardPrice` |
-| `PriceUnitQty` | `Valuation.PriceUnitQty` |
-| `InventoryValuationProcedure` | `Valuation.InventoryValuationProcedure` |
-| `FuturePriceValidityStartDate` | `Valuation.FuturePriceValidityStartDate` |
-| `PrevInvtryPriceInCoCodeCrcy` | `Valuation.PrevInvtryPriceInCoCodeCrcy` |
-| `MovingAveragePrice` | `Valuation.MovingAveragePrice` |
-| `ValuationCategory` | `Valuation.ValuationCategory` |
-| `ProductUsageType` | `Valuation.ProductUsageType` |
-| `ProductOriginType` | `Valuation.ProductOriginType` |
-| `IsProducedInhouse` | `Valuation.IsProducedInhouse` |
-| `ProdCostEstNumber` | `Valuation.ProdCostEstNumber` |
-| `IsMarkedForDeletion` | `Valuation.IsMarkedForDeletion` |
-| `ValuationMargin` | `Valuation.ValuationMargin` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `CompanyCode` | `t001k.bukrs` |
-| `ValuationClassSalesOrderStock` | `Valuation.ValuationClassSalesOrderStock` |
-| `ProjectStockValuationClass` | `Valuation.ProjectStockValuationClass` |
-| `TaxBasedPricesPriceUnitQty` | `Valuation.TaxBasedPricesPriceUnitQty` |
-| `PriceLastChangeDate` | `Valuation.PriceLastChangeDate` |
-| `FuturePrice` | `Valuation.FuturePrice` |
-| `MaintenanceStatus` | `Valuation.MaintenanceStatus` |
-| `Currency` | `t001.waers` |
-| `BaseUnit` | `_Product.BaseUnit` |
-| `MLIsActiveAtProductLevel` | `Valuation.MLIsActiveAtProductLevel` |
-| `_Product` | *Association* |
-| `_ValuationClass` | *Association* |
-| `_ValnClassSalesOrderStock` | *Association* |
-| `_ValnClassProjectStock` | *Association* |
-| `_InventoryValnProcedure` | *Association* |
-| `_PriceDeterminationControl` | *Association* |
-| `_BR_MaterialUsage` | *Association* |
-| `_BR_MaterialOrigin` | *Association* |
-| `_InventoryValuationType` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_BaseUnitOfMeasureText` | *Association* |
-| `_ProductDescription_2` | *Association* |
-| `_Currency` | *Association* |
-| `_CurrencyText` | *Association* |
-| `_PriceDeterminationControlText` | *Association* |
-| `_InventoryValnProcedureText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `ValuationType` | ✓ | |  |  |
+| `ValuationClass` |  | |  |  |
+| `PriceDeterminationControl` |  | |  |  |
+| `FiscalMonthCurrentPeriod` |  | |  | `lfmon` |
+| `FiscalYearCurrentPeriod` |  | |  | `lfgja` |
+| `StandardPrice` |  | |  |  |
+| `PriceUnitQty` |  | |  |  |
+| `InventoryValuationProcedure` |  | |  |  |
+| `FuturePriceValidityStartDate` |  | |  |  |
+| `PrevInvtryPriceInCoCodeCrcy` |  | |  |  |
+| `MovingAveragePrice` |  | |  |  |
+| `ValuationCategory` |  | |  |  |
+| `ProductUsageType` |  | |  |  |
+| `ProductOriginType` |  | |  |  |
+| `IsProducedInhouse` |  | |  |  |
+| `ProdCostEstNumber` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `ValuationMargin` |  | |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `ValuationClassSalesOrderStock` |  | |  |  |
+| `ProjectStockValuationClass` |  | |  |  |
+| `TaxBasedPricesPriceUnitQty` |  | |  |  |
+| `PriceLastChangeDate` |  | |  |  |
+| `FuturePrice` |  | |  |  |
+| `MaintenanceStatus` |  | |  |  |
+| `Currency` |  | |  | `waers` |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |
+| `MLIsActiveAtProductLevel` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ValuationClass` | | ✓ | | |
+| `_ValnClassSalesOrderStock` | | ✓ | | |
+| `_ValnClassProjectStock` | | ✓ | | |
+| `_InventoryValnProcedure` | | ✓ | | |
+| `_PriceDeterminationControl` | | ✓ | | |
+| `_BR_MaterialUsage` | | ✓ | | |
+| `_BR_MaterialOrigin` | | ✓ | | |
+| `_InventoryValuationType` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | |
+| `_ProductDescription_2` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
+| `_PriceDeterminationControlText` | | ✓ | | |
+| `_InventoryValnProcedureText` | | ✓ | | |
 
 ## Associations
 

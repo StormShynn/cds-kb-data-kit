@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope2ContractualInstrument` | `sufndd_ghg_s2ci.code` |
-| `_Text` | *Association* |
-| `_GHGScope` | *Association* |
-| `_GHGScp2CalcMethod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope2ContractualInstrument` | ✓ | |  | `code` |
+| `_Text` | | ✓ | | |
+| `_GHGScope` | | ✓ | | |
+| `_GHGScp2CalcMethod` | | ✓ | | |
 
 ## Associations
 

@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProdCmplncLogsDocument` | `ehfnd_log_doc_number_nc` |
-| `DangerousGoodsEUADRPointText` | `dangerousgoodseuadrpointtext` |
-| `DngrsGdsEUADRQtyExmpIsAllowed` | `dngrsgdseuadrqtyexmpisallowed` |
-| `DngrsGdsEUADRQtyExmpIsApplbl` | `dngrsgdseuadrqtyexmpisapplbl` |
-| `DangerousGoodsRIDPointText` | `dangerousgoodsridpointtext` |
-| `DngrsGdsRIDQtyExmpIsAllowed` | `dngrsgdsridqtyexmpisallowed` |
-| `DngrsGdsRIDExmpIsApplicable` | `dngrsgdsridexmpisapplicable` |
-| `D_CalctDngrsGoodsPointsItemR` | `_Item : composition[0..*] of D_CalctDngrsGoodsPointsItemR` |
-| `D_CalctDngrsGdsPtsCategoryR` | `_Category : composition[0..*] of D_CalctDngrsGdsPtsCategoryR` |
-| `D_DaGdsClfnClctDaGdsPtsPaInsnR` | `_PackingInstruction : composition[0..*] of D_DaGdsClfnClctDaGdsPtsPaInsnR` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocument` |  | |  | `ehfnd_log_doc_number_nc` |
+| `DangerousGoodsEUADRPointText` |  | |  | `dangerousgoodseuadrpointtext` |
+| `DngrsGdsEUADRQtyExmpIsAllowed` |  | |  | `dngrsgdseuadrqtyexmpisallowed` |
+| `DngrsGdsEUADRQtyExmpIsApplbl` |  | |  | `dngrsgdseuadrqtyexmpisapplbl` |
+| `DangerousGoodsRIDPointText` |  | |  | `dangerousgoodsridpointtext` |
+| `DngrsGdsRIDQtyExmpIsAllowed` |  | |  | `dngrsgdsridqtyexmpisallowed` |
+| `DngrsGdsRIDExmpIsApplicable` |  | |  | `dngrsgdsridexmpisapplicable` |
+| `D_CalctDngrsGoodsPointsItemR` |  | |  | `_Item : composition[0..*] of D_CalctDngrsGoodsPointsItemR` |
+| `D_CalctDngrsGdsPtsCategoryR` |  | |  | `_Category : composition[0..*] of D_CalctDngrsGdsPtsCategoryR` |
+| `D_DaGdsClfnClctDaGdsPtsPaInsnR` |  | |  | `_PackingInstruction : composition[0..*] of D_DaGdsClfnClctDaGdsPtsPaInsnR` |
 
 ## Source Code
 

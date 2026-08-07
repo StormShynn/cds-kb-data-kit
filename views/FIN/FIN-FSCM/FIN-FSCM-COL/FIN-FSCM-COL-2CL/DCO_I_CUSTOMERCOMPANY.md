@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `customer` |
-| key `CompanyCode` | `company_code` |
-| key `LogicalSystem` | `logical_system` |
-| `IsBusinessPurposeCompleted` | `purpose_is_completed` |
-| `AccountingClerk` | `accounting_clerk` |
-| `AccountByCustomer` | `account_at_customer` |
-| `CustomerHeadOffice` | `head_office` |
-| `AccountingClerkInternetAddress` | `internet_address` |
-| `DunningClerk` | `dunning_clerk` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `customer` |
+| `CompanyCode` | ✓ | |  | `company_code` |
+| `LogicalSystem` | ✓ | |  | `logical_system` |
+| `IsBusinessPurposeCompleted` |  | |  | `purpose_is_completed` |
+| `AccountingClerk` |  | |  | `accounting_clerk` |
+| `AccountByCustomer` |  | |  | `account_at_customer` |
+| `CustomerHeadOffice` |  | |  | `head_office` |
+| `AccountingClerkInternetAddress` |  | |  | `internet_address` |
+| `DunningClerk` |  | |  | `dunning_clerk` |
 
 ## Source Code
 

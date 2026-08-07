@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `DocumentInfoRecordDocType` | `: #('ASSOCIATED_TEXT_UI_HIDDEN') key document.DocumentInfoRecordDocType` |
-| key `DocumentInfoRecordDocNumber` | `document.DocumentInfoRecordDocNumber` |
-| `DocumentInfoRecordDocVersion` | `}] key document.DocumentInfoRecordDocVersion` |
-| `DocumentInfoRecordDocPart` | `}] key document.DocumentInfoRecordDocPart` |
-| key `ResponsiblePersonName` | `document.ResponsiblePersonName` |
-| `FirstName` | `UserDetail.name_first` |
-| `LastName` | `UserDetail.name_last` |
-| `ResponsiblePersonFullName` | `RespUser.UserDescription` |
-| `LastChangedByUser` | `document.LastChangedByUser` |
-| `LastChangedByUserFullName` | `ChangedUser.UserDescription` |
-| `PersonNumber` | `RespUser.AddressPersonID` |
-| `_DocTypeText` | *Association* |
-| `_DocType` | *Association* |
-| `_DocNumber` | *Association* |
-| `_DocVersion` | *Association* |
-| `_DocPart` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` |  | |  | `: #('ASSOCIATED_TEXT_UI_HIDDEN') key document.DocumentInfoRecordDocType` |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
+| `DocumentInfoRecordDocVersion` |  | |  | `}] key document.DocumentInfoRecordDocVersion` |
+| `DocumentInfoRecordDocPart` |  | |  | `}] key document.DocumentInfoRecordDocPart` |
+| `ResponsiblePersonName` | ✓ | |  |  |
+| `FirstName` |  | |  | `name_first` |
+| `LastName` |  | |  | `name_last` |
+| `ResponsiblePersonFullName` |  | |  | `UserDescription` |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangedByUserFullName` |  | |  | `UserDescription` |
+| `PersonNumber` |  | |  | `AddressPersonID` |
+| `_DocTypeText` | | ✓ | | |
+| `_DocType` | | ✓ | | |
+| `_DocNumber` | | ✓ | | |
+| `_DocVersion` | | ✓ | | |
+| `_DocPart` | | ✓ | | |
 
 ## Associations
 

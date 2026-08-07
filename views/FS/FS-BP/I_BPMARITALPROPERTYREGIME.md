@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPMaritalPropertyRegime` | `tp04.proprty_st` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPMaritalPropertyRegime` | ✓ | |  | `proprty_st` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WarrantyType` | `gaart` |
-| key `Language` | `langu` |
-| `WarrantyTypeName` | `ktext` |
-| `_WarrantyType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WarrantyType` | ✓ | |  | `gaart` |
+| `Language` | ✓ | |  | `langu` |
+| `WarrantyTypeName` |  | |  | `ktext` |
+| `_WarrantyType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

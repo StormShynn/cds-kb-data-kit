@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| key `SupplierInvoice` | `SupplierInvoice` |
-| key `FiscalYear` | `FiscalYear` |
-| key `SupplierInvoiceItem` | `SupplierInvoiceItem` |
-| `_SupCsgnmtPplineWthdrwlAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |
+| `_SupCsgnmtPplineWthdrwlAPI01` | | ✓ | | |
 
 ## Associations
 

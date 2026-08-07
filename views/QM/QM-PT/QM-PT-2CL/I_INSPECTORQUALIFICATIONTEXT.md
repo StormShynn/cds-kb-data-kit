@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectorQualification` | `tq11t.prfql` |
-| key `Language` | `tq11t.sprsl` |
-| `InspectorQualificationText` | `tq11t.pqtxt` |
-| `_Language` | *Association* |
-| `_InspectorQualification` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectorQualification` | ✓ | |  | `prfql` |
+| `Language` | ✓ | |  | `sprsl` |
+| `InspectorQualificationText` |  | |  | `pqtxt` |
+| `_Language` | | ✓ | | |
+| `_InspectorQualification` | | ✓ | | |
 
 ## Associations
 

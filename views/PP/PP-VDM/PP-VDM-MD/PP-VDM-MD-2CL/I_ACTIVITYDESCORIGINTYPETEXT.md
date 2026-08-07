@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ActivityDescOriginType` | `cast(substring(t.domvalue_l, 1, 1) as pph_actxy preserving type)` |
-| key `Language` | `t.ddlanguage` |
-| `ActivityDescOriginTypeName` | `t.ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ActivityDescOriginType` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as pph_actxy preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ActivityDescOriginTypeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

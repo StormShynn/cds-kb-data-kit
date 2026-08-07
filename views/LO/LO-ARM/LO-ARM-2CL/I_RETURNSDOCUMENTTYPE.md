@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReturnsDocumentType` | `cast( substring(dd07l.domvalue_l, 1, 2) as msr_doc_type)` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReturnsDocumentType` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 2) as msr_doc_type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

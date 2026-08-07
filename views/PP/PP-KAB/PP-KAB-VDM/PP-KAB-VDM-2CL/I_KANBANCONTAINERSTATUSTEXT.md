@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanContainerStatus` | `pkbst` |
-| key `Language` | `spras` |
-| `KnbnCtnStatusText` | `cast(bhskt as bhskt_6)` |
-| `KnbnCtnStatusText_2` | `cast(bhskt as pk_ctn_status_text)` |
-| `_KanbanContainerStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanContainerStatus` | ✓ | |  | `pkbst` |
+| `Language` | ✓ | |  | `spras` |
+| `KnbnCtnStatusText` |  | |  | `cast(bhskt as bhskt_6)` |
+| `KnbnCtnStatusText_2` |  | |  | `cast(bhskt as pk_ctn_status_text)` |
+| `_KanbanContainerStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

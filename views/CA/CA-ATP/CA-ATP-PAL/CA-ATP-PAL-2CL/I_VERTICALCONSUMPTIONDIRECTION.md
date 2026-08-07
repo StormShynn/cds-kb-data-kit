@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VerticalConsumptionDirection` | `cast ( substring( domvalue_l, 1, 2 ) as verticalconsumptiondirection preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VerticalConsumptionDirection` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as verticalconsumptiondirection preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

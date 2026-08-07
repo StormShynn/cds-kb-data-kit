@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintNotifDetectionCode` | `eam_dtctncode_t.detectioncode` |
-| key `Language` | `language` |
-| `MaintNotifDetectionCodeText` | `eam_dtctncode_t.detectioncodetext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintNotifDetectionCode` | ✓ | |  | `detectioncode` |
+| `Language` | ✓ | |  | `language` |
+| `MaintNotifDetectionCodeText` |  | |  | `detectioncodetext` |
 
 ## Source Code
 

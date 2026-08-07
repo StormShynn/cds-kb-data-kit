@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ContractAccount` | `vkont_kk` |
-| `D_CABillgDocCreatedSourceTrans` | `_SourceTransaction : composition [0..*] of D_CABillgDocCreatedSourceTrans` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccount` |  | |  | `vkont_kk` |
+| `D_CABillgDocCreatedSourceTrans` |  | |  | `_SourceTransaction : composition [0..*] of D_CABillgDocCreatedSourceTrans` |
 
 ## Source Code
 

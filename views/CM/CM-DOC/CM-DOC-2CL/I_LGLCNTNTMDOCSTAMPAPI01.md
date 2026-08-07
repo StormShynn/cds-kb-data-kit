@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDocumentStamp` | `LglCntntMDocumentStamp` |
-| `_LglCntntMDocStampTextAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocumentStamp` | ✓ | |  |  |
+| `_LglCntntMDocStampTextAPI01` | | ✓ | | |
 
 ## Associations
 

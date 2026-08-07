@@ -25,14 +25,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CompanyCode` | `bukrs` |
-| `AccountingDocument` | `farp_belnr_d` |
-| `FiscalYear` | `gjahr` |
-| `AccountingDocumentItem` | `farp_buzei` |
-| `LogicalSystem` | `logsys` |
-| `_ChildToParent` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` |  | |  | `bukrs` |
+| `AccountingDocument` |  | |  | `farp_belnr_d` |
+| `FiscalYear` |  | |  | `gjahr` |
+| `AccountingDocumentItem` |  | |  | `farp_buzei` |
+| `LogicalSystem` |  | |  | `logsys` |
+| `_ChildToParent` | | ✓ | | |
 
 ## Source Code
 

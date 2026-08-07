@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LogisticsExecutionScenario` | `cast( dd07l.domvalue_l as /spe/le_scenario)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LogisticsExecutionScenario` | ✓ | |  | `cast( dd07l.domvalue_l as /spe/le_scenario)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

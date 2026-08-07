@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyNodeText.Language` |
-| key `CnsldtnBusinessAreaHierarchy` | `cast(_HierarchyNodeText.UniversalHierHierarchyID as fincs_businessareahierarchy preserving type )` |
-| key `HierarchyNode` | `_HierarchyNodeText.HierarchyNode` |
-| key `ValidityEndDate` | `_HierarchyNodeText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyNodeText.ValidityStartDate` |
-| `HierarchyNodeText` | `_HierarchyNodeText.HierarchyNodeText` |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
+| `CnsldtnBusinessAreaHierarchy` | ✓ | |  | `cast(_HierarchyNodeText.UniversalHierHierarchyID as fincs_businessareahierarchy preserving type )` |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

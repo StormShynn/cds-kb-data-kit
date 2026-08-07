@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LedgerGroup` | `ldgrp` |
-| key `Language` | `langu` |
-| `LedgerGroupName` | `name` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LedgerGroup` | ✓ | |  | `ldgrp` |
+| `Language` | ✓ | |  | `langu` |
+| `LedgerGroupName` |  | |  | `name` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

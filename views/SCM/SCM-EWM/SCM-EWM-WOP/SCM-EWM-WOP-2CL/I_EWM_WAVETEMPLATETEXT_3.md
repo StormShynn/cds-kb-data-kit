@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `EWMWarehouse` | `lgnum` |
-| key `EWMWaveTemplate` | `cast( tmplt as ewm_de_wavetemplate )` |
-| `EWMWaveTemplateName` | `text` |
-| `_Warehouse` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `EWMWarehouse` | ✓ | |  | `lgnum` |
+| `EWMWaveTemplate` | ✓ | |  | `cast( tmplt as ewm_de_wavetemplate )` |
+| `EWMWaveTemplateName` |  | |  | `text` |
+| `_Warehouse` | | ✓ | | |
 
 ## Associations
 

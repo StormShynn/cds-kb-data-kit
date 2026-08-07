@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VolatilityType` | `cast(atvo1.volart as tb_volart)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VolatilityType` | ✓ | |  | `cast(atvo1.volart as tb_volart)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

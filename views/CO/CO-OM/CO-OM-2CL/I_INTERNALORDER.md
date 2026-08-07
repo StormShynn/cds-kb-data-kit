@@ -27,136 +27,136 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternalOrder` | `cast( aufnr as fins_int_aufnr preserving type )` |
-| `InternalOrderDescription` | `cast(ktext as fis_internalorder_text)` |
-| `OrderCategory` | `autyp` |
-| `BusinessArea` | `cast(gsber as fis_rbusa)` |
-| `ControllingArea` | `cast(kokrs as fis_kokrs preserving type )` |
-| `Plant` | `werks` |
-| `Currency` | `waers` |
-| `IsStatisticalOrder` | `cast (astkz as fins_co_xaufnr_stat preserving type )` |
-| `ReferenceOrder` | `cast(refnr as fis_aufrefnr preserving type )` |
-| `SalesOrder` | `kdauf` |
-| `SalesOrderItem` | `kdpos` |
-| `WBSElement` | `pspel` |
-| `WBSElementInternalID` | `cast ( pspel as ps_s4_pspnr preserving type )` |
-| `RequestingCostCenter` | `akstl` |
-| `RequestingCompanyCode` | `abukr` |
-| `RequestingOrder` | `anfaufnr` |
-| `InternalOrderLocation` | `cast( stort as fco_io_aufstort preserving type )` |
-| `LocationPlant` | `sowrk` |
-| `ExternalOrder` | `aufex` |
-| `ActualPostedCostCenter` | `cast( cycle as fins_st_kostl preserving type )` |
-| `PlanningWithLineItemsIsActive` | `plgkz` |
-| `CostCenter` | `cast(kostl as fis_kostl preserving type )` |
-| `LogicalSystem` | `logsystem` |
-| `OrdIsUsedInIntegratedPlanning` | `cast(plint as fco_plint preserving type )` |
-| `TaxJurisdiction` | `cast ( txjcd as fis_txjcd preserving type )` |
-| `ResultAnalysisInternalID` | `cast(abgsl as fco_abgr_schl preserving type )` |
-| `ConditionUsage` | `kvewe` |
-| `ConditionApplication` | `kappl` |
-| `CostingSheet` | `kalsm` |
-| `OverheadCode` | `cast(zschl as fco_aufzschl preserving type )` |
-| `OrderInterestCalcProfile` | `cast(zschm as fco_io_ps_zschm preserving type )` |
-| `IntOrderSettlementCostElement` | `cast(kstar as fco_aufkstar preserving type )` |
-| `BasicSettlementGLAccount` | `saknr` |
-| `IntOrderIndividualField1Value` | `user0` |
-| `IntOrderIndividualField2Value` | `user1` |
-| `IntOrderIndividualField3Value` | `user2` |
-| `IntOrderIndividualField4Value` | `user3` |
-| `IntOrderIndividualField5Amount` | `user4` |
-| `IntOrderIndividualField6Date` | `user5` |
-| `IntOrderIndividualField7Value` | `user6` |
-| `IntOrderIndividualField8Date` | `user7` |
-| `IntOrderIndividualField9Date` | `user8` |
-| `IntOrderIndividualField10Value` | `user9` |
-| `OrderProcessingGroup` | `cast(abkrs as fco_aufabkrs preserving type )` |
-| `InvestmentProfile` | `cast(ivpro as fco_im_profil preserving type )` |
-| `InvestmentScale` | `cast(sizecl as fco_im_sizecl preserving type )` |
-| `InvestmentReason` | `izwek` |
-| `EnvironmentalInvestmentReason` | `umwkz` |
-| `JointVenture` | `vname` |
-| `JointVentureRecoveryCode` | `recid` |
-| `JointVentureEquityType` | `etype` |
-| `JointVentureOriginalCostObject` | `jv_oco` |
-| `JointVentureObjectType` | `otype` |
-| `JointVentureClass` | `jv_jibcl` |
-| `JointVentureSubClass` | `jv_jibsa` |
-| `IsDeleted` | `loekz` |
-| `CreationDate` | `erdat` |
-| `CreationTime` | `erfzeit` |
-| `CreatedByUser` | `cast(ernam as fin_usnam preserving type )` |
-| `LastChangedByUser` | `aenam` |
-| `LastChangeDate` | `aedat` |
-| `LastChangeTime` | `aezeit` |
-| `ControllingObject` | `objnr` |
-| `CompanyCode` | `cast(bukrs as fis_bukrs preserving type )` |
-| `ProfitCenter` | `}] cast(prctr as fis_prctr)` |
-| `FunctionalArea` | `cast(func_area as fm_farea)` |
-| `ControllingObjectClass` | `cast(scope as fis_scope_cv_conv)` |
-| `OrderType` | `auart` |
-| `ResponsibleCostCenter` | `}] cast( kostv as fin_io_aufkostv preserving type )` |
-| `InternalOrderResponsibleUser` | `cast( veraa_user as fco_veraa_user preserving type )` |
-| `IntOrderPlannedReleaseDate` | `pdat1` |
-| `IntOrderPlannedCompletionDate` | `pdat2` |
-| `IntOrderPlannedClosingDate` | `pdat3` |
-| `InternalOrderReleaseDate` | `idat1` |
-| `InternalOrderCompletionDate` | `idat2` |
-| `InternalOrderClosingDate` | `idat3` |
-| `CostCollector` | `cckey` |
-| `_ControllingAreaText` | *Association* |
-| `_InternalOrderTypeText` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_FunctionalArea` | *Association* |
-| `_ControllingObjectClass` | *Association* |
-| `_InternalOrderType` | *Association* |
-| `_CostCenter` | *Association* |
-| `_SystemStatus` | *Association* |
-| `_CurProfitCenterText` | *Association* |
-| `_Plant` | *Association* |
-| `_User` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_Currency` | *Association* |
-| `_OrderCategory` | *Association* |
-| `_CurRespCostCenterText` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_RequestingCostCenter` | *Association* |
-| `_CurRequestingCostCenterText` | *Association* |
-| `_RequestingCompanyCode` | *Association* |
-| `_RequestingOrder` | *Association* |
-| `_Location` | *Association* |
-| `_LocationPlant` | *Association* |
-| `_ActualPostedCostCenter` | *Association* |
-| `_CurActualPostedCostCenterText` | *Association* |
-| `_CostCenterData` | *Association* |
-| `_CurCostCenterDataText` | *Association* |
-| `_LogicalSystem` | *Association* |
-| `_ConditionUsage` | *Association* |
-| `_ConditionApplication` | *Association* |
-| `_CostingSheetProcedure` | *Association* |
-| `_IntOrderSettlementCostElement` | *Association* |
-| `_BasicSettlementGLAccount` | *Association* |
-| `_OrderProcessingGroup` | *Association* |
-| `_InvestmentProfile` | *Association* |
-| `_InvestmentReason` | *Association* |
-| `_EnvrnmtlInvestmentReason` | *Association* |
-| `_JointVentureMaster` | *Association* |
-| `_JointVentureRecovery` | *Association* |
-| `_JntVntrEquityTypeMaster` | *Association* |
-| `_JntVntrCostCtrType` | *Association* |
-| `_JntIntrstBillgClass` | *Association* |
-| `_JntIntrstBillgSubclass` | *Association* |
-| `_ResponsibleUser` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_ResultsAnalysisKey` | *Association* |
-| `_InvestmentObjectScale` | *Association* |
-| `_IntOrderActiveSystemStatus` | *Association* |
-| `_IntOrderActiveUserStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternalOrder` | ✓ | |  | `cast( aufnr as fins_int_aufnr preserving type )` |
+| `InternalOrderDescription` |  | |  | `cast(ktext as fis_internalorder_text)` |
+| `OrderCategory` |  | |  | `autyp` |
+| `BusinessArea` |  | |  | `cast(gsber as fis_rbusa)` |
+| `ControllingArea` |  | |  | `cast(kokrs as fis_kokrs preserving type )` |
+| `Plant` |  | |  | `werks` |
+| `Currency` |  | |  | `waers` |
+| `IsStatisticalOrder` |  | |  | `cast (astkz as fins_co_xaufnr_stat preserving type )` |
+| `ReferenceOrder` |  | |  | `cast(refnr as fis_aufrefnr preserving type )` |
+| `SalesOrder` |  | |  | `kdauf` |
+| `SalesOrderItem` |  | |  | `kdpos` |
+| `WBSElement` |  | |  | `pspel` |
+| `WBSElementInternalID` |  | |  | `cast ( pspel as ps_s4_pspnr preserving type )` |
+| `RequestingCostCenter` |  | |  | `akstl` |
+| `RequestingCompanyCode` |  | |  | `abukr` |
+| `RequestingOrder` |  | |  | `anfaufnr` |
+| `InternalOrderLocation` |  | |  | `cast( stort as fco_io_aufstort preserving type )` |
+| `LocationPlant` |  | |  | `sowrk` |
+| `ExternalOrder` |  | |  | `aufex` |
+| `ActualPostedCostCenter` |  | |  | `cast( cycle as fins_st_kostl preserving type )` |
+| `PlanningWithLineItemsIsActive` |  | |  | `plgkz` |
+| `CostCenter` |  | |  | `cast(kostl as fis_kostl preserving type )` |
+| `LogicalSystem` |  | |  | `logsystem` |
+| `OrdIsUsedInIntegratedPlanning` |  | |  | `cast(plint as fco_plint preserving type )` |
+| `TaxJurisdiction` |  | |  | `cast ( txjcd as fis_txjcd preserving type )` |
+| `ResultAnalysisInternalID` |  | |  | `cast(abgsl as fco_abgr_schl preserving type )` |
+| `ConditionUsage` |  | |  | `kvewe` |
+| `ConditionApplication` |  | |  | `kappl` |
+| `CostingSheet` |  | |  | `kalsm` |
+| `OverheadCode` |  | |  | `cast(zschl as fco_aufzschl preserving type )` |
+| `OrderInterestCalcProfile` |  | |  | `cast(zschm as fco_io_ps_zschm preserving type )` |
+| `IntOrderSettlementCostElement` |  | |  | `cast(kstar as fco_aufkstar preserving type )` |
+| `BasicSettlementGLAccount` |  | |  | `saknr` |
+| `IntOrderIndividualField1Value` |  | |  | `user0` |
+| `IntOrderIndividualField2Value` |  | |  | `user1` |
+| `IntOrderIndividualField3Value` |  | |  | `user2` |
+| `IntOrderIndividualField4Value` |  | |  | `user3` |
+| `IntOrderIndividualField5Amount` |  | |  | `user4` |
+| `IntOrderIndividualField6Date` |  | |  | `user5` |
+| `IntOrderIndividualField7Value` |  | |  | `user6` |
+| `IntOrderIndividualField8Date` |  | |  | `user7` |
+| `IntOrderIndividualField9Date` |  | |  | `user8` |
+| `IntOrderIndividualField10Value` |  | |  | `user9` |
+| `OrderProcessingGroup` |  | |  | `cast(abkrs as fco_aufabkrs preserving type )` |
+| `InvestmentProfile` |  | |  | `cast(ivpro as fco_im_profil preserving type )` |
+| `InvestmentScale` |  | |  | `cast(sizecl as fco_im_sizecl preserving type )` |
+| `InvestmentReason` |  | |  | `izwek` |
+| `EnvironmentalInvestmentReason` |  | |  | `umwkz` |
+| `JointVenture` |  | |  | `vname` |
+| `JointVentureRecoveryCode` |  | |  | `recid` |
+| `JointVentureEquityType` |  | |  | `etype` |
+| `JointVentureOriginalCostObject` |  | |  | `jv_oco` |
+| `JointVentureObjectType` |  | |  | `otype` |
+| `JointVentureClass` |  | |  | `jv_jibcl` |
+| `JointVentureSubClass` |  | |  | `jv_jibsa` |
+| `IsDeleted` |  | |  | `loekz` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreationTime` |  | |  | `erfzeit` |
+| `CreatedByUser` |  | |  | `cast(ernam as fin_usnam preserving type )` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `LastChangeTime` |  | |  | `aezeit` |
+| `ControllingObject` |  | |  | `objnr` |
+| `CompanyCode` |  | |  | `cast(bukrs as fis_bukrs preserving type )` |
+| `ProfitCenter` |  | |  | `}] cast(prctr as fis_prctr)` |
+| `FunctionalArea` |  | |  | `cast(func_area as fm_farea)` |
+| `ControllingObjectClass` |  | |  | `cast(scope as fis_scope_cv_conv)` |
+| `OrderType` |  | |  | `auart` |
+| `ResponsibleCostCenter` |  | |  | `}] cast( kostv as fin_io_aufkostv preserving type )` |
+| `InternalOrderResponsibleUser` |  | |  | `cast( veraa_user as fco_veraa_user preserving type )` |
+| `IntOrderPlannedReleaseDate` |  | |  | `pdat1` |
+| `IntOrderPlannedCompletionDate` |  | |  | `pdat2` |
+| `IntOrderPlannedClosingDate` |  | |  | `pdat3` |
+| `InternalOrderReleaseDate` |  | |  | `idat1` |
+| `InternalOrderCompletionDate` |  | |  | `idat2` |
+| `InternalOrderClosingDate` |  | |  | `idat3` |
+| `CostCollector` |  | |  | `cckey` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_InternalOrderTypeText` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
+| `_ControllingObjectClass` | | ✓ | | |
+| `_InternalOrderType` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_SystemStatus` | | ✓ | | |
+| `_CurProfitCenterText` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_User` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_OrderCategory` | | ✓ | | |
+| `_CurRespCostCenterText` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_RequestingCostCenter` | | ✓ | | |
+| `_CurRequestingCostCenterText` | | ✓ | | |
+| `_RequestingCompanyCode` | | ✓ | | |
+| `_RequestingOrder` | | ✓ | | |
+| `_Location` | | ✓ | | |
+| `_LocationPlant` | | ✓ | | |
+| `_ActualPostedCostCenter` | | ✓ | | |
+| `_CurActualPostedCostCenterText` | | ✓ | | |
+| `_CostCenterData` | | ✓ | | |
+| `_CurCostCenterDataText` | | ✓ | | |
+| `_LogicalSystem` | | ✓ | | |
+| `_ConditionUsage` | | ✓ | | |
+| `_ConditionApplication` | | ✓ | | |
+| `_CostingSheetProcedure` | | ✓ | | |
+| `_IntOrderSettlementCostElement` | | ✓ | | |
+| `_BasicSettlementGLAccount` | | ✓ | | |
+| `_OrderProcessingGroup` | | ✓ | | |
+| `_InvestmentProfile` | | ✓ | | |
+| `_InvestmentReason` | | ✓ | | |
+| `_EnvrnmtlInvestmentReason` | | ✓ | | |
+| `_JointVentureMaster` | | ✓ | | |
+| `_JointVentureRecovery` | | ✓ | | |
+| `_JntVntrEquityTypeMaster` | | ✓ | | |
+| `_JntVntrCostCtrType` | | ✓ | | |
+| `_JntIntrstBillgClass` | | ✓ | | |
+| `_JntIntrstBillgSubclass` | | ✓ | | |
+| `_ResponsibleUser` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_ResultsAnalysisKey` | | ✓ | | |
+| `_InvestmentObjectScale` | | ✓ | | |
+| `_IntOrderActiveSystemStatus` | | ✓ | | |
+| `_IntOrderActiveUserStatus` | | ✓ | | |
 
 ## Associations
 

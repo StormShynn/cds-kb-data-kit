@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `t001z.bukrs` |
-| key `CompanyCodeParameterType` | `t001z.party` |
-| `CompanyCodeParameterValue` | `t001z.paval` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CompanyCodeParameterType` | ✓ | |  | `party` |
+| `CompanyCodeParameterValue` |  | |  | `paval` |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

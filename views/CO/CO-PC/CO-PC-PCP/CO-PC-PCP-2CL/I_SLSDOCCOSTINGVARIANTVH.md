@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingVariant` | `CostingVariant` |
-| `CostingVariantName` | `CostingVariantName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingVariant` | ✓ | |  |  |
+| `CostingVariantName` |  | |  |  |
 
 ## Source Code
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnCategory` | `_tfk8210.bipcat` |
-| `CABillgPlnIsNotEditable` | `_tfk8210.xnoedit` |
-| `_CABillgPlnCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnCategory` | ✓ | | `_tfk8210` | `bipcat` |
+| `CABillgPlnIsNotEditable` |  | | `_tfk8210` | `xnoedit` |
+| `_CABillgPlnCategoryText` | | ✓ | | |
 
 ## Associations
 

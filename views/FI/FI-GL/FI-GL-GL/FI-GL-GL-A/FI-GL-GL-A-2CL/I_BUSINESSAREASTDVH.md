@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessArea` | `BusinessArea` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessArea` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

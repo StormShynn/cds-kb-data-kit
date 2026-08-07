@@ -32,40 +32,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PhysicalInventoryDocument` | `, additionalBinding: [{ localElement: 'FiscalYear', element: 'FiscalYear'}], useAsTemplate: true } ] } key PhysicalInventoryDocument` |
-| `FiscalYear` | `, useAsTemplate: true } ] } key FiscalYear` |
-| `InventoryTransactionType` | `, useAsTemplate: true } ] } InventoryTransactionType` |
-| `Plant` | `, useAsTemplate: true } ] } Plant` |
-| `StorageLocation` | `, additionalBinding: [{ localElement: 'Plant', element: 'Plant'}], useAsTemplate: true } ] } StorageLocation` |
-| `InventorySpecialStockType` | `, useAsTemplate: true } ] } InventorySpecialStockType` |
-| `DocumentDate` | `DocumentDate` |
-| `PhysInventoryPlannedCountDate` | `PhysInventoryPlannedCountDate` |
-| `PhysicalInventoryLastCountDate` | `PhysicalInventoryLastCountDate` |
-| `PostingDate` | `PostingDate` |
-| `PostingFiscalPeriod` | `PostingFiscalPeriod` |
-| `CreatedByUserName` | `CreatedByUserName` |
-| `PostingIsBlockedForPhysInvtry` | `PostingIsBlockedForPhysInvtry` |
-| `PhysicalInventoryCountStatus` | `, useAsTemplate: true } ] } PhysicalInventoryCountStatus` |
-| `PhysInvtryAdjustmentPostingSts` | `, useAsTemplate: true } ] } PhysInvtryAdjustmentPostingSts` |
-| `PhysInventoryReferenceNumber` | `PhysInventoryReferenceNumber` |
-| `PhysInvtryDeletionStatus` | `, useAsTemplate: true } ] } PhysInvtryDeletionStatus` |
-| `PhysInvtryDocHasQtySnapshot` | `PhysInvtryDocHasQtySnapshot` |
-| `PhysicalInventoryGroupType` | `, useAsTemplate: true } ] } PhysicalInventoryGroupType` |
-| `PhysicalInventoryGroup` | `PhysicalInventoryGroup` |
-| `PhysicalInventoryNumber` | `PhysicalInventoryNumber` |
-| `PhysicalInventoryDocumentDesc` | `PhysicalInventoryDocumentDesc` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `SalesPriceValuationIsActive` | `SalesPriceValuationIsActive` |
-| `CountingVarianceInPercent` | `CountingVarianceInPercent` |
-| `_PhysicalInventoryDocumentItem` | *Association* |
-| `_InventorySpecialStockTypeText` | *Association* |
-| `_InventoryTransactionTypeText` | *Association* |
-| `_PhysInvtryCountStsText` | *Association* |
-| `_PhysInvtryPostStsText` | *Association* |
-| `_PhysInvtryDeletionStsText` | *Association* |
-| `_PhysInvtryGroupTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PhysicalInventoryDocument` |  | |  | `, additionalBinding: [{ localElement: 'FiscalYear', element: 'FiscalYear'}], useAsTemplate: true } ] } key PhysicalInventoryDocument` |
+| `FiscalYear` |  | |  | `, useAsTemplate: true } ] } key FiscalYear` |
+| `InventoryTransactionType` |  | |  | `, useAsTemplate: true } ] } InventoryTransactionType` |
+| `Plant` |  | |  | `, useAsTemplate: true } ] } Plant` |
+| `StorageLocation` |  | |  | `, additionalBinding: [{ localElement: 'Plant', element: 'Plant'}], useAsTemplate: true } ] } StorageLocation` |
+| `InventorySpecialStockType` |  | |  | `, useAsTemplate: true } ] } InventorySpecialStockType` |
+| `DocumentDate` |  | |  |  |
+| `PhysInventoryPlannedCountDate` |  | |  |  |
+| `PhysicalInventoryLastCountDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `PostingFiscalPeriod` |  | |  |  |
+| `CreatedByUserName` |  | |  |  |
+| `PostingIsBlockedForPhysInvtry` |  | |  |  |
+| `PhysicalInventoryCountStatus` |  | |  | `, useAsTemplate: true } ] } PhysicalInventoryCountStatus` |
+| `PhysInvtryAdjustmentPostingSts` |  | |  | `, useAsTemplate: true } ] } PhysInvtryAdjustmentPostingSts` |
+| `PhysInventoryReferenceNumber` |  | |  |  |
+| `PhysInvtryDeletionStatus` |  | |  | `, useAsTemplate: true } ] } PhysInvtryDeletionStatus` |
+| `PhysInvtryDocHasQtySnapshot` |  | |  |  |
+| `PhysicalInventoryGroupType` |  | |  | `, useAsTemplate: true } ] } PhysicalInventoryGroupType` |
+| `PhysicalInventoryGroup` |  | |  |  |
+| `PhysicalInventoryNumber` |  | |  |  |
+| `PhysicalInventoryDocumentDesc` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `SalesPriceValuationIsActive` |  | |  |  |
+| `CountingVarianceInPercent` |  | |  |  |
+| `_PhysicalInventoryDocumentItem` | | ✓ | | |
+| `_InventorySpecialStockTypeText` | | ✓ | | |
+| `_InventoryTransactionTypeText` | | ✓ | | |
+| `_PhysInvtryCountStsText` | | ✓ | | |
+| `_PhysInvtryPostStsText` | | ✓ | | |
+| `_PhysInvtryDeletionStsText` | | ✓ | | |
+| `_PhysInvtryGroupTypeText` | | ✓ | | |
 
 ## Source Code
 

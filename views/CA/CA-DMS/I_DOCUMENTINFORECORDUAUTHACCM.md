@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LogAccMObjectID` | `LogAccMObjectID` |
-| `LogAccMActivitySecureID` | `LogAccMActivitySecureID` |
-| `LogAccMActivityRoleID` | `LogAccMActivityRoleID` |
-| `LogAccMUserAuthznObject` | `LogAccMUserAuthznObject` |
-| `LogAccMUserAuthznField` | `LogAccMUserAuthznField` |
-| `LogAccMUserAuthznFrom` | `LogAccMUserAuthznFrom` |
-| `LogAccMUserEntityType` | `LogAccMUserEntityType` |
-| `LogAccMUserEntityID` | `LogAccMUserEntityID` |
-| `LogAccMObjectType` | `LogAccMObjectType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `UserID` | `UserID` |
-| `LogAccMReadActivityIsEnabled` | `LogAccMReadActivityIsEnabled` |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_LogAccMActvActyGrpProfile` | *Association* |
-| `_LogAccMObjSecureIDAssgmt` | *Association* |
-| `_LogAccMUsrGroupUsrAssgmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LogAccMObjectID` |  | |  |  |
+| `LogAccMActivitySecureID` |  | |  |  |
+| `LogAccMActivityRoleID` |  | |  |  |
+| `LogAccMUserAuthznObject` |  | |  |  |
+| `LogAccMUserAuthznField` |  | |  |  |
+| `LogAccMUserAuthznFrom` |  | |  |  |
+| `LogAccMUserEntityType` |  | |  |  |
+| `LogAccMUserEntityID` |  | |  |  |
+| `LogAccMObjectType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `UserID` |  | |  |  |
+| `LogAccMReadActivityIsEnabled` |  | |  |  |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_LogAccMActvActyGrpProfile` | | ✓ | | |
+| `_LogAccMObjSecureIDAssgmt` | | ✓ | | |
+| `_LogAccMUsrGroupUsrAssgmt` | | ✓ | | |
 
 ## Source Code
 

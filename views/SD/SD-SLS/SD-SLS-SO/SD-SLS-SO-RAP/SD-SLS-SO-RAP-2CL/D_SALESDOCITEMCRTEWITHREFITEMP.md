@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ReferenceSDDocument` | `vgbel` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceSDDocument` |  | |  | `vgbel` |
 
 ## Source Code
 

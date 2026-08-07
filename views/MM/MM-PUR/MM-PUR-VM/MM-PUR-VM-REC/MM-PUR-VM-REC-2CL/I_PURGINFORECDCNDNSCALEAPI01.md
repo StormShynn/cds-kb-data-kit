@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| key `PurchasingOrganization` | `PurchasingOrganization` |
-| key `PurchasingInfoRecordCategory` | `PurchasingInfoRecordCategory` |
-| key `Plant` | `Plant` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| key `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
-| key `ConditionScaleLine` | `ConditionScaleLine` |
-| `ConditionType` | `ConditionType` |
-| `ConditionScaleQuantity` | `ConditionScaleQuantity` |
-| `ConditionScaleQuantityUnit` | `ConditionScaleQuantityUnit` |
-| `ConditionScaleAmount` | `ConditionScaleAmount` |
-| `ConditionScaleAmountCurrency` | `ConditionScaleAmountCurrency` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `ConditionRateRatio` | `ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `ConditionRateRatioUnit` |
-| `ConditionRateAmount` | `cast ( ConditionRateAmount as vfprc_rate_amount )` |
-| `ConditionCurrency` | `cast ( ConditionCurrency as waers )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |
+| `PurchasingOrganization` | ✓ | |  |  |
+| `PurchasingInfoRecordCategory` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |
+| `ConditionScaleLine` | ✓ | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionScaleQuantity` |  | |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |
+| `ConditionScaleAmount` |  | |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionRateAmount` |  | |  | `cast ( ConditionRateAmount as vfprc_rate_amount )` |
+| `ConditionCurrency` |  | |  | `cast ( ConditionCurrency as waers )` |
 
 ## Source Code
 

@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TeamMemberUUID` | `TeamMemberUUID` |
-| `BusinessPartnerUUID` | `BusinessPartnerUUID` |
-| `ProjectUUID` | `ProjectUUID` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_EnterpriseProject` | *Association* |
-| `_EntProjEntitlement` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TeamMemberUUID` | ✓ | |  |  |
+| `BusinessPartnerUUID` |  | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EntProjEntitlement` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
 
 ## Source Code
 

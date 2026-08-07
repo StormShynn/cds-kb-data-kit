@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `Plant` | `werks` |
-| key `StockDeterminationGroup` | `eprio` |
-| `StockDeterminationGroupText` | `bezei` |
-| `_Language` | *Association* |
-| `_Plant` | *Association* |
-| `_StockDeterminationGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `Plant` | ✓ | |  | `werks` |
+| `StockDeterminationGroup` | ✓ | |  | `eprio` |
+| `StockDeterminationGroupText` |  | |  | `bezei` |
+| `_Language` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StockDeterminationGroup` | | ✓ | | |
 
 ## Associations
 

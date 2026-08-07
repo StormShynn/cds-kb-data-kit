@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `carrid` | `smacourse.carrid` |
-| key `mealnumber` | `smacourse.mealnumber` |
-| `food_category` | `'MAIN_COURSE'` |
-| `text` | `smealt.text` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `carrid` | ✓ | |  |  |
+| `mealnumber` | ✓ | |  |  |
+| `food_category` |  | |  | `'MAIN_COURSE'` |
+| `text` |  | |  |  |
 
 ## Source Code
 

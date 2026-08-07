@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `OptionPutCallCode` | `cast(dd07t.domvalue_l as ti_sputcal)` |
-| `OptionPutCallCodeName` | `cast(dd07t.ddtext as ftr_gen_opt_put_call_code_name preserving type )` |
-| `_OptionPutCallCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `OptionPutCallCode` | ✓ | |  | `cast(dd07t.domvalue_l as ti_sputcal)` |
+| `OptionPutCallCodeName` |  | |  | `cast(dd07t.ddtext as ftr_gen_opt_put_call_code_name preserving type )` |
+| `_OptionPutCallCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

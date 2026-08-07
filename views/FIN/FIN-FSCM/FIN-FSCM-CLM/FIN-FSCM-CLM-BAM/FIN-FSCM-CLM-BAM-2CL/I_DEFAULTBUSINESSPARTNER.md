@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankCountry` | `DefaultableBp.banks` |
-| key `BankInternalID` | `DefaultableBp.bankl` |
-| key `BusinessPartnerNumber` | `DefaultableBp.partner` |
-| key `ValidTo` | `DefaultableBp.valid_to` |
-| `ValidFrom` | `DefaultableBp.valid_from` |
-| `CreatedByUser` | `DefaultableBp.created_by` |
-| `CreationDate` | `DefaultableBp.created_at_dat` |
-| `CreationTime` | `DefaultableBp.created_at_tim` |
-| `LastChangedByUser` | `DefaultableBp.last_changed_by` |
-| `LastChangeDate` | `DefaultableBp.last_changed_at_dat` |
-| `LastChangeTime` | `DefaultableBp.last_changed_at_tim` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankCountry` | ✓ | |  | `banks` |
+| `BankInternalID` | ✓ | |  | `bankl` |
+| `BusinessPartnerNumber` | ✓ | |  | `partner` |
+| `ValidTo` | ✓ | |  | `valid_to` |
+| `ValidFrom` |  | |  | `valid_from` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDate` |  | |  | `created_at_dat` |
+| `CreationTime` |  | |  | `created_at_tim` |
+| `LastChangedByUser` |  | |  | `last_changed_by` |
+| `LastChangeDate` |  | |  | `last_changed_at_dat` |
+| `LastChangeTime` |  | |  | `last_changed_at_tim` |
 
 ## Source Code
 

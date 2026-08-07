@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_FSItemAttribValueTxt.Language` |
-| key `CnsldtnFSItemCustomerSpecific` | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemcustomerspecific preserving type )` |
-| `CnsldtnFSItemCustSpcfcText` | `_FSItemAttribValueTxt.CnsldtnFSItemAttribValueText` |
-| `CnsldtnFSItemCustSpcfcLongText` | `_FSItemAttribValueTxt.CnsldtnFSItemAttribValLongText` |
-| `_CnsldtnFSItemCustSpcfc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |
+| `CnsldtnFSItemCustomerSpecific` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemcustomerspecific preserving type )` |
+| `CnsldtnFSItemCustSpcfcText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |
+| `CnsldtnFSItemCustSpcfcLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |
+| `_CnsldtnFSItemCustSpcfc` | | ✓ | | |
 
 ## Associations
 

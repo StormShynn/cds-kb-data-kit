@@ -38,21 +38,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Id` | `Id` |
-| `HeaderId` | `HeaderId` |
-| `Name` | `Name` |
-| `Description` | `Description` |
-| `ReleaseDate` | `ReleaseDate` |
-| `DiscontinuedDate` | `DiscontinuedDate` |
-| `Price` | `Price` |
-| `Height` | `Height` |
-| `Width` | `Width` |
-| `Depth` | `Depth` |
-| `Quantity` | `Quantity` |
-| `UnitOfMeasure` | `UnitOfMeasure` |
-| `_Header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Id` | ✓ | |  |  |
+| `HeaderId` |  | |  |  |
+| `Name` |  | |  |  |
+| `Description` |  | |  |  |
+| `ReleaseDate` |  | |  |  |
+| `DiscontinuedDate` |  | |  |  |
+| `Price` |  | |  |  |
+| `Height` |  | |  |  |
+| `Width` |  | |  |  |
+| `Depth` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `UnitOfMeasure` |  | |  |  |
+| `_Header` | | ✓ | | |
 
 ## Source Code
 

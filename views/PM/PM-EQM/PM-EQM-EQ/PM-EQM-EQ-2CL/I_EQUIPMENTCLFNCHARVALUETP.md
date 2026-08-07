@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `Equipment` |
-| key `ClassType` | `ClassType` |
-| key `ClfnCharcValuePositionNumber` | `ClfnCharcValuePositionNumber` |
-| key `CharcInternalID` | `CharcInternalID` |
-| `Characteristic` | `Characteristic` |
-| `CharcDataType` | `CharcDataType` |
-| `ClassInternalID` | `ClassInternalID` |
-| `KeyDate` | `KeyDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `CharcValueIntervalType` | `CharcValueIntervalType` |
-| `CharcValue` | `CharcValue` |
-| `CharcFromNumericValue` | `CharcFromNumericValue` |
-| `CharcFromNumericValueUnit` | `CharcFromNumericValueUnit` |
-| `CharcToNumericValue` | `CharcToNumericValue` |
-| `CharcToNumericValueUnit` | `CharcToNumericValueUnit` |
-| `CharcFromDecimalValue` | `CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `CharcToDecimalValue` |
-| `CharcFromAmount` | `CharcFromAmount` |
-| `CharcToAmount` | `CharcToAmount` |
-| `Currency` | `Currency` |
-| `CharcFromDate` | `CharcFromDate` |
-| `CharcToDate` | `CharcToDate` |
-| `CharcFromTime` | `CharcFromTime` |
-| `CharcToTime` | `CharcToTime` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `CharcMaintAuthGrp` | `CharcMaintAuthGrp` |
-| `ClassMaintAuthGrp` | `ClassMaintAuthGrp` |
-| `ClassClassfctnAuthGrp` | `ClassClassfctnAuthGrp` |
-| `_Characteristic` | *Association* |
-| `_Equipment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |
+| `ClassType` | ✓ | |  |  |
+| `ClfnCharcValuePositionNumber` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `Characteristic` |  | |  |  |
+| `CharcDataType` |  | |  |  |
+| `ClassInternalID` |  | |  |  |
+| `KeyDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `CharcValueIntervalType` |  | |  |  |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `CharcMaintAuthGrp` |  | |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |
+| `_Characteristic` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
 
 ## Source Code
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialManagementArea` | `FinancialManagementArea` |
-| key `CommitmentItemFiscalYear` | `CommitmentItemFiscalYear` |
-| `_FinMgmtArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  |  |
+| `CommitmentItemFiscalYear` | ✓ | |  |  |
+| `_FinMgmtArea` | | ✓ | | |
 
 ## Associations
 

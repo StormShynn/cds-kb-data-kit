@@ -27,52 +27,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DSD_SettlementDocument` | `sld_doc_id` |
-| key `Material` | `matnr` |
-| `TargetQuantity` | `} quan_planned` |
-| `SettlementCheckOutQuantity` | `} quan_checkout` |
-| `SettlmtCheckOutDiffQuantity` | `} quan_diff` |
-| `SettlementDeliveryQuantity` | `} quan_delivered` |
-| `SettlementReturnedQuantity` | `} quan_return` |
-| `SettlementCheckInQuantity` | `} quan_checkin` |
-| `SettlementFinalDiffQuantity` | `} quan_final_diff` |
-| `UnitOfMeasure` | `uom_for_quan` |
-| `QuantityDifferenceAmount` | `} value_fin_diff` |
-| `Currency` | `currency_fin_dif` |
-| `Plant` | `plant` |
-| `Batch` | `charg` |
-| `ValuationType` | `bwtar` |
-| `CtrlParamForQuantityDifference` | `spec_return` |
-| `CheckOutDiffWithinTolerance` | `co_diff_eval` |
-| `SettlmtPlannedCheckInQuantity` | `} quan_checkin_pln` |
-| `SettlementCheckInDiffQuantity` | `} quan_checkin_dif` |
-| `CheckInDiffWithinTolerance` | `ci_diff_eval` |
-| `SettlementLoadingConfQuantity` | `} quan_lc_init` |
-| `SettlmtLoadgConfDiffQuantity` | `} quan_lc_init_dif` |
-| `SettlmtPlannedReloadQuantity` | `} quan_rld_plan` |
-| `SettlmtReloadCheckInQuantity` | `} quan_rld_ci` |
-| `SettlmtRldLoadingConfQuantity` | `} quan_rld_lc` |
-| `SettlmtRldLoadgConfDiffQty` | `} quan_rld_lc_diff` |
-| `SettlmtReloadCheckOutQuantity` | `} quan_rld_co` |
-| `SettlmtRldCheckOutDiffQuantity` | `} quan_rld_co_diff` |
-| `LoadgConfDiffWithinTolerance` | `lc_diff_eval` |
-| `SettlmtPlndCheckOutCheckInQty` | `} quan_final_plan` |
-| `SettlmtCheckOutCheckInQuantity` | `} quan_final` |
-| `FinalDifferenceWithinTolerance` | `final_diff_eval` |
-| `SettlementToleranceGroup` | `tolgrp_id` |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_Batch` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Currency` | *Association* |
-| `_CheckOutEvaluation` | *Association* |
-| `_CheckInEvaluation` | *Association* |
-| `_ConfirmationEvaluation` | *Association* |
-| `_FinalEvaluation` | *Association* |
-| `_ControlParameter` | *Association* |
-| `_ToleranceGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DSD_SettlementDocument` | ✓ | |  | `sld_doc_id` |
+| `Material` | ✓ | |  | `matnr` |
+| `TargetQuantity` |  | |  | `} quan_planned` |
+| `SettlementCheckOutQuantity` |  | |  | `} quan_checkout` |
+| `SettlmtCheckOutDiffQuantity` |  | |  | `} quan_diff` |
+| `SettlementDeliveryQuantity` |  | |  | `} quan_delivered` |
+| `SettlementReturnedQuantity` |  | |  | `} quan_return` |
+| `SettlementCheckInQuantity` |  | |  | `} quan_checkin` |
+| `SettlementFinalDiffQuantity` |  | |  | `} quan_final_diff` |
+| `UnitOfMeasure` |  | |  | `uom_for_quan` |
+| `QuantityDifferenceAmount` |  | |  | `} value_fin_diff` |
+| `Currency` |  | |  | `currency_fin_dif` |
+| `Plant` |  | |  | `plant` |
+| `Batch` |  | |  | `charg` |
+| `ValuationType` |  | |  | `bwtar` |
+| `CtrlParamForQuantityDifference` |  | |  | `spec_return` |
+| `CheckOutDiffWithinTolerance` |  | |  | `co_diff_eval` |
+| `SettlmtPlannedCheckInQuantity` |  | |  | `} quan_checkin_pln` |
+| `SettlementCheckInDiffQuantity` |  | |  | `} quan_checkin_dif` |
+| `CheckInDiffWithinTolerance` |  | |  | `ci_diff_eval` |
+| `SettlementLoadingConfQuantity` |  | |  | `} quan_lc_init` |
+| `SettlmtLoadgConfDiffQuantity` |  | |  | `} quan_lc_init_dif` |
+| `SettlmtPlannedReloadQuantity` |  | |  | `} quan_rld_plan` |
+| `SettlmtReloadCheckInQuantity` |  | |  | `} quan_rld_ci` |
+| `SettlmtRldLoadingConfQuantity` |  | |  | `} quan_rld_lc` |
+| `SettlmtRldLoadgConfDiffQty` |  | |  | `} quan_rld_lc_diff` |
+| `SettlmtReloadCheckOutQuantity` |  | |  | `} quan_rld_co` |
+| `SettlmtRldCheckOutDiffQuantity` |  | |  | `} quan_rld_co_diff` |
+| `LoadgConfDiffWithinTolerance` |  | |  | `lc_diff_eval` |
+| `SettlmtPlndCheckOutCheckInQty` |  | |  | `} quan_final_plan` |
+| `SettlmtCheckOutCheckInQuantity` |  | |  | `} quan_final` |
+| `FinalDifferenceWithinTolerance` |  | |  | `final_diff_eval` |
+| `SettlementToleranceGroup` |  | |  | `tolgrp_id` |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_CheckOutEvaluation` | | ✓ | | |
+| `_CheckInEvaluation` | | ✓ | | |
+| `_ConfirmationEvaluation` | | ✓ | | |
+| `_FinalEvaluation` | | ✓ | | |
+| `_ControlParameter` | | ✓ | | |
+| `_ToleranceGroup` | | ✓ | | |
 
 ## Associations
 

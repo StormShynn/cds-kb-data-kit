@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OperationDateOffsetRefCode` | `bzoff` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OperationDateOffsetRefCode` | ✓ | |  | `bzoff` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

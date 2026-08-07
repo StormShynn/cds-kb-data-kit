@@ -28,66 +28,66 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| key `ServiceEntrySheetItem` | `ServiceEntrySheetItem` |
-| key `AccountAssignmentNumber` | `AccountAssignment` |
-| `SESRefDocAccountAssignment` | `RefDocAccountAssignment` |
-| `IsDeleted` | `IsDeleted` |
-| `Quantity` | `Quantity` |
-| `QuantityUnit` | `QuantityUnit` |
-| `NetAmount` | `NetAmount` |
-| `Currency` | `Currency` |
-| `MultipleAcctAssgmtDistrPercent` | `MultipleAcctAssgmtDistrPercent` |
-| `BusinessArea` | `BusinessArea` |
-| `CostCenter` | `CostCenter` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `FixedAsset` | `FixedAsset` |
-| `OrderID` | `OrderID` |
-| `ControllingArea` | `ControllingArea` |
-| `CostObject` | `CostObject` |
-| `ProfitabilitySegment` | `cast( ProfitabilitySegment as rkeobjnr_char )` |
-| `ProfitCenter` | `ProfitCenter` |
-| `GLAccount` | `GLAccount` |
-| `WBSElementInternalID` | `WBSElementInternalID_2` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `ProjectNetworkInternalID` | `ProjectNetworkInternalID` |
-| `REInternalFinNumber` | `REInternalFinNumber` |
-| `NetworkActivityInternalID` | `NetworkActivityInternalID` |
-| `PartnerAccountNumber` | `PartnerAccountNumber` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `BusinessProcess` | `BusinessProcess` |
-| `SettlementReferenceDate` | `SettlementReferenceDate` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `OrderInternalID` | `OrderInternalID` |
-| `OrderIntBillOfOperationsItem` | `OrderIntBillOfOperationsItem` |
-| `CommitmentItemShortID` | `CommitmentItemShortID` |
-| `FundsCenter` | `FundsCenter` |
-| `Fund` | `Fund` |
-| `FunctionalArea` | `FunctionalArea` |
-| `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| `EarmarkedFundsDocumentItem` | `EarmarkedFundsDocumentItem` |
-| `BudgetPeriod` | `BudgetPeriod` |
-| `GrantID` | `GrantID` |
-| `FundedProgram` | `FundedProgram` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceDocument` | `ServiceDocument` |
-| `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Plant` | `Plant` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangeUser` |
-| `_ServiceEntrySheet` | *Association* |
-| `_ServiceEntrySheetItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `ServiceEntrySheetItem` | ✓ | |  |  |
+| `AccountAssignmentNumber` | ✓ | |  | `AccountAssignment` |
+| `SESRefDocAccountAssignment` |  | |  | `RefDocAccountAssignment` |
+| `IsDeleted` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `ProfitabilitySegment` |  | |  | `cast( ProfitabilitySegment as rkeobjnr_char )` |
+| `ProfitCenter` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |
+| `ProjectNetwork` |  | |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |
+| `REInternalFinNumber` |  | |  |  |
+| `NetworkActivityInternalID` |  | |  |  |
+| `PartnerAccountNumber` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `SettlementReferenceDate` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |
+| `CommitmentItemShortID` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |
+| `EarmarkedFundsDocumentItem` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `FundedProgram` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  | `LastChangeUser` |
+| `_ServiceEntrySheet` | | ✓ | | |
+| `_ServiceEntrySheetItem` | | ✓ | | |
 
 ## Associations
 

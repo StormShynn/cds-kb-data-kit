@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `ServiceContractItem` | `ServiceContractItem` |
-| key `CustMgmtPartnerFunction` | `CustMgmtPartnerFunction` |
-| key `CustMgmtBusinessPartner` | `CustMgmtBusinessPartner` |
-| `CityName` | `CityName` |
-| `Country` | `Country` |
-| `EmailAddress` | `EmailAddress` |
-| `FaxAreaCodeSubscriberNumber` | `FaxAreaCodeSubscriberNumber` |
-| `FaxExtensionNumber` | `FaxExtensionNumber` |
-| `FaxNumberCountry` | `FaxNumberCountry` |
-| `HouseNumber` | `HouseNumber` |
-| `MobileNumber` | `MobileNumber` |
-| `MobilePhoneCountry` | `MobilePhoneCountry` |
-| `OrganizationName1` | `OrganizationName1` |
-| `OrganizationName2` | `OrganizationName2` |
-| `OrganizationName3` | `OrganizationName3` |
-| `OrganizationName4` | `OrganizationName4` |
-| `PhoneExtensionNumber` | `PhoneExtensionNumber` |
-| `PhoneNumber` | `PhoneNumber` |
-| `PhoneNumberCountry` | `PhoneNumberCountry` |
-| `PostalCode` | `PostalCode` |
-| `Region` | `Region` |
-| `StreetName` | `StreetName` |
-| `StreetPrefixName1` | `StreetPrefixName1` |
-| `StreetPrefixName2` | `StreetPrefixName2` |
-| `StreetSuffixName1` | `StreetSuffixName1` |
-| `StreetSuffixName2` | `StreetSuffixName2` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `_SrvcContrItemPartnerTP` | *Association* |
-| `_ServiceContractTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceContractItem` | ✓ | |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |
+| `CityName` |  | |  |  |
+| `Country` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |
+| `FaxExtensionNumber` |  | |  |  |
+| `FaxNumberCountry` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `MobileNumber` |  | |  |  |
+| `MobilePhoneCountry` |  | |  |  |
+| `OrganizationName1` |  | |  |  |
+| `OrganizationName2` |  | |  |  |
+| `OrganizationName3` |  | |  |  |
+| `OrganizationName4` |  | |  |  |
+| `PhoneExtensionNumber` |  | |  |  |
+| `PhoneNumber` |  | |  |  |
+| `PhoneNumberCountry` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `Region` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `StreetPrefixName1` |  | |  |  |
+| `StreetPrefixName2` |  | |  |  |
+| `StreetSuffixName1` |  | |  |  |
+| `StreetSuffixName2` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `_SrvcContrItemPartnerTP` | | ✓ | | |
+| `_ServiceContractTP` | | ✓ | | |
 
 ## Source Code
 

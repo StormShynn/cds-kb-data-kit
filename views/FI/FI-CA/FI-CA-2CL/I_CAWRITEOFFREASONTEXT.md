@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAWriteOffReason` | `abgrd` |
-| key `Language` | `spras` |
-| `CAWriteOffReasonName` | `cast( abtxt as abgrd_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAWriteOffReason` | ✓ | |  | `abgrd` |
+| `Language` | ✓ | |  | `spras` |
+| `CAWriteOffReasonName` |  | |  | `cast( abtxt as abgrd_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

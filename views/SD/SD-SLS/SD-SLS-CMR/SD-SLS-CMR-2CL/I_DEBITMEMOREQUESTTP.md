@@ -29,62 +29,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequest` | `DebitMemoRequest.DebitMemoRequest` |
-| `DebitMemoRequestType` | `DebitMemoRequest.DebitMemoRequestType` |
-| `DebitMemoRequestDate` | `DebitMemoRequest.DebitMemoRequestDate` |
-| `ControllingArea` | `DebitMemoRequest.ControllingArea` |
-| `SoldToParty` | `DebitMemoRequest.SoldToParty` |
-| `CustomerName` | `DebitMemoRequest.CustomerName` |
-| `SalesOrganization` | `DebitMemoRequest.SalesOrganization` |
-| `DistributionChannel` | `DebitMemoRequest.DistributionChannel` |
-| `OrganizationDivision` | `DebitMemoRequest.OrganizationDivision` |
-| `ReferenceDistributionChannel` | `DebitMemoRequest.ReferenceDistributionChannel` |
-| `SalesOffice` | `DebitMemoRequest.SalesOffice` |
-| `SalesGroup` | `DebitMemoRequest.SalesGroup` |
-| `SalesDistrict` | `DebitMemoRequest.SalesDistrict` |
-| `PurchaseOrderByCustomer` | `DebitMemoRequest.PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderType` | `DebitMemoRequest.CustomerPurchaseOrderType` |
-| `CustomerPurchaseOrderDate` | `DebitMemoRequest.CustomerPurchaseOrderDate` |
-| `CustomerGroup` | `DebitMemoRequest.CustomerGroup` |
-| `SDDocumentReason` | `DebitMemoRequest.SDDocumentReason` |
-| `PricingDate` | `DebitMemoRequest.PricingDate` |
-| `TotalNetAmount` | `DebitMemoRequest.TotalNetAmount` |
-| `TransactionCurrency` | `DebitMemoRequest.TransactionCurrency` |
-| `HeaderBillingBlockReason` | `DebitMemoRequest.HeaderBillingBlockReason` |
-| `SDPricingProcedure` | `DebitMemoRequest.SDPricingProcedure` |
-| `IncotermsClassification` | `DebitMemoRequest.IncotermsClassification` |
-| `IncotermsVersion` | `DebitMemoRequest.IncotermsVersion` |
-| `IncotermsLocation1` | `DebitMemoRequest.IncotermsLocation1` |
-| `IncotermsLocation2` | `DebitMemoRequest.IncotermsLocation2` |
-| `CustomerPaymentTerms` | `DebitMemoRequest.CustomerPaymentTerms` |
-| `BillingCompanyCode` | `DebitMemoRequest.BillingCompanyCode` |
-| `PaymentMethod` | `DebitMemoRequest.PaymentMethod` |
-| `BillingDocumentDate` | `DebitMemoRequest.BillingDocumentDate` |
-| `ServicesRenderedDate` | `DebitMemoRequest.ServicesRenderedDate` |
-| `ReferenceSDDocument` | `DebitMemoRequest.ReferenceSDDocument` |
-| `ReferenceSDDocumentCategory` | `DebitMemoRequest.ReferenceSDDocumentCategory` |
-| `CreatedByUser` | `DebitMemoRequest.CreatedByUser` |
-| `CreationDate` | `DebitMemoRequest.CreationDate` |
-| `CreationTime` | `DebitMemoRequest.CreationTime` |
-| `SalesDocumentCreationDateTime` | `DebitMemoRequest.SalesDocumentCreationDateTime` |
-| `LastChangedByUser` | `DebitMemoRequest.LastChangedByUser` |
-| `LastChangeDateTime` | `DebitMemoRequest.LastChangeDateTime` |
-| `DebitMemoReqApprovalReason` | `DebitMemoRequest.DebitMemoReqApprovalReason` |
-| `SalesDocApprovalStatus` | `DebitMemoRequest.SalesDocApprovalStatus` |
-| `OverallBillingBlockStatus` | `DebitMemoRequest.OverallBillingBlockStatus` |
-| `OverallSDProcessStatus` | `DebitMemoRequest.OverallSDProcessStatus` |
-| `OverallSDDocumentRejectionSts` | `DebitMemoRequest.OverallSDDocumentRejectionSts` |
-| `OverallOrdReltdBillgStatus` | `DebitMemoRequest.OverallOrdReltdBillgStatus` |
-| `TotalBlockStatus` | `DebitMemoRequest.TotalBlockStatus` |
-| `HdrGeneralIncompletionStatus` | `DebitMemoRequest.HdrGeneralIncompletionStatus` |
-| `OvrlItmGeneralIncompletionSts` | `DebitMemoRequest.OvrlItmGeneralIncompletionSts` |
-| `OverallSDDocReferenceStatus` | `DebitMemoRequest.OverallSDDocReferenceStatus` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_Text` | *Association* |
-| `_PricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |
+| `DebitMemoRequestType` |  | |  |  |
+| `DebitMemoRequestDate` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `CustomerName` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `ReferenceDistributionChannel` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |
+| `SDPricingProcedure` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `BillingCompanyCode` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `SalesDocumentCreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `DebitMemoReqApprovalReason` |  | |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |
+| `OverallBillingBlockStatus` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |
+| `OverallOrdReltdBillgStatus` |  | |  |  |
+| `TotalBlockStatus` |  | |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
 
 ## Source Code
 

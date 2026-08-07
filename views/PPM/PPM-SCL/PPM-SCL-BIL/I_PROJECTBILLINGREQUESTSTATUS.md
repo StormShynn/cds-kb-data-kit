@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectBillingRequestStatus` | `cast( substring( domvalue_l, 1, 1 ) as pbr_doc_status preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_ProjectBillingReqStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectBillingRequestStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbr_doc_status preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_ProjectBillingReqStatusText` | | ✓ | | |
 
 ## Source Code
 

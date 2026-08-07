@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAToleranceGroup` | `togru` |
-| `Currency` | `waers` |
-| `CAMaxPaytDiffForExpense` | `difbh` |
-| `CAMaxPaytDiffForRevenue` | `difbs` |
-| `CAMaxPaytDiffForExpenseInPct` | `difph` |
-| `CAMaxPaytDiffForRevenueInPct` | `difps` |
-| `CAPaytNtcIsCreatedForUndrpayt` | `xundp` |
-| `CAPaytNtcIsCreatedForOvrpayt` | `xovrp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAToleranceGroup` | ✓ | |  | `togru` |
+| `Currency` |  | |  | `waers` |
+| `CAMaxPaytDiffForExpense` |  | |  | `difbh` |
+| `CAMaxPaytDiffForRevenue` |  | |  | `difbs` |
+| `CAMaxPaytDiffForExpenseInPct` |  | |  | `difph` |
+| `CAMaxPaytDiffForRevenueInPct` |  | |  | `difps` |
+| `CAPaytNtcIsCreatedForUndrpayt` |  | |  | `xundp` |
+| `CAPaytNtcIsCreatedForOvrpayt` |  | |  | `xovrp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

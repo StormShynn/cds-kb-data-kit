@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierQuotation` | `I_SuplrQtnScheduleLine.SupplierQuotation` |
-| key `SupplierQuotationItem` | `I_SuplrQtnScheduleLine.SupplierQuotationItem` |
-| key `ScheduleLine` | `I_SuplrQtnScheduleLine.ScheduleLine` |
-| `DelivDateCategory` | `I_SuplrQtnScheduleLine.DelivDateCategory` |
-| `ScheduleLineDeliveryDate` | `I_SuplrQtnScheduleLine.ScheduleLineDeliveryDate` |
-| `SchedLineStscDeliveryDate` | `I_SuplrQtnScheduleLine.SchedLineStscDeliveryDate` |
-| `ScheduleLineDeliveryTime` | `I_SuplrQtnScheduleLine.ScheduleLineDeliveryTime` |
-| `ScheduleLineOrderQuantity` | `I_SuplrQtnScheduleLine.ScheduleLineOrderQuantity` |
-| `RoughGoodsReceiptQty` | `I_SuplrQtnScheduleLine.RoughGoodsReceiptQty` |
-| `AwardedQuantity` | `I_SuplrQtnScheduleLine.AwardedQuantity` |
-| `OrderQuantityUnit` | `I_SuplrQtnScheduleLine.OrderQuantityUnit` |
-| `_SupplierQuotation` | *Association* |
-| `_SupplierQuotationItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierQuotation` | ✓ | |  |  |
+| `SupplierQuotationItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |
+| `AwardedQuantity` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `_SupplierQuotation` | | ✓ | | |
+| `_SupplierQuotationItem` | | ✓ | | |
 
 ## Associations
 

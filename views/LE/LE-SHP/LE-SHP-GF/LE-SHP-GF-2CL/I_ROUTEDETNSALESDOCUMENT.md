@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DepartureCountry` | `aland` |
-| key `DepartureZone` | `azone` |
-| key `DestinationCountry` | `lland` |
-| key `ReceivingZone` | `lzone` |
-| key `ShippingCondition` | `vsbed` |
-| key `TransportationGroup` | `tragr` |
-| key `DeliveryWeightGroup` | `grulg` |
-| `DeliveryRoute` | `cast(route as le_route preserving type)` |
-| `_DepartureCountry` | *Association* |
-| `_DepartureZone` | *Association* |
-| `_DestinationCountry` | *Association* |
-| `_ReceivingZone` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_TransportationGroup` | *Association* |
-| `_DeliveryRoute` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DepartureCountry` | ✓ | |  | `aland` |
+| `DepartureZone` | ✓ | |  | `azone` |
+| `DestinationCountry` | ✓ | |  | `lland` |
+| `ReceivingZone` | ✓ | |  | `lzone` |
+| `ShippingCondition` | ✓ | |  | `vsbed` |
+| `TransportationGroup` | ✓ | |  | `tragr` |
+| `DeliveryWeightGroup` | ✓ | |  | `grulg` |
+| `DeliveryRoute` |  | |  | `cast(route as le_route preserving type)` |
+| `_DepartureCountry` | | ✓ | | |
+| `_DepartureZone` | | ✓ | | |
+| `_DestinationCountry` | | ✓ | | |
+| `_ReceivingZone` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_TransportationGroup` | | ✓ | | |
+| `_DeliveryRoute` | | ✓ | | |
 
 ## Source Code
 

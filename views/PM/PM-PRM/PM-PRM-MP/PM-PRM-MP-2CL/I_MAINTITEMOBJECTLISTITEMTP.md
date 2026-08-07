@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceItem` | `MaintenanceItem` |
-| key `MaintenanceItemObjectList` | `MaintenanceItemObjectList` |
-| key `MaintenanceObjectListItem` | `MaintenanceObjectListItem` |
-| `MaintenanceObjectListUsageCode` | `MaintenanceObjectListUsageCode` |
-| `Equipment` | `Equipment` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `FunctionalLocationLabelName` | `FunctionalLocationLabelName` |
-| `TechObjIsEquipOrFuncnlLoc` | `TechObjIsEquipOrFuncnlLoc` |
-| `TechnicalObject` | `TechnicalObject` |
-| `TechnicalObjectLabel` | `TechnicalObjectLabel` |
-| `TechnicalObjectDescription` | `TechnicalObjectDescription` |
-| `MaintenanceNotification` | `MaintenanceNotification` |
-| `Assembly` | `Assembly` |
-| `MaintObjectLocAcctAssgmtNmbr` | `MaintObjectLocAcctAssgmtNmbr` |
-| `Material` | `Material` |
-| `SerialNumber` | `SerialNumber` |
-| `UniqueItemIdentifier` | `UniqueItemIdentifier` |
-| `CreationDate` | `CreationDate` |
-| `MaintObjectListItemSequence` | `MaintObjectListItemSequence` |
-| `MaintObjListEntryIsProcessed` | `MaintObjListEntryIsProcessed` |
-| `ServiceReferenceProduct` | `ServiceReferenceProduct` |
-| `MaintenancePlanCallObject` | `MaintenancePlanCallObject` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `MaintenancePlant` | `MaintenancePlant` |
-| `ControllingArea` | `ControllingArea` |
-| `CostCenter` | `CostCenter` |
-| `_Equipment` | *Association* |
-| `_FunctionalLocation` | *Association* |
-| `_MaintenanceItemTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |
+| `MaintenanceItemObjectList` | ✓ | |  |  |
+| `MaintenanceObjectListItem` | ✓ | |  |  |
+| `MaintenanceObjectListUsageCode` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
+| `TechnicalObject` |  | |  |  |
+| `TechnicalObjectLabel` |  | |  |  |
+| `TechnicalObjectDescription` |  | |  |  |
+| `MaintenanceNotification` |  | |  |  |
+| `Assembly` |  | |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
+| `Material` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `UniqueItemIdentifier` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `MaintObjectListItemSequence` |  | |  |  |
+| `MaintObjListEntryIsProcessed` |  | |  |  |
+| `ServiceReferenceProduct` |  | |  |  |
+| `MaintenancePlanCallObject` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `_Equipment` | | ✓ | | |
+| `_FunctionalLocation` | | ✓ | | |
+| `_MaintenanceItemTP` | | ✓ | | |
 
 ## Source Code
 

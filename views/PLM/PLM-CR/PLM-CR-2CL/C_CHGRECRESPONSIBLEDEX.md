@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeRecordUUID` | `ChangeRecordUUID` |
-| `ParentChangeRecordUUID` | `ParentChangeRecordUUID` |
-| `Partner` | `Partner` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeRecordUUID` | ✓ | |  |  |
+| `ParentChangeRecordUUID` |  | |  |  |
+| `Partner` |  | |  |  |
 
 ## Source Code
 

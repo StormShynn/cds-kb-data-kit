@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'AUSP'` | `table: 'AUSP'` |
-| `'ADZHL']` | `tableElement: ['OBJEK','ATINN','ATZHL','MAFID','KLART','ADZHL']` |
-| `'TimeIntervalNumber']` | `viewElement: ['ClfnObjectID','CharcInternalID','ClfnCharcValuePositionNumber','ClfnObjectType','ClassType','TimeIntervalNumber']` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'AUSP'` |  | |  | `table: 'AUSP'` |
+| `'ADZHL']` |  | |  | `tableElement: ['OBJEK','ATINN','ATZHL','MAFID','KLART','ADZHL']` |
+| `'TimeIntervalNumber']` |  | |  | `viewElement: ['ClfnObjectID','CharcInternalID','ClfnCharcValuePositionNumber','ClfnObjectType','ClassType','TimeIntervalNumber']` |
 
 ## Source Code
 

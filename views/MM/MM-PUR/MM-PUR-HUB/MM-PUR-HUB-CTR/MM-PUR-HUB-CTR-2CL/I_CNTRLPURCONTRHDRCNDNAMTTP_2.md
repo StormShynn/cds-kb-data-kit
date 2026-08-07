@@ -30,47 +30,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| key `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionType` | `ConditionType` |
-| `ConditionTextID` | `ConditionTextID` |
-| `ConditionCalculationTypeShort` | `ConditionCalculationTypeShort` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionToBaseQtyNmrtr` | `ConditionToBaseQtyNmrtr` |
-| `ConditionToBaseQtyDnmntr` | `ConditionToBaseQtyDnmntr` |
-| `BaseUnit` | `BaseUnit` |
-| `ConditionLowerLimit` | `ConditionLowerLimit` |
-| `ConditionUpperLimit` | `ConditionUpperLimit` |
-| `ConditionCurrency` | `ConditionCurrency` |
-| `ConditionAlternativeCurrency` | `ConditionAlternativeCurrency` |
-| `ConditionExclusion` | `ConditionExclusion` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `AdditionalValueDays` | `AdditionalValueDays` |
-| `FixedValueDate` | `FixedValueDate` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CndnMaxNumberOfSalesOrders` | `CndnMaxNumberOfSalesOrders` |
-| `MinimumConditionBasisValue` | `MinimumConditionBasisValue` |
-| `MaximumConditionBasisValue` | `MaximumConditionBasisValue` |
-| `MaximumConditionAmount` | `MaximumConditionAmount` |
-| `ConditionReleaseStatus` | `ConditionReleaseStatus` |
-| `ConditionChangeReason` | `ConditionChangeReason` |
-| `CmmdtyPricingEngineIsEnabled` | `CmmdtyPricingEngineIsEnabled` |
-| `PricingScaleCheckingRule` | `PricingScaleCheckingRule` |
-| `PricingScaleType` | `PricingScaleType` |
-| `PricingScaleBasisShort` | `PricingScaleBasisShort` |
-| `PricingScaleLine` | `PricingScaleLine` |
-| `ConditionHasScales` | `ConditionHasScales` |
-| `_CntrlPurContrHdrCndnScales` | *Association* |
-| `_CntrlPurContrHdrCndnValdty` | *Association* |
-| `_CentralPurchaseContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionSequentialNumberShort` | ✓ | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTextID` |  | |  |  |
+| `ConditionCalculationTypeShort` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ConditionLowerLimit` |  | |  |  |
+| `ConditionUpperLimit` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |
+| `ConditionExclusion` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `AdditionalValueDays` |  | |  |  |
+| `FixedValueDate` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CndnMaxNumberOfSalesOrders` |  | |  |  |
+| `MinimumConditionBasisValue` |  | |  |  |
+| `MaximumConditionBasisValue` |  | |  |  |
+| `MaximumConditionAmount` |  | |  |  |
+| `ConditionReleaseStatus` |  | |  |  |
+| `ConditionChangeReason` |  | |  |  |
+| `CmmdtyPricingEngineIsEnabled` |  | |  |  |
+| `PricingScaleCheckingRule` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `PricingScaleBasisShort` |  | |  |  |
+| `PricingScaleLine` |  | |  |  |
+| `ConditionHasScales` |  | |  |  |
+| `_CntrlPurContrHdrCndnScales` | | ✓ | | |
+| `_CntrlPurContrHdrCndnValdty` | | ✓ | | |
+| `_CentralPurchaseContract` | | ✓ | | |
 
 ## Source Code
 

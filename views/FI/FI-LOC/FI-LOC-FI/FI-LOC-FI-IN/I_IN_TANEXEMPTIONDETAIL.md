@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `FinancialAccountType` | `koart` |
-| key `CustomerSupplierAccount` | `accno` |
-| key `TaxSection` | `seccode` |
-| key `WithholdingTaxType` | `witht` |
-| key `WithholdingTaxCode` | `wt_withcd` |
-| key `ExemptionDateBegin` | `wt_exdf` |
-| key `BusinessPartnerPanNumber` | `pan_no` |
-| `ExemptionDateEnd` | `wt_exdt` |
-| `WhldgTaxExmptCertificate` | `wt_exnr` |
-| `ExemptionRate` | `wt_exrt` |
-| `WithholdingTaxExemptionReason` | `wt_wtexrs` |
-| `IN_ThresholdAmount` | `fiwtin_exem_thr` |
-| `CompanyCodeCurrency` | `waers` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `FinancialAccountType` | ✓ | |  | `koart` |
+| `CustomerSupplierAccount` | ✓ | |  | `accno` |
+| `TaxSection` | ✓ | |  | `seccode` |
+| `WithholdingTaxType` | ✓ | |  | `witht` |
+| `WithholdingTaxCode` | ✓ | |  | `wt_withcd` |
+| `ExemptionDateBegin` | ✓ | |  | `wt_exdf` |
+| `BusinessPartnerPanNumber` | ✓ | |  | `pan_no` |
+| `ExemptionDateEnd` |  | |  | `wt_exdt` |
+| `WhldgTaxExmptCertificate` |  | |  | `wt_exnr` |
+| `ExemptionRate` |  | |  | `wt_exrt` |
+| `WithholdingTaxExemptionReason` |  | |  | `wt_wtexrs` |
+| `IN_ThresholdAmount` |  | |  | `fiwtin_exem_thr` |
+| `CompanyCodeCurrency` |  | |  | `waers` |
 
 ## Source Code
 

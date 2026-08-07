@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterialCategory` | `stpu.stlty` |
-| key `BillOfMaterial` | `cast( stpu.stlnr as char8 preserving type )` |
-| key `BillOfMaterialItemNodeNumber` | `stpu.stlkn` |
-| key `BOMItemInternalChangeCount` | `stpu.stpoz` |
-| key `BOMSubItemNumberValue` | `cast(stpu.uposz as char4 preserving type)` |
-| `BillOfMaterialSubItemQuantity` | `stpu.upmng` |
-| `BillOfMaterialItemUnit` | `Item.BillOfMaterialItemUnit` |
-| `BOMSubItemInstallationPoint` | `stpu.ebort` |
-| `BillOfMaterialSubItemText` | `stpu.uptxt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterialCategory` | ✓ | |  | `stlty` |
+| `BillOfMaterial` | ✓ | |  | `cast( stpu.stlnr as char8 preserving type )` |
+| `BillOfMaterialItemNodeNumber` | ✓ | |  | `stlkn` |
+| `BOMItemInternalChangeCount` | ✓ | |  | `stpoz` |
+| `BOMSubItemNumberValue` | ✓ | |  | `cast(stpu.uposz as char4 preserving type)` |
+| `BillOfMaterialSubItemQuantity` |  | |  | `upmng` |
+| `BillOfMaterialItemUnit` |  | |  |  |
+| `BOMSubItemInstallationPoint` |  | |  | `ebort` |
+| `BillOfMaterialSubItemText` |  | |  | `uptxt` |
 
 ## Source Code
 

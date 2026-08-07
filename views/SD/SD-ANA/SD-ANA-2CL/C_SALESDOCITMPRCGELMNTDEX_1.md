@@ -28,98 +28,98 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PricingDocument` | `PrcgElmnt.PricingDocument` |
-| key `PricingDocumentItem` | `PrcgElmnt.PricingDocumentItem` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `SalesDocument` | `SItm.SalesDocument` |
-| `SalesDocumentItem` | `SItm.SalesDocumentItem` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionCategory` | `ConditionCategory` |
-| `ConditionClass` | `ConditionClass` |
-| `SDDocumentCategory` | `SDoc.SDDocumentCategory` |
-| `SalesDocumentType` | `SDoc.SalesDocumentType` |
-| `SalesDocumentItemCategory` | `SItm.SalesDocumentItemCategory` |
-| `IsReturnsItem` | `SItm.IsReturnsItem` |
-| `CreationDate` | `SItm.CreationDate` |
-| `CreationTime` | `SItm.CreationTime` |
-| `LastChangeDate` | `SItm.LastChangeDate` |
-| `SalesOrganization` | `SDoc.SalesOrganization` |
-| `DistributionChannel` | `SDoc.DistributionChannel` |
-| `OrganizationDivision` | `SDoc.OrganizationDivision` |
-| `SalesGroup` | `SDoc.SalesGroup` |
-| `SalesOffice` | `SDoc.SalesOffice` |
-| `SoldToParty` | `SDoc.SoldToParty` |
-| `SDDocumentReason` | `SDoc.SDDocumentReason` |
-| `SalesDocumentDate` | `SDoc.SalesDocumentDate` |
-| `AdditionalCustomerGroup1` | `SDoc.AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `SDoc.AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `SDoc.AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `SDoc.AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `SDoc.AdditionalCustomerGroup5` |
-| `OrderQuantity` | `SItm.OrderQuantity` |
-| `OrderQuantityUnit` | `SItm.OrderQuantityUnit` |
-| `TargetQuantity` | `SItm.TargetQuantity` |
-| `TargetQuantityUnit` | `SItm.TargetQuantityUnit` |
-| `IncotermsClassification` | `SItm.IncotermsClassification` |
-| `IncotermsTransferLocation` | `SItm.IncotermsTransferLocation` |
-| `SalesDistrict` | `SItm.SalesDistrict` |
-| `CustomerGroup` | `SItm.CustomerGroup` |
-| `SalesDocumentRjcnReason` | `SItm.SalesDocumentRjcnReason` |
-| `ServicesRenderedDate` | `SItm.ServicesRenderedDate` |
-| `ShipToParty` | `SItm.ShipToParty` |
-| `PayerParty` | `SItm.PayerParty` |
-| `BillToParty` | `SItm.BillToParty` |
-| `SalesEmployee` | `SItm.SalesEmployee` |
-| `SalesEmployeeWorkAgreement` | `SItm.SalesEmployeeWorkAgreement` |
-| `ResponsibleEmployee` | `SItm.ResponsibleEmployee` |
-| `ResponsibleEmployeeWorkAgrmt` | `SItm.ResponsibleEmployeeWorkAgrmt` |
-| `Material` | `SItm.Material` |
-| `Product` | `SItm.Product` |
-| `Division` | `SItm.Division` |
-| `InternationalArticleNumber` | `SItm.InternationalArticleNumber` |
-| `OriginallyRequestedMaterial` | `SItm.OriginallyRequestedMaterial` |
-| `MaterialGroup` | `SItm.MaterialGroup` |
-| `ProductGroup` | `SItm.ProductGroup` |
-| `AdditionalMaterialGroup1` | `SItm.AdditionalMaterialGroup1` |
-| `AdditionalMaterialGroup2` | `SItm.AdditionalMaterialGroup2` |
-| `AdditionalMaterialGroup3` | `SItm.AdditionalMaterialGroup3` |
-| `AdditionalMaterialGroup4` | `SItm.AdditionalMaterialGroup4` |
-| `AdditionalMaterialGroup5` | `SItm.AdditionalMaterialGroup5` |
-| `TransactionCurrency` | `PrcgElmnt.TransactionCurrency` |
-| `ConditionAmount` | `ConditionAmount` |
-| `ConditionInactiveReason` | `ConditionInactiveReason` |
-| `ConditionIsForConfiguration` | `ConditionIsForConfiguration` |
-| `VariantCondition` | `VariantCondition` |
-| `PricingIncompletionStatus` | `PricingIncompletionStatus` |
-| `ConditionIsForStatistics` | `ConditionIsForStatistics` |
-| `ConditionOrigin` | `ConditionOrigin` |
-| `ExchangeRateType` | `SDoc.ExchangeRateType` |
-| `StatisticsCurrency` | `SDoc.StatisticsCurrency` |
-| `PricingDate` | `SItm.PricingDate` |
-| `ExchangeRateDate` | `SItm.ExchangeRateDate` |
-| `PriceDetnExchangeRate` | `SItm.PriceDetnExchangeRate` |
-| `StatisticalValueControl` | `SItm.StatisticalValueControl` |
-| `Currency` | `CoCd.Currency` |
-| `HeaderBillingBlockReason` | `SDoc.HeaderBillingBlockReason` |
-| `ItemBillingBlockReason` | `SItm.ItemBillingBlockReason` |
-| `BillingDocumentDate` | `SItm.BillingDocumentDate` |
-| `ItemIsBillingRelevant` | `SItm.ItemIsBillingRelevant` |
-| `BillingCompanyCode` | `SDoc.BillingCompanyCode` |
-| `CostCenter` | `SDoc.CostCenter` |
-| `ControllingArea` | `SDoc.ControllingArea` |
-| `CustomerAccountAssignmentGroup` | `SItm.CustomerAccountAssignmentGroup` |
-| `FiscalYear` | `SItm.FiscalYear` |
-| `FiscalPeriod` | `SItm.FiscalPeriod` |
-| `FiscalYearVariant` | `CoCd.FiscalYearVariant` |
-| `ReferenceSDDocument` | `SItm.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `SItm.ReferenceSDDocumentItem` |
-| `ReferenceSDDocumentCategory` | `SItm.ReferenceSDDocumentCategory` |
-| `TotalDeliveryStatus` | `SItm.TotalDeliveryStatus` |
-| `SDDocumentRejectionStatus` | `SItm.SDDocumentRejectionStatus` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PricingDocument` | ✓ | |  |  |
+| `PricingDocumentItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `SalesDocumentItemCategory` |  | |  |  |
+| `IsReturnsItem` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `SalesDocumentDate` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `OrderQuantity` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetQuantityUnit` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `SalesEmployee` |  | |  |  |
+| `SalesEmployeeWorkAgreement` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `ResponsibleEmployeeWorkAgrmt` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  |  |
+| `Division` |  | |  |  |
+| `InternationalArticleNumber` |  | |  |  |
+| `OriginallyRequestedMaterial` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionIsForConfiguration` |  | |  |  |
+| `VariantCondition` |  | |  |  |
+| `PricingIncompletionStatus` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `StatisticsCurrency` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `PriceDetnExchangeRate` |  | |  |  |
+| `StatisticalValueControl` |  | |  |  |
+| `Currency` |  | |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |
+| `ItemBillingBlockReason` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `ItemIsBillingRelevant` |  | |  |  |
+| `BillingCompanyCode` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `TotalDeliveryStatus` |  | |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |
 
 ## Associations
 

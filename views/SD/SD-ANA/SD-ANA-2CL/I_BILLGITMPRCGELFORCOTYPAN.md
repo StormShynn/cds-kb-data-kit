@@ -27,45 +27,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `BDI.BillingDocument` |
-| key `BillingDocumentItem` | `cast(BDI.BillingDocumentItem as billing_document_item)` |
-| key `PricingProcedureStep` | `PRCEL.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PRCEL.PricingProcedureCounter` |
-| `ConditionApplication` | `PRCEL.ConditionApplication` |
-| `ConditionType` | `PRCEL.ConditionType` |
-| `ConditionCategory` | `PRCEL.ConditionCategory` |
-| `ConditionClass` | `PRCEL.ConditionClass` |
-| `ConditionIsForStatistics` | `PRCEL.ConditionIsForStatistics` |
-| `ConditionControl` | `PRCEL.ConditionControl` |
-| `ConditionInactiveReason` | `PRCEL.ConditionInactiveReason` |
-| `ReturnItemProcessingType` | `cast(BDI.ReturnItemProcessingType as return_id_processing_type)` |
-| `SalesDocumentItemCategory` | `cast(BDI.SalesDocumentItemCategory as sales_document_item_category preserving type )` |
-| `SalesDocumentItemType` | `cast(BDI.SalesDocumentItemType as sales_document_item_type preserving type )` |
-| `BillingDocumentCategory` | `BDI.BillingDocumentCategory` |
-| `SDDocumentCategory` | `BDI.SDDocumentCategory` |
-| `BillingDocumentType` | `BDI.BillingDocumentType` |
-| `PricingDateTime` | `PRCEL.PricingDateTime` |
-| `BillingDocumentDate` | `BDI.BillingDocumentDate` |
-| `SalesOrganization` | `BDI.SalesOrganization` |
-| `DistributionChannel` | `BDI.DistributionChannel` |
-| `OrganizationDivision` | `cast(BDI.OrganizationDivision as organization_division preserving type)` |
-| `Division` | `BDI.Division` |
-| `SalesOffice` | `BDI.SalesOffice` |
-| `Product` | `BDI.Product` |
-| `ProductGroup` | `BDI.ProductGroup` |
-| `ConditionRecord` | `PRCEL.ConditionRecord` |
-| `ConditionSequentialNumber` | `PRCEL.ConditionSequentialNumber` |
-| `ConditionOrigin` | `PRCEL.ConditionOrigin` |
-| `ConditionIsManuallyChanged` | `PRCEL.ConditionIsManuallyChanged` |
-| `ConditionQuantity` | `PRCEL.ConditionQuantity` |
-| `ConditionBaseQuantity` | `PRCEL.ConditionBaseQuantity` |
-| `ConditionQuantityUnit` | `PRCEL.ConditionQuantityUnit` |
-| `ConditionCalculationType` | `PRCEL.ConditionCalculationType` |
-| `TransactionCurrency` | `PRCEL.TransactionCurrency` |
-| `ConditionAmount` | `cast(PRCEL.ConditionAmount as cond_amount)` |
-| `NormalizedConditionAmount` | `cast( case when ( BDI.SDDocumentCategory = 'M' or BDI.SDDocumentCategory = 'P' or BDI.SDDocumentCategory = '5' ) then ConditionAmount else case when ( BDI.SDDocumentCategory = 'O' or BDI.SDDocumentCategory = '6' ) then -1 * PRCEL.ConditionAmount end end as nrmlzd_cond_amount )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `BillingDocumentItem` | ✓ | |  | `cast(BDI.BillingDocumentItem as billing_document_item)` |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionControl` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ReturnItemProcessingType` |  | |  | `cast(BDI.ReturnItemProcessingType as return_id_processing_type)` |
+| `SalesDocumentItemCategory` |  | |  | `cast(BDI.SalesDocumentItemCategory as sales_document_item_category preserving type )` |
+| `SalesDocumentItemType` |  | |  | `cast(BDI.SalesDocumentItemType as sales_document_item_type preserving type )` |
+| `BillingDocumentCategory` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `PricingDateTime` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  | `cast(BDI.OrganizationDivision as organization_division preserving type)` |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `ConditionRecord` |  | |  |  |
+| `ConditionSequentialNumber` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionAmount` |  | |  | `cast(PRCEL.ConditionAmount as cond_amount)` |
+| `NormalizedConditionAmount` |  | |  | `cast( case when ( BDI.SDDocumentCategory = 'M' or BDI.SDDocumentCategory = 'P' or BDI.SDDocumentCategory = '5' ) then ConditionAmount else case when ( BDI.SDDocumentCategory = 'O' or BDI.SDDocumentCategory = '6' ) then -1 * PRCEL.ConditionAmount end end as nrmlzd_cond_amount )` |
 
 ## Source Code
 

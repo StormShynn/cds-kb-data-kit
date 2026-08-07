@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProductHierarchyTargetNode` | `parnode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductHierarchyTargetNode` |  | |  | `parnode` |
 
 ## Source Code
 

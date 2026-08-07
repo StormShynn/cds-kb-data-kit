@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcurementHubSourceSystem` | `extsourcesystem` |
-| key `ProcmtHubPurchasingGroup` | `purchasinggroup` |
-| `ProcmtHubPurchasingGroupName` | `purchasinggroupname` |
-| `ProcmtHubPurgGroupPhoneNumber` | `purchasinggroupphonenumber` |
-| `ProcmtHubPhoneNumber` | `phonenumber` |
-| `ProcmtHubPhoneNumberExtension` | `phonenumberextension` |
-| `ProcmtHubEmailAddress` | `emailaddress` |
-| `_ProcmtHubBackendSourceSystem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcurementHubSourceSystem` | ✓ | |  | `extsourcesystem` |
+| `ProcmtHubPurchasingGroup` | ✓ | |  | `purchasinggroup` |
+| `ProcmtHubPurchasingGroupName` |  | |  | `purchasinggroupname` |
+| `ProcmtHubPurgGroupPhoneNumber` |  | |  | `purchasinggroupphonenumber` |
+| `ProcmtHubPhoneNumber` |  | |  | `phonenumber` |
+| `ProcmtHubPhoneNumberExtension` |  | |  | `phonenumberextension` |
+| `ProcmtHubEmailAddress` |  | |  | `emailaddress` |
+| `_ProcmtHubBackendSourceSystem` | | ✓ | | |
 
 ## Associations
 

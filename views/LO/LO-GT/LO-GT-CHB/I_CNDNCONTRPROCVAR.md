@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CndnContrProcVar` | `process_variant` |
-| `SettlmtDfltApplSts` | `default_estatus` |
-| `SettlmtApplStsGrp` | `status_group` |
-| `CndnContrApprvlProc` | `approval_process` |
-| `_Text` | *Association* |
-| `_CndnContrApprvlProc` | *Association* |
-| `_SettlmtApplStsGrp` | *Association* |
-| `_SettlmtApplSts` | *Association* |
-| `_SettlmtApplStsGrpStsAssgmt` | *Association* |
-| `_CndnContrProcVarTypeAssgmt` | *Association* |
-| `_CndnContrProcVarPurAssgmt` | *Association* |
-| `_CndnContrProcVarSlsAssgmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CndnContrProcVar` | ✓ | |  | `process_variant` |
+| `SettlmtDfltApplSts` |  | |  | `default_estatus` |
+| `SettlmtApplStsGrp` |  | |  | `status_group` |
+| `CndnContrApprvlProc` |  | |  | `approval_process` |
+| `_Text` | | ✓ | | |
+| `_CndnContrApprvlProc` | | ✓ | | |
+| `_SettlmtApplStsGrp` | | ✓ | | |
+| `_SettlmtApplSts` | | ✓ | | |
+| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | |
+| `_CndnContrProcVarTypeAssgmt` | | ✓ | | |
+| `_CndnContrProcVarPurAssgmt` | | ✓ | | |
+| `_CndnContrProcVarSlsAssgmt` | | ✓ | | |
 
 ## Associations
 

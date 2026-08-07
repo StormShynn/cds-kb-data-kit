@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BillingWBSElementInternalID` | `ps_s4_pspnr` |
-| `OnAccountItemsAreIncluded` | `boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingWBSElementInternalID` |  | |  | `ps_s4_pspnr` |
+| `OnAccountItemsAreIncluded` |  | |  | `boolean` |
 
 ## Source Code
 

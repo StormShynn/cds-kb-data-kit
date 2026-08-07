@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `mean.matnr` |
-| key `AlternativeUnit` | `mean.meinh` |
-| key `ConsecutiveNumber` | `mean.lfnum` |
-| `ProductStandardID` | `mean.ean11` |
-| `InternationalArticleNumberCat` | `cast(mean.eantp as internationalarticlenumbercat preserving type )` |
-| `IsMainGlobalTradeItemNumber` | `mean.hpean` |
-| `_Product` | *Association* |
-| `_InternationalArticleNumber` | *Association* |
-| `_IntlArticleNumberCatText` | *Association* |
-| `_AlternativeUnit` | *Association* |
-| `_AlternativeUnitText` | *Association* |
-| `_ProductDescription_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `AlternativeUnit` | ✓ | |  | `meinh` |
+| `ConsecutiveNumber` | ✓ | |  | `lfnum` |
+| `ProductStandardID` |  | |  | `ean11` |
+| `InternationalArticleNumberCat` |  | |  | `cast(mean.eantp as internationalarticlenumbercat preserving type )` |
+| `IsMainGlobalTradeItemNumber` |  | |  | `hpean` |
+| `_Product` | | ✓ | | |
+| `_InternationalArticleNumber` | | ✓ | | |
+| `_IntlArticleNumberCatText` | | ✓ | | |
+| `_AlternativeUnit` | | ✓ | | |
+| `_AlternativeUnitText` | | ✓ | | |
+| `_ProductDescription_2` | | ✓ | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallDelivReltdBillgStatus` | `cast(left(dd07l.domvalue_l, 1 ) as fkstk preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallDelivReltdBillgStatus` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as fkstk preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

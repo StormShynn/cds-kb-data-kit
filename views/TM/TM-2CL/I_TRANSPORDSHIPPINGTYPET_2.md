@@ -26,13 +26,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdShippingType` | `shipping_type` |
-| key `Language` | `spras` |
-| `TranspOrdShippingTypeDesc` | `cast(text as /scmtms/vdm_tor_ship_type_desc preserving type )` |
-| `_Language` | *Association* |
-| `_TranspOrdShippingType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdShippingType` | ✓ | |  | `shipping_type` |
+| `Language` | ✓ | |  | `spras` |
+| `TranspOrdShippingTypeDesc` |  | |  | `cast(text as /scmtms/vdm_tor_ship_type_desc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdShippingType` | | ✓ | | |
 
 ## Associations
 

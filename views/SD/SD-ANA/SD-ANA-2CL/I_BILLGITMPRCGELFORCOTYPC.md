@@ -27,74 +27,74 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocument` | `BillingDocument` |
-| key `BillingDocumentItem` | `BillingDocumentItem` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionCategory` | `ConditionCategory` |
-| `ConditionClass` | `ConditionClass` |
-| `ConditionIsForStatistics` | `ConditionIsForStatistics` |
-| `ConditionControl` | `ConditionControl` |
-| `ConditionInactiveReason` | `ConditionInactiveReason` |
-| `ReturnItemProcessingType` | `ReturnItemProcessingType` |
-| `SalesDocumentItemCategory` | `SalesDocumentItemCategory` |
-| `SalesDocumentItemType` | `SalesDocumentItemType` |
-| `BillingDocumentCategory` | `BillingDocumentCategory` |
-| `SDDocumentCategory` | `SDDocumentCategory` |
-| `BillingDocumentType` | `BillingDocumentType` |
-| `PricingDateTime` | `PricingDateTime` |
-| `BillingDocumentDate` | `BillingDocumentDate` |
-| `BillingDocumentDateYear` | `cast(BillgDocCalDate.CalendarYear as billing_document_date_year)` |
-| `BillingDocDateYearQuarter` | `cast(BillgDocCalDate.YearQuarter as billing_doc_date_year_quarter)` |
-| `BillingDocDateYearMonth` | `cast(BillgDocCalDate.YearMonth as billing_doc_date_year_month)` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `OrganizationDivision` | `OrganizationDivision` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `PartnerCompany` | `_BillingDocument._SoldToParty.TradingPartner` |
-| `Product` | `Product` |
-| `ProductGroup` | `ProductGroup` |
-| `ConditionRecord` | `ConditionRecord` |
-| `ConditionSequentialNumber` | `ConditionSequentialNumber` |
-| `ConditionOrigin` | `ConditionOrigin` |
-| `ConditionIsManuallyChanged` | `ConditionIsManuallyChanged` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionCalculationType` | `ConditionCalculationType` |
-| `ConditionAmount` | `ConditionAmount` |
-| `ConditionAmountInDC` | `cast ( currency_conversion( amount => ConditionAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cond_amt_idc)` |
-| `NormalizedConditionAmount` | `NormalizedConditionAmount` |
-| `NormalizedConditionAmountInDC` | `cast ( currency_conversion( amount => NormalizedConditionAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as nrmlzd_cond_amt_idc)` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `DisplayCurrency` | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
-| `ConditionBaseQuantity` | `ConditionBaseQuantity` |
-| `_BillingDocument` | *Association* |
-| `_BillingDocumentCategory` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_BillingDocumentType` | *Association* |
-| `_SalesDocumentItemCategory` | *Association* |
-| `_SalesDocumentItemType` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_OrganizationDivision` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_Product` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_ConditionApplication` | *Association* |
-| `_PricingConditionType` | *Association* |
-| `_ConditionCategory` | *Association* |
-| `_ConditionClass` | *Association* |
-| `_ConditionControl` | *Association* |
-| `_ConditionInactiveReason` | *Association* |
-| `_ConditionOrigin` | *Association* |
-| `_ConditionCalculationType` | *Association* |
-| `_ConditionQuantityUnit` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocument` | ✓ | |  |  |
+| `BillingDocumentItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionCategory` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionControl` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ReturnItemProcessingType` |  | |  |  |
+| `SalesDocumentItemCategory` |  | |  |  |
+| `SalesDocumentItemType` |  | |  |  |
+| `BillingDocumentCategory` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `PricingDateTime` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `BillingDocumentDateYear` |  | |  | `cast(BillgDocCalDate.CalendarYear as billing_document_date_year)` |
+| `BillingDocDateYearQuarter` |  | |  | `cast(BillgDocCalDate.YearQuarter as billing_doc_date_year_quarter)` |
+| `BillingDocDateYearMonth` |  | |  | `cast(BillgDocCalDate.YearMonth as billing_doc_date_year_month)` |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `PartnerCompany` |  | | `_BillingDocument._SoldToParty` | `TradingPartner` |
+| `Product` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `ConditionRecord` |  | |  |  |
+| `ConditionSequentialNumber` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `ConditionAmountInDC` |  | |  | `cast ( currency_conversion( amount => ConditionAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cond_amt_idc)` |
+| `NormalizedConditionAmount` |  | |  |  |
+| `NormalizedConditionAmountInDC` |  | |  | `cast ( currency_conversion( amount => NormalizedConditionAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => BillingDocumentDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as nrmlzd_cond_amt_idc)` |
+| `TransactionCurrency` |  | |  |  |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
+| `ConditionBaseQuantity` |  | |  |  |
+| `_BillingDocument` | | ✓ | | |
+| `_BillingDocumentCategory` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_BillingDocumentType` | | ✓ | | |
+| `_SalesDocumentItemCategory` | | ✓ | | |
+| `_SalesDocumentItemType` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_OrganizationDivision` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_ConditionApplication` | | ✓ | | |
+| `_PricingConditionType` | | ✓ | | |
+| `_ConditionCategory` | | ✓ | | |
+| `_ConditionClass` | | ✓ | | |
+| `_ConditionControl` | | ✓ | | |
+| `_ConditionInactiveReason` | | ✓ | | |
+| `_ConditionOrigin` | | ✓ | | |
+| `_ConditionCalculationType` | | ✓ | | |
+| `_ConditionQuantityUnit` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Source Code
 

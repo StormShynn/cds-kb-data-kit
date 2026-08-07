@@ -31,110 +31,110 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentItemText` | `PurchasingDocumentItemText` |
-| `Material` | `Material` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `SupplierMaterialNumber` | `SupplierMaterialNumber` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Plant` | `Plant` |
-| `ManualDeliveryAddressID` | `ManualDeliveryAddressID` |
-| `ReferenceDeliveryAddressID` | `ReferenceDeliveryAddressID` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `WeightUnit` | `WeightUnit` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `SchedAgrmtCumQtyReconcileDate` | `SchedAgrmtCumQtyReconcileDate` |
-| `ItemLastTransmissionDate` | `ItemLastTransmissionDate` |
-| `NoDaysReminder1` | `NoDaysReminder1` |
-| `NoDaysReminder2` | `NoDaysReminder2` |
-| `NoDaysReminder3` | `NoDaysReminder3` |
-| `SupplierConfirmationControlKey` | `SupplierConfirmationControlKey` |
-| `PurgDocOrderAcknNumber` | `PurgDocOrderAcknNumber` |
-| `RequirementTracking` | `RequirementTracking` |
-| `IsOrderAcknRqd` | `IsOrderAcknRqd` |
-| `PurchasingPriceIsEstimated` | `PurgDocEstimatedPrice` |
-| `PriceIsToBePrinted` | `PriceIsToBePrinted` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `OrderPriceUnit` | `OrderPriceUnit` |
-| `ProductType` | `cast(ProductType as abap.char(4))` |
-| `MaterialType` | `MaterialType` |
-| `StorageLocation` | `StorageLocation` |
-| `PurchasingInfoRecordUpdateCode` | `IsInfoRecordUpdated` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
-| `PurgDocumentItemDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `UnderdelivTolrtdLmtRatioInPct` | `UnderdelivTolrtdLmtRatioInPct` |
-| `OverdelivTolrtdLmtRatioInPct` | `OverdelivTolrtdLmtRatioInPct` |
-| `UnlimitedOverdeliveryIsAllowed` | `UnlimitedOverdeliveryIsAllowed` |
-| `StockType` | `StockType` |
-| `TaxCode` | `TaxCode` |
-| `ShippingInstruction` | `ShippingInstruction` |
-| `IsInfoAtRegistration` | `IsInfoAtRegistration` |
-| `GoodsReceiptIsExpected` | `GoodsReceiptIsExpected` |
-| `GoodsReceiptIsNonValuated` | `GoodsReceiptIsNonValuated` |
-| `InvoiceIsExpected` | `InvoiceIsExpected` |
-| `InvoiceIsGoodsReceiptBased` | `InvoiceIsGoodsReceiptBased` |
-| `EvaldRcptSettlmtIsAllowed` | `EvaldRcptSettlmtIsAllowed` |
-| `MinRemainingShelfLife` | `MinRemainingShelfLife` |
-| `QualityMgmtCtrlKey` | `QualityMgmtCtrlKey` |
-| `QualityCertificateType` | `QualityCertificateType` |
-| `SchedAgrmtCumulativeQtyControl` | `SchedAgrmtCumulativeQtyControl` |
-| `CumulativeQuantityIsNotSent` | `CumulativeQuantityIsNotSent` |
-| `SchedgAgrmtRelCreationProfile` | `SchedgAgrmtRelCreationProfile` |
-| `IsRelevantForJITDelivSchedule` | `IsRelevantForJITDelivSchedule` |
-| `NextFcstDelivSchedSendingDate` | `NextFcstDelivSchedSendingDate` |
-| `NextJITDelivSchedSendingDate` | `NextJITDelivSchedSendingDate` |
-| `ScheduleLineFirmOrderInDays` | `ScheduleLineFirmOrderInDays` |
-| `SchedLineSemiFirmOrderInDays` | `SchedLineSemiFirmOrderInDays` |
-| `FirmTradeOffZoneBindMRP` | `FirmTradeOffZoneBindMRP` |
-| `PurchasingDocumentOrderDate` | `_SchedgAgrmtHdrAPI01.PurchasingDocumentOrderDate` |
-| `PurchasingOrganization` | `_SchedgAgrmtHdrAPI01.PurchasingOrganization` |
-| `PurchasingGroup` | `_SchedgAgrmtHdrAPI01.PurchasingGroup` |
-| `PurchasingDocumentType` | `_SchedgAgrmtHdrAPI01.PurchasingDocumentType` |
-| `Supplier` | `_SchedgAgrmtHdrAPI01.Supplier` |
-| `ValidityStartDate` | `_SchedgAgrmtHdrAPI01.ValidityStartDate` |
-| `ValidityEndDate` | `_SchedgAgrmtHdrAPI01.ValidityEndDate` |
-| `PurchasingDocumentDeletionCode` | `_SchedgAgrmtHdrAPI01.PurchasingDocumentDeletionCode` |
-| `TargetQuantity` | `TargetQuantity` |
-| `_ScheduleAgreementHdrDEX` | *Association* |
-| `_SchedAgrmtSchedLineDEX` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_PurchasingDocumentCategory` | *Association* |
-| `_Product` | *Association* |
-| `_ManufacturerMaterial` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_Plant` | *Association* |
-| `_ManualDeliveryAddress` | *Association* |
-| `_ReferenceDeliveryAddress` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_WeightUnit` | *Association* |
-| `_PurchaseRequisitionItem` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_OrderPriceUnit` | *Association* |
-| `_ProductTypeCode` | *Association* |
-| `_MaterialType` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_PurgInfoRecordUpdateCode` | *Association* |
-| `_PurchasingInfoRecord` | *Association* |
-| `_StockType` | *Association* |
-| `_ShippingInstruction` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_PurchasingDocumentType` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |
+| `Material` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `WeightUnit` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `SchedAgrmtCumQtyReconcileDate` |  | |  |  |
+| `ItemLastTransmissionDate` |  | |  |  |
+| `NoDaysReminder1` |  | |  |  |
+| `NoDaysReminder2` |  | |  |  |
+| `NoDaysReminder3` |  | |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |
+| `PurgDocOrderAcknNumber` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `IsOrderAcknRqd` |  | |  |  |
+| `PurchasingPriceIsEstimated` |  | |  | `PurgDocEstimatedPrice` |
+| `PriceIsToBePrinted` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `ProductType` |  | |  | `cast(ProductType as abap.char(4))` |
+| `MaterialType` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `PurchasingInfoRecordUpdateCode` |  | |  | `IsInfoRecordUpdated` |
+| `PurchasingInfoRecord` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `PurgDocumentItemDeletionCode` |  | |  | `PurchasingDocumentDeletionCode` |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
+| `StockType` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `ShippingInstruction` |  | |  |  |
+| `IsInfoAtRegistration` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
+| `MinRemainingShelfLife` |  | |  |  |
+| `QualityMgmtCtrlKey` |  | |  |  |
+| `QualityCertificateType` |  | |  |  |
+| `SchedAgrmtCumulativeQtyControl` |  | |  |  |
+| `CumulativeQuantityIsNotSent` |  | |  |  |
+| `SchedgAgrmtRelCreationProfile` |  | |  |  |
+| `IsRelevantForJITDelivSchedule` |  | |  |  |
+| `NextFcstDelivSchedSendingDate` |  | |  |  |
+| `NextJITDelivSchedSendingDate` |  | |  |  |
+| `ScheduleLineFirmOrderInDays` |  | |  |  |
+| `SchedLineSemiFirmOrderInDays` |  | |  |  |
+| `FirmTradeOffZoneBindMRP` |  | |  |  |
+| `PurchasingDocumentOrderDate` |  | | `_SchedgAgrmtHdrAPI01` | `PurchasingDocumentOrderDate` |
+| `PurchasingOrganization` |  | | `_SchedgAgrmtHdrAPI01` | `PurchasingOrganization` |
+| `PurchasingGroup` |  | | `_SchedgAgrmtHdrAPI01` | `PurchasingGroup` |
+| `PurchasingDocumentType` |  | | `_SchedgAgrmtHdrAPI01` | `PurchasingDocumentType` |
+| `Supplier` |  | | `_SchedgAgrmtHdrAPI01` | `Supplier` |
+| `ValidityStartDate` |  | | `_SchedgAgrmtHdrAPI01` | `ValidityStartDate` |
+| `ValidityEndDate` |  | | `_SchedgAgrmtHdrAPI01` | `ValidityEndDate` |
+| `PurchasingDocumentDeletionCode` |  | | `_SchedgAgrmtHdrAPI01` | `PurchasingDocumentDeletionCode` |
+| `TargetQuantity` |  | |  |  |
+| `_ScheduleAgreementHdrDEX` | | ✓ | | |
+| `_SchedAgrmtSchedLineDEX` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_PurchasingDocumentCategory` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ManufacturerMaterial` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ManualDeliveryAddress` | | ✓ | | |
+| `_ReferenceDeliveryAddress` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_WeightUnit` | | ✓ | | |
+| `_PurchaseRequisitionItem` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_OrderPriceUnit` | | ✓ | | |
+| `_ProductTypeCode` | | ✓ | | |
+| `_MaterialType` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_PurgInfoRecordUpdateCode` | | ✓ | | |
+| `_PurchasingInfoRecord` | | ✓ | | |
+| `_StockType` | | ✓ | | |
+| `_ShippingInstruction` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_PurchasingDocumentType` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

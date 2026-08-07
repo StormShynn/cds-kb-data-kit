@@ -30,22 +30,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `mapl.Material` |
-| key `Plant` | `mapl.Plant` |
-| key `BillOfOperationsType` | `mapl.BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `mapl.BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `mapl.BillOfOperationsVariant` |
-| key `BOOToMaterialInternalID` | `mapl.BOOToMaterialInternalID` |
-| `_BillOfOperations` | *Association* |
-| `_BOOMaterialAssgmtChgSt` | *Association* |
-| `_Product` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_ProductPlant2` | *Association* |
-| `_Plant` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `Material` |
+| `Plant` | ✓ | |  |  |
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |
+| `BOOToMaterialInternalID` | ✓ | |  |  |
+| `_BillOfOperations` | | ✓ | | |
+| `_BOOMaterialAssgmtChgSt` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_ProductPlant2` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
 
 ## Associations
 

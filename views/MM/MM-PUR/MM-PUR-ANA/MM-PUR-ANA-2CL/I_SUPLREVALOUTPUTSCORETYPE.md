@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScoreOutputActionType` | `cast ( dd07l.domvalue_l as mmpur_ana_de_output_act_typ )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScoreOutputActionType` | ✓ | |  | `cast ( dd07l.domvalue_l as mmpur_ana_de_output_act_typ )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

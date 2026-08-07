@@ -33,64 +33,64 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectBillingRequestItemUUID` | `ProjectBillingRequestItemUUID` |
-| `ProjBillgElmntEntrItmUUID` | `ProjBillgElmntEntrItmUUID` |
-| `ProjectBillingRequestUUID` | `ProjectBillingRequestUUID` |
-| `ProjectBillingElementUUID` | `ProjectBillingElementUUID` |
-| `SalesDocumentItem` | `SalesDocumentItem` |
-| `ProjBillingRequestItemLongText` | `ProjBillingRequestItemLongText` |
-| `ToBePostponedQuantity` | `ToBePostponedQuantity` |
-| `ToBePostponedAmtInTransacCrcy` | `ToBePostponedAmtInTransacCrcy` |
-| `ToBePostponedAmtInProjectCrcy` | `ToBePostponedAmtInProjectCrcy` |
-| `ToBePostponedAmtInGlobalCrcy` | `ToBePostponedAmtInGlobalCrcy` |
-| `ToBeWrittenOffQuantity` | `ToBeWrittenOffQuantity` |
-| `ToBeWrittenOffAmtInTransCrcy` | `ToBeWrittenOffAmtInTransCrcy` |
-| `ToBeWrittenOffAmtInProjectCrcy` | `ToBeWrittenOffAmtInProjectCrcy` |
-| `ToBeWrittenOffAmtInGlobalCrcy` | `ToBeWrittenOffAmtInGlobalCrcy` |
-| `BillableRevenueAmtInDocCrcy` | `BillableRevenueAmtInDocCrcy` |
-| `ProjBillgReqItmCrtedByUser` | `ProjBillgReqItmCrtedByUser` |
-| `ProjBillgReqItmCrtedAtDteTme` | `ProjBillgReqItmCrtedAtDteTme` |
-| `ProjBillgReqItmLastChgdBy` | `ProjBillgReqItmLastChgdBy` |
-| `ProjBillgReqItmLastChgdDteTme` | `ProjBillgReqItmLastChgdDteTme` |
-| `ServicesRenderedDate` | `ServicesRenderedDate` |
-| `ToBeBilledQuantity` | `ToBeBilledQuantity` |
-| `ToBeBilledAmtInTransCrcy` | `ToBeBilledAmtInTransCrcy` |
-| `ToBeBilledAmtInProjCurrency` | `ToBeBilledAmtInProjCurrency` |
-| `ToBeBilledAmtInGlobCurrency` | `ToBeBilledAmtInGlobCurrency` |
-| `OpenQuantity` | `OpenQuantity` |
-| `OpenAmountInTransCrcy` | `OpenAmountInTransCrcy` |
-| `OpenAmountInProjectCurrency` | `OpenAmountInProjectCurrency` |
-| `OpenAmountInGlobalCurrency` | `OpenAmountInGlobalCurrency` |
-| `OpenRevenueAmtInDocCrcy` | `OpenRevenueAmtInDocCrcy` |
-| `NetPriceAmountInDocCrcy` | `NetPriceAmountInDocCrcy` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `NetPriceQuantityUnit` | `NetPriceQuantityUnit` |
-| `Material` | `Material` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `GlobalCurrency` | `GlobalCurrency` |
-| `ProjectCurrency` | `ProjectCurrency` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `QuantityUnit` | `QuantityUnit` |
-| `ProjBillgReqItmSourceType` | `ProjBillgReqItmSourceType` |
-| `ProjectBillingRequestItemDesc` | `ProjectBillingRequestItemDesc` |
-| `ProjectBillingCategory` | `ProjectBillingCategory` |
-| `ManualBillgSelForPrjBlgReqItem` | `ManualBillgSelForPrjBlgReqItem` |
-| `_PrjBlgElmEntrJrnlEntrLink` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_ProjectCurrency` | *Association* |
-| `_GlobalCurrency` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_ProjectBillingCategory` | *Association* |
-| `_ProjBillgReqItmSrceType` | *Association* |
-| `_TransactionCurrencyText` | *Association* |
-| `_ProjectCurrencyText` | *Association* |
-| `_GlobalCurrencyText` | *Association* |
-| `_DocumentCurrencyText` | *Association* |
-| `_ProjectBillingCategoryText` | *Association* |
-| `_ProjBillgReqItmSrceTypeText` | *Association* |
-| `_ProjectBillingRequestTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectBillingRequestItemUUID` | ✓ | |  |  |
+| `ProjBillgElmntEntrItmUUID` |  | |  |  |
+| `ProjectBillingRequestUUID` |  | |  |  |
+| `ProjectBillingElementUUID` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
+| `ProjBillingRequestItemLongText` |  | |  |  |
+| `ToBePostponedQuantity` |  | |  |  |
+| `ToBePostponedAmtInTransacCrcy` |  | |  |  |
+| `ToBePostponedAmtInProjectCrcy` |  | |  |  |
+| `ToBePostponedAmtInGlobalCrcy` |  | |  |  |
+| `ToBeWrittenOffQuantity` |  | |  |  |
+| `ToBeWrittenOffAmtInTransCrcy` |  | |  |  |
+| `ToBeWrittenOffAmtInProjectCrcy` |  | |  |  |
+| `ToBeWrittenOffAmtInGlobalCrcy` |  | |  |  |
+| `BillableRevenueAmtInDocCrcy` |  | |  |  |
+| `ProjBillgReqItmCrtedByUser` |  | |  |  |
+| `ProjBillgReqItmCrtedAtDteTme` |  | |  |  |
+| `ProjBillgReqItmLastChgdBy` |  | |  |  |
+| `ProjBillgReqItmLastChgdDteTme` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `ToBeBilledQuantity` |  | |  |  |
+| `ToBeBilledAmtInTransCrcy` |  | |  |  |
+| `ToBeBilledAmtInProjCurrency` |  | |  |  |
+| `ToBeBilledAmtInGlobCurrency` |  | |  |  |
+| `OpenQuantity` |  | |  |  |
+| `OpenAmountInTransCrcy` |  | |  |  |
+| `OpenAmountInProjectCurrency` |  | |  |  |
+| `OpenAmountInGlobalCurrency` |  | |  |  |
+| `OpenRevenueAmtInDocCrcy` |  | |  |  |
+| `NetPriceAmountInDocCrcy` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |
+| `Material` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `GlobalCurrency` |  | |  |  |
+| `ProjectCurrency` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `ProjBillgReqItmSourceType` |  | |  |  |
+| `ProjectBillingRequestItemDesc` |  | |  |  |
+| `ProjectBillingCategory` |  | |  |  |
+| `ManualBillgSelForPrjBlgReqItem` |  | |  |  |
+| `_PrjBlgElmEntrJrnlEntrLink` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_ProjectCurrency` | | ✓ | | |
+| `_GlobalCurrency` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_ProjectBillingCategory` | | ✓ | | |
+| `_ProjBillgReqItmSrceType` | | ✓ | | |
+| `_TransactionCurrencyText` | | ✓ | | |
+| `_ProjectCurrencyText` | | ✓ | | |
+| `_GlobalCurrencyText` | | ✓ | | |
+| `_DocumentCurrencyText` | | ✓ | | |
+| `_ProjectBillingCategoryText` | | ✓ | | |
+| `_ProjBillgReqItmSrceTypeText` | | ✓ | | |
+| `_ProjectBillingRequestTP` | | ✓ | | |
 
 ## Source Code
 

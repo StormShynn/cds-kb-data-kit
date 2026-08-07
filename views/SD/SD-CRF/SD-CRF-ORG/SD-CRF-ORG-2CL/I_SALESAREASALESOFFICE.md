@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrganization` | `vkorg` |
-| key `DistributionChannel` | `vtweg` |
-| key `OrganizationDivision` | `spart` |
-| key `SalesOffice` | `vkbur` |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_OrganizationDivision` | *Association* |
-| `_SalesOffice` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  | `vkorg` |
+| `DistributionChannel` | ✓ | |  | `vtweg` |
+| `OrganizationDivision` | ✓ | |  | `spart` |
+| `SalesOffice` | ✓ | |  | `vkbur` |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_OrganizationDivision` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
 
 ## Associations
 

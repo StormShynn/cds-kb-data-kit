@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Country` | `Country` |
-| key `ProductSalesTaxCategory` | `ProductSalesTaxCategory` |
-| key `ProductSalesOrg` | `ProductSalesOrg` |
-| key `ProductDistributionChnl` | `ProductDistributionChnl` |
-| `ProductTaxClassification` | `ProductTaxClassification` |
-| `_Product` | *Association* |
-| `_ProductSalesDelivery` | *Association* |
-| `_CountryName` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Country` | ✓ | |  |  |
+| `ProductSalesTaxCategory` | ✓ | |  |  |
+| `ProductSalesOrg` | ✓ | |  |  |
+| `ProductDistributionChnl` | ✓ | |  |  |
+| `ProductTaxClassification` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductSalesDelivery` | | ✓ | | |
+| `_CountryName` | | ✓ | | |
 
 ## Source Code
 

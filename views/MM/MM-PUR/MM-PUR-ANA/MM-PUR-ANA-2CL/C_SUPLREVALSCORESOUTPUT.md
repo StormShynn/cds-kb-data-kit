@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScoresOutputUUID` | `SuplrEvalScoresOutputUUID` |
-| `Supplier` | `Supplier` |
-| `SupplierName` | `_Supplier.SupplierName` |
-| `IdentifierOfScoreHistoryJobRun` | `IdentifierOfScoreHistoryJobRun` |
-| `SuplrEvalScoreOutputActionType` | `SuplrEvalScoreOutputActionType` |
-| `SuplrEvalScoreOutpActnTypeText` | `_OutputScoreTypeText._Text[1: Language = $session.system_language].SuplrEvalScoreOutpActnTypeText` |
-| `SuplrEvalScoreOutputStatus` | `SuplrEvalScoreOutputStatus` |
-| `SuplrEvalScoreOutputStatusText` | `_OutputStatusText._Text[1: Language = $session.system_language].SuplrEvalScoreOutputStatusText` |
-| `StartDate` | `StartDate` |
-| `EndDate` | `EndDate` |
-| `SuplrEvalScoreOutpTriggerDate` | `SuplrEvalScoreOutpTriggerDate` |
-| `CreatedByUser` | `UserDescription` |
-| `SuplrEvalScoreOutpCreationDate` | `SuplrEvalScoreOutpCreationDate` |
-| `DisplayCurrency` | `cast('' as waers)` |
-| `_OutputScoreTypeText` | *Association* |
-| `_OutputStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScoresOutputUUID` | ✓ | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierName` |  | | `_Supplier` | `SupplierName` |
+| `IdentifierOfScoreHistoryJobRun` |  | |  |  |
+| `SuplrEvalScoreOutputActionType` |  | |  |  |
+| `SuplrEvalScoreOutpActnTypeText` |  | |  | `_OutputScoreTypeText._Text[1: Language = $session.system_language].SuplrEvalScoreOutpActnTypeText` |
+| `SuplrEvalScoreOutputStatus` |  | |  |  |
+| `SuplrEvalScoreOutputStatusText` |  | |  | `_OutputStatusText._Text[1: Language = $session.system_language].SuplrEvalScoreOutputStatusText` |
+| `StartDate` |  | |  |  |
+| `EndDate` |  | |  |  |
+| `SuplrEvalScoreOutpTriggerDate` |  | |  |  |
+| `CreatedByUser` |  | |  | `UserDescription` |
+| `SuplrEvalScoreOutpCreationDate` |  | |  |  |
+| `DisplayCurrency` |  | |  | `cast('' as waers)` |
+| `_OutputScoreTypeText` | | ✓ | | |
+| `_OutputStatusText` | | ✓ | | |
 
 ## Associations
 

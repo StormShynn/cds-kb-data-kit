@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WeekDay` | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as vdm_weekday )` |
-| key `Language` | `cast(ddlanguage as spras)` |
-| `WeekDayName` | `dd07t.ddtext` |
-| `_WeekDay` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WeekDay` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as vdm_weekday )` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras)` |
+| `WeekDayName` |  | |  | `ddtext` |
+| `_WeekDay` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

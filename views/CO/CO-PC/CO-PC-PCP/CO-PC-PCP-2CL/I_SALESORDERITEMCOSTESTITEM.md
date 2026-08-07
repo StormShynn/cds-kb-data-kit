@@ -31,66 +31,66 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingReferenceObject` | `CostingReferenceObject` |
-| key `CostEstimate` | `CostEstimate` |
-| key `CostingType` | `CostingType` |
-| key `CostingDate` | `CostingDate` |
-| key `CostingVersion` | `CostingVersion` |
-| key `ValuationVariant` | `ValuationVariant` |
-| key `CostIsEnteredManually` | `CostIsEnteredManually` |
-| key `CostingItem` | `CostingItem` |
-| `CostingItemCategory` | `CostingItemCategory` |
-| `CostElement` | `CostElement` |
-| `CostOriginGroup` | `CostOriginGroup` |
-| `Plant` | `Plant` |
-| `Product` | `Product` |
-| `ValuationType` | `ValuationType` |
-| `Creditor` | `Creditor` |
-| `GlobalCurrency` | `_SalesOrderItemCostEstimate.GlobalCurrency` |
-| `TotalPriceInGlobalCurrency` | `cast(TotalPriceInInCtrlgAreaCrcy as fpc_total_price_global_crcy preserving type)` |
-| `FixedPriceInGlobalCurrency` | `cast(FixedPriceInCtrlgAreaCrcy as fpc_fixed_price_global_crcy preserving type)` |
-| `TotalAmountInGlobalCurrency` | `cast(TotalAmountInCtrlgAreaCrcy as fis_ksl)` |
-| `FixedAmountInGlobalCrcy` | `cast(FixedAmountInCtrlgAreaCrcy as fis_kfsl)` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `TotalPriceInCompanyCodeCrcy` | `TotalPriceInCompanyCodeCrcy` |
-| `FixedPriceInCompanyCodeCrcy` | `FixedPriceInCompanyCodeCrcy` |
-| `TotalAmountInCoCodeCrcy` | `TotalAmountInCoCodeCrcy` |
-| `FixedAmountInCoCodeCrcy` | `FixedAmountInCoCodeCrcy` |
-| `UnitOfMeasure` | `BaseUnit` |
-| `Quantity` | `QuantityInBaseUnit` |
-| `CostingPriceQtyUnit` | `CostingPriceQtyUnit` |
-| `CostingPriceUnitQty` | `CostingPriceUnitQty` |
-| `CostingValuationStrategy` | `CostingValuationStrategy` |
-| `ProductValnPurgInfoRecdStrgy` | `ProductValnPurgInfoRecdStrgy` |
-| `BillOfMaterialItemNumber` | `BillOfMaterialItemNumber` |
-| `CostingItemIsAssembly` | `CostingItemIsAssembly` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `CostCenter` | `CostCenter` |
-| `ProfitCenter` | `ProfitCenter` |
-| `Operation` | `Operation` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingInfoRecordCategory` | `PurchasingInfoRecordCategory` |
-| `PurchasingDocument` | `PurchasingDocument` |
-| `PurchasingDocumentItem` | `PurchasingDocumentItem` |
-| `IsLotSizeIndependent` | `IsLotSizeIndependent` |
-| `HasError` | `HasError` |
-| `TransferCostEstimate` | `TransferCostEstimate` |
-| `TransferCostingType` | `TransferCostingType` |
-| `TransferCostingDate` | `TransferCostingDate` |
-| `TransferCostingVersion` | `TransferCostingVersion` |
-| `TransferValuationVariant` | `TransferValuationVariant` |
-| `_SalesOrderItemCostEstimate` | *Association* |
-| `_CostingType` | *Association* |
-| `_CostingVersion` | *Association* |
-| `_ValuationVariant` | *Association* |
-| `_Product` | *Association* |
-| `_GlobalCurrency` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_CostingUnitOfMeasure` | *Association* |
-| `_UnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingReferenceObject` | ✓ | |  |  |
+| `CostEstimate` | ✓ | |  |  |
+| `CostingType` | ✓ | |  |  |
+| `CostingDate` | ✓ | |  |  |
+| `CostingVersion` | ✓ | |  |  |
+| `ValuationVariant` | ✓ | |  |  |
+| `CostIsEnteredManually` | ✓ | |  |  |
+| `CostingItem` | ✓ | |  |  |
+| `CostingItemCategory` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `CostOriginGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Product` |  | |  |  |
+| `ValuationType` |  | |  |  |
+| `Creditor` |  | |  |  |
+| `GlobalCurrency` |  | | `_SalesOrderItemCostEstimate` | `GlobalCurrency` |
+| `TotalPriceInGlobalCurrency` |  | |  | `cast(TotalPriceInInCtrlgAreaCrcy as fpc_total_price_global_crcy preserving type)` |
+| `FixedPriceInGlobalCurrency` |  | |  | `cast(FixedPriceInCtrlgAreaCrcy as fpc_fixed_price_global_crcy preserving type)` |
+| `TotalAmountInGlobalCurrency` |  | |  | `cast(TotalAmountInCtrlgAreaCrcy as fis_ksl)` |
+| `FixedAmountInGlobalCrcy` |  | |  | `cast(FixedAmountInCtrlgAreaCrcy as fis_kfsl)` |
+| `CompanyCodeCurrency` |  | |  |  |
+| `TotalPriceInCompanyCodeCrcy` |  | |  |  |
+| `FixedPriceInCompanyCodeCrcy` |  | |  |  |
+| `TotalAmountInCoCodeCrcy` |  | |  |  |
+| `FixedAmountInCoCodeCrcy` |  | |  |  |
+| `UnitOfMeasure` |  | |  | `BaseUnit` |
+| `Quantity` |  | |  | `QuantityInBaseUnit` |
+| `CostingPriceQtyUnit` |  | |  |  |
+| `CostingPriceUnitQty` |  | |  |  |
+| `CostingValuationStrategy` |  | |  |  |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |
+| `CostingItemIsAssembly` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `Operation` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingInfoRecordCategory` |  | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `IsLotSizeIndependent` |  | |  |  |
+| `HasError` |  | |  |  |
+| `TransferCostEstimate` |  | |  |  |
+| `TransferCostingType` |  | |  |  |
+| `TransferCostingDate` |  | |  |  |
+| `TransferCostingVersion` |  | |  |  |
+| `TransferValuationVariant` |  | |  |  |
+| `_SalesOrderItemCostEstimate` | | ✓ | | |
+| `_CostingType` | | ✓ | | |
+| `_CostingVersion` | | ✓ | | |
+| `_ValuationVariant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_GlobalCurrency` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_CostingUnitOfMeasure` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
 
 ## Associations
 

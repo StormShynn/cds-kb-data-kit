@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JntOpgAgrmtEquityGrp.CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmtEquityGrp.JntOpgAgrmt` |
-| key `JntOpgAgrmtEquityGrp` | `JntOpgAgrmtEquityGrp.JntOpgAgrmtEquityGrp` |
-| `JntOpgAgrmtEquityGrpText` | `JntOpgAgrmtEquityGrp.JntOpgAgrmtEquityGrpText` |
-| `JntVntrOperatedShare` | `JntOpgAgrmtEquityGrp.JntVntrOperatedShare` |
-| `JntVntrNonOperatedShare` | `JntOpgAgrmtEquityGrp.JntVntrNonOperatedShare` |
-| `JntVntrEquityGrpIsSuspended` | `JntOpgAgrmtEquityGrp.JntVntrEquityGrpIsSuspended` |
-| `JntVntrEquityGrpSuspendedPerd` | `JntOpgAgrmtEquityGrp.JntVntrEquityGrpSuspendedPerd` |
-| `JntVntrEquityGrpSuspendedYr` | `JntOpgAgrmtEquityGrp.JntVntrEquityGrpSuspendedYr` |
-| `JntVntrEquityGrpIsNotSuspended` | `JntOpgAgrmtEquityGrp.JntVntrEquityGrpIsNotSuspended` |
-| `JntVntrGrpNotSuspendedPerd` | `JntOpgAgrmtEquityGrp.JntVntrGrpNotSuspendedPerd` |
-| `JntVntrGrpNotSuspendedYr` | `JntOpgAgrmtEquityGrp.JntVntrGrpNotSuspendedYr` |
-| `JntVntrNetProfitIntrstGrp` | `JntOpgAgrmtEquityGrp.JntVntrNetProfitIntrstGrp` |
-| `JointVentureType` | `JntOpgAgrmtEquityGrp.JointVentureType` |
-| `_JntOpgAgrmt` | *Association* |
-| `_JntOpgAgrmtPartShr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  |  |
+| `JntOpgAgrmtEquityGrpText` |  | |  |  |
+| `JntVntrOperatedShare` |  | |  |  |
+| `JntVntrNonOperatedShare` |  | |  |  |
+| `JntVntrEquityGrpIsSuspended` |  | |  |  |
+| `JntVntrEquityGrpSuspendedPerd` |  | |  |  |
+| `JntVntrEquityGrpSuspendedYr` |  | |  |  |
+| `JntVntrEquityGrpIsNotSuspended` |  | |  |  |
+| `JntVntrGrpNotSuspendedPerd` |  | |  |  |
+| `JntVntrGrpNotSuspendedYr` |  | |  |  |
+| `JntVntrNetProfitIntrstGrp` |  | |  |  |
+| `JointVentureType` |  | |  |  |
+| `_JntOpgAgrmt` | | ✓ | | |
+| `_JntOpgAgrmtPartShr` | | ✓ | | |
 
 ## Source Code
 

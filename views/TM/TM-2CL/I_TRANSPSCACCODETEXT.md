@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspSCACCode` | `scac` |
-| key `Language` | `spras` |
-| `TranspSCACCodeDesc` | `cast(text as /scmtms/vdm_scac_desc preserving type)` |
-| `_Language` | *Association* |
-| `_TranspSCACCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspSCACCode` | ✓ | |  | `scac` |
+| `Language` | ✓ | |  | `spras` |
+| `TranspSCACCodeDesc` |  | |  | `cast(text as /scmtms/vdm_scac_desc preserving type)` |
+| `_Language` | | ✓ | | |
+| `_TranspSCACCode` | | ✓ | | |
 
 ## Associations
 

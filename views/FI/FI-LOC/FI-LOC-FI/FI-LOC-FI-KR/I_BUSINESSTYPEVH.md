@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessType` | `bustype.gestyp` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessType` | ✓ | |  | `gestyp` |
 
 ## Source Code
 

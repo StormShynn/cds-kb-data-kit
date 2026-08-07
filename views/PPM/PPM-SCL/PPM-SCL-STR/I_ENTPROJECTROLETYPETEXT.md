@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `ProjectRoleType` | `participant_role` |
-| `ProjectRoleTypeText` | `role_text` |
-| `_Language` | *Association* |
-| `_ProjectRoleType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `ProjectRoleType` | ✓ | |  | `participant_role` |
+| `ProjectRoleTypeText` |  | |  | `role_text` |
+| `_Language` | | ✓ | | |
+| `_ProjectRoleType` | | ✓ | | |
 
 ## Associations
 

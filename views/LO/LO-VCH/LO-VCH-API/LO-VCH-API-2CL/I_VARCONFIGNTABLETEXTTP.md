@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VarConfignTblName` | `VarConfignTblName` |
-| key `LanguageCode` | `LanguageCode` |
-| `VarConfignTblDescription` | `VarConfignTblDescription` |
-| `_Table` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |
+| `LanguageCode` | ✓ | |  |  |
+| `VarConfignTblDescription` |  | |  |  |
+| `_Table` | | ✓ | | |
 
 ## Source Code
 

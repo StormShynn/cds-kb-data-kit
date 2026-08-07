@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `FinancialTransactionType` | `cast( trtyp as fis_rmvct preserving type )` |
-| `FinancialTransactionTypeName` | `txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `FinancialTransactionType` | ✓ | |  | `cast( trtyp as fis_rmvct preserving type )` |
+| `FinancialTransactionTypeName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CASEPAPreNotifOriginCode` | `cast( left( domvalue_l, 2 ) as pnhkf_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CASEPAPreNotifOriginCode` | ✓ | |  | `cast( left( domvalue_l, 2 ) as pnhkf_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

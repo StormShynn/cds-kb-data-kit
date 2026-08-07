@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EntProjDemandCopyIsRequested` | `boole_d` |
-| `EntProjSettlmtRuleCpyIsReqd` | `boole_d` |
-| `Project` | `/s4ppm/project_id` |
-| `ProjectName` | `/s4ppm/tv_name` |
-| `ProjectStartDate` | `/s4ppm/tv_ltst_start_date` |
-| `ProjectEndDate` | `/s4ppm/tv_ltst_end_date` |
-| `CustomerUUID` | `bu_partner_guid` |
-| `EnterpriseProjectServiceOrg` | `/s4ppm/pws_ws_org_unit_id` |
-| `ResponsibleCostCenter` | `ps_fkstl` |
-| `ProjectManagerUUID` | `bu_partner_guid` |
-| `ProjectCurrency` | `ps_s4_waers` |
-| `EntProjectIsConfidential` | `/s4ppm/tv_project_confidential` |
-| `RestrictedTimePosting` | `/s4ppm/restrict_time_posting` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjDemandCopyIsRequested` |  | |  | `boole_d` |
+| `EntProjSettlmtRuleCpyIsReqd` |  | |  | `boole_d` |
+| `Project` |  | |  | `/s4ppm/project_id` |
+| `ProjectName` |  | |  | `/s4ppm/tv_name` |
+| `ProjectStartDate` |  | |  | `/s4ppm/tv_ltst_start_date` |
+| `ProjectEndDate` |  | |  | `/s4ppm/tv_ltst_end_date` |
+| `CustomerUUID` |  | |  | `bu_partner_guid` |
+| `EnterpriseProjectServiceOrg` |  | |  | `/s4ppm/pws_ws_org_unit_id` |
+| `ResponsibleCostCenter` |  | |  | `ps_fkstl` |
+| `ProjectManagerUUID` |  | |  | `bu_partner_guid` |
+| `ProjectCurrency` |  | |  | `ps_s4_waers` |
+| `EntProjectIsConfidential` |  | |  | `/s4ppm/tv_project_confidential` |
+| `RestrictedTimePosting` |  | |  | `/s4ppm/restrict_time_posting` |
 
 ## Source Code
 

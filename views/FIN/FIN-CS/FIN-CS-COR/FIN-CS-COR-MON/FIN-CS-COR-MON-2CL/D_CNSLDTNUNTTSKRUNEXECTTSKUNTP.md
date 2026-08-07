@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConsolidationUnit` | `fincs_consolidationunit` |
-| `_ExecuteTask` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnit` |  | |  | `fincs_consolidationunit` |
+| `_ExecuteTask` | | ✓ | | |
 
 ## Source Code
 

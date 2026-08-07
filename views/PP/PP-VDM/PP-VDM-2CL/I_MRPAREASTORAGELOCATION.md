@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPArea` | `mdlg.berid` |
-| key `MRPAreaPlant` | `mdlg.werks` |
-| key `MRPAreaStorageLocation` | `mdlg.lgort` |
-| `_MRPArea` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPArea` | ✓ | |  | `berid` |
+| `MRPAreaPlant` | ✓ | |  | `werks` |
+| `MRPAreaStorageLocation` | ✓ | |  | `lgort` |
+| `_MRPArea` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
 
 ## Associations
 

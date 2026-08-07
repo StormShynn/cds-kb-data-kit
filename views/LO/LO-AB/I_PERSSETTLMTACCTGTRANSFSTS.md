@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PersSettlmtAcctgTransfSts` | `cast (dd07l.domvalue_l as wfbsk )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PersSettlmtAcctgTransfSts` | ✓ | |  | `cast (dd07l.domvalue_l as wfbsk )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

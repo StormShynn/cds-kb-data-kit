@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `BusVolTableGroup` | `bvtab_group` |
-| `BusVolTableGroupDesc` | `text` |
-| `_BusVolTableGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BusVolTableGroup` | ✓ | |  | `bvtab_group` |
+| `BusVolTableGroupDesc` |  | |  | `text` |
+| `_BusVolTableGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

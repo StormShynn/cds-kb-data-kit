@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `TimeSheetTaskType` | `tasktype` |
-| `TimeSheetTaskTypeText` | `text` |
-| `_TimeSheetTaskType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `TimeSheetTaskType` | ✓ | |  | `tasktype` |
+| `TimeSheetTaskTypeText` |  | |  | `text` |
+| `_TimeSheetTaskType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

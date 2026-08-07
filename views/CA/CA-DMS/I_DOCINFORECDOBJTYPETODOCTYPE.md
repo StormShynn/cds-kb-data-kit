@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `tdwo.dokar` |
-| key `LinkedSAPObject` | `tdwo.dokob` |
-| `ConfigDeprecationCode` | `tdwo.configdeprecationcode` |
-| `_Text` | *Association* |
-| `_DocType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
+| `LinkedSAPObject` | ✓ | |  | `dokob` |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |
+| `_Text` | | ✓ | | |
+| `_DocType` | | ✓ | | |
 
 ## Associations
 

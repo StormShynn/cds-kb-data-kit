@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdnRsceToolControlProfile` | `prfl.steuf` |
-| `ProdnRsceToolSchedgIsActv` | `prfl.xterm` |
-| `ProdnRsceToolCostingIsActive` | `prfl.xkalk` |
-| `ProdnRsceToolConfIsActive` | `prfl.xrueck` |
-| `ProdnRsceToolPrintIsActive` | `prfl.xdruck` |
-| `ProdnRsceToolExpandPrintIsActv` | `prfl.xexpand` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdnRsceToolControlProfile` | ✓ | |  | `steuf` |
+| `ProdnRsceToolSchedgIsActv` |  | |  | `xterm` |
+| `ProdnRsceToolCostingIsActive` |  | |  | `xkalk` |
+| `ProdnRsceToolConfIsActive` |  | |  | `xrueck` |
+| `ProdnRsceToolPrintIsActive` |  | |  | `xdruck` |
+| `ProdnRsceToolExpandPrintIsActv` |  | |  | `xexpand` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

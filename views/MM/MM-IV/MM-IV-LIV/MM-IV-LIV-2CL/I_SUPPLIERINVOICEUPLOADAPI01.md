@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoiceUploadUUID` | `SupplierInvoiceUploadUUID` |
-| `CompanyCode` | `CompanyCode` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `SuplrInvcUploadDescription` | `SuplrInvcUploadDescription` |
-| `_CompanyCode` | *Association* |
-| `_UploadedInvoice` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoiceUploadUUID` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `SuplrInvcUploadDescription` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_UploadedInvoice` | | ✓ | | |
 
 ## Associations
 

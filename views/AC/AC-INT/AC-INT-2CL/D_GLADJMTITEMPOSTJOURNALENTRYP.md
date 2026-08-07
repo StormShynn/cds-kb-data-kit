@@ -29,66 +29,66 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `GeneralLedgerAdjustmentItem` | `fis_docln_numc` |
-| `GLAccount` | `hkont` |
-| `Supplier` | `lifnr` |
-| `Customer` | `kunnr` |
-| `HouseBank` | `hbkid` |
-| `HouseBankAccount` | `hktid` |
-| `DocumentItemText` | `sgtxt` |
-| `AssignmentReference` | `acpi_zuonr` |
-| `ProfitCenter` | `prctr` |
-| `PartnerProfitCenter` | `pprctr` |
-| `OriginProfitCenter` | `fins_origin_prctr` |
-| `Segment` | `fb_segment` |
-| `PartnerSegment` | `fb_psegment` |
-| `CostCenter` | `kostl` |
-| `CostCtrActivityType` | `lstar` |
-| `WBSElement` | `ps_posid` |
-| `MasterFixedAsset` | `anln1` |
-| `FixedAsset` | `anln2` |
-| `SalesOrder` | `kdauf` |
-| `SalesOrderItem` | `kdpos` |
-| `FunctionalArea` | `fkber` |
-| `ServiceDocumentType` | `fco_srvdoc_type` |
-| `ServiceDocument` | `fco_srvdoc_id` |
-| `ServiceDocumentItem` | `fco_srvdoc_item_id` |
-| `PersonnelNumber` | `pernr_d` |
-| `WorkItem` | `/cpd/pfp_workitem_id` |
-| `TaxCode` | `mwskz` |
-| `Plant` | `werks_d` |
-| `Material` | `matnr40` |
-| `BaseUnit` | `meins` |
-| `menge_d` | `} Quantity : menge_d` |
-| `PartnerCompany` | `rassc` |
-| `DebitCreditCode` | `shkzg` |
-| `TransactionCurrency` | `fins_currw` |
-| `BalanceTransactionCurrency` | `fins_currt` |
-| `CompanyCodeCurrency` | `fins_currh` |
-| `GlobalCurrency` | `fins_currk` |
-| `FreeDefinedCurrency1` | `fins_curr1` |
-| `FreeDefinedCurrency2` | `fins_curr2` |
-| `FreeDefinedCurrency3` | `fins_curr3` |
-| `FreeDefinedCurrency4` | `fins_curr4` |
-| `FreeDefinedCurrency5` | `fins_curr5` |
-| `FreeDefinedCurrency6` | `fins_curr6` |
-| `FreeDefinedCurrency7` | `fins_curr7` |
-| `FreeDefinedCurrency8` | `fins_curr8` |
-| `AmountInTransactionCurrency` | `fins_vwcur12` |
-| `AmountInBalanceTransacCrcy` | `fins_vtcur12` |
-| `AmountInCompanyCodeCurrency` | `fins_vhcur12` |
-| `AmountInGlobalCurrency` | `fins_vkcur12` |
-| `AmountInFreeDefinedCurrency1` | `fins_vocur12` |
-| `AmountInFreeDefinedCurrency2` | `fins_vvcur12` |
-| `AmountInFreeDefinedCurrency3` | `fins_vbcur12` |
-| `AmountInFreeDefinedCurrency4` | `fins_vccur12` |
-| `AmountInFreeDefinedCurrency5` | `fins_vdcur12` |
-| `AmountInFreeDefinedCurrency6` | `fins_vecur12` |
-| `AmountInFreeDefinedCurrency7` | `fins_vfcur12` |
-| `AmountInFreeDefinedCurrency8` | `fins_vgcur12` |
-| `_ChildToParent` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GeneralLedgerAdjustmentItem` |  | |  | `fis_docln_numc` |
+| `GLAccount` |  | |  | `hkont` |
+| `Supplier` |  | |  | `lifnr` |
+| `Customer` |  | |  | `kunnr` |
+| `HouseBank` |  | |  | `hbkid` |
+| `HouseBankAccount` |  | |  | `hktid` |
+| `DocumentItemText` |  | |  | `sgtxt` |
+| `AssignmentReference` |  | |  | `acpi_zuonr` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `PartnerProfitCenter` |  | |  | `pprctr` |
+| `OriginProfitCenter` |  | |  | `fins_origin_prctr` |
+| `Segment` |  | |  | `fb_segment` |
+| `PartnerSegment` |  | |  | `fb_psegment` |
+| `CostCenter` |  | |  | `kostl` |
+| `CostCtrActivityType` |  | |  | `lstar` |
+| `WBSElement` |  | |  | `ps_posid` |
+| `MasterFixedAsset` |  | |  | `anln1` |
+| `FixedAsset` |  | |  | `anln2` |
+| `SalesOrder` |  | |  | `kdauf` |
+| `SalesOrderItem` |  | |  | `kdpos` |
+| `FunctionalArea` |  | |  | `fkber` |
+| `ServiceDocumentType` |  | |  | `fco_srvdoc_type` |
+| `ServiceDocument` |  | |  | `fco_srvdoc_id` |
+| `ServiceDocumentItem` |  | |  | `fco_srvdoc_item_id` |
+| `PersonnelNumber` |  | |  | `pernr_d` |
+| `WorkItem` |  | |  | `/cpd/pfp_workitem_id` |
+| `TaxCode` |  | |  | `mwskz` |
+| `Plant` |  | |  | `werks_d` |
+| `Material` |  | |  | `matnr40` |
+| `BaseUnit` |  | |  | `meins` |
+| `menge_d` |  | |  | `} Quantity : menge_d` |
+| `PartnerCompany` |  | |  | `rassc` |
+| `DebitCreditCode` |  | |  | `shkzg` |
+| `TransactionCurrency` |  | |  | `fins_currw` |
+| `BalanceTransactionCurrency` |  | |  | `fins_currt` |
+| `CompanyCodeCurrency` |  | |  | `fins_currh` |
+| `GlobalCurrency` |  | |  | `fins_currk` |
+| `FreeDefinedCurrency1` |  | |  | `fins_curr1` |
+| `FreeDefinedCurrency2` |  | |  | `fins_curr2` |
+| `FreeDefinedCurrency3` |  | |  | `fins_curr3` |
+| `FreeDefinedCurrency4` |  | |  | `fins_curr4` |
+| `FreeDefinedCurrency5` |  | |  | `fins_curr5` |
+| `FreeDefinedCurrency6` |  | |  | `fins_curr6` |
+| `FreeDefinedCurrency7` |  | |  | `fins_curr7` |
+| `FreeDefinedCurrency8` |  | |  | `fins_curr8` |
+| `AmountInTransactionCurrency` |  | |  | `fins_vwcur12` |
+| `AmountInBalanceTransacCrcy` |  | |  | `fins_vtcur12` |
+| `AmountInCompanyCodeCurrency` |  | |  | `fins_vhcur12` |
+| `AmountInGlobalCurrency` |  | |  | `fins_vkcur12` |
+| `AmountInFreeDefinedCurrency1` |  | |  | `fins_vocur12` |
+| `AmountInFreeDefinedCurrency2` |  | |  | `fins_vvcur12` |
+| `AmountInFreeDefinedCurrency3` |  | |  | `fins_vbcur12` |
+| `AmountInFreeDefinedCurrency4` |  | |  | `fins_vccur12` |
+| `AmountInFreeDefinedCurrency5` |  | |  | `fins_vdcur12` |
+| `AmountInFreeDefinedCurrency6` |  | |  | `fins_vecur12` |
+| `AmountInFreeDefinedCurrency7` |  | |  | `fins_vfcur12` |
+| `AmountInFreeDefinedCurrency8` |  | |  | `fins_vgcur12` |
+| `_ChildToParent` | | ✓ | | |
 
 ## Source Code
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `NFItem.docnum` |
-| key `BR_NotaFiscalItem` | `NFItem.itmnum` |
-| `BaseUnit` | `NFItem.meins` |
-| `_BaseUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |
+| `BaseUnit` |  | |  | `meins` |
+| `_BaseUnit` | | ✓ | | |
 
 ## Associations
 

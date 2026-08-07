@@ -27,40 +27,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcInternalID` | `cast ( CharacteristicValue.atinn as atinn_no_conv preserving type )` |
-| key `CharcValuePositionNumber` | `CharacteristicValue.atzhl` |
-| key `TimeIntervalNumber` | `CharacteristicValue.adzhl` |
-| `CharcValueParentPositionNumber` | `CharacteristicValue.atzhh` |
-| `CharcValueHasChild` | `CharacteristicValue.atwhi` |
-| `CharcValueIntervalType` | `CharacteristicValue.atcod` |
-| `CharcValue` | `CharacteristicValue.atwrt` |
-| `CharcFromNumericValue` | `CharacteristicValue.atflv` |
-| `CharcToNumericValue` | `CharacteristicValue.atflb` |
-| `IsDefaultValue` | `CharacteristicValue.atstd` |
-| `CharcFromNumericValueUnit` | `CharacteristicValue.atawe` |
-| `CharcToNumericValueUnit` | `CharacteristicValue.ataw1` |
-| `CharcFromDecimalValue` | `CharacteristicValue.dec_from` |
-| `CharcToDecimalValue` | `CharacteristicValue.dec_to` |
-| `CharcFromDate` | `CharacteristicValue.date_from` |
-| `CharcToDate` | `CharacteristicValue.date_to` |
-| `CharcFromTime` | `CharacteristicValue.time_from` |
-| `CharcToTime` | `CharacteristicValue.time_to` |
-| `CharcFromAmount` | `CharacteristicValue.curr_from` |
-| `CharcToAmount` | `CharacteristicValue.curr_to` |
-| `Currency` | `CharacteristicValue.currency` |
-| `LongTextID` | `CharacteristicValue.txtnr` |
-| `ChangeNumber` | `CharacteristicValue.aennr` |
-| `ValidityStartDate` | `CharacteristicValue.datuv` |
-| `ValidityEndDate` | `CharacteristicValue.datub` |
-| `IsDeleted` | `CharacteristicValue.lkenz` |
-| `DocumentInfoRecordDocNumber` | `CharacteristicValue.doknr` |
-| `DocumentInfoRecordDocPart` | `CharacteristicValue.doktl` |
-| `DocumentInfoRecordDocVersion` | `CharacteristicValue.dokvr` |
-| `DocumentInfoRecordDocType` | `CharacteristicValue.dokar` |
-| `CharcIdentificationCode` | `CharacteristicValue.atidn` |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  | `cast ( CharacteristicValue.atinn as atinn_no_conv preserving type )` |
+| `CharcValuePositionNumber` | ✓ | |  | `atzhl` |
+| `TimeIntervalNumber` | ✓ | |  | `adzhl` |
+| `CharcValueParentPositionNumber` |  | |  | `atzhh` |
+| `CharcValueHasChild` |  | |  | `atwhi` |
+| `CharcValueIntervalType` |  | |  | `atcod` |
+| `CharcValue` |  | |  | `atwrt` |
+| `CharcFromNumericValue` |  | |  | `atflv` |
+| `CharcToNumericValue` |  | |  | `atflb` |
+| `IsDefaultValue` |  | |  | `atstd` |
+| `CharcFromNumericValueUnit` |  | |  | `atawe` |
+| `CharcToNumericValueUnit` |  | |  | `ataw1` |
+| `CharcFromDecimalValue` |  | |  | `dec_from` |
+| `CharcToDecimalValue` |  | |  | `dec_to` |
+| `CharcFromDate` |  | |  | `date_from` |
+| `CharcToDate` |  | |  | `date_to` |
+| `CharcFromTime` |  | |  | `time_from` |
+| `CharcToTime` |  | |  | `time_to` |
+| `CharcFromAmount` |  | |  | `curr_from` |
+| `CharcToAmount` |  | |  | `curr_to` |
+| `Currency` |  | |  | `currency` |
+| `LongTextID` |  | |  | `txtnr` |
+| `ChangeNumber` |  | |  | `aennr` |
+| `ValidityStartDate` |  | |  | `datuv` |
+| `ValidityEndDate` |  | |  | `datub` |
+| `IsDeleted` |  | |  | `lkenz` |
+| `DocumentInfoRecordDocNumber` |  | |  | `doknr` |
+| `DocumentInfoRecordDocPart` |  | |  | `doktl` |
+| `DocumentInfoRecordDocVersion` |  | |  | `dokvr` |
+| `DocumentInfoRecordDocType` |  | |  | `dokar` |
+| `CharcIdentificationCode` |  | |  | `atidn` |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

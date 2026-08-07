@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `StorageLocation` | `lgort` |
-| `StorageLocationName` | `cast(lgobe as lgort_name)` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `Division` | `spart` |
-| `IsStorLocAuthznCheckActive` | `xblgo` |
-| `HandlingUnitIsRequired` | `xhupf` |
-| `ConfigDeprecationCode` | `configdeprecationcode` |
-| `_Plant` | *Association* |
-| `_ConfignDeprecationCode` | *Association* |
-| `_ConfignDeprecationCodeText` | *Association* |
-| `_SalesOrganizationText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `StorageLocation` | ✓ | |  | `lgort` |
+| `StorageLocationName` |  | |  | `cast(lgobe as lgort_name)` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `Division` |  | |  | `spart` |
+| `IsStorLocAuthznCheckActive` |  | |  | `xblgo` |
+| `HandlingUnitIsRequired` |  | |  | `xhupf` |
+| `ConfigDeprecationCode` |  | |  | `configdeprecationcode` |
+| `_Plant` | | ✓ | | |
+| `_ConfignDeprecationCode` | | ✓ | | |
+| `_ConfignDeprecationCodeText` | | ✓ | | |
+| `_SalesOrganizationText` | | ✓ | | |
 
 ## Associations
 

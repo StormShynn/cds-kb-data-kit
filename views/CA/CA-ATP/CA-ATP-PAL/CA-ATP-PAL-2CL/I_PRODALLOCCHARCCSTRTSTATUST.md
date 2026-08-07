@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocCharcConstraintStatus` | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccharcconstraintstatus preserving type )` |
-| key `Language` | `ddlanguage` |
-| `ProdAllocCharcCstrtStatusDesc` | `cast( ddtext as prodalloccharccstrtstatusdesc preserving type )` |
-| `_Language` | *Association* |
-| `_ProdAllocCharcCstrtStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocCharcConstraintStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccharcconstraintstatus preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ProdAllocCharcCstrtStatusDesc` |  | |  | `cast( ddtext as prodalloccharccstrtstatusdesc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_ProdAllocCharcCstrtStatus` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationTask` | `cast( cacti as fincs_tsk preserving type )` |
-| key `Language` | `langu` |
-| `ConsolidationTaskText` | `cast(txt as fincs_task_txt preserving type )` |
-| `_CnsldtnTask` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationTask` | ✓ | |  | `cast( cacti as fincs_tsk preserving type )` |
+| `Language` | ✓ | |  | `langu` |
+| `ConsolidationTaskText` |  | |  | `cast(txt as fincs_task_txt preserving type )` |
+| `_CnsldtnTask` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

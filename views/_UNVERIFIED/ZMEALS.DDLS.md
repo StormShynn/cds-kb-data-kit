@@ -30,13 +30,13 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AirlineID` | `smeal.carrid` |
-| key `MealNumber` | `smeal.mealnumber` |
-| `MealType` | `smeal.mealtype` |
-| `Text` | `coalesce( _lgText.Text, _slText.Text )` |
-| `_airline` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AirlineID` | ✓ | |  | `carrid` |
+| `MealNumber` | ✓ | |  | `mealnumber` |
+| `MealType` |  | |  | `mealtype` |
+| `Text` |  | |  | `coalesce( _lgText.Text, _slText.Text )` |
+| `_airline` | | ✓ | | |
 
 ## Associations
 

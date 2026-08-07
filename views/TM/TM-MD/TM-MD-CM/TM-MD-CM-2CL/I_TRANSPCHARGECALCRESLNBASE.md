@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChargeCalcReslnBase` | `cast(resolution_base as /scmtms/vdm_tcm_res_base preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChargeCalcReslnBase` | ✓ | |  | `cast(resolution_base as /scmtms/vdm_tcm_res_base preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalLocation` | `tplnr` |
-| key `Plant` | `werks` |
-| key `BillOfMaterialVariantUsage` | `stlan` |
-| key `BillOfMaterial` | `stlnr` |
-| key `BillOfMaterialVariant` | `stlal` |
-| `BillOfMaterialCategory` | `cast ('T' as stlty preserving type)` |
-| `_BillOfMaterialUsage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  | `tplnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
+| `BillOfMaterial` | ✓ | |  | `stlnr` |
+| `BillOfMaterialVariant` | ✓ | |  | `stlal` |
+| `BillOfMaterialCategory` |  | |  | `cast ('T' as stlty preserving type)` |
+| `_BillOfMaterialUsage` | | ✓ | | |
 
 ## Associations
 

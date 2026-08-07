@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenture` | `JointVenture` |
-| key `JointVentureEquityGroup` | `JointVentureEquityGroup` |
-| key `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `JntVntrSubstituteCostCtr` | `JntVntrSubstituteCostCtr` |
-| `JntVntrSubstituteWBSElmntIntID` | `JntVntrSubstituteWBSElmntIntID` |
-| `JointVentureSubstituteOrder` | `JointVentureSubstituteOrder` |
-| `_JointVentureEquityGroup` | *Association* |
-| `_JointVenture` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JointVentureEquityGroup` | ✓ | |  |  |
+| `JointVentureRecoveryCode` | ✓ | |  |  |
+| `JntVntrSubstituteCostCtr` |  | |  |  |
+| `JntVntrSubstituteWBSElmntIntID` |  | |  |  |
+| `JointVentureSubstituteOrder` |  | |  |  |
+| `_JointVentureEquityGroup` | | ✓ | | |
+| `_JointVenture` | | ✓ | | |
 
 ## Source Code
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `Segment` | `segment` |
-| `SegmentName` | `cast (name as fis_segment_name preserving type )as SegmentName` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `Segment` | ✓ | |  | `segment` |
+| `SegmentName` |  | |  | `cast (name as fis_segment_name preserving type )as SegmentName` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

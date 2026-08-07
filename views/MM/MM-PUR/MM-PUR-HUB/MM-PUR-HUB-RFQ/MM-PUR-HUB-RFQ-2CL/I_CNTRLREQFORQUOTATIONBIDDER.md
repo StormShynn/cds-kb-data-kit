@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralRequestForQuotation` | `CentralRequestForQuotation` |
-| key `PartnerCounter` | `PartnerCounter` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Supplier` | `Supplier` |
-| `_CentralRequestForQuotation` | *Association* |
-| `_PartnerFunction` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralRequestForQuotation` | ✓ | |  |  |
+| `PartnerCounter` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `Supplier` |  | |  |  |
+| `_CentralRequestForQuotation` | | ✓ | | |
+| `_PartnerFunction` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

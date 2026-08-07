@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `MaintenanceStrategy` | `strat` |
-| key `MaintenancePackage` | `paket` |
-| `MaintenancePackageText` | `ktex1` |
-| `MaintPackageHierarchyShortText` | `ktxhi` |
-| `MaintenanceCycleShortText` | `kzyk1` |
-| `StartOffsetShortText` | `koff1` |
-| `_MaintenanceStrategy` | *Association* |
-| `_MaintenancePackage` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `MaintenanceStrategy` | ✓ | |  | `strat` |
+| `MaintenancePackage` | ✓ | |  | `paket` |
+| `MaintenancePackageText` |  | |  | `ktex1` |
+| `MaintPackageHierarchyShortText` |  | |  | `ktxhi` |
+| `MaintenanceCycleShortText` |  | |  | `kzyk1` |
+| `StartOffsetShortText` |  | |  | `koff1` |
+| `_MaintenanceStrategy` | | ✓ | | |
+| `_MaintenancePackage` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

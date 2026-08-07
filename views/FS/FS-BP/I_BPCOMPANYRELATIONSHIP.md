@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPCompanyRelationship` | `cast ( dd07l.domvalue_l as bp_comp_re )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPCompanyRelationship` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_comp_re )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeZoneIANACode` | `ianatzone` |
-| `TimeZoneID` | `tzone` |
-| `IANACodeIsCustDefinedDefault` | `flagdefault` |
-| `IANACodeIsSAPDefinedDefault` | `flagsapdefault` |
-| `_TimeZone` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeZoneIANACode` | ✓ | |  | `ianatzone` |
+| `TimeZoneID` |  | |  | `tzone` |
+| `IANACodeIsCustDefinedDefault` |  | |  | `flagdefault` |
+| `IANACodeIsSAPDefinedDefault` |  | |  | `flagsapdefault` |
+| `_TimeZone` | | ✓ | | |
 
 ## Associations
 

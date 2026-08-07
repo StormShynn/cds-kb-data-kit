@@ -31,29 +31,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `t001.bukrs` |
-| `CompanyCodeName` | `t001.butxt` |
-| `ControllingArea` | `tka02.kokrs` |
-| `CityName` | `t001.ort01` |
-| `Country` | `t001.land1` |
-| `Currency` | `t001.waers` |
-| `Language` | `t001.spras` |
-| `ChartOfAccounts` | `t001.ktopl` |
-| `FiscalYearVariant` | `t001.periv` |
-| `Company` | `t001.rcomp` |
-| `CreditControlArea` | `t001.kkber` |
-| `CountryChartOfAccounts` | `cast(t001.ktop2 as fis_ktop2 preserving type)` |
-| `FinancialManagementArea` | `t001.fikrs` |
-| `_Currency` | *Association* |
-| `_Country` | *Association* |
-| `_Language` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_FiscalYearVariant` | *Association* |
-| `_CountryChartOfAccounts` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CreditControlArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CompanyCodeName` |  | |  | `butxt` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `CityName` |  | |  | `ort01` |
+| `Country` |  | |  | `land1` |
+| `Currency` |  | |  | `waers` |
+| `Language` |  | |  | `spras` |
+| `ChartOfAccounts` |  | |  | `ktopl` |
+| `FiscalYearVariant` |  | |  | `periv` |
+| `Company` |  | |  | `rcomp` |
+| `CreditControlArea` |  | |  | `kkber` |
+| `CountryChartOfAccounts` |  | |  | `cast(t001.ktop2 as fis_ktop2 preserving type)` |
+| `FinancialManagementArea` |  | |  | `fikrs` |
+| `_Currency` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_CountryChartOfAccounts` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CreditControlArea` | | ✓ | | |
 
 ## Associations
 

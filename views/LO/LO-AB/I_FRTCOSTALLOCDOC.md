@@ -27,76 +27,76 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `FreightCostAllocationDocument` | `}] } key FreightCostAllocationDocument` |
-| `SettlmtDocType` | `}] } SettlmtDocType` |
-| `SettlmtDocCat` | `SettlmtDocCat` |
-| `SettlmtProcessType` | `}] } SettlmtProcessType` |
-| `SettlmtProcessCat` | `SettlmtProcessCat` |
-| `PostingDate` | `PostingDate` |
-| `FrtCostAllocAcctgTransfSts` | `FrtCostAllocAcctgTransfSts` |
-| `DocumentDate` | `DocumentDate` |
-| `DocumentReferenceID` | `DocumentReferenceID` |
-| `AssignmentReference` | `AssignmentReference` |
-| `SettlmtApplSts` | `SettlmtApplSts` |
-| `SettlmtApplStsGrp` | `SettlmtApplStsGrp` |
-| `PricingProcedure` | `PricingProcedure` |
-| `PricingDocument` | `PricingDocument` |
-| `CompanyCode` | `}] } CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `FrtCostAllocDocCurrency` | `FrtCostAllocDocCurrency` |
-| `ExchangeRate` | `ExchangeRate` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `ExchangeRateIsFixed` | `ExchangeRateIsFixed` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `FrtCostAllocDocTotGrossAmount` | `FrtCostAllocDocTotGrossAmount` |
-| `FrtCostAllocDocTotalNetAmount` | `FrtCostAllocDocTotalNetAmount` |
-| `FrtCostAllocDocIsReversed` | `FrtCostAllocDocIsReversed` |
-| `RvsdFrtCostAllocDoc` | `}] } RvsdFrtCostAllocDoc` |
-| `FrtCostAllocDocActivityReason` | `FrtCostAllocDocActivityReason` |
-| `SettlmtClassificationCat` | `SettlmtClassificationCat` |
-| `FiscalPeriod` | `FiscalPeriod` |
-| `FrtCostAllocDocIncmpltnsRsn` | `FrtCostAllocDocIncmpltnsRsn` |
-| `FrtCostAllocBusProcCat` | `FrtCostAllocBusProcCat` |
-| `JournalEntryCreationDate` | `JournalEntryCreationDate` |
-| `JournalEntryCreationTime` | `JournalEntryCreationTime` |
-| `_FrtCostAllocItm` | *Association* |
-| `_SettlmtDocType` | *Association* |
-| `_SettlmtProcessType` | *Association* |
-| `_SettlmtApplSts` | *Association* |
-| `_SettlmtApplStsGrp` | *Association* |
-| `_SettlmtApplStsGrpStsAssgmt` | *Association* |
-| `_FrtCostAllocPrcgElmnt` | *Association* |
-| `_RvsdFrtCostAllocDoc` | *Association* |
-| `_SettlmtDocCat` | *Association* |
-| `_SettlmtProcessCat` | *Association* |
-| `_FrtCostAllocAcctgTransfSts` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_FrtCostAllocDocCurrency` | *Association* |
-| `_ExchangeRateType` | *Association* |
-| `_FrtCostAllocDocActivityReason` | *Association* |
-| `_SettlmtClassificationCat` | *Association* |
-| `_FrtCostAllocDocIncmpltnsRsn` | *Association* |
-| `_FrtCostAllocBusProcCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FreightCostAllocationDocument` |  | |  | `}] } key FreightCostAllocationDocument` |
+| `SettlmtDocType` |  | |  | `}] } SettlmtDocType` |
+| `SettlmtDocCat` |  | |  |  |
+| `SettlmtProcessType` |  | |  | `}] } SettlmtProcessType` |
+| `SettlmtProcessCat` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `FrtCostAllocAcctgTransfSts` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `DocumentReferenceID` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `SettlmtApplSts` |  | |  |  |
+| `SettlmtApplStsGrp` |  | |  |  |
+| `PricingProcedure` |  | |  |  |
+| `PricingDocument` |  | |  |  |
+| `CompanyCode` |  | |  | `}] } CompanyCode` |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `FrtCostAllocDocCurrency` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `FrtCostAllocDocTotGrossAmount` |  | |  |  |
+| `FrtCostAllocDocTotalNetAmount` |  | |  |  |
+| `FrtCostAllocDocIsReversed` |  | |  |  |
+| `RvsdFrtCostAllocDoc` |  | |  | `}] } RvsdFrtCostAllocDoc` |
+| `FrtCostAllocDocActivityReason` |  | |  |  |
+| `SettlmtClassificationCat` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FrtCostAllocDocIncmpltnsRsn` |  | |  |  |
+| `FrtCostAllocBusProcCat` |  | |  |  |
+| `JournalEntryCreationDate` |  | |  |  |
+| `JournalEntryCreationTime` |  | |  |  |
+| `_FrtCostAllocItm` | | ✓ | | |
+| `_SettlmtDocType` | | ✓ | | |
+| `_SettlmtProcessType` | | ✓ | | |
+| `_SettlmtApplSts` | | ✓ | | |
+| `_SettlmtApplStsGrp` | | ✓ | | |
+| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | |
+| `_FrtCostAllocPrcgElmnt` | | ✓ | | |
+| `_RvsdFrtCostAllocDoc` | | ✓ | | |
+| `_SettlmtDocCat` | | ✓ | | |
+| `_SettlmtProcessCat` | | ✓ | | |
+| `_FrtCostAllocAcctgTransfSts` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_FrtCostAllocDocCurrency` | | ✓ | | |
+| `_ExchangeRateType` | | ✓ | | |
+| `_FrtCostAllocDocActivityReason` | | ✓ | | |
+| `_SettlmtClassificationCat` | | ✓ | | |
+| `_FrtCostAllocDocIncmpltnsRsn` | | ✓ | | |
+| `_FrtCostAllocBusProcCat` | | ✓ | | |
 
 ## Associations
 

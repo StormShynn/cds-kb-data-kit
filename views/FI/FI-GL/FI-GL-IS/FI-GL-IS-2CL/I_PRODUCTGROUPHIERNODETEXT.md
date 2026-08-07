@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductGroupHierarchy` | `cast ( hrrp_nodet_n.hryid as fis_hryid_productgroup preserving type )` |
-| key `HierarchyNode` | `hrrp_nodet_n.hrynode` |
-| key `ValidityEndDate` | `cast (hrrp_nodet_n.hryvalto as fis_datbi)` |
-| key `Language` | `hrrp_nodet_n.spras` |
-| `HierarchyNodeText` | `hrrp_nodet_n.nodetxt` |
-| `ValidityStartDate` | `cast (hrrp_nodet_n.hryvalfrom as fis_datab)` |
-| `_Language` | *Association* |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductGroupHierarchy` | ✓ | |  | `cast ( hrrp_nodet_n.hryid as fis_hryid_productgroup preserving type )` |
+| `HierarchyNode` | ✓ | |  | `hrynode` |
+| `ValidityEndDate` | ✓ | |  | `cast (hrrp_nodet_n.hryvalto as fis_datbi)` |
+| `Language` | ✓ | |  | `spras` |
+| `HierarchyNodeText` |  | |  | `nodetxt` |
+| `ValidityStartDate` |  | |  | `cast (hrrp_nodet_n.hryvalfrom as fis_datab)` |
+| `_Language` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

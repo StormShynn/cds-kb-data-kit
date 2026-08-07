@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequestType` | `cast ( SalesDocumentType as credit_memo_request_type preserving type )` |
-| `CreditMemoRequestProcgType` | `SalesDocumentProcessingType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequestType` | ✓ | |  | `cast ( SalesDocumentType as credit_memo_request_type preserving type )` |
+| `CreditMemoRequestProcgType` |  | |  | `SalesDocumentProcessingType` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

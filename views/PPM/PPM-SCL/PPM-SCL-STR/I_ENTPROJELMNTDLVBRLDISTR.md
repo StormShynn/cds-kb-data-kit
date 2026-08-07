@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElmntDlvbrlDistrUUID` | `entprojelmntdlvbrldistruuid` |
-| `EntProjElmntDeliverableUUID` | `entprojelmntdeliverableuuid` |
-| `ProjectElementUUID` | `projectelementuuid` |
-| `ProjectUUID` | `projectuuid` |
-| `EntProjElmntDlvbrlDistrYearVal` | `entprojelmntdlvbrldistryearval` |
-| `EntProjElmntDlvbrlDistrPerdVal` | `entprojelmntdlvbrldistrperdval` |
-| `EntProjElmntDlvbrlDistrQty` | `entprojelmntdlvbrldistrqty` |
-| `EntProjElmntDlvbrlDistrQtyUnit` | `entprojelmntdlvbrldistrqtyunit` |
-| `_EntProjElmntDlvbrl` | *Association* |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElmntDlvbrlDistrUUID` | ✓ | |  | `entprojelmntdlvbrldistruuid` |
+| `EntProjElmntDeliverableUUID` |  | |  | `entprojelmntdeliverableuuid` |
+| `ProjectElementUUID` |  | |  | `projectelementuuid` |
+| `ProjectUUID` |  | |  | `projectuuid` |
+| `EntProjElmntDlvbrlDistrYearVal` |  | |  | `entprojelmntdlvbrldistryearval` |
+| `EntProjElmntDlvbrlDistrPerdVal` |  | |  | `entprojelmntdlvbrldistrperdval` |
+| `EntProjElmntDlvbrlDistrQty` |  | |  | `entprojelmntdlvbrldistrqty` |
+| `EntProjElmntDlvbrlDistrQtyUnit` |  | |  | `entprojelmntdlvbrldistrqtyunit` |
+| `_EntProjElmntDlvbrl` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectElement` | | ✓ | | |
 
 ## Associations
 

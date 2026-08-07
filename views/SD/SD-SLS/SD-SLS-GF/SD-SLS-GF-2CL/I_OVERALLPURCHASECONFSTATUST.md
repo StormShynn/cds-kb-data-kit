@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallPurchaseConfStatus` | `statu` |
-| key `Language` | `spras` |
-| `OverallPurchaseConfStatusDesc` | `bezei` |
-| `_OverallPurchaseConfStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallPurchaseConfStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `OverallPurchaseConfStatusDesc` |  | |  | `bezei` |
+| `_OverallPurchaseConfStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

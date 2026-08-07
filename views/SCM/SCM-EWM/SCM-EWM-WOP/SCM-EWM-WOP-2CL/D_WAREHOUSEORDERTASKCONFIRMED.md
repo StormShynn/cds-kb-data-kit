@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'EWMWarehouse'` | `element: 'EWMWarehouse'` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'EWMWarehouse'` |  | |  | `element: 'EWMWarehouse'` |
 
 ## Source Code
 

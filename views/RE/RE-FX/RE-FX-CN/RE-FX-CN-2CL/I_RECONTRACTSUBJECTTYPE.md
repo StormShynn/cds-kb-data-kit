@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REContractSubjectType` | `cnsubjecttype` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REContractSubjectType` | ✓ | |  | `cnsubjecttype` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

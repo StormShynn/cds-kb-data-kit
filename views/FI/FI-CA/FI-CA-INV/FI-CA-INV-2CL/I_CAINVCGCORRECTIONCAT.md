@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgCorrectionCategory` | `cast ( substring( dd07l.domvalue_l,1,2 ) as corrcat_kk preserving type )` |
-| `_CAInvcgCorrectionCatText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgCorrectionCategory` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as corrcat_kk preserving type )` |
+| `_CAInvcgCorrectionCatText` | | ✓ | | |
 
 ## Associations
 

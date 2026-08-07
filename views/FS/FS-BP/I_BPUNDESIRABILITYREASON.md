@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UndesirabilityReason` | `tp18.unw_reason` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UndesirabilityReason` | ✓ | |  | `unw_reason` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

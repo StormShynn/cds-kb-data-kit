@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ValuationClass` | `bklas` |
-| key `Language` | `spras` |
-| `ValuationClassDescription` | `t025t.bkbez` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ValuationClass` | ✓ | |  | `bklas` |
+| `Language` | ✓ | |  | `spras` |
+| `ValuationClassDescription` |  | |  | `bkbez` |
 
 ## Source Code
 

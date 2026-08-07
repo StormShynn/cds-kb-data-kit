@@ -29,92 +29,92 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalLocation` | `FunctionalLocation` |
-| `FunctionalLocationLabelName` | `FunctionalLocationLabelName` |
-| `FunctionalLocationName` | `FunctionalLocationName` |
-| `FuncLocationStructure` | `FuncLocationStructure` |
-| `FunctionalLocationCategory` | `FunctionalLocationCategory` |
-| `SuperiorFunctionalLocation` | `SuperiorFunctionalLocation` |
-| `SuperiorFuncnlLocLabelName` | `SuperiorFuncnlLocLabelName` |
-| `TechnicalObjectType` | `TechnicalObjectType` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `GrossWeight` | `GrossWeight` |
-| `GrossWeightUnit` | `GrossWeightUnit` |
-| `OperationStartDate` | `OperationStartDate` |
-| `InventoryNumber` | `InventoryNumber` |
-| `AcquisitionValue` | `AcquisitionValue` |
-| `Currency` | `Currency` |
-| `AcquisitionDate` | `AcquisitionDate` |
-| `AssetManufacturerName` | `AssetManufacturerName` |
-| `ManufacturerPartNmbr` | `ManufacturerPartNmbr` |
-| `ManufacturerCountry` | `ManufacturerCountry` |
-| `ManufacturerPartTypeName` | `ManufacturerPartTypeName` |
-| `ConstructionMonth` | `ConstructionMonth` |
-| `ConstructionYear` | `ConstructionYear` |
-| `ManufacturerSerialNumber` | `ManufacturerSerialNumber` |
-| `MaintenancePlant` | `MaintenancePlant` |
-| `AssetLocation` | `AssetLocation` |
-| `AssetRoom` | `AssetRoom` |
-| `PlantSection` | `PlantSection` |
-| `WorkCenter` | `WorkCenter` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `WorkCenterPlant` | `WorkCenterPlant` |
-| `ABCIndicator` | `ABCIndicator` |
-| `MaintObjectFreeDefinedAttrib` | `MaintObjectFreeDefinedAttrib` |
-| `AddressID` | `AddressID` |
-| `FormOfAddress` | `FormOfAddress` |
-| `BusinessPartnerName1` | `BusinessPartnerName1` |
-| `BusinessPartnerName2` | `BusinessPartnerName2` |
-| `CityName` | `CityName` |
-| `HouseNumber` | `HouseNumber` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `Building` | `Building` |
-| `Floor` | `Floor` |
-| `RoomNumber` | `RoomNumber` |
-| `PostalCode` | `PostalCode` |
-| `StreetName` | `StreetName` |
-| `Region` | `Region` |
-| `Country` | `Country` |
-| `PhoneNumber` | `PhoneNumber` |
-| `FaxNumber` | `FaxNumber` |
-| `CompanyCode` | `CompanyCode` |
-| `BusinessArea` | `BusinessArea` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `FixedAsset` | `FixedAsset` |
-| `CostCenter` | `CostCenter` |
-| `ControllingArea` | `ControllingArea` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `SettlementOrder` | `SettlementOrder` |
-| `ConstructionMaterial` | `ConstructionMaterial` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `MainWorkCenterPlant` | `MainWorkCenterPlant` |
-| `MainWorkCenter` | `MainWorkCenter` |
-| `MainWorkCenterInternalID` | `MainWorkCenterInternalID` |
-| `CatalogProfile` | `CatalogProfile` |
-| `EquipmentInstallationIsAllowed` | `EquipmentInstallationIsAllowed` |
-| `OnePieceOfEquipmentIsAllowed` | `OnePieceOfEquipmentIsAllowed` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `SalesOffice` | `SalesOffice` |
-| `OrganizationDivision` | `OrganizationDivision` |
-| `SalesGroup` | `SalesGroup` |
-| `FunctionalLocationHasEquipment` | `FunctionalLocationHasEquipment` |
-| `FuncnlLocHasSubOrdinateFuncLoc` | `FuncnlLocHasSubOrdinateFuncLoc` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `FuncnlLocIsMarkedForDeletion` | `FuncnlLocIsMarkedForDeletion` |
-| `FuncnlLocIsDeleted` | `FuncnlLocIsDeleted` |
-| `FunctionalLocationIsActive` | `FunctionalLocationIsActive` |
-| `FuncnlLocIsDeactivated` | `FuncnlLocIsDeactivated` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_Partner` | *Association* |
-| `_LongText` | *Association* |
-| `_Classification` | *Association* |
-| `_Warranty` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |
+| `FunctionalLocationName` |  | |  |  |
+| `FuncLocationStructure` |  | |  |  |
+| `FunctionalLocationCategory` |  | |  |  |
+| `SuperiorFunctionalLocation` |  | |  |  |
+| `SuperiorFuncnlLocLabelName` |  | |  |  |
+| `TechnicalObjectType` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `GrossWeight` |  | |  |  |
+| `GrossWeightUnit` |  | |  |  |
+| `OperationStartDate` |  | |  |  |
+| `InventoryNumber` |  | |  |  |
+| `AcquisitionValue` |  | |  |  |
+| `Currency` |  | |  |  |
+| `AcquisitionDate` |  | |  |  |
+| `AssetManufacturerName` |  | |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |
+| `ManufacturerCountry` |  | |  |  |
+| `ManufacturerPartTypeName` |  | |  |  |
+| `ConstructionMonth` |  | |  |  |
+| `ConstructionYear` |  | |  |  |
+| `ManufacturerSerialNumber` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `AssetLocation` |  | |  |  |
+| `AssetRoom` |  | |  |  |
+| `PlantSection` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterPlant` |  | |  |  |
+| `ABCIndicator` |  | |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `BusinessPartnerName1` |  | |  |  |
+| `BusinessPartnerName2` |  | |  |  |
+| `CityName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `Building` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `Region` |  | |  |  |
+| `Country` |  | |  |  |
+| `PhoneNumber` |  | |  |  |
+| `FaxNumber` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `SettlementOrder` |  | |  |  |
+| `ConstructionMaterial` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MainWorkCenterPlant` |  | |  |  |
+| `MainWorkCenter` |  | |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |
+| `CatalogProfile` |  | |  |  |
+| `EquipmentInstallationIsAllowed` |  | |  |  |
+| `OnePieceOfEquipmentIsAllowed` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `FunctionalLocationHasEquipment` |  | |  |  |
+| `FuncnlLocHasSubOrdinateFuncLoc` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `FuncnlLocIsMarkedForDeletion` |  | |  |  |
+| `FuncnlLocIsDeleted` |  | |  |  |
+| `FunctionalLocationIsActive` |  | |  |  |
+| `FuncnlLocIsDeactivated` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_Partner` | | ✓ | | |
+| `_LongText` | | ✓ | | |
+| `_Classification` | | ✓ | | |
+| `_Warranty` | | ✓ | | |
 
 ## Source Code
 

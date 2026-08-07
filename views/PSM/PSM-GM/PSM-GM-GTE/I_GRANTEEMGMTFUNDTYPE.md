@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GranteeMgmtFundType` | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.numc( 1 ) ) as gm_fundtype )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GranteeMgmtFundType` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.numc( 1 ) ) as gm_fundtype )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

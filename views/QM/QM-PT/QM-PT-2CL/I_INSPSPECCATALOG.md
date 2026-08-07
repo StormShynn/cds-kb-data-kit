@@ -27,23 +27,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionSpecificationPlant` | `I_AssgmtInspMethInspSpec.InspectionSpecificationPlant` |
-| key `InspectionSpecification` | `I_AssgmtInspMethInspSpec.InspectionSpecification` |
-| key `InspectionSpecificationVersion` | `I_AssgmtInspMethInspSpec.InspectionSpecificationVersion` |
-| key `InspSpecAddlCatalogFieldGroup` | `1` |
-| `InspSpecAdditionalCatalog` | `cast( '1' as qkatausw )` |
-| `InspSpecAdditionalSelectedSet` | `I_AssgmtInspMethInspSpec.SelectedCodeSet` |
-| `InspSpecAdditionalCodeGroup` | `cast( '' as qcgrausw )` |
-| `InspSpecAddlSeldCodeSetPlant` | `I_AssgmtInspMethInspSpec.SelectedCodeSetPlant` |
-| `_InspectionSpecificationPlant` | *Association* |
-| `_InspectionSpecification` | *Association* |
-| `_InspSpecificationVersion` | *Association* |
-| `_InspSpecAddlCatalog` | *Association* |
-| `_InspSpecAddlSelectedSet` | *Association* |
-| `_InspSpecAddlCodeGroup` | *Association* |
-| `_InspSpecAddlSeldCodeSetPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionSpecificationPlant` | ✓ | |  |  |
+| `InspectionSpecification` | ✓ | |  |  |
+| `InspectionSpecificationVersion` | ✓ | |  |  |
+| `InspSpecAddlCatalogFieldGroup` | ✓ | |  | `1` |
+| `InspSpecAdditionalCatalog` |  | |  | `cast( '1' as qkatausw )` |
+| `InspSpecAdditionalSelectedSet` |  | |  | `SelectedCodeSet` |
+| `InspSpecAdditionalCodeGroup` |  | |  | `cast( '' as qcgrausw )` |
+| `InspSpecAddlSeldCodeSetPlant` |  | |  | `SelectedCodeSetPlant` |
+| `_InspectionSpecificationPlant` | | ✓ | | |
+| `_InspectionSpecification` | | ✓ | | |
+| `_InspSpecificationVersion` | | ✓ | | |
+| `_InspSpecAddlCatalog` | | ✓ | | |
+| `_InspSpecAddlSelectedSet` | | ✓ | | |
+| `_InspSpecAddlCodeGroup` | | ✓ | | |
+| `_InspSpecAddlSeldCodeSetPlant` | | ✓ | | |
 
 ## Associations
 

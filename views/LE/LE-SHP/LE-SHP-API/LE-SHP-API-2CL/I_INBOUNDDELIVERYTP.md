@@ -30,105 +30,105 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InboundDelivery` | `InboundDelivery` |
-| `SDDocumentCategory` | `SDDocumentCategory` |
-| `DeliveryDocumentType` | `DeliveryDocumentType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `GoodsReceivingPoint` | `GoodsReceivingPoint` |
-| `CompleteDeliveryIsDefined` | `CompleteDeliveryIsDefined` |
-| `DeliveryPriority` | `DeliveryPriority` |
-| `DeliveryBlockReason` | `DeliveryBlockReason` |
-| `DeliveryDocumentBySupplier` | `DeliveryDocumentBySupplier` |
-| `DeliveryIsInPlant` | `DeliveryIsInPlant` |
-| `DeliveryVersion` | `DeliveryVersion` |
-| `DocumentDate` | `DocumentDate` |
-| `ExternalIdentificationType` | `ExternalIdentificationType` |
-| `GoodsMovementSlipNumber` | `GoodsMovementSlipNumber` |
-| `HeaderGrossWeight` | `HeaderGrossWeight` |
-| `HeaderNetWeight` | `HeaderNetWeight` |
-| `HeaderVolume` | `HeaderVolume` |
-| `HeaderVolumeUnit` | `HeaderVolumeUnit` |
-| `HeaderWeightUnit` | `HeaderWeightUnit` |
-| `IsExportDelivery` | `IsExportDelivery` |
-| `MeansOfTransportRefMaterial` | `MeansOfTransportRefMaterial` |
-| `OrderCombinationIsAllowed` | `OrderCombinationIsAllowed` |
-| `ReceivingPlant` | `ReceivingPlant` |
-| `SpecialProcessingCode` | `SpecialProcessingCode` |
-| `Supplier` | `Supplier` |
-| `Warehouse` | `Warehouse` |
-| `WarehouseGate` | `WarehouseGate` |
-| `WarehouseStagingArea` | `WarehouseStagingArea` |
-| `TotalNumberOfPackage` | `TotalNumberOfPackage` |
-| `LoadingDate` | `LoadingDate` |
-| `LoadingTime` | `LoadingTime` |
-| `BillOfLading` | `BillOfLading` |
-| `HandlingUnitInStock` | `HandlingUnitInStock` |
-| `DeliveryDate` | `DeliveryDate` |
-| `DeliveryTime` | `DeliveryTime` |
-| `ShippingCondition` | `ShippingCondition` |
-| `ShippingType` | `ShippingType` |
-| `ShipmentBlockReason` | `ShipmentBlockReason` |
-| `TransportationPlanningDate` | `TransportationPlanningDate` |
-| `TransportationPlanningTime` | `TransportationPlanningTime` |
-| `RouteSchedule` | `RouteSchedule` |
-| `PlannedGoodsMovementDate` | `PlannedGoodsMovementDate` |
-| `PlannedGoodsMovementTime` | `PlannedGoodsMovementTime` |
-| `ActualGoodsMovementDate` | `ActualGoodsMovementDate` |
-| `ActualGoodsMovementTime` | `ActualGoodsMovementTime` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `ExternalTransportSystem` | `ExternalTransportSystem` |
-| `TransportationGroup` | `TransportationGroup` |
-| `MeansOfTransport` | `MeansOfTransport` |
-| `MeansOfTransportType` | `MeansOfTransportType` |
-| `ProofOfDeliveryDate` | `ProofOfDeliveryDate` |
-| `ProofOfDeliveryTime` | `ProofOfDeliveryTime` |
-| `FactoryCalendarByCustomer` | `FactoryCalendarByCustomer` |
-| `ShippingLocationTimeZone` | `ShippingLocationTimeZone` |
-| `ReceivingLocationTimeZone` | `ReceivingLocationTimeZone` |
-| `IntercompanyBillingDate` | `IntercompanyBillingDate` |
-| `BillingDocumentDate` | `BillingDocumentDate` |
-| `HeaderBillingBlockReason` | `HeaderBillingBlockReason` |
-| `InternalFinancialDocument` | `InternalFinancialDocument` |
-| `PaymentGuaranteeProcedure` | `PaymentGuaranteeProcedure` |
-| `DepreciationInPercent` | `DepreciationInPercent` |
-| `CustomerGroup` | `CustomerGroup` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `StatisticsCurrency` | `StatisticsCurrency` |
-| `OverallIntcoBillingStatus` | `OverallIntcoBillingStatus` |
-| `OverallDeliveryProcessStatus` | `OverallDeliveryProcessStatus` |
-| `TotalBlockStatus` | `TotalBlockStatus` |
-| `OverallDelivConfStatus` | `OverallDelivConfStatus` |
-| `TransportationPlanningStatus` | `TransportationPlanningStatus` |
-| `OverallPutawayConfStatus` | `OverallPutawayConfStatus` |
-| `OverallPutawayStatus` | `OverallPutawayStatus` |
-| `OverallPackingStatus` | `OverallPackingStatus` |
-| `OverallWarehouseActivityStatus` | `OverallWarehouseActivityStatus` |
-| `DistrStatusByDecentralizedWrhs` | `DistrStatusByDecentralizedWrhs` |
-| `OverallGoodsMovementStatus` | `OverallGoodsMovementStatus` |
-| `OverallDelivReltdBillgStatus` | `OverallDelivReltdBillgStatus` |
-| `OverallProofOfDeliveryStatus` | `OverallProofOfDeliveryStatus` |
-| `HdrGeneralIncompletionStatus` | `HdrGeneralIncompletionStatus` |
-| `HeaderDelivIncompletionStatus` | `HeaderDelivIncompletionStatus` |
-| `HeaderPutawayIncompltnStatus` | `HeaderPutawayIncompltnStatus` |
-| `HeaderPackingIncompletionSts` | `HeaderPackingIncompletionSts` |
-| `HdrGoodsMvtIncompletionStatus` | `HdrGoodsMvtIncompletionStatus` |
-| `HeaderBillgIncompletionStatus` | `HeaderBillgIncompletionStatus` |
-| `OvrlItmDelivIncompletionSts` | `OvrlItmDelivIncompletionSts` |
-| `OvrlItmGdsMvtIncompletionSts` | `OvrlItmGdsMvtIncompletionSts` |
-| `OvrlItmGeneralIncompletionSts` | `OvrlItmGeneralIncompletionSts` |
-| `OvrlItmPackingIncompletionSts` | `OvrlItmPackingIncompletionSts` |
-| `OvrlItmPutawayIncompletionSts` | `OvrlItmPutawayIncompletionSts` |
-| `TotalCreditCheckStatus` | `TotalCreditCheckStatus` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InboundDelivery` | ✓ | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `DeliveryDocumentType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `GoodsReceivingPoint` |  | |  |  |
+| `CompleteDeliveryIsDefined` |  | |  |  |
+| `DeliveryPriority` |  | |  |  |
+| `DeliveryBlockReason` |  | |  |  |
+| `DeliveryDocumentBySupplier` |  | |  |  |
+| `DeliveryIsInPlant` |  | |  |  |
+| `DeliveryVersion` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `ExternalIdentificationType` |  | |  |  |
+| `GoodsMovementSlipNumber` |  | |  |  |
+| `HeaderGrossWeight` |  | |  |  |
+| `HeaderNetWeight` |  | |  |  |
+| `HeaderVolume` |  | |  |  |
+| `HeaderVolumeUnit` |  | |  |  |
+| `HeaderWeightUnit` |  | |  |  |
+| `IsExportDelivery` |  | |  |  |
+| `MeansOfTransportRefMaterial` |  | |  |  |
+| `OrderCombinationIsAllowed` |  | |  |  |
+| `ReceivingPlant` |  | |  |  |
+| `SpecialProcessingCode` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Warehouse` |  | |  |  |
+| `WarehouseGate` |  | |  |  |
+| `WarehouseStagingArea` |  | |  |  |
+| `TotalNumberOfPackage` |  | |  |  |
+| `LoadingDate` |  | |  |  |
+| `LoadingTime` |  | |  |  |
+| `BillOfLading` |  | |  |  |
+| `HandlingUnitInStock` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `DeliveryTime` |  | |  |  |
+| `ShippingCondition` |  | |  |  |
+| `ShippingType` |  | |  |  |
+| `ShipmentBlockReason` |  | |  |  |
+| `TransportationPlanningDate` |  | |  |  |
+| `TransportationPlanningTime` |  | |  |  |
+| `RouteSchedule` |  | |  |  |
+| `PlannedGoodsMovementDate` |  | |  |  |
+| `PlannedGoodsMovementTime` |  | |  |  |
+| `ActualGoodsMovementDate` |  | |  |  |
+| `ActualGoodsMovementTime` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `ExternalTransportSystem` |  | |  |  |
+| `TransportationGroup` |  | |  |  |
+| `MeansOfTransport` |  | |  |  |
+| `MeansOfTransportType` |  | |  |  |
+| `ProofOfDeliveryDate` |  | |  |  |
+| `ProofOfDeliveryTime` |  | |  |  |
+| `FactoryCalendarByCustomer` |  | |  |  |
+| `ShippingLocationTimeZone` |  | |  |  |
+| `ReceivingLocationTimeZone` |  | |  |  |
+| `IntercompanyBillingDate` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |
+| `InternalFinancialDocument` |  | |  |  |
+| `PaymentGuaranteeProcedure` |  | |  |  |
+| `DepreciationInPercent` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `StatisticsCurrency` |  | |  |  |
+| `OverallIntcoBillingStatus` |  | |  |  |
+| `OverallDeliveryProcessStatus` |  | |  |  |
+| `TotalBlockStatus` |  | |  |  |
+| `OverallDelivConfStatus` |  | |  |  |
+| `TransportationPlanningStatus` |  | |  |  |
+| `OverallPutawayConfStatus` |  | |  |  |
+| `OverallPutawayStatus` |  | |  |  |
+| `OverallPackingStatus` |  | |  |  |
+| `OverallWarehouseActivityStatus` |  | |  |  |
+| `DistrStatusByDecentralizedWrhs` |  | |  |  |
+| `OverallGoodsMovementStatus` |  | |  |  |
+| `OverallDelivReltdBillgStatus` |  | |  |  |
+| `OverallProofOfDeliveryStatus` |  | |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |
+| `HeaderDelivIncompletionStatus` |  | |  |  |
+| `HeaderPutawayIncompltnStatus` |  | |  |  |
+| `HeaderPackingIncompletionSts` |  | |  |  |
+| `HdrGoodsMvtIncompletionStatus` |  | |  |  |
+| `HeaderBillgIncompletionStatus` |  | |  |  |
+| `OvrlItmDelivIncompletionSts` |  | |  |  |
+| `OvrlItmGdsMvtIncompletionSts` |  | |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |
+| `OvrlItmPackingIncompletionSts` |  | |  |  |
+| `OvrlItmPutawayIncompletionSts` |  | |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

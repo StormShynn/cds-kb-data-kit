@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `cast( ChartOfAccounts as fincs_chartofaccounts preserving type )` |
-| `GLAccount` | `}] key cast( GLAccount as fincs_glaccount preserving type )` |
-| `AdditionalMasterDataSource` | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `CreationDateTime` | `cast( min ( CreationDateTime ) as fincs_creationdatetime preserving type )` |
-| `_ChartOfAccounts` | *Association* |
-| `_Text` | *Association* |
-| `_GLAccountHierNode` | *Association* |
-| `_GLAccountHierNode_2` | *Association* |
-| `_MDSource` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `cast( ChartOfAccounts as fincs_chartofaccounts preserving type )` |
+| `GLAccount` |  | |  | `}] key cast( GLAccount as fincs_glaccount preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( max ( AdditionalMasterDataSource ) as fincs_masterdatasource preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
+| `CreationDateTime` |  | |  | `cast( min ( CreationDateTime ) as fincs_creationdatetime preserving type )` |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_GLAccountHierNode` | | ✓ | | |
+| `_GLAccountHierNode_2` | | ✓ | | |
+| `_MDSource` | | ✓ | | |
 
 ## Associations
 

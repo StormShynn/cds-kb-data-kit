@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACorrespondenceVariant` | `coprc` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACorrespondenceVariant` | ✓ | |  | `coprc` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanControlCycle` | `pknum` |
-| `KnbnCalcChgPrpslCreationDate` | `kcedt` |
-| `SystemMessageClass` | `msgid` |
-| `SystemMessageType` | `msgty` |
-| `SystemMessageNumber` | `msgnr` |
-| `SystemMessageVariable1` | `cast(msgv1 as vdm_pk_msg_var_1 preserving type)` |
-| `SystemMessageVariable2` | `cast(msgv2 as vdm_pk_msg_var_2 preserving type)` |
-| `SystemMessageVariable3` | `cast(msgv3 as vdm_pk_msg_var_3 preserving type)` |
-| `SystemMessageVariable4` | `cast(msgv4 as vdm_pk_msg_var_4 preserving type)` |
-| `Plant` | `_KanbanControlCycle.Plant` |
-| `Supplier` | `_KanbanControlCycle.Supplier` |
-| `_KanbanControlCycle` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanControlCycle` | ✓ | |  | `pknum` |
+| `KnbnCalcChgPrpslCreationDate` |  | |  | `kcedt` |
+| `SystemMessageClass` |  | |  | `msgid` |
+| `SystemMessageType` |  | |  | `msgty` |
+| `SystemMessageNumber` |  | |  | `msgnr` |
+| `SystemMessageVariable1` |  | |  | `cast(msgv1 as vdm_pk_msg_var_1 preserving type)` |
+| `SystemMessageVariable2` |  | |  | `cast(msgv2 as vdm_pk_msg_var_2 preserving type)` |
+| `SystemMessageVariable3` |  | |  | `cast(msgv3 as vdm_pk_msg_var_3 preserving type)` |
+| `SystemMessageVariable4` |  | |  | `cast(msgv4 as vdm_pk_msg_var_4 preserving type)` |
+| `Plant` |  | | `_KanbanControlCycle` | `Plant` |
+| `Supplier` |  | | `_KanbanControlCycle` | `Supplier` |
+| `_KanbanControlCycle` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
 
 ## Associations
 

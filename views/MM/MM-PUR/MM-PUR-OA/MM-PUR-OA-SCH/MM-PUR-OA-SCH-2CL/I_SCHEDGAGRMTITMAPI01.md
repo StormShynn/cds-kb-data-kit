@@ -28,78 +28,78 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `I_SchedgAgrmtItm.SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `I_SchedgAgrmtItm.SchedulingAgreementItem` |
-| `CompanyCode` | `I_SchedgAgrmtItm.CompanyCode` |
-| `PurchasingDocumentCategory` | `I_SchedgAgrmtItm.PurchasingDocumentCategory` |
-| `PurchasingDocumentItemText` | `I_SchedgAgrmtItm.PurchasingDocumentItemText` |
-| `Material` | `I_SchedgAgrmtItm.Material` |
-| `ManufacturerMaterial` | `I_SchedgAgrmtItm.ManufacturerMaterial` |
-| `SupplierMaterialNumber` | `I_SchedgAgrmtItm.SupplierMaterialNumber` |
-| `MaterialGroup` | `I_SchedgAgrmtItm.MaterialGroup` |
-| `Plant` | `I_SchedgAgrmtItm.Plant` |
-| `ManualDeliveryAddressID` | `I_SchedgAgrmtItm.ManualDeliveryAddressID` |
-| `ReferenceDeliveryAddressID` | `I_SchedgAgrmtItm.ReferenceDeliveryAddressID` |
-| `IncotermsClassification` | `I_SchedgAgrmtItm.IncotermsClassification` |
-| `IncotermsTransferLocation` | `I_SchedgAgrmtItm.IncotermsTransferLocation` |
-| `OrderQuantityUnit` | `I_SchedgAgrmtItm.OrderQuantityUnit` |
-| `ItemNetWeight` | `I_SchedgAgrmtItm.ItemNetWeight` |
-| `WeightUnit` | `I_SchedgAgrmtItm.WeightUnit` |
-| `TargetQuantity` | `I_SchedgAgrmtItm.TargetQuantity` |
-| `PurchaseRequisition` | `I_SchedgAgrmtItm.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `I_SchedgAgrmtItm.PurchaseRequisitionItem` |
-| `SchedAgrmtAgreedCumQty` | `I_SchedgAgrmtItm.SchedAgrmtAgreedCumQty` |
-| `SchedAgrmtCumQtyReconcileDate` | `I_SchedgAgrmtItm.SchedAgrmtCumQtyReconcileDate` |
-| `ItemLastTransmissionDate` | `I_SchedgAgrmtItm.ItemLastTransmissionDate` |
-| `NoDaysReminder1` | `I_SchedgAgrmtItm.NoDaysReminder1` |
-| `NoDaysReminder2` | `I_SchedgAgrmtItm.NoDaysReminder2` |
-| `NoDaysReminder3` | `I_SchedgAgrmtItm.NoDaysReminder3` |
-| `SupplierConfirmationControlKey` | `I_SchedgAgrmtItm.ConfirmationControl` |
-| `PurgDocOrderAcknNumber` | `I_SchedgAgrmtItm.PurgDocOrderAcknNumber` |
-| `RequirementTracking` | `I_SchedgAgrmtItm.RequirementTracking` |
-| `IsOrderAcknRqd` | `I_SchedgAgrmtItm.IsOrderAcknRqd` |
-| `PurgDocEstimatedPrice` | `I_SchedgAgrmtItm.PurgDocEstimatedPrice` |
-| `PriceIsToBePrinted` | `I_SchedgAgrmtItm.PriceIsToBePrinted` |
-| `AccountAssignmentCategory` | `I_SchedgAgrmtItm.AccountAssignmentCategory` |
-| `DocumentCurrency` | `I_SchedgAgrmtItm.DocumentCurrency` |
-| `NetPriceAmount` | `I_SchedgAgrmtItm.NetPriceAmount` |
-| `NetPriceQuantity` | `I_SchedgAgrmtItm.NetPriceQuantity` |
-| `OrderPriceUnit` | `I_SchedgAgrmtItm.OrderPriceUnit` |
-| `ProductType` | `I_SchedgAgrmtItm.ProductType` |
-| `MaterialType` | `I_SchedgAgrmtItm.MaterialType` |
-| `StorageLocation` | `I_SchedgAgrmtItm.StorageLocation` |
-| `IsInfoRecordUpdated` | `I_SchedgAgrmtItm.IsInfoRecordUpdated` |
-| `PurchasingInfoRecord` | `I_SchedgAgrmtItm.PurchasingInfoRecord` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `I_SchedgAgrmtItm.OrdPriceUnitToOrderUnitDnmntr` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `I_SchedgAgrmtItm.OrderPriceUnitToOrderUnitNmrtr` |
-| `PurchasingDocumentDeletionCode` | `I_SchedgAgrmtItm.PurchasingDocumentDeletionCode` |
-| `UnderdelivTolrtdLmtRatioInPct` | `I_SchedgAgrmtItm.UnderdelivTolrtdLmtRatioInPct` |
-| `OverdelivTolrtdLmtRatioInPct` | `I_SchedgAgrmtItm.OverdelivTolrtdLmtRatioInPct` |
-| `UnlimitedOverdeliveryIsAllowed` | `I_SchedgAgrmtItm.UnlimitedOverdeliveryIsAllowed` |
-| `StockType` | `I_SchedgAgrmtItm.InventoryUsabilityCode` |
-| `TaxCode` | `I_SchedgAgrmtItm.TaxCode` |
-| `ShippingInstruction` | `I_SchedgAgrmtItm.ShippingInstruction` |
-| `IsInfoAtRegistration` | `I_SchedgAgrmtItm.IsInfoAtRegistration` |
-| `GoodsReceiptIsExpected` | `I_SchedgAgrmtItm.GoodsReceiptIsExpected` |
-| `GoodsReceiptIsNonValuated` | `I_SchedgAgrmtItm.GoodsReceiptIsNonValuated` |
-| `InvoiceIsExpected` | `I_SchedgAgrmtItm.InvoiceIsExpected` |
-| `InvoiceIsGoodsReceiptBased` | `I_SchedgAgrmtItm.InvoiceIsGoodsReceiptBased` |
-| `EvaldRcptSettlmtIsAllowed` | `I_SchedgAgrmtItm.EvaldRcptSettlmtIsAllowed` |
-| `MinRemainingShelfLife` | `I_SchedgAgrmtItm.MinRemainingShelfLife` |
-| `QualityMgmtCtrlKey` | `I_SchedgAgrmtItm.QualityMgmtCtrlKey` |
-| `QualityCertificateType` | `I_SchedgAgrmtItm.QualityCertificateType` |
-| `SchedAgrmtCumulativeQtyControl` | `I_SchedgAgrmtItm.SchedAgrmtCumulativeQtyControl` |
-| `CumulativeQuantityIsNotSent` | `I_SchedgAgrmtItm.CumulativeQuantityIsNotSent` |
-| `SchedgAgrmtRelCreationProfile` | `I_SchedgAgrmtItm.SchedgAgrmtRelCreationProfile` |
-| `IsRelevantForJITDelivSchedule` | `I_SchedgAgrmtItm.IsRelevantForJITDelivSchedule` |
-| `NextFcstDelivSchedSendingDate` | `I_SchedgAgrmtItm.NextFcstDelivSchedSendingDate` |
-| `NextJITDelivSchedSendingDate` | `I_SchedgAgrmtItm.NextJITDelivSchedSendingDate` |
-| `ScheduleLineFirmOrderInDays` | `I_SchedgAgrmtItm.ScheduleLineFirmOrderInDays` |
-| `SchedLineSemiFirmOrderInDays` | `I_SchedgAgrmtItm.SchedLineSemiFirmOrderInDays` |
-| `FirmTradeOffZoneBindMRP` | `I_SchedgAgrmtItm.FirmTradeOffZoneBindMRP` |
-| `_SchedgAgrmtHdrAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |
+| `Material` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `WeightUnit` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `SchedAgrmtAgreedCumQty` |  | |  |  |
+| `SchedAgrmtCumQtyReconcileDate` |  | |  |  |
+| `ItemLastTransmissionDate` |  | |  |  |
+| `NoDaysReminder1` |  | |  |  |
+| `NoDaysReminder2` |  | |  |  |
+| `NoDaysReminder3` |  | |  |  |
+| `SupplierConfirmationControlKey` |  | |  | `ConfirmationControl` |
+| `PurgDocOrderAcknNumber` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `IsOrderAcknRqd` |  | |  |  |
+| `PurgDocEstimatedPrice` |  | |  |  |
+| `PriceIsToBePrinted` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `ProductType` |  | |  |  |
+| `MaterialType` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `IsInfoRecordUpdated` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
+| `StockType` |  | |  | `InventoryUsabilityCode` |
+| `TaxCode` |  | |  |  |
+| `ShippingInstruction` |  | |  |  |
+| `IsInfoAtRegistration` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
+| `MinRemainingShelfLife` |  | |  |  |
+| `QualityMgmtCtrlKey` |  | |  |  |
+| `QualityCertificateType` |  | |  |  |
+| `SchedAgrmtCumulativeQtyControl` |  | |  |  |
+| `CumulativeQuantityIsNotSent` |  | |  |  |
+| `SchedgAgrmtRelCreationProfile` |  | |  |  |
+| `IsRelevantForJITDelivSchedule` |  | |  |  |
+| `NextFcstDelivSchedSendingDate` |  | |  |  |
+| `NextJITDelivSchedSendingDate` |  | |  |  |
+| `ScheduleLineFirmOrderInDays` |  | |  |  |
+| `SchedLineSemiFirmOrderInDays` |  | |  |  |
+| `FirmTradeOffZoneBindMRP` |  | |  |  |
+| `_SchedgAgrmtHdrAPI01` | | ✓ | | |
 
 ## Associations
 

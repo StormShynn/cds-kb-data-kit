@@ -29,58 +29,58 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RepetitiveMfgConfirmation` | `RepetitiveMfgConfirmation` |
-| `RepetitiveMfgConfirmationItem` | `RepetitiveMfgConfirmationItem` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `EnteredByUser` | `EnteredByUser` |
-| `RepetitiveMfgConfirmationText` | `RepetitiveMfgConfirmationText` |
-| `RepetitiveMfgConfScenario` | `RepetitiveMfgConfScenario` |
-| `RptvMfgConfProcessingType` | `RptvMfgConfProcessingType` |
-| `RptvMfgConfReversedCode` | `RptvMfgConfReversedCode` |
-| `PostingDate` | `PostingDate` |
-| `DocumentDate` | `DocumentDate` |
-| `BOMExplosionDate` | `BOMExplosionDate` |
-| `PostingDateYear` | `PostingDateYear` |
-| `ConfHasRefToPlannedOrder` | `ConfHasRefToPlannedOrder` |
-| `ReportingPointOperation` | `ReportingPointOperation` |
-| `Product` | `Product` |
-| `ProductionPlant` | `ProductionPlant` |
-| `ProductionVersion` | `ProductionVersion` |
-| `ReceivingStorageLocation` | `ReceivingStorageLocation` |
-| `ReceivingBatch` | `ReceivingBatch` |
-| `ProductionLine` | `ProductionLine` |
-| `RepetitiveMfgPlanningGroup` | `RepetitiveMfgPlanningGroup` |
-| `PlannedOrder` | `PlannedOrder` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `ProductionLot` | `ProductionLot` |
-| `Reservation` | `Reservation` |
-| `PlanningPlant` | `PlanningPlant` |
-| `KanbanControlCycle` | `KanbanControlCycle` |
-| `KanbanControlCycleItem` | `KanbanControlCycleItem` |
-| `MaterialDocument` | `MaterialDocument` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `MaterialRevisionLevel` | `MaterialRevisionLevel` |
-| `PlantDataCollectionID` | `PlantDataCollectionID` |
-| `Personnel` | `Personnel` |
-| `EmployeeWageType` | `EmployeeWageType` |
-| `EmployeeWageGroup` | `EmployeeWageGroup` |
-| `ConfirmationUnit` | `ConfirmationUnit` |
-| `ConfirmationUnitISOCode` | `ConfirmationUnitISOCode` |
-| `ConfirmationUnitSAPCode` | `ConfirmationUnitSAPCode` |
-| `ConfirmationEntryQuantity` | `ConfirmationEntryQuantity` |
-| `VarianceReasonCode` | `VarianceReasonCode` |
-| `QuantityIsRelevantForRework` | `QuantityIsRelevantForRework` |
-| `ConfFailureCostsReason` | `ConfFailureCostsReason` |
-| `CostCenter` | `CostCenter` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `DestinationStorageBin` | `DestinationStorageBin` |
-| `_RptvMfgConfMatlDocItemTP` | *Association* |
-| `_RptvMfgConfMatlDocHndlgUntTP` | *Association* |
-| `_EntryUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RepetitiveMfgConfirmation` | ✓ | |  |  |
+| `RepetitiveMfgConfirmationItem` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `EnteredByUser` |  | |  |  |
+| `RepetitiveMfgConfirmationText` |  | |  |  |
+| `RepetitiveMfgConfScenario` |  | |  |  |
+| `RptvMfgConfProcessingType` |  | |  |  |
+| `RptvMfgConfReversedCode` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `BOMExplosionDate` |  | |  |  |
+| `PostingDateYear` |  | |  |  |
+| `ConfHasRefToPlannedOrder` |  | |  |  |
+| `ReportingPointOperation` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `ReceivingStorageLocation` |  | |  |  |
+| `ReceivingBatch` |  | |  |  |
+| `ProductionLine` |  | |  |  |
+| `RepetitiveMfgPlanningGroup` |  | |  |  |
+| `PlannedOrder` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `ProductionLot` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `PlanningPlant` |  | |  |  |
+| `KanbanControlCycle` |  | |  |  |
+| `KanbanControlCycleItem` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `MaterialRevisionLevel` |  | |  |  |
+| `PlantDataCollectionID` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `ConfirmationUnit` |  | |  |  |
+| `ConfirmationUnitISOCode` |  | |  |  |
+| `ConfirmationUnitSAPCode` |  | |  |  |
+| `ConfirmationEntryQuantity` |  | |  |  |
+| `VarianceReasonCode` |  | |  |  |
+| `QuantityIsRelevantForRework` |  | |  |  |
+| `ConfFailureCostsReason` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `DestinationStorageBin` |  | |  |  |
+| `_RptvMfgConfMatlDocItemTP` | | ✓ | | |
+| `_RptvMfgConfMatlDocHndlgUntTP` | | ✓ | | |
+| `_EntryUnit` | | ✓ | | |
 
 ## Source Code
 

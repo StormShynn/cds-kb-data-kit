@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeZoneIANACode` | `TimeZoneIANACode` |
-| `TimeZoneID` | `TimeZoneID` |
-| `_TimeZoneText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeZoneIANACode` | ✓ | |  |  |
+| `TimeZoneID` |  | |  |  |
+| `_TimeZoneText` | | ✓ | | |
 
 ## Associations
 

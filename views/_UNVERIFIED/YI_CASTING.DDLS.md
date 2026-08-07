@@ -35,14 +35,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `carrid` | `carrid` |
-| key `connid` | `connid` |
-| key `fldate` | `fldate` |
-| `connid_as_integer` | `cast(connid as abap.int4)` |
-| `price_as_char` | `cast(price as abap.char(20))` |
-| `kk_birthday` | `cast('19782712' as abap.dats)` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `carrid` | ✓ | |  |  |
+| `connid` | ✓ | |  |  |
+| `fldate` | ✓ | |  |  |
+| `connid_as_integer` |  | |  | `cast(connid as abap.int4)` |
+| `price_as_char` |  | |  | `cast(price as abap.char(20))` |
+| `kk_birthday` |  | |  | `cast('19782712' as abap.dats)` |
 
 ## Source Code
 

@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationSelection` | `cast(left(_Source.FinancialSelection, 20) as fincs_consolidationselection preserving type)` |
-| key `FinSelectionConditionSequence` | `_Source.FinSelectionConditionSequence` |
-| `FinSelectionConditionDimension` | `_Source.FinSelectionConditionDimension` |
-| `FinSelCndnDimensionAccessPath` | `_Source.FinSelCndnDimensionAccessPath` |
-| `FinSelCndnDimensionAccessType` | `_Source.FinSelCndnDimensionAccessType` |
-| `FinSelectionConditionRangeSign` | `_Source.FinSelectionConditionRangeSign` |
-| `FinSelConditionRangeOption` | `_Source.FinSelConditionRangeOption` |
-| `FinSelConditionRangeLowValue` | `_Source.FinSelConditionRangeLowValue` |
-| `FinSelConditionRangeHighValue` | `_Source.FinSelConditionRangeHighValue` |
-| `FinancialSelection` | `_Source.FinancialSelection` |
-| `_Selection` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationSelection` | ✓ | |  | `cast(left(_Source.FinancialSelection, 20) as fincs_consolidationselection preserving type)` |
+| `FinSelectionConditionSequence` | ✓ | | `_Source` | `FinSelectionConditionSequence` |
+| `FinSelectionConditionDimension` |  | | `_Source` | `FinSelectionConditionDimension` |
+| `FinSelCndnDimensionAccessPath` |  | | `_Source` | `FinSelCndnDimensionAccessPath` |
+| `FinSelCndnDimensionAccessType` |  | | `_Source` | `FinSelCndnDimensionAccessType` |
+| `FinSelectionConditionRangeSign` |  | | `_Source` | `FinSelectionConditionRangeSign` |
+| `FinSelConditionRangeOption` |  | | `_Source` | `FinSelConditionRangeOption` |
+| `FinSelConditionRangeLowValue` |  | | `_Source` | `FinSelConditionRangeLowValue` |
+| `FinSelConditionRangeHighValue` |  | | `_Source` | `FinSelConditionRangeHighValue` |
+| `FinancialSelection` |  | | `_Source` | `FinancialSelection` |
+| `_Selection` | | ✓ | | |
 
 ## Associations
 

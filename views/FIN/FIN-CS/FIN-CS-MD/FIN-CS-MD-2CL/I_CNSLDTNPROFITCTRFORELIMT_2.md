@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ControllingArea` | `ControllingArea` |
-| `ProfitCenter` | `}] key ProfitCenter` |
-| `ProfitCenterName` | `cast( _Source.ProfitCenterName as fincs_elim_profitcentername preserving type )` |
-| `_ControllingArea` | *Association* |
-| `_ProfitCenterForElim` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `ProfitCenter` |  | |  | `}] key ProfitCenter` |
+| `ProfitCenterName` |  | |  | `cast( _Source.ProfitCenterName as fincs_elim_profitcentername preserving type )` |
+| `_ControllingArea` | | ✓ | | |
+| `_ProfitCenterForElim` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

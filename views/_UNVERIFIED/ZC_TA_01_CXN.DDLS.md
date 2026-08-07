@@ -38,24 +38,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Uuid` | `Uuid` |
-| `Carrid` | `Carrid` |
-| `Connid` | `Connid` |
-| `AirportFrom` | `AirportFrom` |
-| `CityFrom` | `CityFrom` |
-| `CountryFrom` | `CountryFrom` |
-| `AirportTo` | `AirportTo` |
-| `CityTo` | `CityTo` |
-| `CountryTo` | `CountryTo` |
-| `Price` | `Price` |
-| `CurrencyCode` | `CurrencyCode` |
-| `LocalCreatedBy` | `LocalCreatedBy` |
-| `LocalCreatedAt` | `LocalCreatedAt` |
-| `LocalLastChangedBy` | `LocalLastChangedBy` |
-| `LocalLastChangedAt` | `LocalLastChangedAt` |
-| `LastChangedAt` | `LastChangedAt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Uuid` | ✓ | |  |  |
+| `Carrid` |  | |  |  |
+| `Connid` |  | |  |  |
+| `AirportFrom` |  | |  |  |
+| `CityFrom` |  | |  |  |
+| `CountryFrom` |  | |  |  |
+| `AirportTo` |  | |  |  |
+| `CityTo` |  | |  |  |
+| `CountryTo` |  | |  |  |
+| `Price` |  | |  |  |
+| `CurrencyCode` |  | |  |  |
+| `LocalCreatedBy` |  | |  |  |
+| `LocalCreatedAt` |  | |  |  |
+| `LocalLastChangedBy` |  | |  |  |
+| `LocalLastChangedAt` |  | |  |  |
+| `LastChangedAt` |  | |  |  |
 
 ## Source Code
 

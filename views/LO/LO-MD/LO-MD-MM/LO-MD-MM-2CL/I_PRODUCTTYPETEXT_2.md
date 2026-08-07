@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductType` | `cast(mtart as producttype preserving type )` |
-| key `Language` | `spras` |
-| `ProductTypeName` | `cast(mtbez as producttypename preserving type )` |
-| `_ProductType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductType` | ✓ | |  | `cast(mtart as producttype preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `ProductTypeName` |  | |  | `cast(mtbez as producttypename preserving type )` |
+| `_ProductType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

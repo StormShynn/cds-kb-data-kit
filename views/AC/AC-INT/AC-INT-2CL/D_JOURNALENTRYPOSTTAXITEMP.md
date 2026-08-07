@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `GLAccountLineItem` | `docln6` |
-| `TaxCode` | `mwskz` |
-| `TaxItemClassification` | `ktosl` |
-| `ConditionType` | `kschl` |
-| `TaxJurisdiction` | `txjcd` |
-| `TaxJurisdictionLevel` | `acpi_txjcd_level` |
-| `LowestLevelTaxJurisdiction` | `acpi_txjcd_deep` |
-| `TaxItemAcctgDocItemRef` | `taxps` |
-| `TaxRate` | `msatz_f05l` |
-| `TaxDeterminationDate` | `acpi_txdat` |
-| `IsDirectTaxPosting` | `bapi_flg_dir` |
-| `TaxCountry` | `fot_tax_country` |
-| `_JournalEntryPost` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountLineItem` |  | |  | `docln6` |
+| `TaxCode` |  | |  | `mwskz` |
+| `TaxItemClassification` |  | |  | `ktosl` |
+| `ConditionType` |  | |  | `kschl` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `TaxJurisdictionLevel` |  | |  | `acpi_txjcd_level` |
+| `LowestLevelTaxJurisdiction` |  | |  | `acpi_txjcd_deep` |
+| `TaxItemAcctgDocItemRef` |  | |  | `taxps` |
+| `TaxRate` |  | |  | `msatz_f05l` |
+| `TaxDeterminationDate` |  | |  | `acpi_txdat` |
+| `IsDirectTaxPosting` |  | |  | `bapi_flg_dir` |
+| `TaxCountry` |  | |  | `fot_tax_country` |
+| `_JournalEntryPost` | | ✓ | | |
 
 ## Source Code
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `BOPTriangularDealRelevancy` | `cast ( substring( domvalue_l, 1, 1 ) as boptriangulardealrelevancy )` |
-| `BOPTriangularDealRelevancyName` | `cast ( ddtext as glo_bop_tri_deal_rel_name )` |
-| `_BOPTriangularDealRelevancy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `BOPTriangularDealRelevancy` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as boptriangulardealrelevancy )` |
+| `BOPTriangularDealRelevancyName` |  | |  | `cast ( ddtext as glo_bop_tri_deal_rel_name )` |
+| `_BOPTriangularDealRelevancy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

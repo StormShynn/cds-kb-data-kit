@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SecurityClassQuotation` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SecurityClassQuotation` | ✓ | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

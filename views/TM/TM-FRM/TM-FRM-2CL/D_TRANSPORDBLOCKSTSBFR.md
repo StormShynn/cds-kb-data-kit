@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TranspOrdExecutionIsBlocked` | `/scmtms/block_execution` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdExecutionIsBlocked` |  | |  | `/scmtms/block_execution` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

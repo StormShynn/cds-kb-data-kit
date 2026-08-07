@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenture` | `JointVenture` |
-| key `JointVentureEquityType` | `JointVentureEquityType` |
-| `JntVntrParentCoOvhdExpnCostCtr` | `JntVntrParentCoOvhdExpnCostCtr` |
-| `JntVntrParentCoOvhdProject` | `JntVntrParentCoOvhdProject` |
-| `JntVntrParentCoOvhdExpnOrder` | `JntVntrParentCoOvhdExpnOrder` |
-| `_JointVenture` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JointVentureEquityType` | ✓ | |  |  |
+| `JntVntrParentCoOvhdExpnCostCtr` |  | |  |  |
+| `JntVntrParentCoOvhdProject` |  | |  |  |
+| `JntVntrParentCoOvhdExpnOrder` |  | |  |  |
+| `_JointVenture` | | ✓ | | |
 
 ## Source Code
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintOrderConf` | `MaintOrderConf` |
-| key `MaintOrderConfCntrValue` | `MaintOrderConfCntrValue` |
-| `TextObjectKey` | `TextObjectKey` |
-| `MaintOrderConfLongText` | `MaintOrderConfLongText` |
-| `Language` | `Language` |
-| `_MaintOrderConfirmation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintOrderConf` | ✓ | |  |  |
+| `MaintOrderConfCntrValue` | ✓ | |  |  |
+| `TextObjectKey` |  | |  |  |
+| `MaintOrderConfLongText` |  | |  |  |
+| `Language` |  | |  |  |
+| `_MaintOrderConfirmation` | | ✓ | | |
 
 ## Source Code
 

@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgSourceDocumentType` | `_tfk2605sct.srcdoctype` |
-| key `CAInvcgSourceDocumentCat` | `_tfk2605sct.srcdoccat` |
-| key `Language` | `_tfk2605sct.langu` |
-| `CAInvcgSourceDocTypeText` | `cast( _tfk2605sct.text as srcdoctype_txt_gfn_kk preserving type )` |
-| `_Language` | *Association* |
-| `_CAInvcgSourceDocCat` | *Association* |
-| `_CAInvcgSourceDocType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sct` | `srcdoctype` |
+| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sct` | `srcdoccat` |
+| `Language` | ✓ | | `_tfk2605sct` | `langu` |
+| `CAInvcgSourceDocTypeText` |  | |  | `cast( _tfk2605sct.text as srcdoctype_txt_gfn_kk preserving type )` |
+| `_Language` | | ✓ | | |
+| `_CAInvcgSourceDocCat` | | ✓ | | |
+| `_CAInvcgSourceDocType` | | ✓ | | |
 
 ## Associations
 

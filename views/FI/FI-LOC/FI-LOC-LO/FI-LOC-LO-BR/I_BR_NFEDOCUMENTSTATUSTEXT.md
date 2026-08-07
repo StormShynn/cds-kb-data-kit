@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `BR_NFeDocumentStatus` | `cast( substring( domvalue_l, 1, 1 ) as logbr_nfedocstatus preserving type )` |
-| `BR_NFeDocumentStatusDesc` | `ddtext` |
-| `_BR_NFeDocumentStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `BR_NFeDocumentStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as logbr_nfedocstatus preserving type )` |
+| `BR_NFeDocumentStatusDesc` |  | |  | `ddtext` |
+| `_BR_NFeDocumentStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `NFVehicleType` | `cast( tpveic as logbr_vehicletype preserving type )` |
-| `VehicleTypeDesc` | `cast( tpveict as logbr_vehicletypedescription preserving type )` |
-| `_BR_VehicleType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `NFVehicleType` | ✓ | |  | `cast( tpveic as logbr_vehicletype preserving type )` |
+| `VehicleTypeDesc` |  | |  | `cast( tpveict as logbr_vehicletypedescription preserving type )` |
+| `_BR_VehicleType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingDocumentItemCategory` | `pstyp` |
-| key `Language` | `spras` |
-| `PurgDocItemCategoryName` | `ptext` |
-| `PurgDocExternalItemCategory` | `epstp` |
-| `_Language` | *Association* |
-| `_PurgDocumentItemCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingDocumentItemCategory` | ✓ | |  | `pstyp` |
+| `Language` | ✓ | |  | `spras` |
+| `PurgDocItemCategoryName` |  | |  | `ptext` |
+| `PurgDocExternalItemCategory` |  | |  | `epstp` |
+| `_Language` | | ✓ | | |
+| `_PurgDocumentItemCategory` | | ✓ | | |
 
 ## Associations
 

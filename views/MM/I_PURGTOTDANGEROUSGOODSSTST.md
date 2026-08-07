@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `PurgProdCmplncTotDngrsGoodsSts` | `cast( dd07t.domvalue_l as mmpur_pc_total_status_dg )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PurgTotDangerousGoodsStsName` | `cast( dd07t.ddtext as mmpur_pc_total_status_dg_dscr preserving type )` |
-| `_Language` | *Association* |
-| `_PurgProdCmplncTotDngrsGdsSts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PurgProdCmplncTotDngrsGoodsSts` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_total_status_dg )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PurgTotDangerousGoodsStsName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_total_status_dg_dscr preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PurgProdCmplncTotDngrsGdsSts` | | ✓ | | |
 
 ## Associations
 

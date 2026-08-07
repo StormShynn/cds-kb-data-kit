@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMAccessLvl` | `LglCntntMAccessLvl` |
-| `_LglCntntMAccessLvlTextAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMAccessLvl` | ✓ | |  |  |
+| `_LglCntntMAccessLvlTextAPI01` | | ✓ | | |
 
 ## Associations
 

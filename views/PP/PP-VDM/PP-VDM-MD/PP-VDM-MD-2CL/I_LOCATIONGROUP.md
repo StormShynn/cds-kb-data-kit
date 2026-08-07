@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LocationGroup` | `tc28.ortgr` |
-| key `Plant` | `tc28.werks` |
-| `_Plant` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LocationGroup` | ✓ | |  | `ortgr` |
+| `Plant` | ✓ | |  | `werks` |
+| `_Plant` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

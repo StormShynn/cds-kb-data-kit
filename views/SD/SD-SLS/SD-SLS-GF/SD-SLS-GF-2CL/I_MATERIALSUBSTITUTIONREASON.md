@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialSubstitutionReason` | `sugrd` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialSubstitutionReason` | ✓ | |  | `sugrd` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

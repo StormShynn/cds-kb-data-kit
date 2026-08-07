@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `dd07t.ddlanguage` |
-| key `BPTaxComplianceAgreementStatus` | `cast ( dd07t.domvalue_l as fsbp_taxc_agree_status )` |
-| `BPTxCmplncAgrmtStatusDesc` | `dd07t.ddtext` |
-| `_BPTxCmplncAgreementStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BPTaxComplianceAgreementStatus` | ✓ | |  | `cast ( dd07t.domvalue_l as fsbp_taxc_agree_status )` |
+| `BPTxCmplncAgrmtStatusDesc` |  | |  | `ddtext` |
+| `_BPTxCmplncAgreementStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderInternalID` | `oper.OrderInternalID` |
-| key `OrderOperationInternalID` | `oper.OrderOperationInternalID` |
-| `ProductionOrder` | `oper.ProductionOrder` |
-| `ProductionOrderSequence` | `oper.ProductionOrderSequence` |
-| `ProductionOrderOperation` | `oper.ProductionOrderOperation` |
-| `ProductionOrderOperationText` | `ProductionOrderOperationText` |
-| `ProductionOrderType` | `oper.ProductionOrderType` |
-| `Plant` | `oper.Plant` |
-| `_ProductionOrderInternal` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderInternalID` | ✓ | |  |  |
+| `OrderOperationInternalID` | ✓ | |  |  |
+| `ProductionOrder` |  | |  |  |
+| `ProductionOrderSequence` |  | |  |  |
+| `ProductionOrderOperation` |  | |  |  |
+| `ProductionOrderOperationText` |  | |  |  |
+| `ProductionOrderType` |  | |  |  |
+| `Plant` |  | |  |  |
+| `_ProductionOrderInternal` | | ✓ | | |
 
 ## Associations
 

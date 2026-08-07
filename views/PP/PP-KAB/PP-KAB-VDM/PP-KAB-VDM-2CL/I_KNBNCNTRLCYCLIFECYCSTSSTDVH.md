@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanCtrlCycleLifeCycleStatus` | `KanbanCtrlCycleLifeCycleStatus` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanCtrlCycleLifeCycleStatus` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

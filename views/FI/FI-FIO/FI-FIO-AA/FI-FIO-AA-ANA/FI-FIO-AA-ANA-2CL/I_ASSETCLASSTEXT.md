@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AssetClass` | `asset_class` |
-| key `Language` | `language` |
-| `AssetClassName` | `cast(description_short as faa_asset_class_name )` |
-| `AssetClassDescription` | `description_long` |
-| `AssetAuthorizationContext` | `cast('NEW' as faa_authcntxt)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssetClass` | ✓ | |  | `asset_class` |
+| `Language` | ✓ | |  | `language` |
+| `AssetClassName` |  | |  | `cast(description_short as faa_asset_class_name )` |
+| `AssetClassDescription` |  | |  | `description_long` |
+| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

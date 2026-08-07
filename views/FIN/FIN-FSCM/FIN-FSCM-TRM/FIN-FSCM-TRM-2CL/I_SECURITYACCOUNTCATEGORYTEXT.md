@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `SecurityAccountCategory` | `dd07t.domvalue_l` |
-| `SecurityAccountCategoryName` | `cast(dd07t.ddtext as ftr_gen_sec_acct_cat_name preserving type)` |
-| `_SecurityAccountCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SecurityAccountCategory` | ✓ | |  | `domvalue_l` |
+| `SecurityAccountCategoryName` |  | |  | `cast(dd07t.ddtext as ftr_gen_sec_acct_cat_name preserving type)` |
+| `_SecurityAccountCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

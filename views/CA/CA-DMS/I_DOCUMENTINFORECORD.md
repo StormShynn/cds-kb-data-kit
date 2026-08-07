@@ -28,49 +28,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `DocInfo.DocumentInfoRecordDocType` |
-| key `DocumentInfoRecordDocVersion` | `DocInfo.DocumentInfoRecordDocVersion` |
-| key `DocumentInfoRecordDocNumber` | `DocInfo.DocumentInfoRecordDocNumber` |
-| key `DocumentInfoRecordDocPart` | `DocInfo.DocumentInfoRecordDocPart` |
-| `DocumentInfoRecord` | `DocInfo.DocumentInfoRecord` |
-| `InternalDocumentStatus` | `DocInfo.InternalDocumentStatus` |
-| `ExternalDocumentStatus` | `_DocStatusVH.ExternalDocumentStatus` |
-| `LaboratoryOrDesignOffice` | `DocInfo.LaboratoryOrDesignOffice` |
-| `Plant` | `DocInfo.Plant` |
-| `AuthorizationGroup` | `DocInfo.AuthorizationGroup` |
-| `ChangeNumber` | `DocInfo.ChangeNumber` |
-| `DocInfoRecdIsMarkedForDeletion` | `DocInfo.DocInfoRecdIsMarkedForDeletion` |
-| `IsDocInfoRecdCreatedFromCAD` | `DocInfo.IsDocInfoRecdCreatedFromCAD` |
-| `IsDocInfoRecdStructure` | `DocInfo.IsDocInfoRecdStructure` |
-| `DocInfoRecdSourceDocNumber` | `DocInfo.DocInfoRecdSourceDocNumber` |
-| `DocInfoRecdSourceDocPart` | `DocInfo.DocInfoRecdSourceDocPart` |
-| `DocInfoRecdSourceDocVersion` | `DocInfo.DocInfoRecdSourceDocVersion` |
-| `ResponsiblePersonName` | `DocInfo.ResponsiblePersonName` |
-| `CreationDateTime` | `DocInfo.CreationDateTime` |
-| `CreatedByUser` | `DocInfo.CreatedByUser` |
-| `ChangedDateTime` | `DocInfo.ChangedDateTime` |
-| `LastChangedByUser` | `DocInfo.LastChangedByUser` |
-| `DocumentInfoRecordIsFrozen` | `DocInfo.DocumentInfoRecordIsFrozen` |
-| `_DocType` | *Association* |
-| `_DocNumber` | *Association* |
-| `_DocVersion` | *Association* |
-| `_DocPart` | *Association* |
-| `_CreatedUser` | *Association* |
-| `_ChangedUser` | *Association* |
-| `_UserDetails` | *Association* |
-| `_CreatedUserVH` | *Association* |
-| `_ChangedUserVH` | *Association* |
-| `_UserDetailsVH` | *Association* |
-| `_DocDesc` | *Association* |
-| `_DocStatus` | *Association* |
-| `_LabOffice` | *Association* |
-| `_AuthGroup` | *Association* |
-| `_Indicator` | *Association* |
-| `_LogAccMObjectTypeActive` | *Association* |
-| `_LogAccMObjSecureIDAssgmt` | *Association* |
-| `_LogAccMObjectUserAuthzn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  |
+| `DocumentInfoRecord` |  | |  |  |
+| `InternalDocumentStatus` |  | |  |  |
+| `ExternalDocumentStatus` |  | | `_DocStatusVH` | `ExternalDocumentStatus` |
+| `LaboratoryOrDesignOffice` |  | |  |  |
+| `Plant` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |
+| `IsDocInfoRecdStructure` |  | |  |  |
+| `DocInfoRecdSourceDocNumber` |  | |  |  |
+| `DocInfoRecdSourceDocPart` |  | |  |  |
+| `DocInfoRecdSourceDocVersion` |  | |  |  |
+| `ResponsiblePersonName` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `DocumentInfoRecordIsFrozen` |  | |  |  |
+| `_DocType` | | ✓ | | |
+| `_DocNumber` | | ✓ | | |
+| `_DocVersion` | | ✓ | | |
+| `_DocPart` | | ✓ | | |
+| `_CreatedUser` | | ✓ | | |
+| `_ChangedUser` | | ✓ | | |
+| `_UserDetails` | | ✓ | | |
+| `_CreatedUserVH` | | ✓ | | |
+| `_ChangedUserVH` | | ✓ | | |
+| `_UserDetailsVH` | | ✓ | | |
+| `_DocDesc` | | ✓ | | |
+| `_DocStatus` | | ✓ | | |
+| `_LabOffice` | | ✓ | | |
+| `_AuthGroup` | | ✓ | | |
+| `_Indicator` | | ✓ | | |
+| `_LogAccMObjectTypeActive` | | ✓ | | |
+| `_LogAccMObjSecureIDAssgmt` | | ✓ | | |
+| `_LogAccMObjectUserAuthzn` | | ✓ | | |
 
 ## Associations
 

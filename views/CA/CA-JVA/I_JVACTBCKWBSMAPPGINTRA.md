@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JVACtbckWBSMappgIntraBsc.CompanyCode` |
-| key `JVAFromProject` | `JVACtbckWBSMappgIntraBsc.JVAFromProject` |
-| `JVAToProject` | `JVACtbckWBSMappgIntraBsc.JVAToProject` |
-| `JVACutbackCostCenter` | `JVACtbckWBSMappgIntraBsc.JVACutbackCostCenter` |
-| `JVACutbackOrder` | `JVACtbckWBSMappgIntraBsc.JVACutbackOrder` |
-| `JVACutbackWBS` | `JVACtbckWBSMappgIntraBsc.JVACutbackWBS` |
-| `JVACutbackWBSExt` | `_CutbackWBSElement.WBSElementExternalID` |
-| `ControllingArea` | `_CompanyCode.ControllingArea` |
-| `_CompanyCode` | *Association* |
-| `_JVAFromProject` | *Association* |
-| `_JVAToProject` | *Association* |
-| `_CutbackCostCenter` | *Association* |
-| `_CutbackOrder` | *Association* |
-| `_CutbackWBSElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JVAFromProject` | ✓ | |  |  |
+| `JVAToProject` |  | |  |  |
+| `JVACutbackCostCenter` |  | |  |  |
+| `JVACutbackOrder` |  | |  |  |
+| `JVACutbackWBS` |  | |  |  |
+| `JVACutbackWBSExt` |  | | `_CutbackWBSElement` | `WBSElementExternalID` |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
+| `_CompanyCode` | | ✓ | | |
+| `_JVAFromProject` | | ✓ | | |
+| `_JVAToProject` | | ✓ | | |
+| `_CutbackCostCenter` | | ✓ | | |
+| `_CutbackOrder` | | ✓ | | |
+| `_CutbackWBSElement` | | ✓ | | |
 
 ## Associations
 

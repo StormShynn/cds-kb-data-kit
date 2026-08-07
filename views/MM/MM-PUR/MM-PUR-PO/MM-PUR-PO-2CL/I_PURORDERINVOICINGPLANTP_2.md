@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `InvoicingPlan` | `InvoicingPlan` |
-| `InvoicingPlanType` | `InvoicingPlanType` |
-| `InvoicingPlanStartDate` | `InvoicingPlanStartDate` |
-| `InvoicingPlanEndDate` | `InvoicingPlanEndDate` |
-| `InvoicingPlanNextInvcDateRule` | `InvoicingPlanNextInvcDateRule` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `PurchaseOrderType` | `PurchaseOrderType` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `Plant` | `Plant` |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
-| `_POInvoicingPlanItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `InvoicingPlan` | ✓ | |  |  |
+| `InvoicingPlanType` |  | |  |  |
+| `InvoicingPlanStartDate` |  | |  |  |
+| `InvoicingPlanEndDate` |  | |  |  |
+| `InvoicingPlanNextInvcDateRule` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchaseOrderType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `Plant` |  | |  |  |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
+| `_POInvoicingPlanItem` | | ✓ | | |
 
 ## Source Code
 

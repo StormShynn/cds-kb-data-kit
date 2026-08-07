@@ -33,23 +33,23 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `client` | `usr21.mandt` |
-| key `userName` | `usr21.bname` |
-| `userType` | `usr02.ustyp` |
-| `costCenter` | `usr21.kostl` |
-| `addressType` | `usr21.idadtype` |
-| `personNumber` | `usr21.persnumber` |
-| `addressNumber` | `usr21.addrnumber` |
-| `BPGUID` | `usr21.bpperson` |
-| `technicalUserDescription` | `usr21.techdesc` |
-| `_userInfo` | *Association* |
-| `_businessAddress` | *Association* |
-| `_uscompany` | *Association* |
-| `_companyAddress` | *Association* |
-| `_emailAddress` | *Association* |
-| `_bpGeneral` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `client` | ✓ | |  | `mandt` |
+| `userName` | ✓ | |  | `bname` |
+| `userType` |  | |  | `ustyp` |
+| `costCenter` |  | |  | `kostl` |
+| `addressType` |  | |  | `idadtype` |
+| `personNumber` |  | |  | `persnumber` |
+| `addressNumber` |  | |  | `addrnumber` |
+| `BPGUID` |  | |  | `bpperson` |
+| `technicalUserDescription` |  | |  | `techdesc` |
+| `_userInfo` | | ✓ | | |
+| `_businessAddress` | | ✓ | | |
+| `_uscompany` | | ✓ | | |
+| `_companyAddress` | | ✓ | | |
+| `_emailAddress` | | ✓ | | |
+| `_bpGeneral` | | ✓ | | |
 
 ## Associations
 

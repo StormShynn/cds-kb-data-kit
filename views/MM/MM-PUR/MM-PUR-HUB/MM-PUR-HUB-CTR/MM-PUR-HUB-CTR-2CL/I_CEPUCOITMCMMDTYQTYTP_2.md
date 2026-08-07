@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| key `CentralPurchaseContractItem` | `CentralPurchaseContractItem` |
-| key `PurgDocCmmdtyQtySqntlNumber` | `PurgDocCmmdtyQtySqntlNumber` |
-| `Commodity` | `Commodity` |
-| `PurgDocCmmdtyQtyValidToDate` | `PurgDocCmmdtyQtyValidToDate` |
-| `PurgDocCmmdtyQtyValidFromDate` | `PurgDocCmmdtyQtyValidFromDate` |
-| `CommodityQuantity` | `CommodityQuantity` |
-| `CommodityUnit` | `CommodityUnit` |
-| `PurgDocCmmdtyRefDocItmQty` | `PurgDocCmmdtyRefDocItmQty` |
-| `ItemQuantityUnit` | `ItemQuantityUnit` |
-| `PurgDocCmmdtyUpdateCycle` | `PurgDocCmmdtyUpdateCycle` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `_CentralPurchaseContract` | *Association* |
-| `_CntrlPurchaseContractItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `CentralPurchaseContractItem` | ✓ | |  |  |
+| `PurgDocCmmdtyQtySqntlNumber` | ✓ | |  |  |
+| `Commodity` |  | |  |  |
+| `PurgDocCmmdtyQtyValidToDate` |  | |  |  |
+| `PurgDocCmmdtyQtyValidFromDate` |  | |  |  |
+| `CommodityQuantity` |  | |  |  |
+| `CommodityUnit` |  | |  |  |
+| `PurgDocCmmdtyRefDocItmQty` |  | |  |  |
+| `ItemQuantityUnit` |  | |  |  |
+| `PurgDocCmmdtyUpdateCycle` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `_CentralPurchaseContract` | | ✓ | | |
+| `_CntrlPurchaseContractItem` | | ✓ | | |
 
 ## Source Code
 

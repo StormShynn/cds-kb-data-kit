@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdnRsceToolCategory` | `fhmar` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdnRsceToolCategory` | ✓ | |  | `fhmar` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

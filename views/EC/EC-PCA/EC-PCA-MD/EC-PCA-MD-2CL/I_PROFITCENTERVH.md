@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `ControllingArea` |
-| key `ProfitCenter` | `ProfitCenter` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `ProfitCenterStandardHierarchy` | `ProfitCenterStandardHierarchy` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ProfitCtrResponsiblePersonName` | `ProfitCtrResponsiblePersonName` |
-| `Segment` | `Segment` |
-| `_ControllingAreaText` | *Association* |
-| `_SegmentText` | *Association* |
-| `_Text` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_Segment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |
+| `ProfitCenter` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ProfitCenterStandardHierarchy` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ProfitCtrResponsiblePersonName` |  | |  |  |
+| `Segment` |  | |  |  |
+| `_ControllingAreaText` | | ✓ | | |
+| `_SegmentText` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_Segment` | | ✓ | | |
 
 ## Associations
 

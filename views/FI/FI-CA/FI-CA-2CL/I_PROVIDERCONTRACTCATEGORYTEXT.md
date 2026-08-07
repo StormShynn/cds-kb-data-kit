@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAProviderContractCategory` | `cast( left( dd07t.domvalue_l, 1 ) as vtcat_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAProviderContractCategoryText` | `cast( ddtext as vtcat_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAProviderContractCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as vtcat_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAProviderContractCategoryText` |  | |  | `cast( ddtext as vtcat_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

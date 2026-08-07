@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RERenewalRule` | `rnrule` |
-| `REAutomaticRenewalType` | `rnauttype` |
-| `REIsExclForNewAssgmt` | `cuexcludeassign` |
-| `_Text` | *Association* |
-| `_REAutomaticRenewalType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RERenewalRule` | ✓ | |  | `rnrule` |
+| `REAutomaticRenewalType` |  | |  | `rnauttype` |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
+| `_Text` | | ✓ | | |
+| `_REAutomaticRenewalType` | | ✓ | | |
 
 ## Associations
 

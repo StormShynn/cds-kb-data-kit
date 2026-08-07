@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CITClassificationCode` | `ficite_clsfcode` |
-| `CITItemAmountInDisplayCurrency` | `ficite_amnt` |
-| `Currency` | `ficite_curr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CITClassificationCode` |  | |  | `ficite_clsfcode` |
+| `CITItemAmountInDisplayCurrency` |  | |  | `ficite_amnt` |
+| `Currency` |  | |  | `ficite_curr` |
 
 ## Source Code
 

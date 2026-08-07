@@ -28,62 +28,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RevenueAccountingContract` | `cast(contract_id as farr_cds_contract_id preserving type)` |
-| `CompanyCode` | `company_code` |
-| `RevnAcctgContractDescription` | `description` |
-| `TotContractualPrcInSlsDocCrcy` | `cast(trx_price as farr_cds_contractual_price preserving type)` |
-| `RevnAcctgContractCategory` | `contract_cat` |
-| `RevnAcctgSalesOrganization` | `sales_org` |
-| `AllocEffctAmountInSalesDocCrcy` | `cast(alloc_differ as farr_corr_amt preserving type)` |
-| `AccountingPrinciple` | `acct_principle` |
-| `NumberOfPerformanceObligations` | `cast(num_of_pob as farr_cds_num_of_pobs preserving type)` |
-| `SalesDocumentCurrency` | `cast(trx_price_curk as waerk preserving type)` |
-| `BusinessPartner` | `partner` |
-| `Customer` | `customer_id` |
-| `CustomerGroup` | `customer_grp` |
-| `RAContractHasAllocationEffect` | `cast(price_adjusted as farr_cds_has_alloc_effect preserving type)` |
-| `RAContrBalanceDerivationRule` | `liab_method` |
-| `RAPostLevelOfContractBalance` | `liability_post_mode` |
-| `RevnAcctgContractStatus` | `status` |
-| `RAContractCompletionDate` | `cast(completion_date as farr_cds_contr_completion_date preserving type)` |
-| `RevnContrAssetsImpairmentDate` | `cast(asset_impairment_date as farr_cds_asset_impairment_date preserving type)` |
-| `RAContractHasAssetsImpairment` | `cast(case asset_impairment_date when '00000000' then ' ' else 'X' end as farr_cds_has_impair_of_assets preserving type)` |
-| `RevnAcctgContractCreatedByUser` | `cast(created_by as fis_cc_erfnm preserving type)` |
-| `RevnAcctgContractCreationDate` | `cast(created_on as farr_cds_created_on preserving type)` |
-| `RAContractLastChangedByUsr` | `cast(last_changed_by as fis_aufaenam preserving type)` |
-| `RAContractIsSoftDeleted` | `soft_deleted` |
-| `RAContractLastChangeDate` | `last_changed_on` |
-| `RAContractLastSavedDateTime` | `last_saved_on` |
-| `RAContractReceivableAdjmtAcct` | `recei_adj_account` |
-| `RAContractAssetAccount` | `asset_account` |
-| `RAContractLiabilityAccount` | `liability_account` |
-| `RAContractIsManuallyChanged` | `manual_changed` |
-| `RAContractIsManuallyAllocated` | `cast(manual_allocated as farr_cds_manual_price_alloc preserving type)` |
-| `RAContrHasMnlPrcAllocConflict` | `cast(manual_price_alloc_conflict as farr_cds_has_alloc_conflict preserving type)` |
-| `FinancialValuationObjectType` | `cast('RARC' as val_obj_type preserving type)` |
-| `FinancialValuationObject` | `cast(contract_id as val_obj_id)` |
-| `FinancialValuationSubobject` | `cast(' ' as val_subobj_id preserving type)` |
-| `RAContractIsCreatedByContrMgr` | `rar_version_code` |
-| `IsBusinessPurposeCompleted` | `is_blocked` |
-| `RAContractTransformRecnclnKey` | `ccm_ocm_recon_key` |
-| `RAContractPostingMode` | `posting_mode` |
-| `RAContractIsUniversal` | `universal_rev_contr` |
-| `_BusinessPartner` | *Association* |
-| `_Customer` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_AccountingPrinciple` | *Association* |
-| `_RAContractCategory` | *Association* |
-| `_Currency` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_BalanceDerivationRule` | *Association* |
-| `_PostLevel` | *Association* |
-| `_RAContractStatus` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_ChangedByUser` | *Association* |
-| `_SAPObjectType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RevenueAccountingContract` | ✓ | |  | `cast(contract_id as farr_cds_contract_id preserving type)` |
+| `CompanyCode` |  | |  | `company_code` |
+| `RevnAcctgContractDescription` |  | |  | `description` |
+| `TotContractualPrcInSlsDocCrcy` |  | |  | `cast(trx_price as farr_cds_contractual_price preserving type)` |
+| `RevnAcctgContractCategory` |  | |  | `contract_cat` |
+| `RevnAcctgSalesOrganization` |  | |  | `sales_org` |
+| `AllocEffctAmountInSalesDocCrcy` |  | |  | `cast(alloc_differ as farr_corr_amt preserving type)` |
+| `AccountingPrinciple` |  | |  | `acct_principle` |
+| `NumberOfPerformanceObligations` |  | |  | `cast(num_of_pob as farr_cds_num_of_pobs preserving type)` |
+| `SalesDocumentCurrency` |  | |  | `cast(trx_price_curk as waerk preserving type)` |
+| `BusinessPartner` |  | |  | `partner` |
+| `Customer` |  | |  | `customer_id` |
+| `CustomerGroup` |  | |  | `customer_grp` |
+| `RAContractHasAllocationEffect` |  | |  | `cast(price_adjusted as farr_cds_has_alloc_effect preserving type)` |
+| `RAContrBalanceDerivationRule` |  | |  | `liab_method` |
+| `RAPostLevelOfContractBalance` |  | |  | `liability_post_mode` |
+| `RevnAcctgContractStatus` |  | |  | `status` |
+| `RAContractCompletionDate` |  | |  | `cast(completion_date as farr_cds_contr_completion_date preserving type)` |
+| `RevnContrAssetsImpairmentDate` |  | |  | `cast(asset_impairment_date as farr_cds_asset_impairment_date preserving type)` |
+| `RAContractHasAssetsImpairment` |  | |  | `cast(case asset_impairment_date when '00000000' then ' ' else 'X' end as farr_cds_has_impair_of_assets preserving type)` |
+| `RevnAcctgContractCreatedByUser` |  | |  | `cast(created_by as fis_cc_erfnm preserving type)` |
+| `RevnAcctgContractCreationDate` |  | |  | `cast(created_on as farr_cds_created_on preserving type)` |
+| `RAContractLastChangedByUsr` |  | |  | `cast(last_changed_by as fis_aufaenam preserving type)` |
+| `RAContractIsSoftDeleted` |  | |  | `soft_deleted` |
+| `RAContractLastChangeDate` |  | |  | `last_changed_on` |
+| `RAContractLastSavedDateTime` |  | |  | `last_saved_on` |
+| `RAContractReceivableAdjmtAcct` |  | |  | `recei_adj_account` |
+| `RAContractAssetAccount` |  | |  | `asset_account` |
+| `RAContractLiabilityAccount` |  | |  | `liability_account` |
+| `RAContractIsManuallyChanged` |  | |  | `manual_changed` |
+| `RAContractIsManuallyAllocated` |  | |  | `cast(manual_allocated as farr_cds_manual_price_alloc preserving type)` |
+| `RAContrHasMnlPrcAllocConflict` |  | |  | `cast(manual_price_alloc_conflict as farr_cds_has_alloc_conflict preserving type)` |
+| `FinancialValuationObjectType` |  | |  | `cast('RARC' as val_obj_type preserving type)` |
+| `FinancialValuationObject` |  | |  | `cast(contract_id as val_obj_id)` |
+| `FinancialValuationSubobject` |  | |  | `cast(' ' as val_subobj_id preserving type)` |
+| `RAContractIsCreatedByContrMgr` |  | |  | `rar_version_code` |
+| `IsBusinessPurposeCompleted` |  | |  | `is_blocked` |
+| `RAContractTransformRecnclnKey` |  | |  | `ccm_ocm_recon_key` |
+| `RAContractPostingMode` |  | |  | `posting_mode` |
+| `RAContractIsUniversal` |  | |  | `universal_rev_contr` |
+| `_BusinessPartner` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_AccountingPrinciple` | | ✓ | | |
+| `_RAContractCategory` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_BalanceDerivationRule` | | ✓ | | |
+| `_PostLevel` | | ✓ | | |
+| `_RAContractStatus` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_ChangedByUser` | | ✓ | | |
+| `_SAPObjectType` | | ✓ | | |
 
 ## Associations
 

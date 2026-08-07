@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspCalcSheetItmCalcRuleUUID` | `TranspCalcSheetItmCalcRuleUUID` |
-| `TranspCalcSheetItemUUID` | `TranspCalcSheetItemUUID` |
-| `TransportationAgreementUUID` | `TransportationAgreementUUID` |
-| `TransportationCalculationBase` | `TransportationCalculationBase` |
-| `TranspChrgCalcRuleUnit` | `TranspChrgCalcRuleUnit` |
-| `TranspChrgPricePerQuantity` | `cast( TranspChrgPricePerQuantity as /scmtms/rttable_calcrule_price preserving type )` |
-| `I_FreightAgreementTP` | `FrtAgrmtCalcSheetItmCalcRule._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FrtAgrmtCalcSheetItemTP` | `FrtAgrmtCalcSheetItmCalcRule._FrtAgrmtCalcSheetItem : redirected to parent I_FrtAgrmtCalcSheetItemTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspCalcSheetItmCalcRuleUUID` | ✓ | |  |  |
+| `TranspCalcSheetItemUUID` |  | |  |  |
+| `TransportationAgreementUUID` |  | |  |  |
+| `TransportationCalculationBase` |  | |  |  |
+| `TranspChrgCalcRuleUnit` |  | |  |  |
+| `TranspChrgPricePerQuantity` |  | |  | `cast( TranspChrgPricePerQuantity as /scmtms/rttable_calcrule_price preserving type )` |
+| `I_FreightAgreementTP` |  | |  | `FrtAgrmtCalcSheetItmCalcRule._FreightAgreement : redirected to I_FreightAgreementTP` |
+| `I_FrtAgrmtCalcSheetItemTP` |  | |  | `FrtAgrmtCalcSheetItmCalcRule._FrtAgrmtCalcSheetItem : redirected to parent I_FrtAgrmtCalcSheetItemTP` |
 
 ## Source Code
 

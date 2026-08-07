@@ -32,29 +32,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `cast(Partner.SalesDocument as vdm_sales_order preserving type)` |
-| key `SalesOrderItem` | `cast(Partner.SalesDocumentItem as sales_order_item preserving type)` |
-| key `PartnerFunction` | `Partner.PartnerFunction` |
-| `Customer` | `Partner.Customer` |
-| `Supplier` | `Partner.Supplier` |
-| `Personnel` | `Partner.Personnel` |
-| `ContactPerson` | `Partner.ContactPerson` |
-| `Partner` | `Partner.Partner` |
-| `FullName` | `Partner.FullName` |
-| `ReferenceBusinessPartner` | `Partner.ReferenceBusinessPartner` |
-| `AddressID` | `Partner.AddressID` |
-| `AddressPersonID` | `Partner.AddressPersonID` |
-| `AddressObjectType` | `Partner.AddressObjectType` |
-| `SDDocPartnerAddressRefType` | `Partner.SDDocPartnerAddressRefType` |
-| `BPAddrDeterminationTransaction` | `Partner.BPAddrDeterminationTransaction` |
-| `BPRefAddressIDForDocSpcfcAddr` | `Partner.BPRefAddressIDForDocSpcfcAddr` |
-| `InternationalPhoneNumber` | `Partner.InternationalPhoneNumber` |
-| `InternationalMobilePhoneNumber` | `Partner.InternationalMobilePhoneNumber` |
-| `EmailAddress` | `Partner.EmailAddress` |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  | `cast(Partner.SalesDocument as vdm_sales_order preserving type)` |
+| `SalesOrderItem` | ✓ | |  | `cast(Partner.SalesDocumentItem as sales_order_item preserving type)` |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `Partner` |  | |  |  |
+| `FullName` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `InternationalPhoneNumber` |  | |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
 
 ## Associations
 

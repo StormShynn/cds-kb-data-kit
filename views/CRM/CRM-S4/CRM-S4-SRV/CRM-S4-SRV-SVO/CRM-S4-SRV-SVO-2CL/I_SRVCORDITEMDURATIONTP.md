@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrder` | `ServiceOrder` |
-| key `ServiceOrderItem` | `ServiceOrderItem` |
-| key `SrvcDocDurationType` | `SrvcDocDurationType` |
-| `SrvcDocDurationValue` | `SrvcDocDurationValue` |
-| `SrvcDocDurationUnit` | `SrvcDocDurationUnit` |
-| `_ServiceOrderItemTP` | *Association* |
-| `_ServiceOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |
+| `SrvcDocDurationType` | ✓ | |  |  |
+| `SrvcDocDurationValue` |  | |  |  |
+| `SrvcDocDurationUnit` |  | |  |  |
+| `_ServiceOrderItemTP` | | ✓ | | |
+| `_ServiceOrderTP` | | ✓ | | |
 
 ## Source Code
 

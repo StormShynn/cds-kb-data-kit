@@ -28,41 +28,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `plfl.BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `plfl.BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `plfl.BillOfOperationsVariant` |
-| key `BillOfOperationsSequence` | `plfl.BillOfOperationsSequence` |
-| key `BOOSqncInternalVersionCounter` | `plfl.BOOSqncInternalVersionCounter` |
-| `IsDeleted` | `plfl.IsDeleted` |
-| `IsImplicitlyDeleted` | `plfl.IsImplicitlyDeleted` |
-| `ChangeNumber` | `plfl.ChangeNumber` |
-| `ValidityStartDate` | `plfl.ValidityStartDate` |
-| `ValidityEndDate` | `plfl. ValidityEndDate` |
-| `CreationDate` | `plfl.CreationDate` |
-| `CreatedByUser` | `plfl.CreatedByUser` |
-| `LastChangeDate` | `plfl.LastChangeDate` |
-| `LastChangedByUser` | `plfl.LastChangedByUser` |
-| `SequenceText` | `plfl.SequenceText` |
-| `SequenceCategory` | `plfl.BillOfOperationsSequenceCat` |
-| `SequenceSchedulingAlignment` | `plfl.SequenceSchedulingAlignment` |
-| `BillOfOperationsRefSequence` | `plfl.BillOfOperationsRefSequence` |
-| `BOOSqncBranchOpInternalID` | `plfl.BOOSqncBranchOpInternalID` |
-| `BOOSqncReturnOpInternalID` | `plfl.BOOSqncReturnOpInternalID` |
-| `BillOfOperationsUnit` | `BillOfOperationsUnit` |
-| `MinimumLotSizeQuantity` | `plfl.MinimumLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `plfl.MaximumLotSizeQuantity` |
-| `_BillOfOperations` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_BillOfOperationsRefSequence` | *Association* |
-| `_BOOOperationsBranchOperation` | *Association* |
-| `_BOOOperationsReturnOperation` | *Association* |
-| `_SequenceCategory` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_ChangeMaster` | *Association* |
-| `_SequenceSchedulingAlignment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |
+| `BillOfOperationsSequence` | ✓ | |  |  |
+| `BOOSqncInternalVersionCounter` | ✓ | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  | `plfl. ValidityEndDate` |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `SequenceText` |  | |  |  |
+| `SequenceCategory` |  | |  | `BillOfOperationsSequenceCat` |
+| `SequenceSchedulingAlignment` |  | |  |  |
+| `BillOfOperationsRefSequence` |  | |  |  |
+| `BOOSqncBranchOpInternalID` |  | |  |  |
+| `BOOSqncReturnOpInternalID` |  | |  |  |
+| `BillOfOperationsUnit` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `_BillOfOperations` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_BillOfOperationsRefSequence` | | ✓ | | |
+| `_BOOOperationsBranchOperation` | | ✓ | | |
+| `_BOOOperationsReturnOperation` | | ✓ | | |
+| `_SequenceCategory` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_ChangeMaster` | | ✓ | | |
+| `_SequenceSchedulingAlignment` | | ✓ | | |
 
 ## Associations
 

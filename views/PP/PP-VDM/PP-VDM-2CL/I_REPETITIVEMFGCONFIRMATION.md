@@ -27,81 +27,81 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RepetitiveMfgConfirmation` | `conf.RepetitiveMfgConfirmation` |
-| `RepetitiveMfgConfirmationItem` | `conf.RepetitiveMfgConfirmationItem` |
-| `CreationDate` | `conf.CreationDate` |
-| `CreationTime` | `conf.CreationTime` |
-| `EnteredByUser` | `conf.EnteredByUser` |
-| `RepetitiveMfgConfirmationText` | `conf.RepetitiveMfgConfirmationText` |
-| `RepetitiveMfgConfScenario` | `conf.RepetitiveMfgConfScenario` |
-| `RptvMfgConfProcessingType` | `conf.RptvMfgConfProcessingType` |
-| `RptvMfgConfReversedCode` | `conf.RptvMfgConfReversedCode` |
-| `RptvMfgConfPostingDate` | `conf.RptvMfgConfPostingDate` |
-| `PostingDateYear` | `conf.PostingDateYear` |
-| `RptvMfgConfDocumentDate` | `conf.RptvMfgConfDocumentDate` |
-| `BOMExplosionDate` | `conf.BOMExplosionDate` |
-| `ConfHasRefToPlannedOrder` | `conf.ConfHasRefToPlannedOrder` |
-| `BackflushReportingPoint` | `conf.BackflushReportingPoint` |
-| `ReportingPointOperation` | `conf.ReportingPointOperation` |
-| `Product` | `conf.Product` |
-| `Plant` | `conf.Plant` |
-| `ProductionVersion` | `conf.ProductionVersion` |
-| `ReceivingStorageLocation` | `conf.ReceivingStorageLocation` |
-| `ReceivingBatch` | `conf.ReceivingBatch` |
-| `ProductionLine` | `conf.ProductionLine` |
-| `RepetitiveMfgPlanningGroup` | `conf.RepetitiveMfgPlanningGroup` |
-| `PlannedOrder` | `conf.PlannedOrder` |
-| `SalesOrder` | `conf.SalesOrder` |
-| `SalesOrderItem` | `conf.SalesOrderItem` |
-| `ProductionLot` | `conf.ProductionLot` |
-| `ProductionLotInternalID` | `conf.ProductionLotInternalID` |
-| `Reservation` | `conf.Reservation` |
-| `PlanningPlant` | `conf.PlanningPlant` |
-| `KanbanControlCycle` | `conf.KanbanControlCycle` |
-| `KanbanControlCycleItem` | `conf.KanbanControlCycleItem` |
-| `MaterialDocumentYear` | `cast(case when conf._ConfirmationItem[RepetitiveMfgConfirmationItem = $projection.repetitivemfgconfirmationitem ].MaterialDocument <> '' then conf.PostingDateYear when conf._ConfirmationItem[RepetitiveMfgConfirmationItem = $projection.repetitivemfgconfirmationitem ].MaterialDocument = '' then '' end as nsdm_mjahr)` |
-| `MaterialRevisionLevel` | `conf.MaterialRevisionLevel` |
-| `MaterialRevisionLevel_2` | `conf.MaterialRevisionLevel_2` |
-| `PlantDataCollectionID` | `conf.PlantDataCollectionID` |
-| `EntryUnit` | `conf.EntryUnit` |
-| `RptvMfgConfEntryQuantity` | `conf.RptvMfgConfEntryQuantity` |
-| `ScrapQuantityInEntryUnit` | `conf.ScrapQuantityInEntryUnit` |
-| `VarianceReasonCode` | `conf.VarianceReasonCode` |
-| `QuantityIsRelevantForRework` | `conf.QuantityIsRelevantForRework` |
-| `ConfFailureCostsReason` | `conf.ConfFailureCostsReason` |
-| `CostCenter` | `conf.CostCenter` |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_PlanningPlant` | *Association* |
-| `_ProductSupplyPlanning` | *Association* |
-| `_ProductionVersion` | *Association* |
-| `_ProductionVersionBasic` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Batch` | *Association* |
-| `_Batch2` | *Association* |
-| `_ProductionLine` | *Association* |
-| `_PlanningGroup` | *Association* |
-| `_PlannedOrder` | *Association* |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_ProductionLot` | *Association* |
-| `_ProductionLot2` | *Association* |
-| `_Reservation` | *Association* |
-| `_KanbanControlCycle` | *Association* |
-| `_KanbanControlCycleItem` | *Association* |
-| `_MaterialDocument` | *Association* |
-| `_MaterialDocument2` | *Association* |
-| `_MaterialDocumentYear` | *Association* |
-| `_VarianceReason` | *Association* |
-| `_DocumentDate` | *Association* |
-| `_BOMExplosionDate` | *Association* |
-| `_PostingDate` | *Association* |
-| `_PostingDateYear` | *Association* |
-| `_RepetitiveMfgScenario` | *Association* |
-| `_RptvMfgConfProcessingType` | *Association* |
-| `_RptvMfgConfRevesalType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RepetitiveMfgConfirmation` | ✓ | |  |  |
+| `RepetitiveMfgConfirmationItem` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `EnteredByUser` |  | |  |  |
+| `RepetitiveMfgConfirmationText` |  | |  |  |
+| `RepetitiveMfgConfScenario` |  | |  |  |
+| `RptvMfgConfProcessingType` |  | |  |  |
+| `RptvMfgConfReversedCode` |  | |  |  |
+| `RptvMfgConfPostingDate` |  | |  |  |
+| `PostingDateYear` |  | |  |  |
+| `RptvMfgConfDocumentDate` |  | |  |  |
+| `BOMExplosionDate` |  | |  |  |
+| `ConfHasRefToPlannedOrder` |  | |  |  |
+| `BackflushReportingPoint` |  | |  |  |
+| `ReportingPointOperation` |  | |  |  |
+| `Product` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `ReceivingStorageLocation` |  | |  |  |
+| `ReceivingBatch` |  | |  |  |
+| `ProductionLine` |  | |  |  |
+| `RepetitiveMfgPlanningGroup` |  | |  |  |
+| `PlannedOrder` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `ProductionLot` |  | |  |  |
+| `ProductionLotInternalID` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `PlanningPlant` |  | |  |  |
+| `KanbanControlCycle` |  | |  |  |
+| `KanbanControlCycleItem` |  | |  |  |
+| `MaterialDocumentYear` |  | |  | `cast(case when conf._ConfirmationItem[RepetitiveMfgConfirmationItem = $projection.repetitivemfgconfirmationitem ].MaterialDocument <> '' then conf.PostingDateYear when conf._ConfirmationItem[RepetitiveMfgConfirmationItem = $projection.repetitivemfgconfirmationitem ].MaterialDocument = '' then '' end as nsdm_mjahr)` |
+| `MaterialRevisionLevel` |  | |  |  |
+| `MaterialRevisionLevel_2` |  | |  |  |
+| `PlantDataCollectionID` |  | |  |  |
+| `EntryUnit` |  | |  |  |
+| `RptvMfgConfEntryQuantity` |  | |  |  |
+| `ScrapQuantityInEntryUnit` |  | |  |  |
+| `VarianceReasonCode` |  | |  |  |
+| `QuantityIsRelevantForRework` |  | |  |  |
+| `ConfFailureCostsReason` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_PlanningPlant` | | ✓ | | |
+| `_ProductSupplyPlanning` | | ✓ | | |
+| `_ProductionVersion` | | ✓ | | |
+| `_ProductionVersionBasic` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_Batch2` | | ✓ | | |
+| `_ProductionLine` | | ✓ | | |
+| `_PlanningGroup` | | ✓ | | |
+| `_PlannedOrder` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_ProductionLot` | | ✓ | | |
+| `_ProductionLot2` | | ✓ | | |
+| `_Reservation` | | ✓ | | |
+| `_KanbanControlCycle` | | ✓ | | |
+| `_KanbanControlCycleItem` | | ✓ | | |
+| `_MaterialDocument` | | ✓ | | |
+| `_MaterialDocument2` | | ✓ | | |
+| `_MaterialDocumentYear` | | ✓ | | |
+| `_VarianceReason` | | ✓ | | |
+| `_DocumentDate` | | ✓ | | |
+| `_BOMExplosionDate` | | ✓ | | |
+| `_PostingDate` | | ✓ | | |
+| `_PostingDateYear` | | ✓ | | |
+| `_RepetitiveMfgScenario` | | ✓ | | |
+| `_RptvMfgConfProcessingType` | | ✓ | | |
+| `_RptvMfgConfRevesalType` | | ✓ | | |
 
 ## Associations
 

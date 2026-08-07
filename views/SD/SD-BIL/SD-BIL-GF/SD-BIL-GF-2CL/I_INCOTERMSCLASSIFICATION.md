@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IncotermsClassification` | `inco1` |
-| `LocationIsMandatory` | `ortob` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IncotermsClassification` | ✓ | |  | `inco1` |
+| `LocationIsMandatory` |  | |  | `ortob` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

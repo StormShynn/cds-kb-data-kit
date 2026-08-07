@@ -27,137 +27,137 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionSpecificationPlant` | `qpmk.zaehler` |
-| key `InspectionSpecification` | `cast( qpmk.mkmnr as vdm_qmerknr preserving type )` |
-| key `InspectionSpecificationVersion` | `qpmk.version` |
-| `Plant` | `qpmk.werks` |
-| `ValidityStartDate` | `qpmk.gueltigab` |
-| `InspectionSpecificationSrchTxt` | `qpmk.sortfeld` |
-| `InspSpecGlobalName` | `cast( qpmk.charact_id1 as vdm_qcharact_id1 preserving type )` |
-| `InspectionSpecificationStatus` | `qpmk.loekz` |
-| `InspSpecTransferType` | `cast( qpmk.konsistent as vdm_qvollst preserving type )` |
-| `InspSpecCreatedByUser` | `qpmk.autor` |
-| `InspSpecCreationDate` | `qpmk.dates` |
-| `InspSpecChangedByUser` | `qpmk.aeaut` |
-| `InspSpecChangeDate` | `qpmk.datae` |
-| `ChangedDateTime` | `case qpmk.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qpmk.changeddatetime end` |
-| `InspSpecControlIndicators` | `qpmk.steuerkz` |
-| `InspSpecIsQuantitative` | `cast( substring(qpmk.steuerkz,1,1) as vdm_qkzqunmk preserving type )` |
-| `InspSpecCharacteristicType` | `case substring(qpmk.steuerkz,1,1) when 'X' then cast ( '1' as vdm_qchar_type_basic ) else cast ( '2' as vdm_qchar_type_basic ) end` |
-| `InspSpecIsMeasuredValueRqd` | `cast( substring(qpmk.steuerkz,2,1) as qkzqumk preserving type )` |
-| `InspSpecIsSelectedSetRequired` | `cast( substring(qpmk.steuerkz,3,1) as qkzpkat preserving type )` |
-| `InspSpecIsUpperLimitRequired` | `cast( substring(qpmk.steuerkz,4,1) as qkztolob preserving type )` |
-| `InspSpecIsLowerLimitRequired` | `cast( substring(qpmk.steuerkz,5,1) as qkztolun preserving type )` |
-| `InspSpecIsTargetValueInLimit` | `cast( substring(qpmk.steuerkz,6,1) as qkzsollpr preserving type )` |
-| `InspectionScope` | `cast( substring(qpmk.steuerkz,7,1) as qpumfkz preserving type )` |
-| `InspSpecIsLongTermInspection` | `cast( substring(qpmk.steuerkz,8,1) as qlzeitkz preserving type )` |
-| `InspSpecRecordingType` | `cast( substring(qpmk.steuerkz,9,1) as qestukz preserving type )` |
-| `InspResultIsDocumentationRqd` | `cast( substring(qpmk.steuerkz,10,1) as vdm_qdokukz preserving type )` |
-| `InspSpecCharcCategory` | `cast( substring(qpmk.steuerkz,11,1) as vdm_qrzwang preserving type )` |
-| `InspSpecIsSampleQtyAdditive` | `cast( substring(qpmk.steuerkz,13,1) as qaddpro preserving type )` |
-| `InspSpecIsDestructive` | `cast( substring(qpmk.steuerkz,14,1) as qkzdestroy preserving type )` |
-| `InspSpecResultCalculation` | `cast( substring(qpmk.steuerkz,15,1) as vdm_qkzformel preserving type )` |
-| `InspSpecIsSamplingProcedRqd` | `cast( substring(qpmk.steuerkz,16,1) as qstichpr preserving type )` |
-| `InspSpecIsScrapRelevant` | `cast( substring(qpmk.steuerkz,17,1) as qausslos preserving type )` |
-| `InspSpecHasFixedCtrlIndicators` | `cast( substring(qpmk.steuerkz,18,1) as qnaendkz preserving type )` |
-| `InspSpecIsDefectRecordingRqd` | `cast( substring(qpmk.steuerkz,19,1) as qbfhlzhl preserving type )` |
-| `InspSpecIsTestEquipmentRqd` | `cast( substring(qpmk.steuerkz,22,1) as qpmzwang preserving type )` |
-| `InspSpecIsDefectsRecgAutomatic` | `cast( substring(qpmk.steuerkz,23,1) as qfehlrec preserving type )` |
-| `InspSpecIsChgDocRequired` | `cast( substring(qpmk.steuerkz,24,1) as qkzaenbel preserving type )` |
-| `InspSpecIsControlChartUsed` | `cast( substring(qpmk.steuerkz,25,1) as qspcmk preserving type )` |
-| `InspSpecPrintControl` | `cast( substring(qpmk.steuerkz,26,1) as vdm_qdruck1 preserving type )` |
-| `InspSpecImportanceCode` | `cast( qpmk.merkgew as vdm_qmerkgew preserving type )` |
-| `InspectorQualification` | `qpmk.prfql` |
-| `InspSpecInformationField1` | `qpmk.dummy10` |
-| `InspSpecInformationField2` | `qpmk.dummy20` |
-| `InspSpecInformationField3` | `qpmk.dummy40` |
-| `QltyMstrDataAuthorizationGroup` | `qpmk.qauth` |
-| `InspToleranceSpecification` | `qpmk.toleranzsl` |
-| `InspSpecDecimalPlaces` | `qpmk.stellen` |
-| `InspectionSpecificationUnit` | `qpmk.masseinhsw` |
-| `InspSpecTargetValue` | `qpmk.sollwert` |
-| `InspSpecHasTargetValue` | `qpmk.sollwni` |
-| `InspSpecUpperLimit` | `qpmk.toleranzob` |
-| `InspSpecHasUpperLimit` | `qpmk.tolobni` |
-| `InspSpecLowerLimit` | `qpmk.toleranzun` |
-| `InspSpecHasLowerLimit` | `qpmk.tolunni` |
-| `InspSpecFirstUpperSpecLimit` | `qpmk.grenzeob1` |
-| `InspSpecHasFirstUpperSpecLimit` | `qpmk.grenzob1ni` |
-| `InspSpecFirstLowerSpecLimit` | `qpmk.grenzeun1` |
-| `InspSpecHasFirstLowerSpecLimit` | `qpmk.grenzun1ni` |
-| `InspSpecSecondUpperSpecLimit` | `qpmk.grenzeob2` |
-| `InspSpecHasSecondUprSpecLimit` | `qpmk.grenzob2ni` |
-| `InspSpecSecondLowerSpecLimit` | `qpmk.grenzeun2` |
-| `InspSpecHasSecondLowrSpecLimit` | `qpmk.grenzun2ni` |
-| `InspSpecUpperPlausibilityLimit` | `qpmk.plausioben` |
-| `InspSpecHasUprPlausibilityLmt` | `qpmk.plausiobni` |
-| `InspSpecLowerPlausibilityLimit` | `qpmk.plausiunte` |
-| `InspSpecHasLowrPlausibilityLmt` | `qpmk.plausiunni` |
-| `InspSpecUpperSpecLimitChange` | `cast( qpmk.tolerweiob as vdm_qtolwob preserving type )` |
-| `InspSpecHasUprSpecLimitChange` | `qpmk.tolwobni` |
-| `InspSpecLowerSpecLimitChange` | `cast( qpmk.tolerweiun as vdm_qtolwun preserving type )` |
-| `InspSpecHasLowrSpecLimitChange` | `qpmk.tolwunni` |
-| `InspSpecToleranceChgValidFrom` | `cast( qpmk.tolerwab as vdm_qtolwab preserving type )` |
-| `InspSpecToleranceChgValidTo` | `cast( qpmk.tolerwbis as vdm_qtolwbis preserving type )` |
-| `InspSpecDefectCodeGrpRjcnLower` | `qpmk.codegr9u` |
-| `InspSpecDefectCodeRjcnLower` | `}] qpmk.code9u` |
-| `InspSpecDefectCodeGrpRjcnUpper` | `qpmk.codegr9o` |
-| `InspSpecDefectCodeRjcnUpper` | `}] qpmk.code9o` |
-| `CharcInternalID` | `cast( qpmk.atinn as atinn_no_conv preserving type )` |
-| `DefectFractionEstimationProced` | `cast( qpmk.eeantverf as vdm_qeantverf preserving type )` |
-| `InspSpecDefectCodeGrpRejection` | `qpmk.codegrqual` |
-| `InspSpecDefectCodeRejection` | `}] qpmk.codequal` |
-| `InspSpecInputProcedure` | `qpmk.inpproc` |
-| `InspSpecDeterminationRule` | `qpmk.spec_det_rule` |
-| `InspSpecIsDetnRuleActive` | `qpmk.spec_det_active` |
-| `_InspectionSpecification` | *Association* |
-| `_InspSpecificationPlant` | *Association* |
-| `_Plant` | *Association* |
-| `_Text` | *Association* |
-| `_InspectionMethod` | *Association* |
-| `_InspSpecStatus` | *Association* |
-| `_InspSpecStatusText` | *Association* |
-| `_InspSpecCreatedByUser` | *Association* |
-| `_InspSpecChangedByUser` | *Association* |
-| `_CreatedByUserContactCard` | *Association* |
-| `_ChangedByUserContactCard` | *Association* |
-| `_InspToleranceSpec` | *Association* |
-| `_InspToleranceSpecText` | *Association* |
-| `_InspSpecTransferType` | *Association* |
-| `_InspSpecTransferTypeText` | *Association* |
-| `_InspSpecCharcType` | *Association* |
-| `_InspSpecCharcTypeText` | *Association* |
-| `_InspectionScope` | *Association* |
-| `_InspectionScopeText` | *Association* |
-| `_InspSpecRecordingType` | *Association* |
-| `_InspSpecRecordingTypeText` | *Association* |
-| `_InspResultDocuRequired` | *Association* |
-| `_InspResultDocuRequiredText` | *Association* |
-| `_InspectorQualification` | *Association* |
-| `_InspectorQualificationText` | *Association* |
-| `_QltyMstrDataAuthznGrp` | *Association* |
-| `_QltyMstrDataAuthznGrpTxt` | *Association* |
-| `_InspSpecCharcCategory` | *Association* |
-| `_InspSpecCharcCategoryText` | *Association* |
-| `_InspSpecRsltCalculation` | *Association* |
-| `_InspSpecRsltCalculationText` | *Association* |
-| `_InspSpecPrintControl` | *Association* |
-| `_InspSpecPrintControlText` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_InspDefectCodeGrpRejection` | *Association* |
-| `_InspDefectCodeRejection` | *Association* |
-| `_InspDefectCodeGrpRjcnLower` | *Association* |
-| `_InspDefectCodeRjcnLower` | *Association* |
-| `_InspDefectCodeGrpRjcnUpper` | *Association* |
-| `_InspDefectCodeRjcnUpper` | *Association* |
-| `_InspSpecImportanceCode` | *Association* |
-| `_InspSpecImportanceCodeText` | *Association* |
-| `_DefectFractionEstnProced` | *Association* |
-| `_DefectFractionEstnProcedTxt` | *Association* |
-| `_ClfnCharacteristicForKeyDate` | *Association* |
-| `_ClfnCharcDescForKeyDate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionSpecificationPlant` | ✓ | |  | `zaehler` |
+| `InspectionSpecification` | ✓ | |  | `cast( qpmk.mkmnr as vdm_qmerknr preserving type )` |
+| `InspectionSpecificationVersion` | ✓ | |  | `version` |
+| `Plant` |  | |  | `werks` |
+| `ValidityStartDate` |  | |  | `gueltigab` |
+| `InspectionSpecificationSrchTxt` |  | |  | `sortfeld` |
+| `InspSpecGlobalName` |  | |  | `cast( qpmk.charact_id1 as vdm_qcharact_id1 preserving type )` |
+| `InspectionSpecificationStatus` |  | |  | `loekz` |
+| `InspSpecTransferType` |  | |  | `cast( qpmk.konsistent as vdm_qvollst preserving type )` |
+| `InspSpecCreatedByUser` |  | |  | `autor` |
+| `InspSpecCreationDate` |  | |  | `dates` |
+| `InspSpecChangedByUser` |  | |  | `aeaut` |
+| `InspSpecChangeDate` |  | |  | `datae` |
+| `ChangedDateTime` |  | |  | `case qpmk.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qpmk.changeddatetime end` |
+| `InspSpecControlIndicators` |  | |  | `steuerkz` |
+| `InspSpecIsQuantitative` |  | |  | `cast( substring(qpmk.steuerkz,1,1) as vdm_qkzqunmk preserving type )` |
+| `InspSpecCharacteristicType` |  | |  | `case substring(qpmk.steuerkz,1,1) when 'X' then cast ( '1' as vdm_qchar_type_basic ) else cast ( '2' as vdm_qchar_type_basic ) end` |
+| `InspSpecIsMeasuredValueRqd` |  | |  | `cast( substring(qpmk.steuerkz,2,1) as qkzqumk preserving type )` |
+| `InspSpecIsSelectedSetRequired` |  | |  | `cast( substring(qpmk.steuerkz,3,1) as qkzpkat preserving type )` |
+| `InspSpecIsUpperLimitRequired` |  | |  | `cast( substring(qpmk.steuerkz,4,1) as qkztolob preserving type )` |
+| `InspSpecIsLowerLimitRequired` |  | |  | `cast( substring(qpmk.steuerkz,5,1) as qkztolun preserving type )` |
+| `InspSpecIsTargetValueInLimit` |  | |  | `cast( substring(qpmk.steuerkz,6,1) as qkzsollpr preserving type )` |
+| `InspectionScope` |  | |  | `cast( substring(qpmk.steuerkz,7,1) as qpumfkz preserving type )` |
+| `InspSpecIsLongTermInspection` |  | |  | `cast( substring(qpmk.steuerkz,8,1) as qlzeitkz preserving type )` |
+| `InspSpecRecordingType` |  | |  | `cast( substring(qpmk.steuerkz,9,1) as qestukz preserving type )` |
+| `InspResultIsDocumentationRqd` |  | |  | `cast( substring(qpmk.steuerkz,10,1) as vdm_qdokukz preserving type )` |
+| `InspSpecCharcCategory` |  | |  | `cast( substring(qpmk.steuerkz,11,1) as vdm_qrzwang preserving type )` |
+| `InspSpecIsSampleQtyAdditive` |  | |  | `cast( substring(qpmk.steuerkz,13,1) as qaddpro preserving type )` |
+| `InspSpecIsDestructive` |  | |  | `cast( substring(qpmk.steuerkz,14,1) as qkzdestroy preserving type )` |
+| `InspSpecResultCalculation` |  | |  | `cast( substring(qpmk.steuerkz,15,1) as vdm_qkzformel preserving type )` |
+| `InspSpecIsSamplingProcedRqd` |  | |  | `cast( substring(qpmk.steuerkz,16,1) as qstichpr preserving type )` |
+| `InspSpecIsScrapRelevant` |  | |  | `cast( substring(qpmk.steuerkz,17,1) as qausslos preserving type )` |
+| `InspSpecHasFixedCtrlIndicators` |  | |  | `cast( substring(qpmk.steuerkz,18,1) as qnaendkz preserving type )` |
+| `InspSpecIsDefectRecordingRqd` |  | |  | `cast( substring(qpmk.steuerkz,19,1) as qbfhlzhl preserving type )` |
+| `InspSpecIsTestEquipmentRqd` |  | |  | `cast( substring(qpmk.steuerkz,22,1) as qpmzwang preserving type )` |
+| `InspSpecIsDefectsRecgAutomatic` |  | |  | `cast( substring(qpmk.steuerkz,23,1) as qfehlrec preserving type )` |
+| `InspSpecIsChgDocRequired` |  | |  | `cast( substring(qpmk.steuerkz,24,1) as qkzaenbel preserving type )` |
+| `InspSpecIsControlChartUsed` |  | |  | `cast( substring(qpmk.steuerkz,25,1) as qspcmk preserving type )` |
+| `InspSpecPrintControl` |  | |  | `cast( substring(qpmk.steuerkz,26,1) as vdm_qdruck1 preserving type )` |
+| `InspSpecImportanceCode` |  | |  | `cast( qpmk.merkgew as vdm_qmerkgew preserving type )` |
+| `InspectorQualification` |  | |  | `prfql` |
+| `InspSpecInformationField1` |  | |  | `dummy10` |
+| `InspSpecInformationField2` |  | |  | `dummy20` |
+| `InspSpecInformationField3` |  | |  | `dummy40` |
+| `QltyMstrDataAuthorizationGroup` |  | |  | `qauth` |
+| `InspToleranceSpecification` |  | |  | `toleranzsl` |
+| `InspSpecDecimalPlaces` |  | |  | `stellen` |
+| `InspectionSpecificationUnit` |  | |  | `masseinhsw` |
+| `InspSpecTargetValue` |  | |  | `sollwert` |
+| `InspSpecHasTargetValue` |  | |  | `sollwni` |
+| `InspSpecUpperLimit` |  | |  | `toleranzob` |
+| `InspSpecHasUpperLimit` |  | |  | `tolobni` |
+| `InspSpecLowerLimit` |  | |  | `toleranzun` |
+| `InspSpecHasLowerLimit` |  | |  | `tolunni` |
+| `InspSpecFirstUpperSpecLimit` |  | |  | `grenzeob1` |
+| `InspSpecHasFirstUpperSpecLimit` |  | |  | `grenzob1ni` |
+| `InspSpecFirstLowerSpecLimit` |  | |  | `grenzeun1` |
+| `InspSpecHasFirstLowerSpecLimit` |  | |  | `grenzun1ni` |
+| `InspSpecSecondUpperSpecLimit` |  | |  | `grenzeob2` |
+| `InspSpecHasSecondUprSpecLimit` |  | |  | `grenzob2ni` |
+| `InspSpecSecondLowerSpecLimit` |  | |  | `grenzeun2` |
+| `InspSpecHasSecondLowrSpecLimit` |  | |  | `grenzun2ni` |
+| `InspSpecUpperPlausibilityLimit` |  | |  | `plausioben` |
+| `InspSpecHasUprPlausibilityLmt` |  | |  | `plausiobni` |
+| `InspSpecLowerPlausibilityLimit` |  | |  | `plausiunte` |
+| `InspSpecHasLowrPlausibilityLmt` |  | |  | `plausiunni` |
+| `InspSpecUpperSpecLimitChange` |  | |  | `cast( qpmk.tolerweiob as vdm_qtolwob preserving type )` |
+| `InspSpecHasUprSpecLimitChange` |  | |  | `tolwobni` |
+| `InspSpecLowerSpecLimitChange` |  | |  | `cast( qpmk.tolerweiun as vdm_qtolwun preserving type )` |
+| `InspSpecHasLowrSpecLimitChange` |  | |  | `tolwunni` |
+| `InspSpecToleranceChgValidFrom` |  | |  | `cast( qpmk.tolerwab as vdm_qtolwab preserving type )` |
+| `InspSpecToleranceChgValidTo` |  | |  | `cast( qpmk.tolerwbis as vdm_qtolwbis preserving type )` |
+| `InspSpecDefectCodeGrpRjcnLower` |  | |  | `codegr9u` |
+| `InspSpecDefectCodeRjcnLower` |  | |  | `}] qpmk.code9u` |
+| `InspSpecDefectCodeGrpRjcnUpper` |  | |  | `codegr9o` |
+| `InspSpecDefectCodeRjcnUpper` |  | |  | `}] qpmk.code9o` |
+| `CharcInternalID` |  | |  | `cast( qpmk.atinn as atinn_no_conv preserving type )` |
+| `DefectFractionEstimationProced` |  | |  | `cast( qpmk.eeantverf as vdm_qeantverf preserving type )` |
+| `InspSpecDefectCodeGrpRejection` |  | |  | `codegrqual` |
+| `InspSpecDefectCodeRejection` |  | |  | `}] qpmk.codequal` |
+| `InspSpecInputProcedure` |  | |  | `inpproc` |
+| `InspSpecDeterminationRule` |  | |  | `spec_det_rule` |
+| `InspSpecIsDetnRuleActive` |  | |  | `spec_det_active` |
+| `_InspectionSpecification` | | ✓ | | |
+| `_InspSpecificationPlant` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_InspectionMethod` | | ✓ | | |
+| `_InspSpecStatus` | | ✓ | | |
+| `_InspSpecStatusText` | | ✓ | | |
+| `_InspSpecCreatedByUser` | | ✓ | | |
+| `_InspSpecChangedByUser` | | ✓ | | |
+| `_CreatedByUserContactCard` | | ✓ | | |
+| `_ChangedByUserContactCard` | | ✓ | | |
+| `_InspToleranceSpec` | | ✓ | | |
+| `_InspToleranceSpecText` | | ✓ | | |
+| `_InspSpecTransferType` | | ✓ | | |
+| `_InspSpecTransferTypeText` | | ✓ | | |
+| `_InspSpecCharcType` | | ✓ | | |
+| `_InspSpecCharcTypeText` | | ✓ | | |
+| `_InspectionScope` | | ✓ | | |
+| `_InspectionScopeText` | | ✓ | | |
+| `_InspSpecRecordingType` | | ✓ | | |
+| `_InspSpecRecordingTypeText` | | ✓ | | |
+| `_InspResultDocuRequired` | | ✓ | | |
+| `_InspResultDocuRequiredText` | | ✓ | | |
+| `_InspectorQualification` | | ✓ | | |
+| `_InspectorQualificationText` | | ✓ | | |
+| `_QltyMstrDataAuthznGrp` | | ✓ | | |
+| `_QltyMstrDataAuthznGrpTxt` | | ✓ | | |
+| `_InspSpecCharcCategory` | | ✓ | | |
+| `_InspSpecCharcCategoryText` | | ✓ | | |
+| `_InspSpecRsltCalculation` | | ✓ | | |
+| `_InspSpecRsltCalculationText` | | ✓ | | |
+| `_InspSpecPrintControl` | | ✓ | | |
+| `_InspSpecPrintControlText` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_InspDefectCodeGrpRejection` | | ✓ | | |
+| `_InspDefectCodeRejection` | | ✓ | | |
+| `_InspDefectCodeGrpRjcnLower` | | ✓ | | |
+| `_InspDefectCodeRjcnLower` | | ✓ | | |
+| `_InspDefectCodeGrpRjcnUpper` | | ✓ | | |
+| `_InspDefectCodeRjcnUpper` | | ✓ | | |
+| `_InspSpecImportanceCode` | | ✓ | | |
+| `_InspSpecImportanceCodeText` | | ✓ | | |
+| `_DefectFractionEstnProced` | | ✓ | | |
+| `_DefectFractionEstnProcedTxt` | | ✓ | | |
+| `_ClfnCharacteristicForKeyDate` | | ✓ | | |
+| `_ClfnCharcDescForKeyDate` | | ✓ | | |
 
 ## Associations
 

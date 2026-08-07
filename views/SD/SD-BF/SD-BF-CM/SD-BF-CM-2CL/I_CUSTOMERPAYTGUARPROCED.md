@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerPaytGuarProced` | `kabss` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerPaytGuarProced` | ✓ | |  | `kabss` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

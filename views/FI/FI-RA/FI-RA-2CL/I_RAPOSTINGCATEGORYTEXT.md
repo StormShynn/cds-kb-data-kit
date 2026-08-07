@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(dd07t.ddlanguage as spras preserving type)` |
-| key `RevnAcctgPostingCategory` | `cast(dd07t.domvalue_l as farr_post_category)` |
-| `RevnAcctgPostingCategoryName` | `dd07t.ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_RAPostingCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
+| `RevnAcctgPostingCategory` | ✓ | |  | `cast(dd07t.domvalue_l as farr_post_category)` |
+| `RevnAcctgPostingCategoryName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_RAPostingCategory` | | ✓ | | |
 
 ## Associations
 

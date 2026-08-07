@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionUsage` | `t681.kvewe` |
-| key `ConditionApplication` | `t681.kappl` |
-| key `ConditionTable` | `cast ( t681.kotabnr as char03 )` |
-| `PrcgCndnTableHasValidityPeriod` | `t681.ksdat` |
-| `PrcgCndnTableHasReleaseStatus` | `I_PrcgCndnTblWithReleaseStatus.PrcgCndnTableHasReleaseStatus` |
-| `_PricingConditionTableField` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `ConditionTable` | ✓ | |  | `cast ( t681.kotabnr as char03 )` |
+| `PrcgCndnTableHasValidityPeriod` |  | |  | `ksdat` |
+| `PrcgCndnTableHasReleaseStatus` |  | |  |  |
+| `_PricingConditionTableField` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

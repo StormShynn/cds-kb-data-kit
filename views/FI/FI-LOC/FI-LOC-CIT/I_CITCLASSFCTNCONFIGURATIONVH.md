@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `Ledger` | `Ledger` |
-| key `CorporateIncomeTaxHierarchy` | `CorporateIncomeTaxHierarchy` |
-| `CompanyCodeName` | `_CompanyCodeText.CompanyCodeName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `CorporateIncomeTaxHierarchy` | ✓ | |  |  |
+| `CompanyCodeName` |  | | `_CompanyCodeText` | `CompanyCodeName` |
 
 ## Associations
 

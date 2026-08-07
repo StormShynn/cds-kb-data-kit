@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CurrencyRole` | `finsc_curtype.curtype` |
-| `LegalCurrencyRole` | `finsc_curtype.legal_curtype` |
-| `AccountingValuationView` | `finsc_curtype.valutyp` |
-| `AccountingValuationSubview` | `finsc_curtype.valusubtyp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CurrencyRole` | ✓ | |  | `curtype` |
+| `LegalCurrencyRole` |  | |  | `legal_curtype` |
+| `AccountingValuationView` |  | |  | `valutyp` |
+| `AccountingValuationSubview` |  | |  | `valusubtyp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

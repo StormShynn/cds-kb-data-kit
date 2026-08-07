@@ -31,43 +31,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `cast(Partner.SDDocument as vbeln_va preserving type)` |
-| key `SalesDocumentItem` | `SalesDocumentItem.SalesDocumentItem` |
-| key `PartnerFunction` | `Partner.PartnerFunction` |
-| `Customer` | `Partner.Customer` |
-| `Supplier` | `Partner.Supplier` |
-| `Personnel` | `Partner.Personnel` |
-| `ContactPerson` | `Partner.ContactPerson` |
-| `ReferenceBusinessPartner` | `Partner.ReferenceBusinessPartner` |
-| `AddressID` | `Partner.AddressID` |
-| `AddressPersonID` | `Partner.AddressPersonID` |
-| `AddressObjectType` | `Partner.AddressObjectType` |
-| `SDDocPartnerAddressRefType` | `Partner.SDDocPartnerAddressRefType` |
-| `BPAddrDeterminationTransaction` | `Partner.BPAddrDeterminationTransaction` |
-| `BPRefAddressIDForDocSpcfcAddr` | `Partner.BPRefAddressIDForDocSpcfcAddr` |
-| `SDDocPartnerAddrIsDocSpecific` | `Partner.SDDocPartnerAddrIsDocSpecific` |
-| `PartnerIsOneTimeAccount` | `Partner.PartnerIsOneTimeAccount` |
-| `SDDocumentCategory` | `SalesDocument.SDDocumentCategory` |
-| `VATRegistration` | `Partner.VATRegistration` |
-| `UnloadingPointName` | `Partner.UnloadingPointName` |
-| `Partner` | `case when Partner.Customer != '' then Partner.Customer when Partner.Supplier != '' then Partner.Supplier when Partner.Personnel != '00000000' then cast(Partner.Personnel as kunnr) when Partner.ContactPerson != '0000000000' then cast(Partner.ContactPerson as kunnr) else '' end` |
-| `FullName` | `cast( case Partner.AddressID when '' then case when Partner.Personnel != '00000000' then coalesce(_WorkAssignment.PersonFullName, _WorkAssignment._BusinessPartner.LastName) end else case when Partner.AddressObjectType = '1' then case when Partner.ContactPerson != '0000000000' then cast(substring(replace(concat(_ContactPerson.FirstName, concat(' &@', _ContactPerson.LastName) ), '&@', '') ,1,80) as ad_namtext ) when Partner.Personnel != '00000000' then _OrganizationAddress.AddresseeName1 else cast(concat_with_space(_OrganizationAddress.AddresseeName1, _OrganizationAddress.AddresseeName2, 1) as ad_namtext ) end when Partner.AddressObjectType = '2' then _PersonAddress.PersonFullName when Partner.AddressObjectType = '3' then _PersonWorkplaceAddress.PersonFullName end end as ad_namtext )` |
-| `Country` | `_OrgNamePostalAddress.Country` |
-| `FormOfAddress` | `cast( coalesce( _PersonName.FormOfAddress, _OrgNamePostalAddress.FormOfAddress ) as ad_title preserving type )` |
-| `CorrespondenceLanguage` | `coalesce( _PersonName.CorrespondenceLanguage, _OrgNamePostalAddress.CorrespondenceLanguage )` |
-| `InternationalPhoneNumber` | `cast( case Partner.AddressID when '' then _WorkPlaceAddress.NormalizedPhoneNumber else _CurrentDfltLandlinePhoneNmbr.InternationalPhoneNumber end as vdm_sd_sls_phone preserving type )` |
-| `InternationalMobilePhoneNumber` | `cast( case Partner.AddressID when '' then _WorkPlaceAddress.MblNormalizedPhoneNumber else _CurrentDfltMobilePhoneNumber.InternationalPhoneNumber end as vdm_sd_sls_mobile preserving type )` |
-| `InternationalFaxNumber` | `cast( case Partner.AddressID when '' then _WorkPlaceAddress.InternationalFaxNumber else _CurrentDfltFaxNumber.InternationalFaxNumber end as vdm_sd_sls_fax preserving type )` |
-| `EmailAddress` | `cast( case Partner.AddressID when '' then _WorkPlaceAddress.DefaultEmailAddress else _CurrentDfltEmailAddress.EmailAddress end as vdm_sd_sls_email preserving type )` |
-| `SalesDocumentItemText` | `SalesDocumentItemText` |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
-| `_OrganizationAddress` | *Association* |
-| `_PersonAddress` | *Association* |
-| `_OrgNamePostalAddress` | *Association* |
-| `_PersonName` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `cast(Partner.SDDocument as vbeln_va preserving type)` |
+| `SalesDocumentItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `SDDocPartnerAddrIsDocSpecific` |  | |  |  |
+| `PartnerIsOneTimeAccount` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `VATRegistration` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `Partner` |  | |  | `case when Partner.Customer != '' then Partner.Customer when Partner.Supplier != '' then Partner.Supplier when Partner.Personnel != '00000000' then cast(Partner.Personnel as kunnr) when Partner.ContactPerson != '0000000000' then cast(Partner.ContactPerson as kunnr) else '' end` |
+| `FullName` |  | |  | `cast( case Partner.AddressID when '' then case when Partner.Personnel != '00000000' then coalesce(_WorkAssignment.PersonFullName, _WorkAssignment._BusinessPartner.LastName) end else case when Partner.AddressObjectType = '1' then case when Partner.ContactPerson != '0000000000' then cast(substring(replace(concat(_ContactPerson.FirstName, concat(' &@', _ContactPerson.LastName) ), '&@', '') ,1,80) as ad_namtext ) when Partner.Personnel != '00000000' then _OrganizationAddress.AddresseeName1 else cast(concat_with_space(_OrganizationAddress.AddresseeName1, _OrganizationAddress.AddresseeName2, 1) as ad_namtext ) end when Partner.AddressObjectType = '2' then _PersonAddress.PersonFullName when Partner.AddressObjectType = '3' then _PersonWorkplaceAddress.PersonFullName end end as ad_namtext )` |
+| `Country` |  | | `_OrgNamePostalAddress` | `Country` |
+| `FormOfAddress` |  | |  | `cast( coalesce( _PersonName.FormOfAddress, _OrgNamePostalAddress.FormOfAddress ) as ad_title preserving type )` |
+| `CorrespondenceLanguage` |  | |  | `coalesce( _PersonName.CorrespondenceLanguage, _OrgNamePostalAddress.CorrespondenceLanguage )` |
+| `InternationalPhoneNumber` |  | |  | `cast( case Partner.AddressID when '' then _WorkPlaceAddress.NormalizedPhoneNumber else _CurrentDfltLandlinePhoneNmbr.InternationalPhoneNumber end as vdm_sd_sls_phone preserving type )` |
+| `InternationalMobilePhoneNumber` |  | |  | `cast( case Partner.AddressID when '' then _WorkPlaceAddress.MblNormalizedPhoneNumber else _CurrentDfltMobilePhoneNumber.InternationalPhoneNumber end as vdm_sd_sls_mobile preserving type )` |
+| `InternationalFaxNumber` |  | |  | `cast( case Partner.AddressID when '' then _WorkPlaceAddress.InternationalFaxNumber else _CurrentDfltFaxNumber.InternationalFaxNumber end as vdm_sd_sls_fax preserving type )` |
+| `EmailAddress` |  | |  | `cast( case Partner.AddressID when '' then _WorkPlaceAddress.DefaultEmailAddress else _CurrentDfltEmailAddress.EmailAddress end as vdm_sd_sls_email preserving type )` |
+| `SalesDocumentItemText` |  | |  |  |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
+| `_OrganizationAddress` | | ✓ | | |
+| `_PersonAddress` | | ✓ | | |
+| `_OrgNamePostalAddress` | | ✓ | | |
+| `_PersonName` | | ✓ | | |
 
 ## Associations
 

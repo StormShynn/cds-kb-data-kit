@@ -30,43 +30,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrderTemplate` | `ServiceOrderTemplate` |
-| key `ServiceOrderTemplateItem` | `ServiceOrderTemplateItem` |
-| `ServiceOrderTemplateItemUUID` | `ServiceOrderTemplateItemUUID` |
-| `SrvcOrdTmplItmDescription` | `SrvcOrdTmplItmDescription` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `SrvcOrdTmplItmCategory` | `SrvcOrdTmplItmCategory` |
-| `ServiceDocumentItemObjectType` | `ServiceDocumentItemObjectType` |
-| `Language` | `Language` |
-| `SrvcOrdTmplItmValdtyStrtDteTme` | `SrvcOrdTmplItmValdtyStrtDteTme` |
-| `SrvcOrdTmplItmValdtyEndDteTme` | `SrvcOrdTmplItmValdtyEndDteTme` |
-| `ServiceDocItemChangedDateTime` | `ServiceDocItemChangedDateTime` |
-| `ServiceDocItemCreationDateTime` | `ServiceDocItemCreationDateTime` |
-| `ServiceDocItemCreatedByUser` | `ServiceDocItemCreatedByUser` |
-| `ServiceDocItemChangedByUser` | `ServiceDocItemChangedByUser` |
-| `Product` | `Product` |
-| `Quantity` | `} Quantity` |
-| `QuantityUnit` | `QuantityUnit` |
-| `ParentServiceOrderTemplateItem` | `ParentServiceOrderTemplateItem` |
-| `SrvcOrdTmplItmIsNew` | `SrvcOrdTmplItmIsNew` |
-| `SrvcOrdTmplItmIsInProcess` | `SrvcOrdTmplItmIsInProcess` |
-| `SrvcOrdTmplItmIsReleased` | `SrvcOrdTmplItmIsReleased` |
-| `SrvcOrdTmplItmIsCompleted` | `SrvcOrdTmplItmIsCompleted` |
-| `SrvcDocItmPartReferenceItem` | `SrvcDocItmPartReferenceItem` |
-| `SrvcDocItmApptReferenceItem` | `SrvcDocItmApptReferenceItem` |
-| `SrvcDocItmApptRefObjectUUID` | `SrvcDocItmApptRefObjectUUID` |
-| `_ServiceObjType` | *Association* |
-| `_ServiceDocument` | *Association* |
-| `_SrvcOrdTmplItmStatus` | *Association* |
-| `_Product` | *Association* |
-| `_ServiceOrderTemplateTP` | *Association* |
-| `_SrvcOrdTmplItmRefObjectTP` | *Association* |
-| `_SrvcOrdTmplItemUserStatusTP` | *Association* |
-| `_SrvcOrdTmplItemLongTextTP` | *Association* |
-| `_SrvcOrdTmplItemAppointmentTP` | *Association* |
-| `_SrvcOrdTmplItemDurationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrderTemplate` | ✓ | |  |  |
+| `ServiceOrderTemplateItem` | ✓ | |  |  |
+| `ServiceOrderTemplateItemUUID` |  | |  |  |
+| `SrvcOrdTmplItmDescription` |  | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `SrvcOrdTmplItmCategory` |  | |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |
+| `Language` |  | |  |  |
+| `SrvcOrdTmplItmValdtyStrtDteTme` |  | |  |  |
+| `SrvcOrdTmplItmValdtyEndDteTme` |  | |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |
+| `ServiceDocItemCreatedByUser` |  | |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |
+| `Product` |  | |  |  |
+| `Quantity` |  | |  | `} Quantity` |
+| `QuantityUnit` |  | |  |  |
+| `ParentServiceOrderTemplateItem` |  | |  |  |
+| `SrvcOrdTmplItmIsNew` |  | |  |  |
+| `SrvcOrdTmplItmIsInProcess` |  | |  |  |
+| `SrvcOrdTmplItmIsReleased` |  | |  |  |
+| `SrvcOrdTmplItmIsCompleted` |  | |  |  |
+| `SrvcDocItmPartReferenceItem` |  | |  |  |
+| `SrvcDocItmApptReferenceItem` |  | |  |  |
+| `SrvcDocItmApptRefObjectUUID` |  | |  |  |
+| `_ServiceObjType` | | ✓ | | |
+| `_ServiceDocument` | | ✓ | | |
+| `_SrvcOrdTmplItmStatus` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ServiceOrderTemplateTP` | | ✓ | | |
+| `_SrvcOrdTmplItmRefObjectTP` | | ✓ | | |
+| `_SrvcOrdTmplItemUserStatusTP` | | ✓ | | |
+| `_SrvcOrdTmplItemLongTextTP` | | ✓ | | |
+| `_SrvcOrdTmplItemAppointmentTP` | | ✓ | | |
+| `_SrvcOrdTmplItemDurationTP` | | ✓ | | |
 
 ## Source Code
 

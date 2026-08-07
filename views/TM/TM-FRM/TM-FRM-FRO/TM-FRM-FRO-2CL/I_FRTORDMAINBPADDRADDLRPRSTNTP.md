@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderUUID` | `TransportationOrderUUID` |
-| key `TranspOrdBizPartnerFunction` | `TranspOrdBizPartnerFunction` |
-| key `AddressRepresentationCode` | `AddressRepresentationCode` |
-| `AddressID` | `AddressID` |
-| `AddresseeFullName` | `AddresseeFullName` |
-| `CityName` | `CityName` |
-| `PostalCode` | `PostalCode` |
-| `StreetName` | `StreetName` |
-| `HouseNumber` | `HouseNumber` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `I_FrtOrdMainBPAddrDfltRprstnTP` | `_TrOrdMainBPAddrDfltRprstn as _FrtOrdMainBPAddrDfltRprstn : redirected to parent I_FrtOrdMainBPAddrDfltRprstnTP` |
-| `I_FreightOrderTP` | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `_AddressRepresentationCode` | *Association* |
-| `_PartnerFunction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderUUID` | ✓ | |  |  |
+| `TranspOrdBizPartnerFunction` | ✓ | |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  |
+| `AddressID` |  | |  |  |
+| `AddresseeFullName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `I_FrtOrdMainBPAddrDfltRprstnTP` |  | |  | `_TrOrdMainBPAddrDfltRprstn as _FrtOrdMainBPAddrDfltRprstn : redirected to parent I_FrtOrdMainBPAddrDfltRprstnTP` |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| `_AddressRepresentationCode` | | ✓ | | |
+| `_PartnerFunction` | | ✓ | | |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspToleranceSpecification` | `tq29t.toleranzsl` |
-| key `Language` | `tq29t.sprache` |
-| `InspToleranceSpecificationText` | `tq29t.kurztext` |
-| `_Language` | *Association* |
-| `_InspToleranceSpecification` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspToleranceSpecification` | ✓ | |  | `toleranzsl` |
+| `Language` | ✓ | |  | `sprache` |
+| `InspToleranceSpecificationText` |  | |  | `kurztext` |
+| `_Language` | | ✓ | | |
+| `_InspToleranceSpecification` | | ✓ | | |
 
 ## Associations
 

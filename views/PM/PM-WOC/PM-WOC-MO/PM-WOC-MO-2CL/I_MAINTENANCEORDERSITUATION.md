@@ -30,27 +30,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceOrder` | `MaintenanceOrder` |
-| `MaintenanceOrderDesc` | `MaintenanceOrderDesc` |
-| `MaintenanceOrderType` | `MaintenanceOrderType` |
-| `MaintenanceOrderTypeName` | `_Order._OrderType._Text[1:Language = $session.system_language].OrderTypeName` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `MaintenancePlanningPlantName` | `_MaintenancePlanPlant.PlantName1` |
-| `MaintPriority` | `MaintPriority` |
-| `MaintenanceActivityType` | `MaintenanceActivityType` |
-| `MaintenanceNotification` | `MaintenanceNotification` |
-| `Equipment` | `Equipment` |
-| `FunctionalLocation` | `cast(_LocationAccountAssignment.FunctionalLocation as tplnr_unconverted)` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `MaintOrdBasicStartDate` | `MaintOrdBasicStartDate` |
-| `MaintOrdBasicStartTime` | `MaintOrdBasicStartTime` |
-| `MaintOrdBasicEndDate` | `MaintOrdBasicEndDate` |
-| `MaintOrdBasicEndTime` | `MaintOrdBasicEndTime` |
-| `MaintOrderProcessingContext` | `MaintOrderProcessingContext` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |
+| `MaintenanceOrderDesc` |  | |  |  |
+| `MaintenanceOrderType` |  | |  |  |
+| `MaintenanceOrderTypeName` |  | |  | `_Order._OrderType._Text[1:Language = $session.system_language].OrderTypeName` |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MaintenancePlanningPlantName` |  | | `_MaintenancePlanPlant` | `PlantName1` |
+| `MaintPriority` |  | |  |  |
+| `MaintenanceActivityType` |  | |  |  |
+| `MaintenanceNotification` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `FunctionalLocation` |  | |  | `cast(_LocationAccountAssignment.FunctionalLocation as tplnr_unconverted)` |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `MaintOrdBasicStartDate` |  | |  |  |
+| `MaintOrdBasicStartTime` |  | |  |  |
+| `MaintOrdBasicEndDate` |  | |  |  |
+| `MaintOrdBasicEndTime` |  | |  |  |
+| `MaintOrderProcessingContext` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
 
 ## Associations
 

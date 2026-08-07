@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeRequest` | `request_id` |
-| `BankAccountChangeRequestStatus` | `request_status` |
-| `BankAccountAction` | `account_action` |
-| `BankAcctChangeReqHeadingText` | `title` |
-| `BankAccountChangeRequestStep` | `request_step` |
-| `CreationDate` | `created_on` |
-| `CreatedByUser` | `created_by` |
-| `CreationTime` | `created_tm` |
-| `LastChangeDate` | `lastchged_on` |
-| `LastChangedByUser` | `lastchged_by` |
-| `LastChangeTime` | `lastchged_tm` |
-| `BankAcctChangeRequestDueDate` | `duedate` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeRequest` | ✓ | |  | `request_id` |
+| `BankAccountChangeRequestStatus` |  | |  | `request_status` |
+| `BankAccountAction` |  | |  | `account_action` |
+| `BankAcctChangeReqHeadingText` |  | |  | `title` |
+| `BankAccountChangeRequestStep` |  | |  | `request_step` |
+| `CreationDate` |  | |  | `created_on` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationTime` |  | |  | `created_tm` |
+| `LastChangeDate` |  | |  | `lastchged_on` |
+| `LastChangedByUser` |  | |  | `lastchged_by` |
+| `LastChangeTime` |  | |  | `lastchged_tm` |
+| `BankAcctChangeRequestDueDate` |  | |  | `duedate` |
 
 ## Source Code
 

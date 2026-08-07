@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CashPoolAssignment` | `CashPoolAssignment` |
-| `CashPoolAssignmentText` | `CashPoolAssignmentText` |
-| `CashPool` | `CashPool` |
-| `CashPoolAssgmtIsHeadBkAcct` | `CashPoolAssgmtIsHeadBkAcct` |
-| `CashPoolAssgmtIsDeleted` | `CashPoolAssgmtIsDeleted` |
-| `CashPoolAssgmtValdtyStrtDte` | `CashPoolAssgmtValdtyStrtDte` |
-| `CashPoolAssgmtValdtyEndDte` | `CashPoolAssgmtValdtyEndDte` |
-| `BankAccountInternalID` | `BankAccountInternalID` |
-| `PaymentMethod` | `PaymentMethod` |
-| `CreatedByUser` | `CashPoolCreatedByUser` |
-| `LastChangedByUser` | `CashPoolLastChangedByUser` |
-| `CreationDateTime` | `CashPoolCreationDateTime` |
-| `LocalLastChangeDateTime` | `CashPoolLastChangeDateTime` |
-| `CashPoolSrvcPrvdr` | `CashPoolSrvcPrvdr` |
-| `_BankAccount` | *Association* |
-| `_IsDeletedText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CashPoolAssignment` | ✓ | |  |  |
+| `CashPoolAssignmentText` |  | |  |  |
+| `CashPool` |  | |  |  |
+| `CashPoolAssgmtIsHeadBkAcct` |  | |  |  |
+| `CashPoolAssgmtIsDeleted` |  | |  |  |
+| `CashPoolAssgmtValdtyStrtDte` |  | |  |  |
+| `CashPoolAssgmtValdtyEndDte` |  | |  |  |
+| `BankAccountInternalID` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `CreatedByUser` |  | |  | `CashPoolCreatedByUser` |
+| `LastChangedByUser` |  | |  | `CashPoolLastChangedByUser` |
+| `CreationDateTime` |  | |  | `CashPoolCreationDateTime` |
+| `LocalLastChangeDateTime` |  | |  | `CashPoolLastChangeDateTime` |
+| `CashPoolSrvcPrvdr` |  | |  |  |
+| `_BankAccount` | | ✓ | | |
+| `_IsDeletedText` | | ✓ | | |
 
 ## Source Code
 

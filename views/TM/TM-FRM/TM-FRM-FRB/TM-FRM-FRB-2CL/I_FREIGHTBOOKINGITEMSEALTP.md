@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdItemSealUUID` | `TranspOrdItemSealUUID` |
-| `TransportationOrderItemUUID` | `TransportationOrderItemUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspOrdItemSealNumber` | `TranspOrdItemSealNumber` |
-| `TranspOrdItemSealingDateTime` | `TranspOrdItemSealingDateTime` |
-| `I_FreightBookingTP` | `FreightBookingItemSeal._TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
-| `I_FreightBookingItemTP` | `FreightBookingItemSeal._TransportationOrderItem as _FreightBookingItem : redirected to parent I_FreightBookingItemTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdItemSealUUID` | ✓ | |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspOrdItemSealNumber` |  | |  |  |
+| `TranspOrdItemSealingDateTime` |  | |  |  |
+| `I_FreightBookingTP` |  | |  | `FreightBookingItemSeal._TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
+| `I_FreightBookingItemTP` |  | |  | `FreightBookingItemSeal._TransportationOrderItem as _FreightBookingItem : redirected to parent I_FreightBookingItemTP` |
 
 ## Source Code
 

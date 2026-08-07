@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionRateRatioUnit` | `ConditionRateRatioUnit.ConditionRateRatioUnit` |
-| `UnitOfMeasureISOCode` | `ConditionRateRatioUnit.UnitOfMeasureISOCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionRateRatioUnit` | ✓ | |  |  |
+| `UnitOfMeasureISOCode` |  | |  |  |
 
 ## Source Code
 

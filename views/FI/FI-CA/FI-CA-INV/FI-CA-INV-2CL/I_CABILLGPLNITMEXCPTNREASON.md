@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnItmExcptnReason` | `item_excreason` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnItmExcptnReason` | ✓ | |  | `item_excreason` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

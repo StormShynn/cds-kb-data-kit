@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `lgnum` |
-| key `EWMWave` | `cast( wave as ewm_de_wave )` |
-| key `EWMWaveItem` | `cast( wave_itm as ewm_de_waveitem )` |
-| `WarehouseTaskCreationStatus` | `stat_cr` |
-| `ItemWeight` | `weight` |
-| `ItemWeightUnit` | `unit_w` |
-| `ItemVolume` | `volum` |
-| `ItemVolumeUnit` | `unit_v` |
-| `EWMWaveItemCnsmdCapacityValue` | `capa` |
-| `ShipToParty` | `shipto` |
-| `ProductName` | `matnr` |
-| `Batch` | `charg` |
-| `EWMStockOwner` | `owner` |
-| `EntitledToDisposeParty` | `entitled` |
-| `ItemQuantity` | `quan` |
-| `ItemQuantityUnit` | `unit` |
-| `ReferenceDocumentUUID` | `rdocid` |
-| `ReferenceDocumentItemUUID` | `ritmid` |
-| `EWMWaveSplitNumber` | `split_id` |
-| `EWMRefDeliveryDocumentNumber` | `cast(docno as ewm_de_ref_dlv_no_conv preserving type)` |
-| `EWMRefDeliveryDocumentItem` | `itemno` |
-| `EWMWaveItemErrorStatus` | `wv_error` |
-| `EWMRoute` | `route_id` |
-| `SalesOrder` | `refdocno_so` |
-| `ActivityArea` | `aarea` |
-| `WarehouseProcessType` | `procty` |
-| `EWMWaveItemSimulationStatus` | `sim_status_itm` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  | `lgnum` |
+| `EWMWave` | ✓ | |  | `cast( wave as ewm_de_wave )` |
+| `EWMWaveItem` | ✓ | |  | `cast( wave_itm as ewm_de_waveitem )` |
+| `WarehouseTaskCreationStatus` |  | |  | `stat_cr` |
+| `ItemWeight` |  | |  | `weight` |
+| `ItemWeightUnit` |  | |  | `unit_w` |
+| `ItemVolume` |  | |  | `volum` |
+| `ItemVolumeUnit` |  | |  | `unit_v` |
+| `EWMWaveItemCnsmdCapacityValue` |  | |  | `capa` |
+| `ShipToParty` |  | |  | `shipto` |
+| `ProductName` |  | |  | `matnr` |
+| `Batch` |  | |  | `charg` |
+| `EWMStockOwner` |  | |  | `owner` |
+| `EntitledToDisposeParty` |  | |  | `entitled` |
+| `ItemQuantity` |  | |  | `quan` |
+| `ItemQuantityUnit` |  | |  | `unit` |
+| `ReferenceDocumentUUID` |  | |  | `rdocid` |
+| `ReferenceDocumentItemUUID` |  | |  | `ritmid` |
+| `EWMWaveSplitNumber` |  | |  | `split_id` |
+| `EWMRefDeliveryDocumentNumber` |  | |  | `cast(docno as ewm_de_ref_dlv_no_conv preserving type)` |
+| `EWMRefDeliveryDocumentItem` |  | |  | `itemno` |
+| `EWMWaveItemErrorStatus` |  | |  | `wv_error` |
+| `EWMRoute` |  | |  | `route_id` |
+| `SalesOrder` |  | |  | `refdocno_so` |
+| `ActivityArea` |  | |  | `aarea` |
+| `WarehouseProcessType` |  | |  | `procty` |
+| `EWMWaveItemSimulationStatus` |  | |  | `sim_status_itm` |
 
 ## Source Code
 

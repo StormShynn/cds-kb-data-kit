@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADoubtfulOrValueAdjmtCode` | `cast( left( dd07t.domvalue_l, 3 ) as infoz_kk )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CADoubtfulOrValueAdjmtCodeName` | `cast ( ddtext as infoz_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADoubtfulOrValueAdjmtCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as infoz_kk )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CADoubtfulOrValueAdjmtCodeName` |  | |  | `cast ( ddtext as infoz_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

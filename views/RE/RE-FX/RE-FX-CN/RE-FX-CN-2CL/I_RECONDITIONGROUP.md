@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REConditionGroup` | `condgroup` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REConditionGroup` | ✓ | |  | `condgroup` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

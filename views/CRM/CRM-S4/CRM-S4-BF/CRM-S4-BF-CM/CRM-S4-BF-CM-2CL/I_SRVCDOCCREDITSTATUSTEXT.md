@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcDocCreditStatus` | `cast ( domvalue_l as crms4_stat_credit_h )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `SrvcDocCreditStatusText` | `ddtext` |
-| `_SrvcDocCreditStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcDocCreditStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_credit_h )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `SrvcDocCreditStatusText` |  | |  | `ddtext` |
+| `_SrvcDocCreditStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

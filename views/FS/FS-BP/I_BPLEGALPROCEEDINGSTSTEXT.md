@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `fsbpcc_lgl_proct.langu` |
-| key `BPLegalProceedingStatus` | `fsbpcc_lgl_proct.lgl_proc` |
-| `BPLegalProceedingStatusDesc` | `fsbpcc_lgl_proct.lgl_proc_t` |
-| `_BPLegalProceedingStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `BPLegalProceedingStatus` | ✓ | |  | `lgl_proc` |
+| `BPLegalProceedingStatusDesc` |  | |  | `lgl_proc_t` |
+| `_BPLegalProceedingStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

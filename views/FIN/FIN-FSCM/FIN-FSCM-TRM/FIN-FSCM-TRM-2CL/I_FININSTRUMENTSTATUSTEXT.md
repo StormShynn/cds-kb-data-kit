@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `FinancialInstrumentStatus` | `cast( dd07t.domvalue_l as tb_saktiv )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `FinancialInstrumentStatusName` | `cast( dd07t.ddtext as tb_saktiv_name preserving type )` |
-| `_Status` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `FinancialInstrumentStatus` | ✓ | |  | `cast( dd07t.domvalue_l as tb_saktiv )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `FinancialInstrumentStatusName` |  | |  | `cast( dd07t.ddtext as tb_saktiv_name preserving type )` |
+| `_Status` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

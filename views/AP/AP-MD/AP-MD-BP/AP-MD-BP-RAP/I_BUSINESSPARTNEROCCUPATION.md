@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerOccupation` | `jobgr` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerOccupation` | ✓ | |  | `jobgr` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -30,139 +30,139 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionRoutingGroup` | `ProductionRoutingGroup` |
-| key `ProductionRouting` | `ProductionRouting` |
-| key `ProductionRoutingSequence` | `ProductionRoutingSequence` |
-| key `ProductionRoutingOpIntID` | `ProductionRoutingOpIntID` |
-| key `ProductionRoutingOpIntVersion` | `ProductionRoutingOpIntVersion` |
-| `Operation` | `cast(Operation as pph_vornr preserving type)` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `IsDeleted` | `IsDeleted` |
-| `IsImplicitlyDeleted` | `IsImplicitlyDeleted` |
-| `OperationText` | `OperationText` |
-| `LongTextLanguageCode` | `LongTextLanguageCode` |
-| `Plant` | `Plant` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `OperationStandardTextCode` | `OperationStandardTextCode` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `CapacityCategoryCode` | `CapacityCategoryCode` |
-| `CostElement` | `CostElement` |
-| `OperationCostingRelevancyType` | `OperationCostingRelevancyType` |
-| `NumberOfTimeTickets` | `NumberOfTimeTickets` |
-| `NumberOfConfirmationSlips` | `NumberOfConfirmationSlips` |
-| `EmployeeWageGroup` | `EmployeeWageGroup` |
-| `EmployeeWageType` | `EmployeeWageType` |
-| `EmployeeSuitability` | `EmployeeSuitability` |
-| `NumberOfEmployees` | `NumberOfEmployees` |
-| `BillOfOperationsRefType` | `BillOfOperationsRefType` |
-| `BillOfOperationsRefGroup` | `BillOfOperationsRefGroup` |
-| `BillOfOperationsRefVariant` | `BillOfOperationsRefVariant` |
-| `LineSegmentTakt` | `LineSegmentTakt` |
-| `OperationStdWorkQtyGrpgCat` | `OperationStdWorkQtyGrpgCat` |
-| `OrderHasNoSubOperations` | `OrderHasNoSubOperations` |
-| `OperationSetupType` | `OperationSetupType` |
-| `OperationSetupGroupCategory` | `OperationSetupGroupCategory` |
-| `OperationSetupGroup` | `OperationSetupGroup` |
-| `BOOOperationIsPhase` | `BOOOperationIsPhase` |
-| `BOOPhaseSuperiorOpInternalID` | `BOOPhaseSuperiorOpInternalID` |
-| `ControlRecipeDestination` | `ControlRecipeDestination` |
-| `OpIsExtlyProcdWithSubcontrg` | `OpIsExtlyProcdWithSubcontrg` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `PurchasingInfoRecdAddlGrpgName` | `PurchasingInfoRecdAddlGrpgName` |
-| `MaterialGroup` | `MaterialGroup` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Supplier` | `Supplier` |
-| `PlannedDeliveryDuration` | `PlannedDeliveryDuration` |
-| `NumberOfOperationPriceUnits` | `NumberOfOperationPriceUnits` |
-| `OpExternalProcessingCurrency` | `OpExternalProcessingCurrency` |
-| `OpExternalProcessingPrice` | `OpExternalProcessingPrice` |
-| `InspectionLotType` | `InspectionLotType` |
-| `InspResultRecordingView` | `InspResultRecordingView` |
-| `InspSbstCompletionConfirmation` | `InspSbstCompletionConfirmation` |
-| `InspSbstHasNoTimeOrQuantity` | `InspSbstHasNoTimeOrQuantity` |
-| `OperationReferenceQuantity` | `OperationReferenceQuantity` |
-| `OperationUnit` | `OperationUnit` |
-| `OperationScrapPercent` | `OperationScrapPercent` |
-| `OpQtyToBaseQtyNmrtr` | `OpQtyToBaseQtyNmrtr` |
-| `OpQtyToBaseQtyDnmntr` | `OpQtyToBaseQtyDnmntr` |
-| `StandardWorkQuantity1` | `StandardWorkQuantity1` |
-| `StandardWorkQuantityUnit1` | `StandardWorkQuantityUnit1` |
-| `CostCtrActivityType1` | `CostCtrActivityType1` |
-| `PerfEfficiencyRatioCode1` | `PerfEfficiencyRatioCode1` |
-| `StandardWorkQuantity2` | `StandardWorkQuantity2` |
-| `StandardWorkQuantityUnit2` | `StandardWorkQuantityUnit2` |
-| `CostCtrActivityType2` | `CostCtrActivityType2` |
-| `PerfEfficiencyRatioCode2` | `PerfEfficiencyRatioCode2` |
-| `StandardWorkQuantity3` | `StandardWorkQuantity3` |
-| `StandardWorkQuantityUnit3` | `StandardWorkQuantityUnit3` |
-| `CostCtrActivityType3` | `CostCtrActivityType3` |
-| `PerfEfficiencyRatioCode3` | `PerfEfficiencyRatioCode3` |
-| `StandardWorkQuantity4` | `StandardWorkQuantity4` |
-| `StandardWorkQuantityUnit4` | `StandardWorkQuantityUnit4` |
-| `CostCtrActivityType4` | `CostCtrActivityType4` |
-| `PerfEfficiencyRatioCode4` | `PerfEfficiencyRatioCode4` |
-| `StandardWorkQuantity5` | `StandardWorkQuantity5` |
-| `StandardWorkQuantityUnit5` | `StandardWorkQuantityUnit5` |
-| `CostCtrActivityType5` | `CostCtrActivityType5` |
-| `PerfEfficiencyRatioCode5` | `PerfEfficiencyRatioCode5` |
-| `StandardWorkQuantity6` | `StandardWorkQuantity6` |
-| `StandardWorkQuantityUnit6` | `StandardWorkQuantityUnit6` |
-| `CostCtrActivityType6` | `CostCtrActivityType6` |
-| `PerfEfficiencyRatioCode6` | `PerfEfficiencyRatioCode6` |
-| `BusinessProcess` | `BusinessProcess` |
-| `LeadTimeReductionStrategy` | `LeadTimeReductionStrategy` |
-| `TeardownAndWaitIsParallel` | `TeardownAndWaitIsParallel` |
-| `BillOfOperationsBreakDuration` | `BillOfOperationsBreakDuration` |
-| `BreakDurationUnit` | `BreakDurationUnit` |
-| `MaximumWaitDuration` | `MaximumWaitDuration` |
-| `MaximumWaitDurationUnit` | `MaximumWaitDurationUnit` |
-| `MinimumWaitDuration` | `MinimumWaitDuration` |
-| `MinimumWaitDurationUnit` | `MinimumWaitDurationUnit` |
-| `StandardQueueDuration` | `StandardQueueDuration` |
-| `StandardQueueDurationUnit` | `StandardQueueDurationUnit` |
-| `MinimumQueueDuration` | `MinimumQueueDuration` |
-| `MinimumQueueDurationUnit` | `MinimumQueueDurationUnit` |
-| `StandardMoveDuration` | `StandardMoveDuration` |
-| `StandardMoveDurationUnit` | `StandardMoveDurationUnit` |
-| `MinimumMoveDuration` | `MinimumMoveDuration` |
-| `MinimumMoveDurationUnit` | `MinimumMoveDurationUnit` |
-| `OperationSplitIsRequired` | `OperationSplitIsRequired` |
-| `MaximumNumberOfSplits` | `MaximumNumberOfSplits` |
-| `MinProcessingDurationPerSplit` | `MinProcessingDurationPerSplit` |
-| `MinProcessingDurnPerSplitUnit` | `MinProcessingDurnPerSplitUnit` |
-| `OperationOverlappingIsRequired` | `OperationOverlappingIsRequired` |
-| `OperationOverlappingIsPossible` | `OperationOverlappingIsPossible` |
-| `OperationsIsAlwaysOverlapping` | `OperationsIsAlwaysOverlapping` |
-| `OperationHasNoOverlapping` | `OperationHasNoOverlapping` |
-| `OverlapMinimumDuration` | `OverlapMinimumDuration` |
-| `OverlapMinimumDurationUnit` | `OverlapMinimumDurationUnit` |
-| `OverlapMinimumTransferQty` | `OverlapMinimumTransferQty` |
-| `OverlapMinimumTransferQtyUnit` | `OverlapMinimumTransferQtyUnit` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `PlainLongText` | `PlainLongText` |
-| `_NonSqncTP` | *Association* |
-| `_ProdnRtgTP` | *Association* |
-| `_Header` | *Association* |
-| `_OpCompAlloc` | *Association* |
-| `_OpDocPRTAssgmt` | *Association* |
-| `_OpEquipPRTAssgmt` | *Association* |
-| `_OpMatlPRTAssgmt` | *Association* |
-| `_OpMiscPRTAssgmt` | *Association* |
-| `_OpInspCharcsAssgmt` | *Association* |
-| `_SubOp` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |
+| `ProductionRouting` | ✓ | |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |
+| `ProductionRoutingOpIntID` | ✓ | |  |  |
+| `ProductionRoutingOpIntVersion` | ✓ | |  |  |
+| `Operation` |  | |  | `cast(Operation as pph_vornr preserving type)` |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `LongTextLanguageCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `OperationStandardTextCode` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `CapacityCategoryCode` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `OperationCostingRelevancyType` |  | |  |  |
+| `NumberOfTimeTickets` |  | |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeSuitability` |  | |  |  |
+| `NumberOfEmployees` |  | |  |  |
+| `BillOfOperationsRefType` |  | |  |  |
+| `BillOfOperationsRefGroup` |  | |  |  |
+| `BillOfOperationsRefVariant` |  | |  |  |
+| `LineSegmentTakt` |  | |  |  |
+| `OperationStdWorkQtyGrpgCat` |  | |  |  |
+| `OrderHasNoSubOperations` |  | |  |  |
+| `OperationSetupType` |  | |  |  |
+| `OperationSetupGroupCategory` |  | |  |  |
+| `OperationSetupGroup` |  | |  |  |
+| `BOOOperationIsPhase` |  | |  |  |
+| `BOOPhaseSuperiorOpInternalID` |  | |  |  |
+| `ControlRecipeDestination` |  | |  |  |
+| `OpIsExtlyProcdWithSubcontrg` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PlannedDeliveryDuration` |  | |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |
+| `InspectionLotType` |  | |  |  |
+| `InspResultRecordingView` |  | |  |  |
+| `InspSbstCompletionConfirmation` |  | |  |  |
+| `InspSbstHasNoTimeOrQuantity` |  | |  |  |
+| `OperationReferenceQuantity` |  | |  |  |
+| `OperationUnit` |  | |  |  |
+| `OperationScrapPercent` |  | |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |
+| `StandardWorkQuantity1` |  | |  |  |
+| `StandardWorkQuantityUnit1` |  | |  |  |
+| `CostCtrActivityType1` |  | |  |  |
+| `PerfEfficiencyRatioCode1` |  | |  |  |
+| `StandardWorkQuantity2` |  | |  |  |
+| `StandardWorkQuantityUnit2` |  | |  |  |
+| `CostCtrActivityType2` |  | |  |  |
+| `PerfEfficiencyRatioCode2` |  | |  |  |
+| `StandardWorkQuantity3` |  | |  |  |
+| `StandardWorkQuantityUnit3` |  | |  |  |
+| `CostCtrActivityType3` |  | |  |  |
+| `PerfEfficiencyRatioCode3` |  | |  |  |
+| `StandardWorkQuantity4` |  | |  |  |
+| `StandardWorkQuantityUnit4` |  | |  |  |
+| `CostCtrActivityType4` |  | |  |  |
+| `PerfEfficiencyRatioCode4` |  | |  |  |
+| `StandardWorkQuantity5` |  | |  |  |
+| `StandardWorkQuantityUnit5` |  | |  |  |
+| `CostCtrActivityType5` |  | |  |  |
+| `PerfEfficiencyRatioCode5` |  | |  |  |
+| `StandardWorkQuantity6` |  | |  |  |
+| `StandardWorkQuantityUnit6` |  | |  |  |
+| `CostCtrActivityType6` |  | |  |  |
+| `PerfEfficiencyRatioCode6` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `LeadTimeReductionStrategy` |  | |  |  |
+| `TeardownAndWaitIsParallel` |  | |  |  |
+| `BillOfOperationsBreakDuration` |  | |  |  |
+| `BreakDurationUnit` |  | |  |  |
+| `MaximumWaitDuration` |  | |  |  |
+| `MaximumWaitDurationUnit` |  | |  |  |
+| `MinimumWaitDuration` |  | |  |  |
+| `MinimumWaitDurationUnit` |  | |  |  |
+| `StandardQueueDuration` |  | |  |  |
+| `StandardQueueDurationUnit` |  | |  |  |
+| `MinimumQueueDuration` |  | |  |  |
+| `MinimumQueueDurationUnit` |  | |  |  |
+| `StandardMoveDuration` |  | |  |  |
+| `StandardMoveDurationUnit` |  | |  |  |
+| `MinimumMoveDuration` |  | |  |  |
+| `MinimumMoveDurationUnit` |  | |  |  |
+| `OperationSplitIsRequired` |  | |  |  |
+| `MaximumNumberOfSplits` |  | |  |  |
+| `MinProcessingDurationPerSplit` |  | |  |  |
+| `MinProcessingDurnPerSplitUnit` |  | |  |  |
+| `OperationOverlappingIsRequired` |  | |  |  |
+| `OperationOverlappingIsPossible` |  | |  |  |
+| `OperationsIsAlwaysOverlapping` |  | |  |  |
+| `OperationHasNoOverlapping` |  | |  |  |
+| `OverlapMinimumDuration` |  | |  |  |
+| `OverlapMinimumDurationUnit` |  | |  |  |
+| `OverlapMinimumTransferQty` |  | |  |  |
+| `OverlapMinimumTransferQtyUnit` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `PlainLongText` |  | |  |  |
+| `_NonSqncTP` | | ✓ | | |
+| `_ProdnRtgTP` | | ✓ | | |
+| `_Header` | | ✓ | | |
+| `_OpCompAlloc` | | ✓ | | |
+| `_OpDocPRTAssgmt` | | ✓ | | |
+| `_OpEquipPRTAssgmt` | | ✓ | | |
+| `_OpMatlPRTAssgmt` | | ✓ | | |
+| `_OpMiscPRTAssgmt` | | ✓ | | |
+| `_OpInspCharcsAssgmt` | | ✓ | | |
+| `_SubOp` | | ✓ | | |
 
 ## Source Code
 

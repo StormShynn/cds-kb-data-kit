@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDDocumentReason` | `augru` |
-| key `Language` | `spras` |
-| `SDDocumentReasonText` | `bezei` |
-| `_SDDocumentReason` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDDocumentReason` | ✓ | |  | `augru` |
+| `Language` | ✓ | |  | `spras` |
+| `SDDocumentReasonText` |  | |  | `bezei` |
+| `_SDDocumentReason` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

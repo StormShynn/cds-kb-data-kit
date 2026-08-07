@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReconciliationAccountType` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReconciliationAccountType` | ✓ | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

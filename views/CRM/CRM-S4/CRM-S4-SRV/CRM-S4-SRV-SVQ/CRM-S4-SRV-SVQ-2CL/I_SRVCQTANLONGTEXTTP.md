@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceQuotation` | `ServiceQuotation` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| key `SrvcDocLogTextIdentifier` | `SrvcDocLogTextIdentifier` |
-| `TextObjectCategory` | `TextObjectCategory` |
-| `SrvcDocLongTextMimeType` | `SrvcDocLongTextMimeType` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `SrvcQtanLongText` | `SrvcQtanLongText` |
-| `ReferenceTextObjectCategory` | `ReferenceTextObjectCategory` |
-| `ReferenceTextObjectType` | `ReferenceTextObjectType` |
-| `ReferenceLongTextKey` | `ReferenceLongTextKey` |
-| `SrvcDocLongTxtCreationDateTime` | `SrvcDocLongTxtCreationDateTime` |
-| `SrvcDocLongTextCreatedByUser` | `SrvcDocLongTextCreatedByUser` |
-| `SrvcDocLongTextChangedDateTime` | `SrvcDocLongTextChangedDateTime` |
-| `SrvcDocLongTextChangedByUser` | `SrvcDocLongTextChangedByUser` |
-| `_ServiceQuotationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SrvcDocLogTextIdentifier` | ✓ | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `SrvcQtanLongText` |  | |  |  |
+| `ReferenceTextObjectCategory` |  | |  |  |
+| `ReferenceTextObjectType` |  | |  |  |
+| `ReferenceLongTextKey` |  | |  |  |
+| `SrvcDocLongTxtCreationDateTime` |  | |  |  |
+| `SrvcDocLongTextCreatedByUser` |  | |  |  |
+| `SrvcDocLongTextChangedDateTime` |  | |  |  |
+| `SrvcDocLongTextChangedByUser` |  | |  |  |
+| `_ServiceQuotationTP` | | ✓ | | |
 
 ## Source Code
 

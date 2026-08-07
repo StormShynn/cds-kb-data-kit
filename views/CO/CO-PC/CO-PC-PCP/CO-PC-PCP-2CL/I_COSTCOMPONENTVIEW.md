@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostComponentView` | `CostComponentView` |
-| `CostCompIsForSalesAndAdminCost` | `CostCompIsForSalesAndAdminCost` |
-| `CostCompIsForCOGM` | `CostCompIsForCOGM` |
-| `CostCompIsForInvtryValuation` | `CostCompIsForInvtryValuation` |
-| `CostCompIsForInvtryOnCommlLaw` | `CostCompIsForInvtryOnCommlLaw` |
-| `CostCompIsForInvtryOnTaxLaw` | `CostCompIsForInvtryOnTaxLaw` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostComponentView` | ✓ | |  |  |
+| `CostCompIsForSalesAndAdminCost` |  | |  |  |
+| `CostCompIsForCOGM` |  | |  |  |
+| `CostCompIsForInvtryValuation` |  | |  |  |
+| `CostCompIsForInvtryOnCommlLaw` |  | |  |  |
+| `CostCompIsForInvtryOnTaxLaw` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

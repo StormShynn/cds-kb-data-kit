@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ContractAccount` | `vkont_kk` |
-| `D_CAInvcgDocCreatedSourceDoc` | `_SourceDocument : composition [0..*] of D_CAInvcgDocCreatedSourceDoc` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccount` |  | |  | `vkont_kk` |
+| `D_CAInvcgDocCreatedSourceDoc` |  | |  | `_SourceDocument : composition [0..*] of D_CAInvcgDocCreatedSourceDoc` |
 
 ## Source Code
 

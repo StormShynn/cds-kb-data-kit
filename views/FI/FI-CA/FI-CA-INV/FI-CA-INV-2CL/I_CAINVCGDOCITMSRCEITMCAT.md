@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgDocItemSourceItmCat` | `cast ( substring( dd07l.domvalue_l,1,5 ) as srcitemcat_kk preserving type )` |
-| `_CAInvcgDocItmSrceItmCatText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgDocItemSourceItmCat` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,5 ) as srcitemcat_kk preserving type )` |
+| `_CAInvcgDocItmSrceItmCatText` | | ✓ | | |
 
 ## Associations
 

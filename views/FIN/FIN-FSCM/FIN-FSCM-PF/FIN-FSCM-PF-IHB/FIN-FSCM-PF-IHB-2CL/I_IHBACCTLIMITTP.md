@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IHBLimitUUID` | `IHBLimitUUID` |
-| `IHBObjectUUID` | `IHBObjectUUID` |
-| `IHBLimitRefUUID` | `IHBLimitRefUUID` |
-| `IHBLimitAmount` | `IHBLimitAmount` |
-| `IHBLimitCurrency` | `IHBLimitCurrency` |
-| `IHBLimitValidFromDate` | `IHBLimitValidFromDate` |
-| `IHBLimitValidToDate` | `IHBLimitValidToDate` |
-| `IHBObjectTotalChangedDateTime` | `IHBObjectTotalChangedDateTime` |
-| `IHBObjectCreatedDateTime` | `IHBObjectCreatedDateTime` |
-| `IHBObjectCreatedByUser` | `IHBObjectCreatedByUser` |
-| `IHBObjectChangedDateTime` | `IHBObjectChangedDateTime` |
-| `IHBObjectChangedByUser` | `IHBObjectChangedByUser` |
-| `_IHBMasterDataObjectTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IHBLimitUUID` | ✓ | |  |  |
+| `IHBObjectUUID` |  | |  |  |
+| `IHBLimitRefUUID` |  | |  |  |
+| `IHBLimitAmount` |  | |  |  |
+| `IHBLimitCurrency` |  | |  |  |
+| `IHBLimitValidFromDate` |  | |  |  |
+| `IHBLimitValidToDate` |  | |  |  |
+| `IHBObjectTotalChangedDateTime` |  | |  |  |
+| `IHBObjectCreatedDateTime` |  | |  |  |
+| `IHBObjectCreatedByUser` |  | |  |  |
+| `IHBObjectChangedDateTime` |  | |  |  |
+| `IHBObjectChangedByUser` |  | |  |  |
+| `_IHBMasterDataObjectTP` | | ✓ | | |
 
 ## Source Code
 

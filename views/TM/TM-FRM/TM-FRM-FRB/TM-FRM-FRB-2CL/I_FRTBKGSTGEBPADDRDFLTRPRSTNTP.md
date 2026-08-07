@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderStageUUID` | `TransportationOrderStageUUID` |
-| key `TranspOrdBizPartnerFunction` | `TranspOrdBizPartnerFunction` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `AddressID` | `AddressID` |
-| `AddresseeFullName` | `AddresseeFullName` |
-| `CityName` | `CityName` |
-| `PostalCode` | `PostalCode` |
-| `StreetName` | `StreetName` |
-| `HouseNumber` | `HouseNumber` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `EmailAddress` | `EmailAddress` |
-| `InternationalPhoneNumber` | `InternationalPhoneNumber` |
-| `InternationalMobilePhoneNumber` | `InternationalMobilePhoneNumber` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `I_FreightBookingStageTP` | `_TransportationOrderStage as _FreightBookingStage : redirected to parent I_FreightBookingStageTP` |
-| `I_FreightBookingTP` | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
-| `I_FrtBkgStgeBPAddrAddlRprstnTP` | `_TrOrdStgeBPAddrAddlRprstn as _FrtBkgStageBPAddrAddlRprstn : redirected to composition child I_FrtBkgStgeBPAddrAddlRprstnTP` |
-| `_PartnerFunction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderStageUUID` | ✓ | |  |  |
+| `TranspOrdBizPartnerFunction` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddresseeFullName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `InternationalPhoneNumber` |  | |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `I_FreightBookingStageTP` |  | |  | `_TransportationOrderStage as _FreightBookingStage : redirected to parent I_FreightBookingStageTP` |
+| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
+| `I_FrtBkgStgeBPAddrAddlRprstnTP` |  | |  | `_TrOrdStgeBPAddrAddlRprstn as _FrtBkgStageBPAddrAddlRprstn : redirected to composition child I_FrtBkgStgeBPAddrAddlRprstnTP` |
+| `_PartnerFunction` | | ✓ | | |
 
 ## Source Code
 

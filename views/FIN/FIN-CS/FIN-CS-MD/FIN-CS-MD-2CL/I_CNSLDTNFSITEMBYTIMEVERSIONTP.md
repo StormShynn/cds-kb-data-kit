@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `_Source.ConsolidationChartOfAccounts` |
-| key `CnsldtnFinancialStatementItem` | `_Source.CnsldtnFinancialStatementItem` |
-| key `ConsolidationVersion` | `_Source.ConsolidationVersion` |
-| key `FromFiscalYearPeriod` | `_Source.FromFiscalYearPeriod` |
-| `ToFiscalYearPeriod` | `_Source.ToFiscalYearPeriod` |
-| `CnsldtnFSItemRole` | `_Source.CnsldtnFSItemRole` |
-| `CnsldtnFSItemDataCollection` | `_Source.CnsldtnFSItemDataCollection` |
-| `CnsldtnFSItemCrcyTranslation` | `_Source.CnsldtnFSItemCrcyTranslation` |
-| `CnsldtnFSItemElimination` | `_Source.CnsldtnFSItemElimination` |
-| `CnsldtnFSItemCashFlow` | `_Source.CnsldtnFSItemCashFlow` |
-| `CnsldtnFSItemScope` | `_Source.CnsldtnFSItemScope` |
-| `CnsldtnFSItemCustomerSpecific` | `_Source.CnsldtnFSItemCustomerSpecific` |
-| `CnsldtnEliminationTargetFSItem` | `_Source.CnsldtnEliminationTargetFSItem` |
-| `CnsldtnNCITargetFSItem` | `_Source.CnsldtnNCITargetFSItem` |
-| `CnsldtnPlanningTargetFSItem` | `_Source.CnsldtnPlanningTargetFSItem` |
-| `CnsldtnOffsettingTargetFSItem` | `_Source.CnsldtnOffsettingTargetFSItem` |
-| `_CnsldtnFSItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |
+| `CnsldtnFinancialStatementItem` | ✓ | | `_Source` | `CnsldtnFinancialStatementItem` |
+| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |
+| `FromFiscalYearPeriod` | ✓ | | `_Source` | `FromFiscalYearPeriod` |
+| `ToFiscalYearPeriod` |  | | `_Source` | `ToFiscalYearPeriod` |
+| `CnsldtnFSItemRole` |  | | `_Source` | `CnsldtnFSItemRole` |
+| `CnsldtnFSItemDataCollection` |  | | `_Source` | `CnsldtnFSItemDataCollection` |
+| `CnsldtnFSItemCrcyTranslation` |  | | `_Source` | `CnsldtnFSItemCrcyTranslation` |
+| `CnsldtnFSItemElimination` |  | | `_Source` | `CnsldtnFSItemElimination` |
+| `CnsldtnFSItemCashFlow` |  | | `_Source` | `CnsldtnFSItemCashFlow` |
+| `CnsldtnFSItemScope` |  | | `_Source` | `CnsldtnFSItemScope` |
+| `CnsldtnFSItemCustomerSpecific` |  | | `_Source` | `CnsldtnFSItemCustomerSpecific` |
+| `CnsldtnEliminationTargetFSItem` |  | | `_Source` | `CnsldtnEliminationTargetFSItem` |
+| `CnsldtnNCITargetFSItem` |  | | `_Source` | `CnsldtnNCITargetFSItem` |
+| `CnsldtnPlanningTargetFSItem` |  | | `_Source` | `CnsldtnPlanningTargetFSItem` |
+| `CnsldtnOffsettingTargetFSItem` |  | | `_Source` | `CnsldtnOffsettingTargetFSItem` |
+| `_CnsldtnFSItem` | | ✓ | | |
 
 ## Source Code
 

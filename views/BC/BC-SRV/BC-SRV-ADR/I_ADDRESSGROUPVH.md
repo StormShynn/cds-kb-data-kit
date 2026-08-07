@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressGroup` | `AddressGroup` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressGroup` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

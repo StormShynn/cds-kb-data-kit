@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnCrcyTranslationMethod` | `CnsldtnCrcyTranslationMethod` |
-| `CnsldtnCrcyTrnsltnMethodText` | `cast(_Text[1: Language=$session.system_language].CnsldtnCrcyTrnsltnMethodText as fincs_description_text_30 preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnCrcyTranslationMethod` | ✓ | |  |  |
+| `CnsldtnCrcyTrnsltnMethodText` |  | |  | `cast(_Text[1: Language=$session.system_language].CnsldtnCrcyTrnsltnMethodText as fincs_description_text_30 preserving type )` |
 
 ## Source Code
 

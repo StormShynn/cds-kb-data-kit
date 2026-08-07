@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Source.langu` |
-| key `CnsldtnRptdFinDataUploadMethod` | `cast ( _Source.meth as fincs_rptdfindatauploadmethod preserving type )` |
-| `CnsldtnRptdFinDataUpldMethText` | `cast ( _Source.txt as fincs_rptdfindatauploadmethtxt preserving type )` |
-| `_Language` | *Association* |
-| `_CnsldtnRptdFinDataUpldMeth` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `langu` |
+| `CnsldtnRptdFinDataUploadMethod` | ✓ | |  | `cast ( _Source.meth as fincs_rptdfindatauploadmethod preserving type )` |
+| `CnsldtnRptdFinDataUpldMethText` |  | |  | `cast ( _Source.txt as fincs_rptdfindatauploadmethtxt preserving type )` |
+| `_Language` | | ✓ | | |
+| `_CnsldtnRptdFinDataUpldMeth` | | ✓ | | |
 
 ## Associations
 

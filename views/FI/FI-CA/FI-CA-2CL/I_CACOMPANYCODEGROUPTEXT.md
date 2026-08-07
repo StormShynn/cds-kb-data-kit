@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACompanyCodeGroup` | `opbuk` |
-| key `Language` | `spras` |
-| `CACompanyCodeGroupName` | `txt30` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACompanyCodeGroup` | ✓ | |  | `opbuk` |
+| `Language` | ✓ | |  | `spras` |
+| `CACompanyCodeGroupName` |  | |  | `txt30` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

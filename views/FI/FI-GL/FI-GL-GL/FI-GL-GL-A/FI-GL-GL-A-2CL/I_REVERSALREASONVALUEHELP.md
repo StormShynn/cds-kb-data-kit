@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReversalReason` | `ReversalReason` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReversalReason` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShippingCondition` | `vsbed` |
-| key `Language` | `spras` |
-| `ShippingConditionName` | `vtext` |
-| `_ShippingCondition` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShippingCondition` | ✓ | |  | `vsbed` |
+| `Language` | ✓ | |  | `spras` |
+| `ShippingConditionName` |  | |  | `vtext` |
+| `_ShippingCondition` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

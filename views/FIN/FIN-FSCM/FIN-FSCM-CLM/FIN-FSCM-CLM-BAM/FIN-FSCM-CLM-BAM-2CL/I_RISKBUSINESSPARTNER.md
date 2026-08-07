@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankCountry` | `RiskBp.banks` |
-| key `BankInternalID` | `RiskBp.bankl` |
-| key `BusinessPartnerNumber` | `RiskBp.partner` |
-| key `ValidTo` | `RiskBp.valid_to` |
-| `ValidFrom` | `RiskBp.valid_from` |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankCountry` | ✓ | |  | `banks` |
+| `BankInternalID` | ✓ | |  | `bankl` |
+| `BusinessPartnerNumber` | ✓ | |  | `partner` |
+| `ValidTo` | ✓ | |  | `valid_to` |
+| `ValidFrom` |  | |  | `valid_from` |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Associations
 

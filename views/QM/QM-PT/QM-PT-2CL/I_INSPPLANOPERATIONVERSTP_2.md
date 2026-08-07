@@ -28,43 +28,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionPlanGroup` | `InspectionPlanGroup` |
-| key `BOOOperationInternalID` | `BOOOperationInternalID` |
-| key `BOOOpInternalVersionCounter` | `BOOOpInternalVersionCounter` |
-| key `InspectionPlan` | `InspectionPlan` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `IsDeleted` | `IsDeleted` |
-| `IsImplicitlyDeleted` | `IsImplicitlyDeleted` |
-| `OperationExternalID` | `OperationExternalID` |
-| `Operation` | `Operation` |
-| `OperationText` | `OperationText` |
-| `Plant` | `Plant` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `OperationStandardTextCode` | `OperationStandardTextCode` |
-| `BillOfOperationsRefType` | `BillOfOperationsRefType` |
-| `BillOfOperationsRefGroup` | `BillOfOperationsRefGroup` |
-| `BillOfOperationsRefVariant` | `BillOfOperationsRefVariant` |
-| `InspSbstCompletionConfirmation` | `InspSbstCompletionConfirmation` |
-| `InspSbstHasNoTimeOrQuantity` | `InspSbstHasNoTimeOrQuantity` |
-| `OperationReferenceQuantity` | `OperationReferenceQuantity` |
-| `OperationUnit` | `OperationUnit` |
-| `OpQtyToBaseQtyDnmntr` | `OpQtyToBaseQtyDnmntr` |
-| `OpQtyToBaseQtyNmrtr` | `OpQtyToBaseQtyNmrtr` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_InspPlanOperation` | *Association* |
-| `_InspectionPlanVersion` | *Association* |
-| `_InspPlanOpCharcVers` | *Association* |
-| `_InspPlan` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |
+| `BOOOpInternalVersionCounter` | ✓ | |  |  |
+| `InspectionPlan` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |
+| `OperationExternalID` |  | |  |  |
+| `Operation` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `Plant` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `OperationStandardTextCode` |  | |  |  |
+| `BillOfOperationsRefType` |  | |  |  |
+| `BillOfOperationsRefGroup` |  | |  |  |
+| `BillOfOperationsRefVariant` |  | |  |  |
+| `InspSbstCompletionConfirmation` |  | |  |  |
+| `InspSbstHasNoTimeOrQuantity` |  | |  |  |
+| `OperationReferenceQuantity` |  | |  |  |
+| `OperationUnit` |  | |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_InspPlanOperation` | | ✓ | | |
+| `_InspectionPlanVersion` | | ✓ | | |
+| `_InspPlanOpCharcVers` | | ✓ | | |
+| `_InspPlan` | | ✓ | | |
 
 ## Source Code
 

@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeRecordUUID` | `ChangeRecordUUID` |
-| `ChangeRecord` | `ChangeRecord` |
-| `ChangeRecordType` | `ChangeRecordType` |
-| `ParentChangeRecordUUID` | `ParentChangeRecordUUID` |
-| `RootChangeRecordUUID` | `RootChangeRecordUUID` |
-| `ChangeRecordPriority` | `ChangeRecordPriority` |
-| `ChangeRecordStatus` | `ChangeRecordStatus` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ChangeRecordCategory` | `ChangeRecordCategory` |
-| `ChgRecordApplication` | `ChgRecordApplication` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `ChangeRecordLifecycleStatus` | `ChangeRecordLifecycleStatus` |
-| `ChgRecdDigitalSignatureStatus` | `ChgRecdDigitalSignatureStatus` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeRecordUUID` | ✓ | |  |  |
+| `ChangeRecord` |  | |  |  |
+| `ChangeRecordType` |  | |  |  |
+| `ParentChangeRecordUUID` |  | |  |  |
+| `RootChangeRecordUUID` |  | |  |  |
+| `ChangeRecordPriority` |  | |  |  |
+| `ChangeRecordStatus` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ChangeRecordCategory` |  | |  |  |
+| `ChgRecordApplication` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ChangeRecordLifecycleStatus` |  | |  |  |
+| `ChgRecdDigitalSignatureStatus` |  | |  |  |
 
 ## Source Code
 

@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CollectiveProcessing` | `sammg` |
-| key `SDDocument` | `vbeln` |
-| key `SDDocumentItem` | `posnr` |
-| key `ScheduleLine` | `etenr` |
-| key `CollectiveProcessingMsgCounter` | `zaehl` |
-| `SystemMessageIdentification` | `msgid` |
-| `SystemMessageNumber` | `msgno` |
-| `SystemMessageType` | `msgty` |
-| `SystemMessageVariable1` | `msgv1` |
-| `SystemMessageVariable2` | `msgv2` |
-| `SystemMessageVariable3` | `msgv3` |
-| `SystemMessageVariable4` | `msgv4` |
-| `CollectiveProcessingType` | `smart` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CollectiveProcessing` | ✓ | |  | `sammg` |
+| `SDDocument` | ✓ | |  | `vbeln` |
+| `SDDocumentItem` | ✓ | |  | `posnr` |
+| `ScheduleLine` | ✓ | |  | `etenr` |
+| `CollectiveProcessingMsgCounter` | ✓ | |  | `zaehl` |
+| `SystemMessageIdentification` |  | |  | `msgid` |
+| `SystemMessageNumber` |  | |  | `msgno` |
+| `SystemMessageType` |  | |  | `msgty` |
+| `SystemMessageVariable1` |  | |  | `msgv1` |
+| `SystemMessageVariable2` |  | |  | `msgv2` |
+| `SystemMessageVariable3` |  | |  | `msgv3` |
+| `SystemMessageVariable4` |  | |  | `msgv4` |
+| `CollectiveProcessingType` |  | |  | `smart` |
 
 ## Source Code
 

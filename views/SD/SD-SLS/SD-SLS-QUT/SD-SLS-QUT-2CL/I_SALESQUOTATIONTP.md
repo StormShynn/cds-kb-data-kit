@@ -30,51 +30,51 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotation` | `SalesQuotation.SalesQuotation` |
-| `SalesQuotationType` | `SalesQuotation.SalesQuotationType` |
-| `SoldToParty` | `SalesQuotation.SoldToParty` |
-| `SalesOrganization` | `SalesQuotation.SalesOrganization` |
-| `DistributionChannel` | `SalesQuotation.DistributionChannel` |
-| `OrganizationDivision` | `SalesQuotation.OrganizationDivision` |
-| `SalesOffice` | `SalesQuotation.SalesOffice` |
-| `SalesGroup` | `SalesQuotation.SalesGroup` |
-| `SalesDistrict` | `SalesQuotation.SalesDistrict` |
-| `PurchaseOrderByCustomer` | `SalesQuotation.PurchaseOrderByCustomer` |
-| `SDDocumentReason` | `SalesQuotation.SDDocumentReason` |
-| `CustomerPurchaseOrderDate` | `SalesQuotation.CustomerPurchaseOrderDate` |
-| `PricingDate` | `SalesQuotation.PricingDate` |
-| `CustomerPriceGroup` | `SalesQuotation.CustomerPriceGroup` |
-| `RequestedDeliveryDate` | `SalesQuotation.RequestedDeliveryDate` |
-| `ShippingCondition` | `SalesQuotation.ShippingCondition` |
-| `ShippingType` | `SalesQuotation.ShippingType` |
-| `IncotermsClassification` | `SalesQuotation.IncotermsClassification` |
-| `IncotermsVersion` | `SalesQuotation.IncotermsVersion` |
-| `IncotermsLocation1` | `SalesQuotation.IncotermsLocation1` |
-| `IncotermsLocation2` | `SalesQuotation.IncotermsLocation2` |
-| `SalesQuotationApprovalReason` | `SalesQuotation.SalesQuotationApprovalReason` |
-| `TransactionCurrency` | `SalesQuotation.TransactionCurrency` |
-| `BindingPeriodValidityStartDate` | `SalesQuotation.BindingPeriodValidityStartDate` |
-| `BindingPeriodValidityEndDate` | `SalesQuotation.BindingPeriodValidityEndDate` |
-| `HdrOrderProbabilityInPercent` | `SalesQuotation.HdrOrderProbabilityInPercent` |
-| `TotalNetAmount` | `SalesQuotation.TotalNetAmount` |
-| `ReferenceSDDocument` | `SalesQuotation.ReferenceSDDocument` |
-| `ReferenceSDDocumentCategory` | `SalesQuotation.ReferenceSDDocumentCategory` |
-| `OverallSDProcessStatus` | `SalesQuotation.OverallSDProcessStatus` |
-| `HdrGeneralIncompletionStatus` | `SalesQuotation.HdrGeneralIncompletionStatus` |
-| `OvrlItmGeneralIncompletionSts` | `SalesQuotation.OvrlItmGeneralIncompletionSts` |
-| `OverallSDDocReferenceStatus` | `SalesQuotation.OverallSDDocReferenceStatus` |
-| `SalesDocApprovalStatus` | `SalesQuotation.SalesDocApprovalStatus` |
-| `TotalCreditCheckStatus` | `SalesQuotation.TotalCreditCheckStatus` |
-| `LastChangeDateTime` | `SalesQuotation.LastChangeDateTime` |
-| `CreatedByUser` | `SalesQuotation.CreatedByUser` |
-| `CreationDate` | `SalesQuotation.CreationDate` |
-| `LastChangedByUser` | `SalesQuotation.LastChangedByUser` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_Text` | *Association* |
-| `_PricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |
+| `SalesQuotationType` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `CustomerPriceGroup` |  | |  |  |
+| `RequestedDeliveryDate` |  | |  |  |
+| `ShippingCondition` |  | |  |  |
+| `ShippingType` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `SalesQuotationApprovalReason` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `BindingPeriodValidityStartDate` |  | |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |
+| `HdrOrderProbabilityInPercent` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
 
 ## Source Code
 

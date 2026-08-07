@@ -31,33 +31,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContract` | `SlsContrItemBillingPlanItem.SalesContract` |
-| key `SalesContractItem` | `SlsContrItemBillingPlanItem.SalesContractItem` |
-| key `BillingPlan` | `SlsContrItemBillingPlanItem.BillingPlan` |
-| key `BillingPlanItem` | `SlsContrItemBillingPlanItem.BillingPlanItem` |
-| `BillingPlanItemForEdit` | `SlsContrItemBillingPlanItem.BillingPlanItemForEdit` |
-| `BillingPlanBillingDate` | `SlsContrItemBillingPlanItem.BillingPlanBillingDate` |
-| `BillingPlanDateCategory` | `SlsContrItemBillingPlanItem.BillingPlanDateCategory` |
-| `BillingPlanDateDescriptionCode` | `SlsContrItemBillingPlanItem.BillingPlanDateDescriptionCode` |
-| `BillingPlanAmountPercent` | `SlsContrItemBillingPlanItem.BillingPlanAmountPercent` |
-| `BillingPlanAmount` | `SlsContrItemBillingPlanItem.BillingPlanAmount` |
-| `BillingBlockReason` | `SlsContrItemBillingPlanItem.BillingBlockReason` |
-| `BillingPlanRelatedBillgStatus` | `SlsContrItemBillingPlanItem.BillingPlanRelatedBillgStatus` |
-| `ProposedBillingDocumentType` | `SlsContrItemBillingPlanItem.ProposedBillingDocumentType` |
-| `BillingPlanType` | `SlsContrItemBillingPlanItem.BillingPlanType` |
-| `BillingPlanBillingRule` | `SlsContrItemBillingPlanItem.BillingPlanBillingRule` |
-| `TransactionCurrency` | `SlsContrItemBillingPlanItem.TransactionCurrency` |
-| `AdoptingBillingDateID` | `SlsContrItemBillingPlanItem.AdoptingBillingDateID` |
-| `CustomerPaymentTerms` | `SlsContrItemBillingPlanItem.CustomerPaymentTerms` |
-| `SalesContractType` | `SlsContrItemBillingPlanItem.SalesContractType` |
-| `SalesOrganization` | `SlsContrItemBillingPlanItem.SalesOrganization` |
-| `DistributionChannel` | `SlsContrItemBillingPlanItem.DistributionChannel` |
-| `OrganizationDivision` | `SlsContrItemBillingPlanItem.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesContract` | *Association* |
-| `_ItemBillingPlan` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |
+| `SalesContractItem` | ✓ | |  |  |
+| `BillingPlan` | ✓ | |  |  |
+| `BillingPlanItem` | ✓ | |  |  |
+| `BillingPlanItemForEdit` |  | |  |  |
+| `BillingPlanBillingDate` |  | |  |  |
+| `BillingPlanDateCategory` |  | |  |  |
+| `BillingPlanDateDescriptionCode` |  | |  |  |
+| `BillingPlanAmountPercent` |  | |  |  |
+| `BillingPlanAmount` |  | |  |  |
+| `BillingBlockReason` |  | |  |  |
+| `BillingPlanRelatedBillgStatus` |  | |  |  |
+| `ProposedBillingDocumentType` |  | |  |  |
+| `BillingPlanType` |  | |  |  |
+| `BillingPlanBillingRule` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `AdoptingBillingDateID` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `SalesContractType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesContract` | | ✓ | | |
+| `_ItemBillingPlan` | | ✓ | | |
 
 ## Source Code
 

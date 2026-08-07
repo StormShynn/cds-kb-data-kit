@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingBlockReason` | `faksp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingBlockReason` | ✓ | |  | `faksp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

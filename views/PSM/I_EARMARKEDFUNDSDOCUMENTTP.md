@@ -28,57 +28,57 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| `EarmarkedFundsDocumentForEdit` | `EarmarkedFundsDocumentForEdit` |
-| `EarmarkedFundsDocumentCategory` | `EarmarkedFundsDocumentCategory` |
-| `EarmarkedFundsDocumentType` | `EarmarkedFundsDocumentType` |
-| `CompanyCode` | `CompanyCode` |
-| `FinancialManagementArea` | `FinancialManagementArea` |
-| `ControllingArea` | `ControllingArea` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `EarmarkedFundsDocReference` | `EarmarkedFundsDocReference` |
-| `EarmarkedFundsDocReference2` | `EarmarkedFundsDocReference2` |
-| `EarmarkedFundsDocReference3` | `EarmarkedFundsDocReference3` |
-| `EarmarkedFundsHeaderText` | `EarmarkedFundsHeaderText` |
-| `EarmarkedFundsHasLongText` | `EarmarkedFundsHasLongText` |
-| `PostingDate` | `PostingDate` |
-| `DocumentDate` | `DocumentDate` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `AbsoluteExchangeRate` | `AbsoluteExchangeRate` |
-| `ExchRateIsIndirectQuotation` | `ExchRateIsIndirectQuotation` |
-| `EmrkdFndsDocCreatedByUser` | `EmrkdFndsDocCreatedByUser` |
-| `EmrkdFndsDocCreationDate` | `EmrkdFndsDocCreationDate` |
-| `EmrkdFndsDocLastChangedByUser` | `EmrkdFndsDocLastChangedByUser` |
-| `EmrkdFndsDocLastChangeDate` | `EmrkdFndsDocLastChangeDate` |
-| `EmrkdFndsDocLastChangeDateTime` | `EmrkdFndsDocLastChangeDateTime` |
-| `OrgnlBusinessTransactionType` | `OrgnlBusinessTransactionType` |
-| `ReferenceDocumentType` | `ReferenceDocumentType` |
-| `ReferenceDocument` | `ReferenceDocument` |
-| `ReferenceDocumentContext` | `ReferenceDocumentContext` |
-| `ReferenceDocumentLogicalSystem` | `ReferenceDocumentLogicalSystem` |
-| `EmrkdFndsIsMarkedForArchiving` | `EmrkdFndsIsMarkedForArchiving` |
-| `EmrkdFndsHasNegativeAmounts` | `EmrkdFndsHasNegativeAmounts` |
-| `EmrkdFndsIsBlockedAgainstUsage` | `EmrkdFndsIsBlockedAgainstUsage` |
-| `EarmarkedFundsIsCompleted` | `EarmarkedFundsIsCompleted` |
-| `EarmarkedFundsIsApproved` | `EarmarkedFundsIsApproved` |
-| `EmrkdFndsWasAlreadyAprvdOnce` | `EmrkdFndsWasAlreadyAprvdOnce` |
-| `EmrkdFndsHasAddlCnsmpnLogic` | `EmrkdFndsHasAddlCnsmpnLogic` |
-| `EarmarkedFundsDecisionReason` | `EarmarkedFundsDecisionReason` |
-| `EarmarkedFundsStartWorkflow` | `EarmarkedFundsStartWorkflow` |
-| `EarmarkedFundsManualEditBlock` | `EarmarkedFundsManualEditBlock` |
-| `EmrkdFndsMnlEditBlkForEdit` | `EmrkdFndsMnlEditBlkForEdit` |
-| `EmrkdFndsHasValueAdjustments` | `EmrkdFndsHasValueAdjustments` |
-| `EarmarkedFundsDocEntryStatus` | `EarmarkedFundsDocEntryStatus` |
-| `EmrkdFndsTotalInTransCrcy` | `EmrkdFndsTotalInTransCrcy` |
-| `EmrkdFndsRelTotalInTransCrcy` | `EmrkdFndsRelTotalInTransCrcy` |
-| `EmrkdFndsOpenTotalInTransCrcy` | `EmrkdFndsOpenTotalInTransCrcy` |
-| `EmrkdFndsChgdTotalInTransCrcy` | `EmrkdFndsChgdTotalInTransCrcy` |
-| `EmrkdFndsCnsmdTotalInTransCrcy` | `EmrkdFndsCnsmdTotalInTransCrcy` |
-| `EmrkdFndsOriglTotalInTransCrcy` | `EmrkdFndsOriglTotalInTransCrcy` |
-| `I_EarmarkedFundsDocumentItemTP` | `efdoc._EarmarkedFundsDocumentItem : redirected to composition child I_EarmarkedFundsDocumentItemTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EarmarkedFundsDocument` | ✓ | |  |  |
+| `EarmarkedFundsDocumentForEdit` |  | |  |  |
+| `EarmarkedFundsDocumentCategory` |  | |  |  |
+| `EarmarkedFundsDocumentType` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `FinancialManagementArea` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `EarmarkedFundsDocReference` |  | |  |  |
+| `EarmarkedFundsDocReference2` |  | |  |  |
+| `EarmarkedFundsDocReference3` |  | |  |  |
+| `EarmarkedFundsHeaderText` |  | |  |  |
+| `EarmarkedFundsHasLongText` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `AbsoluteExchangeRate` |  | |  |  |
+| `ExchRateIsIndirectQuotation` |  | |  |  |
+| `EmrkdFndsDocCreatedByUser` |  | |  |  |
+| `EmrkdFndsDocCreationDate` |  | |  |  |
+| `EmrkdFndsDocLastChangedByUser` |  | |  |  |
+| `EmrkdFndsDocLastChangeDate` |  | |  |  |
+| `EmrkdFndsDocLastChangeDateTime` |  | |  |  |
+| `OrgnlBusinessTransactionType` |  | |  |  |
+| `ReferenceDocumentType` |  | |  |  |
+| `ReferenceDocument` |  | |  |  |
+| `ReferenceDocumentContext` |  | |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  |  |
+| `EmrkdFndsIsMarkedForArchiving` |  | |  |  |
+| `EmrkdFndsHasNegativeAmounts` |  | |  |  |
+| `EmrkdFndsIsBlockedAgainstUsage` |  | |  |  |
+| `EarmarkedFundsIsCompleted` |  | |  |  |
+| `EarmarkedFundsIsApproved` |  | |  |  |
+| `EmrkdFndsWasAlreadyAprvdOnce` |  | |  |  |
+| `EmrkdFndsHasAddlCnsmpnLogic` |  | |  |  |
+| `EarmarkedFundsDecisionReason` |  | |  |  |
+| `EarmarkedFundsStartWorkflow` |  | |  |  |
+| `EarmarkedFundsManualEditBlock` |  | |  |  |
+| `EmrkdFndsMnlEditBlkForEdit` |  | |  |  |
+| `EmrkdFndsHasValueAdjustments` |  | |  |  |
+| `EarmarkedFundsDocEntryStatus` |  | |  |  |
+| `EmrkdFndsTotalInTransCrcy` |  | |  |  |
+| `EmrkdFndsRelTotalInTransCrcy` |  | |  |  |
+| `EmrkdFndsOpenTotalInTransCrcy` |  | |  |  |
+| `EmrkdFndsChgdTotalInTransCrcy` |  | |  |  |
+| `EmrkdFndsCnsmdTotalInTransCrcy` |  | |  |  |
+| `EmrkdFndsOriglTotalInTransCrcy` |  | |  |  |
+| `I_EarmarkedFundsDocumentItemTP` |  | |  | `efdoc._EarmarkedFundsDocumentItem : redirected to composition child I_EarmarkedFundsDocumentItemTP` |
 
 ## Source Code
 

@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContactPerson` | `knvk.parnr` |
-| `Customer` | `knvk.kunnr` |
-| `Supplier` | `knvk.lifnr` |
-| `ContactPersonFunction` | `knvk.pafkt` |
-| `ContactPersonDepartment` | `knvk.abtnr` |
-| `SearchTerm1` | `knvk.sortl` |
-| `SearchTerm` | `knvk.sortl` |
-| `PersonNumber` | `knvk.prsnr` |
-| `UpperCaseFirstName` | `adrp.mc_namefir` |
-| `UpperCaseLastName` | `adrp.mc_namelas` |
-| `FirstName` | `adrp.name_first` |
-| `LastName` | `adrp.name_last` |
-| `PersonFullName` | `adrp.name_text` |
-| `IsBusinessPurposeCompleted` | `knvk.cvp_xblck_k` |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
-| `_CustLink` | *Association* |
-| `_SuppLink` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContactPerson` | ✓ | |  | `parnr` |
+| `Customer` |  | |  | `kunnr` |
+| `Supplier` |  | |  | `lifnr` |
+| `ContactPersonFunction` |  | |  | `pafkt` |
+| `ContactPersonDepartment` |  | |  | `abtnr` |
+| `SearchTerm1` |  | |  | `sortl` |
+| `SearchTerm` |  | |  | `sortl` |
+| `PersonNumber` |  | |  | `prsnr` |
+| `UpperCaseFirstName` |  | |  | `mc_namefir` |
+| `UpperCaseLastName` |  | |  | `mc_namelas` |
+| `FirstName` |  | |  | `name_first` |
+| `LastName` |  | |  | `name_last` |
+| `PersonFullName` |  | |  | `name_text` |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck_k` |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_CustLink` | | ✓ | | |
+| `_SuppLink` | | ✓ | | |
 
 ## Associations
 

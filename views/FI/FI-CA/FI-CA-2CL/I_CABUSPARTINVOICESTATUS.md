@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABusPartnerInvoiceStatus` | `cast( left( dd07l.domvalue_l,2 ) as inv_status_dc_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABusPartnerInvoiceStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l,2 ) as inv_status_dc_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

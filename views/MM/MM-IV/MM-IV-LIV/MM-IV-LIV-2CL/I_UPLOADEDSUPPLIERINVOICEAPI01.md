@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UploadedSupplierInvoiceUUID` | `UploadedSupplierInvoiceUUID` |
-| `SupplierInvoiceUploadUUID` | `SupplierInvoiceUploadUUID` |
-| `SupplierInvoice` | `SupplierInvoice` |
-| `FiscalYear` | `FiscalYear` |
-| `SuplrInvcUploadDescription` | `_SupplierInvoiceUploadAPI01.SuplrInvcUploadDescription` |
-| `_SupplierInvoiceAPI01` | *Association* |
-| `_SupplierInvoiceUploadAPI01` | *Association* |
-| `_SuplrInvcUploadHistoryAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UploadedSupplierInvoiceUUID` | ✓ | |  |  |
+| `SupplierInvoiceUploadUUID` |  | |  |  |
+| `SupplierInvoice` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `SuplrInvcUploadDescription` |  | | `_SupplierInvoiceUploadAPI01` | `SuplrInvcUploadDescription` |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
+| `_SupplierInvoiceUploadAPI01` | | ✓ | | |
+| `_SuplrInvcUploadHistoryAPI01` | | ✓ | | |
 
 ## Associations
 

@@ -26,29 +26,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `plkz.plnty` |
-| key `BillOfOperationsGroup` | `plkz.plnnr` |
-| key `BillOfOperationsVariant` | `plkz.plnal` |
-| `BillOfOperationsVersionType` | `plkz.subtype` |
-| `BillOfOperationsSubtype` | `plkz.subtype` |
-| `LastUsageDate` | `plkz.abdat` |
-| `NumberOfUsages` | `plkz.abanz` |
-| `HasChangeNumber` | `plkz.flg_ecm` |
-| `HasParameterEffectivity` | `plkz.flg_ecm_par` |
-| `LastChangeDate` | `plkz.aedat` |
-| `LastChangeTime` | `plkz.aeuzeit` |
-| `LastChangedByUser` | `cast(plkz.aenam as vdm_lastchangedbyuserid preserving type)` |
-| `RoutingIsReworkRouting` | `plkz.rework` |
-| `ProdnProcgIsFlexible` | `plkz.relaxed` |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsVersionType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperationsGroup_2` | *Association* |
-| `_BillOfOperationsChangeState` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_BOOMaterialAssignment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  | `plnty` |
+| `BillOfOperationsGroup` | ✓ | |  | `plnnr` |
+| `BillOfOperationsVariant` | ✓ | |  | `plnal` |
+| `BillOfOperationsVersionType` |  | |  | `subtype` |
+| `BillOfOperationsSubtype` |  | |  | `subtype` |
+| `LastUsageDate` |  | |  | `abdat` |
+| `NumberOfUsages` |  | |  | `abanz` |
+| `HasChangeNumber` |  | |  | `flg_ecm` |
+| `HasParameterEffectivity` |  | |  | `flg_ecm_par` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `LastChangeTime` |  | |  | `aeuzeit` |
+| `LastChangedByUser` |  | |  | `cast(plkz.aenam as vdm_lastchangedbyuserid preserving type)` |
+| `RoutingIsReworkRouting` |  | |  | `rework` |
+| `ProdnProcgIsFlexible` |  | |  | `relaxed` |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsVersionType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperationsGroup_2` | | ✓ | | |
+| `_BillOfOperationsChangeState` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_BOOMaterialAssignment` | | ✓ | | |
 
 ## Associations
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
-| key `ScheduleLine` | `ScheduleLine` |
-| `Quantity` | `Quantity` |
-| `RequestedDeliveryUTCDateTime` | `RequestedDeliveryUTCDateTime` |
-| `ProductQuantity` | `ProductQuantity` |
-| `ConfirmedDeliveryDateTime` | `ConfirmedDeliveryDateTime` |
-| `QuantityUnit` | `QuantityUnit` |
-| `_BusinessSolutionOrderItemTP` | *Association* |
-| `_BusinessSolutionOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `Quantity` |  | |  |  |
+| `RequestedDeliveryUTCDateTime` |  | |  |  |
+| `ProductQuantity` |  | |  |  |
+| `ConfirmedDeliveryDateTime` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
 
 ## Source Code
 

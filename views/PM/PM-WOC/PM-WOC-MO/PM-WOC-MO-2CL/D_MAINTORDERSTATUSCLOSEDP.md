@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `MaintOrderReferenceDateTime` | `timestamp` |
-| `AssignedMaintNotifIsToBeClosed` | `abap_boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintOrderReferenceDateTime` |  | |  | `timestamp` |
+| `AssignedMaintNotifIsToBeClosed` |  | |  | `abap_boolean` |
 
 ## Source Code
 

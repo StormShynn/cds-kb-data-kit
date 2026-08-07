@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RecordType` | `cast( dd07l.domvalue_l as imrs_recordtype )` |
-| `GoodsMovementType` | `_GoodsMovementType.GoodsMovementType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RecordType` | ✓ | |  | `cast( dd07l.domvalue_l as imrs_recordtype )` |
+| `GoodsMovementType` |  | | `_GoodsMovementType` | `GoodsMovementType` |
 
 ## Source Code
 

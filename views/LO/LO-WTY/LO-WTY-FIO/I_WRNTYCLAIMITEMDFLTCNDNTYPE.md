@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WrntyControllingItemType` | `WrntyControllingItemType` |
-| `MatlItmCndnTypeInbFrmRmbsr` | `MatlItmCndnTypeInbFrmRmbsr` |
-| `MatlItmCndnTypeOutbToRmbsr` | `MatlItmCndnTypeOutbToRmbsr` |
-| `LabItmCndnTypeInbFrmRmbsr` | `LabItmCndnTypeInbFrmRmbsr` |
-| `LabItmCndnTypeOutbToRmbsr` | `LabItmCndnTypeOutbToRmbsr` |
-| `ExtItmCndnTypeInbFrmRmbsr` | `ExtItmCndnTypeInbFrmRmbsr` |
-| `ExtItmCndnTypeOutbToRmbsr` | `ExtItmCndnTypeOutbToRmbsr` |
-| `MatlItmCndnTypeInbFrmClmnt` | `MatlItmCndnTypeInbFrmClmnt` |
-| `MatlItmCndnTypeOutbToClmnt` | `MatlItmCndnTypeOutbToClmnt` |
-| `LabItmCndnTypeForInbFrmClmnt` | `LabItmCndnTypeForInbFrmClmnt` |
-| `LabItmCndnTypeOutbToClmnt` | `LabItmCndnTypeOutbToClmnt` |
-| `ExtItmCndnTypeInbFrmClmnt` | `ExtItmCndnTypeInbFrmClmnt` |
-| `ExtItmCndnTypeOutbToClmnt` | `ExtItmCndnTypeOutbToClmnt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WrntyControllingItemType` | ✓ | |  |  |
+| `MatlItmCndnTypeInbFrmRmbsr` |  | |  |  |
+| `MatlItmCndnTypeOutbToRmbsr` |  | |  |  |
+| `LabItmCndnTypeInbFrmRmbsr` |  | |  |  |
+| `LabItmCndnTypeOutbToRmbsr` |  | |  |  |
+| `ExtItmCndnTypeInbFrmRmbsr` |  | |  |  |
+| `ExtItmCndnTypeOutbToRmbsr` |  | |  |  |
+| `MatlItmCndnTypeInbFrmClmnt` |  | |  |  |
+| `MatlItmCndnTypeOutbToClmnt` |  | |  |  |
+| `LabItmCndnTypeForInbFrmClmnt` |  | |  |  |
+| `LabItmCndnTypeOutbToClmnt` |  | |  |  |
+| `ExtItmCndnTypeInbFrmClmnt` |  | |  |  |
+| `ExtItmCndnTypeOutbToClmnt` |  | |  |  |
 
 ## Source Code
 

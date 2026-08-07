@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `trkorr` | `key TransportRequestID : trkorr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `trkorr` |  | |  | `key TransportRequestID : trkorr` |
 
 ## Source Code
 

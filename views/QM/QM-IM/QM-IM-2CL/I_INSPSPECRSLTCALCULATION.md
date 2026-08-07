@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspSpecResultCalculation` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qkzformel preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspSpecResultCalculation` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qkzformel preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TriggerPointUsage` | `txt.UsageCode` |
-| key `Language` | `txt.Language` |
-| `TriggerPointUsageName` | `txt.UsageCodeName` |
-| `_Language` | *Association* |
-| `_TriggerPointUsage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TriggerPointUsage` | ✓ | |  | `UsageCode` |
+| `Language` | ✓ | |  |  |
+| `TriggerPointUsageName` |  | |  | `UsageCodeName` |
+| `_Language` | | ✓ | | |
+| `_TriggerPointUsage` | | ✓ | | |
 
 ## Associations
 

@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `ConsolidationCustomerHierarchy` | `cast(_HierarchyText.UniversalHierarchy as fincs_customerhierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnCustomerHierarchyText` | `cast(_HierarchyText.UniversalHierarchyText as fincs_customerhierarchytext preserving type )` |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `ConsolidationCustomerHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_customerhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnCustomerHierarchyText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_customerhierarchytext preserving type )` |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

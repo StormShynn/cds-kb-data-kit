@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialTransaction` | `FinancialTransaction` |
-| key `CompanyCode` | `CompanyCode` |
-| `FinancialInstrTransactionType` | `FinancialInstrTransactionType` |
-| `FinancialInstrumentProductType` | `FinancialInstrumentProductType` |
-| `Counterparty` | `Counterparty` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreatedByUserDescription` | `_CreatedBy.FullName` |
-| `FinTransCreationDate` | `FinTransCreationDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangedByUserDescription` | `_LastChangedBy.FullName` |
-| `LastChangeDate` | `LastChangeDate` |
-| `FinancialInstrumentStatus` | `FinancialInstrumentStatus` |
-| `Portfolio` | `Portfolio` |
-| `SecurityAccount` | `SecurityAccount` |
-| `_CreatedBy` | *Association* |
-| `_LastChangedBy` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialTransaction` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `FinancialInstrTransactionType` |  | |  |  |
+| `FinancialInstrumentProductType` |  | |  |  |
+| `Counterparty` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreatedByUserDescription` |  | | `_CreatedBy` | `FullName` |
+| `FinTransCreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangedByUserDescription` |  | | `_LastChangedBy` | `FullName` |
+| `LastChangeDate` |  | |  |  |
+| `FinancialInstrumentStatus` |  | |  |  |
+| `Portfolio` |  | |  |  |
+| `SecurityAccount` |  | |  |  |
+| `_CreatedBy` | | ✓ | | |
+| `_LastChangedBy` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

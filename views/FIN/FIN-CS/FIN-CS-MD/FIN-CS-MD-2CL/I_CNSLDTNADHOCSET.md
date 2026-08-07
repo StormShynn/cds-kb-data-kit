@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast(_AdhocSet.itclg as fincs_conschartofaccounts preserving type )` |
-| `CnsldtnAdhocSet` | `}] key _AdhocSet.adhocset` |
-| `CnsldtnAdhocSetBrkdwnType` | `_AdhocSet.adhocsetbrkdwntype` |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_CnsldtnAdhocSetBrkdwnType` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast(_AdhocSet.itclg as fincs_conschartofaccounts preserving type )` |
+| `CnsldtnAdhocSet` |  | |  | `}] key _AdhocSet.adhocset` |
+| `CnsldtnAdhocSetBrkdwnType` |  | | `_AdhocSet` | `adhocsetbrkdwntype` |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_CnsldtnAdhocSetBrkdwnType` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

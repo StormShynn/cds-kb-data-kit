@@ -30,46 +30,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `_QualityNotificationItem.QualityNotification` |
-| key `NotificationItem` | `_QualityNotificationItem.NotificationItem` |
-| `NotificationItemExternalID` | `_QualityNotificationItem.NotificationItemExternalID` |
-| `NotificationItemText` | `_QualityNotificationItem.NotificationItemText` |
-| `MasterLanguage` | `_QualityNotificationItem.MasterLanguage` |
-| `Assembly` | `_QualityNotificationItem.Assembly` |
-| `DefectClass` | `_QualityNotificationItem.DefectClass` |
-| `NumberOfDefects` | `_QualityNotificationItem.NumberOfDefects` |
-| `InspPlanOperationInternalID` | `_QualityNotificationItem.InspPlanOperationInternalID` |
-| `InspectionCharacteristic` | `_QualityNotificationItem.InspectionCharacteristic` |
-| `InspectionSubsetInternalID` | `_QualityNotificationItem.InspectionSubsetInternalID` |
-| `MaterialSample` | `_QualityNotificationItem.MaterialSample` |
-| `DefectiveSingleUnit` | `_QualityNotificationItem.DefectiveSingleUnit` |
-| `WorkCenterTypeCode` | `_QualityNotificationItem.WorkCenterTypeCode` |
-| `MainWorkCenterInternalID` | `_QualityNotificationItem.MainWorkCenterInternalID` |
-| `MainWorkCenter` | `_QualityNotificationItem.MainWorkCenter` |
-| `MainWorkCenterPlant` | `_QualityNotificationItem.MainWorkCenterPlant` |
-| `DefectOrigin` | `_QualityNotificationItem.DefectOrigin` |
-| `ReferencedDefect` | `_QualityNotificationItem.ReferencedDefect` |
-| `IsDeleted` | `_QualityNotificationItem.IsDeleted` |
-| `DefectCodeCatalog` | `_QualityNotificationItem.DefectCodeCatalog` |
-| `DefectCodeGroup` | `_QualityNotificationItem.DefectCodeGroup` |
-| `DefectCode` | `_QualityNotificationItem.DefectCode` |
-| `NotifItmObjectPartCodeCtlg` | `_QualityNotificationItem.NotifItmObjectPartCodeCtlg` |
-| `NotifItmObjectPartCodeGroup` | `_QualityNotificationItem.NotifItmObjectPartCodeGroup` |
-| `NotifItmObjectPartCode` | `_QualityNotificationItem.NotifItmObjectPartCode` |
-| `ExternalDefectiveQuantity` | `_QualityNotificationItem.ExternalDefectiveQuantity` |
-| `InternalDefectiveQuantity` | `_QualityNotificationItem.InternalDefectiveQuantity` |
-| `DefectiveQuantityUnit` | `_QualityNotificationItem.DefectiveQuantityUnit` |
-| `CreatedByUser` | `_QualityNotificationItem.CreatedByUser` |
-| `CreationDate` | `_QualityNotificationItem.CreationDate` |
-| `CreationTime` | `_QualityNotificationItem.CreationTime` |
-| `LastChangedByUser` | `_QualityNotificationItem.LastChangedByUser` |
-| `LastChangeDate` | `_QualityNotificationItem.LastChangeDate` |
-| `LastChangeTime` | `_QualityNotificationItem.LastChangeTime` |
-| `I_QltyNotificationTP` | `_QualityNotificationItem._QltyNotification : redirected to parent I_QltyNotificationTP` |
-| `I_QltyNotifItemLongTextTP` | `_QualityNotificationItem._QltyNotifItemLongText : redirected to composition child I_QltyNotifItemLongTextTP` |
-| `I_QltyNotificationItemCauseTP` | `_QualityNotificationItem._QltyNotificationItemCause : redirected to composition child I_QltyNotificationItemCauseTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | | `_QualityNotificationItem` | `QualityNotification` |
+| `NotificationItem` | ✓ | | `_QualityNotificationItem` | `NotificationItem` |
+| `NotificationItemExternalID` |  | | `_QualityNotificationItem` | `NotificationItemExternalID` |
+| `NotificationItemText` |  | | `_QualityNotificationItem` | `NotificationItemText` |
+| `MasterLanguage` |  | | `_QualityNotificationItem` | `MasterLanguage` |
+| `Assembly` |  | | `_QualityNotificationItem` | `Assembly` |
+| `DefectClass` |  | | `_QualityNotificationItem` | `DefectClass` |
+| `NumberOfDefects` |  | | `_QualityNotificationItem` | `NumberOfDefects` |
+| `InspPlanOperationInternalID` |  | | `_QualityNotificationItem` | `InspPlanOperationInternalID` |
+| `InspectionCharacteristic` |  | | `_QualityNotificationItem` | `InspectionCharacteristic` |
+| `InspectionSubsetInternalID` |  | | `_QualityNotificationItem` | `InspectionSubsetInternalID` |
+| `MaterialSample` |  | | `_QualityNotificationItem` | `MaterialSample` |
+| `DefectiveSingleUnit` |  | | `_QualityNotificationItem` | `DefectiveSingleUnit` |
+| `WorkCenterTypeCode` |  | | `_QualityNotificationItem` | `WorkCenterTypeCode` |
+| `MainWorkCenterInternalID` |  | | `_QualityNotificationItem` | `MainWorkCenterInternalID` |
+| `MainWorkCenter` |  | | `_QualityNotificationItem` | `MainWorkCenter` |
+| `MainWorkCenterPlant` |  | | `_QualityNotificationItem` | `MainWorkCenterPlant` |
+| `DefectOrigin` |  | | `_QualityNotificationItem` | `DefectOrigin` |
+| `ReferencedDefect` |  | | `_QualityNotificationItem` | `ReferencedDefect` |
+| `IsDeleted` |  | | `_QualityNotificationItem` | `IsDeleted` |
+| `DefectCodeCatalog` |  | | `_QualityNotificationItem` | `DefectCodeCatalog` |
+| `DefectCodeGroup` |  | | `_QualityNotificationItem` | `DefectCodeGroup` |
+| `DefectCode` |  | | `_QualityNotificationItem` | `DefectCode` |
+| `NotifItmObjectPartCodeCtlg` |  | | `_QualityNotificationItem` | `NotifItmObjectPartCodeCtlg` |
+| `NotifItmObjectPartCodeGroup` |  | | `_QualityNotificationItem` | `NotifItmObjectPartCodeGroup` |
+| `NotifItmObjectPartCode` |  | | `_QualityNotificationItem` | `NotifItmObjectPartCode` |
+| `ExternalDefectiveQuantity` |  | | `_QualityNotificationItem` | `ExternalDefectiveQuantity` |
+| `InternalDefectiveQuantity` |  | | `_QualityNotificationItem` | `InternalDefectiveQuantity` |
+| `DefectiveQuantityUnit` |  | | `_QualityNotificationItem` | `DefectiveQuantityUnit` |
+| `CreatedByUser` |  | | `_QualityNotificationItem` | `CreatedByUser` |
+| `CreationDate` |  | | `_QualityNotificationItem` | `CreationDate` |
+| `CreationTime` |  | | `_QualityNotificationItem` | `CreationTime` |
+| `LastChangedByUser` |  | | `_QualityNotificationItem` | `LastChangedByUser` |
+| `LastChangeDate` |  | | `_QualityNotificationItem` | `LastChangeDate` |
+| `LastChangeTime` |  | | `_QualityNotificationItem` | `LastChangeTime` |
+| `I_QltyNotificationTP` |  | |  | `_QualityNotificationItem._QltyNotification : redirected to parent I_QltyNotificationTP` |
+| `I_QltyNotifItemLongTextTP` |  | |  | `_QualityNotificationItem._QltyNotifItemLongText : redirected to composition child I_QltyNotifItemLongTextTP` |
+| `I_QltyNotificationItemCauseTP` |  | |  | `_QualityNotificationItem._QltyNotificationItemCause : redirected to composition child I_QltyNotificationItemCauseTP` |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialLotSizingProcedure` | `txt.disls` |
-| key `Language` | `txt.spras` |
-| `MaterialLotSizingProcedureName` | `txt.loslt` |
-| `_LotSizingProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialLotSizingProcedure` | ✓ | |  | `disls` |
+| `Language` | ✓ | |  | `spras` |
+| `MaterialLotSizingProcedureName` |  | |  | `loslt` |
+| `_LotSizingProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

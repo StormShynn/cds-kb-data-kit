@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ResponseProfile` | `srv_escal` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ResponseProfile` | ✓ | |  | `srv_escal` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

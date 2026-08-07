@@ -32,106 +32,106 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `PurchaseContract` |
-| key `PurchaseContractItem` | `PurchaseContractItem` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `TargetQuantity` | `TargetQuantity` |
-| `StorageLocation` | `StorageLocation` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Material` | `Material` |
-| `ContractNetPriceAmount` | `ContractNetPriceAmount` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `PurchasingDocumentItemCategory` | `PurchasingDocumentItemCategory` |
-| `InvoiceIsExpected` | `InvoiceIsExpected` |
-| `PurchaseContractItemText` | `PurchaseContractItemText` |
-| `InvoiceIsGoodsReceiptBased` | `InvoiceIsGoodsReceiptBased` |
-| `GoodsReceiptIsExpected` | `GoodsReceiptIsExpected` |
-| `Plant` | `Plant` |
-| `EvaldRcptSettlmtIsAllowed` | `EvaldRcptSettlmtIsAllowed` |
-| `TargetAmount` | `TargetAmount` |
-| `PurchaseContractType` | `_PurchaseContractAPI01.PurchaseContractType` |
-| `PurchasingDocumentCategory` | `_PurchaseContractAPI01.PurchasingDocumentCategory` |
-| `PurchasingGroup` | `_PurchaseContractAPI01.PurchasingGroup` |
-| `PurchasingOrganization` | `_PurchaseContractAPI01.PurchasingOrganization` |
-| `ValidityStartDate` | `_PurchaseContractAPI01.ValidityStartDate` |
-| `ValidityEndDate` | `_PurchaseContractAPI01.ValidityEndDate` |
-| `Supplier` | `_PurchaseContractAPI01.Supplier` |
-| `InvoicingParty` | `_PurchaseContractAPI01.InvoicingParty` |
-| `SupplyingSupplier` | `_PurchaseContractAPI01.SupplyingSupplier` |
-| `CreationDate` | `_PurchaseContractAPI01.CreationDate` |
-| `LastChangeDateTime` | `_PurchaseContractAPI01.LastChangeDateTime` |
-| `ExchangeRate` | `cast ( _PurchaseContractAPI01.ExchangeRate as fis_exchange_rate preserving type)` |
-| `OrderPriceUnit` | `OrderPriceUnit` |
-| `VolumeUnit` | `VolumeUnit` |
-| `Customer` | `Customer` |
-| `Subcontractor` | `Subcontractor` |
-| `ReferenceDeliveryAddressID` | `ReferenceDeliveryAddressID` |
-| `ManualDeliveryAddressID` | `ManualDeliveryAddressID` |
-| `DeliveryAddressID` | `cast ( DeliveryAddressID as adrn2_ll preserving type)` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `MultipleAcctAssgmtDistribution` | `MultipleAcctAssgmtDistribution` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
-| `SupplierMaterialNumber` | `SupplierMaterialNumber` |
-| `UnderdelivTolrtdLmtRatioInPct` | `UnderdelivTolrtdLmtRatioInPct` |
-| `PriceIsToBePrinted` | `PriceIsToBePrinted` |
-| `SupplierConfirmationControlKey` | `SupplierConfirmationControlKey` |
-| `OverdelivTolrtdLmtRatioInPct` | `OverdelivTolrtdLmtRatioInPct` |
-| `UnlimitedOverdeliveryIsAllowed` | `UnlimitedOverdeliveryIsAllowed` |
-| `PurgDocPriceDate` | `PurgDocPriceDate` |
-| `PurchasingInfoRecordUpdateCode` | `PurchasingInfoRecordUpdateCode` |
-| `PurgDocReleaseOrderQuantity` | `PurgDocReleaseOrderQuantity` |
-| `PurgDocOrderAcknNumber` | `PurgDocOrderAcknNumber` |
-| `PurchasingPriceIsEstimated` | `PurgDocEstimatedPrice` |
-| `IsInfoAtRegistration` | `IsInfoAtRegistration` |
-| `NoDaysReminder1` | `NoDaysReminder1` |
-| `NoDaysReminder2` | `NoDaysReminder2` |
-| `NoDaysReminder3` | `NoDaysReminder3` |
-| `StockType` | `StockType` |
-| `TaxCode` | `TaxCode` |
-| `RequirementTracking` | `RequirementTracking` |
-| `IsOrderAcknRqd` | `IsOrderAcknRqd` |
-| `ShippingInstruction` | `ShippingInstruction` |
-| `GoodsReceiptIsNonValuated` | `GoodsReceiptIsNonValuated` |
-| `ServicePerformer` | `ServicePerformer` |
-| `ProductTypeCode` | `ProductTypeCode` |
-| `MaterialType` | `MaterialType` |
-| `PurchaseContractItemFormatted` | `cast ( PurchaseContractItemFormatted as mm_pur_ctr_itm_frmtd preserving type)` |
-| `PurchasingContractDeletionCode` | `PurchasingContractDeletionCode` |
-| `PurchaseContractItemUniqueID` | `PurchaseContractItemUniqueID` |
-| `PurchasingCategory` | `PurchasingCategory` |
-| `PurgCatName` | `PurgCatName` |
-| `_PurchaseContractDEX` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_Product` | *Association* |
-| `_PurgDocumentItemCategory` | *Association* |
-| `_Plant` | *Association* |
-| `_PurchasingContractType` | *Association* |
-| `_PurchasingDocumentCategory` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_Supplier` | *Association* |
-| `_InvoicingParty` | *Association* |
-| `_SupplyingSupplier` | *Association* |
-| `_OrderPriceUnit` | *Association* |
-| `_VolumeUnit` | *Association* |
-| `_Customer` | *Association* |
-| `_Subcontractor` | *Association* |
-| `_ReferenceDeliveryAddress` | *Association* |
-| `_ManualDeliveryAddress` | *Association* |
-| `_DeliveryAddress` | *Association* |
-| `_PurgInfoRecordUpdateCode` | *Association* |
-| `_StockType` | *Association* |
-| `_ShippingInstruction` | *Association* |
-| `_ServicePerformer` | *Association* |
-| `_ProductTypeCode` | *Association* |
-| `_MaterialType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Material` |  | |  |  |
+| `ContractNetPriceAmount` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `PurchaseContractItemText` |  | |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `Plant` |  | |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
+| `TargetAmount` |  | |  |  |
+| `PurchaseContractType` |  | | `_PurchaseContractAPI01` | `PurchaseContractType` |
+| `PurchasingDocumentCategory` |  | | `_PurchaseContractAPI01` | `PurchasingDocumentCategory` |
+| `PurchasingGroup` |  | | `_PurchaseContractAPI01` | `PurchasingGroup` |
+| `PurchasingOrganization` |  | | `_PurchaseContractAPI01` | `PurchasingOrganization` |
+| `ValidityStartDate` |  | | `_PurchaseContractAPI01` | `ValidityStartDate` |
+| `ValidityEndDate` |  | | `_PurchaseContractAPI01` | `ValidityEndDate` |
+| `Supplier` |  | | `_PurchaseContractAPI01` | `Supplier` |
+| `InvoicingParty` |  | | `_PurchaseContractAPI01` | `InvoicingParty` |
+| `SupplyingSupplier` |  | | `_PurchaseContractAPI01` | `SupplyingSupplier` |
+| `CreationDate` |  | | `_PurchaseContractAPI01` | `CreationDate` |
+| `LastChangeDateTime` |  | | `_PurchaseContractAPI01` | `LastChangeDateTime` |
+| `ExchangeRate` |  | |  | `cast ( _PurchaseContractAPI01.ExchangeRate as fis_exchange_rate preserving type)` |
+| `OrderPriceUnit` |  | |  |  |
+| `VolumeUnit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Subcontractor` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `DeliveryAddressID` |  | |  | `cast ( DeliveryAddressID as adrn2_ll preserving type)` |
+| `AccountAssignmentCategory` |  | |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `PriceIsToBePrinted` |  | |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
+| `PurgDocPriceDate` |  | |  |  |
+| `PurchasingInfoRecordUpdateCode` |  | |  |  |
+| `PurgDocReleaseOrderQuantity` |  | |  |  |
+| `PurgDocOrderAcknNumber` |  | |  |  |
+| `PurchasingPriceIsEstimated` |  | |  | `PurgDocEstimatedPrice` |
+| `IsInfoAtRegistration` |  | |  |  |
+| `NoDaysReminder1` |  | |  |  |
+| `NoDaysReminder2` |  | |  |  |
+| `NoDaysReminder3` |  | |  |  |
+| `StockType` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `IsOrderAcknRqd` |  | |  |  |
+| `ShippingInstruction` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `ProductTypeCode` |  | |  |  |
+| `MaterialType` |  | |  |  |
+| `PurchaseContractItemFormatted` |  | |  | `cast ( PurchaseContractItemFormatted as mm_pur_ctr_itm_frmtd preserving type)` |
+| `PurchasingContractDeletionCode` |  | |  |  |
+| `PurchaseContractItemUniqueID` |  | |  |  |
+| `PurchasingCategory` |  | |  |  |
+| `PurgCatName` |  | |  |  |
+| `_PurchaseContractDEX` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_PurgDocumentItemCategory` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_PurchasingContractType` | | ✓ | | |
+| `_PurchasingDocumentCategory` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_InvoicingParty` | | ✓ | | |
+| `_SupplyingSupplier` | | ✓ | | |
+| `_OrderPriceUnit` | | ✓ | | |
+| `_VolumeUnit` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Subcontractor` | | ✓ | | |
+| `_ReferenceDeliveryAddress` | | ✓ | | |
+| `_ManualDeliveryAddress` | | ✓ | | |
+| `_DeliveryAddress` | | ✓ | | |
+| `_PurgInfoRecordUpdateCode` | | ✓ | | |
+| `_StockType` | | ✓ | | |
+| `_ShippingInstruction` | | ✓ | | |
+| `_ServicePerformer` | | ✓ | | |
+| `_ProductTypeCode` | | ✓ | | |
+| `_MaterialType` | | ✓ | | |
 
 ## Associations
 

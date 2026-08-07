@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScorecardUUID` | `SuplrEvalScorecardUUID` |
-| key `Supplier` | `Supplier` |
-| `SupplierEvalScorecard` | `SupplierEvalScorecard` |
-| `SuplrEvalScorecardName` | `SuplrEvalScorecardName` |
-| `SuplrEvalStartDate` | `SuplrEvalStartDate` |
-| `SuplrEvalEndDate` | `SuplrEvalEndDate` |
-| `PurchasingCategory` | `PurchasingCategory` |
-| `PurgCatName` | `PurgCatName` |
-| `Country` | `_Supplier.Country` |
-| `Region` | `_Supplier.Region` |
-| `SuplrEvalCalculatedScoreValue` | `cast( CalculatedScore as questionnairescore )` |
-| `SuplrEvalQnaireScoreValue` | `cast( CalculatedScore as questionnairescore )` |
-| `SupplierEvalScoreTargetValue` | `TargetScore` |
-| `TargetScoreValue` | `TargetScore` |
-| `NumberOfResponses` | `NumberOfResponses` |
-| `AnswerScoreValue` | `cast( MinimalScore as mm_a_min_target_score )` |
-| `MinimalScoreValue` | `cast( MinimalScore as mm_a_min_target_score )` |
-| `NmbrOfSuplrEvalQnaire` | `cast(1 as abap.int4)` |
-| `_Supplier` | *Association* |
-| `_Country` | *Association* |
-| `_SupplierRegion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScorecardUUID` | ✓ | |  |  |
+| `Supplier` | ✓ | |  |  |
+| `SupplierEvalScorecard` |  | |  |  |
+| `SuplrEvalScorecardName` |  | |  |  |
+| `SuplrEvalStartDate` |  | |  |  |
+| `SuplrEvalEndDate` |  | |  |  |
+| `PurchasingCategory` |  | |  |  |
+| `PurgCatName` |  | |  |  |
+| `Country` |  | | `_Supplier` | `Country` |
+| `Region` |  | | `_Supplier` | `Region` |
+| `SuplrEvalCalculatedScoreValue` |  | |  | `cast( CalculatedScore as questionnairescore )` |
+| `SuplrEvalQnaireScoreValue` |  | |  | `cast( CalculatedScore as questionnairescore )` |
+| `SupplierEvalScoreTargetValue` |  | |  | `TargetScore` |
+| `TargetScoreValue` |  | |  | `TargetScore` |
+| `NumberOfResponses` |  | |  |  |
+| `AnswerScoreValue` |  | |  | `cast( MinimalScore as mm_a_min_target_score )` |
+| `MinimalScoreValue` |  | |  | `cast( MinimalScore as mm_a_min_target_score )` |
+| `NmbrOfSuplrEvalQnaire` |  | |  | `cast(1 as abap.int4)` |
+| `_Supplier` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_SupplierRegion` | | ✓ | | |
 
 ## Associations
 

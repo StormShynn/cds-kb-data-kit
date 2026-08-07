@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EarmarkedFundsDecisionReason` | `fmreason` |
-| `EmrkdFndsDecisionReasonType` | `reasontyp` |
-| `EmrkdFndsDcsnRsnIsFinal` | `wftrigger` |
-| `_EarmarkedFundsDcsnRsnType` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EarmarkedFundsDecisionReason` | ✓ | |  | `fmreason` |
+| `EmrkdFndsDecisionReasonType` |  | |  | `reasontyp` |
+| `EmrkdFndsDcsnRsnIsFinal` |  | |  | `wftrigger` |
+| `_EarmarkedFundsDcsnRsnType` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

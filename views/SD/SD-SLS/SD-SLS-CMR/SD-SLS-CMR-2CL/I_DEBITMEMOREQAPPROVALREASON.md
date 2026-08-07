@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoReqApprovalReason` | `SlsDocApprovalReason.SalesDocApprovalReason` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoReqApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
 
 ## Source Code
 

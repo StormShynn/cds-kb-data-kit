@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequestType` | `DebitMemoRequestType.DebitMemoRequestType` |
-| key `Language` | `Text.Language` |
-| `DebitMemoRequestTypeName` | `cast( Text.SalesDocumentTypeName as sd_debit_memo_req_type_name preserving type )` |
-| `_DebitMemoRequestType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequestType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `DebitMemoRequestTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_debit_memo_req_type_name preserving type )` |
+| `_DebitMemoRequestType` | | ✓ | | |
 
 ## Associations
 

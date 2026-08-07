@@ -29,86 +29,86 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcmtHubPurchaseRequisition` | `ProcmtHubPurchaseRequisition` |
-| key `ProcmtHubPurRequisitionItem` | `ProcmtHubPurRequisitionItem` |
-| key `ProcurementHubSourceSystem` | `ProcurementHubSourceSystem` |
-| `ProcmtHubPurRequisitionType` | `ProcmtHubPurRequisitionType` |
-| `ProcessingStatus` | `ProcessingStatus` |
-| `ProcmtHubPurchasingGroup` | `ProcmtHubPurchasingGroup` |
-| `PurchaseRequisitionItemText` | `PurchaseRequisitionItemText` |
-| `ProcmtHubProduct` | `ProcmtHubProduct` |
-| `ProcmtHubPlant` | `ProcmtHubPlant` |
-| `ProcmtHubProductGroup` | `ProcmtHubProductGroup` |
-| `RequestedQuantity` | `RequestedQuantity` |
-| `BaseUnit` | `BaseUnit` |
-| `DeliveryDate` | `DeliveryDate` |
-| `CreationDate` | `CreationDate` |
-| `PurchaseRequisitionPrice` | `PurchaseRequisitionPrice` |
-| `IsDeleted` | `IsDeleted` |
-| `ProcmtHubAcctAssgmtCategory` | `ProcmtHubAcctAssgmtCategory` |
-| `ProcmtHubPurgDocItmCategory` | `ProcmtHubPurgDocItmCategory` |
-| `GoodsReceiptIsExpected` | `GoodsReceiptIsExpected` |
-| `InvoiceIsExpected` | `InvoiceIsExpected` |
-| `ProcmtHubSupplier` | `ProcmtHubSupplier` |
-| `ProcmtHubFixedSupplier` | `ProcmtHubFixedSupplier` |
-| `PurReqnItemCurrency` | `PurReqnItemCurrency` |
-| `IsPurReqnBlocked` | `IsPurReqnBlocked` |
-| `ProductType` | `ProductType` |
-| `RequisitionerName` | `RequisitionerName` |
-| `ProcmtHubCreatedByUser` | `ProcmtHubCreatedByUser` |
-| `PurchaseRequisitionIsFixed` | `PurchaseRequisitionIsFixed` |
-| `LastChangedDate` | `LastChangedDate` |
-| `ProcmtHubSupplierProductNumber` | `ProcmtHubSupplierProductNumber` |
-| `ProcmtHubBatch` | `ProcmtHubBatch` |
-| `ProcmtHubRequirementTracking` | `ProcmtHubRequirementTracking` |
-| `PurReqnItemBlockingReason` | `PurReqnItemBlockingReason` |
-| `MaterialRevisionLevel` | `cast(MaterialRevisionLevel as revlv)` |
-| `MaterialRevisionLevel_2` | `MaterialRevisionLevel` |
-| `IsClosed` | `IsClosed` |
-| `MaterialPlannedDeliveryDurn` | `MaterialPlannedDeliveryDurn` |
-| `MaterialGoodsReceiptDuration` | `MaterialGoodsReceiptDuration` |
-| `PurchaseOrderPriceType` | `PurchaseOrderPriceType` |
-| `GoodsReceiptIsNonValuated` | `GoodsReceiptIsNonValuated` |
-| `ProcmtHubSupplyingPlant` | `ProcmtHubSupplyingPlant` |
-| `ProcmtHubPurchaseContract` | `ProcmtHubPurchaseContract` |
-| `ProcmtHubPurchaseContractItem` | `ProcmtHubPurchaseContractItem` |
-| `ProcmtHubPurchasingInfoRecord` | `ProcmtHubPurchasingInfoRecord` |
-| `ProcmtHubMRPController` | `ProcmtHubMRPController` |
-| `PurReqnOrigin` | `PurReqnOrigin` |
-| `ProcmtHubPurchasingOrg` | `ProcmtHubPurchasingOrg` |
-| `ServicePerformer` | `ServicePerformer` |
-| `PerformancePeriodStartDate` | `PerformancePeriodStartDate` |
-| `PerformancePeriodEndDate` | `PerformancePeriodEndDate` |
-| `PurchaseRequisitionReleaseDate` | `PurchaseRequisitionReleaseDate` |
-| `OrderedQuantity` | `OrderedQuantity` |
-| `PurReqnPriceQuantity` | `PurReqnPriceQuantity` |
-| `ProcmtHubCompanyCode` | `ProcmtHubCompanyCode` |
-| `PurReqnReleaseStatus` | `PurReqnReleaseStatus` |
-| `PreferredSupplierName` | `PreferredSupplierName` |
-| `ProcmtHubSupplierName` | `ProcmtHubSupplierName` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `ProcmtHubServicePackage` | `ProcmtHubServicePackage` |
-| `StorageLocation` | `StorageLocation` |
-| `ItemNetAmount` | `case when PurReqnPriceQuantity = 0 then cast( RequestedQuantity * PurchaseRequisitionPrice as abap.curr(21,2)) when ProcmtHubPurgDocItmCategory = 'A' then ExpectedOverallLimitAmount else cast( division(RequestedQuantity * PurchaseRequisitionPrice , PurReqnPriceQuantity, 2) as abap.curr(21,2)) end` |
-| `ExpectedOverallLimitAmount` | `ExpectedOverallLimitAmount` |
-| `OverallLimitAmount` | `OverallLimitAmount` |
-| `PurContractForOverallLimit` | `PurContractForOverallLimit` |
-| `PurContractItemForOverallLimit` | `PurContractItemForOverallLimit` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `SourceOfSupplyIsAssigned` | `SourceOfSupplyIsAssigned` |
-| `UserDescription` | `UserDescription` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `HasAttachment` | `HasAttachment` |
-| `HasNote` | `HasNote` |
-| `PurchaseReqnItemUniqueID` | `PurchaseReqnItemUniqueID` |
-| `PurReqnExternalSystemId` | `PurReqnExternalSystemId` |
-| `PurReqnCmpltnsCat` | `PurReqnCmpltnsCat` |
-| `ItemDeliveryAddressID` | `ItemDeliveryAddressID` |
-| `ProcmtHubPurgObjCtrlInd` | `ProcmtHubPurgObjCtrlInd` |
-| `ProcmtHubPrpsdFllwOnDoc` | `ProcmtHubPrpsdFllwOnDoc` |
-| `ProcmtHubPrpsdFllwOnDocCat` | `ProcmtHubPrpsdFllwOnDocCat` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcmtHubPurchaseRequisition` | ✓ | |  |  |
+| `ProcmtHubPurRequisitionItem` | ✓ | |  |  |
+| `ProcurementHubSourceSystem` | ✓ | |  |  |
+| `ProcmtHubPurRequisitionType` |  | |  |  |
+| `ProcessingStatus` |  | |  |  |
+| `ProcmtHubPurchasingGroup` |  | |  |  |
+| `PurchaseRequisitionItemText` |  | |  |  |
+| `ProcmtHubProduct` |  | |  |  |
+| `ProcmtHubPlant` |  | |  |  |
+| `ProcmtHubProductGroup` |  | |  |  |
+| `RequestedQuantity` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `PurchaseRequisitionPrice` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ProcmtHubAcctAssgmtCategory` |  | |  |  |
+| `ProcmtHubPurgDocItmCategory` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `ProcmtHubSupplier` |  | |  |  |
+| `ProcmtHubFixedSupplier` |  | |  |  |
+| `PurReqnItemCurrency` |  | |  |  |
+| `IsPurReqnBlocked` |  | |  |  |
+| `ProductType` |  | |  |  |
+| `RequisitionerName` |  | |  |  |
+| `ProcmtHubCreatedByUser` |  | |  |  |
+| `PurchaseRequisitionIsFixed` |  | |  |  |
+| `LastChangedDate` |  | |  |  |
+| `ProcmtHubSupplierProductNumber` |  | |  |  |
+| `ProcmtHubBatch` |  | |  |  |
+| `ProcmtHubRequirementTracking` |  | |  |  |
+| `PurReqnItemBlockingReason` |  | |  |  |
+| `MaterialRevisionLevel` |  | |  | `cast(MaterialRevisionLevel as revlv)` |
+| `MaterialRevisionLevel_2` |  | |  | `MaterialRevisionLevel` |
+| `IsClosed` |  | |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |
+| `PurchaseOrderPriceType` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `ProcmtHubSupplyingPlant` |  | |  |  |
+| `ProcmtHubPurchaseContract` |  | |  |  |
+| `ProcmtHubPurchaseContractItem` |  | |  |  |
+| `ProcmtHubPurchasingInfoRecord` |  | |  |  |
+| `ProcmtHubMRPController` |  | |  |  |
+| `PurReqnOrigin` |  | |  |  |
+| `ProcmtHubPurchasingOrg` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |
+| `PurchaseRequisitionReleaseDate` |  | |  |  |
+| `OrderedQuantity` |  | |  |  |
+| `PurReqnPriceQuantity` |  | |  |  |
+| `ProcmtHubCompanyCode` |  | |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |
+| `PreferredSupplierName` |  | |  |  |
+| `ProcmtHubSupplierName` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ProcmtHubServicePackage` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ItemNetAmount` |  | |  | `case when PurReqnPriceQuantity = 0 then cast( RequestedQuantity * PurchaseRequisitionPrice as abap.curr(21,2)) when ProcmtHubPurgDocItmCategory = 'A' then ExpectedOverallLimitAmount else cast( division(RequestedQuantity * PurchaseRequisitionPrice , PurReqnPriceQuantity, 2) as abap.curr(21,2)) end` |
+| `ExpectedOverallLimitAmount` |  | |  |  |
+| `OverallLimitAmount` |  | |  |  |
+| `PurContractForOverallLimit` |  | |  |  |
+| `PurContractItemForOverallLimit` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `SourceOfSupplyIsAssigned` |  | |  |  |
+| `UserDescription` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `HasAttachment` |  | |  |  |
+| `HasNote` |  | |  |  |
+| `PurchaseReqnItemUniqueID` |  | |  |  |
+| `PurReqnExternalSystemId` |  | |  |  |
+| `PurReqnCmpltnsCat` |  | |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |
+| `ProcmtHubPurgObjCtrlInd` |  | |  |  |
+| `ProcmtHubPrpsdFllwOnDoc` |  | |  |  |
+| `ProcmtHubPrpsdFllwOnDocCat` |  | |  |  |
 
 ## Associations
 

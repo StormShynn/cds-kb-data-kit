@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumberStatus` | `ChangeNumberStatus` |
-| key `Language` | `Language` |
-| `ChangeNumberStatusText` | `ChangeNumberStatusText` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumberStatus` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ChangeNumberStatusText` |  | |  |  |
+| `_Language` | | ✓ | | |
 
 ## Source Code
 

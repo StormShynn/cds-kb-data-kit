@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChargeCalcStatus` | `cast(substring(domvalue_l, 1, 2) as /scmtms/tcc_calc_status preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspChargeCalcStatusDesc` | `cast(ddtext as val_text preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspChargeCalcStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChargeCalcStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tcc_calc_status preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspChargeCalcStatusDesc` |  | |  | `cast(ddtext as val_text preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspChargeCalcStatus` | | ✓ | | |
 
 ## Associations
 

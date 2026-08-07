@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MeasurementDocument` | `MeasurementDocument` |
-| `MeasuringPoint` | `MeasuringPoint` |
-| `MeasuringPointPositionNumber` | `MeasuringPointPositionNumber` |
-| `MsmtRdngDate` | `MsmtRdngDate` |
-| `MsmtRdngTime` | `MsmtRdngTime` |
-| `Characteristic` | `Characteristic` |
-| `MsmtDocumentReferredOrder` | `MsmtDocumentReferredOrder` |
-| `RefdMaintOrderOpStatusObject` | `RefdMaintOrderOpStatusObject` |
-| `MaintenanceOrderOperation` | `MaintenanceOrderOperation` |
-| `MaintenanceOrderSubOperation` | `MaintenanceOrderSubOperation` |
-| `MsmtIsDoneAfterTaskCompltn` | `MsmtIsDoneAfterTaskCompltn` |
-| `CharcValueUnit` | `CharcValueUnit` |
-| `MeasurementReading` | `MeasurementReading` |
-| `MeasurementReadingInEntryUoM` | `MeasurementReadingInEntryUoM` |
-| `MeasurementReadingEntryUoM` | `MeasurementReadingEntryUoM` |
-| `MeasurementCounterReading` | `MeasurementCounterReading` |
-| `MsmtCounterReadingDifference` | `MsmtCounterReadingDifference` |
-| `TotalMsmtRdngIsSetExternally` | `TotalMsmtRdngIsSetExternally` |
-| `MeasuringPointTargetValue` | `MeasuringPointTargetValue` |
-| `MsmtValuationCode` | `MsmtValuationCode` |
-| `MeasurementDocumentText` | `MeasurementDocumentText` |
-| `MeasurementDocumentHasLongText` | `MeasurementDocumentHasLongText` |
-| `MsmtRdngByUser` | `MsmtRdngByUser` |
-| `MsmtRdngStatus` | `MsmtRdngStatus` |
-| `MsmtCntrReadingDiffIsEntered` | `MsmtCntrReadingDiffIsEntered` |
-| `MsmtRdngIsReversed` | `MsmtRdngIsReversed` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `MsmtCounterReadingIsReplaced` | `MsmtCounterReadingIsReplaced` |
-| `_FailedMeasurementReading` | *Association* |
-| `_MeasurementDocumentLongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MeasurementDocument` | ✓ | |  |  |
+| `MeasuringPoint` |  | |  |  |
+| `MeasuringPointPositionNumber` |  | |  |  |
+| `MsmtRdngDate` |  | |  |  |
+| `MsmtRdngTime` |  | |  |  |
+| `Characteristic` |  | |  |  |
+| `MsmtDocumentReferredOrder` |  | |  |  |
+| `RefdMaintOrderOpStatusObject` |  | |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |
+| `MaintenanceOrderSubOperation` |  | |  |  |
+| `MsmtIsDoneAfterTaskCompltn` |  | |  |  |
+| `CharcValueUnit` |  | |  |  |
+| `MeasurementReading` |  | |  |  |
+| `MeasurementReadingInEntryUoM` |  | |  |  |
+| `MeasurementReadingEntryUoM` |  | |  |  |
+| `MeasurementCounterReading` |  | |  |  |
+| `MsmtCounterReadingDifference` |  | |  |  |
+| `TotalMsmtRdngIsSetExternally` |  | |  |  |
+| `MeasuringPointTargetValue` |  | |  |  |
+| `MsmtValuationCode` |  | |  |  |
+| `MeasurementDocumentText` |  | |  |  |
+| `MeasurementDocumentHasLongText` |  | |  |  |
+| `MsmtRdngByUser` |  | |  |  |
+| `MsmtRdngStatus` |  | |  |  |
+| `MsmtCntrReadingDiffIsEntered` |  | |  |  |
+| `MsmtRdngIsReversed` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `MsmtCounterReadingIsReplaced` |  | |  |  |
+| `_FailedMeasurementReading` | | ✓ | | |
+| `_MeasurementDocumentLongText` | | ✓ | | |
 
 ## Source Code
 

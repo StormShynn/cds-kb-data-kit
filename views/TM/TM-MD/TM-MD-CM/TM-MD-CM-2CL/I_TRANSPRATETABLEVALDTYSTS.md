@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateValidityLfcycStatus` | `cast(substring(domvalue_l, 1, 2) as /scmtms/tcmm_life_cycle_status preserving type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateValidityLfcycStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tcmm_life_cycle_status preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

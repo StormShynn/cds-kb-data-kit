@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnit` | `cast ( _Source.ConsolidationUnit as fincs_consolidationunit preserving type )` |
-| key `ConsolidationVersion` | `cast ( _Source.ConsolidationVersion as fincs_consolidationversion preserving type )` |
-| key `FromFiscalYearPeriod` | `_Source.FromFiscalYearPeriod` |
-| `ToFiscalYearPeriod` | `_Source.ToFiscalYearPeriod` |
-| `ConsolidationUnitIsPartnerOnly` | `cast ( _Source.ConsolidationUnitIsPartnerOnly as fincs_unitispartneronly preserving type )` |
-| `CnsldtnCrcyTranslationMethod` | `_Source.CnsldtnCrcyTranslationMethod` |
-| `CnsldtnTaxRate` | `cast ( _Source.TaxRate as fincs_taxrate preserving type )` |
-| `FiscalYearVariant` | `_Source.FiscalYearVariant` |
-| `CnsldtnUnivJournalIntegType` | `cast ( _Source.CnsldtnDataTransferMethod as fincs_univjournalintegtype preserving type )` |
-| `CnsldtnGroupCrcyIsLeadingCrcy` | `cast ( _Source.DocumentEntryIsInGroupCurrency as fincs_groupcrcyisleadingcrcy preserving type )` |
-| `CnsldtnUnitLocalCrcySource` | `cast ( _Source.CnsldtnUnitLocalCrcySource as fincs_unitlocalcrcysource preserving type )` |
-| `CnsldtnUnitGroupCrcySource` | `cast ( _Source.CnsldtnUnitGroupCrcySource as fincs_unitgroupcrcysource preserving type )` |
-| `CnsldtnUploadMethod` | `_Source.CnsldtnUploadMethod` |
-| `CnsldtnUnitDataCollection` | `_Source.CnsldtnUnitDataCollection` |
-| `ConsolidationUnitPartner` | `_Source.ConsolidationUnitPartner` |
-| `ConsolidationUnitPostingRule` | `_Source.ConsolidationUnitPostingRule` |
-| `ConsolidationUnitValidation` | `_Source.ConsolidationUnitValidation` |
-| `I_CnsldtnUnitTP` | `_CnsldtnUnit as _CnsldtnUnit : redirected to parent I_CnsldtnUnitTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | |  | `cast ( _Source.ConsolidationUnit as fincs_consolidationunit preserving type )` |
+| `ConsolidationVersion` | ✓ | |  | `cast ( _Source.ConsolidationVersion as fincs_consolidationversion preserving type )` |
+| `FromFiscalYearPeriod` | ✓ | | `_Source` | `FromFiscalYearPeriod` |
+| `ToFiscalYearPeriod` |  | | `_Source` | `ToFiscalYearPeriod` |
+| `ConsolidationUnitIsPartnerOnly` |  | |  | `cast ( _Source.ConsolidationUnitIsPartnerOnly as fincs_unitispartneronly preserving type )` |
+| `CnsldtnCrcyTranslationMethod` |  | | `_Source` | `CnsldtnCrcyTranslationMethod` |
+| `CnsldtnTaxRate` |  | |  | `cast ( _Source.TaxRate as fincs_taxrate preserving type )` |
+| `FiscalYearVariant` |  | | `_Source` | `FiscalYearVariant` |
+| `CnsldtnUnivJournalIntegType` |  | |  | `cast ( _Source.CnsldtnDataTransferMethod as fincs_univjournalintegtype preserving type )` |
+| `CnsldtnGroupCrcyIsLeadingCrcy` |  | |  | `cast ( _Source.DocumentEntryIsInGroupCurrency as fincs_groupcrcyisleadingcrcy preserving type )` |
+| `CnsldtnUnitLocalCrcySource` |  | |  | `cast ( _Source.CnsldtnUnitLocalCrcySource as fincs_unitlocalcrcysource preserving type )` |
+| `CnsldtnUnitGroupCrcySource` |  | |  | `cast ( _Source.CnsldtnUnitGroupCrcySource as fincs_unitgroupcrcysource preserving type )` |
+| `CnsldtnUploadMethod` |  | | `_Source` | `CnsldtnUploadMethod` |
+| `CnsldtnUnitDataCollection` |  | | `_Source` | `CnsldtnUnitDataCollection` |
+| `ConsolidationUnitPartner` |  | | `_Source` | `ConsolidationUnitPartner` |
+| `ConsolidationUnitPostingRule` |  | | `_Source` | `ConsolidationUnitPostingRule` |
+| `ConsolidationUnitValidation` |  | | `_Source` | `ConsolidationUnitValidation` |
+| `I_CnsldtnUnitTP` |  | |  | `_CnsldtnUnit as _CnsldtnUnit : redirected to parent I_CnsldtnUnitTP` |
 
 ## Source Code
 

@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `Automation.PurchaseOrder` |
-| key `POOutputMessageItemID` | `POOutputMessageItemID` |
-| `POOutputChannel` | `Automation.POOutputChannel` |
-| `Supplier` | `Automation.Supplier` |
-| `PurchasingOrganization` | `Automation.PurchasingOrganization` |
-| `PurchasingGroup` | `Automation.PurchasingGroup` |
-| `CalendarYear` | `Calendar.CalendarYear` |
-| `CalendarQuarter` | `Calendar.CalendarQuarter` |
-| `CalendarMonth` | `Calendar.CalendarMonth` |
-| `CalendarWeek` | `Calendar.CalendarWeek` |
-| `PurchaseOrderDate` | `PurchaseOrderDate` |
-| `POOutputChannelManualUniqueID` | `POOutputChannelManualUniqueID` |
-| `POOutputChannelAutomnUniqueID` | `POOutputChannelAutomnUniqueID` |
-| `PurchaseOrderOutputIsAutomated` | `PurchaseOrderOutputIsAutomated` |
-| `NmbrOfPurchaseOrdersPrinted` | `NmbrOfPurchaseOrdersPrinted` |
-| `NmbrOfPurchaseOrdersEmailed` | `NmbrOfPurchaseOrdersEmailed` |
-| `NmbrOfPurOrdersOutputAsXML` | `NmbrOfPurOrdersOutputAsXML` |
-| `NmbrOfPurOrdersOutputAsIDOC` | `NmbrOfPurOrdersOutputAsIDOC` |
-| `NmbrOfPurOrdersOutputAsEDI` | `NmbrOfPurOrdersOutputAsEDI` |
-| `NmbrOfPurOrdsWithAutomnOutput` | `cast(1 as abap.int4 )` |
-| `NmbrOfPurOrdsWithNonAutomnOutp` | `cast( 1 as abap.int4 )` |
-| `NmbrOfPOOutputItems` | `cast( 1 as abap.int4 )` |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_Supplier` | *Association* |
-| `_OutputType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `POOutputMessageItemID` | ✓ | |  |  |
+| `POOutputChannel` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `CalendarYear` |  | |  |  |
+| `CalendarQuarter` |  | |  |  |
+| `CalendarMonth` |  | |  |  |
+| `CalendarWeek` |  | |  |  |
+| `PurchaseOrderDate` |  | |  |  |
+| `POOutputChannelManualUniqueID` |  | |  |  |
+| `POOutputChannelAutomnUniqueID` |  | |  |  |
+| `PurchaseOrderOutputIsAutomated` |  | |  |  |
+| `NmbrOfPurchaseOrdersPrinted` |  | |  |  |
+| `NmbrOfPurchaseOrdersEmailed` |  | |  |  |
+| `NmbrOfPurOrdersOutputAsXML` |  | |  |  |
+| `NmbrOfPurOrdersOutputAsIDOC` |  | |  |  |
+| `NmbrOfPurOrdersOutputAsEDI` |  | |  |  |
+| `NmbrOfPurOrdsWithAutomnOutput` |  | |  | `cast(1 as abap.int4 )` |
+| `NmbrOfPurOrdsWithNonAutomnOutp` |  | |  | `cast( 1 as abap.int4 )` |
+| `NmbrOfPOOutputItems` |  | |  | `cast( 1 as abap.int4 )` |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_OutputType` | | ✓ | | |
 
 ## Associations
 

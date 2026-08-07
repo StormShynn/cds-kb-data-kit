@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductProfileCode` | `cast( t141t.mmsta as mmsta preserving type )` |
-| key `Language` | `cast( spras as spras preserving type )` |
-| `ProductProfileCodeName` | `cast(t141t.mtstb as crossplantstatustext preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductProfileCode` | ✓ | |  | `cast( t141t.mmsta as mmsta preserving type )` |
+| `Language` | ✓ | |  | `cast( spras as spras preserving type )` |
+| `ProductProfileCodeName` |  | |  | `cast(t141t.mtstb as crossplantstatustext preserving type )` |
 
 ## Source Code
 

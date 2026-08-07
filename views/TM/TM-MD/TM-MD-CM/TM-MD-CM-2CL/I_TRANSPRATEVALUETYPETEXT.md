@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationRateValueType` | `cast(substring(domvalue_l, 1, 1) as /scmtms/value_indicator preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspRateValueTypeDesc` | `cast(ddtext as /scmtms/vdm_rate_val_type_desc preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspValueType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationRateValueType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/value_indicator preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspRateValueTypeDesc` |  | |  | `cast(ddtext as /scmtms/vdm_rate_val_type_desc preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspValueType` | | ✓ | | |
 
 ## Associations
 

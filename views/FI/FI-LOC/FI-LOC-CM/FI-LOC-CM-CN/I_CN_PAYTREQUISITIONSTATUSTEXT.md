@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentRequisitionStatus` | `cast ( substring( domvalue_l, 1, 2 ) as payreqn_reqn_status preserving type)` |
-| key `Language` | `cast ( ddlanguage as spras preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `PaymentRequisitionStatusName` | `cast( ddtext as payreqn_reqn_status_name preserving type)` |
-| `_Language` | *Association* |
-| `_RequisitionStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentRequisitionStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as payreqn_reqn_status preserving type)` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PaymentRequisitionStatusName` |  | |  | `cast( ddtext as payreqn_reqn_status_name preserving type)` |
+| `_Language` | | ✓ | | |
+| `_RequisitionStatus` | | ✓ | | |
 
 ## Associations
 

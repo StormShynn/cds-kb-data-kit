@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `ktopl` |
-| key `GLAccountGroup` | `ktoks` |
-| `_GLAccountGroupText` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_ChartOfAccountsText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `ktopl` |
+| `GLAccountGroup` | ✓ | |  | `ktoks` |
+| `_GLAccountGroupText` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_ChartOfAccountsText` | | ✓ | | |
 
 ## Associations
 

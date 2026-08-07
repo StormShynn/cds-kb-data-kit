@@ -30,30 +30,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderStageUUID` | `TransportationOrderStageUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationOrderStage` | `TransportationOrderStage` |
-| `TranspOrdStageType` | `TranspOrdStageType` |
-| `TranspOrdStageCategory` | `TranspOrdStageCategory` |
-| `TransportationMode` | `TransportationMode` |
-| `TransportationModeCategory` | `TransportationModeCategory` |
-| `TranspOrdStgeInvcgCarrLvl` | `TranspOrdStgeInvcgCarrLvl` |
-| `CarrierUUID` | `CarrierUUID` |
-| `Carrier` | `Carrier` |
-| `TranspOrdStageSCACCode` | `TranspOrdStageSCACCode` |
-| `TranspOrdStgeInvcgCarrUUID` | `TranspOrdStgeInvcgCarrUUID` |
-| `TranspOrdStageInvoicingCarrier` | `TranspOrdStageInvoicingCarrier` |
-| `TranspOrdStgeInvcgSCACCode` | `TranspOrdStgeInvcgSCACCode` |
-| `TranspOrdStageDistance` | `TranspOrdStageDistance` |
-| `TranspOrdStageDistanceUnit` | `TranspOrdStageDistanceUnit` |
-| `TranspOrdStageNetDuration` | `TranspOrdStageNetDuration` |
-| `TranspOrdStageSrceStopUUID` | `TranspOrdStageSrceStopUUID` |
-| `TranspOrdStageDestStopUUID` | `TranspOrdStageDestStopUUID` |
-| `I_FreightOrderStopTP` | `FreightOrderStage._TranspOrderStop as _FreightOrderStop : redirected to parent I_FreightOrderStopTP` |
-| `I_FreightOrderTP` | `FreightOrderStage._TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `I_FrtOrdStgeBPAddrDfltRprstnTP` | `FreightOrderStage._TrOrdStgeBPAddrDfltRprstn as _FrtOrdStageBPAddrDfltRprstn : redirected to composition child I_FrtOrdStgeBPAddrDfltRprstnTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderStageUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TransportationOrderStage` |  | |  |  |
+| `TranspOrdStageType` |  | |  |  |
+| `TranspOrdStageCategory` |  | |  |  |
+| `TransportationMode` |  | |  |  |
+| `TransportationModeCategory` |  | |  |  |
+| `TranspOrdStgeInvcgCarrLvl` |  | |  |  |
+| `CarrierUUID` |  | |  |  |
+| `Carrier` |  | |  |  |
+| `TranspOrdStageSCACCode` |  | |  |  |
+| `TranspOrdStgeInvcgCarrUUID` |  | |  |  |
+| `TranspOrdStageInvoicingCarrier` |  | |  |  |
+| `TranspOrdStgeInvcgSCACCode` |  | |  |  |
+| `TranspOrdStageDistance` |  | |  |  |
+| `TranspOrdStageDistanceUnit` |  | |  |  |
+| `TranspOrdStageNetDuration` |  | |  |  |
+| `TranspOrdStageSrceStopUUID` |  | |  |  |
+| `TranspOrdStageDestStopUUID` |  | |  |  |
+| `I_FreightOrderStopTP` |  | |  | `FreightOrderStage._TranspOrderStop as _FreightOrderStop : redirected to parent I_FreightOrderStopTP` |
+| `I_FreightOrderTP` |  | |  | `FreightOrderStage._TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| `I_FrtOrdStgeBPAddrDfltRprstnTP` |  | |  | `FreightOrderStage._TrOrdStgeBPAddrDfltRprstn as _FrtOrdStageBPAddrDfltRprstn : redirected to composition child I_FrtOrdStgeBPAddrDfltRprstnTP` |
 
 ## Source Code
 

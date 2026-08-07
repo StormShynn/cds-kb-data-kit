@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OperationStandardTextCode` | `cast(txt.vlsch as pph_ktsch preserving type)` |
-| key `Language` | `txt.spras` |
-| `OperationStandardTextCodeName` | `txt.txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OperationStandardTextCode` | ✓ | |  | `cast(txt.vlsch as pph_ktsch preserving type)` |
+| `Language` | ✓ | |  | `spras` |
+| `OperationStandardTextCodeName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

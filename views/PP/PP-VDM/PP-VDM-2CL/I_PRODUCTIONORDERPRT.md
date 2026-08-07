@@ -30,74 +30,74 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderInternalID` | `prt.OrderInternalBillOfOperations` |
-| key `OrderProdnRsceToolInternalID` | `prt.OrderProdnRsceToolInternalID` |
-| `IsDeleted` | `prt.IsDeleted` |
-| `CreationDate` | `prt.CreationDate` |
-| `CreatedByUser` | `prt.CreatedByUser` |
-| `LastChangeDate` | `prt.LastChangeDate` |
-| `LastChangedByUser` | `prt.LastChangedByUser` |
-| `OrderProdnRsceToolText` | `prt.OrderProdnRsceToolText` |
-| `ProdnRsceToolHasLongText` | `prt.ProdnRsceToolHasLongText` |
-| `LongTextLanguage` | `prt.Language` |
-| `ProductionResourceType` | `prt.ProductionResourceType` |
-| `ProductionResourceInternalID` | `prt.ProductionResourceInternalID` |
-| `ProductionResourceTool` | `cast(prt._ProdnRsceToolByInternalKey.ProductionResourceTool as pph_fhmnr preserving type)` |
-| `ProdnRsceToolCategory` | `prt._ProdnRsceToolByInternalKey.ProdnRsceToolCategory_2` |
-| `ProdnRsceToolControlProfile` | `prt.ProdnRsceToolControlProfile` |
-| `ProdnRsceToolItemNumber` | `prt.ProdnRsceToolItemNumber` |
-| `ObjectInternalID` | `prt.ObjectInternalID` |
-| `OrderOperationInternalID` | `prt.OrderIntBillOfOperationsItem` |
-| `ProductionOrder` | `cast(prt.OrderID as vdm_manufacturingorder preserving type)` |
-| `ProductionOrderSequence` | `cast(opr.Sequence as vdm_prodnordersequence preserving type)` |
-| `ProductionOrderOperation` | `cast(opr.Operation_2 as vdm_prodnorderoperation preserving type)` |
-| `ProductionOrderType` | `cast(prt.OrderType as vdm_prodnordertype preserving type)` |
-| `ProductionPlant` | `cast(prt.Plant as pwwrk preserving type)` |
-| `BillOfOperationsType` | `prt.BillOfOperationsType` |
-| `BillOfOperationsGroup` | `prt.BillOfOperationsGroup` |
-| `EarliestSchedldUsageStartDate` | `prt.EarliestSchedldUsageStartDate` |
-| `EarliestSchedldUsageStartTime` | `prt.EarliestSchedldUsageStartTime` |
-| `EarliestSchedldUsageEndDate` | `prt.EarliestSchedldUsageEndDate` |
-| `EarliestSchedldUsageEndTime` | `prt.EarliestSchedldUsageEndTime` |
-| `LatestSchedldUsageStartDate` | `prt.LatestSchedldUsageStartDate` |
-| `LatestSchedldUsageStartTime` | `prt.LatestSchedldUsageStartTime` |
-| `LatestSchedldUsageEndDate` | `prt.LatestSchedldUsageEndDate` |
-| `LatestSchedldUsageEndTime` | `prt.LatestSchedldUsageEndTime` |
-| `ActualUsageStartDate` | `prt.ActualUsageStartDate` |
-| `ActualUsageStartTime` | `prt.ActualUsageStartTime` |
-| `ActualUsageEndDate` | `prt.ActualUsageEndDate` |
-| `ActualUsageEndTime` | `prt.ActualUsageEndTime` |
-| `ProdnRsceToolTotQtyCalcFormula` | `prt.ProdnRsceToolTotQtyCalcFormula` |
-| `ProdnRsceToolUsageQtyCalcFmla` | `prt.ProdnRsceToolUsageQtyCalcFmla` |
-| `ProdnRsceToolUsageDurnUnit` | `prt.ProdnRsceToolUsageDurnUnit` |
-| `ProdnRsceToolUsageDuration` | `prt.ProdnRsceToolUsageDuration` |
-| `ProdnRsceToolStdWorkQtyUnit` | `prt.ProdnRsceToolStdWorkQtyUnit` |
-| `ProdnRsceToolStandardWorkQty` | `prt.ProdnRsceToolStandardWorkQty` |
-| `PlannedProdnRsceToolQtyUnit` | `prt.PlannedProdnRsceToolQtyUnit` |
-| `PlannedTotalProdnRsceToolQty` | `prt.PlannedTotalProdnRsceToolQty` |
-| `ConfirmedProdnRsceToolQtyUnit` | `prt.ConfirmedProdnRsceToolQtyUnit` |
-| `ConfirmedProdnRsceToolQty` | `prt.ConfirmedProdnRsceToolQty` |
-| `RemainingProdnRsceToolQtyUnit` | `prt.RemainingProdnRsceToolQtyUnit` |
-| `RemainingProdnRsceToolQty` | `prt.RemainingProdnRsceToolQty` |
-| `ProdnRsceToolUsageQuantityUnit` | `prt.ProdnRsceToolUsageQuantityUnit` |
-| `ProdnRsceToolUsageQuantity` | `prt.ProdnRsceToolUsageQuantity` |
-| `PlndProdnRsceToolUsageQtyUnit` | `prt.PlndProdnRsceToolUsageQtyUnit` |
-| `PlannedProdnRsceToolUsageQty` | `prt.PlannedProdnRsceToolUsageQty` |
-| `ConfdProdnRsceToolUsageQtyUnit` | `prt.ConfdProdnRsceToolUsageQtyUnit` |
-| `ConfirmedProdnRsceToolUsageQty` | `prt.ConfirmedProdnRsceToolUsageQty` |
-| `RmngProdnRsceToolUsageQtyUnit` | `prt.RmngProdnRsceToolUsageQtyUnit` |
-| `RemainingProdnRsceToolUsageQty` | `prt.RemainingProdnRsceToolUsageQty` |
-| `_ProductionOrderInternal` | *Association* |
-| `_ProductionOrderType` | *Association* |
-| `_ProdnRsceToolCategory` | *Association* |
-| `_ProductionPlant` | *Association* |
-| `_LongTextLanguage` | *Association* |
-| `_ProductionOrderHeader` | *Association* |
-| `_ProductionOrderSequence` | *Association* |
-| `_ProductionOrderOperation` | *Association* |
-| `_LongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderInternalID` | ✓ | |  | `OrderInternalBillOfOperations` |
+| `OrderProdnRsceToolInternalID` | ✓ | |  |  |
+| `IsDeleted` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `OrderProdnRsceToolText` |  | |  |  |
+| `ProdnRsceToolHasLongText` |  | |  |  |
+| `LongTextLanguage` |  | |  | `Language` |
+| `ProductionResourceType` |  | |  |  |
+| `ProductionResourceInternalID` |  | |  |  |
+| `ProductionResourceTool` |  | |  | `cast(prt._ProdnRsceToolByInternalKey.ProductionResourceTool as pph_fhmnr preserving type)` |
+| `ProdnRsceToolCategory` |  | |  | `ProdnRsceToolCategory_2` |
+| `ProdnRsceToolControlProfile` |  | |  |  |
+| `ProdnRsceToolItemNumber` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `OrderOperationInternalID` |  | |  | `OrderIntBillOfOperationsItem` |
+| `ProductionOrder` |  | |  | `cast(prt.OrderID as vdm_manufacturingorder preserving type)` |
+| `ProductionOrderSequence` |  | |  | `cast(opr.Sequence as vdm_prodnordersequence preserving type)` |
+| `ProductionOrderOperation` |  | |  | `cast(opr.Operation_2 as vdm_prodnorderoperation preserving type)` |
+| `ProductionOrderType` |  | |  | `cast(prt.OrderType as vdm_prodnordertype preserving type)` |
+| `ProductionPlant` |  | |  | `cast(prt.Plant as pwwrk preserving type)` |
+| `BillOfOperationsType` |  | |  |  |
+| `BillOfOperationsGroup` |  | |  |  |
+| `EarliestSchedldUsageStartDate` |  | |  |  |
+| `EarliestSchedldUsageStartTime` |  | |  |  |
+| `EarliestSchedldUsageEndDate` |  | |  |  |
+| `EarliestSchedldUsageEndTime` |  | |  |  |
+| `LatestSchedldUsageStartDate` |  | |  |  |
+| `LatestSchedldUsageStartTime` |  | |  |  |
+| `LatestSchedldUsageEndDate` |  | |  |  |
+| `LatestSchedldUsageEndTime` |  | |  |  |
+| `ActualUsageStartDate` |  | |  |  |
+| `ActualUsageStartTime` |  | |  |  |
+| `ActualUsageEndDate` |  | |  |  |
+| `ActualUsageEndTime` |  | |  |  |
+| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |
+| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |
+| `ProdnRsceToolUsageDurnUnit` |  | |  |  |
+| `ProdnRsceToolUsageDuration` |  | |  |  |
+| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |
+| `ProdnRsceToolStandardWorkQty` |  | |  |  |
+| `PlannedProdnRsceToolQtyUnit` |  | |  |  |
+| `PlannedTotalProdnRsceToolQty` |  | |  |  |
+| `ConfirmedProdnRsceToolQtyUnit` |  | |  |  |
+| `ConfirmedProdnRsceToolQty` |  | |  |  |
+| `RemainingProdnRsceToolQtyUnit` |  | |  |  |
+| `RemainingProdnRsceToolQty` |  | |  |  |
+| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |
+| `ProdnRsceToolUsageQuantity` |  | |  |  |
+| `PlndProdnRsceToolUsageQtyUnit` |  | |  |  |
+| `PlannedProdnRsceToolUsageQty` |  | |  |  |
+| `ConfdProdnRsceToolUsageQtyUnit` |  | |  |  |
+| `ConfirmedProdnRsceToolUsageQty` |  | |  |  |
+| `RmngProdnRsceToolUsageQtyUnit` |  | |  |  |
+| `RemainingProdnRsceToolUsageQty` |  | |  |  |
+| `_ProductionOrderInternal` | | ✓ | | |
+| `_ProductionOrderType` | | ✓ | | |
+| `_ProdnRsceToolCategory` | | ✓ | | |
+| `_ProductionPlant` | | ✓ | | |
+| `_LongTextLanguage` | | ✓ | | |
+| `_ProductionOrderHeader` | | ✓ | | |
+| `_ProductionOrderSequence` | | ✓ | | |
+| `_ProductionOrderOperation` | | ✓ | | |
+| `_LongText` | | ✓ | | |
 
 ## Associations
 

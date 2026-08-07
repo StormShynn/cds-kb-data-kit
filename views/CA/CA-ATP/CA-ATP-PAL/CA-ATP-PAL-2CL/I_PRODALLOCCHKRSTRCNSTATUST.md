@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `ProdAllocChkRstrcnStatus` | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` |
-| `ProdAllocChkRstrcnStatusDesc` | `cast( ddtext as prodallocchkrstrcnstatusdesc preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Language` | *Association* |
-| `_ProdAllocChkRstrcnStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `ProdAllocChkRstrcnStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as prodallocchkrstrcnstatus preserving type )` |
+| `ProdAllocChkRstrcnStatusDesc` |  | |  | `cast( ddtext as prodallocchkrstrcnstatusdesc preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_ProdAllocChkRstrcnStatus` | | ✓ | | |
 
 ## Associations
 

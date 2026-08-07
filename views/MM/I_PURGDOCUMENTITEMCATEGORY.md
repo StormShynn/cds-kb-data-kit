@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingDocumentItemCategory` | `t163.pstyp` |
-| `GoodsReceiptIsExpected` | `t163.wepos` |
-| `GoodsReceiptIsNonValuated` | `t163.weunb` |
-| `InvoiceIsExpected` | `t163.repos` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingDocumentItemCategory` | ✓ | |  | `pstyp` |
+| `GoodsReceiptIsExpected` |  | |  | `wepos` |
+| `GoodsReceiptIsNonValuated` |  | |  | `weunb` |
+| `InvoiceIsExpected` |  | |  | `repos` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

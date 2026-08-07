@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `fincs_fsitemt.itclg` |
-| key `ConsolidationReportingItem` | `cast( fincs_fsitemt.item as fc_item)` |
-| key `Language` | `langu` |
-| `ConsolidationReportingItemText` | `txtsh` |
-| `ConsolidationRptgItemMdmText` | `txtmi` |
-| `_Language` | *Association* |
-| `_ChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `itclg` |
+| `ConsolidationReportingItem` | ✓ | |  | `cast( fincs_fsitemt.item as fc_item)` |
+| `Language` | ✓ | |  | `langu` |
+| `ConsolidationReportingItemText` |  | |  | `txtsh` |
+| `ConsolidationRptgItemMdmText` |  | |  | `txtmi` |
+| `_Language` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

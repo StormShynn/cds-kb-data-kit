@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingScheme` | `qdpk.stprplan` |
-| `SmplgSchmIsForAttributiveInsp` | `cast ( qdpk.kzattr as vdm_qm_smpl_sm_is_for_attr_ins preserving type )` |
-| `SmplgSchmIsForVariableInsp` | `cast ( qdpk.kzvars as vdm_qm_smpl_sm_is_for_vrbl_ins preserving type )` |
-| `AcceptableQualityLevelIsUsed` | `cast ( qdpk.kzaql as vdm_qm_aql_is_used preserving type )` |
-| `SamplingSchemeIsBlocked` | `cast ( qdpk.kznvwpk as vdm_qm_sampl_scheme_is_blocked preserving type )` |
-| `CreatedByUser` | `cast ( qdpk.ersteller as abp_creation_user preserving type )` |
-| `CreationDate` | `cast ( qdpk.erstelldat as abp_creation_date preserving type )` |
-| `CreationTime` | `cast ( qdpk.zeiterstl as abp_creation_time preserving type )` |
-| `LastChangedByUser` | `cast ( qdpk.aenderer as abp_lastchange_user preserving type )` |
-| `LastChangeDate` | `cast ( qdpk.aenderdat as abp_lastchange_date preserving type )` |
-| `LastChangeTime` | `cast ( qdpk.zeitaend as abp_lastchange_time preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingScheme` | ✓ | |  | `stprplan` |
+| `SmplgSchmIsForAttributiveInsp` |  | |  | `cast ( qdpk.kzattr as vdm_qm_smpl_sm_is_for_attr_ins preserving type )` |
+| `SmplgSchmIsForVariableInsp` |  | |  | `cast ( qdpk.kzvars as vdm_qm_smpl_sm_is_for_vrbl_ins preserving type )` |
+| `AcceptableQualityLevelIsUsed` |  | |  | `cast ( qdpk.kzaql as vdm_qm_aql_is_used preserving type )` |
+| `SamplingSchemeIsBlocked` |  | |  | `cast ( qdpk.kznvwpk as vdm_qm_sampl_scheme_is_blocked preserving type )` |
+| `CreatedByUser` |  | |  | `cast ( qdpk.ersteller as abp_creation_user preserving type )` |
+| `CreationDate` |  | |  | `cast ( qdpk.erstelldat as abp_creation_date preserving type )` |
+| `CreationTime` |  | |  | `cast ( qdpk.zeiterstl as abp_creation_time preserving type )` |
+| `LastChangedByUser` |  | |  | `cast ( qdpk.aenderer as abp_lastchange_user preserving type )` |
+| `LastChangeDate` |  | |  | `cast ( qdpk.aenderdat as abp_lastchange_date preserving type )` |
+| `LastChangeTime` |  | |  | `cast ( qdpk.zeitaend as abp_lastchange_time preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

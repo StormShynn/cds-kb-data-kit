@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `locnr` |
-| key `AddressID` | `adrnr` |
-| key `CustomerDepartment` | `abtnr` |
-| `ReceivingPoint` | `empst` |
-| `RetailLocationSellingAreaSize` | `verfl` |
-| `RetailLocationSellingAreaUnit` | `verfe` |
-| `DepartmentLayout` | `layvr` |
-| `DepartmentLayoutAreaSchema` | `flvar` |
-| `_Customer` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `locnr` |
+| `AddressID` | ✓ | |  | `adrnr` |
+| `CustomerDepartment` | ✓ | |  | `abtnr` |
+| `ReceivingPoint` |  | |  | `empst` |
+| `RetailLocationSellingAreaSize` |  | |  | `verfl` |
+| `RetailLocationSellingAreaUnit` |  | |  | `verfe` |
+| `DepartmentLayout` |  | |  | `layvr` |
+| `DepartmentLayoutAreaSchema` |  | |  | `flvar` |
+| `_Customer` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
 
 ## Associations
 

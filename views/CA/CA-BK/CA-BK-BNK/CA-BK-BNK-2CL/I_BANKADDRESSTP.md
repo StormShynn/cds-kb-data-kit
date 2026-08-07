@@ -32,59 +32,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankCountry` | `BankCountry` |
-| key `BankInternalID` | `BankInternalID` |
-| `StreetName` | `StreetName` |
-| `HouseNumber` | `HouseNumber` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `CityName` | `CityName` |
-| `PostalCode` | `PostalCode` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `DistrictName` | `DistrictName` |
-| `VillageName` | `VillageName` |
-| `CompanyPostalCode` | `CompanyPostalCode` |
-| `StreetAddrNonDeliverableReason` | `StreetAddrNonDeliverableReason` |
-| `StreetPrefixName1` | `StreetPrefixName1` |
-| `StreetPrefixName2` | `StreetPrefixName2` |
-| `StreetSuffixName1` | `StreetSuffixName1` |
-| `StreetSuffixName2` | `StreetSuffixName2` |
-| `Building` | `Building` |
-| `Floor` | `Floor` |
-| `RoomNumber` | `RoomNumber` |
-| `FormOfAddress` | `FormOfAddress` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `TransportZone` | `TransportZone` |
-| `POBox` | `POBox` |
-| `POBoxAddrNonDeliverableReason` | `POBoxAddrNonDeliverableReason` |
-| `POBoxIsWithoutNumber` | `POBoxIsWithoutNumber` |
-| `POBoxPostalCode` | `POBoxPostalCode` |
-| `POBoxLobbyName` | `POBoxLobbyName` |
-| `POBoxDeviatingCityName` | `POBoxDeviatingCityName` |
-| `POBoxDeviatingRegion` | `POBoxDeviatingRegion` |
-| `POBoxDeviatingCountry` | `POBoxDeviatingCountry` |
-| `CareOfName` | `CareOfName` |
-| `DeliveryServiceTypeCode` | `DeliveryServiceTypeCode` |
-| `DeliveryServiceNumber` | `DeliveryServiceNumber` |
-| `AddressTimeZone` | `AddressTimeZone` |
-| `SecondaryRegionName` | `SecondaryRegionName` |
-| `TertiaryRegionName` | `TertiaryRegionName` |
-| `AddressRepresentationCode` | `AddressRepresentationCode` |
-| `AddressID` | `AddressID` |
-| `AddressSearchTerm1` | `AddressSearchTerm1` |
-| `AddressSearchTerm2` | `AddressSearchTerm2` |
-| `InternationalPhoneNumber` | `InternationalPhoneNumber` |
-| `InternationalMobilePhoneNumber` | `InternationalMobilePhoneNumber` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `EmailAddress` | `EmailAddress` |
-| `I_BankTP` | `BankAddress._Bank : redirected to parent I_BankTP` |
-| `I_BankScriptedAddressTP` | `BankAddress._BankScriptVariant : redirected to composition child I_BankScriptedAddressTP` |
-| `_Region` | *Association* |
-| `_Country` | *Association* |
-| `_FormOfAddress` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankCountry` | ✓ | |  |  |
+| `BankInternalID` | ✓ | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `CityName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `DistrictName` |  | |  |  |
+| `VillageName` |  | |  |  |
+| `CompanyPostalCode` |  | |  |  |
+| `StreetAddrNonDeliverableReason` |  | |  |  |
+| `StreetPrefixName1` |  | |  |  |
+| `StreetPrefixName2` |  | |  |  |
+| `StreetSuffixName1` |  | |  |  |
+| `StreetSuffixName2` |  | |  |  |
+| `Building` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TransportZone` |  | |  |  |
+| `POBox` |  | |  |  |
+| `POBoxAddrNonDeliverableReason` |  | |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `POBoxLobbyName` |  | |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |
+| `CareOfName` |  | |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |
+| `DeliveryServiceNumber` |  | |  |  |
+| `AddressTimeZone` |  | |  |  |
+| `SecondaryRegionName` |  | |  |  |
+| `TertiaryRegionName` |  | |  |  |
+| `AddressRepresentationCode` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressSearchTerm1` |  | |  |  |
+| `AddressSearchTerm2` |  | |  |  |
+| `InternationalPhoneNumber` |  | |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `I_BankTP` |  | |  | `BankAddress._Bank : redirected to parent I_BankTP` |
+| `I_BankScriptedAddressTP` |  | |  | `BankAddress._BankScriptVariant : redirected to composition child I_BankScriptedAddressTP` |
+| `_Region` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_FormOfAddress` | | ✓ | | |
 
 ## Source Code
 

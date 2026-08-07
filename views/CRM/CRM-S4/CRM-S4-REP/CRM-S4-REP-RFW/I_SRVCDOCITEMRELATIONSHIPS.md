@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocument` | `object_id` |
-| key `ServiceObjectType` | `objtype_h` |
-| key `SrvcItemRelshpFromItemNumber` | `item_number_a` |
-| key `SrvcItemRelshpType` | `item_relationship_type` |
-| key `SrvcItemRelshpToItemNumber` | `item_number_b` |
-| `_ServiceDocumentItemFrom` | *Association* |
-| `_ServiceDocumentItemTo` | *Association* |
-| `_ServiceItemRelationshipType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocument` | ✓ | |  | `object_id` |
+| `ServiceObjectType` | ✓ | |  | `objtype_h` |
+| `SrvcItemRelshpFromItemNumber` | ✓ | |  | `item_number_a` |
+| `SrvcItemRelshpType` | ✓ | |  | `item_relationship_type` |
+| `SrvcItemRelshpToItemNumber` | ✓ | |  | `item_number_b` |
+| `_ServiceDocumentItemFrom` | | ✓ | | |
+| `_ServiceDocumentItemTo` | | ✓ | | |
+| `_ServiceItemRelationshipType` | | ✓ | | |
 
 ## Associations
 

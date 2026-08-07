@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `AddresssMainWebsiteURL.AddressID` |
-| key `AddressPersonID` | `AddresssMainWebsiteURL.AddressPersonID` |
-| `CommMediumSequenceNumber` | `AddresssMainWebsiteURL.CommMediumSequenceNumber` |
-| `UniformResourceIdentifier` | `AddresssMainWebsiteURL.UniformResourceIdentifier` |
-| `_AddressCommunicationRemark` | *Association* |
-| `_AddressCommunicationUsage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |
+| `AddressPersonID` | ✓ | |  |  |
+| `CommMediumSequenceNumber` |  | |  |  |
+| `UniformResourceIdentifier` |  | |  |  |
+| `_AddressCommunicationRemark` | | ✓ | | |
+| `_AddressCommunicationUsage` | | ✓ | | |
 
 ## Associations
 

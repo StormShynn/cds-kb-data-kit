@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Ledger` | `rldnr` |
-| `IsLeadingLedger` | `finsc_ledger.xleading` |
-| `LedgerApplication` | `finsc_ledger.appl` |
-| `LedgerSubApplication` | `finsc_ledger.subappl` |
-| `AccountingValuationView` | `finsc_ledger.valutyp` |
-| `LedgerType` | `finsc_ledger.ledger_type` |
-| `ExtensionLedgerType` | `finsc_ledger.ext_ledger_type` |
-| `ReferenceLedger` | `finsc_ledger.fallback_ledger` |
-| `TechnicalLedger` | `finsc_ledger.tech_ledger` |
-| `_PredictionLedger` | *Association* |
-| `_LedgerType` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Ledger` | ✓ | |  | `rldnr` |
+| `IsLeadingLedger` |  | |  | `xleading` |
+| `LedgerApplication` |  | |  | `appl` |
+| `LedgerSubApplication` |  | |  | `subappl` |
+| `AccountingValuationView` |  | |  | `valutyp` |
+| `LedgerType` |  | |  | `ledger_type` |
+| `ExtensionLedgerType` |  | |  | `ext_ledger_type` |
+| `ReferenceLedger` |  | |  | `fallback_ledger` |
+| `TechnicalLedger` |  | |  | `tech_ledger` |
+| `_PredictionLedger` | | ✓ | | |
+| `_LedgerType` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

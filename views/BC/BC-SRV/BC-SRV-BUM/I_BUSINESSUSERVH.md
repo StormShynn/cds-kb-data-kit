@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'LastName'` | `by: 'LastName'` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'LastName'` |  | |  | `by: 'LastName'` |
 
 ## Source Code
 

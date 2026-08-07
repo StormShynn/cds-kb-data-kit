@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceOrder` | `MaintenanceOrder` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| `MaintenanceOrderLongText` | `MaintenanceOrderLongText` |
-| `_MaintenanceOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `MaintenanceOrderLongText` |  | |  |  |
+| `_MaintenanceOrder` | | ✓ | | |
 
 ## Source Code
 

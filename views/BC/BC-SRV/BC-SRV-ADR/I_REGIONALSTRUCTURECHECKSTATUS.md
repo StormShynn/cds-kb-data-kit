@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RegionalStructureCheckStatus` | `cast ( domvalue_l as ad_checkst )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RegionalStructureCheckStatus` | ✓ | |  | `cast ( domvalue_l as ad_checkst )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

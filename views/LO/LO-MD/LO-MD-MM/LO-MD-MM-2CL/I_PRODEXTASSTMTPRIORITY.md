@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdExtAssortmentPriority` | `twsp.pflks` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdExtAssortmentPriority` | ✓ | |  | `pflks` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

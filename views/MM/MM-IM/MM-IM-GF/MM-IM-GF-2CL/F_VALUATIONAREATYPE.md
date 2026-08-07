@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ValuationAreaType` | `bwkrs_cus` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ValuationAreaType` | ✓ | |  | `bwkrs_cus` |
 
 ## Source Code
 

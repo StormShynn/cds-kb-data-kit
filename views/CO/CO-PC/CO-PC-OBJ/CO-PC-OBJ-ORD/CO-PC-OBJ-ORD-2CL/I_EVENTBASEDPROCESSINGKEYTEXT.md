@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EventBasedProcessingKey` | `fcoc_ebw_methodt.ebw_key` |
-| key `Language` | `spras` |
-| `EventBasedProcessingKeyName` | `cast(texta as ebw_key_text preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventBasedProcessingKey` | ✓ | |  | `ebw_key` |
+| `Language` | ✓ | |  | `spras` |
+| `EventBasedProcessingKeyName` |  | |  | `cast(texta as ebw_key_text preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

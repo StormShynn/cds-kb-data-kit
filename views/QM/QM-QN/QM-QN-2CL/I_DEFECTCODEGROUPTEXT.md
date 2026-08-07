@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DefectCodeGroup` | `cast( qpgt.codegruppe as vdm_qfegrp preserving type )` |
-| key `Language` | `qpgt.sprache` |
-| `DefectCodeGroupText` | `cast( qpgt.kurztext as vdm_qfegrp_text preserving type )` |
-| `_DefectCodeGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DefectCodeGroup` | ✓ | |  | `cast( qpgt.codegruppe as vdm_qfegrp preserving type )` |
+| `Language` | ✓ | |  | `sprache` |
+| `DefectCodeGroupText` |  | |  | `cast( qpgt.kurztext as vdm_qfegrp_text preserving type )` |
+| `_DefectCodeGroup` | | ✓ | | |
 
 ## Associations
 

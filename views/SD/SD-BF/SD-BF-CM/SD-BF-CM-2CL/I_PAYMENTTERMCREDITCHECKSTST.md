@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentTermCreditCheckStatus` | `statu` |
-| key `Language` | `spras` |
-| `PaymentTermCreditCheckStsDesc` | `bezei` |
-| `_PaymentTermCreditCheckStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentTermCreditCheckStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `PaymentTermCreditCheckStsDesc` |  | |  | `bezei` |
+| `_PaymentTermCreditCheckStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

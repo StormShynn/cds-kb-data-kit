@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcStatus` | `CharcStatus` |
-| `_Text` | `_CharacteristicStatusText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcStatus` | ✓ | |  |  |
+| `_Text` |  | |  | `_CharacteristicStatusText` |
 
 ## Source Code
 

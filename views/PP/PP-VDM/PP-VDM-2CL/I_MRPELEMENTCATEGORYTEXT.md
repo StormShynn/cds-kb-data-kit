@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `MRPElementCategory` | `MRPElementCategory` |
-| `MRPElementCategoryShortName` | `MRPElementCategoryShortName` |
-| `MRPElementCategoryName` | `MRPElementCategoryName` |
-| `MRPElementCategoryLongName` | `MRPElementCategoryLongName` |
-| `_Language` | *Association* |
-| `_MRPElementCategoryValue` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `MRPElementCategory` | ✓ | |  |  |
+| `MRPElementCategoryShortName` |  | |  |  |
+| `MRPElementCategoryName` |  | |  |  |
+| `MRPElementCategoryLongName` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_MRPElementCategoryValue` | | ✓ | | |
 
 ## Associations
 

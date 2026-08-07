@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationSegmentHierarchy` | `cast ( _Source.hryid as fincs_hryid_segment )` |
-| key `ValidityEndDate` | `cast ( _Source.hryvalto as fincs_validityenddate preserving type )` |
-| key `Segment` | `cast ( _Source.segment as fincs_segment preserving type )` |
-| key `PartnerSegment` | `cast ( _Source.psegment as fincs_partnersegment preserving type )` |
-| `ValidityStartDate` | `cast ( _Source.hryvalfrom as fincs_validitystartdate preserving type )` |
-| `ConsolidationSegmentForElim` | `cast ( _Source.segment_eliminated as fincs_segmentforelim preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationSegmentHierarchy` | ✓ | |  | `cast ( _Source.hryid as fincs_hryid_segment )` |
+| `ValidityEndDate` | ✓ | |  | `cast ( _Source.hryvalto as fincs_validityenddate preserving type )` |
+| `Segment` | ✓ | |  | `cast ( _Source.segment as fincs_segment preserving type )` |
+| `PartnerSegment` | ✓ | |  | `cast ( _Source.psegment as fincs_partnersegment preserving type )` |
+| `ValidityStartDate` |  | |  | `cast ( _Source.hryvalfrom as fincs_validitystartdate preserving type )` |
+| `ConsolidationSegmentForElim` |  | |  | `cast ( _Source.segment_eliminated as fincs_segmentforelim preserving type )` |
 
 ## Source Code
 

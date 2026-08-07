@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `AddressID` |
-| key `AddressPersonID` | `AddressPersonID` |
-| `CommMediumSequenceNumber` | `CommMediumSequenceNumber` |
-| `PhoneNumberCountry` | `PhoneNumberCountry` |
-| `PhoneAreaCodeSubscriberNumber` | `PhoneAreaCodeSubscriberNumber` |
-| `PhoneExtensionNumber` | `PhoneExtensionNumber` |
-| `InternationalLandlineNumber` | `cast( InternationalPhoneNumber as ad_curdfltlandlinephonenmbr preserving type )` |
-| `InternationalPhoneNumber` | `InternationalPhoneNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `_PhoneNumberCountry` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |
+| `AddressPersonID` | ✓ | |  |  |
+| `CommMediumSequenceNumber` |  | |  |  |
+| `PhoneNumberCountry` |  | |  |  |
+| `PhoneAreaCodeSubscriberNumber` |  | |  |  |
+| `PhoneExtensionNumber` |  | |  |  |
+| `InternationalLandlineNumber` |  | |  | `cast( InternationalPhoneNumber as ad_curdfltlandlinephonenmbr preserving type )` |
+| `InternationalPhoneNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `_PhoneNumberCountry` | | ✓ | | |
 
 ## Source Code
 

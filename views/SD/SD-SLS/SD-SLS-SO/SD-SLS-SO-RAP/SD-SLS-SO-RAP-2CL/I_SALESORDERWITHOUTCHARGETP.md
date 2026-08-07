@@ -31,70 +31,70 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutCharge` | `SalesOrderWithoutCharge.SalesOrderWithoutCharge` |
-| `SalesOrderWithoutChargeType` | `SalesOrderWithoutCharge.SalesOrderWithoutChargeType` |
-| `SalesOrganization` | `SalesOrderWithoutCharge.SalesOrganization` |
-| `SoldToParty` | `SalesOrderWithoutCharge.SoldToParty` |
-| `DistributionChannel` | `SalesOrderWithoutCharge.DistributionChannel` |
-| `ReferenceDistributionChannel` | `SalesOrderWithoutCharge.ReferenceDistributionChannel` |
-| `OrganizationDivision` | `SalesOrderWithoutCharge.OrganizationDivision` |
-| `SalesGroup` | `SalesOrderWithoutCharge.SalesGroup` |
-| `SalesOffice` | `SalesOrderWithoutCharge.SalesOffice` |
-| `SalesDistrict` | `SalesOrderWithoutCharge.SalesDistrict` |
-| `PurchaseOrderByCustomer` | `SalesOrderWithoutCharge.PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderType` | `SalesOrderWithoutCharge.CustomerPurchaseOrderType` |
-| `CustomerPurchaseOrderDate` | `SalesOrderWithoutCharge.CustomerPurchaseOrderDate` |
-| `CustomerGroup` | `SalesOrderWithoutCharge.CustomerGroup` |
-| `TotalNetAmount` | `SalesOrderWithoutCharge.TotalNetAmount` |
-| `TransactionCurrency` | `SalesOrderWithoutCharge.TransactionCurrency` |
-| `SDDocumentReason` | `SalesOrderWithoutCharge.SDDocumentReason` |
-| `PricingDate` | `SalesOrderWithoutCharge.PricingDate` |
-| `FixedValueDate` | `SalesOrderWithoutCharge.FixedValueDate` |
-| `CustomerPaymentTerms` | `SalesOrderWithoutCharge.CustomerPaymentTerms` |
-| `PaymentMethod` | `SalesOrderWithoutCharge.PaymentMethod` |
-| `OverallDeliveryBlockStatus` | `SalesOrderWithoutCharge.OverallDeliveryBlockStatus` |
-| `OverallDeliveryStatus` | `SalesOrderWithoutCharge.OverallDeliveryStatus` |
-| `HdrGeneralIncompletionStatus` | `SalesOrderWithoutCharge.HdrGeneralIncompletionStatus` |
-| `OvrlItmGeneralIncompletionSts` | `SalesOrderWithoutCharge.OvrlItmGeneralIncompletionSts` |
-| `SalesDocApprovalStatus` | `SalesOrderWithoutCharge.SalesDocApprovalStatus` |
-| `OverallChmlCmplncStatus` | `SalesOrderWithoutCharge.OverallChmlCmplncStatus` |
-| `OverallDangerousGoodsStatus` | `SalesOrderWithoutCharge.OverallDangerousGoodsStatus` |
-| `OverallSafetyDataSheetStatus` | `SalesOrderWithoutCharge.OverallSafetyDataSheetStatus` |
-| `OverallTrdCmplncEmbargoSts` | `SalesOrderWithoutCharge.OverallTrdCmplncEmbargoSts` |
-| `OvrlTrdCmplncSnctndListChkSts` | `SalesOrderWithoutCharge.OvrlTrdCmplncSnctndListChkSts` |
-| `OvrlTrdCmplncLegalCtrlChkSts` | `SalesOrderWithoutCharge.OvrlTrdCmplncLegalCtrlChkSts` |
-| `ControllingArea` | `SalesOrderWithoutCharge.ControllingArea` |
-| `RequestedDeliveryDate` | `SalesOrderWithoutCharge.RequestedDeliveryDate` |
-| `ShippingCondition` | `SalesOrderWithoutCharge.ShippingCondition` |
-| `CompleteDeliveryIsDefined` | `SalesOrderWithoutCharge.CompleteDeliveryIsDefined` |
-| `ShippingType` | `SalesOrderWithoutCharge.ShippingType` |
-| `DeliveryBlockReason` | `SalesOrderWithoutCharge.DeliveryBlockReason` |
-| `HeaderBillingBlockReason` | `SalesOrderWithoutCharge.HeaderBillingBlockReason` |
-| `SlsOrdWthoutChrgApprvlReason` | `SalesOrderWithoutCharge.SlsOrdWthoutChrgApprvlReason` |
-| `IncotermsClassification` | `SalesOrderWithoutCharge.IncotermsClassification` |
-| `IncotermsLocation1` | `SalesOrderWithoutCharge.IncotermsLocation1` |
-| `IncotermsLocation2` | `SalesOrderWithoutCharge.IncotermsLocation2` |
-| `IncotermsVersion` | `SalesOrderWithoutCharge.IncotermsVersion` |
-| `ReferenceSDDocument` | `SalesOrderWithoutCharge.ReferenceSDDocument` |
-| `ReferenceSDDocumentCategory` | `SalesOrderWithoutCharge.ReferenceSDDocumentCategory` |
-| `AccountingDocExternalReference` | `SalesOrderWithoutCharge.AccountingDocExternalReference` |
-| `OverallSDProcessStatus` | `SalesOrderWithoutCharge.OverallSDProcessStatus` |
-| `OverallSDDocumentRejectionSts` | `SalesOrderWithoutCharge.OverallSDDocumentRejectionSts` |
-| `TotalBlockStatus` | `SalesOrderWithoutCharge.TotalBlockStatus` |
-| `OverallSDDocReferenceStatus` | `SalesOrderWithoutCharge.OverallSDDocReferenceStatus` |
-| `SalesOrderWithoutChargeDate` | `SalesOrderWithoutCharge.SalesOrderWithoutChargeDate` |
-| `SalesDocumentCreationDateTime` | `SalesOrderWithoutCharge.SalesDocumentCreationDateTime` |
-| `LastChangeDateTime` | `SalesOrderWithoutCharge.LastChangeDateTime` |
-| `CreatedByUser` | `SalesOrderWithoutCharge.CreatedByUser` |
-| `CreationDate` | `SalesOrderWithoutCharge.CreationDate` |
-| `CreationTime` | `SalesOrderWithoutCharge.CreationTime` |
-| `LastChangedByUser` | `SalesOrderWithoutCharge.LastChangedByUser` |
-| `LastChangeDate` | `SalesOrderWithoutCharge.LastChangeDate` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `ReferenceDistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `FixedValueDate` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `OverallDeliveryBlockStatus` |  | |  |  |
+| `OverallDeliveryStatus` |  | |  |  |
+| `HdrGeneralIncompletionStatus` |  | |  |  |
+| `OvrlItmGeneralIncompletionSts` |  | |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |
+| `OverallChmlCmplncStatus` |  | |  |  |
+| `OverallDangerousGoodsStatus` |  | |  |  |
+| `OverallSafetyDataSheetStatus` |  | |  |  |
+| `OverallTrdCmplncEmbargoSts` |  | |  |  |
+| `OvrlTrdCmplncSnctndListChkSts` |  | |  |  |
+| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `RequestedDeliveryDate` |  | |  |  |
+| `ShippingCondition` |  | |  |  |
+| `CompleteDeliveryIsDefined` |  | |  |  |
+| `ShippingType` |  | |  |  |
+| `DeliveryBlockReason` |  | |  |  |
+| `HeaderBillingBlockReason` |  | |  |  |
+| `SlsOrdWthoutChrgApprvlReason` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `AccountingDocExternalReference` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `OverallSDDocumentRejectionSts` |  | |  |  |
+| `TotalBlockStatus` |  | |  |  |
+| `OverallSDDocReferenceStatus` |  | |  |  |
+| `SalesOrderWithoutChargeDate` |  | |  |  |
+| `SalesDocumentCreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

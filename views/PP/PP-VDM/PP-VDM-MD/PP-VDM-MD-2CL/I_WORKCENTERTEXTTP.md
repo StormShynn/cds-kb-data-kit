@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterInternalID` | `WorkCenterInternalID` |
-| key `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| key `Language` | `Language` |
-| `WorkCenterText` | `WorkCenterText` |
-| `Plant` | `Plant` |
-| `WorkCenterCategoryCode` | `WorkCenterCategoryCode` |
-| `WorkCenter` | `WorkCenter` |
-| `WorkCenterLastChangeDateTime` | `WorkCenterLastChangeDateTime` |
-| `_Header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `WorkCenterText` |  | |  |  |
+| `Plant` |  | |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `WorkCenterLastChangeDateTime` |  | |  |  |
+| `_Header` | | ✓ | | |
 
 ## Source Code
 

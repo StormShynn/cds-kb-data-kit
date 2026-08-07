@@ -29,64 +29,64 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `OrganizationAddress.AddressID` |
-| `AddressPersonID` | `OrganizationAddress.AddressPersonID` |
-| `AddressRepresentationCode` | `OrganizationAddress.AddressRepresentationCode` |
-| `AddressObjectType` | `OrganizationAddress.AddressObjectType` |
-| `CorrespondenceLanguage` | `OrganizationAddress.CorrespondenceLanguage` |
-| `PrfrdCommMediumType` | `OrganizationAddress.PrfrdCommMediumType` |
-| `AddresseeFullName` | `OrganizationAddress.AddresseeFullName` |
-| `CityNumber` | `OrganizationAddress.CityNumber` |
-| `CityName` | `OrganizationAddress.CityName` |
-| `DistrictName` | `OrganizationAddress.DistrictName` |
-| `VillageName` | `OrganizationAddress.VillageName` |
-| `PostalCode` | `OrganizationAddress.PostalCode` |
-| `CompanyPostalCode` | `OrganizationAddress.CompanyPostalCode` |
-| `Street` | `OrganizationAddress.Street` |
-| `StreetName` | `OrganizationAddress.StreetName` |
-| `StreetAddrNonDeliverableReason` | `OrganizationAddress.StreetAddrNonDeliverableReason` |
-| `StreetPrefixName1` | `OrganizationAddress.StreetPrefixName1` |
-| `StreetPrefixName2` | `OrganizationAddress.StreetPrefixName2` |
-| `StreetSuffixName1` | `OrganizationAddress.StreetSuffixName1` |
-| `StreetSuffixName2` | `OrganizationAddress.StreetSuffixName2` |
-| `HouseNumber` | `OrganizationAddress.HouseNumber` |
-| `HouseNumberSupplementText` | `OrganizationAddress.HouseNumberSupplementText` |
-| `Building` | `OrganizationAddress.Building` |
-| `Floor` | `OrganizationAddress.Floor` |
-| `RoomNumber` | `OrganizationAddress.RoomNumber` |
-| `Country` | `OrganizationAddress.Country` |
-| `Region` | `OrganizationAddress.Region` |
-| `FormOfAddress` | `OrganizationAddress.FormOfAddress` |
-| `AddresseeName1` | `OrganizationAddress.AddresseeName1` |
-| `AddresseeName2` | `OrganizationAddress.AddresseeName2` |
-| `AddresseeName3` | `OrganizationAddress.AddresseeName3` |
-| `AddresseeName4` | `OrganizationAddress.AddresseeName4` |
-| `AddressSearchTerm1` | `OrganizationAddress.AddressSearchTerm1` |
-| `AddressSearchTerm2` | `OrganizationAddress.AddressSearchTerm2` |
-| `TaxJurisdiction` | `OrganizationAddress.TaxJurisdiction` |
-| `TransportZone` | `OrganizationAddress.TransportZone` |
-| `POBox` | `OrganizationAddress.POBox` |
-| `POBoxAddrNonDeliverableReason` | `OrganizationAddress.POBoxAddrNonDeliverableReason` |
-| `POBoxIsWithoutNumber` | `OrganizationAddress.POBoxIsWithoutNumber` |
-| `POBoxPostalCode` | `OrganizationAddress.POBoxPostalCode` |
-| `POBoxLobbyName` | `OrganizationAddress.POBoxLobbyName` |
-| `POBoxDeviatingCityName` | `OrganizationAddress.POBoxDeviatingCityName` |
-| `POBoxDeviatingCityCode` | `OrganizationAddress.POBoxDeviatingCityCode` |
-| `POBoxDeviatingRegion` | `OrganizationAddress.POBoxDeviatingRegion` |
-| `POBoxDeviatingCountry` | `OrganizationAddress.POBoxDeviatingCountry` |
-| `CareOfName` | `OrganizationAddress.CareOfName` |
-| `DeliveryServiceTypeCode` | `OrganizationAddress.DeliveryServiceTypeCode` |
-| `DeliveryServiceNumber` | `OrganizationAddress.DeliveryServiceNumber` |
-| `AddressTimeZone` | `OrganizationAddress.AddressTimeZone` |
-| `SecondaryRegion` | `OrganizationAddress.SecondaryRegion` |
-| `SecondaryRegionName` | `OrganizationAddress.SecondaryRegionName` |
-| `TertiaryRegion` | `OrganizationAddress.TertiaryRegion` |
-| `TertiaryRegionName` | `OrganizationAddress.TertiaryRegionName` |
-| `RegionalStructureCheckStatus` | `OrganizationAddress.RegionalStructureCheckStatus` |
-| `AddressGroup` | `OrganizationAddress.AddressGroup` |
-| `_AddrAdditionalRepresentation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressRepresentationCode` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `PrfrdCommMediumType` |  | |  |  |
+| `AddresseeFullName` |  | |  |  |
+| `CityNumber` |  | |  |  |
+| `CityName` |  | |  |  |
+| `DistrictName` |  | |  |  |
+| `VillageName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `CompanyPostalCode` |  | |  |  |
+| `Street` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `StreetAddrNonDeliverableReason` |  | |  |  |
+| `StreetPrefixName1` |  | |  |  |
+| `StreetPrefixName2` |  | |  |  |
+| `StreetSuffixName1` |  | |  |  |
+| `StreetSuffixName2` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `Building` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `AddresseeName1` |  | |  |  |
+| `AddresseeName2` |  | |  |  |
+| `AddresseeName3` |  | |  |  |
+| `AddresseeName4` |  | |  |  |
+| `AddressSearchTerm1` |  | |  |  |
+| `AddressSearchTerm2` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TransportZone` |  | |  |  |
+| `POBox` |  | |  |  |
+| `POBoxAddrNonDeliverableReason` |  | |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `POBoxLobbyName` |  | |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |
+| `POBoxDeviatingCityCode` |  | |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |
+| `CareOfName` |  | |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |
+| `DeliveryServiceNumber` |  | |  |  |
+| `AddressTimeZone` |  | |  |  |
+| `SecondaryRegion` |  | |  |  |
+| `SecondaryRegionName` |  | |  |  |
+| `TertiaryRegion` |  | |  |  |
+| `TertiaryRegionName` |  | |  |  |
+| `RegionalStructureCheckStatus` |  | |  |  |
+| `AddressGroup` |  | |  |  |
+| `_AddrAdditionalRepresentation` | | ✓ | | |
 
 ## Associations
 

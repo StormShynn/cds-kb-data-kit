@@ -30,47 +30,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `t001.bukrs` |
-| `CompanyCodeName` | `t001.butxt` |
-| `CityName` | `t001.ort01` |
-| `Country` | `t001.land1` |
-| `Currency` | `t001.waers` |
-| `Language` | `t001.spras` |
-| `ChartOfAccounts` | `t001.ktopl` |
-| `FiscalYearVariant` | `t001.periv` |
-| `Company` | `t001.rcomp` |
-| `CreditControlArea` | `t001.kkber` |
-| `CountryChartOfAccounts` | `t001.ktop2` |
-| `FinancialManagementArea` | `t001.fikrs` |
-| `AddressID` | `t001.adrnr` |
-| `TaxableEntity` | `t001.umkrs` |
-| `VATRegistration` | `t001.stceg` |
-| `ExtendedWhldgTaxIsActive` | `t001.wt_newwt` |
-| `ControllingArea` | `tka02.kokrs` |
-| `FieldStatusVariant` | `t001.fstva` |
-| `NonTaxableTransactionTaxCode` | `t001.mwska` |
-| `DocDateIsUsedForTaxDetn` | `t001.xstdt` |
-| `TaxRptgDateIsActive` | `t001.xvatdate` |
-| `CashDiscountBaseAmtIsNetAmt` | `t001.xskfn` |
-| `_ChartOfAccountsText` | *Association* |
-| `_CountryChartOfAccountsText` | *Association* |
-| `_ControllingAreaText` | *Association* |
-| `_CreditControlAreaText` | *Association* |
-| `_Currency` | *Association* |
-| `_Country` | *Association* |
-| `_Address` | *Association* |
-| `_OrgAddressDefaultRprstn` | *Association* |
-| `_Language` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_FiscalYearVariant` | *Association* |
-| `_CountryChartOfAccounts` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CreditControlArea` | *Association* |
-| `_FieldStatusVariant` | *Association* |
-| `_GlobalCompany` | *Association* |
-| `_CompanyCodeHierNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CompanyCodeName` |  | |  | `butxt` |
+| `CityName` |  | |  | `ort01` |
+| `Country` |  | |  | `land1` |
+| `Currency` |  | |  | `waers` |
+| `Language` |  | |  | `spras` |
+| `ChartOfAccounts` |  | |  | `ktopl` |
+| `FiscalYearVariant` |  | |  | `periv` |
+| `Company` |  | |  | `rcomp` |
+| `CreditControlArea` |  | |  | `kkber` |
+| `CountryChartOfAccounts` |  | |  | `ktop2` |
+| `FinancialManagementArea` |  | |  | `fikrs` |
+| `AddressID` |  | |  | `adrnr` |
+| `TaxableEntity` |  | |  | `umkrs` |
+| `VATRegistration` |  | |  | `stceg` |
+| `ExtendedWhldgTaxIsActive` |  | |  | `wt_newwt` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `FieldStatusVariant` |  | |  | `fstva` |
+| `NonTaxableTransactionTaxCode` |  | |  | `mwska` |
+| `DocDateIsUsedForTaxDetn` |  | |  | `xstdt` |
+| `TaxRptgDateIsActive` |  | |  | `xvatdate` |
+| `CashDiscountBaseAmtIsNetAmt` |  | |  | `xskfn` |
+| `_ChartOfAccountsText` | | ✓ | | |
+| `_CountryChartOfAccountsText` | | ✓ | | |
+| `_ControllingAreaText` | | ✓ | | |
+| `_CreditControlAreaText` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_OrgAddressDefaultRprstn` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_CountryChartOfAccounts` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CreditControlArea` | | ✓ | | |
+| `_FieldStatusVariant` | | ✓ | | |
+| `_GlobalCompany` | | ✓ | | |
+| `_CompanyCodeHierNode` | | ✓ | | |
 
 ## Associations
 

@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdStopRole` | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_stop_role preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrdStopRoleDesc` | `ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdStopRole` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdStopRole` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_stop_role preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrdStopRoleDesc` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdStopRole` | | ✓ | | |
 
 ## Associations
 

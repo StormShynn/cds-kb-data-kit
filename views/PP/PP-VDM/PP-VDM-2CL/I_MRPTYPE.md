@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPType` | `typ.dismm` |
-| `MRPProcedure` | `typ.disvf` |
-| `_Text` | *Association* |
-| `_MRPProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPType` | ✓ | |  | `dismm` |
+| `MRPProcedure` |  | |  | `disvf` |
+| `_Text` | | ✓ | | |
+| `_MRPProcedure` | | ✓ | | |
 
 ## Associations
 

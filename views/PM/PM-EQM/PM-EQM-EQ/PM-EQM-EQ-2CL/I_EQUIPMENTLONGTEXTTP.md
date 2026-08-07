@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `Equipment` |
-| key `Language` | `Language` |
-| `TextObjectKey` | `TextObjectKey` |
-| `TextObjectCategory` | `TextObjectCategory` |
-| `TextObjectType` | `TextObjectType` |
-| `EquipmentLongText` | `EquipmentLongText` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `_Equipment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `TextObjectKey` |  | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `TextObjectType` |  | |  |  |
+| `EquipmentLongText` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `_Equipment` | | ✓ | | |
 
 ## Source Code
 

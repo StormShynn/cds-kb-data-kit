@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeZoneID` | `ttzz.tzone` |
-| `TimeZoneRule` | `ttzz.zonerule` |
-| `DaylightSavingRule` | `ttzz.dstrule` |
-| `TimeZoneIsActive` | `ttzz.flagactive` |
-| `_TimeZoneText` | *Association* |
-| `_TimeZoneRule` | *Association* |
-| `_DaylightSavingRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeZoneID` | ✓ | |  | `tzone` |
+| `TimeZoneRule` |  | |  | `zonerule` |
+| `DaylightSavingRule` |  | |  | `dstrule` |
+| `TimeZoneIsActive` |  | |  | `flagactive` |
+| `_TimeZoneText` | | ✓ | | |
+| `_TimeZoneRule` | | ✓ | | |
+| `_DaylightSavingRule` | | ✓ | | |
 
 ## Associations
 

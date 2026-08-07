@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CatalogProfile` | `t352b_t.rbnr` |
-| key `Language` | `t352b_t.spras` |
-| `CatalogProfileText` | `t352b_t.rbnrx` |
-| `_Language` | *Association* |
-| `_TechnicalReport` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CatalogProfile` | ✓ | |  | `rbnr` |
+| `Language` | ✓ | |  | `spras` |
+| `CatalogProfileText` |  | |  | `rbnrx` |
+| `_Language` | | ✓ | | |
+| `_TechnicalReport` | | ✓ | | |
 
 ## Associations
 

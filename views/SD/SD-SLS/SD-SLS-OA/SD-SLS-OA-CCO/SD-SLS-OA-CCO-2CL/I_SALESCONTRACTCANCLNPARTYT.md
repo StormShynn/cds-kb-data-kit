@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContractCanclnParty` | `substring(dd07t.domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `SalesContractCanclnPartyName` | `ddtext` |
-| `_SalesContractCanclnParty` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContractCanclnParty` | ✓ | |  | `substring(dd07t.domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SalesContractCanclnPartyName` |  | |  | `ddtext` |
+| `_SalesContractCanclnParty` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

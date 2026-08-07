@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenter` | `crhd.WorkCenter` |
-| key `Plant` | `crhd.Plant` |
-| key `Language` | `crtx.Language` |
-| `WorkCenterTypeCode` | `crhd.WorkCenterTypeCode` |
-| `WorkCenterInternalID` | `crhd.WorkCenterInternalID` |
-| `WorkCenterCategoryCode` | `crhd.WorkCenterCategoryCode` |
-| `WorkCenterText` | `crtx.WorkCenterText` |
-| `_Plant` | *Association* |
-| `_Language` | *Association* |
-| `_WorkCenterCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenter` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |
+| `WorkCenterText` |  | |  |  |
+| `_Plant` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_WorkCenterCategory` | | ✓ | | |
 
 ## Associations
 

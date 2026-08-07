@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryStatus` | `statu` |
-| key `Language` | `spras` |
-| `DeliveryStatusDescription` | `bezei` |
-| `_DeliveryStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `DeliveryStatusDescription` |  | |  | `bezei` |
+| `_DeliveryStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PhoneNumberType` | `cast ( domvalue_l as ad_flgmob )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PhoneNumberType` | ✓ | |  | `cast ( domvalue_l as ad_flgmob )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

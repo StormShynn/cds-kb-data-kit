@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StandardWorkFormulaParameter` | `cast(parid as pph_parid preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StandardWorkFormulaParameter` | ✓ | |  | `cast(parid as pph_parid preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

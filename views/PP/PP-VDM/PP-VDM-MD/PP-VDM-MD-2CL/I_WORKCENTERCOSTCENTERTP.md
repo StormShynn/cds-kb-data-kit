@@ -32,28 +32,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterInternalID` | `WorkCenterInternalID` |
-| key `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| key `CostCenterAllocation` | `CostCenterAllocation` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `WorkCenter` | `WorkCenter` |
-| `Plant` | `Plant` |
-| `WorkCenterCategoryCode` | `WorkCenterCategoryCode` |
-| `ControllingArea` | `ControllingArea` |
-| `CostCenter` | `CostCenter` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `CostCtrActivityTypeQtyUnit` | `CostCtrActivityTypeQtyUnit` |
-| `BusinessProcess` | `BusinessProcess` |
-| `ActivityDescOriginType` | `ActivityDescOriginType` |
-| `CostCenterActivityAltvDescID` | `CostCenterActivityAltvDescID` |
-| `CostCenterActivityTypeFormula` | `CostCenterActivityTypeFormula` |
-| `CostCtrActyTypeIsReferenced` | `CostCtrActyTypeIsReferenced` |
-| `CostCtrActyTypeIncntvWageCode` | `CostCtrActyTypeIncntvWageCode` |
-| `CostCtrActyTypeRecdTypeGrpCode` | `CostCtrActyTypeRecdTypeGrpCode` |
-| `_Header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |
+| `CostCenterAllocation` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `Plant` |  | |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `ActivityDescOriginType` |  | |  |  |
+| `CostCenterActivityAltvDescID` |  | |  |  |
+| `CostCenterActivityTypeFormula` |  | |  |  |
+| `CostCtrActyTypeIsReferenced` |  | |  |  |
+| `CostCtrActyTypeIncntvWageCode` |  | |  |  |
+| `CostCtrActyTypeRecdTypeGrpCode` |  | |  |  |
+| `_Header` | | ✓ | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ehlbl_id` | `key ProdCmplncLabelFieldID : ehlbl_id` |
-| `PCLblFieldCalculatorClassName` | `classname` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ehlbl_id` |  | |  | `key ProdCmplncLabelFieldID : ehlbl_id` |
+| `PCLblFieldCalculatorClassName` |  | |  | `classname` |
 
 ## Source Code
 

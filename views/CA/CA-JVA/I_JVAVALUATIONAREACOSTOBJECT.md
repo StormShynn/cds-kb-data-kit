@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ValuationArea` | `bwkey` |
-| key `ValuationType` | `bwtar` |
-| `CostCenter` | `kostl` |
-| `WBSElementInternalID` | `pspnr` |
-| `OrderID` | `aufnr` |
-| `JointVentureConditionKey` | `condcod` |
-| `_ValuationArea` | *Association* |
-| `_JVAValuationType` | *Association* |
-| `_InventoryValuationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ValuationArea` | ✓ | |  | `bwkey` |
+| `ValuationType` | ✓ | |  | `bwtar` |
+| `CostCenter` |  | |  | `kostl` |
+| `WBSElementInternalID` |  | |  | `pspnr` |
+| `OrderID` |  | |  | `aufnr` |
+| `JointVentureConditionKey` |  | |  | `condcod` |
+| `_ValuationArea` | | ✓ | | |
+| `_JVAValuationType` | | ✓ | | |
+| `_InventoryValuationType` | | ✓ | | |
 
 ## Associations
 

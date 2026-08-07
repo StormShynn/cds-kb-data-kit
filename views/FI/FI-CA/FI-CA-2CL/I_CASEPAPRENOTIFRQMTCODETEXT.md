@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CASEPAPreNotificationRqmtCode` | `cast( left( domvalue_l, 1 ) as pnctr_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CASEPAPreNotifRqmtCodeText` | `cast( ddtext as pnctr_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CASEPAPreNotificationRqmtCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pnctr_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CASEPAPreNotifRqmtCodeText` |  | |  | `cast( ddtext as pnctr_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

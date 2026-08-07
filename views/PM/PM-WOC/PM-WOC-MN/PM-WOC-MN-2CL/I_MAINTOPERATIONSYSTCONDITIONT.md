@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OperationSystemCondition` | `anlzu` |
-| key `Language` | `spras` |
-| `OperationSystemConditionText` | `anlzux` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OperationSystemCondition` | ✓ | |  | `anlzu` |
+| `Language` | ✓ | |  | `spras` |
+| `OperationSystemConditionText` |  | |  | `anlzux` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

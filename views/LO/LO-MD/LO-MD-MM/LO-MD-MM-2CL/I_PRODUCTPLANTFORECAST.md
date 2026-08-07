@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Forecast.Product` |
-| key `Plant` | `Forecast.Plant` |
-| `ConsumptionRefUsageEndDate` | `Forecast.ConsumptionRefUsageEndDate` |
-| `ConsumptionQtyMultiplier` | `Forecast.ConsumptionQtyMultiplier` |
-| `ConsumptionReferenceProduct` | `Forecast.ConsumptionReferenceProduct` |
-| `ConsumptionReferencePlant` | `Forecast.ConsumptionReferencePlant` |
-| `CorrectionFactorIsRequired` | `Forecast.CorrectionFactorIsRequired` |
-| `ForecastModelIsReset` | `Forecast.ForecastModelIsReset` |
-| `_Product` | *Association* |
-| `_ConsumptionReferenceProduct` | *Association* |
-| `_ConsumptionReferencePlant` | *Association* |
-| `_ProductDescription` | *Association* |
-| `_CnsmpnRefProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `ConsumptionRefUsageEndDate` |  | |  |  |
+| `ConsumptionQtyMultiplier` |  | |  |  |
+| `ConsumptionReferenceProduct` |  | |  |  |
+| `ConsumptionReferencePlant` |  | |  |  |
+| `CorrectionFactorIsRequired` |  | |  |  |
+| `ForecastModelIsReset` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ConsumptionReferenceProduct` | | ✓ | | |
+| `_ConsumptionReferencePlant` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
+| `_CnsmpnRefProductDescription` | | ✓ | | |
 
 ## Associations
 

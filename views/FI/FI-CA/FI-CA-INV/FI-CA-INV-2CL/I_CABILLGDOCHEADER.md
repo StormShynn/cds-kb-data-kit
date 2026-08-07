@@ -29,92 +29,92 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgDocument` | `billdocno` |
-| `BusinessPartner` | `gpart` |
-| `ContractAccount` | `vkont` |
-| `CABillgType` | `bill_type` |
-| `CABillgDocPeriodStartDate` | `cast(date_from as bill_period_from_gfn_kk preserving type )` |
-| `CABillgDocPeriodEndDate` | `cast(date_to as bill_period_to_gfn_kk preserving type )` |
-| `CABillgDocumentReversalReason` | `revreason` |
-| `CABillgIsDocumentSimulated` | `simulated` |
-| `CABillgDocumentExternal` | `cast(refdocno as refdocno_gfn_kk preserving type )` |
-| `LogicalSystem` | `log_system` |
-| `CAApplicationArea` | `applk` |
-| `CABillgDocOriginProcess` | `srcprocess` |
-| `CAInvcgSourceDocumentType` | `srcdoctype` |
-| `CAInvcgTechnicalDocumentType` | `cast(techdoctype as techdoctype_gfn_kk preserving type )` |
-| `CAInvcgDocumentType` | `doctype` |
-| `CAInvcgTargetProcess` | `targprocess` |
-| `CAInvcgMasterDataType` | `mdcat` |
-| `CAInvcgAltvBusinessPartner` | `cast(gpart_inv as gpart_inv_gfn_kk preserving type )` |
-| `CAInvcgAltvContractAccount` | `cast(vkont_inv as vkont_inv_gfn_kk preserving type )` |
-| `CABillgBaseDate` | `bill_basedate` |
-| `CABillgCurrency` | `bill_curr` |
-| `CAInvcgCurrency` | `cast(inv_curr as inv_curr_gfn_kk preserving type )` |
-| `CATaxDetnType` | `tax_det_type` |
-| `CATaxDateType` | `tax_date_type` |
-| `CAInvcgCategory` | `inv_category` |
-| `CAInvcgControlOfInvoicingUnit` | `cast(separate_inv as separate_inv_bitpack_gfn_kk preserving type )` |
-| `CAInvcgFirstDate` | `invoice_first` |
-| `CABillgReversalDocument` | `cast(reversaldoc as reversalbilldoc_gfn_kk preserving type )` |
-| `CABillgReversedDocument` | `cast(reverseddoc as reversedbilldoc_gfn_kk preserving type )` |
-| `CABillgAdjustmentDocument` | `cast(adjustmentdoc as adjustmentbilldoc_gfn_kk preserving type )` |
-| `CABillgAdjustedDocument` | `adjusteddoc` |
-| `CAInvcgCorrectionCategory` | `cast(corrcat as corrcat_gfn_kk preserving type )` |
-| `CaInvcgIsOrderDeleted` | `cast(trigdeleted as trigdeleted_gfn_kk preserving type )` |
-| `CABillgHasAdditionalInvoice` | `xinfbill` |
-| `CAInvcgIsAccrualPostingRlvt` | `cast(xbillac as xbillac_gfn_kk preserving type )` |
-| `CABillgLockedForInvoicing` | `invlock` |
-| `CABillgGrpgOfAdditionalItems` | `cast(add_group as add_group_gfn_kk preserving type )` |
-| `CABillgDocHasRefObjects` | `cast(xinvbill_x as xinvbill_x_gfn_kk preserving type )` |
-| `CABillgDocumentNumberOfItems` | `recnum` |
-| `CABllbleItmNumber` | `cast(bit_number as bit_number_gfn_kk preserving type )` |
-| `CreatedByUser` | `crname` |
-| `CABillgDocCreationDate` | `crdate` |
-| `CABillgDocCreationTime` | `crtime` |
-| `CABillgDocInternalNumber` | `cast(billrunno as billrunno_gfn_kk preserving type )` |
-| `CABillgProcess` | `bill_process` |
-| `CABillgDocHasPrepaidItems` | `prepaid_incl` |
-| `CABillgDocHasRefillItems` | `pprefill_incl` |
-| `CABillgDocHasRevnRecgnItems` | `revrec_incl` |
-| `CAPartnerSettlementRule` | `ptsrl` |
-| `CABillgDocumentInvcgStatus` | `invstatus` |
-| `CAInvoicingDocument` | `invdocno` |
-| `CAInvcgCreationDate` | `invcrdate` |
-| key `CASubAreaForParallelization` | `keypp` |
-| `CAAltvMDOriginalIsIncluded` | `altmd_orig_incl` |
-| `_BusinessPartner` | *Association* |
-| `_ContractAccountHeader` | *Association* |
-| `_CAInvcgAltvBusinessPartner` | *Association* |
-| `_CAInvcgAltvContractAccount` | *Association* |
-| `_ContractAccountPartner` | *Association* |
-| `_CABillgCurrency` | *Association* |
-| `_CAInvcgCurrency` | *Association* |
-| `_CABillgReversalDocument` | *Association* |
-| `_CABillgReversedDocument` | *Association* |
-| `_CABillgAdjustmentDocument` | *Association* |
-| `_CABillgAdjustedDocument` | *Association* |
-| `_CABillgDocOriginProcess` | *Association* |
-| `_CAInvcgTargetProc` | *Association* |
-| `_CAInvcgCategory` | *Association* |
-| `_CABillgProcess` | *Association* |
-| `_CABillgType` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CAInvcgSourceDocType` | *Association* |
-| `_CAInvcgDocumentType` | *Association* |
-| `_CAInvcgDocTechDocType` | *Association* |
-| `_CABillgDocReversalReason` | *Association* |
-| `_CAInvcgMasterDataType` | *Association* |
-| `_CATaxDetnType` | *Association* |
-| `_CATaxDateType` | *Association* |
-| `_CAInvcgControlOfInvcgUnit` | *Association* |
-| `_CAInvcgCorrectionCat` | *Association* |
-| `_CABillgExistsAddInvcg` | *Association* |
-| `_CABillgLockedForInvcg` | *Association* |
-| `_CABillgDocInvcgStatus` | *Association* |
-| `_CAInvcgDocHeader` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgDocument` | ✓ | |  | `billdocno` |
+| `BusinessPartner` |  | |  | `gpart` |
+| `ContractAccount` |  | |  | `vkont` |
+| `CABillgType` |  | |  | `bill_type` |
+| `CABillgDocPeriodStartDate` |  | |  | `cast(date_from as bill_period_from_gfn_kk preserving type )` |
+| `CABillgDocPeriodEndDate` |  | |  | `cast(date_to as bill_period_to_gfn_kk preserving type )` |
+| `CABillgDocumentReversalReason` |  | |  | `revreason` |
+| `CABillgIsDocumentSimulated` |  | |  | `simulated` |
+| `CABillgDocumentExternal` |  | |  | `cast(refdocno as refdocno_gfn_kk preserving type )` |
+| `LogicalSystem` |  | |  | `log_system` |
+| `CAApplicationArea` |  | |  | `applk` |
+| `CABillgDocOriginProcess` |  | |  | `srcprocess` |
+| `CAInvcgSourceDocumentType` |  | |  | `srcdoctype` |
+| `CAInvcgTechnicalDocumentType` |  | |  | `cast(techdoctype as techdoctype_gfn_kk preserving type )` |
+| `CAInvcgDocumentType` |  | |  | `doctype` |
+| `CAInvcgTargetProcess` |  | |  | `targprocess` |
+| `CAInvcgMasterDataType` |  | |  | `mdcat` |
+| `CAInvcgAltvBusinessPartner` |  | |  | `cast(gpart_inv as gpart_inv_gfn_kk preserving type )` |
+| `CAInvcgAltvContractAccount` |  | |  | `cast(vkont_inv as vkont_inv_gfn_kk preserving type )` |
+| `CABillgBaseDate` |  | |  | `bill_basedate` |
+| `CABillgCurrency` |  | |  | `bill_curr` |
+| `CAInvcgCurrency` |  | |  | `cast(inv_curr as inv_curr_gfn_kk preserving type )` |
+| `CATaxDetnType` |  | |  | `tax_det_type` |
+| `CATaxDateType` |  | |  | `tax_date_type` |
+| `CAInvcgCategory` |  | |  | `inv_category` |
+| `CAInvcgControlOfInvoicingUnit` |  | |  | `cast(separate_inv as separate_inv_bitpack_gfn_kk preserving type )` |
+| `CAInvcgFirstDate` |  | |  | `invoice_first` |
+| `CABillgReversalDocument` |  | |  | `cast(reversaldoc as reversalbilldoc_gfn_kk preserving type )` |
+| `CABillgReversedDocument` |  | |  | `cast(reverseddoc as reversedbilldoc_gfn_kk preserving type )` |
+| `CABillgAdjustmentDocument` |  | |  | `cast(adjustmentdoc as adjustmentbilldoc_gfn_kk preserving type )` |
+| `CABillgAdjustedDocument` |  | |  | `adjusteddoc` |
+| `CAInvcgCorrectionCategory` |  | |  | `cast(corrcat as corrcat_gfn_kk preserving type )` |
+| `CaInvcgIsOrderDeleted` |  | |  | `cast(trigdeleted as trigdeleted_gfn_kk preserving type )` |
+| `CABillgHasAdditionalInvoice` |  | |  | `xinfbill` |
+| `CAInvcgIsAccrualPostingRlvt` |  | |  | `cast(xbillac as xbillac_gfn_kk preserving type )` |
+| `CABillgLockedForInvoicing` |  | |  | `invlock` |
+| `CABillgGrpgOfAdditionalItems` |  | |  | `cast(add_group as add_group_gfn_kk preserving type )` |
+| `CABillgDocHasRefObjects` |  | |  | `cast(xinvbill_x as xinvbill_x_gfn_kk preserving type )` |
+| `CABillgDocumentNumberOfItems` |  | |  | `recnum` |
+| `CABllbleItmNumber` |  | |  | `cast(bit_number as bit_number_gfn_kk preserving type )` |
+| `CreatedByUser` |  | |  | `crname` |
+| `CABillgDocCreationDate` |  | |  | `crdate` |
+| `CABillgDocCreationTime` |  | |  | `crtime` |
+| `CABillgDocInternalNumber` |  | |  | `cast(billrunno as billrunno_gfn_kk preserving type )` |
+| `CABillgProcess` |  | |  | `bill_process` |
+| `CABillgDocHasPrepaidItems` |  | |  | `prepaid_incl` |
+| `CABillgDocHasRefillItems` |  | |  | `pprefill_incl` |
+| `CABillgDocHasRevnRecgnItems` |  | |  | `revrec_incl` |
+| `CAPartnerSettlementRule` |  | |  | `ptsrl` |
+| `CABillgDocumentInvcgStatus` |  | |  | `invstatus` |
+| `CAInvoicingDocument` |  | |  | `invdocno` |
+| `CAInvcgCreationDate` |  | |  | `invcrdate` |
+| `CASubAreaForParallelization` | ✓ | |  | `keypp` |
+| `CAAltvMDOriginalIsIncluded` |  | |  | `altmd_orig_incl` |
+| `_BusinessPartner` | | ✓ | | |
+| `_ContractAccountHeader` | | ✓ | | |
+| `_CAInvcgAltvBusinessPartner` | | ✓ | | |
+| `_CAInvcgAltvContractAccount` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
+| `_CABillgCurrency` | | ✓ | | |
+| `_CAInvcgCurrency` | | ✓ | | |
+| `_CABillgReversalDocument` | | ✓ | | |
+| `_CABillgReversedDocument` | | ✓ | | |
+| `_CABillgAdjustmentDocument` | | ✓ | | |
+| `_CABillgAdjustedDocument` | | ✓ | | |
+| `_CABillgDocOriginProcess` | | ✓ | | |
+| `_CAInvcgTargetProc` | | ✓ | | |
+| `_CAInvcgCategory` | | ✓ | | |
+| `_CABillgProcess` | | ✓ | | |
+| `_CABillgType` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAInvcgSourceDocType` | | ✓ | | |
+| `_CAInvcgDocumentType` | | ✓ | | |
+| `_CAInvcgDocTechDocType` | | ✓ | | |
+| `_CABillgDocReversalReason` | | ✓ | | |
+| `_CAInvcgMasterDataType` | | ✓ | | |
+| `_CATaxDetnType` | | ✓ | | |
+| `_CATaxDateType` | | ✓ | | |
+| `_CAInvcgControlOfInvcgUnit` | | ✓ | | |
+| `_CAInvcgCorrectionCat` | | ✓ | | |
+| `_CABillgExistsAddInvcg` | | ✓ | | |
+| `_CABillgLockedForInvcg` | | ✓ | | |
+| `_CABillgDocInvcgStatus` | | ✓ | | |
+| `_CAInvcgDocHeader` | | ✓ | | |
 
 ## Associations
 

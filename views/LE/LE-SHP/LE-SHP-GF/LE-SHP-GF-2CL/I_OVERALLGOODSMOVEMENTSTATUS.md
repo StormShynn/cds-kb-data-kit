@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallGoodsMovementStatus` | `cast(left(dd07l.domvalue_l, 1 ) as wbstk preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallGoodsMovementStatus` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as wbstk preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

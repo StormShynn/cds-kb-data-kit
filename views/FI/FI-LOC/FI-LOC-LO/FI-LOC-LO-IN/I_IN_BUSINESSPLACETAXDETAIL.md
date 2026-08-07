@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `BusinessPlace` | `BusinessPlace` |
-| `BusinessPlaceDescription` | `BusinessPlaceDescription` |
-| `AddressID` | `AddressID` |
-| `IN_GSTIdentificationNumber` | `IN_GSTIdentificationNumber` |
-| `IN_IsBizPlaceGSTSpclEconomicZn` | `IN_IsBizPlaceGSTSpclEconomicZn` |
-| `IN_GSTTxDdctdAtSrceRegn` | `IN_GSTTxDdctdAtSrceRegn` |
-| `IN_GSTBizPlaceClassfctn` | `IN_GSTBizPlaceClassfctn` |
-| `_CompanyCode` | *Association* |
-| `_Address` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `BusinessPlace` | ✓ | |  |  |
+| `BusinessPlaceDescription` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `IN_GSTIdentificationNumber` |  | |  |  |
+| `IN_IsBizPlaceGSTSpclEconomicZn` |  | |  |  |
+| `IN_GSTTxDdctdAtSrceRegn` |  | |  |  |
+| `IN_GSTBizPlaceClassfctn` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_Address` | | ✓ | | |
 
 ## Associations
 

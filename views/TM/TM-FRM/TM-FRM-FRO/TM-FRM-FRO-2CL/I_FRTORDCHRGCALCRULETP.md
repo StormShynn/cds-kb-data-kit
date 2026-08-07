@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChrgCalcRuleUUID` | `TranspChrgCalcRuleUUID` |
-| `TranspChargeItemElementUUID` | `TranspChargeItemElementUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspChrgCalculationBase` | `TranspChrgCalculationBase` |
-| `TranspRateCalcRuleQtyUnit` | `TranspRateCalcRuleQtyUnit` |
-| `TranspRateCalcRuleQuantity` | `TranspRateCalcRuleQuantity` |
-| `TranspChrgDataSourceQuantity` | `TranspChrgDataSourceQuantity` |
-| `I_FrtOrdChrgElementTP` | `_TranspOrdChrgElmnt as _FrtOrdChrgElement : redirected to parent I_FrtOrdChrgElementTP` |
-| `I_FreightOrderTP` | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChrgCalcRuleUUID` | ✓ | |  |  |
+| `TranspChargeItemElementUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspChrgCalculationBase` |  | |  |  |
+| `TranspRateCalcRuleQtyUnit` |  | |  |  |
+| `TranspRateCalcRuleQuantity` |  | |  |  |
+| `TranspChrgDataSourceQuantity` |  | |  |  |
+| `I_FrtOrdChrgElementTP` |  | |  | `_TranspOrdChrgElmnt as _FrtOrdChrgElement : redirected to parent I_FrtOrdChrgElementTP` |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
 
 ## Source Code
 

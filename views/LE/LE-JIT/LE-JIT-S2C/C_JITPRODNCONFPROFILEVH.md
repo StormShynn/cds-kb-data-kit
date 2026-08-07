@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITProdnConfProfile` | `JITProdnConfProfile` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITProdnConfProfile` | ✓ | |  |  |
 
 ## Source Code
 

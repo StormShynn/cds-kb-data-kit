@@ -32,81 +32,81 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `)` | `key Supplier : abap.char( 10 )` |
-| `AlternativePayeeAccountNumber` | `abap.char( 10 )` |
-| `AlternativePayeeAccountNumb_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `AuthorizationGroup` | `abap.char( 4 )` |
-| `AuthorizationGroup_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CreatedByUser` | `abap.char( 12 )` |
-| `CreatedByUser_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `CreationDate` | `RAP_CP_ODATA_V2_EDM_DATETIME` |
-| `CreationDate_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `Customer` | `abap.char( 10 )` |
-| `Customer_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `PaymentIsBlockedForSupplier` | `abap_boolean` |
-| `PaymentIsBlockedForSupplier_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `PostingIsBlocked` | `abap_boolean` |
-| `PostingIsBlocked_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `PurchasingIsBlocked` | `abap_boolean` |
-| `PurchasingIsBlocked_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `SupplierAccountGroup` | `abap.char( 4 )` |
-| `SupplierAccountGroup_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `SupplierFullName` | `abap.char( 220 )` |
-| `SupplierFullName_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `SupplierName` | `abap.char( 80 )` |
-| `SupplierName_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `VATRegistration` | `abap.char( 20 )` |
-| `VATRegistration_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `BirthDate` | `RAP_CP_ODATA_V2_EDM_DATETIME` |
-| `BirthDate_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `ConcatenatedInternationalLocNo` | `abap.char( 20 )` |
-| `ConcatenatedInternationalLo_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `DeletionIndicator` | `abap_boolean` |
-| `DeletionIndicator_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `FiscalAddress` | `abap.char( 10 )` |
-| `FiscalAddress_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `Industry` | `abap.char( 4 )` |
-| `Industry_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `InternationalLocationNumber1` | `abap.numc( 7 )` |
-| `InternationalLocationNumber_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `InternationalLocationNumber2` | `abap.numc( 5 )` |
-| `InternationalLocationNumber_v1` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `InternationalLocationNumber3` | `abap.numc( 1 )` |
-| `InternationalLocationNumber_v2` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `IsNaturalPerson` | `abap.char( 1 )` |
-| `IsNaturalPerson_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `ResponsibleType` | `abap.char( 2 )` |
-| `ResponsibleType_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `SuplrQltyInProcmtCertfnValidTo` | `RAP_CP_ODATA_V2_EDM_DATETIME` |
-| `SuplrQltyInProcmtCertfnVali_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `SuplrQualityManagementSystem` | `abap.char( 4 )` |
-| `SuplrQualityManagementSyste_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `SupplierCorporateGroup` | `abap.char( 10 )` |
-| `SupplierCorporateGroup_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `SupplierProcurementBlock` | `abap.char( 2 )` |
-| `SupplierProcurementBlock_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber1` | `abap.char( 16 )` |
-| `TaxNumber1_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber2` | `abap.char( 11 )` |
-| `TaxNumber2_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber3` | `abap.char( 18 )` |
-| `TaxNumber3_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber4` | `abap.char( 18 )` |
-| `TaxNumber4_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumber5` | `abap.char( 60 )` |
-| `TaxNumber5_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumberResponsible` | `abap.char( 18 )` |
-| `TaxNumberResponsible_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `TaxNumberType` | `abap.char( 2 )` |
-| `TaxNumberType_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `SuplrProofOfDelivRlvtCode` | `abap.char( 1 )` |
-| `SuplrProofOfDelivRlvtCode_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `BR_TaxIsSplit` | `abap_boolean` |
-| `BR_TaxIsSplit_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
-| `DataExchangeInstructionKey` | `abap.char( 2 )` |
-| `DataExchangeInstructionKey_vc` | `RAP_CP_ODATA_VALUE_CONTROL` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `)` |  | |  | `key Supplier : abap.char( 10 )` |
+| `AlternativePayeeAccountNumber` |  | |  | `abap.char( 10 )` |
+| `AlternativePayeeAccountNumb_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `AuthorizationGroup` |  | |  | `abap.char( 4 )` |
+| `AuthorizationGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `CreatedByUser` |  | |  | `abap.char( 12 )` |
+| `CreatedByUser_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `CreationDate` |  | |  | `RAP_CP_ODATA_V2_EDM_DATETIME` |
+| `CreationDate_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `Customer` |  | |  | `abap.char( 10 )` |
+| `Customer_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `PaymentIsBlockedForSupplier` |  | |  | `abap_boolean` |
+| `PaymentIsBlockedForSupplier_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `PostingIsBlocked` |  | |  | `abap_boolean` |
+| `PostingIsBlocked_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `PurchasingIsBlocked` |  | |  | `abap_boolean` |
+| `PurchasingIsBlocked_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `SupplierAccountGroup` |  | |  | `abap.char( 4 )` |
+| `SupplierAccountGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `SupplierFullName` |  | |  | `abap.char( 220 )` |
+| `SupplierFullName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `SupplierName` |  | |  | `abap.char( 80 )` |
+| `SupplierName_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `VATRegistration` |  | |  | `abap.char( 20 )` |
+| `VATRegistration_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `BirthDate` |  | |  | `RAP_CP_ODATA_V2_EDM_DATETIME` |
+| `BirthDate_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `ConcatenatedInternationalLocNo` |  | |  | `abap.char( 20 )` |
+| `ConcatenatedInternationalLo_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `DeletionIndicator` |  | |  | `abap_boolean` |
+| `DeletionIndicator_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `FiscalAddress` |  | |  | `abap.char( 10 )` |
+| `FiscalAddress_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `Industry` |  | |  | `abap.char( 4 )` |
+| `Industry_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `InternationalLocationNumber1` |  | |  | `abap.numc( 7 )` |
+| `InternationalLocationNumber_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `InternationalLocationNumber2` |  | |  | `abap.numc( 5 )` |
+| `InternationalLocationNumber_v1` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `InternationalLocationNumber3` |  | |  | `abap.numc( 1 )` |
+| `InternationalLocationNumber_v2` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `IsNaturalPerson` |  | |  | `abap.char( 1 )` |
+| `IsNaturalPerson_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `ResponsibleType` |  | |  | `abap.char( 2 )` |
+| `ResponsibleType_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `SuplrQltyInProcmtCertfnValidTo` |  | |  | `RAP_CP_ODATA_V2_EDM_DATETIME` |
+| `SuplrQltyInProcmtCertfnVali_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `SuplrQualityManagementSystem` |  | |  | `abap.char( 4 )` |
+| `SuplrQualityManagementSyste_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `SupplierCorporateGroup` |  | |  | `abap.char( 10 )` |
+| `SupplierCorporateGroup_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `SupplierProcurementBlock` |  | |  | `abap.char( 2 )` |
+| `SupplierProcurementBlock_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `TaxNumber1` |  | |  | `abap.char( 16 )` |
+| `TaxNumber1_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `TaxNumber2` |  | |  | `abap.char( 11 )` |
+| `TaxNumber2_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `TaxNumber3` |  | |  | `abap.char( 18 )` |
+| `TaxNumber3_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `TaxNumber4` |  | |  | `abap.char( 18 )` |
+| `TaxNumber4_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `TaxNumber5` |  | |  | `abap.char( 60 )` |
+| `TaxNumber5_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `TaxNumberResponsible` |  | |  | `abap.char( 18 )` |
+| `TaxNumberResponsible_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `TaxNumberType` |  | |  | `abap.char( 2 )` |
+| `TaxNumberType_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `SuplrProofOfDelivRlvtCode` |  | |  | `abap.char( 1 )` |
+| `SuplrProofOfDelivRlvtCode_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `BR_TaxIsSplit` |  | |  | `abap_boolean` |
+| `BR_TaxIsSplit_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
+| `DataExchangeInstructionKey` |  | |  | `abap.char( 2 )` |
+| `DataExchangeInstructionKey_vc` |  | |  | `RAP_CP_ODATA_VALUE_CONTROL` |
 
 ## Source Code
 

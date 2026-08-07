@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentApprovalRule` | `PaymentApprovalRule` |
-| key `PaymentApprovalRuleItem` | `PaymentApprovalRuleItem` |
-| `PaymentApprovalCategory` | `PaymentApprovalCategory` |
-| `IsUnlimited` | `IsUnlimited` |
-| `PaytApprvlDfltLmtCurrency` | `PaytApprvlDfltLmtCurrency` |
-| `PaytApprvlLmtAmtInDfltLmtCrcy` | `PaytApprvlLmtAmtInDfltLmtCrcy` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_PaymentApprovalRule` | *Association* |
-| `_PaymentApprovalRuleLimit` | *Association* |
-| `_PaytApprvlRuleApprvrGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentApprovalRule` | ✓ | |  |  |
+| `PaymentApprovalRuleItem` | ✓ | |  |  |
+| `PaymentApprovalCategory` |  | |  |  |
+| `IsUnlimited` |  | |  |  |
+| `PaytApprvlDfltLmtCurrency` |  | |  |  |
+| `PaytApprvlLmtAmtInDfltLmtCrcy` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_PaymentApprovalRule` | | ✓ | | |
+| `_PaymentApprovalRuleLimit` | | ✓ | | |
+| `_PaytApprvlRuleApprvrGroup` | | ✓ | | |
 
 ## Source Code
 

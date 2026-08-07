@@ -32,34 +32,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `MasterFixedAsset` | `anln1` |
-| key `FixedAsset` | `anln2` |
-| key `ValidityStartDate` | `valid_from` |
-| `ValidityEndDate` | `valid_to` |
-| `ControllingArea` | `kokrs` |
-| `ProfitCenterBeforeOrglChange` | `prctr_old` |
-| `ProfitCenter` | `prctr` |
-| `OrganizationalChange` | `orgl_change` |
-| `OrglChangeReassignmentStatus` | `reassgmt_status` |
-| `ProfitCenterDerivationSrceType` | `prctr_drvtn_source_type` |
-| `SourceCostCenter` | `srce_kostl` |
-| `SourceWBSElementInternalID` | `cast( srce_ps_psp_pnr as ps_s4_pspnr preserving type)` |
-| `SourceProjectInternalID` | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |
-| `SourceOrder` | `srce_aufnr` |
-| `OrglChangeEffectiveDate` | `_OrglChange.OrglChangeEffectiveDate` |
-| `_OrglChange` | *Association* |
-| `_OrglChgReassignmentStatus` | *Association* |
-| `_ProfitCtrDerivationSrceType` | *Association* |
-| `_MasterFixedAsset` | *Association* |
-| `_FixedAsset` | *Association* |
-| `_FixedAssetAssignment` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_ProfitCtr` | *Association* |
-| `_ProfitCenterBeforeOrglChange` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `MasterFixedAsset` | ✓ | |  | `anln1` |
+| `FixedAsset` | ✓ | |  | `anln2` |
+| `ValidityStartDate` | ✓ | |  | `valid_from` |
+| `ValidityEndDate` |  | |  | `valid_to` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `OrganizationalChange` |  | |  | `orgl_change` |
+| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |
+| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |
+| `SourceCostCenter` |  | |  | `srce_kostl` |
+| `SourceWBSElementInternalID` |  | |  | `cast( srce_ps_psp_pnr as ps_s4_pspnr preserving type)` |
+| `SourceProjectInternalID` |  | |  | `cast (srce_ps_prj_pnr as ps_s4_proj_pspnr preserving type)` |
+| `SourceOrder` |  | |  | `srce_aufnr` |
+| `OrglChangeEffectiveDate` |  | | `_OrglChange` | `OrglChangeEffectiveDate` |
+| `_OrglChange` | | ✓ | | |
+| `_OrglChgReassignmentStatus` | | ✓ | | |
+| `_ProfitCtrDerivationSrceType` | | ✓ | | |
+| `_MasterFixedAsset` | | ✓ | | |
+| `_FixedAsset` | | ✓ | | |
+| `_FixedAssetAssignment` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_ProfitCtr` | | ✓ | | |
+| `_ProfitCenterBeforeOrglChange` | | ✓ | | |
 
 ## Associations
 

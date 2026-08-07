@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `I_InspectionLot.InspectionLot` |
-| key `StatusCode` | `I_StatusObjectActiveStatus.StatusCode` |
-| `StatusObject` | `I_StatusObjectActiveStatus.StatusObject` |
-| `_InspectionLot` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `StatusCode` | ✓ | |  |  |
+| `StatusObject` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
 
 ## Associations
 

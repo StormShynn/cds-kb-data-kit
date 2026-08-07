@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConditionValidityStartDate` | `datab` |
-| `ConditionValidityEndDate` | `datbi` |
-| `DeltdConditionRecordIsExcluded` | `loevm_ko` |
-| `D_ConditionRecordCriteriaItemP` | `_ConditionRecordCriteriaItem : composition [0..*] of D_ConditionRecordCriteriaItemP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionValidityStartDate` |  | |  | `datab` |
+| `ConditionValidityEndDate` |  | |  | `datbi` |
+| `DeltdConditionRecordIsExcluded` |  | |  | `loevm_ko` |
+| `D_ConditionRecordCriteriaItemP` |  | |  | `_ConditionRecordCriteriaItem : composition [0..*] of D_ConditionRecordCriteriaItemP` |
 
 ## Source Code
 

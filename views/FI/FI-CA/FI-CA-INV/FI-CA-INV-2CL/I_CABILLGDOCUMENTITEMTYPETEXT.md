@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgDocumentItemType` | `_CABillgDocumentItemTypeText.CAInvcgDocumentItemType` |
-| key `Language` | `_CABillgDocumentItemTypeText.Language` |
-| `CABillgDocumentItemTypeText` | `_CABillgDocumentItemTypeText.CAInvcgDocItemTypeText` |
-| `_CABillgDocumentItemType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgDocumentItemType` | ✓ | | `_CABillgDocumentItemTypeText` | `CAInvcgDocumentItemType` |
+| `Language` | ✓ | | `_CABillgDocumentItemTypeText` | `Language` |
+| `CABillgDocumentItemTypeText` |  | | `_CABillgDocumentItemTypeText` | `CAInvcgDocItemTypeText` |
+| `_CABillgDocumentItemType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

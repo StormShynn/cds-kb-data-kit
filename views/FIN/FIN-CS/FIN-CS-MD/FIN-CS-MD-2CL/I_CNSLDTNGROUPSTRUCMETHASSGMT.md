@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationGroup` | `_Source.ConsolidationGroup` |
-| key `ConsolidationUnit` | `_Source.ConsolidationUnit` |
-| key `ConsolidationVersion` | `_Source.ConsolidationVersion` |
-| key `GroupStrucFromFiscalYearPeriod` | `_Source.GroupStrucFromFiscalYearPeriod` |
-| key `MethAssgmtFromFiscalYearPeriod` | `_Source.MethAssgmtFromFiscalYearPeriod` |
-| `MethAssgmtToFiscalYearPeriod` | `_Source.MethAssgmtToFiscalYearPeriod` |
-| `ConsolidationInvestmentMethod` | `_Source.ConsolidationInvestmentMethod` |
-| `AccountingTechnique` | `_Source.AccountingTechnique` |
-| `MethChangeIsAtBeginOfPeriod` | `_Source.MethChangeIsAtBeginOfPeriod` |
-| `_CnsldtnVersion` | *Association* |
-| `_CnsldtnGroup` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnInvestmentMethod` | *Association* |
-| `_CnsldtnGroupStructure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |
+| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |
+| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |
+| `GroupStrucFromFiscalYearPeriod` | ✓ | | `_Source` | `GroupStrucFromFiscalYearPeriod` |
+| `MethAssgmtFromFiscalYearPeriod` | ✓ | | `_Source` | `MethAssgmtFromFiscalYearPeriod` |
+| `MethAssgmtToFiscalYearPeriod` |  | | `_Source` | `MethAssgmtToFiscalYearPeriod` |
+| `ConsolidationInvestmentMethod` |  | | `_Source` | `ConsolidationInvestmentMethod` |
+| `AccountingTechnique` |  | | `_Source` | `AccountingTechnique` |
+| `MethChangeIsAtBeginOfPeriod` |  | | `_Source` | `MethChangeIsAtBeginOfPeriod` |
+| `_CnsldtnVersion` | | ✓ | | |
+| `_CnsldtnGroup` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnInvestmentMethod` | | ✓ | | |
+| `_CnsldtnGroupStructure` | | ✓ | | |
 
 ## Source Code
 

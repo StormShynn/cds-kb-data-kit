@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdCmplncLabelFieldVersionID` | `ProdCmplncLabelFieldVersionID` |
-| `ProdCmplncLabelFieldID` | `ProdCmplncLabelFieldID` |
-| `ProdCmplncLblFldVersionStatus` | `ProdCmplncLblFldVersionStatus` |
-| `ProdCmplncLabelFieldGroupID` | `ProdCmplncLabelFieldGroupID` |
-| `ProdCmplncLblFldTechnicalName` | `ProdCmplncLblFldTechnicalName` |
-| `ProdCmplncLblFldDataDefinition` | `ProdCmplncLblFldDataDefinition` |
-| `ProdCmplncLblFieldCardinality` | `ProdCmplncLblFieldCardinality` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `_LabelFieldGroup` | *Association* |
-| `_Texts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLabelFieldVersionID` | ✓ | |  |  |
+| `ProdCmplncLabelFieldID` |  | |  |  |
+| `ProdCmplncLblFldVersionStatus` |  | |  |  |
+| `ProdCmplncLabelFieldGroupID` |  | |  |  |
+| `ProdCmplncLblFldTechnicalName` |  | |  |  |
+| `ProdCmplncLblFldDataDefinition` |  | |  |  |
+| `ProdCmplncLblFieldCardinality` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `_LabelFieldGroup` | | ✓ | | |
+| `_Texts` | | ✓ | | |
 
 ## Source Code
 

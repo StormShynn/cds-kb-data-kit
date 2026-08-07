@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REGenericRentalObjectUUID` | `REGenericRentalObjectUUID` |
-| `REGenericRentalObjectType` | `REGenericRentalObjectType` |
-| `InternalRealEstateNumber` | `InternalRealEstateNumber` |
-| `REStatusObject` | `REStatusObject` |
-| `REGenericRentalObjectOID` | `REGenericRentalObjectOID` |
-| `REGenericRentalObjectNumber` | `REGenericRentalObjectNumber` |
-| `REGnrcRntlObjectAlternativeID` | `REGnrcRntlObjectAlternativeID` |
-| `REGenericRentalObjectName` | `REGenericRentalObjectName` |
-| `REIdentificationKey` | `REIdentificationKey` |
-| `CompanyCode` | `CompanyCode` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `REAuthorizationGroup` | `REAuthorizationGroup` |
-| `REGnrcRentalObjUsageCategory` | `REGnrcRentalObjUsageCategory` |
-| `REGenericRentalObjectUsageType` | `REGenericRentalObjectUsageType` |
-| `REGenericRentalObjParentUUID` | `REGenericRentalObjParentUUID` |
-| `REGnrcRentalObjPortfolioID` | `REGnrcRentalObjPortfolioID` |
-| `REGnrcRentalObjOwnershipID` | `REGnrcRentalObjOwnershipID` |
-| `RERentableObjectCategory` | `RERentableObjectCategory` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REGenericRentalObjectUUID` | ✓ | |  |  |
+| `REGenericRentalObjectType` |  | |  |  |
+| `InternalRealEstateNumber` |  | |  |  |
+| `REStatusObject` |  | |  |  |
+| `REGenericRentalObjectOID` |  | |  |  |
+| `REGenericRentalObjectNumber` |  | |  |  |
+| `REGnrcRntlObjectAlternativeID` |  | |  |  |
+| `REGenericRentalObjectName` |  | |  |  |
+| `REIdentificationKey` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `REAuthorizationGroup` |  | |  |  |
+| `REGnrcRentalObjUsageCategory` |  | |  |  |
+| `REGenericRentalObjectUsageType` |  | |  |  |
+| `REGenericRentalObjParentUUID` |  | |  |  |
+| `REGnrcRentalObjPortfolioID` |  | |  |  |
+| `REGnrcRentalObjOwnershipID` |  | |  |  |
+| `RERentableObjectCategory` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
 
 ## Source Code
 

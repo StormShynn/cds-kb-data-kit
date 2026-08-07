@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `SlsSchedgAgrmtItemPrcgElmnt.SalesSchedulingAgreement` |
-| key `SalesSchedulingAgreementItem` | `SlsSchedgAgrmtItemPrcgElmnt.SalesSchedulingAgreementItem` |
-| key `PricingProcedureStep` | `SlsSchedgAgrmtItemPrcgElmnt.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `SlsSchedgAgrmtItemPrcgElmnt.PricingProcedureCounter` |
-| `ConditionApplication` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionApplication` |
-| `ConditionType` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionType` |
-| `ConditionCalculationType` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionCalculationType` |
-| `ConditionRateAmount` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionRateAmount` |
-| `ConditionCurrency` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionCurrency` |
-| `ConditionRateRatio` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionBaseAmount` |
-| `ConditionAmount` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionAmount` |
-| `TransactionCurrency` | `SlsSchedgAgrmtItemPrcgElmnt.TransactionCurrency` |
-| `ConditionBaseQuantity` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionBaseQuantity` |
-| `ConditionQuantity` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionQuantity` |
-| `ConditionQuantityUnit` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `SlsSchedgAgrmtItemPrcgElmnt.ConditionInactiveReason` |
-| `SalesSchedgAgrmtType` | `SlsSchedgAgrmtItemPrcgElmnt.SalesSchedgAgrmtType` |
-| `OrganizationDivision` | `SlsSchedgAgrmtItemPrcgElmnt.OrganizationDivision` |
-| `SalesOrganization` | `SlsSchedgAgrmtItemPrcgElmnt.SalesOrganization` |
-| `DistributionChannel` | `SlsSchedgAgrmtItemPrcgElmnt.DistributionChannel` |
-| `_Item` | *Association* |
-| `_SalesSchedulingAgreement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  |  |
+| `SalesSchedulingAgreementItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `SalesSchedgAgrmtType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesSchedulingAgreement` | | ✓ | | |
 
 ## Source Code
 

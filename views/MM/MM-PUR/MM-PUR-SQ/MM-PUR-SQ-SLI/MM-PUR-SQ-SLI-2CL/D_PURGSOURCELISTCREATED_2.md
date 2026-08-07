@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `dzeord` | `key SourceListRecord : dzeord` |
-| `SourceListCreationDate` | `erdat` |
-| `SourceListCreatedByUser` | `ernam` |
-| `ValidityStartDate` | `bdatu` |
-| `ValidityEndDate` | `bdatu` |
-| `Supplier` | `lifnr` |
-| `PurchasingOrganization` | `ekorg` |
-| `PurchaseOrderUnit` | `meins` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `dzeord` |  | |  | `key SourceListRecord : dzeord` |
+| `SourceListCreationDate` |  | |  | `erdat` |
+| `SourceListCreatedByUser` |  | |  | `ernam` |
+| `ValidityStartDate` |  | |  | `bdatu` |
+| `ValidityEndDate` |  | |  | `bdatu` |
+| `Supplier` |  | |  | `lifnr` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `PurchaseOrderUnit` |  | |  | `meins` |
 
 ## Source Code
 

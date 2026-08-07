@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityInternalID` | `CapacityInternalID` |
-| key `Language` | `Language` |
-| `CapacityText` | `CapacityText` |
-| `CapacityLastChangeDateTime` | `CapacityLastChangeDateTime` |
-| `_Header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `CapacityText` |  | |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |
+| `_Header` | | ✓ | | |
 
 ## Source Code
 

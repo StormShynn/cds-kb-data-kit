@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DSD_TourNumber` | `_Documents.tour_id` |
-| key `DSD_RouteAccountingVisitNumber` | `_Documents.visit_id` |
-| key `DSD_CancellationDocumentType` | `_Documents.doc_type` |
-| key `DSD_ExtDeliveryOrOrderNumber` | `_Documents.hh_ref_no` |
-| key `DSD_ExtDocSequentialNumber` | `_Documents.counter` |
-| `SDDocument` | `_Documents.be_vbeln` |
-| `Plant` | `_Header.plant` |
-| `_CancellationDocumentType` | *Association* |
-| `_SalesDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DSD_TourNumber` | ✓ | | `_Documents` | `tour_id` |
+| `DSD_RouteAccountingVisitNumber` | ✓ | | `_Documents` | `visit_id` |
+| `DSD_CancellationDocumentType` | ✓ | | `_Documents` | `doc_type` |
+| `DSD_ExtDeliveryOrOrderNumber` | ✓ | | `_Documents` | `hh_ref_no` |
+| `DSD_ExtDocSequentialNumber` | ✓ | | `_Documents` | `counter` |
+| `SDDocument` |  | | `_Documents` | `be_vbeln` |
+| `Plant` |  | | `_Header` | `plant` |
+| `_CancellationDocumentType` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
 
 ## Associations
 

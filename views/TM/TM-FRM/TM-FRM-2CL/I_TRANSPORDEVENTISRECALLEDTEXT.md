@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdEventIsRecalled` | `cast(substring(domvalue_l, 1, 1) as /scmtms/event_revoked preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrdEventIsRecalledDesc` | `ddtext` |
-| `_Language` | *Association* |
-| `_TranspOrdEventIsRecalled` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdEventIsRecalled` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/event_revoked preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrdEventIsRecalledDesc` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdEventIsRecalled` | | ✓ | | |
 
 ## Associations
 

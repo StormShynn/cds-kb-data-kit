@@ -31,64 +31,64 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjBillgElmntEntrItmFlowUUID` | `ProjectBillingElementEntryFlow.projbillgelmntentritmflowuuid` |
-| `ProjBillgElmntEntrItmUUID` | `ProjectBillingElementEntryFlow.projbillgelmntentritmuuid` |
-| `BillingDocument` | `ProjectBillingElementEntryFlow.billingdocument` |
-| `BillingDocumentItem` | `ProjectBillingElementEntryFlow.billingdocumentitem` |
-| `BillingDocumentType` | `ProjectBillingElementEntryFlow.billingdocumenttype` |
-| `SDDocumentCategory` | `ProjectBillingElementEntryFlow.sddocumentcategory` |
-| `ProjectBillingRequest` | `ProjectBillingElementEntryFlow.precedingdocument` |
-| `BillingDocRequestItemReference` | `ProjectBillingElementEntryFlow.precedingdocumentitem` |
-| `BillingDate` | `ProjectBillingElementEntryFlow.billingdate` |
-| `DocumentBillingStatus` | `ProjectBillingElementEntryFlow.documentbillingstatus` |
-| `EnterpriseProjectServiceOrg` | `ProjectBillingElementEntryFlow.enterpriseprojectserviceorg` |
-| `ProjBillgElmntEntrSrvcExpnCode` | `ProjectBillingElementEntryFlow.serviceexpensecode` |
-| `TransactionCurrency` | `ProjectBillingElementEntryFlow.transactioncurrency` |
-| `ProjectCurrency` | `ProjectBillingElementEntryFlow.projectcurrency` |
-| `GlobalCurrency` | `ProjectBillingElementEntryFlow.globalcurrency` |
-| `DocumentCurrency` | `ProjectBillingElementEntryFlow.documentcurrency` |
-| `NetPriceAmountInDocCrcy` | `ProjectBillingElementEntryFlow.netpriceamountindoccrcy` |
-| `NetPriceQuantity` | `ProjectBillingElementEntryFlow.netpricequantity` |
-| `NetPriceQuantityUnit` | `ProjectBillingElementEntryFlow.netpricequantityunit` |
-| `QuantityUnit` | `ProjectBillingElementEntryFlow.quantityunit` |
-| `BillingRequestedQuantity` | `ProjectBillingElementEntryFlow.billingrequestedquantity` |
-| `BillgReqdAmtInTransacCrcy` | `ProjectBillingElementEntryFlow.billgreqdamtintransaccrcy` |
-| `BillgReqdAmtInProjectCrcy` | `ProjectBillingElementEntryFlow.billgreqdamtinprojectcrcy` |
-| `BillgReqdAmtInGlobalCrcy` | `ProjectBillingElementEntryFlow.billgreqdamtinglobalcrcy` |
-| `WrittenOffQuantity` | `ProjectBillingElementEntryFlow.writtenoffquantity` |
-| `WrittenOffAmtInTransacCrcy` | `ProjectBillingElementEntryFlow.writtenoffamtintransaccrcy` |
-| `WrittenOffAmtInProjectCrcy` | `ProjectBillingElementEntryFlow.writtenoffamtinprojectcrcy` |
-| `WrittenOffAmtInGlobalCrcy` | `ProjectBillingElementEntryFlow.writtenoffamtinglobalcrcy` |
-| `PostponedQuantity` | `ProjectBillingElementEntryFlow.postponedquantity` |
-| `PostponedAmountInTransacCrcy` | `ProjectBillingElementEntryFlow.postponedamountintransaccrcy` |
-| `PostponedAmountInProjectCrcy` | `ProjectBillingElementEntryFlow.postponedamountinprojectcrcy` |
-| `PostponedAmountInGlobalCrcy` | `ProjectBillingElementEntryFlow.postponedamountinglobalcrcy` |
-| `BillgReqdRevenueAmtInDocCrcy` | `ProjectBillingElementEntryFlow.billgreqdrevenueamtindoccrcy` |
-| `WrittenOffRevenueAmtInDocCrcy` | `ProjectBillingElementEntryFlow.writtenoffrevenueamtindoccrcy` |
-| `PrjBlgElmEntrFlwCreatedByUser` | `ProjectBillingElementEntryFlow.prjblgelmentrflwcreatedbyuser` |
-| `PrjBlgElmEntrFlwCrtedAtDteTme` | `ProjectBillingElementEntryFlow.prjblgelmentrflwcrtedatdtetme` |
-| `PrjBlgElmEntrFlwChangedByUser` | `ProjectBillingElementEntryFlow.prjblgelmentrflwchangedbyuser` |
-| `PrjBlgElmEntrFlwChgdAtDteTme` | `ProjectBillingElementEntryFlow.prjblgelmentrflwchgdatdtetme` |
-| `ProjBillingRequestItemLongText` | `ProjectBillingElementEntryFlow.projbillingrequestitemlongtext` |
-| `WrittenOffReversalDate` | `ProjectBillingElementEntryFlow.writtenoffreversaldate` |
-| `_ProjectBillingElementEntry` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_TransactionCurrencyText` | *Association* |
-| `_ProjectCurrency` | *Association* |
-| `_ProjectCurrencyText` | *Association* |
-| `_GlobalCurrency` | *Association* |
-| `_GlobalCurrencyText` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_DocumentCurrencyText` | *Association* |
-| `_QuantityUnit` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_SDDocumentCategoryText` | *Association* |
-| `_BillingDocumentType` | *Association* |
-| `_BillingDocumentTypeText` | *Association* |
-| `_PrjBlgElmEntrDocBillgStatus` | *Association* |
-| `_PrjBlgElmEntrDocBillgStsTxt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjBillgElmntEntrItmFlowUUID` | ✓ | |  | `projbillgelmntentritmflowuuid` |
+| `ProjBillgElmntEntrItmUUID` |  | |  | `projbillgelmntentritmuuid` |
+| `BillingDocument` |  | |  | `billingdocument` |
+| `BillingDocumentItem` |  | |  | `billingdocumentitem` |
+| `BillingDocumentType` |  | |  | `billingdocumenttype` |
+| `SDDocumentCategory` |  | |  | `sddocumentcategory` |
+| `ProjectBillingRequest` |  | |  | `precedingdocument` |
+| `BillingDocRequestItemReference` |  | |  | `precedingdocumentitem` |
+| `BillingDate` |  | |  | `billingdate` |
+| `DocumentBillingStatus` |  | |  | `documentbillingstatus` |
+| `EnterpriseProjectServiceOrg` |  | |  | `enterpriseprojectserviceorg` |
+| `ProjBillgElmntEntrSrvcExpnCode` |  | |  | `serviceexpensecode` |
+| `TransactionCurrency` |  | |  | `transactioncurrency` |
+| `ProjectCurrency` |  | |  | `projectcurrency` |
+| `GlobalCurrency` |  | |  | `globalcurrency` |
+| `DocumentCurrency` |  | |  | `documentcurrency` |
+| `NetPriceAmountInDocCrcy` |  | |  | `netpriceamountindoccrcy` |
+| `NetPriceQuantity` |  | |  | `netpricequantity` |
+| `NetPriceQuantityUnit` |  | |  | `netpricequantityunit` |
+| `QuantityUnit` |  | |  | `quantityunit` |
+| `BillingRequestedQuantity` |  | |  | `billingrequestedquantity` |
+| `BillgReqdAmtInTransacCrcy` |  | |  | `billgreqdamtintransaccrcy` |
+| `BillgReqdAmtInProjectCrcy` |  | |  | `billgreqdamtinprojectcrcy` |
+| `BillgReqdAmtInGlobalCrcy` |  | |  | `billgreqdamtinglobalcrcy` |
+| `WrittenOffQuantity` |  | |  | `writtenoffquantity` |
+| `WrittenOffAmtInTransacCrcy` |  | |  | `writtenoffamtintransaccrcy` |
+| `WrittenOffAmtInProjectCrcy` |  | |  | `writtenoffamtinprojectcrcy` |
+| `WrittenOffAmtInGlobalCrcy` |  | |  | `writtenoffamtinglobalcrcy` |
+| `PostponedQuantity` |  | |  | `postponedquantity` |
+| `PostponedAmountInTransacCrcy` |  | |  | `postponedamountintransaccrcy` |
+| `PostponedAmountInProjectCrcy` |  | |  | `postponedamountinprojectcrcy` |
+| `PostponedAmountInGlobalCrcy` |  | |  | `postponedamountinglobalcrcy` |
+| `BillgReqdRevenueAmtInDocCrcy` |  | |  | `billgreqdrevenueamtindoccrcy` |
+| `WrittenOffRevenueAmtInDocCrcy` |  | |  | `writtenoffrevenueamtindoccrcy` |
+| `PrjBlgElmEntrFlwCreatedByUser` |  | |  | `prjblgelmentrflwcreatedbyuser` |
+| `PrjBlgElmEntrFlwCrtedAtDteTme` |  | |  | `prjblgelmentrflwcrtedatdtetme` |
+| `PrjBlgElmEntrFlwChangedByUser` |  | |  | `prjblgelmentrflwchangedbyuser` |
+| `PrjBlgElmEntrFlwChgdAtDteTme` |  | |  | `prjblgelmentrflwchgdatdtetme` |
+| `ProjBillingRequestItemLongText` |  | |  | `projbillingrequestitemlongtext` |
+| `WrittenOffReversalDate` |  | |  | `writtenoffreversaldate` |
+| `_ProjectBillingElementEntry` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_TransactionCurrencyText` | | ✓ | | |
+| `_ProjectCurrency` | | ✓ | | |
+| `_ProjectCurrencyText` | | ✓ | | |
+| `_GlobalCurrency` | | ✓ | | |
+| `_GlobalCurrencyText` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_DocumentCurrencyText` | | ✓ | | |
+| `_QuantityUnit` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_SDDocumentCategoryText` | | ✓ | | |
+| `_BillingDocumentType` | | ✓ | | |
+| `_BillingDocumentTypeText` | | ✓ | | |
+| `_PrjBlgElmEntrDocBillgStatus` | | ✓ | | |
+| `_PrjBlgElmEntrDocBillgStsTxt` | | ✓ | | |
 
 ## Associations
 

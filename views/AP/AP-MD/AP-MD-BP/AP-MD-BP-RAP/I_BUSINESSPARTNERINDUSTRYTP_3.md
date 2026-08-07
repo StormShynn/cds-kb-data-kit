@@ -32,28 +32,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `IndustrySystemType` | `IndustrySystemType` |
-| key `IndustrySector` | `IndustrySector` |
-| `IsStandardIndustry` | `IsStandardIndustry` |
-| `IndustrySystemTypeForEdit` | `IndustrySystemTypeForEdit` |
-| `IndSecTypeForEditValue` | `IndSecTypeForEditValue` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_BusinessPartner` | *Association* |
-| `_BusPartIndustryKey` | *Association* |
-| `_BusPartIndustrySystem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `IndustrySystemType` | ✓ | |  |  |
+| `IndustrySector` | ✓ | |  |  |
+| `IsStandardIndustry` |  | |  |  |
+| `IndustrySystemTypeForEdit` |  | |  |  |
+| `IndSecTypeForEditValue` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusPartIndustryKey` | | ✓ | | |
+| `_BusPartIndustrySystem` | | ✓ | | |
 
 ## Source Code
 

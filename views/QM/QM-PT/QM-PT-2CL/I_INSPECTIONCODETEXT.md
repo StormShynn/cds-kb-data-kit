@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionCatalog` | `katalogart` |
-| `InspectionCodeGroup` | `}] key codegruppe` |
-| `InspectionCode` | `}] key code` |
-| key `Language` | `sprache` |
-| `InspectionCodeText` | `cast( kurztext as vdm_qtxt_code preserving type )` |
-| `_InspectionCatalog` | *Association* |
-| `_InspectionCodeGroup` | *Association* |
-| `_InspectionCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionCatalog` | ✓ | |  | `katalogart` |
+| `InspectionCodeGroup` |  | |  | `}] key codegruppe` |
+| `InspectionCode` |  | |  | `}] key code` |
+| `Language` | ✓ | |  | `sprache` |
+| `InspectionCodeText` |  | |  | `cast( kurztext as vdm_qtxt_code preserving type )` |
+| `_InspectionCatalog` | | ✓ | | |
+| `_InspectionCodeGroup` | | ✓ | | |
+| `_InspectionCode` | | ✓ | | |
 
 ## Associations
 

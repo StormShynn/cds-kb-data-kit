@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `qdfbt.sprache` |
-| key `SampleDeterminationRule` | `qdfbt.fbkey` |
-| `SampleDeterminationRuleTxt` | `cast( qdfbt.kurztext as vdm_qfbkey_text preserving type )` |
-| `_SampleDeterminationRule` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |
+| `SampleDeterminationRule` | ✓ | |  | `fbkey` |
+| `SampleDeterminationRuleTxt` |  | |  | `cast( qdfbt.kurztext as vdm_qfbkey_text preserving type )` |
+| `_SampleDeterminationRule` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

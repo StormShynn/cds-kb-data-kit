@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurgCatIsInactive` | `cast ( substring( domvalue_l, 1, 1 ) as /srmsmc/inactive_status preserving type)` |
-| `_InactiveStatusText` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurgCatIsInactive` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as /srmsmc/inactive_status preserving type)` |
+| `_InactiveStatusText` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

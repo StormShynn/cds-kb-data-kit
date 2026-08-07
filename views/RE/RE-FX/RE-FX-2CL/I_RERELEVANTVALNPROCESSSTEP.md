@@ -27,37 +27,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternalRealEstateNumber` | `_ValuationProcessStep.intreno` |
-| key `REValuationRuleUUID` | `_ValuationProcessStep.ruleguid` |
-| key `REValuationProcessUUID` | `_ValuationProcessStep.processguid` |
-| `RETermNumber` | `_ValuationProcessStep.termno` |
-| `REValuationProcessReason` | `_ValuationProcessStep.processreason` |
-| `REValuationBehavior` | `_ValuationProcessStep.processbehavior` |
-| `REConsiderationStartDate` | `cast(_ValuationProcessStep.cefrom as recevdmconsbeg preserving type )` |
-| `REInfoText` | `_ValuationProcessStep.processnote` |
-| `REContractValueAmount` | `_ValuationProcessStep.cnvalue` |
-| `RENetPresentValueAmount` | `_ValuationProcessStep.npv` |
-| `RERemainingCapitalAmount` | `_ValuationProcessStep.remainingcapital` |
-| `Currency` | `_ValuationProcessStep.curr` |
-| `CreatedByUser` | `_ValuationProcessStep.rerf` |
-| `CreationDate` | `_ValuationProcessStep.derf` |
-| `CreationTime` | `_ValuationProcessStep.terf` |
-| `RESourceOfCreation` | `_ValuationProcessStep.reher` |
-| `LastChangedByUser` | `_ValuationProcessStep.rbear` |
-| `LastChangeDate` | `_ValuationProcessStep.dbear` |
-| `LastChangeTime` | `_ValuationProcessStep.tbear` |
-| `RESourceOfChange` | `_ValuationProcessStep.rbher` |
-| `REValuationProcessIsInitial` | `_ValuationProcessStep.isinitialprocess` |
-| `RELinearizationStartDate` | `cast(_ValuationProcessStep.slbegin as recevdmslbegin preserving type )` |
-| `REProbableEndDate` | `cast( _ValuationProcessStep.probableend as recevdmprobableend preserving type )` |
-| `REAbsoluteEndDate` | `cast( _ValuationProcessStep.absoluteend as recevdmabsoluteend preserving type )` |
-| `REValuationEngine` | `_ValuationProcessStep.valuationengine` |
-| `_ValuationBehavior` | *Association* |
-| `_REValuation` | *Association* |
-| `_REContract` | *Association* |
-| `_ValuationProcessReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | | `_ValuationProcessStep` | `intreno` |
+| `REValuationRuleUUID` | ✓ | | `_ValuationProcessStep` | `ruleguid` |
+| `REValuationProcessUUID` | ✓ | | `_ValuationProcessStep` | `processguid` |
+| `RETermNumber` |  | | `_ValuationProcessStep` | `termno` |
+| `REValuationProcessReason` |  | | `_ValuationProcessStep` | `processreason` |
+| `REValuationBehavior` |  | | `_ValuationProcessStep` | `processbehavior` |
+| `REConsiderationStartDate` |  | |  | `cast(_ValuationProcessStep.cefrom as recevdmconsbeg preserving type )` |
+| `REInfoText` |  | | `_ValuationProcessStep` | `processnote` |
+| `REContractValueAmount` |  | | `_ValuationProcessStep` | `cnvalue` |
+| `RENetPresentValueAmount` |  | | `_ValuationProcessStep` | `npv` |
+| `RERemainingCapitalAmount` |  | | `_ValuationProcessStep` | `remainingcapital` |
+| `Currency` |  | | `_ValuationProcessStep` | `curr` |
+| `CreatedByUser` |  | | `_ValuationProcessStep` | `rerf` |
+| `CreationDate` |  | | `_ValuationProcessStep` | `derf` |
+| `CreationTime` |  | | `_ValuationProcessStep` | `terf` |
+| `RESourceOfCreation` |  | | `_ValuationProcessStep` | `reher` |
+| `LastChangedByUser` |  | | `_ValuationProcessStep` | `rbear` |
+| `LastChangeDate` |  | | `_ValuationProcessStep` | `dbear` |
+| `LastChangeTime` |  | | `_ValuationProcessStep` | `tbear` |
+| `RESourceOfChange` |  | | `_ValuationProcessStep` | `rbher` |
+| `REValuationProcessIsInitial` |  | | `_ValuationProcessStep` | `isinitialprocess` |
+| `RELinearizationStartDate` |  | |  | `cast(_ValuationProcessStep.slbegin as recevdmslbegin preserving type )` |
+| `REProbableEndDate` |  | |  | `cast( _ValuationProcessStep.probableend as recevdmprobableend preserving type )` |
+| `REAbsoluteEndDate` |  | |  | `cast( _ValuationProcessStep.absoluteend as recevdmabsoluteend preserving type )` |
+| `REValuationEngine` |  | | `_ValuationProcessStep` | `valuationengine` |
+| `_ValuationBehavior` | | ✓ | | |
+| `_REValuation` | | ✓ | | |
+| `_REContract` | | ✓ | | |
+| `_ValuationProcessReason` | | ✓ | | |
 
 ## Associations
 

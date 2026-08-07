@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPProfile` | `dispr` |
-| key `Language` | `t401t.spras` |
-| `MRPProfileName` | `t401t.ktext` |
-| `_MRPProfile` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPProfile` | ✓ | |  | `dispr` |
+| `Language` | ✓ | |  | `spras` |
+| `MRPProfileName` |  | |  | `ktext` |
+| `_MRPProfile` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

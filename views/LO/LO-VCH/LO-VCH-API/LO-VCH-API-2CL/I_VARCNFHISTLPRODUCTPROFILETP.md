@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `VarConfigurationProfileName` | `VarConfigurationProfileName` |
-| key `ChangeNumber` | `ChangeNumber` |
-| `ClassType` | `ClassType` |
-| `VarConfigurationProfileStatus` | `VarConfigurationProfileStatus` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `IsDeleted` | `IsDeleted` |
-| `BOMExplosionApplication` | `BOMExplosionApplication` |
-| `BOMExplosionLevel` | `BOMExplosionLevel` |
-| `VarConfigurationProfileProcess` | `VarConfigurationProfileProcess` |
-| `VarCnfPrflOrderBOMFixatingMode` | `VarCnfPrflOrderBOMFixatingMode` |
-| `VarCnfProfilePriorityValue` | `VarCnfProfilePriorityValue` |
-| `ObjDpnAssignmentNumber` | `ObjDpnAssignmentNumber` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_Product` | *Association* |
-| `_Profile` | *Association* |
-| `_CharacteristicGroupAssignment` | *Association* |
-| `_ProcedureAssignment` | *Association* |
-| `_ConstraintNetAssignment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `VarConfigurationProfileName` | ✓ | |  |  |
+| `ChangeNumber` | ✓ | |  |  |
+| `ClassType` |  | |  |  |
+| `VarConfigurationProfileStatus` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `BOMExplosionApplication` |  | |  |  |
+| `BOMExplosionLevel` |  | |  |  |
+| `VarConfigurationProfileProcess` |  | |  |  |
+| `VarCnfPrflOrderBOMFixatingMode` |  | |  |  |
+| `VarCnfProfilePriorityValue` |  | |  |  |
+| `ObjDpnAssignmentNumber` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_Profile` | | ✓ | | |
+| `_CharacteristicGroupAssignment` | | ✓ | | |
+| `_ProcedureAssignment` | | ✓ | | |
+| `_ConstraintNetAssignment` | | ✓ | | |
 
 ## Source Code
 

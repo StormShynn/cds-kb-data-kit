@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CABllbleItmSourceTransType` | `srctatype_kk` |
-| `CABllbleItmSourceTransId` | `srctaid_kk` |
-| `_Parent` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABllbleItmSourceTransType` |  | |  | `srctatype_kk` |
+| `CABllbleItmSourceTransId` |  | |  | `srctaid_kk` |
+| `_Parent` | | ✓ | | |
 
 ## Source Code
 

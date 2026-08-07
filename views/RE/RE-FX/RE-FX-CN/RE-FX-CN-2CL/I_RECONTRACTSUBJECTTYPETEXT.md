@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REContractSubjectType` | `cnsubjecttype` |
-| key `Language` | `tivbdcnsubtypet.spras` |
-| `REContractSubjectTypeName` | `xcnsubjecttype` |
-| `_REContractSubjectType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REContractSubjectType` | ✓ | |  | `cnsubjecttype` |
+| `Language` | ✓ | |  | `spras` |
+| `REContractSubjectTypeName` |  | |  | `xcnsubjecttype` |
+| `_REContractSubjectType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

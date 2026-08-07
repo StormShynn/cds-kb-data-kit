@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionUsage` | `t681f.kvewe` |
-| key `ConditionApplication` | `t681f.kappl` |
-| key `PricingConditionField` | `t681f.kfdna` |
-| `PrcgConditionGlobalFieldName` | `dd03nd.fieldname_raw` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `PricingConditionField` | ✓ | |  | `kfdna` |
+| `PrcgConditionGlobalFieldName` |  | |  | `fieldname_raw` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

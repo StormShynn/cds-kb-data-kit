@@ -29,46 +29,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderID` | `OrderID` |
-| key `CompanyCode` | `CompanyCode` |
-| key `ControllingArea` | `ControllingArea` |
-| key `WorkCenterInternalID` | `WorkCenterInternalID` |
-| key `OrderOperation` | `OrderOperation` |
-| key `GLAccount` | `GLAccount` |
-| key `PartnerCostCtrActivityType` | `PartnerCostCtrActivityType` |
-| key `PartnerCostCenter` | `PartnerCostCenter` |
-| key `Plant` | `Plant` |
-| key `Product` | `Product` |
-| key `UnitOfMeasure` | `UnitOfMeasure` |
-| `Ledger` | `cast( $parameters.P_Ledger as fins_ledger preserving type )` |
-| `ProducedProduct` | `ProducedProduct` |
-| `WorkCenter` | `_WorkCenter.WorkCenter` |
-| `ChartOfAccounts` | `ChartOfAccounts` |
-| `OrderType` | `OrderType` |
-| `OrderCategory` | `OrderCategory` |
-| `DisplayCurrency` | `DisplayCurrency` |
-| `CreditActlCostInDspCrcy` | `} CreditActlCostInDspCrcy` |
-| `DebitActlCostInDspCrcy` | `} DebitActlCostInDspCrcy` |
-| `CrdtActlFxdCostInDspCrcy` | `} CrdtActlFxdCostInDspCrcy` |
-| `DebitActlFxdCostInDspCrcy` | `} DebitActlFxdCostInDspCrcy` |
-| `ActualQtyInCostSourceUnit` | `} ActualQtyInCostSourceUnit` |
-| `CrdtTargetCostInDspCrcy` | `} CrdtTargetCostInDspCrcy` |
-| `DebitTargetCostInDspCrcy` | `} DebitTargetCostInDspCrcy` |
-| `TargetQtyInCostSourceUnit` | `} TargetQtyInCostSourceUnit` |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_ProducedProduct` | *Association* |
-| `_Order` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_PartnerCostCenter` | *Association* |
-| `_PartnerCostCtrActivityType` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_GLAccountInChartOfAccounts` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderID` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `WorkCenterInternalID` | ✓ | |  |  |
+| `OrderOperation` | ✓ | |  |  |
+| `GLAccount` | ✓ | |  |  |
+| `PartnerCostCtrActivityType` | ✓ | |  |  |
+| `PartnerCostCenter` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `Product` | ✓ | |  |  |
+| `UnitOfMeasure` | ✓ | |  |  |
+| `Ledger` |  | |  | `cast( $parameters.P_Ledger as fins_ledger preserving type )` |
+| `ProducedProduct` |  | |  |  |
+| `WorkCenter` |  | | `_WorkCenter` | `WorkCenter` |
+| `ChartOfAccounts` |  | |  |  |
+| `OrderType` |  | |  |  |
+| `OrderCategory` |  | |  |  |
+| `DisplayCurrency` |  | |  |  |
+| `CreditActlCostInDspCrcy` |  | |  | `} CreditActlCostInDspCrcy` |
+| `DebitActlCostInDspCrcy` |  | |  | `} DebitActlCostInDspCrcy` |
+| `CrdtActlFxdCostInDspCrcy` |  | |  | `} CrdtActlFxdCostInDspCrcy` |
+| `DebitActlFxdCostInDspCrcy` |  | |  | `} DebitActlFxdCostInDspCrcy` |
+| `ActualQtyInCostSourceUnit` |  | |  | `} ActualQtyInCostSourceUnit` |
+| `CrdtTargetCostInDspCrcy` |  | |  | `} CrdtTargetCostInDspCrcy` |
+| `DebitTargetCostInDspCrcy` |  | |  | `} DebitTargetCostInDspCrcy` |
+| `TargetQtyInCostSourceUnit` |  | |  | `} TargetQtyInCostSourceUnit` |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProducedProduct` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_PartnerCostCenter` | | ✓ | | |
+| `_PartnerCostCtrActivityType` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

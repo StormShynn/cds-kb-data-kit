@@ -30,27 +30,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| key `MRPArea` | `MRPArea` |
-| key `PlndIndepRqmtType` | `PlndIndepRqmtType` |
-| key `PlndIndepRqmtVersion` | `PlndIndepRqmtVersion` |
-| key `RequirementPlan` | `RequirementPlan` |
-| key `RequirementSegment` | `RequirementSegment` |
-| key `PlndIndepRqmtPeriod` | `PlndIndepRqmtPeriod` |
-| key `PeriodType` | `PeriodType` |
-| `PlndIndepRqmtPeriodStartDate` | `PlndIndepRqmtPeriodStartDate` |
-| `PlndIndepRqmtInternalID` | `PlndIndepRqmtInternalID` |
-| `WorkingDayDate` | `WorkingDayDate` |
-| `PlannedQuantity` | `PlannedQuantity` |
-| `WithdrawalQuantity` | `WithdrawalQuantity` |
-| `UnitOfMeasure` | `UnitOfMeasure` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `PlndIndepRqmtLastChgdDateTime` | `PlndIndepRqmtLastChgdDateTime` |
-| `_PlndIndepRqmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `MRPArea` | ✓ | |  |  |
+| `PlndIndepRqmtType` | ✓ | |  |  |
+| `PlndIndepRqmtVersion` | ✓ | |  |  |
+| `RequirementPlan` | ✓ | |  |  |
+| `RequirementSegment` | ✓ | |  |  |
+| `PlndIndepRqmtPeriod` | ✓ | |  |  |
+| `PeriodType` | ✓ | |  |  |
+| `PlndIndepRqmtPeriodStartDate` |  | |  |  |
+| `PlndIndepRqmtInternalID` |  | |  |  |
+| `WorkingDayDate` |  | |  |  |
+| `PlannedQuantity` |  | |  |  |
+| `WithdrawalQuantity` |  | |  |  |
+| `UnitOfMeasure` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `PlndIndepRqmtLastChgdDateTime` |  | |  |  |
+| `_PlndIndepRqmt` | | ✓ | | |
 
 ## Source Code
 

@@ -39,18 +39,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ParcelId` | `ParcelId` |
-| `ItemName` | `ItemName` |
-| `Sender` | `Sender` |
-| `Receiver` | `Receiver` |
-| `Status` | `Status` |
-| `CreatedBy` | `CreatedBy` |
-| `CreatedAt` | `CreatedAt` |
-| `LastUpdatedBy` | `LastUpdatedBy` |
-| `LastUpdatedAt` | `LastUpdatedAt` |
-| `LocalLastUpdatedAt` | `LocalLastUpdatedAt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ParcelId` | ✓ | |  |  |
+| `ItemName` |  | |  |  |
+| `Sender` |  | |  |  |
+| `Receiver` |  | |  |  |
+| `Status` |  | |  |  |
+| `CreatedBy` |  | |  |  |
+| `CreatedAt` |  | |  |  |
+| `LastUpdatedBy` |  | |  |  |
+| `LastUpdatedAt` |  | |  |  |
+| `LocalLastUpdatedAt` |  | |  |  |
 
 ## Source Code
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CASubledgerApplication` | `cast( left( dd07t.domvalue_l, 5 ) as trsla_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CASubledgerApplicationText` | `cast( ddtext as trsla_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CASubledgerApplication` | ✓ | |  | `cast( left( dd07t.domvalue_l, 5 ) as trsla_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CASubledgerApplicationText` |  | |  | `cast( ddtext as trsla_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

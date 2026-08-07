@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QtnLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as vdm_qtn_lfst_cd )` |
-| key `Language` | `ddlanguage` |
-| `QtnLifecycleStatusName` | `cast( ddtext as vdm_qtn_lfst_descr )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QtnLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as vdm_qtn_lfst_cd )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `QtnLifecycleStatusName` |  | |  | `cast( ddtext as vdm_qtn_lfst_descr )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

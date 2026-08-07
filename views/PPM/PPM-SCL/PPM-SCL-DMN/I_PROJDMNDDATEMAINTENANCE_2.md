@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectDemandDateMaintenance` | `cast( substring( domvalue_l, 1, 2 ) as tv_dmnd_date_maint preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_ProjectDemandDateMaintText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectDemandDateMaintenance` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as tv_dmnd_date_maint preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_ProjectDemandDateMaintText` | | ✓ | | |
 
 ## Source Code
 

@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessActivityCategory` | `category` |
-| `BusinessActivityClass` | `class` |
-| `_BusinessActivityCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessActivityCategory` | ✓ | |  | `category` |
+| `BusinessActivityClass` |  | |  | `class` |
+| `_BusinessActivityCategoryText` | | ✓ | | |
 
 ## Associations
 

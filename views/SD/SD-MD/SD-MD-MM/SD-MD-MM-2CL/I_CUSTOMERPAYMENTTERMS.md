@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerPaymentTerms` | `zterm` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerPaymentTerms` | ✓ | |  | `zterm` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

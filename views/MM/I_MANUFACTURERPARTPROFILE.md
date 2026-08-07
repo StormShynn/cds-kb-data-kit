@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturerPartProfile` | `mprof` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturerPartProfile` | ✓ | |  | `mprof` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

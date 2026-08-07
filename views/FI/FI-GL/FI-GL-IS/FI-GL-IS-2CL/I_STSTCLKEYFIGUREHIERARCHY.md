@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `cast( hrrp_dir_n.kokrs as fis_kokrs preserving type )` |
-| key `StatisticalKeyFigureHierarchy` | `hrrp_dir_n.hryid_42` |
-| key `ValidityEndDate` | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
-| `ValidityStartDate` | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |
-| `LastChangedByUser` | `hrrp_dir_n.upduser` |
-| `LastChangeDateTime` | `hrrp_dir_n.updtime` |
-| `HierarchyShortID` | `hrrp_dir_n.hrysid` |
-| `_ControllingAreaText` | *Association* |
-| `_Text` | *Association* |
-| `_ControllingArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( hrrp_dir_n.kokrs as fis_kokrs preserving type )` |
+| `StatisticalKeyFigureHierarchy` | ✓ | |  | `hryid_42` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |
+| `LastChangedByUser` |  | |  | `upduser` |
+| `LastChangeDateTime` |  | |  | `updtime` |
+| `HierarchyShortID` |  | |  | `hrysid` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
 
 ## Associations
 

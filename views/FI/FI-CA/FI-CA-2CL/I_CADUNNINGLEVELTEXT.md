@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningProcedure` | `mahnv` |
-| key `CADunningLevel` | `mahns` |
-| key `Language` | `spras` |
-| `CADunningLevelName` | `mtext` |
-| `_DunningProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningProcedure` | ✓ | |  | `mahnv` |
+| `CADunningLevel` | ✓ | |  | `mahns` |
+| `Language` | ✓ | |  | `spras` |
+| `CADunningLevelName` |  | |  | `mtext` |
+| `_DunningProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

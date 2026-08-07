@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingVersion` | `tvers` |
-| key `CostingType` | `kalka` |
-| key `ValuationVariant` | `bwvar` |
-| `ExchangeRateType` | `kurst` |
-| `_CostingVersionText` | *Association* |
-| `_CostingType` | *Association* |
-| `_CostingValuationVariant` | *Association* |
-| `_CostingTypeText` | *Association* |
-| `_CostingValuationVarText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingVersion` | ✓ | |  | `tvers` |
+| `CostingType` | ✓ | |  | `kalka` |
+| `ValuationVariant` | ✓ | |  | `bwvar` |
+| `ExchangeRateType` |  | |  | `kurst` |
+| `_CostingVersionText` | | ✓ | | |
+| `_CostingType` | | ✓ | | |
+| `_CostingValuationVariant` | | ✓ | | |
+| `_CostingTypeText` | | ✓ | | |
+| `_CostingValuationVarText` | | ✓ | | |
 
 ## Associations
 

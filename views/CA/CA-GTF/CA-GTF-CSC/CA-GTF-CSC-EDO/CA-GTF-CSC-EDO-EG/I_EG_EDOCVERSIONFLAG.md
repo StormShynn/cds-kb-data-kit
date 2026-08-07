@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `EG_EDocVersion` | `EG_EDocVersion` |
-| `EG_EDocVersionActive` | `EG_EDocVersionActive` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `EG_EDocVersion` | ✓ | |  |  |
+| `EG_EDocVersionActive` |  | |  |  |
 
 ## Source Code
 

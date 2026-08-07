@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `MaintOrderProcessingContext` | `cast( dd07t.domvalue_l as maintorderprocessingcontext )` |
-| `MaintOrdProcessingContextText` | `dd07t.ddtext` |
-| `_MaintOrderProcessingContext` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `MaintOrderProcessingContext` | ✓ | |  | `cast( dd07t.domvalue_l as maintorderprocessingcontext )` |
+| `MaintOrdProcessingContextText` |  | |  | `ddtext` |
+| `_MaintOrderProcessingContext` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

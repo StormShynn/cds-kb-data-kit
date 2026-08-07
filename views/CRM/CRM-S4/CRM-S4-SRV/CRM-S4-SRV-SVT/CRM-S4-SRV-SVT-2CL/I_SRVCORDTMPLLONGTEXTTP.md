@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrderTemplate` | `ServiceOrderTemplate` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| key `SrvcDocLogTextIdentifier` | `SrvcDocLogTextIdentifier` |
-| `TextObjectCategory` | `TextObjectCategory` |
-| `SrvcDocLongTextMimeType` | `SrvcDocLongTextMimeType` |
-| `SrvcOrdTmplLongText` | `SrvcOrdTmplLongText` |
-| `ReferenceTextObjectCategory` | `ReferenceTextObjectCategory` |
-| `ReferenceTextObjectType` | `ReferenceTextObjectType` |
-| `ReferenceLongTextKey` | `ReferenceLongTextKey` |
-| `SrvcDocLongTxtCreationDateTime` | `SrvcDocLongTxtCreationDateTime` |
-| `SrvcDocLongTextCreatedByUser` | `SrvcDocLongTextCreatedByUser` |
-| `SrvcDocLongTextChangedDateTime` | `SrvcDocLongTextChangedDateTime` |
-| `SrvcDocLongTextChangedByUser` | `SrvcDocLongTextChangedByUser` |
-| `_ServiceOrderTemplateTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrderTemplate` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SrvcDocLogTextIdentifier` | ✓ | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |
+| `SrvcOrdTmplLongText` |  | |  |  |
+| `ReferenceTextObjectCategory` |  | |  |  |
+| `ReferenceTextObjectType` |  | |  |  |
+| `ReferenceLongTextKey` |  | |  |  |
+| `SrvcDocLongTxtCreationDateTime` |  | |  |  |
+| `SrvcDocLongTextCreatedByUser` |  | |  |  |
+| `SrvcDocLongTextChangedDateTime` |  | |  |  |
+| `SrvcDocLongTextChangedByUser` |  | |  |  |
+| `_ServiceOrderTemplateTP` | | ✓ | | |
 
 ## Source Code
 

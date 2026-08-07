@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `_QltyNotificationTaskLongText.QualityNotification` |
-| key `NotificationTask` | `_QltyNotificationTaskLongText.NotificationTask` |
-| key `Language` | `_QltyNotificationTaskLongText.Language` |
-| key `LongTextInternalNumber` | `_QltyNotificationTaskLongText.LongTextInternalNumber` |
-| `LongTextID` | `_QltyNotificationTaskLongText.LongTextID` |
-| `QltyNotificationTaskLongText` | `_QltyNotificationTaskLongText.QltyNotificationTaskLongText` |
-| `MimeType` | `_QltyNotificationTaskLongText.MimeType` |
-| `LongTextCreatedByUser` | `_QltyNotificationTaskLongText.LongTextCreatedByUser` |
-| `LongTextCreatedAt` | `_QltyNotificationTaskLongText.LongTextCreatedAt` |
-| `LongTextLastChangedByUser` | `_QltyNotificationTaskLongText.LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` | `_QltyNotificationTaskLongText.LongTextLastChangedAt` |
-| `I_QltyNotificationTaskTP` | `_QltyNotificationTaskLongText._QltyNotificationTask : redirected to parent I_QltyNotificationTaskTP` |
-| `I_QltyNotificationTP` | `_QltyNotificationTaskLongText._QltyNotification : redirected to I_QltyNotificationTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | | `_QltyNotificationTaskLongText` | `QualityNotification` |
+| `NotificationTask` | ✓ | | `_QltyNotificationTaskLongText` | `NotificationTask` |
+| `Language` | ✓ | | `_QltyNotificationTaskLongText` | `Language` |
+| `LongTextInternalNumber` | ✓ | | `_QltyNotificationTaskLongText` | `LongTextInternalNumber` |
+| `LongTextID` |  | | `_QltyNotificationTaskLongText` | `LongTextID` |
+| `QltyNotificationTaskLongText` |  | | `_QltyNotificationTaskLongText` | `QltyNotificationTaskLongText` |
+| `MimeType` |  | | `_QltyNotificationTaskLongText` | `MimeType` |
+| `LongTextCreatedByUser` |  | | `_QltyNotificationTaskLongText` | `LongTextCreatedByUser` |
+| `LongTextCreatedAt` |  | | `_QltyNotificationTaskLongText` | `LongTextCreatedAt` |
+| `LongTextLastChangedByUser` |  | | `_QltyNotificationTaskLongText` | `LongTextLastChangedByUser` |
+| `LongTextLastChangedAt` |  | | `_QltyNotificationTaskLongText` | `LongTextLastChangedAt` |
+| `I_QltyNotificationTaskTP` |  | |  | `_QltyNotificationTaskLongText._QltyNotificationTask : redirected to parent I_QltyNotificationTaskTP` |
+| `I_QltyNotificationTP` |  | |  | `_QltyNotificationTaskLongText._QltyNotification : redirected to I_QltyNotificationTP` |
 
 ## Source Code
 

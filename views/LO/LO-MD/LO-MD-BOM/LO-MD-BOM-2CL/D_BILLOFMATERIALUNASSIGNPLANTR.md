@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BOMIsSuccessfulPlantUnassigned` | `boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOMIsSuccessfulPlantUnassigned` |  | |  | `boolean` |
 
 ## Source Code
 

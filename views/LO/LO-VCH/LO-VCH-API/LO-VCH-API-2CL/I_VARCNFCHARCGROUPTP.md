@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfignCharacteristicGroup` | `ConfignCharacteristicGroup` |
-| key `ChangeNumber` | `ChangeNumber` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_CharcAllocation` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfignCharacteristicGroup` | ✓ | |  |  |
+| `ChangeNumber` | ✓ | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_CharcAllocation` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

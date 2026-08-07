@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSpcfcProductGroup2` | `AdditionalMaterialGroup2` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSpcfcProductGroup2` | ✓ | |  | `AdditionalMaterialGroup2` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

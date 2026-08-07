@@ -32,25 +32,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `CreditMemoReqItemPartner.CreditMemoRequest` |
-| key `CreditMemoRequestItem` | `CreditMemoReqItemPartner.CreditMemoRequestItem` |
-| key `PartnerFunction` | `CreditMemoReqItemPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `CreditMemoReqItemPartner.PartnerFunctionForEdit` |
-| `Customer` | `CreditMemoReqItemPartner.Customer` |
-| `Supplier` | `CreditMemoReqItemPartner.Supplier` |
-| `Personnel` | `CreditMemoReqItemPartner.Personnel` |
-| `ContactPerson` | `CreditMemoReqItemPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `CreditMemoReqItemPartner.ReferenceBusinessPartner` |
-| `Partner` | `CreditMemoReqItemPartner.Partner` |
-| `PartnerIsSpecificForSDDocItem` | `CreditMemoReqItemPartner.PartnerIsSpecificForSDDocItem` |
-| `CreditMemoRequestType` | `CreditMemoReqItemPartner.CreditMemoRequestType` |
-| `SalesOrganization` | `CreditMemoReqItemPartner.SalesOrganization` |
-| `DistributionChannel` | `CreditMemoReqItemPartner.DistributionChannel` |
-| `OrganizationDivision` | `CreditMemoReqItemPartner.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_CreditMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |
+| `CreditMemoRequestItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |
+| `CreditMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_CreditMemoRequest` | | ✓ | | |
 
 ## Source Code
 

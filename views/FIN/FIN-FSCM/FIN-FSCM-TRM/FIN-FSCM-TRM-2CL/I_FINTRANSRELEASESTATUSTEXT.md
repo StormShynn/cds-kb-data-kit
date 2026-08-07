@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `FinTransReleaseStatus` | `cast( dd07t.domvalue_l as tb_frgzust )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `FinTransReleaseStatusName` | `cast( dd07t.ddtext as tb_frgzust_name preserving type )` |
-| `_ReleaseStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `FinTransReleaseStatus` | ✓ | |  | `cast( dd07t.domvalue_l as tb_frgzust )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `FinTransReleaseStatusName` |  | |  | `cast( dd07t.ddtext as tb_frgzust_name preserving type )` |
+| `_ReleaseStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

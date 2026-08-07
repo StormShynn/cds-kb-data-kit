@@ -29,232 +29,232 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentNumber` | `opbel` |
-| key `CARepetitionItemNumber` | `opupw` |
-| key `CABPItemNumber` | `opupk` |
-| key `CASubItemNumber` | `opupz` |
-| `CreationDate` | `cpudt_op` |
-| `CreationTime` | `cputm_op` |
-| `LastChangeDate` | `chdate` |
-| `LastChangeTime` | `chtime` |
-| `CompanyCode` | `bukrs` |
-| `BusinessArea` | `gsber` |
-| `BusinessPlace` | `bupla` |
-| `Segment` | `segment` |
-| `ProfitCenter` | `prctr` |
-| `Division` | `spart` |
-| `PersonnelNumber` | `pernr` |
-| `PartnerCompany` | `vbund` |
-| `BusinessPartner` | `gpart` |
-| `CAContract` | `vtref` |
-| `CAProviderContractItemNumber` | `vtpos` |
-| `CAAdditionalContract` | `vtre2` |
-| `ContractAccount` | `vkont` |
-| `CASubApplication` | `subap` |
-| `AltvContractAcctForCollvBills` | `abwkt` |
-| `CAReconciliationAccount` | `hkont` |
-| `CAApplicationArea` | `applk` |
-| `CAMainTransaction` | `hvorg` |
-| `CASubTransaction` | `tvorg` |
-| `CAAccountDeterminationCode` | `kofiz` |
-| `CADoubtfulOrValueAdjmtCode` | `infoz` |
-| `CAAccountAssignmentCategory` | `kontt` |
-| `CAAccountAssignment` | `kontl` |
-| `CADocumentType` | `blart` |
-| `CAIsDownPaymentRequest` | `xanza` |
-| `CAItemIsOnlyForSettlement` | `verkz` |
-| `CAStatisticalItemCode` | `stakz` |
-| `CABPItemText` | `optxt` |
-| `CANumberOfRepetitionItems` | `whang` |
-| `CARepetitionGroup` | `whgrp` |
-| `CAStartDateOfBillingPeriod` | `abrzu` |
-| `CAEndDateOfBillingPeriod` | `abrzo` |
-| `CAGroupingCodeForBPItems` | `grkey` |
-| `CAPeriodCode` | `persl` |
-| `CAChangeIsForbidden` | `xaesp` |
-| `CAInterestCode` | `ikey` |
-| `CARoundingItemCode` | `rndps` |
-| `CAReceivingCountry` | `landl` |
-| `CAInternalPostingReasonCode` | `intbu` |
-| `CAWorkflowCheckReason` | `c4eye` |
-| `CAWorkflowCheckProcess` | `c4eyp` |
-| `CANegativePostingControlCode` | `negbu` |
-| `CAPartnerSettlementStatus` | `ptitm` |
-| `CAIsPartOfJointLiability` | `palix` |
-| `CADocumentOriginCode` | `herkf_kk` |
-| `CAGroupingKeyDocumentItems` | `psgrp` |
-| `CASubstituteDocumentNumber` | `abwbl` |
-| `CASubstituteDocumentCategory` | `abwtp` |
-| `CAStatisticalCodeOfOriginItem` | `astkz` |
-| `CADocumentNumberOfOriginItem` | `asblg` |
-| `CAReferenceDocument` | `xblnr` |
-| `CAClassificationKey` | `opord` |
-| `DocumentDate` | `bldat` |
-| `CAPostingDate` | `budat` |
-| `CANetDueDate` | `faedn` |
-| `CADeferralDate` | `studt` |
-| `TransactionCurrency` | `waers` |
-| `CompanyCodeCurrency` | `_CompanyCode.Currency` |
-| `CAExchangeRate` | `cast( abs(kursf) as fis_absolute_exchangerate preserving type )` |
-| `ExchRateIsIndirectQuotation` | `cast( case when kursf < 0 then 'X' when kursf >= 0 then ' ' end as fis_indirect_quotation preserving type )` |
-| `CAAmountInLocalCurrency` | `betrh` |
-| `CAAmountInTransactionCurrency` | `betrw` |
-| `CAAmountInSecondCurrency` | `betr2` |
-| `CAAmountInThirdCurrency` | `betr3` |
-| `CADocBPItemTotalAmountInTC` | `oriop` |
-| `CADocBPItemOriglOpenAmountInTC` | `augia` |
-| `CAClearingDeductionAmountInTC` | `augda` |
-| `CACashDiscountDueDate` | `faeds` |
-| `CACashDiscountRate` | `sktpz` |
-| `CAEligibleAmountForCshDiscount` | `skfbt` |
-| `TaxCode` | `mwskz` |
-| `CASupplementaryTaxCode` | `mwszkz` |
-| `CATaxAmountInLocalCurrency` | `sbeth` |
-| `CATaxAmountInTransCurrency` | `sbetw` |
-| `CATaxAmountInSecondCurrency` | `sbet2` |
-| `CATaxAmountInThirdCurrency` | `sbet3` |
-| `CADownPaymentTaxAccount` | `mwsko` |
-| `CADownPaymentOffsetTaxAccount` | `mwvko` |
-| `TaxJurisdiction` | `txjcd` |
-| `CATaxDate` | `txdat` |
-| `WithholdingTaxCode` | `qsskz` |
-| `CAWithholdingTaxSupplement` | `qssew` |
-| `CAWithholdingTaxCategory` | `qsptp` |
-| `CABaseAmountForWithholdingTax` | `qsshb` |
-| `CAWithholdingTaxAmount` | `qbshb` |
-| `CAWithholdingTaxPercentage` | `qsprz` |
-| `WithholdingTaxCertificate` | `qsznr` |
-| `CAOtherTaxCode` | `strkz` |
-| `CAGroupingCodeForTaxItems` | `txgrp` |
-| `CATaxPortionInLocalCurrency` | `sctax` |
-| `CATaxPortionInTransCurrency` | `sttax` |
-| `CATaxIsCalculatedExternally` | `xustpd` |
-| `CATaxAmountIsSetFromExternal` | `inttx` |
-| `TaxCountry` | `tax_country` |
-| `TransToTaxCntryCrcyCnvrsnFctr` | `taxc_factor` |
-| `CAPaymentMethod` | `pymet` |
-| `CAPaymentCompanyCode` | `pybuk` |
-| `CAGroupingForPayment` | `pygrp` |
-| `CAPaymentSpecificationCategory` | `pdtyp` |
-| `CAClearingStatus` | `augst` |
-| `CAClearingDate` | `augdt` |
-| `CAClearingDocumentNumber` | `augbl` |
-| `CAPostingDateOfClearingDoc` | `augbd` |
-| `CAClearingReason` | `augrd` |
-| `CAClearingCurrency` | `augwa` |
-| `CAClearingAmountInClearingCrcy` | `augbt` |
-| `CATaxAmountInClearingCrcy` | `augbs` |
-| `CACashDiscAmountInClearingCrcy` | `augsk` |
-| `CAValueDateForClearing` | `augvd` |
-| `CAClearingRestrictionCode` | `augrs` |
-| `CAClearingPostingIsReset` | `xragl` |
-| `CAItemIsWithdrawn` | `augob` |
-| `CAItemIsExcludedFromDunning` | `xmanl` |
-| `CADunningProcedure` | `mahnv` |
-| `CAGrpgCodeForTransfToCollAgcy` | `inkps` |
-| `CAIsIncludedInCollectionCase` | `xcolc` |
-| `CashPlanningGroup` | `fdgrp` |
-| `PlanningLevel` | `fdlev` |
-| `CAAdditionalDaysForCashMgmt` | `fdztg` |
-| `PlannedAmtInTransactionCrcy` | `cast( fdwbt as fis_fdwbt )` |
-| `CAAltvBPForPayment` | `emgpa` |
-| `CABankOfAltvBPForPayment` | `embvt` |
-| `CAAddressOfAltvBPForPayment` | `emadr` |
-| `CACardOfAltvBPForPayment` | `emcrd` |
-| `SEPAMandateCAInternalID` | `emmnd` |
-| `CAGLPostingCurrency` | `pswsl` |
-| `CAGLPostingAmount` | `pswbt` |
-| `CAGLPostingTaxAmount` | `pswtx` |
-| `CAIsSeparateLineItemInGL` | `xeiph` |
-| `CAIsCashFlowItem` | `xcsha` |
-| `CACashFlowAccount` | `reacc` |
-| `CACashFlowCompanyCode` | `rebuk` |
-| `CAPaymentPreNotificationCode` | `xpyor` |
-| `CASEPAPreNotificationNumber` | `pnnum` |
-| `CASEPAPreNotifOriginCode` | `pnhkf` |
-| `CASEPAPreNotifExecutionDate` | `pnexd` |
-| `CASEPAPreNotificationRqmtCode` | `pnctr` |
-| `CARevenueDistrFinalRecipient` | `finre` |
-| `CARevenueDistrCurrentStatus` | `rdsta` |
-| `CARevenueDistrLastStatus` | `rdstb` |
-| `CACurrentFactoringStatusOfRbl` | `fasta` |
-| `CAFactoringCheckStsForClrgInfo` | `pasta` |
-| `CAFactoringItem` | `opupf` |
-| `ControllingArea` | `_CompanyCode.ControllingArea` |
-| `ChartOfAccounts` | `_CompanyCode.ChartOfAccounts` |
-| `Country` | `_CompanyCode.Country` |
-| `_BusinessArea` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_PaytAltvBusinessPartner` | *Association* |
-| `_CAAccountAssignmentCategory` | *Association* |
-| `_CAAccountDeterminationCode` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CAClearingReason` | *Association* |
-| `_CAClearingRestrictionCode` | *Association* |
-| `_CAClearingStatus` | *Association* |
-| `_CADbtflOrValueAdjmtCode` | *Association* |
-| `_CADocument` | *Association* |
-| `_CASubstituteDocument` | *Association* |
-| `_CAClearingDocument` | *Association* |
-| `_CAOriginDocument` | *Association* |
-| `_CADocumentType` | *Association* |
-| `_CADocumentOriginCode` | *Association* |
-| `_CADunningProcedure` | *Association* |
-| `_CAFactoringClrgCheckStatus` | *Association* |
-| `_CAFactoringReceivableStatus` | *Association* |
-| `_CAInterestCode` | *Association* |
-| `_CAInternalPostingReasonCode` | *Association* |
-| `_CAMainTransaction` | *Association* |
-| `_CANegativePostingControlCode` | *Association* |
-| `_CAOriglStatisticalItemCode` | *Association* |
-| `_CAOtherTaxCode` | *Association* |
-| `_CAPartnerSettlementStatus` | *Association* |
-| `_CAPaymentMethod` | *Association* |
-| `_CAPaytPreNotificationCode` | *Association* |
-| `_CAPaytSpecificationCategory` | *Association* |
-| `_CAPeriodCode` | *Association* |
-| `_CAProviderContract` | *Association* |
-| `_CARevenueDistrCurrentStatus` | *Association* |
-| `_CARevenueDistrLastStatus` | *Association* |
-| `_CARoundingItemCode` | *Association* |
-| `_CASEPAPreNotifOriginCode` | *Association* |
-| `_CASEPAPreNotificationRqmtCode` | *Association* |
-| `_CAStatisticalItemCode` | *Association* |
-| `_CASubApplication` | *Association* |
-| `_CASubTransaction` | *Association* |
-| `_CASubstituteDocumentCategory` | *Association* |
-| `_CAWithholdingTaxCategory` | *Association* |
-| `_CAWithholdingTaxSupplement` | *Association* |
-| `_CAWorkflowCheckProcess` | *Association* |
-| `_CAWorkflowCheckReason` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_PaymentCompanyCode` | *Association* |
-| `_CashFlowCompanyCode` | *Association* |
-| `_ContractAccount` | *Association* |
-| `_CollvBillsAltvContractAccount` | *Association* |
-| `_RevnDistrFnlRcpntContrAccount` | *Association* |
-| `_ContractAccountPartner` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_Country` | *Association* |
-| `_ReceivingCountry` | *Association* |
-| `_TaxCountry` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_ClearingCurrency` | *Association* |
-| `_GLPostingCurrency` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_Division` | *Association* |
-| `_ReconciliationAccount` | *Association* |
-| `_DownPaymentTaxAccount` | *Association* |
-| `_DownPaymentOffsetTaxAccount` | *Association* |
-| `_CashFlowAccount` | *Association* |
-| `_PartnerCompany` | *Association* |
-| `_PlanningLevel` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_Segment` | *Association* |
-| `_WithholdingTaxCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  | `opbel` |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` |
+| `CABPItemNumber` | ✓ | |  | `opupk` |
+| `CASubItemNumber` | ✓ | |  | `opupz` |
+| `CreationDate` |  | |  | `cpudt_op` |
+| `CreationTime` |  | |  | `cputm_op` |
+| `LastChangeDate` |  | |  | `chdate` |
+| `LastChangeTime` |  | |  | `chtime` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `BusinessArea` |  | |  | `gsber` |
+| `BusinessPlace` |  | |  | `bupla` |
+| `Segment` |  | |  | `segment` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `Division` |  | |  | `spart` |
+| `PersonnelNumber` |  | |  | `pernr` |
+| `PartnerCompany` |  | |  | `vbund` |
+| `BusinessPartner` |  | |  | `gpart` |
+| `CAContract` |  | |  | `vtref` |
+| `CAProviderContractItemNumber` |  | |  | `vtpos` |
+| `CAAdditionalContract` |  | |  | `vtre2` |
+| `ContractAccount` |  | |  | `vkont` |
+| `CASubApplication` |  | |  | `subap` |
+| `AltvContractAcctForCollvBills` |  | |  | `abwkt` |
+| `CAReconciliationAccount` |  | |  | `hkont` |
+| `CAApplicationArea` |  | |  | `applk` |
+| `CAMainTransaction` |  | |  | `hvorg` |
+| `CASubTransaction` |  | |  | `tvorg` |
+| `CAAccountDeterminationCode` |  | |  | `kofiz` |
+| `CADoubtfulOrValueAdjmtCode` |  | |  | `infoz` |
+| `CAAccountAssignmentCategory` |  | |  | `kontt` |
+| `CAAccountAssignment` |  | |  | `kontl` |
+| `CADocumentType` |  | |  | `blart` |
+| `CAIsDownPaymentRequest` |  | |  | `xanza` |
+| `CAItemIsOnlyForSettlement` |  | |  | `verkz` |
+| `CAStatisticalItemCode` |  | |  | `stakz` |
+| `CABPItemText` |  | |  | `optxt` |
+| `CANumberOfRepetitionItems` |  | |  | `whang` |
+| `CARepetitionGroup` |  | |  | `whgrp` |
+| `CAStartDateOfBillingPeriod` |  | |  | `abrzu` |
+| `CAEndDateOfBillingPeriod` |  | |  | `abrzo` |
+| `CAGroupingCodeForBPItems` |  | |  | `grkey` |
+| `CAPeriodCode` |  | |  | `persl` |
+| `CAChangeIsForbidden` |  | |  | `xaesp` |
+| `CAInterestCode` |  | |  | `ikey` |
+| `CARoundingItemCode` |  | |  | `rndps` |
+| `CAReceivingCountry` |  | |  | `landl` |
+| `CAInternalPostingReasonCode` |  | |  | `intbu` |
+| `CAWorkflowCheckReason` |  | |  | `c4eye` |
+| `CAWorkflowCheckProcess` |  | |  | `c4eyp` |
+| `CANegativePostingControlCode` |  | |  | `negbu` |
+| `CAPartnerSettlementStatus` |  | |  | `ptitm` |
+| `CAIsPartOfJointLiability` |  | |  | `palix` |
+| `CADocumentOriginCode` |  | |  | `herkf_kk` |
+| `CAGroupingKeyDocumentItems` |  | |  | `psgrp` |
+| `CASubstituteDocumentNumber` |  | |  | `abwbl` |
+| `CASubstituteDocumentCategory` |  | |  | `abwtp` |
+| `CAStatisticalCodeOfOriginItem` |  | |  | `astkz` |
+| `CADocumentNumberOfOriginItem` |  | |  | `asblg` |
+| `CAReferenceDocument` |  | |  | `xblnr` |
+| `CAClassificationKey` |  | |  | `opord` |
+| `DocumentDate` |  | |  | `bldat` |
+| `CAPostingDate` |  | |  | `budat` |
+| `CANetDueDate` |  | |  | `faedn` |
+| `CADeferralDate` |  | |  | `studt` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |
+| `CAExchangeRate` |  | |  | `cast( abs(kursf) as fis_absolute_exchangerate preserving type )` |
+| `ExchRateIsIndirectQuotation` |  | |  | `cast( case when kursf < 0 then 'X' when kursf >= 0 then ' ' end as fis_indirect_quotation preserving type )` |
+| `CAAmountInLocalCurrency` |  | |  | `betrh` |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` |
+| `CAAmountInSecondCurrency` |  | |  | `betr2` |
+| `CAAmountInThirdCurrency` |  | |  | `betr3` |
+| `CADocBPItemTotalAmountInTC` |  | |  | `oriop` |
+| `CADocBPItemOriglOpenAmountInTC` |  | |  | `augia` |
+| `CAClearingDeductionAmountInTC` |  | |  | `augda` |
+| `CACashDiscountDueDate` |  | |  | `faeds` |
+| `CACashDiscountRate` |  | |  | `sktpz` |
+| `CAEligibleAmountForCshDiscount` |  | |  | `skfbt` |
+| `TaxCode` |  | |  | `mwskz` |
+| `CASupplementaryTaxCode` |  | |  | `mwszkz` |
+| `CATaxAmountInLocalCurrency` |  | |  | `sbeth` |
+| `CATaxAmountInTransCurrency` |  | |  | `sbetw` |
+| `CATaxAmountInSecondCurrency` |  | |  | `sbet2` |
+| `CATaxAmountInThirdCurrency` |  | |  | `sbet3` |
+| `CADownPaymentTaxAccount` |  | |  | `mwsko` |
+| `CADownPaymentOffsetTaxAccount` |  | |  | `mwvko` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `CATaxDate` |  | |  | `txdat` |
+| `WithholdingTaxCode` |  | |  | `qsskz` |
+| `CAWithholdingTaxSupplement` |  | |  | `qssew` |
+| `CAWithholdingTaxCategory` |  | |  | `qsptp` |
+| `CABaseAmountForWithholdingTax` |  | |  | `qsshb` |
+| `CAWithholdingTaxAmount` |  | |  | `qbshb` |
+| `CAWithholdingTaxPercentage` |  | |  | `qsprz` |
+| `WithholdingTaxCertificate` |  | |  | `qsznr` |
+| `CAOtherTaxCode` |  | |  | `strkz` |
+| `CAGroupingCodeForTaxItems` |  | |  | `txgrp` |
+| `CATaxPortionInLocalCurrency` |  | |  | `sctax` |
+| `CATaxPortionInTransCurrency` |  | |  | `sttax` |
+| `CATaxIsCalculatedExternally` |  | |  | `xustpd` |
+| `CATaxAmountIsSetFromExternal` |  | |  | `inttx` |
+| `TaxCountry` |  | |  | `tax_country` |
+| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  | `taxc_factor` |
+| `CAPaymentMethod` |  | |  | `pymet` |
+| `CAPaymentCompanyCode` |  | |  | `pybuk` |
+| `CAGroupingForPayment` |  | |  | `pygrp` |
+| `CAPaymentSpecificationCategory` |  | |  | `pdtyp` |
+| `CAClearingStatus` |  | |  | `augst` |
+| `CAClearingDate` |  | |  | `augdt` |
+| `CAClearingDocumentNumber` |  | |  | `augbl` |
+| `CAPostingDateOfClearingDoc` |  | |  | `augbd` |
+| `CAClearingReason` |  | |  | `augrd` |
+| `CAClearingCurrency` |  | |  | `augwa` |
+| `CAClearingAmountInClearingCrcy` |  | |  | `augbt` |
+| `CATaxAmountInClearingCrcy` |  | |  | `augbs` |
+| `CACashDiscAmountInClearingCrcy` |  | |  | `augsk` |
+| `CAValueDateForClearing` |  | |  | `augvd` |
+| `CAClearingRestrictionCode` |  | |  | `augrs` |
+| `CAClearingPostingIsReset` |  | |  | `xragl` |
+| `CAItemIsWithdrawn` |  | |  | `augob` |
+| `CAItemIsExcludedFromDunning` |  | |  | `xmanl` |
+| `CADunningProcedure` |  | |  | `mahnv` |
+| `CAGrpgCodeForTransfToCollAgcy` |  | |  | `inkps` |
+| `CAIsIncludedInCollectionCase` |  | |  | `xcolc` |
+| `CashPlanningGroup` |  | |  | `fdgrp` |
+| `PlanningLevel` |  | |  | `fdlev` |
+| `CAAdditionalDaysForCashMgmt` |  | |  | `fdztg` |
+| `PlannedAmtInTransactionCrcy` |  | |  | `cast( fdwbt as fis_fdwbt )` |
+| `CAAltvBPForPayment` |  | |  | `emgpa` |
+| `CABankOfAltvBPForPayment` |  | |  | `embvt` |
+| `CAAddressOfAltvBPForPayment` |  | |  | `emadr` |
+| `CACardOfAltvBPForPayment` |  | |  | `emcrd` |
+| `SEPAMandateCAInternalID` |  | |  | `emmnd` |
+| `CAGLPostingCurrency` |  | |  | `pswsl` |
+| `CAGLPostingAmount` |  | |  | `pswbt` |
+| `CAGLPostingTaxAmount` |  | |  | `pswtx` |
+| `CAIsSeparateLineItemInGL` |  | |  | `xeiph` |
+| `CAIsCashFlowItem` |  | |  | `xcsha` |
+| `CACashFlowAccount` |  | |  | `reacc` |
+| `CACashFlowCompanyCode` |  | |  | `rebuk` |
+| `CAPaymentPreNotificationCode` |  | |  | `xpyor` |
+| `CASEPAPreNotificationNumber` |  | |  | `pnnum` |
+| `CASEPAPreNotifOriginCode` |  | |  | `pnhkf` |
+| `CASEPAPreNotifExecutionDate` |  | |  | `pnexd` |
+| `CASEPAPreNotificationRqmtCode` |  | |  | `pnctr` |
+| `CARevenueDistrFinalRecipient` |  | |  | `finre` |
+| `CARevenueDistrCurrentStatus` |  | |  | `rdsta` |
+| `CARevenueDistrLastStatus` |  | |  | `rdstb` |
+| `CACurrentFactoringStatusOfRbl` |  | |  | `fasta` |
+| `CAFactoringCheckStsForClrgInfo` |  | |  | `pasta` |
+| `CAFactoringItem` |  | |  | `opupf` |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
+| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` |
+| `Country` |  | | `_CompanyCode` | `Country` |
+| `_BusinessArea` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_PaytAltvBusinessPartner` | | ✓ | | |
+| `_CAAccountAssignmentCategory` | | ✓ | | |
+| `_CAAccountDeterminationCode` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAClearingReason` | | ✓ | | |
+| `_CAClearingRestrictionCode` | | ✓ | | |
+| `_CAClearingStatus` | | ✓ | | |
+| `_CADbtflOrValueAdjmtCode` | | ✓ | | |
+| `_CADocument` | | ✓ | | |
+| `_CASubstituteDocument` | | ✓ | | |
+| `_CAClearingDocument` | | ✓ | | |
+| `_CAOriginDocument` | | ✓ | | |
+| `_CADocumentType` | | ✓ | | |
+| `_CADocumentOriginCode` | | ✓ | | |
+| `_CADunningProcedure` | | ✓ | | |
+| `_CAFactoringClrgCheckStatus` | | ✓ | | |
+| `_CAFactoringReceivableStatus` | | ✓ | | |
+| `_CAInterestCode` | | ✓ | | |
+| `_CAInternalPostingReasonCode` | | ✓ | | |
+| `_CAMainTransaction` | | ✓ | | |
+| `_CANegativePostingControlCode` | | ✓ | | |
+| `_CAOriglStatisticalItemCode` | | ✓ | | |
+| `_CAOtherTaxCode` | | ✓ | | |
+| `_CAPartnerSettlementStatus` | | ✓ | | |
+| `_CAPaymentMethod` | | ✓ | | |
+| `_CAPaytPreNotificationCode` | | ✓ | | |
+| `_CAPaytSpecificationCategory` | | ✓ | | |
+| `_CAPeriodCode` | | ✓ | | |
+| `_CAProviderContract` | | ✓ | | |
+| `_CARevenueDistrCurrentStatus` | | ✓ | | |
+| `_CARevenueDistrLastStatus` | | ✓ | | |
+| `_CARoundingItemCode` | | ✓ | | |
+| `_CASEPAPreNotifOriginCode` | | ✓ | | |
+| `_CASEPAPreNotificationRqmtCode` | | ✓ | | |
+| `_CAStatisticalItemCode` | | ✓ | | |
+| `_CASubApplication` | | ✓ | | |
+| `_CASubTransaction` | | ✓ | | |
+| `_CASubstituteDocumentCategory` | | ✓ | | |
+| `_CAWithholdingTaxCategory` | | ✓ | | |
+| `_CAWithholdingTaxSupplement` | | ✓ | | |
+| `_CAWorkflowCheckProcess` | | ✓ | | |
+| `_CAWorkflowCheckReason` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_PaymentCompanyCode` | | ✓ | | |
+| `_CashFlowCompanyCode` | | ✓ | | |
+| `_ContractAccount` | | ✓ | | |
+| `_CollvBillsAltvContractAccount` | | ✓ | | |
+| `_RevnDistrFnlRcpntContrAccount` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_ReceivingCountry` | | ✓ | | |
+| `_TaxCountry` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_ClearingCurrency` | | ✓ | | |
+| `_GLPostingCurrency` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_ReconciliationAccount` | | ✓ | | |
+| `_DownPaymentTaxAccount` | | ✓ | | |
+| `_DownPaymentOffsetTaxAccount` | | ✓ | | |
+| `_CashFlowAccount` | | ✓ | | |
+| `_PartnerCompany` | | ✓ | | |
+| `_PlanningLevel` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_Segment` | | ✓ | | |
+| `_WithholdingTaxCode` | | ✓ | | |
 
 ## Associations
 

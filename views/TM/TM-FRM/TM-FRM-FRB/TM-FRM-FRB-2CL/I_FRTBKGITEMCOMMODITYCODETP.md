@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdItemCommodityCodeUUID` | `TranspOrdItemCommodityCodeUUID` |
-| `TransportationOrderItemUUID` | `TransportationOrderItemUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspOrdItemCommodityCode` | `TranspOrdItemCommodityCode` |
-| `TrOrdItmCmmdtyCodeNmbrngSchm` | `TrOrdItmCmmdtyCodeNmbrngSchm` |
-| `I_FreightBookingTP` | `FrtBookingItemCommodityCode._TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
-| `I_FreightBookingItemTP` | `FrtBookingItemCommodityCode._TransportationOrderItem as _FreightBookingItem : redirected to parent I_FreightBookingItemTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdItemCommodityCodeUUID` | ✓ | |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspOrdItemCommodityCode` |  | |  |  |
+| `TrOrdItmCmmdtyCodeNmbrngSchm` |  | |  |  |
+| `I_FreightBookingTP` |  | |  | `FrtBookingItemCommodityCode._TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
+| `I_FreightBookingItemTP` |  | |  | `FrtBookingItemCommodityCode._TransportationOrderItem as _FreightBookingItem : redirected to parent I_FreightBookingItemTP` |
 
 ## Source Code
 

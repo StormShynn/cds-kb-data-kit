@@ -27,38 +27,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningProcedure` | `mahnv` |
-| key `CADunningLevel` | `mahns` |
-| `CANumberOfDaysInArrears` | `vertg` |
-| `CADunningFrequencyInDays` | `rhyth` |
-| `CADaysToPaymentDeadline` | `frist` |
-| `CAAllItemsArePrinted` | `xpost` |
-| `CADunningNoticeIsAlwaysCreated` | `xaend` |
-| `CACreditWorthinessRatingValue` | `bonig` |
-| `CADunningLevelIsOptional` | `xmfak` |
-| `CADunningLevelIsOnlyForIntRsn` | `xmsus` |
-| `CAInterestCode` | `ikey` |
-| `CAPostingCodeForDunInterest` | `ipost` |
-| `CAInterestIsCalculated` | `icalc` |
-| `CADunningChargesSchema` | `chgid` |
-| `CADunningLevelCategory` | `mstyp` |
-| `CADunningLevelSettingCode` | `xextm` |
-| `CANumberOfDaysInArrearsExt` | `avert` |
-| `CADunningFrequencyInDaysExt` | `arhyt` |
-| `CAOnlyItmsOfLastDunLvlAreAllwd` | `xnbgm` |
-| `CADunningRecipientDetnCode` | `mempf` |
-| `CAIntrstIsCalculatedBfrCharges` | `intfirst` |
-| `CADaysBeforeDueDateForReminder` | `eritg` |
-| `CAMinimalPctOfAmountStillOpen` | `minpz` |
-| `CAIntrstAndChargeIsAddedToHist` | `newdc` |
-| `CADunningSuccessCanBeEvaluated` | `xdsuc` |
-| `_Text` | *Association* |
-| `_DunningProcedure` | *Association* |
-| `_DunningLevelCat` | *Association* |
-| `_InterestCode` | *Association* |
-| `_ChargesSchema` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningProcedure` | ✓ | |  | `mahnv` |
+| `CADunningLevel` | ✓ | |  | `mahns` |
+| `CANumberOfDaysInArrears` |  | |  | `vertg` |
+| `CADunningFrequencyInDays` |  | |  | `rhyth` |
+| `CADaysToPaymentDeadline` |  | |  | `frist` |
+| `CAAllItemsArePrinted` |  | |  | `xpost` |
+| `CADunningNoticeIsAlwaysCreated` |  | |  | `xaend` |
+| `CACreditWorthinessRatingValue` |  | |  | `bonig` |
+| `CADunningLevelIsOptional` |  | |  | `xmfak` |
+| `CADunningLevelIsOnlyForIntRsn` |  | |  | `xmsus` |
+| `CAInterestCode` |  | |  | `ikey` |
+| `CAPostingCodeForDunInterest` |  | |  | `ipost` |
+| `CAInterestIsCalculated` |  | |  | `icalc` |
+| `CADunningChargesSchema` |  | |  | `chgid` |
+| `CADunningLevelCategory` |  | |  | `mstyp` |
+| `CADunningLevelSettingCode` |  | |  | `xextm` |
+| `CANumberOfDaysInArrearsExt` |  | |  | `avert` |
+| `CADunningFrequencyInDaysExt` |  | |  | `arhyt` |
+| `CAOnlyItmsOfLastDunLvlAreAllwd` |  | |  | `xnbgm` |
+| `CADunningRecipientDetnCode` |  | |  | `mempf` |
+| `CAIntrstIsCalculatedBfrCharges` |  | |  | `intfirst` |
+| `CADaysBeforeDueDateForReminder` |  | |  | `eritg` |
+| `CAMinimalPctOfAmountStillOpen` |  | |  | `minpz` |
+| `CAIntrstAndChargeIsAddedToHist` |  | |  | `newdc` |
+| `CADunningSuccessCanBeEvaluated` |  | |  | `xdsuc` |
+| `_Text` | | ✓ | | |
+| `_DunningProcedure` | | ✓ | | |
+| `_DunningLevelCat` | | ✓ | | |
+| `_InterestCode` | | ✓ | | |
+| `_ChargesSchema` | | ✓ | | |
 
 ## Associations
 

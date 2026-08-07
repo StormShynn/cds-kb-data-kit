@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAIntcoProcedure` | `cast( substring( l.domvalue_l, 1, 2 ) as ico_proc_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAIntcoProcedure` | ✓ | |  | `cast( substring( l.domvalue_l, 1, 2 ) as ico_proc_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

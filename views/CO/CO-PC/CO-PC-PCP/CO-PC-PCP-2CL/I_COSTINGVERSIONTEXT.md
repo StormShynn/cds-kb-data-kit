@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingVersion` | `cvers.CostingVersion` |
-| key `CostingType` | `cvers.CostingType` |
-| key `ValuationVariant` | `cvers.ValuationVariant` |
-| key `Language` | `text.spras` |
-| `CostingVersionName` | `text.text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingVersion` | ✓ | |  |  |
+| `CostingType` | ✓ | |  |  |
+| `ValuationVariant` | ✓ | |  |  |
+| `Language` | ✓ | |  | `spras` |
+| `CostingVersionName` |  | |  | `text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

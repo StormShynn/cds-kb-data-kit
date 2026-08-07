@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `documentdesc.dokar` |
-| `DocumentInfoRecordDocNumber` | `}] key documentdesc.doknr` |
-| `DocumentInfoRecordDocVersion` | `}] key documentdesc.dokvr` |
-| key `DocumentInfoRecordDocPart` | `documentdesc.doktl` |
-| key `Language` | `documentdesc.langu` |
-| `DocumentDescription` | `documentdesc.dktxt` |
-| `LongTextExists` | `documentdesc.ltxin` |
-| `DocInfoRecdShortText` | `documentdesc.dktxt_uc` |
-| `_DocType` | *Association* |
-| `_DocNumber` | *Association* |
-| `_DocPart` | *Association* |
-| `_DocVersion` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
+| `DocumentInfoRecordDocNumber` |  | |  | `}] key documentdesc.doknr` |
+| `DocumentInfoRecordDocVersion` |  | |  | `}] key documentdesc.dokvr` |
+| `DocumentInfoRecordDocPart` | ✓ | |  | `doktl` |
+| `Language` | ✓ | |  | `langu` |
+| `DocumentDescription` |  | |  | `dktxt` |
+| `LongTextExists` |  | |  | `ltxin` |
+| `DocInfoRecdShortText` |  | |  | `dktxt_uc` |
+| `_DocType` | | ✓ | | |
+| `_DocNumber` | | ✓ | | |
+| `_DocPart` | | ✓ | | |
+| `_DocVersion` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

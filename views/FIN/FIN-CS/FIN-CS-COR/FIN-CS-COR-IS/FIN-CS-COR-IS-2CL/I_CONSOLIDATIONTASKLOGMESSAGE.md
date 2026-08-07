@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnTaskLogUUID` | `message.cnsldtnlognumber` |
-| key `CnsldtnTskLgMsgNmbr` | `message.cnsldtnlogmessageno` |
-| `CnsldtnTaskLogItemUUID` | `message.cnsldtnlogitemnumber` |
-| `SystemMessageType` | `message.msgty` |
-| `SystemMessageIdentification` | `message.msgid` |
-| `SystemMessageNumber` | `cast(message.msgno as msgnr)` |
-| `SystemMessageVariable1` | `message.msgv1` |
-| `SystemMessageVariable2` | `message.msgv2` |
-| `SystemMessageVariable3` | `message.msgv3` |
-| `SystemMessageVariable4` | `message.msgv4` |
-| `SortField` | `cast(3 as eqfnr)` |
-| `CnsldtnTskLgMsgID` | `cast(concat_with_space(message.msgid, message.msgno, 2) as fincs_msg_id preserving type)` |
-| `SystemMessageTypeSortOrder` | `case when message.msgty = 'E' then cast(1 as fincs_msg_severity preserving type) when message.msgty = 'W' then cast(2 as fincs_msg_severity preserving type) when message.msgty = 'I' then cast(3 as fincs_msg_severity preserving type) when message.msgty = 'S' then cast(4 as fincs_msg_severity preserving type) else cast(5 as fincs_msg_severity preserving type) end` |
-| `_ConsolidationTaskLog` | *Association* |
-| `_CnsldtnSystemMessageType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  | `cnsldtnlognumber` |
+| `CnsldtnTskLgMsgNmbr` | ✓ | |  | `cnsldtnlogmessageno` |
+| `CnsldtnTaskLogItemUUID` |  | |  | `cnsldtnlogitemnumber` |
+| `SystemMessageType` |  | |  | `msgty` |
+| `SystemMessageIdentification` |  | |  | `msgid` |
+| `SystemMessageNumber` |  | |  | `cast(message.msgno as msgnr)` |
+| `SystemMessageVariable1` |  | |  | `msgv1` |
+| `SystemMessageVariable2` |  | |  | `msgv2` |
+| `SystemMessageVariable3` |  | |  | `msgv3` |
+| `SystemMessageVariable4` |  | |  | `msgv4` |
+| `SortField` |  | |  | `cast(3 as eqfnr)` |
+| `CnsldtnTskLgMsgID` |  | |  | `cast(concat_with_space(message.msgid, message.msgno, 2) as fincs_msg_id preserving type)` |
+| `SystemMessageTypeSortOrder` |  | |  | `case when message.msgty = 'E' then cast(1 as fincs_msg_severity preserving type) when message.msgty = 'W' then cast(2 as fincs_msg_severity preserving type) when message.msgty = 'I' then cast(3 as fincs_msg_severity preserving type) when message.msgty = 'S' then cast(4 as fincs_msg_severity preserving type) else cast(5 as fincs_msg_severity preserving type) end` |
+| `_ConsolidationTaskLog` | | ✓ | | |
+| `_CnsldtnSystemMessageType` | | ✓ | | |
 
 ## Associations
 

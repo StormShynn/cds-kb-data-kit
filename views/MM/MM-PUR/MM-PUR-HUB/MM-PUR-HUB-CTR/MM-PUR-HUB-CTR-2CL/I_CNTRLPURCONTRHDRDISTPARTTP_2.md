@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| key `DistributionKey` | `DistributionKey` |
-| key `PartnerCounter` | `PartnerCounter` |
-| `PartnerFunction` | `PartnerFunction` |
-| `ExtPlantForPurg` | `ExtPlantForPurg` |
-| `Supplier` | `Supplier` |
-| `SupplierSubrange` | `SupplierSubrange` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `_CentralPurchaseContrHdrDist` | *Association* |
-| `_CentralPurchaseContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `DistributionKey` | ✓ | |  |  |
+| `PartnerCounter` | ✓ | |  |  |
+| `PartnerFunction` |  | |  |  |
+| `ExtPlantForPurg` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierSubrange` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `_CentralPurchaseContrHdrDist` | | ✓ | | |
+| `_CentralPurchaseContract` | | ✓ | | |
 
 ## Source Code
 

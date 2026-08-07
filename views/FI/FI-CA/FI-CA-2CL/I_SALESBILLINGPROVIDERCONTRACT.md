@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesBillingProviderContract` | `ProviderContract` |
-| `BusinessPartner` | `BusinessPartner` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `CAProviderContractName` | `CAProviderContractName` |
-| `CAPrvdrContrStartDateTime` | `CAPrvdrContrStartDateTime` |
-| `CAPrvdrContrEndDateTime` | `CAPrvdrContrEndDateTime` |
-| `CompanyCode` | `CompanyCode` |
-| `TimeZoneID` | `TimeZoneID` |
-| `CAProviderContractStatus` | `CAProviderContractStatus` |
-| `CAProviderContractSender` | `CAProviderContractSender` |
-| `PrvdrContrEarliestEndDateTime` | `PrvdrContrEarliestEndDateTime` |
-| `MinNrOfMonthsForContractPeriod` | `MinNrOfMonthsForContractPeriod` |
-| `NrOfMonthsForContractRenewal` | `NrOfMonthsForContractRenewal` |
-| `NrOfDaysForContrNoticePeriod` | `NrOfDaysForContrNoticePeriod` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_BusinessPartner` | *Association* |
-| `_CompCode` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_TimeZone` | *Association* |
-| `_ProviderContractStatus` | *Association* |
-| `_ProviderContractSender` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesBillingProviderContract` | ✓ | |  | `ProviderContract` |
+| `BusinessPartner` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `CAProviderContractName` |  | |  |  |
+| `CAPrvdrContrStartDateTime` |  | |  |  |
+| `CAPrvdrContrEndDateTime` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `TimeZoneID` |  | |  |  |
+| `CAProviderContractStatus` |  | |  |  |
+| `CAProviderContractSender` |  | |  |  |
+| `PrvdrContrEarliestEndDateTime` |  | |  |  |
+| `MinNrOfMonthsForContractPeriod` |  | |  |  |
+| `NrOfMonthsForContractRenewal` |  | |  |  |
+| `NrOfDaysForContrNoticePeriod` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_CompCode` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_TimeZone` | | ✓ | | |
+| `_ProviderContractStatus` | | ✓ | | |
+| `_ProviderContractSender` | | ✓ | | |
 
 ## Associations
 

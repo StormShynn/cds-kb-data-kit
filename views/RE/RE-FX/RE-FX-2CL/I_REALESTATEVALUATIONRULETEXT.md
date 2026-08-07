@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `REValuationRule` | `cerule` |
-| `REValuationRuleName` | `xcerule` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `REValuationRule` | ✓ | |  | `cerule` |
+| `REValuationRuleName` |  | |  | `xcerule` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

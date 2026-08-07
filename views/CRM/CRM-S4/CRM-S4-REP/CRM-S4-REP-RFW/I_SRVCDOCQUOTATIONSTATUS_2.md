@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentIsQuotation` | `cast ( substring( domvalue_l, 1, 1 ) as crms4_stat_quotation preserving type )` |
-| `_SrvcDocQuotationStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentIsQuotation` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as crms4_stat_quotation preserving type )` |
+| `_SrvcDocQuotationStatusText` | | ✓ | | |
 
 ## Associations
 

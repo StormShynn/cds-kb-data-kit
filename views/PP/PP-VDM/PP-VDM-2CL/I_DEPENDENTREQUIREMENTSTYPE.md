@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DependentRequirementsType` | `cast(substring(l.domvalue_l, 1, 1) as vdm_sbdkz preserving type)` |
-| `DomainValue` | `l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DependentRequirementsType` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as vdm_sbdkz preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

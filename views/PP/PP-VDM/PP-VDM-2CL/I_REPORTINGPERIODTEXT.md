@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReportingPeriod` | `cast( cast(substring(t.domvalue_l, 1, 2) as abap.numc(2) ) as pph_reportingperiod preserving type)` |
-| key `Language` | `cast(t.ddlanguage as spras preserving type)` |
-| `ReportingPeriodName` | `cast(t.ddtext as pph_reportingperiodname preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `_Language` | *Association* |
-| `_ReportingPeriod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReportingPeriod` | ✓ | |  | `cast( cast(substring(t.domvalue_l, 1, 2) as abap.numc(2) ) as pph_reportingperiod preserving type)` |
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
+| `ReportingPeriodName` |  | |  | `cast(t.ddtext as pph_reportingperiodname preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_ReportingPeriod` | | ✓ | | |
 
 ## Associations
 

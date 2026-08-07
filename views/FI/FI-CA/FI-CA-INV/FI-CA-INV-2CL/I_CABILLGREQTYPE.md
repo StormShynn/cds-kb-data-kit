@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgReqType` | `billreqtype` |
-| `_CABillgReqTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgReqType` | ✓ | |  | `billreqtype` |
+| `_CABillgReqTypeText` | | ✓ | | |
 
 ## Associations
 

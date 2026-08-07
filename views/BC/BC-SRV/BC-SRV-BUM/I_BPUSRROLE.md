@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `BusinessPartnerRole` | `BusinessPartnerRole` |
-| `BusinessPartnerRoleCategory` | `BusinessPartnerRoleCategory` |
-| `ValidFrom` | `ValidFrom` |
-| `ValidTo` | `ValidTo` |
-| `_BusinessUser` | *Association* |
-| `_BusinessUserBasic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `BusinessPartnerRole` | ✓ | |  |  |
+| `BusinessPartnerRoleCategory` |  | |  |  |
+| `ValidFrom` |  | |  |  |
+| `ValidTo` |  | |  |  |
+| `_BusinessUser` | | ✓ | | |
+| `_BusinessUserBasic` | | ✓ | | |
 
 ## Associations
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallPickingStatus` | `statu` |
-| key `Language` | `spras` |
-| `OverallPickingStatusDesc` | `bezei` |
-| `_OverallPickingStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallPickingStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `OverallPickingStatusDesc` |  | |  | `bezei` |
+| `_OverallPickingStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

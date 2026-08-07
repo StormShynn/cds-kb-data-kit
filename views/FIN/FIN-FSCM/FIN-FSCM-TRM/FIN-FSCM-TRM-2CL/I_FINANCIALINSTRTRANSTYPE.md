@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialInstrTransactionType` | `cast(FinancialInstrTransType.sfhaart as ftr_gen_transaction_type preserving type)` |
-| key `FinancialInstrumentProductType` | `FinancialInstrTransType.sgsart` |
-| `FinInstrTransactionCategory` | `FinancialInstrTransType.sfgtyp` |
-| `TreasuryContractType` | `rantyp` |
-| `_Text` | *Association* |
-| `_FinancialInstrProductType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialInstrTransactionType` | ✓ | |  | `cast(FinancialInstrTransType.sfhaart as ftr_gen_transaction_type preserving type)` |
+| `FinancialInstrumentProductType` | ✓ | |  | `sgsart` |
+| `FinInstrTransactionCategory` |  | |  | `sfgtyp` |
+| `TreasuryContractType` |  | |  | `rantyp` |
+| `_Text` | | ✓ | | |
+| `_FinancialInstrProductType` | | ✓ | | |
 
 ## Associations
 

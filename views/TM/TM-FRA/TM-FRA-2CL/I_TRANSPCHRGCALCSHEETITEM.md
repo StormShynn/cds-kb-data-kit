@@ -28,40 +28,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspCalcSheetItemUUID` | `cast(db_key as /scmtms/transpcalcshtitm_uuid preserving type)` |
-| `TranspCalculationSheetUUID` | `cast(parent_key as /scmtms/transpcalcsheet_uuid preserving type)` |
-| `TransportationAgreementUUID` | `_TranspChargeCalcSheet.TransportationAgreementUUID` |
-| `TranspCalculationSheetItem` | `cast(linenr as /scmtms/vdm_tccs_item_number preserving type)` |
-| `TranspChargeType` | `tcet084` |
-| `TranspChargeResolutionBase` | `cast(clcresbas036 as /scmtms/vdm_tcm_res_base preserving type)` |
-| `TransportationRateUUID` | `uuid026` |
-| `TranspCalcSheetItemCurrency` | `case when currcode016 = '%' then cast('' as /scmtms/vdm_tccs_item_curr ) else cast(currcode016 as /scmtms/vdm_tccs_item_curr preserving type) end` |
-| `TranspCalcSheetItemAmount` | `case when currcode016 = '%' then cast( cast( 0 as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tccs_item_amount ) else cast( cast( amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tccs_item_amount ) end` |
-| `TranspCalcSheetItemPctUnit` | `cast( case when currcode016 = '%' then cast( '%' as abap.char( 3 )) else '' end as /scmtms/vdm_tccs_itm_pct_unit)` |
-| `TranspCalcSheetItemAmountPct` | `case when currcode016 = '%' then cast( cast( amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tccs_itm_amt_pct_q ) else cast( cast( 0 as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tccs_itm_amt_pct_q ) end` |
-| `TranspCalculationMethodType` | `calc_meth_code` |
-| `TranspCalculationDateType` | `calc_date_type` |
-| `TranspChargeIsMandatory` | `mandatory` |
-| `TranspCalcBaselineUUID` | `cast( calcbaseline_key as /scmtms/vdm_tccs_baseline_uuid preserving type)` |
-| `TranspCalcSheetItemRefToUUID` | `cast( calcbase_to_key as /scmtms/calcshtitm_ref_to_uuid preserving type)` |
-| `TranspDimnWeightProfile` | `dim_wt_profile` |
-| `TranspChargeInstrnType` | `tccalcresins040` |
-| `TranspIndexRateTableUUID` | `cast(uuid_index_rate as /scmtms/vdm_rt_index_uuid preserving type)` |
-| `TranspCalcShtItmIdxBaseDteTime` | `index_base_date_ts` |
-| `TranspChargeIsDependent` | `dependent_chrge` |
-| `TransportationStageCategory` | `stage_cat` |
-| `TranspCalculationMethodName` | `cast(calc_meth_name as /scmtms/vdm_tcm_calc_mthd_name preserving type)` |
-| `TranspCalcShtItmIsManualCharge` | `cast(manual_entry as /scmtms/vdm_tccs_item_mnl_chrg preserving type)` |
-| `_TransportationRate` | *Association* |
-| `_TranspCalcSheetItemPctUnit` | *Association* |
-| `_TranspChrgCalcResolutionBase` | *Association* |
-| `_TranspChargeType` | *Association* |
-| `_TranspCalcMethodType` | *Association* |
-| `_TranspCalcSheetItemCurrency` | *Association* |
-| `_TransportationAgreement` | *Association* |
-| `_TranspChargeCalcSheet` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspCalcSheetItemUUID` | ✓ | |  | `cast(db_key as /scmtms/transpcalcshtitm_uuid preserving type)` |
+| `TranspCalculationSheetUUID` |  | |  | `cast(parent_key as /scmtms/transpcalcsheet_uuid preserving type)` |
+| `TransportationAgreementUUID` |  | | `_TranspChargeCalcSheet` | `TransportationAgreementUUID` |
+| `TranspCalculationSheetItem` |  | |  | `cast(linenr as /scmtms/vdm_tccs_item_number preserving type)` |
+| `TranspChargeType` |  | |  | `tcet084` |
+| `TranspChargeResolutionBase` |  | |  | `cast(clcresbas036 as /scmtms/vdm_tcm_res_base preserving type)` |
+| `TransportationRateUUID` |  | |  | `uuid026` |
+| `TranspCalcSheetItemCurrency` |  | |  | `case when currcode016 = '%' then cast('' as /scmtms/vdm_tccs_item_curr ) else cast(currcode016 as /scmtms/vdm_tccs_item_curr preserving type) end` |
+| `TranspCalcSheetItemAmount` |  | |  | `case when currcode016 = '%' then cast( cast( 0 as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tccs_item_amount ) else cast( cast( amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tccs_item_amount ) end` |
+| `TranspCalcSheetItemPctUnit` |  | |  | `cast( case when currcode016 = '%' then cast( '%' as abap.char( 3 )) else '' end as /scmtms/vdm_tccs_itm_pct_unit)` |
+| `TranspCalcSheetItemAmountPct` |  | |  | `case when currcode016 = '%' then cast( cast( amount as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tccs_itm_amt_pct_q ) else cast( cast( 0 as abap.dec(31,6) ) * 10000 as /scmtms/vdm_tccs_itm_amt_pct_q ) end` |
+| `TranspCalculationMethodType` |  | |  | `calc_meth_code` |
+| `TranspCalculationDateType` |  | |  | `calc_date_type` |
+| `TranspChargeIsMandatory` |  | |  | `mandatory` |
+| `TranspCalcBaselineUUID` |  | |  | `cast( calcbaseline_key as /scmtms/vdm_tccs_baseline_uuid preserving type)` |
+| `TranspCalcSheetItemRefToUUID` |  | |  | `cast( calcbase_to_key as /scmtms/calcshtitm_ref_to_uuid preserving type)` |
+| `TranspDimnWeightProfile` |  | |  | `dim_wt_profile` |
+| `TranspChargeInstrnType` |  | |  | `tccalcresins040` |
+| `TranspIndexRateTableUUID` |  | |  | `cast(uuid_index_rate as /scmtms/vdm_rt_index_uuid preserving type)` |
+| `TranspCalcShtItmIdxBaseDteTime` |  | |  | `index_base_date_ts` |
+| `TranspChargeIsDependent` |  | |  | `dependent_chrge` |
+| `TransportationStageCategory` |  | |  | `stage_cat` |
+| `TranspCalculationMethodName` |  | |  | `cast(calc_meth_name as /scmtms/vdm_tcm_calc_mthd_name preserving type)` |
+| `TranspCalcShtItmIsManualCharge` |  | |  | `cast(manual_entry as /scmtms/vdm_tccs_item_mnl_chrg preserving type)` |
+| `_TransportationRate` | | ✓ | | |
+| `_TranspCalcSheetItemPctUnit` | | ✓ | | |
+| `_TranspChrgCalcResolutionBase` | | ✓ | | |
+| `_TranspChargeType` | | ✓ | | |
+| `_TranspCalcMethodType` | | ✓ | | |
+| `_TranspCalcSheetItemCurrency` | | ✓ | | |
+| `_TransportationAgreement` | | ✓ | | |
+| `_TranspChargeCalcSheet` | | ✓ | | |
 
 ## Associations
 

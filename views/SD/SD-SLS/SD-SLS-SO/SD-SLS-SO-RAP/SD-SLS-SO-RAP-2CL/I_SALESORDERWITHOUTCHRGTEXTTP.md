@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutCharge` | `SalesOrderWithoutChargeText.SalesOrderWithoutCharge` |
-| key `Language` | `SalesOrderWithoutChargeText.Language` |
-| key `LongTextID` | `SalesOrderWithoutChargeText.LongTextID` |
-| `LongTextIDForEdit` | `SalesOrderWithoutChargeText.LongTextIDForEdit` |
-| `LanguageForEdit` | `SalesOrderWithoutChargeText.LanguageForEdit` |
-| `LongText` | `SalesOrderWithoutChargeText.LongText` |
-| `SalesOrderWithoutChargeType` | `SalesOrderWithoutChargeText.SalesOrderWithoutChargeType` |
-| `SalesOrganization` | `SalesOrderWithoutChargeText.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderWithoutChargeText.DistributionChannel` |
-| `OrganizationDivision` | `SalesOrderWithoutChargeText.OrganizationDivision` |
-| `_SalesOrderWithoutCharge` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesOrderWithoutCharge` | | ✓ | | |
 
 ## Source Code
 

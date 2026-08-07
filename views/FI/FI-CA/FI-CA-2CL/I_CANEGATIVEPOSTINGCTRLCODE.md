@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CANegativePostingControlCode` | `cast( left( dd07l.domvalue_l, 1 ) as negbu_kk )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CANegativePostingControlCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as negbu_kk )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanContainerStatus` | `cast ( right(domvalue_l, 1) as pkbst preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanContainerStatus` | ✓ | |  | `cast ( right(domvalue_l, 1) as pkbst preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

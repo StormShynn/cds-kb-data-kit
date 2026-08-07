@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserID` | `us_name` |
-| key `UserSubstituteIdentifier` | `rep_name` |
-| key `ValidityStartDate` | `begda` |
-| `ValidityEndDate` | `endda` |
-| `UserSubstitutionIsActive` | `active` |
-| `SubstituteProfile` | `reppr` |
-| `_BusinessUser` | *Association* |
-| `_BusinessUserSubstitute` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserID` | ✓ | |  | `us_name` |
+| `UserSubstituteIdentifier` | ✓ | |  | `rep_name` |
+| `ValidityStartDate` | ✓ | |  | `begda` |
+| `ValidityEndDate` |  | |  | `endda` |
+| `UserSubstitutionIsActive` |  | |  | `active` |
+| `SubstituteProfile` |  | |  | `reppr` |
+| `_BusinessUser` | | ✓ | | |
+| `_BusinessUserSubstitute` | | ✓ | | |
 
 ## Associations
 

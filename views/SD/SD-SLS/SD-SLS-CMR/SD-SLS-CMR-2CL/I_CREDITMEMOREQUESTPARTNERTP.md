@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `CreditMemoRequestPartner.CreditMemoRequest` |
-| key `PartnerFunction` | `CreditMemoRequestPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `CreditMemoRequestPartner.PartnerFunctionForEdit` |
-| `Customer` | `CreditMemoRequestPartner.Customer` |
-| `Supplier` | `CreditMemoRequestPartner.Supplier` |
-| `Personnel` | `CreditMemoRequestPartner.Personnel` |
-| `ContactPerson` | `CreditMemoRequestPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `CreditMemoRequestPartner.ReferenceBusinessPartner` |
-| `Partner` | `CreditMemoRequestPartner.Partner` |
-| `CreditMemoRequestType` | `CreditMemoRequestPartner.CreditMemoRequestType` |
-| `SalesOrganization` | `CreditMemoRequestPartner.SalesOrganization` |
-| `DistributionChannel` | `CreditMemoRequestPartner.DistributionChannel` |
-| `OrganizationDivision` | `CreditMemoRequestPartner.OrganizationDivision` |
-| `_CreditMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `CreditMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_CreditMemoRequest` | | ✓ | | |
 
 ## Source Code
 

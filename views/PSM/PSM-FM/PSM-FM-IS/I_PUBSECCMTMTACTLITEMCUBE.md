@@ -30,296 +30,296 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Ledger` | `AcItem.Ledger` |
-| key `SourceLedger` | `AcItem.SourceLedger` |
-| key `CompanyCode` | `AcItem.CompanyCode` |
-| key `FiscalYear` | `AcItem.FiscalYear` |
-| key `AccountingDocument` | `AcItem.AccountingDocument` |
-| key `LedgerGLLineItem` | `AcItem.LedgerGLLineItem` |
-| `LedgerFiscalYear` | `AcItem.LedgerFiscalYear` |
-| `ChartOfAccounts` | `AcItem.ChartOfAccounts` |
-| `ControllingArea` | `AcItem.ControllingArea` |
-| `FinancialTransactionType` | `AcItem.FinancialTransactionType` |
-| `BusinessTransactionType` | `AcItem.BusinessTransactionType` |
-| `ReferenceDocumentType` | `AcItem.ReferenceDocumentType` |
-| `LogicalSystem` | `AcItem.LogicalSystem` |
-| `ReferenceDocumentContext` | `AcItem.ReferenceDocumentContext` |
-| `ReferenceDocument` | `AcItem.ReferenceDocument` |
-| `ReferenceDocumentItem` | `AcItem.ReferenceDocumentItem` |
-| `ReferenceDocumentItemGroup` | `AcItem.ReferenceDocumentItemGroup` |
-| `IsReversal` | `AcItem.IsReversal` |
-| `IsReversed` | `AcItem.IsReversed` |
-| `ReversalReferenceDocumentCntxt` | `AcItem.ReversalReferenceDocumentCntxt` |
-| `ReversalReferenceDocument` | `AcItem.ReversalReferenceDocument` |
-| `IsSettlement` | `AcItem.IsSettlement` |
-| `IsSettled` | `AcItem.IsSettled` |
-| `PredecessorReferenceDocType` | `AcItem.PredecessorReferenceDocType` |
-| `PredecessorReferenceDocCntxt` | `AcItem.PredecessorReferenceDocCntxt` |
-| `PredecessorReferenceDocument` | `AcItem.PredecessorReferenceDocument` |
-| `PredecessorReferenceDocItem` | `AcItem.PredecessorReferenceDocItem` |
-| `SourceReferenceDocumentType` | `AcItem.SourceReferenceDocumentType` |
-| `SourceLogicalSystem` | `AcItem.SourceLogicalSystem` |
-| `SourceReferenceDocumentCntxt` | `AcItem.SourceReferenceDocumentCntxt` |
-| `SourceReferenceDocument` | `AcItem.SourceReferenceDocument` |
-| `SourceReferenceDocumentItem` | `AcItem.SourceReferenceDocumentItem` |
-| `SourceReferenceDocSubitem` | `AcItem.SourceReferenceDocSubitem` |
-| `IsCommitment` | `AcItem.IsCommitment` |
-| `JrnlEntryItemObsoleteReason` | `AcItem.JrnlEntryItemObsoleteReason` |
-| `GLAccount` | `AcItem.GLAccount` |
-| `CostCenterHierarchy` | `cast( AcItem.CostCenter as fis_cctr_hryid_42)` |
-| `CostCenter` | `AcItem.CostCenter` |
-| `ProfitCenter` | `AcItem.ProfitCenter` |
-| `FunctionalArea` | `AcItem.FunctionalArea` |
-| `BusinessArea` | `AcItem.BusinessArea` |
-| `Segment` | `AcItem.Segment` |
-| `PartnerCostCenter` | `AcItem.PartnerCostCenter` |
-| `PartnerProfitCenter` | `AcItem.PartnerProfitCenter` |
-| `PartnerFunctionalArea` | `AcItem.PartnerFunctionalArea` |
-| `PartnerBusinessArea` | `AcItem.PartnerBusinessArea` |
-| `PartnerCompany` | `AcItem.PartnerCompany` |
-| `PartnerSegment` | `AcItem.PartnerSegment` |
-| `TransactionCurrency` | `AcItem.TransactionCurrency` |
-| `AmountInTransactionCurrency` | `} AcItem.AmountInTransactionCurrency` |
-| `CompanyCodeCurrency` | `AcItem.CompanyCodeCurrency` |
-| `AmountInCompanyCodeCurrency` | `} AcItem.AmountInCompanyCodeCurrency` |
-| `GlobalCurrency` | `AcItem.GlobalCurrency` |
-| `AmountInGlobalCurrency` | `} AcItem.AmountInGlobalCurrency` |
-| `BaseUnit` | `AcItem.BaseUnit` |
-| `Quantity` | `} AcItem.Quantity` |
-| `CostSourceUnit` | `AcItem.CostSourceUnit` |
-| `FundHierarchy` | `cast( AcItem.Fund as fmis_hryid_fund )` |
-| `GrantHierarchy` | `cast (AcItem.GrantID as gm_hryid_grant)` |
-| `FunctionalAreaHierarchy` | `cast( AcItem.FunctionalArea as fis_hryid_functionalarea_42)` |
-| `BudgetAccountHierarchy` | `cast (PubSecBudgetAccount as psm_hryid_budgetaccount )` |
-| `PubSecExpnCmtmtAmtInTransCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInTransactionCurrency as psm_amt_expn_cmtmt_trans_curr ) else cast( '0' as psm_amt_expn_cmtmt_trans_curr ) end` |
-| `PubSecExpnActlAmtInTransCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInTransactionCurrency as psm_amt_expn_actl_trans_curr ) else cast( '0' as psm_amt_expn_actl_trans_curr ) end` |
-| `PubSecRevnCmtmtAmtInTransCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInTransactionCurrency as psm_amt_revn_cmtmt_trans_curr ) else cast( '0' as psm_amt_revn_cmtmt_trans_curr ) end` |
-| `PubSecRevnActlAmtInTransCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInTransactionCurrency as psm_amt_revn_actl_trans_curr ) else cast( '0' as psm_amt_revn_actl_trans_curr ) end` |
-| `PubSecExpnCmtmtAmtInCoCodeCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInCompanyCodeCurrency as psm_amt_expn_cmtmt_cc_curr ) else cast( '0' as psm_amt_expn_cmtmt_cc_curr ) end` |
-| `PubSecExpnActlAmtInCoCodeCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInCompanyCodeCurrency as psm_amt_expn_actl_cc_curr ) else cast( '0' as psm_amt_expn_actl_cc_curr ) end` |
-| `PubSecRevnCmtmtAmtInCoCodeCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInCompanyCodeCurrency as psm_amt_revn_cmtmt_cc_curr ) else cast( '0' as psm_amt_revn_cmtmt_cc_curr ) end` |
-| `PubSecRevnActlAmtInCoCodeCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInCompanyCodeCurrency as psm_amt_revn_actl_cc_curr ) else cast( '0' as psm_amt_revn_actl_cc_curr ) end` |
-| `PubSecExpnCmtmtAmtInGlobalCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInGlobalCurrency as psm_amt_expn_cmtmt_grp_curr ) else cast( '0' as psm_amt_expn_cmtmt_grp_curr ) end` |
-| `PubSecExpnActlAmtInGlobalCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInGlobalCurrency as psm_amt_expn_actl_grp_curr ) else cast( '0' as psm_amt_expn_actl_grp_curr ) end` |
-| `PubSecRevnCmtmtAmtInGlobalCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInGlobalCurrency as psm_amt_revn_cmtmt_grp_curr ) else cast( '0' as psm_amt_revn_cmtmt_grp_curr ) end` |
-| `PubSecRevnActlAmtInGlobalCrcy` | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInGlobalCurrency as psm_amt_revn_actl_grp_curr ) else cast( '0' as psm_amt_revn_actl_grp_curr ) end` |
-| `DebitCreditCode` | `AcItem.DebitCreditCode` |
-| `FiscalPeriod` | `AcItem.FiscalPeriod` |
-| `FiscalYearVariant` | `AcItem.FiscalYearVariant` |
-| `FiscalYearPeriod` | `AcItem.FiscalYearPeriod` |
-| `PostingDate` | `AcItem.PostingDate` |
-| `DocumentDate` | `AcItem.DocumentDate` |
-| `AccountingDocumentType` | `AcItem.AccountingDocumentType` |
-| `AccountingDocumentItem` | `AcItem.AccountingDocumentItem` |
-| `AssignmentReference` | `AcItem.AssignmentReference` |
-| `AccountingDocumentCategory` | `AcItem.AccountingDocumentCategory` |
-| `PostingKey` | `AcItem.PostingKey` |
-| `TransactionTypeDetermination` | `AcItem.TransactionTypeDetermination` |
-| `SubLedgerAcctLineItemType` | `AcItem.SubLedgerAcctLineItemType` |
-| `AccountingDocCreatedByUser` | `AcItem.AccountingDocCreatedByUser` |
-| `LastChangeDateTime` | `AcItem.LastChangeDateTime` |
-| `CreationDateTime` | `AcItem.CreationDateTime` |
-| `CreationDate` | `AcItem.CreationDate` |
-| `EliminationProfitCenter` | `AcItem.EliminationProfitCenter` |
-| `OriginObjectType` | `AcItem.OriginObjectType` |
-| `GLAccountType` | `AcItem.GLAccountType` |
-| `AlternativeGLAccount` | `AcItem.AlternativeGLAccount` |
-| `CountryChartOfAccounts` | `AcItem.CountryChartOfAccounts` |
-| `InvoiceReference` | `AcItem.InvoiceReference` |
-| `InvoiceReferenceFiscalYear` | `AcItem.InvoiceReferenceFiscalYear` |
-| `FollowOnDocumentType` | `AcItem.FollowOnDocumentType` |
-| `InvoiceItemReference` | `AcItem.InvoiceItemReference` |
-| `ReferencePurchaseOrderCategory` | `AcItem.ReferencePurchaseOrderCategory` |
-| `PurchasingDocument` | `AcItem.PurchasingDocument` |
-| `PurchasingDocumentItem` | `AcItem.PurchasingDocumentItem` |
-| `AccountAssignmentNumber` | `AcItem.AccountAssignmentNumber` |
-| `DocumentItemText` | `AcItem.DocumentItemText` |
-| `SalesDocument` | `AcItem.SalesDocument` |
-| `SalesDocumentItem` | `AcItem.SalesDocumentItem` |
-| `Product` | `AcItem.Product` |
-| `Plant` | `AcItem.Plant` |
-| `Supplier` | `AcItem.Supplier` |
-| `Customer` | `AcItem.Customer` |
-| `ServicesRenderedDate` | `AcItem.ServicesRenderedDate` |
-| `ConditionContract` | `AcItem.ConditionContract` |
-| `FinancialAccountType` | `AcItem.FinancialAccountType` |
-| `SpecialGLCode` | `AcItem.SpecialGLCode` |
-| `TaxCode` | `AcItem.TaxCode` |
-| `IsOpenItemManaged` | `AcItem.IsOpenItemManaged` |
-| `ClearingDate` | `AcItem.ClearingDate` |
-| `ClearingAccountingDocument` | `AcItem.ClearingAccountingDocument` |
-| `ClearingDocFiscalYear` | `AcItem.ClearingDocFiscalYear` |
-| `IsBalanceSheetAccount` | `AcItem._GLAccountInChartOfAccounts.IsBalanceSheetAccount` |
-| `AssetDepreciationArea` | `AcItem.AssetDepreciationArea` |
-| `MasterFixedAsset` | `AcItem.MasterFixedAsset` |
-| `FixedAsset` | `AcItem.FixedAsset` |
-| `AssetValueDate` | `AcItem.AssetValueDate` |
-| `AssetTransactionType` | `AcItem.AssetTransactionType` |
-| `DepreciationFiscalPeriod` | `AcItem.DepreciationFiscalPeriod` |
-| `GroupMasterFixedAsset` | `AcItem.GroupMasterFixedAsset` |
-| `GroupFixedAsset` | `AcItem.GroupFixedAsset` |
-| `AssetClass` | `AcItem.AssetClass` |
-| `CostEstimate` | `AcItem.CostEstimate` |
-| `InventorySpecialStockValnType` | `AcItem.InventorySpecialStockValnType` |
-| `InvtrySpecialStockValnType_2` | `AcItem.InvtrySpecialStockValnType_2` |
-| `InventorySpecialStockType` | `AcItem.InventorySpecialStockType` |
-| `InventorySpclStkSalesDocument` | `AcItem.InventorySpclStkSalesDocument` |
-| `InventorySpclStkSalesDocItm` | `AcItem.InventorySpclStkSalesDocItm` |
-| `InventorySpecialStockSupplier` | `AcItem.InventorySpecialStockSupplier` |
-| `InventoryValuationType` | `AcItem.InventoryValuationType` |
-| `ValuationArea` | `AcItem.ValuationArea` |
-| `SenderGLAccount` | `AcItem.SenderGLAccount` |
-| `SenderAccountAssignment` | `AcItem.SenderAccountAssignment` |
-| `SenderAccountAssignmentType` | `AcItem.SenderAccountAssignmentType` |
-| `CostOriginGroup` | `AcItem.CostOriginGroup` |
-| `OriginSenderObject` | `AcItem.OriginSenderObject` |
-| `ControllingDebitCreditCode` | `AcItem.ControllingDebitCreditCode` |
-| `ControllingObjectDebitType` | `AcItem.ControllingObjectDebitType` |
-| `QuantityIsIncomplete` | `AcItem.QuantityIsIncomplete` |
-| `OffsettingAccount` | `AcItem.OffsettingAccount` |
-| `OffsettingAccountType` | `AcItem.OffsettingAccountType` |
-| `OffsettingChartOfAccounts` | `AcItem.OffsettingChartOfAccounts` |
-| `LineItemIsCompleted` | `AcItem.LineItemIsCompleted` |
-| `PersonnelNumber` | `AcItem.PersonnelNumber` |
-| `ControllingObjectClass` | `AcItem.ControllingObjectClass` |
-| `PartnerCompanyCode` | `AcItem.PartnerCompanyCode` |
-| `PartnerControllingObjectClass` | `AcItem.PartnerControllingObjectClass` |
-| `OriginCostCenter` | `AcItem.OriginCostCenter` |
-| `OriginProfitCenter` | `AcItem.OriginProfitCenter` |
-| `OriginCostCtrActivityType` | `AcItem.OriginCostCtrActivityType` |
-| `AccountAssignment` | `AcItem.AccountAssignment` |
-| `AccountAssignmentType` | `AcItem.AccountAssignmentType` |
-| `CostCtrActivityType` | `AcItem.CostCtrActivityType` |
-| `OrderID` | `AcItem.OrderID` |
-| `OrderCategory` | `AcItem.OrderCategory` |
-| `WBSElementInternalID` | `AcItem.WBSElementInternalID` |
-| `WBSElementExternalID` | `cast( AcItem._WBSElementBasicData.WBSElementExternalID as fis_wbsext_no_conv preserving type )` |
-| `PartnerWBSElementInternalID` | `AcItem.PartnerWBSElementInternalID` |
-| `PartnerWBSElementExternalID` | `cast( AcItem._PartnerWBSElementBasicData.WBSElementExternalID as fis_partner_wbsext_no_conv preserving type )` |
-| `ProjectInternalID` | `AcItem.ProjectInternalID` |
-| `ProjectExternalID` | `cast( _ProjectBasicData.ProjectExternalID as fis_projectext_no_conv preserving type )` |
-| `PartnerProjectInternalID` | `AcItem.PartnerProjectInternalID` |
-| `PartnerProjectExternalID` | `cast( _PartnerProjectBasicData.ProjectExternalID as fis_part_projectext_no_conv preserving type )` |
-| `OperatingConcern` | `AcItem.OperatingConcern` |
-| `BusinessProcess` | `AcItem.BusinessProcess` |
-| `CostObject` | `AcItem.CostObject` |
-| `CostAnalysisResource` | `AcItem.CostAnalysisResource` |
-| `WorkPackage` | `AcItem.WorkPackage` |
-| `WorkItem` | `AcItem.WorkItem` |
-| `CustomerServiceNotification` | `AcItem.CustomerServiceNotification` |
-| `ServiceDocumentType` | `AcItem.ServiceDocumentType` |
-| `ServiceDocument` | `AcItem.ServiceDocument` |
-| `ServiceDocumentItem` | `AcItem.ServiceDocumentItem` |
-| `PartnerServiceDocumentType` | `AcItem.PartnerServiceDocumentType` |
-| `PartnerServiceDocument` | `AcItem.PartnerServiceDocument` |
-| `PartnerServiceDocumentItem` | `AcItem.PartnerServiceDocumentItem` |
-| `ServiceContractType` | `AcItem.ServiceContractType` |
-| `ServiceContract` | `AcItem.ServiceContract` |
-| `ServiceContractItem` | `AcItem.ServiceContractItem` |
-| `PartnerAccountAssignment` | `AcItem.PartnerAccountAssignment` |
-| `PartnerAccountAssignmentType` | `AcItem.PartnerAccountAssignmentType` |
-| `PartnerCostCtrActivityType` | `AcItem.PartnerCostCtrActivityType` |
-| `PartnerOrder` | `PartnerOrder` |
-| `PartnerOrder_2` | `PartnerOrder_2` |
-| `PartnerOrderCategory` | `AcItem.PartnerOrderCategory` |
-| `PartnerSalesDocument` | `AcItem.PartnerSalesDocument` |
-| `PartnerSalesDocumentItem` | `AcItem.PartnerSalesDocumentItem` |
-| `PartnerBusinessProcess` | `AcItem.PartnerBusinessProcess` |
-| `PartnerCostObject` | `AcItem.PartnerCostObject` |
-| `BillingDocumentType` | `AcItem.BillingDocumentType` |
-| `SalesOrganization` | `AcItem.SalesOrganization` |
-| `DistributionChannel` | `AcItem.DistributionChannel` |
-| `OrganizationDivision` | `AcItem.OrganizationDivision` |
-| `SoldProduct` | `AcItem.SoldProduct` |
-| `CustomerGroup` | `AcItem.CustomerGroup` |
-| `CustomerSupplierCountry` | `AcItem.CustomerSupplierCountry` |
-| `CustomerSupplierIndustry` | `AcItem.CustomerSupplierIndustry` |
-| `SalesDistrict` | `AcItem.SalesDistrict` |
-| `BillToParty` | `AcItem.BillToParty` |
-| `ShipToParty` | `AcItem.ShipToParty` |
-| `CustomerSupplierCorporateGroup` | `AcItem.CustomerSupplierCorporateGroup` |
-| `FinancialManagementArea` | `AcItem.FinancialManagementArea` |
-| `Fund` | `AcItem.Fund` |
-| `FundName` | `_Fund._Text[1:Language = $session.system_language].FundName` |
-| `GrantID` | `AcItem.GrantID` |
-| `GranteeMgmtSponsor` | `AcItem._Grant.GranteeMgmtSponsor` |
-| `BudgetPeriod` | `AcItem.BudgetPeriod` |
-| `PartnerFund` | `AcItem.PartnerFund` |
-| `PartnerGrant` | `AcItem.PartnerGrant` |
-| `PartnerBudgetPeriod` | `AcItem.PartnerBudgetPeriod` |
-| `FundsCenter` | `AcItem.FundsCenter` |
-| `FundedProgram` | `AcItem.FundedProgram` |
-| `CashLedgerAccount` | `AcItem.CashLedgerAccount` |
-| `CashLedgerCompanyCode` | `AcItem.CashLedgerCompanyCode` |
-| `PubSecBudgetAccount` | `AcItem.PubSecBudgetAccount` |
-| `PubSecBudgetAccountCoCode` | `AcItem.PubSecBudgetAccountCoCode` |
-| `PubSecBudgetCnsmpnDate` | `AcItem.PubSecBudgetCnsmpnDate` |
-| `PubSecBudgetCnsmpnFsclPeriod` | `AcItem.PubSecBudgetCnsmpnFsclPeriod` |
-| `PubSecBudgetCnsmpnFsclYear` | `AcItem.PubSecBudgetCnsmpnFsclYear` |
-| `PubSecBudgetCnsmpnType` | `AcItem.PubSecBudgetCnsmpnType` |
-| `PubSecBudgetCnsmpnAmtType` | `AcItem.PubSecBudgetCnsmpnAmtType` |
-| `PubSecBudgetCnsmpnTypeGroup` | `AcItem._PubSecBudgetCnsmpnType.PubSecBudgetCnsmpnTypeGroup` |
-| `PubSecBudgetIsRelevant` | `AcItem.PubSecBudgetIsRelevant` |
-| `PubSecBdgtAcctRevnExpnCode` | `AcItem._PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode` |
-| `FundType` | `AcItem._Fund.FundType` |
-| `GranteeMgmtFundType` | `AcItem._Fund._FundType.GranteeMgmtFundType` |
-| `SponsoredClass` | `AcItem.SponsoredClass` |
-| `SponsoredProgram` | `AcItem.SponsoredProgram` |
-| `GteeMBudgetValidityNumber` | `AcItem.GteeMBudgetValidityNumber` |
-| `PurchaseOrder` | `cast( case when AcItem.SourceReferenceDocumentType = 'PORD' and AcItem.SourceLedger = '0E' then AcItem.SourceReferenceDocument when AcItem.SourceLedger = '0L' and AcItem.PurchasingDocument is not initial then AcItem.PurchasingDocument else '' end as vdm_purchaseorder preserving type )` |
-| `PurchaseRequisition` | `cast( case when AcItem.SourceReferenceDocumentType = 'PREQ' then AcItem.SourceReferenceDocument else '' end as vdm_purchaserequisition preserving type )` |
-| `EarmarkedFundsDocument` | `cast( case when AcItem.SourceReferenceDocumentType = 'FMRES' then AcItem.SourceReferenceDocument else '' end as fmis_earmarkedfundsdoc preserving type )` |
-| `DebitAmountInCoCodeCrcy` | `} AcItem.DebitAmountInCoCodeCrcy` |
-| `CreditAmountInCoCodeCrcy` | `} AcItem.CreditAmountInCoCodeCrcy` |
-| `DebitAmountInTransCrcy` | `} AcItem.DebitAmountInTransCrcy` |
-| `CreditAmountInTransCrcy` | `} AcItem.CreditAmountInTransCrcy` |
-| `IsStatisticalOrder` | `AcItem.IsStatisticalOrder` |
-| `IsStatisticalCostCenter` | `AcItem.IsStatisticalCostCenter` |
-| `IsStatisticalSalesDocument` | `AcItem.IsStatisticalSalesDocument` |
-| `WBSIsStatisticalWBSElement` | `AcItem.WBSIsStatisticalWBSElement` |
-| `CalendarYear` | `AcItem.CalendarYear` |
-| `CalendarQuarter` | `AcItem.CalendarQuarter` |
-| `CalendarYearQuarter` | `AcItem.CalendarYearQuarter` |
-| `CalendarMonth` | `AcItem.CalendarMonth` |
-| `CalendarYearMonth` | `AcItem.CalendarYearMonth` |
-| `CalendarWeek` | `AcItem.CalendarWeek` |
-| `CalendarYearWeek` | `AcItem.CalendarYearWeek` |
-| `GLAccountAuthorizationGroup` | `AcItem.GLAccountAuthorizationGroup` |
-| `SupplierBasicAuthorizationGrp` | `AcItem.SupplierBasicAuthorizationGrp` |
-| `CustomerBasicAuthorizationGrp` | `AcItem.CustomerBasicAuthorizationGrp` |
-| `AcctgDocTypeAuthorizationGroup` | `AcItem.AcctgDocTypeAuthorizationGroup` |
-| `OrderType` | `AcItem.OrderType` |
-| `SalesOrderType` | `AcItem.SalesOrderType` |
-| `_PubSecBdgtCnsmpnFsclYear` | `AcItem._PubSecBudgetCnsmpnFsclYear` |
-| `_PubSecBdgtCnsmpnFsclPeriod` | `AcItem._PubSecBudgetCnsmpnFsclPeriod` |
-| `_PubSecBdgtCnsmpnType` | `AcItem._PubSecBudgetCnsmpnType` |
-| `_PubSecBudgetCnsmpnTypeGroup` | `AcItem._PubSecBudgetCnsmpnType._PubSecBudgetCnsmpnTypeGroup` |
-| `_PubSecBdgtCnsmpnAmtType` | `AcItem._PubSecBudgetCnsmpnAmtType` |
-| `_WBSElementExternalID` | *Association* |
-| `_WBSElementExternalIDText` | *Association* |
-| `_PartnerWBSElementExternalID` | *Association* |
-| `_ProjectExternalID` | *Association* |
-| `_ProjectExternalIDText` | *Association* |
-| `_PartnerProjectExternalID` | *Association* |
-| `_CalendarMonth` | *Association* |
-| `_CalendarQuarter` | *Association* |
-| `_CalendarYearMonth` | *Association* |
-| `_PubSecBdgtAcctRevnExpnCode` | *Association* |
-| `_FundType` | *Association* |
-| `_BudgetAccountInChtAccts` | *Association* |
-| `_SourceReferenceDocumentType` | *Association* |
-| `_GranteeMgmtFundType` | *Association* |
-| `_FundHierarchy` | *Association* |
-| `_Fund` | *Association* |
-| `_GrantHierarchy` | *Association* |
-| `_Grant` | *Association* |
-| `_BudgetAccountInChtAcctsHier` | *Association* |
-| `_FunctionalAreaHierarchy` | *Association* |
-| `_CostCenterHierarchy` | *Association* |
-| `_DocumentStore` | *Association* |
-| `_PartnerGrant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Ledger` | ✓ | |  |  |
+| `SourceLedger` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `AccountingDocument` | ✓ | |  |  |
+| `LedgerGLLineItem` | ✓ | |  |  |
+| `LedgerFiscalYear` |  | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `FinancialTransactionType` |  | |  |  |
+| `BusinessTransactionType` |  | |  |  |
+| `ReferenceDocumentType` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `ReferenceDocumentContext` |  | |  |  |
+| `ReferenceDocument` |  | |  |  |
+| `ReferenceDocumentItem` |  | |  |  |
+| `ReferenceDocumentItemGroup` |  | |  |  |
+| `IsReversal` |  | |  |  |
+| `IsReversed` |  | |  |  |
+| `ReversalReferenceDocumentCntxt` |  | |  |  |
+| `ReversalReferenceDocument` |  | |  |  |
+| `IsSettlement` |  | |  |  |
+| `IsSettled` |  | |  |  |
+| `PredecessorReferenceDocType` |  | |  |  |
+| `PredecessorReferenceDocCntxt` |  | |  |  |
+| `PredecessorReferenceDocument` |  | |  |  |
+| `PredecessorReferenceDocItem` |  | |  |  |
+| `SourceReferenceDocumentType` |  | |  |  |
+| `SourceLogicalSystem` |  | |  |  |
+| `SourceReferenceDocumentCntxt` |  | |  |  |
+| `SourceReferenceDocument` |  | |  |  |
+| `SourceReferenceDocumentItem` |  | |  |  |
+| `SourceReferenceDocSubitem` |  | |  |  |
+| `IsCommitment` |  | |  |  |
+| `JrnlEntryItemObsoleteReason` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `CostCenterHierarchy` |  | |  | `cast( AcItem.CostCenter as fis_cctr_hryid_42)` |
+| `CostCenter` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `Segment` |  | |  |  |
+| `PartnerCostCenter` |  | |  |  |
+| `PartnerProfitCenter` |  | |  |  |
+| `PartnerFunctionalArea` |  | |  |  |
+| `PartnerBusinessArea` |  | |  |  |
+| `PartnerCompany` |  | |  |  |
+| `PartnerSegment` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  | `} AcItem.AmountInTransactionCurrency` |
+| `CompanyCodeCurrency` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `} AcItem.AmountInCompanyCodeCurrency` |
+| `GlobalCurrency` |  | |  |  |
+| `AmountInGlobalCurrency` |  | |  | `} AcItem.AmountInGlobalCurrency` |
+| `BaseUnit` |  | |  |  |
+| `Quantity` |  | |  | `} AcItem.Quantity` |
+| `CostSourceUnit` |  | |  |  |
+| `FundHierarchy` |  | |  | `cast( AcItem.Fund as fmis_hryid_fund )` |
+| `GrantHierarchy` |  | |  | `cast (AcItem.GrantID as gm_hryid_grant)` |
+| `FunctionalAreaHierarchy` |  | |  | `cast( AcItem.FunctionalArea as fis_hryid_functionalarea_42)` |
+| `BudgetAccountHierarchy` |  | |  | `cast (PubSecBudgetAccount as psm_hryid_budgetaccount )` |
+| `PubSecExpnCmtmtAmtInTransCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInTransactionCurrency as psm_amt_expn_cmtmt_trans_curr ) else cast( '0' as psm_amt_expn_cmtmt_trans_curr ) end` |
+| `PubSecExpnActlAmtInTransCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInTransactionCurrency as psm_amt_expn_actl_trans_curr ) else cast( '0' as psm_amt_expn_actl_trans_curr ) end` |
+| `PubSecRevnCmtmtAmtInTransCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInTransactionCurrency as psm_amt_revn_cmtmt_trans_curr ) else cast( '0' as psm_amt_revn_cmtmt_trans_curr ) end` |
+| `PubSecRevnActlAmtInTransCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInTransactionCurrency as psm_amt_revn_actl_trans_curr ) else cast( '0' as psm_amt_revn_actl_trans_curr ) end` |
+| `PubSecExpnCmtmtAmtInCoCodeCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInCompanyCodeCurrency as psm_amt_expn_cmtmt_cc_curr ) else cast( '0' as psm_amt_expn_cmtmt_cc_curr ) end` |
+| `PubSecExpnActlAmtInCoCodeCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInCompanyCodeCurrency as psm_amt_expn_actl_cc_curr ) else cast( '0' as psm_amt_expn_actl_cc_curr ) end` |
+| `PubSecRevnCmtmtAmtInCoCodeCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInCompanyCodeCurrency as psm_amt_revn_cmtmt_cc_curr ) else cast( '0' as psm_amt_revn_cmtmt_cc_curr ) end` |
+| `PubSecRevnActlAmtInCoCodeCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInCompanyCodeCurrency as psm_amt_revn_actl_cc_curr ) else cast( '0' as psm_amt_revn_actl_cc_curr ) end` |
+| `PubSecExpnCmtmtAmtInGlobalCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInGlobalCurrency as psm_amt_expn_cmtmt_grp_curr ) else cast( '0' as psm_amt_expn_cmtmt_grp_curr ) end` |
+| `PubSecExpnActlAmtInGlobalCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'E' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInGlobalCurrency as psm_amt_expn_actl_grp_curr ) else cast( '0' as psm_amt_expn_actl_grp_curr ) end` |
+| `PubSecRevnCmtmtAmtInGlobalCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment = 'X' then cast( AcItem.AmountInGlobalCurrency as psm_amt_revn_cmtmt_grp_curr ) else cast( '0' as psm_amt_revn_cmtmt_grp_curr ) end` |
+| `PubSecRevnActlAmtInGlobalCrcy` |  | |  | `} case when _PubSecBudgetAccount.PubSecBdgtAcctRevnExpnCode = 'R' and AcItem.IsCommitment <> 'X' then cast( AcItem.AmountInGlobalCurrency as psm_amt_revn_actl_grp_curr ) else cast( '0' as psm_amt_revn_actl_grp_curr ) end` |
+| `DebitCreditCode` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `FiscalYearPeriod` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `AccountingDocumentType` |  | |  |  |
+| `AccountingDocumentItem` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `AccountingDocumentCategory` |  | |  |  |
+| `PostingKey` |  | |  |  |
+| `TransactionTypeDetermination` |  | |  |  |
+| `SubLedgerAcctLineItemType` |  | |  |  |
+| `AccountingDocCreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `EliminationProfitCenter` |  | |  |  |
+| `OriginObjectType` |  | |  |  |
+| `GLAccountType` |  | |  |  |
+| `AlternativeGLAccount` |  | |  |  |
+| `CountryChartOfAccounts` |  | |  |  |
+| `InvoiceReference` |  | |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  |  |
+| `FollowOnDocumentType` |  | |  |  |
+| `InvoiceItemReference` |  | |  |  |
+| `ReferencePurchaseOrderCategory` |  | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `AccountAssignmentNumber` |  | |  |  |
+| `DocumentItemText` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
+| `Product` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `ConditionContract` |  | |  |  |
+| `FinancialAccountType` |  | |  |  |
+| `SpecialGLCode` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `IsOpenItemManaged` |  | |  |  |
+| `ClearingDate` |  | |  |  |
+| `ClearingAccountingDocument` |  | |  |  |
+| `ClearingDocFiscalYear` |  | |  |  |
+| `IsBalanceSheetAccount` |  | |  |  |
+| `AssetDepreciationArea` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `AssetValueDate` |  | |  |  |
+| `AssetTransactionType` |  | |  |  |
+| `DepreciationFiscalPeriod` |  | |  |  |
+| `GroupMasterFixedAsset` |  | |  |  |
+| `GroupFixedAsset` |  | |  |  |
+| `AssetClass` |  | |  |  |
+| `CostEstimate` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `InvtrySpecialStockValnType_2` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `InventorySpclStkSalesDocument` |  | |  |  |
+| `InventorySpclStkSalesDocItm` |  | |  |  |
+| `InventorySpecialStockSupplier` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `SenderGLAccount` |  | |  |  |
+| `SenderAccountAssignment` |  | |  |  |
+| `SenderAccountAssignmentType` |  | |  |  |
+| `CostOriginGroup` |  | |  |  |
+| `OriginSenderObject` |  | |  |  |
+| `ControllingDebitCreditCode` |  | |  |  |
+| `ControllingObjectDebitType` |  | |  |  |
+| `QuantityIsIncomplete` |  | |  |  |
+| `OffsettingAccount` |  | |  |  |
+| `OffsettingAccountType` |  | |  |  |
+| `OffsettingChartOfAccounts` |  | |  |  |
+| `LineItemIsCompleted` |  | |  |  |
+| `PersonnelNumber` |  | |  |  |
+| `ControllingObjectClass` |  | |  |  |
+| `PartnerCompanyCode` |  | |  |  |
+| `PartnerControllingObjectClass` |  | |  |  |
+| `OriginCostCenter` |  | |  |  |
+| `OriginProfitCenter` |  | |  |  |
+| `OriginCostCtrActivityType` |  | |  |  |
+| `AccountAssignment` |  | |  |  |
+| `AccountAssignmentType` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `OrderCategory` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  | `cast( AcItem._WBSElementBasicData.WBSElementExternalID as fis_wbsext_no_conv preserving type )` |
+| `PartnerWBSElementInternalID` |  | |  |  |
+| `PartnerWBSElementExternalID` |  | |  | `cast( AcItem._PartnerWBSElementBasicData.WBSElementExternalID as fis_partner_wbsext_no_conv preserving type )` |
+| `ProjectInternalID` |  | |  |  |
+| `ProjectExternalID` |  | |  | `cast( _ProjectBasicData.ProjectExternalID as fis_projectext_no_conv preserving type )` |
+| `PartnerProjectInternalID` |  | |  |  |
+| `PartnerProjectExternalID` |  | |  | `cast( _PartnerProjectBasicData.ProjectExternalID as fis_part_projectext_no_conv preserving type )` |
+| `OperatingConcern` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `CostAnalysisResource` |  | |  |  |
+| `WorkPackage` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `CustomerServiceNotification` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `PartnerServiceDocumentType` |  | |  |  |
+| `PartnerServiceDocument` |  | |  |  |
+| `PartnerServiceDocumentItem` |  | |  |  |
+| `ServiceContractType` |  | |  |  |
+| `ServiceContract` |  | |  |  |
+| `ServiceContractItem` |  | |  |  |
+| `PartnerAccountAssignment` |  | |  |  |
+| `PartnerAccountAssignmentType` |  | |  |  |
+| `PartnerCostCtrActivityType` |  | |  |  |
+| `PartnerOrder` |  | |  |  |
+| `PartnerOrder_2` |  | |  |  |
+| `PartnerOrderCategory` |  | |  |  |
+| `PartnerSalesDocument` |  | |  |  |
+| `PartnerSalesDocumentItem` |  | |  |  |
+| `PartnerBusinessProcess` |  | |  |  |
+| `PartnerCostObject` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SoldProduct` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `CustomerSupplierCountry` |  | |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `CustomerSupplierCorporateGroup` |  | |  |  |
+| `FinancialManagementArea` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FundName` |  | |  | `_Fund._Text[1:Language = $session.system_language].FundName` |
+| `GrantID` |  | |  |  |
+| `GranteeMgmtSponsor` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `PartnerFund` |  | |  |  |
+| `PartnerGrant` |  | |  |  |
+| `PartnerBudgetPeriod` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `FundedProgram` |  | |  |  |
+| `CashLedgerAccount` |  | |  |  |
+| `CashLedgerCompanyCode` |  | |  |  |
+| `PubSecBudgetAccount` |  | |  |  |
+| `PubSecBudgetAccountCoCode` |  | |  |  |
+| `PubSecBudgetCnsmpnDate` |  | |  |  |
+| `PubSecBudgetCnsmpnFsclPeriod` |  | |  |  |
+| `PubSecBudgetCnsmpnFsclYear` |  | |  |  |
+| `PubSecBudgetCnsmpnType` |  | |  |  |
+| `PubSecBudgetCnsmpnAmtType` |  | |  |  |
+| `PubSecBudgetCnsmpnTypeGroup` |  | |  |  |
+| `PubSecBudgetIsRelevant` |  | |  |  |
+| `PubSecBdgtAcctRevnExpnCode` |  | |  |  |
+| `FundType` |  | |  |  |
+| `GranteeMgmtFundType` |  | |  |  |
+| `SponsoredClass` |  | |  |  |
+| `SponsoredProgram` |  | |  |  |
+| `GteeMBudgetValidityNumber` |  | |  |  |
+| `PurchaseOrder` |  | |  | `cast( case when AcItem.SourceReferenceDocumentType = 'PORD' and AcItem.SourceLedger = '0E' then AcItem.SourceReferenceDocument when AcItem.SourceLedger = '0L' and AcItem.PurchasingDocument is not initial then AcItem.PurchasingDocument else '' end as vdm_purchaseorder preserving type )` |
+| `PurchaseRequisition` |  | |  | `cast( case when AcItem.SourceReferenceDocumentType = 'PREQ' then AcItem.SourceReferenceDocument else '' end as vdm_purchaserequisition preserving type )` |
+| `EarmarkedFundsDocument` |  | |  | `cast( case when AcItem.SourceReferenceDocumentType = 'FMRES' then AcItem.SourceReferenceDocument else '' end as fmis_earmarkedfundsdoc preserving type )` |
+| `DebitAmountInCoCodeCrcy` |  | |  | `} AcItem.DebitAmountInCoCodeCrcy` |
+| `CreditAmountInCoCodeCrcy` |  | |  | `} AcItem.CreditAmountInCoCodeCrcy` |
+| `DebitAmountInTransCrcy` |  | |  | `} AcItem.DebitAmountInTransCrcy` |
+| `CreditAmountInTransCrcy` |  | |  | `} AcItem.CreditAmountInTransCrcy` |
+| `IsStatisticalOrder` |  | |  |  |
+| `IsStatisticalCostCenter` |  | |  |  |
+| `IsStatisticalSalesDocument` |  | |  |  |
+| `WBSIsStatisticalWBSElement` |  | |  |  |
+| `CalendarYear` |  | |  |  |
+| `CalendarQuarter` |  | |  |  |
+| `CalendarYearQuarter` |  | |  |  |
+| `CalendarMonth` |  | |  |  |
+| `CalendarYearMonth` |  | |  |  |
+| `CalendarWeek` |  | |  |  |
+| `CalendarYearWeek` |  | |  |  |
+| `GLAccountAuthorizationGroup` |  | |  |  |
+| `SupplierBasicAuthorizationGrp` |  | |  |  |
+| `CustomerBasicAuthorizationGrp` |  | |  |  |
+| `AcctgDocTypeAuthorizationGroup` |  | |  |  |
+| `OrderType` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `_PubSecBdgtCnsmpnFsclYear` |  | |  | `_PubSecBudgetCnsmpnFsclYear` |
+| `_PubSecBdgtCnsmpnFsclPeriod` |  | |  | `_PubSecBudgetCnsmpnFsclPeriod` |
+| `_PubSecBdgtCnsmpnType` |  | |  | `_PubSecBudgetCnsmpnType` |
+| `_PubSecBudgetCnsmpnTypeGroup` |  | |  |  |
+| `_PubSecBdgtCnsmpnAmtType` |  | |  | `_PubSecBudgetCnsmpnAmtType` |
+| `_WBSElementExternalID` | | ✓ | | |
+| `_WBSElementExternalIDText` | | ✓ | | |
+| `_PartnerWBSElementExternalID` | | ✓ | | |
+| `_ProjectExternalID` | | ✓ | | |
+| `_ProjectExternalIDText` | | ✓ | | |
+| `_PartnerProjectExternalID` | | ✓ | | |
+| `_CalendarMonth` | | ✓ | | |
+| `_CalendarQuarter` | | ✓ | | |
+| `_CalendarYearMonth` | | ✓ | | |
+| `_PubSecBdgtAcctRevnExpnCode` | | ✓ | | |
+| `_FundType` | | ✓ | | |
+| `_BudgetAccountInChtAccts` | | ✓ | | |
+| `_SourceReferenceDocumentType` | | ✓ | | |
+| `_GranteeMgmtFundType` | | ✓ | | |
+| `_FundHierarchy` | | ✓ | | |
+| `_Fund` | | ✓ | | |
+| `_GrantHierarchy` | | ✓ | | |
+| `_Grant` | | ✓ | | |
+| `_BudgetAccountInChtAcctsHier` | | ✓ | | |
+| `_FunctionalAreaHierarchy` | | ✓ | | |
+| `_CostCenterHierarchy` | | ✓ | | |
+| `_DocumentStore` | | ✓ | | |
+| `_PartnerGrant` | | ✓ | | |
 
 ## Associations
 

@@ -28,91 +28,91 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HandlingUnitInternalID` | `venum` |
-| `HandlingUnitCharUUID` | `case when HandlingUnitHeader.uuid is not null then bintohex(HandlingUnitHeader.uuid) else cast( HandlingUnitHeader.handle as lo_hu_uuid_char32 ) end` |
-| `HandlingUnitExternalID` | `exidv` |
-| `HandlingUnitExternalIdType` | `exida` |
-| `ShippingPoint` | `vstel` |
-| `LoadingPoint` | `lstel` |
-| `PackagingMaterial` | `vhilm` |
-| `Plant` | `werks` |
-| `SalesDocumentItemCategory` | `pstyv` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `StorageLocation` | `lgort` |
-| `Warehouse` | `lgnum` |
-| `GrossWeight` | `brgew` |
-| `NetWeight` | `ntgew` |
-| `HandlingUnitMaxWeight` | `magew` |
-| `WeightUnit` | `gewei_max` |
-| `HandlingUnitTareWeight` | `tarag` |
-| `HandlingUnitTareWeightUnit` | `gewei` |
-| `HandlingUnitWeightTolerance` | `gewto` |
-| `GrossVolume` | `btvol` |
-| `HandlingUnitNetVolume` | `ntvol` |
-| `HandlingUnitMaxVolume` | `mavol` |
-| `VolumeUnit` | `voleh_max` |
-| `HandlingUnitTareVolume` | `tavol` |
-| `HandlingUnitTareVolumeUnit` | `voleh` |
-| `HandlingUnitVolumeTolerance` | `volto` |
-| `CreatedByUser` | `ernam` |
-| `CreationDate` | `erdat` |
-| `CreationTime` | `eruhr` |
-| `LastChangedByUser` | `aenam` |
-| `LastChangeDate` | `aedat` |
-| `LastChangeTime` | `aezet` |
-| `HandlingUnitGroup1` | `vegr1` |
-| `HandlingUnitGroup2` | `vegr2` |
-| `HandlingUnitGroup3` | `vegr3` |
-| `HandlingUnitGroup4` | `vegr4` |
-| `HandlingUnitGroup5` | `vegr5` |
-| `HandlingUnitLength` | `laeng` |
-| `HandlingUnitWidth` | `breit` |
-| `HandlingUnitHeight` | `hoehe` |
-| `UnitOfMeasureDimension` | `meabm` |
-| `HandlingUnitBaseUnitOfMeasure` | `meins` |
-| `HandlingUnitDeliveryWithPkgItm` | `vbeln_gen` |
-| `HandlingUnitGenDeliveryItem` | `posnr_gen` |
-| `HandlingUnitContentDescription` | `inhalt` |
-| `PackagingMaterialType` | `vhart` |
-| `PackagingMaterialGroup` | `magrv` |
-| `HandlingUnitWeightVolumeIsFix` | `gewfx` |
-| `PackagingMaterialCategory` | `veltp` |
-| `HandlingUnitSecondExternalId` | `exidv2` |
-| `HandlingUnitCustomerPackMat` | `vhilm_ku` |
-| `HandlingUnitPackingObjectType` | `_ERPHandlingUnitReferenceDoc.HandlingUnitRefDocType` |
-| `HandlingUnitPackingObjectKey` | `_ERPHandlingUnitReferenceDoc.HandlingUnitReferenceDocument` |
-| `SourceHandlingUnitUUID` | `handle` |
-| `HandlingUnitIsClosed` | `kzgvh` |
-| `HazardousSubstanceIndicator` | `adge_dg` |
-| `HandlingUnitLowerLevelRefer` | `uevel` |
-| `HandlingUnitInternalStatus` | `status` |
-| `PackingInstruction` | `cast( packvorschr as pl_packnr preserving type )` |
-| `PackingInstructionStatus` | `packvorschr_st` |
-| `PackInstructExtLabelNotPrinted` | `labeltyp` |
-| `PackingInstructMaxLoadQuantity` | `zul_aufl` |
-| `HandlingUnitIsComplete` | `erlkz` |
-| `HandlingUnitStockMgmtType` | `hu_system` |
-| `_Item` | *Association* |
-| `_WeightUnit` | *Association* |
-| `_WeightUnitTare` | *Association* |
-| `_VolumeUnit` | *Association* |
-| `_VolumeUnitTare` | *Association* |
-| `_UnitOfMeasureDimension` | *Association* |
-| `_PackagingMaterial` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_ShippingPoint` | *Association* |
-| `_LoadingPoint` | *Association* |
-| `_PackagingMaterialType` | *Association* |
-| `_PackagingMaterialGroup` | *Association* |
-| `_SalesDocumentItemCategory` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_PackagingMaterialCategory` | *Association* |
-| `_PackingObjectType` | *Association* |
-| `_HandlingUnitHistory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HandlingUnitInternalID` | ✓ | |  | `venum` |
+| `HandlingUnitCharUUID` |  | |  | `case when HandlingUnitHeader.uuid is not null then bintohex(HandlingUnitHeader.uuid) else cast( HandlingUnitHeader.handle as lo_hu_uuid_char32 ) end` |
+| `HandlingUnitExternalID` |  | |  | `exidv` |
+| `HandlingUnitExternalIdType` |  | |  | `exida` |
+| `ShippingPoint` |  | |  | `vstel` |
+| `LoadingPoint` |  | |  | `lstel` |
+| `PackagingMaterial` |  | |  | `vhilm` |
+| `Plant` |  | |  | `werks` |
+| `SalesDocumentItemCategory` |  | |  | `pstyv` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `StorageLocation` |  | |  | `lgort` |
+| `Warehouse` |  | |  | `lgnum` |
+| `GrossWeight` |  | |  | `brgew` |
+| `NetWeight` |  | |  | `ntgew` |
+| `HandlingUnitMaxWeight` |  | |  | `magew` |
+| `WeightUnit` |  | |  | `gewei_max` |
+| `HandlingUnitTareWeight` |  | |  | `tarag` |
+| `HandlingUnitTareWeightUnit` |  | |  | `gewei` |
+| `HandlingUnitWeightTolerance` |  | |  | `gewto` |
+| `GrossVolume` |  | |  | `btvol` |
+| `HandlingUnitNetVolume` |  | |  | `ntvol` |
+| `HandlingUnitMaxVolume` |  | |  | `mavol` |
+| `VolumeUnit` |  | |  | `voleh_max` |
+| `HandlingUnitTareVolume` |  | |  | `tavol` |
+| `HandlingUnitTareVolumeUnit` |  | |  | `voleh` |
+| `HandlingUnitVolumeTolerance` |  | |  | `volto` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreationTime` |  | |  | `eruhr` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `LastChangeTime` |  | |  | `aezet` |
+| `HandlingUnitGroup1` |  | |  | `vegr1` |
+| `HandlingUnitGroup2` |  | |  | `vegr2` |
+| `HandlingUnitGroup3` |  | |  | `vegr3` |
+| `HandlingUnitGroup4` |  | |  | `vegr4` |
+| `HandlingUnitGroup5` |  | |  | `vegr5` |
+| `HandlingUnitLength` |  | |  | `laeng` |
+| `HandlingUnitWidth` |  | |  | `breit` |
+| `HandlingUnitHeight` |  | |  | `hoehe` |
+| `UnitOfMeasureDimension` |  | |  | `meabm` |
+| `HandlingUnitBaseUnitOfMeasure` |  | |  | `meins` |
+| `HandlingUnitDeliveryWithPkgItm` |  | |  | `vbeln_gen` |
+| `HandlingUnitGenDeliveryItem` |  | |  | `posnr_gen` |
+| `HandlingUnitContentDescription` |  | |  | `inhalt` |
+| `PackagingMaterialType` |  | |  | `vhart` |
+| `PackagingMaterialGroup` |  | |  | `magrv` |
+| `HandlingUnitWeightVolumeIsFix` |  | |  | `gewfx` |
+| `PackagingMaterialCategory` |  | |  | `veltp` |
+| `HandlingUnitSecondExternalId` |  | |  | `exidv2` |
+| `HandlingUnitCustomerPackMat` |  | |  | `vhilm_ku` |
+| `HandlingUnitPackingObjectType` |  | | `_ERPHandlingUnitReferenceDoc` | `HandlingUnitRefDocType` |
+| `HandlingUnitPackingObjectKey` |  | | `_ERPHandlingUnitReferenceDoc` | `HandlingUnitReferenceDocument` |
+| `SourceHandlingUnitUUID` |  | |  | `handle` |
+| `HandlingUnitIsClosed` |  | |  | `kzgvh` |
+| `HazardousSubstanceIndicator` |  | |  | `adge_dg` |
+| `HandlingUnitLowerLevelRefer` |  | |  | `uevel` |
+| `HandlingUnitInternalStatus` |  | |  | `status` |
+| `PackingInstruction` |  | |  | `cast( packvorschr as pl_packnr preserving type )` |
+| `PackingInstructionStatus` |  | |  | `packvorschr_st` |
+| `PackInstructExtLabelNotPrinted` |  | |  | `labeltyp` |
+| `PackingInstructMaxLoadQuantity` |  | |  | `zul_aufl` |
+| `HandlingUnitIsComplete` |  | |  | `erlkz` |
+| `HandlingUnitStockMgmtType` |  | |  | `hu_system` |
+| `_Item` | | ✓ | | |
+| `_WeightUnit` | | ✓ | | |
+| `_WeightUnitTare` | | ✓ | | |
+| `_VolumeUnit` | | ✓ | | |
+| `_VolumeUnitTare` | | ✓ | | |
+| `_UnitOfMeasureDimension` | | ✓ | | |
+| `_PackagingMaterial` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
+| `_LoadingPoint` | | ✓ | | |
+| `_PackagingMaterialType` | | ✓ | | |
+| `_PackagingMaterialGroup` | | ✓ | | |
+| `_SalesDocumentItemCategory` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_PackagingMaterialCategory` | | ✓ | | |
+| `_PackingObjectType` | | ✓ | | |
+| `_HandlingUnitHistory` | | ✓ | | |
 
 ## Associations
 

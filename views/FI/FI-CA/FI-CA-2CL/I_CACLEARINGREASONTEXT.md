@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAClearingReason` | `augrd` |
-| key `Language` | `spras` |
-| `CAClearingReasonName` | `cast( txt50 as augrd_text_gfn_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAClearingReason` | ✓ | |  | `augrd` |
+| `Language` | ✓ | |  | `spras` |
+| `CAClearingReasonName` |  | |  | `cast( txt50 as augrd_text_gfn_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

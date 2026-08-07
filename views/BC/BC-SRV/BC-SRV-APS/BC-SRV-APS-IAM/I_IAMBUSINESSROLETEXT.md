@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessRoleUUID` | `brt.parent_uuid` |
-| key `LanguageCode` | `brt.language_code` |
-| `BusinessRole` | `br.BusinessRole` |
-| `BusinessRoleGroup` | `br.BusinessRoleGroup` |
-| `Name` | `brt.description` |
-| `Description` | `brt.long_text` |
-| `_BusinessRole` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessRoleUUID` | ✓ | |  | `parent_uuid` |
+| `LanguageCode` | ✓ | |  | `language_code` |
+| `BusinessRole` |  | |  |  |
+| `BusinessRoleGroup` |  | |  |  |
+| `Name` |  | |  | `description` |
+| `Description` |  | |  | `long_text` |
+| `_BusinessRole` | | ✓ | | |
 
 ## Source Code
 

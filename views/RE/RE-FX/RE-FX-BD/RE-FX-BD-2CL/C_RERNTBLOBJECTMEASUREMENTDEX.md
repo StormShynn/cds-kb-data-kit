@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RealEstateRentableObjectUUID` | `_RERentableObject.RealEstateRentableObjectUUID` |
-| key `InternalRealEstateNumber` | `_REMeasurement.InternalRealEstateNumber` |
-| key `REMeasurementType` | `_REMeasurement.REMeasurementType` |
-| key `ValidityEndDate` | `_REMeasurement.ValidityEndDate` |
-| `ValidityStartDate` | `_REMeasurement.ValidityStartDate` |
-| `REMeasurementIsTotal` | `_REMeasurement._REMeasurementType.REMeasurementIsTotal` |
-| `REMeasurementUnit` | `_REMeasurement.REMeasurementUnit` |
-| `REMeasurementQuantity` | `_REMeasurement.REMeasurementQuantity` |
-| `REMaximumMeasurementQuantity` | `_REMeasurement.REMaximumMeasurementQuantity` |
-| `_REMeasurementType` | `_REMeasurement._REMeasurementType` |
-| `_UnitOfMeasure` | `_REMeasurement._UnitOfMeasure` |
-| `_REGenericRentalObject` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RealEstateRentableObjectUUID` | ✓ | | `_RERentableObject` | `RealEstateRentableObjectUUID` |
+| `InternalRealEstateNumber` | ✓ | | `_REMeasurement` | `InternalRealEstateNumber` |
+| `REMeasurementType` | ✓ | | `_REMeasurement` | `REMeasurementType` |
+| `ValidityEndDate` | ✓ | | `_REMeasurement` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_REMeasurement` | `ValidityStartDate` |
+| `REMeasurementIsTotal` |  | | `_REMeasurement._REMeasurementType` | `REMeasurementIsTotal` |
+| `REMeasurementUnit` |  | | `_REMeasurement` | `REMeasurementUnit` |
+| `REMeasurementQuantity` |  | | `_REMeasurement` | `REMeasurementQuantity` |
+| `REMaximumMeasurementQuantity` |  | | `_REMeasurement` | `REMaximumMeasurementQuantity` |
+| `_REMeasurementType` |  | | `_REMeasurement` | `_REMeasurementType` |
+| `_UnitOfMeasure` |  | | `_REMeasurement` | `_UnitOfMeasure` |
+| `_REGenericRentalObject` | | ✓ | | |
 
 ## Associations
 

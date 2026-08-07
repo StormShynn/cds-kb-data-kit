@@ -30,68 +30,68 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryDocument` | `I_DeliveryDocumentItem.DeliveryDocument` |
-| key `DeliveryDocumentItem` | `I_DeliveryDocumentItem.DeliveryDocumentItem` |
-| `DeliveryDocumentItemText` | `I_DeliveryDocumentItem.DeliveryDocumentItemText` |
-| `RetailPromotion` | `I_DeliveryDocumentItem.RetailPromotion` |
-| `GoodsMovementType` | `I_DeliveryDocumentItem.GoodsMovementType` |
-| `Batch` | `I_DeliveryDocumentItem.Batch` |
-| `InventoryValuationType` | `I_DeliveryDocumentItem.InventoryValuationType` |
-| `MaterialByCustomer` | `I_DeliveryDocumentItem.MaterialByCustomer` |
-| `ActualDeliveryQuantity` | `I_DeliveryDocumentItem.ActualDeliveryQuantity` |
-| `ActualDeliveredQtyInBaseUnit` | `I_DeliveryDocumentItem.ActualDeliveredQtyInBaseUnit` |
-| `Warehouse` | `I_DeliveryDocumentItem.Warehouse` |
-| `StorageLocation` | `I_DeliveryDocumentItem.StorageLocation` |
-| `WarehouseStorageBin` | `I_DeliveryDocumentItem.WarehouseStorageBin` |
-| `StorageBin` | `I_DeliveryDocumentItem.StorageBin` |
-| `StorageType` | `I_DeliveryDocumentItem.StorageType` |
-| `Material` | `I_DeliveryDocumentItem.Material` |
-| `ProductAvailabilityDate` | `I_DeliveryDocumentItem.ProductAvailabilityDate` |
-| `BaseUnit` | `I_DeliveryDocumentItem.BaseUnit` |
-| `HigherLvlItmOfBatSpltItm` | `I_DeliveryDocumentItem.HigherLvlItmOfBatSpltItm` |
-| `DeliveryToBaseQuantityDnmntr` | `I_DeliveryDocumentItem.DeliveryToBaseQuantityDnmntr` |
-| `DeliveryToBaseQuantityNmrtr` | `I_DeliveryDocumentItem.DeliveryToBaseQuantityNmrtr` |
-| `DeliveryQuantityUnit` | `I_DeliveryDocumentItem.DeliveryQuantityUnit` |
-| `Plant` | `I_DeliveryDocumentItem.Plant` |
-| `InventorySpecialStockType` | `I_DeliveryDocumentItem.InventorySpecialStockType` |
-| `PickingControl` | `I_DeliveryDocumentItem.PickingControl` |
-| `ReferenceSDDocument` | `I_DeliveryDocumentItem.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `I_DeliveryDocumentItem.ReferenceSDDocumentItem` |
-| `ReferenceSDDocumentCategory` | `I_DeliveryDocumentItem.ReferenceSDDocumentCategory` |
-| `ItemGrossWeight` | `I_DeliveryDocumentItem.ItemGrossWeight` |
-| `ItemNetWeight` | `I_DeliveryDocumentItem.ItemNetWeight` |
-| `ItemWeightUnit` | `I_DeliveryDocumentItem.ItemWeightUnit` |
-| `ItemVolume` | `I_DeliveryDocumentItem.ItemVolume` |
-| `ItemVolumeUnit` | `I_DeliveryDocumentItem.ItemVolumeUnit` |
-| `MaterialIsBatchManaged` | `I_DeliveryDocumentItem.MaterialIsBatchManaged` |
-| `MaterialIsIntBatchManaged` | `I_DeliveryDocumentItem.MaterialIsIntBatchManaged` |
-| `ReceivingPoint` | `I_DeliveryDocumentItem.ReceivingPoint` |
-| `DepartmentClassificationByCust` | `I_DeliveryDocumentItem.DepartmentClassificationByCust` |
-| `NumberOfSerialNumbers` | `I_DeliveryDocumentItem.NumberOfSerialNumbers` |
-| `BatchBySupplier` | `I_DeliveryDocumentItem.BatchBySupplier` |
-| `InternationalArticleNumber` | `I_DeliveryDocumentItem.InternationalArticleNumber` |
-| `WarehouseStockCategory` | `I_DeliveryDocumentItem.WarehouseStockCategory` |
-| `IssgOrRcvgStockCategory` | `I_DeliveryDocumentItem.IssgOrRcvgStockCategory` |
-| `IssgOrRcvgMaterial` | `I_DeliveryDocumentItem.IssgOrRcvgMaterial` |
-| `IssuingOrReceivingPlant` | `I_DeliveryDocumentItem.IssuingOrReceivingPlant` |
-| `IssuingOrReceivingStorageLoc` | `I_DeliveryDocumentItem.IssuingOrReceivingStorageLoc` |
-| `IssgOrRcvgBatch` | `I_DeliveryDocumentItem.IssgOrRcvgBatch` |
-| `IssgOrRcvgSpclStockInd` | `I_DeliveryDocumentItem.IssgOrRcvgSpclStockInd` |
-| `WarehouseStagingArea` | `I_DeliveryDocumentItem.WarehouseStagingArea` |
-| `PrimaryPostingSwitch` | `I_DeliveryDocumentItem.PrimaryPostingSwitch` |
-| `InspectionLot` | `I_DeliveryDocumentItem.InspectionLot` |
-| `OrderID` | `I_DeliveryDocumentItem.OrderID` |
-| `ShelfLifeExpirationDate` | `I_DeliveryDocumentItem.ShelfLifeExpirationDate` |
-| `WarehouseActivityStatus` | `I_DeliveryDocumentItem.WarehouseActivityStatus` |
-| `PickingStatus` | `I_DeliveryDocumentItem.PickingStatus` |
-| `HigherLevelItem` | `I_DeliveryDocumentItem.HigherLevelItem` |
-| `HigherLevelItemUsage` | `I_DeliveryDocumentItem.HigherLevelItemUsage` |
-| `DeliveryGroup` | `I_DeliveryDocumentItem.DeliveryGroup` |
-| `_DeliveryDocumentItem` | *Association* |
-| `_DocumentFlow` | *Association* |
-| `_DeliveryDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryDocument` | ✓ | |  |  |
+| `DeliveryDocumentItem` | ✓ | |  |  |
+| `DeliveryDocumentItemText` |  | |  |  |
+| `RetailPromotion` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `Batch` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `ActualDeliveryQuantity` |  | |  |  |
+| `ActualDeliveredQtyInBaseUnit` |  | |  |  |
+| `Warehouse` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `WarehouseStorageBin` |  | |  |  |
+| `StorageBin` |  | |  |  |
+| `StorageType` |  | |  |  |
+| `Material` |  | |  |  |
+| `ProductAvailabilityDate` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `HigherLvlItmOfBatSpltItm` |  | |  |  |
+| `DeliveryToBaseQuantityDnmntr` |  | |  |  |
+| `DeliveryToBaseQuantityNmrtr` |  | |  |  |
+| `DeliveryQuantityUnit` |  | |  |  |
+| `Plant` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `PickingControl` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `MaterialIsBatchManaged` |  | |  |  |
+| `MaterialIsIntBatchManaged` |  | |  |  |
+| `ReceivingPoint` |  | |  |  |
+| `DepartmentClassificationByCust` |  | |  |  |
+| `NumberOfSerialNumbers` |  | |  |  |
+| `BatchBySupplier` |  | |  |  |
+| `InternationalArticleNumber` |  | |  |  |
+| `WarehouseStockCategory` |  | |  |  |
+| `IssgOrRcvgStockCategory` |  | |  |  |
+| `IssgOrRcvgMaterial` |  | |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  |  |
+| `IssgOrRcvgBatch` |  | |  |  |
+| `IssgOrRcvgSpclStockInd` |  | |  |  |
+| `WarehouseStagingArea` |  | |  |  |
+| `PrimaryPostingSwitch` |  | |  |  |
+| `InspectionLot` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |
+| `WarehouseActivityStatus` |  | |  |  |
+| `PickingStatus` |  | |  |  |
+| `HigherLevelItem` |  | |  |  |
+| `HigherLevelItemUsage` |  | |  |  |
+| `DeliveryGroup` |  | |  |  |
+| `_DeliveryDocumentItem` | | ✓ | | |
+| `_DocumentFlow` | | ✓ | | |
+| `_DeliveryDocument` | | ✓ | | |
 
 ## Associations
 

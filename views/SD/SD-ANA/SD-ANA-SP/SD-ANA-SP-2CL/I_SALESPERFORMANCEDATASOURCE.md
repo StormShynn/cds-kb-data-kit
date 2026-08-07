@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesPerformanceDataSource` | `cast ( substring( domvalue_l, 1, 1 ) as sd_sp_data_source )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesPerformanceDataSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as sd_sp_data_source )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

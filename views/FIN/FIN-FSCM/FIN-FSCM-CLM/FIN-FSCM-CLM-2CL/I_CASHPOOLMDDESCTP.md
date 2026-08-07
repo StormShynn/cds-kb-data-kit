@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CashPoolName` | `CashPoolName` |
-| key `Language` | `Language` |
-| `CashPoolDesc` | `CashPoolDesc` |
-| `CashPoolRefTxt` | `CashPoolRefTxt` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_GeneralInfo` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CashPoolName` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `CashPoolDesc` |  | |  |  |
+| `CashPoolRefTxt` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_GeneralInfo` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Source Code
 

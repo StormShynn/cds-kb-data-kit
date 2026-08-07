@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgDocCreationMode` | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_crmode_kk preserving type )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgDocCreationModeText` | `cast ( ddtext as inv_crmode_txt_gfn_kk preserving type )` |
-| `_CAInvcgDocCreationMode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgDocCreationMode` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_crmode_kk preserving type )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CAInvcgDocCreationModeText` |  | |  | `cast ( ddtext as inv_crmode_txt_gfn_kk preserving type )` |
+| `_CAInvcgDocCreationMode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

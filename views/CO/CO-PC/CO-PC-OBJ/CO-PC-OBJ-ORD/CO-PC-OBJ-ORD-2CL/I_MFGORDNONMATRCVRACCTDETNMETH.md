@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MfgOrdNonMatlRcvrAcctDetnMeth` | `cast( domvalue_l as fco_acct_determination_method)` |
-| `MfgOrdNonMatlRcvrDetnMethName` | `cast(ddtext as fco_acct_detn_meth_text)` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MfgOrdNonMatlRcvrAcctDetnMeth` | ✓ | |  | `cast( domvalue_l as fco_acct_determination_method)` |
+| `MfgOrdNonMatlRcvrDetnMethName` |  | |  | `cast(ddtext as fco_acct_detn_meth_text)` |
 
 ## Source Code
 

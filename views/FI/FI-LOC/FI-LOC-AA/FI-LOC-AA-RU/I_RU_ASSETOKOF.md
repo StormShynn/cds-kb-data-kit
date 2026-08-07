@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `RU_AssetOKOF` | `okof` |
-| `_Country` | *Association* |
-| `_CountryText` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `RU_AssetOKOF` | ✓ | |  | `okof` |
+| `_Country` | | ✓ | | |
+| `_CountryText` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

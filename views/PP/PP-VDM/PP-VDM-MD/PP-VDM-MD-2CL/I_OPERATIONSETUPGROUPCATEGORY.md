@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OperationSetupGroupCategory` | `cast(rfgrp as vdm_ruefagrp preserving type)` |
-| key `Plant` | `werks` |
-| `_Plant` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OperationSetupGroupCategory` | ✓ | |  | `cast(rfgrp as vdm_ruefagrp preserving type)` |
+| `Plant` | ✓ | |  | `werks` |
+| `_Plant` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

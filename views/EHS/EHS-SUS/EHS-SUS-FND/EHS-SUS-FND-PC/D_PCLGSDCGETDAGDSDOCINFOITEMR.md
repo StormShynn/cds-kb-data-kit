@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProdCmplncLogsDocumentItem` | `ehfnd_log_doc_posnr` |
-| `DngrsGdsIsHazardousMaterial` | `dngrsgdsishazardousmaterial` |
-| `DngrsGdsIsGrossWeightCalcRlvt` | `dngrsgdsisgrossweightcalcrlvt` |
-| `DngrsGdsDescForDocumentsText` | `dngrsgdsdescfordocumentstext` |
-| `DangerousGoodNetMassQty` | `dangerousgoodnetmassqty` |
-| `DangerousGoodNetMassSAPUnit` | `dangerousgoodnetmasssapunit` |
-| `DangerousGoodNetMassISOUnit` | `dangerousgoodnetmassisounit` |
-| `GrossWeight` | `ehfnd_gross_weight_val` |
-| `GrossWeightUnit` | `ehfnd_gross_weight_uom` |
-| `GrossVolume` | `ehfnd_gross_volume_val` |
-| `GrossVolumeUnit` | `ehfnd_gross_volume_uom` |
-| `_Root` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocumentItem` |  | |  | `ehfnd_log_doc_posnr` |
+| `DngrsGdsIsHazardousMaterial` |  | |  | `dngrsgdsishazardousmaterial` |
+| `DngrsGdsIsGrossWeightCalcRlvt` |  | |  | `dngrsgdsisgrossweightcalcrlvt` |
+| `DngrsGdsDescForDocumentsText` |  | |  | `dngrsgdsdescfordocumentstext` |
+| `DangerousGoodNetMassQty` |  | |  | `dangerousgoodnetmassqty` |
+| `DangerousGoodNetMassSAPUnit` |  | |  | `dangerousgoodnetmasssapunit` |
+| `DangerousGoodNetMassISOUnit` |  | |  | `dangerousgoodnetmassisounit` |
+| `GrossWeight` |  | |  | `ehfnd_gross_weight_val` |
+| `GrossWeightUnit` |  | |  | `ehfnd_gross_weight_uom` |
+| `GrossVolume` |  | |  | `ehfnd_gross_volume_val` |
+| `GrossVolumeUnit` |  | |  | `ehfnd_gross_volume_uom` |
+| `_Root` | | ✓ | | |
 
 ## Source Code
 

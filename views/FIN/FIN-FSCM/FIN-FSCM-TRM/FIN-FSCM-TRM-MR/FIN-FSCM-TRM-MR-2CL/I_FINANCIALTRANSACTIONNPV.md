@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `FinancialTransaction` | `FinancialTransaction` |
-| key `FinancialTransactionNPVType` | `FinancialTransactionNPVType` |
-| key `NetPresentValueValidityDate` | `NetPresentValueValidityDate` |
-| `NetPresentValueAmountInNPVCrcy` | `NetPresentValueAmountInNPVCrcy` |
-| `NetPresentValueCurrency` | `NetPresentValueCurrency` |
-| `IntrinsicValueAmountInNPVCrcy` | `IntrinsicValueAmountInNPVCrcy` |
-| `TimeValueAmountInNPVCrcy` | `TimeValueAmountInNPVCrcy` |
-| `CleanPriceAmountInNPVCrcy` | `CleanPriceAmountInNPVCrcy` |
-| `IncomingNPVAmountInNPVCrcy` | `IncomingNPVAmountInNPVCrcy` |
-| `OutgoingNPVAmountInNPVCrcy` | `OutgoingNPVAmountInNPVCrcy` |
-| `RiskFreeNPVAmountInNPVCrcy` | `RiskFreeNPVAmountInNPVCrcy` |
-| `CreditValueAdjmtAmtInNPVCrcy` | `CreditValueAdjmtAmtInNPVCrcy` |
-| `DebitValueAdjmtAmtInNPVCrcy` | `DebitValueAdjmtAmtInNPVCrcy` |
-| `_FinancialTransaction` | *Association* |
-| `_NPVType` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `FinancialTransaction` | ✓ | |  |  |
+| `FinancialTransactionNPVType` | ✓ | |  |  |
+| `NetPresentValueValidityDate` | ✓ | |  |  |
+| `NetPresentValueAmountInNPVCrcy` |  | |  |  |
+| `NetPresentValueCurrency` |  | |  |  |
+| `IntrinsicValueAmountInNPVCrcy` |  | |  |  |
+| `TimeValueAmountInNPVCrcy` |  | |  |  |
+| `CleanPriceAmountInNPVCrcy` |  | |  |  |
+| `IncomingNPVAmountInNPVCrcy` |  | |  |  |
+| `OutgoingNPVAmountInNPVCrcy` |  | |  |  |
+| `RiskFreeNPVAmountInNPVCrcy` |  | |  |  |
+| `CreditValueAdjmtAmtInNPVCrcy` |  | |  |  |
+| `DebitValueAdjmtAmtInNPVCrcy` |  | |  |  |
+| `_FinancialTransaction` | | ✓ | | |
+| `_NPVType` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Source Code
 

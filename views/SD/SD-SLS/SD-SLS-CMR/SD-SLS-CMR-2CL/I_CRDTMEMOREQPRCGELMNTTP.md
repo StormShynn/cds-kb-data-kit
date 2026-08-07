@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `CreditMemoReqPricingElement.CreditMemoRequest` |
-| key `PricingProcedureStep` | `CreditMemoReqPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `CreditMemoReqPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `CreditMemoReqPricingElement.ConditionApplication` |
-| `ConditionType` | `CreditMemoReqPricingElement.ConditionType` |
-| `ConditionTypeName` | `CreditMemoReqPricingElement.ConditionTypeName` |
-| `ConditionCalculationType` | `CreditMemoReqPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `CreditMemoReqPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `CreditMemoReqPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `CreditMemoReqPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `CreditMemoReqPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `CreditMemoReqPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `CreditMemoReqPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `CreditMemoReqPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `CreditMemoReqPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `CreditMemoReqPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `CreditMemoReqPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `CreditMemoReqPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `CreditMemoReqPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `CreditMemoReqPricingElement.ConditionInactiveReason` |
-| `ConditionRateValueIsAmount` | `CreditMemoReqPricingElement.ConditionRateValueIsAmount` |
-| `ConditionRateValueIsRatio` | `CreditMemoReqPricingElement.ConditionRateValueIsRatio` |
-| `ConditionRateValueIsNull` | `CreditMemoReqPricingElement.ConditionRateValueIsNull` |
-| `ConditionQuantityIsNull` | `CreditMemoReqPricingElement.ConditionQuantityIsNull` |
-| `ConditionAmountIsNull` | `CreditMemoReqPricingElement.ConditionAmountIsNull` |
-| `CreditMemoRequestType` | `CreditMemoReqPricingElement.CreditMemoRequestType` |
-| `SalesOrganization` | `CreditMemoReqPricingElement.SalesOrganization` |
-| `DistributionChannel` | `CreditMemoReqPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `CreditMemoReqPricingElement.OrganizationDivision` |
-| `_CreditMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionRateValueIsAmount` |  | |  |  |
+| `ConditionRateValueIsRatio` |  | |  |  |
+| `ConditionRateValueIsNull` |  | |  |  |
+| `ConditionQuantityIsNull` |  | |  |  |
+| `ConditionAmountIsNull` |  | |  |  |
+| `CreditMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_CreditMemoRequest` | | ✓ | | |
 
 ## Source Code
 

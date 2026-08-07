@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlanningCategory` | `I_VirtualPlanningCategory.PlanningCategory` |
-| key `SourcePlanningCategory` | `I_VirtualPlanningCategory.SourcePlanningCategory` |
-| `_PlanningCategory` | *Association* |
-| `_PlanningCategoryText` | *Association* |
-| `_SourcePlanningCategory` | *Association* |
-| `_SourcePlanningCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlanningCategory` | ✓ | |  |  |
+| `SourcePlanningCategory` | ✓ | |  |  |
+| `_PlanningCategory` | | ✓ | | |
+| `_PlanningCategoryText` | | ✓ | | |
+| `_SourcePlanningCategory` | | ✓ | | |
+| `_SourcePlanningCategoryText` | | ✓ | | |
 
 ## Associations
 

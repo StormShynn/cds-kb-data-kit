@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowTaskInternalID` | `_WorkflowTask.WorkflowTaskInternalID` |
-| `PaymentRequisitionNumber` | `_CnPayRequisition.PaymentRequisitionNumber` |
-| `CompanyCode` | `_CnPayRequisition.CompanyCode` |
-| `PaymentRequisitionStatus` | `_CnPayRequisition.PaymentRequisitionStatus` |
-| `Supplier` | `_CnPayRequisition.Supplier` |
-| `PaymentRequisitionPriority` | `_CnPayRequisition.PaymentRequisitionPriority` |
-| `PaytRequisitionAmtInTransCrcy` | `_CnPayRequisition.PaytRequisitionAmtInTransCrcy` |
-| `Currency` | `_CnPayRequisition.Currency` |
-| `PaymentRequisitionType` | `_CnPayRequisition.PaymentRequisitionType` |
-| `PaymentMethod` | `_CnPayRequisition.PaymentMethod` |
-| `WorkflowApproverNote` | `_CnPayRequisition.WorkflowApproverNote` |
-| `PlannedPaymentDate` | `_CnPayRequisition.PlannedPaymentDate` |
-| `PaymentDifferenceReason` | `_CnPayRequisition.PaymentDifferenceReason` |
-| `CreatedByUser` | `_CnPayRequisition.CreatedByUser` |
-| `CreatedByUserDescription` | `_User.UserDescription` |
-| `PayReqnWrkflwTskCrtnUTCDate` | `cast(tstmp_to_dats( cast(_WorkflowTask.WrkflwTskCreationUTCDateTime as abap.dec( 15, 0 )), 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `PayReqnWrkflwTskCrtnUTCTime` | `cast(tstmp_to_tims( cast(_WorkflowTask.WrkflwTskCreationUTCDateTime as abap.dec( 15, 0 )), 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `PayReqnWrkflwTskDuUTCDte` | `cast(tstmp_to_dats( cast(_WorkflowTask._TaskDueDate.WorkflowTaskDueUTCDateTime as abap.dec( 15, 0 )), 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
-| `PayReqnWrkflwTskDuUTCTme` | `cast(tstmp_to_tims( cast(_WorkflowTask._TaskDueDate.WorkflowTaskDueUTCDateTime as abap.dec( 15, 0 )), 'UTC', $session.client, 'NULL' ) as sww_lst )` |
-| `CreationDateTime` | `_CnPayRequisition.CreationDateTime` |
-| `LastChangedByUser` | `_CnPayRequisition.LastChangedByUser` |
-| `ChangedOnDateTime` | `_CnPayRequisition.ChangedOnDateTime` |
-| `WorkflowTaskURL` | `_WorkflowTaskURL.WorkflowTaskURL` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_WorkflowTask` | `WorkflowTaskInternalID` |
+| `PaymentRequisitionNumber` |  | | `_CnPayRequisition` | `PaymentRequisitionNumber` |
+| `CompanyCode` |  | | `_CnPayRequisition` | `CompanyCode` |
+| `PaymentRequisitionStatus` |  | | `_CnPayRequisition` | `PaymentRequisitionStatus` |
+| `Supplier` |  | | `_CnPayRequisition` | `Supplier` |
+| `PaymentRequisitionPriority` |  | | `_CnPayRequisition` | `PaymentRequisitionPriority` |
+| `PaytRequisitionAmtInTransCrcy` |  | | `_CnPayRequisition` | `PaytRequisitionAmtInTransCrcy` |
+| `Currency` |  | | `_CnPayRequisition` | `Currency` |
+| `PaymentRequisitionType` |  | | `_CnPayRequisition` | `PaymentRequisitionType` |
+| `PaymentMethod` |  | | `_CnPayRequisition` | `PaymentMethod` |
+| `WorkflowApproverNote` |  | | `_CnPayRequisition` | `WorkflowApproverNote` |
+| `PlannedPaymentDate` |  | | `_CnPayRequisition` | `PlannedPaymentDate` |
+| `PaymentDifferenceReason` |  | | `_CnPayRequisition` | `PaymentDifferenceReason` |
+| `CreatedByUser` |  | | `_CnPayRequisition` | `CreatedByUser` |
+| `CreatedByUserDescription` |  | | `_User` | `UserDescription` |
+| `PayReqnWrkflwTskCrtnUTCDate` |  | |  | `cast(tstmp_to_dats( cast(_WorkflowTask.WrkflwTskCreationUTCDateTime as abap.dec( 15, 0 )), 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
+| `PayReqnWrkflwTskCrtnUTCTime` |  | |  | `cast(tstmp_to_tims( cast(_WorkflowTask.WrkflwTskCreationUTCDateTime as abap.dec( 15, 0 )), 'UTC', $session.client, 'NULL' ) as sww_lst )` |
+| `PayReqnWrkflwTskDuUTCDte` |  | |  | `cast(tstmp_to_dats( cast(_WorkflowTask._TaskDueDate.WorkflowTaskDueUTCDateTime as abap.dec( 15, 0 )), 'UTC', $session.client, 'NULL' ) as sww_lsd )` |
+| `PayReqnWrkflwTskDuUTCTme` |  | |  | `cast(tstmp_to_tims( cast(_WorkflowTask._TaskDueDate.WorkflowTaskDueUTCDateTime as abap.dec( 15, 0 )), 'UTC', $session.client, 'NULL' ) as sww_lst )` |
+| `CreationDateTime` |  | | `_CnPayRequisition` | `CreationDateTime` |
+| `LastChangedByUser` |  | | `_CnPayRequisition` | `LastChangedByUser` |
+| `ChangedOnDateTime` |  | | `_CnPayRequisition` | `ChangedOnDateTime` |
+| `WorkflowTaskURL` |  | | `_WorkflowTaskURL` | `WorkflowTaskURL` |
 
 ## Associations
 

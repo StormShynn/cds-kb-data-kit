@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CollectionPriority` | `cast(priority as udm_coll_priority preserving type)` |
-| key `Language` | `lang` |
-| `CollectionPriorityName` | `priority_text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CollectionPriority` | ✓ | |  | `cast(priority as udm_coll_priority preserving type)` |
+| `Language` | ✓ | |  | `lang` |
+| `CollectionPriorityName` |  | |  | `priority_text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

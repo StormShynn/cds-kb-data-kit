@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtProcessType` | `SettlmtProcessType` |
-| `SettlmtDocType` | `SettlmtDocType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtProcessType` | ✓ | |  |  |
+| `SettlmtDocType` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

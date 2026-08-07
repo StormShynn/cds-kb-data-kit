@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrderPartner.SalesOrder` |
-| key `PartnerFunction` | `SalesOrderPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `SalesOrderPartner.PartnerFunctionForEdit` |
-| `Customer` | `SalesOrderPartner.Customer` |
-| `Supplier` | `SalesOrderPartner.Supplier` |
-| `Personnel` | `SalesOrderPartner.Personnel` |
-| `ContactPerson` | `SalesOrderPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `SalesOrderPartner.ReferenceBusinessPartner` |
-| `Partner` | `SalesOrderPartner.Partner` |
-| `SalesOrderType` | `SalesOrderPartner.SalesOrderType` |
-| `SalesOrganization` | `SalesOrderPartner.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderPartner.DistributionChannel` |
-| `OrganizationDivision` | `SalesOrderPartner.OrganizationDivision` |
-| `_SalesOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesOrder` | | ✓ | | |
 
 ## Source Code
 

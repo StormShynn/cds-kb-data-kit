@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `element:'FiscalYear'` | `element:'FiscalYear'` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `element:'FiscalYear'` |  | |  |  |
 
 ## Source Code
 

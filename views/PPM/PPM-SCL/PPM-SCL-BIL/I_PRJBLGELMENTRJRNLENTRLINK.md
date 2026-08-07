@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjBillgElmntEntrItmUUID` | `PrjBlgElmEntrJrnlEntrLink.projbillgelmntentritmuuid` |
-| `Ledger` | `PrjBlgElmEntrJrnlEntrLink.ledger` |
-| `CompanyCode` | `PrjBlgElmEntrJrnlEntrLink.companycode` |
-| `FiscalYear` | `PrjBlgElmEntrJrnlEntrLink.fiscalyear` |
-| `AccountingDocument` | `PrjBlgElmEntrJrnlEntrLink.accountingdocument` |
-| `LedgerGLLineItem` | `PrjBlgElmEntrJrnlEntrLink.ledgergllineitem` |
-| `ReferenceDocument` | `PrjBlgElmEntrJrnlEntrLink.referencedocument` |
-| `ReversalReferenceDocument` | `PrjBlgElmEntrJrnlEntrLink.reversalreferencedocument` |
-| `CreatedByUser` | `PrjBlgElmEntrJrnlEntrLink.createdbyuser` |
-| `CreationDateTime` | `PrjBlgElmEntrJrnlEntrLink.creationdatetime` |
-| `LastChangedByUser` | `PrjBlgElmEntrJrnlEntrLink.lastchangedbyuser` |
-| `LastChangeDateTime` | `PrjBlgElmEntrJrnlEntrLink.lastchangedatetime` |
-| `_ProjectBillingElementEntry` | *Association* |
-| `_GLAccountLineItemRawData` | *Association* |
-| `_Ledger` | *Association* |
-| `_LedgerText` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_AccountingDocument` | *Association* |
-| `_FiscalYear` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjBillgElmntEntrItmUUID` | ✓ | |  | `projbillgelmntentritmuuid` |
+| `Ledger` |  | |  | `ledger` |
+| `CompanyCode` |  | |  | `companycode` |
+| `FiscalYear` |  | |  | `fiscalyear` |
+| `AccountingDocument` |  | |  | `accountingdocument` |
+| `LedgerGLLineItem` |  | |  | `ledgergllineitem` |
+| `ReferenceDocument` |  | |  | `referencedocument` |
+| `ReversalReferenceDocument` |  | |  | `reversalreferencedocument` |
+| `CreatedByUser` |  | |  | `createdbyuser` |
+| `CreationDateTime` |  | |  | `creationdatetime` |
+| `LastChangedByUser` |  | |  | `lastchangedbyuser` |
+| `LastChangeDateTime` |  | |  | `lastchangedatetime` |
+| `_ProjectBillingElementEntry` | | ✓ | | |
+| `_GLAccountLineItemRawData` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
+| `_LedgerText` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_AccountingDocument` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
 
 ## Associations
 

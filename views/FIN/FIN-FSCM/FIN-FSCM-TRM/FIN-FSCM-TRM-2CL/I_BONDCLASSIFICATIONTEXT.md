@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `BondClassification` | `swpklass` |
-| `BondClassificationName` | `cast (xlangbez as ftr_gen_bond_classifi_name preserving type)` |
-| `_BondClassification` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BondClassification` | ✓ | |  | `swpklass` |
+| `BondClassificationName` |  | |  | `cast (xlangbez as ftr_gen_bond_classifi_name preserving type)` |
+| `_BondClassification` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

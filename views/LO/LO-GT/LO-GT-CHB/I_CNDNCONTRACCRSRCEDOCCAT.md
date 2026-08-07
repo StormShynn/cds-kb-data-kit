@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccrSrceDocCategory` | `cast( dd07l.domvalue_l as wcb_accdoc_category )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccrSrceDocCategory` | ✓ | |  | `cast( dd07l.domvalue_l as wcb_accdoc_category )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

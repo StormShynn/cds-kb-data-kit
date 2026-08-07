@@ -28,74 +28,74 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `plko.BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `plko.BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `plko.BillOfOperationsVariant` |
-| key `BOOInternalVersionCounter` | `plko.BOOInternalVersionCounter` |
-| `CreationDate` | `plko.CreationDate` |
-| `CreatedByUser` | `plko.CreatedByUser` |
-| `LastChangeDate` | `plko.LastChangeDate` |
-| `LastChangedByUser` | `plko.LastChangedByUser` |
-| `ChangedDateTime` | `plko.ChangedDateTime` |
-| `ChangeNumber` | `plko.ChangeNumber` |
-| `ValidityStartDate` | `plko.ValidityStartDate` |
-| `ValidityEndDate` | `plko.ValidityEndDate` |
-| `LastReorganizationDate` | `plko.LastReorganizationDate` |
-| `LastUsageDate` | `plko.LastUsageDate` |
-| `NumberOfUsages` | `plko.NumberOfUsages` |
-| `BillOfOperationsDateTime` | `plko.BillOfOperationsDateTime` |
-| `IsDeleted` | `plko.IsDeleted` |
-| `IsImplicitlyDeleted` | `plko.IsImplicitlyDeleted` |
-| `IsMarkedForDeletion` | `plko.IsMarkedForDeletion` |
-| `ReplacedBillOfOperations` | `plko.ReplacedBillOfOperations` |
-| `BillOfOperationsDesc` | `plko.BillOfOperationsDesc` |
-| `LongTextLanguageCode` | `plko.LongTextLanguageCode` |
-| `WorkCenterTypeCode` | `plko.WorkCenterTypeCode` |
-| `WorkCenterInternalID` | `plko.WorkCenterInternalID` |
-| `Plant` | `plko.Plant` |
-| `BillOfOperationsUsage` | `plko.BillOfOperationsUsage` |
-| `BillOfOperationsStatus` | `plko.BillOfOperationsStatus` |
-| `BillOfOperationsProfile` | `plko.BillOfOperationsProfile` |
-| `ResponsiblePlannerGroup` | `plko.ResponsiblePlannerGroup` |
-| `LineHierarchyInternalID` | `plko.LineHierarchyInternalID` |
-| `InspSubsetFieldCombination` | `plko.InspSubsetFieldCombination` |
-| `InspectionPartialLot` | `plko.InspectionPartialLot` |
-| `SmplDrawingProcedure` | `plko.SmplDrawingProcedure` |
-| `SmplDrawingProcedureVersion` | `plko.SmplDrawingProcedureVersion` |
-| `InspectionLotDynamicLevel` | `plko.InspectionLotDynamicLevel` |
-| `InspLotDynamicRule` | `plko.InspLotDynamicRule` |
-| `InspExternalNumberingOfValues` | `plko.InspExternalNumberingOfValues` |
-| `BillOfOperationsUnit` | `plko.BillOfOperationsUnit` |
-| `MinimumLotSizeQuantity` | `plko.MinimumLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `plko.MaximumLotSizeQuantity` |
-| `OperationReferenceQuantity` | `plko.OperationReferenceQuantity` |
-| `OperationUnit` | `plko.OperationUnit` |
-| `OpQtyToBaseQtyNmrtr` | `plko.OpQtyToBaseQtyNmrtr` |
-| `OpQtyToBaseQtyDnmntr` | `plko.OpQtyToBaseQtyDnmntr` |
-| `_BillOfOperations` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperationsStatus` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsUnit` | *Association* |
-| `_BillOfOperationsUsage` | *Association* |
-| `_ChangeMaster` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_InspExtNumbering` | *Association* |
-| `_InspLotDynamicRule` | *Association* |
-| `_InspPartialLotAssignment` | *Association* |
-| `_InspSubsetFieldCombination` | *Association* |
-| `_InspectionLotDynamicLevel` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_LineHierarchy` | *Association* |
-| `_LongTextLanguage` | *Association* |
-| `_Plant` | *Association* |
-| `_ResponsiblePlannerGroup` | *Association* |
-| `_SampleDrawingProcedure` | *Association* |
-| `_SmplDrwgProcedureVersion` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_WorkCenterType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |
+| `BOOInternalVersionCounter` | ✓ | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `LastReorganizationDate` |  | |  |  |
+| `LastUsageDate` |  | |  |  |
+| `NumberOfUsages` |  | |  |  |
+| `BillOfOperationsDateTime` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `ReplacedBillOfOperations` |  | |  |  |
+| `BillOfOperationsDesc` |  | |  |  |
+| `LongTextLanguageCode` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `Plant` |  | |  |  |
+| `BillOfOperationsUsage` |  | |  |  |
+| `BillOfOperationsStatus` |  | |  |  |
+| `BillOfOperationsProfile` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `LineHierarchyInternalID` |  | |  |  |
+| `InspSubsetFieldCombination` |  | |  |  |
+| `InspectionPartialLot` |  | |  |  |
+| `SmplDrawingProcedure` |  | |  |  |
+| `SmplDrawingProcedureVersion` |  | |  |  |
+| `InspectionLotDynamicLevel` |  | |  |  |
+| `InspLotDynamicRule` |  | |  |  |
+| `InspExternalNumberingOfValues` |  | |  |  |
+| `BillOfOperationsUnit` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `OperationReferenceQuantity` |  | |  |  |
+| `OperationUnit` |  | |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |
+| `_BillOfOperations` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperationsStatus` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsUnit` | | ✓ | | |
+| `_BillOfOperationsUsage` | | ✓ | | |
+| `_ChangeMaster` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_InspExtNumbering` | | ✓ | | |
+| `_InspLotDynamicRule` | | ✓ | | |
+| `_InspPartialLotAssignment` | | ✓ | | |
+| `_InspSubsetFieldCombination` | | ✓ | | |
+| `_InspectionLotDynamicLevel` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_LineHierarchy` | | ✓ | | |
+| `_LongTextLanguage` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ResponsiblePlannerGroup` | | ✓ | | |
+| `_SampleDrawingProcedure` | | ✓ | | |
+| `_SmplDrwgProcedureVersion` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
 
 ## Associations
 

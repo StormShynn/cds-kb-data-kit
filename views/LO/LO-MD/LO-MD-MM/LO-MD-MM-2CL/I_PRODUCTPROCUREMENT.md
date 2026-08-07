@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `mara.matnr` |
-| `PurchaseOrderQuantityUnit` | `mara.bstme` |
-| `VarblPurOrdUnitStatus` | `mara.vabme` |
-| `PurchasingAcknProfile` | `mara.ekwsl` |
-| `ProcurementRule` | `mara.bwvor` |
-| `SourceOfSupplyCategory` | `mara.bwscl` |
-| `PurchasingGroup` | `_ProductRetail.PurchasingGroup` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `AuthorizationGroup` | `mara.begru` |
-| `_Product` | *Association* |
-| `_ProductRetail` | *Association* |
-| `_PurchaseOrderQuantityUnit` | *Association* |
-| `_PurchaseOrderUnitText` | *Association* |
-| `_SourceOfSupplyCategory` | *Association* |
-| `_SourceOfSupplyCategoryText` | *Association* |
-| `_VarblPurOrdUnitActvStatus` | *Association* |
-| `_VarblPurOrdUnitActvStatusText` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `PurchaseOrderQuantityUnit` |  | |  | `bstme` |
+| `VarblPurOrdUnitStatus` |  | |  | `vabme` |
+| `PurchasingAcknProfile` |  | |  | `ekwsl` |
+| `ProcurementRule` |  | |  | `bwvor` |
+| `SourceOfSupplyCategory` |  | |  | `bwscl` |
+| `PurchasingGroup` |  | | `_ProductRetail` | `PurchasingGroup` |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `_Product` | | ✓ | | |
+| `_ProductRetail` | | ✓ | | |
+| `_PurchaseOrderQuantityUnit` | | ✓ | | |
+| `_PurchaseOrderUnitText` | | ✓ | | |
+| `_SourceOfSupplyCategory` | | ✓ | | |
+| `_SourceOfSupplyCategoryText` | | ✓ | | |
+| `_VarblPurOrdUnitActvStatus` | | ✓ | | |
+| `_VarblPurOrdUnitActvStatusText` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Associations
 

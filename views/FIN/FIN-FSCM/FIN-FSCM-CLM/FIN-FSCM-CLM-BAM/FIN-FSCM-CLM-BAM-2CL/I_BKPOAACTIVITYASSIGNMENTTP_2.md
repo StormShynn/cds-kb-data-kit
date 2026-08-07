@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankPowerOfAttorneyUUID` | `BankPowerOfAttorneyUUID` |
-| key `BkPOAActivityAssignmentUUID` | `BkPOAActivityAssignmentUUID` |
-| `BankPowerOfAttorneyActivity` | `BankPowerOfAttorneyActivity` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_BankPowerOfAttorney` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` | ✓ | |  |  |
+| `BkPOAActivityAssignmentUUID` | ✓ | |  |  |
+| `BankPowerOfAttorneyActivity` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_BankPowerOfAttorney` | | ✓ | | |
 
 ## Source Code
 

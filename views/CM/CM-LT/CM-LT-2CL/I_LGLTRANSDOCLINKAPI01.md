@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionDocLinkUUID` | `LegalTransactionDocLinkUUID` |
-| `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LglCntntMDocument` | `LglCntntMDocument` |
-| `_LegalTransaction` | *Association* |
-| `_LegalDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionDocLinkUUID` | ✓ | |  |  |
+| `LegalTransactionUUID` |  | |  |  |
+| `LglCntntMDocument` |  | |  |  |
+| `_LegalTransaction` | | ✓ | | |
+| `_LegalDocument` | | ✓ | | |
 
 ## Associations
 

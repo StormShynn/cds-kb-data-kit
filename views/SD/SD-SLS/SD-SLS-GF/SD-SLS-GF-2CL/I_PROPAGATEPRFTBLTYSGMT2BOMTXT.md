@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PropagatePrftbltySgmt2BOM` | `cast ( substring(domvalue_l, 1, 1) as sd_sls_propagate_paobjnr_bom preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| `PropagatePrftbltySgmt2BOMText` | `ddtext` |
-| `_PropagatePrftbltySgmt2BOM` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PropagatePrftbltySgmt2BOM` | ✓ | |  | `cast ( substring(domvalue_l, 1, 1) as sd_sls_propagate_paobjnr_bom preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `PropagatePrftbltySgmt2BOMText` |  | |  | `ddtext` |
+| `_PropagatePrftbltySgmt2BOM` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGEnergyClassification` | `GHGEnergyClassification` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGEnergyClassification` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

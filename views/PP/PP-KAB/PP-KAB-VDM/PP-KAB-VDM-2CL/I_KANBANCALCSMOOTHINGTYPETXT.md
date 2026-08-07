@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanCalculationSmoothingType` | `cast(substring(domvalue_l, 1, 1) as kcgla preserving type)` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `KanbanCalcSmoothingTypeName` | `cast(ddtext as vdm_smoothing_type_text preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_KnbnCalcSmoothingTypes` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanCalculationSmoothingType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as kcgla preserving type)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `KanbanCalcSmoothingTypeName` |  | |  | `cast(ddtext as vdm_smoothing_type_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_KnbnCalcSmoothingTypes` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

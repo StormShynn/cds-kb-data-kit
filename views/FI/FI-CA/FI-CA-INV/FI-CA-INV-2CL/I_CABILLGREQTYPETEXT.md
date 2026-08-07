@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgReqType` | `billreqtype` |
-| key `Language` | `langu` |
-| `CABillgReqTypeText` | `cast( billreqtype_txt as billreqtype_txt_gfn_kk )` |
-| `_CABillgReqType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgReqType` | ✓ | |  | `billreqtype` |
+| `Language` | ✓ | |  | `langu` |
+| `CABillgReqTypeText` |  | |  | `cast( billreqtype_txt as billreqtype_txt_gfn_kk )` |
+| `_CABillgReqType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

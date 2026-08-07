@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingInfoRecordUpdateCode` | `cast ( substring( domvalue_l, 1, 1 ) as spinf )` |
-| key `Language` | `ddlanguage` |
-| `PurchasingInfoRecordDesc` | `ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_PurgInfoRecordUpdateCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingInfoRecordUpdateCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as spinf )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `PurchasingInfoRecordDesc` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_PurgInfoRecordUpdateCode` | | ✓ | | |
 
 ## Associations
 

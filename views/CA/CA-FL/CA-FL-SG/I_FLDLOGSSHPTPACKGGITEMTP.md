@@ -30,45 +30,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsShptItemUUID` | `FldLogsShptItemUUID` |
-| `FldLogsReferenceDocumentNumber` | `FldLogsReferenceDocumentNumber` |
-| `FldLogsReferenceDocCategory` | `FldLogsReferenceDocCategory` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| `FldLogsShptItmOutbDelivItmID` | `FldLogsShptItmOutbDelivItmID` |
-| `FldLogsShptItmODOItemID` | `FldLogsShptItmODOItemID` |
-| `HandlingUnitExternalID` | `HandlingUnitExternalID` |
-| `PackagingMaterial` | `PackagingMaterial` |
-| `GrossVolume` | `GrossVolume` |
-| `VolumeUnit` | `VolumeUnit` |
-| `GrossWeight` | `GrossWeight` |
-| `WeightUnit` | `WeightUnit` |
-| `MaterialName` | `MaterialName` |
-| `FldLogsContainerUnitUUID` | `FldLogsContainerUnitUUID` |
-| `FldLogsShptItmStsCode` | `FldLogsShptItmStsCode` |
-| `FldLogsSrceStorLocID` | `FldLogsSrceStorLocID` |
-| `FldLogsSrcePlnt` | `FldLogsSrcePlnt` |
-| `FldLogsDestStorLocID` | `FldLogsDestStorLocID` |
-| `FldLogsDestPlnt` | `FldLogsDestPlnt` |
-| `FldLogsDelivDueDate` | `FldLogsDelivDueDate` |
-| `FldLogsGrossVolume` | `FldLogsGrossVolume` |
-| `FldLogsGrossVolumeUnit` | `FldLogsGrossVolumeUnit` |
-| `ProductGrossWeight` | `ProductGrossWeight` |
-| `ProductWeightUnit` | `ProductWeightUnit` |
-| `QuantityInBaseUnit` | `QuantityInBaseUnit` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `FldLogsVoyAssgmtStatusText` | `FldLogsVoyAssgmtStatusText` |
-| `FldLogsShptItemCurrentPlant` | `FldLogsShptItemCurrentPlant` |
-| `FldLogsShptItemCurShipgPoint` | `FldLogsShptItemCurShipgPoint` |
-| `FldLogsShptItemActualWeight` | `FldLogsShptItemActualWeight` |
-| `FldLogsShptItemActlWeightUnit` | `FldLogsShptItemActlWeightUnit` |
-| `FieldLogisticsKitIdentifier` | `FieldLogisticsKitIdentifier` |
-| `HandlingUnitQuantity` | `HandlingUnitQuantity` |
-| `HandlingUnitQuantityUnit` | `HandlingUnitQuantityUnit` |
-| `FldLogsShptLocationID` | `FldLogsShptLocationID` |
-| `_ShptPackggUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsShptItemUUID` | ✓ | |  |  |
+| `FldLogsReferenceDocumentNumber` |  | |  |  |
+| `FldLogsReferenceDocCategory` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `FldLogsShptItmOutbDelivItmID` |  | |  |  |
+| `FldLogsShptItmODOItemID` |  | |  |  |
+| `HandlingUnitExternalID` |  | |  |  |
+| `PackagingMaterial` |  | |  |  |
+| `GrossVolume` |  | |  |  |
+| `VolumeUnit` |  | |  |  |
+| `GrossWeight` |  | |  |  |
+| `WeightUnit` |  | |  |  |
+| `MaterialName` |  | |  |  |
+| `FldLogsContainerUnitUUID` |  | |  |  |
+| `FldLogsShptItmStsCode` |  | |  |  |
+| `FldLogsSrceStorLocID` |  | |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |
+| `FldLogsDestStorLocID` |  | |  |  |
+| `FldLogsDestPlnt` |  | |  |  |
+| `FldLogsDelivDueDate` |  | |  |  |
+| `FldLogsGrossVolume` |  | |  |  |
+| `FldLogsGrossVolumeUnit` |  | |  |  |
+| `ProductGrossWeight` |  | |  |  |
+| `ProductWeightUnit` |  | |  |  |
+| `QuantityInBaseUnit` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `FldLogsVoyAssgmtStatusText` |  | |  |  |
+| `FldLogsShptItemCurrentPlant` |  | |  |  |
+| `FldLogsShptItemCurShipgPoint` |  | |  |  |
+| `FldLogsShptItemActualWeight` |  | |  |  |
+| `FldLogsShptItemActlWeightUnit` |  | |  |  |
+| `FieldLogisticsKitIdentifier` |  | |  |  |
+| `HandlingUnitQuantity` |  | |  |  |
+| `HandlingUnitQuantityUnit` |  | |  |  |
+| `FldLogsShptLocationID` |  | |  |  |
+| `_ShptPackggUnit` | | ✓ | | |
 
 ## Source Code
 

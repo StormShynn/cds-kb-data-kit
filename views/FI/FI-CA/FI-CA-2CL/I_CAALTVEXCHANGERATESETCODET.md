@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAAltvExchangeRateSetCode` | `cast( left( dd07t.domvalue_l, 1 ) as xdexr_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAAltvExchangeRateSetCodeText` | `cast( ddtext as xdexr_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAAltvExchangeRateSetCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xdexr_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAAltvExchangeRateSetCodeText` |  | |  | `cast( ddtext as xdexr_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

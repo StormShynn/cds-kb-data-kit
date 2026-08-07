@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PostingDate` | `budat` |
-| `PlantDataCollectionID` | `sa_bdenr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PostingDate` |  | |  | `budat` |
+| `PlantDataCollectionID` |  | |  | `sa_bdenr` |
 
 ## Source Code
 

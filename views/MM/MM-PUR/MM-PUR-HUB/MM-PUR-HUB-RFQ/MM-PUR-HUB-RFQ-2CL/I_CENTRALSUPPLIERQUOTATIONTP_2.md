@@ -31,48 +31,48 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralSupplierQuotation` | `CentralSupplierQuotation` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `PurchasingDocumentType` |
-| `Supplier` | `Supplier` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `Language` | `Language` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `PricingProcedure` | `PricingProcedure` |
-| `CentralSuplrQuotationCondition` | `CentralSuplrQuotationCondition` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `CentralRequestForQuotation` | `CentralRequestForQuotation` |
-| `SupplierQuotationExternalID` | `SupplierQuotationExternalID` |
-| `QuotationSubmissionDate` | `QuotationSubmissionDate` |
-| `QuotationLatestSubmissionDate` | `QuotationLatestSubmissionDate` |
-| `BindingPeriodValidityEndDate` | `BindingPeriodValidityEndDate` |
-| `ExchangeRate` | `ExchangeRate` |
-| `QtnLifecycleStatus` | `QtnLifecycleStatus` |
-| `FollowOnDocumentCategory` | `FollowOnDocumentCategory` |
-| `PurgDocFollowOnDocumentType` | `PurgDocFollowOnDocumentType` |
-| `PurContrValidityStartDate` | `PurContrValidityStartDate` |
-| `PurContrValidityEndDate` | `PurContrValidityEndDate` |
-| `PurchaseContractTargetAmount` | `PurchaseContractTargetAmount` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `PurchasingDocumentDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `_CntrlSupplierQuotationItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralSupplierQuotation` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `Language` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `PricingProcedure` |  | |  |  |
+| `CentralSuplrQuotationCondition` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `CentralRequestForQuotation` |  | |  |  |
+| `SupplierQuotationExternalID` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `QuotationLatestSubmissionDate` |  | |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `QtnLifecycleStatus` |  | |  |  |
+| `FollowOnDocumentCategory` |  | |  |  |
+| `PurgDocFollowOnDocumentType` |  | |  |  |
+| `PurContrValidityStartDate` |  | |  |  |
+| `PurContrValidityEndDate` |  | |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `_CntrlSupplierQuotationItem` | | ✓ | | |
 
 ## Source Code
 

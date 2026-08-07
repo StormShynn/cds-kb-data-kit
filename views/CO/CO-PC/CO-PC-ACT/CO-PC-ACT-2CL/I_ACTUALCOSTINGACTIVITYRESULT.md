@@ -28,41 +28,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostEstimate` | `CostEstimate` |
-| key `CurrencyRole` | `CurrencyRole` |
-| key `Ledger` | `Ledger` |
-| key `MaterialLedgerCategory` | `MaterialLedgerCategory` |
-| key `ProcessCategory` | `ProcessCategory` |
-| key `MatlLdgrDocIsCostingRelevant` | `MatlLdgrDocIsCostingRelevant` |
-| key `ProductionProcess` | `ProductionProcess` |
-| key `Material` | `Material` |
-| key `SalesOrder` | `SalesOrder` |
-| key `SalesOrderItem` | `SalesOrderItem` |
-| key `WBSElementExternalID` | `WBSElementExternalID` |
-| key `OrderID` | `OrderID` |
-| key `GLAccount` | `GLAccount` |
-| `FiscalPeriod` | `$parameters.P_FiscalPeriod` |
-| `FiscalYear` | `$parameters.P_FiscalYear` |
-| `ValuationArea` | `ValuationArea` |
-| `CostCenter` | `CostCenter` |
-| `ActivityType` | `ActivityType` |
-| `TotalVltdStockQuantity` | `TotalVltdStockQuantity` |
-| `ValuationQuantityUnit` | `ValuationQuantityUnit` |
-| `InventoryAmtInDspCrcy` | `InventoryAmtInDspCrcy` |
-| `InvtryTransacAmtInDisplayCrcy` | `InvtryTransacAmtInDisplayCrcy` |
-| `PriceDiffAmtInDisplayCrcy` | `PriceDiffAmtInDisplayCrcy` |
-| `Currency` | `Currency` |
-| `MaterialLedgerCategoryText` | `MaterialLedgerCategoryText` |
-| `ProcessCategoryName` | `ProcessCategoryName` |
-| `CompanyCode` | `CompanyCode` |
-| `ControllingArea` | `ControllingArea` |
-| `ControllingValuationType` | `ControllingValuationType` |
-| `_Product` | *Association* |
-| `_Ledger` | *Association* |
-| `_Currency` | *Association* |
-| `_QuantityUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostEstimate` | ✓ | |  |  |
+| `CurrencyRole` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `MaterialLedgerCategory` | ✓ | |  |  |
+| `ProcessCategory` | ✓ | |  |  |
+| `MatlLdgrDocIsCostingRelevant` | ✓ | |  |  |
+| `ProductionProcess` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `SalesOrder` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `WBSElementExternalID` | ✓ | |  |  |
+| `OrderID` | ✓ | |  |  |
+| `GLAccount` | ✓ | |  |  |
+| `FiscalPeriod` |  | |  | `$parameters.P_FiscalPeriod` |
+| `FiscalYear` |  | |  | `$parameters.P_FiscalYear` |
+| `ValuationArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `TotalVltdStockQuantity` |  | |  |  |
+| `ValuationQuantityUnit` |  | |  |  |
+| `InventoryAmtInDspCrcy` |  | |  |  |
+| `InvtryTransacAmtInDisplayCrcy` |  | |  |  |
+| `PriceDiffAmtInDisplayCrcy` |  | |  |  |
+| `Currency` |  | |  |  |
+| `MaterialLedgerCategoryText` |  | |  |  |
+| `ProcessCategoryName` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ControllingValuationType` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_QuantityUnit` | | ✓ | | |
 
 ## Associations
 

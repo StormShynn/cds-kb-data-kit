@@ -28,41 +28,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `QltyInProcmtIntID` | `QltyInProcmtIntID` |
-| `Supplier` | `Supplier` |
-| `Plant` | `Plant` |
-| `MaterialRevisionLevel` | `MaterialRevisionLevel` |
-| `QltyInProcmtReleaseValidTo` | `QltyInProcmtReleaseValidTo` |
-| `BaseUnit` | `BaseUnit` |
-| `ReleasedQuantity` | `ReleasedQuantity` |
-| `QltyInProcmtBlockReasonText` | `QltyInProcmtBlockReasonText` |
-| `ProcurementBlock` | `ProcurementBlock` |
-| `QltyInProcmtRelQtyIsActive` | `QltyInProcmtRelQtyIsActive` |
-| `QltyInProcmtInspControl` | `QltyInProcmtInspControl` |
-| `ProdnPieceApprovalIsRequired` | `ProdnPieceApprovalIsRequired` |
-| `ProductionPieceApproval` | `ProductionPieceApproval` |
-| `ProductionPieceApprovalLevel` | `ProductionPieceApprovalLevel` |
-| `ProductionPieceApprovalStatus` | `ProductionPieceApprovalStatus` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `IsDeleted` | `IsDeleted` |
-| `QualityManagementSystem` | `QualityManagementSystem` |
-| `QltyInProcmtCertfnValidTo` | `QltyInProcmtCertfnValidTo` |
-| `InspectionLotType` | `InspectionLotType` |
-| `QltyInProcmtLotCrtnLeadTime` | `QltyInProcmtLotCrtnLeadTime` |
-| `QltyInProcmtCertificateCtrl` | `QltyInProcmtCertificateCtrl` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `MatlQualityAuthorizationGroup` | `MatlQualityAuthorizationGroup` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `_QltyFirstArticleInsp` | *Association* |
-| `_QltyInProcmtLongText` | *Association* |
-| `_QltyInProcmtStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `QltyInProcmtIntID` | ✓ | |  |  |
+| `Supplier` |  | |  |  |
+| `Plant` |  | |  |  |
+| `MaterialRevisionLevel` |  | |  |  |
+| `QltyInProcmtReleaseValidTo` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ReleasedQuantity` |  | |  |  |
+| `QltyInProcmtBlockReasonText` |  | |  |  |
+| `ProcurementBlock` |  | |  |  |
+| `QltyInProcmtRelQtyIsActive` |  | |  |  |
+| `QltyInProcmtInspControl` |  | |  |  |
+| `ProdnPieceApprovalIsRequired` |  | |  |  |
+| `ProductionPieceApproval` |  | |  |  |
+| `ProductionPieceApprovalLevel` |  | |  |  |
+| `ProductionPieceApprovalStatus` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `QualityManagementSystem` |  | |  |  |
+| `QltyInProcmtCertfnValidTo` |  | |  |  |
+| `InspectionLotType` |  | |  |  |
+| `QltyInProcmtLotCrtnLeadTime` |  | |  |  |
+| `QltyInProcmtCertificateCtrl` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `MatlQualityAuthorizationGroup` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `_QltyFirstArticleInsp` | | ✓ | | |
+| `_QltyInProcmtLongText` | | ✓ | | |
+| `_QltyInProcmtStatus` | | ✓ | | |
 
 ## Source Code
 

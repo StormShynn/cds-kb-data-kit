@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProjBillgElmntEntrItmUUID` | `pbee_uuid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjBillgElmntEntrItmUUID` |  | |  | `pbee_uuid` |
 
 ## Source Code
 

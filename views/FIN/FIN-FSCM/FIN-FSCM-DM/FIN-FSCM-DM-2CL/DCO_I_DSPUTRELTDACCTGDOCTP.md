@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `DCoDisputeUUID` | `} key DCoDisputeUUID` |
-| key `DCoDsputReltdAcctgDocumentUUID` | `DCoDsputReltdAcctgDocumentUUID` |
-| `DCoAccountingDocumentUUID` | `DCoAccountingDocumentUUID` |
-| `DCoDisputeAcctgDocCurrency` | `DCoDisputeAcctgDocCurrency` |
-| `DCoDsputAcctgDocDsputdAmt` | `} DCoDsputAcctgDocDsputdAmt` |
-| `DCoDsputAcctgDocToBeColltdAmt` | `} DCoDsputAcctgDocToBeColltdAmt` |
-| `DCoDsputAcctgDocCrrtnAmt` | `} DCoDsputAcctgDocCrrtnAmt` |
-| `DCoDsputAcctgDocWrtOffAmt` | `} DCoDsputAcctgDocWrtOffAmt` |
-| `DCoDisputeAcctgDocumentReason` | `DCoDisputeAcctgDocumentReason` |
-| `DCoDisputeAcctgDocDecision` | `DCoDisputeAcctgDocDecision` |
-| `DCoDisputeAcctgDocCategory` | `DCoDisputeAcctgDocCategory` |
-| `DCoDisputeAcctgDocCreationUser` | `} DCoDisputeAcctgDocCreationUser` |
-| `DCoDsputAcctgDocCrtnDateTime` | `} DCoDsputAcctgDocCrtnDateTime` |
-| `DCoDsputAcctgDocLastChgdByUsr` | `} DCoDsputAcctgDocLastChgdByUsr` |
-| `DCoDsputAcctgDocLstChgDateTime` | `} DCoDsputAcctgDocLstChgDateTime` |
-| `_Dispute` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DCoDisputeUUID` |  | |  | `} key DCoDisputeUUID` |
+| `DCoDsputReltdAcctgDocumentUUID` | ✓ | |  |  |
+| `DCoAccountingDocumentUUID` |  | |  |  |
+| `DCoDisputeAcctgDocCurrency` |  | |  |  |
+| `DCoDsputAcctgDocDsputdAmt` |  | |  | `} DCoDsputAcctgDocDsputdAmt` |
+| `DCoDsputAcctgDocToBeColltdAmt` |  | |  | `} DCoDsputAcctgDocToBeColltdAmt` |
+| `DCoDsputAcctgDocCrrtnAmt` |  | |  | `} DCoDsputAcctgDocCrrtnAmt` |
+| `DCoDsputAcctgDocWrtOffAmt` |  | |  | `} DCoDsputAcctgDocWrtOffAmt` |
+| `DCoDisputeAcctgDocumentReason` |  | |  |  |
+| `DCoDisputeAcctgDocDecision` |  | |  |  |
+| `DCoDisputeAcctgDocCategory` |  | |  |  |
+| `DCoDisputeAcctgDocCreationUser` |  | |  | `} DCoDisputeAcctgDocCreationUser` |
+| `DCoDsputAcctgDocCrtnDateTime` |  | |  | `} DCoDsputAcctgDocCrtnDateTime` |
+| `DCoDsputAcctgDocLastChgdByUsr` |  | |  | `} DCoDsputAcctgDocLastChgdByUsr` |
+| `DCoDsputAcctgDocLstChgDateTime` |  | |  | `} DCoDsputAcctgDocLstChgDateTime` |
+| `_Dispute` | | ✓ | | |
 
 ## Source Code
 

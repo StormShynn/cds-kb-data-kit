@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierABCClassificationCode` | `cast(substring( domvalue_l, 1, 1 ) as /srmsmc/abc_classification preserving type )` |
-| `_SLCMgmtABCClassificationText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierABCClassificationCode` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as /srmsmc/abc_classification preserving type )` |
+| `_SLCMgmtABCClassificationText` | | ✓ | | |
 
 ## Associations
 

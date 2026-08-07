@@ -27,43 +27,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `bp021.partnr` |
-| key `BusinessPartnerFiscalYear` | `bp021.business_y` |
-| `BPBalanceSheetCurrency` | `bp021.bal_sh_cur` |
-| `BPAnnualStockholderMeetingDate` | `bp021.gen_meet_d` |
-| `BPFiscalYearStartDate` | `bp021.bu_y_begin` |
-| `BPFiscalYearEndDate` | `bp021.bu_y_end` |
-| `BPFiscalYearIsClosed` | `bp021.annual_acc` |
-| `BPFiscalYearClosingDate` | `bp021.annu_acc_d` |
-| `BPFsclYrCnsldtdFinStatementDte` | `bp021.cons_fst_d` |
-| `BPCapitalStockAmtInBalShtCrcy` | `bp021.capi_stock` |
-| `BPIssdStockCptlAmtInBalShtCrcy` | `bp021.shar_stock` |
-| `BPPartcipnCertAmtInBalShtCrcy` | `bp021.prsh_stock` |
-| `BPEquityCapitalAmtInBalShtCrcy` | `bp021.equity` |
-| `BPGrossPremiumAmtInBalShtCrcy` | `bp021.gross_amnt` |
-| `BPNetPremiumAmtInBalShtCrcy` | `bp021.net_amount` |
-| `BPAnnualSalesAmtInBalShtCrcy` | `bp021.turnover` |
-| `BPAnnualNetIncAmtInBalShtCrcy` | `bp021.net_income` |
-| `BPDividendDistrAmtInBalShtCrcy` | `bp021.div_dis_am` |
-| `BPDebtRatioInYears` | `bp021.debts_fact` |
-| `BPAnnualPnLAmtInBalShtCrcy` | `bp021.dis_profit` |
-| `BPBalSheetTotalAmtInBalShtCrcy` | `bp021.bal_amount` |
-| `BPNumberOfEmployees` | `bp021.staff_count` |
-| `BPCptlReserveAmtInBalShtCrcy` | `bp021.cap_res` |
-| `BPLglRevnRsrvAmtInBalShtCrcy` | `bp021.rev_res_leg` |
-| `RevnRsrvOwnStkAmtInBalShtCrcy` | `bp021.rev_res_own_shr` |
-| `BPStatryReserveAmtInBalShtCrcy` | `bp021.rev_res_by_laws` |
-| `BPOthRevnRsrvAmtInBalShtCrcy` | `bp021.rev_res_others` |
-| `BPPnLCarryfwdAmtInBalShtCrcy` | `bp021.forw_profit_loss` |
-| `BPSuborddLbltyAmtInBalShtCrcy` | `bp021.liabilit_second` |
-| `BPRetOnTotalCptlEmpldInPercent` | `bp021.ret_tot_cap_empl` |
-| `BPDebtClearancePeriodInYears` | `bp021.reduc_long_term` |
-| `BPFinancingCoeffInPercent` | `bp021.coeff_finance` |
-| `BPEquityRatioInPercent` | `bp021.equity_capit` |
-| `_BusinessPartner` | *Association* |
-| `_BPFinancialServicesExtn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partnr` |
+| `BusinessPartnerFiscalYear` | ✓ | |  | `business_y` |
+| `BPBalanceSheetCurrency` |  | |  | `bal_sh_cur` |
+| `BPAnnualStockholderMeetingDate` |  | |  | `gen_meet_d` |
+| `BPFiscalYearStartDate` |  | |  | `bu_y_begin` |
+| `BPFiscalYearEndDate` |  | |  | `bu_y_end` |
+| `BPFiscalYearIsClosed` |  | |  | `annual_acc` |
+| `BPFiscalYearClosingDate` |  | |  | `annu_acc_d` |
+| `BPFsclYrCnsldtdFinStatementDte` |  | |  | `cons_fst_d` |
+| `BPCapitalStockAmtInBalShtCrcy` |  | |  | `capi_stock` |
+| `BPIssdStockCptlAmtInBalShtCrcy` |  | |  | `shar_stock` |
+| `BPPartcipnCertAmtInBalShtCrcy` |  | |  | `prsh_stock` |
+| `BPEquityCapitalAmtInBalShtCrcy` |  | |  | `equity` |
+| `BPGrossPremiumAmtInBalShtCrcy` |  | |  | `gross_amnt` |
+| `BPNetPremiumAmtInBalShtCrcy` |  | |  | `net_amount` |
+| `BPAnnualSalesAmtInBalShtCrcy` |  | |  | `turnover` |
+| `BPAnnualNetIncAmtInBalShtCrcy` |  | |  | `net_income` |
+| `BPDividendDistrAmtInBalShtCrcy` |  | |  | `div_dis_am` |
+| `BPDebtRatioInYears` |  | |  | `debts_fact` |
+| `BPAnnualPnLAmtInBalShtCrcy` |  | |  | `dis_profit` |
+| `BPBalSheetTotalAmtInBalShtCrcy` |  | |  | `bal_amount` |
+| `BPNumberOfEmployees` |  | |  | `staff_count` |
+| `BPCptlReserveAmtInBalShtCrcy` |  | |  | `cap_res` |
+| `BPLglRevnRsrvAmtInBalShtCrcy` |  | |  | `rev_res_leg` |
+| `RevnRsrvOwnStkAmtInBalShtCrcy` |  | |  | `rev_res_own_shr` |
+| `BPStatryReserveAmtInBalShtCrcy` |  | |  | `rev_res_by_laws` |
+| `BPOthRevnRsrvAmtInBalShtCrcy` |  | |  | `rev_res_others` |
+| `BPPnLCarryfwdAmtInBalShtCrcy` |  | |  | `forw_profit_loss` |
+| `BPSuborddLbltyAmtInBalShtCrcy` |  | |  | `liabilit_second` |
+| `BPRetOnTotalCptlEmpldInPercent` |  | |  | `ret_tot_cap_empl` |
+| `BPDebtClearancePeriodInYears` |  | |  | `reduc_long_term` |
+| `BPFinancingCoeffInPercent` |  | |  | `coeff_finance` |
+| `BPEquityRatioInPercent` |  | |  | `equity_capit` |
+| `_BusinessPartner` | | ✓ | | |
+| `_BPFinancialServicesExtn` | | ✓ | | |
 
 ## Associations
 

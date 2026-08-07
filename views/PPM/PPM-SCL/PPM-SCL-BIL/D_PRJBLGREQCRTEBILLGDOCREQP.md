@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Action` | `abap.string` |
-| `OnAccountItemsAreIncluded` | `boolean` |
-| `ProjBillgAdhcBillgPlnItmIsCrtd` | `boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Action` |  | |  | `string` |
+| `OnAccountItemsAreIncluded` |  | |  | `boolean` |
+| `ProjBillgAdhcBillgPlnItmIsCrtd` |  | |  | `boolean` |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TechObjAuthorizationGroup` | `cast(t370b.begru as eam_iautg)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TechObjAuthorizationGroup` | ✓ | |  | `cast(t370b.begru as eam_iautg)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

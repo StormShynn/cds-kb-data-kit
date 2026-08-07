@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeRecordUUID` | `ChangeRecordUUID` |
-| `ParentChangeRecordUUID` | `ParentChangeRecordUUID` |
-| `ChgRecdHdrExtnUUID` | `ChgRecdHdrExtnUUID` |
-| `ChgRecdReasonForChange` | `ChgRecdReasonForChange` |
-| `ChgRecdChangeStatus` | `ChgRecdChangeStatus` |
-| `ChgRecdExpectedCompletionDate` | `ChgRecdExpectedCompletionDate` |
-| `ChgRecdPrflIdn` | `ChgRecdPrflIdn` |
-| `ChangeRecordDetailDescription` | `ChangeRecordDetailDescription` |
-| `ChgRecdEngEffectiveDate` | `ChgRecdEngEffectiveDate` |
-| `ChgRecdMfgEffectiveDate` | `ChgRecdMfgEffectiveDate` |
-| `ChgRecdInitiatedStatusAction` | `ChgRecdInitiatedStatusAction` |
-| `ChangeRecordItemEditMode` | `ChangeRecordItemEditMode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeRecordUUID` | ✓ | |  |  |
+| `ParentChangeRecordUUID` |  | |  |  |
+| `ChgRecdHdrExtnUUID` |  | |  |  |
+| `ChgRecdReasonForChange` |  | |  |  |
+| `ChgRecdChangeStatus` |  | |  |  |
+| `ChgRecdExpectedCompletionDate` |  | |  |  |
+| `ChgRecdPrflIdn` |  | |  |  |
+| `ChangeRecordDetailDescription` |  | |  |  |
+| `ChgRecdEngEffectiveDate` |  | |  |  |
+| `ChgRecdMfgEffectiveDate` |  | |  |  |
+| `ChgRecdInitiatedStatusAction` |  | |  |  |
+| `ChangeRecordItemEditMode` |  | |  |  |
 
 ## Source Code
 

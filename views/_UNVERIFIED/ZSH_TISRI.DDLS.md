@@ -38,13 +38,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `domain_name` | `domain_name` |
-| key `value_position` | `value_position` |
-| key `language` | `language` |
-| `value_low` | `value_low` |
-| `Description` | `text` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `domain_name` | ✓ | |  |  |
+| `value_position` | ✓ | |  |  |
+| `language` | ✓ | |  |  |
+| `value_low` |  | |  |  |
+| `Description` |  | |  | `text` |
 
 ## Source Code
 

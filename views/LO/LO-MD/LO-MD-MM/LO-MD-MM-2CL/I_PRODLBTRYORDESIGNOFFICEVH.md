@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LaboratoryOrDesignOffice` | `LabOffice.LaboratoryOrDesignOffice` |
-| `_LabOfficeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LaboratoryOrDesignOffice` | ✓ | |  |  |
+| `_LabOfficeText` | | ✓ | | |
 
 ## Associations
 

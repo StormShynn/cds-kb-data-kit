@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectServiceOrganization` | `ProjectServiceOrganization` |
-| key `ProjSrvcOrgCostCenter` | `ProjSrvcOrgCostCenter` |
-| `ProjectServiceOrganizationUUID` | `ProjectServiceOrganizationUUID` |
-| `ProjSrvcOrgIsMainCostCenter` | `ProjSrvcOrgIsMainCostCenter` |
-| `_ServiceOrganization` | *Association* |
-| `_ParentServiceOrganization` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectServiceOrganization` | ✓ | |  |  |
+| `ProjSrvcOrgCostCenter` | ✓ | |  |  |
+| `ProjectServiceOrganizationUUID` |  | |  |  |
+| `ProjSrvcOrgIsMainCostCenter` |  | |  |  |
+| `_ServiceOrganization` | | ✓ | | |
+| `_ParentServiceOrganization` | | ✓ | | |
 
 ## Associations
 

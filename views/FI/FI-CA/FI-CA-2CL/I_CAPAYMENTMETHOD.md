@@ -28,33 +28,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `CAPaymentMethod` | `zlsch` |
-| `BankDetailsOfBPAreRequired` | `xbkkt` |
-| `AddressDetailsAreRequired` | `xstra` |
-| `IsPaytMethForIncomingPayments` | `xeinz` |
-| `CAIsPaytMethForPostOffcBkAcct` | `xpgir` |
-| `ChequeIsCreatedWithPaytMeth` | `xschk` |
-| `IsPaytMethForEUInternalTransf` | `xeuro` |
-| `CAPaymentMethodProcessingType` | `xverr` |
-| `CAPaymentMediumFormat` | `formi` |
-| `CAPaytMediumFormatSupplement` | `formz` |
-| `CAPaymentOrderIsCreated` | `xnopo` |
-| `CAPaytMethForBillerDirect` | `xebpp` |
-| `CAIsPaytSlipWithRefNmbrProced` | `xesrd` |
-| `CAPaytMethAddressIsNotRequired` | `xaddr` |
-| `BR_CABoletoAssignmentType` | `bolty` |
-| `CAPaymentMethodNotificationCat` | `ddaty` |
-| `ContrAcctgIBANOrSWIFTRqmtCode` | `xiban` |
-| `CASEPAMandateIsRequired` | `xsepa` |
-| `CASEPAPrenotificationIsCreated` | `pnopt` |
-| `CARealTimePaymentCategory` | `rtpty` |
-| `CASuplmntForPaytMediumFormat` | `formz` |
-| `CAIBANAndOrSwiftCodeIsRequired` | `xiban` |
-| `_Text` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `CAPaymentMethod` | ✓ | |  | `zlsch` |
+| `BankDetailsOfBPAreRequired` |  | |  | `xbkkt` |
+| `AddressDetailsAreRequired` |  | |  | `xstra` |
+| `IsPaytMethForIncomingPayments` |  | |  | `xeinz` |
+| `CAIsPaytMethForPostOffcBkAcct` |  | |  | `xpgir` |
+| `ChequeIsCreatedWithPaytMeth` |  | |  | `xschk` |
+| `IsPaytMethForEUInternalTransf` |  | |  | `xeuro` |
+| `CAPaymentMethodProcessingType` |  | |  | `xverr` |
+| `CAPaymentMediumFormat` |  | |  | `formi` |
+| `CAPaytMediumFormatSupplement` |  | |  | `formz` |
+| `CAPaymentOrderIsCreated` |  | |  | `xnopo` |
+| `CAPaytMethForBillerDirect` |  | |  | `xebpp` |
+| `CAIsPaytSlipWithRefNmbrProced` |  | |  | `xesrd` |
+| `CAPaytMethAddressIsNotRequired` |  | |  | `xaddr` |
+| `BR_CABoletoAssignmentType` |  | |  | `bolty` |
+| `CAPaymentMethodNotificationCat` |  | |  | `ddaty` |
+| `ContrAcctgIBANOrSWIFTRqmtCode` |  | |  | `xiban` |
+| `CASEPAMandateIsRequired` |  | |  | `xsepa` |
+| `CASEPAPrenotificationIsCreated` |  | |  | `pnopt` |
+| `CARealTimePaymentCategory` |  | |  | `rtpty` |
+| `CASuplmntForPaytMediumFormat` |  | |  | `formz` |
+| `CAIBANAndOrSwiftCodeIsRequired` |  | |  | `xiban` |
+| `_Text` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

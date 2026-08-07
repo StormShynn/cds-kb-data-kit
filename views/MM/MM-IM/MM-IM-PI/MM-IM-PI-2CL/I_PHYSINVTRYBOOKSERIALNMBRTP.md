@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SerialNumber` | `SerialNumber` |
-| key `FiscalYear` | `FiscalYear` |
-| key `PhysicalInventoryDocument` | `PhysicalInventoryDocument` |
-| key `PhysicalInventoryDocumentItem` | `PhysicalInventoryDocumentItem` |
-| `Equipment` | `Equipment` |
-| `_PhysicalInventoryDocumentItem` | *Association* |
-| `_PhysInvtryDoc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SerialNumber` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `PhysicalInventoryDocument` | ✓ | |  |  |
+| `PhysicalInventoryDocumentItem` | ✓ | |  |  |
+| `Equipment` |  | |  |  |
+| `_PhysicalInventoryDocumentItem` | | ✓ | | |
+| `_PhysInvtryDoc` | | ✓ | | |
 
 ## Source Code
 

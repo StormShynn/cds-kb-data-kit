@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RepetitiveManufacturingProfile` | `txt.sfpro` |
-| key `Language` | `txt.spras` |
-| `RepetitiveMfgProfileName` | `txt.spbez` |
-| `_Profile` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RepetitiveManufacturingProfile` | ✓ | |  | `sfpro` |
+| `Language` | ✓ | |  | `spras` |
+| `RepetitiveMfgProfileName` |  | |  | `spbez` |
+| `_Profile` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

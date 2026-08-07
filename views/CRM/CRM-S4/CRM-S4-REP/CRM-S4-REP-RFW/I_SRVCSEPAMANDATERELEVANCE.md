@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcSEPAMandateRelevance` | `cast(domvalue_l as crm_sepa_on )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcSEPAMandateRelevance` | ✓ | |  | `cast(domvalue_l as crm_sepa_on )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

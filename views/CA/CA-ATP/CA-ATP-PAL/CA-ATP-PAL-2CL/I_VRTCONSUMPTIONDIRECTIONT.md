@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VerticalConsumptionDirection` | `cast ( substring( domvalue_l, 1, 2 ) as verticalconsumptiondirection preserving type )` |
-| key `Language` | `ddlanguage` |
-| `VerticalCnsmpnDirectionDesc` | `cast( ddtext as verticalcnsmpndirectiondesc preserving type )` |
-| `_Language` | *Association* |
-| `_VerticalConsumptionDirection` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VerticalConsumptionDirection` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as verticalconsumptiondirection preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `VerticalCnsmpnDirectionDesc` |  | |  | `cast( ddtext as verticalcnsmpndirectiondesc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_VerticalConsumptionDirection` | | ✓ | | |
 
 ## Associations
 

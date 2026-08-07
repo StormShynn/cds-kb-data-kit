@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PersonWorkAgreement` | `pTime.employeenumber` |
-| key `CalendarDate` | `pTime.validitydate` |
-| `Origin` | `pTime.extapplication` |
-| `PlannedWorkingHours` | `pTime.regularhours` |
-| `PlannedStartTime` | `pTime.regularbegin` |
-| `PlannedEndTime` | `pTime.regularend` |
-| `PublicHolidayClass` | `pTime.holidayclass` |
-| `IsNonWorkingDay` | `pTime.nonworking` |
-| `AbsenceInHours` | `pTime.absencehours` |
-| `AttendanceHours` | `pTime.attendancehours` |
-| `OvertimeInHours` | `pTime.overtimehours` |
-| `AvailabilityInHours` | `( pTime.regularhours + pTime.overtimehours - pTime.absencehours - pTime.attendancehours )` |
-| `PersonWorkAgrmtAuthznGrpg` | `_PersonWorkAgrmtStatus.PersonWorkAgrmtAuthznGrpg` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PersonWorkAgreement` | ✓ | |  | `employeenumber` |
+| `CalendarDate` | ✓ | |  | `validitydate` |
+| `Origin` |  | |  | `extapplication` |
+| `PlannedWorkingHours` |  | |  | `regularhours` |
+| `PlannedStartTime` |  | |  | `regularbegin` |
+| `PlannedEndTime` |  | |  | `regularend` |
+| `PublicHolidayClass` |  | |  | `holidayclass` |
+| `IsNonWorkingDay` |  | |  | `nonworking` |
+| `AbsenceInHours` |  | |  | `absencehours` |
+| `AttendanceHours` |  | |  | `attendancehours` |
+| `OvertimeInHours` |  | |  | `overtimehours` |
+| `AvailabilityInHours` |  | |  | `( pTime.regularhours + pTime.overtimehours - pTime.absencehours - pTime.attendancehours )` |
+| `PersonWorkAgrmtAuthznGrpg` |  | | `_PersonWorkAgrmtStatus` | `PersonWorkAgrmtAuthznGrpg` |
 
 ## Source Code
 

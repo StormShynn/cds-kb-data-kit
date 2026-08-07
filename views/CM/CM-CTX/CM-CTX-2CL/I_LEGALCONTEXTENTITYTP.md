@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMCntxtEntityUUID` | `LglCntntMCntxtEntityUUID` |
-| `LglCntntMContextUUID` | `LglCntntMContextUUID` |
-| `LglCntntMRank` | `LglCntntMRank` |
-| `LglCntntMEntityType` | `LglCntntMEntityType` |
-| `LglCntntMEntity` | `LglCntntMEntity` |
-| `LglCntntMIsMandatory` | `LglCntntMIsMandatory` |
-| `LglCntntMIsMainEntity` | `LglCntntMIsMainEntity` |
-| `LglCntntMIsIntegRelevant` | `LglCntntMIsIntegRelevant` |
-| `_LCMContextTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMCntxtEntityUUID` | ✓ | |  |  |
+| `LglCntntMContextUUID` |  | |  |  |
+| `LglCntntMRank` |  | |  |  |
+| `LglCntntMEntityType` |  | |  |  |
+| `LglCntntMEntity` |  | |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |
+| `LglCntntMIsMainEntity` |  | |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |
+| `_LCMContextTP` | | ✓ | | |
 
 ## Source Code
 

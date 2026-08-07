@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EventRaisedDateTime` | `vdm_lastchangedon` |
-| `SalesQuotationType` | `auart_unv` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `OrganizationDivision` | `spart` |
-| `SoldToParty` | `kunnr` |
-| `SalesQuotationItemCategory` | `pstyv` |
-| `Product` | `matnr` |
-| `ItemGeneralIncompletionStatus` | `uvall_up` |
-| `PreviousItmGenIncompltnSts` | `uvall_up` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
+| `SalesQuotationType` |  | |  | `auart_unv` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SoldToParty` |  | |  | `kunnr` |
+| `SalesQuotationItemCategory` |  | |  | `pstyv` |
+| `Product` |  | |  | `matnr` |
+| `ItemGeneralIncompletionStatus` |  | |  | `uvall_up` |
+| `PreviousItmGenIncompltnSts` |  | |  | `uvall_up` |
 
 ## Source Code
 

@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REProcessUUID` | `processguid` |
-| key `REProcessVersion` | `version` |
-| `RealEstateProcess` | `cast(processid as recavdmprocessid preserving type )` |
-| `RealEstateProcessExternal` | `cast(processextid as recavdmprocessextid preserving type )` |
-| `REProcessType` | `cast(process as recavdmprocess preserving type )` |
-| `REProcessMode` | `processmode` |
-| `REProcessNumberInFiscalYear` | `cast(counter as recavdmprocesscounter preserving type )` |
-| `FiscalYear` | `fisc_year` |
-| `REProcessDescription` | `title` |
-| `REProcessIsReversed` | `flg_reversal` |
-| `_REProcessType` | *Association* |
-| `_REProcessMode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REProcessUUID` | ✓ | |  | `processguid` |
+| `REProcessVersion` | ✓ | |  | `version` |
+| `RealEstateProcess` |  | |  | `cast(processid as recavdmprocessid preserving type )` |
+| `RealEstateProcessExternal` |  | |  | `cast(processextid as recavdmprocessextid preserving type )` |
+| `REProcessType` |  | |  | `cast(process as recavdmprocess preserving type )` |
+| `REProcessMode` |  | |  | `processmode` |
+| `REProcessNumberInFiscalYear` |  | |  | `cast(counter as recavdmprocesscounter preserving type )` |
+| `FiscalYear` |  | |  | `fisc_year` |
+| `REProcessDescription` |  | |  | `title` |
+| `REProcessIsReversed` |  | |  | `flg_reversal` |
+| `_REProcessType` | | ✓ | | |
+| `_REProcessMode` | | ✓ | | |
 
 ## Associations
 

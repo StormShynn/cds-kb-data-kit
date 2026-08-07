@@ -26,16 +26,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Material` | `matnr` |
-| `MRPPlant` | `werks_d` |
-| `MRPArea` | `berid` |
-| `MRPPlanningSegmentType` | `plaab` |
-| `MRPPlanningSegment` | `planr` |
-| `MaterialShortageDefinition` | `char15` |
-| `MRPElementSupplyAggregation` | `supplyaggregation` |
-| `MRPElementDemandAggregation` | `demandaggregation` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` |  | |  | `matnr` |
+| `MRPPlant` |  | |  | `werks_d` |
+| `MRPArea` |  | |  | `berid` |
+| `MRPPlanningSegmentType` |  | |  | `plaab` |
+| `MRPPlanningSegment` |  | |  | `planr` |
+| `MaterialShortageDefinition` |  | |  | `char15` |
+| `MRPElementSupplyAggregation` |  | |  | `supplyaggregation` |
+| `MRPElementDemandAggregation` |  | |  | `demandaggregation` |
 
 ## Source Code
 

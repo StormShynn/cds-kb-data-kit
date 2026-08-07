@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AvailabilityControlProfile` | `profile` |
-| key `Language` | `langu` |
-| `AvailabilityControlProfileName` | `txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AvailabilityControlProfile` | ✓ | |  | `profile` |
+| `Language` | ✓ | |  | `langu` |
+| `AvailabilityControlProfileName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `RENoticeRule` | `ntrule` |
-| `RENoticeRuleDescription` | `xntrule` |
-| `_RENoticeRule` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `RENoticeRule` | ✓ | |  | `ntrule` |
+| `RENoticeRuleDescription` |  | |  | `xntrule` |
+| `_RENoticeRule` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

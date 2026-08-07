@@ -30,129 +30,129 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionContract` | `ConditionContract` |
-| `CndnContrType` | `}] } CndnContrType` |
-| `CndnContrClassfctnType` | `CndnContrClassfctnType` |
-| `CndnContrProcVar` | `}] } CndnContrProcVar` |
-| `DocumentReferenceID` | `DocumentReferenceID` |
-| `AssignmentReference` | `CndnContrAssgmtRef` |
-| `CndnContrAssgmtRef` | `CndnContrAssgmtRef` |
-| `ExternalDocumentReferenceID` | `ExternalDocumentReferenceID` |
-| `CndnContrExternalPartner` | `CndnContrExternalPartner` |
-| `CndnContrIsInactive` | `CndnContrActvtnStatus` |
-| `CndnContrValidFrom` | `CndnContrValidFrom` |
-| `CndnContrValidTo` | `CndnContrValidTo` |
-| `Supplier` | `}] } Supplier` |
-| `Customer` | `}] } Customer` |
-| `PriorSupplier` | `}] } PriorSupplier` |
-| `PersonWorkAgreement` | `}] } PersonWorkAgreement` |
-| `CompanyCode` | `}] } CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesOffice` | `SalesOffice` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `CreationTimeZone` | `CreationTimeZone` |
-| `CreationUTCDateTime` | `CreationUTCDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangedDate` | `LastChangedDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangeUTCDateTime` | `LastChangeUTCDateTime` |
-| `CndnContrCurrency` | `CndnContrCurrency` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `ExchangeRate` | `ExchangeRate` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `PaymentMethod` | `PaymentMethod` |
-| `CndnContrSuplrSettlmtCat` | `CndnContrSuplrSettlmtCat` |
-| `CndnContrCustSettlmtCat` | `CndnContrCustSettlmtCat` |
-| `SettlmtProduct` | `}] } SettlmtProduct` |
-| `FinalSettlmtCalendar` | `FinalSettlmtCalendar` |
-| `PartialSettlmtCalendar` | `PartialSettlmtCalendar` |
-| `DeltaSettlmtCalendar` | `DeltaSettlmtCalendar` |
-| `DeltaAccrualSettlmtCalendar` | `DeltaAccrualSettlmtCalendar` |
-| `AccrualClearingSettlmtCalendar` | `AccrualClearingSettlmtCalendar` |
-| `CndnContrExtensionCalendar` | `CndnContrExtensionCalendar` |
-| `PrecedingConditionContract` | `}] } PrecedingConditionDocument` |
-| `PrecedingConditionDocument` | `PrecedingConditionDocument` |
-| `CndnContrPurposeCat` | `CndnContrPurposeCat` |
-| `CndnContrSourceDocCat` | `CndnContrSourceDocCat` |
-| `CndnContrSourceDoc` | `CndnContrSourceDoc` |
-| `CndnContrSourceDocItem` | `CndnContrSourceDocItem` |
-| `BusVolTableGroup` | `BusVolTableGroup` |
-| `AmountFieldGroup` | `AmountFieldGroup` |
-| `CndnContrUnit` | `CndnContrUnit` |
-| `CndnContrWeightUnit` | `CndnContrWeightUnit` |
-| `CndnContrVolumeUnit` | `CndnContrVolumeUnit` |
-| `CndnContrPointsQtyUnit` | `CndnContrPointsQtyUnit` |
-| `AccrualUpdateIsRequired` | `AccrualUpdateIsRequired` |
-| `CndnContrUUID` | `CndnContrUUID` |
-| `CndnContrSourceUUID` | `CndnContrSourceUUID` |
-| `SettlmtPartTxRegnNmbr` | `SettlmtPartTxRegnNmbr` |
-| `TaxCountry` | `TaxCountry` |
-| `SettlmtPartTxRegnCntry` | `SettlmtPartTxRegnCntry` |
-| `CndnContrPrcgDetnRlvnceCat` | `CndnContrPrcgDetnRlvnceCat` |
-| `CndnContrWorkerCostCenter` | `CndnContrWorkerCostCenter` |
-| `CndnContrWorkerSettlmtCat` | `CndnContrWorkerSettlmtCat` |
-| `DataController` | `DataController` |
-| `_CndnContrBusVolSelCriteria` | *Association* |
-| `_CndnContrSettlmtCal` | *Association* |
-| `_CndnContrConditionUsage` | *Association* |
-| `_CndnContrType` | *Association* |
-| `_CndnContrIsInactive` | *Association* |
-| `_PrecedingConditionContract` | *Association* |
-| `_PrecedingConditionDocument` | *Association* |
-| `_CndnContrClassfctnType` | *Association* |
-| `_CndnContrProcVar` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_PriorSupplier` | *Association* |
-| `_PersonWorkAgreement` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_CndnContrCurrency` | *Association* |
-| `_ExchangeRateType` | *Association* |
-| `_CndnContrSuplrSettlmtCat` | *Association* |
-| `_CndnContrCustSettlmtCat` | *Association* |
-| `_SettlmtProduct` | *Association* |
-| `_FinalSettlmtCalendar` | *Association* |
-| `_PartialSettlmtCalendar` | *Association* |
-| `_DeltaSettlmtCalendar` | *Association* |
-| `_DeltaAccrualSettlmtCalendar` | *Association* |
-| `_AccrualClearingSettlmtCal` | *Association* |
-| `_CndnContrExtensionCalendar` | *Association* |
-| `_CndnContrPurposeCat` | *Association* |
-| `_CndnContrSourceDocCat` | *Association* |
-| `_BusVolTableGroup` | *Association* |
-| `_AmountFieldGroup` | *Association* |
-| `_CndnContrUnit` | *Association* |
-| `_CndnContrWeightUnit` | *Association* |
-| `_CndnContrVolumeUnit` | *Association* |
-| `_CndnContrPointsQtyUnit` | *Association* |
-| `_TaxCountry` | *Association* |
-| `_SettlmtPartTxRegnCntry` | *Association* |
-| `_CndnContrPrcgDetnRlvnceCat` | *Association* |
-| `_CndnContrWorkerSettlmtCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionContract` | ✓ | |  |  |
+| `CndnContrType` |  | |  | `}] } CndnContrType` |
+| `CndnContrClassfctnType` |  | |  |  |
+| `CndnContrProcVar` |  | |  | `}] } CndnContrProcVar` |
+| `DocumentReferenceID` |  | |  |  |
+| `AssignmentReference` |  | |  | `CndnContrAssgmtRef` |
+| `CndnContrAssgmtRef` |  | |  |  |
+| `ExternalDocumentReferenceID` |  | |  |  |
+| `CndnContrExternalPartner` |  | |  |  |
+| `CndnContrIsInactive` |  | |  | `CndnContrActvtnStatus` |
+| `CndnContrValidFrom` |  | |  |  |
+| `CndnContrValidTo` |  | |  |  |
+| `Supplier` |  | |  | `}] } Supplier` |
+| `Customer` |  | |  | `}] } Customer` |
+| `PriorSupplier` |  | |  | `}] } PriorSupplier` |
+| `PersonWorkAgreement` |  | |  | `}] } PersonWorkAgreement` |
+| `CompanyCode` |  | |  | `}] } CompanyCode` |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreationTimeZone` |  | |  |  |
+| `CreationUTCDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangedDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangeUTCDateTime` |  | |  |  |
+| `CndnContrCurrency` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `CndnContrSuplrSettlmtCat` |  | |  |  |
+| `CndnContrCustSettlmtCat` |  | |  |  |
+| `SettlmtProduct` |  | |  | `}] } SettlmtProduct` |
+| `FinalSettlmtCalendar` |  | |  |  |
+| `PartialSettlmtCalendar` |  | |  |  |
+| `DeltaSettlmtCalendar` |  | |  |  |
+| `DeltaAccrualSettlmtCalendar` |  | |  |  |
+| `AccrualClearingSettlmtCalendar` |  | |  |  |
+| `CndnContrExtensionCalendar` |  | |  |  |
+| `PrecedingConditionContract` |  | |  | `}] } PrecedingConditionDocument` |
+| `PrecedingConditionDocument` |  | |  |  |
+| `CndnContrPurposeCat` |  | |  |  |
+| `CndnContrSourceDocCat` |  | |  |  |
+| `CndnContrSourceDoc` |  | |  |  |
+| `CndnContrSourceDocItem` |  | |  |  |
+| `BusVolTableGroup` |  | |  |  |
+| `AmountFieldGroup` |  | |  |  |
+| `CndnContrUnit` |  | |  |  |
+| `CndnContrWeightUnit` |  | |  |  |
+| `CndnContrVolumeUnit` |  | |  |  |
+| `CndnContrPointsQtyUnit` |  | |  |  |
+| `AccrualUpdateIsRequired` |  | |  |  |
+| `CndnContrUUID` |  | |  |  |
+| `CndnContrSourceUUID` |  | |  |  |
+| `SettlmtPartTxRegnNmbr` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `SettlmtPartTxRegnCntry` |  | |  |  |
+| `CndnContrPrcgDetnRlvnceCat` |  | |  |  |
+| `CndnContrWorkerCostCenter` |  | |  |  |
+| `CndnContrWorkerSettlmtCat` |  | |  |  |
+| `DataController` |  | |  |  |
+| `_CndnContrBusVolSelCriteria` | | ✓ | | |
+| `_CndnContrSettlmtCal` | | ✓ | | |
+| `_CndnContrConditionUsage` | | ✓ | | |
+| `_CndnContrType` | | ✓ | | |
+| `_CndnContrIsInactive` | | ✓ | | |
+| `_PrecedingConditionContract` | | ✓ | | |
+| `_PrecedingConditionDocument` | | ✓ | | |
+| `_CndnContrClassfctnType` | | ✓ | | |
+| `_CndnContrProcVar` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_PriorSupplier` | | ✓ | | |
+| `_PersonWorkAgreement` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_CndnContrCurrency` | | ✓ | | |
+| `_ExchangeRateType` | | ✓ | | |
+| `_CndnContrSuplrSettlmtCat` | | ✓ | | |
+| `_CndnContrCustSettlmtCat` | | ✓ | | |
+| `_SettlmtProduct` | | ✓ | | |
+| `_FinalSettlmtCalendar` | | ✓ | | |
+| `_PartialSettlmtCalendar` | | ✓ | | |
+| `_DeltaSettlmtCalendar` | | ✓ | | |
+| `_DeltaAccrualSettlmtCalendar` | | ✓ | | |
+| `_AccrualClearingSettlmtCal` | | ✓ | | |
+| `_CndnContrExtensionCalendar` | | ✓ | | |
+| `_CndnContrPurposeCat` | | ✓ | | |
+| `_CndnContrSourceDocCat` | | ✓ | | |
+| `_BusVolTableGroup` | | ✓ | | |
+| `_AmountFieldGroup` | | ✓ | | |
+| `_CndnContrUnit` | | ✓ | | |
+| `_CndnContrWeightUnit` | | ✓ | | |
+| `_CndnContrVolumeUnit` | | ✓ | | |
+| `_CndnContrPointsQtyUnit` | | ✓ | | |
+| `_TaxCountry` | | ✓ | | |
+| `_SettlmtPartTxRegnCntry` | | ✓ | | |
+| `_CndnContrPrcgDetnRlvnceCat` | | ✓ | | |
+| `_CndnContrWorkerSettlmtCat` | | ✓ | | |
 
 ## Associations
 

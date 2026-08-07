@@ -29,108 +29,108 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesPlanItemUUID` | `SalesPlanItemUUID` |
-| key `SDDocument` | `SDDocument` |
-| key `SDDocumentItem` | `SDDocumentItem` |
-| `SalesDocumentType` | `SalesDocumentType` |
-| `BillingDocumentType` | `BillingDocumentType` |
-| `SDDocumentObject` | `SDDocumentObject` |
-| `SalesPlanPurpose` | `SalesPlanPurpose` |
-| `SalesPlanPeriodName` | `SalesPlanPeriodName` |
-| `SalesPerformanceDate` | `SalesPerformanceDate` |
-| `SalesPerformanceYearMonth` | `SalesPerformanceYearMonth` |
-| `SlsPerformanceYearQuarter` | `SlsPerformanceYearQuarter` |
-| `SalesPerformanceYear` | `SalesPerformanceYear` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `OrganizationDivision` | `OrganizationDivision` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesDistrict` | `SalesDistrict` |
-| `SoldToParty` | `SoldToParty` |
-| `CustomerGroup` | `CustomerGroup` |
-| `ShipToParty` | `ShipToParty` |
-| `BillToParty` | `BillToParty` |
-| `PayerParty` | `PayerParty` |
-| `AdditionalCustomerGroup1` | `AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `AdditionalCustomerGroup5` |
-| `Division` | `Division` |
-| `Product` | `Product` |
-| `ProductGroup` | `ProductGroup` |
-| `AdditionalMaterialGroup1` | `AdditionalMaterialGroup1` |
-| `AdditionalMaterialGroup2` | `AdditionalMaterialGroup2` |
-| `AdditionalMaterialGroup3` | `AdditionalMaterialGroup3` |
-| `AdditionalMaterialGroup4` | `AdditionalMaterialGroup4` |
-| `AdditionalMaterialGroup5` | `AdditionalMaterialGroup5` |
-| `SalesEmployee` | `cast( case when SalesEmployee is not null then SalesEmployee else '00000000' end as sales_empl )` |
-| `Plant` | `Plant` |
-| `ShippingType` | `ShippingType` |
-| `ProfitCenter` | `ProfitCenter` |
-| `CostCenter` | `CostCenter` |
-| `CompanyCode` | `CompanyCode` |
-| `ControllingArea` | `ControllingArea` |
-| `BusinessArea` | `BusinessArea` |
-| `Country` | `Country` |
-| `BillToPartyCountry` | `BillToPartyCountry` |
-| `Region` | `Region` |
-| `BillToPartyRegion` | `BillToPartyRegion` |
-| `DisplayCurrency` | `DisplayCurrency` |
-| `SalesPlanAmountInDspCrcy` | `SalesPlanAmountInDspCrcy` |
-| `SalesPerfActlAmtInDspCurrency` | `SalesPerfActlAmtInDspCurrency` |
-| `SalesPlanQuantity` | `SalesPlanQuantity` |
-| `SalesPlanUnit` | `cast(SalesPlanUnit as plan_unit)` |
-| `SalesPerfActualQtyInBaseUnit` | `SalesPerfActualQtyInBaseUnit` |
-| `BaseUnit` | `cast (BaseUnit as meins)` |
-| `SalesPerformanceActualQuantity` | `SalesPerformanceActualQuantity` |
-| `SalesPerfActualQuantityUnit` | `SalesPerfActualQuantityUnit` |
-| `_SalesPlanPurpose` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_OrganizationDivision` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_BillToParty` | *Association* |
-| `_PayerParty` | *Association* |
-| `_AdditionalCustomerGroup1` | *Association* |
-| `_AdditionalCustomerGroup2` | *Association* |
-| `_AdditionalCustomerGroup3` | *Association* |
-| `_AdditionalCustomerGroup4` | *Association* |
-| `_AdditionalCustomerGroup5` | *Association* |
-| `_Division` | *Association* |
-| `_Product` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_AdditionalMaterialGroup1` | *Association* |
-| `_AdditionalMaterialGroup2` | *Association* |
-| `_AdditionalMaterialGroup3` | *Association* |
-| `_AdditionalMaterialGroup4` | *Association* |
-| `_AdditionalMaterialGroup5` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_SalesEmployee_2` | *Association* |
-| `_Plant` | *Association* |
-| `_ShippingType` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_CostCenter` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_Country` | *Association* |
-| `_BillToPartyCountry` | *Association* |
-| `_Region` | *Association* |
-| `_BillToPartyRegion` | *Association* |
-| `_SalesPlanUnit` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_SalesUnit` | *Association* |
-| `_SalesDocumentType` | *Association* |
-| `_BillingDocumentType` | *Association* |
-| `_DataSource` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesPlanItemUUID` | ✓ | |  |  |
+| `SDDocument` | ✓ | |  |  |
+| `SDDocumentItem` | ✓ | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `SDDocumentObject` |  | |  |  |
+| `SalesPlanPurpose` |  | |  |  |
+| `SalesPlanPeriodName` |  | |  |  |
+| `SalesPerformanceDate` |  | |  |  |
+| `SalesPerformanceYearMonth` |  | |  |  |
+| `SlsPerformanceYearQuarter` |  | |  |  |
+| `SalesPerformanceYear` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `Division` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |
+| `SalesEmployee` |  | |  | `cast( case when SalesEmployee is not null then SalesEmployee else '00000000' end as sales_empl )` |
+| `Plant` |  | |  |  |
+| `ShippingType` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `Country` |  | |  |  |
+| `BillToPartyCountry` |  | |  |  |
+| `Region` |  | |  |  |
+| `BillToPartyRegion` |  | |  |  |
+| `DisplayCurrency` |  | |  |  |
+| `SalesPlanAmountInDspCrcy` |  | |  |  |
+| `SalesPerfActlAmtInDspCurrency` |  | |  |  |
+| `SalesPlanQuantity` |  | |  |  |
+| `SalesPlanUnit` |  | |  | `cast(SalesPlanUnit as plan_unit)` |
+| `SalesPerfActualQtyInBaseUnit` |  | |  |  |
+| `BaseUnit` |  | |  | `cast (BaseUnit as meins)` |
+| `SalesPerformanceActualQuantity` |  | |  |  |
+| `SalesPerfActualQuantityUnit` |  | |  |  |
+| `_SalesPlanPurpose` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_OrganizationDivision` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_SalesEmployee_2` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ShippingType` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_BillToPartyCountry` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_BillToPartyRegion` | | ✓ | | |
+| `_SalesPlanUnit` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_SalesUnit` | | ✓ | | |
+| `_SalesDocumentType` | | ✓ | | |
+| `_BillingDocumentType` | | ✓ | | |
+| `_DataSource` | | ✓ | | |
 
 ## Associations
 

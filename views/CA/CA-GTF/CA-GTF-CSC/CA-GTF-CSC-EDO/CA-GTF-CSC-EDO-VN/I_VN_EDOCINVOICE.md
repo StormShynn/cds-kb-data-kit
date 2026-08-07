@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VN_EDocInvoiceUUID` | `VN_EDocInvoiceUUID` |
-| `VN_EDocTemplateID` | `VN_EDocTemplateID` |
-| `VN_EDocSeriesID` | `VN_EDocSeriesID` |
-| `VN_EDocInvoiceNumber` | `VN_EDocInvoiceNumber` |
-| `VN_EDocBusinessPlace` | `VN_EDocBusinessPlace` |
-| `VN_EDocBuyerIdnNmbr` | `VN_EDocBuyerIdnNmbr` |
-| `VN_EDocReferenceTemplateID` | `VN_EDocReferenceTemplateID` |
-| `VN_EDocReferenceSeriesID` | `VN_EDocReferenceSeriesID` |
-| `VN_EDocReferenceInvoiceNumber` | `VN_EDocReferenceInvoiceNumber` |
-| `VN_EDocScenario` | `VN_EDocScenario` |
-| `VN_EDocCQTCode` | `VN_EDocCQTCode` |
-| `VN_EDocAgreementInformation` | `VN_EDocAgreementInformation` |
-| `ElectronicDocCompanyCode` | `ElectronicDocCompanyCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VN_EDocInvoiceUUID` | ✓ | |  |  |
+| `VN_EDocTemplateID` |  | |  |  |
+| `VN_EDocSeriesID` |  | |  |  |
+| `VN_EDocInvoiceNumber` |  | |  |  |
+| `VN_EDocBusinessPlace` |  | |  |  |
+| `VN_EDocBuyerIdnNmbr` |  | |  |  |
+| `VN_EDocReferenceTemplateID` |  | |  |  |
+| `VN_EDocReferenceSeriesID` |  | |  |  |
+| `VN_EDocReferenceInvoiceNumber` |  | |  |  |
+| `VN_EDocScenario` |  | |  |  |
+| `VN_EDocCQTCode` |  | |  |  |
+| `VN_EDocAgreementInformation` |  | |  |  |
+| `ElectronicDocCompanyCode` |  | |  |  |
 
 ## Source Code
 

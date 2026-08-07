@@ -31,34 +31,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `PurchaseContract` |
-| key `PurchaseContractItem` | `PurchaseContractItem` |
-| key `ReleaseOrder` | `ReleaseOrder` |
-| key `ReleaseOrderItem` | `ReleaseOrderItem` |
-| `ReleaseOrderItemOrderQuantity` | `ReleaseOrderItemOrderQuantity` |
-| `ReleaseOrderItemNetAmount` | `ReleaseOrderItemNetAmount` |
-| `ReleaseOrderItemIsDeleted` | `ReleaseOrderItemIsDeleted` |
-| `ReleaseOrderDate` | `ReleaseOrderDate` |
-| `ReleaseOrderItemQuantityUnit` | `ReleaseOrderItemQuantityUnit` |
-| `ReleaseOrderCurrency` | `ReleaseOrderCurrency` |
-| `ReleaseOrderItemLastChgDate` | `ReleaseOrderItemLastChgDate` |
-| `ExchangeRate` | `ExchangeRate` |
-| `CompanyCode` | `CompanyCode` |
-| `Plant` | `Plant` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchaseContractType` | `_PurchaseContractAPI01.PurchaseContractType` |
-| `PurchasingGroup` | `_PurchaseContractAPI01.PurchasingGroup` |
-| `_PurchaseContract` | *Association* |
-| `_PurchaseContractItem` | *Association* |
-| `_ReleaseOrderItemQuantityUnit` | *Association* |
-| `_ReleaseOrderCurrency` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Plant` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingContractType` | *Association* |
-| `_PurchasingGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `ReleaseOrder` | ✓ | |  |  |
+| `ReleaseOrderItem` | ✓ | |  |  |
+| `ReleaseOrderItemOrderQuantity` |  | |  |  |
+| `ReleaseOrderItemNetAmount` |  | |  |  |
+| `ReleaseOrderItemIsDeleted` |  | |  |  |
+| `ReleaseOrderDate` |  | |  |  |
+| `ReleaseOrderItemQuantityUnit` |  | |  |  |
+| `ReleaseOrderCurrency` |  | |  |  |
+| `ReleaseOrderItemLastChgDate` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchaseContractType` |  | | `_PurchaseContractAPI01` | `PurchaseContractType` |
+| `PurchasingGroup` |  | | `_PurchaseContractAPI01` | `PurchasingGroup` |
+| `_PurchaseContract` | | ✓ | | |
+| `_PurchaseContractItem` | | ✓ | | |
+| `_ReleaseOrderItemQuantityUnit` | | ✓ | | |
+| `_ReleaseOrderCurrency` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingContractType` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
 
 ## Associations
 

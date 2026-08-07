@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OperatingConcern` | `erkrs` |
-| `OperatingConcernName` | `_Text[1:Language = $session.system_language].OperatingConcernName` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OperatingConcern` | ✓ | |  | `erkrs` |
+| `OperatingConcernName` |  | |  | `_Text[1:Language = $session.system_language].OperatingConcernName` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

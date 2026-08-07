@@ -28,51 +28,51 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingCostRateUUID` | `AccountingCostRateUUID` |
-| `Ledger` | `_Rate.Ledger` |
-| `CurrencyRole` | `CurrencyRole` |
-| `CompanyCode` | `CompanyCode` |
-| `ControllingArea` | `ControllingArea` |
-| `CostCenter` | `CostCenter` |
-| `ActivityType` | `ActivityType` |
-| `IsIntercompanyRate` | `IsIntercompanyRate` |
-| `ReceivingCompanyCode` | `ReceivingCompanyCode` |
-| `ServiceCostLevel` | `ServiceCostLevel` |
-| `PersonnelNumber` | `PersonnelNumber` |
-| `WBSElementInternalID` | `WBSElementInternalID_2` |
-| `WBSElementExternalID` | `WBSElementExternalID_2` |
-| `WorkItem` | `WorkItem` |
-| `TimeSheetOvertimeCategory` | `TimeSheetOvertimeCategory` |
-| `ValidityStartFiscalYear` | `ValidityStartFiscalYear` |
-| `ValidityStartFiscalPeriod` | `ValidityStartFiscalPeriod` |
-| `ValidityStartFiscalYearPeriod` | `cast((concat( ValidityStartFiscalYear, ValidityStartFiscalPeriod )) as fins_fyearperiod)` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndFiscalYear` | `ValidityEndFiscalYear` |
-| `ValidityEndFiscalPeriod` | `ValidityEndFiscalPeriod` |
-| `ValidityEndFiscalYearPeriod` | `cast((concat( ValidityEndFiscalYear, ValidityEndFiscalPeriod )) as fins_fyearperiod)` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `CostCtrActivityTypeQtyUnit` | `CostCtrActivityTypeQtyUnit` |
-| `Currency` | `Currency` |
-| `CostRateVarblAmount` | `cast(CostRateTotalAmount - CostRateFixedAmount as fco_rate_varbl_amount)` |
-| `CostRateScaleFactor` | `CostRateScaleFactor` |
-| `LedgerForAuthorization` | `LedgerForAuthorization` |
-| `_CompanyCode` | *Association* |
-| `_ReceivingCompanyCode` | *Association* |
-| `_Currency` | *Association* |
-| `_CostCenter` | *Association* |
-| `_CurrentCostCenter` | *Association* |
-| `_CostCtrActivityType` | *Association* |
-| `_CurrentCostCtrActyType` | *Association* |
-| `_WorkItem` | *Association* |
-| `_ServiceCostLevel` | *Association* |
-| `_CurrentServiceCostLevel` | *Association* |
-| `_Employment` | *Association* |
-| `_PersonWorkAgreement` | *Association* |
-| `_WBSElement` | *Association* |
-| `_WBSElementInternalID` | *Association* |
-| `_UnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingCostRateUUID` | ✓ | |  |  |
+| `Ledger` |  | | `_Rate` | `Ledger` |
+| `CurrencyRole` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `IsIntercompanyRate` |  | |  |  |
+| `ReceivingCompanyCode` |  | |  |  |
+| `ServiceCostLevel` |  | |  |  |
+| `PersonnelNumber` |  | |  |  |
+| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |
+| `WBSElementExternalID` |  | |  | `WBSElementExternalID_2` |
+| `WorkItem` |  | |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |
+| `ValidityStartFiscalYearPeriod` |  | |  | `cast((concat( ValidityStartFiscalYear, ValidityStartFiscalPeriod )) as fins_fyearperiod)` |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |
+| `ValidityEndFiscalYearPeriod` |  | |  | `cast((concat( ValidityEndFiscalYear, ValidityEndFiscalPeriod )) as fins_fyearperiod)` |
+| `ValidityEndDate` |  | |  |  |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CostRateVarblAmount` |  | |  | `cast(CostRateTotalAmount - CostRateFixedAmount as fco_rate_varbl_amount)` |
+| `CostRateScaleFactor` |  | |  |  |
+| `LedgerForAuthorization` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_ReceivingCompanyCode` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_CurrentCostCenter` | | ✓ | | |
+| `_CostCtrActivityType` | | ✓ | | |
+| `_CurrentCostCtrActyType` | | ✓ | | |
+| `_WorkItem` | | ✓ | | |
+| `_ServiceCostLevel` | | ✓ | | |
+| `_CurrentServiceCostLevel` | | ✓ | | |
+| `_Employment` | | ✓ | | |
+| `_PersonWorkAgreement` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_WBSElementInternalID` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
 
 ## Associations
 

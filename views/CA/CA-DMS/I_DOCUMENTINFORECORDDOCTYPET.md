@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `tdwat.dokar` |
-| key `Language` | `tdwat.cvlang` |
-| `DocumentTypeDescription` | `tdwat.dartxt` |
-| `_DocType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
+| `Language` | ✓ | |  | `cvlang` |
+| `DocumentTypeDescription` |  | |  | `dartxt` |
+| `_DocType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

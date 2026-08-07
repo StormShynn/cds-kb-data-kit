@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACreditWorthinessOrigin` | `herkf` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACreditWorthinessOrigin` | ✓ | |  | `herkf` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

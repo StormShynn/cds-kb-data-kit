@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| `IsAutoPurOrdCreationAllowed` | `IsAutoPurOrdCreationAllowed` |
-| `IsSourceListRequired` | `IsSourceListRequired` |
-| `JustInTimeDeliveryScheduleCode` | `JustInTimeDeliveryScheduleCode` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `SourceOfSupplyCategory` | `SourceOfSupplyCategory` |
-| `PurgIsAcrossPurchasingGroup` | `PurgIsAcrossPurchasingGroup` |
-| `_Product` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `IsAutoPurOrdCreationAllowed` |  | |  |  |
+| `IsSourceListRequired` |  | |  |  |
+| `JustInTimeDeliveryScheduleCode` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `SourceOfSupplyCategory` |  | |  |  |
+| `PurgIsAcrossPurchasingGroup` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Source Code
 

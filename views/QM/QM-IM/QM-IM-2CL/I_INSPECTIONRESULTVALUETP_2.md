@@ -29,61 +29,61 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| key `InspPlanOperationInternalID` | `InspPlanOperationInternalID` |
-| key `InspectionCharacteristic` | `InspectionCharacteristic` |
-| key `InspResultValueInternalID` | `InspResultValueInternalID` |
-| `InspectionResultAttribute` | `InspectionResultAttribute` |
-| `InspResultItemInternalID` | `InspResultItemInternalID` |
-| `InspectionSubsetInternalID` | `InspectionSubsetInternalID` |
-| `InspectionResultMeasuredValue` | `InspectionResultMeasuredValue` |
-| `InspResultHasMeasuredValue` | `InspResultHasMeasuredValue` |
-| `InspectionResultOriginalValue` | `InspectionResultOriginalValue` |
-| `InspectionResultText` | `InspectionResultText` |
-| `InspectionResultHasLongText` | `InspectionResultHasLongText` |
-| `InspectionResultItem` | `InspectionResultItem` |
-| `InspRsltFreeDefinedTestEquip` | `InspRsltFreeDefinedTestEquip` |
-| `InspectionValuationResult` | `InspectionValuationResult` |
-| `CharacteristicAttributeCodeGrp` | `CharacteristicAttributeCodeGrp` |
-| `InspectionResultCodeGroup2` | `InspectionResultCodeGroup2` |
-| `InspectionResultCodeGroup3` | `InspectionResultCodeGroup3` |
-| `InspectionResultCodeGroup4` | `InspectionResultCodeGroup4` |
-| `InspectionResultCodeGroup5` | `InspectionResultCodeGroup5` |
-| `CharacteristicAttributeCode` | `CharacteristicAttributeCode` |
-| `InspectionResultCode2` | `InspectionResultCode2` |
-| `InspectionResultCode3` | `InspectionResultCode3` |
-| `InspectionResultCode4` | `InspectionResultCode4` |
-| `InspectionResultCode5` | `InspectionResultCode5` |
-| `CharcAttributeCodeVers` | `CharcAttributeCodeVers` |
-| `InspectionResultCode2Vers` | `InspectionResultCode2Vers` |
-| `InspectionResultCode3Vers` | `InspectionResultCode3Vers` |
-| `InspectionResultCode4Vers` | `InspectionResultCode4Vers` |
-| `InspectionResultCode5Vers` | `InspectionResultCode5Vers` |
-| `CharacteristicAttributeCatalog` | `CharacteristicAttributeCatalog` |
-| `InspectionResultCatalog2` | `InspectionResultCatalog2` |
-| `InspectionResultCatalog3` | `InspectionResultCatalog3` |
-| `InspectionResultCatalog4` | `InspectionResultCatalog4` |
-| `InspectionResultCatalog5` | `InspectionResultCatalog5` |
-| `Inspector` | `Inspector` |
-| `InspectionStartDate` | `InspectionStartDate` |
-| `InspectionStartTime` | `InspectionStartTime` |
-| `InspectionEndDate` | `InspectionEndDate` |
-| `InspectionEndTime` | `InspectionEndTime` |
-| `InspectionNumberOfDefects` | `InspectionNumberOfDefects` |
-| `DefectClass` | `DefectClass` |
-| `InspResultNrOfAddlDcmlsPlaces` | `InspResultNrOfAddlDcmlsPlaces` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `ChangedTime` | `ChangedTime` |
-| `CreationTime` | `CreationTime` |
-| `_InspectionLot` | *Association* |
-| `_InspectionResult` | *Association* |
-| `_InspectionCharacteristic` | *Association* |
-| `_InspectionOperation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |
+| `InspectionCharacteristic` | ✓ | |  |  |
+| `InspResultValueInternalID` | ✓ | |  |  |
+| `InspectionResultAttribute` |  | |  |  |
+| `InspResultItemInternalID` |  | |  |  |
+| `InspectionSubsetInternalID` |  | |  |  |
+| `InspectionResultMeasuredValue` |  | |  |  |
+| `InspResultHasMeasuredValue` |  | |  |  |
+| `InspectionResultOriginalValue` |  | |  |  |
+| `InspectionResultText` |  | |  |  |
+| `InspectionResultHasLongText` |  | |  |  |
+| `InspectionResultItem` |  | |  |  |
+| `InspRsltFreeDefinedTestEquip` |  | |  |  |
+| `InspectionValuationResult` |  | |  |  |
+| `CharacteristicAttributeCodeGrp` |  | |  |  |
+| `InspectionResultCodeGroup2` |  | |  |  |
+| `InspectionResultCodeGroup3` |  | |  |  |
+| `InspectionResultCodeGroup4` |  | |  |  |
+| `InspectionResultCodeGroup5` |  | |  |  |
+| `CharacteristicAttributeCode` |  | |  |  |
+| `InspectionResultCode2` |  | |  |  |
+| `InspectionResultCode3` |  | |  |  |
+| `InspectionResultCode4` |  | |  |  |
+| `InspectionResultCode5` |  | |  |  |
+| `CharcAttributeCodeVers` |  | |  |  |
+| `InspectionResultCode2Vers` |  | |  |  |
+| `InspectionResultCode3Vers` |  | |  |  |
+| `InspectionResultCode4Vers` |  | |  |  |
+| `InspectionResultCode5Vers` |  | |  |  |
+| `CharacteristicAttributeCatalog` |  | |  |  |
+| `InspectionResultCatalog2` |  | |  |  |
+| `InspectionResultCatalog3` |  | |  |  |
+| `InspectionResultCatalog4` |  | |  |  |
+| `InspectionResultCatalog5` |  | |  |  |
+| `Inspector` |  | |  |  |
+| `InspectionStartDate` |  | |  |  |
+| `InspectionStartTime` |  | |  |  |
+| `InspectionEndDate` |  | |  |  |
+| `InspectionEndTime` |  | |  |  |
+| `InspectionNumberOfDefects` |  | |  |  |
+| `DefectClass` |  | |  |  |
+| `InspResultNrOfAddlDcmlsPlaces` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `ChangedTime` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionResult` | | ✓ | | |
+| `_InspectionCharacteristic` | | ✓ | | |
+| `_InspectionOperation` | | ✓ | | |
 
 ## Source Code
 

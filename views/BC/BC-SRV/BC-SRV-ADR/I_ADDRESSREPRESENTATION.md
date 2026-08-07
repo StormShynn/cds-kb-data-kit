@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressRepresentationCode` | `tsadv.nation` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressRepresentationCode` | ✓ | |  | `nation` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

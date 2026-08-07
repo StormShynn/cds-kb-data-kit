@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder.PurchaseOrder` |
-| key `ChangeDocObjectClass` | `ChangeDocument.ChangeDocObjectClass` |
-| key `ChangeDocument` | `ChangeDocument.ChangeDocument` |
-| `CreatedByUser` | `ChangeDocument.CreatedByUser` |
-| `CreationDate` | `ChangeDocument.CreationDate` |
-| `CreationTime` | `ChangeDocument.CreationTime` |
-| `PurchaseOrderType` | `PurchaseOrder.PurchaseOrderType` |
-| `PurchasingOrganization` | `PurchaseOrder.PurchasingOrganization` |
-| `PurchasingGroup` | `PurchaseOrder.PurchasingGroup` |
-| `_PurOrdChangeDocumentItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |
+| `ChangeDocument` | ✓ | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `PurchaseOrderType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `_PurOrdChangeDocumentItem` | | ✓ | | |
 
 ## Associations
 

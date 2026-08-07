@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CARevenueAccountingServiceType` | `service_type` |
-| key `Language` | `cast( langu as spras preserving type )` |
-| `CARevnAcctgServiceTypeText` | `text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CARevenueAccountingServiceType` | ✓ | |  | `service_type` |
+| `Language` | ✓ | |  | `cast( langu as spras preserving type )` |
+| `CARevnAcctgServiceTypeText` |  | |  | `text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

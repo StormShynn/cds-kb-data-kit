@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `CAProviderContractSender` | `sender` |
-| `CAProviderContractSenderText` | `text` |
-| `_ProviderContractSender` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `CAProviderContractSender` | ✓ | |  | `sender` |
+| `CAProviderContractSenderText` |  | |  | `text` |
+| `_ProviderContractSender` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

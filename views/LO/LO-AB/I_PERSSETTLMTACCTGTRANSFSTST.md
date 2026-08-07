@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PersSettlmtAcctgTransfSts` | `cast(dd07t.domvalue_l as wfbsk )` |
-| key `Language` | `dd07t.ddlanguage` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PersSettlmtAcctgTransfStsName` | `cast( dd07t.ddtext as wlf_rfbsk_name preserving type)` |
-| `_Language` | *Association* |
-| `_PersSettlmtAcctgTransfSts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PersSettlmtAcctgTransfSts` | ✓ | |  | `cast(dd07t.domvalue_l as wfbsk )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PersSettlmtAcctgTransfStsName` |  | |  | `cast( dd07t.ddtext as wlf_rfbsk_name preserving type)` |
+| `_Language` | | ✓ | | |
+| `_PersSettlmtAcctgTransfSts` | | ✓ | | |
 
 ## Associations
 

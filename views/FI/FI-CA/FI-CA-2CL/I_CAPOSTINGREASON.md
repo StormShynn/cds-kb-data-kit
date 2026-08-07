@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentOriginCode` | `DocOriginCode.CADocumentOriginCode` |
-| key `CAPostingReason` | `cast( WriteOffReason.CAWriteOffReason as bugrd_kk preserving type )` |
-| `_DocOriginCode` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentOriginCode` | ✓ | |  |  |
+| `CAPostingReason` | ✓ | |  | `cast( WriteOffReason.CAWriteOffReason as bugrd_kk preserving type )` |
+| `_DocOriginCode` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

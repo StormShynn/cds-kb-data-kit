@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyNodeText.Language` |
-| key `ConsolidationPostgLevelHier` | `cast( _HierarchyNodeText.UniversalHierarchy as fincs_postinglevelhierarchy preserving type )` |
-| key `HierarchyNode` | `_HierarchyNodeText.HierarchyNode` |
-| `ParentNode` | `_HierarchyNodeText.ParentNode` |
-| `HierarchyVersion` | `_HierarchyNodeText.HierarchyVersion` |
-| `HierarchyNodeText` | `_HierarchyNodeText.HierarchyNodeText` |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
+| `ConsolidationPostgLevelHier` | ✓ | |  | `cast( _HierarchyNodeText.UniversalHierarchy as fincs_postinglevelhierarchy preserving type )` |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

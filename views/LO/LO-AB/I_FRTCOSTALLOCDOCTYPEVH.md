@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtDocType` | `SettlmtDocType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtDocType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

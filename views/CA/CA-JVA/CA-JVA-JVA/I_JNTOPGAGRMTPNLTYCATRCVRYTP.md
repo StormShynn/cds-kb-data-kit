@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JntOpgAgrmtPnltyCatRcvry.CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmtPnltyCatRcvry.JntOpgAgrmt` |
-| key `JntVntrPenaltyCategory` | `JntOpgAgrmtPnltyCatRcvry.JntVntrPenaltyCategory` |
-| `JntVntrNonSignatoryRcvryPct` | `JntOpgAgrmtPnltyCatRcvry.JntVntrNonSignatoryRcvryPct` |
-| `JntVntrNonConsentRcvryPnltyPct` | `JntOpgAgrmtPnltyCatRcvry.JntVntrNonConsentRcvryPnltyPct` |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JntVntrPenaltyCategory` | ✓ | |  |  |
+| `JntVntrNonSignatoryRcvryPct` |  | |  |  |
+| `JntVntrNonConsentRcvryPnltyPct` |  | |  |  |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Source Code
 

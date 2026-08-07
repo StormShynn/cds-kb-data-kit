@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tb038b.spras` |
-| key `BusPartEmplrIndstryCode` | `tb038b.ind_sector` |
-| `BPEmploymentIndustryDesc` | `tb038b.text` |
-| `BPEmploymentIndustryShortDesc` | `tb038b.text_short` |
-| `_BPEmploymentIndustry` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BusPartEmplrIndstryCode` | ✓ | |  | `ind_sector` |
+| `BPEmploymentIndustryDesc` |  | |  | `text` |
+| `BPEmploymentIndustryShortDesc` |  | |  | `text_short` |
+| `_BPEmploymentIndustry` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

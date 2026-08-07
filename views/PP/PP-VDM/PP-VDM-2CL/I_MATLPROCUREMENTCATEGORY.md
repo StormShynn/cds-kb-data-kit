@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialProcurementCategory` | `cast(substring(cat.domvalue_l, 1, 1) as pph_beskz preserving type)` |
-| `DomainValue` | `cat.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialProcurementCategory` | ✓ | |  | `cast(substring(cat.domvalue_l, 1, 1) as pph_beskz preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

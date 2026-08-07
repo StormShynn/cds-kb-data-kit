@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerProject` | `CustProjSlsOrdItemPartner.CustomerProject` |
-| key `PartnerFunction` | `SalesOrderItemPartner.PartnerFunction` |
-| key `SalesOrderItem` | `SalesOrderItemPartner.SalesOrderItem` |
-| `SalesOrder` | `SalesOrderItemPartner.SalesOrder` |
-| `Partner` | `SalesOrderItemPartner.Partner` |
-| `ContactPerson` | `SalesOrderItemPartner.ContactPerson` |
-| `AddressID` | `SalesOrderItemPartner.AddressID` |
-| `AddressPersonID` | `SalesOrderItemPartner.AddressPersonID` |
-| `AddressObjectType` | `SalesOrderItemPartner.AddressObjectType` |
-| `SDDocPartnerAddressRefType` | `SalesOrderItemPartner.SDDocPartnerAddressRefType` |
-| `ReferenceBusinessPartner` | `SalesOrderItemPartner.ReferenceBusinessPartner` |
-| `BPAddrDeterminationTransaction` | `SalesOrderItemPartner.BPAddrDeterminationTransaction` |
-| `BPRefAddressIDForDocSpcfcAddr` | `SalesOrderItemPartner.BPRefAddressIDForDocSpcfcAddr` |
-| `SalesOrderType` | `CustProjSlsOrdItemPartner.SalesOrderType` |
-| `OrganizationDivision` | `CustProjSlsOrdItemPartner.OrganizationDivision` |
-| `SalesOrganization` | `CustProjSlsOrdItemPartner.SalesOrganization` |
-| `DistributionChannel` | `CustProjSlsOrdItemPartner.DistributionChannel` |
-| `_CustProjSlsOrdItem` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_CustomerProject` | *Association* |
-| `_SalesOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerProject` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `SalesOrder` |  | |  |  |
+| `Partner` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `_CustProjSlsOrdItem` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_CustomerProject` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
 
 ## Associations
 

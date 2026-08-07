@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinalConfirmationType` | `cast(substring(txt.domvalue_l, 1, 1) as pph_aueru preserving type)` |
-| key `Language` | `cast(txt.ddlanguage as spras preserving type)` |
-| `DomainValue` | `txt.domvalue_l` |
-| `FinalConfirmationTypeName` | `cast(txt.ddtext as pph_aueru_txt preserving type)` |
-| `_FinalConfirmationType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinalConfirmationType` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as pph_aueru preserving type)` |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `FinalConfirmationTypeName` |  | |  | `cast(txt.ddtext as pph_aueru_txt preserving type)` |
+| `_FinalConfirmationType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

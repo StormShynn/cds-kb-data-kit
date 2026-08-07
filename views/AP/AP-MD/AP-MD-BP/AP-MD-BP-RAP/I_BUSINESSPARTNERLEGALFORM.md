@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalForm` | `legal_enty` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalForm` | ✓ | |  | `legal_enty` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

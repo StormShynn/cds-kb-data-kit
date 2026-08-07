@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentType` | `cast(BillingProcessDocumentType as billingdocumenttype preserving type)` |
-| `SDDocumentCategory` | `SDDocumentCategory` |
-| `IncrementItemNumber` | `IncrementItemNumber` |
-| `BillingDocumentCategory` | `BillingDocumentCategory` |
-| `BillgDocTextDetnProcedure` | `cast(BillgProcDocTxtDetnProcedure as billgdoctextdetnprocedure preserving type)` |
-| `BillgDocItemTextDetnProcedure` | `cast(BillgProcDocItmTxtDetnProced as billgdocitemtextdetnprocedure preserving type)` |
-| `_BillgDocTextDetnProcedure` | `_BillgProcDocTxtDetnProcedure` |
-| `_BillgDocItemTextDetnProcedure` | `_BillgProcDocItmTxtDetnProced` |
-| `_Text` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_BillingDocumentCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentType` | ✓ | |  | `cast(BillingProcessDocumentType as billingdocumenttype preserving type)` |
+| `SDDocumentCategory` |  | |  |  |
+| `IncrementItemNumber` |  | |  |  |
+| `BillingDocumentCategory` |  | |  |  |
+| `BillgDocTextDetnProcedure` |  | |  | `cast(BillgProcDocTxtDetnProcedure as billgdoctextdetnprocedure preserving type)` |
+| `BillgDocItemTextDetnProcedure` |  | |  | `cast(BillgProcDocItmTxtDetnProced as billgdocitemtextdetnprocedure preserving type)` |
+| `_BillgDocTextDetnProcedure` |  | |  | `_BillgProcDocTxtDetnProcedure` |
+| `_BillgDocItemTextDetnProcedure` |  | |  | `_BillgProcDocItmTxtDetnProced` |
+| `_Text` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_BillingDocumentCategory` | | ✓ | | |
 
 ## Source Code
 

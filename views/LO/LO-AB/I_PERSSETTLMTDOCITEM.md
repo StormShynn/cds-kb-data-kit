@@ -28,97 +28,97 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PersonnelSettlementDocument` | `PersonnelSettlementDocument` |
-| key `PersSettlmtDocItem` | `PersSettlmtDocItem` |
-| `PersSettlmtDocCurrency` | `PersSettlmtDocCurrency` |
-| `PricingDocument` | `PricingDocument` |
-| `Product` | `}] } Product` |
-| `ProductGroup` | `}] } ProductGroup` |
-| `Plant` | `}] } Plant` |
-| `PricingDate` | `PricingDate` |
-| `SettlmtQuantity` | `SettlmtQuantity` |
-| `SettlmtQuantityUnit` | `SettlmtQuantityUnit` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `NetPriceQuantityUnit` | `NetPriceQuantityUnit` |
-| `SettlmtToBaseQuantityNmrtr` | `SettlmtToBaseQuantityNmrtr` |
-| `SettlmtToBaseQuantityDnmntr` | `SettlmtToBaseQuantityDnmntr` |
-| `SettlmtToNetPriceQtyNmrtr` | `SettlmtToNetPriceQtyNmrtr` |
-| `SettlmtToNetPriceQtyDnmntr` | `SettlmtToNetPriceQtyDnmntr` |
-| `BaseUnit` | `BaseUnit` |
-| `ItemNetWeight` | `ItemNetWeight` |
-| `ItemGrossWeight` | `ItemGrossWeight` |
-| `ItemWeightUnit` | `ItemWeightUnit` |
-| `ItemVolume` | `ItemVolume` |
-| `ItemVolumeUnit` | `ItemVolumeUnit` |
-| `ItemNetAmount` | `PersSettlmtDocItemNetAmount` |
-| `Subtotal1Amount` | `PersSettlmtDocSubtotal1Amount` |
-| `Subtotal2Amount` | `PersSettlmtDocSubtotal2Amount` |
-| `Subtotal3Amount` | `PersSettlmtDocSubtotal3Amount` |
-| `Subtotal4Amount` | `PersSettlmtDocSubtotal4Amount` |
-| `Subtotal5Amount` | `PersSettlmtDocSubtotal5Amount` |
-| `Subtotal6Amount` | `PersSettlmtDocSubtotal6Amount` |
-| `RebateBasisAmount` | `PersSettlmtDocRbteBasisAmount` |
-| `SettlmtItmStatisticalPrpty` | `PersSettlmtDocItmStstclPrpty` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `SettlmtItemActivityReason` | `PersSettlmtDocItmActyReason` |
-| `PersSettlmtDocItemText` | `PersSettlmtDocItemText` |
-| `BusinessArea` | `}] } BusinessArea` |
-| `ControllingArea` | `ControllingArea` |
-| `CostCenter` | `CostCenter` |
-| `ProfitCenter` | `ProfitCenter` |
-| `WBSElementInternalID` | `}] } WBSElementInternalID` |
-| `SettlementOrder` | `PersSettlmtDocOrder` |
-| `PrcDetnIsIncmplt` | `PrcDetnIsIncmplt` |
-| `PersSettlmtDocItemCat` | `PersSettlmtDocItemCat` |
-| `SettlmtItemReltdCndnContr` | `}] } SettlmtItemReltdCndnContr` |
-| `PersSettlmtDocItemStatus` | `PersSettlmtDocItemStatus` |
-| `PersSettlmtDocItemRvsd` | `PersSettlmtDocItemRvsd` |
-| `ServicesRenderedDate` | `ServicesRenderedDate` |
-| `SettlementFiscalYear` | `SettlementFiscalYear` |
-| `CompanyCode` | `}] } CompanyCode` |
-| `GLAccount` | `}] } GLAccount` |
-| `ProductHierarchy` | `ProductHierarchy` |
-| `SalesSpcfcProductGroup1` | `SalesSpcfcProductGroup1` |
-| `SalesSpcfcProductGroup2` | `SalesSpcfcProductGroup2` |
-| `SalesSpcfcProductGroup3` | `SalesSpcfcProductGroup3` |
-| `SalesSpcfcProductGroup4` | `SalesSpcfcProductGroup4` |
-| `SalesSpcfcProductGroup5` | `SalesSpcfcProductGroup5` |
-| `BusTransDocReferenceID` | `BusTransDocReferenceID` |
-| `BusTransDocReferenceItemID` | `BusTransDocReferenceItemID` |
-| `PersSettlmtDocItemChangeState` | `cast( ' ' as wlf_change_state_item preserving type )` |
-| `_PersSettlmtDoc` | *Association* |
-| `_PersSettlmtDocItmPrcgElmnt` | *Association* |
-| `_ProductText` | *Association* |
-| `_SettlmtItmStatisticalPrpty` | *Association* |
-| `_SettlmtItemActivityReason` | *Association* |
-| `_BusinessAreaText` | *Association* |
-| `_SettlmtItemReltdCndnContr` | *Association* |
-| `_PersSettlmtDocCurrency` | *Association* |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_SettlmtQuantityUnit` | *Association* |
-| `_NetPriceQuantityUnit` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_ItemWeightUnit` | *Association* |
-| `_ItemVolumeUnit` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_PersSettlmtDocItemCat` | *Association* |
-| `_PersSettlmtDocItemStatus` | *Association* |
-| `_PersSettlmtDocItemRvsd` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_GLAccountInCompanyCode` | *Association* |
-| `_SalesSpcfcProductGroup1` | *Association* |
-| `_SalesSpcfcProductGroup2` | *Association* |
-| `_SalesSpcfcProductGroup3` | *Association* |
-| `_SalesSpcfcProductGroup4` | *Association* |
-| `_SalesSpcfcProductGroup5` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PersonnelSettlementDocument` | ✓ | |  |  |
+| `PersSettlmtDocItem` | ✓ | |  |  |
+| `PersSettlmtDocCurrency` |  | |  |  |
+| `PricingDocument` |  | |  |  |
+| `Product` |  | |  | `}] } Product` |
+| `ProductGroup` |  | |  | `}] } ProductGroup` |
+| `Plant` |  | |  | `}] } Plant` |
+| `PricingDate` |  | |  |  |
+| `SettlmtQuantity` |  | |  |  |
+| `SettlmtQuantityUnit` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `NetPriceQuantityUnit` |  | |  |  |
+| `SettlmtToBaseQuantityNmrtr` |  | |  |  |
+| `SettlmtToBaseQuantityDnmntr` |  | |  |  |
+| `SettlmtToNetPriceQtyNmrtr` |  | |  |  |
+| `SettlmtToNetPriceQtyDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `ItemNetAmount` |  | |  | `PersSettlmtDocItemNetAmount` |
+| `Subtotal1Amount` |  | |  | `PersSettlmtDocSubtotal1Amount` |
+| `Subtotal2Amount` |  | |  | `PersSettlmtDocSubtotal2Amount` |
+| `Subtotal3Amount` |  | |  | `PersSettlmtDocSubtotal3Amount` |
+| `Subtotal4Amount` |  | |  | `PersSettlmtDocSubtotal4Amount` |
+| `Subtotal5Amount` |  | |  | `PersSettlmtDocSubtotal5Amount` |
+| `Subtotal6Amount` |  | |  | `PersSettlmtDocSubtotal6Amount` |
+| `RebateBasisAmount` |  | |  | `PersSettlmtDocRbteBasisAmount` |
+| `SettlmtItmStatisticalPrpty` |  | |  | `PersSettlmtDocItmStstclPrpty` |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `SettlmtItemActivityReason` |  | |  | `PersSettlmtDocItmActyReason` |
+| `PersSettlmtDocItemText` |  | |  |  |
+| `BusinessArea` |  | |  | `}] } BusinessArea` |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `WBSElementInternalID` |  | |  | `}] } WBSElementInternalID` |
+| `SettlementOrder` |  | |  | `PersSettlmtDocOrder` |
+| `PrcDetnIsIncmplt` |  | |  |  |
+| `PersSettlmtDocItemCat` |  | |  |  |
+| `SettlmtItemReltdCndnContr` |  | |  | `}] } SettlmtItemReltdCndnContr` |
+| `PersSettlmtDocItemStatus` |  | |  |  |
+| `PersSettlmtDocItemRvsd` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `SettlementFiscalYear` |  | |  |  |
+| `CompanyCode` |  | |  | `}] } CompanyCode` |
+| `GLAccount` |  | |  | `}] } GLAccount` |
+| `ProductHierarchy` |  | |  |  |
+| `SalesSpcfcProductGroup1` |  | |  |  |
+| `SalesSpcfcProductGroup2` |  | |  |  |
+| `SalesSpcfcProductGroup3` |  | |  |  |
+| `SalesSpcfcProductGroup4` |  | |  |  |
+| `SalesSpcfcProductGroup5` |  | |  |  |
+| `BusTransDocReferenceID` |  | |  |  |
+| `BusTransDocReferenceItemID` |  | |  |  |
+| `PersSettlmtDocItemChangeState` |  | |  | `cast( ' ' as wlf_change_state_item preserving type )` |
+| `_PersSettlmtDoc` | | ✓ | | |
+| `_PersSettlmtDocItmPrcgElmnt` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_SettlmtItmStatisticalPrpty` | | ✓ | | |
+| `_SettlmtItemActivityReason` | | ✓ | | |
+| `_BusinessAreaText` | | ✓ | | |
+| `_SettlmtItemReltdCndnContr` | | ✓ | | |
+| `_PersSettlmtDocCurrency` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_SettlmtQuantityUnit` | | ✓ | | |
+| `_NetPriceQuantityUnit` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_ItemWeightUnit` | | ✓ | | |
+| `_ItemVolumeUnit` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_PersSettlmtDocItemCat` | | ✓ | | |
+| `_PersSettlmtDocItemStatus` | | ✓ | | |
+| `_PersSettlmtDocItemRvsd` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_GLAccountInCompanyCode` | | ✓ | | |
+| `_SalesSpcfcProductGroup1` | | ✓ | | |
+| `_SalesSpcfcProductGroup2` | | ✓ | | |
+| `_SalesSpcfcProductGroup3` | | ✓ | | |
+| `_SalesSpcfcProductGroup4` | | ✓ | | |
+| `_SalesSpcfcProductGroup5` | | ✓ | | |
 
 ## Associations
 

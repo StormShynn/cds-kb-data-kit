@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'ReservationItem'` | `element: 'ReservationItem'` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'ReservationItem'` |  | |  | `element: 'ReservationItem'` |
 
 ## Source Code
 

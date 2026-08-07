@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumber` | `ChangeNumber` |
-| key `ChgNmbrAlternativeDateID` | `ChgNmbrAlternativeDateID` |
-| `ChgNmbrAlternativeDate` | `ChgNmbrAlternativeDate` |
-| `ChgNmbrAltvDateIsAssignedToObj` | `ChgNmbrAltvDateIsAssignedToObj` |
-| `ChgNmbrAlternativeDateCounter` | `ChgNmbrAlternativeDateCounter` |
-| `ChangeNumberLastChgdDateTime` | `ChangeNumberLastChgdDateTime` |
-| `_ChangeMaster` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |
+| `ChgNmbrAlternativeDateID` | ✓ | |  |  |
+| `ChgNmbrAlternativeDate` |  | |  |  |
+| `ChgNmbrAltvDateIsAssignedToObj` |  | |  |  |
+| `ChgNmbrAlternativeDateCounter` |  | |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |
+| `_ChangeMaster` | | ✓ | | |
 
 ## Source Code
 

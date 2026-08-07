@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingInfoRecordUpdateCode` | `cast ( substring( domvalue_l, 1, 1 ) as spinf )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_PurgInfoRecordUpdateCodeT` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingInfoRecordUpdateCode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as spinf )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_PurgInfoRecordUpdateCodeT` | | ✓ | | |
 
 ## Source Code
 

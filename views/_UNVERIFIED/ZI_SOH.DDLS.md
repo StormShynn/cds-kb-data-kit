@@ -35,19 +35,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Vbeln` | `vbeln` |
-| `Ernam` | `ernam` |
-| `Erdat` | `erdat` |
-| `Vkorg` | `vkorg` |
-| `Vtweg` | `vtweg` |
-| `Spart` | `spart` |
-| `Kunnr` | `kunnr` |
-| `changed_by` | `changed_by` |
-| `changed_at` | `changed_at` |
-| `_kna1` | *Association* |
-| `_tvko` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Vbeln` | ✓ | |  | `vbeln` |
+| `Ernam` |  | |  | `ernam` |
+| `Erdat` |  | |  | `erdat` |
+| `Vkorg` |  | |  | `vkorg` |
+| `Vtweg` |  | |  | `vtweg` |
+| `Spart` |  | |  | `spart` |
+| `Kunnr` |  | |  | `kunnr` |
+| `changed_by` |  | |  |  |
+| `changed_at` |  | |  |  |
+| `_kna1` | | ✓ | | |
+| `_tvko` | | ✓ | | |
 
 ## Associations
 

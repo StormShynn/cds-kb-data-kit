@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CANegativePostingControlCode` | `cast( left( dd07t.domvalue_l, 1 ) as negbu_kk )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CANegativePostingCtrlCodeText` | `cast( ddtext as negbu_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CANegativePostingControlCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as negbu_kk )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CANegativePostingCtrlCodeText` |  | |  | `cast( ddtext as negbu_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

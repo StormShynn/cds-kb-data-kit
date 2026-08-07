@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentApprovalRule` | `PaymentApprovalRule` |
-| key `PaymentApprovalRuleItem` | `PaymentApprovalRuleItem` |
-| key `PaytApprvlLimitCurrency` | `PaytApprvlLimitCurrency` |
-| `PaytApprvlAmountInLmtCurrency` | `PaytApprvlAmountInLmtCurrency` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_PaymentApprovalRule` | *Association* |
-| `_PaymentApprovalRuleItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentApprovalRule` | ✓ | |  |  |
+| `PaymentApprovalRuleItem` | ✓ | |  |  |
+| `PaytApprvlLimitCurrency` | ✓ | |  |  |
+| `PaytApprvlAmountInLmtCurrency` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_PaymentApprovalRule` | | ✓ | | |
+| `_PaymentApprovalRuleItem` | | ✓ | | |
 
 ## Source Code
 

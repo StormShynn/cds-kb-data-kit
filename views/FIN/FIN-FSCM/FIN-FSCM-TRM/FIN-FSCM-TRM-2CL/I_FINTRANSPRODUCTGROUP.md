@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinTransProductGroup` | `cast(left(DomainValue.domvalue_l,4) as ftr_productgroup preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinTransProductGroup` | ✓ | |  | `cast(left(DomainValue.domvalue_l,4) as ftr_productgroup preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPGoodsReceivingHoursCode` | `tvwa.wanid` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPGoodsReceivingHoursCode` | ✓ | |  | `wanid` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

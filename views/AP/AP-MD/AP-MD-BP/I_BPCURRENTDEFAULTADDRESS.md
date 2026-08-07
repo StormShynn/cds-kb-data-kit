@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `but020.partner` |
-| `AddressID` | `but020.addrnumber` |
-| `ValidityStartDateTime` | `but020.addr_valid_from` |
-| `ValidityEndDateTime` | `but020.addr_valid_to` |
-| `BPAddressIsProtected` | `_BPProtectedAddress.BPAddressIsProtected` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `_Address` | *Association* |
-| `_StandardAddress` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
-| `_AddrOrgNamePostalAddress` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `AddressID` |  | |  | `addrnumber` |
+| `ValidityStartDateTime` |  | |  | `addr_valid_from` |
+| `ValidityEndDateTime` |  | |  | `addr_valid_to` |
+| `BPAddressIsProtected` |  | | `_BPProtectedAddress` | `BPAddressIsProtected` |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `_Address` | | ✓ | | |
+| `_StandardAddress` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
+| `_AddrOrgNamePostalAddress` | | ✓ | | |
 
 ## Associations
 

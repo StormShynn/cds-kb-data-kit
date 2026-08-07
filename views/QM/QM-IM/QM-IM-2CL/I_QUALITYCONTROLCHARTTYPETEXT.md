@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `sprache` |
-| key `QualityControlChartType` | `qrkart` |
-| `QualityControlChartTypeText` | `cast(qrktxt as vdm_qrkart_text preserving type )` |
-| `_QualityControlChartType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |
+| `QualityControlChartType` | ✓ | |  | `qrkart` |
+| `QualityControlChartTypeText` |  | |  | `cast(qrktxt as vdm_qrkart_text preserving type )` |
+| `_QualityControlChartType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

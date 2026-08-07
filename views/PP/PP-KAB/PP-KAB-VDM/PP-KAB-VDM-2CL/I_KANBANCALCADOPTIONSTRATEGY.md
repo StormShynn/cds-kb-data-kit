@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| `KanbanCtnUnlockingSequence` | `rfent` |
-| `NmbrAssignmentForNewKanbanCtns` | `nknum` |
-| `KanbanContainerLockingSequence` | `rfspr` |
-| `InitKnbnCtnsAreDeltdFirst` | `loewn` |
-| `LockedKnbnCtnsAreDeltdFirst` | `loewg` |
-| `LockStrategyForNewKanbanCtns` | `nlock` |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `KanbanCtnUnlockingSequence` |  | |  | `rfent` |
+| `NmbrAssignmentForNewKanbanCtns` |  | |  | `nknum` |
+| `KanbanContainerLockingSequence` |  | |  | `rfspr` |
+| `InitKnbnCtnsAreDeltdFirst` |  | |  | `loewn` |
+| `LockedKnbnCtnsAreDeltdFirst` |  | |  | `loewg` |
+| `LockStrategyForNewKanbanCtns` |  | |  | `nlock` |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

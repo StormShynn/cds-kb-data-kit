@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Language` | `Language` |
-| `ProductDescription` | `ProductDescription` |
-| `_Product` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ProductDescription` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Source Code
 

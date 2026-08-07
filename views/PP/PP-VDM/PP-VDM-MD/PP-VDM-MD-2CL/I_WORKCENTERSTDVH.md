@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterInternalID` | `WorkCenterInternalID` |
-| key `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `Plant` | `Plant` |
-| `WorkCenter` | `WorkCenter` |
-| `WorkCenterCategoryCode` | `WorkCenterCategoryCode` |
-| `_Text` | *Association* |
-| `_WorkCenterType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |
+| `Plant` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
 
 ## Source Code
 

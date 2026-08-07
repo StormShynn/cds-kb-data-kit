@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(dd07t.ddlanguage as spras preserving type)` |
-| key `RevnAcctgRecnclnKeyStatus` | `cast(dd07t.domvalue_l as farr_recon_key_status)` |
-| `RevnAcctgRecnclnKeyStatusName` | `dd07t.ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_RAReconciliationKeyStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
+| `RevnAcctgRecnclnKeyStatus` | ✓ | |  | `cast(dd07t.domvalue_l as farr_recon_key_status)` |
+| `RevnAcctgRecnclnKeyStatusName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_RAReconciliationKeyStatus` | | ✓ | | |
 
 ## Associations
 

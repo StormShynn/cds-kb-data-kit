@@ -29,52 +29,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryLedgerTransaction` | `flow.TreasuryLedgerTransaction` |
-| key `TreasuryLedgerFlow` | `flow.TreasuryLedgerFlow` |
-| `TreasuryTransactionFlow` | `flow.TreasuryTransactionFlow` |
-| `TrsyPosTransfSourceTargetCode` | `flow.TrsyPosTransfSourceTargetCode` |
-| `TreasuryPositionTransferGroup` | `flow.TreasuryPositionTransferGroup` |
-| `TreasuryUpdateType` | `flow.TreasuryUpdateType` |
-| `TreasuryPositionTransferFactor` | `flow.TreasuryPositionTransferFactor` |
-| `TrsyPosQuantityChangeCategory` | `flow.TrsyPosQuantityChangeCategory` |
-| `TrsyPosAmountChangeCategory` | `flow.TrsyPosAmountChangeCategory` |
-| `QuantityInPieces` | `flow.QuantityInPieces` |
-| `NominalAmountInNominalCurrency` | `flow.NominalAmountInNominalCurrency` |
-| `OriglNominalAmtInNominalCrcy` | `flow.OriglNominalAmtInNominalCrcy` |
-| `NominalCurrency` | `flow.NominalCurrency` |
-| `IndexCleanRpaytAmtInPosCrcy` | `flow.IndexCleanRpaytAmtInPosCrcy` |
-| `AmountInPositionCurrency` | `flow.AmountInPositionCurrency` |
-| `PositionCurrency` | `flow.PositionCurrency` |
-| `AmountInValuationCurrency` | `flow.AmountInValuationCurrency` |
-| `ValuationCurrency` | `flow.ValuationCurrency` |
-| `CalculationDate` | `flow.CalculationDate` |
-| `CalcDateIsAsEndDateInclusive` | `flow.CalcDateIsAsEndDateInclusive` |
-| `DueDate` | `flow.DueDate` |
-| `CalculationPeriodStartDate` | `flow.CalculationPeriodStartDate` |
-| `CalculationPeriodEndDate` | `flow.CalculationPeriodEndDate` |
-| `EffectiveInterestRate` | `flow.EffectiveInterestRate` |
-| `EffctvIntrstRateRdmptnSched` | `flow.EffctvIntrstRateRdmptnSched` |
-| `NextEffectiveInterestRate` | `flow.NextEffectiveInterestRate` |
-| `FixedRedemptionSchedule` | `flow.FixedRedemptionSchedule` |
-| `CalculationBasis` | `flow.CalculationBasis` |
-| `TreasuryPosition` | `flow.TreasuryPosition` |
-| `TreasuryPositionLedgerDate` | `flow.TreasuryPositionLedgerDate` |
-| `TrsySubPosition` | `flow.TrsySubPosition` |
-| `TreasuryBusinessTransCategory` | `trans.TreasuryBusinessTransCategory` |
-| `TreasuryBusinessTransaction` | `trans.TreasuryBusinessTransaction` |
-| `TrsyBusTransactionCreationDate` | `trans.TrsyBusTransactionCreationDate` |
-| `TrsyBusTransactionCreationTime` | `trans.TrsyBusTransactionCreationTime` |
-| `TrsyDerivedBusinessTransStatus` | `trans.TrsyDerivedBusinessTransStatus` |
-| `TreasuryBusinessTransStatus` | `trans.TreasuryBusinessTransStatus` |
-| `TreasuryValuationArea` | `trans.TreasuryValuationArea` |
-| `CompanyCode` | `trans.CompanyCode` |
-| `OriglTrsyBusinessTransaction` | `trans.OriglTrsyBusinessTransaction` |
-| `PostingDate` | `trans.PostingDate` |
-| `PostingReversalDate` | `trans.PostingReversalDate` |
-| `TrsyIntragroupTransacStatus` | `trans.TrsyIntragroupTransacStatus` |
-| `TreasuryUserStatisticsUUID` | `trans.TreasuryUserStatisticsUUID` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryLedgerTransaction` | ✓ | |  |  |
+| `TreasuryLedgerFlow` | ✓ | |  |  |
+| `TreasuryTransactionFlow` |  | |  |  |
+| `TrsyPosTransfSourceTargetCode` |  | |  |  |
+| `TreasuryPositionTransferGroup` |  | |  |  |
+| `TreasuryUpdateType` |  | |  |  |
+| `TreasuryPositionTransferFactor` |  | |  |  |
+| `TrsyPosQuantityChangeCategory` |  | |  |  |
+| `TrsyPosAmountChangeCategory` |  | |  |  |
+| `QuantityInPieces` |  | |  |  |
+| `NominalAmountInNominalCurrency` |  | |  |  |
+| `OriglNominalAmtInNominalCrcy` |  | |  |  |
+| `NominalCurrency` |  | |  |  |
+| `IndexCleanRpaytAmtInPosCrcy` |  | |  |  |
+| `AmountInPositionCurrency` |  | |  |  |
+| `PositionCurrency` |  | |  |  |
+| `AmountInValuationCurrency` |  | |  |  |
+| `ValuationCurrency` |  | |  |  |
+| `CalculationDate` |  | |  |  |
+| `CalcDateIsAsEndDateInclusive` |  | |  |  |
+| `DueDate` |  | |  |  |
+| `CalculationPeriodStartDate` |  | |  |  |
+| `CalculationPeriodEndDate` |  | |  |  |
+| `EffectiveInterestRate` |  | |  |  |
+| `EffctvIntrstRateRdmptnSched` |  | |  |  |
+| `NextEffectiveInterestRate` |  | |  |  |
+| `FixedRedemptionSchedule` |  | |  |  |
+| `CalculationBasis` |  | |  |  |
+| `TreasuryPosition` |  | |  |  |
+| `TreasuryPositionLedgerDate` |  | |  |  |
+| `TrsySubPosition` |  | |  |  |
+| `TreasuryBusinessTransCategory` |  | |  |  |
+| `TreasuryBusinessTransaction` |  | |  |  |
+| `TrsyBusTransactionCreationDate` |  | |  |  |
+| `TrsyBusTransactionCreationTime` |  | |  |  |
+| `TrsyDerivedBusinessTransStatus` |  | |  |  |
+| `TreasuryBusinessTransStatus` |  | |  |  |
+| `TreasuryValuationArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `OriglTrsyBusinessTransaction` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `PostingReversalDate` |  | |  |  |
+| `TrsyIntragroupTransacStatus` |  | |  |  |
+| `TreasuryUserStatisticsUUID` |  | |  |  |
 
 ## Source Code
 

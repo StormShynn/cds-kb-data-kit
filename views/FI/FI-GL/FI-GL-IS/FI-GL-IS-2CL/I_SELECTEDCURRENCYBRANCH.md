@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SelectedCurrencyBranch` | `cast(domvalue_l as fis_selected_currency_branch)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SelectedCurrencyBranch` | ✓ | |  | `cast(domvalue_l as fis_selected_currency_branch)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

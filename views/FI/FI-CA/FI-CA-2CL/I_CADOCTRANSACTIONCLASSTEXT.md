@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentTransactionClass` | `cast( left( domvalue_l, 1 ) as tatyp_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CADocumentTransactionClassText` | `cast( ddtext as tatyp_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentTransactionClass` | ✓ | |  | `cast( left( domvalue_l, 1 ) as tatyp_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CADocumentTransactionClassText` |  | |  | `cast( ddtext as tatyp_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

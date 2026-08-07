@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningLevelCategory` | `mstyp` |
-| key `Language` | `spras` |
-| `CADunningLevelCategoryName` | `mstxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningLevelCategory` | ✓ | |  | `mstyp` |
+| `Language` | ✓ | |  | `spras` |
+| `CADunningLevelCategoryName` |  | |  | `mstxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

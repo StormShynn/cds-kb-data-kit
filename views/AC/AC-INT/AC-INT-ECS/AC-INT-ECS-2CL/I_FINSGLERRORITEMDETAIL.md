@@ -29,52 +29,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinSGLErrorItemUUID` | `I_FinSGLErrorItem.FinSGLErrorItemUUID` |
-| `FinSGLCompoundErrorCategory` | `I_FinSGLErrorItem.FinSGLCompoundErrorCategory` |
-| `FinSGLErrorItemStatus` | `I_FinSGLErrorItem.FinSGLErrorItemStatus` |
-| `FinSGLErrorItemSeverity` | `I_FinSGLErrorItem.FinSGLErrorItemSeverity` |
-| `FinSGLPostedCompanyCode` | `I_FinSGLErrorItem.FinSGLPostedCompanyCode` |
-| `FinSGLPostedDocument` | `I_FinSGLErrorItem.FinSGLPostedDocument` |
-| `FinSGLPostedFiscalYear` | `I_FinSGLErrorItem.FinSGLPostedFiscalYear` |
-| `LedgerGLLineItem` | `I_FinSGLErrorItem.LedgerGLLineItem` |
-| `FinSGLErrorDocument` | `I_FinSGLErrorItem.FinSGLErrorDocument` |
-| `FinSGLErrorFiscalYear` | `I_FinSGLErrorItem.FinSGLErrorFiscalYear` |
-| `AccountType` | `I_FinSGLErrorItem.AccountType` |
-| `FinSGLOriginalPostingDate` | `I_FinSGLErrorItem.FinSGLOriginalPostingDate` |
-| `FinSGLOriginalAccount` | `I_FinSGLErrorItem.FinSGLOriginalAccount` |
-| `FinSGLOriginalProfitCenter` | `I_FinSGLErrorItem.FinSGLOriginalProfitCenter` |
-| `FinSGLOriginalCostCenter` | `I_FinSGLErrorItem.FinSGLOriginalCostCenter` |
-| `AmountInTransactionCurrency` | `I_FinSGLErrorItem.AmountInTransactionCurrency` |
-| `TransactionCurrency` | `I_FinSGLErrorItem.TransactionCurrency` |
-| `FinSGLPostedPostingDate` | `I_FinSGLErrorItem.FinSGLPostedPostingDate` |
-| `FinSGLPostedAccount` | `I_FinSGLErrorItem.FinSGLPostedAccount` |
-| `FinSGLPostedCostCenter` | `I_FinSGLErrorItem.FinSGLPostedCostCenter` |
-| `FinSGLPostedProfitCenter` | `I_FinSGLErrorItem.FinSGLPostedProfitCenter` |
-| `FinSGLCorrectionCompanyCode` | `I_FinSGLErrorItem.FinSGLCorrectionCompanyCode` |
-| `FinSGLCorrectionDocument` | `I_FinSGLErrorItem.FinSGLCorrectionDocument` |
-| `FinSGLCorrectionFiscalYear` | `I_FinSGLErrorItem.FinSGLCorrectionFiscalYear` |
-| `FinSGLCrrtnRvslCompanyCode` | `I_FinSGLErrorItem.FinSGLCrrtnRvslCompanyCode` |
-| `FinSGLCrrtnReversalDocument` | `I_FinSGLErrorItem.FinSGLCrrtnReversalDocument` |
-| `FinSGLCrrtnRvslFiscalYear` | `I_FinSGLErrorItem.FinSGLCrrtnRvslFiscalYear` |
-| `FinSGLErrCrrtnEnvrmt` | `I_FinSGLErrorItem.FinSGLErrCrrtnEnvrmt` |
-| `FinSGLRunID` | `I_FinSGLErrorItem.FinSGLRunID` |
-| `FinSGLErrorItemCreatedBy` | `I_FinSGLErrorItem.FinSGLErrorItemCreatedBy` |
-| `FinSGLErrorItemCreatedOnDate` | `I_FinSGLErrorItem.FinSGLErrorItemCreatedOnDate` |
-| `FinSGLErrorItemChangedBy` | `I_FinSGLErrorItem.FinSGLErrorItemChangedBy` |
-| `FinSGLErrorItemChangedOnDate` | `I_FinSGLErrorItem.FinSGLErrorItemChangedOnDate` |
-| `FinSGLErrorItemProcessor` | `I_FinSGLErrorItem.FinSGLErrorItemProcessor` |
-| `FinSGLErrorItemTeamName` | `I_FinSGLErrorItem.FinSGLErrorItemTeamName` |
-| `Note` | `I_FinSGLErrorItem.Note` |
-| `_ModifiedItem` | *Association* |
-| `_OriginalItem` | *Association* |
-| `_PostedItem` | *Association* |
-| `_ErrorMessage` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Severity` | *Association* |
-| `_Status` | *Association* |
-| `_ErrorCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinSGLErrorItemUUID` | ✓ | |  |  |
+| `FinSGLCompoundErrorCategory` |  | |  |  |
+| `FinSGLErrorItemStatus` |  | |  |  |
+| `FinSGLErrorItemSeverity` |  | |  |  |
+| `FinSGLPostedCompanyCode` |  | |  |  |
+| `FinSGLPostedDocument` |  | |  |  |
+| `FinSGLPostedFiscalYear` |  | |  |  |
+| `LedgerGLLineItem` |  | |  |  |
+| `FinSGLErrorDocument` |  | |  |  |
+| `FinSGLErrorFiscalYear` |  | |  |  |
+| `AccountType` |  | |  |  |
+| `FinSGLOriginalPostingDate` |  | |  |  |
+| `FinSGLOriginalAccount` |  | |  |  |
+| `FinSGLOriginalProfitCenter` |  | |  |  |
+| `FinSGLOriginalCostCenter` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `FinSGLPostedPostingDate` |  | |  |  |
+| `FinSGLPostedAccount` |  | |  |  |
+| `FinSGLPostedCostCenter` |  | |  |  |
+| `FinSGLPostedProfitCenter` |  | |  |  |
+| `FinSGLCorrectionCompanyCode` |  | |  |  |
+| `FinSGLCorrectionDocument` |  | |  |  |
+| `FinSGLCorrectionFiscalYear` |  | |  |  |
+| `FinSGLCrrtnRvslCompanyCode` |  | |  |  |
+| `FinSGLCrrtnReversalDocument` |  | |  |  |
+| `FinSGLCrrtnRvslFiscalYear` |  | |  |  |
+| `FinSGLErrCrrtnEnvrmt` |  | |  |  |
+| `FinSGLRunID` |  | |  |  |
+| `FinSGLErrorItemCreatedBy` |  | |  |  |
+| `FinSGLErrorItemCreatedOnDate` |  | |  |  |
+| `FinSGLErrorItemChangedBy` |  | |  |  |
+| `FinSGLErrorItemChangedOnDate` |  | |  |  |
+| `FinSGLErrorItemProcessor` |  | |  |  |
+| `FinSGLErrorItemTeamName` |  | |  |  |
+| `Note` |  | |  |  |
+| `_ModifiedItem` | | ✓ | | |
+| `_OriginalItem` | | ✓ | | |
+| `_PostedItem` | | ✓ | | |
+| `_ErrorMessage` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Severity` | | ✓ | | |
+| `_Status` | | ✓ | | |
+| `_ErrorCategory` | | ✓ | | |
 
 ## Associations
 

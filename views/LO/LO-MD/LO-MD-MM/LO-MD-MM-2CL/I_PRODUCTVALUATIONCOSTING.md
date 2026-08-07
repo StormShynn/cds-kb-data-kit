@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `ProdCosting.Product` |
-| key `ValuationArea` | `ProdCosting.ValuationArea` |
-| key `ValuationType` | `ProdCosting.ValuationType` |
-| `IsMaterialCostedWithQtyStruc` | `ProdCosting.IsMaterialCostedWithQtyStruc` |
-| `IsMaterialRelatedOrigin` | `ProdCosting.IsMaterialRelatedOrigin` |
-| `CostOriginGroup` | `ProdCosting.CostOriginGroup` |
-| `CostingOverheadGroup` | `ProdCosting.CostingOverheadGroup` |
-| `PlannedPrice1InCoCodeCrcy` | `ProdCosting.PlannedPrice1InCoCodeCrcy` |
-| `PlannedPrice2InCoCodeCrcy` | `ProdCosting.PlannedPrice2InCoCodeCrcy` |
-| `PlannedPrice3InCoCodeCrcy` | `ProdCosting.PlannedPrice3InCoCodeCrcy` |
-| `FuturePlndPrice1ValdtyDate` | `ProdCosting.FuturePlndPrice1ValdtyDate` |
-| `FuturePlndPrice2ValdtyDate` | `ProdCosting.FuturePlndPrice2ValdtyDate` |
-| `FuturePlndPrice3ValdtyDate` | `ProdCosting.FuturePlndPrice3ValdtyDate` |
-| `PlannedPrice` | `ProdCosting.PlannedPrice` |
-| `Currency` | `t001.waers` |
-| `CompanyCode` | `t001.bukrs` |
-| `_Product` | *Association* |
-| `_CostOriginGroupText` | *Association* |
-| `_Currency` | *Association* |
-| `_CurrencyText` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `ValuationType` | ✓ | |  |  |
+| `IsMaterialCostedWithQtyStruc` |  | |  |  |
+| `IsMaterialRelatedOrigin` |  | |  |  |
+| `CostOriginGroup` |  | |  |  |
+| `CostingOverheadGroup` |  | |  |  |
+| `PlannedPrice1InCoCodeCrcy` |  | |  |  |
+| `PlannedPrice2InCoCodeCrcy` |  | |  |  |
+| `PlannedPrice3InCoCodeCrcy` |  | |  |  |
+| `FuturePlndPrice1ValdtyDate` |  | |  |  |
+| `FuturePlndPrice2ValdtyDate` |  | |  |  |
+| `FuturePlndPrice3ValdtyDate` |  | |  |  |
+| `PlannedPrice` |  | |  |  |
+| `Currency` |  | |  | `waers` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `_Product` | | ✓ | | |
+| `_CostOriginGroupText` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Associations
 

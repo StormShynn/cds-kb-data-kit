@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocument` | `ServiceDocument` |
-| key `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceDocumentDescription` | `ServiceDocumentDescription` |
-| `ServiceDocumentTypeName` | `ServiceDocumentTypeName` |
-| `CompanyCode` | `CompanyCode` |
-| `ProfitCenter` | `ProfitCenter` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocument` | ✓ | |  |  |
+| `ServiceDocumentType` | ✓ | |  |  |
+| `ServiceDocumentDescription` |  | |  |  |
+| `ServiceDocumentTypeName` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
 
 ## Source Code
 

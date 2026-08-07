@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ValuationArea` | `bwkey` |
-| key `InventoryValuationCategory` | `bwtty` |
-| `_Text` | *Association* |
-| `_ValuationArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ValuationArea` | ✓ | |  | `bwkey` |
+| `InventoryValuationCategory` | ✓ | |  | `bwtty` |
+| `_Text` | | ✓ | | |
+| `_ValuationArea` | | ✓ | | |
 
 ## Associations
 

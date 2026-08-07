@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElmntWorkItem` | `workitem_id` |
-| `_ConfiguredWorkItemText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElmntWorkItem` | ✓ | |  | `workitem_id` |
+| `_ConfiguredWorkItemText` | | ✓ | | |
 
 ## Associations
 

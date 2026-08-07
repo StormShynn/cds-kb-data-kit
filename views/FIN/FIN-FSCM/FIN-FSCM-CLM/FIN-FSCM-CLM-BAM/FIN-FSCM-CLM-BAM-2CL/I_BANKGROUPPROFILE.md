@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankGroup` | `BusinessPartnerNumber` |
-| `BankGroupName` | `BusinessPartnerName` |
-| `NumberOfBankAccounts` | `_BankAccountCount.BankAccountQuantity` |
-| `NumberOfCompanyCodes` | `_HouseBankCompany.NumberOfCompanyCodes` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankGroup` | ✓ | |  | `BusinessPartnerNumber` |
+| `BankGroupName` |  | |  | `BusinessPartnerName` |
+| `NumberOfBankAccounts` |  | | `_BankAccountCount` | `BankAccountQuantity` |
+| `NumberOfCompanyCodes` |  | | `_HouseBankCompany` | `NumberOfCompanyCodes` |
 
 ## Associations
 

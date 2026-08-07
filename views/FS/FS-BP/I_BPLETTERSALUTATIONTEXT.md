@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tp02t.langu` |
-| key `BPLetterSalutation` | `tp02t.title_let` |
-| `BPLetterSalutationDescription` | `tp02t.title_le_t` |
-| `_BPLetterSalutation` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `BPLetterSalutation` | ✓ | |  | `title_let` |
+| `BPLetterSalutationDescription` |  | |  | `title_le_t` |
+| `_BPLetterSalutation` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

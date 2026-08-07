@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TransportationOrderType` | `/scmtms/tor_type` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderType` |  | |  | `/scmtms/tor_type` |
 
 ## Source Code
 

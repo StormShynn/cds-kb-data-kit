@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `stlnr` |
-| key `BillOfMaterialVariant` | `stlal` |
-| key `DocumentType` | `dokar` |
-| key `DocNumber` | `doknr` |
-| key `DocumentVersion` | `dokvr` |
-| key `DocumentPart` | `doktl` |
-| `BillOfMaterialCategory` | `cast ('D' as stlty preserving type)` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  | `stlnr` |
+| `BillOfMaterialVariant` | ✓ | |  | `stlal` |
+| `DocumentType` | ✓ | |  | `dokar` |
+| `DocNumber` | ✓ | |  | `doknr` |
+| `DocumentVersion` | ✓ | |  | `dokvr` |
+| `DocumentPart` | ✓ | |  | `doktl` |
+| `BillOfMaterialCategory` |  | |  | `cast ('D' as stlty preserving type)` |
 
 ## Source Code
 

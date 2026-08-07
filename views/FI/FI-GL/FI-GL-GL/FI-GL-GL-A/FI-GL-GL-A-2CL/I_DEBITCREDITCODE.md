@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitCreditCode` | `cast( domvalue_l as fis_shkzg )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitCreditCode` | ✓ | |  | `cast( domvalue_l as fis_shkzg )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

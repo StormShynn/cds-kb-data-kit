@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManualBillgSelForPrjBlgReqItem` | `cast( substring( domvalue_l, 1, 1 ) as pbr_doc_status preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_PrjBlgReqItmMnlBillgSelText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManualBillgSelForPrjBlgReqItem` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbr_doc_status preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_PrjBlgReqItmMnlBillgSelText` | | ✓ | | |
 
 ## Source Code
 

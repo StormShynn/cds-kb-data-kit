@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Businesspartner` | `Businesspartner` |
-| `Firstname` | `Firstname` |
-| `Lastname` | `Lastname` |
-| `Nickname` | `Nickname` |
-| `Emailaddress` | `Emailaddress` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Businesspartner` | ✓ | |  |  |
+| `Firstname` |  | |  |  |
+| `Lastname` |  | |  |  |
+| `Nickname` |  | |  |  |
+| `Emailaddress` |  | |  |  |
 
 ## Source Code
 

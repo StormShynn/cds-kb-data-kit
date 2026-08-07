@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `edoc_guid` |
-| `KR_EDocInvcApprovalNo` | `apprvl_no` |
-| `KR_EDocInvcBizPlaceHeadQtrs` | `busplc_hq` |
-| `KR_EDocInvcReceiptBilling` | `rcpt_billg` |
-| `KR_EDocInvcCustomer` | `customer` |
-| `KR_EDocInvcBusinessPlace` | `bupla` |
-| `KR_EDocInvcTaxCode` | `tax_code` |
-| `KR_EDocInvcSubmissionID` | `ref_submit_id` |
-| `KR_EDocInvcTaxInvoiceType` | `tax_invoice_type` |
-| `KR_EDocInvcSalesOrganization` | `vkorg` |
-| `KR_EDocInvcDistrChannel` | `vtweg` |
-| `KR_EDocInvcCustomerClassfctn` | `klabc` |
-| `KR_EDocInvcCustomerName` | `cust_name` |
-| `KR_EDocInvcTaxBaseValue` | `tax_base_amt` |
-| `KR_EDocInvcTaxValue` | `tax_amount` |
-| `KR_EDocInvcAmountValue` | `amount` |
-| `KR_EDocInvcCurrency` | `waers` |
-| `KR_EDocInvcTrnstnDate` | `transition_date` |
-| `KR_EDocInvcSourceKey` | `source_key` |
-| `KR_EDocInvcStatusReasonText` | `status_reason` |
-| `KR_EDocInvcAmendReason` | `amendmt_reason` |
-| `KR_EDocInvcOriglApprvlNo` | `origl_apprvl_no` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |
+| `KR_EDocInvcApprovalNo` |  | |  | `apprvl_no` |
+| `KR_EDocInvcBizPlaceHeadQtrs` |  | |  | `busplc_hq` |
+| `KR_EDocInvcReceiptBilling` |  | |  | `rcpt_billg` |
+| `KR_EDocInvcCustomer` |  | |  | `customer` |
+| `KR_EDocInvcBusinessPlace` |  | |  | `bupla` |
+| `KR_EDocInvcTaxCode` |  | |  | `tax_code` |
+| `KR_EDocInvcSubmissionID` |  | |  | `ref_submit_id` |
+| `KR_EDocInvcTaxInvoiceType` |  | |  | `tax_invoice_type` |
+| `KR_EDocInvcSalesOrganization` |  | |  | `vkorg` |
+| `KR_EDocInvcDistrChannel` |  | |  | `vtweg` |
+| `KR_EDocInvcCustomerClassfctn` |  | |  | `klabc` |
+| `KR_EDocInvcCustomerName` |  | |  | `cust_name` |
+| `KR_EDocInvcTaxBaseValue` |  | |  | `tax_base_amt` |
+| `KR_EDocInvcTaxValue` |  | |  | `tax_amount` |
+| `KR_EDocInvcAmountValue` |  | |  | `amount` |
+| `KR_EDocInvcCurrency` |  | |  | `waers` |
+| `KR_EDocInvcTrnstnDate` |  | |  | `transition_date` |
+| `KR_EDocInvcSourceKey` |  | |  | `source_key` |
+| `KR_EDocInvcStatusReasonText` |  | |  | `status_reason` |
+| `KR_EDocInvcAmendReason` |  | |  | `amendmt_reason` |
+| `KR_EDocInvcOriglApprvlNo` |  | |  | `origl_apprvl_no` |
 
 ## Source Code
 

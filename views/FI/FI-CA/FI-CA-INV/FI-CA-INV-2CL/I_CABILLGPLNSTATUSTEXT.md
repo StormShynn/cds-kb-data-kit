@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnStatus` | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_status_kk preserving type)` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CABillgPlnStatusText` | `cast ( ddtext as bip_status_txt_gfn_kk preserving type )` |
-| `_CABillgPlnStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnStatus` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_status_kk preserving type)` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CABillgPlnStatusText` |  | |  | `cast ( ddtext as bip_status_txt_gfn_kk preserving type )` |
+| `_CABillgPlnStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

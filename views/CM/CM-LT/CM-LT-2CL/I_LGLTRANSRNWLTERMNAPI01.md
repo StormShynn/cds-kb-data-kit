@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMRnwlAndTermnUUID` | `LglCntntMRnwlAndTermnUUID` |
-| `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LglCntntMRnwlType` | `LglCntntMRnwlType` |
-| `LglCntntMRnwlPeriod` | `LglCntntMRnwlPeriod` |
-| `LglCntntMRnwlPeriodUnit` | `LglCntntMRnwlPeriodUnit` |
-| `LglCntntMRenewalClause` | `LglCntntMRenewalClause` |
-| `LglCntntMTerminationClause` | `LglCntntMTerminationClause` |
-| `LglCntntMNextTermnClause` | `LglCntntMNextTermnClause` |
-| `LglCntntMNmbrOfRenewals` | `LglCntntMNmbrOfRenewals` |
-| `LglCntntMRnwlReminderUser` | `LglCntntMRnwlReminderUser` |
-| `LglCntntMTermnReminderUser` | `LglCntntMTermnReminderUser` |
-| `LglCntntMRnwlReminderDays` | `LglCntntMRnwlReminderDays` |
-| `LglCntntMTermnReminderDays` | `LglCntntMTermnReminderDays` |
-| `_LegalTransaction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMRnwlAndTermnUUID` | ✓ | |  |  |
+| `LegalTransactionUUID` |  | |  |  |
+| `LglCntntMRnwlType` |  | |  |  |
+| `LglCntntMRnwlPeriod` |  | |  |  |
+| `LglCntntMRnwlPeriodUnit` |  | |  |  |
+| `LglCntntMRenewalClause` |  | |  |  |
+| `LglCntntMTerminationClause` |  | |  |  |
+| `LglCntntMNextTermnClause` |  | |  |  |
+| `LglCntntMNmbrOfRenewals` |  | |  |  |
+| `LglCntntMRnwlReminderUser` |  | |  |  |
+| `LglCntntMTermnReminderUser` |  | |  |  |
+| `LglCntntMRnwlReminderDays` |  | |  |  |
+| `LglCntntMTermnReminderDays` |  | |  |  |
+| `_LegalTransaction` | | ✓ | | |
 
 ## Associations
 

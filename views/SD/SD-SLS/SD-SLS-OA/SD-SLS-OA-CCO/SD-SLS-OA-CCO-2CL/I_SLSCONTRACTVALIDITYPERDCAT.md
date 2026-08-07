@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContractValidityPerdCat` | `vlaufk` |
-| `NmbrOfSalesContractValdtyPerd` | `vlaufz` |
-| `SalesContractValidityPerdUnit` | `vlauez` |
-| `_Text` | *Association* |
-| `_SalesContractValidityPerdUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContractValidityPerdCat` | ✓ | |  | `vlaufk` |
+| `NmbrOfSalesContractValdtyPerd` |  | |  | `vlaufz` |
+| `SalesContractValidityPerdUnit` |  | |  | `vlauez` |
+| `_Text` | | ✓ | | |
+| `_SalesContractValidityPerdUnit` | | ✓ | | |
 
 ## Associations
 

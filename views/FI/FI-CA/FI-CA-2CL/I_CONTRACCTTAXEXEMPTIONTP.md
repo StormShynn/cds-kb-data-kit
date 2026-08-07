@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContractAccount` | `ContractAccount` |
-| key `TaxCode` | `TaxCode` |
-| key `CAConditionType` | `CAConditionType` |
-| key `CustTaxGroupExemptionStartDate` | `CustTaxGroupExemptionStartDate` |
-| `TaxCodeForEdit` | `TaxCodeForEdit` |
-| `CAConditionTypeForEdit` | `CAConditionTypeForEdit` |
-| `CustTxGrpExmpStrtDtFoEd` | `CustTxGrpExmpStrtDtFoEd` |
-| `CustTaxGroupExemptionEndDate` | `CustTaxGroupExemptionEndDate` |
-| `CATaxExemptionLicense` | `CATaxExemptionLicense` |
-| `CATaxExemptionRate` | `CATaxExemptionRate` |
-| `CAMassRunDate` | `CAMassRunDate` |
-| `CAMassRunID` | `CAMassRunID` |
-| `CATaxExemptionLicenseExtended` | `CATaxExemptionLicenseExtended` |
-| `CATaxExemptionLicenseAmount` | `} CATaxExemptionLicenseAmount` |
-| `CATaxExemptionLicenseCurrency` | `CATaxExemptionLicenseCurrency` |
-| `CATaxExemptionLicenseIssueDate` | `CATaxExemptionLicenseIssueDate` |
-| `IT_TaxCalculationProcedure` | `IT_TaxCalculationProcedure` |
-| `_CAConditionType` | *Association* |
-| `_CATaxExemptionLicenseCurrency` | *Association* |
-| `_ContrAcctTaxExemptionUI` | *Association* |
-| `_ContractAccount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  |  |
+| `TaxCode` | ✓ | |  |  |
+| `CAConditionType` | ✓ | |  |  |
+| `CustTaxGroupExemptionStartDate` | ✓ | |  |  |
+| `TaxCodeForEdit` |  | |  |  |
+| `CAConditionTypeForEdit` |  | |  |  |
+| `CustTxGrpExmpStrtDtFoEd` |  | |  |  |
+| `CustTaxGroupExemptionEndDate` |  | |  |  |
+| `CATaxExemptionLicense` |  | |  |  |
+| `CATaxExemptionRate` |  | |  |  |
+| `CAMassRunDate` |  | |  |  |
+| `CAMassRunID` |  | |  |  |
+| `CATaxExemptionLicenseExtended` |  | |  |  |
+| `CATaxExemptionLicenseAmount` |  | |  | `} CATaxExemptionLicenseAmount` |
+| `CATaxExemptionLicenseCurrency` |  | |  |  |
+| `CATaxExemptionLicenseIssueDate` |  | |  |  |
+| `IT_TaxCalculationProcedure` |  | |  |  |
+| `_CAConditionType` | | ✓ | | |
+| `_CATaxExemptionLicenseCurrency` | | ✓ | | |
+| `_ContrAcctTaxExemptionUI` | | ✓ | | |
+| `_ContractAccount` | | ✓ | | |
 
 ## Source Code
 

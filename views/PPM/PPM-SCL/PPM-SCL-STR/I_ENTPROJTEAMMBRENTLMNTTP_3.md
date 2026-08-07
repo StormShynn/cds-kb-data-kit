@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectEntitlementUUID` | `ProjectEntitlementUUID` |
-| `ProjectUUID` | `ProjectUUID` |
-| `ProjectRoleUUID` | `ProjectRoleUUID` |
-| `TeamMemberUUID` | `TeamMemberUUID` |
-| `ProjectRoleType` | `ProjectRoleType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_TeamMember` | *Association* |
-| `_Role` | *Association* |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectEntitlementUUID` | ✓ | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `ProjectRoleUUID` |  | |  |  |
+| `TeamMemberUUID` |  | |  |  |
+| `ProjectRoleType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_TeamMember` | | ✓ | | |
+| `_Role` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
 
 ## Source Code
 

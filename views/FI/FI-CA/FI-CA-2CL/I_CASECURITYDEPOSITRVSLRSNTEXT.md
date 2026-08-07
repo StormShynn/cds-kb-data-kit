@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CASecurityDepositReversalRsn` | `rev_reason` |
-| key `Language` | `spras` |
-| `CASecurityDepositRvslRsnText` | `cast( text as rev_reason_txt_kk )` |
-| `_CASecurityDepositReversalRsn` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CASecurityDepositReversalRsn` | ✓ | |  | `rev_reason` |
+| `Language` | ✓ | |  | `spras` |
+| `CASecurityDepositRvslRsnText` |  | |  | `cast( text as rev_reason_txt_kk )` |
+| `_CASecurityDepositReversalRsn` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerMaterialItemUsage` | `vwpos` |
-| key `Language` | `spras` |
-| `CustomerMaterialItemUsageDesc` | `bezei` |
-| `_CustomerMaterialItemUsage` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerMaterialItemUsage` | ✓ | |  | `vwpos` |
+| `Language` | ✓ | |  | `spras` |
+| `CustomerMaterialItemUsageDesc` |  | |  | `bezei` |
+| `_CustomerMaterialItemUsage` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

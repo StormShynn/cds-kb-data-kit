@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionOrder` | `ProductionOrder` |
-| key `ProductionOrderSequence` | `ProductionOrderSequence` |
-| `OrderInternalID` | `OrderInternalID` |
-| `SequenceInternalID` | `SequenceInternalID` |
-| `SequenceText` | `SequenceText` |
-| `SequenceHasLongText` | `SequenceHasLongText` |
-| `LongTextLanguage` | `LongTextLanguage` |
-| `SequenceBranchOperation` | `SequenceBranchOperation` |
-| `SequenceReturnOperation` | `SequenceReturnOperation` |
-| `SequenceCategory` | `SequenceCategory` |
-| `ReferenceSequence` | `ReferenceSequence` |
-| `SequenceSchedulingAlignment` | `SequenceSchedulingAlignment` |
-| `ObjectInternalID` | `ObjectInternalID` |
-| `BillOfOperationsUnit` | `BillOfOperationsUnit` |
-| `MinimumLotSizeQuantity` | `MinimumLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `MaximumLotSizeQuantity` |
-| `_ProductionOrder` | *Association* |
-| `_Operation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionOrder` | ✓ | |  |  |
+| `ProductionOrderSequence` | ✓ | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `SequenceInternalID` |  | |  |  |
+| `SequenceText` |  | |  |  |
+| `SequenceHasLongText` |  | |  |  |
+| `LongTextLanguage` |  | |  |  |
+| `SequenceBranchOperation` |  | |  |  |
+| `SequenceReturnOperation` |  | |  |  |
+| `SequenceCategory` |  | |  |  |
+| `ReferenceSequence` |  | |  |  |
+| `SequenceSchedulingAlignment` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `BillOfOperationsUnit` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `_ProductionOrder` | | ✓ | | |
+| `_Operation` | | ✓ | | |
 
 ## Source Code
 

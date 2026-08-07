@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlanCategory` | `t399w_t.mptyp` |
-| key `Language` | `t399w_t.spras` |
-| `MaintenancePlanCategoryDesc` | `t399w_t.txt` |
-| `_MaintenancePlanCatParam` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlanCategory` | ✓ | |  | `mptyp` |
+| `Language` | ✓ | |  | `spras` |
+| `MaintenancePlanCategoryDesc` |  | |  | `txt` |
+| `_MaintenancePlanCatParam` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

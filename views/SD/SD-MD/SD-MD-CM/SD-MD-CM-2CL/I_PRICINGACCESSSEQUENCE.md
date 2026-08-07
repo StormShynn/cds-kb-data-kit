@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionUsage` | `kvewe` |
-| key `ConditionApplication` | `kappl` |
-| key `AccessSequence` | `kozgf` |
-| `_PricingAccess` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `AccessSequence` | ✓ | |  | `kozgf` |
+| `_PricingAccess` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

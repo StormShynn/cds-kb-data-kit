@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `addrnumber` |
-| key `AddressPersonID` | `persnumber` |
-| key `CommunicationMediumType` | `comm_type` |
-| key `CommMediumSequenceNumber` | `consnumber` |
-| key `Language` | `langu` |
-| `CommunicationRemarkText` | `remark` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  | `addrnumber` |
+| `AddressPersonID` | ✓ | |  | `persnumber` |
+| `CommunicationMediumType` | ✓ | |  | `comm_type` |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |
+| `Language` | ✓ | |  | `langu` |
+| `CommunicationRemarkText` |  | |  | `remark` |
 
 ## Source Code
 

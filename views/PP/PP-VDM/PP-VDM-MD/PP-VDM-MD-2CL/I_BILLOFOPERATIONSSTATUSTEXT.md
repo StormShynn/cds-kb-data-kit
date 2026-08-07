@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsStatus` | `txt.plnst` |
-| key `Language` | `txt.spras` |
-| `BillOfOperationsStatusDesc` | `txt.txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsStatus` | ✓ | |  | `plnst` |
+| `Language` | ✓ | |  | `spras` |
+| `BillOfOperationsStatusDesc` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

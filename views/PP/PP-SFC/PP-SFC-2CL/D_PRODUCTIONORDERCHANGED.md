@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ManufacturingOrder` | `manufacturingorder` |
-| `ProductionOrderType` | `aufart` |
-| `ProductionPlant` | `werks_d` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrder` |  | |  | `manufacturingorder` |
+| `ProductionOrderType` |  | |  | `aufart` |
+| `ProductionPlant` |  | |  | `werks_d` |
 
 ## Source Code
 

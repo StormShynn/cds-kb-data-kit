@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `BR_DUEType` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_due_type preserving type )` |
-| `BR_DUETypeDesc` | `ddtext` |
-| `_BR_DUEType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `BR_DUEType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_due_type preserving type )` |
+| `BR_DUETypeDesc` |  | |  | `ddtext` |
+| `_BR_DUEType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

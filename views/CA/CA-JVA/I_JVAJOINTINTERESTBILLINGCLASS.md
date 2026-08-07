@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `JVAJointInterestBillingClass` | `class` |
-| key `JVAJointInterestBillgSubClass` | `subclass` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JVAJointInterestBillingClass` | ✓ | |  | `class` |
+| `JVAJointInterestBillgSubClass` | ✓ | |  | `subclass` |
 
 ## Source Code
 

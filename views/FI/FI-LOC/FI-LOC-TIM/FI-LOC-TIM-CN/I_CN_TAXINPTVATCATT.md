@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaxCategory` | `text.TaxCategory` |
-| key `Language` | `text.Language` |
-| `CategoryDescription` | `text.CategoryDescription` |
-| `_Language` | *Association* |
-| `_TaxCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaxCategory` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `CategoryDescription` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_TaxCategory` | | ✓ | | |
 
 ## Associations
 

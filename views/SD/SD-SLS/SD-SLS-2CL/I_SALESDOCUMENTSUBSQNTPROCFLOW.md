@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `SubsequentProcFlow.PrecedingDocument` |
-| key `DocRelationshipUUID` | `SubsequentProcFlow.DocRelationshipUUID` |
-| `SubsequentDocument` | `SubsequentProcFlow.SubsequentDocument` |
-| `SubsequentDocumentCategory` | `SubsequentProcFlow.SubsequentDocumentCategory` |
-| `SDDocumentCategory` | `SubsequentProcFlow.PrecedingDocumentCategory` |
-| `ProcessFlowLevel` | `SubsequentProcFlow.ProcessFlowLevel` |
-| `CreationDate` | `SubsequentProcFlow.CreationDate` |
-| `CreationTime` | `SubsequentProcFlow.CreationTime` |
-| `LastChangeDate` | `SubsequentProcFlow.LastChangeDate` |
-| `SalesDocumentType` | `SalesDocument.SalesDocumentType` |
-| `SalesOrganization` | `SalesDocument.SalesOrganization` |
-| `DistributionChannel` | `SalesDocument.DistributionChannel` |
-| `OrganizationDivision` | `SalesDocument.OrganizationDivision` |
-| `_SalesDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `PrecedingDocument` |
+| `DocRelationshipUUID` | ✓ | |  |  |
+| `SubsequentDocument` |  | |  |  |
+| `SubsequentDocumentCategory` |  | |  |  |
+| `SDDocumentCategory` |  | |  | `PrecedingDocumentCategory` |
+| `ProcessFlowLevel` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesDocument` | | ✓ | | |
 
 ## Associations
 

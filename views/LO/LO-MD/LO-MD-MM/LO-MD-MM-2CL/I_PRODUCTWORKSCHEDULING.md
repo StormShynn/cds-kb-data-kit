@@ -29,40 +29,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `WorkScheduling.Product` |
-| key `Plant` | `WorkScheduling.Plant` |
-| `MaterialBaseQuantity` | `WorkScheduling.MaterialBaseQuantity` |
-| `UnlimitedOverDelivIsAllowed` | `WorkScheduling.UnlimitedOverDelivIsAllowed` |
-| `OverDelivToleranceLimit` | `WorkScheduling.OverDelivToleranceLimit` |
-| `UnderDelivToleranceLimit` | `WorkScheduling.UnderDelivToleranceLimit` |
-| `ProductionInvtryManagedLoc` | `WorkScheduling.ProductionInvtryManagedLoc` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `ProdnOrderIsBatchRequired` | `WorkScheduling.ProdnOrderIsBatchRequired` |
-| `ProdIsWithdrawnFrmProdnBin` | `WorkScheduling.ProdIsWithdrawnFrmProdnBin` |
-| `TransitionMatrixProductsGroup` | `WorkScheduling.TransitionMatrixProductsGroup` |
-| `OrderChangeManagementProfile` | `WorkScheduling.OrderChangeManagementProfile` |
-| `MatlCompIsMarkedForBackflush` | `WorkScheduling.MatlCompIsMarkedForBackflush` |
-| `SetupAndTeardownTime` | `WorkScheduling.SetupAndTeardownTime` |
-| `ProductionSchedulingProfile` | `WorkScheduling.ProductionSchedulingProfile` |
-| `TransitionTime` | `WorkScheduling.TransitionTime` |
-| `ProcessingTimeInDays` | `WorkScheduling.ProcessingTimeInDays` |
-| `ProductionSupervisor` | `WorkScheduling.ProductionSupervisor` |
-| `ProductProductionQuantityUnit` | `WorkScheduling.ProductProductionQuantityUnit` |
-| `HasProductionVersion` | `WorkScheduling.HasProductionVersion` |
-| `BaseUnit` | `_Product.BaseUnit` |
-| `_Product` | *Association* |
-| `_ProductionInvtryManagedLoc` | *Association* |
-| `_ProductionSupervisor` | *Association* |
-| `_ProductionSchedulingProfile` | *Association* |
-| `_Plant` | *Association* |
-| `_ProductProductionQuantityUnit` | *Association* |
-| `_ProdnOrdBatDetnCodeText` | *Association* |
-| `_ProdComponentBackflushCodeT` | *Association* |
-| `_ProductDescription` | *Association* |
-| `_BaseUnitOfMeasureText` | *Association* |
-| `_ProdProdnQuantityUnitText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `MaterialBaseQuantity` |  | |  |  |
+| `UnlimitedOverDelivIsAllowed` |  | |  |  |
+| `OverDelivToleranceLimit` |  | |  |  |
+| `UnderDelivToleranceLimit` |  | |  |  |
+| `ProductionInvtryManagedLoc` |  | |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `ProdnOrderIsBatchRequired` |  | |  |  |
+| `ProdIsWithdrawnFrmProdnBin` |  | |  |  |
+| `TransitionMatrixProductsGroup` |  | |  |  |
+| `OrderChangeManagementProfile` |  | |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |
+| `SetupAndTeardownTime` |  | |  |  |
+| `ProductionSchedulingProfile` |  | |  |  |
+| `TransitionTime` |  | |  |  |
+| `ProcessingTimeInDays` |  | |  |  |
+| `ProductionSupervisor` |  | |  |  |
+| `ProductProductionQuantityUnit` |  | |  |  |
+| `HasProductionVersion` |  | |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |
+| `_Product` | | ✓ | | |
+| `_ProductionInvtryManagedLoc` | | ✓ | | |
+| `_ProductionSupervisor` | | ✓ | | |
+| `_ProductionSchedulingProfile` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ProductProductionQuantityUnit` | | ✓ | | |
+| `_ProdnOrdBatDetnCodeText` | | ✓ | | |
+| `_ProdComponentBackflushCodeT` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | |
+| `_ProdProdnQuantityUnitText` | | ✓ | | |
 
 ## Associations
 

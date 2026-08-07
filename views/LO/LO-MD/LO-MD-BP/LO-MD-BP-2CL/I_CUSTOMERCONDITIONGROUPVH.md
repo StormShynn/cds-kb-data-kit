@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerConditionGroup` | `CustomerConditionGroup.kdkgr` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerConditionGroup` | ✓ | |  | `kdkgr` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REAuthorizationGroup` | `tivcaauthgrpt.authgrp` |
-| key `Language` | `tivcaauthgrpt.spras` |
-| key `RealEstateObjectType` | `tbo00.obart` |
-| `REAuthorizationGroupName` | `tivcaauthgrpt.xauthgrp` |
-| `_Language` | *Association* |
-| `_REObjectType` | *Association* |
-| `_REAuthorizationGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REAuthorizationGroup` | ✓ | |  | `authgrp` |
+| `Language` | ✓ | |  | `spras` |
+| `RealEstateObjectType` | ✓ | |  | `obart` |
+| `REAuthorizationGroupName` |  | |  | `xauthgrp` |
+| `_Language` | | ✓ | | |
+| `_REObjectType` | | ✓ | | |
+| `_REAuthorizationGroup` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrActyLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/act_lifecycle_stat_cd preserving type)` |
-| key `Language` | `ddlanguage` |
-| `SuplrActyLifecycleStatusName` | `cast(ddtext as /srmsmc/status_descr)` |
-| `_Language` | *Association* |
-| `_SuplrActLifecycleStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrActyLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/act_lifecycle_stat_cd preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SuplrActyLifecycleStatusName` |  | |  | `cast(ddtext as /srmsmc/status_descr)` |
+| `_Language` | | ✓ | | |
+| `_SuplrActLifecycleStatus` | | ✓ | | |
 
 ## Associations
 

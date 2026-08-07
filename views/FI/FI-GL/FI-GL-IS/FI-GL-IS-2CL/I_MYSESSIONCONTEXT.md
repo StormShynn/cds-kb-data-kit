@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserID` | `$session.user` |
-| `UserLocalDate` | `tstmp_to_dats(tstmp_current_utctimestamp(), abap_user_timezone($session.user, $session.client, 'NULL'), $session.client, 'NULL')` |
-| `UserLocalTime` | `tstmp_to_tims(tstmp_current_utctimestamp(), abap_user_timezone($session.user, $session.client, 'NULL'), $session.client, 'NULL')` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserID` | ✓ | |  | `$session.user` |
+| `UserLocalDate` |  | |  | `tstmp_to_dats(tstmp_current_utctimestamp(), abap_user_timezone($session.user, $session.client, 'NULL'), $session.client, 'NULL')` |
+| `UserLocalTime` |  | |  | `tstmp_to_tims(tstmp_current_utctimestamp(), abap_user_timezone($session.user, $session.client, 'NULL'), $session.client, 'NULL')` |
 
 ## Source Code
 

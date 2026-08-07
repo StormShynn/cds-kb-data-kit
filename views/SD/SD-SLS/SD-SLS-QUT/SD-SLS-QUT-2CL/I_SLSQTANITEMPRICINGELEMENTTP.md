@@ -31,36 +31,36 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotation` | `SlsQtanItemPricingElement.SalesQuotation` |
-| key `SalesQuotationItem` | `SlsQtanItemPricingElement.SalesQuotationItem` |
-| key `PricingProcedureStep` | `SlsQtanItemPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `SlsQtanItemPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `SlsQtanItemPricingElement.ConditionApplication` |
-| `ConditionType` | `SlsQtanItemPricingElement.ConditionType` |
-| `ConditionTypeName` | `SlsQtanItemPricingElement.ConditionTypeName` |
-| `ConditionCalculationType` | `SlsQtanItemPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `SlsQtanItemPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `SlsQtanItemPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `SlsQtanItemPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `SlsQtanItemPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `SlsQtanItemPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `SlsQtanItemPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `SlsQtanItemPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `SlsQtanItemPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `SlsQtanItemPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `SlsQtanItemPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `SlsQtanItemPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `SlsQtanItemPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `SlsQtanItemPricingElement.ConditionInactiveReason` |
-| `ConditionOrigin` | `SlsQtanItemPricingElement.ConditionOrigin` |
-| `SalesQuotationType` | `SlsQtanItemPricingElement.SalesQuotationType` |
-| `SalesOrganization` | `SlsQtanItemPricingElement.SalesOrganization` |
-| `DistributionChannel` | `SlsQtanItemPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `SlsQtanItemPricingElement.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesQuotation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |
+| `SalesQuotationItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `SalesQuotationType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesQuotation` | | ✓ | | |
 
 ## Source Code
 

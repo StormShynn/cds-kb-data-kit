@@ -29,67 +29,67 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| key `ScheduleLine` | `ScheduleLine` |
-| key `ReservationItem` | `ReservationItem` |
-| key `RecordType` | `RecordType` |
-| `Reservation` | `Reservation` |
-| `Material` | `Material` |
-| `BaseUnit` | `BaseUnit` |
-| `RequiredQuantity` | `RequiredQuantity` |
-| `RequirementDate` | `RequirementDate` |
-| `RequirementTime` | `RequirementTime` |
-| `Plant` | `Plant` |
-| `LatestRequirementDate` | `LatestRequirementDate` |
-| `OrderLevelValue` | `OrderLevelValue` |
-| `OrderPathValue` | `OrderPathValue` |
-| `BillOfMaterialItemNumber` | `BillOfMaterialItemNumber` |
-| `SortField` | `SortField` |
-| `MatlCompFreeDefinedAttribute` | `MatlCompFreeDefinedAttribute` |
-| `BOMItemCategory` | `BOMItemCategory` |
-| `MaterialComponentIsPhantomItem` | `MaterialComponentIsPhantomItem` |
-| `IsBulkMaterialComponent` | `IsBulkMaterialComponent` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `InventorySpecialStockValnType` | `InventorySpecialStockValnType` |
-| `IsMaterialProvision` | `IsMaterialProvision` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `ReservationIsFinallyIssued` | `ReservationIsFinallyIssued` |
-| `QuantityInEntryUnit` | `QuantityInEntryUnit` |
-| `EntryUnit` | `EntryUnit` |
-| `MaterialQtyToBaseQtyNmrtr` | `MaterialQtyToBaseQtyNmrtr` |
-| `MaterialQtyToBaseQtyDnmntr` | `MaterialQtyToBaseQtyDnmntr` |
-| `WithdrawnQuantity` | `WithdrawnQuantity` |
-| `QuantityIsFixed` | `QuantityIsFixed` |
-| `ComponentScrapInPercent` | `ComponentScrapInPercent` |
-| `OperationScrapInPercent` | `OperationScrapInPercent` |
-| `IsNetScrap` | `IsNetScrap` |
-| `LeadTimeOffset` | `LeadTimeOffset` |
-| `QuantityDistributionKey` | `QuantityDistributionKey` |
-| `MaterialRevisionLevel` | `MaterialRevisionLevel` |
-| `MaterialCompIsVariableSized` | `MaterialCompIsVariableSized` |
-| `VariableSizeItemQuantity` | `VariableSizeItemQuantity` |
-| `VariableSizeComponentUnit` | `VariableSizeComponentUnit` |
-| `VariableSizeComponentQuantity` | `VariableSizeComponentQuantity` |
-| `UnitOfMeasureForSize1To3` | `UnitOfMeasureForSize1To3` |
-| `Size1` | `Size1` |
-| `Size2` | `Size2` |
-| `Size3` | `Size3` |
-| `FormulaKey` | `FormulaKey` |
-| `StorageLocation` | `StorageLocation` |
-| `ProductionSupplyArea` | `ProductionSupplyArea` |
-| `Batch` | `Batch` |
-| `BOMItemDescription` | `BOMItemDescription` |
-| `BOMItemText2` | `BOMItemText2` |
-| `ChangeNumber` | `ChangeNumber` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_SchedgLine` | *Association* |
-| `_SchedgAgrmtItm` | *Association* |
-| `_PurSchedgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `ReservationItem` | ✓ | |  |  |
+| `RecordType` | ✓ | |  |  |
+| `Reservation` |  | |  |  |
+| `Material` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `RequiredQuantity` |  | |  |  |
+| `RequirementDate` |  | |  |  |
+| `RequirementTime` |  | |  |  |
+| `Plant` |  | |  |  |
+| `LatestRequirementDate` |  | |  |  |
+| `OrderLevelValue` |  | |  |  |
+| `OrderPathValue` |  | |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |
+| `SortField` |  | |  |  |
+| `MatlCompFreeDefinedAttribute` |  | |  |  |
+| `BOMItemCategory` |  | |  |  |
+| `MaterialComponentIsPhantomItem` |  | |  |  |
+| `IsBulkMaterialComponent` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `IsMaterialProvision` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |
+| `QuantityInEntryUnit` |  | |  |  |
+| `EntryUnit` |  | |  |  |
+| `MaterialQtyToBaseQtyNmrtr` |  | |  |  |
+| `MaterialQtyToBaseQtyDnmntr` |  | |  |  |
+| `WithdrawnQuantity` |  | |  |  |
+| `QuantityIsFixed` |  | |  |  |
+| `ComponentScrapInPercent` |  | |  |  |
+| `OperationScrapInPercent` |  | |  |  |
+| `IsNetScrap` |  | |  |  |
+| `LeadTimeOffset` |  | |  |  |
+| `QuantityDistributionKey` |  | |  |  |
+| `MaterialRevisionLevel` |  | |  |  |
+| `MaterialCompIsVariableSized` |  | |  |  |
+| `VariableSizeItemQuantity` |  | |  |  |
+| `VariableSizeComponentUnit` |  | |  |  |
+| `VariableSizeComponentQuantity` |  | |  |  |
+| `UnitOfMeasureForSize1To3` |  | |  |  |
+| `Size1` |  | |  |  |
+| `Size2` |  | |  |  |
+| `Size3` |  | |  |  |
+| `FormulaKey` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ProductionSupplyArea` |  | |  |  |
+| `Batch` |  | |  |  |
+| `BOMItemDescription` |  | |  |  |
+| `BOMItemText2` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_SchedgLine` | | ✓ | | |
+| `_SchedgAgrmtItm` | | ✓ | | |
+| `_PurSchedgAgrmt` | | ✓ | | |
 
 ## Source Code
 

@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HandlingUnitExternalID` | `HandlingUnitExternalID` |
-| key `Warehouse` | `Warehouse` |
-| key `StockItemUUID` | `StockItemUUID` |
-| `HandlingUnitItem` | `HandlingUnitItem` |
-| `HandlingUnitTypeOfContent` | `HandlingUnitTypeOfContent` |
-| `HandlingUnitNestedExternalID` | `HandlingUnitNestedExternalID` |
-| `HandlingUnitReferenceDocument` | `HandlingUnitReferenceDocument` |
-| `HandlingUnitRefDocumentItem` | `HandlingUnitRefDocumentItem` |
-| `HandlingUnitQuantity` | `HandlingUnitQuantity` |
-| `HandlingUnitQuantityUnit` | `HandlingUnitQuantityUnit` |
-| `HandlingUnitAltUnitOfMeasure` | `HandlingUnitAltUnitOfMeasure` |
-| `Material` | `Material` |
-| `Batch` | `Batch` |
-| `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `ShelfLifeExpirationDate` | `ShelfLifeExpirationDate` |
-| `HandlingUnitGoodsReceiptDate` | `HandlingUnitGoodsReceiptDate` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `HandlingUnitNrOfAuxPackgMat` | `HandlingUnitNrOfAuxPackgMat` |
-| `HandlingUnitNumberOfSerialNumb` | `HandlingUnitNumberOfSerialNumb` |
-| `SerialNumberProfile` | `SerialNumberProfile` |
-| `SpecialStockIdfgSalesOrder` | `SpecialStockIdfgSalesOrder` |
-| `SpecialStockIdfgSalesOrderItem` | `SpecialStockIdfgSalesOrderItem` |
-| `_HandlingUnit` | *Association* |
-| `_HandlingUnitItemSerialNumber` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HandlingUnitExternalID` | ✓ | |  |  |
+| `Warehouse` | ✓ | |  |  |
+| `StockItemUUID` | ✓ | |  |  |
+| `HandlingUnitItem` |  | |  |  |
+| `HandlingUnitTypeOfContent` |  | |  |  |
+| `HandlingUnitNestedExternalID` |  | |  |  |
+| `HandlingUnitReferenceDocument` |  | |  |  |
+| `HandlingUnitRefDocumentItem` |  | |  |  |
+| `HandlingUnitQuantity` |  | |  |  |
+| `HandlingUnitQuantityUnit` |  | |  |  |
+| `HandlingUnitAltUnitOfMeasure` |  | |  |  |
+| `Material` |  | |  |  |
+| `Batch` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |
+| `HandlingUnitGoodsReceiptDate` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `HandlingUnitNrOfAuxPackgMat` |  | |  |  |
+| `HandlingUnitNumberOfSerialNumb` |  | |  |  |
+| `SerialNumberProfile` |  | |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
+| `_HandlingUnit` | | ✓ | | |
+| `_HandlingUnitItemSerialNumber` | | ✓ | | |
 
 ## Source Code
 

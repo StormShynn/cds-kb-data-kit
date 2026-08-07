@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcessOrder` | `ProcessOrder` |
-| key `ProcessOrderItem` | `ProcessOrderItem` |
-| key `SerialNumber` | `SerialNumber.SerialNumber` |
-| `Product` | `Product` |
-| `ProductionPlant` | `ProductionPlant` |
-| `ManufacturingOrderCategory` | `ManufacturingOrderCategory` |
-| `ProcessOrderType` | `ProcessOrderType` |
-| `SerialNumberProfile` | `SerialNumberProfile` |
-| `_Item` | *Association* |
-| `_Order` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcessOrder` | ✓ | |  |  |
+| `ProcessOrderItem` | ✓ | |  |  |
+| `SerialNumber` | ✓ | |  |  |
+| `Product` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ProcessOrderType` |  | |  |  |
+| `SerialNumberProfile` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Order` | | ✓ | | |
 
 ## Source Code
 

@@ -27,42 +27,42 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConfirmationGroup` | `pph_rueck` |
-| `OrderType` | `manufacturingordertype` |
-| `OrderID` | `manufacturingorder` |
-| `OrderItem` | `manufacturingorderitem` |
-| `ManufacturingOrderCategory` | `manufacturingordercategory` |
-| `Material` | `matnr` |
-| `Plant` | `werks_d` |
-| `Reservation` | `rsnum` |
-| `ReservationItem` | `nsdm_rspos` |
-| `StorageLocation` | `storagelocation` |
-| `Batch` | `charg_d` |
-| `InventoryValuationType` | `pph_bwtar` |
-| `GoodsMovementType` | `pph_bwart` |
-| `GoodsMovementReasonCode` | `mb_grbew` |
-| `GoodsMovementRefDocType` | `nsdm_kzbew` |
-| `InventoryUsabilityCode` | `nsdm_insmk` |
-| `InventorySpecialStockType` | `nsdm_spcl_stock_type` |
-| `SalesOrder` | `co_kdauf` |
-| `SalesOrderItem` | `co_kdpos` |
-| `WBSElementExternalID` | `vdm_ps_posid` |
-| `Supplier` | `lifnr` |
-| `Customer` | `kunnr` |
-| `ReservationIsFinallyIssued` | `boolean` |
-| `IsCompletelyDelivered` | `boolean` |
-| `ShelfLifeExpirationDate` | `vfdat` |
-| `ManufactureDate` | `hsdat` |
-| `StorageType` | `lgtyp` |
-| `StorageBin` | `lgpla` |
-| `EWMWarehouse` | `/scwm/lgnum` |
-| `EWMStorageBin` | `/scwm/lgpla` |
-| `EntryUnit` | `erfme` |
-| `EntryUnitISOCode` | `isocd_unit` |
-| `EntryUnitSAPCode` | `meinsint` |
-| `QuantityInEntryUnit` | `pph_erfmg` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfirmationGroup` |  | |  | `pph_rueck` |
+| `OrderType` |  | |  | `manufacturingordertype` |
+| `OrderID` |  | |  | `manufacturingorder` |
+| `OrderItem` |  | |  | `manufacturingorderitem` |
+| `ManufacturingOrderCategory` |  | |  | `manufacturingordercategory` |
+| `Material` |  | |  | `matnr` |
+| `Plant` |  | |  | `werks_d` |
+| `Reservation` |  | |  | `rsnum` |
+| `ReservationItem` |  | |  | `nsdm_rspos` |
+| `StorageLocation` |  | |  | `storagelocation` |
+| `Batch` |  | |  | `charg_d` |
+| `InventoryValuationType` |  | |  | `pph_bwtar` |
+| `GoodsMovementType` |  | |  | `pph_bwart` |
+| `GoodsMovementReasonCode` |  | |  | `mb_grbew` |
+| `GoodsMovementRefDocType` |  | |  | `nsdm_kzbew` |
+| `InventoryUsabilityCode` |  | |  | `nsdm_insmk` |
+| `InventorySpecialStockType` |  | |  | `nsdm_spcl_stock_type` |
+| `SalesOrder` |  | |  | `co_kdauf` |
+| `SalesOrderItem` |  | |  | `co_kdpos` |
+| `WBSElementExternalID` |  | |  | `vdm_ps_posid` |
+| `Supplier` |  | |  | `lifnr` |
+| `Customer` |  | |  | `kunnr` |
+| `ReservationIsFinallyIssued` |  | |  | `boolean` |
+| `IsCompletelyDelivered` |  | |  | `boolean` |
+| `ShelfLifeExpirationDate` |  | |  | `vfdat` |
+| `ManufactureDate` |  | |  | `hsdat` |
+| `StorageType` |  | |  | `lgtyp` |
+| `StorageBin` |  | |  | `lgpla` |
+| `EWMWarehouse` |  | |  | `/scwm/lgnum` |
+| `EWMStorageBin` |  | |  | `/scwm/lgpla` |
+| `EntryUnit` |  | |  | `erfme` |
+| `EntryUnitISOCode` |  | |  | `isocd_unit` |
+| `EntryUnitSAPCode` |  | |  | `meinsint` |
+| `QuantityInEntryUnit` |  | |  | `pph_erfmg` |
 
 ## Source Code
 

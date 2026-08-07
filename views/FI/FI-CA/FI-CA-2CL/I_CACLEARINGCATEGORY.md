@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAClearingCategory` | `vertyp` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAClearingCategory` | ✓ | |  | `vertyp` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

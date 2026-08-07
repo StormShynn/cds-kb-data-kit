@@ -28,55 +28,55 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `PurchaseContract` |
-| key `PurchaseContractItem` | `PurchaseContractItem` |
-| key `AccountAssignmentNumber` | `AccountAssignmentNumber` |
-| `CostCenter` | `CostCenter` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `Quantity` | `Quantity` |
-| `OrderQuantityUnit` | `_PurchaseContractItemAPI01.OrderQuantityUnit` |
-| `MultipleAcctAssgmtDistrPercent` | `MultipleAcctAssgmtDistrPercent` |
-| `PurgDocNetAmount` | `PurgDocNetAmount` |
-| `DocumentCurrency` | `_PurchaseContractAPI01.DocumentCurrency` |
-| `IsDeleted` | `IsDeleted` |
-| `GLAccount` | `GLAccount` |
-| `BusinessArea` | `BusinessArea` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `FixedAsset` | `FixedAsset` |
-| `OrderID` | `OrderID` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `ControllingArea` | `ControllingArea` |
-| `CostObject` | `CostObject` |
-| `ProfitCenter` | `ProfitCenter` |
-| `WBSElementInternalID` | `cast( WBSElementInternalID_2 as ps_psp_pnr )` |
-| `WBSElementInternalID_2` | `WBSElementInternalID_2` |
-| `CommitmentItem` | `CommitmentItem` |
-| `CommitmentItemShortID` | `CommitmentItemShortID` |
-| `FunctionalArea` | `FunctionalArea` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `RealEstateObject` | `cast( _RealEstateObject.REInternalFinNumber as imkey )` |
-| `REInternalFinNumber` | `_RealEstateObject.REInternalFinNumber` |
-| `PartnerAccountNumber` | `PartnerAccountNumber` |
-| `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `SettlementReferenceDate` | `SettlementReferenceDate` |
-| `TaxCode` | `TaxCode` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `NonDeductibleInputTaxAmount` | `NonDeductibleInputTaxAmount` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `GrantID` | `GrantID` |
-| `BudgetPeriod` | `BudgetPeriod` |
-| `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| `FundsCenter` | `FundsCenter` |
-| `BusinessProcess` | `BusinessProcess` |
-| `_PurchaseContractAPI01` | *Association* |
-| `_PurchaseContractItemAPI01` | *Association* |
-| `_RealEstateObject` | *Association* |
-| `_CommitmentItemShortID` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `AccountAssignmentNumber` | ✓ | |  |  |
+| `CostCenter` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `OrderQuantityUnit` |  | | `_PurchaseContractItemAPI01` | `OrderQuantityUnit` |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
+| `PurgDocNetAmount` |  | |  |  |
+| `DocumentCurrency` |  | | `_PurchaseContractAPI01` | `DocumentCurrency` |
+| `IsDeleted` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `WBSElementInternalID` |  | |  | `cast( WBSElementInternalID_2 as ps_psp_pnr )` |
+| `WBSElementInternalID_2` |  | |  |  |
+| `CommitmentItem` |  | |  |  |
+| `CommitmentItemShortID` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `RealEstateObject` |  | |  | `cast( _RealEstateObject.REInternalFinNumber as imkey )` |
+| `REInternalFinNumber` |  | | `_RealEstateObject` | `REInternalFinNumber` |
+| `PartnerAccountNumber` |  | |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |
+| `SettlementReferenceDate` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `_PurchaseContractAPI01` | | ✓ | | |
+| `_PurchaseContractItemAPI01` | | ✓ | | |
+| `_RealEstateObject` | | ✓ | | |
+| `_CommitmentItemShortID` | | ✓ | | |
 
 ## Associations
 

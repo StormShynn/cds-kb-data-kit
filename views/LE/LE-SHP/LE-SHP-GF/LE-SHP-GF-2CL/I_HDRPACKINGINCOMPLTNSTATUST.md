@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HeaderPackingIncompletionSts` | `statu` |
-| key `Language` | `spras` |
-| `HdrPackingIncompltnStatusDesc` | `bezei` |
-| `_HeaderPackingIncompletionSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HeaderPackingIncompletionSts` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `HdrPackingIncompltnStatusDesc` |  | |  | `bezei` |
+| `_HeaderPackingIncompletionSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ABAPObjectType` | `object.object` |
-| key `ABAPObjectName` | `object.obj_name` |
-| `ABAPCloudCustomObjectCategory` | `case software_component.comp_type when cast(ARS_SOFTWARE_COMPONENT_TYPE.#key_user_extensibility as relc_type) then CUSTOM_OBJECT_CATEGORY.#key_user_extensibility else CUSTOM_OBJECT_CATEGORY.#developer_extensibility end` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ABAPObjectType` | ✓ | |  | `object` |
+| `ABAPObjectName` | ✓ | |  | `obj_name` |
+| `ABAPCloudCustomObjectCategory` |  | |  | `case software_component.comp_type when cast(ARS_SOFTWARE_COMPONENT_TYPE.#key_user_extensibility as relc_type) then CUSTOM_OBJECT_CATEGORY.#key_user_extensibility else CUSTOM_OBJECT_CATEGORY.#developer_extensibility end` |
 
 ## Source Code
 

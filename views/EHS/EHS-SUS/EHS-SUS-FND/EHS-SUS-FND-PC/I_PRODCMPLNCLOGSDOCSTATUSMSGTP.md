@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdCmplncLogsDocStatusMsgUUID` | `ProdCmplncLogsDocStatusMsgUUID` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ProdCmplncLogsDocumentUUID` | `ProdCmplncLogsDocumentUUID` |
-| `ProdCmplncLogsDocumentStage` | `ProdCmplncLogsDocumentStage` |
-| `ProdCmplncLogsDocumentItem` | `ProdCmplncLogsDocumentItem` |
-| `ProdCmplncLogsDocumentApplArea` | `ProdCmplncLogsDocumentApplArea` |
-| `ProdCmplncLogsDocApplAreaCntxt` | `ProdCmplncLogsDocApplAreaCntxt` |
-| `SystemMessageIdentification` | `SystemMessageIdentification` |
-| `SystemMessageType` | `SystemMessageType` |
-| `SystemMessageNumber` | `SystemMessageNumber` |
-| `SystemMessageVariable1` | `SystemMessageVariable1` |
-| `SystemMessageVariable2` | `SystemMessageVariable2` |
-| `SystemMessageVariable3` | `SystemMessageVariable3` |
-| `SystemMessageVariable4` | `SystemMessageVariable4` |
-| `_Document` | *Association* |
-| `_Item` | *Association* |
-| `_Stage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocStatusMsgUUID` | ✓ | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ProdCmplncLogsDocumentUUID` |  | |  |  |
+| `ProdCmplncLogsDocumentStage` |  | |  |  |
+| `ProdCmplncLogsDocumentItem` |  | |  |  |
+| `ProdCmplncLogsDocumentApplArea` |  | |  |  |
+| `ProdCmplncLogsDocApplAreaCntxt` |  | |  |  |
+| `SystemMessageIdentification` |  | |  |  |
+| `SystemMessageType` |  | |  |  |
+| `SystemMessageNumber` |  | |  |  |
+| `SystemMessageVariable1` |  | |  |  |
+| `SystemMessageVariable2` |  | |  |  |
+| `SystemMessageVariable3` |  | |  |  |
+| `SystemMessageVariable4` |  | |  |  |
+| `_Document` | | ✓ | | |
+| `_Item` | | ✓ | | |
+| `_Stage` | | ✓ | | |
 
 ## Source Code
 

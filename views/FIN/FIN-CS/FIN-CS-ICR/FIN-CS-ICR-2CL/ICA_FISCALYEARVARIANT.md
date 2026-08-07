@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `mandt` | `mandt` |
-| `periv` | `periv` |
-| `xkale` | `xkale` |
-| `xjabh` | `xjabh` |
-| `anzbp` | `anzbp` |
-| `anzsp` | `anzsp` |
-| `xweek` | `xweek` |
-| `fyofb` | `fyofb` |
-| `fyofe` | `fyofe` |
-| `xweekquart` | `xweekquart` |
-| `xperiodquart` | `xperiodquart` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `mandt` |  | |  |  |
+| `periv` |  | |  |  |
+| `xkale` |  | |  |  |
+| `xjabh` |  | |  |  |
+| `anzbp` |  | |  |  |
+| `anzsp` |  | |  |  |
+| `xweek` |  | |  |  |
+| `fyofb` |  | |  |  |
+| `fyofe` |  | |  |  |
+| `xweekquart` |  | |  |  |
+| `xperiodquart` |  | |  |  |
 
 ## Source Code
 

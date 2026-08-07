@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CalendarDate` | `scal_tt_date.calendardate` |
-| `CalendarYear` | `scal_tt_date.calendaryear` |
-| `CalendarQuarter` | `scal_tt_date.calendarquarter` |
-| `CalendarMonth` | `scal_tt_date.calendarmonth` |
-| `CalendarWeek` | `scal_tt_date.calendarweek` |
-| `CalendarDay` | `scal_tt_date.calendarday` |
-| `YearMonth` | `scal_tt_date.yearmonth` |
-| `YearQuarter` | `scal_tt_date.yearquarter` |
-| `YearWeek` | `scal_tt_date.yearweek` |
-| `WeekDay` | `scal_tt_date.weekday` |
-| `FirstDayOfWeekDate` | `scal_tt_date.firstdayofweekdate` |
-| `FirstDayOfMonthDate` | `scal_tt_date.firstdayofmonthdate` |
-| `LastDayOfMonthDate` | `scal_tt_date.lastdayofmonthdate` |
-| `CalendarDayOfYear` | `scal_tt_date.calendardayofyear` |
-| `YearDay` | `scal_tt_date.yearday` |
-| `_CalendarMonth` | *Association* |
-| `_CalendarQuarter` | *Association* |
-| `_CalendarYear` | *Association* |
-| `_WeekDay` | *Association* |
-| `_YearMonth` | *Association* |
-| `_YearWeek` | *Association* |
-| `_CalendarWeek` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CalendarDate` | ✓ | |  | `calendardate` |
+| `CalendarYear` |  | |  | `calendaryear` |
+| `CalendarQuarter` |  | |  | `calendarquarter` |
+| `CalendarMonth` |  | |  | `calendarmonth` |
+| `CalendarWeek` |  | |  | `calendarweek` |
+| `CalendarDay` |  | |  | `calendarday` |
+| `YearMonth` |  | |  | `yearmonth` |
+| `YearQuarter` |  | |  | `yearquarter` |
+| `YearWeek` |  | |  | `yearweek` |
+| `WeekDay` |  | |  | `weekday` |
+| `FirstDayOfWeekDate` |  | |  | `firstdayofweekdate` |
+| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` |
+| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` |
+| `CalendarDayOfYear` |  | |  | `calendardayofyear` |
+| `YearDay` |  | |  | `yearday` |
+| `_CalendarMonth` | | ✓ | | |
+| `_CalendarQuarter` | | ✓ | | |
+| `_CalendarYear` | | ✓ | | |
+| `_WeekDay` | | ✓ | | |
+| `_YearMonth` | | ✓ | | |
+| `_YearWeek` | | ✓ | | |
+| `_CalendarWeek` | | ✓ | | |
 
 ## Associations
 

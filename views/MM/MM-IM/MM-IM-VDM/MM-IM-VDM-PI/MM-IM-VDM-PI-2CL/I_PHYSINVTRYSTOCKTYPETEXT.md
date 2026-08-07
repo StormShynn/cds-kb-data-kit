@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `PhysicalInventoryStockType` | `bstar` |
-| `PhysicalInventoryStockTypeName` | `cast ( btext as pi_stock_type_name preserving type )` |
-| `_Language` | *Association* |
-| `_PhysicalInventoryStockType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `PhysicalInventoryStockType` | ✓ | |  | `bstar` |
+| `PhysicalInventoryStockTypeName` |  | |  | `cast ( btext as pi_stock_type_name preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PhysicalInventoryStockType` | | ✓ | | |
 
 ## Associations
 

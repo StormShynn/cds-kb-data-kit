@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `Plant` |
-| key `Capacity` | `Capacity` |
-| `CapacityInternalID` | `CapacityInternalID` |
-| `_Text` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `Capacity` | ✓ | |  |  |
+| `CapacityInternalID` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Source Code
 

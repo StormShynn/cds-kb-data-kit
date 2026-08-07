@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanContainer` | `I_KanbanContainerBatchQuantity.KanbanContainer` |
-| key `Batch` | `I_KanbanContainerBatchQuantity.Batch` |
-| `BaseUnit` | `I_KanbanContainerBatchQuantity.BaseUnit` |
-| `ActualQuantityInBaseUnit` | `I_KanbanContainerBatchQuantity.ActualQuantityInBaseUnit` |
-| `Plant` | `I_KanbanContainerBatchQuantity.Plant` |
-| `Product` | `I_KanbanContainerBatchQuantity.Product` |
-| `Supplier` | `I_KanbanContainerBatchQuantity.Supplier` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanContainer` | ✓ | |  |  |
+| `Batch` | ✓ | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ActualQuantityInBaseUnit` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Product` |  | |  |  |
+| `Supplier` |  | |  |  |
 
 ## Source Code
 

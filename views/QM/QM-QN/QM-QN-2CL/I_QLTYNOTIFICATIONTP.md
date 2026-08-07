@@ -28,59 +28,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `QualityNotification` |
-| `MasterLanguage` | `MasterLanguage` |
-| `NotificationOrigin` | `NotificationOrigin` |
-| `NotificationType` | `NotificationType` |
-| `NotifProcessingPhase` | `NotifProcessingPhase` |
-| `NotificationText` | `NotificationText` |
-| `NotificationPriorityType` | `NotificationPriorityType` |
-| `NotificationPriority` | `NotificationPriority` |
-| `NotificationStatusObject` | `NotificationStatusObject` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `IsDeleted` | `IsDeleted` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `NotificationCatalog` | `NotificationCatalog` |
-| `NotificationCodeGroup` | `NotificationCodeGroup` |
-| `NotificationCodeID` | `NotificationCodeID` |
-| `CreationDate` | `CreationDate` |
-| `LastChangedDate` | `LastChangedDate` |
-| `NotificationReportingDate` | `NotificationReportingDate` |
-| `NotificationCompletionDate` | `NotificationCompletionDate` |
-| `NotificationRequiredStartDate` | `NotificationRequiredStartDate` |
-| `NotificationRequiredStartTime` | `NotificationRequiredStartTime` |
-| `NotificationRequiredEndDate` | `NotificationRequiredEndDate` |
-| `NotificationRequiredEndTime` | `NotificationRequiredEndTime` |
-| `NotificationTimeZone` | `NotificationTimeZone` |
-| `Supplier` | `Supplier` |
-| `Customer` | `Customer` |
-| `Material` | `Material` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Plant` | `Plant` |
-| `PurchasingDocument` | `PurchasingDocument` |
-| `PurchasingDocumentItem` | `PurchasingDocumentItem` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `ActiveDivision` | `ActiveDivision` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `MainWorkCenterInternalID` | `MainWorkCenterInternalID` |
-| `MainWorkCenterPlant` | `MainWorkCenterPlant` |
-| `InspectionLot` | `InspectionLot` |
-| `Batch` | `Batch` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `MaterialDocument` | `MaterialDocument` |
-| `MaterialDocumentItem` | `MaterialDocumentItem` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_QltyNotificationLongText` | *Association* |
-| `_QltyNotificationPartner` | *Association* |
-| `_QualityNotificationItem` | *Association* |
-| `_QltyNotificationTask` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  |  |
+| `MasterLanguage` |  | |  |  |
+| `NotificationOrigin` |  | |  |  |
+| `NotificationType` |  | |  |  |
+| `NotifProcessingPhase` |  | |  |  |
+| `NotificationText` |  | |  |  |
+| `NotificationPriorityType` |  | |  |  |
+| `NotificationPriority` |  | |  |  |
+| `NotificationStatusObject` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `NotificationCatalog` |  | |  |  |
+| `NotificationCodeGroup` |  | |  |  |
+| `NotificationCodeID` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedDate` |  | |  |  |
+| `NotificationReportingDate` |  | |  |  |
+| `NotificationCompletionDate` |  | |  |  |
+| `NotificationRequiredStartDate` |  | |  |  |
+| `NotificationRequiredStartTime` |  | |  |  |
+| `NotificationRequiredEndDate` |  | |  |  |
+| `NotificationRequiredEndTime` |  | |  |  |
+| `NotificationTimeZone` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `ActiveDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |
+| `MainWorkCenterPlant` |  | |  |  |
+| `InspectionLot` |  | |  |  |
+| `Batch` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `MaterialDocumentItem` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_QltyNotificationLongText` | | ✓ | | |
+| `_QltyNotificationPartner` | | ✓ | | |
+| `_QualityNotificationItem` | | ✓ | | |
+| `_QltyNotificationTask` | | ✓ | | |
 
 ## Source Code
 

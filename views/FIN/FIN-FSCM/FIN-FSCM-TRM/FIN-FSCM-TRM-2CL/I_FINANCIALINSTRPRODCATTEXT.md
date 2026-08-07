@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `FinancialInstrProductCategory` | `sanlf` |
-| `FinInstrProductCategoryName` | `ltx` |
-| `_Language` | *Association* |
-| `_FinancialInstrProdCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlf` |
+| `FinInstrProductCategoryName` |  | |  | `ltx` |
+| `_Language` | | ✓ | | |
+| `_FinancialInstrProdCat` | | ✓ | | |
 
 ## Associations
 

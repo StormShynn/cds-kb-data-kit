@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `BusinessPartnerGrouping` | `bu_group` |
-| `BusinessPartnerGroupingText` | `txt40` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BusinessPartnerGrouping` | ✓ | |  | `bu_group` |
+| `BusinessPartnerGroupingText` |  | |  | `txt40` |
 
 ## Source Code
 

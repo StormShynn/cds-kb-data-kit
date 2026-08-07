@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesPlanUUID` | `SalesPlanUUID` |
-| `SalesPlan` | `SalesPlan` |
-| `SalesPlanVersion` | `SalesPlanVersion` |
-| `SalesPlanVersionDescription` | `SalesPlanVersionDescription` |
-| `CreatedByUser` | `CreatedByUser` |
-| `UserDescription` | `cast( _CreatedByUser.UserDescription as sp_username preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesPlanUUID` | ✓ | |  |  |
+| `SalesPlan` |  | |  |  |
+| `SalesPlanVersion` |  | |  |  |
+| `SalesPlanVersionDescription` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `UserDescription` |  | |  | `cast( _CreatedByUser.UserDescription as sp_username preserving type )` |
 
 ## Source Code
 

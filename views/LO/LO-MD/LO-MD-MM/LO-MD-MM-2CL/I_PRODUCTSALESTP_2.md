@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| `SalesStatus` | `SalesStatus` |
-| `SalesStatusValidityDate` | `SalesStatusValidityDate` |
-| `TransportationGroup` | `TransportationGroup` |
-| `PackagingProductType` | `PackagingProductType` |
-| `AllowedPackagingWeightQty` | `AllowedPackagingWeightQty` |
-| `AllowedPackagingWeightQtyUnit` | `AllowedPackagingWeightQtyUnit` |
-| `AllowedPackagingVolumeQty` | `AllowedPackagingVolumeQty` |
-| `AllowedPackagingVolumeQtyUnit` | `AllowedPackagingVolumeQtyUnit` |
-| `MaximumLevelByVolumeInPercent` | `MaximumLevelByVolumeInPercent` |
-| `ExcessWeightToleranceValue` | `ExcessWeightToleranceValue` |
-| `PackggProductIsClosedPackaging` | `PackggProductIsClosedPackaging` |
-| `ProductStackingFactor` | `ProductStackingFactor` |
-| `ProdExcessVolumeToleranceValue` | `ProdExcessVolumeToleranceValue` |
-| `ProductTaxClassification` | `ProductTaxClassification` |
-| `PricingReferenceProduct` | `PricingReferenceProduct` |
-| `LoadingGroup` | `LoadingGroup` |
-| `StoreSaleEndDate` | `StoreSaleEndDate` |
-| `DistributionCenterSaleEndDate` | `DistributionCenterSaleEndDate` |
-| `StoreSaleStartDate` | `StoreSaleStartDate` |
-| `DistrCenterSaleStartDate` | `DistrCenterSaleStartDate` |
-| `_Product` | *Association* |
-| `_TransportationGroupText` | *Association* |
-| `_ProductRetail` | *Association* |
-| `_TaxClass` | *Association* |
-| `_PricingReferenceProductText` | *Association* |
-| `_WeightText` | *Association* |
-| `_VolumeText` | *Association* |
-| `_ProductDescription_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `SalesStatus` |  | |  |  |
+| `SalesStatusValidityDate` |  | |  |  |
+| `TransportationGroup` |  | |  |  |
+| `PackagingProductType` |  | |  |  |
+| `AllowedPackagingWeightQty` |  | |  |  |
+| `AllowedPackagingWeightQtyUnit` |  | |  |  |
+| `AllowedPackagingVolumeQty` |  | |  |  |
+| `AllowedPackagingVolumeQtyUnit` |  | |  |  |
+| `MaximumLevelByVolumeInPercent` |  | |  |  |
+| `ExcessWeightToleranceValue` |  | |  |  |
+| `PackggProductIsClosedPackaging` |  | |  |  |
+| `ProductStackingFactor` |  | |  |  |
+| `ProdExcessVolumeToleranceValue` |  | |  |  |
+| `ProductTaxClassification` |  | |  |  |
+| `PricingReferenceProduct` |  | |  |  |
+| `LoadingGroup` |  | |  |  |
+| `StoreSaleEndDate` |  | |  |  |
+| `DistributionCenterSaleEndDate` |  | |  |  |
+| `StoreSaleStartDate` |  | |  |  |
+| `DistrCenterSaleStartDate` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_TransportationGroupText` | | ✓ | | |
+| `_ProductRetail` | | ✓ | | |
+| `_TaxClass` | | ✓ | | |
+| `_PricingReferenceProductText` | | ✓ | | |
+| `_WeightText` | | ✓ | | |
+| `_VolumeText` | | ✓ | | |
+| `_ProductDescription_2` | | ✓ | | |
 
 ## Source Code
 

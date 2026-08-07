@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| key `CentralPurchaseContractItem` | `CentralPurchaseContractItem` |
-| key `DistributionKey` | `DistributionKey` |
-| key `PartnerCounter` | `PartnerCounter` |
-| `PartnerFunction` | `PartnerFunction` |
-| `ExtPlantForPurg` | `ExtPlantForPurg` |
-| `Supplier` | `Supplier` |
-| `SupplierSubrange` | `SupplierSubrange` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `_CntrlPurContract` | *Association* |
-| `_CntrlPurContrItmDist` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `CentralPurchaseContractItem` | ✓ | |  |  |
+| `DistributionKey` | ✓ | |  |  |
+| `PartnerCounter` | ✓ | |  |  |
+| `PartnerFunction` |  | |  |  |
+| `ExtPlantForPurg` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierSubrange` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `_CntrlPurContract` | | ✓ | | |
+| `_CntrlPurContrItmDist` | | ✓ | | |
 
 ## Source Code
 

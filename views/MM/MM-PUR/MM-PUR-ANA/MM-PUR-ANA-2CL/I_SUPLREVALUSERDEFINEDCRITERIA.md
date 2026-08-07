@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalUserDefinedCriteria` | `criterion_id` |
-| `CreatedByUser` | `createdby` |
-| `CreationDate` | `createdon` |
-| `LastChangedByUserDescription` | `lastchangeby` |
-| `LastChangeDate` | `lastchangeon` |
-| `WeightingFactor` | `weighting` |
-| `_userdefinedcriteriaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalUserDefinedCriteria` | ✓ | |  | `criterion_id` |
+| `CreatedByUser` |  | |  | `createdby` |
+| `CreationDate` |  | |  | `createdon` |
+| `LastChangedByUserDescription` |  | |  | `lastchangeby` |
+| `LastChangeDate` |  | |  | `lastchangeon` |
+| `WeightingFactor` |  | |  | `weighting` |
+| `_userdefinedcriteriaText` | | ✓ | | |
 
 ## Associations
 

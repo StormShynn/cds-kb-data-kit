@@ -30,24 +30,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `Equipment` |
-| key `ClassInternalID` | `ClassInternalID` |
-| key `CharcInternalID` | `CharcInternalID` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `Characteristic` | `Characteristic` |
-| `CharcDataType` | `CharcDataType` |
-| `KeyDate` | `KeyDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ClassType` | `ClassType` |
-| `ClassMaintAuthGrp` | `ClassMaintAuthGrp` |
-| `ClassClassfctnAuthGrp` | `ClassClassfctnAuthGrp` |
-| `CharcMaintAuthGrp` | `CharcMaintAuthGrp` |
-| `Class` | `Class` |
-| `_Value` | *Association* |
-| `_EquipmentClass` | *Association* |
-| `_Equipment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |
+| `ClassInternalID` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `Characteristic` |  | |  |  |
+| `CharcDataType` |  | |  |  |
+| `KeyDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ClassType` |  | |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |
+| `CharcMaintAuthGrp` |  | |  |  |
+| `Class` |  | |  |  |
+| `_Value` | | ✓ | | |
+| `_EquipmentClass` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
 
 ## Source Code
 

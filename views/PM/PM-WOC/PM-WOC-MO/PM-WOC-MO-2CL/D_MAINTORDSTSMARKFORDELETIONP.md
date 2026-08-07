@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `AssgdMaintNotifIsToBeSetDel` | `abap_boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssgdMaintNotifIsToBeSetDel` |  | |  | `abap_boolean` |
 
 ## Source Code
 

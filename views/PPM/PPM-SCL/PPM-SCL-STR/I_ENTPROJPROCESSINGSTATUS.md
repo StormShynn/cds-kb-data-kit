@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcessingStatus` | `cast ( substring( domvalue_l, 1, 2 ) as /s4ppm/tv_proc_status )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_ProcessingStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcessingStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /s4ppm/tv_proc_status )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_ProcessingStatusText` | | ✓ | | |
 
 ## Source Code
 

@@ -30,47 +30,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Reservation` | `Reservation` |
-| `ReservationCreationCode` | `ReservationCreationCode` |
-| `ReservationOrigin` | `ReservationOrigin` |
-| `OrderID` | `OrderID` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `CostCenter` | `CostCenter` |
-| `ProfitCenter` | `ProfitCenter` |
-| `ProfitabilitySegment` | `ProfitabilitySegment` |
-| `ProfitabilitySegment_2` | `ProfitabilitySegment_2` |
-| `ControllingArea` | `ControllingArea` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `ReservationDate` | `ReservationDate` |
-| `IsCheckedAgainstFactoryCal` | `IsCheckedAgainstFactoryCal` |
-| `Customer` | `Customer` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `AssetNumber` | `AssetNumber` |
-| `AssetSubNumber` | `AssetSubNumber` |
-| `NetworkNumberForAcctAssgmt` | `NetworkNumberForAcctAssgmt` |
-| `IssuingOrReceivingPlant` | `IssuingOrReceivingPlant` |
-| `IssuingOrReceivingStorageLoc` | `IssuingOrReceivingStorageLoc` |
-| `ResvnVerificationCompanyCode` | `ResvnVerificationCompanyCode` |
-| `UserID` | `UserID` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_CostCenter` | *Association* |
-| `_ReservationDocumentItem` | *Association* |
-| `_WBSElementByInternalKey` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_ReservationCreationCode` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_VerificationCompanyCode` | *Association* |
-| `_Order` | *Association* |
-| `_GoodsMovementType` | *Association* |
-| `_Customer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Reservation` | ✓ | |  |  |
+| `ReservationCreationCode` |  | |  |  |
+| `ReservationOrigin` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ProfitabilitySegment` |  | |  |  |
+| `ProfitabilitySegment_2` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `ReservationDate` |  | |  |  |
+| `IsCheckedAgainstFactoryCal` |  | |  |  |
+| `Customer` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `AssetNumber` |  | |  |  |
+| `AssetSubNumber` |  | |  |  |
+| `NetworkNumberForAcctAssgmt` |  | |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  |  |
+| `ResvnVerificationCompanyCode` |  | |  |  |
+| `UserID` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_CostCenter` | | ✓ | | |
+| `_ReservationDocumentItem` | | ✓ | | |
+| `_WBSElementByInternalKey` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_ReservationCreationCode` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_VerificationCompanyCode` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_GoodsMovementType` | | ✓ | | |
+| `_Customer` | | ✓ | | |
 
 ## Associations
 

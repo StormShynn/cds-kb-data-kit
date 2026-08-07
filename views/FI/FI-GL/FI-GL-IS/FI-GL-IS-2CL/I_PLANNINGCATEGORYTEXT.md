@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlanningCategory` | `fcomc_category_t.category` |
-| key `Language` | `langu` |
-| `PlanningCategoryName` | `cast(text as fcom_category_t preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlanningCategory` | ✓ | |  | `category` |
+| `Language` | ✓ | |  | `langu` |
+| `PlanningCategoryName` |  | |  | `cast(text as fcom_category_t preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

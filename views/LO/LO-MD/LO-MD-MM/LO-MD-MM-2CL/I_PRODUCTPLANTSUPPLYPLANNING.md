@@ -31,100 +31,100 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `cast (SupplyPlanning.Product as productnumber preserving type )` |
-| key `Plant` | `SupplyPlanning.Plant` |
-| `FixedLotSizeQuantity` | `SupplyPlanning.FixedLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `SupplyPlanning.MaximumLotSizeQuantity` |
-| `MinimumLotSizeQuantity` | `SupplyPlanning.MinimumLotSizeQuantity` |
-| `LotSizeRoundingQuantity` | `SupplyPlanning.LotSizeRoundingQuantity` |
-| `LotSizingProcedure` | `SupplyPlanning.LotSizingProcedure` |
-| `MRPType` | `SupplyPlanning.MRPType` |
-| `MRPResponsible` | `SupplyPlanning.MRPResponsible` |
-| `SafetyStockQuantity` | `SupplyPlanning.SafetyStockQuantity` |
-| `MinimumSafetyStockQuantity` | `SupplyPlanning.MinimumSafetyStockQuantity` |
-| `PlanningTimeFence` | `SupplyPlanning.PlanningTimeFence` |
-| `ConsumptionValueCategory` | `SupplyPlanning.ABCIndicator` |
-| `MaximumStockQuantity` | `SupplyPlanning.MaximumStockQuantity` |
-| `ReorderThresholdQuantity` | `SupplyPlanning.ReorderThresholdQuantity` |
-| `PlannedDeliveryDurationInDays` | `SupplyPlanning.PlannedDeliveryDurationInDays` |
-| `SafetySupplyDurationInDays` | `SupplyPlanning.SafetyDuration` |
-| `PlanningStrategyGroup` | `SupplyPlanning.PlanningStrategyGroup` |
-| `TotalReplenishmentLeadTime` | `SupplyPlanning.TotalReplenishmentLeadTime` |
-| `ProcurementType` | `SupplyPlanning.ProcurementType` |
-| `ProcurementSubType` | `SupplyPlanning.ProcurementSubType` |
-| `AssemblyScrapPercent` | `SupplyPlanning.AssemblyScrapPercent` |
-| `AvailabilityCheckType` | `SupplyPlanning.AvailabilityCheckType` |
-| `GoodsReceiptDuration` | `SupplyPlanning.GoodsReceiptDuration` |
-| `PlanAndOrderDayDetermination` | `SupplyPlanning.PlanAndOrderDayDetermination` |
-| `RoundingProfile` | `SupplyPlanning.RoundingProfile` |
-| `DfltStorageLocationExtProcmt` | `SupplyPlanning.DfltStorageLocationExtProcmt` |
-| `GoodIssueProcessingDays` | `SupplyPlanning.GoodIssueProcessingDays` |
-| `ConsignmentControl` | `SupplyPlanning.ConsignmentControl` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `MRPGroup` | `SupplyPlanning.MRPGroup` |
-| `LotSizeIndependentCosts` | `SupplyPlanning.LotSizeIndependentCosts` |
-| `StorageCostsPercentageCode` | `SupplyPlanning.StorageCostsPercentageCode` |
-| `RqmtQtyRcptTaktTmeInWrkgDays` | `SupplyPlanning.RqmtQtyRcptTaktTmeInWrkgDays` |
-| `MRPPlanningCalendar` | `SupplyPlanning.MRPPlanningCalendar` |
-| `RangeOfCvrgPrflCode` | `SupplyPlanning.RangeOfCvrgPrflCode` |
-| `ProductSafetyTimeMRPRelevance` | `SupplyPlanning.IsSafetyTime` |
-| `SafetyTimePeriodProfile` | `SupplyPlanning.PerdPrflForSftyTme` |
-| `DependentRqmtMRPRelevance` | `SupplyPlanning.IsMRPDependentRqmt` |
-| `ProductServiceLevelInPercent` | `SupplyPlanning.SrvcLvl` |
-| `ProdInhProdnDurationInWorkDays` | `SupplyPlanning.InHouseProductionTime` |
-| `MRPAvailabilityType` | `SupplyPlanning.MRPAvailabilityType` |
-| `CrossProjectProduct` | `SupplyPlanning.ProductIsForCrossProject` |
-| `ProdnPlngAndControlCalendar` | `SupplyPlanning.MRPPlanningCalendar` |
-| `FollowUpProduct` | `SupplyPlanning.FollowUpProduct` |
-| `RepetitiveManufacturingIsAllwd` | `SupplyPlanning.RepetitiveManufacturingIsAllwd` |
-| `DependentRequirementsType` | `SupplyPlanning.DependentRequirementsType` |
-| `ProductIsBulkComponent` | `SupplyPlanning.IsBulkMaterialComponent` |
-| `RepetitiveManufacturingProfile` | `SupplyPlanning.RepetitiveManufacturingProfile` |
-| `BackwardCnsmpnPeriodInWorkDays` | `SupplyPlanning.BackwardCnsmpnPeriodInWorkDays` |
-| `FwdConsumptionPeriodInWorkDays` | `SupplyPlanning.FwdConsumptionPeriodInWorkDays` |
-| `ProdRqmtsConsumptionMode` | `SupplyPlanning.ProdRqmtsConsumptionMode` |
-| `ProdFcstRequirementsSplitCode` | `SupplyPlanning.ForecastRequirementsAreSplit` |
-| `EffectiveOutDate` | `SupplyPlanning.EffectiveOutDate` |
-| `MRPProfile` | `SupplyPlanning.MRPProfile` |
-| `SchedulingFloatProfile` | `SupplyPlanning.SchedulingMarginKey` |
-| `ComponentScrapInPercent` | `SupplyPlanning.ComponentScrapInPercent` |
-| `ProductDiscontinuationCode` | `SupplyPlanning.ProductIsToBeDiscontinued` |
-| `ProductRequirementsGrouping` | `SupplyPlanning.ProdRqmtsAreConsolidated` |
-| `ProductionInvtryManagedLoc` | `SupplyPlanning.ProductionInvtryManagedLoc` |
-| `ProductComponentBackflushCode` | `SupplyPlanning.MatlCompIsMarkedForBackflush` |
-| `ProposedProductSupplyArea` | `SupplyPlanning.ProposedProductSupplyArea` |
-| `PlannedOrderActionControl` | `SupplyPlanning.PlannedOrderActionControl` |
-| `ProductUnitGroup` | `SupplyPlanning.ProductUnitGroup` |
-| `MRPSafetyStockMethod` | `SupplyPlanning.MRPSafetyStockMethod` |
-| `JITProdnConfProfile` | `SupplyPlanning.JITProdnConfProfile` |
-| `Currency` | `t001.waers` |
-| `CompanyCode` | `t001k.bukrs` |
-| `ValuationArea` | `t001k.bwkey` |
-| `BaseUnit` | `_Product.BaseUnit` |
-| `_Product` | *Association* |
-| `_RangeOfCvrgPrflCode` | *Association* |
-| `_StorageCostsPercentage` | *Association* |
-| `_SafetyTimePeriodProfile` | *Association* |
-| `_AvailabilityCheckType_2` | *Association* |
-| `_ConsignmentControl` | *Association* |
-| `_MRPPlanningCalendar` | *Association* |
-| `_MRPGroup` | *Association* |
-| `_LotSizingProcedure` | *Association* |
-| `_MRPTypeText` | *Association* |
-| `_ABCIndicator` | *Association* |
-| `_DfltStorageLocationExtProcmt` | *Association* |
-| `_ProdRqmtsConsumptionMode` | *Association* |
-| `_LogisticalRoundingProfile` | *Association* |
-| `_ProdUoMGroup` | *Association* |
-| `_ProdProcurementType` | *Association* |
-| `_ProductProcmtProfile` | *Association* |
-| `_Plant` | *Association* |
-| `_PlannedOrderActionControl` | *Association* |
-| `_ProdBackflushType` | *Association* |
-| `_RepetitiveMfgProfile` | *Association* |
-| `_MRPSafetyStockMethod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast (SupplyPlanning.Product as productnumber preserving type )` |
+| `Plant` | ✓ | |  |  |
+| `FixedLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `LotSizeRoundingQuantity` |  | |  |  |
+| `LotSizingProcedure` |  | |  |  |
+| `MRPType` |  | |  |  |
+| `MRPResponsible` |  | |  |  |
+| `SafetyStockQuantity` |  | |  |  |
+| `MinimumSafetyStockQuantity` |  | |  |  |
+| `PlanningTimeFence` |  | |  |  |
+| `ConsumptionValueCategory` |  | |  | `ABCIndicator` |
+| `MaximumStockQuantity` |  | |  |  |
+| `ReorderThresholdQuantity` |  | |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |
+| `SafetySupplyDurationInDays` |  | |  | `SafetyDuration` |
+| `PlanningStrategyGroup` |  | |  |  |
+| `TotalReplenishmentLeadTime` |  | |  |  |
+| `ProcurementType` |  | |  |  |
+| `ProcurementSubType` |  | |  |  |
+| `AssemblyScrapPercent` |  | |  |  |
+| `AvailabilityCheckType` |  | |  |  |
+| `GoodsReceiptDuration` |  | |  |  |
+| `PlanAndOrderDayDetermination` |  | |  |  |
+| `RoundingProfile` |  | |  |  |
+| `DfltStorageLocationExtProcmt` |  | |  |  |
+| `GoodIssueProcessingDays` |  | |  |  |
+| `ConsignmentControl` |  | |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `MRPGroup` |  | |  |  |
+| `LotSizeIndependentCosts` |  | |  |  |
+| `StorageCostsPercentageCode` |  | |  |  |
+| `RqmtQtyRcptTaktTmeInWrkgDays` |  | |  |  |
+| `MRPPlanningCalendar` |  | |  |  |
+| `RangeOfCvrgPrflCode` |  | |  |  |
+| `ProductSafetyTimeMRPRelevance` |  | |  | `IsSafetyTime` |
+| `SafetyTimePeriodProfile` |  | |  | `PerdPrflForSftyTme` |
+| `DependentRqmtMRPRelevance` |  | |  | `IsMRPDependentRqmt` |
+| `ProductServiceLevelInPercent` |  | |  | `SrvcLvl` |
+| `ProdInhProdnDurationInWorkDays` |  | |  | `InHouseProductionTime` |
+| `MRPAvailabilityType` |  | |  |  |
+| `CrossProjectProduct` |  | |  | `ProductIsForCrossProject` |
+| `ProdnPlngAndControlCalendar` |  | |  | `MRPPlanningCalendar` |
+| `FollowUpProduct` |  | |  |  |
+| `RepetitiveManufacturingIsAllwd` |  | |  |  |
+| `DependentRequirementsType` |  | |  |  |
+| `ProductIsBulkComponent` |  | |  | `IsBulkMaterialComponent` |
+| `RepetitiveManufacturingProfile` |  | |  |  |
+| `BackwardCnsmpnPeriodInWorkDays` |  | |  |  |
+| `FwdConsumptionPeriodInWorkDays` |  | |  |  |
+| `ProdRqmtsConsumptionMode` |  | |  |  |
+| `ProdFcstRequirementsSplitCode` |  | |  | `ForecastRequirementsAreSplit` |
+| `EffectiveOutDate` |  | |  |  |
+| `MRPProfile` |  | |  |  |
+| `SchedulingFloatProfile` |  | |  | `SchedulingMarginKey` |
+| `ComponentScrapInPercent` |  | |  |  |
+| `ProductDiscontinuationCode` |  | |  | `ProductIsToBeDiscontinued` |
+| `ProductRequirementsGrouping` |  | |  | `ProdRqmtsAreConsolidated` |
+| `ProductionInvtryManagedLoc` |  | |  |  |
+| `ProductComponentBackflushCode` |  | |  | `MatlCompIsMarkedForBackflush` |
+| `ProposedProductSupplyArea` |  | |  |  |
+| `PlannedOrderActionControl` |  | |  |  |
+| `ProductUnitGroup` |  | |  |  |
+| `MRPSafetyStockMethod` |  | |  |  |
+| `JITProdnConfProfile` |  | |  |  |
+| `Currency` |  | |  | `waers` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `ValuationArea` |  | |  | `bwkey` |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |
+| `_Product` | | ✓ | | |
+| `_RangeOfCvrgPrflCode` | | ✓ | | |
+| `_StorageCostsPercentage` | | ✓ | | |
+| `_SafetyTimePeriodProfile` | | ✓ | | |
+| `_AvailabilityCheckType_2` | | ✓ | | |
+| `_ConsignmentControl` | | ✓ | | |
+| `_MRPPlanningCalendar` | | ✓ | | |
+| `_MRPGroup` | | ✓ | | |
+| `_LotSizingProcedure` | | ✓ | | |
+| `_MRPTypeText` | | ✓ | | |
+| `_ABCIndicator` | | ✓ | | |
+| `_DfltStorageLocationExtProcmt` | | ✓ | | |
+| `_ProdRqmtsConsumptionMode` | | ✓ | | |
+| `_LogisticalRoundingProfile` | | ✓ | | |
+| `_ProdUoMGroup` | | ✓ | | |
+| `_ProdProcurementType` | | ✓ | | |
+| `_ProductProcmtProfile` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_PlannedOrderActionControl` | | ✓ | | |
+| `_ProdBackflushType` | | ✓ | | |
+| `_RepetitiveMfgProfile` | | ✓ | | |
+| `_MRPSafetyStockMethod` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SubItemCategory` | `cast(sityp as fincs_subitemcategory preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SubItemCategory` | ✓ | |  | `cast(sityp as fincs_subitemcategory preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

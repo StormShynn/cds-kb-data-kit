@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumber` | `ChangeNumber` |
-| key `ChangeNumberObjectType` | `ChangeNumberObjectType` |
-| key `ObjMgmtRecdObjectInternalID` | `ObjMgmtRecdObjectInternalID` |
-| `ObjMgmtRecdObject` | `ObjMgmtRecdObject` |
-| `ObjMgmtRecdObjIsLockedForChg` | `ObjMgmtRecdObjIsLockedForChg` |
-| `ObjMgmtRecdObjRevisionLevel` | `ObjMgmtRecdObjRevisionLevel` |
-| `ObjMgmtRecdDescription` | `ObjMgmtRecdDescription` |
-| `ObjMgmtRecdObjIsPlanned` | `ObjMgmtRecdObjIsPlanned` |
-| `ObjMgmtRecdCreatedBy` | `ObjMgmtRecdCreatedBy` |
-| `ObjMgmtRecdCreationDate` | `ObjMgmtRecdCreationDate` |
-| `ObjMgmtRecdLastChangedBy` | `ObjMgmtRecdLastChangedBy` |
-| `ObjMgmtRecdLastChangedAt` | `ObjMgmtRecdLastChangedAt` |
-| `ObjMgmtRecdObjLastChangedBy` | `ObjMgmtRecdObjLastChangedBy` |
-| `ObjMgmtRecdObjLastChangedAt` | `ObjMgmtRecdObjLastChangedAt` |
-| `_ChangeMaster` | *Association* |
-| `_ChangeMasterObjectType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |
+| `ChangeNumberObjectType` | ✓ | |  |  |
+| `ObjMgmtRecdObjectInternalID` | ✓ | |  |  |
+| `ObjMgmtRecdObject` |  | |  |  |
+| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |
+| `ObjMgmtRecdObjRevisionLevel` |  | |  |  |
+| `ObjMgmtRecdDescription` |  | |  |  |
+| `ObjMgmtRecdObjIsPlanned` |  | |  |  |
+| `ObjMgmtRecdCreatedBy` |  | |  |  |
+| `ObjMgmtRecdCreationDate` |  | |  |  |
+| `ObjMgmtRecdLastChangedBy` |  | |  |  |
+| `ObjMgmtRecdLastChangedAt` |  | |  |  |
+| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |
+| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |
+| `_ChangeMaster` | | ✓ | | |
+| `_ChangeMasterObjectType` | | ✓ | | |
 
 ## Source Code
 

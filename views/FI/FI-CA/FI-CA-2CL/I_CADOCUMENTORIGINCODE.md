@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentOriginCode` | `herkf` |
-| `CADocumentIsFromPaymentLot` | `xplot` |
-| `ReturnsArePermitted` | `xrefp` |
-| `PostingInDialogIsPermitted` | `xdial` |
-| `IsUsableForReversal` | `xreve` |
-| `DirectGLTransferIsPermitted` | `xhdir` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentOriginCode` | ✓ | |  | `herkf` |
+| `CADocumentIsFromPaymentLot` |  | |  | `xplot` |
+| `ReturnsArePermitted` |  | |  | `xrefp` |
+| `PostingInDialogIsPermitted` |  | |  | `xdial` |
+| `IsUsableForReversal` |  | |  | `xreve` |
+| `DirectGLTransferIsPermitted` |  | |  | `xhdir` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

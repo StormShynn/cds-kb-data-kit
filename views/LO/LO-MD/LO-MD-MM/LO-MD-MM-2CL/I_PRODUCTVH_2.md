@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `cast (Product as productnumber preserving type )` |
-| `ProductDescription` | `_Text[1: Language=$session.system_language].ProductDescription` |
-| `ProductExternalID` | `ProductExternalID` |
-| `ProductType` | `cast(ProductType as producttype preserving type )` |
-| `ProductGroup` | `cast (ProductGroup as productgroup preserving type )` |
-| `BaseUnit` | `cast( BaseUnit as meins )` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `IsBatchManagementRequired` | `IsBatchManagementRequired` |
-| `ProductManufacturerNumber` | `ProductManufacturerNumber` |
-| `ArticleCategory` | `ArticleCategory` |
-| `_Text` | *Association* |
-| `_ProductType` | *Association* |
-| `_ProductTypeText` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_ProductGroupText` | *Association* |
-| `_BaseUnitText` | *Association* |
-| `_ProductCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast (Product as productnumber preserving type )` |
+| `ProductDescription` |  | |  | `_Text[1: Language=$session.system_language].ProductDescription` |
+| `ProductExternalID` |  | |  |  |
+| `ProductType` |  | |  | `cast(ProductType as producttype preserving type )` |
+| `ProductGroup` |  | |  | `cast (ProductGroup as productgroup preserving type )` |
+| `BaseUnit` |  | |  | `cast( BaseUnit as meins )` |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBatchManagementRequired` |  | |  |  |
+| `ProductManufacturerNumber` |  | |  |  |
+| `ArticleCategory` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_ProductType` | | ✓ | | |
+| `_ProductTypeText` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_ProductGroupText` | | ✓ | | |
+| `_BaseUnitText` | | ✓ | | |
+| `_ProductCategoryText` | | ✓ | | |
 
 ## Associations
 

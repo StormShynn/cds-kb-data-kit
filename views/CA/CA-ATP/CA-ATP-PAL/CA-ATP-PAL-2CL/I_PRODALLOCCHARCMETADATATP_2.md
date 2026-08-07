@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharacteristicsMetaDataUUID` | `CharacteristicsMetaDataUUID` |
-| `ProductAllocationObjectUUID` | `ProductAllocationObjectUUID` |
-| `ProdAllocCharcCtlgPathIntID` | `ProdAllocCharcPathDescComIntID` |
-| `ProdAllocCharcCtlgPathUUID` | `ProdAllocCharcCtlgPathUUID` |
-| `ProdAllocOrdinalNumberValue` | `ProdAllocOrdinalNumberValue` |
-| `_ProdAllocationObjectTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharacteristicsMetaDataUUID` | ✓ | |  |  |
+| `ProductAllocationObjectUUID` |  | |  |  |
+| `ProdAllocCharcCtlgPathIntID` |  | |  | `ProdAllocCharcPathDescComIntID` |
+| `ProdAllocCharcCtlgPathUUID` |  | |  |  |
+| `ProdAllocOrdinalNumberValue` |  | |  |  |
+| `_ProdAllocationObjectTP` | | ✓ | | |
 
 ## Source Code
 

@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tmc1t.spras` |
-| key `ConditionUsage` | `t681.kvewe` |
-| key `ConditionApplication` | `t681.kappl` |
-| key `ConditionTable` | `cast ( t681.kotabnr as char03 )` |
-| `ConditionTableText` | `tmc1t.gstxt` |
-| `_PricingConditionTable` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `ConditionTable` | ✓ | |  | `cast ( t681.kotabnr as char03 )` |
+| `ConditionTableText` |  | |  | `gstxt` |
+| `_PricingConditionTable` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnitPostingRule` | `cast( _UnitAttributeValue.CnsldtnUnitAttributeValue as fincs_unitpostingrule preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnitPostingRule` | ✓ | |  | `cast( _UnitAttributeValue.CnsldtnUnitAttributeValue as fincs_unitpostingrule preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

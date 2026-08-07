@@ -27,40 +27,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AssetClass` | `asset_class` |
-| `AssetAccountDetermination` | `gl_account_det` |
-| `BusinessArea` | `cast('' as gsber)` |
-| `Plant` | `cast('' as werks_d)` |
-| `CostCenter` | `cast('' as kostl)` |
-| `FixedAssetFinDataCmpltns` | `cast('' as aneqs)` |
-| `AssetCountryOfOrigin` | `cast('' as am_land1)` |
-| `Supplier` | `cast('' as am_lifnr)` |
-| `FixedAssetGroup` | `cast('' as anlue)` |
-| `FixedAssetPropertyType` | `cast('' as eigkz)` |
-| `PropertyClass` | `cast('' as vmgli)` |
-| `InvestmentSupportMeasure` | `cast('' as invsl)` |
-| `Group1AssetEvaluationKey` | `cast('' as ord41)` |
-| `Group2AssetEvaluationKey` | `cast('' as ord42)` |
-| `Group3AssetEvaluationKey` | `cast('' as ord43)` |
-| `Group4AssetEvaluationKey` | `cast('' as ord44)` |
-| `InvestmentReason` | `cast('' as izwek)` |
-| `AssetAuthorizationContext` | `cast('NEW' as faa_authcntxt)` |
-| `_Text` | *Association* |
-| `_AssetAcctDetermination` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_Plant` | *Association* |
-| `_Country` | *Association* |
-| `_Supplier` | *Association* |
-| `_FixedAssetFinDataCmpltns` | *Association* |
-| `_FixedAssetPropertyType` | *Association* |
-| `_PropertyClass` | *Association* |
-| `_Group1AssetEvaluationKey` | *Association* |
-| `_Group2AssetEvaluationKey` | *Association* |
-| `_Group3AssetEvaluationKey` | *Association* |
-| `_Group4AssetEvaluationKey` | *Association* |
-| `_InvestmentReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssetClass` | ✓ | |  | `asset_class` |
+| `AssetAccountDetermination` |  | |  | `gl_account_det` |
+| `BusinessArea` |  | |  | `cast('' as gsber)` |
+| `Plant` |  | |  | `cast('' as werks_d)` |
+| `CostCenter` |  | |  | `cast('' as kostl)` |
+| `FixedAssetFinDataCmpltns` |  | |  | `cast('' as aneqs)` |
+| `AssetCountryOfOrigin` |  | |  | `cast('' as am_land1)` |
+| `Supplier` |  | |  | `cast('' as am_lifnr)` |
+| `FixedAssetGroup` |  | |  | `cast('' as anlue)` |
+| `FixedAssetPropertyType` |  | |  | `cast('' as eigkz)` |
+| `PropertyClass` |  | |  | `cast('' as vmgli)` |
+| `InvestmentSupportMeasure` |  | |  | `cast('' as invsl)` |
+| `Group1AssetEvaluationKey` |  | |  | `cast('' as ord41)` |
+| `Group2AssetEvaluationKey` |  | |  | `cast('' as ord42)` |
+| `Group3AssetEvaluationKey` |  | |  | `cast('' as ord43)` |
+| `Group4AssetEvaluationKey` |  | |  | `cast('' as ord44)` |
+| `InvestmentReason` |  | |  | `cast('' as izwek)` |
+| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` |
+| `_Text` | | ✓ | | |
+| `_AssetAcctDetermination` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_FixedAssetFinDataCmpltns` | | ✓ | | |
+| `_FixedAssetPropertyType` | | ✓ | | |
+| `_PropertyClass` | | ✓ | | |
+| `_Group1AssetEvaluationKey` | | ✓ | | |
+| `_Group2AssetEvaluationKey` | | ✓ | | |
+| `_Group3AssetEvaluationKey` | | ✓ | | |
+| `_Group4AssetEvaluationKey` | | ✓ | | |
+| `_InvestmentReason` | | ✓ | | |
 
 ## Associations
 

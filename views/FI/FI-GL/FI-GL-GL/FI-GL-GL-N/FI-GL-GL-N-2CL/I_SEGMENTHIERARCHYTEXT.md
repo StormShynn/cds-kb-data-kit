@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SegmentHierarchy` | `cast(hrrp_dirt_n.hryid as fis_hryid_segment preserving type )` |
-| key `ValidityEndDate` | `hrrp_dirt_n.hryvalto` |
-| key `Language` | `spras` |
-| `ValidityStartDate` | `hrrp_dirt_n.hryvalfrom` |
-| `SegmentHierarchyName` | `cast(hrytxt as fis_hryn_segment preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SegmentHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_segment preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `SegmentHierarchyName` |  | |  | `cast(hrytxt as fis_hryn_segment preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

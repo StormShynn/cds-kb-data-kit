@@ -27,37 +27,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClfnObjectID` | `Valuation.ClfnObjectID` |
-| key `ClfnObjectTable` | `Valuation.ClfnObjectTable` |
-| key `CharcInternalID` | `Valuation.CharcInternalID` |
-| key `CharcValuePositionNumber` | `Valuation.CharcValuePositionNumber` |
-| key `ClfnObjectType` | `Valuation.ClfnObjectType` |
-| key `ClassType` | `Valuation.ClassType` |
-| `ClfnObjectInternalID` | `Valuation.ClfnObjectInternalID` |
-| `CharcValueDependency` | `Valuation.CharcValueIntervalType` |
-| `CharcValue` | `Valuation.CharcValue` |
-| `CharcFromNumericValue` | `Valuation.CharcFromNumericValue` |
-| `CharcFromNumericValueUnit` | `Valuation.CharcFromNumericValueUnit` |
-| `CharcToNumericValue` | `Valuation.CharcToNumericValue` |
-| `CharcToNumericValueUnit` | `Valuation.CharcToNumericValueUnit` |
-| `CharcFromDecimalValue` | `Valuation.CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `Valuation.CharcToDecimalValue` |
-| `CharcFromAmount` | `Valuation.CharcFromAmount` |
-| `CharcToAmount` | `Valuation.CharcToAmount` |
-| `Currency` | `Valuation.Currency` |
-| `CharcFromDate` | `Valuation.CharcFromDate` |
-| `CharcToDate` | `Valuation.CharcToDate` |
-| `CharcFromTime` | `Valuation.CharcFromTime` |
-| `CharcToTime` | `Valuation.CharcToTime` |
-| `CharacteristicAuthor` | `Valuation.CharacteristicAuthor` |
-| `ChangeNumber` | `Valuation.ChangeNumber` |
-| `ValidityStartDate` | `Valuation.ValidityStartDate` |
-| `ValidityEndDate` | `Valuation.ValidityEndDate` |
-| `LastChangeDateTime` | `Valuation.LastChangeDateTime` |
-| `_Characteristic` | *Association* |
-| `_CharacteristicValue` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClfnObjectID` | ✓ | |  |  |
+| `ClfnObjectTable` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `CharcValuePositionNumber` | ✓ | |  |  |
+| `ClfnObjectType` | ✓ | |  |  |
+| `ClassType` | ✓ | |  |  |
+| `ClfnObjectInternalID` |  | |  |  |
+| `CharcValueDependency` |  | |  | `CharcValueIntervalType` |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `CharacteristicAuthor` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Characteristic` | | ✓ | | |
+| `_CharacteristicValue` | | ✓ | | |
 
 ## Associations
 

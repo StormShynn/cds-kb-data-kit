@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionUUID` | `legaltransactionuuid` |
-| `LegalTransaction` | `legaltransaction` |
-| `LegalTransactionTitle` | `legaltransactiontitle` |
-| `LegalTransactionHealth` | `legaltransactionhealth` |
-| `LglCntntMLanguage` | `lglcntntmlanguage` |
-| `LglCntntMCreatedByUser` | `lglcntntmcreatedbyuser` |
-| `LglCntntMCreatedUTCDateTime` | `lglcntntmcreatedutcdatetime` |
-| `LglCntntMChangedByUser` | `lglcntntmchangedbyuser` |
-| `LglCntntMChangedUTCDateTime` | `lglcntntmchangedutcdatetime` |
-| `LglCntntMProfile` | `lglcntntmprofile` |
-| `IsEndOfPurposeBlocked` | `isendofpurposeblocked` |
-| `LglCntntMGovLaw` | `lglcntntmgovlaw` |
-| `LglTransAccessLvl` | `lgltransaccesslvl` |
-| `LglCntntMMainOrgType` | `lglcntntmmainorgtype` |
-| `LglCntntMMainOrgCoCode` | `lglcntntmmainorgcocode` |
-| `LglCntntMMainOrgSalesOrg` | `lglcntntmmainorgsalesorg` |
-| `LglCntntMMainOrgPurOrg` | `lglcntntmmainorgpurorg` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionUUID` | ✓ | |  | `legaltransactionuuid` |
+| `LegalTransaction` |  | |  | `legaltransaction` |
+| `LegalTransactionTitle` |  | |  | `legaltransactiontitle` |
+| `LegalTransactionHealth` |  | |  | `legaltransactionhealth` |
+| `LglCntntMLanguage` |  | |  | `lglcntntmlanguage` |
+| `LglCntntMCreatedByUser` |  | |  | `lglcntntmcreatedbyuser` |
+| `LglCntntMCreatedUTCDateTime` |  | |  | `lglcntntmcreatedutcdatetime` |
+| `LglCntntMChangedByUser` |  | |  | `lglcntntmchangedbyuser` |
+| `LglCntntMChangedUTCDateTime` |  | |  | `lglcntntmchangedutcdatetime` |
+| `LglCntntMProfile` |  | |  | `lglcntntmprofile` |
+| `IsEndOfPurposeBlocked` |  | |  | `isendofpurposeblocked` |
+| `LglCntntMGovLaw` |  | |  | `lglcntntmgovlaw` |
+| `LglTransAccessLvl` |  | |  | `lgltransaccesslvl` |
+| `LglCntntMMainOrgType` |  | |  | `lglcntntmmainorgtype` |
+| `LglCntntMMainOrgCoCode` |  | |  | `lglcntntmmainorgcocode` |
+| `LglCntntMMainOrgSalesOrg` |  | |  | `lglcntntmmainorgsalesorg` |
+| `LglCntntMMainOrgPurOrg` |  | |  | `lglcntntmmainorgpurorg` |
 
 ## Associations
 

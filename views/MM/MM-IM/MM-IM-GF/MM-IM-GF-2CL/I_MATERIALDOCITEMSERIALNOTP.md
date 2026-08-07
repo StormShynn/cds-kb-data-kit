@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SerialNumber` | `SerialNumber` |
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `_MaterialDocumentHeader` | *Association* |
-| `_MaterialDocumentItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SerialNumber` | ✓ | |  |  |
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `_MaterialDocumentHeader` | | ✓ | | |
+| `_MaterialDocumentItem` | | ✓ | | |
 
 ## Source Code
 

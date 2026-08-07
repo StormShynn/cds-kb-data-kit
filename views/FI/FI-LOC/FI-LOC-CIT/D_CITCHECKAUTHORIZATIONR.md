@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CompanyCode` | `bukrs` |
-| `CorporateIncomeTaxHierarchy` | `ficite_hryid` |
-| `CITHierCoCodeEditingIsAllowed` | `boole_d` |
-| `CITHierCoCodeClassfctnIsAllwd` | `boole_d` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` |  | |  | `bukrs` |
+| `CorporateIncomeTaxHierarchy` |  | |  | `ficite_hryid` |
+| `CITHierCoCodeEditingIsAllowed` |  | |  | `boole_d` |
+| `CITHierCoCodeClassfctnIsAllwd` |  | |  | `boole_d` |
 
 ## Source Code
 

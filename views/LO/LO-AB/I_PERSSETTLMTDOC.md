@@ -27,109 +27,109 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PersonnelSettlementDocument` | `PersonnelSettlementDocument` |
-| `SettlmtDocType` | `SettlmtDocType` |
-| `SettlmtDocCat` | `SettlmtDocCat` |
-| `SettlmtProcessType` | `SettlmtProcessType` |
-| `SettlmtProcessCat` | `SettlmtProcessCat` |
-| `LogisticsDataEntryCat` | `LogisticsDataEntryCat` |
-| `PostingDate` | `PostingDate` |
-| `PersSettlmtAcctgTransfSts` | `PersSettlmtAcctgTransfSts` |
-| `DocumentDate` | `DocumentDate` |
-| `DocumentReferenceID` | `DocumentReferenceID` |
-| `AssignmentReference` | `AssignmentReference` |
-| `SettlmtApplSts` | `SettlmtApplSts` |
-| `SettlmtApplStsGrp` | `SettlmtApplStsGrp` |
-| `PricingProcedure` | `PricingProcedure` |
-| `PricingDocument` | `PricingDocument` |
-| `PersonWorkAgreement` | `PersonWorkAgreement` |
-| `PersonnelCostCenter` | `PersonnelCostCenter` |
-| `PersonnelControllingArea` | `PersonnelControllingArea` |
-| `CompanyCode` | `}] } CompanyCode` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `PersSettlmtDocCurrency` | `PersSettlmtDocCurrency` |
-| `ExchangeRate` | `ExchangeRate` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `ExchangeRateIsFixed` | `ExchangeRateIsFixed` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `TotalNetAmount` | `PersSettlmtDocTotalNetAmount` |
-| `PersSettlmtDocIsReversed` | `PersSettlmtDocIsReversed` |
-| `RvsdPersSettlmtDoc` | `RvsdPersSettlmtDoc` |
-| `SettlmtDocActivityReason` | `PersSettlmtDocActivityReason` |
-| `PaymentReference` | `PaymentReference` |
-| `CndnContrType` | `}] } CndnContrType` |
-| `SettlmtReltdCndnContr` | `}] } SettlmtReltdCndnContr` |
-| `CndnContrProcVar` | `}] } CndnContrProcVar` |
-| `FiscalPeriod` | `FiscalPeriod` |
-| `SettlmtDateCat` | `SettlmtDateCat` |
-| `ActualSettlmtDate` | `ActualSettlmtDate` |
-| `SettlmtDateSequentialID` | `SettlmtDateSequentialID` |
-| `SettlmtDate` | `SettlmtDate` |
-| `PersSettlmtDocIncmpltnsRsn` | `PersSettlmtDocIncmpltnsRsn` |
-| `SettlmtBusProcVar` | `SettlmtBusProcVar` |
-| `SettlmtBusProcCat` | `SettlmtBusProcCat` |
-| `TotalSettlmtQuantity` | `TotalSettlmtQuantity` |
-| `TotalSettlmtQuantityUnit` | `TotalSettlmtQuantityUnit` |
-| `TotalSettlmtNetWeight` | `TotalSettlmtNetWeight` |
-| `TotalSettlmtGrossWeight` | `TotalSettlmtGrossWeight` |
-| `TotalSettlmtWeightUnit` | `TotalSettlmtWeightUnit` |
-| `TotalSettlmtVolume` | `TotalSettlmtVolume` |
-| `TotalSettlmtVolumeUnit` | `TotalSettlmtVolumeUnit` |
-| `SettlmtPeriodStartDate` | `SettlmtPeriodStartDate` |
-| `SettlmtPeriodEndDate` | `SettlmtPeriodEndDate` |
-| `CndnContrProcessCategory` | `CndnContrProcessCategory` |
-| `PostingPartnerCat` | `PostingPartnerCat` |
-| `JournalEntryCreationDate` | `JournalEntryCreationDate` |
-| `JournalEntryCreationTime` | `JournalEntryCreationTime` |
-| `SettlmtCompensationReason` | `SettlmtCompensationReason` |
-| `SettlmtCompnVar` | `SettlmtCompnVar` |
-| `PersSettlmtDocChangeState` | `cast( ' ' as wlf_change_state preserving type )` |
-| `_PersSettlmtDocItem` | *Association* |
-| `_PersSettlmtDocPrcgElmnt` | *Association* |
-| `_SettlmtDocType` | *Association* |
-| `_SettlmtProcessType` | *Association* |
-| `_SettlmtApplSts` | *Association* |
-| `_SettlmtApplStsGrp` | *Association* |
-| `_SettlmtApplStsGrpStsAssgmt` | *Association* |
-| `_RvsdPersSettlmtDoc` | *Association* |
-| `_SettlmtDocActivityReason` | *Association* |
-| `_CndnContrType` | *Association* |
-| `_SettlmtReltdCndnContr` | *Association* |
-| `_SettlmtBusProcVar` | *Association* |
-| `_SettlmtCompnRsn` | *Association* |
-| `_SettlmtDocCat` | *Association* |
-| `_SettlmtProcessCat` | *Association* |
-| `_LogisticsDataEntryCat` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesArea` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_PersSettlmtDocCurrency` | *Association* |
-| `_ExchangeRateType` | *Association* |
-| `_CndnContrProcVar` | *Association* |
-| `_SettlmtDateCat` | *Association* |
-| `_PersSettlmtDocIncmpltnsRsn` | *Association* |
-| `_SettlmtBusProcCat` | *Association* |
-| `_TotalSettlmtQuantityUnit` | *Association* |
-| `_TotalSettlmtWeightUnit` | *Association* |
-| `_TotalSettlmtVolumeUnit` | *Association* |
-| `_CndnContrProcessCategory` | *Association* |
-| `_PostingPartnerCat` | *Association* |
-| `_PersonWorkAgreement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PersonnelSettlementDocument` | ✓ | |  |  |
+| `SettlmtDocType` |  | |  |  |
+| `SettlmtDocCat` |  | |  |  |
+| `SettlmtProcessType` |  | |  |  |
+| `SettlmtProcessCat` |  | |  |  |
+| `LogisticsDataEntryCat` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `PersSettlmtAcctgTransfSts` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `DocumentReferenceID` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `SettlmtApplSts` |  | |  |  |
+| `SettlmtApplStsGrp` |  | |  |  |
+| `PricingProcedure` |  | |  |  |
+| `PricingDocument` |  | |  |  |
+| `PersonWorkAgreement` |  | |  |  |
+| `PersonnelCostCenter` |  | |  |  |
+| `PersonnelControllingArea` |  | |  |  |
+| `CompanyCode` |  | |  | `}] } CompanyCode` |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `PersSettlmtDocCurrency` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `TotalNetAmount` |  | |  | `PersSettlmtDocTotalNetAmount` |
+| `PersSettlmtDocIsReversed` |  | |  |  |
+| `RvsdPersSettlmtDoc` |  | |  |  |
+| `SettlmtDocActivityReason` |  | |  | `PersSettlmtDocActivityReason` |
+| `PaymentReference` |  | |  |  |
+| `CndnContrType` |  | |  | `}] } CndnContrType` |
+| `SettlmtReltdCndnContr` |  | |  | `}] } SettlmtReltdCndnContr` |
+| `CndnContrProcVar` |  | |  | `}] } CndnContrProcVar` |
+| `FiscalPeriod` |  | |  |  |
+| `SettlmtDateCat` |  | |  |  |
+| `ActualSettlmtDate` |  | |  |  |
+| `SettlmtDateSequentialID` |  | |  |  |
+| `SettlmtDate` |  | |  |  |
+| `PersSettlmtDocIncmpltnsRsn` |  | |  |  |
+| `SettlmtBusProcVar` |  | |  |  |
+| `SettlmtBusProcCat` |  | |  |  |
+| `TotalSettlmtQuantity` |  | |  |  |
+| `TotalSettlmtQuantityUnit` |  | |  |  |
+| `TotalSettlmtNetWeight` |  | |  |  |
+| `TotalSettlmtGrossWeight` |  | |  |  |
+| `TotalSettlmtWeightUnit` |  | |  |  |
+| `TotalSettlmtVolume` |  | |  |  |
+| `TotalSettlmtVolumeUnit` |  | |  |  |
+| `SettlmtPeriodStartDate` |  | |  |  |
+| `SettlmtPeriodEndDate` |  | |  |  |
+| `CndnContrProcessCategory` |  | |  |  |
+| `PostingPartnerCat` |  | |  |  |
+| `JournalEntryCreationDate` |  | |  |  |
+| `JournalEntryCreationTime` |  | |  |  |
+| `SettlmtCompensationReason` |  | |  |  |
+| `SettlmtCompnVar` |  | |  |  |
+| `PersSettlmtDocChangeState` |  | |  | `cast( ' ' as wlf_change_state preserving type )` |
+| `_PersSettlmtDocItem` | | ✓ | | |
+| `_PersSettlmtDocPrcgElmnt` | | ✓ | | |
+| `_SettlmtDocType` | | ✓ | | |
+| `_SettlmtProcessType` | | ✓ | | |
+| `_SettlmtApplSts` | | ✓ | | |
+| `_SettlmtApplStsGrp` | | ✓ | | |
+| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | |
+| `_RvsdPersSettlmtDoc` | | ✓ | | |
+| `_SettlmtDocActivityReason` | | ✓ | | |
+| `_CndnContrType` | | ✓ | | |
+| `_SettlmtReltdCndnContr` | | ✓ | | |
+| `_SettlmtBusProcVar` | | ✓ | | |
+| `_SettlmtCompnRsn` | | ✓ | | |
+| `_SettlmtDocCat` | | ✓ | | |
+| `_SettlmtProcessCat` | | ✓ | | |
+| `_LogisticsDataEntryCat` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesArea` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_PersSettlmtDocCurrency` | | ✓ | | |
+| `_ExchangeRateType` | | ✓ | | |
+| `_CndnContrProcVar` | | ✓ | | |
+| `_SettlmtDateCat` | | ✓ | | |
+| `_PersSettlmtDocIncmpltnsRsn` | | ✓ | | |
+| `_SettlmtBusProcCat` | | ✓ | | |
+| `_TotalSettlmtQuantityUnit` | | ✓ | | |
+| `_TotalSettlmtWeightUnit` | | ✓ | | |
+| `_TotalSettlmtVolumeUnit` | | ✓ | | |
+| `_CndnContrProcessCategory` | | ✓ | | |
+| `_PostingPartnerCat` | | ✓ | | |
+| `_PersonWorkAgreement` | | ✓ | | |
 
 ## Associations
 

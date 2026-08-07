@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PhysInvtryAdjustmentPostingSts` | `cast ( substring( domvalue_l, 1, 1 ) as pi_hdr_post_status_code preserving type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PhysInvtryAdjustmentPostingSts` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as pi_hdr_post_status_code preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

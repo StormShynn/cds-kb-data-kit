@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderType` | `SalesOrderType.SalesOrderType` |
-| key `Language` | `Text.Language` |
-| `SalesOrderTypeName` | `cast( Text.SalesDocumentTypeName as sd_sales_order_type_name preserving type )` |
-| `_SalesOrderType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SalesOrderTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_sales_order_type_name preserving type )` |
+| `_SalesOrderType` | | ✓ | | |
 
 ## Associations
 

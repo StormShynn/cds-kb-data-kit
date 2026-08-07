@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `PhysicalInventoryActvBlkdStat` | `cast ( substring( domvalue_l, 1, 3 ) as pi_actblkdflag preserving type )` |
-| `PhysInventoryActvBlkdStatTxt` | `cast ( substring ( ddtext, 1, 60 ) as val_text preserving type )` |
-| `_PhysicalInvtryIsActvBlkd` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `PhysicalInventoryActvBlkdStat` | ✓ | |  | `cast ( substring( domvalue_l, 1, 3 ) as pi_actblkdflag preserving type )` |
+| `PhysInventoryActvBlkdStatTxt` |  | |  | `cast ( substring ( ddtext, 1, 60 ) as val_text preserving type )` |
+| `_PhysicalInvtryIsActvBlkd` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

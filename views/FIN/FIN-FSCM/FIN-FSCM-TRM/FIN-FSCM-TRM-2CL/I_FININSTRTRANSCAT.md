@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialInstrProductCategory` | `sanlfor` |
-| key `FinInstrTransactionCategory` | `sfgtyp` |
-| `_Text` | *Association* |
-| `_FinancialInstrProdCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlfor` |
+| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |
+| `_Text` | | ✓ | | |
+| `_FinancialInstrProdCat` | | ✓ | | |
 
 ## Associations
 

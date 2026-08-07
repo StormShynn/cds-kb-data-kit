@@ -29,52 +29,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkAssignmentExternalID` | `_Assignment.WorkAssignmentExternalID` |
-| key `Country2DigitISOCode` | `_Assignment.Country2DigitISOCode` |
-| key `AddressNumber` | `_EmploymentAddress.AddressID` |
-| `WorkforcePersonExternalID` | `_AssignmentBP.WorkforcePersonExternalID` |
-| `BusinessPartner` | `_AssignmentBP.BusinessPartner` |
-| `StartDate` | `cast (tstmp_to_dats( _EmploymentAddress.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |
-| `EndDate` | `cast (tstmp_to_dats( _EmploymentAddress.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |
-| `Country` | `_EmploymentAddress._AddressDefaultRepresentation.Country` |
-| `PostalCode` | `_EmploymentAddress._AddressDefaultRepresentation.PostalCode` |
-| `Region` | `_EmploymentAddress._AddressDefaultRepresentation.Region` |
-| `SecondaryRegion` | `_EmploymentAddress._AddressDefaultRepresentation.SecondaryRegion` |
-| `SecondaryRegionName` | `_EmploymentAddress._AddressDefaultRepresentation.SecondaryRegionName` |
-| `TertiaryRegion` | `_EmploymentAddress._AddressDefaultRepresentation.TertiaryRegion` |
-| `TertiaryRegionName` | `_EmploymentAddress._AddressDefaultRepresentation.TertiaryRegionName` |
-| `CityName` | `_EmploymentAddress._AddressDefaultRepresentation.CityName` |
-| `DistrictName` | `_EmploymentAddress._AddressDefaultRepresentation.DistrictName` |
-| `StreetPrefixName1` | `_EmploymentAddress._AddressDefaultRepresentation.StreetPrefixName1` |
-| `StreetPrefixName2` | `_EmploymentAddress._AddressDefaultRepresentation.StreetPrefixName2` |
-| `StreetName` | `_EmploymentAddress._AddressDefaultRepresentation.StreetName` |
-| `StreetSuffixName1` | `_EmploymentAddress._AddressDefaultRepresentation.StreetSuffixName1` |
-| `StreetSuffixName2` | `_EmploymentAddress._AddressDefaultRepresentation.StreetSuffixName2` |
-| `HouseNumber` | `_EmploymentAddress._AddressDefaultRepresentation.HouseNumber` |
-| `HouseNumberSupplementText` | `_EmploymentAddress._AddressDefaultRepresentation.HouseNumberSupplementText` |
-| `Floor` | `_EmploymentAddress._AddressDefaultRepresentation.Floor` |
-| `RoomNumber` | `_EmploymentAddress._AddressDefaultRepresentation.RoomNumber` |
-| `CareOfName` | `_EmploymentAddress._AddressDefaultRepresentation.CareOfName` |
-| `POBoxPostalCode` | `_EmploymentAddress._AddressDefaultRepresentation.POBoxPostalCode` |
-| `IsBlocked` | `_Assignment.IsBlocked` |
-| `IsBusinessPurposeCompleted` | `_BP.IsBusinessPurposeCompleted` |
-| `DataControllerSet` | `_BP.DataControllerSet` |
-| `DataController1` | `_BP.DataController1` |
-| `DataController2` | `_BP.DataController2` |
-| `DataController3` | `_BP.DataController3` |
-| `DataController4` | `_BP.DataController4` |
-| `DataController5` | `_BP.DataController5` |
-| `DataController6` | `_BP.DataController6` |
-| `DataController7` | `_BP.DataController7` |
-| `DataController8` | `_BP.DataController8` |
-| `DataController9` | `_BP.DataController9` |
-| `DataController10` | `_BP.DataController10` |
-| `AuthorizationGroup` | `_BP.AuthorizationGroup` |
-| `_BPProtectedAddress` | *Association* |
-| `_WorkAssignment` | *Association* |
-| `_WorkforcePerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |
+| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |
+| `AddressNumber` | ✓ | | `_EmploymentAddress` | `AddressID` |
+| `WorkforcePersonExternalID` |  | | `_AssignmentBP` | `WorkforcePersonExternalID` |
+| `BusinessPartner` |  | | `_AssignmentBP` | `BusinessPartner` |
+| `StartDate` |  | |  | `cast (tstmp_to_dats( _EmploymentAddress.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |
+| `EndDate` |  | |  | `cast (tstmp_to_dats( _EmploymentAddress.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |
+| `Country` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Country` |
+| `PostalCode` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `PostalCode` |
+| `Region` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Region` |
+| `SecondaryRegion` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `SecondaryRegion` |
+| `SecondaryRegionName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `SecondaryRegionName` |
+| `TertiaryRegion` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `TertiaryRegion` |
+| `TertiaryRegionName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `TertiaryRegionName` |
+| `CityName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `CityName` |
+| `DistrictName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `DistrictName` |
+| `StreetPrefixName1` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetPrefixName1` |
+| `StreetPrefixName2` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetPrefixName2` |
+| `StreetName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetName` |
+| `StreetSuffixName1` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetSuffixName1` |
+| `StreetSuffixName2` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetSuffixName2` |
+| `HouseNumber` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `HouseNumber` |
+| `HouseNumberSupplementText` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `HouseNumberSupplementText` |
+| `Floor` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Floor` |
+| `RoomNumber` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `RoomNumber` |
+| `CareOfName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `CareOfName` |
+| `POBoxPostalCode` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `POBoxPostalCode` |
+| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |
+| `IsBusinessPurposeCompleted` |  | | `_BP` | `IsBusinessPurposeCompleted` |
+| `DataControllerSet` |  | | `_BP` | `DataControllerSet` |
+| `DataController1` |  | | `_BP` | `DataController1` |
+| `DataController2` |  | | `_BP` | `DataController2` |
+| `DataController3` |  | | `_BP` | `DataController3` |
+| `DataController4` |  | | `_BP` | `DataController4` |
+| `DataController5` |  | | `_BP` | `DataController5` |
+| `DataController6` |  | | `_BP` | `DataController6` |
+| `DataController7` |  | | `_BP` | `DataController7` |
+| `DataController8` |  | | `_BP` | `DataController8` |
+| `DataController9` |  | | `_BP` | `DataController9` |
+| `DataController10` |  | | `_BP` | `DataController10` |
+| `AuthorizationGroup` |  | | `_BP` | `AuthorizationGroup` |
+| `_BPProtectedAddress` | | ✓ | | |
+| `_WorkAssignment` | | ✓ | | |
+| `_WorkforcePerson` | | ✓ | | |
 
 ## Associations
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglTransWrkFlwModInstce` | `cast( LglTransWrkFlwModInstce as lcm_uuid_c32 )` |
-| `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LglTransWrkFlwCreatedByUser` | `LglTransWrkFlwCreatedByUser` |
-| `LglCntntMGovLaw` | `_LegalTransaction.LglCntntMGovLaw` |
-| `LglCntntMProfile` | `_LegalTransaction.LglCntntMProfile` |
-| `LglTransAccessLvl` | `_LegalTransaction.LglTransAccessLvl` |
-| `LglCntntMMainOrgCoCode` | `_LegalTransaction.LglCntntMMainOrgCoCode` |
-| `LglCntntMMainOrgSalesOrg` | `_LegalTransaction.LglCntntMMainOrgSalesOrg` |
-| `LglCntntMMainOrgPurOrg` | `_LegalTransaction.LglCntntMMainOrgPurOrg` |
-| `_LegalTransaction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglTransWrkFlwModInstce` | ✓ | |  | `cast( LglTransWrkFlwModInstce as lcm_uuid_c32 )` |
+| `LegalTransactionUUID` |  | |  |  |
+| `LglTransWrkFlwCreatedByUser` |  | |  |  |
+| `LglCntntMGovLaw` |  | | `_LegalTransaction` | `LglCntntMGovLaw` |
+| `LglCntntMProfile` |  | | `_LegalTransaction` | `LglCntntMProfile` |
+| `LglTransAccessLvl` |  | | `_LegalTransaction` | `LglTransAccessLvl` |
+| `LglCntntMMainOrgCoCode` |  | | `_LegalTransaction` | `LglCntntMMainOrgCoCode` |
+| `LglCntntMMainOrgSalesOrg` |  | | `_LegalTransaction` | `LglCntntMMainOrgSalesOrg` |
+| `LglCntntMMainOrgPurOrg` |  | | `_LegalTransaction` | `LglCntntMMainOrgPurOrg` |
+| `_LegalTransaction` | | ✓ | | |
 
 ## Associations
 

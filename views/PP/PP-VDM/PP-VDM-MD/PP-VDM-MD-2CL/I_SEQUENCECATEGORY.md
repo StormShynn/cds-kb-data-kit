@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SequenceCategory` | `cat.flgat` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SequenceCategory` | ✓ | |  | `flgat` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgDocItemCrtnMethod` | `cast ( substring( dd07t.domvalue_l,1,2 ) as billitem_crmet_kk preserving type )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CABillgDocItemCrtnMethodText` | `cast ( ddtext as billitem_crmet_txt_gfn_kk preserving type )` |
-| `_CABillgDocItemCrtnMethod` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,2 ) as billitem_crmet_kk preserving type )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CABillgDocItemCrtnMethodText` |  | |  | `cast ( ddtext as billitem_crmet_txt_gfn_kk preserving type )` |
+| `_CABillgDocItemCrtnMethod` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

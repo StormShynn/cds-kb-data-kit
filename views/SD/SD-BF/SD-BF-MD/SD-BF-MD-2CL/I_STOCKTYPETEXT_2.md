@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StockType` | `SUBSTRING(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `StockTypeName` | `ddtext` |
-| `_StockType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StockType` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `StockTypeName` |  | |  | `ddtext` |
+| `_StockType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

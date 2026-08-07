@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurgCatPartyUUID` | `PurgCatPartyUUID` |
-| `PurgCatUUID` | `PurgCatUUID` |
-| `UserID` | `UserID` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `BusinessPartner` | `BusinessPartner` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurgCatPartyUUID` | ✓ | |  |  |
+| `PurgCatUUID` |  | |  |  |
+| `UserID` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `BusinessPartner` |  | |  |  |
 
 ## Source Code
 

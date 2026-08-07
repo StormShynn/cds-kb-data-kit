@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `Supplier` |
-| key `BPBankAccountInternalID` | `BPBankAccountInternalID` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `BankCountry` | `BankCountry` |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  |  |
+| `BPBankAccountInternalID` | ✓ | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `BankCountry` |  | |  |  |
+| `_Supplier` | | ✓ | | |
 
 ## Source Code
 

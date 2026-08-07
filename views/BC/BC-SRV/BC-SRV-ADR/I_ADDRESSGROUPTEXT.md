@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `AddressGroup` | `addr_group` |
-| `AddressGroupName` | `group_text` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `AddressGroup` | ✓ | |  | `addr_group` |
+| `AddressGroupName` |  | |  | `group_text` |
 
 ## Source Code
 

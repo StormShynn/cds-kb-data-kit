@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `CostingVariant` | `klvar` |
-| `CostingVariantName` | `cast(txklv as fpc_costing_variant_name preserving type)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `CostingVariant` | ✓ | |  | `klvar` |
+| `CostingVariantName` |  | |  | `cast(txklv as fpc_costing_variant_name preserving type)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

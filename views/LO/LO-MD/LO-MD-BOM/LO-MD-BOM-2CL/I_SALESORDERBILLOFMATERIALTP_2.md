@@ -34,50 +34,50 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterialCategory` | `bom_header.BillOfMaterialCategory` |
-| key `BillOfMaterial` | `bom_header.BillOfMaterial` |
-| key `BillOfMaterialVariant` | `bom_header.BillOfMaterialVariant` |
-| key `EngineeringChangeDocument` | `bom_header.EngineeringChangeDocument` |
-| key `Material` | `bom_header.Material` |
-| key `Plant` | `bom_header.Plant` |
-| `SalesOrder` | `bom_header.SalesOrder` |
-| `SalesOrderItem` | `bom_header.SalesOrderItem` |
-| `LastChangeDateTime` | `bom_header.LastChangeDateTime` |
-| `EngineeringChangeDocForEdit` | `bom_header.EngineeringChangeDocForEdit` |
-| `BillOfMaterialHeaderUUID` | `bom_header.BillOfMaterialHeaderUUID` |
-| `BillOfMaterialVariantUsage` | `bom_header.BillOfMaterialVariantUsage` |
-| `ValidityStartDate` | `bom_header.ValidityStartDate` |
-| `ValidityEndDate` | `bom_header.ValidityEndDate` |
-| `BOMHeaderInternalChangeCount` | `bom_header.BOMHeaderInternalChangeCount` |
-| `BOMHeaderText` | `bom_header.BOMHeaderText` |
-| `BOMExplosionApplication` | `bom_header.BOMExplosionApplication` |
-| `BOMUsagePriority` | `bom_header.BOMUsagePriority` |
-| `BillOfMaterialAuthsnGrp` | `bom_header.BillOfMaterialAuthsnGrp` |
-| `BOMTechnicalType` | `bom_header.BOMTechnicalType` |
-| `BOMGroup` | `bom_header.BOMGroup` |
-| `BOMAlternativeText` | `bom_header.BOMAlternativeText` |
-| `BillOfMaterialStatus` | `bom_header.BillOfMaterialStatus` |
-| `ChgToEngineeringChgDocument` | `bom_header.ChgToEngineeringChgDocument` |
-| `IsMarkedForDeletion` | `bom_header.IsMarkedForDeletion` |
-| `BOMIsArchivedForDeletion` | `bom_header.BOMIsArchivedForDeletion` |
-| `IsConfiguredMaterial` | `bom_header.IsConfiguredMaterial` |
-| `BOMIsConfigurable` | `bom_header.BOMIsConfigurable` |
-| `IsALE` | `bom_header.IsALE` |
-| `BOMHeaderBaseUnit` | `bom_header.BOMHeaderBaseUnit` |
-| `BOMHeaderQuantityInBaseUnit` | `bom_header.BOMHeaderQuantityInBaseUnit` |
-| `RecordCreationDate` | `bom_header.RecordCreationDate` |
-| `LastChangeDate` | `bom_header.LastChangeDate` |
-| `LastChangedByUser` | `bom_header.LastChangedByUser` |
-| `CreatedByUser` | `bom_header.CreatedByUser` |
-| `BOMIsToBeDeleted` | `bom_header.BOMIsToBeDeleted` |
-| `DocumentIsCreatedByCAD` | `bom_header.DocumentIsCreatedByCAD` |
-| `LaboratoryOrDesignOffice` | `bom_header.LaboratoryOrDesignOffice` |
-| `BOMAssetNtwkHndovrIsRelevant` | `bom_header.BOMAssetNtwkHndovrIsRelevant` |
-| `_Plant` | *Association* |
-| `_BOMChangeNumbers` | *Association* |
-| `_BillOfMaterialItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterialCategory` | ✓ | |  |  |
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |
+| `EngineeringChangeDocument` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `EngineeringChangeDocForEdit` |  | |  |  |
+| `BillOfMaterialHeaderUUID` |  | |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `BOMHeaderInternalChangeCount` |  | |  |  |
+| `BOMHeaderText` |  | |  |  |
+| `BOMExplosionApplication` |  | |  |  |
+| `BOMUsagePriority` |  | |  |  |
+| `BillOfMaterialAuthsnGrp` |  | |  |  |
+| `BOMTechnicalType` |  | |  |  |
+| `BOMGroup` |  | |  |  |
+| `BOMAlternativeText` |  | |  |  |
+| `BillOfMaterialStatus` |  | |  |  |
+| `ChgToEngineeringChgDocument` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `BOMIsArchivedForDeletion` |  | |  |  |
+| `IsConfiguredMaterial` |  | |  |  |
+| `BOMIsConfigurable` |  | |  |  |
+| `IsALE` |  | |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |
+| `BOMHeaderQuantityInBaseUnit` |  | |  |  |
+| `RecordCreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `BOMIsToBeDeleted` |  | |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |
+| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |
+| `_Plant` | | ✓ | | |
+| `_BOMChangeNumbers` | | ✓ | | |
+| `_BillOfMaterialItem` | | ✓ | | |
 
 ## Source Code
 

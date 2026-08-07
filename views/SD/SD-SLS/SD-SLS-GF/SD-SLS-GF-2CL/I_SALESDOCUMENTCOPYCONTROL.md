@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TargetSalesDocumentType` | `auarn` |
-| key `SourceSalesDocumentType` | `auarv` |
-| key `SourceBillingDocumentType` | `fkarv` |
-| key `ReferenceScheduleLineCategory` | `ettyv` |
-| key `ReferenceItemCategory` | `pstyv` |
-| `_TargetSalesDocumentType` | *Association* |
-| `_SourceSalesDocumentType` | *Association* |
-| `_SourceBillingDocumentType` | *Association* |
-| `_ReferenceScheduleLineCategory` | *Association* |
-| `_ReferenceItemCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TargetSalesDocumentType` | ✓ | |  | `auarn` |
+| `SourceSalesDocumentType` | ✓ | |  | `auarv` |
+| `SourceBillingDocumentType` | ✓ | |  | `fkarv` |
+| `ReferenceScheduleLineCategory` | ✓ | |  | `ettyv` |
+| `ReferenceItemCategory` | ✓ | |  | `pstyv` |
+| `_TargetSalesDocumentType` | | ✓ | | |
+| `_SourceSalesDocumentType` | | ✓ | | |
+| `_SourceBillingDocumentType` | | ✓ | | |
+| `_ReferenceScheduleLineCategory` | | ✓ | | |
+| `_ReferenceItemCategory` | | ✓ | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAAuthorizationType` | `cast( left( dd07t.domvalue_l, 1 ) as auart_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAAuthorizationTypeText` | `cast( ddtext as auart_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAAuthorizationType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as auart_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAAuthorizationTypeText` |  | |  | `cast( ddtext as auart_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

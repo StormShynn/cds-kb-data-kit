@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrglChangeObjectTypeName` | `case when _Text[1:Language=$session.system_language].OrglChangeObjectTypeName is null then _Text[1:Language='E'].OrglChangeObjectTypeName else _Text[1:Language=$session.system_language].OrglChangeObjectTypeName end` |
-| key `OrganizationalChangeObjectType` | `OrganizationalChangeObjectType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrglChangeObjectTypeName` | ✓ | |  | `case when _Text[1:Language=$session.system_language].OrglChangeObjectTypeName is null then _Text[1:Language='E'].OrglChangeObjectTypeName else _Text[1:Language=$session.system_language].OrglChangeObjectTypeName end` |
+| `OrganizationalChangeObjectType` | ✓ | |  |  |
 
 ## Source Code
 

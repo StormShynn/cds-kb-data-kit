@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturnDelivery` | `CustomerReturnDelivery` |
-| key `CustomerReturnDeliveryItem` | `CustomerReturnDeliveryItem` |
-| key `Language` | `Language` |
-| key `LongTextID` | `LongTextID` |
-| `LongText` | `LongText` |
-| `_Delivery` | *Association* |
-| `_Item` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturnDelivery` | ✓ | |  |  |
+| `CustomerReturnDeliveryItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongText` |  | |  |  |
+| `_Delivery` | | ✓ | | |
+| `_Item` | | ✓ | | |
 
 ## Source Code
 

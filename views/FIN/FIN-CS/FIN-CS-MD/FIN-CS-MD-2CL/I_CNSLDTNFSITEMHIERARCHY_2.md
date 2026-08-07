@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `ConsolidationChartOfAccounts` |
-| key `CnsldtnFSItemHierarchy` | `cast( substring(_Hierarchy.UniversalHierarchy, 9, 10 ) as fincs_fsitemhierarchy preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
-| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  |  |
+| `CnsldtnFSItemHierarchy` | ✓ | |  | `cast( substring(_Hierarchy.UniversalHierarchy, 9, 10 ) as fincs_fsitemhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

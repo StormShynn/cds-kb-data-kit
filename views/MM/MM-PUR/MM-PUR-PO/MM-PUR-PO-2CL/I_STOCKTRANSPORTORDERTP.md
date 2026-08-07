@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StockTransportOrder` | `StockTransportOrder` |
-| `StockTransportOrderType` | `StockTransportOrderType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `StockTransportOrderDate` | `StockTransportOrderDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `Language` | `Language` |
-| `ReleaseIsNotCompleted` | `ReleaseIsNotCompleted` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `SupplyingPlant` | `SupplyingPlant` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `IsIntrastatReportingRelevant` | `IsIntrastatReportingRelevant` |
-| `IsIntrastatReportingExcluded` | `IsIntrastatReportingExcluded` |
-| `_StockTransportOrderItem` | *Association* |
-| `_StockTransportOrderNote` | *Association* |
-| `_StockTransportOrderPartner` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_Language` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_SupplyingPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |
+| `StockTransportOrderType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `StockTransportOrderDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `Language` |  | |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `SupplyingPlant` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IsIntrastatReportingRelevant` |  | |  |  |
+| `IsIntrastatReportingExcluded` |  | |  |  |
+| `_StockTransportOrderItem` | | ✓ | | |
+| `_StockTransportOrderNote` | | ✓ | | |
+| `_StockTransportOrderPartner` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_SupplyingPlant` | | ✓ | | |
 
 ## Source Code
 

@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvoicingDocument` | `invdocno` |
-| key `CASequenceNumber` | `consno` |
-| `CAInvcgRefPostingDocType` | `cast(cadoctype as cadoctype_gfn_kk preserving type )` |
-| `CADocumentNumber` | `cast(opbel as opbel_gfn_kk preserving type)` |
-| `CARepetitionItemNumber` | `opupw` |
-| `CABPItemNumber` | `opupk` |
-| `CAInvcgIsPostedInCurrentInvcg` | `xnewdoc` |
-| `_CAInvcgDocHeader` | *Association* |
-| `_CAInvcgRefPostgDocTyp` | *Association* |
-| `_CADocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` |
+| `CASequenceNumber` | ✓ | |  | `consno` |
+| `CAInvcgRefPostingDocType` |  | |  | `cast(cadoctype as cadoctype_gfn_kk preserving type )` |
+| `CADocumentNumber` |  | |  | `cast(opbel as opbel_gfn_kk preserving type)` |
+| `CARepetitionItemNumber` |  | |  | `opupw` |
+| `CABPItemNumber` |  | |  | `opupk` |
+| `CAInvcgIsPostedInCurrentInvcg` |  | |  | `xnewdoc` |
+| `_CAInvcgDocHeader` | | ✓ | | |
+| `_CAInvcgRefPostgDocTyp` | | ✓ | | |
+| `_CADocument` | | ✓ | | |
 
 ## Associations
 

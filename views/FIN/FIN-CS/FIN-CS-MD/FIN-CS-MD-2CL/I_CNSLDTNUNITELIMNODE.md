@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnit` | `cast(left(_node.nodevalue, 25) as fincs_elim_unit preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnit` | ✓ | |  | `cast(left(_node.nodevalue, 25) as fincs_elim_unit preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

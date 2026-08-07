@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingPostingStatus` | `cast( dd07l.domvalue_l as buchk )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingPostingStatus` | ✓ | |  | `cast( dd07l.domvalue_l as buchk )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

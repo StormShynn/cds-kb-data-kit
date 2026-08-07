@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SustainabilityModeOfTransport` | `cast( _Source.SustainabilityModeOfTransport as fincs_sustmodeoftransport preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SustainabilityModeOfTransport` | ✓ | |  | `cast( _Source.SustainabilityModeOfTransport as fincs_sustmodeoftransport preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | |  | `cast( max ( _Source.CnsldtnIsAdditionalMasterData ) as fincs_isadditionalmasterdata preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(dd07t.ddlanguage as spras preserving type)` |
-| key `RevnAcctgPerfOblgnStatus` | `cast(dd07t.domvalue_l as farr_cds_pob_status)` |
-| `RevnAcctgPerfOblgnStatusName` | `dd07t.ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_RAPerfOblgnStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(dd07t.ddlanguage as spras preserving type)` |
+| `RevnAcctgPerfOblgnStatus` | ✓ | |  | `cast(dd07t.domvalue_l as farr_cds_pob_status)` |
+| `RevnAcctgPerfOblgnStatusName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_RAPerfOblgnStatus` | | ✓ | | |
 
 ## Associations
 

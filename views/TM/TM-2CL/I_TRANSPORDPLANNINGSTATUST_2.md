@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdPlanningStatus` | `cast(substring(domvalue_l, 1, 2) as /scmtms/vdm_tor_pln_status preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrdPlanningStatusDesc` | `cast(ddtext as /scmtms/vdm_tor_pln_stat_desc preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdPlanningStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdPlanningStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/vdm_tor_pln_status preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrdPlanningStatusDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tor_pln_stat_desc preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdPlanningStatus` | | ✓ | | |
 
 ## Associations
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeRecordUUID` | `ChangeRecordReferenceTextUUID` |
-| key `Language` | `Language` |
-| `ChgRecordDescriptionText` | `ChgRecordDescriptionText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeRecordUUID` | ✓ | |  | `ChangeRecordReferenceTextUUID` |
+| `Language` | ✓ | |  |  |
+| `ChgRecordDescriptionText` |  | |  |  |
 
 ## Source Code
 

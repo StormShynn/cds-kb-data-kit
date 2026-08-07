@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `}` | `usageType: { dataClass: #MASTER, sizeCategory: #XL, serviceQuality: #A }` |
-| `]` | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `}` |  | |  | `usageType: { dataClass: #MASTER, sizeCategory: #XL, serviceQuality: #A }` |
+| `]` |  | |  | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]` |
 
 ## Source Code
 

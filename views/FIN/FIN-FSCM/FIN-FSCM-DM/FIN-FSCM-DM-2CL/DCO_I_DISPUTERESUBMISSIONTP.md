@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `DCoDisputeUUID` | `} key DCoDisputeUUID` |
-| key `DCoDisputeResubmissionUUID` | `DCoDisputeResubmissionUUID` |
-| `DCoDisputeResubmissionDueDate` | `DCoDisputeResubmissionDueDate` |
-| `DCoDisputeResubmissionActivity` | `DCoDisputeResubmissionActivity` |
-| `DCoDisputeResubmissionStatus` | `DCoDisputeResubmissionStatus` |
-| `DCoDisputeResubmissionNoteText` | `DCoDisputeResubmissionNoteText` |
-| `DCoDisputeResubmsnCreationUser` | `} DCoDisputeResubmsnCreationUser` |
-| `DCoDsputResubmsnCrtnDateTime` | `} DCoDsputResubmsnCrtnDateTime` |
-| `DCoDsputResubmsnLastChgdByUsr` | `} DCoDsputResubmsnLastChgdByUsr` |
-| `DCoDsputResubmsnLstChgDateTime` | `} DCoDsputResubmsnLstChgDateTime` |
-| `DCoDisputeResubmsnClosedByUser` | `DCoDisputeResubmsnClosedByUser` |
-| `DCoDsputResubmsnClsgDateTime` | `DCoDsputResubmsnClsgDateTime` |
-| `_Dispute` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DCoDisputeUUID` |  | |  | `} key DCoDisputeUUID` |
+| `DCoDisputeResubmissionUUID` | ✓ | |  |  |
+| `DCoDisputeResubmissionDueDate` |  | |  |  |
+| `DCoDisputeResubmissionActivity` |  | |  |  |
+| `DCoDisputeResubmissionStatus` |  | |  |  |
+| `DCoDisputeResubmissionNoteText` |  | |  |  |
+| `DCoDisputeResubmsnCreationUser` |  | |  | `} DCoDisputeResubmsnCreationUser` |
+| `DCoDsputResubmsnCrtnDateTime` |  | |  | `} DCoDsputResubmsnCrtnDateTime` |
+| `DCoDsputResubmsnLastChgdByUsr` |  | |  | `} DCoDsputResubmsnLastChgdByUsr` |
+| `DCoDsputResubmsnLstChgDateTime` |  | |  | `} DCoDsputResubmsnLstChgDateTime` |
+| `DCoDisputeResubmsnClosedByUser` |  | |  |  |
+| `DCoDsputResubmsnClsgDateTime` |  | |  |  |
+| `_Dispute` | | ✓ | | |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusPartCreditStanding` | `cast ( dd07l.domvalue_l as bp_solvncy)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusPartCreditStanding` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_solvncy)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotation` | `SalesQuotationPricingElement.SalesQuotation` |
-| key `PricingProcedureStep` | `SalesQuotationPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `SalesQuotationPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `SalesQuotationPricingElement.ConditionApplication` |
-| `ConditionType` | `SalesQuotationPricingElement.ConditionType` |
-| `ConditionTypeName` | `SalesQuotationPricingElement.ConditionTypeName` |
-| `ConditionCalculationType` | `SalesQuotationPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `SalesQuotationPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `SalesQuotationPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `SalesQuotationPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `SalesQuotationPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `SalesQuotationPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `SalesQuotationPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `SalesQuotationPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `SalesQuotationPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `SalesQuotationPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `SalesQuotationPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `SalesQuotationPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `SalesQuotationPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `SalesQuotationPricingElement.ConditionInactiveReason` |
-| `ConditionOrigin` | `SalesQuotationPricingElement.ConditionOrigin` |
-| `SalesQuotationType` | `SalesQuotationPricingElement.SalesQuotationType` |
-| `SalesOrganization` | `SalesQuotationPricingElement.SalesOrganization` |
-| `DistributionChannel` | `SalesQuotationPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `SalesQuotationPricingElement.OrganizationDivision` |
-| `_SalesQuotation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `SalesQuotationType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesQuotation` | | ✓ | | |
 
 ## Source Code
 

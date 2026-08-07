@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MeasurementDocument` | `MeasurementDocument` |
-| `Language` | `Language` |
-| `MeasurementDocumentLongText` | `MeasurementDocumentLongText` |
-| `_MeasurementDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MeasurementDocument` | ✓ | |  |  |
+| `Language` |  | |  |  |
+| `MeasurementDocumentLongText` |  | |  |  |
+| `_MeasurementDocument` | | ✓ | | |
 
 ## Source Code
 

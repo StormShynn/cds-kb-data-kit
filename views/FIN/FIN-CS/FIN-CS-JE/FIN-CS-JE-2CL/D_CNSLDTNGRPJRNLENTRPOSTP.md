@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `abap.char(1)` | `key DummyKey : abap.char(1)` |
-| `FiscalYear` | `gjahr` |
-| `ConsolidationVersion` | `fc_rvers` |
-| `FiscalPeriod` | `poper` |
-| `ConsolidationChartOfAccounts` | `fc_itclg` |
-| `ConsolidationDocumentType` | `fc_docty` |
-| `DocumentItemText` | `sgtxt` |
-| `ConsolidationUnit` | `fincs_consolidationunit` |
-| `ConsolidationGroup` | `fc_congr` |
-| `ConsolidationUnit1` | `fc_bunit1` |
-| `ConsolidationUnit2` | `fc_bunit2` |
-| `D_CnsldtnGrpJrnlEntrPostItemP` | `_Item : composition [1..*] of D_CnsldtnGrpJrnlEntrPostItemP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `abap.char(1)` |  | |  | `key DummyKey : abap.char(1)` |
+| `FiscalYear` |  | |  | `gjahr` |
+| `ConsolidationVersion` |  | |  | `fc_rvers` |
+| `FiscalPeriod` |  | |  | `poper` |
+| `ConsolidationChartOfAccounts` |  | |  | `fc_itclg` |
+| `ConsolidationDocumentType` |  | |  | `fc_docty` |
+| `DocumentItemText` |  | |  | `sgtxt` |
+| `ConsolidationUnit` |  | |  | `fincs_consolidationunit` |
+| `ConsolidationGroup` |  | |  | `fc_congr` |
+| `ConsolidationUnit1` |  | |  | `fc_bunit1` |
+| `ConsolidationUnit2` |  | |  | `fc_bunit2` |
+| `D_CnsldtnGrpJrnlEntrPostItemP` |  | |  | `_Item : composition [1..*] of D_CnsldtnGrpJrnlEntrPostItemP` |
 
 ## Source Code
 

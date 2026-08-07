@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvoicingDocument` | `invdocno` |
-| key `CADocumentNumber` | `opbel` |
-| key `CABPItemNumber` | `opupk` |
-| key `CASequenceNumber` | `consno` |
-| `CADocumentNumberSrce` | `opbel_src` |
-| `CARepetitionItemNumberSrce` | `opupw_src` |
-| `CABusinessPartnerItemNmbrSrce` | `opupk_src` |
-| `CASubstituteDocumentNumberSrce` | `abwbl_src` |
-| `CAAmountInTransactionCrcySrce` | `betrw_src` |
-| `TransactionCurrency` | `waers` |
-| `CAInvcgChrgAndDiscAmount` | `chgamt` |
-| `_CAInvcgDocHeader` | *Association* |
-| `_CADocument` | *Association* |
-| `_CADocumentSrce` | *Association* |
-| `_TransactionCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` |
+| `CADocumentNumber` | ✓ | |  | `opbel` |
+| `CABPItemNumber` | ✓ | |  | `opupk` |
+| `CASequenceNumber` | ✓ | |  | `consno` |
+| `CADocumentNumberSrce` |  | |  | `opbel_src` |
+| `CARepetitionItemNumberSrce` |  | |  | `opupw_src` |
+| `CABusinessPartnerItemNmbrSrce` |  | |  | `opupk_src` |
+| `CASubstituteDocumentNumberSrce` |  | |  | `abwbl_src` |
+| `CAAmountInTransactionCrcySrce` |  | |  | `betrw_src` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `CAInvcgChrgAndDiscAmount` |  | |  | `chgamt` |
+| `_CAInvcgDocHeader` | | ✓ | | |
+| `_CADocument` | | ✓ | | |
+| `_CADocumentSrce` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
 
 ## Associations
 

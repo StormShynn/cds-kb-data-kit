@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SuperordinateEquipment` | `hequi` |
-| `EquipInstallationPositionNmbr` | `posnr` |
-| `EquipInstallationPosInChar` | `installpos` |
-| `FunctionalLocation` | `tplnr` |
-| `EquipmentInstallationDate` | `aedat` |
-| `EquipmentInstallationTime` | `timbi` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuperordinateEquipment` |  | |  | `hequi` |
+| `EquipInstallationPositionNmbr` |  | |  | `posnr` |
+| `EquipInstallationPosInChar` |  | |  | `installpos` |
+| `FunctionalLocation` |  | |  | `tplnr` |
+| `EquipmentInstallationDate` |  | |  | `aedat` |
+| `EquipmentInstallationTime` |  | |  | `timbi` |
 
 ## Source Code
 

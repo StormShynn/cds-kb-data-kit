@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcurementBlock` | `tq04a.sperrfkt` |
-| `_ProcurementBlockText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcurementBlock` | ✓ | |  | `sperrfkt` |
+| `_ProcurementBlockText` | | ✓ | | |
 
 ## Associations
 

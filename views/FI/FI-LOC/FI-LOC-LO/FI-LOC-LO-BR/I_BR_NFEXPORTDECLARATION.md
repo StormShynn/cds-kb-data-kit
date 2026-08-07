@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `docnum` |
-| `BR_DUE` | `due_number` |
-| `BR_DUEIssuedDate` | `due_issued_date` |
-| `BR_DUEType` | `due_type` |
-| `BR_BillOfLading` | `bill_lading_number` |
-| `BR_BillOfLadingDate` | `bill_lading_date` |
-| `BR_BillOfLadingType` | `bill_lading_type` |
-| `BR_DUEExportConfirmationDate` | `export_confirmation_date` |
-| `_BR_DUEType` | *Association* |
-| `_BR_BillOfLadingType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_DUE` |  | |  | `due_number` |
+| `BR_DUEIssuedDate` |  | |  | `due_issued_date` |
+| `BR_DUEType` |  | |  | `due_type` |
+| `BR_BillOfLading` |  | |  | `bill_lading_number` |
+| `BR_BillOfLadingDate` |  | |  | `bill_lading_date` |
+| `BR_BillOfLadingType` |  | |  | `bill_lading_type` |
+| `BR_DUEExportConfirmationDate` |  | |  | `export_confirmation_date` |
+| `_BR_DUEType` | | ✓ | | |
+| `_BR_BillOfLadingType` | | ✓ | | |
 
 ## Associations
 

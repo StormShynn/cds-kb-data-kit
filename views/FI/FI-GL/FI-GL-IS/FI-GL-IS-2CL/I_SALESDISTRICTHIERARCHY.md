@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDistrictHierarchy` | `cast ( hrrp_dir_n.hryid as fis_hryid_salesdistrict preserving type )` |
-| key `ValidityEndDate` | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
-| `ValidityStartDate` | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |
-| `LastChangedByUser` | `hrrp_dir_n.upduser` |
-| `LastChangeDateTime` | `hrrp_dir_n.updtime` |
-| `HierarchyShortID` | `hrrp_dir_n.hrysid` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDistrictHierarchy` | ✓ | |  | `cast ( hrrp_dir_n.hryid as fis_hryid_salesdistrict preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |
+| `LastChangedByUser` |  | |  | `upduser` |
+| `LastChangeDateTime` |  | |  | `updtime` |
+| `HierarchyShortID` |  | |  | `hrysid` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

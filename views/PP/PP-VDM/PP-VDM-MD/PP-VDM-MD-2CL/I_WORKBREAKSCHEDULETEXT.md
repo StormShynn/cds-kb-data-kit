@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShiftGrouping` | `txt.schgrup` |
-| key `WorkBreakSchedule` | `txt.paplan` |
-| key `Language` | `txt.spras` |
-| `WorkBreakScheduleName` | `cast(txt.ktext as workbreakschedulename preserving type)` |
-| `_WorkBreakSchedule` | *Association* |
-| `_Language` | *Association* |
-| `_ShiftGrouping` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShiftGrouping` | ✓ | |  | `schgrup` |
+| `WorkBreakSchedule` | ✓ | |  | `paplan` |
+| `Language` | ✓ | |  | `spras` |
+| `WorkBreakScheduleName` |  | |  | `cast(txt.ktext as workbreakschedulename preserving type)` |
+| `_WorkBreakSchedule` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_ShiftGrouping` | | ✓ | | |
 
 ## Associations
 

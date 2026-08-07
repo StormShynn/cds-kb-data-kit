@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAScrtyDepDocBPItemStatus` | `cast( left( domvalue_l,1) as secdep_doci_status_kk )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAScrtyDepDocBPItemStatus` | ✓ | |  | `cast( left( domvalue_l,1) as secdep_doci_status_kk )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

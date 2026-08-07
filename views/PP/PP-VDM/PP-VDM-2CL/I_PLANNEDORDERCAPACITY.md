@@ -28,52 +28,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityRequirement` | `kbed.CapacityRequirement` |
-| key `CapacityRequirementItem` | `kbed.CapacityRequirementItem` |
-| key `CapacityRqmtItemCapacity` | `kbed.CapacityRqmtItemCapacity` |
-| `PlannedOrder` | `kbed.PlannedOrder` |
-| `WorkCenterInternalID` | `kbed.WorkCenterInternalID` |
-| `WorkCenterType` | `kbed.WorkCenterTypeCode_2` |
-| `CapacityInternalID` | `kbed.CapacityInternalID` |
-| `CapacityCategory` | `kbed._Capacity.CapacityCategoryCode` |
-| `CapacityRqmtConfirmation` | `kbed.CapacityRqmtConfirmation` |
-| `OrderObjectInternalID` | `kbed.OrderObjectInternalID` |
-| `Sequence` | `kbed.BillOfOperationsSequence` |
-| `Operation` | `kbed.Operation_2` |
-| `SubOperation` | `cast( case when BOOSubOp.SuperiorOperationInternalID > '00000000' then BOOSubOp.Operation end as vdm_uvorn preserving type)` |
-| `OperationText` | `case when BOOSubOp.SuperiorOperationInternalID > '00000000' then BOOSubOp.OperationText else kbed._BOOOperationInternalVersion.OperationText end` |
-| `ActualNumberOfSplits` | `kbed.ActualNumberOfSplits` |
-| `CapacityRequirementSplit` | `kbed.CapacityRequirementSplit` |
-| `OperationLatestStartDate` | `kbed.OperationLatestStartDate` |
-| `OperationLatestStartTime` | `kbed.OperationLatestStartTime` |
-| `OperationLatestEndDate` | `kbed.OperationLatestEndDate` |
-| `OperationLatestEndTime` | `kbed.OperationLatestEndTime` |
-| `OperationEarliestStartDate` | `kbed.OperationEarliestStartDate` |
-| `OperationEarliestStartTime` | `kbed.OperationEarliestStartTime` |
-| `OperationEarliestEndDate` | `kbed.OperationEarliestEndDate` |
-| `OperationEarliestEndTime` | `kbed.OperationEarliestEndTime` |
-| `OpErlstSchedldProcgStrtDte` | `kbed.ErlstSchedldProcStrtDte` |
-| `OpErlstSchedldProcgStrtTme` | `kbed.ErlstSchedldProcStrtTime` |
-| `OpErlstSchedldTrdwnStrtDte` | `kbed.ErlstSchedldTrdwnStrtDte` |
-| `OpErlstSchedldTrdwnStrtTme` | `kbed.ErlstSchedldTrdwnStrtTime` |
-| `OpLtstSchedldProcgStrtDte` | `kbed.LtstSchedldProcStrtDte` |
-| `OpLtstSchedldProcgStrtTme` | `kbed.LtstSchedldProcStrtTime` |
-| `OpLtstSchedldTrdwnStrtDte` | `kbed.LtstSchedldTrdwnStrtDte` |
-| `OpLtstSchedldTrdwnStrtTme` | `kbed.LtstSchedldTrdwnStrtTime` |
-| `CapacityRequirementUnit` | `kbed.CapacityRequirementUnit` |
-| `ScheduledCapReqOpSegSetupDurn` | `kbed.ScheduledCapReqOpSegSetupDurn` |
-| `RemainingCapReqOpSegSetupDurn` | `kbed.RemainingCapReqOpSegSetupDurn` |
-| `ScheduledCapReqOpSegProcgDurn` | `kbed.ScheduledCapReqOpSegProcgDurn` |
-| `RemainingCapReqOpSegProcgDurn` | `kbed.RemainingCapReqOpSegProcgDurn` |
-| `ScheduledCapReqOpSegTrdwnDurn` | `kbed.ScheduledCapReqOpSegTrdwnDurn` |
-| `RemainingCapReqOpSegTrdwnDurn` | `kbed.RemainingCapReqOpSegTrdwnDurn` |
-| `_CapacityCategory` | *Association* |
-| `_WorkCenterType` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_OrderStatusObject` | *Association* |
-| `_PlannedOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityRequirement` | ✓ | |  |  |
+| `CapacityRequirementItem` | ✓ | |  |  |
+| `CapacityRqmtItemCapacity` | ✓ | |  |  |
+| `PlannedOrder` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterType` |  | |  | `WorkCenterTypeCode_2` |
+| `CapacityInternalID` |  | |  |  |
+| `CapacityCategory` |  | |  | `CapacityCategoryCode` |
+| `CapacityRqmtConfirmation` |  | |  |  |
+| `OrderObjectInternalID` |  | |  |  |
+| `Sequence` |  | |  | `BillOfOperationsSequence` |
+| `Operation` |  | |  | `Operation_2` |
+| `SubOperation` |  | |  | `cast( case when BOOSubOp.SuperiorOperationInternalID > '00000000' then BOOSubOp.Operation end as vdm_uvorn preserving type)` |
+| `OperationText` |  | |  | `case when BOOSubOp.SuperiorOperationInternalID > '00000000' then BOOSubOp.OperationText else kbed._BOOOperationInternalVersion.OperationText end` |
+| `ActualNumberOfSplits` |  | |  |  |
+| `CapacityRequirementSplit` |  | |  |  |
+| `OperationLatestStartDate` |  | |  |  |
+| `OperationLatestStartTime` |  | |  |  |
+| `OperationLatestEndDate` |  | |  |  |
+| `OperationLatestEndTime` |  | |  |  |
+| `OperationEarliestStartDate` |  | |  |  |
+| `OperationEarliestStartTime` |  | |  |  |
+| `OperationEarliestEndDate` |  | |  |  |
+| `OperationEarliestEndTime` |  | |  |  |
+| `OpErlstSchedldProcgStrtDte` |  | |  | `ErlstSchedldProcStrtDte` |
+| `OpErlstSchedldProcgStrtTme` |  | |  | `ErlstSchedldProcStrtTime` |
+| `OpErlstSchedldTrdwnStrtDte` |  | |  | `ErlstSchedldTrdwnStrtDte` |
+| `OpErlstSchedldTrdwnStrtTme` |  | |  | `ErlstSchedldTrdwnStrtTime` |
+| `OpLtstSchedldProcgStrtDte` |  | |  | `LtstSchedldProcStrtDte` |
+| `OpLtstSchedldProcgStrtTme` |  | |  | `LtstSchedldProcStrtTime` |
+| `OpLtstSchedldTrdwnStrtDte` |  | |  | `LtstSchedldTrdwnStrtDte` |
+| `OpLtstSchedldTrdwnStrtTme` |  | |  | `LtstSchedldTrdwnStrtTime` |
+| `CapacityRequirementUnit` |  | |  |  |
+| `ScheduledCapReqOpSegSetupDurn` |  | |  |  |
+| `RemainingCapReqOpSegSetupDurn` |  | |  |  |
+| `ScheduledCapReqOpSegProcgDurn` |  | |  |  |
+| `RemainingCapReqOpSegProcgDurn` |  | |  |  |
+| `ScheduledCapReqOpSegTrdwnDurn` |  | |  |  |
+| `RemainingCapReqOpSegTrdwnDurn` |  | |  |  |
+| `_CapacityCategory` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_OrderStatusObject` | | ✓ | | |
+| `_PlannedOrder` | | ✓ | | |
 
 ## Associations
 

@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceEntrySheet` | `ServiceEntrySheet` |
-| `ServiceEntrySheetName` | `ServiceEntrySheetName` |
-| `Supplier` | `Supplier` |
-| `SupplierName` | `SupplierName` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderCurrency` | `PurchaseOrderCurrency` |
-| `IsDeleted` | `IsDeleted` |
-| `ApprovalStatus` | `ApprovalStatus` |
-| `ApprovalDateTime` | `ApprovalDateTime` |
-| `ResponsiblePerson` | `ResponsiblePerson` |
-| `SESOriginObjectType` | `SESOriginObjectType` |
-| `Currency` | `Currency` |
-| `MaterialDocument` | `MaterialDocument` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `PurgDocExternalSystem` | `PurgDocExternalSystem` |
-| `PurgDocExternalReference` | `PurgDocExternalReference` |
-| `ExternalRevisionDateTime` | `ExternalRevisionDateTime` |
-| `PostingDate` | `PostingDate` |
-| `PricingDocument` | `PricingDocument` |
-| `TotalNetAmount` | `TotalNetAmount` |
-| `TotalSESNetAmountInclSalesTax` | `TotalSESNetAmountInclSalesTax` |
-| `_ServiceEntrySheetItem` | *Association* |
-| `_ServiceEntrySheetNote` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceEntrySheet` | ✓ | |  |  |
+| `ServiceEntrySheetName` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierName` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderCurrency` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ApprovalStatus` |  | |  |  |
+| `ApprovalDateTime` |  | |  |  |
+| `ResponsiblePerson` |  | |  |  |
+| `SESOriginObjectType` |  | |  |  |
+| `Currency` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `PurgDocExternalSystem` |  | |  |  |
+| `PurgDocExternalReference` |  | |  |  |
+| `ExternalRevisionDateTime` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `PricingDocument` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `TotalSESNetAmountInclSalesTax` |  | |  |  |
+| `_ServiceEntrySheetItem` | | ✓ | | |
+| `_ServiceEntrySheetNote` | | ✓ | | |
 
 ## Source Code
 

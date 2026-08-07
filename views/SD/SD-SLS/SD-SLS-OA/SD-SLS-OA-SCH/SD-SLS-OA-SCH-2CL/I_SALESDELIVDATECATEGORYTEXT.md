@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDelivDateCategory` | `substring( domvalue_l,1,1 )` |
-| key `Language` | `ddlanguage` |
-| `SalesDelivDateCategoryName` | `ddtext` |
-| `_SalesDelivDateCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDelivDateCategory` | ✓ | |  | `substring( domvalue_l,1,1 )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SalesDelivDateCategoryName` |  | |  | `ddtext` |
+| `_SalesDelivDateCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

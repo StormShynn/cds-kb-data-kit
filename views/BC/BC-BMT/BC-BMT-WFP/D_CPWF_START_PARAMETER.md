@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CpWfDefId` | `swf_cpwf_defid` |
-| `PaWfDefId` | `swf_cpwf_defid_long` |
-| `RetentionTime` | `swf_cpwf_retention` |
-| `Consumer` | `swf_cpwf_consumer` |
-| `CallbackClass` | `seoclsname` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CpWfDefId` |  | |  | `swf_cpwf_defid` |
+| `PaWfDefId` |  | |  | `swf_cpwf_defid_long` |
+| `RetentionTime` |  | |  | `swf_cpwf_retention` |
+| `Consumer` |  | |  | `swf_cpwf_consumer` |
+| `CallbackClass` |  | |  | `seoclsname` |
 
 ## Source Code
 

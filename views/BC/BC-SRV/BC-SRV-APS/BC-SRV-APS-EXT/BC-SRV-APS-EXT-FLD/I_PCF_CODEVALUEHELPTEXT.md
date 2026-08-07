@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `NodeName` | `node_name` |
-| key `FieldName` | `field_name` |
-| key `Language` | `language` |
-| key `CodeValue` | `code_value` |
-| `Description` | `description` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `NodeName` | ✓ | |  | `node_name` |
+| `FieldName` | ✓ | |  | `field_name` |
+| `Language` | ✓ | |  | `language` |
+| `CodeValue` | ✓ | |  | `code_value` |
+| `Description` |  | |  | `description` |
 
 ## Source Code
 

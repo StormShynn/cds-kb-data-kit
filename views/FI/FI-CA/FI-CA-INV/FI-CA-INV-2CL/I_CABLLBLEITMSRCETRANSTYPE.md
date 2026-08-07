@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABllbleItmSourceTransType` | `_tfk8103.srctatype` |
-| `CABllbleItmSourceTransSemObj` | `semantic_object` |
-| `_CABllbleItmSrceTransTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABllbleItmSourceTransType` | ✓ | | `_tfk8103` | `srctatype` |
+| `CABllbleItmSourceTransSemObj` |  | |  | `semantic_object` |
+| `_CABllbleItmSrceTransTypeText` | | ✓ | | |
 
 ## Associations
 

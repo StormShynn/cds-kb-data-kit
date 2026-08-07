@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionInactiveReason` | `cast ( substring( domvalue_l, 1, 1 ) as kinak )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionInactiveReason` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kinak )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WrntyClaimReturnedPartner` | `partn` |
-| key `WrntySupplierReturnParts` | `retpa` |
-| `WrntyIsPartlyReceived` | `prtly` |
-| `WrntyPartsIsDeadlineRelevant` | `strel` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WrntyClaimReturnedPartner` | ✓ | |  | `partn` |
+| `WrntySupplierReturnParts` | ✓ | |  | `retpa` |
+| `WrntyIsPartlyReceived` |  | |  | `prtly` |
+| `WrntyPartsIsDeadlineRelevant` |  | |  | `strel` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

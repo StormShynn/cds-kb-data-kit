@@ -28,109 +28,109 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PerformanceObligation` | `PerformanceObligation` |
-| key `RevenueAccountingContract` | `RevenueAccountingContract` |
-| `RAPerfOblgnDistinctType` | `RAPerfOblgnDistinctType` |
-| `PerformanceObligationClass` | `PerformanceObligationClass` |
-| `ContractualPrcInSlsDocCrcy` | `ContractualPrcInSlsDocCrcy` |
-| `SSPriceInSalesDocCrcy` | `SSPriceInSalesDocCrcy` |
-| `AllocatedPriceInSalesDocCrcy` | `AllocatedPriceInSalesDocCrcy` |
-| `SalesDocumentCurrency` | `SalesDocumentCurrency` |
-| `RevnAcctgSuspensionDate` | `RevnAcctgSuspensionDate` |
-| `PerfOblgnEffectiveQuantity` | `PerfOblgnEffectiveQuantity` |
-| `PerfOblgnEffectiveQuantityUnit` | `PerfOblgnEffectiveQuantityUnit` |
-| `RevnAcctgPerfOblgnStatus` | `RevnAcctgPerfOblgnStatus` |
-| `CompanyCode` | `CompanyCode` |
-| `CompanyCodeName` | `CompanyCodeName` |
-| `BusinessPartner` | `BusinessPartner` |
-| `BusinessPartnerName` | `BusinessPartnerName` |
-| `Customer` | `Customer` |
-| `PerfOblgnFulfillmentType` | `PerfOblgnFulfillmentType` |
-| `PerfOblgnEventType` | `PerfOblgnEventType` |
-| `PerfOblgnStartDateType` | `PerfOblgnStartDateType` |
-| `PerformanceObligationStartDate` | `PerformanceObligationStartDate` |
-| `PerformanceObligationEndDate` | `PerformanceObligationEndDate` |
-| `PerfObligationDuration` | `PerfObligationDuration` |
-| `PerfObligationDurationUnit` | `PerfObligationDurationUnit` |
-| `PerfObligationDeferralMethod` | `PerfObligationDeferralMethod` |
-| `PerfOblgnIsExclFromPriceAlloc` | `PerfOblgnIsExclFromPriceAlloc` |
-| `RAPerfOblgnIsResidual` | `RAPerfOblgnIsResidual` |
-| `RAPerfOblgnInvoiceEffectType` | `RAPerfOblgnInvoiceEffectType` |
-| `FunctionalArea` | `FunctionalArea` |
-| `BusinessArea` | `BusinessArea` |
-| `ProfitCenter` | `ProfitCenter` |
-| `Segment` | `Segment` |
-| `CostCenter` | `CostCenter` |
-| `OrderID` | `OrderID` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `RAPerfOblgnCompletionDate` | `RAPerfOblgnCompletionDate` |
-| `PerfOblgnIsFinallyInvoiced` | `PerfOblgnIsFinallyInvoiced` |
-| `PerfOblgnIsFullyFulfilled` | `PerfOblgnIsFullyFulfilled` |
-| `PerfOblgnIsSoftDeleted` | `PerfOblgnIsSoftDeleted` |
-| `RAPerfOblgnIsManuallyChanged` | `RAPerfOblgnIsManuallyChanged` |
-| `PerfOblgnHasManualSpreading` | `PerfOblgnHasManualSpreading` |
-| `RAAttributeHasConflict` | `RAAttributeHasConflict` |
-| `PerfOblgnHasSprdgConflict` | `PerfOblgnHasSprdgConflict` |
-| `RAPerfOblgnFinalizationDate` | `RAPerfOblgnFinalizationDate` |
-| `RevnAcctgSuspensionReason` | `RevnAcctgSuspensionReason` |
-| `PerfOblgnContractualQuantity` | `PerfOblgnContractualQuantity` |
-| `PerfOblgnContractualQtyUnit` | `PerfOblgnContractualQtyUnit` |
-| `PerfOblgnCreatedByUser` | `PerfOblgnCreatedByUser` |
-| `CreatedByUserDescription` | `CreatedByUserDescription` |
-| `PerfOblgnCreationDate` | `PerfOblgnCreationDate` |
-| `PerfOblgnLastChangedByUsr` | `PerfOblgnLastChangedByUsr` |
-| `PerfOblgnLastChangeDate` | `PerfOblgnLastChangeDate` |
-| `RAHigherLevelPerfOblgn` | `RAHigherLevelPerfOblgn` |
-| `RootPerformanceObligationInBOM` | `RootPerformanceObligationInBOM` |
-| `RAPerformanceObligationType` | `RAPerformanceObligationType` |
-| `RAPerfOblgnCategory` | `RAPerfOblgnCategory` |
-| `PerformanceObligationRole` | `PerformanceObligationRole` |
-| `RAPerfOblgnIsManuallyCreated` | `RAPerfOblgnIsManuallyCreated` |
-| `RatioUnit` | `RatioUnit` |
-| `RAUnivRevnRecgnIntegType` | `RAUnivRevnRecgnIntegType` |
-| `RAContrIsNotActvUnivRevnRecgn` | `RAContrIsNotActvUnivRevnRecgn` |
-| `SalesDocument` | `SalesDocument` |
-| `SalesDocumentItem` | `SalesDocumentItem` |
-| `ServiceDocument` | `ServiceDocument` |
-| `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `WBSElement` | `WBSElement` |
-| `WBSDescription` | `WBSDescription` |
-| `SSPriceToleranceMethod` | `SSPriceToleranceMethod` |
-| `SSPriceToleranceAmount` | `SSPriceToleranceAmount` |
-| `SSPriceTolerancePercent` | `SSPriceTolerancePercent` |
-| `RevnAcctgItmQuantityUnit` | `RevnAcctgItmQuantityUnit` |
-| `ControllingArea` | `ControllingArea` |
-| `ProfitabilitySegment` | `ProfitabilitySegment` |
-| `RAPerfOblgnRevnFrmAllocAccount` | `RAPerfOblgnRevnFrmAllocAccount` |
-| `OperatingConcern` | `OperatingConcern` |
-| `GLAccountName` | `GLAccountName` |
-| `RAFulfillmentTypeIsTimeBased` | `RAFulfillmentTypeIsTimeBased` |
-| `RAFulfillmentTypeIsEventBased` | `RAFulfillmentTypeIsEventBased` |
-| `AccountingPrinciple` | `AccountingPrinciple` |
-| `RAPerfOblgnIsCostRecognizable` | `RAPerfOblgnIsCostRecognizable` |
-| `PerfOblgnDeliveredQuantity` | `PerfOblgnDeliveredQuantity` |
-| `RAItemDifferenceToDeliveredQty` | `RAItemDifferenceToDeliveredQty` |
-| `RAFulfillmentIsValueBased` | `RAFulfillmentIsValueBased` |
-| `RevnAcctgSalesOrganization` | `RevnAcctgSalesOrganization` |
-| `PerUnitSSPriceInSlsDocCrcy` | `PerUnitSSPriceInSlsDocCrcy` |
-| `_Contract` | *Association* |
-| `_PerfOblgnDistinctType` | *Association* |
-| `_RAPerfOblgnStatus` | *Association* |
-| `_FulfillmentType` | *Association* |
-| `_PerfObligationEventType` | *Association* |
-| `_PerfOblgnStartDateType` | *Association* |
-| `_PerfOblgnDeferralMethod` | *Association* |
-| `_PerfOblgnInvcEffctType` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_RAPerfOblgnCategory` | *Association* |
-| `_PerformanceObligationRole` | *Association* |
-| `_RAUnivRevnRecgnIntegType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PerformanceObligation` | ✓ | |  |  |
+| `RevenueAccountingContract` | ✓ | |  |  |
+| `RAPerfOblgnDistinctType` |  | |  |  |
+| `PerformanceObligationClass` |  | |  |  |
+| `ContractualPrcInSlsDocCrcy` |  | |  |  |
+| `SSPriceInSalesDocCrcy` |  | |  |  |
+| `AllocatedPriceInSalesDocCrcy` |  | |  |  |
+| `SalesDocumentCurrency` |  | |  |  |
+| `RevnAcctgSuspensionDate` |  | |  |  |
+| `PerfOblgnEffectiveQuantity` |  | |  |  |
+| `PerfOblgnEffectiveQuantityUnit` |  | |  |  |
+| `RevnAcctgPerfOblgnStatus` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CompanyCodeName` |  | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `BusinessPartnerName` |  | |  |  |
+| `Customer` |  | |  |  |
+| `PerfOblgnFulfillmentType` |  | |  |  |
+| `PerfOblgnEventType` |  | |  |  |
+| `PerfOblgnStartDateType` |  | |  |  |
+| `PerformanceObligationStartDate` |  | |  |  |
+| `PerformanceObligationEndDate` |  | |  |  |
+| `PerfObligationDuration` |  | |  |  |
+| `PerfObligationDurationUnit` |  | |  |  |
+| `PerfObligationDeferralMethod` |  | |  |  |
+| `PerfOblgnIsExclFromPriceAlloc` |  | |  |  |
+| `RAPerfOblgnIsResidual` |  | |  |  |
+| `RAPerfOblgnInvoiceEffectType` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `Segment` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `RAPerfOblgnCompletionDate` |  | |  |  |
+| `PerfOblgnIsFinallyInvoiced` |  | |  |  |
+| `PerfOblgnIsFullyFulfilled` |  | |  |  |
+| `PerfOblgnIsSoftDeleted` |  | |  |  |
+| `RAPerfOblgnIsManuallyChanged` |  | |  |  |
+| `PerfOblgnHasManualSpreading` |  | |  |  |
+| `RAAttributeHasConflict` |  | |  |  |
+| `PerfOblgnHasSprdgConflict` |  | |  |  |
+| `RAPerfOblgnFinalizationDate` |  | |  |  |
+| `RevnAcctgSuspensionReason` |  | |  |  |
+| `PerfOblgnContractualQuantity` |  | |  |  |
+| `PerfOblgnContractualQtyUnit` |  | |  |  |
+| `PerfOblgnCreatedByUser` |  | |  |  |
+| `CreatedByUserDescription` |  | |  |  |
+| `PerfOblgnCreationDate` |  | |  |  |
+| `PerfOblgnLastChangedByUsr` |  | |  |  |
+| `PerfOblgnLastChangeDate` |  | |  |  |
+| `RAHigherLevelPerfOblgn` |  | |  |  |
+| `RootPerformanceObligationInBOM` |  | |  |  |
+| `RAPerformanceObligationType` |  | |  |  |
+| `RAPerfOblgnCategory` |  | |  |  |
+| `PerformanceObligationRole` |  | |  |  |
+| `RAPerfOblgnIsManuallyCreated` |  | |  |  |
+| `RatioUnit` |  | |  |  |
+| `RAUnivRevnRecgnIntegType` |  | |  |  |
+| `RAContrIsNotActvUnivRevnRecgn` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `WBSElement` |  | |  |  |
+| `WBSDescription` |  | |  |  |
+| `SSPriceToleranceMethod` |  | |  |  |
+| `SSPriceToleranceAmount` |  | |  |  |
+| `SSPriceTolerancePercent` |  | |  |  |
+| `RevnAcctgItmQuantityUnit` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ProfitabilitySegment` |  | |  |  |
+| `RAPerfOblgnRevnFrmAllocAccount` |  | |  |  |
+| `OperatingConcern` |  | |  |  |
+| `GLAccountName` |  | |  |  |
+| `RAFulfillmentTypeIsTimeBased` |  | |  |  |
+| `RAFulfillmentTypeIsEventBased` |  | |  |  |
+| `AccountingPrinciple` |  | |  |  |
+| `RAPerfOblgnIsCostRecognizable` |  | |  |  |
+| `PerfOblgnDeliveredQuantity` |  | |  |  |
+| `RAItemDifferenceToDeliveredQty` |  | |  |  |
+| `RAFulfillmentIsValueBased` |  | |  |  |
+| `RevnAcctgSalesOrganization` |  | |  |  |
+| `PerUnitSSPriceInSlsDocCrcy` |  | |  |  |
+| `_Contract` | | ✓ | | |
+| `_PerfOblgnDistinctType` | | ✓ | | |
+| `_RAPerfOblgnStatus` | | ✓ | | |
+| `_FulfillmentType` | | ✓ | | |
+| `_PerfObligationEventType` | | ✓ | | |
+| `_PerfOblgnStartDateType` | | ✓ | | |
+| `_PerfOblgnDeferralMethod` | | ✓ | | |
+| `_PerfOblgnInvcEffctType` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_RAPerfOblgnCategory` | | ✓ | | |
+| `_PerformanceObligationRole` | | ✓ | | |
+| `_RAUnivRevnRecgnIntegType` | | ✓ | | |
 
 ## Source Code
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `SuplrCarrierConfExpectation` | `cast( left(dd07t.domvalue_l, 1 ) as /spe/carrier_cnf preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `SuplrCarrConfExpectationName` | `dd07t.ddtext` |
-| `_Language` | *Association* |
-| `_SuplrCarrierConfExpectation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `SuplrCarrierConfExpectation` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1 ) as /spe/carrier_cnf preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `SuplrCarrConfExpectationName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_SuplrCarrierConfExpectation` | | ✓ | | |
 
 ## Associations
 

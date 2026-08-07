@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `CompanyCode` | `bukrs` |
-| key `JointVenture` | `cast( vname as jv_name_cds preserving type )` |
-| key `JntOpgAgrmtEquityGrp` | `egrup` |
-| `JntOpgAgrmtEquityGrpText` | `cast( egtxt as jv_egtxt_cds preserving type )` |
-| `_CompanyCode` | *Association* |
-| `_Language` | *Association* |
-| `_JntVntrEquityGrp` | *Association* |
-| `_JointVentureMasterFld` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name_cds preserving type )` |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |
+| `JntOpgAgrmtEquityGrpText` |  | |  | `cast( egtxt as jv_egtxt_cds preserving type )` |
+| `_CompanyCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_JntVntrEquityGrp` | | ✓ | | |
+| `_JointVentureMasterFld` | | ✓ | | |
 
 ## Associations
 

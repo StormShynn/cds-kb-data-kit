@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `ProductComponentBackflushCode` | `cast ( domvalue_l as rgekm )` |
-| `Name` | `cast ( ddtext as val_text )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `ProductComponentBackflushCode` | ✓ | |  | `cast ( domvalue_l as rgekm )` |
+| `Name` |  | |  | `cast ( ddtext as val_text )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

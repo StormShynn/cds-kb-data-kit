@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcValueCombinationUUID` | `CharcValueCombinationUUID` |
-| `ProductAllocationObjectUUID` | `ProductAllocationObjectUUID` |
-| `ProductAllocationObject` | `ProductAllocationObject` |
-| `ProdAllocCharc01` | `ProdAllocCharc01` |
-| `ProdAllocCharc02` | `ProdAllocCharc02` |
-| `ProdAllocCharc03` | `ProdAllocCharc03` |
-| `ProdAllocCharc04` | `ProdAllocCharc04` |
-| `ProdAllocCharc05` | `ProdAllocCharc05` |
-| `ProdAllocCharc06` | `ProdAllocCharc06` |
-| `ProdAllocCharc07` | `ProdAllocCharc07` |
-| `ProdAllocCharc08` | `ProdAllocCharc08` |
-| `ProdAllocCharc09` | `ProdAllocCharc09` |
-| `ProdAllocCharc10` | `ProdAllocCharc10` |
-| `ProdAllocCharcValueCombnCmnt` | `ProdAllocCharcValueCombnCmnt` |
-| `ProdAllocCharcConstraintStatus` | `ProdAllocCharcConstraintStatus` |
-| `ProdAllocationActivationStatus` | `ProdAllocationActivationStatus` |
-| `CharcValAuthznGroup` | `CharcValAuthznGroup` |
-| `_ProdAllocationObjectTP` | *Association* |
-| `_ProdAllocObjTimeSeriesTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcValueCombinationUUID` | ✓ | |  |  |
+| `ProductAllocationObjectUUID` |  | |  |  |
+| `ProductAllocationObject` |  | |  |  |
+| `ProdAllocCharc01` |  | |  |  |
+| `ProdAllocCharc02` |  | |  |  |
+| `ProdAllocCharc03` |  | |  |  |
+| `ProdAllocCharc04` |  | |  |  |
+| `ProdAllocCharc05` |  | |  |  |
+| `ProdAllocCharc06` |  | |  |  |
+| `ProdAllocCharc07` |  | |  |  |
+| `ProdAllocCharc08` |  | |  |  |
+| `ProdAllocCharc09` |  | |  |  |
+| `ProdAllocCharc10` |  | |  |  |
+| `ProdAllocCharcValueCombnCmnt` |  | |  |  |
+| `ProdAllocCharcConstraintStatus` |  | |  |  |
+| `ProdAllocationActivationStatus` |  | |  |  |
+| `CharcValAuthznGroup` |  | |  |  |
+| `_ProdAllocationObjectTP` | | ✓ | | |
+| `_ProdAllocObjTimeSeriesTP` | | ✓ | | |
 
 ## Source Code
 

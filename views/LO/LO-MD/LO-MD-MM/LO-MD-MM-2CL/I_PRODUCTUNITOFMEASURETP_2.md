@@ -31,32 +31,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `AlternativeUnit` | `AlternativeUnit` |
-| `QuantityNumerator` | `QuantityNumerator` |
-| `QuantityDenominator` | `QuantityDenominator` |
-| `ProductVolume` | `ProductVolume` |
-| `VolumeUnit` | `VolumeUnit` |
-| `GrossWeight` | `GrossWeight` |
-| `WeightUnit` | `WeightUnit` |
-| `GlobalTradeItemNumber` | `GlobalTradeItemNumber` |
-| `GlobalTradeItemNumberCategory` | `GlobalTradeItemNumberCategory` |
-| `UnitSpecificProductLength` | `UnitSpecificProductLength` |
-| `UnitSpecificProductWidth` | `UnitSpecificProductWidth` |
-| `UnitSpecificProductHeight` | `UnitSpecificProductHeight` |
-| `ProductMeasurementUnit` | `ProductMeasurementUnit` |
-| `LowerLevelPackagingUnit` | `LowerLevelPackagingUnit` |
-| `MaximumStackingFactor` | `MaximumStackingFactor` |
-| `CapacityUsage` | `CapacityUsage` |
-| `BaseUnit` | `BaseUnit` |
-| `_ProductUnitOfMeasureEAN` | *Association* |
-| `_ProdUoMSuplrEAN` | *Association* |
-| `_Product` | *Association* |
-| `_ProductDescription_2` | *Association* |
-| `_GlobalTradeItemNumberText` | *Association* |
-| `_UnitOfMeasureText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `AlternativeUnit` | ✓ | |  |  |
+| `QuantityNumerator` |  | |  |  |
+| `QuantityDenominator` |  | |  |  |
+| `ProductVolume` |  | |  |  |
+| `VolumeUnit` |  | |  |  |
+| `GrossWeight` |  | |  |  |
+| `WeightUnit` |  | |  |  |
+| `GlobalTradeItemNumber` |  | |  |  |
+| `GlobalTradeItemNumberCategory` |  | |  |  |
+| `UnitSpecificProductLength` |  | |  |  |
+| `UnitSpecificProductWidth` |  | |  |  |
+| `UnitSpecificProductHeight` |  | |  |  |
+| `ProductMeasurementUnit` |  | |  |  |
+| `LowerLevelPackagingUnit` |  | |  |  |
+| `MaximumStackingFactor` |  | |  |  |
+| `CapacityUsage` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `_ProductUnitOfMeasureEAN` | | ✓ | | |
+| `_ProdUoMSuplrEAN` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductDescription_2` | | ✓ | | |
+| `_GlobalTradeItemNumberText` | | ✓ | | |
+| `_UnitOfMeasureText` | | ✓ | | |
 
 ## Source Code
 

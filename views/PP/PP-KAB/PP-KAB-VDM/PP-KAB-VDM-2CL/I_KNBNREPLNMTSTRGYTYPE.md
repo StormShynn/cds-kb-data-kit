@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanReplenishmentStrgyType` | `cast ( right(domvalue_l, 1) as pk_replenishment_type preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanReplenishmentStrgyType` | ✓ | |  | `cast ( right(domvalue_l, 1) as pk_replenishment_type preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

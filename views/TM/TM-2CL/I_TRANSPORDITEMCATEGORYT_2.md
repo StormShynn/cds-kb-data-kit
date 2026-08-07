@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdItemCategory` | `cast(substring(domvalue_l, 1, 3) as /scmtms/item_category preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrdItemCategoryDesc` | `cast(ddtext as /scmtms/vdm_itm_category_descr preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdItemCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdItemCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 3) as /scmtms/item_category preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrdItemCategoryDesc` |  | |  | `cast(ddtext as /scmtms/vdm_itm_category_descr preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdItemCategory` | | ✓ | | |
 
 ## Associations
 

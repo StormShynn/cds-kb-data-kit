@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionSeverity` | `InspectionSeverity` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionSeverity` | ✓ | |  |  |
 
 ## Source Code
 

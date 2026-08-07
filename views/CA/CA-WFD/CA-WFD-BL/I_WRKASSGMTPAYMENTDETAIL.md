@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkAssignmentExternalID` | `_Assignment.WorkAssignmentExternalID` |
-| key `Country2DigitISOCode` | `_Assignment.Country2DigitISOCode` |
-| key `BankIdentification` | `_PaymentDetails.BankIdentification` |
-| `WorkforcePersonExternalID` | `_Assignment.WorkforcePersonExternalID` |
-| `BankAccountHolderName` | `_PaymentDetails.BankAccountHolderName` |
-| `BankAccountName` | `_PaymentDetails.BankAccountName` |
-| `BankControlKey` | `_PaymentDetails.BankControlKey` |
-| `BankCountryKey` | `_PaymentDetails.BankCountryKey` |
-| `BankNumber` | `_PaymentDetails.BankNumber` |
-| `BankName` | `_PaymentDetails.BankName` |
-| `BankAccount` | `_PaymentDetails.BankAccount` |
-| `IBAN` | `_PaymentDetails.IBAN` |
-| `SWIFTCode` | `_PaymentDetails.SWIFTCode` |
-| `StartDate` | `cast (tstmp_to_dats( _PaymentDetails.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |
-| `EndDate` | `cast (tstmp_to_dats( _PaymentDetails.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |
-| `BankAccountReferenceText` | `_PaymentDetails.BankAccountReferenceText` |
-| `IsBlocked` | `_Assignment.IsBlocked` |
-| `_WorkAssignment` | *Association* |
-| `_WorkforcePerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |
+| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |
+| `BankIdentification` | ✓ | | `_PaymentDetails` | `BankIdentification` |
+| `WorkforcePersonExternalID` |  | | `_Assignment` | `WorkforcePersonExternalID` |
+| `BankAccountHolderName` |  | | `_PaymentDetails` | `BankAccountHolderName` |
+| `BankAccountName` |  | | `_PaymentDetails` | `BankAccountName` |
+| `BankControlKey` |  | | `_PaymentDetails` | `BankControlKey` |
+| `BankCountryKey` |  | | `_PaymentDetails` | `BankCountryKey` |
+| `BankNumber` |  | | `_PaymentDetails` | `BankNumber` |
+| `BankName` |  | | `_PaymentDetails` | `BankName` |
+| `BankAccount` |  | | `_PaymentDetails` | `BankAccount` |
+| `IBAN` |  | | `_PaymentDetails` | `IBAN` |
+| `SWIFTCode` |  | | `_PaymentDetails` | `SWIFTCode` |
+| `StartDate` |  | |  | `cast (tstmp_to_dats( _PaymentDetails.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |
+| `EndDate` |  | |  | `cast (tstmp_to_dats( _PaymentDetails.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |
+| `BankAccountReferenceText` |  | | `_PaymentDetails` | `BankAccountReferenceText` |
+| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |
+| `_WorkAssignment` | | ✓ | | |
+| `_WorkforcePerson` | | ✓ | | |
 
 ## Associations
 

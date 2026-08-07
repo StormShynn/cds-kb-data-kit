@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CmplRqRsltDngrsGdsModeOfTrUUID` | `cmplrqrsltdngrsgdsmodeoftruuid` |
-| `CmplRqVers` | `ehfnd_bco_id` |
-| `DngrsGoodsModeOfTransport` | `ehfnd_req_mot` |
-| `Language` | `ehfnd_langu` |
-| `DangerousGoodDescForDocuments` | `ehdgm_final_description` |
-| `CmplRqVersName` | `ehdgm_regulation_name` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CmplRqRsltDngrsGdsModeOfTrUUID` |  | |  | `cmplrqrsltdngrsgdsmodeoftruuid` |
+| `CmplRqVers` |  | |  | `ehfnd_bco_id` |
+| `DngrsGoodsModeOfTransport` |  | |  | `ehfnd_req_mot` |
+| `Language` |  | |  | `ehfnd_langu` |
+| `DangerousGoodDescForDocuments` |  | |  | `ehdgm_final_description` |
+| `CmplRqVersName` |  | |  | `ehdgm_regulation_name` |
 
 ## Source Code
 

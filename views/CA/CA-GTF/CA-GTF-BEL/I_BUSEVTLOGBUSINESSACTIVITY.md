@@ -28,39 +28,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusEvtLogBusinessActivity` | `BusEvtLogBusinessActivity` |
-| key `SAPObjectType` | `SAPObjectType` |
-| key `BusEvtLogCreationDate` | `BusEvtLogCreationDate` |
-| `BusEvtLogReferenceEventUUID` | `BusEvtLogReferenceEventUUID` |
-| `SAPObjectNodeType` | `SAPObjectNodeType` |
-| `EventOperation` | `EventOperation` |
-| `SAPBusinessObjectNodeKey1` | `SAPBusinessObjectNodeKey1` |
-| `SAPBusinessObjectNodeKey2` | `SAPBusinessObjectNodeKey2` |
-| `SAPBusinessObjectNodeKey3` | `SAPBusinessObjectNodeKey3` |
-| `SAPBusinessObjectNodeKey4` | `SAPBusinessObjectNodeKey4` |
-| `SAPBusinessObjectNodeKey5` | `SAPBusinessObjectNodeKey5` |
-| `SAPBusinessObjectNodeKey6` | `SAPBusinessObjectNodeKey6` |
-| `SAPBusinessObjectNodeKey7` | `SAPBusinessObjectNodeKey7` |
-| `SAPBusinessObjectNodeKey8` | `SAPBusinessObjectNodeKey8` |
-| `CreatedByUser` | `CreatedByUser` |
-| `BusEvtLogCreationDateTime` | `BusEvtLogCreationDateTime` |
-| `BusinessEventLogLogicalSystem` | `BusinessEventLogLogicalSystem` |
-| `BusEvtLogTransactionID` | `BusEvtLogTransactionID` |
-| `BusEvtLogLastChangedDateTime` | `BusEvtLogLastChangedDateTime` |
-| `IsTechnicalUser` | `IsTechnicalUser` |
-| `BusEvtLogUserInteractionType` | `BusEvtLogUserInteractionType` |
-| `BusEvtLgUsrIntactnTypeValue` | `BusEvtLgUsrIntactnTypeValue` |
-| `SAPBusinessObjectNodeKey1Name` | `SAPBusinessObjectNodeKey1Name` |
-| `SAPBusinessObjectNodeKey2Name` | `SAPBusinessObjectNodeKey2Name` |
-| `SAPBusinessObjectNodeKey3Name` | `SAPBusinessObjectNodeKey3Name` |
-| `SAPBusinessObjectNodeKey4Name` | `SAPBusinessObjectNodeKey4Name` |
-| `SAPBusinessObjectNodeKey5Name` | `SAPBusinessObjectNodeKey5Name` |
-| `SAPBusinessObjectNodeKey6Name` | `SAPBusinessObjectNodeKey6Name` |
-| `SAPBusinessObjectNodeKey7Name` | `SAPBusinessObjectNodeKey7Name` |
-| `SAPBusinessObjectNodeKey8Name` | `SAPBusinessObjectNodeKey8Name` |
-| `BusinessEventLogSource` | `BusinessEventLogSource` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusEvtLogBusinessActivity` | ✓ | |  |  |
+| `SAPObjectType` | ✓ | |  |  |
+| `BusEvtLogCreationDate` | ✓ | |  |  |
+| `BusEvtLogReferenceEventUUID` |  | |  |  |
+| `SAPObjectNodeType` |  | |  |  |
+| `EventOperation` |  | |  |  |
+| `SAPBusinessObjectNodeKey1` |  | |  |  |
+| `SAPBusinessObjectNodeKey2` |  | |  |  |
+| `SAPBusinessObjectNodeKey3` |  | |  |  |
+| `SAPBusinessObjectNodeKey4` |  | |  |  |
+| `SAPBusinessObjectNodeKey5` |  | |  |  |
+| `SAPBusinessObjectNodeKey6` |  | |  |  |
+| `SAPBusinessObjectNodeKey7` |  | |  |  |
+| `SAPBusinessObjectNodeKey8` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `BusEvtLogCreationDateTime` |  | |  |  |
+| `BusinessEventLogLogicalSystem` |  | |  |  |
+| `BusEvtLogTransactionID` |  | |  |  |
+| `BusEvtLogLastChangedDateTime` |  | |  |  |
+| `IsTechnicalUser` |  | |  |  |
+| `BusEvtLogUserInteractionType` |  | |  |  |
+| `BusEvtLgUsrIntactnTypeValue` |  | |  |  |
+| `SAPBusinessObjectNodeKey1Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey2Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey3Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey4Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey5Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey6Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey7Name` |  | |  |  |
+| `SAPBusinessObjectNodeKey8Name` |  | |  |  |
+| `BusinessEventLogSource` |  | |  |  |
 
 ## Source Code
 

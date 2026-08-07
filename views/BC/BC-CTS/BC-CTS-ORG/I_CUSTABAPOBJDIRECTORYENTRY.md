@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ABAPObjectCategory` | `I_ABAPObjectDirectoryEntry.ABAPObjectCategory` |
-| key `ABAPObjectType` | `I_ABAPObjectDirectoryEntry.ABAPObjectType` |
-| key `ABAPObject` | `I_ABAPObjectDirectoryEntry.ABAPObject` |
-| `ABAPObjectResponsibleUser` | `I_ABAPObjectDirectoryEntry.ABAPObjectResponsibleUser` |
-| `ABAPObjectIsDeleted` | `I_ABAPObjectDirectoryEntry.ABAPObjectIsDeleted` |
-| `ABAPPackage` | `I_ABAPObjectDirectoryEntry.ABAPPackage` |
-| `ABAPSoftwareComponent` | `I_CustABAPPackage.ABAPSoftwareComponent` |
-| `_CustABAPPackage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ABAPObjectCategory` | ✓ | |  |  |
+| `ABAPObjectType` | ✓ | |  |  |
+| `ABAPObject` | ✓ | |  |  |
+| `ABAPObjectResponsibleUser` |  | |  |  |
+| `ABAPObjectIsDeleted` |  | |  |  |
+| `ABAPPackage` |  | |  |  |
+| `ABAPSoftwareComponent` |  | |  |  |
+| `_CustABAPPackage` | | ✓ | | |
 
 ## Associations
 

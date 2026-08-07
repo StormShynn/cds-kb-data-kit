@@ -29,47 +29,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `matnr` |
-| key `Plant` | `werks` |
-| key `SourceListRecord` | `zeord` |
-| `CreationDate` | `erdat` |
-| `CreatedByUserName` | `ernam` |
-| `ValidityStartDate` | `vdatu` |
-| `ValidityEndDate` | `bdatu` |
-| `Supplier` | `lifnr` |
-| `SupplierIsFixed` | `flifn` |
-| `PurchaseOutlineAgreement` | `ebeln` |
-| `PurchaseOutlineAgreementItem` | `ebelp` |
-| `PurOutlineAgreementIsFixed` | `febel` |
-| `SupplyingPlant` | `reswk` |
-| `IssgPlantIsFixed` | `fresw` |
-| `ManufacturerMaterial` | `ematn` |
-| `SourceOfSupplyIsBlocked` | `notkz` |
-| `SourceOfSupplyIsFixed` | `cast( '' as flag )` |
-| `SourceListStatus` | `cast( '' as sl_status )` |
-| `PurchasingOrganization` | `ekorg` |
-| `PurchasingDocumentCategory` | `vrtyp` |
-| `SourceListRecordCategory` | `eortp` |
-| `MRPSourcingControl` | `autet` |
-| `MRPArea` | `cast('' as abap.char(10) )` |
-| `OrderQuantityUnit` | `meins` |
-| `OriginSystem` | `logsy` |
-| `InventorySpecialStockType` | `sobkz` |
-| `LastChangeDateTime` | `lastchangedatetime` |
-| `_MPPurchasingSource` | *Association* |
-| `_Material` | *Association* |
-| `_Plant` | *Association* |
-| `_Supplier` | *Association* |
-| `_PurchaseContract` | *Association* |
-| `_PurchaseContractItem` | *Association* |
-| `_SupplyingPlant` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_MaterialPlanningUsage_SL` | *Association* |
-| `_MPPurchasingSourceStatus` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_LogicalSystem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `SourceListRecord` | ✓ | |  | `zeord` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreatedByUserName` |  | |  | `ernam` |
+| `ValidityStartDate` |  | |  | `vdatu` |
+| `ValidityEndDate` |  | |  | `bdatu` |
+| `Supplier` |  | |  | `lifnr` |
+| `SupplierIsFixed` |  | |  | `flifn` |
+| `PurchaseOutlineAgreement` |  | |  | `ebeln` |
+| `PurchaseOutlineAgreementItem` |  | |  | `ebelp` |
+| `PurOutlineAgreementIsFixed` |  | |  | `febel` |
+| `SupplyingPlant` |  | |  | `reswk` |
+| `IssgPlantIsFixed` |  | |  | `fresw` |
+| `ManufacturerMaterial` |  | |  | `ematn` |
+| `SourceOfSupplyIsBlocked` |  | |  | `notkz` |
+| `SourceOfSupplyIsFixed` |  | |  | `cast( '' as flag )` |
+| `SourceListStatus` |  | |  | `cast( '' as sl_status )` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `PurchasingDocumentCategory` |  | |  | `vrtyp` |
+| `SourceListRecordCategory` |  | |  | `eortp` |
+| `MRPSourcingControl` |  | |  | `autet` |
+| `MRPArea` |  | |  | `cast('' as abap.char(10) )` |
+| `OrderQuantityUnit` |  | |  | `meins` |
+| `OriginSystem` |  | |  | `logsy` |
+| `InventorySpecialStockType` |  | |  | `sobkz` |
+| `LastChangeDateTime` |  | |  | `lastchangedatetime` |
+| `_MPPurchasingSource` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_PurchaseContract` | | ✓ | | |
+| `_PurchaseContractItem` | | ✓ | | |
+| `_SupplyingPlant` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_MaterialPlanningUsage_SL` | | ✓ | | |
+| `_MPPurchasingSourceStatus` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_LogicalSystem` | | ✓ | | |
 
 ## Associations
 

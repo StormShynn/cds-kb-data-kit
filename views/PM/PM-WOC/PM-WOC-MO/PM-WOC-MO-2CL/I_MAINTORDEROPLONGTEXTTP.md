@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceOrder` | `MaintenanceOrder` |
-| key `MaintenanceOrderOperation` | `MaintenanceOrderOperation` |
-| key `MaintenanceOrderSubOperation` | `MaintenanceOrderSubOperation` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| `OrderOperationLongText` | `OrderOperationLongText` |
-| `_MaintenanceOrder` | *Association* |
-| `_MaintenanceOrderOperation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |
+| `MaintenanceOrderOperation` | ✓ | |  |  |
+| `MaintenanceOrderSubOperation` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `OrderOperationLongText` |  | |  |  |
+| `_MaintenanceOrder` | | ✓ | | |
+| `_MaintenanceOrderOperation` | | ✓ | | |
 
 ## Source Code
 

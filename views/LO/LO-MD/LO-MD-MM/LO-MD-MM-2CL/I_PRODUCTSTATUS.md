@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Status` | `cast(t141.mmsta as profilecode preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Status` | ✓ | |  | `cast(t141.mmsta as profilecode preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

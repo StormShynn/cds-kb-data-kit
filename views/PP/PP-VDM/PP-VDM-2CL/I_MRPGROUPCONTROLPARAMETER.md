@@ -27,34 +27,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPGroup` | `mtart` |
-| key `MRPPlant` | `werks` |
-| `PlanningStrategyGroup` | `strgr` |
-| `ReschedulingHorizonInWorkdays` | `cast(umthz as vdm_umthz preserving type)` |
-| `PlanningHorizonInWorkdays` | `cast(plahz as vdm_plahz preserving type)` |
-| `PlanningTimeFenceInDays` | `fixhz` |
-| `ScheduleLinesCreationCode` | `lifkz` |
-| `ATPCheckingRule` | `cast(prreg as bmg_prreg preserving type)` |
-| `ProdRqmtsConsumptionMode` | `cast(vrmod as /sapapo/vrmod preserving type)` |
-| `BackwardCnsmpnPeriodInWorkDays` | `cast(vint1 as vdm_vint1 preserving type)` |
-| `FwdConsumptionPeriodInWorkDays` | `cast(vint2 as vdm_vint2 preserving type)` |
-| `NmbrOfDaysAfterMatlMustBePlnd` | `cast(andis as vdm_andis preserving type)` |
-| `OrderType` | `auart` |
-| `ProductSafetyTimeMRPRelevance` | `cast(shflg as pph_shflg preserving type)` |
-| `SafetyTimeInWorkDays` | `shzet` |
-| `PlndOrdProcessingActionControl` | `mdach` |
-| `PlndIndepRqmtAdjustment` | `cast(rvpkz as vdm_rvpkz preserving type)` |
-| `PlndIndepRqmtAdjmtTimePeriod` | `cast(resvp as vdm_resvp preserving type)` |
-| `PurReqnHandoverIsRequired` | `preqapproval` |
-| `_MRPPlant` | *Association* |
-| `_MRPGroup` | *Association* |
-| `_PlannedOrderActionControl` | *Association* |
-| `_PlanningStrategyGroup` | *Association* |
-| `_ProductConsumptionMode` | *Association* |
-| `_SafetyTimeMRPRelevance` | *Association* |
-| `_OrderType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPGroup` | ✓ | |  | `mtart` |
+| `MRPPlant` | ✓ | |  | `werks` |
+| `PlanningStrategyGroup` |  | |  | `strgr` |
+| `ReschedulingHorizonInWorkdays` |  | |  | `cast(umthz as vdm_umthz preserving type)` |
+| `PlanningHorizonInWorkdays` |  | |  | `cast(plahz as vdm_plahz preserving type)` |
+| `PlanningTimeFenceInDays` |  | |  | `fixhz` |
+| `ScheduleLinesCreationCode` |  | |  | `lifkz` |
+| `ATPCheckingRule` |  | |  | `cast(prreg as bmg_prreg preserving type)` |
+| `ProdRqmtsConsumptionMode` |  | |  | `cast(vrmod as /sapapo/vrmod preserving type)` |
+| `BackwardCnsmpnPeriodInWorkDays` |  | |  | `cast(vint1 as vdm_vint1 preserving type)` |
+| `FwdConsumptionPeriodInWorkDays` |  | |  | `cast(vint2 as vdm_vint2 preserving type)` |
+| `NmbrOfDaysAfterMatlMustBePlnd` |  | |  | `cast(andis as vdm_andis preserving type)` |
+| `OrderType` |  | |  | `auart` |
+| `ProductSafetyTimeMRPRelevance` |  | |  | `cast(shflg as pph_shflg preserving type)` |
+| `SafetyTimeInWorkDays` |  | |  | `shzet` |
+| `PlndOrdProcessingActionControl` |  | |  | `mdach` |
+| `PlndIndepRqmtAdjustment` |  | |  | `cast(rvpkz as vdm_rvpkz preserving type)` |
+| `PlndIndepRqmtAdjmtTimePeriod` |  | |  | `cast(resvp as vdm_resvp preserving type)` |
+| `PurReqnHandoverIsRequired` |  | |  | `preqapproval` |
+| `_MRPPlant` | | ✓ | | |
+| `_MRPGroup` | | ✓ | | |
+| `_PlannedOrderActionControl` | | ✓ | | |
+| `_PlanningStrategyGroup` | | ✓ | | |
+| `_ProductConsumptionMode` | | ✓ | | |
+| `_SafetyTimeMRPRelevance` | | ✓ | | |
+| `_OrderType` | | ✓ | | |
 
 ## Associations
 

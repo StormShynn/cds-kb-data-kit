@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PubSecBudgetAccount` | `MainText.PubSecBudgetAccount` |
-| key `PubSecBudgetAccountCoCode` | `cast( I_GLAccountInCompanyCode.CompanyCode as psm_bdgt_account_cocode preserving type )` |
-| key `Language` | `MainText.Language` |
-| `ChartOfAccounts` | `MainText.ChartOfAccounts` |
-| `BudgetAccountName` | `MainText.BudgetAccountName` |
-| `BudgetAccountDescription` | `MainText.BudgetAccountDescription` |
-| `_Language` | *Association* |
-| `_PubSecBudgetAccountCoCode` | *Association* |
-| `_ChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PubSecBudgetAccount` | ✓ | |  |  |
+| `PubSecBudgetAccountCoCode` | ✓ | |  | `cast( I_GLAccountInCompanyCode.CompanyCode as psm_bdgt_account_cocode preserving type )` |
+| `Language` | ✓ | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `BudgetAccountName` |  | |  |  |
+| `BudgetAccountDescription` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_PubSecBudgetAccountCoCode` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

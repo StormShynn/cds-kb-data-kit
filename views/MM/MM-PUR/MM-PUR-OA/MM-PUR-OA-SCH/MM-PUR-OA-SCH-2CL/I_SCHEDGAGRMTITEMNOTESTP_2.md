@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `DocumentText` | `DocumentText` |
-| key `TechnicalObjectType` | `TechnicalObjectType` |
-| key `ArchObjectNumber` | `ArchObjectNumber` |
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| `NoteDescription` | `NoteDescription` |
-| `FixedIndicator` | `FixedIndicator` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_SchedgAgrmtItm` | *Association* |
-| `_PurSchedgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `DocumentText` | ✓ | |  |  |
+| `TechnicalObjectType` | ✓ | |  |  |
+| `ArchObjectNumber` | ✓ | |  |  |
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `NoteDescription` |  | |  |  |
+| `FixedIndicator` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_SchedgAgrmtItm` | | ✓ | | |
+| `_PurSchedgAgrmt` | | ✓ | | |
 
 ## Source Code
 

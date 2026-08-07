@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInternalPostingReasonCode` | `cast( left( dd07t.domvalue_l, 1 ) as intbu_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAInternalPostingReasonCodeTxt` | `cast( ddtext as intbu_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInternalPostingReasonCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as intbu_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAInternalPostingReasonCodeTxt` |  | |  | `cast( ddtext as intbu_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

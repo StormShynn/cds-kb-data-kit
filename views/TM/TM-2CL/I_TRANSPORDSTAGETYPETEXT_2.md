@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdStageType` | `stage_type` |
-| key `Language` | `langu` |
-| `TranspOrdStageTypeDesc` | `cast ( description_s as /scmtms/vdm_stage_type_desc preserving type )` |
-| `_Language` | *Association* |
-| `_TranspOrdStageType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdStageType` | ✓ | |  | `stage_type` |
+| `Language` | ✓ | |  | `langu` |
+| `TranspOrdStageTypeDesc` |  | |  | `cast ( description_s as /scmtms/vdm_stage_type_desc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdStageType` | | ✓ | | |
 
 ## Associations
 

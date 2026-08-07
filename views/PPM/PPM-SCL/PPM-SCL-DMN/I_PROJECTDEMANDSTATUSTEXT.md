@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectDemandStatus` | `status` |
-| key `Language` | `langu` |
-| `ProjectDemandStatusText` | `description` |
-| `_Language` | *Association* |
-| `_Status` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectDemandStatus` | ✓ | |  | `status` |
+| `Language` | ✓ | |  | `langu` |
+| `ProjectDemandStatusText` |  | |  | `description` |
+| `_Language` | | ✓ | | |
+| `_Status` | | ✓ | | |
 
 ## Associations
 

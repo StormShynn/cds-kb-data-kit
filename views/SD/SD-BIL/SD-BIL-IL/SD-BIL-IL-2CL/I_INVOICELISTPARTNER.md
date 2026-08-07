@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceList` | `cast(Partner.BillingDocument as vbeln_rl preserving type)` |
-| key `PartnerFunction` | `cast(Partner.PartnerFunction as parvw_unv preserving type )` |
-| `Customer` | `Partner.Customer` |
-| `Supplier` | `Partner.Supplier` |
-| `Personnel` | `Partner.Personnel` |
-| `AddressID` | `Partner.AddressID` |
-| `ContactPerson` | `Partner.ContactPerson` |
-| `AddressPersonID` | `Partner.AddressPersonID` |
-| `ReferenceBusinessPartner` | `Partner.ReferenceBusinessPartner` |
-| `BPRefAddressIDForDocSpcfcAddr` | `Partner.BPRefAddressIDForDocSpcfcAddr` |
-| `SDDocPartnerAddressRefType` | `Partner.SDDocPartnerAddressRefType` |
-| `_InvoiceList` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceList` | ✓ | |  | `cast(Partner.BillingDocument as vbeln_rl preserving type)` |
+| `PartnerFunction` | ✓ | |  | `cast(Partner.PartnerFunction as parvw_unv preserving type )` |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `_InvoiceList` | | ✓ | | |
 
 ## Associations
 

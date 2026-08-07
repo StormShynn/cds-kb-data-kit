@@ -28,72 +28,72 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceNotification` | `qmih.qmnum` |
-| `MaintObjectLocAcctAssgmtNmbr` | `qmih.iloan` |
-| `MalfunctionEffect` | `qmih.auswk` |
-| `Equipment` | `qmih.equnr` |
-| `Assembly` | `qmih.bautl` |
-| `MaintenancePlanningPlant` | `qmih.iwerk` |
-| `MaintenancePlannerGroup` | `}] qmih.ingrp` |
-| `LocationDescription` | `qmih.loc_desc` |
-| `MaintenanceObjectIsDown` | `qmih.msaus` |
-| `MalfunctionStartDate` | `qmih.ausvn` |
-| `MalfunctionEndDate` | `qmih.ausbs` |
-| `MalfunctionStartTime` | `qmih.auztv` |
-| `MalfunctionEndTime` | `qmih.auztb` |
-| `InspectionDate` | `qmih.datan` |
-| `InspectedByUser` | `qmih.inspk` |
-| `MaintenanceRevision` | `qmih.revnr` |
-| `MaintObjectDowntimeDuration` | `qmih.auszt` |
-| `MaintObjDowntimeDurationUnit` | `qmih.maueh` |
-| `SalesDocument` | `qmih.kdauf` |
-| `SalesDocumentItem` | `qmih.kdpos` |
-| `MaintenancePlan` | `qmih.warpl` |
-| `MaintenanceItem` | `qmih.wapos` |
-| `MaintenanceActivityType` | `cast(qmih.ilart as eam_maint_activity_type)` |
-| `RelevantFunctionalLocation` | `qmih.btpln` |
-| `RelevantEquipment` | `qmih.bequi` |
-| `AvailyBeforeMalfunctionPercent` | `qmih.verfv` |
-| `AvailyAfterMalfunctionPercent` | `qmih.verfn` |
-| `AvailyAfterConclusionPercent` | `qmih.verfm` |
-| `SystConditionBeforeMalfunction` | `qmih.anlzv` |
-| `SystConditionAfterMalfunction` | `qmih.anlzn` |
-| `SystConditionAfterCompletion` | `qmih.anlze` |
-| `LatestAcceptableCompletionDate` | `cast(qmih.lacd_date as vdm_lacd_date preserving type)` |
-| `NotificationPersonResponsible` | `qmih.notificationpersonresponsible` |
-| `MaintNotifProcessPhaseCode` | `qmih.maintnotifovrlprocphase` |
-| `MaintNotifProcessSubPhaseCode` | `qmih.maintnotifovrlprocsubphase` |
-| `MaintNotifRejectionReasonCode` | `qmih.notifrejectionreasoncode` |
-| `MaintenancePlanCallNumber` | `qmih.abnum` |
-| `MaintenanceTaskListType` | `qmih.plnty` |
-| `TaskListGroup` | `qmih.plnnr` |
-| `TaskListGroupCounter` | `qmih.plnal` |
-| `MaintNotifDetectionCatalog` | `qmih.detectioncatalog` |
-| `MaintNotifDetectionCodeGroup` | `qmih.detectioncodegroup` |
-| `MaintNotifDetectionCode` | `qmih.detectioncode` |
-| `MaintNotifProcessingContext` | `qmih.maintnotifprocessingcontext` |
-| `PreviousFinalDueDate` | `qmih.old_lacd_date` |
-| `_LocationAccountAssignment` | *Association* |
-| `_MalfunctionEffect` | *Association* |
-| `_MaintenanceObjectIsDown` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Equipment` | *Association* |
-| `_RelevantEquipment` | *Association* |
-| `_RelevantFunctionalLocation` | *Association* |
-| `_MaintenancePlanningPlant` | *Association* |
-| `_MaintenancePlanPlant` | *Association* |
-| `_InspectedByUser` | *Association* |
-| `_MaintenancePlannerGroup` | *Association* |
-| `_Assembly` | *Association* |
-| `_MaintenanceNotification` | *Association* |
-| `_MaintenancePlan` | *Association* |
-| `_MaintenanceItem` | *Association* |
-| `_MaintenanceActivityType` | *Association* |
-| `_MaintenanceRevision` | *Association* |
-| `_SubPhase` | *Association* |
-| `_Phase` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceNotification` | ✓ | |  | `qmnum` |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  | `iloan` |
+| `MalfunctionEffect` |  | |  | `auswk` |
+| `Equipment` |  | |  | `equnr` |
+| `Assembly` |  | |  | `bautl` |
+| `MaintenancePlanningPlant` |  | |  | `iwerk` |
+| `MaintenancePlannerGroup` |  | |  | `}] qmih.ingrp` |
+| `LocationDescription` |  | |  | `loc_desc` |
+| `MaintenanceObjectIsDown` |  | |  | `msaus` |
+| `MalfunctionStartDate` |  | |  | `ausvn` |
+| `MalfunctionEndDate` |  | |  | `ausbs` |
+| `MalfunctionStartTime` |  | |  | `auztv` |
+| `MalfunctionEndTime` |  | |  | `auztb` |
+| `InspectionDate` |  | |  | `datan` |
+| `InspectedByUser` |  | |  | `inspk` |
+| `MaintenanceRevision` |  | |  | `revnr` |
+| `MaintObjectDowntimeDuration` |  | |  | `auszt` |
+| `MaintObjDowntimeDurationUnit` |  | |  | `maueh` |
+| `SalesDocument` |  | |  | `kdauf` |
+| `SalesDocumentItem` |  | |  | `kdpos` |
+| `MaintenancePlan` |  | |  | `warpl` |
+| `MaintenanceItem` |  | |  | `wapos` |
+| `MaintenanceActivityType` |  | |  | `cast(qmih.ilart as eam_maint_activity_type)` |
+| `RelevantFunctionalLocation` |  | |  | `btpln` |
+| `RelevantEquipment` |  | |  | `bequi` |
+| `AvailyBeforeMalfunctionPercent` |  | |  | `verfv` |
+| `AvailyAfterMalfunctionPercent` |  | |  | `verfn` |
+| `AvailyAfterConclusionPercent` |  | |  | `verfm` |
+| `SystConditionBeforeMalfunction` |  | |  | `anlzv` |
+| `SystConditionAfterMalfunction` |  | |  | `anlzn` |
+| `SystConditionAfterCompletion` |  | |  | `anlze` |
+| `LatestAcceptableCompletionDate` |  | |  | `cast(qmih.lacd_date as vdm_lacd_date preserving type)` |
+| `NotificationPersonResponsible` |  | |  | `notificationpersonresponsible` |
+| `MaintNotifProcessPhaseCode` |  | |  | `maintnotifovrlprocphase` |
+| `MaintNotifProcessSubPhaseCode` |  | |  | `maintnotifovrlprocsubphase` |
+| `MaintNotifRejectionReasonCode` |  | |  | `notifrejectionreasoncode` |
+| `MaintenancePlanCallNumber` |  | |  | `abnum` |
+| `MaintenanceTaskListType` |  | |  | `plnty` |
+| `TaskListGroup` |  | |  | `plnnr` |
+| `TaskListGroupCounter` |  | |  | `plnal` |
+| `MaintNotifDetectionCatalog` |  | |  | `detectioncatalog` |
+| `MaintNotifDetectionCodeGroup` |  | |  | `detectioncodegroup` |
+| `MaintNotifDetectionCode` |  | |  | `detectioncode` |
+| `MaintNotifProcessingContext` |  | |  | `maintnotifprocessingcontext` |
+| `PreviousFinalDueDate` |  | |  | `old_lacd_date` |
+| `_LocationAccountAssignment` | | ✓ | | |
+| `_MalfunctionEffect` | | ✓ | | |
+| `_MaintenanceObjectIsDown` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
+| `_RelevantEquipment` | | ✓ | | |
+| `_RelevantFunctionalLocation` | | ✓ | | |
+| `_MaintenancePlanningPlant` | | ✓ | | |
+| `_MaintenancePlanPlant` | | ✓ | | |
+| `_InspectedByUser` | | ✓ | | |
+| `_MaintenancePlannerGroup` | | ✓ | | |
+| `_Assembly` | | ✓ | | |
+| `_MaintenanceNotification` | | ✓ | | |
+| `_MaintenancePlan` | | ✓ | | |
+| `_MaintenanceItem` | | ✓ | | |
+| `_MaintenanceActivityType` | | ✓ | | |
+| `_MaintenanceRevision` | | ✓ | | |
+| `_SubPhase` | | ✓ | | |
+| `_Phase` | | ✓ | | |
 
 ## Associations
 

@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceNotification` | `MaintenanceNotification` |
-| key `MaintenanceNotificationItem` | `MaintenanceNotificationItem` |
-| `MaintNotifItemText` | `MaintNotifItemText` |
-| `MaintNotifDamageCodeGroup` | `MaintNotifDamageCodeGroup` |
-| `MaintNotificationDamageCode` | `MaintNotificationDamageCode` |
-| `MaintNotifDamageCodeCatalog` | `MaintNotifDamageCodeCatalog` |
-| `MaintNotifObjPrtCodeGroup` | `MaintNotifObjPrtCodeGroup` |
-| `MaintNotifObjPrtCode` | `MaintNotifObjPrtCode` |
-| `MaintNotifObjPrtCodeCatalog` | `MaintNotifObjPrtCodeCatalog` |
-| `IsDeleted` | `IsDeleted` |
-| `_MaintNotifDamageCodeGroup` | *Association* |
-| `_MaintNotifObjPrtCodeGroup` | *Association* |
-| `_MaintNotificationDamageCode` | *Association* |
-| `_MaintNotifObjPrtCode` | *Association* |
-| `_MaintenanceNotification` | *Association* |
-| `_Notif` | *Association* |
-| `_ItemCause` | *Association* |
-| `_ItemActivity` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceNotification` | ✓ | |  |  |
+| `MaintenanceNotificationItem` | ✓ | |  |  |
+| `MaintNotifItemText` |  | |  |  |
+| `MaintNotifDamageCodeGroup` |  | |  |  |
+| `MaintNotificationDamageCode` |  | |  |  |
+| `MaintNotifDamageCodeCatalog` |  | |  |  |
+| `MaintNotifObjPrtCodeGroup` |  | |  |  |
+| `MaintNotifObjPrtCode` |  | |  |  |
+| `MaintNotifObjPrtCodeCatalog` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `_MaintNotifDamageCodeGroup` | | ✓ | | |
+| `_MaintNotifObjPrtCodeGroup` | | ✓ | | |
+| `_MaintNotificationDamageCode` | | ✓ | | |
+| `_MaintNotifObjPrtCode` | | ✓ | | |
+| `_MaintenanceNotification` | | ✓ | | |
+| `_Notif` | | ✓ | | |
+| `_ItemCause` | | ✓ | | |
+| `_ItemActivity` | | ✓ | | |
 
 ## Source Code
 

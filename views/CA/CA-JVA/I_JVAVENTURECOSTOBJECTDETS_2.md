@@ -27,57 +27,57 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `_JointVentureMasterFld.CompanyCode` |
-| key `JntOpgAgrmt` | `_JointVentureMasterFld.JntOpgAgrmt` |
-| key `JointVenture` | `_JointVentureMasterFld.JointVenture` |
-| key `CostCenter` | `_JointVentureCostCenter.CostCenter` |
-| key `WBSElement` | `_JointVentureProjectData.WBSElement` |
-| key `InternalOrder` | `_JointVentureOrderData.InternalOrder` |
-| `JntOpgAgrmtClass` | `_JntOpgAgrmt.JntOpgAgrmtClass` |
-| `JointVentureType` | `_JointVentureMasterFld.JointVentureType` |
-| `JointVentureOperator` | `_JointVentureMasterFld.JointVentureOperator` |
-| `JVAVentureClass` | `_JointVentureMasterFld.JVAVentureClass` |
-| `JntVntrBillgCutbackIsBlk` | `_JointVentureMasterFld.JntVntrBillgCutbackIsBlk` |
-| `JntVntrDrillingPayRate` | `_JointVentureMasterFld.JntVntrDrillingPayRate` |
-| `JntVntrNonDrillingPayRate` | `_JointVentureMasterFld.JntVntrNonDrillingPayRate` |
-| `JntVntrParentCoOvhdExpnCostCtr` | `_JointVentureMasterFld.JntVntrParentCoOvhdExpnCostCtr` |
-| `JntVntrParentCoOvhdProject` | `_JointVentureMasterFld.JntVntrParentCoOvhdProject` |
-| `JntVntrParentCoOvhdExpnOrder` | `_JointVentureMasterFld.JntVntrParentCoOvhdExpnOrder` |
-| `JntVntrSubstituteCostCtr` | `_JointVentureMasterFld.JntVntrSubstituteCostCtr` |
-| `JntVntrProperty` | `_JointVentureMasterFld.JntVntrProperty` |
-| `ControllingArea` | `_JointVentureCostCenter.ControllingArea` |
-| `ValidityEndDate` | `_JointVentureCostCenter.ValidityEndDate` |
-| `ValidityStartDate` | `_JointVentureCostCenter.ValidityStartDate` |
-| `CostCenterCategory` | `_JointVentureCostCenter.CostCenterCategory` |
-| `ProfitCenter` | `_JointVentureCostCenter.ProfitCenter` |
-| `FunctionalArea` | `_JointVentureCostCenter.FunctionalArea` |
-| `JointVentureRecoveryCode` | `_JointVentureCostCenter.JointVentureRecoveryCode` |
-| `JointVentureEquityType` | `_JointVentureCostCenter.JointVentureEquityType` |
-| `JointVentureObjectType` | `_JointVentureCostCenter.JointVentureObjectType` |
-| `JointVentureClass` | `_JointVentureCostCenter.JointVentureClass` |
-| `JointVentureSubClass` | `_JointVentureCostCenter.JointVentureSubClass` |
-| `WBSDescription` | `_JointVentureProjectData.WBSDescription` |
-| `WBSElementShortID` | `_JointVentureProjectData.WBSElementShortID` |
-| `ProjectType` | `_JointVentureProjectData.ProjectType` |
-| `WBSElementHierarchyLevel` | `_JointVentureProjectData.WBSElementHierarchyLevel` |
-| `WBSElementIsPlanningElement` | `_JointVentureProjectData.WBSElementIsPlanningElement` |
-| `WBSIsAccountAssignmentElement` | `_JointVentureProjectData.WBSIsAccountAssignmentElement` |
-| `WBSElementIsBillingElement` | `_JointVentureProjectData.WBSElementIsBillingElement` |
-| `NetworkAssignmentType` | `_JointVentureProjectData.NetworkAssignmentType` |
-| `RequestingCostCenter` | `_JointVentureProjectData.RequestingCostCenter` |
-| `ResponsibleCostCenter` | `_JointVentureProjectData.ResponsibleCostCenter` |
-| `FunctionalLocation` | `_JointVentureProjectData.FunctionalLocation` |
-| `JointVentureCostRecoveryCode` | `_JointVentureProjectData.JointVentureCostRecoveryCode` |
-| `JntVntrProjectType` | `_JointVentureProjectData.JntVntrProjectType` |
-| `OrderType` | `_JointVentureOrderData.OrderType` |
-| `OrderCategory` | `_JointVentureOrderData.OrderCategory` |
-| `ReferenceOrder` | `_JointVentureOrderData.ReferenceOrder` |
-| `InternalOrderDescription` | `_JointVentureOrderData.InternalOrderDescription` |
-| `Currency` | `_CompanyCode.Currency` |
-| `_CompanyCode` | *Association* |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | | `_JointVentureMasterFld` | `CompanyCode` |
+| `JntOpgAgrmt` | ✓ | | `_JointVentureMasterFld` | `JntOpgAgrmt` |
+| `JointVenture` | ✓ | | `_JointVentureMasterFld` | `JointVenture` |
+| `CostCenter` | ✓ | | `_JointVentureCostCenter` | `CostCenter` |
+| `WBSElement` | ✓ | | `_JointVentureProjectData` | `WBSElement` |
+| `InternalOrder` | ✓ | | `_JointVentureOrderData` | `InternalOrder` |
+| `JntOpgAgrmtClass` |  | | `_JntOpgAgrmt` | `JntOpgAgrmtClass` |
+| `JointVentureType` |  | | `_JointVentureMasterFld` | `JointVentureType` |
+| `JointVentureOperator` |  | | `_JointVentureMasterFld` | `JointVentureOperator` |
+| `JVAVentureClass` |  | | `_JointVentureMasterFld` | `JVAVentureClass` |
+| `JntVntrBillgCutbackIsBlk` |  | | `_JointVentureMasterFld` | `JntVntrBillgCutbackIsBlk` |
+| `JntVntrDrillingPayRate` |  | | `_JointVentureMasterFld` | `JntVntrDrillingPayRate` |
+| `JntVntrNonDrillingPayRate` |  | | `_JointVentureMasterFld` | `JntVntrNonDrillingPayRate` |
+| `JntVntrParentCoOvhdExpnCostCtr` |  | | `_JointVentureMasterFld` | `JntVntrParentCoOvhdExpnCostCtr` |
+| `JntVntrParentCoOvhdProject` |  | | `_JointVentureMasterFld` | `JntVntrParentCoOvhdProject` |
+| `JntVntrParentCoOvhdExpnOrder` |  | | `_JointVentureMasterFld` | `JntVntrParentCoOvhdExpnOrder` |
+| `JntVntrSubstituteCostCtr` |  | | `_JointVentureMasterFld` | `JntVntrSubstituteCostCtr` |
+| `JntVntrProperty` |  | | `_JointVentureMasterFld` | `JntVntrProperty` |
+| `ControllingArea` |  | | `_JointVentureCostCenter` | `ControllingArea` |
+| `ValidityEndDate` |  | | `_JointVentureCostCenter` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_JointVentureCostCenter` | `ValidityStartDate` |
+| `CostCenterCategory` |  | | `_JointVentureCostCenter` | `CostCenterCategory` |
+| `ProfitCenter` |  | | `_JointVentureCostCenter` | `ProfitCenter` |
+| `FunctionalArea` |  | | `_JointVentureCostCenter` | `FunctionalArea` |
+| `JointVentureRecoveryCode` |  | | `_JointVentureCostCenter` | `JointVentureRecoveryCode` |
+| `JointVentureEquityType` |  | | `_JointVentureCostCenter` | `JointVentureEquityType` |
+| `JointVentureObjectType` |  | | `_JointVentureCostCenter` | `JointVentureObjectType` |
+| `JointVentureClass` |  | | `_JointVentureCostCenter` | `JointVentureClass` |
+| `JointVentureSubClass` |  | | `_JointVentureCostCenter` | `JointVentureSubClass` |
+| `WBSDescription` |  | | `_JointVentureProjectData` | `WBSDescription` |
+| `WBSElementShortID` |  | | `_JointVentureProjectData` | `WBSElementShortID` |
+| `ProjectType` |  | | `_JointVentureProjectData` | `ProjectType` |
+| `WBSElementHierarchyLevel` |  | | `_JointVentureProjectData` | `WBSElementHierarchyLevel` |
+| `WBSElementIsPlanningElement` |  | | `_JointVentureProjectData` | `WBSElementIsPlanningElement` |
+| `WBSIsAccountAssignmentElement` |  | | `_JointVentureProjectData` | `WBSIsAccountAssignmentElement` |
+| `WBSElementIsBillingElement` |  | | `_JointVentureProjectData` | `WBSElementIsBillingElement` |
+| `NetworkAssignmentType` |  | | `_JointVentureProjectData` | `NetworkAssignmentType` |
+| `RequestingCostCenter` |  | | `_JointVentureProjectData` | `RequestingCostCenter` |
+| `ResponsibleCostCenter` |  | | `_JointVentureProjectData` | `ResponsibleCostCenter` |
+| `FunctionalLocation` |  | | `_JointVentureProjectData` | `FunctionalLocation` |
+| `JointVentureCostRecoveryCode` |  | | `_JointVentureProjectData` | `JointVentureCostRecoveryCode` |
+| `JntVntrProjectType` |  | | `_JointVentureProjectData` | `JntVntrProjectType` |
+| `OrderType` |  | | `_JointVentureOrderData` | `OrderType` |
+| `OrderCategory` |  | | `_JointVentureOrderData` | `OrderCategory` |
+| `ReferenceOrder` |  | | `_JointVentureOrderData` | `ReferenceOrder` |
+| `InternalOrderDescription` |  | | `_JointVentureOrderData` | `InternalOrderDescription` |
+| `Currency` |  | | `_CompanyCode` | `Currency` |
+| `_CompanyCode` | | ✓ | | |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Associations
 

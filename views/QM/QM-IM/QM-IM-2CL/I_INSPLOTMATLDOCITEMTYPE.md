@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspLotMatlDocItemType` | `cast ( substring( domvalue_l, 1, 1 ) as qambtype )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspLotMatlDocItemType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as qambtype )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

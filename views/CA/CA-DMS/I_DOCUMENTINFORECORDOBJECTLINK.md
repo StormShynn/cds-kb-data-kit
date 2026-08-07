@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `ObjLink.DocumentInfoRecordDocType` |
-| key `DocumentInfoRecordDocNumber` | `ObjLink.DocumentInfoRecordDocNumber` |
-| key `DocumentInfoRecordDocVersion` | `ObjLink.DocumentInfoRecordDocVersion` |
-| key `DocumentInfoRecordDocPart` | `ObjLink.DocumentInfoRecordDocPart` |
-| key `LinkedSAPObject` | `ObjLink.LinkedSAPObject` |
-| key `LinkedSAPObjectKey` | `ObjLink.LinkedSAPObjectKey` |
-| key `DocObjectLinkCounter` | `ObjLink.DocObjectLinkCounter` |
-| `CreationDateTime` | `ObjLink.CreationDateTime` |
-| `CreatedByUser` | `ObjLink.CreatedByUser` |
-| `ChangedDateTime` | `ObjLink.ChangedDateTime` |
-| `LastChangedByUser` | `ObjLink.LastChangedByUser` |
-| `DocInfoRecdLinkStatus` | `ObjLink.DocInfoRecdLinkStatus` |
-| `DocInfoRecdObjectLinkStatus` | `ObjLink.DocInfoRecdObjectLinkStatus` |
-| `ObjectTypeDatabaseTable` | `ObjLink.ObjectTypeDatabaseTable` |
-| `DocInfoRecdAdditionalObjectKey` | `ObjLink.DocInfoRecdAdditionalObjectKey` |
-| `DocLinkDirectionIsActive` | `ObjLink.DocLinkDirectionIsActive` |
-| `IsDefaultDocument` | `ObjLink.IsDefaultDocument` |
-| `DocInfoRecdIsMarkedForDeletion` | `ObjLink.DocInfoRecdIsMarkedForDeletion` |
-| `DocInfoRecdLongTextUUID` | `ObjLink.DocInfoRecdLongTextUUID` |
-| `IsDocInfoRecdCreatedFromCAD` | `ObjLink.IsDocInfoRecdCreatedFromCAD` |
-| `DocInfoRecdConfignMgmtFixed` | `ObjLink.DocInfoRecdConfignMgmtFixed` |
-| `IsArchived` | `ObjLink.IsArchived` |
-| `_Text` | *Association* |
-| `_CreatedUser` | *Association* |
-| `_ChangedUser` | *Association* |
-| `_DocumentInfoRecordDesc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  |
+| `DocumentInfoRecordDocPart` | ✓ | |  |  |
+| `LinkedSAPObject` | ✓ | |  |  |
+| `LinkedSAPObjectKey` | ✓ | |  |  |
+| `DocObjectLinkCounter` | ✓ | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `DocInfoRecdLinkStatus` |  | |  |  |
+| `DocInfoRecdObjectLinkStatus` |  | |  |  |
+| `ObjectTypeDatabaseTable` |  | |  |  |
+| `DocInfoRecdAdditionalObjectKey` |  | |  |  |
+| `DocLinkDirectionIsActive` |  | |  |  |
+| `IsDefaultDocument` |  | |  |  |
+| `DocInfoRecdIsMarkedForDeletion` |  | |  |  |
+| `DocInfoRecdLongTextUUID` |  | |  |  |
+| `IsDocInfoRecdCreatedFromCAD` |  | |  |  |
+| `DocInfoRecdConfignMgmtFixed` |  | |  |  |
+| `IsArchived` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_CreatedUser` | | ✓ | | |
+| `_ChangedUser` | | ✓ | | |
+| `_DocumentInfoRecordDesc` | | ✓ | | |
 
 ## Associations
 

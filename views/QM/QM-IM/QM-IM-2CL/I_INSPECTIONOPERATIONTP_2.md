@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| key `InspPlanOperationInternalID` | `InspPlanOperationInternalID` |
-| `OrderInternalBillOfOperations` | `OrderInternalBillOfOperations` |
-| `OrderOperationInternalID` | `OrderOperationInternalID` |
-| `InspectionOperation` | `InspectionOperation` |
-| `InspectionOperationPlant` | `InspectionOperationPlant` |
-| `BillOfOperationsType` | `BillOfOperationsType` |
-| `BOOOperationInternalID` | `BOOOperationInternalID` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `StatusObject` | `StatusObject` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `OperationConfirmation` | `OperationConfirmation` |
-| `InspectionSubSystem` | `InspectionSubSystem` |
-| `OperationText` | `OperationText` |
-| `InspSbstIsTimeRelated` | `InspSbstIsTimeRelated` |
-| `InspSbstHasNoTimeOrQuantity` | `InspSbstHasNoTimeOrQuantity` |
-| `Sequence` | `Sequence` |
-| `_InspectionLot` | *Association* |
-| `_InspectionCharacteristic` | *Association* |
-| `_InspectionSubset` | *Association* |
-| `_WorkCenter` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |
+| `OrderInternalBillOfOperations` |  | |  |  |
+| `OrderOperationInternalID` |  | |  |  |
+| `InspectionOperation` |  | |  |  |
+| `InspectionOperationPlant` |  | |  |  |
+| `BillOfOperationsType` |  | |  |  |
+| `BOOOperationInternalID` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `StatusObject` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `OperationConfirmation` |  | |  |  |
+| `InspectionSubSystem` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `InspSbstIsTimeRelated` |  | |  |  |
+| `InspSbstHasNoTimeOrQuantity` |  | |  |  |
+| `Sequence` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionCharacteristic` | | ✓ | | |
+| `_InspectionSubset` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
 
 ## Source Code
 

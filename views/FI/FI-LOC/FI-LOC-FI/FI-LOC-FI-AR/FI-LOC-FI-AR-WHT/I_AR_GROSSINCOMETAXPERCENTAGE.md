@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `Region` | `regio` |
-| key `GrossIncomeTaxActivityCode` | `j_1agicd` |
-| key `AR_ActivityCodeValidityAsText` | `cast( ( 99999999 - cast( j_1avaldat as abap.int4) ) as abap.char( 12 ) )` |
-| `AR_ActivityCodeTaxRate` | `j_1agiper` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `Region` | ✓ | |  | `regio` |
+| `GrossIncomeTaxActivityCode` | ✓ | |  | `j_1agicd` |
+| `AR_ActivityCodeValidityAsText` | ✓ | |  | `cast( ( 99999999 - cast( j_1avaldat as abap.int4) ) as abap.char( 12 ) )` |
+| `AR_ActivityCodeTaxRate` |  | |  | `j_1agiper` |
 
 ## Source Code
 

@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialPricingGroup` | `kondm` |
-| key `Language` | `spras` |
-| `MaterialPricingGroupName` | `vtext` |
-| `_MaterialPricingGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialPricingGroup` | ✓ | |  | `kondm` |
+| `Language` | ✓ | |  | `spras` |
+| `MaterialPricingGroupName` |  | |  | `vtext` |
+| `_MaterialPricingGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

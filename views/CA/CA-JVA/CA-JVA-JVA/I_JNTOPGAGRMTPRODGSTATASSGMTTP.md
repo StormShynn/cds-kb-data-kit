@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmt` |
-| key `JntVntrProducingStstclRatioID` | `JntVntrProducingStstclRatioID` |
-| `JntVntrDrillingFromDepth` | `JntVntrDrillingFromDepth` |
-| `JntVntrDrillingToDepth` | `JntVntrDrillingToDepth` |
-| `_CompanyCode` | *Association* |
-| `_JntVntrProdgStstclRatio` | *Association* |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JntVntrProducingStstclRatioID` | ✓ | |  |  |
+| `JntVntrDrillingFromDepth` |  | |  |  |
+| `JntVntrDrillingToDepth` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_JntVntrProdgStstclRatio` | | ✓ | | |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Source Code
 

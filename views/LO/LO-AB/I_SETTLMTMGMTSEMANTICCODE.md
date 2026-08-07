@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtMgmtSemanticCode` | `semantic_type` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtMgmtSemanticCode` | ✓ | |  | `semantic_type` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

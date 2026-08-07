@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportZone` | `tzone.zone1` |
-| key `CountryCode` | `tzone.land1` |
-| `_Text` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportZone` | ✓ | |  | `zone1` |
+| `CountryCode` | ✓ | |  | `land1` |
+| `_Text` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

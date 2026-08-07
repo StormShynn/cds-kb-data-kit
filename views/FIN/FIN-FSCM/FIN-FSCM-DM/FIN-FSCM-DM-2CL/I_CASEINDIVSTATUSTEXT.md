@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CaseStatusProfile` | `scmgstatprofst.profile_id` |
-| key `Language` | `langu` |
-| key `CaseStatus` | `scmgstatprofst.stat_orderno` |
-| `CaseStatusName` | `scmgstatprofst.stat_ordno_descr` |
-| `_Language` | *Association* |
-| `_CaseStatusProfile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CaseStatusProfile` | ✓ | |  | `profile_id` |
+| `Language` | ✓ | |  | `langu` |
+| `CaseStatus` | ✓ | |  | `stat_orderno` |
+| `CaseStatusName` |  | |  | `stat_ordno_descr` |
+| `_Language` | | ✓ | | |
+| `_CaseStatusProfile` | | ✓ | | |
 
 ## Associations
 

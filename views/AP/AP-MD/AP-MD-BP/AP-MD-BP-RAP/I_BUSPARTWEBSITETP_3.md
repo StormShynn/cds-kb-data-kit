@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| key `Person` | `Person` |
-| key `OrdinalNumber` | `OrdinalNumber` |
-| `IsDefaultURLAddress` | `IsDefaultURLAddress` |
-| `SearchURLAddress` | `SearchURLAddress` |
-| `URLFieldLength` | `URLFieldLength` |
-| `WebsiteURL` | `WebsiteURL` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `_BPProtectedAddress` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
-| `_AuthorizationGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `Person` | ✓ | |  |  |
+| `OrdinalNumber` | ✓ | |  |  |
+| `IsDefaultURLAddress` |  | |  |  |
+| `SearchURLAddress` |  | |  |  |
+| `URLFieldLength` |  | |  |  |
+| `WebsiteURL` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `_BPProtectedAddress` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_AuthorizationGroup` | | ✓ | | |
 
 ## Source Code
 

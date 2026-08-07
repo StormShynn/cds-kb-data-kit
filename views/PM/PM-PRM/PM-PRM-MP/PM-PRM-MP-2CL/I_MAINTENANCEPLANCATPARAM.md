@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlanCategory` | `t399w.mptyp` |
-| `MaintenancePlanCallObject` | `t399w.call_type` |
-| `MaintPlanExternalRangeCode` | `t399w.wpext` |
-| `MaintPlanInternalRangeCode` | `t399w.wpint` |
-| `MaintPlanIncludeScreenCatCode` | `t399w.dynnr` |
-| `OrderCategoryScreenTypeCode` | `t399w.screenty` |
-| `MaintPlanHasContract` | `t399w.mpcontract` |
-| `MaintCallDteHasSeparateCompltn` | `t399w.mpconfdate` |
-| `ChangeDocumentCreationIsActive` | `t399w.mpchanged` |
-| `MaintPlnSchedgRelIsToBeChgDocd` | `t399w.chdoc_rcal` |
-| `MaintItemCausesAreDisplayed` | `t399w.show_urkat` |
-| `MaintItemReasonsAreDisplayed` | `t399w.show_rekat` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlanCategory` | ✓ | |  | `mptyp` |
+| `MaintenancePlanCallObject` |  | |  | `call_type` |
+| `MaintPlanExternalRangeCode` |  | |  | `wpext` |
+| `MaintPlanInternalRangeCode` |  | |  | `wpint` |
+| `MaintPlanIncludeScreenCatCode` |  | |  | `dynnr` |
+| `OrderCategoryScreenTypeCode` |  | |  | `screenty` |
+| `MaintPlanHasContract` |  | |  | `mpcontract` |
+| `MaintCallDteHasSeparateCompltn` |  | |  | `mpconfdate` |
+| `ChangeDocumentCreationIsActive` |  | |  | `mpchanged` |
+| `MaintPlnSchedgRelIsToBeChgDocd` |  | |  | `chdoc_rcal` |
+| `MaintItemCausesAreDisplayed` |  | |  | `show_urkat` |
+| `MaintItemReasonsAreDisplayed` |  | |  | `show_rekat` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

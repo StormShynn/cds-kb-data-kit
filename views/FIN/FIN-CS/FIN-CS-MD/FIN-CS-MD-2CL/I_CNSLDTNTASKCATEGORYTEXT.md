@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_DomainT.Language as spras preserving type )` |
-| key `ConsolidationTaskCategory` | `cast(left(_DomainT.DomainValue, 2) as fincs_taskcategory preserving type )` |
-| `ConsolidationTaskCategoryText` | `_DomainT.DomainValueText` |
-| `DomainValue` | `_DomainT.DomainValue` |
-| `_TaskCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
+| `ConsolidationTaskCategory` | ✓ | |  | `cast(left(_DomainT.DomainValue, 2) as fincs_taskcategory preserving type )` |
+| `ConsolidationTaskCategoryText` |  | | `_DomainT` | `DomainValueText` |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |
+| `_TaskCategory` | | ✓ | | |
 
 ## Associations
 

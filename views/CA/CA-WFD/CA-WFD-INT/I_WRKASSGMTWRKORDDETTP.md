@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkforcePersonExternalID` | `WorkforcePersonExternalID` |
-| key `WorkAssignmentExternalID` | `WorkAssignmentExternalID` |
-| key `Country2DigitISOCode` | `Country2DigitISOCode` |
-| key `WorkAssignmentStartDate` | `WorkAssignmentStartDate` |
-| `WorkAssignmentEndDate` | `WorkAssignmentEndDate` |
-| `Supplier` | `Supplier` |
-| `IsBlocked` | `IsBlocked` |
-| `_WorkAssignment` | *Association* |
-| `_WorkforcePerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |
+| `WorkAssignmentExternalID` | ✓ | |  |  |
+| `Country2DigitISOCode` | ✓ | |  |  |
+| `WorkAssignmentStartDate` | ✓ | |  |  |
+| `WorkAssignmentEndDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `IsBlocked` |  | |  |  |
+| `_WorkAssignment` | | ✓ | | |
+| `_WorkforcePerson` | | ✓ | | |
 
 ## Source Code
 

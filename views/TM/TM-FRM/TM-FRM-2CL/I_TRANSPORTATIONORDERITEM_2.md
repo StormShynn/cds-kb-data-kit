@@ -29,108 +29,108 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderItemUUID` | `TransportationOrderItemUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspOrdItem` | `TranspOrdItem` |
-| `TranspOrdItemType` | `TranspOrdItemType` |
-| `TranspOrdItemCategory` | `TranspOrdItemCategory` |
-| `TranspOrdItemParentItemUUID` | `TranspOrdItemParentItemUUID` |
-| `TranspOrdItemDesc` | `TranspOrdItemDesc` |
-| `IsMainCargoItem` | `IsMainCargoItem` |
-| `TranspOrdItemSorting` | `TranspOrdItemSorting` |
-| `TranspOrdItemShippingCondition` | `TranspOrdItemShippingCondition` |
-| `SourceStopUUID` | `SourceStopUUID` |
-| `DestinationStopUUID` | `DestinationStopUUID` |
-| `ShipperUUID` | `ShipperUUID` |
-| `Shipper` | `Shipper` |
-| `ShipperAddressID` | `ShipperAddressID` |
-| `ConsigneeUUID` | `ConsigneeUUID` |
-| `Consignee` | `Consignee` |
-| `ConsigneeAddressID` | `ConsigneeAddressID` |
-| `FreightUnitUUID` | `FreightUnitUUID` |
-| `PredecessorTransportationOrder` | `PredecessorTransportationOrder` |
-| `PrdcssrTranspOrderItemUUID` | `PrdcssrTranspOrderItemUUID` |
-| `TranspBaseDocument` | `TranspBaseDocument` |
-| `TranspBaseDocumentType` | `TranspBaseDocumentType` |
-| `TranspBaseDocumentItem` | `TranspBaseDocumentItem` |
-| `TranspBaseDocumentItemType` | `TranspBaseDocumentItemType` |
-| `TranspOrdShptItemRefUUID` | `TranspOrdShptItemRefUUID` |
-| `TransportationEquipmentGroup` | `TransportationEquipmentGroup` |
-| `TransportationEquipmentType` | `TransportationEquipmentType` |
-| `TranspEquipmentIsShipperOwned` | `TranspEquipmentIsShipperOwned` |
-| `TranspEquipmentPlateNumber` | `TranspEquipmentPlateNumber` |
-| `TranspEquipRegistrationCountry` | `TranspEquipRegistrationCountry` |
-| `TranspEquipCapacityLength` | `TranspEquipCapacityLength` |
-| `TranspEquipCapacityWidth` | `TranspEquipCapacityWidth` |
-| `TranspEquipCapacityHeight` | `TranspEquipCapacityHeight` |
-| `TranspEquipCapacityUnit` | `TranspEquipCapacityUnit` |
-| `TranspEquipCapacityWeight` | `TranspEquipCapacityWeight` |
-| `TranspEquipCapacityWeightUnit` | `TranspEquipCapacityWeightUnit` |
-| `TranspEquipCapacityVolume` | `TranspEquipCapacityVolume` |
-| `TranspEquipCapacityVolumeUnit` | `TranspEquipCapacityVolumeUnit` |
-| `TranspOrdItemPackageID` | `TranspOrdItemPackageID` |
-| `ProductUUID` | `ProductUUID` |
-| `ProductID` | `ProductID` |
-| `MaterialFreightGroup` | `MaterialFreightGroup` |
-| `TransportationGroup` | `TransportationGroup` |
-| `TranspOrdItmMinTemp` | `TranspOrdItmMinTemp` |
-| `TranspOrdItmMaxTemp` | `TranspOrdItmMaxTemp` |
-| `TranspOrdItemTemperatureUnit` | `TranspOrdItemTemperatureUnit` |
-| `TranspOrdItemQuantity` | `TranspOrdItemQuantity` |
-| `TranspOrdItemQuantityUnit` | `TranspOrdItemQuantityUnit` |
-| `TranspOrdItemGrossWeight` | `TranspOrdItemGrossWeight` |
-| `TranspOrdItemGrossWeightUnit` | `TranspOrdItemGrossWeightUnit` |
-| `TranspOrdItemGrossVolume` | `TranspOrdItemGrossVolume` |
-| `TranspOrdItemGrossVolumeUnit` | `TranspOrdItemGrossVolumeUnit` |
-| `TranspOrdItemNetWeight` | `TranspOrdItemNetWeight` |
-| `TranspOrdItemNetWeightUnit` | `TranspOrdItemNetWeightUnit` |
-| `TranspOrdItemLength` | `TranspOrdItemLength` |
-| `TranspOrdItemWidth` | `TranspOrdItemWidth` |
-| `TranspOrdItemHeight` | `TranspOrdItemHeight` |
-| `TranspOrdItemLengthUnit` | `TranspOrdItemLengthUnit` |
-| `TranspOrdItemPalletSpacesQty` | `TranspOrdItemPalletSpacesQty` |
-| `TranspOrdItemPalletSpacesUnit` | `TranspOrdItemPalletSpacesUnit` |
-| `TranspOrdItemGoodsValueAmount` | `TranspOrdItemGoodsValueAmount` |
-| `TranspOrdItemGoodsValueCrcy` | `TranspOrdItemGoodsValueCrcy` |
-| `TranspOrdItemInsurableValAmt` | `TranspOrdItemInsurableValAmt` |
-| `TranspOrdItemInsurableValCrcy` | `TranspOrdItemInsurableValCrcy` |
-| `TranspOrdItemDngrsGdsSts` | `TranspOrdItemDngrsGdsSts` |
-| `_PrdcssrTransportationOrder` | *Association* |
-| `_PrdcssrTranspOrderItemUUID` | *Association* |
-| `_FreightUnit` | *Association* |
-| `_TranspOrdItemParentItem` | *Association* |
-| `_SourceStop` | *Association* |
-| `_DestinationStop` | *Association* |
-| `_Consignee` | *Association* |
-| `_Shipper` | *Association* |
-| `_TranspOrdItemType` | *Association* |
-| `_TranspOrdItemCategory` | *Association* |
-| `_TranspOrdItemGrossWeightUnit` | *Association* |
-| `_TranspOrdItemGrossVolumeUnit` | *Association* |
-| `_TranspOrdItemNetWeightUnit` | *Association* |
-| `_TranspOrdItemQuantityUnit` | *Association* |
-| `_TranspOrdItemTemperatureUnit` | *Association* |
-| `_TranspOrdItemCapacityUnit` | *Association* |
-| `_TranspOrdItmCapGrossVolUnit` | *Association* |
-| `_TranspOrdItmCapGrossWeightUnt` | *Association* |
-| `_TranspOrdItemLengthUnit` | *Association* |
-| `_TranspOrdItemPalletSpacesUnit` | *Association* |
-| `_TransportationGroup` | *Association* |
-| `_Product` | *Association* |
-| `_BusTransDocTypeCode` | *Association* |
-| `_BusTransDocItemTypeCode` | *Association* |
-| `_TranspOrdItemDngrsGdsStatus` | *Association* |
-| `_TranspOrdItemGoodsValueCrcy` | *Association* |
-| `_TranspOrdItemInsurableValCrcy` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_TransportationOrder` | *Association* |
-| `_TranspOrdItemSeal` | *Association* |
-| `_TranspOrdItemDocRef` | *Association* |
-| `_TranspOrdItemCommodityCode` | *Association* |
-| `_TranspOrdItemBatch` | *Association* |
-| `_TranspOrdItemSerialNumber` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderItemUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspOrdItem` |  | |  |  |
+| `TranspOrdItemType` |  | |  |  |
+| `TranspOrdItemCategory` |  | |  |  |
+| `TranspOrdItemParentItemUUID` |  | |  |  |
+| `TranspOrdItemDesc` |  | |  |  |
+| `IsMainCargoItem` |  | |  |  |
+| `TranspOrdItemSorting` |  | |  |  |
+| `TranspOrdItemShippingCondition` |  | |  |  |
+| `SourceStopUUID` |  | |  |  |
+| `DestinationStopUUID` |  | |  |  |
+| `ShipperUUID` |  | |  |  |
+| `Shipper` |  | |  |  |
+| `ShipperAddressID` |  | |  |  |
+| `ConsigneeUUID` |  | |  |  |
+| `Consignee` |  | |  |  |
+| `ConsigneeAddressID` |  | |  |  |
+| `FreightUnitUUID` |  | |  |  |
+| `PredecessorTransportationOrder` |  | |  |  |
+| `PrdcssrTranspOrderItemUUID` |  | |  |  |
+| `TranspBaseDocument` |  | |  |  |
+| `TranspBaseDocumentType` |  | |  |  |
+| `TranspBaseDocumentItem` |  | |  |  |
+| `TranspBaseDocumentItemType` |  | |  |  |
+| `TranspOrdShptItemRefUUID` |  | |  |  |
+| `TransportationEquipmentGroup` |  | |  |  |
+| `TransportationEquipmentType` |  | |  |  |
+| `TranspEquipmentIsShipperOwned` |  | |  |  |
+| `TranspEquipmentPlateNumber` |  | |  |  |
+| `TranspEquipRegistrationCountry` |  | |  |  |
+| `TranspEquipCapacityLength` |  | |  |  |
+| `TranspEquipCapacityWidth` |  | |  |  |
+| `TranspEquipCapacityHeight` |  | |  |  |
+| `TranspEquipCapacityUnit` |  | |  |  |
+| `TranspEquipCapacityWeight` |  | |  |  |
+| `TranspEquipCapacityWeightUnit` |  | |  |  |
+| `TranspEquipCapacityVolume` |  | |  |  |
+| `TranspEquipCapacityVolumeUnit` |  | |  |  |
+| `TranspOrdItemPackageID` |  | |  |  |
+| `ProductUUID` |  | |  |  |
+| `ProductID` |  | |  |  |
+| `MaterialFreightGroup` |  | |  |  |
+| `TransportationGroup` |  | |  |  |
+| `TranspOrdItmMinTemp` |  | |  |  |
+| `TranspOrdItmMaxTemp` |  | |  |  |
+| `TranspOrdItemTemperatureUnit` |  | |  |  |
+| `TranspOrdItemQuantity` |  | |  |  |
+| `TranspOrdItemQuantityUnit` |  | |  |  |
+| `TranspOrdItemGrossWeight` |  | |  |  |
+| `TranspOrdItemGrossWeightUnit` |  | |  |  |
+| `TranspOrdItemGrossVolume` |  | |  |  |
+| `TranspOrdItemGrossVolumeUnit` |  | |  |  |
+| `TranspOrdItemNetWeight` |  | |  |  |
+| `TranspOrdItemNetWeightUnit` |  | |  |  |
+| `TranspOrdItemLength` |  | |  |  |
+| `TranspOrdItemWidth` |  | |  |  |
+| `TranspOrdItemHeight` |  | |  |  |
+| `TranspOrdItemLengthUnit` |  | |  |  |
+| `TranspOrdItemPalletSpacesQty` |  | |  |  |
+| `TranspOrdItemPalletSpacesUnit` |  | |  |  |
+| `TranspOrdItemGoodsValueAmount` |  | |  |  |
+| `TranspOrdItemGoodsValueCrcy` |  | |  |  |
+| `TranspOrdItemInsurableValAmt` |  | |  |  |
+| `TranspOrdItemInsurableValCrcy` |  | |  |  |
+| `TranspOrdItemDngrsGdsSts` |  | |  |  |
+| `_PrdcssrTransportationOrder` | | ✓ | | |
+| `_PrdcssrTranspOrderItemUUID` | | ✓ | | |
+| `_FreightUnit` | | ✓ | | |
+| `_TranspOrdItemParentItem` | | ✓ | | |
+| `_SourceStop` | | ✓ | | |
+| `_DestinationStop` | | ✓ | | |
+| `_Consignee` | | ✓ | | |
+| `_Shipper` | | ✓ | | |
+| `_TranspOrdItemType` | | ✓ | | |
+| `_TranspOrdItemCategory` | | ✓ | | |
+| `_TranspOrdItemGrossWeightUnit` | | ✓ | | |
+| `_TranspOrdItemGrossVolumeUnit` | | ✓ | | |
+| `_TranspOrdItemNetWeightUnit` | | ✓ | | |
+| `_TranspOrdItemQuantityUnit` | | ✓ | | |
+| `_TranspOrdItemTemperatureUnit` | | ✓ | | |
+| `_TranspOrdItemCapacityUnit` | | ✓ | | |
+| `_TranspOrdItmCapGrossVolUnit` | | ✓ | | |
+| `_TranspOrdItmCapGrossWeightUnt` | | ✓ | | |
+| `_TranspOrdItemLengthUnit` | | ✓ | | |
+| `_TranspOrdItemPalletSpacesUnit` | | ✓ | | |
+| `_TransportationGroup` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_BusTransDocTypeCode` | | ✓ | | |
+| `_BusTransDocItemTypeCode` | | ✓ | | |
+| `_TranspOrdItemDngrsGdsStatus` | | ✓ | | |
+| `_TranspOrdItemGoodsValueCrcy` | | ✓ | | |
+| `_TranspOrdItemInsurableValCrcy` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_TransportationOrder` | | ✓ | | |
+| `_TranspOrdItemSeal` | | ✓ | | |
+| `_TranspOrdItemDocRef` | | ✓ | | |
+| `_TranspOrdItemCommodityCode` | | ✓ | | |
+| `_TranspOrdItemBatch` | | ✓ | | |
+| `_TranspOrdItemSerialNumber` | | ✓ | | |
 
 ## Associations
 

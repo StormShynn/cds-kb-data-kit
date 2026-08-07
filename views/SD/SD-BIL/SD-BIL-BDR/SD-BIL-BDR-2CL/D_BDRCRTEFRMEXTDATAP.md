@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ReferenceLogicalSystem` | `sdbil_odata_source_system` |
-| `D_BDRCrteFrmExtDataControlP` | `_Control : composition [0..1] of D_BDRCrteFrmExtDataControlP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceLogicalSystem` |  | |  | `sdbil_odata_source_system` |
+| `D_BDRCrteFrmExtDataControlP` |  | |  | `_Control : composition [0..1] of D_BDRCrteFrmExtDataControlP` |
 
 ## Source Code
 

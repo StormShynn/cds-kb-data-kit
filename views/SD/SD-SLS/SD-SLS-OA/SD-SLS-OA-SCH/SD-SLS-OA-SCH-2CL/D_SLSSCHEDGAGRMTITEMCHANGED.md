@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EventRaisedDateTime` | `vdm_lastchangedon` |
-| `SalesSchedgAgrmtType` | `vdm_sales_schedg_agrmt_type` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `OrganizationDivision` | `spart` |
-| `SoldToParty` | `kunnr` |
-| `SalesSchedgAgrmtItemCategory` | `pstyv` |
-| `Product` | `matnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
+| `SalesSchedgAgrmtType` |  | |  | `vdm_sales_schedg_agrmt_type` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SoldToParty` |  | |  | `kunnr` |
+| `SalesSchedgAgrmtItemCategory` |  | |  | `pstyv` |
+| `Product` |  | |  | `matnr` |
 
 ## Source Code
 

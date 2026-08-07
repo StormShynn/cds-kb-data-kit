@@ -27,25 +27,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `OutputScenario` | `ehdgm_output_scenario` |
-| `ProdCmplncLogsDocument` | `ehfnd_log_doc_number` |
-| `D_PCLgsDcGetDaGdsDocInfoItemR` | `_ItemInformation : composition [0..*] of D_PCLgsDcGetDaGdsDocInfoItemR` |
-| `D_PCLgsDcGetDaGdsDocInfoGroupR` | `_GroupingDescription : composition [0..*] of D_PCLgsDcGetDaGdsDocInfoGroupR` |
-| `DangerousGoodsEUADRPointText` | `dangerousgoodseuadrpointtext` |
-| `DangerousGoodsRIDPointText` | `dangerousgoodsridpointtext` |
-| `DngrsGdsEUADRQtyExmpIsPossible` | `dngrsgdseuadrqtyexmpispossible` |
-| `DngrsGdsRIDQtyExmpIsPossible` | `dngrsgdsridqtyexmpispossible` |
-| `D_PCLgsDcGetDaGdsDocInfoPointR` | `_PointsPerCategory : composition [0..*] of D_PCLgsDcGetDaGdsDocInfoPointR` |
-| `DngrsGdsInLimitedQuantitiesQty` | `dngrsgdsinlimitedquantitiesqty` |
-| `DngrsGdsInLimitedQtySAPUnit` | `dngrsgdsinlimitedqtysapunit` |
-| `DngrsGdsInLimitedQtyISOUnit` | `dngrsgdsinlimitedqtyisounit` |
-| `DngrsGdsInExceptedQtyValue` | `dngrsgdsinexceptedqtyvalue` |
-| `GrossWeight` | `ehfnd_gross_weight_val` |
-| `GrossWeightUnit` | `ehfnd_gross_weight_uom` |
-| `GrossVolume` | `ehfnd_gross_volume_val` |
-| `GrossVolumeUnit` | `ehfnd_gross_volume_uom` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OutputScenario` |  | |  | `ehdgm_output_scenario` |
+| `ProdCmplncLogsDocument` |  | |  | `ehfnd_log_doc_number` |
+| `D_PCLgsDcGetDaGdsDocInfoItemR` |  | |  | `_ItemInformation : composition [0..*] of D_PCLgsDcGetDaGdsDocInfoItemR` |
+| `D_PCLgsDcGetDaGdsDocInfoGroupR` |  | |  | `_GroupingDescription : composition [0..*] of D_PCLgsDcGetDaGdsDocInfoGroupR` |
+| `DangerousGoodsEUADRPointText` |  | |  | `dangerousgoodseuadrpointtext` |
+| `DangerousGoodsRIDPointText` |  | |  | `dangerousgoodsridpointtext` |
+| `DngrsGdsEUADRQtyExmpIsPossible` |  | |  | `dngrsgdseuadrqtyexmpispossible` |
+| `DngrsGdsRIDQtyExmpIsPossible` |  | |  | `dngrsgdsridqtyexmpispossible` |
+| `D_PCLgsDcGetDaGdsDocInfoPointR` |  | |  | `_PointsPerCategory : composition [0..*] of D_PCLgsDcGetDaGdsDocInfoPointR` |
+| `DngrsGdsInLimitedQuantitiesQty` |  | |  | `dngrsgdsinlimitedquantitiesqty` |
+| `DngrsGdsInLimitedQtySAPUnit` |  | |  | `dngrsgdsinlimitedqtysapunit` |
+| `DngrsGdsInLimitedQtyISOUnit` |  | |  | `dngrsgdsinlimitedqtyisounit` |
+| `DngrsGdsInExceptedQtyValue` |  | |  | `dngrsgdsinexceptedqtyvalue` |
+| `GrossWeight` |  | |  | `ehfnd_gross_weight_val` |
+| `GrossWeightUnit` |  | |  | `ehfnd_gross_weight_uom` |
+| `GrossVolume` |  | |  | `ehfnd_gross_volume_val` |
+| `GrossVolumeUnit` |  | |  | `ehfnd_gross_volume_uom` |
 
 ## Source Code
 

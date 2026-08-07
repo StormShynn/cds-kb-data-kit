@@ -29,92 +29,92 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REConditionUUID` | `condguid` |
-| `InternalRealEstateNumber` | `intreno` |
-| `REConditionType` | `condtype` |
-| `REStatusObjectCalculation` | `cast(objnr as recdvdmobjnr preserving type )` |
-| `ValidityStartDate` | `cast (condvalidfrom as rebdvdmvalidfrom preserving type )` |
-| `REStatusObjectDistribution` | `cast(objnrdist as recdvdmobjnrdist preserving type )` |
-| `REObjectTypeDistribution` | `cast(objtypedistdist as recdvdmobjtypedist preserving type )` |
-| `REObjectTypePosting` | `cast(objtypedistpost as recdvdmtermnopy preserving type )` |
-| `ValidityEndDate` | `cast ( condvalidto as rebdvdmvalidto preserving type )` |
-| `CreatedByUser` | `rerf` |
-| `CreationDate` | `derf` |
-| `CreationTime` | `terf` |
-| `RESourceOfCreation` | `reher` |
-| `LastChangedByUser` | `rbear` |
-| `LastChangeDate` | `dbear` |
-| `LastChangeTime` | `tbear` |
-| `RESourceOfChange` | `rbher` |
-| `REIsOneTimeCondition` | `uniquecond` |
-| `REConditionIsStatistical` | `cast(infocond as recdvdminfocond preserving type )` |
-| `REPostingTerm` | `termnopy` |
-| `RERhythmTerm` | `cast(termnorh as recdvdmtermnrhy preserving type )` |
-| `REAdjustmentNumber` | `termnoaj` |
-| `REOrglAssignmentTerm` | `cast(termnooa as recdvdmtermnooa preserving type )` |
-| `RESalesTerm` | `termnosr` |
-| `REPeakSalesTerm` | `termnomr` |
-| `RESrvcChrgSettlementPostingTrm` | `termnopyscs` |
-| `REWithholdingTaxTerm` | `termnowt` |
-| `RECalculationRule` | `calcrule` |
-| `REUnitPrice` | `unitprice` |
-| `REConditionCurrency` | `cast(condcurr as recdvdmcondcurr preserving type )` |
-| `RECalculationRuleParam1` | `calcrulepara1` |
-| `RECalculationRuleParam2` | `calcrulepara2` |
-| `REDistributionRule` | `cast(distrule as recdvdmdistrule preserving type )` |
-| `REDistributionRuleParam1` | `distrulepara1` |
-| `REDistributionRuleParam2` | `distrulepara2` |
-| `REExtConditionPurpose` | `cast(condpurposeext as recdvdmcondpurposeext preserving type )` |
-| `REReasonForChange` | `chgreason` |
-| `REStsObjectParamCalculation` | `cast( objnrcalcpara as recdvdmobjnrparacalc preserving type )` |
-| `REStsObjectParamDistribution` | `cast( objnrdistpara as recdvdmobjnrparadist preserving type )` |
-| `REDueDateTotNumberOfCrrtnDays` | `duedatecorr` |
-| `REDueDateNumberOfCrrtnDays` | `duedatecorrday` |
-| `REDueDateNumberOfCrrtnMonths` | `duedatecorrmonth` |
-| `RECashFlowPostingFromDate` | `cfpostingfrom` |
-| `REConditionExceptionalDueDate` | `exduedate` |
-| `REConditionFollowUpDueDate` | `duedateup` |
-| `REConditionCalcIsInvalid` | `invalidcalc` |
-| `REDistributionIsInvalid` | `invaliddist` |
-| `REServiceChrgSettlementIsActv` | `termnopyscsact` |
-| `REConditionIsToBeDeleted` | `conddelete` |
-| `REConditionObjTypeCalculation` | `cast( left(objnr,2) as rebdbusobjtypecn preserving type )` |
-| `REConditionObjTypeDistribution` | `cast( left(objnrdist,2) as rebdbusobjtypecn preserving type )` |
-| `_Currency` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_ChangedByUser` | *Association* |
-| `_REKeyAssgmt` | *Association* |
-| `_REContract` | *Association* |
-| `_REConditionType` | *Association* |
-| `_RECndnCalculationRuleExt` | *Association* |
-| `_REObjectTypeDistribution` | *Association* |
-| `_REObjectTypePosting` | *Association* |
-| `_RECndnDistributionRuleExt` | *Association* |
-| `_REConditionPurposeExt` | *Association* |
-| `_REConditionChangeReason` | *Association* |
-| `_REConditionObjTypeCalculation` | *Association* |
-| `_REObjectGroupCalculation` | *Association* |
-| `_REContractSubjectCalculation` | *Association* |
-| `_REObjectCalculation` | *Association* |
-| `_CostCenterCalculation` | *Association* |
-| `_WBSElementCalculation` | *Association* |
-| `_InternalOrderCalculation` | *Association* |
-| `_TechnicalObjectCalculation` | *Association* |
-| `_REConditionObjTypeDistr` | *Association* |
-| `_REObjectGroupDistribution` | *Association* |
-| `_REContractSubjectDistribution` | *Association* |
-| `_REObjectDistribution` | *Association* |
-| `_CostCenterDistribution` | *Association* |
-| `_WBSElementDistribution` | *Association* |
-| `_InternalOrderDistribution` | *Association* |
-| `_REConditionCalculation` | *Association* |
-| `_REConditionDistribution` | *Association* |
-| `_REOrganizationalAssgmtTerm` | *Association* |
-| `_REPostingTerm` | *Association* |
-| `_RERhythmTerm` | *Association* |
-| `_REAdjustmentTerm` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REConditionUUID` | ✓ | |  | `condguid` |
+| `InternalRealEstateNumber` |  | |  | `intreno` |
+| `REConditionType` |  | |  | `condtype` |
+| `REStatusObjectCalculation` |  | |  | `cast(objnr as recdvdmobjnr preserving type )` |
+| `ValidityStartDate` |  | |  | `cast (condvalidfrom as rebdvdmvalidfrom preserving type )` |
+| `REStatusObjectDistribution` |  | |  | `cast(objnrdist as recdvdmobjnrdist preserving type )` |
+| `REObjectTypeDistribution` |  | |  | `cast(objtypedistdist as recdvdmobjtypedist preserving type )` |
+| `REObjectTypePosting` |  | |  | `cast(objtypedistpost as recdvdmtermnopy preserving type )` |
+| `ValidityEndDate` |  | |  | `cast ( condvalidto as rebdvdmvalidto preserving type )` |
+| `CreatedByUser` |  | |  | `rerf` |
+| `CreationDate` |  | |  | `derf` |
+| `CreationTime` |  | |  | `terf` |
+| `RESourceOfCreation` |  | |  | `reher` |
+| `LastChangedByUser` |  | |  | `rbear` |
+| `LastChangeDate` |  | |  | `dbear` |
+| `LastChangeTime` |  | |  | `tbear` |
+| `RESourceOfChange` |  | |  | `rbher` |
+| `REIsOneTimeCondition` |  | |  | `uniquecond` |
+| `REConditionIsStatistical` |  | |  | `cast(infocond as recdvdminfocond preserving type )` |
+| `REPostingTerm` |  | |  | `termnopy` |
+| `RERhythmTerm` |  | |  | `cast(termnorh as recdvdmtermnrhy preserving type )` |
+| `REAdjustmentNumber` |  | |  | `termnoaj` |
+| `REOrglAssignmentTerm` |  | |  | `cast(termnooa as recdvdmtermnooa preserving type )` |
+| `RESalesTerm` |  | |  | `termnosr` |
+| `REPeakSalesTerm` |  | |  | `termnomr` |
+| `RESrvcChrgSettlementPostingTrm` |  | |  | `termnopyscs` |
+| `REWithholdingTaxTerm` |  | |  | `termnowt` |
+| `RECalculationRule` |  | |  | `calcrule` |
+| `REUnitPrice` |  | |  | `unitprice` |
+| `REConditionCurrency` |  | |  | `cast(condcurr as recdvdmcondcurr preserving type )` |
+| `RECalculationRuleParam1` |  | |  | `calcrulepara1` |
+| `RECalculationRuleParam2` |  | |  | `calcrulepara2` |
+| `REDistributionRule` |  | |  | `cast(distrule as recdvdmdistrule preserving type )` |
+| `REDistributionRuleParam1` |  | |  | `distrulepara1` |
+| `REDistributionRuleParam2` |  | |  | `distrulepara2` |
+| `REExtConditionPurpose` |  | |  | `cast(condpurposeext as recdvdmcondpurposeext preserving type )` |
+| `REReasonForChange` |  | |  | `chgreason` |
+| `REStsObjectParamCalculation` |  | |  | `cast( objnrcalcpara as recdvdmobjnrparacalc preserving type )` |
+| `REStsObjectParamDistribution` |  | |  | `cast( objnrdistpara as recdvdmobjnrparadist preserving type )` |
+| `REDueDateTotNumberOfCrrtnDays` |  | |  | `duedatecorr` |
+| `REDueDateNumberOfCrrtnDays` |  | |  | `duedatecorrday` |
+| `REDueDateNumberOfCrrtnMonths` |  | |  | `duedatecorrmonth` |
+| `RECashFlowPostingFromDate` |  | |  | `cfpostingfrom` |
+| `REConditionExceptionalDueDate` |  | |  | `exduedate` |
+| `REConditionFollowUpDueDate` |  | |  | `duedateup` |
+| `REConditionCalcIsInvalid` |  | |  | `invalidcalc` |
+| `REDistributionIsInvalid` |  | |  | `invaliddist` |
+| `REServiceChrgSettlementIsActv` |  | |  | `termnopyscsact` |
+| `REConditionIsToBeDeleted` |  | |  | `conddelete` |
+| `REConditionObjTypeCalculation` |  | |  | `cast( left(objnr,2) as rebdbusobjtypecn preserving type )` |
+| `REConditionObjTypeDistribution` |  | |  | `cast( left(objnrdist,2) as rebdbusobjtypecn preserving type )` |
+| `_Currency` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_ChangedByUser` | | ✓ | | |
+| `_REKeyAssgmt` | | ✓ | | |
+| `_REContract` | | ✓ | | |
+| `_REConditionType` | | ✓ | | |
+| `_RECndnCalculationRuleExt` | | ✓ | | |
+| `_REObjectTypeDistribution` | | ✓ | | |
+| `_REObjectTypePosting` | | ✓ | | |
+| `_RECndnDistributionRuleExt` | | ✓ | | |
+| `_REConditionPurposeExt` | | ✓ | | |
+| `_REConditionChangeReason` | | ✓ | | |
+| `_REConditionObjTypeCalculation` | | ✓ | | |
+| `_REObjectGroupCalculation` | | ✓ | | |
+| `_REContractSubjectCalculation` | | ✓ | | |
+| `_REObjectCalculation` | | ✓ | | |
+| `_CostCenterCalculation` | | ✓ | | |
+| `_WBSElementCalculation` | | ✓ | | |
+| `_InternalOrderCalculation` | | ✓ | | |
+| `_TechnicalObjectCalculation` | | ✓ | | |
+| `_REConditionObjTypeDistr` | | ✓ | | |
+| `_REObjectGroupDistribution` | | ✓ | | |
+| `_REContractSubjectDistribution` | | ✓ | | |
+| `_REObjectDistribution` | | ✓ | | |
+| `_CostCenterDistribution` | | ✓ | | |
+| `_WBSElementDistribution` | | ✓ | | |
+| `_InternalOrderDistribution` | | ✓ | | |
+| `_REConditionCalculation` | | ✓ | | |
+| `_REConditionDistribution` | | ✓ | | |
+| `_REOrganizationalAssgmtTerm` | | ✓ | | |
+| `_REPostingTerm` | | ✓ | | |
+| `_RERhythmTerm` | | ✓ | | |
+| `_REAdjustmentTerm` | | ✓ | | |
 
 ## Associations
 

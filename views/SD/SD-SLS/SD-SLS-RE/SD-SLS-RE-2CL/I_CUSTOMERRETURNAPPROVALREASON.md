@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturnApprovalReason` | `SlsDocApprovalReason.SalesDocApprovalReason` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturnApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
 
 ## Source Code
 

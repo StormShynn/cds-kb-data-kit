@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkDayRule` | `cast(substring(txt.domvalue_l, 1, 1) as workdayrule preserving type)` |
-| key `Language` | `cast(txt.ddlanguage as spras preserving type)` |
-| `WorkDayRuleName` | `cast(txt.ddtext as workdayrulename preserving type)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkDayRule` | ✓ | |  | `cast(substring(txt.domvalue_l, 1, 1) as workdayrule preserving type)` |
+| `Language` | ✓ | |  | `cast(txt.ddlanguage as spras preserving type)` |
+| `WorkDayRuleName` |  | |  | `cast(txt.ddtext as workdayrulename preserving type)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

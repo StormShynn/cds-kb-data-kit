@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REProRataMethodCalc` | `cast( dd07l.domvalue_l as recdvdmcalcmethper )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REProRataMethodCalc` | ✓ | |  | `cast( dd07l.domvalue_l as recdvdmcalcmethper )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

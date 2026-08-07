@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Route` | `route` |
-| `TransitDurationInCalendarDays` | `cast(traztd as vdm_letra_duration preserving type )` |
-| `TranspLeadTimeInCalDays` | `cast(tdvztd as vdm_letra_duration preserving type )` |
-| `TranspLeadTimeInHrsMin` | `cast(tdvznd as vdm_letra_leadtime preserving type )` |
-| `RouteFactoryCalendar` | `spfbk` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Route` | ✓ | |  | `route` |
+| `TransitDurationInCalendarDays` |  | |  | `cast(traztd as vdm_letra_duration preserving type )` |
+| `TranspLeadTimeInCalDays` |  | |  | `cast(tdvztd as vdm_letra_duration preserving type )` |
+| `TranspLeadTimeInHrsMin` |  | |  | `cast(tdvznd as vdm_letra_leadtime preserving type )` |
+| `RouteFactoryCalendar` |  | |  | `spfbk` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `itclg` |
-| key `ConsolidationReportingItem` | `cast( item as fc_item )` |
-| `_Text` | *Association* |
-| `_RptgItmHierNode` | *Association* |
-| `_ConsChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `itclg` |
+| `ConsolidationReportingItem` | ✓ | |  | `cast( item as fc_item )` |
+| `_Text` | | ✓ | | |
+| `_RptgItmHierNode` | | ✓ | | |
+| `_ConsChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

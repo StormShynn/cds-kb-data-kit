@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequest` | `DebitMemoRequestText.DebitMemoRequest` |
-| key `Language` | `DebitMemoRequestText.Language` |
-| key `LongTextID` | `DebitMemoRequestText.LongTextID` |
-| `LongTextIDForEdit` | `DebitMemoRequestText.LongTextIDForEdit` |
-| `LanguageForEdit` | `DebitMemoRequestText.LanguageForEdit` |
-| `LongText` | `DebitMemoRequestText.LongText` |
-| `DebitMemoRequestType` | `DebitMemoRequestText.DebitMemoRequestType` |
-| `SalesOrganization` | `DebitMemoRequestText.SalesOrganization` |
-| `DistributionChannel` | `DebitMemoRequestText.DistributionChannel` |
-| `OrganizationDivision` | `DebitMemoRequestText.OrganizationDivision` |
-| `_DebitMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `DebitMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_DebitMemoRequest` | | ✓ | | |
 
 ## Source Code
 

@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t077y.spras` |
-| key `SupplierAccountGroup` | `t077y.ktokk` |
-| `AccountGroupName` | `t077y.txt30` |
-| `_SupplierAccountGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `SupplierAccountGroup` | ✓ | |  | `ktokk` |
+| `AccountGroupName` |  | |  | `txt30` |
+| `_SupplierAccountGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

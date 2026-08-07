@@ -30,83 +30,83 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMOutboundDeliveryOrder` | `EWMOutboundDeliveryOrder` |
-| key `EWMOutboundDeliveryOrderItem` | `EWMOutboundDeliveryOrderItem` |
-| `OutboundDeliveryOrderUUID` | `OutboundDeliveryOrderUUID` |
-| `OutboundDeliveryOrderItemUUID` | `OutboundDeliveryOrderItemUUID` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `EWMDeliveryDocumentCategory` | `EWMDeliveryDocumentCategory` |
-| `EWMOutbDelivOrderItemCategory` | `EWMOutbDelivOrderItemCategory` |
-| `EWMOutbDeliveryOrderItemType` | `EWMOutbDeliveryOrderItemType` |
-| `Product` | `Product` |
-| `ProductExternalID` | `ProductExternalID` |
-| `Batch` | `Batch` |
-| `ProductQuantity` | `ProductQuantity` |
-| `QuantityUnit` | `QuantityUnit` |
-| `SerialNumberRequiredLevel` | `SerialNumberRequiredLevel` |
-| `StagingArea` | `StagingArea` |
-| `StagingAreaGroup` | `StagingAreaGroup` |
-| `StagingBay` | `StagingBay` |
-| `GoodsIssueStatus` | `GoodsIssueStatus` |
-| `PlannedPickingStatus` | `PlannedPickingStatus` |
-| `PickingStatus` | `PickingStatus` |
-| `CompletionStatus` | `CompletionStatus` |
-| `OverallBlockStatus` | `OverallBlockStatus` |
-| `LoadingStatus` | `LoadingStatus` |
-| `EWMGoodsIssueAndDistrStatus` | `EWMGoodsIssueAndDistrStatus` |
-| `EWMPlndPickingAndDistrStatus` | `EWMPlndPickingAndDistrStatus` |
-| `PickingAndDistributionStatus` | `PickingAndDistributionStatus` |
-| `EWMWhseReqItmBatSpltParentItem` | `EWMWhseReqItmBatSpltParentItem` |
-| `EWMWhseReqGrossVolume` | `EWMWhseReqGrossVolume` |
-| `EWMWhseReqGrossVolumeUnit` | `EWMWhseReqGrossVolumeUnit` |
-| `EWMWhseReqGrossWeight` | `EWMWhseReqGrossWeight` |
-| `EWMWhseReqGrossWeightUnit` | `EWMWhseReqGrossWeightUnit` |
-| `WarehouseProcessType` | `WarehouseProcessType` |
-| `ShippingCondition` | `ShippingCondition` |
-| `GoodsMovementBin` | `GoodsMovementBin` |
-| `EWMProductionSupplyArea` | `EWMProductionSupplyArea` |
-| `EWMDelivLastChangeUTCDateTime` | `EWMDelivLastChangeUTCDateTime` |
-| `WarehouseTimeZone` | `WarehouseTimeZone` |
-| `EWMStorageType` | `EWMStorageType` |
-| `EWMStorageSection` | `EWMStorageSection` |
-| `EWMStorageBin` | `EWMStorageBin` |
-| `EWMGoodsRecipient` | `EWMGoodsRecipient` |
-| `EWMRecipientLocationName` | `EWMRecipientLocationName` |
-| `EWMLoadingPoint` | `EWMLoadingPoint` |
-| `EWMUnloadingPoint` | `EWMUnloadingPoint` |
-| `WarehouseDoor` | `WarehouseDoor` |
-| `EWMWhseReqItmHasOpnWhseTsk` | `EWMWhseReqItmHasOpnWhseTsk` |
-| `PlndGoodsIssueStartUTCDateTime` | `PlndGoodsIssueStartUTCDateTime` |
-| `ActlGoodsIssueStartUTCDateTime` | `ActlGoodsIssueStartUTCDateTime` |
-| `EWMWhseReqItmBBDSLEDUTCDteTme` | `EWMWhseReqItmBBDSLEDUTCDteTme` |
-| `RouteSchedule` | `RouteSchedule` |
-| `EntitledToDisposeParty` | `EntitledToDisposeParty` |
-| `EntitledToDisposePartyName` | `EntitledToDisposePartyName` |
-| `EWMStockUsage` | `EWMStockUsage` |
-| `EWMStockType` | `EWMStockType` |
-| `EWMStockOwner` | `EWMStockOwner` |
-| `EWMStockOwnerName` | `EWMStockOwnerName` |
-| `DeliveryItemStockTypeDetnCode` | `DeliveryItemStockTypeDetnCode` |
-| `ExternalStockDocumentNumber` | `ExternalStockDocumentNumber` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `SpecialStockIdfgSalesOrder` | `SpecialStockIdfgSalesOrder` |
-| `SpecialStockIdfgSalesOrderItem` | `SpecialStockIdfgSalesOrderItem` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `ManufacturingOrder` | `ManufacturingOrder` |
-| `MaintenanceOrder` | `MaintenanceOrder` |
-| `MaintenanceOrderOperation` | `MaintenanceOrderOperation` |
-| `Reservation` | `Reservation` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `OutboundDelivery` | `OutboundDelivery` |
-| `OutboundDeliveryItem` | `OutboundDeliveryItem` |
-| `StockDocumentCategory` | `StockDocumentCategory` |
-| `Plant` | `Plant` |
-| `_WhseOutbDeliveryOrderHead` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMOutboundDeliveryOrder` | ✓ | |  |  |
+| `EWMOutboundDeliveryOrderItem` | ✓ | |  |  |
+| `OutboundDeliveryOrderUUID` |  | |  |  |
+| `OutboundDeliveryOrderItemUUID` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `EWMDeliveryDocumentCategory` |  | |  |  |
+| `EWMOutbDelivOrderItemCategory` |  | |  |  |
+| `EWMOutbDeliveryOrderItemType` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductExternalID` |  | |  |  |
+| `Batch` |  | |  |  |
+| `ProductQuantity` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `SerialNumberRequiredLevel` |  | |  |  |
+| `StagingArea` |  | |  |  |
+| `StagingAreaGroup` |  | |  |  |
+| `StagingBay` |  | |  |  |
+| `GoodsIssueStatus` |  | |  |  |
+| `PlannedPickingStatus` |  | |  |  |
+| `PickingStatus` |  | |  |  |
+| `CompletionStatus` |  | |  |  |
+| `OverallBlockStatus` |  | |  |  |
+| `LoadingStatus` |  | |  |  |
+| `EWMGoodsIssueAndDistrStatus` |  | |  |  |
+| `EWMPlndPickingAndDistrStatus` |  | |  |  |
+| `PickingAndDistributionStatus` |  | |  |  |
+| `EWMWhseReqItmBatSpltParentItem` |  | |  |  |
+| `EWMWhseReqGrossVolume` |  | |  |  |
+| `EWMWhseReqGrossVolumeUnit` |  | |  |  |
+| `EWMWhseReqGrossWeight` |  | |  |  |
+| `EWMWhseReqGrossWeightUnit` |  | |  |  |
+| `WarehouseProcessType` |  | |  |  |
+| `ShippingCondition` |  | |  |  |
+| `GoodsMovementBin` |  | |  |  |
+| `EWMProductionSupplyArea` |  | |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  |  |
+| `WarehouseTimeZone` |  | |  |  |
+| `EWMStorageType` |  | |  |  |
+| `EWMStorageSection` |  | |  |  |
+| `EWMStorageBin` |  | |  |  |
+| `EWMGoodsRecipient` |  | |  |  |
+| `EWMRecipientLocationName` |  | |  |  |
+| `EWMLoadingPoint` |  | |  |  |
+| `EWMUnloadingPoint` |  | |  |  |
+| `WarehouseDoor` |  | |  |  |
+| `EWMWhseReqItmHasOpnWhseTsk` |  | |  |  |
+| `PlndGoodsIssueStartUTCDateTime` |  | |  |  |
+| `ActlGoodsIssueStartUTCDateTime` |  | |  |  |
+| `EWMWhseReqItmBBDSLEDUTCDteTme` |  | |  |  |
+| `RouteSchedule` |  | |  |  |
+| `EntitledToDisposeParty` |  | |  |  |
+| `EntitledToDisposePartyName` |  | |  |  |
+| `EWMStockUsage` |  | |  |  |
+| `EWMStockType` |  | |  |  |
+| `EWMStockOwner` |  | |  |  |
+| `EWMStockOwnerName` |  | |  |  |
+| `DeliveryItemStockTypeDetnCode` |  | |  |  |
+| `ExternalStockDocumentNumber` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `SpecialStockIdfgSalesOrder` |  | |  |  |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `ManufacturingOrder` |  | |  |  |
+| `MaintenanceOrder` |  | |  |  |
+| `MaintenanceOrderOperation` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `OutboundDelivery` |  | |  |  |
+| `OutboundDeliveryItem` |  | |  |  |
+| `StockDocumentCategory` |  | |  |  |
+| `Plant` |  | |  |  |
+| `_WhseOutbDeliveryOrderHead` | | ✓ | | |
 
 ## Source Code
 

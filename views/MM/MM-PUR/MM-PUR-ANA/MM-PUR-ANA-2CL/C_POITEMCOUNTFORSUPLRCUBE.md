@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `AvailableSupplier.Supplier` |
-| key `PurchaseOrder` | `_PurchaseOrder.PurchaseOrder` |
-| key `PurchaseOrderItem` | `_PurchaseOrderItem.PurchaseOrderItem` |
-| `SupplierAccountGroup` | `SupplierAccountGroup` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `NumberOfPurchaseOrders` | `cast( 1 as mm_pur_ana_numbrofpurords )` |
-| `NumberOfPurchaseOrderItems` | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
-| `_Country` | *Association* |
-| `_SupplierRegion` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  |  |
+| `PurchaseOrder` | ✓ | | `_PurchaseOrder` | `PurchaseOrder` |
+| `PurchaseOrderItem` | ✓ | | `_PurchaseOrderItem` | `PurchaseOrderItem` |
+| `SupplierAccountGroup` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `NumberOfPurchaseOrders` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurords )` |
+| `NumberOfPurchaseOrderItems` |  | |  | `cast( 1 as mm_pur_ana_numbrofpurorditms )` |
+| `_Country` | | ✓ | | |
+| `_SupplierRegion` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

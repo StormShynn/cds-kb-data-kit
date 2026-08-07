@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WrntyControllingItemType` | `cast( domvalue_l as wty_poskt )` |
-| key `Language` | `ddlanguage` |
-| `WrntyControllingItemTypeText` | `ddtext` |
-| `_WrntyClaimCtrlgItemType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WrntyControllingItemType` | ✓ | |  | `cast( domvalue_l as wty_poskt )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `WrntyControllingItemTypeText` |  | |  | `ddtext` |
+| `_WrntyClaimCtrlgItemType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

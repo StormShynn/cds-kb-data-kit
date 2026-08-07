@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `BR_CTeFiscalDocumentPartner` | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as j_1bcte_tomali preserving type )` |
-| `BR_CTeFiscalDocPartnerDesc` | `ddtext` |
-| `_BR_CTeFiscalDocPartner` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `BR_CTeFiscalDocumentPartner` | ✓ | |  | `cast ( cast ( substring( domvalue_l, 1, 1 ) as abap.char( 1 ) ) as j_1bcte_tomali preserving type )` |
+| `BR_CTeFiscalDocPartnerDesc` |  | |  | `ddtext` |
+| `_BR_CTeFiscalDocPartner` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

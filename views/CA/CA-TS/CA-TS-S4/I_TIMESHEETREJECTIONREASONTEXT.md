@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `TimeSheetRejectionReason` | `reason` |
-| `TimeSheetRejectionReasonText` | `cast(text as catsrejetext preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `TimeSheetRejectionReason` | ✓ | |  | `reason` |
+| `TimeSheetRejectionReasonText` |  | |  | `cast(text as catsrejetext preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

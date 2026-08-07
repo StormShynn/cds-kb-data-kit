@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AssetRevaluationIndex` | `index_id` |
-| key `ValidityEndDate` | `valid_to_date` |
-| `ValidityStartDate` | `valid_from_date` |
-| `AssetRevaluationIndexValue` | `index_point` |
-| `_AssetRevaluationIndex` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssetRevaluationIndex` | ✓ | |  | `index_id` |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` |
+| `ValidityStartDate` |  | |  | `valid_from_date` |
+| `AssetRevaluationIndexValue` |  | |  | `index_point` |
+| `_AssetRevaluationIndex` | | ✓ | | |
 
 ## Associations
 

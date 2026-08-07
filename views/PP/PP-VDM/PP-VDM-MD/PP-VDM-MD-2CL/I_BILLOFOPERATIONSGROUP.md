@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `cast(plnty as billofoperationstype preserving type)` |
-| key `BillOfOperationsGroup` | `cast(plnnr as billofoperationsgroup preserving type)` |
-| `_BillOfOperationsType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  | `cast(plnty as billofoperationstype preserving type)` |
+| `BillOfOperationsGroup` | ✓ | |  | `cast(plnnr as billofoperationsgroup preserving type)` |
+| `_BillOfOperationsType` | | ✓ | | |
 
 ## Associations
 

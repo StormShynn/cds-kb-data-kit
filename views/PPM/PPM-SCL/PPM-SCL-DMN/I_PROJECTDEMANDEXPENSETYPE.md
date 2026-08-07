@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectDemandExpenseType` | `resource_id` |
-| `_ExpenseTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectDemandExpenseType` | ✓ | |  | `resource_id` |
+| `_ExpenseTypeText` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentCardType` | `ccins` |
-| key `Language` | `spras` |
-| `PaymentCardTypeName` | `vtext` |
-| `_PaymentCardType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentCardType` | ✓ | |  | `ccins` |
+| `Language` | ✓ | |  | `spras` |
+| `PaymentCardTypeName` |  | |  | `vtext` |
+| `_PaymentCardType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `CreditMemoReqApprvlRsnText.Language` |
-| key `CreditMemoReqApprovalReason` | `CreditMemoReqApprvlRsnText.SalesDocApprovalReason` |
-| `CreditMemoReqApprvlRsnName` | `CreditMemoReqApprvlRsnText.SalesDocApprovalReasonName` |
-| `_CreditMemoReqApprvlRsnText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `CreditMemoReqApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
+| `CreditMemoReqApprvlRsnName` |  | |  | `SalesDocApprovalReasonName` |
+| `_CreditMemoReqApprvlRsnText` | | ✓ | | |
 
 ## Associations
 

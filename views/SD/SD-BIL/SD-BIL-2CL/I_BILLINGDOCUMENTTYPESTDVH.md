@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentType` | `BillingDocumentType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

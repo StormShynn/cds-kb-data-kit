@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `knaddr_ext.kunnr` |
-| key `AddressID` | `knaddr_ext.adrnr` |
-| `CustomerExternalRefID` | `knaddr_ext.ext_ref_id` |
-| `_Customer` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
-| `_BusinessPartnerCustomer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `AddressID` | ✓ | |  | `adrnr` |
+| `CustomerExternalRefID` |  | |  | `ext_ref_id` |
+| `_Customer` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
+| `_BusinessPartnerCustomer` | | ✓ | | |
 
 ## Associations
 

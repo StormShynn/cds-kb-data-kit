@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShiftGrouping` | `txt.schgrup` |
-| key `Language` | `txt.spras` |
-| `ShiftGroupingName` | `txt.ktext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShiftGrouping` | ✓ | |  | `schgrup` |
+| `Language` | ✓ | |  | `spras` |
+| `ShiftGroupingName` |  | |  | `ktext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

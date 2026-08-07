@@ -29,128 +29,128 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionReleaseStatus` | `ConditionReleaseStatus` |
-| `DepartureCountry` | `DepartureCountry` |
-| `SalesDocument` | `SalesDocument` |
-| `SalesDocumentItem` | `SalesDocumentItem` |
-| `BillableControl` | `BillableControl` |
-| `Industry` | `Industry` |
-| `CityCode` | `CityCode` |
-| `ConditionContract` | `ConditionContract` |
-| `County` | `County` |
-| `EngagementProject` | `EngagementProject` |
-| `ConfigurationNumber` | `ConfigurationNumber` |
-| `InternationalArticleNumber` | `InternationalArticleNumber` |
-| `TechnicalObjectType` | `TechnicalObjectType` |
-| `Equipment` | `Equipment` |
-| `CustomerHierarchy` | `CustomerHierarchy` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `CustomerGroup` | `CustomerGroup` |
-| `CustomerPriceGroup` | `CustomerPriceGroup` |
-| `MaterialPricingGroup` | `MaterialPricingGroup` |
-| `SoldToParty` | `SoldToParty` |
-| `BPForSoldToParty` | `BPForSoldToParty` |
-| `Customer` | `Customer` |
-| `BPForCustomer` | `BPForCustomer` |
-| `PayerParty` | `PayerParty` |
-| `BPForPayerParty` | `BPForPayerParty` |
-| `ShipToParty` | `ShipToParty` |
-| `BPForShipToParty` | `BPForShipToParty` |
-| `Supplier` | `Supplier` |
-| `BPForSupplier` | `BPForSupplier` |
-| `DestinationCountry` | `DestinationCountry` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Material` | `Material` |
-| `ReturnsRefundExtent` | `ReturnsRefundExtent` |
-| `AdditionalMaterialGroup1` | `AdditionalMaterialGroup1` |
-| `AdditionalMaterialGroup2` | `AdditionalMaterialGroup2` |
-| `AdditionalMaterialGroup3` | `AdditionalMaterialGroup3` |
-| `AdditionalMaterialGroup4` | `AdditionalMaterialGroup4` |
-| `AdditionalMaterialGroup5` | `AdditionalMaterialGroup5` |
-| `PersonWorkAgreement` | `PersonWorkAgreement` |
-| `PriceListType` | `PriceListType` |
-| `PostalCode` | `PostalCode` |
-| `Region` | `Region` |
-| `EngagementProjectServiceOrg` | `EngagementProjectServiceOrg` |
-| `RequirementSegment` | `RequirementSegment` |
-| `StockSegment` | `StockSegment` |
-| `Division` | `Division` |
-| `TradingContract` | `TradingContract` |
-| `TradingContractItem` | `TradingContractItem` |
-| `MainItemMaterialPricingGroup` | `MainItemMaterialPricingGroup` |
-| `MainItemPricingRefMaterial` | `MainItemPricingRefMaterial` |
-| `VariantCondition` | `VariantCondition` |
-| `ValueAddedServiceChargeCode` | `ValueAddedServiceChargeCode` |
-| `SDDocument` | `SDDocument` |
-| `ReferenceSDDocument` | `ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `ReferenceSDDocumentItem` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesOrganization` | `SalesOrganization` |
-| `SalesOrderSalesOrganization` | `SalesOrderSalesOrganization` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `DistributionChannel` | `DistributionChannel` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WorkPackageInternalID` | `WorkPackageInternalID` |
-| `Plant` | `Plant` |
-| `PlantRegion` | `PlantRegion` |
-| `WorkItem` | `WorkItem` |
-| `ConditionProcessingStatus` | `ConditionProcessingStatus` |
-| `PricingDate` | `PricingDate` |
-| `ConditionIsExclusive` | `ConditionIsExclusive` |
-| `ConditionScaleBasisValue` | `ConditionScaleBasisValue` |
-| `ServiceDocument` | `ServiceDocument` |
-| `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `TimeSheetOvertimeCategory` | `TimeSheetOvertimeCategory` |
-| `SalesSDDocumentCategory` | `SalesSDDocumentCategory` |
-| `ReturnReason` | `ReturnReason` |
-| `ProdUnivHierarchyNode` | `ProdUnivHierarchyNode` |
-| `CustomerConditionGroup` | `CustomerConditionGroup` |
-| `ShippingType` | `ShippingType` |
-| `SubscriptionContractDuration` | `SubscriptionContractDuration` |
-| `SubscriptionContractLockReason` | `SubscriptionContractLockReason` |
-| `CrsCtlgMappgPriceVersionNumber` | `CrsCtlgMappgPriceVersionNumber` |
-| `OrderType` | `OrderType` |
-| `SalesDocumentType` | `SalesDocumentType` |
-| `SDDocumentReason` | `SDDocumentReason` |
-| `VolumeRebateGroup` | `VolumeRebateGroup` |
-| `ValuationType` | `ValuationType` |
-| `SalesDistrict` | `SalesDistrict` |
-| `Batch` | `Batch` |
-| `PurgDocSupplyingPlant` | `PurgDocSupplyingPlant` |
-| `MatUsageIndicator` | `MatUsageIndicator` |
-| `ShippingCondition` | `ShippingCondition` |
-| `PlantCounty` | `PlantCounty` |
-| `PlantCity` | `PlantCity` |
-| `MaterialExternalGroup` | `MaterialExternalGroup` |
-| `CustomerHierarchyRootNode` | `CustomerHierarchyRootNode` |
-| `CustomerHierarchyNodeID` | `CustomerHierarchyNodeID` |
-| `CustomerHierarchyNodeType` | `CustomerHierarchyNodeType` |
-| `AdditionalCustomerGroup1` | `AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `AdditionalCustomerGroup5` |
-| `SDDocumentItem` | `SDDocumentItem` |
-| `Country` | `Country` |
-| `CustomerPurchaseOrderType` | `CustomerPurchaseOrderType` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `SalesDocumentItemCategory` | `SalesDocumentItemCategory` |
-| `BillToParty` | `BillToParty` |
-| `BusinessPartnerIndustryCode` | `BusinessPartnerIndustryCode` |
-| `BillingDocumentType` | `BillingDocumentType` |
-| `MatlAccountAssignmentGroup` | `MatlAccountAssignmentGroup` |
-| `Route` | `Route` |
-| `_ConditionRecord` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionReleaseStatus` |  | |  |  |
+| `DepartureCountry` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `SalesDocumentItem` |  | |  |  |
+| `BillableControl` |  | |  |  |
+| `Industry` |  | |  |  |
+| `CityCode` |  | |  |  |
+| `ConditionContract` |  | |  |  |
+| `County` |  | |  |  |
+| `EngagementProject` |  | |  |  |
+| `ConfigurationNumber` |  | |  |  |
+| `InternationalArticleNumber` |  | |  |  |
+| `TechnicalObjectType` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `CustomerHierarchy` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `CustomerPriceGroup` |  | |  |  |
+| `MaterialPricingGroup` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `BPForSoldToParty` |  | |  |  |
+| `Customer` |  | |  |  |
+| `BPForCustomer` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `BPForPayerParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `BPForShipToParty` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `BPForSupplier` |  | |  |  |
+| `DestinationCountry` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Material` |  | |  |  |
+| `ReturnsRefundExtent` |  | |  |  |
+| `AdditionalMaterialGroup1` |  | |  |  |
+| `AdditionalMaterialGroup2` |  | |  |  |
+| `AdditionalMaterialGroup3` |  | |  |  |
+| `AdditionalMaterialGroup4` |  | |  |  |
+| `AdditionalMaterialGroup5` |  | |  |  |
+| `PersonWorkAgreement` |  | |  |  |
+| `PriceListType` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `Region` |  | |  |  |
+| `EngagementProjectServiceOrg` |  | |  |  |
+| `RequirementSegment` |  | |  |  |
+| `StockSegment` |  | |  |  |
+| `Division` |  | |  |  |
+| `TradingContract` |  | |  |  |
+| `TradingContractItem` |  | |  |  |
+| `MainItemMaterialPricingGroup` |  | |  |  |
+| `MainItemPricingRefMaterial` |  | |  |  |
+| `VariantCondition` |  | |  |  |
+| `ValueAddedServiceChargeCode` |  | |  |  |
+| `SDDocument` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `SalesOrderSalesOrganization` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WorkPackageInternalID` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PlantRegion` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `ConditionProcessingStatus` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `ConditionIsExclusive` |  | |  |  |
+| `ConditionScaleBasisValue` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |
+| `SalesSDDocumentCategory` |  | |  |  |
+| `ReturnReason` |  | |  |  |
+| `ProdUnivHierarchyNode` |  | |  |  |
+| `CustomerConditionGroup` |  | |  |  |
+| `ShippingType` |  | |  |  |
+| `SubscriptionContractDuration` |  | |  |  |
+| `SubscriptionContractLockReason` |  | |  |  |
+| `CrsCtlgMappgPriceVersionNumber` |  | |  |  |
+| `OrderType` |  | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `VolumeRebateGroup` |  | |  |  |
+| `ValuationType` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `Batch` |  | |  |  |
+| `PurgDocSupplyingPlant` |  | |  |  |
+| `MatUsageIndicator` |  | |  |  |
+| `ShippingCondition` |  | |  |  |
+| `PlantCounty` |  | |  |  |
+| `PlantCity` |  | |  |  |
+| `MaterialExternalGroup` |  | |  |  |
+| `CustomerHierarchyRootNode` |  | |  |  |
+| `CustomerHierarchyNodeID` |  | |  |  |
+| `CustomerHierarchyNodeType` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `SDDocumentItem` |  | |  |  |
+| `Country` |  | |  |  |
+| `CustomerPurchaseOrderType` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `SalesDocumentItemCategory` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `BusinessPartnerIndustryCode` |  | |  |  |
+| `BillingDocumentType` |  | |  |  |
+| `MatlAccountAssignmentGroup` |  | |  |  |
+| `Route` |  | |  |  |
+| `_ConditionRecord` | | ✓ | | |
 
 ## Source Code
 

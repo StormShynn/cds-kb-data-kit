@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `TreasuryPaymentRequestGrouping` | `cast( dd07t.domvalue_l as tb_sprgrd )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `TrsyPaytRequestGroupingName` | `cast( dd07t.ddtext as tb_sprgrd_name preserving type )` |
-| `_PaymentRequestGrouping` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `TreasuryPaymentRequestGrouping` | ✓ | |  | `cast( dd07t.domvalue_l as tb_sprgrd )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `TrsyPaytRequestGroupingName` |  | |  | `cast( dd07t.ddtext as tb_sprgrd_name preserving type )` |
+| `_PaymentRequestGrouping` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

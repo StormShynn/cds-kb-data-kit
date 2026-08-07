@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(t.ddlanguage as spras preserving type)` |
-| key `SchedulingReductionLevel` | `cast(substring(t.domvalue_l, 1, 1) as redkz preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `SchedulingReductionLevelName` | `cast(t.ddtext as redkz_txt preserving type)` |
-| `_Language` | *Association* |
-| `_SchedulingReductionLevel` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
+| `SchedulingReductionLevel` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as redkz preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `SchedulingReductionLevelName` |  | |  | `cast(t.ddtext as redkz_txt preserving type)` |
+| `_Language` | | ✓ | | |
+| `_SchedulingReductionLevel` | | ✓ | | |
 
 ## Associations
 

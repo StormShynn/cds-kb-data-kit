@@ -26,15 +26,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingGroup` | `t024.ekgrp` |
-| `PurchasingGroupName` | `cast(t024.eknam as mm_a_purg_grp_name preserving type )` |
-| `PurchasingGroupPhoneNumber` | `t024.ektel` |
-| `FaxNumber` | `t024.telfx` |
-| `PhoneNumber` | `t024.tel_number` |
-| `PhoneNumberExtension` | `t024.tel_extens` |
-| `EmailAddress` | `t024.smtp_addr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingGroup` | ✓ | |  | `ekgrp` |
+| `PurchasingGroupName` |  | |  | `cast(t024.eknam as mm_a_purg_grp_name preserving type )` |
+| `PurchasingGroupPhoneNumber` |  | |  | `ektel` |
+| `FaxNumber` |  | |  | `telfx` |
+| `PhoneNumber` |  | |  | `tel_number` |
+| `PhoneNumberExtension` |  | |  | `tel_extens` |
+| `EmailAddress` |  | |  | `smtp_addr` |
 
 ## Source Code
 

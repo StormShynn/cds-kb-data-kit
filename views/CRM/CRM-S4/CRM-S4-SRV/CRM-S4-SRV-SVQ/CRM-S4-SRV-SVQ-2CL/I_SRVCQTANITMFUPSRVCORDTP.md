@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceQuotation` | `ServiceQuotation` |
-| key `ServiceQuotationItem` | `ServiceQuotationItem` |
-| key `ServiceOrder` | `ServiceOrder` |
-| key `ServiceOrderItem` | `ServiceOrderItem` |
-| `_ServiceQuotationItemTP` | *Association* |
-| `_ServiceQuotationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceQuotation` | ✓ | |  |  |
+| `ServiceQuotationItem` | ✓ | |  |  |
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |
+| `_ServiceQuotationItemTP` | | ✓ | | |
+| `_ServiceQuotationTP` | | ✓ | | |
 
 ## Source Code
 

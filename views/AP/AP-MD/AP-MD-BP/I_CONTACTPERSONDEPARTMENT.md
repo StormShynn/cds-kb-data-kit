@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContactPersonDepartment` | `tb910.abtnr` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContactPersonDepartment` | ✓ | |  | `abtnr` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

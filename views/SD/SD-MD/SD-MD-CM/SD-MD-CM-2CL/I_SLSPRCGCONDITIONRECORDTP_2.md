@@ -30,61 +30,61 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionRecord` | `ConditionRecord` |
-| `ConditionSequentialNumber` | `ConditionSequentialNumber` |
-| `ConditionTable` | `ConditionTable` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `ConditionTextID` | `ConditionTextID` |
-| `PricingScaleType` | `PricingScaleType` |
-| `PricingScaleBasis` | `PricingScaleBasis` |
-| `ConditionScaleQuantity` | `ConditionScaleQuantity` |
-| `ConditionScaleQuantityUnit` | `ConditionScaleQuantityUnit` |
-| `ConditionScaleAmount` | `ConditionScaleAmount` |
-| `ConditionScaleAmountCurrency` | `ConditionScaleAmountCurrency` |
-| `ConditionCalculationType` | `ConditionCalculationType` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionRateValueUnit` | `ConditionRateValueUnit` |
-| `ConditionRateRatio` | `ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `ConditionRateRatioUnit` |
-| `ConditionRateAmount` | `ConditionRateAmount` |
-| `ConditionCurrency` | `ConditionCurrency` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionToBaseQtyNmrtr` | `ConditionToBaseQtyNmrtr` |
-| `ConditionToBaseQtyDnmntr` | `ConditionToBaseQtyDnmntr` |
-| `BaseUnit` | `BaseUnit` |
-| `ConditionLowerLimit` | `ConditionLowerLimit` |
-| `ConditionLowerLimitAmount` | `ConditionLowerLimitAmount` |
-| `ConditionLowerLimitRatio` | `ConditionLowerLimitRatio` |
-| `ConditionUpperLimit` | `ConditionUpperLimit` |
-| `ConditionUpperLimitAmount` | `ConditionUpperLimitAmount` |
-| `ConditionUpperLimitRatio` | `ConditionUpperLimitRatio` |
-| `ConditionAlternativeCurrency` | `ConditionAlternativeCurrency` |
-| `ConditionExclusion` | `ConditionExclusion` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `AdditionalValueDays` | `AdditionalValueDays` |
-| `FixedValueDate` | `FixedValueDate` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CndnMaxNumberOfSalesOrders` | `CndnMaxNumberOfSalesOrders` |
-| `MinimumConditionBasisValue` | `MinimumConditionBasisValue` |
-| `MaximumConditionBasisValue` | `MaximumConditionBasisValue` |
-| `MaximumConditionAmount` | `MaximumConditionAmount` |
-| `IncrementalScale` | `IncrementalScale` |
-| `PricingScaleLine` | `PricingScaleLine` |
-| `SalesPriceApprovalRequest` | `SalesPriceApprovalRequest` |
-| `PrevApprovedConditionRecord` | `PrevApprovedConditionRecord` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Validity` | *Association* |
-| `_Supplement` | *Association* |
-| `_Scale` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionSequentialNumber` |  | |  |  |
+| `ConditionTable` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionValidityEndDate` |  | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `ConditionTextID` |  | |  |  |
+| `PricingScaleType` |  | |  |  |
+| `PricingScaleBasis` |  | |  |  |
+| `ConditionScaleQuantity` |  | |  |  |
+| `ConditionScaleQuantityUnit` |  | |  |  |
+| `ConditionScaleAmount` |  | |  |  |
+| `ConditionScaleAmountCurrency` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionRateValueUnit` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionToBaseQtyNmrtr` |  | |  |  |
+| `ConditionToBaseQtyDnmntr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ConditionLowerLimit` |  | |  |  |
+| `ConditionLowerLimitAmount` |  | |  |  |
+| `ConditionLowerLimitRatio` |  | |  |  |
+| `ConditionUpperLimit` |  | |  |  |
+| `ConditionUpperLimitAmount` |  | |  |  |
+| `ConditionUpperLimitRatio` |  | |  |  |
+| `ConditionAlternativeCurrency` |  | |  |  |
+| `ConditionExclusion` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `AdditionalValueDays` |  | |  |  |
+| `FixedValueDate` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CndnMaxNumberOfSalesOrders` |  | |  |  |
+| `MinimumConditionBasisValue` |  | |  |  |
+| `MaximumConditionBasisValue` |  | |  |  |
+| `MaximumConditionAmount` |  | |  |  |
+| `IncrementalScale` |  | |  |  |
+| `PricingScaleLine` |  | |  |  |
+| `SalesPriceApprovalRequest` |  | |  |  |
+| `PrevApprovedConditionRecord` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Validity` | | ✓ | | |
+| `_Supplement` | | ✓ | | |
+| `_Scale` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

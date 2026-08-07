@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotation` | `SalesQuotationItemText.SalesQuotation` |
-| key `SalesQuotationItem` | `SalesQuotationItemText.SalesQuotationItem` |
-| key `Language` | `SalesQuotationItemText.Language` |
-| key `LongTextID` | `SalesQuotationItemText.LongTextID` |
-| `LongTextIDForEdit` | `SalesQuotationItemText.LongTextIDForEdit` |
-| `LanguageForEdit` | `SalesQuotationItemText.LanguageForEdit` |
-| `LongText` | `SalesQuotationItemText.LongText` |
-| `SalesQuotationType` | `SalesQuotationItemText.SalesQuotationType` |
-| `SalesOrganization` | `SalesQuotationItemText.SalesOrganization` |
-| `DistributionChannel` | `SalesQuotationItemText.DistributionChannel` |
-| `OrganizationDivision` | `SalesQuotationItemText.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesQuotation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |
+| `SalesQuotationItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `SalesQuotationType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesQuotation` | | ✓ | | |
 
 ## Source Code
 

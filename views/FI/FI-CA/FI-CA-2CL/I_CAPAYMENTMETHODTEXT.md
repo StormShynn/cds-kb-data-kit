@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `CAPaymentMethod` | `zlsch` |
-| key `Language` | `spras` |
-| `CAPaymentMethodName` | `cast( text1 as pymet_text_kk preserving type )` |
-| `_Language` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `CAPaymentMethod` | ✓ | |  | `zlsch` |
+| `Language` | ✓ | |  | `spras` |
+| `CAPaymentMethodName` |  | |  | `cast( text1 as pymet_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

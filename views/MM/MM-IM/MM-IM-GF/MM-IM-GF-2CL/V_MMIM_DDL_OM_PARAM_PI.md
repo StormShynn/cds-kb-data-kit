@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SAPClient` | `document.mandt` |
-| key `pidockey` | `concat( document.PhysicalInventoryDocument, concat (document.FiscalYear, document.PhysicalInventoryDocumentItem ) )` |
-| `PhysicalInventoryDocument` | `document.PhysicalInventoryDocument` |
-| `PhysicalInventoryYear` | `document.FiscalYear` |
-| `PhysicalInventoryItem` | `document.PhysicalInventoryDocumentItem` |
-| `Plant` | `document.Plant` |
-| `StorageLocation` | `document.StorageLocation` |
-| `CompanyCode` | `val.bukrs` |
-| `Language` | `plant.spras` |
-| `Country` | `plant.land1` |
-| `SalesPriceValuation` | `val.xvkbw` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SAPClient` | ✓ | |  | `mandt` |
+| `pidockey` | ✓ | |  | `concat( document.PhysicalInventoryDocument, concat (document.FiscalYear, document.PhysicalInventoryDocumentItem ) )` |
+| `PhysicalInventoryDocument` |  | |  |  |
+| `PhysicalInventoryYear` |  | |  | `FiscalYear` |
+| `PhysicalInventoryItem` |  | |  | `PhysicalInventoryDocumentItem` |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `CompanyCode` |  | |  | `bukrs` |
+| `Language` |  | |  | `spras` |
+| `Country` |  | |  | `land1` |
+| `SalesPriceValuation` |  | |  | `xvkbw` |
 
 ## Associations
 

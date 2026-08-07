@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnFSItemElimination` | `cast( _FSItemAttribValue.CnsldtnFSItemAttributeValue as fincs_fsitemelimination preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnFSItemElimination` | ✓ | |  | `cast( _FSItemAttribValue.CnsldtnFSItemAttributeValue as fincs_fsitemelimination preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

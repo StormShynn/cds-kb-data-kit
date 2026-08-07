@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceList` | `InvoiceList` |
-| `InvoiceListType` | `InvoiceListType` |
-| `SalesOrganization` | `SalesOrganization` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceList` | ✓ | |  |  |
+| `InvoiceListType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
 
 ## Source Code
 

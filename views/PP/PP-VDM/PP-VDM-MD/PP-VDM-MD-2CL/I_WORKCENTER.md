@@ -29,142 +29,142 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterInternalID` | `crhd.objid` |
-| key `WorkCenterTypeCode` | `crhd.objty` |
-| `WorkCenter` | `cast(crhd.arbpl as pph_arbpl preserving type)` |
-| `WorkCenterIsToBeDeleted` | `crhd.lvorm` |
-| `WorkCenterIsLocked` | `crhd.xsprr` |
-| `WorkCenterIsMntndForCosting` | `crhd.xkost` |
-| `WorkCenterIsMntndForScheduling` | `crhd.xterm` |
-| `NumberOfConfirmationSlips` | `crhd.rsanz` |
-| `AdvancedPlanningIsSupported` | `crhd.ppskz` |
-| `ShiftNoteType` | `crhd.sntype` |
-| `ShiftReportType` | `crhd.srtype` |
-| `WorkCenterLastChangedBy` | `crhd.aenam_grnd` |
-| `WorkCenterLastChangeDateTime` | `case when crhd.lastchange_datetime = 0 or crhd.lastchange_datetime is null then case when crhd.aedat_grnd is null then cast(dats_tims_to_tstmp(cast('20190101' as dats), cast('120000'as tims), 'UTC', $session.client, 'NULL') as cr_lastchange_datetime) else cast(dats_tims_to_tstmp(crhd.aedat_grnd, cast('120000'as tims), 'UTC', $session.client, 'NULL') as cr_lastchange_datetime) end else crhd.lastchange_datetime end` |
-| `WorkCenterCategoryCode` | `crhd.verwe` |
-| `WorkCenterLocation` | `crhd.stand` |
-| `WorkCenterLocationGroup` | `crhd.ortgr` |
-| `WorkCenterUsage` | `cast(crhd.planv as pph_ap_planv preserving type)` |
-| `WorkCenterResponsible` | `crhd.veran` |
-| `Plant` | `crhd.werks` |
-| `SupplyArea` | `crhd.prvbe` |
-| `CapacityInternalID` | `crhd.kapid` |
-| `MachineType` | `crhd.matyp` |
-| `OperationControlProfile` | `cast(crhd.steus as pph_steus preserving type)` |
-| `MatlCompIsMarkedForBackflush` | `crhd.rgekz` |
-| `WorkCenterSetupType` | `cast(crhd.rasch as workcentersetuptype preserving type)` |
-| `FreeDefinedTableFieldSemantic` | `cast(crhd.slwid as pph_slwid preserving type)` |
-| `ObjectInternalID` | `crhd.stobj` |
-| `StandardTextInternalID` | `cast(crhd.ktsch as pph_ktsch preserving type)` |
-| `EmployeeWageType` | `cast(crhd.loart as pph_loart preserving type)` |
-| `EmployeeWageGroup` | `cast(crhd.logrp as pph_logrp preserving type)` |
-| `EmployeeSuitability` | `cast(crhd.qualf as pph_qualf preserving type)` |
-| `NumberOfTimeTickets` | `crhd.loanz` |
-| `PlanVersion` | `cast(crhd.hrplvar as pph_plvar preserving type)` |
-| `WrkCtrHumRsceObjID` | `cast(crhd.hroid as wrkctrhumrsceobjid preserving type)` |
-| `ValidityStartDate` | `cast(crhd.begda as pph_begda preserving type)` |
-| `ValidityEndDate` | `cast(crhd.endda as pph_endda preserving type)` |
-| `StandardTextIDIsReferenced` | `crhd.ktsch_ref` |
-| `EmployeeWageTypeIsReferenced` | `crhd.loart_ref` |
-| `NmbrOfTimeTicketsIsReferenced` | `crhd.loanz_ref` |
-| `EmployeeWageGroupIsReferenced` | `crhd.logrp_ref` |
-| `EmplSuitabilityIsReferenced` | `crhd.qualf_ref` |
-| `WorkCenterSetpTypeIsReferenced` | `crhd.rasch_ref` |
-| `OpControlProfileIsReferenced` | `crhd.steus_ref` |
-| `NumberOfConfSlipsIsReferenced` | `crhd.rsanz_ref` |
-| `WorkCenterStdQueueDurnUnit` | `crhd.zeiwn` |
-| `WorkCenterStandardQueueDurn` | `crhd.zwnor` |
-| `WorkCenterMinimumQueueDurnUnit` | `crhd.zeiwm` |
-| `WorkCenterMinimumQueueDuration` | `crhd.zwmin` |
-| `WorkCenterStandardWorkQtyUnit1` | `cast(crhd.vge01 as pph_vge01 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit2` | `cast(crhd.vge02 as pph_vge02 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit3` | `cast(crhd.vge03 as pph_vge03 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit4` | `cast(crhd.vge04 as pph_vge04 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit5` | `cast(crhd.vge05 as pph_vge05 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit6` | `cast(crhd.vge06 as pph_vge06 preserving type)` |
-| `StandardWorkQuantityUnit` | `crhd.vgarb` |
-| `StandardWorkFormulaParamGroup` | `crhd.vgwts` |
-| `LaborTrackingIsRequired` | `crhd.s_labor_track` |
-| `WorkCenterFormulaParam1` | `cast(crhd.par01 as pph_par01 preserving type)` |
-| `WorkCenterFormulaParam2` | `cast(crhd.par02 as pph_par02 preserving type)` |
-| `WorkCenterFormulaParam3` | `cast(crhd.par03 as pph_par03 preserving type)` |
-| `WorkCenterFormulaParam4` | `cast(crhd.par04 as pph_par04 preserving type)` |
-| `WorkCenterFormulaParam5` | `cast(crhd.par05 as pph_par05 preserving type)` |
-| `WorkCenterFormulaParam6` | `cast(crhd.par06 as pph_par06 preserving type)` |
-| `WorkCenterFmlaParamValue1` | `cast(crhd.parv1 as pph_parv1 preserving type)` |
-| `WorkCenterFmlaParamValue2` | `cast(crhd.parv2 as pph_parv2 preserving type)` |
-| `WorkCenterFmlaParamValue3` | `cast(crhd.parv3 as pph_parv3 preserving type)` |
-| `WorkCenterFmlaParamValue4` | `cast(crhd.parv4 as pph_parv4 preserving type)` |
-| `WorkCenterFmlaParamValue5` | `cast(crhd.parv5 as pph_parv5 preserving type)` |
-| `WorkCenterFmlaParamValue6` | `cast(crhd.parv6 as pph_parv6 preserving type)` |
-| `WorkCenterFmlaParamUnit1` | `cast(crhd.paru1 as pph_paru1 preserving type)` |
-| `WorkCenterFmlaParamUnit2` | `cast(crhd.paru2 as pph_paru2 preserving type)` |
-| `WorkCenterFmlaParamUnit3` | `cast(crhd.paru3 as pph_paru3 preserving type)` |
-| `WorkCenterFmlaParamUnit4` | `cast(crhd.paru4 as pph_paru4 preserving type)` |
-| `WorkCenterFmlaParamUnit5` | `cast(crhd.paru5 as pph_paru5 preserving type)` |
-| `WorkCenterFmlaParamUnit6` | `cast(crhd.paru6 as pph_paru6 preserving type)` |
-| `WrkCtrStdValMaintRule1` | `cast(crhd.vgm01 as pph_vgm01 preserving type)` |
-| `WrkCtrStdValMaintRule2` | `cast(crhd.vgm02 as pph_vgm02 preserving type)` |
-| `WrkCtrStdValMaintRule3` | `cast(crhd.vgm03 as pph_vgm03 preserving type)` |
-| `WrkCtrStdValMaintRule4` | `cast(crhd.vgm04 as pph_vgm04 preserving type)` |
-| `WrkCtrStdValMaintRule5` | `cast(crhd.vgm05 as pph_vgm05 preserving type)` |
-| `WrkCtrStdValMaintRule6` | `cast(crhd.vgm06 as pph_vgm06 preserving type)` |
-| `WrkCtrSetupSchedgFmla` | `cast(crhd.fort1 as ap_form_t1 preserving type)` |
-| `WrkCtrProcgSchedgFmla` | `cast(crhd.fort2 as ap_form_t2 preserving type)` |
-| `WrkCtrTeardownSchedgFmla` | `cast(crhd.fort3 as ap_form_t3 preserving type)` |
-| `WrkCtrIntProcgSchedgFmla` | `cast(crhd.fortn as wrkctrintprocgschedgfmla preserving type)` |
-| `_Plant` | *Association* |
-| `_WorkCenterType` | *Association* |
-| `_Text` | *Association* |
-| `_WorkCenterCostCenter` | *Association* |
-| `_CostCenter` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_WorkCenterResponsible` | *Association* |
-| `_WorkCenterCategory` | *Association* |
-| `_ProductionResourceType` | *Association* |
-| `_WorkCenterUsage` | *Association* |
-| `_WorkCenterLocation` | *Association* |
-| `_WorkCenterLocationGroup` | *Association* |
-| `_Capacity` | *Association* |
-| `_MachineType` | *Association* |
-| `_OperationControlProfile` | *Association* |
-| `_SupplyArea` | *Association* |
-| `_WorkCenterSetupType` | *Association* |
-| `_StandardTextInternalID` | *Association* |
-| `_EmployeeWageGroup` | *Association* |
-| `_EmployeeSuitability` | *Association* |
-| `_ValidityStartDate` | *Association* |
-| `_ValidityEndDate` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_StandardQueueDurationUnit` | *Association* |
-| `_MinimumQueueDurationUnit` | *Association* |
-| `_WorkQuantityUnit1` | *Association* |
-| `_WorkQuantityUnit2` | *Association* |
-| `_WorkQuantityUnit3` | *Association* |
-| `_WorkQuantityUnit4` | *Association* |
-| `_WorkQuantityUnit5` | *Association* |
-| `_WorkQuantityUnit6` | *Association* |
-| `_StandardWorkQuantityUnit` | *Association* |
-| `_StandardWorkFmlaParamGroup` | *Association* |
-| `_WorkCenterFmlaParamUnit1` | *Association* |
-| `_WorkCenterFmlaParamUnit2` | *Association* |
-| `_WorkCenterFmlaParamUnit3` | *Association* |
-| `_WorkCenterFmlaParamUnit4` | *Association* |
-| `_WorkCenterFmlaParamUnit5` | *Association* |
-| `_WorkCenterFmlaParamUnit6` | *Association* |
-| `_StandardWorkFormulaParameter1` | *Association* |
-| `_StandardWorkFormulaParameter2` | *Association* |
-| `_StandardWorkFormulaParameter3` | *Association* |
-| `_StandardWorkFormulaParameter4` | *Association* |
-| `_StandardWorkFormulaParameter5` | *Association* |
-| `_StandardWorkFormulaParameter6` | *Association* |
-| `_WrkCtrSchedgSetupFormula` | *Association* |
-| `_WrkCtrProcgSchedgFormula` | *Association* |
-| `_WrkCtrTeardownSchedgFormula` | *Association* |
-| `_WrkCtrIntProcgSchedgFormula` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  | `objid` |
+| `WorkCenterTypeCode` | ✓ | |  | `objty` |
+| `WorkCenter` |  | |  | `cast(crhd.arbpl as pph_arbpl preserving type)` |
+| `WorkCenterIsToBeDeleted` |  | |  | `lvorm` |
+| `WorkCenterIsLocked` |  | |  | `xsprr` |
+| `WorkCenterIsMntndForCosting` |  | |  | `xkost` |
+| `WorkCenterIsMntndForScheduling` |  | |  | `xterm` |
+| `NumberOfConfirmationSlips` |  | |  | `rsanz` |
+| `AdvancedPlanningIsSupported` |  | |  | `ppskz` |
+| `ShiftNoteType` |  | |  | `sntype` |
+| `ShiftReportType` |  | |  | `srtype` |
+| `WorkCenterLastChangedBy` |  | |  | `aenam_grnd` |
+| `WorkCenterLastChangeDateTime` |  | |  | `case when crhd.lastchange_datetime = 0 or crhd.lastchange_datetime is null then case when crhd.aedat_grnd is null then cast(dats_tims_to_tstmp(cast('20190101' as dats), cast('120000'as tims), 'UTC', $session.client, 'NULL') as cr_lastchange_datetime) else cast(dats_tims_to_tstmp(crhd.aedat_grnd, cast('120000'as tims), 'UTC', $session.client, 'NULL') as cr_lastchange_datetime) end else crhd.lastchange_datetime end` |
+| `WorkCenterCategoryCode` |  | |  | `verwe` |
+| `WorkCenterLocation` |  | |  | `stand` |
+| `WorkCenterLocationGroup` |  | |  | `ortgr` |
+| `WorkCenterUsage` |  | |  | `cast(crhd.planv as pph_ap_planv preserving type)` |
+| `WorkCenterResponsible` |  | |  | `veran` |
+| `Plant` |  | |  | `werks` |
+| `SupplyArea` |  | |  | `prvbe` |
+| `CapacityInternalID` |  | |  | `kapid` |
+| `MachineType` |  | |  | `matyp` |
+| `OperationControlProfile` |  | |  | `cast(crhd.steus as pph_steus preserving type)` |
+| `MatlCompIsMarkedForBackflush` |  | |  | `rgekz` |
+| `WorkCenterSetupType` |  | |  | `cast(crhd.rasch as workcentersetuptype preserving type)` |
+| `FreeDefinedTableFieldSemantic` |  | |  | `cast(crhd.slwid as pph_slwid preserving type)` |
+| `ObjectInternalID` |  | |  | `stobj` |
+| `StandardTextInternalID` |  | |  | `cast(crhd.ktsch as pph_ktsch preserving type)` |
+| `EmployeeWageType` |  | |  | `cast(crhd.loart as pph_loart preserving type)` |
+| `EmployeeWageGroup` |  | |  | `cast(crhd.logrp as pph_logrp preserving type)` |
+| `EmployeeSuitability` |  | |  | `cast(crhd.qualf as pph_qualf preserving type)` |
+| `NumberOfTimeTickets` |  | |  | `loanz` |
+| `PlanVersion` |  | |  | `cast(crhd.hrplvar as pph_plvar preserving type)` |
+| `WrkCtrHumRsceObjID` |  | |  | `cast(crhd.hroid as wrkctrhumrsceobjid preserving type)` |
+| `ValidityStartDate` |  | |  | `cast(crhd.begda as pph_begda preserving type)` |
+| `ValidityEndDate` |  | |  | `cast(crhd.endda as pph_endda preserving type)` |
+| `StandardTextIDIsReferenced` |  | |  | `ktsch_ref` |
+| `EmployeeWageTypeIsReferenced` |  | |  | `loart_ref` |
+| `NmbrOfTimeTicketsIsReferenced` |  | |  | `loanz_ref` |
+| `EmployeeWageGroupIsReferenced` |  | |  | `logrp_ref` |
+| `EmplSuitabilityIsReferenced` |  | |  | `qualf_ref` |
+| `WorkCenterSetpTypeIsReferenced` |  | |  | `rasch_ref` |
+| `OpControlProfileIsReferenced` |  | |  | `steus_ref` |
+| `NumberOfConfSlipsIsReferenced` |  | |  | `rsanz_ref` |
+| `WorkCenterStdQueueDurnUnit` |  | |  | `zeiwn` |
+| `WorkCenterStandardQueueDurn` |  | |  | `zwnor` |
+| `WorkCenterMinimumQueueDurnUnit` |  | |  | `zeiwm` |
+| `WorkCenterMinimumQueueDuration` |  | |  | `zwmin` |
+| `WorkCenterStandardWorkQtyUnit1` |  | |  | `cast(crhd.vge01 as pph_vge01 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit2` |  | |  | `cast(crhd.vge02 as pph_vge02 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit3` |  | |  | `cast(crhd.vge03 as pph_vge03 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit4` |  | |  | `cast(crhd.vge04 as pph_vge04 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit5` |  | |  | `cast(crhd.vge05 as pph_vge05 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit6` |  | |  | `cast(crhd.vge06 as pph_vge06 preserving type)` |
+| `StandardWorkQuantityUnit` |  | |  | `vgarb` |
+| `StandardWorkFormulaParamGroup` |  | |  | `vgwts` |
+| `LaborTrackingIsRequired` |  | |  | `s_labor_track` |
+| `WorkCenterFormulaParam1` |  | |  | `cast(crhd.par01 as pph_par01 preserving type)` |
+| `WorkCenterFormulaParam2` |  | |  | `cast(crhd.par02 as pph_par02 preserving type)` |
+| `WorkCenterFormulaParam3` |  | |  | `cast(crhd.par03 as pph_par03 preserving type)` |
+| `WorkCenterFormulaParam4` |  | |  | `cast(crhd.par04 as pph_par04 preserving type)` |
+| `WorkCenterFormulaParam5` |  | |  | `cast(crhd.par05 as pph_par05 preserving type)` |
+| `WorkCenterFormulaParam6` |  | |  | `cast(crhd.par06 as pph_par06 preserving type)` |
+| `WorkCenterFmlaParamValue1` |  | |  | `cast(crhd.parv1 as pph_parv1 preserving type)` |
+| `WorkCenterFmlaParamValue2` |  | |  | `cast(crhd.parv2 as pph_parv2 preserving type)` |
+| `WorkCenterFmlaParamValue3` |  | |  | `cast(crhd.parv3 as pph_parv3 preserving type)` |
+| `WorkCenterFmlaParamValue4` |  | |  | `cast(crhd.parv4 as pph_parv4 preserving type)` |
+| `WorkCenterFmlaParamValue5` |  | |  | `cast(crhd.parv5 as pph_parv5 preserving type)` |
+| `WorkCenterFmlaParamValue6` |  | |  | `cast(crhd.parv6 as pph_parv6 preserving type)` |
+| `WorkCenterFmlaParamUnit1` |  | |  | `cast(crhd.paru1 as pph_paru1 preserving type)` |
+| `WorkCenterFmlaParamUnit2` |  | |  | `cast(crhd.paru2 as pph_paru2 preserving type)` |
+| `WorkCenterFmlaParamUnit3` |  | |  | `cast(crhd.paru3 as pph_paru3 preserving type)` |
+| `WorkCenterFmlaParamUnit4` |  | |  | `cast(crhd.paru4 as pph_paru4 preserving type)` |
+| `WorkCenterFmlaParamUnit5` |  | |  | `cast(crhd.paru5 as pph_paru5 preserving type)` |
+| `WorkCenterFmlaParamUnit6` |  | |  | `cast(crhd.paru6 as pph_paru6 preserving type)` |
+| `WrkCtrStdValMaintRule1` |  | |  | `cast(crhd.vgm01 as pph_vgm01 preserving type)` |
+| `WrkCtrStdValMaintRule2` |  | |  | `cast(crhd.vgm02 as pph_vgm02 preserving type)` |
+| `WrkCtrStdValMaintRule3` |  | |  | `cast(crhd.vgm03 as pph_vgm03 preserving type)` |
+| `WrkCtrStdValMaintRule4` |  | |  | `cast(crhd.vgm04 as pph_vgm04 preserving type)` |
+| `WrkCtrStdValMaintRule5` |  | |  | `cast(crhd.vgm05 as pph_vgm05 preserving type)` |
+| `WrkCtrStdValMaintRule6` |  | |  | `cast(crhd.vgm06 as pph_vgm06 preserving type)` |
+| `WrkCtrSetupSchedgFmla` |  | |  | `cast(crhd.fort1 as ap_form_t1 preserving type)` |
+| `WrkCtrProcgSchedgFmla` |  | |  | `cast(crhd.fort2 as ap_form_t2 preserving type)` |
+| `WrkCtrTeardownSchedgFmla` |  | |  | `cast(crhd.fort3 as ap_form_t3 preserving type)` |
+| `WrkCtrIntProcgSchedgFmla` |  | |  | `cast(crhd.fortn as wrkctrintprocgschedgfmla preserving type)` |
+| `_Plant` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_WorkCenterCostCenter` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_WorkCenterResponsible` | | ✓ | | |
+| `_WorkCenterCategory` | | ✓ | | |
+| `_ProductionResourceType` | | ✓ | | |
+| `_WorkCenterUsage` | | ✓ | | |
+| `_WorkCenterLocation` | | ✓ | | |
+| `_WorkCenterLocationGroup` | | ✓ | | |
+| `_Capacity` | | ✓ | | |
+| `_MachineType` | | ✓ | | |
+| `_OperationControlProfile` | | ✓ | | |
+| `_SupplyArea` | | ✓ | | |
+| `_WorkCenterSetupType` | | ✓ | | |
+| `_StandardTextInternalID` | | ✓ | | |
+| `_EmployeeWageGroup` | | ✓ | | |
+| `_EmployeeSuitability` | | ✓ | | |
+| `_ValidityStartDate` | | ✓ | | |
+| `_ValidityEndDate` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_StandardQueueDurationUnit` | | ✓ | | |
+| `_MinimumQueueDurationUnit` | | ✓ | | |
+| `_WorkQuantityUnit1` | | ✓ | | |
+| `_WorkQuantityUnit2` | | ✓ | | |
+| `_WorkQuantityUnit3` | | ✓ | | |
+| `_WorkQuantityUnit4` | | ✓ | | |
+| `_WorkQuantityUnit5` | | ✓ | | |
+| `_WorkQuantityUnit6` | | ✓ | | |
+| `_StandardWorkQuantityUnit` | | ✓ | | |
+| `_StandardWorkFmlaParamGroup` | | ✓ | | |
+| `_WorkCenterFmlaParamUnit1` | | ✓ | | |
+| `_WorkCenterFmlaParamUnit2` | | ✓ | | |
+| `_WorkCenterFmlaParamUnit3` | | ✓ | | |
+| `_WorkCenterFmlaParamUnit4` | | ✓ | | |
+| `_WorkCenterFmlaParamUnit5` | | ✓ | | |
+| `_WorkCenterFmlaParamUnit6` | | ✓ | | |
+| `_StandardWorkFormulaParameter1` | | ✓ | | |
+| `_StandardWorkFormulaParameter2` | | ✓ | | |
+| `_StandardWorkFormulaParameter3` | | ✓ | | |
+| `_StandardWorkFormulaParameter4` | | ✓ | | |
+| `_StandardWorkFormulaParameter5` | | ✓ | | |
+| `_StandardWorkFormulaParameter6` | | ✓ | | |
+| `_WrkCtrSchedgSetupFormula` | | ✓ | | |
+| `_WrkCtrProcgSchedgFormula` | | ✓ | | |
+| `_WrkCtrTeardownSchedgFormula` | | ✓ | | |
+| `_WrkCtrIntProcgSchedgFormula` | | ✓ | | |
 
 ## Associations
 

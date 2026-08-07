@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `ServiceContractItem` | `ServiceContractItem` |
-| key `PricingProcedureStep` | `PricingProcedureStep` |
-| key `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `PrcgProcedureCounterForHeader` | `PrcgProcedureCounterForHeader` |
-| `ConditionType` | `ConditionType` |
-| `ConditionRateValue` | `ConditionRateValue` |
-| `ConditionCurrency` | `ConditionCurrency` |
-| `ConditionQuantity` | `ConditionQuantity` |
-| `ConditionQuantityUnit` | `ConditionQuantityUnit` |
-| `ConditionInactiveReason` | `ConditionInactiveReason` |
-| `_ConditionQuantityUnit` | *Association* |
-| `_ConditionInactiveReason` | *Association* |
-| `_UnitOfMeasureText` | *Association* |
-| `_CurrencyText` | *Association* |
-| `_ConditionInactiveReasonText` | *Association* |
-| `_ServiceContractItemTP` | *Association* |
-| `_ServiceContractTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceContractItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `PrcgProcedureCounterForHeader` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionRateValue` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `_ConditionQuantityUnit` | | ✓ | | |
+| `_ConditionInactiveReason` | | ✓ | | |
+| `_UnitOfMeasureText` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
+| `_ConditionInactiveReasonText` | | ✓ | | |
+| `_ServiceContractItemTP` | | ✓ | | |
+| `_ServiceContractTP` | | ✓ | | |
 
 ## Source Code
 

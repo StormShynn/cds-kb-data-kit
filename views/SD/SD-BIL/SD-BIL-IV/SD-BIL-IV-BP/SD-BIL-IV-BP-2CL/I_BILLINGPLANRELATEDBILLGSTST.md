@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingPlanRelatedBillgStatus` | `SUBSTRING(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `BillingPlanRelatedBillgStsDesc` | `ddtext` |
-| `_BillingPlanRelatedBillgStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingPlanRelatedBillgStatus` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BillingPlanRelatedBillgStsDesc` |  | |  | `ddtext` |
+| `_BillingPlanRelatedBillgStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

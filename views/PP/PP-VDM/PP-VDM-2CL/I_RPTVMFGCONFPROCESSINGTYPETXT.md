@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(t.ddlanguage as spras preserving type)` |
-| key `RptvMfgConfProcessingType` | `cast(substring(t.domvalue_l, 1, 4) as vdm_pp_vaart preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `RptvMfgConfProcessingTypeName` | `cast(t.ddtext as vdm_pp_vaarttxt preserving type)` |
-| `_Language` | *Association* |
-| `_RptvMfgConfProcessingType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
+| `RptvMfgConfProcessingType` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 4) as vdm_pp_vaart preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `RptvMfgConfProcessingTypeName` |  | |  | `cast(t.ddtext as vdm_pp_vaarttxt preserving type)` |
+| `_Language` | | ✓ | | |
+| `_RptvMfgConfProcessingType` | | ✓ | | |
 
 ## Associations
 

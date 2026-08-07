@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryServiceTypeCode` | `DeliveryServiceTypeCode` |
-| `DeliveryServiceTypeName` | `DeliveryServiceTypeName` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryServiceTypeCode` | ✓ | |  |  |
+| `DeliveryServiceTypeName` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

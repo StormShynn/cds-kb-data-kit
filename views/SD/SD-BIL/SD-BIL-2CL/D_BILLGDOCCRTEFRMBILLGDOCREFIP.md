@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ReferenceBillingDocument` | `vbeln_vf` |
-| `D_BlgDcCrteFrmBillgDocRefItmIP` | `_Item : composition [0..*] of D_BlgDcCrteFrmBillgDocRefItmIP` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceBillingDocument` |  | |  | `vbeln_vf` |
+| `D_BlgDcCrteFrmBillgDocRefItmIP` |  | |  | `_Item : composition [0..*] of D_BlgDcCrteFrmBillgDocRefItmIP` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

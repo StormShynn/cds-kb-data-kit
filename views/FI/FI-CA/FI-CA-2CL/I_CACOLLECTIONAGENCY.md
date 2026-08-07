@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACollectionAgency` | `inkgp` |
-| `ContractAccount` | `vkont` |
-| `CAPostChrgAndIntrstAsOpenItems` | `xcollnoclearing` |
-| `_BusinessPartner` | *Association* |
-| `_CAHeader` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACollectionAgency` | ✓ | |  | `inkgp` |
+| `ContractAccount` |  | |  | `vkont` |
+| `CAPostChrgAndIntrstAsOpenItems` |  | |  | `xcollnoclearing` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CAHeader` | | ✓ | | |
 
 ## Associations
 

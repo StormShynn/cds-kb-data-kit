@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(t.ddlanguage as spras preserving type)` |
-| key `ConfirmationApplicationOrigin` | `cast(substring(t.domvalue_l, 1, 1) as ru_orina preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `ConfirmationApplOriginName` | `cast(t.ddtext as confapploriginname preserving type)` |
-| `_Language` | *Association* |
-| `_ConfirmationApplOrigin` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
+| `ConfirmationApplicationOrigin` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as ru_orina preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `ConfirmationApplOriginName` |  | |  | `cast(t.ddtext as confapploriginname preserving type)` |
+| `_Language` | | ✓ | | |
+| `_ConfirmationApplOrigin` | | ✓ | | |
 
 ## Associations
 

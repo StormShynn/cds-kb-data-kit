@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallNumber` | `pabnum` |
-| `Plant` | `werks` |
-| `Supplier` | `lifnr` |
-| `JITCallProfile` | `pabprf` |
-| `OutputPartnerForSumzdJITCall` | `pabnpl` |
-| `SumzdJITCallPlndDelivDateTime` | `pabzpk` |
-| `SumzdJITCallMessageIsProcessed` | `pabdkz` |
-| `PurchasingOrganization` | `ekorg` |
-| `_SumJITCallItem` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_OutputPartner` | *Association* |
-| `_OutputPartnerCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallNumber` | ✓ | |  | `pabnum` |
+| `Plant` |  | |  | `werks` |
+| `Supplier` |  | |  | `lifnr` |
+| `JITCallProfile` |  | |  | `pabprf` |
+| `OutputPartnerForSumzdJITCall` |  | |  | `pabnpl` |
+| `SumzdJITCallPlndDelivDateTime` |  | |  | `pabzpk` |
+| `SumzdJITCallMessageIsProcessed` |  | |  | `pabdkz` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `_SumJITCallItem` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_OutputPartner` | | ✓ | | |
+| `_OutputPartnerCompanyByPlant` | | ✓ | | |
 
 ## Associations
 

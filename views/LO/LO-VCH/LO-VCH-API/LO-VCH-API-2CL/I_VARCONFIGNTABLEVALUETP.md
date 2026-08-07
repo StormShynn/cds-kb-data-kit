@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VarConfignTblName` | `VarConfignTblName` |
-| key `VarConfignTblLineNumber` | `VarConfignTblLineNumber` |
-| key `ChangeNumber` | `ChangeNumber` |
-| key `Characteristic` | `Characteristic` |
-| key `VarConfignTblValueNumber` | `VarConfignTblValueNumber` |
-| `CharcValue` | `CharcValue` |
-| `CharcValueIntervalType` | `CharcValueIntervalType` |
-| `CharcFromNumericValue` | `CharcFromNumericValue` |
-| `CharcToNumericValue` | `CharcToNumericValue` |
-| `CharcFromNumericValueUnit` | `CharcFromNumericValueUnit` |
-| `CharcToNumericValueUnit` | `CharcToNumericValueUnit` |
-| `VarConfignTblAnyValueIsAllowed` | `VarConfignTblAnyValueIsAllowed` |
-| `CharcInternalID` | `CharcInternalID` |
-| `_Table` | *Association* |
-| `_TableLine` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VarConfignTblName` | ✓ | |  |  |
+| `VarConfignTblLineNumber` | ✓ | |  |  |
+| `ChangeNumber` | ✓ | |  |  |
+| `Characteristic` | ✓ | |  |  |
+| `VarConfignTblValueNumber` | ✓ | |  |  |
+| `CharcValue` |  | |  |  |
+| `CharcValueIntervalType` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `VarConfignTblAnyValueIsAllowed` |  | |  |  |
+| `CharcInternalID` |  | |  |  |
+| `_Table` | | ✓ | | |
+| `_TableLine` | | ✓ | | |
 
 ## Source Code
 

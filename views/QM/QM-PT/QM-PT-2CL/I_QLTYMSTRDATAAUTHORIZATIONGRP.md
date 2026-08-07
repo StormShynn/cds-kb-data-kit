@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QltyMstrDataAuthorizationGroup` | `tq01d.qmastauth` |
-| `_QltyMstrDataAuthznGroupTxt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QltyMstrDataAuthorizationGroup` | ✓ | |  | `qmastauth` |
+| `_QltyMstrDataAuthznGroupTxt` | | ✓ | | |
 
 ## Associations
 

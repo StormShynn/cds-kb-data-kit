@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningValuationStatus` | `cast( left( dd07l.domvalue_l, 1 ) as scdst_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningValuationStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as scdst_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

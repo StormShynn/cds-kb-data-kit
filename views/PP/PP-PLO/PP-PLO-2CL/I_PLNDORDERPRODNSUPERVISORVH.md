@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `ProductionSupervisor.Plant` |
-| key `ProductionSupervisor` | `ProductionSupervisor.ProductionSupervisor` |
-| `ProductionSupervisorName` | `ProductionSupervisor.ProductionSupervisorName` |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `ProductionSupervisor` | ✓ | |  |  |
+| `ProductionSupervisorName` |  | |  |  |
+| `_Plant` | | ✓ | | |
 
 ## Source Code
 

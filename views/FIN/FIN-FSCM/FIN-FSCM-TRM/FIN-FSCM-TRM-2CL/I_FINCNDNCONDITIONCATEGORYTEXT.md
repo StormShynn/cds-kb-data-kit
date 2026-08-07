@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `FinConditionConditionCategory` | `cast( sbktyp as ftr_cndn_condition_category preserving type )` |
-| `FinCndnConditionCategoryName` | `xbktyp` |
-| `_Language` | *Association* |
-| `_ConditionCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `FinConditionConditionCategory` | ✓ | |  | `cast( sbktyp as ftr_cndn_condition_category preserving type )` |
+| `FinCndnConditionCategoryName` |  | |  | `xbktyp` |
+| `_Language` | | ✓ | | |
+| `_ConditionCategory` | | ✓ | | |
 
 ## Associations
 

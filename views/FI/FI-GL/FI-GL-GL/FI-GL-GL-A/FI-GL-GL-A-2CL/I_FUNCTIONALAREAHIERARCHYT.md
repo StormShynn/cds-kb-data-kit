@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalAreaHierarchy` | `cast ( hrrp_dirt_n.hryid_42 as fis_hryid_functionalarea_42 preserving type )` |
-| key `ValidityEndDate` | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
-| key `Language` | `spras` |
-| `ValidityStartDate` | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
-| `FunctionalAreaHierarchyName` | `hrytxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalAreaHierarchy` | ✓ | |  | `cast ( hrrp_dirt_n.hryid_42 as fis_hryid_functionalarea_42 preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dirt_n.hryvalto as fis_datbi preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dirt_n.hryvalfrom as fis_datab preserving type )` |
+| `FunctionalAreaHierarchyName` |  | |  | `hrytxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

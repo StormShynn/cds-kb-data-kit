@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PrcgConditionFieldRangeName` | `fieldname` |
-| `PrcgConditionFieldRangeSign` | `tvarv_sign` |
-| `PrcgConditionFieldRangeOption` | `tvarv_opti` |
-| `PrcgConditionFieldRangeLow` | `rsdsselop_` |
-| `PrcgConditionFieldRangeHigh` | `rsdsselop_` |
-| `_ConditionRecordCriteriaItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrcgConditionFieldRangeName` |  | |  | `fieldname` |
+| `PrcgConditionFieldRangeSign` |  | |  | `tvarv_sign` |
+| `PrcgConditionFieldRangeOption` |  | |  | `tvarv_opti` |
+| `PrcgConditionFieldRangeLow` |  | |  | `rsdsselop_` |
+| `PrcgConditionFieldRangeHigh` |  | |  | `rsdsselop_` |
+| `_ConditionRecordCriteriaItem` | | ✓ | | |
 
 ## Source Code
 

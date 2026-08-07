@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderID` | `aufk.OrderID` |
-| `OrderCategory` | `aufk.OrderCategory` |
-| `OrderType` | `aufk.OrderType` |
-| `OrderInternalID` | `afko.OrderInternalID` |
-| `OrderDescription` | `aufk.OrderDescription` |
-| `OrderHasLongText` | `aufk.OrderHasLongText` |
-| `Plant` | `aufk.Plant` |
-| `MRPController` | `afko.MRPController` |
-| `ControllingArea` | `aufk.ControllingArea` |
-| `CompanyCode` | `aufk.CompanyCode` |
-| `ProfitCenter` | `aufk.ProfitCenter` |
-| `CreationDate` | `aufk.CreationDate` |
-| `CreationTime` | `aufk.CreationTime` |
-| `LastChangeDate` | `aufk.LastChangeDate` |
-| `LastChangeTime` | `aufk.LastChangeTime` |
-| `ObjectInternalID` | `aufk.ObjectInternalID` |
-| `IsStatisticalOrder` | `aufk.IsStatisticalOrder` |
-| `IsMarkedForDeletion` | `aufk.IsMarkedForDeletion` |
-| `_PlantText` | *Association* |
-| `_CompanyCodeText` | *Association* |
-| `_ControllingAreaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderID` | ✓ | |  |  |
+| `OrderCategory` |  | |  |  |
+| `OrderType` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `OrderDescription` |  | |  |  |
+| `OrderHasLongText` |  | |  |  |
+| `Plant` |  | |  |  |
+| `MRPController` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `IsStatisticalOrder` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `_PlantText` | | ✓ | | |
+| `_CompanyCodeText` | | ✓ | | |
+| `_ControllingAreaText` | | ✓ | | |
 
 ## Associations
 

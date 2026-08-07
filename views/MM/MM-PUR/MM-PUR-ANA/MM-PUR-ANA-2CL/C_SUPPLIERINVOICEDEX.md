@@ -31,32 +31,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `SupplierInvoice` |
-| key `FiscalYear` | `FiscalYear` |
-| `CompanyCode` | `CompanyCode` |
-| `DocumentDate` | `DocumentDate` |
-| `PostingDate` | `PostingDate` |
-| `SupplierInvoiceIDByInvcgParty` | `SupplierInvoiceIDByInvcgParty` |
-| `InvoicingParty` | `InvoicingParty` |
-| `IsInvoice` | `IsInvoice` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `InvoiceGrossAmount` | `InvoiceGrossAmount` |
-| `SuplrInvcAutomReducedAmount` | `SuplrInvcAutomReducedAmount` |
-| `UnplannedDeliveryCost` | `UnplannedDeliveryCost` |
-| `DocumentHeaderText` | `DocumentHeaderText` |
-| `SupplierInvoiceOrigin` | `SupplierInvoiceOrigin` |
-| `SuplrInvcManuallyReducedAmount` | `SuplrInvcManuallyReducedAmount` |
-| `UnplannedDeliveryCostTaxCode` | `UnplannedDeliveryCostTaxCode` |
-| `SupplierInvoiceStatus` | `SupplierInvoiceStatus` |
-| `ReverseDocument` | `ReverseDocument` |
-| `ReverseDocumentFiscalYear` | `ReverseDocumentFiscalYear` |
-| `_SupplierInvoiceItemDEX` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_InvoicingParty` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_SupplierInvoiceStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `SupplierInvoiceIDByInvcgParty` |  | |  |  |
+| `InvoicingParty` |  | |  |  |
+| `IsInvoice` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `InvoiceGrossAmount` |  | |  |  |
+| `SuplrInvcAutomReducedAmount` |  | |  |  |
+| `UnplannedDeliveryCost` |  | |  |  |
+| `DocumentHeaderText` |  | |  |  |
+| `SupplierInvoiceOrigin` |  | |  |  |
+| `SuplrInvcManuallyReducedAmount` |  | |  |  |
+| `UnplannedDeliveryCostTaxCode` |  | |  |  |
+| `SupplierInvoiceStatus` |  | |  |  |
+| `ReverseDocument` |  | |  |  |
+| `ReverseDocumentFiscalYear` |  | |  |  |
+| `_SupplierInvoiceItemDEX` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_InvoicingParty` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_SupplierInvoiceStatus` | | ✓ | | |
 
 ## Associations
 

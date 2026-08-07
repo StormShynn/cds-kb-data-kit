@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SLCPreferredAnswer` | `cast( substring( domvalue_l, 1, 1 ) as /srmsmc/qlb_pref_answer)` |
-| `_SLCPreferredAnswerText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SLCPreferredAnswer` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as /srmsmc/qlb_pref_answer)` |
+| `_SLCPreferredAnswerText` | | ✓ | | |
 
 ## Associations
 

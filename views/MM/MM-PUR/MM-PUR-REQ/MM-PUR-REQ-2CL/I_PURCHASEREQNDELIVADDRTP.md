@@ -30,64 +30,64 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseRequisition` | `PurchaseRequisition` |
-| key `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `AddressID` | `AddressID` |
-| `Plant` | `Plant` |
-| `PurchasingDeliveryAddressType` | `PurchasingDeliveryAddressType` |
-| `ManualDeliveryAddressID` | `ManualDeliveryAddressID` |
-| `ItemDeliveryAddressID` | `ItemDeliveryAddressID` |
-| `CareOfName` | `CareOfName` |
-| `AdditionalStreetSuffixName` | `AdditionalStreetSuffixName` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `PrfrdCommMediumType` | `PrfrdCommMediumType` |
-| `POBox` | `POBox` |
-| `POBoxIsWithoutNumber` | `POBoxIsWithoutNumber` |
-| `POBoxPostalCode` | `POBoxPostalCode` |
-| `POBoxLobbyName` | `POBoxLobbyName` |
-| `POBoxDeviatingCityName` | `POBoxDeviatingCityName` |
-| `POBoxDeviatingRegion` | `POBoxDeviatingRegion` |
-| `POBoxDeviatingCountry` | `POBoxDeviatingCountry` |
-| `DeliveryServiceTypeCode` | `DeliveryServiceTypeCode` |
-| `DeliveryServiceNumber` | `DeliveryServiceNumber` |
-| `AddressTimeZone` | `AddressTimeZone` |
-| `FullName` | `FullName` |
-| `CityName` | `CityName` |
-| `District` | `District` |
-| `CityCode` | `CityCode` |
-| `HomeCityName` | `HomeCityName` |
-| `PostalCode` | `PostalCode` |
-| `CompanyPostalCode` | `CompanyPostalCode` |
-| `StreetName` | `StreetName` |
-| `StreetPrefixName` | `StreetPrefixName` |
-| `AdditionalStreetPrefixName` | `AdditionalStreetPrefixName` |
-| `StreetSuffixName` | `StreetSuffixName` |
-| `HouseNumber` | `HouseNumber` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `Building` | `Building` |
-| `Floor` | `Floor` |
-| `RoomNumber` | `RoomNumber` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `County` | `County` |
-| `FormOfAddress` | `FormOfAddress` |
-| `BusinessPartnerName1` | `BusinessPartnerName1` |
-| `BusinessPartnerName2` | `BusinessPartnerName2` |
-| `PhoneNumber` | `PhoneNumber` |
-| `FaxNumber` | `FaxNumber` |
-| `SearchTerm1` | `SearchTerm1` |
-| `BusinessPartnerName3` | `BusinessPartnerName3` |
-| `BusinessPartnerName4` | `BusinessPartnerName4` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `TransportZone` | `TransportZone` |
-| `PurchaseRequisitionType` | `PurchaseRequisitionType` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_PurchaseRequisitionItem` | *Association* |
-| `_PurReqn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |
+| `PurchaseRequisitionItem` | ✓ | |  |  |
+| `AddressID` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PurchasingDeliveryAddressType` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |
+| `CareOfName` |  | |  |  |
+| `AdditionalStreetSuffixName` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `PrfrdCommMediumType` |  | |  |  |
+| `POBox` |  | |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `POBoxLobbyName` |  | |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |
+| `DeliveryServiceNumber` |  | |  |  |
+| `AddressTimeZone` |  | |  |  |
+| `FullName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `District` |  | |  |  |
+| `CityCode` |  | |  |  |
+| `HomeCityName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `CompanyPostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `StreetPrefixName` |  | |  |  |
+| `AdditionalStreetPrefixName` |  | |  |  |
+| `StreetSuffixName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `Building` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `County` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `BusinessPartnerName1` |  | |  |  |
+| `BusinessPartnerName2` |  | |  |  |
+| `PhoneNumber` |  | |  |  |
+| `FaxNumber` |  | |  |  |
+| `SearchTerm1` |  | |  |  |
+| `BusinessPartnerName3` |  | |  |  |
+| `BusinessPartnerName4` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TransportZone` |  | |  |  |
+| `PurchaseRequisitionType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_PurchaseRequisitionItem` | | ✓ | | |
+| `_PurReqn` | | ✓ | | |
 
 ## Source Code
 

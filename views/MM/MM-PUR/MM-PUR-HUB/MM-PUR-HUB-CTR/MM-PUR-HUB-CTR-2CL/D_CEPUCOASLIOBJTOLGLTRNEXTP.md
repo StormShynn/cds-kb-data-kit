@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LegalTransaction` | `lcm_legaltr_id` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransaction` |  | |  | `lcm_legaltr_id` |
 
 ## Source Code
 

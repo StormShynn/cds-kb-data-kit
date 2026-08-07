@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `plas.BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `plas.BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `plas.BillOfOperationsVariant` |
-| key `BillOfOperationsSequence` | `plas.BillOfOperationsSequence` |
-| key `BOOOperationInternalID` | `plas.BOOOperationInternalID` |
-| `_BillOfOperations` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_BOOOperationChangeState` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |
+| `BillOfOperationsSequence` | ✓ | |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |
+| `_BillOfOperations` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_BOOOperationChangeState` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
 
 ## Associations
 

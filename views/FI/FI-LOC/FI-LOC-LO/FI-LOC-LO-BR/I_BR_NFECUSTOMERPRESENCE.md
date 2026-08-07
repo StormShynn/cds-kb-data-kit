@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NFeCustomerPresence` | `cast( substring(domvalue_l, 1, 1 ) as logbr_nfe_indpres preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NFeCustomerPresence` | ✓ | |  | `cast( substring(domvalue_l, 1, 1 ) as logbr_nfe_indpres preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

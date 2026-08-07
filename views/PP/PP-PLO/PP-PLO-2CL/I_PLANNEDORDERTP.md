@@ -29,75 +29,75 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlannedOrder` | `PlannedOrder.PlannedOrder` |
-| `PlannedOrderType` | `PlannedOrder.PlannedOrderType` |
-| `PlannedOrderProfile` | `PlannedOrder.PlannedOrderProfile` |
-| `Material` | `PlannedOrder.Material` |
-| `ProductionPlant` | `PlannedOrder.ProductionPlant` |
-| `MRPPlant` | `PlannedOrder.MRPPlant` |
-| `MRPArea` | `PlannedOrder.MRPArea` |
-| `ProductionVersion` | `PlannedOrder.ProductionVersion` |
-| `MaterialProcurementCategory` | `PlannedOrder.MaterialProcurementCategory` |
-| `MaterialProcurementType` | `PlannedOrder.MaterialProcurementType` |
-| `StorageLocation` | `PlannedOrder.StorageLocation` |
-| `BaseUnit` | `PlannedOrder.BaseUnit` |
-| `TotalQuantity` | `PlannedOrder.TotalQuantity` |
-| `PlndOrderPlannedScrapQty` | `PlannedOrder.PlndOrderPlannedScrapQty` |
-| `GoodsReceiptQty` | `PlannedOrder.GoodsReceiptQty` |
-| `IssuedQuantity` | `PlannedOrder.IssuedQuantity` |
-| `PlndOrderPlannedStartDate` | `PlannedOrder.PlndOrderPlannedStartDate` |
-| `PlndOrderPlannedStartTime` | `PlannedOrder.PlndOrderPlannedStartTime` |
-| `PlndOrderPlannedEndDate` | `PlannedOrder.PlndOrderPlannedEndDate` |
-| `PlndOrderPlannedEndTime` | `PlannedOrder.PlndOrderPlannedEndTime` |
-| `PlannedOrderOpeningDate` | `PlannedOrder.PlannedOrderOpeningDate` |
-| `PlannedOrderLastChangeDateTime` | `PlannedOrder.PlannedOrderLastChangeDateTime` |
-| `ProductionStartDate` | `PlannedOrder.ProductionStartDate` |
-| `ProductionEndDate` | `PlannedOrder.ProductionEndDate` |
-| `SalesOrder` | `PlannedOrder.SalesOrder` |
-| `SalesOrderItem` | `, distinctValues: true }] PlannedOrder.SalesOrderItem` |
-| `Customer` | `PlannedOrder.Customer` |
-| `WBSElementInternalID` | `PlannedOrder.WBSElementInternalID` |
-| `WBSElementExternalID` | `PlannedOrder.WBSElementExternalID` |
-| `WBSDescription` | `PlannedOrder.WBSDescription` |
-| `PlannedOrderLongText` | `PlannedOrder.PlannedOrderLongText` |
-| `AccountAssignmentCategory` | `PlannedOrder.AccountAssignmentCategory` |
-| `Reservation` | `PlannedOrder.Reservation` |
-| `MRPController` | `PlannedOrder.MRPController` |
-| `MRPControllerName` | `PlannedOrder.MRPControllerName` |
-| `ProductionSupervisor` | `, distinctValues: true }] PlannedOrder.ProductionSupervisor` |
-| `PurchasingOrganization` | `PlannedOrder.PurchasingOrganization` |
-| `FixedSupplier` | `PlannedOrder.FixedSupplier` |
-| `QuotaArrangement` | `PlannedOrder.QuotaArrangement` |
-| `QuotaArrangementItem` | `PlannedOrder.QuotaArrangementItem` |
-| `PlannedOrderIsFirm` | `PlannedOrder.PlannedOrderIsFirm` |
-| `PlannedOrderIsConvertible` | `PlannedOrder.PlannedOrderIsConvertible` |
-| `PlannedOrderBOMIsFixed` | `PlannedOrder.PlannedOrderBOMIsFixed` |
-| `PlannedOrderCapacityIsDsptchd` | `PlannedOrder.PlannedOrderCapacityIsDsptchd` |
-| `CapacityRequirement` | `PlannedOrder.CapacityRequirement` |
-| `BillOfOperationsVariant` | `PlannedOrder.BillOfOperationsVariant` |
-| `ScheduledBasicStartDate` | `PlannedOrder.ScheduledBasicStartDate` |
-| `ScheduledBasicStartTime` | `PlannedOrder.ScheduledBasicStartTime` |
-| `ScheduledBasicEndDate` | `PlannedOrder.ScheduledBasicEndDate` |
-| `ScheduledBasicEndTime` | `PlannedOrder.ScheduledBasicEndTime` |
-| `MaterialGoodsReceiptDuration` | `PlannedOrder.MaterialGoodsReceiptDuration` |
-| `MaterialName` | `PlannedOrder.MaterialName` |
-| `PlannedOrderTypeName` | `PlannedOrder.PlannedOrderTypeName` |
-| `MRPAreaText` | `PlannedOrder.MRPAreaText` |
-| `MRPPlantName` | `PlannedOrder.MRPPlantName` |
-| `ProductionPlantName` | `PlannedOrder.ProductionPlantName` |
-| `MaterialProcurementCatName` | `PlannedOrder.MaterialProcurementCatName` |
-| `ProductionVersionText` | `PlannedOrder.ProductionVersionText` |
-| `ProductionSupervisorName` | `PlannedOrder.ProductionSupervisorName` |
-| `SupplierName` | `PlannedOrder.SupplierName` |
-| `CustomerName` | `PlannedOrder.CustomerName` |
-| `MaterialProcurementTypeName` | `PlannedOrder.MaterialProcurementTypeName` |
-| `PurchasingOrganizationName` | `PlannedOrder.PurchasingOrganizationName` |
-| `StorageLocationName` | `PlannedOrder.StorageLocationName` |
-| `AcctAssignmentCategoryName` | `PlannedOrder.AcctAssignmentCategoryName` |
-| `I_PlannedOrderComponentTP` | `PlannedOrder._PlannedOrderComponent : redirected to composition child I_PlannedOrderComponentTP` |
-| `I_PlannedOrderCapacityTP` | `PlannedOrder._PlannedOrderCapacity : redirected to composition child I_PlannedOrderCapacityTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlannedOrder` | ✓ | |  |  |
+| `PlannedOrderType` |  | |  |  |
+| `PlannedOrderProfile` |  | |  |  |
+| `Material` |  | |  |  |
+| `ProductionPlant` |  | |  |  |
+| `MRPPlant` |  | |  |  |
+| `MRPArea` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `MaterialProcurementCategory` |  | |  |  |
+| `MaterialProcurementType` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `TotalQuantity` |  | |  |  |
+| `PlndOrderPlannedScrapQty` |  | |  |  |
+| `GoodsReceiptQty` |  | |  |  |
+| `IssuedQuantity` |  | |  |  |
+| `PlndOrderPlannedStartDate` |  | |  |  |
+| `PlndOrderPlannedStartTime` |  | |  |  |
+| `PlndOrderPlannedEndDate` |  | |  |  |
+| `PlndOrderPlannedEndTime` |  | |  |  |
+| `PlannedOrderOpeningDate` |  | |  |  |
+| `PlannedOrderLastChangeDateTime` |  | |  |  |
+| `ProductionStartDate` |  | |  |  |
+| `ProductionEndDate` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  | `, distinctValues: true }] PlannedOrder.SalesOrderItem` |
+| `Customer` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `WBSDescription` |  | |  |  |
+| `PlannedOrderLongText` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `MRPController` |  | |  |  |
+| `MRPControllerName` |  | |  |  |
+| `ProductionSupervisor` |  | |  | `, distinctValues: true }] PlannedOrder.ProductionSupervisor` |
+| `PurchasingOrganization` |  | |  |  |
+| `FixedSupplier` |  | |  |  |
+| `QuotaArrangement` |  | |  |  |
+| `QuotaArrangementItem` |  | |  |  |
+| `PlannedOrderIsFirm` |  | |  |  |
+| `PlannedOrderIsConvertible` |  | |  |  |
+| `PlannedOrderBOMIsFixed` |  | |  |  |
+| `PlannedOrderCapacityIsDsptchd` |  | |  |  |
+| `CapacityRequirement` |  | |  |  |
+| `BillOfOperationsVariant` |  | |  |  |
+| `ScheduledBasicStartDate` |  | |  |  |
+| `ScheduledBasicStartTime` |  | |  |  |
+| `ScheduledBasicEndDate` |  | |  |  |
+| `ScheduledBasicEndTime` |  | |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |
+| `MaterialName` |  | |  |  |
+| `PlannedOrderTypeName` |  | |  |  |
+| `MRPAreaText` |  | |  |  |
+| `MRPPlantName` |  | |  |  |
+| `ProductionPlantName` |  | |  |  |
+| `MaterialProcurementCatName` |  | |  |  |
+| `ProductionVersionText` |  | |  |  |
+| `ProductionSupervisorName` |  | |  |  |
+| `SupplierName` |  | |  |  |
+| `CustomerName` |  | |  |  |
+| `MaterialProcurementTypeName` |  | |  |  |
+| `PurchasingOrganizationName` |  | |  |  |
+| `StorageLocationName` |  | |  |  |
+| `AcctAssignmentCategoryName` |  | |  |  |
+| `I_PlannedOrderComponentTP` |  | |  | `PlannedOrder._PlannedOrderComponent : redirected to composition child I_PlannedOrderComponentTP` |
+| `I_PlannedOrderCapacityTP` |  | |  | `PlannedOrder._PlannedOrderCapacity : redirected to composition child I_PlannedOrderCapacityTP` |
 
 ## Source Code
 

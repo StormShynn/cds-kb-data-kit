@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `vbeln` |
-| key `SalesSchedulingAgreementItem` | `posnr` |
-| key `ScheduleLine` | `etenr` |
-| key `IntDeliveryScheduleNumber` | `abrli` |
-| key `SchedulingAgreementReleaseType` | `abart` |
-| `SalesDelivDateCategory` | `prgrs` |
-| `ConfirmedDeliveryDate` | `edatu` |
-| `OrderQuantity` | `wmeng` |
-| `OrderQuantityUnit` | `_SalesSchedgAgrmtItem.OrderQuantityUnit` |
-| `_SalesSchedgAgrmt` | *Association* |
-| `_SalesSchedgAgrmtItem` | *Association* |
-| `_SalesSchedgAgrmtDelivSched` | *Association* |
-| `_SalesSchedgAgrmtRelType` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_SalesDelivdatecategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  | `vbeln` |
+| `SalesSchedulingAgreementItem` | ✓ | |  | `posnr` |
+| `ScheduleLine` | ✓ | |  | `etenr` |
+| `IntDeliveryScheduleNumber` | ✓ | |  | `abrli` |
+| `SchedulingAgreementReleaseType` | ✓ | |  | `abart` |
+| `SalesDelivDateCategory` |  | |  | `prgrs` |
+| `ConfirmedDeliveryDate` |  | |  | `edatu` |
+| `OrderQuantity` |  | |  | `wmeng` |
+| `OrderQuantityUnit` |  | | `_SalesSchedgAgrmtItem` | `OrderQuantityUnit` |
+| `_SalesSchedgAgrmt` | | ✓ | | |
+| `_SalesSchedgAgrmtItem` | | ✓ | | |
+| `_SalesSchedgAgrmtDelivSched` | | ✓ | | |
+| `_SalesSchedgAgrmtRelType` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_SalesDelivdatecategory` | | ✓ | | |
 
 ## Associations
 

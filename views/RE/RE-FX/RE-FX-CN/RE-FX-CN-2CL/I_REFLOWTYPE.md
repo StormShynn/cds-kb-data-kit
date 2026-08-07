@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REFlowType` | `flowtype` |
-| `DebitCreditCode` | `cast( ssolhab as shkzg preserving type )` |
-| `REAnticipatoryAccrualType` | `antacrtype` |
-| `RETransitoryAccrualType` | `traacrtype` |
-| `REFlowTypeForSummary` | `flowtypecnds` |
-| `REFlowTypeIsRlvtForApproval` | `fcomrelevant` |
-| `REFlowTypeIsRlvtForCashMgmt` | `iscmcfrelevant` |
-| `_Text` | *Association* |
-| `_DebitCreditCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REFlowType` | ✓ | |  | `flowtype` |
+| `DebitCreditCode` |  | |  | `cast( ssolhab as shkzg preserving type )` |
+| `REAnticipatoryAccrualType` |  | |  | `antacrtype` |
+| `RETransitoryAccrualType` |  | |  | `traacrtype` |
+| `REFlowTypeForSummary` |  | |  | `flowtypecnds` |
+| `REFlowTypeIsRlvtForApproval` |  | |  | `fcomrelevant` |
+| `REFlowTypeIsRlvtForCashMgmt` |  | |  | `iscmcfrelevant` |
+| `_Text` | | ✓ | | |
+| `_DebitCreditCode` | | ✓ | | |
 
 ## Associations
 

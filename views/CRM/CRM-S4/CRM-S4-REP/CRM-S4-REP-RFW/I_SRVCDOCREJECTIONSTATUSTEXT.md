@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentIsRejected` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `SrvcDocRejectionStatusText` | `ddtext` |
-| `_SrvcDocRejectionStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentIsRejected` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SrvcDocRejectionStatusText` |  | |  | `ddtext` |
+| `_SrvcDocRejectionStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

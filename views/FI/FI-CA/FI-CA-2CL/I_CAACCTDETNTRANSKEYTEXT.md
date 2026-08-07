@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CATransactionKeyAccountDetn` | `cast( left( dd07t.domvalue_l,3 ) as ktosl_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CATransactionKeyAcctDetnText` | `cast( ddtext as ktosl_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CATransactionKeyAccountDetn` | ✓ | |  | `cast( left( dd07t.domvalue_l,3 ) as ktosl_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CATransactionKeyAcctDetnText` |  | |  | `cast( ddtext as ktosl_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

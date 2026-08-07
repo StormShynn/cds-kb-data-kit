@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BudgetScenario` | `cast( dd07l.domvalue_l as psm_s4c_budget_scenario )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BudgetScenario` | ✓ | |  | `cast( dd07l.domvalue_l as psm_s4c_budget_scenario )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

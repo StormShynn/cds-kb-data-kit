@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast( tf261.itclg as fincs_conschartofaccounts preserving type )` |
-| key `ConsolidationVersion` | `cast( tf261.rvers as fincs_consolidationversion preserving type )` |
-| key `FiscalYear` | `cast( tf261.ryear as fincs_fiscalyear preserving type )` |
-| key `FiscalPeriod` | `cast( tf261.perid as fincs_period preserving type )` |
-| key `ConsolidationTask` | `cast( tf261.cacti as fincs_tsk preserving type )` |
-| key `ConsolidationUnit` | `cast( tf261.bunit as fincs_consolidationunit preserving type )` |
-| `CnsldtnTskRunNmbrOfErrMessages` | `cast( tf261.error as fincs_taskrun_err_no preserving type )` |
-| `CnsldtnTskRunNmbrOfWrngMsgs` | `cast( tf261.warng as fincs_taskrun_warn_no preserving type )` |
-| `CnsldtnTaskRunChangedByUser` | `cast( tf261.usr as fincs_taskrun_changeby preserving type )` |
-| `CnsldtnTaskRunChangedDate` | `cast( tf261.datum as fincs_taskrun_changedat preserving type )` |
-| `CnsldtnTaskRunChangedTime` | `cast( tf261.time as fincs_taskrun_changetime preserving type )` |
-| `ConsolidationTaskRunStatus` | `cast( tf261.status as fincs_taskrun_status preserving type )` |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_CnsldtnVersion` | *Association* |
-| `_CnsldtnTask` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnTaskRunStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( tf261.itclg as fincs_conschartofaccounts preserving type )` |
+| `ConsolidationVersion` | ✓ | |  | `cast( tf261.rvers as fincs_consolidationversion preserving type )` |
+| `FiscalYear` | ✓ | |  | `cast( tf261.ryear as fincs_fiscalyear preserving type )` |
+| `FiscalPeriod` | ✓ | |  | `cast( tf261.perid as fincs_period preserving type )` |
+| `ConsolidationTask` | ✓ | |  | `cast( tf261.cacti as fincs_tsk preserving type )` |
+| `ConsolidationUnit` | ✓ | |  | `cast( tf261.bunit as fincs_consolidationunit preserving type )` |
+| `CnsldtnTskRunNmbrOfErrMessages` |  | |  | `cast( tf261.error as fincs_taskrun_err_no preserving type )` |
+| `CnsldtnTskRunNmbrOfWrngMsgs` |  | |  | `cast( tf261.warng as fincs_taskrun_warn_no preserving type )` |
+| `CnsldtnTaskRunChangedByUser` |  | |  | `cast( tf261.usr as fincs_taskrun_changeby preserving type )` |
+| `CnsldtnTaskRunChangedDate` |  | |  | `cast( tf261.datum as fincs_taskrun_changedat preserving type )` |
+| `CnsldtnTaskRunChangedTime` |  | |  | `cast( tf261.time as fincs_taskrun_changetime preserving type )` |
+| `ConsolidationTaskRunStatus` |  | |  | `cast( tf261.status as fincs_taskrun_status preserving type )` |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_CnsldtnVersion` | | ✓ | | |
+| `_CnsldtnTask` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnTaskRunStatus` | | ✓ | | |
 
 ## Associations
 

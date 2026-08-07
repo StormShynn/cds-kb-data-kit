@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DelivSchedTypeMRPRlvnceCode` | `substring( domvalue_l,1,1 )` |
-| key `Language` | `ddlanguage` |
-| `DelivSchedTypeMRPRlvnceCodeTxt` | `ddtext` |
-| `_DelivSchedTypeMRPRlvnceCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DelivSchedTypeMRPRlvnceCode` | ✓ | |  | `substring( domvalue_l,1,1 )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `DelivSchedTypeMRPRlvnceCodeTxt` |  | |  | `ddtext` |
+| `_DelivSchedTypeMRPRlvnceCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

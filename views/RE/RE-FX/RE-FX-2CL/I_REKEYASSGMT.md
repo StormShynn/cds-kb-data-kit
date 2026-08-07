@@ -27,24 +27,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternalRealEstateNumber` | `intreno` |
-| `RealEstateObjectType` | `objtype` |
-| `REIdentificationKey` | `identkey` |
-| `REStatusObject` | `objnr` |
-| `REInternalFinNumber` | `cast(imkey as recaimkeyfi preserving type )` |
-| `CompanyCode` | `bukrs` |
-| `RealEstateContract` | `cast(recnnr as recnvdmcnnr preserving type )` |
-| `REBusinessEntity` | `cast(swenr as rebdvdmbeno preserving type )` |
-| `RERentalObject` | `cast(smenr as rebdvdmrono preserving type )` |
-| `RealEstateBuilding` | `cast(sgenr as rebdvdmbuno preserving type )` |
-| `RealEstateProperty` | `cast(sgrnr as rebdvdmprno preserving type )` |
-| `ArchitecturalObject` | `aoid` |
-| `REServiceChargeKey` | `cast(snksl as rescvdmsckey preserving type )` |
-| `RESettlementUnitID` | `cast(sempsl as rescvdmsuid preserving type )` |
-| `_REObjectType` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  | `intreno` |
+| `RealEstateObjectType` |  | |  | `objtype` |
+| `REIdentificationKey` |  | |  | `identkey` |
+| `REStatusObject` |  | |  | `objnr` |
+| `REInternalFinNumber` |  | |  | `cast(imkey as recaimkeyfi preserving type )` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `RealEstateContract` |  | |  | `cast(recnnr as recnvdmcnnr preserving type )` |
+| `REBusinessEntity` |  | |  | `cast(swenr as rebdvdmbeno preserving type )` |
+| `RERentalObject` |  | |  | `cast(smenr as rebdvdmrono preserving type )` |
+| `RealEstateBuilding` |  | |  | `cast(sgenr as rebdvdmbuno preserving type )` |
+| `RealEstateProperty` |  | |  | `cast(sgrnr as rebdvdmprno preserving type )` |
+| `ArchitecturalObject` |  | |  | `aoid` |
+| `REServiceChargeKey` |  | |  | `cast(snksl as rescvdmsckey preserving type )` |
+| `RESettlementUnitID` |  | |  | `cast(sempsl as rescvdmsuid preserving type )` |
+| `_REObjectType` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

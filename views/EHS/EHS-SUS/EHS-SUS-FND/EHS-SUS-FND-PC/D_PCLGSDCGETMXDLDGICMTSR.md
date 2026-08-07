@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Product` | `matnr` |
-| `MxdLoadingIncompatibleProduct` | `mxdloadingincompatibleproduct` |
-| `PackingInstructionNumber` | `ehfnd_pi_id` |
-| `MxdLoadgIncompatiblePaInsnNmbr` | `mxdloadingincompatibleppainstr` |
-| `SystemMessageType` | `msgty` |
-| `SystemMessageNumber` | `msgnr` |
-| `SystemMessageIdentification` | `msgid` |
-| `MixedLoadingMessageSeverity` | `mixedloadingmessageseverity` |
-| `SystemMessageVariable1` | `ehfnd_vdm_msgv1` |
-| `SystemMessageVariable2` | `ehfnd_vdm_msgv2` |
-| `SystemMessageVariable3` | `ehfnd_vdm_msgv3` |
-| `SystemMessageVariable4` | `ehfnd_vdm_msgv4` |
-| `Language` | `langu` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` |  | |  | `matnr` |
+| `MxdLoadingIncompatibleProduct` |  | |  | `mxdloadingincompatibleproduct` |
+| `PackingInstructionNumber` |  | |  | `ehfnd_pi_id` |
+| `MxdLoadgIncompatiblePaInsnNmbr` |  | |  | `mxdloadingincompatibleppainstr` |
+| `SystemMessageType` |  | |  | `msgty` |
+| `SystemMessageNumber` |  | |  | `msgnr` |
+| `SystemMessageIdentification` |  | |  | `msgid` |
+| `MixedLoadingMessageSeverity` |  | |  | `mixedloadingmessageseverity` |
+| `SystemMessageVariable1` |  | |  | `ehfnd_vdm_msgv1` |
+| `SystemMessageVariable2` |  | |  | `ehfnd_vdm_msgv2` |
+| `SystemMessageVariable3` |  | |  | `ehfnd_vdm_msgv3` |
+| `SystemMessageVariable4` |  | |  | `ehfnd_vdm_msgv4` |
+| `Language` |  | |  | `langu` |
 
 ## Source Code
 

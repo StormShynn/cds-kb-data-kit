@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `txt.spras` |
-| key `Plant` | `txt.werks` |
-| key `EmployeeWageGroup` | `txt.logrp` |
-| `EmployeeWageGroupName` | `txt.txt` |
-| `_Language` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `Plant` | ✓ | |  | `werks` |
+| `EmployeeWageGroup` | ✓ | |  | `logrp` |
+| `EmployeeWageGroupName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

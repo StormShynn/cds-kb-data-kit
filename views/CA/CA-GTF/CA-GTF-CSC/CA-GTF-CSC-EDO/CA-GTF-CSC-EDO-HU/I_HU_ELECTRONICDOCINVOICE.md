@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `ElectronicDocCompanyCode` | `_ElectronicDocument.ElectronicDocCompanyCode` |
-| `ElectronicDocCountry` | `_ElectronicDocument.ElectronicDocCountry` |
-| `ElectronicDocSourceType` | `_ElectronicDocument.ElectronicDocSourceType` |
-| `ElectronicDocSourceKey` | `_ElectronicDocument.ElectronicDocSourceKey` |
-| `ElectronicDocType` | `_ElectronicDocument.ElectronicDocType` |
-| `ElectronicDocProcessStatus` | `_ElectronicDocument.ElectronicDocProcessStatus` |
-| `ElectronicDocProcess` | `_ElectronicDocument.ElectronicDocProcess` |
-| `HU_ElectronicDocTransactionID` | `HU_ElectronicDocTransactionID` |
-| `HU_ElectronicDocIsSentToCust` | `HU_ElectronicDocIsSentToCust` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `ElectronicDocCompanyCode` |  | | `_ElectronicDocument` | `ElectronicDocCompanyCode` |
+| `ElectronicDocCountry` |  | | `_ElectronicDocument` | `ElectronicDocCountry` |
+| `ElectronicDocSourceType` |  | | `_ElectronicDocument` | `ElectronicDocSourceType` |
+| `ElectronicDocSourceKey` |  | | `_ElectronicDocument` | `ElectronicDocSourceKey` |
+| `ElectronicDocType` |  | | `_ElectronicDocument` | `ElectronicDocType` |
+| `ElectronicDocProcessStatus` |  | | `_ElectronicDocument` | `ElectronicDocProcessStatus` |
+| `ElectronicDocProcess` |  | | `_ElectronicDocument` | `ElectronicDocProcess` |
+| `HU_ElectronicDocTransactionID` |  | |  |  |
+| `HU_ElectronicDocIsSentToCust` |  | |  |  |
 
 ## Source Code
 

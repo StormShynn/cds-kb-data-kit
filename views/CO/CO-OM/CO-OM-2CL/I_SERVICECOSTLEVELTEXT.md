@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceCostLevel` | `srv_cost_level` |
-| key `Language` | `langu` |
-| `ServiceCostLevelName` | `name` |
-| `ServiceCostLevelShortName` | `short_name` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceCostLevel` | ✓ | |  | `srv_cost_level` |
+| `Language` | ✓ | |  | `langu` |
+| `ServiceCostLevelName` |  | |  | `name` |
+| `ServiceCostLevelShortName` |  | |  | `short_name` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

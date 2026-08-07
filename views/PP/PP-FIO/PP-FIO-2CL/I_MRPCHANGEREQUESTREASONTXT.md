@@ -26,13 +26,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `MRPRequestReason` | `reasoncode` |
-| `MRPRequestReasonName` | `reasontxt` |
-| `_Language` | *Association* |
-| `_MRPRequestReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `MRPRequestReason` | ✓ | |  | `reasoncode` |
+| `MRPRequestReasonName` |  | |  | `reasontxt` |
+| `_Language` | | ✓ | | |
+| `_MRPRequestReason` | | ✓ | | |
 
 ## Associations
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequestType` | `BillingDocumentRequestType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequestType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -27,33 +27,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `I_NotificationActivity.Notification` |
-| key `NotificationActivity` | `I_NotificationActivity.NotificationActivity` |
-| `NotificationItem` | `I_NotificationActivity.NotificationItem` |
-| `NotificationActivitySortNumber` | `I_NotificationActivity.NotificationActivitySortNumber` |
-| `IsDeleted` | `I_NotificationActivity.IsDeleted` |
-| `MasterLanguage` | `I_NotificationActivity.MasterLanguage` |
-| `NotifActivityCatalog` | `I_NotificationActivity.NotifActivityCatalog` |
-| `NotifActivityCodeGroup` | `I_NotificationActivity.NotifActivityCodeGroup` |
-| `NotifActivityCode` | `I_NotificationActivity.NotifActivityCode` |
-| `NotifActivityText` | `I_NotificationActivity.NotifActivityText` |
-| `NotifActivityStartDate` | `I_NotificationActivity.NotifActivityStartDate` |
-| `NotifActivityStartTime` | `I_NotificationActivity.NotifActivityStartTime` |
-| `NotifActivityEndDate` | `I_NotificationActivity.NotifActivityEndDate` |
-| `NotifActivityEndTime` | `I_NotificationActivity.NotifActivityEndTime` |
-| `NotifProcessingPhase` | `I_QltyNotification.NotifProcessingPhase` |
-| `ChangedDateTime` | `I_NotificationActivity.ChangedDateTime` |
-| `CreatedByUser` | `I_NotificationActivity.CreatedByUser` |
-| `CreationDate` | `I_NotificationActivity.CreationDate` |
-| `CreationTime` | `I_NotificationActivity.CreationTime` |
-| `LastChangedByUser` | `I_NotificationActivity.LastChangedByUser` |
-| `LastChangeDate` | `I_NotificationActivity.LastChangeDate` |
-| `LastChangeTime` | `I_NotificationActivity.LastChangeTime` |
-| `IsBusinessPurposeCompleted` | `I_QltyNotification.IsBusinessPurposeCompleted` |
-| `_Notification` | *Association* |
-| `_QltyNotifActivityLongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |
+| `NotificationActivity` | ✓ | |  |  |
+| `NotificationItem` |  | |  |  |
+| `NotificationActivitySortNumber` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `MasterLanguage` |  | |  |  |
+| `NotifActivityCatalog` |  | |  |  |
+| `NotifActivityCodeGroup` |  | |  |  |
+| `NotifActivityCode` |  | |  |  |
+| `NotifActivityText` |  | |  |  |
+| `NotifActivityStartDate` |  | |  |  |
+| `NotifActivityStartTime` |  | |  |  |
+| `NotifActivityEndDate` |  | |  |  |
+| `NotifActivityEndTime` |  | |  |  |
+| `NotifProcessingPhase` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `_Notification` | | ✓ | | |
+| `_QltyNotifActivityLongText` | | ✓ | | |
 
 ## Associations
 

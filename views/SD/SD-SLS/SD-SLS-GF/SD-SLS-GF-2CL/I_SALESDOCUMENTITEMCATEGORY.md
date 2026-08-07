@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocumentItemCategory` | `pstyv` |
-| `BillingRelevanceCode` | `fkrel` |
-| `ScheduleLineIsAllowed` | `eterl` |
-| `PricingRelevance` | `prsfd` |
-| `TextDeterminationProcedure` | `cast(txtgr as sls_doc_text_detn_item preserving type )` |
-| `PartnerDeterminationProcedure` | `cast(pargr as sls_doc_partner_detn_item preserving type )` |
-| `PropagatePrftbltySgmt2BOM` | `propagate_paobjnr_bom` |
-| `CostDeterminationIsRequired` | `evrwr` |
-| `StatisticalValueControl` | `kowrr` |
-| `SlsDocBOMExplsnStrucScp` | `strum` |
-| `_Text` | *Association* |
-| `_BillingRelevanceCode` | *Association* |
-| `_PricingRelevance` | *Association* |
-| `_TextDeterminationProcedure` | *Association* |
-| `_PartDeterminationProcedure` | *Association* |
-| `_PropagatePrftbltySgmt2BOM` | *Association* |
-| `_StatisticalValueControl` | *Association* |
-| `_SlsDocBOMExplsnStrucScp` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentItemCategory` | ✓ | |  | `pstyv` |
+| `BillingRelevanceCode` |  | |  | `fkrel` |
+| `ScheduleLineIsAllowed` |  | |  | `eterl` |
+| `PricingRelevance` |  | |  | `prsfd` |
+| `TextDeterminationProcedure` |  | |  | `cast(txtgr as sls_doc_text_detn_item preserving type )` |
+| `PartnerDeterminationProcedure` |  | |  | `cast(pargr as sls_doc_partner_detn_item preserving type )` |
+| `PropagatePrftbltySgmt2BOM` |  | |  | `propagate_paobjnr_bom` |
+| `CostDeterminationIsRequired` |  | |  | `evrwr` |
+| `StatisticalValueControl` |  | |  | `kowrr` |
+| `SlsDocBOMExplsnStrucScp` |  | |  | `strum` |
+| `_Text` | | ✓ | | |
+| `_BillingRelevanceCode` | | ✓ | | |
+| `_PricingRelevance` | | ✓ | | |
+| `_TextDeterminationProcedure` | | ✓ | | |
+| `_PartDeterminationProcedure` | | ✓ | | |
+| `_PropagatePrftbltySgmt2BOM` | | ✓ | | |
+| `_StatisticalValueControl` | | ✓ | | |
+| `_SlsDocBOMExplsnStrucScp` | | ✓ | | |
 
 ## Associations
 

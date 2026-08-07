@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditRatingAgency` | `tp07.sol_ins` |
-| `_Text` | *Association* |
-| `_BPCreditWorthiness` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditRatingAgency` | ✓ | |  | `sol_ins` |
+| `_Text` | | ✓ | | |
+| `_BPCreditWorthiness` | | ✓ | | |
 
 ## Associations
 

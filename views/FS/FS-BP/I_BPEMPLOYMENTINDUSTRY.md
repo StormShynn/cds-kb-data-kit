@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusPartEmplrIndstryCode` | `tb038a.ind_sector` |
-| `_Text` | *Association* |
-| `_BPEmployment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusPartEmplrIndstryCode` | ✓ | |  | `ind_sector` |
+| `_Text` | | ✓ | | |
+| `_BPEmployment` | | ✓ | | |
 
 ## Associations
 

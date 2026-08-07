@@ -29,42 +29,42 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `NFTax.docnum` |
-| key `BR_NotaFiscalItem` | `NFTax.itmnum` |
-| key `BR_TaxType` | `NFTax.taxtyp` |
-| key `TaxGroup` | `cast(NFTax.taxgrp as logbr_taxgrp preserving type)` |
-| `BR_NFItemBaseAmount` | `NFTax.base` |
-| `BR_NFItemTaxRate` | `NFTax.rate` |
-| `BR_NFItemTaxAmount` | `NFTax.taxval` |
-| `BR_NFItemExcludedBaseAmount` | `cast(NFTax.excbas as logbr_excbas)` |
-| `BR_NFItemOtherBaseAmount` | `NFTax.othbas` |
-| `BR_NFItemTaxBasePct1Unit` | `cast(' %' as msehi)` |
-| `BR_NFItemTaxBasePct1` | `cast(NFTax.basered1 as logbr_taxbase preserving type)` |
-| `BR_NFItemTaxBasePct2Unit` | `cast(' %' as msehi)` |
-| `BR_NFItemTaxBasePct2` | `NFTax.basered2` |
-| `BR_NFItemIsStatisticalTax` | `cast(NFTax.stattx as logbr_stattx)` |
-| `BR_NFItemHasFixedMktTariff` | `NFTax.rectype` |
-| `BR_NFItemFixedMktTariffBaseQty` | `NFTax.pauta_base` |
-| `BR_NFItemFixedMarketTariffUnit` | `NFTax.unit` |
-| `BR_NFItemWhldgCollectionCode` | `NFTax.whtcollcode` |
-| `BR_NFItemFixedMktTariffTaxRate` | `NFTax.rate4dec` |
-| `BR_NFItemFixedMktTariffQty` | `NFTax.factor4dec` |
-| `BR_NFItmFxdMktTariffUnit4Dcmls` | `NFTax.unit4dec` |
-| `TaxesAreIncludedInNetAmount` | `NFTax.taxinnet` |
-| `BR_NFItemHasWithholdingTax` | `cast(NFTax.withhold as logbr_withholdingtax preserving type)` |
-| `BR_NFSServiceTypeIncoming` | `NFTax.servtype_in` |
-| `BR_NFSServiceTypeOutgoing` | `NFTax.servtype_out` |
-| `TaxJurisdiction` | `NFTax.tax_loc` |
-| `AggregateBaseAmount` | `(NFTax.base + NFTax.othbas)` |
-| `SalesDocumentCurrency` | `_BR_NFDocumentCurrency.SalesDocumentCurrency` |
-| `_BR_NFItemTaxBasePct1Unit` | *Association* |
-| `_BR_NFItemTaxBasePct2Unit` | *Association* |
-| `_BR_NFItmFixedMarketTariffUnit` | *Association* |
-| `_BR_NFItmFxdMktTrifUnit4Dcmls` | *Association* |
-| `_SalesDocumentCurrency` | *Association* |
-| `_BR_NotaFiscal` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |
+| `BR_TaxType` | ✓ | |  | `taxtyp` |
+| `TaxGroup` | ✓ | |  | `cast(NFTax.taxgrp as logbr_taxgrp preserving type)` |
+| `BR_NFItemBaseAmount` |  | |  | `base` |
+| `BR_NFItemTaxRate` |  | |  | `rate` |
+| `BR_NFItemTaxAmount` |  | |  | `taxval` |
+| `BR_NFItemExcludedBaseAmount` |  | |  | `cast(NFTax.excbas as logbr_excbas)` |
+| `BR_NFItemOtherBaseAmount` |  | |  | `othbas` |
+| `BR_NFItemTaxBasePct1Unit` |  | |  | `cast(' %' as msehi)` |
+| `BR_NFItemTaxBasePct1` |  | |  | `cast(NFTax.basered1 as logbr_taxbase preserving type)` |
+| `BR_NFItemTaxBasePct2Unit` |  | |  | `cast(' %' as msehi)` |
+| `BR_NFItemTaxBasePct2` |  | |  | `basered2` |
+| `BR_NFItemIsStatisticalTax` |  | |  | `cast(NFTax.stattx as logbr_stattx)` |
+| `BR_NFItemHasFixedMktTariff` |  | |  | `rectype` |
+| `BR_NFItemFixedMktTariffBaseQty` |  | |  | `pauta_base` |
+| `BR_NFItemFixedMarketTariffUnit` |  | |  | `unit` |
+| `BR_NFItemWhldgCollectionCode` |  | |  | `whtcollcode` |
+| `BR_NFItemFixedMktTariffTaxRate` |  | |  | `rate4dec` |
+| `BR_NFItemFixedMktTariffQty` |  | |  | `factor4dec` |
+| `BR_NFItmFxdMktTariffUnit4Dcmls` |  | |  | `unit4dec` |
+| `TaxesAreIncludedInNetAmount` |  | |  | `taxinnet` |
+| `BR_NFItemHasWithholdingTax` |  | |  | `cast(NFTax.withhold as logbr_withholdingtax preserving type)` |
+| `BR_NFSServiceTypeIncoming` |  | |  | `servtype_in` |
+| `BR_NFSServiceTypeOutgoing` |  | |  | `servtype_out` |
+| `TaxJurisdiction` |  | |  | `tax_loc` |
+| `AggregateBaseAmount` |  | |  | `(NFTax.base + NFTax.othbas)` |
+| `SalesDocumentCurrency` |  | | `_BR_NFDocumentCurrency` | `SalesDocumentCurrency` |
+| `_BR_NFItemTaxBasePct1Unit` | | ✓ | | |
+| `_BR_NFItemTaxBasePct2Unit` | | ✓ | | |
+| `_BR_NFItmFixedMarketTariffUnit` | | ✓ | | |
+| `_BR_NFItmFxdMktTrifUnit4Dcmls` | | ✓ | | |
+| `_SalesDocumentCurrency` | | ✓ | | |
+| `_BR_NotaFiscal` | | ✓ | | |
 
 ## Associations
 

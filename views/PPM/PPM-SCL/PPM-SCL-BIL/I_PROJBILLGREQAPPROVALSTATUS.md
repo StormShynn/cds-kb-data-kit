@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjBillgReqApprovalStatus` | `cast( substring( domvalue_l, 1, 1 ) as pbr_apprvl_status preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_ProjBillgReqApprvlStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjBillgReqApprovalStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbr_apprvl_status preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_ProjBillgReqApprvlStatusText` | | ✓ | | |
 
 ## Source Code
 

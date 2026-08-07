@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialAccountType` | `FinancialAccountType` |
-| `DomainValue` | `DomainValue` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialAccountType` | ✓ | |  |  |
+| `DomainValue` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

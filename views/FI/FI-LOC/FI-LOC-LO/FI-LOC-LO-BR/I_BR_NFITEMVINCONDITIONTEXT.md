@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| key `BR_NFItemVINCondition` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehicleconditionvin preserving type )` |
-| `BR_NFItemVINConditionDesc` | `cast( ddtext as logbr_vehicleconditionvindesc preserving type )` |
-| `_BR_NFItemVINCondition` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `BR_NFItemVINCondition` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_vehicleconditionvin preserving type )` |
+| `BR_NFItemVINConditionDesc` |  | |  | `cast( ddtext as logbr_vehicleconditionvindesc preserving type )` |
+| `_BR_NFItemVINCondition` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

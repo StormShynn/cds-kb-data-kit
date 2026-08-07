@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope2CalculationMethod` | `cast( dd07l.domvalue_l as sufnd_vdm_ghgscp2calcmeth )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
-| `_GHGScope` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope2CalculationMethod` | ✓ | |  | `cast( dd07l.domvalue_l as sufnd_vdm_ghgscp2calcmeth )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
+| `_GHGScope` | | ✓ | | |
 
 ## Associations
 

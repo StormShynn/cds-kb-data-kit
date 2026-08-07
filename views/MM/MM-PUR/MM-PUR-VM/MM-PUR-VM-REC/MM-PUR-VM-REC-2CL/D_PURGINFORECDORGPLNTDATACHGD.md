@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Supplier` | `elifn` |
-| `Material` | `matnr` |
-| `MaterialGroup` | `matkl` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` |  | |  | `elifn` |
+| `Material` |  | |  | `matnr` |
+| `MaterialGroup` |  | |  | `matkl` |
 
 ## Source Code
 

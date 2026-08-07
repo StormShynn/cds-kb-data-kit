@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLotOrigin` | `herkunft` |
-| key `InspLotSummaryControl` | `einwelos` |
-| `_Text` | *Association* |
-| `_InspectionLotOrigin` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLotOrigin` | ✓ | |  | `herkunft` |
+| `InspLotSummaryControl` | ✓ | |  | `einwelos` |
+| `_Text` | | ✓ | | |
+| `_InspectionLotOrigin` | | ✓ | | |
 
 ## Associations
 

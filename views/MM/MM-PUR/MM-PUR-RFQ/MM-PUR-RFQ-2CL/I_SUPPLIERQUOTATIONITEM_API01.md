@@ -31,41 +31,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierQuotation` | `I_SupplierQuotationItem.SupplierQuotation` |
-| key `SupplierQuotationItem` | `I_SupplierQuotationItem.SupplierQuotationItem` |
-| `PurchasingDocumentCategory` | `I_SupplierQuotationItem.PurchasingDocumentCategory` |
-| `PurchasingDocumentItemText` | `I_SupplierQuotationItem.PurchasingDocumentItemText` |
-| `Material` | `I_SupplierQuotationItem.Material` |
-| `ManufacturerMaterial` | `I_SupplierQuotationItem.ManufacturerMaterial` |
-| `SupplierMaterialNumber` | `I_SupplierQuotationItem.SupplierMaterialNumber` |
-| `ManufacturerPartNmbr` | `I_SupplierQuotationItem.ManufacturerPartNmbr` |
-| `Manufacturer` | `I_SupplierQuotationItem.Manufacturer` |
-| `MaterialGroup` | `I_SupplierQuotationItem.MaterialGroup` |
-| `Plant` | `I_SupplierQuotationItem.Plant` |
-| `IncotermsClassification` | `I_SupplierQuotationItem.IncotermsClassification` |
-| `IncotermsTransferLocation` | `I_SupplierQuotationItem.IncotermsTransferLocation` |
-| `IncotermsLocation1` | `I_SupplierQuotationItem.IncotermsLocation1` |
-| `IncotermsLocation2` | `I_SupplierQuotationItem.IncotermsLocation2` |
-| `OrderPriceUnit` | `OrderPriceUnit` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `OrderPriceUnitToOrderUnitNmrtr` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `OrdPriceUnitToOrderUnitDnmntr` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `OrderItemQtyToBaseQtyNmrtr` | `OrderItemQtyToBaseQtyNmrtr` |
-| `OrderItemQtyToBaseQtyDnmntr` | `OrderItemQtyToBaseQtyDnmntr` |
-| `OrderQuantity` | `OrderQuantity` |
-| `PurgDocPriceDate` | `PurgDocPriceDate` |
-| `BaseUnit` | `BaseUnit` |
-| `NetAmount` | `NetAmount` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `NetPriceQuantity` | `NetPriceQuantity` |
-| `DocumentCurrency` | `I_SupplierQuotationItem.DocumentCurrency` |
-| `PurchaseRequisition` | `I_SupplierQuotationItem.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `I_SupplierQuotationItem.PurchaseRequisitionItem` |
-| `RequestForQuotation` | `I_SupplierQuotationItem.RequestForQuotation` |
-| `RequestForQuotationItem` | `I_SupplierQuotationItem.RequestForQuotationItem` |
-| `_SupplierQuotation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierQuotation` | ✓ | |  |  |
+| `SupplierQuotationItem` | ✓ | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentItemText` |  | |  |  |
+| `Material` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `ManufacturerPartNmbr` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  |  |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
+| `OrderQuantity` |  | |  |  |
+| `PurgDocPriceDate` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `RequestForQuotation` |  | |  |  |
+| `RequestForQuotationItem` |  | |  |  |
+| `_SupplierQuotation` | | ✓ | | |
 
 ## Associations
 

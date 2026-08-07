@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectElementUUID` | `ProjectElementUUID` |
-| `ProjectUUID` | `ProjectUUID` |
-| `JointVenture` | `JointVenture` |
-| `JointVentureCostRecoveryCode` | `JointVentureCostRecoveryCode` |
-| `JointVentureEquityType` | `JointVentureEquityType` |
-| `JntVntrProjectType` | `JntVntrProjectType` |
-| `JntIntrstBillgClass` | `JntIntrstBillgClass` |
-| `JntIntrstBillgSubClass` | `JntIntrstBillgSubClass` |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EnterpriseProject` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectElementUUID` | ✓ | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `JointVenture` |  | |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |
+| `JointVentureEquityType` |  | |  |  |
+| `JntVntrProjectType` |  | |  |  |
+| `JntIntrstBillgClass` |  | |  |  |
+| `JntIntrstBillgSubClass` |  | |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
 
 ## Source Code
 

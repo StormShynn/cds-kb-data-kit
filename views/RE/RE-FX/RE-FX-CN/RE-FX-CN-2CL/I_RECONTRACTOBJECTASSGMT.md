@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REStatusObjectSource` | `_REObjectAssgmt.REStatusObjectSource` |
-| key `REObjectAssignmentType` | `_REObjectAssgmt.REObjectAssignmentType` |
-| key `REStatusObjectTarget` | `_REObjectAssgmt.REStatusObjectTarget` |
-| key `ValidityStartDate` | `_REObjectAssgmt.ValidityStartDate` |
-| `ValidityEndDate` | `_REObjectAssgmt.ValidityEndDate` |
-| `REOnlyInfoAssgmt` | `_REObjectAssgmt.REOnlyInfoAssgmt` |
-| `REStatusObjectSourceIsArchived` | `_REObjectAssgmt.REStatusObjectSourceIsArchived` |
-| `REGenerationType` | `_REObjectAssgmt.REGenerationType` |
-| `REIsMainAsset` | `_REObjectAssgmt.REIsMainAsset` |
-| `REAssignmentHasMultiple` | `_REObjectAssgmt.REAssignmentHasMultiple` |
-| `REObjectPossessionStartDate` | `_REObjectAssgmt.REObjectPossessionStartDate` |
-| `REObjectPossessionEndDate` | `_REObjectAssgmt.REObjectPossessionEndDate` |
-| `REIsLeadingObject` | `_REObjectAssgmt.REIsLeadingObject` |
-| `_REContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REStatusObjectSource` | ✓ | | `_REObjectAssgmt` | `REStatusObjectSource` |
+| `REObjectAssignmentType` | ✓ | | `_REObjectAssgmt` | `REObjectAssignmentType` |
+| `REStatusObjectTarget` | ✓ | | `_REObjectAssgmt` | `REStatusObjectTarget` |
+| `ValidityStartDate` | ✓ | | `_REObjectAssgmt` | `ValidityStartDate` |
+| `ValidityEndDate` |  | | `_REObjectAssgmt` | `ValidityEndDate` |
+| `REOnlyInfoAssgmt` |  | | `_REObjectAssgmt` | `REOnlyInfoAssgmt` |
+| `REStatusObjectSourceIsArchived` |  | | `_REObjectAssgmt` | `REStatusObjectSourceIsArchived` |
+| `REGenerationType` |  | | `_REObjectAssgmt` | `REGenerationType` |
+| `REIsMainAsset` |  | | `_REObjectAssgmt` | `REIsMainAsset` |
+| `REAssignmentHasMultiple` |  | | `_REObjectAssgmt` | `REAssignmentHasMultiple` |
+| `REObjectPossessionStartDate` |  | | `_REObjectAssgmt` | `REObjectPossessionStartDate` |
+| `REObjectPossessionEndDate` |  | | `_REObjectAssgmt` | `REObjectPossessionEndDate` |
+| `REIsLeadingObject` |  | | `_REObjectAssgmt` | `REIsLeadingObject` |
+| `_REContract` | | ✓ | | |
 
 ## Associations
 

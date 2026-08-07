@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkDayRule` | `cast(substring(l.domvalue_l, 1, 1) as workdayrule preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkDayRule` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as workdayrule preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

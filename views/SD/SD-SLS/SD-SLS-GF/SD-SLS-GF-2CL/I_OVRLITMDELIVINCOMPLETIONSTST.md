@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OvrlItmDelivIncompletionSts` | `statu` |
-| key `Language` | `spras` |
-| `OvrlItmDelivIncompltnStsDesc` | `cast(bezei as ovrlitmdelivincompltnstsdesc)` |
-| `_OvrlItmDelivIncompletionSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OvrlItmDelivIncompletionSts` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `OvrlItmDelivIncompltnStsDesc` |  | |  | `cast(bezei as ovrlitmdelivincompltnstsdesc)` |
+| `_OvrlItmDelivIncompletionSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

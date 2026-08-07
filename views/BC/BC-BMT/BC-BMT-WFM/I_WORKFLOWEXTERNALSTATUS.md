@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowExternalStatus` | `WorkflowTaskStatus` |
-| `_WorkflowExternalStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowExternalStatus` | ✓ | |  | `WorkflowTaskStatus` |
+| `_WorkflowExternalStatusText` | | ✓ | | |
 
 ## Associations
 

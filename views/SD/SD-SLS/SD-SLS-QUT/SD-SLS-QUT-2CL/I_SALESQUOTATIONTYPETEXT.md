@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotationType` | `SalesQuotationType.SalesQuotationType` |
-| key `Language` | `Text.Language` |
-| `SalesQuotationTypeName` | `cast( Text.SalesDocumentTypeName as quotation_type_name preserving type )` |
-| `_SalesQuotationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotationType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SalesQuotationTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as quotation_type_name preserving type )` |
+| `_SalesQuotationType` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `BR_NFeDestination` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_nfe_iddest preserving type )` |
-| `BR_NFeDestinationDesc` | `cast( ddtext as logbr_nfe_iddest_description preserving type )` |
-| `_BR_NFeDestination` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `BR_NFeDestination` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_nfe_iddest preserving type )` |
+| `BR_NFeDestinationDesc` |  | |  | `cast( ddtext as logbr_nfe_iddest_description preserving type )` |
+| `_BR_NFeDestination` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `CharcExponentFormat` | `cast( dd07t.domvalue_l as atdex)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `CharcExponentFormatName` | `cast( dd07t.ddtext as charcexponentformatname preserving type )` |
-| `_Language` | *Association* |
-| `_CharcExponentFormat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `CharcExponentFormat` | ✓ | |  | `cast( dd07t.domvalue_l as atdex)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `CharcExponentFormatName` |  | |  | `cast( dd07t.ddtext as charcexponentformatname preserving type )` |
+| `_Language` | | ✓ | | |
+| `_CharcExponentFormat` | | ✓ | | |
 
 ## Associations
 

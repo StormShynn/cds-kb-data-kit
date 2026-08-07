@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialStatementLeafItem` | `FinancialStatementLeafItem` |
-| `FinancialStmntLeafItemExtID` | `FinancialStmntLeafItemExtID` |
-| `_FinancialStatementHierNode` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialStatementLeafItem` | ✓ | |  |  |
+| `FinancialStmntLeafItemExtID` |  | |  |  |
+| `_FinancialStatementHierNode` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

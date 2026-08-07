@@ -32,36 +32,36 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocument` | `MaterialDocument` |
-| `DocumentDate` | `DocumentDate` |
-| `PostingDate` | `PostingDate` |
-| `AccountingDocumentType` | `AccountingDocumentType` |
-| `InventoryTransactionType` | `InventoryTransactionType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `MaterialDocumentHeaderText` | `MaterialDocumentHeaderText` |
-| `DeliveryDocument` | `DeliveryInMatlDocumentHeader` |
-| `ReferenceDocument` | `ReferenceDocument` |
-| `BillOfLading` | `BillOfLading` |
-| `VersionForPrintingSlip` | `VersionForPrintingSlip` |
-| `ManualPrintIsTriggered` | `ManualPrintIsTriggered` |
-| `CtrlPostgForExtWhseMgmtSyst` | `CtrlPostgForExtWhseMgmtSyst` |
-| `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `IssuingOrReceivingPlant` | `IssuingOrReceivingPlant` |
-| `IssuingOrReceivingStorageLoc` | `IssuingOrReceivingStorageLoc` |
-| `_MaterialDocumentYear` | *Association* |
-| `_MaterialDocumentItem` | *Association* |
-| `_DeliveryDocument` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_IssuingOrReceivingStorageLoc` | *Association* |
-| `_User` | *Association* |
-| `_AccountingDocumentType` | *Association* |
-| `_InventoryTransactionType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocument` | ✓ | |  |  |
+| `DocumentDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `AccountingDocumentType` |  | |  |  |
+| `InventoryTransactionType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `MaterialDocumentHeaderText` |  | |  |  |
+| `DeliveryDocument` |  | |  | `DeliveryInMatlDocumentHeader` |
+| `ReferenceDocument` |  | |  |  |
+| `BillOfLading` |  | |  |  |
+| `VersionForPrintingSlip` |  | |  |  |
+| `ManualPrintIsTriggered` |  | |  |  |
+| `CtrlPostgForExtWhseMgmtSyst` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `IssuingOrReceivingPlant` |  | |  |  |
+| `IssuingOrReceivingStorageLoc` |  | |  |  |
+| `_MaterialDocumentYear` | | ✓ | | |
+| `_MaterialDocumentItem` | | ✓ | | |
+| `_DeliveryDocument` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_IssuingOrReceivingStorageLoc` | | ✓ | | |
+| `_User` | | ✓ | | |
+| `_AccountingDocumentType` | | ✓ | | |
+| `_InventoryTransactionType` | | ✓ | | |
 
 ## Associations
 

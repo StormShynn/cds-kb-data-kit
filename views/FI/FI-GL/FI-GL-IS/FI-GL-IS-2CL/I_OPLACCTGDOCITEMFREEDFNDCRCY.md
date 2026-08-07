@@ -29,61 +29,61 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `I_JournalEntryItem.CompanyCode` |
-| key `FiscalYear` | `I_JournalEntryItem.FiscalYear` |
-| key `AccountingDocument` | `I_JournalEntryItem.AccountingDocument` |
-| key `AccountingDocumentItem` | `I_JournalEntryItem.AccountingDocumentItem` |
-| `Ledger` | `I_JournalEntryItem.Ledger` |
-| `BalanceTransactionCurrency` | `I_JournalEntryItem.BalanceTransactionCurrency` |
-| `AmountInBalanceTransacCrcy` | `} sum(I_JournalEntryItem.AmountInBalanceTransacCrcy)` |
-| `TransactionCurrency` | `I_JournalEntryItem.TransactionCurrency` |
-| `AmountInTransactionCurrency` | `} sum(I_JournalEntryItem.AmountInTransactionCurrency)` |
-| `CompanyCodeCurrency` | `I_JournalEntryItem.CompanyCodeCurrency` |
-| `AmountInCompanyCodeCurrency` | `} sum(I_JournalEntryItem.AmountInCompanyCodeCurrency)` |
-| `GlobalCurrency` | `I_JournalEntryItem.GlobalCurrency` |
-| `AmountInGlobalCurrency` | `} sum(I_JournalEntryItem.AmountInGlobalCurrency)` |
-| `FreeDefinedCurrency1` | `I_JournalEntryItem.FreeDefinedCurrency1` |
-| `AmountInFreeDefinedCurrency1` | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency1)` |
-| `FreeDefinedCurrency2` | `I_JournalEntryItem.FreeDefinedCurrency2` |
-| `AmountInFreeDefinedCurrency2` | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency2)` |
-| `FreeDefinedCurrency3` | `I_JournalEntryItem.FreeDefinedCurrency3` |
-| `AmountInFreeDefinedCurrency3` | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency3)` |
-| `FreeDefinedCurrency4` | `I_JournalEntryItem.FreeDefinedCurrency4` |
-| `AmountInFreeDefinedCurrency4` | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency4)` |
-| `FreeDefinedCurrency5` | `I_JournalEntryItem.FreeDefinedCurrency5` |
-| `AmountInFreeDefinedCurrency5` | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency5)` |
-| `FreeDefinedCurrency6` | `I_JournalEntryItem.FreeDefinedCurrency6` |
-| `AmountInFreeDefinedCurrency6` | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency6)` |
-| `FreeDefinedCurrency7` | `I_JournalEntryItem.FreeDefinedCurrency7` |
-| `AmountInFreeDefinedCurrency7` | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency7)` |
-| `FreeDefinedCurrency8` | `I_JournalEntryItem.FreeDefinedCurrency8` |
-| `AmountInFreeDefinedCurrency8` | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency8)` |
-| `DebitAmountInCoCodeCrcy` | `} sum(I_JournalEntryItem.DebitAmountInCoCodeCrcy)` |
-| `CreditAmountInCoCodeCrcy` | `} sum(I_JournalEntryItem.CreditAmountInCoCodeCrcy)` |
-| `DebitAmountInTransCrcy` | `} sum(I_JournalEntryItem.DebitAmountInTransCrcy)` |
-| `CreditAmountInTransCrcy` | `} sum(I_JournalEntryItem.CreditAmountInTransCrcy)` |
-| `DebitAmountInBalanceTransCrcy` | `} sum(I_JournalEntryItem.DebitAmountInBalanceTransCrcy)` |
-| `CreditAmountInBalanceTransCrcy` | `} sum(I_JournalEntryItem.CreditAmountInBalanceTransCrcy)` |
-| `DebitAmountInGlobalCrcy` | `} sum(I_JournalEntryItem.DebitAmountInGlobalCrcy)` |
-| `CreditAmountInGlobalCrcy` | `} sum(I_JournalEntryItem.CreditAmountInGlobalCrcy)` |
-| `DebitAmountInFreeDfndCrcy1` | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy1)` |
-| `CreditAmountInFreeDfndCrcy1` | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy1)` |
-| `DebitAmountInFreeDfndCrcy2` | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy2)` |
-| `CreditAmountInFreeDfndCrcy2` | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy2)` |
-| `DebitAmountInFreeDfndCrcy3` | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy3)` |
-| `CreditAmountInFreeDfndCrcy3` | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy3)` |
-| `DebitAmountInFreeDfndCrcy4` | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy4)` |
-| `CreditAmountInFreeDfndCrcy4` | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy4)` |
-| `DebitAmountInFreeDfndCrcy5` | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy5)` |
-| `CreditAmountInFreeDfndCrcy5` | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy5)` |
-| `DebitAmountInFreeDfndCrcy6` | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy6)` |
-| `CreditAmountInFreeDfndCrcy6` | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy6)` |
-| `DebitAmountInFreeDfndCrcy7` | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy7)` |
-| `CreditAmountInFreeDfndCrcy7` | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy7)` |
-| `DebitAmountInFreeDfndCrcy8` | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy8)` |
-| `CreditAmountInFreeDfndCrcy8` | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy8)` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `AccountingDocument` | ✓ | |  |  |
+| `AccountingDocumentItem` | ✓ | |  |  |
+| `Ledger` |  | |  |  |
+| `BalanceTransactionCurrency` |  | |  |  |
+| `AmountInBalanceTransacCrcy` |  | |  | `} sum(I_JournalEntryItem.AmountInBalanceTransacCrcy)` |
+| `TransactionCurrency` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  | `} sum(I_JournalEntryItem.AmountInTransactionCurrency)` |
+| `CompanyCodeCurrency` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  | `} sum(I_JournalEntryItem.AmountInCompanyCodeCurrency)` |
+| `GlobalCurrency` |  | |  |  |
+| `AmountInGlobalCurrency` |  | |  | `} sum(I_JournalEntryItem.AmountInGlobalCurrency)` |
+| `FreeDefinedCurrency1` |  | |  |  |
+| `AmountInFreeDefinedCurrency1` |  | |  | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency1)` |
+| `FreeDefinedCurrency2` |  | |  |  |
+| `AmountInFreeDefinedCurrency2` |  | |  | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency2)` |
+| `FreeDefinedCurrency3` |  | |  |  |
+| `AmountInFreeDefinedCurrency3` |  | |  | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency3)` |
+| `FreeDefinedCurrency4` |  | |  |  |
+| `AmountInFreeDefinedCurrency4` |  | |  | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency4)` |
+| `FreeDefinedCurrency5` |  | |  |  |
+| `AmountInFreeDefinedCurrency5` |  | |  | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency5)` |
+| `FreeDefinedCurrency6` |  | |  |  |
+| `AmountInFreeDefinedCurrency6` |  | |  | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency6)` |
+| `FreeDefinedCurrency7` |  | |  |  |
+| `AmountInFreeDefinedCurrency7` |  | |  | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency7)` |
+| `FreeDefinedCurrency8` |  | |  |  |
+| `AmountInFreeDefinedCurrency8` |  | |  | `} sum(I_JournalEntryItem.AmountInFreeDefinedCurrency8)` |
+| `DebitAmountInCoCodeCrcy` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInCoCodeCrcy)` |
+| `CreditAmountInCoCodeCrcy` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInCoCodeCrcy)` |
+| `DebitAmountInTransCrcy` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInTransCrcy)` |
+| `CreditAmountInTransCrcy` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInTransCrcy)` |
+| `DebitAmountInBalanceTransCrcy` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInBalanceTransCrcy)` |
+| `CreditAmountInBalanceTransCrcy` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInBalanceTransCrcy)` |
+| `DebitAmountInGlobalCrcy` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInGlobalCrcy)` |
+| `CreditAmountInGlobalCrcy` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInGlobalCrcy)` |
+| `DebitAmountInFreeDfndCrcy1` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy1)` |
+| `CreditAmountInFreeDfndCrcy1` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy1)` |
+| `DebitAmountInFreeDfndCrcy2` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy2)` |
+| `CreditAmountInFreeDfndCrcy2` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy2)` |
+| `DebitAmountInFreeDfndCrcy3` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy3)` |
+| `CreditAmountInFreeDfndCrcy3` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy3)` |
+| `DebitAmountInFreeDfndCrcy4` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy4)` |
+| `CreditAmountInFreeDfndCrcy4` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy4)` |
+| `DebitAmountInFreeDfndCrcy5` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy5)` |
+| `CreditAmountInFreeDfndCrcy5` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy5)` |
+| `DebitAmountInFreeDfndCrcy6` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy6)` |
+| `CreditAmountInFreeDfndCrcy6` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy6)` |
+| `DebitAmountInFreeDfndCrcy7` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy7)` |
+| `CreditAmountInFreeDfndCrcy7` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy7)` |
+| `DebitAmountInFreeDfndCrcy8` |  | |  | `} sum(I_JournalEntryItem.DebitAmountInFreeDefinedCrcy8)` |
+| `CreditAmountInFreeDfndCrcy8` |  | |  | `} sum(I_JournalEntryItem.CreditAmountInFreeDefinedCrcy8)` |
 
 ## Source Code
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REConditionAmountReference` | `cast( dd07l.domvalue_l as recdvdmcondvaluerefer )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REConditionAmountReference` | ✓ | |  | `cast( dd07l.domvalue_l as recdvdmcondvaluerefer )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

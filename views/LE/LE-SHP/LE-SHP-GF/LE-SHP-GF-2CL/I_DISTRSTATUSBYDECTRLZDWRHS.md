@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DistrStatusByDecentralizedWrhs` | `cast(left(dd07l.domvalue_l, 1 ) as vlstk preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DistrStatusByDecentralizedWrhs` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as vlstk preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

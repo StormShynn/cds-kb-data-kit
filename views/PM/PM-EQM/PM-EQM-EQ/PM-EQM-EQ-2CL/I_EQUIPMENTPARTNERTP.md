@@ -31,35 +31,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `Equipment` |
-| key `PartnerFunction` | `PartnerFunction` |
-| key `EquipmentPartnerObjectNmbr` | `EquipmentPartnerObjectNmbr` |
-| `EquipmentPartner` | `EquipmentPartner` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `MaintObjectInternalID` | `MaintObjectInternalID` |
-| `PartnerFunctionType` | `PartnerFunctionType` |
-| `CntctPersnIsBusPrpsCompleted` | `CntctPersnIsBusPrpsCompleted` |
-| `CntctPersnCustomerAccountGroup` | `CntctPersnCustomerAccountGroup` |
-| `CntctPersnCustomerAuthznGroup` | `CntctPersnCustomerAuthznGroup` |
-| `CntctPersnSupplierAccountGroup` | `CntctPersnSupplierAccountGroup` |
-| `CntctPersnSupplierAuthznGroup` | `CntctPersnSupplierAuthznGroup` |
-| `CustomerIsBusPrpsCmpltd` | `CustomerIsBusPrpsCmpltd` |
-| `CustomerAccountGroup` | `CustomerAccountGroup` |
-| `CustomerAuthznGrp` | `CustomerAuthznGrp` |
-| `EmployeeIsBusPrpsCmpltd` | `EmployeeIsBusPrpsCmpltd` |
-| `EmployeeAuthznGroup` | `EmployeeAuthznGroup` |
-| `SupplierIsBusPrpsCmpltd` | `SupplierIsBusPrpsCmpltd` |
-| `SupplierAccountGroup` | `SupplierAccountGroup` |
-| `SupplierAuthznGrp` | `SupplierAuthznGrp` |
-| `_Equipment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `EquipmentPartnerObjectNmbr` | ✓ | |  |  |
+| `EquipmentPartner` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `MaintObjectInternalID` |  | |  |  |
+| `PartnerFunctionType` |  | |  |  |
+| `CntctPersnIsBusPrpsCompleted` |  | |  |  |
+| `CntctPersnCustomerAccountGroup` |  | |  |  |
+| `CntctPersnCustomerAuthznGroup` |  | |  |  |
+| `CntctPersnSupplierAccountGroup` |  | |  |  |
+| `CntctPersnSupplierAuthznGroup` |  | |  |  |
+| `CustomerIsBusPrpsCmpltd` |  | |  |  |
+| `CustomerAccountGroup` |  | |  |  |
+| `CustomerAuthznGrp` |  | |  |  |
+| `EmployeeIsBusPrpsCmpltd` |  | |  |  |
+| `EmployeeAuthznGroup` |  | |  |  |
+| `SupplierIsBusPrpsCmpltd` |  | |  |  |
+| `SupplierAccountGroup` |  | |  |  |
+| `SupplierAuthznGrp` |  | |  |  |
+| `_Equipment` | | ✓ | | |
 
 ## Source Code
 

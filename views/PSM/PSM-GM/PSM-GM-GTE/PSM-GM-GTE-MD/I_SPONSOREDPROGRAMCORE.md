@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SponsoredProgram` | `sponsored_prog` |
-| `CreatedByUser` | `created_by` |
-| `CreationDate` | `created_on` |
-| `LastChangedByUser` | `modified_by` |
-| `LastChangeDate` | `modified_on` |
-| `SponsoredProgramAuthznGrp` | `auth_group` |
-| `_SponsoredProgHierarchyNode` | *Association* |
-| `_Text` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SponsoredProgram` | ✓ | |  | `sponsored_prog` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDate` |  | |  | `created_on` |
+| `LastChangedByUser` |  | |  | `modified_by` |
+| `LastChangeDate` |  | |  | `modified_on` |
+| `SponsoredProgramAuthznGrp` |  | |  | `auth_group` |
+| `_SponsoredProgHierarchyNode` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
 
 ## Associations
 

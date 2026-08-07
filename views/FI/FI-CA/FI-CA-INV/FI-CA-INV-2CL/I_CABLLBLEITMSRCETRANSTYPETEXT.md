@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABllbleItmSourceTransType` | `cast( _tfk8103t.srctatype as srctatype_gfn_kk )` |
-| key `Language` | `_tfk8103t.langu` |
-| `CABllbleItmSrceTransTypeText` | `cast( _tfk8103t.text as srctatype_txt_gfn_kk preserving type )` |
-| `_CABllbleItmSrceTransType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABllbleItmSourceTransType` | ✓ | |  | `cast( _tfk8103t.srctatype as srctatype_gfn_kk )` |
+| `Language` | ✓ | | `_tfk8103t` | `langu` |
+| `CABllbleItmSrceTransTypeText` |  | |  | `cast( _tfk8103t.text as srctatype_txt_gfn_kk preserving type )` |
+| `_CABllbleItmSrceTransType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

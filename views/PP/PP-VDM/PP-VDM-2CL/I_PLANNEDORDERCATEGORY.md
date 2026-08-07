@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlannedOrderCategory` | `cast(substring(l.domvalue_l, 1, 1) as plannedordercategory preserving type)` |
-| `DomainValue` | `l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlannedOrderCategory` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as plannedordercategory preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

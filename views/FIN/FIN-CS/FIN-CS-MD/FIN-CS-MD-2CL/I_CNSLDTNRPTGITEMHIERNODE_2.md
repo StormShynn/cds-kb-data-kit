@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `cast( left( _HierarchyNode.HierarchyNodeClass, 2) as fincs_conschartofaccounts preserving type )` |
-| key `ConsolidationReportingItemHier` | `cast( substring( _HierarchyNode.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |
-| key `HierarchyNode` | `_HierarchyNode.HierarchyNode` |
-| key `ValidityEndDate` | `_HierarchyNode.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyNode.ValidityStartDate` |
-| `ParentNode` | `_HierarchyNode.ParentNode` |
-| `HierarchyVersion` | `_HierarchyNode.HierarchyVersion` |
-| `ConsolidationReportingItem` | `cast( left(_HierarchyNode.UniversalHierarchyLeafValue, 10) as fincs_reportingitem preserving type )` |
-| `HierarchyNodeSequence` | `_HierarchyNode.HierarchyNodeSequence` |
-| `HierarchyNodeLevel` | `_HierarchyNode.HierarchyNodeLevel` |
-| `NodeType` | `_HierarchyNode.NodeType` |
-| `_ReportingItem` | *Association* |
-| `_Hierarchy` | *Association* |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  | `cast( left( _HierarchyNode.HierarchyNodeClass, 2) as fincs_conschartofaccounts preserving type )` |
+| `ConsolidationReportingItemHier` | ✓ | |  | `cast( substring( _HierarchyNode.UniversalHierHierarchyID, 9, 10 ) as fincs_reportingitemhierarchy preserving type )` |
+| `HierarchyNode` | ✓ | | `_HierarchyNode` | `HierarchyNode` |
+| `ValidityEndDate` | ✓ | | `_HierarchyNode` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyNode` | `ValidityStartDate` |
+| `ParentNode` |  | | `_HierarchyNode` | `ParentNode` |
+| `HierarchyVersion` |  | | `_HierarchyNode` | `HierarchyVersion` |
+| `ConsolidationReportingItem` |  | |  | `cast( left(_HierarchyNode.UniversalHierarchyLeafValue, 10) as fincs_reportingitem preserving type )` |
+| `HierarchyNodeSequence` |  | | `_HierarchyNode` | `HierarchyNodeSequence` |
+| `HierarchyNodeLevel` |  | | `_HierarchyNode` | `HierarchyNodeLevel` |
+| `NodeType` |  | | `_HierarchyNode` | `NodeType` |
+| `_ReportingItem` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

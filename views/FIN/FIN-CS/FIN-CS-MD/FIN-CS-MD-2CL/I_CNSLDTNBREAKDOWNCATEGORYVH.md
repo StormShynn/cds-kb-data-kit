@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `ConsolidationChartOfAccounts` |
-| key `ConsolidationBreakdownCategory` | `ConsolidationBreakdownCategory` |
-| `CnsldtnBreakdownCategoryText` | `cast(_BreakdownCategory._Text[1: Language=$session.system_language].CnsldtnBreakdownCategoryText as fincs_description_text_30 preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  |  |
+| `ConsolidationBreakdownCategory` | ✓ | |  |  |
+| `CnsldtnBreakdownCategoryText` |  | |  | `cast(_BreakdownCategory._Text[1: Language=$session.system_language].CnsldtnBreakdownCategoryText as fincs_description_text_30 preserving type )` |
 
 ## Source Code
 

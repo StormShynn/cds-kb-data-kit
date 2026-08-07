@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(tp05t.langu as langu preserving type)` |
-| key `BusinessPartnerEmployeeGroup` | `cast(tp05t.staff_grp as bp_staff_g preserving type)` |
-| `BPEmployeeGroupDescription` | `tp05t.staff_gr_t` |
-| `_BusinessPartnerEmployeeGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(tp05t.langu as langu preserving type)` |
+| `BusinessPartnerEmployeeGroup` | ✓ | |  | `cast(tp05t.staff_grp as bp_staff_g preserving type)` |
+| `BPEmployeeGroupDescription` |  | |  | `staff_gr_t` |
+| `_BusinessPartnerEmployeeGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

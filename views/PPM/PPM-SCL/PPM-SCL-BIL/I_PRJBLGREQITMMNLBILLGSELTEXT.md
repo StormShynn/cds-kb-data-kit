@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `ManualBillgSelForPrjBlgReqItem` | `cast( substring( domvalue_l, 1, 1 ) as pbr_apprvl_status preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `MnlBillgSelForPrjBlgReqItmText` | `ddtext` |
-| `_Language` | *Association* |
-| `_ProjBillgReqItmMnlBillgSel` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ManualBillgSelForPrjBlgReqItem` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbr_apprvl_status preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `MnlBillgSelForPrjBlgReqItmText` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_ProjBillgReqItmMnlBillgSel` | | ✓ | | |
 
 ## Associations
 

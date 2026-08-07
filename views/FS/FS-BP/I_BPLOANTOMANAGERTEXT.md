@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tp10t.langu` |
-| key `BusinessPartnerLoanToManager` | `tp10t.kwg_org` |
-| `BPLoanToManagerDescription` | `tp10t.xkwg_org` |
-| `_BPLoanToManager` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `BusinessPartnerLoanToManager` | ✓ | |  | `kwg_org` |
+| `BPLoanToManagerDescription` |  | |  | `xkwg_org` |
+| `_BPLoanToManager` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_UnitAttributeValueT.Language` |
-| key `CnsldtnUnitDataCollection` | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitdatacollection preserving type )` |
-| `CnsldtnUnitDataCollectionText` | `_UnitAttributeValueT.CnsldtnUnitAttribValText` |
-| `CnsldtnUnitDataCollLongText` | `_UnitAttributeValueT.CnsldtnUnitAttribValLongText` |
-| `_CnsldtnUnitDataColl` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_UnitAttributeValueT` | `Language` |
+| `CnsldtnUnitDataCollection` | ✓ | |  | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitdatacollection preserving type )` |
+| `CnsldtnUnitDataCollectionText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValText` |
+| `CnsldtnUnitDataCollLongText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValLongText` |
+| `_CnsldtnUnitDataColl` | | ✓ | | |
 
 ## Associations
 

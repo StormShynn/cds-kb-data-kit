@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrjBlgElmEntrCanclnSrceCode` | `cast( substring( domvalue_l, 1, 1 ) as pbee_cancellingsrc preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_PrjBlgElmEntrCanclnSrcCdText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrjBlgElmEntrCanclnSrceCode` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbee_cancellingsrc preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_PrjBlgElmEntrCanclnSrcCdText` | | ✓ | | |
 
 ## Source Code
 

@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MerchandiseCategory` | `cast ( MerchandiseCategory.matkl as rfm_mrchdscategory preserving type )` |
-| `AuthorizationGroup` | `MerchandiseCategory.begru` |
-| `ContactPersonStdDepartment` | `MerchandiseCategory.abtnr` |
-| `Division` | `MerchandiseCategory.spart` |
-| `MaterialGroupRefMaterial` | `MerchandiseCategory.wwgda` |
-| `PurchasingValueKey` | `MerchandiseCategory.ekwsl` |
-| `ValuationClass` | `MerchandiseCategory.bklas` |
-| `LastChangeDateTime` | `MerchandiseCategory.last_changed_at` |
-| `ClassInternalID` | `MrchdsCategory.clint` |
-| `_ProductGroup` | *Association* |
-| `_MerchandiseCategoryText` | *Association* |
-| `_MrchdsCategoryCharacteristic` | *Association* |
-| `_MrchdsCategoryHierarchyNode` | *Association* |
-| `_MrchdsCatCharcValRestriction` | *Association* |
-| `_MrchdsCmpltHierarchyNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MerchandiseCategory` | ✓ | |  | `cast ( MerchandiseCategory.matkl as rfm_mrchdscategory preserving type )` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `ContactPersonStdDepartment` |  | |  | `abtnr` |
+| `Division` |  | |  | `spart` |
+| `MaterialGroupRefMaterial` |  | |  | `wwgda` |
+| `PurchasingValueKey` |  | |  | `ekwsl` |
+| `ValuationClass` |  | |  | `bklas` |
+| `LastChangeDateTime` |  | |  | `last_changed_at` |
+| `ClassInternalID` |  | |  | `clint` |
+| `_ProductGroup` | | ✓ | | |
+| `_MerchandiseCategoryText` | | ✓ | | |
+| `_MrchdsCategoryCharacteristic` | | ✓ | | |
+| `_MrchdsCategoryHierarchyNode` | | ✓ | | |
+| `_MrchdsCatCharcValRestriction` | | ✓ | | |
+| `_MrchdsCmpltHierarchyNode` | | ✓ | | |
 
 ## Associations
 

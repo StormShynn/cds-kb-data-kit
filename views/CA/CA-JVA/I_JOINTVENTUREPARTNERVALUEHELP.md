@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `jvp.bukrs` |
-| key `JointVenturePartner` | `cast( jvp.partn as jv_part_cds preserving type )` |
-| `JointVenturePartnerShortText` | `cast( left(_BusinessPartner.BusinessPartnerName, 35) as jv_part_nm preserving type )` |
-| `JointVenturePartner2ShortText` | `cast( left(_BusinessPartner.BusinessPartnerName, 40) as jva_partner_name preserving type )` |
-| `JntVntrIntcoCode` | `jvp.intcocd` |
-| `_CompanyCode` | *Association* |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JointVenturePartner` | ✓ | |  | `cast( jvp.partn as jv_part_cds preserving type )` |
+| `JointVenturePartnerShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 35) as jv_part_nm preserving type )` |
+| `JointVenturePartner2ShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 40) as jva_partner_name preserving type )` |
+| `JntVntrIntcoCode` |  | |  | `intcocd` |
+| `_CompanyCode` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Associations
 

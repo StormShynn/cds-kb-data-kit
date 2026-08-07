@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Matnr` | `matnr` |
-| `Description` | `description` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Matnr` | ✓ | |  | `matnr` |
+| `Description` |  | |  | `description` |
 
 ## Source Code
 

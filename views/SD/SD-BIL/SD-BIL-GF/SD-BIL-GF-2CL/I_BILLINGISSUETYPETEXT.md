@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingIssueType` | `cast( domvalue_l as vf_todo )` |
-| key `Language` | `ddlanguage` |
-| `BillingIssueTypeName` | `ddtext` |
-| `_BillingIssueType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingIssueType` | ✓ | |  | `cast( domvalue_l as vf_todo )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `BillingIssueTypeName` |  | |  | `ddtext` |
+| `_BillingIssueType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

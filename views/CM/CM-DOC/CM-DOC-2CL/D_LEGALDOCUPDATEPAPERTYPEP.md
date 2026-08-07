@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LglCntntMDocPaperType` | `lcm_doc_paper_type` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocPaperType` |  | |  | `lcm_doc_paper_type` |
 
 ## Source Code
 

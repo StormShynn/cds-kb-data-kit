@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast(bukrs as fis_bukrs preserving type)` |
-| `CompanyCodeName` | `butxt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` |
+| `CompanyCodeName` |  | |  | `butxt` |
 
 ## Source Code
 

@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `StorageCostsPercentageCode` | `lagpr` |
-| `StorageCostsInPercent` | `lkost` |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `StorageCostsPercentageCode` | ✓ | |  | `lagpr` |
+| `StorageCostsInPercent` |  | |  | `lkost` |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

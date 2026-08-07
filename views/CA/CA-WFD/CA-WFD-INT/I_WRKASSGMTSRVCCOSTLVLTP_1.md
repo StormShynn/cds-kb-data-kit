@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkforcePersonExternalID` | `WorkforcePersonExternalID` |
-| key `WorkAssignmentExternalID` | `WorkAssignmentExternalID` |
-| key `Country2DigitISOCode` | `Country2DigitISOCode` |
-| key `StartDate` | `StartDate` |
-| `EndDate` | `EndDate` |
-| `ServiceCostLevel` | `ServiceCostLevel` |
-| `IsBlocked` | `IsBlocked` |
-| `_CostLevelText` | *Association* |
-| `_WorkAssignment` | *Association* |
-| `_WorkforcePerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkforcePersonExternalID` | ✓ | |  |  |
+| `WorkAssignmentExternalID` | ✓ | |  |  |
+| `Country2DigitISOCode` | ✓ | |  |  |
+| `StartDate` | ✓ | |  |  |
+| `EndDate` |  | |  |  |
+| `ServiceCostLevel` |  | |  |  |
+| `IsBlocked` |  | |  |  |
+| `_CostLevelText` | | ✓ | | |
+| `_WorkAssignment` | | ✓ | | |
+| `_WorkforcePerson` | | ✓ | | |
 
 ## Source Code
 

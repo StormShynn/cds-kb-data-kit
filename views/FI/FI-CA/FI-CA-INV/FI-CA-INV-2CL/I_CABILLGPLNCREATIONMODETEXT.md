@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnCreationMode` | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_crmode_kk preserving type)` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CABillgPlnCreationModeText` | `cast ( ddtext as bip_crmode_txt_gfn_kk preserving type )` |
-| `_CABillgPlnCreationMode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnCreationMode` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_crmode_kk preserving type)` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CABillgPlnCreationModeText` |  | |  | `cast ( ddtext as bip_crmode_txt_gfn_kk preserving type )` |
+| `_CABillgPlnCreationMode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

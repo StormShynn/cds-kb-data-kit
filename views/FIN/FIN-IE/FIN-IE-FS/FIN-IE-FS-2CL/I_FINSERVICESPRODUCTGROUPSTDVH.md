@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialServicesProductGroup` | `FinancialServicesProductGroup` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialServicesProductGroup` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

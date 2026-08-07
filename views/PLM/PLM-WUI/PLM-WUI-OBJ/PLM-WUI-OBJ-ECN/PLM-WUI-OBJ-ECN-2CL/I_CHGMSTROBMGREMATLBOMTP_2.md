@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumber` | `ChangeNumber` |
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| key `BillOfMaterialVariantUsage` | `BillOfMaterialVariantUsage` |
-| `ChgNmbrAlternativeDateID` | `ChgNmbrAlternativeDateID` |
-| `SAPObjectTechnicalID` | `SAPObjectTechnicalID` |
-| `ObjMgmtRecdDescription` | `ObjMgmtRecdDescription` |
-| `ObjMgmtRecdItemUUID` | `ObjMgmtRecdItemUUID` |
-| `ObjMgmtRecdLastChangedAt` | `ObjMgmtRecdLastChangedAt` |
-| `ObjMgmtRecdLastChangedBy` | `ObjMgmtRecdLastChangedBy` |
-| `ObjMgmtRecdCreationDate` | `ObjMgmtRecdCreationDate` |
-| `ObjMgmtRecdCreatedBy` | `ObjMgmtRecdCreatedBy` |
-| `ObjMgmtRecdObjLastChangedAt` | `ObjMgmtRecdObjLastChangedAt` |
-| `ObjMgmtRecdObjLastChangedBy` | `ObjMgmtRecdObjLastChangedBy` |
-| `ObjMgmtRecdObjIsLockedForChg` | `ObjMgmtRecdObjIsLockedForChg` |
-| `ObjMgmtRecdObjIsBaselined` | `ObjMgmtRecdObjIsBaselined` |
-| `ObjMgmtRecdObjIsPlanned` | `ObjMgmtRecdObjIsPlanned` |
-| `ChgNmbrAlternativeDateCounter` | `ChgNmbrAlternativeDateCounter` |
-| `ChangeNumberLastChgdDateTime` | `ChangeNumberLastChgdDateTime` |
-| `_ChangeMaster` | *Association* |
-| `_ChangeMasterAltDate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |
+| `ChgNmbrAlternativeDateID` |  | |  |  |
+| `SAPObjectTechnicalID` |  | |  |  |
+| `ObjMgmtRecdDescription` |  | |  |  |
+| `ObjMgmtRecdItemUUID` |  | |  |  |
+| `ObjMgmtRecdLastChangedAt` |  | |  |  |
+| `ObjMgmtRecdLastChangedBy` |  | |  |  |
+| `ObjMgmtRecdCreationDate` |  | |  |  |
+| `ObjMgmtRecdCreatedBy` |  | |  |  |
+| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |
+| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |
+| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |
+| `ObjMgmtRecdObjIsBaselined` |  | |  |  |
+| `ObjMgmtRecdObjIsPlanned` |  | |  |  |
+| `ChgNmbrAlternativeDateCounter` |  | |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |
+| `_ChangeMaster` | | ✓ | | |
+| `_ChangeMasterAltDate` | | ✓ | | |
 
 ## Source Code
 

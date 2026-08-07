@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionDateUUID` | `LegalTransactionDateUUID` |
-| `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LglCntntMFromDate` | `LglCntntMFromDate` |
-| `LglCntntMToDate` | `LglCntntMToDate` |
-| `LglCntntMDateType` | `LglCntntMDateType` |
-| `LegalTransactionMandatoryFlag` | `LegalTransactionMandatoryFlag` |
-| `LglCntntMIsIntegRelevant` | `LglCntntMIsIntegRelevant` |
-| `LglCntntMIsAddedByIntegVarbl` | `LglCntntMIsAddedByIntegVarbl` |
-| `_LegalTransaction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionDateUUID` | ✓ | |  |  |
+| `LegalTransactionUUID` |  | |  |  |
+| `LglCntntMFromDate` |  | |  |  |
+| `LglCntntMToDate` |  | |  |  |
+| `LglCntntMDateType` |  | |  |  |
+| `LegalTransactionMandatoryFlag` |  | |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |
+| `_LegalTransaction` | | ✓ | | |
 
 ## Associations
 

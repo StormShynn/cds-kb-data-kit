@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceStrategy` | `strat` |
-| key `Language` | `spras` |
-| `MaintenanceStrategyDesc` | `ktext` |
-| `_MaintenanceStrategy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceStrategy` | ✓ | |  | `strat` |
+| `Language` | ✓ | |  | `spras` |
+| `MaintenanceStrategyDesc` |  | |  | `ktext` |
+| `_MaintenanceStrategy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

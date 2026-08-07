@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityMgmtCtrlKey` | `QualityMgmtCtrlKey` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityMgmtCtrlKey` | ✓ | |  |  |
 
 ## Source Code
 

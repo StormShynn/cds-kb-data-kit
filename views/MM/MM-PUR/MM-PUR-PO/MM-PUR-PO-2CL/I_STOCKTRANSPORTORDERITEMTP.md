@@ -31,75 +31,75 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StockTransportOrder` | `StockTransportOrder` |
-| key `StockTransportOrderItem` | `StockTransportOrderItem` |
-| `STOItemUniqueID` | `STOItemUniqueID` |
-| `StockTransportOrderItemText` | `StockTransportOrderItemText` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `PurchasingDocumentDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `ProductGroup` | `ProductGroup` |
-| `Product` | `Product` |
-| `ProductTypeCode` | `ProductTypeCode` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `CompanyCode` | `CompanyCode` |
-| `Plant` | `Plant` |
-| `StorageLocation` | `StorageLocation` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `IsCompletelyDelivered` | `IsCompletelyDelivered` |
-| `GoodsReceiptIsExpected` | `GoodsReceiptIsExpected` |
-| `OutwardDeliveryIsComplete` | `OutwardDeliveryIsComplete` |
-| `InvoiceIsExpected` | `InvoiceIsExpected` |
-| `UnlimitedOverdeliveryIsAllowed` | `UnlimitedOverdeliveryIsAllowed` |
-| `OverdelivTolrtdLmtRatioInPct` | `OverdelivTolrtdLmtRatioInPct` |
-| `UnderdelivTolrtdLmtRatioInPct` | `UnderdelivTolrtdLmtRatioInPct` |
-| `RequisitionerName` | `RequisitionerName` |
-| `BaseUnit` | `BaseUnit` |
-| `STOItemCategory` | `STOItemCategory` |
-| `ItemVolumeUnit` | `ItemVolumeUnit` |
-| `ItemWeightUnit` | `ItemWeightUnit` |
-| `DeliveryDocumentType` | `DeliveryDocumentType` |
-| `IssuingStorageLocation` | `IssuingStorageLocation` |
-| `IsStatisticalItem` | `IsStatisticalItem` |
-| `PurchasingParentItem` | `PurchasingParentItem` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `NetAmount` | `NetAmount` |
-| `EffectiveAmount` | `EffectiveAmount` |
-| `OrderQuantity` | `OrderQuantity` |
-| `NetPriceAmount` | `NetPriceAmount` |
-| `ItemVolume` | `ItemVolume` |
-| `ItemNetWeight` | `ItemNetWeight` |
-| `ItemGrossWeight` | `ItemGrossWeight` |
-| `MultipleAcctAssgmtDistribution` | `MultipleAcctAssgmtDistribution` |
-| `PartialInvoiceDistribution` | `PartialInvoiceDistribution` |
-| `PartialDeliveryIsAllowed` | `PartialDeliveryIsAllowed` |
-| `GoodsReceiptDurationInDays` | `GoodsReceiptDurationInDays` |
-| `InventoryUsabilityCode` | `InventoryUsabilityCode` |
-| `PurgDocSubitemCategory` | `PurgDocSubitemCategory` |
-| `StockTransportOrderType` | `StockTransportOrderType` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `SupplierConfirmationControlKey` | `SupplierConfirmationControlKey` |
-| `Subcontractor` | `Subcontractor` |
-| `Customer` | `Customer` |
-| `Batch` | `Batch` |
-| `ValuationType` | `ValuationType` |
-| `ValuationCategory` | `ValuationCategory` |
-| `_StockTransportOrder` | *Association* |
-| `_STOScheduleLine` | *Association* |
-| `_STOShipping` | *Association* |
-| `_STOItemNote` | *Association* |
-| `_STOItemPricingElement` | *Association* |
-| `_STOAccountAssignment` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Product` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_Plant` | *Association* |
-| `_PurgDocumentItemCategory` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_ValuationCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |
+| `StockTransportOrderItem` | ✓ | |  |  |
+| `STOItemUniqueID` |  | |  |  |
+| `StockTransportOrderItemText` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductTypeCode` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `OutwardDeliveryIsComplete` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `RequisitionerName` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `STOItemCategory` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `DeliveryDocumentType` |  | |  |  |
+| `IssuingStorageLocation` |  | |  |  |
+| `IsStatisticalItem` |  | |  |  |
+| `PurchasingParentItem` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `EffectiveAmount` |  | |  |  |
+| `OrderQuantity` |  | |  |  |
+| `NetPriceAmount` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |
+| `PartialInvoiceDistribution` |  | |  |  |
+| `PartialDeliveryIsAllowed` |  | |  |  |
+| `GoodsReceiptDurationInDays` |  | |  |  |
+| `InventoryUsabilityCode` |  | |  |  |
+| `PurgDocSubitemCategory` |  | |  |  |
+| `StockTransportOrderType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |
+| `Subcontractor` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Batch` |  | |  |  |
+| `ValuationType` |  | |  |  |
+| `ValuationCategory` |  | |  |  |
+| `_StockTransportOrder` | | ✓ | | |
+| `_STOScheduleLine` | | ✓ | | |
+| `_STOShipping` | | ✓ | | |
+| `_STOItemNote` | | ✓ | | |
+| `_STOItemPricingElement` | | ✓ | | |
+| `_STOAccountAssignment` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_PurgDocumentItemCategory` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_ValuationCategoryText` | | ✓ | | |
 
 ## Source Code
 

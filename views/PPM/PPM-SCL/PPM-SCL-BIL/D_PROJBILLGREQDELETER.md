@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Status` | `boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Status` |  | |  | `boolean` |
 
 ## Source Code
 

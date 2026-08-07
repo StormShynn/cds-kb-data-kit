@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OvrlItmGdsMvtIncompletionSts` | `cast(left(dd07l.domvalue_l, 1 ) as uvwak_su preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OvrlItmGdsMvtIncompletionSts` | ✓ | |  | `cast(left(dd07l.domvalue_l, 1 ) as uvwak_su preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

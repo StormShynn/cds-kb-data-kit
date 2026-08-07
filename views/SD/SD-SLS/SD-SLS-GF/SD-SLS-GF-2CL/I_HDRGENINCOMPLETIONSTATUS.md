@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HdrGeneralIncompletionStatus` | `cast( substring (dd07l.domvalue_l, 1, 1) as hdr_general_incompltn_status preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HdrGeneralIncompletionStatus` | ✓ | |  | `cast( substring (dd07l.domvalue_l, 1, 1) as hdr_general_incompltn_status preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentRunDate` | `PaymentRunDate` |
-| key `PaymentRunID` | `PaymentRunID` |
-| `ProposalRunIsCarriedOut` | `ProposalRunIsCarriedOut` |
-| `PaymentProposalIsRevised` | `PaymentProposalIsRevised` |
-| `PaymentRunIsCarriedOut` | `PaymentRunIsCarriedOut` |
-| `PaytRunDocCreationIsStarted` | `PaytRunDocCreationIsStarted` |
-| `PaymentRunIsDeleted` | `PaymentRunIsDeleted` |
-| `NumberOfCreatedPayments` | `NumberOfCreatedPayments` |
-| `NumberOfPostedPayments` | `NumberOfPostedPayments` |
-| `ToNetDueDate` | `ToNetDueDate` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `BranchCompanyCodeAssignment` | `BranchCompanyCodeAssignment` |
-| `BusinessPlace` | `BusinessPlace` |
-| `PaytRunIsForDrctDebitPreNotif` | `PaytRunIsForDrctDebitPreNotif` |
-| `ReferencePaymentRunDate` | `ReferencePaymentRunDate` |
-| `ReferencePaymentRunID` | `ReferencePaymentRunID` |
-| `WrkflwScenIsActv` | `WrkflwScenIsActv` |
-| `_PaymentProposalPayment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentRunDate` | ✓ | |  |  |
+| `PaymentRunID` | ✓ | |  |  |
+| `ProposalRunIsCarriedOut` |  | |  |  |
+| `PaymentProposalIsRevised` |  | |  |  |
+| `PaymentRunIsCarriedOut` |  | |  |  |
+| `PaytRunDocCreationIsStarted` |  | |  |  |
+| `PaymentRunIsDeleted` |  | |  |  |
+| `NumberOfCreatedPayments` |  | |  |  |
+| `NumberOfPostedPayments` |  | |  |  |
+| `ToNetDueDate` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `BranchCompanyCodeAssignment` |  | |  |  |
+| `BusinessPlace` |  | |  |  |
+| `PaytRunIsForDrctDebitPreNotif` |  | |  |  |
+| `ReferencePaymentRunDate` |  | |  |  |
+| `ReferencePaymentRunID` |  | |  |  |
+| `WrkflwScenIsActv` |  | |  |  |
+| `_PaymentProposalPayment` | | ✓ | | |
 
 ## Associations
 

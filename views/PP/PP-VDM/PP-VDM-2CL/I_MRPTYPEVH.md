@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPType` | `MRPType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PartnerCompany` | `P_GLAccountInCompany.PartnerCompany` |
-| key `GLAccount` | `P_GLAccountInCompany.GLAccount` |
-| `AuthorizationGroup` | `P_GLAccountInCompany.AuthorizationGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PartnerCompany` | ✓ | |  |  |
+| `GLAccount` | ✓ | |  |  |
+| `AuthorizationGroup` |  | |  |  |
 
 ## Source Code
 

@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationGroup` | `_Source.ConsolidationGroup` |
-| key `ConsolidationUnit` | `_Source.ConsolidationUnit` |
-| key `ConsolidationVersion` | `_Source.ConsolidationVersion` |
-| key `GroupStrucFromFiscalYearPeriod` | `_Source.GroupStrucFromFiscalYearPeriod` |
-| `GroupStrucToFiscalYearPeriod` | `_Source.GroupStrucToFiscalYearPeriod` |
-| `FirstCnsldtnFiscalYearPeriod` | `_Source.FirstCnsldtnFiscalYearPeriod` |
-| `FirstCnsldtnIsAtEndOfPeriod` | `_Source.FirstCnsldtnIsAtEndOfPeriod` |
-| `DivestitureFiscalYearPeriod` | `_Source.DivestitureFiscalYearPeriod` |
-| `DivestitureIsAtBeginOfPeriod` | `_Source.DivestitureIsAtBeginOfPeriod` |
-| `DivestitureIsDueToMerger` | `_Source.DivestitureIsDueToMerger` |
-| `ETag` | `_Source.ETag` |
-| `_CnsldtnVersion` | *Association* |
-| `_CnsldtnGroup` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnGroupStrucMethAssgmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |
+| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |
+| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |
+| `GroupStrucFromFiscalYearPeriod` | ✓ | | `_Source` | `GroupStrucFromFiscalYearPeriod` |
+| `GroupStrucToFiscalYearPeriod` |  | | `_Source` | `GroupStrucToFiscalYearPeriod` |
+| `FirstCnsldtnFiscalYearPeriod` |  | | `_Source` | `FirstCnsldtnFiscalYearPeriod` |
+| `FirstCnsldtnIsAtEndOfPeriod` |  | | `_Source` | `FirstCnsldtnIsAtEndOfPeriod` |
+| `DivestitureFiscalYearPeriod` |  | | `_Source` | `DivestitureFiscalYearPeriod` |
+| `DivestitureIsAtBeginOfPeriod` |  | | `_Source` | `DivestitureIsAtBeginOfPeriod` |
+| `DivestitureIsDueToMerger` |  | | `_Source` | `DivestitureIsDueToMerger` |
+| `ETag` |  | | `_Source` | `ETag` |
+| `_CnsldtnVersion` | | ✓ | | |
+| `_CnsldtnGroup` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnGroupStrucMethAssgmt` | | ✓ | | |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REGnrcRentalObjOwnershipID` | `ownershipid` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REGnrcRentalObjOwnershipID` | ✓ | |  | `ownershipid` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

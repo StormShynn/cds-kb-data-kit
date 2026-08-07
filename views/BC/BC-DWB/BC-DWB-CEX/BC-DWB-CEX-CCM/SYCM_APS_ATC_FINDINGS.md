@@ -27,26 +27,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `project_id` | `project_id` |
-| key `item_id` | `item_id` |
-| `result_id` | `display_id` |
-| `priority` | `cast(priority as I_SATC_API_PRIORITY preserving type)` |
-| `check_title` | `check_title` |
-| `check_message` | `check_message` |
-| `obj_type` | `obj_type` |
-| `obj_name` | `obj_name` |
-| `package_name` | `package_name` |
-| `person_responsible` | `person_responsible` |
-| `has_quickfixes` | `cast(has_quickfixes as I_SATC_API_FNDQF preserving type)` |
-| `application_component` | `application_component` |
-| `referenced_object_type` | `referenced_object_type` |
-| `referenced_object_name` | `referenced_object_name` |
-| `usage_information` | `usage_information` |
-| `scope_information` | `scope_information` |
-| `_project` | *Association* |
-| `_atc_finding` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `project_id` | ✓ | |  |  |
+| `item_id` | ✓ | |  |  |
+| `result_id` |  | |  | `display_id` |
+| `priority` |  | |  | `cast(priority as I_SATC_API_PRIORITY preserving type)` |
+| `check_title` |  | |  |  |
+| `check_message` |  | |  |  |
+| `obj_type` |  | |  |  |
+| `obj_name` |  | |  |  |
+| `package_name` |  | |  |  |
+| `person_responsible` |  | |  |  |
+| `has_quickfixes` |  | |  | `cast(has_quickfixes as I_SATC_API_FNDQF preserving type)` |
+| `application_component` |  | |  |  |
+| `referenced_object_type` |  | |  |  |
+| `referenced_object_name` |  | |  |  |
+| `usage_information` |  | |  |  |
+| `scope_information` |  | |  |  |
+| `_project` | | ✓ | | |
+| `_atc_finding` | | ✓ | | |
 
 ## Associations
 

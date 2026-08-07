@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IHBObjectUUID` | `IHBObjectUUID` |
-| `IHBObjectReferenceUUID` | `IHBObjectReferenceUUID` |
-| `IHBObjectType` | `IHBObjectType` |
-| `IHBObjectCategory` | `IHBObjectCategory` |
-| `IHBObjectKeyUUID` | `IHBObjectKeyUUID` |
-| `IHBReleaseStatus` | `IHBReleaseStatus` |
-| `IHBObjectApprovalActivity` | `IHBObjectApprovalActivity` |
-| `IHBObjectDeadlineDateTime` | `IHBObjectDeadlineDateTime` |
-| `IHBBankArea` | `IHBBankArea` |
-| `IHBObjectLevel` | `IHBObjectLevel` |
-| `IHBObjectReleaseDateTime` | `IHBObjectReleaseDateTime` |
-| `IHBObjectReleasedByUser` | `IHBObjectReleasedByUser` |
-| `InhouseBankGroupID` | `InhouseBankGroupID` |
-| `IHBObjectTotalChangedDateTime` | `IHBObjectTotalChangedDateTime` |
-| `IHBObjectCreatedDateTime` | `IHBObjectCreatedDateTime` |
-| `IHBObjectCreatedByUser` | `IHBObjectCreatedByUser` |
-| `IHBObjectChangedDateTime` | `IHBObjectChangedDateTime` |
-| `IHBObjectChangedByUser` | `IHBObjectChangedByUser` |
-| `_IHBGroupAssignmentTP` | *Association* |
-| `_IHBAcctIntrstCompnTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IHBObjectUUID` | ✓ | |  |  |
+| `IHBObjectReferenceUUID` |  | |  |  |
+| `IHBObjectType` |  | |  |  |
+| `IHBObjectCategory` |  | |  |  |
+| `IHBObjectKeyUUID` |  | |  |  |
+| `IHBReleaseStatus` |  | |  |  |
+| `IHBObjectApprovalActivity` |  | |  |  |
+| `IHBObjectDeadlineDateTime` |  | |  |  |
+| `IHBBankArea` |  | |  |  |
+| `IHBObjectLevel` |  | |  |  |
+| `IHBObjectReleaseDateTime` |  | |  |  |
+| `IHBObjectReleasedByUser` |  | |  |  |
+| `InhouseBankGroupID` |  | |  |  |
+| `IHBObjectTotalChangedDateTime` |  | |  |  |
+| `IHBObjectCreatedDateTime` |  | |  |  |
+| `IHBObjectCreatedByUser` |  | |  |  |
+| `IHBObjectChangedDateTime` |  | |  |  |
+| `IHBObjectChangedByUser` |  | |  |  |
+| `_IHBGroupAssignmentTP` | | ✓ | | |
+| `_IHBAcctIntrstCompnTP` | | ✓ | | |
 
 ## Source Code
 

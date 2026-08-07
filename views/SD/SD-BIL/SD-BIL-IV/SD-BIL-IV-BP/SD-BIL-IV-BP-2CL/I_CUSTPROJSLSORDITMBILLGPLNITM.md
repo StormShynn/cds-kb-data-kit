@@ -28,37 +28,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerProject` | `CustProjSlsOrdItmBillgPln.CustomerProject` |
-| key `SalesOrderItem` | `CustProjSlsOrdItmBillgPln.SalesOrderItem` |
-| key `BillingPlan` | `cast( CustProjSlsOrdItmBillgPln.BillingPlan as fplnr preserving type )` |
-| key `BillingPlanItem` | `BillingPlanDueDate.BillingPlanItem` |
-| `BillingPlanUsageCategory` | `CustProjSlsOrdItmBillgPln.BillingPlanUsageCategory` |
-| `SalesOrder` | `CustProjSlsOrdItmBillgPln.SalesOrder` |
-| `BillingPlanBillingDate` | `BillingPlanDueDate.BillingPlanBillingDate` |
-| `BillingPlanRelatedBillgStatus` | `BillingPlanDueDate.BillingPlanRelatedBillgStatus` |
-| `BillgPlnDteCorrectionRfndType` | `BillingPlanDueDate.BillgPlnDteCorrectionRfndType` |
-| `BillingPlanAmount` | `BillingPlanDueDate.BillingPlanAmount` |
-| `TransactionCurrency` | `BillingPlanDueDate.TransactionCurrency` |
-| `BillingPlanRule` | `BillingPlanDueDate.BillingPlanBillingRule` |
-| `PostponementReason` | `BillingPlanDueDate.PostponementReason` |
-| `BillingPlanItemUsage` | `BillingPlanDueDate.BillingPlanItemUsage` |
-| `BillingPlanItemUsage_2` | `BillingPlanDueDate.BillingPlanItemUsage_2` |
-| `BillingPlanItemDescription` | `BillingPlanDueDate.BillingPlanItemDescription` |
-| `BillingPlanServiceStartDate` | `BillingPlanDueDate.BillingPlanServiceStartDate` |
-| `BillingPlanServiceEndDate` | `BillingPlanDueDate.BillingPlanServiceEndDate` |
-| `SalesOrderType` | `_SalesOrder.SalesOrderType` |
-| `OrganizationDivision` | `_SalesOrder.OrganizationDivision` |
-| `SalesOrganization` | `_SalesOrder.SalesOrganization` |
-| `DistributionChannel` | `_SalesOrder.DistributionChannel` |
-| `_SalesOrder` | *Association* |
-| `_BillingPlanRelatedBillgStatus` | *Association* |
-| `_BillgPlnDteCorrectionRfndType` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_BillingPlanRule` | *Association* |
-| `_BillingPlanItemUsage` | *Association* |
-| `_BillgPlanItemUsage_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerProject` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `BillingPlan` | ✓ | |  | `cast( CustProjSlsOrdItmBillgPln.BillingPlan as fplnr preserving type )` |
+| `BillingPlanItem` | ✓ | |  |  |
+| `BillingPlanUsageCategory` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `BillingPlanBillingDate` |  | |  |  |
+| `BillingPlanRelatedBillgStatus` |  | |  |  |
+| `BillgPlnDteCorrectionRfndType` |  | |  |  |
+| `BillingPlanAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `BillingPlanRule` |  | |  | `BillingPlanBillingRule` |
+| `PostponementReason` |  | |  |  |
+| `BillingPlanItemUsage` |  | |  |  |
+| `BillingPlanItemUsage_2` |  | |  |  |
+| `BillingPlanItemDescription` |  | |  |  |
+| `BillingPlanServiceStartDate` |  | |  |  |
+| `BillingPlanServiceEndDate` |  | |  |  |
+| `SalesOrderType` |  | | `_SalesOrder` | `SalesOrderType` |
+| `OrganizationDivision` |  | | `_SalesOrder` | `OrganizationDivision` |
+| `SalesOrganization` |  | | `_SalesOrder` | `SalesOrganization` |
+| `DistributionChannel` |  | | `_SalesOrder` | `DistributionChannel` |
+| `_SalesOrder` | | ✓ | | |
+| `_BillingPlanRelatedBillgStatus` | | ✓ | | |
+| `_BillgPlnDteCorrectionRfndType` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_BillingPlanRule` | | ✓ | | |
+| `_BillingPlanItemUsage` | | ✓ | | |
+| `_BillgPlanItemUsage_2` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocumentType` | `auart` |
-| key `Language` | `spras` |
-| `SalesDocumentTypeLangDepdnt` | `auart_spr` |
-| `_SalesDocumentType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentType` | ✓ | |  | `auart` |
+| `Language` | ✓ | |  | `spras` |
+| `SalesDocumentTypeLangDepdnt` |  | |  | `auart_spr` |
+| `_SalesDocumentType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

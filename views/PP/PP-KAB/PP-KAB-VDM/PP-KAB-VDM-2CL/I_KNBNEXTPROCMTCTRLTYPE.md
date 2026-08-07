@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KnbnCtrlCycExtProcmtCtrlType` | `cast(substring(domvalue_l, 1, 1) as pksaf)` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KnbnCtrlCycExtProcmtCtrlType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pksaf)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

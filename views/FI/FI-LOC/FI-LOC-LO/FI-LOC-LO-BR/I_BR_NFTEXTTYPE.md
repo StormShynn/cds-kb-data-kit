@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NFTextType` | `cast( substring(domvalue_l, 1, 1) as logbr_nf_texttype preserving type )` |
-| `_BR_NFTextTypeDesc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NFTextType` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as logbr_nf_texttype preserving type )` |
+| `_BR_NFTextTypeDesc` | | ✓ | | |
 
 ## Associations
 

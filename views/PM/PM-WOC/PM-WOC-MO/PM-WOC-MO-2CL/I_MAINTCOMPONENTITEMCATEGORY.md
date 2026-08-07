@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintComponentItemCategory` | `postp` |
-| `MaterialIsInventoryManaged` | `t418.kzbsf` |
-| `ItemCatRequiresMaterialEntry` | `t418.matin` |
-| `ItemIsVariableSized` | `t418.rtpos` |
-| `MaterialIsTextItem` | `t418.txpos` |
-| `ItemCategoryControlKey` | `t418.pstrg` |
-| `ItemIsIntraMaterial` | `t418.inpos` |
-| `ItemCatIsUsedForEnhancedLimits` | `t418.itemcatisusedforenhancedlimits` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintComponentItemCategory` | ✓ | |  | `postp` |
+| `MaterialIsInventoryManaged` |  | |  | `kzbsf` |
+| `ItemCatRequiresMaterialEntry` |  | |  | `matin` |
+| `ItemIsVariableSized` |  | |  | `rtpos` |
+| `MaterialIsTextItem` |  | |  | `txpos` |
+| `ItemCategoryControlKey` |  | |  | `pstrg` |
+| `ItemIsIntraMaterial` |  | |  | `inpos` |
+| `ItemCatIsUsedForEnhancedLimits` |  | |  | `itemcatisusedforenhancedlimits` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

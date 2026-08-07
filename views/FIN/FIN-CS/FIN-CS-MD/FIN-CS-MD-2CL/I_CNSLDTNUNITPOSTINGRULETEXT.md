@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_UnitAttributeValueT.Language` |
-| key `ConsolidationUnitPostingRule` | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitpostingrule preserving type )` |
-| `CnsldtnUnitPostingRuleText` | `_UnitAttributeValueT.CnsldtnUnitAttribValText` |
-| `CnsldtnUnitPostingRuleLongText` | `_UnitAttributeValueT.CnsldtnUnitAttribValLongText` |
-| `_CnsldtnUnitPostingRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_UnitAttributeValueT` | `Language` |
+| `ConsolidationUnitPostingRule` | ✓ | |  | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitpostingrule preserving type )` |
+| `CnsldtnUnitPostingRuleText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValText` |
+| `CnsldtnUnitPostingRuleLongText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValLongText` |
+| `_CnsldtnUnitPostingRule` | | ✓ | | |
 
 ## Associations
 

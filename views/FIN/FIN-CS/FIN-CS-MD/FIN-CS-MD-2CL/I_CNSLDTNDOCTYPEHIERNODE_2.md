@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationDocTypeHierarchy` | `cast(_HierarchyNode.hryid as fincs_doctypehierarchy preserving type )` |
-| key `HierarchyNode` | `cast(_HierarchyNode.hrynode as fincs_hierarchynode preserving type )` |
-| key `ValidityEndDate` | `cast(_HierarchyNode.hryvalto as fincs_validityenddate preserving type )` |
-| `ValidityStartDate` | `cast(_HierarchyNode.hryvalfrom as fincs_validitystartdate preserving type )` |
-| `ParentNode` | `cast(_HierarchyNode.parnode as fincs_parentnode preserving type )` |
-| `HierarchyVersion` | `cast(_HierarchyNode.hryver as fincs_hierarchyversion preserving type )` |
-| `ConsolidationDocumentType` | `cast( left(_HierarchyNode.leafvalue, 2) as fincs_documenttype preserving type )` |
-| `HierarchyNodeSequence` | `_HierarchyNode.hryseqnbr` |
-| `HierarchyNodeLevel` | `_HierarchyNode.hrylevel` |
-| `NodeType` | `_HierarchyNode.nodetype` |
-| `_Text` | *Association* |
-| `_Hierarchy` | *Association* |
-| `_DocumentType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationDocTypeHierarchy` | ✓ | |  | `cast(_HierarchyNode.hryid as fincs_doctypehierarchy preserving type )` |
+| `HierarchyNode` | ✓ | |  | `cast(_HierarchyNode.hrynode as fincs_hierarchynode preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `cast(_HierarchyNode.hryvalto as fincs_validityenddate preserving type )` |
+| `ValidityStartDate` |  | |  | `cast(_HierarchyNode.hryvalfrom as fincs_validitystartdate preserving type )` |
+| `ParentNode` |  | |  | `cast(_HierarchyNode.parnode as fincs_parentnode preserving type )` |
+| `HierarchyVersion` |  | |  | `cast(_HierarchyNode.hryver as fincs_hierarchyversion preserving type )` |
+| `ConsolidationDocumentType` |  | |  | `cast( left(_HierarchyNode.leafvalue, 2) as fincs_documenttype preserving type )` |
+| `HierarchyNodeSequence` |  | | `_HierarchyNode` | `hryseqnbr` |
+| `HierarchyNodeLevel` |  | | `_HierarchyNode` | `hrylevel` |
+| `NodeType` |  | | `_HierarchyNode` | `nodetype` |
+| `_Text` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
+| `_DocumentType` | | ✓ | | |
 
 ## Associations
 

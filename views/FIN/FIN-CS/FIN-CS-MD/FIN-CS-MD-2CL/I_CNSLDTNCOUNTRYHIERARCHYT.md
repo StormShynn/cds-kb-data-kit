@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `ConsolidationCountryHierarchy` | `cast(_HierarchyText.UniversalHierarchy as fincs_countryhierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnCountryHierarchyText` | `cast(_HierarchyText.UniversalHierarchyText as fincs_countryhierarchytext preserving type )` |
-| `_Hierarchy` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `ConsolidationCountryHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_countryhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnCountryHierarchyText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_countryhierarchytext preserving type )` |
+| `_Hierarchy` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

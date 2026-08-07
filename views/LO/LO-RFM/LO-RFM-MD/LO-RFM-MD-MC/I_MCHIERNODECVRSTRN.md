@@ -28,33 +28,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MrchdsCategoryHierarchyNode` | `cast(MrchdsCatHierNode.class as rfm_mrchdcathiernode preserving type )` |
-| key `Characteristic` | `Characteristic.atnam` |
-| key `ClfnCharcValuePositionNumber` | `CharcValRestriction.CharcValuePositionNumber` |
-| `CharcInternalID` | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |
-| `ClfnObjectID` | `CharcValRestriction.ClfnObjectID` |
-| `CharcValue` | `CharcValRestriction.CharcValue` |
-| `CharcFromNumericValue` | `CharcValRestriction.CharcFromNumericValue` |
-| `CharcFromNumericValueUnit` | `CharcValRestriction.CharcFromNumericValueUnit` |
-| `CharcToNumericValue` | `CharcValRestriction.CharcToNumericValue` |
-| `CharcToNumericValueUnit` | `CharcValRestriction.CharcToNumericValueUnit` |
-| `CharcValueIntervalType` | `CharcValRestriction.CharcValueIntervalType` |
-| `IsDeleted` | `CharcValRestriction.IsDeleted` |
-| `CharcFromDecimalValue` | `CharcValRestriction.CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `CharcValRestriction.CharcToDecimalValue` |
-| `CharcFromAmount` | `CharcValRestriction.CharcFromAmount` |
-| `CharcToAmount` | `CharcValRestriction.CharcToAmount` |
-| `Currency` | `CharcValRestriction.Currency` |
-| `CharcFromDate` | `CharcValRestriction.CharcFromDate` |
-| `CharcToDate` | `CharcValRestriction.CharcToDate` |
-| `CharcFromTime` | `CharcValRestriction.CharcFromTime` |
-| `CharcToTime` | `CharcValRestriction.CharcToTime` |
-| `_Characteristic` | *Association* |
-| `_CharacteristicDesc` | *Association* |
-| `_MrchdsCategoryHierarchyNode` | *Association* |
-| `_MrchdsCatHierNodeCharc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MrchdsCategoryHierarchyNode` | ✓ | |  | `cast(MrchdsCatHierNode.class as rfm_mrchdcathiernode preserving type )` |
+| `Characteristic` | ✓ | |  | `atnam` |
+| `ClfnCharcValuePositionNumber` | ✓ | |  | `CharcValuePositionNumber` |
+| `CharcInternalID` |  | |  | `cast (Characteristic.atinn as atinn_no_conv preserving type )` |
+| `ClfnObjectID` |  | |  |  |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcValueIntervalType` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `_Characteristic` | | ✓ | | |
+| `_CharacteristicDesc` | | ✓ | | |
+| `_MrchdsCategoryHierarchyNode` | | ✓ | | |
+| `_MrchdsCatHierNodeCharc` | | ✓ | | |
 
 ## Associations
 

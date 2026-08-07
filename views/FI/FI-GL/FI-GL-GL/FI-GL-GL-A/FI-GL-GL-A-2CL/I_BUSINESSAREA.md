@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessArea` | `gsber` |
-| `_Text` | *Association* |
-| `_BusinessAreaHierNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessArea` | ✓ | |  | `gsber` |
+| `_Text` | | ✓ | | |
+| `_BusinessAreaHierNode` | | ✓ | | |
 
 ## Associations
 

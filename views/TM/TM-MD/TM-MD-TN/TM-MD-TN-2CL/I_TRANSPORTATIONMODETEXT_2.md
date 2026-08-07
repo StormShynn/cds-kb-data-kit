@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationMode` | `cast(vktra as /scmtms/vdm_tor_trmodcode preserving type )` |
-| key `Language` | `spras` |
-| `TransportationModeDesc` | `cast (bezei as /scmtms/vdm_tor_trmodcode_desc preserving type )` |
-| `_Language` | *Association* |
-| `_TransportationMode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationMode` | ✓ | |  | `cast(vktra as /scmtms/vdm_tor_trmodcode preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `TransportationModeDesc` |  | |  | `cast (bezei as /scmtms/vdm_tor_trmodcode_desc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_TransportationMode` | | ✓ | | |
 
 ## Associations
 

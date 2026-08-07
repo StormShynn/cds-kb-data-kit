@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnUnitDataCollection` | `cast( _UnitAttributeValue.CnsldtnUnitAttributeValue as fincs_unitdatacollection preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnUnitDataCollection` | ✓ | |  | `cast( _UnitAttributeValue.CnsldtnUnitAttributeValue as fincs_unitdatacollection preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

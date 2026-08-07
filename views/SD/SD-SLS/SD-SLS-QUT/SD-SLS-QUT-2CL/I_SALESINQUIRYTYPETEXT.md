@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesInquiryType` | `SalesInquiryType.SalesInquiryType` |
-| key `Language` | `Text.Language` |
-| `SalesInquiryTypeName` | `cast( Text.SalesDocumentTypeName as sd_sales_inquiry_type_name preserving type )` |
-| `_SalesInquiryType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesInquiryType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SalesInquiryTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_sales_inquiry_type_name preserving type )` |
+| `_SalesInquiryType` | | ✓ | | |
 
 ## Associations
 

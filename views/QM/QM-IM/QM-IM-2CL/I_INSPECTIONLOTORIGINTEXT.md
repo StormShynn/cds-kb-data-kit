@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLotOrigin` | `tq31t.herkunft` |
-| key `Language` | `tq31t.sprache` |
-| `InspectionLotOriginText` | `tq31t.herktxt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLotOrigin` | ✓ | |  | `herkunft` |
+| `Language` | ✓ | |  | `sprache` |
+| `InspectionLotOriginText` |  | |  | `herktxt` |
 
 ## Source Code
 

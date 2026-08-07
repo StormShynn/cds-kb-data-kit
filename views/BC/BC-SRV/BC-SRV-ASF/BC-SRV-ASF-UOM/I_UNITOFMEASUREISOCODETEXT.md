@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `UnitOfMeasureISOCode` | `t006j.isocode` |
-| `UnitOfMeasureISOCodeName` | `t006j.isotxt` |
-| `_ISOCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` |
+| `UnitOfMeasureISOCodeName` |  | |  | `isotxt` |
+| `_ISOCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

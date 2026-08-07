@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CaseType` | `cast( casetype as scmgcase_type preserving type )` |
-| key `DisputeCaseRootCause` | `cast( root_ccode as udm_root_ccode preserving type )` |
-| `_CaseType` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CaseType` | ✓ | |  | `cast( casetype as scmgcase_type preserving type )` |
+| `DisputeCaseRootCause` | ✓ | |  | `cast( root_ccode as udm_root_ccode preserving type )` |
+| `_CaseType` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterTypeCode` | `text.ProductionResourceType` |
-| key `WorkCenterInternalID` | `text.ProductionResourceInternalID` |
-| key `Language` | `cast(text.Language as spras preserving type)` |
-| `WorkCenterText` | `cast(text.ProductionResourceText as workcentertext preserving type)` |
-| `Plant` | `_WorkCenter.Plant` |
-| `WorkCenterCategoryCode` | `_WorkCenter.WorkCenterCategoryCode` |
-| `_WorkCenterType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterTypeCode` | ✓ | |  | `ProductionResourceType` |
+| `WorkCenterInternalID` | ✓ | |  | `ProductionResourceInternalID` |
+| `Language` | ✓ | |  | `cast(text.Language as spras preserving type)` |
+| `WorkCenterText` |  | |  | `cast(text.ProductionResourceText as workcentertext preserving type)` |
+| `Plant` |  | | `_WorkCenter` | `Plant` |
+| `WorkCenterCategoryCode` |  | | `_WorkCenter` | `WorkCenterCategoryCode` |
+| `_WorkCenterType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

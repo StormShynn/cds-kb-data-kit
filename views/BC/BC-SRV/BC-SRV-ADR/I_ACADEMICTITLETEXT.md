@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AcademicTitle` | `title_key` |
-| key `Language` | `langu` |
-| `AcademicTitleName` | `title_dscr` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AcademicTitle` | ✓ | |  | `title_key` |
+| `Language` | ✓ | |  | `langu` |
+| `AcademicTitleName` |  | |  | `title_dscr` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

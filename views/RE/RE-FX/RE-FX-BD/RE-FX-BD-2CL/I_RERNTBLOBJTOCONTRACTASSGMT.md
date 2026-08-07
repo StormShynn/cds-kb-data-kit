@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REStatusObjectSource` | `_REObjectAssgmt.REStatusObjectTarget` |
-| key `REObjectAssignmentType` | `_REObjectAssgmt.REObjectAssignmentType` |
-| key `CompanyCode` | `_RealEstateContract.CompanyCode` |
-| key `RealEstateContract` | `_RealEstateContract.RealEstateContract` |
-| key `ValidityStartEndDateValue` | `cast(concat(_REObjectAssgmt.ValidityStartDate, _REObjectAssgmt.ValidityEndDate ) as recadateperiod preserving type )` |
-| key `RealEstateRentableObjectUUID` | `_RERentableObject.RealEstateRentableObjectUUID` |
-| `ValidityStartDate` | `case when _REObjectAssgmt.ValidityStartDate > _RealEstateContract.ContractStartDate then cast( coalesce(_REObjectAssgmt.ValidityStartDate, '00000000') as rebdvdmvalidfrom preserving type ) when _REObjectAssgmt._REObjectTypeDetails._RERentableObject.ValidityStartDate > _RealEstateContract.ContractStartDate then _REObjectAssgmt._REObjectTypeDetails._RERentableObject.ValidityStartDate else _RealEstateContract.ContractStartDate end` |
-| `REStatusObjectTarget` | `_REObjectAssgmt.REStatusObjectSource` |
-| `ValidityEndDate` | `case when _REObjectAssgmt.ValidityEndDate < _RealEstateContract.ContractEndDate then cast( coalesce(_REObjectAssgmt.ValidityEndDate, '99991231') as rebdvdmvalidto preserving type ) when _REObjectAssgmt._REObjectTypeDetails._RERentableObject.ValidityEndDate < _RealEstateContract.ContractEndDate then _REObjectAssgmt._REObjectTypeDetails._RERentableObject.ValidityEndDate else _RealEstateContract.ContractEndDate end` |
-| `REOnlyInfoAssgmt` | `_REObjectAssgmt.REOnlyInfoAssgmt` |
-| `REStatusObjectSourceIsArchived` | `_REObjectAssgmt.REStatusObjectSourceIsArchived` |
-| `REGenerationType` | `_REObjectAssgmt.REGenerationType` |
-| `REIsMainAsset` | `_REObjectAssgmt.REIsMainAsset` |
-| `REAssignmentHasMultiple` | `_REObjectAssgmt.REAssignmentHasMultiple` |
-| `REObjectPossessionStartDate` | `_REObjectAssgmt.REObjectPossessionStartDate` |
-| `REObjectPossessionEndDate` | `_REObjectAssgmt.REObjectPossessionEndDate` |
-| `InternalRealEstateNumber` | `_RealEstateContract.InternalRealEstateNumber` |
-| `_RERentableObjectData` | *Association* |
-| `_REContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REStatusObjectSource` | ✓ | | `_REObjectAssgmt` | `REStatusObjectTarget` |
+| `REObjectAssignmentType` | ✓ | | `_REObjectAssgmt` | `REObjectAssignmentType` |
+| `CompanyCode` | ✓ | | `_RealEstateContract` | `CompanyCode` |
+| `RealEstateContract` | ✓ | | `_RealEstateContract` | `RealEstateContract` |
+| `ValidityStartEndDateValue` | ✓ | |  | `cast(concat(_REObjectAssgmt.ValidityStartDate, _REObjectAssgmt.ValidityEndDate ) as recadateperiod preserving type )` |
+| `RealEstateRentableObjectUUID` | ✓ | | `_RERentableObject` | `RealEstateRentableObjectUUID` |
+| `ValidityStartDate` |  | |  | `case when _REObjectAssgmt.ValidityStartDate > _RealEstateContract.ContractStartDate then cast( coalesce(_REObjectAssgmt.ValidityStartDate, '00000000') as rebdvdmvalidfrom preserving type ) when _REObjectAssgmt._REObjectTypeDetails._RERentableObject.ValidityStartDate > _RealEstateContract.ContractStartDate then _REObjectAssgmt._REObjectTypeDetails._RERentableObject.ValidityStartDate else _RealEstateContract.ContractStartDate end` |
+| `REStatusObjectTarget` |  | | `_REObjectAssgmt` | `REStatusObjectSource` |
+| `ValidityEndDate` |  | |  | `case when _REObjectAssgmt.ValidityEndDate < _RealEstateContract.ContractEndDate then cast( coalesce(_REObjectAssgmt.ValidityEndDate, '99991231') as rebdvdmvalidto preserving type ) when _REObjectAssgmt._REObjectTypeDetails._RERentableObject.ValidityEndDate < _RealEstateContract.ContractEndDate then _REObjectAssgmt._REObjectTypeDetails._RERentableObject.ValidityEndDate else _RealEstateContract.ContractEndDate end` |
+| `REOnlyInfoAssgmt` |  | | `_REObjectAssgmt` | `REOnlyInfoAssgmt` |
+| `REStatusObjectSourceIsArchived` |  | | `_REObjectAssgmt` | `REStatusObjectSourceIsArchived` |
+| `REGenerationType` |  | | `_REObjectAssgmt` | `REGenerationType` |
+| `REIsMainAsset` |  | | `_REObjectAssgmt` | `REIsMainAsset` |
+| `REAssignmentHasMultiple` |  | | `_REObjectAssgmt` | `REAssignmentHasMultiple` |
+| `REObjectPossessionStartDate` |  | | `_REObjectAssgmt` | `REObjectPossessionStartDate` |
+| `REObjectPossessionEndDate` |  | | `_REObjectAssgmt` | `REObjectPossessionEndDate` |
+| `InternalRealEstateNumber` |  | | `_RealEstateContract` | `InternalRealEstateNumber` |
+| `_RERentableObjectData` | | ✓ | | |
+| `_REContract` | | ✓ | | |
 
 ## Associations
 

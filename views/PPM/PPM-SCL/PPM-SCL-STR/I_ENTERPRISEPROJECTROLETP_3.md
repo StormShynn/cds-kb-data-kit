@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectRoleUUID` | `ProjectRoleUUID` |
-| `ProjectUUID` | `ProjectUUID` |
-| `ProjectRoleType` | `ProjectRoleType` |
-| `ProjectRoleCategory` | `ProjectRoleCategory` |
-| `ProjectRoleName` | `ProjectRoleName` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectRoleUUID` | ✓ | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `ProjectRoleType` |  | |  |  |
+| `ProjectRoleCategory` |  | |  |  |
+| `ProjectRoleName` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
 
 ## Source Code
 

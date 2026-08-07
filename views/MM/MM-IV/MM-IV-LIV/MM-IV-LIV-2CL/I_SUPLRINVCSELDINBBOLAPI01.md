@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `I_SuplrInvcSeldInbBillOfLading.SupplierInvoice` |
-| key `FiscalYear` | `I_SuplrInvcSeldInbBillOfLading.FiscalYear` |
-| key `InboundBillOfLading` | `I_SuplrInvcSeldInbBillOfLading.InboundBillOfLading` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `InboundBillOfLading` | ✓ | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

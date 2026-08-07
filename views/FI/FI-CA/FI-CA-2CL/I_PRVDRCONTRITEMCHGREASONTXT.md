@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPrvdrContrItmChgReason` | `change_reason` |
-| key `Language` | `langu` |
-| `CAPrvdrContrItmChgReasonName` | `text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPrvdrContrItmChgReason` | ✓ | |  | `change_reason` |
+| `Language` | ✓ | |  | `langu` |
+| `CAPrvdrContrItmChgReasonName` |  | |  | `text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

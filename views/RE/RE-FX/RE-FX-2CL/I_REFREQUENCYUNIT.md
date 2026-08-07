@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REFrequencyUnit` | `cast( dd07l.domvalue_l as recdvdmfrequencyunit )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REFrequencyUnit` | ✓ | |  | `cast( dd07l.domvalue_l as recdvdmfrequencyunit )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

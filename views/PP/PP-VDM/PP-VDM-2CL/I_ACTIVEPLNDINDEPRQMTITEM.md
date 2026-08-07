@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlndIndepRqmtInternalID` | `pbed.PlndIndepRqmtInternalID` |
-| key `WorkingDayDate` | `pbed.WorkingDayDate` |
-| `PeriodType` | `cast( case pbed.ForecastPeriodType when '1' then 'D' when '2' then 'W' when '3' then 'M' when '4' then 'P' when '5' then 'C' end as pph_period_type preserving type)` |
-| `LastChangedByUser` | `pbed.LastChangedByUser` |
-| `LastChangeDate` | `pbed.LastChangeDate` |
-| `BaseUnit` | `pbed.BaseUnit` |
-| `PlannedQuantity` | `pbed.PlannedQuantity` |
-| `WithdrawalQuantity` | `pbed.WithdrawalQuantity` |
-| `_ActivePlndIndepRqmt` | *Association* |
-| `_PeriodType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlndIndepRqmtInternalID` | ✓ | |  |  |
+| `WorkingDayDate` | ✓ | |  |  |
+| `PeriodType` |  | |  | `cast( case pbed.ForecastPeriodType when '1' then 'D' when '2' then 'W' when '3' then 'M' when '4' then 'P' when '5' then 'C' end as pph_period_type preserving type)` |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `PlannedQuantity` |  | |  |  |
+| `WithdrawalQuantity` |  | |  |  |
+| `_ActivePlndIndepRqmt` | | ✓ | | |
+| `_PeriodType` | | ✓ | | |
 
 ## Associations
 

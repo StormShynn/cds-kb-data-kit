@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentItmRelationUUID` | `relationid` |
-| key `ServiceDocItmRltnSqncNumber` | `posno` |
-| `ServiceDocItmPrdcssrCharUUID` | `cast(objkey_a as crms4_object_charguid32 preserving type )` |
-| `ServiceDocumentItemCharUUID` | `cast(objkey_b as crms4_object_charguid32 preserving type )` |
-| `ServiceDocumentItmRelationType` | `breltyp` |
-| `ServiceDocItmPrdcssrBusObjType` | `objtype_a` |
-| `ServiceDocumentItmRelationKind` | `vona_kind` |
-| `ServiceDocumentItemObjectType` | `objtype_b` |
-| `_ServiceDocItm` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentItmRelationUUID` | ✓ | |  | `relationid` |
+| `ServiceDocItmRltnSqncNumber` | ✓ | |  | `posno` |
+| `ServiceDocItmPrdcssrCharUUID` |  | |  | `cast(objkey_a as crms4_object_charguid32 preserving type )` |
+| `ServiceDocumentItemCharUUID` |  | |  | `cast(objkey_b as crms4_object_charguid32 preserving type )` |
+| `ServiceDocumentItmRelationType` |  | |  | `breltyp` |
+| `ServiceDocItmPrdcssrBusObjType` |  | |  | `objtype_a` |
+| `ServiceDocumentItmRelationKind` |  | |  | `vona_kind` |
+| `ServiceDocumentItemObjectType` |  | |  | `objtype_b` |
+| `_ServiceDocItm` | | ✓ | | |
 
 ## Associations
 

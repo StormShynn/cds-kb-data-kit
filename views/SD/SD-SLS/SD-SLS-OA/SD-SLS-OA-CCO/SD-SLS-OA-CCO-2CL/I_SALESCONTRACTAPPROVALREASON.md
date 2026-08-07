@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContractApprovalReason` | `SalesDocApprovalReason` |
-| `_SDApprovalReason` | *Association* |
-| `_SDApprovalReasonT` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContractApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
+| `_SDApprovalReason` | | ✓ | | |
+| `_SDApprovalReasonT` | | ✓ | | |
 
 ## Source Code
 

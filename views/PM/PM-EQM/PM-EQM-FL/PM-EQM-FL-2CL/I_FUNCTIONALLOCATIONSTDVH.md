@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalLocation` | `FunctionalLocation` |
-| `MaintObjectLocAcctAssgmtNmbr` | `MaintObjectLocAcctAssgmtNmbr` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `_FunctionalLocationText` | *Association* |
-| `_LocationAccountAssignment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `_FunctionalLocationText` | | ✓ | | |
+| `_LocationAccountAssignment` | | ✓ | | |
 
 ## Source Code
 

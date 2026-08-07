@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `Plant` |
-| key `LogisticalRoundingProfile` | `LogisticalRoundingProfile` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `LogisticalRoundingProfile` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

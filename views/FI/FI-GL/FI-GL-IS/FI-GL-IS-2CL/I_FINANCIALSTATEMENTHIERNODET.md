@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialStatementHierarchy` | `hrrp_nodet_n.hryid_42` |
-| key `HierarchyNode` | `hrrp_nodet_n.hrynode` |
-| key `ValidityEndDate` | `hrrp_nodet_n.hryvalto` |
-| key `Language` | `hrrp_nodet_n.spras` |
-| `HierarchyNodeText` | `hrrp_nodet_n.nodetxt` |
-| `HierarchyNodeShortText` | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |
-| `ValidityStartDate` | `hrrp_nodet_n.hryvalfrom` |
-| `FinStmntNodeFormattedID` | `_node.FinStmntNodeFormattedID` |
-| `_Language` | *Association* |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialStatementHierarchy` | ✓ | |  | `hryid_42` |
+| `HierarchyNode` | ✓ | |  | `hrynode` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `Language` | ✓ | |  | `spras` |
+| `HierarchyNodeText` |  | |  | `nodetxt` |
+| `HierarchyNodeShortText` |  | |  | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `FinStmntNodeFormattedID` |  | | `_node` | `FinStmntNodeFormattedID` |
+| `_Language` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

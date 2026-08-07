@@ -27,17 +27,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SettlmtProcessType` | `wlf_settlmt_process_type` |
-| `SettlmtDocType` | `wlf_settlmt_doc_type` |
-| `SettlmtDocCat` | `wlf_settlmt_doc_cat` |
-| `CompanyCode` | `bukrs` |
-| `PurchasingOrganization` | `ekorg` |
-| `PurchasingGroup` | `ekgrp` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `Division` | `spart` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtProcessType` |  | |  | `wlf_settlmt_process_type` |
+| `SettlmtDocType` |  | |  | `wlf_settlmt_doc_type` |
+| `SettlmtDocCat` |  | |  | `wlf_settlmt_doc_cat` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `PurchasingGroup` |  | |  | `ekgrp` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `Division` |  | |  | `spart` |
 
 ## Source Code
 

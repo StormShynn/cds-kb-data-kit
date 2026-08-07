@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StateCentralBankPaymentReason` | `cast( lzbkz as fac_lzbkz )` |
-| `StateCentralBankDocumentType` | `blart` |
-| `StateCentralBankServiceSpec` | `lvawv` |
-| `StateCentralBankPaytRsnDesc` | `cast( concat( zwck1, zwck2 ) as farp_scbpaytrsndesc )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StateCentralBankPaymentReason` | ✓ | |  | `cast( lzbkz as fac_lzbkz )` |
+| `StateCentralBankDocumentType` |  | |  | `blart` |
+| `StateCentralBankServiceSpec` |  | |  | `lvawv` |
+| `StateCentralBankPaytRsnDesc` |  | |  | `cast( concat( zwck1, zwck2 ) as farp_scbpaytrsndesc )` |
 
 ## Source Code
 

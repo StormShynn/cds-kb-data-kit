@@ -32,49 +32,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| `ProfileCode` | `ProfileCode` |
-| `ProfileValidityStartDate` | `ProfileValidityStartDate` |
-| `FiscalYearVariant` | `FiscalYearVariant` |
-| `PeriodType` | `PeriodType` |
-| `ProfitCenter` | `ProfitCenter` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `ConfigurableProduct` | `ConfigurableProduct` |
-| `StockDeterminationGroup` | `StockDeterminationGroup` |
-| `IsBatchManagementRequired` | `IsBatchManagementRequired` |
-| `SerialNumberProfile` | `SerialNumberProfile` |
-| `IsNegativeStockAllowed` | `IsNegativeStockAllowed` |
-| `ProductCFOPCategory` | `ProductCFOPCategory` |
-| `ProductIsExciseTaxRelevant` | `ProductIsExciseTaxRelevant` |
-| `GoodsIssueUnit` | `GoodsIssueUnit` |
-| `DistrCntrDistributionProfile` | `DistrCntrDistributionProfile` |
-| `ProductIsCriticalPrt` | `ProductIsCriticalPrt` |
-| `ProductLogisticsHandlingGroup` | `ProductLogisticsHandlingGroup` |
-| `ProductFreightGroup` | `ProductFreightGroup` |
-| `OriginalBatchReferenceProduct` | `OriginalBatchReferenceProduct` |
-| `ProductMinControlTemperature` | `ProductMinControlTemperature` |
-| `ProductMaxControlTemperature` | `ProductMaxControlTemperature` |
-| `ProductControlTemperatureUnit` | `ProductControlTemperatureUnit` |
-| `BaseUnit` | `BaseUnit` |
-| `_Product` | *Association* |
-| `_ProductPlantWorkScheduling` | *Association* |
-| `_ProductPlantCosting` | *Association* |
-| `_ProductPlantSupplyPlanning` | *Association* |
-| `_ProductPlantPurchaseTax` | *Association* |
-| `_ProductPlantQualityManagement` | *Association* |
-| `_ProductPlantProcurement` | *Association* |
-| `_ProductPlantSales` | *Association* |
-| `_ProdPlantInternationalTrade` | *Association* |
-| `_ProductPlantForecast` | *Association* |
-| `_ProductPlantStorage` | *Association* |
-| `_ProductPlantStorageLocation` | *Association* |
-| `_ProductPlantMRP` | *Association* |
-| `_ProductPlantInspTypeSetting` | *Association* |
-| `_ProductPlantPlanning` | *Association* |
-| `_ProdPlntMRPText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `ProfileCode` |  | |  |  |
+| `ProfileValidityStartDate` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `PeriodType` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `ConfigurableProduct` |  | |  |  |
+| `StockDeterminationGroup` |  | |  |  |
+| `IsBatchManagementRequired` |  | |  |  |
+| `SerialNumberProfile` |  | |  |  |
+| `IsNegativeStockAllowed` |  | |  |  |
+| `ProductCFOPCategory` |  | |  |  |
+| `ProductIsExciseTaxRelevant` |  | |  |  |
+| `GoodsIssueUnit` |  | |  |  |
+| `DistrCntrDistributionProfile` |  | |  |  |
+| `ProductIsCriticalPrt` |  | |  |  |
+| `ProductLogisticsHandlingGroup` |  | |  |  |
+| `ProductFreightGroup` |  | |  |  |
+| `OriginalBatchReferenceProduct` |  | |  |  |
+| `ProductMinControlTemperature` |  | |  |  |
+| `ProductMaxControlTemperature` |  | |  |  |
+| `ProductControlTemperatureUnit` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductPlantWorkScheduling` | | ✓ | | |
+| `_ProductPlantCosting` | | ✓ | | |
+| `_ProductPlantSupplyPlanning` | | ✓ | | |
+| `_ProductPlantPurchaseTax` | | ✓ | | |
+| `_ProductPlantQualityManagement` | | ✓ | | |
+| `_ProductPlantProcurement` | | ✓ | | |
+| `_ProductPlantSales` | | ✓ | | |
+| `_ProdPlantInternationalTrade` | | ✓ | | |
+| `_ProductPlantForecast` | | ✓ | | |
+| `_ProductPlantStorage` | | ✓ | | |
+| `_ProductPlantStorageLocation` | | ✓ | | |
+| `_ProductPlantMRP` | | ✓ | | |
+| `_ProductPlantInspTypeSetting` | | ✓ | | |
+| `_ProductPlantPlanning` | | ✓ | | |
+| `_ProdPlntMRPText` | | ✓ | | |
 
 ## Source Code
 

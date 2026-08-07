@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FactoryCalendarID` | `FactoryCalendarID` |
-| `FactoryCalendarLegacyID` | `FactoryCalendarLegacyID` |
-| `PublicHolidayCalendarID` | `PublicHolidayCalendarID` |
-| `FctryCalMondayIsWorkingDay` | `FctryCalMondayIsWorkingDay` |
-| `FctryCalTuesdayIsWorkingDay` | `FctryCalTuesdayIsWorkingDay` |
-| `FctryCalWednesdayIsWorkingDay` | `FctryCalWednesdayIsWorkingDay` |
-| `FctryCalThursdayIsWorkingDay` | `FctryCalThursdayIsWorkingDay` |
-| `FctryCalFridayIsWorkingDay` | `FctryCalFridayIsWorkingDay` |
-| `FctryCalSaturdayIsWorkingDay` | `FctryCalSaturdayIsWorkingDay` |
-| `FctryCalSundayIsWorkingDay` | `FctryCalSundayIsWorkingDay` |
-| `FctryCalHolidayIsWorkingDay` | `FctryCalHolidayIsWorkingDay` |
-| `FctryCalendarValidityStartDate` | `FctryCalendarValidityStartDate` |
-| `FactoryCalendarValidityEndDate` | `FactoryCalendarValidityEndDate` |
-| `FactoryCalendarStartDateValue` | `FactoryCalendarStartDateValue` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FactoryCalendarID` | ✓ | |  |  |
+| `FactoryCalendarLegacyID` |  | |  |  |
+| `PublicHolidayCalendarID` |  | |  |  |
+| `FctryCalMondayIsWorkingDay` |  | |  |  |
+| `FctryCalTuesdayIsWorkingDay` |  | |  |  |
+| `FctryCalWednesdayIsWorkingDay` |  | |  |  |
+| `FctryCalThursdayIsWorkingDay` |  | |  |  |
+| `FctryCalFridayIsWorkingDay` |  | |  |  |
+| `FctryCalSaturdayIsWorkingDay` |  | |  |  |
+| `FctryCalSundayIsWorkingDay` |  | |  |  |
+| `FctryCalHolidayIsWorkingDay` |  | |  |  |
+| `FctryCalendarValidityStartDate` |  | |  |  |
+| `FactoryCalendarValidityEndDate` |  | |  |  |
+| `FactoryCalendarStartDateValue` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

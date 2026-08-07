@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalRspLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/srs_lifecycle_stat_cd preserving type )` |
-| key `Language` | `ddlanguage` |
-| `SuplrEvalRspLifecycleStsName` | `cast(ddtext as /srmsmc/status_descr preserving type)` |
-| `_Language` | *Association* |
-| `_SuplrEvalRspLifecycleSts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalRspLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/srs_lifecycle_stat_cd preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SuplrEvalRspLifecycleStsName` |  | |  | `cast(ddtext as /srmsmc/status_descr preserving type)` |
+| `_Language` | | ✓ | | |
+| `_SuplrEvalRspLifecycleSts` | | ✓ | | |
 
 ## Associations
 

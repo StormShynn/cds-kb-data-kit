@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AdditionalCustomerGroup1` | `kvgr1` |
-| key `Language` | `spras` |
-| `AdditionalCustomerGroup1Name` | `bezei` |
-| `_AdditionalCustomerGroup1` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AdditionalCustomerGroup1` | ✓ | |  | `kvgr1` |
+| `Language` | ✓ | |  | `spras` |
+| `AdditionalCustomerGroup1Name` |  | |  | `bezei` |
+| `_AdditionalCustomerGroup1` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

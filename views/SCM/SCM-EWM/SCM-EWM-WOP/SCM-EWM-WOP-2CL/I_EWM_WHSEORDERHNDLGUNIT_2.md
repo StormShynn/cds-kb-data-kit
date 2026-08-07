@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `whohu.lgnum` |
-| key `WarehouseOrder` | `cast ( whohu.who as /scwm/de_who_conv_alpha preserving type )` |
-| key `EWMWhseOrderNmbrOfHndlgUnits` | `whohu.hukng` |
-| `PackagingMaterialUUID` | `cast(whohu.pmat_guid as matid_no_conv preserving type )` |
-| `PackagingMaterial` | `_Material.Product` |
-| `HandlingUnitUUID` | `whohu.huid` |
-| `HandlingUnitNumber` | `whohu.huident` |
-| `HndlgUnitIsShippingHndlgUnit` | `whohu.shiphu` |
-| `HndlgUnitIsCreatedByWhseOrder` | `whohu.flgwcr` |
-| `StorageProcess` | `whohu.prces` |
-| `EWMConsolidationGroup` | `whohu.dstgrp` |
-| `EWMStorageType` | `whohu.wstyp` |
-| `EWMStorageSection` | `whohu.wssec` |
-| `EWMStorageBin` | `whohu.wsbin` |
-| `WarehouseOrderCreationRule` | `whohu.wcr` |
-| `HndlgUnitIsUsedInWhseOrder` | `whohu.used` |
-| `PlannedShippingHndlgUnitUUID` | `whohu.pohu_guid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  | `lgnum` |
+| `WarehouseOrder` | ✓ | |  | `cast ( whohu.who as /scwm/de_who_conv_alpha preserving type )` |
+| `EWMWhseOrderNmbrOfHndlgUnits` | ✓ | |  | `hukng` |
+| `PackagingMaterialUUID` |  | |  | `cast(whohu.pmat_guid as matid_no_conv preserving type )` |
+| `PackagingMaterial` |  | | `_Material` | `Product` |
+| `HandlingUnitUUID` |  | |  | `huid` |
+| `HandlingUnitNumber` |  | |  | `huident` |
+| `HndlgUnitIsShippingHndlgUnit` |  | |  | `shiphu` |
+| `HndlgUnitIsCreatedByWhseOrder` |  | |  | `flgwcr` |
+| `StorageProcess` |  | |  | `prces` |
+| `EWMConsolidationGroup` |  | |  | `dstgrp` |
+| `EWMStorageType` |  | |  | `wstyp` |
+| `EWMStorageSection` |  | |  | `wssec` |
+| `EWMStorageBin` |  | |  | `wsbin` |
+| `WarehouseOrderCreationRule` |  | |  | `wcr` |
+| `HndlgUnitIsUsedInWhseOrder` |  | |  | `used` |
+| `PlannedShippingHndlgUnitUUID` |  | |  | `pohu_guid` |
 
 ## Associations
 

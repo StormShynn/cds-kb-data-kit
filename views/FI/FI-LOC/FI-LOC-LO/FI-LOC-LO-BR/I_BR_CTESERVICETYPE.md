@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_CTeServiceType` | `cast( substring(domvalue_l, 1, 1) as logbr_srv_typ_cte preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_CTeServiceType` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as logbr_srv_typ_cte preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

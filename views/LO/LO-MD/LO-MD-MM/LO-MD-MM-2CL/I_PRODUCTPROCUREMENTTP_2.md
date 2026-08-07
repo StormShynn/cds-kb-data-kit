@@ -30,27 +30,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| `PurchaseOrderQuantityUnit` | `PurchaseOrderQuantityUnit` |
-| `VarblPurOrdUnitStatus` | `VarblPurOrdUnitStatus` |
-| `PurchasingAcknProfile` | `PurchasingAcknProfile` |
-| `SourceOfSupplyCategory` | `SourceOfSupplyCategory` |
-| `ProcurementRule` | `ProcurementRule` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `StoreListingEndDate` | `StoreListingEndDate` |
-| `DistrCenterListingEndDate` | `DistrCenterListingEndDate` |
-| `StoreListingStartDate` | `StoreListingStartDate` |
-| `DistrCenterListingStartDate` | `DistrCenterListingStartDate` |
-| `StoreListingProcedure` | `StoreListingProcedure` |
-| `DistrCenterListingProcedure` | `DistrCenterListingProcedure` |
-| `ProdExtAssortmentPriority` | `ProdExtAssortmentPriority` |
-| `AssortmentGrade` | `AssortmentGrade` |
-| `_Product` | *Association* |
-| `_ProdExtAssortmentPriorityText` | *Association* |
-| `_PurchaseOrderUnitText` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |
+| `VarblPurOrdUnitStatus` |  | |  |  |
+| `PurchasingAcknProfile` |  | |  |  |
+| `SourceOfSupplyCategory` |  | |  |  |
+| `ProcurementRule` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `StoreListingEndDate` |  | |  |  |
+| `DistrCenterListingEndDate` |  | |  |  |
+| `StoreListingStartDate` |  | |  |  |
+| `DistrCenterListingStartDate` |  | |  |  |
+| `StoreListingProcedure` |  | |  |  |
+| `DistrCenterListingProcedure` |  | |  |  |
+| `ProdExtAssortmentPriority` |  | |  |  |
+| `AssortmentGrade` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProdExtAssortmentPriorityText` | | ✓ | | |
+| `_PurchaseOrderUnitText` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Source Code
 

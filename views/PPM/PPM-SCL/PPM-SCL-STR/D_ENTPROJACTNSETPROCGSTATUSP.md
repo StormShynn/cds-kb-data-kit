@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProcessingStatus` | `dpr_tv_proc_status_sup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcessingStatus` |  | |  | `dpr_tv_proc_status_sup` |
 
 ## Source Code
 

@@ -29,271 +29,271 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceObjectType` | `objtype_h` |
-| key `ServiceDocument` | `object_id` |
-| key `ServiceDocumentItem` | `number_int` |
-| `ServiceDocumentDescription` | `description_h` |
-| `ServiceDocumentType` | `process_type` |
-| `ServiceDocumentItemPriority` | `priority` |
-| `PostingDate` | `posting_date` |
-| `ServicesRenderedDate` | `srv_rendered_date` |
-| `SrvcDocItmPostingDateTime` | `cast( order_date as crms4_order_date preserving type )` |
-| `SrvcDocItmValdtyStartDateTime` | `cast( valid_from as crms4_valid_from preserving type )` |
-| `SrvcDocItmValdtyEndDateTime` | `cast( valid_to as crms4_valid_to preserving type )` |
-| `ServiceDocumentItemUUID` | `item_guid` |
-| `ServiceDocumentItemCharUUID` | `cast(item_guid_char as sysuuid_c preserving type )` |
-| `ServiceDocumentItemObjectType` | `objtype_i` |
-| `ServiceDocumentUUID` | `header_guid` |
-| `ParentServiceDocumentItemUUID` | `parent` |
-| `ServiceDocumentItemDescription` | `description_i` |
-| `Language` | `itm_language` |
-| `ServiceDocumentTemplateType` | `template_type` |
-| `ServiceDocItemCreationDateTime` | `created_at_i` |
-| `ServiceDocItemChangedDateTime` | `changed_at_i` |
-| `ServiceDocItemCreatedByUser` | `created_by_i` |
-| `ServiceDocItemChangedByUser` | `changed_by_i` |
-| `OriginallyRequestedProduct` | `ordered_prod` |
-| `Product` | `product_id` |
-| `ServiceDocItemCategory` | `itm_type` |
-| `ProfitCenter` | `profit_center` |
-| `ResponsibleCostCenter` | `cost_center` |
-| `ControllingArea` | `kokrs` |
-| `ProfitCenterDeterminationDate` | `profit_determine_date` |
-| `RefBusinessSolutionOrder` | `refbussolnord` |
-| `RefBusinessSolutionOrderItem` | `refbussolnorditm` |
-| `SrvcDocItmRequestedQuantity` | `} ordered_quantity` |
-| `InvoiceAmountInInvoiceDocCrcy` | `} billed_value` |
-| `InvoiceQuantity` | `} billed_quantity` |
-| `SrvcDocItmDeliveredQuantity` | `} dlv_quantity` |
-| `SrvcDocItmReleasedQuantity` | `} released_quantity` |
-| `CumulativeConfirmedQuantity` | `} confirmed_qty` |
-| `SrvcDocItmReldAmtInTransCrcy` | `} released_value` |
-| `SrvcDocItmOrdToBaseQtyNmrtr` | `process_qty_num` |
-| `SrvcDocItmOrdToBaseQtyDnmntr` | `process_qty_den` |
-| `OrderToBaseQuantityExponent` | `exponent10` |
-| `ServiceDocItemQuantityUnit` | `process_qty_unit` |
-| `SrvcDocItemBaseQuantityUnit` | `base_qty_unit` |
-| `SrvcDocItemIsRlvtForProdHier` | `prod_hierarchy_relevance` |
-| `SlsProdHierarchyParentNodeUUID` | `prodh_parent_node_uuid` |
-| `SrvcDocItmProdHierarchyOrigin` | `prod_hierarchy_ori` |
-| `BillingDateTime` | `bill_date` |
-| `BillingDocCreationDateTime` | `invcr_date` |
-| `BillingPlanTimeZone` | `billplan_timezone` |
-| `BillingPriceSourceName` | `price_source` |
-| `SoldToParty` | `sold_to_party` |
-| `SoldToPartyCountry` | `sold_to_country` |
-| `SoldToPartyRegion` | `sold_to_region` |
-| `RespEmployeeBusinessPartnerId` | `person_resp` |
-| `ServiceEmployee` | `service_employee` |
-| `ContactPersonBusinessPartnerId` | `contact_person` |
-| `PayerParty` | `payer` |
-| `BillToParty` | `bill_to_party` |
-| `ShipToParty` | `ship_to_party` |
-| `ServiceDocumentItemStatus` | `stat_lifecycle` |
-| `ServiceDocumentItemHasError` | `stat_error` |
-| `ServiceDocItemBillingStatus` | `stat_billing` |
-| `SrvcDocItmIsReleasedForBilling` | `stat_for_billing` |
-| `ServiceDocumentItemIsOpen` | `stat_open` |
-| `SrvcDocItmDeliveryStatus` | `stat_delivery` |
-| `SrvcDocItmGoodsIssueStatus` | `stat_goods_issue` |
-| `ServiceDocumentItemIsReleased` | `stat_released` |
-| `ServiceDocumentItemIsRejected` | `stat_cancelled` |
-| `ServiceDocumentItemIsQuotation` | `stat_quotation` |
-| `SrvcDocItemTransferStatus` | `stat_transfer` |
-| `SrvcDocItemExecutionStatus` | `stat_maintenance` |
-| `ServiceDocumentItemQuantity` | `} order_qty` |
-| `TransactionCurrency` | `currency` |
-| `StatisticsCurrency` | `ref_currency` |
-| `ExchangeRateType` | `exchg_type` |
-| `ExchangeRateDate` | `exchg_date` |
-| `AccountingExchangeRate` | `cast(exchg_rate as fis_exchange_rate preserving type )` |
-| `PaymentTerms` | `pmnttrms` |
-| `PaymentMethod` | `payment_method` |
-| `SrvcSEPAMandateRelevance` | `sepa_on` |
-| `SEPAMandate` | `mandate_id` |
-| `WBSElementInternalID` | `wbs_element` |
-| `BillableControl` | `ac_indicator` |
-| `ServiceDocumentItemNetAmount` | `} net_value_i` |
-| `ServiceDocumentItemTaxAmount` | `} tax_amount_i` |
-| `ServiceDocItemGrossAmount` | `} gross_value_i` |
-| `BillingBlockReason` | `billing_block` |
-| `MaterialPricingGroup` | `prod_pr_group` |
-| `ProductGroup1` | `prc_group1` |
-| `ProductGroup2` | `prc_group2` |
-| `ProductGroup3` | `prc_group3` |
-| `ProductGroup4` | `prc_group4` |
-| `ProductGroup5` | `prc_group5` |
-| `Industry` | `industry` |
-| `PurchaseOrderByCustomer` | `po_number_sold` |
-| `PurchaseOrderByShipToParty` | `po_number_ship` |
-| `ServiceDocItemRejectionReason` | `rejection` |
-| `CustomerGroup` | `cust_group` |
-| `AdditionalCustomerGroup1` | `cust_group1` |
-| `AdditionalCustomerGroup2` | `cust_group2` |
-| `AdditionalCustomerGroup3` | `cust_group3` |
-| `AdditionalCustomerGroup4` | `cust_group4` |
-| `AdditionalCustomerGroup5` | `cust_group5` |
-| `Plant` | `plant` |
-| `SettlementPeriodRuleUUID` | `billplan_d_rule_period_date` |
-| `BillingPlanBillingDateRuleUUID` | `billplan_d_rule_bill_date` |
-| `BillingPlanPriceDateRule` | `billplan_d_rule_price_date` |
-| `BillingPlanIsFinalized` | `billingplanisfinalized` |
-| `DistributionChannel` | `dis_channel` |
-| `Division` | `division` |
-| `ResponsibleSalesOrganization` | `sales_org_resp` |
-| `SalesOrganization` | `sales_org_sd` |
-| `SalesOffice` | `sales_office_sd` |
-| `SalesGroup` | `sales_group_sd` |
-| `RespyMgmtServiceTeam` | `service_team_rm` |
-| `EnterpriseProjectServiceOrg` | `proj_org_id` |
-| `RequestedServiceStartDateTime` | `srv_cust_beg` |
-| `RequestedServiceEndDateTime` | `srv_cust_end` |
-| `ServiceContrItemStartDateTime` | `contstart` |
-| `ServiceContrItemEndDateTime` | `contend` |
-| `ServiceFirstResponseByDateTime` | `srv_rfirst` |
-| `SrvcDocItemSLADueByDateTime` | `srv_rready` |
-| `ActualServiceStartDateTime` | `srvc_actual` |
-| `ActualServiceEndDateTime` | `srvc_act_to` |
-| `ServiceWorkDuration` | `srq_work_dura_2` |
-| `ServiceWorkDurationUnit` | `srq_work_unit` |
-| `SrvcContrItemRenewalDateTime` | `auto_renew_start` |
-| `SrvcContrItemRnwlDuration` | `} auto_renew_period` |
-| `SrvcContrItemRnwlDurationUnit` | `auto_renew_period_unit` |
-| `SrvcContrItemExtensionDuration` | `} auto_renew_exten` |
-| `SrvcContrItemExtnDurationUnit` | `auto_renew_exten_unit` |
-| `PlannedServiceStartDateTime` | `spla_planfr` |
-| `PlannedServiceEndDateTime` | `spla_planto` |
-| `SrvcDocSubitemOrigin` | `itm_usage` |
-| `ActualServiceDuration` | `} srv_conf_time` |
-| `ActualServiceDurationUnit` | `srv_conf_tunit` |
-| `SrvcOrderConfirmationRelevance` | `confirm_relevant` |
-| `ResponseProfile` | `srv_escal` |
-| `ServiceProfile` | `srv_serwi` |
-| `ServiceDuration` | `} duration` |
-| `ServiceDurationUnit` | `duration_unit` |
-| `TimeSheetOvertimeCategory` | `overtime_cat` |
-| `ContractAccount` | `contract_account` |
-| `ItemOrderProbabilityInPercent` | `probability` |
-| `QuotationIsAccepted` | `stat_accepted` |
-| `ConfigurationNumber` | `int_obj_no` |
-| `IncotermsPart1` | `incoterms1` |
-| `IncotermsPart2` | `incoterms2` |
-| `DeliveryPriority` | `dlv_prio` |
-| `OrderCombinationIsAllowed` | `ordercombind` |
-| `PartialDeliveryIsAllowed` | `part_dlv_itm` |
-| `RevenueAccountingReference` | `revacc_refid` |
-| `RevenueAccountingRefType` | `revacc_reftype` |
-| `ItemGrossWeight` | `} gross_weight_i` |
-| `ItemNetWeight` | `net_weight_i` |
-| `ItemWeightUnit` | `weight_unit_i` |
-| `ItemVolume` | `volume_i` |
-| `ItemVolumeUnit` | `volume_unit_i` |
-| `CustomerPriceGroup` | `price_grp` |
-| `DeliveryGroup` | `dlv_group` |
-| `DeliveryBlockReason` | `delivery_block` |
-| `ErlstConfirmedDeliveryDateTime` | `first_conf_date` |
-| `LtstConfirmedDeliveryDateTime` | `latest_conf_date` |
-| `RequestedDeliveryDateTime` | `cast(first_req_date as tzntstmps preserving type )` |
-| `SrvcTransChangeProcess` | `btmf_process` |
-| `SrvcTransChangeProcessType` | `btmf_process_type` |
-| `SrvcTransChgProcSourceItemUUID` | `ci_contract_item` |
-| `SubscrpnContrTrmsAreSpecified` | `default_terms_ovrwrt` |
-| `MidBillgCycExprtnIsAllowed` | `midbillcycexprtnallwd` |
-| `SubscriptionBillingCycle` | `subscrpnbillgcycle` |
-| `SubscrpnBillgRatePlanCharUUID` | `rate_plan_id` |
-| `ServiceDocumentItemCanclnParty` | `cancparty` |
-| `ServiceDocumentItmCanclnReason` | `canc_reason` |
-| `SrvcDocItmCanclnProcedure` | `cancproc` |
-| `ServiceDocumentRnwlDuration` | `} auto_renew_period` |
-| `ServiceDocRnwlDurationUnit` | `auto_renew_period_unit` |
-| `ServiceDocExtensionDuration` | `} auto_renew_exten` |
-| `ServiceDocExtnDurationUnit` | `auto_renew_exten_unit` |
-| `SubscrpnContrAutoRnwlIsActv` | `auto_renew_indicator` |
-| `SrvcDocItemCreditStatus` | `stat_credit` |
-| `SrvcDocItmBslnCostPostgStatus` | `stat_bsln_cost_postg` |
-| `SrvcDocItmContinuousCostStatus` | `stat_cont_cost_calc` |
-| `SrvcDocItemIsUnplanned` | `is_unplanned_item` |
-| `ShippingCondition` | `ship_cond` |
-| `BusSolnOrdItemBundleProduct` | `bundle_product_id` |
-| `BusSolnOrdItemBundleItem` | `bundle_item_number` |
-| `SrvcDocItmPartReferenceItem` | `item_no_partner` |
-| `SrvcDocItmApptRefObjectUUID` | `ref_guid_appt` |
-| `SrvcDocItmApptReferenceItem` | `item_no_appt` |
-| `_SoldToParty` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_ServiceEmployee` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_PayerParty` | *Association* |
-| `_BillToParty` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_ServiceDocItemCategory` | *Association* |
-| `_ServiceDocItemPriority` | *Association* |
-| `_SrvcDocItmLifecycleStatus` | *Association* |
-| `_ServiceDocItemBillingStatus` | *Association* |
-| `_SrvcDocItemIsRelForBillgSts` | *Association* |
-| `_ServiceDocItemHasError` | *Association* |
-| `_ServiceDocumentIsOpen` | *Association* |
-| `_BillingBlockReason` | *Association* |
-| `_DeliveryBlockReason` | *Association* |
-| `_BillingRequestItem` | *Association* |
-| `_ServiceProductList` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_SalesUnit` | *Association* |
-| `_ServiceDurationUnit` | *Association* |
-| `_ActualServiceDurationUnit` | *Association* |
-| `_SrvcContrItemExtnDurationUnit` | *Association* |
-| `_SrvcContrItemRnwlDurationUnit` | *Association* |
-| `_VolumeUnit` | *Association* |
-| `_WeightUnit` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_PaymentMethod` | *Association* |
-| `_SrvcSEPAMandateRelevance` | *Association* |
-| `_FixedPrice` | *Association* |
-| `_StatusObjItemStatus` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_ServiceDocOvertimeCat` | *Association* |
-| `_Industry` | *Association* |
-| `_ServiceDocItemRejectionReason` | *Association* |
-| `_SoldToPartyRegion` | *Association* |
-| `_SoldToPartyCountry` | *Association* |
-| `_ServiceTeamHeader` | *Association* |
-| `_BillPlanDateRule` | *Association* |
-| `_SettlementDateRule` | *Association* |
-| `_ResponseProfile` | *Association* |
-| `_ServiceProfile` | *Association* |
-| `_BillableControl` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_MaterialPricingGroup` | *Association* |
-| `_AdditionalMaterialGroup1` | *Association* |
-| `_AdditionalMaterialGroup2` | *Association* |
-| `_AdditionalMaterialGroup3` | *Association* |
-| `_AdditionalMaterialGroup4` | *Association* |
-| `_AdditionalMaterialGroup5` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_AdditionalCustomerGroup1` | *Association* |
-| `_AdditionalCustomerGroup2` | *Association* |
-| `_AdditionalCustomerGroup3` | *Association* |
-| `_AdditionalCustomerGroup4` | *Association* |
-| `_AdditionalCustomerGroup5` | *Association* |
-| `_SrvcDocItemTransferStatus` | *Association* |
-| `_SrvcDocItemCreditStatus` | *Association* |
-| `_SrvcDocItmBslnCostPostgStat` | *Association* |
-| `_SrvcDocItmContinuousCostStat` | *Association* |
-| `_SrvcDocExecutionStatus` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_ServiceDocument` | *Association* |
-| `_Product` | *Association* |
-| `_SrvcDocIsQuotation` | *Association* |
-| `_SrvcDocIsQuotation_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  | `objtype_h` |
+| `ServiceDocument` | ✓ | |  | `object_id` |
+| `ServiceDocumentItem` | ✓ | |  | `number_int` |
+| `ServiceDocumentDescription` |  | |  | `description_h` |
+| `ServiceDocumentType` |  | |  | `process_type` |
+| `ServiceDocumentItemPriority` |  | |  | `priority` |
+| `PostingDate` |  | |  | `posting_date` |
+| `ServicesRenderedDate` |  | |  | `srv_rendered_date` |
+| `SrvcDocItmPostingDateTime` |  | |  | `cast( order_date as crms4_order_date preserving type )` |
+| `SrvcDocItmValdtyStartDateTime` |  | |  | `cast( valid_from as crms4_valid_from preserving type )` |
+| `SrvcDocItmValdtyEndDateTime` |  | |  | `cast( valid_to as crms4_valid_to preserving type )` |
+| `ServiceDocumentItemUUID` |  | |  | `item_guid` |
+| `ServiceDocumentItemCharUUID` |  | |  | `cast(item_guid_char as sysuuid_c preserving type )` |
+| `ServiceDocumentItemObjectType` |  | |  | `objtype_i` |
+| `ServiceDocumentUUID` |  | |  | `header_guid` |
+| `ParentServiceDocumentItemUUID` |  | |  | `parent` |
+| `ServiceDocumentItemDescription` |  | |  | `description_i` |
+| `Language` |  | |  | `itm_language` |
+| `ServiceDocumentTemplateType` |  | |  | `template_type` |
+| `ServiceDocItemCreationDateTime` |  | |  | `created_at_i` |
+| `ServiceDocItemChangedDateTime` |  | |  | `changed_at_i` |
+| `ServiceDocItemCreatedByUser` |  | |  | `created_by_i` |
+| `ServiceDocItemChangedByUser` |  | |  | `changed_by_i` |
+| `OriginallyRequestedProduct` |  | |  | `ordered_prod` |
+| `Product` |  | |  | `product_id` |
+| `ServiceDocItemCategory` |  | |  | `itm_type` |
+| `ProfitCenter` |  | |  | `profit_center` |
+| `ResponsibleCostCenter` |  | |  | `cost_center` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `ProfitCenterDeterminationDate` |  | |  | `profit_determine_date` |
+| `RefBusinessSolutionOrder` |  | |  | `refbussolnord` |
+| `RefBusinessSolutionOrderItem` |  | |  | `refbussolnorditm` |
+| `SrvcDocItmRequestedQuantity` |  | |  | `} ordered_quantity` |
+| `InvoiceAmountInInvoiceDocCrcy` |  | |  | `} billed_value` |
+| `InvoiceQuantity` |  | |  | `} billed_quantity` |
+| `SrvcDocItmDeliveredQuantity` |  | |  | `} dlv_quantity` |
+| `SrvcDocItmReleasedQuantity` |  | |  | `} released_quantity` |
+| `CumulativeConfirmedQuantity` |  | |  | `} confirmed_qty` |
+| `SrvcDocItmReldAmtInTransCrcy` |  | |  | `} released_value` |
+| `SrvcDocItmOrdToBaseQtyNmrtr` |  | |  | `process_qty_num` |
+| `SrvcDocItmOrdToBaseQtyDnmntr` |  | |  | `process_qty_den` |
+| `OrderToBaseQuantityExponent` |  | |  | `exponent10` |
+| `ServiceDocItemQuantityUnit` |  | |  | `process_qty_unit` |
+| `SrvcDocItemBaseQuantityUnit` |  | |  | `base_qty_unit` |
+| `SrvcDocItemIsRlvtForProdHier` |  | |  | `prod_hierarchy_relevance` |
+| `SlsProdHierarchyParentNodeUUID` |  | |  | `prodh_parent_node_uuid` |
+| `SrvcDocItmProdHierarchyOrigin` |  | |  | `prod_hierarchy_ori` |
+| `BillingDateTime` |  | |  | `bill_date` |
+| `BillingDocCreationDateTime` |  | |  | `invcr_date` |
+| `BillingPlanTimeZone` |  | |  | `billplan_timezone` |
+| `BillingPriceSourceName` |  | |  | `price_source` |
+| `SoldToParty` |  | |  | `sold_to_party` |
+| `SoldToPartyCountry` |  | |  | `sold_to_country` |
+| `SoldToPartyRegion` |  | |  | `sold_to_region` |
+| `RespEmployeeBusinessPartnerId` |  | |  | `person_resp` |
+| `ServiceEmployee` |  | |  | `service_employee` |
+| `ContactPersonBusinessPartnerId` |  | |  | `contact_person` |
+| `PayerParty` |  | |  | `payer` |
+| `BillToParty` |  | |  | `bill_to_party` |
+| `ShipToParty` |  | |  | `ship_to_party` |
+| `ServiceDocumentItemStatus` |  | |  | `stat_lifecycle` |
+| `ServiceDocumentItemHasError` |  | |  | `stat_error` |
+| `ServiceDocItemBillingStatus` |  | |  | `stat_billing` |
+| `SrvcDocItmIsReleasedForBilling` |  | |  | `stat_for_billing` |
+| `ServiceDocumentItemIsOpen` |  | |  | `stat_open` |
+| `SrvcDocItmDeliveryStatus` |  | |  | `stat_delivery` |
+| `SrvcDocItmGoodsIssueStatus` |  | |  | `stat_goods_issue` |
+| `ServiceDocumentItemIsReleased` |  | |  | `stat_released` |
+| `ServiceDocumentItemIsRejected` |  | |  | `stat_cancelled` |
+| `ServiceDocumentItemIsQuotation` |  | |  | `stat_quotation` |
+| `SrvcDocItemTransferStatus` |  | |  | `stat_transfer` |
+| `SrvcDocItemExecutionStatus` |  | |  | `stat_maintenance` |
+| `ServiceDocumentItemQuantity` |  | |  | `} order_qty` |
+| `TransactionCurrency` |  | |  | `currency` |
+| `StatisticsCurrency` |  | |  | `ref_currency` |
+| `ExchangeRateType` |  | |  | `exchg_type` |
+| `ExchangeRateDate` |  | |  | `exchg_date` |
+| `AccountingExchangeRate` |  | |  | `cast(exchg_rate as fis_exchange_rate preserving type )` |
+| `PaymentTerms` |  | |  | `pmnttrms` |
+| `PaymentMethod` |  | |  | `payment_method` |
+| `SrvcSEPAMandateRelevance` |  | |  | `sepa_on` |
+| `SEPAMandate` |  | |  | `mandate_id` |
+| `WBSElementInternalID` |  | |  | `wbs_element` |
+| `BillableControl` |  | |  | `ac_indicator` |
+| `ServiceDocumentItemNetAmount` |  | |  | `} net_value_i` |
+| `ServiceDocumentItemTaxAmount` |  | |  | `} tax_amount_i` |
+| `ServiceDocItemGrossAmount` |  | |  | `} gross_value_i` |
+| `BillingBlockReason` |  | |  | `billing_block` |
+| `MaterialPricingGroup` |  | |  | `prod_pr_group` |
+| `ProductGroup1` |  | |  | `prc_group1` |
+| `ProductGroup2` |  | |  | `prc_group2` |
+| `ProductGroup3` |  | |  | `prc_group3` |
+| `ProductGroup4` |  | |  | `prc_group4` |
+| `ProductGroup5` |  | |  | `prc_group5` |
+| `Industry` |  | |  | `industry` |
+| `PurchaseOrderByCustomer` |  | |  | `po_number_sold` |
+| `PurchaseOrderByShipToParty` |  | |  | `po_number_ship` |
+| `ServiceDocItemRejectionReason` |  | |  | `rejection` |
+| `CustomerGroup` |  | |  | `cust_group` |
+| `AdditionalCustomerGroup1` |  | |  | `cust_group1` |
+| `AdditionalCustomerGroup2` |  | |  | `cust_group2` |
+| `AdditionalCustomerGroup3` |  | |  | `cust_group3` |
+| `AdditionalCustomerGroup4` |  | |  | `cust_group4` |
+| `AdditionalCustomerGroup5` |  | |  | `cust_group5` |
+| `Plant` |  | |  | `plant` |
+| `SettlementPeriodRuleUUID` |  | |  | `billplan_d_rule_period_date` |
+| `BillingPlanBillingDateRuleUUID` |  | |  | `billplan_d_rule_bill_date` |
+| `BillingPlanPriceDateRule` |  | |  | `billplan_d_rule_price_date` |
+| `BillingPlanIsFinalized` |  | |  | `billingplanisfinalized` |
+| `DistributionChannel` |  | |  | `dis_channel` |
+| `Division` |  | |  | `division` |
+| `ResponsibleSalesOrganization` |  | |  | `sales_org_resp` |
+| `SalesOrganization` |  | |  | `sales_org_sd` |
+| `SalesOffice` |  | |  | `sales_office_sd` |
+| `SalesGroup` |  | |  | `sales_group_sd` |
+| `RespyMgmtServiceTeam` |  | |  | `service_team_rm` |
+| `EnterpriseProjectServiceOrg` |  | |  | `proj_org_id` |
+| `RequestedServiceStartDateTime` |  | |  | `srv_cust_beg` |
+| `RequestedServiceEndDateTime` |  | |  | `srv_cust_end` |
+| `ServiceContrItemStartDateTime` |  | |  | `contstart` |
+| `ServiceContrItemEndDateTime` |  | |  | `contend` |
+| `ServiceFirstResponseByDateTime` |  | |  | `srv_rfirst` |
+| `SrvcDocItemSLADueByDateTime` |  | |  | `srv_rready` |
+| `ActualServiceStartDateTime` |  | |  | `srvc_actual` |
+| `ActualServiceEndDateTime` |  | |  | `srvc_act_to` |
+| `ServiceWorkDuration` |  | |  | `srq_work_dura_2` |
+| `ServiceWorkDurationUnit` |  | |  | `srq_work_unit` |
+| `SrvcContrItemRenewalDateTime` |  | |  | `auto_renew_start` |
+| `SrvcContrItemRnwlDuration` |  | |  | `} auto_renew_period` |
+| `SrvcContrItemRnwlDurationUnit` |  | |  | `auto_renew_period_unit` |
+| `SrvcContrItemExtensionDuration` |  | |  | `} auto_renew_exten` |
+| `SrvcContrItemExtnDurationUnit` |  | |  | `auto_renew_exten_unit` |
+| `PlannedServiceStartDateTime` |  | |  | `spla_planfr` |
+| `PlannedServiceEndDateTime` |  | |  | `spla_planto` |
+| `SrvcDocSubitemOrigin` |  | |  | `itm_usage` |
+| `ActualServiceDuration` |  | |  | `} srv_conf_time` |
+| `ActualServiceDurationUnit` |  | |  | `srv_conf_tunit` |
+| `SrvcOrderConfirmationRelevance` |  | |  | `confirm_relevant` |
+| `ResponseProfile` |  | |  | `srv_escal` |
+| `ServiceProfile` |  | |  | `srv_serwi` |
+| `ServiceDuration` |  | |  | `} duration` |
+| `ServiceDurationUnit` |  | |  | `duration_unit` |
+| `TimeSheetOvertimeCategory` |  | |  | `overtime_cat` |
+| `ContractAccount` |  | |  | `contract_account` |
+| `ItemOrderProbabilityInPercent` |  | |  | `probability` |
+| `QuotationIsAccepted` |  | |  | `stat_accepted` |
+| `ConfigurationNumber` |  | |  | `int_obj_no` |
+| `IncotermsPart1` |  | |  | `incoterms1` |
+| `IncotermsPart2` |  | |  | `incoterms2` |
+| `DeliveryPriority` |  | |  | `dlv_prio` |
+| `OrderCombinationIsAllowed` |  | |  | `ordercombind` |
+| `PartialDeliveryIsAllowed` |  | |  | `part_dlv_itm` |
+| `RevenueAccountingReference` |  | |  | `revacc_refid` |
+| `RevenueAccountingRefType` |  | |  | `revacc_reftype` |
+| `ItemGrossWeight` |  | |  | `} gross_weight_i` |
+| `ItemNetWeight` |  | |  | `net_weight_i` |
+| `ItemWeightUnit` |  | |  | `weight_unit_i` |
+| `ItemVolume` |  | |  | `volume_i` |
+| `ItemVolumeUnit` |  | |  | `volume_unit_i` |
+| `CustomerPriceGroup` |  | |  | `price_grp` |
+| `DeliveryGroup` |  | |  | `dlv_group` |
+| `DeliveryBlockReason` |  | |  | `delivery_block` |
+| `ErlstConfirmedDeliveryDateTime` |  | |  | `first_conf_date` |
+| `LtstConfirmedDeliveryDateTime` |  | |  | `latest_conf_date` |
+| `RequestedDeliveryDateTime` |  | |  | `cast(first_req_date as tzntstmps preserving type )` |
+| `SrvcTransChangeProcess` |  | |  | `btmf_process` |
+| `SrvcTransChangeProcessType` |  | |  | `btmf_process_type` |
+| `SrvcTransChgProcSourceItemUUID` |  | |  | `ci_contract_item` |
+| `SubscrpnContrTrmsAreSpecified` |  | |  | `default_terms_ovrwrt` |
+| `MidBillgCycExprtnIsAllowed` |  | |  | `midbillcycexprtnallwd` |
+| `SubscriptionBillingCycle` |  | |  | `subscrpnbillgcycle` |
+| `SubscrpnBillgRatePlanCharUUID` |  | |  | `rate_plan_id` |
+| `ServiceDocumentItemCanclnParty` |  | |  | `cancparty` |
+| `ServiceDocumentItmCanclnReason` |  | |  | `canc_reason` |
+| `SrvcDocItmCanclnProcedure` |  | |  | `cancproc` |
+| `ServiceDocumentRnwlDuration` |  | |  | `} auto_renew_period` |
+| `ServiceDocRnwlDurationUnit` |  | |  | `auto_renew_period_unit` |
+| `ServiceDocExtensionDuration` |  | |  | `} auto_renew_exten` |
+| `ServiceDocExtnDurationUnit` |  | |  | `auto_renew_exten_unit` |
+| `SubscrpnContrAutoRnwlIsActv` |  | |  | `auto_renew_indicator` |
+| `SrvcDocItemCreditStatus` |  | |  | `stat_credit` |
+| `SrvcDocItmBslnCostPostgStatus` |  | |  | `stat_bsln_cost_postg` |
+| `SrvcDocItmContinuousCostStatus` |  | |  | `stat_cont_cost_calc` |
+| `SrvcDocItemIsUnplanned` |  | |  | `is_unplanned_item` |
+| `ShippingCondition` |  | |  | `ship_cond` |
+| `BusSolnOrdItemBundleProduct` |  | |  | `bundle_product_id` |
+| `BusSolnOrdItemBundleItem` |  | |  | `bundle_item_number` |
+| `SrvcDocItmPartReferenceItem` |  | |  | `item_no_partner` |
+| `SrvcDocItmApptRefObjectUUID` |  | |  | `ref_guid_appt` |
+| `SrvcDocItmApptReferenceItem` |  | |  | `item_no_appt` |
+| `_SoldToParty` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_ServiceEmployee` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_ServiceDocItemCategory` | | ✓ | | |
+| `_ServiceDocItemPriority` | | ✓ | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
+| `_ServiceDocItemBillingStatus` | | ✓ | | |
+| `_SrvcDocItemIsRelForBillgSts` | | ✓ | | |
+| `_ServiceDocItemHasError` | | ✓ | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | |
+| `_BillingBlockReason` | | ✓ | | |
+| `_DeliveryBlockReason` | | ✓ | | |
+| `_BillingRequestItem` | | ✓ | | |
+| `_ServiceProductList` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_SalesUnit` | | ✓ | | |
+| `_ServiceDurationUnit` | | ✓ | | |
+| `_ActualServiceDurationUnit` | | ✓ | | |
+| `_SrvcContrItemExtnDurationUnit` | | ✓ | | |
+| `_SrvcContrItemRnwlDurationUnit` | | ✓ | | |
+| `_VolumeUnit` | | ✓ | | |
+| `_WeightUnit` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_PaymentMethod` | | ✓ | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | |
+| `_FixedPrice` | | ✓ | | |
+| `_StatusObjItemStatus` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_ServiceDocOvertimeCat` | | ✓ | | |
+| `_Industry` | | ✓ | | |
+| `_ServiceDocItemRejectionReason` | | ✓ | | |
+| `_SoldToPartyRegion` | | ✓ | | |
+| `_SoldToPartyCountry` | | ✓ | | |
+| `_ServiceTeamHeader` | | ✓ | | |
+| `_BillPlanDateRule` | | ✓ | | |
+| `_SettlementDateRule` | | ✓ | | |
+| `_ResponseProfile` | | ✓ | | |
+| `_ServiceProfile` | | ✓ | | |
+| `_BillableControl` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_MaterialPricingGroup` | | ✓ | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | |
+| `_SrvcDocItemTransferStatus` | | ✓ | | |
+| `_SrvcDocItemCreditStatus` | | ✓ | | |
+| `_SrvcDocItmBslnCostPostgStat` | | ✓ | | |
+| `_SrvcDocItmContinuousCostStat` | | ✓ | | |
+| `_SrvcDocExecutionStatus` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_ServiceDocument` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_SrvcDocIsQuotation` | | ✓ | | |
+| `_SrvcDocIsQuotation_2` | | ✓ | | |
 
 ## Associations
 

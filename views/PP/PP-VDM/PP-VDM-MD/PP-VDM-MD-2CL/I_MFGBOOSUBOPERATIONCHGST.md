@@ -28,162 +28,162 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `BillOfOperationsVariant` |
-| key `BillOfOperationsSequence` | `BillOfOperationsSequence` |
-| key `BOOOperationInternalID` | `BOOOperationInternalID` |
-| key `BOOSqncOpAssgmtIntVersionCntr` | `BOOSqncOpAssgmtIntVersionCntr` |
-| key `BOOOpInternalVersionCounter` | `BOOOpInternalVersionCounter` |
-| `SubOperation` | `SubOperation` |
-| `SubOperation_2` | `SubOperation_2` |
-| `SuperiorOperationInternalID` | `SuperiorOperationInternalID` |
-| `SubOperationText` | `SubOperationText` |
-| `LongTextLanguageCode` | `LongTextLanguageCode` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `IsDeleted` | `IsDeleted` |
-| `IsImplicitlyDeleted` | `IsImplicitlyDeleted` |
-| `Plant` | `Plant` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `OperationStandardTextCode` | `OperationStandardTextCode` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `CapacityCategoryCode` | `CapacityCategoryCode` |
-| `OperationStdWorkQtyGrpgCat` | `OperationStdWorkQtyGrpgCat` |
-| `NumberOfTimeTickets` | `NumberOfTimeTickets` |
-| `NumberOfConfirmationSlips` | `NumberOfConfirmationSlips` |
-| `EmployeeWageGroup` | `EmployeeWageGroup` |
-| `EmployeeWageType` | `EmployeeWageType` |
-| `EmployeeSuitability` | `EmployeeSuitability` |
-| `NumberOfEmployees` | `NumberOfEmployees` |
-| `BillOfOperationsRefType` | `BillOfOperationsRefType` |
-| `BillOfOperationsRefGroup` | `BillOfOperationsRefGroup` |
-| `BillOfOperationsRefVariant` | `BillOfOperationsRefVariant` |
-| `OperationSetupType` | `OperationSetupType` |
-| `OperationSetupGroupCategory` | `OperationSetupGroupCategory` |
-| `OperationSetupGroup` | `OperationSetupGroup` |
-| `ControlRecipeDestination` | `ControlRecipeDestination` |
-| `OpIsExtlyProcdWithSubcontrg` | `OpIsExtlyProcdWithSubcontrg` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `PurchasingInfoRecdAddlGrpgName` | `PurchasingInfoRecdAddlGrpgName` |
-| `MaterialGroup` | `MaterialGroup` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Supplier` | `Supplier` |
-| `PlannedDeliveryDuration` | `PlannedDeliveryDuration` |
-| `NumberOfOperationPriceUnits` | `NumberOfOperationPriceUnits` |
-| `OpExternalProcessingCurrency` | `OpExternalProcessingCurrency` |
-| `OpExternalProcessingPrice` | `OpExternalProcessingPrice` |
-| `CostElement` | `CostElement` |
-| `OperationCostingRelevancyType` | `OperationCostingRelevancyType` |
-| `InspectionLotType` | `InspectionLotType` |
-| `OperationReferenceQuantity` | `OperationReferenceQuantity` |
-| `OperationUnit` | `OperationUnit` |
-| `OperationScrapPercent` | `OperationScrapPercent` |
-| `OpQtyToBaseQtyNmrtr` | `OpQtyToBaseQtyNmrtr` |
-| `OpQtyToBaseQtyDnmntr` | `OpQtyToBaseQtyDnmntr` |
-| `StandardWorkFormulaParam1` | `cast(StandardWorkFormulaParam1 as pph_par01 preserving type)` |
-| `StandardWorkQuantity1` | `cast(StandardWorkQuantity1 as vdm_vgw01 preserving type)` |
-| `StandardWorkQuantityUnit1` | `cast(StandardWorkQuantityUnit1 as pph_vge01 preserving type)` |
-| `CostCtrActivityType1` | `cast(CostCtrActivityType1 as vdm_lar01 preserving type)` |
-| `PerfEfficiencyRatioCode1` | `PerfEfficiencyRatioCode1` |
-| `StandardWorkFormulaParam2` | `cast(StandardWorkFormulaParam2 as pph_par02 preserving type)` |
-| `StandardWorkQuantity2` | `cast(StandardWorkQuantity2 as vdm_vgw02 preserving type)` |
-| `StandardWorkQuantityUnit2` | `cast(StandardWorkQuantityUnit2 as pph_vge02 preserving type)` |
-| `CostCtrActivityType2` | `cast(CostCtrActivityType2 as vdm_lar02 preserving type)` |
-| `PerfEfficiencyRatioCode2` | `PerfEfficiencyRatioCode2` |
-| `StandardWorkFormulaParam3` | `cast(StandardWorkFormulaParam3 as pph_par03 preserving type)` |
-| `StandardWorkQuantity3` | `cast(StandardWorkQuantity3 as vdm_vgw03 preserving type)` |
-| `StandardWorkQuantityUnit3` | `cast(StandardWorkQuantityUnit3 as pph_vge03 preserving type)` |
-| `CostCtrActivityType3` | `cast(CostCtrActivityType3 as vdm_lar03 preserving type)` |
-| `PerfEfficiencyRatioCode3` | `PerfEfficiencyRatioCode3` |
-| `StandardWorkFormulaParam4` | `cast(StandardWorkFormulaParam4 as pph_par04 preserving type)` |
-| `StandardWorkQuantity4` | `cast(StandardWorkQuantity4 as vdm_vgw04 preserving type)` |
-| `StandardWorkQuantityUnit4` | `cast(StandardWorkQuantityUnit4 as pph_vge04 preserving type)` |
-| `CostCtrActivityType4` | `cast(CostCtrActivityType4 as vdm_lar04 preserving type)` |
-| `PerfEfficiencyRatioCode4` | `PerfEfficiencyRatioCode4` |
-| `StandardWorkFormulaParam5` | `cast(StandardWorkFormulaParam5 as pph_par05 preserving type)` |
-| `StandardWorkQuantity5` | `cast(StandardWorkQuantity5 as vdm_vgw05 preserving type)` |
-| `StandardWorkQuantityUnit5` | `cast(StandardWorkQuantityUnit5 as pph_vge05 preserving type)` |
-| `CostCtrActivityType5` | `cast(CostCtrActivityType5 as vdm_lar05 preserving type)` |
-| `PerfEfficiencyRatioCode5` | `PerfEfficiencyRatioCode5` |
-| `StandardWorkFormulaParam6` | `cast(StandardWorkFormulaParam6 as pph_par06 preserving type)` |
-| `StandardWorkQuantity6` | `cast(StandardWorkQuantity6 as vdm_vgw06 preserving type)` |
-| `StandardWorkQuantityUnit6` | `cast(StandardWorkQuantityUnit6 as pph_vge06 preserving type)` |
-| `CostCtrActivityType6` | `cast(CostCtrActivityType6 as vdm_lar06 preserving type)` |
-| `PerfEfficiencyRatioCode6` | `PerfEfficiencyRatioCode6` |
-| `BusinessProcess` | `BusinessProcess` |
-| `StartDateOffsetDurationUnit` | `StartDateOffsetDurationUnit` |
-| `StartDateOffsetDuration` | `StartDateOffsetDuration` |
-| `EndDateOffsetDurationUnit` | `EndDateOffsetDurationUnit` |
-| `EndDateOffsetDuration` | `EndDateOffsetDuration` |
-| `LeadTimeReductionStrategy` | `LeadTimeReductionStrategy` |
-| `_BillOfOperations` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_BillOfOperationsOperation` | *Association* |
-| `_BOOSqncOperationAssgmtChgSt` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_BOOOperationInternalID` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_CapacityCategory` | *Association* |
-| `_ChangeMaster` | *Association* |
-| `_ControlRecipeDestination` | *Association* |
-| `_EmployeeSuitability` | *Association* |
-| `_EmployeeWageGroup` | *Association* |
-| `_EndDateOffsetDurnUnit` | *Association* |
-| `_FactoryCalendar` | *Association* |
-| `_InspectionLotType` | *Association* |
-| `_LeadTimeReductionStrategy` | *Association* |
-| `_LongTextLanguage` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_OperationControlProfile` | *Association* |
-| `_OperationSetupGroup` | *Association* |
-| `_OperationSetupGroupCategory` | *Association* |
-| `_OperationSetupType` | *Association* |
-| `_OperationStandardText` | *Association* |
-| `_OperationStdWorkQtyGrpgCat` | *Association* |
-| `_OperationUnit` | *Association* |
-| `_OpExternalProcessingCurrency` | *Association* |
-| `_PerformanceEfficiencyRatio1` | *Association* |
-| `_PerformanceEfficiencyRatio2` | *Association* |
-| `_PerformanceEfficiencyRatio3` | *Association* |
-| `_PerformanceEfficiencyRatio4` | *Association* |
-| `_PerformanceEfficiencyRatio5` | *Association* |
-| `_PerformanceEfficiencyRatio6` | *Association* |
-| `_Plant` | *Association* |
-| `_PurchaseContract` | *Association* |
-| `_PurchaseContractItem` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_PurchasingInfoRecord` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_StandardWorkFormulaParameter1` | *Association* |
-| `_StandardWorkFormulaParameter2` | *Association* |
-| `_StandardWorkFormulaParameter3` | *Association* |
-| `_StandardWorkFormulaParameter4` | *Association* |
-| `_StandardWorkFormulaParameter5` | *Association* |
-| `_StandardWorkFormulaParameter6` | *Association* |
-| `_StandardWorkQuantityUnit1` | *Association* |
-| `_StandardWorkQuantityUnit2` | *Association* |
-| `_StandardWorkQuantityUnit3` | *Association* |
-| `_StandardWorkQuantityUnit4` | *Association* |
-| `_StandardWorkQuantityUnit5` | *Association* |
-| `_StandardWorkQuantityUnit6` | *Association* |
-| `_StartDateOffsetDurnUnit` | *Association* |
-| `_Supplier` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_WorkCenterType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |
+| `BillOfOperationsSequence` | ✓ | |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |
+| `BOOSqncOpAssgmtIntVersionCntr` | ✓ | |  |  |
+| `BOOOpInternalVersionCounter` | ✓ | |  |  |
+| `SubOperation` |  | |  |  |
+| `SubOperation_2` |  | |  |  |
+| `SuperiorOperationInternalID` |  | |  |  |
+| `SubOperationText` |  | |  |  |
+| `LongTextLanguageCode` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsImplicitlyDeleted` |  | |  |  |
+| `Plant` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `OperationStandardTextCode` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `CapacityCategoryCode` |  | |  |  |
+| `OperationStdWorkQtyGrpgCat` |  | |  |  |
+| `NumberOfTimeTickets` |  | |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeSuitability` |  | |  |  |
+| `NumberOfEmployees` |  | |  |  |
+| `BillOfOperationsRefType` |  | |  |  |
+| `BillOfOperationsRefGroup` |  | |  |  |
+| `BillOfOperationsRefVariant` |  | |  |  |
+| `OperationSetupType` |  | |  |  |
+| `OperationSetupGroupCategory` |  | |  |  |
+| `OperationSetupGroup` |  | |  |  |
+| `ControlRecipeDestination` |  | |  |  |
+| `OpIsExtlyProcdWithSubcontrg` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PlannedDeliveryDuration` |  | |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `OperationCostingRelevancyType` |  | |  |  |
+| `InspectionLotType` |  | |  |  |
+| `OperationReferenceQuantity` |  | |  |  |
+| `OperationUnit` |  | |  |  |
+| `OperationScrapPercent` |  | |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |
+| `StandardWorkFormulaParam1` |  | |  | `cast(StandardWorkFormulaParam1 as pph_par01 preserving type)` |
+| `StandardWorkQuantity1` |  | |  | `cast(StandardWorkQuantity1 as vdm_vgw01 preserving type)` |
+| `StandardWorkQuantityUnit1` |  | |  | `cast(StandardWorkQuantityUnit1 as pph_vge01 preserving type)` |
+| `CostCtrActivityType1` |  | |  | `cast(CostCtrActivityType1 as vdm_lar01 preserving type)` |
+| `PerfEfficiencyRatioCode1` |  | |  |  |
+| `StandardWorkFormulaParam2` |  | |  | `cast(StandardWorkFormulaParam2 as pph_par02 preserving type)` |
+| `StandardWorkQuantity2` |  | |  | `cast(StandardWorkQuantity2 as vdm_vgw02 preserving type)` |
+| `StandardWorkQuantityUnit2` |  | |  | `cast(StandardWorkQuantityUnit2 as pph_vge02 preserving type)` |
+| `CostCtrActivityType2` |  | |  | `cast(CostCtrActivityType2 as vdm_lar02 preserving type)` |
+| `PerfEfficiencyRatioCode2` |  | |  |  |
+| `StandardWorkFormulaParam3` |  | |  | `cast(StandardWorkFormulaParam3 as pph_par03 preserving type)` |
+| `StandardWorkQuantity3` |  | |  | `cast(StandardWorkQuantity3 as vdm_vgw03 preserving type)` |
+| `StandardWorkQuantityUnit3` |  | |  | `cast(StandardWorkQuantityUnit3 as pph_vge03 preserving type)` |
+| `CostCtrActivityType3` |  | |  | `cast(CostCtrActivityType3 as vdm_lar03 preserving type)` |
+| `PerfEfficiencyRatioCode3` |  | |  |  |
+| `StandardWorkFormulaParam4` |  | |  | `cast(StandardWorkFormulaParam4 as pph_par04 preserving type)` |
+| `StandardWorkQuantity4` |  | |  | `cast(StandardWorkQuantity4 as vdm_vgw04 preserving type)` |
+| `StandardWorkQuantityUnit4` |  | |  | `cast(StandardWorkQuantityUnit4 as pph_vge04 preserving type)` |
+| `CostCtrActivityType4` |  | |  | `cast(CostCtrActivityType4 as vdm_lar04 preserving type)` |
+| `PerfEfficiencyRatioCode4` |  | |  |  |
+| `StandardWorkFormulaParam5` |  | |  | `cast(StandardWorkFormulaParam5 as pph_par05 preserving type)` |
+| `StandardWorkQuantity5` |  | |  | `cast(StandardWorkQuantity5 as vdm_vgw05 preserving type)` |
+| `StandardWorkQuantityUnit5` |  | |  | `cast(StandardWorkQuantityUnit5 as pph_vge05 preserving type)` |
+| `CostCtrActivityType5` |  | |  | `cast(CostCtrActivityType5 as vdm_lar05 preserving type)` |
+| `PerfEfficiencyRatioCode5` |  | |  |  |
+| `StandardWorkFormulaParam6` |  | |  | `cast(StandardWorkFormulaParam6 as pph_par06 preserving type)` |
+| `StandardWorkQuantity6` |  | |  | `cast(StandardWorkQuantity6 as vdm_vgw06 preserving type)` |
+| `StandardWorkQuantityUnit6` |  | |  | `cast(StandardWorkQuantityUnit6 as pph_vge06 preserving type)` |
+| `CostCtrActivityType6` |  | |  | `cast(CostCtrActivityType6 as vdm_lar06 preserving type)` |
+| `PerfEfficiencyRatioCode6` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `StartDateOffsetDurationUnit` |  | |  |  |
+| `StartDateOffsetDuration` |  | |  |  |
+| `EndDateOffsetDurationUnit` |  | |  |  |
+| `EndDateOffsetDuration` |  | |  |  |
+| `LeadTimeReductionStrategy` |  | |  |  |
+| `_BillOfOperations` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_BillOfOperationsOperation` | | ✓ | | |
+| `_BOOSqncOperationAssgmtChgSt` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_BOOOperationInternalID` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_CapacityCategory` | | ✓ | | |
+| `_ChangeMaster` | | ✓ | | |
+| `_ControlRecipeDestination` | | ✓ | | |
+| `_EmployeeSuitability` | | ✓ | | |
+| `_EmployeeWageGroup` | | ✓ | | |
+| `_EndDateOffsetDurnUnit` | | ✓ | | |
+| `_FactoryCalendar` | | ✓ | | |
+| `_InspectionLotType` | | ✓ | | |
+| `_LeadTimeReductionStrategy` | | ✓ | | |
+| `_LongTextLanguage` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_OperationControlProfile` | | ✓ | | |
+| `_OperationSetupGroup` | | ✓ | | |
+| `_OperationSetupGroupCategory` | | ✓ | | |
+| `_OperationSetupType` | | ✓ | | |
+| `_OperationStandardText` | | ✓ | | |
+| `_OperationStdWorkQtyGrpgCat` | | ✓ | | |
+| `_OperationUnit` | | ✓ | | |
+| `_OpExternalProcessingCurrency` | | ✓ | | |
+| `_PerformanceEfficiencyRatio1` | | ✓ | | |
+| `_PerformanceEfficiencyRatio2` | | ✓ | | |
+| `_PerformanceEfficiencyRatio3` | | ✓ | | |
+| `_PerformanceEfficiencyRatio4` | | ✓ | | |
+| `_PerformanceEfficiencyRatio5` | | ✓ | | |
+| `_PerformanceEfficiencyRatio6` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_PurchaseContract` | | ✓ | | |
+| `_PurchaseContractItem` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_PurchasingInfoRecord` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_StandardWorkFormulaParameter1` | | ✓ | | |
+| `_StandardWorkFormulaParameter2` | | ✓ | | |
+| `_StandardWorkFormulaParameter3` | | ✓ | | |
+| `_StandardWorkFormulaParameter4` | | ✓ | | |
+| `_StandardWorkFormulaParameter5` | | ✓ | | |
+| `_StandardWorkFormulaParameter6` | | ✓ | | |
+| `_StandardWorkQuantityUnit1` | | ✓ | | |
+| `_StandardWorkQuantityUnit2` | | ✓ | | |
+| `_StandardWorkQuantityUnit3` | | ✓ | | |
+| `_StandardWorkQuantityUnit4` | | ✓ | | |
+| `_StandardWorkQuantityUnit5` | | ✓ | | |
+| `_StandardWorkQuantityUnit6` | | ✓ | | |
+| `_StartDateOffsetDurnUnit` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
 
 ## Associations
 

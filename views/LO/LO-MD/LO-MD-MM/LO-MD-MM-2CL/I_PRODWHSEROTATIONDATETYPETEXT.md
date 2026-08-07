@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `WrhsMgmtPtwyAndStkRemovalStrgy` | `cast ( dd07t.domvalue_l as rotation_date )` |
-| `Name` | `cast ( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `WrhsMgmtPtwyAndStkRemovalStrgy` | ✓ | |  | `cast ( dd07t.domvalue_l as rotation_date )` |
+| `Name` |  | |  | `cast ( dd07t.ddtext as val_text preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

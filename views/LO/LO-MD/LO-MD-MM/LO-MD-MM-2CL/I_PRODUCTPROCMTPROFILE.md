@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcurementSubType` | `cast ( MaterialProcurementProfile as sobsl preserving type )` |
-| key `Plant` | `Plant` |
-| `_Text` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcurementSubType` | ✓ | |  | `cast ( MaterialProcurementProfile as sobsl preserving type )` |
+| `Plant` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

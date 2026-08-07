@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QltyMgmtIntegScenState` | `cast(substring(domvalue_l, 1, 1) as qinteg_state preserving type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_QltyMgmtIntegScenStateText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QltyMgmtIntegScenState` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as qinteg_state preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_QltyMgmtIntegScenStateText` | | ✓ | | |
 
 ## Associations
 

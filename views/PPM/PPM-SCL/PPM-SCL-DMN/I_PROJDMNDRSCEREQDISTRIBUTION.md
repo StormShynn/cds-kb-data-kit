@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjDmndRsceReqDistrUUID` | `ProjDmndRsceReqDistrUUID` |
-| `ProjDmndResourceRequestUUID` | `ProjDmndResourceRequestUUID` |
-| `ProjectDemandUUID` | `ProjectDemandUUID` |
-| `ProjDmndRsceReqDistrYearVal` | `ProjDmndRsceReqDistrYearVal` |
-| `ProjDmndRsceReqDistrPerdVal` | `ProjDmndRsceReqDistrPerdVal` |
-| `ProjDmndRsceReqDistrQuantity` | `} ProjDmndRsceReqDistrQuantity` |
-| `ProjDmndRsceReqDistrQtyUnit` | `ProjDmndRsceReqDistrQtyUnit` |
-| `ProjDmndRsceReqDistrPerdAmt` | `} ProjDmndRsceReqDistrPerdAmt` |
-| `ProjDmndRsceReqDistrPerdAmtCur` | `ProjDmndRsceReqDistrPerdAmtCur` |
-| `ProjDmndRsceReqDistrRevenueAmt` | `} ProjDmndRsceReqDistrRevenueAmt` |
-| `ProjDmndRsceReqDistrRevnAmtCur` | `ProjDmndRsceReqDistrRevnAmtCur` |
-| `ProjDmndRsceReqDistrStartDate` | `ProjDmndRsceReqDistrStartDate` |
-| `ProjDmndRsceReqDistrEndDate` | `ProjDmndRsceReqDistrEndDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Root` | *Association* |
-| `_ProjDmndRsceReq` | *Association* |
-| `_ProjDmndRsceReqDistrQtyUnit` | *Association* |
-| `_DmndRsceReqDistrPerdAmtCur` | *Association* |
-| `_DmndRsceReqDistrRevnAmtCur` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjDmndRsceReqDistrUUID` | ✓ | |  |  |
+| `ProjDmndResourceRequestUUID` |  | |  |  |
+| `ProjectDemandUUID` |  | |  |  |
+| `ProjDmndRsceReqDistrYearVal` |  | |  |  |
+| `ProjDmndRsceReqDistrPerdVal` |  | |  |  |
+| `ProjDmndRsceReqDistrQuantity` |  | |  | `} ProjDmndRsceReqDistrQuantity` |
+| `ProjDmndRsceReqDistrQtyUnit` |  | |  |  |
+| `ProjDmndRsceReqDistrPerdAmt` |  | |  | `} ProjDmndRsceReqDistrPerdAmt` |
+| `ProjDmndRsceReqDistrPerdAmtCur` |  | |  |  |
+| `ProjDmndRsceReqDistrRevenueAmt` |  | |  | `} ProjDmndRsceReqDistrRevenueAmt` |
+| `ProjDmndRsceReqDistrRevnAmtCur` |  | |  |  |
+| `ProjDmndRsceReqDistrStartDate` |  | |  |  |
+| `ProjDmndRsceReqDistrEndDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Root` | | ✓ | | |
+| `_ProjDmndRsceReq` | | ✓ | | |
+| `_ProjDmndRsceReqDistrQtyUnit` | | ✓ | | |
+| `_DmndRsceReqDistrPerdAmtCur` | | ✓ | | |
+| `_DmndRsceReqDistrRevnAmtCur` | | ✓ | | |
 
 ## Associations
 

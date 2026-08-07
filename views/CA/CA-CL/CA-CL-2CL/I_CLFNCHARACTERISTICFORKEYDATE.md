@@ -27,60 +27,60 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcInternalID` | `Characteristic.CharcInternalID` |
-| `Characteristic` | `Characteristic.Characteristic` |
-| `CharcStatus` | `Characteristic.CharcStatus` |
-| `CharcDataType` | `Characteristic.CharcDataType` |
-| `CharcLength` | `Characteristic.CharcLength` |
-| `CharcDecimals` | `Characteristic.CharcDecimals` |
-| `CharcTemplate` | `Characteristic.CharcTemplate` |
-| `ValueIsCaseSensitive` | `Characteristic.ValueIsCaseSensitive` |
-| `CharcConversionRoutine` | `Characteristic.CharcConversionRoutine` |
-| `CharcGroup` | `Characteristic.CharcGroup` |
-| `EntryIsRequired` | `Characteristic.EntryIsRequired` |
-| `MultipleValuesAreAllowed` | `Characteristic.MultipleValuesAreAllowed` |
-| `CharcValueUnit` | `Characteristic.CharcValueUnit` |
-| `Currency` | `Characteristic.Currency` |
-| `CharcExponentValue` | `Characteristic.CharcExponentValue` |
-| `ValueIntervalIsAllowed` | `Characteristic.ValueIntervalIsAllowed` |
-| `AdditionalValueIsAllowed` | `Characteristic.AdditionalValueIsAllowed` |
-| `NegativeValueIsAllowed` | `Characteristic.NegativeValueIsAllowed` |
-| `ValidityStartDate` | `Characteristic.ValidityStartDate` |
-| `ValidityEndDate` | `Characteristic.ValidityEndDate` |
-| `ChangeNumber` | `Characteristic.ChangeNumber` |
-| `DocumentInfoRecordDocType` | `Characteristic.DocumentInfoRecordDocType` |
-| `DocumentInfoRecordDocNumber` | `Characteristic.DocumentInfoRecordDocNumber` |
-| `DocumentInfoRecordDocVersion` | `Characteristic.DocumentInfoRecordDocVersion` |
-| `DocumentInfoRecordDocPart` | `Characteristic.DocumentInfoRecordDocPart` |
-| `CharcMaintAuthGrp` | `Characteristic.CharcMaintAuthGrp` |
-| `CharcIsReadOnly` | `Characteristic.CharcIsReadOnly` |
-| `CharcIsHidden` | `Characteristic.CharcIsHidden` |
-| `CharcIsRestrictable` | `Characteristic.CharcIsRestrictable` |
-| `CharcReferenceTable` | `Characteristic.CharcReferenceTable` |
-| `CharcReferenceTableField` | `Characteristic.CharcReferenceTableField` |
-| `CharcCheckTable` | `Characteristic.CharcCheckTable` |
-| `CharcCheckFunctionModule` | `Characteristic.CharcCheckFunctionModule` |
-| `CharcExponentFormat` | `Characteristic.CharcExponentFormat` |
-| `CharcEntryIsNotFormatCtrld` | `Characteristic.CharcEntryIsNotFormatCtrld` |
-| `CharcTemplateIsDisplayed` | `Characteristic.CharcTemplateIsDisplayed` |
-| `CharcSelectedSet` | `Characteristic.CharcSelectedSet` |
-| `Plant` | `Characteristic.Plant` |
-| `CharcCatalogType` | `Characteristic.CharcCatalogType` |
-| `CreatedByUser` | `Characteristic.CreatedByUser` |
-| `CreationDate` | `Characteristic.CreationDate` |
-| `LastChangedByUser` | `Characteristic.LastChangedByUser` |
-| `LastChangeDate` | `Characteristic.LastChangeDate` |
-| `CharcLastChangedDateTime` | `Characteristic.CharcLastChangedDateTime` |
-| `_CharacteristicDesc` | *Association* |
-| `_CharacteristicValue` | *Association* |
-| `_CharacteristicGroup` | *Association* |
-| `_CharacteristicStatus` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Currency` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  |  |
+| `Characteristic` |  | |  |  |
+| `CharcStatus` |  | |  |  |
+| `CharcDataType` |  | |  |  |
+| `CharcLength` |  | |  |  |
+| `CharcDecimals` |  | |  |  |
+| `CharcTemplate` |  | |  |  |
+| `ValueIsCaseSensitive` |  | |  |  |
+| `CharcConversionRoutine` |  | |  |  |
+| `CharcGroup` |  | |  |  |
+| `EntryIsRequired` |  | |  |  |
+| `MultipleValuesAreAllowed` |  | |  |  |
+| `CharcValueUnit` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcExponentValue` |  | |  |  |
+| `ValueIntervalIsAllowed` |  | |  |  |
+| `AdditionalValueIsAllowed` |  | |  |  |
+| `NegativeValueIsAllowed` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `DocumentInfoRecordDocType` |  | |  |  |
+| `DocumentInfoRecordDocNumber` |  | |  |  |
+| `DocumentInfoRecordDocVersion` |  | |  |  |
+| `DocumentInfoRecordDocPart` |  | |  |  |
+| `CharcMaintAuthGrp` |  | |  |  |
+| `CharcIsReadOnly` |  | |  |  |
+| `CharcIsHidden` |  | |  |  |
+| `CharcIsRestrictable` |  | |  |  |
+| `CharcReferenceTable` |  | |  |  |
+| `CharcReferenceTableField` |  | |  |  |
+| `CharcCheckTable` |  | |  |  |
+| `CharcCheckFunctionModule` |  | |  |  |
+| `CharcExponentFormat` |  | |  |  |
+| `CharcEntryIsNotFormatCtrld` |  | |  |  |
+| `CharcTemplateIsDisplayed` |  | |  |  |
+| `CharcSelectedSet` |  | |  |  |
+| `Plant` |  | |  |  |
+| `CharcCatalogType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `CharcLastChangedDateTime` |  | |  |  |
+| `_CharacteristicDesc` | | ✓ | | |
+| `_CharacteristicValue` | | ✓ | | |
+| `_CharacteristicGroup` | | ✓ | | |
+| `_CharacteristicStatus` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
 
 ## Associations
 

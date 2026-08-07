@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `/scmtms/vdm_freight_unit_uuid` | `key FreightUnitUUID : /scmtms/vdm_freight_unit_uuid` |
-| `/scmtms/toritmuuid` | `key TransportationOrderItemUUID : /scmtms/toritmuuid` |
-| `_Parent` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `/scmtms/vdm_freight_unit_uuid` |  | |  | `key FreightUnitUUID : /scmtms/vdm_freight_unit_uuid` |
+| `/scmtms/toritmuuid` |  | |  | `key TransportationOrderItemUUID : /scmtms/toritmuuid` |
+| `_Parent` | | ✓ | | |
 
 ## Source Code
 

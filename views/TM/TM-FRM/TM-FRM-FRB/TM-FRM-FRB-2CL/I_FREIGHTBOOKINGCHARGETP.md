@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationChargesObjUUID` | `TransportationChargesObjUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspChargeDocumentCurrency` | `TranspChargeDocumentCurrency` |
-| `TranspChrgTotalAmtInDocCrcy` | `TranspChrgTotalAmtInDocCrcy` |
-| `TranspChargeLocalCurrency` | `TranspChargeLocalCurrency` |
-| `TranspChrgTotalAmtInLoclCrcy` | `TranspChrgTotalAmtInLoclCrcy` |
-| `TranspChargeCalculationDateTme` | `TranspChargeCalculationDateTme` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `TranspChargePostingStatus` | `TranspChargePostingStatus` |
-| `TranspChargeCalcStatus` | `TranspChargeCalcStatus` |
-| `I_FreightBookingTP` | `_TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |
-| `I_FreightBookingChargeItemTP` | `_TranspOrderChargeItem as _FreightBookingChargeItem : redirected to composition child I_FreightBookingChargeItemTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationChargesObjUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspChargeDocumentCurrency` |  | |  |  |
+| `TranspChrgTotalAmtInDocCrcy` |  | |  |  |
+| `TranspChargeLocalCurrency` |  | |  |  |
+| `TranspChrgTotalAmtInLoclCrcy` |  | |  |  |
+| `TranspChargeCalculationDateTme` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `TranspChargePostingStatus` |  | |  |  |
+| `TranspChargeCalcStatus` |  | |  |  |
+| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to parent I_FreightBookingTP` |
+| `I_FreightBookingChargeItemTP` |  | |  | `_TranspOrderChargeItem as _FreightBookingChargeItem : redirected to composition child I_FreightBookingChargeItemTP` |
 
 ## Source Code
 

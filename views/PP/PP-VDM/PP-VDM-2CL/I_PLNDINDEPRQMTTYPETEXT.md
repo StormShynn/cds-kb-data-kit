@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlndIndepRqmtType` | `txt.bedae` |
-| key `Language` | `txt.spras` |
-| `PlndIndepRqmtTypeName` | `cast(txt.bdtxt as pph_bdtxt preserving type)` |
-| `_PlndIndepRqmtType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlndIndepRqmtType` | ✓ | |  | `bedae` |
+| `Language` | ✓ | |  | `spras` |
+| `PlndIndepRqmtTypeName` |  | |  | `cast(txt.bdtxt as pph_bdtxt preserving type)` |
+| `_PlndIndepRqmtType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `JointVenture` | `vname` |
-| key `JointVentureEquityGroup` | `egrup` |
-| key `JointVentureCarriedPartner` | `carrowner` |
-| key `JointVentureCarryingPartner` | `carryowner` |
-| `JVACarriedSharePercent` | `carrshare` |
-| `_CompanyCode` | *Association* |
-| `_JointVentureMasterFld` | *Association* |
-| `_JointVentureDesc` | *Association* |
-| `_JntVntrEquityGrp` | *Association* |
-| `_JntVntrEquityGrpText` | *Association* |
-| `_JVACarriedPartner` | *Association* |
-| `_JVACarryOwner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JointVenture` | ✓ | |  | `vname` |
+| `JointVentureEquityGroup` | ✓ | |  | `egrup` |
+| `JointVentureCarriedPartner` | ✓ | |  | `carrowner` |
+| `JointVentureCarryingPartner` | ✓ | |  | `carryowner` |
+| `JVACarriedSharePercent` |  | |  | `carrshare` |
+| `_CompanyCode` | | ✓ | | |
+| `_JointVentureMasterFld` | | ✓ | | |
+| `_JointVentureDesc` | | ✓ | | |
+| `_JntVntrEquityGrp` | | ✓ | | |
+| `_JntVntrEquityGrpText` | | ✓ | | |
+| `_JVACarriedPartner` | | ✓ | | |
+| `_JVACarryOwner` | | ✓ | | |
 
 ## Associations
 

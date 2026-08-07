@@ -29,90 +29,90 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanControlCycle` | `KanbanControlCycle` |
-| `KanbanControlCycleCategory` | `KanbanControlCycleCategory` |
-| `Product` | `Product` |
-| `Plant` | `Plant` |
-| `ProductionSupplyArea` | `ProductionSupplyArea` |
-| `StoringPositionName` | `StoringPositionName` |
-| `KanbanContainerDeliveryAddress` | `KanbanContainerDeliveryAddress` |
-| `Warehouse` | `Warehouse` |
-| `StorageType` | `StorageType` |
-| `StorageBin` | `StorageBin` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `DestinationStorageBin` | `DestinationStorageBin` |
-| `KanbanCtrlCycleLifeCycleStatus` | `KanbanCtrlCycleLifeCycleStatus` |
-| `CreationDate` | `CreationDate` |
-| `ReleaseDate` | `ReleaseDate` |
-| `LockDate` | `LockDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `BaseUnit` | `BaseUnit` |
-| `KanbanContainerQuantityInBsUnt` | `KanbanContainerQuantityInBsUnt` |
-| `NumberOfKanbanContainers` | `NumberOfKanbanContainers` |
-| `PackingInstruction` | `PackingInstruction` |
-| `NumberOfLoadCarriers` | `NumberOfLoadCarriers` |
-| `KanbanContainerPackggProduct` | `KanbanContainerPackggProduct` |
-| `MaxNrOfEmptyKanbanContainers` | `MaxNrOfEmptyKanbanContainers` |
-| `ReplnmtIsCtrldBySupplySource` | `ReplnmtIsCtrldBySupplySource` |
-| `KanbanCtnReplnmtTriggerLogic` | `KanbanCtnReplnmtTriggerLogic` |
-| `KnbnCtnReplnmtTrggrQtyInBsUnt` | `KnbnCtnReplnmtTrggrQtyInBsUnt` |
-| `SeparateGRIsNeededIfSetToFull` | `SeparateGRIsNeededIfSetToFull` |
-| `CostCenter` | `CostCenter` |
-| `KanbanContainerStatusSequence` | `KanbanContainerStatusSequence` |
-| `SalesSchedulingAgreement` | `SalesSchedulingAgreement` |
-| `SalesSchedulingAgreementItem` | `SalesSchedulingAgreementItem` |
-| `KanbanContainerCalculationType` | `KanbanContainerCalculationType` |
-| `KanbanCtnCalcSafetyFactor` | `KanbanCtnCalcSafetyFactor` |
-| `KanbanCtnCalculationConstant` | `KanbanCtnCalculationConstant` |
-| `KanbanCtnRoundingQtyInBsUnt` | `KanbanCtnRoundingQtyInBsUnt` |
-| `FixedKanbanContainerQtyInBsUnt` | `FixedKanbanContainerQtyInBsUnt` |
-| `KanbanContainerCalcProfile` | `KanbanContainerCalcProfile` |
-| `ReplnmtLeadTimeInWorkdays` | `ReplnmtLeadTimeInWorkdays` |
-| `ReplnmtLeadTimeInMinutes` | `ReplnmtLeadTimeInMinutes` |
-| `PullIntervalInWorkdays` | `PullIntervalInWorkdays` |
-| `PullIntervalInMinutes` | `PullIntervalInMinutes` |
-| `KanbanCtnRefillTimeInDays` | `KanbanCtnRefillTimeInDays` |
-| `KanbanCtnRefillTmeInMinutes` | `KanbanCtnRefillTmeInMinutes` |
-| `KanbanCtnWaitTimeInDays` | `KanbanCtnWaitTimeInDays` |
-| `KanbanCtnWaitTimeInMinutes` | `KanbanCtnWaitTimeInMinutes` |
-| `KanbanCtnTransportTimeInDays` | `KanbanCtnTransportTimeInDays` |
-| `KanbanCtnTransportTmeInMinutes` | `KanbanCtnTransportTmeInMinutes` |
-| `KnbnCtnCalcRqmtBufferInPercent` | `KnbnCtnCalcRqmtBufferInPercent` |
-| `KnbnCtnCalcSupplySrceBufInPct` | `KnbnCtnCalcSupplySrceBufInPct` |
-| `NrOfKanbanCtnsFlaggedToUnlock` | `NrOfKanbanCtnsFlaggedToUnlock` |
-| `KanbanCardPrintControl` | `KanbanCardPrintControl` |
-| `ProdnSupplySpoolOutputDevice` | `ProdnSupplySpoolOutputDevice` |
-| `KanbanCardPrintQueue` | `KanbanCardPrintQueue` |
-| `ControlCyclePrintQueue` | `ControlCyclePrintQueue` |
-| `KanbanCardFormTemplate` | `KanbanCardFormTemplate` |
-| `ControlCycleSAPScriptForm` | `ControlCycleSAPScriptForm` |
-| `ControlCyclePrintFormTemplate` | `ControlCyclePrintFormTemplate` |
-| `SupplySourcePlant` | `SupplySourcePlant` |
-| `InHouseProductionReplnmtStrgy` | `InHouseProductionReplnmtStrgy` |
-| `ProductionVersion` | `ProductionVersion` |
-| `SupplySourceResponsiblePerson` | `SupplySourceResponsiblePerson` |
-| `BackflushReportingPoint` | `BackflushReportingPoint` |
-| `NrOfWaitingKnbnCtnsBfrReplnmt` | `NrOfWaitingKnbnCtnsBfrReplnmt` |
-| `KanbanCtrlCycReplnmtTriggerGrp` | `KanbanCtrlCycReplnmtTriggerGrp` |
-| `PlanningWorkCenter` | `PlanningWorkCenter` |
-| `ProductionOrdersAreCombined` | `ProductionOrdersAreCombined` |
-| `ExtProcurementReplnmtStrgy` | `ExtProcurementReplnmtStrgy` |
-| `Supplier` | `Supplier` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchaseOutlineAgreement` | `PurchaseOutlineAgreement` |
-| `PurchaseOutlineAgreementItem` | `PurchaseOutlineAgreementItem` |
-| `JITCallProfile` | `JITCallProfile` |
-| `StockTransferReplnmtStrategy` | `StockTransferReplnmtStrategy` |
-| `StorageLocation` | `StorageLocation` |
-| `SourceProductionSupplyArea` | `SourceProductionSupplyArea` |
-| `SourceStorageBin` | `SourceStorageBin` |
-| `WarehouseProcessType` | `WarehouseProcessType` |
-| `_Plant` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_KanbanContainer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanControlCycle` | ✓ | |  |  |
+| `KanbanControlCycleCategory` |  | |  |  |
+| `Product` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProductionSupplyArea` |  | |  |  |
+| `StoringPositionName` |  | |  |  |
+| `KanbanContainerDeliveryAddress` |  | |  |  |
+| `Warehouse` |  | |  |  |
+| `StorageType` |  | |  |  |
+| `StorageBin` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `DestinationStorageBin` |  | |  |  |
+| `KanbanCtrlCycleLifeCycleStatus` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `ReleaseDate` |  | |  |  |
+| `LockDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `KanbanContainerQuantityInBsUnt` |  | |  |  |
+| `NumberOfKanbanContainers` |  | |  |  |
+| `PackingInstruction` |  | |  |  |
+| `NumberOfLoadCarriers` |  | |  |  |
+| `KanbanContainerPackggProduct` |  | |  |  |
+| `MaxNrOfEmptyKanbanContainers` |  | |  |  |
+| `ReplnmtIsCtrldBySupplySource` |  | |  |  |
+| `KanbanCtnReplnmtTriggerLogic` |  | |  |  |
+| `KnbnCtnReplnmtTrggrQtyInBsUnt` |  | |  |  |
+| `SeparateGRIsNeededIfSetToFull` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `KanbanContainerStatusSequence` |  | |  |  |
+| `SalesSchedulingAgreement` |  | |  |  |
+| `SalesSchedulingAgreementItem` |  | |  |  |
+| `KanbanContainerCalculationType` |  | |  |  |
+| `KanbanCtnCalcSafetyFactor` |  | |  |  |
+| `KanbanCtnCalculationConstant` |  | |  |  |
+| `KanbanCtnRoundingQtyInBsUnt` |  | |  |  |
+| `FixedKanbanContainerQtyInBsUnt` |  | |  |  |
+| `KanbanContainerCalcProfile` |  | |  |  |
+| `ReplnmtLeadTimeInWorkdays` |  | |  |  |
+| `ReplnmtLeadTimeInMinutes` |  | |  |  |
+| `PullIntervalInWorkdays` |  | |  |  |
+| `PullIntervalInMinutes` |  | |  |  |
+| `KanbanCtnRefillTimeInDays` |  | |  |  |
+| `KanbanCtnRefillTmeInMinutes` |  | |  |  |
+| `KanbanCtnWaitTimeInDays` |  | |  |  |
+| `KanbanCtnWaitTimeInMinutes` |  | |  |  |
+| `KanbanCtnTransportTimeInDays` |  | |  |  |
+| `KanbanCtnTransportTmeInMinutes` |  | |  |  |
+| `KnbnCtnCalcRqmtBufferInPercent` |  | |  |  |
+| `KnbnCtnCalcSupplySrceBufInPct` |  | |  |  |
+| `NrOfKanbanCtnsFlaggedToUnlock` |  | |  |  |
+| `KanbanCardPrintControl` |  | |  |  |
+| `ProdnSupplySpoolOutputDevice` |  | |  |  |
+| `KanbanCardPrintQueue` |  | |  |  |
+| `ControlCyclePrintQueue` |  | |  |  |
+| `KanbanCardFormTemplate` |  | |  |  |
+| `ControlCycleSAPScriptForm` |  | |  |  |
+| `ControlCyclePrintFormTemplate` |  | |  |  |
+| `SupplySourcePlant` |  | |  |  |
+| `InHouseProductionReplnmtStrgy` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `SupplySourceResponsiblePerson` |  | |  |  |
+| `BackflushReportingPoint` |  | |  |  |
+| `NrOfWaitingKnbnCtnsBfrReplnmt` |  | |  |  |
+| `KanbanCtrlCycReplnmtTriggerGrp` |  | |  |  |
+| `PlanningWorkCenter` |  | |  |  |
+| `ProductionOrdersAreCombined` |  | |  |  |
+| `ExtProcurementReplnmtStrgy` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchaseOutlineAgreement` |  | |  |  |
+| `PurchaseOutlineAgreementItem` |  | |  |  |
+| `JITCallProfile` |  | |  |  |
+| `StockTransferReplnmtStrategy` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `SourceProductionSupplyArea` |  | |  |  |
+| `SourceStorageBin` |  | |  |  |
+| `WarehouseProcessType` |  | |  |  |
+| `_Plant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_KanbanContainer` | | ✓ | | |
 
 ## Source Code
 

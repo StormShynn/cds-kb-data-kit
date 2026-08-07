@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ABAPPackage` | `I_ABAPPackage.ABAPPackage` |
-| `ABAPPackageResponsibleUser` | `I_ABAPPackage.ABAPPackageResponsibleUser` |
-| `ABAPSoftwareComponent` | `I_ABAPPackage.ABAPSoftwareComponent` |
-| `ABAPNamespace` | `I_ABAPPackage.ABAPNamespace` |
-| `CreatedByUser` | `I_ABAPPackage.CreatedByUser` |
-| `CreationDate` | `I_ABAPPackage.CreationDate` |
-| `LastChangedByUser` | `I_ABAPPackage.LastChangedByUser` |
-| `LastChangeDate` | `I_ABAPPackage.LastChangeDate` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ABAPPackage` | ✓ | |  |  |
+| `ABAPPackageResponsibleUser` |  | |  |  |
+| `ABAPSoftwareComponent` |  | |  |  |
+| `ABAPNamespace` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
 
 ## Source Code
 

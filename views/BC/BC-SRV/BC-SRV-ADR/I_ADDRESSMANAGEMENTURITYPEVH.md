@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressManagementURIType` | `AddressManagementURIType` |
-| `DomainValue` | `DomainValue` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressManagementURIType` | ✓ | |  |  |
+| `DomainValue` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `FinancialInstrProductCategory` | `sanlfor` |
-| key `FinInstrTransactionCategory` | `sfgtyp` |
-| key `FinancialInstrActivityCategory` | `sfgzustt` |
-| `FinInstrActivityCategoryName` | `xtext` |
-| `_Language` | *Association* |
-| `_ProductCategory` | *Association* |
-| `_TransactionCategory` | *Association* |
-| `_ActivityCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `FinancialInstrProductCategory` | ✓ | |  | `sanlfor` |
+| `FinInstrTransactionCategory` | ✓ | |  | `sfgtyp` |
+| `FinancialInstrActivityCategory` | ✓ | |  | `sfgzustt` |
+| `FinInstrActivityCategoryName` |  | |  | `xtext` |
+| `_Language` | | ✓ | | |
+| `_ProductCategory` | | ✓ | | |
+| `_TransactionCategory` | | ✓ | | |
+| `_ActivityCategory` | | ✓ | | |
 
 ## Associations
 

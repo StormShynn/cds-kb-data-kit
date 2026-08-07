@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LanguageCode` | `dpr_obl_obtyp_t.language` |
-| key `ObjectLinkType` | `dpr_obl_obtyp_t.object_type` |
-| `ObjectLinkTypeText` | `dpr_obl_obtyp_t.text` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LanguageCode` | ✓ | |  | `language` |
+| `ObjectLinkType` | ✓ | |  | `object_type` |
+| `ObjectLinkTypeText` |  | |  | `text` |
 
 ## Source Code
 

@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `country` |
-| key `Region` | `region` |
-| key `SecondaryRegion` | `county_code` |
-| key `TertiaryRegion` | `township_code` |
-| `_Country` | *Association* |
-| `_Region` | *Association* |
-| `_SecondaryRegion` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `country` |
+| `Region` | ✓ | |  | `region` |
+| `SecondaryRegion` | ✓ | |  | `county_code` |
+| `TertiaryRegion` | ✓ | |  | `township_code` |
+| `_Country` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_SecondaryRegion` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

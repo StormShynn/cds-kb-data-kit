@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
-| key `BusSolnOrdPrdcssrSrvcContr` | `BusSolnOrdPrdcssrSrvcContr` |
-| key `BusSolnOrdPrdcssrSrvcContrItem` | `BusSolnOrdPrdcssrSrvcContrItem` |
-| `_BusinessSolutionOrderTP` | *Association* |
-| `_BusinessSolutionOrderItemTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `BusinessSolutionOrderItem` | ✓ | |  |  |
+| `BusSolnOrdPrdcssrSrvcContr` | ✓ | |  |  |
+| `BusSolnOrdPrdcssrSrvcContrItem` | ✓ | |  |  |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | |
 
 ## Source Code
 

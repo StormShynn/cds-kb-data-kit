@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LglTransWrkflwModInstance` | `sibfboriid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglTransWrkflwModInstance` |  | |  | `sibfboriid` |
 
 ## Source Code
 

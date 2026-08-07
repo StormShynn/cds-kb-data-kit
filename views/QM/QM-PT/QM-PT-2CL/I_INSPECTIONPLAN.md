@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionPlanGroup` | `BillOfOperationsGroup` |
-| key `InspectionPlan` | `BillOfOperationsVariant` |
-| `BillOfOperationsType` | `BillOfOperationsType` |
-| `HasChangeNumber` | `HasChangeNumber` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionPlanGroup` | ✓ | |  | `BillOfOperationsGroup` |
+| `InspectionPlan` | ✓ | |  | `BillOfOperationsVariant` |
+| `BillOfOperationsType` |  | |  |  |
+| `HasChangeNumber` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
 
 ## Associations
 

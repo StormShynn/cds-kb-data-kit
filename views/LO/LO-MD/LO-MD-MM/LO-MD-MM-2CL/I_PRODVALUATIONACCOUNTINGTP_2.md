@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `ValuationArea` | `ValuationArea` |
-| key `ValuationType` | `ValuationType` |
-| `CommercialPrice1InCoCodeCrcy` | `CommercialPrice1InCoCodeCrcy` |
-| `CommercialPrice2InCoCodeCrcy` | `CommercialPrice2InCoCodeCrcy` |
-| `CommercialPrice3InCoCodeCrcy` | `CommercialPrice3InCoCodeCrcy` |
-| `DevaluationYearCount` | `DevaluationYearCount` |
-| `FuturePrice` | `FuturePrice` |
-| `FuturePriceValidityStartDate` | `FuturePriceValidityStartDate` |
-| `LIFOValuationPoolNumber` | `LIFOValuationPoolNumber` |
-| `TaxPricel1InCoCodeCrcy` | `TaxPricel1InCoCodeCrcy` |
-| `TaxPrice2InCoCodeCrcy` | `TaxPrice2InCoCodeCrcy` |
-| `TaxPrice3InCoCodeCrcy` | `TaxPrice3InCoCodeCrcy` |
-| `TaxBasedPricesPriceUnitQty` | `TaxBasedPricesPriceUnitQty` |
-| `IsLIFOAndFIFORelevant` | `IsLIFOAndFIFORelevant` |
-| `Currency` | `Currency` |
-| `BaseUnit` | `BaseUnit` |
-| `_Product` | *Association* |
-| `_ProductValuation` | *Association* |
-| `_CurrencyText` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_BaseUnitOfMeasureText` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `ValuationType` | ✓ | |  |  |
+| `CommercialPrice1InCoCodeCrcy` |  | |  |  |
+| `CommercialPrice2InCoCodeCrcy` |  | |  |  |
+| `CommercialPrice3InCoCodeCrcy` |  | |  |  |
+| `DevaluationYearCount` |  | |  |  |
+| `FuturePrice` |  | |  |  |
+| `FuturePriceValidityStartDate` |  | |  |  |
+| `LIFOValuationPoolNumber` |  | |  |  |
+| `TaxPricel1InCoCodeCrcy` |  | |  |  |
+| `TaxPrice2InCoCodeCrcy` |  | |  |  |
+| `TaxPrice3InCoCodeCrcy` |  | |  |  |
+| `TaxBasedPricesPriceUnitQty` |  | |  |  |
+| `IsLIFOAndFIFORelevant` |  | |  |  |
+| `Currency` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductValuation` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Source Code
 

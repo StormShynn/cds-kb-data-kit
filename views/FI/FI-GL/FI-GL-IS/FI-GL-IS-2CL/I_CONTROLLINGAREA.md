@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `cast( tka01.kokrs as fis_kokrs preserving type )` |
-| `FiscalYearVariant` | `cast( tka01.lmona as fis_periv preserving type )` |
-| `ControllingAreaName` | `cast( tka01.bezei as fis_kokrs_name preserving type )` |
-| `ControllingAreaCurrency` | `cast( tka01.waers as fis_kwaer preserving type )` |
-| `ChartOfAccounts` | `cast( tka01.ktopl as fis_ktopl preserving type )` |
-| `CostCenterStandardHierarchy` | `cast( tka01.khinr as fis_ksthi preserving type )` |
-| `OperatingConcern` | `tka01.erkrs` |
-| `ProfitCenterStandardHierarchy` | `cast( tka01.phinr as fis_prctr_std_hier preserving type )` |
-| `BusinessProcessStandardHier` | `cast( tka01.bphinr as fis_co_bphinr preserving type )` |
-| `CreditDownPaymentDefaultGLAcct` | `cast( tka01.kstar_fin as fis_kstar_fin preserving type )` |
-| `DebitDownPaymentDefaultGLAcct` | `cast( tka01.kstar_fid as fis_kstar_fid preserving type )` |
-| `ControllingAreaCurrencyRole` | `cast( tka01.ctyp as fis_co_ctyp preserving type )` |
-| `FinancialManagementArea` | `tka01.fikrs` |
-| `ControllingAreaResponsibleUser` | `cast( tka01.vname as fis_co_vname preserving type )` |
-| `DefaultProfitCenter` | `cast( tka01.defprctr as fis_defprctr preserving type )` |
-| `CtrlgStdFinStatementVersion` | `cast( tka01.leading_fsv as fis_leading_fsv preserving type )` |
-| `ProfitCenterAccountingCurrency` | `case tka01.pcacurtp when '20' then cast( tka01.waers as fis_pcacur preserving type ) when '30' then cast( I_SAPClient.GroupCurrency as fis_pcacur preserving type ) else cast( tka01.pcacur as fis_pcacur preserving type ) end` |
-| `_ChartOfAccountsText` | *Association* |
-| `_FinancialStatementVersion` | *Association* |
-| `_FinancialStatementVersionText` | *Association* |
-| `_Currency` | *Association* |
-| `_ChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( tka01.kokrs as fis_kokrs preserving type )` |
+| `FiscalYearVariant` |  | |  | `cast( tka01.lmona as fis_periv preserving type )` |
+| `ControllingAreaName` |  | |  | `cast( tka01.bezei as fis_kokrs_name preserving type )` |
+| `ControllingAreaCurrency` |  | |  | `cast( tka01.waers as fis_kwaer preserving type )` |
+| `ChartOfAccounts` |  | |  | `cast( tka01.ktopl as fis_ktopl preserving type )` |
+| `CostCenterStandardHierarchy` |  | |  | `cast( tka01.khinr as fis_ksthi preserving type )` |
+| `OperatingConcern` |  | |  | `erkrs` |
+| `ProfitCenterStandardHierarchy` |  | |  | `cast( tka01.phinr as fis_prctr_std_hier preserving type )` |
+| `BusinessProcessStandardHier` |  | |  | `cast( tka01.bphinr as fis_co_bphinr preserving type )` |
+| `CreditDownPaymentDefaultGLAcct` |  | |  | `cast( tka01.kstar_fin as fis_kstar_fin preserving type )` |
+| `DebitDownPaymentDefaultGLAcct` |  | |  | `cast( tka01.kstar_fid as fis_kstar_fid preserving type )` |
+| `ControllingAreaCurrencyRole` |  | |  | `cast( tka01.ctyp as fis_co_ctyp preserving type )` |
+| `FinancialManagementArea` |  | |  | `fikrs` |
+| `ControllingAreaResponsibleUser` |  | |  | `cast( tka01.vname as fis_co_vname preserving type )` |
+| `DefaultProfitCenter` |  | |  | `cast( tka01.defprctr as fis_defprctr preserving type )` |
+| `CtrlgStdFinStatementVersion` |  | |  | `cast( tka01.leading_fsv as fis_leading_fsv preserving type )` |
+| `ProfitCenterAccountingCurrency` |  | |  | `case tka01.pcacurtp when '20' then cast( tka01.waers as fis_pcacur preserving type ) when '30' then cast( I_SAPClient.GroupCurrency as fis_pcacur preserving type ) else cast( tka01.pcacur as fis_pcacur preserving type ) end` |
+| `_ChartOfAccountsText` | | ✓ | | |
+| `_FinancialStatementVersion` | | ✓ | | |
+| `_FinancialStatementVersionText` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

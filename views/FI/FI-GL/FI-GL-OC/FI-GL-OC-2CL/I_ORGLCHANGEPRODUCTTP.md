@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrganizationalChange` | `OrganizationalChange` |
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| `ProductForEdit` | `ProductForEdit` |
-| `PlantForEdit` | `PlantForEdit` |
-| `ControllingArea` | `ControllingArea` |
-| `ProfitCenter` | `ProfitCenter` |
-| `ProfitCenterByOrglChange` | `ProfitCenterByOrglChange` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_OrganizationalChange` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrganizationalChange` | ✓ | |  |  |
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `ProductForEdit` |  | |  |  |
+| `PlantForEdit` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ProfitCenterByOrglChange` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_OrganizationalChange` | | ✓ | | |
 
 ## Source Code
 

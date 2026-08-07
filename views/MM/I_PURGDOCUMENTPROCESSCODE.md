@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingDocumentProcessCode` | `cast (cast(substring(dd07l.domvalue_l ,1,3) as abap.char( 3 ) ) as mmpur_process_indicator )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingDocumentProcessCode` | ✓ | |  | `cast (cast(substring(dd07l.domvalue_l ,1,3) as abap.char( 3 ) ) as mmpur_process_indicator )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

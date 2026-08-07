@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PurchaseOrderType` | `bsart` |
-| `PurchasingOrganization` | `ekorg` |
-| `PurchasingGroup` | `ekgrp` |
-| `Supplier` | `lifnr` |
-| `PurchaseOrderItemCategory` | `pstyp` |
-| `Plant` | `vdm_werks_d` |
-| `Product` | `matnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrderType` |  | |  | `bsart` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `PurchasingGroup` |  | |  | `ekgrp` |
+| `Supplier` |  | |  | `lifnr` |
+| `PurchaseOrderItemCategory` |  | |  | `pstyp` |
+| `Plant` |  | |  | `vdm_werks_d` |
+| `Product` |  | |  | `matnr` |
 
 ## Source Code
 

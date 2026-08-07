@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocPartnerId` | `partner_id` |
-| key `ElectronicDocBPType` | `partner_type` |
-| `ElectronicDocPartyIdType` | `party_id_type` |
-| `EU_EDocEmail` | `email` |
-| `EU_EDocCommChannel` | `comm_channel` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `_BusinessPartner.IsBusinessPurposeCompleted` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocPartnerId` | ✓ | |  | `partner_id` |
+| `ElectronicDocBPType` | ✓ | |  | `partner_type` |
+| `ElectronicDocPartyIdType` |  | |  | `party_id_type` |
+| `EU_EDocEmail` |  | |  | `email` |
+| `EU_EDocCommChannel` |  | |  | `comm_channel` |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` |
 
 ## Associations
 

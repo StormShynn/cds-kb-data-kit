@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `AddressID` |
-| key `AddressPersonID` | `AddressPersonID` |
-| `CommMediumSequenceNumber` | `CommMediumSequenceNumber` |
-| `EmailAddress` | `EmailAddress` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `_AddressCommunicationRemark` | *Association* |
-| `_AddressCommunicationUsage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  |  |
+| `AddressPersonID` | ✓ | |  |  |
+| `CommMediumSequenceNumber` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `_AddressCommunicationRemark` | | ✓ | | |
+| `_AddressCommunicationUsage` | | ✓ | | |
 
 ## Source Code
 

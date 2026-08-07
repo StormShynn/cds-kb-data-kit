@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TechnicalObjectType` | `t370k_t.eqart` |
-| key `Language` | `t370k_t.spras` |
-| `TechnicalObjectTypeDesc` | `t370k_t.eartx` |
-| `_TechnicalObjectType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TechnicalObjectType` | ✓ | |  | `eqart` |
+| `Language` | ✓ | |  | `spras` |
+| `TechnicalObjectTypeDesc` |  | |  | `eartx` |
+| `_TechnicalObjectType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

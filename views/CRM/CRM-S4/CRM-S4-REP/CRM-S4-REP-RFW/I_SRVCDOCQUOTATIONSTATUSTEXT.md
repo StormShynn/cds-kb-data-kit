@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentIsQuotation` | `domvalue_l` |
-| key `Language` | `ddlanguage` |
-| `SrvcDocQuotationStatusText` | `ddtext` |
-| `_SrvcDocQuotationStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentIsQuotation` | ✓ | |  | `domvalue_l` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SrvcDocQuotationStatusText` |  | |  | `ddtext` |
+| `_SrvcDocQuotationStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TextObjectCategory` | `ttxob.tdobject` |
-| `_TextObjectCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TextObjectCategory` | ✓ | |  | `tdobject` |
+| `_TextObjectCategoryText` | | ✓ | | |
 
 ## Associations
 

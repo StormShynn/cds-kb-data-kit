@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PartnerFunction` | `parvw` |
-| key `Language` | `spras` |
-| `PartnerFunctionLanguageDepdnt` | `pabez` |
-| `_PartnerFunction` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PartnerFunction` | ✓ | |  | `parvw` |
+| `Language` | ✓ | |  | `spras` |
+| `PartnerFunctionLanguageDepdnt` |  | |  | `pabez` |
+| `_PartnerFunction` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

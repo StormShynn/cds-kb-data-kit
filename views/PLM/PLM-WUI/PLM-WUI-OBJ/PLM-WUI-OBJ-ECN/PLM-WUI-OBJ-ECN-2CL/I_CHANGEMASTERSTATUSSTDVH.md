@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumberStatus` | `ChangeNumberStatus` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumberStatus` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

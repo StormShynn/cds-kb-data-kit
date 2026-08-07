@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdStopCategory` | `cast(substring(domvalue_l, 1, 1) as /scmtms/stop_category preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrdStopCategoryDesc` | `ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdStopCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdStopCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/stop_category preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrdStopCategoryDesc` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdStopCategory` | | ✓ | | |
 
 ## Associations
 

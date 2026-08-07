@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialTransactionType` | `FinancialTransactionType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialTransactionType` | ✓ | |  |  |
 
 ## Source Code
 

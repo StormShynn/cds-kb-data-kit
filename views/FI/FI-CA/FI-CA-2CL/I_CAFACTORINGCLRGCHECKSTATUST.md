@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAFactoringCheckStsForClrgInfo` | `cast( left( dd07t.domvalue_l, 1 ) as pasta_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAFactoringClrgCheckStatusText` | `cast( ddtext as pasta_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAFactoringCheckStsForClrgInfo` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as pasta_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAFactoringClrgCheckStatusText` |  | |  | `cast( ddtext as pasta_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `REConditionGroup` | `condgroup` |
-| `REConditionGroupName` | `xmcondgroup` |
-| `_Language` | *Association* |
-| `_REConditionGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `REConditionGroup` | ✓ | |  | `condgroup` |
+| `REConditionGroupName` |  | |  | `xmcondgroup` |
+| `_Language` | | ✓ | | |
+| `_REConditionGroup` | | ✓ | | |
 
 ## Associations
 

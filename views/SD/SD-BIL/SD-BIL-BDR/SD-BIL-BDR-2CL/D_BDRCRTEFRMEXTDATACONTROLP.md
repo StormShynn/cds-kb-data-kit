@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BillableDocValidityIsChecked` | `billabledocvalidityischecked` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillableDocValidityIsChecked` |  | |  | `billabledocvalidityischecked` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Segment` | `Segment` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Segment` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -30,69 +30,69 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentNumber` | `opbel` |
-| key `CAGLItemNumber` | `opupk` |
-| `PaymentCardType` | `ccins` |
-| `PaytCardByDigitalPaymentSrvc` | `ccnum` |
-| `PaymentCardSequenceNumber` | `ccfol` |
-| `PaymentCardValidityStartDate` | `datab` |
-| `PaymentCardValidityEndDate` | `datbi` |
-| `PaymentCardHolderName` | `ccname` |
-| `CAAuthznByDigitalPaytSrvc` | `aunum` |
-| `CAAuthorizationByAcquirer` | `autra` |
-| `AuthorizationDate` | `audat` |
-| `AuthorizationTime` | `autim` |
-| `CAAuthorizationType` | `auart` |
-| `AuthorizedAmountInAuthznCrcy` | `autwr` |
-| `AuthorizationCurrency` | `ccwae` |
-| `CAPaytServiceProviderMerchant` | `merch` |
-| `AuthorizationExpirationDate` | `expdt` |
-| `AuthorizationExpirationTime` | `exptm` |
-| `CAPaymentIDAuthznWithBilling` | `aucid` |
-| `CASettlementPaymentAdviceRef` | `avref` |
-| `PaymentCardAuthznRelationID` | `dp_auth_rel_id` |
-| `DigitalPaymentFraudRisk` | `dp_fraud_risk` |
-| `CAPostingDate` | `budat` |
-| `CAAmountInTransactionCurrency` | `betrw` |
-| `TransactionCurrency` | `waers` |
-| `CompanyCode` | `bukrs` |
-| `ValueDate` | `valut` |
-| `CAPaymentBillingStatus` | `xsett` |
-| `CASettlementMassRunID` | `laufi` |
-| `CASettlementDocument` | `stdoc` |
-| `CAPaytCardSupplementIsResent` | `resend` |
-| key `CAReturnLot` | `keyr1` |
-| `CAReturnReason` | `rlgrd` |
-| `CASettlmtChrgAmtInSettlmtCrcy` | `ccfam` |
-| `CAPaymentCardSettlementID` | `srqid` |
-| `CASettlmtAmountInSettlmtCrcy` | `setam` |
-| `SettlementCurrency` | `setcu` |
-| `DgtlPaytDisbursementReference` | `dsbid` |
-| `CreationDate` | `crdat` |
-| `CreationTime` | `crtms` |
-| `CreatedByUser` | `crnam` |
-| `PaymentCardUUID` | `cguid` |
-| `EncryptionType` | `enctp` |
-| `CAKeyForPaymentCardSupplement` | `xguid` |
-| `PaymentServiceProvider` | `pays_prov` |
-| `PaymentRefByPaytSrvcProvider` | `pays_tran` |
-| `OriglPaytRefByPaytSrvcProvider` | `orig_pays_tran` |
-| `OriginalSourceOfCredit` | `orig_credit` |
-| `PaymentCardMaskedNumber` | `masked_id` |
-| `DigitalPaymentType` | `dp_payment_type` |
-| `PaymentByDigitalPaymentService` | `dp_trans_id` |
-| `MerchantByClearingHouse` | `merch` |
-| `_CAAuthorizationType` | *Association* |
-| `_CACreditPostingOrigin` | *Association* |
-| `_CADocument` | *Association* |
-| `_CAPaymentBillingStatus` | *Association* |
-| `_CAReturnReason` | *Association* |
-| `_AuthorizationCurrency` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_SettlementCurrency` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentNumber` | ✓ | |  | `opbel` |
+| `CAGLItemNumber` | ✓ | |  | `opupk` |
+| `PaymentCardType` |  | |  | `ccins` |
+| `PaytCardByDigitalPaymentSrvc` |  | |  | `ccnum` |
+| `PaymentCardSequenceNumber` |  | |  | `ccfol` |
+| `PaymentCardValidityStartDate` |  | |  | `datab` |
+| `PaymentCardValidityEndDate` |  | |  | `datbi` |
+| `PaymentCardHolderName` |  | |  | `ccname` |
+| `CAAuthznByDigitalPaytSrvc` |  | |  | `aunum` |
+| `CAAuthorizationByAcquirer` |  | |  | `autra` |
+| `AuthorizationDate` |  | |  | `audat` |
+| `AuthorizationTime` |  | |  | `autim` |
+| `CAAuthorizationType` |  | |  | `auart` |
+| `AuthorizedAmountInAuthznCrcy` |  | |  | `autwr` |
+| `AuthorizationCurrency` |  | |  | `ccwae` |
+| `CAPaytServiceProviderMerchant` |  | |  | `merch` |
+| `AuthorizationExpirationDate` |  | |  | `expdt` |
+| `AuthorizationExpirationTime` |  | |  | `exptm` |
+| `CAPaymentIDAuthznWithBilling` |  | |  | `aucid` |
+| `CASettlementPaymentAdviceRef` |  | |  | `avref` |
+| `PaymentCardAuthznRelationID` |  | |  | `dp_auth_rel_id` |
+| `DigitalPaymentFraudRisk` |  | |  | `dp_fraud_risk` |
+| `CAPostingDate` |  | |  | `budat` |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `ValueDate` |  | |  | `valut` |
+| `CAPaymentBillingStatus` |  | |  | `xsett` |
+| `CASettlementMassRunID` |  | |  | `laufi` |
+| `CASettlementDocument` |  | |  | `stdoc` |
+| `CAPaytCardSupplementIsResent` |  | |  | `resend` |
+| `CAReturnLot` | ✓ | |  | `keyr1` |
+| `CAReturnReason` |  | |  | `rlgrd` |
+| `CASettlmtChrgAmtInSettlmtCrcy` |  | |  | `ccfam` |
+| `CAPaymentCardSettlementID` |  | |  | `srqid` |
+| `CASettlmtAmountInSettlmtCrcy` |  | |  | `setam` |
+| `SettlementCurrency` |  | |  | `setcu` |
+| `DgtlPaytDisbursementReference` |  | |  | `dsbid` |
+| `CreationDate` |  | |  | `crdat` |
+| `CreationTime` |  | |  | `crtms` |
+| `CreatedByUser` |  | |  | `crnam` |
+| `PaymentCardUUID` |  | |  | `cguid` |
+| `EncryptionType` |  | |  | `enctp` |
+| `CAKeyForPaymentCardSupplement` |  | |  | `xguid` |
+| `PaymentServiceProvider` |  | |  | `pays_prov` |
+| `PaymentRefByPaytSrvcProvider` |  | |  | `pays_tran` |
+| `OriglPaytRefByPaytSrvcProvider` |  | |  | `orig_pays_tran` |
+| `OriginalSourceOfCredit` |  | |  | `orig_credit` |
+| `PaymentCardMaskedNumber` |  | |  | `masked_id` |
+| `DigitalPaymentType` |  | |  | `dp_payment_type` |
+| `PaymentByDigitalPaymentService` |  | |  | `dp_trans_id` |
+| `MerchantByClearingHouse` |  | |  | `merch` |
+| `_CAAuthorizationType` | | ✓ | | |
+| `_CACreditPostingOrigin` | | ✓ | | |
+| `_CADocument` | | ✓ | | |
+| `_CAPaymentBillingStatus` | | ✓ | | |
+| `_CAReturnReason` | | ✓ | | |
+| `_AuthorizationCurrency` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_SettlementCurrency` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

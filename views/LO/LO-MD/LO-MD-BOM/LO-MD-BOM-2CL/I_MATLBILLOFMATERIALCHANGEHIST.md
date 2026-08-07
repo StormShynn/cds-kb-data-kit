@@ -31,36 +31,36 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeDocObject` | `ChangeDocObject` |
-| key `ChangeDocument` | `ChangeDocument` |
-| key `ChangeDocumentDatabaseTable` | `ChangeDocumentDatabaseTable` |
-| key `ChangeDocumentTableKey` | `ChangeDocumentTableKey` |
-| key `ChangeDocDatabaseTableField` | `ChangeDocDatabaseTableField` |
-| key `ChangeDocItemChangeType` | `ChangeDocItemChangeType` |
-| `BillOfMaterialCategory` | `BillOfMaterialCategory` |
-| `BillOfMaterial` | `BillOfMaterial` |
-| `BillOfMaterialVariant` | `BillOfMaterialVariant` |
-| `BOMHeaderInternalChangeCount` | `BOMHeaderInternalChangeCount` |
-| `BillOfMaterialItemNodeNumber` | `BillOfMaterialItemNodeNumber` |
-| `BOMItemInternalChangeCount` | `BOMItemInternalChangeCount` |
-| `BOMInstceInternalChangeNumber` | `BOMInstceInternalChangeNumber` |
-| `BOMSubItemNumberValue` | `BOMSubItemNumberValue` |
-| `Material` | `Material` |
-| `Plant` | `Plant` |
-| `BillOfMaterialVariantUsage` | `BillOfMaterialVariantUsage` |
-| `ABAPDataElementDescription` | `ABAPDataElementDescription` |
-| `ChangeDocNewFieldValue` | `ChangeDocNewFieldValue` |
-| `ChangeDocPreviousFieldValue` | `ChangeDocPreviousFieldValue` |
-| `ChangeDocPreviousUnit` | `ChangeDocPreviousUnit` |
-| `ChangeDocNewUnit` | `ChangeDocNewUnit` |
-| `ChangeDocPreviousCurrency` | `ChangeDocPreviousCurrency` |
-| `ChangeDocNewCurrency` | `ChangeDocNewCurrency` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `CreationDateTime` | `CreationDateTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeDocObject` | ✓ | |  |  |
+| `ChangeDocument` | ✓ | |  |  |
+| `ChangeDocumentDatabaseTable` | ✓ | |  |  |
+| `ChangeDocumentTableKey` | ✓ | |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BillOfMaterial` |  | |  |  |
+| `BillOfMaterialVariant` |  | |  |  |
+| `BOMHeaderInternalChangeCount` |  | |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  |  |
+| `BOMItemInternalChangeCount` |  | |  |  |
+| `BOMInstceInternalChangeNumber` |  | |  |  |
+| `BOMSubItemNumberValue` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |
+| `ABAPDataElementDescription` |  | |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |
+| `ChangeDocPreviousUnit` |  | |  |  |
+| `ChangeDocNewUnit` |  | |  |  |
+| `ChangeDocPreviousCurrency` |  | |  |  |
+| `ChangeDocNewCurrency` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
 
 ## Source Code
 

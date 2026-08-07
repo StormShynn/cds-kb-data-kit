@@ -38,15 +38,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Configmat` | `configmat` |
-| key `Material` | `material` |
-| `Localcreatedby` | `localcreatedby` |
-| `Localcreatedat` | `localcreatedat` |
-| `Locallastchangedby` | `locallastchangedby` |
-| `Locallastchangedat` | `locallastchangedat` |
-| `Lastchangedat` | `lastchangedat` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Configmat` | ✓ | |  | `configmat` |
+| `Material` | ✓ | |  | `material` |
+| `Localcreatedby` |  | |  | `localcreatedby` |
+| `Localcreatedat` |  | |  | `localcreatedat` |
+| `Locallastchangedby` |  | |  | `locallastchangedby` |
+| `Locallastchangedat` |  | |  | `locallastchangedat` |
+| `Lastchangedat` |  | |  | `lastchangedat` |
 
 ## Source Code
 

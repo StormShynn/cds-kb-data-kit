@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WrntyCatalogCode` | `j_3gtplkz` |
-| key `WrntyNumberInCatalog` | `j_3gkatnrc` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WrntyCatalogCode` | ✓ | |  | `j_3gtplkz` |
+| `WrntyNumberInCatalog` | ✓ | |  | `j_3gkatnrc` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

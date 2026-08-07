@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentGuaranteeProcedure` | `abssc` |
-| key `Language` | `spras` |
-| `PaymentGuaranteeProcedureName` | `bezei` |
-| `_PaymentGuaranteeProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentGuaranteeProcedure` | ✓ | |  | `abssc` |
+| `Language` | ✓ | |  | `spras` |
+| `PaymentGuaranteeProcedureName` |  | |  | `bezei` |
+| `_PaymentGuaranteeProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

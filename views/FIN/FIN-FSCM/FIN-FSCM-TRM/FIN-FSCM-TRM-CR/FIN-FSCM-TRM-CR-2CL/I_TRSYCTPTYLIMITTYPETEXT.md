@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `LimitType` | `sla` |
-| `LimitTypeName` | `xla` |
-| `_Language` | *Association* |
-| `_LimitType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `LimitType` | ✓ | |  | `sla` |
+| `LimitTypeName` |  | |  | `xla` |
+| `_Language` | | ✓ | | |
+| `_LimitType` | | ✓ | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MatlCompDiscontinuationType` | `cast(substring(t.domvalue_l, 1, 1) as auslf preserving type)` |
-| key `Language` | `cast(t.ddlanguage as spras preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `MatlCompDscontnTypeName` | `cast(t.ddtext as matlcompdscontntypename preserving type)` |
-| `_MatlCompDiscontinuationType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MatlCompDiscontinuationType` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as auslf preserving type)` |
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `MatlCompDscontnTypeName` |  | |  | `cast(t.ddtext as matlcompdscontntypename preserving type)` |
+| `_MatlCompDiscontinuationType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

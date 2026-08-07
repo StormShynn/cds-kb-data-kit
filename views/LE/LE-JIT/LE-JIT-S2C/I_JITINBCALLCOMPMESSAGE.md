@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITBackflushUUID` | `db_key` |
-| `JITHeaderUUID` | `root_key` |
-| `JITCallComponentUUID` | `parent_key` |
-| `JITCallCompMatlMessageType` | `jitcallcompmatlmessagetype` |
-| `JITCallCompMatlMessageClass` | `jitcallcompmatlmessageclass` |
-| `JITCallCompMatlMessageNumber` | `jitcallcompmatlmessagenumber` |
-| `JITCallCompMatlMessageValue1` | `jitcallcompmatlmessagevalue1` |
-| `JITCallCompMatlMessageValue2` | `jitcallcompmatlmessagevalue2` |
-| `JITCallCompMatlMessageValue3` | `jitcallcompmatlmessagevalue3` |
-| `JITCallCompMatlMessageValue4` | `jitcallcompmatlmessagevalue4` |
-| `_JITInboundCall` | *Association* |
-| `_JITSystemMessageType` | *Association* |
-| `_JITInbCallComponent` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITBackflushUUID` | ✓ | |  | `db_key` |
+| `JITHeaderUUID` |  | |  | `root_key` |
+| `JITCallComponentUUID` |  | |  | `parent_key` |
+| `JITCallCompMatlMessageType` |  | |  | `jitcallcompmatlmessagetype` |
+| `JITCallCompMatlMessageClass` |  | |  | `jitcallcompmatlmessageclass` |
+| `JITCallCompMatlMessageNumber` |  | |  | `jitcallcompmatlmessagenumber` |
+| `JITCallCompMatlMessageValue1` |  | |  | `jitcallcompmatlmessagevalue1` |
+| `JITCallCompMatlMessageValue2` |  | |  | `jitcallcompmatlmessagevalue2` |
+| `JITCallCompMatlMessageValue3` |  | |  | `jitcallcompmatlmessagevalue3` |
+| `JITCallCompMatlMessageValue4` |  | |  | `jitcallcompmatlmessagevalue4` |
+| `_JITInboundCall` | | ✓ | | |
+| `_JITSystemMessageType` | | ✓ | | |
+| `_JITInbCallComponent` | | ✓ | | |
 
 ## Associations
 

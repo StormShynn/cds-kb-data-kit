@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Industry` | `Industry` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Industry` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

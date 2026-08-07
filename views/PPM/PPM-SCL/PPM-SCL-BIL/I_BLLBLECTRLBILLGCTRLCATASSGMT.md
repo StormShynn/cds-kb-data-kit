@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillableControl` | `bemot` |
-| `BillingControlCategory` | `billgctrlcat` |
-| `_BillingControlCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillableControl` | ✓ | |  | `bemot` |
+| `BillingControlCategory` |  | |  | `billgctrlcat` |
+| `_BillingControlCategoryText` | | ✓ | | |
 
 ## Associations
 

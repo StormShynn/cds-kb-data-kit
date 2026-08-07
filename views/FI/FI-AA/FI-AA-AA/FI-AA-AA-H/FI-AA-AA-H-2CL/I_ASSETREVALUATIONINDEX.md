@@ -30,29 +30,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AssetRevaluationIndex` | `index_id` |
-| `AssetRevaluationIndexName` | `description` |
-| `AssetRevalIndexLifecycleStatus` | `lifecycle_status` |
-| `AssetRevalIdxIsUsingHistCalc` | `use_hist_calc` |
-| `AssetRevaluationIndexType` | `index_type` |
-| `Country` | `country` |
-| `Currency` | `currency` |
-| `AstRevalIdxValueUnitOfMeasure` | `index_value_uom` |
-| `AssetRevalIdxDeactivationDate` | `deactivation_date` |
-| `CreatedByUser` | `creation_user` |
-| `CreationDateTime` | `creation_datetime` |
-| `LastChangedByUser` | `lastchange_user` |
-| `LastChangeDateTime` | `lastchange_datetime` |
-| `LocalLastChangeDateTime` | `draft_lastchange_datetime` |
-| `_AssetRevaluationIndexItem` | *Association* |
-| `_AssetRevaluationIndexLfcycSts` | *Association* |
-| `_AssetRevaluationIndexType` | *Association* |
-| `_AstRevalIdxValUnitOfMeasure` | *Association* |
-| `_AssetRevalIndexWhereUsed` | *Association* |
-| `_Country` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssetRevaluationIndex` | ✓ | |  | `index_id` |
+| `AssetRevaluationIndexName` |  | |  | `description` |
+| `AssetRevalIndexLifecycleStatus` |  | |  | `lifecycle_status` |
+| `AssetRevalIdxIsUsingHistCalc` |  | |  | `use_hist_calc` |
+| `AssetRevaluationIndexType` |  | |  | `index_type` |
+| `Country` |  | |  | `country` |
+| `Currency` |  | |  | `currency` |
+| `AstRevalIdxValueUnitOfMeasure` |  | |  | `index_value_uom` |
+| `AssetRevalIdxDeactivationDate` |  | |  | `deactivation_date` |
+| `CreatedByUser` |  | |  | `creation_user` |
+| `CreationDateTime` |  | |  | `creation_datetime` |
+| `LastChangedByUser` |  | |  | `lastchange_user` |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` |
+| `LocalLastChangeDateTime` |  | |  | `draft_lastchange_datetime` |
+| `_AssetRevaluationIndexItem` | | ✓ | | |
+| `_AssetRevaluationIndexLfcycSts` | | ✓ | | |
+| `_AssetRevaluationIndexType` | | ✓ | | |
+| `_AstRevalIdxValUnitOfMeasure` | | ✓ | | |
+| `_AssetRevalIndexWhereUsed` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

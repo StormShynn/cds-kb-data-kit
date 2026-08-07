@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `TR_ElectronicDocEnvelopeID` | `TR_ElectronicDocEnvelopeID` |
-| `TR_ElectronicDocInvoiceID` | `TR_ElectronicDocInvoiceID` |
-| `TR_ElectronicDocUniqueID` | `TR_ElectronicDocUniqueID` |
-| `TR_EDocBusinessPartnerAlias` | `TR_EDocBusinessPartnerAlias` |
-| `TR_ElectronicDocTaxID` | `TR_ElectronicDocTaxID` |
-| `TR_ElectronicDocBusPartner` | `TR_ElectronicDocBusPartner` |
-| `TR_EDocTaxExclusiveAmount` | `TR_EDocTaxExclusiveAmount` |
-| `TR_ElectronicDocTaxAmount` | `TR_ElectronicDocTaxAmount` |
-| `TR_EDocTaxInclusiveAmount` | `TR_EDocTaxInclusiveAmount` |
-| `TR_EDocCurrencyKey` | `TR_EDocCurrencyKey` |
-| `TR_EDocBusPartnerName` | `TR_EDocBusPartnerName` |
-| `TR_EDocCancelReason` | `TR_EDocCancelReason` |
-| `TR_EDocCancelReasonCode` | `TR_EDocCancelReasonCode` |
-| `TR_ElectronicDocCompanyCode` | `_ElectronicDoc.ElectronicDocCompanyCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `TR_ElectronicDocEnvelopeID` |  | |  |  |
+| `TR_ElectronicDocInvoiceID` |  | |  |  |
+| `TR_ElectronicDocUniqueID` |  | |  |  |
+| `TR_EDocBusinessPartnerAlias` |  | |  |  |
+| `TR_ElectronicDocTaxID` |  | |  |  |
+| `TR_ElectronicDocBusPartner` |  | |  |  |
+| `TR_EDocTaxExclusiveAmount` |  | |  |  |
+| `TR_ElectronicDocTaxAmount` |  | |  |  |
+| `TR_EDocTaxInclusiveAmount` |  | |  |  |
+| `TR_EDocCurrencyKey` |  | |  |  |
+| `TR_EDocBusPartnerName` |  | |  |  |
+| `TR_EDocCancelReason` |  | |  |  |
+| `TR_EDocCancelReasonCode` |  | |  |  |
+| `TR_ElectronicDocCompanyCode` |  | | `_ElectronicDoc` | `ElectronicDocCompanyCode` |
 
 ## Associations
 

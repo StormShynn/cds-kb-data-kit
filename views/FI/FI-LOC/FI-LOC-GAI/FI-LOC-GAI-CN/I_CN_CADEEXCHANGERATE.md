@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `ExchangeRate.bukrs` |
-| key `CN_CADENatlStdRelVersion` | `ExchangeRate.cade_natl_std_rel_ver` |
-| key `ExchangeRateType` | `ExchangeRate.kurst` |
-| `CN_CADEExchangeRateTypeName` | `ExchangeRate.cade_er_desc` |
-| `ExchangeRateTypeName` | `_Text.curvw` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |
+| `ExchangeRateType` | ✓ | |  | `kurst` |
+| `CN_CADEExchangeRateTypeName` |  | |  | `cade_er_desc` |
+| `ExchangeRateTypeName` |  | | `_Text` | `curvw` |
 
 ## Associations
 

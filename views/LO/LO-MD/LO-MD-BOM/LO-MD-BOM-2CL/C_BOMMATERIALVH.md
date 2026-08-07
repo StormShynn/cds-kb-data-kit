@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `cast (Product as matnr preserving type )` |
-| `MaterialDescription` | `cast( _Text[1: Language=$session.system_language].ProductName as maktx)` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `Product` | `Product` |
-| `ProductExternalID` | `ProductExternalID` |
-| `ProductType` | `ProductType` |
-| `ProductGroup` | `ProductGroup` |
-| `_ProductType` | *Association* |
-| `_ProductGroup_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  | `cast (Product as matnr preserving type )` |
+| `MaterialDescription` |  | |  | `cast( _Text[1: Language=$session.system_language].ProductName as maktx)` |
+| `AuthorizationGroup` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductExternalID` |  | |  |  |
+| `ProductType` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `_ProductType` | | ✓ | | |
+| `_ProductGroup_2` | | ✓ | | |
 
 ## Source Code
 

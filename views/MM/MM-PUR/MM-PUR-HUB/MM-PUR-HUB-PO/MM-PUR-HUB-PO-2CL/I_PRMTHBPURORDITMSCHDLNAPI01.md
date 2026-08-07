@@ -28,52 +28,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrmtHbRpldPurchaseOrder` | `PurchaseOrder` |
-| key `PrmtHbRpldPurchaseOrderItem` | `PurchaseOrderItem` |
-| key `ProcurementHubSourceSystem` | `ExtSourceSystem` |
-| key `PrmtHbRpldPOItmSchdLn` | `ScheduleLine` |
-| `PrmtHbDelivDateCategory` | `DelivDateCategory` |
-| `PrmtHbSchedLineDlvDte` | `ScheduleLineDeliveryDate` |
-| `PrmtHbSchedLineStstcsDlvDte` | `SchedLineStscDeliveryDate` |
-| `PrmtHbPerfPerdStrtDte` | `PerformancePeriodStartDate` |
-| `PrmtHbPerfPerdEndDte` | `PerformancePeriodEndDate` |
-| `PrmtHbSchedLineDelivTme` | `ScheduleLineDeliveryTime` |
-| `ProcmtHubPurchaseRequisition` | `PurchaseRequisition` |
-| `ProcmtHubPurRequisitionItem` | `PurchaseRequisitionItem` |
-| `ProcurementHubSourceOfCreation` | `SourceOfCreation` |
-| `PrmtHbPrevDelivOfSchdLnQty` | `PrevDelivQtyOfScheduleLine` |
-| `PrmtHbNmbrOfRemOfSchdLn` | `NoOfRemindersOfScheduleLine` |
-| `PrmtHbScheduleLineIsFixed` | `ScheduleLineIsFixed` |
-| `PrmtHbSchdLnCmtdQty` | `ScheduleLineCommittedQuantity` |
-| `ProcurementHubReservation` | `Reservation` |
-| `PrmtHbProductAvailabilityDate` | `ProductAvailabilityDate` |
-| `PrmtHbMaterialStagingTime` | `MaterialStagingTime` |
-| `PrmtHbTranspPlngDte` | `TransportationPlanningDate` |
-| `PrmtHbTranspPlngTme` | `TransportationPlanningTime` |
-| `PrmtHbLoadingDate` | `LoadingDate` |
-| `PrmtHbLoadingTime` | `LoadingTime` |
-| `PrmtHbGoodsIssueDate` | `GoodsIssueDate` |
-| `PrmtHbGoodsIssueTime` | `GoodsIssueTime` |
-| `PrmtHbSTOLtstPosblGRDte` | `STOLatestPossibleGRDate` |
-| `PrmtHbSTOLtstPosblGRTme` | `STOLatestPossibleGRTime` |
-| `PrmtHbGoodsReceiptQuantity` | `GoodsReceiptQuantity` |
-| `PrmtHbStkTransfDlvrdQty` | `StockTransferDeliveredQuantity` |
-| `PrmtHbSchedLineIssdQty` | `ScheduleLineIssuedQuantity` |
-| `ProcmtHubBatch` | `Batch` |
-| `PrmtHbScheduleLineOrderDate` | `ScheduleLineOrderDate` |
-| `PrmtHbSchdAgrRelType` | `SchedulingAgreementReleaseType` |
-| `PrmtHbCommittedDeliveryDate` | `CommittedDeliveryDate` |
-| `PrmtHbSchedDtaAgingFltrDte` | `SchedgLineDataAgingFilterDate` |
-| `PrmtHbPurOrdQtyUnt` | `PurchaseOrderQuantityUnit` |
-| `ProcmtHubDocumentCurrency` | `Currency` |
-| `PrmtHbSchdLnOpnQty` | `ScheduleLineOpenQuantity` |
-| `PrmtHbSchdLnOrdQty` | `ScheduleLineOrderQuantity` |
-| `PrmtHbRoughGoodsReceiptQty` | `RoughGoodsReceiptQty` |
-| `PrmtHbOpnPurOrdQty` | `OpenPurchaseOrderQuantity` |
-| `_ProcmtHubPOHeader` | *Association* |
-| `_ProcmtHubPOItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrmtHbRpldPurchaseOrder` | ✓ | |  | `PurchaseOrder` |
+| `PrmtHbRpldPurchaseOrderItem` | ✓ | |  | `PurchaseOrderItem` |
+| `ProcurementHubSourceSystem` | ✓ | |  | `ExtSourceSystem` |
+| `PrmtHbRpldPOItmSchdLn` | ✓ | |  | `ScheduleLine` |
+| `PrmtHbDelivDateCategory` |  | |  | `DelivDateCategory` |
+| `PrmtHbSchedLineDlvDte` |  | |  | `ScheduleLineDeliveryDate` |
+| `PrmtHbSchedLineStstcsDlvDte` |  | |  | `SchedLineStscDeliveryDate` |
+| `PrmtHbPerfPerdStrtDte` |  | |  | `PerformancePeriodStartDate` |
+| `PrmtHbPerfPerdEndDte` |  | |  | `PerformancePeriodEndDate` |
+| `PrmtHbSchedLineDelivTme` |  | |  | `ScheduleLineDeliveryTime` |
+| `ProcmtHubPurchaseRequisition` |  | |  | `PurchaseRequisition` |
+| `ProcmtHubPurRequisitionItem` |  | |  | `PurchaseRequisitionItem` |
+| `ProcurementHubSourceOfCreation` |  | |  | `SourceOfCreation` |
+| `PrmtHbPrevDelivOfSchdLnQty` |  | |  | `PrevDelivQtyOfScheduleLine` |
+| `PrmtHbNmbrOfRemOfSchdLn` |  | |  | `NoOfRemindersOfScheduleLine` |
+| `PrmtHbScheduleLineIsFixed` |  | |  | `ScheduleLineIsFixed` |
+| `PrmtHbSchdLnCmtdQty` |  | |  | `ScheduleLineCommittedQuantity` |
+| `ProcurementHubReservation` |  | |  | `Reservation` |
+| `PrmtHbProductAvailabilityDate` |  | |  | `ProductAvailabilityDate` |
+| `PrmtHbMaterialStagingTime` |  | |  | `MaterialStagingTime` |
+| `PrmtHbTranspPlngDte` |  | |  | `TransportationPlanningDate` |
+| `PrmtHbTranspPlngTme` |  | |  | `TransportationPlanningTime` |
+| `PrmtHbLoadingDate` |  | |  | `LoadingDate` |
+| `PrmtHbLoadingTime` |  | |  | `LoadingTime` |
+| `PrmtHbGoodsIssueDate` |  | |  | `GoodsIssueDate` |
+| `PrmtHbGoodsIssueTime` |  | |  | `GoodsIssueTime` |
+| `PrmtHbSTOLtstPosblGRDte` |  | |  | `STOLatestPossibleGRDate` |
+| `PrmtHbSTOLtstPosblGRTme` |  | |  | `STOLatestPossibleGRTime` |
+| `PrmtHbGoodsReceiptQuantity` |  | |  | `GoodsReceiptQuantity` |
+| `PrmtHbStkTransfDlvrdQty` |  | |  | `StockTransferDeliveredQuantity` |
+| `PrmtHbSchedLineIssdQty` |  | |  | `ScheduleLineIssuedQuantity` |
+| `ProcmtHubBatch` |  | |  | `Batch` |
+| `PrmtHbScheduleLineOrderDate` |  | |  | `ScheduleLineOrderDate` |
+| `PrmtHbSchdAgrRelType` |  | |  | `SchedulingAgreementReleaseType` |
+| `PrmtHbCommittedDeliveryDate` |  | |  | `CommittedDeliveryDate` |
+| `PrmtHbSchedDtaAgingFltrDte` |  | |  | `SchedgLineDataAgingFilterDate` |
+| `PrmtHbPurOrdQtyUnt` |  | |  | `PurchaseOrderQuantityUnit` |
+| `ProcmtHubDocumentCurrency` |  | |  | `Currency` |
+| `PrmtHbSchdLnOpnQty` |  | |  | `ScheduleLineOpenQuantity` |
+| `PrmtHbSchdLnOrdQty` |  | |  | `ScheduleLineOrderQuantity` |
+| `PrmtHbRoughGoodsReceiptQty` |  | |  | `RoughGoodsReceiptQty` |
+| `PrmtHbOpnPurOrdQty` |  | |  | `OpenPurchaseOrderQuantity` |
+| `_ProcmtHubPOHeader` | | ✓ | | |
+| `_ProcmtHubPOItem` | | ✓ | | |
 
 ## Associations
 

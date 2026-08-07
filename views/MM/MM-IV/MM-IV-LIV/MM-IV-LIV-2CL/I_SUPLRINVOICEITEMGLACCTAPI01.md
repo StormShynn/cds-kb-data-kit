@@ -29,55 +29,55 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `I_SupplierInvoiceItemGLAcct.SupplierInvoice` |
-| key `FiscalYear` | `I_SupplierInvoiceItemGLAcct.FiscalYear` |
-| key `SupplierInvoiceItem` | `OrdinalNumber` |
-| `CostCenter` | `CostCenter` |
-| `ControllingArea` | `ControllingArea` |
-| `BusinessArea` | `BusinessArea` |
-| `ProfitCenter` | `ProfitCenter` |
-| `FunctionalArea` | `FunctionalArea` |
-| `GLAccount` | `GLAccount` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `ProjectNetworkInternalID` | `ProjectNetworkInternalID` |
-| `NetworkActivityInternalID` | `NetworkActivityInternalID` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `NetworkActivity` | `NetworkActivity` |
-| `CostObject` | `CostObject` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `BusinessProcess` | `BusinessProcess` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElementInternalID_2` | `WBSElementInternalID_2` |
-| `DocumentCurrency` | `I_SupplierInvoiceItemGLAcct.DocumentCurrency` |
-| `SupplierInvoiceItemAmount` | `SupplierInvoiceItemAmount` |
-| `TaxCode` | `TaxCode` |
-| `PersonnelNumber` | `PersonnelNumber` |
-| `WorkItem` | `WorkItem` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `SupplierInvoiceItemText` | `SupplierInvoiceItemText` |
-| `AssignmentReference` | `I_SupplierInvoiceItemGLAcct.AssignmentReference` |
-| `IsNotCashDiscountLiable` | `IsNotCashDiscountLiable` |
-| `InternalOrder` | `InternalOrder` |
-| `CommitmentItem` | `CommitmentItem` |
-| `FundsCenter` | `FundsCenter` |
-| `Fund` | `Fund` |
-| `GrantID` | `GrantID` |
-| `QuantityUnit` | `QuantityUnit` |
-| `Quantity` | `Quantity` |
-| `PartnerBusinessArea` | `PartnerBusinessArea` |
-| `FinancialTransactionType` | `FinancialTransactionType` |
-| `ServiceDocument` | `ServiceDocument` |
-| `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `CompanyCode` | `I_SupplierInvoiceItemGLAcct.CompanyCode` |
-| `TaxCountry` | `I_SupplierInvoiceItemGLAcct.TaxCountry` |
-| `_SupplierInvoiceAPI01` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_WBSElementBasicData` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `SupplierInvoiceItem` | ✓ | |  | `OrdinalNumber` |
+| `CostCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |
+| `NetworkActivityInternalID` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `NetworkActivity` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementInternalID_2` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `PersonnelNumber` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `SupplierInvoiceItemText` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |
+| `InternalOrder` |  | |  |  |
+| `CommitmentItem` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `Fund` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `PartnerBusinessArea` |  | |  |  |
+| `FinancialTransactionType` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
 
 ## Associations
 

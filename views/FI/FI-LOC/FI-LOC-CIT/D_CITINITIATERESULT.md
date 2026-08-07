@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `FromReportingDate` | `abap.dats` |
-| `ToReportingDate` | `abap.dats` |
-| `CompanyCode` | `bukrs` |
-| `CorporateIncomeTaxHierarchy` | `ficite_hryid` |
-| `SourceLedger` | `fins_ledger` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FromReportingDate` |  | |  | `dats` |
+| `ToReportingDate` |  | |  | `dats` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `CorporateIncomeTaxHierarchy` |  | |  | `ficite_hryid` |
+| `SourceLedger` |  | |  | `fins_ledger` |
 
 ## Source Code
 

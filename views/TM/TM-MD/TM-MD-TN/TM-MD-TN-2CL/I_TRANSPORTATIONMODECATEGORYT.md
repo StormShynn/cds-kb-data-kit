@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationModeCategory` | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tor_trmod_cat preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TransportationModeCategoryDesc` | `cast ( ddtext as /scmtms/vdm_tor_trmod_cat_desc preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Language` | *Association* |
-| `_TransportationModeCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationModeCategory` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_tor_trmod_cat preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TransportationModeCategoryDesc` |  | |  | `cast ( ddtext as /scmtms/vdm_tor_trmod_cat_desc preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TransportationModeCategory` | | ✓ | | |
 
 ## Associations
 

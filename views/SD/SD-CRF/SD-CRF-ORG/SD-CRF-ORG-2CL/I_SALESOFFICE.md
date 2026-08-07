@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOffice` | `vkbur` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOffice` | ✓ | |  | `vkbur` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

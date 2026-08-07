@@ -31,23 +31,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `PlantStorage.Product` |
-| key `Plant` | `PlantStorage.Plant` |
-| `InventoryForCycleCountInd` | `PlantStorage.InventoryForCycleCountInd` |
-| `MaximumStoragePeriod` | `PlantStorage.MaximumStoragePeriod` |
-| `ProvisioningServiceLevel` | `PlantStorage.ProvisioningServiceLevel` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `ProdMaximumStoragePeriodUnit` | `PlantStorage.ProdMaximumStoragePeriodUnit` |
-| `WrhsMgmtPtwyAndStkRemovalStrgy` | `PlantStorage.WrhsMgmtPtwyAndStkRemovalStrgy` |
-| `CycleCountingIndicatorIsFixed` | `PlantStorage.CycleCountingIndicatorIsFixed` |
-| `SegmentationStrategyForPlant` | `PlantStorage.SegmentationStrategyForPlant` |
-| `DefaultSegmentValue` | `PlantStorage.DefaultSegmentValue` |
-| `SgmtHasPrioInProductStockSort` | `PlantStorage.SgmtHasPrioInProductStockSort` |
-| `_Product` | *Association* |
-| `_ProvisioningSrvcLvl` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `InventoryForCycleCountInd` |  | |  |  |
+| `MaximumStoragePeriod` |  | |  |  |
+| `ProvisioningServiceLevel` |  | |  |  |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `ProdMaximumStoragePeriodUnit` |  | |  |  |
+| `WrhsMgmtPtwyAndStkRemovalStrgy` |  | |  |  |
+| `CycleCountingIndicatorIsFixed` |  | |  |  |
+| `SegmentationStrategyForPlant` |  | |  |  |
+| `DefaultSegmentValue` |  | |  |  |
+| `SgmtHasPrioInProductStockSort` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProvisioningSrvcLvl` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

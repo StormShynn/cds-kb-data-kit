@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `PrjBlgElmEntrCanclnSrceCode` | `cast( substring( domvalue_l, 1, 1 ) as pbee_cancellingsrc preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PrjBlgElmEntrCanclnSrcCdText` | `ddtext` |
-| `_Language` | *Association* |
-| `_PrjBlgElmEntrCanclnSrceCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PrjBlgElmEntrCanclnSrceCode` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbee_cancellingsrc preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PrjBlgElmEntrCanclnSrcCdText` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_PrjBlgElmEntrCanclnSrceCode` | | ✓ | | |
 
 ## Associations
 

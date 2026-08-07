@@ -31,28 +31,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `wyt3.lifnr` |
-| key `PurchasingOrganization` | `wyt3.ekorg` |
-| key `SupplierSubrange` | `wyt3.ltsnr` |
-| key `Plant` | `wyt3.werks` |
-| key `PartnerFunction` | `wyt3.parvw` |
-| key `PartnerCounter` | `wyt3.parza` |
-| `DefaultPartner` | `wyt3.defpa` |
-| `CreationDate` | `wyt3.erdat` |
-| `CreatedByUser` | `wyt3.ernam` |
-| `PartnerFunctionType` | `tpar.nrart` |
-| `ReferenceSupplier` | `case when tpar.nrart = 'LI' then wyt3.lifn2 when tpar.nrart = 'WK' then wyt3.werks when tpar.nrart = 'AP' then wyt3.parnr when tpar.nrart = 'PE' then wyt3.pernr else '' end` |
-| `ContactPerson` | `parnr` |
-| `PersonnelNumber` | `pernr` |
-| `AuthorizationGroup` | `_SupplierPurchasing.AuthorizationGroup` |
-| `_SupplierPurchasing` | *Association* |
-| `_Supplier` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_SupplierSubrange` | *Association* |
-| `_Plant` | *Association* |
-| `_SupplierPartnerCounter` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |
+| `PurchasingOrganization` | ✓ | |  | `ekorg` |
+| `SupplierSubrange` | ✓ | |  | `ltsnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `PartnerFunction` | ✓ | |  | `parvw` |
+| `PartnerCounter` | ✓ | |  | `parza` |
+| `DefaultPartner` |  | |  | `defpa` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `PartnerFunctionType` |  | |  | `nrart` |
+| `ReferenceSupplier` |  | |  | `case when tpar.nrart = 'LI' then wyt3.lifn2 when tpar.nrart = 'WK' then wyt3.werks when tpar.nrart = 'AP' then wyt3.parnr when tpar.nrart = 'PE' then wyt3.pernr else '' end` |
+| `ContactPerson` |  | |  | `parnr` |
+| `PersonnelNumber` |  | |  | `pernr` |
+| `AuthorizationGroup` |  | | `_SupplierPurchasing` | `AuthorizationGroup` |
+| `_SupplierPurchasing` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_SupplierSubrange` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_SupplierPartnerCounter` | | ✓ | | |
 
 ## Associations
 

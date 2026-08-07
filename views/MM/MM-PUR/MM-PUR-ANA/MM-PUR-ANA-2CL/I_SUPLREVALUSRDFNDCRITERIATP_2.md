@@ -29,32 +29,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalUsrDfndCritraUUID` | `SuplrEvalUsrDfndCritraUUID` |
-| `Supplier` | `Supplier` |
-| `MaterialGroup` | `MaterialGroup` |
-| `PurchasingCategory` | `PurchasingCategory` |
-| `SuplrEvalUserDefinedCriteria` | `SuplrEvalUserDefinedCriteria` |
-| `SuplrEvalUserDfndCriteriaDesc` | `SuplrEvalUserDfndCriteriaDesc` |
-| `SuplrEvalUsrCritraValidFrmDte` | `SuplrEvalUsrCritraValidFrmDte` |
-| `SuplrEvalUsrCritraValidToDte` | `SuplrEvalUsrCritraValidToDte` |
-| `SuplrEvalUsrDfndCritraRptdDte` | `SuplrEvalUsrDfndCritraRptdDte` |
-| `SuplrEvalUsrDfndCritraCrtedBy` | `SuplrEvalUsrDfndCritraCrtedBy` |
-| `SuplrEvalUserDfndCritraCrtnDte` | `SuplrEvalUserDfndCritraCrtnDte` |
-| `SuplrEvalUsrDfndCritraChgdBy` | `SuplrEvalUsrDfndCritraChgdBy` |
-| `SuplrEvalUserDfndCritraChgDate` | `SuplrEvalUserDfndCritraChgDate` |
-| `TotNmbrOfSuplrUsrDfndCritra` | `TotNmbrOfSuplrUsrDfndCritra` |
-| `IsDeleted` | `IsDeleted` |
-| `SuplrEvalUsrCritraCommentText` | `SuplrEvalUsrCritraCommentText` |
-| `SupplierAccountGroup` | `SupplierAccountGroup` |
-| `SuplrEvalUsrCritraChgDteTme` | `SuplrEvalUsrCritraChgDteTme` |
-| `_CreatedBy` | *Association* |
-| `_LastChangedBy` | *Association* |
-| `_MatGroup` | *Association* |
-| `_StatusVH` | *Association* |
-| `_SuplrEvalUserDfndCriteria` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalUsrDfndCritraUUID` | ✓ | |  |  |
+| `Supplier` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `PurchasingCategory` |  | |  |  |
+| `SuplrEvalUserDefinedCriteria` |  | |  |  |
+| `SuplrEvalUserDfndCriteriaDesc` |  | |  |  |
+| `SuplrEvalUsrCritraValidFrmDte` |  | |  |  |
+| `SuplrEvalUsrCritraValidToDte` |  | |  |  |
+| `SuplrEvalUsrDfndCritraRptdDte` |  | |  |  |
+| `SuplrEvalUsrDfndCritraCrtedBy` |  | |  |  |
+| `SuplrEvalUserDfndCritraCrtnDte` |  | |  |  |
+| `SuplrEvalUsrDfndCritraChgdBy` |  | |  |  |
+| `SuplrEvalUserDfndCritraChgDate` |  | |  |  |
+| `TotNmbrOfSuplrUsrDfndCritra` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `SuplrEvalUsrCritraCommentText` |  | |  |  |
+| `SupplierAccountGroup` |  | |  |  |
+| `SuplrEvalUsrCritraChgDteTme` |  | |  |  |
+| `_CreatedBy` | | ✓ | | |
+| `_LastChangedBy` | | ✓ | | |
+| `_MatGroup` | | ✓ | | |
+| `_StatusVH` | | ✓ | | |
+| `_SuplrEvalUserDfndCriteria` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Source Code
 

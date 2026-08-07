@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `DeliveryDocumentType` | `lfart` |
-| `OverallPackingStatus` | `pkstk` |
-| `PreviousOverallPackingStatus` | `pkstk` |
-| `SalesOrganization` | `vkorg` |
-| `SDDocumentCategory` | `vbtypl` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryDocumentType` |  | |  | `lfart` |
+| `OverallPackingStatus` |  | |  | `pkstk` |
+| `PreviousOverallPackingStatus` |  | |  | `pkstk` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `SDDocumentCategory` |  | |  | `vbtypl` |
 
 ## Source Code
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RAPerfOblgnDistinctType` | `cast(dd07l.domvalue_l as farr_distinct)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RAPerfOblgnDistinctType` | ✓ | |  | `cast(dd07l.domvalue_l as farr_distinct)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

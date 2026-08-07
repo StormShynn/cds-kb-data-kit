@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinSGLErrorItemUUID` | `item_id` |
-| key `FinSGLErrorSequenceNo` | `seq_no` |
-| `FinSGLErrorMessageType` | `type` |
-| `FinSGLErrorMessageID` | `id` |
-| `FinSGLErrorMessageNo` | `message_no` |
-| `FinSGLErrMsgVarbl1Txt` | `message_v1` |
-| `FinSGLErrMsgVarbl2Txt` | `message_v2` |
-| `FinSGLErrMsgVarbl3Txt` | `message_v3` |
-| `FinSGLErrMsgVarbl4Txt` | `message_v4` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinSGLErrorItemUUID` | ✓ | |  | `item_id` |
+| `FinSGLErrorSequenceNo` | ✓ | |  | `seq_no` |
+| `FinSGLErrorMessageType` |  | |  | `type` |
+| `FinSGLErrorMessageID` |  | |  | `id` |
+| `FinSGLErrorMessageNo` |  | |  | `message_no` |
+| `FinSGLErrMsgVarbl1Txt` |  | |  | `message_v1` |
+| `FinSGLErrMsgVarbl2Txt` |  | |  | `message_v2` |
+| `FinSGLErrMsgVarbl3Txt` |  | |  | `message_v3` |
+| `FinSGLErrMsgVarbl4Txt` |  | |  | `message_v4` |
 
 ## Source Code
 

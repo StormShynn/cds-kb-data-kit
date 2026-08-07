@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallBillingDocReqStatus` | `substring(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `OverallBillingStatusDesc` | `ddtext` |
-| `_OvrlBillingDocReqStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallBillingDocReqStatus` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `OverallBillingStatusDesc` |  | |  | `ddtext` |
+| `_OvrlBillingDocReqStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

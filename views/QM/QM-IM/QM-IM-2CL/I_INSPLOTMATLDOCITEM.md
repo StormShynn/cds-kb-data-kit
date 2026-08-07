@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `prueflos` |
-| key `InspLotMatlDocItem` | `zaehler` |
-| `InspLotMatlDocItemType` | `typ` |
-| `MaterialDocument` | `mblnr` |
-| `MaterialDocumentYear` | `mjahr` |
-| `MaterialDocumentItem` | `zeile` |
-| `CreationDate` | `cpudt` |
-| `UsageDecisionStockType` | `ud_stock_type` |
-| `_InspectionLot` | *Association* |
-| `_InspLotMatlDocItemType` | *Association* |
-| `_GoodsMovementDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |
+| `InspLotMatlDocItem` | ✓ | |  | `zaehler` |
+| `InspLotMatlDocItemType` |  | |  | `typ` |
+| `MaterialDocument` |  | |  | `mblnr` |
+| `MaterialDocumentYear` |  | |  | `mjahr` |
+| `MaterialDocumentItem` |  | |  | `zeile` |
+| `CreationDate` |  | |  | `cpudt` |
+| `UsageDecisionStockType` |  | |  | `ud_stock_type` |
+| `_InspectionLot` | | ✓ | | |
+| `_InspLotMatlDocItemType` | | ✓ | | |
+| `_GoodsMovementDocument` | | ✓ | | |
 
 ## Associations
 

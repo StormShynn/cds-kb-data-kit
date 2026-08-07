@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `dd07t.ddlanguage` |
-| key `TimeSheetTaskTypeRelevanceCode` | `cast(dd07t.domvalue_l as catsxt_tasktype_relevance)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `TimeSheetTaskTypeRelevanceText` | `dd07t.ddtext` |
-| `_TimeSheetTaskTypeRelevance` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TimeSheetTaskTypeRelevanceCode` | ✓ | |  | `cast(dd07t.domvalue_l as catsxt_tasktype_relevance)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `TimeSheetTaskTypeRelevanceText` |  | |  | `ddtext` |
+| `_TimeSheetTaskTypeRelevance` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HdrGoodsMvtIncompletionStatus` | `cast( left(dd07l.domvalue_l, 1 ) as uvwak_uk preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HdrGoodsMvtIncompletionStatus` | ✓ | |  | `cast( left(dd07l.domvalue_l, 1 ) as uvwak_uk preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

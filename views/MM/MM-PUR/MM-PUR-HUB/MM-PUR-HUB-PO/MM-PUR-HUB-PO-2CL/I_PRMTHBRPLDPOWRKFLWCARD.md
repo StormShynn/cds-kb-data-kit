@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `ExtSourceSystem` | `ExtSourceSystem` |
-| `PurchaseOrderType` | `PurchaseOrderType` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `CompanyCode` | `CompanyCode` |
-| `Supplier` | `Supplier` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `PurchaseOrderNetAmount` | `PurchaseOrderNetAmount` |
-| `PurchaseOrderDate` | `PurchaseOrder.PurchaseOrderDate` |
-| `PurchasingOrganization` | `cast (PurchaseOrder.PurchasingOrganization as ekorg_ll preserving type )` |
-| `ProcmtHubSupplierName` | `case when _ProcmtHubSupplier.ProcmtHubSupplierName = '' or _ProcmtHubSupplier.ProcmtHubSupplierName is null then PurchaseOrder.Supplier else _ProcmtHubSupplier.ProcmtHubSupplierName end` |
-| `PurchasingGroupName` | `case when _PurchasingGrp.PurchasingGroupName = '' or _PurchasingGrp.PurchasingGroupName is null then PurchaseOrder.PurchasingGroup else _PurchasingGrp.PurchasingGroupName end` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `ExtSourceSystem` | ✓ | |  |  |
+| `PurchaseOrderType` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `PurchaseOrderNetAmount` |  | |  |  |
+| `PurchaseOrderDate` |  | |  |  |
+| `PurchasingOrganization` |  | |  | `cast (PurchaseOrder.PurchasingOrganization as ekorg_ll preserving type )` |
+| `ProcmtHubSupplierName` |  | |  | `case when _ProcmtHubSupplier.ProcmtHubSupplierName = '' or _ProcmtHubSupplier.ProcmtHubSupplierName is null then PurchaseOrder.Supplier else _ProcmtHubSupplier.ProcmtHubSupplierName end` |
+| `PurchasingGroupName` |  | |  | `case when _PurchasingGrp.PurchasingGroupName = '' or _PurchasingGrp.PurchasingGroupName is null then PurchaseOrder.PurchasingGroup else _PurchasingGrp.PurchasingGroupName end` |
 
 ## Associations
 

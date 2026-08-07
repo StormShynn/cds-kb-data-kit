@@ -28,31 +28,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CndnContrType` | `CndnContrType` |
-| `CndnContrTypeBlockUsage` | `CndnContrTypeBlockUsage` |
-| `CndnContrPartnerCat` | `CndnContrPartnerCat` |
-| `CndnContrEligibleCat` | `CndnContrEligibleCat` |
-| `CndnContrClassfctnType` | `CndnContrClassfctnType` |
-| `CndnContrHasNoConditions` | `CndnContrHasNoConditions` |
-| `CndnContrSettlmtType` | `CndnContrSettlmtType` |
-| `CndnContrChangeability` | `CndnContrChangeability` |
-| `BusVolFldCombnSet` | `BusVolFldCombnSet` |
-| `CndnContrPrtlSettlmtCat` | `CndnContrPrtlSettlmtCat` |
-| `CndnContrItemCategory` | `CndnContrItemCategory` |
-| `CndnContrAccrRvslCat` | `CndnContrAccrRvslCat` |
-| `_Text` | *Association* |
-| `_CndnContrTypeBlockUsage` | *Association* |
-| `_CndnContrPartnerCat` | *Association* |
-| `_CndnContrChangeability` | *Association* |
-| `_BusVolFldCombnSet` | *Association* |
-| `_CndnContrClassfctnType` | *Association* |
-| `_CndnContrItemCategory` | *Association* |
-| `_CndnContrEligibleCat` | *Association* |
-| `_CndnContrSettlmtType` | *Association* |
-| `_CndnContrPrtlSettlmtCat` | *Association* |
-| `_CndnContrAccrRvslCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CndnContrType` | ✓ | |  |  |
+| `CndnContrTypeBlockUsage` |  | |  |  |
+| `CndnContrPartnerCat` |  | |  |  |
+| `CndnContrEligibleCat` |  | |  |  |
+| `CndnContrClassfctnType` |  | |  |  |
+| `CndnContrHasNoConditions` |  | |  |  |
+| `CndnContrSettlmtType` |  | |  |  |
+| `CndnContrChangeability` |  | |  |  |
+| `BusVolFldCombnSet` |  | |  |  |
+| `CndnContrPrtlSettlmtCat` |  | |  |  |
+| `CndnContrItemCategory` |  | |  |  |
+| `CndnContrAccrRvslCat` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_CndnContrTypeBlockUsage` | | ✓ | | |
+| `_CndnContrPartnerCat` | | ✓ | | |
+| `_CndnContrChangeability` | | ✓ | | |
+| `_BusVolFldCombnSet` | | ✓ | | |
+| `_CndnContrClassfctnType` | | ✓ | | |
+| `_CndnContrItemCategory` | | ✓ | | |
+| `_CndnContrEligibleCat` | | ✓ | | |
+| `_CndnContrSettlmtType` | | ✓ | | |
+| `_CndnContrPrtlSettlmtCat` | | ✓ | | |
+| `_CndnContrAccrRvslCat` | | ✓ | | |
 
 ## Associations
 

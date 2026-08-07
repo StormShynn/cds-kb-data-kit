@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesPlanUUID` | `SalesPlanUUID` |
-| `SalesPlan` | `SalesPlan` |
-| `SalesPlanDescription` | `SalesPlanDescription` |
-| `SalesPlanVersion` | `SalesPlanVersion` |
-| `SalesPlanVersionDescription` | `SalesPlanVersionDescription` |
-| `CreatedByUser` | `CreatedByUser` |
-| `UserDescription` | `cast( _CreatedByUser.UserDescription as sp_username preserving type )` |
-| `SalesPlanStatus` | `_SalesPlanStatus._Text[1: Language=$session.system_language].SalesPlanStatusDesc` |
-| `SalesPlanPurpose` | `_SalesPlanPurposeText[1: Language=$session.system_language].SalesPlanPurposeDesc` |
-| `SalesPlanPeriodTypeName` | `_SalesPlanPeriodTypeText[1: Language=$session.system_language].SalesPlanPeriodTypeName` |
-| `SalesPlanFrom` | `SalesPlanFrom` |
-| `SalesPlanTo` | `SalesPlanTo` |
-| `SalesPlanCurrency` | `SalesPlanCurrency` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesPlanUUID` | ✓ | |  |  |
+| `SalesPlan` |  | |  |  |
+| `SalesPlanDescription` |  | |  |  |
+| `SalesPlanVersion` |  | |  |  |
+| `SalesPlanVersionDescription` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `UserDescription` |  | |  | `cast( _CreatedByUser.UserDescription as sp_username preserving type )` |
+| `SalesPlanStatus` |  | |  | `_SalesPlanStatus._Text[1: Language=$session.system_language].SalesPlanStatusDesc` |
+| `SalesPlanPurpose` |  | |  | `_SalesPlanPurposeText[1: Language=$session.system_language].SalesPlanPurposeDesc` |
+| `SalesPlanPeriodTypeName` |  | |  | `_SalesPlanPeriodTypeText[1: Language=$session.system_language].SalesPlanPeriodTypeName` |
+| `SalesPlanFrom` |  | |  |  |
+| `SalesPlanTo` |  | |  |  |
+| `SalesPlanCurrency` |  | |  |  |
 
 ## Source Code
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SDDocumentCategory` | `sd_document_category` |
-| key `SalesDocApprovalReason` | `apm_approval_reason` |
-| `_SDDocumentCategory` | *Association* |
-| `_SDApprovalReason` | *Association* |
-| `_SDApprovalReasonT` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SDDocumentCategory` | ✓ | |  | `sd_document_category` |
+| `SalesDocApprovalReason` | ✓ | |  | `apm_approval_reason` |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_SDApprovalReason` | | ✓ | | |
+| `_SDApprovalReasonT` | | ✓ | | |
 
 ## Associations
 

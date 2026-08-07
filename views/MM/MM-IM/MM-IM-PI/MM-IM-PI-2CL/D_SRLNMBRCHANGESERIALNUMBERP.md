@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `NewSerialNumber` | `gernr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `NewSerialNumber` |  | |  | `gernr` |
 
 ## Source Code
 

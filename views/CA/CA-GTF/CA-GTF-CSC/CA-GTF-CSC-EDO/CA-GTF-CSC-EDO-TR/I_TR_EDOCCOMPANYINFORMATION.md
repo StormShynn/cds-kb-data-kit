@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `TR_EDocBusinessPartnerAlias` | `TR_EDocBusinessPartnerAlias` |
-| key `TR_ElectronicDocTaxID` | `TR_ElectronicDocTaxID` |
-| key `TR_ElectronicDocumentRole` | `TR_ElectronicDocumentRole` |
-| `TR_EDocTaxpayerName` | `TR_EDocTaxpayerName` |
-| `TR_EDocTaxpayerType` | `TR_EDocTaxpayerType` |
-| `TR_EDocFirstAliasRegnDateData` | `TR_EDocFirstAliasRegnDateData` |
-| `TR_EDocFirstAliasRegnTimeData` | `TR_EDocFirstAliasRegnTimeData` |
-| `TR_EDocIsDefaultAlias` | `TR_EDocIsDefaultAlias` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |
+| `TR_ElectronicDocTaxID` | ✓ | |  |  |
+| `TR_ElectronicDocumentRole` | ✓ | |  |  |
+| `TR_EDocTaxpayerName` |  | |  |  |
+| `TR_EDocTaxpayerType` |  | |  |  |
+| `TR_EDocFirstAliasRegnDateData` |  | |  |  |
+| `TR_EDocFirstAliasRegnTimeData` |  | |  |  |
+| `TR_EDocIsDefaultAlias` |  | |  |  |
 
 ## Source Code
 

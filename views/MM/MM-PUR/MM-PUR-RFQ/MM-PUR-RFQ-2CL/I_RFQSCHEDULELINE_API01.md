@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RequestForQuotation` | `I_RFQScheduleLine.RequestForQuotation` |
-| key `RequestForQuotationItem` | `I_RFQScheduleLine.RequestForQuotationItem` |
-| key `ScheduleLine` | `I_RFQScheduleLine.ScheduleLine` |
-| `DelivDateCategory` | `I_RFQScheduleLine.DelivDateCategory` |
-| `ScheduleLineDeliveryDate` | `I_RFQScheduleLine.ScheduleLineDeliveryDate` |
-| `SchedLineStscDeliveryDate` | `I_RFQScheduleLine.SchedLineStscDeliveryDate` |
-| `ScheduleLineDeliveryTime` | `I_RFQScheduleLine.ScheduleLineDeliveryTime` |
-| `ScheduleLineOrderQuantity` | `I_RFQScheduleLine.ScheduleLineOrderQuantity` |
-| `RoughGoodsReceiptQty` | `I_RFQScheduleLine.RoughGoodsReceiptQty` |
-| `OrderQuantityUnit` | `I_RFQScheduleLine.OrderQuantityUnit` |
-| `_RequestForQuotation` | *Association* |
-| `_RequestForQuotationItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RequestForQuotation` | ✓ | |  |  |
+| `RequestForQuotationItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `SchedLineStscDeliveryDate` |  | |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `_RequestForQuotation` | | ✓ | | |
+| `_RequestForQuotationItem` | | ✓ | | |
 
 ## Associations
 

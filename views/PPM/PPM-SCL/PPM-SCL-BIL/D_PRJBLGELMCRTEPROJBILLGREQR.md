@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProjectBillingRequestUUID` | `pbr_uuid` |
-| `ProjectBillingRequest` | `pbr_extid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectBillingRequestUUID` |  | |  | `pbr_uuid` |
+| `ProjectBillingRequest` |  | |  | `pbr_extid` |
 
 ## Source Code
 

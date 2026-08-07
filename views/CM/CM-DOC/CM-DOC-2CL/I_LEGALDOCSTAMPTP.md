@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDocumentStampUUID` | `LglCntntMDocumentStampUUID` |
-| `LglCntntMDocumentUUID` | `LglCntntMDocumentUUID` |
-| `LglCntntMDocumentStamp` | `LglCntntMDocumentStamp` |
-| `LglCntntMCreatedUTCDateTime` | `LglCntntMCreatedUTCDateTime` |
-| `LglCntntMCreatedByUser` | `LglCntntMCreatedByUser` |
-| `LglTransWrkFlwModInstce` | `LglTransWrkFlwModInstce` |
-| `_Document` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocumentStampUUID` | ✓ | |  |  |
+| `LglCntntMDocumentUUID` |  | |  |  |
+| `LglCntntMDocumentStamp` |  | |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |
+| `LglTransWrkFlwModInstce` |  | |  |  |
+| `_Document` | | ✓ | | |
 
 ## Source Code
 

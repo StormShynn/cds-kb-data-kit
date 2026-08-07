@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LogAccMObjectID` | `LogAccMObjectID` |
-| key `LogAccMSecureID` | `LogAccMSecureID` |
-| key `LogAccMObjectType` | `LogAccMObjectType` |
-| `LogAccMObjectAssignmentType` | `LogAccMObjectAssignmentType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_LogAccMUsrSecureIDAssgmt` | *Association* |
-| `_LogAccMSecureIDRepository` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LogAccMObjectID` | ✓ | |  |  |
+| `LogAccMSecureID` | ✓ | |  |  |
+| `LogAccMObjectType` | ✓ | |  |  |
+| `LogAccMObjectAssignmentType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_LogAccMUsrSecureIDAssgmt` | | ✓ | | |
+| `_LogAccMSecureIDRepository` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
 
 ## Source Code
 

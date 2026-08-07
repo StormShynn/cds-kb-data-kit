@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateScaleRefUUID` | `cast( db_key as /scmtms/transpratescalref_uuid preserving type)` |
-| `TransportationRateUUID` | `cast ( ( parent_key ) as /scmtms/transpratetable_uuid preserving type)` |
-| `TransportationScaleUUID` | `cast(uuid030 as /scmtms/vdm_rate_scale_uuid preserving type)` |
-| `TransportationCalculationBase` | `calc_base` |
-| `TranspRateScaleRefMinValIsSupp` | `minval_supported` |
-| `TranspRateScaleRefMaxValIsSupp` | `maxval_supported` |
-| `TranspRateScRefIsRlvtForBrkWgt` | `rel_for_wgtbrk` |
-| `TranspRateScaleRefScaleType` | `scatyp` |
-| `TranspRateScaleRefQtyUnit` | `scale_uom` |
-| `TranspRateScaleRefCurrency` | `scale_curr` |
-| `TranspRateScaleRefCalcType` | `calc_typ` |
-| `TranspRateDimensionIndex` | `dimension_indx` |
-| `TranspRateScaleRefNoValIsAllwd` | `initval_support` |
-| `TranspCmmdtyCodeNmbrngSchm` | `cast(stcts as /scmtms/stcts preserving type)` |
-| `_TranspScaleCalcType` | *Association* |
-| `_TranspScaleType` | *Association* |
-| `_TransportationCalculationBase` | *Association* |
-| `_TranspRateScaleRefQtyUnit` | *Association* |
-| `_TranspRateScaleRefCurrency` | *Association* |
-| `_TransportationRate` | *Association* |
-| `_TransportationScale` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateScaleRefUUID` | ✓ | |  | `cast( db_key as /scmtms/transpratescalref_uuid preserving type)` |
+| `TransportationRateUUID` |  | |  | `cast ( ( parent_key ) as /scmtms/transpratetable_uuid preserving type)` |
+| `TransportationScaleUUID` |  | |  | `cast(uuid030 as /scmtms/vdm_rate_scale_uuid preserving type)` |
+| `TransportationCalculationBase` |  | |  | `calc_base` |
+| `TranspRateScaleRefMinValIsSupp` |  | |  | `minval_supported` |
+| `TranspRateScaleRefMaxValIsSupp` |  | |  | `maxval_supported` |
+| `TranspRateScRefIsRlvtForBrkWgt` |  | |  | `rel_for_wgtbrk` |
+| `TranspRateScaleRefScaleType` |  | |  | `scatyp` |
+| `TranspRateScaleRefQtyUnit` |  | |  | `scale_uom` |
+| `TranspRateScaleRefCurrency` |  | |  | `scale_curr` |
+| `TranspRateScaleRefCalcType` |  | |  | `calc_typ` |
+| `TranspRateDimensionIndex` |  | |  | `dimension_indx` |
+| `TranspRateScaleRefNoValIsAllwd` |  | |  | `initval_support` |
+| `TranspCmmdtyCodeNmbrngSchm` |  | |  | `cast(stcts as /scmtms/stcts preserving type)` |
+| `_TranspScaleCalcType` | | ✓ | | |
+| `_TranspScaleType` | | ✓ | | |
+| `_TransportationCalculationBase` | | ✓ | | |
+| `_TranspRateScaleRefQtyUnit` | | ✓ | | |
+| `_TranspRateScaleRefCurrency` | | ✓ | | |
+| `_TransportationRate` | | ✓ | | |
+| `_TransportationScale` | | ✓ | | |
 
 ## Associations
 

@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `SupplierInvoice` |
-| key `SupplierInvoiceFiscalYear` | `SupplierInvoiceFiscalYear` |
-| `CompanyCode` | `CompanyCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `SupplierInvoiceFiscalYear` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
 
 ## Source Code
 

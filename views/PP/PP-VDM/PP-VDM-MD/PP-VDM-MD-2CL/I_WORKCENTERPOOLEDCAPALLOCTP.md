@@ -30,27 +30,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterInternalID` | `WorkCenterInternalID` |
-| key `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| key `CapacityCategoryAllocation` | `CapacityCategoryAllocation` |
-| key `CapacityInternalID` | `CapacityInternalID` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `Plant` | `Plant` |
-| `WorkCenter` | `WorkCenter` |
-| `WorkCenterCategoryCode` | `WorkCenterCategoryCode` |
-| `CapacityCategoryCode` | `CapacityCategoryCode` |
-| `Capacity` | `Capacity` |
-| `SetupCapRequirementFormula` | `SetupCapRequirementFormula` |
-| `ProcgCapRequirementFormula` | `ProcgCapRequirementFormula` |
-| `TeardownCapRequirementFormula` | `TeardownCapRequirementFormula` |
-| `OtherCapRequirementFormula` | `OtherCapRequirementFormula` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `WorkCenterLastChangeDateTime` | `WorkCenterLastChangeDateTime` |
-| `_Header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterInternalID` | ✓ | |  |  |
+| `WorkCenterTypeCode` | ✓ | |  |  |
+| `CapacityCategoryAllocation` | ✓ | |  |  |
+| `CapacityInternalID` | ✓ | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `Plant` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |
+| `CapacityCategoryCode` |  | |  |  |
+| `Capacity` |  | |  |  |
+| `SetupCapRequirementFormula` |  | |  |  |
+| `ProcgCapRequirementFormula` |  | |  |  |
+| `TeardownCapRequirementFormula` |  | |  |  |
+| `OtherCapRequirementFormula` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `WorkCenterLastChangeDateTime` |  | |  |  |
+| `_Header` | | ✓ | | |
 
 ## Source Code
 

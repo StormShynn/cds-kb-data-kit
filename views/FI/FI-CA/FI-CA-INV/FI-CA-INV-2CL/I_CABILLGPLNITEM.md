@@ -29,111 +29,111 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnNumber` | `billplanno` |
-| key `CABillgPlnItem` | `billplanitem` |
-| `CABillgPlnItmCat` | `bipitemcat` |
-| `CABillgPlnItmType` | `bipitemtype` |
-| `CABillgPlnItmTxt` | `bipitemtext` |
-| `CABillgPlnItemExtRef` | `bipitemref` |
-| `CABillgPlnItemAmount` | `betrw` |
-| `TransactionCurrency` | `waers` |
-| `CATaxIsIncluded` | `tax_included` |
-| `CABillgPlnItemQuantity` | `bip_quantity` |
-| `CABillgPlnItemQuantityUnit` | `bip_qty_unit` |
-| `CATaxDeterminationCode` | `ermwskz` |
-| `TaxCode` | `mwskz` |
-| `CABillgPlnItemStartDate` | `valid_from` |
-| `CABillgPlnItmEndDate` | `valid_to` |
-| `CABillgPlnItemTermStartDate` | `term_from` |
-| `CABillgPlnItemTermEndDate` | `term_to` |
-| `CABillgPlnItemRecurring` | `recurring` |
-| `CABillgCycle` | `cycle` |
-| `CAStartDateForBillingPeriod` | `cycle_startdate` |
-| `CAConditionType` | `kschl` |
-| `CABillgPlnItemAmountDetnType` | `cast(amount_det_type as bip_amount_det_type_gfn_kk preserving type )` |
-| `CABillgPlnItemAmountDateType` | `cast(amount_date_type as bip_amount_date_type_gfn_kk preserving type )` |
-| `CABillgPlnItemPriceDateType` | `price_date_type` |
-| `CAContract` | `vtref` |
-| `CAProviderContractItemNumber` | `vtpos` |
-| `CASubApplication` | `subap` |
-| `CAProviderContractItemUUID` | `vtpid` |
-| `Division` | `spart` |
-| `CompanyCode` | `bukrs` |
-| `BusinessArea` | `gsber` |
-| `Segment` | `segment` |
-| `CAMainTransaction` | `hvorg` |
-| `CASubTransaction` | `tvorg` |
-| `CABillgPlnItemServiceType` | `service_type` |
-| `CADependentItemType` | `cast(dittype as dittype_gfn_kk preserving type )` |
-| `Material` | `matnr` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `CAAccountDeterminationCode` | `kofiz` |
-| `CAInvcgOffsettingAction` | `offset_action` |
-| `CAInvcgOffsettingCategory` | `offset_cat` |
-| `CAInvcgOffsettingProcedure` | `offset_proc` |
-| `CAInvcgOffsettingReferenceKey` | `offset_refid` |
-| `CABillgPlnItemReqDteLast` | `requestdate_last` |
-| `CABillgPlnItemReqDteNext` | `requestdate_next` |
-| `CABillgPlnDvtgNextRequestDate` | `requestdate_next_dev` |
-| `CABillgPlnItemRequestedToDte` | `requested_to` |
-| `CABillgPlnItemCanceled` | `cancelled` |
-| `CABillgPlnSubItmExist` | `subitem_exists` |
-| `CABillgPlnItemMain` | `main_bipitem` |
-| `CABillgPlnItmExcptnReason` | `item_excreason` |
-| `CABillgPlnItemChildExist` | `child_exists` |
-| `CABillgPlnItemParent` | `parent_bipitem` |
-| `CABillgPlnItemStatus` | `status` |
-| `CABillgPlnItemNrOfBllbleItm` | `bit_number` |
-| `CAIsRevnAcctgTransfRecordRlvt` | `raoirel` |
-| `ConditionType` | `condition_type` |
-| `ConditionIsForStatistics` | `condition_statistic` |
-| `CANetDueDate` | `faedn` |
-| `CABillgPlnItmIsNotToBeReqd` | `cast(case when norequest is initial then '' else 'X' end as xfeld preserving type)` |
-| `CABllbleItmCostType` | `cast(co_type as co_type_gfn_kk preserving type)` |
-| `CABllbleItmCostSubType` | `cast(co_subtype as co_subtype_gfn_kk preserving type)` |
-| `CAIntcoCompanyCodeRequesting` | `ico_bukrs_req` |
-| `CAIntcoCompanyCodeSupplying` | `ico_bukrs_sup` |
-| `CAIntcoType` | `cast(ico_type as ico_type_gfn_kk preserving type)` |
-| `CAIntcoSubtype` | `cast(ico_subtype as ico_subtype_gfn_kk preserving type)` |
-| `_CAConditionType` | `_ConditionType` |
-| `_CABillgPln` | *Association* |
-| `_CABillgPlnItmType` | *Association* |
-| `_CABillgPlnItmCat` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_CABillgCycle` | *Association* |
-| `_CABillgPlnItmStatus` | *Association* |
-| `_ExcptnRsn` | *Association* |
-| `_CABillgPlnItmAmtDetnType` | *Association* |
-| `_CABillgPlnItmAmtDateType` | *Association* |
-| `_CABillgPlnItmPrcDateType` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_SubApplication` | *Association* |
-| `_ProviderContract` | *Association* |
-| `_CAProviderContractItem` | *Association* |
-| `_ConditionType` | *Association* |
-| `_CondType` | *Association* |
-| `_CARevnAcctgServiceType` | *Association* |
-| `_CADependentItemType` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_Segment` | *Association* |
-| `_Division` | *Association* |
-| `_Material` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_CAAccountDetnCode` | *Association* |
-| `_CAInvcgOffsettingAction` | *Association* |
-| `_CAInvcgOffsettingCategory` | *Association* |
-| `_CAInvcgOffsettingProcedure` | *Association* |
-| `_CABllbleItmCostType` | *Association* |
-| `_CABllbleItmCostSubtype` | *Association* |
-| `_CAIntcoCompanyCodeRequesting` | *Association* |
-| `_CAIntcoCompanyCodeSupplying` | *Association* |
-| `_CAIntcoType` | *Association* |
-| `_CAIntcoSubtype` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnNumber` | ✓ | |  | `billplanno` |
+| `CABillgPlnItem` | ✓ | |  | `billplanitem` |
+| `CABillgPlnItmCat` |  | |  | `bipitemcat` |
+| `CABillgPlnItmType` |  | |  | `bipitemtype` |
+| `CABillgPlnItmTxt` |  | |  | `bipitemtext` |
+| `CABillgPlnItemExtRef` |  | |  | `bipitemref` |
+| `CABillgPlnItemAmount` |  | |  | `betrw` |
+| `TransactionCurrency` |  | |  | `waers` |
+| `CATaxIsIncluded` |  | |  | `tax_included` |
+| `CABillgPlnItemQuantity` |  | |  | `bip_quantity` |
+| `CABillgPlnItemQuantityUnit` |  | |  | `bip_qty_unit` |
+| `CATaxDeterminationCode` |  | |  | `ermwskz` |
+| `TaxCode` |  | |  | `mwskz` |
+| `CABillgPlnItemStartDate` |  | |  | `valid_from` |
+| `CABillgPlnItmEndDate` |  | |  | `valid_to` |
+| `CABillgPlnItemTermStartDate` |  | |  | `term_from` |
+| `CABillgPlnItemTermEndDate` |  | |  | `term_to` |
+| `CABillgPlnItemRecurring` |  | |  | `recurring` |
+| `CABillgCycle` |  | |  | `cycle` |
+| `CAStartDateForBillingPeriod` |  | |  | `cycle_startdate` |
+| `CAConditionType` |  | |  | `kschl` |
+| `CABillgPlnItemAmountDetnType` |  | |  | `cast(amount_det_type as bip_amount_det_type_gfn_kk preserving type )` |
+| `CABillgPlnItemAmountDateType` |  | |  | `cast(amount_date_type as bip_amount_date_type_gfn_kk preserving type )` |
+| `CABillgPlnItemPriceDateType` |  | |  | `price_date_type` |
+| `CAContract` |  | |  | `vtref` |
+| `CAProviderContractItemNumber` |  | |  | `vtpos` |
+| `CASubApplication` |  | |  | `subap` |
+| `CAProviderContractItemUUID` |  | |  | `vtpid` |
+| `Division` |  | |  | `spart` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `BusinessArea` |  | |  | `gsber` |
+| `Segment` |  | |  | `segment` |
+| `CAMainTransaction` |  | |  | `hvorg` |
+| `CASubTransaction` |  | |  | `tvorg` |
+| `CABillgPlnItemServiceType` |  | |  | `service_type` |
+| `CADependentItemType` |  | |  | `cast(dittype as dittype_gfn_kk preserving type )` |
+| `Material` |  | |  | `matnr` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `CAAccountDeterminationCode` |  | |  | `kofiz` |
+| `CAInvcgOffsettingAction` |  | |  | `offset_action` |
+| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` |
+| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |
+| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |
+| `CABillgPlnItemReqDteLast` |  | |  | `requestdate_last` |
+| `CABillgPlnItemReqDteNext` |  | |  | `requestdate_next` |
+| `CABillgPlnDvtgNextRequestDate` |  | |  | `requestdate_next_dev` |
+| `CABillgPlnItemRequestedToDte` |  | |  | `requested_to` |
+| `CABillgPlnItemCanceled` |  | |  | `cancelled` |
+| `CABillgPlnSubItmExist` |  | |  | `subitem_exists` |
+| `CABillgPlnItemMain` |  | |  | `main_bipitem` |
+| `CABillgPlnItmExcptnReason` |  | |  | `item_excreason` |
+| `CABillgPlnItemChildExist` |  | |  | `child_exists` |
+| `CABillgPlnItemParent` |  | |  | `parent_bipitem` |
+| `CABillgPlnItemStatus` |  | |  | `status` |
+| `CABillgPlnItemNrOfBllbleItm` |  | |  | `bit_number` |
+| `CAIsRevnAcctgTransfRecordRlvt` |  | |  | `raoirel` |
+| `ConditionType` |  | |  | `condition_type` |
+| `ConditionIsForStatistics` |  | |  | `condition_statistic` |
+| `CANetDueDate` |  | |  | `faedn` |
+| `CABillgPlnItmIsNotToBeReqd` |  | |  | `cast(case when norequest is initial then '' else 'X' end as xfeld preserving type)` |
+| `CABllbleItmCostType` |  | |  | `cast(co_type as co_type_gfn_kk preserving type)` |
+| `CABllbleItmCostSubType` |  | |  | `cast(co_subtype as co_subtype_gfn_kk preserving type)` |
+| `CAIntcoCompanyCodeRequesting` |  | |  | `ico_bukrs_req` |
+| `CAIntcoCompanyCodeSupplying` |  | |  | `ico_bukrs_sup` |
+| `CAIntcoType` |  | |  | `cast(ico_type as ico_type_gfn_kk preserving type)` |
+| `CAIntcoSubtype` |  | |  | `cast(ico_subtype as ico_subtype_gfn_kk preserving type)` |
+| `_CAConditionType` |  | |  | `_ConditionType` |
+| `_CABillgPln` | | ✓ | | |
+| `_CABillgPlnItmType` | | ✓ | | |
+| `_CABillgPlnItmCat` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_CABillgCycle` | | ✓ | | |
+| `_CABillgPlnItmStatus` | | ✓ | | |
+| `_ExcptnRsn` | | ✓ | | |
+| `_CABillgPlnItmAmtDetnType` | | ✓ | | |
+| `_CABillgPlnItmAmtDateType` | | ✓ | | |
+| `_CABillgPlnItmPrcDateType` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_SubApplication` | | ✓ | | |
+| `_ProviderContract` | | ✓ | | |
+| `_CAProviderContractItem` | | ✓ | | |
+| `_ConditionType` | | ✓ | | |
+| `_CondType` | | ✓ | | |
+| `_CARevnAcctgServiceType` | | ✓ | | |
+| `_CADependentItemType` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_Segment` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_CAAccountDetnCode` | | ✓ | | |
+| `_CAInvcgOffsettingAction` | | ✓ | | |
+| `_CAInvcgOffsettingCategory` | | ✓ | | |
+| `_CAInvcgOffsettingProcedure` | | ✓ | | |
+| `_CABllbleItmCostType` | | ✓ | | |
+| `_CABllbleItmCostSubtype` | | ✓ | | |
+| `_CAIntcoCompanyCodeRequesting` | | ✓ | | |
+| `_CAIntcoCompanyCodeSupplying` | | ✓ | | |
+| `_CAIntcoType` | | ✓ | | |
+| `_CAIntcoSubtype` | | ✓ | | |
 
 ## Associations
 

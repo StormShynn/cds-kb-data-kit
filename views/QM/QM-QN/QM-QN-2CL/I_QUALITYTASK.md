@@ -27,66 +27,66 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityTaskInternalId` | `cast( qmsm.qmnum as qtaskinternalid preserving type )` |
-| `QualityTask` | `cast( substring(qmsm.qmnum,2,11) as qtaskid preserving type )` |
-| `QualityTaskOrigin` | `qmsm.taskorigin` |
-| `QualityTaskType` | `qmsm.tasktype` |
-| `QualityTaskText` | `cast( qmsm.matxt as vdm_qtaskdesc preserving type )` |
-| `IsDeleted` | `qmsm.kzloesch` |
-| `QualityTaskProcessor` | `qmsm.processor` |
-| `MasterLanguage` | `qmsm.kzmla` |
-| `QualityTaskCodeCatalog` | `qmsm.mnkat` |
-| `QualityTaskCodeGroup` | `cast( qmsm.mngrp as vdm_qtaskcodegrp preserving type )` |
-| `QualityTaskCode` | `qmsm.mncod` |
-| `NotifTaskTimeZone` | `qmsm.tzonsm` |
-| `NotifTaskPlannedEndDate` | `cast( qmsm.peter as vdm_qtaskplannedenddate preserving type )` |
-| `NotifTaskPlannedEndTime` | `cast( qmsm.petur as vdm_qtaskplannedendtime preserving type )` |
-| `NotifTaskCompletionDate` | `cast( qmsm.erldat as vdm_qtaskcompletiondate preserving type )` |
-| `NotifTaskCompletionTime` | `cast( qmsm.erlzeit as vdm_qtaskcompletiontime preserving type )` |
-| `NotifTaskResubmissionDate` | `qmsm.wdvdat` |
-| `NotifTaskResubmissionTime` | `qmsm.wdvzeit` |
-| `NotifTaskCompletedByUser` | `cast( qmsm.erlnam as vdm_qtaskcompletedby preserving type )` |
-| `DefectInternalID` | `qmsm.defectinternalid` |
-| `ProbSolvingProc` | `qmsm.probsolvingprocess` |
-| `ProbSolvingProcStp` | `qmsm.probsolvingprocessstep` |
-| `ProbSolvingProcCause` | `qmsm.prbobsolvproccause` |
-| `PredecessorQltyTaskIntNumber` | `qmsm.prdcssrqtaskinternalid` |
-| `QltyTaskFollowUpAction` | `qmsm.folgeact` |
-| `QualityTaskLifecycleStatus` | `qmsm.statlcycle` |
-| `QualityTaskArchivingStatus` | `qmsm.statacycle` |
-| `QltyTaskFllwUpActionSts` | `qmsm.statfoa` |
-| `CreatedByUser` | `qmsm.ernam` |
-| `CreationDate` | `qmsm.erdat` |
-| `CreationTime` | `cast( qmsm.erzeit as vdm_qerstezeit preserving type )` |
-| `ChangedDateTime` | `qmsm.changeddatetime` |
-| `LastChangedByUser` | `qmsm.aenam` |
-| `LastChangeDate` | `qmsm.aedat` |
-| `LastChangeTime` | `cast( qmsm.aezeit as vdm_qaendezeit preserving type )` |
-| `QltyTskProcgIsCtrldByTskOrigin` | `qmsm.taskiscontrolledbyorigin` |
-| `QltyTaskTimeBasedEffort` | `qmsm.timebasedeffort` |
-| `QltyTaskTimeBasedEffortUoM` | `qmsm.timebasedeffortuom` |
-| `_QltyTaskFllwUpActionParam` | *Association* |
-| `_Defect` | *Association* |
-| `_QualityTaskOrigin` | *Association* |
-| `_QualityTaskProcessor` | *Association* |
-| `_QualityTaskCodeCatalog` | *Association* |
-| `_QltyTskCodeGroup` | *Association* |
-| `_QltyTskCode` | *Association* |
-| `_QltyTaskFollowUpAction` | *Association* |
-| `_QualityTaskType` | *Association* |
-| `_PredecessorQualityTask` | *Association* |
-| `_ProbSolvingProc` | *Association* |
-| `_ProbSolvingProcStp` | *Association* |
-| `_ProbSolvingProcCause` | *Association* |
-| `_CreatedByUserContactCard` | *Association* |
-| `_CompletedByUserContactCard` | *Association* |
-| `_LastChangedByUserContactCard` | *Association* |
-| `_QualityTaskStatus` | *Association* |
-| `_QltyTaskArchivingStatus` | *Association* |
-| `_QltyTaskFllwUpActionSts` | *Association* |
-| `_QltyTskProcTimeUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityTaskInternalId` | ✓ | |  | `cast( qmsm.qmnum as qtaskinternalid preserving type )` |
+| `QualityTask` |  | |  | `cast( substring(qmsm.qmnum,2,11) as qtaskid preserving type )` |
+| `QualityTaskOrigin` |  | |  | `taskorigin` |
+| `QualityTaskType` |  | |  | `tasktype` |
+| `QualityTaskText` |  | |  | `cast( qmsm.matxt as vdm_qtaskdesc preserving type )` |
+| `IsDeleted` |  | |  | `kzloesch` |
+| `QualityTaskProcessor` |  | |  | `processor` |
+| `MasterLanguage` |  | |  | `kzmla` |
+| `QualityTaskCodeCatalog` |  | |  | `mnkat` |
+| `QualityTaskCodeGroup` |  | |  | `cast( qmsm.mngrp as vdm_qtaskcodegrp preserving type )` |
+| `QualityTaskCode` |  | |  | `mncod` |
+| `NotifTaskTimeZone` |  | |  | `tzonsm` |
+| `NotifTaskPlannedEndDate` |  | |  | `cast( qmsm.peter as vdm_qtaskplannedenddate preserving type )` |
+| `NotifTaskPlannedEndTime` |  | |  | `cast( qmsm.petur as vdm_qtaskplannedendtime preserving type )` |
+| `NotifTaskCompletionDate` |  | |  | `cast( qmsm.erldat as vdm_qtaskcompletiondate preserving type )` |
+| `NotifTaskCompletionTime` |  | |  | `cast( qmsm.erlzeit as vdm_qtaskcompletiontime preserving type )` |
+| `NotifTaskResubmissionDate` |  | |  | `wdvdat` |
+| `NotifTaskResubmissionTime` |  | |  | `wdvzeit` |
+| `NotifTaskCompletedByUser` |  | |  | `cast( qmsm.erlnam as vdm_qtaskcompletedby preserving type )` |
+| `DefectInternalID` |  | |  | `defectinternalid` |
+| `ProbSolvingProc` |  | |  | `probsolvingprocess` |
+| `ProbSolvingProcStp` |  | |  | `probsolvingprocessstep` |
+| `ProbSolvingProcCause` |  | |  | `prbobsolvproccause` |
+| `PredecessorQltyTaskIntNumber` |  | |  | `prdcssrqtaskinternalid` |
+| `QltyTaskFollowUpAction` |  | |  | `folgeact` |
+| `QualityTaskLifecycleStatus` |  | |  | `statlcycle` |
+| `QualityTaskArchivingStatus` |  | |  | `statacycle` |
+| `QltyTaskFllwUpActionSts` |  | |  | `statfoa` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreationTime` |  | |  | `cast( qmsm.erzeit as vdm_qerstezeit preserving type )` |
+| `ChangedDateTime` |  | |  | `changeddatetime` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `LastChangeTime` |  | |  | `cast( qmsm.aezeit as vdm_qaendezeit preserving type )` |
+| `QltyTskProcgIsCtrldByTskOrigin` |  | |  | `taskiscontrolledbyorigin` |
+| `QltyTaskTimeBasedEffort` |  | |  | `timebasedeffort` |
+| `QltyTaskTimeBasedEffortUoM` |  | |  | `timebasedeffortuom` |
+| `_QltyTaskFllwUpActionParam` | | ✓ | | |
+| `_Defect` | | ✓ | | |
+| `_QualityTaskOrigin` | | ✓ | | |
+| `_QualityTaskProcessor` | | ✓ | | |
+| `_QualityTaskCodeCatalog` | | ✓ | | |
+| `_QltyTskCodeGroup` | | ✓ | | |
+| `_QltyTskCode` | | ✓ | | |
+| `_QltyTaskFollowUpAction` | | ✓ | | |
+| `_QualityTaskType` | | ✓ | | |
+| `_PredecessorQualityTask` | | ✓ | | |
+| `_ProbSolvingProc` | | ✓ | | |
+| `_ProbSolvingProcStp` | | ✓ | | |
+| `_ProbSolvingProcCause` | | ✓ | | |
+| `_CreatedByUserContactCard` | | ✓ | | |
+| `_CompletedByUserContactCard` | | ✓ | | |
+| `_LastChangedByUserContactCard` | | ✓ | | |
+| `_QualityTaskStatus` | | ✓ | | |
+| `_QltyTaskArchivingStatus` | | ✓ | | |
+| `_QltyTaskFllwUpActionSts` | | ✓ | | |
+| `_QltyTskProcTimeUnit` | | ✓ | | |
 
 ## Associations
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `txt.werks` |
-| key `OperationSetupGroupCategory` | `cast(txt.rfgrp as vdm_ruefagrp preserving type)` |
-| key `Language` | `txt.spras` |
-| `OperationSetupGroupCatName` | `txt.txt` |
-| `_Language` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `OperationSetupGroupCategory` | ✓ | |  | `cast(txt.rfgrp as vdm_ruefagrp preserving type)` |
+| `Language` | ✓ | |  | `spras` |
+| `OperationSetupGroupCatName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContactPersonFunction` | `tb912.pafkt` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContactPersonFunction` | ✓ | |  | `pafkt` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

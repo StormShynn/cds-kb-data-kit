@@ -28,38 +28,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LocationUUID` | `cast( locid as /sapapo/location_id preserving type )` |
-| `LocationAdditionalUUID` | `cast( loc_uuid as /sapapo/location_uuid preserving type )` |
-| `Location` | `locno` |
-| `LocationType` | `loctype` |
-| `LocationTimeZone` | `cast ( tzone as tznzone preserving type )` |
-| `LocationUNCode` | `unlocode` |
-| `LocationAirportCode` | `cast(iatacode as /scmtms/vdm_loc_airportcode preserving type )` |
-| `AddressID` | `adrnummer` |
-| `GeoCoordinatesUnit` | `cast('DEG' as /scmtms/vdm_geo_cood_unit)` |
-| `Longitude` | `xpos` |
-| `Latitude` | `ypos` |
-| `GeoCoordsValidityEndDateTime` | `cast( geo_validity_end as /scmtms/vdm_loc_geo_val_end_dt preserving type )` |
-| `GeoCoordinatesLevel` | `gc_level` |
-| `GeoCoordinatesStrategy` | `strategy` |
-| `GeoCoordinatesMatchPercent` | `match_gc` |
-| `GeoCoordinatesDataSource` | `srcid` |
-| `GeoCoordinatesPrecision` | `precisid` |
-| `GeoCoordsAreManuallyChanged` | `manually_changed_gc` |
-| `IsBusinessPurposeCompleted` | `loc_xblck` |
-| `BusinessPartnerUUID` | `partner_guid` |
-| `CreationDateTime` | `cast (createutc as /scmtms/vdm_creation_datetme preserving type )` |
-| `CreatedByUser` | `createuser` |
-| `ChangedDateTime` | `cast ( changeutc as /scmtms/vdm_changed_datetme preserving type )` |
-| `LastChangedByUser` | `changeuser` |
-| `_LocationType` | *Association* |
-| `_AddrDfltRprstn` | *Association* |
-| `_LocAddressDataText` | *Association* |
-| `_PostalAddrDfltRprstn` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LocationUUID` | ✓ | |  | `cast( locid as /sapapo/location_id preserving type )` |
+| `LocationAdditionalUUID` |  | |  | `cast( loc_uuid as /sapapo/location_uuid preserving type )` |
+| `Location` |  | |  | `locno` |
+| `LocationType` |  | |  | `loctype` |
+| `LocationTimeZone` |  | |  | `cast ( tzone as tznzone preserving type )` |
+| `LocationUNCode` |  | |  | `unlocode` |
+| `LocationAirportCode` |  | |  | `cast(iatacode as /scmtms/vdm_loc_airportcode preserving type )` |
+| `AddressID` |  | |  | `adrnummer` |
+| `GeoCoordinatesUnit` |  | |  | `cast('DEG' as /scmtms/vdm_geo_cood_unit)` |
+| `Longitude` |  | |  | `xpos` |
+| `Latitude` |  | |  | `ypos` |
+| `GeoCoordsValidityEndDateTime` |  | |  | `cast( geo_validity_end as /scmtms/vdm_loc_geo_val_end_dt preserving type )` |
+| `GeoCoordinatesLevel` |  | |  | `gc_level` |
+| `GeoCoordinatesStrategy` |  | |  | `strategy` |
+| `GeoCoordinatesMatchPercent` |  | |  | `match_gc` |
+| `GeoCoordinatesDataSource` |  | |  | `srcid` |
+| `GeoCoordinatesPrecision` |  | |  | `precisid` |
+| `GeoCoordsAreManuallyChanged` |  | |  | `manually_changed_gc` |
+| `IsBusinessPurposeCompleted` |  | |  | `loc_xblck` |
+| `BusinessPartnerUUID` |  | |  | `partner_guid` |
+| `CreationDateTime` |  | |  | `cast (createutc as /scmtms/vdm_creation_datetme preserving type )` |
+| `CreatedByUser` |  | |  | `createuser` |
+| `ChangedDateTime` |  | |  | `cast ( changeutc as /scmtms/vdm_changed_datetme preserving type )` |
+| `LastChangedByUser` |  | |  | `changeuser` |
+| `_LocationType` | | ✓ | | |
+| `_AddrDfltRprstn` | | ✓ | | |
+| `_LocAddressDataText` | | ✓ | | |
+| `_PostalAddrDfltRprstn` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

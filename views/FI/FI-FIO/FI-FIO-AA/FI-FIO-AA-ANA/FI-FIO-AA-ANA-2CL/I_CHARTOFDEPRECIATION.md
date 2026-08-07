@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfDepreciation` | `afapl` |
-| `ChartOfDepreciationIsActive` | `bplakt` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfDepreciation` | ✓ | |  | `afapl` |
+| `ChartOfDepreciationIsActive` |  | |  | `bplakt` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

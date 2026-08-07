@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'IPURGPRCGNCDNSUP'` | `sqlViewName: 'IPURGPRCGNCDNSUP'` |
-| `true` | `compiler.compareFilter: true` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'IPURGPRCGNCDNSUP'` |  | |  | `sqlViewName: 'IPURGPRCGNCDNSUP'` |
+| `true` |  | |  | `compiler.compareFilter: true` |
 
 ## Source Code
 

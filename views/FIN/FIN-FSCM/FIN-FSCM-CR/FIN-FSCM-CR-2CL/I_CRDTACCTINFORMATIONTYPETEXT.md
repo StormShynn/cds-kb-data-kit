@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `CrdtAcctInformationCategory` | `infocategory` |
-| key `CrdtAcctInformationType` | `infotype` |
-| `CrdtAcctInformationTypeName` | `infotype_txt` |
-| `_Language` | *Association* |
-| `_CrdtAcctInfoCategory` | *Association* |
-| `_CrdtAcctInformationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `CrdtAcctInformationCategory` | ✓ | |  | `infocategory` |
+| `CrdtAcctInformationType` | ✓ | |  | `infotype` |
+| `CrdtAcctInformationTypeName` |  | |  | `infotype_txt` |
+| `_Language` | | ✓ | | |
+| `_CrdtAcctInfoCategory` | | ✓ | | |
+| `_CrdtAcctInformationType` | | ✓ | | |
 
 ## Associations
 

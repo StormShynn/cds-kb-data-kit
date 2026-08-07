@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `TreasuryContractType` | `rantyp` |
-| key `FinConditionConditionType` | `cast( skoart as ftr_cndn_condition_type preserving type )` |
-| `FinConditionConditionTypeName` | `cast( case when xkoartl is initial then xkoartm else xkoartl end as ftr_cndn_condition_type_name preserving type )` |
-| `_Language` | *Association* |
-| `_ContractType` | *Association* |
-| `_ConditionType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `TreasuryContractType` | ✓ | |  | `rantyp` |
+| `FinConditionConditionType` | ✓ | |  | `cast( skoart as ftr_cndn_condition_type preserving type )` |
+| `FinConditionConditionTypeName` |  | |  | `cast( case when xkoartl is initial then xkoartm else xkoartl end as ftr_cndn_condition_type_name preserving type )` |
+| `_Language` | | ✓ | | |
+| `_ContractType` | | ✓ | | |
+| `_ConditionType` | | ✓ | | |
 
 ## Associations
 

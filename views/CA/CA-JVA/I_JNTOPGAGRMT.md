@@ -27,45 +27,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `JntOpgAgrmt` | `joa` |
-| `JntVntrContractNmbr` | `contract` |
-| `JntVntrPayrollClearingSet` | `payset` |
-| `JntVntrConstructionExclsnSet` | `xsetcon` |
-| `JntVntrCatastropheExclsnSet` | `xsetcat` |
-| `JntVntrConstructionOvhdRule` | `conrule` |
-| `JntVntrCatastropheOvhdRule` | `catrule` |
-| `JVAOvhdPercentProdg` | `per1` |
-| `JVAExclsnAcctSetPercentProdg` | `xper1` |
-| `JVAOvhdPercentDev` | `per2` |
-| `JVAExclsnAcctSetPercentDev` | `xper2` |
-| `JntVntrExplorationOvhdRule` | `exprule` |
-| `JntVntrDrillingOvhdRule` | `drlrule` |
-| `JntVntrCapitalExclsnSet` | `xsetcap` |
-| `JntVntrOvhdOffsetCostCtr` | `offcc` |
-| `JntOpgAgrmtProdgWellThld` | `joaprth` |
-| `JntVntrOvhdRecurringDoc` | `recdoc` |
-| `CompanyCodeCurrency` | `_CompanyCode.Currency` |
-| `JntVntrOvhdFlatRateAmt` | `} flatrate` |
-| `JntVntrExpnIsEscalated` | `escal` |
-| `JntOpgAgrmtClass` | `aclass` |
-| `JntOpgAgrmtCreatedByUser` | `cruser` |
-| `JntOpgAgrmtCreationTime` | `case when crtime is null or crtime = '' then cast('000000' as abap.tims) else cast(substring(crtime, 1, 6) as abap.tims) end` |
-| `JntOpgAgrmtCreationDate` | `case when crdate is null or crdate = '' then cast('00000000'as jv_crdate ) else crdate end` |
-| `JntOpgAgrmtLastChangedByUser` | `chuser` |
-| `JntOpgAgrmtLastChangedTime` | `case when chtime is null or chtime = '' then cast('000000' as abap.tims) else cast(substring(chtime, 1, 6) as abap.tims) end` |
-| `JntOpgAgrmtLastChangedDate` | `case when chdate is null or chdate = '' then cast('00000000' as jv_chdate) else chdate end` |
-| `JntVntrPrioPerdDrillingIsCalc` | `drillp` |
-| `JntVntrWBSElmntOvhdIsCalc` | `allwbs` |
-| `JntOpgAgrmtDrillingPayRate` | `dfpay` |
-| `JntOpgAgrmtNonDrillingPayRate` | `ndpay` |
-| `_CompanyCode` | *Association* |
-| `_JntOpgAgrmtClass` | *Association* |
-| `_JntOpgAgrmtText` | *Association* |
-| `_JntOpgAgrmtEquityTypeGrp` | *Association* |
-| `_JntOpgAgrmtPartShr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JntOpgAgrmt` | ✓ | |  | `joa` |
+| `JntVntrContractNmbr` |  | |  | `contract` |
+| `JntVntrPayrollClearingSet` |  | |  | `payset` |
+| `JntVntrConstructionExclsnSet` |  | |  | `xsetcon` |
+| `JntVntrCatastropheExclsnSet` |  | |  | `xsetcat` |
+| `JntVntrConstructionOvhdRule` |  | |  | `conrule` |
+| `JntVntrCatastropheOvhdRule` |  | |  | `catrule` |
+| `JVAOvhdPercentProdg` |  | |  | `per1` |
+| `JVAExclsnAcctSetPercentProdg` |  | |  | `xper1` |
+| `JVAOvhdPercentDev` |  | |  | `per2` |
+| `JVAExclsnAcctSetPercentDev` |  | |  | `xper2` |
+| `JntVntrExplorationOvhdRule` |  | |  | `exprule` |
+| `JntVntrDrillingOvhdRule` |  | |  | `drlrule` |
+| `JntVntrCapitalExclsnSet` |  | |  | `xsetcap` |
+| `JntVntrOvhdOffsetCostCtr` |  | |  | `offcc` |
+| `JntOpgAgrmtProdgWellThld` |  | |  | `joaprth` |
+| `JntVntrOvhdRecurringDoc` |  | |  | `recdoc` |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |
+| `JntVntrOvhdFlatRateAmt` |  | |  | `} flatrate` |
+| `JntVntrExpnIsEscalated` |  | |  | `escal` |
+| `JntOpgAgrmtClass` |  | |  | `aclass` |
+| `JntOpgAgrmtCreatedByUser` |  | |  | `cruser` |
+| `JntOpgAgrmtCreationTime` |  | |  | `case when crtime is null or crtime = '' then cast('000000' as abap.tims) else cast(substring(crtime, 1, 6) as abap.tims) end` |
+| `JntOpgAgrmtCreationDate` |  | |  | `case when crdate is null or crdate = '' then cast('00000000'as jv_crdate ) else crdate end` |
+| `JntOpgAgrmtLastChangedByUser` |  | |  | `chuser` |
+| `JntOpgAgrmtLastChangedTime` |  | |  | `case when chtime is null or chtime = '' then cast('000000' as abap.tims) else cast(substring(chtime, 1, 6) as abap.tims) end` |
+| `JntOpgAgrmtLastChangedDate` |  | |  | `case when chdate is null or chdate = '' then cast('00000000' as jv_chdate) else chdate end` |
+| `JntVntrPrioPerdDrillingIsCalc` |  | |  | `drillp` |
+| `JntVntrWBSElmntOvhdIsCalc` |  | |  | `allwbs` |
+| `JntOpgAgrmtDrillingPayRate` |  | |  | `dfpay` |
+| `JntOpgAgrmtNonDrillingPayRate` |  | |  | `ndpay` |
+| `_CompanyCode` | | ✓ | | |
+| `_JntOpgAgrmtClass` | | ✓ | | |
+| `_JntOpgAgrmtText` | | ✓ | | |
+| `_JntOpgAgrmtEquityTypeGrp` | | ✓ | | |
+| `_JntOpgAgrmtPartShr` | | ✓ | | |
 
 ## Associations
 

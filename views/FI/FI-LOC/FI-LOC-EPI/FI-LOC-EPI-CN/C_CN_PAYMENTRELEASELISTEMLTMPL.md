@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowTaskInternalID` | `_WorkflowTask.WorkflowTaskInternalID` |
-| `PaymentReleaseList` | `PaymentReleaseList` |
-| `Currency` | `Currency` |
-| `TotActualAmtInDisplayCurrency` | `TotActualAmtInDisplayCurrency` |
-| `CreatedByUserFullName` | `CreatedByUserFullName` |
-| `IncgPaytFileTotalNumberOfItems` | `IncgPaytFileTotalNumberOfItems` |
-| `CompanyCode` | `CompanyCode` |
-| `PaymentReleaseListItemIsClosed` | `PaymentReleaseListItemIsClosed` |
-| `PaymentReleaseListDescription` | `PaymentReleaseListDescription` |
-| `Processor` | `Processor` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `PaymentReleaseListApplication` | `PaymentReleaseListApplication` |
-| `WorkflowTaskURL` | `_WorkflowTaskURL.WorkflowTaskURL` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowTaskInternalID` | ✓ | | `_WorkflowTask` | `WorkflowTaskInternalID` |
+| `PaymentReleaseList` |  | |  |  |
+| `Currency` |  | |  |  |
+| `TotActualAmtInDisplayCurrency` |  | |  |  |
+| `CreatedByUserFullName` |  | |  |  |
+| `IncgPaytFileTotalNumberOfItems` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PaymentReleaseListItemIsClosed` |  | |  |  |
+| `PaymentReleaseListDescription` |  | |  |  |
+| `Processor` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `PaymentReleaseListApplication` |  | |  |  |
+| `WorkflowTaskURL` |  | | `_WorkflowTaskURL` | `WorkflowTaskURL` |
 
 ## Associations
 

@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostCenter` | `cskt.kostl` |
-| key `ControllingArea` | `cskt.kokrs` |
-| key `Language` | `cskt.spras` |
-| key `ValidityEndDate` | `cskt.datbi` |
-| `ValidityStartDate` | `_md.datab` |
-| `CostCenterName` | `cast(cskt.ktext as fis_kostl_name preserving type)` |
-| `CostCenterDescription` | `cast(cskt.ltext as fis_kostl_ltext preserving type)` |
-| `_ControllingAreaText` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostCenter` | ✓ | |  | `kostl` |
+| `ControllingArea` | ✓ | |  | `kokrs` |
+| `Language` | ✓ | |  | `spras` |
+| `ValidityEndDate` | ✓ | |  | `datbi` |
+| `ValidityStartDate` |  | | `_md` | `datab` |
+| `CostCenterName` |  | |  | `cast(cskt.ktext as fis_kostl_name preserving type)` |
+| `CostCenterDescription` |  | |  | `cast(cskt.ltext as fis_kostl_ltext preserving type)` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

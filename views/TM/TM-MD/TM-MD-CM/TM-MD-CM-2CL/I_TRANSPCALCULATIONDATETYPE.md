@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspCalculationDateType` | `cast(substring(domvalue_l, 1, 10) as /scmtms/vdm_tcm_calc_date_type preserving type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspCalculationDateType` | ✓ | |  | `cast(substring(domvalue_l, 1, 10) as /scmtms/vdm_tcm_calc_date_type preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

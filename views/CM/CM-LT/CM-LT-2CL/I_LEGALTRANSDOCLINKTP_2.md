@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionDocLinkUUID` | `LegalTransactionDocLinkUUID` |
-| `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LglCntntMDocument` | `LglCntntMDocument` |
-| `LglCntntMDocAccessLvl` | `LglCntntMDocAccessLvl` |
-| `LglCntntMDocContentType` | `LglCntntMDocContentType` |
-| `InternalDocumentStatus` | `InternalDocumentStatus` |
-| `_LegalTransaction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionDocLinkUUID` | ✓ | |  |  |
+| `LegalTransactionUUID` |  | |  |  |
+| `LglCntntMDocument` |  | |  |  |
+| `LglCntntMDocAccessLvl` |  | |  |  |
+| `LglCntntMDocContentType` |  | |  |  |
+| `InternalDocumentStatus` |  | |  |  |
+| `_LegalTransaction` | | ✓ | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMGovLaw` | `LglCntntMGovLaw` |
-| `_LglCntntMGovLawTextAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMGovLaw` | ✓ | |  |  |
+| `_LglCntntMGovLawTextAPI01` | | ✓ | | |
 
 ## Associations
 

@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `country` |
-| key `TaxItemGroupingVersion` | `version` |
-| key `CompanyCode` | `companycode` |
-| key `BusinessPlace` | `businessplace` |
-| key `TaxCode` | `taxcode` |
-| `AlphanumericTaxCode` | `atc_code` |
-| `_AlphanumericTxCodeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `country` |
+| `TaxItemGroupingVersion` | ✓ | |  | `version` |
+| `CompanyCode` | ✓ | |  | `companycode` |
+| `BusinessPlace` | ✓ | |  | `businessplace` |
+| `TaxCode` | ✓ | |  | `taxcode` |
+| `AlphanumericTaxCode` |  | |  | `atc_code` |
+| `_AlphanumericTxCodeText` | | ✓ | | |
 
 ## Associations
 

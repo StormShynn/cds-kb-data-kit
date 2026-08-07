@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternalDocumentStatus` | `InternalDocumentStatus` |
-| `_LglCntntMDocStatusTextAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternalDocumentStatus` | ✓ | |  |  |
+| `_LglCntntMDocStatusTextAPI01` | | ✓ | | |
 
 ## Associations
 

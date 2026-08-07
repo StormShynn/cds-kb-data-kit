@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerOccupationGroup` | `tb028.jobgr` |
-| `_Text` | *Association* |
-| `_BPEmployment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerOccupationGroup` | ✓ | |  | `jobgr` |
+| `_Text` | | ✓ | | |
+| `_BPEmployment` | | ✓ | | |
 
 ## Associations
 

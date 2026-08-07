@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInterestCode` | `ikey` |
-| `CAToleranceForIntrstCalc` | `todays` |
-| `CAToleranceUnitForIntrstCalc` | `irunito` |
-| `CATransferForIntrstCalc` | `trdays` |
-| `CATransferUnitForIntrstCalc` | `irunitr` |
-| `CAFrequencyForIntrstCalc` | `irhyth` |
-| `CAFrequencyUnitForIntrstCalc` | `irunit` |
-| `CAInterestCalculationRule` | `irule` |
-| `CAInterestCalcIsInAdvance` | `verzzp` |
-| `CAInterestConditionIsFixed` | `verzwe` |
-| `CASubitemsAreGroupedBeforeCalc` | `icond` |
-| `CAAllSubitemsAreEvaldForCalc` | `iallz` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInterestCode` | ✓ | |  | `ikey` |
+| `CAToleranceForIntrstCalc` |  | |  | `todays` |
+| `CAToleranceUnitForIntrstCalc` |  | |  | `irunito` |
+| `CATransferForIntrstCalc` |  | |  | `trdays` |
+| `CATransferUnitForIntrstCalc` |  | |  | `irunitr` |
+| `CAFrequencyForIntrstCalc` |  | |  | `irhyth` |
+| `CAFrequencyUnitForIntrstCalc` |  | |  | `irunit` |
+| `CAInterestCalculationRule` |  | |  | `irule` |
+| `CAInterestCalcIsInAdvance` |  | |  | `verzzp` |
+| `CAInterestConditionIsFixed` |  | |  | `verzwe` |
+| `CASubitemsAreGroupedBeforeCalc` |  | |  | `icond` |
+| `CAAllSubitemsAreEvaldForCalc` |  | |  | `iallz` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

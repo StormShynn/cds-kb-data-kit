@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElmntDeliverableUUID` | `EntProjElmntDeliverableUUID` |
-| `ProjectElementUUID` | `ProjectElementUUID` |
-| `ProjectUUID` | `ProjectUUID` |
-| `EntProjElmntDeliverableType` | `EntProjElmntDeliverableType` |
-| `EntProjElmntDlvbrlQuantity` | `EntProjElmntDlvbrlQuantity` |
-| `EntProjElmntDlvbrlQuantityUnit` | `EntProjElmntDlvbrlQuantityUnit` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EnterpriseProject` | *Association* |
-| `_EntProjElmntDlvDistr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElmntDeliverableUUID` | ✓ | |  |  |
+| `ProjectElementUUID` |  | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `EntProjElmntDeliverableType` |  | |  |  |
+| `EntProjElmntDlvbrlQuantity` |  | |  |  |
+| `EntProjElmntDlvbrlQuantityUnit` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EntProjElmntDlvDistr` | | ✓ | | |
 
 ## Source Code
 

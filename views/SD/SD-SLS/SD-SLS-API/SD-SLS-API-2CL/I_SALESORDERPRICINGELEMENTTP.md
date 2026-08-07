@@ -32,43 +32,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrderPricingElement.SalesOrder` |
-| key `PricingProcedureStep` | `SalesOrderPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `SalesOrderPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `SalesOrderPricingElement.ConditionApplication` |
-| `ConditionType` | `SalesOrderPricingElement.ConditionType` |
-| `ConditionTypeName` | `SalesOrderPricingElement.ConditionTypeName` |
-| `ConditionCalculationType` | `SalesOrderPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `SalesOrderPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `SalesOrderPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `SalesOrderPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `SalesOrderPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `SalesOrderPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `SalesOrderPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `SalesOrderPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `SalesOrderPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `SalesOrderPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `SalesOrderPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `SalesOrderPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `SalesOrderPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `SalesOrderPricingElement.ConditionInactiveReason` |
-| `ConditionOrigin` | `SalesOrderPricingElement.ConditionOrigin` |
-| `ConditionRateValueIsAmount` | `SalesOrderPricingElement.ConditionRateValueIsAmount` |
-| `ConditionRateValueIsRatio` | `SalesOrderPricingElement.ConditionRateValueIsRatio` |
-| `ConditionBaseValueIsQuantity` | `SalesOrderPricingElement.ConditionBaseValueIsQuantity` |
-| `ConditionBaseValueIsAmount` | `SalesOrderPricingElement.ConditionBaseValueIsAmount` |
-| `ConditionQuantityIsNull` | `SalesOrderPricingElement.ConditionQuantityIsNull` |
-| `ConditionAmountIsNull` | `SalesOrderPricingElement.ConditionAmountIsNull` |
-| `PriceConditionDeterminationDte` | `SalesOrderPricingElement.PriceConditionDeterminationDte` |
-| `ConditionClass` | `SalesOrderPricingElement.ConditionClass` |
-| `ConditionRateValueIsNull` | `SalesOrderPricingElement.ConditionRateValueIsNull` |
-| `SalesOrderType` | `SalesOrderPricingElement.SalesOrderType` |
-| `SalesOrganization` | `SalesOrderPricingElement.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `SalesOrderPricingElement.OrganizationDivision` |
-| `_SalesOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionTypeName` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `ConditionOrigin` |  | |  |  |
+| `ConditionRateValueIsAmount` |  | |  |  |
+| `ConditionRateValueIsRatio` |  | |  |  |
+| `ConditionBaseValueIsQuantity` |  | |  |  |
+| `ConditionBaseValueIsAmount` |  | |  |  |
+| `ConditionQuantityIsNull` |  | |  |  |
+| `ConditionAmountIsNull` |  | |  |  |
+| `PriceConditionDeterminationDte` |  | |  |  |
+| `ConditionClass` |  | |  |  |
+| `ConditionRateValueIsNull` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesOrder` | | ✓ | | |
 
 ## Source Code
 

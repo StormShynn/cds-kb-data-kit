@@ -26,46 +26,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ReferenceDocumentItem` | `sdbil_odata_src_doc_item` |
-| `SalesDocumentType` | `auart` |
-| `SalesDocumentItemCategory` | `sales_doc_item_category` |
-| `ReferenceDocumentItemText` | `billing_doc_request_item_text` |
-| `BillingDocumentType` | `sdbil_odata_bdr_type` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `Division` | `spart` |
-| `BillingDocumentDate` | `fkdat` |
-| `SoldToParty` | `kunag` |
-| `TransactionCurrency` | `waerk` |
-| `TaxDepartureCountry` | `landtx` |
-| `PurchaseOrderByCustomer` | `bstkd` |
-| `CustomerPaymentTerms` | `dzterm` |
-| `PaymentMethod` | `schzw_bseg` |
-| `Product` | `productnumber` |
-| `IncotermsClassification` | `inco1` |
-| `IncotermsTransferLocation` | `inco2` |
-| `IncotermsVersion` | `incov` |
-| `IncotermsLocation1` | `inco2_l` |
-| `IncotermsLocation2` | `inco3_l` |
-| `MatlAccountAssignmentGroup` | `ktgrm` |
-| `BillingRequestedQuantity` | `billing_quantity` |
-| `BillingRequestedQuantityUnit` | `billing_quantity_unit` |
-| `ServicesRenderedDate` | `fbuda` |
-| `PricingDate` | `prsdt` |
-| `PriceDetnExchangeRate` | `kursk_not_converted` |
-| `TaxJurisdiction` | `txjcd` |
-| `ProductTaxClassification1` | `taxm1` |
-| `Plant` | `werks_d` |
-| `DepartureCountry` | `aland` |
-| `ProfitCenter` | `prctr` |
-| `ContractAccount` | `corr_vkont_kk` |
-| `CostCenter` | `kostl` |
-| `WBSElementInternalID` | `ps_s4_pspnr` |
-| `SEPAMandate` | `sepa_mndid` |
-| `CustomerTaxClassification1` | `taxk1` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceDocumentItem` |  | |  | `sdbil_odata_src_doc_item` |
+| `SalesDocumentType` |  | |  | `auart` |
+| `SalesDocumentItemCategory` |  | |  | `sales_doc_item_category` |
+| `ReferenceDocumentItemText` |  | |  | `billing_doc_request_item_text` |
+| `BillingDocumentType` |  | |  | `sdbil_odata_bdr_type` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `Division` |  | |  | `spart` |
+| `BillingDocumentDate` |  | |  | `fkdat` |
+| `SoldToParty` |  | |  | `kunag` |
+| `TransactionCurrency` |  | |  | `waerk` |
+| `TaxDepartureCountry` |  | |  | `landtx` |
+| `PurchaseOrderByCustomer` |  | |  | `bstkd` |
+| `CustomerPaymentTerms` |  | |  | `dzterm` |
+| `PaymentMethod` |  | |  | `schzw_bseg` |
+| `Product` |  | |  | `productnumber` |
+| `IncotermsClassification` |  | |  | `inco1` |
+| `IncotermsTransferLocation` |  | |  | `inco2` |
+| `IncotermsVersion` |  | |  | `incov` |
+| `IncotermsLocation1` |  | |  | `inco2_l` |
+| `IncotermsLocation2` |  | |  | `inco3_l` |
+| `MatlAccountAssignmentGroup` |  | |  | `ktgrm` |
+| `BillingRequestedQuantity` |  | |  | `billing_quantity` |
+| `BillingRequestedQuantityUnit` |  | |  | `billing_quantity_unit` |
+| `ServicesRenderedDate` |  | |  | `fbuda` |
+| `PricingDate` |  | |  | `prsdt` |
+| `PriceDetnExchangeRate` |  | |  | `kursk_not_converted` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `ProductTaxClassification1` |  | |  | `taxm1` |
+| `Plant` |  | |  | `werks_d` |
+| `DepartureCountry` |  | |  | `aland` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `ContractAccount` |  | |  | `corr_vkont_kk` |
+| `CostCenter` |  | |  | `kostl` |
+| `WBSElementInternalID` |  | |  | `ps_s4_pspnr` |
+| `SEPAMandate` |  | |  | `sepa_mndid` |
+| `CustomerTaxClassification1` |  | |  | `taxk1` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

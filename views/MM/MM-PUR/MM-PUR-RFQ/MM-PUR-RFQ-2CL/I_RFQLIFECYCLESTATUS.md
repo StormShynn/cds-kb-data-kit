@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RFQLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as vdm_rfq_lfst_cd )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RFQLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as vdm_rfq_lfst_cd )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

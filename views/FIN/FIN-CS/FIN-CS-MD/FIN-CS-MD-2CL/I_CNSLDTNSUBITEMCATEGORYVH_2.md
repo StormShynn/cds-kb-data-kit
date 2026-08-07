@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnSubitemCategory` | `_Source.CnsldtnSubitemCategory` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnSubitemCategory` | ✓ | | `_Source` | `CnsldtnSubitemCategory` |
 
 ## Source Code
 

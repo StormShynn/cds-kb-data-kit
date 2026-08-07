@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrganization` | `MaintainedOrdTypePerSlsOrg.SalesOrganization` |
-| key `DistributionChannel` | `MaintainedOrdTypePerSlsOrg.DistributionChannel` |
-| key `Division` | `MaintainedOrdTypePerSlsOrg.Division` |
-| key `SalesDocumentType` | `MaintainedOrdTypePerSlsOrg.SalesDocumentType` |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_SalesDocumentType` | *Association* |
-| `_Division` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  |  |
+| `DistributionChannel` | ✓ | |  |  |
+| `Division` | ✓ | |  |  |
+| `SalesDocumentType` | ✓ | |  |  |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_SalesDocumentType` | | ✓ | | |
+| `_Division` | | ✓ | | |
 
 ## Associations
 

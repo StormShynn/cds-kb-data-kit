@@ -29,79 +29,79 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `mkal.matnr` |
-| key `Plant` | `mkal.werks` |
-| key `ProductionVersion` | `mkal.verid` |
-| `ProductionVersionText` | `mkal.text1` |
-| `ChangeHistoryCount` | `mkal_aend.ChangeHistoryCount` |
-| `ChangeNumber` | `mkal_aend.ChangeNumber` |
-| `CreationDate` | `mkal_aend.CreationDate` |
-| `CreatedByUser` | `mkal_aend.CreatedByUser` |
-| `LastChangeDate` | `mkal_aend.LastChangeDate` |
-| `LastChangedByUser` | `mkal_aend.LastChangedByUser` |
-| `BillOfOperationsType` | `cast(mkal.plnty as billofoperationstype preserving type)` |
-| `BillOfOperationsGroup` | `cast(mkal.plnnr as billofoperationsgroup preserving type)` |
-| `BillOfOperationsVariant` | `cast(mkal.alnal as billofoperationsvariant preserving type)` |
-| `BillOfMaterialVariantUsage` | `mkal.stlan` |
-| `BillOfMaterialVariant` | `mkal.stlal` |
-| `ProductionLine` | `mkal.mdv01` |
-| `ProductionSupplyArea` | `cast(mkal.prvbe as pph_prvbe preserving type)` |
-| `ProductionVersionGroup` | `cast(mkal.mdv02 as pph_mdv preserving type)` |
-| `MainProduct` | `cast(mkal.matko as pph_matko preserving type)` |
-| `MaterialCostApportionmentStruc` | `mkal.csplt` |
-| `IssuingStorageLocation` | `mkal.elpro` |
-| `ReceivingStorageLocation` | `mkal.alort` |
-| `OriginalBatchReferenceMaterial` | `cast(mkal.ucmat as pph_rfmat preserving type)` |
-| `QuantityDistributionKey` | `mkal.verto` |
-| `ProductionVersionStatus` | `mkal.prfg_f` |
-| `ProductionVersionLastCheckDate` | `cast(mkal.prdat as pph_mkprdat preserving type)` |
-| `RateBasedPlanningStatus` | `cast(mkal.prfg_r as pph_prfgr preserving type)` |
-| `PreliminaryPlanningStatus` | `cast(mkal.prfg_g as pph_prfgg preserving type)` |
-| `BOMCheckStatus` | `cast(mkal.prfg_s as pph_prfgs preserving type)` |
-| `ValidityStartDate` | `cast(mkal.adatu as vdm_v_validity_start_date preserving type)` |
-| `ValidityEndDate` | `cast(mkal.bdatu as vdm_v_validity_end_date preserving type)` |
-| `ProductionVersionIsLocked` | `mkal.mksp` |
-| `ProdnVersIsAllowedForRptvMfg` | `mkal.serkz` |
-| `HasVersionCtrldBOMAndRouting` | `mkal.versind` |
-| `PlanningAndExecutionBOMIsDiff` | `mkal.diffplanexemstr` |
-| `ExecBillOfMaterialVariantUsage` | `mkal.exe_stlan` |
-| `ExecBillOfMaterialVariant` | `mkal.exe_stlal` |
-| `ExecBillOfOperationsType` | `mkal.exe_plnty` |
-| `ExecBillOfOperationsGroup` | `mkal.exe_plnnr` |
-| `ExecBillOfOperationsVariant` | `mkal.exe_alnal` |
-| `Warehouse` | `mkal.ewm_lgnum` |
-| `DestinationStorageBin` | `mkal.ewm_lgpla` |
-| `ProcurementType` | `mkal.beskz` |
-| `MaterialProcurementProfile` | `mkal.sobsl` |
-| `UsgeProbltyWthVersCtrlInPct` | `mkal.ewahr` |
-| `MaterialBaseUnit` | `_Product.BaseUnit` |
-| `MaterialMinLotSizeQuantity` | `mkal.bstmi` |
-| `MaterialMaxLotSizeQuantity` | `mkal.bstma` |
-| `CostingLotSize` | `mkal.losgr` |
-| `DistributionKey` | `mkal.verto` |
-| `TargetProductionSupplyArea` | `cast(mkal.tsa_prvbe as pph_prvbe preserving type)` |
-| `_Material` | *Association* |
-| `_MaterialText` | *Association* |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_MainProduct` | *Association* |
-| `_OriglBatchReferenceMaterial` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperations` | *Association* |
-| `_ProductionLine` | *Association* |
-| `_ProductionVersionGroup` | *Association* |
-| `_ProductionSupplyArea` | *Association* |
-| `_TargetProductionSupplyArea` | *Association* |
-| `_IssuingStorageLocation` | *Association* |
-| `_ReceivingStorageLocation` | *Association* |
-| `_MatlCostApportionmentStruc` | *Association* |
-| `_QuantityDistributionKey` | *Association* |
-| `_MaterialBaseUnit` | *Association* |
-| `_MatlProcurementProfile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `ProductionVersion` | ✓ | |  | `verid` |
+| `ProductionVersionText` |  | |  | `text1` |
+| `ChangeHistoryCount` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `BillOfOperationsType` |  | |  | `cast(mkal.plnty as billofoperationstype preserving type)` |
+| `BillOfOperationsGroup` |  | |  | `cast(mkal.plnnr as billofoperationsgroup preserving type)` |
+| `BillOfOperationsVariant` |  | |  | `cast(mkal.alnal as billofoperationsvariant preserving type)` |
+| `BillOfMaterialVariantUsage` |  | |  | `stlan` |
+| `BillOfMaterialVariant` |  | |  | `stlal` |
+| `ProductionLine` |  | |  | `mdv01` |
+| `ProductionSupplyArea` |  | |  | `cast(mkal.prvbe as pph_prvbe preserving type)` |
+| `ProductionVersionGroup` |  | |  | `cast(mkal.mdv02 as pph_mdv preserving type)` |
+| `MainProduct` |  | |  | `cast(mkal.matko as pph_matko preserving type)` |
+| `MaterialCostApportionmentStruc` |  | |  | `csplt` |
+| `IssuingStorageLocation` |  | |  | `elpro` |
+| `ReceivingStorageLocation` |  | |  | `alort` |
+| `OriginalBatchReferenceMaterial` |  | |  | `cast(mkal.ucmat as pph_rfmat preserving type)` |
+| `QuantityDistributionKey` |  | |  | `verto` |
+| `ProductionVersionStatus` |  | |  | `prfg_f` |
+| `ProductionVersionLastCheckDate` |  | |  | `cast(mkal.prdat as pph_mkprdat preserving type)` |
+| `RateBasedPlanningStatus` |  | |  | `cast(mkal.prfg_r as pph_prfgr preserving type)` |
+| `PreliminaryPlanningStatus` |  | |  | `cast(mkal.prfg_g as pph_prfgg preserving type)` |
+| `BOMCheckStatus` |  | |  | `cast(mkal.prfg_s as pph_prfgs preserving type)` |
+| `ValidityStartDate` |  | |  | `cast(mkal.adatu as vdm_v_validity_start_date preserving type)` |
+| `ValidityEndDate` |  | |  | `cast(mkal.bdatu as vdm_v_validity_end_date preserving type)` |
+| `ProductionVersionIsLocked` |  | |  | `mksp` |
+| `ProdnVersIsAllowedForRptvMfg` |  | |  | `serkz` |
+| `HasVersionCtrldBOMAndRouting` |  | |  | `versind` |
+| `PlanningAndExecutionBOMIsDiff` |  | |  | `diffplanexemstr` |
+| `ExecBillOfMaterialVariantUsage` |  | |  | `exe_stlan` |
+| `ExecBillOfMaterialVariant` |  | |  | `exe_stlal` |
+| `ExecBillOfOperationsType` |  | |  | `exe_plnty` |
+| `ExecBillOfOperationsGroup` |  | |  | `exe_plnnr` |
+| `ExecBillOfOperationsVariant` |  | |  | `exe_alnal` |
+| `Warehouse` |  | |  | `ewm_lgnum` |
+| `DestinationStorageBin` |  | |  | `ewm_lgpla` |
+| `ProcurementType` |  | |  | `beskz` |
+| `MaterialProcurementProfile` |  | |  | `sobsl` |
+| `UsgeProbltyWthVersCtrlInPct` |  | |  | `ewahr` |
+| `MaterialBaseUnit` |  | | `_Product` | `BaseUnit` |
+| `MaterialMinLotSizeQuantity` |  | |  | `bstmi` |
+| `MaterialMaxLotSizeQuantity` |  | |  | `bstma` |
+| `CostingLotSize` |  | |  | `losgr` |
+| `DistributionKey` |  | |  | `verto` |
+| `TargetProductionSupplyArea` |  | |  | `cast(mkal.tsa_prvbe as pph_prvbe preserving type)` |
+| `_Material` | | ✓ | | |
+| `_MaterialText` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_MainProduct` | | ✓ | | |
+| `_OriglBatchReferenceMaterial` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperations` | | ✓ | | |
+| `_ProductionLine` | | ✓ | | |
+| `_ProductionVersionGroup` | | ✓ | | |
+| `_ProductionSupplyArea` | | ✓ | | |
+| `_TargetProductionSupplyArea` | | ✓ | | |
+| `_IssuingStorageLocation` | | ✓ | | |
+| `_ReceivingStorageLocation` | | ✓ | | |
+| `_MatlCostApportionmentStruc` | | ✓ | | |
+| `_QuantityDistributionKey` | | ✓ | | |
+| `_MaterialBaseUnit` | | ✓ | | |
+| `_MatlProcurementProfile` | | ✓ | | |
 
 ## Associations
 

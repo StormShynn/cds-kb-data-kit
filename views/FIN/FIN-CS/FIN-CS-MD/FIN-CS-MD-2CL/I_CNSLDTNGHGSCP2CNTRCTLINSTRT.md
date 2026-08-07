@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `GHGScope2ContractualInstrument` | `cast( _Source.GHGScope2ContractualInstrument as fincs_ghgscp2cntrctlinstrument preserving type )` |
-| `GHGScp2CntrctlInstrName` | `cast( _Source.GHGScp2CntrctlInstrName as fincs_ghgscp2cntrctlinstrname preserving type )` |
-| `_Language` | *Association* |
-| `_GHGScp2ContractualInstrument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `GHGScope2ContractualInstrument` | ✓ | |  | `cast( _Source.GHGScope2ContractualInstrument as fincs_ghgscp2cntrctlinstrument preserving type )` |
+| `GHGScp2CntrctlInstrName` |  | |  | `cast( _Source.GHGScp2CntrctlInstrName as fincs_ghgscp2cntrctlinstrname preserving type )` |
+| `_Language` | | ✓ | | |
+| `_GHGScp2ContractualInstrument` | | ✓ | | |
 
 ## Associations
 

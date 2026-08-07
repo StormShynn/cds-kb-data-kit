@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProfitCenterDerivationSrceType` | `ProfitCenterDerivationSrceType` |
-| key `ProfitCenterDrvtnSrceTypeName` | `case when _Text[1:Language=$session.system_language].ProfitCenterDrvtnSrceTypeName is null then _Text[1:Language='E'].ProfitCenterDrvtnSrceTypeName else _Text[1:Language=$session.system_language].ProfitCenterDrvtnSrceTypeName end` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProfitCenterDerivationSrceType` | ✓ | |  |  |
+| `ProfitCenterDrvtnSrceTypeName` | ✓ | |  | `case when _Text[1:Language=$session.system_language].ProfitCenterDrvtnSrceTypeName is null then _Text[1:Language='E'].ProfitCenterDrvtnSrceTypeName else _Text[1:Language=$session.system_language].ProfitCenterDrvtnSrceTypeName end` |
 
 ## Source Code
 

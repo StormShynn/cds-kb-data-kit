@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JntOpgAgrmt.CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmt.JntOpgAgrmt` |
-| `JntVntrContractNmbr` | `JntOpgAgrmt.JntVntrContractNmbr` |
-| `JntVntrPayrollClearingSet` | `JntOpgAgrmt.JntVntrPayrollClearingSet` |
-| `JntVntrConstructionExclsnSet` | `JntOpgAgrmt.JntVntrConstructionExclsnSet` |
-| `JntVntrCatastropheExclsnSet` | `JntOpgAgrmt.JntVntrCatastropheExclsnSet` |
-| `JntVntrConstructionOvhdRule` | `JntOpgAgrmt.JntVntrConstructionOvhdRule` |
-| `JntVntrCatastropheOvhdRule` | `JntOpgAgrmt.JntVntrCatastropheOvhdRule` |
-| `JVAOvhdPercentProdg` | `JntOpgAgrmt.JVAOvhdPercentProdg` |
-| `JVAExclsnAcctSetPercentProdg` | `JntOpgAgrmt.JVAExclsnAcctSetPercentProdg` |
-| `JVAOvhdPercentDev` | `JntOpgAgrmt.JVAOvhdPercentDev` |
-| `JVAExclsnAcctSetPercentDev` | `JntOpgAgrmt.JVAExclsnAcctSetPercentDev` |
-| `JntVntrExplorationOvhdRule` | `JntOpgAgrmt.JntVntrExplorationOvhdRule` |
-| `JntVntrDrillingOvhdRule` | `JntOpgAgrmt.JntVntrDrillingOvhdRule` |
-| `JntVntrCapitalExclsnSet` | `JntOpgAgrmt.JntVntrCapitalExclsnSet` |
-| `JntVntrOvhdOffsetCostCtr` | `JntOpgAgrmt.JntVntrOvhdOffsetCostCtr` |
-| `JntOpgAgrmtProdgWellThld` | `JntOpgAgrmt.JntOpgAgrmtProdgWellThld` |
-| `JntVntrOvhdRecurringDoc` | `JntOpgAgrmt.JntVntrOvhdRecurringDoc` |
-| `JntVntrExpnIsEscalated` | `JntOpgAgrmt.JntVntrExpnIsEscalated` |
-| `JntOpgAgrmtClass` | `JntOpgAgrmt.JntOpgAgrmtClass` |
-| `JntOpgAgrmtCreatedByUser` | `JntOpgAgrmt.JntOpgAgrmtCreatedByUser` |
-| `JntOpgAgrmtCreationTime` | `JntOpgAgrmt.JntOpgAgrmtCreationTime` |
-| `JntOpgAgrmtCreationDate` | `JntOpgAgrmt.JntOpgAgrmtCreationDate` |
-| `JntOpgAgrmtLastChangedByUser` | `JntOpgAgrmt.JntOpgAgrmtLastChangedByUser` |
-| `JntOpgAgrmtLastChangedTime` | `JntOpgAgrmt.JntOpgAgrmtLastChangedTime` |
-| `JntOpgAgrmtLastChangedDate` | `JntOpgAgrmt.JntOpgAgrmtLastChangedDate` |
-| `JntVntrPrioPerdDrillingIsCalc` | `JntOpgAgrmt.JntVntrPrioPerdDrillingIsCalc` |
-| `JntVntrWBSElmntOvhdIsCalc` | `JntOpgAgrmt.JntVntrWBSElmntOvhdIsCalc` |
-| `_JntOpgAgrmtText` | *Association* |
-| `_JntOpgAgrmtEquityGrp` | *Association* |
-| `_JntOpgAgrmtPnltyCatRcvry` | *Association* |
-| `_JntOpgAgrmtProjSteppedRate` | *Association* |
-| `_JntOpgAgrmtProdgStatAssgmt` | *Association* |
-| `_JntOpgAgrmtProdgStatThld` | *Association* |
-| `_JntOpgAgrmtDrillingRatio` | *Association* |
-| `_JntOpgAgrmtParentCoOvhd` | *Association* |
-| `_JntOpgAgrmtPayrollBurden` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JntVntrContractNmbr` |  | |  |  |
+| `JntVntrPayrollClearingSet` |  | |  |  |
+| `JntVntrConstructionExclsnSet` |  | |  |  |
+| `JntVntrCatastropheExclsnSet` |  | |  |  |
+| `JntVntrConstructionOvhdRule` |  | |  |  |
+| `JntVntrCatastropheOvhdRule` |  | |  |  |
+| `JVAOvhdPercentProdg` |  | |  |  |
+| `JVAExclsnAcctSetPercentProdg` |  | |  |  |
+| `JVAOvhdPercentDev` |  | |  |  |
+| `JVAExclsnAcctSetPercentDev` |  | |  |  |
+| `JntVntrExplorationOvhdRule` |  | |  |  |
+| `JntVntrDrillingOvhdRule` |  | |  |  |
+| `JntVntrCapitalExclsnSet` |  | |  |  |
+| `JntVntrOvhdOffsetCostCtr` |  | |  |  |
+| `JntOpgAgrmtProdgWellThld` |  | |  |  |
+| `JntVntrOvhdRecurringDoc` |  | |  |  |
+| `JntVntrExpnIsEscalated` |  | |  |  |
+| `JntOpgAgrmtClass` |  | |  |  |
+| `JntOpgAgrmtCreatedByUser` |  | |  |  |
+| `JntOpgAgrmtCreationTime` |  | |  |  |
+| `JntOpgAgrmtCreationDate` |  | |  |  |
+| `JntOpgAgrmtLastChangedByUser` |  | |  |  |
+| `JntOpgAgrmtLastChangedTime` |  | |  |  |
+| `JntOpgAgrmtLastChangedDate` |  | |  |  |
+| `JntVntrPrioPerdDrillingIsCalc` |  | |  |  |
+| `JntVntrWBSElmntOvhdIsCalc` |  | |  |  |
+| `_JntOpgAgrmtText` | | ✓ | | |
+| `_JntOpgAgrmtEquityGrp` | | ✓ | | |
+| `_JntOpgAgrmtPnltyCatRcvry` | | ✓ | | |
+| `_JntOpgAgrmtProjSteppedRate` | | ✓ | | |
+| `_JntOpgAgrmtProdgStatAssgmt` | | ✓ | | |
+| `_JntOpgAgrmtProdgStatThld` | | ✓ | | |
+| `_JntOpgAgrmtDrillingRatio` | | ✓ | | |
+| `_JntOpgAgrmtParentCoOvhd` | | ✓ | | |
+| `_JntOpgAgrmtPayrollBurden` | | ✓ | | |
 
 ## Source Code
 

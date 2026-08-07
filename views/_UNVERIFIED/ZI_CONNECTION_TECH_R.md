@@ -36,18 +36,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CarrierId` | `carrier_id` |
-| key `ConnectionId` | `connection_id` |
-| `AirportFromId` | `airport_from_id` |
-| `AirportToId` | `airport_to_id` |
-| `DepartureTime` | `departure_time` |
-| `ArrivalTime` | `arrival_time` |
-| `Distance` | `distance` |
-| `DistanceUnit` | `distance_unit` |
-| `_Flight` | *Association* |
-| `_Airline` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CarrierId` | ✓ | |  | `carrier_id` |
+| `ConnectionId` | ✓ | |  | `connection_id` |
+| `AirportFromId` |  | |  | `airport_from_id` |
+| `AirportToId` |  | |  | `airport_to_id` |
+| `DepartureTime` |  | |  | `departure_time` |
+| `ArrivalTime` |  | |  | `arrival_time` |
+| `Distance` |  | |  | `distance` |
+| `DistanceUnit` |  | |  | `distance_unit` |
+| `_Flight` | | ✓ | | |
+| `_Airline` | | ✓ | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ShippingPoint` | `vstel` |
-| `DeliverySelectionDate` | `lfdat_a` |
-| `DeliveryDocumentType` | `lfart` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShippingPoint` |  | |  | `vstel` |
+| `DeliverySelectionDate` |  | |  | `lfdat_a` |
+| `DeliveryDocumentType` |  | |  | `lfart` |
 
 ## Source Code
 

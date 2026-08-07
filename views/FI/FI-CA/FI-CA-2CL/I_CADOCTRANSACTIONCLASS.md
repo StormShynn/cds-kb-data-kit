@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADocumentTransactionClass` | `cast( left( dd07l.domvalue_l, 1 ) as tatyp_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADocumentTransactionClass` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as tatyp_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

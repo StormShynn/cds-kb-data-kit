@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'ATPCheckingGroup'` | `representativeKey: 'ATPCheckingGroup'` |
-| `]` | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #LANGUAGE_DEPENDENT_TEXT, #SEARCHABLE_ENTITY ]` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'ATPCheckingGroup'` |  | |  | `representativeKey: 'ATPCheckingGroup'` |
+| `]` |  | |  | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #LANGUAGE_DEPENDENT_TEXT, #SEARCHABLE_ENTITY ]` |
 
 ## Source Code
 

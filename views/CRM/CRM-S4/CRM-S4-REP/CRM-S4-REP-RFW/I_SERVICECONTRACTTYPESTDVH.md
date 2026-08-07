@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `_ServiceDocumentTypeText` | *Association* |
-| `_ServiceObjectTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentType` | ✓ | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `_ServiceDocumentTypeText` | | ✓ | | |
+| `_ServiceObjectTypeText` | | ✓ | | |
 
 ## Source Code
 

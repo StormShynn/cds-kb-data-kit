@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SelectedCodeSetPlant` | `SelectedCodeSetPlant` |
-| key `InspectionCatalog` | `InspectionCatalog` |
-| key `SelectedCodeSet` | `SelectedCodeSet` |
-| `InspectionSelectedSetStatus` | `InspectionSelectedSetStatus` |
-| `_SelectedCodeSetPlant` | *Association* |
-| `_InspectionCatalog` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SelectedCodeSetPlant` | ✓ | |  |  |
+| `InspectionCatalog` | ✓ | |  |  |
+| `SelectedCodeSet` | ✓ | |  |  |
+| `InspectionSelectedSetStatus` |  | |  |  |
+| `_SelectedCodeSetPlant` | | ✓ | | |
+| `_InspectionCatalog` | | ✓ | | |
 
 ## Source Code
 

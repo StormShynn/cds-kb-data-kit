@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanContainerStatus` | `KanbanContainerStatus` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanContainerStatus` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

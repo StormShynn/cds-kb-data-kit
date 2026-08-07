@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `Plant` |
-| key `Material` | `Material` |
-| key `Batch` | `Batch` |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_Material` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Batch` | ✓ | |  |  |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Material` | | ✓ | | |
 
 ## Source Code
 

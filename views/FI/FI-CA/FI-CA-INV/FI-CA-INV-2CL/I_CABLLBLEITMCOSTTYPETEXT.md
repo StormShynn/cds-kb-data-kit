@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABllbleItmCostType` | `co_type` |
-| key `Language` | `langu` |
-| `CABllbleItmCostTypeText` | `text` |
-| `_CABllbleItmCostType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABllbleItmCostType` | ✓ | |  | `co_type` |
+| `Language` | ✓ | |  | `langu` |
+| `CABllbleItmCostTypeText` |  | |  | `text` |
+| `_CABllbleItmCostType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

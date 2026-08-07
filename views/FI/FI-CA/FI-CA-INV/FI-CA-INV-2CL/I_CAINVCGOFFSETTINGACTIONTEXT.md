@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgOffsettingAction` | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_offset_action_kk preserving type )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CAInvcgOffsettingActionText` | `cast( ddtext as inv_offset_action_txt_gfn_kk preserving type )` |
-| `_CAInvcgOffsettingAction` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgOffsettingAction` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_offset_action_kk preserving type )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CAInvcgOffsettingActionText` |  | |  | `cast( ddtext as inv_offset_action_txt_gfn_kk preserving type )` |
+| `_CAInvcgOffsettingAction` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

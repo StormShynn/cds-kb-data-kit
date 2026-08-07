@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `ConditionExclusionProcedure` | `cast( dd07t.domvalue_l as kauvf )` |
-| `CndnExclusionProcedureText` | `cast( dd07t.ddtext as ddtext preserving type )` |
-| `_Language` | *Association* |
-| `_ConditionExclusionProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ConditionExclusionProcedure` | ✓ | |  | `cast( dd07t.domvalue_l as kauvf )` |
+| `CndnExclusionProcedureText` |  | |  | `cast( dd07t.ddtext as ddtext preserving type )` |
+| `_Language` | | ✓ | | |
+| `_ConditionExclusionProcedure` | | ✓ | | |
 
 ## Associations
 

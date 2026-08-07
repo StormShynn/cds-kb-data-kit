@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceListType` | `InvoiceListType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceListType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

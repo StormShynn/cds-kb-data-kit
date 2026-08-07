@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TransportationOrder` | `/scmtms/tor_id` |
-| `TransportationOrderType` | `/scmtms/tor_type` |
-| `TransportationMode` | `/scmtms/trmodcode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrder` |  | |  | `/scmtms/tor_id` |
+| `TransportationOrderType` |  | |  | `/scmtms/tor_type` |
+| `TransportationMode` |  | |  | `/scmtms/trmodcode` |
 
 ## Source Code
 

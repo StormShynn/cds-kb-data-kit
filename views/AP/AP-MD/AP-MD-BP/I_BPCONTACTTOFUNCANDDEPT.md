@@ -28,38 +28,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RelationshipNumber` | `but051.relnr` |
-| key `BusinessPartnerCompany` | `but051.partner1` |
-| key `BusinessPartnerPerson` | `but051.partner2` |
-| key `ValidityEndDate` | `but051.date_to` |
-| `ValidityStartDate` | `_BPContact.ValidityStartDate` |
-| `ContactPersonFunction` | `but051.pafkt` |
-| `BPContactPersonFunction` | `but051.pafkt` |
-| `ContactPersonFunctionName` | `but051.fnctn` |
-| `ContactPersonDepartment` | `but051.abtnr` |
-| `ContactPersonDepartmentName` | `but051.dprtmnt` |
-| `ContactPersonAuthorityType` | `but051.paauth` |
-| `ContactPersonVIPType` | `but051.pavip` |
-| `ContactPersonRemarkText` | `but051.parem` |
-| `PhoneNumber` | `but051.tel_number` |
-| `PhoneNumberExtension` | `but051.tel_extens` |
-| `FaxNumber` | `but051.fax_number` |
-| `FaxNumberExtension` | `but051.fax_extens` |
-| `EmailAddress` | `but051.smtp_address` |
-| `RelationshipCategory` | `but051.reltyp` |
-| `_BusinessPartnerCompany` | *Association* |
-| `_BusinessPartnerPerson` | *Association* |
-| `_ContactPersonDepartment` | *Association* |
-| `_ContactPersonFunction` | *Association* |
-| `_CntctPersnFuncValueHelp` | *Association* |
-| `_ContactPersonFunctionText` | *Association* |
-| `_CntctPersnDeptValueHelp` | *Association* |
-| `_ContactPersonDepartmentText` | *Association* |
-| `_BPContactPersonAuthorityText` | *Association* |
-| `_BPCntctPersnVIPIndicatorText` | *Association* |
-| `_BPContact` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RelationshipNumber` | ✓ | |  | `relnr` |
+| `BusinessPartnerCompany` | ✓ | |  | `partner1` |
+| `BusinessPartnerPerson` | ✓ | |  | `partner2` |
+| `ValidityEndDate` | ✓ | |  | `date_to` |
+| `ValidityStartDate` |  | | `_BPContact` | `ValidityStartDate` |
+| `ContactPersonFunction` |  | |  | `pafkt` |
+| `BPContactPersonFunction` |  | |  | `pafkt` |
+| `ContactPersonFunctionName` |  | |  | `fnctn` |
+| `ContactPersonDepartment` |  | |  | `abtnr` |
+| `ContactPersonDepartmentName` |  | |  | `dprtmnt` |
+| `ContactPersonAuthorityType` |  | |  | `paauth` |
+| `ContactPersonVIPType` |  | |  | `pavip` |
+| `ContactPersonRemarkText` |  | |  | `parem` |
+| `PhoneNumber` |  | |  | `tel_number` |
+| `PhoneNumberExtension` |  | |  | `tel_extens` |
+| `FaxNumber` |  | |  | `fax_number` |
+| `FaxNumberExtension` |  | |  | `fax_extens` |
+| `EmailAddress` |  | |  | `smtp_address` |
+| `RelationshipCategory` |  | |  | `reltyp` |
+| `_BusinessPartnerCompany` | | ✓ | | |
+| `_BusinessPartnerPerson` | | ✓ | | |
+| `_ContactPersonDepartment` | | ✓ | | |
+| `_ContactPersonFunction` | | ✓ | | |
+| `_CntctPersnFuncValueHelp` | | ✓ | | |
+| `_ContactPersonFunctionText` | | ✓ | | |
+| `_CntctPersnDeptValueHelp` | | ✓ | | |
+| `_ContactPersonDepartmentText` | | ✓ | | |
+| `_BPContactPersonAuthorityText` | | ✓ | | |
+| `_BPCntctPersnVIPIndicatorText` | | ✓ | | |
+| `_BPContact` | | ✓ | | |
 
 ## Associations
 

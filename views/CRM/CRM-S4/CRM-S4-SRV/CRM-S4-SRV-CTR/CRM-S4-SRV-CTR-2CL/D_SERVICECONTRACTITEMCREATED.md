@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ServiceContractItemUUID` | `crmt_object_guid` |
-| `ServiceContractItemCategory` | `crmt_item_type_db` |
-| `ServiceContractItemDescription` | `crmt_prshtextx_db` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContractItemUUID` |  | |  | `crmt_object_guid` |
+| `ServiceContractItemCategory` |  | |  | `crmt_item_type_db` |
+| `ServiceContractItemDescription` |  | |  | `crmt_prshtextx_db` |
 
 ## Source Code
 

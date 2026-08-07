@@ -29,38 +29,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Ledger` | `Ledger` |
-| key `CompanyCode` | `CompanyCode` |
-| key `OrderID` | `OrderID` |
-| key `OrderType` | `OrderType` |
-| key `OrderCategory` | `OrderCategory` |
-| key `ChartOfAccounts` | `ChartOfAccounts` |
-| key `GLAccount` | `GLAccount` |
-| key `Plant` | `Plant` |
-| key `ProducedProduct` | `ProducedProduct` |
-| key `OriginProduct` | `OriginProduct` |
-| key `OriginCostCenter` | `OriginCostCenter` |
-| key `OriginCostCtrActivityType` | `OriginCostCtrActivityType` |
-| `DisplayCurrency` | `DisplayCurrency` |
-| `InptPrVarcAmtInDspCrcy` | `InptPrVarcAmtInDspCrcy` |
-| `InptQtyVarcAmtInDspCrcy` | `InptQtyVarcAmtInDspCrcy` |
-| `RsceUsgeVarcAmtInDspCrcy` | `RsceUsgeVarcAmtInDspCrcy` |
-| `OutpPrVarcAmtInDspCrcy` | `OutpPrVarcAmtInDspCrcy` |
-| `RmngVarcAmtInDspCrcy` | `RmngVarcAmtInDspCrcy` |
-| `CostVarianceInDspCrcy` | `CostVarianceInDspCrcy` |
-| `WIPCostInDspCrcy` | `WIPCostInDspCrcy` |
-| `_Ledger` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Order` | *Association* |
-| `_OrderType` | *Association* |
-| `_OrderCategory` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_GLAccountInChartOfAccounts` | *Association* |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Ledger` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `OrderID` | ✓ | |  |  |
+| `OrderType` | ✓ | |  |  |
+| `OrderCategory` | ✓ | |  |  |
+| `ChartOfAccounts` | ✓ | |  |  |
+| `GLAccount` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `ProducedProduct` | ✓ | |  |  |
+| `OriginProduct` | ✓ | |  |  |
+| `OriginCostCenter` | ✓ | |  |  |
+| `OriginCostCtrActivityType` | ✓ | |  |  |
+| `DisplayCurrency` |  | |  |  |
+| `InptPrVarcAmtInDspCrcy` |  | |  |  |
+| `InptQtyVarcAmtInDspCrcy` |  | |  |  |
+| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  |
+| `OutpPrVarcAmtInDspCrcy` |  | |  |  |
+| `RmngVarcAmtInDspCrcy` |  | |  |  |
+| `CostVarianceInDspCrcy` |  | |  |  |
+| `WIPCostInDspCrcy` |  | |  |  |
+| `_Ledger` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_OrderType` | | ✓ | | |
+| `_OrderCategory` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

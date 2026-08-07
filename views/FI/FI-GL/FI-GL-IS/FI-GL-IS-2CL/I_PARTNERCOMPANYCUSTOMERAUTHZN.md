@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `I_Customer.Customer` |
-| `PartnerCompany` | `I_Customer.TradingPartner` |
-| `AuthorizationGroup` | `I_Customer.AuthorizationGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  |  |
+| `PartnerCompany` |  | |  | `TradingPartner` |
+| `AuthorizationGroup` |  | |  |  |
 
 ## Source Code
 

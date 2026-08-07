@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequest` | `BillingDocumentRequest` |
-| key `BillingDocumentRequestItem` | `BillingDocumentRequestItem` |
-| key `Language` | `Language` |
-| key `LongTextID` | `LongTextID` |
-| `LongText` | `LongText` |
-| `_Item` | *Association* |
-| `_BillingDocumentRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  |  |
+| `BillingDocumentRequestItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongText` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_BillingDocumentRequest` | | ✓ | | |
 
 ## Source Code
 

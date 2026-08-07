@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReturnReason` | `ret_reason` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReturnReason` | ✓ | |  | `ret_reason` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

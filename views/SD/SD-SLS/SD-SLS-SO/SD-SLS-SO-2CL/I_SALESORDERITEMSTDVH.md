@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrder` |
-| key `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderItemText` | `SalesOrderItemText` |
-| `_SalesOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `SalesOrderItemText` |  | |  |  |
+| `_SalesOrder` | | ✓ | | |
 
 ## Source Code
 

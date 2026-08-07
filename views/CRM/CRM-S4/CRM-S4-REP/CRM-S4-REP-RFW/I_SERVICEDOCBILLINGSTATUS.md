@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocBillingStatus` | `domvalue_l` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_ServiceDocBillingStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocBillingStatus` | ✓ | |  | `domvalue_l` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_ServiceDocBillingStatusText` | | ✓ | | |
 
 ## Associations
 

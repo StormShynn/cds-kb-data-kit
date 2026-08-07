@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TechnicalObjectType` | `t370k.eqart` |
-| `EAMTechnicalObjectTypeOID` | `cast( t370k.eqart as technicalobjecttype_oid )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TechnicalObjectType` | ✓ | |  | `eqart` |
+| `EAMTechnicalObjectTypeOID` |  | |  | `cast( t370k.eqart as technicalobjecttype_oid )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

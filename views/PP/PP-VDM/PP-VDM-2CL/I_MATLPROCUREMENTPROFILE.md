@@ -27,29 +27,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialProcurementProfile` | `cast(prfl.sobsl as pph_sobsl preserving type)` |
-| key `Plant` | `prfl.werks` |
-| `MaterialProcurementCategory` | `cast(prfl.beskz as pph_beskz preserving type)` |
-| `MaterialProcurementExtType` | `cast(prfl.sobes as pph_esobs preserving type)` |
-| `SupplyingOrProductionPlant` | `cast(prfl.wrk02 as vdm_wrk02 preserving type)` |
-| `IssuingPlant` | `prfl.rewrk` |
-| `Language` | `$session.system_language` |
-| `MaterialIsDirectlyProduced` | `prfl.clcor` |
-| `MaterialIsDirectlyProcured` | `prfl.dirpr` |
-| `IsPhantomItem` | `prfl.dumps` |
-| `IsWithdrawnFrmAlternativePlant` | `prfl.rewfg` |
-| `MRPStockTransfSelectionControl` | `prfl.umldb` |
-| `MatlIsRlvtForMultiLvlSubcontrg` | `prfl.mlscr` |
-| `_Plant` | *Association* |
-| `_SupplyingOrProductionPlant` | *Association* |
-| `_IssuingPlant` | *Association* |
-| `_Text` | *Association* |
-| `_MaterialProcurementCategory` | *Association* |
-| `_MaterialProcurementExtType` | *Association* |
-| `_MaterialProcurementExtType_2` | *Association* |
-| `_MaterialProcurementExtType_3` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialProcurementProfile` | ✓ | |  | `cast(prfl.sobsl as pph_sobsl preserving type)` |
+| `Plant` | ✓ | |  | `werks` |
+| `MaterialProcurementCategory` |  | |  | `cast(prfl.beskz as pph_beskz preserving type)` |
+| `MaterialProcurementExtType` |  | |  | `cast(prfl.sobes as pph_esobs preserving type)` |
+| `SupplyingOrProductionPlant` |  | |  | `cast(prfl.wrk02 as vdm_wrk02 preserving type)` |
+| `IssuingPlant` |  | |  | `rewrk` |
+| `Language` |  | |  | `$session.system_language` |
+| `MaterialIsDirectlyProduced` |  | |  | `clcor` |
+| `MaterialIsDirectlyProcured` |  | |  | `dirpr` |
+| `IsPhantomItem` |  | |  | `dumps` |
+| `IsWithdrawnFrmAlternativePlant` |  | |  | `rewfg` |
+| `MRPStockTransfSelectionControl` |  | |  | `umldb` |
+| `MatlIsRlvtForMultiLvlSubcontrg` |  | |  | `mlscr` |
+| `_Plant` | | ✓ | | |
+| `_SupplyingOrProductionPlant` | | ✓ | | |
+| `_IssuingPlant` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_MaterialProcurementCategory` | | ✓ | | |
+| `_MaterialProcurementExtType` | | ✓ | | |
+| `_MaterialProcurementExtType_2` | | ✓ | | |
+| `_MaterialProcurementExtType_3` | | ✓ | | |
 
 ## Associations
 

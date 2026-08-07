@@ -28,33 +28,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `ElectronicDocUUID` |
-| `CH_ElectronicDocTransactionID` | `CH_ElectronicDocTransactionID` |
-| `CH_ElectronicDocHasDunning` | `CH_ElectronicDocHasDunning` |
-| `CH_ElectronicDocInvcIssuerID` | `CH_ElectronicDocInvcIssuerID` |
-| `CH_ElectronicDocumentID` | `CH_ElectronicDocumentID` |
-| `CH_EDocRcpntBusinessPartnerID` | `CH_EDocRcpntBusinessPartnerID` |
-| `CH_EDocInvcIssuerCompanyName` | `CH_EDocInvcIssuerCompanyName` |
-| `CH_EDocRcpntBusPartnerName` | `CH_EDocRcpntBusPartnerName` |
-| `CH_ElectronicDocInvcIssuerTxID` | `CH_ElectronicDocInvcIssuerTxID` |
-| `CH_ElectronicDocAcctgDocNmbr` | `CH_ElectronicDocAcctgDocNmbr` |
-| `CH_ElectronicDocIBAN` | `CH_ElectronicDocIBAN` |
-| `CH_ElectronicDocQRCodeRefNmbr` | `CH_ElectronicDocQRCodeRefNmbr` |
-| `CH_ElectronicDocTotalAmount` | `CH_ElectronicDocTotalAmount` |
-| `CH_ElectronicDocTotalTaxAmount` | `CH_ElectronicDocTotalTaxAmount` |
-| `CH_ElectronicDocCurrency` | `CH_ElectronicDocCurrency` |
-| `CH_ElectronicDocAcctgDocType` | `CH_ElectronicDocAcctgDocType` |
-| `CH_ElectronicDocFormrTransID` | `CH_ElectronicDocFormrTransID` |
-| `CH_ElectronicDocRecipientID` | `CH_ElectronicDocRecipientID` |
-| `CH_ElectronicDocDunningLevel` | `CH_ElectronicDocDunningLevel` |
-| `CH_ElectronicDocDunningDate` | `CH_ElectronicDocDunningDate` |
-| `CH_ElectronicDocType` | `CH_ElectronicDocType` |
-| `CH_ElectronicDocPaymentType` | `CH_ElectronicDocPaymentType` |
-| `_ElectronicCurrencyText` | *Association* |
-| `_ElectronicDocTypeText` | *Association* |
-| `_CustomerID` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `CH_ElectronicDocTransactionID` |  | |  |  |
+| `CH_ElectronicDocHasDunning` |  | |  |  |
+| `CH_ElectronicDocInvcIssuerID` |  | |  |  |
+| `CH_ElectronicDocumentID` |  | |  |  |
+| `CH_EDocRcpntBusinessPartnerID` |  | |  |  |
+| `CH_EDocInvcIssuerCompanyName` |  | |  |  |
+| `CH_EDocRcpntBusPartnerName` |  | |  |  |
+| `CH_ElectronicDocInvcIssuerTxID` |  | |  |  |
+| `CH_ElectronicDocAcctgDocNmbr` |  | |  |  |
+| `CH_ElectronicDocIBAN` |  | |  |  |
+| `CH_ElectronicDocQRCodeRefNmbr` |  | |  |  |
+| `CH_ElectronicDocTotalAmount` |  | |  |  |
+| `CH_ElectronicDocTotalTaxAmount` |  | |  |  |
+| `CH_ElectronicDocCurrency` |  | |  |  |
+| `CH_ElectronicDocAcctgDocType` |  | |  |  |
+| `CH_ElectronicDocFormrTransID` |  | |  |  |
+| `CH_ElectronicDocRecipientID` |  | |  |  |
+| `CH_ElectronicDocDunningLevel` |  | |  |  |
+| `CH_ElectronicDocDunningDate` |  | |  |  |
+| `CH_ElectronicDocType` |  | |  |  |
+| `CH_ElectronicDocPaymentType` |  | |  |  |
+| `_ElectronicCurrencyText` | | ✓ | | |
+| `_ElectronicDocTypeText` | | ✓ | | |
+| `_CustomerID` | | ✓ | | |
 
 ## Source Code
 

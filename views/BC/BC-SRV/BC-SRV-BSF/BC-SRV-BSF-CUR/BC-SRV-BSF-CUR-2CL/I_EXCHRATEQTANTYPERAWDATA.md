@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SourceCurrency` | `fcurr` |
-| key `TargetCurrency` | `tcurr` |
-| key `ValidityStartDate` | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |
-| `CurrencyQuotationType` | `notation` |
-| `_SourceCurrency` | *Association* |
-| `_TargetCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SourceCurrency` | ✓ | |  | `fcurr` |
+| `TargetCurrency` | ✓ | |  | `tcurr` |
+| `ValidityStartDate` | ✓ | |  | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |
+| `CurrencyQuotationType` |  | |  | `notation` |
+| `_SourceCurrency` | | ✓ | | |
+| `_TargetCurrency` | | ✓ | | |
 
 ## Associations
 

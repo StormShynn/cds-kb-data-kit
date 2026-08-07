@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsShptVoyageUUID` | `FldLogsShptVoyageUUID` |
-| key `FldLogsVoyStgeAssgmtUUID` | `FldLogsVoyStgeAssgmtUUID` |
-| `FldLogsVoyStgeAssgmtSqncID` | `FldLogsVoyStgeAssgmtSqncID` |
-| `FldLogsShipmentItemTypeCode` | `FldLogsShipmentItemTypeCode` |
-| `FldLogsContainerID` | `FldLogsContainerID` |
-| `FldLogsSrcePlnt` | `FldLogsSrcePlnt` |
-| `FldLogsDestPlnt` | `FldLogsDestPlnt` |
-| `FldLogsVoyageSrceStage` | `FldLogsVoyageSrceStage` |
-| `FldLogsVoyageDestStage` | `FldLogsVoyageDestStage` |
-| `FldLogsCtnActualWeight` | `FldLogsCtnActualWeight` |
-| `FldLogsCtnActualWeightUnit` | `FldLogsCtnActualWeightUnit` |
-| `FldLogsShptAssignmentStatus` | `FldLogsShptAssignmentStatus` |
-| `FldLogsShptVoyAssgmtCritlty` | `FldLogsShptVoyAssgmtCritlty` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `SuplrCoIsBusPrpsCmpltd` | `SuplrCoIsBusPrpsCmpltd` |
-| `_VoyageAssgmtText` | *Association* |
-| `_ItemType` | *Association* |
-| `_Voyage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsShptVoyageUUID` | ✓ | |  |  |
+| `FldLogsVoyStgeAssgmtUUID` | ✓ | |  |  |
+| `FldLogsVoyStgeAssgmtSqncID` |  | |  |  |
+| `FldLogsShipmentItemTypeCode` |  | |  |  |
+| `FldLogsContainerID` |  | |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |
+| `FldLogsDestPlnt` |  | |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |
+| `FldLogsCtnActualWeight` |  | |  |  |
+| `FldLogsCtnActualWeightUnit` |  | |  |  |
+| `FldLogsShptAssignmentStatus` |  | |  |  |
+| `FldLogsShptVoyAssgmtCritlty` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `SuplrCoIsBusPrpsCmpltd` |  | |  |  |
+| `_VoyageAssgmtText` | | ✓ | | |
+| `_ItemType` | | ✓ | | |
+| `_Voyage` | | ✓ | | |
 
 ## Source Code
 

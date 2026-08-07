@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowScenarioDefinition` | `wfd_id` |
-| `_WorkflowScenarioDefText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` |
+| `_WorkflowScenarioDefText` | | ✓ | | |
 
 ## Associations
 

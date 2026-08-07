@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RealEstateUsableObjectUUID` | `RealEstateUsableObjectUUID` |
-| `REGenericRentalObjectType` | `REGenericRentalObjectType` |
-| `InternalRealEstateNumber` | `InternalRealEstateNumber` |
-| `REStatusObject` | `REStatusObject` |
-| `RealEstateUsableObjectOID` | `RealEstateUsableObjectOID` |
-| `REGnrcRntlObjectAlternativeID` | `REGnrcRntlObjectAlternativeID` |
-| `RealEstateUsableObjectNumber` | `RealEstateUsableObjectNumber` |
-| `REUsableObjectName` | `REUsableObjectName` |
-| `REIdentificationKey` | `REIdentificationKey` |
-| `CompanyCode` | `CompanyCode` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `REAuthorizationGroup` | `REAuthorizationGroup` |
-| `REGnrcRentalObjUsageCategory` | `REGnrcRentalObjUsageCategory` |
-| `REGenericRentalObjectUsageType` | `REGenericRentalObjectUsageType` |
-| `REGenericRentalObjParentUUID` | `REGenericRentalObjParentUUID` |
-| `REGnrcRentalObjPortfolioID` | `REGnrcRentalObjPortfolioID` |
-| `REGnrcRentalObjOwnershipID` | `REGnrcRentalObjOwnershipID` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RealEstateUsableObjectUUID` | ✓ | |  |  |
+| `REGenericRentalObjectType` |  | |  |  |
+| `InternalRealEstateNumber` |  | |  |  |
+| `REStatusObject` |  | |  |  |
+| `RealEstateUsableObjectOID` |  | |  |  |
+| `REGnrcRntlObjectAlternativeID` |  | |  |  |
+| `RealEstateUsableObjectNumber` |  | |  |  |
+| `REUsableObjectName` |  | |  |  |
+| `REIdentificationKey` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `REAuthorizationGroup` |  | |  |  |
+| `REGnrcRentalObjUsageCategory` |  | |  |  |
+| `REGenericRentalObjectUsageType` |  | |  |  |
+| `REGenericRentalObjParentUUID` |  | |  |  |
+| `REGnrcRentalObjPortfolioID` |  | |  |  |
+| `REGnrcRentalObjOwnershipID` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
 
 ## Source Code
 

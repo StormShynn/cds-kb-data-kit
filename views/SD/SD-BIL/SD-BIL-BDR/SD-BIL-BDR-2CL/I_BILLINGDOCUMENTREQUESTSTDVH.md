@@ -34,11 +34,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequest` | `BillingDocumentRequest` |
-| `BillingDocumentRequestType` | `BillingDocumentRequestType` |
-| `SalesOrganization` | `SalesOrganization` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  |  |
+| `BillingDocumentRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
 
 ## Source Code
 

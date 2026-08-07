@@ -29,168 +29,168 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SourceCompanyCode` | `ausbk` |
-| key `SourceAccountingDocument` | `cast( belnr as fis_belnr preserving type )` |
-| key `SourceFiscalYear` | `cast( gjahr as fis_gjahr_no_conv preserving type )` |
-| key `ParkedAcctgDocPyblsItem` | `cast( bzkey as fis_parked_ap_item preserving type )` |
-| `SourceAccountingDocumentItem` | `cast( buzei as fis_buzei preserving type )` |
-| `FinancialAccountType` | `cast( 'K' as farp_koart preserving type )` |
-| `CompanyCode` | `cast( bukrs as fis_bukrs preserving type )` |
-| `Supplier` | `cast( lifnr as fis_lifnr preserving type )` |
-| `PostingKey` | `cast( bschl as farp_bschl preserving type )` |
-| `SpecialGLCode` | `cast( umskz as fac_umskz preserving type )` |
-| `SpecialGLTransactionType` | `cast( umsks as farp_umsks preserving type )` |
-| `DebitCreditCode` | `cast( case xnegp when 'X' then case shkzg when 'S' then 'H' when 'H' then 'S' end else shkzg end as fis_shkzg preserving type )` |
-| `BusinessArea` | `cast( gsber as fis_rbusa preserving type )` |
-| `PartnerBusinessArea` | `cast( vbsegk.pargb as fis_pargb preserving type )` |
-| `TaxCode` | `cast( mwskz as farp_mwskz preserving type )` |
-| `TaxCountry` | `tax_country` |
-| `TaxType` | `mwart` |
-| `ValueDate` | `valut` |
-| `AssignmentReference` | `cast( zuonr as fis_zuonr preserving type )` |
-| `DocumentItemText` | `cast( sgtxt as farp_sgtxt )` |
-| `FinancialTransactionType` | `cast( bewar as fis_rmvct preserving type )` |
-| `AssetTransactionType` | `cast( anbwa as fac_anbwa preserving type )` |
-| `IsSalesRelated` | `cast( xumsw as farp_xumsw)` |
-| `ChartOfAccounts` | `_CompanyCode.ChartOfAccounts` |
-| `GLAccount` | `cast( hkont as fis_racct preserving type )` |
-| `BranchAccount` | `cast( filkd as farp_filkd preserving type )` |
-| `SpecialGLAccountAssignment` | `hzuon` |
-| `DueCalculationBaseDate` | `zfbdt` |
-| `PaymentTerms` | `cast( zterm as farp_dzterm preserving type )` |
-| `CashDiscount1Days` | `cast( zbd1t as farp_dzbd1t preserving type )` |
-| `CashDiscount2Days` | `cast( zbd2t as farp_dzbd2t preserving type )` |
-| `NetPaymentDays` | `cast( zbd3t as farp_dzbd3t preserving type )` |
-| `CashDiscount1Percent` | `cast( zbd1p as dzbd1p_farp preserving type )` |
-| `CashDiscount2Percent` | `cast( zbd2p as dzbd2p_farp preserving type )` |
-| `PaymentMethod` | `cast( zlsch as farp_schzw_bseg preserving type )` |
-| `PaymentBlockingReason` | `cast( zlspr as farp_dzlspr preserving type )` |
-| `HouseBank` | `cast( hbkid as farp_hbkid preserving type )` |
-| `InvoiceReference` | `cast( rebzg as farp_rebzg preserving type )` |
-| `InvoiceReferenceFiscalYear` | `cast( rebzj as fis_rebzj preserving type )` |
-| `InvoiceItemReference` | `cast( rebzz as fis_rebzz preserving type )` |
-| `FollowOnDocumentType` | `cast( rebzt as farp_rebzt preserving type )` |
-| `StateCentralBankPaymentReason` | `cast( lzbkz as fac_lzbkz preserving type )` |
-| `SupplyingCountry` | `cast( landl as fac_landl preserving type )` |
-| `InvoiceList` | `cast( samnr as farp_samnr preserving type )` |
-| `DunningKey` | `cast( mschl as farp_mschl preserving type )` |
-| `DunningBlockingReason` | `cast( mansp as farp_mansp preserving type )` |
-| `LastDunningDate` | `cast( madat as farp_madat preserving type )` |
-| `DunningLevel` | `cast( manst as farp_mahns_d preserving type )` |
-| `DunningArea` | `cast( maber as farp_maber preserving type )` |
-| `VATRegistration` | `cast( stceg as farp_stceg preserving type )` |
-| `PaymentDifferenceReason` | `cast( rstgr as farp_rstgr preserving type )` |
-| `JointVenture` | `vname` |
-| `JointVentureEquityGroup` | `cast( egrup as jv_egroup_cds preserving type )` |
-| `TreasuryContractType` | `cast( vertt as fis_rantyp preserving type )` |
-| `AssetContract` | `cast( vertn as fis_ranl preserving type )` |
-| `CashFlowType` | `cast( vbewa as farp_sbewart preserving type )` |
-| `CommitmentItemShortID` | `cast( fipos as fis_fipos_shortid preserving type )` |
-| `PlanningLevel` | `fdlev` |
-| `PaymentMethodSupplement` | `cast( uzawe as farp_uzawe preserving type )` |
-| `FundsCenter` | `cast( fistl as farp_fistl preserving type )` |
-| `Fund` | `geber` |
-| `Reference1IDByBusinessPartner` | `cast( xref1 as farp_xref1 preserving type )` |
-| `Reference2IDByBusinessPartner` | `cast( xref2 as farp_xref2 preserving type )` |
-| `Reference3IDByBusinessPartner` | `cast( xref3 as fis_xref3 preserving type )` |
-| `DataExchangeInstruction1` | `cast( dtws1 as farp_dtat16 preserving type )` |
-| `DataExchangeInstruction2` | `cast( dtws2 as farp_dtat17 preserving type )` |
-| `DataExchangeInstruction3` | `cast( dtws3 as farp_dtat18 preserving type )` |
-| `DataExchangeInstruction4` | `cast( dtws4 as farp_dtat19 preserving type )` |
-| `AlternativePayeePayer` | `cast( empfb as fis_empfb preserving type )` |
-| `PaymentReference` | `cast( kidno as farp_kidno preserving type )` |
-| `BusinessPlace` | `cast( bupla as farp_bupla preserving type )` |
-| `TaxSection` | `cast( secco as fis_secco preserving type )` |
-| `GrantID` | `grant_nbr` |
-| `FunctionalArea` | `cast( fkber as fm_farea preserving type )` |
-| `IsNegativePosting` | `cast( xnegp as farp_xnegp preserving type )` |
-| `HouseBankAccount` | `cast( hktid as fac_hktid preserving type )` |
-| `NetDueDate` | `cast( netdt as farp_netdt preserving type )` |
-| `CashDiscount1DueDate` | `cast( sk1dt as farp_sk1dt preserving type )` |
-| `CashDiscount2DueDate` | `cast( sk2dt as farp_sk2dt preserving type )` |
-| `BranchCode` | `j_1tpbupl` |
-| `BudgetPeriod` | `budget_pd` |
-| `BPBankAccountInternalID` | `cast( bvtyp as farp_bvtyp preserving type )` |
-| `SettlementReferenceDate` | `cast( dabrz as farp_dabrbez preserving type )` |
-| `PaymentReason` | `cast( payt_rsn as farp_payt_rsn preserving type )` |
-| `FixedCashDiscount` | `cast( zbfix as farp_dzbfix preserving type )` |
-| `JointVentureBillingType` | `cast( btype as jv_bilind_cds preserving type )` |
-| `WithholdingTaxCode` | `qsskz` |
-| `ControllingArea` | `cast( kokrs as fis_kokrs preserving type )` |
-| `CostCenter` | `cast( kostl as fis_kostl preserving type )` |
-| `OrderID` | `cast( aufnr as aufnr preserving type )` |
-| `OrderInternalBillOfOperations` | `cast( aufpl as fis_ordintbillofops preserving type )` |
-| `MasterFixedAsset` | `cast( anln1 as fis_anln1 preserving type )` |
-| `FixedAsset` | `cast( anln2 as fis_anln2 preserving type )` |
-| `WBSElementInternalID` | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` |
-| `ProjectNetwork` | `nplnr` |
-| `ProfitCenter` | `cast( prctr as fis_prctr preserving type )` |
-| `Segment` | `segment` |
-| `SalesDocument` | `kdauf` |
-| `SalesDocumentItem` | `kdpos` |
-| `LineItemIsCompleted` | `cast( erlkz as fis_kblerlkz preserving type )` |
-| `ScheduleLine` | `kdein` |
-| `TargetSpecialGLCode` | `cast( zumsk as fis_dzumsk preserving type )` |
-| `PaymentCurrency` | `cast( pycur as farp_pycur preserving type )` |
-| `TransactionCurrency` | `_ParkedOplAcctgDocument.TransactionCurrency` |
-| `CompanyCodeCurrency` | `_ParkedOplAcctgDocument.CompanyCodeCurrency` |
-| `AdditionalCurrency1` | `_ParkedOplAcctgDocument.AdditionalCurrency1` |
-| `AdditionalCurrency2` | `_ParkedOplAcctgDocument.AdditionalCurrency2` |
-| `AmountInCompanyCodeCurrency` | `} case shkzg when 'H' then cast( cast(-dmbtr as abap.curr( 23,2)) as fis_hsl preserving type ) else cast( cast( dmbtr as abap.curr( 23,2)) as fis_hsl preserving type ) end` |
-| `AmountInTransactionCurrency` | `} case shkzg when 'H' then cast( cast(-wrbtr as abap.curr( 23,2)) as fis_wsl preserving type ) else cast( cast( wrbtr as abap.curr( 23,2)) as fis_wsl preserving type ) end` |
-| `AmountInAdditionalCurrency1` | `} case shkzg when 'H' then cast( cast(-dmbe2 as abap.curr( 23,2)) as fis_dmbe2 preserving type ) else cast( cast( dmbe2 as abap.curr( 23,2)) as fis_dmbe2 preserving type ) end` |
-| `AmountInAdditionalCurrency2` | `} case shkzg when 'H' then cast( cast(-dmbe3 as abap.curr( 23,2)) as fis_dmbe3 preserving type ) else cast( cast( dmbe3 as abap.curr( 23,2)) as fis_dmbe3 preserving type ) end` |
-| `TaxBaseAmountInCoCodeCrcy` | `} case shkzg when 'H' then cast( cast(-hwbas as abap.curr( 23,2)) as hwbas_shl preserving type ) else cast( cast( hwbas as abap.curr( 23,2)) as hwbas_shl preserving type ) end` |
-| `TaxBaseAmountInTransCrcy` | `} case shkzg when 'H' then cast( cast(-fwbas as abap.curr( 23,2)) as fwbas_shl preserving type ) else cast( cast( fwbas as abap.curr( 23,2)) as fwbas_shl preserving type ) end` |
-| `TaxAmountInCoCodeCrcy` | `} case shkzg when 'H' then cast( cast(-mwsts as abap.curr( 23,2)) as fis_mwsts preserving type ) else cast( cast( mwsts as abap.curr( 23,2)) as fis_mwsts preserving type ) end` |
-| `TaxAmount` | `} case shkzg when 'H' then cast( cast(-wmwst as abap.curr( 23,2)) as wmwst_shl preserving type ) else cast( cast( wmwst as abap.curr( 23,2)) as wmwst_shl preserving type ) end` |
-| `TaxAmountInAdditionalCurrency1` | `} case shkzg when 'H' then cast( cast(-mwst2 as abap.curr( 23,2)) as fis_mwst2 preserving type ) else cast( cast( mwst2 as abap.curr( 23,2)) as fis_mwst2 preserving type ) end` |
-| `TaxAmountInAdditionalCurrency2` | `} case shkzg when 'H' then cast( cast(-mwst3 as abap.curr( 23,2)) as fis_mwst3 preserving type ) else cast( cast( mwst3 as abap.curr( 23,2)) as fis_mwst3 preserving type ) end` |
-| `WithholdingTaxAmount` | `} case shkzg when 'H' then cast( cast(-qbshb as abap.curr( 23,2)) as fis_qbshb preserving type ) else cast( cast( qbshb as abap.curr( 23,2)) as fis_qbshb preserving type ) end` |
-| `WithholdingTaxBaseAmount` | `} case shkzg when 'H' then cast( cast(-qsshb as abap.curr( 23,2)) as fis_qsshb preserving type ) else cast( cast( qsshb as abap.curr( 23,2)) as fis_qsshb preserving type ) end` |
-| `WithholdingTaxExemptionAmt` | `} case shkzg when 'H' then cast( cast(-qsfbt as abap.curr( 23,2)) as fis_qsfbt preserving type ) else cast( cast( qsfbt as abap.curr( 23,2)) as fis_qsfbt preserving type ) end` |
-| `PlannedAmtInTransactionCrcy` | `} case shkzg when 'H' then cast( cast(-fdwbt as abap.curr( 23,2)) as fis_fdwbt preserving type ) else cast( cast( fdwbt as abap.curr( 23,2)) as fis_fdwbt preserving type ) end` |
-| `AmountInPaymentCurrency` | `} case shkzg when 'H' then cast( cast(-pyamt as abap.curr( 23,2)) as pyamt_farp preserving type ) else cast( cast( pyamt as abap.curr( 23,2)) as pyamt_farp preserving type ) end` |
-| `CashDiscountBaseAmount` | `} case shkzg when 'H' then cast( cast(-skfbt as abap.curr( 23,2)) as fis_skfbt preserving type ) else cast( cast( skfbt as abap.curr( 23,2)) as fis_skfbt preserving type ) end` |
-| `CashDiscountAmtInCoCodeCrcy` | `} case shkzg when 'H' then cast( cast(-sknto as abap.curr( 23,2)) as fis_sknto preserving type ) else cast( cast( sknto as abap.curr( 23,2)) as fis_sknto preserving type ) end` |
-| `CashDiscountAmount` | `} case shkzg when 'H' then cast( cast(-wskto as abap.curr( 23,2)) as fis_wskto preserving type ) else cast( cast( wskto as abap.curr( 23,2)) as fis_wskto preserving type ) end` |
-| `_SourceCompanyCode` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_SourceFiscalYear` | *Association* |
-| `_ParkedOplAcctgDocument` | *Association* |
-| `_SourceParkedOplAcctgDocument` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompany` | *Association* |
-| `_FinancialAccountType` | *Association* |
-| `_PostingKey` | *Association* |
-| `_DebitCreditCode` | *Association* |
-| `_SpecialGLCode` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_PartnerBusinessArea` | *Association* |
-| `_TaxCountry` | *Association* |
-| `_TaxType` | *Association* |
-| `_AssetTransactionType` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_GLAccountInChartOfAccounts` | *Association* |
-| `_InternalOrder` | *Association* |
-| `_Order` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_CostCenter` | *Association* |
-| `_MasterFixedAsset` | *Association* |
-| `_FixedAsset` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_ProjectNetwork` | *Association* |
-| `_Segment` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_AdditionalCurrency1` | *Association* |
-| `_AdditionalCurrency2` | *Association* |
-| `_PaymentCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SourceCompanyCode` | ✓ | |  | `ausbk` |
+| `SourceAccountingDocument` | ✓ | |  | `cast( belnr as fis_belnr preserving type )` |
+| `SourceFiscalYear` | ✓ | |  | `cast( gjahr as fis_gjahr_no_conv preserving type )` |
+| `ParkedAcctgDocPyblsItem` | ✓ | |  | `cast( bzkey as fis_parked_ap_item preserving type )` |
+| `SourceAccountingDocumentItem` |  | |  | `cast( buzei as fis_buzei preserving type )` |
+| `FinancialAccountType` |  | |  | `cast( 'K' as farp_koart preserving type )` |
+| `CompanyCode` |  | |  | `cast( bukrs as fis_bukrs preserving type )` |
+| `Supplier` |  | |  | `cast( lifnr as fis_lifnr preserving type )` |
+| `PostingKey` |  | |  | `cast( bschl as farp_bschl preserving type )` |
+| `SpecialGLCode` |  | |  | `cast( umskz as fac_umskz preserving type )` |
+| `SpecialGLTransactionType` |  | |  | `cast( umsks as farp_umsks preserving type )` |
+| `DebitCreditCode` |  | |  | `cast( case xnegp when 'X' then case shkzg when 'S' then 'H' when 'H' then 'S' end else shkzg end as fis_shkzg preserving type )` |
+| `BusinessArea` |  | |  | `cast( gsber as fis_rbusa preserving type )` |
+| `PartnerBusinessArea` |  | |  | `cast( vbsegk.pargb as fis_pargb preserving type )` |
+| `TaxCode` |  | |  | `cast( mwskz as farp_mwskz preserving type )` |
+| `TaxCountry` |  | |  | `tax_country` |
+| `TaxType` |  | |  | `mwart` |
+| `ValueDate` |  | |  | `valut` |
+| `AssignmentReference` |  | |  | `cast( zuonr as fis_zuonr preserving type )` |
+| `DocumentItemText` |  | |  | `cast( sgtxt as farp_sgtxt )` |
+| `FinancialTransactionType` |  | |  | `cast( bewar as fis_rmvct preserving type )` |
+| `AssetTransactionType` |  | |  | `cast( anbwa as fac_anbwa preserving type )` |
+| `IsSalesRelated` |  | |  | `cast( xumsw as farp_xumsw)` |
+| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` |
+| `GLAccount` |  | |  | `cast( hkont as fis_racct preserving type )` |
+| `BranchAccount` |  | |  | `cast( filkd as farp_filkd preserving type )` |
+| `SpecialGLAccountAssignment` |  | |  | `hzuon` |
+| `DueCalculationBaseDate` |  | |  | `zfbdt` |
+| `PaymentTerms` |  | |  | `cast( zterm as farp_dzterm preserving type )` |
+| `CashDiscount1Days` |  | |  | `cast( zbd1t as farp_dzbd1t preserving type )` |
+| `CashDiscount2Days` |  | |  | `cast( zbd2t as farp_dzbd2t preserving type )` |
+| `NetPaymentDays` |  | |  | `cast( zbd3t as farp_dzbd3t preserving type )` |
+| `CashDiscount1Percent` |  | |  | `cast( zbd1p as dzbd1p_farp preserving type )` |
+| `CashDiscount2Percent` |  | |  | `cast( zbd2p as dzbd2p_farp preserving type )` |
+| `PaymentMethod` |  | |  | `cast( zlsch as farp_schzw_bseg preserving type )` |
+| `PaymentBlockingReason` |  | |  | `cast( zlspr as farp_dzlspr preserving type )` |
+| `HouseBank` |  | |  | `cast( hbkid as farp_hbkid preserving type )` |
+| `InvoiceReference` |  | |  | `cast( rebzg as farp_rebzg preserving type )` |
+| `InvoiceReferenceFiscalYear` |  | |  | `cast( rebzj as fis_rebzj preserving type )` |
+| `InvoiceItemReference` |  | |  | `cast( rebzz as fis_rebzz preserving type )` |
+| `FollowOnDocumentType` |  | |  | `cast( rebzt as farp_rebzt preserving type )` |
+| `StateCentralBankPaymentReason` |  | |  | `cast( lzbkz as fac_lzbkz preserving type )` |
+| `SupplyingCountry` |  | |  | `cast( landl as fac_landl preserving type )` |
+| `InvoiceList` |  | |  | `cast( samnr as farp_samnr preserving type )` |
+| `DunningKey` |  | |  | `cast( mschl as farp_mschl preserving type )` |
+| `DunningBlockingReason` |  | |  | `cast( mansp as farp_mansp preserving type )` |
+| `LastDunningDate` |  | |  | `cast( madat as farp_madat preserving type )` |
+| `DunningLevel` |  | |  | `cast( manst as farp_mahns_d preserving type )` |
+| `DunningArea` |  | |  | `cast( maber as farp_maber preserving type )` |
+| `VATRegistration` |  | |  | `cast( stceg as farp_stceg preserving type )` |
+| `PaymentDifferenceReason` |  | |  | `cast( rstgr as farp_rstgr preserving type )` |
+| `JointVenture` |  | |  | `vname` |
+| `JointVentureEquityGroup` |  | |  | `cast( egrup as jv_egroup_cds preserving type )` |
+| `TreasuryContractType` |  | |  | `cast( vertt as fis_rantyp preserving type )` |
+| `AssetContract` |  | |  | `cast( vertn as fis_ranl preserving type )` |
+| `CashFlowType` |  | |  | `cast( vbewa as farp_sbewart preserving type )` |
+| `CommitmentItemShortID` |  | |  | `cast( fipos as fis_fipos_shortid preserving type )` |
+| `PlanningLevel` |  | |  | `fdlev` |
+| `PaymentMethodSupplement` |  | |  | `cast( uzawe as farp_uzawe preserving type )` |
+| `FundsCenter` |  | |  | `cast( fistl as farp_fistl preserving type )` |
+| `Fund` |  | |  | `geber` |
+| `Reference1IDByBusinessPartner` |  | |  | `cast( xref1 as farp_xref1 preserving type )` |
+| `Reference2IDByBusinessPartner` |  | |  | `cast( xref2 as farp_xref2 preserving type )` |
+| `Reference3IDByBusinessPartner` |  | |  | `cast( xref3 as fis_xref3 preserving type )` |
+| `DataExchangeInstruction1` |  | |  | `cast( dtws1 as farp_dtat16 preserving type )` |
+| `DataExchangeInstruction2` |  | |  | `cast( dtws2 as farp_dtat17 preserving type )` |
+| `DataExchangeInstruction3` |  | |  | `cast( dtws3 as farp_dtat18 preserving type )` |
+| `DataExchangeInstruction4` |  | |  | `cast( dtws4 as farp_dtat19 preserving type )` |
+| `AlternativePayeePayer` |  | |  | `cast( empfb as fis_empfb preserving type )` |
+| `PaymentReference` |  | |  | `cast( kidno as farp_kidno preserving type )` |
+| `BusinessPlace` |  | |  | `cast( bupla as farp_bupla preserving type )` |
+| `TaxSection` |  | |  | `cast( secco as fis_secco preserving type )` |
+| `GrantID` |  | |  | `grant_nbr` |
+| `FunctionalArea` |  | |  | `cast( fkber as fm_farea preserving type )` |
+| `IsNegativePosting` |  | |  | `cast( xnegp as farp_xnegp preserving type )` |
+| `HouseBankAccount` |  | |  | `cast( hktid as fac_hktid preserving type )` |
+| `NetDueDate` |  | |  | `cast( netdt as farp_netdt preserving type )` |
+| `CashDiscount1DueDate` |  | |  | `cast( sk1dt as farp_sk1dt preserving type )` |
+| `CashDiscount2DueDate` |  | |  | `cast( sk2dt as farp_sk2dt preserving type )` |
+| `BranchCode` |  | |  | `j_1tpbupl` |
+| `BudgetPeriod` |  | |  | `budget_pd` |
+| `BPBankAccountInternalID` |  | |  | `cast( bvtyp as farp_bvtyp preserving type )` |
+| `SettlementReferenceDate` |  | |  | `cast( dabrz as farp_dabrbez preserving type )` |
+| `PaymentReason` |  | |  | `cast( payt_rsn as farp_payt_rsn preserving type )` |
+| `FixedCashDiscount` |  | |  | `cast( zbfix as farp_dzbfix preserving type )` |
+| `JointVentureBillingType` |  | |  | `cast( btype as jv_bilind_cds preserving type )` |
+| `WithholdingTaxCode` |  | |  | `qsskz` |
+| `ControllingArea` |  | |  | `cast( kokrs as fis_kokrs preserving type )` |
+| `CostCenter` |  | |  | `cast( kostl as fis_kostl preserving type )` |
+| `OrderID` |  | |  | `cast( aufnr as aufnr preserving type )` |
+| `OrderInternalBillOfOperations` |  | |  | `cast( aufpl as fis_ordintbillofops preserving type )` |
+| `MasterFixedAsset` |  | |  | `cast( anln1 as fis_anln1 preserving type )` |
+| `FixedAsset` |  | |  | `cast( anln2 as fis_anln2 preserving type )` |
+| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` |
+| `ProjectNetwork` |  | |  | `nplnr` |
+| `ProfitCenter` |  | |  | `cast( prctr as fis_prctr preserving type )` |
+| `Segment` |  | |  | `segment` |
+| `SalesDocument` |  | |  | `kdauf` |
+| `SalesDocumentItem` |  | |  | `kdpos` |
+| `LineItemIsCompleted` |  | |  | `cast( erlkz as fis_kblerlkz preserving type )` |
+| `ScheduleLine` |  | |  | `kdein` |
+| `TargetSpecialGLCode` |  | |  | `cast( zumsk as fis_dzumsk preserving type )` |
+| `PaymentCurrency` |  | |  | `cast( pycur as farp_pycur preserving type )` |
+| `TransactionCurrency` |  | | `_ParkedOplAcctgDocument` | `TransactionCurrency` |
+| `CompanyCodeCurrency` |  | | `_ParkedOplAcctgDocument` | `CompanyCodeCurrency` |
+| `AdditionalCurrency1` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency1` |
+| `AdditionalCurrency2` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency2` |
+| `AmountInCompanyCodeCurrency` |  | |  | `} case shkzg when 'H' then cast( cast(-dmbtr as abap.curr( 23,2)) as fis_hsl preserving type ) else cast( cast( dmbtr as abap.curr( 23,2)) as fis_hsl preserving type ) end` |
+| `AmountInTransactionCurrency` |  | |  | `} case shkzg when 'H' then cast( cast(-wrbtr as abap.curr( 23,2)) as fis_wsl preserving type ) else cast( cast( wrbtr as abap.curr( 23,2)) as fis_wsl preserving type ) end` |
+| `AmountInAdditionalCurrency1` |  | |  | `} case shkzg when 'H' then cast( cast(-dmbe2 as abap.curr( 23,2)) as fis_dmbe2 preserving type ) else cast( cast( dmbe2 as abap.curr( 23,2)) as fis_dmbe2 preserving type ) end` |
+| `AmountInAdditionalCurrency2` |  | |  | `} case shkzg when 'H' then cast( cast(-dmbe3 as abap.curr( 23,2)) as fis_dmbe3 preserving type ) else cast( cast( dmbe3 as abap.curr( 23,2)) as fis_dmbe3 preserving type ) end` |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `} case shkzg when 'H' then cast( cast(-hwbas as abap.curr( 23,2)) as hwbas_shl preserving type ) else cast( cast( hwbas as abap.curr( 23,2)) as hwbas_shl preserving type ) end` |
+| `TaxBaseAmountInTransCrcy` |  | |  | `} case shkzg when 'H' then cast( cast(-fwbas as abap.curr( 23,2)) as fwbas_shl preserving type ) else cast( cast( fwbas as abap.curr( 23,2)) as fwbas_shl preserving type ) end` |
+| `TaxAmountInCoCodeCrcy` |  | |  | `} case shkzg when 'H' then cast( cast(-mwsts as abap.curr( 23,2)) as fis_mwsts preserving type ) else cast( cast( mwsts as abap.curr( 23,2)) as fis_mwsts preserving type ) end` |
+| `TaxAmount` |  | |  | `} case shkzg when 'H' then cast( cast(-wmwst as abap.curr( 23,2)) as wmwst_shl preserving type ) else cast( cast( wmwst as abap.curr( 23,2)) as wmwst_shl preserving type ) end` |
+| `TaxAmountInAdditionalCurrency1` |  | |  | `} case shkzg when 'H' then cast( cast(-mwst2 as abap.curr( 23,2)) as fis_mwst2 preserving type ) else cast( cast( mwst2 as abap.curr( 23,2)) as fis_mwst2 preserving type ) end` |
+| `TaxAmountInAdditionalCurrency2` |  | |  | `} case shkzg when 'H' then cast( cast(-mwst3 as abap.curr( 23,2)) as fis_mwst3 preserving type ) else cast( cast( mwst3 as abap.curr( 23,2)) as fis_mwst3 preserving type ) end` |
+| `WithholdingTaxAmount` |  | |  | `} case shkzg when 'H' then cast( cast(-qbshb as abap.curr( 23,2)) as fis_qbshb preserving type ) else cast( cast( qbshb as abap.curr( 23,2)) as fis_qbshb preserving type ) end` |
+| `WithholdingTaxBaseAmount` |  | |  | `} case shkzg when 'H' then cast( cast(-qsshb as abap.curr( 23,2)) as fis_qsshb preserving type ) else cast( cast( qsshb as abap.curr( 23,2)) as fis_qsshb preserving type ) end` |
+| `WithholdingTaxExemptionAmt` |  | |  | `} case shkzg when 'H' then cast( cast(-qsfbt as abap.curr( 23,2)) as fis_qsfbt preserving type ) else cast( cast( qsfbt as abap.curr( 23,2)) as fis_qsfbt preserving type ) end` |
+| `PlannedAmtInTransactionCrcy` |  | |  | `} case shkzg when 'H' then cast( cast(-fdwbt as abap.curr( 23,2)) as fis_fdwbt preserving type ) else cast( cast( fdwbt as abap.curr( 23,2)) as fis_fdwbt preserving type ) end` |
+| `AmountInPaymentCurrency` |  | |  | `} case shkzg when 'H' then cast( cast(-pyamt as abap.curr( 23,2)) as pyamt_farp preserving type ) else cast( cast( pyamt as abap.curr( 23,2)) as pyamt_farp preserving type ) end` |
+| `CashDiscountBaseAmount` |  | |  | `} case shkzg when 'H' then cast( cast(-skfbt as abap.curr( 23,2)) as fis_skfbt preserving type ) else cast( cast( skfbt as abap.curr( 23,2)) as fis_skfbt preserving type ) end` |
+| `CashDiscountAmtInCoCodeCrcy` |  | |  | `} case shkzg when 'H' then cast( cast(-sknto as abap.curr( 23,2)) as fis_sknto preserving type ) else cast( cast( sknto as abap.curr( 23,2)) as fis_sknto preserving type ) end` |
+| `CashDiscountAmount` |  | |  | `} case shkzg when 'H' then cast( cast(-wskto as abap.curr( 23,2)) as fis_wskto preserving type ) else cast( cast( wskto as abap.curr( 23,2)) as fis_wskto preserving type ) end` |
+| `_SourceCompanyCode` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_SourceFiscalYear` | | ✓ | | |
+| `_ParkedOplAcctgDocument` | | ✓ | | |
+| `_SourceParkedOplAcctgDocument` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompany` | | ✓ | | |
+| `_FinancialAccountType` | | ✓ | | |
+| `_PostingKey` | | ✓ | | |
+| `_DebitCreditCode` | | ✓ | | |
+| `_SpecialGLCode` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_PartnerBusinessArea` | | ✓ | | |
+| `_TaxCountry` | | ✓ | | |
+| `_TaxType` | | ✓ | | |
+| `_AssetTransactionType` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | |
+| `_InternalOrder` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_MasterFixedAsset` | | ✓ | | |
+| `_FixedAsset` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_ProjectNetwork` | | ✓ | | |
+| `_Segment` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_AdditionalCurrency1` | | ✓ | | |
+| `_AdditionalCurrency2` | | ✓ | | |
+| `_PaymentCurrency` | | ✓ | | |
 
 ## Associations
 

@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `PurchaseOrderQuantityUnit` | `PurchaseOrderQuantityUnit` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `ScheduleLineDeliveryDate` | `cast(ScheduleLineDeliveryDate as mm_pur_next_sched_line_date)` |
-| `ScheduleLineOpenQty` | `cast(ScheduleLineOpenQty as mm_pur_next_sched_line_qty)` |
-| `GoodsReceiptQty` | `GoodsReceiptQty` |
-| `GoodsReceiptAmountInCoCodeCrcy` | `GoodsReceiptAmountInCoCodeCrcy` |
-| `StillToBeDeliveredQuantity` | `StillToBeDeliveredQuantity` |
-| `StillToBeDeliveredValue` | `StillToBeDeliveredValue` |
-| `InvoiceReceiptQty` | `InvoiceReceiptQty` |
-| `InvoiceReceiptAmount` | `InvoiceReceiptAmount` |
-| `StillToInvoiceQuantity` | `StillToInvoiceQuantity` |
-| `StillToInvoiceValue` | `StillToInvoiceValue` |
-| `IsCompleted` | `cast(IsCompleted as mm_pur_is_completed)` |
-| `_PurchaseOrder` | *Association* |
-| `_PurOrdScheduleLine` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  | `cast(ScheduleLineDeliveryDate as mm_pur_next_sched_line_date)` |
+| `ScheduleLineOpenQty` |  | |  | `cast(ScheduleLineOpenQty as mm_pur_next_sched_line_qty)` |
+| `GoodsReceiptQty` |  | |  |  |
+| `GoodsReceiptAmountInCoCodeCrcy` |  | |  |  |
+| `StillToBeDeliveredQuantity` |  | |  |  |
+| `StillToBeDeliveredValue` |  | |  |  |
+| `InvoiceReceiptQty` |  | |  |  |
+| `InvoiceReceiptAmount` |  | |  |  |
+| `StillToInvoiceQuantity` |  | |  |  |
+| `StillToInvoiceValue` |  | |  |  |
+| `IsCompleted` |  | |  | `cast(IsCompleted as mm_pur_is_completed)` |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurOrdScheduleLine` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
 
 ## Associations
 

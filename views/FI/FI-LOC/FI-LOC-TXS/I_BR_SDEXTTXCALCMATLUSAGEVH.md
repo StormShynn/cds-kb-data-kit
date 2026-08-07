@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ExtTxCalcInternalCodeValue` | `ExtTxCalcInternalCodeValue` |
-| `ExtTxCalcInternalCodeText` | `cast ( max( ExtTxCalcInternalCodeText ) as txs_intcode_desc )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ExtTxCalcInternalCodeValue` | ✓ | |  |  |
+| `ExtTxCalcInternalCodeText` |  | |  | `cast ( max( ExtTxCalcInternalCodeText ) as txs_intcode_desc )` |
 
 ## Source Code
 

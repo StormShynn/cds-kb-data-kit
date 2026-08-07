@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryContractType` | `rantyp` |
-| key `FinConditionConditionType` | `cast( skoart as ftr_cndn_condition_type preserving type )` |
-| `FinCndnFieldSelectionString` | `cast( auswahl as ftr_cndn_field_selection preserving type )` |
-| `CashFlowCalculationCategory` | `cast( sberfima as ftr_gen_sbewfima preserving type )` |
-| `_ContractType` | *Association* |
-| `_ConditionTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryContractType` | ✓ | |  | `rantyp` |
+| `FinConditionConditionType` | ✓ | |  | `cast( skoart as ftr_cndn_condition_type preserving type )` |
+| `FinCndnFieldSelectionString` |  | |  | `cast( auswahl as ftr_cndn_field_selection preserving type )` |
+| `CashFlowCalculationCategory` |  | |  | `cast( sberfima as ftr_gen_sbewfima preserving type )` |
+| `_ContractType` | | ✓ | | |
+| `_ConditionTypeText` | | ✓ | | |
 
 ## Associations
 

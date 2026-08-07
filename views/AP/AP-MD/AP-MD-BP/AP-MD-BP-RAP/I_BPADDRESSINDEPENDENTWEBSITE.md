@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `_BusinessPartner.BusinessPartner` |
-| key `AddressID` | `I_AddressURI.AddressID` |
-| key `Person` | `I_AddressURI.AddressPersonID` |
-| key `OrdinalNumber` | `I_AddressURI.CommMediumSequenceNumber` |
-| `ValidityStartDate` | `cast ( '00010101' as abap.dats)` |
-| `IsDefaultURLAddress` | `I_AddressURI.URLIsCurrentDefault` |
-| `CommNumberIsNotUsed` | `cast ( '' as ad_flnouse )` |
-| `UniformResourceIdentifierType` | `I_AddressURI.AddressManagementURIType` |
-| `SearchURLAddress` | `cast ( '' as ad_uri2 )` |
-| `URLFieldLength` | `cast ('00000' as abap.int4 )` |
-| `WebsiteURL` | `I_AddressURI.UniformResourceIdentifier` |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |
+| `AddressID` | ✓ | |  |  |
+| `Person` | ✓ | |  | `AddressPersonID` |
+| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |
+| `ValidityStartDate` |  | |  | `cast ( '00010101' as abap.dats)` |
+| `IsDefaultURLAddress` |  | |  | `URLIsCurrentDefault` |
+| `CommNumberIsNotUsed` |  | |  | `cast ( '' as ad_flnouse )` |
+| `UniformResourceIdentifierType` |  | |  | `AddressManagementURIType` |
+| `SearchURLAddress` |  | |  | `cast ( '' as ad_uri2 )` |
+| `URLFieldLength` |  | |  | `cast ('00000' as abap.int4 )` |
+| `WebsiteURL` |  | |  | `UniformResourceIdentifier` |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Associations
 

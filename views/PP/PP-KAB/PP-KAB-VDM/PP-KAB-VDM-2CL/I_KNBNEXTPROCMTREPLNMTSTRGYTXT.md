@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `ExtProcurementReplnmtStrgy` | `pkstf` |
-| key `Language` | `spras` |
-| `ExtProcurementReplnmtStrgyName` | `pksbz` |
-| `_KnbnExtProcmtReplnmtStrgy` | *Association* |
-| `_Language` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `ExtProcurementReplnmtStrgy` | ✓ | |  | `pkstf` |
+| `Language` | ✓ | |  | `spras` |
+| `ExtProcurementReplnmtStrgyName` |  | |  | `pksbz` |
+| `_KnbnExtProcmtReplnmtStrgy` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

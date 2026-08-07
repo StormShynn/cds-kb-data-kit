@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `VarConfigurationProfileName` | `VarConfigurationProfileName` |
-| key `VarCnfConstraintNetName` | `VarCnfConstraintNetName` |
-| key `ChangeNumber` | `ChangeNumber` |
-| `ObjDpnAssignmentNumber` | `ObjDpnAssignmentNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `IsDeleted` | `IsDeleted` |
-| `_Product` | *Association* |
-| `_Profile` | *Association* |
-| `_HistoricalProfile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `VarConfigurationProfileName` | ✓ | |  |  |
+| `VarCnfConstraintNetName` | ✓ | |  |  |
+| `ChangeNumber` | ✓ | |  |  |
+| `ObjDpnAssignmentNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_Profile` | | ✓ | | |
+| `_HistoricalProfile` | | ✓ | | |
 
 ## Source Code
 

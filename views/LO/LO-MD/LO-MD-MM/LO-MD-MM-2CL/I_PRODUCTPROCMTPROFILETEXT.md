@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcurementSubType` | `cast ( MaterialProcurementProfile as sobsl preserving type )` |
-| key `Plant` | `Plant` |
-| key `Language` | `Language` |
-| `ProcurementSubTypeText` | `MaterialProcurementProfileName` |
-| `_Plant` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcurementSubType` | ✓ | |  | `cast ( MaterialProcurementProfile as sobsl preserving type )` |
+| `Plant` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ProcurementSubTypeText` |  | |  | `MaterialProcurementProfileName` |
+| `_Plant` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

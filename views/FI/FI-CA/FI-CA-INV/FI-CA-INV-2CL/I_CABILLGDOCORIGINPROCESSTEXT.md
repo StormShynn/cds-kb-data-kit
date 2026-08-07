@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgDocOriginProcess` | `_tfk2641t.srcprocess` |
-| key `Language` | `_tfk2641t.spras` |
-| `CABillgDocOriginProcessText` | `cast( _tfk2641t.srcproctext as srcproctext_gfn_kk preserving type )` |
-| `_CABillgDocOriginProcess` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgDocOriginProcess` | ✓ | | `_tfk2641t` | `srcprocess` |
+| `Language` | ✓ | | `_tfk2641t` | `spras` |
+| `CABillgDocOriginProcessText` |  | |  | `cast( _tfk2641t.srcproctext as srcproctext_gfn_kk preserving type )` |
+| `_CABillgDocOriginProcess` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

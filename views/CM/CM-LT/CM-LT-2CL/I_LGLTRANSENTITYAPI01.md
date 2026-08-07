@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionEntityUUID` | `LegalTransactionEntityUUID` |
-| `LglCntntMRank` | `LglCntntMRank` |
-| `LglCntntMEntity` | `LglCntntMEntity` |
-| `LglCntntMEntityType` | `LglCntntMEntityType` |
-| `LglCntntMTechEntityType` | `LglCntntMTechEntityType` |
-| `LegalTransactionUUID` | `I_LegalTransactionEntity.LegalTransactionUUID` |
-| `LegalTransactionMandatoryFlag` | `LegalTransactionMandatoryFlag` |
-| `LglCntntMIsMainEntity` | `LglCntntMIsMainEntity` |
-| `LglCntntMIsIntegRelevant` | `LglCntntMIsIntegRelevant` |
-| `LglCntntMIsAddedByIntegVarbl` | `LglCntntMIsAddedByIntegVarbl` |
-| `_LegalTransaction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionEntityUUID` | ✓ | |  |  |
+| `LglCntntMRank` |  | |  |  |
+| `LglCntntMEntity` |  | |  |  |
+| `LglCntntMEntityType` |  | |  |  |
+| `LglCntntMTechEntityType` |  | |  |  |
+| `LegalTransactionUUID` |  | |  |  |
+| `LegalTransactionMandatoryFlag` |  | |  |  |
+| `LglCntntMIsMainEntity` |  | |  |  |
+| `LglCntntMIsIntegRelevant` |  | |  |  |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |
+| `_LegalTransaction` | | ✓ | | |
 
 ## Associations
 

@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralPurchaseContract` | `CentralPurchaseContract` |
-| key `CentralPurchaseContractItem` | `CentralPurchaseContractItem` |
-| key `ConditionRecord` | `ConditionRecord` |
-| key `ConditionValidityEndDate` | `ConditionValidityEndDate` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionValidityStartDate` | `ConditionValidityStartDate` |
-| `ProcmtHubPlantUniqueID` | `ProcmtHubPlantUniqueID` |
-| `ConditionIsDeleted` | `ConditionIsDeleted` |
-| `_CentralPurchaseContract` | *Association* |
-| `_CntrlPurchaseContractItm` | *Association* |
-| `_CntrlPurContrItmCndnAmount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralPurchaseContract` | ✓ | |  |  |
+| `CentralPurchaseContractItem` | ✓ | |  |  |
+| `ConditionRecord` | ✓ | |  |  |
+| `ConditionValidityEndDate` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionValidityStartDate` |  | |  |  |
+| `ProcmtHubPlantUniqueID` |  | |  |  |
+| `ConditionIsDeleted` |  | |  |  |
+| `_CentralPurchaseContract` | | ✓ | | |
+| `_CntrlPurchaseContractItm` | | ✓ | | |
+| `_CntrlPurContrItmCndnAmount` | | ✓ | | |
 
 ## Source Code
 

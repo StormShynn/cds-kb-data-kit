@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentType` | `process_type` |
-| key `Language` | `langu` |
-| `ServiceDocumentTypeName` | `p_description` |
-| `ServiceDocumentTypeShortName` | `p_description_20` |
-| `_ServiceDocumentType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentType` | ✓ | |  | `process_type` |
+| `Language` | ✓ | |  | `langu` |
+| `ServiceDocumentTypeName` |  | |  | `p_description` |
+| `ServiceDocumentTypeShortName` |  | |  | `p_description_20` |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

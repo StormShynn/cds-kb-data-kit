@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SponsoredClass` | `sponsored_class` |
-| key `Language` | `language` |
-| `SponsoredClassDescription` | `description` |
-| `SponsoredClassName` | `sponsoredclassname` |
-| `_SponsoredClass` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SponsoredClass` | ✓ | |  | `sponsored_class` |
+| `Language` | ✓ | |  | `language` |
+| `SponsoredClassDescription` |  | |  | `description` |
+| `SponsoredClassName` |  | |  | `sponsoredclassname` |
+| `_SponsoredClass` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

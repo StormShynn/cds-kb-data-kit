@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PubSecBudgetCnsmpnAmtType` | `cast( cast ( substring( dd07t.domvalue_l, 1, 4 ) as abap.char( 4 ) ) as psm_bdgt_cnsmpn_amount_type )` |
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `PubSecBdgtCnsmpnAmtTypeText` | `cast ( dd07t.ddtext as psm_bdgt_cnsmpn_amt_type_text preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_PubSecBdgtCnsmpnAmtType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PubSecBudgetCnsmpnAmtType` | ✓ | |  | `cast( cast ( substring( dd07t.domvalue_l, 1, 4 ) as abap.char( 4 ) ) as psm_bdgt_cnsmpn_amount_type )` |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PubSecBdgtCnsmpnAmtTypeText` |  | |  | `cast ( dd07t.ddtext as psm_bdgt_cnsmpn_amt_type_text preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_PubSecBdgtCnsmpnAmtType` | | ✓ | | |
 
 ## Associations
 

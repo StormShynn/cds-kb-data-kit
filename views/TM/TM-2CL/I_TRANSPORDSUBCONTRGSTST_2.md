@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrderSubcontrgSts` | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_subcontr_status preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrderSubcontrgStsDesc` | `cast(ddtext as /scmtms/vdm_subcntr_sts_desc preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdSubcontractingSts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrderSubcontrgSts` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_subcontr_status preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrderSubcontrgStsDesc` |  | |  | `cast(ddtext as /scmtms/vdm_subcntr_sts_desc preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdSubcontractingSts` | | ✓ | | |
 
 ## Associations
 

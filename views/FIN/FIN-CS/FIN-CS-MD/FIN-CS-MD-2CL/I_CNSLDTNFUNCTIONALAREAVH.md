@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalArea` | `FunctionalArea` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalArea` | ✓ | |  |  |
 
 ## Source Code
 

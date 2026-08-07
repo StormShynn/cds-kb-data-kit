@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionControl` | `cast ( substring( domvalue_l, 1, 1 ) as ksteu )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionControl` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as ksteu )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

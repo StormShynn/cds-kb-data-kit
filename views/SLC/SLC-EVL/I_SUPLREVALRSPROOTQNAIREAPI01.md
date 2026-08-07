@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalRspQuestionnaireUUID` | `SuplrEvalRspQuestionnaireUUID` |
-| `SuplrEvalReqQuestionnaireUUID` | `SuplrEvalReqQuestionnaireUUID` |
-| `SuplrEvalRspRootQnaireUUID` | `SuplrEvalRspRootQnaireUUID` |
-| `SuplrEvalRspUUID` | `SuplrEvalRspUUID` |
-| `NumberOfResponses` | `NumberOfResponses` |
-| `SuplrEvalOrdinalNumber` | `SuplrEvalOrdinalNumber` |
-| `IsScoringRelevant` | `IsScoringRelevant` |
-| `CalculatedScore` | `CalculatedScore` |
-| `TargetScore` | `TargetScore` |
-| `MinimalScore` | `MinimalScore` |
-| `WeightingFactor` | `WeightingFactor` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalRspQuestionnaireUUID` | ✓ | |  |  |
+| `SuplrEvalReqQuestionnaireUUID` |  | |  |  |
+| `SuplrEvalRspRootQnaireUUID` |  | |  |  |
+| `SuplrEvalRspUUID` |  | |  |  |
+| `NumberOfResponses` |  | |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |
+| `IsScoringRelevant` |  | |  |  |
+| `CalculatedScore` |  | |  |  |
+| `TargetScore` |  | |  |  |
+| `MinimalScore` |  | |  |  |
+| `WeightingFactor` |  | |  |  |
 
 ## Source Code
 

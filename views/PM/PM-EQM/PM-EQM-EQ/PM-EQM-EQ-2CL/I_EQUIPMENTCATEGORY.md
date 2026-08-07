@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EquipmentCategory` | `t370t.eqtyp` |
-| `IsUtilitiesData` | `t370t.isu_knz` |
-| `NumberRangeForIntIDAssignment` | `t370t.numki` |
-| `NumberRangeForExtIDAssignment` | `t370t.numke` |
-| `TechObjInspectionLevelCode` | `t370t.idms_type` |
-| `EquipmentCategoryReferenceType` | `t370t.reftp` |
-| `EquipmentCategoryStatusProfile` | `t370t.stsma` |
-| `EquipmentCategoryViewProfile` | `t370t.view_prof` |
-| `EquipCatHasLinearAttributes` | `t370t.lfe_ind` |
-| `EquipmentCategoryOID` | `cast( t370t.eqtyp as equipmentcategory_oid )` |
-| `_Text` | *Association* |
-| `_InspectionLevelText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EquipmentCategory` | ✓ | |  | `eqtyp` |
+| `IsUtilitiesData` |  | |  | `isu_knz` |
+| `NumberRangeForIntIDAssignment` |  | |  | `numki` |
+| `NumberRangeForExtIDAssignment` |  | |  | `numke` |
+| `TechObjInspectionLevelCode` |  | |  | `idms_type` |
+| `EquipmentCategoryReferenceType` |  | |  | `reftp` |
+| `EquipmentCategoryStatusProfile` |  | |  | `stsma` |
+| `EquipmentCategoryViewProfile` |  | |  | `view_prof` |
+| `EquipCatHasLinearAttributes` |  | |  | `lfe_ind` |
+| `EquipmentCategoryOID` |  | |  | `cast( t370t.eqtyp as equipmentcategory_oid )` |
+| `_Text` | | ✓ | | |
+| `_InspectionLevelText` | | ✓ | | |
 
 ## Associations
 

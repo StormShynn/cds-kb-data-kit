@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanControlCycleCategory` | `cast(substring(l.domvalue_l, 1, 1) as pph_rksta preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanControlCycleCategory` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 1) as pph_rksta preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectElementUUID` | `ProjectElementUUID` |
-| `ProjectUUID` | `ProjectUUID` |
-| `EntProjTimeRecgIsBlkd` | `EntProjTimeRecgIsBlkd` |
-| `EntProjStaffExpensePostgIsBlkd` | `EntProjStaffExpensePostgIsBlkd` |
-| `EntProjServicePostingIsBlkd` | `EntProjServicePostingIsBlkd` |
-| `EntProjOtherExpensePostgIsBlkd` | `EntProjOtherExpensePostgIsBlkd` |
-| `EntProjPurchasingIsBlkd` | `EntProjPurchasingIsBlkd` |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectElementUUID` | ✓ | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `EntProjTimeRecgIsBlkd` |  | |  |  |
+| `EntProjStaffExpensePostgIsBlkd` |  | |  |  |
+| `EntProjServicePostingIsBlkd` |  | |  |  |
+| `EntProjOtherExpensePostgIsBlkd` |  | |  |  |
+| `EntProjPurchasingIsBlkd` |  | |  |  |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
 
 ## Source Code
 

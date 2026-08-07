@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PartnerCounter` | `parza` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PartnerCounter` | ✓ | |  | `parza` |
 
 ## Source Code
 

@@ -28,42 +28,42 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrderScheduleLine.SalesOrder` |
-| key `SalesOrderItem` | `SalesOrderScheduleLine.SalesOrderItem` |
-| key `ScheduleLine` | `SalesOrderScheduleLine.ScheduleLine` |
-| `SalesDocumentType` | `SalesOrderItem.SalesDocumentType` |
-| `SalesOrganization` | `SalesOrderItem.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderItem.DistributionChannel` |
-| `Division` | `SalesOrderItem.Division` |
-| `SoldToParty` | `SalesOrderItem.SoldToParty` |
-| `ShipToParty` | `SalesOrderItem.ShipToParty` |
-| `Product` | `SalesOrderItem.Product` |
-| `Plant` | `SalesOrderItem.Plant` |
-| `TransitPlant` | `SalesOrderItem.TransitPlant` |
-| `IsRequestedDelivSchedLine` | `SalesOrderScheduleLine.IsRequestedDelivSchedLine` |
-| `IsConfirmedDelivSchedLine` | `SalesOrderScheduleLine.IsConfirmedDelivSchedLine` |
-| `ScheduleLineOrderQuantity` | `SalesOrderScheduleLine.ScheduleLineOrderQuantity` |
-| `ConfdOrderQtyByMatlAvailCheck` | `SalesOrderScheduleLine.ConfdOrderQtyByMatlAvailCheck` |
-| `DeliveredQuantityInBaseUnit` | `SalesOrderScheduleLine.DeliveredQuantityInBaseUnit` |
-| `DeliveredQtyInOrderQtyUnit` | `SalesOrderScheduleLine.DeliveredQtyInOrderQtyUnit` |
-| `ValueChainCategory` | `SalesOrderItem.ValueChainCategory` |
-| `RequestedDeliveryDate` | `SalesOrderScheduleLine.RequestedDeliveryDate` |
-| `ConfirmedDeliveryDate` | `SalesOrderScheduleLine.ConfirmedDeliveryDate` |
-| `DeliveryDate` | `SalesOrderScheduleLine.DeliveryDate` |
-| `FirstDayOfWeekDate` | `DeliveryDate.FirstDayOfWeekDate` |
-| `FirstDayOfMonthDate` | `DeliveryDate.FirstDayOfMonthDate` |
-| `OrderQuantityUnit` | `SalesOrderScheduleLine.OrderQuantityUnit` |
-| `BaseUnit` | `SalesOrderScheduleLine.BaseUnit` |
-| `OrderToBaseQuantityDnmntr` | `SalesOrderItem.OrderToBaseQuantityDnmntr` |
-| `OrderToBaseQuantityNmrtr` | `SalesOrderItem.OrderToBaseQuantityNmrtr` |
-| `OrderQuantityUnitSAPCode` | `OrderQuantityUnitofMeasure.UnitOfMeasureSAPCode` |
-| `OrderQuantityUnitISOCode` | `OrderQuantityUnitofMeasure.UnitOfMeasureISOCode` |
-| `BaseUnitSAPCode` | `BaseUnitofMeasure.UnitOfMeasureSAPCode` |
-| `BaseUnitISOCode` | `BaseUnitofMeasure.UnitOfMeasureISOCode` |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `Product` |  | |  |  |
+| `Plant` |  | |  |  |
+| `TransitPlant` |  | |  |  |
+| `IsRequestedDelivSchedLine` |  | |  |  |
+| `IsConfirmedDelivSchedLine` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |
+| `DeliveredQuantityInBaseUnit` |  | |  |  |
+| `DeliveredQtyInOrderQtyUnit` |  | |  |  |
+| `ValueChainCategory` |  | |  |  |
+| `RequestedDeliveryDate` |  | |  |  |
+| `ConfirmedDeliveryDate` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `FirstDayOfWeekDate` |  | |  |  |
+| `FirstDayOfMonthDate` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `OrderToBaseQuantityDnmntr` |  | |  |  |
+| `OrderToBaseQuantityNmrtr` |  | |  |  |
+| `OrderQuantityUnitSAPCode` |  | |  | `UnitOfMeasureSAPCode` |
+| `OrderQuantityUnitISOCode` |  | |  | `UnitOfMeasureISOCode` |
+| `BaseUnitSAPCode` |  | |  | `UnitOfMeasureSAPCode` |
+| `BaseUnitISOCode` |  | |  | `UnitOfMeasureISOCode` |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
 
 ## Associations
 

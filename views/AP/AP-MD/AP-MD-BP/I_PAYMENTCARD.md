@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `partner` |
-| key `PaymentCardID` | `ccard_id` |
-| key `PaymentCardType` | `ccins` |
-| key `CardNumber` | `ccnum` |
-| `IsStandardCard` | `ccdef` |
-| `CardDescription` | `ccaccname` |
-| `CollectionIsAuthorized` | `cc_coll_auth` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `_BusinessPartner` | *Association* |
-| `_CardType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `PaymentCardID` | ✓ | |  | `ccard_id` |
+| `PaymentCardType` | ✓ | |  | `ccins` |
+| `CardNumber` | ✓ | |  | `ccnum` |
+| `IsStandardCard` |  | |  | `ccdef` |
+| `CardDescription` |  | |  | `ccaccname` |
+| `CollectionIsAuthorized` |  | |  | `cc_coll_auth` |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CardType` | | ✓ | | |
 
 ## Associations
 

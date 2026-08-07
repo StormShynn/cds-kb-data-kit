@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderStageUUID` | `TransportationOrderStageUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TransportationOrderStage` | `TransportationOrderStage` |
-| `TranspOrdStageType` | `TranspOrdStageType` |
-| `TranspOrdStageCategory` | `TranspOrdStageCategory` |
-| `TranspOrdStageDistance` | `TranspOrdStageDistance` |
-| `TranspOrdStageDistanceUnit` | `TranspOrdStageDistanceUnit` |
-| `TranspOrdStageNetDuration` | `TranspOrdStageNetDuration` |
-| `TranspOrdStageSrceStopUUID` | `TranspOrdStageSrceStopUUID` |
-| `TranspOrdStageDestStopUUID` | `TranspOrdStageDestStopUUID` |
-| `I_FreightUnitStopTP` | `FreightUnitStage._TranspOrderStop as _FreightUnitStop : redirected to parent I_FreightUnitStopTP` |
-| `I_FreightUnitTP` | `FreightUnitStage._TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderStageUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TransportationOrderStage` |  | |  |  |
+| `TranspOrdStageType` |  | |  |  |
+| `TranspOrdStageCategory` |  | |  |  |
+| `TranspOrdStageDistance` |  | |  |  |
+| `TranspOrdStageDistanceUnit` |  | |  |  |
+| `TranspOrdStageNetDuration` |  | |  |  |
+| `TranspOrdStageSrceStopUUID` |  | |  |  |
+| `TranspOrdStageDestStopUUID` |  | |  |  |
+| `I_FreightUnitStopTP` |  | |  | `FreightUnitStage._TranspOrderStop as _FreightUnitStop : redirected to parent I_FreightUnitStopTP` |
+| `I_FreightUnitTP` |  | |  | `FreightUnitStage._TransportationOrder as _FreightUnit : redirected to I_FreightUnitTP` |
 
 ## Source Code
 

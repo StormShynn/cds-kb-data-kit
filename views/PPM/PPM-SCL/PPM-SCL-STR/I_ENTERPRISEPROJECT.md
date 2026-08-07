@@ -30,66 +30,66 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectUUID` | `project.guid` |
-| `ProjectInternalID` | `cast ( project.pspnr as ps_s4_proj_pspnr preserving type )` |
-| `CustomerUUID` | `project.customer` |
-| `EnterpriseProjectServiceOrg` | `project.org_id` |
-| `EntProjectIsConfidential` | `project.confidential` |
-| `RestrictedTimePosting` | `project.restrict_time_posting` |
-| `ProjectCategory` | `project.pro_category` |
-| `ProjectSummaryTaskUUID` | `task.guid` |
-| `Project` | `cast ( task.external_id as /s4ppm/project_id preserving type )` |
-| `ProjectDescription` | `task.name` |
-| `ProcessingStatus` | `task.proc_status_own` |
-| `PlannedStartDate` | `task.planstart_date` |
-| `PlannedEndDate` | `task.planfinish_date` |
-| `ActualStartDate` | `task.actualstart_date` |
-| `ActualFinishDate` | `task.actualfinish_date` |
-| `PriorityCode` | `task.priority` |
-| `EntProjIsMultiSlsOrdItmsEnbld` | `task.multi_soi_enabled` |
-| `ProjectStartDate` | `task.latest_start_date` |
-| `ProjectEndDate` | `task.latest_finish_date` |
-| `WBSElementInternalID` | `cast ( prps.pspnr as ps_s4_pspnr preserving type )` |
-| `ProjectProfileCode` | `proj.profl` |
-| `ProfitCenter` | `proj.prctr` |
-| `CompanyCode` | `proj.vbukr` |
-| `ControllingArea` | `proj.vkokr` |
-| `FunctionalArea` | `proj.func_area` |
-| `Location` | `proj.stort` |
-| `Plant` | `proj.werks` |
-| `Currency` | `cast ( proj.cpcurr as /s4ppm/tv_project_currency preserving type )` |
-| `AvailabilityControlProfile` | `proj.avc_profile` |
-| `AvailabilityControlIsActive` | `proj.avc_active` |
-| `InvestmentProfile` | `proj.imprf` |
-| `TaxJurisdiction` | `proj.txjcd` |
-| `EnterpriseProjectType` | `prps.prart` |
-| `ResponsibleCostCenter` | `prps.fkstl` |
-| `FunctionalLocation` | `prps.tplnr` |
-| `IsBillingRelevant` | `prps.fakkz` |
-| `ResultAnalysisInternalID` | `prps.abgsl` |
-| `LeadingSalesOrder` | `prps.vbeln_prps` |
-| `LeadingSalesOrderItem` | `prps.posnr_prps` |
-| `CreatedByUser` | `task.created_by` |
-| `CreationDateTime` | `task.created_on` |
-| `LastChangedByUser` | `task.changed_by` |
-| `LastChangeDateTime` | `task.changed_on` |
-| `ProjectLastChangedByUser` | `project.last_changed_by` |
-| `ProjectLastChangedDateTime` | `cast ( project.last_changed_on as /s4ppm/tv_proj_changed_on preserving type )` |
-| `EntProjHasProjectStockEnabled` | `project.entprojhasprojectstockenabled` |
-| `EntProjectSettlementType` | `project.entprojectsettlementtype` |
-| `EntProjectSettlementElement` | `project.entprojectsettlementelement` |
-| `InventorySpecialStockValnType` | `project.inventoryspecialstockvalntype` |
-| `_ProjectElement` | *Association* |
-| `_ProjectRole` | *Association* |
-| `_ProjectTeamMember` | *Association* |
-| `_AuthUser` | *Association* |
-| `_AuthSubst` | *Association* |
-| `_AuthRole` | *Association* |
-| `_AuthGroup` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
-| `_EntProjProjectRespPersn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  | `guid` |
+| `ProjectInternalID` |  | |  | `cast ( project.pspnr as ps_s4_proj_pspnr preserving type )` |
+| `CustomerUUID` |  | |  | `customer` |
+| `EnterpriseProjectServiceOrg` |  | |  | `org_id` |
+| `EntProjectIsConfidential` |  | |  | `confidential` |
+| `RestrictedTimePosting` |  | |  | `restrict_time_posting` |
+| `ProjectCategory` |  | |  | `pro_category` |
+| `ProjectSummaryTaskUUID` |  | |  | `guid` |
+| `Project` |  | |  | `cast ( task.external_id as /s4ppm/project_id preserving type )` |
+| `ProjectDescription` |  | |  | `name` |
+| `ProcessingStatus` |  | |  | `proc_status_own` |
+| `PlannedStartDate` |  | |  | `planstart_date` |
+| `PlannedEndDate` |  | |  | `planfinish_date` |
+| `ActualStartDate` |  | |  | `actualstart_date` |
+| `ActualFinishDate` |  | |  | `actualfinish_date` |
+| `PriorityCode` |  | |  | `priority` |
+| `EntProjIsMultiSlsOrdItmsEnbld` |  | |  | `multi_soi_enabled` |
+| `ProjectStartDate` |  | |  | `latest_start_date` |
+| `ProjectEndDate` |  | |  | `latest_finish_date` |
+| `WBSElementInternalID` |  | |  | `cast ( prps.pspnr as ps_s4_pspnr preserving type )` |
+| `ProjectProfileCode` |  | |  | `profl` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `CompanyCode` |  | |  | `vbukr` |
+| `ControllingArea` |  | |  | `vkokr` |
+| `FunctionalArea` |  | |  | `func_area` |
+| `Location` |  | |  | `stort` |
+| `Plant` |  | |  | `werks` |
+| `Currency` |  | |  | `cast ( proj.cpcurr as /s4ppm/tv_project_currency preserving type )` |
+| `AvailabilityControlProfile` |  | |  | `avc_profile` |
+| `AvailabilityControlIsActive` |  | |  | `avc_active` |
+| `InvestmentProfile` |  | |  | `imprf` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `EnterpriseProjectType` |  | |  | `prart` |
+| `ResponsibleCostCenter` |  | |  | `fkstl` |
+| `FunctionalLocation` |  | |  | `tplnr` |
+| `IsBillingRelevant` |  | |  | `fakkz` |
+| `ResultAnalysisInternalID` |  | |  | `abgsl` |
+| `LeadingSalesOrder` |  | |  | `vbeln_prps` |
+| `LeadingSalesOrderItem` |  | |  | `posnr_prps` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDateTime` |  | |  | `created_on` |
+| `LastChangedByUser` |  | |  | `changed_by` |
+| `LastChangeDateTime` |  | |  | `changed_on` |
+| `ProjectLastChangedByUser` |  | |  | `last_changed_by` |
+| `ProjectLastChangedDateTime` |  | |  | `cast ( project.last_changed_on as /s4ppm/tv_proj_changed_on preserving type )` |
+| `EntProjHasProjectStockEnabled` |  | |  | `entprojhasprojectstockenabled` |
+| `EntProjectSettlementType` |  | |  | `entprojectsettlementtype` |
+| `EntProjectSettlementElement` |  | |  | `entprojectsettlementelement` |
+| `InventorySpecialStockValnType` |  | |  | `inventoryspecialstockvalntype` |
+| `_ProjectElement` | | ✓ | | |
+| `_ProjectRole` | | ✓ | | |
+| `_ProjectTeamMember` | | ✓ | | |
+| `_AuthUser` | | ✓ | | |
+| `_AuthSubst` | | ✓ | | |
+| `_AuthRole` | | ✓ | | |
+| `_AuthGroup` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
+| `_EntProjProjectRespPersn` | | ✓ | | |
 
 ## Associations
 

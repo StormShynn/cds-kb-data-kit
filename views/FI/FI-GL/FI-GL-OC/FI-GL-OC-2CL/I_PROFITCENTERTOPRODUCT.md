@@ -31,28 +31,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `matnr` |
-| key `Plant` | `werks` |
-| key `ValidityStartDate` | `valid_from` |
-| `ValidityEndDate` | `valid_to` |
-| `ControllingArea` | `kokrs` |
-| `CompanyCode` | `bukrs` |
-| `ProfitCenterBeforeOrglChange` | `prctr_old` |
-| `ProfitCenter` | `prctr` |
-| `OrganizationalChange` | `orgl_change` |
-| `OrglChangeReassignmentStatus` | `reassgmt_status` |
-| `ProfitCenterDerivationSrceType` | `prctr_drvtn_source_type` |
-| `_OrglChgReassignmentStatus` | *Association* |
-| `_ProfitCtrDerivationSrceType` | *Association* |
-| `_Plant` | *Association* |
-| `_Product` | *Association* |
-| `_OrglChange` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_ProfitCtr` | *Association* |
-| `_ProfitCenterBeforeOrglChange` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `ValidityStartDate` | ✓ | |  | `valid_from` |
+| `ValidityEndDate` |  | |  | `valid_to` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `ProfitCenterBeforeOrglChange` |  | |  | `prctr_old` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `OrganizationalChange` |  | |  | `orgl_change` |
+| `OrglChangeReassignmentStatus` |  | |  | `reassgmt_status` |
+| `ProfitCenterDerivationSrceType` |  | |  | `prctr_drvtn_source_type` |
+| `_OrglChgReassignmentStatus` | | ✓ | | |
+| `_ProfitCtrDerivationSrceType` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_OrglChange` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_ProfitCtr` | | ✓ | | |
+| `_ProfitCenterBeforeOrglChange` | | ✓ | | |
 
 ## Associations
 

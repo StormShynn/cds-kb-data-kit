@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `addrnumber` |
-| key `AddressPersonID` | `persnumber` |
-| key `CommMediumSequenceNumber` | `consnumber` |
-| `PhoneNumberCountry` | `country` |
-| `PhNmbrIsCurrentOverallDefault` | `cast (flgdefault as ad_phnmbrcurovrldflt preserving type)` |
-| `CommLineNotForUnsolicitedCntct` | `cast (flg_nouse as ad_commlinenotforunslctdcntct preserving type)` |
-| `PhoneAreaCodeSubscriberNumber` | `tel_number` |
-| `PhoneExtensionNumber` | `tel_extens` |
-| `InternationalPhoneNumber` | `telnr_long` |
-| `PhoneIsSMSEnabled` | `dft_receiv` |
-| `PhoneNumberType` | `cast (r3_user as ad_phonenumbertype preserving type)` |
-| `ValidityStartDate` | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |
-| `ValidityEndDate` | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |
-| `_AddressCommunicationRemark` | *Association* |
-| `_AddressCommunicationUsage` | *Association* |
-| `_PhoneNumberCountry` | *Association* |
-| `_PhoneNumberType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  | `addrnumber` |
+| `AddressPersonID` | ✓ | |  | `persnumber` |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |
+| `PhoneNumberCountry` |  | |  | `country` |
+| `PhNmbrIsCurrentOverallDefault` |  | |  | `cast (flgdefault as ad_phnmbrcurovrldflt preserving type)` |
+| `CommLineNotForUnsolicitedCntct` |  | |  | `cast (flg_nouse as ad_commlinenotforunslctdcntct preserving type)` |
+| `PhoneAreaCodeSubscriberNumber` |  | |  | `tel_number` |
+| `PhoneExtensionNumber` |  | |  | `tel_extens` |
+| `InternationalPhoneNumber` |  | |  | `telnr_long` |
+| `PhoneIsSMSEnabled` |  | |  | `dft_receiv` |
+| `PhoneNumberType` |  | |  | `cast (r3_user as ad_phonenumbertype preserving type)` |
+| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |
+| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |
+| `_AddressCommunicationRemark` | | ✓ | | |
+| `_AddressCommunicationUsage` | | ✓ | | |
+| `_PhoneNumberCountry` | | ✓ | | |
+| `_PhoneNumberType` | | ✓ | | |
 
 ## Associations
 

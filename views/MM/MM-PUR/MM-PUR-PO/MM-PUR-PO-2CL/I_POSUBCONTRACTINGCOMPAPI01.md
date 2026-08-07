@@ -29,77 +29,77 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `PurchaseOrderScheduleLine` | `PurchaseOrderScheduleLine` |
-| key `ReservationItem` | `ReservationItem` |
-| key `RecordType` | `RecordType` |
-| `Reservation` | `Reservation` |
-| `Material` | `Material` |
-| `BaseUnit` | `BaseUnit` |
-| `RequiredQuantity` | `RequiredQuantity` |
-| `WithdrawnQuantity` | `WithdrawnQuantity` |
-| `QuantityIsFixed` | `QuantityIsFixed` |
-| `RequirementDate` | `RequirementDate` |
-| `RequirementTime` | `RequirementTime` |
-| `Plant` | `Plant` |
-| `LatestRequirementDate` | `LatestRequirementDate` |
-| `OrderLevelValue` | `OrderLevelValue` |
-| `OrderPathValue` | `OrderPathValue` |
-| `BillOfMaterialItemNumber` | `cast (BillOfMaterialItemNumber as aposn preserving type )` |
-| `BillOfMaterialItemNumber_2` | `BillOfMaterialItemNumber` |
-| `SortField` | `SortField` |
-| `BOMItemCategory` | `BOMItemCategory` |
-| `MaterialComponentIsPhantomItem` | `MaterialComponentIsPhantomItem` |
-| `IsBulkMaterialComponent` | `IsBulkMaterialComponent` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `InventorySpecialStockValnType` | `InventorySpecialStockValnType` |
-| `IsMaterialProvision` | `IsMaterialProvision` |
-| `MaterialProvisionType` | `MaterialProvisionType` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `ReservationIsFinallyIssued` | `ReservationIsFinallyIssued` |
-| `EntryUnit` | `EntryUnit` |
-| `QuantityInEntryUnit` | `QuantityInEntryUnit` |
-| `MaterialQtyToBaseQtyNmrtr` | `MaterialQtyToBaseQtyNmrtr` |
-| `MaterialQtyToBaseQtyDnmntr` | `MaterialQtyToBaseQtyDnmntr` |
-| `ComponentScrapInPercent` | `ComponentScrapInPercent` |
-| `OperationScrapInPercent` | `OperationScrapInPercent` |
-| `IsNetScrap` | `IsNetScrap` |
-| `LeadTimeOffset` | `LeadTimeOffset` |
-| `QuantityDistributionKey` | `QuantityDistributionKey` |
-| `MaterialRevisionLevel` | `cast (MaterialRevisionLevel as revlv preserving type )` |
-| `MaterialRevisionLevel_2` | `MaterialRevisionLevel` |
-| `MaterialCompIsVariableSized` | `MaterialCompIsVariableSized` |
-| `NumberOfVariableSizeComponents` | `NumberOfVariableSizeComponents` |
-| `VariableSizeItemUnit` | `VariableSizeItemUnit` |
-| `VariableSizeItemQuantity` | `VariableSizeItemQuantity` |
-| `VariableSizeComponentUnit` | `VariableSizeComponentUnit` |
-| `VariableSizeComponentQuantity` | `VariableSizeComponentQuantity` |
-| `UnitOfMeasureForSize1To3` | `UnitOfMeasureForSize1To3` |
-| `Size1` | `Size1` |
-| `Size2` | `Size2` |
-| `Size3` | `Size3` |
-| `FormulaKey` | `FormulaKey` |
-| `StorageLocation` | `StorageLocation` |
-| `ProductionSupplyArea` | `ProductionSupplyArea` |
-| `Batch` | `Batch` |
-| `BOMItemDescription` | `BOMItemDescription` |
-| `BOMItemText2` | `BOMItemText2` |
-| `ChangeNumber` | `ChangeNumber` |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
-| `_ScheduleLine` | *Association* |
-| `_VariableSize1To3Unit` | *Association* |
-| `_VariableSizeCompUnit` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_EntryUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `PurchaseOrderScheduleLine` | ✓ | |  |  |
+| `ReservationItem` | ✓ | |  |  |
+| `RecordType` | ✓ | |  |  |
+| `Reservation` |  | |  |  |
+| `Material` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `RequiredQuantity` |  | |  |  |
+| `WithdrawnQuantity` |  | |  |  |
+| `QuantityIsFixed` |  | |  |  |
+| `RequirementDate` |  | |  |  |
+| `RequirementTime` |  | |  |  |
+| `Plant` |  | |  |  |
+| `LatestRequirementDate` |  | |  |  |
+| `OrderLevelValue` |  | |  |  |
+| `OrderPathValue` |  | |  |  |
+| `BillOfMaterialItemNumber` |  | |  | `cast (BillOfMaterialItemNumber as aposn preserving type )` |
+| `BillOfMaterialItemNumber_2` |  | |  | `BillOfMaterialItemNumber` |
+| `SortField` |  | |  |  |
+| `BOMItemCategory` |  | |  |  |
+| `MaterialComponentIsPhantomItem` |  | |  |  |
+| `IsBulkMaterialComponent` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `IsMaterialProvision` |  | |  |  |
+| `MaterialProvisionType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |
+| `EntryUnit` |  | |  |  |
+| `QuantityInEntryUnit` |  | |  |  |
+| `MaterialQtyToBaseQtyNmrtr` |  | |  |  |
+| `MaterialQtyToBaseQtyDnmntr` |  | |  |  |
+| `ComponentScrapInPercent` |  | |  |  |
+| `OperationScrapInPercent` |  | |  |  |
+| `IsNetScrap` |  | |  |  |
+| `LeadTimeOffset` |  | |  |  |
+| `QuantityDistributionKey` |  | |  |  |
+| `MaterialRevisionLevel` |  | |  | `cast (MaterialRevisionLevel as revlv preserving type )` |
+| `MaterialRevisionLevel_2` |  | |  | `MaterialRevisionLevel` |
+| `MaterialCompIsVariableSized` |  | |  |  |
+| `NumberOfVariableSizeComponents` |  | |  |  |
+| `VariableSizeItemUnit` |  | |  |  |
+| `VariableSizeItemQuantity` |  | |  |  |
+| `VariableSizeComponentUnit` |  | |  |  |
+| `VariableSizeComponentQuantity` |  | |  |  |
+| `UnitOfMeasureForSize1To3` |  | |  |  |
+| `Size1` |  | |  |  |
+| `Size2` |  | |  |  |
+| `Size3` |  | |  |  |
+| `FormulaKey` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ProductionSupplyArea` |  | |  |  |
+| `Batch` |  | |  |  |
+| `BOMItemDescription` |  | |  |  |
+| `BOMItemText2` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
+| `_ScheduleLine` | | ✓ | | |
+| `_VariableSize1To3Unit` | | ✓ | | |
+| `_VariableSizeCompUnit` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_EntryUnit` | | ✓ | | |
 
 ## Associations
 

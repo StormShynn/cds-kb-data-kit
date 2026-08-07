@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CollectiveAllocationType` | `cast ( substring( domvalue_l, 1, 2 ) as collectiveallocationtype preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CollectiveAllocationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as collectiveallocationtype preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

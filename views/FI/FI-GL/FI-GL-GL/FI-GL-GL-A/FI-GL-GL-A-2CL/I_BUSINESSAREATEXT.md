@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessArea` | `gsber` |
-| key `Language` | `spras` |
-| `BusinessAreaName` | `cast( gtext as fis_gtext_vdm preserving type)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessArea` | ✓ | |  | `gsber` |
+| `Language` | ✓ | |  | `spras` |
+| `BusinessAreaName` |  | |  | `cast( gtext as fis_gtext_vdm preserving type)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

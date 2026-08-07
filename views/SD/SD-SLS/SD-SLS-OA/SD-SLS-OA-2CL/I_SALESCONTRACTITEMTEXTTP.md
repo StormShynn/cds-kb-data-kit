@@ -33,21 +33,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContract` | `SalesContractItemText.SalesContract` |
-| key `SalesContractItem` | `SalesContractItemText.SalesContractItem` |
-| key `Language` | `SalesContractItemText.Language` |
-| key `LongTextID` | `SalesContractItemText.LongTextID` |
-| `LongTextIDForEdit` | `SalesContractItemText.LongTextIDForEdit` |
-| `LanguageForEdit` | `SalesContractItemText.LanguageForEdit` |
-| `LongText` | `SalesContractItemText.LongText` |
-| `SalesContractType` | `SalesContractItemText.SalesContractType` |
-| `SalesOrganization` | `SalesContractItemText.SalesOrganization` |
-| `DistributionChannel` | `SalesContractItemText.DistributionChannel` |
-| `OrganizationDivision` | `SalesContractItemText.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |
+| `SalesContractItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `SalesContractType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesContract` | | ✓ | | |
 
 ## Source Code
 

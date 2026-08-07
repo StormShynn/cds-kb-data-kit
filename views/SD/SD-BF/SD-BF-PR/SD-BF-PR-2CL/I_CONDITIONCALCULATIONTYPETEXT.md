@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `ConditionCalculationType` | `cast ( substring( domvalue_l, 1, 3 ) as krech_long )` |
-| `ConditionCalculationTypeName` | `cast ( substring ( ddtext, 1, 30 ) as prct_calculation_type_descr )` |
-| `_ConditionCalculationType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `ConditionCalculationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 3 ) as krech_long )` |
+| `ConditionCalculationTypeName` |  | |  | `cast ( substring ( ddtext, 1, 30 ) as prct_calculation_type_descr )` |
+| `_ConditionCalculationType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

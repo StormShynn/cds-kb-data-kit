@@ -30,45 +30,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| key `StorageLocation` | `StorageLocation` |
-| key `Batch` | `Batch` |
-| key `Supplier` | `Supplier` |
-| key `SDDocument` | `SDDocument` |
-| key `SDDocumentItem` | `SDDocumentItem` |
-| key `WBSElementInternalID` | `cast ( WBSElementInternalID as ps_s4_pspnr preserving type )` |
-| key `Customer` | `Customer` |
-| key `SpecialStockIdfgStockOwner` | `SpecialStockIdfgStockOwner` |
-| key `InventoryStockType` | `InventoryStockType` |
-| key `InventorySpecialStockType` | `InventorySpecialStockType` |
-| key `FiscalYearVariant` | `FiscalYearVariant` |
-| key `MatlDocLatestPostgDate` | `MatlDocLatestPostgDate` |
-| key `MaterialBaseUnit` | `MaterialBaseUnit` |
-| key `CostEstimate` | `CostEstimate` |
-| key `ResourceID` | `ResourceID` |
-| `CompanyCode` | `CompanyCode` |
-| `MatlWrhsStkQtyInMatlBaseUnit` | `MatlWrhsStkQtyInMatlBaseUnit` |
-| `MatlCnsmpnQtyInMatlBaseUnit` | `MatlCnsmpnQtyInMatlBaseUnit` |
-| `MatlStkIncrQtyInMatlBaseUnit` | `MatlStkIncrQtyInMatlBaseUnit` |
-| `MatlStkDecrQtyInMatlBaseUnit` | `MatlStkDecrQtyInMatlBaseUnit` |
-| `_Material` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_SpecialStockIdfgStockOwner` | *Association* |
-| `_InventoryStockType` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_InvtryPrcBasicByPeriodEndDate` | *Association* |
-| `_InventoryPriceByPeriodEndDate` | *Association* |
-| `_CurrentInvtryPrice` | *Association* |
-| `_ResourceBasic` | *Association* |
-| `_SpclStkIdfgWBSElmntBasicData` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `StorageLocation` | ✓ | |  |  |
+| `Batch` | ✓ | |  |  |
+| `Supplier` | ✓ | |  |  |
+| `SDDocument` | ✓ | |  |  |
+| `SDDocumentItem` | ✓ | |  |  |
+| `WBSElementInternalID` | ✓ | |  | `cast ( WBSElementInternalID as ps_s4_pspnr preserving type )` |
+| `Customer` | ✓ | |  |  |
+| `SpecialStockIdfgStockOwner` | ✓ | |  |  |
+| `InventoryStockType` | ✓ | |  |  |
+| `InventorySpecialStockType` | ✓ | |  |  |
+| `FiscalYearVariant` | ✓ | |  |  |
+| `MatlDocLatestPostgDate` | ✓ | |  |  |
+| `MaterialBaseUnit` | ✓ | |  |  |
+| `CostEstimate` | ✓ | |  |  |
+| `ResourceID` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |
+| `MatlCnsmpnQtyInMatlBaseUnit` |  | |  |  |
+| `MatlStkIncrQtyInMatlBaseUnit` |  | |  |  |
+| `MatlStkDecrQtyInMatlBaseUnit` |  | |  |  |
+| `_Material` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_SpecialStockIdfgStockOwner` | | ✓ | | |
+| `_InventoryStockType` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_InvtryPrcBasicByPeriodEndDate` | | ✓ | | |
+| `_InventoryPriceByPeriodEndDate` | | ✓ | | |
+| `_CurrentInvtryPrice` | | ✓ | | |
+| `_ResourceBasic` | | ✓ | | |
+| `_SpclStkIdfgWBSElmntBasicData` | | ✓ | | |
 
 ## Associations
 

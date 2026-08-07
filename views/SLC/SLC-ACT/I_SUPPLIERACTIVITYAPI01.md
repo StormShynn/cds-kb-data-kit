@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrActyUUID` | `SuplrActyUUID` |
-| `SupplierActivity` | `SupplierActivity` |
-| `PurgCatUUID` | `PurgCatUUID` |
-| `SuplrActyName` | `SuplrActyName` |
-| `StartDate` | `StartDate` |
-| `EndDate` | `EndDate` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `Language` | `Language` |
-| `SuplrActyPriority` | `SuplrActyPriority` |
-| `SuplrActyType` | `SuplrActyType` |
-| `SuplrActyLifecycleStatus` | `SuplrActyLifecycleStatus` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrActyUUID` | ✓ | |  |  |
+| `SupplierActivity` |  | |  |  |
+| `PurgCatUUID` |  | |  |  |
+| `SuplrActyName` |  | |  |  |
+| `StartDate` |  | |  |  |
+| `EndDate` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
+| `Language` |  | |  |  |
+| `SuplrActyPriority` |  | |  |  |
+| `SuplrActyType` |  | |  |  |
+| `SuplrActyLifecycleStatus` |  | |  |  |
 
 ## Source Code
 

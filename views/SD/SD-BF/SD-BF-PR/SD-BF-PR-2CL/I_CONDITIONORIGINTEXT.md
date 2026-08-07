@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `ConditionOrigin` | `cast ( substring( domvalue_l, 1, 1 ) as kherk )` |
-| `ConditionOriginName` | `cast ( ddtext as price_element_origin_descr )` |
-| `_ConditionOrigin` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `ConditionOrigin` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kherk )` |
+| `ConditionOriginName` |  | |  | `cast ( ddtext as price_element_origin_descr )` |
+| `_ConditionOrigin` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

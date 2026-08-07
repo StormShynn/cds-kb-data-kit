@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPArea` | `mdlv.berid` |
-| `MRPAreaCategory` | `cast(mdlv.berty as mrpareacategory preserving type)` |
-| `MRPAreaPlant` | `cast(mdlv.werzg as werzg preserving type)` |
-| `MRPAreaText` | `mdlv.bertx` |
-| `ReceivingStorageLocation` | `mdlv.ortzg` |
-| `MRPAreaBusinessType` | `mdlv.spe_bntyp` |
-| `MRPAreaProfile` | `mdlv.mdma_profile` |
-| `_MRPAreaCategory` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPArea` | ✓ | |  | `berid` |
+| `MRPAreaCategory` |  | |  | `cast(mdlv.berty as mrpareacategory preserving type)` |
+| `MRPAreaPlant` |  | |  | `cast(mdlv.werzg as werzg preserving type)` |
+| `MRPAreaText` |  | |  | `bertx` |
+| `ReceivingStorageLocation` |  | |  | `ortzg` |
+| `MRPAreaBusinessType` |  | |  | `spe_bntyp` |
+| `MRPAreaProfile` |  | |  | `mdma_profile` |
+| `_MRPAreaCategory` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
 
 ## Associations
 

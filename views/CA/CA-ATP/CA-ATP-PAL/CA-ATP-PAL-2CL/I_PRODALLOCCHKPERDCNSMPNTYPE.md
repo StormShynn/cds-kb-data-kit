@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocChkPeriodCnsmpnType` | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkperiodcnsmpntype preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocChkPeriodCnsmpnType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocchkperiodcnsmpntype preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

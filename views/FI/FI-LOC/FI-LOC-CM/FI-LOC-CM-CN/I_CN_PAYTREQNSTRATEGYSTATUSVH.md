@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentReqnStrategyStatus` | `cast( substring( domvalue_l, 1, 2 ) as payreqn_stgy_status preserving type)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentReqnStrategyStatus` | ✓ | |  | `cast( substring( domvalue_l, 1, 2 ) as payreqn_stgy_status preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

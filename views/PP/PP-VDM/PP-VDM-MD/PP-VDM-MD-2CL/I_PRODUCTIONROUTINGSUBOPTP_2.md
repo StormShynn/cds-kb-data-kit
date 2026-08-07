@@ -31,83 +31,83 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionRoutingGroup` | `ProductionRoutingGroup` |
-| key `ProductionRouting` | `ProductionRouting` |
-| key `ProductionRoutingSequence` | `ProductionRoutingSequence` |
-| key `ProductionRoutingOpIntID` | `ProductionRoutingOpIntID` |
-| key `ProdnRtgSubOpIntVersion` | `ProdnRtgSubOpIntVersion` |
-| `SuperiorOperationInternalID` | `SuperiorOperationInternalID` |
-| `Operation` | `Operation` |
-| `OperationText` | `OperationText` |
-| `LongTextLanguageCode` | `LongTextLanguageCode` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `Plant` | `Plant` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `OperationStandardTextCode` | `OperationStandardTextCode` |
-| `OperationReferenceQuantity` | `OperationReferenceQuantity` |
-| `OperationUnit` | `OperationUnit` |
-| `OpQtyToBaseQtyNmrtr` | `OpQtyToBaseQtyNmrtr` |
-| `OpQtyToBaseQtyDnmntr` | `OpQtyToBaseQtyDnmntr` |
-| `StandardWorkQuantity1` | `StandardWorkQuantity1` |
-| `StandardWorkQuantityUnit1` | `StandardWorkQuantityUnit1` |
-| `CostCtrActivityType1` | `CostCtrActivityType1` |
-| `StandardWorkQuantity2` | `StandardWorkQuantity2` |
-| `StandardWorkQuantityUnit2` | `StandardWorkQuantityUnit2` |
-| `CostCtrActivityType2` | `CostCtrActivityType2` |
-| `StandardWorkQuantity3` | `StandardWorkQuantity3` |
-| `StandardWorkQuantityUnit3` | `StandardWorkQuantityUnit3` |
-| `CostCtrActivityType3` | `CostCtrActivityType3` |
-| `StandardWorkQuantity4` | `StandardWorkQuantity4` |
-| `StandardWorkQuantityUnit4` | `StandardWorkQuantityUnit4` |
-| `CostCtrActivityType4` | `CostCtrActivityType4` |
-| `StandardWorkQuantity5` | `StandardWorkQuantity5` |
-| `StandardWorkQuantityUnit5` | `StandardWorkQuantityUnit5` |
-| `CostCtrActivityType5` | `CostCtrActivityType5` |
-| `StandardWorkQuantity6` | `StandardWorkQuantity6` |
-| `StandardWorkQuantityUnit6` | `StandardWorkQuantityUnit6` |
-| `CostCtrActivityType6` | `CostCtrActivityType6` |
-| `NumberOfTimeTickets` | `NumberOfTimeTickets` |
-| `EmployeeWageType` | `EmployeeWageType` |
-| `EmployeeWageGroup` | `EmployeeWageGroup` |
-| `NumberOfConfirmationSlips` | `NumberOfConfirmationSlips` |
-| `NumberOfEmployees` | `NumberOfEmployees` |
-| `OperationCostingRelevancyType` | `OperationCostingRelevancyType` |
-| `BusinessProcess` | `BusinessProcess` |
-| `OpIsExtlyProcdWithSubcontrg` | `OpIsExtlyProcdWithSubcontrg` |
-| `InspectionLotType` | `InspectionLotType` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `PurchasingInfoRecdAddlGrpgName` | `PurchasingInfoRecdAddlGrpgName` |
-| `PlannedDeliveryDuration` | `PlannedDeliveryDuration` |
-| `MaterialGroup` | `MaterialGroup` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Supplier` | `Supplier` |
-| `NumberOfOperationPriceUnits` | `NumberOfOperationPriceUnits` |
-| `CostElement` | `CostElement` |
-| `OpExternalProcessingPrice` | `OpExternalProcessingPrice` |
-| `OpExternalProcessingCurrency` | `OpExternalProcessingCurrency` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `OperationSetupType` | `OperationSetupType` |
-| `OperationSetupGroupCategory` | `OperationSetupGroupCategory` |
-| `OperationSetupGroup` | `OperationSetupGroup` |
-| `CapacityCategoryCode` | `CapacityCategoryCode` |
-| `OperationScrapPercent` | `OperationScrapPercent` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `PlainLongText` | `PlainLongText` |
-| `_NonSqncTP` | *Association* |
-| `_ProdnRtgTP` | *Association* |
-| `_Header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |
+| `ProductionRouting` | ✓ | |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |
+| `ProductionRoutingOpIntID` | ✓ | |  |  |
+| `ProdnRtgSubOpIntVersion` | ✓ | |  |  |
+| `SuperiorOperationInternalID` |  | |  |  |
+| `Operation` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `LongTextLanguageCode` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `Plant` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `OperationStandardTextCode` |  | |  |  |
+| `OperationReferenceQuantity` |  | |  |  |
+| `OperationUnit` |  | |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |
+| `StandardWorkQuantity1` |  | |  |  |
+| `StandardWorkQuantityUnit1` |  | |  |  |
+| `CostCtrActivityType1` |  | |  |  |
+| `StandardWorkQuantity2` |  | |  |  |
+| `StandardWorkQuantityUnit2` |  | |  |  |
+| `CostCtrActivityType2` |  | |  |  |
+| `StandardWorkQuantity3` |  | |  |  |
+| `StandardWorkQuantityUnit3` |  | |  |  |
+| `CostCtrActivityType3` |  | |  |  |
+| `StandardWorkQuantity4` |  | |  |  |
+| `StandardWorkQuantityUnit4` |  | |  |  |
+| `CostCtrActivityType4` |  | |  |  |
+| `StandardWorkQuantity5` |  | |  |  |
+| `StandardWorkQuantityUnit5` |  | |  |  |
+| `CostCtrActivityType5` |  | |  |  |
+| `StandardWorkQuantity6` |  | |  |  |
+| `StandardWorkQuantityUnit6` |  | |  |  |
+| `CostCtrActivityType6` |  | |  |  |
+| `NumberOfTimeTickets` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |
+| `NumberOfEmployees` |  | |  |  |
+| `OperationCostingRelevancyType` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `OpIsExtlyProcdWithSubcontrg` |  | |  |  |
+| `InspectionLotType` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `PurchasingInfoRecdAddlGrpgName` |  | |  |  |
+| `PlannedDeliveryDuration` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `OperationSetupType` |  | |  |  |
+| `OperationSetupGroupCategory` |  | |  |  |
+| `OperationSetupGroup` |  | |  |  |
+| `CapacityCategoryCode` |  | |  |  |
+| `OperationScrapPercent` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `PlainLongText` |  | |  |  |
+| `_NonSqncTP` | | ✓ | | |
+| `_ProdnRtgTP` | | ✓ | | |
+| `_Header` | | ✓ | | |
 
 ## Source Code
 

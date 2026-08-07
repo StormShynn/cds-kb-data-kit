@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `comp_code` |
-| key `FixedAssetUsageObject` | `usage_object` |
-| `FixedAssetUsageObjectDesc` | `description` |
-| `BaseUnit` | `base_uom` |
-| `FixedAssetUsageObjLfcycSts` | `lifecycle_status` |
-| `CreationDateTime` | `creation_datetime` |
-| `CreatedByUser` | `creation_user` |
-| `LastChangeDateTime` | `lastchange_datetime` |
-| `LastChangedByUser` | `lastchange_user` |
-| `DraftLastChangedDateTime` | `draft_lastchange_datetime` |
-| `_UsageObjectPeriod` | *Association* |
-| `_UsageObjectTotal` | *Association* |
-| `_UsageObjectWhereUsd` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_UsageObjectLifecycleStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |
+| `FixedAssetUsageObjectDesc` |  | |  | `description` |
+| `BaseUnit` |  | |  | `base_uom` |
+| `FixedAssetUsageObjLfcycSts` |  | |  | `lifecycle_status` |
+| `CreationDateTime` |  | |  | `creation_datetime` |
+| `CreatedByUser` |  | |  | `creation_user` |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` |
+| `LastChangedByUser` |  | |  | `lastchange_user` |
+| `DraftLastChangedDateTime` |  | |  | `draft_lastchange_datetime` |
+| `_UsageObjectPeriod` | | ✓ | | |
+| `_UsageObjectTotal` | | ✓ | | |
+| `_UsageObjectWhereUsd` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_UsageObjectLifecycleStatus` | | ✓ | | |
 
 ## Associations
 

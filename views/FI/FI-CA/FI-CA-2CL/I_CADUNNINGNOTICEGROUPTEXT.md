@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningNoticeGroup` | `mgrup` |
-| key `Language` | `spras` |
-| `CADunningNoticeGroupName` | `mtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningNoticeGroup` | ✓ | |  | `mgrup` |
+| `Language` | ✓ | |  | `spras` |
+| `CADunningNoticeGroupName` |  | |  | `mtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

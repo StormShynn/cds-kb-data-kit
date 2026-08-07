@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RealEstateUsableObjectUUID` | `REGenericRentalObjectUUID` |
-| key `StatusProfile` | `StatusProfile` |
-| key `StatusCode` | `StatusCode` |
-| `InternalRealEstateNumber` | `_REUsableObject.InternalRealEstateNumber` |
-| `REStatusObject` | `REStatusObject` |
-| `IsUserStatus` | `IsUserStatus` |
-| `StatusIsInactive` | `StatusIsInactive` |
-| `_REUsableObject` | *Association* |
-| `_StatusCode` | *Association* |
-| `_StatusProfile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RealEstateUsableObjectUUID` | ✓ | |  | `REGenericRentalObjectUUID` |
+| `StatusProfile` | ✓ | |  |  |
+| `StatusCode` | ✓ | |  |  |
+| `InternalRealEstateNumber` |  | | `_REUsableObject` | `InternalRealEstateNumber` |
+| `REStatusObject` |  | |  |  |
+| `IsUserStatus` |  | |  |  |
+| `StatusIsInactive` |  | |  |  |
+| `_REUsableObject` | | ✓ | | |
+| `_StatusCode` | | ✓ | | |
+| `_StatusProfile` | | ✓ | | |
 
 ## Associations
 

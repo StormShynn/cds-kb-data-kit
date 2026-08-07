@@ -26,10 +26,10 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `client:mandt` | `key client:mandt` |
-| `lifnr:lifnr` | `key lifnr:lifnr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `client:mandt` |  | |  | `key client:mandt` |
+| `lifnr:lifnr` |  | |  | `key lifnr:lifnr` |
 
 ## Source Code
 

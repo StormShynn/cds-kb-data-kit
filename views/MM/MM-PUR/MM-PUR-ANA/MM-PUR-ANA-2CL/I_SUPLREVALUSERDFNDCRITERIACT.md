@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalUsrDfndCritraUUID` | `suplrevalusrdfndcritrauuid` |
-| `Supplier` | `supplier` |
-| `MaterialGroup` | `materialgroup` |
-| `PurchasingCategory` | `purchasingcategory` |
-| `SuplrEvalUserDefinedCriteria` | `suplrevaluserdefinedcriteria` |
-| `ValidFrom` | `validfrom` |
-| `ValidTo` | `validto` |
-| `SuplrEvalUsrDfndCritraRptdDte` | `plottingdate` |
-| `TotNmbrOfSuplrUsrDfndCritra` | `totnmbrofsuplrusrdfndcritra` |
-| `IsDeleted` | `isdeleted` |
-| `Comments` | `comments` |
-| `SuplrEvalUsrDfndCritraCrtedBy` | `suplrevalusrdfndcritracrtedby` |
-| `SuplrEvalUserDfndCritraCrtnDte` | `suplrevaluserdfndcritracrtndte` |
-| `SuplrEvalUsrDfndCritraChgdBy` | `suplrevalusrdfndcritrachgdby` |
-| `SuplrEvalUserDfndCritraChgDate` | `suplrevaluserdfndcritrachgdate` |
-| `SupplierAccountGroup` | `supplieraccountgroup` |
-| `SuplrEvalUsrCritraChgDteTme` | `suplrevalusrdfndcritraentchgd` |
-| `_UserDefCriteria` | *Association* |
-| `_Supplier` | *Association* |
-| `_MaterialGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalUsrDfndCritraUUID` | ✓ | |  | `suplrevalusrdfndcritrauuid` |
+| `Supplier` |  | |  | `supplier` |
+| `MaterialGroup` |  | |  | `materialgroup` |
+| `PurchasingCategory` |  | |  | `purchasingcategory` |
+| `SuplrEvalUserDefinedCriteria` |  | |  | `suplrevaluserdefinedcriteria` |
+| `ValidFrom` |  | |  | `validfrom` |
+| `ValidTo` |  | |  | `validto` |
+| `SuplrEvalUsrDfndCritraRptdDte` |  | |  | `plottingdate` |
+| `TotNmbrOfSuplrUsrDfndCritra` |  | |  | `totnmbrofsuplrusrdfndcritra` |
+| `IsDeleted` |  | |  | `isdeleted` |
+| `Comments` |  | |  | `comments` |
+| `SuplrEvalUsrDfndCritraCrtedBy` |  | |  | `suplrevalusrdfndcritracrtedby` |
+| `SuplrEvalUserDfndCritraCrtnDte` |  | |  | `suplrevaluserdfndcritracrtndte` |
+| `SuplrEvalUsrDfndCritraChgdBy` |  | |  | `suplrevalusrdfndcritrachgdby` |
+| `SuplrEvalUserDfndCritraChgDate` |  | |  | `suplrevaluserdfndcritrachgdate` |
+| `SupplierAccountGroup` |  | |  | `supplieraccountgroup` |
+| `SuplrEvalUsrCritraChgDteTme` |  | |  | `suplrevalusrdfndcritraentchgd` |
+| `_UserDefCriteria` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
 
 ## Associations
 

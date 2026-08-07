@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QltyMgmtIntegScenState` | `cast(substring(domvalue_l, 1, 1) as qinteg_state preserving type)` |
-| key `Language` | `ddlanguage` |
-| `DefectArchivingStatusText` | `cast( dd07t.ddtext as qinteg_state_text preserving type )` |
-| `_Language` | *Association* |
-| `_QltyMgmtIntegScenState` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QltyMgmtIntegScenState` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as qinteg_state preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `DefectArchivingStatusText` |  | |  | `cast( dd07t.ddtext as qinteg_state_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_QltyMgmtIntegScenState` | | ✓ | | |
 
 ## Associations
 

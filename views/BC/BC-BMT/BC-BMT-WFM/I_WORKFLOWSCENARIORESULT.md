@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowScenarioDefinition` | `WorkflowResult.wfd_id` |
-| key `WorkflowScenarioDefinitionVers` | `WorkflowResult.version` |
-| key `WorkflowScenarioResult` | `WorkflowResult.normiert` |
-| `WorkflowScenarioResultNature` | `WorkflowResult.nature` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` |
+| `WorkflowScenarioResult` | ✓ | |  | `normiert` |
+| `WorkflowScenarioResultNature` |  | |  | `nature` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

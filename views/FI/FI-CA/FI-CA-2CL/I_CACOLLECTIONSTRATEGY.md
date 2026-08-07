@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACollectionStrategy` | `strat` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACollectionStrategy` | ✓ | |  | `strat` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

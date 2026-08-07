@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrganizationalUnit` | `objid` |
-| key `Language` | `langu` |
-| `StartDate` | `begda` |
-| `EndDate` | `endda` |
-| `OrganizationalUnitShortName` | `short` |
-| `OrganizationalUnitName` | `stext` |
-| `OrgUnitTypeIDConcatenated` | `otjid` |
-| `_SalesOrganizationUnit` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrganizationalUnit` | ✓ | |  | `objid` |
+| `Language` | ✓ | |  | `langu` |
+| `StartDate` |  | |  | `begda` |
+| `EndDate` |  | |  | `endda` |
+| `OrganizationalUnitShortName` |  | |  | `short` |
+| `OrganizationalUnitName` |  | |  | `stext` |
+| `OrgUnitTypeIDConcatenated` |  | |  | `otjid` |
+| `_SalesOrganizationUnit` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CharcValCombnWthAssgmtIsDeltd` | `charcvalcombnwthassgmtisdeltd` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcValCombnWthAssgmtIsDeltd` |  | |  | `charcvalcombnwthassgmtisdeltd` |
 
 ## Source Code
 

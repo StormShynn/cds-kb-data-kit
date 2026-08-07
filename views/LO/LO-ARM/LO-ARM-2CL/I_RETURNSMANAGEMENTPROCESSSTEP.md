@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RetsMgmtProcessStep` | `cast( step_id as msr_step_id preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RetsMgmtProcessStep` | ✓ | |  | `cast( step_id as msr_step_id preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

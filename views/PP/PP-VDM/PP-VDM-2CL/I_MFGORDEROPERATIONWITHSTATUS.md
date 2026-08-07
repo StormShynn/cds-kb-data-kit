@@ -28,295 +28,295 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MfgOrderInternalID` | `afvg.MfgOrderInternalID` |
-| key `OrderOperationInternalID` | `afvg.OrderOperationInternalID` |
-| `ManufacturingOrder` | `afvg.ManufacturingOrder` |
-| `ManufacturingOrderSequence` | `afvg.ManufacturingOrderSequence` |
-| `ManufacturingOrderOperation` | `cast(afvg.ManufacturingOrderOperation as pph_vornr preserving type)` |
-| `ManufacturingOrderOperation_2` | `afvg.ManufacturingOrderOperation_2` |
-| `ManufacturingOrderSubOperation` | `cast(afvg.ManufacturingOrderSubOperation as pph_uvorn preserving type)` |
-| `ManufacturingOrdSubOperation_2` | `afvg.ManufacturingOrdSubOperation_2` |
-| `ManufacturingOrderCategory` | `afvg.ManufacturingOrderCategory` |
-| `ManufacturingOrderType` | `afvg.ManufacturingOrderType` |
-| `ProductionSupervisor` | `afvg.ProductionSupervisor` |
-| `MRPController` | `afvg.MRPController` |
-| `ResponsiblePlannerGroup` | `afvg.ResponsiblePlannerGroup` |
-| `ProductConfiguration` | `afvg.ProductConfiguration` |
-| `InspectionLot` | `afvg.InspectionLot` |
-| `ManufacturingOrderImportance` | `afvg.ManufacturingOrderImportance` |
-| `MfgOrderOperationText` | `afvg.MfgOrderOperationText` |
-| `OperationHasLongText` | `afvg.OperationHasLongText` |
-| `LongTextLanguageCode` | `afvg.Language` |
-| `OperationStandardTextCode` | `afvg.OperationStandardTextCode` |
-| `OperationIsToBeDeleted` | `afvg.OperationIsToBeDeleted` |
-| `MfgOrderOperationIsPhase` | `afvg.MfgOrderOperationIsPhase` |
-| `MfgOrderPhaseSuperiorOperation` | `afvg.MfgOrderPhaseSuperiorOperation` |
-| `SuperiorOperation_2` | `afvg.SuperiorOperation_2` |
-| `NumberOfCapacities` | `afvg.NumberOfCapacities` |
-| `NumberOfConfirmationSlips` | `afvg.NumberOfConfirmationSlips` |
-| `OperationImportance` | `afvg.OperationImportance` |
-| `OperationIsCreated` | `stat.OperationIsCreated` |
-| `OperationIsReleased` | `stat.OperationIsReleased` |
-| `OperationIsPrinted` | `stat.OperationIsPrinted` |
-| `OperationIsConfirmed` | `stat.OperationIsConfirmed` |
-| `OperationIsPartiallyConfirmed` | `stat.OperationIsPartiallyConfirmed` |
-| `OperationIsDeleted` | `stat.OperationIsDeleted` |
-| `OperationIsTechlyCompleted` | `stat.OperationIsTechlyCompleted` |
-| `OperationIsClosed` | `stat.OperationIsClosed` |
-| `OperationIsConfdByMilestone` | `cast(stat.OperationIsConfdByMilestone as isconfirmedbymilestone preserving type)` |
-| `OperationIsManuallyConfirmed` | `cast(stat.OperationIsManuallyConfirmed as isconfirmedmanually preserving type)` |
-| `OperationIsScheduled` | `stat.OperationIsScheduled` |
-| `OperationIsGenerated` | `cast(stat.OperationIsGenerated as operationisgenerated preserving type)` |
-| `OperationIsPartiallyDelivered` | `stat.OperationIsPartiallyDelivered` |
-| `OperationIsDelivered` | `stat.OperationIsDelivered` |
-| `ControlRecipeIsCreated` | `cast(stat.ControlRecipeIsCreated as controlrecipeiscreated preserving type)` |
-| `SuperiorOperationInternalID` | `afvg.SuperiorOperationInternalID` |
-| `Plant` | `afvg.Plant` |
-| `WorkCenterInternalID` | `afvg.WorkCenterInternalID` |
-| `WorkCenterTypeCode` | `afvg.WorkCenterTypeCode` |
-| `WorkCenterTypeCode_2` | `afvg.WorkCenterTypeCode_2` |
-| `OperationControlProfile` | `afvg.OperationControlProfile` |
-| `ControlRecipeDestination` | `afvg.ControlRecipeDestination` |
-| `OperationConfirmation` | `afvg.OperationConfirmation` |
-| `NumberOfOperationConfirmations` | `afvg.NumberOfOperationConfirmations` |
-| `FactoryCalendar` | `afvg.FactoryCalendar` |
-| `CapacityRequirement` | `afvg.CapacityRequirement` |
-| `CapacityRequirementItem` | `afvg.CapacityRequirementItem` |
-| `ChangeNumber` | `afvg.ChangeNumber` |
-| `ObjectInternalID` | `afvg.ObjectInternalID` |
-| `OperationTrackingNumber` | `afvg.OperationTrackingNumber` |
-| `BillOfOperationsType` | `afvg.BillOfOperationsType` |
-| `BillOfOperationsGroup` | `afvg.BillOfOperationsGroup` |
-| `BillOfOperationsVariant` | `afvg.BillOfOperationsVariant` |
-| `BillOfOperationsSequence` | `afvg.BillOfOperationsSequence` |
-| `BOOOperationInternalID` | `afvg.BOOOperationInternalID` |
-| `BillOfOperationsVersion` | `afvg.BillOfOperationsVersion` |
-| `BillOfMaterialCategory` | `afvg.BillOfMaterialCategory` |
-| `BillOfMaterialInternalID` | `afvg.BillOfMaterialInternalID` |
-| `BillOfMaterialInternalID_2` | `afvg.BillOfMaterialInternalID_2` |
-| `BillOfMaterialItemNodeNumber` | `afvg.BillOfMaterialItemNodeNumber` |
-| `BOMItemNodeCount` | `afvg.BOMItemNodeCount` |
-| `ExtProcgOperationHasSubcontrg` | `afvg.ExtProcgOperationHasSubcontrg` |
-| `PurchasingOrganization` | `afvg.PurchasingOrganization` |
-| `PurchasingGroup` | `afvg.PurchasingGroup` |
-| `PurchaseRequisition` | `afvg.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `afvg.PurchaseRequisitionItem` |
-| `PurchaseOrder` | `afvg.PurchaseOrder` |
-| `PurchaseOrderItem` | `afvg.PurchaseOrderItem` |
-| `PurchaseOutlineAgreement` | `afvg.PurchaseOutlineAgreement` |
-| `PurchaseOutlineAgreementItem` | `afvg.PurchaseOutlineAgreementItem` |
-| `PurchasingInfoRecord` | `afvg.PurchasingInfoRecord` |
-| `PurgInfoRecdDataIsFixed` | `afvg.PurgInfoRecdDataIsFixed` |
-| `PurchasingInfoRecordCategory` | `afvg.PurchasingInfoRecordCategory` |
-| `Supplier` | `afvg.Supplier` |
-| `GoodsRecipientName` | `afvg.GoodsRecipientName` |
-| `UnloadingPointName` | `afvg.UnloadingPointName` |
-| `OpExternalProcessingCurrency` | `afvg.OpExternalProcessingCurrency` |
-| `OpExternalProcessingPrice` | `afvg.OpExternalProcessingPrice` |
-| `NumberOfOperationPriceUnits` | `afvg.NumberOfOperationPriceUnits` |
-| `CompanyCode` | `afvg.CompanyCode` |
-| `BusinessArea` | `afvg.BusinessArea` |
-| `ControllingArea` | `afvg.ControllingArea` |
-| `ProfitCenter` | `afvg.ProfitCenter` |
-| `RequestingCostCenter` | `afvg.RequestingCostCenter` |
-| `CostElement` | `afvg.CostElement` |
-| `CostingVariant` | `afvg.CostingVariant` |
-| `CostingSheet` | `afvg.CostingSheet` |
-| `CostEstimate` | `afvg.CostEstimate` |
-| `ControllingObjectCurrency` | `afvg.ControllingObjectCurrency` |
-| `ControllingObjectClass` | `afvg.ControllingObjectClass` |
-| `FunctionalArea` | `afvg.FunctionalArea` |
-| `TaxJurisdiction` | `afvg.TaxJurisdiction` |
-| `EmployeeWageType` | `afvg.EmployeeWageType` |
-| `EmployeeWageGroup` | `afvg.EmployeeWageGroup` |
-| `EmployeeSuitability` | `afvg.EmployeeSuitability` |
-| `NumberOfTimeTickets` | `afvg.NumberOfTimeTickets` |
-| `Personnel` | `afvg.Personnel` |
-| `NumberOfEmployees` | `afvg.NumberOfEmployees` |
-| `OperationSetupGroupCategory` | `afvg.OperationSetupGroupCategory` |
-| `OperationSetupGroup` | `afvg.OperationSetupGroup` |
-| `OperationSetupType` | `afvg.OperationSetupType` |
-| `OperationOverlappingIsRequired` | `afvg.OperationOverlappingIsRequired` |
-| `OperationOverlappingIsPossible` | `afvg.OperationOverlappingIsPossible` |
-| `OperationsIsAlwaysOverlapping` | `afvg.OperationsIsAlwaysOverlapping` |
-| `OperationSplitIsRequired` | `afvg.OperationSplitIsRequired` |
-| `MaximumNumberOfSplits` | `afvg.MaximumNumberOfSplits` |
-| `LeadTimeReductionStrategy` | `afvg.LeadTimeReductionStrategy` |
-| `OpSchedldReductionLevel` | `afvg.OpSchedldReductionLevel` |
-| `OpErlstSchedldExecStrtDte` | `afvg.OpErlstSchedldExecStrtDte` |
-| `OpErlstSchedldExecStrtTme` | `afvg.OpErlstSchedldExecStrtTme` |
-| `OpErlstSchedldProcgStrtDte` | `afvg.OpErlstSchedldProcgStrtDte` |
-| `OpErlstSchedldProcgStrtTme` | `afvg.OpErlstSchedldProcgStrtTme` |
-| `OpErlstSchedldTrdwnStrtDte` | `afvg.OpErlstSchedldTrdwnStrtDte` |
-| `OpErlstSchedldTrdwnStrtTme` | `afvg.OpErlstSchedldTrdwnStrtTme` |
-| `OpErlstSchedldExecEndDte` | `afvg.OpErlstSchedldExecEndDte` |
-| `OpErlstSchedldExecEndTme` | `afvg.OpErlstSchedldExecEndTme` |
-| `OpLtstSchedldExecStrtDte` | `afvg.OpLtstSchedldExecStrtDte` |
-| `OpLtstSchedldExecStrtTme` | `afvg.OpLtstSchedldExecStrtTme` |
-| `OpLtstSchedldProcgStrtDte` | `afvg.OpLtstSchedldProcgStrtDte` |
-| `OpLtstSchedldProcgStrtTme` | `afvg.OpLtstSchedldProcgStrtTme` |
-| `OpLtstSchedldTrdwnStrtDte` | `afvg.OpLtstSchedldTrdwnStrtDte` |
-| `OpLtstSchedldTrdwnStrtTme` | `afvg.OpLtstSchedldTrdwnStrtTme` |
-| `OpLtstSchedldExecEndDte` | `afvg.OpLtstSchedldExecEndDte` |
-| `OpLtstSchedldExecEndTme` | `afvg.OpLtstSchedldExecEndTme` |
-| `SchedldFcstdEarliestStartDate` | `afvg.SchedldFcstdEarliestStartDate` |
-| `SchedldFcstdEarliestStartTime` | `afvg.SchedldFcstdEarliestStartTime` |
-| `SchedldFcstdEarliestEndDate` | `afvg.SchedldFcstdEarliestEndDate` |
-| `SchedldFcstdEarliestEndTime` | `afvg.SchedldFcstdEarliestEndTime` |
-| `LatestSchedldFcstdStartDate` | `afvg.LatestSchedldFcstdStartDate` |
-| `SchedldFcstdLatestStartTime` | `afvg.SchedldFcstdLatestStartTime` |
-| `LatestSchedldFcstdEndDate` | `afvg.LatestSchedldFcstdEndDate` |
-| `SchedldFcstdLatestEndTime` | `afvg.SchedldFcstdLatestEndTime` |
-| `OperationConfirmedStartDate` | `afvg.OperationConfirmedStartDate` |
-| `OperationConfirmedEndDate` | `afvg.OperationConfirmedEndDate` |
-| `OpActualExecutionStartDate` | `afvg.OpActualExecutionStartDate` |
-| `OpActualExecutionStartTime` | `afvg.OpActualExecutionStartTime` |
-| `OpActualSetupEndDate` | `afvg.OpActualSetupEndDate` |
-| `OpActualSetupEndTime` | `afvg.OpActualSetupEndTime` |
-| `OpActualProcessingStartDate` | `afvg.OpActualProcessingStartDate` |
-| `OpActualProcessingStartTime` | `afvg.OpActualProcessingStartTime` |
-| `OpActualProcessingEndDate` | `afvg.OpActualProcessingEndDate` |
-| `OpActualProcessingEndTime` | `afvg.OpActualProcessingEndTime` |
-| `OpActualTeardownStartDate` | `afvg.OpActualTeardownStartDate` |
-| `OpActualTeardownStartTme` | `afvg.OpActualTeardownStartTme` |
-| `OpActualExecutionEndDate` | `afvg.OpActualExecutionEndDate` |
-| `OpActualExecutionEndTime` | `afvg.OpActualExecutionEndTime` |
-| `ActualForecastEndDate` | `afvg.ActualForecastEndDate` |
-| `ActualForecastEndTime` | `afvg.ActualForecastEndTime` |
-| `EarliestScheduledWaitStartDate` | `afvg.EarliestScheduledWaitStartDate` |
-| `EarliestScheduledWaitStartTime` | `afvg.EarliestScheduledWaitStartTime` |
-| `EarliestScheduledWaitEndDate` | `afvg.EarliestScheduledWaitEndDate` |
-| `EarliestScheduledWaitEndTime` | `afvg.EarliestScheduledWaitEndTime` |
-| `LatestScheduledWaitStartDate` | `afvg.LatestScheduledWaitStartDate` |
-| `LatestScheduledWaitStartTime` | `afvg.LatestScheduledWaitStartTime` |
-| `LatestScheduledWaitEndDate` | `afvg.LatestScheduledWaitEndDate` |
-| `LatestScheduledWaitEndTime` | `afvg.LatestScheduledWaitEndTime` |
-| `BreakDurationUnit` | `afvg.BreakDurationUnit` |
-| `PlannedBreakDuration` | `afvg.PlannedBreakDuration` |
-| `ConfirmedBreakDuration` | `afvg.ConfirmedBreakDuration` |
-| `OverlapMinimumDurationUnit` | `afvg.OverlapMinimumDurationUnit` |
-| `OverlapMinimumDuration` | `afvg.OverlapMinimumDuration` |
-| `MaximumWaitDurationUnit` | `afvg.MaximumWaitDurationUnit` |
-| `MaximumWaitDuration` | `afvg.MaximumWaitDuration` |
-| `MinimumWaitDurationUnit` | `afvg.MinimumWaitDurationUnit` |
-| `MinimumWaitDuration` | `afvg.MinimumWaitDuration` |
-| `StandardMoveDurationUnit` | `afvg.StandardMoveDurationUnit` |
-| `StandardMoveDuration` | `afvg.StandardMoveDuration` |
-| `StandardQueueDurationUnit` | `afvg.StandardQueueDurationUnit` |
-| `StandardQueueDuration` | `afvg.StandardQueueDuration` |
-| `MinimumQueueDurationUnit` | `afvg.MinimumQueueDurationUnit` |
-| `MinimumQueueDuration` | `afvg.MinimumQueueDuration` |
-| `MinimumMoveDurationUnit` | `afvg.MinimumMoveDurationUnit` |
-| `MinimumMoveDuration` | `afvg.MinimumMoveDuration` |
-| `OperationStandardDurationUnit` | `afvg.OperationStandardDurationUnit` |
-| `OperationStandardDuration` | `afvg.OperationStandardDuration` |
-| `MinimumDurationUnit` | `afvg.MinimumDurationUnit` |
-| `MinimumDuration` | `afvg.MinimumDuration` |
-| `ActualForecastDurationUnit` | `afvg.ActualForecastDurationUnit` |
-| `ActualForecastDuration` | `afvg.ActualForecastDuration` |
-| `ScheduledMoveDuration` | `afvg.ScheduledMoveDuration` |
-| `ScheduledMoveDurationUnit` | `afvg.ScheduledMoveDurationUnit` |
-| `ScheduledQueueDuration` | `afvg.ScheduledQueueDuration` |
-| `ScheduledQueueDurationUnit` | `afvg.ScheduledQueueDurationUnit` |
-| `ScheduledWaitDuration` | `afvg.ScheduledWaitDuration` |
-| `ScheduledWaitDurationUnit` | `afvg.ScheduledWaitDurationUnit` |
-| `PlannedDeliveryDuration` | `afvg.PlannedDeliveryDuration` |
-| `OpPlannedSetupDurn` | `afvg.OpPlannedSetupDurn` |
-| `OpPlannedSetupDurnUnit` | `afvg.OpPlannedSetupDurnUnit` |
-| `OpPlannedProcessingDurn` | `afvg.OpPlannedProcessingDurn` |
-| `OpPlannedProcessingDurnUnit` | `afvg.OpPlannedProcessingDurnUnit` |
-| `OpPlannedTeardownDurn` | `afvg.OpPlannedTeardownDurn` |
-| `OpPlannedTeardownDurnUnit` | `afvg.OpPlannedTeardownDurnUnit` |
-| `StartDateOffsetReferenceCode` | `afvg.StartDateOffsetReferenceCode` |
-| `StartDateOffsetDurationUnit` | `afvg.StartDateOffsetDurationUnit` |
-| `StartDateOffsetDuration` | `afvg.StartDateOffsetDuration` |
-| `EndDateOffsetReferenceCode` | `afvg.EndDateOffsetReferenceCode` |
-| `EndDateOffsetDurationUnit` | `afvg.EndDateOffsetDurationUnit` |
-| `EndDateOffsetDuration` | `afvg.EndDateOffsetDuration` |
-| `StandardWorkFormulaParamGroup` | `afvg.StandardWorkFormulaParamGroup` |
-| `OperationUnit` | `afvg.OperationUnit` |
-| `OpQtyToBaseQtyDnmntr` | `afvg.OpQtyToBaseQtyDnmntr` |
-| `OpQtyToBaseQtyNmrtr` | `afvg.OpQtyToBaseQtyNmrtr` |
-| `OperationScrapPercent` | `afvg.OperationScrapPercent` |
-| `OperationReferenceQuantity` | `afvg.OperationReferenceQuantity` |
-| `OpPlannedTotalQuantity` | `afvg.OpPlannedTotalQuantity` |
-| `OpPlannedScrapQuantity` | `afvg.OpPlannedScrapQuantity` |
-| `OpPlannedYieldQuantity` | `afvg.OpPlannedYieldQuantity` |
-| `OpTotalConfirmedYieldQty` | `afvg.OpTotalConfirmedYieldQty` |
-| `OpTotalConfirmedScrapQty` | `afvg.OpTotalConfirmedScrapQty` |
-| `OperationConfirmedReworkQty` | `afvg.OperationConfirmedReworkQty` |
-| `ProductionUnit` | `afvg.ProductionUnit` |
-| `OpTotConfdYieldQtyInOrdQtyUnit` | `afvg.OpTotConfdYieldQtyInOrdQtyUnit` |
-| `OpWorkQuantityUnit1` | `cast(afvg.OpWorkQuantityUnit1 as vdm_ile01 preserving type)` |
-| `OpConfirmedWorkQuantity1` | `cast(afvg.OpConfirmedWorkQuantity1 as vdm_ism01 preserving type)` |
-| `NoFurtherOpWorkQuantity1IsExpd` | `afvg.NoFurtherOpWorkQuantity1IsExpd` |
-| `OpWorkQuantityUnit2` | `cast(afvg.OpWorkQuantityUnit2 as vdm_ile02 preserving type)` |
-| `OpConfirmedWorkQuantity2` | `cast(afvg.OpConfirmedWorkQuantity2 as vdm_ism02 preserving type)` |
-| `NoFurtherOpWorkQuantity2IsExpd` | `afvg.NoFurtherOpWorkQuantity2IsExpd` |
-| `OpWorkQuantityUnit3` | `cast(afvg.OpWorkQuantityUnit3 as vdm_ile03 preserving type)` |
-| `OpConfirmedWorkQuantity3` | `cast(afvg.OpConfirmedWorkQuantity3 as vdm_ism03 preserving type)` |
-| `NoFurtherOpWorkQuantity3IsExpd` | `afvg.NoFurtherOpWorkQuantity3IsExpd` |
-| `OpWorkQuantityUnit4` | `cast(afvg.OpWorkQuantityUnit4 as vdm_ile04 preserving type)` |
-| `OpConfirmedWorkQuantity4` | `cast(afvg.OpConfirmedWorkQuantity4 as vdm_ism04 preserving type)` |
-| `NoFurtherOpWorkQuantity4IsExpd` | `afvg.NoFurtherOpWorkQuantity4IsExpd` |
-| `OpWorkQuantityUnit5` | `cast(afvg.OpWorkQuantityUnit5 as vdm_ile05 preserving type)` |
-| `OpConfirmedWorkQuantity5` | `cast(afvg.OpConfirmedWorkQuantity5 as vdm_ism05 preserving type)` |
-| `NoFurtherOpWorkQuantity5IsExpd` | `afvg.NoFurtherOpWorkQuantity5IsExpd` |
-| `OpWorkQuantityUnit6` | `cast(afvg.OpWorkQuantityUnit6 as vdm_ile06 preserving type)` |
-| `OpConfirmedWorkQuantity6` | `cast(afvg.OpConfirmedWorkQuantity6 as vdm_ism06 preserving type)` |
-| `NoFurtherOpWorkQuantity6IsExpd` | `afvg.NoFurtherOpWorkQuantity6IsExpd` |
-| `WorkCenterStandardWorkQtyUnit1` | `cast(afvg.WorkCenterStandardWorkQtyUnit1 as pph_vge01 preserving type)` |
-| `WorkCenterStandardWorkQty1` | `cast(afvg.WorkCenterStandardWorkQty1 as vdm_vgw01 preserving type)` |
-| `CostCtrActivityType1` | `cast(afvg.CostCtrActivityType1 as vdm_lar01 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit2` | `cast(afvg.WorkCenterStandardWorkQtyUnit2 as pph_vge02 preserving type)` |
-| `WorkCenterStandardWorkQty2` | `cast(afvg.WorkCenterStandardWorkQty2 as vdm_vgw02 preserving type)` |
-| `CostCtrActivityType2` | `cast(afvg.CostCtrActivityType2 as vdm_lar02 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit3` | `cast(afvg.WorkCenterStandardWorkQtyUnit3 as pph_vge03 preserving type)` |
-| `WorkCenterStandardWorkQty3` | `cast(afvg.WorkCenterStandardWorkQty3 as vdm_vgw03 preserving type)` |
-| `CostCtrActivityType3` | `cast(afvg.CostCtrActivityType3 as vdm_lar03 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit4` | `cast(afvg.WorkCenterStandardWorkQtyUnit4 as pph_vge04 preserving type)` |
-| `WorkCenterStandardWorkQty4` | `cast(afvg.WorkCenterStandardWorkQty4 as vdm_vgw04 preserving type)` |
-| `CostCtrActivityType4` | `cast(afvg.CostCtrActivityType4 as vdm_lar04 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit5` | `cast(afvg.WorkCenterStandardWorkQtyUnit5 as pph_vge05 preserving type)` |
-| `WorkCenterStandardWorkQty5` | `cast(afvg.WorkCenterStandardWorkQty5 as vdm_vgw05 preserving type)` |
-| `CostCtrActivityType5` | `cast(afvg.CostCtrActivityType5 as vdm_lar05 preserving type)` |
-| `WorkCenterStandardWorkQtyUnit6` | `cast(afvg.WorkCenterStandardWorkQtyUnit6 as pph_vge06 preserving type)` |
-| `WorkCenterStandardWorkQty6` | `cast(afvg.WorkCenterStandardWorkQty6 as vdm_vgw06 preserving type)` |
-| `CostCtrActivityType6` | `cast(afvg.CostCtrActivityType6 as vdm_lar06 preserving type)` |
-| `ForecastWorkQuantity1` | `cast(afvg.ForecastWorkQuantity1 as vdm_ofm01 preserving type)` |
-| `ForecastWorkQuantity2` | `cast(afvg.ForecastWorkQuantity2 as vdm_ofm02 preserving type)` |
-| `ForecastWorkQuantity3` | `cast(afvg.ForecastWorkQuantity3 as vdm_ofm03 preserving type)` |
-| `ForecastWorkQuantity4` | `cast(afvg.ForecastWorkQuantity4 as vdm_ofm04 preserving type)` |
-| `ForecastWorkQuantity5` | `cast(afvg.ForecastWorkQuantity5 as vdm_ofm05 preserving type)` |
-| `ForecastWorkQuantity6` | `cast(afvg.ForecastWorkQuantity6 as vdm_ofm06 preserving type)` |
-| `BusinessProcess` | `afvg.BusinessProcess` |
-| `BusinessProcessEntryUnit` | `afvg.BusinessProcessEntryUnit` |
-| `BusinessProcessConfirmedQty` | `afvg.BusinessProcessConfirmedQty` |
-| `NoFurtherBusinessProcQtyIsExpd` | `afvg.NoFurtherBusinessProcQtyIsExpd` |
-| `BusinessProcRemainingQtyUnit` | `afvg.BusinessProcRemainingQtyUnit` |
-| `BusinessProcessRemainingQty` | `afvg.BusinessProcessRemainingQty` |
-| `SetupOpActyNtwkInstance` | `afvg.SetupOpActyNtwkInstance` |
-| `ProduceOpActyNtwkInstance` | `afvg.ProduceOpActyNtwkInstance` |
-| `TeardownOpActyNtwkInstance` | `afvg.TeardownOpActyNtwkInstance` |
-| `FreeDefinedTableFieldSemantic` | `afvg.FreeDefinedTableFieldSemantic` |
-| `FreeDefinedAttribute01` | `afvg.FreeDefinedAttribute01` |
-| `FreeDefinedAttribute02` | `afvg.FreeDefinedAttribute02` |
-| `FreeDefinedAttribute03` | `afvg.FreeDefinedAttribute03` |
-| `FreeDefinedAttribute04` | `afvg.FreeDefinedAttribute04` |
-| `FreeDefinedQuantity1Unit` | `afvg.FreeDefinedQuantity1Unit` |
-| `FreeDefinedQuantity1` | `afvg.FreeDefinedQuantity1` |
-| `FreeDefinedQuantity2Unit` | `afvg.FreeDefinedQuantity2Unit` |
-| `FreeDefinedQuantity2` | `afvg.FreeDefinedQuantity2` |
-| `FreeDefinedAmount1Currency` | `afvg.FreeDefinedAmount1Currency` |
-| `FreeDefinedAmount1` | `afvg.FreeDefinedAmount1` |
-| `FreeDefinedAmount2Currency` | `afvg.FreeDefinedAmount2Currency` |
-| `FreeDefinedAmount2` | `afvg.FreeDefinedAmount2` |
-| `FreeDefinedDate1` | `afvg.FreeDefinedDate1` |
-| `FreeDefinedDate2` | `afvg.FreeDefinedDate2` |
-| `FreeDefinedIndicator1` | `afvg.FreeDefinedIndicator1` |
-| `FreeDefinedIndicator2` | `afvg.FreeDefinedIndicator2` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MfgOrderInternalID` | ✓ | |  |  |
+| `OrderOperationInternalID` | ✓ | |  |  |
+| `ManufacturingOrder` |  | |  |  |
+| `ManufacturingOrderSequence` |  | |  |  |
+| `ManufacturingOrderOperation` |  | |  | `cast(afvg.ManufacturingOrderOperation as pph_vornr preserving type)` |
+| `ManufacturingOrderOperation_2` |  | |  |  |
+| `ManufacturingOrderSubOperation` |  | |  | `cast(afvg.ManufacturingOrderSubOperation as pph_uvorn preserving type)` |
+| `ManufacturingOrdSubOperation_2` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ManufacturingOrderType` |  | |  |  |
+| `ProductionSupervisor` |  | |  |  |
+| `MRPController` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `ProductConfiguration` |  | |  |  |
+| `InspectionLot` |  | |  |  |
+| `ManufacturingOrderImportance` |  | |  |  |
+| `MfgOrderOperationText` |  | |  |  |
+| `OperationHasLongText` |  | |  |  |
+| `LongTextLanguageCode` |  | |  | `Language` |
+| `OperationStandardTextCode` |  | |  |  |
+| `OperationIsToBeDeleted` |  | |  |  |
+| `MfgOrderOperationIsPhase` |  | |  |  |
+| `MfgOrderPhaseSuperiorOperation` |  | |  |  |
+| `SuperiorOperation_2` |  | |  |  |
+| `NumberOfCapacities` |  | |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |
+| `OperationImportance` |  | |  |  |
+| `OperationIsCreated` |  | |  |  |
+| `OperationIsReleased` |  | |  |  |
+| `OperationIsPrinted` |  | |  |  |
+| `OperationIsConfirmed` |  | |  |  |
+| `OperationIsPartiallyConfirmed` |  | |  |  |
+| `OperationIsDeleted` |  | |  |  |
+| `OperationIsTechlyCompleted` |  | |  |  |
+| `OperationIsClosed` |  | |  |  |
+| `OperationIsConfdByMilestone` |  | |  | `cast(stat.OperationIsConfdByMilestone as isconfirmedbymilestone preserving type)` |
+| `OperationIsManuallyConfirmed` |  | |  | `cast(stat.OperationIsManuallyConfirmed as isconfirmedmanually preserving type)` |
+| `OperationIsScheduled` |  | |  |  |
+| `OperationIsGenerated` |  | |  | `cast(stat.OperationIsGenerated as operationisgenerated preserving type)` |
+| `OperationIsPartiallyDelivered` |  | |  |  |
+| `OperationIsDelivered` |  | |  |  |
+| `ControlRecipeIsCreated` |  | |  | `cast(stat.ControlRecipeIsCreated as controlrecipeiscreated preserving type)` |
+| `SuperiorOperationInternalID` |  | |  |  |
+| `Plant` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `WorkCenterTypeCode_2` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `ControlRecipeDestination` |  | |  |  |
+| `OperationConfirmation` |  | |  |  |
+| `NumberOfOperationConfirmations` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `CapacityRequirement` |  | |  |  |
+| `CapacityRequirementItem` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `OperationTrackingNumber` |  | |  |  |
+| `BillOfOperationsType` |  | |  |  |
+| `BillOfOperationsGroup` |  | |  |  |
+| `BillOfOperationsVariant` |  | |  |  |
+| `BillOfOperationsSequence` |  | |  |  |
+| `BOOOperationInternalID` |  | |  |  |
+| `BillOfOperationsVersion` |  | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BillOfMaterialInternalID` |  | |  |  |
+| `BillOfMaterialInternalID_2` |  | |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  |  |
+| `BOMItemNodeCount` |  | |  |  |
+| `ExtProcgOperationHasSubcontrg` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `PurchaseOutlineAgreement` |  | |  |  |
+| `PurchaseOutlineAgreementItem` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurgInfoRecdDataIsFixed` |  | |  |  |
+| `PurchasingInfoRecordCategory` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `RequestingCostCenter` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `CostingVariant` |  | |  |  |
+| `CostingSheet` |  | |  |  |
+| `CostEstimate` |  | |  |  |
+| `ControllingObjectCurrency` |  | |  |  |
+| `ControllingObjectClass` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `EmployeeSuitability` |  | |  |  |
+| `NumberOfTimeTickets` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `NumberOfEmployees` |  | |  |  |
+| `OperationSetupGroupCategory` |  | |  |  |
+| `OperationSetupGroup` |  | |  |  |
+| `OperationSetupType` |  | |  |  |
+| `OperationOverlappingIsRequired` |  | |  |  |
+| `OperationOverlappingIsPossible` |  | |  |  |
+| `OperationsIsAlwaysOverlapping` |  | |  |  |
+| `OperationSplitIsRequired` |  | |  |  |
+| `MaximumNumberOfSplits` |  | |  |  |
+| `LeadTimeReductionStrategy` |  | |  |  |
+| `OpSchedldReductionLevel` |  | |  |  |
+| `OpErlstSchedldExecStrtDte` |  | |  |  |
+| `OpErlstSchedldExecStrtTme` |  | |  |  |
+| `OpErlstSchedldProcgStrtDte` |  | |  |  |
+| `OpErlstSchedldProcgStrtTme` |  | |  |  |
+| `OpErlstSchedldTrdwnStrtDte` |  | |  |  |
+| `OpErlstSchedldTrdwnStrtTme` |  | |  |  |
+| `OpErlstSchedldExecEndDte` |  | |  |  |
+| `OpErlstSchedldExecEndTme` |  | |  |  |
+| `OpLtstSchedldExecStrtDte` |  | |  |  |
+| `OpLtstSchedldExecStrtTme` |  | |  |  |
+| `OpLtstSchedldProcgStrtDte` |  | |  |  |
+| `OpLtstSchedldProcgStrtTme` |  | |  |  |
+| `OpLtstSchedldTrdwnStrtDte` |  | |  |  |
+| `OpLtstSchedldTrdwnStrtTme` |  | |  |  |
+| `OpLtstSchedldExecEndDte` |  | |  |  |
+| `OpLtstSchedldExecEndTme` |  | |  |  |
+| `SchedldFcstdEarliestStartDate` |  | |  |  |
+| `SchedldFcstdEarliestStartTime` |  | |  |  |
+| `SchedldFcstdEarliestEndDate` |  | |  |  |
+| `SchedldFcstdEarliestEndTime` |  | |  |  |
+| `LatestSchedldFcstdStartDate` |  | |  |  |
+| `SchedldFcstdLatestStartTime` |  | |  |  |
+| `LatestSchedldFcstdEndDate` |  | |  |  |
+| `SchedldFcstdLatestEndTime` |  | |  |  |
+| `OperationConfirmedStartDate` |  | |  |  |
+| `OperationConfirmedEndDate` |  | |  |  |
+| `OpActualExecutionStartDate` |  | |  |  |
+| `OpActualExecutionStartTime` |  | |  |  |
+| `OpActualSetupEndDate` |  | |  |  |
+| `OpActualSetupEndTime` |  | |  |  |
+| `OpActualProcessingStartDate` |  | |  |  |
+| `OpActualProcessingStartTime` |  | |  |  |
+| `OpActualProcessingEndDate` |  | |  |  |
+| `OpActualProcessingEndTime` |  | |  |  |
+| `OpActualTeardownStartDate` |  | |  |  |
+| `OpActualTeardownStartTme` |  | |  |  |
+| `OpActualExecutionEndDate` |  | |  |  |
+| `OpActualExecutionEndTime` |  | |  |  |
+| `ActualForecastEndDate` |  | |  |  |
+| `ActualForecastEndTime` |  | |  |  |
+| `EarliestScheduledWaitStartDate` |  | |  |  |
+| `EarliestScheduledWaitStartTime` |  | |  |  |
+| `EarliestScheduledWaitEndDate` |  | |  |  |
+| `EarliestScheduledWaitEndTime` |  | |  |  |
+| `LatestScheduledWaitStartDate` |  | |  |  |
+| `LatestScheduledWaitStartTime` |  | |  |  |
+| `LatestScheduledWaitEndDate` |  | |  |  |
+| `LatestScheduledWaitEndTime` |  | |  |  |
+| `BreakDurationUnit` |  | |  |  |
+| `PlannedBreakDuration` |  | |  |  |
+| `ConfirmedBreakDuration` |  | |  |  |
+| `OverlapMinimumDurationUnit` |  | |  |  |
+| `OverlapMinimumDuration` |  | |  |  |
+| `MaximumWaitDurationUnit` |  | |  |  |
+| `MaximumWaitDuration` |  | |  |  |
+| `MinimumWaitDurationUnit` |  | |  |  |
+| `MinimumWaitDuration` |  | |  |  |
+| `StandardMoveDurationUnit` |  | |  |  |
+| `StandardMoveDuration` |  | |  |  |
+| `StandardQueueDurationUnit` |  | |  |  |
+| `StandardQueueDuration` |  | |  |  |
+| `MinimumQueueDurationUnit` |  | |  |  |
+| `MinimumQueueDuration` |  | |  |  |
+| `MinimumMoveDurationUnit` |  | |  |  |
+| `MinimumMoveDuration` |  | |  |  |
+| `OperationStandardDurationUnit` |  | |  |  |
+| `OperationStandardDuration` |  | |  |  |
+| `MinimumDurationUnit` |  | |  |  |
+| `MinimumDuration` |  | |  |  |
+| `ActualForecastDurationUnit` |  | |  |  |
+| `ActualForecastDuration` |  | |  |  |
+| `ScheduledMoveDuration` |  | |  |  |
+| `ScheduledMoveDurationUnit` |  | |  |  |
+| `ScheduledQueueDuration` |  | |  |  |
+| `ScheduledQueueDurationUnit` |  | |  |  |
+| `ScheduledWaitDuration` |  | |  |  |
+| `ScheduledWaitDurationUnit` |  | |  |  |
+| `PlannedDeliveryDuration` |  | |  |  |
+| `OpPlannedSetupDurn` |  | |  |  |
+| `OpPlannedSetupDurnUnit` |  | |  |  |
+| `OpPlannedProcessingDurn` |  | |  |  |
+| `OpPlannedProcessingDurnUnit` |  | |  |  |
+| `OpPlannedTeardownDurn` |  | |  |  |
+| `OpPlannedTeardownDurnUnit` |  | |  |  |
+| `StartDateOffsetReferenceCode` |  | |  |  |
+| `StartDateOffsetDurationUnit` |  | |  |  |
+| `StartDateOffsetDuration` |  | |  |  |
+| `EndDateOffsetReferenceCode` |  | |  |  |
+| `EndDateOffsetDurationUnit` |  | |  |  |
+| `EndDateOffsetDuration` |  | |  |  |
+| `StandardWorkFormulaParamGroup` |  | |  |  |
+| `OperationUnit` |  | |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |
+| `OperationScrapPercent` |  | |  |  |
+| `OperationReferenceQuantity` |  | |  |  |
+| `OpPlannedTotalQuantity` |  | |  |  |
+| `OpPlannedScrapQuantity` |  | |  |  |
+| `OpPlannedYieldQuantity` |  | |  |  |
+| `OpTotalConfirmedYieldQty` |  | |  |  |
+| `OpTotalConfirmedScrapQty` |  | |  |  |
+| `OperationConfirmedReworkQty` |  | |  |  |
+| `ProductionUnit` |  | |  |  |
+| `OpTotConfdYieldQtyInOrdQtyUnit` |  | |  |  |
+| `OpWorkQuantityUnit1` |  | |  | `cast(afvg.OpWorkQuantityUnit1 as vdm_ile01 preserving type)` |
+| `OpConfirmedWorkQuantity1` |  | |  | `cast(afvg.OpConfirmedWorkQuantity1 as vdm_ism01 preserving type)` |
+| `NoFurtherOpWorkQuantity1IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit2` |  | |  | `cast(afvg.OpWorkQuantityUnit2 as vdm_ile02 preserving type)` |
+| `OpConfirmedWorkQuantity2` |  | |  | `cast(afvg.OpConfirmedWorkQuantity2 as vdm_ism02 preserving type)` |
+| `NoFurtherOpWorkQuantity2IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit3` |  | |  | `cast(afvg.OpWorkQuantityUnit3 as vdm_ile03 preserving type)` |
+| `OpConfirmedWorkQuantity3` |  | |  | `cast(afvg.OpConfirmedWorkQuantity3 as vdm_ism03 preserving type)` |
+| `NoFurtherOpWorkQuantity3IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit4` |  | |  | `cast(afvg.OpWorkQuantityUnit4 as vdm_ile04 preserving type)` |
+| `OpConfirmedWorkQuantity4` |  | |  | `cast(afvg.OpConfirmedWorkQuantity4 as vdm_ism04 preserving type)` |
+| `NoFurtherOpWorkQuantity4IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit5` |  | |  | `cast(afvg.OpWorkQuantityUnit5 as vdm_ile05 preserving type)` |
+| `OpConfirmedWorkQuantity5` |  | |  | `cast(afvg.OpConfirmedWorkQuantity5 as vdm_ism05 preserving type)` |
+| `NoFurtherOpWorkQuantity5IsExpd` |  | |  |  |
+| `OpWorkQuantityUnit6` |  | |  | `cast(afvg.OpWorkQuantityUnit6 as vdm_ile06 preserving type)` |
+| `OpConfirmedWorkQuantity6` |  | |  | `cast(afvg.OpConfirmedWorkQuantity6 as vdm_ism06 preserving type)` |
+| `NoFurtherOpWorkQuantity6IsExpd` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit1` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit1 as pph_vge01 preserving type)` |
+| `WorkCenterStandardWorkQty1` |  | |  | `cast(afvg.WorkCenterStandardWorkQty1 as vdm_vgw01 preserving type)` |
+| `CostCtrActivityType1` |  | |  | `cast(afvg.CostCtrActivityType1 as vdm_lar01 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit2` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit2 as pph_vge02 preserving type)` |
+| `WorkCenterStandardWorkQty2` |  | |  | `cast(afvg.WorkCenterStandardWorkQty2 as vdm_vgw02 preserving type)` |
+| `CostCtrActivityType2` |  | |  | `cast(afvg.CostCtrActivityType2 as vdm_lar02 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit3` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit3 as pph_vge03 preserving type)` |
+| `WorkCenterStandardWorkQty3` |  | |  | `cast(afvg.WorkCenterStandardWorkQty3 as vdm_vgw03 preserving type)` |
+| `CostCtrActivityType3` |  | |  | `cast(afvg.CostCtrActivityType3 as vdm_lar03 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit4` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit4 as pph_vge04 preserving type)` |
+| `WorkCenterStandardWorkQty4` |  | |  | `cast(afvg.WorkCenterStandardWorkQty4 as vdm_vgw04 preserving type)` |
+| `CostCtrActivityType4` |  | |  | `cast(afvg.CostCtrActivityType4 as vdm_lar04 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit5` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit5 as pph_vge05 preserving type)` |
+| `WorkCenterStandardWorkQty5` |  | |  | `cast(afvg.WorkCenterStandardWorkQty5 as vdm_vgw05 preserving type)` |
+| `CostCtrActivityType5` |  | |  | `cast(afvg.CostCtrActivityType5 as vdm_lar05 preserving type)` |
+| `WorkCenterStandardWorkQtyUnit6` |  | |  | `cast(afvg.WorkCenterStandardWorkQtyUnit6 as pph_vge06 preserving type)` |
+| `WorkCenterStandardWorkQty6` |  | |  | `cast(afvg.WorkCenterStandardWorkQty6 as vdm_vgw06 preserving type)` |
+| `CostCtrActivityType6` |  | |  | `cast(afvg.CostCtrActivityType6 as vdm_lar06 preserving type)` |
+| `ForecastWorkQuantity1` |  | |  | `cast(afvg.ForecastWorkQuantity1 as vdm_ofm01 preserving type)` |
+| `ForecastWorkQuantity2` |  | |  | `cast(afvg.ForecastWorkQuantity2 as vdm_ofm02 preserving type)` |
+| `ForecastWorkQuantity3` |  | |  | `cast(afvg.ForecastWorkQuantity3 as vdm_ofm03 preserving type)` |
+| `ForecastWorkQuantity4` |  | |  | `cast(afvg.ForecastWorkQuantity4 as vdm_ofm04 preserving type)` |
+| `ForecastWorkQuantity5` |  | |  | `cast(afvg.ForecastWorkQuantity5 as vdm_ofm05 preserving type)` |
+| `ForecastWorkQuantity6` |  | |  | `cast(afvg.ForecastWorkQuantity6 as vdm_ofm06 preserving type)` |
+| `BusinessProcess` |  | |  |  |
+| `BusinessProcessEntryUnit` |  | |  |  |
+| `BusinessProcessConfirmedQty` |  | |  |  |
+| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |
+| `BusinessProcRemainingQtyUnit` |  | |  |  |
+| `BusinessProcessRemainingQty` |  | |  |  |
+| `SetupOpActyNtwkInstance` |  | |  |  |
+| `ProduceOpActyNtwkInstance` |  | |  |  |
+| `TeardownOpActyNtwkInstance` |  | |  |  |
+| `FreeDefinedTableFieldSemantic` |  | |  |  |
+| `FreeDefinedAttribute01` |  | |  |  |
+| `FreeDefinedAttribute02` |  | |  |  |
+| `FreeDefinedAttribute03` |  | |  |  |
+| `FreeDefinedAttribute04` |  | |  |  |
+| `FreeDefinedQuantity1Unit` |  | |  |  |
+| `FreeDefinedQuantity1` |  | |  |  |
+| `FreeDefinedQuantity2Unit` |  | |  |  |
+| `FreeDefinedQuantity2` |  | |  |  |
+| `FreeDefinedAmount1Currency` |  | |  |  |
+| `FreeDefinedAmount1` |  | |  |  |
+| `FreeDefinedAmount2Currency` |  | |  |  |
+| `FreeDefinedAmount2` |  | |  |  |
+| `FreeDefinedDate1` |  | |  |  |
+| `FreeDefinedDate2` |  | |  |  |
+| `FreeDefinedIndicator1` |  | |  |  |
+| `FreeDefinedIndicator2` |  | |  |  |
 
 ## Associations
 

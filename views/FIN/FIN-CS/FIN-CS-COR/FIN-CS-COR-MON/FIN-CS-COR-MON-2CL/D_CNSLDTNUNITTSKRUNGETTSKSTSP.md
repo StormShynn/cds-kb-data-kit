@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CnsldtnTaskRunBackgroundJob` | `fincs_taskrun_job_id` |
-| `CnsldtnTskRunBackgroundJobName` | `fincs_taskrun_jobname_id` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnTaskRunBackgroundJob` |  | |  | `fincs_taskrun_job_id` |
+| `CnsldtnTskRunBackgroundJobName` |  | |  | `fincs_taskrun_jobname_id` |
 
 ## Source Code
 

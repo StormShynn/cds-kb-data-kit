@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SecurityClass` | `cast(SecurityClSecondaryIndex.ranl as ftr_gen_security_class preserving type )` |
-| key `ScrtyClSecondaryIndexNumber` | `cast(SecurityClSecondaryIndex.vvranlwi as ftr_sc_secdry_idx_number preserving type )` |
-| `ScrtyClSecdryIdxValIdentifier` | `cast(SecurityClSecondaryIndex.vvranlwx as ftr_sc_secondary_ind_value preserving type )` |
-| `_SecurityClass` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SecurityClass` | ✓ | |  | `cast(SecurityClSecondaryIndex.ranl as ftr_gen_security_class preserving type )` |
+| `ScrtyClSecondaryIndexNumber` | ✓ | |  | `cast(SecurityClSecondaryIndex.vvranlwi as ftr_sc_secdry_idx_number preserving type )` |
+| `ScrtyClSecdryIdxValIdentifier` |  | |  | `cast(SecurityClSecondaryIndex.vvranlwx as ftr_sc_secondary_ind_value preserving type )` |
+| `_SecurityClass` | | ✓ | | |
 
 ## Associations
 

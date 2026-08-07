@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `CAWithholdingTaxSupplement` | `qssew` |
-| key `Language` | `spras` |
-| `CAWithholdingTaxSuplmntName` | `txt30` |
-| `_Country` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `CAWithholdingTaxSupplement` | ✓ | |  | `qssew` |
+| `Language` | ✓ | |  | `spras` |
+| `CAWithholdingTaxSuplmntName` |  | |  | `txt30` |
+| `_Country` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

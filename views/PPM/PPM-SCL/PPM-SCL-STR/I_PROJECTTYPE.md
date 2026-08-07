@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectType` | `tcj1.prart` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectType` | ✓ | |  | `prart` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

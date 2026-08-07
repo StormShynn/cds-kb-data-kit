@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionSubsetType` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qppkttyp preserving type )` |
-| key `Language` | `ddlanguage` |
-| `InspectionSubsetTypeText` | `cast( ddtext as vdm_qppkttyp_text preserving type )` |
-| `_Language` | *Association* |
-| `_InspectionSubsetType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionSubsetType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qppkttyp preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `InspectionSubsetTypeText` |  | |  | `cast( ddtext as vdm_qppkttyp_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_InspectionSubsetType` | | ✓ | | |
 
 ## Associations
 

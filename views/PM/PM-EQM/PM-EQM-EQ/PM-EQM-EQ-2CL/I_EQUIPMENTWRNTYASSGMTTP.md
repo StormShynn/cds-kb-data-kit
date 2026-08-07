@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `Equipment` |
-| key `WarrantyType` | `WarrantyType` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `MasterWarranty` | `MasterWarranty` |
-| `WarrantyStartDate` | `WarrantyStartDate` |
-| `WarrantyEndDate` | `WarrantyEndDate` |
-| `WrntyIsInhtdFromSuperiorObject` | `WrntyIsInhtdFromSuperiorObject` |
-| `WrntyIsPassedOnToChildObject` | `WrntyIsPassedOnToChildObject` |
-| `_Equipment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |
+| `WarrantyType` | ✓ | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `MasterWarranty` |  | |  |  |
+| `WarrantyStartDate` |  | |  |  |
+| `WarrantyEndDate` |  | |  |  |
+| `WrntyIsInhtdFromSuperiorObject` |  | |  |  |
+| `WrntyIsPassedOnToChildObject` |  | |  |  |
+| `_Equipment` | | ✓ | | |
 
 ## Source Code
 

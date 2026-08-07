@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceReferenceObjectType` | `cast(domvalue_l as abap.char(1))` |
-| key `Language` | `ddlanguage` |
-| `ServiceReferenceObjectTypeText` | `ddtext` |
-| `_SrvcReferenceObjectType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceReferenceObjectType` | ✓ | |  | `cast(domvalue_l as abap.char(1))` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ServiceReferenceObjectTypeText` |  | |  | `ddtext` |
+| `_SrvcReferenceObjectType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

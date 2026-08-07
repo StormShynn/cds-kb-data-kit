@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Plant` | `werks_d` |
-| `BusinessObject` | `poc_bo_id` |
-| `SAPBusinessObjectType` | `poc_bo_type` |
-| `BusinessObjectItem` | `poc_item_id` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` |  | |  | `werks_d` |
+| `BusinessObject` |  | |  | `poc_bo_id` |
+| `SAPBusinessObjectType` |  | |  | `poc_bo_type` |
+| `BusinessObjectItem` |  | |  | `poc_item_id` |
 
 ## Source Code
 

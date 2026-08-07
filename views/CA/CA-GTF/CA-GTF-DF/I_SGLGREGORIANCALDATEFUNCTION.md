@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DateFunction` | `DateFunction` |
-| `DateFunctionStartDate` | `SystemDateFunctionValue.DateFunctionStartDate` |
-| `DateFunctionEndDate` | `SystemDateFunctionValue.DateFunctionEndDate` |
-| `DateFunctionStartDateTime` | `dats_tims_to_tstmp(DateFunctionStartDate, cast( '000000' as abap.tims), abap_user_timezone($session.user, $session.client, 'FAIL'), $session.client, 'FAIL' )` |
-| `DateFunctionEndDateTime` | `dats_tims_to_tstmp(DateFunctionEndDate, cast( '235959' as abap.tims), abap_user_timezone($session.user, $session.client, 'FAIL'), $session.client, 'FAIL' )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DateFunction` | ✓ | |  |  |
+| `DateFunctionStartDate` |  | |  |  |
+| `DateFunctionEndDate` |  | |  |  |
+| `DateFunctionStartDateTime` |  | |  | `dats_tims_to_tstmp(DateFunctionStartDate, cast( '000000' as abap.tims), abap_user_timezone($session.user, $session.client, 'FAIL'), $session.client, 'FAIL' )` |
+| `DateFunctionEndDateTime` |  | |  | `dats_tims_to_tstmp(DateFunctionEndDate, cast( '235959' as abap.tims), abap_user_timezone($session.user, $session.client, 'FAIL'), $session.client, 'FAIL' )` |
 
 ## Associations
 

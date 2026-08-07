@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| `StorageConditions` | `StorageConditions` |
-| `ProdTemperatureConditionCode` | `ProdTemperatureConditionCode` |
-| `HazardousProduct` | `HazardousProduct` |
-| `NmbrOfGROrGISlipsToPrintQty` | `NmbrOfGROrGISlipsToPrintQty` |
-| `LabelType` | `LabelType` |
-| `LabelForm` | `LabelForm` |
-| `MinRemainingShelfLife` | `MinRemainingShelfLife` |
-| `ProductExpirationDateType` | `ProductExpirationDateType` |
-| `StorageBinInstruction` | `StorageBinInstruction` |
-| `ShelfLifeExpirationDatePeriod` | `ShelfLifeExpirationDatePeriod` |
-| `ShelfLifeExprtnDateRndngRule` | `ShelfLifeExprtnDateRndngRule` |
-| `TotalShelfLifeStoragePercent` | `TotalShelfLifeStoragePercent` |
-| `TotalShelfLife` | `TotalShelfLife` |
-| `BaseUnit` | `BaseUnit` |
-| `_Product` | *Association* |
-| `_TemperatureConditionText` | *Association* |
-| `_LabelType` | *Association* |
-| `_LabelForm` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_ShelfLifeExpirationDatePeriod` | *Association* |
-| `_ProductDescription` | *Association* |
-| `_BaseUnitOfMeasureText` | *Association* |
-| `_ShelfLifeExprtnDatePeriodText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `StorageConditions` |  | |  |  |
+| `ProdTemperatureConditionCode` |  | |  |  |
+| `HazardousProduct` |  | |  |  |
+| `NmbrOfGROrGISlipsToPrintQty` |  | |  |  |
+| `LabelType` |  | |  |  |
+| `LabelForm` |  | |  |  |
+| `MinRemainingShelfLife` |  | |  |  |
+| `ProductExpirationDateType` |  | |  |  |
+| `StorageBinInstruction` |  | |  |  |
+| `ShelfLifeExpirationDatePeriod` |  | |  |  |
+| `ShelfLifeExprtnDateRndngRule` |  | |  |  |
+| `TotalShelfLifeStoragePercent` |  | |  |  |
+| `TotalShelfLife` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_TemperatureConditionText` | | ✓ | | |
+| `_LabelType` | | ✓ | | |
+| `_LabelForm` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_ShelfLifeExpirationDatePeriod` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
+| `_BaseUnitOfMeasureText` | | ✓ | | |
+| `_ShelfLifeExprtnDatePeriodText` | | ✓ | | |
 
 ## Source Code
 

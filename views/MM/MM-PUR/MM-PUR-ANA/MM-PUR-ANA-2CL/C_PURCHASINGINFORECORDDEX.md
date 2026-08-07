@@ -29,52 +29,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `Supplier` | `Supplier` |
-| `Material` | `Material` |
-| `MaterialGroup` | `MaterialGroup` |
-| `CreationDate` | `CreationDate` |
-| `IsDeleted` | `IsDeleted` |
-| `PurchasingInfoRecordDesc` | `PurchasingInfoRecordDesc` |
-| `PurgDocOrderQuantityUnit` | `PurgDocOrderQuantityUnit` |
-| `OrderItemQtyToBaseQtyNmrtr` | `cast ( OrderItemQtyToBaseQtyNmrtr as umbsz_ll preserving type)` |
-| `OrderItemQtyToBaseQtyDnmntr` | `OrderItemQtyToBaseQtyDnmntr` |
-| `SupplierMaterialNumber` | `SupplierMaterialNumber` |
-| `SupplierRespSalesPersonName` | `SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `SupplierPhoneNumber` |
-| `BaseUnit` | `BaseUnit` |
-| `SupplierMaterialGroup` | `SupplierMaterialGroup` |
-| `PriorSupplier` | `PriorSupplier` |
-| `VarblPurOrdUnitIsActive` | `VarblPurOrdUnitIsActive` |
-| `Manufacturer` | `Manufacturer` |
-| `IsRegularSupplier` | `IsRegularSupplier` |
-| `SupplierSubrange` | `SupplierSubrange` |
-| `NoDaysReminder1` | `NoDaysReminder1` |
-| `NoDaysReminder2` | `NoDaysReminder2` |
-| `NoDaysReminder3` | `NoDaysReminder3` |
-| `ProductPurchasePointsQty` | `ProductPurchasePointsQty` |
-| `ProductPurchasePointsQtyUnit` | `ProductPurchasePointsQtyUnit` |
-| `ReturnAgreement` | `ReturnAgreement` |
-| `SupplierCertOriginCat` | `SupplierCertOriginCat` |
-| `SupplierCertOriginNumber` | `SupplierCertOriginNumber` |
-| `SupplierCertValidityEndDate` | `SupplierCertValidityEndDate` |
-| `SupplierCertOriginCountry` | `SupplierCertOriginCountry` |
-| `SupplierCertOriginRegion` | `SupplierCertOriginRegion` |
-| `SuplrCertOriginClassfctnNumber` | `SuplrCertOriginClassfctnNumber` |
-| `SupplierSubrangeSortNumber` | `SupplierSubrangeSortNumber` |
-| `_PurgInfoRecdOrgPlntDataApi01` | *Association* |
-| `_Supplier` | *Association* |
-| `_Product` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_PurgDocOrderQuantityUnit` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_PriorSupplier` | *Association* |
-| `_Manufacturer` | *Association* |
-| `_ProductPurchasePointsQtyUnit` | *Association* |
-| `_Country` | *Association* |
-| `_Region` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingInfoRecord` | ✓ | |  |  |
+| `Supplier` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `PurchasingInfoRecordDesc` |  | |  |  |
+| `PurgDocOrderQuantityUnit` |  | |  |  |
+| `OrderItemQtyToBaseQtyNmrtr` |  | |  | `cast ( OrderItemQtyToBaseQtyNmrtr as umbsz_ll preserving type)` |
+| `OrderItemQtyToBaseQtyDnmntr` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `SupplierMaterialGroup` |  | |  |  |
+| `PriorSupplier` |  | |  |  |
+| `VarblPurOrdUnitIsActive` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `IsRegularSupplier` |  | |  |  |
+| `SupplierSubrange` |  | |  |  |
+| `NoDaysReminder1` |  | |  |  |
+| `NoDaysReminder2` |  | |  |  |
+| `NoDaysReminder3` |  | |  |  |
+| `ProductPurchasePointsQty` |  | |  |  |
+| `ProductPurchasePointsQtyUnit` |  | |  |  |
+| `ReturnAgreement` |  | |  |  |
+| `SupplierCertOriginCat` |  | |  |  |
+| `SupplierCertOriginNumber` |  | |  |  |
+| `SupplierCertValidityEndDate` |  | |  |  |
+| `SupplierCertOriginCountry` |  | |  |  |
+| `SupplierCertOriginRegion` |  | |  |  |
+| `SuplrCertOriginClassfctnNumber` |  | |  |  |
+| `SupplierSubrangeSortNumber` |  | |  |  |
+| `_PurgInfoRecdOrgPlntDataApi01` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_PurgDocOrderQuantityUnit` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_PriorSupplier` | | ✓ | | |
+| `_Manufacturer` | | ✓ | | |
+| `_ProductPurchasePointsQtyUnit` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Region` | | ✓ | | |
 
 ## Associations
 

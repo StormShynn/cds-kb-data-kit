@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPCreditStandingReview` | `tp12.kwg_cre` |
-| `_Text` | *Association* |
-| `_BPFinancialServicesReporting` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPCreditStandingReview` | ✓ | |  | `kwg_cre` |
+| `_Text` | | ✓ | | |
+| `_BPFinancialServicesReporting` | | ✓ | | |
 
 ## Associations
 

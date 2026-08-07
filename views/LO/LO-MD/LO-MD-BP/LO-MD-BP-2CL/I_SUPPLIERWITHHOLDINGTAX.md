@@ -31,23 +31,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `lifnr` |
-| key `CompanyCode` | `bukrs` |
-| key `WithholdingTaxType` | `witht` |
-| `WithholdingTaxNumber` | `wt_wtstcd` |
-| `WithholdingTaxCode` | `wt_withcd` |
-| `IsWithholdingTaxSubject` | `wt_subjct` |
-| `RecipientType` | `qsrec` |
-| `WithholdingTaxCertificate` | `wt_exnr` |
-| `WithholdingTaxExmptPercent` | `wt_exrt` |
-| `ExemptionDateBegin` | `wt_exdf` |
-| `ExemptionDateEnd` | `wt_exdt` |
-| `ExemptionReason` | `wt_wtexrs` |
-| `_CompanyCode` | *Association* |
-| `_SupplierCompany` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `WithholdingTaxType` | ✓ | |  | `witht` |
+| `WithholdingTaxNumber` |  | |  | `wt_wtstcd` |
+| `WithholdingTaxCode` |  | |  | `wt_withcd` |
+| `IsWithholdingTaxSubject` |  | |  | `wt_subjct` |
+| `RecipientType` |  | |  | `qsrec` |
+| `WithholdingTaxCertificate` |  | |  | `wt_exnr` |
+| `WithholdingTaxExmptPercent` |  | |  | `wt_exrt` |
+| `ExemptionDateBegin` |  | |  | `wt_exdf` |
+| `ExemptionDateEnd` |  | |  | `wt_exdt` |
+| `ExemptionReason` |  | |  | `wt_wtexrs` |
+| `_CompanyCode` | | ✓ | | |
+| `_SupplierCompany` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

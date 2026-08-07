@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReturnsInspectionCode` | `InspCtlgCode.code` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReturnsInspectionCode` | ✓ | |  | `code` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

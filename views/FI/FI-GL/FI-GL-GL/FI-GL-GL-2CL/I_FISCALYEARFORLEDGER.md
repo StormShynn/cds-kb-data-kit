@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast( finsc_ld_cmp.bukrs as fis_bukrs preserving type )` |
-| key `Ledger` | `cast( finsc_ld_cmp.rldnr as fis_rldnr preserving type )` |
-| key `FiscalYear` | `I_FiscalYearPeriod.FiscalYear` |
-| `FiscalYearVariant` | `I_FiscalYearPeriod.FiscalYearVariant` |
-| `FiscalYearStartDate` | `I_FiscalYearPeriod.FiscalYearStartDate` |
-| `FiscalYearEndDate` | `I_FiscalYearPeriod.FiscalYearEndDate` |
-| `_FiscalYearVariant` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Ledger` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( finsc_ld_cmp.bukrs as fis_bukrs preserving type )` |
+| `Ledger` | ✓ | |  | `cast( finsc_ld_cmp.rldnr as fis_rldnr preserving type )` |
+| `FiscalYear` | ✓ | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `FiscalYearStartDate` |  | |  |  |
+| `FiscalYearEndDate` |  | |  |  |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
 
 ## Associations
 

@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `CrdtMemoReqItemPricingElement.CreditMemoRequest` |
-| key `CreditMemoRequestItem` | `CrdtMemoReqItemPricingElement.CreditMemoRequestItem` |
-| key `PricingProcedureStep` | `CrdtMemoReqItemPricingElement.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `CrdtMemoReqItemPricingElement.PricingProcedureCounter` |
-| `ConditionApplication` | `CrdtMemoReqItemPricingElement.ConditionApplication` |
-| `ConditionType` | `CrdtMemoReqItemPricingElement.ConditionType` |
-| `ConditionCalculationType` | `CrdtMemoReqItemPricingElement.ConditionCalculationType` |
-| `ConditionRateAmount` | `CrdtMemoReqItemPricingElement.ConditionRateAmount` |
-| `ConditionCurrency` | `CrdtMemoReqItemPricingElement.ConditionCurrency` |
-| `ConditionRateRatio` | `CrdtMemoReqItemPricingElement.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `CrdtMemoReqItemPricingElement.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `CrdtMemoReqItemPricingElement.ConditionBaseAmount` |
-| `ConditionAmount` | `CrdtMemoReqItemPricingElement.ConditionAmount` |
-| `TransactionCurrency` | `CrdtMemoReqItemPricingElement.TransactionCurrency` |
-| `ConditionBaseQuantity` | `CrdtMemoReqItemPricingElement.ConditionBaseQuantity` |
-| `ConditionQuantity` | `CrdtMemoReqItemPricingElement.ConditionQuantity` |
-| `ConditionQuantityUnit` | `CrdtMemoReqItemPricingElement.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `CrdtMemoReqItemPricingElement.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `CrdtMemoReqItemPricingElement.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `CrdtMemoReqItemPricingElement.ConditionInactiveReason` |
-| `CreditMemoRequestType` | `CrdtMemoReqItemPricingElement.CreditMemoRequestType` |
-| `SalesOrganization` | `CrdtMemoReqItemPricingElement.SalesOrganization` |
-| `DistributionChannel` | `CrdtMemoReqItemPricingElement.DistributionChannel` |
-| `OrganizationDivision` | `CrdtMemoReqItemPricingElement.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_CreditMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |
+| `CreditMemoRequestItem` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `CreditMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_CreditMemoRequest` | | ✓ | | |
 
 ## Source Code
 

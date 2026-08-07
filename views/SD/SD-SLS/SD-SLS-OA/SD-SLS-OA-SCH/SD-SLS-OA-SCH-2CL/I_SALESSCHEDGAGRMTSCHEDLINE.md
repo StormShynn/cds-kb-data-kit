@@ -28,68 +28,68 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `cast(SalesDocumentScheduleLine.SalesDocument as vdm_sales_schedg_agrmt preserving type )` |
-| key `SalesSchedulingAgreementItem` | `cast(SalesDocumentItem as vdm_sales_schedg_agrmt_item preserving type )` |
-| key `ScheduleLine` | `ScheduleLine` |
-| `ScheduleLineCategory` | `ScheduleLineCategory` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `OrderToBaseQuantityDnmntr` | `OrderToBaseQuantityDnmntr` |
-| `OrderToBaseQuantityNmrtr` | `OrderToBaseQuantityNmrtr` |
-| `BaseUnit` | `BaseUnit` |
-| `IsRequestedDelivSchedLine` | `cast(IsRequestedDelivSchedLine as reqd_deliv)` |
-| `RequestedDeliveryDate` | `cast(SalesDocumentScheduleLine.RequestedDeliveryDate as reqd_deliv_date)` |
-| `RequestedDeliveryTime` | `RequestedDeliveryTime` |
-| `ScheduleLineOrderQuantity` | `ScheduleLineOrderQuantity` |
-| `CorrectedQtyInOrderQtyUnit` | `CorrectedQtyInOrderQtyUnit` |
-| `IsConfirmedDelivSchedLine` | `cast(IsConfirmedDelivSchedLine as confd_deliv)` |
-| `ConfirmedDeliveryDate` | `cast(ConfirmedDeliveryDate as confd_deliv_date)` |
-| `ConfirmedDeliveryTime` | `ConfirmedDeliveryTime` |
-| `ConfdOrderQtyByMatlAvailCheck` | `ConfdOrderQtyByMatlAvailCheck` |
-| `ConfdSchedLineReqdDelivDate` | `ConfdSchedLineReqdDelivDate` |
-| `OpenConfdDelivQtyInBaseUnit` | `SalesDocumentScheduleLine.OpenConfdDelivQtyInBaseUnit` |
-| `ProductAvailabilityDate` | `ProductAvailabilityDate` |
-| `ProductAvailabilityTime` | `ProductAvailabilityTime` |
-| `ProductAvailCheckRqmtDate` | `ProductAvailCheckRqmtDate` |
-| `ProdAvailabilityCheckRqmtType` | `ProdAvailabilityCheckRqmtType` |
-| `ProdAvailyCheckPlanningType` | `ProdAvailyCheckPlanningType` |
-| `ScheduleLineConfirmationStatus` | `ScheduleLineConfirmationStatus` |
-| `PlannedOrder` | `PlannedOrder` |
-| `OrderID` | `SalesDocumentScheduleLine.OrderID` |
-| `SchedulingAgreementReleaseType` | `SchedulingAgreementReleaseType` |
-| `ScheduleLineByForecastDelivery` | `ScheduleLineByForecastDelivery` |
-| `OrderSchedulingGroup` | `OrderSchedulingGroup` |
-| `DeliveryDate` | `DeliveryDate` |
-| `SalesDelivDateCategory` | `cast(DelivDateCategory as sd_schedg_agrmt_deliv_dte_type preserving type )` |
-| `CustEngineeringChgStatus` | `CustEngineeringChgStatus` |
-| `DeliveryCreationDate` | `DeliveryCreationDate` |
-| `TransportationPlanningDate` | `TransportationPlanningDate` |
-| `TransportationPlanningTime` | `TransportationPlanningTime` |
-| `GoodsIssueDate` | `GoodsIssueDate` |
-| `LoadingDate` | `LoadingDate` |
-| `GoodsIssueTime` | `GoodsIssueTime` |
-| `LoadingTime` | `LoadingTime` |
-| `ItemIsDeliveryRelevant` | `ItemIsDeliveryRelevant` |
-| `DelivBlockReasonForSchedLine` | `DelivBlockReasonForSchedLine` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `OpenDeliveryNetAmount` | `OpenDeliveryNetAmount` |
-| `TransactionCurrency` | `SalesDocumentScheduleLine.TransactionCurrency` |
-| `_TransactionCurrency` | `SalesDocumentScheduleLine._TransactionCurrency` |
-| `_SalesSchedgAgrmt` | *Association* |
-| `_SalesSchedgAgrmtItem` | *Association* |
-| `_SalesSchedgAgrmtDelivSched` | *Association* |
-| `_SalesDelivDateCategory` | *Association* |
-| `_ScheduleLineCategory` | *Association* |
-| `_ProdAvailabilityCheckRqmtType` | *Association* |
-| `_ScheduleLineConfStatus` | *Association* |
-| `_OrderID` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_DelivBlockReasonForSchedLine` | *Association* |
-| `_GoodsMovementType` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_SalesDocumentItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  | `cast(SalesDocumentScheduleLine.SalesDocument as vdm_sales_schedg_agrmt preserving type )` |
+| `SalesSchedulingAgreementItem` | ✓ | |  | `cast(SalesDocumentItem as vdm_sales_schedg_agrmt_item preserving type )` |
+| `ScheduleLine` | ✓ | |  |  |
+| `ScheduleLineCategory` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OrderToBaseQuantityDnmntr` |  | |  |  |
+| `OrderToBaseQuantityNmrtr` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `IsRequestedDelivSchedLine` |  | |  | `cast(IsRequestedDelivSchedLine as reqd_deliv)` |
+| `RequestedDeliveryDate` |  | |  | `cast(SalesDocumentScheduleLine.RequestedDeliveryDate as reqd_deliv_date)` |
+| `RequestedDeliveryTime` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `CorrectedQtyInOrderQtyUnit` |  | |  |  |
+| `IsConfirmedDelivSchedLine` |  | |  | `cast(IsConfirmedDelivSchedLine as confd_deliv)` |
+| `ConfirmedDeliveryDate` |  | |  | `cast(ConfirmedDeliveryDate as confd_deliv_date)` |
+| `ConfirmedDeliveryTime` |  | |  |  |
+| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |
+| `ConfdSchedLineReqdDelivDate` |  | |  |  |
+| `OpenConfdDelivQtyInBaseUnit` |  | |  |  |
+| `ProductAvailabilityDate` |  | |  |  |
+| `ProductAvailabilityTime` |  | |  |  |
+| `ProductAvailCheckRqmtDate` |  | |  |  |
+| `ProdAvailabilityCheckRqmtType` |  | |  |  |
+| `ProdAvailyCheckPlanningType` |  | |  |  |
+| `ScheduleLineConfirmationStatus` |  | |  |  |
+| `PlannedOrder` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `SchedulingAgreementReleaseType` |  | |  |  |
+| `ScheduleLineByForecastDelivery` |  | |  |  |
+| `OrderSchedulingGroup` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `SalesDelivDateCategory` |  | |  | `cast(DelivDateCategory as sd_schedg_agrmt_deliv_dte_type preserving type )` |
+| `CustEngineeringChgStatus` |  | |  |  |
+| `DeliveryCreationDate` |  | |  |  |
+| `TransportationPlanningDate` |  | |  |  |
+| `TransportationPlanningTime` |  | |  |  |
+| `GoodsIssueDate` |  | |  |  |
+| `LoadingDate` |  | |  |  |
+| `GoodsIssueTime` |  | |  |  |
+| `LoadingTime` |  | |  |  |
+| `ItemIsDeliveryRelevant` |  | |  |  |
+| `DelivBlockReasonForSchedLine` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `OpenDeliveryNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `_TransactionCurrency` |  | |  |  |
+| `_SalesSchedgAgrmt` | | ✓ | | |
+| `_SalesSchedgAgrmtItem` | | ✓ | | |
+| `_SalesSchedgAgrmtDelivSched` | | ✓ | | |
+| `_SalesDelivDateCategory` | | ✓ | | |
+| `_ScheduleLineCategory` | | ✓ | | |
+| `_ProdAvailabilityCheckRqmtType` | | ✓ | | |
+| `_ScheduleLineConfStatus` | | ✓ | | |
+| `_OrderID` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_DelivBlockReasonForSchedLine` | | ✓ | | |
+| `_GoodsMovementType` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_SalesDocumentItem` | | ✓ | | |
 
 ## Associations
 

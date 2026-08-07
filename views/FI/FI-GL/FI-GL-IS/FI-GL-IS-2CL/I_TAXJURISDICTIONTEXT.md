@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaxJurisdictionCalcProcedure` | `kalsm` |
-| key `TaxJurisdiction` | `cast( txjcd as fis_txjcd )` |
-| key `Language` | `spras` |
-| `TaxJurisdictionName` | `text1` |
-| `_Language` | *Association* |
-| `_TaxJurisCalcProcedure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaxJurisdictionCalcProcedure` | ✓ | |  | `kalsm` |
+| `TaxJurisdiction` | ✓ | |  | `cast( txjcd as fis_txjcd )` |
+| `Language` | ✓ | |  | `spras` |
+| `TaxJurisdictionName` |  | |  | `text1` |
+| `_Language` | | ✓ | | |
+| `_TaxJurisCalcProcedure` | | ✓ | | |
 
 ## Associations
 

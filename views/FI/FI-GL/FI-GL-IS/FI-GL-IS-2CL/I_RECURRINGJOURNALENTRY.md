@@ -30,35 +30,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RecrrgAcctgDocCompanyCode` | `bukrs` |
-| key `RecurringJournalEntry` | `belnr` |
-| key `RecrrgJournalEntryFiscalYear` | `gjahr` |
-| `RecurrenceFrequencyType` | `dbmon` |
-| `RecurrenceRunDayOfMonth` | `dbtag` |
-| `RecurrenceStartDate` | `dbbdt` |
-| `RecurrenceNextCalculationDate` | `dbatr` |
-| `RecurrenceEndDate` | `dbedt` |
-| `RecrrgJournalEntryIsCompleted` | `xdelt` |
-| `NumberOfCompletedRecurrences` | `dbzhl` |
-| `RecurrenceSchedule` | `dbakz` |
-| `AmountInNonTransCrcyIsTrnsfd` | `xfwhw` |
-| `TaxAmtInNonTransCrcyIsTrnsfd` | `xsfhw` |
-| `RecrrgJournalEntryTextIsTrnsfd` | `xbllt` |
-| `RecurrenceType` | `recurrence_type` |
-| `RecurrenceFrequency` | `frequency` |
-| `OccurrenceType` | `occur_day_type` |
-| `OccurrenceDayByRecurrenceType` | `occur_day` |
-| `FirstOccurrenceDate` | `first_occur_date` |
-| `RecurrenceEndType` | `end_by_type` |
-| `LastOccurrenceDate` | `last_occur_date` |
-| `NumberOfRecurrences` | `number_of_occur` |
-| `PostingIsBlocked` | `blocked_for_posting` |
-| `RecurrenceScheduleIsUsed` | `recur_schedule_used` |
-| `ApplicationLog` | `lognumber` |
-| `_CompanyCode` | *Association* |
-| `_RecurrenceRunSchedule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RecrrgAcctgDocCompanyCode` | ✓ | |  | `bukrs` |
+| `RecurringJournalEntry` | ✓ | |  | `belnr` |
+| `RecrrgJournalEntryFiscalYear` | ✓ | |  | `gjahr` |
+| `RecurrenceFrequencyType` |  | |  | `dbmon` |
+| `RecurrenceRunDayOfMonth` |  | |  | `dbtag` |
+| `RecurrenceStartDate` |  | |  | `dbbdt` |
+| `RecurrenceNextCalculationDate` |  | |  | `dbatr` |
+| `RecurrenceEndDate` |  | |  | `dbedt` |
+| `RecrrgJournalEntryIsCompleted` |  | |  | `xdelt` |
+| `NumberOfCompletedRecurrences` |  | |  | `dbzhl` |
+| `RecurrenceSchedule` |  | |  | `dbakz` |
+| `AmountInNonTransCrcyIsTrnsfd` |  | |  | `xfwhw` |
+| `TaxAmtInNonTransCrcyIsTrnsfd` |  | |  | `xsfhw` |
+| `RecrrgJournalEntryTextIsTrnsfd` |  | |  | `xbllt` |
+| `RecurrenceType` |  | |  | `recurrence_type` |
+| `RecurrenceFrequency` |  | |  | `frequency` |
+| `OccurrenceType` |  | |  | `occur_day_type` |
+| `OccurrenceDayByRecurrenceType` |  | |  | `occur_day` |
+| `FirstOccurrenceDate` |  | |  | `first_occur_date` |
+| `RecurrenceEndType` |  | |  | `end_by_type` |
+| `LastOccurrenceDate` |  | |  | `last_occur_date` |
+| `NumberOfRecurrences` |  | |  | `number_of_occur` |
+| `PostingIsBlocked` |  | |  | `blocked_for_posting` |
+| `RecurrenceScheduleIsUsed` |  | |  | `recur_schedule_used` |
+| `ApplicationLog` |  | |  | `lognumber` |
+| `_CompanyCode` | | ✓ | | |
+| `_RecurrenceRunSchedule` | | ✓ | | |
 
 ## Associations
 

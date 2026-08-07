@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmt` |
-| key `JointVentureSequenceNumber` | `JointVentureSequenceNumber` |
-| key `JointVentureWBSElementExtID` | `JointVentureWBSElementExtID` |
-| key `JntVntrProjLvlSteppedRateOvhd` | `JntVntrProjLvlSteppedRateOvhd` |
-| `JointVentureOvrrdeExclusionSet` | `JointVentureOvrrdeExclusionSet` |
-| `JntVntrStepRateOvhdOvrrdePct` | `JntVntrStepRateOvhdOvrrdePct` |
-| `JntVntrOvrrdeStepRateOvhdRule` | `JntVntrOvrrdeStepRateOvhdRule` |
-| `JntVntrWBSElementIsExcluded` | `JntVntrWBSElementIsExcluded` |
-| `_CompanyCode` | *Association* |
-| `_JntVntrSteppedRateOvhdType` | *Association* |
-| `_JntVntrSteppedRateOvhdRule` | *Association* |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JointVentureSequenceNumber` | ✓ | |  |  |
+| `JointVentureWBSElementExtID` | ✓ | |  |  |
+| `JntVntrProjLvlSteppedRateOvhd` | ✓ | |  |  |
+| `JointVentureOvrrdeExclusionSet` |  | |  |  |
+| `JntVntrStepRateOvhdOvrrdePct` |  | |  |  |
+| `JntVntrOvrrdeStepRateOvhdRule` |  | |  |  |
+| `JntVntrWBSElementIsExcluded` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_JntVntrSteppedRateOvhdType` | | ✓ | | |
+| `_JntVntrSteppedRateOvhdRule` | | ✓ | | |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Source Code
 

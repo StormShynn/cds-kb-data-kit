@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `edoc_guid` |
-| `KR_EDocSelfBillApprovalNo` | `apprvl_no` |
-| `KR_EDocSelfBillBizPlaceHead` | `busplc_hq` |
-| `KR_EDocSelfBillReceiptBilling` | `rcpt_billg` |
-| `KR_EDocSelfBillCustomer` | `customer` |
-| `KR_EDocSelfBillBusinessPlace` | `bupla` |
-| `KR_EDocSelfBillTaxCode` | `tax_code` |
-| `KR_EDocSelfBillSubmissionID` | `ref_submit_id` |
-| `KR_EDocSelfBillTaxInvoiceType` | `tax_invoice_type` |
-| `KR_EDocSelfBillSalesOrg` | `vkorg` |
-| `KR_EDocSelfBillDistrChannel` | `vtweg` |
-| `KR_EDocSelfBillCustClassfctn` | `klabc` |
-| `KR_EDocSelfBillCustomerName` | `cust_name` |
-| `KR_EDocSelfBillTaxBaseValue` | `tax_base_amt` |
-| `KR_EDocSelfBillTaxValue` | `tax_amount` |
-| `KR_EDocSelfBillAmountValue` | `amount` |
-| `KR_EDocSelfBillCurrency` | `waers` |
-| `KR_EDocSelfBillTransitionDate` | `transition_date` |
-| `KR_EDocSelfBillSourceKey` | `source_key` |
-| `KR_EDocSelfBillStatusReasonTxt` | `status_reason` |
-| `KR_EDocSelfBillAmendReason` | `amendmt_reason` |
-| `KR_EDocSelfBillOriglApprvlNo` | `origl_apprvl_no` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |
+| `KR_EDocSelfBillApprovalNo` |  | |  | `apprvl_no` |
+| `KR_EDocSelfBillBizPlaceHead` |  | |  | `busplc_hq` |
+| `KR_EDocSelfBillReceiptBilling` |  | |  | `rcpt_billg` |
+| `KR_EDocSelfBillCustomer` |  | |  | `customer` |
+| `KR_EDocSelfBillBusinessPlace` |  | |  | `bupla` |
+| `KR_EDocSelfBillTaxCode` |  | |  | `tax_code` |
+| `KR_EDocSelfBillSubmissionID` |  | |  | `ref_submit_id` |
+| `KR_EDocSelfBillTaxInvoiceType` |  | |  | `tax_invoice_type` |
+| `KR_EDocSelfBillSalesOrg` |  | |  | `vkorg` |
+| `KR_EDocSelfBillDistrChannel` |  | |  | `vtweg` |
+| `KR_EDocSelfBillCustClassfctn` |  | |  | `klabc` |
+| `KR_EDocSelfBillCustomerName` |  | |  | `cust_name` |
+| `KR_EDocSelfBillTaxBaseValue` |  | |  | `tax_base_amt` |
+| `KR_EDocSelfBillTaxValue` |  | |  | `tax_amount` |
+| `KR_EDocSelfBillAmountValue` |  | |  | `amount` |
+| `KR_EDocSelfBillCurrency` |  | |  | `waers` |
+| `KR_EDocSelfBillTransitionDate` |  | |  | `transition_date` |
+| `KR_EDocSelfBillSourceKey` |  | |  | `source_key` |
+| `KR_EDocSelfBillStatusReasonTxt` |  | |  | `status_reason` |
+| `KR_EDocSelfBillAmendReason` |  | |  | `amendmt_reason` |
+| `KR_EDocSelfBillOriglApprvlNo` |  | |  | `origl_apprvl_no` |
 
 ## Source Code
 

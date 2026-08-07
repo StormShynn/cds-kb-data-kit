@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumber` | `ChangeNumber` |
-| key `SAPObjectType` | `SAPObjectType` |
-| key `SAPObjectTechnicalID` | `SAPObjectTechnicalID` |
-| `SAPObjectReadableID` | `SAPObjectReadableID` |
-| `ObjMgmtRecdObject` | `ObjMgmtRecdObject` |
-| `ChgNmbrAlternativeDateID` | `ChgNmbrAlternativeDateID` |
-| `ObjMgmtRecdDescription` | `ObjMgmtRecdDescription` |
-| `ObjMgmtRecdItemUUID` | `ObjMgmtRecdItemUUID` |
-| `ObjMgmtRecdLastChangedAt` | `ObjMgmtRecdLastChangedAt` |
-| `ObjMgmtRecdLastChangedBy` | `ObjMgmtRecdLastChangedBy` |
-| `ObjMgmtRecdCreationDate` | `ObjMgmtRecdCreationDate` |
-| `ObjMgmtRecdCreatedBy` | `ObjMgmtRecdCreatedBy` |
-| `ObjMgmtRecdObjLastChangedAt` | `ObjMgmtRecdObjLastChangedAt` |
-| `ObjMgmtRecdObjLastChangedBy` | `ObjMgmtRecdObjLastChangedBy` |
-| `ObjMgmtRecdObjIsLockedForChg` | `ObjMgmtRecdObjIsLockedForChg` |
-| `ObjMgmtRecdObjIsBaselined` | `ObjMgmtRecdObjIsBaselined` |
-| `ObjMgmtRecdObjIsPlanned` | `ObjMgmtRecdObjIsPlanned` |
-| `ObjMgmtRecdObjRevisionLevel` | `ObjMgmtRecdObjRevisionLevel` |
-| `ChangeNumberObjectType` | `ChangeNumberObjectType` |
-| `ChgNmbrAlternativeDateCounter` | `ChgNmbrAlternativeDateCounter` |
-| `ChangeNumberLastChgdDateTime` | `ChangeNumberLastChgdDateTime` |
-| `_ChangeMaster` | *Association* |
-| `_ChangeMasterAltDate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |
+| `SAPObjectType` | ✓ | |  |  |
+| `SAPObjectTechnicalID` | ✓ | |  |  |
+| `SAPObjectReadableID` |  | |  |  |
+| `ObjMgmtRecdObject` |  | |  |  |
+| `ChgNmbrAlternativeDateID` |  | |  |  |
+| `ObjMgmtRecdDescription` |  | |  |  |
+| `ObjMgmtRecdItemUUID` |  | |  |  |
+| `ObjMgmtRecdLastChangedAt` |  | |  |  |
+| `ObjMgmtRecdLastChangedBy` |  | |  |  |
+| `ObjMgmtRecdCreationDate` |  | |  |  |
+| `ObjMgmtRecdCreatedBy` |  | |  |  |
+| `ObjMgmtRecdObjLastChangedAt` |  | |  |  |
+| `ObjMgmtRecdObjLastChangedBy` |  | |  |  |
+| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  |
+| `ObjMgmtRecdObjIsBaselined` |  | |  |  |
+| `ObjMgmtRecdObjIsPlanned` |  | |  |  |
+| `ObjMgmtRecdObjRevisionLevel` |  | |  |  |
+| `ChangeNumberObjectType` |  | |  |  |
+| `ChgNmbrAlternativeDateCounter` |  | |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |
+| `_ChangeMaster` | | ✓ | | |
+| `_ChangeMasterAltDate` | | ✓ | | |
 
 ## Source Code
 

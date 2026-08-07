@@ -31,192 +31,192 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderInternalID` | `OrderInternalID` |
-| key `OrderOperationInternalID` | `OrderOperationInternalID` |
-| `ProductionOrder` | `ProductionOrder` |
-| `ProductionOrderSequence` | `ProductionOrderSequence` |
-| `ProductionOrderOperation` | `ProductionOrderOperation` |
-| `ProductionOrderSubOperation` | `ProductionOrderSubOperation` |
-| `OperationText` | `OperationText` |
-| `OperationStandardTextCode` | `OperationStandardTextCode` |
-| `Plant` | `Plant` |
-| `WorkCenter` | `WorkCenter` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `OperationConfirmation` | `OperationConfirmation` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ObjectInternalID` | `ObjectInternalID` |
-| `Reservation` | `Reservation` |
-| `NumberOfConfirmationSlips` | `NumberOfConfirmationSlips` |
-| `EmployeeWageType` | `EmployeeWageType` |
-| `EmployeeWageGroup` | `EmployeeWageGroup` |
-| `EmployeeSuitability` | `EmployeeSuitability` |
-| `NumberOfTimeTickets` | `NumberOfTimeTickets` |
-| `NumberOfEmployees` | `NumberOfEmployees` |
-| `OperationSetupGroupCategory` | `OperationSetupGroupCategory` |
-| `OperationSetupGroup` | `OperationSetupGroup` |
-| `OperationSetupType` | `OperationSetupType` |
-| `LeadTimeReductionStrategy` | `LeadTimeReductionStrategy` |
-| `OpSchedldReductionLevel` | `OpSchedldReductionLevel` |
-| `BillOfOperationsType` | `BillOfOperationsType` |
-| `BillOfOperationsGroup` | `BillOfOperationsGroup` |
-| `BillOfOperationsVariant` | `BillOfOperationsVariant` |
-| `BillOfOperationsSequence` | `BillOfOperationsSequence` |
-| `BOOOperationInternalID` | `BOOOperationInternalID` |
-| `NumberOfOperationConfirmations` | `NumberOfOperationConfirmations` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `CapacityRequirement` | `CapacityRequirement` |
-| `CapacityRequirementItem` | `CapacityRequirementItem` |
-| `ExtProcgOperationHasSubcontrg` | `ExtProcgOperationHasSubcontrg` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `PurchaseOutlineAgreement` | `PurchaseOutlineAgreement` |
-| `PurchaseOutlineAgreementItem` | `PurchaseOutlineAgreementItem` |
-| `PurgInfoRecNonStockItmSortTerm` | `PurgInfoRecNonStockItmSortTerm` |
-| `Supplier` | `Supplier` |
-| `PurchaseRequisitionPlndDlvDurn` | `PurchaseRequisitionPlndDlvDurn` |
-| `CostElement` | `CostElement` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `NumberOfOperationPriceUnits` | `NumberOfOperationPriceUnits` |
-| `OpExternalProcessingCurrency` | `OpExternalProcessingCurrency` |
-| `OpExternalProcessingPrice` | `OpExternalProcessingPrice` |
-| `MaterialGroup` | `MaterialGroup` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `InspectionLotType` | `InspectionLotType` |
-| `OpErlstSchedldExecStrtDte` | `OpErlstSchedldExecStrtDte` |
-| `OpErlstSchedldExecStrtTme` | `OpErlstSchedldExecStrtTme` |
-| `OpErlstSchedldProcgStrtDte` | `OpErlstSchedldProcgStrtDte` |
-| `OpErlstSchedldProcgStrtTme` | `OpErlstSchedldProcgStrtTme` |
-| `OpErlstSchedldTrdwnStrtDte` | `OpErlstSchedldTrdwnStrtDte` |
-| `OpErlstSchedldTrdwnStrtTme` | `OpErlstSchedldTrdwnStrtTme` |
-| `OpErlstSchedldExecEndDte` | `OpErlstSchedldExecEndDte` |
-| `OpErlstSchedldExecEndTme` | `OpErlstSchedldExecEndTme` |
-| `OpLtstSchedldExecStrtDte` | `OpLtstSchedldExecStrtDte` |
-| `OpLtstSchedldExecStrtTme` | `OpLtstSchedldExecStrtTme` |
-| `OpLtstSchedldProcgStrtDte` | `OpLtstSchedldProcgStrtDte` |
-| `OpLtstSchedldProcgStrtTme` | `OpLtstSchedldProcgStrtTme` |
-| `OpLtstSchedldTrdwnStrtDte` | `OpLtstSchedldTrdwnStrtDte` |
-| `OpLtstSchedldTrdwnStrtTme` | `OpLtstSchedldTrdwnStrtTme` |
-| `OpLtstSchedldExecEndDte` | `OpLtstSchedldExecEndDte` |
-| `OpLtstSchedldExecEndTme` | `OpLtstSchedldExecEndTme` |
-| `SchedldFcstdLatestStartTime` | `SchedldFcstdLatestStartTime` |
-| `OperationConfirmedStartDate` | `OperationConfirmedStartDate` |
-| `OperationConfirmedEndDate` | `OperationConfirmedEndDate` |
-| `OpActualExecutionStartDate` | `OpActualExecutionStartDate` |
-| `OpActualExecutionStartTime` | `OpActualExecutionStartTime` |
-| `OpActualSetupEndDate` | `OpActualSetupEndDate` |
-| `OpActualSetupEndTime` | `OpActualSetupEndTime` |
-| `OpActualProcessingStartDate` | `OpActualProcessingStartDate` |
-| `OpActualProcessingStartTime` | `OpActualProcessingStartTime` |
-| `OpActualProcessingEndDate` | `OpActualProcessingEndDate` |
-| `OpActualProcessingEndTime` | `OpActualProcessingEndTime` |
-| `OpActualTeardownStartDate` | `OpActualTeardownStartDate` |
-| `OpActualTeardownStartTme` | `OpActualTeardownStartTme` |
-| `OpActualExecutionEndDate` | `OpActualExecutionEndDate` |
-| `OpActualExecutionEndTime` | `OpActualExecutionEndTime` |
-| `ActualForecastEndDate` | `ActualForecastEndDate` |
-| `ActualForecastEndTime` | `ActualForecastEndTime` |
-| `EarliestScheduledWaitStartDate` | `EarliestScheduledWaitStartDate` |
-| `EarliestScheduledWaitStartTime` | `EarliestScheduledWaitStartTime` |
-| `EarliestScheduledWaitEndDate` | `EarliestScheduledWaitEndDate` |
-| `EarliestScheduledWaitEndTime` | `EarliestScheduledWaitEndTime` |
-| `LatestScheduledWaitStartDate` | `LatestScheduledWaitStartDate` |
-| `LatestScheduledWaitStartTime` | `LatestScheduledWaitStartTime` |
-| `LatestScheduledWaitEndDate` | `LatestScheduledWaitEndDate` |
-| `LatestScheduledWaitEndTime` | `LatestScheduledWaitEndTime` |
-| `BreakDurationUnit` | `BreakDurationUnit` |
-| `PlannedBreakDuration` | `PlannedBreakDuration` |
-| `MaximumWaitDurationUnit` | `MaximumWaitDurationUnit` |
-| `MaximumWaitDuration` | `MaximumWaitDuration` |
-| `MinimumWaitDurationUnit` | `MinimumWaitDurationUnit` |
-| `MinimumWaitDuration` | `MinimumWaitDuration` |
-| `StandardMoveDurationUnit` | `StandardMoveDurationUnit` |
-| `StandardMoveDuration` | `StandardMoveDuration` |
-| `StandardQueueDurationUnit` | `StandardQueueDurationUnit` |
-| `StandardQueueDuration` | `StandardQueueDuration` |
-| `MinimumQueueDurationUnit` | `MinimumQueueDurationUnit` |
-| `MinimumQueueDuration` | `MinimumQueueDuration` |
-| `MinimumMoveDurationUnit` | `MinimumMoveDurationUnit` |
-| `MinimumMoveDuration` | `MinimumMoveDuration` |
-| `ScheduledMoveDuration` | `ScheduledMoveDuration` |
-| `ScheduledMoveDurationUnit` | `ScheduledMoveDurationUnit` |
-| `ScheduledQueueDuration` | `ScheduledQueueDuration` |
-| `ScheduledQueueDurationUnit` | `ScheduledQueueDurationUnit` |
-| `ScheduledWaitDuration` | `ScheduledWaitDuration` |
-| `ScheduledWaitDurationUnit` | `ScheduledWaitDurationUnit` |
-| `OpPlannedSetupDurn` | `OpPlannedSetupDurn` |
-| `OpPlannedSetupDurnUnit` | `OpPlannedSetupDurnUnit` |
-| `OpPlannedProcessingDurn` | `OpPlannedProcessingDurn` |
-| `OpPlannedProcessingDurnUnit` | `OpPlannedProcessingDurnUnit` |
-| `OpPlannedTeardownDurn` | `OpPlannedTeardownDurn` |
-| `OpPlannedTeardownDurnUnit` | `OpPlannedTeardownDurnUnit` |
-| `StartDateOffsetReferenceCode` | `StartDateOffsetReferenceCode` |
-| `StartDateOffsetDurationUnit` | `StartDateOffsetDurationUnit` |
-| `StartDateOffsetDuration` | `StartDateOffsetDuration` |
-| `EndDateOffsetReferenceCode` | `EndDateOffsetReferenceCode` |
-| `EndDateOffsetDurationUnit` | `EndDateOffsetDurationUnit` |
-| `EndDateOffsetDuration` | `EndDateOffsetDuration` |
-| `OperationUnit` | `OperationUnit` |
-| `OpQtyToBaseQtyDnmntr` | `OpQtyToBaseQtyDnmntr` |
-| `OpQtyToBaseQtyNmrtr` | `OpQtyToBaseQtyNmrtr` |
-| `OperationScrapPercent` | `OperationScrapPercent` |
-| `OperationReferenceQuantity` | `OperationReferenceQuantity` |
-| `OpPlannedTotalQuantity` | `OpPlannedTotalQuantity` |
-| `OpPlannedScrapQuantity` | `OpPlannedScrapQuantity` |
-| `OpTotalConfirmedYieldQty` | `OpTotalConfirmedYieldQty` |
-| `OpTotalConfirmedScrapQty` | `OpTotalConfirmedScrapQty` |
-| `OperationConfirmedReworkQty` | `OperationConfirmedReworkQty` |
-| `OpWorkQuantityUnit1` | `OpWorkQuantityUnit1` |
-| `OpWorkQuantityUnit2` | `OpWorkQuantityUnit2` |
-| `OpWorkQuantityUnit3` | `OpWorkQuantityUnit3` |
-| `OpWorkQuantityUnit4` | `OpWorkQuantityUnit4` |
-| `OpWorkQuantityUnit5` | `OpWorkQuantityUnit5` |
-| `OpWorkQuantityUnit6` | `OpWorkQuantityUnit6` |
-| `WorkCenterStandardWorkQtyUnit1` | `WorkCenterStandardWorkQtyUnit1` |
-| `WorkCenterStandardWorkQty1` | `WorkCenterStandardWorkQty1` |
-| `CostCtrActivityType1` | `CostCtrActivityType1` |
-| `WorkCenterStandardWorkQtyUnit2` | `WorkCenterStandardWorkQtyUnit2` |
-| `WorkCenterStandardWorkQty2` | `WorkCenterStandardWorkQty2` |
-| `CostCtrActivityType2` | `CostCtrActivityType2` |
-| `WorkCenterStandardWorkQtyUnit3` | `WorkCenterStandardWorkQtyUnit3` |
-| `WorkCenterStandardWorkQty3` | `WorkCenterStandardWorkQty3` |
-| `CostCtrActivityType3` | `CostCtrActivityType3` |
-| `WorkCenterStandardWorkQtyUnit4` | `WorkCenterStandardWorkQtyUnit4` |
-| `WorkCenterStandardWorkQty4` | `WorkCenterStandardWorkQty4` |
-| `CostCtrActivityType4` | `CostCtrActivityType4` |
-| `WorkCenterStandardWorkQtyUnit5` | `WorkCenterStandardWorkQtyUnit5` |
-| `WorkCenterStandardWorkQty5` | `WorkCenterStandardWorkQty5` |
-| `CostCtrActivityType5` | `CostCtrActivityType5` |
-| `WorkCenterStandardWorkQtyUnit6` | `WorkCenterStandardWorkQtyUnit6` |
-| `WorkCenterStandardWorkQty6` | `WorkCenterStandardWorkQty6` |
-| `CostCtrActivityType6` | `CostCtrActivityType6` |
-| `StandardWorkQtyDetnType` | `StandardWorkQtyDetnType` |
-| `StandardWorkQtyDetnYear` | `StandardWorkQtyDetnYear` |
-| `StandardWorkQuantityCalcBasis` | `StandardWorkQuantityCalcBasis` |
-| `StandardWorkQuantityReference` | `StandardWorkQuantityReference` |
-| `OperationSplitIsRequired` | `OperationSplitIsRequired` |
-| `MaximumNumberOfSplits` | `MaximumNumberOfSplits` |
-| `ActualNumberOfSplits` | `ActualNumberOfSplits` |
-| `MinProcessingDurationPerSplit` | `MinProcessingDurationPerSplit` |
-| `MinProcessingDurnPerSplitUnit` | `MinProcessingDurnPerSplitUnit` |
-| `OverlapMinimumDuration` | `OverlapMinimumDuration` |
-| `OverlapMinimumDurationUnit` | `OverlapMinimumDurationUnit` |
-| `OverlapMinimumTransferQty` | `OverlapMinimumTransferQty` |
-| `BusinessProcess` | `BusinessProcess` |
-| `BusinessProcessEntryUnit` | `BusinessProcessEntryUnit` |
-| `BusinessProcessConfirmedQty` | `BusinessProcessConfirmedQty` |
-| `NoFurtherBusinessProcQtyIsExpd` | `NoFurtherBusinessProcQtyIsExpd` |
-| `_OperationCapacity` | *Association* |
-| `_Sequence` | *Association* |
-| `_ProductionOrder` | *Association* |
-| `_OperationComponent` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderInternalID` | ✓ | |  |  |
+| `OrderOperationInternalID` | ✓ | |  |  |
+| `ProductionOrder` |  | |  |  |
+| `ProductionOrderSequence` |  | |  |  |
+| `ProductionOrderOperation` |  | |  |  |
+| `ProductionOrderSubOperation` |  | |  |  |
+| `OperationText` |  | |  |  |
+| `OperationStandardTextCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `OperationConfirmation` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `EmployeeSuitability` |  | |  |  |
+| `NumberOfTimeTickets` |  | |  |  |
+| `NumberOfEmployees` |  | |  |  |
+| `OperationSetupGroupCategory` |  | |  |  |
+| `OperationSetupGroup` |  | |  |  |
+| `OperationSetupType` |  | |  |  |
+| `LeadTimeReductionStrategy` |  | |  |  |
+| `OpSchedldReductionLevel` |  | |  |  |
+| `BillOfOperationsType` |  | |  |  |
+| `BillOfOperationsGroup` |  | |  |  |
+| `BillOfOperationsVariant` |  | |  |  |
+| `BillOfOperationsSequence` |  | |  |  |
+| `BOOOperationInternalID` |  | |  |  |
+| `NumberOfOperationConfirmations` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `CapacityRequirement` |  | |  |  |
+| `CapacityRequirementItem` |  | |  |  |
+| `ExtProcgOperationHasSubcontrg` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurchaseOutlineAgreement` |  | |  |  |
+| `PurchaseOutlineAgreementItem` |  | |  |  |
+| `PurgInfoRecNonStockItmSortTerm` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PurchaseRequisitionPlndDlvDurn` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `NumberOfOperationPriceUnits` |  | |  |  |
+| `OpExternalProcessingCurrency` |  | |  |  |
+| `OpExternalProcessingPrice` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `InspectionLotType` |  | |  |  |
+| `OpErlstSchedldExecStrtDte` |  | |  |  |
+| `OpErlstSchedldExecStrtTme` |  | |  |  |
+| `OpErlstSchedldProcgStrtDte` |  | |  |  |
+| `OpErlstSchedldProcgStrtTme` |  | |  |  |
+| `OpErlstSchedldTrdwnStrtDte` |  | |  |  |
+| `OpErlstSchedldTrdwnStrtTme` |  | |  |  |
+| `OpErlstSchedldExecEndDte` |  | |  |  |
+| `OpErlstSchedldExecEndTme` |  | |  |  |
+| `OpLtstSchedldExecStrtDte` |  | |  |  |
+| `OpLtstSchedldExecStrtTme` |  | |  |  |
+| `OpLtstSchedldProcgStrtDte` |  | |  |  |
+| `OpLtstSchedldProcgStrtTme` |  | |  |  |
+| `OpLtstSchedldTrdwnStrtDte` |  | |  |  |
+| `OpLtstSchedldTrdwnStrtTme` |  | |  |  |
+| `OpLtstSchedldExecEndDte` |  | |  |  |
+| `OpLtstSchedldExecEndTme` |  | |  |  |
+| `SchedldFcstdLatestStartTime` |  | |  |  |
+| `OperationConfirmedStartDate` |  | |  |  |
+| `OperationConfirmedEndDate` |  | |  |  |
+| `OpActualExecutionStartDate` |  | |  |  |
+| `OpActualExecutionStartTime` |  | |  |  |
+| `OpActualSetupEndDate` |  | |  |  |
+| `OpActualSetupEndTime` |  | |  |  |
+| `OpActualProcessingStartDate` |  | |  |  |
+| `OpActualProcessingStartTime` |  | |  |  |
+| `OpActualProcessingEndDate` |  | |  |  |
+| `OpActualProcessingEndTime` |  | |  |  |
+| `OpActualTeardownStartDate` |  | |  |  |
+| `OpActualTeardownStartTme` |  | |  |  |
+| `OpActualExecutionEndDate` |  | |  |  |
+| `OpActualExecutionEndTime` |  | |  |  |
+| `ActualForecastEndDate` |  | |  |  |
+| `ActualForecastEndTime` |  | |  |  |
+| `EarliestScheduledWaitStartDate` |  | |  |  |
+| `EarliestScheduledWaitStartTime` |  | |  |  |
+| `EarliestScheduledWaitEndDate` |  | |  |  |
+| `EarliestScheduledWaitEndTime` |  | |  |  |
+| `LatestScheduledWaitStartDate` |  | |  |  |
+| `LatestScheduledWaitStartTime` |  | |  |  |
+| `LatestScheduledWaitEndDate` |  | |  |  |
+| `LatestScheduledWaitEndTime` |  | |  |  |
+| `BreakDurationUnit` |  | |  |  |
+| `PlannedBreakDuration` |  | |  |  |
+| `MaximumWaitDurationUnit` |  | |  |  |
+| `MaximumWaitDuration` |  | |  |  |
+| `MinimumWaitDurationUnit` |  | |  |  |
+| `MinimumWaitDuration` |  | |  |  |
+| `StandardMoveDurationUnit` |  | |  |  |
+| `StandardMoveDuration` |  | |  |  |
+| `StandardQueueDurationUnit` |  | |  |  |
+| `StandardQueueDuration` |  | |  |  |
+| `MinimumQueueDurationUnit` |  | |  |  |
+| `MinimumQueueDuration` |  | |  |  |
+| `MinimumMoveDurationUnit` |  | |  |  |
+| `MinimumMoveDuration` |  | |  |  |
+| `ScheduledMoveDuration` |  | |  |  |
+| `ScheduledMoveDurationUnit` |  | |  |  |
+| `ScheduledQueueDuration` |  | |  |  |
+| `ScheduledQueueDurationUnit` |  | |  |  |
+| `ScheduledWaitDuration` |  | |  |  |
+| `ScheduledWaitDurationUnit` |  | |  |  |
+| `OpPlannedSetupDurn` |  | |  |  |
+| `OpPlannedSetupDurnUnit` |  | |  |  |
+| `OpPlannedProcessingDurn` |  | |  |  |
+| `OpPlannedProcessingDurnUnit` |  | |  |  |
+| `OpPlannedTeardownDurn` |  | |  |  |
+| `OpPlannedTeardownDurnUnit` |  | |  |  |
+| `StartDateOffsetReferenceCode` |  | |  |  |
+| `StartDateOffsetDurationUnit` |  | |  |  |
+| `StartDateOffsetDuration` |  | |  |  |
+| `EndDateOffsetReferenceCode` |  | |  |  |
+| `EndDateOffsetDurationUnit` |  | |  |  |
+| `EndDateOffsetDuration` |  | |  |  |
+| `OperationUnit` |  | |  |  |
+| `OpQtyToBaseQtyDnmntr` |  | |  |  |
+| `OpQtyToBaseQtyNmrtr` |  | |  |  |
+| `OperationScrapPercent` |  | |  |  |
+| `OperationReferenceQuantity` |  | |  |  |
+| `OpPlannedTotalQuantity` |  | |  |  |
+| `OpPlannedScrapQuantity` |  | |  |  |
+| `OpTotalConfirmedYieldQty` |  | |  |  |
+| `OpTotalConfirmedScrapQty` |  | |  |  |
+| `OperationConfirmedReworkQty` |  | |  |  |
+| `OpWorkQuantityUnit1` |  | |  |  |
+| `OpWorkQuantityUnit2` |  | |  |  |
+| `OpWorkQuantityUnit3` |  | |  |  |
+| `OpWorkQuantityUnit4` |  | |  |  |
+| `OpWorkQuantityUnit5` |  | |  |  |
+| `OpWorkQuantityUnit6` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit1` |  | |  |  |
+| `WorkCenterStandardWorkQty1` |  | |  |  |
+| `CostCtrActivityType1` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit2` |  | |  |  |
+| `WorkCenterStandardWorkQty2` |  | |  |  |
+| `CostCtrActivityType2` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit3` |  | |  |  |
+| `WorkCenterStandardWorkQty3` |  | |  |  |
+| `CostCtrActivityType3` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit4` |  | |  |  |
+| `WorkCenterStandardWorkQty4` |  | |  |  |
+| `CostCtrActivityType4` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit5` |  | |  |  |
+| `WorkCenterStandardWorkQty5` |  | |  |  |
+| `CostCtrActivityType5` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit6` |  | |  |  |
+| `WorkCenterStandardWorkQty6` |  | |  |  |
+| `CostCtrActivityType6` |  | |  |  |
+| `StandardWorkQtyDetnType` |  | |  |  |
+| `StandardWorkQtyDetnYear` |  | |  |  |
+| `StandardWorkQuantityCalcBasis` |  | |  |  |
+| `StandardWorkQuantityReference` |  | |  |  |
+| `OperationSplitIsRequired` |  | |  |  |
+| `MaximumNumberOfSplits` |  | |  |  |
+| `ActualNumberOfSplits` |  | |  |  |
+| `MinProcessingDurationPerSplit` |  | |  |  |
+| `MinProcessingDurnPerSplitUnit` |  | |  |  |
+| `OverlapMinimumDuration` |  | |  |  |
+| `OverlapMinimumDurationUnit` |  | |  |  |
+| `OverlapMinimumTransferQty` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `BusinessProcessEntryUnit` |  | |  |  |
+| `BusinessProcessConfirmedQty` |  | |  |  |
+| `NoFurtherBusinessProcQtyIsExpd` |  | |  |  |
+| `_OperationCapacity` | | ✓ | | |
+| `_Sequence` | | ✓ | | |
+| `_ProductionOrder` | | ✓ | | |
+| `_OperationComponent` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
 
 ## Source Code
 

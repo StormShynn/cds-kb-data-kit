@@ -30,45 +30,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| key `SourceListRecord` | `SourceListRecord` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUserName` | `CreatedByUserName` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `Supplier` | `Supplier` |
-| `SupplierIsFixed` | `SupplierIsFixed` |
-| `PurchaseOutlineAgreement` | `PurchaseOutlineAgreement` |
-| `PurchaseOutlineAgreementItem` | `PurchaseOutlineAgreementItem` |
-| `PurOutlineAgreementIsFixed` | `PurOutlineAgreementIsFixed` |
-| `SupplyingPlant` | `SupplyingPlant` |
-| `IssgPlantIsFixed` | `IssgPlantIsFixed` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `SourceOfSupplyIsBlocked` | `SourceOfSupplyIsBlocked` |
-| `SourceOfSupplyIsFixed` | `SourceOfSupplyIsFixed` |
-| `SourceListStatus` | `SourceListStatus` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `SourceListRecordCategory` | `SourceListRecordCategory` |
-| `MRPSourcingControl` | `MRPSourcingControl` |
-| `MRPArea` | `MRPArea` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `OriginSystem` | `OriginSystem` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplyingPlant` | *Association* |
-| `_ManufacturerMaterial` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingDocumentCategory` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_PurchaseContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `SourceListRecord` | ✓ | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUserName` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplierIsFixed` |  | |  |  |
+| `PurchaseOutlineAgreement` |  | |  |  |
+| `PurchaseOutlineAgreementItem` |  | |  |  |
+| `PurOutlineAgreementIsFixed` |  | |  |  |
+| `SupplyingPlant` |  | |  |  |
+| `IssgPlantIsFixed` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `SourceOfSupplyIsBlocked` |  | |  |  |
+| `SourceOfSupplyIsFixed` |  | |  |  |
+| `SourceListStatus` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `SourceListRecordCategory` |  | |  |  |
+| `MRPSourcingControl` |  | |  |  |
+| `MRPArea` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `OriginSystem` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplyingPlant` | | ✓ | | |
+| `_ManufacturerMaterial` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingDocumentCategory` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_PurchaseContract` | | ✓ | | |
 
 ## Associations
 

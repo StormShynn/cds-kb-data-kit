@@ -32,52 +32,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlan` | `MaintenancePlan` |
-| `MaintenancePlanDesc` | `MaintenancePlanDesc` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `MaintenanceStrategy` | `MaintenanceStrategy` |
-| `SchedulingDuration` | `SchedulingDuration` |
-| `SchedulingDurationUnit` | `SchedulingDurationUnit` |
-| `NumberOfMaintenanceItems` | `NumberOfMaintenanceItems` |
-| `CycleModificationRatio` | `CycleModificationRatio` |
-| `MaintPlanSchedgIndicator` | `MaintPlanSchedgIndicator` |
-| `MaintenancePlanType` | `MaintenancePlanType` |
-| `CallHorizonPercent` | `CallHorizonPercent` |
-| `CallHorizonInDays` | `CallHorizonInDays` |
-| `MaintenanceCallHorizonCalcType` | `MaintenanceCallHorizonCalcType` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `MaintenancePlanInternalID` | `MaintenancePlanInternalID` |
-| `MaintenanceCall` | `MaintenanceCall` |
-| `MaintenancePlanCategory` | `MaintenancePlanCategory` |
-| `MaintPlanFreeDefinedAttrib` | `MaintPlanFreeDefinedAttrib` |
-| `BasicStartDate` | `BasicStartDate` |
-| `SchedulingStartDate` | `SchedulingStartDate` |
-| `SchedulingStartTime` | `SchedulingStartTime` |
-| `MaintPlanStartCntrReadingValue` | `MaintPlanStartCntrReadingValue` |
-| `MaintPlnStrtBufDurationInDays` | `MaintPlnStrtBufDurationInDays` |
-| `MaintPlanStartBufferUnit` | `MaintPlanStartBufferUnit` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `LateCompletionShiftInPercent` | `LateCompletionShiftInPercent` |
-| `LateCompletionTolerancePercent` | `LateCompletionTolerancePercent` |
-| `EarlyCompletionShiftInPercent` | `EarlyCompletionShiftInPercent` |
-| `EarlyCompletionTolerancePct` | `EarlyCompletionTolerancePct` |
-| `PrdcssrCallObjCompltnIsRqd` | `PrdcssrCallObjCompltnIsRqd` |
-| `MaintPlanLogicalOperatorCode` | `MaintPlanLogicalOperatorCode` |
-| `SchedulingEndDate` | `SchedulingEndDate` |
-| `MaintPlanEndCntrReadingValue` | `MaintPlanEndCntrReadingValue` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `MultipleCounterPlanShiftFactor` | `MultipleCounterPlanShiftFactor` |
-| `MaintenanceLeadFloatInDays` | `MaintenanceLeadFloatInDays` |
-| `MaintenancePlanCallObject` | `MaintenancePlanCallObject` |
-| `SystemStatus` | `SystemStatus` |
-| `_MaintenanceCycle` | *Association* |
-| `_Item` | *Association* |
-| `_LongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlan` | ✓ | |  |  |
+| `MaintenancePlanDesc` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `MaintenanceStrategy` |  | |  |  |
+| `SchedulingDuration` |  | |  |  |
+| `SchedulingDurationUnit` |  | |  |  |
+| `NumberOfMaintenanceItems` |  | |  |  |
+| `CycleModificationRatio` |  | |  |  |
+| `MaintPlanSchedgIndicator` |  | |  |  |
+| `MaintenancePlanType` |  | |  |  |
+| `CallHorizonPercent` |  | |  |  |
+| `CallHorizonInDays` |  | |  |  |
+| `MaintenanceCallHorizonCalcType` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `MaintenancePlanInternalID` |  | |  |  |
+| `MaintenanceCall` |  | |  |  |
+| `MaintenancePlanCategory` |  | |  |  |
+| `MaintPlanFreeDefinedAttrib` |  | |  |  |
+| `BasicStartDate` |  | |  |  |
+| `SchedulingStartDate` |  | |  |  |
+| `SchedulingStartTime` |  | |  |  |
+| `MaintPlanStartCntrReadingValue` |  | |  |  |
+| `MaintPlnStrtBufDurationInDays` |  | |  |  |
+| `MaintPlanStartBufferUnit` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `LateCompletionShiftInPercent` |  | |  |  |
+| `LateCompletionTolerancePercent` |  | |  |  |
+| `EarlyCompletionShiftInPercent` |  | |  |  |
+| `EarlyCompletionTolerancePct` |  | |  |  |
+| `PrdcssrCallObjCompltnIsRqd` |  | |  |  |
+| `MaintPlanLogicalOperatorCode` |  | |  |  |
+| `SchedulingEndDate` |  | |  |  |
+| `MaintPlanEndCntrReadingValue` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `MultipleCounterPlanShiftFactor` |  | |  |  |
+| `MaintenanceLeadFloatInDays` |  | |  |  |
+| `MaintenancePlanCallObject` |  | |  |  |
+| `SystemStatus` |  | |  |  |
+| `_MaintenanceCycle` | | ✓ | | |
+| `_Item` | | ✓ | | |
+| `_LongText` | | ✓ | | |
 
 ## Source Code
 

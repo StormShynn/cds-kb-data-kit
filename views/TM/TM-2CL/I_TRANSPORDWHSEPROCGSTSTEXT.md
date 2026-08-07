@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdWhseProcessingStatus` | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_wh_procg_status preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrdWhseProcgStatusDesc` | `cast(ddtext as /scmtms/vdm_wh_procg_sts_desc preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdWhseProcgStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdWhseProcessingStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_wh_procg_status preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrdWhseProcgStatusDesc` |  | |  | `cast(ddtext as /scmtms/vdm_wh_procg_sts_desc preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdWhseProcgStatus` | | ✓ | | |
 
 ## Associations
 

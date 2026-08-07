@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| key `Person` | `Person` |
-| key `OrdinalNumber` | `OrdinalNumber` |
-| `OrdinalNumberForEdit` | `OrdinalNumberForEdit` |
-| `IsDefaultURLAddress` | `IsDefaultURLAddress` |
-| `SearchURLAddress` | `SearchURLAddress` |
-| `URLFieldLength` | `URLFieldLength` |
-| `WebsiteURL` | `WebsiteURL` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `Person` | ✓ | |  |  |
+| `OrdinalNumber` | ✓ | |  |  |
+| `OrdinalNumberForEdit` |  | |  |  |
+| `IsDefaultURLAddress` |  | |  |  |
+| `SearchURLAddress` |  | |  |  |
+| `URLFieldLength` |  | |  |  |
+| `WebsiteURL` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Source Code
 

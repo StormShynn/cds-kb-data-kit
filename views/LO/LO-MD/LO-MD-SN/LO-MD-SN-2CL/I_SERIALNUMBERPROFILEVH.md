@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SerialNumberProfile` | `SerialNumberProfile` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SerialNumberProfile` | ✓ | |  |  |
 
 ## Source Code
 

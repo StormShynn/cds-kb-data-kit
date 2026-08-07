@@ -27,52 +27,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `MasterFixedAsset` | `MasterFixedAsset` |
-| key `FixedAsset` | `FixedAsset` |
-| key `Ledger` | `Ledger` |
-| key `AssetRealDepreciationArea` | `AssetRealDepreciationArea` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `AcqnProdnCostScrapPercent` | `AcqnProdnCostScrapPercent` |
-| `ScrapAmountInCoCodeCrcy` | `ScrapAmountInCoCodeCrcy` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `ScrapAmountInGlobCrcy` | `ScrapAmountInGlobCrcy` |
-| `GlobalCurrency` | `GlobalCurrency` |
-| `ScrapAmountInFreeDefinedCrcy1` | `ScrapAmountInFreeDefinedCrcy1` |
-| `FreeDefinedCurrency1` | `FreeDefinedCurrency1` |
-| `ScrapAmountInFreeDefinedCrcy2` | `ScrapAmountInFreeDefinedCrcy2` |
-| `FreeDefinedCurrency2` | `FreeDefinedCurrency2` |
-| `ScrapAmountInFreeDefinedCrcy3` | `ScrapAmountInFreeDefinedCrcy3` |
-| `FreeDefinedCurrency3` | `FreeDefinedCurrency3` |
-| `ScrapAmountInFreeDefinedCrcy4` | `ScrapAmountInFreeDefinedCrcy4` |
-| `FreeDefinedCurrency4` | `FreeDefinedCurrency4` |
-| `ScrapAmountInFreeDefinedCrcy5` | `ScrapAmountInFreeDefinedCrcy5` |
-| `FreeDefinedCurrency5` | `FreeDefinedCurrency5` |
-| `ScrapAmountInFreeDefinedCrcy6` | `ScrapAmountInFreeDefinedCrcy6` |
-| `FreeDefinedCurrency6` | `FreeDefinedCurrency6` |
-| `ScrapAmountInFreeDefinedCrcy7` | `ScrapAmountInFreeDefinedCrcy7` |
-| `FreeDefinedCurrency7` | `FreeDefinedCurrency7` |
-| `ScrapAmountInFreeDefinedCrcy8` | `ScrapAmountInFreeDefinedCrcy8` |
-| `FreeDefinedCurrency8` | `FreeDefinedCurrency8` |
-| `_CompanyCode` | *Association* |
-| `_MasterFixedAsset` | *Association* |
-| `_FixedAsset` | *Association* |
-| `_AssetValuationForLedger` | *Association* |
-| `_Ledger` | *Association* |
-| `_DepreciationArea` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_GlobalCurrency` | *Association* |
-| `_FreeDefinedCurrency1` | *Association* |
-| `_FreeDefinedCurrency2` | *Association* |
-| `_FreeDefinedCurrency3` | *Association* |
-| `_FreeDefinedCurrency4` | *Association* |
-| `_FreeDefinedCurrency5` | *Association* |
-| `_FreeDefinedCurrency6` | *Association* |
-| `_FreeDefinedCurrency7` | *Association* |
-| `_FreeDefinedCurrency8` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `MasterFixedAsset` | ✓ | |  |  |
+| `FixedAsset` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `AssetRealDepreciationArea` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `AcqnProdnCostScrapPercent` |  | |  |  |
+| `ScrapAmountInCoCodeCrcy` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `ScrapAmountInGlobCrcy` |  | |  |  |
+| `GlobalCurrency` |  | |  |  |
+| `ScrapAmountInFreeDefinedCrcy1` |  | |  |  |
+| `FreeDefinedCurrency1` |  | |  |  |
+| `ScrapAmountInFreeDefinedCrcy2` |  | |  |  |
+| `FreeDefinedCurrency2` |  | |  |  |
+| `ScrapAmountInFreeDefinedCrcy3` |  | |  |  |
+| `FreeDefinedCurrency3` |  | |  |  |
+| `ScrapAmountInFreeDefinedCrcy4` |  | |  |  |
+| `FreeDefinedCurrency4` |  | |  |  |
+| `ScrapAmountInFreeDefinedCrcy5` |  | |  |  |
+| `FreeDefinedCurrency5` |  | |  |  |
+| `ScrapAmountInFreeDefinedCrcy6` |  | |  |  |
+| `FreeDefinedCurrency6` |  | |  |  |
+| `ScrapAmountInFreeDefinedCrcy7` |  | |  |  |
+| `FreeDefinedCurrency7` |  | |  |  |
+| `ScrapAmountInFreeDefinedCrcy8` |  | |  |  |
+| `FreeDefinedCurrency8` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_MasterFixedAsset` | | ✓ | | |
+| `_FixedAsset` | | ✓ | | |
+| `_AssetValuationForLedger` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
+| `_DepreciationArea` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_GlobalCurrency` | | ✓ | | |
+| `_FreeDefinedCurrency1` | | ✓ | | |
+| `_FreeDefinedCurrency2` | | ✓ | | |
+| `_FreeDefinedCurrency3` | | ✓ | | |
+| `_FreeDefinedCurrency4` | | ✓ | | |
+| `_FreeDefinedCurrency5` | | ✓ | | |
+| `_FreeDefinedCurrency6` | | ✓ | | |
+| `_FreeDefinedCurrency7` | | ✓ | | |
+| `_FreeDefinedCurrency8` | | ✓ | | |
 
 ## Associations
 

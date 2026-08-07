@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceItem` | `MaintenanceItem` |
-| key `Language` | `Language` |
-| `TextObjectKey` | `TextObjectKey` |
-| `TextObjectCategory` | `TextObjectCategory` |
-| `TextObjectType` | `TextObjectType` |
-| `MaintenanceItemLongText` | `MaintenanceItemLongText` |
-| `_Language` | *Association* |
-| `_LongText` | *Association* |
-| `_TextObjectCategory` | *Association* |
-| `_TextObjectType` | *Association* |
-| `_MaintenanceItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `TextObjectKey` |  | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `TextObjectType` |  | |  |  |
+| `MaintenanceItemLongText` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_LongText` | | ✓ | | |
+| `_TextObjectCategory` | | ✓ | | |
+| `_TextObjectType` | | ✓ | | |
+| `_MaintenanceItem` | | ✓ | | |
 
 ## Source Code
 

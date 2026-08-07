@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CaseStatusProfile` | `scmgstatproft.profile_id` |
-| key `Language` | `scmgstatproft.langu` |
-| `CaseStatusProfileName` | `scmgstatproft.stat_prof_descr` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CaseStatusProfile` | ✓ | |  | `profile_id` |
+| `Language` | ✓ | |  | `langu` |
+| `CaseStatusProfileName` |  | |  | `stat_prof_descr` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

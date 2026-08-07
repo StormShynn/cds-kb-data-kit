@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `ProjectDemandType` | `demand_type` |
-| `ProjectDemandTypeName` | `description` |
-| `_Language` | *Association* |
-| `_ProjectDemandType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `ProjectDemandType` | ✓ | |  | `demand_type` |
+| `ProjectDemandTypeName` |  | |  | `description` |
+| `_Language` | | ✓ | | |
+| `_ProjectDemandType` | | ✓ | | |
 
 ## Associations
 

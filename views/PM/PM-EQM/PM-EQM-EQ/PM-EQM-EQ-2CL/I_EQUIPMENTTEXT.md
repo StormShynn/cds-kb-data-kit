@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `eqkt.equnr` |
-| key `Language` | `eqkt.spras` |
-| `EquipmentName` | `eqkt.eqktx` |
-| `IsPrimaryLanguage` | `eqkt.txasp` |
-| `EquipmentHasLongText` | `eqkt.kzltx` |
-| `LastChangeDateTime` | `eqkt.textchangeddatetime` |
-| `ValidityStartDate` | `_Equipment.CreationDate` |
-| `ValidityEndDate` | `cast( '99991231' as datbi )` |
-| `_Equipment` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | |  | `equnr` |
+| `Language` | ✓ | |  | `spras` |
+| `EquipmentName` |  | |  | `eqktx` |
+| `IsPrimaryLanguage` |  | |  | `txasp` |
+| `EquipmentHasLongText` |  | |  | `kzltx` |
+| `LastChangeDateTime` |  | |  | `textchangeddatetime` |
+| `ValidityStartDate` |  | | `_Equipment` | `CreationDate` |
+| `ValidityEndDate` |  | |  | `cast( '99991231' as datbi )` |
+| `_Equipment` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

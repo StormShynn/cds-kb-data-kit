@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderStopUUID` | `TransportationOrderStopUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `AddressID` | `AddressID` |
-| `AddresseeFullName` | `AddresseeFullName` |
-| `CityName` | `CityName` |
-| `PostalCode` | `PostalCode` |
-| `StreetName` | `StreetName` |
-| `HouseNumber` | `HouseNumber` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `I_FrtOrdStopLocAdAdRpnTP` | `_TrOrdStopLocAddrAddlRprstn as _FrtOrdStopLocAddrAddlRprstn : redirected to composition child I_FrtOrdStopLocAdAdRpnTP` |
-| `I_FreightOrderStopTP` | `_TransportationOrderStop as _FreightOrderStop : redirected to parent I_FreightOrderStopTP` |
-| `I_FreightOrderTP` | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderStopUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddresseeFullName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `I_FrtOrdStopLocAdAdRpnTP` |  | |  | `_TrOrdStopLocAddrAddlRprstn as _FrtOrdStopLocAddrAddlRprstn : redirected to composition child I_FrtOrdStopLocAdAdRpnTP` |
+| `I_FreightOrderStopTP` |  | |  | `_TransportationOrderStop as _FreightOrderStop : redirected to parent I_FreightOrderStopTP` |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
 
 ## Source Code
 

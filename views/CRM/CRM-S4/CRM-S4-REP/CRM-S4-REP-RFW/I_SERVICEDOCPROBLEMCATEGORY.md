@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `'ISRVCDOCPROBCAT'` | `sqlViewName: 'ISRVCDOCPROBCAT'` |
-| `preserveKey` | `true` |
-| `true` | `compiler.compareFilter: true` |
-| `}` | `buffering: { status: #ACTIVE, type: #FULL }` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `'ISRVCDOCPROBCAT'` |  | |  | `sqlViewName: 'ISRVCDOCPROBCAT'` |
+| `preserveKey` |  | |  | `true` |
+| `true` |  | |  | `compiler.compareFilter: true` |
+| `}` |  | |  | `buffering: { status: #ACTIVE, type: #FULL }` |
 
 ## Source Code
 

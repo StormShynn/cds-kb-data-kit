@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryDateTypeRule` | `cast(substring(dd07l.domvalue_l, 1, 1) as sd_delivery_date_type_rule preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryDateTypeRule` | ✓ | |  | `cast(substring(dd07l.domvalue_l, 1, 1) as sd_delivery_date_type_rule preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

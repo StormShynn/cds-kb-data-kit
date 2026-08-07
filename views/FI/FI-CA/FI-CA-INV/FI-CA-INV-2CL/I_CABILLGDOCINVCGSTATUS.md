@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgDocumentInvcgStatus` | `cast( dd07l.domvalue_l as invstatus_kk )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_CABillgDocInvcgStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgDocumentInvcgStatus` | ✓ | |  | `cast( dd07l.domvalue_l as invstatus_kk )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_CABillgDocInvcgStatusText` | | ✓ | | |
 
 ## Source Code
 

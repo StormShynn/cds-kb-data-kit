@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `FinancialDataSource` | `datasource_id` |
-| `FinancialDataSourceName` | `cast( datasource_tt as ffs_vdm_datasource_tt preserving type )` |
-| `_Language` | *Association* |
-| `_FinancialDataSource` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `FinancialDataSource` | ✓ | |  | `datasource_id` |
+| `FinancialDataSourceName` |  | |  | `cast( datasource_tt as ffs_vdm_datasource_tt preserving type )` |
+| `_Language` | | ✓ | | |
+| `_FinancialDataSource` | | ✓ | | |
 
 ## Associations
 

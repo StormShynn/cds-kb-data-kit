@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `PubSecBdgtAcctRevnExpnCode` | `cast( cast ( substring( dd07t.domvalue_l, 1, 1 ) as abap.char( 1 ) ) as psm_bdgt_acct_rev_or_exp preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PubSecBdgtAcctRevnExpnCodeText` | `cast ( dd07t.ddtext as psm_bdgt_acct_rev_or_exp_text preserving type )` |
-| `_Language` | *Association* |
-| `_PubSecBdgtAcctRevnExpnCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PubSecBdgtAcctRevnExpnCode` | ✓ | |  | `cast( cast ( substring( dd07t.domvalue_l, 1, 1 ) as abap.char( 1 ) ) as psm_bdgt_acct_rev_or_exp preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PubSecBdgtAcctRevnExpnCodeText` |  | |  | `cast ( dd07t.ddtext as psm_bdgt_acct_rev_or_exp_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PubSecBdgtAcctRevnExpnCode` | | ✓ | | |
 
 ## Associations
 

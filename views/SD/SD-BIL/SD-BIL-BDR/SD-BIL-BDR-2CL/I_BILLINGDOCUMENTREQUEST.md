@@ -32,122 +32,122 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequest` | `cast(BillingDocument as vbeln_bdr preserving type)` |
-| `SDDocumentCategory` | `SDDocumentCategory` |
-| `BillingDocumentRequestType` | `cast(BillingDocumentType as sdbil_odata_bdr_type preserving type)` |
-| `ProposedBillingDocumentType` | `cast(ProposedBillingDocumentType as proposed_billing_document_type preserving type)` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LogicalSystem` | `LogicalSystem` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `BillingDocumentDate` | `BillingDocumentDate` |
-| `BillgDocReqCombinationCriteria` | `cast(BillingDocCombinationCriteria as billg_doc_req_combn_criteria preserving type)` |
-| `TotalNetAmount` | `TotalNetAmount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `TotalTaxAmount` | `TotalTaxAmount` |
-| `CustomerPriceGroup` | `CustomerPriceGroup` |
-| `PriceListType` | `PriceListType` |
-| `TaxDepartureCountry` | `TaxDepartureCountry` |
-| `VATRegistration` | `VATRegistration` |
-| `VATRegistrationOrigin` | `VATRegistrationOrigin` |
-| `VATRegistrationCountry` | `VATRegistrationCountry` |
-| `CustomerTaxClassification1` | `CustomerTaxClassification1` |
-| `CustomerTaxClassification2` | `CustomerTaxClassification2` |
-| `CustomerTaxClassification3` | `CustomerTaxClassification3` |
-| `CustomerTaxClassification4` | `CustomerTaxClassification4` |
-| `CustomerTaxClassification5` | `CustomerTaxClassification5` |
-| `CustomerTaxClassification6` | `CustomerTaxClassification6` |
-| `CustomerTaxClassification7` | `CustomerTaxClassification7` |
-| `CustomerTaxClassification8` | `CustomerTaxClassification8` |
-| `CustomerTaxClassification9` | `CustomerTaxClassification9` |
-| `SDPricingProcedure` | `SDPricingProcedure` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `PayerParty` | `PayerParty` |
-| `ContractAccount` | `ContractAccount` |
-| `CustomerPaymentTerms` | `CustomerPaymentTerms` |
-| `PaymentMethod` | `PaymentMethod` |
-| `FixedValueDate` | `FixedValueDate` |
-| `AdditionalValueDays` | `AdditionalValueDays` |
-| `SEPAMandate` | `SEPAMandate` |
-| `DeviatingPostingDate` | `DeviatingPostingDate` |
-| `CompanyCode` | `CompanyCode` |
-| `CustomerAccountAssignmentGroup` | `CustomerAccountAssignmentGroup` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `DocumentReferenceID` | `DocumentReferenceID` |
-| `DunningArea` | `DunningArea` |
-| `DunningBlockingReason` | `DunningBlockingReason` |
-| `DunningKey` | `DunningKey` |
-| `ReferenceDocument` | `cast(BillingDocRequestReference as sdbil_odata_source_document preserving type)` |
-| `ReferenceDocumentLogicalSystem` | `cast(BillgDocReqRefLgclSyst as sdbil_odata_source_system preserving type)` |
-| `ReferenceDocSDDocCategory` | `cast(BillgDocReqRefSDDocCategory as sdbil_odata_src_doc_cat preserving type)` |
-| `SoldToParty` | `SoldToParty` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `CustomerGroup` | `CustomerGroup` |
-| `Country` | `Country` |
-| `CityCode` | `CityCode` |
-| `SalesDistrict` | `SalesDistrict` |
-| `Region` | `Region` |
-| `County` | `County` |
-| `CreditControlArea` | `CreditControlArea` |
-| `PricingDocument` | `PricingDocument` |
-| `OverallBillingDocReqStatus` | `OverallBillingDocReqStatus` |
-| `BillingIssueType` | `BillingIssueType` |
-| `OverallPricingIncompletionSts` | `OverallPricingIncompletionSts` |
-| `_ReferenceDocSDDocCategory` | `_BillgDocReqRefSDDocCategory` |
-| `_BillingDocumentRequestType` | `_BillingDocumentType` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_PricingElement` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_ProposedBillingDocumentType` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LogicalSystem` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_CustomerPriceGroup` | *Association* |
-| `_PriceListType` | *Association* |
-| `_TaxDepartureCountry` | *Association* |
-| `_VATRegistrationOrigin` | *Association* |
-| `_VATRegistrationCountry` | *Association* |
-| `_SDPricingProcedure` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_IncotermsVersion` | *Association* |
-| `_PayerParty` | *Association* |
-| `_CustomerPaymentTerms` | *Association* |
-| `_PaymentMethod` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_CustomerAccountAssgmtGroup` | *Association* |
-| `_ExchangeRateType` | *Association* |
-| `_DunningArea` | *Association* |
-| `_DunningBlockingReason` | *Association* |
-| `_DunningKey` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_Country` | *Association* |
-| `_CityCode` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_Region` | *Association* |
-| `_County` | *Association* |
-| `_County_2` | *Association* |
-| `_CreditControlArea` | *Association* |
-| `_OvrlBillingDocReqStatus` | *Association* |
-| `_BillingIssueType` | *Association* |
-| `_OverallPricingIncompletionSts` | *Association* |
-| `_CreditControlAreaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  | `cast(BillingDocument as vbeln_bdr preserving type)` |
+| `SDDocumentCategory` |  | |  |  |
+| `BillingDocumentRequestType` |  | |  | `cast(BillingDocumentType as sdbil_odata_bdr_type preserving type)` |
+| `ProposedBillingDocumentType` |  | |  | `cast(ProposedBillingDocumentType as proposed_billing_document_type preserving type)` |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `BillgDocReqCombinationCriteria` |  | |  | `cast(BillingDocCombinationCriteria as billg_doc_req_combn_criteria preserving type)` |
+| `TotalNetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `TotalTaxAmount` |  | |  |  |
+| `CustomerPriceGroup` |  | |  |  |
+| `PriceListType` |  | |  |  |
+| `TaxDepartureCountry` |  | |  |  |
+| `VATRegistration` |  | |  |  |
+| `VATRegistrationOrigin` |  | |  |  |
+| `VATRegistrationCountry` |  | |  |  |
+| `CustomerTaxClassification1` |  | |  |  |
+| `CustomerTaxClassification2` |  | |  |  |
+| `CustomerTaxClassification3` |  | |  |  |
+| `CustomerTaxClassification4` |  | |  |  |
+| `CustomerTaxClassification5` |  | |  |  |
+| `CustomerTaxClassification6` |  | |  |  |
+| `CustomerTaxClassification7` |  | |  |  |
+| `CustomerTaxClassification8` |  | |  |  |
+| `CustomerTaxClassification9` |  | |  |  |
+| `SDPricingProcedure` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `ContractAccount` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `FixedValueDate` |  | |  |  |
+| `AdditionalValueDays` |  | |  |  |
+| `SEPAMandate` |  | |  |  |
+| `DeviatingPostingDate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CustomerAccountAssignmentGroup` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `DocumentReferenceID` |  | |  |  |
+| `DunningArea` |  | |  |  |
+| `DunningBlockingReason` |  | |  |  |
+| `DunningKey` |  | |  |  |
+| `ReferenceDocument` |  | |  | `cast(BillingDocRequestReference as sdbil_odata_source_document preserving type)` |
+| `ReferenceDocumentLogicalSystem` |  | |  | `cast(BillgDocReqRefLgclSyst as sdbil_odata_source_system preserving type)` |
+| `ReferenceDocSDDocCategory` |  | |  | `cast(BillgDocReqRefSDDocCategory as sdbil_odata_src_doc_cat preserving type)` |
+| `SoldToParty` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `Country` |  | |  |  |
+| `CityCode` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `Region` |  | |  |  |
+| `County` |  | |  |  |
+| `CreditControlArea` |  | |  |  |
+| `PricingDocument` |  | |  |  |
+| `OverallBillingDocReqStatus` |  | |  |  |
+| `BillingIssueType` |  | |  |  |
+| `OverallPricingIncompletionSts` |  | |  |  |
+| `_ReferenceDocSDDocCategory` |  | |  | `_BillgDocReqRefSDDocCategory` |
+| `_BillingDocumentRequestType` |  | |  | `_BillingDocumentType` |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_ProposedBillingDocumentType` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LogicalSystem` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_CustomerPriceGroup` | | ✓ | | |
+| `_PriceListType` | | ✓ | | |
+| `_TaxDepartureCountry` | | ✓ | | |
+| `_VATRegistrationOrigin` | | ✓ | | |
+| `_VATRegistrationCountry` | | ✓ | | |
+| `_SDPricingProcedure` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_IncotermsVersion` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_CustomerPaymentTerms` | | ✓ | | |
+| `_PaymentMethod` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | |
+| `_ExchangeRateType` | | ✓ | | |
+| `_DunningArea` | | ✓ | | |
+| `_DunningBlockingReason` | | ✓ | | |
+| `_DunningKey` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_CityCode` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_Region` | | ✓ | | |
+| `_County` | | ✓ | | |
+| `_County_2` | | ✓ | | |
+| `_CreditControlArea` | | ✓ | | |
+| `_OvrlBillingDocReqStatus` | | ✓ | | |
+| `_BillingIssueType` | | ✓ | | |
+| `_OverallPricingIncompletionSts` | | ✓ | | |
+| `_CreditControlAreaText` | | ✓ | | |
 
 ## Associations
 

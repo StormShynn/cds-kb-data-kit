@@ -31,128 +31,128 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `RegionOfOrigin` | `, useAsTemplate: true }] RegionOfOrigin` |
-| `ProductionInvtryManagedLoc` | `ProductionInvtryManagedLoc` |
-| `ProfileCode` | `ProfileCode` |
-| `ProfileValidityStartDate` | `ProfileValidityStartDate` |
-| `AvailabilityCheckType` | `AvailabilityCheckType` |
-| `FiscalYearVariant` | `FiscalYearVariant` |
-| `PeriodType` | `PeriodType` |
-| `ProfitCenter` | `ProfitCenter` |
-| `GoodsReceiptDuration` | `GoodsReceiptDuration` |
-| `MaintenanceStatusName` | `MaintenanceStatus` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `MRPType` | `MRPType` |
-| `MRPResponsible` | `MRPResponsible` |
-| `ABCIndicator` | `ABCIndicator` |
-| `MinimumLotSizeQuantity` | `MinimumLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `MaximumLotSizeQuantity` |
-| `FixedLotSizeQuantity` | `FixedLotSizeQuantity` |
-| `ConsumptionTaxCtrlCode` | `ConsumptionTaxCtrlCode` |
-| `IsCoProduct` | `IsCoProduct` |
-| `ConfigurableProduct` | `ConfigurableProduct` |
-| `StockDeterminationGroup` | `StockDeterminationGroup` |
-| `HasPostToInspectionStock` | `HasPostToInspectionStock` |
-| `IsBatchManagementRequired` | `IsBatchManagementRequired` |
-| `SerialNumberProfile` | `SerialNumberProfile` |
-| `IsNegativeStockAllowed` | `IsNegativeStockAllowed` |
-| `HasConsignmentCtrl` | `ConsignmentControl` |
-| `IsPurgAcrossPurgGroup` | `IsPurgAcrossPurgGroup` |
-| `IsInternalBatchManaged` | `IsInternalBatchManaged` |
-| `ProductCFOPCategory` | `ProductCFOPCategory` |
-| `ProductIsExciseTaxRelevant` | `ProductIsExciseTaxRelevant` |
-| `UnderDelivToleranceLimit` | `UnderDelivToleranceLimit` |
-| `OverDelivToleranceLimit` | `OverDelivToleranceLimit` |
-| `ProcurementType` | `ProcurementType` |
-| `SpecialProcurementType` | `ProcurementSubType` |
-| `ProductionSchedulingProfile` | `ProductionSchedulingProfile` |
-| `ProductionSupervisor` | `ProductionSupervisor` |
-| `SafetyStockQuantity` | `SafetyStockQuantity` |
-| `GoodsIssueUnit` | `GoodsIssueUnit` |
-| `SourceOfSupplyCategory` | `SourceOfSupplyCategory` |
-| `ConsumptionReferenceProduct` | `ConsumptionReferenceProduct` |
-| `ConsumptionReferencePlant` | `ConsumptionReferencePlant` |
-| `ConsumptionRefUsageEndDate` | `ConsumptionRefUsageEndDate` |
-| `ConsumptionQtyMultiplier` | `ConsumptionQtyMultiplier` |
-| `ProductUnitGroup` | `ProductUnitGroup` |
-| `DistrCntrDistributionProfile` | `DistrCntrDistributionProfile` |
-| `ConsignmentControl` | `ConsignmentControl` |
-| `GoodIssueProcessingDays` | `GoodIssueProcessingDays` |
-| `PlannedDeliveryDurationInDays` | `PlannedDeliveryDurationInDays` |
-| `ProductIsCriticalPrt` | `ProductIsCriticalPrt` |
-| `ProductLogisticsHandlingGroup` | `ProductLogisticsHandlingGroup` |
-| `MaterialFreightGroup` | `MaterialFreightGroup` |
-| `OriginalBatchReferenceMaterial` | `OriginalBatchReferenceMaterial` |
-| `OriglBatchManagementIsRequired` | `OriglBatchManagementIsRequired` |
-| `ProductConfiguration` | `ProductConfiguration` |
-| `ProductMinControlTemperature` | `ProductMinControlTemperature` |
-| `ProductMaxControlTemperature` | `ProductMaxControlTemperature` |
-| `ProductControlTemperatureUnit` | `ProductControlTemperatureUnit` |
-| `ValuationCategory` | `ValuationCategory` |
-| `BaseUnit` | `_Product.BaseUnit` |
-| `ItemUniqueIdentifierIsRelevant` | `ItemUniqueIdentifierIsRelevant` |
-| `ItemUniqueIdentifierType` | `ItemUniqueIdentifierType` |
-| `ExtAllocOfItmUnqIdtIsRelevant` | `ExtAllocOfItmUnqIdtIsRelevant` |
-| `_Product` | *Association* |
-| `_MRPController` | *Association* |
-| `_ProductStatus` | *Association* |
-| `_ProductStatusText` | *Association* |
-| `_GoodsIssueUnit` | *Association* |
-| `_UnitOfMeasureText` | *Association* |
-| `_FiscalYearVariant` | *Association* |
-| `_FiscalYearVariantDescription` | *Association* |
-| `_ConfigurableProduct` | *Association* |
-| `_ConfigurableProductName` | *Association* |
-| `_Text` | *Association* |
-| `_ConfigurableProductName_2` | *Association* |
-| `_Text_2` | *Association* |
-| `_ABCIndicator` | *Association* |
-| `_ABCIndicatorDesc` | *Association* |
-| `_Plant` | *Association* |
-| `_Site` | *Association* |
-| `_MRPType` | *Association* |
-| `_SourceOfSupplyCategory` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_GoodsMovementQuantity` | *Association* |
-| `_PlantProcurement` | *Association* |
-| `_ProdPlantInternationalTrade` | *Association* |
-| `_ProductPlantCosting` | *Association* |
-| `_ProductPlantForecast` | *Association* |
-| `_PlantQualityMgmt` | *Association* |
-| `_PlantSales` | *Association* |
-| `_MaterialLotSizingProcedure` | *Association* |
-| `_MaterialStock` | *Association* |
-| `_Stock` | *Association* |
-| `_CountryOfOriginText` | *Association* |
-| `_RegionText` | *Association* |
-| `_ProductStorageLocation` | *Association* |
-| `_StockDeterminationGroup` | *Association* |
-| `_StockDeterminationGroupT` | *Association* |
-| `_ProductCFOPCategory` | *Association* |
-| `_CFOPDesc` | *Association* |
-| `_PeriodType` | *Association* |
-| `_PeriodTypeText` | *Association* |
-| `_DistributionProfile` | *Association* |
-| `_DistributionProfileText` | *Association* |
-| `_PlantESPP` | *Association* |
-| `_ProdControlTemperatureUnit` | *Association* |
-| `_ProdCtrlTemperatureUnitText` | *Association* |
-| `_ProductFreightGroup` | *Association* |
-| `_ProductFreightGroupText` | *Association* |
-| `_ConsignmentControlText` | *Association* |
-| `_ProdLogisticsHandlingGroupT` | *Association* |
-| `_ProdProcurementTypeText` | *Association* |
-| `_ProductDescription_2` | *Association* |
-| `_CnsmpnReferenceProductText` | *Association* |
-| `_OriglReferenceMaterialText` | *Association* |
-| `_SerialNumberProfileText` | *Association* |
-| `_MRPTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `RegionOfOrigin` |  | |  | `, useAsTemplate: true }] RegionOfOrigin` |
+| `ProductionInvtryManagedLoc` |  | |  |  |
+| `ProfileCode` |  | |  |  |
+| `ProfileValidityStartDate` |  | |  |  |
+| `AvailabilityCheckType` |  | |  |  |
+| `FiscalYearVariant` |  | |  |  |
+| `PeriodType` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `GoodsReceiptDuration` |  | |  |  |
+| `MaintenanceStatusName` |  | |  | `MaintenanceStatus` |
+| `IsMarkedForDeletion` |  | |  |  |
+| `MRPType` |  | |  |  |
+| `MRPResponsible` |  | |  |  |
+| `ABCIndicator` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `FixedLotSizeQuantity` |  | |  |  |
+| `ConsumptionTaxCtrlCode` |  | |  |  |
+| `IsCoProduct` |  | |  |  |
+| `ConfigurableProduct` |  | |  |  |
+| `StockDeterminationGroup` |  | |  |  |
+| `HasPostToInspectionStock` |  | |  |  |
+| `IsBatchManagementRequired` |  | |  |  |
+| `SerialNumberProfile` |  | |  |  |
+| `IsNegativeStockAllowed` |  | |  |  |
+| `HasConsignmentCtrl` |  | |  | `ConsignmentControl` |
+| `IsPurgAcrossPurgGroup` |  | |  |  |
+| `IsInternalBatchManaged` |  | |  |  |
+| `ProductCFOPCategory` |  | |  |  |
+| `ProductIsExciseTaxRelevant` |  | |  |  |
+| `UnderDelivToleranceLimit` |  | |  |  |
+| `OverDelivToleranceLimit` |  | |  |  |
+| `ProcurementType` |  | |  |  |
+| `SpecialProcurementType` |  | |  | `ProcurementSubType` |
+| `ProductionSchedulingProfile` |  | |  |  |
+| `ProductionSupervisor` |  | |  |  |
+| `SafetyStockQuantity` |  | |  |  |
+| `GoodsIssueUnit` |  | |  |  |
+| `SourceOfSupplyCategory` |  | |  |  |
+| `ConsumptionReferenceProduct` |  | |  |  |
+| `ConsumptionReferencePlant` |  | |  |  |
+| `ConsumptionRefUsageEndDate` |  | |  |  |
+| `ConsumptionQtyMultiplier` |  | |  |  |
+| `ProductUnitGroup` |  | |  |  |
+| `DistrCntrDistributionProfile` |  | |  |  |
+| `ConsignmentControl` |  | |  |  |
+| `GoodIssueProcessingDays` |  | |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |
+| `ProductIsCriticalPrt` |  | |  |  |
+| `ProductLogisticsHandlingGroup` |  | |  |  |
+| `MaterialFreightGroup` |  | |  |  |
+| `OriginalBatchReferenceMaterial` |  | |  |  |
+| `OriglBatchManagementIsRequired` |  | |  |  |
+| `ProductConfiguration` |  | |  |  |
+| `ProductMinControlTemperature` |  | |  |  |
+| `ProductMaxControlTemperature` |  | |  |  |
+| `ProductControlTemperatureUnit` |  | |  |  |
+| `ValuationCategory` |  | |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |
+| `ItemUniqueIdentifierIsRelevant` |  | |  |  |
+| `ItemUniqueIdentifierType` |  | |  |  |
+| `ExtAllocOfItmUnqIdtIsRelevant` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_MRPController` | | ✓ | | |
+| `_ProductStatus` | | ✓ | | |
+| `_ProductStatusText` | | ✓ | | |
+| `_GoodsIssueUnit` | | ✓ | | |
+| `_UnitOfMeasureText` | | ✓ | | |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_FiscalYearVariantDescription` | | ✓ | | |
+| `_ConfigurableProduct` | | ✓ | | |
+| `_ConfigurableProductName` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_ConfigurableProductName_2` | | ✓ | | |
+| `_Text_2` | | ✓ | | |
+| `_ABCIndicator` | | ✓ | | |
+| `_ABCIndicatorDesc` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Site` | | ✓ | | |
+| `_MRPType` | | ✓ | | |
+| `_SourceOfSupplyCategory` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_GoodsMovementQuantity` | | ✓ | | |
+| `_PlantProcurement` | | ✓ | | |
+| `_ProdPlantInternationalTrade` | | ✓ | | |
+| `_ProductPlantCosting` | | ✓ | | |
+| `_ProductPlantForecast` | | ✓ | | |
+| `_PlantQualityMgmt` | | ✓ | | |
+| `_PlantSales` | | ✓ | | |
+| `_MaterialLotSizingProcedure` | | ✓ | | |
+| `_MaterialStock` | | ✓ | | |
+| `_Stock` | | ✓ | | |
+| `_CountryOfOriginText` | | ✓ | | |
+| `_RegionText` | | ✓ | | |
+| `_ProductStorageLocation` | | ✓ | | |
+| `_StockDeterminationGroup` | | ✓ | | |
+| `_StockDeterminationGroupT` | | ✓ | | |
+| `_ProductCFOPCategory` | | ✓ | | |
+| `_CFOPDesc` | | ✓ | | |
+| `_PeriodType` | | ✓ | | |
+| `_PeriodTypeText` | | ✓ | | |
+| `_DistributionProfile` | | ✓ | | |
+| `_DistributionProfileText` | | ✓ | | |
+| `_PlantESPP` | | ✓ | | |
+| `_ProdControlTemperatureUnit` | | ✓ | | |
+| `_ProdCtrlTemperatureUnitText` | | ✓ | | |
+| `_ProductFreightGroup` | | ✓ | | |
+| `_ProductFreightGroupText` | | ✓ | | |
+| `_ConsignmentControlText` | | ✓ | | |
+| `_ProdLogisticsHandlingGroupT` | | ✓ | | |
+| `_ProdProcurementTypeText` | | ✓ | | |
+| `_ProductDescription_2` | | ✓ | | |
+| `_CnsmpnReferenceProductText` | | ✓ | | |
+| `_OriglReferenceMaterialText` | | ✓ | | |
+| `_SerialNumberProfileText` | | ✓ | | |
+| `_MRPTypeText` | | ✓ | | |
 
 ## Associations
 

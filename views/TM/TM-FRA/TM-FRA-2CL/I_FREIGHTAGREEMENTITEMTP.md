@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspAgreementItemUUID` | `TranspAgreementItemUUID` |
-| `TransportationAgreementUUID` | `TransportationAgreementUUID` |
-| `TranspCalculationSheetUUID` | `TranspCalculationSheetUUID` |
-| `TransportationAgreementItem` | `TransportationAgreementItem` |
-| `TranspAgreementItemDesc` | `TranspAgreementItemDesc` |
-| `TransportationStageCategory` | `TransportationStageCategory` |
-| `TransportationCalculationSheet` | `TransportationCalculationSheet` |
-| `TranspCalcSheetItmIsHdrCharge` | `TranspCalcSheetItmIsHdrCharge` |
-| `I_FreightAgrmtCalcSheetTP` | `FreightAgreementItem._FreightAgrmtCalculationSheet : redirected to composition child I_FreightAgrmtCalcSheetTP` |
-| `I_FrtAgrmtItemPaymentTermTP` | `FreightAgreementItem._FrtAgrmtItemPaymentTerm : redirected to composition child I_FrtAgrmtItemPaymentTermTP` |
-| `I_FreightAgreementTP` | `FreightAgreementItem._FreightAgreement : redirected to parent I_FreightAgreementTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspAgreementItemUUID` | ✓ | |  |  |
+| `TransportationAgreementUUID` |  | |  |  |
+| `TranspCalculationSheetUUID` |  | |  |  |
+| `TransportationAgreementItem` |  | |  |  |
+| `TranspAgreementItemDesc` |  | |  |  |
+| `TransportationStageCategory` |  | |  |  |
+| `TransportationCalculationSheet` |  | |  |  |
+| `TranspCalcSheetItmIsHdrCharge` |  | |  |  |
+| `I_FreightAgrmtCalcSheetTP` |  | |  | `FreightAgreementItem._FreightAgrmtCalculationSheet : redirected to composition child I_FreightAgrmtCalcSheetTP` |
+| `I_FrtAgrmtItemPaymentTermTP` |  | |  | `FreightAgreementItem._FrtAgrmtItemPaymentTerm : redirected to composition child I_FrtAgrmtItemPaymentTermTP` |
+| `I_FreightAgreementTP` |  | |  | `FreightAgreementItem._FreightAgreement : redirected to parent I_FreightAgreementTP` |
 
 ## Source Code
 

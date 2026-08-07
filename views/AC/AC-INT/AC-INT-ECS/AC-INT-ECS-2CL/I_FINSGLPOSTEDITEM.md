@@ -29,37 +29,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinSGLErrorItemUUID` | `_ErroItem.FinSGLErrorItemUUID` |
-| `SourceLedger` | `I_JournalEntryItem.SourceLedger` |
-| `Ledger` | `I_JournalEntryItem.Ledger` |
-| `CompanyCode` | `I_JournalEntryItem.CompanyCode` |
-| `FiscalYear` | `I_JournalEntryItem.FiscalYear` |
-| `AccountingDocument` | `I_JournalEntryItem.AccountingDocument` |
-| `LedgerGLLineItem` | `I_JournalEntryItem.LedgerGLLineItem` |
-| `GLAccount` | `I_JournalEntryItem.GLAccount` |
-| `PartnerCompany` | `I_JournalEntryItem.PartnerCompany` |
-| `CostCenter` | `I_JournalEntryItem.CostCenter` |
-| `ProfitCenter` | `I_JournalEntryItem.ProfitCenter` |
-| `PartnerProfitCenter` | `I_JournalEntryItem.PartnerProfitCenter` |
-| `DocumentItemText` | `I_JournalEntryItem.DocumentItemText` |
-| `BalanceTransactionCurrency` | `I_JournalEntryItem.BalanceTransactionCurrency` |
-| `AmountInBalanceTransacCrcy` | `I_JournalEntryItem.AmountInBalanceTransacCrcy` |
-| `TransactionCurrency` | `I_JournalEntryItem.TransactionCurrency` |
-| `AmountInTransactionCurrency` | `I_JournalEntryItem.AmountInTransactionCurrency` |
-| `CompanyCodeCurrency` | `I_JournalEntryItem.CompanyCodeCurrency` |
-| `AmountInCompanyCodeCurrency` | `I_JournalEntryItem.AmountInCompanyCodeCurrency` |
-| `GlobalCurrency` | `I_JournalEntryItem.GlobalCurrency` |
-| `AmountInGlobalCurrency` | `I_JournalEntryItem.AmountInGlobalCurrency` |
-| `FunctionalCurrency` | `I_JournalEntryItem.FunctionalCurrency` |
-| `AmountInFunctionalCurrency` | `I_JournalEntryItem.AmountInFunctionalCurrency` |
-| `FinancialServicesProductGroup` | `I_JournalEntryItem.FinancialServicesProductGroup` |
-| `FinancialServicesBranch` | `I_JournalEntryItem.FinancialServicesBranch` |
-| `FinancialDataSource` | `I_JournalEntryItem.FinancialDataSource` |
-| `CustomerSupplierIndustry` | `I_JournalEntryItem.CustomerSupplierIndustry` |
-| `CustomerGroup` | `I_JournalEntryItem.CustomerGroup` |
-| `CustomerSupplierCountry` | `I_JournalEntryItem.CustomerSupplierCountry` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinSGLErrorItemUUID` | ✓ | | `_ErroItem` | `FinSGLErrorItemUUID` |
+| `SourceLedger` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `AccountingDocument` |  | |  |  |
+| `LedgerGLLineItem` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `PartnerCompany` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `PartnerProfitCenter` |  | |  |  |
+| `DocumentItemText` |  | |  |  |
+| `BalanceTransactionCurrency` |  | |  |  |
+| `AmountInBalanceTransacCrcy` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |
+| `GlobalCurrency` |  | |  |  |
+| `AmountInGlobalCurrency` |  | |  |  |
+| `FunctionalCurrency` |  | |  |  |
+| `AmountInFunctionalCurrency` |  | |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |
+| `FinancialServicesBranch` |  | |  |  |
+| `FinancialDataSource` |  | |  |  |
+| `CustomerSupplierIndustry` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `CustomerSupplierCountry` |  | |  |  |
 
 ## Source Code
 

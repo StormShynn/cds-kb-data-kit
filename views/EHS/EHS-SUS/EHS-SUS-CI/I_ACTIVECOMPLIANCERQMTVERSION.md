@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CmplRqVersUUID` | `CmplRqVersUUID` |
-| `CmplRqVers` | `CmplRqVers` |
-| `ComplianceRequirement` | `ComplianceRequirement` |
-| `CmplRqVersName` | `CmplRqVersName` |
-| `CmplRqVersBuildDateTime` | `CmplRqVersBuildDate` |
-| `EffectiveDate` | `EffectiveDate` |
-| `CmplRqApplicationComponent` | `CmplRqApplicationComponent` |
-| `CmplRqDomain` | `CmplRqDomain` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CmplRqVersUUID` | ✓ | |  |  |
+| `CmplRqVers` |  | |  |  |
+| `ComplianceRequirement` |  | |  |  |
+| `CmplRqVersName` |  | |  |  |
+| `CmplRqVersBuildDateTime` |  | |  | `CmplRqVersBuildDate` |
+| `EffectiveDate` |  | |  |  |
+| `CmplRqApplicationComponent` |  | |  |  |
+| `CmplRqDomain` |  | |  |  |
 
 ## Associations
 

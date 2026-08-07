@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `AuthorizationGroup` | `brgru` |
-| key `DocInfoRecdAuthznObject` | `brobj` |
-| `AuthorizationGroupName` | `bezei` |
-| `_Language` | *Association* |
-| `_AuthGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `AuthorizationGroup` | ✓ | |  | `brgru` |
+| `DocInfoRecdAuthznObject` | ✓ | |  | `brobj` |
+| `AuthorizationGroupName` |  | |  | `bezei` |
+| `_Language` | | ✓ | | |
+| `_AuthGroup` | | ✓ | | |
 
 ## Associations
 

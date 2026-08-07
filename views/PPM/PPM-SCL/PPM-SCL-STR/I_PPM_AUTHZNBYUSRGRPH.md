@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReferencedObjectUUID` | `hier.object_id` |
-| key `Activity` | `GroupAuth.activity` |
-| key `UserID` | `UserGroup.UserID` |
-| key `ProjectAuthznGroupID` | `GroupAuth.user_group_id` |
-| `ObjectType` | `GroupAuth.type` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferencedObjectUUID` | ✓ | |  | `object_id` |
+| `Activity` | ✓ | |  | `activity` |
+| `UserID` | ✓ | |  |  |
+| `ProjectAuthznGroupID` | ✓ | |  | `user_group_id` |
+| `ObjectType` |  | |  | `type` |
 
 ## Source Code
 

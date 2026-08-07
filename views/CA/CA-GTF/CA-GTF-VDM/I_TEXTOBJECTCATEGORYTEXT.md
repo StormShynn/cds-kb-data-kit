@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TextObjectCategory` | `ttxot.tdobject` |
-| key `Language` | `ttxot.tdspras` |
-| `TextObjectCategoryText` | `ttxot.tdtext` |
-| `_TextObjectCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TextObjectCategory` | ✓ | |  | `tdobject` |
+| `Language` | ✓ | |  | `tdspras` |
+| `TextObjectCategoryText` |  | |  | `tdtext` |
+| `_TextObjectCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnCategory` | `_tfk8210t.bipcat` |
-| key `Language` | `_tfk8210t.langu` |
-| `CABillgPlnCategoryText` | `cast( _tfk8210t.text as bipcat_txt_gfn_kk preserving type )` |
-| `_CABillgPlnCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnCategory` | ✓ | | `_tfk8210t` | `bipcat` |
+| `Language` | ✓ | | `_tfk8210t` | `langu` |
+| `CABillgPlnCategoryText` |  | |  | `cast( _tfk8210t.text as bipcat_txt_gfn_kk preserving type )` |
+| `_CABillgPlnCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

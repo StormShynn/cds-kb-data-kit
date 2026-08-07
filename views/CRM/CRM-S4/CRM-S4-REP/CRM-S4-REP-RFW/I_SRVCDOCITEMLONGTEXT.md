@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentLongTextUUID` | `ServiceDocumentText.text_uuid` |
-| `TextObjectCategory` | `ServiceDocumentText.text_object` |
-| `TextObjectType` | `ServiceDocumentText.text_id` |
-| `Language` | `ServiceDocumentText.language` |
-| `ServiceObjectType` | `ServiceDocumentText.objtype_h` |
-| `ServiceDocument` | `ServiceDocumentText.object_id` |
-| `ServiceDocumentItem` | `ServiceDocumentText.number_int` |
-| `ServiceDocumentLongText` | `ServiceDocumentText.text_content` |
-| `SrvcDocLongTextMimeType` | `ServiceDocumentText.mimetype` |
-| `_TextObjectCategory` | *Association* |
-| `_TextObjectType` | *Association* |
-| `_Language` | *Association* |
-| `_ServiceObjType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentLongTextUUID` | ✓ | |  | `text_uuid` |
+| `TextObjectCategory` |  | |  | `text_object` |
+| `TextObjectType` |  | |  | `text_id` |
+| `Language` |  | |  | `language` |
+| `ServiceObjectType` |  | |  | `objtype_h` |
+| `ServiceDocument` |  | |  | `object_id` |
+| `ServiceDocumentItem` |  | |  | `number_int` |
+| `ServiceDocumentLongText` |  | |  | `text_content` |
+| `SrvcDocLongTextMimeType` |  | |  | `mimetype` |
+| `_TextObjectCategory` | | ✓ | | |
+| `_TextObjectType` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tbslt.spras` |
-| key `PostingKey` | `cast(tbslt.bschl as fis_bschl preserving type)` |
-| `PostingKeyName` | `cast (tbslt.ltext as fis_bschl_name preserving type )` |
-| `_Language` | *Association* |
-| `_PostingKey` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `PostingKey` | ✓ | |  | `cast(tbslt.bschl as fis_bschl preserving type)` |
+| `PostingKeyName` |  | |  | `cast (tbslt.ltext as fis_bschl_name preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PostingKey` | | ✓ | | |
 
 ## Associations
 

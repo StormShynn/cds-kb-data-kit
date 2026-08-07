@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrganization` | `SalesOrganization` |
-| `SalesOrganizationCurrency` | `SalesOrganizationCurrency` |
-| `IntercompanyBillingCustomer` | `IntercompanyBillingCustomer` |
-| `CompanyCode` | `CompanyCode` |
-| `Country` | `_CompanyCode.Country` |
-| `Currency` | `_CompanyCode.Currency` |
-| `FiscalYearVariant` | `_CompanyCode.FiscalYearVariant` |
-| `_SalesOrganizationCurrency` | *Association* |
-| `_Currency` | *Association* |
-| `_Text` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_IntercompanyBillingCustomer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  |  |
+| `SalesOrganizationCurrency` |  | |  |  |
+| `IntercompanyBillingCustomer` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Country` |  | | `_CompanyCode` | `Country` |
+| `Currency` |  | | `_CompanyCode` | `Currency` |
+| `FiscalYearVariant` |  | | `_CompanyCode` | `FiscalYearVariant` |
+| `_SalesOrganizationCurrency` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_IntercompanyBillingCustomer` | | ✓ | | |
 
 ## Associations
 

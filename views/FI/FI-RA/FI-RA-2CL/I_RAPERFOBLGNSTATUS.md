@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RevnAcctgPerfOblgnStatus` | `cast(dd07l.domvalue_l as farr_cds_pob_status)` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RevnAcctgPerfOblgnStatus` | ✓ | |  | `cast(dd07l.domvalue_l as farr_cds_pob_status)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

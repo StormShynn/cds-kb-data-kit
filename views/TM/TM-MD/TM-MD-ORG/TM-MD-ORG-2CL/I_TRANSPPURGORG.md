@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspPurgOrg` | `cast( PurchasingOrganization as /scmtms/purch_org preserving type )` |
-| `TranspPurgOrgName` | `cast( PurchasingOrganizationName as /scmtms/purch_org_name preserving type )` |
-| `CompanyCode` | `cast( CompanyCode as /scmtms/purch_company_code preserving type )` |
-| `ConfigDeprecationCode` | `ConfigDeprecationCode` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspPurgOrg` | ✓ | |  | `cast( PurchasingOrganization as /scmtms/purch_org preserving type )` |
+| `TranspPurgOrgName` |  | |  | `cast( PurchasingOrganizationName as /scmtms/purch_org_name preserving type )` |
+| `CompanyCode` |  | |  | `cast( CompanyCode as /scmtms/purch_company_code preserving type )` |
+| `ConfigDeprecationCode` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReturnsRefundExtent` | `cast (returns_refund as returns_refund_extent)` |
-| key `Language` | `spras` |
-| `ReturnsRefundExtentDesc` | `cast (bezei as returns_refund_extent_desc)` |
-| `_ReturnsRefundExtent` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReturnsRefundExtent` | ✓ | |  | `cast (returns_refund as returns_refund_extent)` |
+| `Language` | ✓ | |  | `spras` |
+| `ReturnsRefundExtentDesc` |  | |  | `cast (bezei as returns_refund_extent_desc)` |
+| `_ReturnsRefundExtent` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

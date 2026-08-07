@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Source.Language` |
-| key `FinancialManagementArea` | `cast( _Source.FinancialManagementArea as fincs_financialmanagementarea preserving type )` |
-| `Fund` | `}] key cast( _Source.Fund as fincs_fund preserving type )` |
-| `FundName` | `cast( _Source.FundName as fincs_fundname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_FinancialManagementArea` | *Association* |
-| `_Fund` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |
+| `FinancialManagementArea` | ✓ | |  | `cast( _Source.FinancialManagementArea as fincs_financialmanagementarea preserving type )` |
+| `Fund` |  | |  | `}] key cast( _Source.Fund as fincs_fund preserving type )` |
+| `FundName` |  | |  | `cast( _Source.FundName as fincs_fundname preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_FinancialManagementArea` | | ✓ | | |
+| `_Fund` | | ✓ | | |
 
 ## Associations
 

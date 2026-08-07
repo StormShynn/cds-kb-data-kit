@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CurrencyField` | `CurrencyField` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CurrencyField` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

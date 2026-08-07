@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TranspOrdEventCode` | `/scmtms/tor_event` |
-| `TransportationOrderStopUUID` | `/scmtms/torstopuuid` |
-| `TranspOrdEvtActualDateTime` | `/scmtms/vdm_event_actl_dtetme` |
-| `TranspOrdEvtEstimatedDateTime` | `/scmtms/vdm_estimated_datetime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdEventCode` |  | |  | `/scmtms/tor_event` |
+| `TransportationOrderStopUUID` |  | |  | `/scmtms/torstopuuid` |
+| `TranspOrdEvtActualDateTime` |  | |  | `/scmtms/vdm_event_actl_dtetme` |
+| `TranspOrdEvtEstimatedDateTime` |  | |  | `/scmtms/vdm_estimated_datetime` |
 
 ## Source Code
 

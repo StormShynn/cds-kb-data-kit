@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CACtrlFieldForAcctAssgmtDistr` | `cast( left( dd07l.domvalue_l, 1 ) as aasta_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CACtrlFieldForAcctAssgmtDistr` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as aasta_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PriceQuotationType` | `cast ( tw56.skursart as tba_pricetype)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PriceQuotationType` | ✓ | |  | `cast ( tw56.skursart as tba_pricetype)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

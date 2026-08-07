@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ItemPackingIncompletionStatus` | `statu` |
-| key `Language` | `spras` |
-| `ItemPackingIncompletionStsDesc` | `bezei` |
-| `_ItemPackingIncompletionStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ItemPackingIncompletionStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `ItemPackingIncompletionStsDesc` |  | |  | `bezei` |
+| `_ItemPackingIncompletionStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

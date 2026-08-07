@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SpecialGLCode` | `umskz` |
-| key `FinancialAccountType` | `koart` |
-| `SpecialGLTransactionType` | `umsks` |
-| `CreditLimitIsChecked` | `klimp` |
-| `IsNotedItmWithoutBalUpdt` | `merkp` |
-| `_Text` | *Association* |
-| `_FinancialAccountType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SpecialGLCode` | ✓ | |  | `umskz` |
+| `FinancialAccountType` | ✓ | |  | `koart` |
+| `SpecialGLTransactionType` |  | |  | `umsks` |
+| `CreditLimitIsChecked` |  | |  | `klimp` |
+| `IsNotedItmWithoutBalUpdt` |  | |  | `merkp` |
+| `_Text` | | ✓ | | |
+| `_FinancialAccountType` | | ✓ | | |
 
 ## Associations
 

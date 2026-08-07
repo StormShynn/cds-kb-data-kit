@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectDemandLastUpdateSource` | `cast ( substring( domvalue_l, 1, 2 ) as tv_proj_dmnd_upd_source )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_LastUpdateSourceTxt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectDemandLastUpdateSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as tv_proj_dmnd_upd_source )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_LastUpdateSourceTxt` | | ✓ | | |
 
 ## Source Code
 

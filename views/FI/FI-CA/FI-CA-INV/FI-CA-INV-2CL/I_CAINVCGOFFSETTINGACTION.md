@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgOffsettingAction` | `cast( substring( l.domvalue_l ,1,1 ) as inv_offset_action_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgOffsettingAction` | ✓ | |  | `cast( substring( l.domvalue_l ,1,1 ) as inv_offset_action_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

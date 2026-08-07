@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BOPRptgCntry` | `country` |
-| key `BOPForm` | `form` |
-| key `Country` | `cast(subdiv as land1_gp)` |
-| `_BOPRptgCntry` | *Association* |
-| `_BOPForm` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOPRptgCntry` | ✓ | |  | `country` |
+| `BOPForm` | ✓ | |  | `form` |
+| `Country` | ✓ | |  | `cast(subdiv as land1_gp)` |
+| `_BOPRptgCntry` | | ✓ | | |
+| `_BOPForm` | | ✓ | | |
 
 ## Associations
 

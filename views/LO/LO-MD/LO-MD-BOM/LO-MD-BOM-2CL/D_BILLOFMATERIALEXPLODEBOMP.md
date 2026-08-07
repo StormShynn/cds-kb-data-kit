@@ -31,23 +31,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BOMExplosionApplication` | `capid` |
-| `RequiredQuantity` | `basmn` |
-| `BOMHeaderBaseUnit` | `bmein` |
-| `BOMExplosionIsLimited` | `brems` |
-| `BOMItmQtyIsScrapRelevant` | `auskz` |
-| `BillOfMaterialItemCategory` | `postp` |
-| `BOMExplosionAssembly` | `matnr` |
-| `BOMExplosionDate` | `datuv` |
-| `ExplodeBOMLevelValue` | `cs_maxst` |
-| `BOMExplosionIsMultilevel` | `mehrs` |
-| `MaterialProvisionFltrType` | `beikz` |
-| `SparePartFltrType` | `erskz` |
-| `FinalPriceIndicator` | `cs_preis` |
-| `BOMExplosionIsAlternatePrio` | `altvo` |
-| `BillOfMaterialSimulationValue` | `cuobj` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOMExplosionApplication` |  | |  | `capid` |
+| `RequiredQuantity` |  | |  | `basmn` |
+| `BOMHeaderBaseUnit` |  | |  | `bmein` |
+| `BOMExplosionIsLimited` |  | |  | `brems` |
+| `BOMItmQtyIsScrapRelevant` |  | |  | `auskz` |
+| `BillOfMaterialItemCategory` |  | |  | `postp` |
+| `BOMExplosionAssembly` |  | |  | `matnr` |
+| `BOMExplosionDate` |  | |  | `datuv` |
+| `ExplodeBOMLevelValue` |  | |  | `cs_maxst` |
+| `BOMExplosionIsMultilevel` |  | |  | `mehrs` |
+| `MaterialProvisionFltrType` |  | |  | `beikz` |
+| `SparePartFltrType` |  | |  | `erskz` |
+| `FinalPriceIndicator` |  | |  | `cs_preis` |
+| `BOMExplosionIsAlternatePrio` |  | |  | `altvo` |
+| `BillOfMaterialSimulationValue` |  | |  | `cuobj` |
 
 ## Source Code
 

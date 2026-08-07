@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceListStatus` | `statu` |
-| key `Language` | `spras` |
-| `InvoiceListStatusDesc` | `bezei` |
-| `_InvoiceListStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceListStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `InvoiceListStatusDesc` |  | |  | `bezei` |
+| `_InvoiceListStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

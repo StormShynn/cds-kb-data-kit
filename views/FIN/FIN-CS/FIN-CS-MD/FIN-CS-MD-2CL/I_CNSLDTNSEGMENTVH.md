@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Segment` | `Segment` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Segment` | ✓ | |  |  |
 
 ## Source Code
 

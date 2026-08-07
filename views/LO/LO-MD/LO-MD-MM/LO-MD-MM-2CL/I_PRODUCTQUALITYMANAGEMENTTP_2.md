@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| `QltyMgmtInProcmtIsActive` | `QltyMgmtInProcmtIsActive` |
-| `CatalogProfile` | `CatalogProfile` |
-| `_Product` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `QltyMgmtInProcmtIsActive` |  | |  |  |
+| `CatalogProfile` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Source Code
 

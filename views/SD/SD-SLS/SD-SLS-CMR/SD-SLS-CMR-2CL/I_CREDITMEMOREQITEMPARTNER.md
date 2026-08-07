@@ -31,29 +31,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `cast(SalesDocument as credit_memo_request preserving type)` |
-| key `CreditMemoRequestItem` | `cast(SalesDocumentItem as credit_memo_request_item preserving type)` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `AddressID` | `AddressID` |
-| `AddressPersonID` | `AddressPersonID` |
-| `AddressObjectType` | `AddressObjectType` |
-| `SDDocPartnerAddressRefType` | `SDDocPartnerAddressRefType` |
-| `BPAddrDeterminationTransaction` | `BPAddrDeterminationTransaction` |
-| `BPRefAddressIDForDocSpcfcAddr` | `BPRefAddressIDForDocSpcfcAddr` |
-| `ContactPerson` | `ContactPerson` |
-| `ReferenceBusinessPartner` | `ReferenceBusinessPartner` |
-| `_CreditMemoRequest` | *Association* |
-| `_CreditMemoRequestItem` | *Association* |
-| `_PartnerFunction` | *Association* |
-| `_Address` | *Association* |
-| `_DfltAddrRprstn` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
-| `_BPRefAddressForDocSpcfcAddr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  | `cast(SalesDocument as credit_memo_request preserving type)` |
+| `CreditMemoRequestItem` | ✓ | |  | `cast(SalesDocumentItem as credit_memo_request_item preserving type)` |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `SDDocPartnerAddressRefType` |  | |  |  |
+| `BPAddrDeterminationTransaction` |  | |  |  |
+| `BPRefAddressIDForDocSpcfcAddr` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `_CreditMemoRequest` | | ✓ | | |
+| `_CreditMemoRequestItem` | | ✓ | | |
+| `_PartnerFunction` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_DfltAddrRprstn` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_BPRefAddressForDocSpcfcAddr` | | ✓ | | |
 
 ## Associations
 

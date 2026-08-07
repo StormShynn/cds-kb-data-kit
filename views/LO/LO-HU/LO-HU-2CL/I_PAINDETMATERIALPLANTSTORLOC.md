@@ -31,29 +31,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionType` | `PaInDetRec.kschl` |
-| key `Material` | `PaInDetRec.matnr` |
-| key `Plant` | `PaInDetRec.werks` |
-| key `StorageLocation` | `PaInDetRec.lgort` |
-| key `ConditionValidityEndDate` | `PaInDetRec.datbi` |
-| `ConditionValidityStartDate` | `PaInDetRec.datab` |
-| `ConditionRecord` | `PaInDetRec.knumh` |
-| `PackingInstructionSystemUUID` | `cast( Conditions.packnr as pl_packinstnr preserving type )` |
-| `PackingInstructionAlt1SystUUID` | `cast( Conditions.packnr1 as pl_altpacknr1 preserving type )` |
-| `PackingInstructionAlt2SystUUID` | `cast( Conditions.packnr2 as pl_altpacknr2 preserving type )` |
-| `PackingInstructionAlt3SystUUID` | `cast( Conditions.packnr3 as pl_altpacknr3 preserving type )` |
-| `PackingInstructionAlt4SystUUID` | `cast( Conditions.packnr4 as pl_altpacknr4 preserving type )` |
-| `_ConditionType` | *Association* |
-| `_Material` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_PackingInstructionHeader` | *Association* |
-| `_PackingInstructionHeaderAlt1` | *Association* |
-| `_PackingInstructionHeaderAlt2` | *Association* |
-| `_PackingInstructionHeaderAlt3` | *Association* |
-| `_PackingInstructionHeaderAlt4` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionType` | ✓ | |  | `kschl` |
+| `Material` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `StorageLocation` | ✓ | |  | `lgort` |
+| `ConditionValidityEndDate` | ✓ | |  | `datbi` |
+| `ConditionValidityStartDate` |  | |  | `datab` |
+| `ConditionRecord` |  | |  | `knumh` |
+| `PackingInstructionSystemUUID` |  | |  | `cast( Conditions.packnr as pl_packinstnr preserving type )` |
+| `PackingInstructionAlt1SystUUID` |  | |  | `cast( Conditions.packnr1 as pl_altpacknr1 preserving type )` |
+| `PackingInstructionAlt2SystUUID` |  | |  | `cast( Conditions.packnr2 as pl_altpacknr2 preserving type )` |
+| `PackingInstructionAlt3SystUUID` |  | |  | `cast( Conditions.packnr3 as pl_altpacknr3 preserving type )` |
+| `PackingInstructionAlt4SystUUID` |  | |  | `cast( Conditions.packnr4 as pl_altpacknr4 preserving type )` |
+| `_ConditionType` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_PackingInstructionHeader` | | ✓ | | |
+| `_PackingInstructionHeaderAlt1` | | ✓ | | |
+| `_PackingInstructionHeaderAlt2` | | ✓ | | |
+| `_PackingInstructionHeaderAlt3` | | ✓ | | |
+| `_PackingInstructionHeaderAlt4` | | ✓ | | |
 
 ## Associations
 

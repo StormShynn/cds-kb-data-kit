@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `stlnr` |
-| key `BillOfMaterialVariant` | `stlal` |
-| key `Material` | `matnr` |
-| key `Plant` | `werks` |
-| key `BillOfMaterialVariantUsage` | `stlan` |
-| `BillOfMaterialCategory` | `cast ('M' as stlty preserving type)` |
-| `MatFromLotSizeQuantity` | `losvn` |
-| `MaterialToLotSizeQuantity` | `losbs` |
-| `IsConfiguredMaterial` | `cslty` |
-| `MaterialBOMObjectID` | `material_bom_key` |
-| `CreatedByUser` | `annam` |
-| `LastChangedByUser` | `aenam` |
-| `_BillOfMaterialUsage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  | `stlnr` |
+| `BillOfMaterialVariant` | ✓ | |  | `stlal` |
+| `Material` | ✓ | |  | `matnr` |
+| `Plant` | ✓ | |  | `werks` |
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
+| `BillOfMaterialCategory` |  | |  | `cast ('M' as stlty preserving type)` |
+| `MatFromLotSizeQuantity` |  | |  | `losvn` |
+| `MaterialToLotSizeQuantity` |  | |  | `losbs` |
+| `IsConfiguredMaterial` |  | |  | `cslty` |
+| `MaterialBOMObjectID` |  | |  | `material_bom_key` |
+| `CreatedByUser` |  | |  | `annam` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `_BillOfMaterialUsage` | | ✓ | | |
 
 ## Associations
 

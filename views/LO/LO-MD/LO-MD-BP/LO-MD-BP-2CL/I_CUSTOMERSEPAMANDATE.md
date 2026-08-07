@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `SEPAMandateSender` |
-| key `SEPAMandate` | `SEPAMandate` |
-| key `SEPAMandateSenderIBAN` | `SEPAMandateSenderIBAN` |
-| key `SEPAMandateVersion` | `SEPAMandateVersion` |
-| `SEPAMandateSenderBankSWIFTCode` | `SEPAMandateSenderBankSWIFTCode` |
-| `SEPAMandateUUID` | `SEPAMandateUUID` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `SEPAPaymentType` | `SEPAPaymentType` |
-| `SEPAMandateStatus` | `SEPAMandateStatus` |
-| `SEPAMandateIsB2BMandate` | `SEPAMandateIsB2BMandate` |
-| `OriginalSEPAMandateCreditor` | `OriginalSEPAMandateCreditor` |
-| `OriginalSEPAMandate` | `OriginalSEPAMandate` |
-| `SEPAMandateApplication` | `SEPAMandateApplication` |
-| `SEPAMandateReferenceType` | `SEPAMandateReferenceType` |
-| `SEPAMandateReference` | `SEPAMandateReference` |
-| `SEPAMandateSenderType` | `SEPAMandateSenderType` |
-| `SEPAMandateRecipientType` | `SEPAMandateRecipientType` |
-| `SEPAMandateRecipient` | `SEPAMandateRecipient` |
-| `SEPAMandateCreditor` | `SEPAMandateCreditor` |
-| `SEPAMandateFirstUseDate` | `SEPAMandateFirstUseDate` |
-| `SEPAMandateFirstUseObjTypeCode` | `SEPAMandateFirstUseObjTypeCode` |
-| `SEPAMandateFirstUsePaymentDoc` | `SEPAMandateFirstUsePaymentDoc` |
-| `SEPAMandateLastUseDate` | `SEPAMandateLastUseDate` |
-| `SEPAMandateLastUseObjTypeCode` | `SEPAMandateLastUseObjTypeCode` |
-| `SEPAMandateLastUsePaymentDoc` | `SEPAMandateLastUsePaymentDoc` |
-| `SEPAMandateFirstUsePaymentRun` | `SEPAMandateFirstUsePaymentRun` |
-| `IsBusinessPurposeCompleted` | `_Customer.IsBusinessPurposeCompleted` |
-| `_Customer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `SEPAMandateSender` |
+| `SEPAMandate` | ✓ | |  |  |
+| `SEPAMandateSenderIBAN` | ✓ | |  |  |
+| `SEPAMandateVersion` | ✓ | |  |  |
+| `SEPAMandateSenderBankSWIFTCode` |  | |  |  |
+| `SEPAMandateUUID` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `SEPAPaymentType` |  | |  |  |
+| `SEPAMandateStatus` |  | |  |  |
+| `SEPAMandateIsB2BMandate` |  | |  |  |
+| `OriginalSEPAMandateCreditor` |  | |  |  |
+| `OriginalSEPAMandate` |  | |  |  |
+| `SEPAMandateApplication` |  | |  |  |
+| `SEPAMandateReferenceType` |  | |  |  |
+| `SEPAMandateReference` |  | |  |  |
+| `SEPAMandateSenderType` |  | |  |  |
+| `SEPAMandateRecipientType` |  | |  |  |
+| `SEPAMandateRecipient` |  | |  |  |
+| `SEPAMandateCreditor` |  | |  |  |
+| `SEPAMandateFirstUseDate` |  | |  |  |
+| `SEPAMandateFirstUseObjTypeCode` |  | |  |  |
+| `SEPAMandateFirstUsePaymentDoc` |  | |  |  |
+| `SEPAMandateLastUseDate` |  | |  |  |
+| `SEPAMandateLastUseObjTypeCode` |  | |  |  |
+| `SEPAMandateLastUsePaymentDoc` |  | |  |  |
+| `SEPAMandateFirstUsePaymentRun` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | | `_Customer` | `IsBusinessPurposeCompleted` |
+| `_Customer` | | ✓ | | |
 
 ## Associations
 

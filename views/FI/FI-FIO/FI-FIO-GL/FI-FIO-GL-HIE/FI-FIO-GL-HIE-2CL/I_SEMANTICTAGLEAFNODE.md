@@ -26,19 +26,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccountHierarchy` | `hrrp_semtag_n.hryid_42` |
-| key `HierarchyNode` | `hrynode` |
-| key `ValidityEndDate` | `hryvalto` |
-| key `SemanticTag` | `fins_sem_tag` |
-| `ValidityStartDate` | `hryvalfrom` |
-| `ChartOfAccounts` | `ktopl` |
-| `GLAccount` | `saknr` |
-| `FunctionalArea` | `fkber` |
-| `_GLAccountHierarchyNode` | *Association* |
-| `_Hierarchy` | *Association* |
-| `_SemanticTag` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountHierarchy` | ✓ | |  | `hryid_42` |
+| `HierarchyNode` | ✓ | |  | `hrynode` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `SemanticTag` | ✓ | |  | `fins_sem_tag` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `ChartOfAccounts` |  | |  | `ktopl` |
+| `GLAccount` |  | |  | `saknr` |
+| `FunctionalArea` |  | |  | `fkber` |
+| `_GLAccountHierarchyNode` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
+| `_SemanticTag` | | ✓ | | |
 
 ## Associations
 

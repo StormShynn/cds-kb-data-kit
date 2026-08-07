@@ -28,44 +28,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassInternalID` | `Class.ClassInternalID` |
-| `ClassType` | `Class.ClassType` |
-| `Class` | `Class.Class` |
-| `ClassStatus` | `Class.ClassStatus` |
-| `ClassGroup` | `Class.ClassGroup` |
-| `ClassSearchAuthGrp` | `Class.ClassSearchAuthGrp` |
-| `ClassClassfctnAuthGrp` | `Class.ClassClassfctnAuthGrp` |
-| `ClassMaintAuthGrp` | `Class.ClassMaintAuthGrp` |
-| `CreatedByUser` | `Class.CreatedByUser` |
-| `CreationDate` | `Class.CreationDate` |
-| `LastChangedByUser` | `Class.LastChangedByUser` |
-| `LastChangeDate` | `Class.LastChangeDate` |
-| `ValidityStartDate` | `Class.ValidityStartDate` |
-| `ValidityEndDate` | `Class.ValidityEndDate` |
-| `SameClassfctnReaction` | `Class. SameClassfctnReaction` |
-| `ClfnOrganizationalArea` | `Class.ClfnOrganizationalArea` |
-| `DocumentInfoRecordDocNumber` | `Class.DocumentInfoRecordDocNumber` |
-| `DocumentInfoRecordDocType` | `Class.DocumentInfoRecordDocType` |
-| `DocumentInfoRecordDocPart` | `Class.DocumentInfoRecordDocPart` |
-| `DocumentInfoRecordDocVersion` | `Class.DocumentInfoRecordDocVersion` |
-| `ClassStandardOrgName` | `Class.ClassStandardOrgName` |
-| `ClassStandardNumber` | `Class.ClassStandardNumber` |
-| `ClassStandardStartDate` | `Class.ClassStandardStartDate` |
-| `ClassStandardVersionStartDate` | `Class.ClassStandardVersionStartDate` |
-| `ClassStandardVersion` | `Class.ClassStandardVersion` |
-| `ClassStandardCharcTable` | `Class.ClassStandardCharcTable` |
-| `ClassBaseUnit` | `Class.ClassBaseUnit` |
-| `ClassIsUsableInBOM` | `Class.ClassIsUsableInBOM` |
-| `ClassIsLocal` | `Class.ClassIsLocal` |
-| `ClassLastChangedDateTime` | `Class.ClassLastChangedDateTime` |
-| `_ClassDescription` | *Association* |
-| `_ClassKeyword` | *Association* |
-| `_ClassCharacteristic` | *Association* |
-| `_ClassStatus` | *Association* |
-| `_ClassGroup` | *Association* |
-| `_ClassType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassInternalID` | ✓ | |  |  |
+| `ClassType` |  | |  |  |
+| `Class` |  | |  |  |
+| `ClassStatus` |  | |  |  |
+| `ClassGroup` |  | |  |  |
+| `ClassSearchAuthGrp` |  | |  |  |
+| `ClassClassfctnAuthGrp` |  | |  |  |
+| `ClassMaintAuthGrp` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `SameClassfctnReaction` |  | |  | `Class. SameClassfctnReaction` |
+| `ClfnOrganizationalArea` |  | |  |  |
+| `DocumentInfoRecordDocNumber` |  | |  |  |
+| `DocumentInfoRecordDocType` |  | |  |  |
+| `DocumentInfoRecordDocPart` |  | |  |  |
+| `DocumentInfoRecordDocVersion` |  | |  |  |
+| `ClassStandardOrgName` |  | |  |  |
+| `ClassStandardNumber` |  | |  |  |
+| `ClassStandardStartDate` |  | |  |  |
+| `ClassStandardVersionStartDate` |  | |  |  |
+| `ClassStandardVersion` |  | |  |  |
+| `ClassStandardCharcTable` |  | |  |  |
+| `ClassBaseUnit` |  | |  |  |
+| `ClassIsUsableInBOM` |  | |  |  |
+| `ClassIsLocal` |  | |  |  |
+| `ClassLastChangedDateTime` |  | |  |  |
+| `_ClassDescription` | | ✓ | | |
+| `_ClassKeyword` | | ✓ | | |
+| `_ClassCharacteristic` | | ✓ | | |
+| `_ClassStatus` | | ✓ | | |
+| `_ClassGroup` | | ✓ | | |
+| `_ClassType` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierConfirmationControlKey` | `bstae` |
-| key `Language` | `spras` |
-| `SupplierConfControlKeyName` | `bsbez` |
-| `_SupplierConfControlKey` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierConfirmationControlKey` | ✓ | |  | `bstae` |
+| `Language` | ✓ | |  | `spras` |
+| `SupplierConfControlKeyName` |  | |  | `bsbez` |
+| `_SupplierConfControlKey` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `CycleCountType` | `cast( abcin as mmim_cycle_count_type )` |
-| `NmbrOfPhysInvtryPerFiscalYear` | `cast( aninv as mmim_cycle_count_per_fisc_year )` |
-| `PhysInvtryIntvlForCycCounting` | `cast( ininv as mmim_cycle_count_interval )` |
-| `PhysInvtryFloatTimeCycCounting` | `cast( pzinv as mmim_cycle_count_float_time )` |
-| `ConfigDeprecationCode` | `cast( configurationdeprecationcode as config_deprecation_code )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `CycleCountType` | ✓ | |  | `cast( abcin as mmim_cycle_count_type )` |
+| `NmbrOfPhysInvtryPerFiscalYear` |  | |  | `cast( aninv as mmim_cycle_count_per_fisc_year )` |
+| `PhysInvtryIntvlForCycCounting` |  | |  | `cast( ininv as mmim_cycle_count_interval )` |
+| `PhysInvtryFloatTimeCycCounting` |  | |  | `cast( pzinv as mmim_cycle_count_float_time )` |
+| `ConfigDeprecationCode` |  | |  | `cast( configurationdeprecationcode as config_deprecation_code )` |
 
 ## Source Code
 

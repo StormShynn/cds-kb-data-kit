@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProdCmplncLogsDocumentItem` | `ehfnd_log_doc_posnr` |
-| `Product` | `ehfnd_mat_id` |
-| `DngrsGdsCalculatedEnclosureQty` | `dngrsgdscalculatedenclosureqty` |
-| `DangerousGoodsEnclosureSapUnit` | `ehfnd_vdm_component_unit_sap` |
-| `DangerousGoodsEnclosureISOUnit` | `ehfnd_vdm_component_unit_iso` |
-| `D_CalctDngrsGdsPtsItmRglnR` | `_ItemRegulation : composition [0..*] of D_CalctDngrsGdsPtsItmRglnR` |
-| `_Document` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocumentItem` |  | |  | `ehfnd_log_doc_posnr` |
+| `Product` |  | |  | `ehfnd_mat_id` |
+| `DngrsGdsCalculatedEnclosureQty` |  | |  | `dngrsgdscalculatedenclosureqty` |
+| `DangerousGoodsEnclosureSapUnit` |  | |  | `ehfnd_vdm_component_unit_sap` |
+| `DangerousGoodsEnclosureISOUnit` |  | |  | `ehfnd_vdm_component_unit_iso` |
+| `D_CalctDngrsGdsPtsItmRglnR` |  | |  | `_ItemRegulation : composition [0..*] of D_CalctDngrsGdsPtsItmRglnR` |
+| `_Document` | | ✓ | | |
 
 ## Source Code
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcInternalID` | `cast ( CharcRestriction.atinn as atinn_no_conv preserving type )` |
-| key `ClassType` | `CharcRestriction.klart` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcInternalID` | ✓ | |  | `cast ( CharcRestriction.atinn as atinn_no_conv preserving type )` |
+| `ClassType` | ✓ | |  | `klart` |
 
 ## Source Code
 

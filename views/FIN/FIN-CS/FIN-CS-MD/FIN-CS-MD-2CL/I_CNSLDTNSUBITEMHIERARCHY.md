@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnSubitemCategory` | `_Hierarchy.CnsldtnSubitemCategory` |
-| key `ConsolidationSubitemHierarchy` | `cast( _Hierarchy.CnsldtnUniversalHierarchy as fincs_subitemhierarchy preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
-| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
-| `_SubitemCategory` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnSubitemCategory` | ✓ | | `_Hierarchy` | `CnsldtnSubitemCategory` |
+| `ConsolidationSubitemHierarchy` | ✓ | |  | `cast( _Hierarchy.CnsldtnUniversalHierarchy as fincs_subitemhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
+| `_SubitemCategory` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

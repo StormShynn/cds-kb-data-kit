@@ -28,62 +28,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `bp1030.partnr` |
-| `BPIsNonResident` | `bp1030.nresidt` |
-| `BPNonResidencyStartDate` | `bp1030.nresi_d` |
-| `BPIsMultimillionLoanRecipient` | `bp1030.kwg_rlv` |
-| `BPLoanReportingBorrowerNumber` | `bp1030.kwg_nr` |
-| `BPLoanRptgBorrowerEntityNumber` | `bp1030.kwg_enr` |
-| `BPCreditStandingReview` | `bp1030.kwg_cre` |
-| `BPCreditStandingReviewDate` | `bp1030.kwg_cre_d` |
-| `BusinessPartnerLoanToManager` | `bp1030.kwg_org` |
-| `BPCompanyRelationship` | `bp1030.comp_re` |
-| `BPLoanReportingCreditorNumber` | `bp1030.kwg_cred_nr` |
-| `BPOeNBIdentNumber` | `bp1030.xid_at` |
-| `BPOeNBTargetGroup` | `bp1030.szg_at` |
-| `BPOeNBIdentNumberAssigned` | `bp1030.sid_at` |
-| `BPOeNBInstituteNumber` | `bp1030.sinlz_at` |
-| `BusinessPartnerIsOeNBInstitute` | `bp1030.sinme_at` |
-| `BusinessPartnerGroup` | `bp1030.gid_at` |
-| `BPGroupAssignmentCategory` | `bp1030.gidtype_at` |
-| `BusinessPartnerGroupName` | `bp1030.gname_at` |
-| `BusinessPartnerLegalEntity` | `bp1030.ent_repo` |
-| `BPGerAstRglnRestrictedAstQuota` | `bp1030.ent_quot` |
-| `BusinessPartnerDebtorGroup` | `bp1030.deb_grou` |
-| `BusinessPartnerBusinessPurpose` | `bp1030.bus_purp` |
-| `BusinessPartnerRiskGroup` | `bp1030.risk_group` |
-| `BPRiskGroupingDate` | `bp1030.classification_d` |
-| `BPHasGroupAffiliation` | `bp1030.combine_tie` |
-| `BPIsMonetaryFinInstitution` | `bp1030.mfi` |
-| `BPCrdtStandingReviewIsRequired` | `bp1030.kwg_rel` |
-| `BPLoanMonitoringIsRequired` | `bp1030.l_credit_check` |
-| `BPHasCreditingRelief` | `bp1030.crediting_relief` |
-| `BPInvestInRstrcdAstIsAuthzd` | `bp1030.par1_abs1_rel` |
-| `BPCentralBankCountryRegion` | `bp1030.country_key` |
-| `_BusinessPartner` | *Association* |
-| `_BPFinancialServicesExtn` | *Association* |
-| `_BPBusinessPurpose` | *Association* |
-| `_BPBusinessPurposeText` | *Association* |
-| `_BPCntrlBankCountryRegion` | *Association* |
-| `_BPCntrlBankCountryRegionText` | *Association* |
-| `_BPCompanyRelationship` | *Association* |
-| `_BPCompanyRelationshipText` | *Association* |
-| `_BPCreditStandingReview` | *Association* |
-| `_BPCreditStandingReviewText` | *Association* |
-| `_BPDebtorGroup` | *Association* |
-| `_BPDebtorGroupText` | *Association* |
-| `_BPGerAstRglnRstrcdAstQta` | *Association* |
-| `_BPGerAstRglnRstrcdAstQtaText` | *Association* |
-| `_BPGrpAssignmentCategory` | *Association* |
-| `_BPGrpAssignmentCategoryText` | *Association* |
-| `_BPLegalEntity` | *Association* |
-| `_BPLegalEntityText` | *Association* |
-| `_BPLoanToManager` | *Association* |
-| `_BPLoanToManagerText` | *Association* |
-| `_BPRiskGroup` | *Association* |
-| `_BPRiskGroupText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partnr` |
+| `BPIsNonResident` |  | |  | `nresidt` |
+| `BPNonResidencyStartDate` |  | |  | `nresi_d` |
+| `BPIsMultimillionLoanRecipient` |  | |  | `kwg_rlv` |
+| `BPLoanReportingBorrowerNumber` |  | |  | `kwg_nr` |
+| `BPLoanRptgBorrowerEntityNumber` |  | |  | `kwg_enr` |
+| `BPCreditStandingReview` |  | |  | `kwg_cre` |
+| `BPCreditStandingReviewDate` |  | |  | `kwg_cre_d` |
+| `BusinessPartnerLoanToManager` |  | |  | `kwg_org` |
+| `BPCompanyRelationship` |  | |  | `comp_re` |
+| `BPLoanReportingCreditorNumber` |  | |  | `kwg_cred_nr` |
+| `BPOeNBIdentNumber` |  | |  | `xid_at` |
+| `BPOeNBTargetGroup` |  | |  | `szg_at` |
+| `BPOeNBIdentNumberAssigned` |  | |  | `sid_at` |
+| `BPOeNBInstituteNumber` |  | |  | `sinlz_at` |
+| `BusinessPartnerIsOeNBInstitute` |  | |  | `sinme_at` |
+| `BusinessPartnerGroup` |  | |  | `gid_at` |
+| `BPGroupAssignmentCategory` |  | |  | `gidtype_at` |
+| `BusinessPartnerGroupName` |  | |  | `gname_at` |
+| `BusinessPartnerLegalEntity` |  | |  | `ent_repo` |
+| `BPGerAstRglnRestrictedAstQuota` |  | |  | `ent_quot` |
+| `BusinessPartnerDebtorGroup` |  | |  | `deb_grou` |
+| `BusinessPartnerBusinessPurpose` |  | |  | `bus_purp` |
+| `BusinessPartnerRiskGroup` |  | |  | `risk_group` |
+| `BPRiskGroupingDate` |  | |  | `classification_d` |
+| `BPHasGroupAffiliation` |  | |  | `combine_tie` |
+| `BPIsMonetaryFinInstitution` |  | |  | `mfi` |
+| `BPCrdtStandingReviewIsRequired` |  | |  | `kwg_rel` |
+| `BPLoanMonitoringIsRequired` |  | |  | `l_credit_check` |
+| `BPHasCreditingRelief` |  | |  | `crediting_relief` |
+| `BPInvestInRstrcdAstIsAuthzd` |  | |  | `par1_abs1_rel` |
+| `BPCentralBankCountryRegion` |  | |  | `country_key` |
+| `_BusinessPartner` | | ✓ | | |
+| `_BPFinancialServicesExtn` | | ✓ | | |
+| `_BPBusinessPurpose` | | ✓ | | |
+| `_BPBusinessPurposeText` | | ✓ | | |
+| `_BPCntrlBankCountryRegion` | | ✓ | | |
+| `_BPCntrlBankCountryRegionText` | | ✓ | | |
+| `_BPCompanyRelationship` | | ✓ | | |
+| `_BPCompanyRelationshipText` | | ✓ | | |
+| `_BPCreditStandingReview` | | ✓ | | |
+| `_BPCreditStandingReviewText` | | ✓ | | |
+| `_BPDebtorGroup` | | ✓ | | |
+| `_BPDebtorGroupText` | | ✓ | | |
+| `_BPGerAstRglnRstrcdAstQta` | | ✓ | | |
+| `_BPGerAstRglnRstrcdAstQtaText` | | ✓ | | |
+| `_BPGrpAssignmentCategory` | | ✓ | | |
+| `_BPGrpAssignmentCategoryText` | | ✓ | | |
+| `_BPLegalEntity` | | ✓ | | |
+| `_BPLegalEntityText` | | ✓ | | |
+| `_BPLoanToManager` | | ✓ | | |
+| `_BPLoanToManagerText` | | ✓ | | |
+| `_BPRiskGroup` | | ✓ | | |
+| `_BPRiskGroupText` | | ✓ | | |
 
 ## Associations
 

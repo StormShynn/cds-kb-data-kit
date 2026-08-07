@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocCheckDateTimeType` | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckdatetimetype preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocCheckDateTimeType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodalloccheckdatetimetype preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

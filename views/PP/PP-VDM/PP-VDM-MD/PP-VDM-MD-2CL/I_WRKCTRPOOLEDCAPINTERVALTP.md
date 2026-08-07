@@ -29,22 +29,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityInternalID` | `CapacityInternalID` |
-| key `CapacityActiveVersion` | `CapacityActiveVersion` |
-| key `IntervalEndDate` | `IntervalEndDate` |
-| `IntervalStartDate` | `IntervalStartDate` |
-| `StdAvailableCapacityIsValid` | `StdAvailableCapacityIsValid` |
-| `AvailableCapacityIntervalDurn` | `AvailableCapacityIntervalDurn` |
-| `ShiftSequence` | `ShiftSequence` |
-| `WorkDayRule` | `WorkDayRule` |
-| `CapacityNumberOfShifts` | `CapacityNumberOfShifts` |
-| `CapacityNumberOfCapacities` | `CapacityNumberOfCapacities` |
-| `CapacityPlanUtilizationPercent` | `CapacityPlanUtilizationPercent` |
-| `CapacityLastChangeDateTime` | `CapacityLastChangeDateTime` |
-| `_Header` | *Association* |
-| `_Shift` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  |  |
+| `CapacityActiveVersion` | ✓ | |  |  |
+| `IntervalEndDate` | ✓ | |  |  |
+| `IntervalStartDate` |  | |  |  |
+| `StdAvailableCapacityIsValid` |  | |  |  |
+| `AvailableCapacityIntervalDurn` |  | |  |  |
+| `ShiftSequence` |  | |  |  |
+| `WorkDayRule` |  | |  |  |
+| `CapacityNumberOfShifts` |  | |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_Shift` | | ✓ | | |
 
 ## Source Code
 

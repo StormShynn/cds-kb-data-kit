@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderID` | `aufnr` |
-| key `ConfirmationGroup` | `cast(rueck as pph_rueck preserving type)` |
-| key `OrderConfirmation` | `cast(rmzhl as pph_rmzhl preserving type)` |
-| `CreationDate` | `ersda` |
-| `CreationTime` | `ertim` |
-| `CreatedByUser` | `ernam` |
-| `OrderCategory` | `cast(autyp as pph_autyp preserving type)` |
-| `CostingErrorLogID` | `cast(cmfnr as vdm_cmfnr preserving type)` |
-| `_Order` | *Association* |
-| `_OrderCategory` | *Association* |
-| `_ConfirmationGroup` | *Association* |
-| `_Confirmation` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_CreationDate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderID` | ✓ | |  | `aufnr` |
+| `ConfirmationGroup` | ✓ | |  | `cast(rueck as pph_rueck preserving type)` |
+| `OrderConfirmation` | ✓ | |  | `cast(rmzhl as pph_rmzhl preserving type)` |
+| `CreationDate` |  | |  | `ersda` |
+| `CreationTime` |  | |  | `ertim` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `OrderCategory` |  | |  | `cast(autyp as pph_autyp preserving type)` |
+| `CostingErrorLogID` |  | |  | `cast(cmfnr as vdm_cmfnr preserving type)` |
+| `_Order` | | ✓ | | |
+| `_OrderCategory` | | ✓ | | |
+| `_ConfirmationGroup` | | ✓ | | |
+| `_Confirmation` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_CreationDate` | | ✓ | | |
 
 ## Associations
 

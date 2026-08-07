@@ -28,77 +28,77 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MemoRecord` | `Memorecord.document_id` |
-| `MemoRecordDescription` | `Memorecord.description` |
-| `CompanyCode` | `Memorecord.company_code` |
-| `MemoRecordCategory` | `Memorecord.category` |
-| `MemoRecordType` | `Memorecord.planning_type` |
-| `PlanningLevel` | `Memorecord.planning_level` |
-| `MemoRecordBalanceDateDimension` | `Memorecord.date_dimension` |
-| `TransactionDate` | `Memorecord.transaction_date` |
-| `MemoRecordExpirationDateTime` | `Memorecord.expiration_datetime` |
-| `MemoRecordStatus_2` | `Memorecord.status` |
-| `MemoRecordStatus` | `Memorecord.status` |
-| `BankAccountInternalID` | `Memorecord.acc_id` |
-| `AmountInTransactionCurrency` | `Memorecord.amount_in_transaction_currency` |
-| `TransactionCurrency` | `Memorecord.transaction_currency` |
-| `AmountInCompanyCodeCurrency` | `Memorecord.amount_in_company_code_curr` |
-| `CompanyCodeCurrency` | `Memorecord.company_code_currency` |
-| `CashFlowReconciliationBundle` | `Memorecord.source_rcn_bndl` |
-| `CashPlanningGroup` | `Memorecord.planning_group` |
-| `LiquidityItem` | `Memorecord.liquidity_item` |
-| `BankStatementShortID` | `Memorecord.kukey` |
-| `BankStatementItem` | `Memorecord.esnum` |
-| `ProfitCenter` | `Memorecord.profit_center` |
-| `Fund` | `Memorecord.fund` |
-| `GrantID` | `Memorecord.grant_nbr` |
-| `BusinessArea` | `Memorecord.business_area` |
-| `MemoRecordStatisticsIndicator` | `Memorecord.statistics_indicator` |
-| `MemoRecordCharacteristic` | `Memorecord.characteristics` |
-| `MemoRecordInternalReference` | `Memorecord.refer` |
-| `BankStatementDate` | `Memorecord.azdat` |
-| `MemoRecordChannel` | `Memorecord.channel` |
-| `CreationDate` | `Memorecord.created_on` |
-| `LastChangeDate` | `Memorecord.changed_on` |
-| `CreatedByUser` | `Memorecord.created_by` |
-| `LastChangeByUser` | `Memorecord.changed_by` |
-| `CreationDateTime` | `Memorecord.created_at` |
-| `LastChangeDateTime` | `Memorecord.changed_at` |
-| `LocalLastChangeDateTime` | `Memorecord.local_changed_at` |
-| `HouseBank` | `Memorecord.hbkid` |
-| `HouseBankAccount` | `Memorecord.hktid` |
-| `PostingDate` | `Memorecord.posting_date` |
-| `GLAccount` | `Memorecord.gl_account` |
-| `MemoRecordImport` | `Memorecord.memorecordimportid` |
-| `MemoRecordIsLeadingDocument` | `Memorecord.is_leading_doc` |
-| `MemoRecdOffsettingCompanyCode` | `Memorecord.offset_company_code` |
-| `MemoRecordOffsettingHouseBank` | `Memorecord.offset_hbkid` |
-| `MemoRecdOffstgHouseBankAccount` | `Memorecord.offset_hktid` |
-| `MemoRecordPairingReason` | `Memorecord.pairing_reason` |
-| `MemoRecdOffstgBkAcctInternalID` | `Memorecord.offset_acc_id` |
-| `OffsettingMemoRecord` | `Memorecord.offset_doc_id` |
-| `MemoRecdOffstgTransactionDate` | `Memorecord.offset_transaction_date` |
-| `_CompanyCode` | *Association* |
-| `_MemoRecordCategoryText` | *Association* |
-| `_Currency` | *Association* |
-| `_BankAccount` | *Association* |
-| `_OffsetBankAccount` | *Association* |
-| `_OffsetCompanyCode` | *Association* |
-| `_MemoRecordStatusText` | *Association* |
-| `_MemoRecordTypeText` | *Association* |
-| `_PlanningLevelText` | *Association* |
-| `_CashPlanningGroupText` | *Association* |
-| `_LiquidityItemText` | *Association* |
-| `_GLAccountInCompanyCode` | *Association* |
-| `_GrantText` | *Association* |
-| `_BalDteDimnText` | *Association* |
-| `_BusinessAreaText` | *Association* |
-| `_StatisticalItemText` | *Association* |
-| `_BankAccountText` | *Association* |
-| `_OffstgBankAccountText` | *Association* |
-| `_GLAccountTextInCompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MemoRecord` | ✓ | |  | `document_id` |
+| `MemoRecordDescription` |  | |  | `description` |
+| `CompanyCode` |  | |  | `company_code` |
+| `MemoRecordCategory` |  | |  | `category` |
+| `MemoRecordType` |  | |  | `planning_type` |
+| `PlanningLevel` |  | |  | `planning_level` |
+| `MemoRecordBalanceDateDimension` |  | |  | `date_dimension` |
+| `TransactionDate` |  | |  | `transaction_date` |
+| `MemoRecordExpirationDateTime` |  | |  | `expiration_datetime` |
+| `MemoRecordStatus_2` |  | |  | `status` |
+| `MemoRecordStatus` |  | |  | `status` |
+| `BankAccountInternalID` |  | |  | `acc_id` |
+| `AmountInTransactionCurrency` |  | |  | `amount_in_transaction_currency` |
+| `TransactionCurrency` |  | |  | `transaction_currency` |
+| `AmountInCompanyCodeCurrency` |  | |  | `amount_in_company_code_curr` |
+| `CompanyCodeCurrency` |  | |  | `company_code_currency` |
+| `CashFlowReconciliationBundle` |  | |  | `source_rcn_bndl` |
+| `CashPlanningGroup` |  | |  | `planning_group` |
+| `LiquidityItem` |  | |  | `liquidity_item` |
+| `BankStatementShortID` |  | |  | `kukey` |
+| `BankStatementItem` |  | |  | `esnum` |
+| `ProfitCenter` |  | |  | `profit_center` |
+| `Fund` |  | |  | `fund` |
+| `GrantID` |  | |  | `grant_nbr` |
+| `BusinessArea` |  | |  | `business_area` |
+| `MemoRecordStatisticsIndicator` |  | |  | `statistics_indicator` |
+| `MemoRecordCharacteristic` |  | |  | `characteristics` |
+| `MemoRecordInternalReference` |  | |  | `refer` |
+| `BankStatementDate` |  | |  | `azdat` |
+| `MemoRecordChannel` |  | |  | `channel` |
+| `CreationDate` |  | |  | `created_on` |
+| `LastChangeDate` |  | |  | `changed_on` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `LastChangeByUser` |  | |  | `changed_by` |
+| `CreationDateTime` |  | |  | `created_at` |
+| `LastChangeDateTime` |  | |  | `changed_at` |
+| `LocalLastChangeDateTime` |  | |  | `local_changed_at` |
+| `HouseBank` |  | |  | `hbkid` |
+| `HouseBankAccount` |  | |  | `hktid` |
+| `PostingDate` |  | |  | `posting_date` |
+| `GLAccount` |  | |  | `gl_account` |
+| `MemoRecordImport` |  | |  | `memorecordimportid` |
+| `MemoRecordIsLeadingDocument` |  | |  | `is_leading_doc` |
+| `MemoRecdOffsettingCompanyCode` |  | |  | `offset_company_code` |
+| `MemoRecordOffsettingHouseBank` |  | |  | `offset_hbkid` |
+| `MemoRecdOffstgHouseBankAccount` |  | |  | `offset_hktid` |
+| `MemoRecordPairingReason` |  | |  | `pairing_reason` |
+| `MemoRecdOffstgBkAcctInternalID` |  | |  | `offset_acc_id` |
+| `OffsettingMemoRecord` |  | |  | `offset_doc_id` |
+| `MemoRecdOffstgTransactionDate` |  | |  | `offset_transaction_date` |
+| `_CompanyCode` | | ✓ | | |
+| `_MemoRecordCategoryText` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_BankAccount` | | ✓ | | |
+| `_OffsetBankAccount` | | ✓ | | |
+| `_OffsetCompanyCode` | | ✓ | | |
+| `_MemoRecordStatusText` | | ✓ | | |
+| `_MemoRecordTypeText` | | ✓ | | |
+| `_PlanningLevelText` | | ✓ | | |
+| `_CashPlanningGroupText` | | ✓ | | |
+| `_LiquidityItemText` | | ✓ | | |
+| `_GLAccountInCompanyCode` | | ✓ | | |
+| `_GrantText` | | ✓ | | |
+| `_BalDteDimnText` | | ✓ | | |
+| `_BusinessAreaText` | | ✓ | | |
+| `_StatisticalItemText` | | ✓ | | |
+| `_BankAccountText` | | ✓ | | |
+| `_OffstgBankAccountText` | | ✓ | | |
+| `_GLAccountTextInCompanyCode` | | ✓ | | |
 
 ## Associations
 

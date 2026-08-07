@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionCatGroupUUID` | `LegalTransactionCatGroupUUID` |
-| `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LglCntntMCatGroupTitle` | `LglCntntMCatGroupTitle` |
-| `LglCntntMIndex` | `LglCntntMIndex` |
-| `_LegalTransaction` | *Association* |
-| `_LglTransParentCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionCatGroupUUID` | ✓ | |  |  |
+| `LegalTransactionUUID` |  | |  |  |
+| `LglCntntMCatGroupTitle` |  | |  |  |
+| `LglCntntMIndex` |  | |  |  |
+| `_LegalTransaction` | | ✓ | | |
+| `_LglTransParentCategory` | | ✓ | | |
 
 ## Associations
 

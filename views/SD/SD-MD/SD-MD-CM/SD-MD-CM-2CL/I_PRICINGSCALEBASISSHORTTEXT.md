@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `PricingScaleBasisShort` | `cast ( substring( domvalue_l, 1, 1 ) as kzbzg )` |
-| `PricingScaleBasisName` | `cast ( ddtext as val_text )` |
-| `_PricingScaleBasisShort` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `PricingScaleBasisShort` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kzbzg )` |
+| `PricingScaleBasisName` |  | |  | `cast ( ddtext as val_text )` |
+| `_PricingScaleBasisShort` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

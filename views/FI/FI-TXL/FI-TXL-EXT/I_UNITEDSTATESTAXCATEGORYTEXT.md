@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UnitedStatesTaxCategory` | `cast(domvalue_l as txind_007a)` |
-| key `Language` | `cast(ddlanguage as spras)` |
-| `UnitedStatesTaxCategoryName` | `ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UnitedStatesTaxCategory` | ✓ | |  | `cast(domvalue_l as txind_007a)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras)` |
+| `UnitedStatesTaxCategoryName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

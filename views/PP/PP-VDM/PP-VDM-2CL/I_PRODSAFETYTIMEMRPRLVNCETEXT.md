@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `t.ddlanguage` |
-| key `ProductSafetyTimeMRPRelevance` | `cast(substring(t.domvalue_l, 1, 1) as pph_shflg preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `ProdSafetyTimeMRPRelevanceName` | `t.ddtext` |
-| `_Language` | *Association* |
-| `_ProdSafetyTimeMRPRelevance` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ProductSafetyTimeMRPRelevance` | ✓ | |  | `cast(substring(t.domvalue_l, 1, 1) as pph_shflg preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `ProdSafetyTimeMRPRelevanceName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_ProdSafetyTimeMRPRelevance` | | ✓ | | |
 
 ## Associations
 

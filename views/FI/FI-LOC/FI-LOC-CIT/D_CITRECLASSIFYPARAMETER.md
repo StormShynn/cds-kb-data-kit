@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `IsChanged` | `abap.char( 1 )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IsChanged` |  | |  | `abap.char( 1 )` |
 
 ## Source Code
 

@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `NFeActive.docnum` |
-| `BR_NFeDocumentStatus` | `NFeActive.docsta` |
-| `BR_NFIsCanceled` | `NFeActive.cancel` |
-| `Region` | `NFeActive.regio` |
-| `BR_NFeIssueYear` | `cast(NFeActive.nfyear as logbr_year preserving type)` |
-| `BR_NFeIssueMonth` | `NFeActive.nfmonth` |
-| `BR_NFeAccessKeyCNPJOrCPF` | `NFeActive.stcd1` |
-| `BR_NFeModel` | `cast(NFeActive.model as logbr_model preserving type)` |
-| `BR_NFeSeries` | `cast(NFeActive.serie as logbr_nf_series preserving type)` |
-| `BR_NFeNumber` | `cast(NFeActive.nfnum9 as logbr_nfnum9 preserving type)` |
-| `BR_NFeRandomNumber` | `cast(ltrim(NFeActive.docnum9, '0') as logbr_docnum9 preserving type)` |
-| `BR_NFeCheckDigit` | `cast(NFeActive.cdv as logbr_checkdigit preserving type)` |
-| `BR_NFAuthznProtocolNumber` | `NFeActive.authcod` |
-| `BR_NFAuthznProtocolNumber16` | `NFeActive.authcod16` |
-| `BR_NFActionRequestedCode` | `NFeActive.action_requ` |
-| `BR_NFEnvironmentType` | `NFeActive.tpamb` |
-| `BR_NFAuthenticationDate` | `cast(NFeActive.authdate as logbr_authdate preserving type )` |
-| `BR_NFAuthenticationTime` | `cast(NFeActive.authtime as logbr_authtime preserving type )` |
-| `IssuingType` | `cast(NFeActive.tpemis as logbr_nfe_tpemis preserving type)` |
-| `_BR_IssuingType` | *Association* |
-| `_BR_NFeModel` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NFeDocumentStatus` |  | |  | `docsta` |
+| `BR_NFIsCanceled` |  | |  | `cancel` |
+| `Region` |  | |  | `regio` |
+| `BR_NFeIssueYear` |  | |  | `cast(NFeActive.nfyear as logbr_year preserving type)` |
+| `BR_NFeIssueMonth` |  | |  | `nfmonth` |
+| `BR_NFeAccessKeyCNPJOrCPF` |  | |  | `stcd1` |
+| `BR_NFeModel` |  | |  | `cast(NFeActive.model as logbr_model preserving type)` |
+| `BR_NFeSeries` |  | |  | `cast(NFeActive.serie as logbr_nf_series preserving type)` |
+| `BR_NFeNumber` |  | |  | `cast(NFeActive.nfnum9 as logbr_nfnum9 preserving type)` |
+| `BR_NFeRandomNumber` |  | |  | `cast(ltrim(NFeActive.docnum9, '0') as logbr_docnum9 preserving type)` |
+| `BR_NFeCheckDigit` |  | |  | `cast(NFeActive.cdv as logbr_checkdigit preserving type)` |
+| `BR_NFAuthznProtocolNumber` |  | |  | `authcod` |
+| `BR_NFAuthznProtocolNumber16` |  | |  | `authcod16` |
+| `BR_NFActionRequestedCode` |  | |  | `action_requ` |
+| `BR_NFEnvironmentType` |  | |  | `tpamb` |
+| `BR_NFAuthenticationDate` |  | |  | `cast(NFeActive.authdate as logbr_authdate preserving type )` |
+| `BR_NFAuthenticationTime` |  | |  | `cast(NFeActive.authtime as logbr_authtime preserving type )` |
+| `IssuingType` |  | |  | `cast(NFeActive.tpemis as logbr_nfe_tpemis preserving type)` |
+| `_BR_IssuingType` | | ✓ | | |
+| `_BR_NFeModel` | | ✓ | | |
 
 ## Associations
 

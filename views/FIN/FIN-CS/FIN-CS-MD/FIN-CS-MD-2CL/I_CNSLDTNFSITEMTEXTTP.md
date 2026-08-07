@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Source.Language` |
-| key `ConsolidationChartOfAccounts` | `_Source.ConsolidationChartOfAccounts` |
-| key `CnsldtnFinancialStatementItem` | `_Source.CnsldtnFinancialStatementItem` |
-| `CnsldtnFSItemText` | `_Source.CnsldtnFSItemText` |
-| `CnsldtnFSItemMediumText` | `_Source.CnsldtnFSItemMediumText` |
-| `CnsldtnFSItemLongText` | `_Source.CnsldtnFSItemLongText` |
-| `_CnsldtnFSItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Source` | `Language` |
+| `ConsolidationChartOfAccounts` | ✓ | | `_Source` | `ConsolidationChartOfAccounts` |
+| `CnsldtnFinancialStatementItem` | ✓ | | `_Source` | `CnsldtnFinancialStatementItem` |
+| `CnsldtnFSItemText` |  | | `_Source` | `CnsldtnFSItemText` |
+| `CnsldtnFSItemMediumText` |  | | `_Source` | `CnsldtnFSItemMediumText` |
+| `CnsldtnFSItemLongText` |  | | `_Source` | `CnsldtnFSItemLongText` |
+| `_CnsldtnFSItem` | | ✓ | | |
 
 ## Source Code
 

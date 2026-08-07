@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `CreditMemoRequestItemText.CreditMemoRequest` |
-| key `CreditMemoRequestItem` | `CreditMemoRequestItemText.CreditMemoRequestItem` |
-| key `Language` | `CreditMemoRequestItemText.Language` |
-| key `LongTextID` | `CreditMemoRequestItemText.LongTextID` |
-| `LongTextIDForEdit` | `CreditMemoRequestItemText.LongTextIDForEdit` |
-| `LanguageForEdit` | `CreditMemoRequestItemText.LanguageForEdit` |
-| `LongText` | `CreditMemoRequestItemText.LongText` |
-| `CreditMemoRequestType` | `CreditMemoRequestItemText.CreditMemoRequestType` |
-| `SalesOrganization` | `CreditMemoRequestItemText.SalesOrganization` |
-| `DistributionChannel` | `CreditMemoRequestItemText.DistributionChannel` |
-| `OrganizationDivision` | `CreditMemoRequestItemText.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_CreditMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |
+| `CreditMemoRequestItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` | ✓ | |  |  |
+| `LongTextIDForEdit` |  | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `LongText` |  | |  |  |
+| `CreditMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_CreditMemoRequest` | | ✓ | | |
 
 ## Source Code
 

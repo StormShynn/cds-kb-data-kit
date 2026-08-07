@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierConfirmationCategory` | `ebtyp` |
-| key `Language` | `spras` |
-| `SupplierConfCategoryName` | `ebtxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierConfirmationCategory` | ✓ | |  | `ebtyp` |
+| `Language` | ✓ | |  | `spras` |
+| `SupplierConfCategoryName` |  | |  | `ebtxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

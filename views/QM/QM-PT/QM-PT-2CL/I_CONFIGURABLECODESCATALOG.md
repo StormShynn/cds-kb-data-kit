@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfigurableCodesCatalog` | `tq15.katalogart` |
-| `ConfigblCodesCtlgHasLgclDeltn` | `cast( tq15.hist as vdm_qhistkat preserving type )` |
-| `_ConfigblCodesCatalogText` | *Association* |
-| `_ConfigurableCodesCodeGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |
+| `ConfigblCodesCtlgHasLgclDeltn` |  | |  | `cast( tq15.hist as vdm_qhistkat preserving type )` |
+| `_ConfigblCodesCatalogText` | | ✓ | | |
+| `_ConfigurableCodesCodeGroup` | | ✓ | | |
 
 ## Associations
 

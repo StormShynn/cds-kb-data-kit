@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JVACtbckAcctMappgInterBsc.CompanyCode` |
-| key `JntVntrIntcoCode` | `JVACtbckAcctMappgInterBsc.JntVntrIntcoCode` |
-| key `FromGLAccount` | `JVACtbckAcctMappgInterBsc.FromGLAccount` |
-| `ToGLAccount` | `JVACtbckAcctMappgInterBsc.ToGLAccount` |
-| `CutbackAccount` | `JVACtbckAcctMappgInterBsc.CutbackAccount` |
-| `JVAIsToKeepOriginalAccount` | `JVACtbckAcctMappgInterBsc.JVAIsToKeepOriginalAccount` |
-| `_CompanyCode` | *Association* |
-| `_InterCompanyCompanyCode` | *Association* |
-| `_FromGLAccount` | *Association* |
-| `_ToGLAccount` | *Association* |
-| `_CutbackAccount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntVntrIntcoCode` | ✓ | |  |  |
+| `FromGLAccount` | ✓ | |  |  |
+| `ToGLAccount` |  | |  |  |
+| `CutbackAccount` |  | |  |  |
+| `JVAIsToKeepOriginalAccount` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_InterCompanyCompanyCode` | | ✓ | | |
+| `_FromGLAccount` | | ✓ | | |
+| `_ToGLAccount` | | ✓ | | |
+| `_CutbackAccount` | | ✓ | | |
 
 ## Associations
 

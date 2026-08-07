@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurgCatPlndSpendUUID` | `PurgCatPlndSpendUUID` |
-| `PurgCatUUID` | `PurgCatUUID` |
-| `PurgCatPlndSpendValidFromDate` | `PurgCatPlndSpendValidFromDate` |
-| `PurgCatPlndSpendValidToDate` | `PurgCatPlndSpendValidToDate` |
-| `PurgCatPlndSpendAmount` | `PurgCatPlndSpendAmount` |
-| `PurgCatPlndSpendCurrency` | `PurgCatPlndSpendCurrency` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurgCatPlndSpendUUID` | ✓ | |  |  |
+| `PurgCatUUID` |  | |  |  |
+| `PurgCatPlndSpendValidFromDate` |  | |  |  |
+| `PurgCatPlndSpendValidToDate` |  | |  |  |
+| `PurgCatPlndSpendAmount` |  | |  |  |
+| `PurgCatPlndSpendCurrency` |  | |  |  |
 
 ## Source Code
 

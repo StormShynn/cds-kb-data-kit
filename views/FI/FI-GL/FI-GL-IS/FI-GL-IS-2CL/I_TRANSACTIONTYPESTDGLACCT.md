@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `cast (ktopl as fis_ktopl preserving type)` |
-| key `TransactionTypeDetermination` | `cast (ktosl as fac_ktosl preserving type )` |
-| key `ValuationAreaGroup` | `bwmod` |
-| key `GLAcctDetnDifferentiation` | `komok` |
-| key `ValuationClass` | `bklas` |
-| `DebitGLAccount` | `cast (konts as ftr_gen_gl_account_debit preserving type)` |
-| `CreditGLAccount` | `cast (case when konth is null then konts else konth end as ftr_gen_gl_account_credit preserving type )` |
-| `_StandardGLAcctDetnRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `cast (ktopl as fis_ktopl preserving type)` |
+| `TransactionTypeDetermination` | ✓ | |  | `cast (ktosl as fac_ktosl preserving type )` |
+| `ValuationAreaGroup` | ✓ | |  | `bwmod` |
+| `GLAcctDetnDifferentiation` | ✓ | |  | `komok` |
+| `ValuationClass` | ✓ | |  | `bklas` |
+| `DebitGLAccount` |  | |  | `cast (konts as ftr_gen_gl_account_debit preserving type)` |
+| `CreditGLAccount` |  | |  | `cast (case when konth is null then konts else konth end as ftr_gen_gl_account_credit preserving type )` |
+| `_StandardGLAcctDetnRule` | | ✓ | | |
 
 ## Associations
 

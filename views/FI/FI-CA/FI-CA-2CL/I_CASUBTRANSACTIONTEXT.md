@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAApplicationArea` | `applk` |
-| key `CAMainTransaction` | `hvorg` |
-| key `CASubTransaction` | `tvorg` |
-| key `Language` | `spras` |
-| `CASubTransactionName` | `cast( txt30 as tvorg_text_kk preserving type )` |
-| `_ApplArea` | `_CAApplicationArea` |
-| `_MainTransaction` | `_CAMainTransaction` |
-| `_CAApplicationArea` | *Association* |
-| `_CAMainTransaction` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAApplicationArea` | ✓ | |  | `applk` |
+| `CAMainTransaction` | ✓ | |  | `hvorg` |
+| `CASubTransaction` | ✓ | |  | `tvorg` |
+| `Language` | ✓ | |  | `spras` |
+| `CASubTransactionName` |  | |  | `cast( txt30 as tvorg_text_kk preserving type )` |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |
+| `_MainTransaction` |  | |  | `_CAMainTransaction` |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAMainTransaction` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

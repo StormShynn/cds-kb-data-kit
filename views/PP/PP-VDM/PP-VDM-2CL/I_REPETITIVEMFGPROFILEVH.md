@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RepetitiveManufacturingProfile` | `RepetitiveManufacturingProfile` |
-| `RepetitiveMfgProductionType` | `RepetitiveMfgProductionType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RepetitiveManufacturingProfile` | ✓ | |  |  |
+| `RepetitiveMfgProductionType` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserStatus` | `tj30t.estat` |
-| key `StatusProfile` | `tj30t.stsma` |
-| key `Language` | `tj30t.spras` |
-| `UserStatusName` | `tj30t.txt30` |
-| `UserStatusShortName` | `tj30t.txt04` |
-| `_UserStatus` | *Association* |
-| `_StatusProfile` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserStatus` | ✓ | |  | `estat` |
+| `StatusProfile` | ✓ | |  | `stsma` |
+| `Language` | ✓ | |  | `spras` |
+| `UserStatusName` |  | |  | `txt30` |
+| `UserStatusShortName` |  | |  | `txt04` |
+| `_UserStatus` | | ✓ | | |
+| `_StatusProfile` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

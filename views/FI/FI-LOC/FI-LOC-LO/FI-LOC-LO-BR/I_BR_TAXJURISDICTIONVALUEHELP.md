@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `cast( country as land1 preserving type )` |
-| key `TaxJurisdiction` | `taxjurcode` |
-| `TaxJurisdictionName` | `_BR_TaxJurisdictionText.TaxJurisdictionName` |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `cast( country as land1 preserving type )` |
+| `TaxJurisdiction` | ✓ | |  | `taxjurcode` |
+| `TaxJurisdictionName` |  | | `_BR_TaxJurisdictionText` | `TaxJurisdictionName` |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

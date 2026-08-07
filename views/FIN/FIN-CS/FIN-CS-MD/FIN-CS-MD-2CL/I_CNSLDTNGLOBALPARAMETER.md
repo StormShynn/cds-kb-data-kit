@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationDimension` | `cast( coalesce(_CnsldtnGlobalParameter.dimen, 'Y1') as fc_dimen )` |
-| `ConsolidationChartOfAccounts` | `cast( coalesce(_CnsldtnGlobalParameter.itclg, '') as fc_itclg )` |
-| `ConsolidationLedger` | `cast( coalesce(_CnsldtnGlobalParameter.rldnr, 'Y1') as fc_rldnr )` |
-| `ConsolidationVersion` | `cast( coalesce(_CnsldtnGlobalParameter.rvers, '') as fc_rvers )` |
-| `FiscalYear` | `cast( coalesce(_CnsldtnGlobalParameter.ryear, '0000') as ryear )` |
-| `FiscalPeriod` | `cast( coalesce(_CnsldtnGlobalParameter.perid, '000') as poper )` |
-| `UserName` | `_CnsldtnGlobalParameter.uname` |
-| `ConsolidationGroup` | `cast( coalesce(_CnsldtnGlobalParameter.congr, '') as fincs_consolidationgroup )` |
-| `ConsolidationUnit` | `cast( coalesce(_CnsldtnGlobalParameter.bunit, '') as fincs_consolidationunit )` |
-| `FiscalYearVariant` | `cast( coalesce(_CnsldtnVersion.FiscalYearVariant,'K4') as fis_periv)` |
-| `FiscalYearPeriod` | `cast(concat( cast( coalesce(_CnsldtnGlobalParameter.ryear, '0000') as ryear ), cast( coalesce(_CnsldtnGlobalParameter.perid, '000') as poper )) as fins_fyearperiod)` |
-| `ConsolidationGroupHierarchy` | `cast( coalesce(_CnsldtnGlobalParameter.cg_hry, '') as fincs_congr_hry )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationDimension` | ✓ | |  | `cast( coalesce(_CnsldtnGlobalParameter.dimen, 'Y1') as fc_dimen )` |
+| `ConsolidationChartOfAccounts` |  | |  | `cast( coalesce(_CnsldtnGlobalParameter.itclg, '') as fc_itclg )` |
+| `ConsolidationLedger` |  | |  | `cast( coalesce(_CnsldtnGlobalParameter.rldnr, 'Y1') as fc_rldnr )` |
+| `ConsolidationVersion` |  | |  | `cast( coalesce(_CnsldtnGlobalParameter.rvers, '') as fc_rvers )` |
+| `FiscalYear` |  | |  | `cast( coalesce(_CnsldtnGlobalParameter.ryear, '0000') as ryear )` |
+| `FiscalPeriod` |  | |  | `cast( coalesce(_CnsldtnGlobalParameter.perid, '000') as poper )` |
+| `UserName` |  | | `_CnsldtnGlobalParameter` | `uname` |
+| `ConsolidationGroup` |  | |  | `cast( coalesce(_CnsldtnGlobalParameter.congr, '') as fincs_consolidationgroup )` |
+| `ConsolidationUnit` |  | |  | `cast( coalesce(_CnsldtnGlobalParameter.bunit, '') as fincs_consolidationunit )` |
+| `FiscalYearVariant` |  | |  | `cast( coalesce(_CnsldtnVersion.FiscalYearVariant,'K4') as fis_periv)` |
+| `FiscalYearPeriod` |  | |  | `cast(concat( cast( coalesce(_CnsldtnGlobalParameter.ryear, '0000') as ryear ), cast( coalesce(_CnsldtnGlobalParameter.perid, '000') as poper )) as fins_fyearperiod)` |
+| `ConsolidationGroupHierarchy` |  | |  | `cast( coalesce(_CnsldtnGlobalParameter.cg_hry, '') as fincs_congr_hry )` |
 
 ## Source Code
 

@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspLotOfEWMSummaryControl` | `cast (substring ( domvalue_l, 1, 1) as qlot_control_origin_17 preserving type )` |
-| key `Language` | `ddlanguage` |
-| `InspLotOfEWMSummaryControlText` | `cast( ddtext as qlot_control_origin_17_text preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspLotOfEWMSummaryControl` | ✓ | |  | `cast (substring ( domvalue_l, 1, 1) as qlot_control_origin_17 preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `InspLotOfEWMSummaryControlText` |  | |  | `cast( ddtext as qlot_control_origin_17_text preserving type )` |
 
 ## Source Code
 

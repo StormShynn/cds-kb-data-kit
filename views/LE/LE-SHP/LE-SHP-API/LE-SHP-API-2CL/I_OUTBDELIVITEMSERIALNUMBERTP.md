@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OutboundDelivery` | `OutboundDelivery` |
-| key `OutboundDeliveryItem` | `OutboundDeliveryItem` |
-| key `SerialNumber` | `SerialNumber` |
-| `Equipment` | `Equipment` |
-| `Material` | `Material` |
-| `_Delivery` | *Association* |
-| `_Item` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OutboundDelivery` | ✓ | |  |  |
+| `OutboundDeliveryItem` | ✓ | |  |  |
+| `SerialNumber` | ✓ | |  |  |
+| `Equipment` |  | |  |  |
+| `Material` |  | |  |  |
+| `_Delivery` | | ✓ | | |
+| `_Item` | | ✓ | | |
 
 ## Source Code
 

@@ -29,37 +29,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingCostRateUUID` | `AccountingCostRateUUID` |
-| `CurrencyRole` | `CurrencyRole` |
-| `Ledger` | `Ledger` |
-| `CompanyCode` | `CompanyCode` |
-| `CostCenter` | `CostCenter` |
-| `ActivityType` | `ActivityType` |
-| `IsIntercompanyRate` | `IsIntercompanyRate` |
-| `ReceivingCompanyCode` | `ReceivingCompanyCode` |
-| `ServiceCostLevel` | `ServiceCostLevel` |
-| `PersonnelNumber` | `PersonnelNumber` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `WorkItem` | `WorkItem` |
-| `TimeSheetOvertimeCategory` | `TimeSheetOvertimeCategory` |
-| `ValidityStartFiscalYear` | `ValidityStartFiscalYear` |
-| `ValidityStartFiscalPeriod` | `ValidityStartFiscalPeriod` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndFiscalYear` | `ValidityEndFiscalYear` |
-| `ValidityEndFiscalPeriod` | `ValidityEndFiscalPeriod` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ControllingArea` | `ControllingArea` |
-| `Currency` | `Currency` |
-| `CostRateTotalAmount` | `CostRateTotalAmount` |
-| `CostRateFixedAmount` | `CostRateFixedAmount` |
-| `CostRateVarblAmount` | `CostRateVarblAmount` |
-| `CostRateScaleFactor` | `CostRateScaleFactor` |
-| `PlanningCategory` | `PlanningCategory` |
-| `BusinessTransactionType` | `BusinessTransactionType` |
-| `ComponentBreakdown` | `ComponentBreakdown` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingCostRateUUID` | ✓ | |  |  |
+| `CurrencyRole` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `IsIntercompanyRate` |  | |  |  |
+| `ReceivingCompanyCode` |  | |  |  |
+| `ServiceCostLevel` |  | |  |  |
+| `PersonnelNumber` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |
+| `ValidityStartFiscalYear` |  | |  |  |
+| `ValidityStartFiscalPeriod` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndFiscalYear` |  | |  |  |
+| `ValidityEndFiscalPeriod` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CostRateTotalAmount` |  | |  |  |
+| `CostRateFixedAmount` |  | |  |  |
+| `CostRateVarblAmount` |  | |  |  |
+| `CostRateScaleFactor` |  | |  |  |
+| `PlanningCategory` |  | |  |  |
+| `BusinessTransactionType` |  | |  |  |
+| `ComponentBreakdown` |  | |  |  |
 
 ## Source Code
 

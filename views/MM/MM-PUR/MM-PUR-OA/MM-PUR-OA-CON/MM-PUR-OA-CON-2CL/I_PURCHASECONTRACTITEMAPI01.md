@@ -31,95 +31,95 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `I_PurchaseContractItem.PurchaseContract` |
-| key `PurchaseContractItem` | `I_PurchaseContractItem.PurchaseContractItem` |
-| `Material` | `I_PurchaseContractItem.Material` |
-| `PurchaseContractItemText` | `I_PurchaseContractItem.PurchaseContractItemText` |
-| `ContractNetPriceAmount` | `I_PurchaseContractItem.ContractNetPriceAmount` |
-| `OrderPriceUnit` | `I_PurchaseContractItem.OrderPriceUnit` |
-| `VolumeUnit` | `I_PurchaseContractItem.VolumeUnit` |
-| `OrderQuantityUnit` | `I_PurchaseContractItem.OrderQuantityUnit` |
-| `MaterialGroup` | `I_PurchaseContractItem.MaterialGroup` |
-| `Customer` | `I_PurchaseContractItem.Customer` |
-| `Subcontractor` | `I_PurchaseContractItem.Subcontractor` |
-| `ReferenceDeliveryAddressID` | `I_PurchaseContractItem.ReferenceDeliveryAddressID` |
-| `ManualDeliveryAddressID` | `I_PurchaseContractItem.ManualDeliveryAddressID` |
-| `DeliveryAddressID` | `cast(I_PurchaseContractItem.DeliveryAddressID as contactcardaddress)` |
-| `DeliveryAddressID_2` | `I_PurchaseContractItem.DeliveryAddressID` |
-| `Plant` | `I_PurchaseContractItem.Plant` |
-| `StorageLocation` | `I_PurchaseContractItem.StorageLocation` |
-| `AccountAssignmentCategory` | `I_PurchaseContractItem.AccountAssignmentCategory` |
-| `GoodsReceiptIsExpected` | `I_PurchaseContractItem.GoodsReceiptIsExpected` |
-| `NetPriceQuantity` | `I_PurchaseContractItem.NetPriceQuantity` |
-| `MultipleAcctAssgmtDistribution` | `I_PurchaseContractItem.MultipleAcctAssgmtDistribution` |
-| `TargetQuantity` | `I_PurchaseContractItem.TargetQuantity` |
-| `TargetAmount` | `I_PurchaseContractItem.TargetAmount` |
-| `DocumentCurrency` | `I_PurchaseContractItem.DocumentCurrency` |
-| `OrdPriceUnitToOrderUnitDnmntr` | `I_PurchaseContractItem.OrdPriceUnitToOrderUnitDnmntr` |
-| `OrderPriceUnitToOrderUnitNmrtr` | `I_PurchaseContractItem.OrderPriceUnitToOrderUnitNmrtr` |
-| `PurchasingDocumentItemCategory` | `I_PurchaseContractItem.PurchasingDocumentItemCategory` |
-| `SupplierMaterialNumber` | `I_PurchaseContractItem.SupplierMaterialNumber` |
-| `EvaldRcptSettlmtIsAllowed` | `I_PurchaseContractItem.EvaldRcptSettlmtIsAllowed` |
-| `UnderdelivTolrtdLmtRatioInPct` | `I_PurchaseContractItem.UnderdelivTolrtdLmtRatioInPct` |
-| `PriceIsToBePrinted` | `I_PurchaseContractItem.PriceIsToBePrinted` |
-| `SupplierConfirmationControlKey` | `I_PurchaseContractItem.SupplierConfirmationControlKey` |
-| `OverdelivTolrtdLmtRatioInPct` | `I_PurchaseContractItem.OverdelivTolrtdLmtRatioInPct` |
-| `UnlimitedOverdeliveryIsAllowed` | `I_PurchaseContractItem.UnlimitedOverdeliveryIsAllowed` |
-| `InvoiceIsExpected` | `I_PurchaseContractItem.InvoiceIsExpected` |
-| `InvoiceIsGoodsReceiptBased` | `I_PurchaseContractItem.InvoiceIsGoodsReceiptBased` |
-| `PurgDocPriceDate` | `I_PurchaseContractItem.PurgDocPriceDate` |
-| `IsInfoRecordUpdated` | `I_PurchaseContractItem.IsInfoRecordUpdated` |
-| `PurchasingInfoRecordUpdateCode` | `I_PurchaseContractItem.PurchasingInfoRecordUpdateCode` |
-| `PurgDocReleaseOrderQuantity` | `I_PurchaseContractItem.PurgDocReleaseOrderQuantity` |
-| `PurgDocOrderAcknNumber` | `I_PurchaseContractItem.PurgDocOrderAcknNumber` |
-| `PurgDocEstimatedPrice` | `I_PurchaseContractItem.PurgDocEstimatedPrice` |
-| `IsInfoAtRegistration` | `I_PurchaseContractItem.IsInfoAtRegistration` |
-| `NoDaysReminder1` | `I_PurchaseContractItem.NoDaysReminder1` |
-| `NoDaysReminder2` | `I_PurchaseContractItem.NoDaysReminder2` |
-| `NoDaysReminder3` | `I_PurchaseContractItem.NoDaysReminder3` |
-| `StockType` | `I_PurchaseContractItem.StockType` |
-| `TaxCode` | `I_PurchaseContractItem.TaxCode` |
-| `RequirementTracking` | `I_PurchaseContractItem.RequirementTracking` |
-| `IsOrderAcknRqd` | `I_PurchaseContractItem.IsOrderAcknRqd` |
-| `ShippingInstruction` | `I_PurchaseContractItem.ShippingInstruction` |
-| `ShippingType` | `I_PurchaseContractItem.ShippingType` |
-| `GoodsReceiptIsNonValuated` | `I_PurchaseContractItem.GoodsReceiptIsNonValuated` |
-| `ServicePerformer` | `I_PurchaseContractItem.ServicePerformer` |
-| `ProductType` | `I_PurchaseContractItem.ProductType` |
-| `ProductTypeCode` | `I_PurchaseContractItem.ProductTypeCode` |
-| `MaterialType` | `I_PurchaseContractItem.MaterialType` |
-| `FormattedPurchaseContractItem` | `I_PurchaseContractItem.FormattedPurchaseContractItem` |
-| `PurchaseContractItemFormatted` | `I_PurchaseContractItem.PurchaseContractItemFormatted` |
-| `PurchasingContractDeletionCode` | `I_PurchaseContractItem.PurchasingContractDeletionCode` |
-| `PurchaseContractItemUniqueID` | `I_PurchaseContractItem.PurchaseContractItemUniqueID` |
-| `PlannedDeliveryDurationInDays` | `I_PurchaseContractItem.PlannedDeliveryDurationInDays` |
-| `GoodsReceiptDurationInDays` | `I_PurchaseContractItem.GoodsReceiptDurationInDays` |
-| `CompanyCode` | `I_PurchaseContractItem.CompanyCode` |
-| `PurchaseContractType` | `I_PurchaseContractItem.PurchaseContractType` |
-| `IsToBeAcceptedAtOrigin` | `I_PurchaseContractItem.IsToBeAcceptedAtOrigin` |
-| `PartialInvoiceDistribution` | `I_PurchaseContractItem.PartialInvoiceDistribution` |
-| `IncotermsClassification` | `I_PurchaseContractItem.IncotermsClassification` |
-| `IncotermsLocation1` | `I_PurchaseContractItem.IncotermsLocation1` |
-| `IncotermsLocation2` | `I_PurchaseContractItem.IncotermsLocation2` |
-| `SupplierSubrange` | `I_PurchaseContractItem.SupplierSubrange` |
-| `PurchasingInfoRecord` | `I_PurchaseContractItem.PurchasingInfoRecord` |
-| `TaxCountry` | `I_PurchaseContractItem.TaxCountry` |
-| `TaxDeterminationDate` | `I_PurchaseContractItem.TaxDeterminationDate` |
-| `PurchaseRequisition` | `I_PurchaseContractItem.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `I_PurchaseContractItem.PurchaseRequisitionItem` |
-| `PurContractItmReplnmtElmntType` | `I_PurchaseContractItem.PurContractItmReplnmtElmntType` |
-| `PurgProdCmplncSupplierStatus` | `I_PurchaseContractItem.PurgProdCmplncSupplierStatus` |
-| `PurchasingIsCatalogRelevant` | `I_PurchaseContractItem.PurchasingIsCatalogRelevant` |
-| `PurchasingParentItem` | `I_PurchaseContractItem.PurchasingParentItem` |
-| `IsStatisticalItem` | `I_PurchaseContractItem.IsStatisticalItem` |
-| `PurgConfigurableItemNumber` | `I_PurchaseContractItem.PurgConfigurableItemNumber` |
-| `PurgDocAggrgdSubitemCategory` | `I_PurchaseContractItem.PurgDocAggrgdSubitemCategory` |
-| `PurgExternalSortNumber` | `I_PurchaseContractItem.PurgExternalSortNumber` |
-| `PurchasingCategory` | `_PurchasingCategoryMatlGroup._PurchasingCategory.PurchasingCategory` |
-| `PurgCatName` | `_PurchasingCategoryMatlGroup._PurchasingCategory.PurgCatName` |
-| `_PurchaseContractAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `Material` |  | |  |  |
+| `PurchaseContractItemText` |  | |  |  |
+| `ContractNetPriceAmount` |  | |  |  |
+| `OrderPriceUnit` |  | |  |  |
+| `VolumeUnit` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Subcontractor` |  | |  |  |
+| `ReferenceDeliveryAddressID` |  | |  |  |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `DeliveryAddressID` |  | |  | `cast(I_PurchaseContractItem.DeliveryAddressID as contactcardaddress)` |
+| `DeliveryAddressID_2` |  | |  | `DeliveryAddressID` |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `NetPriceQuantity` |  | |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetAmount` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `PriceIsToBePrinted` |  | |  |  |
+| `SupplierConfirmationControlKey` |  | |  |  |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  |
+| `PurgDocPriceDate` |  | |  |  |
+| `IsInfoRecordUpdated` |  | |  |  |
+| `PurchasingInfoRecordUpdateCode` |  | |  |  |
+| `PurgDocReleaseOrderQuantity` |  | |  |  |
+| `PurgDocOrderAcknNumber` |  | |  |  |
+| `PurgDocEstimatedPrice` |  | |  |  |
+| `IsInfoAtRegistration` |  | |  |  |
+| `NoDaysReminder1` |  | |  |  |
+| `NoDaysReminder2` |  | |  |  |
+| `NoDaysReminder3` |  | |  |  |
+| `StockType` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `IsOrderAcknRqd` |  | |  |  |
+| `ShippingInstruction` |  | |  |  |
+| `ShippingType` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `ProductType` |  | |  |  |
+| `ProductTypeCode` |  | |  |  |
+| `MaterialType` |  | |  |  |
+| `FormattedPurchaseContractItem` |  | |  |  |
+| `PurchaseContractItemFormatted` |  | |  |  |
+| `PurchasingContractDeletionCode` |  | |  |  |
+| `PurchaseContractItemUniqueID` |  | |  |  |
+| `PlannedDeliveryDurationInDays` |  | |  |  |
+| `GoodsReceiptDurationInDays` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchaseContractType` |  | |  |  |
+| `IsToBeAcceptedAtOrigin` |  | |  |  |
+| `PartialInvoiceDistribution` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `SupplierSubrange` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `TaxDeterminationDate` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `PurContractItmReplnmtElmntType` |  | |  |  |
+| `PurgProdCmplncSupplierStatus` |  | |  |  |
+| `PurchasingIsCatalogRelevant` |  | |  |  |
+| `PurchasingParentItem` |  | |  |  |
+| `IsStatisticalItem` |  | |  |  |
+| `PurgConfigurableItemNumber` |  | |  |  |
+| `PurgDocAggrgdSubitemCategory` |  | |  |  |
+| `PurgExternalSortNumber` |  | |  |  |
+| `PurchasingCategory` |  | | `_PurchasingCategoryMatlGroup._PurchasingCategory` | `PurchasingCategory` |
+| `PurgCatName` |  | | `_PurchasingCategoryMatlGroup._PurchasingCategory` | `PurgCatName` |
+| `_PurchaseContractAPI01` | | ✓ | | |
 
 ## Associations
 

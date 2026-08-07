@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MachineType` | `txt.matyp` |
-| key `Language` | `txt.spras` |
-| `MachineTypeName` | `txt.matyt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MachineType` | ✓ | |  | `matyp` |
+| `Language` | ✓ | |  | `spras` |
+| `MachineTypeName` |  | |  | `matyt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

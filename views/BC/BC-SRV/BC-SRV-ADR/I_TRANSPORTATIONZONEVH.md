@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportZone` | `TransportZone` |
-| key `CountryCode` | `CountryCode` |
-| `_Country` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportZone` | ✓ | |  |  |
+| `CountryCode` | ✓ | |  |  |
+| `_Country` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

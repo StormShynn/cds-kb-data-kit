@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Division` | `Division` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Division` | ✓ | |  |  |
 
 ## Source Code
 

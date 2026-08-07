@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocConsistencyStatus` | `cast ( substring( domvalue_l, 1, 2 ) as prodallocconsistencystatus preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocConsistencyStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocconsistencystatus preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

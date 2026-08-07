@@ -30,60 +30,60 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `OverallScore.Supplier` |
-| key `PurchasingCategory` | `PurchasingCategory` |
-| `PurgCatName` | `PurgCatName` |
-| `PurgDocMigrtnIsCmpltdForAnlyts` | `, derivation: { lookupEntity: 'F_ProcmtAnalyticsDataSelMeth', resultElement: 'PurgDocMigrtnIsCmpltdForAnlyts' } } PurgDocMigrtnIsCmpltdForAnlyts` |
-| `SuplrEvalCritraDelivCompleted` | `, derivation: { lookupEntity: 'F_SuplrEvalCriteriaGenConfign', resultElement: 'SuplrEvalCritraDelivCompleted' } } SuplrEvalCritraDelivCompleted` |
-| `SuplrEvalRelevantDocCategory` | `SuplrEvalRelevantDocCategory` |
-| `CalendarYear` | `OverallScore.CalendarYear` |
-| `CalendarMonth` | `OverallScore.CalendarMonth` |
-| `CalendarQuarter` | `OverallScore.CalendarQuarter` |
-| `CalendarWeek` | `OverallScore.CalendarWeek` |
-| `Country` | `_Supplier.Country` |
-| `Region` | `_Supplier.Region` |
-| `SupplierClassification` | `SupplierClassification` |
-| `IsCriteriaActive` | `IsCriteriaActive` |
-| `OperationalSupplierEvalTotWgtg` | `OperationalSupplierEvalTotWgtg` |
-| `IsSupplierEvalSwitchActive` | `max( case when IsSupplierEvalSwitchActive = 'X' then 1 else 0 end )` |
-| `WeightingFactor` | `WeightingFactor` |
-| `DisplayCurrency` | `DisplayCurrency` |
-| `TotalSpendAmount` | `cast(sum(OverallScore.PurchaseOrderNetPriceAmount) as total_spend_amount)` |
-| `CalculatedOperationalScore` | `cast(sum(OverallScore.OperationalScore ) as mm_a_calculatedoplscore)` |
-| `OperationalScoreCount` | `sum(OverallScore.OperationalScoreCount)` |
-| `SuplrEvalCalculatedScoreValue` | `cast( sum( OverallScore.SuplrEvalCalculatedScoreValue) as questionnairescore )` |
-| `SupplierEvalScoreTargetValue` | `sum( OverallScore.SupplierEvalScoreTargetValue )` |
-| `NumberOfResponses` | `sum( OverallScore.NumberOfResponses )` |
-| `SuplrEvalUsrDfndCriteria1Score` | `sum(OverallScore.SuplrEvalUsrDfndCriteria1Score )` |
-| `SuplrEvalUsrDfndCriteria2Score` | `sum(OverallScore.SuplrEvalUsrDfndCriteria2Score)` |
-| `SuplrEvalUsrDfndCriteria3Score` | `sum(OverallScore.SuplrEvalUsrDfndCriteria3Score)` |
-| `SuplrEvalUsrDfndCriteria4Score` | `sum(OverallScore.SuplrEvalUsrDfndCriteria4Score)` |
-| `SuplrEvalUsrDfndCriteria5Score` | `sum(OverallScore.SuplrEvalUsrDfndCriteria5Score)` |
-| `SupplierEvalUsrCriteria6Value` | `sum(OverallScore.SupplierEvalUsrCriteria6Value)` |
-| `SuplrEvalUsrDfndCritraTotScore` | `sum(OverallScore.SuplrEvalUsrDfndCritraTotScore)` |
-| `SuplrEvalUsrDfndCritraTotVal` | `sum(OverallScore.SuplrEvalUsrDfndCritraTotVal)` |
-| `NmbrOfSuplrEvalUsrDfndCritra1` | `sum(NmbrOfSuplrEvalUsrDfndCritra1 )` |
-| `NmbrOfSuplrEvalUsrDfndCritra2` | `sum(NmbrOfSuplrEvalUsrDfndCritra2 )` |
-| `NmbrOfSuplrEvalUsrDfndCritra3` | `sum(NmbrOfSuplrEvalUsrDfndCritra3 )` |
-| `NmbrOfSuplrEvalUsrDfndCritra4` | `sum(NmbrOfSuplrEvalUsrDfndCritra4 )` |
-| `NmbrOfSuplrEvalUsrDfndCritra5` | `sum(NmbrOfSuplrEvalUsrDfndCritra5 )` |
-| `NmbrOfSuplrEvalUsrDfndCritra6` | `sum(NmbrOfSuplrEvalUsrDfndCritra6)` |
-| `TotNmbrOfSuplrUsrDfndCritra` | `sum(TotNmbrOfSuplrUsrDfndCritra )` |
-| `SupplierEvalUsrCriteria1Wgtg` | `max(SupplierEvalUsrCriteria1Wgtg)` |
-| `SupplierEvalUsrCriteria2Wgtg` | `max(SupplierEvalUsrCriteria2Wgtg)` |
-| `SupplierEvalUsrCriteria3Wgtg` | `max(SupplierEvalUsrCriteria3Wgtg)` |
-| `SupplierEvalUsrCriteria4Wgtg` | `max(SupplierEvalUsrCriteria4Wgtg)` |
-| `SupplierEvalUsrCriteria5Wgtg` | `max(SupplierEvalUsrCriteria5Wgtg)` |
-| `SuplrEvalUsrCriteria6WgtgValue` | `max(SuplrEvalUsrCriteria6WgtgValue)` |
-| `NmbrOfSuplrEvalQnaire` | `sum(NmbrOfSuplrEvalQnaire)` |
-| `OperationalScore` | `OperationalScoreCounter` |
-| `_ClassificationText` | *Association* |
-| `_Supplier` | *Association* |
-| `_PurchasingCategory` | *Association* |
-| `_Country` | *Association* |
-| `_Region` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  |  |
+| `PurchasingCategory` | ✓ | |  |  |
+| `PurgCatName` |  | |  |  |
+| `PurgDocMigrtnIsCmpltdForAnlyts` |  | |  | `, derivation: { lookupEntity: 'F_ProcmtAnalyticsDataSelMeth', resultElement: 'PurgDocMigrtnIsCmpltdForAnlyts' } } PurgDocMigrtnIsCmpltdForAnlyts` |
+| `SuplrEvalCritraDelivCompleted` |  | |  | `, derivation: { lookupEntity: 'F_SuplrEvalCriteriaGenConfign', resultElement: 'SuplrEvalCritraDelivCompleted' } } SuplrEvalCritraDelivCompleted` |
+| `SuplrEvalRelevantDocCategory` |  | |  |  |
+| `CalendarYear` |  | |  |  |
+| `CalendarMonth` |  | |  |  |
+| `CalendarQuarter` |  | |  |  |
+| `CalendarWeek` |  | |  |  |
+| `Country` |  | | `_Supplier` | `Country` |
+| `Region` |  | | `_Supplier` | `Region` |
+| `SupplierClassification` |  | |  |  |
+| `IsCriteriaActive` |  | |  |  |
+| `OperationalSupplierEvalTotWgtg` |  | |  |  |
+| `IsSupplierEvalSwitchActive` |  | |  | `max( case when IsSupplierEvalSwitchActive = 'X' then 1 else 0 end )` |
+| `WeightingFactor` |  | |  |  |
+| `DisplayCurrency` |  | |  |  |
+| `TotalSpendAmount` |  | |  | `cast(sum(OverallScore.PurchaseOrderNetPriceAmount) as total_spend_amount)` |
+| `CalculatedOperationalScore` |  | |  | `cast(sum(OverallScore.OperationalScore ) as mm_a_calculatedoplscore)` |
+| `OperationalScoreCount` |  | |  | `sum(OverallScore.OperationalScoreCount)` |
+| `SuplrEvalCalculatedScoreValue` |  | |  | `cast( sum( OverallScore.SuplrEvalCalculatedScoreValue) as questionnairescore )` |
+| `SupplierEvalScoreTargetValue` |  | |  | `sum( OverallScore.SupplierEvalScoreTargetValue )` |
+| `NumberOfResponses` |  | |  | `sum( OverallScore.NumberOfResponses )` |
+| `SuplrEvalUsrDfndCriteria1Score` |  | |  | `sum(OverallScore.SuplrEvalUsrDfndCriteria1Score )` |
+| `SuplrEvalUsrDfndCriteria2Score` |  | |  | `sum(OverallScore.SuplrEvalUsrDfndCriteria2Score)` |
+| `SuplrEvalUsrDfndCriteria3Score` |  | |  | `sum(OverallScore.SuplrEvalUsrDfndCriteria3Score)` |
+| `SuplrEvalUsrDfndCriteria4Score` |  | |  | `sum(OverallScore.SuplrEvalUsrDfndCriteria4Score)` |
+| `SuplrEvalUsrDfndCriteria5Score` |  | |  | `sum(OverallScore.SuplrEvalUsrDfndCriteria5Score)` |
+| `SupplierEvalUsrCriteria6Value` |  | |  | `sum(OverallScore.SupplierEvalUsrCriteria6Value)` |
+| `SuplrEvalUsrDfndCritraTotScore` |  | |  | `sum(OverallScore.SuplrEvalUsrDfndCritraTotScore)` |
+| `SuplrEvalUsrDfndCritraTotVal` |  | |  | `sum(OverallScore.SuplrEvalUsrDfndCritraTotVal)` |
+| `NmbrOfSuplrEvalUsrDfndCritra1` |  | |  | `sum(NmbrOfSuplrEvalUsrDfndCritra1 )` |
+| `NmbrOfSuplrEvalUsrDfndCritra2` |  | |  | `sum(NmbrOfSuplrEvalUsrDfndCritra2 )` |
+| `NmbrOfSuplrEvalUsrDfndCritra3` |  | |  | `sum(NmbrOfSuplrEvalUsrDfndCritra3 )` |
+| `NmbrOfSuplrEvalUsrDfndCritra4` |  | |  | `sum(NmbrOfSuplrEvalUsrDfndCritra4 )` |
+| `NmbrOfSuplrEvalUsrDfndCritra5` |  | |  | `sum(NmbrOfSuplrEvalUsrDfndCritra5 )` |
+| `NmbrOfSuplrEvalUsrDfndCritra6` |  | |  | `sum(NmbrOfSuplrEvalUsrDfndCritra6)` |
+| `TotNmbrOfSuplrUsrDfndCritra` |  | |  | `sum(TotNmbrOfSuplrUsrDfndCritra )` |
+| `SupplierEvalUsrCriteria1Wgtg` |  | |  | `max(SupplierEvalUsrCriteria1Wgtg)` |
+| `SupplierEvalUsrCriteria2Wgtg` |  | |  | `max(SupplierEvalUsrCriteria2Wgtg)` |
+| `SupplierEvalUsrCriteria3Wgtg` |  | |  | `max(SupplierEvalUsrCriteria3Wgtg)` |
+| `SupplierEvalUsrCriteria4Wgtg` |  | |  | `max(SupplierEvalUsrCriteria4Wgtg)` |
+| `SupplierEvalUsrCriteria5Wgtg` |  | |  | `max(SupplierEvalUsrCriteria5Wgtg)` |
+| `SuplrEvalUsrCriteria6WgtgValue` |  | |  | `max(SuplrEvalUsrCriteria6WgtgValue)` |
+| `NmbrOfSuplrEvalQnaire` |  | |  | `sum(NmbrOfSuplrEvalQnaire)` |
+| `OperationalScore` |  | |  | `OperationalScoreCounter` |
+| `_ClassificationText` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_PurchasingCategory` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_Region` | | ✓ | | |
 
 ## Associations
 

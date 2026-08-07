@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OptionExerciseType` | `cast(DomainText.domvalue_l as soptaus)` |
-| key `Language` | `DomainText.ddlanguage` |
-| `OptionExerciseTypeName` | `cast(DomainText.ddtext as option_exercise_type_name preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OptionExerciseType` | ✓ | |  | `cast(DomainText.domvalue_l as soptaus)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `OptionExerciseTypeName` |  | |  | `cast(DomainText.ddtext as option_exercise_type_name preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

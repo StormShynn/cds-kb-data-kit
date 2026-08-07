@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| key `StatusCode` | `StatusCode` |
-| `StatusObject` | `StatusObject` |
-| `_InspectionLot` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `StatusCode` | ✓ | |  |  |
+| `StatusObject` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
 
 ## Source Code
 

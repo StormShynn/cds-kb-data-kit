@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankReconciliationStatus` | `cast(left(domvalue_l,1) as epic_br_rcon_status preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankReconciliationStatus` | ✓ | |  | `cast(left(domvalue_l,1) as epic_br_rcon_status preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

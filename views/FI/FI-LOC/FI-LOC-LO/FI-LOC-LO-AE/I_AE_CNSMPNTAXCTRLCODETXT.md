@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `CountryCode` | `land1` |
-| key `ConsumptionTaxCtrlCode` | `steuc` |
-| `ConsumptionTaxCtrlCodeText1` | `text1` |
-| `ConsumptionTaxCtrlCodeText2` | `text2` |
-| `ConsumptionTaxCtrlCodeText3` | `text3` |
-| `ConsumptionTaxCtrlCodeText4` | `text4` |
-| `ConsumptionTaxCtrlCodeText5` | `text5` |
-| `_Country` | *Association* |
-| `_Language` | *Association* |
-| `_ControlCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `CountryCode` | ✓ | |  | `land1` |
+| `ConsumptionTaxCtrlCode` | ✓ | |  | `steuc` |
+| `ConsumptionTaxCtrlCodeText1` |  | |  | `text1` |
+| `ConsumptionTaxCtrlCodeText2` |  | |  | `text2` |
+| `ConsumptionTaxCtrlCodeText3` |  | |  | `text3` |
+| `ConsumptionTaxCtrlCodeText4` |  | |  | `text4` |
+| `ConsumptionTaxCtrlCodeText5` |  | |  | `text5` |
+| `_Country` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_ControlCode` | | ✓ | | |
 
 ## Associations
 

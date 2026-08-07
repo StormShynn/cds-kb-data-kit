@@ -28,80 +28,80 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceNotification` | `qmel.qmnum` |
-| `MaintPriority` | `qmel.priok` |
-| `MaintPriorityType` | `qmel.artpr` |
-| `NotificationType` | `qmel.qmart` |
-| `NotifProcessingPhase` | `qmel.phase` |
-| `CreatedByUser` | `qmel.ernam` |
-| `LastChangedByUser` | `qmel.aenam` |
-| `ReportedByUser` | `qmel.qmnam` |
-| `CreationDate` | `qmel.erdat` |
-| `LastChangeTime` | `case when qmel.aezeit = '000000' or qmel.aezeit is null then qmel.erzeit else qmel.aezeit end` |
-| `LastChangeDate` | `case when qmel.aedat = '00000000' or qmel.aedat is null then qmel.erdat else qmel.aedat end` |
-| `CreationTime` | `qmel.erzeit` |
-| `CreationDateTime` | `cast ( concat(qmel.erdat,qmel.erzeit) as eam_creation_timestamp )` |
-| `NotificationText` | `qmel.qmtxt` |
-| `LongTextLanguage` | `qmel.kzmla` |
-| `MaintenanceOrder` | `qmel.aufnr` |
-| `RequiredStartDate` | `cast ( qmel.strmn as eam_req_start_date )` |
-| `RequiredStartTime` | `qmel.strur` |
-| `RequiredEndDate` | `cast ( qmel.ltrmn as eam_req_end_date )` |
-| `RequiredEndTime` | `qmel.ltrur` |
-| `NotificationCreationDate` | `qmel.qmdat` |
-| `NotificationCreationTime` | `qmel.mzeit` |
-| `NotificationReferenceDate` | `qmel.bezdt` |
-| `NotificationHasLongText` | `qmel.indtx` |
-| `MaintNotifInternalID` | `qmel.objnr` |
-| `NotificationTimeZone` | `qmel.tzonso` |
-| `NotificationReferenceTime` | `qmel.bezur` |
-| `NotificationCompletionDate` | `qmel.qmdab` |
-| `NotificationCompletionTime` | `qmel.qmzab` |
-| `WorkCenterInternalID` | `qmel.arbpl` |
-| `WorkCenterTypeCode` | `cast( 'A' as cr_objty )` |
-| `MaintenanceWorkCenterPlant` | `qmel.arbplwerk` |
-| `MaintNotificationCatalog` | `qmel.qmkat` |
-| `MaintNotificationCode` | `}] qmel.qmcod` |
-| `MaintNotificationCodeGroup` | `}] qmel.qmgrp` |
-| `CatalogProfile` | `qmel.rbnr` |
-| `NotificationOrigin` | `qmel.herkz` |
-| `IsDeleted` | `cast( case when qmel.phase = '5' or qmel.kzloesch = 'X' then 'X' else '' end as eam_is_deleted )` |
-| `IsCompleted` | `cast( case when qmel.phase = '4' then 'X' else '' end as eam_is_completed )` |
-| `LastChangeDateTime` | `qmel.changeddatetime` |
-| `SerialNumber` | `qmel.serialnr` |
-| `Material` | `qmel.matnr` |
-| `AdditionalDeviceData` | `qmel.deviceid` |
-| `MaintNotifExtReferenceNumber` | `qmel.refnum` |
-| `MasterLanguage` | `cast( qmel.kzmla as vdm_j_masterlanguage )` |
-| `_PMNotificationPriorityType` | *Association* |
-| `_PMNotificationPriority` | *Association* |
-| `_PMNotificationType` | *Association* |
-| `_PMNotifMaintenanceData` | *Association* |
-| `_PMNotificationPhase` | *Association* |
-| `_MainWorkCenter` | *Association* |
-| `_WorkCenterType` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_ReportedByUser` | *Association* |
-| `_IsDeleted` | *Association* |
-| `_IsCompleted` | *Association* |
-| `_MaintenanceOrder` | *Association* |
-| `_MaintenancePartner` | *Association* |
-| `_MaintenanceNotificationItem` | *Association* |
-| `_Maintenancenotificationtask` | *Association* |
-| `_MaintNotificationActivity` | *Association* |
-| `_MaintNotificationCatalog` | *Association* |
-| `_MaintNotificationCodeGroup` | *Association* |
-| `_MaintNotificationCode` | *Association* |
-| `_MaintenanceWorkCenterPlant` | *Association* |
-| `_StatusObject` | *Association* |
-| `_TechnicalObjectCodeCatalog` | *Association* |
-| `_StatusObjectActiveStatus` | *Association* |
-| `_NotificationHasLongText` | *Association* |
-| `_LinearAssetManagementData` | *Association* |
-| `_Material` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceNotification` | ✓ | |  | `qmnum` |
+| `MaintPriority` |  | |  | `priok` |
+| `MaintPriorityType` |  | |  | `artpr` |
+| `NotificationType` |  | |  | `qmart` |
+| `NotifProcessingPhase` |  | |  | `phase` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `ReportedByUser` |  | |  | `qmnam` |
+| `CreationDate` |  | |  | `erdat` |
+| `LastChangeTime` |  | |  | `case when qmel.aezeit = '000000' or qmel.aezeit is null then qmel.erzeit else qmel.aezeit end` |
+| `LastChangeDate` |  | |  | `case when qmel.aedat = '00000000' or qmel.aedat is null then qmel.erdat else qmel.aedat end` |
+| `CreationTime` |  | |  | `erzeit` |
+| `CreationDateTime` |  | |  | `cast ( concat(qmel.erdat,qmel.erzeit) as eam_creation_timestamp )` |
+| `NotificationText` |  | |  | `qmtxt` |
+| `LongTextLanguage` |  | |  | `kzmla` |
+| `MaintenanceOrder` |  | |  | `aufnr` |
+| `RequiredStartDate` |  | |  | `cast ( qmel.strmn as eam_req_start_date )` |
+| `RequiredStartTime` |  | |  | `strur` |
+| `RequiredEndDate` |  | |  | `cast ( qmel.ltrmn as eam_req_end_date )` |
+| `RequiredEndTime` |  | |  | `ltrur` |
+| `NotificationCreationDate` |  | |  | `qmdat` |
+| `NotificationCreationTime` |  | |  | `mzeit` |
+| `NotificationReferenceDate` |  | |  | `bezdt` |
+| `NotificationHasLongText` |  | |  | `indtx` |
+| `MaintNotifInternalID` |  | |  | `objnr` |
+| `NotificationTimeZone` |  | |  | `tzonso` |
+| `NotificationReferenceTime` |  | |  | `bezur` |
+| `NotificationCompletionDate` |  | |  | `qmdab` |
+| `NotificationCompletionTime` |  | |  | `qmzab` |
+| `WorkCenterInternalID` |  | |  | `arbpl` |
+| `WorkCenterTypeCode` |  | |  | `cast( 'A' as cr_objty )` |
+| `MaintenanceWorkCenterPlant` |  | |  | `arbplwerk` |
+| `MaintNotificationCatalog` |  | |  | `qmkat` |
+| `MaintNotificationCode` |  | |  | `}] qmel.qmcod` |
+| `MaintNotificationCodeGroup` |  | |  | `}] qmel.qmgrp` |
+| `CatalogProfile` |  | |  | `rbnr` |
+| `NotificationOrigin` |  | |  | `herkz` |
+| `IsDeleted` |  | |  | `cast( case when qmel.phase = '5' or qmel.kzloesch = 'X' then 'X' else '' end as eam_is_deleted )` |
+| `IsCompleted` |  | |  | `cast( case when qmel.phase = '4' then 'X' else '' end as eam_is_completed )` |
+| `LastChangeDateTime` |  | |  | `changeddatetime` |
+| `SerialNumber` |  | |  | `serialnr` |
+| `Material` |  | |  | `matnr` |
+| `AdditionalDeviceData` |  | |  | `deviceid` |
+| `MaintNotifExtReferenceNumber` |  | |  | `refnum` |
+| `MasterLanguage` |  | |  | `cast( qmel.kzmla as vdm_j_masterlanguage )` |
+| `_PMNotificationPriorityType` | | ✓ | | |
+| `_PMNotificationPriority` | | ✓ | | |
+| `_PMNotificationType` | | ✓ | | |
+| `_PMNotifMaintenanceData` | | ✓ | | |
+| `_PMNotificationPhase` | | ✓ | | |
+| `_MainWorkCenter` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_ReportedByUser` | | ✓ | | |
+| `_IsDeleted` | | ✓ | | |
+| `_IsCompleted` | | ✓ | | |
+| `_MaintenanceOrder` | | ✓ | | |
+| `_MaintenancePartner` | | ✓ | | |
+| `_MaintenanceNotificationItem` | | ✓ | | |
+| `_Maintenancenotificationtask` | | ✓ | | |
+| `_MaintNotificationActivity` | | ✓ | | |
+| `_MaintNotificationCatalog` | | ✓ | | |
+| `_MaintNotificationCodeGroup` | | ✓ | | |
+| `_MaintNotificationCode` | | ✓ | | |
+| `_MaintenanceWorkCenterPlant` | | ✓ | | |
+| `_StatusObject` | | ✓ | | |
+| `_TechnicalObjectCodeCatalog` | | ✓ | | |
+| `_StatusObjectActiveStatus` | | ✓ | | |
+| `_NotificationHasLongText` | | ✓ | | |
+| `_LinearAssetManagementData` | | ✓ | | |
+| `_Material` | | ✓ | | |
 
 ## Associations
 

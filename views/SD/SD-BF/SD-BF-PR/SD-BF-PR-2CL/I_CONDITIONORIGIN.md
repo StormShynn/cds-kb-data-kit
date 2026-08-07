@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionOrigin` | `cast ( substring( domvalue_l, 1, 1 ) as kherk )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionOrigin` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kherk )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

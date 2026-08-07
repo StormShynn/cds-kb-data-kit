@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdItemBatchUUID` | `cast(TransportationOrderItemBatch.db_key as /scmtms/vdm_tor_itm_batch_uuid preserving type)` |
-| `TransportationOrderUUID` | `cast(TransportationOrderItemBatch.root_key as /scmtms/vdm_tor_db_key preserving type)` |
-| `TransportationOrderItemUUID` | `cast(TransportationOrderItemBatch.parent_key as /scmtms/vdm_tor_item_db_key preserving type)` |
-| `Batch` | `TransportationOrderItemBatch.batch_id` |
-| `BatchBySupplier` | `TransportationOrderItemBatch.batch_id_supplier` |
-| `ManufactureDate` | `TransportationOrderItemBatch.manufacture_date` |
-| `ShelfLifeExpirationDate` | `TransportationOrderItemBatch.expiration_date` |
-| `ProductID` | `TransportationOrderItem.ProductID` |
-| `_TransportationOrder` | *Association* |
-| `_Batch` | *Association* |
-| `_Product` | *Association* |
-| `_TransportationOrderItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdItemBatchUUID` | ✓ | |  | `cast(TransportationOrderItemBatch.db_key as /scmtms/vdm_tor_itm_batch_uuid preserving type)` |
+| `TransportationOrderUUID` |  | |  | `cast(TransportationOrderItemBatch.root_key as /scmtms/vdm_tor_db_key preserving type)` |
+| `TransportationOrderItemUUID` |  | |  | `cast(TransportationOrderItemBatch.parent_key as /scmtms/vdm_tor_item_db_key preserving type)` |
+| `Batch` |  | |  | `batch_id` |
+| `BatchBySupplier` |  | |  | `batch_id_supplier` |
+| `ManufactureDate` |  | |  | `manufacture_date` |
+| `ShelfLifeExpirationDate` |  | |  | `expiration_date` |
+| `ProductID` |  | |  |  |
+| `_TransportationOrder` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_TransportationOrderItem` | | ✓ | | |
 
 ## Associations
 

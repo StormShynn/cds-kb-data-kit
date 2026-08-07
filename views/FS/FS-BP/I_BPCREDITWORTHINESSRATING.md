@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPCreditStandingRating` | `tp06.rating` |
-| `_Text` | *Association* |
-| `_BPCreditWorthiness` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPCreditStandingRating` | ✓ | |  | `rating` |
+| `_Text` | | ✓ | | |
+| `_BPCreditWorthiness` | | ✓ | | |
 
 ## Associations
 

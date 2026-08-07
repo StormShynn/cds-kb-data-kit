@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionRoutingGroup` | `ProductionRoutingGroup` |
-| key `ProductionRouting` | `ProductionRouting` |
-| key `ProductionRoutingSequence` | `ProductionRoutingSequence` |
-| key `ProductionRoutingOpIntID` | `ProductionRoutingOpIntID` |
-| key `BOOOperationPRTInternalID` | `BOOOperationPRTInternalID` |
-| key `BOOOperationPRTIntVersCounter` | `BOOOperationPRTIntVersCounter` |
-| `ProductionResourceType` | `ProductionResourceType` |
-| `ProductionResourceInternalID` | `ProductionResourceInternalID` |
-| `Material` | `Material` |
-| `Plant` | `Plant` |
-| `ProdnRsceToolItemNumber` | `ProdnRsceToolItemNumber` |
-| `ProdnRsceToolStandardTextCode` | `ProdnRsceToolStandardTextCode` |
-| `ProdnRsceToolText` | `ProdnRsceToolText` |
-| `ProdnRsceToolControlProfile` | `ProdnRsceToolControlProfile` |
-| `ProdnRsceToolStandardWorkQty` | `ProdnRsceToolStandardWorkQty` |
-| `ProdnRsceToolStdWorkQtyUnit` | `ProdnRsceToolStdWorkQtyUnit` |
-| `ProdnRsceToolTotQtyCalcFormula` | `ProdnRsceToolTotQtyCalcFormula` |
-| `ProdnRsceToolUsageQuantity` | `ProdnRsceToolUsageQuantity` |
-| `ProdnRsceToolUsageQuantityUnit` | `ProdnRsceToolUsageQuantityUnit` |
-| `ProdnRsceToolUsageQtyCalcFmla` | `ProdnRsceToolUsageQtyCalcFmla` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_NonSqncTP` | *Association* |
-| `_Header` | *Association* |
-| `_ProdnRtgTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |
+| `ProductionRouting` | ✓ | |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |
+| `ProductionRoutingOpIntID` | ✓ | |  |  |
+| `BOOOperationPRTInternalID` | ✓ | |  |  |
+| `BOOOperationPRTIntVersCounter` | ✓ | |  |  |
+| `ProductionResourceType` |  | |  |  |
+| `ProductionResourceInternalID` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProdnRsceToolItemNumber` |  | |  |  |
+| `ProdnRsceToolStandardTextCode` |  | |  |  |
+| `ProdnRsceToolText` |  | |  |  |
+| `ProdnRsceToolControlProfile` |  | |  |  |
+| `ProdnRsceToolStandardWorkQty` |  | |  |  |
+| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  |
+| `ProdnRsceToolTotQtyCalcFormula` |  | |  |  |
+| `ProdnRsceToolUsageQuantity` |  | |  |  |
+| `ProdnRsceToolUsageQuantityUnit` |  | |  |  |
+| `ProdnRsceToolUsageQtyCalcFmla` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_NonSqncTP` | | ✓ | | |
+| `_Header` | | ✓ | | |
+| `_ProdnRtgTP` | | ✓ | | |
 
 ## Source Code
 

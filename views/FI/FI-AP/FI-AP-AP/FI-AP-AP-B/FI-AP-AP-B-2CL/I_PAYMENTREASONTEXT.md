@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentReason` | `payt_rsn` |
-| key `Language` | `spras` |
-| `PaymentReasonText` | `descript` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentReason` | ✓ | |  | `payt_rsn` |
+| `Language` | ✓ | |  | `spras` |
+| `PaymentReasonText` |  | |  | `descript` |
 
 ## Source Code
 

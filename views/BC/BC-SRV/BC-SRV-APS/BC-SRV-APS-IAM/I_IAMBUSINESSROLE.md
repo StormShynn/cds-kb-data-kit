@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessRoleUUID` | `br.uuid` |
-| `BusinessRole` | `br.id` |
-| `BusinessRoleGroup` | `br.brole_group` |
-| `BusinessRoleTemplate` | `br.brt_id` |
-| `CreatedByUser` | `br.creation_user_name` |
-| `CreationDateTime` | `br.creation_date_time` |
-| `LastChangedByUser` | `br.last_change_user_name` |
-| `LastChangeDateTime` | `br.last_change_date_time` |
-| `_User` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessRoleUUID` | ✓ | |  | `uuid` |
+| `BusinessRole` |  | |  | `id` |
+| `BusinessRoleGroup` |  | |  | `brole_group` |
+| `BusinessRoleTemplate` |  | |  | `brt_id` |
+| `CreatedByUser` |  | |  | `creation_user_name` |
+| `CreationDateTime` |  | |  | `creation_date_time` |
+| `LastChangedByUser` |  | |  | `last_change_user_name` |
+| `LastChangeDateTime` |  | |  | `last_change_date_time` |
+| `_User` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

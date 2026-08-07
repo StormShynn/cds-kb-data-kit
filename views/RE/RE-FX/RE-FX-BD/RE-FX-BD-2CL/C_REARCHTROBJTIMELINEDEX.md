@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REArchitectureObjTimelineUUID` | `REArchitectureObjTimelineUUID` |
-| `REArchitectureObjectUUID` | `REArchitectureObjectUUID` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `REArchitectureObjectStatus` | `REArchitectureObjectStatus` |
-| `REArchitectureObjectIsActive` | `REArchitectureObjectIsActive` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REArchitectureObjTimelineUUID` | ✓ | |  |  |
+| `REArchitectureObjectUUID` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `REArchitectureObjectStatus` |  | |  |  |
+| `REArchitectureObjectIsActive` |  | |  |  |
 
 ## Source Code
 

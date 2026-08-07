@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `FinancialTransaction.CompanyCode` |
-| key `FinancialTransaction` | `FinancialTransaction.FinancialTransaction` |
-| key `FinancialInstrActivityCategory` | `ActivityCategory.FinancialInstrActivityCategory` |
-| `FinancialInstrProductCategory` | `ActivityCategory.FinancialInstrProductCategory` |
-| `FinInstrTransactionCategory` | `ActivityCategory.FinInstrTransactionCategory` |
-| `_CompanyCode` | *Association* |
-| `_FinTrans` | *Association* |
-| `_ActivityCategoryText` | *Association* |
-| `_ProductCategory` | *Association* |
-| `_TransactionCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `FinancialTransaction` | ✓ | |  |  |
+| `FinancialInstrActivityCategory` | ✓ | |  |  |
+| `FinancialInstrProductCategory` |  | |  |  |
+| `FinInstrTransactionCategory` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_FinTrans` | | ✓ | | |
+| `_ActivityCategoryText` | | ✓ | | |
+| `_ProductCategory` | | ✓ | | |
+| `_TransactionCategory` | | ✓ | | |
 
 ## Associations
 

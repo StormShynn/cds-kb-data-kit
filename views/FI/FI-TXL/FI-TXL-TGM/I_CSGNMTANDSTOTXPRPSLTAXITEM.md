@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProposalTaxPostingIdentifier` | `TaxPropslTax.ptxnr` |
-| key `ProposalTaxPostingItem` | `TaxPropslTax.ptxit` |
-| key `ProposalTaxPostingTaxItem` | `TaxPropslTax.subno` |
-| `TransactionCurrency` | `_TaxProposalHeader.TransactionCurrency` |
-| `TaxBaseAmountInTransCrcy` | `} TaxPropslTax.taxbas` |
-| `TaxCode` | `TaxPropslTax.taxcode` |
-| `ConditionType` | `TaxPropslTax.conditiontype` |
-| `AccountKeyForGLAccount` | `TaxPropslTax.accountkey` |
-| `TaxProposalTaxationDate` | `TaxPropslTax.taxdate` |
-| `TaxRate` | `TaxPropslTax.taxrate` |
-| `TaxAmountInTransCrcy` | `} TaxPropslTax.taxamt` |
-| `TaxCountry` | `TaxPropslTax.taxcountry` |
-| `TaxRateValidityStartDate` | `TaxPropslTax.txdat_from` |
-| `CompanyCode` | `_TaxProposalHeader.CompanyCode` |
-| `_TaxProposalHeader` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProposalTaxPostingIdentifier` | ✓ | |  | `ptxnr` |
+| `ProposalTaxPostingItem` | ✓ | |  | `ptxit` |
+| `ProposalTaxPostingTaxItem` | ✓ | |  | `subno` |
+| `TransactionCurrency` |  | | `_TaxProposalHeader` | `TransactionCurrency` |
+| `TaxBaseAmountInTransCrcy` |  | |  | `} TaxPropslTax.taxbas` |
+| `TaxCode` |  | |  | `taxcode` |
+| `ConditionType` |  | |  | `conditiontype` |
+| `AccountKeyForGLAccount` |  | |  | `accountkey` |
+| `TaxProposalTaxationDate` |  | |  | `taxdate` |
+| `TaxRate` |  | |  | `taxrate` |
+| `TaxAmountInTransCrcy` |  | |  | `} TaxPropslTax.taxamt` |
+| `TaxCountry` |  | |  | `taxcountry` |
+| `TaxRateValidityStartDate` |  | |  | `txdat_from` |
+| `CompanyCode` |  | | `_TaxProposalHeader` | `CompanyCode` |
+| `_TaxProposalHeader` | | ✓ | | |
 
 ## Associations
 

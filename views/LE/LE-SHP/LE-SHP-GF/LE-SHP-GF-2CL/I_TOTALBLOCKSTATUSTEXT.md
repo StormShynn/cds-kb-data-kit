@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TotalBlockStatus` | `statu` |
-| key `Language` | `spras` |
-| `TotalBlockStatusDesc` | `bezei` |
-| `_TotalBlockStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TotalBlockStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `TotalBlockStatusDesc` |  | |  | `bezei` |
+| `_TotalBlockStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

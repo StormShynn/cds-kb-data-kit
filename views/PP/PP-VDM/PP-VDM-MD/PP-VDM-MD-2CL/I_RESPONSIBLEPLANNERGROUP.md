@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `t024a.werks` |
-| key `ResponsiblePlannerGroup` | `cast(t024a.fevor as vagrp preserving type)` |
-| `ResponsiblePlannerGroupName` | `cast(t024a.txt as disptxt preserving type)` |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `ResponsiblePlannerGroup` | ✓ | |  | `cast(t024a.fevor as vagrp preserving type)` |
+| `ResponsiblePlannerGroupName` |  | |  | `cast(t024a.txt as disptxt preserving type)` |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

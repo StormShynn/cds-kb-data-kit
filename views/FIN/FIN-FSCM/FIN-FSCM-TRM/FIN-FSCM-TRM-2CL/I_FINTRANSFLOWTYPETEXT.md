@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryContractType` | `FinTransFlowTypeText.rantyp` |
-| key `FinTransFlowType` | `FinTransFlowTypeText.sbewart` |
-| key `Language` | `FinTransFlowTypeText.sspras` |
-| `FinTransFlowTypeName` | `cast( FinTransFlowTypeText.xbewart as ftr_flow_type_name preserving type )` |
-| `_FinTransFlowType` | *Association* |
-| `_Language` | *Association* |
-| `_TreasuryContractType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryContractType` | ✓ | |  | `rantyp` |
+| `FinTransFlowType` | ✓ | |  | `sbewart` |
+| `Language` | ✓ | |  | `sspras` |
+| `FinTransFlowTypeName` |  | |  | `cast( FinTransFlowTypeText.xbewart as ftr_flow_type_name preserving type )` |
+| `_FinTransFlowType` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_TreasuryContractType` | | ✓ | | |
 
 ## Associations
 

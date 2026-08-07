@@ -27,31 +27,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Kanban` | `KanbanContainer.KanbanContainer` |
-| key `Language` | `Language.Language` |
-| `KanbanControlCycle` | `KanbanContainer.KanbanControlCycle` |
-| `KanbanControlCycleItem` | `KanbanContainer.KanbanControlCycleItem` |
-| `Plant` | `KanbanControlCycle.Plant` |
-| `KanbanQuantity` | `KanbanControlCycle.KanbanContainerQuantityInBsUnt` |
-| `BaseUnit` | `KanbanControlCycle.BaseUnit` |
-| `ProductionSupplyArea` | `KanbanControlCycle.ProductionSupplyArea` |
-| `ProductionSupplyAreaName` | `_ProductionSupplyAreaText.ProductionSupplyAreaName` |
-| `Material` | `KanbanControlCycle.Product` |
-| `MaterialName` | `_ProductText.ProductName` |
-| `SetKanbanStatusWaitingBarCode` | `cast(concat(KanbanContainer.KanbanContainer, '1') as pk_barcode_waiting)` |
-| `SetKanbanStatusEmptyBarCode` | `cast(concat(KanbanContainer.KanbanContainer, '2') as pk_barcode_empty)` |
-| `SetKanbanStatusProcessBarCode` | `cast(concat(KanbanContainer.KanbanContainer, '3') as pk_barcode_in_process)` |
-| `SetKanbanStatusTransitBarCode` | `cast(concat(KanbanContainer.KanbanContainer, '4') as pk_barcode_in_transit)` |
-| `SetKanbanStatusFullBarCode` | `cast(concat(KanbanContainer.KanbanContainer, '5') as pk_barcode_full)` |
-| `SetKanbanStatusInUseBarCode` | `cast(concat(KanbanContainer.KanbanContainer, '6') as pk_barcode_in_use)` |
-| `Supplier` | `KanbanContainer.Supplier` |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_KanbanContainer` | *Association* |
-| `_KnbnCtrlCycProdMstrDta` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Kanban` | ✓ | |  | `KanbanContainer` |
+| `Language` | ✓ | |  |  |
+| `KanbanControlCycle` |  | |  |  |
+| `KanbanControlCycleItem` |  | |  |  |
+| `Plant` |  | |  |  |
+| `KanbanQuantity` |  | |  | `KanbanContainerQuantityInBsUnt` |
+| `BaseUnit` |  | |  |  |
+| `ProductionSupplyArea` |  | |  |  |
+| `ProductionSupplyAreaName` |  | | `_ProductionSupplyAreaText` | `ProductionSupplyAreaName` |
+| `Material` |  | |  | `Product` |
+| `MaterialName` |  | | `_ProductText` | `ProductName` |
+| `SetKanbanStatusWaitingBarCode` |  | |  | `cast(concat(KanbanContainer.KanbanContainer, '1') as pk_barcode_waiting)` |
+| `SetKanbanStatusEmptyBarCode` |  | |  | `cast(concat(KanbanContainer.KanbanContainer, '2') as pk_barcode_empty)` |
+| `SetKanbanStatusProcessBarCode` |  | |  | `cast(concat(KanbanContainer.KanbanContainer, '3') as pk_barcode_in_process)` |
+| `SetKanbanStatusTransitBarCode` |  | |  | `cast(concat(KanbanContainer.KanbanContainer, '4') as pk_barcode_in_transit)` |
+| `SetKanbanStatusFullBarCode` |  | |  | `cast(concat(KanbanContainer.KanbanContainer, '5') as pk_barcode_full)` |
+| `SetKanbanStatusInUseBarCode` |  | |  | `cast(concat(KanbanContainer.KanbanContainer, '6') as pk_barcode_in_use)` |
+| `Supplier` |  | |  |  |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_KanbanContainer` | | ✓ | | |
+| `_KnbnCtrlCycProdMstrDta` | | ✓ | | |
 
 ## Associations
 

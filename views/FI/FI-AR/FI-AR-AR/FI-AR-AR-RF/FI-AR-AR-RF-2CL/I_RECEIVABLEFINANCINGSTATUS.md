@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReceivableFinancingStatus` | `cast( left(dd07l.domvalue_l, 1) as frp_rcvbl_financing_status preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReceivableFinancingStatus` | ✓ | |  | `cast( left(dd07l.domvalue_l, 1) as frp_rcvbl_financing_status preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

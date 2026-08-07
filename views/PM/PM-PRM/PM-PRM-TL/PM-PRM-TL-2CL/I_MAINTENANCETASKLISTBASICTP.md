@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListVersionCounter` | `TaskListVersionCounter` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `TaskListStatus` | `TaskListStatus` |
-| `TaskListStatusDesc` | `TaskListStatusDesc` |
-| `TechnicalObject` | `TechnicalObject` |
-| `TaskListUsage` | `TaskListUsage` |
-| `TaskListDesc` | `TaskListDesc` |
-| `WorkCenter` | `WorkCenter` |
-| `MaintenanceStrategy` | `MaintenanceStrategy` |
-| `OperationSystemCondition` | `OperationSystemCondition` |
-| `Assembly` | `Assembly` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `Plant` | `Plant` |
-| `ResponsiblePlannerGroup` | `ResponsiblePlannerGroup` |
-| `Equipment` | `Equipment` |
-| `FunctionalLocationLabelName` | `FunctionalLocationLabelName` |
-| `TaskListIsHierarchical` | `TaskListIsHierarchical` |
-| `TechObjIsEquipOrFuncnlLoc` | `TechObjIsEquipOrFuncnlLoc` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `ControllingArea` | `ControllingArea` |
-| `CostCenter` | `CostCenter` |
-| `MaintenancePlant` | `MaintenancePlant` |
-| `_Header` | *Association* |
-| `_Operation` | *Association* |
-| `_MaintPackage` | *Association* |
-| `_LongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListVersionCounter` | ✓ | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `TaskListStatus` |  | |  |  |
+| `TaskListStatusDesc` |  | |  |  |
+| `TechnicalObject` |  | |  |  |
+| `TaskListUsage` |  | |  |  |
+| `TaskListDesc` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `MaintenanceStrategy` |  | |  |  |
+| `OperationSystemCondition` |  | |  |  |
+| `Assembly` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |
+| `TaskListIsHierarchical` |  | |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `_Header` | | ✓ | | |
+| `_Operation` | | ✓ | | |
+| `_MaintPackage` | | ✓ | | |
+| `_LongText` | | ✓ | | |
 
 ## Source Code
 

@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderBusPartUUID` | `TransportationOrderBusPartUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `AddressID` | `AddressID` |
-| `AddresseeFullName` | `AddresseeFullName` |
-| `CityName` | `CityName` |
-| `PostalCode` | `PostalCode` |
-| `StreetName` | `StreetName` |
-| `HouseNumber` | `HouseNumber` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `EmailAddress` | `EmailAddress` |
-| `InternationalPhoneNumber` | `InternationalPhoneNumber` |
-| `InternationalMobilePhoneNumber` | `InternationalMobilePhoneNumber` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `I_FreightOrderTP` | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `I_FreightOrderBPTP` | `_TransportationOrderBP as _FreightOrderBusinessPartner : redirected to parent I_FreightOrderBPTP` |
-| `I_FrtOrdBPAddrAddlRprstnTP` | `_TranspOrdBPAddrAddlRprstn as _FrtOrdBPAddrAddlRprstn : redirected to composition child I_FrtOrdBPAddrAddlRprstnTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderBusPartUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `AddresseeFullName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `InternationalPhoneNumber` |  | |  |  |
+| `InternationalMobilePhoneNumber` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| `I_FreightOrderBPTP` |  | |  | `_TransportationOrderBP as _FreightOrderBusinessPartner : redirected to parent I_FreightOrderBPTP` |
+| `I_FrtOrdBPAddrAddlRprstnTP` |  | |  | `_TranspOrdBPAddrAddlRprstn as _FrtOrdBPAddrAddlRprstn : redirected to composition child I_FrtOrdBPAddrAddlRprstnTP` |
 
 ## Source Code
 

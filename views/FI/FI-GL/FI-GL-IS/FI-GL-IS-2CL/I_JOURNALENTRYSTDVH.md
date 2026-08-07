@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `I_JournalEntry.CompanyCode` |
-| key `FiscalYear` | `I_JournalEntry.FiscalYear` |
-| key `AccountingDocument` | `I_JournalEntry.AccountingDocument` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `AccountingDocument` | ✓ | |  |  |
 
 ## Source Code
 

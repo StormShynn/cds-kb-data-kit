@@ -27,26 +27,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITDocRefUUID` | `db_key` |
-| `JITHeaderUUID` | `parent_key` |
-| `InternalJITCallNumber` | `int_call_num` |
-| `CompGrpNumber` | `comp_grp_num` |
-| `JITCallItemNumber` | `call_item_num` |
-| `BusinessTransactionDocType` | `btd_type_code` |
-| `BusinessTransactionDocument` | `btd_id` |
-| `BusinessTransactionDocItem` | `btd_item_id` |
-| `BusinessTransacDocItmTypeCode` | `btd_item_type_code` |
-| `BusinessTransactionDocStatus` | `btd_status` |
-| `LogicalSystemID` | `logsys` |
-| `LastChangeDateTime` | `lchg_date_time` |
-| `BusinessTransactionDocUUID` | `businesstransactiondocuuid` |
-| `_DeliveryDocumentItem` | *Association* |
-| `_JITHandlingUnitHeader` | *Association* |
-| `_JITBusTransDocType` | *Association* |
-| `_JITBusTransDocItemType` | *Association* |
-| `_JITInboundCall` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITDocRefUUID` | ✓ | |  | `db_key` |
+| `JITHeaderUUID` |  | |  | `parent_key` |
+| `InternalJITCallNumber` |  | |  | `int_call_num` |
+| `CompGrpNumber` |  | |  | `comp_grp_num` |
+| `JITCallItemNumber` |  | |  | `call_item_num` |
+| `BusinessTransactionDocType` |  | |  | `btd_type_code` |
+| `BusinessTransactionDocument` |  | |  | `btd_id` |
+| `BusinessTransactionDocItem` |  | |  | `btd_item_id` |
+| `BusinessTransacDocItmTypeCode` |  | |  | `btd_item_type_code` |
+| `BusinessTransactionDocStatus` |  | |  | `btd_status` |
+| `LogicalSystemID` |  | |  | `logsys` |
+| `LastChangeDateTime` |  | |  | `lchg_date_time` |
+| `BusinessTransactionDocUUID` |  | |  | `businesstransactiondocuuid` |
+| `_DeliveryDocumentItem` | | ✓ | | |
+| `_JITHandlingUnitHeader` | | ✓ | | |
+| `_JITBusTransDocType` | | ✓ | | |
+| `_JITBusTransDocItemType` | | ✓ | | |
+| `_JITInboundCall` | | ✓ | | |
 
 ## Associations
 

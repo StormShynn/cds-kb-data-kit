@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChargeCalcLevel` | `cast(substring(domvalue_l, 1, 1) as /scmtms/calc_level preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspChargeCalcLevelDesc` | `cast(ddtext as val_text preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspChargeCalcLevel` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChargeCalcLevel` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/calc_level preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspChargeCalcLevelDesc` |  | |  | `cast(ddtext as val_text preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspChargeCalcLevel` | | ✓ | | |
 
 ## Associations
 

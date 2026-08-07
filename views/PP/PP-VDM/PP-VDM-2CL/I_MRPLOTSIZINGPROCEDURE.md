@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialLotSizingProcedure` | `proc.disls` |
-| `LotSizingProcedureType` | `cast(proc.losvf as vdm_losvf preserving type)` |
-| `LotSizeType` | `proc.loskz` |
-| `LotSizePeriodSchedulingType` | `proc.terbv` |
-| `LastLotIsPlannedExactly` | `proc.lastl` |
-| `UnderDeliveryTolIsChecked` | `proc.untkz` |
-| `_Text` | *Association* |
-| `_LotSizingProcedureType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialLotSizingProcedure` | ✓ | |  | `disls` |
+| `LotSizingProcedureType` |  | |  | `cast(proc.losvf as vdm_losvf preserving type)` |
+| `LotSizeType` |  | |  | `loskz` |
+| `LotSizePeriodSchedulingType` |  | |  | `terbv` |
+| `LastLotIsPlannedExactly` |  | |  | `lastl` |
+| `UnderDeliveryTolIsChecked` |  | |  | `untkz` |
+| `_Text` | | ✓ | | |
+| `_LotSizingProcedureType` | | ✓ | | |
 
 ## Associations
 

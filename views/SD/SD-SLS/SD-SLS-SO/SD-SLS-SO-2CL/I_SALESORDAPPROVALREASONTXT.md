@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `SalesOrderApprovalReasonText.Language` |
-| key `SalesOrderApprovalReason` | `SalesOrderApprovalReasonText.SalesDocApprovalReason` |
-| `SalesOrderApprovalReasonName` | `SalesOrderApprovalReasonText.SalesDocApprovalReasonName` |
-| `_SalesOrderApprovalReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `SalesOrderApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
+| `SalesOrderApprovalReasonName` |  | |  | `SalesDocApprovalReasonName` |
+| `_SalesOrderApprovalReason` | | ✓ | | |
 
 ## Associations
 

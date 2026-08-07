@@ -29,44 +29,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `cast ( marm.matnr as productnumber preserving type )` |
-| key `AlternativeUnit` | `marm.meinh` |
-| `QuantityNumerator` | `cast(marm.umrez as cmd_base_uom_cnvrsn_fctr preserving type)` |
-| `QuantityDenominator` | `cast(marm.umren as cmd_alt_uom_cnvrsn_fctr preserving type )` |
-| `MaterialVolume` | `marm.volum` |
-| `VolumeUnit` | `marm.voleh` |
-| `GrossWeight` | `marm.brgew` |
-| `WeightUnit` | `marm.gewei` |
-| `GlobalTradeItemNumber` | `marm.ean11` |
-| `GlobalTradeItemNumberCategory` | `cast(marm.numtp as internationalarticlenumbercat preserving type )` |
-| `UnitSpecificProductLength` | `marm.laeng` |
-| `UnitSpecificProductWidth` | `marm.breit` |
-| `UnitSpecificProductHeight` | `marm.hoehe` |
-| `ProductMeasurementUnit` | `marm.meabm` |
-| `LowerLevelPackagingUnit` | `marm.mesub` |
-| `RemainingVolumeAfterNesting` | `marm.nest_ftr` |
-| `MaximumStackingFactor` | `marm.max_stack` |
-| `CapacityUsage` | `marm.capause` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `UnitOfMeasureCategory` | `marm.ty2tq` |
-| `ProductGTINVariant` | `marm.gtin_variant` |
-| `BaseUnit` | `_Product.BaseUnit` |
-| `_Product` | *Association* |
-| `_ProductMeasurementUnit` | *Association* |
-| `_ProductMeasurementUnitText` | *Association* |
-| `_AlternativeUnit` | *Association* |
-| `_AlternativeUnitText` | *Association* |
-| `_GlobalTradeItemNumber` | *Association* |
-| `_GlobalTradeItemNumberText` | *Association* |
-| `_WeightUnitValueHelp` | *Association* |
-| `_WeightUnitText` | *Association* |
-| `_QuantityUnitValueHelp` | *Association* |
-| `_VolumeUnitText` | *Association* |
-| `_LowerLevelPackagingUnit` | *Association* |
-| `_LowerLevelPackagingUnitText` | *Association* |
-| `_ProductDescription_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `cast ( marm.matnr as productnumber preserving type )` |
+| `AlternativeUnit` | ✓ | |  | `meinh` |
+| `QuantityNumerator` |  | |  | `cast(marm.umrez as cmd_base_uom_cnvrsn_fctr preserving type)` |
+| `QuantityDenominator` |  | |  | `cast(marm.umren as cmd_alt_uom_cnvrsn_fctr preserving type )` |
+| `MaterialVolume` |  | |  | `volum` |
+| `VolumeUnit` |  | |  | `voleh` |
+| `GrossWeight` |  | |  | `brgew` |
+| `WeightUnit` |  | |  | `gewei` |
+| `GlobalTradeItemNumber` |  | |  | `ean11` |
+| `GlobalTradeItemNumberCategory` |  | |  | `cast(marm.numtp as internationalarticlenumbercat preserving type )` |
+| `UnitSpecificProductLength` |  | |  | `laeng` |
+| `UnitSpecificProductWidth` |  | |  | `breit` |
+| `UnitSpecificProductHeight` |  | |  | `hoehe` |
+| `ProductMeasurementUnit` |  | |  | `meabm` |
+| `LowerLevelPackagingUnit` |  | |  | `mesub` |
+| `RemainingVolumeAfterNesting` |  | |  | `nest_ftr` |
+| `MaximumStackingFactor` |  | |  | `max_stack` |
+| `CapacityUsage` |  | |  | `capause` |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `UnitOfMeasureCategory` |  | |  | `ty2tq` |
+| `ProductGTINVariant` |  | |  | `gtin_variant` |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |
+| `_Product` | | ✓ | | |
+| `_ProductMeasurementUnit` | | ✓ | | |
+| `_ProductMeasurementUnitText` | | ✓ | | |
+| `_AlternativeUnit` | | ✓ | | |
+| `_AlternativeUnitText` | | ✓ | | |
+| `_GlobalTradeItemNumber` | | ✓ | | |
+| `_GlobalTradeItemNumberText` | | ✓ | | |
+| `_WeightUnitValueHelp` | | ✓ | | |
+| `_WeightUnitText` | | ✓ | | |
+| `_QuantityUnitValueHelp` | | ✓ | | |
+| `_VolumeUnitText` | | ✓ | | |
+| `_LowerLevelPackagingUnit` | | ✓ | | |
+| `_LowerLevelPackagingUnitText` | | ✓ | | |
+| `_ProductDescription_2` | | ✓ | | |
 
 ## Associations
 

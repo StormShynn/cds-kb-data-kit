@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `partner` |
-| key `CreditSegment` | `cast(criter as ukm_credit_sgmnt preserving type)` |
-| key `CrdtAcctInformationCategory` | `addtype` |
-| key `CrdtAcctInformationType` | `data_type` |
-| key `CrdtAcctAddInfoUTCDateTime` | `timestamp` |
-| key `AdditionalCreditDocSequence` | `counter` |
-| `ExceptionIsCreditCheckRelevant` | `cast(xfeld as ukm_check_relevant preserving type )` |
-| `AddlCreditDocAmtInTransacCrcy` | `} amnt` |
-| `TransactionCurrency` | `curr` |
-| `ValidityStartDate` | `} cast(datefr as ukm_validity_start_date preserving type )` |
-| `ValidityEndDate` | `} cast(dateto as ukm_validity_end_date preserving type)` |
-| `CreditAccountResubmissionDate` | `} cast(addate as ukm_resubmission_date preserving type)` |
-| `AdditionalCreditDocComment` | `cast(text as ukm_comment preserving type)` |
-| `_BusinessPartner` | *Association* |
-| `_CreditManagementSegment` | *Association* |
-| `_CrdtAcctInfoCategory` | *Association* |
-| `_CrdtAcctInformationType` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `CreditSegment` | ✓ | |  | `cast(criter as ukm_credit_sgmnt preserving type)` |
+| `CrdtAcctInformationCategory` | ✓ | |  | `addtype` |
+| `CrdtAcctInformationType` | ✓ | |  | `data_type` |
+| `CrdtAcctAddInfoUTCDateTime` | ✓ | |  | `timestamp` |
+| `AdditionalCreditDocSequence` | ✓ | |  | `counter` |
+| `ExceptionIsCreditCheckRelevant` |  | |  | `cast(xfeld as ukm_check_relevant preserving type )` |
+| `AddlCreditDocAmtInTransacCrcy` |  | |  | `} amnt` |
+| `TransactionCurrency` |  | |  | `curr` |
+| `ValidityStartDate` |  | |  | `} cast(datefr as ukm_validity_start_date preserving type )` |
+| `ValidityEndDate` |  | |  | `} cast(dateto as ukm_validity_end_date preserving type)` |
+| `CreditAccountResubmissionDate` |  | |  | `} cast(addate as ukm_resubmission_date preserving type)` |
+| `AdditionalCreditDocComment` |  | |  | `cast(text as ukm_comment preserving type)` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CreditManagementSegment` | | ✓ | | |
+| `_CrdtAcctInfoCategory` | | ✓ | | |
+| `_CrdtAcctInformationType` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

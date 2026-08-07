@@ -33,127 +33,127 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `but000.partner` |
-| `BusinessPartnerCategory` | `but000.type` |
-| `AuthorizationGroup` | `but000.augrp` |
-| `BusinessPartnerUUID` | `but000.partner_guid` |
-| `PersonNumber` | `but000.persnumber` |
-| `ETag` | `case when but000.chusr <> '' then concat(but000.chusr, concat( but000.chdat, but000.chtim ) ) else concat(but000.crusr, concat( but000.crdat, but000.crtim ) ) end` |
-| `BusinessPartnerName` | `case when type = '1' then concat_with_space( name_first, name_last, 1) when type = '2' then concat_with_space( name_org1, name_org2, 1) when type = '3' then concat_with_space( name_grp1, name_grp2, 1) end` |
-| `BusinessPartnerFullName` | `case when type = '1' then concat_with_space( name_first, name_last,1) when type = '2' then concat_with_space( name_org1, name_org2,1) when type = '3' then concat_with_space( name_grp1, name_grp2,1) end` |
-| `CreatedByUser` | `but000.crusr` |
-| `CreationDate` | `but000.crdat` |
-| `CreationTime` | `but000.crtim` |
-| `LastChangedByUser` | `but000.chusr` |
-| `LastChangeDate` | `but000.chdat` |
-| `LastChangeTime` | `but000.chtim` |
-| `BusinessPartnerIsBlocked` | `but000.xblck` |
-| `IsBusinessPurposeCompleted` | `but000.xpcpt` |
-| `FirstName` | `but000.name_first` |
-| `LastName` | `but000.name_last` |
-| `PersonFullName` | `but000.name1_text` |
-| `OrganizationBPName1` | `but000.name_org1` |
-| `OrganizationBPName2` | `but000.name_org2` |
-| `OrganizationBPName3` | `but000.name_org3` |
-| `OrganizationBPName4` | `but000.name_org4` |
-| `InternationalLocationNumber1` | `but000.location_1` |
-| `InternationalLocationNumber2` | `but000.location_2` |
-| `InternationalLocationNumber3` | `but000.location_3` |
-| `LegalForm` | `but000.legal_enty` |
-| `OrganizationFoundationDate` | `but000.found_dat` |
-| `OrganizationLiquidationDate` | `but000.liquid_dat` |
-| `Industry` | `but000.ind_sector` |
-| `IsNaturalPerson` | `but000.natpers` |
-| `IsFemale` | `but000.xsexf` |
-| `IsMale` | `but000.xsexm` |
-| `IsSexUnknown` | `but000.xsexu` |
-| `FormOfAddress` | `but000.title` |
-| `AcademicTitle` | `but000.title_aca1` |
-| `AcademicTitle2` | `but000.title_aca2` |
-| `NameFormat` | `but000.nameformat` |
-| `NameCountry` | `but000.namcountry` |
-| `BusinessPartnerGrouping` | `but000.bu_group` |
-| `BusinessPartnerType` | `but000.bpkind` |
-| `MiddleName` | `but000.namemiddle` |
-| `AdditionalLastName` | `but000.name_lst2` |
-| `GroupBusinessPartnerName1` | `but000.name_grp1` |
-| `GroupBusinessPartnerName2` | `but000.name_grp2` |
-| `CorrespondenceLanguage` | `but000.langu_corr` |
-| `Language` | `but000.bu_langu` |
-| `SearchTerm1` | `but000.bu_sort1` |
-| `SearchTerm2` | `but000.bu_sort2` |
-| `BPLastNameSearchHelp` | `but000.mc_name1` |
-| `BPFirstNameSearchHelp` | `but000.mc_name2` |
-| `BusinessPartnerNicknameLabel` | `but000.nickname` |
-| `IndependentAddressID` | `but000.addrcomm` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `BirthDate` | `but000.birthdt` |
-| `IsMarkedForArchiving` | `but000.xdele` |
-| `ContactPermission` | `but000.contact` |
-| `BusinessPartnerIDByExtSystem` | `but000.bpext` |
-| `LegalEntityOfOrganization` | `but000.legal_org` |
-| `BusinessPartnerPrintFormat` | `but000.print_mode` |
-| `BusinessPartnerDataOriginType` | `but000.source` |
-| `BusinessPartnerIsNotReleased` | `but000.not_released` |
-| `IsNotContractuallyCapable` | `but000.not_lg_competent` |
-| `BusinessPartnerOccupation` | `but000.jobgr` |
-| `BusPartMaritalStatus` | `but000.marst` |
-| `BusPartNationality` | `but000.natio` |
-| `NonResidentCompanyOriginCntry` | `but000.cndsc` |
-| `BusinessPartnerSalutation` | `but000.title_let` |
-| `BusinessPartnerBirthName` | `but000.name_last2` |
-| `BusinessPartnerSupplementName` | `but000.title_royl` |
-| `BusinessPartnerBirthplaceName` | `but000.birthpl` |
-| `NaturalPersonEmployerName` | `but000.emplo` |
-| `BusinessPartnerDeathDate` | `but000.deathdt` |
-| `BusinessPartnerBirthDateStatus` | `but000.birthdt_status` |
-| `BusinessPartnerGroupType` | `but000.partgrptyp` |
-| `LastNamePrefix` | `but000.prefix1` |
-| `LastNameSecondPrefix` | `but000.prefix2` |
-| `Initials` | `but000.initials` |
-| `GenderCodeName` | `but000.gender` |
-| `DataControllerSet` | `but000.xdcset` |
-| `DataController1` | `but000.data_ctrlr1` |
-| `DataController2` | `but000.data_ctrlr2` |
-| `DataController3` | `but000.data_ctrlr3` |
-| `DataController4` | `but000.data_ctrlr4` |
-| `DataController5` | `but000.data_ctrlr5` |
-| `DataController6` | `but000.data_ctrlr6` |
-| `DataController7` | `but000.data_ctrlr7` |
-| `DataController8` | `but000.data_ctrlr8` |
-| `DataController9` | `but000.data_ctrlr9` |
-| `DataController10` | `but000.data_ctrlr10` |
-| `BPDataControllerIsNotRequired` | `but000.dc_not_req` |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_DefaultAddress` | *Association* |
-| `_CurrentDefaultAddress` | *Association* |
-| `_BusinessPartnerRole` | *Association* |
-| `_AddressIndependentEmail` | *Association* |
-| `_BPAddressIndependentEmail` | *Association* |
-| `_AddressIndependentFax` | *Association* |
-| `_BPAddressIndependentFax` | *Association* |
-| `_AddressIndependentPhone` | *Association* |
-| `_BPAddressIndependentPhone` | *Association* |
-| `_AddressIndependentMobile` | *Association* |
-| `_BPAddressIndependentMobile` | *Association* |
-| `_BPAddressIndependentWebsite` | *Association* |
-| `_Industries` | *Association* |
-| `_BusinessPartnerIndustry` | *Association* |
-| `_BPFinancialServicesExtn` | *Association* |
-| `_BPRating` | *Association* |
-| `_BPCreditWorthiness` | *Association* |
-| `_BPEmployment` | *Association* |
-| `_AcademicTitleText` | *Association* |
-| `_AcademicTitleValueHelp` | *Association* |
-| `_BPFinancialServicesExt` | *Association* |
-| `_BuPaIdentification` | *Association* |
-| `_BPRelationship` | *Association* |
-| `_FormOfAddress` | *Association* |
-| `_Paymentcard` | *Association* |
-| `_BPDataController` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `BusinessPartnerCategory` |  | |  | `type` |
+| `AuthorizationGroup` |  | |  | `augrp` |
+| `BusinessPartnerUUID` |  | |  | `partner_guid` |
+| `PersonNumber` |  | |  | `persnumber` |
+| `ETag` |  | |  | `case when but000.chusr <> '' then concat(but000.chusr, concat( but000.chdat, but000.chtim ) ) else concat(but000.crusr, concat( but000.crdat, but000.crtim ) ) end` |
+| `BusinessPartnerName` |  | |  | `case when type = '1' then concat_with_space( name_first, name_last, 1) when type = '2' then concat_with_space( name_org1, name_org2, 1) when type = '3' then concat_with_space( name_grp1, name_grp2, 1) end` |
+| `BusinessPartnerFullName` |  | |  | `case when type = '1' then concat_with_space( name_first, name_last,1) when type = '2' then concat_with_space( name_org1, name_org2,1) when type = '3' then concat_with_space( name_grp1, name_grp2,1) end` |
+| `CreatedByUser` |  | |  | `crusr` |
+| `CreationDate` |  | |  | `crdat` |
+| `CreationTime` |  | |  | `crtim` |
+| `LastChangedByUser` |  | |  | `chusr` |
+| `LastChangeDate` |  | |  | `chdat` |
+| `LastChangeTime` |  | |  | `chtim` |
+| `BusinessPartnerIsBlocked` |  | |  | `xblck` |
+| `IsBusinessPurposeCompleted` |  | |  | `xpcpt` |
+| `FirstName` |  | |  | `name_first` |
+| `LastName` |  | |  | `name_last` |
+| `PersonFullName` |  | |  | `name1_text` |
+| `OrganizationBPName1` |  | |  | `name_org1` |
+| `OrganizationBPName2` |  | |  | `name_org2` |
+| `OrganizationBPName3` |  | |  | `name_org3` |
+| `OrganizationBPName4` |  | |  | `name_org4` |
+| `InternationalLocationNumber1` |  | |  | `location_1` |
+| `InternationalLocationNumber2` |  | |  | `location_2` |
+| `InternationalLocationNumber3` |  | |  | `location_3` |
+| `LegalForm` |  | |  | `legal_enty` |
+| `OrganizationFoundationDate` |  | |  | `found_dat` |
+| `OrganizationLiquidationDate` |  | |  | `liquid_dat` |
+| `Industry` |  | |  | `ind_sector` |
+| `IsNaturalPerson` |  | |  | `natpers` |
+| `IsFemale` |  | |  | `xsexf` |
+| `IsMale` |  | |  | `xsexm` |
+| `IsSexUnknown` |  | |  | `xsexu` |
+| `FormOfAddress` |  | |  | `title` |
+| `AcademicTitle` |  | |  | `title_aca1` |
+| `AcademicTitle2` |  | |  | `title_aca2` |
+| `NameFormat` |  | |  | `nameformat` |
+| `NameCountry` |  | |  | `namcountry` |
+| `BusinessPartnerGrouping` |  | |  | `bu_group` |
+| `BusinessPartnerType` |  | |  | `bpkind` |
+| `MiddleName` |  | |  | `namemiddle` |
+| `AdditionalLastName` |  | |  | `name_lst2` |
+| `GroupBusinessPartnerName1` |  | |  | `name_grp1` |
+| `GroupBusinessPartnerName2` |  | |  | `name_grp2` |
+| `CorrespondenceLanguage` |  | |  | `langu_corr` |
+| `Language` |  | |  | `bu_langu` |
+| `SearchTerm1` |  | |  | `bu_sort1` |
+| `SearchTerm2` |  | |  | `bu_sort2` |
+| `BPLastNameSearchHelp` |  | |  | `mc_name1` |
+| `BPFirstNameSearchHelp` |  | |  | `mc_name2` |
+| `BusinessPartnerNicknameLabel` |  | |  | `nickname` |
+| `IndependentAddressID` |  | |  | `addrcomm` |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `BirthDate` |  | |  | `birthdt` |
+| `IsMarkedForArchiving` |  | |  | `xdele` |
+| `ContactPermission` |  | |  | `contact` |
+| `BusinessPartnerIDByExtSystem` |  | |  | `bpext` |
+| `LegalEntityOfOrganization` |  | |  | `legal_org` |
+| `BusinessPartnerPrintFormat` |  | |  | `print_mode` |
+| `BusinessPartnerDataOriginType` |  | |  | `source` |
+| `BusinessPartnerIsNotReleased` |  | |  | `not_released` |
+| `IsNotContractuallyCapable` |  | |  | `not_lg_competent` |
+| `BusinessPartnerOccupation` |  | |  | `jobgr` |
+| `BusPartMaritalStatus` |  | |  | `marst` |
+| `BusPartNationality` |  | |  | `natio` |
+| `NonResidentCompanyOriginCntry` |  | |  | `cndsc` |
+| `BusinessPartnerSalutation` |  | |  | `title_let` |
+| `BusinessPartnerBirthName` |  | |  | `name_last2` |
+| `BusinessPartnerSupplementName` |  | |  | `title_royl` |
+| `BusinessPartnerBirthplaceName` |  | |  | `birthpl` |
+| `NaturalPersonEmployerName` |  | |  | `emplo` |
+| `BusinessPartnerDeathDate` |  | |  | `deathdt` |
+| `BusinessPartnerBirthDateStatus` |  | |  | `birthdt_status` |
+| `BusinessPartnerGroupType` |  | |  | `partgrptyp` |
+| `LastNamePrefix` |  | |  | `prefix1` |
+| `LastNameSecondPrefix` |  | |  | `prefix2` |
+| `Initials` |  | |  | `initials` |
+| `GenderCodeName` |  | |  | `gender` |
+| `DataControllerSet` |  | |  | `xdcset` |
+| `DataController1` |  | |  | `data_ctrlr1` |
+| `DataController2` |  | |  | `data_ctrlr2` |
+| `DataController3` |  | |  | `data_ctrlr3` |
+| `DataController4` |  | |  | `data_ctrlr4` |
+| `DataController5` |  | |  | `data_ctrlr5` |
+| `DataController6` |  | |  | `data_ctrlr6` |
+| `DataController7` |  | |  | `data_ctrlr7` |
+| `DataController8` |  | |  | `data_ctrlr8` |
+| `DataController9` |  | |  | `data_ctrlr9` |
+| `DataController10` |  | |  | `data_ctrlr10` |
+| `BPDataControllerIsNotRequired` |  | |  | `dc_not_req` |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_DefaultAddress` | | ✓ | | |
+| `_CurrentDefaultAddress` | | ✓ | | |
+| `_BusinessPartnerRole` | | ✓ | | |
+| `_AddressIndependentEmail` | | ✓ | | |
+| `_BPAddressIndependentEmail` | | ✓ | | |
+| `_AddressIndependentFax` | | ✓ | | |
+| `_BPAddressIndependentFax` | | ✓ | | |
+| `_AddressIndependentPhone` | | ✓ | | |
+| `_BPAddressIndependentPhone` | | ✓ | | |
+| `_AddressIndependentMobile` | | ✓ | | |
+| `_BPAddressIndependentMobile` | | ✓ | | |
+| `_BPAddressIndependentWebsite` | | ✓ | | |
+| `_Industries` | | ✓ | | |
+| `_BusinessPartnerIndustry` | | ✓ | | |
+| `_BPFinancialServicesExtn` | | ✓ | | |
+| `_BPRating` | | ✓ | | |
+| `_BPCreditWorthiness` | | ✓ | | |
+| `_BPEmployment` | | ✓ | | |
+| `_AcademicTitleText` | | ✓ | | |
+| `_AcademicTitleValueHelp` | | ✓ | | |
+| `_BPFinancialServicesExt` | | ✓ | | |
+| `_BuPaIdentification` | | ✓ | | |
+| `_BPRelationship` | | ✓ | | |
+| `_FormOfAddress` | | ✓ | | |
+| `_Paymentcard` | | ✓ | | |
+| `_BPDataController` | | ✓ | | |
 
 ## Associations
 

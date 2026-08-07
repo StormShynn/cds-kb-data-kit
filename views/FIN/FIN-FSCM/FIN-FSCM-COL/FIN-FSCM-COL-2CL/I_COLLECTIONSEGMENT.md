@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CollectionSegment` | `cast(coll_segment as farp_collection_segment preserving type)` |
-| `IsReleased` | `xreleased` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CollectionSegment` | ✓ | |  | `cast(coll_segment as farp_collection_segment preserving type)` |
+| `IsReleased` |  | |  | `xreleased` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

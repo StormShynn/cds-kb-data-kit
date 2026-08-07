@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REObjectAssignmentType` | `objasstype` |
-| key `Language` | `spras` |
-| `REObjectAssignmentTypeName` | `xobjasstype` |
-| `_REObjectAssignmentType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REObjectAssignmentType` | ✓ | |  | `objasstype` |
+| `Language` | ✓ | |  | `spras` |
+| `REObjectAssignmentTypeName` |  | |  | `xobjasstype` |
+| `_REObjectAssignmentType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

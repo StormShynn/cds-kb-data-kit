@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlanSortField` | `plan_sort` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlanSortField` | ✓ | |  | `plan_sort` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

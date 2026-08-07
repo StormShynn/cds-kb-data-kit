@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionCalculationType` | `cast ( substring( domvalue_l, 1, 3 ) as krech_long )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionCalculationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 3 ) as krech_long )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

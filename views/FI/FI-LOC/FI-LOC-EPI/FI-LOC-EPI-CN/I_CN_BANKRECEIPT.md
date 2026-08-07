@@ -30,49 +30,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `BankStmtHeader.CompanyCode` |
-| key `HouseBank` | `BankStmtHeader.HouseBank` |
-| key `HouseBankAccount` | `BankStmtHeader.HouseBankAccount` |
-| key `BankReceiptNumber` | `BankRcpt.ebr_no` |
-| `BankReceiptStatus` | `BankRcpt.status` |
-| `BankReceiptEnterDate` | `BankRcpt.ebr_date` |
-| `BankReceiptSource` | `BankRcpt.source` |
-| `BankReceiptUsageText` | `BankRcpt.ebr_use` |
-| `BankReceiptSummaryText` | `BankRcpt.summary` |
-| `BankReceiptSerialNumber` | `BankRcpt.srl_no` |
-| `BankReceiptBankDateTime` | `BankRcpt.bank_timestamp` |
-| `BankReceiptBankBranchText` | `BankRcpt.bank_branch` |
-| `BankReceiptBankTellerText` | `BankRcpt.bank_teller` |
-| `BankReceiptBankRemarkText` | `BankRcpt.bank_remark` |
-| `CN_BankReceiptIsFoundInDoc` | `BankRcpt.fdflg` |
-| `BankReceiptIsReversal` | `BankRcpt.xreversal` |
-| `BankReceiptReferenceText` | `BankRcpt.reference` |
-| `ClsgBalAmtInBkAcctCrcy` | `BankRcpt.balance` |
-| `BankReceiptTransTime` | `BankRcpt.bank_time` |
-| `BankCountry` | `BankRcpt.part_bank_ctry` |
-| `BankInternalID` | `BankRcpt.part_bank_key` |
-| `BankName` | `BankRcpt.part_bank_name` |
-| `BusinessPartnerName` | `BankStmtItem.BusinessPartnerName` |
-| `PartnerBankIBAN` | `BankStmtItem.PartnerBankIBAN` |
-| `ExchangeRate` | `cast ( BankStmtItem.ExchangeRate as fis_exchange_rate )` |
-| `PaymentAdviceAccountType` | `BankStmtItem.PaymentAdviceAccountType` |
-| `PaymentAdviceAccount` | `BankStmtItem.PaymentAdviceAccount` |
-| `BankStatementPostingRule` | `BankStmtItem.PostingRule` |
-| `SubledgerDocument` | `BankStmtItem.SubledgerDocument` |
-| `PostingDate` | `BankStmtItem.PostingDate` |
-| `CostCenter` | `BankStmtItem.CostCenter` |
-| `ProfitCenter` | `BankStmtItem.ProfitCenter` |
-| `BankPostingDate` | `BankStmtItem.BankPostingDate` |
-| `DebitCreditCode` | `BankStmtItem.DebitCreditCode` |
-| `AmountInAccountCurrency` | `BankStmtItem.AmountInAccountCurrency` |
-| `TransactionCurrency` | `BankStmtItem.TransactionCurrency` |
-| `AmountInOriginalCurrency` | `BankStmtItem.ForeignCurrencyAmount` |
-| `OriginalCurrency` | `BankStmtItem.OriginalCurrency` |
-| `PaymentExternalTransacType` | `BankStmtItem.PaymentExternalTransacType` |
-| `BankAccountHolderName` | `BankStmtHeader.BankAccountHolderName` |
-| `IBAN` | `BankStmtHeader.IBAN` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `HouseBank` | ✓ | |  |  |
+| `HouseBankAccount` | ✓ | |  |  |
+| `BankReceiptNumber` | ✓ | |  | `ebr_no` |
+| `BankReceiptStatus` |  | |  | `status` |
+| `BankReceiptEnterDate` |  | |  | `ebr_date` |
+| `BankReceiptSource` |  | |  | `source` |
+| `BankReceiptUsageText` |  | |  | `ebr_use` |
+| `BankReceiptSummaryText` |  | |  | `summary` |
+| `BankReceiptSerialNumber` |  | |  | `srl_no` |
+| `BankReceiptBankDateTime` |  | |  | `bank_timestamp` |
+| `BankReceiptBankBranchText` |  | |  | `bank_branch` |
+| `BankReceiptBankTellerText` |  | |  | `bank_teller` |
+| `BankReceiptBankRemarkText` |  | |  | `bank_remark` |
+| `CN_BankReceiptIsFoundInDoc` |  | |  | `fdflg` |
+| `BankReceiptIsReversal` |  | |  | `xreversal` |
+| `BankReceiptReferenceText` |  | |  | `reference` |
+| `ClsgBalAmtInBkAcctCrcy` |  | |  | `balance` |
+| `BankReceiptTransTime` |  | |  | `bank_time` |
+| `BankCountry` |  | |  | `part_bank_ctry` |
+| `BankInternalID` |  | |  | `part_bank_key` |
+| `BankName` |  | |  | `part_bank_name` |
+| `BusinessPartnerName` |  | |  |  |
+| `PartnerBankIBAN` |  | |  |  |
+| `ExchangeRate` |  | |  | `cast ( BankStmtItem.ExchangeRate as fis_exchange_rate )` |
+| `PaymentAdviceAccountType` |  | |  |  |
+| `PaymentAdviceAccount` |  | |  |  |
+| `BankStatementPostingRule` |  | |  | `PostingRule` |
+| `SubledgerDocument` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `BankPostingDate` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `AmountInAccountCurrency` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `AmountInOriginalCurrency` |  | |  | `ForeignCurrencyAmount` |
+| `OriginalCurrency` |  | |  |  |
+| `PaymentExternalTransacType` |  | |  |  |
+| `BankAccountHolderName` |  | |  |  |
+| `IBAN` |  | |  |  |
 
 ## Source Code
 

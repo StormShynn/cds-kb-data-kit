@@ -29,41 +29,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OutboundDeliveryOrder` | `OutboundDeliveryOrder` |
-| `EWMWarehouse` | `_Warehouse.EWMWarehouse` |
-| `EWMOutboundDeliveryOrder` | `OutboundDeliveryOrder` |
-| `EWMDeliveryDocumentCategory` | `DeliveryCategory` |
-| `EWMDeliveryDocumentType` | `DeliveryType` |
-| `ShipToParty` | `pdo_h._BPShipTo.BusinessPartner` |
-| `ShipToPartyName` | `cast( ShipToPartyName as ewm_de_ship_to_party_name preserving type )` |
-| `EWMShipToIsBusPurposeCmpltd` | `EWMShipToIsBusPurposeCmpltd` |
-| `Carrier` | `pdo_h._BPCarrier.BusinessPartner` |
-| `CarrierName` | `cast( CarrierName as ewm_de_carrier_name preserving type )` |
-| `EWMCarrierIsBusPurposeCmpltd` | `EWMCarrierIsBusPurposeCmpltd` |
-| `OutboundDelivery` | `cast(_Reference.EWMRefDeliveryDocumentNumber as /scwm/sp_docno_erp )` |
-| `BusinessSystemName` | `_Reference.BusinessSystemName` |
-| `FreightOrder` | `cast( _FreightOrderRefTM.TransportationOrder as ewm_de_freightorder_alpha_conv preserving type )` |
-| `MasterBillOfLading` | `cast( case when _BillOfLadingRefEWM.DeliveryUUID is null then _BillOfLadingRefTM.MasterBillOfLading else _BillOfLadingRefEWM.EWMRefDeliveryDocumentNumber end as /scwm/sp_docno_bol preserving type )` |
-| `TranspOrdPartnerReference` | `cast( _ExtConsignmentOrderRefTM.TranspOrdPartnerReference as /scwm/de_docno_ecn preserving type )` |
-| `EWMShippingReadinessStatus` | `cast( _DSHStatus.EWMOutboundDeliveryOrderStatus as ewm_de_ship_readiness_status preserving type )` |
-| `PlannedDeliveryUTCDateTime` | `_PlannedDeliveryDateTime.DeliveryRelatedStartDateTime` |
-| `PlannedOutOfYardUTCDateTime` | `_PlndDeliveryOutOfYardDateTime.DeliveryRelatedStartDateTime` |
-| `WarehouseTimeZone` | `_WarehouseTimezone.TimeZoneID` |
-| `IncotermsPart1` | `IncotermsPart1` |
-| `IncotermsPart2` | `IncotermsPart2` |
-| `EWMRoute` | `Route` |
-| `EWMMeansOfTransport` | `EWMMeansOfTransport` |
-| `EWMMeansOfTransportType` | `EWMMeansOfTransportType` |
-| `EWMTranspPlanningType` | `cast( EWMTranspPlanningType as ewm_de_transp_plng_type preserving type )` |
-| `SalesOrganization` | `SalesOrganization` |
-| `ShippingOffice` | `ShippingOffice` |
-| `EWMWhseReqProductionCode` | `cast( EWMWhseReqProductionCode as ewm_de_whsereq_production_code preserving type )` |
-| `EWMDeliveryCreationUTCDateTime` | `EWMDeliveryCreationUTCDateTime` |
-| `EWMDelivLastChangeUTCDateTime` | `case when EWMDelivLastChangeUTCDateTime is initial then EWMDeliveryCreationUTCDateTime else EWMDelivLastChangeUTCDateTime end` |
-| `EWMWhseReqHasWarehouseTask` | `case when _WarehouseTasksExists.EWMWarehouseRequestUUID is not null then 'X' else cast( '' as ewm_de_whsereq_has_wt ) end` |
-| `OutboundDeliveryOrderUUID` | `OutboundDeliveryOrderUUID` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OutboundDeliveryOrder` | ✓ | |  |  |
+| `EWMWarehouse` |  | | `_Warehouse` | `EWMWarehouse` |
+| `EWMOutboundDeliveryOrder` |  | |  | `OutboundDeliveryOrder` |
+| `EWMDeliveryDocumentCategory` |  | |  | `DeliveryCategory` |
+| `EWMDeliveryDocumentType` |  | |  | `DeliveryType` |
+| `ShipToParty` |  | |  | `BusinessPartner` |
+| `ShipToPartyName` |  | |  | `cast( ShipToPartyName as ewm_de_ship_to_party_name preserving type )` |
+| `EWMShipToIsBusPurposeCmpltd` |  | |  |  |
+| `Carrier` |  | |  | `BusinessPartner` |
+| `CarrierName` |  | |  | `cast( CarrierName as ewm_de_carrier_name preserving type )` |
+| `EWMCarrierIsBusPurposeCmpltd` |  | |  |  |
+| `OutboundDelivery` |  | |  | `cast(_Reference.EWMRefDeliveryDocumentNumber as /scwm/sp_docno_erp )` |
+| `BusinessSystemName` |  | | `_Reference` | `BusinessSystemName` |
+| `FreightOrder` |  | |  | `cast( _FreightOrderRefTM.TransportationOrder as ewm_de_freightorder_alpha_conv preserving type )` |
+| `MasterBillOfLading` |  | |  | `cast( case when _BillOfLadingRefEWM.DeliveryUUID is null then _BillOfLadingRefTM.MasterBillOfLading else _BillOfLadingRefEWM.EWMRefDeliveryDocumentNumber end as /scwm/sp_docno_bol preserving type )` |
+| `TranspOrdPartnerReference` |  | |  | `cast( _ExtConsignmentOrderRefTM.TranspOrdPartnerReference as /scwm/de_docno_ecn preserving type )` |
+| `EWMShippingReadinessStatus` |  | |  | `cast( _DSHStatus.EWMOutboundDeliveryOrderStatus as ewm_de_ship_readiness_status preserving type )` |
+| `PlannedDeliveryUTCDateTime` |  | | `_PlannedDeliveryDateTime` | `DeliveryRelatedStartDateTime` |
+| `PlannedOutOfYardUTCDateTime` |  | | `_PlndDeliveryOutOfYardDateTime` | `DeliveryRelatedStartDateTime` |
+| `WarehouseTimeZone` |  | | `_WarehouseTimezone` | `TimeZoneID` |
+| `IncotermsPart1` |  | |  |  |
+| `IncotermsPart2` |  | |  |  |
+| `EWMRoute` |  | |  | `Route` |
+| `EWMMeansOfTransport` |  | |  |  |
+| `EWMMeansOfTransportType` |  | |  |  |
+| `EWMTranspPlanningType` |  | |  | `cast( EWMTranspPlanningType as ewm_de_transp_plng_type preserving type )` |
+| `SalesOrganization` |  | |  |  |
+| `ShippingOffice` |  | |  |  |
+| `EWMWhseReqProductionCode` |  | |  | `cast( EWMWhseReqProductionCode as ewm_de_whsereq_production_code preserving type )` |
+| `EWMDeliveryCreationUTCDateTime` |  | |  |  |
+| `EWMDelivLastChangeUTCDateTime` |  | |  | `case when EWMDelivLastChangeUTCDateTime is initial then EWMDeliveryCreationUTCDateTime else EWMDelivLastChangeUTCDateTime end` |
+| `EWMWhseReqHasWarehouseTask` |  | |  | `case when _WarehouseTasksExists.EWMWarehouseRequestUUID is not null then 'X' else cast( '' as ewm_de_whsereq_has_wt ) end` |
+| `OutboundDeliveryOrderUUID` |  | |  |  |
 
 ## Associations
 

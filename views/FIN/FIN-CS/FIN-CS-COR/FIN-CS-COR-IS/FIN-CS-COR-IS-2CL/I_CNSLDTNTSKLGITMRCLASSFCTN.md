@@ -28,93 +28,93 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnTaskLogUUID` | `item.CnsldtnTaskLogUUID` |
-| key `CnsldtnTaskLogItemUUID` | `item.CnsldtnTaskLogItemUUID` |
-| `CnsldtnTaskLogItemType` | `item.CnsldtnTaskLogItemType` |
-| `ConsolidationDocumentNumber` | `item.ConsolidationDocumentNumber` |
-| `ConsolidationPostingItem` | `item.ConsolidationPostingItem` |
-| `CurrencyConversionsDiffType` | `item.CurrencyConversionsDiffType` |
-| `ConsolidationApportionment` | `item.ConsolidationApportionment` |
-| `ConsolidationPostgItemAutoFlag` | `item.ConsolidationPostgItemAutoFlag` |
-| `ConsolidationMethod` | `item.ConsolidationMethod` |
-| `PartnerConsolidationUnit` | `item.PartnerConsolidationUnit` |
-| `ConsolidationUnit` | `item.ConsolidationUnit` |
-| `SubItemCategory` | `item.SubItemCategory` |
-| `SubItem` | `item.SubItem` |
-| `CnsldtnFinancialStatementItem` | `item.CnsldtnFinancialStatementItem` |
-| `ConsolidationGroup` | `item.ConsolidationGroup` |
-| `ConsolidationCurrencySetIdn` | `item.ConsolidationCurrencySetIdn` |
-| `CnsldtnPercent` | `item.CnsldtnPercent` |
-| `CnsldtnJrnlEntryAmtLoclCrcy` | `item.CnsldtnJrnlEntryAmtLoclCrcy` |
-| `CnsldtnJrnlEntryAmtInLoclCrcy` | `item.CnsldtnJrnlEntryAmtInLoclCrcy` |
-| `CnsldtnJrnlEntryAmtGrpCrcy` | `item.CnsldtnJrnlEntryAmtGrpCrcy` |
-| `CnsldtnJrnlEntryAmtInGrpCrcy` | `item.CnsldtnJrnlEntryAmtInGrpCrcy` |
-| `CnsldtnJrnlEntryAmtTransCrcy` | `item.CnsldtnJrnlEntryAmtTransCrcy` |
-| `CnsldtnJrnlEntryAmtInTransCrcy` | `item.CnsldtnJrnlEntryAmtInTransCrcy` |
-| `CnsldtnJrnlEntryQtyBaseUnit` | `item.CnsldtnJrnlEntryQtyBaseUnit` |
-| `CnsldtnJrnlEntryQtyInBsUnt` | `item.CnsldtnJrnlEntryQtyInBsUnt` |
-| `CnsldtnTriggeringAmtLoclCrcy` | `item.CnsldtnTriggeringAmtLoclCrcy` |
-| `CnsldtnTriggeringAmtInLoclCrcy` | `item.CnsldtnTriggeringAmtInLoclCrcy` |
-| `CnsldtnTriggeringAmtGrpCrcy` | `item.CnsldtnTriggeringAmtGrpCrcy` |
-| `CnsldtnTriggeringAmtInGrpCrcy` | `item.CnsldtnTriggeringAmtInGrpCrcy` |
-| `CnsldtnTriggeringAmtTransCrcy` | `item.CnsldtnTriggeringAmtTransCrcy` |
-| `CnsldtnTriggeringAmtInTC` | `item.CnsldtnTriggeringAmtInTC` |
-| `CnsldtnTriggeringQtyBaseUnit` | `item.CnsldtnTriggeringQtyBaseUnit` |
-| `CnsldtnTriggeringQtyInBsUnt` | `item.CnsldtnTriggeringQtyInBsUnt` |
-| `SequenceNumber` | `item.SequenceNumber` |
-| `CnsldtnRclassfctnRecdType` | `item.CnsldtnRclassfctnRecdType` |
-| `PartnerCostCenter` | `item.PartnerCostCenter` |
-| `FinancialTransactionType` | `item.FinancialTransactionType` |
-| `SoldMaterial` | `item.SoldMaterial` |
-| `CustomerGroup` | `item.CustomerGroup` |
-| `CustomerSupplierCountry` | `item.CustomerSupplierCountry` |
-| `SoldProductGroup` | `item.SoldProductGroup` |
-| `AssignmentReference` | `item.AssignmentReference` |
-| `FinancialServicesBranch` | `item.FinancialServicesBranch` |
-| `GHGScope2CalculationMethod` | `item.GHGScope2CalculationMethod` |
-| `CashLedgerAccount` | `item.CashLedgerAccount` |
-| `CnsldtnCashLedgerChartOfAccts` | `item.CnsldtnCashLedgerChartOfAccts` |
-| `GHGScope2ContractualInstrument` | `item.GHGScope2ContractualInstrument` |
-| `FinancialDataSource` | `item.FinancialDataSource` |
-| `Fund` | `item.Fund` |
-| `GHGCategory` | `item.GHGCategory` |
-| `GHGScope` | `item.GHGScope` |
-| `GrantID` | `item.GrantID` |
-| `SustainabilityModeOfTransport` | `item.SustainabilityModeOfTransport` |
-| `CnsldtnTskLgNode` | `item.CnsldtnTskLgNode` |
-| `CnsldtnTskLgParNode` | `item.CnsldtnTskLgParNode` |
-| `FinancialServicesProductGroup` | `item.FinancialServicesProductGroup` |
-| `_ConsolidationTaskLog` | *Association* |
-| `_CnsldtnCrcyCnvrsnDiffType` | *Association* |
-| `_CnsldtnApportionment` | *Association* |
-| `_CnsldtnMethod` | *Association* |
-| `_CnsldtnUnitPartner` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnSubitemCategory` | *Association* |
-| `_CnsldtnSubItem` | *Association* |
-| `_CnsldtnGroup` | *Association* |
-| `_CnsldtnJrnlEntryAmtLoclCrcy` | *Association* |
-| `_CnsldtnJrnlEntryAmtGrpCrcy` | *Association* |
-| `_CnsldtnJrnlEntryAmtTransCrcy` | *Association* |
-| `_CnsldtnJrnlEntryQtyBaseUnit` | *Association* |
-| `_CnsldtnTriggeringAmtLoclCrcy` | *Association* |
-| `_CnsldtnTriggeringAmtGrpCrcy` | *Association* |
-| `_CnsldtnTriggeringAmtTransCrcy` | *Association* |
-| `_CnsldtnTriggeringQtyBaseUnit` | *Association* |
-| `_CnsldtnFinTransType` | *Association* |
-| `_CnsldtnMaterial` | *Association* |
-| `_CnsldtnCustomerGroup` | *Association* |
-| `_CnsldtnCountry` | *Association* |
-| `_CnsldtnProductGroup` | *Association* |
-| `_CnsldtnGHGScp2CalcMethod` | *Association* |
-| `_CnsldtnCashLedgerAccount` | *Association* |
-| `_CnsldtnCashLedgerChartOfAccts` | *Association* |
-| `_CnsldtnGHGScp2CntrctlInstr` | *Association* |
-| `_CnsldtnGHGCategory` | *Association* |
-| `_CnsldtnGHGScope` | *Association* |
-| `_CnsldtnSustModeOfTransport` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemType` |  | |  |  |
+| `ConsolidationDocumentNumber` |  | |  |  |
+| `ConsolidationPostingItem` |  | |  |  |
+| `CurrencyConversionsDiffType` |  | |  |  |
+| `ConsolidationApportionment` |  | |  |  |
+| `ConsolidationPostgItemAutoFlag` |  | |  |  |
+| `ConsolidationMethod` |  | |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |
+| `ConsolidationUnit` |  | |  |  |
+| `SubItemCategory` |  | |  |  |
+| `SubItem` |  | |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |
+| `ConsolidationGroup` |  | |  |  |
+| `ConsolidationCurrencySetIdn` |  | |  |  |
+| `CnsldtnPercent` |  | |  |  |
+| `CnsldtnJrnlEntryAmtLoclCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInLoclCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtGrpCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInGrpCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtTransCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryAmtInTransCrcy` |  | |  |  |
+| `CnsldtnJrnlEntryQtyBaseUnit` |  | |  |  |
+| `CnsldtnJrnlEntryQtyInBsUnt` |  | |  |  |
+| `CnsldtnTriggeringAmtLoclCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtInLoclCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtGrpCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtInGrpCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtTransCrcy` |  | |  |  |
+| `CnsldtnTriggeringAmtInTC` |  | |  |  |
+| `CnsldtnTriggeringQtyBaseUnit` |  | |  |  |
+| `CnsldtnTriggeringQtyInBsUnt` |  | |  |  |
+| `SequenceNumber` |  | |  |  |
+| `CnsldtnRclassfctnRecdType` |  | |  |  |
+| `PartnerCostCenter` |  | |  |  |
+| `FinancialTransactionType` |  | |  |  |
+| `SoldMaterial` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `CustomerSupplierCountry` |  | |  |  |
+| `SoldProductGroup` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `FinancialServicesBranch` |  | |  |  |
+| `GHGScope2CalculationMethod` |  | |  |  |
+| `CashLedgerAccount` |  | |  |  |
+| `CnsldtnCashLedgerChartOfAccts` |  | |  |  |
+| `GHGScope2ContractualInstrument` |  | |  |  |
+| `FinancialDataSource` |  | |  |  |
+| `Fund` |  | |  |  |
+| `GHGCategory` |  | |  |  |
+| `GHGScope` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `SustainabilityModeOfTransport` |  | |  |  |
+| `CnsldtnTskLgNode` |  | |  |  |
+| `CnsldtnTskLgParNode` |  | |  |  |
+| `FinancialServicesProductGroup` |  | |  |  |
+| `_ConsolidationTaskLog` | | ✓ | | |
+| `_CnsldtnCrcyCnvrsnDiffType` | | ✓ | | |
+| `_CnsldtnApportionment` | | ✓ | | |
+| `_CnsldtnMethod` | | ✓ | | |
+| `_CnsldtnUnitPartner` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | |
+| `_CnsldtnSubItem` | | ✓ | | |
+| `_CnsldtnGroup` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtLoclCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtGrpCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryAmtTransCrcy` | | ✓ | | |
+| `_CnsldtnJrnlEntryQtyBaseUnit` | | ✓ | | |
+| `_CnsldtnTriggeringAmtLoclCrcy` | | ✓ | | |
+| `_CnsldtnTriggeringAmtGrpCrcy` | | ✓ | | |
+| `_CnsldtnTriggeringAmtTransCrcy` | | ✓ | | |
+| `_CnsldtnTriggeringQtyBaseUnit` | | ✓ | | |
+| `_CnsldtnFinTransType` | | ✓ | | |
+| `_CnsldtnMaterial` | | ✓ | | |
+| `_CnsldtnCustomerGroup` | | ✓ | | |
+| `_CnsldtnCountry` | | ✓ | | |
+| `_CnsldtnProductGroup` | | ✓ | | |
+| `_CnsldtnGHGScp2CalcMethod` | | ✓ | | |
+| `_CnsldtnCashLedgerAccount` | | ✓ | | |
+| `_CnsldtnCashLedgerChartOfAccts` | | ✓ | | |
+| `_CnsldtnGHGScp2CntrctlInstr` | | ✓ | | |
+| `_CnsldtnGHGCategory` | | ✓ | | |
+| `_CnsldtnGHGScope` | | ✓ | | |
+| `_CnsldtnSustModeOfTransport` | | ✓ | | |
 
 ## Associations
 

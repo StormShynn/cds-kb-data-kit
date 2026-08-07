@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfigurableCodesCatalog` | `tq15t.katalogart` |
-| key `Language` | `tq15t.sprache` |
-| `ConfigblCodesCatalogTxt` | `tq15t.katalogtxt` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |
+| `Language` | ✓ | |  | `sprache` |
+| `ConfigblCodesCatalogTxt` |  | |  | `katalogtxt` |
 
 ## Source Code
 

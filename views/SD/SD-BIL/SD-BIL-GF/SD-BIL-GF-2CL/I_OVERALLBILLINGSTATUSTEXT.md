@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallBillingStatus` | `cast(substring(domvalue_l, 1, 1) as vf_status preserving type)` |
-| key `Language` | `ddlanguage` |
-| `OverallBillingStatusDesc` | `ddtext` |
-| `_OverallBillingStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallBillingStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as vf_status preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `OverallBillingStatusDesc` |  | |  | `ddtext` |
+| `_OverallBillingStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

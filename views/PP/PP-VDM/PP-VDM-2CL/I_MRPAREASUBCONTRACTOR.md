@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPArea` | `mdll.berid` |
-| key `MRPAreaPlant` | `mdll.werks` |
-| key `MRPAreaSubcontractor` | `mdll.lbear` |
-| `_MRPArea` | *Association* |
-| `_Plant` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPArea` | ✓ | |  | `berid` |
+| `MRPAreaPlant` | ✓ | |  | `werks` |
+| `MRPAreaSubcontractor` | ✓ | |  | `lbear` |
+| `_MRPArea` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

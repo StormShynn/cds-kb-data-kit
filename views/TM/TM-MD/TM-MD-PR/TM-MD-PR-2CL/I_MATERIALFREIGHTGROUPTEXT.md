@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialFreightGroup` | `mfrgr` |
-| key `Language` | `spras` |
-| `MaterialFreightGroupName` | `bezei` |
-| `_MaterialFreightGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialFreightGroup` | ✓ | |  | `mfrgr` |
+| `Language` | ✓ | |  | `spras` |
+| `MaterialFreightGroupName` |  | |  | `bezei` |
+| `_MaterialFreightGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

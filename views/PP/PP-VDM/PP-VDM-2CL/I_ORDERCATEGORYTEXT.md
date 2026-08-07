@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderCategory` | `cast( cast(substring(t.domvalue_l, 1, 2) as abap.numc(2) ) as auftyp preserving type)` |
-| key `Language` | `cast(t.ddlanguage as spras preserving type)` |
-| `OrderCategoryName` | `cast(t.ddtext as ordercategoryname preserving type)` |
-| `DomainValue` | `t.domvalue_l` |
-| `_Language` | *Association* |
-| `_OrderCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderCategory` | ✓ | |  | `cast( cast(substring(t.domvalue_l, 1, 2) as abap.numc(2) ) as auftyp preserving type)` |
+| `Language` | ✓ | |  | `cast(t.ddlanguage as spras preserving type)` |
+| `OrderCategoryName` |  | |  | `cast(t.ddtext as ordercategoryname preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_OrderCategory` | | ✓ | | |
 
 ## Associations
 

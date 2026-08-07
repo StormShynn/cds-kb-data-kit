@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnItemAmountDateType` | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_amount_date_type_kk preserving type )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CABillgPlnItmAmtDateTypeText` | `cast ( ddtext as bip_amt_date_type_txt_gfn_kk preserving type )` |
-| `_CABillgPlnItmAmtDateType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnItemAmountDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_amount_date_type_kk preserving type )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CABillgPlnItmAmtDateTypeText` |  | |  | `cast ( ddtext as bip_amt_date_type_txt_gfn_kk preserving type )` |
+| `_CABillgPlnItmAmtDateType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

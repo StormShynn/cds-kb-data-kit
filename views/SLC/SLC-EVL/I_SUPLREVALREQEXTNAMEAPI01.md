@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalReqExternalNameUUID` | `SuplrEvalReqExternalNameUUID` |
-| `SuplrEvalReqUUID` | `SuplrEvalReqUUID` |
-| `SuplrEvalReqQuestionnaireUUID` | `SuplrEvalReqQuestionnaireUUID` |
-| `Language` | `Language` |
-| `SuplrEvalReqExternalName` | `SuplrEvalReqExternalName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalReqExternalNameUUID` | ✓ | |  |  |
+| `SuplrEvalReqUUID` |  | |  |  |
+| `SuplrEvalReqQuestionnaireUUID` |  | |  |  |
+| `Language` |  | |  |  |
+| `SuplrEvalReqExternalName` |  | |  |  |
 
 ## Source Code
 

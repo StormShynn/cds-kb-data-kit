@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ConditionApplication` | `ConditionApplication` |
-| key `PriceElementAccessLevel` | `PriceElementAccessLevel` |
-| `PriceElementAccessLevelText` | `PriceElementAccessLevelText` |
-| `_ConditionApplication` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ConditionApplication` | ✓ | |  |  |
+| `PriceElementAccessLevel` | ✓ | |  |  |
+| `PriceElementAccessLevelText` |  | |  |  |
+| `_ConditionApplication` | | ✓ | | |
 
 ## Associations
 

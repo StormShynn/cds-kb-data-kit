@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PredecessorOrderInternalID` | `PredecessorOrderInternalID` |
-| key `PredecessorPhaseInternalID` | `PredecessorPhaseInternalID` |
-| key `SuccessorOrderInternalID` | `SuccessorOrderInternalID` |
-| key `SuccessorPhaseInternalID` | `SuccessorPhaseInternalID` |
-| key `OrderPhaseRelationshipIntType` | `OrderPhaseRelationshipIntType` |
-| key `MaxTimeIntvlIsUsedForSchedg` | `MaxTimeIntvlIsUsedForSchedg` |
-| `PredecessorOrder` | `PredecessorOrder` |
-| `PredecessorOrderPhase` | `PredecessorOrderPhase` |
-| `SuccessorOrder` | `SuccessorOrder` |
-| `SuccessorOrderPhase` | `SuccessorOrderPhase` |
-| `ManufacturingOrderCategory` | `ManufacturingOrderCategory` |
-| `PhaseRelshpTimeIntervalUnit` | `PhaseRelshpTimeIntervalUnit` |
-| `PhaseRelshpTimeIntervalDurn` | `PhaseRelshpTimeIntervalDurn` |
-| `PhaseRelshpTimeIntervalDurnMax` | `PhaseRelshpTimeIntervalDurnMax` |
-| `TimeIntvlBtwnRelshpInPct` | `TimeIntvlBtwnRelshpInPct` |
-| `TimeInterval` | `TimeInterval` |
-| `ObjectInternalID` | `ObjectInternalID` |
-| `ObjectIsDeleted` | `ObjectIsDeleted` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `Plant` | `Plant` |
-| `ProductionResourceInternalID` | `ProductionResourceInternalID` |
-| `ProductionResource` | `ProductionResource` |
-| `_SuccessorPhase` | *Association* |
-| `_SuccessorOrder` | *Association* |
-| `_PredecessorPhase` | *Association* |
-| `_PredecessorOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PredecessorOrderInternalID` | ✓ | |  |  |
+| `PredecessorPhaseInternalID` | ✓ | |  |  |
+| `SuccessorOrderInternalID` | ✓ | |  |  |
+| `SuccessorPhaseInternalID` | ✓ | |  |  |
+| `OrderPhaseRelationshipIntType` | ✓ | |  |  |
+| `MaxTimeIntvlIsUsedForSchedg` | ✓ | |  |  |
+| `PredecessorOrder` |  | |  |  |
+| `PredecessorOrderPhase` |  | |  |  |
+| `SuccessorOrder` |  | |  |  |
+| `SuccessorOrderPhase` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `PhaseRelshpTimeIntervalUnit` |  | |  |  |
+| `PhaseRelshpTimeIntervalDurn` |  | |  |  |
+| `PhaseRelshpTimeIntervalDurnMax` |  | |  |  |
+| `TimeIntvlBtwnRelshpInPct` |  | |  |  |
+| `TimeInterval` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `ObjectIsDeleted` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ProductionResourceInternalID` |  | |  |  |
+| `ProductionResource` |  | |  |  |
+| `_SuccessorPhase` | | ✓ | | |
+| `_SuccessorOrder` | | ✓ | | |
+| `_PredecessorPhase` | | ✓ | | |
+| `_PredecessorOrder` | | ✓ | | |
 
 ## Source Code
 

@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallProfile` | `pabprf` |
-| key `Language` | `spras` |
-| `JITCallProfileDesc` | `pabprt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallProfile` | ✓ | |  | `pabprf` |
+| `Language` | ✓ | |  | `spras` |
+| `JITCallProfileDesc` |  | |  | `pabprt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

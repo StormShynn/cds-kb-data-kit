@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressManagementURIType` | `cast ( domvalue_l as ad_uritype )` |
-| key `Language` | `ddlanguage` |
-| `AddressManagementURITypeText` | `ddtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressManagementURIType` | ✓ | |  | `cast ( domvalue_l as ad_uritype )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `AddressManagementURITypeText` |  | |  | `ddtext` |
 
 ## Source Code
 

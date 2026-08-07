@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationQuestionType` | `ConsolidationQuestionType` |
-| `DomainValue` | `DomainValue` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationQuestionType` | ✓ | |  |  |
+| `DomainValue` |  | |  |  |
 
 ## Source Code
 

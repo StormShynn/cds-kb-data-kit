@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaritalStatus` | `marst` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaritalStatus` | ✓ | |  | `marst` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

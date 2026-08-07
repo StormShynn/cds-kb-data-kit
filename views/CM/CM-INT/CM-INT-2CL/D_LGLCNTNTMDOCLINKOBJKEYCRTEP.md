@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LglCntntMDocument` | `lcm_document_id` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocument` |  | |  | `lcm_document_id` |
 
 ## Source Code
 

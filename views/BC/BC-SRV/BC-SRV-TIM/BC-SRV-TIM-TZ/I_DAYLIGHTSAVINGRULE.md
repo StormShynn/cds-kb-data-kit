@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DaylightSavingRule` | `ttzd.dstrule` |
-| `DaylightSavingTimeDiff` | `ttzd.dstdiff` |
-| `DaylightSavingRuleIsActive` | `ttzd.flagactive` |
-| `_DaylightSavingRuleText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DaylightSavingRule` | ✓ | |  | `dstrule` |
+| `DaylightSavingTimeDiff` |  | |  | `dstdiff` |
+| `DaylightSavingRuleIsActive` |  | |  | `flagactive` |
+| `_DaylightSavingRuleText` | | ✓ | | |
 
 ## Associations
 

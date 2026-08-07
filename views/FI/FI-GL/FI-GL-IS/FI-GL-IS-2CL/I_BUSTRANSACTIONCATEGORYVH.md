@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessTransactionCategory` | `I_BusinessTransactionCategory.BusinessTransactionCategory` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessTransactionCategory` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `P_OffsettingAccount.ChartOfAccounts` |
-| key `OffsettingAccountType` | `P_OffsettingAccount.OffsettingAccountType` |
-| key `OffsettingAccount` | `P_OffsettingAccount.OffsettingAccount` |
-| `OffsettingAccountName` | `P_OffsettingAccount.OffsettingAccountName` |
-| `OffsettingAccountShortName` | `P_OffsettingAccount.OffsettingAccountShortName` |
-| `_ChartOfAccounts` | *Association* |
-| `_GLAccount` | *Association* |
-| `_GLAccountInChartOfAccounts` | *Association* |
-| `_OffsettingAccountType` | *Association* |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  |  |
+| `OffsettingAccountType` | ✓ | |  |  |
+| `OffsettingAccount` | ✓ | |  |  |
+| `OffsettingAccountName` |  | |  |  |
+| `OffsettingAccountShortName` |  | |  |  |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | |
+| `_OffsettingAccountType` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Associations
 

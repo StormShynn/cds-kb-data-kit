@@ -30,86 +30,86 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerReturn` | `cast(SDIA.SalesDocument as vdm_customer_return preserving type)` |
-| key `CustomerReturnItem` | `cast(SDIA.SalesDocumentItem as vdm_customer_return_item preserving type)` |
-| `CustomerReturnType` | `cast(SDIA.SalesDocumentType as vdm_customer_return_type preserving type)` |
-| `CustomerReturnItemType` | `SDIA.SalesDocumentItemType` |
-| `CustomerReturnItemCategory` | `SDIA.SalesDocumentItemCategory` |
-| `CreatedByUser` | `SDIA.CreatedByUser` |
-| `CreationDate` | `SDIA.CreationDate` |
-| `CreationTime` | `SDIA.CreationTime` |
-| `LastChangeDate` | `SDIA.LastChangeDate` |
-| `CreationDateYear` | `cast(CalendarDate.CalendarYear as creation_date_year)` |
-| `CreationDateYearQuarter` | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |
-| `CreationDateYearMonth` | `cast(CalendarDate.YearMonth as creation_date_year_month)` |
-| `SalesOrganization` | `SDIA.SalesOrganization` |
-| `DistributionChannel` | `SDIA.DistributionChannel` |
-| `OrganizationDivision` | `cast(SDIA.OrganizationDivision as organization_division preserving type)` |
-| `Division` | `SDIA.Division` |
-| `SalesGroup` | `SDIA.SalesGroup` |
-| `SalesOffice` | `SDIA.SalesOffice` |
-| `PartnerCompany` | `SDIA._SoldToParty.TradingPartner` |
-| `SoldToParty` | `SDIA.SoldToParty` |
-| `ShipToParty` | `SDIA.ShipToParty` |
-| `PayerParty` | `SDIA.PayerParty` |
-| `BillToParty` | `SDIA.BillToParty` |
-| `SDDocumentReason` | `SDIA.SDDocumentReason` |
-| `CustomerReturnItemText` | `SDIA.SalesDocumentItemText` |
-| `CustomerPurchaseOrderType` | `SDIA.CustomerPurchaseOrderType` |
-| `PurchaseOrderByCustomer` | `SDIA.PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderDate` | `SDIA.CustomerPurchaseOrderDate` |
-| `CustomerGroup` | `SDIA.CustomerGroup` |
-| `SalesDocumentRjcnReason` | `SDIA.SalesDocumentRjcnReason` |
-| `ReturnReason` | `SDIA.ReturnReason` |
-| `RetsMgmtProcessingBlock` | `SDIA.RetsMgmtProcessingBlock` |
-| `Product` | `SDIA.Product` |
-| `ProductGroup` | `SDIA.ProductGroup` |
-| `Plant` | `SDIA.Plant` |
-| `ItemWeightUnit` | `SDIA.ItemWeightUnit` |
-| `ItemGrossWeight` | `SDIA.ItemGrossWeight` |
-| `ItemNetWeight` | `SDIA.ItemNetWeight` |
-| `ItemVolumeUnit` | `SDIA.ItemVolumeUnit` |
-| `ItemVolume` | `SDIA.ItemVolume` |
-| `MainItemPricingRefProduct` | `SDIA.MainItemPricingRefProduct` |
-| `HigherLevelItem` | `SDIA.HigherLevelItem` |
-| `BillOfMaterial` | `SDIA.BillOfMaterial` |
-| `PropagatePrftbltySgmt2BOM` | `SDIA.PropagatePrftbltySgmt2BOM` |
-| `CostDeterminationIsRequired` | `SDIA.CostDeterminationIsRequired` |
-| `BillingCompanyCode` | `SDIA.BillingCompanyCode` |
-| `ItemIsBillingRelevant` | `SDIA.ItemIsBillingRelevant` |
-| `ItemBillingBlockReason` | `cast(SDIA.ItemBillingBlockReason as billing_block_reason_item preserving type)` |
-| `StatisticalValueControl` | `SDIA.StatisticalValueControl` |
-| `TaxAmount` | `SDIA.TaxAmount` |
-| `CostAmount` | `SDIA.CostAmount` |
-| `Subtotal1Amount` | `SDIA.Subtotal1Amount` |
-| `Subtotal2Amount` | `SDIA.Subtotal2Amount` |
-| `Subtotal3Amount` | `SDIA.Subtotal3Amount` |
-| `Subtotal4Amount` | `SDIA.Subtotal4Amount` |
-| `Subtotal5Amount` | `SDIA.Subtotal5Amount` |
-| `Subtotal6Amount` | `SDIA.Subtotal6Amount` |
-| `CustomerPaymentTerms` | `SDIA.CustomerPaymentTerms` |
-| `PaymentMethod` | `SDIA.PaymentMethod` |
-| `BusinessArea` | `SDIA.BusinessArea` |
-| `ShippingPoint` | `SDIA.ShippingPoint` |
-| `ReferenceSDDocumentCategory` | `SDIA.ReferenceSDDocumentCategory` |
-| `ReferenceSDDocument` | `SDIA.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `SDIA.ReferenceSDDocumentItem` |
-| `BusinessSolutionOrder` | `SDIA.BusinessSolutionOrder` |
-| `BaseUnit` | `SDIA.BaseUnit` |
-| `TransactionCurrency` | `SDIA.TransactionCurrency` |
-| `DisplayCurrency` | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
-| `NumberOfIncomingCustRetItems` | `SDIA.NumberOfIncomingCustRetItems` |
-| `IncomingCustReturnsNetAmount` | `SDIA.IncomingCustReturnsNetAmount` |
-| `IncomingCustReturnsNetAmtInDC` | `cast( currency_conversion( amount => SDIA.IncomingCustReturnsNetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as incg_cust_rets_net_amt_in_dc )` |
-| `IncomingCustReturnsQuantity` | `SDIA.IncomingCustReturnsQuantity` |
-| `SDProcessStatus` | `cast(SDIA.SDProcessStatus as sd_doc_process_status preserving type)` |
-| `OrderRelatedBillingStatus` | `SDIA.OrderRelatedBillingStatus` |
-| `BillingBlockStatus` | `SDIA.BillingBlockStatus` |
-| `_CustomerReturn` | *Association* |
-| `_CustomerReturnType` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerReturn` | ✓ | |  | `cast(SDIA.SalesDocument as vdm_customer_return preserving type)` |
+| `CustomerReturnItem` | ✓ | |  | `cast(SDIA.SalesDocumentItem as vdm_customer_return_item preserving type)` |
+| `CustomerReturnType` |  | |  | `cast(SDIA.SalesDocumentType as vdm_customer_return_type preserving type)` |
+| `CustomerReturnItemType` |  | |  | `SalesDocumentItemType` |
+| `CustomerReturnItemCategory` |  | |  | `SalesDocumentItemCategory` |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `CreationDateYear` |  | |  | `cast(CalendarDate.CalendarYear as creation_date_year)` |
+| `CreationDateYearQuarter` |  | |  | `cast(CalendarDate.YearQuarter as creation_date_year_quarter)` |
+| `CreationDateYearMonth` |  | |  | `cast(CalendarDate.YearMonth as creation_date_year_month)` |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  | `cast(SDIA.OrganizationDivision as organization_division preserving type)` |
+| `Division` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `PartnerCompany` |  | |  | `TradingPartner` |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `CustomerReturnItemText` |  | |  | `SalesDocumentItemText` |
+| `CustomerPurchaseOrderType` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |
+| `ReturnReason` |  | |  |  |
+| `RetsMgmtProcessingBlock` |  | |  |  |
+| `Product` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `MainItemPricingRefProduct` |  | |  |  |
+| `HigherLevelItem` |  | |  |  |
+| `BillOfMaterial` |  | |  |  |
+| `PropagatePrftbltySgmt2BOM` |  | |  |  |
+| `CostDeterminationIsRequired` |  | |  |  |
+| `BillingCompanyCode` |  | |  |  |
+| `ItemIsBillingRelevant` |  | |  |  |
+| `ItemBillingBlockReason` |  | |  | `cast(SDIA.ItemBillingBlockReason as billing_block_reason_item preserving type)` |
+| `StatisticalValueControl` |  | |  |  |
+| `TaxAmount` |  | |  |  |
+| `CostAmount` |  | |  |  |
+| `Subtotal1Amount` |  | |  |  |
+| `Subtotal2Amount` |  | |  |  |
+| `Subtotal3Amount` |  | |  |  |
+| `Subtotal4Amount` |  | |  |  |
+| `Subtotal5Amount` |  | |  |  |
+| `Subtotal6Amount` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ShippingPoint` |  | |  |  |
+| `ReferenceSDDocumentCategory` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `BusinessSolutionOrder` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` |
+| `NumberOfIncomingCustRetItems` |  | |  |  |
+| `IncomingCustReturnsNetAmount` |  | |  |  |
+| `IncomingCustReturnsNetAmtInDC` |  | |  | `cast( currency_conversion( amount => SDIA.IncomingCustReturnsNetAmount, source_currency => SDIA.TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => SDIA.CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as incg_cust_rets_net_amt_in_dc )` |
+| `IncomingCustReturnsQuantity` |  | |  |  |
+| `SDProcessStatus` |  | |  | `cast(SDIA.SDProcessStatus as sd_doc_process_status preserving type)` |
+| `OrderRelatedBillingStatus` |  | |  |  |
+| `BillingBlockStatus` |  | |  |  |
+| `_CustomerReturn` | | ✓ | | |
+| `_CustomerReturnType` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Associations
 

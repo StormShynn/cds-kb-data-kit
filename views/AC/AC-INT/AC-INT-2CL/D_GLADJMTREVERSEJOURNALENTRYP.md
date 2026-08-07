@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `AccountingDocument` | `belnr_d` |
-| `CompanyCode` | `bukrs` |
-| `FiscalYear` | `fis_gjahr_no_conv` |
-| `PostingDate` | `budat` |
-| `CreatedByUser` | `usnam` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingDocument` |  | |  | `belnr_d` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `FiscalYear` |  | |  | `fis_gjahr_no_conv` |
+| `PostingDate` |  | |  | `budat` |
+| `CreatedByUser` |  | |  | `usnam` |
 
 ## Source Code
 

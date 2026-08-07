@@ -31,54 +31,54 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `SequentialNmbrOfSuplrConf` | `SequentialNmbrOfSuplrConf` |
-| `SupplierConfirmationCategory` | `SupplierConfirmationCategory` |
-| `DeliveryDate` | `DeliveryDate` |
-| `DelivDateCategory` | `DelivDateCategory` |
-| `DeliveryTime` | `DeliveryTime` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `ConfirmedQuantity` | `ConfirmedQuantity` |
-| `MRPRelevantQuantity` | `MRPRelevantQuantity` |
-| `SuplrConfCreationCategory` | `SuplrConfCreationCategory` |
-| `IsDeleted` | `IsDeleted` |
-| `ConfIsRelevantToMRP` | `ConfIsRelevantToMRP` |
-| `SupplierConfirmationExtNumber` | `SupplierConfirmationExtNumber` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| `ManufacturerPartProfile` | `ManufacturerPartProfile` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `NumberOfReminders` | `NumberOfReminders` |
-| `Batch` | `Batch` |
-| `DeliveryIsInPlant` | `DeliveryIsInPlant` |
-| `HandoverDate` | `HandoverDate` |
-| `HandoverTime` | `HandoverTime` |
-| `PerformancePeriodStartDate` | `PerformancePeriodStartDate` |
-| `PerformancePeriodEndDate` | `PerformancePeriodEndDate` |
-| `ServicePerformer` | `ServicePerformer` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `SupplierConfirmation` | `SupplierConfirmation` |
-| `SupplierConfirmationItem` | `SupplierConfirmationItem` |
-| `PurchaseOrderType` | `_PurchaseOrder.PurchaseOrderType` |
-| `PurchasingOrganization` | `_PurchaseOrder.PurchasingOrganization` |
-| `PurchasingGroup` | `_PurchaseOrder.PurchasingGroup` |
-| `Plant` | `_PurchaseOrderItem.Plant` |
-| `_PurchaseOrderDEX` | *Association* |
-| `_PurchaseOrderItemDEX` | *Association* |
-| `_SupplierConfirmationCategory` | *Association* |
-| `_DeliveryDocument` | *Association* |
-| `_DeliveryDocumentItem` | *Association* |
-| `_Product` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_PurchaseOrderType` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `SequentialNmbrOfSuplrConf` | ✓ | |  |  |
+| `SupplierConfirmationCategory` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `DeliveryTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `ConfirmedQuantity` |  | |  |  |
+| `MRPRelevantQuantity` |  | |  |  |
+| `SuplrConfCreationCategory` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ConfIsRelevantToMRP` |  | |  |  |
+| `SupplierConfirmationExtNumber` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `ManufacturerPartProfile` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `NumberOfReminders` |  | |  |  |
+| `Batch` |  | |  |  |
+| `DeliveryIsInPlant` |  | |  |  |
+| `HandoverDate` |  | |  |  |
+| `HandoverTime` |  | |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `SupplierConfirmation` |  | |  |  |
+| `SupplierConfirmationItem` |  | |  |  |
+| `PurchaseOrderType` |  | | `_PurchaseOrder` | `PurchaseOrderType` |
+| `PurchasingOrganization` |  | | `_PurchaseOrder` | `PurchasingOrganization` |
+| `PurchasingGroup` |  | | `_PurchaseOrder` | `PurchasingGroup` |
+| `Plant` |  | | `_PurchaseOrderItem` | `Plant` |
+| `_PurchaseOrderDEX` | | ✓ | | |
+| `_PurchaseOrderItemDEX` | | ✓ | | |
+| `_SupplierConfirmationCategory` | | ✓ | | |
+| `_DeliveryDocument` | | ✓ | | |
+| `_DeliveryDocumentItem` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_PurchaseOrderType` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

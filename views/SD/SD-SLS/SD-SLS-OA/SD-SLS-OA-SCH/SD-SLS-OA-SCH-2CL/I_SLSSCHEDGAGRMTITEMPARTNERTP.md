@@ -31,24 +31,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `SalesSchedgAgrmtItemPartner.SalesSchedulingAgreement` |
-| key `SalesSchedulingAgreementItem` | `SalesSchedgAgrmtItemPartner.SalesSchedulingAgreementItem` |
-| key `PartnerFunction` | `SalesSchedgAgrmtItemPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `SalesSchedgAgrmtItemPartner.PartnerFunctionForEdit` |
-| `Customer` | `SalesSchedgAgrmtItemPartner.Customer` |
-| `Supplier` | `SalesSchedgAgrmtItemPartner.Supplier` |
-| `Personnel` | `SalesSchedgAgrmtItemPartner.Personnel` |
-| `ContactPerson` | `SalesSchedgAgrmtItemPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `SalesSchedgAgrmtItemPartner.ReferenceBusinessPartner` |
-| `Partner` | `SalesSchedgAgrmtItemPartner.Partner` |
-| `SalesSchedgAgrmtType` | `SalesSchedgAgrmtItemPartner.SalesSchedgAgrmtType` |
-| `SalesOrganization` | `SalesSchedgAgrmtItemPartner.SalesOrganization` |
-| `DistributionChannel` | `SalesSchedgAgrmtItemPartner.DistributionChannel` |
-| `OrganizationDivision` | `SalesSchedgAgrmtItemPartner.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesSchedulingAgreement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  |  |
+| `SalesSchedulingAgreementItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `SalesSchedgAgrmtType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesSchedulingAgreement` | | ✓ | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `BusinessArea` | `_Text.BusinessArea` |
-| `BusinessAreaName` | `_Text.BusinessAreaName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnBusinessAreaTP` | `_BusinessArea as _BusinessArea : redirected to parent I_CnsldtnBusinessAreaTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `BusinessArea` | ✓ | | `_Text` | `BusinessArea` |
+| `BusinessAreaName` |  | | `_Text` | `BusinessAreaName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnBusinessAreaTP` |  | |  | `_BusinessArea as _BusinessArea : redirected to parent I_CnsldtnBusinessAreaTP` |
 
 ## Source Code
 

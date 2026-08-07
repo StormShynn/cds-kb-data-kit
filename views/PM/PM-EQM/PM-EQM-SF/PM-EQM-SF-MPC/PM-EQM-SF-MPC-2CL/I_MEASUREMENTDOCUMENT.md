@@ -29,68 +29,68 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MeasurementDocument` | `mdocm` |
-| `MeasuringPoint` | `point` |
-| `MsmtRdngDate` | `idate` |
-| `MsmtRdngTime` | `itime` |
-| `MeasurementReadingDateTime` | `cast ( dats_tims_to_tstmp( idate, itime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as timestamp )` |
-| `MsmtRdngInvertedDateTime` | `invts` |
-| `MsmtRdngIsForCounter` | `cntrg` |
-| `MeasurementDocumentText` | `mdtxt` |
-| `Language` | `mlang` |
-| `MeasurementDocumentHasLongText` | `kzltx` |
-| `MsmtRdngByUser` | `readr` |
-| `CreationDate` | `erdat` |
-| `CreationTime` | `eruhr` |
-| `MsmtDocumentCreationDateTime` | `cast ( dats_tims_to_tstmp( erdat, eruhr, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as timestamp )` |
-| `CreatedByUser` | `ernam` |
-| `LastChangeDate` | `aedat` |
-| `LastChangedByUser` | `aenam` |
-| `SingleLevelDeletionLogicFlag` | `lvorm` |
-| `MeasurementDocumentOrigin` | `gener` |
-| `InspectionLot` | `prueflos` |
-| `InspectionCharacteristic` | `merknr` |
-| `MsmtRdngSourceMeasurementDoc` | `rootd` |
-| `ProdnRsceToolTypeCode` | `tolty` |
-| `ProdnRsceToolInternalID` | `tolid` |
-| `MsmtDocumentReferredOrder` | `woobj` |
-| `MsmtIsDoneAfterTaskCompltn` | `docaf` |
-| `MeasurementReading` | `readg` |
-| `MsmtRdngIsEntered` | `readgi` |
-| `MeasurementReadingInEntryUoM` | `recdv` |
-| `MsmtReadingInEntryUoMIsEntered` | `recdvi` |
-| `MeasurementReadingEntryUoM` | `recdu` |
-| `MsmtDocumentSIUnitOfMeasure` | `_MeasuringPoint._UnitOfMeasure._Dimension.UnitOFMeasureSiUnit` |
-| `MeasurementCounterReading` | `cntrr` |
-| `MsmtCntrRdngIsEntered` | `cntrri` |
-| `MsmtCounterReadingDifference` | `cdiff` |
-| `MsmtCntrReadingDiffIsEntered` | `idiff` |
-| `MsmtCounterReadingIsReplaced` | `exchg` |
-| `TotalMsmtRdngIsSetExternally` | `totex` |
-| `MeasurementDocumentCatalogType` | `codct` |
-| `MeasurementDocumentCodeGroup` | `codgr` |
-| `MsmtValuationCode` | `vlcod` |
-| `MsmtValuationCodeVersNmbr` | `cvers` |
-| `MsmtRdngStatus` | `prest` |
-| `MsmtRdngIsReversed` | `cancl` |
-| `InspectionValuationResult` | `mbewertg` |
-| `MsmtRdngIsIntervalDoc` | `intvl` |
-| `MsmtRdngIntervalStartDate` | `idat1` |
-| `MsmtRdngIntervalStartTime` | `itim1` |
-| `MaintOrderOperationInternalID` | `woob1` |
-| `_MeasuringPoint` | *Association* |
-| `_Language` | *Association* |
-| `_InspectionLot` | *Association* |
-| `_MsmtRdngSourceMeasurementDoc` | *Association* |
-| `_ControllingObject` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_MsmtDocumentCatalogType` | *Association* |
-| `_MeasurementDocumentCodeGroup` | *Association* |
-| `_MeasurementValuationCode` | *Association* |
-| `_MaintenanceOrder` | *Association* |
-| `_MaintenanceNotification` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MeasurementDocument` | ✓ | |  | `mdocm` |
+| `MeasuringPoint` |  | |  | `point` |
+| `MsmtRdngDate` |  | |  | `idate` |
+| `MsmtRdngTime` |  | |  | `itime` |
+| `MeasurementReadingDateTime` |  | |  | `cast ( dats_tims_to_tstmp( idate, itime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as timestamp )` |
+| `MsmtRdngInvertedDateTime` |  | |  | `invts` |
+| `MsmtRdngIsForCounter` |  | |  | `cntrg` |
+| `MeasurementDocumentText` |  | |  | `mdtxt` |
+| `Language` |  | |  | `mlang` |
+| `MeasurementDocumentHasLongText` |  | |  | `kzltx` |
+| `MsmtRdngByUser` |  | |  | `readr` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreationTime` |  | |  | `eruhr` |
+| `MsmtDocumentCreationDateTime` |  | |  | `cast ( dats_tims_to_tstmp( erdat, eruhr, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as timestamp )` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `SingleLevelDeletionLogicFlag` |  | |  | `lvorm` |
+| `MeasurementDocumentOrigin` |  | |  | `gener` |
+| `InspectionLot` |  | |  | `prueflos` |
+| `InspectionCharacteristic` |  | |  | `merknr` |
+| `MsmtRdngSourceMeasurementDoc` |  | |  | `rootd` |
+| `ProdnRsceToolTypeCode` |  | |  | `tolty` |
+| `ProdnRsceToolInternalID` |  | |  | `tolid` |
+| `MsmtDocumentReferredOrder` |  | |  | `woobj` |
+| `MsmtIsDoneAfterTaskCompltn` |  | |  | `docaf` |
+| `MeasurementReading` |  | |  | `readg` |
+| `MsmtRdngIsEntered` |  | |  | `readgi` |
+| `MeasurementReadingInEntryUoM` |  | |  | `recdv` |
+| `MsmtReadingInEntryUoMIsEntered` |  | |  | `recdvi` |
+| `MeasurementReadingEntryUoM` |  | |  | `recdu` |
+| `MsmtDocumentSIUnitOfMeasure` |  | | `_MeasuringPoint._UnitOfMeasure._Dimension` | `UnitOFMeasureSiUnit` |
+| `MeasurementCounterReading` |  | |  | `cntrr` |
+| `MsmtCntrRdngIsEntered` |  | |  | `cntrri` |
+| `MsmtCounterReadingDifference` |  | |  | `cdiff` |
+| `MsmtCntrReadingDiffIsEntered` |  | |  | `idiff` |
+| `MsmtCounterReadingIsReplaced` |  | |  | `exchg` |
+| `TotalMsmtRdngIsSetExternally` |  | |  | `totex` |
+| `MeasurementDocumentCatalogType` |  | |  | `codct` |
+| `MeasurementDocumentCodeGroup` |  | |  | `codgr` |
+| `MsmtValuationCode` |  | |  | `vlcod` |
+| `MsmtValuationCodeVersNmbr` |  | |  | `cvers` |
+| `MsmtRdngStatus` |  | |  | `prest` |
+| `MsmtRdngIsReversed` |  | |  | `cancl` |
+| `InspectionValuationResult` |  | |  | `mbewertg` |
+| `MsmtRdngIsIntervalDoc` |  | |  | `intvl` |
+| `MsmtRdngIntervalStartDate` |  | |  | `idat1` |
+| `MsmtRdngIntervalStartTime` |  | |  | `itim1` |
+| `MaintOrderOperationInternalID` |  | |  | `woob1` |
+| `_MeasuringPoint` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_InspectionLot` | | ✓ | | |
+| `_MsmtRdngSourceMeasurementDoc` | | ✓ | | |
+| `_ControllingObject` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_MsmtDocumentCatalogType` | | ✓ | | |
+| `_MeasurementDocumentCodeGroup` | | ✓ | | |
+| `_MeasurementValuationCode` | | ✓ | | |
+| `_MaintenanceOrder` | | ✓ | | |
+| `_MaintenanceNotification` | | ✓ | | |
 
 ## Associations
 

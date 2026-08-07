@@ -31,68 +31,68 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `DeliveryAddressID` | `DeliveryAddressID` |
-| `AddressID` | `AddressID` |
-| `AddressPersonID` | `AddressPersonID` |
-| `AddressRepresentationCode` | `AddressRepresentationCode` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `PrfrdCommMediumType` | `PrfrdCommMediumType` |
-| `AddresseeFullName` | `AddresseeFullName` |
-| `OrganizationName1` | `OrganizationName1` |
-| `OrganizationName2` | `OrganizationName2` |
-| `OrganizationName3` | `OrganizationName3` |
-| `OrganizationName4` | `OrganizationName4` |
-| `AddressSearchTerm1` | `AddressSearchTerm1` |
-| `AddressSearchTerm2` | `AddressSearchTerm2` |
-| `CityName` | `CityName` |
-| `DistrictName` | `DistrictName` |
-| `VillageName` | `VillageName` |
-| `PostalCode` | `PostalCode` |
-| `CompanyPostalCode` | `CompanyPostalCode` |
-| `StreetName` | `StreetName` |
-| `StreetPrefixName1` | `StreetPrefixName1` |
-| `StreetPrefixName2` | `StreetPrefixName2` |
-| `StreetSuffixName1` | `StreetSuffixName1` |
-| `StreetSuffixName2` | `StreetSuffixName2` |
-| `HouseNumber` | `HouseNumber` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `Building` | `Building` |
-| `Floor` | `Floor` |
-| `RoomNumber` | `RoomNumber` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `FormOfAddress` | `FormOfAddress` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `TransportZone` | `TransportZone` |
-| `POBox` | `POBox` |
-| `POBoxIsWithoutNumber` | `POBoxIsWithoutNumber` |
-| `POBoxPostalCode` | `POBoxPostalCode` |
-| `POBoxLobbyName` | `POBoxLobbyName` |
-| `POBoxDeviatingCityName` | `POBoxDeviatingCityName` |
-| `POBoxDeviatingRegion` | `POBoxDeviatingRegion` |
-| `POBoxDeviatingCountry` | `POBoxDeviatingCountry` |
-| `CareOfName` | `CareOfName` |
-| `DeliveryServiceTypeCode` | `DeliveryServiceTypeCode` |
-| `DeliveryServiceNumber` | `DeliveryServiceNumber` |
-| `AddressTimeZone` | `AddressTimeZone` |
-| `EmailAddress` | `EmailAddress` |
-| `RegionalStructureCheckStatus` | `RegionalStructureCheckStatus` |
-| `_Country` | *Association* |
-| `_CurrentDfltEmailAddress` | *Association* |
-| `_CurrentDfltFaxNumber` | *Association* |
-| `_CurrentDfltLandlinePhoneNmbr` | *Association* |
-| `_CurrentDfltMobilePhoneNumber` | *Association* |
-| `_DeliveryAddress` | *Association* |
-| `_EmailAddress` | *Association* |
-| `_FaxNumber` | *Association* |
-| `_PhoneNumber` | *Association* |
-| `_PurchaseOrder` | *Association* |
-| `_PurchaseOrderItem` | *Association* |
-| `_Region` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `DeliveryAddressID` | ✓ | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressRepresentationCode` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `PrfrdCommMediumType` |  | |  |  |
+| `AddresseeFullName` |  | |  |  |
+| `OrganizationName1` |  | |  |  |
+| `OrganizationName2` |  | |  |  |
+| `OrganizationName3` |  | |  |  |
+| `OrganizationName4` |  | |  |  |
+| `AddressSearchTerm1` |  | |  |  |
+| `AddressSearchTerm2` |  | |  |  |
+| `CityName` |  | |  |  |
+| `DistrictName` |  | |  |  |
+| `VillageName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `CompanyPostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `StreetPrefixName1` |  | |  |  |
+| `StreetPrefixName2` |  | |  |  |
+| `StreetSuffixName1` |  | |  |  |
+| `StreetSuffixName2` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `Building` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TransportZone` |  | |  |  |
+| `POBox` |  | |  |  |
+| `POBoxIsWithoutNumber` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `POBoxLobbyName` |  | |  |  |
+| `POBoxDeviatingCityName` |  | |  |  |
+| `POBoxDeviatingRegion` |  | |  |  |
+| `POBoxDeviatingCountry` |  | |  |  |
+| `CareOfName` |  | |  |  |
+| `DeliveryServiceTypeCode` |  | |  |  |
+| `DeliveryServiceNumber` |  | |  |  |
+| `AddressTimeZone` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `RegionalStructureCheckStatus` |  | |  |  |
+| `_Country` | | ✓ | | |
+| `_CurrentDfltEmailAddress` | | ✓ | | |
+| `_CurrentDfltFaxNumber` | | ✓ | | |
+| `_CurrentDfltLandlinePhoneNmbr` | | ✓ | | |
+| `_CurrentDfltMobilePhoneNumber` | | ✓ | | |
+| `_DeliveryAddress` | | ✓ | | |
+| `_EmailAddress` | | ✓ | | |
+| `_FaxNumber` | | ✓ | | |
+| `_PhoneNumber` | | ✓ | | |
+| `_PurchaseOrder` | | ✓ | | |
+| `_PurchaseOrderItem` | | ✓ | | |
+| `_Region` | | ✓ | | |
 
 ## Source Code
 

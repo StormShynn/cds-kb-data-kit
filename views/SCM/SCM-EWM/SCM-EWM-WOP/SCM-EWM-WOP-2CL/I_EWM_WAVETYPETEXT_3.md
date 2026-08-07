@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `EWMWarehouse` | `lgnum` |
-| key `EWMWaveType` | `wave_type` |
-| `EWMWaveTypeName` | `text` |
-| `_Warehouse` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `EWMWarehouse` | ✓ | |  | `lgnum` |
+| `EWMWaveType` | ✓ | |  | `wave_type` |
+| `EWMWaveTypeName` |  | |  | `text` |
+| `_Warehouse` | | ✓ | | |
 
 ## Associations
 

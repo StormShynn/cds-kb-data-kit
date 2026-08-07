@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `TreasuryGeneralValuationClass` | `cast(com_val_class as ftr_gen_fin_instr_val_class)` |
-| `TrsyGeneralValuationClassName` | `cast(com_val_cl_name as ftr_gen_fin_instr_val_cls_name)` |
-| `_GeneralValuationClass` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `TreasuryGeneralValuationClass` | ✓ | |  | `cast(com_val_class as ftr_gen_fin_instr_val_class)` |
+| `TrsyGeneralValuationClassName` |  | |  | `cast(com_val_cl_name as ftr_gen_fin_instr_val_cls_name)` |
+| `_GeneralValuationClass` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

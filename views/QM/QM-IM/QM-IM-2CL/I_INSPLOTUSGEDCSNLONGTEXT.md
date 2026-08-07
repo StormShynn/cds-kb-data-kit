@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| key `Language` | `Language` |
-| `InspLotUsageDecisionLongText` | `InspectionLotLongText` |
-| `LongTextCreatedByUser` | `LongTextCreatedByUser` |
-| `LongTextCreatedAt` | `LongTextCreatedAt` |
-| `LongTextLastChangedByUser` | `LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` | `LongTextLastChangedAt` |
-| `_InspectionLot` | *Association* |
-| `_InspLotUsageDecision` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `InspLotUsageDecisionLongText` |  | |  | `InspectionLotLongText` |
+| `LongTextCreatedByUser` |  | |  |  |
+| `LongTextCreatedAt` |  | |  |  |
+| `LongTextLastChangedByUser` |  | |  |  |
+| `LongTextLastChangedAt` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
+| `_InspLotUsageDecision` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

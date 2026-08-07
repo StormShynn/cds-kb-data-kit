@@ -30,30 +30,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| `DeliveryAddressID` | `DeliveryAddressID` |
-| `AddressType` | `AddressType` |
-| `PurchasingDeliveryAddressType` | `PurchasingDeliveryAddressType` |
-| `FullName` | `FullName` |
-| `StreetName` | `StreetName` |
-| `HouseNumber` | `HouseNumber` |
-| `PostalCode` | `PostalCode` |
-| `CityName` | `CityName` |
-| `MobileNumber` | `MobileNumber` |
-| `Region` | `Region` |
-| `Country` | `Country` |
-| `EmailAddress` | `EmailAddress` |
-| `Plant` | `Plant` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `PhoneNumber` | `PhoneNumber` |
-| `FaxNumber` | `FaxNumber` |
-| `AddressFaxNumber` | `AddressFaxNumber` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_SchedgAgrmtItm` | *Association* |
-| `_PurSchedgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `DeliveryAddressID` |  | |  |  |
+| `AddressType` |  | |  |  |
+| `PurchasingDeliveryAddressType` |  | |  |  |
+| `FullName` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `CityName` |  | |  |  |
+| `MobileNumber` |  | |  |  |
+| `Region` |  | |  |  |
+| `Country` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `Plant` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `PhoneNumber` |  | |  |  |
+| `FaxNumber` |  | |  |  |
+| `AddressFaxNumber` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_SchedgAgrmtItm` | | ✓ | | |
+| `_PurSchedgAgrmt` | | ✓ | | |
 
 ## Source Code
 

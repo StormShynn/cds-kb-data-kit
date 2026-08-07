@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanCtrlCycleLifeCycleStatus` | `cast(substring(domvalue_l, 1, 1) as vdm_lcm_status preserving type)` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `KnbnCtrlCycLifeCycStsText` | `cast(ddtext as vdm_lcm_status_text preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_KnbnControlCycLifeCycSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanCtrlCycleLifeCycleStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as vdm_lcm_status preserving type)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `KnbnCtrlCycLifeCycStsText` |  | |  | `cast(ddtext as vdm_lcm_status_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_KnbnControlCycLifeCycSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

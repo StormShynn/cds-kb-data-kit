@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `PurgProdCmplncSupplierStatus` | `cast( dd07t.domvalue_l as mmpur_pc_status_pcs )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PurgProdCmplncSupplierStsName` | `cast( dd07t.ddtext as mmpur_pc_status_pcs_dscr preserving type )` |
-| `_Language` | *Association* |
-| `_PurgProdCmplncSupplierStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PurgProdCmplncSupplierStatus` | ✓ | |  | `cast( dd07t.domvalue_l as mmpur_pc_status_pcs )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PurgProdCmplncSupplierStsName` |  | |  | `cast( dd07t.ddtext as mmpur_pc_status_pcs_dscr preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PurgProdCmplncSupplierStatus` | | ✓ | | |
 
 ## Associations
 

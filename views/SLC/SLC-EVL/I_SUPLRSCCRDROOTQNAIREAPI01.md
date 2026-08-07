@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScorecardQnaireUUID` | `SuplrEvalScorecardQnaireUUID` |
-| `SuplrEvalScorecardUUID` | `SuplrEvalScorecardUUID` |
-| `MinimalScore` | `MinimalScore` |
-| `TargetScore` | `TargetScore` |
-| `CalculatedScore` | `CalculatedScore` |
-| `NumberOfResponses` | `NumberOfResponses` |
-| `WeightingFactor` | `WeightingFactor` |
-| `SuplrEvalOrdinalNumber` | `SuplrEvalOrdinalNumber` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScorecardQnaireUUID` | ✓ | |  |  |
+| `SuplrEvalScorecardUUID` |  | |  |  |
+| `MinimalScore` |  | |  |  |
+| `TargetScore` |  | |  |  |
+| `CalculatedScore` |  | |  |  |
+| `NumberOfResponses` |  | |  |  |
+| `WeightingFactor` |  | |  |  |
+| `SuplrEvalOrdinalNumber` |  | |  |  |
 
 ## Source Code
 

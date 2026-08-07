@@ -26,12 +26,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdEventCode` | `tor_event` |
-| `TranspOrdStopCategory` | `stop_cat` |
-| `_TranspOrdStopCategory` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdEventCode` | ✓ | |  | `tor_event` |
+| `TranspOrdStopCategory` |  | |  | `stop_cat` |
+| `_TranspOrdStopCategory` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

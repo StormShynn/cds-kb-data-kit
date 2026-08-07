@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `name:'C_GregorianCalDateFuncVH'` | `name:'C_GregorianCalDateFuncVH'` |
-| `element:'DateFunction'` | `element:'DateFunction'` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `name:'C_GregorianCalDateFuncVH'` |  | |  |  |
+| `element:'DateFunction'` |  | |  |  |
 
 ## Source Code
 

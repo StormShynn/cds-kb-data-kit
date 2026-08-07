@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `CreditSegment` | `CreditSegment` |
-| `CreditSegmentCurrency` | `CreditSegmentCurrency` |
-| `EffectiveTotalCreditLimitAmt` | `cast( ( CustomerCreditLimitAmount + SgmSecuredCreditLimitAmount + SgmInsuredCreditLimitAmount + SgmTempIncreasedCreditLmtAmt + ProfSecLimitAmount + ProfInsLimitAmount + ProfTmpIncrLimitAmount ) as ukm_effectivetotalcrdlimitamt )` |
-| `CustomerCreditLimitAmount` | `CustomerCreditLimitAmount` |
-| `SecuredCreditLimitAmount` | `cast( ( SgmSecuredCreditLimitAmount + ProfSecLimitAmount ) as ukm_securedcreditlimitamt )` |
-| `InsuredCreditLimitAmount` | `cast( ( SgmInsuredCreditLimitAmount + ProfInsLimitAmount ) as ukm_insuredcreditlimitamt )` |
-| `TemporaryIncreasedCreditLmtAmt` | `cast( ( SgmTempIncreasedCreditLmtAmt + ProfTmpIncrLimitAmount ) as ukm_tmpincreasedcrdlimitamt )` |
-| `_BusinessPartner` | *Association* |
-| `_CreditManagementSegment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `CreditSegment` | ✓ | |  |  |
+| `CreditSegmentCurrency` |  | |  |  |
+| `EffectiveTotalCreditLimitAmt` |  | |  | `cast( ( CustomerCreditLimitAmount + SgmSecuredCreditLimitAmount + SgmInsuredCreditLimitAmount + SgmTempIncreasedCreditLmtAmt + ProfSecLimitAmount + ProfInsLimitAmount + ProfTmpIncrLimitAmount ) as ukm_effectivetotalcrdlimitamt )` |
+| `CustomerCreditLimitAmount` |  | |  |  |
+| `SecuredCreditLimitAmount` |  | |  | `cast( ( SgmSecuredCreditLimitAmount + ProfSecLimitAmount ) as ukm_securedcreditlimitamt )` |
+| `InsuredCreditLimitAmount` |  | |  | `cast( ( SgmInsuredCreditLimitAmount + ProfInsLimitAmount ) as ukm_insuredcreditlimitamt )` |
+| `TemporaryIncreasedCreditLmtAmt` |  | |  | `cast( ( SgmTempIncreasedCreditLmtAmt + ProfTmpIncrLimitAmount ) as ukm_tmpincreasedcrdlimitamt )` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CreditManagementSegment` | | ✓ | | |
 
 ## Associations
 

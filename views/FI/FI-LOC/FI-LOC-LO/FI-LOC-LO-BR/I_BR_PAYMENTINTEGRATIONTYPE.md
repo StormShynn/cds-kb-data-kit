@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentSystemIntegrationType` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_tpintegra preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentSystemIntegrationType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_tpintegra preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

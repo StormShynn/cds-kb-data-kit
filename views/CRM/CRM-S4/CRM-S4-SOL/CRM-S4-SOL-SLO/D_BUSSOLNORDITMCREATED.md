@@ -25,11 +25,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BusinessSolutionOrderItemUUID` | `crmt_object_guid` |
-| `BusSolnOrdItmCategory` | `crmt_item_type_db` |
-| `BusSolnOrdItmDescription` | `crms4_solo_item_desc` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrderItemUUID` |  | |  | `crmt_object_guid` |
+| `BusSolnOrdItmCategory` |  | |  | `crmt_item_type_db` |
+| `BusSolnOrdItmDescription` |  | |  | `crms4_solo_item_desc` |
 
 ## Source Code
 

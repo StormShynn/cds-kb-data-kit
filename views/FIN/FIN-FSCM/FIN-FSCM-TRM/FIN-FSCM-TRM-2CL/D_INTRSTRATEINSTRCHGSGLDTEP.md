@@ -27,21 +27,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `FinancialTransactionDirection` | `tb_rkondgr` |
-| `FinConditionItem` | `tb_kond` |
-| `ConditionItemValidityStartDate` | `dguel_kp` |
-| `CalculationDate` | `dvalut` |
-| `CalcDateIsAsEndDateMonthEnd` | `calc_dte_as_end_dte_month_end` |
-| `FinancialConditionDueDate` | `dfaell` |
-| `DueDateIsAsEndDateMonthEnd` | `due_dte_as_end_date_month_end` |
-| `InterestRateAdjustmentDate` | `tbvaluza` |
-| `IntrstRateAdjmtDateIsMonthEnd` | `tbultiza` |
-| `FinancialConditionItemAmount` | `ftr_condition_item_amount` |
-| `FinancialConditionItemCurrency` | `swhrkond` |
-| `ConditionPercentageRate` | `pkond` |
-| `_Condition` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialTransactionDirection` |  | |  | `tb_rkondgr` |
+| `FinConditionItem` |  | |  | `tb_kond` |
+| `ConditionItemValidityStartDate` |  | |  | `dguel_kp` |
+| `CalculationDate` |  | |  | `dvalut` |
+| `CalcDateIsAsEndDateMonthEnd` |  | |  | `calc_dte_as_end_dte_month_end` |
+| `FinancialConditionDueDate` |  | |  | `dfaell` |
+| `DueDateIsAsEndDateMonthEnd` |  | |  | `due_dte_as_end_date_month_end` |
+| `InterestRateAdjustmentDate` |  | |  | `tbvaluza` |
+| `IntrstRateAdjmtDateIsMonthEnd` |  | |  | `tbultiza` |
+| `FinancialConditionItemAmount` |  | |  | `ftr_condition_item_amount` |
+| `FinancialConditionItemCurrency` |  | |  | `swhrkond` |
+| `ConditionPercentageRate` |  | |  | `pkond` |
+| `_Condition` | | ✓ | | |
 
 ## Source Code
 

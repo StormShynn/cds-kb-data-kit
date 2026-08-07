@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MatlQualityAuthorizationGroup` | `cast( tq01b.qmatauth as vdm_qmatauth preserving type )` |
-| `MatlQMAuthorizationGroupOID` | `case when I_MdiOidConfiguration.Context is initial then cast( tq01b.qmatauth as matlqmauthorizationgroupoid ) when I_MdiOidConfiguration.Context is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), tq01b.qmatauth ) as matlqmauthorizationgroupoid ) end` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MatlQualityAuthorizationGroup` | ✓ | |  | `cast( tq01b.qmatauth as vdm_qmatauth preserving type )` |
+| `MatlQMAuthorizationGroupOID` |  | |  | `case when I_MdiOidConfiguration.Context is initial then cast( tq01b.qmatauth as matlqmauthorizationgroupoid ) when I_MdiOidConfiguration.Context is not initial then cast( concat( concat( I_MdiOidConfiguration.Context, ':' ), tq01b.qmatauth ) as matlqmauthorizationgroupoid ) end` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

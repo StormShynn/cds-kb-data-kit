@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceItem` | `MaintenanceItem` |
-| key `NmbrOfMaintComplianceItems` | `NmbrOfMaintComplianceItems` |
-| `MaintenanceComplianceGroupCode` | `MaintenanceComplianceGroupCode` |
-| `MaintenanceComplianceCode` | `MaintenanceComplianceCode` |
-| `MaintenanceComplianceTypeCode` | `MaintenanceComplianceTypeCode` |
-| `MaintComplianceCatalogCode` | `MaintComplianceCatalogCode` |
-| `MaintComplianceDescription` | `MaintComplianceDescription` |
-| `MaintenancePackage` | `MaintenancePackage` |
-| `MaintCmplRqIsLegallyBinding` | `MaintCmplRqIsLegallyBinding` |
-| `MaintCmplRqOriginCode` | `MaintCmplRqOriginCode` |
-| `MaintComplianceHasLongText` | `MaintComplianceHasLongText` |
-| `MaintComplianceSortNumber` | `MaintComplianceSortNumber` |
-| `MaintenanceComplianceIsDeleted` | `MaintenanceComplianceIsDeleted` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_MaintenanceItem` | *Association* |
-| `_MaintenanceItemReasonText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |
+| `NmbrOfMaintComplianceItems` | ✓ | |  |  |
+| `MaintenanceComplianceGroupCode` |  | |  |  |
+| `MaintenanceComplianceCode` |  | |  |  |
+| `MaintenanceComplianceTypeCode` |  | |  |  |
+| `MaintComplianceCatalogCode` |  | |  |  |
+| `MaintComplianceDescription` |  | |  |  |
+| `MaintenancePackage` |  | |  |  |
+| `MaintCmplRqIsLegallyBinding` |  | |  |  |
+| `MaintCmplRqOriginCode` |  | |  |  |
+| `MaintComplianceHasLongText` |  | |  |  |
+| `MaintComplianceSortNumber` |  | |  |  |
+| `MaintenanceComplianceIsDeleted` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_MaintenanceItem` | | ✓ | | |
+| `_MaintenanceItemReasonText` | | ✓ | | |
 
 ## Source Code
 

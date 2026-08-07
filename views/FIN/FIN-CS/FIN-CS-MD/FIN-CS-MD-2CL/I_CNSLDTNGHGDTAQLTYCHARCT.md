@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `GHGDataQualityCharacteristic` | `cast( _Source.GHGDataQualityCharacteristic as fincs_ghgdtaqltycharc preserving type )` |
-| `GHGDtaQltyCharacteristicName` | `cast( _Source.GHGDtaQltyCharacteristicName as fincs_ghgdtaqltycharcname preserving type )` |
-| `_Language` | *Association* |
-| `_GHGDataQualityCharacteristic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `GHGDataQualityCharacteristic` | ✓ | |  | `cast( _Source.GHGDataQualityCharacteristic as fincs_ghgdtaqltycharc preserving type )` |
+| `GHGDtaQltyCharacteristicName` |  | |  | `cast( _Source.GHGDtaQltyCharacteristicName as fincs_ghgdtaqltycharcname preserving type )` |
+| `_Language` | | ✓ | | |
+| `_GHGDataQualityCharacteristic` | | ✓ | | |
 
 ## Associations
 

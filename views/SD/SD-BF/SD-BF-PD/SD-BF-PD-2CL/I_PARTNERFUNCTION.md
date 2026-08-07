@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PartnerFunction` | `cast(parvw as parvw_unv)` |
-| `SDDocumentPartnerType` | `nrart` |
-| `_Text` | *Association* |
-| `_PartnerFunctionLangDepdnt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PartnerFunction` | ✓ | |  | `cast(parvw as parvw_unv)` |
+| `SDDocumentPartnerType` |  | |  | `nrart` |
+| `_Text` | | ✓ | | |
+| `_PartnerFunctionLangDepdnt` | | ✓ | | |
 
 ## Associations
 

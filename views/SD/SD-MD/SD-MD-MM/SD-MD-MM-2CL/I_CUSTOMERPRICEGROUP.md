@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerPriceGroup` | `konda` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerPriceGroup` | ✓ | |  | `konda` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

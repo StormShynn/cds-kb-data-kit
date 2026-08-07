@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderDocRefUUID` | `TransportationOrderDocRefUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspOrdDocReferenceID` | `TranspOrdDocReferenceID` |
-| `TranspOrdDocReferenceType` | `TranspOrdDocReferenceType` |
-| `TranspOrdDocReferenceItmID` | `TranspOrdDocReferenceItmID` |
-| `TranspOrdDocReferenceItmType` | `TranspOrdDocReferenceItmType` |
-| `TranspOrdDocumentReferenceDate` | `TranspOrdDocumentReferenceDate` |
-| `TranspOrdDocRefIssuerName` | `TranspOrdDocRefIssuerName` |
-| `I_FreightOrderTP` | `FreightOrderDocumentReference._TransportationOrder as _FreightOrder : redirected to parent I_FreightOrderTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderDocRefUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspOrdDocReferenceID` |  | |  |  |
+| `TranspOrdDocReferenceType` |  | |  |  |
+| `TranspOrdDocReferenceItmID` |  | |  |  |
+| `TranspOrdDocReferenceItmType` |  | |  |  |
+| `TranspOrdDocumentReferenceDate` |  | |  |  |
+| `TranspOrdDocRefIssuerName` |  | |  |  |
+| `I_FreightOrderTP` |  | |  | `FreightOrderDocumentReference._TransportationOrder as _FreightOrder : redirected to parent I_FreightOrderTP` |
 
 ## Source Code
 

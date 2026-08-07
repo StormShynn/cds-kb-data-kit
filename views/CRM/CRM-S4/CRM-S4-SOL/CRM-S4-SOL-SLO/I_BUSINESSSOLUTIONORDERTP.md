@@ -27,88 +27,88 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| `BusSolnOrdType` | `BusSolnOrdType` |
-| `BusinessSolutionOrderUUID` | `BusinessSolutionOrderUUID` |
-| `BusSolnOrdDescription` | `BusSolnOrdDescription` |
-| `Language` | `Language` |
-| `PostingDate` | `PostingDate` |
-| `ServiceDocCreationDateTime` | `ServiceDocCreationDateTime` |
-| `ServiceDocChangedDateTime` | `ServiceDocChangedDateTime` |
-| `ServiceDocumentCreatedByUser` | `ServiceDocumentCreatedByUser` |
-| `ServiceDocumentChangedByUser` | `ServiceDocumentChangedByUser` |
-| `BusSolnOrdExtReference` | `BusSolnOrdExtReference` |
-| `SoldToParty` | `SoldToParty` |
-| `ShipToParty` | `ShipToParty` |
-| `BillToParty` | `BillToParty` |
-| `PayerParty` | `PayerParty` |
-| `ContactPersonBusinessPartnerId` | `ContactPersonBusinessPartnerId` |
-| `RespEmployeeBusinessPartnerId` | `RespEmployeeBusinessPartnerId` |
-| `CustomerPurchaseOrderDate` | `CustomerPurchaseOrderDate` |
-| `BusSolnOrdIsNew` | `BusSolnOrdIsNew` |
-| `BusSolnOrdIsInProcess` | `BusSolnOrdIsInProcess` |
-| `BusSolnOrdIsReleased` | `BusSolnOrdIsReleased` |
-| `BusSolnOrdIsCompleted` | `BusSolnOrdIsCompleted` |
-| `BusSolnOrdStatus` | `BusSolnOrdStatus` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `BusSolnOrdHasError` | `BusSolnOrdHasError` |
-| `PaymentTerms` | `PaymentTerms` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `ContractAccount` | `ContractAccount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `ServiceDocNetAmount` | `ServiceDocNetAmount` |
-| `ServiceDocGrossAmount` | `ServiceDocGrossAmount` |
-| `SalesOrganizationOrgUnitID` | `SalesOrganizationOrgUnitID` |
-| `SalesOfficeOrgUnitID` | `SalesOfficeOrgUnitID` |
-| `SalesGroupOrgUnitID` | `SalesGroupOrgUnitID` |
-| `ServiceOrganization` | `ServiceOrganization` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `_BusinessSolutionOrderItemTP` | *Association* |
-| `_BusSolnOrdFUPSalesOrderTP` | *Association* |
-| `_BusSolnOrdFUPSrvcOrdTP` | *Association* |
-| `_BusSolnOrdFUPSrvcContrTP` | *Association* |
-| `_BusSolnOrdFUPSubscrpnTP` | *Association* |
-| `_BusSolnOrdFUPEntProjectTP` | *Association* |
-| `_BusSolnOrdItemRelationshipTP` | *Association* |
-| `_BusSolnOrdUserStatusTP` | *Association* |
-| `_BSOrdPrdcssrSrvcContrTP` | *Association* |
-| `_BusSolnOrdPriceElementTP` | *Association* |
-| `_BusSolnOrdLongTextTP` | *Association* |
-| `_BusSolnOrdPartnerTP` | *Association* |
-| `_BusSolnOrdAppointment` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_BillToParty` | *Association* |
-| `_PayerParty` | *Association* |
-| `_PersonResponsible` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesOrganizationOrgUnit_2` | *Association* |
-| `_SalesOfficeOrgUnit_2` | *Association* |
-| `_SalesGroupOrgUnit_2` | *Association* |
-| `_ServiceOrganizationOrgUnit_2` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_ServiceDocumentTypeText` | *Association* |
-| `_SrvcDocLifecycleStatusText` | *Association* |
-| `_SalesOrganizationText` | *Association* |
-| `_DistributionChannelText` | *Association* |
-| `_DivisionText` | *Association* |
-| `_SalesOfficeText` | *Association* |
-| `_SalesGroupText` | *Association* |
-| `_PaymentTermsText` | *Association* |
-| `_CurrencyText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `BusSolnOrdType` |  | |  |  |
+| `BusinessSolutionOrderUUID` |  | |  |  |
+| `BusSolnOrdDescription` |  | |  |  |
+| `Language` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |
+| `BusSolnOrdExtReference` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `BusSolnOrdIsNew` |  | |  |  |
+| `BusSolnOrdIsInProcess` |  | |  |  |
+| `BusSolnOrdIsReleased` |  | |  |  |
+| `BusSolnOrdIsCompleted` |  | |  |  |
+| `BusSolnOrdStatus` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `BusSolnOrdHasError` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `ContractAccount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ServiceDocNetAmount` |  | |  |  |
+| `ServiceDocGrossAmount` |  | |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |
+| `ServiceOrganization` |  | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `_BusinessSolutionOrderItemTP` | | ✓ | | |
+| `_BusSolnOrdFUPSalesOrderTP` | | ✓ | | |
+| `_BusSolnOrdFUPSrvcOrdTP` | | ✓ | | |
+| `_BusSolnOrdFUPSrvcContrTP` | | ✓ | | |
+| `_BusSolnOrdFUPSubscrpnTP` | | ✓ | | |
+| `_BusSolnOrdFUPEntProjectTP` | | ✓ | | |
+| `_BusSolnOrdItemRelationshipTP` | | ✓ | | |
+| `_BusSolnOrdUserStatusTP` | | ✓ | | |
+| `_BSOrdPrdcssrSrvcContrTP` | | ✓ | | |
+| `_BusSolnOrdPriceElementTP` | | ✓ | | |
+| `_BusSolnOrdLongTextTP` | | ✓ | | |
+| `_BusSolnOrdPartnerTP` | | ✓ | | |
+| `_BusSolnOrdAppointment` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_PersonResponsible` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_ServiceDocumentTypeText` | | ✓ | | |
+| `_SrvcDocLifecycleStatusText` | | ✓ | | |
+| `_SalesOrganizationText` | | ✓ | | |
+| `_DistributionChannelText` | | ✓ | | |
+| `_DivisionText` | | ✓ | | |
+| `_SalesOfficeText` | | ✓ | | |
+| `_SalesGroupText` | | ✓ | | |
+| `_PaymentTermsText` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
 
 ## Source Code
 

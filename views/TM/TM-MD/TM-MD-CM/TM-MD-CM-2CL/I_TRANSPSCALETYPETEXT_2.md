@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationScaleType` | `cast(substring(domvalue_l, 1, 1) as /scmtms/scatyp preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TransportationScaleTypeName` | `cast(ddtext as /scmtms/vdm_scale_type_name preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TransportationScaleType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationScaleType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/scatyp preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TransportationScaleTypeName` |  | |  | `cast(ddtext as /scmtms/vdm_scale_type_name preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TransportationScaleType` | | ✓ | | |
 
 ## Associations
 

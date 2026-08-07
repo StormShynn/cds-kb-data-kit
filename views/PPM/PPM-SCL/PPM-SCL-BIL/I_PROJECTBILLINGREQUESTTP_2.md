@@ -32,28 +32,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectBillingRequestUUID` | `ProjectBillingRequestUUID` |
-| `ProjectBillingRequest` | `ProjectBillingRequest` |
-| `ProjectBillingRequestStatus` | `ProjectBillingRequestStatus` |
-| `ProjBillgReqApprovalStatus` | `ProjBillgReqApprovalStatus` |
-| `SalesDocument` | `SalesDocument` |
-| `ProjBillgReqLastChgdBy` | `ProjBillgReqLastChgdBy` |
-| `ProjBillgReqLastChgdAtDteTme` | `ProjBillgReqLastChgdAtDteTme` |
-| `ProjBillgReqCreatedBy` | `ProjBillgReqCreatedBy` |
-| `ProjBillgReqCreatedAtDteTme` | `ProjBillgReqCreatedAtDteTme` |
-| `ProjectBillingCategory` | `ProjectBillingCategory` |
-| `ProjectInternalID` | `ProjectBillingRequest.ProjectInternalID` |
-| `_EnterpriseProject` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_ProjectBillingCategory` | *Association* |
-| `_ProjectBillingCategoryText` | *Association* |
-| `_ProjectBillingRequestStatus` | *Association* |
-| `_ProjectBillingReqStatusText` | *Association* |
-| `_ProjBillgReqApprovalStatus` | *Association* |
-| `_ProjBillgReqApprvlStatusText` | *Association* |
-| `_ProjectBillingReqItemTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectBillingRequestUUID` | ✓ | |  |  |
+| `ProjectBillingRequest` |  | |  |  |
+| `ProjectBillingRequestStatus` |  | |  |  |
+| `ProjBillgReqApprovalStatus` |  | |  |  |
+| `SalesDocument` |  | |  |  |
+| `ProjBillgReqLastChgdBy` |  | |  |  |
+| `ProjBillgReqLastChgdAtDteTme` |  | |  |  |
+| `ProjBillgReqCreatedBy` |  | |  |  |
+| `ProjBillgReqCreatedAtDteTme` |  | |  |  |
+| `ProjectBillingCategory` |  | |  |  |
+| `ProjectInternalID` |  | |  |  |
+| `_EnterpriseProject` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_ProjectBillingCategory` | | ✓ | | |
+| `_ProjectBillingCategoryText` | | ✓ | | |
+| `_ProjectBillingRequestStatus` | | ✓ | | |
+| `_ProjectBillingReqStatusText` | | ✓ | | |
+| `_ProjBillgReqApprovalStatus` | | ✓ | | |
+| `_ProjBillgReqApprvlStatusText` | | ✓ | | |
+| `_ProjectBillingReqItemTP` | | ✓ | | |
 
 ## Source Code
 

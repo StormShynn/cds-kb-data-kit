@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialProcurementType` | `cast(substring(typ.domvalue_l, 1, 1) as pph_sobes preserving type)` |
-| `DomainValue` | `typ.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialProcurementType` | ✓ | |  | `cast(substring(typ.domvalue_l, 1, 1) as pph_sobes preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

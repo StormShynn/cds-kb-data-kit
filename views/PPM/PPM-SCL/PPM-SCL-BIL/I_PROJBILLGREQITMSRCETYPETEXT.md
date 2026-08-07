@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `ProjBillgReqItmSourceType` | `cast( substring( domvalue_l, 1, 1 ) as pbr_apprvl_status preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `ProjBillgReqItmSourceTypeText` | `ddtext` |
-| `_Language` | *Association* |
-| `_ProjBillgReqItmSrceType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ProjBillgReqItmSourceType` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as pbr_apprvl_status preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `ProjBillgReqItmSourceTypeText` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_ProjBillgReqItmSrceType` | | ✓ | | |
 
 ## Associations
 

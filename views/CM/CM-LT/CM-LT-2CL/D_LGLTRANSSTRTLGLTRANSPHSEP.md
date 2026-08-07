@@ -26,9 +26,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LglCntntMPhaseUUID` | `lcm_uuid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMPhaseUUID` |  | |  | `lcm_uuid` |
 
 ## Source Code
 

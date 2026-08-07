@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CashPoolName` | `pool_name` |
-| key `Language` | `langu` |
-| `CashPoolDesc` | `pool_desc` |
-| `CashPoolRefTxt` | `ref_text` |
-| `LocalLastChangeDateTime` | `local_last_changed_at` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CashPoolName` | ✓ | |  | `pool_name` |
+| `Language` | ✓ | |  | `langu` |
+| `CashPoolDesc` |  | |  | `pool_desc` |
+| `CashPoolRefTxt` |  | |  | `ref_text` |
+| `LocalLastChangeDateTime` |  | |  | `local_last_changed_at` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

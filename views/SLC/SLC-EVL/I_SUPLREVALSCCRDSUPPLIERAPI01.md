@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalScorecardPtyUUID` | `SuplrEvalScorecardPtyUUID` |
-| `SuplrEvalScorecardUUID` | `SuplrEvalScorecardUUID` |
-| `BusinessPartner` | `BusinessPartner` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `Supplier` | `Supplier` |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalScorecardPtyUUID` | ✓ | |  |  |
+| `SuplrEvalScorecardUUID` |  | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `_Supplier` | | ✓ | | |
 
 ## Source Code
 

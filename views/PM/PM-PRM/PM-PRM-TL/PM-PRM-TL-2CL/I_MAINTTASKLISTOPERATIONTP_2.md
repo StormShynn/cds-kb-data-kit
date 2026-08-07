@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListSequence` | `TaskListSequence` |
-| key `TaskListOperationInternalId` | `TaskListOperationInternalId` |
-| `_Header` | *Association* |
-| `_Operation` | *Association* |
-| `_OpMaterial` | *Association* |
-| `_OpRelation` | *Association* |
-| `_SubOp` | *Association* |
-| `_OpLongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListSequence` | ✓ | |  |  |
+| `TaskListOperationInternalId` | ✓ | |  |  |
+| `_Header` | | ✓ | | |
+| `_Operation` | | ✓ | | |
+| `_OpMaterial` | | ✓ | | |
+| `_OpRelation` | | ✓ | | |
+| `_SubOp` | | ✓ | | |
+| `_OpLongText` | | ✓ | | |
 
 ## Source Code
 

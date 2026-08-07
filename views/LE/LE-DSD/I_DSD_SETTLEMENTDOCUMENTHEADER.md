@@ -29,64 +29,64 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DSD_SettlementDocument` | `sld_doc_id` |
-| `MainDriver` | `driver` |
-| `ForwardingAgent` | `carrier` |
-| `RouteSettlementOffice` | `bso` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `Division` | `spart` |
-| `RouteSettlementType` | `sl_typ` |
-| `OverallSettlementStatus` | `sl_status` |
-| `FinalCheckOutDifferencesStatus` | `chko_diff_ok` |
-| `FinalReturnsLoadingNoteStatus` | `ret_load_ok` |
-| `FinalTourTimeDataStatus` | `timdat_ok` |
-| `FinalTourDistanceDataStatus` | `dstdat_ok` |
-| `FinalNewStandardOrdersStatus` | `new_ord_ok` |
-| `FnlSlsOrdsAndDelivsProcStatus` | `cstdocs_ok` |
-| `FinalDiffDocsForDriverStatus` | `drv_diff_ok` |
-| `FinalGoodsMovementsStatus` | `gi_post_ok` |
-| `FinalBillingDocumentStatus` | `inv_prc_ok` |
-| `FinalCollectionPostingStatus` | `post_pymt_ok` |
-| `FinalCollectionClearingStatus` | `clr_fi_ok` |
-| `CreatedAtDate` | `credate` |
-| `TimeOfCreation` | `cretime` |
-| `EnteredByUser` | `creuser` |
-| `DocumentFlowDocumentCategory` | `doc_type` |
-| `FinalSettlementRunNumber` | `fsr_procno` |
-| `Plant` | `plant` |
-| `FinalDiffsDeterminationStatus` | `bal_ok` |
-| `FinalMoneyDiffsPostingStatus` | `mbal_diff_ok` |
-| `FinalLoadingConfDiffsStatus` | `lc_diff_ok` |
-| `FinalCheckInDifferencesStatus` | `ci_diff_ok` |
-| `_Customer` | *Association* |
-| `_Supplier` | *Association* |
-| `_User` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_Plant` | *Association* |
-| `_SettlementOffice` | *Association* |
-| `_SettlementType` | *Association* |
-| `_SettlementStatus` | *Association* |
-| `_DocumentCategory` | *Association* |
-| `_CheckOutDiffStatus` | *Association* |
-| `_ReturnsLoadingNoteStatus` | *Association* |
-| `_TourTimeDataStatus` | *Association* |
-| `_TourDistanceDataStatus` | *Association* |
-| `_NewStandardOrdersStatus` | *Association* |
-| `_SlsOrdsAndDelivsProcStatus` | *Association* |
-| `_DiffDocsForDriverStatus` | *Association* |
-| `_GoodsMovementsStatus` | *Association* |
-| `_BillingDocumentStatus` | *Association* |
-| `_CollectionPostingStatus` | *Association* |
-| `_CollectionClearingStatus` | *Association* |
-| `_DiffsDeterminationStatus` | *Association* |
-| `_MoneyDiffsPostingStatus` | *Association* |
-| `_LoadingConfDiffsStatus` | *Association* |
-| `_CheckInDifferencesStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DSD_SettlementDocument` | ✓ | |  | `sld_doc_id` |
+| `MainDriver` |  | |  | `driver` |
+| `ForwardingAgent` |  | |  | `carrier` |
+| `RouteSettlementOffice` |  | |  | `bso` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `Division` |  | |  | `spart` |
+| `RouteSettlementType` |  | |  | `sl_typ` |
+| `OverallSettlementStatus` |  | |  | `sl_status` |
+| `FinalCheckOutDifferencesStatus` |  | |  | `chko_diff_ok` |
+| `FinalReturnsLoadingNoteStatus` |  | |  | `ret_load_ok` |
+| `FinalTourTimeDataStatus` |  | |  | `timdat_ok` |
+| `FinalTourDistanceDataStatus` |  | |  | `dstdat_ok` |
+| `FinalNewStandardOrdersStatus` |  | |  | `new_ord_ok` |
+| `FnlSlsOrdsAndDelivsProcStatus` |  | |  | `cstdocs_ok` |
+| `FinalDiffDocsForDriverStatus` |  | |  | `drv_diff_ok` |
+| `FinalGoodsMovementsStatus` |  | |  | `gi_post_ok` |
+| `FinalBillingDocumentStatus` |  | |  | `inv_prc_ok` |
+| `FinalCollectionPostingStatus` |  | |  | `post_pymt_ok` |
+| `FinalCollectionClearingStatus` |  | |  | `clr_fi_ok` |
+| `CreatedAtDate` |  | |  | `credate` |
+| `TimeOfCreation` |  | |  | `cretime` |
+| `EnteredByUser` |  | |  | `creuser` |
+| `DocumentFlowDocumentCategory` |  | |  | `doc_type` |
+| `FinalSettlementRunNumber` |  | |  | `fsr_procno` |
+| `Plant` |  | |  | `plant` |
+| `FinalDiffsDeterminationStatus` |  | |  | `bal_ok` |
+| `FinalMoneyDiffsPostingStatus` |  | |  | `mbal_diff_ok` |
+| `FinalLoadingConfDiffsStatus` |  | |  | `lc_diff_ok` |
+| `FinalCheckInDifferencesStatus` |  | |  | `ci_diff_ok` |
+| `_Customer` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_User` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_SettlementOffice` | | ✓ | | |
+| `_SettlementType` | | ✓ | | |
+| `_SettlementStatus` | | ✓ | | |
+| `_DocumentCategory` | | ✓ | | |
+| `_CheckOutDiffStatus` | | ✓ | | |
+| `_ReturnsLoadingNoteStatus` | | ✓ | | |
+| `_TourTimeDataStatus` | | ✓ | | |
+| `_TourDistanceDataStatus` | | ✓ | | |
+| `_NewStandardOrdersStatus` | | ✓ | | |
+| `_SlsOrdsAndDelivsProcStatus` | | ✓ | | |
+| `_DiffDocsForDriverStatus` | | ✓ | | |
+| `_GoodsMovementsStatus` | | ✓ | | |
+| `_BillingDocumentStatus` | | ✓ | | |
+| `_CollectionPostingStatus` | | ✓ | | |
+| `_CollectionClearingStatus` | | ✓ | | |
+| `_DiffsDeterminationStatus` | | ✓ | | |
+| `_MoneyDiffsPostingStatus` | | ✓ | | |
+| `_LoadingConfDiffsStatus` | | ✓ | | |
+| `_CheckInDifferencesStatus` | | ✓ | | |
 
 ## Associations
 

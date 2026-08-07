@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectDemandExpenseType` | `Text.resource_id` |
-| key `Language` | `Text.spras` |
-| `ProjectDemandExpenseTypeText` | `Text.description` |
-| `_ProjectDemandExpenseType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectDemandExpenseType` | ✓ | |  | `resource_id` |
+| `Language` | ✓ | |  | `spras` |
+| `ProjectDemandExpenseTypeText` |  | |  | `description` |
+| `_ProjectDemandExpenseType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -31,29 +31,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChargeItemUUID` | `TranspChargeItemUUID` |
-| `TransportationChargesObjUUID` | `TransportationChargesObjUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspChargeCalcLevelRefUUID` | `TranspChargeCalcLevelRefUUID` |
-| `TransportationAgreementUUID` | `TransportationAgreementUUID` |
-| `BusinessPartnerUUID` | `BusinessPartnerUUID` |
-| `TranspChargeCalcLevel` | `TranspChargeCalcLevel` |
-| `TranspChargePostingStatus` | `TranspChargePostingStatus` |
-| `TranspChrgItemDocCurrency` | `TranspChrgItemDocCurrency` |
-| `TranspChrgItmTotAmtInDocCrcy` | `TranspChrgItmTotAmtInDocCrcy` |
-| `TranspChrgItemLoclCurrency` | `TranspChrgItemLoclCurrency` |
-| `TranspChrgItmTotAmtInLoclCrcy` | `TranspChrgItmTotAmtInLoclCrcy` |
-| `TranspChargeItemCalcDateTme` | `TranspChargeItemCalcDateTme` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `TranspChargePostingDate` | `TranspChargePostingDate` |
-| `TranspChrgCalcDteTmeIsChanged` | `TranspChrgCalcDteTmeIsChanged` |
-| `PaymentTerms` | `PaymentTerms` |
-| `I_FreightOrderTP` | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `I_FreightOrderChargeTP` | `_TransportationOrderCharge as _FreightOrderCharge : redirected to parent I_FreightOrderChargeTP` |
-| `I_FrtOrdChrgElementTP` | `_TranspOrdChrgElmnt as _FrtOrdChrgElement : redirected to composition child I_FrtOrdChrgElementTP` |
-| `I_FrtOrdChrgItmExchRateTP` | `_TranspOrdChrgItmExchRate as _FrtOrdChrgItmExchRate : redirected to composition child I_FrtOrdChrgItmExchRateTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChargeItemUUID` | ✓ | |  |  |
+| `TransportationChargesObjUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspChargeCalcLevelRefUUID` |  | |  |  |
+| `TransportationAgreementUUID` |  | |  |  |
+| `BusinessPartnerUUID` |  | |  |  |
+| `TranspChargeCalcLevel` |  | |  |  |
+| `TranspChargePostingStatus` |  | |  |  |
+| `TranspChrgItemDocCurrency` |  | |  |  |
+| `TranspChrgItmTotAmtInDocCrcy` |  | |  |  |
+| `TranspChrgItemLoclCurrency` |  | |  |  |
+| `TranspChrgItmTotAmtInLoclCrcy` |  | |  |  |
+| `TranspChargeItemCalcDateTme` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `TranspChargePostingDate` |  | |  |  |
+| `TranspChrgCalcDteTmeIsChanged` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `I_FreightOrderTP` |  | |  | `_TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| `I_FreightOrderChargeTP` |  | |  | `_TransportationOrderCharge as _FreightOrderCharge : redirected to parent I_FreightOrderChargeTP` |
+| `I_FrtOrdChrgElementTP` |  | |  | `_TranspOrdChrgElmnt as _FrtOrdChrgElement : redirected to composition child I_FrtOrdChrgElementTP` |
+| `I_FrtOrdChrgItmExchRateTP` |  | |  | `_TranspOrdChrgItmExchRate as _FrtOrdChrgItmExchRate : redirected to composition child I_FrtOrdChrgItmExchRateTP` |
 
 ## Source Code
 

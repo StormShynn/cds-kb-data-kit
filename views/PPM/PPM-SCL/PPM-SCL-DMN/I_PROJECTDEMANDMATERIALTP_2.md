@@ -33,25 +33,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectDemandMaterialUUID` | `ProjectDemandMaterialUUID` |
-| `ProjectDemandUUID` | `ProjectDemandUUID` |
-| `Material` | `Material` |
-| `StorageLocation` | `StorageLocation` |
-| `MaterialGroup` | `MaterialGroup` |
-| `Supplier` | `Supplier` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `MaterialPlannedDeliveryDurn` | `MaterialPlannedDeliveryDurn` |
-| `_MaterialText` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_MaterialGroupText` | *Association* |
-| `_Supplier` | *Association* |
-| `_PurchasingInfoRecord` | *Association* |
-| `_RootTP` | *Association* |
-| `_MaterialSupply` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectDemandMaterialUUID` | ✓ | |  |  |
+| `ProjectDemandUUID` |  | |  |  |
+| `Material` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  |  |
+| `_MaterialText` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_MaterialGroupText` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_PurchasingInfoRecord` | | ✓ | | |
+| `_RootTP` | | ✓ | | |
+| `_MaterialSupply` | | ✓ | | |
 
 ## Source Code
 

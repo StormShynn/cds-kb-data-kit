@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostCenterActivityAltvDescID` | `cast(txt.actxk as pph_actxk preserving type)` |
-| key `Language` | `cast(txt.spras as spras preserving type)` |
-| `CostCenterActivityAltvDesc` | `cast(txt.actxkt as pph_actxkt preserving type)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostCenterActivityAltvDescID` | ✓ | |  | `cast(txt.actxk as pph_actxk preserving type)` |
+| `Language` | ✓ | |  | `cast(txt.spras as spras preserving type)` |
+| `CostCenterActivityAltvDesc` |  | |  | `cast(txt.actxkt as pph_actxkt preserving type)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -26,18 +26,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RuntimeHierarchy` | `hryid` |
-| key `ValidityEndDate` | `cast(hryvalto as fis_datbi preserving type )` |
-| key `HierarchyNode` | `hrynode` |
-| key `HierarchyNodeClass` | `nodecls` |
-| key `ParentNode` | `parnode` |
-| key `HierarchyNodeAttributeName` | `hryattrname` |
-| key `HierarchyType` | `hrytyp` |
-| key `HierNodeAttributeRangeFromVal` | `hryattrvalue` |
-| `HierNodeAttributeRangeToVal` | `hryattrhvalue` |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RuntimeHierarchy` | ✓ | |  | `hryid` |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |
+| `HierarchyNode` | ✓ | |  | `hrynode` |
+| `HierarchyNodeClass` | ✓ | |  | `nodecls` |
+| `ParentNode` | ✓ | |  | `parnode` |
+| `HierarchyNodeAttributeName` | ✓ | |  | `hryattrname` |
+| `HierarchyType` | ✓ | |  | `hrytyp` |
+| `HierNodeAttributeRangeFromVal` | ✓ | |  | `hryattrvalue` |
+| `HierNodeAttributeRangeToVal` |  | |  | `hryattrhvalue` |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

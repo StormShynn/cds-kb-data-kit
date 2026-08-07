@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `StructureCondition` | `cast ( substring( domvalue_l, 1, 1 ) as kdupl )` |
-| `StructureConditionName` | `cast ( ddtext as price_element_struc_cndn_descr )` |
-| `_StructureCondition` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `StructureCondition` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kdupl )` |
+| `StructureConditionName` |  | |  | `cast ( ddtext as price_element_struc_cndn_descr )` |
+| `_StructureCondition` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

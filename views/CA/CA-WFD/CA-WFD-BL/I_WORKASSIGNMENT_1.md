@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkAssignmentExternalID` | `WorkAssignmentKeymap.WorkAssignmentExternalID` |
-| key `Country2DigitISOCode` | `WorkAssignmentKeymap.Country2DigitISOCode` |
-| `WorkforcePersonExternalID` | `WorkAssignmentKeymap.WorkforcePersonExternalID` |
-| `WorkAssignmentStartDate` | `WorkAssignmentKeymap.WorkAssignmentStartDate` |
-| `WorkAssignmentEndDate` | `WorkAssignmentKeymap.WorkAssignmentEndDate` |
-| `IsContingentWorker` | `WorkAssignmentKeymap.IsContingentWorker` |
-| `IsBlocked` | `WorkAssignmentKeymap.IsBlocked` |
-| `_WorkAssignmentDetail` | *Association* |
-| `_WorkforcePerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkAssignmentExternalID` | ✓ | |  |  |
+| `Country2DigitISOCode` | ✓ | |  |  |
+| `WorkforcePersonExternalID` |  | |  |  |
+| `WorkAssignmentStartDate` |  | |  |  |
+| `WorkAssignmentEndDate` |  | |  |  |
+| `IsContingentWorker` |  | |  |  |
+| `IsBlocked` |  | |  |  |
+| `_WorkAssignmentDetail` | | ✓ | | |
+| `_WorkforcePerson` | | ✓ | | |
 
 ## Associations
 

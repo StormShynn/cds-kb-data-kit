@@ -28,63 +28,63 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `GRInv.ElectronicDocUUID` |
-| `GR_ElectronicDocRefDocNumber` | `GRInv.GR_ElectronicDocRefDocNumber` |
-| `GR_ElectronicDocPrintTaskCode` | `GRInv.GR_ElectronicDocPrintTaskCode` |
-| `GR_ElectronicDocSeriesPrefix` | `GRInv.GR_ElectronicDocSeriesPrefix` |
-| `GR_ElectronicDocumentSeries` | `GRInv.GR_ElectronicDocumentSeries` |
-| `GR_ElectronicDocLegalNumber` | `GRInv.GR_ElectronicDocLegalNumber` |
-| `GR_ElectronicDocUniqueID` | `GRInv.GR_ElectronicDocUniqueID` |
-| `GR_ElectronicDocMarkID` | `GRInv.GR_ElectronicDocMarkID` |
-| `GR_ElectronicDocClfnMarkID` | `GRInv.GR_ElectronicDocClfnMarkID` |
-| `GR_ElectronicDocCancelMarkID` | `GRInv.GR_ElectronicDocCancelMarkID` |
-| `GR_ElectronicDocCustVATID` | `GRInv.GR_ElectronicDocCustVATID` |
-| `GR_ElectronicDocIssueDate` | `GRInv.GR_ElectronicDocIssueDate` |
-| `GR_ElectronicDocInvoiceType` | `GRInv.GR_ElectronicDocInvoiceType` |
-| `GR_ElectronicDocSupplierVATID` | `GRInv.GR_ElectronicDocSupplierVATID` |
-| `GR_ElectronicDocBranchID` | `GRInv.GR_ElectronicDocBranchID` |
-| `GR_ElectronicDocGrossAmount` | `GRInv.GR_ElectronicDocGrossAmount` |
-| `GR_ElectronicDocPayableAmount` | `GRInv.GR_ElectronicDocPayableAmount` |
-| `GR_ElectronicDocNetAmount` | `GRInv.GR_ElectronicDocNetAmount` |
-| `GR_ElectronicDocFuelInvoice` | `GRInv.GR_ElectronicDocFuelInvoice` |
-| `ElectronicDocCompanyCode` | `EDoc.ElectronicDocCompanyCode` |
-| `ElectronicDocCountry` | `EDoc.ElectronicDocCountry` |
-| `ElectronicDocSourceType` | `EDoc.ElectronicDocSourceType` |
-| `ElectronicDocSourceKey` | `EDoc.ElectronicDocSourceKey` |
-| `ElectronicDocType` | `EDoc.ElectronicDocType` |
-| `ElectronicDocProcessStatus` | `EDoc.ElectronicDocProcessStatus` |
-| `ElectronicDocLogicalSystem` | `EDoc.ElectronicDocLogicalSystem` |
-| `ElectronicDocLastChangedByUser` | `EDoc.ElectronicDocLastChangedByUser` |
-| `ElectronicDocLastChangeDate` | `EDoc.ElectronicDocLastChangeDate` |
-| `ElectronicDocLastChangeTime` | `EDoc.ElectronicDocLastChangeTime` |
-| `ElectronicDocCreatedByUser` | `EDoc.ElectronicDocCreatedByUser` |
-| `ElectronicDocCreationDate` | `EDoc.ElectronicDocCreationDate` |
-| `ElectronicDocCreationTime` | `EDoc.ElectronicDocCreationTime` |
-| `ElectronicDocSrceCreatedByUser` | `EDoc.ElectronicDocSrceCreatedByUser` |
-| `ElectronicDocProcess` | `EDoc.ElectronicDocProcess` |
-| `ElectronicDocLastProcStep` | `EDoc.ElectronicDocLastProcStep` |
-| `ElectronicDocLastProcStepVar` | `EDoc.ElectronicDocLastProcStepVar` |
-| `ElectronicDocHasError` | `EDoc.ElectronicDocHasError` |
-| `ElectronicDocProcessVersion` | `EDoc.ElectronicDocProcessVersion` |
-| `ElectronicDocRefSqncNmbr` | `EDoc.ElectronicDocRefSqncNmbr` |
-| `ElectronicDocStatus` | `EDoc.ElectronicDocStatus` |
-| `ElectronicDocPostingDate` | `EDoc.ElectronicDocPostingDate` |
-| `ElectronicDocIsContingency` | `EDoc.ElectronicDocIsContingency` |
-| `ElectronicDocReferenceProcess` | `EDoc.ElectronicDocReferenceProcess` |
-| `ElectronicDocClassName` | `EDoc.ElectronicDocClassName` |
-| `ElectronicDocIsArchPrprocgDone` | `EDoc.ElectronicDocIsArchPrprocgDone` |
-| `ElectronicDocInterfaceType` | `EDoc.ElectronicDocInterfaceType` |
-| `ElectronicDocApprovalIDValue` | `EDoc.ElectronicDocApprovalIDValue` |
-| `ElectronicDocInterfaceUUID` | `EDoc.ElectronicDocInterfaceUUID` |
-| `ElectronicDocFileUUID` | `EDoc.ElectronicDocFileUUID` |
-| `ElectronicDocResponseCodeValue` | `EDoc.ElectronicDocResponseCodeValue` |
-| `ElectronicDocInterfaceID` | `EDoc.ElectronicDocInterfaceID` |
-| `ElectronicDocInterfaceVersion` | `EDoc.ElectronicDocInterfaceVersion` |
-| `ElectronicDocIsCntdInArchive` | `EDoc.ElectronicDocIsCntdInArchive` |
-| `ElectronicDocMetaStatus` | `EDoc.ElectronicDocMetaStatus` |
-| `ElectronicDocProcessForStatus` | `EDoc.ElectronicDocProcessForStatus` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `GR_ElectronicDocRefDocNumber` |  | |  |  |
+| `GR_ElectronicDocPrintTaskCode` |  | |  |  |
+| `GR_ElectronicDocSeriesPrefix` |  | |  |  |
+| `GR_ElectronicDocumentSeries` |  | |  |  |
+| `GR_ElectronicDocLegalNumber` |  | |  |  |
+| `GR_ElectronicDocUniqueID` |  | |  |  |
+| `GR_ElectronicDocMarkID` |  | |  |  |
+| `GR_ElectronicDocClfnMarkID` |  | |  |  |
+| `GR_ElectronicDocCancelMarkID` |  | |  |  |
+| `GR_ElectronicDocCustVATID` |  | |  |  |
+| `GR_ElectronicDocIssueDate` |  | |  |  |
+| `GR_ElectronicDocInvoiceType` |  | |  |  |
+| `GR_ElectronicDocSupplierVATID` |  | |  |  |
+| `GR_ElectronicDocBranchID` |  | |  |  |
+| `GR_ElectronicDocGrossAmount` |  | |  |  |
+| `GR_ElectronicDocPayableAmount` |  | |  |  |
+| `GR_ElectronicDocNetAmount` |  | |  |  |
+| `GR_ElectronicDocFuelInvoice` |  | |  |  |
+| `ElectronicDocCompanyCode` |  | |  |  |
+| `ElectronicDocCountry` |  | |  |  |
+| `ElectronicDocSourceType` |  | |  |  |
+| `ElectronicDocSourceKey` |  | |  |  |
+| `ElectronicDocType` |  | |  |  |
+| `ElectronicDocProcessStatus` |  | |  |  |
+| `ElectronicDocLogicalSystem` |  | |  |  |
+| `ElectronicDocLastChangedByUser` |  | |  |  |
+| `ElectronicDocLastChangeDate` |  | |  |  |
+| `ElectronicDocLastChangeTime` |  | |  |  |
+| `ElectronicDocCreatedByUser` |  | |  |  |
+| `ElectronicDocCreationDate` |  | |  |  |
+| `ElectronicDocCreationTime` |  | |  |  |
+| `ElectronicDocSrceCreatedByUser` |  | |  |  |
+| `ElectronicDocProcess` |  | |  |  |
+| `ElectronicDocLastProcStep` |  | |  |  |
+| `ElectronicDocLastProcStepVar` |  | |  |  |
+| `ElectronicDocHasError` |  | |  |  |
+| `ElectronicDocProcessVersion` |  | |  |  |
+| `ElectronicDocRefSqncNmbr` |  | |  |  |
+| `ElectronicDocStatus` |  | |  |  |
+| `ElectronicDocPostingDate` |  | |  |  |
+| `ElectronicDocIsContingency` |  | |  |  |
+| `ElectronicDocReferenceProcess` |  | |  |  |
+| `ElectronicDocClassName` |  | |  |  |
+| `ElectronicDocIsArchPrprocgDone` |  | |  |  |
+| `ElectronicDocInterfaceType` |  | |  |  |
+| `ElectronicDocApprovalIDValue` |  | |  |  |
+| `ElectronicDocInterfaceUUID` |  | |  |  |
+| `ElectronicDocFileUUID` |  | |  |  |
+| `ElectronicDocResponseCodeValue` |  | |  |  |
+| `ElectronicDocInterfaceID` |  | |  |  |
+| `ElectronicDocInterfaceVersion` |  | |  |  |
+| `ElectronicDocIsCntdInArchive` |  | |  |  |
+| `ElectronicDocMetaStatus` |  | |  |  |
+| `ElectronicDocProcessForStatus` |  | |  |  |
 
 ## Source Code
 

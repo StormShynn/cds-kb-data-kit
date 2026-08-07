@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DunningBlockingReason` | `cast( mansp as farp_mansp preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DunningBlockingReason` | ✓ | |  | `cast( mansp as farp_mansp preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

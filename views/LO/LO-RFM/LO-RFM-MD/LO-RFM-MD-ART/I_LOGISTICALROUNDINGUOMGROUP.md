@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LogisticalRoundingUoMGroup` | `megru` |
-| `_LogisticalRoundingUoMGrpUoM` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LogisticalRoundingUoMGroup` | ✓ | |  | `megru` |
+| `_LogisticalRoundingUoMGrpUoM` | | ✓ | | |
 
 ## Source Code
 

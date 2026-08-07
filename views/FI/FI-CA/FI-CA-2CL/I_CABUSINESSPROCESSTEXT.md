@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABusinessProcess` | `proid` |
-| key `Language` | `spras` |
-| `CABusinessProcessName` | `ptext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABusinessProcess` | ✓ | |  | `proid` |
+| `Language` | ✓ | |  | `spras` |
+| `CABusinessProcessName` |  | |  | `ptext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

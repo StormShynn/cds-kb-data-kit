@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingType` | `qdsa.stichprart` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingType` | ✓ | |  | `stichprart` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

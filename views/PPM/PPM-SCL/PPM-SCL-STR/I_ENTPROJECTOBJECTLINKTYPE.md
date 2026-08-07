@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ObjectLinkType` | `cast( ObjectLinkType.object_type as /s4ppm/tv_object_link_type preserving type )` |
-| `ObjectLinkTypeCategory` | `cast( ObjectLinkType.category as /s4ppm/tv_object_link_type_cat preserving type )` |
-| `ObjectLinkTypeGrouping` | `ObjectLinkType.grouping` |
-| `_ObjectLinkTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ObjectLinkType` | ✓ | |  | `cast( ObjectLinkType.object_type as /s4ppm/tv_object_link_type preserving type )` |
+| `ObjectLinkTypeCategory` |  | |  | `cast( ObjectLinkType.category as /s4ppm/tv_object_link_type_cat preserving type )` |
+| `ObjectLinkTypeGrouping` |  | |  | `grouping` |
+| `_ObjectLinkTypeText` | | ✓ | | |
 
 ## Associations
 

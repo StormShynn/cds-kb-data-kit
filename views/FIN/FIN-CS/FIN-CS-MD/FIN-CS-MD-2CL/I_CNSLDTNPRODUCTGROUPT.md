@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `ProductGroup` | `cast( _Source.ProductGroup as fincs_productgroup preserving type )` |
-| `AdditionalMasterDataText` | `cast( _Source.ProductGroupName as fincs_description_text_20 preserving type )` |
-| `AdditionalMasterDataSource` | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `ProductGroupName` | `cast( _Source.ProductGroupName as fincs_productgroupname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_ProductGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `ProductGroup` | ✓ | |  | `cast( _Source.ProductGroup as fincs_productgroup preserving type )` |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.ProductGroupName as fincs_description_text_20 preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
+| `ProductGroupName` |  | |  | `cast( _Source.ProductGroupName as fincs_productgroupname preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
 
 ## Associations
 

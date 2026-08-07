@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RENoticeProcedure` | `ntproc` |
-| `REIsExclForNewAssgmt` | `cuexcludeassign` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RENoticeProcedure` | ✓ | |  | `ntproc` |
+| `REIsExclForNewAssgmt` |  | |  | `cuexcludeassign` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

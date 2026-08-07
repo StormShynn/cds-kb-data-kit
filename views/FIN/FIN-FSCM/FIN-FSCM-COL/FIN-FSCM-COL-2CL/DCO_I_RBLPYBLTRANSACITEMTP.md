@@ -30,100 +30,100 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RblPyblTransactionItemUUID` | `RblPyblTransactionItemUUID` |
-| `RblPyblTransactionUUID` | `RblPyblTransactionUUID` |
-| `RblPyblPreviousTransactionUUID` | `RblPyblPreviousTransactionUUID` |
-| `RblPyblItemIsObsolete` | `RblPyblItemIsObsolete` |
-| `DCoAccountingDocumentID` | `DCoAccountingDocumentID` |
-| `ReceivablePayableDocument` | `ReceivablePayableDocument` |
-| `ReceivablePayableDocumentItem` | `ReceivablePayableDocumentItem` |
-| `RblPyblDocumentSubitem` | `RblPyblDocumentSubitem` |
-| `DCoAccountingDocumentOrigin` | `DCoAccountingDocumentOrigin` |
-| `LogicalSystem` | `LogicalSystem` |
-| `AccountingDocument` | `AccountingDocument` |
-| `CompanyCode` | `CompanyCode` |
-| `FiscalYear` | `FiscalYear` |
-| `DocumentDate` | `DocumentDate` |
-| `PostingDate` | `PostingDate` |
-| `NetDueDate` | `NetDueDate` |
-| `Supplier` | `Supplier` |
-| `Customer` | `Customer` |
-| `BusinessPartner` | `BusinessPartner` |
-| `ContractAccount` | `ContractAccount` |
-| `CASubApplication` | `CASubApplication` |
-| `CAContract` | `CAContract` |
-| `BranchAccount` | `BranchAccount` |
-| `DCoAccountingDocumentBranch` | `DCoAccountingDocumentBranch` |
-| `AmountInTransactionCurrency` | `} AmountInTransactionCurrency` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `RblPyblTransactionType` | `RblPyblTransactionType` |
-| `CashDiscountAmtInClrgTransCrcy` | `} CashDiscountAmtInClrgTransCrcy` |
-| `CashDiscountBaseAmount` | `} CashDiscountBaseAmount` |
-| `CashDiscount1DueDate` | `CashDiscount1DueDate` |
-| `CashDiscount2DueDate` | `CashDiscount2DueDate` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `RblPyblItemIsCleared` | `RblPyblItemIsCleared` |
-| `ClearingDate` | `ClearingDate` |
-| `ClearingRblPyblDocument` | `ClearingRblPyblDocument` |
-| `RblPyblClearingReason` | `RblPyblClearingReason` |
-| `ClearingTransactionCurrency` | `ClearingTransactionCurrency` |
-| `ClrgBaseAmountInClrgTransCrcy` | `} ClrgBaseAmountInClrgTransCrcy` |
-| `ClearingAmountInClrgTransCrcy` | `} ClearingAmountInClrgTransCrcy` |
-| `ResidualAmountInClrgTransCrcy` | `} ResidualAmountInClrgTransCrcy` |
-| `DeductionAmountInClrgTransCrcy` | `} DeductionAmountInClrgTransCrcy` |
-| `PostgClassfctnRblPyblCodeOrign` | `PostgClassfctnRblPyblCodeOrign` |
-| `PostingClassification` | `PostingClassification` |
-| `PostgSubclfnRblPyblCodeOrigin` | `PostgSubclfnRblPyblCodeOrigin` |
-| `PostingSubclassification` | `PostingSubclassification` |
-| `ReceivablePayableItemText` | `ReceivablePayableItemText` |
-| `IsSalesRelated` | `IsSalesRelated` |
-| `IsUsedInPaymentTransaction` | `IsUsedInPaymentTransaction` |
-| `RblPyblItemIsBlockedForDunning` | `RblPyblItemIsBlockedForDunning` |
-| `DunningBlockStartDate` | `} DunningBlockStartDate` |
-| `DunningBlockEndDate` | `} DunningBlockEndDate` |
-| `RblPyblItemIsBlockedForPayment` | `RblPyblItemIsBlockedForPayment` |
-| `PaymentBlockStartDate` | `} PaymentBlockStartDate` |
-| `PaymentBlockEndDate` | `} PaymentBlockEndDate` |
-| `OriginalReferenceDocument` | `OriginalReferenceDocument` |
-| `ReferenceDocumentType` | `ReferenceDocumentType` |
-| `ReferenceDocumentLogicalSystem` | `ReferenceDocumentLogicalSystem` |
-| `DCoOriglAccountingDocumentID` | `DCoOriglAccountingDocumentID` |
-| `OriginalRblPyblDocument` | `OriginalRblPyblDocument` |
-| `OriginalRblPyblDocumentItem` | `OriginalRblPyblDocumentItem` |
-| `OriginalRblPyblDocumentSubitem` | `OriginalRblPyblDocumentSubitem` |
-| `OriglRblPyblItmAmtInOrigItmTC` | `} OriglRblPyblItmAmtInOrigItmTC` |
-| `OriglItemTransactionCurrency` | `OriglItemTransactionCurrency` |
-| `RblPyblItemHasRelations` | `RblPyblItemHasRelations` |
-| `RblPyblDocumentRelationType` | `RblPyblDocumentRelationType` |
-| `RelatedRblPyblDocument` | `RelatedRblPyblDocument` |
-| `RelatedRblPyblDocumentItem` | `RelatedRblPyblDocumentItem` |
-| `RelatedRblPyblDocumentSubitem` | `RelatedRblPyblDocumentSubitem` |
-| `DCoRefAccountingDocumentID` | `DCoRefAccountingDocumentID` |
-| `RblPyblDocumentReference` | `RblPyblDocumentReference` |
-| `RblPyblAltvDocumentReference` | `RblPyblAltvDocumentReference` |
-| `FirstRblPyblAddlReference` | `FirstRblPyblAddlReference` |
-| `SecondRblPyblAddlReference` | `SecondRblPyblAddlReference` |
-| `ThirdRblPyblAddlReference` | `ThirdRblPyblAddlReference` |
-| `AssignmentReference` | `AssignmentReference` |
-| `DCoPredecessorReceivableItem` | `DCoPredecessorReceivableItem` |
-| `RsdlItmPredecessorDocument` | `RsdlItmPredecessorDocument` |
-| `RsdlItmPredecessorDocumentItem` | `RsdlItmPredecessorDocumentItem` |
-| `LastChangeDateTime` | `} LastChangeDateTime` |
-| `CreationDateTime` | `} CreationDateTime` |
-| `DCoPaymentIsArranged` | `DCoPaymentIsArranged` |
-| `PaymentDifferenceReason` | `PaymentDifferenceReason` |
-| `CreditControlArea` | `CreditControlArea` |
-| `_BusinessPartner` | *Association* |
-| `_BranchAccount` | *Association* |
-| `_Customer` | *Association* |
-| `_CustomerCompany` | *Association* |
-| `_PostingClass` | *Association* |
-| `_PostingSubclassification` | *Association* |
-| `_PaymentDifferenceReason` | *Association* |
-| `_RblPyblDocRelationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RblPyblTransactionItemUUID` | ✓ | |  |  |
+| `RblPyblTransactionUUID` |  | |  |  |
+| `RblPyblPreviousTransactionUUID` |  | |  |  |
+| `RblPyblItemIsObsolete` |  | |  |  |
+| `DCoAccountingDocumentID` |  | |  |  |
+| `ReceivablePayableDocument` |  | |  |  |
+| `ReceivablePayableDocumentItem` |  | |  |  |
+| `RblPyblDocumentSubitem` |  | |  |  |
+| `DCoAccountingDocumentOrigin` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `AccountingDocument` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `FiscalYear` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `NetDueDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `ContractAccount` |  | |  |  |
+| `CASubApplication` |  | |  |  |
+| `CAContract` |  | |  |  |
+| `BranchAccount` |  | |  |  |
+| `DCoAccountingDocumentBranch` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  | `} AmountInTransactionCurrency` |
+| `TransactionCurrency` |  | |  |  |
+| `RblPyblTransactionType` |  | |  |  |
+| `CashDiscountAmtInClrgTransCrcy` |  | |  | `} CashDiscountAmtInClrgTransCrcy` |
+| `CashDiscountBaseAmount` |  | |  | `} CashDiscountBaseAmount` |
+| `CashDiscount1DueDate` |  | |  |  |
+| `CashDiscount2DueDate` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `RblPyblItemIsCleared` |  | |  |  |
+| `ClearingDate` |  | |  |  |
+| `ClearingRblPyblDocument` |  | |  |  |
+| `RblPyblClearingReason` |  | |  |  |
+| `ClearingTransactionCurrency` |  | |  |  |
+| `ClrgBaseAmountInClrgTransCrcy` |  | |  | `} ClrgBaseAmountInClrgTransCrcy` |
+| `ClearingAmountInClrgTransCrcy` |  | |  | `} ClearingAmountInClrgTransCrcy` |
+| `ResidualAmountInClrgTransCrcy` |  | |  | `} ResidualAmountInClrgTransCrcy` |
+| `DeductionAmountInClrgTransCrcy` |  | |  | `} DeductionAmountInClrgTransCrcy` |
+| `PostgClassfctnRblPyblCodeOrign` |  | |  |  |
+| `PostingClassification` |  | |  |  |
+| `PostgSubclfnRblPyblCodeOrigin` |  | |  |  |
+| `PostingSubclassification` |  | |  |  |
+| `ReceivablePayableItemText` |  | |  |  |
+| `IsSalesRelated` |  | |  |  |
+| `IsUsedInPaymentTransaction` |  | |  |  |
+| `RblPyblItemIsBlockedForDunning` |  | |  |  |
+| `DunningBlockStartDate` |  | |  | `} DunningBlockStartDate` |
+| `DunningBlockEndDate` |  | |  | `} DunningBlockEndDate` |
+| `RblPyblItemIsBlockedForPayment` |  | |  |  |
+| `PaymentBlockStartDate` |  | |  | `} PaymentBlockStartDate` |
+| `PaymentBlockEndDate` |  | |  | `} PaymentBlockEndDate` |
+| `OriginalReferenceDocument` |  | |  |  |
+| `ReferenceDocumentType` |  | |  |  |
+| `ReferenceDocumentLogicalSystem` |  | |  |  |
+| `DCoOriglAccountingDocumentID` |  | |  |  |
+| `OriginalRblPyblDocument` |  | |  |  |
+| `OriginalRblPyblDocumentItem` |  | |  |  |
+| `OriginalRblPyblDocumentSubitem` |  | |  |  |
+| `OriglRblPyblItmAmtInOrigItmTC` |  | |  | `} OriglRblPyblItmAmtInOrigItmTC` |
+| `OriglItemTransactionCurrency` |  | |  |  |
+| `RblPyblItemHasRelations` |  | |  |  |
+| `RblPyblDocumentRelationType` |  | |  |  |
+| `RelatedRblPyblDocument` |  | |  |  |
+| `RelatedRblPyblDocumentItem` |  | |  |  |
+| `RelatedRblPyblDocumentSubitem` |  | |  |  |
+| `DCoRefAccountingDocumentID` |  | |  |  |
+| `RblPyblDocumentReference` |  | |  |  |
+| `RblPyblAltvDocumentReference` |  | |  |  |
+| `FirstRblPyblAddlReference` |  | |  |  |
+| `SecondRblPyblAddlReference` |  | |  |  |
+| `ThirdRblPyblAddlReference` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `DCoPredecessorReceivableItem` |  | |  |  |
+| `RsdlItmPredecessorDocument` |  | |  |  |
+| `RsdlItmPredecessorDocumentItem` |  | |  |  |
+| `LastChangeDateTime` |  | |  | `} LastChangeDateTime` |
+| `CreationDateTime` |  | |  | `} CreationDateTime` |
+| `DCoPaymentIsArranged` |  | |  |  |
+| `PaymentDifferenceReason` |  | |  |  |
+| `CreditControlArea` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_BranchAccount` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_CustomerCompany` | | ✓ | | |
+| `_PostingClass` | | ✓ | | |
+| `_PostingSubclassification` | | ✓ | | |
+| `_PaymentDifferenceReason` | | ✓ | | |
+| `_RblPyblDocRelationType` | | ✓ | | |
 
 ## Source Code
 

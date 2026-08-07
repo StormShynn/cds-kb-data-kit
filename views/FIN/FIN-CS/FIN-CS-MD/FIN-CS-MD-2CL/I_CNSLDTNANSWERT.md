@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `ConsolidationAnswer` | `answer` |
-| `ConsolidationAnswerText` | `text` |
-| `_Answer` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `ConsolidationAnswer` | ✓ | |  | `answer` |
+| `ConsolidationAnswerText` |  | |  | `text` |
+| `_Answer` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProdCmplncLogsDocument` | `ehfnd_log_doc_number` |
-| `D_PCLgsDcGetDaGdsEDIInfoItemR` | `_ItemInformation : composition [0..*] of D_PCLgsDcGetDaGdsEDIInfoItemR` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLogsDocument` |  | |  | `ehfnd_log_doc_number` |
+| `D_PCLgsDcGetDaGdsEDIInfoItemR` |  | |  | `_ItemInformation : composition [0..*] of D_PCLgsDcGetDaGdsEDIInfoItemR` |
 
 ## Source Code
 

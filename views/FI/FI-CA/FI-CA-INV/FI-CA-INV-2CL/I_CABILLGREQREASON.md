@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgReqReason` | `billreqrsn` |
-| `CABillgReqType` | `billreqtype` |
-| `_CABillgReqType` | *Association* |
-| `_CABillgReqReasonText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgReqReason` | ✓ | |  | `billreqrsn` |
+| `CABillgReqType` |  | |  | `billreqtype` |
+| `_CABillgReqType` | | ✓ | | |
+| `_CABillgReqReasonText` | | ✓ | | |
 
 ## Associations
 

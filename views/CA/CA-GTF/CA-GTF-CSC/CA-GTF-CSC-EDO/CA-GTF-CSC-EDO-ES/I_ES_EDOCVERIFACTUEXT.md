@@ -28,35 +28,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `SDOC.ElectronicDocUUID` |
-| `ElectronicDocSequenceNmbr` | `SDOC.ElectronicDocSequenceNmbr` |
-| `ES_EDocVeriFactuPreIssuerTaxId` | `SDOC.ES_EDocVeriFactuPreIssuerTaxId` |
-| `ES_EDocVeriFactuPreIssuerNmbr` | `SDOC.ES_EDocVeriFactuPreIssuerNmbr` |
-| `ES_EDocVeriFactuPreIssueInDate` | `SDOC.ES_EDocVeriFactuPreIssueInDate` |
-| `ES_EDocVeriFactuIssuerTaxId` | `SDOC.ES_EDocVeriFactuIssuerTaxId` |
-| `ES_EDocVeriFactuIssuerInvcNmbr` | `SDOC.ES_EDocVeriFactuIssuerInvcNmbr` |
-| `ES_EDocVeriFactuIssueInDate` | `SDOC.ES_EDocVeriFactuIssueInDate` |
-| `ES_EDocVeriFactuTotalAmount` | `SDOC.ES_EDocVeriFactuTotalAmount` |
-| `ES_EDocVeriFactuTaxAmount` | `SDOC.ES_EDocVeriFactuTaxAmount` |
-| `ES_EDocVeriFactuInvcType` | `SDOC.ES_EDocVeriFactuInvcType` |
-| `ES_EDocVeriFactuSrceDocType` | `SDOC.ES_EDocVeriFactuSrceDocType` |
-| `ES_EDocVeriFactuReversal` | `SDOC.ES_EDocVeriFactuReversal` |
-| `ES_EDocVeriFactuNmbrRange` | `SDOC.ES_EDocVeriFactuNmbrRange` |
-| `ES_EDocVeriFactuInvcRecdNmbr` | `SDOC.ES_EDocVeriFactuInvcRecdNmbr` |
-| `ES_EDocVeriFactuPreInvcRecd` | `SDOC.ES_EDocVeriFactuPreInvcRecd` |
-| `ES_EDocVeriFactuHashTxt` | `SDOC.ES_EDocVeriFactuHashTxt` |
-| `ES_EDocVeriFactuPrevHashTxt` | `SDOC.ES_EDocVeriFactuPrevHashTxt` |
-| `ES_EDocVeriFactuDocDteTme` | `SDOC.ES_EDocVeriFactuDocDteTme` |
-| `ES_EDocVeriFactuErrorCode` | `SDOC.ES_EDocVeriFactuErrorCode` |
-| `ES_EDocVeriFactuErrorDesc` | `SDOC.ES_EDocVeriFactuErrorDesc` |
-| `ElectronicDocCreationDate` | `EDOC.ElectronicDocCreationDate` |
-| `ElectronicDocCreationTime` | `EDOC.ElectronicDocCreationTime` |
-| `ElectronicDocCompanyCode` | `EDOC.ElectronicDocCompanyCode` |
-| `ElectronicDocSourceType` | `EDOC.ElectronicDocSourceType` |
-| `ElectronicDocSourceKey` | `EDOC.ElectronicDocSourceKey` |
-| `Currency` | `SDOC.Currency` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  |  |
+| `ElectronicDocSequenceNmbr` |  | |  |  |
+| `ES_EDocVeriFactuPreIssuerTaxId` |  | |  |  |
+| `ES_EDocVeriFactuPreIssuerNmbr` |  | |  |  |
+| `ES_EDocVeriFactuPreIssueInDate` |  | |  |  |
+| `ES_EDocVeriFactuIssuerTaxId` |  | |  |  |
+| `ES_EDocVeriFactuIssuerInvcNmbr` |  | |  |  |
+| `ES_EDocVeriFactuIssueInDate` |  | |  |  |
+| `ES_EDocVeriFactuTotalAmount` |  | |  |  |
+| `ES_EDocVeriFactuTaxAmount` |  | |  |  |
+| `ES_EDocVeriFactuInvcType` |  | |  |  |
+| `ES_EDocVeriFactuSrceDocType` |  | |  |  |
+| `ES_EDocVeriFactuReversal` |  | |  |  |
+| `ES_EDocVeriFactuNmbrRange` |  | |  |  |
+| `ES_EDocVeriFactuInvcRecdNmbr` |  | |  |  |
+| `ES_EDocVeriFactuPreInvcRecd` |  | |  |  |
+| `ES_EDocVeriFactuHashTxt` |  | |  |  |
+| `ES_EDocVeriFactuPrevHashTxt` |  | |  |  |
+| `ES_EDocVeriFactuDocDteTme` |  | |  |  |
+| `ES_EDocVeriFactuErrorCode` |  | |  |  |
+| `ES_EDocVeriFactuErrorDesc` |  | |  |  |
+| `ElectronicDocCreationDate` |  | |  |  |
+| `ElectronicDocCreationTime` |  | |  |  |
+| `ElectronicDocCompanyCode` |  | |  |  |
+| `ElectronicDocSourceType` |  | |  |  |
+| `ElectronicDocSourceKey` |  | |  |  |
+| `Currency` |  | |  |  |
 
 ## Source Code
 

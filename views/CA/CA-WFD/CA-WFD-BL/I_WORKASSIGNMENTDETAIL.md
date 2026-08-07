@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkAssignmentExternalID` | `WorkAssignmentKeymap.WorkAssignmentExternalID` |
-| key `Country2DigitISOCode` | `WorkAssignmentKeymap.Country2DigitISOCode` |
-| key `WorkAssignmentStartDate` | `WorkAssignmentDetails.WorkAssignmentStartDate` |
-| `WorkforcePersonExternalID` | `WorkAssignmentKeymap.WorkforcePersonExternalID` |
-| `WorkAssignmentEndDate` | `WorkAssignmentDetails.WorkAssignmentEndDate` |
-| `CompanyCode` | `WorkAssignmentDetails.CompanyCode` |
-| `CostCenter` | `WorkAssignmentDetails.CostCenter` |
-| `SupervisorWorkAssignmentExtID` | `WorkAssignmentDetails.SupervisorWorkAssignmentExtID` |
-| `WeeklyWorkingHours` | `WorkAssignmentDetails.WeeklyWorkingHours` |
-| `WeeklyWorkingDays` | `WorkAssignmentDetails.WeeklyWorkingDays` |
-| `WorkAssignmentStatus` | `WorkAssignmentDetails.WorkAssignmentStatus` |
-| `EmploymentPercent` | `WorkAssignmentDetails.EmploymentPercent` |
-| `IsBlocked` | `WorkAssignmentKeymap.IsBlocked` |
-| `_WorkAssignment` | *Association* |
-| `_WorkforcePerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkAssignmentExternalID` | ✓ | |  |  |
+| `Country2DigitISOCode` | ✓ | |  |  |
+| `WorkAssignmentStartDate` | ✓ | |  |  |
+| `WorkforcePersonExternalID` |  | |  |  |
+| `WorkAssignmentEndDate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `SupervisorWorkAssignmentExtID` |  | |  |  |
+| `WeeklyWorkingHours` |  | |  |  |
+| `WeeklyWorkingDays` |  | |  |  |
+| `WorkAssignmentStatus` |  | |  |  |
+| `EmploymentPercent` |  | |  |  |
+| `IsBlocked` |  | |  |  |
+| `_WorkAssignment` | | ✓ | | |
+| `_WorkforcePerson` | | ✓ | | |
 
 ## Associations
 

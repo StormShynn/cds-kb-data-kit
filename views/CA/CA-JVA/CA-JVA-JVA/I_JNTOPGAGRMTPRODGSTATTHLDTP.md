@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmt` |
-| key `JntVntrProducingStstclRatioID` | `JntVntrProducingStstclRatioID` |
-| key `JointVentureSequenceNumber` | `JointVentureSequenceNumber` |
-| `JntVntrThresholdNumberOfWells` | `JntVntrThresholdNumberOfWells` |
-| `JointVentureRatePerProdgWell` | `JointVentureRatePerProdgWell` |
-| `Currency` | `Currency` |
-| `_CompanyCode` | *Association* |
-| `_Currency` | *Association* |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JntVntrProducingStstclRatioID` | ✓ | |  |  |
+| `JointVentureSequenceNumber` | ✓ | |  |  |
+| `JntVntrThresholdNumberOfWells` |  | |  |  |
+| `JointVentureRatePerProdgWell` |  | |  |  |
+| `Currency` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Source Code
 

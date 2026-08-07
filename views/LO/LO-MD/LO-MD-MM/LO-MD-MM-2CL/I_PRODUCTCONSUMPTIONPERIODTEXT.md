@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `PeriodType` | `cast ( domvalue_l as perkz )` |
-| `Name` | `cast ( ddtext as val_text )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `PeriodType` | ✓ | |  | `cast ( domvalue_l as perkz )` |
+| `Name` |  | |  | `cast ( ddtext as val_text )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

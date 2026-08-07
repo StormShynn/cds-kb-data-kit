@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| key `InspLotMatlDocItem` | `InspLotMatlDocItem` |
-| key `Equipment` | `Equipment` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `MaterialDocument` | `MaterialDocument` |
-| `SerialNumber` | `SerialNumber` |
-| `InspLotMatlDocItemType` | `InspLotMatlDocItemType` |
-| `_InspectionLot` | *Association* |
-| `_InspLotMatlDocItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `InspLotMatlDocItem` | ✓ | |  |  |
+| `Equipment` | ✓ | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `InspLotMatlDocItemType` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
+| `_InspLotMatlDocItem` | | ✓ | | |
 
 ## Source Code
 

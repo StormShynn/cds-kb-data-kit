@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspLotDynamicRule` | `cast( dynregel as vdm_qdynregel preserving type )` |
-| key `Language` | `sprache` |
-| `InspLotDynamicRuleText` | `kurztext` |
-| `_Language` | *Association* |
-| `_InspLotDynamicRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspLotDynamicRule` | ✓ | |  | `cast( dynregel as vdm_qdynregel preserving type )` |
+| `Language` | ✓ | |  | `sprache` |
+| `InspLotDynamicRuleText` |  | |  | `kurztext` |
+| `_Language` | | ✓ | | |
+| `_InspLotDynamicRule` | | ✓ | | |
 
 ## Associations
 

@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RepetitiveMfgConfirmation` | `RepetitiveMfgConfirmation` |
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| key `HandlingUnitExternalID` | `HandlingUnitExternalID` |
-| key `HandlingUnitItem` | `HandlingUnitItem` |
-| `ConfirmationPlant` | `ConfirmationPlant` |
-| `Plant` | `Plant` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `_Customer` | *Association* |
-| `_CustomerCompanyByPlant` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_RepetitiveMfgConfirmationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RepetitiveMfgConfirmation` | ✓ | |  |  |
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `HandlingUnitExternalID` | ✓ | |  |  |
+| `HandlingUnitItem` | ✓ | |  |  |
+| `ConfirmationPlant` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `_Customer` | | ✓ | | |
+| `_CustomerCompanyByPlant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_RepetitiveMfgConfirmationTP` | | ✓ | | |
 
 ## Source Code
 

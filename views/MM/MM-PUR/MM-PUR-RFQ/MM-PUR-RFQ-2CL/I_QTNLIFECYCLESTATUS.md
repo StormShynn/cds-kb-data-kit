@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QtnLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as vdm_qtn_lfst_cd )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QtnLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as vdm_qtn_lfst_cd )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAClearingReason` | `augrd` |
-| `IsUsableForReversal` | `xreve` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAClearingReason` | ✓ | |  | `augrd` |
+| `IsUsableForReversal` |  | |  | `xreve` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

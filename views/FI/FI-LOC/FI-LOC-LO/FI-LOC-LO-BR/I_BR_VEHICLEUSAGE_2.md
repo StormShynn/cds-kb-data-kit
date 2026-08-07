@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VehicleUsage` | `cast ( espveic as logbr_vehicleusage preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VehicleUsage` | ✓ | |  | `cast ( espveic as logbr_vehicleusage preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

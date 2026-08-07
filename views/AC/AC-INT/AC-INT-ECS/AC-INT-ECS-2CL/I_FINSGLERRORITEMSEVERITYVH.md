@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinSGLErrorItemSeverity` | `cast( domvalue_l as char1 )` |
-| `FinSGLErrorItemSeverityText` | `cast( ddtext as char10 )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinSGLErrorItemSeverity` | ✓ | |  | `cast( domvalue_l as char1 )` |
+| `FinSGLErrorItemSeverityText` |  | |  | `cast( ddtext as char10 )` |
 
 ## Source Code
 

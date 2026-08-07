@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrder` | `ServiceOrder` |
-| key `ServiceOrderItem` | `ServiceOrderItem` |
-| key `SupplierInvoice` | `SupplierInvoice` |
-| key `SupplierInvoiceItem` | `SupplierInvoiceItem` |
-| key `FiscalYear` | `FiscalYear` |
-| `_ServiceOrderItem` | *Association* |
-| `_ServiceOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |
+| `SupplierInvoice` | ✓ | |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `_ServiceOrderItem` | | ✓ | | |
+| `_ServiceOrderTP` | | ✓ | | |
 
 ## Source Code
 

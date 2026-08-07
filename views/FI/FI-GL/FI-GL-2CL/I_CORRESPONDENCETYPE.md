@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Correspondence` | `event` |
-| `IsAccountSpecificationRequired` | `xkont` |
-| `IsDocSpecificationNecessary` | `xbelg` |
-| `NmbrOfDateSpecificationsRqd` | `anzdt` |
-| `IsIndividualTextRequired` | `xspra` |
-| `CorrespncIsCrossCompanyCode` | `xbukr` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Correspondence` | ✓ | |  | `event` |
+| `IsAccountSpecificationRequired` |  | |  | `xkont` |
+| `IsDocSpecificationNecessary` |  | |  | `xbelg` |
+| `NmbrOfDateSpecificationsRqd` |  | |  | `anzdt` |
+| `IsIndividualTextRequired` |  | |  | `xspra` |
+| `CorrespncIsCrossCompanyCode` |  | |  | `xbukr` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| `PlanningMaterial` | `PlanningMaterial` |
-| `PlanningPlant` | `PlanningPlant` |
-| `ProdPlntPlngMatlConversionFctr` | `ProdPlntPlngMatlConversionFctr` |
-| `_ProductPlant` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `PlanningMaterial` |  | |  |  |
+| `PlanningPlant` |  | |  |  |
+| `ProdPlntPlngMatlConversionFctr` |  | |  |  |
+| `_ProductPlant` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Source Code
 

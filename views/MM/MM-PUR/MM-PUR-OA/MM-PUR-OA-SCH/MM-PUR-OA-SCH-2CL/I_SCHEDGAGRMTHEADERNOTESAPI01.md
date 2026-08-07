@@ -30,21 +30,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `DocumentText` | `DocumentText` |
-| key `TechnicalObjectType` | `TechnicalObjectType` |
-| key `ArchObjectNumber` | `ArchObjectNumber` |
-| key `SchedulingAgreement` | `SchedulingAgreement` |
-| `NoteDescription` | `NoteDescription` |
-| `FixedIndicator` | `FixedIndicator` |
-| `DisplayModeOfTextTypeInPurg` | `DisplayModeOfTextTypeInPurg` |
-| `TextIsAdoptedFromReference` | `TextIsAdoptedFromReference` |
-| `PurchasingDocumentType` | `_SchedgAgrmtHdr.PurchasingDocumentType` |
-| `PurchasingOrganization` | `_SchedgAgrmtHdr.PurchasingOrganization` |
-| `PurchasingGroup` | `_SchedgAgrmtHdr.PurchasingGroup` |
-| `_SchedgAgrmtHdr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `DocumentText` | ✓ | |  |  |
+| `TechnicalObjectType` | ✓ | |  |  |
+| `ArchObjectNumber` | ✓ | |  |  |
+| `SchedulingAgreement` | ✓ | |  |  |
+| `NoteDescription` |  | |  |  |
+| `FixedIndicator` |  | |  |  |
+| `DisplayModeOfTextTypeInPurg` |  | |  |  |
+| `TextIsAdoptedFromReference` |  | |  |  |
+| `PurchasingDocumentType` |  | | `_SchedgAgrmtHdr` | `PurchasingDocumentType` |
+| `PurchasingOrganization` |  | | `_SchedgAgrmtHdr` | `PurchasingOrganization` |
+| `PurchasingGroup` |  | | `_SchedgAgrmtHdr` | `PurchasingGroup` |
+| `_SchedgAgrmtHdr` | | ✓ | | |
 
 ## Associations
 

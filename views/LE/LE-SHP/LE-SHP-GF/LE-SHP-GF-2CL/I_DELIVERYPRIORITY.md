@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryPriority` | `lprio` |
-| `DeliveryPriorityDesc` | `cast(_Text[1: Language=$session.system_language].DeliveryPriorityDesc as bezei30)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryPriority` | ✓ | |  | `lprio` |
+| `DeliveryPriorityDesc` |  | |  | `cast(_Text[1: Language=$session.system_language].DeliveryPriorityDesc as bezei30)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

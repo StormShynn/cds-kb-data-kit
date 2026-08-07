@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SLCPartyRole` | `cast ( substring( domvalue_l, 1, 3 ) as /srmsmc/party_role_code preserving type )` |
-| `_SLCPartyRoleText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SLCPartyRole` | ✓ | |  | `cast ( substring( domvalue_l, 1, 3 ) as /srmsmc/party_role_code preserving type )` |
+| `_SLCPartyRoleText` | | ✓ | | |
 
 ## Associations
 

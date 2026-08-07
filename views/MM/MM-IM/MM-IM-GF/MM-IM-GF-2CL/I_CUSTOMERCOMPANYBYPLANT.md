@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `plant.Plant` |
-| key `Customer` | `I_CustomerCompany.Customer` |
-| `ValuationArea` | `val.ValuationArea` |
-| `CompanyCode` | `val.CompanyCode` |
-| `AuthorizationGroup` | `I_CustomerCompany.AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `I_CustomerCompany.IsBusinessPurposeCompleted` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `Customer` | ✓ | |  |  |
+| `ValuationArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `FunctionalArea` | `_Text.FunctionalArea` |
-| `FunctionalAreaName` | `_Text.FunctionalAreaName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFunctionalAreaTP` | `_FunctionalArea as _FunctionalArea : redirected to parent I_CnsldtnFunctionalAreaTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `FunctionalArea` | ✓ | | `_Text` | `FunctionalArea` |
+| `FunctionalAreaName` |  | | `_Text` | `FunctionalAreaName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnFunctionalAreaTP` |  | |  | `_FunctionalArea as _FunctionalArea : redirected to parent I_CnsldtnFunctionalAreaTP` |
 
 ## Source Code
 

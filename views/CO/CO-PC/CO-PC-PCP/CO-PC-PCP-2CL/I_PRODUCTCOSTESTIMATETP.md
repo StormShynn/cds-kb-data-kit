@@ -30,84 +30,84 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingReferenceObject` | `CostingReferenceObject` |
-| key `CostEstimate` | `CostEstimate` |
-| key `CostingType` | `CostingType` |
-| key `CostingDate` | `CostingDate` |
-| key `CostingVersion` | `CostingVersion` |
-| key `ValuationVariant` | `ValuationVariant` |
-| key `CostIsEnteredManually` | `CostIsEnteredManually` |
-| `Product` | `Product` |
-| `Plant` | `Plant` |
-| `ValuationArea` | `ValuationArea` |
-| `ValuationType` | `ValuationType` |
-| `ControllingArea` | `ControllingArea` |
-| `CompanyCode` | `CompanyCode` |
-| `CostEstimateValidityStartDate` | `CostEstimateValidityStartDate` |
-| `CostEstimateValidityEndDate` | `CostEstimateValidityEndDate` |
-| `ValuationDate` | `ValuationDate` |
-| `QuantityStructureDate` | `QuantityStructureDate` |
-| `ProductionVersion` | `ProductionVersion` |
-| `BillOfMaterial` | `BillOfMaterial` |
-| `ProductBOMUsage` | `ProductBOMUsage` |
-| `AlternativeBillOfMaterial` | `AlternativeBillOfMaterial` |
-| `TaskListGroup` | `TaskListGroup` |
-| `TaskListType` | `TaskListType` |
-| `TaskListGroupCounter` | `TaskListGroupCounter` |
-| `CostingLotSize` | `CostingLotSize` |
-| `ValuationQuantityUnit` | `ValuationQuantityUnit` |
-| `CostEstimateCreatedByUser` | `CostEstimateCreatedByUser` |
-| `CostEstimateCreationDate` | `CostEstimateCreationDate` |
-| `CostEstimateStatus` | `CostEstimateStatus` |
-| `CostEstimateStatusCriticality` | `CostEstimateStatusCriticality` |
-| `CostEstimateIsReleased` | `CostEstimateIsReleased` |
-| `CostingSheet` | `CostingSheet` |
-| `CostingOverheadType` | `CostingOverheadType` |
-| `ProductValuationStrategy` | `ProductValuationStrategy` |
-| `ProductValnPurgInfoRecdStrgy` | `ProductValnPurgInfoRecdStrgy` |
-| `CostingVariant` | `CostingVariant` |
-| `CostingOverheadGroup` | `CostingOverheadGroup` |
-| `CostingOverhead` | `CostingOverhead` |
-| `CostEstimateMarkingDate` | `CostEstimateMarkingDate` |
-| `CostEstimateMarkedByUser` | `CostEstimateMarkedByUser` |
-| `CostEstimateMarkingUser` | `CostEstimateMarkingUser` |
-| `CostEstimateReleaseDate` | `CostEstimateReleaseDate` |
-| `CostEstimateReleasedByUser` | `CostEstimateReleasedByUser` |
-| `CostEstimateReleaseUser` | `CostEstimateReleaseUser` |
-| `CostEstimateTransferControl` | `CostEstimateTransferControl` |
-| `CostComponentStructure` | `CostComponentStructure` |
-| `ProfitCenter` | `ProfitCenter` |
-| `CompanyCodeCurrency` | `CompanyCodeCurrency` |
-| `ControllingAreaCurrency` | `ControllingAreaCurrency` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `EstimatedCostCostingRun` | `EstimatedCostCostingRun` |
-| `EstimatedCostCostingRunDate` | `EstimatedCostCostingRunDate` |
-| `TotalCostInCompanyCodeCurrency` | `TotalCostInCompanyCodeCurrency` |
-| `FixedCostInCompanyCodeCurrency` | `FixedCostInCompanyCodeCurrency` |
-| `TotalCostInCtrlgAreaCurrency` | `TotalCostInCtrlgAreaCurrency` |
-| `FixedCostInCtrlgAreaCurrency` | `FixedCostInCtrlgAreaCurrency` |
-| `CO2eqEmissionUnit` | `CO2eqEmissionUnit` |
-| `CO2eqEmissionQuantity` | `CO2eqEmissionQuantity` |
-| `_Item` | *Association* |
-| `_CreatedByContactCard` | *Association* |
-| `_MarkedByContactCard` | *Association* |
-| `_ReleasedByContactCard` | *Association* |
-| `_ProductText` | *Association* |
-| `_PlantText` | *Association* |
-| `_CostingVersionText` | *Association* |
-| `_CostingVersionText_2` | *Association* |
-| `_CostingVariantText` | *Association* |
-| `_ValuationVariantText` | *Association* |
-| `_CostingTypeText` | *Association* |
-| `_CompanyCodeText` | *Association* |
-| `_ProfitCenterText` | *Association* |
-| `_ProfitCenterText_2` | *Association* |
-| `_EstimatedCostCostingRunText` | *Association* |
-| `_CostEstimateStatusText` | *Association* |
-| `_CostingOverheadGroupText` | *Association* |
-| `_ControllingAreaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingReferenceObject` | ✓ | |  |  |
+| `CostEstimate` | ✓ | |  |  |
+| `CostingType` | ✓ | |  |  |
+| `CostingDate` | ✓ | |  |  |
+| `CostingVersion` | ✓ | |  |  |
+| `ValuationVariant` | ✓ | |  |  |
+| `CostIsEnteredManually` | ✓ | |  |  |
+| `Product` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `ValuationType` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CostEstimateValidityStartDate` |  | |  |  |
+| `CostEstimateValidityEndDate` |  | |  |  |
+| `ValuationDate` |  | |  |  |
+| `QuantityStructureDate` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `BillOfMaterial` |  | |  |  |
+| `ProductBOMUsage` |  | |  |  |
+| `AlternativeBillOfMaterial` |  | |  |  |
+| `TaskListGroup` |  | |  |  |
+| `TaskListType` |  | |  |  |
+| `TaskListGroupCounter` |  | |  |  |
+| `CostingLotSize` |  | |  |  |
+| `ValuationQuantityUnit` |  | |  |  |
+| `CostEstimateCreatedByUser` |  | |  |  |
+| `CostEstimateCreationDate` |  | |  |  |
+| `CostEstimateStatus` |  | |  |  |
+| `CostEstimateStatusCriticality` |  | |  |  |
+| `CostEstimateIsReleased` |  | |  |  |
+| `CostingSheet` |  | |  |  |
+| `CostingOverheadType` |  | |  |  |
+| `ProductValuationStrategy` |  | |  |  |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  |
+| `CostingVariant` |  | |  |  |
+| `CostingOverheadGroup` |  | |  |  |
+| `CostingOverhead` |  | |  |  |
+| `CostEstimateMarkingDate` |  | |  |  |
+| `CostEstimateMarkedByUser` |  | |  |  |
+| `CostEstimateMarkingUser` |  | |  |  |
+| `CostEstimateReleaseDate` |  | |  |  |
+| `CostEstimateReleasedByUser` |  | |  |  |
+| `CostEstimateReleaseUser` |  | |  |  |
+| `CostEstimateTransferControl` |  | |  |  |
+| `CostComponentStructure` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `ControllingAreaCurrency` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `EstimatedCostCostingRun` |  | |  |  |
+| `EstimatedCostCostingRunDate` |  | |  |  |
+| `TotalCostInCompanyCodeCurrency` |  | |  |  |
+| `FixedCostInCompanyCodeCurrency` |  | |  |  |
+| `TotalCostInCtrlgAreaCurrency` |  | |  |  |
+| `FixedCostInCtrlgAreaCurrency` |  | |  |  |
+| `CO2eqEmissionUnit` |  | |  |  |
+| `CO2eqEmissionQuantity` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_CreatedByContactCard` | | ✓ | | |
+| `_MarkedByContactCard` | | ✓ | | |
+| `_ReleasedByContactCard` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_PlantText` | | ✓ | | |
+| `_CostingVersionText` | | ✓ | | |
+| `_CostingVersionText_2` | | ✓ | | |
+| `_CostingVariantText` | | ✓ | | |
+| `_ValuationVariantText` | | ✓ | | |
+| `_CostingTypeText` | | ✓ | | |
+| `_CompanyCodeText` | | ✓ | | |
+| `_ProfitCenterText` | | ✓ | | |
+| `_ProfitCenterText_2` | | ✓ | | |
+| `_EstimatedCostCostingRunText` | | ✓ | | |
+| `_CostEstimateStatusText` | | ✓ | | |
+| `_CostingOverheadGroupText` | | ✓ | | |
+| `_ControllingAreaText` | | ✓ | | |
 
 ## Source Code
 

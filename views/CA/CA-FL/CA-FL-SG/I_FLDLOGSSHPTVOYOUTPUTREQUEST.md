@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsShptVoyageUUID` | `FldLogsShptVoyageUUID` |
-| `FldLogsShptVoyageNumber` | `FldLogsShptVoyageNumber` |
-| `FldLogsDestPlnt` | `FldLogsDestPlnt` |
-| `FldLogsSrcePlnt` | `FldLogsSrcePlnt` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `SuplrCoIsBusPrpsCmpltd` | `SuplrCoIsBusPrpsCmpltd` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsShptVoyageUUID` | ✓ | |  |  |
+| `FldLogsShptVoyageNumber` |  | |  |  |
+| `FldLogsDestPlnt` |  | |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `SuplrCoIsBusPrpsCmpltd` |  | |  |  |
 
 ## Source Code
 

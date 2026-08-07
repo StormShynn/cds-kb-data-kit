@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PriorityCode` | `cast(lpad(cast(priority as abap.char(3)),3,'0')as abap.numc(3))` |
-| `_PriorityCodeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PriorityCode` | ✓ | |  | `cast(lpad(cast(priority as abap.char(3)),3,'0')as abap.numc(3))` |
+| `_PriorityCodeText` | | ✓ | | |
 
 ## Source Code
 

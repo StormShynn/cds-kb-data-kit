@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ParentObjectUUID` | `/s4ppm/tv_task_guid` |
-| `LeftSiblingUUID` | `/s4ppm/tv_task_guid` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ParentObjectUUID` |  | |  | `/s4ppm/tv_task_guid` |
+| `LeftSiblingUUID` |  | |  | `/s4ppm/tv_task_guid` |
 
 ## Source Code
 

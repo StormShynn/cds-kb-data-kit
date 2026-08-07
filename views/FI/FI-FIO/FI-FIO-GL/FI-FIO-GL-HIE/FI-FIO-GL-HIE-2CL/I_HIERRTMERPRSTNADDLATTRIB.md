@@ -26,15 +26,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RuntimeHierarchy` | `hryid` |
-| key `ValidityEndDate` | `cast(hryvalto as fis_datbi preserving type )` |
-| key `HierarchyAttributeName` | `hryattrname` |
-| key `HierAttributeRangeFromVal` | `hryattrvalue` |
-| `HierarchyType` | `hrytyp` |
-| `HierAttributeRangeToVal` | `hryattrhvalue` |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RuntimeHierarchy` | ✓ | |  | `hryid` |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |
+| `HierarchyAttributeName` | ✓ | |  | `hryattrname` |
+| `HierAttributeRangeFromVal` | ✓ | |  | `hryattrvalue` |
+| `HierarchyType` |  | |  | `hrytyp` |
+| `HierAttributeRangeToVal` |  | |  | `hryattrhvalue` |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

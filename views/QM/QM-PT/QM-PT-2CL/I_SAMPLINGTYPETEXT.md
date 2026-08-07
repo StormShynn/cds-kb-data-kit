@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `qdsat.sprache` |
-| key `SamplingType` | `qdsat.stichprart` |
-| `SamplingTypeText` | `qdsat.kurztext` |
-| `_SamplingType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `sprache` |
+| `SamplingType` | ✓ | |  | `stichprart` |
+| `SamplingTypeText` |  | |  | `kurztext` |
+| `_SamplingType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

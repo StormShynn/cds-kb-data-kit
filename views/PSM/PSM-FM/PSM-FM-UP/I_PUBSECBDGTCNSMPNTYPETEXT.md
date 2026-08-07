@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PubSecBudgetCnsmpnType` | `bdgt_cnsmpn_type` |
-| key `Language` | `language` |
-| `PubSecBudgetCnsmpnTypeText` | `bdgt_cnsmpn_type_text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PubSecBudgetCnsmpnType` | ✓ | |  | `bdgt_cnsmpn_type` |
+| `Language` | ✓ | |  | `language` |
+| `PubSecBudgetCnsmpnTypeText` |  | |  | `bdgt_cnsmpn_type_text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

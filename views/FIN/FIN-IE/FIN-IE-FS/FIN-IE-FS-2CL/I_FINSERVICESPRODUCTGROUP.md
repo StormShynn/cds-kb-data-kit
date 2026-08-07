@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialServicesProductGroup` | `fs_product_group` |
-| `_FinSrvcsProdGrpHierNode` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialServicesProductGroup` | ✓ | |  | `fs_product_group` |
+| `_FinSrvcsProdGrpHierNode` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

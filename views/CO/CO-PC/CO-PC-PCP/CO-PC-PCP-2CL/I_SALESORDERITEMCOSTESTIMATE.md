@@ -31,73 +31,73 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingReferenceObject` | `CostEst.CostingReferenceObject` |
-| key `CostEstimate` | `CostEst.CostEstimate` |
-| key `CostingType` | `CostEst.CostingType` |
-| key `CostingDate` | `CostEst.CostingDate` |
-| key `CostingVersion` | `CostEst.CostingVersion` |
-| key `ValuationVariant` | `CostEst.ValuationVariant` |
-| key `CostIsEnteredManually` | `CostEst.CostIsEnteredManually` |
-| `Product` | `CostEst.Product` |
-| `ValuationType` | `CostEst.ValuationType` |
-| `CostingVariant` | `CostEst.CostingVariant` |
-| `CompanyCode` | `ValArea.CompanyCode` |
-| `Plant` | `CostEst.Plant` |
-| `ControllingArea` | `CostEst.ControllingArea` |
-| `Ledger` | `CostEst.Ledger` |
-| `ProfitCenter` | `CostEst.ProfitCenter` |
-| `CostEstimateValidityStartDate` | `CostEst.CostEstimateValidityStartDate` |
-| `CostEstimateValidityEndDate` | `CostEst.CostEstimateValidityEndDate` |
-| `ValuationDate` | `CostEst.ValuationDate` |
-| `QuantityStructureDate` | `CostEst.QuantityStructureDate` |
-| `CostingLotSize` | `CostEst.CostingLotSize` |
-| `ValuationQuantityUnit` | `CostEst.ValuationQuantityUnit` |
-| `CostEstimateCreationDate` | `CostEst.CostEstimateCreationDate` |
-| `CostEstimateStatus` | `CostEst.CostEstimateStatus` |
-| `ProductionVersion` | `CostEst.ProductionVersion` |
-| `ProductValuationStrategy` | `CostEst.ProductValuationStrategy` |
-| `ProductValnPurgInfoRecdStrgy` | `CostEst.ProductValnPurgInfoRecdStrgy` |
-| `ReferenceLedger` | `CostEst.ReferenceLedger` |
-| `ComponentBreakdown` | `CostEst.ComponentBreakdown` |
-| `PostingPeriod` | `CostEst.PostingPeriod` |
-| `PostingFiscalYear` | `CostEst.PostingFiscalYear` |
-| `CostingItemIsProductComp` | `CostEst.CostingItemIsProductComp` |
-| `CostEstimateTransferControl` | `CostEst.CostEstimateTransferControl` |
-| `SalesOrder` | `cast( CostEst.SalesDocument as vdm_sales_order preserving type )` |
-| `SalesOrderItem` | `cast( CostEst.SalesDocumentItem as sales_order_item preserving type )` |
-| `BillOfMaterial` | `CostEst.BillOfMaterial` |
-| `ProductBOMUsage` | `CostEst.ProductBOMUsage` |
-| `AlternativeBillOfMaterial` | `CostEst.AlternativeBillOfMaterial` |
-| `TaskListGroup` | `CostEst.TaskListGroup` |
-| `TaskListType` | `CostEst.TaskListType` |
-| `TaskListGroupCounter` | `CostEst.TaskListGroupCounter` |
-| `SpecialProcurementType` | `CostEst.SpecialProcurementType` |
-| `ProductProcurementType` | `CostEst.ProductProcurementType` |
-| `SpecialProcurementPlant` | `CostEst.SpecialProcurementPlant` |
-| `CostingSheet` | `CostEst.CostingSheet` |
-| `CostingOverheadGroup` | `CostEst.CostingOverheadGroup` |
-| `CostingOverhead` | `CostEst.CostingOverhead` |
-| `ConfiguredProduct` | `CostEst.ConfiguredProduct` |
-| `CostEstimateCostingLevel` | `CostEst.CostEstimateCostingLevel` |
-| `CostComponentStructure` | `CostEst.CostComponentStructure` |
-| `CostEstimateCreatedByUser` | `CostEst.CostEstimateCreatedByUser` |
-| `CostEstimateMarkedByUser` | `CostEst.CostEstimateMarkedByUser` |
-| `CostEstimateMarkingDate` | `CostEst.CostEstimateMarkingDate` |
-| `ValuationArea` | `CostEst.ValuationArea` |
-| `CompanyCodeCurrency` | `CostEst.CompanyCodeCurrency` |
-| `GlobalCurrency` | `CostEst.ControllingAreaCurrency` |
-| `_SalesOrderItemCostEstItem` | *Association* |
-| `_Product` | *Association* |
-| `_GlobalCurrency` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_CostingType` | *Association* |
-| `_CostingVersion` | *Association* |
-| `_CostingVariant` | *Association* |
-| `_ValuationVariant` | *Association* |
-| `_Plant` | *Association* |
-| `_UnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingReferenceObject` | ✓ | |  |  |
+| `CostEstimate` | ✓ | |  |  |
+| `CostingType` | ✓ | |  |  |
+| `CostingDate` | ✓ | |  |  |
+| `CostingVersion` | ✓ | |  |  |
+| `ValuationVariant` | ✓ | |  |  |
+| `CostIsEnteredManually` | ✓ | |  |  |
+| `Product` |  | |  |  |
+| `ValuationType` |  | |  |  |
+| `CostingVariant` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `Ledger` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CostEstimateValidityStartDate` |  | |  |  |
+| `CostEstimateValidityEndDate` |  | |  |  |
+| `ValuationDate` |  | |  |  |
+| `QuantityStructureDate` |  | |  |  |
+| `CostingLotSize` |  | |  |  |
+| `ValuationQuantityUnit` |  | |  |  |
+| `CostEstimateCreationDate` |  | |  |  |
+| `CostEstimateStatus` |  | |  |  |
+| `ProductionVersion` |  | |  |  |
+| `ProductValuationStrategy` |  | |  |  |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  |
+| `ReferenceLedger` |  | |  |  |
+| `ComponentBreakdown` |  | |  |  |
+| `PostingPeriod` |  | |  |  |
+| `PostingFiscalYear` |  | |  |  |
+| `CostingItemIsProductComp` |  | |  |  |
+| `CostEstimateTransferControl` |  | |  |  |
+| `SalesOrder` |  | |  | `cast( CostEst.SalesDocument as vdm_sales_order preserving type )` |
+| `SalesOrderItem` |  | |  | `cast( CostEst.SalesDocumentItem as sales_order_item preserving type )` |
+| `BillOfMaterial` |  | |  |  |
+| `ProductBOMUsage` |  | |  |  |
+| `AlternativeBillOfMaterial` |  | |  |  |
+| `TaskListGroup` |  | |  |  |
+| `TaskListType` |  | |  |  |
+| `TaskListGroupCounter` |  | |  |  |
+| `SpecialProcurementType` |  | |  |  |
+| `ProductProcurementType` |  | |  |  |
+| `SpecialProcurementPlant` |  | |  |  |
+| `CostingSheet` |  | |  |  |
+| `CostingOverheadGroup` |  | |  |  |
+| `CostingOverhead` |  | |  |  |
+| `ConfiguredProduct` |  | |  |  |
+| `CostEstimateCostingLevel` |  | |  |  |
+| `CostComponentStructure` |  | |  |  |
+| `CostEstimateCreatedByUser` |  | |  |  |
+| `CostEstimateMarkedByUser` |  | |  |  |
+| `CostEstimateMarkingDate` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `CompanyCodeCurrency` |  | |  |  |
+| `GlobalCurrency` |  | |  | `ControllingAreaCurrency` |
+| `_SalesOrderItemCostEstItem` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_GlobalCurrency` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_CostingType` | | ✓ | | |
+| `_CostingVersion` | | ✓ | | |
+| `_CostingVariant` | | ✓ | | |
+| `_ValuationVariant` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
 
 ## Associations
 

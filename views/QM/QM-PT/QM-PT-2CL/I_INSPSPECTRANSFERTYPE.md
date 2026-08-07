@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspSpecTransferType` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qvollst preserving type )` |
-| `_InspSpecTransferTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspSpecTransferType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qvollst preserving type )` |
+| `_InspSpecTransferTypeText` | | ✓ | | |
 
 ## Associations
 

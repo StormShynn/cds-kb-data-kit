@@ -33,35 +33,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| key `OrdinalNumber` | `OrdinalNumber` |
-| key `Person` | `Person` |
-| `OrdinalNumberForEdit` | `OrdinalNumberForEdit` |
-| `IsDefaultEmailAddress` | `IsDefaultEmailAddress` |
-| `EmailAddress` | `EmailAddress` |
-| `IsHomeEmailAddress` | `IsHomeEmailAddress` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `_BPProtectedAddress` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
-| `_AuthorizationGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `OrdinalNumber` | ✓ | |  |  |
+| `Person` | ✓ | |  |  |
+| `OrdinalNumberForEdit` |  | |  |  |
+| `IsDefaultEmailAddress` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `IsHomeEmailAddress` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `_BPProtectedAddress` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_AuthorizationGroup` | | ✓ | | |
 
 ## Source Code
 

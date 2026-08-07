@@ -31,45 +31,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContract` | `SalesContract.SalesContract` |
-| `SalesContractType` | `SalesContract.SalesContractType` |
-| `SoldToParty` | `SalesContract.SoldToParty` |
-| `SalesOrganization` | `SalesContract.SalesOrganization` |
-| `DistributionChannel` | `SalesContract.DistributionChannel` |
-| `OrganizationDivision` | `SalesContract.OrganizationDivision` |
-| `SalesOffice` | `SalesContract.SalesOffice` |
-| `SalesGroup` | `SalesContract.SalesGroup` |
-| `SalesDistrict` | `SalesContract.SalesDistrict` |
-| `PurchaseOrderByCustomer` | `SalesContract.PurchaseOrderByCustomer` |
-| `CustomerGroup` | `SalesContract.CustomerGroup` |
-| `SDDocumentReason` | `SalesContract.SDDocumentReason` |
-| `PricingDate` | `SalesContract.PricingDate` |
-| `SalesContractValidityStartDate` | `SalesContract.SalesContractValidityStartDate` |
-| `SalesContractValidityEndDate` | `SalesContract.SalesContractValidityEndDate` |
-| `SalesContractValidityPerdCat` | `SalesContract.SalesContractValidityPerdCat` |
-| `IncotermsClassification` | `SalesContract.IncotermsClassification` |
-| `IncotermsVersion` | `SalesContract.IncotermsVersion` |
-| `IncotermsLocation1` | `SalesContract.IncotermsLocation1` |
-| `IncotermsLocation2` | `SalesContract.IncotermsLocation2` |
-| `IncotermsTransferLocation` | `SalesContract.IncotermsTransferLocation` |
-| `SalesContractApprovalReason` | `SalesContract.SalesContractApprovalReason` |
-| `CustomerPaymentTerms` | `SalesContract.CustomerPaymentTerms` |
-| `PaymentMethod` | `SalesContract.PaymentMethod` |
-| `TransactionCurrency` | `SalesContract.TransactionCurrency` |
-| `TotalNetAmount` | `SalesContract.TotalNetAmount` |
-| `LastChangeDateTime` | `SalesContract.LastChangeDateTime` |
-| `OverallSDProcessStatus` | `SalesContract.OverallSDProcessStatus` |
-| `SalesDocApprovalStatus` | `SalesContract.SalesDocApprovalStatus` |
-| `SalesContractDate` | `SalesContract.SalesContractDate` |
-| `CreatedByUser` | `SalesContract.CreatedByUser` |
-| `CreationDate` | `SalesContract.CreationDate` |
-| `CreationTime` | `SalesContract.CreationTime` |
-| `LastChangedByUser` | `SalesContract.LastChangedByUser` |
-| `_Item` | *Association* |
-| `_Text` | *Association* |
-| `_PricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |
+| `SalesContractType` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesDistrict` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `SDDocumentReason` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `SalesContractValidityStartDate` |  | |  |  |
+| `SalesContractValidityEndDate` |  | |  |  |
+| `SalesContractValidityPerdCat` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `SalesContractApprovalReason` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `TotalNetAmount` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `OverallSDProcessStatus` |  | |  |  |
+| `SalesDocApprovalStatus` |  | |  |  |
+| `SalesContractDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
 
 ## Source Code
 

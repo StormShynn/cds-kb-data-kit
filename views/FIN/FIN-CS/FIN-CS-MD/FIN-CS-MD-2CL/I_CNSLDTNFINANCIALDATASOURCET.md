@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `FinancialDataSource` | `cast( _Source.FinancialDataSource as fincs_financialdatasource preserving type )` |
-| `FinancialDataSourceName` | `cast( _Source.FinancialDataSourceName as fincs_financialdatasourcename preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_FinancialDataSource` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `FinancialDataSource` | ✓ | |  | `cast( _Source.FinancialDataSource as fincs_financialdatasource preserving type )` |
+| `FinancialDataSourceName` |  | |  | `cast( _Source.FinancialDataSourceName as fincs_financialdatasourcename preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_FinancialDataSource` | | ✓ | | |
 
 ## Associations
 

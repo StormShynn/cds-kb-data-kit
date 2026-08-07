@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `SecurityAccount.bukrs` |
-| key `SecurityAccount` | `cast(SecurityAccount.rldepo as ftr_gen_security_account preserving type)` |
-| `SecurityAccountName` | `cast(SecurityAccount.xldepo as ftr_gen_security_account_name preserving type)` |
-| `SecurityAccountGroup` | `cast(SecurityAccount.sec_acc_grp as ftr_gen_sec_account_group preserving type)` |
-| `SecurityAccountType` | `cast(SecurityAccount.secacc_type as ftr_gen_security_account_type preserving type )` |
-| `DepositoryBank` | `cast(SecurityAccount.rdpbank as ftr_gen_partnr_depository_bank preserving type )` |
-| `_CompanyCode` | *Association* |
-| `_SecurityAccountType` | *Association* |
-| `_SecurityAccountGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `SecurityAccount` | ✓ | |  | `cast(SecurityAccount.rldepo as ftr_gen_security_account preserving type)` |
+| `SecurityAccountName` |  | |  | `cast(SecurityAccount.xldepo as ftr_gen_security_account_name preserving type)` |
+| `SecurityAccountGroup` |  | |  | `cast(SecurityAccount.sec_acc_grp as ftr_gen_sec_account_group preserving type)` |
+| `SecurityAccountType` |  | |  | `cast(SecurityAccount.secacc_type as ftr_gen_security_account_type preserving type )` |
+| `DepositoryBank` |  | |  | `cast(SecurityAccount.rdpbank as ftr_gen_partnr_depository_bank preserving type )` |
+| `_CompanyCode` | | ✓ | | |
+| `_SecurityAccountType` | | ✓ | | |
+| `_SecurityAccountGroup` | | ✓ | | |
 
 ## Associations
 

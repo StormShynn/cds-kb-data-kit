@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_FSItemAttribValueTxt.Language` |
-| key `CnsldtnFSItemCrcyTranslation` | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemcrcytranslation preserving type )` |
-| `CnsldtnFSItemCrcyTrnsltnText` | `_FSItemAttribValueTxt.CnsldtnFSItemAttribValueText` |
-| `CnsldtnFSItmCrcyTrnsltnLongTxt` | `_FSItemAttribValueTxt.CnsldtnFSItemAttribValLongText` |
-| `_CnsldtnFSItemCrcyTranslation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |
+| `CnsldtnFSItemCrcyTranslation` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemcrcytranslation preserving type )` |
+| `CnsldtnFSItemCrcyTrnsltnText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |
+| `CnsldtnFSItmCrcyTrnsltnLongTxt` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |
+| `_CnsldtnFSItemCrcyTranslation` | | ✓ | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDateType` | `LglCntntMDateType` |
-| `LglCntntMDateIsPeriod` | `LglCntntMDateIsPeriod` |
-| `_LglCntntMDateTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDateType` | ✓ | |  |  |
+| `LglCntntMDateIsPeriod` |  | |  |  |
+| `_LglCntntMDateTypeText` | | ✓ | | |
 
 ## Associations
 

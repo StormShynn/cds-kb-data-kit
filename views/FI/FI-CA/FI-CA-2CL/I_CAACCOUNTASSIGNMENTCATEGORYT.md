@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAAccountAssignmentCategory` | `kontt` |
-| key `Language` | `spras` |
-| `CAAccountAssignmentCatName` | `txt30` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAAccountAssignmentCategory` | ✓ | |  | `kontt` |
+| `Language` | ✓ | |  | `spras` |
+| `CAAccountAssignmentCatName` |  | |  | `txt30` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

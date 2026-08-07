@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `US_TaxState` | `cast ( Region as fis_etxdc_region )` |
-| key `Language` | `Language` |
-| `US_TaxStateName` | `RegionName` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `US_TaxState` | ✓ | |  | `cast ( Region as fis_etxdc_region )` |
+| `Language` | ✓ | |  |  |
+| `US_TaxStateName` |  | |  | `RegionName` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

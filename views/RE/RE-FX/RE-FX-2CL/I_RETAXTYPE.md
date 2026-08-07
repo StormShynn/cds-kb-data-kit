@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `country` |
-| key `RETaxType` | `taxtype` |
-| `_Text` | *Association* |
-| `_Country` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `country` |
+| `RETaxType` | ✓ | |  | `taxtype` |
+| `_Text` | | ✓ | | |
+| `_Country` | | ✓ | | |
 
 ## Associations
 

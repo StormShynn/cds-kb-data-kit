@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequestType` | `cast(SalesDocumentType as debit_memo_request_type preserving type )` |
-| `DebitMemoRequestProcessingType` | `SalesDocumentProcessingType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequestType` | ✓ | |  | `cast(SalesDocumentType as debit_memo_request_type preserving type )` |
+| `DebitMemoRequestProcessingType` |  | |  | `SalesDocumentProcessingType` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

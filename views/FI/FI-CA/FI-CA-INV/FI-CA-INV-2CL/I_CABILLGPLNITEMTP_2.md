@@ -30,78 +30,78 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnNumber` | `CABillgPlnNumber` |
-| key `CABillgPlnItem` | `CABillgPlnItem` |
-| `CABillgPlnItmCat` | `CABillgPlnItmCat` |
-| `CABillgPlnItmType` | `CABillgPlnItmType` |
-| `CABillgPlnItmTxt` | `CABillgPlnItmTxt` |
-| `CABillgPlnItemExtRef` | `CABillgPlnItemExtRef` |
-| `CABillgPlnItemAmount` | `CABillgPlnItemAmount` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `CATaxIsIncluded` | `CATaxIsIncluded` |
-| `CABillgPlnItemQuantity` | `CABillgPlnItemQuantity` |
-| `CABillgPlnItemQuantityUnit` | `CABillgPlnItemQuantityUnit` |
-| `CATaxDeterminationCode` | `CATaxDeterminationCode` |
-| `TaxCode` | `TaxCode` |
-| `CABillgPlnItemStartDate` | `CABillgPlnItemStartDate` |
-| `CABillgPlnItmEndDate` | `CABillgPlnItmEndDate` |
-| `CABillgPlnItemTermStartDate` | `CABillgPlnItemTermStartDate` |
-| `CABillgPlnItemTermEndDate` | `CABillgPlnItemTermEndDate` |
-| `CABillgPlnItemRecurring` | `CABillgPlnItemRecurring` |
-| `CABillgCycle` | `CABillgCycle` |
-| `CAStartDateForBillingPeriod` | `CAStartDateForBillingPeriod` |
-| `CAConditionType` | `CAConditionType` |
-| `CABillgPlnItemAmountDetnType` | `CABillgPlnItemAmountDetnType` |
-| `CABillgPlnItemAmountDateType` | `CABillgPlnItemAmountDateType` |
-| `CABillgPlnItemPriceDateType` | `CABillgPlnItemPriceDateType` |
-| `CAContract` | `CAContract` |
-| `CAProviderContractItemNumber` | `CAProviderContractItemNumber` |
-| `CASubApplication` | `CASubApplication` |
-| `CAProviderContractItemUUID` | `CAProviderContractItemUUID` |
-| `Division` | `Division` |
-| `CompanyCode` | `CompanyCode` |
-| `BusinessArea` | `BusinessArea` |
-| `Segment` | `Segment` |
-| `CAMainTransaction` | `CAMainTransaction` |
-| `CASubTransaction` | `CASubTransaction` |
-| `CABillgPlnItemServiceType` | `CABillgPlnItemServiceType` |
-| `CADependentItemType` | `CADependentItemType` |
-| `Material` | `Material` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `CAAccountDeterminationCode` | `CAAccountDeterminationCode` |
-| `CAInvcgOffsettingAction` | `CAInvcgOffsettingAction` |
-| `CAInvcgOffsettingCategory` | `CAInvcgOffsettingCategory` |
-| `CAInvcgOffsettingProcedure` | `CAInvcgOffsettingProcedure` |
-| `CAInvcgOffsettingReferenceKey` | `CAInvcgOffsettingReferenceKey` |
-| `CABillgPlnItemReqDteLast` | `CABillgPlnItemReqDteLast` |
-| `CABillgPlnItemReqDteNext` | `CABillgPlnItemReqDteNext` |
-| `CABillgPlnDvtgNextRequestDate` | `CABillgPlnDvtgNextRequestDate` |
-| `CABillgPlnItemRequestedToDte` | `CABillgPlnItemRequestedToDte` |
-| `CABillgPlnItemCanceled` | `CABillgPlnItemCanceled` |
-| `CABillgPlnSubItmExist` | `CABillgPlnSubItmExist` |
-| `CABillgPlnItemMain` | `CABillgPlnItemMain` |
-| `CABillgPlnItmExcptnReason` | `CABillgPlnItmExcptnReason` |
-| `CABillgPlnItemChildExist` | `CABillgPlnItemChildExist` |
-| `CABillgPlnItemParent` | `CABillgPlnItemParent` |
-| `CABillgPlnItemStatus` | `CABillgPlnItemStatus` |
-| `CABillgPlnItemNrOfBllbleItm` | `CABillgPlnItemNrOfBllbleItm` |
-| `CAIsRevnAcctgTransfRecordRlvt` | `CAIsRevnAcctgTransfRecordRlvt` |
-| `ConditionType` | `ConditionType` |
-| `ConditionIsForStatistics` | `ConditionIsForStatistics` |
-| `CANetDueDate` | `CANetDueDate` |
-| `CABillgPlnItmIsNotToBeReqd` | `CABillgPlnItmIsNotToBeReqd` |
-| `CABllbleItmCostType` | `CABllbleItmCostType` |
-| `CABllbleItmCostSubType` | `CABllbleItmCostSubType` |
-| `CAIntcoCompanyCodeRequesting` | `CAIntcoCompanyCodeRequesting` |
-| `CAIntcoCompanyCodeSupplying` | `CAIntcoCompanyCodeSupplying` |
-| `CAIntcoType` | `CAIntcoType` |
-| `CAIntcoSubtype` | `CAIntcoSubtype` |
-| `TaxCalculationProcedure` | `TaxCalculationProcedure` |
-| `CAApplicationArea` | `CAApplicationArea` |
-| `_CABillgPln` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnNumber` | ✓ | |  |  |
+| `CABillgPlnItem` | ✓ | |  |  |
+| `CABillgPlnItmCat` |  | |  |  |
+| `CABillgPlnItmType` |  | |  |  |
+| `CABillgPlnItmTxt` |  | |  |  |
+| `CABillgPlnItemExtRef` |  | |  |  |
+| `CABillgPlnItemAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `CATaxIsIncluded` |  | |  |  |
+| `CABillgPlnItemQuantity` |  | |  |  |
+| `CABillgPlnItemQuantityUnit` |  | |  |  |
+| `CATaxDeterminationCode` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `CABillgPlnItemStartDate` |  | |  |  |
+| `CABillgPlnItmEndDate` |  | |  |  |
+| `CABillgPlnItemTermStartDate` |  | |  |  |
+| `CABillgPlnItemTermEndDate` |  | |  |  |
+| `CABillgPlnItemRecurring` |  | |  |  |
+| `CABillgCycle` |  | |  |  |
+| `CAStartDateForBillingPeriod` |  | |  |  |
+| `CAConditionType` |  | |  |  |
+| `CABillgPlnItemAmountDetnType` |  | |  |  |
+| `CABillgPlnItemAmountDateType` |  | |  |  |
+| `CABillgPlnItemPriceDateType` |  | |  |  |
+| `CAContract` |  | |  |  |
+| `CAProviderContractItemNumber` |  | |  |  |
+| `CASubApplication` |  | |  |  |
+| `CAProviderContractItemUUID` |  | |  |  |
+| `Division` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `Segment` |  | |  |  |
+| `CAMainTransaction` |  | |  |  |
+| `CASubTransaction` |  | |  |  |
+| `CABillgPlnItemServiceType` |  | |  |  |
+| `CADependentItemType` |  | |  |  |
+| `Material` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `CAAccountDeterminationCode` |  | |  |  |
+| `CAInvcgOffsettingAction` |  | |  |  |
+| `CAInvcgOffsettingCategory` |  | |  |  |
+| `CAInvcgOffsettingProcedure` |  | |  |  |
+| `CAInvcgOffsettingReferenceKey` |  | |  |  |
+| `CABillgPlnItemReqDteLast` |  | |  |  |
+| `CABillgPlnItemReqDteNext` |  | |  |  |
+| `CABillgPlnDvtgNextRequestDate` |  | |  |  |
+| `CABillgPlnItemRequestedToDte` |  | |  |  |
+| `CABillgPlnItemCanceled` |  | |  |  |
+| `CABillgPlnSubItmExist` |  | |  |  |
+| `CABillgPlnItemMain` |  | |  |  |
+| `CABillgPlnItmExcptnReason` |  | |  |  |
+| `CABillgPlnItemChildExist` |  | |  |  |
+| `CABillgPlnItemParent` |  | |  |  |
+| `CABillgPlnItemStatus` |  | |  |  |
+| `CABillgPlnItemNrOfBllbleItm` |  | |  |  |
+| `CAIsRevnAcctgTransfRecordRlvt` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `CANetDueDate` |  | |  |  |
+| `CABillgPlnItmIsNotToBeReqd` |  | |  |  |
+| `CABllbleItmCostType` |  | |  |  |
+| `CABllbleItmCostSubType` |  | |  |  |
+| `CAIntcoCompanyCodeRequesting` |  | |  |  |
+| `CAIntcoCompanyCodeSupplying` |  | |  |  |
+| `CAIntcoType` |  | |  |  |
+| `CAIntcoSubtype` |  | |  |  |
+| `TaxCalculationProcedure` |  | |  |  |
+| `CAApplicationArea` |  | |  |  |
+| `_CABillgPln` | | ✓ | | |
 
 ## Source Code
 

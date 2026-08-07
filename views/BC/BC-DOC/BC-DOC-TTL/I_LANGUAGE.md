@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| `LanguageISOCode` | `laiso` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `LanguageISOCode` |  | |  | `laiso` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

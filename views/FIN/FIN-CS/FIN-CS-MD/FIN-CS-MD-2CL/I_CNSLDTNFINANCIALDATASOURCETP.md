@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialDataSource` | `_Source.FinancialDataSource` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnFinDataSourceTextTP` | `_Text as _Text : redirected to composition child I_CnsldtnFinDataSourceTextTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialDataSource` | ✓ | | `_Source` | `FinancialDataSource` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnFinDataSourceTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnFinDataSourceTextTP` |
 
 ## Source Code
 

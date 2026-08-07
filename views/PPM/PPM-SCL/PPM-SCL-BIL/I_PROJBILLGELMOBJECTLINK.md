@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrjBlgElmObjLnkUUID` | `ProjBillgElmObjectLink.prjblgelmobjlnkuuid` |
-| `ProjectBillingElementUUID` | `ProjBillgElmObjectLink.projectbillingelementuuid` |
-| `SalesDocument` | `ProjBillgElmObjectLink.salesdocument` |
-| `SalesDocumentItem` | `ProjBillgElmObjectLink.salesdocumentitem` |
-| `SDDocumentCategory` | `ProjBillgElmObjectLink.sddocumentcategory` |
-| `PartnerCompanyCode` | `ProjBillgElmObjectLink.partnercompanycode` |
-| `ReceiverCompanyCode` | `ProjBillgElmObjectLink.receivercompanycode` |
-| `_ProjectBillingElement` | *Association* |
-| `_SalesDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrjBlgElmObjLnkUUID` | ✓ | |  | `prjblgelmobjlnkuuid` |
+| `ProjectBillingElementUUID` |  | |  | `projectbillingelementuuid` |
+| `SalesDocument` |  | |  | `salesdocument` |
+| `SalesDocumentItem` |  | |  | `salesdocumentitem` |
+| `SDDocumentCategory` |  | |  | `sddocumentcategory` |
+| `PartnerCompanyCode` |  | |  | `partnercompanycode` |
+| `ReceiverCompanyCode` |  | |  | `receivercompanycode` |
+| `_ProjectBillingElement` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
 
 ## Associations
 

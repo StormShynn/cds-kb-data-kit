@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlannedOrderActionControl` | `mdach` |
-| key `PlannedOrderProcgAction` | `cast(accfm as vdm_mdacc preserving type)` |
-| key `PlannedOrderProcgFllwUpAction` | `cast(accto as vdm_mdacn preserving type)` |
-| `_PlannedOrderActionControl` | *Association* |
-| `_PlannedOrderProcgAction` | *Association* |
-| `_PlannedOrderProcgFllwUpAction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlannedOrderActionControl` | ✓ | |  | `mdach` |
+| `PlannedOrderProcgAction` | ✓ | |  | `cast(accfm as vdm_mdacc preserving type)` |
+| `PlannedOrderProcgFllwUpAction` | ✓ | |  | `cast(accto as vdm_mdacn preserving type)` |
+| `_PlannedOrderActionControl` | | ✓ | | |
+| `_PlannedOrderProcgAction` | | ✓ | | |
+| `_PlannedOrderProcgFllwUpAction` | | ✓ | | |
 
 ## Associations
 

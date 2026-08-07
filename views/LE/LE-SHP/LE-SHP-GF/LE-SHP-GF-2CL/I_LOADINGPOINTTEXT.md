@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShippingPoint` | `vstel` |
-| key `LoadingPoint` | `lstel` |
-| key `Language` | `spras` |
-| `LoadingPointName` | `vtext` |
-| `_LoadingPoint` | *Association* |
-| `_Language` | *Association* |
-| `_ShippingPoint` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShippingPoint` | ✓ | |  | `vstel` |
+| `LoadingPoint` | ✓ | |  | `lstel` |
+| `Language` | ✓ | |  | `spras` |
+| `LoadingPointName` |  | |  | `vtext` |
+| `_LoadingPoint` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
 
 ## Associations
 

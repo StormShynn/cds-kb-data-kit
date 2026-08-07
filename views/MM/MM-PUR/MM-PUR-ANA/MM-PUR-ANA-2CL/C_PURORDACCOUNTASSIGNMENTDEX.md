@@ -29,114 +29,114 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder` |
-| key `PurchaseOrderItem` | `PurchaseOrderItem` |
-| key `AccountAssignmentNumber` | `AccountAssignmentNumber` |
-| `CostCenter` | `CostCenter` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `Quantity` | `Quantity` |
-| `PurchaseOrderQuantityUnit` | `PurchaseOrderQuantityUnit` |
-| `MultipleAcctAssgmtDistrPercent` | `MultipleAcctAssgmtDistrPercent` |
-| `PurgDocNetAmount` | `PurgDocNetAmount` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `IsDeleted` | `IsDeleted` |
-| `GLAccount` | `GLAccount` |
-| `BusinessArea` | `BusinessArea` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `FixedAsset` | `FixedAsset` |
-| `OrderID` | `OrderID` |
-| `UnloadingPointName` | `UnloadingPointName` |
-| `ControllingArea` | `ControllingArea` |
-| `CostObject` | `CostObject` |
-| `ProfitabilitySegment` | `cast( case when ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad( ProfitabilitySegment_2, 10, '0' ) end as rkeobjnr_numc )` |
-| `ProfitabilitySegment_2` | `ProfitabilitySegment_2` |
-| `ProfitCenter` | `ProfitCenter` |
-| `WBSElementInternalID` | `cast ( WBSElementInternalID as ps_s4_pspnr preserving type)` |
-| `ProjectNetworkInternalID` | `ProjectNetworkInternalID` |
-| `CommitmentItem` | `cast(CommitmentItem as abap.char(24))` |
-| `CommitmentItemShortID` | `CommitmentItemShortID` |
-| `FundsCenter` | `FundsCenter` |
-| `Fund` | `Fund` |
-| `FunctionalArea` | `FunctionalArea` |
-| `GoodsRecipientName` | `GoodsRecipientName` |
-| `IsFinallyInvoiced` | `IsFinallyInvoiced` |
-| `RealEstateObject` | `cast ( RealEstateObject as farp_imkey preserving type)` |
-| `NetworkActivityInternalID` | `NetworkActivityInternalID` |
-| `PartnerAccountNumber` | `PartnerAccountNumber` |
-| `JointVentureRecoveryCode` | `JointVentureRecoveryCode` |
-| `SettlementReferenceDate` | `SettlementReferenceDate` |
-| `OrderInternalID` | `OrderInternalID` |
-| `OrderIntBillOfOperationsItem` | `OrderIntBillOfOperationsItem` |
-| `TaxCode` | `TaxCode` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `NonDeductibleInputTaxAmount` | `NonDeductibleInputTaxAmount` |
-| `CostCtrActivityType` | `CostCtrActivityType` |
-| `BusinessProcess` | `BusinessProcess` |
-| `GrantID` | `GrantID` |
-| `BudgetPeriod` | `BudgetPeriod` |
-| `EarmarkedFundsDocument` | `EarmarkedFundsDocument` |
-| `EarmarkedFundsDocumentItem` | `EarmarkedFundsDocumentItem` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceDocument` | `ServiceDocument` |
-| `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `PurchaseOrderType` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.PurchaseOrderType` |
-| `PurchasingOrganization` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.PurchasingOrganization` |
-| `PurchasingGroup` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.PurchasingGroup` |
-| `CreationDate` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.CreationDate` |
-| `LastChangeDateTime` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.LastChangeDateTime` |
-| `Plant` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.Plant` |
-| `AccountAssignmentCategory` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.AccountAssignmentCategory` |
-| `CompanyCode` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.CompanyCode` |
-| `IsReturnsItem` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.IsReturnsItem` |
-| `SupplyingPlant` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.SupplyingPlant` |
-| `PurchaseOrderItemCategory` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.PurchaseOrderItemCategory` |
-| `Material` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.Material` |
-| `MaterialGroup` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.MaterialGroup` |
-| `PurchaseOrderDate` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.PurchaseOrderDate` |
-| `StorageLocation` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.StorageLocation` |
-| `IsCompletelyDelivered` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.IsCompletelyDelivered` |
-| `PurchasingInfoRecord` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.PurchasingInfoRecord` |
-| `RequirementTracking` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.RequirementTracking` |
-| `PurchaseOrderItemText` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.PurchaseOrderItemText` |
-| `PurgDocumentItemDeletionCode` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.PurchasingDocumentDeletionCode` |
-| `PurchasingDocumentDeletionCode` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.PurchasingDocumentDeletionCode` |
-| `InvoiceIsExpected` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.InvoiceIsExpected` |
-| `GoodsReceiptIsExpected` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.GoodsReceiptIsExpected` |
-| `ProductTypeCode` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.ProductType` |
-| `IsStatisticalItem` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.IsStatisticalItem` |
-| `ReleaseIsNotCompleted` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.ReleaseIsNotCompleted` |
-| `PurchasingCompletenessStatus` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrder.PurchasingCompletenessStatus` |
-| `PurchaseContract` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.PurchaseContract` |
-| `PurchaseContractItem` | `I_PurOrdAccountAssignmentAPI01._PurchaseOrderItem.PurchaseContractItem` |
-| `_PurchaseOrderDEX` | *Association* |
-| `_PurchaseOrderItemDEX` | *Association* |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_PurchaseOrderType` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_DocumentCurrency` | *Association* |
-| `_SupplyingPlant` | *Association* |
-| `_Plant` | *Association* |
-| `_ItemCategory` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Product` | *Association* |
-| `_ProductTypeCode` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_PurchaseContract` | *Association* |
-| `_PurchaseContractItem` | *Association* |
-| `_FixedAsset` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_FunctionalArea` | *Association* |
-| `_BusinessProcess` | *Association* |
-| `_GLAccount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `AccountAssignmentNumber` | ✓ | |  |  |
+| `CostCenter` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
+| `PurgDocNetAmount` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `ProfitabilitySegment` |  | |  | `cast( case when ProfitabilitySegment_2 > '9999999999' then '9999999999' else lpad( ProfitabilitySegment_2, 10, '0' ) end as rkeobjnr_numc )` |
+| `ProfitabilitySegment_2` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `WBSElementInternalID` |  | |  | `cast ( WBSElementInternalID as ps_s4_pspnr preserving type)` |
+| `ProjectNetworkInternalID` |  | |  |  |
+| `CommitmentItem` |  | |  | `cast(CommitmentItem as abap.char(24))` |
+| `CommitmentItemShortID` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `IsFinallyInvoiced` |  | |  |  |
+| `RealEstateObject` |  | |  | `cast ( RealEstateObject as farp_imkey preserving type)` |
+| `NetworkActivityInternalID` |  | |  |  |
+| `PartnerAccountNumber` |  | |  |  |
+| `JointVentureRecoveryCode` |  | |  |  |
+| `SettlementReferenceDate` |  | |  |  |
+| `OrderInternalID` |  | |  |  |
+| `OrderIntBillOfOperationsItem` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `NonDeductibleInputTaxAmount` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `EarmarkedFundsDocument` |  | |  |  |
+| `EarmarkedFundsDocumentItem` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceDocument` |  | |  |  |
+| `ServiceDocumentItem` |  | |  |  |
+| `PurchaseOrderType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `Plant` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `IsReturnsItem` |  | |  |  |
+| `SupplyingPlant` |  | |  |  |
+| `PurchaseOrderItemCategory` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `PurchaseOrderDate` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `PurchaseOrderItemText` |  | |  |  |
+| `PurgDocumentItemDeletionCode` |  | |  | `PurchasingDocumentDeletionCode` |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `ProductTypeCode` |  | |  | `ProductType` |
+| `IsStatisticalItem` |  | |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |
+| `PurchasingCompletenessStatus` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `_PurchaseOrderDEX` | | ✓ | | |
+| `_PurchaseOrderItemDEX` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_PurchaseOrderType` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_DocumentCurrency` | | ✓ | | |
+| `_SupplyingPlant` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ItemCategory` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductTypeCode` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_PurchaseContract` | | ✓ | | |
+| `_PurchaseContractItem` | | ✓ | | |
+| `_FixedAsset` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
+| `_BusinessProcess` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
 
 ## Associations
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `hryid` | `hryid` |
-| `parnode` | `parnode` |
-| `racct` | `saknr` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `hryid` |  | |  |  |
+| `parnode` |  | |  |  |
+| `racct` |  | |  | `saknr` |
 
 ## Source Code
 

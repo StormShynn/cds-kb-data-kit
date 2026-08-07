@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceConfirmation` | `ServiceConfirmation` |
-| key `ServiceConfirmationItem` | `ServiceConfirmationItem` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| key `SrvcDocLogTextIdentifier` | `SrvcDocLogTextIdentifier` |
-| `TextObjectCategory` | `TextObjectCategory` |
-| `SrvcDocLongTextMimeType` | `SrvcDocLongTextMimeType` |
-| `SrvcConfItemLongText` | `SrvcConfItemLongText` |
-| `ReferenceTextObjectCategory` | `ReferenceTextObjectCategory` |
-| `ReferenceTextObjectType` | `ReferenceTextObjectType` |
-| `ReferenceLongTextKey` | `ReferenceLongTextKey` |
-| `ReferenceServiceObjectType` | `ReferenceServiceObjectType` |
-| `ReferenceServiceDocument` | `ReferenceServiceDocument` |
-| `ReferenceServiceDocumentItem` | `ReferenceServiceDocumentItem` |
-| `SrvcDocLongTxtCreationDateTime` | `SrvcDocLongTxtCreationDateTime` |
-| `SrvcDocLongTextCreatedByUser` | `SrvcDocLongTextCreatedByUser` |
-| `SrvcDocLongTextChangedDateTime` | `SrvcDocLongTextChangedDateTime` |
-| `SrvcDocLongTextChangedByUser` | `SrvcDocLongTextChangedByUser` |
-| `_Language` | *Association* |
-| `_ReferenceTextObjectCategory` | *Association* |
-| `_ReferenceTextObjectType` | *Association* |
-| `_TextObjectCategory` | *Association* |
-| `_TextObjectType` | *Association* |
-| `_ServiceConfirmationItemTP` | *Association* |
-| `_ServiceConfirmationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |
+| `ServiceConfirmationItem` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SrvcDocLogTextIdentifier` | ✓ | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |
+| `SrvcConfItemLongText` |  | |  |  |
+| `ReferenceTextObjectCategory` |  | |  |  |
+| `ReferenceTextObjectType` |  | |  |  |
+| `ReferenceLongTextKey` |  | |  |  |
+| `ReferenceServiceObjectType` |  | |  |  |
+| `ReferenceServiceDocument` |  | |  |  |
+| `ReferenceServiceDocumentItem` |  | |  |  |
+| `SrvcDocLongTxtCreationDateTime` |  | |  |  |
+| `SrvcDocLongTextCreatedByUser` |  | |  |  |
+| `SrvcDocLongTextChangedDateTime` |  | |  |  |
+| `SrvcDocLongTextChangedByUser` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_ReferenceTextObjectCategory` | | ✓ | | |
+| `_ReferenceTextObjectType` | | ✓ | | |
+| `_TextObjectCategory` | | ✓ | | |
+| `_TextObjectType` | | ✓ | | |
+| `_ServiceConfirmationItemTP` | | ✓ | | |
+| `_ServiceConfirmationTP` | | ✓ | | |
 
 ## Source Code
 

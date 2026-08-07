@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_FSItemAttribValueTxt.Language` |
-| key `CnsldtnFSItemDataCollection` | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemdatacollection preserving type )` |
-| `CnsldtnFSItemDataCollText` | `_FSItemAttribValueTxt.CnsldtnFSItemAttribValueText` |
-| `CnsldtnFSItemDataCollLongText` | `_FSItemAttribValueTxt.CnsldtnFSItemAttribValLongText` |
-| `_CnsldtnFSItemDataCollection` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_FSItemAttribValueTxt` | `Language` |
+| `CnsldtnFSItemDataCollection` | ✓ | |  | `cast( _FSItemAttribValueTxt.CnsldtnFSItemAttributeValue as fincs_fsitemdatacollection preserving type )` |
+| `CnsldtnFSItemDataCollText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValueText` |
+| `CnsldtnFSItemDataCollLongText` |  | | `_FSItemAttribValueTxt` | `CnsldtnFSItemAttribValLongText` |
+| `_CnsldtnFSItemDataCollection` | | ✓ | | |
 
 ## Associations
 

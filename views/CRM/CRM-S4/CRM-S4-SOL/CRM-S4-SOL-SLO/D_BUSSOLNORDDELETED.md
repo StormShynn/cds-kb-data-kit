@@ -25,12 +25,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CustMgmtObjectType` | `crmt_subobject_category_db` |
-| `BusinessSolutionOrderUUID` | `crmt_object_guid` |
-| `BusSolnOrdType` | `crmt_process_type_db` |
-| `BusSolnOrdDescription` | `crmt_process_description` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustMgmtObjectType` |  | |  | `crmt_subobject_category_db` |
+| `BusinessSolutionOrderUUID` |  | |  | `crmt_object_guid` |
+| `BusSolnOrdType` |  | |  | `crmt_process_type_db` |
+| `BusSolnOrdDescription` |  | |  | `crmt_process_description` |
 
 ## Source Code
 

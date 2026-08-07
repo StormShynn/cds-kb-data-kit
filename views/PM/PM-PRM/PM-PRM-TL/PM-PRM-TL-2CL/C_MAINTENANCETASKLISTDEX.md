@@ -29,54 +29,54 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `TaskListType` |
-| key `TaskListGroup` | `TaskListGroup` |
-| key `TaskListGroupCounter` | `TaskListGroupCounter` |
-| key `TaskListVersionCounter` | `TaskListVersionCounter` |
-| `TaskListDesc` | `TaskListDesc` |
-| `ControllingArea` | `ControllingArea` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `Plant` | `Plant` |
-| `ResponsiblePlannerGroup` | `ResponsiblePlannerGroup` |
-| `Assembly` | `Assembly` |
-| `MaintenanceStrategy` | `MaintenanceStrategy` |
-| `TaskListUsage` | `TaskListUsage` |
-| `BillOfOperationIsConfigurable` | `BillOfOperationIsConfigurable` |
-| `TaskListStatus` | `TaskListStatus` |
-| `OperationSystemCondition` | `OperationSystemCondition` |
-| `IsDeleted` | `IsDeleted` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `CreationDate` | `CreationDate` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `WorkCenter` | `_WorkCenter.WorkCenter` |
-| `WorkCenterPlant` | `_WorkCenter.Plant` |
-| `Equipment` | `Equipment` |
-| `FunctionalLocation` | `cast( FunctionalLocation as ps_s4_tplnr preserving type )` |
-| `TechnicalObject` | `TechnicalObject` |
-| `TechObjIsEquipOrFuncnlLoc` | `TechObjIsEquipOrFuncnlLoc` |
-| `_WorkCenterPlant` | `_WorkCenter._Plant` |
-| `_EquipmentData` | *Association* |
-| `_FunctionalLocationData` | *Association* |
-| `_Assembly` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_Equipment` | *Association* |
-| `_FunctionalLocation` | *Association* |
-| `_ConfigurableIndicator` | *Association* |
-| `_MaintenancePlanningPlant` | *Association* |
-| `_MaintenanceStrategy` | *Association* |
-| `_OperationSystemCondition` | *Association* |
-| `_Plant` | *Association* |
-| `_ResponsiblePlannerGroup` | *Association* |
-| `_TaskListStatus` | *Association* |
-| `_TaskListType` | *Association* |
-| `_TaskListGroup` | *Association* |
-| `_TaskListGroupCounter` | *Association* |
-| `_TaskListUsage` | *Association* |
-| `_TechnicalObject` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  |  |
+| `TaskListGroup` | ✓ | |  |  |
+| `TaskListGroupCounter` | ✓ | |  |  |
+| `TaskListVersionCounter` | ✓ | |  |  |
+| `TaskListDesc` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `Plant` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `Assembly` |  | |  |  |
+| `MaintenanceStrategy` |  | |  |  |
+| `TaskListUsage` |  | |  |  |
+| `BillOfOperationIsConfigurable` |  | |  |  |
+| `TaskListStatus` |  | |  |  |
+| `OperationSystemCondition` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `WorkCenter` |  | | `_WorkCenter` | `WorkCenter` |
+| `WorkCenterPlant` |  | | `_WorkCenter` | `Plant` |
+| `Equipment` |  | |  |  |
+| `FunctionalLocation` |  | |  | `cast( FunctionalLocation as ps_s4_tplnr preserving type )` |
+| `TechnicalObject` |  | |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
+| `_WorkCenterPlant` |  | | `_WorkCenter` | `_Plant` |
+| `_EquipmentData` | | ✓ | | |
+| `_FunctionalLocationData` | | ✓ | | |
+| `_Assembly` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
+| `_FunctionalLocation` | | ✓ | | |
+| `_ConfigurableIndicator` | | ✓ | | |
+| `_MaintenancePlanningPlant` | | ✓ | | |
+| `_MaintenanceStrategy` | | ✓ | | |
+| `_OperationSystemCondition` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_ResponsiblePlannerGroup` | | ✓ | | |
+| `_TaskListStatus` | | ✓ | | |
+| `_TaskListType` | | ✓ | | |
+| `_TaskListGroup` | | ✓ | | |
+| `_TaskListGroupCounter` | | ✓ | | |
+| `_TaskListUsage` | | ✓ | | |
+| `_TechnicalObject` | | ✓ | | |
 
 ## Associations
 

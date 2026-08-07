@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Country` | `land1` |
-| key `Language` | `sprsl` |
-| key `RU_AssetOKOF` | `okof` |
-| `RU_AssetOKOFDesc` | `okof_text` |
-| `_Country` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Country` | ✓ | |  | `land1` |
+| `Language` | ✓ | |  | `sprsl` |
+| `RU_AssetOKOF` | ✓ | |  | `okof` |
+| `RU_AssetOKOFDesc` |  | |  | `okof_text` |
+| `_Country` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

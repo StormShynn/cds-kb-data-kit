@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `EventRaisedDateTime` | `vdm_lastchangedon` |
-| `CreditMemoRequestType` | `auart_unv` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `OrganizationDivision` | `spart` |
-| `SoldToParty` | `kunnr` |
-| `CreditMemoRequestItemCategory` | `pstyv` |
-| `Product` | `matnr` |
-| `SDProcessStatus` | `gbsta` |
-| `PreviousSDProcessStatus` | `gbsta` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventRaisedDateTime` |  | |  | `vdm_lastchangedon` |
+| `CreditMemoRequestType` |  | |  | `auart_unv` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SoldToParty` |  | |  | `kunnr` |
+| `CreditMemoRequestItemCategory` |  | |  | `pstyv` |
+| `Product` |  | |  | `matnr` |
+| `SDProcessStatus` |  | |  | `gbsta` |
+| `PreviousSDProcessStatus` |  | |  | `gbsta` |
 
 ## Source Code
 

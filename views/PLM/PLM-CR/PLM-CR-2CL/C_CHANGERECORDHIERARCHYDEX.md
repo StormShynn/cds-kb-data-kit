@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ParentChangeRecordUUID` | `ParentChangeRecordUUID` |
-| key `ChangeRecordUUID` | `ChangeRecordUUID` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ParentChangeRecordUUID` | ✓ | |  |  |
+| `ChangeRecordUUID` | ✓ | |  |  |
 
 ## Source Code
 

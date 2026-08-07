@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADependentItemType` | `cast( _tfk8240.dittype as ditrsn_gfn_kk preserving type )` |
-| `_CADependentItemTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADependentItemType` | ✓ | |  | `cast( _tfk8240.dittype as ditrsn_gfn_kk preserving type )` |
+| `_CADependentItemTypeText` | | ✓ | | |
 
 ## Associations
 

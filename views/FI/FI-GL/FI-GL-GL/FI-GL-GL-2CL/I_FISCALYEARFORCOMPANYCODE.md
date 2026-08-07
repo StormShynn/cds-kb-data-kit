@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |
-| key `FiscalYear` | `I_FiscalCalendarDate.FiscalYear` |
-| `FiscalYearStartDate` | `I_FiscalCalendarDate.FiscalYearStartDate` |
-| `FiscalYearEndDate` | `I_FiscalCalendarDate.FiscalYearEndDate` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( I_CompanyCode.CompanyCode as fis_bukrs preserving type )` |
+| `FiscalYear` | ✓ | |  |  |
+| `FiscalYearStartDate` |  | |  |  |
+| `FiscalYearEndDate` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

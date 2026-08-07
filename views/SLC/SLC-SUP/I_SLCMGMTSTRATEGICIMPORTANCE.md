@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SLCSupplierStrategicImportance` | `cast(substring( domvalue_l, 1, 1 ) as sstn_strategic_importance preserving type )` |
-| `_SLCMgmtStrategicImprtncText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SLCSupplierStrategicImportance` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as sstn_strategic_importance preserving type )` |
+| `_SLCMgmtStrategicImprtncText` | | ✓ | | |
 
 ## Associations
 

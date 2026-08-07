@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_UnitAttributeValueT.Language` |
-| key `ConsolidationUnitValidation` | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitvalidation preserving type )` |
-| `CnsldtnUnitValidationText` | `_UnitAttributeValueT.CnsldtnUnitAttribValText` |
-| `CnsldtnUnitValidationLongText` | `_UnitAttributeValueT.CnsldtnUnitAttribValLongText` |
-| `_CnsldtnUnitValidation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_UnitAttributeValueT` | `Language` |
+| `ConsolidationUnitValidation` | ✓ | |  | `cast( _UnitAttributeValueT.CnsldtnUnitAttributeValue as fincs_unitvalidation preserving type )` |
+| `CnsldtnUnitValidationText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValText` |
+| `CnsldtnUnitValidationLongText` |  | | `_UnitAttributeValueT` | `CnsldtnUnitAttribValLongText` |
+| `_CnsldtnUnitValidation` | | ✓ | | |
 
 ## Associations
 

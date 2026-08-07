@@ -33,105 +33,105 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterial` | `BillOfMaterial` |
-| key `BillOfMaterialCategory` | `BillOfMaterialCategory` |
-| key `BillOfMaterialVariant` | `BillOfMaterialVariant` |
-| key `BillOfMaterialItemNodeNumber` | `BillOfMaterialItemNodeNumber` |
-| key `HeaderChangeDocument` | `HeaderChangeDocument` |
-| key `Material` | `Material` |
-| key `Plant` | `Plant` |
-| `BillOfMaterialItemUUID` | `BillOfMaterialItemUUID` |
-| `BillOfMaterialVariantUsage` | `BillOfMaterialVariantUsage` |
-| `BOMItemInternalChangeCount` | `BOMItemInternalChangeCount` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `EngineeringChangeDocForEdit` | `EngineeringChangeDocument` |
-| `ChgToEngineeringChgDocument` | `ChgToEngineeringChgDocument` |
-| `InheritedNodeNumberForBOMItem` | `InheritedNodeNumberForBOMItem` |
-| `BOMItemRecordCreationDate` | `BOMItemRecordCreationDate` |
-| `BOMItemCreatedByUser` | `BOMItemCreatedByUser` |
-| `BOMItemLastChangeDate` | `BOMItemLastChangeDate` |
-| `BOMItemLastChangedByUser` | `BOMItemLastChangedByUser` |
-| `BillOfMaterialComponent` | `BillOfMaterialComponent` |
-| `BillOfMaterialItemCategory` | `BillOfMaterialItemCategory` |
-| `BillOfMaterialItemNumber` | `BillOfMaterialItemNumber` |
-| `BillOfMaterialItemUnit` | `BillOfMaterialItemUnit` |
-| `BillOfMaterialItemQuantity` | `BillOfMaterialItemQuantity` |
-| `IsAssembly` | `IsAssembly` |
-| `IsSubItem` | `IsSubItem` |
-| `BOMItemSorter` | `BOMItemSorter` |
-| `BOMItemHasFixedQuantity` | `BOMItemHasFixedQuantity` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Currency` | `Currency` |
-| `MaterialComponentPrice` | `MaterialComponentPrice` |
-| `IdentifierBOMItem` | `IdentifierBOMItem` |
-| `MaterialPriceUnitQty` | `MaterialPriceUnitQty` |
-| `ComponentScrapInPercent` | `ComponentScrapInPercent` |
-| `OperationScrapInPercent` | `OperationScrapInPercent` |
-| `IsNetScrap` | `IsNetScrap` |
-| `QuantityVariableSizeItem` | `QuantityVariableSizeItem` |
-| `FormulaKey` | `FormulaKey` |
-| `ComponentDescription` | `ComponentDescription` |
-| `BOMItemDescription` | `BOMItemDescription` |
-| `BOMItemText2` | `BOMItemText2` |
-| `MaterialGroup` | `MaterialGroup` |
-| `DocumentType` | `DocumentType` |
-| `DocNumber` | `DocNumber` |
-| `DocumentVersion` | `DocumentVersion` |
-| `DocumentPart` | `DocumentPart` |
-| `ClassNumber` | `ClassNumber` |
-| `ClassType` | `ClassType` |
-| `ResultingItemCategory` | `ResultingItemCategory` |
-| `DependencyObjectNumber` | `DependencyObjectNumber` |
-| `BillOfMaterialObjectType` | `ObjectType` |
-| `IsClassificationRelevant` | `IsClassificationRelevant` |
-| `IsBulkMaterial` | `IsBulkMaterial` |
-| `BOMItemIsSparePart` | `BOMItemIsSparePart` |
-| `BOMItemIsSalesRelevant` | `BOMItemIsSalesRelevant` |
-| `IsProductionRelevant` | `IsProductionRelevant` |
-| `BOMItemIsPlantMaintRelevant` | `BOMItemIsPlantMaintRelevant` |
-| `BOMItemIsCostingRelevant` | `BOMItemIsCostingRelevant` |
-| `IsEngineeringRelevant` | `IsEngineeringRelevant` |
-| `SpecialProcurementType` | `SpecialProcurementType` |
-| `IsBOMRecursiveAllowed` | `IsBOMRecursiveAllowed` |
-| `OperationLeadTimeOffset` | `OperationLeadTimeOffset` |
-| `OpsLeadTimeOffsetUnit` | `OpsLeadTimeOffsetUnit` |
-| `IsMaterialProvision` | `IsMaterialProvision` |
-| `BOMIsRecursive` | `BOMIsRecursive` |
-| `DocumentIsCreatedByCAD` | `DocumentIsCreatedByCAD` |
-| `DistrKeyCompConsumption` | `DistrKeyCompConsumption` |
-| `DeliveryDurationInDays` | `DeliveryDurationInDays` |
-| `Creditor` | `Creditor` |
-| `CostElement` | `CostElement` |
-| `Size1` | `Size1` |
-| `Size2` | `Size2` |
-| `Size3` | `Size3` |
-| `UnitOfMeasureForSize1To3` | `UnitOfMeasureForSize1To3` |
-| `GoodsReceiptDuration` | `GoodsReceiptDuration` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `RequiredComponent` | `RequiredComponent` |
-| `MultipleSelectionAllowed` | `MultipleSelectionAllowed` |
-| `ProdOrderIssueLocation` | `ProdOrderIssueLocation` |
-| `MaterialIsCoProduct` | `MaterialIsCoProduct` |
-| `ExplosionType` | `ExplosionType` |
-| `AlternativeItemGroup` | `AlternativeItemGroup` |
-| `AlternativeItemPriority` | `AlternativeItemPriority` |
-| `AlternativeItemStrategy` | `AlternativeItemStrategy` |
-| `UsageProbabilityPercent` | `UsageProbabilityPercent` |
-| `FollowUpGroup` | `FollowUpGroup` |
-| `DiscontinuationGroup` | `DiscontinuationGroup` |
-| `IsConfigurableBOM` | `IsConfigurableBOM` |
-| `ReferencePoint` | `ReferencePoint` |
-| `LeadTimeOffset` | `LeadTimeOffset` |
-| `ProductionSupplyArea` | `ProductionSupplyArea` |
-| `IsDeleted` | `IsDeleted` |
-| `IsALE` | `IsALE` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `_BillOfMaterial` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialCategory` | ✓ | |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |
+| `BillOfMaterialItemNodeNumber` | ✓ | |  |  |
+| `HeaderChangeDocument` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `BillOfMaterialItemUUID` |  | |  |  |
+| `BillOfMaterialVariantUsage` |  | |  |  |
+| `BOMItemInternalChangeCount` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `EngineeringChangeDocForEdit` |  | |  | `EngineeringChangeDocument` |
+| `ChgToEngineeringChgDocument` |  | |  |  |
+| `InheritedNodeNumberForBOMItem` |  | |  |  |
+| `BOMItemRecordCreationDate` |  | |  |  |
+| `BOMItemCreatedByUser` |  | |  |  |
+| `BOMItemLastChangeDate` |  | |  |  |
+| `BOMItemLastChangedByUser` |  | |  |  |
+| `BillOfMaterialComponent` |  | |  |  |
+| `BillOfMaterialItemCategory` |  | |  |  |
+| `BillOfMaterialItemNumber` |  | |  |  |
+| `BillOfMaterialItemUnit` |  | |  |  |
+| `BillOfMaterialItemQuantity` |  | |  |  |
+| `IsAssembly` |  | |  |  |
+| `IsSubItem` |  | |  |  |
+| `BOMItemSorter` |  | |  |  |
+| `BOMItemHasFixedQuantity` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Currency` |  | |  |  |
+| `MaterialComponentPrice` |  | |  |  |
+| `IdentifierBOMItem` |  | |  |  |
+| `MaterialPriceUnitQty` |  | |  |  |
+| `ComponentScrapInPercent` |  | |  |  |
+| `OperationScrapInPercent` |  | |  |  |
+| `IsNetScrap` |  | |  |  |
+| `QuantityVariableSizeItem` |  | |  |  |
+| `FormulaKey` |  | |  |  |
+| `ComponentDescription` |  | |  |  |
+| `BOMItemDescription` |  | |  |  |
+| `BOMItemText2` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `DocumentType` |  | |  |  |
+| `DocNumber` |  | |  |  |
+| `DocumentVersion` |  | |  |  |
+| `DocumentPart` |  | |  |  |
+| `ClassNumber` |  | |  |  |
+| `ClassType` |  | |  |  |
+| `ResultingItemCategory` |  | |  |  |
+| `DependencyObjectNumber` |  | |  |  |
+| `BillOfMaterialObjectType` |  | |  | `ObjectType` |
+| `IsClassificationRelevant` |  | |  |  |
+| `IsBulkMaterial` |  | |  |  |
+| `BOMItemIsSparePart` |  | |  |  |
+| `BOMItemIsSalesRelevant` |  | |  |  |
+| `IsProductionRelevant` |  | |  |  |
+| `BOMItemIsPlantMaintRelevant` |  | |  |  |
+| `BOMItemIsCostingRelevant` |  | |  |  |
+| `IsEngineeringRelevant` |  | |  |  |
+| `SpecialProcurementType` |  | |  |  |
+| `IsBOMRecursiveAllowed` |  | |  |  |
+| `OperationLeadTimeOffset` |  | |  |  |
+| `OpsLeadTimeOffsetUnit` |  | |  |  |
+| `IsMaterialProvision` |  | |  |  |
+| `BOMIsRecursive` |  | |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |
+| `DistrKeyCompConsumption` |  | |  |  |
+| `DeliveryDurationInDays` |  | |  |  |
+| `Creditor` |  | |  |  |
+| `CostElement` |  | |  |  |
+| `Size1` |  | |  |  |
+| `Size2` |  | |  |  |
+| `Size3` |  | |  |  |
+| `UnitOfMeasureForSize1To3` |  | |  |  |
+| `GoodsReceiptDuration` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `RequiredComponent` |  | |  |  |
+| `MultipleSelectionAllowed` |  | |  |  |
+| `ProdOrderIssueLocation` |  | |  |  |
+| `MaterialIsCoProduct` |  | |  |  |
+| `ExplosionType` |  | |  |  |
+| `AlternativeItemGroup` |  | |  |  |
+| `AlternativeItemPriority` |  | |  |  |
+| `AlternativeItemStrategy` |  | |  |  |
+| `UsageProbabilityPercent` |  | |  |  |
+| `FollowUpGroup` |  | |  |  |
+| `DiscontinuationGroup` |  | |  |  |
+| `IsConfigurableBOM` |  | |  |  |
+| `ReferencePoint` |  | |  |  |
+| `LeadTimeOffset` |  | |  |  |
+| `ProductionSupplyArea` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `IsALE` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `_BillOfMaterial` | | ✓ | | |
 
 ## Source Code
 

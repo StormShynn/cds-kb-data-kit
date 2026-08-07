@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JntOpgAgrmt` | `JntOpgAgrmt` |
-| key `JointVentureSequenceNumber` | `JointVentureSequenceNumber` |
-| `JointVentureWBSElementSet` | `JointVentureWBSElementSet` |
-| `JointVentureCostCenterSet` | `JointVentureCostCenterSet` |
-| `JointVentureOrderSet` | `JointVentureOrderSet` |
-| `JntVntrSteppedRateOvhdRule` | `JntVntrSteppedRateOvhdRule` |
-| `JVAExclsnAcctSetCptlOvhdCalc` | `JVAExclsnAcctSetCptlOvhdCalc` |
-| `JointVentureNetworkSet` | `JointVentureNetworkSet` |
-| `_CompanyCode` | *Association* |
-| `_JntVntrSteppedRateOvhdRule` | *Association* |
-| `_JntOpgAgrmt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JntOpgAgrmt` | ✓ | |  |  |
+| `JointVentureSequenceNumber` | ✓ | |  |  |
+| `JointVentureWBSElementSet` |  | |  |  |
+| `JointVentureCostCenterSet` |  | |  |  |
+| `JointVentureOrderSet` |  | |  |  |
+| `JntVntrSteppedRateOvhdRule` |  | |  |  |
+| `JVAExclsnAcctSetCptlOvhdCalc` |  | |  |  |
+| `JointVentureNetworkSet` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_JntVntrSteppedRateOvhdRule` | | ✓ | | |
+| `_JntOpgAgrmt` | | ✓ | | |
 
 ## Source Code
 

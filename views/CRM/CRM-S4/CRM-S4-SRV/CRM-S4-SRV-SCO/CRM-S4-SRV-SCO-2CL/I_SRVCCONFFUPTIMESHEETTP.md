@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceConfirmation` | `ServiceConfirmation` |
-| key `TimeSheetRecord` | `TimeSheetRecord` |
-| `_ServiceConfirmationTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceConfirmation` | ✓ | |  |  |
+| `TimeSheetRecord` | ✓ | |  |  |
+| `_ServiceConfirmationTP` | | ✓ | | |
 
 ## Source Code
 

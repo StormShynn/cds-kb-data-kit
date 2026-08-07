@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReferenceInterestRate` | `ReferenceInterestRate.referenz` |
-| key `EffectiveDate` | `cast(left(cast(99999999 - cast(cast(ReferenceInterestRate.datab as abap.numc(8)) as abap.dec(8)) as abap.char(13) ) ,8) as abap.dats)` |
-| `EffectiveInterestRate` | `ReferenceInterestRate.zsoll` |
-| `_ReferenceInterestRate` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferenceInterestRate` | ✓ | |  | `referenz` |
+| `EffectiveDate` | ✓ | |  | `cast(left(cast(99999999 - cast(cast(ReferenceInterestRate.datab as abap.numc(8)) as abap.dec(8)) as abap.char(13) ) ,8) as abap.dats)` |
+| `EffectiveInterestRate` |  | |  | `zsoll` |
+| `_ReferenceInterestRate` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditAccountBlockReason` | `block_reason` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditAccountBlockReason` | ✓ | |  | `block_reason` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

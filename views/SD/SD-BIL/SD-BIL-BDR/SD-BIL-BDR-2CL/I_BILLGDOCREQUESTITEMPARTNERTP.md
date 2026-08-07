@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequest` | `BillingDocumentRequest` |
-| key `BillingDocumentRequestItem` | `BillingDocumentRequestItem` |
-| key `PartnerFunction` | `PartnerFunction` |
-| `Customer` | `Customer` |
-| `Supplier` | `Supplier` |
-| `Personnel` | `Personnel` |
-| `ContactPerson` | `ContactPerson` |
-| `ReferenceBusinessPartner` | `ReferenceBusinessPartner` |
-| `BusinessPartnerAddressUUID` | `BusinessPartnerAddressUUID` |
-| `PartnerIsSpecificForSDDocItem` | `PartnerIsSpecificForSDDocItem` |
-| `_Item` | *Association* |
-| `_BillingDocumentRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  |  |
+| `BillingDocumentRequestItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `BusinessPartnerAddressUUID` |  | |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_BillingDocumentRequest` | | ✓ | | |
 
 ## Source Code
 

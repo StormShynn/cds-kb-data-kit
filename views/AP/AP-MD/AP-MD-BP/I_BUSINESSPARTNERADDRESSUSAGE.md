@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `but021_fs.partner` |
-| key `ValidityEndDate` | `but021_fs.valid_to` |
-| key `AddressUsage` | `but021_fs.adr_kind` |
-| key `AddressNumber` | `but021_fs.addrnumber` |
-| `ValidityStartDate` | `but021_fs.valid_from` |
-| `StandardUsage` | `but021_fs.xdfadu` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `ValidityEndDate` | ✓ | |  | `valid_to` |
+| `AddressUsage` | ✓ | |  | `adr_kind` |
+| `AddressNumber` | ✓ | |  | `addrnumber` |
+| `ValidityStartDate` |  | |  | `valid_from` |
+| `StandardUsage` |  | |  | `xdfadu` |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Associations
 

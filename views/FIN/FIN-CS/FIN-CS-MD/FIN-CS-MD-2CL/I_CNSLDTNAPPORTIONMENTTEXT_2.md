@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_DomainT.Language as spras preserving type )` |
-| key `ConsolidationApportionment` | `cast(left(_DomainT.DomainValue, 1) as fincs_apportionment)` |
-| `ConsolidationApportionmentText` | `_DomainT.DomainValueText` |
-| `DomainValue` | `_DomainT.DomainValue` |
-| `_Apportionment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
+| `ConsolidationApportionment` | ✓ | |  | `cast(left(_DomainT.DomainValue, 1) as fincs_apportionment)` |
+| `ConsolidationApportionmentText` |  | | `_DomainT` | `DomainValueText` |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |
+| `_Apportionment` | | ✓ | | |
 
 ## Associations
 

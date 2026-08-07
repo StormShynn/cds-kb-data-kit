@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `SubscrpnBillgSubscription` | `SubscrpnBillgSubscription` |
-| `BusinessSolutionOrderUUID` | `BusinessSolutionOrderUUID` |
-| `_BusinessSolutionOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `SubscrpnBillgSubscription` | ✓ | |  |  |
+| `BusinessSolutionOrderUUID` |  | |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | |
 
 ## Source Code
 

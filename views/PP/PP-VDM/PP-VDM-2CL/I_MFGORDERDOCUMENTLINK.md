@@ -28,29 +28,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LinkedSAPObjectKey` | `docl.LinkedSAPObjectKey` |
-| key `DocumentType` | `cast(docl.DocumentType as dokar preserving type)` |
-| key `DocumentInfoRecord` | `cast(docl.DocumentInfoRecord as doknr preserving type)` |
-| key `DocumentPart` | `cast(docl.DocumentPart as pph_doktl preserving type)` |
-| key `DocumentVersion` | `cast(docl.DocumentVersion as pph_dokvr preserving type)` |
-| `CreationDateTime` | `cast(docl.CreationDateTime as hp_created_at preserving type)` |
-| `CreatedByUser` | `cast(docl.CreatedByUser as ernam preserving type)` |
-| `ChangedDateTime` | `cast(docl.ChangedDateTime as hp_changed_at preserving type)` |
-| `LastChangedByUser` | `cast(docl.LastChangedByUser as aenam preserving type)` |
-| `MfgOrderLinkedObjType` | `cast(docl.MfgOrderLinkedObjType as pord_doclt preserving type)` |
-| `ManufacturingOrderCategory` | `docl.ManufacturingOrderCategory` |
-| `ManufacturingOrderType` | `cast(docl.ManufacturingOrderType as aufart preserving type)` |
-| `ManufacturingOrder` | `cast(docl.ManufacturingOrder as co_aufnr preserving type)` |
-| `ManufacturingOrderSequence` | `cast(docl.ManufacturingOrderSequence as plnfolge preserving type)` |
-| `ManufacturingOrderOperation` | `cast(docl.ManufacturingOrderOperation as vdm_vornr preserving type)` |
-| `InternalDocumentStatus` | `cast(docl.InternalDocumentStatus as dokst preserving type)` |
-| `ChangeNumber` | `cast(docl.ChangeNumber as daenr preserving type)` |
-| `ResponsiblePersonName` | `cast(docl.ResponsiblePersonName as pph_dwnam preserving type)` |
-| `_MfgOrderSequence` | *Association* |
-| `_MfgOrderOperation` | *Association* |
-| `_DocumentOriginal` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LinkedSAPObjectKey` | ✓ | |  |  |
+| `DocumentType` | ✓ | |  | `cast(docl.DocumentType as dokar preserving type)` |
+| `DocumentInfoRecord` | ✓ | |  | `cast(docl.DocumentInfoRecord as doknr preserving type)` |
+| `DocumentPart` | ✓ | |  | `cast(docl.DocumentPart as pph_doktl preserving type)` |
+| `DocumentVersion` | ✓ | |  | `cast(docl.DocumentVersion as pph_dokvr preserving type)` |
+| `CreationDateTime` |  | |  | `cast(docl.CreationDateTime as hp_created_at preserving type)` |
+| `CreatedByUser` |  | |  | `cast(docl.CreatedByUser as ernam preserving type)` |
+| `ChangedDateTime` |  | |  | `cast(docl.ChangedDateTime as hp_changed_at preserving type)` |
+| `LastChangedByUser` |  | |  | `cast(docl.LastChangedByUser as aenam preserving type)` |
+| `MfgOrderLinkedObjType` |  | |  | `cast(docl.MfgOrderLinkedObjType as pord_doclt preserving type)` |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `ManufacturingOrderType` |  | |  | `cast(docl.ManufacturingOrderType as aufart preserving type)` |
+| `ManufacturingOrder` |  | |  | `cast(docl.ManufacturingOrder as co_aufnr preserving type)` |
+| `ManufacturingOrderSequence` |  | |  | `cast(docl.ManufacturingOrderSequence as plnfolge preserving type)` |
+| `ManufacturingOrderOperation` |  | |  | `cast(docl.ManufacturingOrderOperation as vdm_vornr preserving type)` |
+| `InternalDocumentStatus` |  | |  | `cast(docl.InternalDocumentStatus as dokst preserving type)` |
+| `ChangeNumber` |  | |  | `cast(docl.ChangeNumber as daenr preserving type)` |
+| `ResponsiblePersonName` |  | |  | `cast(docl.ResponsiblePersonName as pph_dwnam preserving type)` |
+| `_MfgOrderSequence` | | ✓ | | |
+| `_MfgOrderOperation` | | ✓ | | |
+| `_DocumentOriginal` | | ✓ | | |
 
 ## Associations
 

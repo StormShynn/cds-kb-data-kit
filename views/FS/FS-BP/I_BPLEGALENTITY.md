@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerLegalEntity` | `cast ( dd07l.domvalue_l as bp_entity_report )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerLegalEntity` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_entity_report )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

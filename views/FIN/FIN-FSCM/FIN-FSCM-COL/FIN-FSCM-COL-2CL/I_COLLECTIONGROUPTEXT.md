@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CollectionGroup` | `cast(coll_group as udm_coll_group preserving type)` |
-| key `Language` | `lang` |
-| `CollectionGroupName` | `coll_group_text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CollectionGroup` | ✓ | |  | `cast(coll_group as udm_coll_group preserving type)` |
+| `Language` | ✓ | |  | `lang` |
+| `CollectionGroupName` |  | |  | `coll_group_text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

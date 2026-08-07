@@ -30,38 +30,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressID` | `AddressID` |
-| key `Person` | `Person` |
-| key `OrdinalNumber` | `OrdinalNumber` |
-| `OrdinalNumberForEdit` | `OrdinalNumberForEdit` |
-| `AddressIDForEdit` | `AddressIDForEdit` |
-| `DestinationLocationCountry` | `DestinationLocationCountry` |
-| `TelephoneCountryPrefix` | `TelephoneCountryPrefix` |
-| `IsDefaultPhoneNumber` | `IsDefaultPhoneNumber` |
-| `CommNumberIsNotUsed` | `CommNumberIsNotUsed` |
-| `PhoneNumber` | `PhoneNumber` |
-| `PhoneNumberExtension` | `PhoneNumberExtension` |
-| `InternationalPhoneNumber` | `InternationalPhoneNumber` |
-| `PhoneIsSMSEnabled` | `PhoneIsSMSEnabled` |
-| `PhoneNumberType` | `PhoneNumberType` |
-| `AddressCommunicationRemarkText` | `AddressCommunicationRemarkText` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_BusinessPartner` | *Association* |
-| `_TelCountryPrefix` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressID` | ✓ | |  |  |
+| `Person` | ✓ | |  |  |
+| `OrdinalNumber` | ✓ | |  |  |
+| `OrdinalNumberForEdit` |  | |  |  |
+| `AddressIDForEdit` |  | |  |  |
+| `DestinationLocationCountry` |  | |  |  |
+| `TelephoneCountryPrefix` |  | |  |  |
+| `IsDefaultPhoneNumber` |  | |  |  |
+| `CommNumberIsNotUsed` |  | |  |  |
+| `PhoneNumber` |  | |  |  |
+| `PhoneNumberExtension` |  | |  |  |
+| `InternationalPhoneNumber` |  | |  |  |
+| `PhoneIsSMSEnabled` |  | |  |  |
+| `PhoneNumberType` |  | |  |  |
+| `AddressCommunicationRemarkText` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_TelCountryPrefix` | | ✓ | | |
 
 ## Source Code
 

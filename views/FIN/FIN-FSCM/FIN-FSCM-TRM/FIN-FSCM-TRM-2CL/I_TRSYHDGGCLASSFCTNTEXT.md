@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `hclasst.lang` |
-| key `HedgingClassification` | `hclasst.hedging_classification` |
-| `HedgingClassificationName` | `hclasst.text` |
-| `_TreasuryHedgingClassfctn` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `lang` |
+| `HedgingClassification` | ✓ | |  | `hedging_classification` |
+| `HedgingClassificationName` |  | |  | `text` |
+| `_TreasuryHedgingClassfctn` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingOverheadGroup` | `CostingOverheadGroup` |
-| key `ValuationArea` | `ValuationArea` |
-| key `CostingOverhead` | `OverheadCode` |
-| `_ValuationArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingOverheadGroup` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `CostingOverhead` | ✓ | |  | `OverheadCode` |
+| `_ValuationArea` | | ✓ | | |
 
 ## Source Code
 

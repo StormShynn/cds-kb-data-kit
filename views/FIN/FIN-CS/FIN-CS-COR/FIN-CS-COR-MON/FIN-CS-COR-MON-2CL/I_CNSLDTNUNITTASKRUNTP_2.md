@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationChartOfAccounts` | `ConsolidationChartOfAccounts` |
-| key `ConsolidationVersion` | `ConsolidationVersion` |
-| key `FiscalYear` | `FiscalYear` |
-| key `FiscalPeriod` | `FiscalPeriod` |
-| key `ConsolidationTask` | `ConsolidationTask` |
-| key `ConsolidationUnit` | `ConsolidationUnit` |
-| `CnsldtnTskRunNmbrOfErrMessages` | `CnsldtnTskRunNmbrOfErrMessages` |
-| `CnsldtnTskRunNmbrOfWrngMsgs` | `CnsldtnTskRunNmbrOfWrngMsgs` |
-| `CnsldtnTaskRunChangedByUser` | `CnsldtnTaskRunChangedByUser` |
-| `CnsldtnTaskRunChangedDate` | `CnsldtnTaskRunChangedDate` |
-| `CnsldtnTaskRunChangedTime` | `CnsldtnTaskRunChangedTime` |
-| `ConsolidationTaskRunStatus` | `ConsolidationTaskRunStatus` |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_CnsldtnVersion` | *Association* |
-| `_CnsldtnTask` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnTaskRunStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` | ✓ | |  |  |
+| `ConsolidationVersion` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `FiscalPeriod` | ✓ | |  |  |
+| `ConsolidationTask` | ✓ | |  |  |
+| `ConsolidationUnit` | ✓ | |  |  |
+| `CnsldtnTskRunNmbrOfErrMessages` |  | |  |  |
+| `CnsldtnTskRunNmbrOfWrngMsgs` |  | |  |  |
+| `CnsldtnTaskRunChangedByUser` |  | |  |  |
+| `CnsldtnTaskRunChangedDate` |  | |  |  |
+| `CnsldtnTaskRunChangedTime` |  | |  |  |
+| `ConsolidationTaskRunStatus` |  | |  |  |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_CnsldtnVersion` | | ✓ | | |
+| `_CnsldtnTask` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnTaskRunStatus` | | ✓ | | |
 
 ## Source Code
 

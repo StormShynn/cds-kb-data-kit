@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `root.comp_code` |
-| key `MasterFixedAsset` | `root.asset_no` |
-| `MasterFixedAssetDescription` | `cast(main.description as anlhtxt)` |
-| `AssetAuthorizationContext` | `cast('NEW' as faa_authcntxt)` |
-| `_CompanyCode` | *Association* |
-| `_FixedAsset` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |
+| `MasterFixedAsset` | ✓ | |  | `asset_no` |
+| `MasterFixedAssetDescription` |  | |  | `cast(main.description as anlhtxt)` |
+| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` |
+| `_CompanyCode` | | ✓ | | |
+| `_FixedAsset` | | ✓ | | |
 
 ## Associations
 

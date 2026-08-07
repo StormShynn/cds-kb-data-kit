@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REArchitectureObjectUsageUUID` | `REArchitectureObjectUsageUUID` |
-| `REArchitectureObjectUUID` | `REArchitectureObjectUUID` |
-| `RealEstateRentableObjectUUID` | `REGenericRentalObjectUUID` |
-| `REArchitectureObjectType` | `_REArchitectureObject.REArchitectureObjectType` |
-| `REArchitectureObjectNumber` | `_REArchitectureObject.REArchitectureObjectNumber` |
-| `REArchitectureObjectOID` | `_REArchitectureObject.REArchitectureObjectOID` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `REArchtrObjUsageIsMsmtBased` | `REArchtrObjUsageIsMsmtBased` |
-| `_RERentableObject` | *Association* |
-| `_REArchitectureObject` | *Association* |
-| `_REGenericRentalObject` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REArchitectureObjectUsageUUID` | ✓ | |  |  |
+| `REArchitectureObjectUUID` |  | |  |  |
+| `RealEstateRentableObjectUUID` |  | |  | `REGenericRentalObjectUUID` |
+| `REArchitectureObjectType` |  | | `_REArchitectureObject` | `REArchitectureObjectType` |
+| `REArchitectureObjectNumber` |  | | `_REArchitectureObject` | `REArchitectureObjectNumber` |
+| `REArchitectureObjectOID` |  | | `_REArchitectureObject` | `REArchitectureObjectOID` |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `REArchtrObjUsageIsMsmtBased` |  | |  |  |
+| `_RERentableObject` | | ✓ | | |
+| `_REArchitectureObject` | | ✓ | | |
+| `_REGenericRentalObject` | | ✓ | | |
 
 ## Associations
 

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KanbanCtrlCycleLifeCycleStatus` | `cast ( right(domvalue_l, 1) as vdm_lcm_status preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KanbanCtrlCycleLifeCycleStatus` | ✓ | |  | `cast ( right(domvalue_l, 1) as vdm_lcm_status preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

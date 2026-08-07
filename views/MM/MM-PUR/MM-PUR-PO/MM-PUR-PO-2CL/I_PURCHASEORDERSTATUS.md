@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `header.PurchaseOrder` |
-| `PurchasingDocumentStatus` | `case header.PurchasingDocumentDeletionCode when 'X' then cast('10' as mmpur_doc_status) when 'L' then cast('10' as mmpur_doc_status) else case header.PurchasingCompletenessStatus when 'X' then cast('01' as mmpur_doc_status) else case header.PurchasingProcessingStatus when '08' then cast('38' as mmpur_doc_status) else case header.ReleaseIsNotCompleted when 'X' then cast('02' as mmpur_doc_status) else case when (om_error.appl_object_id is null) then case when (pos_ekbe.PurchaseOrder is null) then case when (om_new.appl_object_id is null) then case when (om_old.objky is null) then cast('03' as mmpur_doc_status) else cast('04' as mmpur_doc_status) end else cast('04' as mmpur_doc_status) end else cast('05' as mmpur_doc_status) end else cast('37' as mmpur_doc_status) end end end end end` |
-| `PurchaseOrderType` | `PurchaseOrderType` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchasingDocumentStatus` |  | |  | `case header.PurchasingDocumentDeletionCode when 'X' then cast('10' as mmpur_doc_status) when 'L' then cast('10' as mmpur_doc_status) else case header.PurchasingCompletenessStatus when 'X' then cast('01' as mmpur_doc_status) else case header.PurchasingProcessingStatus when '08' then cast('38' as mmpur_doc_status) else case header.ReleaseIsNotCompleted when 'X' then cast('02' as mmpur_doc_status) else case when (om_error.appl_object_id is null) then case when (pos_ekbe.PurchaseOrder is null) then case when (om_new.appl_object_id is null) then case when (om_old.objky is null) then cast('03' as mmpur_doc_status) else cast('04' as mmpur_doc_status) end else cast('04' as mmpur_doc_status) end else cast('05' as mmpur_doc_status) end else cast('37' as mmpur_doc_status) end end end end end` |
+| `PurchaseOrderType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
 
 ## Source Code
 

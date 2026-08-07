@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABusPartnerPostgLockExstcCode` | `cast( left( dd07l.domvalue_l, 1 ) as bpl_xpocl_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABusPartnerPostgLockExstcCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as bpl_xpocl_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

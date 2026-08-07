@@ -29,73 +29,73 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityInternalID` | `CapacityInternalID` |
-| `Plant` | `Plant` |
-| `Capacity` | `Capacity` |
-| `CapacityCategoryCode` | `CapacityCategoryCode` |
-| `CapacityActiveVersion` | `CapacityActiveVersion` |
-| `CapacityIsFinite` | `CapacityIsFinite` |
-| `CapacityIsPooled` | `CapacityIsPooled` |
-| `CapacityHasIndivCapacities` | `CapacityHasIndivCapacities` |
-| `CapacityIsExcldFrmLongTermPlng` | `CapacityIsExcldFrmLongTermPlng` |
-| `CapacityNumberOfCapacities` | `CapacityNumberOfCapacities` |
-| `CapacityResponsiblePlanner` | `CapacityResponsiblePlanner` |
-| `CapacityPlanUtilizationPercent` | `CapacityPlanUtilizationPercent` |
-| `CapacityBreakDuration` | `CapacityBreakDuration` |
-| `CapIsUsedInMultiOperations` | `CapIsUsedInMultiOperations` |
-| `ReferencedCapacityInternalID` | `ReferencedCapacityInternalID` |
-| `CapOverloadThresholdInPercent` | `CapOverloadThresholdInPercent` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `ShiftGroup` | `ShiftGroup` |
-| `CapacityStartTimeID` | `CapacityStartTimeID` |
-| `CapacityEndTimeID` | `CapacityEndTimeID` |
-| `CapacityQuantityUnit` | `CapacityQuantityUnit` |
-| `CapacityBaseQtyUnit` | `CapacityBaseQtyUnit` |
-| `CapacityLastChangeDateTime` | `CapacityLastChangeDateTime` |
-| `ResourceType` | `ResourceType` |
-| `ResourceCategory` | `ResourceCategory` |
-| `RsceValidityStartOffsetInDays` | `RsceValidityStartOffsetInDays` |
-| `RsceValidityEndOffsetInDays` | `RsceValidityEndOffsetInDays` |
-| `ResourceSortText` | `ResourceSortText` |
-| `ResourceFinitenessLevel` | `ResourceFinitenessLevel` |
-| `ResourceIsBottleNeck` | `ResourceIsBottleNeck` |
-| `RsceOverlappingActiesSync` | `RsceOverlappingActiesSync` |
-| `ResourceTimeBufferQuantity` | `ResourceTimeBufferQuantity` |
-| `ResourceTimeBufferUnit` | `ResourceTimeBufferUnit` |
-| `ResourceMaxOverlapDuration` | `ResourceMaxOverlapDuration` |
-| `ResourceMaxOverlapDurationUnit` | `ResourceMaxOverlapDurationUnit` |
-| `ResourceIsCampaignRelevant` | `ResourceIsCampaignRelevant` |
-| `RsceShiftsAndBreaksAreDerived` | `RsceShiftsAndBreaksAreDerived` |
-| `PPDSPeriodSourceType` | `PPDSPeriodSourceType` |
-| `PPDSPeriodDurationSchema` | `PPDSPeriodDurationSchema` |
-| `PPDSPeriodTimeRatioInPercent` | `PPDSPeriodTimeRatioInPercent` |
-| `PPDSCapacitySupplyTimeCategory` | `PPDSCapacitySupplyTimeCategory` |
-| `RsceHasStorCharcs` | `RsceHasStorCharcs` |
-| `RsceStorageQuantityDimension` | `RsceStorageQuantityDimension` |
-| `RsceStorageQuantityUnit` | `RsceStorageQuantityUnit` |
-| `RsceStorageMinProductionQty` | `RsceStorageMinProductionQty` |
-| `RsceStorageMaxQuantity` | `RsceStorageMaxQuantity` |
-| `RsceStorIsZeroOnNoFillPurity` | `RsceStorIsZeroOnNoFillPurity` |
-| `CapacityPlanningPeriodLotSize` | `CapacityPlanningPeriodLotSize` |
-| `RsceStorHasMltplProds` | `RsceStorHasMltplProds` |
-| `RsceStorZeroFillPurityThldQty` | `RsceStorZeroFillPurityThldQty` |
-| `_CapacityCategory` | *Association* |
-| `_FactoryCalendar` | *Association* |
-| `_Plant` | *Association* |
-| `_Text` | *Association* |
-| `_ReferencedCapacityText` | *Association* |
-| `_CapacityResponsiblePlanner` | *Association* |
-| `_ShiftGrouping` | *Association* |
-| `_CapacityQuantityUnit` | *Association* |
-| `_CapacityBaseQtyUnit` | *Association* |
-| `_CapacityBySemanticKey` | *Association* |
-| `_Capacity` | *Association* |
-| `_ResourceTimeBufferUnit` | *Association* |
-| `_RsceMaxOverlapDurationUnit` | *Association* |
-| `_RsceStorageQuantityUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  |  |
+| `Plant` |  | |  |  |
+| `Capacity` |  | |  |  |
+| `CapacityCategoryCode` |  | |  |  |
+| `CapacityActiveVersion` |  | |  |  |
+| `CapacityIsFinite` |  | |  |  |
+| `CapacityIsPooled` |  | |  |  |
+| `CapacityHasIndivCapacities` |  | |  |  |
+| `CapacityIsExcldFrmLongTermPlng` |  | |  |  |
+| `CapacityNumberOfCapacities` |  | |  |  |
+| `CapacityResponsiblePlanner` |  | |  |  |
+| `CapacityPlanUtilizationPercent` |  | |  |  |
+| `CapacityBreakDuration` |  | |  |  |
+| `CapIsUsedInMultiOperations` |  | |  |  |
+| `ReferencedCapacityInternalID` |  | |  |  |
+| `CapOverloadThresholdInPercent` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `ShiftGroup` |  | |  |  |
+| `CapacityStartTimeID` |  | |  |  |
+| `CapacityEndTimeID` |  | |  |  |
+| `CapacityQuantityUnit` |  | |  |  |
+| `CapacityBaseQtyUnit` |  | |  |  |
+| `CapacityLastChangeDateTime` |  | |  |  |
+| `ResourceType` |  | |  |  |
+| `ResourceCategory` |  | |  |  |
+| `RsceValidityStartOffsetInDays` |  | |  |  |
+| `RsceValidityEndOffsetInDays` |  | |  |  |
+| `ResourceSortText` |  | |  |  |
+| `ResourceFinitenessLevel` |  | |  |  |
+| `ResourceIsBottleNeck` |  | |  |  |
+| `RsceOverlappingActiesSync` |  | |  |  |
+| `ResourceTimeBufferQuantity` |  | |  |  |
+| `ResourceTimeBufferUnit` |  | |  |  |
+| `ResourceMaxOverlapDuration` |  | |  |  |
+| `ResourceMaxOverlapDurationUnit` |  | |  |  |
+| `ResourceIsCampaignRelevant` |  | |  |  |
+| `RsceShiftsAndBreaksAreDerived` |  | |  |  |
+| `PPDSPeriodSourceType` |  | |  |  |
+| `PPDSPeriodDurationSchema` |  | |  |  |
+| `PPDSPeriodTimeRatioInPercent` |  | |  |  |
+| `PPDSCapacitySupplyTimeCategory` |  | |  |  |
+| `RsceHasStorCharcs` |  | |  |  |
+| `RsceStorageQuantityDimension` |  | |  |  |
+| `RsceStorageQuantityUnit` |  | |  |  |
+| `RsceStorageMinProductionQty` |  | |  |  |
+| `RsceStorageMaxQuantity` |  | |  |  |
+| `RsceStorIsZeroOnNoFillPurity` |  | |  |  |
+| `CapacityPlanningPeriodLotSize` |  | |  |  |
+| `RsceStorHasMltplProds` |  | |  |  |
+| `RsceStorZeroFillPurityThldQty` |  | |  |  |
+| `_CapacityCategory` | | ✓ | | |
+| `_FactoryCalendar` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_ReferencedCapacityText` | | ✓ | | |
+| `_CapacityResponsiblePlanner` | | ✓ | | |
+| `_ShiftGrouping` | | ✓ | | |
+| `_CapacityQuantityUnit` | | ✓ | | |
+| `_CapacityBaseQtyUnit` | | ✓ | | |
+| `_CapacityBySemanticKey` | | ✓ | | |
+| `_Capacity` | | ✓ | | |
+| `_ResourceTimeBufferUnit` | | ✓ | | |
+| `_RsceMaxOverlapDurationUnit` | | ✓ | | |
+| `_RsceStorageQuantityUnit` | | ✓ | | |
 
 ## Source Code
 

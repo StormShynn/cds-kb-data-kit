@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintNotifDetectionCodeGroup` | `detectioncodegroup` |
-| `IsDeactivated` | `deactivated` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintNotifDetectionCodeGroup` | ✓ | |  | `detectioncodegroup` |
+| `IsDeactivated` |  | |  | `deactivated` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

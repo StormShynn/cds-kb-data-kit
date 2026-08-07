@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `ValuationVariant` | `bwvar` |
-| `ValuationVariantName` | `cast(txbwv as fpc_valuation_variant_name preserving type)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ValuationVariant` | ✓ | |  | `bwvar` |
+| `ValuationVariantName` |  | |  | `cast(txbwv as fpc_valuation_variant_name preserving type)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

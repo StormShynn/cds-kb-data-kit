@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `CustMgmtPartnerFunction` | `CustMgmtPartnerFunction` |
-| key `CustMgmtBusinessPartner` | `CustMgmtBusinessPartner` |
-| `AddressID` | `AddressID` |
-| `AddressPersonID` | `AddressPersonID` |
-| `AddressObjectType` | `AddressObjectType` |
-| `AddresseeFullName` | `AddresseeFullName` |
-| `CityName` | `CityName` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `Country` | `Country` |
-| `DistrictName` | `DistrictName` |
-| `EmailAddress` | `EmailAddress` |
-| `FaxAreaCodeSubscriberNumber` | `FaxAreaCodeSubscriberNumber` |
-| `FaxExtensionNumber` | `FaxExtensionNumber` |
-| `FaxNumberCountry` | `FaxNumberCountry` |
-| `FormOfAddress` | `FormOfAddress` |
-| `HouseNumber` | `HouseNumber` |
-| `MobileNumber` | `MobileNumber` |
-| `MobilePhoneCountry` | `MobilePhoneCountry` |
-| `OrganizationName1` | `OrganizationName1` |
-| `OrganizationName2` | `OrganizationName2` |
-| `OrganizationName3` | `OrganizationName3` |
-| `OrganizationName4` | `OrganizationName4` |
-| `PersonFamilyName` | `PersonFamilyName` |
-| `PersonGivenName` | `PersonGivenName` |
-| `PhoneExtensionNumber` | `PhoneExtensionNumber` |
-| `PhoneNumber` | `PhoneNumber` |
-| `PhoneNumberCountry` | `PhoneNumberCountry` |
-| `POBox` | `POBox` |
-| `POBoxPostalCode` | `POBoxPostalCode` |
-| `PostalCode` | `PostalCode` |
-| `Region` | `Region` |
-| `StreetName` | `StreetName` |
-| `StreetPrefixName1` | `StreetPrefixName1` |
-| `StreetPrefixName2` | `StreetPrefixName2` |
-| `StreetSuffixName1` | `StreetSuffixName1` |
-| `StreetSuffixName2` | `StreetSuffixName2` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `TransportZone` | `TransportZone` |
-| `_BusinessSolutionOrderTP` | *Association* |
-| `_BusSolnOrdPartnerTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `CustMgmtPartnerFunction` | ✓ | |  |  |
+| `CustMgmtBusinessPartner` | ✓ | |  |  |
+| `AddressID` |  | |  |  |
+| `AddressPersonID` |  | |  |  |
+| `AddressObjectType` |  | |  |  |
+| `AddresseeFullName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `Country` |  | |  |  |
+| `DistrictName` |  | |  |  |
+| `EmailAddress` |  | |  |  |
+| `FaxAreaCodeSubscriberNumber` |  | |  |  |
+| `FaxExtensionNumber` |  | |  |  |
+| `FaxNumberCountry` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `MobileNumber` |  | |  |  |
+| `MobilePhoneCountry` |  | |  |  |
+| `OrganizationName1` |  | |  |  |
+| `OrganizationName2` |  | |  |  |
+| `OrganizationName3` |  | |  |  |
+| `OrganizationName4` |  | |  |  |
+| `PersonFamilyName` |  | |  |  |
+| `PersonGivenName` |  | |  |  |
+| `PhoneExtensionNumber` |  | |  |  |
+| `PhoneNumber` |  | |  |  |
+| `PhoneNumberCountry` |  | |  |  |
+| `POBox` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `Region` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `StreetPrefixName1` |  | |  |  |
+| `StreetPrefixName2` |  | |  |  |
+| `StreetSuffixName1` |  | |  |  |
+| `StreetSuffixName2` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TransportZone` |  | |  |  |
+| `_BusinessSolutionOrderTP` | | ✓ | | |
+| `_BusSolnOrdPartnerTP` | | ✓ | | |
 
 ## Source Code
 

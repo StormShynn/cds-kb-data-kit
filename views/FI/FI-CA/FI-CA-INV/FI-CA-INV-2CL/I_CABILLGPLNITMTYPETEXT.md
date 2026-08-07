@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgPlnItmType` | `tfk8213t.bipitemtype` |
-| key `Language` | `langu` |
-| `CABillgPlnItmTypeText` | `cast( text as bipitemtype_txt_gfn_kk preserving type )` |
-| `_CABillgPlnItmType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgPlnItmType` | ✓ | |  | `bipitemtype` |
+| `Language` | ✓ | |  | `langu` |
+| `CABillgPlnItmTypeText` |  | |  | `cast( text as bipitemtype_txt_gfn_kk preserving type )` |
+| `_CABillgPlnItmType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

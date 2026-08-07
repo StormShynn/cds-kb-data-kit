@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `SuplrInvcVerificatTolGroup` | `SuplrInvcVerificatTolGroup` |
-| `APARToleranceGroupName` | `APARToleranceGroupName` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `SuplrInvcVerificatTolGroup` | ✓ | |  |  |
+| `APARToleranceGroupName` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

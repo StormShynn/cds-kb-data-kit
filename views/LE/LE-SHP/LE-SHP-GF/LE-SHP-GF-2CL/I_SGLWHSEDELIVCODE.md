@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SingleWarehouseDeliveryCode` | `cast (left(dd07l.domvalue_l, 1 ) as lnspl_likp preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SingleWarehouseDeliveryCode` | ✓ | |  | `cast (left(dd07l.domvalue_l, 1 ) as lnspl_likp preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

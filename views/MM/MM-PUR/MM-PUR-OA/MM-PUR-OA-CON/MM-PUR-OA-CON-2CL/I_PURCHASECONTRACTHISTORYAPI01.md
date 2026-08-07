@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `I_PurchaseContractHistory.PurchaseContract` |
-| key `PurchaseContractItem` | `I_PurchaseContractHistory.PurchaseContractItem` |
-| key `ReleaseOrder` | `I_PurchaseContractHistory.ReleaseOrder` |
-| key `ReleaseOrderItem` | `I_PurchaseContractHistory.ReleaseOrderItem` |
-| `ReleaseOrderItemOrderQuantity` | `I_PurchaseContractHistory.ReleaseOrderItemOrderQuantity` |
-| `ReleaseOrderItemNetAmount` | `I_PurchaseContractHistory.ReleaseOrderItemNetAmount` |
-| `ReleaseOrderItemIsDeleted` | `I_PurchaseContractHistory.ReleaseOrderItemIsDeleted` |
-| `ReleaseOrderDate` | `I_PurchaseContractHistory.ReleaseOrderDate` |
-| `ReleaseOrderItemQuantityUnit` | `I_PurchaseContractHistory.ReleaseOrderItemQuantityUnit` |
-| `ReleaseOrderCurrency` | `I_PurchaseContractHistory.ReleaseOrderCurrency` |
-| `ReleaseOrderItemLastChgDate` | `I_PurchaseContractHistory.ReleaseOrderItemLastChgDate` |
-| `ExchangeRate` | `I_PurchaseContractHistory.ExchangeRate` |
-| `CompanyCode` | `I_PurchaseContractHistory.CompanyCode` |
-| `Plant` | `I_PurchaseContractHistory.Plant` |
-| `PurchasingOrganization` | `I_PurchaseContractHistory.PurchasingOrganization` |
-| `_PurchaseContractAPI01` | *Association* |
-| `_PurchaseContractItemAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractItem` | ✓ | |  |  |
+| `ReleaseOrder` | ✓ | |  |  |
+| `ReleaseOrderItem` | ✓ | |  |  |
+| `ReleaseOrderItemOrderQuantity` |  | |  |  |
+| `ReleaseOrderItemNetAmount` |  | |  |  |
+| `ReleaseOrderItemIsDeleted` |  | |  |  |
+| `ReleaseOrderDate` |  | |  |  |
+| `ReleaseOrderItemQuantityUnit` |  | |  |  |
+| `ReleaseOrderCurrency` |  | |  |  |
+| `ReleaseOrderItemLastChgDate` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `_PurchaseContractAPI01` | | ✓ | | |
+| `_PurchaseContractItemAPI01` | | ✓ | | |
 
 ## Associations
 

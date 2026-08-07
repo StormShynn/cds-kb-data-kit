@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `kokrs` |
-| key `AccountingDocument` | `belnr` |
-| key `AccountingDocumentItem` | `buzei` |
-| `FiscalPeriod` | `cast(perio as fins_fiscalperiod preserving type )` |
-| `StatisticalKeyFigureQuantity` | `cast(smebtr as quan1_12)` |
-| `StstcKeyFigQuantityUnit` | `cast(meinh as fis_ui_seinh preserving type )` |
-| `DocumentItemText` | `cast(sgtxt as sgtxt preserving type )` |
-| `ControllingObject` | `objnr` |
-| `FiscalYear` | `gjahr` |
-| `StatisticalKeyFigure` | `cast(stagr as fis_stagr preserving type )` |
-| `ControllingBusTransacType` | `vrgng` |
-| `PersonnelNumber` | `pernr` |
-| `PartnerFunctionalArea` | `fkber` |
-| `PartnerFund` | `geber` |
-| `PartnerGrant` | `grant_nbr` |
-| `PartnerBudgetPeriod` | `budget_pd` |
-| `PostingDate` | `budat` |
-| `DocumentDate` | `bldat` |
-| `AccountingDocumentCreationDate` | `cpudt` |
-| `AccountingDocCreatedByUser` | `usnam` |
-| `ControllingDocumentHeaderText` | `bltxt` |
-| `IsReversalDocument` | `stflg` |
-| `IsReversed` | `stokz` |
-| `ReversedReferenceDocument` | `cast(refbn as reversedreferencedocument preserving type )` |
-| `ExchangeRateDate` | `cast(wsdat as fin_currconvdat preserving type )` |
-| `ExchangeRateType` | `kurst` |
-| `ControllingAreaCurrency` | `kwaer` |
-| `ReferenceDocumentType` | `cast(awtyp as fis_awtyp preserving type )` |
-| `SettlementReferenceDate` | `dabrz` |
-| `_ControllingArea` | *Association* |
-| `_StstcKeyFigQuantityUnit` | *Association* |
-| `_StatisticalKeyFigure` | *Association* |
-| `_PartnerFunctionalArea` | *Association* |
-| `_PartnerGrant` | *Association* |
-| `_PartnerBudgetPeriod` | *Association* |
-| `_ReferenceDocumentType` | *Association* |
-| `_ControllingAreaCurrency` | *Association* |
-| `_ReferenceDocumentTypeText` | *Association* |
-| `_PartnerGrantText` | *Association* |
-| `_PartnerBudgetPeriodText` | *Association* |
-| `_PartnerFunctionalAreaText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `kokrs` |
+| `AccountingDocument` | ✓ | |  | `belnr` |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` |
+| `FiscalPeriod` |  | |  | `cast(perio as fins_fiscalperiod preserving type )` |
+| `StatisticalKeyFigureQuantity` |  | |  | `cast(smebtr as quan1_12)` |
+| `StstcKeyFigQuantityUnit` |  | |  | `cast(meinh as fis_ui_seinh preserving type )` |
+| `DocumentItemText` |  | |  | `cast(sgtxt as sgtxt preserving type )` |
+| `ControllingObject` |  | |  | `objnr` |
+| `FiscalYear` |  | |  | `gjahr` |
+| `StatisticalKeyFigure` |  | |  | `cast(stagr as fis_stagr preserving type )` |
+| `ControllingBusTransacType` |  | |  | `vrgng` |
+| `PersonnelNumber` |  | |  | `pernr` |
+| `PartnerFunctionalArea` |  | |  | `fkber` |
+| `PartnerFund` |  | |  | `geber` |
+| `PartnerGrant` |  | |  | `grant_nbr` |
+| `PartnerBudgetPeriod` |  | |  | `budget_pd` |
+| `PostingDate` |  | |  | `budat` |
+| `DocumentDate` |  | |  | `bldat` |
+| `AccountingDocumentCreationDate` |  | |  | `cpudt` |
+| `AccountingDocCreatedByUser` |  | |  | `usnam` |
+| `ControllingDocumentHeaderText` |  | |  | `bltxt` |
+| `IsReversalDocument` |  | |  | `stflg` |
+| `IsReversed` |  | |  | `stokz` |
+| `ReversedReferenceDocument` |  | |  | `cast(refbn as reversedreferencedocument preserving type )` |
+| `ExchangeRateDate` |  | |  | `cast(wsdat as fin_currconvdat preserving type )` |
+| `ExchangeRateType` |  | |  | `kurst` |
+| `ControllingAreaCurrency` |  | |  | `kwaer` |
+| `ReferenceDocumentType` |  | |  | `cast(awtyp as fis_awtyp preserving type )` |
+| `SettlementReferenceDate` |  | |  | `dabrz` |
+| `_ControllingArea` | | ✓ | | |
+| `_StstcKeyFigQuantityUnit` | | ✓ | | |
+| `_StatisticalKeyFigure` | | ✓ | | |
+| `_PartnerFunctionalArea` | | ✓ | | |
+| `_PartnerGrant` | | ✓ | | |
+| `_PartnerBudgetPeriod` | | ✓ | | |
+| `_ReferenceDocumentType` | | ✓ | | |
+| `_ControllingAreaCurrency` | | ✓ | | |
+| `_ReferenceDocumentTypeText` | | ✓ | | |
+| `_PartnerGrantText` | | ✓ | | |
+| `_PartnerBudgetPeriodText` | | ✓ | | |
+| `_PartnerFunctionalAreaText` | | ✓ | | |
 
 ## Associations
 

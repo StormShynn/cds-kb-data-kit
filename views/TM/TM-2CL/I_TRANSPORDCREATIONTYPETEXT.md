@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderCrtnType` | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_creation_type preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrderCrtnTypeDesc` | `cast(ddtext as /scmtms/vdm_tor_crea_type_desc preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdCreationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderCrtnType` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_creation_type preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrderCrtnTypeDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tor_crea_type_desc preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdCreationType` | | ✓ | | |
 
 ## Associations
 

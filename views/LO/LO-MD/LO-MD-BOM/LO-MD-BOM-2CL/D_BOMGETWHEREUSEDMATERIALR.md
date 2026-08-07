@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BillOfMaterialItemUUID` | `cs_guid` |
-| `BillOfMaterialComponent` | `idnrk` |
-| `BillOfMaterialItemNumber` | `sposn` |
-| `NewBillOfMaterialItemNumber` | `cs_sposn` |
-| `HeaderChangeDocument` | `aennr` |
-| `BillOfMaterialCategory` | `stlty` |
-| `BillOfMaterial` | `stnum` |
-| `SuccessorBillOfMaterial` | `cs_stlnr` |
-| `BillOfMaterialVariant` | `stalt` |
-| `BillOfMaterialVersion` | `bom_version` |
-| `BillOfMaterialItemCategory` | `postp` |
-| `BillOfMaterialItemUnit` | `kmpme` |
-| `BillOfMaterialItemQuantity` | `kmpmg` |
-| `EngineeringChangeDocument` | `aennr` |
-| `ValidityStartDate` | `datuv` |
-| `ValidityEndDate` | `datub` |
-| `BillOfMaterialItemNodeNumber` | `stlkn` |
-| `BOMItemDescription` | `potx1` |
-| `Material` | `matnr` |
-| `MaterialName` | `maktx` |
-| `PlantName` | `werks_name` |
-| `BillOfMaterialVariantUsageDesc` | `antxt` |
-| `Plant` | `werks_d` |
-| `BillOfMaterialVariantUsage` | `stlan` |
-| `BOMVersionStatus` | `cs_versnst` |
-| `BOMVersionStatusDescription` | `val_text` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterialItemUUID` |  | |  | `cs_guid` |
+| `BillOfMaterialComponent` |  | |  | `idnrk` |
+| `BillOfMaterialItemNumber` |  | |  | `sposn` |
+| `NewBillOfMaterialItemNumber` |  | |  | `cs_sposn` |
+| `HeaderChangeDocument` |  | |  | `aennr` |
+| `BillOfMaterialCategory` |  | |  | `stlty` |
+| `BillOfMaterial` |  | |  | `stnum` |
+| `SuccessorBillOfMaterial` |  | |  | `cs_stlnr` |
+| `BillOfMaterialVariant` |  | |  | `stalt` |
+| `BillOfMaterialVersion` |  | |  | `bom_version` |
+| `BillOfMaterialItemCategory` |  | |  | `postp` |
+| `BillOfMaterialItemUnit` |  | |  | `kmpme` |
+| `BillOfMaterialItemQuantity` |  | |  | `kmpmg` |
+| `EngineeringChangeDocument` |  | |  | `aennr` |
+| `ValidityStartDate` |  | |  | `datuv` |
+| `ValidityEndDate` |  | |  | `datub` |
+| `BillOfMaterialItemNodeNumber` |  | |  | `stlkn` |
+| `BOMItemDescription` |  | |  | `potx1` |
+| `Material` |  | |  | `matnr` |
+| `MaterialName` |  | |  | `maktx` |
+| `PlantName` |  | |  | `werks_name` |
+| `BillOfMaterialVariantUsageDesc` |  | |  | `antxt` |
+| `Plant` |  | |  | `werks_d` |
+| `BillOfMaterialVariantUsage` |  | |  | `stlan` |
+| `BOMVersionStatus` |  | |  | `cs_versnst` |
+| `BOMVersionStatusDescription` |  | |  | `val_text` |
 
 ## Source Code
 

@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FrtCostAllocBusProcCat` | `cast ( dd07l.domvalue_l as wlf_use_case_type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FrtCostAllocBusProcCat` | ✓ | |  | `cast ( dd07l.domvalue_l as wlf_use_case_type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

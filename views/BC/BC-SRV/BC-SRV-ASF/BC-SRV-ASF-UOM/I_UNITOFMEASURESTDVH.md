@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UnitOfMeasure` | `UnitOfMeasure` |
-| `UnitOfMeasureDimension` | `UnitOfMeasureDimension` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UnitOfMeasure` | ✓ | |  |  |
+| `UnitOfMeasureDimension` |  | |  |  |
 
 ## Source Code
 

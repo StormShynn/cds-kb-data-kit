@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryReferenceCategory` | `cast( reftyp as trsy_ref_cat preserving type )` |
-| key `TreasuryReferenceNumber` | `cast( refnr as trsy_ref_nmbr preserving type )` |
-| `TreasuryReferenceStatus` | `cast( status as trsy_ref_status preserving type )` |
-| `TreasuryReferencePaymentDate` | `cast( dzterm as trsy_ref_payment_date preserving type )` |
-| `TreasuryReferencePartner` | `cast( kontrh as trsy_ref_business_partner preserving type )` |
-| `TrsyRefExtRefIdfr` | `cast( ext_ref_id as trsy_ref_ext_ref preserving type )` |
-| `ClassificationOfFinInstr` | `cfi_code` |
-| `UniqueProductIdentifier` | `upi` |
-| `InternationalSecuritiesIdnNmbr` | `isin` |
-| `TreasuryReferenceCreatedByUser` | `cast( cruser as trsy_ref_cruser preserving type )` |
-| `TreasuryReferenceCreationDate` | `cast( dcrdat as trsy_ref_dcrdat preserving type )` |
-| `TrsyReferenceCreationTime` | `cast( tcrtim as trsy_ref_tcrtim preserving type )` |
-| `TrsyReferenceLastChangedByUser` | `cast( upuser as trsy_ref_upuser preserving type )` |
-| `TrsyReferenceLastChangeDate` | `cast( dupdat as trsy_ref_dupdat preserving type )` |
-| `TrsyReferenceLastChangeTime` | `cast( tuptim as trsy_ref_tuptim preserving type )` |
-| `_TreasuryReferenceCategory` | *Association* |
-| `_TreasuryReferenceItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryReferenceCategory` | ✓ | |  | `cast( reftyp as trsy_ref_cat preserving type )` |
+| `TreasuryReferenceNumber` | ✓ | |  | `cast( refnr as trsy_ref_nmbr preserving type )` |
+| `TreasuryReferenceStatus` |  | |  | `cast( status as trsy_ref_status preserving type )` |
+| `TreasuryReferencePaymentDate` |  | |  | `cast( dzterm as trsy_ref_payment_date preserving type )` |
+| `TreasuryReferencePartner` |  | |  | `cast( kontrh as trsy_ref_business_partner preserving type )` |
+| `TrsyRefExtRefIdfr` |  | |  | `cast( ext_ref_id as trsy_ref_ext_ref preserving type )` |
+| `ClassificationOfFinInstr` |  | |  | `cfi_code` |
+| `UniqueProductIdentifier` |  | |  | `upi` |
+| `InternationalSecuritiesIdnNmbr` |  | |  | `isin` |
+| `TreasuryReferenceCreatedByUser` |  | |  | `cast( cruser as trsy_ref_cruser preserving type )` |
+| `TreasuryReferenceCreationDate` |  | |  | `cast( dcrdat as trsy_ref_dcrdat preserving type )` |
+| `TrsyReferenceCreationTime` |  | |  | `cast( tcrtim as trsy_ref_tcrtim preserving type )` |
+| `TrsyReferenceLastChangedByUser` |  | |  | `cast( upuser as trsy_ref_upuser preserving type )` |
+| `TrsyReferenceLastChangeDate` |  | |  | `cast( dupdat as trsy_ref_dupdat preserving type )` |
+| `TrsyReferenceLastChangeTime` |  | |  | `cast( tuptim as trsy_ref_tuptim preserving type )` |
+| `_TreasuryReferenceCategory` | | ✓ | | |
+| `_TreasuryReferenceItem` | | ✓ | | |
 
 ## Associations
 

@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationGroup` | `_Source.ConsolidationGroup` |
-| key `ConsolidationUnit` | `_Source.ConsolidationUnit` |
-| key `ConsolidationVersion` | `_Source.ConsolidationVersion` |
-| key `GroupStrucFromFiscalYearPeriod` | `_Source.GroupStrucFromFiscalYearPeriod` |
-| `GroupStrucToFiscalYearPeriod` | `_Source.GroupStrucToFiscalYearPeriod` |
-| `FirstCnsldtnFiscalYearPeriod` | `_Source.FirstCnsldtnFiscalYearPeriod` |
-| `FirstCnsldtnIsAtEndOfPeriod` | `_Source.FirstCnsldtnIsAtEndOfPeriod` |
-| `DivestitureFiscalYearPeriod` | `_Source.DivestitureFiscalYearPeriod` |
-| `DivestitureIsAtBeginOfPeriod` | `_Source.DivestitureIsAtBeginOfPeriod` |
-| `DivestitureIsDueToMerger` | `_Source.DivestitureIsDueToMerger` |
-| `I_CnsldtnGrpStrucMethAssgmtTP` | `_CnsldtnGrpStrucMethAssgmt as _CnsldtnGrpStrucMethAssgmt : redirected to composition child I_CnsldtnGrpStrucMethAssgmtTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationGroup` | ✓ | | `_Source` | `ConsolidationGroup` |
+| `ConsolidationUnit` | ✓ | | `_Source` | `ConsolidationUnit` |
+| `ConsolidationVersion` | ✓ | | `_Source` | `ConsolidationVersion` |
+| `GroupStrucFromFiscalYearPeriod` | ✓ | | `_Source` | `GroupStrucFromFiscalYearPeriod` |
+| `GroupStrucToFiscalYearPeriod` |  | | `_Source` | `GroupStrucToFiscalYearPeriod` |
+| `FirstCnsldtnFiscalYearPeriod` |  | | `_Source` | `FirstCnsldtnFiscalYearPeriod` |
+| `FirstCnsldtnIsAtEndOfPeriod` |  | | `_Source` | `FirstCnsldtnIsAtEndOfPeriod` |
+| `DivestitureFiscalYearPeriod` |  | | `_Source` | `DivestitureFiscalYearPeriod` |
+| `DivestitureIsAtBeginOfPeriod` |  | | `_Source` | `DivestitureIsAtBeginOfPeriod` |
+| `DivestitureIsDueToMerger` |  | | `_Source` | `DivestitureIsDueToMerger` |
+| `I_CnsldtnGrpStrucMethAssgmtTP` |  | |  | `_CnsldtnGrpStrucMethAssgmt as _CnsldtnGrpStrucMethAssgmt : redirected to composition child I_CnsldtnGrpStrucMethAssgmtTP` |
 
 ## Source Code
 

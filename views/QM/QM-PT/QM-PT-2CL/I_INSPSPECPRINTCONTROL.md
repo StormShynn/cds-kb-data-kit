@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspSpecPrintControl` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qdruck1 preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspSpecPrintControl` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qdruck1 preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

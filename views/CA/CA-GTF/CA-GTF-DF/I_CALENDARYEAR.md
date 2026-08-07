@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CalendarYear` | `scal_tt_year.calendaryear` |
-| `IsLeapYear` | `scal_tt_year.isleapyear` |
-| `NumberOfDays` | `scal_tt_year.numberofdays` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CalendarYear` | ✓ | |  | `calendaryear` |
+| `IsLeapYear` |  | |  | `isleapyear` |
+| `NumberOfDays` |  | |  | `numberofdays` |
 
 ## Source Code
 

@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `cast( hrrp_nodet_n.kokrs as fis_kokrs preserving type )` |
-| key `StatisticalKeyFigureHierarchy` | `hrrp_nodet_n.hryid_42` |
-| key `HierarchyNode` | `hrrp_nodet_n.hrynode` |
-| key `ValidityEndDate` | `hrrp_nodet_n.hryvalto` |
-| key `Language` | `hrrp_nodet_n.spras` |
-| `HierarchyNodeText` | `hrrp_nodet_n.nodetxt` |
-| `HierarchyNodeShortText` | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |
-| `ValidityStartDate` | `hrrp_nodet_n.hryvalfrom` |
-| `_ControllingAreaText` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_Language` | *Association* |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  | `cast( hrrp_nodet_n.kokrs as fis_kokrs preserving type )` |
+| `StatisticalKeyFigureHierarchy` | ✓ | |  | `hryid_42` |
+| `HierarchyNode` | ✓ | |  | `hrynode` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `Language` | ✓ | |  | `spras` |
+| `HierarchyNodeText` |  | |  | `nodetxt` |
+| `HierarchyNodeShortText` |  | |  | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

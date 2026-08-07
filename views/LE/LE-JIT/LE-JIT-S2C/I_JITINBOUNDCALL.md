@@ -27,53 +27,53 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITHeaderUUID` | `db_key` |
-| `InternalJITCallNumber` | `int_call_num` |
-| `JITScenario` | `njit_scenario` |
-| `ExternalJITCallNumber` | `ext_call_num` |
-| `CustomerUUID` | `customeruuid` |
-| `ShipToParty` | `kunnr` |
-| `SoldToParty` | `kunag` |
-| `SalesOrganization` | `vkorg` |
-| `DistributionChannel` | `vtweg` |
-| `Division` | `spart` |
-| `UnloadingPointName` | `ablad` |
-| `CustomerPartnerDescription` | `knref` |
-| `MatlUsageIndicator` | `abrvw` |
-| `ActiveSupplier` | `cast( lifnr as abap.char( 10 ) )` |
-| `JITCallType` | `call_type` |
-| `JITLifecycleStatus` | `lifecycle_stat` |
-| `VehicleModel` | `vhcle_model` |
-| `VehicleIdentificationNumber` | `vhvin` |
-| `JITExtSequenceNumber` | `ext_sequence_num` |
-| `JITIntSequenceNumber` | `int_sequence_num` |
-| `JITComponentIsReordered` | `jitcomponentisreordered` |
-| `CreationDateTime` | `crea_date_time` |
-| `CreatedByUser` | `crea_uname` |
-| `LastChangeDateTime` | `lchg_date_time` |
-| `LastChangedByUser` | `lchg_uname` |
-| `_CustomerToBusinessPartner` | *Association* |
-| `_JITLifecycleStatus` | *Association* |
-| `_JITCallType` | *Association* |
-| `_JITCustomer` | *Association* |
-| `_MatlUsageIndicator` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_LastChangedByUserDescription` | *Association* |
-| `_CreatedByUserDescription` | *Association* |
-| `_Customer` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_JITComponentIsReordered` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_JITCallHdrRefTextEnhcd` | *Association* |
-| `_JITInbCallComponentGroup` | *Association* |
-| `_JITInbCallComponent` | *Association* |
-| `_JITInbCallReferenceText` | *Association* |
-| `_JITInbCallDocReference` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITHeaderUUID` | ✓ | |  | `db_key` |
+| `InternalJITCallNumber` |  | |  | `int_call_num` |
+| `JITScenario` |  | |  | `njit_scenario` |
+| `ExternalJITCallNumber` |  | |  | `ext_call_num` |
+| `CustomerUUID` |  | |  | `customeruuid` |
+| `ShipToParty` |  | |  | `kunnr` |
+| `SoldToParty` |  | |  | `kunag` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `Division` |  | |  | `spart` |
+| `UnloadingPointName` |  | |  | `ablad` |
+| `CustomerPartnerDescription` |  | |  | `knref` |
+| `MatlUsageIndicator` |  | |  | `abrvw` |
+| `ActiveSupplier` |  | |  | `cast( lifnr as abap.char( 10 ) )` |
+| `JITCallType` |  | |  | `call_type` |
+| `JITLifecycleStatus` |  | |  | `lifecycle_stat` |
+| `VehicleModel` |  | |  | `vhcle_model` |
+| `VehicleIdentificationNumber` |  | |  | `vhvin` |
+| `JITExtSequenceNumber` |  | |  | `ext_sequence_num` |
+| `JITIntSequenceNumber` |  | |  | `int_sequence_num` |
+| `JITComponentIsReordered` |  | |  | `jitcomponentisreordered` |
+| `CreationDateTime` |  | |  | `crea_date_time` |
+| `CreatedByUser` |  | |  | `crea_uname` |
+| `LastChangeDateTime` |  | |  | `lchg_date_time` |
+| `LastChangedByUser` |  | |  | `lchg_uname` |
+| `_CustomerToBusinessPartner` | | ✓ | | |
+| `_JITLifecycleStatus` | | ✓ | | |
+| `_JITCallType` | | ✓ | | |
+| `_JITCustomer` | | ✓ | | |
+| `_MatlUsageIndicator` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_LastChangedByUserDescription` | | ✓ | | |
+| `_CreatedByUserDescription` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_JITComponentIsReordered` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_JITCallHdrRefTextEnhcd` | | ✓ | | |
+| `_JITInbCallComponentGroup` | | ✓ | | |
+| `_JITInbCallComponent` | | ✓ | | |
+| `_JITInbCallReferenceText` | | ✓ | | |
+| `_JITInbCallDocReference` | | ✓ | | |
 
 ## Associations
 

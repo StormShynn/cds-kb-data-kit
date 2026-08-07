@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TemperatureConditionInd` | `tempb` |
-| key `Language` | `t143t.spras` |
-| `TemperatureConditionIndName` | `tbtxt` |
-| `_TemperatureConditionInd` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TemperatureConditionInd` | ✓ | |  | `tempb` |
+| `Language` | ✓ | |  | `spras` |
+| `TemperatureConditionIndName` |  | |  | `tbtxt` |
+| `_TemperatureConditionInd` | | ✓ | | |
 
 ## Associations
 

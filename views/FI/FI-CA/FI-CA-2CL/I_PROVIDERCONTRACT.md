@@ -28,46 +28,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProviderContract` | `vtkey` |
-| `BusinessPartner` | `cast(gpart as bu_partner preserving type )` |
-| `CreationDate` | `erdat` |
-| `CreationTime` | `cast(ertim as ttet_dt_cr_time preserving type )` |
-| `CreatedByUser` | `ernam` |
-| `IsMarkedForDeletion` | `cast(loevm as loevm preserving type )` |
-| `LastChangeDate` | `aedat` |
-| `LastChangeTime` | `aetim` |
-| `LastChangedByUser` | `aenam` |
-| `CAProviderContractName` | `vtbez` |
-| `CAProviderContractExtReference` | `vtalt` |
-| `CAPrvdrContrStartDateTime` | `vtbeg` |
-| `CAPrvdrContrEndDateTime` | `vtend` |
-| `AuthorizationGroup` | `begru` |
-| `CAAuthorizationGroup` | `begru` |
-| `CompanyCode` | `bukrs` |
-| `TimeZoneID` | `cast(tzone as tznzone preserving type )` |
-| `CAProviderContractCategory` | `vtcat` |
-| `CAProviderContractMigrtnStatus` | `migst` |
-| `CAProviderContractType` | `vtchr` |
-| `CAProviderContractStatus` | `statu` |
-| `CAProviderContractSender` | `sender` |
-| `PrvdrContrEarliestEndDateTime` | `vtend_min` |
-| `MinNrOfMonthsForContractPeriod` | `vtper_min` |
-| `NrOfMonthsForContractRenewal` | `vtper_rnwl` |
-| `NrOfDaysForContrNoticePeriod` | `vtper_canc` |
-| `BudgetBillingPlanType` | `uti_bbptype` |
-| `_BusinessPartner` | *Association* |
-| `_CAAuthorizationGroup` | *Association* |
-| `_CompCode` | *Association* |
-| `_ProviderContractCategory` | *Association* |
-| `_ProviderContractMigrtnSts` | *Association* |
-| `_ProviderContractType` | *Association* |
-| `_ProviderContractStatus` | *Association* |
-| `_ProviderContractSender` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_TimeZone` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProviderContract` | ✓ | |  | `vtkey` |
+| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type )` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreationTime` |  | |  | `cast(ertim as ttet_dt_cr_time preserving type )` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `IsMarkedForDeletion` |  | |  | `cast(loevm as loevm preserving type )` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `LastChangeTime` |  | |  | `aetim` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `CAProviderContractName` |  | |  | `vtbez` |
+| `CAProviderContractExtReference` |  | |  | `vtalt` |
+| `CAPrvdrContrStartDateTime` |  | |  | `vtbeg` |
+| `CAPrvdrContrEndDateTime` |  | |  | `vtend` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `CAAuthorizationGroup` |  | |  | `begru` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `TimeZoneID` |  | |  | `cast(tzone as tznzone preserving type )` |
+| `CAProviderContractCategory` |  | |  | `vtcat` |
+| `CAProviderContractMigrtnStatus` |  | |  | `migst` |
+| `CAProviderContractType` |  | |  | `vtchr` |
+| `CAProviderContractStatus` |  | |  | `statu` |
+| `CAProviderContractSender` |  | |  | `sender` |
+| `PrvdrContrEarliestEndDateTime` |  | |  | `vtend_min` |
+| `MinNrOfMonthsForContractPeriod` |  | |  | `vtper_min` |
+| `NrOfMonthsForContractRenewal` |  | |  | `vtper_rnwl` |
+| `NrOfDaysForContrNoticePeriod` |  | |  | `vtper_canc` |
+| `BudgetBillingPlanType` |  | |  | `uti_bbptype` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CAAuthorizationGroup` | | ✓ | | |
+| `_CompCode` | | ✓ | | |
+| `_ProviderContractCategory` | | ✓ | | |
+| `_ProviderContractMigrtnSts` | | ✓ | | |
+| `_ProviderContractType` | | ✓ | | |
+| `_ProviderContractStatus` | | ✓ | | |
+| `_ProviderContractSender` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_TimeZone` | | ✓ | | |
 
 ## Associations
 

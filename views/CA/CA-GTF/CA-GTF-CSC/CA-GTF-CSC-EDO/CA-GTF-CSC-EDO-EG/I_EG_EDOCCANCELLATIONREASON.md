@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EG_EDocCancellationCode` | `EG_EDocCancellationCode` |
-| key `EG_EDocLanguage` | `EG_EDocLanguage` |
-| `EG_EDocCanclnReasonText` | `EG_EDocCanclnReasonText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EG_EDocCancellationCode` | ✓ | |  |  |
+| `EG_EDocLanguage` | ✓ | |  |  |
+| `EG_EDocCanclnReasonText` |  | |  |  |
 
 ## Source Code
 

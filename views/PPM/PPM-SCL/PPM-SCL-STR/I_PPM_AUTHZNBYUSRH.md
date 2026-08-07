@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReferencedObjectUUID` | `cast( Auth.AccCtrlReferencedObjectUUID as /s4ppm/tv_entity_guid preserving type )` |
-| key `Activity` | `case Auth.AccessControlRestrictionCode when 'READ' then cast( 'Read' as aco_actvt ) when 'WRITE' then cast( 'Write' as aco_actvt ) when 'ADMIN' then cast( 'Admin' as aco_actvt ) when 'FINANCL' then cast( 'Financials' as aco_actvt ) end` |
-| key `UserID` | `cast( Auth.UserID as aco_user_id preserving type )` |
-| `ObjectType` | `cast( 'DPO' as aco_object_type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReferencedObjectUUID` | ✓ | |  | `cast( Auth.AccCtrlReferencedObjectUUID as /s4ppm/tv_entity_guid preserving type )` |
+| `Activity` | ✓ | |  | `case Auth.AccessControlRestrictionCode when 'READ' then cast( 'Read' as aco_actvt ) when 'WRITE' then cast( 'Write' as aco_actvt ) when 'ADMIN' then cast( 'Admin' as aco_actvt ) when 'FINANCL' then cast( 'Financials' as aco_actvt ) end` |
+| `UserID` | ✓ | |  | `cast( Auth.UserID as aco_user_id preserving type )` |
+| `ObjectType` |  | |  | `cast( 'DPO' as aco_object_type )` |
 
 ## Source Code
 

@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialManagementArea` | `cast (left(_Hierarchy.HierarchyClass, 4 ) as fincs_financialmanagementarea preserving type )` |
-| key `CnsldtnFundHierarchy` | `cast(_Hierarchy.UniversalHierarchy as fincs_fundhierarchy preserving type )` |
-| key `ValidityEndDate` | `_Hierarchy.ValidityEndDate` |
-| `ValidityStartDate` | `_Hierarchy.ValidityStartDate` |
-| `LastChangedByUser` | `_Hierarchy.LastChangedByUser` |
-| `LastChangeDateTime` | `_Hierarchy.LastChangeDateTime` |
-| `_FinancialManagementArea` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  | `cast (left(_Hierarchy.HierarchyClass, 4 ) as fincs_financialmanagementarea preserving type )` |
+| `CnsldtnFundHierarchy` | ✓ | |  | `cast(_Hierarchy.UniversalHierarchy as fincs_fundhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_Hierarchy` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_Hierarchy` | `ValidityStartDate` |
+| `LastChangedByUser` |  | | `_Hierarchy` | `LastChangedByUser` |
+| `LastChangeDateTime` |  | | `_Hierarchy` | `LastChangeDateTime` |
+| `_FinancialManagementArea` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

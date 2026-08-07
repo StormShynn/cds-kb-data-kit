@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ExchangeRateType` | `kurst` |
-| key `SourceCurrency` | `fcurr` |
-| key `TargetCurrency` | `tcurr` |
-| key `ValidityStartDate` | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |
-| `ExchangeRate` | `ukurs` |
-| `NumberOfSourceCurrencyUnits` | `ffact` |
-| `NumberOfTargetCurrencyUnits` | `tfact` |
-| `_ExchangeRateType` | *Association* |
-| `_SourceCurrency` | *Association* |
-| `_TargetCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ExchangeRateType` | ✓ | |  | `kurst` |
+| `SourceCurrency` | ✓ | |  | `fcurr` |
+| `TargetCurrency` | ✓ | |  | `tcurr` |
+| `ValidityStartDate` | ✓ | |  | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |
+| `ExchangeRate` |  | |  | `ukurs` |
+| `NumberOfSourceCurrencyUnits` |  | |  | `ffact` |
+| `NumberOfTargetCurrencyUnits` |  | |  | `tfact` |
+| `_ExchangeRateType` | | ✓ | | |
+| `_SourceCurrency` | | ✓ | | |
+| `_TargetCurrency` | | ✓ | | |
 
 ## Associations
 

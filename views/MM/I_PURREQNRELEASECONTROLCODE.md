@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurReqnReleaseControlCode` | `frgkz` |
-| `_PurReqnReleaseControlCodeT` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurReqnReleaseControlCode` | ✓ | |  | `frgkz` |
+| `_PurReqnReleaseControlCodeT` | | ✓ | | |
 
 ## Associations
 

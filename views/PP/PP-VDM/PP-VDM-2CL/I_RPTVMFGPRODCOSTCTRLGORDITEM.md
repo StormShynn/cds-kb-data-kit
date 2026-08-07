@@ -28,58 +28,58 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderID` | `OrderID` |
-| key `OrderItem` | `OrderItem` |
-| `OrderType` | `OrderType` |
-| `Material` | `Material` |
-| `Product` | `cast(Material as productnumber preserving type)` |
-| `ProductionPlant` | `ProductionPlant` |
-| `PlanningPlant` | `MRPPlant` |
-| `ProductionVersion` | `ProductionVersion` |
-| `StorageLocation` | `StorageLocation` |
-| `MRPArea` | `MRPArea` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElementInternalID_2` | `WBSElementInternalID_2` |
-| `ProductConfiguration` | `ProductConfiguration` |
-| `ObjectInternalID` | `ObjectInternalID` |
-| `IsCompletelyDelivered` | `IsCompletelyDelivered` |
-| `GoodsReceiptIsExpected` | `GoodsReceiptIsExpected` |
-| `GoodsReceiptIsNonValuated` | `GoodsReceiptIsNonValuated` |
-| `PlannedEndDate` | `cast(PlannedEndDate as pph_gltrp preserving type)` |
-| `ScheduledBasicEndDate` | `cast(ScheduledBasicEndDate as pph_gltrs preserving type)` |
-| `PlannedDeliveryDate` | `PlannedDeliveryDate` |
-| `ActualDeliveryDate` | `ActualDeliveryDate` |
-| `BaseUnit` | `BaseUnit` |
-| `ProductionUnit` | `ProductionUnit` |
-| `OrderPlannedTotalQty` | `cast(ItemQuantity as co_psmng preserving type)` |
-| `OrderPlannedScrapQty` | `cast(MfgOrderItemPlannedScrapQty as co_psamg preserving type)` |
-| `GoodsReceiptQty` | `cast(MfgOrderItemGoodsReceiptQty as co_wemng preserving type)` |
-| `ActualDeviationQty` | `cast(MfgOrderItemActualDeviationQty as co_iamng preserving type)` |
-| `BusinessArea` | `BusinessArea` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `_Order` | *Association* |
-| `_Order_2` | *Association* |
-| `_OrderType` | *Association* |
-| `_Product` | *Association* |
-| `_PlanningPlant` | *Association* |
-| `_Material` | *Association* |
-| `_ProductionPlant` | *Association* |
-| `_MRPArea` | *Association* |
-| `_ProductionVersion` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_WBSElement` | *Association* |
-| `_WBSElementBasicData2` | *Association* |
-| `_EnterpriseProjectElement` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_AccountAssignmentCategory` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_ProductionUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderID` | ✓ | |  |  |
+| `OrderItem` | ✓ | |  |  |
+| `OrderType` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  | `cast(Material as productnumber preserving type)` |
+| `ProductionPlant` |  | |  |  |
+| `PlanningPlant` |  | |  | `MRPPlant` |
+| `ProductionVersion` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `MRPArea` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementInternalID_2` |  | |  |  |
+| `ProductConfiguration` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `PlannedEndDate` |  | |  | `cast(PlannedEndDate as pph_gltrp preserving type)` |
+| `ScheduledBasicEndDate` |  | |  | `cast(ScheduledBasicEndDate as pph_gltrs preserving type)` |
+| `PlannedDeliveryDate` |  | |  |  |
+| `ActualDeliveryDate` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `ProductionUnit` |  | |  |  |
+| `OrderPlannedTotalQty` |  | |  | `cast(ItemQuantity as co_psmng preserving type)` |
+| `OrderPlannedScrapQty` |  | |  | `cast(MfgOrderItemPlannedScrapQty as co_psamg preserving type)` |
+| `GoodsReceiptQty` |  | |  | `cast(MfgOrderItemGoodsReceiptQty as co_wemng preserving type)` |
+| `ActualDeviationQty` |  | |  | `cast(MfgOrderItemActualDeviationQty as co_iamng preserving type)` |
+| `BusinessArea` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `_Order` | | ✓ | | |
+| `_Order_2` | | ✓ | | |
+| `_OrderType` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_PlanningPlant` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_ProductionPlant` | | ✓ | | |
+| `_MRPArea` | | ✓ | | |
+| `_ProductionVersion` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_WBSElementBasicData2` | | ✓ | | |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_AccountAssignmentCategory` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_ProductionUnit` | | ✓ | | |
 
 ## Associations
 

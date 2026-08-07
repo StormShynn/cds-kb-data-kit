@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JVAChartOfAccounts` | `JVACtbckCOAAcctMappgInterBsc.JVAChartOfAccounts` |
-| key `JVAInterCompanyCOA` | `JVACtbckCOAAcctMappgInterBsc.JVAInterCompanyCOA` |
-| key `FromGLAccount` | `JVACtbckCOAAcctMappgInterBsc.FromGLAccount` |
-| `ToGLAccount` | `JVACtbckCOAAcctMappgInterBsc.ToGLAccount` |
-| `CutbackAccount` | `JVACtbckCOAAcctMappgInterBsc.CutbackAccount` |
-| `JVAIsToKeepOriginalAccount` | `JVACtbckCOAAcctMappgInterBsc.JVAIsToKeepOriginalAccount` |
-| `_ChartOfAccounts` | *Association* |
-| `_JVAInterCompanyCOA` | *Association* |
-| `_FromGLAccount` | *Association* |
-| `_ToGLAccount` | *Association* |
-| `_CutbackAccount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JVAChartOfAccounts` | ✓ | |  |  |
+| `JVAInterCompanyCOA` | ✓ | |  |  |
+| `FromGLAccount` | ✓ | |  |  |
+| `ToGLAccount` |  | |  |  |
+| `CutbackAccount` |  | |  |  |
+| `JVAIsToKeepOriginalAccount` |  | |  |  |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_JVAInterCompanyCOA` | | ✓ | | |
+| `_FromGLAccount` | | ✓ | | |
+| `_ToGLAccount` | | ✓ | | |
+| `_CutbackAccount` | | ✓ | | |
 
 ## Associations
 

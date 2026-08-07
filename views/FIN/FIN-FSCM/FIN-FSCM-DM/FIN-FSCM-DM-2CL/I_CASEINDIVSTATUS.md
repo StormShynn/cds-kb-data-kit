@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CaseStatusProfile` | `scmgstatprofs.profile_id` |
-| key `CaseStatus` | `scmgstatprofs.stat_orderno` |
-| `CaseSystemStatus` | `scmgstatprofs.stat_para` |
-| `CaseLowestStatus` | `scmgstatprofs.stat_orderno_l` |
-| `CaseHighestStatus` | `scmgstatprofs.stat_orderno_h` |
-| `CaseEvent` | `scmgstatprofs.wf_event` |
-| `_StatProf` | *Association* |
-| `_SystemStatus` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CaseStatusProfile` | ✓ | |  | `profile_id` |
+| `CaseStatus` | ✓ | |  | `stat_orderno` |
+| `CaseSystemStatus` |  | |  | `stat_para` |
+| `CaseLowestStatus` |  | |  | `stat_orderno_l` |
+| `CaseHighestStatus` |  | |  | `stat_orderno_h` |
+| `CaseEvent` |  | |  | `wf_event` |
+| `_StatProf` | | ✓ | | |
+| `_SystemStatus` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

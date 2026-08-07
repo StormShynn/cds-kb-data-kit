@@ -30,41 +30,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `SalesSchedgAgrmtItem.SalesSchedulingAgreement` |
-| key `SalesSchedulingAgreementItem` | `SalesSchedgAgrmtItem.SalesSchedulingAgreementItem` |
-| `Product` | `SalesSchedgAgrmtItem.Product` |
-| `ProductGroup` | `SalesSchedgAgrmtItem.ProductGroup` |
-| `MaterialByCustomer` | `SalesSchedgAgrmtItem.MaterialByCustomer` |
-| `SalesSchedgAgrmtItemCategory` | `SalesSchedgAgrmtItem.SalesSchedgAgrmtItemCategory` |
-| `MaterialPricingGroup` | `SalesSchedgAgrmtItem.MaterialPricingGroup` |
-| `SalesSchedgAgrmtItemType` | `SalesSchedgAgrmtItem.SalesSchedgAgrmtItemType` |
-| `PlngDelivSchedInstrn` | `SalesSchedgAgrmtItem.PlngDelivSchedInstrn` |
-| `Plant` | `SalesSchedgAgrmtItem.Plant` |
-| `StorageLocation` | `SalesSchedgAgrmtItem.StorageLocation` |
-| `PurchaseOrderByCustomer` | `SalesSchedgAgrmtItem.PurchaseOrderByCustomer` |
-| `OrderQuantity` | `SalesSchedgAgrmtItem.OrderQuantity` |
-| `OrderQuantityUnit` | `SalesSchedgAgrmtItem.OrderQuantityUnit` |
-| `TargetQuantity` | `SalesSchedgAgrmtItem.TargetQuantity` |
-| `TargetQuantityUnit` | `SalesSchedgAgrmtItem.TargetQuantityUnit` |
-| `Batch` | `SalesSchedgAgrmtItem.Batch` |
-| `ItemGrossWeight` | `SalesSchedgAgrmtItem.ItemGrossWeight` |
-| `ItemNetWeight` | `SalesSchedgAgrmtItem.ItemNetWeight` |
-| `ItemWeightUnit` | `SalesSchedgAgrmtItem.ItemWeightUnit` |
-| `ItemVolume` | `SalesSchedgAgrmtItem.ItemVolume` |
-| `ItemVolumeUnit` | `SalesSchedgAgrmtItem.ItemVolumeUnit` |
-| `NetAmount` | `SalesSchedgAgrmtItem.NetAmount` |
-| `TransactionCurrency` | `SalesSchedgAgrmtItem.TransactionCurrency` |
-| `SDProcessStatus` | `SalesSchedgAgrmtItem.SDProcessStatus` |
-| `SalesSchedgAgrmtType` | `SalesSchedgAgrmtItem.SalesSchedgAgrmtType` |
-| `OrganizationDivision` | `SalesSchedgAgrmtItem.OrganizationDivision` |
-| `SalesOrganization` | `SalesSchedgAgrmtItem.SalesOrganization` |
-| `DistributionChannel` | `SalesSchedgAgrmtItem.DistributionChannel` |
-| `_SalesSchedulingAgreement` | *Association* |
-| `_ItemPartner` | *Association* |
-| `_ItemText` | *Association* |
-| `_ItemPricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  |  |
+| `SalesSchedulingAgreementItem` | ✓ | |  |  |
+| `Product` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `SalesSchedgAgrmtItemCategory` |  | |  |  |
+| `MaterialPricingGroup` |  | |  |  |
+| `SalesSchedgAgrmtItemType` |  | |  |  |
+| `PlngDelivSchedInstrn` |  | |  |  |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `OrderQuantity` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetQuantityUnit` |  | |  |  |
+| `Batch` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `SDProcessStatus` |  | |  |  |
+| `SalesSchedgAgrmtType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `_SalesSchedulingAgreement` | | ✓ | | |
+| `_ItemPartner` | | ✓ | | |
+| `_ItemText` | | ✓ | | |
+| `_ItemPricingElement` | | ✓ | | |
 
 ## Source Code
 

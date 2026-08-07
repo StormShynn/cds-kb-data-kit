@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UnitedStatesTaxSourcing` | `cast(domvalue_l as fis_etxdc_sourcing)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UnitedStatesTaxSourcing` | ✓ | |  | `cast(domvalue_l as fis_etxdc_sourcing)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

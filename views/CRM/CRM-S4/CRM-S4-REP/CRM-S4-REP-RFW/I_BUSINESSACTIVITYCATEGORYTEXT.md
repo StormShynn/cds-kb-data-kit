@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessActivityCategory` | `category` |
-| key `Language` | `langu` |
-| `BusinessActivityCategoryName` | `description` |
-| `_BusinessActivityCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessActivityCategory` | ✓ | |  | `category` |
+| `Language` | ✓ | |  | `langu` |
+| `BusinessActivityCategoryName` |  | |  | `description` |
+| `_BusinessActivityCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

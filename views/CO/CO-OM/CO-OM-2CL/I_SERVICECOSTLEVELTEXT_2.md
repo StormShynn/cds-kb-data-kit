@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceCostLevel` | `fcoc_sc_levelt.srv_cost_level` |
-| key `Language` | `fcoc_sc_levelt.langu` |
-| `ServiceCostLevelName` | `fcoc_sc_levelt.name` |
-| `ServiceCostLevelShortName` | `fcoc_sc_levelt.short_name` |
-| `ValidityStartDate` | `fcoc_sc_levelt.start_date` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceCostLevel` | ✓ | |  | `srv_cost_level` |
+| `Language` | ✓ | |  | `langu` |
+| `ServiceCostLevelName` |  | |  | `name` |
+| `ServiceCostLevelShortName` |  | |  | `short_name` |
+| `ValidityStartDate` |  | |  | `start_date` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

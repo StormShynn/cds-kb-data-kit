@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionCatalog` | `qpcd.katalogart` |
-| `InspectionCodeGroup` | `}] key codegruppe` |
-| key `InspectionCode` | `code` |
-| `CodeIsInactive` | `case qpcd.inaktiv when ' ' then cast( ' ' as vdm_qm_codeisinactive preserving type ) else cast( 'X' as vdm_qm_codeisinactive preserving type ) end` |
-| `_InspectionCatalog` | *Association* |
-| `_InspectionCodeGroup` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionCatalog` | ✓ | |  | `katalogart` |
+| `InspectionCodeGroup` |  | |  | `}] key codegruppe` |
+| `InspectionCode` | ✓ | |  | `code` |
+| `CodeIsInactive` |  | |  | `case qpcd.inaktiv when ' ' then cast( ' ' as vdm_qm_codeisinactive preserving type ) else cast( 'X' as vdm_qm_codeisinactive preserving type ) end` |
+| `_InspectionCatalog` | | ✓ | | |
+| `_InspectionCodeGroup` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

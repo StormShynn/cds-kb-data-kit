@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LegalTransactionTask` | `LegalTransactionTask` |
-| key `LegalTransactionUUID` | `LegalTransactionUUID` |
-| `LegalTransaction` | `LegalTransaction` |
-| `LegalTransactionTitle` | `LegalTransactionTitle` |
-| `LglTransTskCrtnUTCDteTme` | `LglTransTskCrtnUTCDteTme` |
-| `LglCntntMTaskCompltnUTCDteTme` | `LglCntntMTaskCompltnUTCDteTme` |
-| `LegalTransactionTaskStatus` | `LegalTransactionTaskStatus` |
-| `LegalTransactionTaskStatusName` | `LegalTransactionTaskStatusName` |
-| `LegalTransactionTaskCurUsr` | `LegalTransactionTaskCurUsr` |
-| `LegalTransactionTaskCurUsrName` | `_User.UserDescription` |
-| `WorkflowTaskResult` | `WorkflowTaskResult` |
-| `WorkflowStepResultText` | `_WorkflowTaskStepResult[1:Language=$session.system_language].WorkflowStepResultText` |
-| `WorkflowTaskResultComment` | `WorkflowTaskResultComment` |
-| `_LegalTransaction` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LegalTransactionTask` | ✓ | |  |  |
+| `LegalTransactionUUID` | ✓ | |  |  |
+| `LegalTransaction` |  | |  |  |
+| `LegalTransactionTitle` |  | |  |  |
+| `LglTransTskCrtnUTCDteTme` |  | |  |  |
+| `LglCntntMTaskCompltnUTCDteTme` |  | |  |  |
+| `LegalTransactionTaskStatus` |  | |  |  |
+| `LegalTransactionTaskStatusName` |  | |  |  |
+| `LegalTransactionTaskCurUsr` |  | |  |  |
+| `LegalTransactionTaskCurUsrName` |  | | `_User` | `UserDescription` |
+| `WorkflowTaskResult` |  | |  |  |
+| `WorkflowStepResultText` |  | |  | `_WorkflowTaskStepResult[1:Language=$session.system_language].WorkflowStepResultText` |
+| `WorkflowTaskResultComment` |  | |  |  |
+| `_LegalTransaction` | | ✓ | | |
 
 ## Source Code
 

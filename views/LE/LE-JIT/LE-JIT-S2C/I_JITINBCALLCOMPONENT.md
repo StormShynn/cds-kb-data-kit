@@ -27,49 +27,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallComponentUUID` | `db_key` |
-| `JITHeaderUUID` | `root_key` |
-| `JITCallCompGrpUUID` | `parent_key` |
-| `InternalJITCallNumber` | `int_call_num` |
-| `CompGrpNumber` | `comp_grp_num` |
-| `JITCallItemNumber` | `call_item_num` |
-| `Material` | `matnr` |
-| `MaterialByCustomer` | `kdmat` |
-| `ExtJITCallItemNumber` | `ext_call_item_num` |
-| `SalesSchedulingAgreement` | `vbeln` |
-| `SalesSchedulingAgreementItem` | `posnr` |
-| `Division` | `spart` |
-| `RequestedQuantity` | `requested_quantity` |
-| `ActualDeliveredQuantity` | `delivered_quantity` |
-| `IssuedQuantity` | `issuedquantity` |
-| `HandlingUnitQuantity` | `handlingunitquantity` |
-| `InvoicedQuantity` | `invoicedquantity` |
-| `QuantityUnit` | `meins` |
-| `JITCallCompMatlBackflushStatus` | `jitcallcompmatlbackflushstatus` |
-| `JITCallCompMatlBackflushType` | `jitcallcompmatlbackflushtype` |
-| `JITCallCompBackflushStsUpdtdOn` | `jitcallcompbackflushstsupdtdon` |
-| `VarianceReasonCode` | `variancereasoncode` |
-| `JITInbCallCompDelivConfStatus` | `jitinbcallcompdelivconfstatus` |
-| `JITDelivConfQuantity` | `jitdelivconfquantity` |
-| `_JITInbCallComponentGroup` | *Association* |
-| `_ProductCompMatl` | *Association* |
-| `_Division` | *Association* |
-| `_JITBackflushStatus` | *Association* |
-| `_JITSerialNumbers` | *Association* |
-| `_SalesSchedgAgrmt` | *Association* |
-| `_SalesSchedgAgrmtItem` | *Association* |
-| `_JITCallHdrRefTextEnhcd` | *Association* |
-| `_JITCallCompGrpRefTextEnhcd` | *Association* |
-| `_JITCallCompMatlRefTextEnhcd` | *Association* |
-| `_JITBackflushType` | *Association* |
-| `_JITInbCallCompDlvConfSts` | *Association* |
-| `_JITInboundCall` | *Association* |
-| `_JITInbCallCompDocReference` | *Association* |
-| `_JITInbCallCompMessage` | *Association* |
-| `_JITInbCallCompRawMaterial` | *Association* |
-| `_JITInbCallCompRefText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallComponentUUID` | ✓ | |  | `db_key` |
+| `JITHeaderUUID` |  | |  | `root_key` |
+| `JITCallCompGrpUUID` |  | |  | `parent_key` |
+| `InternalJITCallNumber` |  | |  | `int_call_num` |
+| `CompGrpNumber` |  | |  | `comp_grp_num` |
+| `JITCallItemNumber` |  | |  | `call_item_num` |
+| `Material` |  | |  | `matnr` |
+| `MaterialByCustomer` |  | |  | `kdmat` |
+| `ExtJITCallItemNumber` |  | |  | `ext_call_item_num` |
+| `SalesSchedulingAgreement` |  | |  | `vbeln` |
+| `SalesSchedulingAgreementItem` |  | |  | `posnr` |
+| `Division` |  | |  | `spart` |
+| `RequestedQuantity` |  | |  | `requested_quantity` |
+| `ActualDeliveredQuantity` |  | |  | `delivered_quantity` |
+| `IssuedQuantity` |  | |  | `issuedquantity` |
+| `HandlingUnitQuantity` |  | |  | `handlingunitquantity` |
+| `InvoicedQuantity` |  | |  | `invoicedquantity` |
+| `QuantityUnit` |  | |  | `meins` |
+| `JITCallCompMatlBackflushStatus` |  | |  | `jitcallcompmatlbackflushstatus` |
+| `JITCallCompMatlBackflushType` |  | |  | `jitcallcompmatlbackflushtype` |
+| `JITCallCompBackflushStsUpdtdOn` |  | |  | `jitcallcompbackflushstsupdtdon` |
+| `VarianceReasonCode` |  | |  | `variancereasoncode` |
+| `JITInbCallCompDelivConfStatus` |  | |  | `jitinbcallcompdelivconfstatus` |
+| `JITDelivConfQuantity` |  | |  | `jitdelivconfquantity` |
+| `_JITInbCallComponentGroup` | | ✓ | | |
+| `_ProductCompMatl` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_JITBackflushStatus` | | ✓ | | |
+| `_JITSerialNumbers` | | ✓ | | |
+| `_SalesSchedgAgrmt` | | ✓ | | |
+| `_SalesSchedgAgrmtItem` | | ✓ | | |
+| `_JITCallHdrRefTextEnhcd` | | ✓ | | |
+| `_JITCallCompGrpRefTextEnhcd` | | ✓ | | |
+| `_JITCallCompMatlRefTextEnhcd` | | ✓ | | |
+| `_JITBackflushType` | | ✓ | | |
+| `_JITInbCallCompDlvConfSts` | | ✓ | | |
+| `_JITInboundCall` | | ✓ | | |
+| `_JITInbCallCompDocReference` | | ✓ | | |
+| `_JITInbCallCompMessage` | | ✓ | | |
+| `_JITInbCallCompRawMaterial` | | ✓ | | |
+| `_JITInbCallCompRefText` | | ✓ | | |
 
 ## Associations
 

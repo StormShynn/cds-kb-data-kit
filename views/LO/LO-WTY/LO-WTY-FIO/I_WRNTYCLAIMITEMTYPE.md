@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WarrantyItemType` | `cwty011.poskt_cust` |
-| `WrntyControllingItemType` | `cwty011.poskt` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WarrantyItemType` | ✓ | |  | `poskt_cust` |
+| `WrntyControllingItemType` |  | |  | `poskt` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

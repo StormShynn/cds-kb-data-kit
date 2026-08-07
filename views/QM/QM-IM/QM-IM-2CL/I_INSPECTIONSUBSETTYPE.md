@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionSubsetType` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qppkttyp preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionSubsetType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qppkttyp preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

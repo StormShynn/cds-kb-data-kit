@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Project` | `/s4ppm/tv_external_id` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Project` |  | |  | `/s4ppm/tv_external_id` |
 
 ## Source Code
 

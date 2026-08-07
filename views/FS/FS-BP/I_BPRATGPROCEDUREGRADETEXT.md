@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tpz22t.spras` |
-| key `BusinessPartnerRatingProcedure` | `tpz22t.grade_method` |
-| key `BusinessPartnerRatingGrade` | `tpz22t.grade` |
-| `BusinessPartnerRatingGradeDesc` | `tpz22t.text` |
-| `_BPRatingProcedure` | *Association* |
-| `_BPRatingProcedureGrade` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BusinessPartnerRatingProcedure` | ✓ | |  | `grade_method` |
+| `BusinessPartnerRatingGrade` | ✓ | |  | `grade` |
+| `BusinessPartnerRatingGradeDesc` |  | |  | `text` |
+| `_BPRatingProcedure` | | ✓ | | |
+| `_BPRatingProcedureGrade` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

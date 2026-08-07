@@ -29,20 +29,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `docnum` |
-| key `BR_NotaFiscalItem` | `itmnum` |
-| key `SequenceNumber` | `counter` |
-| `ProductBatch` | `nlote` |
-| `ProductBatchQuantity` | `qlote` |
-| `ManufacturingDate` | `dfab` |
-| `ExpirationDate` | `dval` |
-| `AggregationID` | `cast('' as j_1bnfe_cagreg)` |
-| `BR_NFeProdTrcblyAggregationID` | `cagreg` |
-| `BaseUnit` | `_BR_NFItemBaseUnit.BaseUnit` |
-| `_BR_NotaFiscalItem` | *Association* |
-| `_BaseUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NotaFiscalItem` | ✓ | |  | `itmnum` |
+| `SequenceNumber` | ✓ | |  | `counter` |
+| `ProductBatch` |  | |  | `nlote` |
+| `ProductBatchQuantity` |  | |  | `qlote` |
+| `ManufacturingDate` |  | |  | `dfab` |
+| `ExpirationDate` |  | |  | `dval` |
+| `AggregationID` |  | |  | `cast('' as j_1bnfe_cagreg)` |
+| `BR_NFeProdTrcblyAggregationID` |  | |  | `cagreg` |
+| `BaseUnit` |  | | `_BR_NFItemBaseUnit` | `BaseUnit` |
+| `_BR_NotaFiscalItem` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
 
 ## Associations
 

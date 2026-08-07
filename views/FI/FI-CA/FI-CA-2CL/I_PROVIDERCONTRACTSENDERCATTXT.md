@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAProviderContractSenderCat` | `cast( left( dd07t.domvalue_l,1 ) as sendercat_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAProviderContractSenderCatTxt` | `cast( ddtext as sendercat_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAProviderContractSenderCat` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as sendercat_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAProviderContractSenderCatTxt` |  | |  | `cast( ddtext as sendercat_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

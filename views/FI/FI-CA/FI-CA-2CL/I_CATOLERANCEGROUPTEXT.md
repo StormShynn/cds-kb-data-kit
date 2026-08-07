@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAToleranceGroup` | `togru` |
-| key `Language` | `spras` |
-| `CAToleranceGroupName` | `txt40` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAToleranceGroup` | ✓ | |  | `togru` |
+| `Language` | ✓ | |  | `spras` |
+| `CAToleranceGroupName` |  | |  | `txt40` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

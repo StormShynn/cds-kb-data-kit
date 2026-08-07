@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentApprovalRule` | `PaymentApprovalRule` |
-| key `PaymentApprovalRuleItem` | `PaymentApprovalRuleItem` |
-| key `PaymentApproverGroupNumber` | `PaymentApproverGroupNumber` |
-| `PaymentApproverGroup` | `PaymentApproverGroup` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
-| `_PaymentApprovalRule` | *Association* |
-| `_PaymentApprovalRuleItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentApprovalRule` | ✓ | |  |  |
+| `PaymentApprovalRuleItem` | ✓ | |  |  |
+| `PaymentApproverGroupNumber` | ✓ | |  |  |
+| `PaymentApproverGroup` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
+| `_PaymentApprovalRule` | | ✓ | | |
+| `_PaymentApprovalRuleItem` | | ✓ | | |
 
 ## Source Code
 

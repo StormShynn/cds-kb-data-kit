@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReportingPeriod` | `cast( cast(substring(l.domvalue_l, 1, 2) as abap.numc(2) ) as pph_reportingperiod preserving type)` |
-| `DomainValue` | `l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReportingPeriod` | ✓ | |  | `cast( cast(substring(l.domvalue_l, 1, 2) as abap.numc(2) ) as pph_reportingperiod preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

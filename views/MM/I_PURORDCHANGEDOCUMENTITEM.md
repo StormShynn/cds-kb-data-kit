@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrder` | `PurchaseOrder.PurchaseOrder` |
-| key `ChangeDocument` | `PurOrdChangeDocumentItem.ChangeDocument` |
-| key `ChangeDocObjectClass` | `PurOrdChangeDocumentItem.ChangeDocObjectClass` |
-| key `DatabaseTable` | `PurOrdChangeDocumentItem.DatabaseTable` |
-| key `ChangeDocTableKey` | `PurOrdChangeDocumentItem.ChangeDocTableKey` |
-| key `ChangeDocDatabaseTableField` | `PurOrdChangeDocumentItem.ChangeDocDatabaseTableField` |
-| key `ChangeDocItemChangeType` | `PurOrdChangeDocumentItem.ChangeDocItemChangeType` |
-| `ChangeDocPreviousUnit` | `cast ( PurOrdChangeDocumentItem.ChangeDocPreviousUnit as mmiv_chng_doc_old_unit preserving type )` |
-| `ChangeDocNewUnit` | `cast ( PurOrdChangeDocumentItem.ChangeDocNewUnit as mmiv_chng_doc_new_unit preserving type )` |
-| `ChangeDocPreviousCurrency` | `cast ( PurOrdChangeDocumentItem.ChangeDocPreviousCurrency as mmiv_chng_doc_old_currency preserving type )` |
-| `ChangeDocNewCurrency` | `cast ( PurOrdChangeDocumentItem.ChangeDocNewCurrency as mmiv_chng_doc_new_currency preserving type )` |
-| `ChangeDocPreviousFieldValue` | `PurOrdChangeDocumentItem.ChangeDocPreviousFieldValue` |
-| `ChangeDocNewFieldValue` | `PurOrdChangeDocumentItem.ChangeDocNewFieldValue` |
-| `PurchaseOrderType` | `PurchaseOrder.PurchaseOrderType` |
-| `PurchasingOrganization` | `PurchaseOrder.PurchasingOrganization` |
-| `PurchasingGroup` | `PurchaseOrder.PurchasingGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrder` | ✓ | |  |  |
+| `ChangeDocument` | ✓ | |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |
+| `DatabaseTable` | ✓ | |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |
+| `ChangeDocPreviousUnit` |  | |  | `cast ( PurOrdChangeDocumentItem.ChangeDocPreviousUnit as mmiv_chng_doc_old_unit preserving type )` |
+| `ChangeDocNewUnit` |  | |  | `cast ( PurOrdChangeDocumentItem.ChangeDocNewUnit as mmiv_chng_doc_new_unit preserving type )` |
+| `ChangeDocPreviousCurrency` |  | |  | `cast ( PurOrdChangeDocumentItem.ChangeDocPreviousCurrency as mmiv_chng_doc_old_currency preserving type )` |
+| `ChangeDocNewCurrency` |  | |  | `cast ( PurOrdChangeDocumentItem.ChangeDocNewCurrency as mmiv_chng_doc_new_currency preserving type )` |
+| `ChangeDocPreviousFieldValue` |  | |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |
+| `PurchaseOrderType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
 
 ## Source Code
 

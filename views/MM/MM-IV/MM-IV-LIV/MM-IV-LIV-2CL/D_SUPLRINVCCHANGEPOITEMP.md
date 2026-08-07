@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SupplierInvoiceItem` | `rblgp` |
-| `SuplrInvcIsSubsqntDebitCrdt` | `tbtkz` |
-| `SupplierInvoiceItemText` | `sgtxt` |
-| `IsNotCashDiscountLiable` | `xskrl` |
-| `IsFinallyInvoiced` | `erekz` |
-| `D_SuplrInvcChangeAccAssgmtP` | `_AccountAssignments : composition [0..*] of D_SuplrInvcChangeAccAssgmtP` |
-| `_SupplierInvoice` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoiceItem` |  | |  | `rblgp` |
+| `SuplrInvcIsSubsqntDebitCrdt` |  | |  | `tbtkz` |
+| `SupplierInvoiceItemText` |  | |  | `sgtxt` |
+| `IsNotCashDiscountLiable` |  | |  | `xskrl` |
+| `IsFinallyInvoiced` |  | |  | `erekz` |
+| `D_SuplrInvcChangeAccAssgmtP` |  | |  | `_AccountAssignments : composition [0..*] of D_SuplrInvcChangeAccAssgmtP` |
+| `_SupplierInvoice` | | ✓ | | |
 
 ## Source Code
 

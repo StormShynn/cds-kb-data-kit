@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalReqSectionTitleUUID` | `SuplrEvalReqSectionTitleUUID` |
-| `SuplrEvalReqUUID` | `SuplrEvalReqUUID` |
-| `SuplrEvalReqSectionUUID` | `SuplrEvalReqSectionUUID` |
-| `Language` | `Language` |
-| `SectionTitle` | `SectionTitle` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalReqSectionTitleUUID` | ✓ | |  |  |
+| `SuplrEvalReqUUID` |  | |  |  |
+| `SuplrEvalReqSectionUUID` |  | |  |  |
+| `Language` |  | |  |  |
+| `SectionTitle` |  | |  |  |
 
 ## Source Code
 

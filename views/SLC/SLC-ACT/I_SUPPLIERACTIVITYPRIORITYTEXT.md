@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrActyPriority` | `cast(substring( domvalue_l, 1, 1 ) as /srmsmc/act_priority )` |
-| key `Language` | `ddlanguage` |
-| `SuplrActyPriorityName` | `ddtext` |
-| `_Language` | *Association* |
-| `_SupplierActivityPriority` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrActyPriority` | ✓ | |  | `cast(substring( domvalue_l, 1, 1 ) as /srmsmc/act_priority )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SuplrActyPriorityName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_SupplierActivityPriority` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPIdentificationType` | `type` |
-| `BPIdentificationCategory` | `category` |
-| `IsBPPerson` | `xperson` |
-| `IsBPOrganization` | `xorganisation` |
-| `IsBPGroup` | `xgroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPIdentificationType` | ✓ | |  | `type` |
+| `BPIdentificationCategory` |  | |  | `category` |
+| `IsBPPerson` |  | |  | `xperson` |
+| `IsBPOrganization` |  | |  | `xorganisation` |
+| `IsBPGroup` |  | |  | `xgroup` |
 
 ## Source Code
 

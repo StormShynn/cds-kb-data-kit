@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GoodsMovementType` | `bwart` |
-| `IsReversalMovementType` | `xstbw` |
-| `DebitCreditCode` | `shkzg` |
-| `ResvnAcctAssgmtCategory` | `rstyp` |
-| `BasicMovementTypeReference` | `bustr` |
-| `SourceGoodsMovementType` | `mvt_source` |
-| `_Text` | *Association* |
-| `_DebitCreditCode` | *Association* |
-| `_ResvnAcctAssgmtCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GoodsMovementType` | ✓ | |  | `bwart` |
+| `IsReversalMovementType` |  | |  | `xstbw` |
+| `DebitCreditCode` |  | |  | `shkzg` |
+| `ResvnAcctAssgmtCategory` |  | |  | `rstyp` |
+| `BasicMovementTypeReference` |  | |  | `bustr` |
+| `SourceGoodsMovementType` |  | |  | `mvt_source` |
+| `_Text` | | ✓ | | |
+| `_DebitCreditCode` | | ✓ | | |
+| `_ResvnAcctAssgmtCategory` | | ✓ | | |
 
 ## Associations
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReturnsInspection` | `ReturnsInspection.InspectionDocument` |
-| `ReturnsDelivery` | `ReturnsInspection.DeliveryDocument` |
-| `ReturnsDeliveryItem` | `ReturnsInspection.DeliveryDocumentItem` |
-| `RetsMgmtProcess` | `ReturnsInspection.RetsMgmtProcess` |
-| `RetsMgmtInspPubgSts` | `ReturnsInspection.RetsMgmtInspPubgSts` |
-| `InspectionDocumentIsCancelled` | `ReturnsInspection.InspectionDocumentIsCancelled` |
-| `CreatedByUser` | `ReturnsInspection.CreatedByUser` |
-| `CreationDateTime` | `ReturnsInspection.CreationDateTime` |
-| `LastChangedByUser` | `ReturnsInspection.LastChangedByUser` |
-| `LastChangeDateTime` | `ReturnsInspection.LastChangeDateTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReturnsInspection` | ✓ | |  | `InspectionDocument` |
+| `ReturnsDelivery` |  | |  | `DeliveryDocument` |
+| `ReturnsDeliveryItem` |  | |  | `DeliveryDocumentItem` |
+| `RetsMgmtProcess` |  | |  |  |
+| `RetsMgmtInspPubgSts` |  | |  |  |
+| `InspectionDocumentIsCancelled` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
 
 ## Source Code
 

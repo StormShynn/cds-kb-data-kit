@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalReqLanguageUUID` | `SuplrEvalReqLanguageUUID` |
-| `SuplrEvalReqUUID` | `SuplrEvalReqUUID` |
-| `SuplrEvalReqQuestionnaireUUID` | `SuplrEvalReqQuestionnaireUUID` |
-| `Language` | `Language` |
-| `IsSelectedLanguage` | `IsSelectedLanguage` |
-| `IsMasterLanguage` | `IsMasterLanguage` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalReqLanguageUUID` | ✓ | |  |  |
+| `SuplrEvalReqUUID` |  | |  |  |
+| `SuplrEvalReqQuestionnaireUUID` |  | |  |  |
+| `Language` |  | |  |  |
+| `IsSelectedLanguage` |  | |  |  |
+| `IsMasterLanguage` |  | |  |  |
 
 ## Source Code
 

@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TechnicalObject` | `cast ( Equipment as eams_tec_obj )` |
-| key `TechObjIsEquipOrFuncnlLoc` | `cast ( 'EAMS_EQUI' as eams_tec_obj_type_value )` |
-| key `Language` | `I_EquipmentText.Language` |
-| `TechnicalObjectDescription` | `cast( I_EquipmentText.EquipmentName as eams_tec_obj_des )` |
-| `IsPrimaryLanguage` | `I_EquipmentText.IsPrimaryLanguage` |
-| `TechnicalObjectHasLongText` | `I_EquipmentText.EquipmentHasLongText` |
-| `_TechnicalObject` | *Association* |
-| `_TechObjIsEquipOrFuncnlLoc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TechnicalObject` | ✓ | |  | `cast ( Equipment as eams_tec_obj )` |
+| `TechObjIsEquipOrFuncnlLoc` | ✓ | |  | `cast ( 'EAMS_EQUI' as eams_tec_obj_type_value )` |
+| `Language` | ✓ | |  |  |
+| `TechnicalObjectDescription` |  | |  | `cast( I_EquipmentText.EquipmentName as eams_tec_obj_des )` |
+| `IsPrimaryLanguage` |  | |  |  |
+| `TechnicalObjectHasLongText` |  | |  | `EquipmentHasLongText` |
+| `_TechnicalObject` | | ✓ | | |
+| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | |
 
 ## Associations
 

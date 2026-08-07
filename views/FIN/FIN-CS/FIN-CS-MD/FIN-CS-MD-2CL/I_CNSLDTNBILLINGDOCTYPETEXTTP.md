@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `BillingDocumentType` | `_Text.BillingDocumentType` |
-| `BillingDocumentTypeName` | `_Text.BillingDocumentTypeName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnBillingDocumentTypeTP` | `_BillingDocumentType as _BillingDocumentType : redirected to parent I_CnsldtnBillingDocumentTypeTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `BillingDocumentType` | ✓ | | `_Text` | `BillingDocumentType` |
+| `BillingDocumentTypeName` |  | | `_Text` | `BillingDocumentTypeName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnBillingDocumentTypeTP` |  | |  | `_BillingDocumentType as _BillingDocumentType : redirected to parent I_CnsldtnBillingDocumentTypeTP` |
 
 ## Source Code
 

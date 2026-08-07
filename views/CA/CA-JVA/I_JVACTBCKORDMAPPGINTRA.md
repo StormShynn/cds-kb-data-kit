@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JVACtbckOrdMappgIntraBsc.CompanyCode` |
-| key `JVAFromOrder` | `JVACtbckOrdMappgIntraBsc.JVAFromOrder` |
-| `JVARangeToOrder` | `JVACtbckOrdMappgIntraBsc.JVARangeToOrder` |
-| `JVACutbackCostCenter` | `JVACtbckOrdMappgIntraBsc.JVACutbackCostCenter` |
-| `JVACutbackOrder` | `JVACtbckOrdMappgIntraBsc.JVACutbackOrder` |
-| `JVACutbackWBS` | `JVACtbckOrdMappgIntraBsc.JVACutbackWBS` |
-| `JVACutbackWBSExt` | `_CutbackWBSElement.WBSElementExternalID` |
-| `ControllingArea` | `_CompanyCode.ControllingArea` |
-| `_CompanyCode` | *Association* |
-| `_JVAFromOrder` | *Association* |
-| `_JVARangeToOrder` | *Association* |
-| `_CutbackCostCenter` | *Association* |
-| `_JVACutbackOrder` | *Association* |
-| `_CutbackWBSElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JVAFromOrder` | ✓ | |  |  |
+| `JVARangeToOrder` |  | |  |  |
+| `JVACutbackCostCenter` |  | |  |  |
+| `JVACutbackOrder` |  | |  |  |
+| `JVACutbackWBS` |  | |  |  |
+| `JVACutbackWBSExt` |  | | `_CutbackWBSElement` | `WBSElementExternalID` |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
+| `_CompanyCode` | | ✓ | | |
+| `_JVAFromOrder` | | ✓ | | |
+| `_JVARangeToOrder` | | ✓ | | |
+| `_CutbackCostCenter` | | ✓ | | |
+| `_JVACutbackOrder` | | ✓ | | |
+| `_CutbackWBSElement` | | ✓ | | |
 
 ## Associations
 

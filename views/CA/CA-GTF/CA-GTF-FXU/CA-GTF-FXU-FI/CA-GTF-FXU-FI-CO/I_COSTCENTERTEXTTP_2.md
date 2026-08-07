@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ControllingArea` | `ControllingArea` |
-| key `CostCenter` | `CostCenter` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `LanguageForEdit` | `LanguageForEdit` |
-| `CostCenterName` | `CostCenterName` |
-| `CostCenterDescription` | `CostCenterDescription` |
-| `_CostCenterTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `CostCenter` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `CostCenterName` |  | |  |  |
+| `CostCenterDescription` |  | |  |  |
+| `_CostCenterTP` | | ✓ | | |
 
 ## Source Code
 

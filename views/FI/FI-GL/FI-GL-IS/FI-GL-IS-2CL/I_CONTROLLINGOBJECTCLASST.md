@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingObjectClass` | `substring(domvalue_l, 1, 2)` |
-| key `Language` | `ddlanguage` |
-| `ControllingObjectClassName` | `ddtext` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingObjectClass` | ✓ | |  | `substring(domvalue_l, 1, 2)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `ControllingObjectClassName` |  | |  | `ddtext` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

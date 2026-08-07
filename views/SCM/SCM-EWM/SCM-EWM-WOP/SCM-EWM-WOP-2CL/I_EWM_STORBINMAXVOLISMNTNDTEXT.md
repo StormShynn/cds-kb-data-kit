@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `EWMStorageBinMaxVolumeIsMntnd` | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as ewm_de_storbinmaxvolumeismaint preserving type )` |
-| `EWMStorBinMaxVolumeMntndDesc` | `cast( ddtext as ewm_de_storbinmaxvolmaintdesc preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `EWMStorageBinMaxVolumeIsMntnd` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as ewm_de_storbinmaxvolumeismaint preserving type )` |
+| `EWMStorBinMaxVolumeMntndDesc` |  | |  | `cast( ddtext as ewm_de_storbinmaxvolmaintdesc preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

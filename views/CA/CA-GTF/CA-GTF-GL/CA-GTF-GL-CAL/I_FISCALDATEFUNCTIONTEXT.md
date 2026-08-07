@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DateFunction` | `I_Datefunctiontext.DateFunction` |
-| key `Language` | `Language` |
-| `DateFunctionName` | `DateFunctionName` |
-| `DateFunctionDescription` | `DateFunctionDescription` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DateFunction` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `DateFunctionName` |  | |  |  |
+| `DateFunctionDescription` |  | |  |  |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SubItemCategory` | `cast(sityp as fincs_subitemcategory preserving type )` |
-| key `Language` | `cast(langu as spras preserving type )` |
-| `SubItemCategoryText` | `cast(txt as fincs_description_text_30 preserving type )` |
-| `_Language` | *Association* |
-| `_SubItemCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SubItemCategory` | ✓ | |  | `cast(sityp as fincs_subitemcategory preserving type )` |
+| `Language` | ✓ | |  | `cast(langu as spras preserving type )` |
+| `SubItemCategoryText` |  | |  | `cast(txt as fincs_description_text_30 preserving type )` |
+| `_Language` | | ✓ | | |
+| `_SubItemCategory` | | ✓ | | |
 
 ## Associations
 

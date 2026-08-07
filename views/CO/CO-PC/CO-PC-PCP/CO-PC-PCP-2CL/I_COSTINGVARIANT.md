@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostingVariant` | `klvar` |
-| `ValuationVariant` | `bwvar` |
-| `CostEstimateReferenceVariant` | `refid` |
-| `CostingType` | `kalka` |
-| `CostEstimateTransferControl` | `uebid` |
-| `CostEstTransfCtrlIsChangeable` | `voraend` |
-| `CostingReferenceObject` | `bzobj` |
-| `_Text` | *Association* |
-| `_CostingValuationVariant` | *Association* |
-| `_CostingType` | *Association* |
-| `_CostingValuationVarText` | *Association* |
-| `_CostingTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostingVariant` | ✓ | |  | `klvar` |
+| `ValuationVariant` |  | |  | `bwvar` |
+| `CostEstimateReferenceVariant` |  | |  | `refid` |
+| `CostingType` |  | |  | `kalka` |
+| `CostEstimateTransferControl` |  | |  | `uebid` |
+| `CostEstTransfCtrlIsChangeable` |  | |  | `voraend` |
+| `CostingReferenceObject` |  | |  | `bzobj` |
+| `_Text` | | ✓ | | |
+| `_CostingValuationVariant` | | ✓ | | |
+| `_CostingType` | | ✓ | | |
+| `_CostingValuationVarText` | | ✓ | | |
+| `_CostingTypeText` | | ✓ | | |
 
 ## Associations
 

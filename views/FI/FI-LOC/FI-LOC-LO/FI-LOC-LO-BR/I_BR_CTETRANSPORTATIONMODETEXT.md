@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| key `BR_CTeTransportationMode` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_transportation_mode preserving type )` |
-| `BR_CTeTransportationModeDesc` | `ddtext` |
-| `_BR_CTeTransportationMode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `BR_CTeTransportationMode` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_transportation_mode preserving type )` |
+| `BR_CTeTransportationModeDesc` |  | |  | `ddtext` |
+| `_BR_CTeTransportationMode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

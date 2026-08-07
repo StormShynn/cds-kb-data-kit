@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingPriceSource` | `cast ( substring( domvalue_l, 1, 1 ) as prsqu )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingPriceSource` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as prsqu )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

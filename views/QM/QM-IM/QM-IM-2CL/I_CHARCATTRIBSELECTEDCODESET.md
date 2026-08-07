@@ -27,19 +27,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SelectedCodeSetPlant` | `qpam.werks` |
-| key `SelectedCodeSet` | `qpam.auswahlmge` |
-| `Language` | `case when qpamtxt.language is not null then qpamtxt.language else cast( $session.system_language as spras preserving type ) end` |
-| `SelectedCodeSetText` | `case when qpamtxt.language is not null then qpamtxt.ktx01 else qpam.ktx01 end` |
-| `InspectionSelectedSetStatus` | `status` |
-| `CharcAttribSeldSetCreatedBy` | `ersteller` |
-| `CharcAttribSeldSetCrtedOn` | `e_datum` |
-| `CharcAttribSeldSetLastChgdBy` | `aenderer` |
-| `CharcAttribSeldSetLastChgdOn` | `a_datum` |
-| `_CharcAttribSelectedSetCode` | *Association* |
-| `_SelectedCodeSetPlant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SelectedCodeSetPlant` | ✓ | |  | `werks` |
+| `SelectedCodeSet` | ✓ | |  | `auswahlmge` |
+| `Language` |  | |  | `case when qpamtxt.language is not null then qpamtxt.language else cast( $session.system_language as spras preserving type ) end` |
+| `SelectedCodeSetText` |  | |  | `case when qpamtxt.language is not null then qpamtxt.ktx01 else qpam.ktx01 end` |
+| `InspectionSelectedSetStatus` |  | |  | `status` |
+| `CharcAttribSeldSetCreatedBy` |  | |  | `ersteller` |
+| `CharcAttribSeldSetCrtedOn` |  | |  | `e_datum` |
+| `CharcAttribSeldSetLastChgdBy` |  | |  | `aenderer` |
+| `CharcAttribSeldSetLastChgdOn` |  | |  | `a_datum` |
+| `_CharcAttribSelectedSetCode` | | ✓ | | |
+| `_SelectedCodeSetPlant` | | ✓ | | |
 
 ## Associations
 

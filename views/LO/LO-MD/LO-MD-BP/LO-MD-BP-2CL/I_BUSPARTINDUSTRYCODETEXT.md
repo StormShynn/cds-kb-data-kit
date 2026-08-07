@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `BusinessPartnerIndustryCode` | `braco` |
-| `CustomerIndustryCodeText` | `vtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `BusinessPartnerIndustryCode` | ✓ | |  | `braco` |
+| `CustomerIndustryCodeText` |  | |  | `vtext` |
 
 ## Source Code
 

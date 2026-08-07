@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IsQuestionCommentEnabled` | `cast( substring( domvalue_l, 1, 1 ) as /srmsmc/qst_notes)` |
-| `_SLCQuestionNoteOptionText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IsQuestionCommentEnabled` | ✓ | |  | `cast( substring( domvalue_l, 1, 1 ) as /srmsmc/qst_notes)` |
+| `_SLCQuestionNoteOptionText` | | ✓ | | |
 
 ## Associations
 

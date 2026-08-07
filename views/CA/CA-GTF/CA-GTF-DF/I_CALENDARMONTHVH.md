@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CalendarMonth` | `CalendarMonth` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CalendarMonth` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

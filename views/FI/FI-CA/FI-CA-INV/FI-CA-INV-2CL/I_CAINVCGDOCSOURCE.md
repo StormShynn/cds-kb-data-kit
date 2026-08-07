@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgSourceDocumentCat` | `cast(srcdoccat as srcdoccat_gfn_kk preserving type)` |
-| key `CAInvcgSourceDocumentNumber` | `cast(srcdocno as srcdocno_gfn_kk preserving type)` |
-| key `CAInvoicingDocument` | `invdocno` |
-| `CAInvcgSourceDocumentType` | `srcdoctype` |
-| `LogicalSystem` | `log_system` |
-| `CAApplicationArea` | `applk` |
-| `CAInvcgIsDocumentPosted` | `invoiced` |
-| `CAInvcgIsDocumentSimulated` | `simulated` |
-| `CAInvcgIsDocumentPreliminary` | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` |
-| `CAInvcgReversalDocument` | `cast(reversaldoc as inv_reversaldoc_gfn_kk preserving type)` |
-| `CAInvcgReversedDocument` | `cast(reverseddoc as inv_reverseddoc_gfn_kk preserving type)` |
-| `CAInvcgCreationDate` | `crdate` |
-| `CAInvcgCreationTime` | `crtime` |
-| `_CAInvcgDocHeader` | *Association* |
-| `_CAInvcgSourceDocCat` | *Association* |
-| `_CAInvcgSourceDocType` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CAInvcgReversalDocument` | *Association* |
-| `_CAInvcgReversedDocument` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgSourceDocumentCat` | ✓ | |  | `cast(srcdoccat as srcdoccat_gfn_kk preserving type)` |
+| `CAInvcgSourceDocumentNumber` | ✓ | |  | `cast(srcdocno as srcdocno_gfn_kk preserving type)` |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` |
+| `CAInvcgSourceDocumentType` |  | |  | `srcdoctype` |
+| `LogicalSystem` |  | |  | `log_system` |
+| `CAApplicationArea` |  | |  | `applk` |
+| `CAInvcgIsDocumentPosted` |  | |  | `invoiced` |
+| `CAInvcgIsDocumentSimulated` |  | |  | `simulated` |
+| `CAInvcgIsDocumentPreliminary` |  | |  | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` |
+| `CAInvcgReversalDocument` |  | |  | `cast(reversaldoc as inv_reversaldoc_gfn_kk preserving type)` |
+| `CAInvcgReversedDocument` |  | |  | `cast(reverseddoc as inv_reverseddoc_gfn_kk preserving type)` |
+| `CAInvcgCreationDate` |  | |  | `crdate` |
+| `CAInvcgCreationTime` |  | |  | `crtime` |
+| `_CAInvcgDocHeader` | | ✓ | | |
+| `_CAInvcgSourceDocCat` | | ✓ | | |
+| `_CAInvcgSourceDocType` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAInvcgReversalDocument` | | ✓ | | |
+| `_CAInvcgReversedDocument` | | ✓ | | |
 
 ## Associations
 

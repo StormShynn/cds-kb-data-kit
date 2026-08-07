@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMProfile` | `LglCntntMProfile` |
-| `_LglCntntMProfileTextAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMProfile` | ✓ | |  |  |
+| `_LglCntntMProfileTextAPI01` | | ✓ | | |
 
 ## Associations
 

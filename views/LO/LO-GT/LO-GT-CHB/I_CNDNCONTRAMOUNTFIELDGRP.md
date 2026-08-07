@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AmountFieldGroup` | `AmountFieldGroup.af_group` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AmountFieldGroup` | ✓ | |  | `af_group` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

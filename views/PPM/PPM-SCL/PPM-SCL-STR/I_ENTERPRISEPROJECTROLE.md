@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectRoleUUID` | `role.guid` |
-| `ProjectUUID` | `role.project_guid` |
-| `ProjectRoleType` | `role.role_type` |
-| `ProjectRoleCategory` | `role.role_category` |
-| `ProjectRoleName` | `role.role_name` |
-| `CreatedByUser` | `role.created_by` |
-| `CreationDateTime` | `role.created_on` |
-| `LastChangedByUser` | `role.changed_by` |
-| `LastChangeDateTime` | `role.changed_on` |
-| `_Project` | *Association* |
-| `_ProjectRoleType` | *Association* |
-| `_ProjectRoleTypeCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectRoleUUID` | ✓ | |  | `guid` |
+| `ProjectUUID` |  | |  | `project_guid` |
+| `ProjectRoleType` |  | |  | `role_type` |
+| `ProjectRoleCategory` |  | |  | `role_category` |
+| `ProjectRoleName` |  | |  | `role_name` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDateTime` |  | |  | `created_on` |
+| `LastChangedByUser` |  | |  | `changed_by` |
+| `LastChangeDateTime` |  | |  | `changed_on` |
+| `_Project` | | ✓ | | |
+| `_ProjectRoleType` | | ✓ | | |
+| `_ProjectRoleTypeCategory` | | ✓ | | |
 
 ## Associations
 

@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentRequest` | `BillingDocumentRequest` |
-| key `BillingDocumentRequestItem` | `BillingDocumentRequestItem` |
-| `BillingDocumentRequestItemText` | `BillingDocumentRequestItemText` |
-| `BillingDocumentRequestType` | `BillingDocumentRequestType` |
-| `SalesOrganization` | `SalesOrganization` |
-| `_BillingDocumentRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentRequest` | ✓ | |  |  |
+| `BillingDocumentRequestItem` | ✓ | |  |  |
+| `BillingDocumentRequestItemText` |  | |  |  |
+| `BillingDocumentRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `_BillingDocumentRequest` | | ✓ | | |
 
 ## Source Code
 

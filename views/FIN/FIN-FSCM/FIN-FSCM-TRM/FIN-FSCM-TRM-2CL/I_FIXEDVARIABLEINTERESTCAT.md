@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FixedVariableInterestRateCat` | `cast(left(DomainValue.domvalue_l, 1) as ftr_interest_category preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FixedVariableInterestRateCat` | ✓ | |  | `cast(left(DomainValue.domvalue_l, 1) as ftr_interest_category preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

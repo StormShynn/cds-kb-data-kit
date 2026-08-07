@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPaymentPreNotificationCode` | `cast( left( dd07t.domvalue_l, 1 ) as xpyor_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAPaymentPreNotifCodeName` | `cast( ddtext as xpyor_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPaymentPreNotificationCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xpyor_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAPaymentPreNotifCodeName` |  | |  | `cast( ddtext as xpyor_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

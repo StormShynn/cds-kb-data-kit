@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationCalculationType` | `cast(substring(domvalue_l, 1, 1) as /scmtms/tcm_calc_type preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspCalculationTypeName` | `cast(ddtext as /scmtms/vdm_tcm_calc_type_name preserving type)` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TransportationCalculationType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationCalculationType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/tcm_calc_type preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspCalculationTypeName` |  | |  | `cast(ddtext as /scmtms/vdm_tcm_calc_type_name preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TransportationCalculationType` | | ✓ | | |
 
 ## Associations
 

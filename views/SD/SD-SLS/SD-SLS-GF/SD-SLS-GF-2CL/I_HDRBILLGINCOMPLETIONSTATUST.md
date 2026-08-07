@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HeaderBillgIncompletionStatus` | `statu` |
-| key `Language` | `spras` |
-| `HdrBillgIncompletionStatusDesc` | `cast(bezei as hdrbillgincompletionstatusdesc preserving type)` |
-| `_HeaderBillgIncompletionStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HeaderBillgIncompletionStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `HdrBillgIncompletionStatusDesc` |  | |  | `cast(bezei as hdrbillgincompletionstatusdesc preserving type)` |
+| `_HeaderBillgIncompletionStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

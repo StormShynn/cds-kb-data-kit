@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventorySpecialStockType` | `sobkz` |
-| `SpclStkLogisticsAssignment` | `soblo` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventorySpecialStockType` | ✓ | |  | `sobkz` |
+| `SpclStkLogisticsAssignment` |  | |  | `soblo` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContractAccount` | `ContractAccount` |
-| key `BusinessPartner` | `BusinessPartner` |
-| key `CAInvcgChargeAndDiscountKey` | `CAInvcgChargeAndDiscountKey` |
-| key `CAInvcgChrgAndDiscKeyStartDate` | `CAInvcgChrgAndDiscKeyStartDate` |
-| `CAInvcgChrgDscKeyFoEd` | `CAInvcgChrgDscKeyFoEd` |
-| `CAInvcgChrgDscKeyStrtDtFoEd` | `CAInvcgChrgDscKeyStrtDtFoEd` |
-| `CAInvcgChrgAndDiscKeyEndDate` | `CAInvcgChrgAndDiscKeyEndDate` |
-| `_BusinessPartner` | *Association* |
-| `_CAInvcgChrgAndDiscKey` | *Association* |
-| `_ContractAccount` | *Association* |
-| `_ContractAccountPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccount` | ✓ | |  |  |
+| `BusinessPartner` | ✓ | |  |  |
+| `CAInvcgChargeAndDiscountKey` | ✓ | |  |  |
+| `CAInvcgChrgAndDiscKeyStartDate` | ✓ | |  |  |
+| `CAInvcgChrgDscKeyFoEd` |  | |  |  |
+| `CAInvcgChrgDscKeyStrtDtFoEd` |  | |  |  |
+| `CAInvcgChrgAndDiscKeyEndDate` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_CAInvcgChrgAndDiscKey` | | ✓ | | |
+| `_ContractAccount` | | ✓ | | |
+| `_ContractAccountPartner` | | ✓ | | |
 
 ## Source Code
 

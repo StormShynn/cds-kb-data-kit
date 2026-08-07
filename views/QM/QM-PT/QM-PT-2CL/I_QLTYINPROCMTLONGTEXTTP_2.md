@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Material` | `Material` |
-| key `QltyInProcmtIntID` | `QltyInProcmtIntID` |
-| key `LongTextInternalNumber` | `LongTextInternalNumber` |
-| key `Language` | `Language` |
-| `LongTextID` | `LongTextID` |
-| `QltyInProcmtLongText` | `QltyInProcmtLongText` |
-| `LongTextCreatedByUser` | `LongTextCreatedByUser` |
-| `LongTextCreatedAt` | `LongTextCreatedAt` |
-| `LongTextLastChangedByUser` | `LongTextLastChangedByUser` |
-| `LongTextLastChangedAt` | `LongTextLastChangedAt` |
-| `_QltyInProcurement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` | ✓ | |  |  |
+| `QltyInProcmtIntID` | ✓ | |  |  |
+| `LongTextInternalNumber` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `LongTextID` |  | |  |  |
+| `QltyInProcmtLongText` |  | |  |  |
+| `LongTextCreatedByUser` |  | |  |  |
+| `LongTextCreatedAt` |  | |  |  |
+| `LongTextLastChangedByUser` |  | |  |  |
+| `LongTextLastChangedAt` |  | |  |  |
+| `_QltyInProcurement` | | ✓ | | |
 
 ## Source Code
 

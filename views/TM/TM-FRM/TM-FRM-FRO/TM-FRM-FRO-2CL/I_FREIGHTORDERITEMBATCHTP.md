@@ -32,18 +32,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdItemBatchUUID` | `TranspOrdItemBatchUUID` |
-| `TransportationOrderItemUUID` | `TransportationOrderItemUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `Batch` | `Batch` |
-| `ProductID` | `ProductID` |
-| `BatchBySupplier` | `BatchBySupplier` |
-| `ManufactureDate` | `ManufactureDate` |
-| `ShelfLifeExpirationDate` | `ShelfLifeExpirationDate` |
-| `I_FreightOrderTP` | `FreightOrderItemBatch._TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
-| `I_FreightOrderItemTP` | `FreightOrderItemBatch._TransportationOrderItem as _FreightOrderItem : redirected to parent I_FreightOrderItemTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdItemBatchUUID` | ✓ | |  |  |
+| `TransportationOrderItemUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `Batch` |  | |  |  |
+| `ProductID` |  | |  |  |
+| `BatchBySupplier` |  | |  |  |
+| `ManufactureDate` |  | |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |
+| `I_FreightOrderTP` |  | |  | `FreightOrderItemBatch._TransportationOrder as _FreightOrder : redirected to I_FreightOrderTP` |
+| `I_FreightOrderItemTP` |  | |  | `FreightOrderItemBatch._TransportationOrderItem as _FreightOrderItem : redirected to parent I_FreightOrderItemTP` |
 
 ## Source Code
 

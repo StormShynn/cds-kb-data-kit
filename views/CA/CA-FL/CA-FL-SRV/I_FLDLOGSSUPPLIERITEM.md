@@ -31,52 +31,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsSuplrItemUUID` | `fldlogssuplritemuuid` |
-| `FldLogsSuplrItemType` | `fldlogssuplritemtype` |
-| `FldLogsSuplrParentItemUUID` | `fldlogssuplrparentitemuuid` |
-| `FldLogsSuplrItemSerialNumber` | `fldlogssuplritemserialnumber` |
-| `FldLogsSuplrItemName` | `fldlogssuplritemname` |
-| `PreferredSupplier` | `preferredsupplier` |
-| `FldLogsSuplrBasePlant` | `fldlogssuplrbaseplant` |
-| `FldLogsRemotePlant` | `fldlogsremoteplant` |
-| `FldLogsSuplrItmPOItmUniqueID` | `fldlogssuplritmpoitmuniqueid` |
-| `FldLogsSupplyProcess` | `fldlogssupplyprocess` |
-| `FldLogsSuplrItemVislInspCode` | `fldlogssuplritemvislinspcode` |
-| `PurgDocNetPriceAmount` | `purgdocnetpriceamount` |
-| `FldLogsSuplrItemRateUnit` | `fldlogssuplritemrateunit` |
-| `FldLogsSuplrItemQuantity` | `fldlogssuplritemquantity` |
-| `FldLogsSuplrItemQuantityUnit` | `fldlogssuplritemquantityunit` |
-| `FldLogsSuplrItemGrossVolume` | `fldlogssuplritemgrossvolume` |
-| `FldLogsSuplrItmGrossVolumeUnit` | `fldlogssuplritmgrossvolumeunit` |
-| `ProductGrossWeight` | `productgrossweight` |
-| `ProductWeightUnit` | `productweightunit` |
-| `FldLogsSuplrItemLength` | `fldlogssuplritemlength` |
-| `FldLogsSuplrItemWidth` | `fldlogssuplritemwidth` |
-| `FldLogsSuplrItemHeight` | `fldlogssuplritemheight` |
-| `FldLogsSuplrItemMeasureUnit` | `fldlogssuplritemmeasureunit` |
-| `FldLogsSuplrItemStatusID` | `fldlogssuplritemstatusid` |
-| `ItemIsDangerousGood` | `itemisdangerousgood` |
-| `FldLogsSuplrItemDngrsGdsCat` | `dangerousgoodsidnnumbercnctntd` |
-| `DangerousGoodsIdnNumberCnctntd` | `cast(dangerousgoodsidnnumbercnctntd as abap.char( 51 ))` |
-| `FldLogsIsWorkOrderOnHold` | `fldlogsisworkorderonhold` |
-| `FldLogsSuplrItemPlndDelivDate` | `fldlogssuplritemplnddelivdate` |
-| `FldLogsSuplrItmChangeDateTime` | `fldlogssuplritmchangedatetime` |
-| `FldLogsSuplrItmPackggTypeCode` | `fldlogssuplritmpackggtypecode` |
-| `PackagingMaterial` | `packagingmaterial` |
-| `FldLogsContainerOwner` | `fldlogscontainerowner` |
-| `FldLogsSupplierItemSource` | `fldlogssupplieritemsource` |
-| `FldLogsSealNumber1` | `fldlogssealnumber1` |
-| `FldLogsSealNumber2` | `fldlogssealnumber2` |
-| `FldLogsSealNumber3` | `fldlogssealnumber3` |
-| `FldLogsSealNumber4` | `fldlogssealnumber4` |
-| `FldLogsSealNumber5` | `fldlogssealnumber5` |
-| `IsBusinessPurposeCompleted` | `_Owner.IsBusinessPurposeCompleted` |
-| `SuplrCoIsBusPrpsCmpltd` | `_PreferredSupplier.IsBusinessPurposeCompleted` |
-| `FldLogsTransferType` | `fldlogstransfertype` |
-| `FieldLogisticsTransferPlant` | `fieldlogisticstransferplant` |
-| `_Supplier` | `_PreferredSupplier` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsSuplrItemUUID` | ✓ | |  | `fldlogssuplritemuuid` |
+| `FldLogsSuplrItemType` |  | |  | `fldlogssuplritemtype` |
+| `FldLogsSuplrParentItemUUID` |  | |  | `fldlogssuplrparentitemuuid` |
+| `FldLogsSuplrItemSerialNumber` |  | |  | `fldlogssuplritemserialnumber` |
+| `FldLogsSuplrItemName` |  | |  | `fldlogssuplritemname` |
+| `PreferredSupplier` |  | |  | `preferredsupplier` |
+| `FldLogsSuplrBasePlant` |  | |  | `fldlogssuplrbaseplant` |
+| `FldLogsRemotePlant` |  | |  | `fldlogsremoteplant` |
+| `FldLogsSuplrItmPOItmUniqueID` |  | |  | `fldlogssuplritmpoitmuniqueid` |
+| `FldLogsSupplyProcess` |  | |  | `fldlogssupplyprocess` |
+| `FldLogsSuplrItemVislInspCode` |  | |  | `fldlogssuplritemvislinspcode` |
+| `PurgDocNetPriceAmount` |  | |  | `purgdocnetpriceamount` |
+| `FldLogsSuplrItemRateUnit` |  | |  | `fldlogssuplritemrateunit` |
+| `FldLogsSuplrItemQuantity` |  | |  | `fldlogssuplritemquantity` |
+| `FldLogsSuplrItemQuantityUnit` |  | |  | `fldlogssuplritemquantityunit` |
+| `FldLogsSuplrItemGrossVolume` |  | |  | `fldlogssuplritemgrossvolume` |
+| `FldLogsSuplrItmGrossVolumeUnit` |  | |  | `fldlogssuplritmgrossvolumeunit` |
+| `ProductGrossWeight` |  | |  | `productgrossweight` |
+| `ProductWeightUnit` |  | |  | `productweightunit` |
+| `FldLogsSuplrItemLength` |  | |  | `fldlogssuplritemlength` |
+| `FldLogsSuplrItemWidth` |  | |  | `fldlogssuplritemwidth` |
+| `FldLogsSuplrItemHeight` |  | |  | `fldlogssuplritemheight` |
+| `FldLogsSuplrItemMeasureUnit` |  | |  | `fldlogssuplritemmeasureunit` |
+| `FldLogsSuplrItemStatusID` |  | |  | `fldlogssuplritemstatusid` |
+| `ItemIsDangerousGood` |  | |  | `itemisdangerousgood` |
+| `FldLogsSuplrItemDngrsGdsCat` |  | |  | `dangerousgoodsidnnumbercnctntd` |
+| `DangerousGoodsIdnNumberCnctntd` |  | |  | `cast(dangerousgoodsidnnumbercnctntd as abap.char( 51 ))` |
+| `FldLogsIsWorkOrderOnHold` |  | |  | `fldlogsisworkorderonhold` |
+| `FldLogsSuplrItemPlndDelivDate` |  | |  | `fldlogssuplritemplnddelivdate` |
+| `FldLogsSuplrItmChangeDateTime` |  | |  | `fldlogssuplritmchangedatetime` |
+| `FldLogsSuplrItmPackggTypeCode` |  | |  | `fldlogssuplritmpackggtypecode` |
+| `PackagingMaterial` |  | |  | `packagingmaterial` |
+| `FldLogsContainerOwner` |  | |  | `fldlogscontainerowner` |
+| `FldLogsSupplierItemSource` |  | |  | `fldlogssupplieritemsource` |
+| `FldLogsSealNumber1` |  | |  | `fldlogssealnumber1` |
+| `FldLogsSealNumber2` |  | |  | `fldlogssealnumber2` |
+| `FldLogsSealNumber3` |  | |  | `fldlogssealnumber3` |
+| `FldLogsSealNumber4` |  | |  | `fldlogssealnumber4` |
+| `FldLogsSealNumber5` |  | |  | `fldlogssealnumber5` |
+| `IsBusinessPurposeCompleted` |  | | `_Owner` | `IsBusinessPurposeCompleted` |
+| `SuplrCoIsBusPrpsCmpltd` |  | | `_PreferredSupplier` | `IsBusinessPurposeCompleted` |
+| `FldLogsTransferType` |  | |  | `fldlogstransfertype` |
+| `FieldLogisticsTransferPlant` |  | |  | `fieldlogisticstransferplant` |
+| `_Supplier` |  | |  | `_PreferredSupplier` |
 
 ## Associations
 

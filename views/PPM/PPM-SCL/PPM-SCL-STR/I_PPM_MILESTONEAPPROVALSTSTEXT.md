@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `MilestoneApprovalStatus` | `cast ( substring( domvalue_l, 1, 5 ) as /s4ppm/tv_mlstn_apprvl_status )` |
-| `MilestoneApprovalStatusText` | `cast ( ddtext as /s4ppm/tv_mlstn_apprvl_sts_txt )` |
-| `_Language` | *Association* |
-| `_MilestoneApprovalStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `MilestoneApprovalStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 5 ) as /s4ppm/tv_mlstn_apprvl_status )` |
+| `MilestoneApprovalStatusText` |  | |  | `cast ( ddtext as /s4ppm/tv_mlstn_apprvl_sts_txt )` |
+| `_Language` | | ✓ | | |
+| `_MilestoneApprovalStatus` | | ✓ | | |
 
 ## Associations
 

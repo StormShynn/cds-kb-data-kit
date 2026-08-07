@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionMethodPlant` | `InspectionMethodPlant` |
-| key `InspectionMethod` | `InspectionMethod` |
-| key `InspectionMethodVersion` | `InspectionMethodVersion` |
-| `InspectionMethodStatus` | `InspectionMethodStatus` |
-| `QltyMstrDataAuthorizationGroup` | `QltyMstrDataAuthorizationGroup` |
-| `InspectionMethodValidFromDate` | `InspectionMethodValidFromDate` |
-| `_InspectionMethodPlant` | *Association* |
-| `_InspectionMethod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionMethodPlant` | ✓ | |  |  |
+| `InspectionMethod` | ✓ | |  |  |
+| `InspectionMethodVersion` | ✓ | |  |  |
+| `InspectionMethodStatus` |  | |  |  |
+| `QltyMstrDataAuthorizationGroup` |  | |  |  |
+| `InspectionMethodValidFromDate` |  | |  |  |
+| `_InspectionMethodPlant` | | ✓ | | |
+| `_InspectionMethod` | | ✓ | | |
 
 ## Source Code
 

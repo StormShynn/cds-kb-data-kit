@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StockTransportOrder` | `StockTransportOrder` |
-| key `StockTransportOrderItem` | `StockTransportOrderItem` |
-| key `AccountAssignmentNumber` | `AccountAssignmentNumber` |
-| `CostCenter` | `CostCenter` |
-| `ProjectNetwork` | `ProjectNetwork` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `Quantity` | `Quantity` |
-| `MultipleAcctAssgmtDistrPercent` | `MultipleAcctAssgmtDistrPercent` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `GLAccount` | `GLAccount` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `SalesOrderScheduleLine` | `SalesOrderScheduleLine` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `ProjectNetworkInternalID` | `ProjectNetworkInternalID` |
-| `NetworkActivityInternalID` | `NetworkActivityInternalID` |
-| `CreationDate` | `CreationDate` |
-| `_StockTransportOrderItem` | *Association* |
-| `_StockTransportOrder` | *Association* |
-| `_GLAccount` | *Association* |
-| `_SalesDocumentScheduleLine` | *Association* |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_OrderQuantityUnitText` | *Association* |
-| `_DocumentCurrencyText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |
+| `StockTransportOrderItem` | ✓ | |  |  |
+| `AccountAssignmentNumber` | ✓ | |  |  |
+| `CostCenter` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `MultipleAcctAssgmtDistrPercent` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `SalesOrderScheduleLine` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `ProjectNetworkInternalID` |  | |  |  |
+| `NetworkActivityInternalID` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `_StockTransportOrderItem` | | ✓ | | |
+| `_StockTransportOrder` | | ✓ | | |
+| `_GLAccount` | | ✓ | | |
+| `_SalesDocumentScheduleLine` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_OrderQuantityUnitText` | | ✓ | | |
+| `_DocumentCurrencyText` | | ✓ | | |
 
 ## Source Code
 

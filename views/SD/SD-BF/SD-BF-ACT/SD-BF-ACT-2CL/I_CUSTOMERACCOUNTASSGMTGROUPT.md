@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerAccountAssignmentGroup` | `ktgrd` |
-| key `Language` | `spras` |
-| `CustomerAccountAssgmtGrpName` | `vtext` |
-| `_CustomerAccountAssgmtGroup` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerAccountAssignmentGroup` | ✓ | |  | `ktgrd` |
+| `Language` | ✓ | |  | `spras` |
+| `CustomerAccountAssgmtGrpName` |  | |  | `vtext` |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

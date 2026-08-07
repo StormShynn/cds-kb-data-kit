@@ -28,24 +28,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrganization` | `vkorg` |
-| key `DistributionChannel` | `vtweg` |
-| key `Division` | `spart` |
-| `ReferenceDistributionChannel` | `vtwku` |
-| `RefSlsOrgForSlsDocType` | `vkoau` |
-| `RefDistrChnlForSlsDocType` | `vtwau` |
-| `RefDivisionForSlsDocType` | `spaau` |
-| `ATPResultModeControl` | `revfp` |
-| `CreditControlArea` | `kkber` |
-| `ReferenceDivision` | `spaku` |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_ReferenceDistributionChannel` | *Association* |
-| `_CreditControlArea` | *Association* |
-| `_ReferenceDivision` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  | `vkorg` |
+| `DistributionChannel` | ✓ | |  | `vtweg` |
+| `Division` | ✓ | |  | `spart` |
+| `ReferenceDistributionChannel` |  | |  | `vtwku` |
+| `RefSlsOrgForSlsDocType` |  | |  | `vkoau` |
+| `RefDistrChnlForSlsDocType` |  | |  | `vtwau` |
+| `RefDivisionForSlsDocType` |  | |  | `spaau` |
+| `ATPResultModeControl` |  | |  | `revfp` |
+| `CreditControlArea` |  | |  | `kkber` |
+| `ReferenceDivision` |  | |  | `spaku` |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_ReferenceDistributionChannel` | | ✓ | | |
+| `_CreditControlArea` | | ✓ | | |
+| `_ReferenceDivision` | | ✓ | | |
 
 ## Associations
 

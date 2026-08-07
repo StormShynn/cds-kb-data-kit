@@ -35,14 +35,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ID` | `doc_id` |
-| key `Matricula` | `matricula` |
-| `Nombre` | `nombres` |
-| `Apellido` | `apellidos` |
-| `Correo` | `email` |
-| `TipoContrato` | `cntr_type` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ID` | ✓ | |  | `doc_id` |
+| `Matricula` | ✓ | |  | `matricula` |
+| `Nombre` |  | |  | `nombres` |
+| `Apellido` |  | |  | `apellidos` |
+| `Correo` |  | |  | `email` |
+| `TipoContrato` |  | |  | `cntr_type` |
 
 ## Source Code
 

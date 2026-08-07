@@ -31,52 +31,52 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ControllingArea` | `ControllingArea` |
-| key `ProfitCenter` | `ProfitCenter` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ControllingAreaForEdit` | `ControllingAreaForEdit` |
-| `ProfitCenterForEdit` | `ProfitCenterForEdit` |
-| `ValidityEndDateForEdit` | `ValidityEndDateForEdit` |
-| `ProfitCenterName` | `ProfitCenterName` |
-| `ProfitCenterLongName` | `ProfitCenterLongName` |
-| `ProfitCtrResponsiblePersonName` | `ProfitCtrResponsiblePersonName` |
-| `ProfitCtrResponsibleUser` | `ProfitCtrResponsibleUser` |
-| `ProfitCenterCreationDate` | `ProfitCenterCreationDate` |
-| `ProfitCenterCreatedByUser` | `ProfitCenterCreatedByUser` |
-| `ProfitCenterIsBlocked` | `ProfitCenterIsBlocked` |
-| `ProfitCenterStandardHierarchy` | `ProfitCenterStandardHierarchy` |
-| `Segment` | `Segment` |
-| `ProfitCenterDepartment` | `ProfitCenterDepartment` |
-| `ProfitCenterTitleName` | `ProfitCenterTitleName` |
-| `AddressName` | `AddressName` |
-| `AdditionalName` | `AdditionalName` |
-| `ProfitCenterAddrName3` | `ProfitCenterAddrName3` |
-| `ProfitCenterAddrName4` | `ProfitCenterAddrName4` |
-| `StreetAddressName` | `StreetAddressName` |
-| `CityName` | `CityName` |
-| `PostalCode` | `PostalCode` |
-| `District` | `District` |
-| `Country` | `Country` |
-| `Region` | `Region` |
-| `TaxJurisdiction` | `TaxJurisdiction` |
-| `POBox` | `POBox` |
-| `POBoxPostalCode` | `POBoxPostalCode` |
-| `Language` | `Language` |
-| `PhoneNumber1` | `PhoneNumber1` |
-| `PhoneNumber2` | `PhoneNumber2` |
-| `FaxNumber` | `FaxNumber` |
-| `TeleboxNumber` | `TeleboxNumber` |
-| `TelexNumber` | `TelexNumber` |
-| `TeletexNumber` | `TeletexNumber` |
-| `DataCommunicationPhoneNumber` | `DataCommunicationPhoneNumber` |
-| `ProfitCenterPrinterName` | `ProfitCenterPrinterName` |
-| `LogicalSystem` | `LogicalSystem` |
-| `ChangeDocObject` | `ChangeDocObject` |
-| `_ProfitCenterTextTP` | *Association* |
-| `_PrftCtrCompCodeAssgmtTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ControllingArea` | ✓ | |  |  |
+| `ProfitCenter` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ControllingAreaForEdit` |  | |  |  |
+| `ProfitCenterForEdit` |  | |  |  |
+| `ValidityEndDateForEdit` |  | |  |  |
+| `ProfitCenterName` |  | |  |  |
+| `ProfitCenterLongName` |  | |  |  |
+| `ProfitCtrResponsiblePersonName` |  | |  |  |
+| `ProfitCtrResponsibleUser` |  | |  |  |
+| `ProfitCenterCreationDate` |  | |  |  |
+| `ProfitCenterCreatedByUser` |  | |  |  |
+| `ProfitCenterIsBlocked` |  | |  |  |
+| `ProfitCenterStandardHierarchy` |  | |  |  |
+| `Segment` |  | |  |  |
+| `ProfitCenterDepartment` |  | |  |  |
+| `ProfitCenterTitleName` |  | |  |  |
+| `AddressName` |  | |  |  |
+| `AdditionalName` |  | |  |  |
+| `ProfitCenterAddrName3` |  | |  |  |
+| `ProfitCenterAddrName4` |  | |  |  |
+| `StreetAddressName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `District` |  | |  |  |
+| `Country` |  | |  |  |
+| `Region` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `POBox` |  | |  |  |
+| `POBoxPostalCode` |  | |  |  |
+| `Language` |  | |  |  |
+| `PhoneNumber1` |  | |  |  |
+| `PhoneNumber2` |  | |  |  |
+| `FaxNumber` |  | |  |  |
+| `TeleboxNumber` |  | |  |  |
+| `TelexNumber` |  | |  |  |
+| `TeletexNumber` |  | |  |  |
+| `DataCommunicationPhoneNumber` |  | |  |  |
+| `ProfitCenterPrinterName` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `ChangeDocObject` |  | |  |  |
+| `_ProfitCenterTextTP` | | ✓ | | |
+| `_PrftCtrCompCodeAssgmtTP` | | ✓ | | |
 
 ## Source Code
 

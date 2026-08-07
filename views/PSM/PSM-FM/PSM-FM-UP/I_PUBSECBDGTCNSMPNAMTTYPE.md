@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PubSecBudgetCnsmpnAmtType` | `cast( cast ( substring( dd07l.domvalue_l, 1, 4 ) as abap.char( 4 ) ) as psm_bdgt_cnsmpn_amount_type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PubSecBudgetCnsmpnAmtType` | ✓ | |  | `cast( cast ( substring( dd07l.domvalue_l, 1, 4 ) as abap.char( 4 ) ) as psm_bdgt_cnsmpn_amount_type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

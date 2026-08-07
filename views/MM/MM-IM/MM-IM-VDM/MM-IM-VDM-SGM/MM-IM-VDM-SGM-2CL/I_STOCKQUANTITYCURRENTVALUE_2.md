@@ -28,41 +28,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Material` |
-| key `Plant` | `Plant` |
-| key `StorageLocation` | `StorageLocation` |
-| key `Batch` | `Batch` |
-| key `Supplier` | `Supplier` |
-| key `SDDocument` | `SDDocument` |
-| key `SDDocumentItem` | `SDDocumentItem` |
-| key `WBSElementInternalID` | `WBSElementInternalID` |
-| key `Customer` | `Customer` |
-| key `SpecialStockIdfgStockOwner` | `SpecialStockIdfgStockOwner` |
-| key `InventoryStockType` | `InventoryStockType` |
-| key `InventorySpecialStockType` | `InventorySpecialStockType` |
-| key `MaterialBaseUnit` | `MaterialBaseUnit` |
-| key `Currency` | `Currency` |
-| `DisplayCurrency` | `cast($parameters.P_DisplayCurrency as nsdm_display_currency preserving type )` |
-| `ValuationAreaType` | `ValuationAreaType` |
-| `MatlWrhsStkQtyInMatlBaseUnit` | `MatlWrhsStkQtyInMatlBaseUnit` |
-| `StockValueInCCCrcy` | `StockValueInCCCrcy` |
-| `StockValueInDisplayCurrency` | `cast(currency_conversion( amount => StockValueInCCCrcy, source_currency => Currency, target_currency => $parameters.P_DisplayCurrency, exchange_rate_date => CurrentDate ) as nsdm_amount_display_currency preserving type )` |
-| `ProductGroup` | `_Product.ProductGroup` |
-| `ProductType` | `_Product.ProductType` |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_SpecialStockIdfgStockOwner` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_InventoryStockType` | *Association* |
-| `_ProductType` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  | `Material` |
+| `Plant` | ✓ | |  |  |
+| `StorageLocation` | ✓ | |  |  |
+| `Batch` | ✓ | |  |  |
+| `Supplier` | ✓ | |  |  |
+| `SDDocument` | ✓ | |  |  |
+| `SDDocumentItem` | ✓ | |  |  |
+| `WBSElementInternalID` | ✓ | |  |  |
+| `Customer` | ✓ | |  |  |
+| `SpecialStockIdfgStockOwner` | ✓ | |  |  |
+| `InventoryStockType` | ✓ | |  |  |
+| `InventorySpecialStockType` | ✓ | |  |  |
+| `MaterialBaseUnit` | ✓ | |  |  |
+| `Currency` | ✓ | |  |  |
+| `DisplayCurrency` |  | |  | `cast($parameters.P_DisplayCurrency as nsdm_display_currency preserving type )` |
+| `ValuationAreaType` |  | |  |  |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  |
+| `StockValueInCCCrcy` |  | |  |  |
+| `StockValueInDisplayCurrency` |  | |  | `cast(currency_conversion( amount => StockValueInCCCrcy, source_currency => Currency, target_currency => $parameters.P_DisplayCurrency, exchange_rate_date => CurrentDate ) as nsdm_amount_display_currency preserving type )` |
+| `ProductGroup` |  | | `_Product` | `ProductGroup` |
+| `ProductType` |  | | `_Product` | `ProductType` |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_SpecialStockIdfgStockOwner` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_InventoryStockType` | | ✓ | | |
+| `_ProductType` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

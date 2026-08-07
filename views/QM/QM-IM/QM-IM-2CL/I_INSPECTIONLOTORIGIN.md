@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLotOrigin` | `tq31.herkunft` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLotOrigin` | ✓ | |  | `herkunft` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

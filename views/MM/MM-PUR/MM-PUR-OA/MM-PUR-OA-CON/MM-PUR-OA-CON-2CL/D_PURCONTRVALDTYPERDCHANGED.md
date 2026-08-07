@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PurContrValidityStartDate` | `kdatb` |
-| `PurContrValidityEndDate` | `kdate` |
-| `PurContrPrevValidityStartDate` | `kdatb` |
-| `PurContrPrevValidityEndDate` | `kdate` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurContrValidityStartDate` |  | |  | `kdatb` |
+| `PurContrValidityEndDate` |  | |  | `kdate` |
+| `PurContrPrevValidityStartDate` |  | |  | `kdatb` |
+| `PurContrPrevValidityEndDate` |  | |  | `kdate` |
 
 ## Source Code
 

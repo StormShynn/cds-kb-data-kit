@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `REArchitectureObjectType` | `objtype` |
-| `REArchitectureObjectTypeText` | `xobtype` |
-| `_REArchitectureObjectType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `REArchitectureObjectType` | ✓ | |  | `objtype` |
+| `REArchitectureObjectTypeText` |  | |  | `xobtype` |
+| `_REArchitectureObjectType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

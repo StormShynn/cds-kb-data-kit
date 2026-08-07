@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InvoiceList` | `InvoiceList.InvoiceList` |
-| `TransactionCurrency` | `InvoiceList.TransactionCurrency` |
-| `TotalGrossAmount` | `cast(InvoiceList.TotalTaxAmount + InvoiceList.TotalNetAmount + _Remuneration.TotalRemunerationNetAmount + _Remuneration.TotalRemunerationTaxAmount as sum_rl)` |
-| `_InvoiceList` | *Association* |
-| `_Remuneration` | *Association* |
-| `_TransactionCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InvoiceList` | ✓ | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `TotalGrossAmount` |  | |  | `cast(InvoiceList.TotalTaxAmount + InvoiceList.TotalNetAmount + _Remuneration.TotalRemunerationNetAmount + _Remuneration.TotalRemunerationTaxAmount as sum_rl)` |
+| `_InvoiceList` | | ✓ | | |
+| `_Remuneration` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
 
 ## Associations
 

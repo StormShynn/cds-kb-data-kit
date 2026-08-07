@@ -31,53 +31,53 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditDecisionDocumentUUID` | `CreditDecisionDocumentUUID` |
-| `CreditDecisionDocument` | `CreditDecisionDocument` |
-| `RelatedSAPObjectType` | `RelatedSAPObjectType` |
-| `CreditDecisionReferenceDoc` | `CreditDecisionReferenceDoc` |
-| `SourceLogicalSystem` | `SourceLogicalSystem` |
-| `CrdtDcsnDocExternalReference` | `CrdtDcsnDocExternalReference` |
-| `BusinessPartner` | `BusinessPartner` |
-| `CreditSegment` | `CreditSegment` |
-| `CreditRiskClass` | `CreditRiskClass` |
-| `CreditDecisionDocumentStatus` | `CreditDecisionDocumentStatus` |
-| `CrdtDcsnDocPlannedCloseDate` | `CrdtDcsnDocPlannedCloseDate` |
-| `CrdtDcsnDocumentProcessingUser` | `CrdtDcsnDocumentProcessingUser` |
-| `ApprvlHierLastDrvtnDateTime` | `ApprvlHierLastDrvtnDateTime` |
-| `IsApprovalRelevant` | `IsApprovalRelevant` |
-| `CreditDecisionDocumentCategory` | `CreditDecisionDocumentCategory` |
-| `CreditDecisionDocumentPriority` | `CreditDecisionDocumentPriority` |
-| `CreditDecisionDocumentReason` | `CreditDecisionDocumentReason` |
-| `OpenCreditAmount` | `OpenCreditAmount` |
-| `CheckedCreditRiskAmount` | `CheckedCreditRiskAmount` |
-| `CreditDecisionCurrency` | `CreditDecisionCurrency` |
-| `CreditCheckLog` | `CreditCheckLog` |
-| `StaticLmtUtilznCrdtChkIsFailed` | `StaticLmtUtilznCrdtChkIsFailed` |
-| `MaxDocAmountCreditChkIsFailed` | `MaxDocAmountCreditChkIsFailed` |
-| `DynLimitUtilznCrdtChkIsFailed` | `DynLimitUtilznCrdtChkIsFailed` |
-| `MaxDunningLevelCrdtChkIsFailed` | `MaxDunningLevelCrdtChkIsFailed` |
-| `OldestOpenItemCrdtChkIsFailed` | `OldestOpenItemCrdtChkIsFailed` |
-| `DaysSlsOutStdgCrdtChkIsFailed` | `DaysSlsOutStdgCrdtChkIsFailed` |
-| `OverdueOpenItemCrdtChkIsFailed` | `OverdueOpenItemCrdtChkIsFailed` |
-| `LimitValidityCrdtChkIsFailed` | `LimitValidityCrdtChkIsFailed` |
-| `CrdtDecisionDocumentLastAction` | `CrdtDecisionDocumentLastAction` |
-| `CrdtDcsnDocLastActionByUser` | `CrdtDcsnDocLastActionByUser` |
-| `CrdtDcsnDocLastActionDateTime` | `CrdtDcsnDocLastActionDateTime` |
-| `CreditDecisionReqUTCDateTime` | `CreditDecisionReqUTCDateTime` |
-| `SalesEmployeeUserID` | `SalesEmployeeUserID` |
-| `CrdtDcsnDocumentCreatedByUser` | `CrdtDcsnDocumentCreatedByUser` |
-| `CrdtDcsnDocCreationDateTime` | `} CrdtDcsnDocCreationDateTime` |
-| `CrdtDcsnDocLastChangedByUser` | `CrdtDcsnDocLastChangedByUser` |
-| `CrdtDcsnDocLastChangeDateTime` | `CrdtDcsnDocLastChangeDateTime` |
-| `CrdtDcsnDocumentClosedByUser` | `CrdtDcsnDocumentClosedByUser` |
-| `CrdtDcsnDocumentCloseDateTime` | `CrdtDcsnDocumentCloseDateTime` |
-| `CreditDecisionDocumentNoteUUID` | `CreditDecisionDocumentNoteUUID` |
-| `SAPObjectNodeType` | `SAPObjectNodeType` |
-| `_ApprovalHierarchy` | *Association* |
-| `_NoteBasic` | *Association* |
-| `_HDMRelation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditDecisionDocumentUUID` | ✓ | |  |  |
+| `CreditDecisionDocument` |  | |  |  |
+| `RelatedSAPObjectType` |  | |  |  |
+| `CreditDecisionReferenceDoc` |  | |  |  |
+| `SourceLogicalSystem` |  | |  |  |
+| `CrdtDcsnDocExternalReference` |  | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `CreditSegment` |  | |  |  |
+| `CreditRiskClass` |  | |  |  |
+| `CreditDecisionDocumentStatus` |  | |  |  |
+| `CrdtDcsnDocPlannedCloseDate` |  | |  |  |
+| `CrdtDcsnDocumentProcessingUser` |  | |  |  |
+| `ApprvlHierLastDrvtnDateTime` |  | |  |  |
+| `IsApprovalRelevant` |  | |  |  |
+| `CreditDecisionDocumentCategory` |  | |  |  |
+| `CreditDecisionDocumentPriority` |  | |  |  |
+| `CreditDecisionDocumentReason` |  | |  |  |
+| `OpenCreditAmount` |  | |  |  |
+| `CheckedCreditRiskAmount` |  | |  |  |
+| `CreditDecisionCurrency` |  | |  |  |
+| `CreditCheckLog` |  | |  |  |
+| `StaticLmtUtilznCrdtChkIsFailed` |  | |  |  |
+| `MaxDocAmountCreditChkIsFailed` |  | |  |  |
+| `DynLimitUtilznCrdtChkIsFailed` |  | |  |  |
+| `MaxDunningLevelCrdtChkIsFailed` |  | |  |  |
+| `OldestOpenItemCrdtChkIsFailed` |  | |  |  |
+| `DaysSlsOutStdgCrdtChkIsFailed` |  | |  |  |
+| `OverdueOpenItemCrdtChkIsFailed` |  | |  |  |
+| `LimitValidityCrdtChkIsFailed` |  | |  |  |
+| `CrdtDecisionDocumentLastAction` |  | |  |  |
+| `CrdtDcsnDocLastActionByUser` |  | |  |  |
+| `CrdtDcsnDocLastActionDateTime` |  | |  |  |
+| `CreditDecisionReqUTCDateTime` |  | |  |  |
+| `SalesEmployeeUserID` |  | |  |  |
+| `CrdtDcsnDocumentCreatedByUser` |  | |  |  |
+| `CrdtDcsnDocCreationDateTime` |  | |  | `} CrdtDcsnDocCreationDateTime` |
+| `CrdtDcsnDocLastChangedByUser` |  | |  |  |
+| `CrdtDcsnDocLastChangeDateTime` |  | |  |  |
+| `CrdtDcsnDocumentClosedByUser` |  | |  |  |
+| `CrdtDcsnDocumentCloseDateTime` |  | |  |  |
+| `CreditDecisionDocumentNoteUUID` |  | |  |  |
+| `SAPObjectNodeType` |  | |  |  |
+| `_ApprovalHierarchy` | | ✓ | | |
+| `_NoteBasic` | | ✓ | | |
+| `_HDMRelation` | | ✓ | | |
 
 ## Source Code
 

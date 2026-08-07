@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationSelection` | `cast(left(_Source.FinancialSelection, 20) as fincs_consolidationselection preserving type)` |
-| `FinancialSelection` | `_Source.FinancialSelection` |
-| `_Text` | *Association* |
-| `_SelectionCondition` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationSelection` | ✓ | |  | `cast(left(_Source.FinancialSelection, 20) as fincs_consolidationselection preserving type)` |
+| `FinancialSelection` |  | | `_Source` | `FinancialSelection` |
+| `_Text` | | ✓ | | |
+| `_SelectionCondition` | | ✓ | | |
 
 ## Associations
 

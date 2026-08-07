@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITProdnConfProfile` | `cast( substring( domvalue_l,1,4 ) as njit_prodn_conf_profile preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITProdnConfProfile` | ✓ | |  | `cast( substring( domvalue_l,1,4 ) as njit_prodn_conf_profile preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

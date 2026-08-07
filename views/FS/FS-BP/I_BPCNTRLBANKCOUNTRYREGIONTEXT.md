@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `tplzbt.langu` |
-| key `BPCentralBankCountryRegion` | `tplzbt.country_key` |
-| `BPCntrlBkCtryRegDescription` | `tplzbt.country_long` |
-| `_BPCntrlBankCountryRegion` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `BPCentralBankCountryRegion` | ✓ | |  | `country_key` |
+| `BPCntrlBkCtryRegDescription` |  | |  | `country_long` |
+| `_BPCntrlBankCountryRegion` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

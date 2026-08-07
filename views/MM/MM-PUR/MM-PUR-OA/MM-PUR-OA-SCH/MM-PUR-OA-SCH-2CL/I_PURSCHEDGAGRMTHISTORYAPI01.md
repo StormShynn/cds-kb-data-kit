@@ -28,67 +28,67 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreement` | `History.SchedulingAgreement` |
-| key `SchedulingAgreementItem` | `SchedulingAgreementItem` |
-| key `AccountAssignmentNumber` | `AccountAssignmentNumber` |
-| key `PurchasingHistoryDocumentType` | `PurchaseOrderTransactionType` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| `PurchasingHistoryCategory` | `PurchaseOrderHistCategory` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `PostingDate` | `PostingDate` |
-| `Currency` | `Currency` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `IsCompletelyDelivered` | `IsCompletelyDelivered` |
-| `ReferenceDocumentFiscalYear` | `ReferenceDocumentFiscalYear` |
-| `ReferenceDocument` | `ReferenceDocument` |
-| `ReferenceDocumentItem` | `ReferenceDocumentItem` |
-| `Material` | `Material` |
-| `Plant` | `Plant` |
-| `RvslOfGoodsReceiptIsAllowed` | `RvslOfGoodsReceiptIsAllowed` |
-| `PricingDocument` | `PricingDocument` |
-| `TaxCode` | `TaxCode` |
-| `DocumentDate` | `DocumentDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `InventoryValuationType` | `InventoryValuationType` |
-| `DocumentReferenceID` | `DocumentReferenceID` |
-| `DeliveryQuantityUnit` | `DeliveryQuantityUnit` |
-| `ManufacturerMaterial` | `ManufacturerMaterial` |
-| `AccountingDocumentCreationDate` | `AccountingDocumentCreationDate` |
-| `PurgHistDocumentCreationTime` | `PurgHistDocumentCreationTime` |
-| `Quantity` | `Quantity` |
-| `PurOrdAmountInCompanyCodeCrcy` | `PurOrdAmountInCompanyCodeCrcy` |
-| `PurchaseOrderAmount` | `PurchaseOrderAmount` |
-| `QtyInPurchaseOrderPriceUnit` | `QtyInPurchaseOrderPriceUnit` |
-| `GRIRAcctClrgAmtInCoCodeCrcy` | `GRIRAcctClrgAmtInCoCodeCrcy` |
-| `GdsRcptBlkdStkQtyInOrdQtyUnit` | `GdsRcptBlkdStkQtyInOrdQtyUnit` |
-| `GdsRcptBlkdStkQtyInOrdPrcUnit` | `GdsRcptBlkdStkQtyInOrdPrcUnit` |
-| `InvoiceAmtInCoCodeCrcy` | `InvoiceAmtInCoCodeCrcy` |
-| `ShipgInstrnSupplierCompliance` | `ShipgInstrnSupplierCompliance` |
-| `InvoiceAmountInFrgnCurrency` | `InvoiceAmountInFrgnCurrency` |
-| `QuantityInDeliveryQtyUnit` | `QuantityInDeliveryQtyUnit` |
-| `GRIRAcctClrgAmtInTransacCrcy` | `GRIRAcctClrgAmtInTransacCrcy` |
-| `QuantityInBaseUnit` | `QuantityInBaseUnit` |
-| `Batch` | `Batch` |
-| `GRIRAcctClrgAmtInOrdTrnsacCrcy` | `GRIRAcctClrgAmtInOrdTrnsacCrcy` |
-| `InvoiceAmtInPurOrdTransacCrcy` | `InvoiceAmtInPurOrdTransacCrcy` |
-| `VltdGdsRcptBlkdStkQtyInOrdUnit` | `VltdGdsRcptBlkdStkQtyInOrdUnit` |
-| `VltdGdsRcptBlkdQtyInOrdPrcUnit` | `VltdGdsRcptBlkdQtyInOrdPrcUnit` |
-| `IsToBeAcceptedAtOrigin` | `IsToBeAcceptedAtOrigin` |
-| `ExchangeRateDifferenceAmount` | `ExchangeRateDifferenceAmount` |
-| `ExchangeRate` | `ExchangeRate` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `DeliveryDocumentItem` | `DeliveryDocumentItem` |
-| `BaseUnit` | `BaseUnit` |
-| `OrderQuantityUnit` | `_SchedulingAgreementItem.OrderQuantityUnit` |
-| `OrderPriceUnit` | `_SchedulingAgreementItem.OrderPriceUnit` |
-| `_SchedulingAgreement` | *Association* |
-| `_SchedulingAgreementItem` | *Association* |
-| `_PurchaseOrderHistCategory` | *Association* |
-| `_Currency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreement` | ✓ | |  |  |
+| `SchedulingAgreementItem` | ✓ | |  |  |
+| `AccountAssignmentNumber` | ✓ | |  |  |
+| `PurchasingHistoryDocumentType` | ✓ | |  | `PurchaseOrderTransactionType` |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `PurchasingHistoryCategory` |  | |  | `PurchaseOrderHistCategory` |
+| `GoodsMovementType` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `Currency` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `ReferenceDocumentFiscalYear` |  | |  |  |
+| `ReferenceDocument` |  | |  |  |
+| `ReferenceDocumentItem` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `RvslOfGoodsReceiptIsAllowed` |  | |  |  |
+| `PricingDocument` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `DocumentReferenceID` |  | |  |  |
+| `DeliveryQuantityUnit` |  | |  |  |
+| `ManufacturerMaterial` |  | |  |  |
+| `AccountingDocumentCreationDate` |  | |  |  |
+| `PurgHistDocumentCreationTime` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `PurOrdAmountInCompanyCodeCrcy` |  | |  |  |
+| `PurchaseOrderAmount` |  | |  |  |
+| `QtyInPurchaseOrderPriceUnit` |  | |  |  |
+| `GRIRAcctClrgAmtInCoCodeCrcy` |  | |  |  |
+| `GdsRcptBlkdStkQtyInOrdQtyUnit` |  | |  |  |
+| `GdsRcptBlkdStkQtyInOrdPrcUnit` |  | |  |  |
+| `InvoiceAmtInCoCodeCrcy` |  | |  |  |
+| `ShipgInstrnSupplierCompliance` |  | |  |  |
+| `InvoiceAmountInFrgnCurrency` |  | |  |  |
+| `QuantityInDeliveryQtyUnit` |  | |  |  |
+| `GRIRAcctClrgAmtInTransacCrcy` |  | |  |  |
+| `QuantityInBaseUnit` |  | |  |  |
+| `Batch` |  | |  |  |
+| `GRIRAcctClrgAmtInOrdTrnsacCrcy` |  | |  |  |
+| `InvoiceAmtInPurOrdTransacCrcy` |  | |  |  |
+| `VltdGdsRcptBlkdStkQtyInOrdUnit` |  | |  |  |
+| `VltdGdsRcptBlkdQtyInOrdPrcUnit` |  | |  |  |
+| `IsToBeAcceptedAtOrigin` |  | |  |  |
+| `ExchangeRateDifferenceAmount` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `DeliveryDocumentItem` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `OrderQuantityUnit` |  | | `_SchedulingAgreementItem` | `OrderQuantityUnit` |
+| `OrderPriceUnit` |  | | `_SchedulingAgreementItem` | `OrderPriceUnit` |
+| `_SchedulingAgreement` | | ✓ | | |
+| `_SchedulingAgreementItem` | | ✓ | | |
+| `_PurchaseOrderHistCategory` | | ✓ | | |
+| `_Currency` | | ✓ | | |
 
 ## Associations
 

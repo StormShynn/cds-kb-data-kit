@@ -30,22 +30,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DebitMemoRequest` | `DebitMemoRequestPartnerTP.DebitMemoRequest` |
-| key `PartnerFunction` | `DebitMemoRequestPartnerTP.PartnerFunction` |
-| `PartnerFunctionForEdit` | `DebitMemoRequestPartnerTP.PartnerFunctionForEdit` |
-| `Customer` | `DebitMemoRequestPartnerTP.Customer` |
-| `Supplier` | `DebitMemoRequestPartnerTP.Supplier` |
-| `Personnel` | `DebitMemoRequestPartnerTP.Personnel` |
-| `ContactPerson` | `DebitMemoRequestPartnerTP.ContactPerson` |
-| `ReferenceBusinessPartner` | `DebitMemoRequestPartnerTP.ReferenceBusinessPartner` |
-| `Partner` | `DebitMemoRequestPartnerTP.Partner` |
-| `DebitMemoRequestType` | `DebitMemoRequestPartnerTP.DebitMemoRequestType` |
-| `SalesOrganization` | `DebitMemoRequestPartnerTP.SalesOrganization` |
-| `DistributionChannel` | `DebitMemoRequestPartnerTP.DistributionChannel` |
-| `OrganizationDivision` | `DebitMemoRequestPartnerTP.OrganizationDivision` |
-| `_DebitMemoRequest` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DebitMemoRequest` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `DebitMemoRequestType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_DebitMemoRequest` | | ✓ | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintPriorityType` | `t356a_t.artpr` |
-| key `Language` | `t356a_t.spras` |
-| `MaintPriorityTypeDesc` | `t356a_t.artprx` |
-| `_Language` | *Association* |
-| `_PMNotificationPriorityType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintPriorityType` | ✓ | |  | `artpr` |
+| `Language` | ✓ | |  | `spras` |
+| `MaintPriorityTypeDesc` |  | |  | `artprx` |
+| `_Language` | | ✓ | | |
+| `_PMNotificationPriorityType` | | ✓ | | |
 
 ## Associations
 

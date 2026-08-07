@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PCLgsDcMnllyOvrwrtnAddrUUID` | `PCLgsDcMnllyOvrwrtnAddrUUID` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ProdCmplncLogsDocumentUUID` | `ProdCmplncLogsDocumentUUID` |
-| `PartnerFunction` | `PartnerFunction` |
-| `AddressLine1Text` | `AddressLine1Text` |
-| `AddressLine2Text` | `AddressLine2Text` |
-| `AddressLine3Text` | `AddressLine3Text` |
-| `AddressLine4Text` | `AddressLine4Text` |
-| `AddressLine5Text` | `AddressLine5Text` |
-| `AddressLine6Text` | `AddressLine6Text` |
-| `AddressLine7Text` | `AddressLine7Text` |
-| `AddressLine8Text` | `AddressLine8Text` |
-| `AddressLine9Text` | `AddressLine9Text` |
-| `AddressCorrespondenceLanguage` | `AddressCorrespondenceLanguage` |
-| `AddressCountry` | `AddressCountry` |
-| `SftyDataShtOutpReqManReqEmail` | `SftyDataShtOutpReqManReqEmail` |
-| `_Document` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PCLgsDcMnllyOvrwrtnAddrUUID` | ✓ | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ProdCmplncLogsDocumentUUID` |  | |  |  |
+| `PartnerFunction` |  | |  |  |
+| `AddressLine1Text` |  | |  |  |
+| `AddressLine2Text` |  | |  |  |
+| `AddressLine3Text` |  | |  |  |
+| `AddressLine4Text` |  | |  |  |
+| `AddressLine5Text` |  | |  |  |
+| `AddressLine6Text` |  | |  |  |
+| `AddressLine7Text` |  | |  |  |
+| `AddressLine8Text` |  | |  |  |
+| `AddressLine9Text` |  | |  |  |
+| `AddressCorrespondenceLanguage` |  | |  |  |
+| `AddressCountry` |  | |  |  |
+| `SftyDataShtOutpReqManReqEmail` |  | |  |  |
+| `_Document` | | ✓ | | |
 
 ## Source Code
 

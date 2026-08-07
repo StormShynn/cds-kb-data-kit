@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SAPGUIIconASCIICode` | `id` |
-| `SAPGUIIcon` | `name` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SAPGUIIconASCIICode` | ✓ | |  | `id` |
+| `SAPGUIIcon` |  | |  | `name` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

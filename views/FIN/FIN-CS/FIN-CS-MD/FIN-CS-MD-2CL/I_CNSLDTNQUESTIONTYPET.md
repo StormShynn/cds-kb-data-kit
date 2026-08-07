@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_Source.Language as spras preserving type )` |
-| key `ConsolidationQuestionType` | `cast(left(_Source.DomainValue, 1) as fincs_questiontype preserving type )` |
-| `ConsolidationQuestionTypeText` | `cast(_Source.DomainValueText as fincs_questiontypetext preserving type )` |
-| `DomainValue` | `_Source.DomainValue` |
-| `_QuestionType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_Source.Language as spras preserving type )` |
+| `ConsolidationQuestionType` | ✓ | |  | `cast(left(_Source.DomainValue, 1) as fincs_questiontype preserving type )` |
+| `ConsolidationQuestionTypeText` |  | |  | `cast(_Source.DomainValueText as fincs_questiontypetext preserving type )` |
+| `DomainValue` |  | | `_Source` | `DomainValue` |
+| `_QuestionType` | | ✓ | | |
 
 ## Associations
 

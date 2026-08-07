@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdEventIsRecalled` | `cast(substring(domvalue_l, 1, 1) as /scmtms/event_revoked preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdEventIsRecalled` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/event_revoked preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

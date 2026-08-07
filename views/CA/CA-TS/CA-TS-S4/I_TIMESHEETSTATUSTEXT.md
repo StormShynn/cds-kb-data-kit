@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `TimeSheetStatus` | `domvalue_l` |
-| `TimeSheetStatusText` | `cast( ddtext as catsstatustext preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TimeSheetStatus` | ✓ | |  | `domvalue_l` |
+| `TimeSheetStatusText` |  | |  | `cast( ddtext as catsstatustext preserving type )` |
 
 ## Source Code
 

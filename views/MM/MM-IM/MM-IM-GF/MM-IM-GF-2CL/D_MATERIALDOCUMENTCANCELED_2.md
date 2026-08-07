@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `InventoryTransactionType` | `vgart` |
-| `D_MaterialDocumentItemCancld_2` | `_MaterialDocumentItemCanceled : composition [1..*] of D_MaterialDocumentItemCancld_2` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryTransactionType` |  | |  | `vgart` |
+| `D_MaterialDocumentItemCancld_2` |  | |  | `_MaterialDocumentItemCanceled : composition [1..*] of D_MaterialDocumentItemCancld_2` |
 
 ## Source Code
 

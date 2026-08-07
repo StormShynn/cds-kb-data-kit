@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsUsage` | `cast(txt.verwe as billofoperationsusage preserving type)` |
-| key `Language` | `txt.spras` |
-| `BillOfOperationsUsageDesc` | `txt.txt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsUsage` | ✓ | |  | `cast(txt.verwe as billofoperationsusage preserving type)` |
+| `Language` | ✓ | |  | `spras` |
+| `BillOfOperationsUsageDesc` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

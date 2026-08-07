@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CASubscriptionChargeType` | `cast( left( domvalue_l,2 ) as charge_type_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CASubscriptionChargeTypeText` | `cast( ddtext as charge_type_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CASubscriptionChargeType` | ✓ | |  | `cast( left( domvalue_l,2 ) as charge_type_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CASubscriptionChargeTypeText` |  | |  | `cast( ddtext as charge_type_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

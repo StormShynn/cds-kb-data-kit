@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionResourceType` | `cast(substring(typ.domvalue_l, 1, 2) as productionresourcetype preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionResourceType` | ✓ | |  | `cast(substring(typ.domvalue_l, 1, 2) as productionresourcetype preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

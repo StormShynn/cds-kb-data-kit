@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_Text.langu as fincs_language preserving type )` |
-| key `ConsolidationInvestmentMethod` | `cast(_Text.cmeth as fincs_investmentmethod preserving type )` |
-| `CnsldtnInvestmentMethodText` | `cast (_Text.txt as fincs_investmentmethodtext preserving type)` |
-| `_Language` | *Association* |
-| `_CnsldtnInvestmentMethod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_Text.langu as fincs_language preserving type )` |
+| `ConsolidationInvestmentMethod` | ✓ | |  | `cast(_Text.cmeth as fincs_investmentmethod preserving type )` |
+| `CnsldtnInvestmentMethodText` |  | |  | `cast (_Text.txt as fincs_investmentmethodtext preserving type)` |
+| `_Language` | | ✓ | | |
+| `_CnsldtnInvestmentMethod` | | ✓ | | |
 
 ## Associations
 

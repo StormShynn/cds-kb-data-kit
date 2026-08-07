@@ -32,31 +32,31 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Carrid` | `carrid` |
-| key `Connid` | `connid` |
-| key `Fldate` | `fldate` |
-| key `Bookid` | `bookid` |
-| `Customid` | `customid` |
-| `Custtype` | `custtype` |
-| `Smoker` | `smoker` |
-| `Luggweight` | `luggweight` |
-| `Wunit` | `wunit` |
-| `Invoice` | `invoice` |
-| `Class` | `class` |
-| `Forcuram` | `forcuram` |
-| `Forcurkey` | `forcurkey` |
-| `Loccuram` | `loccuram` |
-| `Loccurkey` | `loccurkey` |
-| `OrderDate` | `order_date` |
-| `Counter` | `counter` |
-| `Agencynum` | `agencynum` |
-| `Cancelled` | `cancelled` |
-| `Reserved` | `reserved` |
-| `Passname` | `passname` |
-| `Passform` | `passform` |
-| `Passbirth` | `passbirth` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Carrid` | ✓ | |  | `carrid` |
+| `Connid` | ✓ | |  | `connid` |
+| `Fldate` | ✓ | |  | `fldate` |
+| `Bookid` | ✓ | |  | `bookid` |
+| `Customid` |  | |  | `customid` |
+| `Custtype` |  | |  | `custtype` |
+| `Smoker` |  | |  | `smoker` |
+| `Luggweight` |  | |  | `luggweight` |
+| `Wunit` |  | |  | `wunit` |
+| `Invoice` |  | |  | `invoice` |
+| `Class` |  | |  | `class` |
+| `Forcuram` |  | |  | `forcuram` |
+| `Forcurkey` |  | |  | `forcurkey` |
+| `Loccuram` |  | |  | `loccuram` |
+| `Loccurkey` |  | |  | `loccurkey` |
+| `OrderDate` |  | |  | `order_date` |
+| `Counter` |  | |  | `counter` |
+| `Agencynum` |  | |  | `agencynum` |
+| `Cancelled` |  | |  | `cancelled` |
+| `Reserved` |  | |  | `reserved` |
+| `Passname` |  | |  | `passname` |
+| `Passform` |  | |  | `passform` |
+| `Passbirth` |  | |  | `passbirth` |
 
 ## Source Code
 

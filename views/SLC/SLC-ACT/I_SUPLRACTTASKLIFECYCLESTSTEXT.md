@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrActyTaskLifecycleStatus` | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/tsk_lifecycle_stat_cd preserving type)` |
-| key `Language` | `ddlanguage` |
-| `SuplrActyTaskLifecycleStsName` | `ddtext` |
-| `_Language` | *Association* |
-| `_SuplrActTaskLifecycleSts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrActyTaskLifecycleStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as /srmsmc/tsk_lifecycle_stat_cd preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SuplrActyTaskLifecycleStsName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_SuplrActTaskLifecycleSts` | | ✓ | | |
 
 ## Associations
 

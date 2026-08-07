@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_nodet.spras` |
-| key `ControllingArea` | `cast(_nodet.kokrs as fincs_controllingarea preserving type )` |
-| key `ProfitCenter` | `cast(left(_nodet.nodevalue, 25) as fincs_elim_profitcenter preserving type )` |
-| `ProfitCenterName` | `cast(left(_nodet.nodetxt, 50) as fincs_profitcenter_desc preserving type )` |
-| `_Language` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_ProfitCenter` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_nodet` | `spras` |
+| `ControllingArea` | ✓ | |  | `cast(_nodet.kokrs as fincs_controllingarea preserving type )` |
+| `ProfitCenter` | ✓ | |  | `cast(left(_nodet.nodevalue, 25) as fincs_elim_profitcenter preserving type )` |
+| `ProfitCenterName` |  | |  | `cast(left(_nodet.nodetxt, 50) as fincs_profitcenter_desc preserving type )` |
+| `_Language` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
 
 ## Associations
 

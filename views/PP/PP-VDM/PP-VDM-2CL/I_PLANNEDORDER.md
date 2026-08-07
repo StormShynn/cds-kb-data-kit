@@ -28,193 +28,193 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlannedOrder` | `plaf.plnum` |
-| `PlannedOrderType` | `cast(plaf.paart as paart preserving type)` |
-| `PlannedOrderCategory` | `cast(plaf.obart as plannedordercategory preserving type)` |
-| `LastChangeDate` | `cast(left(cast(plaf.pstmp as abap.char(17)), 8) as aedat)` |
-| `LastChangeDateTime` | `plaf.pstmp` |
-| `LastChangedByUser` | `plaf.puser` |
-| `PlannedOrderLongText` | `plaf.ptext` |
-| `Material` | `plaf.matnr` |
-| `Product` | `cast(plaf.matnr as productnumber preserving type)` |
-| `MRPPlant` | `plaf.plwrk` |
-| `MRPArea` | `plaf.berid` |
-| `MRPController` | `cast(plaf.dispo as pph_dispo preserving type )` |
-| `MaterialProcurementCategory` | `cast(plaf.beskz as pph_beskz preserving type)` |
-| `MaterialProcurementType` | `cast(plaf.sobes as pph_sobes preserving type)` |
-| `MaterialGoodsReceiptDuration` | `cast(plaf.webaz as pph_webaz preserving type)` |
-| `MaterialPlannedDeliveryDurn` | `cast(plaf.plifz as pph_plifz preserving type)` |
-| `StorageLocation` | `cast(plaf.lgort as pph_lgort preserving type)` |
-| `InventorySpecialStockType` | `cast(plaf.sobkz as pph_sobkz preserving type)` |
-| `ConsumptionPosting` | `cast(plaf.kzvbr as pph_kzvbr preserving type)` |
-| `ManufacturerMaterial` | `cast(plaf.ematn as pph_ematn preserving type)` |
-| `IssuingStorageLocation` | `plaf.reslo` |
-| `BillOfOperationsType` | `cast(plaf.plnty as billofoperationstype preserving type)` |
-| `BillOfOperations` | `cast(plaf.plnnr as billofoperations preserving type)` |
-| `BillOfOperationsGroup` | `cast(plaf.plnnr as billofoperationsgroup preserving type)` |
-| `BillOfOperationsVariant` | `cast(plaf.plnal as billofoperationsvariant preserving type)` |
-| `BillOfMaterialVariant` | `plaf.stalt` |
-| `BillOfMaterialVariantUsage` | `plaf.stlan` |
-| `BillOfMaterialStatus` | `plaf.ststa` |
-| `BillOfMaterialVersion` | `plaf.bom_versn` |
-| `BOMExplosionDateID` | `cast(plaf.sernr as pph_sernr preserving type)` |
-| `ProductionPlant` | `plaf.pwwrk` |
-| `ProductionSupervisor` | `cast(plaf.plgrp as pph_fevor preserving type)` |
-| `ProductionVersion` | `plaf.verid` |
-| `MRPPlanningScenario` | `plaf.plscn` |
-| `Reservation` | `plaf.rsnum` |
-| `SettlementReservation` | `cast(plaf.arsnr as settlmntres preserving type)` |
-| `SettlementReservationItem` | `cast(plaf.arsps as pph_arsps preserving type)` |
-| `PurchasingOrganization` | `plaf.ekorg` |
-| `PurchasingDocument` | `cast(plaf.konnr as pph_konnr preserving type)` |
-| `PurchasingDocumentItem` | `cast(plaf.ktpnr as pph_ktpnr preserving type)` |
-| `QuotaArrangement` | `cast(plaf.qunum as pph_qunum preserving type)` |
-| `QuotaArrangementItem` | `cast(plaf.qupos as pph_qupos preserving type)` |
-| `FixedSupplier` | `plaf.flief` |
-| `SupplierIsSubcontractor` | `plaf.lblkz` |
-| `Customer` | `plaf.kunnr` |
-| `SalesOrder` | `cast(plaf.kdauf as co_kdauf preserving type)` |
-| `SalesOrderItem` | `cast(plaf.kdpos as co_kdpos preserving type)` |
-| `WBSElementInternalID` | `cast(plaf.pspel as pph_pspel preserving type)` |
-| `WBSElementInternalID_2` | `cast(plaf.pspel as ps_s4_pspnr preserving type)` |
-| `CapacityRequirement` | `plaf.bedid` |
-| `SchedulingType` | `cast(plaf.trart as pph_termkz preserving type)` |
-| `SchedulingError` | `plaf.trmer` |
-| `ChangeNumber` | `plaf.aennr` |
-| `MaterialRevisionLevel` | `cast(plaf.revlv as qrevlv preserving type)` |
-| `MaterialRevisionLevel_2` | `cast(plaf.revlv as vdm_qm_revlv preserving type)` |
-| `AccountAssignmentCategory` | `cast(plaf.knttp as pph_knttp preserving type)` |
-| `AssemblyProcessingType` | `cast(plaf.monkz as pph_mntga)` |
-| `QuantityDistributionKey` | `plaf.verto` |
-| `EffectivityParameterVariant` | `plaf.techs` |
-| `RequirementPlan` | `plaf.pbdnr` |
-| `ProductAvailabilityCheckType` | `cast(plaf.kzavc as vdm_kzavc preserving type)` |
-| `CentralContract` | `plaf.srm_contract_id` |
-| `CentralContractItem` | `plaf.srm_contract_itm` |
-| `PlannedOrderActionControl` | `plaf.mdach` |
-| `PlannedOrderProcgAction` | `cast(plaf.mdacc as vdm_mdacc preserving type)` |
-| `PlannedOrderLastActionDate` | `plaf.mdacd` |
-| `PlannedOrderLastActionTime` | `plaf.mdact` |
-| `PlannedOrderIsFirm` | `plaf.auffx` |
-| `PlannedOrderBOMIsFixed` | `plaf.stlfx` |
-| `PlannedOrderIsConvertible` | `plaf.umskz` |
-| `PlndOrderIsCreatedForRptvMfg` | `plaf.remfl` |
-| `PlndOrderReplnmtElmntType` | `plaf.kbnkz` |
-| `PlndOrdIsCrtedForAssemblyProcg` | `cast(case when plaf.monkz <> '' then 'X' else plaf.monkz end as pph_monkz preserving type)` |
-| `PlannedOrderCapacityIsDsptchd` | `plaf.kapfx` |
-| `OrderIsScheduled` | `plaf.trmkz` |
-| `PlndOrdConfOfAvailability` | `plaf.mdpbv` |
-| `IsPlannedWithoutFinalAssembly` | `cast(plaf.vrpla as pph_vrpla preserving type)` |
-| `PlannedOrderIsPartOfCollvOrder` | `cast(case when plaf.arsnr > '0000000000' then 'X' when plaf.arsnr = '0000000000' then ' ' end as vdm_prodnet preserving type)` |
-| `PlndOrderPlannedStartDate` | `plaf.psttr` |
-| `PlndOrderPlannedStartTime` | `plaf.pstti` |
-| `PlndOrderPlannedEndDate` | `plaf.pedtr` |
-| `PlndOrderPlannedEndTime` | `plaf.pedti` |
-| `PlannedOrderOpeningDate` | `plaf.pertr` |
-| `PlndOrderTotalCmtmtDate` | `plaf.gsbtr` |
-| `ProductionStartDate` | `plaf.terst` |
-| `ProductionEndDate` | `plaf.tered` |
-| `BOMExplosionDate` | `plaf.paltr` |
-| `PlndOrderBaseToEntryQtyNmrtr` | `plaf.umrez` |
-| `PlndOrderBaseToEntryQtyDnmntr` | `plaf.umren` |
-| `BaseUnit` | `plaf.meins` |
-| `PlannedTotalQtyInBaseUnit` | `plaf.gsmng` |
-| `PlannedScrapQtyInBaseUnit` | `plaf.avmng` |
-| `RequirementQuantityInBaseUnit` | `plaf.bdmng` |
-| `GoodsReceiptQtyInBaseUnit` | `plaf.wemng` |
-| `QuantityWithdrawnInBaseUnit` | `plaf.wamng` |
-| `PlndOrderCommittedQty` | `plaf.vfmng` |
-| `PlannedOrderReducedQuantity` | `plaf.abmng` |
-| `PlannedOrderPartialLotQuantity` | `plaf.tlmng` |
-| `EntryUnit` | `plaf.erfme` |
-| `PlndOrderEntryQuantity` | `cast(plaf.erfmg as pph_erfmg preserving type)` |
-| `MasterPlannedOrder` | `plaf.fsh_mplnd_ord` |
-| `StockSegment` | `plaf.sgt_scat` |
-| `ProductSeasonYear` | `plaf.fsh_season_year` |
-| `ProductSeason` | `plaf.fsh_season` |
-| `ProductCollection` | `plaf.fsh_collection` |
-| `ProductTheme` | `plaf.fsh_theme` |
-| `_PlannedOrderType` | *Association* |
-| `_PlannedOrderCategory` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_LastChgdByUserContactCard` | *Association* |
-| `_Material` | *Association* |
-| `_ManufacturerMaterial` | *Association* |
-| `_Product` | *Association* |
-| `_ProductUnitsOfMeasure` | *Association* |
-| `_ProductPlant` | *Association* |
-| `_ProductPlant2` | *Association* |
-| `_ProductSupplyPlanning` | *Association* |
-| `_ProductStorageLocation` | *Association* |
-| `_ProductStorageLocation2` | *Association* |
-| `_ProductMRPArea` | *Association* |
-| `_ProductPlantMRPArea` | *Association* |
-| `_MatlProcurementCategory` | *Association* |
-| `_MatlProcurementType` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_EntryUnit` | *Association* |
-| `_ProductionPlant` | *Association* |
-| `_MRPPlant` | *Association* |
-| `_MRPArea` | *Association* |
-| `_MRPController` | *Association* |
-| `_ProductionSupervisor` | *Association* |
-| `_ProductionVersion` | *Association* |
-| `_ProductionVersion_2` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperationsGroup2` | *Association* |
-| `_MRPPlanningScenario` | *Association* |
-| `_Reservation` | *Association* |
-| `_SettlementReservation` | *Association* |
-| `_SettlementReservationItem` | *Association* |
-| `_CapacityRequirement` | *Association* |
-| `_CapacityRequirementItemCap` | *Association* |
-| `_SchedulingType` | *Association* |
-| `_SchedulingError` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingDocument` | *Association* |
-| `_PurchasingDocumentItem` | *Association* |
-| `_QuotaArrangement` | *Association* |
-| `_QuotaArrangementItem` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_SupplierCompanyByPlant` | *Association* |
-| `_CustomerCompanyByPlant` | *Association* |
-| `_SalesOrder` | *Association* |
-| `_SalesOrderItem` | *Association* |
-| `_PlndOrdConfAvailVH` | *Association* |
-| `_WBSElement` | *Association* |
-| `_WBSElementBasic` | *Association* |
-| `_WBSElementBasic2` | *Association* |
-| `_EnterpriseProjectElement` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_ConsumptionPosting` | *Association* |
-| `_BOMExplosion` | *Association* |
-| `_ChangeNumber` | *Association* |
-| `_MaterialRevisionLevel` | *Association* |
-| `_MaterialRevisionLevel_2` | *Association* |
-| `_AccountAssignmentCategory` | *Association* |
-| `_QuantityDistributionKey` | *Association* |
-| `_PlannedOrderActionControl` | *Association* |
-| `_PlannedOrderProcgAction` | *Association* |
-| `_PlndOrdSupplierCoByPlant` | *Association* |
-| `_PlndOrdCustCoByPlant` | *Association* |
-| `_MasterPlannedOrder` | *Association* |
-| `_PlannedOrderComponent` | *Association* |
-| `_PlannedOrderCapacity` | *Association* |
-| `_MRPPlantText` | *Association* |
-| `_MaterialText` | *Association* |
-| `_ProductText` | *Association* |
-| `_ProductionVersionText` | *Association* |
-| `_MRPAreaText` | *Association* |
-| `_BOMExplosionDateText` | *Association* |
-| `_WBSElementText` | *Association* |
-| `_StorageLocationText` | *Association* |
-| `_SupplierText` | *Association* |
-| `_CustomerText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlannedOrder` | ✓ | |  | `plnum` |
+| `PlannedOrderType` |  | |  | `cast(plaf.paart as paart preserving type)` |
+| `PlannedOrderCategory` |  | |  | `cast(plaf.obart as plannedordercategory preserving type)` |
+| `LastChangeDate` |  | |  | `cast(left(cast(plaf.pstmp as abap.char(17)), 8) as aedat)` |
+| `LastChangeDateTime` |  | |  | `pstmp` |
+| `LastChangedByUser` |  | |  | `puser` |
+| `PlannedOrderLongText` |  | |  | `ptext` |
+| `Material` |  | |  | `matnr` |
+| `Product` |  | |  | `cast(plaf.matnr as productnumber preserving type)` |
+| `MRPPlant` |  | |  | `plwrk` |
+| `MRPArea` |  | |  | `berid` |
+| `MRPController` |  | |  | `cast(plaf.dispo as pph_dispo preserving type )` |
+| `MaterialProcurementCategory` |  | |  | `cast(plaf.beskz as pph_beskz preserving type)` |
+| `MaterialProcurementType` |  | |  | `cast(plaf.sobes as pph_sobes preserving type)` |
+| `MaterialGoodsReceiptDuration` |  | |  | `cast(plaf.webaz as pph_webaz preserving type)` |
+| `MaterialPlannedDeliveryDurn` |  | |  | `cast(plaf.plifz as pph_plifz preserving type)` |
+| `StorageLocation` |  | |  | `cast(plaf.lgort as pph_lgort preserving type)` |
+| `InventorySpecialStockType` |  | |  | `cast(plaf.sobkz as pph_sobkz preserving type)` |
+| `ConsumptionPosting` |  | |  | `cast(plaf.kzvbr as pph_kzvbr preserving type)` |
+| `ManufacturerMaterial` |  | |  | `cast(plaf.ematn as pph_ematn preserving type)` |
+| `IssuingStorageLocation` |  | |  | `reslo` |
+| `BillOfOperationsType` |  | |  | `cast(plaf.plnty as billofoperationstype preserving type)` |
+| `BillOfOperations` |  | |  | `cast(plaf.plnnr as billofoperations preserving type)` |
+| `BillOfOperationsGroup` |  | |  | `cast(plaf.plnnr as billofoperationsgroup preserving type)` |
+| `BillOfOperationsVariant` |  | |  | `cast(plaf.plnal as billofoperationsvariant preserving type)` |
+| `BillOfMaterialVariant` |  | |  | `stalt` |
+| `BillOfMaterialVariantUsage` |  | |  | `stlan` |
+| `BillOfMaterialStatus` |  | |  | `ststa` |
+| `BillOfMaterialVersion` |  | |  | `bom_versn` |
+| `BOMExplosionDateID` |  | |  | `cast(plaf.sernr as pph_sernr preserving type)` |
+| `ProductionPlant` |  | |  | `pwwrk` |
+| `ProductionSupervisor` |  | |  | `cast(plaf.plgrp as pph_fevor preserving type)` |
+| `ProductionVersion` |  | |  | `verid` |
+| `MRPPlanningScenario` |  | |  | `plscn` |
+| `Reservation` |  | |  | `rsnum` |
+| `SettlementReservation` |  | |  | `cast(plaf.arsnr as settlmntres preserving type)` |
+| `SettlementReservationItem` |  | |  | `cast(plaf.arsps as pph_arsps preserving type)` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `PurchasingDocument` |  | |  | `cast(plaf.konnr as pph_konnr preserving type)` |
+| `PurchasingDocumentItem` |  | |  | `cast(plaf.ktpnr as pph_ktpnr preserving type)` |
+| `QuotaArrangement` |  | |  | `cast(plaf.qunum as pph_qunum preserving type)` |
+| `QuotaArrangementItem` |  | |  | `cast(plaf.qupos as pph_qupos preserving type)` |
+| `FixedSupplier` |  | |  | `flief` |
+| `SupplierIsSubcontractor` |  | |  | `lblkz` |
+| `Customer` |  | |  | `kunnr` |
+| `SalesOrder` |  | |  | `cast(plaf.kdauf as co_kdauf preserving type)` |
+| `SalesOrderItem` |  | |  | `cast(plaf.kdpos as co_kdpos preserving type)` |
+| `WBSElementInternalID` |  | |  | `cast(plaf.pspel as pph_pspel preserving type)` |
+| `WBSElementInternalID_2` |  | |  | `cast(plaf.pspel as ps_s4_pspnr preserving type)` |
+| `CapacityRequirement` |  | |  | `bedid` |
+| `SchedulingType` |  | |  | `cast(plaf.trart as pph_termkz preserving type)` |
+| `SchedulingError` |  | |  | `trmer` |
+| `ChangeNumber` |  | |  | `aennr` |
+| `MaterialRevisionLevel` |  | |  | `cast(plaf.revlv as qrevlv preserving type)` |
+| `MaterialRevisionLevel_2` |  | |  | `cast(plaf.revlv as vdm_qm_revlv preserving type)` |
+| `AccountAssignmentCategory` |  | |  | `cast(plaf.knttp as pph_knttp preserving type)` |
+| `AssemblyProcessingType` |  | |  | `cast(plaf.monkz as pph_mntga)` |
+| `QuantityDistributionKey` |  | |  | `verto` |
+| `EffectivityParameterVariant` |  | |  | `techs` |
+| `RequirementPlan` |  | |  | `pbdnr` |
+| `ProductAvailabilityCheckType` |  | |  | `cast(plaf.kzavc as vdm_kzavc preserving type)` |
+| `CentralContract` |  | |  | `srm_contract_id` |
+| `CentralContractItem` |  | |  | `srm_contract_itm` |
+| `PlannedOrderActionControl` |  | |  | `mdach` |
+| `PlannedOrderProcgAction` |  | |  | `cast(plaf.mdacc as vdm_mdacc preserving type)` |
+| `PlannedOrderLastActionDate` |  | |  | `mdacd` |
+| `PlannedOrderLastActionTime` |  | |  | `mdact` |
+| `PlannedOrderIsFirm` |  | |  | `auffx` |
+| `PlannedOrderBOMIsFixed` |  | |  | `stlfx` |
+| `PlannedOrderIsConvertible` |  | |  | `umskz` |
+| `PlndOrderIsCreatedForRptvMfg` |  | |  | `remfl` |
+| `PlndOrderReplnmtElmntType` |  | |  | `kbnkz` |
+| `PlndOrdIsCrtedForAssemblyProcg` |  | |  | `cast(case when plaf.monkz <> '' then 'X' else plaf.monkz end as pph_monkz preserving type)` |
+| `PlannedOrderCapacityIsDsptchd` |  | |  | `kapfx` |
+| `OrderIsScheduled` |  | |  | `trmkz` |
+| `PlndOrdConfOfAvailability` |  | |  | `mdpbv` |
+| `IsPlannedWithoutFinalAssembly` |  | |  | `cast(plaf.vrpla as pph_vrpla preserving type)` |
+| `PlannedOrderIsPartOfCollvOrder` |  | |  | `cast(case when plaf.arsnr > '0000000000' then 'X' when plaf.arsnr = '0000000000' then ' ' end as vdm_prodnet preserving type)` |
+| `PlndOrderPlannedStartDate` |  | |  | `psttr` |
+| `PlndOrderPlannedStartTime` |  | |  | `pstti` |
+| `PlndOrderPlannedEndDate` |  | |  | `pedtr` |
+| `PlndOrderPlannedEndTime` |  | |  | `pedti` |
+| `PlannedOrderOpeningDate` |  | |  | `pertr` |
+| `PlndOrderTotalCmtmtDate` |  | |  | `gsbtr` |
+| `ProductionStartDate` |  | |  | `terst` |
+| `ProductionEndDate` |  | |  | `tered` |
+| `BOMExplosionDate` |  | |  | `paltr` |
+| `PlndOrderBaseToEntryQtyNmrtr` |  | |  | `umrez` |
+| `PlndOrderBaseToEntryQtyDnmntr` |  | |  | `umren` |
+| `BaseUnit` |  | |  | `meins` |
+| `PlannedTotalQtyInBaseUnit` |  | |  | `gsmng` |
+| `PlannedScrapQtyInBaseUnit` |  | |  | `avmng` |
+| `RequirementQuantityInBaseUnit` |  | |  | `bdmng` |
+| `GoodsReceiptQtyInBaseUnit` |  | |  | `wemng` |
+| `QuantityWithdrawnInBaseUnit` |  | |  | `wamng` |
+| `PlndOrderCommittedQty` |  | |  | `vfmng` |
+| `PlannedOrderReducedQuantity` |  | |  | `abmng` |
+| `PlannedOrderPartialLotQuantity` |  | |  | `tlmng` |
+| `EntryUnit` |  | |  | `erfme` |
+| `PlndOrderEntryQuantity` |  | |  | `cast(plaf.erfmg as pph_erfmg preserving type)` |
+| `MasterPlannedOrder` |  | |  | `fsh_mplnd_ord` |
+| `StockSegment` |  | |  | `sgt_scat` |
+| `ProductSeasonYear` |  | |  | `fsh_season_year` |
+| `ProductSeason` |  | |  | `fsh_season` |
+| `ProductCollection` |  | |  | `fsh_collection` |
+| `ProductTheme` |  | |  | `fsh_theme` |
+| `_PlannedOrderType` | | ✓ | | |
+| `_PlannedOrderCategory` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_LastChgdByUserContactCard` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_ManufacturerMaterial` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductUnitsOfMeasure` | | ✓ | | |
+| `_ProductPlant` | | ✓ | | |
+| `_ProductPlant2` | | ✓ | | |
+| `_ProductSupplyPlanning` | | ✓ | | |
+| `_ProductStorageLocation` | | ✓ | | |
+| `_ProductStorageLocation2` | | ✓ | | |
+| `_ProductMRPArea` | | ✓ | | |
+| `_ProductPlantMRPArea` | | ✓ | | |
+| `_MatlProcurementCategory` | | ✓ | | |
+| `_MatlProcurementType` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_EntryUnit` | | ✓ | | |
+| `_ProductionPlant` | | ✓ | | |
+| `_MRPPlant` | | ✓ | | |
+| `_MRPArea` | | ✓ | | |
+| `_MRPController` | | ✓ | | |
+| `_ProductionSupervisor` | | ✓ | | |
+| `_ProductionVersion` | | ✓ | | |
+| `_ProductionVersion_2` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperationsGroup2` | | ✓ | | |
+| `_MRPPlanningScenario` | | ✓ | | |
+| `_Reservation` | | ✓ | | |
+| `_SettlementReservation` | | ✓ | | |
+| `_SettlementReservationItem` | | ✓ | | |
+| `_CapacityRequirement` | | ✓ | | |
+| `_CapacityRequirementItemCap` | | ✓ | | |
+| `_SchedulingType` | | ✓ | | |
+| `_SchedulingError` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingDocument` | | ✓ | | |
+| `_PurchasingDocumentItem` | | ✓ | | |
+| `_QuotaArrangement` | | ✓ | | |
+| `_QuotaArrangementItem` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_SupplierCompanyByPlant` | | ✓ | | |
+| `_CustomerCompanyByPlant` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
+| `_SalesOrderItem` | | ✓ | | |
+| `_PlndOrdConfAvailVH` | | ✓ | | |
+| `_WBSElement` | | ✓ | | |
+| `_WBSElementBasic` | | ✓ | | |
+| `_WBSElementBasic2` | | ✓ | | |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_ConsumptionPosting` | | ✓ | | |
+| `_BOMExplosion` | | ✓ | | |
+| `_ChangeNumber` | | ✓ | | |
+| `_MaterialRevisionLevel` | | ✓ | | |
+| `_MaterialRevisionLevel_2` | | ✓ | | |
+| `_AccountAssignmentCategory` | | ✓ | | |
+| `_QuantityDistributionKey` | | ✓ | | |
+| `_PlannedOrderActionControl` | | ✓ | | |
+| `_PlannedOrderProcgAction` | | ✓ | | |
+| `_PlndOrdSupplierCoByPlant` | | ✓ | | |
+| `_PlndOrdCustCoByPlant` | | ✓ | | |
+| `_MasterPlannedOrder` | | ✓ | | |
+| `_PlannedOrderComponent` | | ✓ | | |
+| `_PlannedOrderCapacity` | | ✓ | | |
+| `_MRPPlantText` | | ✓ | | |
+| `_MaterialText` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_ProductionVersionText` | | ✓ | | |
+| `_MRPAreaText` | | ✓ | | |
+| `_BOMExplosionDateText` | | ✓ | | |
+| `_WBSElementText` | | ✓ | | |
+| `_StorageLocationText` | | ✓ | | |
+| `_SupplierText` | | ✓ | | |
+| `_CustomerText` | | ✓ | | |
 
 ## Associations
 

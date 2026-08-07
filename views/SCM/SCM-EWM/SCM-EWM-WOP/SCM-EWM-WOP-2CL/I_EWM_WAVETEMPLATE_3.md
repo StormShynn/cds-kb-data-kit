@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EWMWarehouse` | `lgnum` |
-| key `EWMWaveTemplate` | `cast( tmplt as ewm_de_wavetemplate )` |
-| `EWMWaveReleaseMethod` | `rls_mthd` |
-| `EWMWaveType` | `wave_type` |
-| `EWMWaveCategory` | `wave_cat` |
-| `BehaviourDuringPickDenial` | `bind_process` |
-| `_Warehouse` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EWMWarehouse` | ✓ | |  | `lgnum` |
+| `EWMWaveTemplate` | ✓ | |  | `cast( tmplt as ewm_de_wavetemplate )` |
+| `EWMWaveReleaseMethod` |  | |  | `rls_mthd` |
+| `EWMWaveType` |  | |  | `wave_type` |
+| `EWMWaveCategory` |  | |  | `wave_cat` |
+| `BehaviourDuringPickDenial` |  | |  | `bind_process` |
+| `_Warehouse` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

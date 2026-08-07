@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `ObjLink.dokar` |
-| key `LinkedSAPObject` | `ObjLink.dokob` |
-| `ObjectTypeDatabaseTable` | `ObjLink.vobj` |
-| `_DocTypeText` | *Association* |
-| `_DocType` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
+| `LinkedSAPObject` | ✓ | |  | `dokob` |
+| `ObjectTypeDatabaseTable` |  | |  | `vobj` |
+| `_DocTypeText` | | ✓ | | |
+| `_DocType` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

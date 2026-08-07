@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcurementHubSourceSystem` | `be_source_sys` |
-| key `ProcmtHubCompanyCode` | `be_co_code` |
-| key `ProcmtHubPlant` | `be_plant` |
-| `ProcmtHubPlantUniqueID` | `be_plant_unique_id` |
-| `ProcmtHubPlantName` | `be_plant_name` |
-| `ProcurementHubSourceSystemName` | `_ProcmtHubBackendSourceSystem.ProcurementHubSourceSystemName` |
-| `_ProcmtHubBackendSourceSystem` | *Association* |
-| `_ProcmtHubCompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcurementHubSourceSystem` | ✓ | |  | `be_source_sys` |
+| `ProcmtHubCompanyCode` | ✓ | |  | `be_co_code` |
+| `ProcmtHubPlant` | ✓ | |  | `be_plant` |
+| `ProcmtHubPlantUniqueID` |  | |  | `be_plant_unique_id` |
+| `ProcmtHubPlantName` |  | |  | `be_plant_name` |
+| `ProcurementHubSourceSystemName` |  | | `_ProcmtHubBackendSourceSystem` | `ProcurementHubSourceSystemName` |
+| `_ProcmtHubBackendSourceSystem` | | ✓ | | |
+| `_ProcmtHubCompanyCode` | | ✓ | | |
 
 ## Associations
 

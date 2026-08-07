@@ -29,227 +29,227 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SourceCompanyCode` | `P_ParkedOplAcctgDocItem.SourceCompanyCode` |
-| key `SourceFiscalYear` | `P_ParkedOplAcctgDocItem.SourceFiscalYear` |
-| key `SourceAccountingDocument` | `P_ParkedOplAcctgDocItem.SourceAccountingDocument` |
-| key `SourceAccountingDocumentItem` | `P_ParkedOplAcctgDocItem.SourceAccountingDocumentItem` |
-| `AccountAssignmentNumber` | `P_ParkedOplAcctgDocItem.AccountAssignmentNumber` |
-| `AssetContract` | `P_ParkedOplAcctgDocItem.AssetContract` |
-| `AssetTransactionType` | `P_ParkedOplAcctgDocItem.AssetTransactionType` |
-| `AssetValueDate` | `P_ParkedOplAcctgDocItem.AssetValueDate` |
-| `AssignmentReference` | `P_ParkedOplAcctgDocItem.AssignmentReference` |
-| `BaseUnit` | `P_ParkedOplAcctgDocItem.BaseUnit` |
-| `BPBankAccountInternalID` | `P_ParkedOplAcctgDocItem.BPBankAccountInternalID` |
-| `BranchAccount` | `P_ParkedOplAcctgDocItem.BranchAccount` |
-| `BudgetPeriod` | `P_ParkedOplAcctgDocItem.BudgetPeriod` |
-| `BusinessArea` | `P_ParkedOplAcctgDocItem.BusinessArea` |
-| `BusinessPlace` | `P_ParkedOplAcctgDocItem.BusinessPlace` |
-| `BusinessProcess` | `P_ParkedOplAcctgDocItem.BusinessProcess` |
-| `CashDiscount1Days` | `P_ParkedOplAcctgDocItem.CashDiscount1Days` |
-| `CashDiscount1DueDate` | `P_ParkedOplAcctgDocItem.CashDiscount1DueDate` |
-| `CashDiscount1Percent` | `P_ParkedOplAcctgDocItem.CashDiscount1Percent` |
-| `CashDiscount2Days` | `P_ParkedOplAcctgDocItem.CashDiscount2Days` |
-| `CashDiscount2DueDate` | `P_ParkedOplAcctgDocItem.CashDiscount2DueDate` |
-| `CashDiscount2Percent` | `P_ParkedOplAcctgDocItem.CashDiscount2Percent` |
-| `CashFlowType` | `P_ParkedOplAcctgDocItem.CashFlowType` |
-| `CommitmentItemShortID` | `P_ParkedOplAcctgDocItem.CommitmentItemShortID` |
-| `CompanyCode` | `P_ParkedOplAcctgDocItem.CompanyCode` |
-| `CompanyCodeCurrencyDetnMethod` | `P_ParkedOplAcctgDocItem.CompanyCodeCurrencyDetnMethod` |
-| `CostCenter` | `P_ParkedOplAcctgDocItem.CostCenter` |
-| `CostCtrActivityType` | `P_ParkedOplAcctgDocItem.CostCtrActivityType` |
-| `CostObject` | `P_ParkedOplAcctgDocItem.CostObject` |
-| `CostOriginGroup` | `P_ParkedOplAcctgDocItem.CostOriginGroup` |
-| `CreditControlArea` | `P_ParkedOplAcctgDocItem.CreditControlArea` |
-| `Customer` | `P_ParkedOplAcctgDocItem.Customer` |
-| `DataExchangeInstruction1` | `P_ParkedOplAcctgDocItem.DataExchangeInstruction1` |
-| `DataExchangeInstruction2` | `P_ParkedOplAcctgDocItem.DataExchangeInstruction2` |
-| `DataExchangeInstruction3` | `P_ParkedOplAcctgDocItem.DataExchangeInstruction3` |
-| `DataExchangeInstruction4` | `P_ParkedOplAcctgDocItem.DataExchangeInstruction4` |
-| `DebitCreditCode` | `P_ParkedOplAcctgDocItem.DebitCreditCode` |
-| `DocumentItemText` | `P_ParkedOplAcctgDocItem.DocumentItemText` |
-| `DueCalculationBaseDate` | `P_ParkedOplAcctgDocItem.DueCalculationBaseDate` |
-| `DunningArea` | `P_ParkedOplAcctgDocItem.DunningArea` |
-| `DunningBlockingReason` | `P_ParkedOplAcctgDocItem.DunningBlockingReason` |
-| `DunningKey` | `P_ParkedOplAcctgDocItem.DunningKey` |
-| `DunningLevel` | `P_ParkedOplAcctgDocItem.DunningLevel` |
-| `FinancialAccountType` | `P_ParkedOplAcctgDocItem.FinancialAccountType` |
-| `FinancialTransactionType` | `P_ParkedOplAcctgDocItem.FinancialTransactionType` |
-| `FixedAsset` | `P_ParkedOplAcctgDocItem.FixedAsset` |
-| `FixedCashDiscount` | `P_ParkedOplAcctgDocItem.FixedCashDiscount` |
-| `FollowOnDocumentType` | `P_ParkedOplAcctgDocItem.FollowOnDocumentType` |
-| `Fund` | `P_ParkedOplAcctgDocItem.Fund` |
-| `FunctionalArea` | `P_ParkedOplAcctgDocItem.FunctionalArea` |
-| `FundedProgram` | `P_ParkedOplAcctgDocItem.FundedProgram` |
-| `FundsCenter` | `P_ParkedOplAcctgDocItem.FundsCenter` |
-| `GLAccount` | `P_ParkedOplAcctgDocItem.GLAccount` |
-| `GrantID` | `P_ParkedOplAcctgDocItem.GrantID` |
-| `HouseBank` | `P_ParkedOplAcctgDocItem.HouseBank` |
-| `HouseBankAccount` | `P_ParkedOplAcctgDocItem.HouseBankAccount` |
-| `InventoryValuationType` | `P_ParkedOplAcctgDocItem.InventoryValuationType` |
-| `InvoiceItemReference` | `P_ParkedOplAcctgDocItem.InvoiceItemReference` |
-| `InvoiceList` | `P_ParkedOplAcctgDocItem.InvoiceList` |
-| `InvoiceReference` | `P_ParkedOplAcctgDocItem.InvoiceReference` |
-| `InvoiceReferenceFiscalYear` | `P_ParkedOplAcctgDocItem.InvoiceReferenceFiscalYear` |
-| `IsEUTriangularDeal` | `P_ParkedOplAcctgDocItem.IsEUTriangularDeal` |
-| `IsNotCashDiscountLiable` | `P_ParkedOplAcctgDocItem.IsNotCashDiscountLiable` |
-| `IsSalesRelated` | `P_ParkedOplAcctgDocItem.IsSalesRelated` |
-| `JointVenture` | `P_ParkedOplAcctgDocItem.JointVenture` |
-| `JointVentureCostRecoveryCode` | `P_ParkedOplAcctgDocItem.JointVentureCostRecoveryCode` |
-| `JointVentureEquityGroup` | `P_ParkedOplAcctgDocItem.JointVentureEquityGroup` |
-| `JointVentureEquityType` | `P_ParkedOplAcctgDocItem.JointVentureEquityType` |
-| `LastDunningDate` | `P_ParkedOplAcctgDocItem.LastDunningDate` |
-| `MasterFixedAsset` | `P_ParkedOplAcctgDocItem.MasterFixedAsset` |
-| `MaterialPriceControl` | `P_ParkedOplAcctgDocItem.MaterialPriceControl` |
-| `MaterialPriceUnitQty` | `} P_ParkedOplAcctgDocItem.MaterialPriceUnitQty` |
-| `Product` | `P_ParkedOplAcctgDocItem.Product` |
-| `NetDueDate` | `P_ParkedOplAcctgDocItem.NetDueDate` |
-| `NetPaymentDays` | `P_ParkedOplAcctgDocItem.NetPaymentDays` |
-| `OrderID` | `P_ParkedOplAcctgDocItem.OrderID` |
-| `OrderInternalBillOfOperations` | `P_ParkedOplAcctgDocItem.OrderInternalBillOfOperations` |
-| `PartnerBudgetPeriod` | `P_ParkedOplAcctgDocItem.PartnerBudgetPeriod` |
-| `PartnerBusinessArea` | `P_ParkedOplAcctgDocItem.PartnerBusinessArea` |
-| `PartnerFund` | `P_ParkedOplAcctgDocItem.PartnerFund` |
-| `PartnerGrant` | `P_ParkedOplAcctgDocItem.PartnerGrant` |
-| `PartnerSegment` | `P_ParkedOplAcctgDocItem.PartnerSegment` |
-| `PaymentBlockingReason` | `P_ParkedOplAcctgDocItem.PaymentBlockingReason` |
-| `PaymentCardPaymentSettlement` | `P_ParkedOplAcctgDocItem.PaymentCardPaymentSettlement` |
-| `PaymentDifferenceReason` | `P_ParkedOplAcctgDocItem.PaymentDifferenceReason` |
-| `PaymentMethod` | `P_ParkedOplAcctgDocItem.PaymentMethod` |
-| `PaymentMethodSupplement` | `P_ParkedOplAcctgDocItem.PaymentMethodSupplement` |
-| `PaymentReference` | `P_ParkedOplAcctgDocItem.PaymentReference` |
-| `PaymentTerms` | `P_ParkedOplAcctgDocItem.PaymentTerms` |
-| `PersonnelNumber` | `P_ParkedOplAcctgDocItem.PersonnelNumber` |
-| `PlanningLevel` | `P_ParkedOplAcctgDocItem.PlanningLevel` |
-| `Plant` | `P_ParkedOplAcctgDocItem.Plant` |
-| `PostingKey` | `P_ParkedOplAcctgDocItem.PostingKey` |
-| `ProfitCenter` | `P_ParkedOplAcctgDocItem.ProfitCenter` |
-| `ProfitabilitySegment` | `ProfitabilitySegment` |
-| `ProjectNetwork` | `P_ParkedOplAcctgDocItem.ProjectNetwork` |
-| `PurchasingDocument` | `P_ParkedOplAcctgDocItem.PurchasingDocument` |
-| `PurchasingDocumentItem` | `P_ParkedOplAcctgDocItem.PurchasingDocumentItem` |
-| `REInternalFinNumber` | `P_ParkedOplAcctgDocItem.REInternalFinNumber` |
-| `Reference1IDByBusinessPartner` | `P_ParkedOplAcctgDocItem.Reference1IDByBusinessPartner` |
-| `Reference2IDByBusinessPartner` | `P_ParkedOplAcctgDocItem.Reference2IDByBusinessPartner` |
-| `Reference3IDByBusinessPartner` | `P_ParkedOplAcctgDocItem.Reference3IDByBusinessPartner` |
-| `Region` | `P_ParkedOplAcctgDocItem.Region` |
-| `Segment` | `P_ParkedOplAcctgDocItem.Segment` |
-| `SettlementReferenceDate` | `P_ParkedOplAcctgDocItem.SettlementReferenceDate` |
-| `SpecialGLAccountAssignment` | `P_ParkedOplAcctgDocItem.SpecialGLAccountAssignment` |
-| `SpecialGLCode` | `P_ParkedOplAcctgDocItem.SpecialGLCode` |
-| `SpecialGLTransactionType` | `P_ParkedOplAcctgDocItem.SpecialGLTransactionType` |
-| `StateCentralBankPaymentReason` | `P_ParkedOplAcctgDocItem.StateCentralBankPaymentReason` |
-| `Supplier` | `P_ParkedOplAcctgDocItem.Supplier` |
-| `SupplyingCountry` | `P_ParkedOplAcctgDocItem.SupplyingCountry` |
-| `TaxCode` | `P_ParkedOplAcctgDocItem.TaxCode` |
-| `TaxJurisdiction` | `P_ParkedOplAcctgDocItem.TaxJurisdiction` |
-| `TaxSection` | `P_ParkedOplAcctgDocItem.TaxSection` |
-| `TaxType` | `P_ParkedOplAcctgDocItem.TaxType` |
-| `TreasuryContractType` | `P_ParkedOplAcctgDocItem.TreasuryContractType` |
-| `VATRegistration` | `P_ParkedOplAcctgDocItem.VATRegistration` |
-| `ValuationArea` | `P_ParkedOplAcctgDocItem.ValuationArea` |
-| `ValueDate` | `P_ParkedOplAcctgDocItem.ValueDate` |
-| `WBSElementInternalID` | `P_ParkedOplAcctgDocItem.WBSElementInternalID` |
-| `WithholdingTaxCode` | `P_ParkedOplAcctgDocItem.WithholdingTaxCode` |
-| `AccountingDocumentCategory` | `_ParkedOplAcctgDocument.AccountingDocumentCategory` |
-| `AccountingDocumentType` | `_ParkedOplAcctgDocument.AccountingDocumentType` |
-| `PartnerCompany` | `_ParkedOplAcctgDocument.PartnerCompany` |
-| `FiscalPeriod` | `_ParkedOplAcctgDocument.FiscalPeriod` |
-| `DocumentDate` | `_ParkedOplAcctgDocument.DocumentDate` |
-| `PostingDate` | `_ParkedOplAcctgDocument.PostingDate` |
-| `LedgerGroup` | `_ParkedOplAcctgDocument.LedgerGroup` |
-| `ChartOfAccounts` | `_CompanyCode.ChartOfAccounts` |
-| `ControllingArea` | `_CompanyCode.ControllingArea` |
-| `FiscalYearVariant` | `_CompanyCode.FiscalYearVariant` |
-| `FinancialManagementArea` | `_CompanyCode.FinancialManagementArea` |
-| `AdditionalCurrency1` | `_ParkedOplAcctgDocument.AdditionalCurrency1` |
-| `AdditionalCurrency2` | `_ParkedOplAcctgDocument.AdditionalCurrency2` |
-| `CompanyCodeCurrency` | `_ParkedOplAcctgDocument.CompanyCodeCurrency` |
-| `PaymentCurrency` | `P_ParkedOplAcctgDocItem.PaymentCurrency` |
-| `TransactionCurrency` | `_ParkedOplAcctgDocument.TransactionCurrency` |
-| `AmountInAdditionalCurrency1` | `P_ParkedOplAcctgDocItem.AmountInAdditionalCurrency1` |
-| `AmountInAdditionalCurrency2` | `P_ParkedOplAcctgDocItem.AmountInAdditionalCurrency2` |
-| `AmountInCompanyCodeCurrency` | `P_ParkedOplAcctgDocItem.AmountInCompanyCodeCurrency` |
-| `AmountInPaymentCurrency` | `P_ParkedOplAcctgDocItem.AmountInPaymentCurrency` |
-| `AmountInTransactionCurrency` | `P_ParkedOplAcctgDocItem.AmountInTransactionCurrency` |
-| `CashDiscountAmount` | `P_ParkedOplAcctgDocItem.CashDiscountAmount` |
-| `CashDiscountAmtInCoCodeCrcy` | `P_ParkedOplAcctgDocItem.CashDiscountAmtInCoCodeCrcy` |
-| `CashDiscountBaseAmount` | `P_ParkedOplAcctgDocItem.CashDiscountBaseAmount` |
-| `InvoiceAmountInFrgnCurrency` | `P_ParkedOplAcctgDocItem.InvoiceAmountInFrgnCurrency` |
-| `InvoiceAmtInCoCodeCrcy` | `P_ParkedOplAcctgDocItem.InvoiceAmtInCoCodeCrcy` |
-| `PlannedAmtInTransactionCrcy` | `P_ParkedOplAcctgDocItem.PlannedAmtInTransactionCrcy` |
-| `TaxAmount` | `P_ParkedOplAcctgDocItem.TaxAmount` |
-| `TaxAmountInCoCodeCrcy` | `P_ParkedOplAcctgDocItem.TaxAmountInCoCodeCrcy` |
-| `TaxBaseAmountInCoCodeCrcy` | `P_ParkedOplAcctgDocItem.TaxBaseAmountInCoCodeCrcy` |
-| `TaxBaseAmountInTransCrcy` | `P_ParkedOplAcctgDocItem.TaxBaseAmountInTransCrcy` |
-| `WithholdingTaxAmount` | `P_ParkedOplAcctgDocItem.WithholdingTaxAmount` |
-| `WithholdingTaxBaseAmount` | `P_ParkedOplAcctgDocItem.WithholdingTaxBaseAmount` |
-| `WithholdingTaxExemptionAmt` | `P_ParkedOplAcctgDocItem.WithholdingTaxExemptionAmt` |
-| `Quantity` | `P_ParkedOplAcctgDocItem.Quantity` |
-| `_CompanyCode` | *Association* |
-| `_SourceCompanyCode` | *Association* |
-| `_SourceFiscalYear` | *Association* |
-| `_ParkedOplAcctgDocument` | *Association* |
-| `_SourceParkedOplAcctgDocument` | *Association* |
-| `_GLAccountInChartOfAccounts` | *Association* |
-| `_GLAccountInCompanyCode` | *Association* |
-| `_ChartOfAccounts` | *Association* |
-| `_Customer` | *Association* |
-| `_CustomerCompany` | *Association* |
-| `_Supplier` | *Association* |
-| `_SupplierCompany` | *Association* |
-| `_PostingKey` | *Association* |
-| `_FinancialAccountType` | *Association* |
-| `_DebitCreditCode` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_PartnerBusinessArea` | *Association* |
-| `_TaxType` | *Association* |
-| `_PartnerCompany` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_CurrentProfitCenter` | *Association* |
-| `_CostCenter` | *Association* |
-| `_CurrentCostCenter` | *Association* |
-| `_SupplyingCountry` | *Association* |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_PaymentDifferenceReason` | *Association* |
-| `_Segment` | *Association* |
-| `_PartnerSegment` | *Association* |
-| `_AccountingDocumentType` | *Association* |
-| `_PaymentCurrency` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_CompanyCodeCurrency` | *Association* |
-| `_AdditionalCurrency1` | *Association* |
-| `_AdditionalCurrency2` | *Association* |
-| `_AccountingDocumentCategory` | *Association* |
-| `_Order` | *Association* |
-| `_MasterFixedAsset` | *Association* |
-| `_FixedAsset` | *Association* |
-| `_AssetTransactionType` | *Association* |
-| `_PurchasingDocument` | *Association* |
-| `_PurchasingDocumentItem` | *Association* |
-| `_ProjectNetwork` | *Association* |
-| `_CostCtrActivityType` | *Association* |
-| `_BusinessProcess` | *Association* |
-| `_BudgetPeriod` | *Association* |
-| `_PartnerBudgetPeriod` | *Association* |
-| `_FinancialTransactionType` | *Association* |
-| `_FinancialManagementArea` | *Association* |
-| `_Fund` | *Association* |
-| `_PartnerFund` | *Association* |
-| `_FundsCenter` | *Association* |
-| `_Grant` | *Association* |
-| `_PartnerGrant` | *Association* |
-| `_HouseBank` | *Association* |
-| `_InventoryValuationType` | *Association* |
-| `_PaymentBlockingReason` | *Association* |
-| `_PersonWorkAgreement_1` | *Association* |
-| `_SpecialGLCode` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_FunctionalArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SourceCompanyCode` | ✓ | |  |  |
+| `SourceFiscalYear` | ✓ | |  |  |
+| `SourceAccountingDocument` | ✓ | |  |  |
+| `SourceAccountingDocumentItem` | ✓ | |  |  |
+| `AccountAssignmentNumber` |  | |  |  |
+| `AssetContract` |  | |  |  |
+| `AssetTransactionType` |  | |  |  |
+| `AssetValueDate` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `BPBankAccountInternalID` |  | |  |  |
+| `BranchAccount` |  | |  |  |
+| `BudgetPeriod` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `BusinessPlace` |  | |  |  |
+| `BusinessProcess` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount1DueDate` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount2DueDate` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `CashFlowType` |  | |  |  |
+| `CommitmentItemShortID` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `CompanyCodeCurrencyDetnMethod` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `CostCtrActivityType` |  | |  |  |
+| `CostObject` |  | |  |  |
+| `CostOriginGroup` |  | |  |  |
+| `CreditControlArea` |  | |  |  |
+| `Customer` |  | |  |  |
+| `DataExchangeInstruction1` |  | |  |  |
+| `DataExchangeInstruction2` |  | |  |  |
+| `DataExchangeInstruction3` |  | |  |  |
+| `DataExchangeInstruction4` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `DocumentItemText` |  | |  |  |
+| `DueCalculationBaseDate` |  | |  |  |
+| `DunningArea` |  | |  |  |
+| `DunningBlockingReason` |  | |  |  |
+| `DunningKey` |  | |  |  |
+| `DunningLevel` |  | |  |  |
+| `FinancialAccountType` |  | |  |  |
+| `FinancialTransactionType` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `FixedCashDiscount` |  | |  |  |
+| `FollowOnDocumentType` |  | |  |  |
+| `Fund` |  | |  |  |
+| `FunctionalArea` |  | |  |  |
+| `FundedProgram` |  | |  |  |
+| `FundsCenter` |  | |  |  |
+| `GLAccount` |  | |  |  |
+| `GrantID` |  | |  |  |
+| `HouseBank` |  | |  |  |
+| `HouseBankAccount` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `InvoiceItemReference` |  | |  |  |
+| `InvoiceList` |  | |  |  |
+| `InvoiceReference` |  | |  |  |
+| `InvoiceReferenceFiscalYear` |  | |  |  |
+| `IsEUTriangularDeal` |  | |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |
+| `IsSalesRelated` |  | |  |  |
+| `JointVenture` |  | |  |  |
+| `JointVentureCostRecoveryCode` |  | |  |  |
+| `JointVentureEquityGroup` |  | |  |  |
+| `JointVentureEquityType` |  | |  |  |
+| `LastDunningDate` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `MaterialPriceControl` |  | |  |  |
+| `MaterialPriceUnitQty` |  | |  | `} P_ParkedOplAcctgDocItem.MaterialPriceUnitQty` |
+| `Product` |  | |  |  |
+| `NetDueDate` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `OrderInternalBillOfOperations` |  | |  |  |
+| `PartnerBudgetPeriod` |  | |  |  |
+| `PartnerBusinessArea` |  | |  |  |
+| `PartnerFund` |  | |  |  |
+| `PartnerGrant` |  | |  |  |
+| `PartnerSegment` |  | |  |  |
+| `PaymentBlockingReason` |  | |  |  |
+| `PaymentCardPaymentSettlement` |  | |  |  |
+| `PaymentDifferenceReason` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `PaymentMethodSupplement` |  | |  |  |
+| `PaymentReference` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `PersonnelNumber` |  | |  |  |
+| `PlanningLevel` |  | |  |  |
+| `Plant` |  | |  |  |
+| `PostingKey` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ProfitabilitySegment` |  | |  |  |
+| `ProjectNetwork` |  | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `REInternalFinNumber` |  | |  |  |
+| `Reference1IDByBusinessPartner` |  | |  |  |
+| `Reference2IDByBusinessPartner` |  | |  |  |
+| `Reference3IDByBusinessPartner` |  | |  |  |
+| `Region` |  | |  |  |
+| `Segment` |  | |  |  |
+| `SettlementReferenceDate` |  | |  |  |
+| `SpecialGLAccountAssignment` |  | |  |  |
+| `SpecialGLCode` |  | |  |  |
+| `SpecialGLTransactionType` |  | |  |  |
+| `StateCentralBankPaymentReason` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `SupplyingCountry` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TaxSection` |  | |  |  |
+| `TaxType` |  | |  |  |
+| `TreasuryContractType` |  | |  |  |
+| `VATRegistration` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `ValueDate` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WithholdingTaxCode` |  | |  |  |
+| `AccountingDocumentCategory` |  | | `_ParkedOplAcctgDocument` | `AccountingDocumentCategory` |
+| `AccountingDocumentType` |  | | `_ParkedOplAcctgDocument` | `AccountingDocumentType` |
+| `PartnerCompany` |  | | `_ParkedOplAcctgDocument` | `PartnerCompany` |
+| `FiscalPeriod` |  | | `_ParkedOplAcctgDocument` | `FiscalPeriod` |
+| `DocumentDate` |  | | `_ParkedOplAcctgDocument` | `DocumentDate` |
+| `PostingDate` |  | | `_ParkedOplAcctgDocument` | `PostingDate` |
+| `LedgerGroup` |  | | `_ParkedOplAcctgDocument` | `LedgerGroup` |
+| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |
+| `FiscalYearVariant` |  | | `_CompanyCode` | `FiscalYearVariant` |
+| `FinancialManagementArea` |  | | `_CompanyCode` | `FinancialManagementArea` |
+| `AdditionalCurrency1` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency1` |
+| `AdditionalCurrency2` |  | | `_ParkedOplAcctgDocument` | `AdditionalCurrency2` |
+| `CompanyCodeCurrency` |  | | `_ParkedOplAcctgDocument` | `CompanyCodeCurrency` |
+| `PaymentCurrency` |  | |  |  |
+| `TransactionCurrency` |  | | `_ParkedOplAcctgDocument` | `TransactionCurrency` |
+| `AmountInAdditionalCurrency1` |  | |  |  |
+| `AmountInAdditionalCurrency2` |  | |  |  |
+| `AmountInCompanyCodeCurrency` |  | |  |  |
+| `AmountInPaymentCurrency` |  | |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |
+| `CashDiscountAmount` |  | |  |  |
+| `CashDiscountAmtInCoCodeCrcy` |  | |  |  |
+| `CashDiscountBaseAmount` |  | |  |  |
+| `InvoiceAmountInFrgnCurrency` |  | |  |  |
+| `InvoiceAmtInCoCodeCrcy` |  | |  |  |
+| `PlannedAmtInTransactionCrcy` |  | |  |  |
+| `TaxAmount` |  | |  |  |
+| `TaxAmountInCoCodeCrcy` |  | |  |  |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  |  |
+| `TaxBaseAmountInTransCrcy` |  | |  |  |
+| `WithholdingTaxAmount` |  | |  |  |
+| `WithholdingTaxBaseAmount` |  | |  |  |
+| `WithholdingTaxExemptionAmt` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_SourceCompanyCode` | | ✓ | | |
+| `_SourceFiscalYear` | | ✓ | | |
+| `_ParkedOplAcctgDocument` | | ✓ | | |
+| `_SourceParkedOplAcctgDocument` | | ✓ | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | |
+| `_GLAccountInCompanyCode` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_CustomerCompany` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_SupplierCompany` | | ✓ | | |
+| `_PostingKey` | | ✓ | | |
+| `_FinancialAccountType` | | ✓ | | |
+| `_DebitCreditCode` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_PartnerBusinessArea` | | ✓ | | |
+| `_TaxType` | | ✓ | | |
+| `_PartnerCompany` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_CurrentProfitCenter` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_CurrentCostCenter` | | ✓ | | |
+| `_SupplyingCountry` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_PaymentDifferenceReason` | | ✓ | | |
+| `_Segment` | | ✓ | | |
+| `_PartnerSegment` | | ✓ | | |
+| `_AccountingDocumentType` | | ✓ | | |
+| `_PaymentCurrency` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_CompanyCodeCurrency` | | ✓ | | |
+| `_AdditionalCurrency1` | | ✓ | | |
+| `_AdditionalCurrency2` | | ✓ | | |
+| `_AccountingDocumentCategory` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_MasterFixedAsset` | | ✓ | | |
+| `_FixedAsset` | | ✓ | | |
+| `_AssetTransactionType` | | ✓ | | |
+| `_PurchasingDocument` | | ✓ | | |
+| `_PurchasingDocumentItem` | | ✓ | | |
+| `_ProjectNetwork` | | ✓ | | |
+| `_CostCtrActivityType` | | ✓ | | |
+| `_BusinessProcess` | | ✓ | | |
+| `_BudgetPeriod` | | ✓ | | |
+| `_PartnerBudgetPeriod` | | ✓ | | |
+| `_FinancialTransactionType` | | ✓ | | |
+| `_FinancialManagementArea` | | ✓ | | |
+| `_Fund` | | ✓ | | |
+| `_PartnerFund` | | ✓ | | |
+| `_FundsCenter` | | ✓ | | |
+| `_Grant` | | ✓ | | |
+| `_PartnerGrant` | | ✓ | | |
+| `_HouseBank` | | ✓ | | |
+| `_InventoryValuationType` | | ✓ | | |
+| `_PaymentBlockingReason` | | ✓ | | |
+| `_PersonWorkAgreement_1` | | ✓ | | |
+| `_SpecialGLCode` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
 
 ## Associations
 

@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REContractNoticeReason` | `ntreason` |
-| key `Language` | `spras` |
-| `REContractNoticeReasonName` | `xntreason` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REContractNoticeReason` | ✓ | |  | `ntreason` |
+| `Language` | ✓ | |  | `spras` |
+| `REContractNoticeReasonName` |  | |  | `xntreason` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

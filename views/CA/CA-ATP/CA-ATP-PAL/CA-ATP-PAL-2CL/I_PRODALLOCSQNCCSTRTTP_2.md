@@ -29,35 +29,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocSqncConstraintUUID` | `ProdAllocSqncConstraintUUID` |
-| `ProdAllocSequenceConstraint` | `ProdAllocSequenceConstraint` |
-| `ProductAllocationSequenceGroup` | `ProductAllocationSequenceGroup` |
-| `ProductAllocationSequence` | `ProductAllocationSequence` |
-| `ProductAllocationSequenceUUID` | `ProductAllocationSequenceUUID` |
-| `ProdAllocSequenceGroupUUID` | `ProdAllocSequenceGroupUUID` |
-| `ValidityStartUTCDateTime` | `ValidityStartUTCDateTime` |
-| `ValidityStartTimeZone` | `ValidityStartTimeZone` |
-| `ValidityEndUTCDateTime` | `ValidityEndUTCDateTime` |
-| `ValidityEndTimeZone` | `ValidityEndTimeZone` |
-| `ProductAllocationObjectUUID` | `ProductAllocationObjectUUID` |
-| `ProductAllocationRate` | `ProductAllocationRate` |
-| `ProdAllocLeadTimeDuration` | `ProdAllocLeadTimeDuration` |
-| `ProdAllocLeadTimeDurationUnit` | `ProdAllocLeadTimeDurationUnit` |
-| `NumberOfBackwardCnsmpnPeriods` | `NumberOfBackwardCnsmpnPeriods` |
-| `NumberOfForwardCnsmpnPeriods` | `NumberOfForwardCnsmpnPeriods` |
-| `HorizontalConsumptionDirection` | `HorizontalConsumptionDirection` |
-| `ProdAllocSqncCstrtCnsmpnUnit` | `ProdAllocSqncCstrtCnsmpnUnit` |
-| `PastPeriodIsAllowed` | `PastPeriodIsAllowed` |
-| `ProdAllocCheckDateTimeType` | `ProdAllocCheckDateTimeType` |
-| `ProdAllocationConstraintStatus` | `ProdAllocationConstraintStatus` |
-| `AfterValidityConstraintStatus` | `AfterValidityConstraintStatus` |
-| `BeforeValidityConstraintStatus` | `BeforeValidityConstraintStatus` |
-| `IsDeleted` | `IsDeleted` |
-| `_ProdAllocationSequenceTP` | *Association* |
-| `_ProdAllocSqncCstrtTTP` | *Association* |
-| `_ProdAllocSqncGroupTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocSqncConstraintUUID` | ✓ | |  |  |
+| `ProdAllocSequenceConstraint` |  | |  |  |
+| `ProductAllocationSequenceGroup` |  | |  |  |
+| `ProductAllocationSequence` |  | |  |  |
+| `ProductAllocationSequenceUUID` |  | |  |  |
+| `ProdAllocSequenceGroupUUID` |  | |  |  |
+| `ValidityStartUTCDateTime` |  | |  |  |
+| `ValidityStartTimeZone` |  | |  |  |
+| `ValidityEndUTCDateTime` |  | |  |  |
+| `ValidityEndTimeZone` |  | |  |  |
+| `ProductAllocationObjectUUID` |  | |  |  |
+| `ProductAllocationRate` |  | |  |  |
+| `ProdAllocLeadTimeDuration` |  | |  |  |
+| `ProdAllocLeadTimeDurationUnit` |  | |  |  |
+| `NumberOfBackwardCnsmpnPeriods` |  | |  |  |
+| `NumberOfForwardCnsmpnPeriods` |  | |  |  |
+| `HorizontalConsumptionDirection` |  | |  |  |
+| `ProdAllocSqncCstrtCnsmpnUnit` |  | |  |  |
+| `PastPeriodIsAllowed` |  | |  |  |
+| `ProdAllocCheckDateTimeType` |  | |  |  |
+| `ProdAllocationConstraintStatus` |  | |  |  |
+| `AfterValidityConstraintStatus` |  | |  |  |
+| `BeforeValidityConstraintStatus` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `_ProdAllocationSequenceTP` | | ✓ | | |
+| `_ProdAllocSqncCstrtTTP` | | ✓ | | |
+| `_ProdAllocSqncGroupTP` | | ✓ | | |
 
 ## Source Code
 

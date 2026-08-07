@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessArea` | `BusinessArea` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessArea` | ✓ | |  |  |
 
 ## Source Code
 

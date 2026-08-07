@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LogisticsExecutionScenario` | `cast( dd07t.domvalue_l as /spe/le_scenario )` |
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `LogisticsExecutionScenarioName` | `cast( dd07t.ddtext as vdm_le_scenario_text preserving type )` |
-| `_Language` | *Association* |
-| `_LogisticsExecutionScenario` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LogisticsExecutionScenario` | ✓ | |  | `cast( dd07t.domvalue_l as /spe/le_scenario )` |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `LogisticsExecutionScenarioName` |  | |  | `cast( dd07t.ddtext as vdm_le_scenario_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_LogisticsExecutionScenario` | | ✓ | | |
 
 ## Associations
 

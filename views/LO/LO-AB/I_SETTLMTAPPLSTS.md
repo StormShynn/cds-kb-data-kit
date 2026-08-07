@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtApplSts` | `SettlmtApplSts` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtApplSts` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

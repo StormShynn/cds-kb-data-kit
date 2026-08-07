@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalLocationCategory` | `t370f_t.fltyp` |
-| key `Language` | `t370f_t.spras` |
-| `FunctionalLocationCategoryDesc` | `t370f_t.typtx` |
-| `_FunctionalLocationCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalLocationCategory` | ✓ | |  | `fltyp` |
+| `Language` | ✓ | |  | `spras` |
+| `FunctionalLocationCategoryDesc` |  | |  | `typtx` |
+| `_FunctionalLocationCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DSD_TourIdentification` | `_History.tourid` |
-| key `TourStatusSequentialNumber` | `_History.counter` |
-| `TourStatusIdentification` | `_History.status_id` |
-| `CreatedAtDate` | `_History.idate` |
-| `TimeOfCreation` | `_History.itime` |
-| `TourStatusHasBeenCancelled` | `_History.canceled` |
-| `TourStatusHasBeenSetManually` | `_History.man_exec` |
-| `TourScenario` | `_TourStatus.scenario` |
-| `_Status` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DSD_TourIdentification` | ✓ | | `_History` | `tourid` |
+| `TourStatusSequentialNumber` | ✓ | | `_History` | `counter` |
+| `TourStatusIdentification` |  | | `_History` | `status_id` |
+| `CreatedAtDate` |  | | `_History` | `idate` |
+| `TimeOfCreation` |  | | `_History` | `itime` |
+| `TourStatusHasBeenCancelled` |  | | `_History` | `canceled` |
+| `TourStatusHasBeenSetManually` |  | | `_History` | `man_exec` |
+| `TourScenario` |  | | `_TourStatus` | `scenario` |
+| `_Status` | | ✓ | | |
 
 ## Associations
 

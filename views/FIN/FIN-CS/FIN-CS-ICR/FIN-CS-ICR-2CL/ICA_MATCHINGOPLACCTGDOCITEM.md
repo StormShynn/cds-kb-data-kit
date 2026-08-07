@@ -28,338 +28,338 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `a.bukrs` |
-| key `AccountingDocument` | `a.belnr` |
-| key `FiscalYear` | `a.gjahr` |
-| key `AccountingDocumentItem` | `a.buzei` |
-| `MatchingMethodID` | `cast ('' as ica_method_id)` |
-| `ChartOfAccounts` | `c.ktopl` |
-| `AccountingDocumentItemType` | `a.buzid` |
-| `ClearingDate` | `a.augdt` |
-| `ClearingCreationDate` | `a.augcp` |
-| `ClearingJournalEntryFiscalYear` | `a.auggj` |
-| `ClearingDocFiscalYear` | `cast( a.auggj as fis_auggj_no_conv_depre preserving type )` |
-| `ClearingJournalEntry` | `a.augbl` |
-| `ClearingAccountingDocument` | `cast( a.augbl as fis_augbl_depre preserving type )` |
-| `PostingKey` | `a.bschl` |
-| `FinancialAccountType` | `a.koart` |
-| `SpecialGLCode` | `a.umskz` |
-| `SpecialGLTransactionType` | `a.umsks` |
-| `DebitCreditCode` | `a.shkzg` |
-| `BusinessArea` | `a.gsber` |
-| `PartnerBusinessArea` | `a.pargb` |
-| `TaxCode` | `a.mwskz` |
-| `TaxCountry` | `a.tax_country` |
-| `TaxRateValidityStartDate` | `a.txdat_from` |
-| `WithholdingTaxCode` | `a.qsskz` |
-| `TaxType` | `a.mwart` |
-| `TaxItemGroup` | `a.txgrp` |
-| `TransactionTypeDetermination` | `a.ktosl` |
-| `ValueDate` | `a.valut` |
-| `AssignmentReference` | `a.zuonr` |
-| `DocumentItemText` | `a.sgtxt` |
-| `PartnerCompany` | `a.vbund` |
-| `FinancialTransactionType` | `a.bewar` |
-| `CorporateGroupAccount` | `a.altkt` |
-| `PlanningLevel` | `a.fdlev` |
-| `ControllingArea` | `a.kokrs` |
-| `CostCenter` | `a.kostl` |
-| `OrderID` | `a.aufnr` |
-| `BillingDocument` | `a.vbeln` |
-| `SalesDocument` | `a.vbel2` |
-| `SalesDocumentItem` | `a.posn2` |
-| `ScheduleLine` | `a.eten2` |
-| `ServiceDocumentType` | `a.service_doc_type` |
-| `ServiceDocument` | `a.service_doc_id` |
-| `ServiceDocumentItem` | `a.service_doc_item_id` |
-| `MasterFixedAsset` | `a.anln1` |
-| `FixedAsset` | `a.anln2` |
-| `AssetTransactionType` | `a.anbwa` |
-| `AssetValueDate` | `a.bzdat` |
-| `PersonnelNumber` | `a.pernr` |
-| `IsSalesRelated` | `a.xumsw` |
-| `LineItemDisplayIsEnabled` | `a.xkres` |
-| `IsOpenItemManaged` | `a.xopvw` |
-| `AddressAndBankIsSetManually` | `cast( a.xcpdd as farp_xcpdd )` |
-| `DownPaymentIsNetProcedure` | `a.xanet` |
-| `IsNotCashDiscountLiable` | `a.xskrl` |
-| `IsAutomaticallyCreated` | `a.xauto` |
-| `IsUsedInPaymentTransaction` | `a.xzahl` |
-| `OperationalGLAccount` | `a.saknr` |
-| `GLAccount` | `a.hkont` |
-| `Customer` | `a.kunnr` |
-| `Supplier` | `a.lifnr` |
-| `BranchAccount` | `a.filkd` |
-| `IsBalanceSheetAccount` | `a.xbilk` |
-| `ProfitLossAccountType` | `a.gvtyp` |
-| `SpecialGLAccountAssignment` | `a.hzuon` |
-| `DueCalculationBaseDate` | `a.zfbdt` |
-| `PaymentTerms` | `a.zterm` |
-| `CashDiscount1Days` | `a.zbd1t` |
-| `CashDiscount2Days` | `a.zbd2t` |
-| `NetPaymentDays` | `a.zbd3t` |
-| `CashDiscount1Percent` | `a.zbd1p` |
-| `CashDiscount2Percent` | `a.zbd2p` |
-| `PaymentMethod` | `a.zlsch` |
-| `PaymentBlockingReason` | `a.zlspr` |
-| `FixedCashDiscount` | `a.zbfix` |
-| `HouseBank` | `a.hbkid` |
-| `BPBankAccountInternalID` | `a.bvtyp` |
-| `TaxDistributionCode1` | `a.mwsk1` |
-| `TaxDistributionCode2` | `a.mwsk2` |
-| `TaxDistributionCode3` | `a.mwsk3` |
-| `InvoiceReference` | `a.rebzg` |
-| `InvoiceReferenceFiscalYear` | `a.rebzj` |
-| `InvoiceItemReference` | `a.rebzz` |
-| `FollowOnDocumentType` | `a.rebzt` |
-| `StateCentralBankPaymentReason` | `a.lzbkz` |
-| `SupplyingCountry` | `a.landl` |
-| `InvoiceList` | `a.samnr` |
-| `BillOfExchangeUsageDocument` | `a.disbn` |
-| `BillOfExchangeUsage` | `a.wverw` |
-| `DunningKey` | `a.mschl` |
-| `DunningBlockingReason` | `a.mansp` |
-| `LastDunningDate` | `a.madat` |
-| `DunningLevel` | `a.manst` |
-| `DunningArea` | `a.maber` |
-| `PaytSlipWthRefSubscriber` | `a.esrnr` |
-| `PaytSlipWthRefReference` | `a.esrre` |
-| `PaytSlipWthRefCheckDigit` | `a.esrpz` |
-| `WithholdingTaxCertificate` | `a.qsznr` |
-| `Product` | `cast( a.matnr as productnumber )` |
-| `Plant` | `a.werks` |
-| `PurchasingDocument` | `a.ebeln` |
-| `PurchasingDocumentItem` | `a.ebelp` |
-| `AccountAssignmentNumber` | `a.zekkn` |
-| `IsCompletelyDelivered` | `a.elikz` |
-| `MaterialPriceControl` | `a.vprsv` |
-| `ValuationArea` | `a.bwkey` |
-| `InventoryValuationType` | `a.bwtar` |
-| `VATRegistration` | `a.stceg` |
-| `DelivOfGoodsDestCountry` | `a.egbld` |
-| `DelivOfGoodsOriginCountry` | `a.eglld` |
-| `PaymentDifferenceReason` | `a.rstgr` |
-| `ProfitCenter` | `a.prctr` |
-| `JointVenture` | `a.vname` |
-| `JointVentureCostRecoveryCode` | `a.recid` |
-| `JointVentureEquityGroup` | `a.egrup` |
-| `JointVenturePartner` | `cast( a.vptnr as jv_part_cds preserving type )` |
-| `TreasuryContractType` | `a.vertt` |
-| `AssetContract` | `a.vertn` |
-| `CashFlowType` | `a.vbewa` |
-| `TaxJurisdiction` | `a.txjcd` |
-| `REInternalFinNumber` | `cast( a.imkey as recaimkeyfi preserving type )` |
-| `RealEstateObject` | `a.imkey` |
-| `SettlementReferenceDate` | `a.dabrz` |
-| `CommitmentItem` | `a.fipos` |
-| `CommitmentItemShortID` | `cast( a.fipos as fis_fipos_shortid preserving type )` |
-| `CostObject` | `a.kstrg` |
-| `ProjectNetwork` | `a.nplnr` |
-| `OrderInternalBillOfOperations` | `a.aufpl` |
-| `OrderIntBillOfOperationsItem` | `a.aplzl` |
-| `WBSElementInternalID` | `cast( a.projk as fis_wbsint_no_conv preserving type )` |
-| `ProfitabilitySegment_2` | `cast( a.paobjnr as rkeobjnr_char )` |
-| `JointVentureEquityType` | `a.etype` |
-| `IsEUTriangularDeal` | `a.xegdr` |
-| `CostOriginGroup` | `a.hrkft` |
-| `CompanyCodeCurrencyDetnMethod` | `a.hwmet` |
-| `ClearingIsReversed` | `a.xragl` |
-| `PaymentMethodSupplement` | `a.uzawe` |
-| `AlternativeGLAccount` | `a.lokkt` |
-| `FundsCenter` | `a.fistl` |
-| `Fund` | `a.geber` |
-| `TaxCompanyCode` | `a.stbuk` |
-| `PartnerProfitCenter` | `a.pprct` |
-| `Reference1IDByBusinessPartner` | `a.xref1` |
-| `Reference2IDByBusinessPartner` | `a.xref2` |
-| `EarmarkedFundsDocument` | `a.kblnr` |
-| `EarmarkedFundsDocumentItem` | `a.kblpos` |
-| `IsNegativePosting` | `a.xnegp` |
-| `PaymentCardItem` | `a.rfzei` |
-| `PaymentCardPaymentSettlement` | `a.ccbtc` |
-| `CreditControlArea` | `a.kkber` |
-| `AlternativePayeePayer` | `a.empfb` |
-| `Reference3IDByBusinessPartner` | `a.xref3` |
-| `DataExchangeInstruction1` | `a.dtws1` |
-| `DataExchangeInstruction2` | `a.dtws2` |
-| `DataExchangeInstruction3` | `a.dtws3` |
-| `DataExchangeInstruction4` | `a.dtws4` |
-| `Region` | `a.grirg` |
-| `HasPaymentOrder` | `a.xpypr` |
-| `PaymentReference` | `a.kidno` |
-| `TaxDeterminationDate` | `a.txdat` |
-| `ClearingItem` | `a.agzei` |
-| `BusinessPlace` | `a.bupla` |
-| `TaxSection` | `a.secco` |
-| `CostCtrActivityType` | `a.lstar` |
-| `AccountsReceivableIsPledged` | `a.cession_kz` |
-| `AcctsReceivablePledgingCode` | `cast( a.cession_kz as fis_cession_kz_code preserving type )` |
-| `BusinessProcess` | `a.prznr` |
-| `GrantID` | `a.grant_nbr` |
-| `FunctionalArea` | `a.fkber_long` |
-| `CustomerIsInExecution` | `a.gmvkz` |
-| `FundedProgram` | `a.measure` |
-| `LedgerGLLineItem` | `a.docln` |
-| `Segment` | `a.segment` |
-| `PartnerSegment` | `a.psegment` |
-| `PartnerFunctionalArea` | `a.pfkber` |
-| `HouseBankAccount` | `a.hktid` |
-| `CostElement` | `a.kstar` |
-| `TaxItemAcctgDocItemRef` | `a.taxps` |
-| `PaymentServiceProvider` | `a.pays_prov` |
-| `PaymentRefByPaytSrvcProvider` | `a.pays_tran` |
-| `SEPAMandate` | `a.mndid` |
-| `ReferenceDocumentType` | `a.awtyp` |
-| `OriginalReferenceDocument` | `a.awkey` |
-| `ReferenceDocumentLogicalSystem` | `a.awsys` |
-| `AccountingDocumentItemRef` | `a.posnr` |
-| `FiscalPeriod` | `a.h_monat` |
-| `AccountingDocumentCategory` | `a.h_bstat` |
-| `PostingDate` | `a.h_budat` |
-| `DocumentDate` | `a.h_bldat` |
-| `AccountingDocumentType` | `a.h_blart` |
-| `NetDueDate` | `a.netdt` |
-| `CashDiscount1DueDate` | `a.sk1dt` |
-| `CashDiscount2DueDate` | `a.sk2dt` |
-| `OffsettingAccount` | `a.gkont` |
-| `OffsettingAccountType` | `a.gkart` |
-| `PartnerFund` | `a.pgeber` |
-| `PartnerGrant` | `a.pgrant_nbr` |
-| `BudgetPeriod` | `a.budget_pd` |
-| `PartnerBudgetPeriod` | `a.pbudget_pd` |
-| `BranchCode` | `a.j_1tpbupl` |
-| `JointVentureProductionDate` | `cast( a.prodper as jv_prodper_cds preserving type )` |
-| `OplAcctgDocItmCntrySpcfcRef1` | `a.glo_ref1` |
-| `PaymentReason` | `a.payt_rsn` |
-| `CashLedgerCompanyCode` | `a.re_bukrs` |
-| `CashLedgerAccount` | `a.re_account` |
-| `PubSecBudgetAccountCoCode` | `a.bdgt_account_cocode` |
-| `PubSecBudgetAccount` | `a.bdgt_account` |
-| `CompanyCodeCurrency` | `a.h_hwaer` |
-| `AmountInCompanyCodeCurrency` | `} a.dmbtr` |
-| `FunctionalCurrency` | `a.rfccur` |
-| `AmountInFunctionalCurrency` | `} a.fcsl` |
-| `TaxAmountInCoCodeCrcy` | `} a.mwsts` |
-| `TaxBaseAmountInCoCodeCrcy` | `} a.hwbas` |
-| `ValuationDiffAmtInCoCodeCrcy` | `} a.bdiff` |
-| `CashDiscountAmtInCoCodeCrcy` | `} a.sknto` |
-| `TaxBrkdwnAmount1InCoCodeCrcy` | `} a.dmbt1` |
-| `TaxBrkdwnAmount2InCoCodeCrcy` | `} a.dmbt2` |
-| `TaxBrkdwnAmount3InCoCodeCrcy` | `} a.dmbt3` |
-| `NonDcblTaxAmountInCoCodeCrcy` | `} a.navhw` |
-| `InvoiceAmtInCoCodeCrcy` | `} a.rewrt` |
-| `TransactionCurrency` | `a.h_waers` |
-| `AmountInTransactionCurrency` | `} a.wrbtr` |
-| `OriginalTaxBaseAmount` | `} a.txbfw` |
-| `TaxAmount` | `} a.wmwst` |
-| `TaxBaseAmountInTransCrcy` | `} a.fwbas` |
-| `WithholdingTaxBaseAmount` | `} a.qsshb` |
-| `PlannedAmtInTransactionCrcy` | `} a.fdwbt` |
-| `CashDiscountBaseAmount` | `} a.skfbt` |
-| `CashDiscountAmount` | `} a.wskto` |
-| `NetPaymentAmount` | `} a.nebtr` |
-| `TaxBrkdwnAmount1InTransCrcy` | `} a.wrbt1` |
-| `TaxBrkdwnAmount2InTransCrcy` | `} a.wrbt2` |
-| `TaxBrkdwnAmount3InTransCrcy` | `} a.wrbt3` |
-| `WithholdingTaxAmount` | `} a.qbshb` |
-| `WithholdingTaxExemptionAmt` | `} a.qsfbt` |
-| `NonDcblTaxAmountInTransCrcy` | `} a.navfw` |
-| `InvoiceAmountInFrgnCurrency` | `} a.rewwr` |
-| `BalanceTransactionCurrency` | `a.pswsl` |
-| `AmountInBalanceTransacCrcy` | `} a.pswbt` |
-| `AdditionalCurrency1` | `a.h_hwae2` |
-| `ValuationDiffAmtInAddlCrcy1` | `} a.bdif2` |
-| `AmountInAdditionalCurrency1` | `} a.dmbe2` |
-| `TaxAmountInAdditionalCurrency1` | `} a.mwst2` |
-| `AdditionalCurrency2` | `a.h_hwae3` |
-| `AmountInAdditionalCurrency2` | `} a.dmbe3` |
-| `TaxAmountInAdditionalCurrency2` | `} a.mwst3` |
-| `ValuationDiffAmtInAddlCrcy2` | `} a.bdif3` |
-| `PaymentCurrency` | `a.pycur` |
-| `AmountInPaymentCurrency` | `} a.pyamt` |
-| `BaseUnit` | `a.meins` |
-| `Quantity` | `} a.menge` |
-| `GoodsMovementEntryUnit` | `a.erfme` |
-| `QuantityInEntryUnit` | `} a.erfmg` |
-| `PurchasingDocumentPriceUnit` | `a.bprme` |
-| `PurchaseOrderQty` | `} a.bpmng` |
-| `MaterialPriceUnitQty` | `} a.peinh` |
-| `EarmarkedFunds` | `a.kblnr` |
-| `EarmarkedFundsItem` | `a.kblpos` |
-| `IN_GSTPartner` | `a.gst_part` |
-| `IN_GSTPlaceOfSupply` | `a.plc_sup` |
-| `IN_HSNOrSACCode` | `a.hsn_sac` |
-| `Timestamp` | `dats_tims_to_tstmp( b.cpudt, b.cputm, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
-| `LastManualChangeDate` | `cast ( b.aedat as fis_lastmanualchangedate preserving type )` |
-| `LastAutomaticChangeDate` | `cast ( b.upddt as fis_lastautomaticchangedate preserving type)` |
-| `ExchangeRateDate` | `b.wwert` |
-| `AccountingDocCreatedByUser` | `b.usnam` |
-| `TransactionCode` | `b.tcode` |
-| `IntercompanyTransaction` | `b.bvorg` |
-| `DocumentReferenceID` | `b.xblnr` |
-| `RecurringAccountingDocument` | `b.dbblg` |
-| `ReverseDocument` | `b.stblg` |
-| `ReverseDocumentFiscalYear` | `b.stjah` |
-| `AccountingDocumentHeaderText` | `b.bktxt` |
-| `NetAmountIsPosted` | `b.xnetb` |
-| `JrnlEntryIsPostedToPrevPeriod` | `b.xrueb` |
-| `BusinessTransactionType` | `b.glvor` |
-| `BatchInputSession` | `b.grpid` |
-| `FinancialManagementArea` | `b.fikrs` |
-| `ReversalIsPlanned` | `b.xstov` |
-| `PlannedReversalDate` | `b.stodt` |
-| `TaxIsCalculatedAutomatically` | `b.xmwst` |
-| `AdditionalCurrency1Role` | `b.curt2` |
-| `AdditionalCurrency2Role` | `b.curt3` |
-| `TaxBaseAmountIsNetAmount` | `b.xsnet` |
-| `SourceCompanyCode` | `b.ausbk` |
-| `LogicalSystem` | `b.awsys` |
-| `TaxExchangeRate` | `b.txkrs` |
-| `ReversalReason` | `b.stgrd` |
-| `ParkedByUser` | `cast(b.ppnam as fis_ppnam preserving type )` |
-| `ParkingDate` | `b.ppdat` |
-| `ParkingTime` | `b.pptme` |
-| `Branch` | `b.brnch` |
-| `NmbrOfPages` | `b.numpg` |
-| `IsDiscountDocument` | `b.adisc` |
-| `Reference1InDocumentHeader` | `b.xref1_hd` |
-| `Reference2InDocumentHeader` | `b.xref2_hd` |
-| `InvoiceReceiptDate` | `b.reindat` |
-| `Ledger` | `b.rldnr` |
-| `LedgerGroup` | `b.ldgrp` |
-| `AlternativeReferenceDocument` | `cast(b.xblnr_alt as fis_xblnr_alt_alpha preserving type )` |
-| `TaxReportingDate` | `b.vatdate` |
-| `TaxFulfillmentDate` | `b.fulfilldate` |
-| `AccountingDocumentClass` | `b.doccat` |
-| `ExchangeRateType` | `b.kurst` |
-| `SenderLogicalSystem` | `b.logsystem_sender` |
-| `SenderCompanyCode` | `b.bukrs_sender` |
-| `SenderAccountingDocument` | `b.belnr_sender` |
-| `SenderFiscalYear` | `b.gjahr_sender` |
-| `ReversalReferenceDocumentCntxt` | `b.aworg_rev` |
-| `ReversalReferenceDocument` | `b.awref_rev` |
-| `LatePaymentReason` | `b.penrc` |
-| `SalesDocumentCondition` | `b.knumv` |
-| `IsReversal` | `b.xreversing` |
-| `IsReversed` | `b.xreversed` |
-| `GLBusinessTransactionGroup` | `b.glbtgrp` |
-| `CostAccountingValuationDate` | `b.co_valdt` |
-| `JrnlEntryCntrySpecificRef1` | `b.glo_ref1_hd` |
-| `JrnlEntryCntrySpecificDate1` | `b.glo_dat1_hd` |
-| `JrnlEntryCntrySpecificRef2` | `b.glo_ref2_hd` |
-| `JrnlEntryCntrySpecificDate2` | `b.glo_dat2_hd` |
-| `JrnlEntryCntrySpecificRef3` | `b.glo_ref3_hd` |
-| `JrnlEntryCntrySpecificDate3` | `b.glo_dat3_hd` |
-| `JrnlEntryCntrySpecificRef4` | `b.glo_ref4_hd` |
-| `JrnlEntryCntrySpecificDate4` | `b.glo_dat4_hd` |
-| `JrnlEntryCntrySpecificRef5` | `b.glo_ref5_hd` |
-| `JrnlEntryCntrySpecificDate5` | `b.glo_dat5_hd` |
-| `JrnlEntryCntrySpecificBP1` | `b.glo_bp1_hd` |
-| `JrnlEntryCntrySpecificBP2` | `b.glo_bp2_hd` |
-| `WithholdingTaxReportingDate` | `b.whtdate` |
-| `Company` | `c.rcomp` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `AccountingDocument` | ✓ | |  | `belnr` |
+| `FiscalYear` | ✓ | |  | `gjahr` |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` |
+| `MatchingMethodID` |  | |  | `cast ('' as ica_method_id)` |
+| `ChartOfAccounts` |  | |  | `ktopl` |
+| `AccountingDocumentItemType` |  | |  | `buzid` |
+| `ClearingDate` |  | |  | `augdt` |
+| `ClearingCreationDate` |  | |  | `augcp` |
+| `ClearingJournalEntryFiscalYear` |  | |  | `auggj` |
+| `ClearingDocFiscalYear` |  | |  | `cast( a.auggj as fis_auggj_no_conv_depre preserving type )` |
+| `ClearingJournalEntry` |  | |  | `augbl` |
+| `ClearingAccountingDocument` |  | |  | `cast( a.augbl as fis_augbl_depre preserving type )` |
+| `PostingKey` |  | |  | `bschl` |
+| `FinancialAccountType` |  | |  | `koart` |
+| `SpecialGLCode` |  | |  | `umskz` |
+| `SpecialGLTransactionType` |  | |  | `umsks` |
+| `DebitCreditCode` |  | |  | `shkzg` |
+| `BusinessArea` |  | |  | `gsber` |
+| `PartnerBusinessArea` |  | |  | `pargb` |
+| `TaxCode` |  | |  | `mwskz` |
+| `TaxCountry` |  | |  | `tax_country` |
+| `TaxRateValidityStartDate` |  | |  | `txdat_from` |
+| `WithholdingTaxCode` |  | |  | `qsskz` |
+| `TaxType` |  | |  | `mwart` |
+| `TaxItemGroup` |  | |  | `txgrp` |
+| `TransactionTypeDetermination` |  | |  | `ktosl` |
+| `ValueDate` |  | |  | `valut` |
+| `AssignmentReference` |  | |  | `zuonr` |
+| `DocumentItemText` |  | |  | `sgtxt` |
+| `PartnerCompany` |  | |  | `vbund` |
+| `FinancialTransactionType` |  | |  | `bewar` |
+| `CorporateGroupAccount` |  | |  | `altkt` |
+| `PlanningLevel` |  | |  | `fdlev` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `CostCenter` |  | |  | `kostl` |
+| `OrderID` |  | |  | `aufnr` |
+| `BillingDocument` |  | |  | `vbeln` |
+| `SalesDocument` |  | |  | `vbel2` |
+| `SalesDocumentItem` |  | |  | `posn2` |
+| `ScheduleLine` |  | |  | `eten2` |
+| `ServiceDocumentType` |  | |  | `service_doc_type` |
+| `ServiceDocument` |  | |  | `service_doc_id` |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |
+| `MasterFixedAsset` |  | |  | `anln1` |
+| `FixedAsset` |  | |  | `anln2` |
+| `AssetTransactionType` |  | |  | `anbwa` |
+| `AssetValueDate` |  | |  | `bzdat` |
+| `PersonnelNumber` |  | |  | `pernr` |
+| `IsSalesRelated` |  | |  | `xumsw` |
+| `LineItemDisplayIsEnabled` |  | |  | `xkres` |
+| `IsOpenItemManaged` |  | |  | `xopvw` |
+| `AddressAndBankIsSetManually` |  | |  | `cast( a.xcpdd as farp_xcpdd )` |
+| `DownPaymentIsNetProcedure` |  | |  | `xanet` |
+| `IsNotCashDiscountLiable` |  | |  | `xskrl` |
+| `IsAutomaticallyCreated` |  | |  | `xauto` |
+| `IsUsedInPaymentTransaction` |  | |  | `xzahl` |
+| `OperationalGLAccount` |  | |  | `saknr` |
+| `GLAccount` |  | |  | `hkont` |
+| `Customer` |  | |  | `kunnr` |
+| `Supplier` |  | |  | `lifnr` |
+| `BranchAccount` |  | |  | `filkd` |
+| `IsBalanceSheetAccount` |  | |  | `xbilk` |
+| `ProfitLossAccountType` |  | |  | `gvtyp` |
+| `SpecialGLAccountAssignment` |  | |  | `hzuon` |
+| `DueCalculationBaseDate` |  | |  | `zfbdt` |
+| `PaymentTerms` |  | |  | `zterm` |
+| `CashDiscount1Days` |  | |  | `zbd1t` |
+| `CashDiscount2Days` |  | |  | `zbd2t` |
+| `NetPaymentDays` |  | |  | `zbd3t` |
+| `CashDiscount1Percent` |  | |  | `zbd1p` |
+| `CashDiscount2Percent` |  | |  | `zbd2p` |
+| `PaymentMethod` |  | |  | `zlsch` |
+| `PaymentBlockingReason` |  | |  | `zlspr` |
+| `FixedCashDiscount` |  | |  | `zbfix` |
+| `HouseBank` |  | |  | `hbkid` |
+| `BPBankAccountInternalID` |  | |  | `bvtyp` |
+| `TaxDistributionCode1` |  | |  | `mwsk1` |
+| `TaxDistributionCode2` |  | |  | `mwsk2` |
+| `TaxDistributionCode3` |  | |  | `mwsk3` |
+| `InvoiceReference` |  | |  | `rebzg` |
+| `InvoiceReferenceFiscalYear` |  | |  | `rebzj` |
+| `InvoiceItemReference` |  | |  | `rebzz` |
+| `FollowOnDocumentType` |  | |  | `rebzt` |
+| `StateCentralBankPaymentReason` |  | |  | `lzbkz` |
+| `SupplyingCountry` |  | |  | `landl` |
+| `InvoiceList` |  | |  | `samnr` |
+| `BillOfExchangeUsageDocument` |  | |  | `disbn` |
+| `BillOfExchangeUsage` |  | |  | `wverw` |
+| `DunningKey` |  | |  | `mschl` |
+| `DunningBlockingReason` |  | |  | `mansp` |
+| `LastDunningDate` |  | |  | `madat` |
+| `DunningLevel` |  | |  | `manst` |
+| `DunningArea` |  | |  | `maber` |
+| `PaytSlipWthRefSubscriber` |  | |  | `esrnr` |
+| `PaytSlipWthRefReference` |  | |  | `esrre` |
+| `PaytSlipWthRefCheckDigit` |  | |  | `esrpz` |
+| `WithholdingTaxCertificate` |  | |  | `qsznr` |
+| `Product` |  | |  | `cast( a.matnr as productnumber )` |
+| `Plant` |  | |  | `werks` |
+| `PurchasingDocument` |  | |  | `ebeln` |
+| `PurchasingDocumentItem` |  | |  | `ebelp` |
+| `AccountAssignmentNumber` |  | |  | `zekkn` |
+| `IsCompletelyDelivered` |  | |  | `elikz` |
+| `MaterialPriceControl` |  | |  | `vprsv` |
+| `ValuationArea` |  | |  | `bwkey` |
+| `InventoryValuationType` |  | |  | `bwtar` |
+| `VATRegistration` |  | |  | `stceg` |
+| `DelivOfGoodsDestCountry` |  | |  | `egbld` |
+| `DelivOfGoodsOriginCountry` |  | |  | `eglld` |
+| `PaymentDifferenceReason` |  | |  | `rstgr` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `JointVenture` |  | |  | `vname` |
+| `JointVentureCostRecoveryCode` |  | |  | `recid` |
+| `JointVentureEquityGroup` |  | |  | `egrup` |
+| `JointVenturePartner` |  | |  | `cast( a.vptnr as jv_part_cds preserving type )` |
+| `TreasuryContractType` |  | |  | `vertt` |
+| `AssetContract` |  | |  | `vertn` |
+| `CashFlowType` |  | |  | `vbewa` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `REInternalFinNumber` |  | |  | `cast( a.imkey as recaimkeyfi preserving type )` |
+| `RealEstateObject` |  | |  | `imkey` |
+| `SettlementReferenceDate` |  | |  | `dabrz` |
+| `CommitmentItem` |  | |  | `fipos` |
+| `CommitmentItemShortID` |  | |  | `cast( a.fipos as fis_fipos_shortid preserving type )` |
+| `CostObject` |  | |  | `kstrg` |
+| `ProjectNetwork` |  | |  | `nplnr` |
+| `OrderInternalBillOfOperations` |  | |  | `aufpl` |
+| `OrderIntBillOfOperationsItem` |  | |  | `aplzl` |
+| `WBSElementInternalID` |  | |  | `cast( a.projk as fis_wbsint_no_conv preserving type )` |
+| `ProfitabilitySegment_2` |  | |  | `cast( a.paobjnr as rkeobjnr_char )` |
+| `JointVentureEquityType` |  | |  | `etype` |
+| `IsEUTriangularDeal` |  | |  | `xegdr` |
+| `CostOriginGroup` |  | |  | `hrkft` |
+| `CompanyCodeCurrencyDetnMethod` |  | |  | `hwmet` |
+| `ClearingIsReversed` |  | |  | `xragl` |
+| `PaymentMethodSupplement` |  | |  | `uzawe` |
+| `AlternativeGLAccount` |  | |  | `lokkt` |
+| `FundsCenter` |  | |  | `fistl` |
+| `Fund` |  | |  | `geber` |
+| `TaxCompanyCode` |  | |  | `stbuk` |
+| `PartnerProfitCenter` |  | |  | `pprct` |
+| `Reference1IDByBusinessPartner` |  | |  | `xref1` |
+| `Reference2IDByBusinessPartner` |  | |  | `xref2` |
+| `EarmarkedFundsDocument` |  | |  | `kblnr` |
+| `EarmarkedFundsDocumentItem` |  | |  | `kblpos` |
+| `IsNegativePosting` |  | |  | `xnegp` |
+| `PaymentCardItem` |  | |  | `rfzei` |
+| `PaymentCardPaymentSettlement` |  | |  | `ccbtc` |
+| `CreditControlArea` |  | |  | `kkber` |
+| `AlternativePayeePayer` |  | |  | `empfb` |
+| `Reference3IDByBusinessPartner` |  | |  | `xref3` |
+| `DataExchangeInstruction1` |  | |  | `dtws1` |
+| `DataExchangeInstruction2` |  | |  | `dtws2` |
+| `DataExchangeInstruction3` |  | |  | `dtws3` |
+| `DataExchangeInstruction4` |  | |  | `dtws4` |
+| `Region` |  | |  | `grirg` |
+| `HasPaymentOrder` |  | |  | `xpypr` |
+| `PaymentReference` |  | |  | `kidno` |
+| `TaxDeterminationDate` |  | |  | `txdat` |
+| `ClearingItem` |  | |  | `agzei` |
+| `BusinessPlace` |  | |  | `bupla` |
+| `TaxSection` |  | |  | `secco` |
+| `CostCtrActivityType` |  | |  | `lstar` |
+| `AccountsReceivableIsPledged` |  | |  | `cession_kz` |
+| `AcctsReceivablePledgingCode` |  | |  | `cast( a.cession_kz as fis_cession_kz_code preserving type )` |
+| `BusinessProcess` |  | |  | `prznr` |
+| `GrantID` |  | |  | `grant_nbr` |
+| `FunctionalArea` |  | |  | `fkber_long` |
+| `CustomerIsInExecution` |  | |  | `gmvkz` |
+| `FundedProgram` |  | |  | `measure` |
+| `LedgerGLLineItem` |  | |  | `docln` |
+| `Segment` |  | |  | `segment` |
+| `PartnerSegment` |  | |  | `psegment` |
+| `PartnerFunctionalArea` |  | |  | `pfkber` |
+| `HouseBankAccount` |  | |  | `hktid` |
+| `CostElement` |  | |  | `kstar` |
+| `TaxItemAcctgDocItemRef` |  | |  | `taxps` |
+| `PaymentServiceProvider` |  | |  | `pays_prov` |
+| `PaymentRefByPaytSrvcProvider` |  | |  | `pays_tran` |
+| `SEPAMandate` |  | |  | `mndid` |
+| `ReferenceDocumentType` |  | |  | `awtyp` |
+| `OriginalReferenceDocument` |  | |  | `awkey` |
+| `ReferenceDocumentLogicalSystem` |  | |  | `awsys` |
+| `AccountingDocumentItemRef` |  | |  | `posnr` |
+| `FiscalPeriod` |  | |  | `h_monat` |
+| `AccountingDocumentCategory` |  | |  | `h_bstat` |
+| `PostingDate` |  | |  | `h_budat` |
+| `DocumentDate` |  | |  | `h_bldat` |
+| `AccountingDocumentType` |  | |  | `h_blart` |
+| `NetDueDate` |  | |  | `netdt` |
+| `CashDiscount1DueDate` |  | |  | `sk1dt` |
+| `CashDiscount2DueDate` |  | |  | `sk2dt` |
+| `OffsettingAccount` |  | |  | `gkont` |
+| `OffsettingAccountType` |  | |  | `gkart` |
+| `PartnerFund` |  | |  | `pgeber` |
+| `PartnerGrant` |  | |  | `pgrant_nbr` |
+| `BudgetPeriod` |  | |  | `budget_pd` |
+| `PartnerBudgetPeriod` |  | |  | `pbudget_pd` |
+| `BranchCode` |  | |  | `j_1tpbupl` |
+| `JointVentureProductionDate` |  | |  | `cast( a.prodper as jv_prodper_cds preserving type )` |
+| `OplAcctgDocItmCntrySpcfcRef1` |  | |  | `glo_ref1` |
+| `PaymentReason` |  | |  | `payt_rsn` |
+| `CashLedgerCompanyCode` |  | |  | `re_bukrs` |
+| `CashLedgerAccount` |  | |  | `re_account` |
+| `PubSecBudgetAccountCoCode` |  | |  | `bdgt_account_cocode` |
+| `PubSecBudgetAccount` |  | |  | `bdgt_account` |
+| `CompanyCodeCurrency` |  | |  | `h_hwaer` |
+| `AmountInCompanyCodeCurrency` |  | |  | `} a.dmbtr` |
+| `FunctionalCurrency` |  | |  | `rfccur` |
+| `AmountInFunctionalCurrency` |  | |  | `} a.fcsl` |
+| `TaxAmountInCoCodeCrcy` |  | |  | `} a.mwsts` |
+| `TaxBaseAmountInCoCodeCrcy` |  | |  | `} a.hwbas` |
+| `ValuationDiffAmtInCoCodeCrcy` |  | |  | `} a.bdiff` |
+| `CashDiscountAmtInCoCodeCrcy` |  | |  | `} a.sknto` |
+| `TaxBrkdwnAmount1InCoCodeCrcy` |  | |  | `} a.dmbt1` |
+| `TaxBrkdwnAmount2InCoCodeCrcy` |  | |  | `} a.dmbt2` |
+| `TaxBrkdwnAmount3InCoCodeCrcy` |  | |  | `} a.dmbt3` |
+| `NonDcblTaxAmountInCoCodeCrcy` |  | |  | `} a.navhw` |
+| `InvoiceAmtInCoCodeCrcy` |  | |  | `} a.rewrt` |
+| `TransactionCurrency` |  | |  | `h_waers` |
+| `AmountInTransactionCurrency` |  | |  | `} a.wrbtr` |
+| `OriginalTaxBaseAmount` |  | |  | `} a.txbfw` |
+| `TaxAmount` |  | |  | `} a.wmwst` |
+| `TaxBaseAmountInTransCrcy` |  | |  | `} a.fwbas` |
+| `WithholdingTaxBaseAmount` |  | |  | `} a.qsshb` |
+| `PlannedAmtInTransactionCrcy` |  | |  | `} a.fdwbt` |
+| `CashDiscountBaseAmount` |  | |  | `} a.skfbt` |
+| `CashDiscountAmount` |  | |  | `} a.wskto` |
+| `NetPaymentAmount` |  | |  | `} a.nebtr` |
+| `TaxBrkdwnAmount1InTransCrcy` |  | |  | `} a.wrbt1` |
+| `TaxBrkdwnAmount2InTransCrcy` |  | |  | `} a.wrbt2` |
+| `TaxBrkdwnAmount3InTransCrcy` |  | |  | `} a.wrbt3` |
+| `WithholdingTaxAmount` |  | |  | `} a.qbshb` |
+| `WithholdingTaxExemptionAmt` |  | |  | `} a.qsfbt` |
+| `NonDcblTaxAmountInTransCrcy` |  | |  | `} a.navfw` |
+| `InvoiceAmountInFrgnCurrency` |  | |  | `} a.rewwr` |
+| `BalanceTransactionCurrency` |  | |  | `pswsl` |
+| `AmountInBalanceTransacCrcy` |  | |  | `} a.pswbt` |
+| `AdditionalCurrency1` |  | |  | `h_hwae2` |
+| `ValuationDiffAmtInAddlCrcy1` |  | |  | `} a.bdif2` |
+| `AmountInAdditionalCurrency1` |  | |  | `} a.dmbe2` |
+| `TaxAmountInAdditionalCurrency1` |  | |  | `} a.mwst2` |
+| `AdditionalCurrency2` |  | |  | `h_hwae3` |
+| `AmountInAdditionalCurrency2` |  | |  | `} a.dmbe3` |
+| `TaxAmountInAdditionalCurrency2` |  | |  | `} a.mwst3` |
+| `ValuationDiffAmtInAddlCrcy2` |  | |  | `} a.bdif3` |
+| `PaymentCurrency` |  | |  | `pycur` |
+| `AmountInPaymentCurrency` |  | |  | `} a.pyamt` |
+| `BaseUnit` |  | |  | `meins` |
+| `Quantity` |  | |  | `} a.menge` |
+| `GoodsMovementEntryUnit` |  | |  | `erfme` |
+| `QuantityInEntryUnit` |  | |  | `} a.erfmg` |
+| `PurchasingDocumentPriceUnit` |  | |  | `bprme` |
+| `PurchaseOrderQty` |  | |  | `} a.bpmng` |
+| `MaterialPriceUnitQty` |  | |  | `} a.peinh` |
+| `EarmarkedFunds` |  | |  | `kblnr` |
+| `EarmarkedFundsItem` |  | |  | `kblpos` |
+| `IN_GSTPartner` |  | |  | `gst_part` |
+| `IN_GSTPlaceOfSupply` |  | |  | `plc_sup` |
+| `IN_HSNOrSACCode` |  | |  | `hsn_sac` |
+| `Timestamp` |  | |  | `dats_tims_to_tstmp( b.cpudt, b.cputm, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' )` |
+| `LastManualChangeDate` |  | |  | `cast ( b.aedat as fis_lastmanualchangedate preserving type )` |
+| `LastAutomaticChangeDate` |  | |  | `cast ( b.upddt as fis_lastautomaticchangedate preserving type)` |
+| `ExchangeRateDate` |  | |  | `wwert` |
+| `AccountingDocCreatedByUser` |  | |  | `usnam` |
+| `TransactionCode` |  | |  | `tcode` |
+| `IntercompanyTransaction` |  | |  | `bvorg` |
+| `DocumentReferenceID` |  | |  | `xblnr` |
+| `RecurringAccountingDocument` |  | |  | `dbblg` |
+| `ReverseDocument` |  | |  | `stblg` |
+| `ReverseDocumentFiscalYear` |  | |  | `stjah` |
+| `AccountingDocumentHeaderText` |  | |  | `bktxt` |
+| `NetAmountIsPosted` |  | |  | `xnetb` |
+| `JrnlEntryIsPostedToPrevPeriod` |  | |  | `xrueb` |
+| `BusinessTransactionType` |  | |  | `glvor` |
+| `BatchInputSession` |  | |  | `grpid` |
+| `FinancialManagementArea` |  | |  | `fikrs` |
+| `ReversalIsPlanned` |  | |  | `xstov` |
+| `PlannedReversalDate` |  | |  | `stodt` |
+| `TaxIsCalculatedAutomatically` |  | |  | `xmwst` |
+| `AdditionalCurrency1Role` |  | |  | `curt2` |
+| `AdditionalCurrency2Role` |  | |  | `curt3` |
+| `TaxBaseAmountIsNetAmount` |  | |  | `xsnet` |
+| `SourceCompanyCode` |  | |  | `ausbk` |
+| `LogicalSystem` |  | |  | `awsys` |
+| `TaxExchangeRate` |  | |  | `txkrs` |
+| `ReversalReason` |  | |  | `stgrd` |
+| `ParkedByUser` |  | |  | `cast(b.ppnam as fis_ppnam preserving type )` |
+| `ParkingDate` |  | |  | `ppdat` |
+| `ParkingTime` |  | |  | `pptme` |
+| `Branch` |  | |  | `brnch` |
+| `NmbrOfPages` |  | |  | `numpg` |
+| `IsDiscountDocument` |  | |  | `adisc` |
+| `Reference1InDocumentHeader` |  | |  | `xref1_hd` |
+| `Reference2InDocumentHeader` |  | |  | `xref2_hd` |
+| `InvoiceReceiptDate` |  | |  | `reindat` |
+| `Ledger` |  | |  | `rldnr` |
+| `LedgerGroup` |  | |  | `ldgrp` |
+| `AlternativeReferenceDocument` |  | |  | `cast(b.xblnr_alt as fis_xblnr_alt_alpha preserving type )` |
+| `TaxReportingDate` |  | |  | `vatdate` |
+| `TaxFulfillmentDate` |  | |  | `fulfilldate` |
+| `AccountingDocumentClass` |  | |  | `doccat` |
+| `ExchangeRateType` |  | |  | `kurst` |
+| `SenderLogicalSystem` |  | |  | `logsystem_sender` |
+| `SenderCompanyCode` |  | |  | `bukrs_sender` |
+| `SenderAccountingDocument` |  | |  | `belnr_sender` |
+| `SenderFiscalYear` |  | |  | `gjahr_sender` |
+| `ReversalReferenceDocumentCntxt` |  | |  | `aworg_rev` |
+| `ReversalReferenceDocument` |  | |  | `awref_rev` |
+| `LatePaymentReason` |  | |  | `penrc` |
+| `SalesDocumentCondition` |  | |  | `knumv` |
+| `IsReversal` |  | |  | `xreversing` |
+| `IsReversed` |  | |  | `xreversed` |
+| `GLBusinessTransactionGroup` |  | |  | `glbtgrp` |
+| `CostAccountingValuationDate` |  | |  | `co_valdt` |
+| `JrnlEntryCntrySpecificRef1` |  | |  | `glo_ref1_hd` |
+| `JrnlEntryCntrySpecificDate1` |  | |  | `glo_dat1_hd` |
+| `JrnlEntryCntrySpecificRef2` |  | |  | `glo_ref2_hd` |
+| `JrnlEntryCntrySpecificDate2` |  | |  | `glo_dat2_hd` |
+| `JrnlEntryCntrySpecificRef3` |  | |  | `glo_ref3_hd` |
+| `JrnlEntryCntrySpecificDate3` |  | |  | `glo_dat3_hd` |
+| `JrnlEntryCntrySpecificRef4` |  | |  | `glo_ref4_hd` |
+| `JrnlEntryCntrySpecificDate4` |  | |  | `glo_dat4_hd` |
+| `JrnlEntryCntrySpecificRef5` |  | |  | `glo_ref5_hd` |
+| `JrnlEntryCntrySpecificDate5` |  | |  | `glo_dat5_hd` |
+| `JrnlEntryCntrySpecificBP1` |  | |  | `glo_bp1_hd` |
+| `JrnlEntryCntrySpecificBP2` |  | |  | `glo_bp2_hd` |
+| `WithholdingTaxReportingDate` |  | |  | `whtdate` |
+| `Company` |  | |  | `rcomp` |
 
 ## Associations
 

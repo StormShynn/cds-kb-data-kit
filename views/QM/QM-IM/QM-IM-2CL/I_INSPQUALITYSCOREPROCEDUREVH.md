@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspQualityScoreProcedure` | `InspQualityScoreProcedure` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspQualityScoreProcedure` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

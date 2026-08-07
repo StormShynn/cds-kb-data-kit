@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `MaintOrderConfLongText` | `esh_e_sr_longtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintOrderConfLongText` |  | |  | `esh_e_sr_longtext` |
 
 ## Source Code
 

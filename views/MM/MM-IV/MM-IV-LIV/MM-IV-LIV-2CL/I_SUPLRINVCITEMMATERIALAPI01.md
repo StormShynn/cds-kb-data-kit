@@ -31,27 +31,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `item.SupplierInvoice` |
-| key `FiscalYear` | `item.FiscalYear` |
-| key `SupplierInvoiceItem` | `item.SupplierInvoiceItem` |
-| `Material` | `item.Material` |
-| `ValuationArea` | `item.ValuationArea` |
-| `CompanyCode` | `item.CompanyCode` |
-| `Plant` | `item.SuplrInvcItemMaterialPlant` |
-| `InventoryValuationType` | `item.InventoryValuationType` |
-| `DebitCreditCode` | `item.DebitCreditCode` |
-| `IsNotCashDiscountLiable` | `item.IsNotCashDiscountLiable` |
-| `TaxCode` | `item.TaxCode` |
-| `TaxJurisdiction` | `item.TaxJurisdiction` |
-| `TaxCountry` | `item.TaxCountry` |
-| `TaxDeterminationDate` | `item.TaxDeterminationDate` |
-| `DocumentCurrency` | `item.DocumentCurrency` |
-| `SupplierInvoiceItemAmount` | `item.SupplierInvoiceItemAmount` |
-| `QuantityUnit` | `item.QuantityUnit` |
-| `Quantity` | `item.Quantity` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |
+| `Material` |  | |  |  |
+| `ValuationArea` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  | `SuplrInvcItemMaterialPlant` |
+| `InventoryValuationType` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `TaxDeterminationDate` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `Quantity` |  | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

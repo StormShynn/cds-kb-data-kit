@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingDocumentItemCategory` | `cast(t8g02.linetype as fis_accdoc_itemcat preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingDocumentItemCategory` | ✓ | |  | `cast(t8g02.linetype as fis_accdoc_itemcat preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

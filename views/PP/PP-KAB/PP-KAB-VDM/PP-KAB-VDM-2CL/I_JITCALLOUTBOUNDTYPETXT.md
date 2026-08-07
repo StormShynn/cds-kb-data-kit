@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `JITCallOutboundType` | `cast(substring(domvalue_l, 1, 1) as pabart)` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `JITCallOutboundTypeName` | `cast(ddtext as vdm_pabart_text preserving type)` |
-| `DomainValue` | `domvalue_l` |
-| `_JITCallOutboundType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `JITCallOutboundType` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as pabart)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `JITCallOutboundTypeName` |  | |  | `cast(ddtext as vdm_pabart_text preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_JITCallOutboundType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

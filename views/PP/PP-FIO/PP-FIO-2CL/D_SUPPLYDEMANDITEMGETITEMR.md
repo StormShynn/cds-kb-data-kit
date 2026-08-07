@@ -26,49 +26,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `RowIndex` | `abap.int4` |
-| `Material` | `matnr` |
-| `MRPPlant` | `werks_d` |
-| `MRPArea` | `berid` |
-| `MRPPlanningSegmentType` | `plaab` |
-| `MRPPlanningSegment` | `planr` |
-| `MaterialExternalID` | `matnr` |
-| `MRPElement` | `del12` |
-| `MRPElementItem` | `delps` |
-| `MRPElementScheduleLine` | `delet` |
-| `MRPElementCategory` | `delkz` |
-| `MRPElementCategoryShortName` | `delb0` |
-| `MRPElementAvailyOrRqmtDate` | `dat00` |
-| `MRPAvailableQuantity` | `lmeng` |
-| `MRPElementOpenQuantity` | `lmeng` |
-| `MRPElementQuantityIsFirm` | `flag` |
-| `MRPElementDocumentType` | `char4` |
-| `MRPElementDocumentTypeName` | `char60` |
-| `ProductionPlant` | `werks_d` |
-| `StorageLocation` | `char4` |
-| `Assembly` | `baugr` |
-| `ProductionVersion` | `verid` |
-| `SourceMRPElement` | `del12` |
-| `SourceMRPElementItem` | `posvr` |
-| `SourceMRPElementCategory` | `delkz` |
-| `MRPElementBusinessPartner` | `char10` |
-| `MRPElementBusinessPartnerName` | `bpname` |
-| `MRPElementBusinessPartnerType` | `char1` |
-| `MaterialBaseUnit` | `meins` |
-| `UnitOfMeasureCommercialName` | `mseh3` |
-| `TargetQuantityUnitDisplayDcmls` | `andec` |
-| `TargetQuantityUnitDcmls` | `decan` |
-| `MaterialBaseUnitDesc` | `mseh6` |
-| `UnitOfMeasureName` | `mseh3` |
-| `MRPElementIsReleased` | `char1` |
-| `MRPElementIsPartiallyDelivered` | `char1` |
-| `MRPRequestStatus` | `char2` |
-| `MRPRequestSupplierResponse` | `char2` |
-| `MRPAvailability` | `vrfkz` |
-| `MaterialSafetyStockQty` | `lmeng` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RowIndex` |  | |  | `int4` |
+| `Material` |  | |  | `matnr` |
+| `MRPPlant` |  | |  | `werks_d` |
+| `MRPArea` |  | |  | `berid` |
+| `MRPPlanningSegmentType` |  | |  | `plaab` |
+| `MRPPlanningSegment` |  | |  | `planr` |
+| `MaterialExternalID` |  | |  | `matnr` |
+| `MRPElement` |  | |  | `del12` |
+| `MRPElementItem` |  | |  | `delps` |
+| `MRPElementScheduleLine` |  | |  | `delet` |
+| `MRPElementCategory` |  | |  | `delkz` |
+| `MRPElementCategoryShortName` |  | |  | `delb0` |
+| `MRPElementAvailyOrRqmtDate` |  | |  | `dat00` |
+| `MRPAvailableQuantity` |  | |  | `lmeng` |
+| `MRPElementOpenQuantity` |  | |  | `lmeng` |
+| `MRPElementQuantityIsFirm` |  | |  | `flag` |
+| `MRPElementDocumentType` |  | |  | `char4` |
+| `MRPElementDocumentTypeName` |  | |  | `char60` |
+| `ProductionPlant` |  | |  | `werks_d` |
+| `StorageLocation` |  | |  | `char4` |
+| `Assembly` |  | |  | `baugr` |
+| `ProductionVersion` |  | |  | `verid` |
+| `SourceMRPElement` |  | |  | `del12` |
+| `SourceMRPElementItem` |  | |  | `posvr` |
+| `SourceMRPElementCategory` |  | |  | `delkz` |
+| `MRPElementBusinessPartner` |  | |  | `char10` |
+| `MRPElementBusinessPartnerName` |  | |  | `bpname` |
+| `MRPElementBusinessPartnerType` |  | |  | `char1` |
+| `MaterialBaseUnit` |  | |  | `meins` |
+| `UnitOfMeasureCommercialName` |  | |  | `mseh3` |
+| `TargetQuantityUnitDisplayDcmls` |  | |  | `andec` |
+| `TargetQuantityUnitDcmls` |  | |  | `decan` |
+| `MaterialBaseUnitDesc` |  | |  | `mseh6` |
+| `UnitOfMeasureName` |  | |  | `mseh3` |
+| `MRPElementIsReleased` |  | |  | `char1` |
+| `MRPElementIsPartiallyDelivered` |  | |  | `char1` |
+| `MRPRequestStatus` |  | |  | `char2` |
+| `MRPRequestSupplierResponse` |  | |  | `char2` |
+| `MRPAvailability` |  | |  | `vrfkz` |
+| `MaterialSafetyStockQty` |  | |  | `lmeng` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

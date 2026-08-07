@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgProcess` | `_tfk8110t.bill_process` |
-| key `Language` | `_tfk8110t.langu` |
-| `CABillgProcessText` | `cast( _tfk8110t.text as bill_process_txt_gfn_kk preserving type )` |
-| `_CABillgProcess` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgProcess` | ✓ | | `_tfk8110t` | `bill_process` |
+| `Language` | ✓ | | `_tfk8110t` | `langu` |
+| `CABillgProcessText` |  | |  | `cast( _tfk8110t.text as bill_process_txt_gfn_kk preserving type )` |
+| `_CABillgProcess` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

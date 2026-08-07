@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdCmplncLabelFieldVersionID` | `ProdCmplncLabelFieldVersionID` |
-| key `Language` | `Language` |
-| `ProdCmplncLabelFieldName` | `ProdCmplncLabelFieldName` |
-| `ProdCmplncLabelFieldGroupID` | `ProdCmplncLabelFieldGroupID` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_LabelFieldGroup` | *Association* |
-| `_LabelFieldVersion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLabelFieldVersionID` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ProdCmplncLabelFieldName` |  | |  |  |
+| `ProdCmplncLabelFieldGroupID` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_LabelFieldGroup` | | ✓ | | |
+| `_LabelFieldVersion` | | ✓ | | |
 
 ## Source Code
 

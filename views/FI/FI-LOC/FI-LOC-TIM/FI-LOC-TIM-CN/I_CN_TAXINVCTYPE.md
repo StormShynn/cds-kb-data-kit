@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CN_TaxInvcType` | `type.CN_TaxInvcType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CN_TaxInvcType` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

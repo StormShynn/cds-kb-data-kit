@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningExceptionReason` | `poken` |
-| `CAErrorLevelInDunningRun` | `errorlevel` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningExceptionReason` | ✓ | |  | `poken` |
+| `CAErrorLevelInDunningRun` |  | |  | `errorlevel` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

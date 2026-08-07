@@ -31,53 +31,53 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationOrderItemUUID` | `TransportationOrderItemUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `TranspOrdItem` | `TranspOrdItem` |
-| `TranspOrdItemType` | `TranspOrdItemType` |
-| `TranspOrdItemCategory` | `TranspOrdItemCategory` |
-| `TranspOrdItemParentItemUUID` | `TranspOrdItemParentItemUUID` |
-| `TranspOrdItemDesc` | `TranspOrdItemDesc` |
-| `IsMainCargoItem` | `IsMainCargoItem` |
-| `TranspOrdItemSorting` | `TranspOrdItemSorting` |
-| `TranspOrdItemShippingCondition` | `TranspOrdItemShippingCondition` |
-| `SourceStopUUID` | `SourceStopUUID` |
-| `DestinationStopUUID` | `DestinationStopUUID` |
-| `ShipperUUID` | `ShipperUUID` |
-| `Shipper` | `Shipper` |
-| `ShipperAddressID` | `ShipperAddressID` |
-| `ConsigneeUUID` | `ConsigneeUUID` |
-| `Consignee` | `Consignee` |
-| `ConsigneeAddressID` | `ConsigneeAddressID` |
-| `FreightUnitUUID` | `FreightUnitUUID` |
-| `TranspBaseDocument` | `TranspBaseDocument` |
-| `TranspBaseDocumentType` | `TranspBaseDocumentType` |
-| `TranspBaseDocumentItem` | `TranspBaseDocumentItem` |
-| `TranspBaseDocumentItemType` | `TranspBaseDocumentItemType` |
-| `TranspOrdItemPackageID` | `TranspOrdItemPackageID` |
-| `ProductUUID` | `ProductUUID` |
-| `ProductID` | `ProductID` |
-| `MaterialFreightGroup` | `MaterialFreightGroup` |
-| `TransportationGroup` | `TransportationGroup` |
-| `TranspOrdItmMinTemp` | `TranspOrdItmMinTemp` |
-| `TranspOrdItmMaxTemp` | `TranspOrdItmMaxTemp` |
-| `TranspOrdItemTemperatureUnit` | `TranspOrdItemTemperatureUnit` |
-| `TranspOrdItemQuantity` | `TranspOrdItemQuantity` |
-| `TranspOrdItemQuantityUnit` | `TranspOrdItemQuantityUnit` |
-| `TranspOrdItemGrossWeight` | `TranspOrdItemGrossWeight` |
-| `TranspOrdItemGrossWeightUnit` | `TranspOrdItemGrossWeightUnit` |
-| `TranspOrdItemGrossVolume` | `TranspOrdItemGrossVolume` |
-| `TranspOrdItemGrossVolumeUnit` | `TranspOrdItemGrossVolumeUnit` |
-| `TranspOrdItemNetWeight` | `TranspOrdItemNetWeight` |
-| `TranspOrdItemNetWeightUnit` | `TranspOrdItemNetWeightUnit` |
-| `TranspOrdItemDngrsGdsSts` | `TranspOrdItemDngrsGdsSts` |
-| `I_FreightUnitTP` | `FreightUnitItem._TransportationOrder as _FreightUnit : redirected to parent I_FreightUnitTP` |
-| `I_FreightUnitItemDocRefTP` | `FreightUnitItem._TranspOrdItemDocRef as _FreightUnitItemDocRef : redirected to composition child I_FreightUnitItemDocRefTP` |
-| `I_FrtUnitItemCommodityCodeTP` | `FreightUnitItem._TranspOrdItemCommodityCode as _FreightUnitItemCommodityCode : redirected to composition child I_FrtUnitItemCommodityCodeTP` |
-| `I_FrtUnitItemSerialNumberTP` | `FreightUnitItem._TranspOrdItemSerialNumber as _FreightUnitItemSerialNumber : redirected to composition child I_FrtUnitItemSerialNumberTP` |
-| `I_FreightUnitItemBatchTP` | `FreightUnitItem._TranspOrdItemBatch as _FreightUnitItemBatch : redirected to composition child I_FreightUnitItemBatchTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationOrderItemUUID` | ✓ | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `TranspOrdItem` |  | |  |  |
+| `TranspOrdItemType` |  | |  |  |
+| `TranspOrdItemCategory` |  | |  |  |
+| `TranspOrdItemParentItemUUID` |  | |  |  |
+| `TranspOrdItemDesc` |  | |  |  |
+| `IsMainCargoItem` |  | |  |  |
+| `TranspOrdItemSorting` |  | |  |  |
+| `TranspOrdItemShippingCondition` |  | |  |  |
+| `SourceStopUUID` |  | |  |  |
+| `DestinationStopUUID` |  | |  |  |
+| `ShipperUUID` |  | |  |  |
+| `Shipper` |  | |  |  |
+| `ShipperAddressID` |  | |  |  |
+| `ConsigneeUUID` |  | |  |  |
+| `Consignee` |  | |  |  |
+| `ConsigneeAddressID` |  | |  |  |
+| `FreightUnitUUID` |  | |  |  |
+| `TranspBaseDocument` |  | |  |  |
+| `TranspBaseDocumentType` |  | |  |  |
+| `TranspBaseDocumentItem` |  | |  |  |
+| `TranspBaseDocumentItemType` |  | |  |  |
+| `TranspOrdItemPackageID` |  | |  |  |
+| `ProductUUID` |  | |  |  |
+| `ProductID` |  | |  |  |
+| `MaterialFreightGroup` |  | |  |  |
+| `TransportationGroup` |  | |  |  |
+| `TranspOrdItmMinTemp` |  | |  |  |
+| `TranspOrdItmMaxTemp` |  | |  |  |
+| `TranspOrdItemTemperatureUnit` |  | |  |  |
+| `TranspOrdItemQuantity` |  | |  |  |
+| `TranspOrdItemQuantityUnit` |  | |  |  |
+| `TranspOrdItemGrossWeight` |  | |  |  |
+| `TranspOrdItemGrossWeightUnit` |  | |  |  |
+| `TranspOrdItemGrossVolume` |  | |  |  |
+| `TranspOrdItemGrossVolumeUnit` |  | |  |  |
+| `TranspOrdItemNetWeight` |  | |  |  |
+| `TranspOrdItemNetWeightUnit` |  | |  |  |
+| `TranspOrdItemDngrsGdsSts` |  | |  |  |
+| `I_FreightUnitTP` |  | |  | `FreightUnitItem._TransportationOrder as _FreightUnit : redirected to parent I_FreightUnitTP` |
+| `I_FreightUnitItemDocRefTP` |  | |  | `FreightUnitItem._TranspOrdItemDocRef as _FreightUnitItemDocRef : redirected to composition child I_FreightUnitItemDocRefTP` |
+| `I_FrtUnitItemCommodityCodeTP` |  | |  | `FreightUnitItem._TranspOrdItemCommodityCode as _FreightUnitItemCommodityCode : redirected to composition child I_FrtUnitItemCommodityCodeTP` |
+| `I_FrtUnitItemSerialNumberTP` |  | |  | `FreightUnitItem._TranspOrdItemSerialNumber as _FreightUnitItemSerialNumber : redirected to composition child I_FrtUnitItemSerialNumberTP` |
+| `I_FreightUnitItemBatchTP` |  | |  | `FreightUnitItem._TranspOrdItemBatch as _FreightUnitItemBatch : redirected to composition child I_FreightUnitItemBatchTP` |
 
 ## Source Code
 

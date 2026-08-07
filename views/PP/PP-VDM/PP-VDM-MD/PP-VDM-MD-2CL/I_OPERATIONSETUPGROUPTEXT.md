@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `txt.werks` |
-| key `OperationSetupGroupCategory` | `cast(txt.rfgrp as pph_rfgrp preserving type)` |
-| key `OperationSetupGroup` | `cast(txt.rfsch as pph_rfsch preserving type)` |
-| key `Language` | `txt.spras` |
-| `OperationSetupGroupName` | `txt.txt` |
-| `_Language` | *Association* |
-| `_Plant` | *Association* |
-| `_OperationSetupGroupCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `OperationSetupGroupCategory` | ✓ | |  | `cast(txt.rfgrp as pph_rfgrp preserving type)` |
+| `OperationSetupGroup` | ✓ | |  | `cast(txt.rfsch as pph_rfsch preserving type)` |
+| `Language` | ✓ | |  | `spras` |
+| `OperationSetupGroupName` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_OperationSetupGroupCategory` | | ✓ | | |
 
 ## Associations
 

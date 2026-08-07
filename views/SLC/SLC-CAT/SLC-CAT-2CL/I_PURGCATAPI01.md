@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurgCatUUID` | `PurgCatUUID` |
-| `PurchasingCategory` | `PurchasingCategory` |
-| `PurgCatName` | `PurgCatName` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `cast(CreatedByUser as /srmsmc/created_by )` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
-| `Language` | `Language` |
-| `PurgCatIsInactive` | `PurgCatIsInactive` |
-| `PurgCatTranslationOvrlStatus` | `PurgCatTranslationOvrlStatus` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurgCatUUID` | ✓ | |  |  |
+| `PurchasingCategory` |  | |  |  |
+| `PurgCatName` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  | `cast(CreatedByUser as /srmsmc/created_by )` |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  | `cast(LastChangedByUser as /srmsmc/last_changed_by )` |
+| `Language` |  | |  |  |
+| `PurgCatIsInactive` |  | |  |  |
+| `PurgCatTranslationOvrlStatus` |  | |  |  |
 
 ## Source Code
 

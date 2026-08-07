@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `BR_ICMSSTBaseDetermination` | `cast( substring(domvalue_l, 1, 1) as logbr_icst_base_det preserving type )` |
-| `BR_ICMSSTBaseDeterminationDesc` | `ddtext` |
-| `_BR_ICMSSTBaseDetermination` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `BR_ICMSSTBaseDetermination` | ✓ | |  | `cast( substring(domvalue_l, 1, 1) as logbr_icst_base_det preserving type )` |
+| `BR_ICMSSTBaseDeterminationDesc` |  | |  | `ddtext` |
+| `_BR_ICMSSTBaseDetermination` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

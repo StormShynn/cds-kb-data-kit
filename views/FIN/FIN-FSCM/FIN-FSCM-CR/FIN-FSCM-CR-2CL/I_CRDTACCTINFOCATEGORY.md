@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CrdtAcctInformationCategory` | `infocategory` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CrdtAcctInformationCategory` | ✓ | |  | `infocategory` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

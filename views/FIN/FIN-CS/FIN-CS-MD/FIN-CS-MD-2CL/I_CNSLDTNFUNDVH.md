@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialManagementArea` | `FinancialManagementArea` |
-| key `Fund` | `Fund` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialManagementArea` | ✓ | |  |  |
+| `Fund` | ✓ | |  |  |
 
 ## Source Code
 

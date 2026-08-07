@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinSGLErrorItemUUID` | `item_id` |
-| `Ledger` | `rldnr` |
-| `LedgerGroup` | `ldgrp` |
-| `CompanyCode` | `bukrs` |
-| `AccountingDocument` | `belnr` |
-| `FiscalYear` | `cast( gjahr as fis_gjahr_no_conv )` |
-| `PostingDate` | `budat` |
-| `GLAccount` | `hkont` |
-| `PartnerCompany` | `vbund` |
-| `ProfitCenter` | `prctr` |
-| `PartnerProfitCenter` | `pprctr` |
-| `CostCenter` | `kostl` |
-| `DocumentItemText` | `sgtxt` |
-| `FinancialServicesProductGroup` | `fs_product_group` |
-| `FinancialServicesBranch` | `branch_id` |
-| `FinancialDataSource` | `datasource_id` |
-| `CustomerSupplierIndustry` | `brsch` |
-| `CustomerGroup` | `kdgrp` |
-| `Country` | `landl` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinSGLErrorItemUUID` | ✓ | |  | `item_id` |
+| `Ledger` |  | |  | `rldnr` |
+| `LedgerGroup` |  | |  | `ldgrp` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `AccountingDocument` |  | |  | `belnr` |
+| `FiscalYear` |  | |  | `cast( gjahr as fis_gjahr_no_conv )` |
+| `PostingDate` |  | |  | `budat` |
+| `GLAccount` |  | |  | `hkont` |
+| `PartnerCompany` |  | |  | `vbund` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `PartnerProfitCenter` |  | |  | `pprctr` |
+| `CostCenter` |  | |  | `kostl` |
+| `DocumentItemText` |  | |  | `sgtxt` |
+| `FinancialServicesProductGroup` |  | |  | `fs_product_group` |
+| `FinancialServicesBranch` |  | |  | `branch_id` |
+| `FinancialDataSource` |  | |  | `datasource_id` |
+| `CustomerSupplierIndustry` |  | |  | `brsch` |
+| `CustomerGroup` |  | |  | `kdgrp` |
+| `Country` |  | |  | `landl` |
 
 ## Source Code
 

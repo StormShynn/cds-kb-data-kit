@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditControlArea` | `cast(kkber as farp_kkber preserving type)` |
-| `CreditControlAreaCurrency` | `cast( waers as kkbwr preserving type)` |
-| `_Text` | *Association* |
-| `_CreditControlArea2Segment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditControlArea` | ✓ | |  | `cast(kkber as farp_kkber preserving type)` |
+| `CreditControlAreaCurrency` |  | |  | `cast( waers as kkbwr preserving type)` |
+| `_Text` | | ✓ | | |
+| `_CreditControlArea2Segment` | | ✓ | | |
 
 ## Associations
 

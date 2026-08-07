@@ -28,135 +28,135 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentType` | `ServiceDocumentType` |
-| key `ServiceDocument` | `ServiceDocument` |
-| key `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `ServiceDocumentUUID` | `ServiceDocumentUUID` |
-| `ServiceDocumentDescription` | `ServiceDocumentDescription` |
-| `ServiceDocumentItemUUID` | `ServiceDocumentItemUUID` |
-| `ServiceDocumentItemObjectType` | `ServiceDocumentItemObjectType` |
-| `ParentServiceDocumentItemUUID` | `ParentServiceDocumentItemUUID` |
-| `ServiceDocumentItemDescription` | `ServiceDocumentItemDescription` |
-| `RefBusinessSolutionOrder` | `RefBusinessSolutionOrder` |
-| `RefBusinessSolutionOrderItem` | `RefBusinessSolutionOrderItem` |
-| `BillingDateTime` | `BillingDateTime` |
-| `BillingDocCreationDateTime` | `BillingDocCreationDateTime` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `ServiceDocumentItemPriority` | `ServiceDocumentItemPriority` |
-| `PostingDate` | `PostingDate` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `SalesOrganizationOrgUnitID` | `SalesOrganizationOrgUnitID` |
-| `SalesOfficeOrgUnitID` | `SalesOfficeOrgUnitID` |
-| `SalesGroupOrgUnitID` | `SalesGroupOrgUnitID` |
-| `SoldToPartyCountry` | `SoldToPartyCountry` |
-| `SoldToPartyRegion` | `SoldToPartyRegion` |
-| `SoldToParty` | `SoldToParty` |
-| `ServiceTeam` | `ServiceTeam` |
-| `ResponsibleEmployee` | `ResponsibleEmployee` |
-| `ServiceEmployee` | `ServiceEmployee` |
-| `ContactPerson` | `ContactPerson` |
-| `PayerParty` | `PayerParty` |
-| `BillToParty` | `BillToParty` |
-| `PaymentTerms` | `PaymentTerms` |
-| `ServiceDocumentItemStatus` | `ServiceDocumentItemStatus` |
-| `ServiceDocumentItemHasError` | `ServiceDocumentItemHasError` |
-| `SrvcDocItmIsReleasedForBilling` | `SrvcDocItmIsReleasedForBilling` |
-| `ServiceDocItemBillingStatus` | `ServiceDocItemBillingStatus` |
-| `ServiceDocumentItemIsOpen` | `ServiceDocumentItemIsOpen` |
-| `ServiceOrganization` | `ServiceOrganization` |
-| `ResponsibleServiceOrganization` | `ResponsibleServiceOrganization` |
-| `ServiceDocItemCreationDateTime` | `ServiceDocItemCreationDateTime` |
-| `ServiceDocItemChangedDateTime` | `ServiceDocItemChangedDateTime` |
-| `ServiceDocItemCreationDate` | `cast( tstmp_to_dats( ServiceDocItemCreationDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |
-| `ServiceDocItemChangedDate` | `cast( tstmp_to_dats( ServiceDocItemChangedDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |
-| `ServiceDocItemCreatedByUser` | `ServiceDocItemCreatedByUser` |
-| `ServiceDocItemChangedByUser` | `ServiceDocItemChangedByUser` |
-| `OriginallyRequestedProduct` | `OriginallyRequestedProduct` |
-| `ServiceDocumentItemQuantity` | `} ServiceDocumentItemQuantity` |
-| `ServiceDocItemQuantityUnit` | `ServiceDocItemQuantityUnit` |
-| `SrvcDocItemBaseQuantityUnit` | `SrvcDocItemBaseQuantityUnit` |
-| `ServiceDocItemCategory` | `ServiceDocItemCategory` |
-| `ServiceDocumentItemNetAmount` | `} ServiceDocumentItemNetAmount` |
-| `BillableControl` | `BillableControl` |
-| `BillingBlockReason` | `BillingBlockReason` |
-| `RequestedServiceStartDateTime` | `RequestedServiceStartDateTime` |
-| `RequestedServiceEndDateTime` | `RequestedServiceEndDateTime` |
-| `ServiceContrItemStartDateTime` | `ServiceContrItemStartDateTime` |
-| `ServiceContrItemEndDateTime` | `ServiceContrItemEndDateTime` |
-| `ServiceDocItemGrossAmount` | `} ServiceDocItemGrossAmount` |
-| `SettlementPeriodRuleUUID` | `SettlementPeriodRuleUUID` |
-| `BillingPlanBillingDateRuleUUID` | `BillingPlanBillingDateRuleUUID` |
-| `SalesOrganization` | `SalesOrganization` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `ServiceDuration` | `} ServiceDuration` |
-| `ServiceDocItemRejectionReason` | `ServiceDocItemRejectionReason` |
-| `ShipToParty` | `ShipToParty` |
-| `ServiceDocumentItemIsReleased` | `ServiceDocumentItemIsReleased` |
-| `ServiceDocumentItemIsRejected` | `ServiceDocumentItemIsRejected` |
-| `ResponseProfile` | `ResponseProfile` |
-| `ServiceProfile` | `ServiceProfile` |
-| `Language` | `Language` |
-| `ActualServiceDuration` | `} ActualServiceDuration` |
-| `ActualServiceDurationUnit` | `ActualServiceDurationUnit` |
-| `ServiceDurationUnit` | `ServiceDurationUnit` |
-| `TimeSheetOvertimeCategory` | `TimeSheetOvertimeCategory` |
-| `Industry` | `Industry` |
-| `SrvcContrItemRnwlDuration` | `} SrvcContrItemRnwlDuration` |
-| `SrvcContrItemRnwlDurationUnit` | `SrvcContrItemRnwlDurationUnit` |
-| `SrvcContrItemExtensionDuration` | `} SrvcContrItemExtensionDuration` |
-| `SrvcContrItemExtnDurationUnit` | `SrvcContrItemExtnDurationUnit` |
-| `_ServiceDocument` | *Association* |
-| `_BillingBlockReason` | *Association* |
-| `_BillingRequestItem` | *Association* |
-| `_BillToParty` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_PayerParty` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_ServiceDocItemBillingStatus` | *Association* |
-| `_ServiceDocItemCategory` | *Association* |
-| `_ServiceDocItemHasError` | *Association* |
-| `_ServiceDocItemPriority` | *Association* |
-| `_ServiceDocItemStatus` | *Association* |
-| `_SrvcDocItmLifecycleStatus` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_ServiceEmployee` | *Association* |
-| `_ServiceObjType` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_BaseUnit_2` | *Association* |
-| `_SalesUnit` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_ServiceProductList` | *Association* |
-| `_ServiceTeam` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_SrvcDocItemIsRelForBillgSts` | *Association* |
-| `_ServiceDocumentIsOpen` | *Association* |
-| `_FixedPrice` | *Association* |
-| `_StatusObjItemStatus` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_ActualServiceDurationUnit` | *Association* |
-| `_ServiceDurationUnit` | *Association* |
-| `_SrvcContrItemRnwlDurationUnit` | *Association* |
-| `_SrvcContrItemExtnDurationUnit` | *Association* |
-| `_ServiceDocOvertimeCat` | *Association* |
-| `_Industry` | *Association* |
-| `_ServiceDocItemRejectionReason` | *Association* |
-| `_SoldToPartyCountry` | *Association* |
-| `_SoldToPartyRegion` | *Association* |
-| `_SalesOrganizationOrgUnit` | *Association* |
-| `_SalesOfficeOrgUnit` | *Association* |
-| `_SalesGroupOrgUnit` | *Association* |
-| `_SalesOrganizationOrgUnit_2` | *Association* |
-| `_SalesOfficeOrgUnit_2` | *Association* |
-| `_SalesGroupOrgUnit_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentType` | ✓ | |  |  |
+| `ServiceDocument` | ✓ | |  |  |
+| `ServiceDocumentItem` | ✓ | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `ServiceDocumentUUID` |  | |  |  |
+| `ServiceDocumentDescription` |  | |  |  |
+| `ServiceDocumentItemUUID` |  | |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |
+| `ParentServiceDocumentItemUUID` |  | |  |  |
+| `ServiceDocumentItemDescription` |  | |  |  |
+| `RefBusinessSolutionOrder` |  | |  |  |
+| `RefBusinessSolutionOrderItem` |  | |  |  |
+| `BillingDateTime` |  | |  |  |
+| `BillingDocCreationDateTime` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `ServiceDocumentItemPriority` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |
+| `SoldToPartyCountry` |  | |  |  |
+| `SoldToPartyRegion` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ServiceTeam` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `ServiceEmployee` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `ServiceDocumentItemStatus` |  | |  |  |
+| `ServiceDocumentItemHasError` |  | |  |  |
+| `SrvcDocItmIsReleasedForBilling` |  | |  |  |
+| `ServiceDocItemBillingStatus` |  | |  |  |
+| `ServiceDocumentItemIsOpen` |  | |  |  |
+| `ServiceOrganization` |  | |  |  |
+| `ResponsibleServiceOrganization` |  | |  |  |
+| `ServiceDocItemCreationDateTime` |  | |  |  |
+| `ServiceDocItemChangedDateTime` |  | |  |  |
+| `ServiceDocItemCreationDate` |  | |  | `cast( tstmp_to_dats( ServiceDocItemCreationDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_created_on preserving type )` |
+| `ServiceDocItemChangedDate` |  | |  | `cast( tstmp_to_dats( ServiceDocItemChangedDateTime, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as crms4_changed_on preserving type )` |
+| `ServiceDocItemCreatedByUser` |  | |  |  |
+| `ServiceDocItemChangedByUser` |  | |  |  |
+| `OriginallyRequestedProduct` |  | |  |  |
+| `ServiceDocumentItemQuantity` |  | |  | `} ServiceDocumentItemQuantity` |
+| `ServiceDocItemQuantityUnit` |  | |  |  |
+| `SrvcDocItemBaseQuantityUnit` |  | |  |  |
+| `ServiceDocItemCategory` |  | |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceDocumentItemNetAmount` |
+| `BillableControl` |  | |  |  |
+| `BillingBlockReason` |  | |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |
+| `ServiceContrItemStartDateTime` |  | |  |  |
+| `ServiceContrItemEndDateTime` |  | |  |  |
+| `ServiceDocItemGrossAmount` |  | |  | `} ServiceDocItemGrossAmount` |
+| `SettlementPeriodRuleUUID` |  | |  |  |
+| `BillingPlanBillingDateRuleUUID` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `ServiceDuration` |  | |  | `} ServiceDuration` |
+| `ServiceDocItemRejectionReason` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `ServiceDocumentItemIsReleased` |  | |  |  |
+| `ServiceDocumentItemIsRejected` |  | |  |  |
+| `ResponseProfile` |  | |  |  |
+| `ServiceProfile` |  | |  |  |
+| `Language` |  | |  |  |
+| `ActualServiceDuration` |  | |  | `} ActualServiceDuration` |
+| `ActualServiceDurationUnit` |  | |  |  |
+| `ServiceDurationUnit` |  | |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |
+| `Industry` |  | |  |  |
+| `SrvcContrItemRnwlDuration` |  | |  | `} SrvcContrItemRnwlDuration` |
+| `SrvcContrItemRnwlDurationUnit` |  | |  |  |
+| `SrvcContrItemExtensionDuration` |  | |  | `} SrvcContrItemExtensionDuration` |
+| `SrvcContrItemExtnDurationUnit` |  | |  |  |
+| `_ServiceDocument` | | ✓ | | |
+| `_BillingBlockReason` | | ✓ | | |
+| `_BillingRequestItem` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_ServiceDocItemBillingStatus` | | ✓ | | |
+| `_ServiceDocItemCategory` | | ✓ | | |
+| `_ServiceDocItemHasError` | | ✓ | | |
+| `_ServiceDocItemPriority` | | ✓ | | |
+| `_ServiceDocItemStatus` | | ✓ | | |
+| `_SrvcDocItmLifecycleStatus` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_ServiceEmployee` | | ✓ | | |
+| `_ServiceObjType` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_BaseUnit_2` | | ✓ | | |
+| `_SalesUnit` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_ServiceProductList` | | ✓ | | |
+| `_ServiceTeam` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_SrvcDocItemIsRelForBillgSts` | | ✓ | | |
+| `_ServiceDocumentIsOpen` | | ✓ | | |
+| `_FixedPrice` | | ✓ | | |
+| `_StatusObjItemStatus` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_ActualServiceDurationUnit` | | ✓ | | |
+| `_ServiceDurationUnit` | | ✓ | | |
+| `_SrvcContrItemRnwlDurationUnit` | | ✓ | | |
+| `_SrvcContrItemExtnDurationUnit` | | ✓ | | |
+| `_ServiceDocOvertimeCat` | | ✓ | | |
+| `_Industry` | | ✓ | | |
+| `_ServiceDocItemRejectionReason` | | ✓ | | |
+| `_SoldToPartyCountry` | | ✓ | | |
+| `_SoldToPartyRegion` | | ✓ | | |
+| `_SalesOrganizationOrgUnit` | | ✓ | | |
+| `_SalesOfficeOrgUnit` | | ✓ | | |
+| `_SalesGroupOrgUnit` | | ✓ | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | |
 
 ## Associations
 

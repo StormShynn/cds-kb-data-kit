@@ -28,22 +28,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `StatryRptgEntity` | `srf_reporting_entity` |
-| `StatryRptCategory` | `srf_rep_cat_id` |
-| `StatryRptTaskStatus` | `srf_reporting_status` |
-| `StatryRptTaskStatusText` | `srf_task_status_text` |
-| `StatryRptTaskDueDate` | `srf_due_date` |
-| `StatryRptTaskPeriodStartDate` | `srf_rpg_period_start_date` |
-| `StatryRptTaskPeriodEndDate` | `srf_rpg_period_end_date` |
-| `StatryRptgReportingYear` | `srf_reporting_year` |
-| `StatryRptClassificationId` | `srf_classification_id` |
-| `StatryRptActivityPhase` | `srf_rep_cat_phase` |
-| `Country` | `land1` |
-| `Region` | `regio` |
-| `StatryRptAgencyID` | `srf_agency_id` |
-| `StatryRptIntegScenario` | `srf_ext_integration_scenario` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatryRptgEntity` |  | |  | `srf_reporting_entity` |
+| `StatryRptCategory` |  | |  | `srf_rep_cat_id` |
+| `StatryRptTaskStatus` |  | |  | `srf_reporting_status` |
+| `StatryRptTaskStatusText` |  | |  | `srf_task_status_text` |
+| `StatryRptTaskDueDate` |  | |  | `srf_due_date` |
+| `StatryRptTaskPeriodStartDate` |  | |  | `srf_rpg_period_start_date` |
+| `StatryRptTaskPeriodEndDate` |  | |  | `srf_rpg_period_end_date` |
+| `StatryRptgReportingYear` |  | |  | `srf_reporting_year` |
+| `StatryRptClassificationId` |  | |  | `srf_classification_id` |
+| `StatryRptActivityPhase` |  | |  | `srf_rep_cat_phase` |
+| `Country` |  | |  | `land1` |
+| `Region` |  | |  | `regio` |
+| `StatryRptAgencyID` |  | |  | `srf_agency_id` |
+| `StatryRptIntegScenario` |  | |  | `srf_ext_integration_scenario` |
 
 ## Source Code
 

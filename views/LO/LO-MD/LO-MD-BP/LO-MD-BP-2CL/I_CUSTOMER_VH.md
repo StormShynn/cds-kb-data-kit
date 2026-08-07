@@ -31,38 +31,38 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `I_Customer.Customer` |
-| `OrganizationBPName1` | `I_Customer.OrganizationBPName1` |
-| `BusinessPartnerName1` | `I_Customer.BusinessPartnerName1` |
-| `OrganizationBPName2` | `I_Customer.OrganizationBPName2` |
-| `BusinessPartnerName2` | `I_Customer.BusinessPartnerName2` |
-| `Country` | `I_Customer.Country` |
-| `CityName` | `I_Customer.CityName` |
-| `BPAddrCityName` | `I_Customer.BPAddrCityName` |
-| `StreetName` | `I_Customer.StreetName` |
-| `BPAddrStreetName` | `I_Customer.BPAddrStreetName` |
-| `PostalCode` | `I_Customer.PostalCode` |
-| `CustomerName` | `I_Customer.CustomerName` |
-| `BPCustomerName` | `I_Customer.BPCustomerName` |
-| `CustomerAccountGroup` | `I_Customer.CustomerAccountGroup` |
-| `AuthorizationGroup` | `I_Customer.AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `I_Customer.IsBusinessPurposeCompleted` |
-| `IsCompetitor` | `I_Customer.IsCompetitor` |
-| `BusinessPartner` | `I_Customer._CustomerToBusinessPartner._BusinessPartner.BusinessPartner` |
-| `BusinessPartnerType` | `I_Customer._CustomerToBusinessPartner._BusinessPartner.BusinessPartnerType` |
-| `DataControllerSet` | `I_Customer.DataControllerSet` |
-| `DataController1` | `I_Customer.DataController1` |
-| `DataController2` | `I_Customer.DataController2` |
-| `DataController3` | `I_Customer.DataController3` |
-| `DataController4` | `I_Customer.DataController4` |
-| `DataController5` | `I_Customer.DataController5` |
-| `DataController6` | `I_Customer.DataController6` |
-| `DataController7` | `I_Customer.DataController7` |
-| `DataController8` | `I_Customer.DataController8` |
-| `DataController9` | `I_Customer.DataController9` |
-| `DataController10` | `I_Customer.DataController10` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  |  |
+| `OrganizationBPName1` |  | |  |  |
+| `BusinessPartnerName1` |  | |  |  |
+| `OrganizationBPName2` |  | |  |  |
+| `BusinessPartnerName2` |  | |  |  |
+| `Country` |  | |  |  |
+| `CityName` |  | |  |  |
+| `BPAddrCityName` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `BPAddrStreetName` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `CustomerName` |  | |  |  |
+| `BPCustomerName` |  | |  |  |
+| `CustomerAccountGroup` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `IsCompetitor` |  | |  |  |
+| `BusinessPartner` |  | |  |  |
+| `BusinessPartnerType` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
 
 ## Source Code
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseOrderHistCategory` | `bewtp` |
-| key `Language` | `spras` |
-| `PurchaseOrderHistCategName` | `bewtl` |
-| `_Language` | *Association* |
-| `_PurchaseOrderHistCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseOrderHistCategory` | ✓ | |  | `bewtp` |
+| `Language` | ✓ | |  | `spras` |
+| `PurchaseOrderHistCategName` |  | |  | `bewtl` |
+| `_Language` | | ✓ | | |
+| `_PurchaseOrderHistCategory` | | ✓ | | |
 
 ## Associations
 

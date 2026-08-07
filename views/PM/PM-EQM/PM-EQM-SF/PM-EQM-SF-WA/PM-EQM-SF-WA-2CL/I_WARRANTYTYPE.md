@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WarrantyType` | `gaart` |
-| `WarrantyCategory` | `gatyp` |
-| `NumberRange` | `numkr` |
-| `_WarrantyTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WarrantyType` | ✓ | |  | `gaart` |
+| `WarrantyCategory` |  | |  | `gatyp` |
+| `NumberRange` |  | |  | `numkr` |
+| `_WarrantyTypeText` | | ✓ | | |
 
 ## Associations
 

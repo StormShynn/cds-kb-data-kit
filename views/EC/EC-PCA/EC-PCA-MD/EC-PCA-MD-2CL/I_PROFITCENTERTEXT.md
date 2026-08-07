@@ -32,18 +32,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cepct.spras` |
-| key `ControllingArea` | `cepct.kokrs` |
-| key `ProfitCenter` | `cepct.prctr` |
-| key `ValidityEndDate` | `cepct.datbi` |
-| `ValidityStartDate` | `datab` |
-| `ProfitCenterName` | `cast (ktext as fis_prctr_shorttext preserving type)` |
-| `ProfitCenterLongName` | `cast (ltext as fac_prctr_ltext preserving type )` |
-| `_ControllingAreaText` | *Association* |
-| `_Language` | *Association* |
-| `_ControllingArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ControllingArea` | ✓ | |  | `kokrs` |
+| `ProfitCenter` | ✓ | |  | `prctr` |
+| `ValidityEndDate` | ✓ | |  | `datbi` |
+| `ValidityStartDate` |  | |  | `datab` |
+| `ProfitCenterName` |  | |  | `cast (ktext as fis_prctr_shorttext preserving type)` |
+| `ProfitCenterLongName` |  | |  | `cast (ltext as fac_prctr_ltext preserving type )` |
+| `_ControllingAreaText` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
 
 ## Associations
 

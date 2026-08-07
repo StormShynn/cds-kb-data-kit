@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnFSItemCrcyTranslation` | `cast( _FSItemAttribValue.CnsldtnFSItemAttributeValue as fincs_fsitemcrcytranslation preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnFSItemCrcyTranslation` | ✓ | |  | `cast( _FSItemAttribValue.CnsldtnFSItemAttributeValue as fincs_fsitemcrcytranslation preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

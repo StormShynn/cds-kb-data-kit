@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContractAccountCategory` | `ContractAccountCategory` |
-| key `CAApplicationArea` | `CAApplicationArea` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccountCategory` | ✓ | |  |  |
+| `CAApplicationArea` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

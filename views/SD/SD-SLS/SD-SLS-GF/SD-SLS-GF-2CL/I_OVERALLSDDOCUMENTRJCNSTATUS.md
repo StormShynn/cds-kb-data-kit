@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OverallSDDocumentRejectionSts` | `cast (substring(dd07l.domvalue_l, 1, 1) as abstk preserving type )` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OverallSDDocumentRejectionSts` | ✓ | |  | `cast (substring(dd07l.domvalue_l, 1, 1) as abstk preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

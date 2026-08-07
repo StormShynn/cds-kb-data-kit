@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `_MaintenanceObjectListItem.Equipment` |
-| key `PurchaseRequisition` | `_MaintObjListPurchaseReqn.PurchaseRequisition` |
-| key `PurchaseRequisitionItem` | `_MaintObjListPurchaseReqn.PurchaseRequisitionItem` |
-| `Material` | `_MaintenanceObjectListItem.Material` |
-| `SerialNumber` | `_MaintenanceObjectListItem.SerialNumber` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
+| `PurchaseRequisition` | ✓ | | `_MaintObjListPurchaseReqn` | `PurchaseRequisition` |
+| `PurchaseRequisitionItem` | ✓ | | `_MaintObjListPurchaseReqn` | `PurchaseRequisitionItem` |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
 
 ## Source Code
 

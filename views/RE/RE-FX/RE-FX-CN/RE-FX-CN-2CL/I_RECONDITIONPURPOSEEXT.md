@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REExtConditionPurpose` | `condpurposeext` |
-| `REIntConditionPurpose` | `condpurposeint` |
-| `REPrpsIsAllowedForRentalObject` | `cppreroal` |
-| `REPrpsIsAllowedForContract` | `cpprecnal` |
-| `REPurposeIsCopiedToObject` | `cpprero` |
-| `REPurposeIsCopiedToContract` | `cpprecn` |
-| `RETakeOvrToRentalObjIsPossible` | `cptakeover` |
-| `_Text` | *Association* |
-| `_REConditionPurposeInt` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REExtConditionPurpose` | ✓ | |  | `condpurposeext` |
+| `REIntConditionPurpose` |  | |  | `condpurposeint` |
+| `REPrpsIsAllowedForRentalObject` |  | |  | `cppreroal` |
+| `REPrpsIsAllowedForContract` |  | |  | `cpprecnal` |
+| `REPurposeIsCopiedToObject` |  | |  | `cpprero` |
+| `REPurposeIsCopiedToContract` |  | |  | `cpprecn` |
+| `RETakeOvrToRentalObjIsPossible` |  | |  | `cptakeover` |
+| `_Text` | | ✓ | | |
+| `_REConditionPurposeInt` | | ✓ | | |
 
 ## Associations
 

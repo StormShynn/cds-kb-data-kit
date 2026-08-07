@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| key `MRPArea` | `MRPArea` |
-| key `PlndIndepRqmtType` | `PlndIndepRqmtType` |
-| key `PlndIndepRqmtVersion` | `PlndIndepRqmtVersion` |
-| key `RequirementPlan` | `RequirementPlan` |
-| key `RequirementSegment` | `RequirementSegment` |
-| `RequirementPlanIsExternal` | `RequirementPlanIsExternal` |
-| `PlndIndepRqmtInternalID` | `PlndIndepRqmtInternalID` |
-| `PlndIndepRqmtIsActive` | `PlndIndepRqmtIsActive` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `WBSElement` | `WBSElement` |
-| `PlndIndepRqmtAcctAssgmtCat` | `PlndIndepRqmtAcctAssgmtCat` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `InventorySpecialStockValnType` | `InventorySpecialStockValnType` |
-| `PlndIndepRqmtOwningApplication` | `PlndIndepRqmtOwningApplication` |
-| `PlndIndepRqmtLastChgdDateTime` | `PlndIndepRqmtLastChgdDateTime` |
-| `_PlndIndepRqmtItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `MRPArea` | ✓ | |  |  |
+| `PlndIndepRqmtType` | ✓ | |  |  |
+| `PlndIndepRqmtVersion` | ✓ | |  |  |
+| `RequirementPlan` | ✓ | |  |  |
+| `RequirementSegment` | ✓ | |  |  |
+| `RequirementPlanIsExternal` |  | |  |  |
+| `PlndIndepRqmtInternalID` |  | |  |  |
+| `PlndIndepRqmtIsActive` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElement` |  | |  |  |
+| `PlndIndepRqmtAcctAssgmtCat` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `InventorySpecialStockValnType` |  | |  |  |
+| `PlndIndepRqmtOwningApplication` |  | |  |  |
+| `PlndIndepRqmtLastChgdDateTime` |  | |  |  |
+| `_PlndIndepRqmtItem` | | ✓ | | |
 
 ## Source Code
 

@@ -31,57 +31,57 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterialCategory` | `bom_header.BillOfMaterialCategory` |
-| key `BillOfMaterialVariantUsage` | `bom_header.BillOfMaterialVariantUsage` |
-| key `BillOfMaterial` | `bom_header.BillOfMaterial` |
-| key `BillOfMaterialVariant` | `bom_header.BillOfMaterialVariant` |
-| key `BillOfMaterialVersion` | `bom_header.BillOfMaterialVersion` |
-| key `BOMHeaderInternalChangeCount` | `bom_header.BOMHeaderInternalChangeCount` |
-| `IsMultipleBOMAlt` | `bom_header.IsMultipleBOMAlt` |
-| `BOMPrioritizedVersion` | `bom_header.BOMPrioritizedVersion` |
-| `BOMExplosionApplication` | `bom_header.BOMExplosionApplication` |
-| `BOMUsagePriority` | `bom_header.BOMUsagePriority` |
-| `BillOfMaterialAuthsnGrp` | `bom_header.BillOfMaterialAuthsnGrp` |
-| `BOMVersionStatus` | `bom_header.BOMVersionStatus` |
-| `IsVersionBillOfMaterial` | `bom_header.IsVersionBillOfMaterial` |
-| `IsLatestBOMVersion` | `bom_header.IsLatestBOMVersion` |
-| `BOMIsConfigurable` | `bom_header.BOMIsConfigurable` |
-| `IsConfiguredMaterial` | `bom_header.IsConfiguredMaterial` |
-| `BOMTechnicalType` | `cast ( bom_header.BOMTechnicalType as tetyp_d preserving type)` |
-| `BOMGroup` | `bom_header.BOMGroup` |
-| `BOMHeaderText` | `bom_header.BOMHeaderText` |
-| `BOMAlternativeText` | `bom_header.BOMAlternativeText` |
-| `BillOfMaterialStatus` | `bom_header.BillOfMaterialStatus` |
-| `HeaderValidityStartDate` | `bom_header.HeaderValidityStartDate` |
-| `HeaderValidityEndDate` | `bom_header.HeaderValidityEndDate` |
-| `EngineeringChangeDocument` | `bom_header.EngineeringChangeDocument` |
-| `ChgToEngineeringChgDocument` | `bom_header.ChgToEngineeringChgDocument` |
-| `IsMarkedForDeletion` | `bom_header.IsMarkedForDeletion` |
-| `IsALE` | `bom_header.IsALE` |
-| `BOMHeaderBaseUnit` | `bom_header.BOMHeaderBaseUnit` |
-| `BOMHeaderQuantityInBaseUnit` | `bom_header.BOMHeaderQuantityInBaseUnit` |
-| `RecordCreationDate` | `bom_header.RecordCreationDate` |
-| `LastChangeDate` | `bom_header.LastChangeDate` |
-| `CreatedByUser` | `bom_header.CreatedByUser` |
-| `LastChangedByUser` | `bom_header.LastChangedByUser` |
-| `BOMIsToBeDeleted` | `bom_header.BOMIsToBeDeleted` |
-| `DocumentIsCreatedByCAD` | `bom_header.DocumentIsCreatedByCAD` |
-| `LaboratoryOrDesignOffice` | `bom_header.LaboratoryOrDesignOffice` |
-| `LastChangeDateTime` | `bom_header.LastChangeDateTime` |
-| `BOMAssetNtwkHndovrIsRelevant` | `bom_header.BOMAssetNtwkHndovrIsRelevant` |
-| `BOMPredecessorVersion` | `bom_header.BOMPredecessorVersion` |
-| `_BillOfMaterialItem` | *Association* |
-| `_Mast` | *Association* |
-| `_Dost` | *Association* |
-| `_Prst` | *Association* |
-| `_Kdst` | *Association* |
-| `_Eqst` | *Association* |
-| `_Tpst` | *Association* |
-| `_Stst` | *Association* |
-| `_BillOfMaterialVariantUsage` | *Association* |
-| `_UnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterialCategory` | ✓ | |  |  |
+| `BillOfMaterialVariantUsage` | ✓ | |  |  |
+| `BillOfMaterial` | ✓ | |  |  |
+| `BillOfMaterialVariant` | ✓ | |  |  |
+| `BillOfMaterialVersion` | ✓ | |  |  |
+| `BOMHeaderInternalChangeCount` | ✓ | |  |  |
+| `IsMultipleBOMAlt` |  | |  |  |
+| `BOMPrioritizedVersion` |  | |  |  |
+| `BOMExplosionApplication` |  | |  |  |
+| `BOMUsagePriority` |  | |  |  |
+| `BillOfMaterialAuthsnGrp` |  | |  |  |
+| `BOMVersionStatus` |  | |  |  |
+| `IsVersionBillOfMaterial` |  | |  |  |
+| `IsLatestBOMVersion` |  | |  |  |
+| `BOMIsConfigurable` |  | |  |  |
+| `IsConfiguredMaterial` |  | |  |  |
+| `BOMTechnicalType` |  | |  | `cast ( bom_header.BOMTechnicalType as tetyp_d preserving type)` |
+| `BOMGroup` |  | |  |  |
+| `BOMHeaderText` |  | |  |  |
+| `BOMAlternativeText` |  | |  |  |
+| `BillOfMaterialStatus` |  | |  |  |
+| `HeaderValidityStartDate` |  | |  |  |
+| `HeaderValidityEndDate` |  | |  |  |
+| `EngineeringChangeDocument` |  | |  |  |
+| `ChgToEngineeringChgDocument` |  | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `IsALE` |  | |  |  |
+| `BOMHeaderBaseUnit` |  | |  |  |
+| `BOMHeaderQuantityInBaseUnit` |  | |  |  |
+| `RecordCreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `BOMIsToBeDeleted` |  | |  |  |
+| `DocumentIsCreatedByCAD` |  | |  |  |
+| `LaboratoryOrDesignOffice` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `BOMAssetNtwkHndovrIsRelevant` |  | |  |  |
+| `BOMPredecessorVersion` |  | |  |  |
+| `_BillOfMaterialItem` | | ✓ | | |
+| `_Mast` | | ✓ | | |
+| `_Dost` | | ✓ | | |
+| `_Prst` | | ✓ | | |
+| `_Kdst` | | ✓ | | |
+| `_Eqst` | | ✓ | | |
+| `_Tpst` | | ✓ | | |
+| `_Stst` | | ✓ | | |
+| `_BillOfMaterialVariantUsage` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
 
 ## Associations
 

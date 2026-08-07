@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnFSItemCashFlow` | `_CnsldtnFSItemCashFlow.CnsldtnFSItemCashFlow` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnFSItemCashFlow` | ✓ | | `_CnsldtnFSItemCashFlow` | `CnsldtnFSItemCashFlow` |
 
 ## Source Code
 

@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyNodeText.Language` |
-| key `ConsolidationChartOfAccounts` | `ConsolidationChartOfAccounts` |
-| key `CnsldtnFSItemHierarchy` | `cast( substring(_HierarchyNodeText.UniversalHierarchy, 9, 10 ) as fincs_fsitemhierarchy preserving type )` |
-| key `HierarchyNode` | `_HierarchyNodeText.HierarchyNode` |
-| key `ValidityEndDate` | `_HierarchyNodeText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyNodeText.ValidityStartDate` |
-| `ParentNode` | `_HierarchyNodeText.ParentNode` |
-| `HierarchyVersion` | `_HierarchyNodeText.HierarchyVersion` |
-| `HierarchyNodeText` | `_HierarchyNodeText.HierarchyNodeText` |
-| `_Language` | *Association* |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyNodeText` | `Language` |
+| `ConsolidationChartOfAccounts` | ✓ | |  |  |
+| `CnsldtnFSItemHierarchy` | ✓ | |  | `cast( substring(_HierarchyNodeText.UniversalHierarchy, 9, 10 ) as fincs_fsitemhierarchy preserving type )` |
+| `HierarchyNode` | ✓ | | `_HierarchyNodeText` | `HierarchyNode` |
+| `ValidityEndDate` | ✓ | | `_HierarchyNodeText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyNodeText` | `ValidityStartDate` |
+| `ParentNode` |  | | `_HierarchyNodeText` | `ParentNode` |
+| `HierarchyVersion` |  | | `_HierarchyNodeText` | `HierarchyVersion` |
+| `HierarchyNodeText` |  | | `_HierarchyNodeText` | `HierarchyNodeText` |
+| `_Language` | | ✓ | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

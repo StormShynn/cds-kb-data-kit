@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPromiseToPayWthdrwlReason` | `pprsw` |
-| key `Language` | `spras` |
-| `CAPrmsToPayWthdrwlReasonName` | `txt50` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` |
+| `Language` | ✓ | |  | `spras` |
+| `CAPrmsToPayWthdrwlReasonName` |  | |  | `txt50` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

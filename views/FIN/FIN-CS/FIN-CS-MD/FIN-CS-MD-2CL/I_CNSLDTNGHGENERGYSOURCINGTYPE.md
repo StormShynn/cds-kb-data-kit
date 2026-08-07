@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGEnergySourcingType` | `cast( _Source.GHGEnergySourcingType as fincs_ghgenergysourcingtype preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGEnergySourcingType` | ✓ | |  | `cast( _Source.GHGEnergySourcingType as fincs_ghgenergysourcingtype preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

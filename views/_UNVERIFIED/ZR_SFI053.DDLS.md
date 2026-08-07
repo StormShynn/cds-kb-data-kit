@@ -39,17 +39,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `_JournalEntryItem.CompanyCode` |
-| key `FiscalYear` | `$parameters.p_FiscalYear` |
-| key `FiscalPeriod` | `$parameters.p_FiscalPeriod` |
-| key `PartnerCompany` | `_JournalEntryItem.PartnerCompany` |
-| key `Item` | `_Config.item` |
-| key `TransactionCurrency` | `_JournalEntryItem.TransactionCurrency` |
-| key `GlobalCurrency` | `_JournalEntryItem.GlobalCurrency` |
-| `TotalAmount` | `} sum( _JournalEntryItem.AmountInTransactionCurrency )` |
-| `TotalAmountGlobal` | `} sum( _JournalEntryItem.AmountInGlobalCurrency )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | | `_JournalEntryItem` | `CompanyCode` |
+| `FiscalYear` | ✓ | |  | `$parameters.p_FiscalYear` |
+| `FiscalPeriod` | ✓ | |  | `$parameters.p_FiscalPeriod` |
+| `PartnerCompany` | ✓ | | `_JournalEntryItem` | `PartnerCompany` |
+| `Item` | ✓ | | `_Config` | `item` |
+| `TransactionCurrency` | ✓ | | `_JournalEntryItem` | `TransactionCurrency` |
+| `GlobalCurrency` | ✓ | | `_JournalEntryItem` | `GlobalCurrency` |
+| `TotalAmount` |  | |  | `} sum( _JournalEntryItem.AmountInTransactionCurrency )` |
+| `TotalAmountGlobal` |  | |  | `} sum( _JournalEntryItem.AmountInGlobalCurrency )` |
 
 ## Source Code
 

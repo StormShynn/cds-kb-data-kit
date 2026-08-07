@@ -27,22 +27,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspSubsetFieldCombination` | `tq79t.slwbez` |
-| key `Language` | `tq79t.sprache` |
-| `InspSubsetFldCombinationTxt` | `tq79t.kurztext` |
-| `InspSubsetMaterialSampleName` | `tq79t.phynrslw` |
-| `InspSubsetEquipmentName` | `tq79t.equnrslw` |
-| `InspSubsetFuncnlLocName` | `tq79t.tplnrslw` |
-| `InspSubsetShopFloorItemName` | `tq79t.sfi_id_slw` |
-| `InspSubsetShortTxtFieldName` | `tq79t.userc1slw` |
-| `InspSubsetLongTxtFieldName` | `tq79t.userc2slw` |
-| `InspSubsetDateFieldName` | `tq79t.userd1slw` |
-| `InspSubsetShortNmbrFieldName` | `tq79t.usern1slw` |
-| `InspSubsetLongNmbrFieldName` | `tq79t.usern2slw` |
-| `InspSubsetTimeFieldName` | `tq79t.usert1slw` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspSubsetFieldCombination` | ✓ | |  | `slwbez` |
+| `Language` | ✓ | |  | `sprache` |
+| `InspSubsetFldCombinationTxt` |  | |  | `kurztext` |
+| `InspSubsetMaterialSampleName` |  | |  | `phynrslw` |
+| `InspSubsetEquipmentName` |  | |  | `equnrslw` |
+| `InspSubsetFuncnlLocName` |  | |  | `tplnrslw` |
+| `InspSubsetShopFloorItemName` |  | |  | `sfi_id_slw` |
+| `InspSubsetShortTxtFieldName` |  | |  | `userc1slw` |
+| `InspSubsetLongTxtFieldName` |  | |  | `userc2slw` |
+| `InspSubsetDateFieldName` |  | |  | `userd1slw` |
+| `InspSubsetShortNmbrFieldName` |  | |  | `usern1slw` |
+| `InspSubsetLongNmbrFieldName` |  | |  | `usern2slw` |
+| `InspSubsetTimeFieldName` |  | |  | `usert1slw` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

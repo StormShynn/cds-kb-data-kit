@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( sufndd_ghg_catt.langu as spras preserving type )` |
-| key `GHGCategory` | `sufndd_ghg_catt.id` |
-| `GHGCategoryName` | `cast( sufndd_ghg_catt.name as sufnd_vdm_ghgcategoryname preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( sufndd_ghg_catt.langu as spras preserving type )` |
+| `GHGCategory` | ✓ | |  | `id` |
+| `GHGCategoryName` |  | |  | `cast( sufndd_ghg_catt.name as sufnd_vdm_ghgcategoryname preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

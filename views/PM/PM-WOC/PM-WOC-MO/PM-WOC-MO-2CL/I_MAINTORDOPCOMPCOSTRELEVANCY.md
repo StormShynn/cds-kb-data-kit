@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintOrdOpCompCostingRelevancy` | `selkz` |
-| `_MaintOrdOpCompCostRelevancyT` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintOrdOpCompCostingRelevancy` | ✓ | |  | `selkz` |
+| `_MaintOrdOpCompCostRelevancyT` | | ✓ | | |
 
 ## Associations
 

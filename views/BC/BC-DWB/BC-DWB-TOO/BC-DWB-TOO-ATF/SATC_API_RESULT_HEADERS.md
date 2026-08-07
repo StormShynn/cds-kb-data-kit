@@ -28,40 +28,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ResultId` | `ResultId` |
-| `IsActiveResult` | `IsActiveResult` |
-| `IsInBaseline` | `IsInBaseline` |
-| `IsCentralRun` | `IsCentralRun` |
-| `RunSeries` | `RunSeries` |
-| `Title` | `Title` |
-| `CountPrio1` | `CountPrio1` |
-| `CountPrio2` | `CountPrio2` |
-| `CountPrio3` | `CountPrio3` |
-| `CountCheckFailure` | `CountCheckFailure` |
-| `ScheduledBy` | `ScheduledBy` |
-| `ScheduledOnTimestamp` | `ScheduledOnTimestamp` |
-| `SystemId` | `SystemId` |
-| `ValidToTimestamp` | `ValidToTimestamp` |
-| `ObjectProvider` | `ObjectProvider` |
-| `ResultAnnotation` | `ResultAnnotation` |
-| `AddedToBaselineBy` | `AddedToBaselineBy` |
-| `CheckVariant` | `CheckVariant` |
-| `Configuration` | `Configuration` |
-| `PseudoCommentPragmaHandling` | `cast( PseudoCommentPragmaHandling as I_SATC_API_PCPH preserving type )` |
-| `ChangedOnTimestamp` | `ChangedOnTimestamp` |
-| `UniqueSystemId` | `UniqueSystemId` |
-| `IsComplete` | `IsComplete` |
-| `IsTransient` | `IsTransient` |
-| `IsMassTest` | `IsMassTest` |
-| `IsComposite` | `IsComposite` |
-| `IsReworked` | `IsReworked` |
-| `IsImported` | `IsImported` |
-| `ScheduledSystemId` | `ScheduledSystemId` |
-| `ProjectId` | `ProjectId` |
-| `ExecutionId` | `ExecutionId` |
-| `ScheduledClient` | `ScheduledClient` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ResultId` | ✓ | |  |  |
+| `IsActiveResult` |  | |  |  |
+| `IsInBaseline` |  | |  |  |
+| `IsCentralRun` |  | |  |  |
+| `RunSeries` |  | |  |  |
+| `Title` |  | |  |  |
+| `CountPrio1` |  | |  |  |
+| `CountPrio2` |  | |  |  |
+| `CountPrio3` |  | |  |  |
+| `CountCheckFailure` |  | |  |  |
+| `ScheduledBy` |  | |  |  |
+| `ScheduledOnTimestamp` |  | |  |  |
+| `SystemId` |  | |  |  |
+| `ValidToTimestamp` |  | |  |  |
+| `ObjectProvider` |  | |  |  |
+| `ResultAnnotation` |  | |  |  |
+| `AddedToBaselineBy` |  | |  |  |
+| `CheckVariant` |  | |  |  |
+| `Configuration` |  | |  |  |
+| `PseudoCommentPragmaHandling` |  | |  | `cast( PseudoCommentPragmaHandling as I_SATC_API_PCPH preserving type )` |
+| `ChangedOnTimestamp` |  | |  |  |
+| `UniqueSystemId` |  | |  |  |
+| `IsComplete` |  | |  |  |
+| `IsTransient` |  | |  |  |
+| `IsMassTest` |  | |  |  |
+| `IsComposite` |  | |  |  |
+| `IsReworked` |  | |  |  |
+| `IsImported` |  | |  |  |
+| `ScheduledSystemId` |  | |  |  |
+| `ProjectId` |  | |  |  |
+| `ExecutionId` |  | |  |  |
+| `ScheduledClient` |  | |  |  |
 
 ## Source Code
 

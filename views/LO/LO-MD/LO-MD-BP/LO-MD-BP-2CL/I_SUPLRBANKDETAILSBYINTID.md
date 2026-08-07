@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `lifnr` |
-| key `BPBankAccountInternalID` | `bvtyp` |
-| `BankCountry` | `banks` |
-| `Bank` | `bankl` |
-| `BankAccount` | `bankn` |
-| `BankAccountHolderName` | `koinh` |
-| `BankControlKey` | `bkont` |
-| `AuthorizationGroup` | `_Supplier.AuthorizationGroup` |
-| `_Bank` | *Association* |
-| `_Supplier` | *Association* |
-| `_Country` | *Association* |
-| `_BankAccount` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `lifnr` |
+| `BPBankAccountInternalID` | ✓ | |  | `bvtyp` |
+| `BankCountry` |  | |  | `banks` |
+| `Bank` |  | |  | `bankl` |
+| `BankAccount` |  | |  | `bankn` |
+| `BankAccountHolderName` |  | |  | `koinh` |
+| `BankControlKey` |  | |  | `bkont` |
+| `AuthorizationGroup` |  | | `_Supplier` | `AuthorizationGroup` |
+| `_Bank` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Country` | | ✓ | | |
+| `_BankAccount` | | ✓ | | |
 
 ## Associations
 

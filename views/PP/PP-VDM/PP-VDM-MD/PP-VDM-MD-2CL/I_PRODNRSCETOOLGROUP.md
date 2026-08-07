@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionResourceToolGroup` | `cast(fgrua as vdm_prtgroup preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionResourceToolGroup` | ✓ | |  | `cast(fgrua as vdm_prtgroup preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

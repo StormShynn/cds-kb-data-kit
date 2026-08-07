@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FunctionalLocation` | `cast(Valuation.ClfnObjectID as vdm_eam_tplnr )` |
-| key `ClassType` | `Valuation.ClassType` |
-| key `ClfnCharcValuePositionNumber` | `Valuation.CharcValuePositionNumber` |
-| key `CharcInternalID` | `Valuation.CharcInternalID` |
-| `ClfnObjectID` | `Valuation.ClfnObjectID` |
-| `FunctionalLocationLabelName` | `_FunctionalLocation._FunctionalLocationLabel.FunctionalLocationLabelName` |
-| `$session.system_date).Characteristic` | `Valuation._Characteristic(P_KeyDate: $session.system_date).Characteristic` |
-| `$session.system_date).CharcDataType` | `Valuation._Characteristic(P_KeyDate: $session.system_date).CharcDataType` |
-| `KeyDate` | `$session.system_date` |
-| `ChangeNumber` | `Valuation.ChangeNumber` |
-| `CharcValueIntervalType` | `Valuation.CharcValueDependency` |
-| `CharcValue` | `Valuation.CharcValue` |
-| `CharcFromNumericValue` | `Valuation.CharcFromNumericValue` |
-| `CharcFromNumericValueUnit` | `Valuation.CharcFromNumericValueUnit` |
-| `CharcToNumericValue` | `Valuation.CharcToNumericValue` |
-| `CharcToNumericValueUnit` | `Valuation.CharcToNumericValueUnit` |
-| `CharcFromDecimalValue` | `Valuation.CharcFromDecimalValue` |
-| `CharcToDecimalValue` | `Valuation.CharcToDecimalValue` |
-| `CharcFromAmount` | `Valuation.CharcFromAmount` |
-| `CharcToAmount` | `Valuation.CharcToAmount` |
-| `Currency` | `Valuation.Currency` |
-| `CharcFromDate` | `Valuation.CharcFromDate` |
-| `CharcToDate` | `Valuation.CharcToDate` |
-| `CharcFromTime` | `Valuation.CharcFromTime` |
-| `CharcToTime` | `Valuation.CharcToTime` |
-| `LastChangeDateTime` | `_FunctionalLocation.LastChangeDateTime` |
-| `FunctionalLocationCategory` | `_FunctionalLocation.FunctionalLocationCategory` |
-| `MaintenancePlanningPlant` | `_FunctionalLocation.MaintenancePlanningPlant` |
-| `CompanyCode` | `_FunctionalLocation._LocationAccountAssignment.CompanyCode` |
-| `MaintenancePlant` | `_FunctionalLocation._LocationAccountAssignment.MaintenancePlant` |
-| `_FunctionalLocation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FunctionalLocation` | ✓ | |  | `cast(Valuation.ClfnObjectID as vdm_eam_tplnr )` |
+| `ClassType` | ✓ | |  |  |
+| `ClfnCharcValuePositionNumber` | ✓ | |  | `CharcValuePositionNumber` |
+| `CharcInternalID` | ✓ | |  |  |
+| `ClfnObjectID` |  | |  |  |
+| `FunctionalLocationLabelName` |  | | `_FunctionalLocation._FunctionalLocationLabel` | `FunctionalLocationLabelName` |
+| `$session.system_date).Characteristic` |  | |  | `Valuation._Characteristic(P_KeyDate: $session.system_date).Characteristic` |
+| `$session.system_date).CharcDataType` |  | |  | `Valuation._Characteristic(P_KeyDate: $session.system_date).CharcDataType` |
+| `KeyDate` |  | |  | `$session.system_date` |
+| `ChangeNumber` |  | |  |  |
+| `CharcValueIntervalType` |  | |  | `CharcValueDependency` |
+| `CharcValue` |  | |  |  |
+| `CharcFromNumericValue` |  | |  |  |
+| `CharcFromNumericValueUnit` |  | |  |  |
+| `CharcToNumericValue` |  | |  |  |
+| `CharcToNumericValueUnit` |  | |  |  |
+| `CharcFromDecimalValue` |  | |  |  |
+| `CharcToDecimalValue` |  | |  |  |
+| `CharcFromAmount` |  | |  |  |
+| `CharcToAmount` |  | |  |  |
+| `Currency` |  | |  |  |
+| `CharcFromDate` |  | |  |  |
+| `CharcToDate` |  | |  |  |
+| `CharcFromTime` |  | |  |  |
+| `CharcToTime` |  | |  |  |
+| `LastChangeDateTime` |  | | `_FunctionalLocation` | `LastChangeDateTime` |
+| `FunctionalLocationCategory` |  | | `_FunctionalLocation` | `FunctionalLocationCategory` |
+| `MaintenancePlanningPlant` |  | | `_FunctionalLocation` | `MaintenancePlanningPlant` |
+| `CompanyCode` |  | | `_FunctionalLocation._LocationAccountAssignment` | `CompanyCode` |
+| `MaintenancePlant` |  | | `_FunctionalLocation._LocationAccountAssignment` | `MaintenancePlant` |
+| `_FunctionalLocation` | | ✓ | | |
 
 ## Associations
 

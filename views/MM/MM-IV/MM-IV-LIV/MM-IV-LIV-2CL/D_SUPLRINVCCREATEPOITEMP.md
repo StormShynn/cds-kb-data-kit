@@ -28,35 +28,35 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SupplierInvoiceItem` | `rblgp` |
-| `PurchaseOrder` | `ebeln` |
-| `PurchaseOrderItem` | `ebelp` |
-| `ReferenceDocument` | `lfbnr` |
-| `ReferenceDocumentFiscalYear` | `lfgja` |
-| `ReferenceDocumentItem` | `lfpos` |
-| `SuplrInvcIsSubsqntDebitCrdt` | `tbtkz` |
-| `TaxCode` | `mwskz` |
-| `TaxJurisdiction` | `txjcd` |
-| `DocumentCurrency` | `waers` |
-| `wrbtr_cs` | `} SupplierInvoiceItemAmount : wrbtr_cs` |
-| `PurchaseOrderQuantityUnit` | `bstme` |
-| `QuantityInPurchaseOrderUnit` | `menge_d` |
-| `PurchaseOrderPriceUnit` | `bprme` |
-| `QtyInPurchaseOrderPriceUnit` | `bpmng` |
-| `SuplrInvcDeliveryCostCndnType` | `kschl` |
-| `SuplrInvcDeliveryCostCndnStep` | `stunr` |
-| `SuplrInvcDeliveryCostCndnCount` | `dzaehk` |
-| `FreightSupplier` | `lifnr` |
-| `ServiceEntrySheet` | `lblni` |
-| `ServiceEntrySheetItem` | `extrow` |
-| `SupplierInvoiceItemText` | `sgtxt` |
-| `IsNotCashDiscountLiable` | `xskrl` |
-| `TaxCountry` | `fot_tax_country` |
-| `IsFinallyInvoiced` | `erekz` |
-| `D_SuplrInvcCreateAccAssgmtP` | `_AccountAssignments : composition [0..*] of D_SuplrInvcCreateAccAssgmtP` |
-| `_SupplierInvoice` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoiceItem` |  | |  | `rblgp` |
+| `PurchaseOrder` |  | |  | `ebeln` |
+| `PurchaseOrderItem` |  | |  | `ebelp` |
+| `ReferenceDocument` |  | |  | `lfbnr` |
+| `ReferenceDocumentFiscalYear` |  | |  | `lfgja` |
+| `ReferenceDocumentItem` |  | |  | `lfpos` |
+| `SuplrInvcIsSubsqntDebitCrdt` |  | |  | `tbtkz` |
+| `TaxCode` |  | |  | `mwskz` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `DocumentCurrency` |  | |  | `waers` |
+| `wrbtr_cs` |  | |  | `} SupplierInvoiceItemAmount : wrbtr_cs` |
+| `PurchaseOrderQuantityUnit` |  | |  | `bstme` |
+| `QuantityInPurchaseOrderUnit` |  | |  | `menge_d` |
+| `PurchaseOrderPriceUnit` |  | |  | `bprme` |
+| `QtyInPurchaseOrderPriceUnit` |  | |  | `bpmng` |
+| `SuplrInvcDeliveryCostCndnType` |  | |  | `kschl` |
+| `SuplrInvcDeliveryCostCndnStep` |  | |  | `stunr` |
+| `SuplrInvcDeliveryCostCndnCount` |  | |  | `dzaehk` |
+| `FreightSupplier` |  | |  | `lifnr` |
+| `ServiceEntrySheet` |  | |  | `lblni` |
+| `ServiceEntrySheetItem` |  | |  | `extrow` |
+| `SupplierInvoiceItemText` |  | |  | `sgtxt` |
+| `IsNotCashDiscountLiable` |  | |  | `xskrl` |
+| `TaxCountry` |  | |  | `fot_tax_country` |
+| `IsFinallyInvoiced` |  | |  | `erekz` |
+| `D_SuplrInvcCreateAccAssgmtP` |  | |  | `_AccountAssignments : composition [0..*] of D_SuplrInvcCreateAccAssgmtP` |
+| `_SupplierInvoice` | | ✓ | | |
 
 ## Source Code
 

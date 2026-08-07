@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SrvcOrderConfirmationRelevance` | `cast (domvalue_l as abap.char(1) )` |
-| `_SrvcOrdItmConfRelevanceText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SrvcOrderConfirmationRelevance` | ✓ | |  | `cast (domvalue_l as abap.char(1) )` |
+| `_SrvcOrdItmConfRelevanceText` | | ✓ | | |
 
 ## Associations
 

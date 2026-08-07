@@ -29,39 +29,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralSupplierQuotation` | `R_CntrlSuplrQuotationItemDistr.CentralSupplierQuotation` |
-| key `CentralSupplierQuotationItem` | `R_CntrlSuplrQuotationItemDistr.CentralSupplierQuotationItem` |
-| key `DistributionKey` | `R_CntrlSuplrQuotationItemDistr.DistributionKey` |
-| `PurchasingDocumentCategory` | `R_CntrlSuplrQuotationItemDistr.PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `R_CntrlSuplrQuotationItemDistr.PurchasingDocumentType` |
-| `PurchasingOrganization` | `R_CntrlSuplrQuotationItemDistr.PurchasingOrganization` |
-| `CompanyCode` | `R_CntrlSuplrQuotationItemDistr.CompanyCode` |
-| `Plant` | `R_CntrlSuplrQuotationItemDistr.Plant` |
-| `LogicalSystem` | `R_CntrlSuplrQuotationItemDistr.LogicalSystem` |
-| `DocumentCurrency` | `R_CntrlSuplrQuotationItemDistr.DocumentCurrency` |
-| `Currency` | `R_CntrlSuplrQuotationItemDistr.Currency` |
-| `PurchasingGroup` | `R_CntrlSuplrQuotationItemDistr.PurchasingGroup` |
-| `StorageLocation` | `R_CntrlSuplrQuotationItemDistr.StorageLocation` |
-| `CntrlPurgDistributionInPercent` | `R_CntrlSuplrQuotationItemDistr.CntrlPurgDistributionInPercent` |
-| `TargetQuantity` | `R_CntrlSuplrQuotationItemDistr.TargetQuantity` |
-| `TargetAmount` | `R_CntrlSuplrQuotationItemDistr.TargetAmount` |
-| `PurgDocItemDistributionStatus` | `R_CntrlSuplrQuotationItemDistr.PurgDocItemDistributionStatus` |
-| `IsDeleted` | `R_CntrlSuplrQuotationItemDistr.IsDeleted` |
-| `PurgDocItmDistrLineDeltnCode` | `R_CntrlSuplrQuotationItemDistr.PurgDocItmDistrLineDeltnCode` |
-| `OrderQuantityUnit` | `R_CntrlSuplrQuotationItemDistr.OrderQuantityUnit` |
-| `DistributionType` | `R_CntrlSuplrQuotationItemDistr.DistributionType` |
-| `DistrResponseMessageUUID` | `R_CntrlSuplrQuotationItemDistr.DistrResponseMessageUUID` |
-| `ItemDistributionIsRelevant` | `R_CntrlSuplrQuotationItemDistr.ItemDistributionIsRelevant` |
-| `PurgDocItemDistrRelevanceCode` | `R_CntrlSuplrQuotationItemDistr.PurgDocItemDistrRelevanceCode` |
-| `ReferenceHeaderDistributionKey` | `R_CntrlSuplrQuotationItemDistr.ReferenceHeaderDistributionKey` |
-| `ProcurementHubSourceSystem` | `R_CntrlSuplrQuotationItemDistr.ProcurementHubSourceSystem` |
-| `ProcmtHubPurchaseRequisition` | `R_CntrlSuplrQuotationItemDistr.ProcmtHubPurchaseRequisition` |
-| `ProcmtHubPurRequisitionItem` | `R_CntrlSuplrQuotationItemDistr.ProcmtHubPurRequisitionItem` |
-| `PurReqnReleaseStatus` | `R_CntrlSuplrQuotationItemDistr.PurReqnReleaseStatus` |
-| `_CentralSupplierQuotation` | *Association* |
-| `_CntrlSupplierQuotationItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralSupplierQuotation` | ✓ | |  |  |
+| `CentralSupplierQuotationItem` | ✓ | |  |  |
+| `DistributionKey` | ✓ | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `LogicalSystem` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `Currency` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `CntrlPurgDistributionInPercent` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetAmount` |  | |  |  |
+| `PurgDocItemDistributionStatus` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `PurgDocItmDistrLineDeltnCode` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `DistributionType` |  | |  |  |
+| `DistrResponseMessageUUID` |  | |  |  |
+| `ItemDistributionIsRelevant` |  | |  |  |
+| `PurgDocItemDistrRelevanceCode` |  | |  |  |
+| `ReferenceHeaderDistributionKey` |  | |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |
+| `ProcmtHubPurchaseRequisition` |  | |  |  |
+| `ProcmtHubPurRequisitionItem` |  | |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |
+| `_CentralSupplierQuotation` | | ✓ | | |
+| `_CntrlSupplierQuotationItem` | | ✓ | | |
 
 ## Associations
 

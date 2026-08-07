@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceNotification` | `MaintenanceNotification` |
-| key `PartnerFunction` | `PartnerFunction` |
-| key `NotificationPartnerObjectNmbr` | `NotificationPartnerObjectNmbr` |
-| `Partner` | `Partner` |
-| `MaintenancePartner` | `MaintenancePartner` |
-| `_ContactPerson` | *Association* |
-| `_Customer` | *Association* |
-| `_Employee` | *Association* |
-| `_Supplier` | *Association* |
-| `_PartnerFunction` | *Association* |
-| `_Notif` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceNotification` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `NotificationPartnerObjectNmbr` | ✓ | |  |  |
+| `Partner` |  | |  |  |
+| `MaintenancePartner` |  | |  |  |
+| `_ContactPerson` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_Employee` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_PartnerFunction` | | ✓ | | |
+| `_Notif` | | ✓ | | |
 
 ## Source Code
 

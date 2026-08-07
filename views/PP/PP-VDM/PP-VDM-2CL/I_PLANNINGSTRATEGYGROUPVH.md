@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlanningStrategyGroup` | `grp.PlanningStrategyGroup` |
-| `MainPlanningStrategy` | `grp.MainPlanningStrategy` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlanningStrategyGroup` | ✓ | |  |  |
+| `MainPlanningStrategy` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

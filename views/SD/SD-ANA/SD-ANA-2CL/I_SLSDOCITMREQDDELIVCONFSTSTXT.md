@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SlsDocItmReqdDelivConfSts` | `SUBSTRING(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `SlsDocItmReqdDelivConfStsDesc` | `ddtext` |
-| `_SlsDocItmReqdDelivConfSts` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SlsDocItmReqdDelivConfSts` | ✓ | |  | `SUBSTRING(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SlsDocItmReqdDelivConfStsDesc` |  | |  | `ddtext` |
+| `_SlsDocItmReqdDelivConfSts` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

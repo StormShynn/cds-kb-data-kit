@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope2CalculationMethod` | `GHGScope2CalculationMethod` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope2CalculationMethod` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

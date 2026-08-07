@@ -30,437 +30,437 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `vbap.vbeln` |
-| key `SalesDocumentItem` | `vbap.posnr` |
-| `SalesDocumentItemUUID` | `vbap.handle` |
-| `SDDocumentCategory` | `vbap.vbtyp_ana` |
-| `SalesDocumentItemCategory` | `vbap.pstyv` |
-| `SalesDocumentItemType` | `vbap.posar` |
-| `IsReturnsItem` | `vbap.shkzg` |
-| `CompletionRule` | `vbap.erlre` |
-| `CreatedByUser` | `vbap.ernam` |
-| `CreationDate` | `vbap.erdat` |
-| `CreationTime` | `cast ( vbap.erzet as creation_time preserving type )` |
-| `LastChangeDate` | `vbap.aedat` |
-| `Division` | `vbap.spart` |
-| `Material` | `vbap.matnr` |
-| `Product` | `cast (vbap.matnr as productnumber preserving type)` |
-| `OriginallyRequestedMaterial` | `vbap.matwa` |
-| `MaterialByCustomer` | `vbap.kdmat` |
-| `InternationalArticleNumber` | `vbap.ean11` |
-| `Batch` | `}] vbap.charg` |
-| `ProductHierarchyNode` | `vbap.prodh` |
-| `ValContrRlvtProdUnivHierarchy` | `vbap.prodh_univ_id_val_contr` |
-| `ValContrRlvtProdUnivHierNode` | `vbap.prodh_univ_node_val_contr` |
-| `ProductCatalog` | `vbkd.wminr` |
-| `MaterialSubstitutionReason` | `vbap.sugrd` |
-| `MaterialGroup` | `vbap.matkl` |
-| `ProductGroup` | `cast (vbap.matkl as productgroup preserving type )` |
-| `AdditionalMaterialGroup1` | `vbap.mvgr1` |
-| `AdditionalMaterialGroup2` | `vbap.mvgr2` |
-| `AdditionalMaterialGroup3` | `vbap.mvgr3` |
-| `AdditionalMaterialGroup4` | `vbap.mvgr4` |
-| `AdditionalMaterialGroup5` | `vbap.mvgr5` |
-| `ProductConfiguration` | `vbap.cuobj` |
-| `MaterialDeterminationType` | `vbap.prosa` |
-| `HigherLevelItemUsage` | `vbap.uepvw` |
-| `MRPArea` | `vbap.berid` |
-| `BillOfMaterial` | `vbap.stlnr` |
-| `BOMExplosionDate` | `vbap.stdat` |
-| `ProdAvailabilityCheckGroup` | `vbap.mtvfp` |
-| `IndependentRequirementType` | `cast (vbap.bedae as vdm_bedae preserving type )` |
-| `SalesDocumentItemText` | `vbap.arktx` |
-| `PurchaseOrderByCustomer` | `vbap.bstkd_ana` |
-| `PurchaseOrderByShipToParty` | `cast (vbkd.bstkd_e as sd_purchase_order_by_shipto preserving type )` |
-| `CustomerPurchaseOrderDate` | `vbkd.bstdk` |
-| `CustPurOrdDateByShipToParty` | `cast(vbkd.bstdk_e as sd_po_date_by_shipto preserving type )` |
-| `UnderlyingPurchaseOrderItem` | `vbap.posex` |
-| `UndrlgPurOrdItmByShipToParty` | `vbkd.posex_e` |
-| `CorrespncExternalReference` | `vbkd.ihrez` |
-| `CorrespncExtRefByShipToParty` | `vbkd.ihrez_e` |
-| `CustomerPurchaseOrderType` | `vbkd.bsark` |
-| `CustPurOrdTypeByShipToParty` | `cast (vbkd.bsark_e as sd_po_type_by_shipto preserving type )` |
-| `ExternalItemID` | `vbap.ext_ref_item_id` |
-| `OrderQuantity` | `vbap.kwmeng` |
-| `OrderQuantityUnit` | `vbap.vrkme` |
-| `OrderToBaseQuantityDnmntr` | `vbap.umvkn` |
-| `OrderToBaseQuantityNmrtr` | `vbap.umvkz` |
-| `TargetQuantity` | `vbap.zmeng` |
-| `TargetQuantityUnit` | `vbap.zieme` |
-| `TargetToBaseQuantityDnmntr` | `vbap.umzin` |
-| `TargetToBaseQuantityNmrtr` | `vbap.umziz` |
-| `ConfdDelivQtyInOrderQtyUnit` | `cast(vbap.kbmeng as confirmed_quantity preserving type )` |
-| `TargetDelivQtyInOrderQtyUnit` | `vbap.lsmeng` |
-| `ConfdDeliveryQtyInBaseUnit` | `vbap.klmeng` |
-| `BaseUnit` | `vbap.meins` |
-| `MDSubstnConversionNumerator` | `vbap.substn_numerator` |
-| `MDSubstnConversionDenominator` | `vbap.substn_denominator` |
-| `CommittedDelivQtyInOrdQtyUnit` | `cast( vbap.cmtd_deliv_qty_su as committeddelivqtyinordqtyunit preserving type )` |
-| `CommittedDelivCreationDate` | `cast( vbap.cmtd_deliv_creadate as committeddelivcreationdate preserving type )` |
-| `CommittedDeliveryDate` | `cast( vbap.cmtd_deliv_date as committeddeliverydate preserving type )` |
-| `RequestedQuantity` | `cast( case when vbap.kwmeng > 0 then vbap.kwmeng else vbap.zmeng end as reqd_qty )` |
-| `RequestedQuantityUnit` | `cast( case when vbap.kwmeng > 0 then vbap.vrkme else vbap.zieme end as reqd_qty_unit )` |
-| `RequestedQuantityInBaseUnit` | `vbap.reqqty_bu` |
-| `ItemGrossWeight` | `vbap.brgew` |
-| `ItemNetWeight` | `vbap.ntgew` |
-| `ItemWeightUnit` | `vbap.gewei` |
-| `ItemVolume` | `vbap.volum` |
-| `ItemVolumeUnit` | `vbap.voleh` |
-| `ServicesRenderedDate` | `cast( vbkd.fbuda as vdm_sd_services_rendered_date preserving type )` |
-| `SalesDistrict` | `vbap.bzirk_ana` |
-| `SalesDeal` | `vbap.knuma_ag` |
-| `SalesPromotion` | `vbap.knuma_pi` |
-| `RetailPromotion` | `vbkd.waktion` |
-| `CustomerGroup` | `vbap.kdgrp_ana` |
-| `SlsDocIsRlvtForProofOfDeliv` | `vbkd.podkz` |
-| `SalesDocumentRjcnReason` | `vbap.abgru` |
-| `AlternativeToItem` | `vbap.grpos` |
-| `ReturnReason` | `vbap.msr_ret_reason` |
-| `ReturnsRefundExtent` | `vbap.msr_refund_code` |
-| `RetsMgmtProcessingBlock` | `vbap.msr_approv_block` |
-| `RequirementSegment` | `vbap.sgt_rcat` |
-| `QuantityIsFixed` | `vbap.fmeng` |
-| `ItemOrderProbabilityInPercent` | `vbap.awahr` |
-| `OutlineAgreementTargetAmount` | `vbap.zwert` |
-| `SalesContractValidityStartDate` | `veda.vbegdat` |
-| `SalesContractValidityEndDate` | `veda.venddat` |
-| `NmbrOfSalesContractValdtyPerd` | `veda.vlaufz` |
-| `SalesContractValidityPerdUnit` | `veda.vlauez` |
-| `SalesContractValidityPerdCat` | `veda.vlaufk` |
-| `SalesContractSignedDate` | `veda.vuntdat` |
-| `EquipmentInstallationDate` | `veda.vinsdat` |
-| `EquipmentDeliveryAccptcDate` | `veda.vabndat` |
-| `EquipmentDismantlingDate` | `veda.vdemdat` |
-| `SalesContractCanclnProcedure` | `veda.vkuesch` |
-| `RequestedCancellationDate` | `veda.vwundat` |
-| `SlsContractCanclnReqRcptDate` | `veda.veindat` |
-| `CanclnDocByContrPartner` | `veda.vbelkue` |
-| `ContractPartnerCanclnDocDate` | `veda.vbedkue` |
-| `SalesContractCanclnParty` | `veda.vkuepar` |
-| `SalesContractCanclnReason` | `veda.vkuegru` |
-| `SalesContractFollowUpAction` | `veda.vaktsch` |
-| `SlsContractFollowUpActionDate` | `veda.vasda` |
-| `SalesDocumentItemProcgCode` | `vbap.process_code` |
-| `DownPaymentProcessingVariant` | `vbap.dwn_payt_procg_var` |
-| `PlngDelivSchedInstrn` | `vbap.plavo` |
-| `NetAmount` | `vbap.netwr` |
-| `TransactionCurrency` | `vbap.waerk` |
-| `PricingReferenceMaterial` | `vbap.pmatn` |
-| `MaterialPricingGroup` | `cast(vbap.kondm as productpricinggroup preserving type)` |
-| `ProductTaxClassification1` | `vbap.taxm1` |
-| `ProductTaxClassification2` | `vbap.taxm2` |
-| `ProductTaxClassification3` | `vbap.taxm3` |
-| `ProductTaxClassification4` | `vbap.taxm4` |
-| `ProductTaxClassification5` | `vbap.taxm5` |
-| `ProductTaxClassification6` | `vbap.taxm6` |
-| `ProductTaxClassification7` | `vbap.taxm7` |
-| `ProductTaxClassification8` | `vbap.taxm8` |
-| `ProductTaxClassification9` | `vbap.taxm9` |
-| `MatlAccountAssignmentGroup` | `vbap.ktgrm` |
-| `PricingDate` | `vbkd.prsdt` |
-| `ExchangeRateDate` | `vbkd.kursk_dat` |
-| `PriceDetnExchangeRate` | `cast(vbkd.kursk as kursk_not_converted preserving type)` |
-| `NetPriceAmount` | `vbap.netpr` |
-| `NetPriceQuantity` | `vbap.kpein` |
-| `NetPriceQuantityUnit` | `vbap.kmein` |
-| `StatisticalValueControl` | `vbap.kowrr` |
-| `TaxAmount` | `vbap.mwsbp` |
-| `CostAmount` | `vbap.wavwr` |
-| `Subtotal1Amount` | `vbap.kzwi1` |
-| `Subtotal2Amount` | `vbap.kzwi2` |
-| `Subtotal3Amount` | `vbap.kzwi3` |
-| `Subtotal4Amount` | `vbap.kzwi4` |
-| `Subtotal5Amount` | `vbap.kzwi5` |
-| `Subtotal6Amount` | `vbap.kzwi6` |
-| `SalesDocumentCondition` | `vbap.knumv_ana` |
-| `MainItemPricingRefProduct` | `cast (vbap.upmat as main_item_pricing_ref_product preserving type)` |
-| `CustomerPriceGroup` | `vbkd.konda` |
-| `ShippingPoint` | `vbap.vstel` |
-| `ShippingType` | `vbap.vsart_ana` |
-| `InventorySpecialStockType` | `vbap.sobkz` |
-| `InventorySpecialStockValnType` | `vbap.kzbws` |
-| `DeliveryPriority` | `vbap.lprio` |
-| `Plant` | `vbap.werks` |
-| `OriginalPlant` | `vbap.original_plant` |
-| `TransitPlant` | `vbap.transit_plant` |
-| `StorageLocation` | `vbap.lgort` |
-| `Route` | `vbap.route` |
-| `DeliveryGroup` | `vbap.grkor` |
-| `DeliveryDateQuantityIsFixed` | `vbap.fixmg` |
-| `PartialDeliveryIsAllowed` | `cast (vbap.kztlf as partial_delivery_allowed preserving type )` |
-| `MaxNmbrOfPartialDelivery` | `cast (vbap.antlf as nmbrpartialdeliv preserving type )` |
-| `UnlimitedOverdeliveryIsAllowed` | `vbap.uebtk` |
-| `OverdelivTolrtdLmtRatioInPct` | `vbap.uebto` |
-| `UnderdelivTolrtdLmtRatioInPct` | `vbap.untto` |
-| `MinDeliveryQtyInBaseUnit` | `vbap.lfmng` |
-| `OpenDeliveryLeadingUnitCode` | `vbap.kzfme` |
-| `ItemIsDeliveryRelevant` | `vbap.lfrel` |
-| `BatchManagementIsSalesInternal` | `vbap.xchar` |
-| `ReceivingPoint` | `vbkd.empst` |
-| `ProductSeasonYear` | `vbap.fsh_season_year` |
-| `ProductSeason` | `vbap.fsh_season` |
-| `ProductCollection` | `vbap.fsh_collection` |
-| `ProductTheme` | `vbap.fsh_theme` |
-| `FashionCancelDate` | `vbap.fsh_candate` |
-| `ProductCharacteristic1` | `vbap.wrf_charstc1` |
-| `ProductCharacteristic2` | `vbap.wrf_charstc2` |
-| `ProductCharacteristic3` | `vbap.wrf_charstc3` |
-| `ShippingGroupNumber` | `vbap.rfm_psst_group` |
-| `ShippingGroupRule` | `vbap.rfm_psst_rule` |
-| `ARunPriorityValue` | `vbap.assignment_priority` |
-| `ARunDemandGroupPriority` | `vbap.arun_group_prio` |
-| `BillingDocumentDate` | `vbap.fkdat_ana` |
-| `ItemIsBillingRelevant` | `vbap.fkrel` |
-| `ItemBillingBlockReason` | `vbap.faksp` |
-| `BillingPlan` | `vbap.fplnr_ana` |
-| `ReferenceBillingPlan` | `vbkd.dpbp_ref_fplnr` |
-| `ReferenceBillingPlanItem` | `vbkd.dpbp_ref_fpltr` |
-| `IncotermsVersion` | `vbkd.incov` |
-| `IncotermsClassification` | `vbkd.inco1` |
-| `IncotermsTransferLocation` | `vbkd.inco2` |
-| `IncotermsLocation1` | `vbkd.inco2_l` |
-| `IncotermsLocation2` | `vbkd.inco3_l` |
-| `OrderCombinationIsAllowed` | `cast( vbkd.kzazu as vdm_sd_order_combination_ind preserving type )` |
-| `CustomerPaymentTerms` | `vbkd.zterm` |
-| `PaymentMethod` | `vbkd.zlsch` |
-| `FixedValueDate` | `vbkd.valdt` |
-| `AdditionalValueDays` | `vbkd.valtg` |
-| `ContractAccount` | `vbkd.vkont` |
-| `FiscalYear` | `vbkd.gjahr` |
-| `FiscalPeriod` | `vbkd.poper` |
-| `CustomerAccountAssignmentGroup` | `vbkd.ktgrd` |
-| `BusinessArea` | `vbap.gsber` |
-| `ControllingArea` | `vbak.kokrs` |
-| `ProfitCenter` | `vbap.prctr` |
-| `WBSElement` | `vbap.ps_psp_pnr` |
-| `WBSElementInternalID` | `cast ( vbap.ps_psp_pnr as ps_s4_pspnr preserving type )` |
-| `OrderID` | `vbap.aufnr` |
-| `ControllingObject` | `vbap.objnr` |
-| `ProfitabilitySegment` | `cast( case when paobjnr > '9999999999' then '9999999999' else lpad( paobjnr, 10, '0' ) end as rkeobjnr_numc )` |
-| `ProfitabilitySegment_2` | `cast(vbap.paobjnr as rkeobjnr_char preserving type )` |
-| `OriginSDDocument` | `vbap.vbelv` |
-| `OriginSDDocumentItem` | `vbap.posnv` |
-| `AccountingExchangeRate` | `vbkd.kurrf` |
-| `SlsDocItmRevnAcctgRlvnceType` | `vbkd.farr_reltype` |
-| `ReferenceSDDocument` | `vbap.vgbel` |
-| `ReferenceSDDocumentItem` | `vbap.vgpos` |
-| `ReferenceSDDocumentCategory` | `cast (vbap.vgtyp as reference_sd_document_category preserving type )` |
-| `HigherLevelItem` | `vbap.uepos` |
-| `ValueContract` | `vbap.wktnr` |
-| `ValueContractItem` | `vbap.wktps` |
-| `BusinessSolutionOrder` | `vbap.solution_order_id` |
-| `BusinessSolutionOrderItem` | `vbap.solution_order_itm_id` |
-| `BusSolnOrdItemBundleItem` | `vbap.solution_order_bundle_itm_id` |
-| `SDProcessStatus` | `vbap.gbsta` |
-| `DeliveryConfirmationStatus` | `vbap.besta` |
-| `DeliveryDateTypeRule` | `vbap.delivery_date_type_rule` |
-| `PurchaseConfirmationStatus` | `cast(vbap.costa as purchaseconfsts preserving type )` |
-| `TotalDeliveryStatus` | `vbap.lfgsa` |
-| `DeliveryStatus` | `vbap.lfsta` |
-| `DeliveryBlockStatus` | `cast(vbap.lssta as delivery_block_status preserving type )` |
-| `OrderRelatedBillingStatus` | `cast(vbap.fksaa as sls_doc_order_rel_billing_sts preserving type )` |
-| `BillingBlockStatus` | `vbap.fssta` |
-| `ItemGeneralIncompletionStatus` | `cast(vbap.uvall as item_general_incompletion_sts preserving type )` |
-| `ItemBillingIncompletionStatus` | `vbap.uvfak` |
-| `PricingIncompletionStatus` | `vbap.uvprs` |
-| `ItemDeliveryIncompletionStatus` | `vbap.uvvlk` |
-| `SDDocumentRejectionStatus` | `vbap.absta` |
-| `TotalSDDocReferenceStatus` | `vbap.rfgsa` |
-| `SDDocReferenceStatus` | `vbap.rfsta` |
-| `ChmlCmplncStatus` | `cast(vbap.pcsta as mon_tdd_pcsta preserving type )` |
-| `DangerousGoodsStatus` | `cast(vbap.dgsta as mon_tdd_dgsta preserving type )` |
-| `SafetyDataSheetStatus` | `cast(vbap.sdssta as mon_tdd_sdssta preserving type )` |
-| `TrdCmplncEmbargoSts` | `cast(vbap.emcst as embargochksts preserving type )` |
-| `TrdCmplncSnctndListChkSts` | `cast(vbap.slcst as watchlistscrngchksts preserving type )` |
-| `OvrlTrdCmplncLegalCtrlChkSts` | `cast(vbap.total_lccst as lglctrlchksts preserving type )` |
-| `SlsDocItmOvrlSupplyBlockStatus` | `vbap.overall_supply_block_status` |
-| `AltvBsdConfSubstitutionStatus` | `vbap.atp_abc_substitution_status` |
-| `ContractItemDownPaymentStatus` | `vbap.dp_clear_sta_itm` |
-| `ValueChainCategory` | `vbap.vcm_chain_category` |
-| `CappedNetAmount` | `vbap.capped_net_amount` |
-| `CappedNetAmtAlertThldInPct` | `vbap.capped_net_amount_alert_thld` |
-| `TotalStandAloneSellingPrice` | `vbap.ifrs15_total_ssp` |
-| `ResultAnalysisInternalID` | `vbap.abgrs` |
-| `ServiceDocumentType` | `vbap.service_doc_type` |
-| `ServiceDocument` | `vbap.service_doc_id` |
-| `ServiceDocumentItem` | `vbap.service_doc_item_id` |
-| `SalesDocumentType` | `vbap.auart_ana` |
-| `SalesOrganization` | `vbap.vkorg_ana` |
-| `DistributionChannel` | `vbap.vtweg_ana` |
-| `OrganizationDivision` | `vbap.spart_ana` |
-| `SalesOffice` | `vbap.vkbur_ana` |
-| `SalesGroup` | `vbap.vkgrp_ana` |
-| `SoldToParty` | `vbap.kunnr_ana` |
-| `AdditionalCustomerGroup1` | `vbap.kvgr1_ana` |
-| `AdditionalCustomerGroup2` | `vbap.kvgr2_ana` |
-| `AdditionalCustomerGroup3` | `vbap.kvgr3_ana` |
-| `AdditionalCustomerGroup4` | `vbap.kvgr4_ana` |
-| `AdditionalCustomerGroup5` | `vbap.kvgr5_ana` |
-| `SalesDocumentDate` | `vbap.audat_ana` |
-| `SDDocumentReason` | `vbap.augru_ana` |
-| `RequestedDeliveryDate` | `cast(vbap.vdatu_ana as reqd_delivery_date preserving type)` |
-| `ShippingCondition` | `vbap.vsbed_ana` |
-| `ShipToParty` | `vbap.kunwe_ana` |
-| `PayerParty` | `vbap.kunrg_ana` |
-| `BillToParty` | `vbap.kunre_ana` |
-| `SalesEmployee` | `vbap.perve_ana` |
-| `ResponsibleEmployee` | `vbap.perzm_ana` |
-| `SalesEmployeeWorkAgreement` | `cast(vbap.perve_ana as sales_empl preserving type)` |
-| `ResponsibleEmployeeWorkAgrmt` | `cast(vbap.perzm_ana as resp_empl preserving type)` |
-| `OmniChannelSalesPromotion` | `vbap.bob_promotion_id` |
-| `OmniChannelSalesPromotionRule` | `vbap.bob_fg_id` |
-| `ConsumptionPosting` | `vbap.kzvbr` |
-| `PlanningMaterial` | `vbap.vpmat` |
-| `PlanningPlant` | `vbap.vpwrk` |
-| `ProductBaseUnit` | `vbap.prbme` |
-| `ProdPlntPlngMatlConversionFctr` | `vbap.umref` |
-| `SlsContrAutoAssgmtIDForSlsOrd` | `vbap.sls_contr_auto_assignment` |
-| `SalesDocItemSupplyBlockReason` | `vbap.supply_block_reason` |
-| `_BusinessAreaText` | *Association* |
-| `_MaterialText` | *Association* |
-| `_ProductText` | *Association* |
-| `_OrigMaterialText` | *Association* |
-| `_ShippingPointText` | *Association* |
-| `_SlsDocItemEnhancedFields` | *Association* |
-| `_SalesDocument` | *Association* |
-| `_ScheduleLine` | *Association* |
-| `_Partner` | *Association* |
-| `_PricingElement` | *Association* |
-| `_ItemBillingPlan` | *Association* |
-| `_SubsequentDocument` | *Association* |
-| `_PrecedingDocument` | *Association* |
-| `_PrecedingProcFlowDocItem` | *Association* |
-| `_SubsequentProcFlowDocItem` | *Association* |
-| `_SDDocumentCategory` | *Association* |
-| `_ItemCategory` | *Association* |
-| `_HigherLevelItem` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_Division` | *Association* |
-| `_Material` | *Association* |
-| `_Product` | *Association* |
-| `_PlanningProduct` | *Association* |
-| `_MainItemPricingRefProduct` | *Association* |
-| `_OriginallyRequestedMaterial` | *Association* |
-| `_MaterialPlant` | *Association* |
-| `_Batch` | *Association* |
-| `_ProductHierarchyNode` | *Association* |
-| `_MaterialSubstitutionReason` | *Association* |
-| `_MaterialGroup` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_MaterialPricingGroup` | *Association* |
-| `_AdditionalMaterialGroup1` | *Association* |
-| `_AdditionalMaterialGroup2` | *Association* |
-| `_AdditionalMaterialGroup3` | *Association* |
-| `_AdditionalMaterialGroup4` | *Association* |
-| `_AdditionalMaterialGroup5` | *Association* |
-| `_IndependentRequirementType` | *Association* |
-| `_CustomerPurchaseOrderType` | *Association* |
-| `_CustPurOrdTypeByShipToParty` | *Association* |
-| `_MatlAccountAssignmentGroup` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_TargetQuantityUnit` | *Association* |
-| `_BaseUnit` | *Association* |
-| `_RequestedQuantityUnit` | *Association* |
-| `_ItemWeightUnit` | *Association* |
-| `_ItemVolumeUnit` | *Association* |
-| `_ProductUnit` | *Association* |
-| `_SalesDistrict` | *Association* |
-| `_SalesDeal` | *Association* |
-| `_CustomerGroup` | *Association* |
-| `_SalesDocumentRjcnReason` | *Association* |
-| `_ReturnReason` | *Association* |
-| `_ReturnsRefundExtent` | *Association* |
-| `_SalesContractValidityPerdUnit` | *Association* |
-| `_SalesContractCanclnParty` | *Association* |
-| `_SalesContractCanclnReason` | *Association* |
-| `_ContractItemDownPaymentStatus` | *Association* |
-| `_NetPriceQuantityUnit` | *Association* |
-| `_StatisticalValueControl` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_ShippingPoint` | *Association* |
-| `_ShippingType` | *Association* |
-| `_DeliveryPriority` | *Association* |
-| `_PartialDeliveryItem` | *Association* |
-| `_Plant` | *Association* |
-| `_OriginalPlant` | *Association* |
-| `_TransitPlant` | *Association* |
-| `_PlanningPlant` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_Route` | *Association* |
-| `_ItemIsBillingRelevant` | *Association* |
-| `_ItemBillingBlockReason` | *Association* |
-| `_BillingPlan` | *Association* |
-| `_CustomerPaymentTerms` | *Association* |
-| `_IncotermsVersion` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_CustomerAccountAssgmtGroup` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_WBSElementBasicData_2` | *Association* |
-| `_ProfitabilitySegment` | *Association* |
-| `_SlsDocItmRARlvnceType` | *Association* |
-| `_ReferenceSDDocument` | *Association* |
-| `_ReferenceSDDocumentItem` | *Association* |
-| `_ReferenceSDDocumentCategory` | *Association* |
-| `_PlngDelivSchedInstrn` | *Association* |
-| `_SDProcessStatus` | *Association* |
-| `_PurchaseConfirmationStatus` | *Association* |
-| `_TotalDeliveryStatus` | *Association* |
-| `_DeliveryStatus` | *Association* |
-| `_DeliveryBlockStatus` | *Association* |
-| `_DeliveryConfirmationStatus` | *Association* |
-| `_DeliveryDateTypeRule` | *Association* |
-| `_OrderRelatedBillingStatus` | *Association* |
-| `_BillingBlockStatus` | *Association* |
-| `_SDDocumentRejectionStatus` | *Association* |
-| `_ItemGeneralIncompletionStatus` | *Association* |
-| `_ItemBillingIncompletionStatus` | *Association* |
-| `_PricingIncompletionStatus` | *Association* |
-| `_ItemDelivIncompletionSts` | *Association* |
-| `_TotalSDDocReferenceStatus` | *Association* |
-| `_SDDocReferenceStatus` | *Association* |
-| `_AltvBsdConfSubstitutionSts` | *Association* |
-| `_ChmlCmplncStatus` | *Association* |
-| `_DangerousGoodsStatus` | *Association* |
-| `_SafetyDataSheetStatus` | *Association* |
-| `_TrdCmplncEmbargoSts` | *Association* |
-| `_TrdCmplncSnctndListChkSts` | *Association* |
-| `_OvrlTrdCmplncLegalCtrlChkSts` | *Association* |
-| `_SlsDocItmOvrlSupplyBlockSts` | *Association* |
-| `_SlsDocItemSupplyBlockReason` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_SalesDocumentItemProcgCode` | *Association* |
-| `_DownPaymentProcessingVariant` | *Association* |
-| `_CustomerPriceGroup` | *Association* |
-| `_SalesDocumentType` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_OrganizationDivision` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SDDocumentReason` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_AdditionalCustomerGroup1` | *Association* |
-| `_AdditionalCustomerGroup2` | *Association* |
-| `_AdditionalCustomerGroup3` | *Association* |
-| `_AdditionalCustomerGroup4` | *Association* |
-| `_AdditionalCustomerGroup5` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_BillToParty` | *Association* |
-| `_PayerParty` | *Association* |
-| `_SalesEmployee` | *Association* |
-| `_ResponsibleEmployee` | *Association* |
-| `_ConsumptionPosting` | *Association* |
-| `_MRPArea` | *Association* |
-| `_SolutionOrder` | *Association* |
-| `_SolutionOrderItem` | *Association* |
-| `_SolutionOrderBundleItem` | *Association* |
-| `_SalesValueChainCategory` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  | `vbeln` |
+| `SalesDocumentItem` | ✓ | |  | `posnr` |
+| `SalesDocumentItemUUID` |  | |  | `handle` |
+| `SDDocumentCategory` |  | |  | `vbtyp_ana` |
+| `SalesDocumentItemCategory` |  | |  | `pstyv` |
+| `SalesDocumentItemType` |  | |  | `posar` |
+| `IsReturnsItem` |  | |  | `shkzg` |
+| `CompletionRule` |  | |  | `erlre` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `CreationDate` |  | |  | `erdat` |
+| `CreationTime` |  | |  | `cast ( vbap.erzet as creation_time preserving type )` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `Division` |  | |  | `spart` |
+| `Material` |  | |  | `matnr` |
+| `Product` |  | |  | `cast (vbap.matnr as productnumber preserving type)` |
+| `OriginallyRequestedMaterial` |  | |  | `matwa` |
+| `MaterialByCustomer` |  | |  | `kdmat` |
+| `InternationalArticleNumber` |  | |  | `ean11` |
+| `Batch` |  | |  | `}] vbap.charg` |
+| `ProductHierarchyNode` |  | |  | `prodh` |
+| `ValContrRlvtProdUnivHierarchy` |  | |  | `prodh_univ_id_val_contr` |
+| `ValContrRlvtProdUnivHierNode` |  | |  | `prodh_univ_node_val_contr` |
+| `ProductCatalog` |  | |  | `wminr` |
+| `MaterialSubstitutionReason` |  | |  | `sugrd` |
+| `MaterialGroup` |  | |  | `matkl` |
+| `ProductGroup` |  | |  | `cast (vbap.matkl as productgroup preserving type )` |
+| `AdditionalMaterialGroup1` |  | |  | `mvgr1` |
+| `AdditionalMaterialGroup2` |  | |  | `mvgr2` |
+| `AdditionalMaterialGroup3` |  | |  | `mvgr3` |
+| `AdditionalMaterialGroup4` |  | |  | `mvgr4` |
+| `AdditionalMaterialGroup5` |  | |  | `mvgr5` |
+| `ProductConfiguration` |  | |  | `cuobj` |
+| `MaterialDeterminationType` |  | |  | `prosa` |
+| `HigherLevelItemUsage` |  | |  | `uepvw` |
+| `MRPArea` |  | |  | `berid` |
+| `BillOfMaterial` |  | |  | `stlnr` |
+| `BOMExplosionDate` |  | |  | `stdat` |
+| `ProdAvailabilityCheckGroup` |  | |  | `mtvfp` |
+| `IndependentRequirementType` |  | |  | `cast (vbap.bedae as vdm_bedae preserving type )` |
+| `SalesDocumentItemText` |  | |  | `arktx` |
+| `PurchaseOrderByCustomer` |  | |  | `bstkd_ana` |
+| `PurchaseOrderByShipToParty` |  | |  | `cast (vbkd.bstkd_e as sd_purchase_order_by_shipto preserving type )` |
+| `CustomerPurchaseOrderDate` |  | |  | `bstdk` |
+| `CustPurOrdDateByShipToParty` |  | |  | `cast(vbkd.bstdk_e as sd_po_date_by_shipto preserving type )` |
+| `UnderlyingPurchaseOrderItem` |  | |  | `posex` |
+| `UndrlgPurOrdItmByShipToParty` |  | |  | `posex_e` |
+| `CorrespncExternalReference` |  | |  | `ihrez` |
+| `CorrespncExtRefByShipToParty` |  | |  | `ihrez_e` |
+| `CustomerPurchaseOrderType` |  | |  | `bsark` |
+| `CustPurOrdTypeByShipToParty` |  | |  | `cast (vbkd.bsark_e as sd_po_type_by_shipto preserving type )` |
+| `ExternalItemID` |  | |  | `ext_ref_item_id` |
+| `OrderQuantity` |  | |  | `kwmeng` |
+| `OrderQuantityUnit` |  | |  | `vrkme` |
+| `OrderToBaseQuantityDnmntr` |  | |  | `umvkn` |
+| `OrderToBaseQuantityNmrtr` |  | |  | `umvkz` |
+| `TargetQuantity` |  | |  | `zmeng` |
+| `TargetQuantityUnit` |  | |  | `zieme` |
+| `TargetToBaseQuantityDnmntr` |  | |  | `umzin` |
+| `TargetToBaseQuantityNmrtr` |  | |  | `umziz` |
+| `ConfdDelivQtyInOrderQtyUnit` |  | |  | `cast(vbap.kbmeng as confirmed_quantity preserving type )` |
+| `TargetDelivQtyInOrderQtyUnit` |  | |  | `lsmeng` |
+| `ConfdDeliveryQtyInBaseUnit` |  | |  | `klmeng` |
+| `BaseUnit` |  | |  | `meins` |
+| `MDSubstnConversionNumerator` |  | |  | `substn_numerator` |
+| `MDSubstnConversionDenominator` |  | |  | `substn_denominator` |
+| `CommittedDelivQtyInOrdQtyUnit` |  | |  | `cast( vbap.cmtd_deliv_qty_su as committeddelivqtyinordqtyunit preserving type )` |
+| `CommittedDelivCreationDate` |  | |  | `cast( vbap.cmtd_deliv_creadate as committeddelivcreationdate preserving type )` |
+| `CommittedDeliveryDate` |  | |  | `cast( vbap.cmtd_deliv_date as committeddeliverydate preserving type )` |
+| `RequestedQuantity` |  | |  | `cast( case when vbap.kwmeng > 0 then vbap.kwmeng else vbap.zmeng end as reqd_qty )` |
+| `RequestedQuantityUnit` |  | |  | `cast( case when vbap.kwmeng > 0 then vbap.vrkme else vbap.zieme end as reqd_qty_unit )` |
+| `RequestedQuantityInBaseUnit` |  | |  | `reqqty_bu` |
+| `ItemGrossWeight` |  | |  | `brgew` |
+| `ItemNetWeight` |  | |  | `ntgew` |
+| `ItemWeightUnit` |  | |  | `gewei` |
+| `ItemVolume` |  | |  | `volum` |
+| `ItemVolumeUnit` |  | |  | `voleh` |
+| `ServicesRenderedDate` |  | |  | `cast( vbkd.fbuda as vdm_sd_services_rendered_date preserving type )` |
+| `SalesDistrict` |  | |  | `bzirk_ana` |
+| `SalesDeal` |  | |  | `knuma_ag` |
+| `SalesPromotion` |  | |  | `knuma_pi` |
+| `RetailPromotion` |  | |  | `waktion` |
+| `CustomerGroup` |  | |  | `kdgrp_ana` |
+| `SlsDocIsRlvtForProofOfDeliv` |  | |  | `podkz` |
+| `SalesDocumentRjcnReason` |  | |  | `abgru` |
+| `AlternativeToItem` |  | |  | `grpos` |
+| `ReturnReason` |  | |  | `msr_ret_reason` |
+| `ReturnsRefundExtent` |  | |  | `msr_refund_code` |
+| `RetsMgmtProcessingBlock` |  | |  | `msr_approv_block` |
+| `RequirementSegment` |  | |  | `sgt_rcat` |
+| `QuantityIsFixed` |  | |  | `fmeng` |
+| `ItemOrderProbabilityInPercent` |  | |  | `awahr` |
+| `OutlineAgreementTargetAmount` |  | |  | `zwert` |
+| `SalesContractValidityStartDate` |  | |  | `vbegdat` |
+| `SalesContractValidityEndDate` |  | |  | `venddat` |
+| `NmbrOfSalesContractValdtyPerd` |  | |  | `vlaufz` |
+| `SalesContractValidityPerdUnit` |  | |  | `vlauez` |
+| `SalesContractValidityPerdCat` |  | |  | `vlaufk` |
+| `SalesContractSignedDate` |  | |  | `vuntdat` |
+| `EquipmentInstallationDate` |  | |  | `vinsdat` |
+| `EquipmentDeliveryAccptcDate` |  | |  | `vabndat` |
+| `EquipmentDismantlingDate` |  | |  | `vdemdat` |
+| `SalesContractCanclnProcedure` |  | |  | `vkuesch` |
+| `RequestedCancellationDate` |  | |  | `vwundat` |
+| `SlsContractCanclnReqRcptDate` |  | |  | `veindat` |
+| `CanclnDocByContrPartner` |  | |  | `vbelkue` |
+| `ContractPartnerCanclnDocDate` |  | |  | `vbedkue` |
+| `SalesContractCanclnParty` |  | |  | `vkuepar` |
+| `SalesContractCanclnReason` |  | |  | `vkuegru` |
+| `SalesContractFollowUpAction` |  | |  | `vaktsch` |
+| `SlsContractFollowUpActionDate` |  | |  | `vasda` |
+| `SalesDocumentItemProcgCode` |  | |  | `process_code` |
+| `DownPaymentProcessingVariant` |  | |  | `dwn_payt_procg_var` |
+| `PlngDelivSchedInstrn` |  | |  | `plavo` |
+| `NetAmount` |  | |  | `netwr` |
+| `TransactionCurrency` |  | |  | `waerk` |
+| `PricingReferenceMaterial` |  | |  | `pmatn` |
+| `MaterialPricingGroup` |  | |  | `cast(vbap.kondm as productpricinggroup preserving type)` |
+| `ProductTaxClassification1` |  | |  | `taxm1` |
+| `ProductTaxClassification2` |  | |  | `taxm2` |
+| `ProductTaxClassification3` |  | |  | `taxm3` |
+| `ProductTaxClassification4` |  | |  | `taxm4` |
+| `ProductTaxClassification5` |  | |  | `taxm5` |
+| `ProductTaxClassification6` |  | |  | `taxm6` |
+| `ProductTaxClassification7` |  | |  | `taxm7` |
+| `ProductTaxClassification8` |  | |  | `taxm8` |
+| `ProductTaxClassification9` |  | |  | `taxm9` |
+| `MatlAccountAssignmentGroup` |  | |  | `ktgrm` |
+| `PricingDate` |  | |  | `prsdt` |
+| `ExchangeRateDate` |  | |  | `kursk_dat` |
+| `PriceDetnExchangeRate` |  | |  | `cast(vbkd.kursk as kursk_not_converted preserving type)` |
+| `NetPriceAmount` |  | |  | `netpr` |
+| `NetPriceQuantity` |  | |  | `kpein` |
+| `NetPriceQuantityUnit` |  | |  | `kmein` |
+| `StatisticalValueControl` |  | |  | `kowrr` |
+| `TaxAmount` |  | |  | `mwsbp` |
+| `CostAmount` |  | |  | `wavwr` |
+| `Subtotal1Amount` |  | |  | `kzwi1` |
+| `Subtotal2Amount` |  | |  | `kzwi2` |
+| `Subtotal3Amount` |  | |  | `kzwi3` |
+| `Subtotal4Amount` |  | |  | `kzwi4` |
+| `Subtotal5Amount` |  | |  | `kzwi5` |
+| `Subtotal6Amount` |  | |  | `kzwi6` |
+| `SalesDocumentCondition` |  | |  | `knumv_ana` |
+| `MainItemPricingRefProduct` |  | |  | `cast (vbap.upmat as main_item_pricing_ref_product preserving type)` |
+| `CustomerPriceGroup` |  | |  | `konda` |
+| `ShippingPoint` |  | |  | `vstel` |
+| `ShippingType` |  | |  | `vsart_ana` |
+| `InventorySpecialStockType` |  | |  | `sobkz` |
+| `InventorySpecialStockValnType` |  | |  | `kzbws` |
+| `DeliveryPriority` |  | |  | `lprio` |
+| `Plant` |  | |  | `werks` |
+| `OriginalPlant` |  | |  | `original_plant` |
+| `TransitPlant` |  | |  | `transit_plant` |
+| `StorageLocation` |  | |  | `lgort` |
+| `Route` |  | |  | `route` |
+| `DeliveryGroup` |  | |  | `grkor` |
+| `DeliveryDateQuantityIsFixed` |  | |  | `fixmg` |
+| `PartialDeliveryIsAllowed` |  | |  | `cast (vbap.kztlf as partial_delivery_allowed preserving type )` |
+| `MaxNmbrOfPartialDelivery` |  | |  | `cast (vbap.antlf as nmbrpartialdeliv preserving type )` |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  | `uebtk` |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  | `uebto` |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  | `untto` |
+| `MinDeliveryQtyInBaseUnit` |  | |  | `lfmng` |
+| `OpenDeliveryLeadingUnitCode` |  | |  | `kzfme` |
+| `ItemIsDeliveryRelevant` |  | |  | `lfrel` |
+| `BatchManagementIsSalesInternal` |  | |  | `xchar` |
+| `ReceivingPoint` |  | |  | `empst` |
+| `ProductSeasonYear` |  | |  | `fsh_season_year` |
+| `ProductSeason` |  | |  | `fsh_season` |
+| `ProductCollection` |  | |  | `fsh_collection` |
+| `ProductTheme` |  | |  | `fsh_theme` |
+| `FashionCancelDate` |  | |  | `fsh_candate` |
+| `ProductCharacteristic1` |  | |  | `wrf_charstc1` |
+| `ProductCharacteristic2` |  | |  | `wrf_charstc2` |
+| `ProductCharacteristic3` |  | |  | `wrf_charstc3` |
+| `ShippingGroupNumber` |  | |  | `rfm_psst_group` |
+| `ShippingGroupRule` |  | |  | `rfm_psst_rule` |
+| `ARunPriorityValue` |  | |  | `assignment_priority` |
+| `ARunDemandGroupPriority` |  | |  | `arun_group_prio` |
+| `BillingDocumentDate` |  | |  | `fkdat_ana` |
+| `ItemIsBillingRelevant` |  | |  | `fkrel` |
+| `ItemBillingBlockReason` |  | |  | `faksp` |
+| `BillingPlan` |  | |  | `fplnr_ana` |
+| `ReferenceBillingPlan` |  | |  | `dpbp_ref_fplnr` |
+| `ReferenceBillingPlanItem` |  | |  | `dpbp_ref_fpltr` |
+| `IncotermsVersion` |  | |  | `incov` |
+| `IncotermsClassification` |  | |  | `inco1` |
+| `IncotermsTransferLocation` |  | |  | `inco2` |
+| `IncotermsLocation1` |  | |  | `inco2_l` |
+| `IncotermsLocation2` |  | |  | `inco3_l` |
+| `OrderCombinationIsAllowed` |  | |  | `cast( vbkd.kzazu as vdm_sd_order_combination_ind preserving type )` |
+| `CustomerPaymentTerms` |  | |  | `zterm` |
+| `PaymentMethod` |  | |  | `zlsch` |
+| `FixedValueDate` |  | |  | `valdt` |
+| `AdditionalValueDays` |  | |  | `valtg` |
+| `ContractAccount` |  | |  | `vkont` |
+| `FiscalYear` |  | |  | `gjahr` |
+| `FiscalPeriod` |  | |  | `poper` |
+| `CustomerAccountAssignmentGroup` |  | |  | `ktgrd` |
+| `BusinessArea` |  | |  | `gsber` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `WBSElement` |  | |  | `ps_psp_pnr` |
+| `WBSElementInternalID` |  | |  | `cast ( vbap.ps_psp_pnr as ps_s4_pspnr preserving type )` |
+| `OrderID` |  | |  | `aufnr` |
+| `ControllingObject` |  | |  | `objnr` |
+| `ProfitabilitySegment` |  | |  | `cast( case when paobjnr > '9999999999' then '9999999999' else lpad( paobjnr, 10, '0' ) end as rkeobjnr_numc )` |
+| `ProfitabilitySegment_2` |  | |  | `cast(vbap.paobjnr as rkeobjnr_char preserving type )` |
+| `OriginSDDocument` |  | |  | `vbelv` |
+| `OriginSDDocumentItem` |  | |  | `posnv` |
+| `AccountingExchangeRate` |  | |  | `kurrf` |
+| `SlsDocItmRevnAcctgRlvnceType` |  | |  | `farr_reltype` |
+| `ReferenceSDDocument` |  | |  | `vgbel` |
+| `ReferenceSDDocumentItem` |  | |  | `vgpos` |
+| `ReferenceSDDocumentCategory` |  | |  | `cast (vbap.vgtyp as reference_sd_document_category preserving type )` |
+| `HigherLevelItem` |  | |  | `uepos` |
+| `ValueContract` |  | |  | `wktnr` |
+| `ValueContractItem` |  | |  | `wktps` |
+| `BusinessSolutionOrder` |  | |  | `solution_order_id` |
+| `BusinessSolutionOrderItem` |  | |  | `solution_order_itm_id` |
+| `BusSolnOrdItemBundleItem` |  | |  | `solution_order_bundle_itm_id` |
+| `SDProcessStatus` |  | |  | `gbsta` |
+| `DeliveryConfirmationStatus` |  | |  | `besta` |
+| `DeliveryDateTypeRule` |  | |  | `delivery_date_type_rule` |
+| `PurchaseConfirmationStatus` |  | |  | `cast(vbap.costa as purchaseconfsts preserving type )` |
+| `TotalDeliveryStatus` |  | |  | `lfgsa` |
+| `DeliveryStatus` |  | |  | `lfsta` |
+| `DeliveryBlockStatus` |  | |  | `cast(vbap.lssta as delivery_block_status preserving type )` |
+| `OrderRelatedBillingStatus` |  | |  | `cast(vbap.fksaa as sls_doc_order_rel_billing_sts preserving type )` |
+| `BillingBlockStatus` |  | |  | `fssta` |
+| `ItemGeneralIncompletionStatus` |  | |  | `cast(vbap.uvall as item_general_incompletion_sts preserving type )` |
+| `ItemBillingIncompletionStatus` |  | |  | `uvfak` |
+| `PricingIncompletionStatus` |  | |  | `uvprs` |
+| `ItemDeliveryIncompletionStatus` |  | |  | `uvvlk` |
+| `SDDocumentRejectionStatus` |  | |  | `absta` |
+| `TotalSDDocReferenceStatus` |  | |  | `rfgsa` |
+| `SDDocReferenceStatus` |  | |  | `rfsta` |
+| `ChmlCmplncStatus` |  | |  | `cast(vbap.pcsta as mon_tdd_pcsta preserving type )` |
+| `DangerousGoodsStatus` |  | |  | `cast(vbap.dgsta as mon_tdd_dgsta preserving type )` |
+| `SafetyDataSheetStatus` |  | |  | `cast(vbap.sdssta as mon_tdd_sdssta preserving type )` |
+| `TrdCmplncEmbargoSts` |  | |  | `cast(vbap.emcst as embargochksts preserving type )` |
+| `TrdCmplncSnctndListChkSts` |  | |  | `cast(vbap.slcst as watchlistscrngchksts preserving type )` |
+| `OvrlTrdCmplncLegalCtrlChkSts` |  | |  | `cast(vbap.total_lccst as lglctrlchksts preserving type )` |
+| `SlsDocItmOvrlSupplyBlockStatus` |  | |  | `overall_supply_block_status` |
+| `AltvBsdConfSubstitutionStatus` |  | |  | `atp_abc_substitution_status` |
+| `ContractItemDownPaymentStatus` |  | |  | `dp_clear_sta_itm` |
+| `ValueChainCategory` |  | |  | `vcm_chain_category` |
+| `CappedNetAmount` |  | |  | `capped_net_amount` |
+| `CappedNetAmtAlertThldInPct` |  | |  | `capped_net_amount_alert_thld` |
+| `TotalStandAloneSellingPrice` |  | |  | `ifrs15_total_ssp` |
+| `ResultAnalysisInternalID` |  | |  | `abgrs` |
+| `ServiceDocumentType` |  | |  | `service_doc_type` |
+| `ServiceDocument` |  | |  | `service_doc_id` |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |
+| `SalesDocumentType` |  | |  | `auart_ana` |
+| `SalesOrganization` |  | |  | `vkorg_ana` |
+| `DistributionChannel` |  | |  | `vtweg_ana` |
+| `OrganizationDivision` |  | |  | `spart_ana` |
+| `SalesOffice` |  | |  | `vkbur_ana` |
+| `SalesGroup` |  | |  | `vkgrp_ana` |
+| `SoldToParty` |  | |  | `kunnr_ana` |
+| `AdditionalCustomerGroup1` |  | |  | `kvgr1_ana` |
+| `AdditionalCustomerGroup2` |  | |  | `kvgr2_ana` |
+| `AdditionalCustomerGroup3` |  | |  | `kvgr3_ana` |
+| `AdditionalCustomerGroup4` |  | |  | `kvgr4_ana` |
+| `AdditionalCustomerGroup5` |  | |  | `kvgr5_ana` |
+| `SalesDocumentDate` |  | |  | `audat_ana` |
+| `SDDocumentReason` |  | |  | `augru_ana` |
+| `RequestedDeliveryDate` |  | |  | `cast(vbap.vdatu_ana as reqd_delivery_date preserving type)` |
+| `ShippingCondition` |  | |  | `vsbed_ana` |
+| `ShipToParty` |  | |  | `kunwe_ana` |
+| `PayerParty` |  | |  | `kunrg_ana` |
+| `BillToParty` |  | |  | `kunre_ana` |
+| `SalesEmployee` |  | |  | `perve_ana` |
+| `ResponsibleEmployee` |  | |  | `perzm_ana` |
+| `SalesEmployeeWorkAgreement` |  | |  | `cast(vbap.perve_ana as sales_empl preserving type)` |
+| `ResponsibleEmployeeWorkAgrmt` |  | |  | `cast(vbap.perzm_ana as resp_empl preserving type)` |
+| `OmniChannelSalesPromotion` |  | |  | `bob_promotion_id` |
+| `OmniChannelSalesPromotionRule` |  | |  | `bob_fg_id` |
+| `ConsumptionPosting` |  | |  | `kzvbr` |
+| `PlanningMaterial` |  | |  | `vpmat` |
+| `PlanningPlant` |  | |  | `vpwrk` |
+| `ProductBaseUnit` |  | |  | `prbme` |
+| `ProdPlntPlngMatlConversionFctr` |  | |  | `umref` |
+| `SlsContrAutoAssgmtIDForSlsOrd` |  | |  | `sls_contr_auto_assignment` |
+| `SalesDocItemSupplyBlockReason` |  | |  | `supply_block_reason` |
+| `_BusinessAreaText` | | ✓ | | |
+| `_MaterialText` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_OrigMaterialText` | | ✓ | | |
+| `_ShippingPointText` | | ✓ | | |
+| `_SlsDocItemEnhancedFields` | | ✓ | | |
+| `_SalesDocument` | | ✓ | | |
+| `_ScheduleLine` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_PricingElement` | | ✓ | | |
+| `_ItemBillingPlan` | | ✓ | | |
+| `_SubsequentDocument` | | ✓ | | |
+| `_PrecedingDocument` | | ✓ | | |
+| `_PrecedingProcFlowDocItem` | | ✓ | | |
+| `_SubsequentProcFlowDocItem` | | ✓ | | |
+| `_SDDocumentCategory` | | ✓ | | |
+| `_ItemCategory` | | ✓ | | |
+| `_HigherLevelItem` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_PlanningProduct` | | ✓ | | |
+| `_MainItemPricingRefProduct` | | ✓ | | |
+| `_OriginallyRequestedMaterial` | | ✓ | | |
+| `_MaterialPlant` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_ProductHierarchyNode` | | ✓ | | |
+| `_MaterialSubstitutionReason` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_MaterialPricingGroup` | | ✓ | | |
+| `_AdditionalMaterialGroup1` | | ✓ | | |
+| `_AdditionalMaterialGroup2` | | ✓ | | |
+| `_AdditionalMaterialGroup3` | | ✓ | | |
+| `_AdditionalMaterialGroup4` | | ✓ | | |
+| `_AdditionalMaterialGroup5` | | ✓ | | |
+| `_IndependentRequirementType` | | ✓ | | |
+| `_CustomerPurchaseOrderType` | | ✓ | | |
+| `_CustPurOrdTypeByShipToParty` | | ✓ | | |
+| `_MatlAccountAssignmentGroup` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_TargetQuantityUnit` | | ✓ | | |
+| `_BaseUnit` | | ✓ | | |
+| `_RequestedQuantityUnit` | | ✓ | | |
+| `_ItemWeightUnit` | | ✓ | | |
+| `_ItemVolumeUnit` | | ✓ | | |
+| `_ProductUnit` | | ✓ | | |
+| `_SalesDistrict` | | ✓ | | |
+| `_SalesDeal` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
+| `_SalesDocumentRjcnReason` | | ✓ | | |
+| `_ReturnReason` | | ✓ | | |
+| `_ReturnsRefundExtent` | | ✓ | | |
+| `_SalesContractValidityPerdUnit` | | ✓ | | |
+| `_SalesContractCanclnParty` | | ✓ | | |
+| `_SalesContractCanclnReason` | | ✓ | | |
+| `_ContractItemDownPaymentStatus` | | ✓ | | |
+| `_NetPriceQuantityUnit` | | ✓ | | |
+| `_StatisticalValueControl` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
+| `_ShippingType` | | ✓ | | |
+| `_DeliveryPriority` | | ✓ | | |
+| `_PartialDeliveryItem` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_OriginalPlant` | | ✓ | | |
+| `_TransitPlant` | | ✓ | | |
+| `_PlanningPlant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_Route` | | ✓ | | |
+| `_ItemIsBillingRelevant` | | ✓ | | |
+| `_ItemBillingBlockReason` | | ✓ | | |
+| `_BillingPlan` | | ✓ | | |
+| `_CustomerPaymentTerms` | | ✓ | | |
+| `_IncotermsVersion` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_WBSElementBasicData_2` | | ✓ | | |
+| `_ProfitabilitySegment` | | ✓ | | |
+| `_SlsDocItmRARlvnceType` | | ✓ | | |
+| `_ReferenceSDDocument` | | ✓ | | |
+| `_ReferenceSDDocumentItem` | | ✓ | | |
+| `_ReferenceSDDocumentCategory` | | ✓ | | |
+| `_PlngDelivSchedInstrn` | | ✓ | | |
+| `_SDProcessStatus` | | ✓ | | |
+| `_PurchaseConfirmationStatus` | | ✓ | | |
+| `_TotalDeliveryStatus` | | ✓ | | |
+| `_DeliveryStatus` | | ✓ | | |
+| `_DeliveryBlockStatus` | | ✓ | | |
+| `_DeliveryConfirmationStatus` | | ✓ | | |
+| `_DeliveryDateTypeRule` | | ✓ | | |
+| `_OrderRelatedBillingStatus` | | ✓ | | |
+| `_BillingBlockStatus` | | ✓ | | |
+| `_SDDocumentRejectionStatus` | | ✓ | | |
+| `_ItemGeneralIncompletionStatus` | | ✓ | | |
+| `_ItemBillingIncompletionStatus` | | ✓ | | |
+| `_PricingIncompletionStatus` | | ✓ | | |
+| `_ItemDelivIncompletionSts` | | ✓ | | |
+| `_TotalSDDocReferenceStatus` | | ✓ | | |
+| `_SDDocReferenceStatus` | | ✓ | | |
+| `_AltvBsdConfSubstitutionSts` | | ✓ | | |
+| `_ChmlCmplncStatus` | | ✓ | | |
+| `_DangerousGoodsStatus` | | ✓ | | |
+| `_SafetyDataSheetStatus` | | ✓ | | |
+| `_TrdCmplncEmbargoSts` | | ✓ | | |
+| `_TrdCmplncSnctndListChkSts` | | ✓ | | |
+| `_OvrlTrdCmplncLegalCtrlChkSts` | | ✓ | | |
+| `_SlsDocItmOvrlSupplyBlockSts` | | ✓ | | |
+| `_SlsDocItemSupplyBlockReason` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_SalesDocumentItemProcgCode` | | ✓ | | |
+| `_DownPaymentProcessingVariant` | | ✓ | | |
+| `_CustomerPriceGroup` | | ✓ | | |
+| `_SalesDocumentType` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_OrganizationDivision` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SDDocumentReason` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_AdditionalCustomerGroup1` | | ✓ | | |
+| `_AdditionalCustomerGroup2` | | ✓ | | |
+| `_AdditionalCustomerGroup3` | | ✓ | | |
+| `_AdditionalCustomerGroup4` | | ✓ | | |
+| `_AdditionalCustomerGroup5` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_SalesEmployee` | | ✓ | | |
+| `_ResponsibleEmployee` | | ✓ | | |
+| `_ConsumptionPosting` | | ✓ | | |
+| `_MRPArea` | | ✓ | | |
+| `_SolutionOrder` | | ✓ | | |
+| `_SolutionOrderItem` | | ✓ | | |
+| `_SolutionOrderBundleItem` | | ✓ | | |
+| `_SalesValueChainCategory` | | ✓ | | |
 
 ## Associations
 

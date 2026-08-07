@@ -30,34 +30,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CentralSupplierQuotation` | `CentralSupplierQuotation` |
-| key `CentralSupplierQuotationItem` | `CentralSupplierQuotationItem` |
-| key `DistributionKey` | `DistributionKey` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `PurchasingDocumentType` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `CompanyCode` | `CompanyCode` |
-| `Plant` | `Plant` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `Currency` | `Currency` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `StorageLocation` | `StorageLocation` |
-| `CntrlPurgDistributionInPercent` | `CntrlPurgDistributionInPercent` |
-| `TargetQuantity` | `TargetQuantity` |
-| `TargetAmount` | `TargetAmount` |
-| `PurgDocItemDistributionStatus` | `PurgDocItemDistributionStatus` |
-| `PurgDocItmDistrLineDeltnCode` | `PurgDocItmDistrLineDeltnCode` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `DistributionType` | `DistributionType` |
-| `ProcurementHubSourceSystem` | `ProcurementHubSourceSystem` |
-| `ProcmtHubPurchaseRequisition` | `ProcmtHubPurchaseRequisition` |
-| `ProcmtHubPurRequisitionItem` | `ProcmtHubPurRequisitionItem` |
-| `PurReqnReleaseStatus` | `PurReqnReleaseStatus` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_CntrlSupplierQuotationItem` | *Association* |
-| `_CntrlQtan` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CentralSupplierQuotation` | ✓ | |  |  |
+| `CentralSupplierQuotationItem` | ✓ | |  |  |
+| `DistributionKey` | ✓ | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `Plant` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `Currency` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `CntrlPurgDistributionInPercent` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetAmount` |  | |  |  |
+| `PurgDocItemDistributionStatus` |  | |  |  |
+| `PurgDocItmDistrLineDeltnCode` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `DistributionType` |  | |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |
+| `ProcmtHubPurchaseRequisition` |  | |  |  |
+| `ProcmtHubPurRequisitionItem` |  | |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_CntrlSupplierQuotationItem` | | ✓ | | |
+| `_CntrlQtan` | | ✓ | | |
 
 ## Source Code
 

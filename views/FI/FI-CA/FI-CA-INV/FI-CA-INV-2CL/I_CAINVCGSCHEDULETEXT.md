@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgSchedule` | `_tfk2606t.inv_schedule` |
-| key `Language` | `_tfk2606t.langu` |
-| `CAInvcgScheduleText` | `_tfk2606t.text` |
-| `_CAInvcgSchedule` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgSchedule` | ✓ | | `_tfk2606t` | `inv_schedule` |
+| `Language` | ✓ | | `_tfk2606t` | `langu` |
+| `CAInvcgScheduleText` |  | | `_tfk2606t` | `text` |
+| `_CAInvcgSchedule` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `werks` |
-| key `InHouseProductionReplnmtStrgy` | `pksts` |
-| key `Language` | `spras` |
-| `InhProdnReplnmtStrgyName` | `pksbz` |
-| `_KnbnProdnReplnmtStrgy` | *Association* |
-| `_Language` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `InHouseProductionReplnmtStrgy` | ✓ | |  | `pksts` |
+| `Language` | ✓ | |  | `spras` |
+| `InhProdnReplnmtStrgyName` |  | |  | `pksbz` |
+| `_KnbnProdnReplnmtStrgy` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

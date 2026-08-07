@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TradingPartner` | `t880.rcomp` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TradingPartner` | ✓ | |  | `rcomp` |
 
 ## Source Code
 

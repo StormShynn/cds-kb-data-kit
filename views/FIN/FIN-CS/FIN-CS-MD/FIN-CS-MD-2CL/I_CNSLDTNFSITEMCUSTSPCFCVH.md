@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnFSItemCustomerSpecific` | `_CnsldtnFSItemCustSpcfc.CnsldtnFSItemCustomerSpecific` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnFSItemCustomerSpecific` | ✓ | | `_CnsldtnFSItemCustSpcfc` | `CnsldtnFSItemCustomerSpecific` |
 
 ## Source Code
 

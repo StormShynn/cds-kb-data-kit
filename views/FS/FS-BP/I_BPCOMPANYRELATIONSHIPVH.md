@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPCompanyRelationship` | `BPCompanyRelationship` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPCompanyRelationship` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

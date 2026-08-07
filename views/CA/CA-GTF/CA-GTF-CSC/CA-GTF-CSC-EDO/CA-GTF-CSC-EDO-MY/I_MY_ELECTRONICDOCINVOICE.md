@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocUUID` | `edoc_guid` |
-| `MY_EDocInvcOriginalRefNo` | `edoc_my_orgref_no` |
-| `MY_EDocInvcConsolidate` | `edoc_my_consolidate_invoice` |
-| `MY_EDocInlandRevnBrdMYNmbr` | `edoc_my_irbm_no` |
-| `MY_EDocInvcCancelReason` | `edoc_my_canc_reason` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocUUID` | ✓ | |  | `edoc_guid` |
+| `MY_EDocInvcOriginalRefNo` |  | |  | `edoc_my_orgref_no` |
+| `MY_EDocInvcConsolidate` |  | |  | `edoc_my_consolidate_invoice` |
+| `MY_EDocInlandRevnBrdMYNmbr` |  | |  | `edoc_my_irbm_no` |
+| `MY_EDocInvcCancelReason` |  | |  | `edoc_my_canc_reason` |
 
 ## Source Code
 

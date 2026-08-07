@@ -28,27 +28,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RealEstateUsableObjectUUID` | `_REUsableObjectData.RealEstateUsableObjectUUID` |
-| key `REStatusObjectSource` | `_REObjectAssgmt.REStatusObjectSource` |
-| key `REObjectAssignmentType` | `_REObjectAssgmt.REObjectAssignmentType` |
-| key `REStatusObjectTarget` | `_REObjectAssgmt.REStatusObjectTarget` |
-| key `ValidityStartDate` | `_REObjectAssgmt.ValidityStartDate` |
-| `ValidityEndDate` | `_REObjectAssgmt.ValidityEndDate` |
-| `REOnlyInfoAssgmt` | `_REObjectAssgmt.REOnlyInfoAssgmt` |
-| `REStatusObjectSourceIsArchived` | `_REObjectAssgmt.REStatusObjectSourceIsArchived` |
-| `REGenerationType` | `_REObjectAssgmt.REGenerationType` |
-| `REIsMainAsset` | `_REObjectAssgmt.REIsMainAsset` |
-| `REAssignmentHasMultiple` | `_REObjectAssgmt.REAssignmentHasMultiple` |
-| `REObjectPossessionStartDate` | `_REObjectAssgmt.REObjectPossessionStartDate` |
-| `REObjectPossessionEndDate` | `_REObjectAssgmt.REObjectPossessionEndDate` |
-| `REIsLeadingObject` | `_REObjectAssgmt.REIsLeadingObject` |
-| `REObjectTypeTarget` | `cast( left(_REObjectAssgmt.REStatusObjectTarget,2) as reipvdmbusobjtypecn preserving type )` |
-| `InternalOrder` | `_REObjectAssgmt._InternalOrder.InternalOrder` |
-| `WBSElementExternalID` | `_REObjectAssgmt._WBSElement.WBSElementExternalID` |
-| `_REUsableObject` | *Association* |
-| `_REObjectTypeTarget` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RealEstateUsableObjectUUID` | ✓ | | `_REUsableObjectData` | `RealEstateUsableObjectUUID` |
+| `REStatusObjectSource` | ✓ | | `_REObjectAssgmt` | `REStatusObjectSource` |
+| `REObjectAssignmentType` | ✓ | | `_REObjectAssgmt` | `REObjectAssignmentType` |
+| `REStatusObjectTarget` | ✓ | | `_REObjectAssgmt` | `REStatusObjectTarget` |
+| `ValidityStartDate` | ✓ | | `_REObjectAssgmt` | `ValidityStartDate` |
+| `ValidityEndDate` |  | | `_REObjectAssgmt` | `ValidityEndDate` |
+| `REOnlyInfoAssgmt` |  | | `_REObjectAssgmt` | `REOnlyInfoAssgmt` |
+| `REStatusObjectSourceIsArchived` |  | | `_REObjectAssgmt` | `REStatusObjectSourceIsArchived` |
+| `REGenerationType` |  | | `_REObjectAssgmt` | `REGenerationType` |
+| `REIsMainAsset` |  | | `_REObjectAssgmt` | `REIsMainAsset` |
+| `REAssignmentHasMultiple` |  | | `_REObjectAssgmt` | `REAssignmentHasMultiple` |
+| `REObjectPossessionStartDate` |  | | `_REObjectAssgmt` | `REObjectPossessionStartDate` |
+| `REObjectPossessionEndDate` |  | | `_REObjectAssgmt` | `REObjectPossessionEndDate` |
+| `REIsLeadingObject` |  | | `_REObjectAssgmt` | `REIsLeadingObject` |
+| `REObjectTypeTarget` |  | |  | `cast( left(_REObjectAssgmt.REStatusObjectTarget,2) as reipvdmbusobjtypecn preserving type )` |
+| `InternalOrder` |  | | `_REObjectAssgmt._InternalOrder` | `InternalOrder` |
+| `WBSElementExternalID` |  | | `_REObjectAssgmt._WBSElement` | `WBSElementExternalID` |
+| `_REUsableObject` | | ✓ | | |
+| `_REObjectTypeTarget` | | ✓ | | |
 
 ## Associations
 

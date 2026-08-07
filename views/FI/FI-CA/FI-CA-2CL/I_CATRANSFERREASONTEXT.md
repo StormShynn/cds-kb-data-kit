@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CATransferReason` | `umgrd` |
-| key `Language` | `spras` |
-| `CATransferReasonName` | `umtxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CATransferReason` | ✓ | |  | `umgrd` |
+| `Language` | ✓ | |  | `spras` |
+| `CATransferReasonName` |  | |  | `umtxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

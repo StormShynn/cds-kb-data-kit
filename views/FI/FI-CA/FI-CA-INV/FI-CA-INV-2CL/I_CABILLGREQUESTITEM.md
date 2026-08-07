@@ -29,25 +29,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgReqDocument` | `billreqno` |
-| key `CABillgReqItem` | `billreqitem` |
-| `CABllbleItmListId` | `bitlist_id` |
-| `CABillgReqItmAmount` | `bixreq_amount` |
-| `CABillgReqItmAmountCurrency` | `bixreq_curr` |
-| `CABillgFirstDate` | `bill_first` |
-| `CATaxIsIncluded` | `tax_included` |
-| `CABllbleItmClass` | `bitcat` |
-| `CABllbleItmSourceTransType` | `cast( srctatype as srctatype_gfn_kk preserving type )` |
-| `CABllbleItmSourceTransId` | `cast( srctaid as srctaid_gfn_kk preserving type )` |
-| `CABllbleItmPackageUUID` | `bitpackuuid` |
-| `CABllbleItmPackNo` | `bitpackcno` |
-| `CABllbleItmCreationDate` | `bitcrdate` |
-| `_CABillgRequest` | *Association* |
-| `_CABllbleItmClass` | *Association* |
-| `_CABllbleItmSrceTransType` | *Association* |
-| `_CABillgReqItmAmountCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgReqDocument` | ✓ | |  | `billreqno` |
+| `CABillgReqItem` | ✓ | |  | `billreqitem` |
+| `CABllbleItmListId` |  | |  | `bitlist_id` |
+| `CABillgReqItmAmount` |  | |  | `bixreq_amount` |
+| `CABillgReqItmAmountCurrency` |  | |  | `bixreq_curr` |
+| `CABillgFirstDate` |  | |  | `bill_first` |
+| `CATaxIsIncluded` |  | |  | `tax_included` |
+| `CABllbleItmClass` |  | |  | `bitcat` |
+| `CABllbleItmSourceTransType` |  | |  | `cast( srctatype as srctatype_gfn_kk preserving type )` |
+| `CABllbleItmSourceTransId` |  | |  | `cast( srctaid as srctaid_gfn_kk preserving type )` |
+| `CABllbleItmPackageUUID` |  | |  | `bitpackuuid` |
+| `CABllbleItmPackNo` |  | |  | `bitpackcno` |
+| `CABllbleItmCreationDate` |  | |  | `bitcrdate` |
+| `_CABillgRequest` | | ✓ | | |
+| `_CABllbleItmClass` | | ✓ | | |
+| `_CABllbleItmSrceTransType` | | ✓ | | |
+| `_CABillgReqItmAmountCurrency` | | ✓ | | |
 
 ## Associations
 

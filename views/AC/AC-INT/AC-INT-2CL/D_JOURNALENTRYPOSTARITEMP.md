@@ -29,57 +29,57 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `GLAccountLineItem` | `docln6` |
-| `Customer` | `kunnr` |
-| `GLAccount` | `hkont` |
-| `DocumentItemText` | `sgtxt` |
-| `AssignmentReference` | `acpi_zuonr` |
-| `Reference1IDByBusinessPartner` | `xref1` |
-| `Reference2IDByBusinessPartner` | `xref2` |
-| `Reference3IDByBusinessPartner` | `xref3` |
-| `PaymentTerms` | `acpi_zterm` |
-| `DueCalculationBaseDate` | `acpi_zfbdt` |
-| `CashDiscount1Days` | `acpi_zbd1t` |
-| `CashDiscount1Percent` | `acpi_zbd1p` |
-| `CashDiscount2Days` | `acpi_zbd2t` |
-| `CashDiscount2Percent` | `acpi_zbd2p` |
-| `NetPaymentDays` | `acpi_zbd3t` |
-| `PaymentMethod` | `acpi_zlsch` |
-| `PaymentMethodSupplement` | `uzawe` |
-| `SEPAMandate` | `sepa_mndid` |
-| `PaymentReference` | `acpi_kidno` |
-| `PaymentBlockingReason` | `acpi_zlspr` |
-| `PaymentServiceProvider` | `com_wec_payment_srv_provider` |
-| `PaymentRefByPaytSrvcProvider` | `fps_transaction` |
-| `StateCentralBankPaymentReason` | `lzbkz` |
-| `ReportingCountry` | `egmld_bsez` |
-| `VATRegistration` | `stceg` |
-| `OplAcctgDocItmCntrySpcfcRef1` | `fac_glo_ref1` |
-| `BranchAccount` | `acpi_filkd` |
-| `BusinessPlace` | `acpi_branch` |
-| `BusinessSectionCode` | `secco` |
-| `HouseBank` | `hbkid` |
-| `HouseBankAccount` | `hktid` |
-| `TaxCountry` | `fot_tax_country` |
-| `SpecialGLCode` | `acpi_umskz` |
-| `SalesOrder` | `kdauf` |
-| `SalesOrderItem` | `kdpos` |
-| `TaxCode` | `mwskz` |
-| `TaxJurisdiction` | `txjcd` |
-| `JointVentureBillingType` | `jv_bilind` |
-| `JointVenture` | `jv_name` |
-| `JointVentureRecoveryCode` | `jv_recind` |
-| `JointVentureEquityGroup` | `jv_egroup` |
-| `CreditControlArea` | `acpi_kkber` |
-| `PaymentReason` | `farp_payt_rsn` |
-| `DigitalPaymentType` | `dp_payment_type` |
-| `IsEUTriangularDeal` | `xegdr` |
-| `PaymentByDigitalPaymentService` | `dp_transid` |
-| `DunningKey` | `acpi_mschl` |
-| `DunningBlock` | `acpi_mansp` |
-| `_JournalEntryPost` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccountLineItem` |  | |  | `docln6` |
+| `Customer` |  | |  | `kunnr` |
+| `GLAccount` |  | |  | `hkont` |
+| `DocumentItemText` |  | |  | `sgtxt` |
+| `AssignmentReference` |  | |  | `acpi_zuonr` |
+| `Reference1IDByBusinessPartner` |  | |  | `xref1` |
+| `Reference2IDByBusinessPartner` |  | |  | `xref2` |
+| `Reference3IDByBusinessPartner` |  | |  | `xref3` |
+| `PaymentTerms` |  | |  | `acpi_zterm` |
+| `DueCalculationBaseDate` |  | |  | `acpi_zfbdt` |
+| `CashDiscount1Days` |  | |  | `acpi_zbd1t` |
+| `CashDiscount1Percent` |  | |  | `acpi_zbd1p` |
+| `CashDiscount2Days` |  | |  | `acpi_zbd2t` |
+| `CashDiscount2Percent` |  | |  | `acpi_zbd2p` |
+| `NetPaymentDays` |  | |  | `acpi_zbd3t` |
+| `PaymentMethod` |  | |  | `acpi_zlsch` |
+| `PaymentMethodSupplement` |  | |  | `uzawe` |
+| `SEPAMandate` |  | |  | `sepa_mndid` |
+| `PaymentReference` |  | |  | `acpi_kidno` |
+| `PaymentBlockingReason` |  | |  | `acpi_zlspr` |
+| `PaymentServiceProvider` |  | |  | `com_wec_payment_srv_provider` |
+| `PaymentRefByPaytSrvcProvider` |  | |  | `fps_transaction` |
+| `StateCentralBankPaymentReason` |  | |  | `lzbkz` |
+| `ReportingCountry` |  | |  | `egmld_bsez` |
+| `VATRegistration` |  | |  | `stceg` |
+| `OplAcctgDocItmCntrySpcfcRef1` |  | |  | `fac_glo_ref1` |
+| `BranchAccount` |  | |  | `acpi_filkd` |
+| `BusinessPlace` |  | |  | `acpi_branch` |
+| `BusinessSectionCode` |  | |  | `secco` |
+| `HouseBank` |  | |  | `hbkid` |
+| `HouseBankAccount` |  | |  | `hktid` |
+| `TaxCountry` |  | |  | `fot_tax_country` |
+| `SpecialGLCode` |  | |  | `acpi_umskz` |
+| `SalesOrder` |  | |  | `kdauf` |
+| `SalesOrderItem` |  | |  | `kdpos` |
+| `TaxCode` |  | |  | `mwskz` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `JointVentureBillingType` |  | |  | `jv_bilind` |
+| `JointVenture` |  | |  | `jv_name` |
+| `JointVentureRecoveryCode` |  | |  | `jv_recind` |
+| `JointVentureEquityGroup` |  | |  | `jv_egroup` |
+| `CreditControlArea` |  | |  | `acpi_kkber` |
+| `PaymentReason` |  | |  | `farp_payt_rsn` |
+| `DigitalPaymentType` |  | |  | `dp_payment_type` |
+| `IsEUTriangularDeal` |  | |  | `xegdr` |
+| `PaymentByDigitalPaymentService` |  | |  | `dp_transid` |
+| `DunningKey` |  | |  | `acpi_mschl` |
+| `DunningBlock` |  | |  | `acpi_mansp` |
+| `_JournalEntryPost` | | ✓ | | |
 
 ## Source Code
 

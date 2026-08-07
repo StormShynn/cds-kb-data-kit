@@ -30,31 +30,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionRoutingGroup` | `ProductionRoutingGroup` |
-| key `ProductionRouting` | `ProductionRouting` |
-| key `ProductionRoutingSequence` | `ProductionRoutingSequence` |
-| key `ProductionRoutingOpIntID` | `ProductionRoutingOpIntID` |
-| key `ProdnRtgOpBOMItemInternalID` | `ProdnRtgOpBOMItemInternalID` |
-| key `ProdnRtgOpBOMItemIntVersion` | `ProdnRtgOpBOMItemIntVersion` |
-| `BillOfMaterialCategory` | `BillOfMaterialCategory` |
-| `BillOfMaterial` | `BillOfMaterial` |
-| `BillOfMaterialComponent` | `BillOfMaterialComponent` |
-| `BillOfMaterialVariant` | `BillOfMaterialVariant` |
-| `BillOfMaterialItemNodeNumber` | `BillOfMaterialItemNodeNumber` |
-| `MatlCompIsMarkedForBackflush` | `MatlCompIsMarkedForBackflush` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_NonSqncTP` | *Association* |
-| `_Header` | *Association* |
-| `_ProdnRtgTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |
+| `ProductionRouting` | ✓ | |  |  |
+| `ProductionRoutingSequence` | ✓ | |  |  |
+| `ProductionRoutingOpIntID` | ✓ | |  |  |
+| `ProdnRtgOpBOMItemInternalID` | ✓ | |  |  |
+| `ProdnRtgOpBOMItemIntVersion` | ✓ | |  |  |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BillOfMaterial` |  | |  |  |
+| `BillOfMaterialComponent` |  | |  |  |
+| `BillOfMaterialVariant` |  | |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_NonSqncTP` | | ✓ | | |
+| `_Header` | | ✓ | | |
+| `_ProdnRtgTP` | | ✓ | | |
 
 ## Source Code
 

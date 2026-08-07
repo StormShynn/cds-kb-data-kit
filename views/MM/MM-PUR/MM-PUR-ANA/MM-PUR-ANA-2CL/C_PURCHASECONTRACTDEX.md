@@ -31,61 +31,61 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `PurchaseContract` |
-| `PurchaseContractType` | `PurchaseContractType` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `Supplier` | `Supplier` |
-| `InvoicingParty` | `InvoicingParty` |
-| `SupplyingSupplier` | `SupplyingSupplier` |
-| `CreationDate` | `CreationDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `ExchangeRate` | `cast ( ExchangeRate as fis_exchange_rate preserving type)` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `CompanyCode` | `CompanyCode` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `PurchaseContractTargetAmount` | `PurchaseContractTargetAmount` |
-| `ReleaseCode` | `ReleaseCode` |
-| `CreatedByUser` | `CreatedByUser` |
-| `PurchasingDocumentDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `ExchangeRateIsFixed` | `ExchangeRateIsFixed` |
-| `QuotationSubmissionDate` | `QuotationSubmissionDate` |
-| `SupplierQuotation` | `SupplierQuotation` |
-| `CorrespncExternalReference` | `CorrespncExternalReference` |
-| `CorrespncInternalReference` | `CorrespncInternalReference` |
-| `SupplierRespSalesPersonName` | `SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `SupplierPhoneNumber` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `ReleaseIsNotCompleted` | `ReleaseIsNotCompleted` |
-| `SupplierAddressID` | `SupplierAddressID` |
-| `_PurchaseContractItemDEX` | *Association* |
-| `_PurchasingContractType` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_Supplier` | *Association* |
-| `_InvoicingParty` | *Association* |
-| `_SupplyingSupplier` | *Association* |
-| `_Currency` | *Association* |
-| `_PurchasingDocumentCategory` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_IncotermsVersion` | *Association* |
-| `_Address` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractType` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `InvoicingParty` |  | |  |  |
+| `SupplyingSupplier` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `ExchangeRate` |  | |  | `cast ( ExchangeRate as fis_exchange_rate preserving type)` |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |
+| `ReleaseCode` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `SupplierQuotation` |  | |  |  |
+| `CorrespncExternalReference` |  | |  |  |
+| `CorrespncInternalReference` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |
+| `SupplierAddressID` |  | |  |  |
+| `_PurchaseContractItemDEX` | | ✓ | | |
+| `_PurchasingContractType` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_InvoicingParty` | | ✓ | | |
+| `_SupplyingSupplier` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_PurchasingDocumentCategory` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_IncotermsVersion` | | ✓ | | |
+| `_Address` | | ✓ | | |
 
 ## Associations
 

@@ -27,13 +27,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PricingConditionTableRangeSign` | `tvarv_sign` |
-| `PrcgConditionTableRangeOption` | `tvarv_opti` |
-| `PricingConditionTableRangeLow` | `kotabnr` |
-| `PricingConditionTableRangeHigh` | `kotabnr` |
-| `_ConditionRecordCriteriaItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PricingConditionTableRangeSign` |  | |  | `tvarv_sign` |
+| `PrcgConditionTableRangeOption` |  | |  | `tvarv_opti` |
+| `PricingConditionTableRangeLow` |  | |  | `kotabnr` |
+| `PricingConditionTableRangeHigh` |  | |  | `kotabnr` |
+| `_ConditionRecordCriteriaItem` | | ✓ | | |
 
 ## Source Code
 

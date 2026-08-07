@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `HedgingClassification` | `hedging_classification` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `HedgingClassification` | ✓ | |  | `hedging_classification` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CtrlPostgForExtWhseMgmtSyst` | `cast(substring(domvalue_l, 1, 1) as bfwms )` |
-| key `Language` | `cast(ddlanguage as spras preserving type)` |
-| `CtrlPostgForWhseMgmtSystName` | `cast(ddtext as nsdm_ewm_control_posting_text preserving type)` |
-| `_CtrlPostgExtWhseMgmtSyst` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CtrlPostgForExtWhseMgmtSyst` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as bfwms )` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type)` |
+| `CtrlPostgForWhseMgmtSystName` |  | |  | `cast(ddtext as nsdm_ewm_control_posting_text preserving type)` |
+| `_CtrlPostgExtWhseMgmtSyst` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

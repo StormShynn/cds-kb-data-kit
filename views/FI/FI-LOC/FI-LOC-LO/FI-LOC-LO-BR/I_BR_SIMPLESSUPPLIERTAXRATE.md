@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Supplier` | `supplier` |
-| key `FiscalYear` | `fiscal_year` |
-| key `FiscalMonth` | `fiscal_month` |
-| key `BR_SIMPLESClassCode` | `class` |
-| `BR_SIMPLESTaxRate` | `rate` |
-| `AuthorizationGroup` | `_Supplier.AuthorizationGroup` |
-| `SupplierAccountGroup` | `_Supplier.SupplierAccountGroup` |
-| `DataControllerSet` | `_Supplier.DataControllerSet` |
-| `DataController1` | `_Supplier.DataController1` |
-| `DataController2` | `_Supplier.DataController2` |
-| `DataController3` | `_Supplier.DataController3` |
-| `DataController4` | `_Supplier.DataController4` |
-| `DataController5` | `_Supplier.DataController5` |
-| `DataController6` | `_Supplier.DataController6` |
-| `DataController7` | `_Supplier.DataController7` |
-| `DataController8` | `_Supplier.DataController8` |
-| `DataController9` | `_Supplier.DataController9` |
-| `DataController10` | `_Supplier.DataController10` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Supplier` | ✓ | |  | `supplier` |
+| `FiscalYear` | ✓ | |  | `fiscal_year` |
+| `FiscalMonth` | ✓ | |  | `fiscal_month` |
+| `BR_SIMPLESClassCode` | ✓ | |  | `class` |
+| `BR_SIMPLESTaxRate` |  | |  | `rate` |
+| `AuthorizationGroup` |  | | `_Supplier` | `AuthorizationGroup` |
+| `SupplierAccountGroup` |  | | `_Supplier` | `SupplierAccountGroup` |
+| `DataControllerSet` |  | | `_Supplier` | `DataControllerSet` |
+| `DataController1` |  | | `_Supplier` | `DataController1` |
+| `DataController2` |  | | `_Supplier` | `DataController2` |
+| `DataController3` |  | | `_Supplier` | `DataController3` |
+| `DataController4` |  | | `_Supplier` | `DataController4` |
+| `DataController5` |  | | `_Supplier` | `DataController5` |
+| `DataController6` |  | | `_Supplier` | `DataController6` |
+| `DataController7` |  | | `_Supplier` | `DataController7` |
+| `DataController8` |  | | `_Supplier` | `DataController8` |
+| `DataController9` |  | | `_Supplier` | `DataController9` |
+| `DataController10` |  | | `_Supplier` | `DataController10` |
 
 ## Associations
 

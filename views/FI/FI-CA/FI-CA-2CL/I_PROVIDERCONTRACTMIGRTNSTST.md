@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAProviderContractMigrtnStatus` | `cast( left( dd07t.domvalue_l, 1 ) as migst_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAProviderContrMigrtnStsText` | `cast( ddtext as migst_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAProviderContractMigrtnStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as migst_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAProviderContrMigrtnStsText` |  | |  | `cast( ddtext as migst_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

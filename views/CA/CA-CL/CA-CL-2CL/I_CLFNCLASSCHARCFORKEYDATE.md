@@ -27,24 +27,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClassInternalID` | `ClassInternalID` |
-| key `CharcInternalID` | `CharcInternalID` |
-| `CharcPositionNumber` | `CharcPositionNumber` |
-| `Characteristic` | `Characteristic` |
-| `AncestorClassInternalID` | `AncestorClassInternalID` |
-| `ClassType` | `ClassType` |
-| `ChangeNumber` | `ChangeNumber` |
-| `CharcIsPrintRelevant` | `CharcIsPrintRelevant` |
-| `CharcIsSearchRelevant` | `CharcIsSearchRelevant` |
-| `CharcIsDisplayRelevant` | `CharcIsDisplayRelevant` |
-| `CharcIsProposalRelevant` | `CharcIsProposalRelevant` |
-| `CharcIsPrptnOrProdUnitRelevant` | `CharcIsPrptnOrProdUnitRelevant` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `_Class` | *Association* |
-| `_Characteristic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClassInternalID` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `CharcPositionNumber` |  | |  |  |
+| `Characteristic` |  | |  |  |
+| `AncestorClassInternalID` |  | |  |  |
+| `ClassType` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `CharcIsPrintRelevant` |  | |  |  |
+| `CharcIsSearchRelevant` |  | |  |  |
+| `CharcIsDisplayRelevant` |  | |  |  |
+| `CharcIsProposalRelevant` |  | |  |  |
+| `CharcIsPrptnOrProdUnitRelevant` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `_Class` | | ✓ | | |
+| `_Characteristic` | | ✓ | | |
 
 ## Associations
 

@@ -30,43 +30,43 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `t012.bukrs` |
-| key `HouseBank` | `t012.hbkid` |
-| `BankCountry` | `t012.banks` |
-| `BankInternalID` | `t012.bankl` |
-| `PhoneNumber1` | `t012.telf1` |
-| `TaxID1` | `t012.stcd1` |
-| `ContactPersonName` | `t012.name1` |
-| `Language` | `t012.spras` |
-| `BusinessPlace` | `t012.bupla` |
-| `EDIPartner` | `t012d.edipn` |
-| `EDISignatureType` | `t012d.edisn` |
-| `DataMediumExchangeBank` | `t012d.dtbid` |
-| `DataMediumReceivingBank` | `t012d.dtelz` |
-| `CustomerByHouseBank` | `t012d.dtkid` |
-| `BankControlKey` | `t012d.dtgko` |
-| `DataExchangeInstruction` | `t012d.dtaws` |
-| `ExecutionLeadDays` | `t012d.dtvta` |
-| `CentralBankReportIsRequired` | `t012d.dtxbb` |
-| `RegionByCentralBank` | `t012d.dtlbe` |
-| `PaymentIsForwardedToCentralBk` | `t012d.dtxms` |
-| `ChargeAccountCurrencyISOCode` | `t012d.dtgis` |
-| `ChargeAccount` | `t012d.dtgbk` |
-| `ChargeAccountBank` | `t012d.dtglz` |
-| `OrderingCompanyByBank` | `t012d.dtfin` |
-| `DefaultPartnerValidToDate` | `_DefaultableBP.ValidTo` |
-| `DefaultPartnerValidFromDate` | `_DefaultableBP.ValidFrom` |
-| `DefaultPartnerNo` | `_DefaultableBP.BusinessPartnerNumber` |
-| `RiskPartnerValidToDate` | `_RiskBP.ValidTo` |
-| `RiskPartnerValidFromDate` | `_RiskBP.ValidFrom` |
-| `RiskPartnerNo` | `_RiskBP.BusinessPartnerNumber` |
-| `DataExchangeInstructionKey` | `t012d.dtaws` |
-| `HouseBankChargeAccount` | `t012d.dtgbk` |
-| `HsBkIsInstantBalanceEnabled` | `t012d.insbalenabled` |
-| `_Bank` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `HouseBank` | ✓ | |  | `hbkid` |
+| `BankCountry` |  | |  | `banks` |
+| `BankInternalID` |  | |  | `bankl` |
+| `PhoneNumber1` |  | |  | `telf1` |
+| `TaxID1` |  | |  | `stcd1` |
+| `ContactPersonName` |  | |  | `name1` |
+| `Language` |  | |  | `spras` |
+| `BusinessPlace` |  | |  | `bupla` |
+| `EDIPartner` |  | |  | `edipn` |
+| `EDISignatureType` |  | |  | `edisn` |
+| `DataMediumExchangeBank` |  | |  | `dtbid` |
+| `DataMediumReceivingBank` |  | |  | `dtelz` |
+| `CustomerByHouseBank` |  | |  | `dtkid` |
+| `BankControlKey` |  | |  | `dtgko` |
+| `DataExchangeInstruction` |  | |  | `dtaws` |
+| `ExecutionLeadDays` |  | |  | `dtvta` |
+| `CentralBankReportIsRequired` |  | |  | `dtxbb` |
+| `RegionByCentralBank` |  | |  | `dtlbe` |
+| `PaymentIsForwardedToCentralBk` |  | |  | `dtxms` |
+| `ChargeAccountCurrencyISOCode` |  | |  | `dtgis` |
+| `ChargeAccount` |  | |  | `dtgbk` |
+| `ChargeAccountBank` |  | |  | `dtglz` |
+| `OrderingCompanyByBank` |  | |  | `dtfin` |
+| `DefaultPartnerValidToDate` |  | | `_DefaultableBP` | `ValidTo` |
+| `DefaultPartnerValidFromDate` |  | | `_DefaultableBP` | `ValidFrom` |
+| `DefaultPartnerNo` |  | | `_DefaultableBP` | `BusinessPartnerNumber` |
+| `RiskPartnerValidToDate` |  | | `_RiskBP` | `ValidTo` |
+| `RiskPartnerValidFromDate` |  | | `_RiskBP` | `ValidFrom` |
+| `RiskPartnerNo` |  | | `_RiskBP` | `BusinessPartnerNumber` |
+| `DataExchangeInstructionKey` |  | |  | `dtaws` |
+| `HouseBankChargeAccount` |  | |  | `dtgbk` |
+| `HsBkIsInstantBalanceEnabled` |  | |  | `insbalenabled` |
+| `_Bank` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

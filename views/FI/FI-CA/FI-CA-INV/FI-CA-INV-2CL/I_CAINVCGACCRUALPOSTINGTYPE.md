@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgAccrualPostingType` | `billac_type` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgAccrualPostingType` | ✓ | |  | `billac_type` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

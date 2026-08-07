@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharacteristicAttributeCodeGrp` | `codegruppe` |
-| key `CharacteristicAttributeCode` | `code` |
-| key `Language` | `sprache` |
-| `CharacteristicAttributeCodeTxt` | `cast( kurztext as vdm_qtxt_code preserving type )` |
-| `_CharcAttributeCodeGrp` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharacteristicAttributeCodeGrp` | ✓ | |  | `codegruppe` |
+| `CharacteristicAttributeCode` | ✓ | |  | `code` |
+| `Language` | ✓ | |  | `sprache` |
+| `CharacteristicAttributeCodeTxt` |  | |  | `cast( kurztext as vdm_qtxt_code preserving type )` |
+| `_CharcAttributeCodeGrp` | | ✓ | | |
 
 ## Associations
 

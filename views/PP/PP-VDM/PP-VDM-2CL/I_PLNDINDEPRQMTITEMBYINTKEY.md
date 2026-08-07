@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlndIndepRqmtInternalID` | `bdzei` |
-| key `WorkingDayDate` | `cast(pbed.pdatu as pph_working_day preserving type)` |
-| `ForecastPeriodType` | `cast(pbed.entli as periotype preserving type)` |
-| `LastChangedByUser` | `pbed.aenam` |
-| `LastChangeDate` | `pbed.laeda` |
-| `BaseUnit` | `pbed.meins` |
-| `PlannedQuantity` | `cast(pbed.plnmg as pph_plan_qty preserving type)` |
-| `WithdrawalQuantity` | `pbed.entmg` |
-| `_PlndIndepRqmt` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_PeriodType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlndIndepRqmtInternalID` | ✓ | |  | `bdzei` |
+| `WorkingDayDate` | ✓ | |  | `cast(pbed.pdatu as pph_working_day preserving type)` |
+| `ForecastPeriodType` |  | |  | `cast(pbed.entli as periotype preserving type)` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `LastChangeDate` |  | |  | `laeda` |
+| `BaseUnit` |  | |  | `meins` |
+| `PlannedQuantity` |  | |  | `cast(pbed.plnmg as pph_plan_qty preserving type)` |
+| `WithdrawalQuantity` |  | |  | `entmg` |
+| `_PlndIndepRqmt` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_PeriodType` | | ✓ | | |
 
 ## Associations
 

@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryContractType` | `FlowType.rantyp` |
-| key `FinTransFlowType` | `FlowType.sbewart` |
-| `CashFlowCalculationCategory` | `FlowType.sberfima` |
-| `FinTransFlowCategory` | `cast( FlowTypeSupplement.sbktyp as ftr_flow_category preserving type )` |
-| `TransFlowTypeIsRelevantForFee` | `FlowTypeSupplement.sfee` |
-| `_Text` | *Association* |
-| `_TreasuryContractType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryContractType` | ✓ | |  | `rantyp` |
+| `FinTransFlowType` | ✓ | |  | `sbewart` |
+| `CashFlowCalculationCategory` |  | |  | `sberfima` |
+| `FinTransFlowCategory` |  | |  | `cast( FlowTypeSupplement.sbktyp as ftr_flow_category preserving type )` |
+| `TransFlowTypeIsRelevantForFee` |  | |  | `sfee` |
+| `_Text` | | ✓ | | |
+| `_TreasuryContractType` | | ✓ | | |
 
 ## Associations
 

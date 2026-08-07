@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateTableScaleRefUUID` | `TranspRateTableScaleRefUUID` |
-| `TransportationRateTableUUID` | `TransportationRateTableUUID` |
-| `TransportationScaleUUID` | `TransportationScaleUUID` |
-| `TransportationCalculationBase` | `TransportationCalculationBase` |
-| `TranspRateTblScRefMinValIsSupp` | `TranspRateTblScRefMinValIsSupp` |
-| `TranspRateTblScRefMaxValIsSupp` | `TranspRateTblScRefMaxValIsSupp` |
-| `TranspRateScRefIsRlvtForBrkWgt` | `TranspRateScRefIsRlvtForBrkWgt` |
-| `TranspRateTblScaleRefScaleType` | `TranspRateTblScaleRefScaleType` |
-| `TranspRateTblScaleRefQtyUnit` | `TranspRateTblScaleRefQtyUnit` |
-| `TranspRateTblScaleRefCurrency` | `TranspRateTblScaleRefCurrency` |
-| `TranspRateTblScaleRefCalcType` | `TranspRateTblScaleRefCalcType` |
-| `TranspRateTableDimensionIndex` | `TranspRateTableDimensionIndex` |
-| `TranspRateTblScRefNoValIsSupp` | `TranspRateTblScRefNoValIsSupp` |
-| `TranspCmmdtyCodeNmbrngSchm` | `TranspCmmdtyCodeNmbrngSchm` |
-| `I_TransportationRateTableTP` | `TranspRateTableScaleRef._TransportationRateTable : redirected to parent I_TransportationRateTableTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateTableScaleRefUUID` | ✓ | |  |  |
+| `TransportationRateTableUUID` |  | |  |  |
+| `TransportationScaleUUID` |  | |  |  |
+| `TransportationCalculationBase` |  | |  |  |
+| `TranspRateTblScRefMinValIsSupp` |  | |  |  |
+| `TranspRateTblScRefMaxValIsSupp` |  | |  |  |
+| `TranspRateScRefIsRlvtForBrkWgt` |  | |  |  |
+| `TranspRateTblScaleRefScaleType` |  | |  |  |
+| `TranspRateTblScaleRefQtyUnit` |  | |  |  |
+| `TranspRateTblScaleRefCurrency` |  | |  |  |
+| `TranspRateTblScaleRefCalcType` |  | |  |  |
+| `TranspRateTableDimensionIndex` |  | |  |  |
+| `TranspRateTblScRefNoValIsSupp` |  | |  |  |
+| `TranspCmmdtyCodeNmbrngSchm` |  | |  |  |
+| `I_TransportationRateTableTP` |  | |  | `TranspRateTableScaleRef._TransportationRateTable : redirected to parent I_TransportationRateTableTP` |
 
 ## Source Code
 

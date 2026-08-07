@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryGLAccountAssignmentRef` | `TreasuryGLAccountAssignRef.aa_ref` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryGLAccountAssignmentRef` | ✓ | |  | `aa_ref` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

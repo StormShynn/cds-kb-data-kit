@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AssetAccountDetermination` | `gl_account_det` |
-| key `Language` | `language` |
-| `AssetAccountDeterminationDesc` | `description_short` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AssetAccountDetermination` | ✓ | |  | `gl_account_det` |
+| `Language` | ✓ | |  | `language` |
+| `AssetAccountDeterminationDesc` |  | |  | `description_short` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

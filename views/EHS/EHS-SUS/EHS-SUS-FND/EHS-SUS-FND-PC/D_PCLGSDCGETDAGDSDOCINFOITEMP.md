@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Item` | `ehfnd_log_doc_posnr` |
-| `_Root` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Item` |  | |  | `ehfnd_log_doc_posnr` |
+| `_Root` | | ✓ | | |
 
 ## Source Code
 

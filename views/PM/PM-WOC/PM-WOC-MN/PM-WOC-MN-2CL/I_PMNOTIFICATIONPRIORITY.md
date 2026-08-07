@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintPriority` | `t356.priok` |
-| key `MaintPriorityType` | `artpr` |
-| `MaintPriorityColorCode` | `cast (priocc as abap.int1)` |
-| `_Text` | *Association* |
-| `_PMNotificationPriorityType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintPriority` | ✓ | |  | `priok` |
+| `MaintPriorityType` | ✓ | |  | `artpr` |
+| `MaintPriorityColorCode` |  | |  | `cast (priocc as abap.int1)` |
+| `_Text` | | ✓ | | |
+| `_PMNotificationPriorityType` | | ✓ | | |
 
 ## Associations
 

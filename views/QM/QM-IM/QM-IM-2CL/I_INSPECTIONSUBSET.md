@@ -28,67 +28,67 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `prueflos` |
-| key `InspectionSubsetInternalID` | `probenr` |
-| key `InspPlanOperationInternalID` | `vorglfnr` |
-| `InspectionSubsetSortKey` | `ppsortkey` |
-| `MaterialSample` | `phynr` |
-| `InspSbstMatlSmplProperty` | `phynrakt` |
-| `Equipment` | `equnr` |
-| `InspSbstEquipProperty` | `equnrakt` |
-| `FunctionalLocation` | `tplnr` |
-| `InspSbstFuncnlLocProperty` | `tplnrakt` |
-| `ShopFloorItem` | `sfi_id` |
-| `InspSbstShopFloorItemProperty` | `sfi_akt` |
-| `InspSubsetUsageDecisionCatalog` | `vkatart` |
-| `SelectedCodeSetPlant` | `vwerks` |
-| `SelectedCodeSet` | `vauswahlmg` |
-| `InspSubsetUsageDcsnCodeGroup` | `vcodegrp` |
-| `InspSubsetUsageDcsnCode` | `vcode` |
-| `InspSubsetUsageDcsnValuation` | `vbewertung` |
-| `InspectionSubsetTime` | `cast( usert1 as vdm_qusrtims preserving type )` |
-| `InspSbstTimeFldProperty` | `usert1akt` |
-| `InspectionSubsetDate` | `cast( userd1 as vdm_qusrdats preserving type )` |
-| `InspSbstDateFldProperty` | `userd1akt` |
-| `InspectionSubsetTimeZone` | `usrtimezone` |
-| `InspSubsetLongNumericKey` | `cast( usern1 as vdm_qusrnumc10 preserving type )` |
-| `InspSbstLongNmbrFldProperty` | `usern1akt` |
-| `InspSubsetShortNumericKey` | `cast( usern2 as vdm_qusrnumc3 preserving type )` |
-| `InspSbstShrtNmbrFldProperty` | `usern2akt` |
-| `InspectionSubsetLongCharKey` | `cast( userc1 as vdm_qusrchar18 preserving type )` |
-| `InspSbstLongTxtFldProperty` | `userc1akt` |
-| `InspectionSubsetShortCharKey` | `cast( userc2 as vdm_qusrchar10 preserving type )` |
-| `InspSbstShrtTxtFldProperty` | `userc2akt` |
-| `InspectionPartialLot` | `teillos` |
-| `InspectionSubsetYieldQty` | `menge` |
-| `InspectionSubsetScrapQty` | `menge_a` |
-| `InspectionSubsetReworkQty` | `menge_n` |
-| `InspectionSubsetQtyUnit` | `mengeneinh` |
-| `Inspector` | `pruefer` |
-| `CreatedByUser` | `ersteller` |
-| `CreationDate` | `ersteldat` |
-| `CreationTime` | `cast( erstelzeit as vdm_qzeiterstl preserving type )` |
-| `LastChangedByUser` | `aenderer` |
-| `LastChangeDate` | `aenderdat` |
-| `LastChangeTime` | `cast( aenderzeit as vdm_qzeitaend preserving type )` |
-| `ChangedDateTime` | `case qapp.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qapp.changeddatetime end` |
-| `_UsageDecisionCodeGroup` | *Association* |
-| `_UsageDecisionCode` | *Association* |
-| `_InspSubsetUsageDcsnValn` | *Association* |
-| `_InspSubsetUsageDcsnValnTxt` | *Association* |
-| `_InspectionLot` | *Association* |
-| `_InspectionOperation` | *Association* |
-| `_InspectionSubsetInternalID` | *Association* |
-| `_MaterialSample` | *Association* |
-| `_InspectionPartialLot` | *Association* |
-| `_SelectedCodeSetPlant` | *Association* |
-| `_SelectedCodeSet` | *Association* |
-| `_Equipment` | *Association* |
-| `_FunctionalLocation` | *Association* |
-| `_ShopFloorItem` | *Association* |
-| `_Unit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |
+| `InspectionSubsetInternalID` | ✓ | |  | `probenr` |
+| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |
+| `InspectionSubsetSortKey` |  | |  | `ppsortkey` |
+| `MaterialSample` |  | |  | `phynr` |
+| `InspSbstMatlSmplProperty` |  | |  | `phynrakt` |
+| `Equipment` |  | |  | `equnr` |
+| `InspSbstEquipProperty` |  | |  | `equnrakt` |
+| `FunctionalLocation` |  | |  | `tplnr` |
+| `InspSbstFuncnlLocProperty` |  | |  | `tplnrakt` |
+| `ShopFloorItem` |  | |  | `sfi_id` |
+| `InspSbstShopFloorItemProperty` |  | |  | `sfi_akt` |
+| `InspSubsetUsageDecisionCatalog` |  | |  | `vkatart` |
+| `SelectedCodeSetPlant` |  | |  | `vwerks` |
+| `SelectedCodeSet` |  | |  | `vauswahlmg` |
+| `InspSubsetUsageDcsnCodeGroup` |  | |  | `vcodegrp` |
+| `InspSubsetUsageDcsnCode` |  | |  | `vcode` |
+| `InspSubsetUsageDcsnValuation` |  | |  | `vbewertung` |
+| `InspectionSubsetTime` |  | |  | `cast( usert1 as vdm_qusrtims preserving type )` |
+| `InspSbstTimeFldProperty` |  | |  | `usert1akt` |
+| `InspectionSubsetDate` |  | |  | `cast( userd1 as vdm_qusrdats preserving type )` |
+| `InspSbstDateFldProperty` |  | |  | `userd1akt` |
+| `InspectionSubsetTimeZone` |  | |  | `usrtimezone` |
+| `InspSubsetLongNumericKey` |  | |  | `cast( usern1 as vdm_qusrnumc10 preserving type )` |
+| `InspSbstLongNmbrFldProperty` |  | |  | `usern1akt` |
+| `InspSubsetShortNumericKey` |  | |  | `cast( usern2 as vdm_qusrnumc3 preserving type )` |
+| `InspSbstShrtNmbrFldProperty` |  | |  | `usern2akt` |
+| `InspectionSubsetLongCharKey` |  | |  | `cast( userc1 as vdm_qusrchar18 preserving type )` |
+| `InspSbstLongTxtFldProperty` |  | |  | `userc1akt` |
+| `InspectionSubsetShortCharKey` |  | |  | `cast( userc2 as vdm_qusrchar10 preserving type )` |
+| `InspSbstShrtTxtFldProperty` |  | |  | `userc2akt` |
+| `InspectionPartialLot` |  | |  | `teillos` |
+| `InspectionSubsetYieldQty` |  | |  | `menge` |
+| `InspectionSubsetScrapQty` |  | |  | `menge_a` |
+| `InspectionSubsetReworkQty` |  | |  | `menge_n` |
+| `InspectionSubsetQtyUnit` |  | |  | `mengeneinh` |
+| `Inspector` |  | |  | `pruefer` |
+| `CreatedByUser` |  | |  | `ersteller` |
+| `CreationDate` |  | |  | `ersteldat` |
+| `CreationTime` |  | |  | `cast( erstelzeit as vdm_qzeiterstl preserving type )` |
+| `LastChangedByUser` |  | |  | `aenderer` |
+| `LastChangeDate` |  | |  | `aenderdat` |
+| `LastChangeTime` |  | |  | `cast( aenderzeit as vdm_qzeitaend preserving type )` |
+| `ChangedDateTime` |  | |  | `case qapp.changeddatetime when 0 then cast( '19000101010101' as tzntstmps ) else qapp.changeddatetime end` |
+| `_UsageDecisionCodeGroup` | | ✓ | | |
+| `_UsageDecisionCode` | | ✓ | | |
+| `_InspSubsetUsageDcsnValn` | | ✓ | | |
+| `_InspSubsetUsageDcsnValnTxt` | | ✓ | | |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionOperation` | | ✓ | | |
+| `_InspectionSubsetInternalID` | | ✓ | | |
+| `_MaterialSample` | | ✓ | | |
+| `_InspectionPartialLot` | | ✓ | | |
+| `_SelectedCodeSetPlant` | | ✓ | | |
+| `_SelectedCodeSet` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
+| `_FunctionalLocation` | | ✓ | | |
+| `_ShopFloorItem` | | ✓ | | |
+| `_Unit` | | ✓ | | |
 
 ## Associations
 

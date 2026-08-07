@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaxType` | `cast(domvalue_l as mwart)` |
-| key `Language` | `cast(ddlanguage as spras)` |
-| `TaxTypeName` | `ddtext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaxType` | ✓ | |  | `cast(domvalue_l as mwart)` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras)` |
+| `TaxTypeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

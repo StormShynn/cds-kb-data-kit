@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtBusProcCat` | `cast( dd07t.domvalue_l as wlf_use_case_type )` |
-| key `Language` | `dd07t.ddlanguage` |
-| `SettlmtBusProcCatName` | `cast( dd07t.ddtext as wlf_use_case_type_desc preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_SettlmtBusProcCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtBusProcCat` | ✓ | |  | `cast( dd07t.domvalue_l as wlf_use_case_type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SettlmtBusProcCatName` |  | |  | `cast( dd07t.ddtext as wlf_use_case_type_desc preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_SettlmtBusProcCat` | | ✓ | | |
 
 ## Associations
 

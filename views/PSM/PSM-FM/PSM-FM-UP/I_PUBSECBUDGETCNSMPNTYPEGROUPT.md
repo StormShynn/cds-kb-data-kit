@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PubSecBudgetCnsmpnTypeGroup` | `cast( cast ( substring( dd07t.domvalue_l, 1, 2) as abap.char( 2 ) ) as psm_bdgt_cnsmpn_type_grp )` |
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `PubSecBudgetCnsmpnTypeGrpText` | `cast ( dd07t.ddtext as psm_bdgt_cnsmpn_type_grp_text preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_PubSecBudgetCnsmpnTypeGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PubSecBudgetCnsmpnTypeGroup` | ✓ | |  | `cast( cast ( substring( dd07t.domvalue_l, 1, 2) as abap.char( 2 ) ) as psm_bdgt_cnsmpn_type_grp )` |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PubSecBudgetCnsmpnTypeGrpText` |  | |  | `cast ( dd07t.ddtext as psm_bdgt_cnsmpn_type_grp_text preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_PubSecBudgetCnsmpnTypeGroup` | | ✓ | | |
 
 ## Associations
 

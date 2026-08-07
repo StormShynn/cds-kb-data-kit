@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityInternalID` | `kakt.kapid` |
-| key `Language` | `kakt.spras` |
-| `CapacityText` | `kakt.ktext` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityInternalID` | ✓ | |  | `kapid` |
+| `Language` | ✓ | |  | `spras` |
+| `CapacityText` |  | |  | `ktext` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

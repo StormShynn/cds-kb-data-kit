@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `ExternalIdentificationType` | `cast( left(dd07t.domvalue_l, 1 ) as /spe/de_lifex_type preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `ExternalIdentificationTypeName` | `dd07t.ddtext` |
-| `_Language` | *Association* |
-| `_DelivDocSuplrIdnType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ExternalIdentificationType` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1 ) as /spe/de_lifex_type preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `ExternalIdentificationTypeName` |  | |  | `ddtext` |
+| `_Language` | | ✓ | | |
+| `_DelivDocSuplrIdnType` | | ✓ | | |
 
 ## Associations
 

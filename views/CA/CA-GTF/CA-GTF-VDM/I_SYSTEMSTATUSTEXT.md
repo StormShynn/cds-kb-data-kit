@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SystemStatus` | `tj02t.istat` |
-| key `Language` | `tj02t.spras` |
-| `SystemStatusName` | `tj02t.txt30` |
-| `SystemStatusShortName` | `tj02t.txt04` |
-| `_SystemStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SystemStatus` | ✓ | |  | `istat` |
+| `Language` | ✓ | |  | `spras` |
+| `SystemStatusName` |  | |  | `txt30` |
+| `SystemStatusShortName` |  | |  | `txt04` |
+| `_SystemStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

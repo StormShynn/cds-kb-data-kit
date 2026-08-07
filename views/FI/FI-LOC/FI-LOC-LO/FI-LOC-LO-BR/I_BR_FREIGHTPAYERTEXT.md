@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| key `FreightPayer` | `cast ( substring( domvalue_l, 1, 1 ) as logbr_freight_mode preserving type )` |
-| `FreightPayerDesc` | `cast(ddtext as logbr_freightmode preserving type)` |
-| `_FreightPayer` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `FreightPayer` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as logbr_freight_mode preserving type )` |
+| `FreightPayerDesc` |  | |  | `cast(ddtext as logbr_freightmode preserving type)` |
+| `_FreightPayer` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

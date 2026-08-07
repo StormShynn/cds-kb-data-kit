@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IndustrySector` | `Industry.IndustrySector` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IndustrySector` | ✓ | |  |  |
 
 ## Source Code
 

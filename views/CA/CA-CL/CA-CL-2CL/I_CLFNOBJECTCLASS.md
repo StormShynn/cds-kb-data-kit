@@ -27,24 +27,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ClfnObjectID` | `ObjectHeader.ClfnObjectID` |
-| key `ClfnObjectTable` | `ObjectHeader.ClfnObjectTable` |
-| key `ClassInternalID` | `ObjectClassBasic.ClassInternalID` |
-| key `ClassType` | `ObjectClassBasic.ClassType` |
-| key `TimeIntervalNumber` | `ObjectClassBasic.TimeIntervalNumber` |
-| `ClfnObjectInternalID` | `ObjectHeader.ClfnObjectInternalID` |
-| `ClfnStatus` | `ObjectClassBasic.ClfnStatus` |
-| `ClassPositionNumber` | `ObjectClassBasic.ClassPositionNumber` |
-| `ClassIsStandardClass` | `ObjectClassBasic.ClassIsStandardClass` |
-| `BOMIsRecursive` | `ObjectClassBasic.BOMIsRecursive` |
-| `IsDeleted` | `ObjectClassBasic.IsDeleted` |
-| `ChangeNumber` | `ObjectClassBasic.ChangeNumber` |
-| `ValidityStartDate` | `ObjectClassBasic.ValidityStartDate` |
-| `ValidityEndDate` | `ObjectClassBasic.ValidityEndDate` |
-| `LastChangeDateTime` | `ObjectHeader.LastChangeDateTime` |
-| `_Class` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ClfnObjectID` | ✓ | |  |  |
+| `ClfnObjectTable` | ✓ | |  |  |
+| `ClassInternalID` | ✓ | |  |  |
+| `ClassType` | ✓ | |  |  |
+| `TimeIntervalNumber` | ✓ | |  |  |
+| `ClfnObjectInternalID` |  | |  |  |
+| `ClfnStatus` |  | |  |  |
+| `ClassPositionNumber` |  | |  |  |
+| `ClassIsStandardClass` |  | |  |  |
+| `BOMIsRecursive` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Class` | | ✓ | | |
 
 ## Associations
 

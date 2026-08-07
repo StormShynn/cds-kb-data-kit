@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspSpecRecordingType` | `cast ( substring( domvalue_l, 1, 1 ) as qestukz preserving type )` |
-| key `Language` | `ddlanguage` |
-| `InspSpecRecordingTypeText` | `cast( ddtext as vdm_qestukz_text preserving type )` |
-| `_Language` | *Association* |
-| `_InspSpecRecordingType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspSpecRecordingType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as qestukz preserving type )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `InspSpecRecordingTypeText` |  | |  | `cast( ddtext as vdm_qestukz_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_InspSpecRecordingType` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `langu` |
-| key `FinancialServicesProductGroup` | `fs_product_group` |
-| `FinServicesProductGroupName` | `cast(fs_product_group_tt as ffs_vdm_product_group_tt preserving type )` |
-| `_Language` | *Association* |
-| `_FinServicesProductGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `langu` |
+| `FinancialServicesProductGroup` | ✓ | |  | `fs_product_group` |
+| `FinServicesProductGroupName` |  | |  | `cast(fs_product_group_tt as ffs_vdm_product_group_tt preserving type )` |
+| `_Language` | | ✓ | | |
+| `_FinServicesProductGroup` | | ✓ | | |
 
 ## Associations
 

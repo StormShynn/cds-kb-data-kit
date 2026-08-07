@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialProcurementExtType` | `cast(text.esobs as pph_esobs preserving type)` |
-| key `Language` | `cast(text.spras as spras preserving type)` |
-| `MaterialProcurementType` | `cast(text.sobes as pph_sobes preserving type)` |
-| `MaterialProcurementExtTypeName` | `cast(text.sotxt as dtel_medname preserving type)` |
-| `_Language` | *Association* |
-| `_ProcurementExternalType` | *Association* |
-| `_ProcurementType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialProcurementExtType` | ✓ | |  | `cast(text.esobs as pph_esobs preserving type)` |
+| `Language` | ✓ | |  | `cast(text.spras as spras preserving type)` |
+| `MaterialProcurementType` |  | |  | `cast(text.sobes as pph_sobes preserving type)` |
+| `MaterialProcurementExtTypeName` |  | |  | `cast(text.sotxt as dtel_medname preserving type)` |
+| `_Language` | | ✓ | | |
+| `_ProcurementExternalType` | | ✓ | | |
+| `_ProcurementType` | | ✓ | | |
 
 ## Associations
 

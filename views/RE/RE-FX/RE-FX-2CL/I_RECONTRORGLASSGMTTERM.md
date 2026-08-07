@@ -27,44 +27,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternalRealEstateNumber` | `intreno` |
-| key `RETermType` | `termtype` |
-| key `RETermNumber` | `termno` |
-| key `ValidityStartDate` | `cast(validfrom as rebdvdmvalidfrom preserving type )` |
-| `ValidityEndDate` | `cast(validto as rebdvdmvalidto preserving type )` |
-| `BusinessArea` | `gsber` |
-| `ProfitCenter` | `prctr` |
-| `REStatusObject` | `cast(addobjnr as retmvdmraaddobjnr preserving type )` |
-| `TaxJurisdiction` | `txjcd` |
-| `Fund` | `cast(fund as bp_geber)` |
-| `FundsCenter` | `cast(fundscenter as fm_fictr)` |
-| `CommitmentItem` | `cast( commitmentitem as fm_fipex preserving type )` |
-| `FunctionalArea` | `cast(functionalarea as fm_farea)` |
-| `REFundsManagementGrantID` | `cast(grantnumber as reravdmgrantnumber preserving type )` |
-| `BudgetPeriod` | `cast(budgetperiod as fm_budget_period)` |
-| `RealEstateObjectType` | `_REKeyAssgmt.RealEstateObjectType` |
-| `ControllingArea` | `_REKeyAssgmt._CompanyCode.ControllingArea` |
-| `TaxCalculationProcedure` | `_REKeyAssgmt._CompanyCode._Country.TaxCalculationProcedure` |
-| `FinancialManagementArea` | `_REKeyAssgmt._CompanyCode.FinancialManagementArea` |
-| `CompanyCode` | `_REKeyAssgmt._CompanyCode.CompanyCode` |
-| `_REKeyAssgmt` | *Association* |
-| `_REContract` | *Association* |
-| `_RETermType` | *Association* |
-| `_RETerm` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_ProfitCenter` | *Association* |
-| `_TaxJurisdiction` | *Association* |
-| `_TaxJurisdictionCalcProcedure` | *Association* |
-| `_Fund` | *Association* |
-| `_FundsCenter` | *Association* |
-| `_CommitmentItem` | *Association* |
-| `_FunctionalArea` | *Association* |
-| `_BudgetPeriod` | *Association* |
-| `_Grant` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_FinMgmtArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  | `intreno` |
+| `RETermType` | ✓ | |  | `termtype` |
+| `RETermNumber` | ✓ | |  | `termno` |
+| `ValidityStartDate` | ✓ | |  | `cast(validfrom as rebdvdmvalidfrom preserving type )` |
+| `ValidityEndDate` |  | |  | `cast(validto as rebdvdmvalidto preserving type )` |
+| `BusinessArea` |  | |  | `gsber` |
+| `ProfitCenter` |  | |  | `prctr` |
+| `REStatusObject` |  | |  | `cast(addobjnr as retmvdmraaddobjnr preserving type )` |
+| `TaxJurisdiction` |  | |  | `txjcd` |
+| `Fund` |  | |  | `cast(fund as bp_geber)` |
+| `FundsCenter` |  | |  | `cast(fundscenter as fm_fictr)` |
+| `CommitmentItem` |  | |  | `cast( commitmentitem as fm_fipex preserving type )` |
+| `FunctionalArea` |  | |  | `cast(functionalarea as fm_farea)` |
+| `REFundsManagementGrantID` |  | |  | `cast(grantnumber as reravdmgrantnumber preserving type )` |
+| `BudgetPeriod` |  | |  | `cast(budgetperiod as fm_budget_period)` |
+| `RealEstateObjectType` |  | | `_REKeyAssgmt` | `RealEstateObjectType` |
+| `ControllingArea` |  | | `_REKeyAssgmt._CompanyCode` | `ControllingArea` |
+| `TaxCalculationProcedure` |  | | `_REKeyAssgmt._CompanyCode._Country` | `TaxCalculationProcedure` |
+| `FinancialManagementArea` |  | | `_REKeyAssgmt._CompanyCode` | `FinancialManagementArea` |
+| `CompanyCode` |  | | `_REKeyAssgmt._CompanyCode` | `CompanyCode` |
+| `_REKeyAssgmt` | | ✓ | | |
+| `_REContract` | | ✓ | | |
+| `_RETermType` | | ✓ | | |
+| `_RETerm` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_ProfitCenter` | | ✓ | | |
+| `_TaxJurisdiction` | | ✓ | | |
+| `_TaxJurisdictionCalcProcedure` | | ✓ | | |
+| `_Fund` | | ✓ | | |
+| `_FundsCenter` | | ✓ | | |
+| `_CommitmentItem` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
+| `_BudgetPeriod` | | ✓ | | |
+| `_Grant` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_FinMgmtArea` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `DocumentInfoRecordDocType` |
-| key `DocumentInfoRecordDocNumber` | `DocumentInfoRecordDocNumber` |
-| key `DocumentInfoRecordDocVersion` | `DocumentInfoRecordDocVersion` |
-| `_DocType` | *Association* |
-| `_DocNumber` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  |  |
+| `DocumentInfoRecordDocNumber` | ✓ | |  |  |
+| `DocumentInfoRecordDocVersion` | ✓ | |  |  |
+| `_DocType` | | ✓ | | |
+| `_DocNumber` | | ✓ | | |
 
 ## Source Code
 

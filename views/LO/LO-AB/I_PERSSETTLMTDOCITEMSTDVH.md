@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PersonnelSettlementDocument` | `PersonnelSettlementDocument` |
-| key `PersSettlmtDocItem` | `PersSettlmtDocItem` |
-| `_PersSettlmtDoc` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PersonnelSettlementDocument` | ✓ | |  |  |
+| `PersSettlmtDocItem` | ✓ | |  |  |
+| `_PersSettlmtDoc` | | ✓ | | |
 
 ## Source Code
 

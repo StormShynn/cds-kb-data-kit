@@ -28,46 +28,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TaskListType` | `BillOfOperationsType` |
-| key `TaskListGroup` | `BillOfOperationsGroup` |
-| key `TaskListGroupCounter` | `BillOfOperationsVariant` |
-| key `TaskListSequence` | `BillOfOperationsSequence` |
-| key `TaskListOperationInternalId` | `BOOOperationInternalID` |
-| key `TaskListOpBOMItmInternalID` | `BOOOpBOMItemInternalID` |
-| key `TaskListOpBOMItmIntVersCounter` | `BOOOpBOMItemIntVersCounter` |
-| `BillOfMaterialCategory` | `BillOfMaterialCategory` |
-| `BillOfMaterial` | `BillOfMaterial` |
-| `BillOfMaterialVariant` | `BillOfMaterialVariant` |
-| `BillOfMaterialItemNodeNumber` | `BillOfMaterialItemNodeNumber` |
-| `MatlCompIsMarkedForBackflush` | `MatlCompIsMarkedForBackflush` |
-| `BillOfMaterialItemQuantity` | `BillOfMaterialItemQuantity` |
-| `BillOfMaterialItemUnit` | `BillOfMaterialItemUnit` |
-| `IsDeleted` | `IsDeleted` |
-| `ResvnIsMRPRlvtOrPurReqnIsCrted` | `ResvnIsMRPRlvtOrPurReqnIsCrted` |
-| `BillOfMaterialComponent` | `_BOMItemEAM.BillOfMaterialComponent` |
-| `BillOfMaterialItemCategory` | `_BOMItemEAM.BillOfMaterialItemCategory` |
-| `TechObjIsEquipOrFuncnlLoc` | `_MaintenanceTaskList.TechObjIsEquipOrFuncnlLoc` |
-| `Equipment` | `_MaintenanceTaskList.Equipment` |
-| `FunctionalLocation` | `_MaintenanceTaskList.FunctionalLocation` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `_MaintenanceTaskList` | *Association* |
-| `_SafetyRelevance` | *Association* |
-| `_BOMItemEAM` | *Association* |
-| `_BillOfMaterialComponent` | *Association* |
-| `_BillOfMaterialItemCategory` | *Association* |
-| `_BOMItemCategoryText` | *Association* |
-| `_MatlsPlngRelevancy` | *Association* |
-| `_BillOfMaterialItem` | *Association* |
-| `_BillOfOperations` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperationsOperation` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BOOOpBOMItemInternalID` | *Association* |
-| `_BOOOperationInternalID` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TaskListType` | ✓ | |  | `BillOfOperationsType` |
+| `TaskListGroup` | ✓ | |  | `BillOfOperationsGroup` |
+| `TaskListGroupCounter` | ✓ | |  | `BillOfOperationsVariant` |
+| `TaskListSequence` | ✓ | |  | `BillOfOperationsSequence` |
+| `TaskListOperationInternalId` | ✓ | |  | `BOOOperationInternalID` |
+| `TaskListOpBOMItmInternalID` | ✓ | |  | `BOOOpBOMItemInternalID` |
+| `TaskListOpBOMItmIntVersCounter` | ✓ | |  | `BOOOpBOMItemIntVersCounter` |
+| `BillOfMaterialCategory` |  | |  |  |
+| `BillOfMaterial` |  | |  |  |
+| `BillOfMaterialVariant` |  | |  |  |
+| `BillOfMaterialItemNodeNumber` |  | |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |
+| `BillOfMaterialItemQuantity` |  | |  |  |
+| `BillOfMaterialItemUnit` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `ResvnIsMRPRlvtOrPurReqnIsCrted` |  | |  |  |
+| `BillOfMaterialComponent` |  | | `_BOMItemEAM` | `BillOfMaterialComponent` |
+| `BillOfMaterialItemCategory` |  | | `_BOMItemEAM` | `BillOfMaterialItemCategory` |
+| `TechObjIsEquipOrFuncnlLoc` |  | | `_MaintenanceTaskList` | `TechObjIsEquipOrFuncnlLoc` |
+| `Equipment` |  | | `_MaintenanceTaskList` | `Equipment` |
+| `FunctionalLocation` |  | | `_MaintenanceTaskList` | `FunctionalLocation` |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `_MaintenanceTaskList` | | ✓ | | |
+| `_SafetyRelevance` | | ✓ | | |
+| `_BOMItemEAM` | | ✓ | | |
+| `_BillOfMaterialComponent` | | ✓ | | |
+| `_BillOfMaterialItemCategory` | | ✓ | | |
+| `_BOMItemCategoryText` | | ✓ | | |
+| `_MatlsPlngRelevancy` | | ✓ | | |
+| `_BillOfMaterialItem` | | ✓ | | |
+| `_BillOfOperations` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperationsOperation` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BOOOpBOMItemInternalID` | | ✓ | | |
+| `_BOOOperationInternalID` | | ✓ | | |
 
 ## Associations
 

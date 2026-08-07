@@ -26,13 +26,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `MRPRequestPriority` | `prioritycode` |
-| `MRPRequestPriorityName` | `prioritytext` |
-| `_Language` | *Association* |
-| `_MRPRequestPriority` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `MRPRequestPriority` | ✓ | |  | `prioritycode` |
+| `MRPRequestPriorityName` |  | |  | `prioritytext` |
+| `_Language` | | ✓ | | |
+| `_MRPRequestPriority` | | ✓ | | |
 
 ## Associations
 

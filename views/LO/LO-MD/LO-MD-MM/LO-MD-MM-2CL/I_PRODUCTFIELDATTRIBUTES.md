@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductFieldNameWithTable` | `t130f.fname` |
-| `ProductFieldSelectionGroup` | `t130f.fgrup` |
-| `MaintenanceStatus` | `t130f.pstat` |
-| `ProdSpecialFieldSelectionGroup` | `t130f.sfgru` |
-| `FldCntntIsPrpsdFrmRefProduct` | `case t130f_c.fname when t130f.fname then t130f_c.kzref else t130f.kzref end` |
-| `FldCntntIsCopiedFrmRefProduct` | `case t130f_c.fname when t130f.fname then t130f_c.kzcpy else t130f.kzcpy end` |
-| `InitFldCntntIsPrpsdFrmRefProd` | `case t130f_c.fname when t130f.fname then t130f_c.rfini else t130f.rfini end` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductFieldNameWithTable` | ✓ | |  | `fname` |
+| `ProductFieldSelectionGroup` |  | |  | `fgrup` |
+| `MaintenanceStatus` |  | |  | `pstat` |
+| `ProdSpecialFieldSelectionGroup` |  | |  | `sfgru` |
+| `FldCntntIsPrpsdFrmRefProduct` |  | |  | `case t130f_c.fname when t130f.fname then t130f_c.kzref else t130f.kzref end` |
+| `FldCntntIsCopiedFrmRefProduct` |  | |  | `case t130f_c.fname when t130f.fname then t130f_c.kzcpy else t130f.kzcpy end` |
+| `InitFldCntntIsPrpsdFrmRefProd` |  | |  | `case t130f_c.fname when t130f.fname then t130f_c.rfini else t130f.rfini end` |
 
 ## Source Code
 

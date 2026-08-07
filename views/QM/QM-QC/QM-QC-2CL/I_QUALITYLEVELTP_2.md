@@ -28,57 +28,57 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `Plant` |
-| key `Material` | `Material` |
-| key `BillOfOperationsType` | `BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `BillOfOperationsVariant` |
-| key `BOOOperationInternalID` | `BOOOperationInternalID` |
-| key `Sequence` | `Sequence` |
-| key `QualityLevelInternalID` | `QualityLevelInternalID` |
-| `Supplier` | `Supplier` |
-| `Manufacturer` | `Manufacturer` |
-| `Customer` | `Customer` |
-| `InspectionLotType` | `InspectionLotType` |
-| `InspectionOperation` | `InspectionOperation` |
-| `InspectionCharacteristic` | `InspectionCharacteristic` |
-| `QltyLvlIndirectlyChangedBy` | `QltyLvlIndirectlyChangedBy` |
-| `QltyLvlManuallyChangedBy` | `QltyLvlManuallyChangedBy` |
-| `QltyLvlIndirectlyChangedOn` | `QltyLvlIndirectlyChangedOn` |
-| `QltyLvlManuallyChangedOn` | `QltyLvlManuallyChangedOn` |
-| `InspectionLot` | `InspectionLot` |
-| `InspLotUsageDecisionValuation` | `InspLotUsageDecisionValuation` |
-| `InspLotUsgeDcsnDynValuation` | `InspLotUsgeDcsnDynValuation` |
-| `SamplingProcedure` | `SamplingProcedure` |
-| `InspLotDynamicRule` | `InspLotDynamicRule` |
-| `QltyLevelNextDynRuleStage` | `QltyLevelNextDynRuleStage` |
-| `InspLotsWithoutUsageDecision` | `InspLotsWithoutUsageDecision` |
-| `InspLotsSinceStageChg` | `InspLotsSinceStageChg` |
-| `RjctdInspLotsSinceStgeChg` | `RjctdInspLotsSinceStgeChg` |
-| `InspResultDynModifValuation` | `InspResultDynModifValuation` |
-| `InspectionValuationResult` | `InspectionValuationResult` |
-| `QualityLevelLastOpenInspLot` | `QualityLevelLastOpenInspLot` |
-| `QualityLevelLastInspectionOn` | `QualityLevelLastInspectionOn` |
-| `QltyLevelCanceledInspections` | `QltyLevelCanceledInspections` |
-| `QualityLevelDeletionOn` | `QualityLevelDeletionOn` |
-| `QualityLevelResetOn` | `QualityLevelResetOn` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_Plant` | *Association* |
-| `_Material` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperations` | *Association* |
-| `_BOOOperationInternalID` | *Association* |
-| `_Supplier` | *Association* |
-| `_Customer` | *Association* |
-| `_NextInspLotDynRuleStage` | *Association* |
-| `_InspLotDynamicRule` | *Association* |
-| `_InspectionLot` | *Association* |
-| `_Manufacturer` | *Association* |
-| `_QualityLevelLastOpenInspLot` | *Association* |
-| `_ProductPlantQtManagement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `Material` | ✓ | |  |  |
+| `BillOfOperationsType` | ✓ | |  |  |
+| `BillOfOperationsGroup` | ✓ | |  |  |
+| `BillOfOperationsVariant` | ✓ | |  |  |
+| `BOOOperationInternalID` | ✓ | |  |  |
+| `Sequence` | ✓ | |  |  |
+| `QualityLevelInternalID` | ✓ | |  |  |
+| `Supplier` |  | |  |  |
+| `Manufacturer` |  | |  |  |
+| `Customer` |  | |  |  |
+| `InspectionLotType` |  | |  |  |
+| `InspectionOperation` |  | |  |  |
+| `InspectionCharacteristic` |  | |  |  |
+| `QltyLvlIndirectlyChangedBy` |  | |  |  |
+| `QltyLvlManuallyChangedBy` |  | |  |  |
+| `QltyLvlIndirectlyChangedOn` |  | |  |  |
+| `QltyLvlManuallyChangedOn` |  | |  |  |
+| `InspectionLot` |  | |  |  |
+| `InspLotUsageDecisionValuation` |  | |  |  |
+| `InspLotUsgeDcsnDynValuation` |  | |  |  |
+| `SamplingProcedure` |  | |  |  |
+| `InspLotDynamicRule` |  | |  |  |
+| `QltyLevelNextDynRuleStage` |  | |  |  |
+| `InspLotsWithoutUsageDecision` |  | |  |  |
+| `InspLotsSinceStageChg` |  | |  |  |
+| `RjctdInspLotsSinceStgeChg` |  | |  |  |
+| `InspResultDynModifValuation` |  | |  |  |
+| `InspectionValuationResult` |  | |  |  |
+| `QualityLevelLastOpenInspLot` |  | |  |  |
+| `QualityLevelLastInspectionOn` |  | |  |  |
+| `QltyLevelCanceledInspections` |  | |  |  |
+| `QualityLevelDeletionOn` |  | |  |  |
+| `QualityLevelResetOn` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_Plant` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperations` | | ✓ | | |
+| `_BOOOperationInternalID` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_NextInspLotDynRuleStage` | | ✓ | | |
+| `_InspLotDynamicRule` | | ✓ | | |
+| `_InspectionLot` | | ✓ | | |
+| `_Manufacturer` | | ✓ | | |
+| `_QualityLevelLastOpenInspLot` | | ✓ | | |
+| `_ProductPlantQtManagement` | | ✓ | | |
 
 ## Source Code
 

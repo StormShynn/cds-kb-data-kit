@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPaymentExceptionReason` | `poken` |
-| key `Language` | `spras` |
-| `CAPaymentExceptionReasonName` | `poket` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPaymentExceptionReason` | ✓ | |  | `poken` |
+| `Language` | ✓ | |  | `spras` |
+| `CAPaymentExceptionReasonName` |  | |  | `poket` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

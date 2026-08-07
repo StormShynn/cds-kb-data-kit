@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductAllocationObjectUUID` | `ProductAllocationObjectUUID` |
-| `ProductAllocationObject` | `ProductAllocationObject` |
-| `ProductAllocationPeriodType` | `ProductAllocationPeriodType` |
-| `ProdAllocationPeriodTimeZone` | `ProdAllocationPeriodTimeZone` |
-| `FactoryCalendar` | `FactoryCalendar` |
-| `ProdAllocCheckDateTimeType` | `ProdAllocCheckDateTimeType` |
-| `ProductAllocationQuantityUnit` | `ProductAllocationQuantityUnit` |
-| `CollectiveAllocationType` | `CollectiveAllocationType` |
-| `IsSalesOrderAllocObj` | `IsSalesOrderAllocObj` |
-| `IsStockTransferOrderAllocObj` | `IsStockTransferOrderAllocObj` |
-| `ProdAllocationLifecycleStatus` | `ProdAllocationLifecycleStatus` |
-| `CreationDateTime` | `CreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_ProdAllocCharcValCombnTP` | *Association* |
-| `_ProdAllocCharcMetaDataTP` | *Association* |
-| `_ProdAllocationObjectTTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductAllocationObjectUUID` | ✓ | |  |  |
+| `ProductAllocationObject` |  | |  |  |
+| `ProductAllocationPeriodType` |  | |  |  |
+| `ProdAllocationPeriodTimeZone` |  | |  |  |
+| `FactoryCalendar` |  | |  |  |
+| `ProdAllocCheckDateTimeType` |  | |  |  |
+| `ProductAllocationQuantityUnit` |  | |  |  |
+| `CollectiveAllocationType` |  | |  |  |
+| `IsSalesOrderAllocObj` |  | |  |  |
+| `IsStockTransferOrderAllocObj` |  | |  |  |
+| `ProdAllocationLifecycleStatus` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_ProdAllocCharcValCombnTP` | | ✓ | | |
+| `_ProdAllocCharcMetaDataTP` | | ✓ | | |
+| `_ProdAllocationObjectTTP` | | ✓ | | |
 
 ## Source Code
 

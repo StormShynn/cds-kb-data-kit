@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `jvp.bukrs` |
-| key `JointVenturePartner` | `cast( jvp.partn as jv_part_cds preserving type )` |
-| `JointVenturePartnerShortText` | `cast( left(_BusinessPartner.BusinessPartnerName, 35) as jv_part_nm preserving type )` |
-| `JointVenturePartner2ShortText` | `cast( left(_BusinessPartner.BusinessPartnerName, 40) as jva_partner_name preserving type )` |
-| `JntVntrIntcoCode` | `jvp.intcocd` |
-| `JntVntrCashCallThld` | `jvp.ccthresh` |
-| `JntVntrHardCopyBillgIsSupp` | `jvp.paper` |
-| `JntVntrOwnrIsEDITo` | `jvp.edi` |
-| `JntVentureIsConvenienceNetting` | `jvp.convnetind` |
-| `JntVntrBillgFormat` | `jvp.bformat` |
-| `TaxCode` | `jvp.taxcode` |
-| `EDIPartner` | `jvp.edicomp` |
-| `EDIReceiver` | `jvp.edicomp` |
-| `JntVntrPartnerProcessGrp` | `jvp.ppgroup` |
-| `JntVntrPartEquityCashCallThld` | `jvp.veccthresh` |
-| `JntVntrPartProjCashCallThld` | `jvp.pjccthresh` |
-| `PersonResponsible` | `jvp.person` |
-| `ResponsibleContact` | `jvp.person` |
-| `PhoneNumber` | `jvp.telfn` |
-| `ContactPhoneNumber` | `jvp.telfn` |
-| `JntVntrGeneratedExpndtrSet` | `jvp.t819_only` |
-| `Currency` | `_CompanyCode.Currency` |
-| `JntVntrBillgThldDebit` | `jvp.billthres` |
-| `JntVntrBillgThldCredit` | `jvp.billthresc` |
-| `JntVntrBillgThldIsActive` | `jvp.billthresa` |
-| `JntVntrBillgReportsAreSpprsd` | `jvp.billthresx` |
-| `JntVntrSeparateBillgIsPrepared` | `jvp.billthress` |
-| `_CompanyCode` | *Association* |
-| `_BusinessPartner` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `JointVenturePartner` | ✓ | |  | `cast( jvp.partn as jv_part_cds preserving type )` |
+| `JointVenturePartnerShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 35) as jv_part_nm preserving type )` |
+| `JointVenturePartner2ShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 40) as jva_partner_name preserving type )` |
+| `JntVntrIntcoCode` |  | |  | `intcocd` |
+| `JntVntrCashCallThld` |  | |  | `ccthresh` |
+| `JntVntrHardCopyBillgIsSupp` |  | |  | `paper` |
+| `JntVntrOwnrIsEDITo` |  | |  | `edi` |
+| `JntVentureIsConvenienceNetting` |  | |  | `convnetind` |
+| `JntVntrBillgFormat` |  | |  | `bformat` |
+| `TaxCode` |  | |  | `taxcode` |
+| `EDIPartner` |  | |  | `edicomp` |
+| `EDIReceiver` |  | |  | `edicomp` |
+| `JntVntrPartnerProcessGrp` |  | |  | `ppgroup` |
+| `JntVntrPartEquityCashCallThld` |  | |  | `veccthresh` |
+| `JntVntrPartProjCashCallThld` |  | |  | `pjccthresh` |
+| `PersonResponsible` |  | |  | `person` |
+| `ResponsibleContact` |  | |  | `person` |
+| `PhoneNumber` |  | |  | `telfn` |
+| `ContactPhoneNumber` |  | |  | `telfn` |
+| `JntVntrGeneratedExpndtrSet` |  | |  | `t819_only` |
+| `Currency` |  | | `_CompanyCode` | `Currency` |
+| `JntVntrBillgThldDebit` |  | |  | `billthres` |
+| `JntVntrBillgThldCredit` |  | |  | `billthresc` |
+| `JntVntrBillgThldIsActive` |  | |  | `billthresa` |
+| `JntVntrBillgReportsAreSpprsd` |  | |  | `billthresx` |
+| `JntVntrSeparateBillgIsPrepared` |  | |  | `billthress` |
+| `_CompanyCode` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
 
 ## Associations
 

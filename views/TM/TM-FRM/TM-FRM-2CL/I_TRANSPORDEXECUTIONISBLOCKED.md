@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdExecutionIsBlocked` | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_block_execution preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdExecutionIsBlocked` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_block_execution preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

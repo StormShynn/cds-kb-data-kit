@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BOMIsSuccessfulDeleted` | `boolean` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOMIsSuccessfulDeleted` |  | |  | `boolean` |
 
 ## Source Code
 

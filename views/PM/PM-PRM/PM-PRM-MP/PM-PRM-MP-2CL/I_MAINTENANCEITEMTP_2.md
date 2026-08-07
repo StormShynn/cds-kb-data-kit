@@ -30,96 +30,96 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceItem` | `MaintenanceItem` |
-| `MaintenanceItemDescription` | `MaintenanceItemDescription` |
-| `MaintenanceStrategy` | `MaintenanceStrategy` |
-| `MaintenancePlanCategory` | `MaintenancePlanCategory` |
-| `MaintenancePlanCallObject` | `MaintenancePlanCallObject` |
-| `MaintItemCausesAreDisplayed` | `MaintItemCausesAreDisplayed` |
-| `MaintItemReasonsAreDisplayed` | `MaintItemReasonsAreDisplayed` |
-| `MaintenancePlan` | `MaintenancePlan` |
-| `MaintenancePlanItemPosition` | `MaintenancePlanItemPosition` |
-| `MaintenancePlanType` | `MaintenancePlanType` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `FunctionalLocationLabelName` | `FunctionalLocationLabelName` |
-| `Equipment` | `Equipment` |
-| `Assembly` | `Assembly` |
-| `TechObjIsEquipOrFuncnlLoc` | `TechObjIsEquipOrFuncnlLoc` |
-| `TechnicalObject` | `TechnicalObject` |
-| `TechnicalObjectLabel` | `TechnicalObjectLabel` |
-| `TechnicalObjectDescription` | `TechnicalObjectDescription` |
-| `MaintItemHasObjectList` | `MaintItemHasObjectList` |
-| `MaintenanceItemObjectList` | `MaintenanceItemObjectList` |
-| `TaskListType` | `TaskListType` |
-| `TaskListGroup` | `TaskListGroup` |
-| `TaskListGroupCounter` | `TaskListGroupCounter` |
-| `OperationSystemCondition` | `OperationSystemCondition` |
-| `NumberOfTaskListExecutions` | `NumberOfTaskListExecutions` |
-| `TaskListKeyDate` | `TaskListKeyDate` |
-| `TaskList` | `TaskList` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `MaintenanceOrderType` | `MaintenanceOrderType` |
-| `MaintenanceActivityType` | `MaintenanceActivityType` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `MainWorkCenterInternalID` | `MainWorkCenterInternalID` |
-| `MainWorkCenter` | `MainWorkCenter` |
-| `MainWorkCenterPlant` | `MainWorkCenterPlant` |
-| `BusinessArea` | `BusinessArea` |
-| `ObjectInternalID` | `ObjectInternalID` |
-| `MaintPriority` | `MaintPriority` |
-| `AdditionalDeviceData` | `AdditionalDeviceData` |
-| `MaintPriorityType` | `MaintPriorityType` |
-| `NotificationType` | `NotificationType` |
-| `ImmediateReleaseIsBlocked` | `ImmediateReleaseIsBlocked` |
-| `MaintenanceItemHasLongText` | `MaintenanceItemHasLongText` |
-| `SettlementRuleIsMaintained` | `SettlementRuleIsMaintained` |
-| `MaintNotifTskIsAutomlyDtmnd` | `MaintNotifTskIsAutomlyDtmnd` |
-| `Material` | `Material` |
-| `SerialNumber` | `SerialNumber` |
-| `ServiceDocumentType` | `ServiceDocumentType` |
-| `ServiceContract` | `ServiceContract` |
-| `ServiceContractItem` | `ServiceContractItem` |
-| `ServiceOrderTemplate` | `ServiceOrderTemplate` |
-| `ServiceDocumentPriority` | `ServiceDocumentPriority` |
-| `Product` | `Product` |
-| `MaintObjectLocAcctAssgmtNmbr` | `MaintObjectLocAcctAssgmtNmbr` |
-| `MaintenancePlant` | `MaintenancePlant` |
-| `AssetLocation` | `AssetLocation` |
-| `AssetRoom` | `AssetRoom` |
-| `PlantSection` | `PlantSection` |
-| `PlantSectionDesc` | `PlantSectionDesc` |
-| `WorkCenter` | `WorkCenter` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `LocAcctAssgmtWorkCtrTypeCode` | `LocAcctAssgmtWorkCtrTypeCode` |
-| `ABCIndicator` | `ABCIndicator` |
-| `MaintObjectFreeDefinedAttrib` | `MaintObjectFreeDefinedAttrib` |
-| `CompanyCode` | `CompanyCode` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `FixedAsset` | `FixedAsset` |
-| `LocAcctAssgmtBusinessArea` | `LocAcctAssgmtBusinessArea` |
-| `CostCenter` | `CostCenter` |
-| `ControllingArea` | `ControllingArea` |
-| `WBSElement` | `WBSElement` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `StandingOrderNumber` | `StandingOrderNumber` |
-| `SettlementOrder` | `SettlementOrder` |
-| `CycleSetSequence` | `CycleSetSequence` |
-| `OrderCategoryScreenTypeCode` | `OrderCategoryScreenTypeCode` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_FunctionalLocation` | *Association* |
-| `_Equipment` | *Association* |
-| `_ServiceContract` | *Association* |
-| `_MaintItemObjectListItem` | *Association* |
-| `_MaintenanceItemReason` | *Association* |
-| `_MaintenanceItemCause` | *Association* |
-| `_LongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |
+| `MaintenanceItemDescription` |  | |  |  |
+| `MaintenanceStrategy` |  | |  |  |
+| `MaintenancePlanCategory` |  | |  |  |
+| `MaintenancePlanCallObject` |  | |  |  |
+| `MaintItemCausesAreDisplayed` |  | |  |  |
+| `MaintItemReasonsAreDisplayed` |  | |  |  |
+| `MaintenancePlan` |  | |  |  |
+| `MaintenancePlanItemPosition` |  | |  |  |
+| `MaintenancePlanType` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `Assembly` |  | |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  |
+| `TechnicalObject` |  | |  |  |
+| `TechnicalObjectLabel` |  | |  |  |
+| `TechnicalObjectDescription` |  | |  |  |
+| `MaintItemHasObjectList` |  | |  |  |
+| `MaintenanceItemObjectList` |  | |  |  |
+| `TaskListType` |  | |  |  |
+| `TaskListGroup` |  | |  |  |
+| `TaskListGroupCounter` |  | |  |  |
+| `OperationSystemCondition` |  | |  |  |
+| `NumberOfTaskListExecutions` |  | |  |  |
+| `TaskListKeyDate` |  | |  |  |
+| `TaskList` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MaintenanceOrderType` |  | |  |  |
+| `MaintenanceActivityType` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |
+| `MainWorkCenter` |  | |  |  |
+| `MainWorkCenterPlant` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `MaintPriority` |  | |  |  |
+| `AdditionalDeviceData` |  | |  |  |
+| `MaintPriorityType` |  | |  |  |
+| `NotificationType` |  | |  |  |
+| `ImmediateReleaseIsBlocked` |  | |  |  |
+| `MaintenanceItemHasLongText` |  | |  |  |
+| `SettlementRuleIsMaintained` |  | |  |  |
+| `MaintNotifTskIsAutomlyDtmnd` |  | |  |  |
+| `Material` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceContract` |  | |  |  |
+| `ServiceContractItem` |  | |  |  |
+| `ServiceOrderTemplate` |  | |  |  |
+| `ServiceDocumentPriority` |  | |  |  |
+| `Product` |  | |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `AssetLocation` |  | |  |  |
+| `AssetRoom` |  | |  |  |
+| `PlantSection` |  | |  |  |
+| `PlantSectionDesc` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `LocAcctAssgmtWorkCtrTypeCode` |  | |  |  |
+| `ABCIndicator` |  | |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `LocAcctAssgmtBusinessArea` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `WBSElement` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `StandingOrderNumber` |  | |  |  |
+| `SettlementOrder` |  | |  |  |
+| `CycleSetSequence` |  | |  |  |
+| `OrderCategoryScreenTypeCode` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_FunctionalLocation` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
+| `_ServiceContract` | | ✓ | | |
+| `_MaintItemObjectListItem` | | ✓ | | |
+| `_MaintenanceItemReason` | | ✓ | | |
+| `_MaintenanceItemCause` | | ✓ | | |
+| `_LongText` | | ✓ | | |
 
 ## Source Code
 

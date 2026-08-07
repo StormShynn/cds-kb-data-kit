@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrganizationalChangeActivity` | `OrganizationalChangeActivity` |
-| key `OrganizationalChange` | `OrganizationalChange` |
-| `OrganizationalChangeJobType` | `OrganizationalChangeJobType` |
-| `ApplicationJobName` | `ApplicationJobName` |
-| `ApplicationJob` | `ApplicationJob` |
-| `ApplicationLog` | `ApplicationLog` |
-| `ApplicationLogHandle` | `ApplicationLogHandle` |
-| `NumberOfUniqueWarnings` | `NumberOfUniqueWarnings` |
-| `NumberOfUniqueErrors` | `NumberOfUniqueErrors` |
-| `JobStatusValue` | `JobStatusValue` |
-| `OrglChangeActivityDateTime` | `OrglChangeActivityDateTime` |
-| `FullName` | `_UserContactCard.FullName` |
-| `Department` | `_UserContactCard.Department` |
-| `EmailAddress` | `_UserContactCard.EmailAddress` |
-| `PhoneNumber` | `_UserContactCard.PhoneNumber` |
-| `MobilePhoneNumber` | `_UserContactCard.MobilePhoneNumber` |
-| `OrglChangeActivityProcdByUser` | `OrglChangeActivityProcdByUser` |
-| `OrglChangeProcessingStatus` | `OrglChangeProcessingStatus` |
-| `OrglChangeProcessingStatusName` | `_OrglChangeProcgStatusText[1:Language=$session.system_language].OrglChangeProcessingStatusName` |
-| `OrglChangeJobTypeName` | `_JobTypeText[1:Language=$session.system_language].OrglChangeJobTypeName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrganizationalChangeActivity` | ✓ | |  |  |
+| `OrganizationalChange` | ✓ | |  |  |
+| `OrganizationalChangeJobType` |  | |  |  |
+| `ApplicationJobName` |  | |  |  |
+| `ApplicationJob` |  | |  |  |
+| `ApplicationLog` |  | |  |  |
+| `ApplicationLogHandle` |  | |  |  |
+| `NumberOfUniqueWarnings` |  | |  |  |
+| `NumberOfUniqueErrors` |  | |  |  |
+| `JobStatusValue` |  | |  |  |
+| `OrglChangeActivityDateTime` |  | |  |  |
+| `FullName` |  | | `_UserContactCard` | `FullName` |
+| `Department` |  | | `_UserContactCard` | `Department` |
+| `EmailAddress` |  | | `_UserContactCard` | `EmailAddress` |
+| `PhoneNumber` |  | | `_UserContactCard` | `PhoneNumber` |
+| `MobilePhoneNumber` |  | | `_UserContactCard` | `MobilePhoneNumber` |
+| `OrglChangeActivityProcdByUser` |  | |  |  |
+| `OrglChangeProcessingStatus` |  | |  |  |
+| `OrglChangeProcessingStatusName` |  | |  | `_OrglChangeProcgStatusText[1:Language=$session.system_language].OrglChangeProcessingStatusName` |
+| `OrglChangeJobTypeName` |  | |  | `_JobTypeText[1:Language=$session.system_language].OrglChangeJobTypeName` |
 
 ## Source Code
 

@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingBlockStatus` | `statu` |
-| key `Language` | `spras` |
-| `BillingBlockStatusDesc` | `bezei` |
-| `_BillingBlockStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingBlockStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `BillingBlockStatusDesc` |  | |  | `bezei` |
+| `_BillingBlockStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

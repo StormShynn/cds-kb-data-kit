@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AvailabilityChangeLogUUID` | `netchguuid` |
-| `Material` | `matnr` |
-| `Plant` | `werks` |
-| `MRPArea` | `berid` |
-| `AvailabilityChangeLogCategory` | `netchgcategory` |
-| `_AvailyChgLogTmeStmp` | *Association* |
-| `_AvailyChgLogCat` | *Association* |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_MRPArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AvailabilityChangeLogUUID` | ✓ | |  | `netchguuid` |
+| `Material` |  | |  | `matnr` |
+| `Plant` |  | |  | `werks` |
+| `MRPArea` |  | |  | `berid` |
+| `AvailabilityChangeLogCategory` |  | |  | `netchgcategory` |
+| `_AvailyChgLogTmeStmp` | | ✓ | | |
+| `_AvailyChgLogCat` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_MRPArea` | | ✓ | | |
 
 ## Associations
 

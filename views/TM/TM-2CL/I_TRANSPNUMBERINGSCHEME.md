@@ -26,10 +26,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TrdClassfctnNmbrSchm` | `TrdClassfctnNmbrSchm` |
-| `TrdClassfctnNmbrSchmType` | `TrdClassfctnNmbrSchmType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TrdClassfctnNmbrSchm` | ✓ | |  |  |
+| `TrdClassfctnNmbrSchmType` |  | |  |  |
 
 ## Source Code
 

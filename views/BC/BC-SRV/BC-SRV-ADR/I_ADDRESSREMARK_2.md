@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AddressID` | `addrnumber` |
-| key `AddressRepresentationCode` | `nation` |
-| key `Language` | `langu` |
-| `AddressRemarkText` | `remark` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AddressID` | ✓ | |  | `addrnumber` |
+| `AddressRepresentationCode` | ✓ | |  | `nation` |
+| `Language` | ✓ | |  | `langu` |
+| `AddressRemarkText` |  | |  | `remark` |
 
 ## Source Code
 

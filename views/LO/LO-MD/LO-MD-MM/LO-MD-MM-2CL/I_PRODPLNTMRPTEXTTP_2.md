@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `Plant` | `Plant` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| `ProductPlantMRPText` | `ProductPlantMRPText` |
-| `ProdLongTxtCreationDateTime` | `ProdLongTxtCreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `ProdLongTxtLastChangedDateTime` | `ProdLongTxtLastChangedDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_ProductPlant` | *Association* |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `Plant` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ProductPlantMRPText` |  | |  |  |
+| `ProdLongTxtCreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `ProdLongTxtLastChangedDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_ProductPlant` | | ✓ | | |
+| `_Product` | | ✓ | | |
 
 ## Source Code
 

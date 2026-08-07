@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPaymentCompanyCode` | `bukrs` |
-| key `CAHouseBankReference` | `eigbv` |
-| key `Language` | `spras` |
-| `CAHouseBankReferenceName` | `txt50` |
-| `_Language` | *Association* |
-| `_CompCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPaymentCompanyCode` | ✓ | |  | `bukrs` |
+| `CAHouseBankReference` | ✓ | |  | `eigbv` |
+| `Language` | ✓ | |  | `spras` |
+| `CAHouseBankReferenceName` |  | |  | `txt50` |
+| `_Language` | | ✓ | | |
+| `_CompCode` | | ✓ | | |
 
 ## Associations
 

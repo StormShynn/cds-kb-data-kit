@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElmntDeliverableType` | `cast ( substring( resource_id, 1, 6 ) as /s4ppm/tv_entprojdlvbrltype preserving type )` |
-| `_DeliverableTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElmntDeliverableType` | ✓ | |  | `cast ( substring( resource_id, 1, 6 ) as /s4ppm/tv_entprojdlvbrltype preserving type )` |
+| `_DeliverableTypeText` | | ✓ | | |
 
 ## Source Code
 

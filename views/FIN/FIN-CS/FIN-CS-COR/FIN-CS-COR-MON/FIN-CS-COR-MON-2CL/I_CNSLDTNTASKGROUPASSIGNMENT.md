@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationVersion` | `cast( rvers as fincs_consolidationversion preserving type )` |
-| key `CnsldtnTskGrpAssgmtFrmFsclYear` | `cast( ryear as fincs_taskgroup_fromyear preserving type )` |
-| key `CnsldtnTskGrpAssgmtFrmFsclPerd` | `cast( perid as fincs_taskgroup_fromperiod preserving type )` |
-| key `ConsolidationPeriodCategory` | `cast( pertp as fincs_periodcategory preserving type )` |
-| `CnsldtnTaskGroupDataMonitor` | `cast( cacgr1 as fincs_taskgroup_datamon preserving type )` |
-| `CnsldtnTskGrpCnsldtnMonitor` | `cast( cacgr2 as fincs_taskgroup_consmon preserving type )` |
-| `_CnsldtnPeriodCategory` | *Association* |
-| `_CnsldtnVersion` | *Association* |
-| `_CnsldtnTaskGroupDataMonitor` | *Association* |
-| `_CnsldtnTskGrpCnsldtnMonitor` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationVersion` | ✓ | |  | `cast( rvers as fincs_consolidationversion preserving type )` |
+| `CnsldtnTskGrpAssgmtFrmFsclYear` | ✓ | |  | `cast( ryear as fincs_taskgroup_fromyear preserving type )` |
+| `CnsldtnTskGrpAssgmtFrmFsclPerd` | ✓ | |  | `cast( perid as fincs_taskgroup_fromperiod preserving type )` |
+| `ConsolidationPeriodCategory` | ✓ | |  | `cast( pertp as fincs_periodcategory preserving type )` |
+| `CnsldtnTaskGroupDataMonitor` |  | |  | `cast( cacgr1 as fincs_taskgroup_datamon preserving type )` |
+| `CnsldtnTskGrpCnsldtnMonitor` |  | |  | `cast( cacgr2 as fincs_taskgroup_consmon preserving type )` |
+| `_CnsldtnPeriodCategory` | | ✓ | | |
+| `_CnsldtnVersion` | | ✓ | | |
+| `_CnsldtnTaskGroupDataMonitor` | | ✓ | | |
+| `_CnsldtnTskGrpCnsldtnMonitor` | | ✓ | | |
 
 ## Associations
 

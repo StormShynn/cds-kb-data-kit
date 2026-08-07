@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateTableCalcRuleUUID` | `TranspRateTableCalcRuleUUID` |
-| `TranspRateTableValidityUUID` | `TranspRateTableValidityUUID` |
-| `TransportationRateTableUUID` | `TransportationRateTableUUID` |
-| `TransportationAgreementUUID` | `TransportationAgreementUUID` |
-| `TransportationCalculationBase` | `TransportationCalculationBase` |
-| `TranspRateTableCalcRuleQtyUnit` | `TranspRateTableCalcRuleQtyUnit` |
-| `TranspRateCalcRulePricePerQty` | `cast( TranspRateCalcRulePricePerQty as /scmtms/rttable_calcrule_price preserving type )` |
-| `I_FreightAgreementTP` | `FrtAgrmtRateTableCalcRule._FreightAgreement : redirected to I_FreightAgreementTP` |
-| `I_FrtAgrmtRateTableValidityTP` | `FrtAgrmtRateTableCalcRule._FrtAgrmtRateTableValidity : redirected to parent I_FrtAgrmtRateTableValidityTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateTableCalcRuleUUID` | ✓ | |  |  |
+| `TranspRateTableValidityUUID` |  | |  |  |
+| `TransportationRateTableUUID` |  | |  |  |
+| `TransportationAgreementUUID` |  | |  |  |
+| `TransportationCalculationBase` |  | |  |  |
+| `TranspRateTableCalcRuleQtyUnit` |  | |  |  |
+| `TranspRateCalcRulePricePerQty` |  | |  | `cast( TranspRateCalcRulePricePerQty as /scmtms/rttable_calcrule_price preserving type )` |
+| `I_FreightAgreementTP` |  | |  | `FrtAgrmtRateTableCalcRule._FreightAgreement : redirected to I_FreightAgreementTP` |
+| `I_FrtAgrmtRateTableValidityTP` |  | |  | `FrtAgrmtRateTableCalcRule._FrtAgrmtRateTableValidity : redirected to parent I_FrtAgrmtRateTableValidityTP` |
 
 ## Source Code
 

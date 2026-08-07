@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierConfInternalCategory` | `ibtyp` |
-| `SupplierConfirmationCategory` | `ebtyp` |
-| `DeliveryDocumentType` | `lfart` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierConfInternalCategory` | ✓ | |  | `ibtyp` |
+| `SupplierConfirmationCategory` |  | |  | `ebtyp` |
+| `DeliveryDocumentType` |  | |  | `lfart` |
 
 ## Source Code
 

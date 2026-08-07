@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAIntcoType` | `cast(_tfk8250.ico_type as ico_type_gfn_kk preserving type)` |
-| `_CAIntcoTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAIntcoType` | ✓ | |  | `cast(_tfk8250.ico_type as ico_type_gfn_kk preserving type)` |
+| `_CAIntcoTypeText` | | ✓ | | |
 
 ## Associations
 

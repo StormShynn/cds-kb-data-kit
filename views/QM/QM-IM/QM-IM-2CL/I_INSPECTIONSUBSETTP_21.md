@@ -29,53 +29,53 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| key `InspectionSubsetInternalID` | `InspectionSubsetInternalID` |
-| key `InspPlanOperationInternalID` | `InspPlanOperationInternalID` |
-| `InspectionSubsetSortKey` | `InspectionSubsetSortKey` |
-| `MaterialSample` | `MaterialSample` |
-| `InspSbstMatlSmplProperty` | `InspSbstMatlSmplProperty` |
-| `Equipment` | `Equipment` |
-| `InspSbstEquipProperty` | `InspSbstEquipProperty` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `InspSbstFuncnlLocProperty` | `InspSbstFuncnlLocProperty` |
-| `ShopFloorItem` | `ShopFloorItem` |
-| `InspSbstShopFloorItemProperty` | `InspSbstShopFloorItemProperty` |
-| `SelectedCodeSetPlant` | `SelectedCodeSetPlant` |
-| `SelectedCodeSet` | `SelectedCodeSet` |
-| `InspSubsetUsageDcsnCodeGroup` | `InspSubsetUsageDcsnCodeGroup` |
-| `InspSubsetUsageDcsnCode` | `InspSubsetUsageDcsnCode` |
-| `InspSubsetUsageDcsnValuation` | `InspSubsetUsageDcsnValuation` |
-| `InspectionSubsetTime` | `InspectionSubsetTime` |
-| `InspSbstTimeFldProperty` | `InspSbstTimeFldProperty` |
-| `InspectionSubsetDate` | `InspectionSubsetDate` |
-| `InspSbstDateFldProperty` | `InspSbstDateFldProperty` |
-| `InspSubsetLongNumericKey` | `InspSubsetLongNumericKey` |
-| `InspSbstLongNmbrFldProperty` | `InspSbstLongNmbrFldProperty` |
-| `InspSubsetShortNumericKey` | `InspSubsetShortNumericKey` |
-| `InspSbstShrtNmbrFldProperty` | `InspSbstShrtNmbrFldProperty` |
-| `InspectionSubsetLongCharKey` | `InspectionSubsetLongCharKey` |
-| `InspSbstLongTxtFldProperty` | `InspSbstLongTxtFldProperty` |
-| `InspectionSubsetShortCharKey` | `InspectionSubsetShortCharKey` |
-| `InspSbstShrtTxtFldProperty` | `InspSbstShrtTxtFldProperty` |
-| `InspectionPartialLot` | `InspectionPartialLot` |
-| `InspectionSubsetYieldQty` | `InspectionSubsetYieldQty` |
-| `InspectionSubsetScrapQty` | `InspectionSubsetScrapQty` |
-| `InspectionSubsetReworkQty` | `InspectionSubsetReworkQty` |
-| `InspectionSubsetQtyUnit` | `InspectionSubsetQtyUnit` |
-| `Inspector` | `Inspector` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `_InspectionOperation` | *Association* |
-| `_InspectionLot` | *Association* |
-| `_InspSubsetCharacteristic` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `InspectionSubsetInternalID` | ✓ | |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |
+| `InspectionSubsetSortKey` |  | |  |  |
+| `MaterialSample` |  | |  |  |
+| `InspSbstMatlSmplProperty` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `InspSbstEquipProperty` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `InspSbstFuncnlLocProperty` |  | |  |  |
+| `ShopFloorItem` |  | |  |  |
+| `InspSbstShopFloorItemProperty` |  | |  |  |
+| `SelectedCodeSetPlant` |  | |  |  |
+| `SelectedCodeSet` |  | |  |  |
+| `InspSubsetUsageDcsnCodeGroup` |  | |  |  |
+| `InspSubsetUsageDcsnCode` |  | |  |  |
+| `InspSubsetUsageDcsnValuation` |  | |  |  |
+| `InspectionSubsetTime` |  | |  |  |
+| `InspSbstTimeFldProperty` |  | |  |  |
+| `InspectionSubsetDate` |  | |  |  |
+| `InspSbstDateFldProperty` |  | |  |  |
+| `InspSubsetLongNumericKey` |  | |  |  |
+| `InspSbstLongNmbrFldProperty` |  | |  |  |
+| `InspSubsetShortNumericKey` |  | |  |  |
+| `InspSbstShrtNmbrFldProperty` |  | |  |  |
+| `InspectionSubsetLongCharKey` |  | |  |  |
+| `InspSbstLongTxtFldProperty` |  | |  |  |
+| `InspectionSubsetShortCharKey` |  | |  |  |
+| `InspSbstShrtTxtFldProperty` |  | |  |  |
+| `InspectionPartialLot` |  | |  |  |
+| `InspectionSubsetYieldQty` |  | |  |  |
+| `InspectionSubsetScrapQty` |  | |  |  |
+| `InspectionSubsetReworkQty` |  | |  |  |
+| `InspectionSubsetQtyUnit` |  | |  |  |
+| `Inspector` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `_InspectionOperation` | | ✓ | | |
+| `_InspectionLot` | | ✓ | | |
+| `_InspSubsetCharacteristic` | | ✓ | | |
 
 ## Source Code
 

@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowScenarioDefinition` | `WorkflowResult.wfd_id` |
-| key `WorkflowScenarioDefinitionVers` | `WorkflowResult.version` |
-| key `WorkflowScenarioResult` | `WorkflowResult.normiert` |
-| key `Language` | `WorkflowResultText.language` |
-| `WorkflowScenarioResultText` | `WorkflowResultText.text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` |
+| `WorkflowScenarioResult` | ✓ | |  | `normiert` |
+| `Language` | ✓ | |  | `language` |
+| `WorkflowScenarioResultText` |  | |  | `text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

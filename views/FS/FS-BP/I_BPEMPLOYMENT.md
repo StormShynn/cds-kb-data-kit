@@ -27,20 +27,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `bp011.partnr` |
-| key `BPEmploymentStartDate` | `bp011.empl_since` |
-| `BPEmploymentEndDate` | `bp011.empl_until` |
-| `BPEmploymentStatus` | `bp011.employment` |
-| `BusPartEmplrIndstryCode` | `bp011.emp_sector_zgp` |
-| `BusinessPartnerEmployerName` | `bp011.employer` |
-| `BusinessPartnerOccupationGroup` | `bp011.jobgr_zgp` |
-| `_BusinessPartner` | *Association* |
-| `_BPFinancialServicesExtn` | *Association* |
-| `_BPEmploymentStatus` | *Association* |
-| `_BPOccupationGroup` | *Association* |
-| `_BPEmploymentIndustry` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  | `partnr` |
+| `BPEmploymentStartDate` | ✓ | |  | `empl_since` |
+| `BPEmploymentEndDate` |  | |  | `empl_until` |
+| `BPEmploymentStatus` |  | |  | `employment` |
+| `BusPartEmplrIndstryCode` |  | |  | `emp_sector_zgp` |
+| `BusinessPartnerEmployerName` |  | |  | `employer` |
+| `BusinessPartnerOccupationGroup` |  | |  | `jobgr_zgp` |
+| `_BusinessPartner` | | ✓ | | |
+| `_BPFinancialServicesExtn` | | ✓ | | |
+| `_BPEmploymentStatus` | | ✓ | | |
+| `_BPOccupationGroup` | | ✓ | | |
+| `_BPEmploymentIndustry` | | ✓ | | |
 
 ## Associations
 

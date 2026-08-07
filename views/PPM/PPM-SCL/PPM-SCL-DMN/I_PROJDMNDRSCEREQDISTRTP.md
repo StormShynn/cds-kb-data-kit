@@ -29,34 +29,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjDmndRsceReqDistrUUID` | `ProjDmndRsceReqDistrUUID` |
-| `ProjDmndResourceRequestUUID` | `ProjDmndResourceRequestUUID` |
-| `ProjectDemandUUID` | `ProjectDemandUUID` |
-| `ProjectUUID` | `ProjectUUID` |
-| `ReferencedObjectUUID` | `ReferencedObjectUUID` |
-| `ProjDmndRsceReqDistrYearVal` | `ProjDmndRsceReqDistrYearVal` |
-| `ProjDmndRsceReqDistrPerdVal` | `ProjDmndRsceReqDistrPerdVal` |
-| `ProjDmndRsceReqDistrQuantity` | `} ProjDmndRsceReqDistrQuantity` |
-| `ProjDmndRsceReqDistrQtyUnit` | `ProjDmndRsceReqDistrQtyUnit` |
-| `ProjDmndRsceReqDistrPerdAmt` | `} ProjDmndRsceReqDistrPerdAmt` |
-| `ProjDmndRsceReqDistrPerdAmtCur` | `ProjDmndRsceReqDistrPerdAmtCur` |
-| `ProjDmndRsceReqDistrRevenueAmt` | `} ProjDmndRsceReqDistrRevenueAmt` |
-| `ProjDmndRsceReqDistrRevnAmtCur` | `ProjDmndRsceReqDistrRevnAmtCur` |
-| `ProjDmndReferencedPlanDataUUID` | `ProjDmndReferencedPlanDataUUID` |
-| `ProjDmndRsceReqDistrStartDate` | `ProjDmndRsceReqDistrStartDate` |
-| `ProjDmndRsceReqDistrEndDate` | `ProjDmndRsceReqDistrEndDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Root` | *Association* |
-| `_EnterpriseProject` | *Association* |
-| `_ProjDmndRsceReqDistrQtyUnit` | *Association* |
-| `_DmndRsceReqDistrPerdAmtCur` | *Association* |
-| `_DmndRsceReqDistrRevnAmtCur` | *Association* |
-| `_ProjDmndRsceReq` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjDmndRsceReqDistrUUID` | ✓ | |  |  |
+| `ProjDmndResourceRequestUUID` |  | |  |  |
+| `ProjectDemandUUID` |  | |  |  |
+| `ProjectUUID` |  | |  |  |
+| `ReferencedObjectUUID` |  | |  |  |
+| `ProjDmndRsceReqDistrYearVal` |  | |  |  |
+| `ProjDmndRsceReqDistrPerdVal` |  | |  |  |
+| `ProjDmndRsceReqDistrQuantity` |  | |  | `} ProjDmndRsceReqDistrQuantity` |
+| `ProjDmndRsceReqDistrQtyUnit` |  | |  |  |
+| `ProjDmndRsceReqDistrPerdAmt` |  | |  | `} ProjDmndRsceReqDistrPerdAmt` |
+| `ProjDmndRsceReqDistrPerdAmtCur` |  | |  |  |
+| `ProjDmndRsceReqDistrRevenueAmt` |  | |  | `} ProjDmndRsceReqDistrRevenueAmt` |
+| `ProjDmndRsceReqDistrRevnAmtCur` |  | |  |  |
+| `ProjDmndReferencedPlanDataUUID` |  | |  |  |
+| `ProjDmndRsceReqDistrStartDate` |  | |  |  |
+| `ProjDmndRsceReqDistrEndDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Root` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
+| `_ProjDmndRsceReqDistrQtyUnit` | | ✓ | | |
+| `_DmndRsceReqDistrPerdAmtCur` | | ✓ | | |
+| `_DmndRsceReqDistrRevnAmtCur` | | ✓ | | |
+| `_ProjDmndRsceReq` | | ✓ | | |
 
 ## Source Code
 

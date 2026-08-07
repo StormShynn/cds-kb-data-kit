@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `NodeName` | `db.node_name` |
-| key `FieldName` | `db.field_name` |
-| key `CodeValue` | `db.code_value` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `NodeName` | ✓ | |  | `node_name` |
+| `FieldName` | ✓ | |  | `field_name` |
+| `CodeValue` | ✓ | |  | `code_value` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

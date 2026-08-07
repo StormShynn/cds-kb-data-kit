@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdPlanningBlock` | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_block_planning preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdPlanningBlock` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as /scmtms/vdm_block_planning preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

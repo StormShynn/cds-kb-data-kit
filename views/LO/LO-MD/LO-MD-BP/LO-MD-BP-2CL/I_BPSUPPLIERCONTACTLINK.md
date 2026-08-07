@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerUUID` | `BPSupplierContactLink.partner_guid` |
-| key `PersonUUID` | `BPSupplierContactLink.person_guid` |
-| key `SupplierContact` | `BPSupplierContactLink.vendor_cont` |
-| `CreatedByUser` | `BPSupplierContactLink.cruser` |
-| `CreationDate` | `BPSupplierContactLink.crdat` |
-| `CreationTime` | `BPSupplierContactLink.crtim` |
-| `_BusinessPartnerCompany` | *Association* |
-| `_BusinessPartnerPerson` | *Association* |
-| `_ContactPerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |
+| `PersonUUID` | ✓ | |  | `person_guid` |
+| `SupplierContact` | ✓ | |  | `vendor_cont` |
+| `CreatedByUser` |  | |  | `cruser` |
+| `CreationDate` |  | |  | `crdat` |
+| `CreationTime` |  | |  | `crtim` |
+| `_BusinessPartnerCompany` | | ✓ | | |
+| `_BusinessPartnerPerson` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
 
 ## Associations
 

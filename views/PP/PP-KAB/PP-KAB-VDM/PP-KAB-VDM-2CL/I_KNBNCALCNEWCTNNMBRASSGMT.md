@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `KnbnCalcNewCtnNmbrAssgmt` | `cast(substring(domvalue_l, 1, 1) as nknum)` |
-| `DomainValue` | `domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `KnbnCalcNewCtnNmbrAssgmt` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as nknum)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

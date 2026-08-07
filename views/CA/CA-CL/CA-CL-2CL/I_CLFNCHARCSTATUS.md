@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcStatus` | `CharacteristicStatus.atmst` |
-| `CharcIsReleased` | `CharacteristicStatus.atfre` |
-| `CharcIsMarkedForDeletion` | `CharacteristicStatus.atlvm` |
-| `_CharacteristicStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcStatus` | ✓ | |  | `atmst` |
+| `CharcIsReleased` |  | |  | `atfre` |
+| `CharcIsMarkedForDeletion` |  | |  | `atlvm` |
+| `_CharacteristicStatusText` | | ✓ | | |
 
 ## Source Code
 

@@ -29,51 +29,51 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMDocumentUUID` | `LegalDocument.LglCntntMDocumentUUID` |
-| `LglCntntMDocument` | `LegalDocument.LglCntntMDocument` |
-| `LglCntntMDocumentLinkedObject` | `LegalDocument.LglCntntMDocumentLinkedObject` |
-| `LglCntntMDocumentLinkedObjKey` | `LegalDocument.LglCntntMDocumentLinkedObjKey` |
-| `LegalTransaction` | `LegalDocument.LegalTransaction` |
-| `LegalTransactionUUID` | `LegalDocument.LegalTransactionUUID` |
-| `LglCntntMDocContentType` | `LegalDocument.LglCntntMDocContentType` |
-| `LglCntntMLanguage` | `LegalDocument.LglCntntMLanguage` |
-| `DocumentDescription` | `LegalDocument.DocumentDescription` |
-| `LglCntntMDocAccessLvl` | `LegalDocument.LglCntntMDocAccessLvl` |
-| `LglCntntMDocPaperType` | `LegalDocument.LglCntntMDocPaperType` |
-| `LegalDocumentSource` | `LegalDocument.LegalDocumentSource` |
-| `LglCntntMChangedUTCDateTime` | `LegalDocument.LglCntntMChangedUTCDateTime` |
-| `LglCntntMChangedByUser` | `LegalDocument.LglCntntMChangedByUser` |
-| `LglCntntMCreatedUTCDateTime` | `LegalDocument.LglCntntMCreatedUTCDateTime` |
-| `LglCntntMCreatedByUser` | `LegalDocument.LglCntntMCreatedByUser` |
-| `InternalDocumentStatus` | `LegalDocument.InternalDocumentStatus` |
-| `LglCntntMDocumentIsTopVersion` | `LegalDocument.LglCntntMDocumentIsTopVersion` |
-| `LglCntntMVirtualDocVersKey` | `LegalDocument.LglCntntMVirtualDocVersKey` |
-| `LglCntntMDocAssemblyStatus` | `LegalDocument.LglCntntMDocAssemblyStatus` |
-| `LglCntntMTmplID` | `LegalDocument.LglCntntMTmplID` |
-| `LglCntntMDocType` | `LegalDocument.LglCntntMDocType` |
-| `LglCntntMDocLowTouchLevel` | `LegalDocument.LglCntntMDocLowTouchLevel` |
-| `LglCntntMIsMandatory` | `LegalDocument.LglCntntMIsMandatory` |
-| `LegalDocumentVersion` | `LegalDocument.LegalDocumentVersion` |
-| `LglCntntMParentDocument` | `LegalDocument.LglCntntMParentDocument` |
-| `LglCntntMDocumentKind` | `LegalDocument.LglCntntMDocumentKind` |
-| `LglCntntMDocAmendmentType` | `LglCntntMDocAmendmentType` |
-| `LglCntntMDocEffectiveFromDate` | `LglCntntMDocEffectiveFromDate` |
-| `LglCntntMDocEffectiveToDate` | `LglCntntMDocEffectiveToDate` |
-| `LglCntntMSgntrPreference` | `LglCntntMSgntrPreference` |
-| `LglCntntMMainLinkdObjType` | `LegalDocument.LglCntntMMainLinkdObjType` |
-| `IsEndOfPurposeBlocked` | `LegalDocument.IsEndOfPurposeBlocked` |
-| `LglCntntMProfile` | `LegalDocument.LglCntntMProfile` |
-| `LglTransAccessLvl` | `LegalDocument.LglTransAccessLvl` |
-| `LglCntntMMainOrgCoCode` | `LegalDocument.LglCntntMMainOrgCoCode` |
-| `LglCntntMMainOrgPurOrg` | `LegalDocument.LglCntntMMainOrgPurOrg` |
-| `LglCntntMMainOrgSalesOrg` | `LegalDocument.LglCntntMMainOrgSalesOrg` |
-| `_LegalDocParCategory` | *Association* |
-| `_LegalDocStamp` | *Association* |
-| `_LegalDocObligation` | *Association* |
-| `_LegalDocAgreement` | *Association* |
-| `_LegalDocTmplInfo` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocumentUUID` | ✓ | |  |  |
+| `LglCntntMDocument` |  | |  |  |
+| `LglCntntMDocumentLinkedObject` |  | |  |  |
+| `LglCntntMDocumentLinkedObjKey` |  | |  |  |
+| `LegalTransaction` |  | |  |  |
+| `LegalTransactionUUID` |  | |  |  |
+| `LglCntntMDocContentType` |  | |  |  |
+| `LglCntntMLanguage` |  | |  |  |
+| `DocumentDescription` |  | |  |  |
+| `LglCntntMDocAccessLvl` |  | |  |  |
+| `LglCntntMDocPaperType` |  | |  |  |
+| `LegalDocumentSource` |  | |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |
+| `InternalDocumentStatus` |  | |  |  |
+| `LglCntntMDocumentIsTopVersion` |  | |  |  |
+| `LglCntntMVirtualDocVersKey` |  | |  |  |
+| `LglCntntMDocAssemblyStatus` |  | |  |  |
+| `LglCntntMTmplID` |  | |  |  |
+| `LglCntntMDocType` |  | |  |  |
+| `LglCntntMDocLowTouchLevel` |  | |  |  |
+| `LglCntntMIsMandatory` |  | |  |  |
+| `LegalDocumentVersion` |  | |  |  |
+| `LglCntntMParentDocument` |  | |  |  |
+| `LglCntntMDocumentKind` |  | |  |  |
+| `LglCntntMDocAmendmentType` |  | |  |  |
+| `LglCntntMDocEffectiveFromDate` |  | |  |  |
+| `LglCntntMDocEffectiveToDate` |  | |  |  |
+| `LglCntntMSgntrPreference` |  | |  |  |
+| `LglCntntMMainLinkdObjType` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `LglCntntMProfile` |  | |  |  |
+| `LglTransAccessLvl` |  | |  |  |
+| `LglCntntMMainOrgCoCode` |  | |  |  |
+| `LglCntntMMainOrgPurOrg` |  | |  |  |
+| `LglCntntMMainOrgSalesOrg` |  | |  |  |
+| `_LegalDocParCategory` | | ✓ | | |
+| `_LegalDocStamp` | | ✓ | | |
+| `_LegalDocObligation` | | ✓ | | |
+| `_LegalDocAgreement` | | ✓ | | |
+| `_LegalDocTmplInfo` | | ✓ | | |
 
 ## Source Code
 

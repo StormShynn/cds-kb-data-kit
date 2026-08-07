@@ -32,22 +32,22 @@ keywords:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRCUUID` | `mrc_uuid` |
-| `MRCCode` | `mrc_code` |
-| `Description` | `description` |
-| `LongDescription` | `long_description` |
-| `MultipleIterations` | `multiple_iterations` |
-| `FFFRelated` | `fff_related` |
-| `ModeCode` | `mode_code` |
-| `IsTemporary` | `is_temporary` |
-| `CreatedBy` | `created_by` |
-| `CreatedAt` | `created_at` |
-| `LastChangedAt` | `last_changed_at` |
-| `LastChangedBy` | `last_changed_by` |
-| `LocalLastChanged` | `local_last_changed` |
-| `_mrc_build` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRCUUID` | ✓ | |  | `mrc_uuid` |
+| `MRCCode` |  | |  | `mrc_code` |
+| `Description` |  | |  | `description` |
+| `LongDescription` |  | |  | `long_description` |
+| `MultipleIterations` |  | |  | `multiple_iterations` |
+| `FFFRelated` |  | |  | `fff_related` |
+| `ModeCode` |  | |  | `mode_code` |
+| `IsTemporary` |  | |  | `is_temporary` |
+| `CreatedBy` |  | |  | `created_by` |
+| `CreatedAt` |  | |  | `created_at` |
+| `LastChangedAt` |  | |  | `last_changed_at` |
+| `LastChangedBy` |  | |  | `last_changed_by` |
+| `LocalLastChanged` |  | |  | `local_last_changed` |
+| `_mrc_build` | | ✓ | | |
 
 ## Source Code
 

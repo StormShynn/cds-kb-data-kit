@@ -29,121 +29,121 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceObjectType` | `ServiceOrderItem.ServiceObjectType` |
-| key `ServiceDocument` | `ServiceOrderItem.ServiceDocument` |
-| key `ServiceDocumentItem` | `ServiceOrderItem.ServiceDocumentItem` |
-| `ServiceDocumentUUID` | `ServiceOrder.ServiceDocumentUUID` |
-| `ServiceDocumentCharUUID` | `ServiceOrder.ServiceDocumentCharUUID` |
-| `ServiceDocumentDescription` | `ServiceOrder.ServiceDocumentDescription` |
-| `ServiceDocNetAmount` | `} ServiceOrder.ServiceDocNetAmount` |
-| `PurchaseOrderByCustomer` | `ServiceOrder.PurchaseOrderByCustomer` |
-| `ServiceDocumentStatus` | `ServiceOrder.ServiceDocumentStatus` |
-| `ServiceDocumentHasError` | `ServiceOrder.ServiceDocumentHasError` |
-| `ServiceDocIsReleasedForBilling` | `ServiceOrder.ServiceDocIsReleasedForBilling` |
-| `ServiceDocBillingStatus` | `ServiceOrder.ServiceDocBillingStatus` |
-| `ServiceDocumentIsOpen` | `ServiceOrder.ServiceDocumentIsOpen` |
-| `BusinessActivityCategory` | `ServiceOrder.BusinessActivityCategory` |
-| `ServiceDocChangedDateTime` | `ServiceOrder.ServiceDocChangedDateTime` |
-| `ServiceDocCreationDateTime` | `ServiceOrder.ServiceDocCreationDateTime` |
-| `RequestedServiceStartDate` | `ServiceOrder.RequestedServiceStartDate` |
-| `RequestedServiceEndDate` | `ServiceOrder.RequestedServiceEndDate` |
-| `ServiceDocumentItemPriority` | `ServiceOrderItem.ServiceDocumentItemPriority` |
-| `ServiceDocumentType` | `ServiceOrderItem.ServiceDocumentType` |
-| `ServiceDocumentItemUUID` | `ServiceOrderItem.ServiceDocumentItemUUID` |
-| `ServiceDocumentItemObjectType` | `ServiceOrderItem.ServiceDocumentItemObjectType` |
-| `ParentServiceDocumentItemUUID` | `ServiceOrderItem.ParentServiceDocumentItemUUID` |
-| `PostingDate` | `ServiceOrderItem.PostingDate` |
-| `ProfitCenter` | `ServiceOrderItem.ProfitCenter` |
-| `ControllingArea` | `ServiceOrderItem.ControllingArea` |
-| `ProfitCenterDeterminationDate` | `ServiceOrderItem.ProfitCenterDeterminationDate` |
-| `ServiceDocItemCategory` | `ServiceOrderItem.ServiceDocItemCategory` |
-| `OriginallyRequestedProduct` | `ServiceOrderItem.OriginallyRequestedProduct` |
-| `Product` | `ServiceOrderItem.Product` |
-| `ActualServiceStartDateTime` | `ServiceOrderItem.ActualServiceStartDateTime` |
-| `ActualServiceEndDateTime` | `ServiceOrderItem.ActualServiceEndDateTime` |
-| `ActualServiceDuration` | `} ServiceOrderItem.ActualServiceDuration` |
-| `ActualServiceDurationUnit` | `ServiceOrderItem.ActualServiceDurationUnit` |
-| `TimeSheetOvertimeCategory` | `ServiceOrderItem.TimeSheetOvertimeCategory` |
-| `InvoiceAmountInInvoiceDocCrcy` | `} ServiceOrderItem.InvoiceAmountInInvoiceDocCrcy` |
-| `SrvcDocItmRequestedQuantity` | `} ServiceOrderItem.SrvcDocItmRequestedQuantity` |
-| `InvoiceQuantity` | `} ServiceOrderItem.InvoiceQuantity` |
-| `SrvcDocItmDeliveredQuantity` | `} ServiceOrderItem.SrvcDocItmDeliveredQuantity` |
-| `SrvcDocItmOrdToBaseQtyNmrtr` | `ServiceOrderItem.SrvcDocItmOrdToBaseQtyNmrtr` |
-| `SrvcDocItmOrdToBaseQtyDnmntr` | `ServiceOrderItem.SrvcDocItmOrdToBaseQtyDnmntr` |
-| `OrderToBaseQuantityExponent` | `ServiceOrderItem.OrderToBaseQuantityExponent` |
-| `ServiceDocItemQuantityUnit` | `ServiceOrderItem.ServiceDocItemQuantityUnit` |
-| `SrvcDocItemBaseQuantityUnit` | `ServiceOrderItem.SrvcDocItemBaseQuantityUnit` |
-| `ServiceTeam` | `ServiceOrderItem.ServiceTeam` |
-| `SoldToParty` | `ServiceOrderItem.SoldToParty` |
-| `SoldToPartyCountry` | `ServiceOrderItem.SoldToPartyCountry` |
-| `SoldToPartyRegion` | `ServiceOrderItem.SoldToPartyRegion` |
-| `ResponsibleEmployee` | `ServiceOrderItem.ResponsibleEmployee` |
-| `ContactPerson` | `ServiceOrderItem.ContactPerson` |
-| `TransactionCurrency` | `ServiceOrderItem.TransactionCurrency` |
-| `StatisticsCurrency` | `ServiceOrderItem.StatisticsCurrency` |
-| `ExchangeRateType` | `ServiceOrderItem.ExchangeRateType` |
-| `ExchangeRateDate` | `ServiceOrderItem.ExchangeRateDate` |
-| `AccountingExchangeRate` | `ServiceOrderItem.AccountingExchangeRate` |
-| `CustomerGroup` | `ServiceOrderItem.CustomerGroup` |
-| `BillableControl` | `ServiceOrderItem.BillableControl` |
-| `BillingBlockReason` | `ServiceOrderItem.BillingBlockReason` |
-| `AdditionalCustomerGroup1` | `ServiceOrderItem.AdditionalCustomerGroup1` |
-| `AdditionalCustomerGroup2` | `ServiceOrderItem.AdditionalCustomerGroup2` |
-| `AdditionalCustomerGroup3` | `ServiceOrderItem.AdditionalCustomerGroup3` |
-| `AdditionalCustomerGroup4` | `ServiceOrderItem.AdditionalCustomerGroup4` |
-| `AdditionalCustomerGroup5` | `ServiceOrderItem.AdditionalCustomerGroup5` |
-| `SalesOrganizationOrgUnitID` | `ServiceOrderItem.SalesOrganizationOrgUnitID` |
-| `SalesOfficeOrgUnitID` | `ServiceOrderItem.SalesOfficeOrgUnitID` |
-| `SalesGroupOrgUnitID` | `ServiceOrderItem.SalesGroupOrgUnitID` |
-| `DistributionChannel` | `ServiceOrderItem.DistributionChannel` |
-| `Division` | `ServiceOrderItem.Division` |
-| `ServiceOrganization` | `ServiceOrderItem.ServiceOrganization` |
-| `ResponsibleSalesOrganization` | `ServiceOrderItem.ResponsibleSalesOrganization` |
-| `ResponsibleServiceOrganization` | `ServiceOrderItem.ResponsibleServiceOrganization` |
-| `SalesOrganization` | `ServiceOrderItem.SalesOrganization` |
-| `SalesOffice` | `ServiceOrderItem.SalesOffice` |
-| `SalesGroup` | `ServiceOrderItem.SalesGroup` |
-| `ServiceDocumentItemStatus` | `ServiceOrderItem.ServiceDocumentItemStatus` |
-| `ServiceDocumentItemHasError` | `ServiceOrderItem.ServiceDocumentItemHasError` |
-| `ServiceDocItemBillingStatus` | `ServiceOrderItem.ServiceDocItemBillingStatus` |
-| `SrvcDocItmIsReleasedForBilling` | `ServiceOrderItem.SrvcDocItmIsReleasedForBilling` |
-| `ServiceDocumentItemIsRejected` | `ServiceOrderItem.ServiceDocumentItemIsRejected` |
-| `ServiceDocumentItemIsOpen` | `ServiceOrderItem.ServiceDocumentItemIsOpen` |
-| `ServiceDocumentItemNetAmount` | `} ServiceOrderItem.ServiceDocumentItemNetAmount` |
-| `ServiceDocItemGrossAmount` | `} ServiceOrderItem.ServiceDocItemGrossAmount` |
-| `ProductGroup` | `ServiceOrderItem.ProductGroup` |
-| `SrvcMaterialPricingGroup` | `ServiceOrderItem.ProductGroup` |
-| `ProductGroup1` | `ServiceOrderItem.ProductGroup1` |
-| `ProductGroup2` | `ServiceOrderItem.ProductGroup2` |
-| `ProductGroup3` | `ServiceOrderItem.ProductGroup3` |
-| `ProductGroup4` | `ServiceOrderItem.ProductGroup4` |
-| `ProductGroup5` | `ServiceOrderItem.ProductGroup5` |
-| `ProductHierarchy` | `ServiceOrderItem.ProductHierarchy` |
-| `ServiceRefObjectSequenceNumber` | `ServiceOrdItemRefObj.ServiceRefObjectSequenceNumber` |
-| `ServiceReferenceObjectType` | `ServiceOrdItemRefObj.ServiceReferenceObjectType` |
-| `ServiceReferenceObjectUUID` | `ServiceOrdItemRefObj.ServiceReferenceObjectUUID` |
-| `ProductID` | `ServiceOrdItemRefObj.ProductID` |
-| `SrvcRefObjIsMainObject` | `ServiceOrdItemRefObj.SrvcRefObjIsMainObject` |
-| `ProductUUID` | `ServiceOrdItemRefObj.ProductUUID` |
-| `SerialNumber` | `ServiceOrdItemRefObj.SerialNumber` |
-| `Equipment` | `ServiceOrdItemRefObj.Equipment` |
-| `FunctionalLocation` | `ServiceOrdItemRefObj.FunctionalLocation` |
-| `ServiceDocumentRelationUUID` | `ServiceDocumentPredecessor.ServiceDocumentRelationUUID` |
-| `ServiceDocumentRelationUUID_2` | `ServiceDocumentPredecessor.ServiceDocumentRelationUUID` |
-| `ServiceDocRltnSequenceNumber` | `ServiceDocumentPredecessor.ServiceDocRltnSequenceNumber` |
-| `ServiceDocRltnSequenceNumber_2` | `ServiceDocumentPredecessor.ServiceDocRltnSequenceNumber` |
-| `SrvcOrdPredecessorUUID` | `ServiceDocumentPredecessor.ServiceDocumentPredecessorUUID` |
-| `SrvcOrdPrdcssrBusObjType` | `ServiceDocumentPredecessor.ServiceDocPrdcssrBusObjType` |
-| `ServiceDocumentItmRelationUUID` | `ServiceDocumentItemPrdcssr.ServiceDocumentItmRelationUUID` |
-| `SrvcDocItmRelationUUID_2` | `ServiceDocumentItemPrdcssr.ServiceDocumentItmRelationUUID` |
-| `ServiceDocItmRltnSqncNumber` | `ServiceDocumentItemPrdcssr.ServiceDocItmRltnSqncNumber` |
-| `ServiceDocItmRltnSqncNumber_2` | `ServiceDocumentItemPrdcssr.ServiceDocItmRltnSqncNumber` |
-| `SrvcOrdItmPrdcssrCharUUID` | `ServiceDocumentItemPrdcssr.ServiceDocItmPrdcssrCharUUID` |
-| `SrvcOrdItmPrdcssrBusObjType` | `ServiceDocumentItemPrdcssr.ServiceDocItmPrdcssrBusObjType` |
-| `SrvcOrdItmPrdcssrCharUUID_2` | `ServiceOrderItemPrdcssr.ServiceDocItmPrdcssrCharUUID` |
-| `SrvcOrdItmPrdcssrBusObjType_2` | `ServiceOrderItemPrdcssr.ServiceDocItmPrdcssrBusObjType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceObjectType` | ✓ | |  |  |
+| `ServiceDocument` | ✓ | |  |  |
+| `ServiceDocumentItem` | ✓ | |  |  |
+| `ServiceDocumentUUID` |  | |  |  |
+| `ServiceDocumentCharUUID` |  | |  |  |
+| `ServiceDocumentDescription` |  | |  |  |
+| `ServiceDocNetAmount` |  | |  | `} ServiceOrder.ServiceDocNetAmount` |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `ServiceDocumentStatus` |  | |  |  |
+| `ServiceDocumentHasError` |  | |  |  |
+| `ServiceDocIsReleasedForBilling` |  | |  |  |
+| `ServiceDocBillingStatus` |  | |  |  |
+| `ServiceDocumentIsOpen` |  | |  |  |
+| `BusinessActivityCategory` |  | |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |
+| `RequestedServiceStartDate` |  | |  |  |
+| `RequestedServiceEndDate` |  | |  |  |
+| `ServiceDocumentItemPriority` |  | |  |  |
+| `ServiceDocumentType` |  | |  |  |
+| `ServiceDocumentItemUUID` |  | |  |  |
+| `ServiceDocumentItemObjectType` |  | |  |  |
+| `ParentServiceDocumentItemUUID` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ProfitCenterDeterminationDate` |  | |  |  |
+| `ServiceDocItemCategory` |  | |  |  |
+| `OriginallyRequestedProduct` |  | |  |  |
+| `Product` |  | |  |  |
+| `ActualServiceStartDateTime` |  | |  |  |
+| `ActualServiceEndDateTime` |  | |  |  |
+| `ActualServiceDuration` |  | |  | `} ServiceOrderItem.ActualServiceDuration` |
+| `ActualServiceDurationUnit` |  | |  |  |
+| `TimeSheetOvertimeCategory` |  | |  |  |
+| `InvoiceAmountInInvoiceDocCrcy` |  | |  | `} ServiceOrderItem.InvoiceAmountInInvoiceDocCrcy` |
+| `SrvcDocItmRequestedQuantity` |  | |  | `} ServiceOrderItem.SrvcDocItmRequestedQuantity` |
+| `InvoiceQuantity` |  | |  | `} ServiceOrderItem.InvoiceQuantity` |
+| `SrvcDocItmDeliveredQuantity` |  | |  | `} ServiceOrderItem.SrvcDocItmDeliveredQuantity` |
+| `SrvcDocItmOrdToBaseQtyNmrtr` |  | |  |  |
+| `SrvcDocItmOrdToBaseQtyDnmntr` |  | |  |  |
+| `OrderToBaseQuantityExponent` |  | |  |  |
+| `ServiceDocItemQuantityUnit` |  | |  |  |
+| `SrvcDocItemBaseQuantityUnit` |  | |  |  |
+| `ServiceTeam` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `SoldToPartyCountry` |  | |  |  |
+| `SoldToPartyRegion` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `StatisticsCurrency` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `AccountingExchangeRate` |  | |  |  |
+| `CustomerGroup` |  | |  |  |
+| `BillableControl` |  | |  |  |
+| `BillingBlockReason` |  | |  |  |
+| `AdditionalCustomerGroup1` |  | |  |  |
+| `AdditionalCustomerGroup2` |  | |  |  |
+| `AdditionalCustomerGroup3` |  | |  |  |
+| `AdditionalCustomerGroup4` |  | |  |  |
+| `AdditionalCustomerGroup5` |  | |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `ServiceOrganization` |  | |  |  |
+| `ResponsibleSalesOrganization` |  | |  |  |
+| `ResponsibleServiceOrganization` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `ServiceDocumentItemStatus` |  | |  |  |
+| `ServiceDocumentItemHasError` |  | |  |  |
+| `ServiceDocItemBillingStatus` |  | |  |  |
+| `SrvcDocItmIsReleasedForBilling` |  | |  |  |
+| `ServiceDocumentItemIsRejected` |  | |  |  |
+| `ServiceDocumentItemIsOpen` |  | |  |  |
+| `ServiceDocumentItemNetAmount` |  | |  | `} ServiceOrderItem.ServiceDocumentItemNetAmount` |
+| `ServiceDocItemGrossAmount` |  | |  | `} ServiceOrderItem.ServiceDocItemGrossAmount` |
+| `ProductGroup` |  | |  |  |
+| `SrvcMaterialPricingGroup` |  | |  | `ProductGroup` |
+| `ProductGroup1` |  | |  |  |
+| `ProductGroup2` |  | |  |  |
+| `ProductGroup3` |  | |  |  |
+| `ProductGroup4` |  | |  |  |
+| `ProductGroup5` |  | |  |  |
+| `ProductHierarchy` |  | |  |  |
+| `ServiceRefObjectSequenceNumber` |  | |  |  |
+| `ServiceReferenceObjectType` |  | |  |  |
+| `ServiceReferenceObjectUUID` |  | |  |  |
+| `ProductID` |  | |  |  |
+| `SrvcRefObjIsMainObject` |  | |  |  |
+| `ProductUUID` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `ServiceDocumentRelationUUID` |  | |  |  |
+| `ServiceDocumentRelationUUID_2` |  | |  | `ServiceDocumentRelationUUID` |
+| `ServiceDocRltnSequenceNumber` |  | |  |  |
+| `ServiceDocRltnSequenceNumber_2` |  | |  | `ServiceDocRltnSequenceNumber` |
+| `SrvcOrdPredecessorUUID` |  | |  | `ServiceDocumentPredecessorUUID` |
+| `SrvcOrdPrdcssrBusObjType` |  | |  | `ServiceDocPrdcssrBusObjType` |
+| `ServiceDocumentItmRelationUUID` |  | |  |  |
+| `SrvcDocItmRelationUUID_2` |  | |  | `ServiceDocumentItmRelationUUID` |
+| `ServiceDocItmRltnSqncNumber` |  | |  |  |
+| `ServiceDocItmRltnSqncNumber_2` |  | |  | `ServiceDocItmRltnSqncNumber` |
+| `SrvcOrdItmPrdcssrCharUUID` |  | |  | `ServiceDocItmPrdcssrCharUUID` |
+| `SrvcOrdItmPrdcssrBusObjType` |  | |  | `ServiceDocItmPrdcssrBusObjType` |
+| `SrvcOrdItmPrdcssrCharUUID_2` |  | |  | `ServiceDocItmPrdcssrCharUUID` |
+| `SrvcOrdItmPrdcssrBusObjType_2` |  | |  | `ServiceDocItmPrdcssrBusObjType` |
 
 ## Associations
 

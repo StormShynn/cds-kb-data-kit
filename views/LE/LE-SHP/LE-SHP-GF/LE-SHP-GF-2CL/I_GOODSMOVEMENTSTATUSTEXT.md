@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GoodsMovementStatus` | `statu` |
-| key `Language` | `spras` |
-| `GoodsMovementStatusDesc` | `bezei` |
-| `_GoodsMovementStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GoodsMovementStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `GoodsMovementStatusDesc` |  | |  | `bezei` |
+| `_GoodsMovementStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

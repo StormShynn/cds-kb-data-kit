@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowScenarioDefinition` | `wfd_id` |
-| key `WorkflowScenarioDefinitionVers` | `version` |
-| key `WorkflowAgentRule` | `ruse_label` |
-| `_WorkflowAgentRuleText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` |
+| `WorkflowAgentRule` | ✓ | |  | `ruse_label` |
+| `_WorkflowAgentRuleText` | | ✓ | | |
 
 ## Associations
 

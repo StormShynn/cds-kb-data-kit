@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdCmplncLabelFieldGroupID` | `ProdCmplncLabelFieldGroupID` |
-| `ProdCmplncLblFldParentGroupID` | `ProdCmplncLblFldParentGroupID` |
-| `ProdCmplncLblFldGrpTechName` | `ProdCmplncLblFldGrpDDICStruc` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_LabelFieldVersions` | *Association* |
-| `_Texts` | *Association* |
-| `_ParentLabelFieldGroup` | *Association* |
-| `_ChildrenLabelFieldGroups` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdCmplncLabelFieldGroupID` | ✓ | |  |  |
+| `ProdCmplncLblFldParentGroupID` |  | |  |  |
+| `ProdCmplncLblFldGrpTechName` |  | |  | `ProdCmplncLblFldGrpDDICStruc` |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_LabelFieldVersions` | | ✓ | | |
+| `_Texts` | | ✓ | | |
+| `_ParentLabelFieldGroup` | | ✓ | | |
+| `_ChildrenLabelFieldGroups` | | ✓ | | |
 
 ## Source Code
 

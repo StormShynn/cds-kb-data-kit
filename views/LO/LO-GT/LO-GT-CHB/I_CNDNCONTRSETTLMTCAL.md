@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConditionContract` | `}] } key ConditionContract` |
-| key `SettlmtDate` | `SettlmtDate` |
-| key `SettlmtDateSequentialID` | `SettlmtDateSequentialID` |
-| `SettlmtDateCat` | `SettlmtDateCat` |
-| `CndnContrCalItemUUID` | `CndnContrCalItemUUID` |
-| `RefSettlmtDate` | `RefSettlmtDate` |
-| `RefSettlmtDateSequentialID` | `RefSettlmtDateSequentialID` |
-| `SettlmtExecutionDate` | `SettlmtExecutionDate` |
-| `BusVolDateFrom` | `BusVolDateFrom` |
-| `BusVolDateTo` | `BusVolDateTo` |
-| `SettlmtDateUsage` | `SettlmtDateUsage` |
-| `CndnContrSourceCalItemUUID` | `CndnContrSourceCalItemUUID` |
-| `_SettlmtDateCat` | *Association* |
-| `_SettlmtDateUsage` | *Association* |
-| `_ConditionContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionContract` |  | |  | `}] } key ConditionContract` |
+| `SettlmtDate` | ✓ | |  |  |
+| `SettlmtDateSequentialID` | ✓ | |  |  |
+| `SettlmtDateCat` |  | |  |  |
+| `CndnContrCalItemUUID` |  | |  |  |
+| `RefSettlmtDate` |  | |  |  |
+| `RefSettlmtDateSequentialID` |  | |  |  |
+| `SettlmtExecutionDate` |  | |  |  |
+| `BusVolDateFrom` |  | |  |  |
+| `BusVolDateTo` |  | |  |  |
+| `SettlmtDateUsage` |  | |  |  |
+| `CndnContrSourceCalItemUUID` |  | |  |  |
+| `_SettlmtDateCat` | | ✓ | | |
+| `_SettlmtDateUsage` | | ✓ | | |
+| `_ConditionContract` | | ✓ | | |
 
 ## Associations
 

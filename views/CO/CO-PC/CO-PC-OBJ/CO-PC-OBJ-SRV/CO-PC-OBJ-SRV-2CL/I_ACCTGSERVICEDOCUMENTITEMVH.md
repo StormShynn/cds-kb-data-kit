@@ -32,23 +32,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocumentType` | `ServiceDocumentType` |
-| key `ServiceDocument` | `ServiceDocument` |
-| key `ServiceDocumentItem` | `ServiceDocumentItem` |
-| `CompanyCode` | `CompanyCode` |
-| `ProfitCenter` | `ProfitCenter` |
-| `ServiceDocumentTypeName` | `ServiceDocumentTypeName` |
-| `ServiceDocumentDescription` | `ServiceDocumentDescription` |
-| `ServiceDocItemCategory` | `ServiceDocItemCategory` |
-| `ServiceDocItemCategoryName` | `cast( ServiceDocItemCategoryName as fco_srvdoc_item_type_desc preserving type )` |
-| `ServiceDocumentItemDescription` | `ServiceDocumentItemDescription` |
-| `OriginallyRequestedProduct` | `OriginallyRequestedProduct` |
-| `ProductName` | `_ProductText[1: Language = $session.system_language].ProductName` |
-| `PostingDate` | `PostingDate` |
-| `SrvcOrderConfirmationRelevance` | `SrvcOrderConfirmationRelevance` |
-| `_AcctgServiceDocumentTypeVH` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocumentType` | ✓ | |  |  |
+| `ServiceDocument` | ✓ | |  |  |
+| `ServiceDocumentItem` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ServiceDocumentTypeName` |  | |  |  |
+| `ServiceDocumentDescription` |  | |  |  |
+| `ServiceDocItemCategory` |  | |  |  |
+| `ServiceDocItemCategoryName` |  | |  | `cast( ServiceDocItemCategoryName as fco_srvdoc_item_type_desc preserving type )` |
+| `ServiceDocumentItemDescription` |  | |  |  |
+| `OriginallyRequestedProduct` |  | |  |  |
+| `ProductName` |  | |  | `_ProductText[1: Language = $session.system_language].ProductName` |
+| `PostingDate` |  | |  |  |
+| `SrvcOrderConfirmationRelevance` |  | |  |  |
+| `_AcctgServiceDocumentTypeVH` | | ✓ | | |
 
 ## Associations
 

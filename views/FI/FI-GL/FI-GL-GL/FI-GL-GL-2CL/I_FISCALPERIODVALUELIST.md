@@ -28,9 +28,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalPeriod` | `I_FiscalYearPeriod.FiscalPeriod` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalPeriod` | ✓ | |  |  |
 
 ## Source Code
 

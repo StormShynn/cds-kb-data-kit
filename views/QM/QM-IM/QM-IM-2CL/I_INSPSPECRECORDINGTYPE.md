@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspSpecRecordingType` | `cast ( substring( domvalue_l, 1, 1 ) as qestukz preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspSpecRecordingType` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as qestukz preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

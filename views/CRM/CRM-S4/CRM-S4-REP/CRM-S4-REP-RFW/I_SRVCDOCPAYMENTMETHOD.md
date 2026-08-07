@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PaymentMethod` | `_PaymentMethod.PaymentMethod` |
-| key `SalesOrganization` | `_SlsOrgIDDetmCountry.SalesOrganization` |
-| key `OrgUnitTypeIDConcatenated` | `_SlsOrgIDDetmCountry.OrgUnitTypeIDConcatenated` |
-| `Country` | `_PaymentMethod.Country` |
-| `_SalesOrganizationOrgUnit` | *Association* |
-| `_SalesOrganization` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PaymentMethod` | ✓ | | `_PaymentMethod` | `PaymentMethod` |
+| `SalesOrganization` | ✓ | | `_SlsOrgIDDetmCountry` | `SalesOrganization` |
+| `OrgUnitTypeIDConcatenated` | ✓ | | `_SlsOrgIDDetmCountry` | `OrgUnitTypeIDConcatenated` |
+| `Country` |  | | `_PaymentMethod` | `Country` |
+| `_SalesOrganizationOrgUnit` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
 
 ## Associations
 

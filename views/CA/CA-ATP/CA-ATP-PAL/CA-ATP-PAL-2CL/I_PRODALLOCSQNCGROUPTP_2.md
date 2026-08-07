@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocSequenceGroupUUID` | `ProdAllocSequenceGroupUUID` |
-| `ProductAllocationSequenceGroup` | `ProductAllocationSequenceGroup` |
-| `ProductAllocationSequence` | `ProductAllocationSequence` |
-| `ProductAllocationSequenceUUID` | `ProductAllocationSequenceUUID` |
-| `ProdAllocSequenceGroupType` | `ProdAllocSequenceGroupType` |
-| `ProdAllocSqncGrpPriorityValue` | `ProdAllocSqncGrpPriorityValue` |
-| `NumberOfBackwardCnsmpnPeriods` | `NumberOfBackwardCnsmpnPeriods` |
-| `NumberOfForwardCnsmpnPeriods` | `NumberOfForwardCnsmpnPeriods` |
-| `HorizontalConsumptionDirection` | `HorizontalConsumptionDirection` |
-| `PastPeriodIsAllowed` | `PastPeriodIsAllowed` |
-| `OnlyOverlappingQtyIsConsumed` | `OnlyOverlappingQtyIsConsumed` |
-| `ProdAllocSqncGrpCnsmpnUnit` | `ProdAllocSqncGrpCnsmpnUnit` |
-| `IsDeleted` | `IsDeleted` |
-| `_ProdAllocationSequenceTP` | *Association* |
-| `_ProdAllocSqncGroupTTP` | *Association* |
-| `_ProdAllocSqncCstrtTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocSequenceGroupUUID` | ✓ | |  |  |
+| `ProductAllocationSequenceGroup` |  | |  |  |
+| `ProductAllocationSequence` |  | |  |  |
+| `ProductAllocationSequenceUUID` |  | |  |  |
+| `ProdAllocSequenceGroupType` |  | |  |  |
+| `ProdAllocSqncGrpPriorityValue` |  | |  |  |
+| `NumberOfBackwardCnsmpnPeriods` |  | |  |  |
+| `NumberOfForwardCnsmpnPeriods` |  | |  |  |
+| `HorizontalConsumptionDirection` |  | |  |  |
+| `PastPeriodIsAllowed` |  | |  |  |
+| `OnlyOverlappingQtyIsConsumed` |  | |  |  |
+| `ProdAllocSqncGrpCnsmpnUnit` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `_ProdAllocationSequenceTP` | | ✓ | | |
+| `_ProdAllocSqncGroupTTP` | | ✓ | | |
+| `_ProdAllocSqncCstrtTP` | | ✓ | | |
 
 ## Source Code
 

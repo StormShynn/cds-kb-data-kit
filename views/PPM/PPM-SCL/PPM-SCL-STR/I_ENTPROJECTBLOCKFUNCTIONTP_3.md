@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProjectUUID` | `ProjectUUID` |
-| `ParentObjectUUID` | `ParentObjectUUID` |
-| `EntProjTimeRecgIsBlkd` | `EntProjTimeRecgIsBlkd` |
-| `EntProjStaffExpensePostgIsBlkd` | `EntProjStaffExpensePostgIsBlkd` |
-| `EntProjServicePostingIsBlkd` | `EntProjServicePostingIsBlkd` |
-| `EntProjOtherExpensePostgIsBlkd` | `EntProjOtherExpensePostgIsBlkd` |
-| `EntProjPurchasingIsBlkd` | `EntProjPurchasingIsBlkd` |
-| `_EnterpriseProject` | *Association* |
-| `_EnterpriseProjectForUser` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectUUID` | ✓ | |  |  |
+| `ParentObjectUUID` |  | |  |  |
+| `EntProjTimeRecgIsBlkd` |  | |  |  |
+| `EntProjStaffExpensePostgIsBlkd` |  | |  |  |
+| `EntProjServicePostingIsBlkd` |  | |  |  |
+| `EntProjOtherExpensePostgIsBlkd` |  | |  |  |
+| `EntProjPurchasingIsBlkd` |  | |  |  |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EnterpriseProjectForUser` | | ✓ | | |
 
 ## Source Code
 

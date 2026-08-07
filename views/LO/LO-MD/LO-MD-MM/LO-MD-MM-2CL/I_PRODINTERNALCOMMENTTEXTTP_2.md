@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| `ProductLongText` | `ProductLongText` |
-| `ProdLongTxtCreationDateTime` | `ProdLongTxtCreationDateTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `ProdLongTxtLastChangedDateTime` | `ProdLongTxtLastChangedDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `_Product` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ProductLongText` |  | |  |  |
+| `ProdLongTxtCreationDateTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `ProdLongTxtLastChangedDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `_Product` | | ✓ | | |
 
 ## Source Code
 

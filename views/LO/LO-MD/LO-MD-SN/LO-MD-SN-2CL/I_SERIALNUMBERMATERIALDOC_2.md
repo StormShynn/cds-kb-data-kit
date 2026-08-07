@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `_MaintenanceObjectListItem.Equipment` |
-| key `MaterialDocumentYear` | `_MaintObjListMaterialDocument.MaterialDocumentYear` |
-| key `MaterialDocument` | `_MaintObjListMaterialDocument.MaterialDocument` |
-| key `MaterialDocumentItem` | `_MaintObjListMaterialDocument.MaterialDocumentItem` |
-| `Material` | `_MaintenanceObjectListItem.Material` |
-| `SerialNumber` | `_MaintenanceObjectListItem.SerialNumber` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
+| `MaterialDocumentYear` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocumentYear` |
+| `MaterialDocument` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocument` |
+| `MaterialDocumentItem` | ✓ | | `_MaintObjListMaterialDocument` | `MaterialDocumentItem` |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
 
 ## Source Code
 

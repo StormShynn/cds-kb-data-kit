@@ -28,26 +28,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| `InspectionLotQualityScore` | `InspectionLotQualityScore` |
-| `InspLotUsageDecisionCatalog` | `InspLotUsageDecisionCatalog` |
-| `SelectedCodeSetPlant` | `SelectedCodeSetPlant` |
-| `InspLotUsgeDcsnSelectedSet` | `InspLotUsgeDcsnSelectedSet` |
-| `InspLotUsageDecisionCodeGroup` | `InspLotUsageDecisionCodeGroup` |
-| `InspectionLotUsageDecisionCode` | `InspectionLotUsageDecisionCode` |
-| `InspLotUsgeDcsnDynValuation` | `InspLotUsgeDcsnDynValuation` |
-| `InspLotUsageDecisionValuation` | `InspLotUsageDecisionValuation` |
-| `InspLotUsgeDcsnFollowUpAction` | `InspLotUsgeDcsnFollowUpAction` |
-| `InspectionLotUsageDecidedBy` | `InspectionLotUsageDecidedBy` |
-| `InspectionLotUsageDecidedOn` | `InspectionLotUsageDecidedOn` |
-| `InspLotUsageDecisionTime` | `InspLotUsageDecisionTime` |
-| `InspLotUsageDecisionChangedBy` | `InspLotUsageDecisionChangedBy` |
-| `InspLotUsageDecisionChangedOn` | `InspLotUsageDecisionChangedOn` |
-| `InspLotUsgeDcsnChangedTime` | `InspLotUsgeDcsnChangedTime` |
-| `InspLotUsgeDcsnHasLongText` | `InspLotUsgeDcsnHasLongText` |
-| `_InspectionLot` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `InspectionLotQualityScore` |  | |  |  |
+| `InspLotUsageDecisionCatalog` |  | |  |  |
+| `SelectedCodeSetPlant` |  | |  |  |
+| `InspLotUsgeDcsnSelectedSet` |  | |  |  |
+| `InspLotUsageDecisionCodeGroup` |  | |  |  |
+| `InspectionLotUsageDecisionCode` |  | |  |  |
+| `InspLotUsgeDcsnDynValuation` |  | |  |  |
+| `InspLotUsageDecisionValuation` |  | |  |  |
+| `InspLotUsgeDcsnFollowUpAction` |  | |  |  |
+| `InspectionLotUsageDecidedBy` |  | |  |  |
+| `InspectionLotUsageDecidedOn` |  | |  |  |
+| `InspLotUsageDecisionTime` |  | |  |  |
+| `InspLotUsageDecisionChangedBy` |  | |  |  |
+| `InspLotUsageDecisionChangedOn` |  | |  |  |
+| `InspLotUsgeDcsnChangedTime` |  | |  |  |
+| `InspLotUsgeDcsnHasLongText` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspLotDynamicRule` | `InspLotDynamicRule` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspLotDynamicRule` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

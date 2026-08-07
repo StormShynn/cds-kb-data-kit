@@ -30,44 +30,44 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfOperationsType` | `_CompAlloc.BillOfOperationsType` |
-| key `BillOfOperationsGroup` | `_CompAlloc.BillOfOperationsGroup` |
-| key `BillOfOperationsVariant` | `_CompAlloc.BillOfOperationsVariant` |
-| key `BillOfOperationsSequence` | `_CompAlloc.BillOfOperationsSequence` |
-| key `BOOOperationInternalID` | `_CompAlloc.BOOOperationInternalID` |
-| key `BOOOpBOMItemInternalID` | `_CompAlloc.BOOOpBOMItemInternalID` |
-| key `BOOOpBOMItemIntVersCounter` | `_CompAlloc.BOOOpBOMItemIntVersCounter` |
-| `CreationDate` | `_CompAlloc.CreationDate` |
-| `CreatedByUser` | `_CompAlloc.CreatedByUser` |
-| `LastChangeDate` | `_CompAlloc.LastChangeDate` |
-| `LastChangedByUser` | `_CompAlloc.LastChangedByUser` |
-| `ValidityStartDate` | `_CompAlloc.ValidityStartDate` |
-| `ValidityEndDate` | `_CompAlloc.ValidityEndDate` |
-| `IsDeleted` | `_CompAlloc.IsDeleted` |
-| `IsImplicitlyDeleted` | `_CompAlloc.IsImplicitlyDeleted` |
-| `ChangeNumber` | `_CompAlloc.ChangeNumber` |
-| `GoodsRecipientName` | `_CompAlloc.GoodsRecipientName` |
-| `UnloadingPointName` | `_CompAlloc.UnloadingPointName` |
-| `BillOfMaterialCategory` | `_CompAlloc.BillOfMaterialCategory` |
-| `BillOfMaterial` | `_CompAlloc.BillOfMaterial` |
-| `BillOfMaterial_2` | `_CompAlloc.BillOfMaterial_2` |
-| `BillOfMaterialVariant` | `_CompAlloc.BillOfMaterialVariant` |
-| `BillOfMaterialItemNodeNumber` | `_CompAlloc.BillOfMaterialItemNodeNumber` |
-| `BillOfMaterialRootCategory` | `_CompAlloc.BillOfMaterialRootCategory` |
-| `BillOfMaterialRoot` | `_CompAlloc.BillOfMaterialRoot` |
-| `BillOfMaterialRoot_2` | `_CompAlloc.BillOfMaterialRoot_2` |
-| `BillOfMaterialRootVariant` | `_CompAlloc.BillOfMaterialRootVariant` |
-| `BillOfMaterialEdgeNumber` | `_CompAlloc.BillOfMaterialEdgeNumber` |
-| `MatlCompIsMarkedForBackflush` | `_CompAlloc.MatlCompIsMarkedForBackflush` |
-| `BillOfMaterialHierarchyLevel` | `_CompAlloc.BillOfMaterialHierarchyLevel` |
-| `BillOfMaterialHierarchyPath` | `_CompAlloc.BillOfMaterialHierarchyPath` |
-| `_BillOfOperations` | *Association* |
-| `_BillOfOperationsSequence` | *Association* |
-| `_BillOfOperationsOperation` | *Association* |
-| `_BillOfMaterialItem` | *Association* |
-| `_BillOfMaterialItem_2` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfOperationsType` | ✓ | | `_CompAlloc` | `BillOfOperationsType` |
+| `BillOfOperationsGroup` | ✓ | | `_CompAlloc` | `BillOfOperationsGroup` |
+| `BillOfOperationsVariant` | ✓ | | `_CompAlloc` | `BillOfOperationsVariant` |
+| `BillOfOperationsSequence` | ✓ | | `_CompAlloc` | `BillOfOperationsSequence` |
+| `BOOOperationInternalID` | ✓ | | `_CompAlloc` | `BOOOperationInternalID` |
+| `BOOOpBOMItemInternalID` | ✓ | | `_CompAlloc` | `BOOOpBOMItemInternalID` |
+| `BOOOpBOMItemIntVersCounter` | ✓ | | `_CompAlloc` | `BOOOpBOMItemIntVersCounter` |
+| `CreationDate` |  | | `_CompAlloc` | `CreationDate` |
+| `CreatedByUser` |  | | `_CompAlloc` | `CreatedByUser` |
+| `LastChangeDate` |  | | `_CompAlloc` | `LastChangeDate` |
+| `LastChangedByUser` |  | | `_CompAlloc` | `LastChangedByUser` |
+| `ValidityStartDate` |  | | `_CompAlloc` | `ValidityStartDate` |
+| `ValidityEndDate` |  | | `_CompAlloc` | `ValidityEndDate` |
+| `IsDeleted` |  | | `_CompAlloc` | `IsDeleted` |
+| `IsImplicitlyDeleted` |  | | `_CompAlloc` | `IsImplicitlyDeleted` |
+| `ChangeNumber` |  | | `_CompAlloc` | `ChangeNumber` |
+| `GoodsRecipientName` |  | | `_CompAlloc` | `GoodsRecipientName` |
+| `UnloadingPointName` |  | | `_CompAlloc` | `UnloadingPointName` |
+| `BillOfMaterialCategory` |  | | `_CompAlloc` | `BillOfMaterialCategory` |
+| `BillOfMaterial` |  | | `_CompAlloc` | `BillOfMaterial` |
+| `BillOfMaterial_2` |  | | `_CompAlloc` | `BillOfMaterial_2` |
+| `BillOfMaterialVariant` |  | | `_CompAlloc` | `BillOfMaterialVariant` |
+| `BillOfMaterialItemNodeNumber` |  | | `_CompAlloc` | `BillOfMaterialItemNodeNumber` |
+| `BillOfMaterialRootCategory` |  | | `_CompAlloc` | `BillOfMaterialRootCategory` |
+| `BillOfMaterialRoot` |  | | `_CompAlloc` | `BillOfMaterialRoot` |
+| `BillOfMaterialRoot_2` |  | | `_CompAlloc` | `BillOfMaterialRoot_2` |
+| `BillOfMaterialRootVariant` |  | | `_CompAlloc` | `BillOfMaterialRootVariant` |
+| `BillOfMaterialEdgeNumber` |  | | `_CompAlloc` | `BillOfMaterialEdgeNumber` |
+| `MatlCompIsMarkedForBackflush` |  | | `_CompAlloc` | `MatlCompIsMarkedForBackflush` |
+| `BillOfMaterialHierarchyLevel` |  | | `_CompAlloc` | `BillOfMaterialHierarchyLevel` |
+| `BillOfMaterialHierarchyPath` |  | | `_CompAlloc` | `BillOfMaterialHierarchyPath` |
+| `_BillOfOperations` | | ✓ | | |
+| `_BillOfOperationsSequence` | | ✓ | | |
+| `_BillOfOperationsOperation` | | ✓ | | |
+| `_BillOfMaterialItem` | | ✓ | | |
+| `_BillOfMaterialItem_2` | | ✓ | | |
 
 ## Associations
 

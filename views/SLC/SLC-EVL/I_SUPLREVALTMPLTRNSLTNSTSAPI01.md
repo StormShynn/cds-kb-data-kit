@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SuplrEvalTmplTranslationUUID` | `SuplrEvalTmplTranslationUUID` |
-| `SuplrEvalTemplateUUID` | `SuplrEvalTemplateUUID` |
-| `SuplrEvalTmplTranslTgtLang` | `SuplrEvalTmplTranslTgtLang` |
-| `SuplrEvalTmplTranslTgtLangSts` | `SuplrEvalTmplTranslTgtLangSts` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SuplrEvalTmplTranslationUUID` | ✓ | |  |  |
+| `SuplrEvalTemplateUUID` |  | |  |  |
+| `SuplrEvalTmplTranslTgtLang` |  | |  |  |
+| `SuplrEvalTmplTranslTgtLangSts` |  | |  |  |
 
 ## Source Code
 

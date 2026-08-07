@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `knb5.bukrs` |
-| key `Customer` | `knb5.kunnr` |
-| key `DunningArea` | `knb5.maber` |
-| `LastDunnedOn` | `knb5.madat` |
-| `DunningProcedure` | `knb5.mahna` |
-| `DunningLevel` | `knb5.mahns` |
-| `DunningBlock` | `knb5.mansp` |
-| `DunningRecipient` | `knb5.knrma` |
-| `LegDunningProcedureOn` | `knb5.gmvdt` |
-| `DunningClerk` | `knb5.busab` |
-| `_CustomerCompany` | *Association* |
-| `_DunningArea` | *Association* |
-| `_DunningAreaText` | *Association* |
-| `_DunningProcedure` | *Association* |
-| `_DunningProcedureText` | *Association* |
-| `_DunningBlock` | *Association* |
-| `_DunningBlockText` | *Association* |
-| `_DunningClerk` | *Association* |
-| `_DunningRecipient` | *Association* |
-| `_Customer` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `Customer` | ✓ | |  | `kunnr` |
+| `DunningArea` | ✓ | |  | `maber` |
+| `LastDunnedOn` |  | |  | `madat` |
+| `DunningProcedure` |  | |  | `mahna` |
+| `DunningLevel` |  | |  | `mahns` |
+| `DunningBlock` |  | |  | `mansp` |
+| `DunningRecipient` |  | |  | `knrma` |
+| `LegDunningProcedureOn` |  | |  | `gmvdt` |
+| `DunningClerk` |  | |  | `busab` |
+| `_CustomerCompany` | | ✓ | | |
+| `_DunningArea` | | ✓ | | |
+| `_DunningAreaText` | | ✓ | | |
+| `_DunningProcedure` | | ✓ | | |
+| `_DunningProcedureText` | | ✓ | | |
+| `_DunningBlock` | | ✓ | | |
+| `_DunningBlockText` | | ✓ | | |
+| `_DunningClerk` | | ✓ | | |
+| `_DunningRecipient` | | ✓ | | |
+| `_Customer` | | ✓ | | |
 
 ## Associations
 

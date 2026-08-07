@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `PaymentBlockLevel` | `cast( dd07t.domvalue_l as farp_splev )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PaymentBlockLevelName` | `cast( dd07t.ddtext as farp_splev_name preserving type )` |
-| `_Language` | *Association* |
-| `_PaymentBlockLevel` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `PaymentBlockLevel` | ✓ | |  | `cast( dd07t.domvalue_l as farp_splev )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PaymentBlockLevelName` |  | |  | `cast( dd07t.ddtext as farp_splev_name preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PaymentBlockLevel` | | ✓ | | |
 
 ## Associations
 

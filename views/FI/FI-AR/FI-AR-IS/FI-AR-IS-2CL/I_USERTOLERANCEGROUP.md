@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UserToleranceGroup` | `cast( rfpro as fins_rfpro )` |
-| key `CompanyCode` | `bukrs` |
-| `MaxPaymentDiffRevenueAmount` | `betrs` |
-| `MaxPaymentDiffExpenseAmount` | `betrh` |
-| `MaxPaymentDiffRevenuePercent` | `prozs` |
-| `MaxPaymentDiffExpensePercent` | `prozh` |
-| `MaxPaytDiffDiscAdjmtGainAmount` | `sknts` |
-| `MaxPaytDiffDiscAdjmtLossAmount` | `sknth` |
-| `MaxJrnlEntrPostgAmtInCCCrcy` | `maxbt` |
-| `MaxJrnlEntrItmPostgAmtInCCCrcy` | `maxeb` |
-| `MaximumCashDiscountPercent` | `maxsk` |
-| `CompanyCodeCurrency` | `_CompanyCode.Currency` |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UserToleranceGroup` | ✓ | |  | `cast( rfpro as fins_rfpro )` |
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `MaxPaymentDiffRevenueAmount` |  | |  | `betrs` |
+| `MaxPaymentDiffExpenseAmount` |  | |  | `betrh` |
+| `MaxPaymentDiffRevenuePercent` |  | |  | `prozs` |
+| `MaxPaymentDiffExpensePercent` |  | |  | `prozh` |
+| `MaxPaytDiffDiscAdjmtGainAmount` |  | |  | `sknts` |
+| `MaxPaytDiffDiscAdjmtLossAmount` |  | |  | `sknth` |
+| `MaxJrnlEntrPostgAmtInCCCrcy` |  | |  | `maxbt` |
+| `MaxJrnlEntrItmPostgAmtInCCCrcy` |  | |  | `maxeb` |
+| `MaximumCashDiscountPercent` |  | |  | `maxsk` |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

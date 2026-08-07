@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `OrderID` | `_Text.OrderID` |
-| `OrderDescription` | `_Text.OrderDescription` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnOrderTP` | `_Order as _Order : redirected to parent I_CnsldtnOrderTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `OrderID` | ✓ | | `_Text` | `OrderID` |
+| `OrderDescription` |  | | `_Text` | `OrderDescription` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnOrderTP` |  | |  | `_Order as _Order : redirected to parent I_CnsldtnOrderTP` |
 
 ## Source Code
 

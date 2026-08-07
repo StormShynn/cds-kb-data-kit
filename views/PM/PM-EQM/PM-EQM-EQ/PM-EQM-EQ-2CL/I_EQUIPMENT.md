@@ -29,80 +29,80 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `equi.equnr` |
-| `EquipmentOID` | `equi.equipmentoid` |
-| `EquipmentCategory` | `equi.eqtyp` |
-| `TechnicalObjectType` | `equi.eqart` |
-| `Plant` | `equi.werk` |
-| `Division` | `equi.sparte` |
-| `StorageLocation` | `equi.lager` |
-| `CreatedByUser` | `equi.ernam` |
-| `LastChangedByUser` | `equi.aenam` |
-| `CreationDate` | `equi.erdat` |
-| `LastChangeDate` | `equi.aedat` |
-| `AssetManufacturerName` | `equi.herst` |
-| `ManufacturerPartTypeName` | `equi.typbz` |
-| `ManufacturerCountry` | `equi.herld` |
-| `ConstructionYear` | `equi.baujj` |
-| `ConstructionMonth` | `equi.baumm` |
-| `AcquisitionDate` | `equi.ansdt` |
-| `Currency` | `equi.waers` |
-| `AcquisitionValue` | `equi.answt` |
-| `MaintObjectInternalID` | `equi.objnr` |
-| `SerialNumber` | `equi.sernr` |
-| `EquipUsagePeriodSequenceNumber` | `equi.eqlfn` |
-| `Material` | `equi.matnr` |
-| `Customer` | `equi.kunde` |
-| `AuthorizationGroup` | `equi.begru` |
-| `ManufacturerSerialNumber` | `equi.serge` |
-| `UniqueItemIdentifier` | `equi.uii` |
-| `UniqueItemIdentifierStrucType` | `equi.iuid_type` |
-| `UniqueItemIdentifierRespPlant` | `equi.uii_plant` |
-| `AssetSynchronizationRule` | `equi.act_change_aa` |
-| `InventoryNumber` | `equi.invnr` |
-| `GrossWeight` | `equi.brgew` |
-| `GrossWeightUnit` | `equi.gewei` |
-| `SizeOrDimensionText` | `equi.groes` |
-| `Batch` | `equi.charge` |
-| `OperationStartDate` | `equi.inbdt` |
-| `Supplier` | `equi.elief` |
-| `HasEquipmentData` | `equi.s_equi` |
-| `EquipmentHasStockInformation` | `cast( equi.s_eqbs as equipmenthasstockinformation preserving type )` |
-| `MasterWarranty` | `equi.mganr` |
-| `LastChangeDateTime` | `equi.changeddatetime` |
-| `EquipmentFirstDeliveryDate` | `equi.auldt` |
-| `ValidityStartDate` | `_CurrentTimeSegment.ValidityStartDate` |
-| `ValidityEndDate` | `_CurrentTimeSegment.ValidityEndDate` |
-| `MatlSrlNmbrLastGdsMvtDte` | `equi.datlwb` |
-| `EquipmentEndOfUseDate` | `equi.endofuse` |
-| `MaintenancePlan` | `equi.warpl` |
-| `MeasuringPoint` | `equi.imrc_point` |
-| `_EquipmentCategory` | *Association* |
-| `_TechnicalObjectType` | *Association* |
-| `_EquipmentText` | *Association* |
-| `_EquipmentTimeSeg` | *Association* |
-| `_CurrentTimeSegment` | *Association* |
-| `_Plant` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_LastChangedByUser` | *Association* |
-| `_Currency` | *Association* |
-| `_Division` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_SerialNumberStockSegment` | *Association* |
-| `_StockSegment` | *Association* |
-| `_Material` | *Association* |
-| `_Customer` | *Association* |
-| `_ManufacturerCountry` | *Association* |
-| `_Batch` | *Association* |
-| `_MasterWarranty` | *Association* |
-| `_PlantMaintenancePartner` | *Association* |
-| `_MasterWrntyObjectAssgmt` | *Association* |
-| `_Supplier` | *Association* |
-| `_GrossWeightUnit` | *Association* |
-| `_LinearAssetManagementData` | *Association* |
-| `_Status` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | |  | `equnr` |
+| `EquipmentOID` |  | |  | `equipmentoid` |
+| `EquipmentCategory` |  | |  | `eqtyp` |
+| `TechnicalObjectType` |  | |  | `eqart` |
+| `Plant` |  | |  | `werk` |
+| `Division` |  | |  | `sparte` |
+| `StorageLocation` |  | |  | `lager` |
+| `CreatedByUser` |  | |  | `ernam` |
+| `LastChangedByUser` |  | |  | `aenam` |
+| `CreationDate` |  | |  | `erdat` |
+| `LastChangeDate` |  | |  | `aedat` |
+| `AssetManufacturerName` |  | |  | `herst` |
+| `ManufacturerPartTypeName` |  | |  | `typbz` |
+| `ManufacturerCountry` |  | |  | `herld` |
+| `ConstructionYear` |  | |  | `baujj` |
+| `ConstructionMonth` |  | |  | `baumm` |
+| `AcquisitionDate` |  | |  | `ansdt` |
+| `Currency` |  | |  | `waers` |
+| `AcquisitionValue` |  | |  | `answt` |
+| `MaintObjectInternalID` |  | |  | `objnr` |
+| `SerialNumber` |  | |  | `sernr` |
+| `EquipUsagePeriodSequenceNumber` |  | |  | `eqlfn` |
+| `Material` |  | |  | `matnr` |
+| `Customer` |  | |  | `kunde` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `ManufacturerSerialNumber` |  | |  | `serge` |
+| `UniqueItemIdentifier` |  | |  | `uii` |
+| `UniqueItemIdentifierStrucType` |  | |  | `iuid_type` |
+| `UniqueItemIdentifierRespPlant` |  | |  | `uii_plant` |
+| `AssetSynchronizationRule` |  | |  | `act_change_aa` |
+| `InventoryNumber` |  | |  | `invnr` |
+| `GrossWeight` |  | |  | `brgew` |
+| `GrossWeightUnit` |  | |  | `gewei` |
+| `SizeOrDimensionText` |  | |  | `groes` |
+| `Batch` |  | |  | `charge` |
+| `OperationStartDate` |  | |  | `inbdt` |
+| `Supplier` |  | |  | `elief` |
+| `HasEquipmentData` |  | |  | `s_equi` |
+| `EquipmentHasStockInformation` |  | |  | `cast( equi.s_eqbs as equipmenthasstockinformation preserving type )` |
+| `MasterWarranty` |  | |  | `mganr` |
+| `LastChangeDateTime` |  | |  | `changeddatetime` |
+| `EquipmentFirstDeliveryDate` |  | |  | `auldt` |
+| `ValidityStartDate` |  | | `_CurrentTimeSegment` | `ValidityStartDate` |
+| `ValidityEndDate` |  | | `_CurrentTimeSegment` | `ValidityEndDate` |
+| `MatlSrlNmbrLastGdsMvtDte` |  | |  | `datlwb` |
+| `EquipmentEndOfUseDate` |  | |  | `endofuse` |
+| `MaintenancePlan` |  | |  | `warpl` |
+| `MeasuringPoint` |  | |  | `imrc_point` |
+| `_EquipmentCategory` | | ✓ | | |
+| `_TechnicalObjectType` | | ✓ | | |
+| `_EquipmentText` | | ✓ | | |
+| `_EquipmentTimeSeg` | | ✓ | | |
+| `_CurrentTimeSegment` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_LastChangedByUser` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_SerialNumberStockSegment` | | ✓ | | |
+| `_StockSegment` | | ✓ | | |
+| `_Material` | | ✓ | | |
+| `_Customer` | | ✓ | | |
+| `_ManufacturerCountry` | | ✓ | | |
+| `_Batch` | | ✓ | | |
+| `_MasterWarranty` | | ✓ | | |
+| `_PlantMaintenancePartner` | | ✓ | | |
+| `_MasterWrntyObjectAssgmt` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_GrossWeightUnit` | | ✓ | | |
+| `_LinearAssetManagementData` | | ✓ | | |
+| `_Status` | | ✓ | | |
 
 ## Associations
 

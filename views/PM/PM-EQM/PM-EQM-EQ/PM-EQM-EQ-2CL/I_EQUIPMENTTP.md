@@ -30,109 +30,109 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `Equipment` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `ValidityEndTime` | `ValidityEndTime` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `EquipmentName` | `EquipmentName` |
-| `EquipmentCategory` | `EquipmentCategory` |
-| `TechnicalObjectType` | `TechnicalObjectType` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `GrossWeight` | `GrossWeight` |
-| `GrossWeightUnit` | `GrossWeightUnit` |
-| `SizeOrDimensionText` | `SizeOrDimensionText` |
-| `InventoryNumber` | `InventoryNumber` |
-| `OperationStartDate` | `OperationStartDate` |
-| `AcquisitionValue` | `AcquisitionValue` |
-| `Currency` | `Currency` |
-| `AcquisitionDate` | `AcquisitionDate` |
-| `AssetManufacturerName` | `AssetManufacturerName` |
-| `ManufacturerPartTypeName` | `ManufacturerPartTypeName` |
-| `ManufacturerCountry` | `ManufacturerCountry` |
-| `ConstructionYear` | `ConstructionYear` |
-| `ConstructionMonth` | `ConstructionMonth` |
-| `EquipmentManufacturerPrtNmbr` | `EquipmentManufacturerPrtNmbr` |
-| `ManufacturerSerialNumber` | `ManufacturerSerialNumber` |
-| `MaintenancePlant` | `MaintenancePlant` |
-| `AssetLocation` | `AssetLocation` |
-| `AssetRoom` | `AssetRoom` |
-| `PlantSection` | `PlantSection` |
-| `WorkCenter` | `WorkCenter` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `WorkCenterPlant` | `WorkCenterPlant` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `ABCIndicator` | `ABCIndicator` |
-| `MaintObjectFreeDefinedAttrib` | `MaintObjectFreeDefinedAttrib` |
-| `AddressID` | `AddressID` |
-| `FormOfAddress` | `FormOfAddress` |
-| `BusinessPartnerName1` | `BusinessPartnerName1` |
-| `BusinessPartnerName2` | `BusinessPartnerName2` |
-| `CityName` | `CityName` |
-| `HouseNumber` | `HouseNumber` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `Building` | `Building` |
-| `Floor` | `Floor` |
-| `RoomNumber` | `RoomNumber` |
-| `PostalCode` | `PostalCode` |
-| `StreetName` | `StreetName` |
-| `Region` | `Region` |
-| `Country` | `Country` |
-| `PhoneNumber` | `PhoneNumber` |
-| `AddressFaxNumber` | `AddressFaxNumber` |
-| `CompanyCode` | `CompanyCode` |
-| `BusinessArea` | `BusinessArea` |
-| `MasterFixedAsset` | `MasterFixedAsset` |
-| `FixedAsset` | `FixedAsset` |
-| `CostCenter` | `CostCenter` |
-| `ControllingArea` | `ControllingArea` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `SettlementOrder` | `SettlementOrder` |
-| `MaintenancePlanningPlant` | `MaintenancePlanningPlant` |
-| `MaintenancePlannerGroup` | `MaintenancePlannerGroup` |
-| `MainWorkCenter` | `MainWorkCenter` |
-| `MainWorkCenterInternalID` | `MainWorkCenterInternalID` |
-| `MainWorkCenterPlant` | `MainWorkCenterPlant` |
-| `CatalogProfile` | `CatalogProfile` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `FunctionalLocationLabelName` | `FunctionalLocationLabelName` |
-| `FunctionalLocationName` | `FunctionalLocationName` |
-| `EquipInstallationPositionNmbr` | `EquipInstallationPositionNmbr` |
-| `SuperordinateEquipment` | `SuperordinateEquipment` |
-| `TechnicalObjectSortCode` | `TechnicalObjectSortCode` |
-| `ConstructionMaterial` | `ConstructionMaterial` |
-| `Material` | `Material` |
-| `SerialNumber` | `SerialNumber` |
-| `UniqueItemIdentifier` | `UniqueItemIdentifier` |
-| `UniqueItemIdentifierStrucType` | `UniqueItemIdentifierStrucType` |
-| `UniqueItemIdentifierRespPlant` | `UniqueItemIdentifierRespPlant` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `OrganizationDivision` | `OrganizationDivision` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesOffice` | `SalesOffice` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `NextEquipUsagePeriodSqncNmbr` | `NextEquipUsagePeriodSqncNmbr` |
-| `MaintObjectLocAcctAssgmtNmbr` | `MaintObjectLocAcctAssgmtNmbr` |
-| `MaintObjectInternalID` | `MaintObjectInternalID` |
-| `EquipUsagePeriodSequenceNumber` | `EquipUsagePeriodSequenceNumber` |
-| `EquipmentIsAtCustomer` | `EquipmentIsAtCustomer` |
-| `EquipmentIsAvailable` | `EquipmentIsAvailable` |
-| `EquipmentIsInWarehouse` | `EquipmentIsInWarehouse` |
-| `EquipmentIsAssignedToDelivery` | `EquipmentIsAssignedToDelivery` |
-| `EquipmentIsMarkedForDeletion` | `EquipmentIsMarkedForDeletion` |
-| `EquipmentIsInstalled` | `EquipmentIsInstalled` |
-| `EquipIsAllocToSuperiorEquip` | `EquipIsAllocToSuperiorEquip` |
-| `EquipmentIsInactive` | `EquipmentIsInactive` |
-| `EquipHasSubOrdinateEquipment` | `EquipHasSubOrdinateEquipment` |
-| `_Partner` | *Association* |
-| `_LongText` | *Association* |
-| `_Classification` | *Association* |
-| `_Warranty` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityEndTime` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `EquipmentName` |  | |  |  |
+| `EquipmentCategory` |  | |  |  |
+| `TechnicalObjectType` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `GrossWeight` |  | |  |  |
+| `GrossWeightUnit` |  | |  |  |
+| `SizeOrDimensionText` |  | |  |  |
+| `InventoryNumber` |  | |  |  |
+| `OperationStartDate` |  | |  |  |
+| `AcquisitionValue` |  | |  |  |
+| `Currency` |  | |  |  |
+| `AcquisitionDate` |  | |  |  |
+| `AssetManufacturerName` |  | |  |  |
+| `ManufacturerPartTypeName` |  | |  |  |
+| `ManufacturerCountry` |  | |  |  |
+| `ConstructionYear` |  | |  |  |
+| `ConstructionMonth` |  | |  |  |
+| `EquipmentManufacturerPrtNmbr` |  | |  |  |
+| `ManufacturerSerialNumber` |  | |  |  |
+| `MaintenancePlant` |  | |  |  |
+| `AssetLocation` |  | |  |  |
+| `AssetRoom` |  | |  |  |
+| `PlantSection` |  | |  |  |
+| `WorkCenter` |  | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterPlant` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `ABCIndicator` |  | |  |  |
+| `MaintObjectFreeDefinedAttrib` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `BusinessPartnerName1` |  | |  |  |
+| `BusinessPartnerName2` |  | |  |  |
+| `CityName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `Building` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `PostalCode` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `Region` |  | |  |  |
+| `Country` |  | |  |  |
+| `PhoneNumber` |  | |  |  |
+| `AddressFaxNumber` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `MasterFixedAsset` |  | |  |  |
+| `FixedAsset` |  | |  |  |
+| `CostCenter` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `SettlementOrder` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `MainWorkCenter` |  | |  |  |
+| `MainWorkCenterInternalID` |  | |  |  |
+| `MainWorkCenterPlant` |  | |  |  |
+| `CatalogProfile` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `FunctionalLocationLabelName` |  | |  |  |
+| `FunctionalLocationName` |  | |  |  |
+| `EquipInstallationPositionNmbr` |  | |  |  |
+| `SuperordinateEquipment` |  | |  |  |
+| `TechnicalObjectSortCode` |  | |  |  |
+| `ConstructionMaterial` |  | |  |  |
+| `Material` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `UniqueItemIdentifier` |  | |  |  |
+| `UniqueItemIdentifierStrucType` |  | |  |  |
+| `UniqueItemIdentifierRespPlant` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `NextEquipUsagePeriodSqncNmbr` |  | |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
+| `MaintObjectInternalID` |  | |  |  |
+| `EquipUsagePeriodSequenceNumber` |  | |  |  |
+| `EquipmentIsAtCustomer` |  | |  |  |
+| `EquipmentIsAvailable` |  | |  |  |
+| `EquipmentIsInWarehouse` |  | |  |  |
+| `EquipmentIsAssignedToDelivery` |  | |  |  |
+| `EquipmentIsMarkedForDeletion` |  | |  |  |
+| `EquipmentIsInstalled` |  | |  |  |
+| `EquipIsAllocToSuperiorEquip` |  | |  |  |
+| `EquipmentIsInactive` |  | |  |  |
+| `EquipHasSubOrdinateEquipment` |  | |  |  |
+| `_Partner` | | ✓ | | |
+| `_LongText` | | ✓ | | |
+| `_Classification` | | ✓ | | |
+| `_Warranty` | | ✓ | | |
 
 ## Source Code
 

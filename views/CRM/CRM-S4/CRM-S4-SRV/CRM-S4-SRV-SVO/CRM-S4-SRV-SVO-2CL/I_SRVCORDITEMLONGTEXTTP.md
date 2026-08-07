@@ -29,33 +29,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrder` | `ServiceOrder` |
-| key `ServiceOrderItem` | `ServiceOrderItem` |
-| key `TextObjectType` | `TextObjectType` |
-| key `Language` | `Language` |
-| key `SrvcDocLogTextIdentifier` | `SrvcDocLogTextIdentifier` |
-| `TextObjectCategory` | `TextObjectCategory` |
-| `SrvcDocLongTextMimeType` | `SrvcDocLongTextMimeType` |
-| `ServiceOrderItemLongText` | `ServiceOrderItemLongText` |
-| `ReferenceTextObjectCategory` | `ReferenceTextObjectCategory` |
-| `ReferenceTextObjectType` | `ReferenceTextObjectType` |
-| `ReferenceLongTextKey` | `ReferenceLongTextKey` |
-| `ReferenceServiceObjectType` | `ReferenceServiceObjectType` |
-| `ReferenceServiceDocument` | `ReferenceServiceDocument` |
-| `ReferenceServiceDocumentItem` | `ReferenceServiceDocumentItem` |
-| `SrvcDocLongTxtCreationDateTime` | `SrvcDocLongTxtCreationDateTime` |
-| `SrvcDocLongTextCreatedByUser` | `SrvcDocLongTextCreatedByUser` |
-| `SrvcDocLongTextChangedDateTime` | `SrvcDocLongTextChangedDateTime` |
-| `SrvcDocLongTextChangedByUser` | `SrvcDocLongTextChangedByUser` |
-| `_Language` | *Association* |
-| `_ReferenceTextObjectCategory` | *Association* |
-| `_ReferenceTextObjectType` | *Association* |
-| `_TextObjectCategory` | *Association* |
-| `_TextObjectType` | *Association* |
-| `_ServiceOrderItemTP` | *Association* |
-| `_ServiceOrderTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceOrderItem` | ✓ | |  |  |
+| `TextObjectType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SrvcDocLogTextIdentifier` | ✓ | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `SrvcDocLongTextMimeType` |  | |  |  |
+| `ServiceOrderItemLongText` |  | |  |  |
+| `ReferenceTextObjectCategory` |  | |  |  |
+| `ReferenceTextObjectType` |  | |  |  |
+| `ReferenceLongTextKey` |  | |  |  |
+| `ReferenceServiceObjectType` |  | |  |  |
+| `ReferenceServiceDocument` |  | |  |  |
+| `ReferenceServiceDocumentItem` |  | |  |  |
+| `SrvcDocLongTxtCreationDateTime` |  | |  |  |
+| `SrvcDocLongTextCreatedByUser` |  | |  |  |
+| `SrvcDocLongTextChangedDateTime` |  | |  |  |
+| `SrvcDocLongTextChangedByUser` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_ReferenceTextObjectCategory` | | ✓ | | |
+| `_ReferenceTextObjectType` | | ✓ | | |
+| `_TextObjectCategory` | | ✓ | | |
+| `_TextObjectType` | | ✓ | | |
+| `_ServiceOrderItemTP` | | ✓ | | |
+| `_ServiceOrderTP` | | ✓ | | |
 
 ## Source Code
 

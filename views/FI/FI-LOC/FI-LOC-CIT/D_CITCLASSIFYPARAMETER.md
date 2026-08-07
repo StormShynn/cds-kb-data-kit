@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CompanyCodeName` | `fis_butxt` |
-| `HierarchyTreeVariableShortText` | `char1024` |
-| `LedgerName` | `ldtxt` |
-| `FromPostingDate` | `abap.dats` |
-| `ToPostingDate` | `abap.dats` |
-| `IsChanged` | `abap.char( 1 )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCodeName` |  | |  | `fis_butxt` |
+| `HierarchyTreeVariableShortText` |  | |  | `char1024` |
+| `LedgerName` |  | |  | `ldtxt` |
+| `FromPostingDate` |  | |  | `dats` |
+| `ToPostingDate` |  | |  | `dats` |
+| `IsChanged` |  | |  | `abap.char( 1 )` |
 
 ## Source Code
 

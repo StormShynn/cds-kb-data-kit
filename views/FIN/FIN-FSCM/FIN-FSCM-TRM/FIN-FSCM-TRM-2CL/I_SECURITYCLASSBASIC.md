@@ -28,36 +28,36 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SecurityClass` | `cast(ranl as ftr_gen_security_class preserving type)` |
-| `FinancialInstrProductCategory` | `cast(sanlf as ftr_gen_fin_instr_prod_categ preserving type)` |
-| `SecurityClassStatus` | `SecurityClass.sstati` |
-| `SecurityClassName` | `cast(SecurityClass.xalkz as ftr_gen_security_class_name preserving type)` |
-| `SecurityClassDescription` | `cast(SecurityClass.xallb as ftr_gen_security_class_lname preserving type)` |
-| `FinancialInstrumentProductType` | `SecurityClass.gsart` |
-| `ScrtyClassGenClassification` | `SecurityClass.srolext` |
-| `Issuer` | `cast(SecurityClass.repke as repke_new preserving type)` |
-| `IssueCurrency` | `SecurityClass.rewhr` |
-| `SecurityClassIssuePriceValue` | `cast(SecurityClass.bempreis as ftr_sc_bempreis)` |
-| `IssueRateInPercent` | `SecurityClass.pemkurs` |
-| `SecurityClassTransferType` | `SecurityClass.swerttyp` |
-| `SecurityClassQuotation` | `SecurityClass.snoti` |
-| `ScrtyClMinimalNumberOfUnits` | `cast( SecurityClass.unit_tick as ftr_sc_min_unit_num preserving type )` |
-| `SecurityClassIsListed` | `SecurityClass.sboernot` |
-| `ScrtyClassIsRlvtForTaxes` | `cast( case when SecurityClass.sstbe = '1' then 'X' else '' end as ftr_sc_sstbe preserving type )` |
-| `SecurityClassTaxClassification` | `SecurityClass.tax_classification` |
-| `ScrtyClCmplmntyIdnCode` | `SecurityClass.coicode` |
-| `ScrtyClCmplmntyIdnCtryReg` | `SecurityClass.coiland` |
-| `SecurityClassCreatedByUser` | `cast(SecurityClass.rerf as ftr_sc_rerf preserving type)` |
-| `SecurityClassCreationDate` | `cast(SecurityClass.derf as ftr_sc_derf preserving type)` |
-| `SecurityClassCreationTime` | `cast(SecurityClass.terf as ftr_sc_terf preserving type)` |
-| `SecurityClassCreationSource` | `cast(SecurityClass.reher as ftr_sc_reher preserving type)` |
-| `SecurityClassLastChangedByUser` | `cast(SecurityClass.rbear as ftr_sc_rbear preserving type)` |
-| `SecurityClassLastChangedDate` | `cast(SecurityClass.dbear as ftr_sc_dbear preserving type)` |
-| `SecurityClassLastChangedTime` | `cast(SecurityClass.tbear as ftr_sc_tbear preserving type)` |
-| `SecurityClassLastChangedSource` | `cast(SecurityClass.rbher as ftr_sc_rbher preserving type)` |
-| `SecurityClassIsPledgeable` | `SecurityClass.wpfan` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SecurityClass` | ✓ | |  | `cast(ranl as ftr_gen_security_class preserving type)` |
+| `FinancialInstrProductCategory` |  | |  | `cast(sanlf as ftr_gen_fin_instr_prod_categ preserving type)` |
+| `SecurityClassStatus` |  | |  | `sstati` |
+| `SecurityClassName` |  | |  | `cast(SecurityClass.xalkz as ftr_gen_security_class_name preserving type)` |
+| `SecurityClassDescription` |  | |  | `cast(SecurityClass.xallb as ftr_gen_security_class_lname preserving type)` |
+| `FinancialInstrumentProductType` |  | |  | `gsart` |
+| `ScrtyClassGenClassification` |  | |  | `srolext` |
+| `Issuer` |  | |  | `cast(SecurityClass.repke as repke_new preserving type)` |
+| `IssueCurrency` |  | |  | `rewhr` |
+| `SecurityClassIssuePriceValue` |  | |  | `cast(SecurityClass.bempreis as ftr_sc_bempreis)` |
+| `IssueRateInPercent` |  | |  | `pemkurs` |
+| `SecurityClassTransferType` |  | |  | `swerttyp` |
+| `SecurityClassQuotation` |  | |  | `snoti` |
+| `ScrtyClMinimalNumberOfUnits` |  | |  | `cast( SecurityClass.unit_tick as ftr_sc_min_unit_num preserving type )` |
+| `SecurityClassIsListed` |  | |  | `sboernot` |
+| `ScrtyClassIsRlvtForTaxes` |  | |  | `cast( case when SecurityClass.sstbe = '1' then 'X' else '' end as ftr_sc_sstbe preserving type )` |
+| `SecurityClassTaxClassification` |  | |  | `tax_classification` |
+| `ScrtyClCmplmntyIdnCode` |  | |  | `coicode` |
+| `ScrtyClCmplmntyIdnCtryReg` |  | |  | `coiland` |
+| `SecurityClassCreatedByUser` |  | |  | `cast(SecurityClass.rerf as ftr_sc_rerf preserving type)` |
+| `SecurityClassCreationDate` |  | |  | `cast(SecurityClass.derf as ftr_sc_derf preserving type)` |
+| `SecurityClassCreationTime` |  | |  | `cast(SecurityClass.terf as ftr_sc_terf preserving type)` |
+| `SecurityClassCreationSource` |  | |  | `cast(SecurityClass.reher as ftr_sc_reher preserving type)` |
+| `SecurityClassLastChangedByUser` |  | |  | `cast(SecurityClass.rbear as ftr_sc_rbear preserving type)` |
+| `SecurityClassLastChangedDate` |  | |  | `cast(SecurityClass.dbear as ftr_sc_dbear preserving type)` |
+| `SecurityClassLastChangedTime` |  | |  | `cast(SecurityClass.tbear as ftr_sc_tbear preserving type)` |
+| `SecurityClassLastChangedSource` |  | |  | `cast(SecurityClass.rbher as ftr_sc_rbher preserving type)` |
+| `SecurityClassIsPledgeable` |  | |  | `wpfan` |
 
 ## Source Code
 

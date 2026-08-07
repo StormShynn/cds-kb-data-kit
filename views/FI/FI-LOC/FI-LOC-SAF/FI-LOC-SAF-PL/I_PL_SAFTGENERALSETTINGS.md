@@ -28,23 +28,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `ValidityEndDate` | `endda` |
-| `ValidityStartDate` | `begda` |
-| `PL_SAFTAccountSelectCriterion` | `main_alt_acct` |
-| `PL_SAFTAccountingViewType` | `fi_view` |
-| `EmailAddress` | `cast(file_email as abap.char(241))` |
-| `PL_OfficialEntityRegistration` | `regon` |
-| `PL_CompanyDistrictName` | `district` |
-| `PL_CompanySubDistrictName` | `sub_district` |
-| `PL_TaxOfficeCode` | `tax_office` |
-| `BusinessType` | `cast(business_type as abap.char(30))` |
-| `PL_EstonianCITIsUsedForSAFT` | `cit` |
-| `PL_EstonianCITText` | `cast(case when cit = 'X' then '1' else ' ' end as abap.char(1))` |
-| `PL_IFRSForSAFTIsUsed` | `ifrs` |
-| `PL_IFRSText` | `cast (case when ifrs = 'X' then '1' else ' ' end as abap.char(1))` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `ValidityEndDate` | ✓ | |  | `endda` |
+| `ValidityStartDate` |  | |  | `begda` |
+| `PL_SAFTAccountSelectCriterion` |  | |  | `main_alt_acct` |
+| `PL_SAFTAccountingViewType` |  | |  | `fi_view` |
+| `EmailAddress` |  | |  | `cast(file_email as abap.char(241))` |
+| `PL_OfficialEntityRegistration` |  | |  | `regon` |
+| `PL_CompanyDistrictName` |  | |  | `district` |
+| `PL_CompanySubDistrictName` |  | |  | `sub_district` |
+| `PL_TaxOfficeCode` |  | |  | `tax_office` |
+| `BusinessType` |  | |  | `cast(business_type as abap.char(30))` |
+| `PL_EstonianCITIsUsedForSAFT` |  | |  | `cit` |
+| `PL_EstonianCITText` |  | |  | `cast(case when cit = 'X' then '1' else ' ' end as abap.char(1))` |
+| `PL_IFRSForSAFTIsUsed` |  | |  | `ifrs` |
+| `PL_IFRSText` |  | |  | `cast (case when ifrs = 'X' then '1' else ' ' end as abap.char(1))` |
 
 ## Source Code
 

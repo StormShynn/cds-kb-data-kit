@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAClearingInformation` | `cast( left( dd07l.domvalue_l, 1 ) as aginf_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAClearingInformation` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as aginf_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

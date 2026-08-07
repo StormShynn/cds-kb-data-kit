@@ -32,25 +32,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `I_CostCenter.CompanyCode` |
-| key `CostCenter` | `I_CostCenter.CostCenter` |
-| key `ValidityEndDate` | `I_CostCenter.ValidityEndDate` |
-| `ValidityStartDate` | `I_CostCenter.ValidityStartDate` |
-| `CostCenterOID` | `cast( case length( I_CostCenter.CompanyCode ) when 1 then concat( I_SAPClient.LogicalSystem , concat(':', concat( concat_with_space(I_CostCenter.CompanyCode, ':', 3 ) , I_CostCenter.CostCenter ) ) ) when 2 then concat( I_SAPClient.LogicalSystem , concat(':', concat( concat_with_space(I_CostCenter.CompanyCode, ':', 2 ) , I_CostCenter.CostCenter ) ) ) when 3 then concat( I_SAPClient.LogicalSystem , concat(':', concat( concat_with_space(I_CostCenter.CompanyCode, ':', 1 ) , I_CostCenter.CostCenter ) ) ) when 4 then concat( I_SAPClient.LogicalSystem , concat(':', concat( concat(I_CostCenter.CompanyCode, ':' ) , I_CostCenter.CostCenter ) ) ) end as fis_costcenter_oid )` |
-| `ControllingArea` | `I_CostCenter.ControllingArea` |
-| `IsBlkdForPrimaryCostsPosting` | `I_CostCenter.IsBlkdForPrimaryCostsPosting` |
-| `IsBlockedForPlanPrimaryCosts` | `I_CostCenter.IsBlockedForPlanPrimaryCosts` |
-| `CostCenterCategory` | `I_CostCenter.CostCenterCategory` |
-| `CostCtrResponsibleUser` | `I_CostCenter.CostCtrResponsibleUser` |
-| `CostCenterCreationDate` | `I_CostCenter.CostCenterCreationDate` |
-| `CostCenterCreatedByUser` | `I_CostCenter.CostCenterCreatedByUser` |
-| `IsBlkdForSecondaryCostsPosting` | `I_CostCenter.IsBlkdForSecondaryCostsPosting` |
-| `IsBlockedForRevenuePosting` | `I_CostCenter.IsBlockedForRevenuePosting` |
-| `IsBlockedForCommitmentPosting` | `I_CostCenter.IsBlockedForCommitmentPosting` |
-| `IsBlockedForPlanSecondaryCosts` | `I_CostCenter.IsBlockedForPlanSecondaryCosts` |
-| `IsBlockedForPlanRevenues` | `I_CostCenter.IsBlockedForPlanRevenues` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `CostCenter` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `CostCenterOID` |  | |  | `cast( case length( I_CostCenter.CompanyCode ) when 1 then concat( I_SAPClient.LogicalSystem , concat(':', concat( concat_with_space(I_CostCenter.CompanyCode, ':', 3 ) , I_CostCenter.CostCenter ) ) ) when 2 then concat( I_SAPClient.LogicalSystem , concat(':', concat( concat_with_space(I_CostCenter.CompanyCode, ':', 2 ) , I_CostCenter.CostCenter ) ) ) when 3 then concat( I_SAPClient.LogicalSystem , concat(':', concat( concat_with_space(I_CostCenter.CompanyCode, ':', 1 ) , I_CostCenter.CostCenter ) ) ) when 4 then concat( I_SAPClient.LogicalSystem , concat(':', concat( concat(I_CostCenter.CompanyCode, ':' ) , I_CostCenter.CostCenter ) ) ) end as fis_costcenter_oid )` |
+| `ControllingArea` |  | |  |  |
+| `IsBlkdForPrimaryCostsPosting` |  | |  |  |
+| `IsBlockedForPlanPrimaryCosts` |  | |  |  |
+| `CostCenterCategory` |  | |  |  |
+| `CostCtrResponsibleUser` |  | |  |  |
+| `CostCenterCreationDate` |  | |  |  |
+| `CostCenterCreatedByUser` |  | |  |  |
+| `IsBlkdForSecondaryCostsPosting` |  | |  |  |
+| `IsBlockedForRevenuePosting` |  | |  |  |
+| `IsBlockedForCommitmentPosting` |  | |  |  |
+| `IsBlockedForPlanSecondaryCosts` |  | |  |  |
+| `IsBlockedForPlanRevenues` |  | |  |  |
 
 ## Source Code
 

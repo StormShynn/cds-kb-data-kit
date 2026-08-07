@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceOrder` | `MaintenanceOrder` |
-| key `MaintenanceOrderObjectList` | `MaintenanceOrderObjectList` |
-| key `MaintenanceObjectListItem` | `MaintenanceObjectListItem` |
-| `Equipment` | `Equipment` |
-| `MaintenanceNotification` | `MaintenanceNotification` |
-| `Assembly` | `Assembly` |
-| `Material` | `Material` |
-| `SerialNumber` | `SerialNumber` |
-| `UniqueItemIdentifier` | `UniqueItemIdentifier` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `MaintObjectListItemSequence` | `MaintObjectListItemSequence` |
-| `_MaintenanceOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceOrder` | ✓ | |  |  |
+| `MaintenanceOrderObjectList` | ✓ | |  |  |
+| `MaintenanceObjectListItem` | ✓ | |  |  |
+| `Equipment` |  | |  |  |
+| `MaintenanceNotification` |  | |  |  |
+| `Assembly` |  | |  |  |
+| `Material` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `UniqueItemIdentifier` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `MaintObjectListItemSequence` |  | |  |  |
+| `_MaintenanceOrder` | | ✓ | | |
 
 ## Source Code
 

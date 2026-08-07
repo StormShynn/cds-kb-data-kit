@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CountryTransportStatus` | `cast( left( dd07l.domvalue_l, 2) as ehdgm_country_transport_status preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CountryTransportStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2) as ehdgm_country_transport_status preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

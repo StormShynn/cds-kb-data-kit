@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPeriodCode` | `persl` |
-| key `Language` | `spras` |
-| `CAPeriodCodeName` | `txt50` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPeriodCode` | ✓ | |  | `persl` |
+| `Language` | ✓ | |  | `spras` |
+| `CAPeriodCodeName` |  | |  | `txt50` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

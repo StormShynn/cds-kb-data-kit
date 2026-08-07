@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IHBBusinessPartnerUUID` | `IHBBusinessPartnerUUID` |
-| `IHBBusinessPartnerRefUUID` | `IHBBusinessPartnerRefUUID` |
-| `IHBAccountUUID` | `IHBAccountUUID` |
-| `IHBBusinessPartnerRole` | `IHBBusinessPartnerRole` |
-| `IHBBusinessPartner` | `IHBBusinessPartner` |
-| `IHBBankStmntFormat` | `IHBBankStmntFormat` |
-| `IHBConverterOutID` | `IHBConverterOutID` |
-| `IHBBusinessPartnerAddrNumber` | `IHBBusinessPartnerAddrNumber` |
-| `IHBEmailPersonNumber` | `IHBEmailPersonNumber` |
-| `IHBEmailOrdinalNumber` | `IHBEmailOrdinalNumber` |
-| `IHBBankStmntDistributionType` | `IHBBankStmntDistributionType` |
-| `IHBAccountChangedDateTime` | `IHBAccountChangedDateTime` |
-| `IHBEmailAddress` | `IHBEmailAddress` |
-| `_IHBAccountTP` | *Association* |
-| `_IHBAccount` | *Association* |
-| `_IHBConverterOutID` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IHBBusinessPartnerUUID` | ✓ | |  |  |
+| `IHBBusinessPartnerRefUUID` |  | |  |  |
+| `IHBAccountUUID` |  | |  |  |
+| `IHBBusinessPartnerRole` |  | |  |  |
+| `IHBBusinessPartner` |  | |  |  |
+| `IHBBankStmntFormat` |  | |  |  |
+| `IHBConverterOutID` |  | |  |  |
+| `IHBBusinessPartnerAddrNumber` |  | |  |  |
+| `IHBEmailPersonNumber` |  | |  |  |
+| `IHBEmailOrdinalNumber` |  | |  |  |
+| `IHBBankStmntDistributionType` |  | |  |  |
+| `IHBAccountChangedDateTime` |  | |  |  |
+| `IHBEmailAddress` |  | |  |  |
+| `_IHBAccountTP` | | ✓ | | |
+| `_IHBAccount` | | ✓ | | |
+| `_IHBConverterOutID` | | ✓ | | |
 
 ## Source Code
 

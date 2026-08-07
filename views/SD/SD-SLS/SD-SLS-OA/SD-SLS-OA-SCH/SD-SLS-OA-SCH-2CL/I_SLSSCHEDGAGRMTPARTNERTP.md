@@ -30,22 +30,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesSchedulingAgreement` | `SalesSchedgAgrmtPartner.SalesSchedulingAgreement` |
-| key `PartnerFunction` | `SalesSchedgAgrmtPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `SalesSchedgAgrmtPartner.PartnerFunctionForEdit` |
-| `Customer` | `SalesSchedgAgrmtPartner.Customer` |
-| `Personnel` | `SalesSchedgAgrmtPartner.Personnel` |
-| `Supplier` | `SalesSchedgAgrmtPartner.Supplier` |
-| `ContactPerson` | `SalesSchedgAgrmtPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `SalesSchedgAgrmtPartner.ReferenceBusinessPartner` |
-| `Partner` | `SalesSchedgAgrmtPartner.Partner` |
-| `SalesSchedgAgrmtType` | `SalesSchedgAgrmtPartner.SalesSchedgAgrmtType` |
-| `OrganizationDivision` | `SalesSchedgAgrmtPartner.OrganizationDivision` |
-| `SalesOrganization` | `SalesSchedgAgrmtPartner.SalesOrganization` |
-| `DistributionChannel` | `SalesSchedgAgrmtPartner.DistributionChannel` |
-| `_SalesSchedulingAgreement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesSchedulingAgreement` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `SalesSchedgAgrmtType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `_SalesSchedulingAgreement` | | ✓ | | |
 
 ## Source Code
 

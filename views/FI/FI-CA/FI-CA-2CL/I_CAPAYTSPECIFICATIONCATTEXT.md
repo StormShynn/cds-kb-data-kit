@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAPaymentSpecificationCategory` | `cast( left( dd07t.domvalue_l, 1 ) as pdtyp_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CAPaymentSpecificationCatName` | `cast( ddtext as pdtyp_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAPaymentSpecificationCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as pdtyp_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CAPaymentSpecificationCatName` |  | |  | `cast( ddtext as pdtyp_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

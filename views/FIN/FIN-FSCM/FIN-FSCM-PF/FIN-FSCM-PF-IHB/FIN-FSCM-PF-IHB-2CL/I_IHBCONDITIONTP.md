@@ -30,33 +30,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IHBConditionUUID` | `IHBConditionUUID` |
-| `IHBObjectUUID` | `IHBObjectUUID` |
-| `IHBConditionRefUUID` | `IHBConditionRefUUID` |
-| `IHBConditionInterestType` | `IHBConditionInterestType` |
-| `IHBConditionInterestCurrency` | `IHBConditionInterestCurrency` |
-| `IHBConditionInterestCalcMethod` | `IHBConditionInterestCalcMethod` |
-| `IHBConditionInterestCalcType` | `IHBConditionInterestCalcType` |
-| `IHBBankArea` | `IHBBankArea` |
-| `IHBConditionFixedRate` | `IHBConditionFixedRate` |
-| `IHBConditionRefRateCode` | `IHBConditionRefRateCode` |
-| `IHBConditionInterestMinRate` | `IHBConditionInterestMinRate` |
-| `IHBConditionInterestMaxRate` | `IHBConditionInterestMaxRate` |
-| `IHBCndnIntrstMarkUpDownRate` | `IHBCndnIntrstMarkUpDownRate` |
-| `IHBConditionFactoryCalendarID` | `IHBConditionFactoryCalendarID` |
-| `IHBCndnIntrstAdjmtPerdInDays` | `IHBCndnIntrstAdjmtPerdInDays` |
-| `IHBCndnIntrstLockoutPerdInDays` | `IHBCndnIntrstLockoutPerdInDays` |
-| `IHBConditionInterestWeightCode` | `IHBConditionInterestWeightCode` |
-| `IHBConditionValidFromDate` | `IHBConditionValidFromDate` |
-| `IHBConditionValidToDate` | `IHBConditionValidToDate` |
-| `IHBObjectTotalChangedDateTime` | `IHBObjectTotalChangedDateTime` |
-| `IHBObjectCreatedDateTime` | `IHBObjectCreatedDateTime` |
-| `IHBObjectCreatedByUser` | `IHBObjectCreatedByUser` |
-| `IHBObjectChangedDateTime` | `IHBObjectChangedDateTime` |
-| `IHBObjectChangedByUser` | `IHBObjectChangedByUser` |
-| `_IHBMasterDataObjectTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IHBConditionUUID` | ✓ | |  |  |
+| `IHBObjectUUID` |  | |  |  |
+| `IHBConditionRefUUID` |  | |  |  |
+| `IHBConditionInterestType` |  | |  |  |
+| `IHBConditionInterestCurrency` |  | |  |  |
+| `IHBConditionInterestCalcMethod` |  | |  |  |
+| `IHBConditionInterestCalcType` |  | |  |  |
+| `IHBBankArea` |  | |  |  |
+| `IHBConditionFixedRate` |  | |  |  |
+| `IHBConditionRefRateCode` |  | |  |  |
+| `IHBConditionInterestMinRate` |  | |  |  |
+| `IHBConditionInterestMaxRate` |  | |  |  |
+| `IHBCndnIntrstMarkUpDownRate` |  | |  |  |
+| `IHBConditionFactoryCalendarID` |  | |  |  |
+| `IHBCndnIntrstAdjmtPerdInDays` |  | |  |  |
+| `IHBCndnIntrstLockoutPerdInDays` |  | |  |  |
+| `IHBConditionInterestWeightCode` |  | |  |  |
+| `IHBConditionValidFromDate` |  | |  |  |
+| `IHBConditionValidToDate` |  | |  |  |
+| `IHBObjectTotalChangedDateTime` |  | |  |  |
+| `IHBObjectCreatedDateTime` |  | |  |  |
+| `IHBObjectCreatedByUser` |  | |  |  |
+| `IHBObjectChangedDateTime` |  | |  |  |
+| `IHBObjectChangedByUser` |  | |  |  |
+| `_IHBMasterDataObjectTP` | | ✓ | | |
 
 ## Source Code
 

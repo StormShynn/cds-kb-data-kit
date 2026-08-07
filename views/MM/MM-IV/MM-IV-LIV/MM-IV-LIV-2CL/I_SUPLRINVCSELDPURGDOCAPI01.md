@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `I_SuplrInvcSeldPurgDocument.SupplierInvoice` |
-| key `FiscalYear` | `I_SuplrInvcSeldPurgDocument.FiscalYear` |
-| key `PurchaseOrder` | `I_SuplrInvcSeldPurgDocument.PurchaseOrder` |
-| key `PurchaseOrderItem` | `I_SuplrInvcSeldPurgDocument.PurchaseOrderItem` |
-| `_SupplierInvoiceAPI01` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `PurchaseOrder` | ✓ | |  |  |
+| `PurchaseOrderItem` | ✓ | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
 
 ## Associations
 

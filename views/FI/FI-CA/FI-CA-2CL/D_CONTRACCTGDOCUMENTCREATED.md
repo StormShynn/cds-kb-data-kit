@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `CAReconciliationKey` | `fikey_kk` |
-| `CADocumentType` | `blart_kk` |
-| `CADocumentOriginCode` | `herkf_kk` |
-| `DocumentDate` | `bldat` |
-| `CAPostingDate` | `budat_kk` |
-| `CAReferenceDocument` | `xblnr_kk` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAReconciliationKey` |  | |  | `fikey_kk` |
+| `CADocumentType` |  | |  | `blart_kk` |
+| `CADocumentOriginCode` |  | |  | `herkf_kk` |
+| `DocumentDate` |  | |  | `bldat` |
+| `CAPostingDate` |  | |  | `budat_kk` |
+| `CAReferenceDocument` |  | |  | `xblnr_kk` |
 
 ## Source Code
 

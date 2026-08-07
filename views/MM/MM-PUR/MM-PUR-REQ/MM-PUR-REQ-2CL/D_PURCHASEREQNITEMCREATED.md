@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PurchaseRequisitionType` | `bbsrt` |
-| `PurchasingDocumentItemCategory` | `pstyp` |
-| `MaterialGroup` | `matkl` |
-| `PurchasingOrganization` | `ekorg` |
-| `PurchasingGroup` | `ekgrp` |
-| `Plant` | `ewerk` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseRequisitionType` |  | |  | `bbsrt` |
+| `PurchasingDocumentItemCategory` |  | |  | `pstyp` |
+| `MaterialGroup` |  | |  | `matkl` |
+| `PurchasingOrganization` |  | |  | `ekorg` |
+| `PurchasingGroup` |  | |  | `ekgrp` |
+| `Plant` |  | |  | `ewerk` |
 
 ## Source Code
 

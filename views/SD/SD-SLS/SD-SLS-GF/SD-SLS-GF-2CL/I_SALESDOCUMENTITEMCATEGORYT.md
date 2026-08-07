@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocumentItemCategory` | `pstyv` |
-| key `Language` | `spras` |
-| `SalesDocumentItemCategoryName` | `vtext` |
-| `_SalesDocumentItemCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocumentItemCategory` | ✓ | |  | `pstyv` |
+| `Language` | ✓ | |  | `spras` |
+| `SalesDocumentItemCategoryName` |  | |  | `vtext` |
+| `_SalesDocumentItemCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

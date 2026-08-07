@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SemanticTag` | `fins_sem_tag` |
-| `ParentSemanticTag` | `fins_sem_tag_parent` |
-| `SemanticTagGroup` | `fins_sem_tag_group` |
-| `_Text` | *Association* |
-| `_ParentSemanticTag` | *Association* |
-| `_SemanticTagGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SemanticTag` | ✓ | |  | `fins_sem_tag` |
+| `ParentSemanticTag` |  | |  | `fins_sem_tag_parent` |
+| `SemanticTagGroup` |  | |  | `fins_sem_tag_group` |
+| `_Text` | | ✓ | | |
+| `_ParentSemanticTag` | | ✓ | | |
+| `_SemanticTagGroup` | | ✓ | | |
 
 ## Associations
 

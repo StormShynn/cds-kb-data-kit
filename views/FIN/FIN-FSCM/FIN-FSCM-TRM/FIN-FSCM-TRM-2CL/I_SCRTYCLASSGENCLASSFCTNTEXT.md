@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `ScrtyClassGenClassification` | `alwpkl` |
-| `ScrtyClassGenClassfctnName` | `cast (xlangbez as ftr_gen_gen_secu_class_name preserving type)` |
-| `_Language` | *Association* |
-| `_SecurityClassGenClassfctn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ScrtyClassGenClassification` | ✓ | |  | `alwpkl` |
+| `ScrtyClassGenClassfctnName` |  | |  | `cast (xlangbez as ftr_gen_gen_secu_class_name preserving type)` |
+| `_Language` | | ✓ | | |
+| `_SecurityClassGenClassfctn` | | ✓ | | |
 
 ## Associations
 

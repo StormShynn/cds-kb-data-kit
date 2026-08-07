@@ -33,25 +33,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrder` | `SalesOrderItemPartner.SalesOrder` |
-| key `SalesOrderItem` | `SalesOrderItemPartner.SalesOrderItem` |
-| key `PartnerFunction` | `SalesOrderItemPartner.PartnerFunction` |
-| `PartnerFunctionForEdit` | `SalesOrderItemPartner.PartnerFunctionForEdit` |
-| `Customer` | `SalesOrderItemPartner.Customer` |
-| `Supplier` | `SalesOrderItemPartner.Supplier` |
-| `Personnel` | `SalesOrderItemPartner.Personnel` |
-| `ContactPerson` | `SalesOrderItemPartner.ContactPerson` |
-| `ReferenceBusinessPartner` | `SalesOrderItemPartner.ReferenceBusinessPartner` |
-| `Partner` | `SalesOrderItemPartner.Partner` |
-| `PartnerIsSpecificForSDDocItem` | `SalesOrderItemPartner.PartnerIsSpecificForSDDocItem` |
-| `SalesOrderType` | `SalesOrderItemPartner.SalesOrderType` |
-| `SalesOrganization` | `SalesOrderItemPartner.SalesOrganization` |
-| `DistributionChannel` | `SalesOrderItemPartner.DistributionChannel` |
-| `OrganizationDivision` | `SalesOrderItemPartner.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrder` | ✓ | |  |  |
+| `SalesOrderItem` | ✓ | |  |  |
+| `PartnerFunction` | ✓ | |  |  |
+| `PartnerFunctionForEdit` |  | |  |  |
+| `Customer` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Personnel` |  | |  |  |
+| `ContactPerson` |  | |  |  |
+| `ReferenceBusinessPartner` |  | |  |  |
+| `Partner` |  | |  |  |
+| `PartnerIsSpecificForSDDocItem` |  | |  |  |
+| `SalesOrderType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesOrder` | | ✓ | | |
 
 ## Source Code
 

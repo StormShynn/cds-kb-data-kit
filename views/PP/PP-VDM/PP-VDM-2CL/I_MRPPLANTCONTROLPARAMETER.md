@@ -29,32 +29,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRPPlant` | `cast(werks as werks_d preserving type)` |
-| `MRPPlanningCalendar` | `cast(mrrpp as mrppp preserving type)` |
-| `MRPController` | `cast(fedis as pph_dispo preserving type)` |
-| `BOMPrioritizedVersion` | `cast(cslid as stlid preserving type)` |
-| `ReferencePlant` | `cast(refwk as refwk preserving type)` |
-| `OrderType` | `cast(auart as aufart preserving type)` |
-| `ProcessOrderType` | `cast(auar2 as auar2 preserving type)` |
-| `ReschedulingHorizonInWorkdays` | `cast(umthz as vdm_umthz preserving type)` |
-| `PlanningHorizonInWorkdays` | `cast(plahz as vdm_plahz preserving type)` |
-| `ScheduleLinesCreationCode` | `lifkz` |
-| `ATPCheckingRule` | `cast(prreg as bmg_prreg preserving type)` |
-| `StkInTransfIsAvailForPlng` | `kzumb` |
-| `StartDateInThePastIsAllowed` | `vertr` |
-| `PlannedMaterialListIsCreated` | `anzls` |
-| `MRPIsActiveForMRPAreasAtPlant` | `dbepl` |
-| `BlockedStockIsIncludedInMRP` | `xfan1` |
-| `RestrictedBatchStockIsIncluded` | `cast(nfvbc as vdm_nfvbc preserving type)` |
-| `PurchasingProcessingDuration` | `cast(bztek as vdm_bztek preserving type)` |
-| `_MRPPlant` | *Association* |
-| `_ReferencePlant` | *Association* |
-| `_MRPController` | *Association* |
-| `_MRPPlanningCalendar` | *Association* |
-| `_OrderType` | *Association* |
-| `_ProcessOrderType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRPPlant` | ✓ | |  | `cast(werks as werks_d preserving type)` |
+| `MRPPlanningCalendar` |  | |  | `cast(mrrpp as mrppp preserving type)` |
+| `MRPController` |  | |  | `cast(fedis as pph_dispo preserving type)` |
+| `BOMPrioritizedVersion` |  | |  | `cast(cslid as stlid preserving type)` |
+| `ReferencePlant` |  | |  | `cast(refwk as refwk preserving type)` |
+| `OrderType` |  | |  | `cast(auart as aufart preserving type)` |
+| `ProcessOrderType` |  | |  | `cast(auar2 as auar2 preserving type)` |
+| `ReschedulingHorizonInWorkdays` |  | |  | `cast(umthz as vdm_umthz preserving type)` |
+| `PlanningHorizonInWorkdays` |  | |  | `cast(plahz as vdm_plahz preserving type)` |
+| `ScheduleLinesCreationCode` |  | |  | `lifkz` |
+| `ATPCheckingRule` |  | |  | `cast(prreg as bmg_prreg preserving type)` |
+| `StkInTransfIsAvailForPlng` |  | |  | `kzumb` |
+| `StartDateInThePastIsAllowed` |  | |  | `vertr` |
+| `PlannedMaterialListIsCreated` |  | |  | `anzls` |
+| `MRPIsActiveForMRPAreasAtPlant` |  | |  | `dbepl` |
+| `BlockedStockIsIncludedInMRP` |  | |  | `xfan1` |
+| `RestrictedBatchStockIsIncluded` |  | |  | `cast(nfvbc as vdm_nfvbc preserving type)` |
+| `PurchasingProcessingDuration` |  | |  | `cast(bztek as vdm_bztek preserving type)` |
+| `_MRPPlant` | | ✓ | | |
+| `_ReferencePlant` | | ✓ | | |
+| `_MRPController` | | ✓ | | |
+| `_MRPPlanningCalendar` | | ✓ | | |
+| `_OrderType` | | ✓ | | |
+| `_ProcessOrderType` | | ✓ | | |
 
 ## Associations
 

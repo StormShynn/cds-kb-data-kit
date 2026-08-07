@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WithholdingTaxCode` | `t059zt.wt_withcd` |
-| key `Language` | `t059zt.spras` |
-| key `CountryCode` | `t059zt.land1` |
-| key `WithholdingTaxType` | `t059zt.witht` |
-| `WhldgTaxCodeName` | `t059zt.text40` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WithholdingTaxCode` | ✓ | |  | `wt_withcd` |
+| `Language` | ✓ | |  | `spras` |
+| `CountryCode` | ✓ | |  | `land1` |
+| `WithholdingTaxType` | ✓ | |  | `witht` |
+| `WhldgTaxCodeName` |  | |  | `text40` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

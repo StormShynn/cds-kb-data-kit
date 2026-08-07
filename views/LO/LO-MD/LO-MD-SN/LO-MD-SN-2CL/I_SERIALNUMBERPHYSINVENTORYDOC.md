@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Equipment` | `_MaintenanceObjectListItem.Equipment` |
-| key `FiscalYear` | `_MaintObjListPhysInventoryDoc.FiscalYear` |
-| key `PhysicalInventoryDocument` | `_MaintObjListPhysInventoryDoc.PhysicalInventoryDocument` |
-| key `PhysicalInventoryDocumentItem` | `_MaintObjListPhysInventoryDoc.PhysicalInventoryDocumentItem` |
-| key `SerialNumberPhysicalInvtryType` | `_MaintObjListPhysInventoryDoc.SerialNumberPhysicalInvtryType` |
-| `Material` | `_MaintenanceObjectListItem.Material` |
-| `SerialNumber` | `_MaintenanceObjectListItem.SerialNumber` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Equipment` | ✓ | | `_MaintenanceObjectListItem` | `Equipment` |
+| `FiscalYear` | ✓ | | `_MaintObjListPhysInventoryDoc` | `FiscalYear` |
+| `PhysicalInventoryDocument` | ✓ | | `_MaintObjListPhysInventoryDoc` | `PhysicalInventoryDocument` |
+| `PhysicalInventoryDocumentItem` | ✓ | | `_MaintObjListPhysInventoryDoc` | `PhysicalInventoryDocumentItem` |
+| `SerialNumberPhysicalInvtryType` | ✓ | | `_MaintObjListPhysInventoryDoc` | `SerialNumberPhysicalInvtryType` |
+| `Material` |  | | `_MaintenanceObjectListItem` | `Material` |
+| `SerialNumber` |  | | `_MaintenanceObjectListItem` | `SerialNumber` |
 
 ## Source Code
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAOverdueItemOrigin` | `cast( left( dd07l.domvalue_l, 1 ) as overdue_item_origin_kk preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAOverdueItemOrigin` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as overdue_item_origin_kk preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

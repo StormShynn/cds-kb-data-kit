@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `IT_ElectronicDocPartStat` | `status_at_partner` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `IT_ElectronicDocPartStat` | ✓ | |  | `status_at_partner` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

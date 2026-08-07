@@ -30,41 +30,41 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StockTransportOrder` | `StockTransportOrder` |
-| key `StockTransportOrderItem` | `StockTransportOrderItem` |
-| key `ScheduleLine` | `ScheduleLine` |
-| `DelivDateCategory` | `DelivDateCategory` |
-| `ScheduleLineDeliveryDate` | `ScheduleLineDeliveryDate` |
-| `ScheduleLineDeliveryTime` | `ScheduleLineDeliveryTime` |
-| `OrderQuantityUnit` | `OrderQuantityUnit` |
-| `ScheduleLineOrderQuantity` | `ScheduleLineOrderQuantity` |
-| `RoughGoodsReceiptQty` | `RoughGoodsReceiptQty` |
-| `PurchaseRequisition` | `PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `ScheduleLineIsFixed` | `ScheduleLineIsFixed` |
-| `ScheduleLineCommittedQuantity` | `ScheduleLineCommittedQuantity` |
-| `TransportationPlanningDate` | `TransportationPlanningDate` |
-| `TransportationPlanningTime` | `TransportationPlanningTime` |
-| `LoadingDate` | `LoadingDate` |
-| `LoadingTime` | `LoadingTime` |
-| `GoodsIssueDate` | `GoodsIssueDate` |
-| `GoodsIssueTime` | `GoodsIssueTime` |
-| `STOLatestPossibleGRDate` | `STOLatestPossibleGRDate` |
-| `STOLatestPossibleGRTime` | `STOLatestPossibleGRTime` |
-| `StockTransferDeliveredQuantity` | `StockTransferDeliveredQuantity` |
-| `StockTransportOrderType` | `StockTransportOrderType` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Plant` | `Plant` |
-| `_STOSubcontractingComponent` | *Association* |
-| `_StockTransportOrderItem` | *Association* |
-| `_StockTransportOrder` | *Association* |
-| `_OrderQuantityUnit` | *Association* |
-| `_PurchaseRequisition` | *Association* |
-| `_PurchaseRequisitionItem` | *Association* |
-| `_OrderQuantityUnitText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StockTransportOrder` | ✓ | |  |  |
+| `StockTransportOrderItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `ScheduleLineDeliveryDate` |  | |  |  |
+| `ScheduleLineDeliveryTime` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `RoughGoodsReceiptQty` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `ScheduleLineIsFixed` |  | |  |  |
+| `ScheduleLineCommittedQuantity` |  | |  |  |
+| `TransportationPlanningDate` |  | |  |  |
+| `TransportationPlanningTime` |  | |  |  |
+| `LoadingDate` |  | |  |  |
+| `LoadingTime` |  | |  |  |
+| `GoodsIssueDate` |  | |  |  |
+| `GoodsIssueTime` |  | |  |  |
+| `STOLatestPossibleGRDate` |  | |  |  |
+| `STOLatestPossibleGRTime` |  | |  |  |
+| `StockTransferDeliveredQuantity` |  | |  |  |
+| `StockTransportOrderType` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `_STOSubcontractingComponent` | | ✓ | | |
+| `_StockTransportOrderItem` | | ✓ | | |
+| `_StockTransportOrder` | | ✓ | | |
+| `_OrderQuantityUnit` | | ✓ | | |
+| `_PurchaseRequisition` | | ✓ | | |
+| `_PurchaseRequisitionItem` | | ✓ | | |
+| `_OrderQuantityUnitText` | | ✓ | | |
 
 ## Source Code
 

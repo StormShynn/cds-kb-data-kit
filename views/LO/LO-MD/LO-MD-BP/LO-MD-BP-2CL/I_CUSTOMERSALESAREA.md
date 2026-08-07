@@ -30,95 +30,95 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `kunnr` |
-| key `SalesOrganization` | `vkorg` |
-| key `DistributionChannel` | `vtweg` |
-| key `Division` | `spart` |
-| `CustomerABCClassification` | `klabc` |
-| `SalesOffice` | `vkbur` |
-| `SalesGroup` | `vkgrp` |
-| `OrderIsBlockedForCustomer` | `aufsd` |
-| `Currency` | `waers` |
-| `CustomerPriceGroup` | `konda` |
-| `PriceListType` | `pltyp` |
-| `DeliveryPriority` | `lprio` |
-| `ShippingCondition` | `vsbed` |
-| `IncotermsClassification` | `inco1` |
-| `SupplyingPlant` | `vwerk` |
-| `CompleteDeliveryIsDefined` | `autlf` |
-| `DeliveryIsBlockedForCustomer` | `lifsd` |
-| `BillingIsBlockedForCustomer` | `faksd` |
-| `CustomerPaymentTerms` | `zterm` |
-| `CustomerAccountAssignmentGroup` | `ktgrd` |
-| `AccountByCustomer` | `eikto` |
-| `CustomerGroup` | `kdgrp` |
-| `CustomerPricingProcedure` | `kalks` |
-| `OrderCombinationIsAllowed` | `kzazu` |
-| `PartialDeliveryIsAllowed` | `kztlf` |
-| `InvoiceDate` | `perfk` |
-| `PaymentTerms` | `zterm` |
-| `IncotermsTransferLocation` | `inco2` |
-| `ItemOrderProbabilityInPercent` | `awahr` |
-| `IncotermsLocation2` | `inco3_l` |
-| `RecordCreatedDate` | `erdat` |
-| `AuthorizationGroup` | `begru` |
-| `SalesDistrict` | `bzirk` |
-| `IncotermsVersion` | `incov` |
-| `IncotermsLocation1` | `inco2_l` |
-| `DeletionIndicator` | `loevm` |
-| `IsBusinessPurposeCompleted` | `cvp_xblck_v` |
-| `SalesItemProposal` | `vsort` |
-| `CustProdProposalProcedure` | `pvksm` |
-| `ProofOfDeliveryTime` | `cast( left( cast( div(podtg, 240000) as abap.char(13) ), 6 ) as abap.tims )` |
-| `ProofOfDeliveryTimeValue` | `cast( division(podtg, 240000, 2 ) as cust_pod )` |
-| `MaxNmbrOfPartialDelivery` | `antlf` |
-| `UnderdelivTolrtdLmtRatioInPct` | `untto` |
-| `OverdelivTolrtdLmtRatioInPct` | `uebto` |
-| `IsActiveEntity` | `cast( 'X' as sdraft_is_active preserving type )` |
-| `AdditionalCustomerGroup1` | `kvgr1` |
-| `AdditionalCustomerGroup2` | `kvgr2` |
-| `AdditionalCustomerGroup3` | `kvgr3` |
-| `AdditionalCustomerGroup4` | `kvgr4` |
-| `AdditionalCustomerGroup5` | `kvgr5` |
-| `InvoiceListSchedule` | `perrl` |
-| `ExchangeRateType` | `kurst` |
-| `PaymentGuaranteeProcedure` | `kabss` |
-| `SuplrIsRlvtForSettlmtMgmt` | `agrel` |
-| `CustIsRlvtForSettlmtMgmt` | `agrel` |
-| `ProductUnitGroup` | `megru` |
-| `SlsDocIsRlvtForProofOfDeliv` | `podkz` |
-| `SlsUnlmtdOvrdelivIsAllwd` | `uebtk` |
-| `CreditControlArea` | `kkber` |
-| `CustomerIsRebateRelevant` | `bokre` |
-| `InspSbstHasNoTimeOrQuantity` | `prfre` |
-| `ManualInvoiceMaintIsRelevant` | `mrnkz` |
-| `IncotermsSupChnLoc1AddlUUID` | `cast( inco2_key as /sapapo/location_uuid)` |
-| `IncotermsSupChnLoc2AddlUUID` | `cast( inco3_key as /sapapo/location_uuid)` |
-| `IncotermsSupChnDvtgLocAddlUUID` | `cast( inco4_key as /sapapo/location_uuid)` |
-| `SalesBlockForCustomer` | `cassd` |
-| `CustomerStatisticsGroup` | `versg` |
-| `_Customer` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_Currency` | *Association* |
-| `_DeliveryPriority` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_SupplyingPlant` | *Association* |
-| `_DeliveryIsBlockedForCustomer` | *Association* |
-| `_BillingIsBlockedForCustomer` | *Association* |
-| `_CustomerPaymentTerms` | *Association* |
-| `_CustomerAccountAssgmtGroup` | *Association* |
-| `_FactoryCalendar` | *Association* |
-| `_ExchangeRateType` | *Association* |
-| `_CustProdProposalProcedure` | *Association* |
-| `_PaytGuarProcedVH` | *Association* |
-| `_SalesAreaAddr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `kunnr` |
+| `SalesOrganization` | ✓ | |  | `vkorg` |
+| `DistributionChannel` | ✓ | |  | `vtweg` |
+| `Division` | ✓ | |  | `spart` |
+| `CustomerABCClassification` |  | |  | `klabc` |
+| `SalesOffice` |  | |  | `vkbur` |
+| `SalesGroup` |  | |  | `vkgrp` |
+| `OrderIsBlockedForCustomer` |  | |  | `aufsd` |
+| `Currency` |  | |  | `waers` |
+| `CustomerPriceGroup` |  | |  | `konda` |
+| `PriceListType` |  | |  | `pltyp` |
+| `DeliveryPriority` |  | |  | `lprio` |
+| `ShippingCondition` |  | |  | `vsbed` |
+| `IncotermsClassification` |  | |  | `inco1` |
+| `SupplyingPlant` |  | |  | `vwerk` |
+| `CompleteDeliveryIsDefined` |  | |  | `autlf` |
+| `DeliveryIsBlockedForCustomer` |  | |  | `lifsd` |
+| `BillingIsBlockedForCustomer` |  | |  | `faksd` |
+| `CustomerPaymentTerms` |  | |  | `zterm` |
+| `CustomerAccountAssignmentGroup` |  | |  | `ktgrd` |
+| `AccountByCustomer` |  | |  | `eikto` |
+| `CustomerGroup` |  | |  | `kdgrp` |
+| `CustomerPricingProcedure` |  | |  | `kalks` |
+| `OrderCombinationIsAllowed` |  | |  | `kzazu` |
+| `PartialDeliveryIsAllowed` |  | |  | `kztlf` |
+| `InvoiceDate` |  | |  | `perfk` |
+| `PaymentTerms` |  | |  | `zterm` |
+| `IncotermsTransferLocation` |  | |  | `inco2` |
+| `ItemOrderProbabilityInPercent` |  | |  | `awahr` |
+| `IncotermsLocation2` |  | |  | `inco3_l` |
+| `RecordCreatedDate` |  | |  | `erdat` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `SalesDistrict` |  | |  | `bzirk` |
+| `IncotermsVersion` |  | |  | `incov` |
+| `IncotermsLocation1` |  | |  | `inco2_l` |
+| `DeletionIndicator` |  | |  | `loevm` |
+| `IsBusinessPurposeCompleted` |  | |  | `cvp_xblck_v` |
+| `SalesItemProposal` |  | |  | `vsort` |
+| `CustProdProposalProcedure` |  | |  | `pvksm` |
+| `ProofOfDeliveryTime` |  | |  | `cast( left( cast( div(podtg, 240000) as abap.char(13) ), 6 ) as abap.tims )` |
+| `ProofOfDeliveryTimeValue` |  | |  | `cast( division(podtg, 240000, 2 ) as cust_pod )` |
+| `MaxNmbrOfPartialDelivery` |  | |  | `antlf` |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  | `untto` |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  | `uebto` |
+| `IsActiveEntity` |  | |  | `cast( 'X' as sdraft_is_active preserving type )` |
+| `AdditionalCustomerGroup1` |  | |  | `kvgr1` |
+| `AdditionalCustomerGroup2` |  | |  | `kvgr2` |
+| `AdditionalCustomerGroup3` |  | |  | `kvgr3` |
+| `AdditionalCustomerGroup4` |  | |  | `kvgr4` |
+| `AdditionalCustomerGroup5` |  | |  | `kvgr5` |
+| `InvoiceListSchedule` |  | |  | `perrl` |
+| `ExchangeRateType` |  | |  | `kurst` |
+| `PaymentGuaranteeProcedure` |  | |  | `kabss` |
+| `SuplrIsRlvtForSettlmtMgmt` |  | |  | `agrel` |
+| `CustIsRlvtForSettlmtMgmt` |  | |  | `agrel` |
+| `ProductUnitGroup` |  | |  | `megru` |
+| `SlsDocIsRlvtForProofOfDeliv` |  | |  | `podkz` |
+| `SlsUnlmtdOvrdelivIsAllwd` |  | |  | `uebtk` |
+| `CreditControlArea` |  | |  | `kkber` |
+| `CustomerIsRebateRelevant` |  | |  | `bokre` |
+| `InspSbstHasNoTimeOrQuantity` |  | |  | `prfre` |
+| `ManualInvoiceMaintIsRelevant` |  | |  | `mrnkz` |
+| `IncotermsSupChnLoc1AddlUUID` |  | |  | `cast( inco2_key as /sapapo/location_uuid)` |
+| `IncotermsSupChnLoc2AddlUUID` |  | |  | `cast( inco3_key as /sapapo/location_uuid)` |
+| `IncotermsSupChnDvtgLocAddlUUID` |  | |  | `cast( inco4_key as /sapapo/location_uuid)` |
+| `SalesBlockForCustomer` |  | |  | `cassd` |
+| `CustomerStatisticsGroup` |  | |  | `versg` |
+| `_Customer` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_DeliveryPriority` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_SupplyingPlant` | | ✓ | | |
+| `_DeliveryIsBlockedForCustomer` | | ✓ | | |
+| `_BillingIsBlockedForCustomer` | | ✓ | | |
+| `_CustomerPaymentTerms` | | ✓ | | |
+| `_CustomerAccountAssgmtGroup` | | ✓ | | |
+| `_FactoryCalendar` | | ✓ | | |
+| `_ExchangeRateType` | | ✓ | | |
+| `_CustProdProposalProcedure` | | ✓ | | |
+| `_PaytGuarProcedVH` | | ✓ | | |
+| `_SalesAreaAddr` | | ✓ | | |
 
 ## Associations
 

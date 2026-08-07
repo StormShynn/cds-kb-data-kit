@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Industry` | `_CnsldtnIndustry.Industry` |
-| `CnsldtnIsAdditionalMasterData` | `_CnsldtnIndustry.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnIndustryTextTP` | `_Text as _Text : redirected to composition child I_CnsldtnIndustryTextTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Industry` | ✓ | | `_CnsldtnIndustry` | `Industry` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_CnsldtnIndustry` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnIndustryTextTP` |  | |  | `_Text as _Text : redirected to composition child I_CnsldtnIndustryTextTP` |
 
 ## Source Code
 

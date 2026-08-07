@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContractAccountCategory` | `vktyp` |
-| key `CAApplicationArea` | `applk` |
-| key `Language` | `spras` |
-| `ContractAccountCategoryName` | `text` |
-| `_ApplArea` | `_CAApplicationArea` |
-| `_Language` | *Association* |
-| `_CAApplicationArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContractAccountCategory` | ✓ | |  | `vktyp` |
+| `CAApplicationArea` | ✓ | |  | `applk` |
+| `Language` | ✓ | |  | `spras` |
+| `ContractAccountCategoryName` |  | |  | `text` |
+| `_ApplArea` |  | |  | `_CAApplicationArea` |
+| `_Language` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
 
 ## Associations
 

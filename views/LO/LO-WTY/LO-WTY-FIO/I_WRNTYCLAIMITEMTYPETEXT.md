@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WarrantyItemType` | `poskt_cust` |
-| key `Language` | `spras` |
-| `WrntyTypeDescription` | `poskt_des` |
-| `_WrntyClaimItemType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WarrantyItemType` | ✓ | |  | `poskt_cust` |
+| `Language` | ✓ | |  | `spras` |
+| `WrntyTypeDescription` |  | |  | `poskt_des` |
+| `_WrntyClaimItemType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

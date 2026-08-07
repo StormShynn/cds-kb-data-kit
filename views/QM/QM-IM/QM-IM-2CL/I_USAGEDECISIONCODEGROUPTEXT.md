@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `UsageDecisionCodeGroup` | `qpgt.codegruppe` |
-| key `Language` | `sprache` |
-| `UsageDecisionCodeGroupText` | `cast( kurztext as vdm_qktextgr preserving type )` |
-| `_UsageDecisionCodeGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `UsageDecisionCodeGroup` | ✓ | |  | `codegruppe` |
+| `Language` | ✓ | |  | `sprache` |
+| `UsageDecisionCodeGroupText` |  | |  | `cast( kurztext as vdm_qktextgr preserving type )` |
+| `_UsageDecisionCodeGroup` | | ✓ | | |
 
 ## Associations
 

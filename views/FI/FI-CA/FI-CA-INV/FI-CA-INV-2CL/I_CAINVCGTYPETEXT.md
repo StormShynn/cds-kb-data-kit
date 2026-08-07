@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgType` | `_tfk2603at.inv_type` |
-| key `CAApplicationArea` | `_tfk2603at.applk` |
-| key `Language` | `_tfk2603at.langu` |
-| `CAInvcgTypeText` | `_tfk2603at.text` |
-| `_Language` | *Association* |
-| `_CAApplicationArea` | *Association* |
-| `_CAInvcgType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgType` | ✓ | | `_tfk2603at` | `inv_type` |
+| `CAApplicationArea` | ✓ | | `_tfk2603at` | `applk` |
+| `Language` | ✓ | | `_tfk2603at` | `langu` |
+| `CAInvcgTypeText` |  | | `_tfk2603at` | `text` |
+| `_Language` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
+| `_CAInvcgType` | | ✓ | | |
 
 ## Associations
 

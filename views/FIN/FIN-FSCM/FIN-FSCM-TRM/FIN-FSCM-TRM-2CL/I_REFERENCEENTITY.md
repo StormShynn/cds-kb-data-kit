@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TreasuryReferenceEntity` | `RefEntity.ref_entity` |
-| `TextDescription` | `RefEntity.description` |
-| `BusinessPartner` | `RefEntityAttri.business_partner` |
-| `CompanyCode` | `RefEntityAttri.compcode` |
-| `_BusinessPartner` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryReferenceEntity` | ✓ | |  | `ref_entity` |
+| `TextDescription` |  | |  | `description` |
+| `BusinessPartner` |  | |  | `business_partner` |
+| `CompanyCode` |  | |  | `compcode` |
+| `_BusinessPartner` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

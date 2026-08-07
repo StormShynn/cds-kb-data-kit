@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfignCharacteristicGroup` | `ConfignCharacteristicGroup` |
-| key `ChangeNumber` | `ChangeNumber` |
-| key `CharcInternalID` | `CharcInternalID` |
-| `SortingNumber` | `SortingNumber` |
-| `Characteristic` | `Characteristic` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `_Group` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfignCharacteristicGroup` | ✓ | |  |  |
+| `ChangeNumber` | ✓ | |  |  |
+| `CharcInternalID` | ✓ | |  |  |
+| `SortingNumber` |  | |  |  |
+| `Characteristic` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `_Group` | | ✓ | | |
 
 ## Source Code
 

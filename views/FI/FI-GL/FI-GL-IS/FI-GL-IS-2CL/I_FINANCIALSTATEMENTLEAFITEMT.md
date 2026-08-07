@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialStatementLeafItem` | `FinancialStatementLeafItem` |
-| key `Language` | `Language` |
-| `FinancialStatementLeafItemName` | `FinancialStatementLeafItemName` |
-| `FinStmntLeafItmLongName` | `FinStmntLeafItmLongName` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialStatementLeafItem` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `FinancialStatementLeafItemName` |  | |  |  |
+| `FinStmntLeafItmLongName` |  | |  |  |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

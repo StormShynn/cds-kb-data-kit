@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `SecurityClassQuotation` | `dd07t.domvalue_l` |
-| `SecurityClassQuotationName` | `cast(dd07t.ddtext as ftr_gen_snoti_name preserving type)` |
-| `_SecurityClassQuotation` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `SecurityClassQuotation` | ✓ | |  | `domvalue_l` |
+| `SecurityClassQuotationName` |  | |  | `cast(dd07t.ddtext as ftr_gen_snoti_name preserving type)` |
+| `_SecurityClassQuotation` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

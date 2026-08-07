@@ -27,40 +27,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderType` | `typ.auart` |
-| `OrderCategory` | `cast(typ.autyp as pph_autyp preserving type)` |
-| `OrderNumberRange` | `typ.numkr` |
-| `CommitmentsMgmtActvtnStatus` | `typ.obligo` |
-| `StatusProfile` | `typ.stsma` |
-| `OperationStatusProfile` | `cast(typ.vrg_stsma as vdm_stsma_op preserving type)` |
-| `ControllingSettlementProfile` | `typ.aprof` |
-| `PlanningProfile` | `typ.pprof` |
-| `BudgetProfile` | `typ.bprof` |
-| `ExecutionServiceProfile` | `typ.exec_profile` |
-| `ControllingObjectClass` | `cast(typ.scope as pph_scope preserving type)` |
-| `FunctionalArea` | `typ.func_area` |
-| `CtrlgTotalsRecordActvtnStatus` | `typ.copar` |
-| `ResidenceTime1` | `typ.resz1` |
-| `ResidenceTime2` | `typ.resz2` |
-| `OrderMasterDataLayout` | `typ.layout` |
-| `TextObjectForm` | `typ.tdform` |
-| `ConfigDeprecationCode` | `typ.configurationdeprecationcode` |
-| `OrderIsToBeClassified` | `typ.aufkl` |
-| `OrderIsReleasedUponCreation` | `typ.relkz` |
-| `OrderHasStatusChangeDocuments` | `typ.chgkz` |
-| `SettlementIsNotRequired` | `typ.nabpf` |
-| `OrdIsUsedInIntegratedPlanning` | `typ.plint` |
-| `NetworkIsForPlanning` | `typ.vorpl` |
-| `RevenuePostingIsAllowed` | `cast(typ.erloese as vdm_pp_erloese preserving type)` |
-| `CollectiveOrderHasAutoGoodsMvt` | `cast(typ.colordproc as vdm_colordproc preserving type)` |
-| `_Text` | *Association* |
-| `_OrderCategory` | *Association* |
-| `_FunctionalArea` | *Association* |
-| `_ControllingObjectClass` | *Association* |
-| `_OrderStatusProfile` | *Association* |
-| `_OperationStatusProfile` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderType` | ✓ | |  | `auart` |
+| `OrderCategory` |  | |  | `cast(typ.autyp as pph_autyp preserving type)` |
+| `OrderNumberRange` |  | |  | `numkr` |
+| `CommitmentsMgmtActvtnStatus` |  | |  | `obligo` |
+| `StatusProfile` |  | |  | `stsma` |
+| `OperationStatusProfile` |  | |  | `cast(typ.vrg_stsma as vdm_stsma_op preserving type)` |
+| `ControllingSettlementProfile` |  | |  | `aprof` |
+| `PlanningProfile` |  | |  | `pprof` |
+| `BudgetProfile` |  | |  | `bprof` |
+| `ExecutionServiceProfile` |  | |  | `exec_profile` |
+| `ControllingObjectClass` |  | |  | `cast(typ.scope as pph_scope preserving type)` |
+| `FunctionalArea` |  | |  | `func_area` |
+| `CtrlgTotalsRecordActvtnStatus` |  | |  | `copar` |
+| `ResidenceTime1` |  | |  | `resz1` |
+| `ResidenceTime2` |  | |  | `resz2` |
+| `OrderMasterDataLayout` |  | |  | `layout` |
+| `TextObjectForm` |  | |  | `tdform` |
+| `ConfigDeprecationCode` |  | |  | `configurationdeprecationcode` |
+| `OrderIsToBeClassified` |  | |  | `aufkl` |
+| `OrderIsReleasedUponCreation` |  | |  | `relkz` |
+| `OrderHasStatusChangeDocuments` |  | |  | `chgkz` |
+| `SettlementIsNotRequired` |  | |  | `nabpf` |
+| `OrdIsUsedInIntegratedPlanning` |  | |  | `plint` |
+| `NetworkIsForPlanning` |  | |  | `vorpl` |
+| `RevenuePostingIsAllowed` |  | |  | `cast(typ.erloese as vdm_pp_erloese preserving type)` |
+| `CollectiveOrderHasAutoGoodsMvt` |  | |  | `cast(typ.colordproc as vdm_colordproc preserving type)` |
+| `_Text` | | ✓ | | |
+| `_OrderCategory` | | ✓ | | |
+| `_FunctionalArea` | | ✓ | | |
+| `_ControllingObjectClass` | | ✓ | | |
+| `_OrderStatusProfile` | | ✓ | | |
+| `_OperationStatusProfile` | | ✓ | | |
 
 ## Associations
 

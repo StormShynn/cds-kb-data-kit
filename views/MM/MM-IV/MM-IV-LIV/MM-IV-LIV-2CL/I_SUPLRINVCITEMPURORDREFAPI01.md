@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SupplierInvoice` | `item.SupplierInvoice` |
-| key `FiscalYear` | `item.FiscalYear` |
-| key `SupplierInvoiceItem` | `item.SupplierInvoiceItem` |
-| `PurchaseOrder` | `item.PurchaseOrder` |
-| `PurchaseOrderItem` | `item.PurchaseOrderItem` |
-| `Plant` | `item.Plant` |
-| `SupplierInvoiceItemText` | `item.SupplierInvoiceItemText` |
-| `PurchaseOrderItemMaterial` | `item.PurchaseOrderItemMaterial` |
-| `PurchaseOrderQuantityUnit` | `item.PurchaseOrderQuantityUnit` |
-| `QuantityInPurchaseOrderUnit` | `item.QuantityInPurchaseOrderUnit` |
-| `PurchaseOrderPriceUnit` | `item.PurchaseOrderPriceUnit` |
-| `QtyInPurchaseOrderPriceUnit` | `item.QtyInPurchaseOrderPriceUnit` |
-| `StockUnit` | `item.StockUnit` |
-| `SuplrInvcDeliveryCostCndnType` | `item.SuplrInvcDeliveryCostCndnType` |
-| `SuplrInvcDeliveryCostCndnStep` | `item.SuplrInvcDeliveryCostCndnStep` |
-| `SuplrInvcDeliveryCostCndnCount` | `item.SuplrInvcDeliveryCostCndnCount` |
-| `DocumentCurrency` | `item.DocumentCurrency` |
-| `SupplierInvoiceItemAmount` | `item.SupplierInvoiceItemAmount` |
-| `IsSubsequentDebitCredit` | `item.IsSubsequentDebitCredit` |
-| `TaxCode` | `item.TaxCode` |
-| `TaxJurisdiction` | `item.TaxJurisdiction` |
-| `ReferenceDocument` | `item.ReferenceDocument` |
-| `ReferenceDocumentFiscalYear` | `item.ReferenceDocumentFiscalYear` |
-| `ReferenceDocumentItem` | `item.ReferenceDocumentItem` |
-| `DebitCreditCode` | `item.DebitCreditCode` |
-| `FreightSupplier` | `item.FreightSupplier` |
-| `IsNotCashDiscountLiable` | `item.IsNotCashDiscountLiable` |
-| `SuplrInvcItemHasPriceVariance` | `item.SuplrInvcItemHasPriceVariance` |
-| `SuplrInvcItemHasQtyVariance` | `item.SuplrInvcItemHasQtyVariance` |
-| `SuplrInvcItemHasDateVariance` | `item.SuplrInvcItemHasDateVariance` |
-| `SuplrInvcItemHasOrdPrcQtyVarc` | `item.SuplrInvcItemHasOrdPrcQtyVarc` |
-| `SuplrInvcItemHasOtherVariance` | `item.SuplrInvcItemHasOtherVariance` |
-| `SuplrInvcItemHasAmountOutsdTol` | `item.SuplrInvcItemHasAmountOutsdTol` |
-| `SuplrInvcItmHasQualityVariance` | `item.SuplrInvcItmHasQualityVariance` |
-| `TaxCountry` | `item.TaxCountry` |
-| `SuplrInvcItmUnplndDelivCost` | `item.SuplrInvcItmUnplndDelivCost` |
-| `IsFinallyInvoiced` | `item.IsFinallyInvoiced` |
-| `_SupplierInvoiceAPI01` | *Association* |
-| `_SuplrInvcItmAcctAssgmtAPI01` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_PurOrdPriceUnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SupplierInvoice` | ✓ | |  |  |
+| `FiscalYear` | ✓ | |  |  |
+| `SupplierInvoiceItem` | ✓ | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `Plant` |  | |  |  |
+| `SupplierInvoiceItemText` |  | |  |  |
+| `PurchaseOrderItemMaterial` |  | |  |  |
+| `PurchaseOrderQuantityUnit` |  | |  |  |
+| `QuantityInPurchaseOrderUnit` |  | |  |  |
+| `PurchaseOrderPriceUnit` |  | |  |  |
+| `QtyInPurchaseOrderPriceUnit` |  | |  |  |
+| `StockUnit` |  | |  |  |
+| `SuplrInvcDeliveryCostCndnType` |  | |  |  |
+| `SuplrInvcDeliveryCostCndnStep` |  | |  |  |
+| `SuplrInvcDeliveryCostCndnCount` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `SupplierInvoiceItemAmount` |  | |  |  |
+| `IsSubsequentDebitCredit` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `TaxJurisdiction` |  | |  |  |
+| `ReferenceDocument` |  | |  |  |
+| `ReferenceDocumentFiscalYear` |  | |  |  |
+| `ReferenceDocumentItem` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `FreightSupplier` |  | |  |  |
+| `IsNotCashDiscountLiable` |  | |  |  |
+| `SuplrInvcItemHasPriceVariance` |  | |  |  |
+| `SuplrInvcItemHasQtyVariance` |  | |  |  |
+| `SuplrInvcItemHasDateVariance` |  | |  |  |
+| `SuplrInvcItemHasOrdPrcQtyVarc` |  | |  |  |
+| `SuplrInvcItemHasOtherVariance` |  | |  |  |
+| `SuplrInvcItemHasAmountOutsdTol` |  | |  |  |
+| `SuplrInvcItmHasQualityVariance` |  | |  |  |
+| `TaxCountry` |  | |  |  |
+| `SuplrInvcItmUnplndDelivCost` |  | |  |  |
+| `IsFinallyInvoiced` |  | |  |  |
+| `_SupplierInvoiceAPI01` | | ✓ | | |
+| `_SuplrInvcItmAcctAssgmtAPI01` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_PurOrdPriceUnitOfMeasure` | | ✓ | | |
 
 ## Associations
 

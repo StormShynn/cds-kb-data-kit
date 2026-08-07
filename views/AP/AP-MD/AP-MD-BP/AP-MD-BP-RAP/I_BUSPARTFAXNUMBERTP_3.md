@@ -30,40 +30,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| key `Person` | `Person` |
-| key `OrdinalNumber` | `OrdinalNumber` |
-| `OrdinalNumberForEdit` | `OrdinalNumberForEdit` |
-| `IsDefaultFaxNumber` | `IsDefaultFaxNumber` |
-| `FaxCountry` | `FaxCountry` |
-| `FaxNumber` | `FaxNumber` |
-| `FaxNumberExtension` | `FaxNumberExtension` |
-| `InternationalFaxNumber` | `InternationalFaxNumber` |
-| `TelephoneCountryPrefix` | `TelephoneCountryPrefix` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `_BPProtectedAddress` | *Association* |
-| `_FaxCountryPrefix` | *Association* |
-| `_FaxNumberCountry` | *Association* |
-| `_AuthorizationGroup` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `Person` | ✓ | |  |  |
+| `OrdinalNumber` | ✓ | |  |  |
+| `OrdinalNumberForEdit` |  | |  |  |
+| `IsDefaultFaxNumber` |  | |  |  |
+| `FaxCountry` |  | |  |  |
+| `FaxNumber` |  | |  |  |
+| `FaxNumberExtension` |  | |  |  |
+| `InternationalFaxNumber` |  | |  |  |
+| `TelephoneCountryPrefix` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `_BPProtectedAddress` | | ✓ | | |
+| `_FaxCountryPrefix` | | ✓ | | |
+| `_FaxNumberCountry` | | ✓ | | |
+| `_AuthorizationGroup` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
 
 ## Source Code
 

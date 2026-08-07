@@ -28,46 +28,46 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesQuotation` | `SalesQuotation` |
-| key `SalesQuotationItem` | `SalesQuotationItem` |
-| `SalesQuotationType` | `SalesQuotationType` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `OrganizationDivision` | `OrganizationDivision` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `PartnerCompany` | `_SoldToParty.TradingPartner` |
-| `SoldToParty` | `SoldToParty` |
-| `ResponsibleEmployee` | `ResponsibleEmployee` |
-| `SalesEmployee` | `SalesEmployee` |
-| `CreationDate` | `CreationDate` |
-| `BindingPeriodValidityStartDate` | `BindingPeriodValidityStartDate` |
-| `BindingPeriodValidityEndDate` | `BindingPeriodValidityEndDate` |
-| `Material` | `Material` |
-| `Product` | `Product` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `DisplayCurrency` | `cast( :P_DisplayCurrency as vdm_v_display_currency )` |
-| `SalesQuotationNetAmount` | `SalesQuotationNetAmount` |
-| `CnvrtdSalesQuotationNetAmount` | `CnvrtdSalesQuotationNetAmount` |
-| `SalesQuotationNetAmtInDspCrcy` | `cast (currency_conversion( amount => SalesQuotationNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sls_qtan_net_amt_in_dc)` |
-| `CnvrtdSalesQtanNetAmtInDspCrcy` | `cast (currency_conversion( amount => CnvrtdSalesQuotationNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cnvrtd_sls_qtan_net_amt_in_dc )` |
-| `SlsQtanPeriodElapsedPercent` | `SlsQtanPeriodElapsedPercent` |
-| `SlsQtanPeriodDueDays` | `cast( case when SlsQtanPeriodDueDays > 999 then 999 else SlsQtanPeriodDueDays end as due_days)` |
-| `PrdtvSlsQtanCnvrsnRate` | `PrdtvSlsQtanCnvrsnRate` |
-| `PrdtvSlsQtanCnvrsnAmount` | `PrdtvSlsQtanCnvrsnAmount` |
-| `PrdtvSlsQtanCnvrsnAmtInDspCrcy` | `cast( currency_conversion ( amount => PrdtvSlsQtanCnvrsnAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cnvrtd_sls_qt_pr_net_amt_in_dc )` |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_OrganizationDivision` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_ResponsibleEmployee` | *Association* |
-| `_SalesEmployee` | *Association* |
-| `_Product` | *Association* |
-| `_TransactionCurrency` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesQuotation` | ✓ | |  |  |
+| `SalesQuotationItem` | ✓ | |  |  |
+| `SalesQuotationType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `PartnerCompany` |  | | `_SoldToParty` | `TradingPartner` |
+| `SoldToParty` |  | |  |  |
+| `ResponsibleEmployee` |  | |  |  |
+| `SalesEmployee` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `BindingPeriodValidityStartDate` |  | |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `DisplayCurrency` |  | |  | `cast( :P_DisplayCurrency as vdm_v_display_currency )` |
+| `SalesQuotationNetAmount` |  | |  |  |
+| `CnvrtdSalesQuotationNetAmount` |  | |  |  |
+| `SalesQuotationNetAmtInDspCrcy` |  | |  | `cast (currency_conversion( amount => SalesQuotationNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as sls_qtan_net_amt_in_dc)` |
+| `CnvrtdSalesQtanNetAmtInDspCrcy` |  | |  | `cast (currency_conversion( amount => CnvrtdSalesQuotationNetAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cnvrtd_sls_qtan_net_amt_in_dc )` |
+| `SlsQtanPeriodElapsedPercent` |  | |  |  |
+| `SlsQtanPeriodDueDays` |  | |  | `cast( case when SlsQtanPeriodDueDays > 999 then 999 else SlsQtanPeriodDueDays end as due_days)` |
+| `PrdtvSlsQtanCnvrsnRate` |  | |  |  |
+| `PrdtvSlsQtanCnvrsnAmount` |  | |  |  |
+| `PrdtvSlsQtanCnvrsnAmtInDspCrcy` |  | |  | `cast( currency_conversion ( amount => PrdtvSlsQtanCnvrsnAmount, source_currency => TransactionCurrency, target_currency => :P_DisplayCurrency, exchange_rate_date => CreationDate, exchange_rate_type => :P_ExchangeRateType, error_handling => 'FAIL_ON_ERROR', round => #CDSBoolean.true, decimal_shift => #CDSBoolean.true, decimal_shift_back => #CDSBoolean.true ) as cnvrtd_sls_qt_pr_net_amt_in_dc )` |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_OrganizationDivision` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_ResponsibleEmployee` | | ✓ | | |
+| `_SalesEmployee` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
 
 ## Associations
 

@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceContract` | `ServiceContract` |
-| key `ServiceContractItem` | `ServiceContractItem` |
-| key `BillingRequestItem` | `BillingRequestItem` |
-| `BillgReqItemBillingDateTime` | `BillgReqItemBillingDateTime` |
-| `BillgReqItemBillingStatus` | `BillgReqItemBillingStatus` |
-| `SettlementStartDateTime` | `SettlementStartDateTime` |
-| `SettlementEndDateTime` | `SettlementEndDateTime` |
-| `BillingPlanTimeZone` | `BillingPlanTimeZone` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `BillgReqItemNetAmount` | `BillgReqItemNetAmount` |
-| `BillingBlockReason` | `BillingBlockReason` |
-| `_ServiceContractItemTP` | *Association* |
-| `_ServiceContractTP` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_BillgReqItmSettlmtStatusText` | *Association* |
-| `_CurrencyText` | *Association* |
-| `_BillingBlockReasonText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceContract` | ✓ | |  |  |
+| `ServiceContractItem` | ✓ | |  |  |
+| `BillingRequestItem` | ✓ | |  |  |
+| `BillgReqItemBillingDateTime` |  | |  |  |
+| `BillgReqItemBillingStatus` |  | |  |  |
+| `SettlementStartDateTime` |  | |  |  |
+| `SettlementEndDateTime` |  | |  |  |
+| `BillingPlanTimeZone` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `BillgReqItemNetAmount` |  | |  |  |
+| `BillingBlockReason` |  | |  |  |
+| `_ServiceContractItemTP` | | ✓ | | |
+| `_ServiceContractTP` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_BillgReqItmSettlmtStatusText` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
+| `_BillingBlockReasonText` | | ✓ | | |
 
 ## Source Code
 

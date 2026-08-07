@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ElectronicDocBPType` | `cast(domvalue_l as edoc_partner_type)` |
-| `ElectronicDocBPTypeDesc` | `cast( dd07t.ddtext as val_text preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ElectronicDocBPType` | ✓ | |  | `cast(domvalue_l as edoc_partner_type)` |
+| `ElectronicDocBPTypeDesc` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
 
 ## Source Code
 

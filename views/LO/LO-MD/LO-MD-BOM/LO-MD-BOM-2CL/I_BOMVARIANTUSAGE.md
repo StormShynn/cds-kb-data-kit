@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillOfMaterialVariantUsage` | `t416.stlan` |
-| `BillOfMaterialVariantUsageDesc` | `_BillOfMaterialUsage.BillOfMaterialVariantUsageDesc` |
-| `BOMIsProductionUsageRelevant` | `t416.pmpfe` |
-| `BOMIsEngineeringUsageRelevant` | `t416.pmpko` |
-| `BOMIsCostingUsageRelevant` | `t416.pmpka` |
-| `BOMIsSalesDistributionRelevant` | `t416.pmprv` |
-| `BOMIsHighLevelConfigRelevant` | `t416.pmpvs` |
-| `BOMIsPlantMaintenanceRelevant` | `t416.pmpin` |
-| `BOMIsSparePartRelevant` | `t416.pmper` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillOfMaterialVariantUsage` | ✓ | |  | `stlan` |
+| `BillOfMaterialVariantUsageDesc` |  | | `_BillOfMaterialUsage` | `BillOfMaterialVariantUsageDesc` |
+| `BOMIsProductionUsageRelevant` |  | |  | `pmpfe` |
+| `BOMIsEngineeringUsageRelevant` |  | |  | `pmpko` |
+| `BOMIsCostingUsageRelevant` |  | |  | `pmpka` |
+| `BOMIsSalesDistributionRelevant` |  | |  | `pmprv` |
+| `BOMIsHighLevelConfigRelevant` |  | |  | `pmpvs` |
+| `BOMIsPlantMaintenanceRelevant` |  | |  | `pmpin` |
+| `BOMIsSparePartRelevant` |  | |  | `pmper` |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MultipleAcctAssgmtDistribution` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MultipleAcctAssgmtDistribution` | ✓ | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

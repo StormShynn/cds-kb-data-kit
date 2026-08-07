@@ -28,97 +28,97 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FailedGoodsMovement` | `affw.GoodsMovementException` |
-| key `FailedGoodsMovementItem` | `affw.GoodsMovementExceptionItem` |
-| `CreationDate` | `affw.CreationDate` |
-| `CreationTime` | `affw.CreationTime` |
-| `CreatedByUser` | `affw.CreatedByUser` |
-| `LastChangeDate` | `affw.LastChangeDate` |
-| `LastChangedByUser` | `affw.LastChangedByUser` |
-| `ErrorOccurrenceDate` | `affw.ErrorOccurrenceDate` |
-| `ErrorOccurrenceTime` | `affw.ErrorOccurrenceTime` |
-| `SystemMessageIdentification` | `affw.SystemMessageIdentification` |
-| `SystemMessageNumber` | `affw.SystemMessageNumber` |
-| `SystemMessageType` | `affw.SystemMessageType` |
-| `SystemMessageVariable1` | `affw.SystemMessageVariable1` |
-| `SystemMessageVariable2` | `affw.SystemMessageVariable2` |
-| `SystemMessageVariable3` | `affw.SystemMessageVariable3` |
-| `SystemMessageVariable4` | `affw.SystemMessageVariable4` |
-| `Material` | `affw.Material` |
-| `Product` | `cast(affw.Material as productnumber preserving type)` |
-| `Plant` | `affw.Plant` |
-| `StorageLocation` | `affw.StorageLocation` |
-| `Batch` | `affw.Batch` |
-| `GoodsMovementType` | `affw.GoodsMovementType` |
-| `GoodsMovementReasonCode` | `affw.GoodsMovementReasonCode` |
-| `InventorySpecialStockType` | `affw.InventorySpecialStockType` |
-| `InventoryUsabilityCode` | `affw.InventoryUsabilityCode` |
-| `GoodsMovementRefDocType` | `affw.GoodsMovementRefDocType` |
-| `DebitCreditCode` | `affw.DebitCreditCode` |
-| `ConsumptionPosting` | `affw.ConsumptionPosting` |
-| `InventoryValuationType` | `affw.InventoryValuationType` |
-| `SalesOrder` | `affw.SalesOrder` |
-| `SalesOrderItem` | `affw.SalesOrderItem` |
-| `WBSElementInternalID` | `affw.WBSElementInternalID` |
-| `WBSElementInternalID_2` | `affw.WBSElementInternalID_2` |
-| `Supplier` | `affw.Supplier` |
-| `Customer` | `affw.Customer` |
-| `GoodsRecipientName` | `affw.GoodsRecipientName` |
-| `UnloadingPointName` | `affw.UnloadingPointName` |
-| `IsCompletelyDelivered` | `affw.IsCompletelyDelivered` |
-| `ReservationIsFinallyIssued` | `affw.ReservationIsFinallyIssued` |
-| `ProductionSupplyArea` | `affw.SupplyArea` |
-| `MaterialStaging` | `affw.MaterialStaging` |
-| `Warehouse` | `affw.Warehouse` |
-| `StorageType` | `affw.StorageType` |
-| `StorageBin` | `affw.StorageBin` |
-| `EWMWarehouse` | `affw.EWMWarehouse` |
-| `EWMStorageBin` | `affw.EWMStorageBin` |
-| `DestinationStorageBin` | `affw.DestinationStorageBin` |
-| `HandlingUnitExternalID` | `affw.HandlingUnitExternalID` |
-| `ReversalMaterialDocument` | `affw.ReversalMaterialDocument` |
-| `ReversalMaterialDocumentItem` | `affw.ReversalMaterialDocumentItem` |
-| `ReversalMaterialDocumentYear` | `affw.ReversalMaterialDocumentYear` |
-| `OrderID` | `affw.OrderID` |
-| `OrderCategory` | `affw.OrderCategory` |
-| `Reservation` | `affw.Reservation` |
-| `ReservationItem` | `affw.ReservationItem` |
-| `RecordType` | `affw.RecordType` |
-| `ConfirmationGroup` | `affw.ConfirmationGroup` |
-| `ConfirmationCount` | `affw.ConfirmationCount` |
-| `OrderInternalID` | `affw.OrderInternalBillOfOperations` |
-| `OrderOperationInternalID` | `affw.OrderIntBillOfOperationsItem` |
-| `RepetitiveMfgConfirmation` | `affw.RepetitiveMfgConfirmation` |
-| `MRPController` | `affw.MRPController` |
-| `ProductionSupervisor` | `affw.ProductionSupervisor` |
-| `RecordIsFromMfgProcgExec` | `affw.RecordIsFromMfgProcgExec` |
-| `SerialNumberAssgmtProfile` | `affw.SerialNumberAssgmtProfile` |
-| `NumberOfSerialNumbers` | `affw.NumberOfSerialNumbers` |
-| `SerialNumber` | `affw.SerialNumber` |
-| `ShopFloorItem` | `affw.ShopFloorItem` |
-| `GdsMvtExcptnDepdntItemGroup` | `affw.GdsMvtExcptnDepdntItemGroup` |
-| `PostingDate` | `affw.PostingDate` |
-| `DocumentDate` | `affw.DocumentDate` |
-| `SLEDOrManufactureDate` | `affw.SLEDOrManufactureDate` |
-| `GoodsMovementEntryUnit` | `affw.GoodsMovementEntryUnit` |
-| `GoodsMovementEntryQty` | `affw.GoodsMovementEntryQty` |
-| `Currency` | `affw.Currency` |
-| `_ProductionSupplyArea` | `affw._SupplyArea` |
-| `_FailedGoodsMovement` | *Association* |
-| `_Product` | *Association* |
-| `_Batch_2` | *Association* |
-| `_PlantText` | *Association* |
-| `_MaterialText` | *Association* |
-| `_ProductText` | *Association* |
-| `_OrderText` | *Association* |
-| `_WBSElementText` | *Association* |
-| `_StorageLocationText` | *Association* |
-| `_ProductionSupplyAreaText` | *Association* |
-| `_ConfirmationText` | *Association* |
-| `_SupplierText` | *Association* |
-| `_CustomerText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FailedGoodsMovement` | ✓ | |  | `GoodsMovementException` |
+| `FailedGoodsMovementItem` | ✓ | |  | `GoodsMovementExceptionItem` |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ErrorOccurrenceDate` |  | |  |  |
+| `ErrorOccurrenceTime` |  | |  |  |
+| `SystemMessageIdentification` |  | |  |  |
+| `SystemMessageNumber` |  | |  |  |
+| `SystemMessageType` |  | |  |  |
+| `SystemMessageVariable1` |  | |  |  |
+| `SystemMessageVariable2` |  | |  |  |
+| `SystemMessageVariable3` |  | |  |  |
+| `SystemMessageVariable4` |  | |  |  |
+| `Material` |  | |  |  |
+| `Product` |  | |  | `cast(affw.Material as productnumber preserving type)` |
+| `Plant` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `Batch` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `GoodsMovementReasonCode` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `InventoryUsabilityCode` |  | |  |  |
+| `GoodsMovementRefDocType` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `WBSElementInternalID_2` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `GoodsRecipientName` |  | |  |  |
+| `UnloadingPointName` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |
+| `ProductionSupplyArea` |  | |  | `SupplyArea` |
+| `MaterialStaging` |  | |  |  |
+| `Warehouse` |  | |  |  |
+| `StorageType` |  | |  |  |
+| `StorageBin` |  | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `EWMStorageBin` |  | |  |  |
+| `DestinationStorageBin` |  | |  |  |
+| `HandlingUnitExternalID` |  | |  |  |
+| `ReversalMaterialDocument` |  | |  |  |
+| `ReversalMaterialDocumentItem` |  | |  |  |
+| `ReversalMaterialDocumentYear` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `OrderCategory` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `ReservationItem` |  | |  |  |
+| `RecordType` |  | |  |  |
+| `ConfirmationGroup` |  | |  |  |
+| `ConfirmationCount` |  | |  |  |
+| `OrderInternalID` |  | |  | `OrderInternalBillOfOperations` |
+| `OrderOperationInternalID` |  | |  | `OrderIntBillOfOperationsItem` |
+| `RepetitiveMfgConfirmation` |  | |  |  |
+| `MRPController` |  | |  |  |
+| `ProductionSupervisor` |  | |  |  |
+| `RecordIsFromMfgProcgExec` |  | |  |  |
+| `SerialNumberAssgmtProfile` |  | |  |  |
+| `NumberOfSerialNumbers` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `ShopFloorItem` |  | |  |  |
+| `GdsMvtExcptnDepdntItemGroup` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `SLEDOrManufactureDate` |  | |  |  |
+| `GoodsMovementEntryUnit` |  | |  |  |
+| `GoodsMovementEntryQty` |  | |  |  |
+| `Currency` |  | |  |  |
+| `_ProductionSupplyArea` |  | |  | `_SupplyArea` |
+| `_FailedGoodsMovement` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Batch_2` | | ✓ | | |
+| `_PlantText` | | ✓ | | |
+| `_MaterialText` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_OrderText` | | ✓ | | |
+| `_WBSElementText` | | ✓ | | |
+| `_StorageLocationText` | | ✓ | | |
+| `_ProductionSupplyAreaText` | | ✓ | | |
+| `_ConfirmationText` | | ✓ | | |
+| `_SupplierText` | | ✓ | | |
+| `_CustomerText` | | ✓ | | |
 
 ## Associations
 

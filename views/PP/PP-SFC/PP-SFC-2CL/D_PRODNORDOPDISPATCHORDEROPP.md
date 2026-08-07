@@ -26,11 +26,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `SchedulingType` | `ppopdispatchschedulingtype` |
-| `OperationDispatchDate` | `abap.dats` |
-| `OperationDispatchTime` | `abap.tims` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingType` |  | |  | `ppopdispatchschedulingtype` |
+| `OperationDispatchDate` |  | |  | `dats` |
+| `OperationDispatchTime` |  | |  | `tims` |
 
 ## Source Code
 

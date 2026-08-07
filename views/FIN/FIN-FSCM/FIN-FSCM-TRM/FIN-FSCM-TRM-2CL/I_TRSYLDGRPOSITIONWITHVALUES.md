@@ -28,161 +28,161 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `TreasuryValuationArea` | `_PositionIdentifier.TreasuryValuationArea` |
-| `TreasuryValuationClass` | `_PositionIdentifier.TreasuryValuationClass` |
-| `CompanyCode` | `_PositionIdentifier.CompanyCode` |
-| `SecurityAccount` | `_PositionIdentifier.SecurityAccount` |
-| `SecurityClass` | `_PositionIdentifier.SecurityClass` |
-| `TreasuryPositionLotUUID` | `_PositionIdentifier.TreasuryPositionLotUUID` |
-| `FinancialTransaction` | `_PositionIdentifier.FinancialTransaction` |
-| `FinancialExposureItem` | `_PositionIdentifier.FinancialExposureItem` |
-| `FinancialExposureSubItem` | `_PositionIdentifier.FinancialExposureSubItem` |
-| `FinancialInstrValuationClass` | `_PositionIdentifier.FinancialInstrValuationClass` |
-| `DifferentiationPortfolio` | `_PositionIdentifier.DifferentiationPortfolio` |
-| `SecurityAccountGroup` | `_PositionIdentifier.SecurityAccountGroup` |
-| `TreasuryPositionLongShortCode` | `_PositionIdentifier.TreasuryPositionLongShortCode` |
-| `FinancialInstrumentProductType` | `_PositionIdentifier.FinancialInstrumentProductType` |
-| `Fund` | `_PositionIdentifier.Fund` |
-| `GrantID` | `_PositionIdentifier.GrantID` |
-| `WBSElementExternalID` | `_PositionIdentifier._WBSElementBasicData.WBSElementExternalID` |
-| `FunctionalArea` | `_PositionIdentifier.FunctionalArea` |
-| `TrsyPosCustomDiffntnTerm1` | `_PositionIdentifier.TrsyPosCustomDiffntnTerm1` |
-| `TrsyPosCustomDiffntnTerm2` | `_PositionIdentifier.TrsyPosCustomDiffntnTerm2` |
-| `TrsyPosCustomDiffntnTerm3` | `_PositionIdentifier.TrsyPosCustomDiffntnTerm3` |
-| `TrsyPosCustomDiffntnTerm4` | `_PositionIdentifier.TrsyPosCustomDiffntnTerm4` |
-| `TrsyPosCustomDiffntnTerm5` | `_PositionIdentifier.TrsyPosCustomDiffntnTerm5` |
-| `TreasuryPosAssetLiabilityCode` | `cast( _TrsyLedgerPosition.TreasuryPosAssetLiabilityCode as ftr_gen_asset_liability_code preserving type )` |
-| `TrsyPosManagementProcedure` | `_TrsyLedgerPosition.TrsyPosManagementProcedure` |
-| `TreasuryPositionZeroDate` | `_TrsyLedgerPosition.TreasuryPositionZeroDate` |
-| `TreasuryPosition` | `cast(Deriv_Pos_Comp_Accu.position_oid as ftr_gen_position_uuid preserving type)` |
-| `NominalCurrency` | `cast(max(cast(Deriv_Pos_Comp_Accu.nominal_curr as char5)) as ftr_gen_nominal_currency)` |
-| `DesignatedNominalCurrency` | `cast(max(cast(Deriv_Pos_Comp_Accu.des_nominal_curr as char5)) as ftr_gen_nominal_currency)` |
-| `ValuationCurrency` | `cast(Deriv_Pos_Comp_Accu.valuation_curr as ftr_gen_valuation_currency preserving type)` |
-| `PositionCurrency` | `cast(Deriv_Pos_Comp_Accu.position_curr as ftr_gen_position_crcy preserving type)` |
-| `QuantityInPieces` | `cast(sum(Deriv_Pos_Comp_Accu.units) as ftr_gen_quantity_in_units)` |
-| `NominalAmountInNominalCurrency` | `cast(sum(nominal_amt) as tpm_nominal_amt preserving type)` |
-| `OriglNominalAmtInNominalCrcy` | `cast(sum(nominal_org_amt) as ftr_gen_nominal_amount_orig)` |
-| `DesignatedAmountInNominalCrcy` | `cast(sum(des_nominal_amt) as tpm_nominal_amt preserving type)` |
-| `DesignatedOrigAmtInNominalCrcy` | `cast(sum(des_nominal_org_amt) as ftr_gen_nominal_amount_orig)` |
-| `ClearingAmountInPositionCrcy` | `cast(sum(PC_1000) as ftr_gen_internal_clearing_pc)` |
-| `ClearingAmountInValuationCrcy` | `cast(sum(VC_1000) as ftr_gen_internal_clearing_vc)` |
-| `PurchaseValueInPositionCrcy` | `cast(sum(PC_1001) as ftr_gen_purch_pc)` |
-| `PurchaseValueInValuationCrcy` | `cast(sum(VC_1001) as ftr_gen_purch_vc)` |
-| `SecurityValuationAmtInPosCrcy` | `cast(sum(PC_1002) as ftr_gen_val_ti_pc)` |
-| `SecurityValuationAmtInValnCrcy` | `cast(sum(VC_1002) as ftr_gen_val_ti_vc)` |
-| `ForeignCrcyValnAmtInValnCrcy` | `cast(sum(VC_1003) as ftr_gen_val_fx_vc)` |
-| `CostInPositionCurrency` | `cast(sum(PC_1004) as ftr_gen_charge_pc)` |
-| `CostInValuationCurrency` | `cast(sum(VC_1004) as ftr_gen_charge_vc)` |
-| `SecurityCostValnAmtInPosCrcy` | `cast(sum(PC_1005) as ftr_gen_val_ch_ti_pc)` |
-| `SecurityCostValnAmtInValnCrcy` | `cast(sum(VC_1005) as ftr_gen_val_ch_ti_vc)` |
-| `FrgnExchCostValnAmtInValnCrcy` | `cast(sum(VC_1006) as ftr_gen_val_ch_fx_vc)` |
-| `AmortizationAmtInPositionCrcy` | `cast(sum(PC_1007) as ftr_gen_amort_pc)` |
-| `AmortizationAmtInValuationCrcy` | `cast(sum(VC_1007) as ftr_gen_amort_vc)` |
-| `ClrdPremDiscDefrlTxCompnAmount` | `cast(sum(PC_1008) as ftr_gen_disagio_pc)` |
-| `ClrdPremDiscDefrlAmtInValnCrcy` | `cast(sum(VC_1008) as ftr_gen_disagio_vc)` |
-| `IndexValuationAmountInPosCrcy` | `cast(sum(PC_1009) as ftr_gen_val_idx_pc)` |
-| `IndexValuationAmountInValnCrcy` | `cast(sum(VC_1009) as ftr_gen_val_idx_vc)` |
-| `PurValDeferralItmAmtInPosCrcy` | `cast(sum(PC_1010) as ftr_gen_deferral_item_pv_pc)` |
-| `PurValDeferralItmAmtInValnCrcy` | `cast(sum(VC_1010) as ftr_gen_deferral_item_pv_vc)` |
-| `FXValnAmtzdAcqnAmtInValnCrcy` | `cast(sum(VC_1011) as ftr_gen_val_fx_amaqu_val_vc)` |
-| `VariationMarginAmountInPosCrcy` | `cast(sum(PC_1012) as ftr_gen_varmar_pc)` |
-| `VariationMarginAmtInValnCrcy` | `cast(sum(VC_1012) as ftr_gen_varmar_vc)` |
-| `OCISecurityValnAmountInPosCrcy` | `cast(sum(PC_1013) as ftr_gen_val_ti_npl_pc)` |
-| `OCIScrtyValnAmountInValnCrcy` | `cast(sum(VC_1013) as ftr_gen_val_ti_npl_vc)` |
-| `OCIFrgnExchValnAmtInValnCrcy` | `cast(sum(VC_1014) as ftr_gen_val_fx_npl_vc)` |
-| `OCIIndexValnAmountInPosCrcy` | `cast(sum(PC_1015) as ftr_gen_val_idx_npl_pc)` |
-| `OCIIndexValnAmountInValnCrcy` | `cast(sum(VC_1015) as ftr_gen_val_idx_npl_vc)` |
-| `OCIScrtyCostValnAmtInPosCrcy` | `cast(sum(PC_1016) as ftr_gen_val_ch_ti_npl_pc)` |
-| `OCIScrtyCostValnAmtInValnCrcy` | `cast(sum(VC_1016) as ftr_gen_val_ch_ti_npl_vc)` |
-| `OCICostFXValnAmountInValnCrcy` | `cast(sum(VC_1017) as ftr_gen_val_ch_fx_npl_vc)` |
-| `AccruedInterestInPositionCrcy` | `cast(sum(PC_1018) as ftr_gen_comp_acc_interest_pc)` |
-| `AccruedInterestInValuationCrcy` | `cast(sum(VC_1018) as ftr_gen_comp_acc_interest_vc)` |
-| `NegttnSpreadAmtznAmtInPosCrcy` | `cast(sum(PC_1019) as ftr_gen_amort_neg_spread_pc)` |
-| `NegttnSpreadAmtznAmtInValnCrcy` | `cast(sum(VC_1019) as ftr_gen_amort_neg_spread_vc)` |
-| `CumltvRepaymentAmountInPosCrcy` | `cast(sum(PC_1020) as ftr_gen_repayment_pc)` |
-| `CumltvRepaymentAmtInValnCrcy` | `cast(sum(VC_1020) as ftr_gen_repayment_vc)` |
-| `CnsldtdScrtyGainAmtInPosCrcy` | `cast(sum(PC_1021) as ftr_gen_cons_gains_ti_pc)` |
-| `CnsldtdScrtyGainAmtInValnCrcy` | `cast(sum(VC_1021) as ftr_gen_cons_gains_ti_vc)` |
-| `CnsldtdScrtyLossAmtInPosCrcy` | `cast(sum(PC_1022) as ftr_gen_cons_losses_ti_pc)` |
-| `CnsldtdScrtyLossAmtInValnCrcy` | `cast(sum(VC_1022) as ftr_gen_cons_losses_ti_vc)` |
-| `CnsldtdForExGainAmtInValnCrcy` | `cast(sum(VC_1023) as ftr_gen_cons_gains_fx_vc)` |
-| `CnsldtdForExLossAmtInValnCrcy` | `cast(sum(VC_1024) as ftr_gen_cons_losses_fx_vc)` |
-| `GainValueAdjmtAmountInPosCrcy` | `cast(sum(PC_1025) as ftr_gen_vad_gain_pc)` |
-| `GainValueAdjmtAmountInValnCrcy` | `cast(sum(VC_1025) as ftr_gen_vad_gain_vc)` |
-| `LossValueAdjmtAmountInPosCrcy` | `cast(sum(PC_1026) as ftr_gen_vad_loss_pc)` |
-| `LossValueAdjmtAmountInValnCrcy` | `cast(sum(VC_1026) as ftr_gen_vad_loss_vc)` |
-| `OriginalValueAdjmtAmtInPosCrcy` | `cast(sum(PC_1027) as ftr_gen_orig_vad_pc)` |
-| `OriginalValAdjmtAmtInValnCrcy` | `cast(sum(VC_1027) as ftr_gen_orig_vad_vc)` |
-| `InterestIncomeInPositionCrcy` | `cast(sum(PC_1028) as ftr_gen_int_income_pc)` |
-| `InterestIncomeInValuationCrcy` | `cast(sum(VC_1028) as ftr_gen_int_income_vc)` |
-| `HedgeAmortizationAmtInPosCrcy` | `cast(sum(PC_1029) as ftr_gen_hamort_pc)` |
-| `HedgeAmortizationAmtInValnCrcy` | `cast(sum(VC_1029) as ftr_gen_hamort_vc)` |
-| `FrgnExchValnDiffAmtInValnCrcy` | `cast(sum(VC_1098) as ftr_gen_fx_valuation_diff_vc)` |
-| `CapitalizationRsrvInPosCrcy` | `cast(sum(PC_1099) as ftr_gen_capitalization_res_pc)` |
-| `CapitalizationRsrvInValnCrcy` | `cast(sum(VC_1099) as ftr_gen_capitalization_res_vc)` |
-| `PurCrcySpotValnAmtInValnCrcy` | `cast(sum(VC_1105) as ftr_gen_spotvalp_vc)` |
-| `SaleCrcySpotValnAmtInValnCrcy` | `cast(sum(VC_1106) as ftr_gen_spotvals_vc)` |
-| `SwapAccrualAmountInPosCurrency` | `cast(sum(PC_1107) as ftr_gen_swapacc_pc)` |
-| `SwapAccrualAmountInValnCrcy` | `cast(sum(VC_1107) as ftr_gen_swapacc_vc)` |
-| `SwapValuationAmountInValnCrcy` | `cast(sum(VC_1108) as ftr_gen_swapval_vc)` |
-| `ImpairmentAmountInPositionCrcy` | `cast(sum(PC_1201) as ftr_gen_impmnt_pc)` |
-| `ImpairmentAmtInValuationCrcy` | `cast(sum(VC_1201) as ftr_gen_impmnt_vc)` |
-| `ForeignExchImprmtAmtInValnCrcy` | `cast(sum(VC_1202) as ftr_gen_impmnt_fx_vc)` |
-| `TrsyClsfctnAmtInPosCrcy` | `cast(sum(PC_1300) as ftr_gen_val_amt_to_classify_pc)` |
-| `TrsyClsfctnAmtInValnCrcy` | `cast(sum(VC_1300) as ftr_gen_val_amt_to_classify_vc)` |
-| `EffctvAmtInPosCrcy` | `cast(sum(PC_1302) as ftr_gen_effctv_amt_pc)` |
-| `EffctvAmtInValnCrcy` | `cast(sum(VC_1302) as ftr_gen_effctv_amt_vc)` |
-| `IneffctvAmtInPosCrcy` | `cast(sum(PC_1303) as ftr_gen_ineffctv_amt_pc)` |
-| `IneffctvAmtInValnCrcy` | `cast(sum(VC_1303) as ftr_gen_ineffctv_amt_vc)` |
-| `LossAllowanceAmountInPosCrcy` | `cast(sum(PC_1306) as fti_imp_loss_allow_pc)` |
-| `LossAllowanceAmountInValnCrcy` | `cast(sum(VC_1306) as fti_imp_loss_allow_vc)` |
-| `FXLossAllowanceAmtInValnCrcy` | `cast(sum(VC_1307) as fti_imp_loss_allow_fx_vc)` |
-| `OffstLossAllowanceAmtInPosCrcy` | `cast(sum(PC_1308) as fti_imp_offs_loss_allow_pc)` |
-| `OffsetLossAllwncAmtInValnCrcy` | `cast(sum(VC_1308) as fti_imp_offs_loss_allow_vc)` |
-| `FXOffstLossAllwncAmtInValnCrcy` | `cast(sum(VC_1309) as fti_imp_offs_loss_allow_fx_vc)` |
-| `ContractChangeAmtInPosCrcy` | `cast(sum(PC_1310) as fti_imp_contract_change_pc)` |
-| `ContractChangeAmtInValnCrcy` | `cast(sum(VC_1310) as fti_imp_contract_change_vc)` |
-| `FrgnExchContrChgAmtInValnCrcy` | `cast(sum(VC_1311) as fti_imp_contract_change_fx_vc)` |
-| `OCIOffstLossAllwncAmtInPosCrcy` | `cast(sum(PC_1312) as fti_imp_oci_offs_loss_allow_pc)` |
-| `OCIOffstLossAllwncInValnCrcy` | `cast(sum(VC_1312) as fti_imp_oci_offs_loss_allow_vc)` |
-| `AmtznAdjmtLossAllwncInPosCrcy` | `cast(sum(PC_1314) as fti_imp_amort_adj_la_pc)` |
-| `FXOffstOCILossAllwncInValnCrcy` | `cast(sum(VC_1313) as fti_imp_oci_offs_la_fx_vc)` |
-| `AmtznAdjmtLossAllwncInValnCrcy` | `cast(sum(VC_1314) as fti_imp_amort_adj_la_vc)` |
-| `FXAmtznAdjLossAllwncInValnCrcy` | `cast(sum(VC_1315) as fti_imp_amort_adj_la_fx_vc)` |
-| `EffctvCostHdggRsrvInPosCrcy` | `cast(sum(PC_1322) as ftr_gen_effctv_costhr_pc)` |
-| `EffctvCostHdggRsrvInValnCrcy` | `cast(sum(VC_1322) as ftr_gen_effctv_costhr_vc)` |
-| `IneffctvHdggRsrvPnLInPosCrcy` | `cast(sum(PC_1323) as ftr_gen_ineffctv_hr_tpl_pc)` |
-| `IneffctvHdggRsrvPnLInValnCrcy` | `cast(sum(VC_1323) as ftr_gen_ineffctv_hr_tpl_vc)` |
-| `EffctvHdggRsrvPnLInPosCrcy` | `cast(sum(PC_1324) as ftr_gen_effctv_hr_tpl_pc)` |
-| `EffctvHdggRsrvPnLInValnCrcy` | `cast(sum(VC_1324) as ftr_gen_effctv_hr_tpl_vc)` |
-| `IneffctvCostHdgRsrvPnLPosCrcy` | `cast(sum(PC_1333) as ftr_gen_ineffctv_costhr_tpl_pc)` |
-| `IneffctvCostHdgRsrvPnLValnCrcy` | `cast(sum(VC_1333) as ftr_gen_ineffctv_costhr_tpl_vc)` |
-| `EffctvCostHdgRsrvPnLInPosCrcy` | `cast(sum(PC_1334) as ftr_gen_effctv_costhr_tpl_pc)` |
-| `EffctvCostHdgRsrvPnLInValnCrcy` | `cast(sum(VC_1334) as ftr_gen_effctv_costhr_tpl_vc)` |
-| `PnLDesignatedAmtInPosCrcy` | `cast(sum(PC_1343) as ftr_gen_pnl_desig_pc)` |
-| `PnLDesignatedAmtInVC` | `cast(sum(VC_1343) as ftr_gen_pnl_desig_vc)` |
-| `PnLNonDesignatedAmtInPosCrcy` | `cast(sum(PC_1344) as ftr_gen_pnl_non_desig_pc)` |
-| `PnLNonDesignatedAmtInVC` | `cast(sum(PC_1344) as ftr_gen_pnl_non_desig_vc)` |
-| `AmtznNonDesignatedAmtInPosCrcy` | `cast(sum(PC_1345) as ftr_gen_amort_non_desig_pc)` |
-| `AmtznNonDesignatedAmtInVC` | `cast(sum(PC_1345) as ftr_gen_amort_non_desig_vc)` |
-| `BookValueAmtInPositionCurrency` | `cast(sum(PC_9001) as ftr_gen_book_val_pc)` |
-| `BookValueAmountInValnCurrency` | `cast(sum(VC_9001) as ftr_gen_book_val_vc)` |
-| `CostExcldBookValueAmtInPosCrcy` | `cast(sum(PC_9002) as ftr_gen_book_val_ex_pc)` |
-| `CostExcldBookValAmtInValnCrcy` | `cast(sum(VC_9002) as ftr_gen_book_val_ex_vc)` |
-| `AcquisitionAmtInPositionCrcy` | `cast(sum(PC_9003) as ftr_gen_aqu_val_pc)` |
-| `AcquisitionAmountInValnCrcy` | `cast(sum(VC_9003) as ftr_gen_aqu_val_vc)` |
-| `AmortizedAcqnAmountInPosCrcy` | `cast(sum(PC_9004) as ftr_gen_amaqu_val_pc)` |
-| `AmortizedAcqnAmountInValnCrcy` | `cast(sum(VC_9004) as ftr_gen_amaqu_val_vc)` |
-| `AmortizedCostInPositionCrcy` | `cast(sum(PC_9005) as fti_amort_cost_pc)` |
-| `AmortizedCostInValuationCrcy` | `cast(sum(VC_9005) as fti_amort_cost_vc)` |
-| `_NominalCurrency` | *Association* |
-| `_ValuationCurrency` | *Association* |
-| `_PositionCurrency` | *Association* |
-| `_TrsyLedgerPosition` | *Association* |
-| `_PositionIdentifier` | *Association* |
-| `_TrsyLdgrGLAcctAssgmtRef` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TreasuryValuationArea` |  | | `_PositionIdentifier` | `TreasuryValuationArea` |
+| `TreasuryValuationClass` |  | | `_PositionIdentifier` | `TreasuryValuationClass` |
+| `CompanyCode` |  | | `_PositionIdentifier` | `CompanyCode` |
+| `SecurityAccount` |  | | `_PositionIdentifier` | `SecurityAccount` |
+| `SecurityClass` |  | | `_PositionIdentifier` | `SecurityClass` |
+| `TreasuryPositionLotUUID` |  | | `_PositionIdentifier` | `TreasuryPositionLotUUID` |
+| `FinancialTransaction` |  | | `_PositionIdentifier` | `FinancialTransaction` |
+| `FinancialExposureItem` |  | | `_PositionIdentifier` | `FinancialExposureItem` |
+| `FinancialExposureSubItem` |  | | `_PositionIdentifier` | `FinancialExposureSubItem` |
+| `FinancialInstrValuationClass` |  | | `_PositionIdentifier` | `FinancialInstrValuationClass` |
+| `DifferentiationPortfolio` |  | | `_PositionIdentifier` | `DifferentiationPortfolio` |
+| `SecurityAccountGroup` |  | | `_PositionIdentifier` | `SecurityAccountGroup` |
+| `TreasuryPositionLongShortCode` |  | | `_PositionIdentifier` | `TreasuryPositionLongShortCode` |
+| `FinancialInstrumentProductType` |  | | `_PositionIdentifier` | `FinancialInstrumentProductType` |
+| `Fund` |  | | `_PositionIdentifier` | `Fund` |
+| `GrantID` |  | | `_PositionIdentifier` | `GrantID` |
+| `WBSElementExternalID` |  | | `_PositionIdentifier._WBSElementBasicData` | `WBSElementExternalID` |
+| `FunctionalArea` |  | | `_PositionIdentifier` | `FunctionalArea` |
+| `TrsyPosCustomDiffntnTerm1` |  | | `_PositionIdentifier` | `TrsyPosCustomDiffntnTerm1` |
+| `TrsyPosCustomDiffntnTerm2` |  | | `_PositionIdentifier` | `TrsyPosCustomDiffntnTerm2` |
+| `TrsyPosCustomDiffntnTerm3` |  | | `_PositionIdentifier` | `TrsyPosCustomDiffntnTerm3` |
+| `TrsyPosCustomDiffntnTerm4` |  | | `_PositionIdentifier` | `TrsyPosCustomDiffntnTerm4` |
+| `TrsyPosCustomDiffntnTerm5` |  | | `_PositionIdentifier` | `TrsyPosCustomDiffntnTerm5` |
+| `TreasuryPosAssetLiabilityCode` |  | |  | `cast( _TrsyLedgerPosition.TreasuryPosAssetLiabilityCode as ftr_gen_asset_liability_code preserving type )` |
+| `TrsyPosManagementProcedure` |  | | `_TrsyLedgerPosition` | `TrsyPosManagementProcedure` |
+| `TreasuryPositionZeroDate` |  | | `_TrsyLedgerPosition` | `TreasuryPositionZeroDate` |
+| `TreasuryPosition` |  | |  | `cast(Deriv_Pos_Comp_Accu.position_oid as ftr_gen_position_uuid preserving type)` |
+| `NominalCurrency` |  | |  | `cast(max(cast(Deriv_Pos_Comp_Accu.nominal_curr as char5)) as ftr_gen_nominal_currency)` |
+| `DesignatedNominalCurrency` |  | |  | `cast(max(cast(Deriv_Pos_Comp_Accu.des_nominal_curr as char5)) as ftr_gen_nominal_currency)` |
+| `ValuationCurrency` |  | |  | `cast(Deriv_Pos_Comp_Accu.valuation_curr as ftr_gen_valuation_currency preserving type)` |
+| `PositionCurrency` |  | |  | `cast(Deriv_Pos_Comp_Accu.position_curr as ftr_gen_position_crcy preserving type)` |
+| `QuantityInPieces` |  | |  | `cast(sum(Deriv_Pos_Comp_Accu.units) as ftr_gen_quantity_in_units)` |
+| `NominalAmountInNominalCurrency` |  | |  | `cast(sum(nominal_amt) as tpm_nominal_amt preserving type)` |
+| `OriglNominalAmtInNominalCrcy` |  | |  | `cast(sum(nominal_org_amt) as ftr_gen_nominal_amount_orig)` |
+| `DesignatedAmountInNominalCrcy` |  | |  | `cast(sum(des_nominal_amt) as tpm_nominal_amt preserving type)` |
+| `DesignatedOrigAmtInNominalCrcy` |  | |  | `cast(sum(des_nominal_org_amt) as ftr_gen_nominal_amount_orig)` |
+| `ClearingAmountInPositionCrcy` |  | |  | `cast(sum(PC_1000) as ftr_gen_internal_clearing_pc)` |
+| `ClearingAmountInValuationCrcy` |  | |  | `cast(sum(VC_1000) as ftr_gen_internal_clearing_vc)` |
+| `PurchaseValueInPositionCrcy` |  | |  | `cast(sum(PC_1001) as ftr_gen_purch_pc)` |
+| `PurchaseValueInValuationCrcy` |  | |  | `cast(sum(VC_1001) as ftr_gen_purch_vc)` |
+| `SecurityValuationAmtInPosCrcy` |  | |  | `cast(sum(PC_1002) as ftr_gen_val_ti_pc)` |
+| `SecurityValuationAmtInValnCrcy` |  | |  | `cast(sum(VC_1002) as ftr_gen_val_ti_vc)` |
+| `ForeignCrcyValnAmtInValnCrcy` |  | |  | `cast(sum(VC_1003) as ftr_gen_val_fx_vc)` |
+| `CostInPositionCurrency` |  | |  | `cast(sum(PC_1004) as ftr_gen_charge_pc)` |
+| `CostInValuationCurrency` |  | |  | `cast(sum(VC_1004) as ftr_gen_charge_vc)` |
+| `SecurityCostValnAmtInPosCrcy` |  | |  | `cast(sum(PC_1005) as ftr_gen_val_ch_ti_pc)` |
+| `SecurityCostValnAmtInValnCrcy` |  | |  | `cast(sum(VC_1005) as ftr_gen_val_ch_ti_vc)` |
+| `FrgnExchCostValnAmtInValnCrcy` |  | |  | `cast(sum(VC_1006) as ftr_gen_val_ch_fx_vc)` |
+| `AmortizationAmtInPositionCrcy` |  | |  | `cast(sum(PC_1007) as ftr_gen_amort_pc)` |
+| `AmortizationAmtInValuationCrcy` |  | |  | `cast(sum(VC_1007) as ftr_gen_amort_vc)` |
+| `ClrdPremDiscDefrlTxCompnAmount` |  | |  | `cast(sum(PC_1008) as ftr_gen_disagio_pc)` |
+| `ClrdPremDiscDefrlAmtInValnCrcy` |  | |  | `cast(sum(VC_1008) as ftr_gen_disagio_vc)` |
+| `IndexValuationAmountInPosCrcy` |  | |  | `cast(sum(PC_1009) as ftr_gen_val_idx_pc)` |
+| `IndexValuationAmountInValnCrcy` |  | |  | `cast(sum(VC_1009) as ftr_gen_val_idx_vc)` |
+| `PurValDeferralItmAmtInPosCrcy` |  | |  | `cast(sum(PC_1010) as ftr_gen_deferral_item_pv_pc)` |
+| `PurValDeferralItmAmtInValnCrcy` |  | |  | `cast(sum(VC_1010) as ftr_gen_deferral_item_pv_vc)` |
+| `FXValnAmtzdAcqnAmtInValnCrcy` |  | |  | `cast(sum(VC_1011) as ftr_gen_val_fx_amaqu_val_vc)` |
+| `VariationMarginAmountInPosCrcy` |  | |  | `cast(sum(PC_1012) as ftr_gen_varmar_pc)` |
+| `VariationMarginAmtInValnCrcy` |  | |  | `cast(sum(VC_1012) as ftr_gen_varmar_vc)` |
+| `OCISecurityValnAmountInPosCrcy` |  | |  | `cast(sum(PC_1013) as ftr_gen_val_ti_npl_pc)` |
+| `OCIScrtyValnAmountInValnCrcy` |  | |  | `cast(sum(VC_1013) as ftr_gen_val_ti_npl_vc)` |
+| `OCIFrgnExchValnAmtInValnCrcy` |  | |  | `cast(sum(VC_1014) as ftr_gen_val_fx_npl_vc)` |
+| `OCIIndexValnAmountInPosCrcy` |  | |  | `cast(sum(PC_1015) as ftr_gen_val_idx_npl_pc)` |
+| `OCIIndexValnAmountInValnCrcy` |  | |  | `cast(sum(VC_1015) as ftr_gen_val_idx_npl_vc)` |
+| `OCIScrtyCostValnAmtInPosCrcy` |  | |  | `cast(sum(PC_1016) as ftr_gen_val_ch_ti_npl_pc)` |
+| `OCIScrtyCostValnAmtInValnCrcy` |  | |  | `cast(sum(VC_1016) as ftr_gen_val_ch_ti_npl_vc)` |
+| `OCICostFXValnAmountInValnCrcy` |  | |  | `cast(sum(VC_1017) as ftr_gen_val_ch_fx_npl_vc)` |
+| `AccruedInterestInPositionCrcy` |  | |  | `cast(sum(PC_1018) as ftr_gen_comp_acc_interest_pc)` |
+| `AccruedInterestInValuationCrcy` |  | |  | `cast(sum(VC_1018) as ftr_gen_comp_acc_interest_vc)` |
+| `NegttnSpreadAmtznAmtInPosCrcy` |  | |  | `cast(sum(PC_1019) as ftr_gen_amort_neg_spread_pc)` |
+| `NegttnSpreadAmtznAmtInValnCrcy` |  | |  | `cast(sum(VC_1019) as ftr_gen_amort_neg_spread_vc)` |
+| `CumltvRepaymentAmountInPosCrcy` |  | |  | `cast(sum(PC_1020) as ftr_gen_repayment_pc)` |
+| `CumltvRepaymentAmtInValnCrcy` |  | |  | `cast(sum(VC_1020) as ftr_gen_repayment_vc)` |
+| `CnsldtdScrtyGainAmtInPosCrcy` |  | |  | `cast(sum(PC_1021) as ftr_gen_cons_gains_ti_pc)` |
+| `CnsldtdScrtyGainAmtInValnCrcy` |  | |  | `cast(sum(VC_1021) as ftr_gen_cons_gains_ti_vc)` |
+| `CnsldtdScrtyLossAmtInPosCrcy` |  | |  | `cast(sum(PC_1022) as ftr_gen_cons_losses_ti_pc)` |
+| `CnsldtdScrtyLossAmtInValnCrcy` |  | |  | `cast(sum(VC_1022) as ftr_gen_cons_losses_ti_vc)` |
+| `CnsldtdForExGainAmtInValnCrcy` |  | |  | `cast(sum(VC_1023) as ftr_gen_cons_gains_fx_vc)` |
+| `CnsldtdForExLossAmtInValnCrcy` |  | |  | `cast(sum(VC_1024) as ftr_gen_cons_losses_fx_vc)` |
+| `GainValueAdjmtAmountInPosCrcy` |  | |  | `cast(sum(PC_1025) as ftr_gen_vad_gain_pc)` |
+| `GainValueAdjmtAmountInValnCrcy` |  | |  | `cast(sum(VC_1025) as ftr_gen_vad_gain_vc)` |
+| `LossValueAdjmtAmountInPosCrcy` |  | |  | `cast(sum(PC_1026) as ftr_gen_vad_loss_pc)` |
+| `LossValueAdjmtAmountInValnCrcy` |  | |  | `cast(sum(VC_1026) as ftr_gen_vad_loss_vc)` |
+| `OriginalValueAdjmtAmtInPosCrcy` |  | |  | `cast(sum(PC_1027) as ftr_gen_orig_vad_pc)` |
+| `OriginalValAdjmtAmtInValnCrcy` |  | |  | `cast(sum(VC_1027) as ftr_gen_orig_vad_vc)` |
+| `InterestIncomeInPositionCrcy` |  | |  | `cast(sum(PC_1028) as ftr_gen_int_income_pc)` |
+| `InterestIncomeInValuationCrcy` |  | |  | `cast(sum(VC_1028) as ftr_gen_int_income_vc)` |
+| `HedgeAmortizationAmtInPosCrcy` |  | |  | `cast(sum(PC_1029) as ftr_gen_hamort_pc)` |
+| `HedgeAmortizationAmtInValnCrcy` |  | |  | `cast(sum(VC_1029) as ftr_gen_hamort_vc)` |
+| `FrgnExchValnDiffAmtInValnCrcy` |  | |  | `cast(sum(VC_1098) as ftr_gen_fx_valuation_diff_vc)` |
+| `CapitalizationRsrvInPosCrcy` |  | |  | `cast(sum(PC_1099) as ftr_gen_capitalization_res_pc)` |
+| `CapitalizationRsrvInValnCrcy` |  | |  | `cast(sum(VC_1099) as ftr_gen_capitalization_res_vc)` |
+| `PurCrcySpotValnAmtInValnCrcy` |  | |  | `cast(sum(VC_1105) as ftr_gen_spotvalp_vc)` |
+| `SaleCrcySpotValnAmtInValnCrcy` |  | |  | `cast(sum(VC_1106) as ftr_gen_spotvals_vc)` |
+| `SwapAccrualAmountInPosCurrency` |  | |  | `cast(sum(PC_1107) as ftr_gen_swapacc_pc)` |
+| `SwapAccrualAmountInValnCrcy` |  | |  | `cast(sum(VC_1107) as ftr_gen_swapacc_vc)` |
+| `SwapValuationAmountInValnCrcy` |  | |  | `cast(sum(VC_1108) as ftr_gen_swapval_vc)` |
+| `ImpairmentAmountInPositionCrcy` |  | |  | `cast(sum(PC_1201) as ftr_gen_impmnt_pc)` |
+| `ImpairmentAmtInValuationCrcy` |  | |  | `cast(sum(VC_1201) as ftr_gen_impmnt_vc)` |
+| `ForeignExchImprmtAmtInValnCrcy` |  | |  | `cast(sum(VC_1202) as ftr_gen_impmnt_fx_vc)` |
+| `TrsyClsfctnAmtInPosCrcy` |  | |  | `cast(sum(PC_1300) as ftr_gen_val_amt_to_classify_pc)` |
+| `TrsyClsfctnAmtInValnCrcy` |  | |  | `cast(sum(VC_1300) as ftr_gen_val_amt_to_classify_vc)` |
+| `EffctvAmtInPosCrcy` |  | |  | `cast(sum(PC_1302) as ftr_gen_effctv_amt_pc)` |
+| `EffctvAmtInValnCrcy` |  | |  | `cast(sum(VC_1302) as ftr_gen_effctv_amt_vc)` |
+| `IneffctvAmtInPosCrcy` |  | |  | `cast(sum(PC_1303) as ftr_gen_ineffctv_amt_pc)` |
+| `IneffctvAmtInValnCrcy` |  | |  | `cast(sum(VC_1303) as ftr_gen_ineffctv_amt_vc)` |
+| `LossAllowanceAmountInPosCrcy` |  | |  | `cast(sum(PC_1306) as fti_imp_loss_allow_pc)` |
+| `LossAllowanceAmountInValnCrcy` |  | |  | `cast(sum(VC_1306) as fti_imp_loss_allow_vc)` |
+| `FXLossAllowanceAmtInValnCrcy` |  | |  | `cast(sum(VC_1307) as fti_imp_loss_allow_fx_vc)` |
+| `OffstLossAllowanceAmtInPosCrcy` |  | |  | `cast(sum(PC_1308) as fti_imp_offs_loss_allow_pc)` |
+| `OffsetLossAllwncAmtInValnCrcy` |  | |  | `cast(sum(VC_1308) as fti_imp_offs_loss_allow_vc)` |
+| `FXOffstLossAllwncAmtInValnCrcy` |  | |  | `cast(sum(VC_1309) as fti_imp_offs_loss_allow_fx_vc)` |
+| `ContractChangeAmtInPosCrcy` |  | |  | `cast(sum(PC_1310) as fti_imp_contract_change_pc)` |
+| `ContractChangeAmtInValnCrcy` |  | |  | `cast(sum(VC_1310) as fti_imp_contract_change_vc)` |
+| `FrgnExchContrChgAmtInValnCrcy` |  | |  | `cast(sum(VC_1311) as fti_imp_contract_change_fx_vc)` |
+| `OCIOffstLossAllwncAmtInPosCrcy` |  | |  | `cast(sum(PC_1312) as fti_imp_oci_offs_loss_allow_pc)` |
+| `OCIOffstLossAllwncInValnCrcy` |  | |  | `cast(sum(VC_1312) as fti_imp_oci_offs_loss_allow_vc)` |
+| `AmtznAdjmtLossAllwncInPosCrcy` |  | |  | `cast(sum(PC_1314) as fti_imp_amort_adj_la_pc)` |
+| `FXOffstOCILossAllwncInValnCrcy` |  | |  | `cast(sum(VC_1313) as fti_imp_oci_offs_la_fx_vc)` |
+| `AmtznAdjmtLossAllwncInValnCrcy` |  | |  | `cast(sum(VC_1314) as fti_imp_amort_adj_la_vc)` |
+| `FXAmtznAdjLossAllwncInValnCrcy` |  | |  | `cast(sum(VC_1315) as fti_imp_amort_adj_la_fx_vc)` |
+| `EffctvCostHdggRsrvInPosCrcy` |  | |  | `cast(sum(PC_1322) as ftr_gen_effctv_costhr_pc)` |
+| `EffctvCostHdggRsrvInValnCrcy` |  | |  | `cast(sum(VC_1322) as ftr_gen_effctv_costhr_vc)` |
+| `IneffctvHdggRsrvPnLInPosCrcy` |  | |  | `cast(sum(PC_1323) as ftr_gen_ineffctv_hr_tpl_pc)` |
+| `IneffctvHdggRsrvPnLInValnCrcy` |  | |  | `cast(sum(VC_1323) as ftr_gen_ineffctv_hr_tpl_vc)` |
+| `EffctvHdggRsrvPnLInPosCrcy` |  | |  | `cast(sum(PC_1324) as ftr_gen_effctv_hr_tpl_pc)` |
+| `EffctvHdggRsrvPnLInValnCrcy` |  | |  | `cast(sum(VC_1324) as ftr_gen_effctv_hr_tpl_vc)` |
+| `IneffctvCostHdgRsrvPnLPosCrcy` |  | |  | `cast(sum(PC_1333) as ftr_gen_ineffctv_costhr_tpl_pc)` |
+| `IneffctvCostHdgRsrvPnLValnCrcy` |  | |  | `cast(sum(VC_1333) as ftr_gen_ineffctv_costhr_tpl_vc)` |
+| `EffctvCostHdgRsrvPnLInPosCrcy` |  | |  | `cast(sum(PC_1334) as ftr_gen_effctv_costhr_tpl_pc)` |
+| `EffctvCostHdgRsrvPnLInValnCrcy` |  | |  | `cast(sum(VC_1334) as ftr_gen_effctv_costhr_tpl_vc)` |
+| `PnLDesignatedAmtInPosCrcy` |  | |  | `cast(sum(PC_1343) as ftr_gen_pnl_desig_pc)` |
+| `PnLDesignatedAmtInVC` |  | |  | `cast(sum(VC_1343) as ftr_gen_pnl_desig_vc)` |
+| `PnLNonDesignatedAmtInPosCrcy` |  | |  | `cast(sum(PC_1344) as ftr_gen_pnl_non_desig_pc)` |
+| `PnLNonDesignatedAmtInVC` |  | |  | `cast(sum(PC_1344) as ftr_gen_pnl_non_desig_vc)` |
+| `AmtznNonDesignatedAmtInPosCrcy` |  | |  | `cast(sum(PC_1345) as ftr_gen_amort_non_desig_pc)` |
+| `AmtznNonDesignatedAmtInVC` |  | |  | `cast(sum(PC_1345) as ftr_gen_amort_non_desig_vc)` |
+| `BookValueAmtInPositionCurrency` |  | |  | `cast(sum(PC_9001) as ftr_gen_book_val_pc)` |
+| `BookValueAmountInValnCurrency` |  | |  | `cast(sum(VC_9001) as ftr_gen_book_val_vc)` |
+| `CostExcldBookValueAmtInPosCrcy` |  | |  | `cast(sum(PC_9002) as ftr_gen_book_val_ex_pc)` |
+| `CostExcldBookValAmtInValnCrcy` |  | |  | `cast(sum(VC_9002) as ftr_gen_book_val_ex_vc)` |
+| `AcquisitionAmtInPositionCrcy` |  | |  | `cast(sum(PC_9003) as ftr_gen_aqu_val_pc)` |
+| `AcquisitionAmountInValnCrcy` |  | |  | `cast(sum(VC_9003) as ftr_gen_aqu_val_vc)` |
+| `AmortizedAcqnAmountInPosCrcy` |  | |  | `cast(sum(PC_9004) as ftr_gen_amaqu_val_pc)` |
+| `AmortizedAcqnAmountInValnCrcy` |  | |  | `cast(sum(VC_9004) as ftr_gen_amaqu_val_vc)` |
+| `AmortizedCostInPositionCrcy` |  | |  | `cast(sum(PC_9005) as fti_amort_cost_pc)` |
+| `AmortizedCostInValuationCrcy` |  | |  | `cast(sum(VC_9005) as fti_amort_cost_vc)` |
+| `_NominalCurrency` | | ✓ | | |
+| `_ValuationCurrency` | | ✓ | | |
+| `_PositionCurrency` | | ✓ | | |
+| `_TrsyLedgerPosition` | | ✓ | | |
+| `_PositionIdentifier` | | ✓ | | |
+| `_TrsyLdgrGLAcctAssgmtRef` | | ✓ | | |
 
 ## Associations
 

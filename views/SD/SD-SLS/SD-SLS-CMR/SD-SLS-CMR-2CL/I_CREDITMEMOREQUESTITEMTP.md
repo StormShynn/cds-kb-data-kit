@@ -31,59 +31,59 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequest` | `CreditMemoRequestItem.CreditMemoRequest` |
-| key `CreditMemoRequestItem` | `CreditMemoRequestItem.CreditMemoRequestItem` |
-| `HigherLevelItem` | `CreditMemoRequestItem.HigherLevelItem` |
-| `CreditMemoRequestItemCategory` | `CreditMemoRequestItem.CreditMemoRequestItemCategory` |
-| `CreditMemoRequestItemText` | `CreditMemoRequestItem.CreditMemoRequestItemText` |
-| `PurchaseOrderByCustomer` | `CreditMemoRequestItem.PurchaseOrderByCustomer` |
-| `Product` | `CreditMemoRequestItem.Product` |
-| `MaterialByCustomer` | `CreditMemoRequestItem.MaterialByCustomer` |
-| `ProductGroup` | `CreditMemoRequestItem.ProductGroup` |
-| `MaterialPricingGroup` | `CreditMemoRequestItem.MaterialPricingGroup` |
-| `Batch` | `CreditMemoRequestItem.Batch` |
-| `PricingDate` | `CreditMemoRequestItem.PricingDate` |
-| `RequestedQuantity` | `CreditMemoRequestItem.RequestedQuantity` |
-| `RequestedQuantityUnit` | `CreditMemoRequestItem.RequestedQuantityUnit` |
-| `NetAmount` | `CreditMemoRequestItem.NetAmount` |
-| `TransactionCurrency` | `CreditMemoRequestItem.TransactionCurrency` |
-| `ItemBillingBlockReason` | `CreditMemoRequestItem.ItemBillingBlockReason` |
-| `Plant` | `CreditMemoRequestItem.Plant` |
-| `TargetQuantity` | `CreditMemoRequestItem.TargetQuantity` |
-| `TargetQuantityUnit` | `CreditMemoRequestItem.TargetQuantityUnit` |
-| `ItemGrossWeight` | `CreditMemoRequestItem.ItemGrossWeight` |
-| `ItemNetWeight` | `CreditMemoRequestItem.ItemNetWeight` |
-| `ItemWeightUnit` | `CreditMemoRequestItem.ItemWeightUnit` |
-| `ItemVolume` | `CreditMemoRequestItem.ItemVolume` |
-| `ItemVolumeUnit` | `CreditMemoRequestItem.ItemVolumeUnit` |
-| `ServicesRenderedDate` | `CreditMemoRequestItem.ServicesRenderedDate` |
-| `SalesDocumentRjcnReason` | `CreditMemoRequestItem.SalesDocumentRjcnReason` |
-| `TaxAmount` | `CreditMemoRequestItem.TaxAmount` |
-| `IncotermsClassification` | `CreditMemoRequestItem.IncotermsClassification` |
-| `IncotermsLocation1` | `CreditMemoRequestItem.IncotermsLocation1` |
-| `IncotermsLocation2` | `CreditMemoRequestItem.IncotermsLocation2` |
-| `IncotermsVersion` | `CreditMemoRequestItem.IncotermsVersion` |
-| `BillingDocumentDate` | `CreditMemoRequestItem.BillingDocumentDate` |
-| `CustomerPaymentTerms` | `CreditMemoRequestItem.CustomerPaymentTerms` |
-| `ProfitCenter` | `CreditMemoRequestItem.ProfitCenter` |
-| `ReferenceSDDocument` | `CreditMemoRequestItem.ReferenceSDDocument` |
-| `ReferenceSDDocumentItem` | `CreditMemoRequestItem.ReferenceSDDocumentItem` |
-| `SDProcessStatus` | `CreditMemoRequestItem.SDProcessStatus` |
-| `OrderRelatedBillingStatus` | `CreditMemoRequestItem.OrderRelatedBillingStatus` |
-| `BillingBlockStatus` | `CreditMemoRequestItem.BillingBlockStatus` |
-| `ItemGeneralIncompletionStatus` | `CreditMemoRequestItem.ItemGeneralIncompletionStatus` |
-| `SDDocumentRejectionStatus` | `CreditMemoRequestItem.SDDocumentRejectionStatus` |
-| `TotalSDDocReferenceStatus` | `CreditMemoRequestItem.TotalSDDocReferenceStatus` |
-| `CreditMemoRequestType` | `CreditMemoRequestItem.CreditMemoRequestType` |
-| `OrganizationDivision` | `CreditMemoRequestItem.OrganizationDivision` |
-| `SalesOrganization` | `CreditMemoRequestItem.SalesOrganization` |
-| `DistributionChannel` | `CreditMemoRequestItem.DistributionChannel` |
-| `_CreditMemoRequest` | *Association* |
-| `_ItemPartner` | *Association* |
-| `_ItemText` | *Association* |
-| `_ItemPricingElement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequest` | ✓ | |  |  |
+| `CreditMemoRequestItem` | ✓ | |  |  |
+| `HigherLevelItem` |  | |  |  |
+| `CreditMemoRequestItemCategory` |  | |  |  |
+| `CreditMemoRequestItemText` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `Product` |  | |  |  |
+| `MaterialByCustomer` |  | |  |  |
+| `ProductGroup` |  | |  |  |
+| `MaterialPricingGroup` |  | |  |  |
+| `Batch` |  | |  |  |
+| `PricingDate` |  | |  |  |
+| `RequestedQuantity` |  | |  |  |
+| `RequestedQuantityUnit` |  | |  |  |
+| `NetAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ItemBillingBlockReason` |  | |  |  |
+| `Plant` |  | |  |  |
+| `TargetQuantity` |  | |  |  |
+| `TargetQuantityUnit` |  | |  |  |
+| `ItemGrossWeight` |  | |  |  |
+| `ItemNetWeight` |  | |  |  |
+| `ItemWeightUnit` |  | |  |  |
+| `ItemVolume` |  | |  |  |
+| `ItemVolumeUnit` |  | |  |  |
+| `ServicesRenderedDate` |  | |  |  |
+| `SalesDocumentRjcnReason` |  | |  |  |
+| `TaxAmount` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `BillingDocumentDate` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `ReferenceSDDocument` |  | |  |  |
+| `ReferenceSDDocumentItem` |  | |  |  |
+| `SDProcessStatus` |  | |  |  |
+| `OrderRelatedBillingStatus` |  | |  |  |
+| `BillingBlockStatus` |  | |  |  |
+| `ItemGeneralIncompletionStatus` |  | |  |  |
+| `SDDocumentRejectionStatus` |  | |  |  |
+| `TotalSDDocReferenceStatus` |  | |  |  |
+| `CreditMemoRequestType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `_CreditMemoRequest` | | ✓ | | |
+| `_ItemPartner` | | ✓ | | |
+| `_ItemText` | | ✓ | | |
+| `_ItemPricingElement` | | ✓ | | |
 
 ## Source Code
 

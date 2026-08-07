@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankReconciliationStatus` | `cast(left(domvalue_l,1) as epic_br_rcon_status preserving type )` |
-| key `Language` | `cast(ddlanguage as spras preserving type )` |
-| `BankReconciliationStatusName` | `cast(ddtext as epic_br_rcon_status_txt preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankReconciliationStatus` | ✓ | |  | `cast(left(domvalue_l,1) as epic_br_rcon_status preserving type )` |
+| `Language` | ✓ | |  | `cast(ddlanguage as spras preserving type )` |
+| `BankReconciliationStatusName` |  | |  | `cast(ddtext as epic_br_rcon_status_txt preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

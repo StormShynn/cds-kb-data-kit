@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `FinancialManagementArea` | `cast( _Source.FinancialManagementArea as fincs_financialmanagementarea preserving type )` |
-| `FinancialManagementAreaName` | `cast( _Source.FinancialManagementAreaName as fincs_finmanagementareaname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_FinancialManagementArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `FinancialManagementArea` | ✓ | |  | `cast( _Source.FinancialManagementArea as fincs_financialmanagementarea preserving type )` |
+| `FinancialManagementAreaName` |  | |  | `cast( _Source.FinancialManagementAreaName as fincs_finmanagementareaname preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_FinancialManagementArea` | | ✓ | | |
 
 ## Associations
 

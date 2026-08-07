@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `OneTimePartner.docnum` |
-| key `BR_PartnerFunction` | `OneTimePartner.parvw` |
-| `BusinessPartnerName1` | `OneTimePartner.name1` |
-| `BusinessPartnerName2` | `OneTimePartner.name2` |
-| `BR_PartnerCNPJ` | `OneTimePartner.stcd1` |
-| `BR_PartnerCPF` | `OneTimePartner.stcd2` |
-| `BR_PartnerStateTaxNumberST` | `OneTimePartner.j_1bstains` |
-| `BusinessPartnerTaxJurisdiction` | `OneTimePartner.taxjurcode` |
-| `BusinessPartnerStreetNameOnly` | `OneTimePartner.street` |
-| `BusinessPartnerStreetName` | `OneTimePartner.stras` |
-| `BusinessPartnerHouseNumber` | `OneTimePartner.house_num1` |
-| `BPHsNmbrSuplmntTxt` | `OneTimePartner.house_num2` |
-| `BusinessPartnerDistrict` | `OneTimePartner.city2` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_PartnerFunction` | ✓ | |  | `parvw` |
+| `BusinessPartnerName1` |  | |  | `name1` |
+| `BusinessPartnerName2` |  | |  | `name2` |
+| `BR_PartnerCNPJ` |  | |  | `stcd1` |
+| `BR_PartnerCPF` |  | |  | `stcd2` |
+| `BR_PartnerStateTaxNumberST` |  | |  | `j_1bstains` |
+| `BusinessPartnerTaxJurisdiction` |  | |  | `taxjurcode` |
+| `BusinessPartnerStreetNameOnly` |  | |  | `street` |
+| `BusinessPartnerStreetName` |  | |  | `stras` |
+| `BusinessPartnerHouseNumber` |  | |  | `house_num1` |
+| `BPHsNmbrSuplmntTxt` |  | |  | `house_num2` |
+| `BusinessPartnerDistrict` |  | |  | `city2` |
 
 ## Source Code
 

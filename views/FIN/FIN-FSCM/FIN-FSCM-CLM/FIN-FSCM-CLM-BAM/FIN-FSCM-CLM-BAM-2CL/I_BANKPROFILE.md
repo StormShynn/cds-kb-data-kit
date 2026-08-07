@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Bank` | `Bank.Bank` |
-| key `BankCountry` | `Bank.BankCountry` |
-| `BankName` | `BankName` |
-| `CreditRating` | `CreditRating` |
-| `NumberOfBankAccounts` | `NumberOfBankAccounts` |
-| `NumberOfCompanyCodes` | `NumberOfCompanyCodes` |
-| `NrOfBanksRated` | `1` |
-| `_Country` | *Association* |
-| `_BPCreditWorthinessRating` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Bank` | ✓ | |  |  |
+| `BankCountry` | ✓ | |  |  |
+| `BankName` |  | |  |  |
+| `CreditRating` |  | |  |  |
+| `NumberOfBankAccounts` |  | |  |  |
+| `NumberOfCompanyCodes` |  | |  |  |
+| `NrOfBanksRated` |  | |  | `1` |
+| `_Country` | | ✓ | | |
+| `_BPCreditWorthinessRating` | | ✓ | | |
 
 ## Source Code
 

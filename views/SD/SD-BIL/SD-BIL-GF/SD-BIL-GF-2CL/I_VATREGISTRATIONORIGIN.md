@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `VATRegistrationOrigin` | `cast(substring(dd07l.domvalue_l, 1, 1) as stceg_h preserving type )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `VATRegistrationOrigin` | ✓ | |  | `cast(substring(dd07l.domvalue_l, 1, 1) as stceg_h preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

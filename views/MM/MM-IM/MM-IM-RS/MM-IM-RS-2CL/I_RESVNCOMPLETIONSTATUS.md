@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReservationCompletionStatus` | `cast ( dd07l.domvalue_l as imrs_resvn_compltn_status_code )` |
-| `DomainValue` | `dd07l.domvalue_l` |
-| `_ResvnCompletionStatusText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReservationCompletionStatus` | ✓ | |  | `cast ( dd07l.domvalue_l as imrs_resvn_compltn_status_code )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_ResvnCompletionStatusText` | | ✓ | | |
 
 ## Associations
 

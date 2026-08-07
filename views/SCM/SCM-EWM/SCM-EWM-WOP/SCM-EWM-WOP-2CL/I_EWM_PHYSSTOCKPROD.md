@@ -28,99 +28,99 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ParentHandlingUnitUUID` | `ParentHandlingUnitUUID` |
-| key `StockItemUUID` | `StockItemUUID` |
-| `EWMWarehouse` | `EWMWarehouse` |
-| `Product` | `Product` |
-| `EWMStockType` | `EWMStockType` |
-| `EWMStockOwner` | `EWMStockOwner` |
-| `EntitledToDisposeParty` | `EntitledToDisposeParty` |
-| `EWMStockUsage` | `EWMStockUsage` |
-| `Batch` | `Batch` |
-| `StockDocumentCategory` | `StockDocumentCategory` |
-| `ExternalStockDocumentNumber` | `( case StockDocumentCategory when 'SOS' then cast( ltrim( StockDocumentNumber, '0' ) as /scwm/de_stock_docno preserving type ) when 'PJS' then _WBSElement.WBSElementExternalID else '' end )` |
-| `StockItemNumber` | `StockItemNumber` |
-| `EWMWorkInProcess` | `EWMWorkInProcess` |
-| `EWMStockReferenceDocCategory` | `EWMStockReferenceDocCategory` |
-| `EWMStockReferenceDocument` | `case EWMStockReferenceDocCategory when 'PDI' then cast(_WarehouseRequestInbHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PDO' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'SPC' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'WMR' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PWR' then cast(_WhseReqProdnMatlReqHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) end` |
-| `EWMStockReferenceDocumentItem` | `case EWMStockReferenceDocCategory when 'PDI' then cast(_InbDeliveryItem.EWMInboundDeliveryItem as ewm_de_referencedocumentitem preserving type ) when 'PDO' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'SPC' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'WMR' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'PWR' then cast(_WhseReqProdnMatlReqItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) end` |
-| `StockIdentificationNumber` | `StockIdentificationNumber` |
-| `WhseQualityInspectionType` | `WhseQualityInspectionType` |
-| `QualityInspectionDocument` | `_QualityInspection.QualityInspectionDocument` |
-| `EWMStorageBin` | `EWMStorageBin` |
-| `HandlingUnitNumber` | `HandlingUnitNumber` |
-| `EWMResource` | `EWMResource` |
-| `TranspUnitInternalNumber` | `TranspUnitInternalNumber` |
-| `EWMStockIndexCode` | `EWMStockIndexCode` |
-| `ProductUUID` | `ProductUUID` |
-| `BatchUUID` | `BatchUUID` |
-| `EWMDocumentCategory` | `EWMDocumentCategory` |
-| `StockDocumentNumber` | `StockDocumentNumber` |
-| `EWMStockQuantityInBaseUnit` | `EWMStockQuantityInBaseUnit` |
-| `EWMStockQuantityBaseUnit` | `EWMStockQuantityBaseUnit` |
-| `EWMStockQtyBaseUnitISOCode` | `EWMStockQtyBaseUnitISOCode` |
-| `EWMStockQtyBaseUnitSAPCode` | `EWMStockQtyBaseUnitSAPCode` |
-| `EWMStockQuantityAltvUnit` | `EWMStockQuantityAltvUnit` |
-| `EWMStockQtyAltvUnitISOCode` | `EWMStockQtyAltvUnitISOCode` |
-| `EWMStockQtyAltvUnitSAPCode` | `EWMStockQtyAltvUnitSAPCode` |
-| `EWMLoadingOrNetWeight` | `EWMLoadingOrNetWeight` |
-| `EWMLoadingOrNetWeightUnit` | `EWMLoadingOrNetWeightUnit` |
-| `EWMLoadgOrNetWgtUntISOCode` | `EWMLoadgOrNetWgtUntISOCode` |
-| `EWMLoadgOrNetWgtUntSAPCode` | `EWMLoadgOrNetWgtUntSAPCode` |
-| `EWMLoadingOrNetVolume` | `EWMLoadingOrNetVolume` |
-| `EWMLoadingOrNetVolumeUnit` | `EWMLoadingOrNetVolumeUnit` |
-| `EWMLoadgOrNetVolUntISOCode` | `EWMLoadgOrNetVolUntISOCode` |
-| `EWMLoadgOrNetVolUntSAPCode` | `EWMLoadgOrNetVolUntSAPCode` |
-| `EWMStorageBinCapConsumptionVal` | `EWMStorageBinCapConsumptionVal` |
-| `ShelfLifeExpirationDate` | `ShelfLifeExpirationDate` |
-| `CountryOfOrigin` | `CountryOfOrigin` |
-| `EWMBatchIsInRestrictedUseStock` | `EWMBatchIsInRestrictedUseStock` |
-| `StockSegment` | `P_EWM_PhysStockProd03.StockSegment` |
-| `QualityInspectionDocUUID` | `QualityInspectionDocUUID` |
-| `InspectionPartialLot` | `_QualityInspection.InspectionPartialLot` |
-| `EWMStockRefDocumentUUID` | `EWMStockRefDocumentUUID` |
-| `EWMStockRefDocItemUUID` | `EWMStockRefDocItemUUID` |
-| `EWMValuationQuantity` | `EWMValuationQuantity` |
-| `EWMValuationQuantityUnit` | `EWMValuationQuantityUnit` |
-| `EWMValuationQtyUnitISOCode` | `EWMValuationQtyUnitISOCode` |
-| `EWMValuationQtyUnitSAPCode` | `EWMValuationQtyUnitSAPCode` |
-| `EWMValuationQuantityStatus` | `EWMValuationQuantityStatus` |
-| `EWMStockIsBlockedForInventory` | `EWMStockIsBlockedForInventory` |
-| `EWMConsolidationGroup` | `EWMConsolidationGroup` |
-| `SerialNumberRequiredLevel` | `SerialNumberRequiredLevel` |
-| `EWMGoodsReceiptDateTime` | `EWMGoodsReceiptDateTime` |
-| `WarehouseTimeZone` | `WarehouseTimeZone` |
-| `EWMStorageType` | `EWMStorageType` |
-| `EWMStorageSection` | `_StorageBin.EWMStorageSection` |
-| `EWMStorBinIsBlockedForPutaway` | `cast( _StorageBin.EWMStorBinIsBlockedForPutaway as ewm_de_binblockedforputaway preserving type )` |
-| `EWMStorBinIsBlockedForRemoval` | `cast( _StorageBin.EWMStorBinIsBlockedForRemoval as ewm_de_binblockedforremoval preserving type )` |
-| `EWMStorBinIsBlockedDueToPInv` | `cast( _StorageBin.EWMStorBinIsBlockedDueToPInv as ewm_de_storbinisblkdduetopinv preserving type )` |
-| `EWMHghstLvlHandlingUnitNumber` | `EWMHghstLvlHandlingUnitNumber` |
-| `EWMLocationType` | `EWMLocationType` |
-| `EWMParentLocationIndexCode` | `EWMParentLocationIndexCode` |
-| `_StorageSectionText` | *Association* |
-| `_LocationTypeText` | *Association* |
-| `_CountryText` | *Association* |
-| `_EWMDocumentCategoryText` | *Association* |
-| `_EWMEntitledToDisposePartyText` | *Association* |
-| `_EWMStockOwnerText` | *Association* |
-| `_EWMStockRefDocCategoryText` | *Association* |
-| `_EWMStockTypeText` | *Association* |
-| `_EWMStockUsageText` | *Association* |
-| `_EWMValuationQtyStatusText` | *Association* |
-| `_ProductText` | *Association* |
-| `_SerialNumberRequiredLevelText` | *Association* |
-| `_StockDocCategoryText` | *Association* |
-| `_UnitOfMeasureAlternativeUnit` | *Association* |
-| `_UnitOfMeasureBaseUnit` | *Association* |
-| `_UnitOfMeasureNetVolumeUoM` | *Association* |
-| `_UnitOfMeasureNetWeightUoM` | *Association* |
-| `_UnitOfMeasureValnQtyUnit` | *Association* |
-| `_WarehouseText` | *Association* |
-| `_WhseQualityInspectionTypeText` | *Association* |
-| `_StorageTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ParentHandlingUnitUUID` | ✓ | |  |  |
+| `StockItemUUID` | ✓ | |  |  |
+| `EWMWarehouse` |  | |  |  |
+| `Product` |  | |  |  |
+| `EWMStockType` |  | |  |  |
+| `EWMStockOwner` |  | |  |  |
+| `EntitledToDisposeParty` |  | |  |  |
+| `EWMStockUsage` |  | |  |  |
+| `Batch` |  | |  |  |
+| `StockDocumentCategory` |  | |  |  |
+| `ExternalStockDocumentNumber` |  | |  | `( case StockDocumentCategory when 'SOS' then cast( ltrim( StockDocumentNumber, '0' ) as /scwm/de_stock_docno preserving type ) when 'PJS' then _WBSElement.WBSElementExternalID else '' end )` |
+| `StockItemNumber` |  | |  |  |
+| `EWMWorkInProcess` |  | |  |  |
+| `EWMStockReferenceDocCategory` |  | |  |  |
+| `EWMStockReferenceDocument` |  | |  | `case EWMStockReferenceDocCategory when 'PDI' then cast(_WarehouseRequestInbHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PDO' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'SPC' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'WMR' then cast(_WarehouseRequestOutHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) when 'PWR' then cast(_WhseReqProdnMatlReqHdr.EWMWarehouseRequest as ewm_de_referencedocument preserving type ) end` |
+| `EWMStockReferenceDocumentItem` |  | |  | `case EWMStockReferenceDocCategory when 'PDI' then cast(_InbDeliveryItem.EWMInboundDeliveryItem as ewm_de_referencedocumentitem preserving type ) when 'PDO' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'SPC' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'WMR' then cast(_WarehouseRequestOutItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) when 'PWR' then cast(_WhseReqProdnMatlReqItem.EWMWarehouseRequestItem as ewm_de_referencedocumentitem preserving type ) end` |
+| `StockIdentificationNumber` |  | |  |  |
+| `WhseQualityInspectionType` |  | |  |  |
+| `QualityInspectionDocument` |  | | `_QualityInspection` | `QualityInspectionDocument` |
+| `EWMStorageBin` |  | |  |  |
+| `HandlingUnitNumber` |  | |  |  |
+| `EWMResource` |  | |  |  |
+| `TranspUnitInternalNumber` |  | |  |  |
+| `EWMStockIndexCode` |  | |  |  |
+| `ProductUUID` |  | |  |  |
+| `BatchUUID` |  | |  |  |
+| `EWMDocumentCategory` |  | |  |  |
+| `StockDocumentNumber` |  | |  |  |
+| `EWMStockQuantityInBaseUnit` |  | |  |  |
+| `EWMStockQuantityBaseUnit` |  | |  |  |
+| `EWMStockQtyBaseUnitISOCode` |  | |  |  |
+| `EWMStockQtyBaseUnitSAPCode` |  | |  |  |
+| `EWMStockQuantityAltvUnit` |  | |  |  |
+| `EWMStockQtyAltvUnitISOCode` |  | |  |  |
+| `EWMStockQtyAltvUnitSAPCode` |  | |  |  |
+| `EWMLoadingOrNetWeight` |  | |  |  |
+| `EWMLoadingOrNetWeightUnit` |  | |  |  |
+| `EWMLoadgOrNetWgtUntISOCode` |  | |  |  |
+| `EWMLoadgOrNetWgtUntSAPCode` |  | |  |  |
+| `EWMLoadingOrNetVolume` |  | |  |  |
+| `EWMLoadingOrNetVolumeUnit` |  | |  |  |
+| `EWMLoadgOrNetVolUntISOCode` |  | |  |  |
+| `EWMLoadgOrNetVolUntSAPCode` |  | |  |  |
+| `EWMStorageBinCapConsumptionVal` |  | |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |
+| `CountryOfOrigin` |  | |  |  |
+| `EWMBatchIsInRestrictedUseStock` |  | |  |  |
+| `StockSegment` |  | |  |  |
+| `QualityInspectionDocUUID` |  | |  |  |
+| `InspectionPartialLot` |  | | `_QualityInspection` | `InspectionPartialLot` |
+| `EWMStockRefDocumentUUID` |  | |  |  |
+| `EWMStockRefDocItemUUID` |  | |  |  |
+| `EWMValuationQuantity` |  | |  |  |
+| `EWMValuationQuantityUnit` |  | |  |  |
+| `EWMValuationQtyUnitISOCode` |  | |  |  |
+| `EWMValuationQtyUnitSAPCode` |  | |  |  |
+| `EWMValuationQuantityStatus` |  | |  |  |
+| `EWMStockIsBlockedForInventory` |  | |  |  |
+| `EWMConsolidationGroup` |  | |  |  |
+| `SerialNumberRequiredLevel` |  | |  |  |
+| `EWMGoodsReceiptDateTime` |  | |  |  |
+| `WarehouseTimeZone` |  | |  |  |
+| `EWMStorageType` |  | |  |  |
+| `EWMStorageSection` |  | | `_StorageBin` | `EWMStorageSection` |
+| `EWMStorBinIsBlockedForPutaway` |  | |  | `cast( _StorageBin.EWMStorBinIsBlockedForPutaway as ewm_de_binblockedforputaway preserving type )` |
+| `EWMStorBinIsBlockedForRemoval` |  | |  | `cast( _StorageBin.EWMStorBinIsBlockedForRemoval as ewm_de_binblockedforremoval preserving type )` |
+| `EWMStorBinIsBlockedDueToPInv` |  | |  | `cast( _StorageBin.EWMStorBinIsBlockedDueToPInv as ewm_de_storbinisblkdduetopinv preserving type )` |
+| `EWMHghstLvlHandlingUnitNumber` |  | |  |  |
+| `EWMLocationType` |  | |  |  |
+| `EWMParentLocationIndexCode` |  | |  |  |
+| `_StorageSectionText` | | ✓ | | |
+| `_LocationTypeText` | | ✓ | | |
+| `_CountryText` | | ✓ | | |
+| `_EWMDocumentCategoryText` | | ✓ | | |
+| `_EWMEntitledToDisposePartyText` | | ✓ | | |
+| `_EWMStockOwnerText` | | ✓ | | |
+| `_EWMStockRefDocCategoryText` | | ✓ | | |
+| `_EWMStockTypeText` | | ✓ | | |
+| `_EWMStockUsageText` | | ✓ | | |
+| `_EWMValuationQtyStatusText` | | ✓ | | |
+| `_ProductText` | | ✓ | | |
+| `_SerialNumberRequiredLevelText` | | ✓ | | |
+| `_StockDocCategoryText` | | ✓ | | |
+| `_UnitOfMeasureAlternativeUnit` | | ✓ | | |
+| `_UnitOfMeasureBaseUnit` | | ✓ | | |
+| `_UnitOfMeasureNetVolumeUoM` | | ✓ | | |
+| `_UnitOfMeasureNetWeightUoM` | | ✓ | | |
+| `_UnitOfMeasureValnQtyUnit` | | ✓ | | |
+| `_WarehouseText` | | ✓ | | |
+| `_WhseQualityInspectionTypeText` | | ✓ | | |
+| `_StorageTypeText` | | ✓ | | |
 
 ## Associations
 

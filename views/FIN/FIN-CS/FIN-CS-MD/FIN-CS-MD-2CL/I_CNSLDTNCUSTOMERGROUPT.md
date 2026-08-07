@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `CustomerGroup` | `cast( _Source.CustomerGroup as fincs_customergroup preserving type )` |
-| `AdditionalMasterDataSource` | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` | `cast( _Source.CustomerGroupName as fincs_description_text_20 preserving type )` |
-| `CustomerGroupName` | `cast( _Source.CustomerGroupName as fincs_customergroupname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_CustomerGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `CustomerGroup` | ✓ | |  | `cast( _Source.CustomerGroup as fincs_customergroup preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.CustomerGroupName as fincs_description_text_20 preserving type )` |
+| `CustomerGroupName` |  | |  | `cast( _Source.CustomerGroupName as fincs_customergroupname preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_CustomerGroup` | | ✓ | | |
 
 ## Associations
 

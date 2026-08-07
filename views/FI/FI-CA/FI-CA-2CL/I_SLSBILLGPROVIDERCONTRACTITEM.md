@@ -29,54 +29,54 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesBillingProviderContract` | `ProviderContract` |
-| key `SlsBillgProviderContractItem` | `ProviderContractItem` |
-| `CAProviderContractItemUUID` | `CAProviderContractItemUUID` |
-| `CAPrvdrContrParentItemUUID` | `CAPrvdrContrParentItemUUID` |
-| `CAProviderContractStatus` | `CAProviderContractStatus` |
-| `CAProviderContractItemText` | `CAProviderContractItemText` |
-| `CASubscriptionChargeType` | `CASubscriptionChargeType` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangeTime` | `LastChangeTime` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `CAPrvdrContrItmValidFromDteTme` | `CAPrvdrContrItmValidFromDteTme` |
-| `CAPrvdrContrItmValidToDateTime` | `CAPrvdrContrItmValidToDateTime` |
-| `CAPrvdrContrItemCanclnDateTime` | `CAPrvdrContrItemCanclnDateTime` |
-| `PrvdrContrItmWthdrwlDateTime` | `PrvdrContrItmWthdrwlDateTime` |
-| `CAStartOfDurationDateTime` | `CAStartOfDurationDateTime` |
-| `CAEndOfDurationDateTime` | `CAEndOfDurationDateTime` |
-| `CAProduct` | `CAProduct` |
-| `ProductConfiguration` | `ProductConfiguration` |
-| `SoldProduct` | `SoldProduct` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderDate` | `CustomerPurchaseOrderDate` |
-| `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| `BusinessSolutionOrderItem` | `BusinessSolutionOrderItem` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `CAPrvdrContrSalesAreaAttrib1` | `CAPrvdrContrSalesAreaAttrib1` |
-| `CAPrvdrContrSalesAreaAttrib2` | `CAPrvdrContrSalesAreaAttrib2` |
-| `CompanyCode` | `CompanyCode` |
-| `BusinessArea` | `BusinessArea` |
-| `Segment` | `Segment` |
-| `ProfitCenter` | `ProfitCenter` |
-| `CAStandardDivision` | `CAStandardDivision` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `InternalOrder` | `InternalOrder` |
-| `EBRRResultAnalysisInternalID` | `EBRRResultAnalysisInternalID` |
-| `EBRRIsBundleActive` | `EBRRIsBundleActive` |
-| `_PrvdrContr` | *Association* |
-| `_Product` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_CompCode` | *Association* |
-| `_Division` | *Association* |
-| `_Segment` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesBillingProviderContract` | ✓ | |  | `ProviderContract` |
+| `SlsBillgProviderContractItem` | ✓ | |  | `ProviderContractItem` |
+| `CAProviderContractItemUUID` |  | |  |  |
+| `CAPrvdrContrParentItemUUID` |  | |  |  |
+| `CAProviderContractStatus` |  | |  |  |
+| `CAProviderContractItemText` |  | |  |  |
+| `CASubscriptionChargeType` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `CAPrvdrContrItmValidFromDteTme` |  | |  |  |
+| `CAPrvdrContrItmValidToDateTime` |  | |  |  |
+| `CAPrvdrContrItemCanclnDateTime` |  | |  |  |
+| `PrvdrContrItmWthdrwlDateTime` |  | |  |  |
+| `CAStartOfDurationDateTime` |  | |  |  |
+| `CAEndOfDurationDateTime` |  | |  |  |
+| `CAProduct` |  | |  |  |
+| `ProductConfiguration` |  | |  |  |
+| `SoldProduct` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `BusinessSolutionOrder` |  | |  |  |
+| `BusinessSolutionOrderItem` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `CAPrvdrContrSalesAreaAttrib1` |  | |  |  |
+| `CAPrvdrContrSalesAreaAttrib2` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BusinessArea` |  | |  |  |
+| `Segment` |  | |  |  |
+| `ProfitCenter` |  | |  |  |
+| `CAStandardDivision` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `InternalOrder` |  | |  |  |
+| `EBRRResultAnalysisInternalID` |  | |  |  |
+| `EBRRIsBundleActive` |  | |  |  |
+| `_PrvdrContr` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_CompCode` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_Segment` | | ✓ | | |
 
 ## Associations
 

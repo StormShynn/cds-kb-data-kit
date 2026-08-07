@@ -29,45 +29,45 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `ValuationAccount.Product` |
-| key `ValuationArea` | `ValuationAccount.ValuationArea` |
-| key `ValuationType` | `ValuationAccount.ValuationType` |
-| `CommercialPrice1InCoCodeCrcy` | `ValuationAccount.CommercialPrice1InCoCodeCrcy` |
-| `CommercialPrice2InCoCodeCrcy` | `ValuationAccount.CommercialPrice2InCoCodeCrcy` |
-| `CommercialPrice3InCoCodeCrcy` | `ValuationAccount.CommercialPrice3InCoCodeCrcy` |
-| `DevaluationYearCount` | `ValuationAccount.DevaluationYearCount` |
-| `FutureEvaluatedAmountValue` | `ValuationAccount.FuturePrice` |
-| `FuturePriceValidityStartDate` | `ValuationAccount.FuturePriceValidityStartDate` |
-| `IsLIFOAndFIFORelevant` | `ValuationAccount.IsLIFOAndFIFORelevant` |
-| `LIFOValuationPoolNumber` | `ValuationAccount.LIFOValuationPoolNumber` |
-| `StandardPricePrevYear` | `ValuationAccount.StandardPricePrevYear` |
-| `TaxPricel1InCoCodeCrcy` | `ValuationAccount.TaxPricel1InCoCodeCrcy` |
-| `TaxPrice2InCoCodeCrcy` | `ValuationAccount.TaxPrice2InCoCodeCrcy` |
-| `TaxPrice3InCoCodeCrcy` | `ValuationAccount.TaxPrice3InCoCodeCrcy` |
-| `TaxBasedPricesPriceUnitQty` | `ValuationAccount.TaxBasedPricesPriceUnitQty` |
-| `CompanyCode` | `t001k.bukrs` |
-| `Currency` | `t001.waers` |
-| `ProdCostEstNumber` | `ValuationAccount.ProdCostEstNumber` |
-| `MLIsActiveAtProductLevel` | `ValuationAccount.MLIsActiveAtProductLevel` |
-| `ValuationCategory` | `ValuationAccount.ValuationCategory` |
-| `ProdPrcControlInPreviousPeriod` | `ValuationAccount.ProdPrcControlInPreviousPeriod` |
-| `MvgAvgPriceInPreviousPeriod` | `ValuationAccount.MvgAvgPriceInPreviousPeriod` |
-| `StandardPriceInPreviousPeriod` | `ValuationAccount.StandardPriceInPreviousPeriod` |
-| `ProdPrcUntQtyInPreviousPeriod` | `ValuationAccount.ProdPrcUntQtyInPreviousPeriod` |
-| `ValuationClassPreviousPeriod` | `ValuationAccount.ValuationClassPreviousPeriod` |
-| `ProdPriceControlInPreviousYear` | `ValuationAccount.ProdPriceControlInPreviousYear` |
-| `MvgAveragePriceInPreviousYear` | `ValuationAccount.MvgAveragePriceInPreviousYear` |
-| `ProdPrcUntQtyInPreviousYear` | `ValuationAccount.ProdPrcUntQtyInPreviousYear` |
-| `ValuationClassPreviousYear` | `ValuationAccount.ValuationClassPreviousYear` |
-| `BaseUnit` | `_Product.BaseUnit` |
-| `_Product` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
-| `_InvtryValnProcedPrevPerd` | *Association* |
-| `_InvtryValnProcedLastYr` | *Association* |
-| `_CurrencyText` | *Association* |
-| `_ProductDescription` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `ValuationType` | ✓ | |  |  |
+| `CommercialPrice1InCoCodeCrcy` |  | |  |  |
+| `CommercialPrice2InCoCodeCrcy` |  | |  |  |
+| `CommercialPrice3InCoCodeCrcy` |  | |  |  |
+| `DevaluationYearCount` |  | |  |  |
+| `FutureEvaluatedAmountValue` |  | |  | `FuturePrice` |
+| `FuturePriceValidityStartDate` |  | |  |  |
+| `IsLIFOAndFIFORelevant` |  | |  |  |
+| `LIFOValuationPoolNumber` |  | |  |  |
+| `StandardPricePrevYear` |  | |  |  |
+| `TaxPricel1InCoCodeCrcy` |  | |  |  |
+| `TaxPrice2InCoCodeCrcy` |  | |  |  |
+| `TaxPrice3InCoCodeCrcy` |  | |  |  |
+| `TaxBasedPricesPriceUnitQty` |  | |  |  |
+| `CompanyCode` |  | |  | `bukrs` |
+| `Currency` |  | |  | `waers` |
+| `ProdCostEstNumber` |  | |  |  |
+| `MLIsActiveAtProductLevel` |  | |  |  |
+| `ValuationCategory` |  | |  |  |
+| `ProdPrcControlInPreviousPeriod` |  | |  |  |
+| `MvgAvgPriceInPreviousPeriod` |  | |  |  |
+| `StandardPriceInPreviousPeriod` |  | |  |  |
+| `ProdPrcUntQtyInPreviousPeriod` |  | |  |  |
+| `ValuationClassPreviousPeriod` |  | |  |  |
+| `ProdPriceControlInPreviousYear` |  | |  |  |
+| `MvgAveragePriceInPreviousYear` |  | |  |  |
+| `ProdPrcUntQtyInPreviousYear` |  | |  |  |
+| `ValuationClassPreviousYear` |  | |  |  |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |
+| `_Product` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
+| `_InvtryValnProcedPrevPerd` | | ✓ | | |
+| `_InvtryValnProcedLastYr` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
+| `_ProductDescription` | | ✓ | | |
 
 ## Associations
 

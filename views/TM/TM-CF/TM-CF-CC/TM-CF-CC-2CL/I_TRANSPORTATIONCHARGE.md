@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationChargeUUID` | `cast(db_key as /scmtms/vdm_transpcharge_uuid preserving type)` |
-| `TranspChargeHostDocumentUUID` | `cast(host_key as /scmtms/vdm_tcc_hst_doc_uuid preserving type )` |
-| `HostObjectSAPObjectType` | `cast( case bintohex( host_bo_key ) when '80E0ED0A0C021DEE8CE07DB4266D17C4' then 'TransportationOrder' when '80E0ED0A0DD11DDEB4EA8E4375A74E6B' then 'SupplierFreightInvoiceRequest' else '' end as sap_object_type_raw )` |
-| `HostObjNodeSAPObjectNodeType` | `cast( case bintohex( host_node_key ) when '80E0ED0A0C021DDE8CE07DB5DFAD0818' then 'TransportationOrder' when '80E0ED0A0DD11DEEB4EA8E44A108915B' then 'SupplierFreightInvoiceRequest' else '' end as sap_object_node_type )` |
-| `TranspChargeDocumentCurrency` | `doc_currency` |
-| `TranspChrgTotalAmtInDocCrcy` | `cast( cast( total_amount as abap.dec(31,6) ) * 10000 as transpchrgtotalamtindoccrcy )` |
-| `TranspChargeLocalCurrency` | `lcl_currency` |
-| `TranspChrgTotalAmtInLoclCrcy` | `cast( cast( net_amount_lcl as abap.dec(31,6) ) * 10000 as transpchrgtotalamtinloclcrcy )` |
-| `TranspChargeCalculationDateTme` | `calcdate_tstmp` |
-| `TranspChargePostingStatus` | `cast( invoicing as /scmtms/vdm_posting_status preserving type )` |
-| `TranspChargeCalcStatus` | `calc_status` |
-| `TranspChargeUsage` | `tcusagecd085` |
-| `ExchangeRateDate` | `exchdate_doc` |
-| `_TranspChargePostingStatus` | *Association* |
-| `_TranspChargeCalcStatus` | *Association* |
-| `_TranspChargeDocumentCurrency` | *Association* |
-| `_TranspChargeLocalCurrency` | *Association* |
-| `_TranspChargeItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationChargeUUID` | ✓ | |  | `cast(db_key as /scmtms/vdm_transpcharge_uuid preserving type)` |
+| `TranspChargeHostDocumentUUID` |  | |  | `cast(host_key as /scmtms/vdm_tcc_hst_doc_uuid preserving type )` |
+| `HostObjectSAPObjectType` |  | |  | `cast( case bintohex( host_bo_key ) when '80E0ED0A0C021DEE8CE07DB4266D17C4' then 'TransportationOrder' when '80E0ED0A0DD11DDEB4EA8E4375A74E6B' then 'SupplierFreightInvoiceRequest' else '' end as sap_object_type_raw )` |
+| `HostObjNodeSAPObjectNodeType` |  | |  | `cast( case bintohex( host_node_key ) when '80E0ED0A0C021DDE8CE07DB5DFAD0818' then 'TransportationOrder' when '80E0ED0A0DD11DEEB4EA8E44A108915B' then 'SupplierFreightInvoiceRequest' else '' end as sap_object_node_type )` |
+| `TranspChargeDocumentCurrency` |  | |  | `doc_currency` |
+| `TranspChrgTotalAmtInDocCrcy` |  | |  | `cast( cast( total_amount as abap.dec(31,6) ) * 10000 as transpchrgtotalamtindoccrcy )` |
+| `TranspChargeLocalCurrency` |  | |  | `lcl_currency` |
+| `TranspChrgTotalAmtInLoclCrcy` |  | |  | `cast( cast( net_amount_lcl as abap.dec(31,6) ) * 10000 as transpchrgtotalamtinloclcrcy )` |
+| `TranspChargeCalculationDateTme` |  | |  | `calcdate_tstmp` |
+| `TranspChargePostingStatus` |  | |  | `cast( invoicing as /scmtms/vdm_posting_status preserving type )` |
+| `TranspChargeCalcStatus` |  | |  | `calc_status` |
+| `TranspChargeUsage` |  | |  | `tcusagecd085` |
+| `ExchangeRateDate` |  | |  | `exchdate_doc` |
+| `_TranspChargePostingStatus` | | ✓ | | |
+| `_TranspChargeCalcStatus` | | ✓ | | |
+| `_TranspChargeDocumentCurrency` | | ✓ | | |
+| `_TranspChargeLocalCurrency` | | ✓ | | |
+| `_TranspChargeItem` | | ✓ | | |
 
 ## Associations
 

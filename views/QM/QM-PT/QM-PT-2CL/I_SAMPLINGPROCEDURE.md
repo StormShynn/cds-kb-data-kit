@@ -27,51 +27,51 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingProcedure` | `qdsv.stichprver` |
-| `SamplingProcedureMltplSamples` | `kzumfs` |
-| `SamplingProcedureInspSubset` | `cast( kzrast as vdm_qkzrast preserving type )` |
-| `SamplingValuationMode` | `bewertmod` |
-| `SamplingType` | `stichprart` |
-| `QualityControlChartType` | `qrkart` |
-| `SamplingScheme` | `stprplan` |
-| `SamplingProcedureIsBlocked` | `cast( kznvwsv as vdm_qkznvwsv preserving type )` |
-| `SamplingProcedHasNoInspStgeChg` | `cast( qdsv.kzohi as vdm_qkzohi preserving type )` |
-| `SmplgProcedNmbrOfMltplSamples` | `qdsv.stpranz` |
-| `SamplingProcedureNumberOfUnits` | `qdsv.stprumf` |
-| `SamplingProcedAcceptanceCount` | `qdsv.annahmez` |
-| `SamplingProcedIsUsedInspPlan` | `cast( qdsv.kzvwsvpl as vdm_qkzvwsvpl preserving type )` |
-| `SampleDeterminationRule` | `qdsv.fbkey` |
-| `InspSampleValuationRule` | `qdsv.fbkeymfs` |
-| `SamplingProcedInspSeverity` | `qdsv.prschaerfe` |
-| `SmplgProcedAcceptableQltyLevel` | `qdsv.aqlwert` |
-| `SamplingProcedSmplSizeInPct` | `qdsv.prozumf` |
-| `SamplingProcedHasSmplSizeInPct` | `cast( qdsv.prozumfni as vdm_qninitial preserving type )` |
-| `SamplingProcedAccptcCountInPct` | `qdsv.prozazl` |
-| `SamplingProcedHasAccptcCtInPct` | `cast( qdsv.prozazlni as vdm_qninitial preserving type )` |
-| `CreatedByUser` | `qdsv.ersteller` |
-| `LastChangedByUser` | `qdsv.aenderer` |
-| `SamplingProcedureCreationDate` | `qdsv.erstelldat` |
-| `SamplingProcedureChangeDate` | `qdsv.aenderdat` |
-| `SamplingProcedInspFrequency` | `qdsv.raster` |
-| `_Text` | *Association* |
-| `_SmplgProcedureInspSubset` | *Association* |
-| `_SampleProcedInspSubsetText` | *Association* |
-| `_SamplingValuationMode` | *Association* |
-| `_SamplingValuationModeText` | *Association* |
-| `_SamplingType` | *Association* |
-| `_SamplingTypeText` | *Association* |
-| `_SamplingScheme` | *Association* |
-| `_SamplingSchemeText` | *Association* |
-| `_QualityControlChartType` | *Association* |
-| `_QualityControlChartTypeText` | *Association* |
-| `_SampleDeterminationRule` | *Association* |
-| `_SampleDeterminationRuleText` | *Association* |
-| `_InspSampleValuationRule` | *Association* |
-| `_InspSampleValuationRuleTxt` | *Association* |
-| `_SmplgProcedMltplSamples` | *Association* |
-| `_SmplgProcedMltplSamplesText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingProcedure` | ✓ | |  | `stichprver` |
+| `SamplingProcedureMltplSamples` |  | |  | `kzumfs` |
+| `SamplingProcedureInspSubset` |  | |  | `cast( kzrast as vdm_qkzrast preserving type )` |
+| `SamplingValuationMode` |  | |  | `bewertmod` |
+| `SamplingType` |  | |  | `stichprart` |
+| `QualityControlChartType` |  | |  | `qrkart` |
+| `SamplingScheme` |  | |  | `stprplan` |
+| `SamplingProcedureIsBlocked` |  | |  | `cast( kznvwsv as vdm_qkznvwsv preserving type )` |
+| `SamplingProcedHasNoInspStgeChg` |  | |  | `cast( qdsv.kzohi as vdm_qkzohi preserving type )` |
+| `SmplgProcedNmbrOfMltplSamples` |  | |  | `stpranz` |
+| `SamplingProcedureNumberOfUnits` |  | |  | `stprumf` |
+| `SamplingProcedAcceptanceCount` |  | |  | `annahmez` |
+| `SamplingProcedIsUsedInspPlan` |  | |  | `cast( qdsv.kzvwsvpl as vdm_qkzvwsvpl preserving type )` |
+| `SampleDeterminationRule` |  | |  | `fbkey` |
+| `InspSampleValuationRule` |  | |  | `fbkeymfs` |
+| `SamplingProcedInspSeverity` |  | |  | `prschaerfe` |
+| `SmplgProcedAcceptableQltyLevel` |  | |  | `aqlwert` |
+| `SamplingProcedSmplSizeInPct` |  | |  | `prozumf` |
+| `SamplingProcedHasSmplSizeInPct` |  | |  | `cast( qdsv.prozumfni as vdm_qninitial preserving type )` |
+| `SamplingProcedAccptcCountInPct` |  | |  | `prozazl` |
+| `SamplingProcedHasAccptcCtInPct` |  | |  | `cast( qdsv.prozazlni as vdm_qninitial preserving type )` |
+| `CreatedByUser` |  | |  | `ersteller` |
+| `LastChangedByUser` |  | |  | `aenderer` |
+| `SamplingProcedureCreationDate` |  | |  | `erstelldat` |
+| `SamplingProcedureChangeDate` |  | |  | `aenderdat` |
+| `SamplingProcedInspFrequency` |  | |  | `raster` |
+| `_Text` | | ✓ | | |
+| `_SmplgProcedureInspSubset` | | ✓ | | |
+| `_SampleProcedInspSubsetText` | | ✓ | | |
+| `_SamplingValuationMode` | | ✓ | | |
+| `_SamplingValuationModeText` | | ✓ | | |
+| `_SamplingType` | | ✓ | | |
+| `_SamplingTypeText` | | ✓ | | |
+| `_SamplingScheme` | | ✓ | | |
+| `_SamplingSchemeText` | | ✓ | | |
+| `_QualityControlChartType` | | ✓ | | |
+| `_QualityControlChartTypeText` | | ✓ | | |
+| `_SampleDeterminationRule` | | ✓ | | |
+| `_SampleDeterminationRuleText` | | ✓ | | |
+| `_InspSampleValuationRule` | | ✓ | | |
+| `_InspSampleValuationRuleTxt` | | ✓ | | |
+| `_SmplgProcedMltplSamples` | | ✓ | | |
+| `_SmplgProcedMltplSamplesText` | | ✓ | | |
 
 ## Associations
 

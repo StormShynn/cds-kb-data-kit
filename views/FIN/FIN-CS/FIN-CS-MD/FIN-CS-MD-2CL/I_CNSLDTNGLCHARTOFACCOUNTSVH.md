@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChartOfAccounts` | `cast(ChartOfAccounts as fincs_chartofaccounts preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChartOfAccounts` | ✓ | |  | `cast(ChartOfAccounts as fincs_chartofaccounts preserving type )` |
 
 ## Source Code
 

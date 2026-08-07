@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `SrvcItemRelshpFromItemNumber` | `SrvcItemRelshpFromItemNumber` |
-| key `SrvcItemRelshpType` | `SrvcItemRelshpType` |
-| key `SrvcItemRelshpToItemNumber` | `SrvcItemRelshpToItemNumber` |
-| `_BusinessSolutionOrder` | *Association* |
-| `_ItemRelationshipTypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `SrvcItemRelshpFromItemNumber` | ✓ | |  |  |
+| `SrvcItemRelshpType` | ✓ | |  |  |
+| `SrvcItemRelshpToItemNumber` | ✓ | |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | |
+| `_ItemRelationshipTypeText` | | ✓ | | |
 
 ## Source Code
 

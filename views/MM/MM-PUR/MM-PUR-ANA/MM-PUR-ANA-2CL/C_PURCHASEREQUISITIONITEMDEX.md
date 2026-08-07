@@ -31,131 +31,131 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseRequisition` | `PurchaseRequisition` |
-| key `PurchaseRequisitionItem` | `PurchaseRequisitionItem` |
-| `PurchaseReqnItemUniqueID` | `PurchaseReqnItemUniqueID` |
-| `PurchasingDocument` | `PurchasingDocument` |
-| `PurchasingDocumentItem` | `PurchasingDocumentItem` |
-| `PurReqnReleaseStatus` | `PurReqnReleaseStatus` |
-| `PurchaseRequisitionType` | `PurchaseRequisitionType` |
-| `PurchasingDocumentSubtype` | `PurchasingDocumentSubtype` |
-| `PurchasingDocumentItemCategory` | `PurchasingDocumentItemCategory` |
-| `PurchaseRequisitionItemText` | `PurchaseRequisitionItemText` |
-| `AccountAssignmentCategory` | `AccountAssignmentCategory` |
-| `Material` | `Material` |
-| `MaterialGroup` | `MaterialGroup` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchaseRequisitionPrice` | `PurchaseRequisitionPrice` |
-| `MaterialGoodsReceiptDuration` | `MaterialGoodsReceiptDuration` |
-| `ReleaseCode` | `ReleaseCode` |
-| `PurchaseRequisitionReleaseDate` | `PurchaseRequisitionReleaseDate` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `Plant` | `Plant` |
-| `SourceOfSupplyIsAssigned` | `SourceOfSupplyIsAssigned` |
-| `SupplyingPlant` | `SupplyingPlant` |
-| `PurReqnLimitConsumptionAmt` | `PurReqnLimitConsumptionAmt` |
-| `DeliveryDate` | `DeliveryDate` |
-| `CreationDate` | `CreationDate` |
-| `ProcessingStatus` | `ProcessingStatus` |
-| `PurchasingInfoRecord` | `PurchasingInfoRecord` |
-| `Supplier` | `Supplier` |
-| `IsDeleted` | `IsDeleted` |
-| `FixedSupplier` | `FixedSupplier` |
-| `RequisitionerName` | `RequisitionerName` |
-| `CreatedByUser` | `CreatedByUser` |
-| `PurReqCreationDate` | `PurReqCreationDate` |
-| `DeliveryAddressID` | `cast ( DeliveryAddressID as adrn2_ll preserving type)` |
-| `ManualDeliveryAddressID` | `ManualDeliveryAddressID` |
-| `PurReqnItemCurrency` | `PurReqnItemCurrency` |
-| `MaterialPlannedDeliveryDurn` | `MaterialPlannedDeliveryDurn` |
-| `DelivDateCategory` | `DelivDateCategory` |
-| `MultipleAcctAssgmtDistribution` | `MultipleAcctAssgmtDistribution` |
-| `StorageLocation` | `StorageLocation` |
-| `PurReqnSSPRequestor` | `PurReqnSSPRequestor` |
-| `PurReqnSSPAuthor` | `PurReqnSSPAuthor` |
-| `PurchaseContract` | `PurchaseContract` |
-| `PurReqnSourceOfSupplyType` | `PurReqnSourceOfSupplyType` |
-| `PurchaseContractItem` | `PurchaseContractItem` |
-| `ConsumptionPosting` | `ConsumptionPosting` |
-| `PurReqnOrigin` | `PurReqnOrigin` |
-| `PurReqnSSPCatalog` | `PurReqnSSPCatalog` |
-| `PurReqnSSPCatalogItem` | `PurReqnSSPCatalogItem` |
-| `PurReqnSSPCrossCatalogItem` | `PurReqnSSPCrossCatalogItem` |
-| `IsPurReqnBlocked` | `IsPurReqnBlocked` |
-| `ItemDeliveryAddressID` | `ItemDeliveryAddressID` |
-| `Language` | `Language` |
-| `IsClosed` | `IsClosed` |
-| `ReleaseIsNotCompleted` | `ReleaseIsNotCompleted` |
-| `ServicePerformer` | `ServicePerformer` |
-| `ProductType` | `cast(ProductType as abap.char(4))` |
-| `PurchaseRequisitionStatus` | `PurchaseRequisitionStatus` |
-| `ReleaseStrategy` | `ReleaseStrategy` |
-| `PerformancePeriodStartDate` | `PerformancePeriodStartDate` |
-| `PerformancePeriodEndDate` | `PerformancePeriodEndDate` |
-| `CompanyCode` | `CompanyCode` |
-| `SupplierMaterialNumber` | `SupplierMaterialNumber` |
-| `Batch` | `Batch` |
-| `MaterialRevisionLevel` | `MaterialRevisionLevel_2` |
-| `MinRemainingShelfLife` | `MinRemainingShelfLife` |
-| `ItemNetAmount` | `ItemNetAmount` |
-| `GoodsReceiptIsExpected` | `GoodsReceiptIsExpected` |
-| `InvoiceIsExpected` | `InvoiceIsExpected` |
-| `GoodsReceiptIsNonValuated` | `GoodsReceiptIsNonValuated` |
-| `RequirementTracking` | `RequirementTracking` |
-| `MRPController` | `MRPController` |
-| `TaxCode` | `TaxCode` |
-| `PurchaseRequisitionIsFixed` | `PurchaseRequisitionIsFixed` |
-| `AddressID` | `AddressID` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `ProcurementHubSourceSystem` | `ProcurementHubSourceSystem` |
-| `ExtPurgOrgForPurg` | `ExtPurgOrgForPurg` |
-| `ExtCompanyCodeForPurg` | `ExtCompanyCodeForPurg` |
-| `ExtPlantForPurg` | `ExtPlantForPurg` |
-| `ExtInfoRecordForPurg` | `ExtInfoRecordForPurg` |
-| `ExtContractItemForPurg` | `ExtContractItemForPurg` |
-| `ExtContractForPurg` | `ExtContractForPurg` |
-| `ExtDesiredSupplierForPurg` | `ExtDesiredSupplierForPurg` |
-| `ExtFixedSupplierForPurg` | `ExtFixedSupplierForPurg` |
-| `ExtMaterialForPurg` | `ExtMaterialForPurg` |
-| `RequestedQuantity` | `RequestedQuantity` |
-| `PurReqnPriceQuantity` | `PurReqnPriceQuantity` |
-| `BaseUnit` | `BaseUnit` |
-| `IsPurReqnCmplt` | `IsPurReqnCmplt` |
-| `PurReqnItemBlockingReasonText` | `PurReqnItemBlockingReasonText` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `QuotaArrangement` | `QuotaArrangement` |
-| `QuotaArrangementItem` | `QuotaArrangementItem` |
-| `_PurchasingDocumentType` | *Association* |
-| `_PurgDocumentItemCategory` | *Association* |
-| `_Product` | *Association* |
-| `_ProductGroup` | *Association* |
-| `_PurchasingObjectCategory` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_Plant` | *Association* |
-| `_SupplyingPlant` | *Association* |
-| `_Supplier` | *Association* |
-| `_FixedSupplier` | *Association* |
-| `_DeliveryAddress` | *Association* |
-| `_ManualDeliveryAddress` | *Association* |
-| `_Currency` | *Association* |
-| `_StorageLocation` | *Association* |
-| `_ItemDeliveryAddress` | *Association* |
-| `_Language` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_ProductTypeCode` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_MRPController` | *Association* |
-| `_Address` | *Association* |
-| `_UnitOfMeasure` | *Association* |
-| `_InventorySpecialStockType` | *Association* |
-| `_PurchaseContract` | *Association* |
-| `_PurchaseContractItem` | *Association* |
-| `_PurchasingInfoRecord` | *Association* |
-| `_PurchaseRequisition` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseRequisition` | ✓ | |  |  |
+| `PurchaseRequisitionItem` | ✓ | |  |  |
+| `PurchaseReqnItemUniqueID` |  | |  |  |
+| `PurchasingDocument` |  | |  |  |
+| `PurchasingDocumentItem` |  | |  |  |
+| `PurReqnReleaseStatus` |  | |  |  |
+| `PurchaseRequisitionType` |  | |  |  |
+| `PurchasingDocumentSubtype` |  | |  |  |
+| `PurchasingDocumentItemCategory` |  | |  |  |
+| `PurchaseRequisitionItemText` |  | |  |  |
+| `AccountAssignmentCategory` |  | |  |  |
+| `Material` |  | |  |  |
+| `MaterialGroup` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchaseRequisitionPrice` |  | |  |  |
+| `MaterialGoodsReceiptDuration` |  | |  |  |
+| `ReleaseCode` |  | |  |  |
+| `PurchaseRequisitionReleaseDate` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `Plant` |  | |  |  |
+| `SourceOfSupplyIsAssigned` |  | |  |  |
+| `SupplyingPlant` |  | |  |  |
+| `PurReqnLimitConsumptionAmt` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `ProcessingStatus` |  | |  |  |
+| `PurchasingInfoRecord` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `IsDeleted` |  | |  |  |
+| `FixedSupplier` |  | |  |  |
+| `RequisitionerName` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `PurReqCreationDate` |  | |  |  |
+| `DeliveryAddressID` |  | |  | `cast ( DeliveryAddressID as adrn2_ll preserving type)` |
+| `ManualDeliveryAddressID` |  | |  |  |
+| `PurReqnItemCurrency` |  | |  |  |
+| `MaterialPlannedDeliveryDurn` |  | |  |  |
+| `DelivDateCategory` |  | |  |  |
+| `MultipleAcctAssgmtDistribution` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `PurReqnSSPRequestor` |  | |  |  |
+| `PurReqnSSPAuthor` |  | |  |  |
+| `PurchaseContract` |  | |  |  |
+| `PurReqnSourceOfSupplyType` |  | |  |  |
+| `PurchaseContractItem` |  | |  |  |
+| `ConsumptionPosting` |  | |  |  |
+| `PurReqnOrigin` |  | |  |  |
+| `PurReqnSSPCatalog` |  | |  |  |
+| `PurReqnSSPCatalogItem` |  | |  |  |
+| `PurReqnSSPCrossCatalogItem` |  | |  |  |
+| `IsPurReqnBlocked` |  | |  |  |
+| `ItemDeliveryAddressID` |  | |  |  |
+| `Language` |  | |  |  |
+| `IsClosed` |  | |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |
+| `ServicePerformer` |  | |  |  |
+| `ProductType` |  | |  | `cast(ProductType as abap.char(4))` |
+| `PurchaseRequisitionStatus` |  | |  |  |
+| `ReleaseStrategy` |  | |  |  |
+| `PerformancePeriodStartDate` |  | |  |  |
+| `PerformancePeriodEndDate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `SupplierMaterialNumber` |  | |  |  |
+| `Batch` |  | |  |  |
+| `MaterialRevisionLevel` |  | |  | `MaterialRevisionLevel_2` |
+| `MinRemainingShelfLife` |  | |  |  |
+| `ItemNetAmount` |  | |  |  |
+| `GoodsReceiptIsExpected` |  | |  |  |
+| `InvoiceIsExpected` |  | |  |  |
+| `GoodsReceiptIsNonValuated` |  | |  |  |
+| `RequirementTracking` |  | |  |  |
+| `MRPController` |  | |  |  |
+| `TaxCode` |  | |  |  |
+| `PurchaseRequisitionIsFixed` |  | |  |  |
+| `AddressID` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `ProcurementHubSourceSystem` |  | |  |  |
+| `ExtPurgOrgForPurg` |  | |  |  |
+| `ExtCompanyCodeForPurg` |  | |  |  |
+| `ExtPlantForPurg` |  | |  |  |
+| `ExtInfoRecordForPurg` |  | |  |  |
+| `ExtContractItemForPurg` |  | |  |  |
+| `ExtContractForPurg` |  | |  |  |
+| `ExtDesiredSupplierForPurg` |  | |  |  |
+| `ExtFixedSupplierForPurg` |  | |  |  |
+| `ExtMaterialForPurg` |  | |  |  |
+| `RequestedQuantity` |  | |  |  |
+| `PurReqnPriceQuantity` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `IsPurReqnCmplt` |  | |  |  |
+| `PurReqnItemBlockingReasonText` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `QuotaArrangement` |  | |  |  |
+| `QuotaArrangementItem` |  | |  |  |
+| `_PurchasingDocumentType` | | ✓ | | |
+| `_PurgDocumentItemCategory` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_ProductGroup` | | ✓ | | |
+| `_PurchasingObjectCategory` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_SupplyingPlant` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
+| `_FixedSupplier` | | ✓ | | |
+| `_DeliveryAddress` | | ✓ | | |
+| `_ManualDeliveryAddress` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
+| `_ItemDeliveryAddress` | | ✓ | | |
+| `_Language` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_ProductTypeCode` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_MRPController` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_UnitOfMeasure` | | ✓ | | |
+| `_InventorySpecialStockType` | | ✓ | | |
+| `_PurchaseContract` | | ✓ | | |
+| `_PurchaseContractItem` | | ✓ | | |
+| `_PurchasingInfoRecord` | | ✓ | | |
+| `_PurchaseRequisition` | | ✓ | | |
 
 ## Associations
 

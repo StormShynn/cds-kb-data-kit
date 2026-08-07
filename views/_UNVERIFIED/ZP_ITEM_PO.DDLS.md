@@ -34,13 +34,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Pono` | `Pono` |
-| key `Poitem` | `Poitem` |
-| `Quantity` | `Quantity` |
-| `Unit` | `Unit` |
-| `_header` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Pono` | ✓ | |  |  |
+| `Poitem` | ✓ | |  |  |
+| `Quantity` |  | |  |  |
+| `Unit` |  | |  |  |
+| `_header` | | ✓ | | |
 
 ## Source Code
 

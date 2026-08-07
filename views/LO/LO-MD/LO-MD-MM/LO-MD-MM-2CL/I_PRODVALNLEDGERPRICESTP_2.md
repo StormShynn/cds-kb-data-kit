@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `Product` |
-| key `ValuationArea` | `ValuationArea` |
-| key `ValuationType` | `ValuationType` |
-| key `CurrencyRole` | `CurrencyRole` |
-| key `Ledger` | `Ledger` |
-| `ProductPriceUnitQuantity` | `ProductPriceUnitQuantity` |
-| `Currency` | `Currency` |
-| `FuturePrice` | `FuturePrice` |
-| `FuturePriceValidityStartDate` | `FuturePriceValidityStartDate` |
-| `CompanyCode` | `CompanyCode` |
-| `BaseUnit` | `BaseUnit` |
-| `_Product` | *Association* |
-| `_ProductValuation` | *Association* |
-| `_CurrencyText` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `ValuationType` | ✓ | |  |  |
+| `CurrencyRole` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `ProductPriceUnitQuantity` |  | |  |  |
+| `Currency` |  | |  |  |
+| `FuturePrice` |  | |  |  |
+| `FuturePriceValidityStartDate` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `BaseUnit` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_ProductValuation` | | ✓ | | |
+| `_CurrencyText` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
 
 ## Source Code
 

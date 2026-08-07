@@ -29,24 +29,24 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumber` | `ChangeNumber` |
-| key `ChangeNumberObjectType` | `ChangeNumberObjectType` |
-| key `SAPObjectType` | `SAPObjectType` |
-| `IsActiveForChangeNumber` | `IsActiveForChangeNumber` |
-| `IsLockedForChanges` | `IsLockedForChanges` |
-| `IsPartiallyDisplayed` | `IsPartiallyDisplayed` |
-| `ObjMgmtRecdIsRequired` | `ObjMgmtRecdIsRequired` |
-| `ObjMgmtRecdIsGenerated` | `ObjMgmtRecdIsGenerated` |
-| `ObjMgmtRecdIsAutomlyCrted` | `ObjMgmtRecdIsAutomlyCrted` |
-| `ObjMgmtRecdIsAutomlyCrtedByDlg` | `ObjMgmtRecdIsAutomlyCrtedByDlg` |
-| `ObjectTypeCreationDate` | `ObjectTypeCreationDate` |
-| `ObjectTypeCreatedByUser` | `ObjectTypeCreatedByUser` |
-| `ObjectTypeLastChangedDate` | `ObjectTypeLastChangedDate` |
-| `ObjectTypeLastChangedByUser` | `ObjectTypeLastChangedByUser` |
-| `ChangeNumberLastChgdDateTime` | `ChangeNumberLastChgdDateTime` |
-| `_ChangeMaster` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |
+| `ChangeNumberObjectType` | ✓ | |  |  |
+| `SAPObjectType` | ✓ | |  |  |
+| `IsActiveForChangeNumber` |  | |  |  |
+| `IsLockedForChanges` |  | |  |  |
+| `IsPartiallyDisplayed` |  | |  |  |
+| `ObjMgmtRecdIsRequired` |  | |  |  |
+| `ObjMgmtRecdIsGenerated` |  | |  |  |
+| `ObjMgmtRecdIsAutomlyCrted` |  | |  |  |
+| `ObjMgmtRecdIsAutomlyCrtedByDlg` |  | |  |  |
+| `ObjectTypeCreationDate` |  | |  |  |
+| `ObjectTypeCreatedByUser` |  | |  |  |
+| `ObjectTypeLastChangedDate` |  | |  |  |
+| `ObjectTypeLastChangedByUser` |  | |  |  |
+| `ChangeNumberLastChgdDateTime` |  | |  |  |
+| `_ChangeMaster` | | ✓ | | |
 
 ## Source Code
 

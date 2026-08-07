@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(spras as spras preserving type)` |
-| key `MRPExceptionMessage` | `cast(aussl as vdm_aussl preserving type)` |
-| `MRPExceptionMessageName` | `cast(auslt as vdm_auslt preserving type)` |
-| `_Language` | *Association* |
-| `_MRPExceptionMessage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(spras as spras preserving type)` |
+| `MRPExceptionMessage` | ✓ | |  | `cast(aussl as vdm_aussl preserving type)` |
+| `MRPExceptionMessageName` |  | |  | `cast(auslt as vdm_auslt preserving type)` |
+| `_Language` | | ✓ | | |
+| `_MRPExceptionMessage` | | ✓ | | |
 
 ## Associations
 

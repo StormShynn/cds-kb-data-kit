@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnTaskLogUUID` | `item.CnsldtnTaskLogUUID` |
-| key `CnsldtnTaskLogItemUUID` | `item.CnsldtnTaskLogItemUUID` |
-| `CnsldtnTaskLogItemType` | `item.CnsldtnTaskLogItemType` |
-| `CnsldtnGroupJrnlEntry` | `item.CnsldtnGroupJrnlEntry` |
-| `FiscalPeriod` | `item.FiscalPeriod` |
-| `PostingFiscalYear` | `item.PostingFiscalYear` |
-| `ConsolidationDocumentNumber` | `item.ConsolidationDocumentNumber` |
-| `ConsolidationPostingItem` | `item.ConsolidationPostingItem` |
-| `ConsolidationGroup` | `item.ConsolidationGroup` |
-| `SubItemCategory` | `item.SubItemCategory` |
-| `SubItem` | `item.SubItem` |
-| `ConsolidationUnit` | `item.ConsolidationUnit` |
-| `CnsldtnTskLgItmRowNmbr` | `item.CnsldtnTskLgItmRowNmbr` |
-| `CnsldtnFinancialStatementItem` | `item.CnsldtnFinancialStatementItem` |
-| `PartnerConsolidationUnit` | `item.PartnerConsolidationUnit` |
-| `ConsolidationChartOfAccounts` | `item.ConsolidationChartOfAccounts` |
-| `ConsolidationVersion` | `item.ConsolidationVersion` |
-| `_ConsolidationTaskLog` | *Association* |
-| `_CnsldtnGroup` | *Association* |
-| `_CnsldtnSubitemCategory` | *Association* |
-| `_CnsldtnSubItem` | *Association* |
-| `_CnsldtnUnit` | *Association* |
-| `_CnsldtnFSItem` | *Association* |
-| `_CnsldtnUnitPartner` | *Association* |
-| `_CnsldtnChartOfAccounts` | *Association* |
-| `_CnsldtnVersion` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnTaskLogUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemUUID` | ✓ | |  |  |
+| `CnsldtnTaskLogItemType` |  | |  |  |
+| `CnsldtnGroupJrnlEntry` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `PostingFiscalYear` |  | |  |  |
+| `ConsolidationDocumentNumber` |  | |  |  |
+| `ConsolidationPostingItem` |  | |  |  |
+| `ConsolidationGroup` |  | |  |  |
+| `SubItemCategory` |  | |  |  |
+| `SubItem` |  | |  |  |
+| `ConsolidationUnit` |  | |  |  |
+| `CnsldtnTskLgItmRowNmbr` |  | |  |  |
+| `CnsldtnFinancialStatementItem` |  | |  |  |
+| `PartnerConsolidationUnit` |  | |  |  |
+| `ConsolidationChartOfAccounts` |  | |  |  |
+| `ConsolidationVersion` |  | |  |  |
+| `_ConsolidationTaskLog` | | ✓ | | |
+| `_CnsldtnGroup` | | ✓ | | |
+| `_CnsldtnSubitemCategory` | | ✓ | | |
+| `_CnsldtnSubItem` | | ✓ | | |
+| `_CnsldtnUnit` | | ✓ | | |
+| `_CnsldtnFSItem` | | ✓ | | |
+| `_CnsldtnUnitPartner` | | ✓ | | |
+| `_CnsldtnChartOfAccounts` | | ✓ | | |
+| `_CnsldtnVersion` | | ✓ | | |
 
 ## Associations
 

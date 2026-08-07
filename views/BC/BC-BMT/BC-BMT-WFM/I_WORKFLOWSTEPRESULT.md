@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkflowScenarioDefinition` | `WorkflowStepTypeNode.WorkflowScenarioDefinition` |
-| key `WorkflowScenarioDefinitionVers` | `WorkflowStepTypeNode.WorkflowScenarioDefinitionVers` |
-| key `WorkflowStepType` | `WorkflowStepTypeNode.WorkflowStepType` |
-| key `WorkflowStepResult` | `WorkflowStepTypeNode.WorkflowStepResult` |
-| `WorkflowStepResultNature` | `WorkflowStepTypeNode.WorkflowStepResultNature` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkflowScenarioDefinition` | ✓ | |  |  |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  |  |
+| `WorkflowStepType` | ✓ | |  |  |
+| `WorkflowStepResult` | ✓ | |  |  |
+| `WorkflowStepResultNature` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

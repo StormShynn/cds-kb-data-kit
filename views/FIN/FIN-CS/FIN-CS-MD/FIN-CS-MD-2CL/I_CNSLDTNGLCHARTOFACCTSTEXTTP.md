@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `ChartOfAccounts` | `_Text.ChartOfAccounts` |
-| `ChartOfAccountsName` | `_Text.ChartOfAccountsName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnGLChartOfAccountsTP` | `_ChartOfAccounts as _ChartOfAccounts : redirected to parent I_CnsldtnGLChartOfAccountsTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `ChartOfAccounts` | ✓ | | `_Text` | `ChartOfAccounts` |
+| `ChartOfAccountsName` |  | | `_Text` | `ChartOfAccountsName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnGLChartOfAccountsTP` |  | |  | `_ChartOfAccounts as _ChartOfAccounts : redirected to parent I_CnsldtnGLChartOfAccountsTP` |
 
 ## Source Code
 

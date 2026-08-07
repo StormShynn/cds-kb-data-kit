@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `JournalEntryTypeMapping.bukrs` |
-| key `CN_CADENatlStdRelVersion` | `JournalEntryTypeMapping.cade_natl_std_rel_ver` |
-| key `AccountingDocumentType` | `JournalEntryTypeMapping.blart` |
-| `CN_CADEJournalEntryType` | `JournalEntryTypeMapping.cade_jrnl_entr_type_code` |
-| `CN_CADETransactionType` | `JournalEntryTypeMapping.cade_trans_type_code` |
-| `CN_CADEOriginalPaymentDocument` | `JournalEntryTypeMapping.cade_doc_type_code` |
-| `AccountingDocumentTypeName` | `JournalEntryTypeText.AccountingDocumentTypeName` |
-| `CN_CADEJournalEntryTypeName` | `CADEJournalEntryType.CN_CADEDocumentListTypeName` |
-| `CN_CADETransactionTypeName` | `CADETranscationType.CN_CADEDocumentListTypeName` |
-| `CN_CADEOriginalPaymentDocType` | `CADEDocumentType.CN_CADEDocumentListTypeName` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CN_CADENatlStdRelVersion` | ✓ | |  | `cade_natl_std_rel_ver` |
+| `AccountingDocumentType` | ✓ | |  | `blart` |
+| `CN_CADEJournalEntryType` |  | |  | `cade_jrnl_entr_type_code` |
+| `CN_CADETransactionType` |  | |  | `cade_trans_type_code` |
+| `CN_CADEOriginalPaymentDocument` |  | |  | `cade_doc_type_code` |
+| `AccountingDocumentTypeName` |  | |  |  |
+| `CN_CADEJournalEntryTypeName` |  | |  | `CN_CADEDocumentListTypeName` |
+| `CN_CADETransactionTypeName` |  | |  | `CN_CADEDocumentListTypeName` |
+| `CN_CADEOriginalPaymentDocType` |  | |  | `CN_CADEDocumentListTypeName` |
 
 ## Associations
 

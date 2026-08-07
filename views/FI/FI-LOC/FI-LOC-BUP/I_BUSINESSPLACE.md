@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `BusinessPlace` | `branch` |
-| `AddressID` | `adrnr` |
-| `BusinessPlaceStartDate` | `validfrom` |
-| `BusinessPlaceEndDate` | `validto` |
-| `TaxNumber1` | `stcd1` |
-| `TaxNumber2` | `stcd2` |
-| `TaxNumber5` | `stcd5` |
-| `BusinessPlaceDescription` | `name` |
-| `_Text` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_Address` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `BusinessPlace` | ✓ | |  | `branch` |
+| `AddressID` |  | |  | `adrnr` |
+| `BusinessPlaceStartDate` |  | |  | `validfrom` |
+| `BusinessPlaceEndDate` |  | |  | `validto` |
+| `TaxNumber1` |  | |  | `stcd1` |
+| `TaxNumber2` |  | |  | `stcd2` |
+| `TaxNumber5` |  | |  | `stcd5` |
+| `BusinessPlaceDescription` |  | |  | `name` |
+| `_Text` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_Address` | | ✓ | | |
 
 ## Associations
 

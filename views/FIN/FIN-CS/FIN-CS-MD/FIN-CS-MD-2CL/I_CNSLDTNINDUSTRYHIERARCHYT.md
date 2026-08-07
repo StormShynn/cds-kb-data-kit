@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_HierarchyText.Language` |
-| key `CnsldtnIndustryHierarchy` | `cast(_HierarchyText.UniversalHierarchy as fincs_industryhierarchy preserving type )` |
-| key `ValidityEndDate` | `_HierarchyText.ValidityEndDate` |
-| `ValidityStartDate` | `_HierarchyText.ValidityStartDate` |
-| `CnsldtnIndustryHierarchyText` | `cast(_HierarchyText.UniversalHierarchyText as fincs_industryhierarchytext preserving type )` |
-| `_Hierarchy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_HierarchyText` | `Language` |
+| `CnsldtnIndustryHierarchy` | ✓ | |  | `cast(_HierarchyText.UniversalHierarchy as fincs_industryhierarchy preserving type )` |
+| `ValidityEndDate` | ✓ | | `_HierarchyText` | `ValidityEndDate` |
+| `ValidityStartDate` |  | | `_HierarchyText` | `ValidityStartDate` |
+| `CnsldtnIndustryHierarchyText` |  | |  | `cast(_HierarchyText.UniversalHierarchyText as fincs_industryhierarchytext preserving type )` |
+| `_Hierarchy` | | ✓ | | |
 
 ## Associations
 

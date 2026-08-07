@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABillgLockedForInvoicing` | `cast ( substring( dd07t.domvalue_l,1,1 ) as invlock_kk preserving type )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CABillgLockedForInvcgText` | `cast ( ddtext as invlock_txt_gfn_kk preserving type )` |
-| `_CABillgLockedForInvcg` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABillgLockedForInvoicing` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as invlock_kk preserving type )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CABillgLockedForInvcgText` |  | |  | `cast ( ddtext as invlock_txt_gfn_kk preserving type )` |
+| `_CABillgLockedForInvcg` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast( t001.bukrs as fis_bukrs preserving type )` |
-| key `Language` | `t009c.spras` |
-| key `FiscalYear` | `cast( finsc_period.fiscal_year as fis_gjahr_no_conv preserving type )` |
-| key `FiscalPeriod` | `cast( t009c.poper as fins_fiscalperiod preserving type )` |
-| `FiscalYearVariant` | `cast( t009c.periv as fis_periv preserving type )` |
-| `FiscalPeriodName` | `t009c.ltext` |
-| `_CompanyCode` | *Association* |
-| `_FiscalYearVariant` | *Association* |
-| `_FiscalYear` | *Association* |
-| `_FiscalYearForCompanyCode` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast( t001.bukrs as fis_bukrs preserving type )` |
+| `Language` | ✓ | |  | `spras` |
+| `FiscalYear` | ✓ | |  | `cast( finsc_period.fiscal_year as fis_gjahr_no_conv preserving type )` |
+| `FiscalPeriod` | ✓ | |  | `cast( t009c.poper as fins_fiscalperiod preserving type )` |
+| `FiscalYearVariant` |  | |  | `cast( t009c.periv as fis_periv preserving type )` |
+| `FiscalPeriodName` |  | |  | `ltext` |
+| `_CompanyCode` | | ✓ | | |
+| `_FiscalYearVariant` | | ✓ | | |
+| `_FiscalYear` | | ✓ | | |
+| `_FiscalYearForCompanyCode` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `REFixedPeriod` | `fixper` |
-| `REFixedPeriodDesc` | `xfixper` |
-| `_FixedPeriod` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `REFixedPeriod` | ✓ | |  | `fixper` |
+| `REFixedPeriodDesc` |  | |  | `xfixper` |
+| `_FixedPeriod` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

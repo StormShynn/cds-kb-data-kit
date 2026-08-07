@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `cast (bukrs as fis_bukrs)` |
-| key `PaymentDifferenceReason` | `cast (rstgr as farp_rstgr)` |
-| `IsDisputed` | `xstrp` |
-| `PaytDiffIsChargedToSprtGLAcct` | `xausb` |
-| `_Text` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` |
+| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` |
+| `IsDisputed` |  | |  | `xstrp` |
+| `PaytDiffIsChargedToSprtGLAcct` |  | |  | `xausb` |
+| `_Text` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

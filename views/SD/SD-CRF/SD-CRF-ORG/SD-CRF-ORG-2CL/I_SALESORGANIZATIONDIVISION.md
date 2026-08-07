@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrganization` | `vkorg` |
-| key `Division` | `spart` |
-| `ReferenceDivision` | `spaku` |
-| `_SalesOrganization` | *Association* |
-| `_Division` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  | `vkorg` |
+| `Division` | ✓ | |  | `spart` |
+| `ReferenceDivision` |  | |  | `spaku` |
+| `_SalesOrganization` | | ✓ | | |
+| `_Division` | | ✓ | | |
 
 ## Associations
 

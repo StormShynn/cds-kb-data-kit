@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductType` | `cast(t134.mtart as producttype preserving type )` |
-| `ProductTypeCode` | `prod_type_code` |
-| `AuthorizationGroup` | `t134.begru` |
-| `MaintenanceStatus` | `t134.pstat` |
-| `_Text` | *Association* |
-| `_ProductTypeCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductType` | ✓ | |  | `cast(t134.mtart as producttype preserving type )` |
+| `ProductTypeCode` |  | |  | `prod_type_code` |
+| `AuthorizationGroup` |  | |  | `begru` |
+| `MaintenanceStatus` |  | |  | `pstat` |
+| `_Text` | | ✓ | | |
+| `_ProductTypeCode` | | ✓ | | |
 
 ## Associations
 

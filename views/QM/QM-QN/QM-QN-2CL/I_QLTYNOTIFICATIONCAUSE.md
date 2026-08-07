@@ -27,31 +27,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityNotification` | `I_NotificationCause.Notification` |
-| key `NotificationItem` | `I_NotificationCause.NotificationItem` |
-| key `NotificationCauseID` | `I_NotificationCause.NotificationCauseID` |
-| `NotificationCauseSortNumber` | `I_NotificationCause.NotificationCauseSortNumber` |
-| `CreatedByUser` | `I_NotificationCause.CreatedByUser` |
-| `CreationDate` | `I_NotificationCause.CreationDate` |
-| `CreationTime` | `I_NotificationCause.CreationTime` |
-| `LastChangedByUser` | `I_NotificationCause.LastChangedByUser` |
-| `LastChangeDate` | `I_NotificationCause.LastChangeDate` |
-| `LastChangeTime` | `I_NotificationCause.LastChangeTime` |
-| `NotificationCauseText` | `I_NotificationCause.NotificationCauseText` |
-| `NotificationCauseCodeCatalog` | `cast( I_NotificationCause.NotificationCauseCodeCatalog as vdm_qurkat preserving type )` |
-| `NotificationCauseCodeGroup` | `cast( I_NotificationCause.NotificationCauseCodeGroup as vdm_qurgrp preserving type )` |
-| `NotificationCauseCode` | `I_NotificationCause.NotificationCauseCode` |
-| `ChangedDateTime` | `I_NotificationCause.ChangedDateTime` |
-| `MasterLanguage` | `I_NotificationCause.MasterLanguage` |
-| `NotificationRootCause` | `I_NotificationCause.NotificationRootCause` |
-| `IsDeleted` | `cast( I_NotificationCause.IsDeleted as vdm_qisdeleted preserving type )` |
-| `IsBusinessPurposeCompleted` | `I_NotificationCause.IsBusinessPurposeCompleted` |
-| `_QltyNotification` | *Association* |
-| `_QualityNotificationItem` | *Association* |
-| `_Notification` | *Association* |
-| `_NotificationItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityNotification` | ✓ | |  | `Notification` |
+| `NotificationItem` | ✓ | |  |  |
+| `NotificationCauseID` | ✓ | |  |  |
+| `NotificationCauseSortNumber` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangeTime` |  | |  |  |
+| `NotificationCauseText` |  | |  |  |
+| `NotificationCauseCodeCatalog` |  | |  | `cast( I_NotificationCause.NotificationCauseCodeCatalog as vdm_qurkat preserving type )` |
+| `NotificationCauseCodeGroup` |  | |  | `cast( I_NotificationCause.NotificationCauseCodeGroup as vdm_qurgrp preserving type )` |
+| `NotificationCauseCode` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `MasterLanguage` |  | |  |  |
+| `NotificationRootCause` |  | |  |  |
+| `IsDeleted` |  | |  | `cast( I_NotificationCause.IsDeleted as vdm_qisdeleted preserving type )` |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `_QltyNotification` | | ✓ | | |
+| `_QualityNotificationItem` | | ✓ | | |
+| `_Notification` | | ✓ | | |
+| `_NotificationItem` | | ✓ | | |
 
 ## Associations
 

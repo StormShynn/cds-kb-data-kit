@@ -29,30 +29,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BankStatementShortID` | `BankStatementShortID` |
-| key `BankStatementItem` | `BankStatementItem` |
-| key `BkStmntItemTransactionDetailID` | `BkStmntItemTransactionDetailID` |
-| `AmountInTransactionCurrency` | `AmountInTransactionCurrency` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `DebitCreditCode` | `DebitCreditCode` |
-| `PaymentTransactionText` | `PaymentTransactionText` |
-| `PaymentFileMsgIdentification` | `PaymentFileMsgIdentification` |
-| `AccountServicerReference` | `AccountServicerReference` |
-| `PaytInformationIdentification` | `PaytInformationIdentification` |
-| `PaytInstructionIdentification` | `PaytInstructionIdentification` |
-| `PaymentEndToEndIdentification` | `PaymentEndToEndIdentification` |
-| `SWIFTTransactionReferenceUUID` | `SWIFTTransactionReferenceUUID` |
-| `PaytTransactionIdentification` | `PaytTransactionIdentification` |
-| `BankStatementSEPAMandate` | `BankStatementSEPAMandate` |
-| `BankStatementCheque` | `BankStatementCheque` |
-| `PaytProcessingIdentification` | `PaytProcessingIdentification` |
-| `PaymentProprietaryType` | `PaymentProprietaryType` |
-| `PaymentProprietaryReference` | `PaymentProprietaryReference` |
-| `PaymentAdditionalInfoString` | `PaymentAdditionalInfoString` |
-| `_Item` | *Association* |
-| `_BankStatement` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BankStatementShortID` | ✓ | |  |  |
+| `BankStatementItem` | ✓ | |  |  |
+| `BkStmntItemTransactionDetailID` | ✓ | |  |  |
+| `AmountInTransactionCurrency` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `DebitCreditCode` |  | |  |  |
+| `PaymentTransactionText` |  | |  |  |
+| `PaymentFileMsgIdentification` |  | |  |  |
+| `AccountServicerReference` |  | |  |  |
+| `PaytInformationIdentification` |  | |  |  |
+| `PaytInstructionIdentification` |  | |  |  |
+| `PaymentEndToEndIdentification` |  | |  |  |
+| `SWIFTTransactionReferenceUUID` |  | |  |  |
+| `PaytTransactionIdentification` |  | |  |  |
+| `BankStatementSEPAMandate` |  | |  |  |
+| `BankStatementCheque` |  | |  |  |
+| `PaytProcessingIdentification` |  | |  |  |
+| `PaymentProprietaryType` |  | |  |  |
+| `PaymentProprietaryReference` |  | |  |  |
+| `PaymentAdditionalInfoString` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_BankStatement` | | ✓ | | |
 
 ## Associations
 

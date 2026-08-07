@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternationalArticleNumberCat` | `numtp` |
-| key `Language` | `tntpb.spras` |
-| `IntlArticleNumberCatName` | `ntbez` |
-| `_InternationalArticleNumberCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternationalArticleNumberCat` | ✓ | |  | `numtp` |
+| `Language` | ✓ | |  | `spras` |
+| `IntlArticleNumberCatName` |  | |  | `ntbez` |
+| `_InternationalArticleNumberCat` | | ✓ | | |
 
 ## Associations
 

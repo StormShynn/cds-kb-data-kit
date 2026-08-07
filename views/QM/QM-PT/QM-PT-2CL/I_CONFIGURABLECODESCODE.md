@@ -27,15 +27,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfigurableCodesCatalog` | `qpcd.katalogart` |
-| key `ConfigurableCodesCodeGroup` | `codegruppe` |
-| key `ConfigurableCodesCode` | `code` |
-| `ConfigblCodesCodeGrpIsInactv` | `case qpcd.inaktiv when ' ' then cast( ' ' as vdm_qm_codeisinactive preserving type ) else cast( 'X' as vdm_qm_codeisinactive preserving type ) end` |
-| `_ConfigurableCodesCatalog` | *Association* |
-| `_ConfigurableCodesCodeGroup` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfigurableCodesCatalog` | ✓ | |  | `katalogart` |
+| `ConfigurableCodesCodeGroup` | ✓ | |  | `codegruppe` |
+| `ConfigurableCodesCode` | ✓ | |  | `code` |
+| `ConfigblCodesCodeGrpIsInactv` |  | |  | `case qpcd.inaktiv when ' ' then cast( ' ' as vdm_qm_codeisinactive preserving type ) else cast( 'X' as vdm_qm_codeisinactive preserving type ) end` |
+| `_ConfigurableCodesCatalog` | | ✓ | | |
+| `_ConfigurableCodesCodeGroup` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

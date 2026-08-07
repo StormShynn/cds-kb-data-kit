@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `Plant` |
-| `PlantName` | `PlantName` |
-| `CompanyCode` | `_ValuationArea.CompanyCode` |
-| `BusinessPlace` | `BusinessPlace` |
-| `_CompanyCode` | *Association* |
-| `_BusinessPlace` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `PlantName` |  | |  |  |
+| `CompanyCode` |  | | `_ValuationArea` | `CompanyCode` |
+| `BusinessPlace` |  | |  |  |
+| `_CompanyCode` | | ✓ | | |
+| `_BusinessPlace` | | ✓ | | |
 
 ## Associations
 

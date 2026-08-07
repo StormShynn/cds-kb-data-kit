@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `EWMStorageBinIsUtilized` | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as ewm_de_storagebinisutilized preserving type )` |
-| `EWMStorageBinUtilizedDesc` | `cast( ddtext as ewm_de_storbinutilizeddesc preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `EWMStorageBinIsUtilized` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as ewm_de_storagebinisutilized preserving type )` |
+| `EWMStorageBinUtilizedDesc` |  | |  | `cast( ddtext as ewm_de_storbinutilizeddesc preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

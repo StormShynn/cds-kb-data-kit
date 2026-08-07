@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ReturnsDocumentType` | `cast( substring(dd07t.domvalue_l, 1, 2) as msr_doc_type)` |
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `ReturnsDocumentTypeName` | `dd07t.ddtext` |
-| `_ReturnsDocumentType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ReturnsDocumentType` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 2) as msr_doc_type)` |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ReturnsDocumentTypeName` |  | |  | `ddtext` |
+| `_ReturnsDocumentType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

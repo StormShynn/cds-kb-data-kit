@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShippingCondition` | `vsbed` |
-| key `LoadingGroup` | `ladgr` |
-| key `Plant` | `werks` |
-| key `StorageLocation` | `lgort` |
-| `ProposedShippingPoint` | `vstel` |
-| `AlternativeShippingPoint1` | `vste1` |
-| `AlternativeShippingPoint2` | `vste2` |
-| `AlternativeShippingPoint3` | `vste3` |
-| `AlternativeShippingPoint4` | `vste4` |
-| `AlternativeShippingPoint5` | `vste5` |
-| `AlternativeShippingPoint6` | `vste6` |
-| `AlternativeShippingPoint7` | `vste7` |
-| `AlternativeShippingPoint8` | `vste8` |
-| `AlternativeShippingPoint9` | `vste9` |
-| `AlternativeShippingPoint10` | `vste10` |
-| `AlternativeShippingPoint11` | `vste11` |
-| `_LoadingGroup` | *Association* |
-| `_ShippingCondition` | *Association* |
-| `_Plant` | *Association* |
-| `_StorageLocation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShippingCondition` | ✓ | |  | `vsbed` |
+| `LoadingGroup` | ✓ | |  | `ladgr` |
+| `Plant` | ✓ | |  | `werks` |
+| `StorageLocation` | ✓ | |  | `lgort` |
+| `ProposedShippingPoint` |  | |  | `vstel` |
+| `AlternativeShippingPoint1` |  | |  | `vste1` |
+| `AlternativeShippingPoint2` |  | |  | `vste2` |
+| `AlternativeShippingPoint3` |  | |  | `vste3` |
+| `AlternativeShippingPoint4` |  | |  | `vste4` |
+| `AlternativeShippingPoint5` |  | |  | `vste5` |
+| `AlternativeShippingPoint6` |  | |  | `vste6` |
+| `AlternativeShippingPoint7` |  | |  | `vste7` |
+| `AlternativeShippingPoint8` |  | |  | `vste8` |
+| `AlternativeShippingPoint9` |  | |  | `vste9` |
+| `AlternativeShippingPoint10` |  | |  | `vste10` |
+| `AlternativeShippingPoint11` |  | |  | `vste11` |
+| `_LoadingGroup` | | ✓ | | |
+| `_ShippingCondition` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_StorageLocation` | | ✓ | | |
 
 ## Source Code
 

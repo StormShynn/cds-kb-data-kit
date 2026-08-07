@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdAllocationActivationStatus` | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationactivationstatus preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdAllocationActivationStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationactivationstatus preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

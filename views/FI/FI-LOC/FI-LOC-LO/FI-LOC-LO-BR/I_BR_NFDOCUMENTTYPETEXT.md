@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_BR_NFDocumentTypeText.spras` |
-| key `BR_NFDocumentType` | `_BR_NFDocumentTypeText.doctyp` |
-| `BR_NFDocumentTypeDesc` | `cast(_BR_NFDocumentTypeText.text as logbr_nf_doc_type_desc)` |
-| `_BR_NFDocumentType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_BR_NFDocumentTypeText` | `spras` |
+| `BR_NFDocumentType` | ✓ | | `_BR_NFDocumentTypeText` | `doctyp` |
+| `BR_NFDocumentTypeDesc` |  | |  | `cast(_BR_NFDocumentTypeText.text as logbr_nf_doc_type_desc)` |
+| `_BR_NFDocumentType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

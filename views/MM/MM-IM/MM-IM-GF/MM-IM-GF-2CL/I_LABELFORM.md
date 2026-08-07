@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LabelForm` | `cast( etifo as labelform preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LabelForm` | ✓ | |  | `cast( etifo as labelform preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

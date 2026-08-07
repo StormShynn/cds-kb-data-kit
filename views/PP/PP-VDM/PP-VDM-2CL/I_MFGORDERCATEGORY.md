@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturingOrderCategory` | `cast( cast(substring(l.domvalue_l, 1, 2) as abap.numc(2) ) as manufacturingordercategory preserving type)` |
-| `DomainValue` | `l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrderCategory` | ✓ | |  | `cast( cast(substring(l.domvalue_l, 1, 2) as abap.numc(2) ) as manufacturingordercategory preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

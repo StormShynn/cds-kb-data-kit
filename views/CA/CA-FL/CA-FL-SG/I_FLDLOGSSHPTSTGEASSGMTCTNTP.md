@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsShptVoyageUUID` | `FldLogsShptVoyageUUID` |
-| key `FldLogsVoyStgeAssgmtUUID` | `FldLogsVoyStgeAssgmtUUID` |
-| `FldLogsVoyStgeAssgmtSqncID` | `FldLogsVoyStgeAssgmtSqncID` |
-| `FldLogsShipmentItemTypeCode` | `FldLogsShipmentItemTypeCode` |
-| `FldLogsShptVoyageNumber` | `FldLogsShptVoyageNumber` |
-| `FldLogsShptVoyageTypeCode` | `FldLogsShptVoyageTypeCode` |
-| `FldLogsShptVoyageVehicleNumber` | `FldLogsShptVoyageVehicleNumber` |
-| `FldLogsShptVoyageVehicleName` | `FldLogsShptVoyageVehicleName` |
-| `FldLogsVoyageChangeDateTime` | `FldLogsVoyageChangeDateTime` |
-| `FldLogsSrcePlnt` | `FldLogsSrcePlnt` |
-| `FldLogsDestPlnt` | `FldLogsDestPlnt` |
-| `FldLogsVoyageSrceStage` | `FldLogsVoyageSrceStage` |
-| `FldLogsVoyageDestStage` | `FldLogsVoyageDestStage` |
-| `FldLogsShptAssignmentStatus` | `FldLogsShptAssignmentStatus` |
-| `_ShptCtnUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsShptVoyageUUID` | ✓ | |  |  |
+| `FldLogsVoyStgeAssgmtUUID` | ✓ | |  |  |
+| `FldLogsVoyStgeAssgmtSqncID` |  | |  |  |
+| `FldLogsShipmentItemTypeCode` |  | |  |  |
+| `FldLogsShptVoyageNumber` |  | |  |  |
+| `FldLogsShptVoyageTypeCode` |  | |  |  |
+| `FldLogsShptVoyageVehicleNumber` |  | |  |  |
+| `FldLogsShptVoyageVehicleName` |  | |  |  |
+| `FldLogsVoyageChangeDateTime` |  | |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |
+| `FldLogsDestPlnt` |  | |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |
+| `FldLogsShptAssignmentStatus` |  | |  |  |
+| `_ShptCtnUnit` | | ✓ | | |
 
 ## Source Code
 

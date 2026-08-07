@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesDocument` | `I_SalesDocumentItem.SalesDocument` |
-| key `SalesDocumentItem` | `I_SalesDocumentItem.SalesDocumentItem` |
-| `SalesDocumentItemText` | `I_SalesDocumentItem.SalesDocumentItemText` |
-| `SalesDocumentType` | `I_SalesDocumentItem.SalesDocumentType` |
-| `OrganizationDivision` | `I_SalesDocumentItem.OrganizationDivision` |
-| `SalesOrganization` | `I_SalesDocumentItem.SalesOrganization` |
-| `DistributionChannel` | `I_SalesDocumentItem.DistributionChannel` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesDocument` | ✓ | |  |  |
+| `SalesDocumentItem` | ✓ | |  |  |
+| `SalesDocumentItemText` |  | |  |  |
+| `SalesDocumentType` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
 
 ## Source Code
 

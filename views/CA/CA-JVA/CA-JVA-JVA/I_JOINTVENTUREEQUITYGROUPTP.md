@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `JointVenture` | `JointVenture` |
-| key `JntOpgAgrmtEquityGrp` | `JntOpgAgrmtEquityGrp` |
-| `JntOpgAgrmtEquityGrpText` | `JntOpgAgrmtEquityGrpText` |
-| `JntVntrOperatedShare` | `JntVntrOperatedShare` |
-| `JntVntrNonOperatedShare` | `JntVntrNonOperatedShare` |
-| `JntVntrEquityGrpIsSuspended` | `JntVntrEquityGrpIsSuspended` |
-| `JntVntrEquityGrpSuspendedPerd` | `JntVntrEquityGrpSuspendedPerd` |
-| `JntVntrEquityGrpSuspendedYr` | `JntVntrEquityGrpSuspendedYr` |
-| `JntVntrEquityGrpIsNotSuspended` | `JntVntrEquityGrpIsNotSuspended` |
-| `JntVntrGrpNotSuspendedPerd` | `JntVntrGrpNotSuspendedPerd` |
-| `JntVntrGrpNotSuspendedYr` | `JntVntrGrpNotSuspendedYr` |
-| `JntVntrNetProfitIntrstGrp` | `JntVntrNetProfitIntrstGrp` |
-| `_JointVenture` | *Association* |
-| `_JntVntrPartOwnrEquityShr` | *Association* |
-| `_JntVntrFundCrcyByEquityGrp` | *Association* |
-| `_JntVntrSubstitCostObject` | *Association* |
-| `_JointVentureIntcoVenture` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `JointVenture` | ✓ | |  |  |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  |  |
+| `JntOpgAgrmtEquityGrpText` |  | |  |  |
+| `JntVntrOperatedShare` |  | |  |  |
+| `JntVntrNonOperatedShare` |  | |  |  |
+| `JntVntrEquityGrpIsSuspended` |  | |  |  |
+| `JntVntrEquityGrpSuspendedPerd` |  | |  |  |
+| `JntVntrEquityGrpSuspendedYr` |  | |  |  |
+| `JntVntrEquityGrpIsNotSuspended` |  | |  |  |
+| `JntVntrGrpNotSuspendedPerd` |  | |  |  |
+| `JntVntrGrpNotSuspendedYr` |  | |  |  |
+| `JntVntrNetProfitIntrstGrp` |  | |  |  |
+| `_JointVenture` | | ✓ | | |
+| `_JntVntrPartOwnrEquityShr` | | ✓ | | |
+| `_JntVntrFundCrcyByEquityGrp` | | ✓ | | |
+| `_JntVntrSubstitCostObject` | | ✓ | | |
+| `_JointVentureIntcoVenture` | | ✓ | | |
 
 ## Source Code
 

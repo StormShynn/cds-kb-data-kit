@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SamplingProcedureMltplSamples` | `cast ( substring( domvalue_l, 1, 1 ) as qkzumfs preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SamplingProcedureMltplSamples` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as qkzumfs preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

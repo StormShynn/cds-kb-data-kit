@@ -27,37 +27,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `typ.werks` |
-| key `OrderType` | `typ.auart` |
-| `OrderCategory` | `cast(typ.autyp as pph_autyp preserving type)` |
-| `BillOfOperationsType` | `cast(typ.plnty as billofoperationstype preserving type)` |
-| `SettlementDefaultRule` | `typ.dfreg` |
-| `VarianceKey` | `typ.awsls` |
-| `InspectionLotType` | `typ.pruefart` |
-| `BOMExplosionApplication` | `typ.capid` |
-| `PlannedCostsCostingVariant` | `typ.klvarp` |
-| `ActualCostsCostingVariant` | `typ.klvari` |
-| `BillOfOperationSelection` | `typ.arbpa` |
-| `ResultAnalysisInternalID` | `typ.abgsl` |
-| `LeadTimeReductionStrategy` | `typ.rstra` |
-| `AcctAssgmtIsDfndAtOpLvl` | `typ.objnr_vorg` |
-| `OrderIsNotCostedAutomatically` | `typ.naucost` |
-| `ProductCostCollectorIsCostObj` | `typ.pkosa` |
-| `ProductionVersionSelection` | `typ.pvsel` |
-| `EventBasedProcessingKey` | `typ.ebw_key` |
-| `StsChgDocIsActiveForHeader` | `cast(chgkz_head as vdm_chgkz_h preserving type)` |
-| `StsChgDocIsActiveForOperation` | `cast(chgkz_opr as vdm_chgkz_o preserving type)` |
-| `StsChgDocIsActiveForComponent` | `cast(chgkz_cmp as vdm_chgkz_c preserving type)` |
-| `StsChgDocIsActiveForPRT` | `cast(chgkz_prt as vdm_chgkz_p preserving type)` |
-| `_Plant` | *Association* |
-| `_OrderCategory` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_InspectionLotType` | *Association* |
-| `_ActualCostsCostingVariant` | *Association* |
-| `_PlannedCostsCostingVariant` | *Association* |
-| `_LeadTimeReductionStrategy` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  | `werks` |
+| `OrderType` | ✓ | |  | `auart` |
+| `OrderCategory` |  | |  | `cast(typ.autyp as pph_autyp preserving type)` |
+| `BillOfOperationsType` |  | |  | `cast(typ.plnty as billofoperationstype preserving type)` |
+| `SettlementDefaultRule` |  | |  | `dfreg` |
+| `VarianceKey` |  | |  | `awsls` |
+| `InspectionLotType` |  | |  | `pruefart` |
+| `BOMExplosionApplication` |  | |  | `capid` |
+| `PlannedCostsCostingVariant` |  | |  | `klvarp` |
+| `ActualCostsCostingVariant` |  | |  | `klvari` |
+| `BillOfOperationSelection` |  | |  | `arbpa` |
+| `ResultAnalysisInternalID` |  | |  | `abgsl` |
+| `LeadTimeReductionStrategy` |  | |  | `rstra` |
+| `AcctAssgmtIsDfndAtOpLvl` |  | |  | `objnr_vorg` |
+| `OrderIsNotCostedAutomatically` |  | |  | `naucost` |
+| `ProductCostCollectorIsCostObj` |  | |  | `pkosa` |
+| `ProductionVersionSelection` |  | |  | `pvsel` |
+| `EventBasedProcessingKey` |  | |  | `ebw_key` |
+| `StsChgDocIsActiveForHeader` |  | |  | `cast(chgkz_head as vdm_chgkz_h preserving type)` |
+| `StsChgDocIsActiveForOperation` |  | |  | `cast(chgkz_opr as vdm_chgkz_o preserving type)` |
+| `StsChgDocIsActiveForComponent` |  | |  | `cast(chgkz_cmp as vdm_chgkz_c preserving type)` |
+| `StsChgDocIsActiveForPRT` |  | |  | `cast(chgkz_prt as vdm_chgkz_p preserving type)` |
+| `_Plant` | | ✓ | | |
+| `_OrderCategory` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_InspectionLotType` | | ✓ | | |
+| `_ActualCostsCostingVariant` | | ✓ | | |
+| `_PlannedCostsCostingVariant` | | ✓ | | |
+| `_LeadTimeReductionStrategy` | | ✓ | | |
 
 ## Associations
 

@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PostingKey` | `PostingKey` |
-| key `SpecialGLCode` | `SpecialGLCode` |
-| `_Text` | *Association* |
-| `_PostingKey` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PostingKey` | ✓ | |  |  |
+| `SpecialGLCode` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
+| `_PostingKey` | | ✓ | | |
 
 ## Associations
 

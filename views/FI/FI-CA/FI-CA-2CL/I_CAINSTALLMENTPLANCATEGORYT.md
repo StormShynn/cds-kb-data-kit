@@ -27,12 +27,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInstallmentPlanCategory` | `rpcat` |
-| key `Language` | `spras` |
-| `CAInstallmentPlanCategoryName` | `rpctxt` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` |
+| `Language` | ✓ | |  | `spras` |
+| `CAInstallmentPlanCategoryName` |  | |  | `rpctxt` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

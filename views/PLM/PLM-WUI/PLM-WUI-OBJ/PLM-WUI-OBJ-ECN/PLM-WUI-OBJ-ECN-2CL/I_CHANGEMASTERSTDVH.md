@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeNumber` | `ChangeNumber` |
-| `ChangeNumberDescription` | `ChangeNumberDescription` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `ChangeNumberFunction` | `ChangeNumberFunction` |
-| `ChangeNumberReleaseKey` | `ChangeNumberReleaseKey` |
-| `ChangeNumberStatus` | `ChangeNumberStatus` |
-| `ChangeNumberIsMrkdForDeletion` | `ChangeNumberIsMrkdForDeletion` |
-| `ChangeNumberValidFromDate` | `ChangeNumberValidFromDate` |
-| `_LogAccMObjectTypeActive` | *Association* |
-| `_LogAccMObjectUserAuthzn` | *Association* |
-| `_LogAccMObjSecureIDAssgmt` | *Association* |
-| `_ChangeMasterLogAccMActive` | *Association* |
-| `_ChgMstrLogAccMSecureIDAssgmt` | *Association* |
-| `_ChangeMstrLogAccMUserAuthzn` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeNumber` | ✓ | |  |  |
+| `ChangeNumberDescription` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `ChangeNumberFunction` |  | |  |  |
+| `ChangeNumberReleaseKey` |  | |  |  |
+| `ChangeNumberStatus` |  | |  |  |
+| `ChangeNumberIsMrkdForDeletion` |  | |  |  |
+| `ChangeNumberValidFromDate` |  | |  |  |
+| `_LogAccMObjectTypeActive` | | ✓ | | |
+| `_LogAccMObjectUserAuthzn` | | ✓ | | |
+| `_LogAccMObjSecureIDAssgmt` | | ✓ | | |
+| `_ChangeMasterLogAccMActive` | | ✓ | | |
+| `_ChgMstrLogAccMSecureIDAssgmt` | | ✓ | | |
+| `_ChangeMstrLogAccMUserAuthzn` | | ✓ | | |
 
 ## Source Code
 

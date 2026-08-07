@@ -28,19 +28,19 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ManufacturingOrder` | `cast(aufk.OrderID as manufacturingorder preserving type)` |
-| key `StatusCode` | `jest.StatusCode` |
-| `StatusObject` | `cast(jest.StatusObject as j_objnr preserving type)` |
-| `StatusProfile` | `jest.StatusProfile` |
-| `IsUserStatus` | `cast(jest.IsUserStatus as vdm_j_isuserstatus preserving type)` |
-| `StatusIsActive` | `cast(jest.StatusIsActive as vdm_j_statusisactive preserving type)` |
-| `StatusIsInactive` | `jest.StatusIsInactive` |
-| `ManufacturingOrderCategory` | `aufk.OrderCategory` |
-| `_MfgOrderCategory` | *Association* |
-| `_ManufacturingOrder` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ManufacturingOrder` | ✓ | |  | `cast(aufk.OrderID as manufacturingorder preserving type)` |
+| `StatusCode` | ✓ | |  |  |
+| `StatusObject` |  | |  | `cast(jest.StatusObject as j_objnr preserving type)` |
+| `StatusProfile` |  | |  |  |
+| `IsUserStatus` |  | |  | `cast(jest.IsUserStatus as vdm_j_isuserstatus preserving type)` |
+| `StatusIsActive` |  | |  | `cast(jest.StatusIsActive as vdm_j_statusisactive preserving type)` |
+| `StatusIsInactive` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  | `OrderCategory` |
+| `_MfgOrderCategory` | | ✓ | | |
+| `_ManufacturingOrder` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

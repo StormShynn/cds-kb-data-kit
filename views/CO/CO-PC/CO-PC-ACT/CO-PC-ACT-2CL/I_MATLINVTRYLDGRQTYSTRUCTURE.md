@@ -28,39 +28,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostEstimate` | `CostEstimate` |
-| key `CurrencyRole` | `CurrencyRole` |
-| key `Ledger` | `Ledger` |
-| key `MaterialLedgerCategory` | `MaterialLedgerCategory` |
-| key `ProcessCategory` | `ProcessCategory` |
-| key `ValuationArea` | `ValuationArea` |
-| key `PriceDeterminationControl` | `PriceDeterminationControl` |
-| `Material` | `Material` |
-| `InventoryValuationType` | `InventoryValuationType` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `Supplier` | `Supplier` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `MaterialLedgerCategoryText` | `MaterialLedgerCategoryText` |
-| `ProcessCategoryName` | `ProcessCategoryName` |
-| `InventorySpecialStockTypeName` | `InventorySpecialStockTypeName` |
-| `TotalVltdStockQuantity` | `TotalVltdStockQuantity` |
-| `ValuationQuantityUnit` | `ValuationQuantityUnit` |
-| `InventoryAmtInDspCrcy` | `InventoryAmtInDspCrcy` |
-| `InvtryTransacAmtInDisplayCrcy` | `InvtryTransacAmtInDisplayCrcy` |
-| `PriceDiffAmtInDisplayCrcy` | `PriceDiffAmtInDisplayCrcy` |
-| `ExchRateDiffAmtInDspCurrency` | `ExchRateDiffAmtInDspCurrency` |
-| `Currency` | `Currency` |
-| `ControllingArea` | `ControllingArea` |
-| `ControllingValuationType` | `ControllingValuationType` |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
-| `_Ledger` | *Association* |
-| `_Currency` | *Association* |
-| `_QuantityUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostEstimate` | ✓ | |  |  |
+| `CurrencyRole` | ✓ | |  |  |
+| `Ledger` | ✓ | |  |  |
+| `MaterialLedgerCategory` | ✓ | |  |  |
+| `ProcessCategory` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `PriceDeterminationControl` | ✓ | |  |  |
+| `Material` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `MaterialLedgerCategoryText` |  | |  |  |
+| `ProcessCategoryName` |  | |  |  |
+| `InventorySpecialStockTypeName` |  | |  |  |
+| `TotalVltdStockQuantity` |  | |  |  |
+| `ValuationQuantityUnit` |  | |  |  |
+| `InventoryAmtInDspCrcy` |  | |  |  |
+| `InvtryTransacAmtInDisplayCrcy` |  | |  |  |
+| `PriceDiffAmtInDisplayCrcy` |  | |  |  |
+| `ExchRateDiffAmtInDspCurrency` |  | |  |  |
+| `Currency` |  | |  |  |
+| `ControllingArea` |  | |  |  |
+| `ControllingValuationType` |  | |  |  |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_Ledger` | | ✓ | | |
+| `_Currency` | | ✓ | | |
+| `_QuantityUnit` | | ✓ | | |
 
 ## Associations
 

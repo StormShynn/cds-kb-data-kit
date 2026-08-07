@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityInspectionDocUUID` | `P_EWM_QltyInspectionEmbedded.QualityInspectionDocUUID` |
-| `QualityInspectionDocument` | `P_EWM_QltyInspectionEmbedded.QualityInspectionDocument` |
-| `InspectionPartialLot` | `P_EWM_QltyInspectionEmbedded.InspectionPartialLot` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityInspectionDocUUID` | ✓ | |  |  |
+| `QualityInspectionDocument` |  | |  |  |
+| `InspectionPartialLot` |  | |  |  |
 
 ## Source Code
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinConditionConditionCategory` | `cast( sbktyp as ftr_cndn_condition_category preserving type )` |
-| `_ConditionCategoryText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinConditionConditionCategory` | ✓ | |  | `cast( sbktyp as ftr_cndn_condition_category preserving type )` |
+| `_ConditionCategoryText` | | ✓ | | |
 
 ## Associations
 

@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FldLogsShptVoyageUUID` | `FldLogsShptVoyageUUID` |
-| key `FldLogsVoyStgeAssgmtUUID` | `FldLogsVoyStgeAssgmtUUID` |
-| `FldLogsVoyStgeAssgmtSqncID` | `FldLogsVoyStgeAssgmtSqncID` |
-| `FldLogsShipmentItemTypeCode` | `FldLogsShipmentItemTypeCode` |
-| `FldLogsReferenceDocumentNumber` | `FldLogsReferenceDocumentNumber` |
-| `FldLogsShptItmHndlgUnitID` | `FldLogsShptItmHndlgUnitID` |
-| `HandlingUnitExternalID` | `HandlingUnitExternalID` |
-| `DeliveryDocument` | `DeliveryDocument` |
-| `FldLogsSrcePlnt` | `FldLogsSrcePlnt` |
-| `FldLogsDestPlnt` | `FldLogsDestPlnt` |
-| `FldLogsVoyageSrceStage` | `FldLogsVoyageSrceStage` |
-| `FldLogsVoyageDestStage` | `FldLogsVoyageDestStage` |
-| `FldLogsShptItemActualWeight` | `FldLogsShptItemActualWeight` |
-| `FldLogsShptItemActlWeightUnit` | `FldLogsShptItemActlWeightUnit` |
-| `FldLogsShptAssignmentStatus` | `FldLogsShptAssignmentStatus` |
-| `FldLogsShptVoyAssgmtCritlty` | `FldLogsShptVoyAssgmtCritlty` |
-| `_VoyageAssgmtText` | *Association* |
-| `_ItemType` | *Association* |
-| `_Voyage` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FldLogsShptVoyageUUID` | ✓ | |  |  |
+| `FldLogsVoyStgeAssgmtUUID` | ✓ | |  |  |
+| `FldLogsVoyStgeAssgmtSqncID` |  | |  |  |
+| `FldLogsShipmentItemTypeCode` |  | |  |  |
+| `FldLogsReferenceDocumentNumber` |  | |  |  |
+| `FldLogsShptItmHndlgUnitID` |  | |  |  |
+| `HandlingUnitExternalID` |  | |  |  |
+| `DeliveryDocument` |  | |  |  |
+| `FldLogsSrcePlnt` |  | |  |  |
+| `FldLogsDestPlnt` |  | |  |  |
+| `FldLogsVoyageSrceStage` |  | |  |  |
+| `FldLogsVoyageDestStage` |  | |  |  |
+| `FldLogsShptItemActualWeight` |  | |  |  |
+| `FldLogsShptItemActlWeightUnit` |  | |  |  |
+| `FldLogsShptAssignmentStatus` |  | |  |  |
+| `FldLogsShptVoyAssgmtCritlty` |  | |  |  |
+| `_VoyageAssgmtText` | | ✓ | | |
+| `_ItemType` | | ✓ | | |
+| `_Voyage` | | ✓ | | |
 
 ## Source Code
 

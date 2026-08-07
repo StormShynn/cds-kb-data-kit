@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `OrderInternalBillOfOperations` | `I_InspectionOperation.OrderInternalBillOfOperations` |
-| key `InspPlanOperationInternalID` | `I_InspectionOperation.InspPlanOperationInternalID` |
-| `InspectionOpIsCompletionNeeded` | `max(tqec30.oper_completion)` |
-| `InspOpHasCharc` | `max(case I_InspectionOperation.BillOfOperationsType when 'Q' then 1 else case I_StatusObjectStatusBasic.StatusIsInactive when 'X' then 0 else case I_StatusObjectStatusBasic.StatusCode when 'I0282' then 1 when 'I0283' then 1 else 0 end end end)` |
-| `MatlQualityAuthorizationGroup` | `I_InspectionOperation._InspectionLot.MatlQualityAuthorizationGroup` |
-| `InspectionLotType` | `I_InspectionOperation._InspectionLot.InspectionLotType` |
-| `Plant` | `I_InspectionOperation._InspectionLot.Plant` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `OrderInternalBillOfOperations` | ✓ | |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |
+| `InspectionOpIsCompletionNeeded` |  | |  | `max(tqec30.oper_completion)` |
+| `InspOpHasCharc` |  | |  | `max(case I_InspectionOperation.BillOfOperationsType when 'Q' then 1 else case I_StatusObjectStatusBasic.StatusIsInactive when 'X' then 0 else case I_StatusObjectStatusBasic.StatusCode when 'I0282' then 1 when 'I0283' then 1 else 0 end end end)` |
+| `MatlQualityAuthorizationGroup` |  | |  |  |
+| `InspectionLotType` |  | |  |  |
+| `Plant` |  | |  |  |
 
 ## Source Code
 

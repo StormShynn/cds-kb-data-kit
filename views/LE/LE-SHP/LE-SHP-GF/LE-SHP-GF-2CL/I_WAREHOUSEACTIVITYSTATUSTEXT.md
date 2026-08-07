@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WarehouseActivityStatus` | `statu` |
-| key `Language` | `spras` |
-| `WarehouseActivityStatusName` | `bezei` |
-| `_WarehouseActivityStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WarehouseActivityStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `WarehouseActivityStatusName` |  | |  | `bezei` |
+| `_WarehouseActivityStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventoryTransactionType` | `vgart` |
-| key `Language` | `spras` |
-| `InventoryTransactionTypeText` | `cast ( ltext as pi_transaction_type_text preserving type )` |
-| `_InventoryTransactionType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryTransactionType` | ✓ | |  | `vgart` |
+| `Language` | ✓ | |  | `spras` |
+| `InventoryTransactionTypeText` |  | |  | `cast ( ltext as pi_transaction_type_text preserving type )` |
+| `_InventoryTransactionType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -28,21 +28,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EntProjElmntDeliverableUUID` | `Deliverable.entprojelmntdeliverableuuid` |
-| `ProjectElementUUID` | `Deliverable.projectelementuuid` |
-| `ProjectUUID` | `Deliverable.projectuuid` |
-| `EntProjElmntDeliverableType` | `Deliverable.entprojelmntdeliverabletype` |
-| `EntProjElmntDlvbrlQuantity` | `Deliverable.entprojelmntdlvbrlquantity` |
-| `EntProjElmntDlvbrlQuantityUnit` | `Deliverable.entprojelmntdlvbrlquantityunit` |
-| `CreatedByUser` | `Deliverable.created_by` |
-| `CreationDateTime` | `Deliverable.created_on` |
-| `LastChangedByUser` | `Deliverable.changed_by` |
-| `LastChangeDateTime` | `Deliverable.changed_on` |
-| `_EnterpriseProjectElement` | *Association* |
-| `_EnterpriseProject` | *Association* |
-| `_EntProjElmntDlvDistr` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EntProjElmntDeliverableUUID` | ✓ | |  | `entprojelmntdeliverableuuid` |
+| `ProjectElementUUID` |  | |  | `projectelementuuid` |
+| `ProjectUUID` |  | |  | `projectuuid` |
+| `EntProjElmntDeliverableType` |  | |  | `entprojelmntdeliverabletype` |
+| `EntProjElmntDlvbrlQuantity` |  | |  | `entprojelmntdlvbrlquantity` |
+| `EntProjElmntDlvbrlQuantityUnit` |  | |  | `entprojelmntdlvbrlquantityunit` |
+| `CreatedByUser` |  | |  | `created_by` |
+| `CreationDateTime` |  | |  | `created_on` |
+| `LastChangedByUser` |  | |  | `changed_by` |
+| `LastChangeDateTime` |  | |  | `changed_on` |
+| `_EnterpriseProjectElement` | | ✓ | | |
+| `_EnterpriseProject` | | ✓ | | |
+| `_EntProjElmntDlvDistr` | | ✓ | | |
 
 ## Associations
 

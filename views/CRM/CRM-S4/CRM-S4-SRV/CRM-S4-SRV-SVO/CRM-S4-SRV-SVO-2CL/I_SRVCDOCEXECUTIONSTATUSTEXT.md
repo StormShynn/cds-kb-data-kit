@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `searchable` | `true` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `searchable` |  | |  | `true` |
 
 ## Source Code
 

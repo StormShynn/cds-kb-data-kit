@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessSolutionOrder` | `BusinessSolutionOrder` |
-| key `ServiceOrder` | `ServiceOrder` |
-| `_BusinessSolutionOrder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessSolutionOrder` | ✓ | |  |  |
+| `ServiceOrder` | ✓ | |  |  |
+| `_BusinessSolutionOrder` | | ✓ | | |
 
 ## Source Code
 

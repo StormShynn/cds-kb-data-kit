@@ -29,21 +29,21 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BR_NotaFiscal` | `NFTransportedVolume.docnum` |
-| key `BR_NFTransptVolumesSequence` | `NFTransportedVolume.counter` |
-| `BR_NFTransportedVolumeQtyVal` | `cast(NFTransportedVolume.qvol as logbr_trans_vol_quan preserving type)` |
-| `BR_NFTransportedVolumeType` | `cast(NFTransportedVolume.esp as logbr_trans_vol_type preserving type)` |
-| `BR_NFTransptVolumeTrademark` | `cast(NFTransportedVolume.marca as logbr_trans_vol_trademark preserving type)` |
-| `BR_NFTransportedVolumeID` | `cast(NFTransportedVolume.nvol as logbr_trans_vol_number preserving type)` |
-| `BR_NFTransptVolNetWeightUnit` | `cast('KG' as msehi)` |
-| `BR_NFTransptVolumeNetWeight` | `cast(NFTransportedVolume.pesol as logbr_trans_vol_net preserving type)` |
-| `BR_NFTransptVolGrossWgtUnit` | `cast('KG' as msehi)` |
-| `BR_NFTransptVolumeGrossWeight` | `cast(NFTransportedVolume.pesob as logbr_trans_vol_gross preserving type)` |
-| `BR_NFTransportedVolumeSeal` | `NFTransportedVolume.nlacre` |
-| `_BR_NFTransptVolNetWeightUnit` | *Association* |
-| `_BR_NFTransptVolGrossWgtUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BR_NotaFiscal` | ✓ | |  | `docnum` |
+| `BR_NFTransptVolumesSequence` | ✓ | |  | `counter` |
+| `BR_NFTransportedVolumeQtyVal` |  | |  | `cast(NFTransportedVolume.qvol as logbr_trans_vol_quan preserving type)` |
+| `BR_NFTransportedVolumeType` |  | |  | `cast(NFTransportedVolume.esp as logbr_trans_vol_type preserving type)` |
+| `BR_NFTransptVolumeTrademark` |  | |  | `cast(NFTransportedVolume.marca as logbr_trans_vol_trademark preserving type)` |
+| `BR_NFTransportedVolumeID` |  | |  | `cast(NFTransportedVolume.nvol as logbr_trans_vol_number preserving type)` |
+| `BR_NFTransptVolNetWeightUnit` |  | |  | `cast('KG' as msehi)` |
+| `BR_NFTransptVolumeNetWeight` |  | |  | `cast(NFTransportedVolume.pesol as logbr_trans_vol_net preserving type)` |
+| `BR_NFTransptVolGrossWgtUnit` |  | |  | `cast('KG' as msehi)` |
+| `BR_NFTransptVolumeGrossWeight` |  | |  | `cast(NFTransportedVolume.pesob as logbr_trans_vol_gross preserving type)` |
+| `BR_NFTransportedVolumeSeal` |  | |  | `nlacre` |
+| `_BR_NFTransptVolNetWeightUnit` | | ✓ | | |
+| `_BR_NFTransptVolGrossWgtUnit` | | ✓ | | |
 
 ## Associations
 

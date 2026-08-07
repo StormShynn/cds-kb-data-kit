@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CustomerGroup` | `CustomerGroup` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CustomerGroup` | ✓ | |  |  |
 
 ## Source Code
 

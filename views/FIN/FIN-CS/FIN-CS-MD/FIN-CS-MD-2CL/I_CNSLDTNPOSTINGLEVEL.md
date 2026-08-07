@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PostingLevel` | `cast(left(_Domain.DomainValue, 2) as fincs_postinglevel)` |
-| `ConsolidationReportingLevel` | `cast( case left(_Domain.DomainValue, 2) when '' then 'CO' when '00' then 'CO' when '01' then 'CO' when '0C' then 'CO' when '10' then 'CO' when '02' then 'GR' when '12' then 'GR' when '22' then 'GR' when '30' then 'GR' when '20' then 'PA' else '' end as fincs_reportinglevel preserving type )` |
-| `DomainValue` | `_Domain.DomainValue` |
-| `_Text` | *Association* |
-| `_Text_2` | *Association* |
-| `_ReportingLevel` | *Association* |
-| `_PostgLevelHierNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PostingLevel` | ✓ | |  | `cast(left(_Domain.DomainValue, 2) as fincs_postinglevel)` |
+| `ConsolidationReportingLevel` |  | |  | `cast( case left(_Domain.DomainValue, 2) when '' then 'CO' when '00' then 'CO' when '01' then 'CO' when '0C' then 'CO' when '10' then 'CO' when '02' then 'GR' when '12' then 'GR' when '22' then 'GR' when '30' then 'GR' when '20' then 'PA' else '' end as fincs_reportinglevel preserving type )` |
+| `DomainValue` |  | | `_Domain` | `DomainValue` |
+| `_Text` | | ✓ | | |
+| `_Text_2` | | ✓ | | |
+| `_ReportingLevel` | | ✓ | | |
+| `_PostgLevelHierNode` | | ✓ | | |
 
 ## Associations
 

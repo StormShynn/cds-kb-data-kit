@@ -27,9 +27,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `PricingType` | `knprs` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PricingType` |  | |  | `knprs` |
 
 ## Source Code
 

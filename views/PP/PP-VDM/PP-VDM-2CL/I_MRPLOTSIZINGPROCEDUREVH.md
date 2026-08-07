@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaterialLotSizingProcedure` | `MaterialLotSizingProcedure` |
-| `LotSizingProcedureType` | `LotSizingProcedureType` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaterialLotSizingProcedure` | ✓ | |  |  |
+| `LotSizingProcedureType` |  | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

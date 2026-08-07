@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `ShelfLifeExpirationDatePeriod` | `cast( dd07t.domvalue_l as shelflifeexpirationdateperiod )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `Name` | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `ShelfLifeExpirationDatePeriod` | ✓ | |  | `cast( dd07t.domvalue_l as shelflifeexpirationdateperiod )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `Name` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

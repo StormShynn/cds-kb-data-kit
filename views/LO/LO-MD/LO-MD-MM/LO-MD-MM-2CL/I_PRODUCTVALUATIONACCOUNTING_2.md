@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Product` | `ValuationAccount.Product` |
-| key `ValuationArea` | `ValuationAccount.ValuationArea` |
-| key `ValuationType` | `ValuationAccount.ValuationType` |
-| `CommercialPrice1InCoCodeCrcy` | `ValuationAccount.CommercialPrice1InCoCodeCrcy` |
-| `CommercialPrice2InCoCodeCrcy` | `ValuationAccount.CommercialPrice2InCoCodeCrcy` |
-| `CommercialPrice3InCoCodeCrcy` | `ValuationAccount.CommercialPrice3InCoCodeCrcy` |
-| `DevaluationYearCount` | `ValuationAccount.DevaluationYearCount` |
-| `FuturePrice` | `ValuationAccount.FuturePrice` |
-| `FuturePriceValidityStartDate` | `ValuationAccount.FuturePriceValidityStartDate` |
-| `IsLIFOAndFIFORelevant` | `ValuationAccount.IsLIFOAndFIFORelevant` |
-| `LIFOValuationPoolNumber` | `ValuationAccount.LIFOValuationPoolNumber` |
-| `StandardPricePrevYear` | `ValuationAccount.StandardPricePrevYear` |
-| `TaxPricel1InCoCodeCrcy` | `ValuationAccount.TaxPricel1InCoCodeCrcy` |
-| `TaxPrice2InCoCodeCrcy` | `ValuationAccount.TaxPrice2InCoCodeCrcy` |
-| `TaxPrice3InCoCodeCrcy` | `ValuationAccount.TaxPrice3InCoCodeCrcy` |
-| `TaxBasedPricesPriceUnitQty` | `ValuationAccount.TaxBasedPricesPriceUnitQty` |
-| `CompanyCode` | `t001k.bukrs` |
-| `Currency` | `t001.waers` |
-| `BaseUnit` | `_Product.BaseUnit` |
-| `_Product` | *Association* |
-| `_BaseUnitOfMeasure` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Product` | ✓ | |  |  |
+| `ValuationArea` | ✓ | |  |  |
+| `ValuationType` | ✓ | |  |  |
+| `CommercialPrice1InCoCodeCrcy` |  | |  |  |
+| `CommercialPrice2InCoCodeCrcy` |  | |  |  |
+| `CommercialPrice3InCoCodeCrcy` |  | |  |  |
+| `DevaluationYearCount` |  | |  |  |
+| `FuturePrice` |  | |  |  |
+| `FuturePriceValidityStartDate` |  | |  |  |
+| `IsLIFOAndFIFORelevant` |  | |  |  |
+| `LIFOValuationPoolNumber` |  | |  |  |
+| `StandardPricePrevYear` |  | |  |  |
+| `TaxPricel1InCoCodeCrcy` |  | |  |  |
+| `TaxPrice2InCoCodeCrcy` |  | |  |  |
+| `TaxPrice3InCoCodeCrcy` |  | |  |  |
+| `TaxBasedPricesPriceUnitQty` |  | |  |  |
+| `CompanyCode` |  | |  | `bukrs` |
+| `Currency` |  | |  | `waers` |
+| `BaseUnit` |  | | `_Product` | `BaseUnit` |
+| `_Product` | | ✓ | | |
+| `_BaseUnitOfMeasure` | | ✓ | | |
 
 ## Associations
 

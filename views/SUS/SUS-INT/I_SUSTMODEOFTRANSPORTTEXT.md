@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `SustainabilityModeOfTransport` | `cast( dd07t.domvalue_l as sufnd_vdm_susmodeoftransport )` |
-| `SustModeOfTransportName` | `cast( dd07t.ddtext as sufnd_vdm_susmodeoftranspname preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `SustainabilityModeOfTransport` | ✓ | |  | `cast( dd07t.domvalue_l as sufnd_vdm_susmodeoftransport )` |
+| `SustModeOfTransportName` |  | |  | `cast( dd07t.ddtext as sufnd_vdm_susmodeoftranspname preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

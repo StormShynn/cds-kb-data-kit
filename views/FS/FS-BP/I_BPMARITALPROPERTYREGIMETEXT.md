@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(tp04t.langu as langu preserving type)` |
-| key `BPMaritalPropertyRegime` | `cast(tp04t.proprty_st as bp_proprty_old preserving type)` |
-| `BPMaritalPropertyRegimeDesc` | `tp04t.proprty_t` |
-| `_BPMaritalPropertyRegime` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(tp04t.langu as langu preserving type)` |
+| `BPMaritalPropertyRegime` | ✓ | |  | `cast(tp04t.proprty_st as bp_proprty_old preserving type)` |
+| `BPMaritalPropertyRegimeDesc` |  | |  | `proprty_t` |
+| `_BPMaritalPropertyRegime` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

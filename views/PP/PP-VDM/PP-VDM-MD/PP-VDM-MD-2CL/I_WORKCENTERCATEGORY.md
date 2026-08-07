@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `WorkCenterCategoryCode` | `cat.verwe` |
-| `StatusProfile` | `cat.stsma` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `WorkCenterCategoryCode` | ✓ | |  | `verwe` |
+| `StatusProfile` |  | |  | `stsma` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

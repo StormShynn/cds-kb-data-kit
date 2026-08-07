@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `mandt` | `but100.mandt` |
-| key `BusinessPartner` | `but100.partner` |
-| key `BusinessPartnerRole` | `but100.rltyp` |
-| key `BusinessPartnerDiffTypeValue` | `but100.dfval` |
-| `ValidFrom` | `but100.valid_from` |
-| `ValidTo` | `but100.valid_to` |
-| `AuthorizationGroup` | `_BusinessPartner.AuthorizationGroup` |
-| `_BusinessPartnerRole` | *Association* |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartnerDiffValue` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `mandt` |  | |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` |
+| `BusinessPartnerRole` | ✓ | |  | `rltyp` |
+| `BusinessPartnerDiffTypeValue` | ✓ | |  | `dfval` |
+| `ValidFrom` |  | |  | `valid_from` |
+| `ValidTo` |  | |  | `valid_to` |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |
+| `_BusinessPartnerRole` | | ✓ | | |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartnerDiffValue` | | ✓ | | |
 
 ## Associations
 

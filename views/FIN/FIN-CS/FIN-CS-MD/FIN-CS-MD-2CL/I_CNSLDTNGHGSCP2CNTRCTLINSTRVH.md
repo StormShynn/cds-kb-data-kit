@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GHGScope2ContractualInstrument` | `_Source.GHGScope2ContractualInstrument` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GHGScope2ContractualInstrument` | ✓ | | `_Source` | `GHGScope2ContractualInstrument` |
 
 ## Source Code
 

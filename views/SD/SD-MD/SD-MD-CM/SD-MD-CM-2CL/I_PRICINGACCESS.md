@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConditionUsage` | `kvewe` |
-| key `ConditionApplication` | `kappl` |
-| key `AccessSequence` | `kozgf` |
-| key `AccessNumberOfAccessSequence` | `kolnr` |
-| `ConditionTable` | `cast ( kotabnr as char03 )` |
-| `ConditionRequirement` | `kobed` |
-| `PrcgConditionAccessIsExclusive` | `kzexl` |
-| `_PricingAccessSequence` | *Association* |
-| `_PricingAccessField` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionApplication` | ✓ | |  | `kappl` |
+| `AccessSequence` | ✓ | |  | `kozgf` |
+| `AccessNumberOfAccessSequence` | ✓ | |  | `kolnr` |
+| `ConditionTable` |  | |  | `cast ( kotabnr as char03 )` |
+| `ConditionRequirement` |  | |  | `kobed` |
+| `PrcgConditionAccessIsExclusive` |  | |  | `kzexl` |
+| `_PricingAccessSequence` | | ✓ | | |
+| `_PricingAccessField` | | ✓ | | |
 
 ## Associations
 

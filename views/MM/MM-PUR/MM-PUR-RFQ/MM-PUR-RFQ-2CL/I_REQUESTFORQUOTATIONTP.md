@@ -29,47 +29,47 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RequestForQuotation` | `RequestForQuotation` |
-| `CompanyCode` | `CompanyCode` |
-| `PurchasingDocumentCategory` | `PurchasingDocumentCategory` |
-| `PurchasingDocumentType` | `PurchasingDocumentType` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `Language` | `Language` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `DocumentCurrency` | `DocumentCurrency` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `PaymentTerms` | `PaymentTerms` |
-| `CashDiscount1Days` | `CashDiscount1Days` |
-| `CashDiscount2Days` | `CashDiscount2Days` |
-| `CashDiscount1Percent` | `CashDiscount1Percent` |
-| `CashDiscount2Percent` | `CashDiscount2Percent` |
-| `NetPaymentDays` | `NetPaymentDays` |
-| `RFQPublishingDate` | `RFQPublishingDate` |
-| `QuotationLatestSubmissionDate` | `QuotationLatestSubmissionDate` |
-| `BindingPeriodValidityEndDate` | `BindingPeriodValidityEndDate` |
-| `TargetAmount` | `TargetAmount` |
-| `CorrespncInternalReference` | `CorrespncInternalReference` |
-| `RFQLifecycleStatus` | `RFQLifecycleStatus` |
-| `RequestForQuotationName` | `RequestForQuotationName` |
-| `QuotationEarliestSubmsnDate` | `QuotationEarliestSubmsnDate` |
-| `LatestRegistrationDate` | `LatestRegistrationDate` |
-| `FollowOnDocumentCategory` | `FollowOnDocumentCategory` |
-| `PurgDocFollowOnDocumentType` | `PurgDocFollowOnDocumentType` |
-| `PurContrValidityStartDate` | `PurContrValidityStartDate` |
-| `PurContrValidityEndDate` | `PurContrValidityEndDate` |
-| `PurchasingDocumentDeletionCode` | `PurchasingDocumentDeletionCode` |
-| `IsEndOfPurposeBlocked` | `IsEndOfPurposeBlocked` |
-| `_RequestForQuotationItem` | *Association* |
-| `_RequestForQuotationBidder` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RequestForQuotation` | ✓ | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `PurchasingDocumentType` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `Language` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `RFQPublishingDate` |  | |  |  |
+| `QuotationLatestSubmissionDate` |  | |  |  |
+| `BindingPeriodValidityEndDate` |  | |  |  |
+| `TargetAmount` |  | |  |  |
+| `CorrespncInternalReference` |  | |  |  |
+| `RFQLifecycleStatus` |  | |  |  |
+| `RequestForQuotationName` |  | |  |  |
+| `QuotationEarliestSubmsnDate` |  | |  |  |
+| `LatestRegistrationDate` |  | |  |  |
+| `FollowOnDocumentCategory` |  | |  |  |
+| `PurgDocFollowOnDocumentType` |  | |  |  |
+| `PurContrValidityStartDate` |  | |  |  |
+| `PurContrValidityEndDate` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `IsEndOfPurposeBlocked` |  | |  |  |
+| `_RequestForQuotationItem` | | ✓ | | |
+| `_RequestForQuotationBidder` | | ✓ | | |
 
 ## Source Code
 

@@ -26,33 +26,33 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `Material` | `matnr` |
-| `MRPPlant` | `werks_d` |
-| `MRPArea` | `berid` |
-| `DemandMRPElementIndex` | `abap.int4` |
-| `DemandMRPElement` | `del12` |
-| `DemandMRPElementItem` | `delps` |
-| `DemandMRPElementScheduleLine` | `delet` |
-| `DemandMRPElementCategory` | `delkz` |
-| `DemandMRPElmntCategoryShrtName` | `delb0` |
-| `DemandMRPElementDate` | `dat00` |
-| `DemandMRPElementStorageLoc` | `lgort_d` |
-| `DemandMRPElementSegment` | `sgt_rcat` |
-| `SpecialStockAssignment` | `sobkz` |
-| `DynamicPeggingQuantity` | `pph_pegging_qty` |
-| `MaterialBaseUnit` | `meins` |
-| `SupplyMRPElementIndex` | `abap.int4` |
-| `SupplyMRPElement` | `del12` |
-| `SupplyMRPElementItem` | `delps` |
-| `SupplyMRPElementScheduleLine` | `delet` |
-| `SupplyMRPElementCategory` | `delkz` |
-| `SupplyMRPElmntCategoryShrtName` | `delb0` |
-| `SupplyMRPElementDate` | `dat00` |
-| `SupplyMRPElementStorageLoc` | `lgort_d` |
-| `SupplyMRPElementSegment` | `sgt_rcat` |
-| `_DummyAssociation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Material` |  | |  | `matnr` |
+| `MRPPlant` |  | |  | `werks_d` |
+| `MRPArea` |  | |  | `berid` |
+| `DemandMRPElementIndex` |  | |  | `int4` |
+| `DemandMRPElement` |  | |  | `del12` |
+| `DemandMRPElementItem` |  | |  | `delps` |
+| `DemandMRPElementScheduleLine` |  | |  | `delet` |
+| `DemandMRPElementCategory` |  | |  | `delkz` |
+| `DemandMRPElmntCategoryShrtName` |  | |  | `delb0` |
+| `DemandMRPElementDate` |  | |  | `dat00` |
+| `DemandMRPElementStorageLoc` |  | |  | `lgort_d` |
+| `DemandMRPElementSegment` |  | |  | `sgt_rcat` |
+| `SpecialStockAssignment` |  | |  | `sobkz` |
+| `DynamicPeggingQuantity` |  | |  | `pph_pegging_qty` |
+| `MaterialBaseUnit` |  | |  | `meins` |
+| `SupplyMRPElementIndex` |  | |  | `int4` |
+| `SupplyMRPElement` |  | |  | `del12` |
+| `SupplyMRPElementItem` |  | |  | `delps` |
+| `SupplyMRPElementScheduleLine` |  | |  | `delet` |
+| `SupplyMRPElementCategory` |  | |  | `delkz` |
+| `SupplyMRPElmntCategoryShrtName` |  | |  | `delb0` |
+| `SupplyMRPElementDate` |  | |  | `dat00` |
+| `SupplyMRPElementStorageLoc` |  | |  | `lgort_d` |
+| `SupplyMRPElementSegment` |  | |  | `sgt_rcat` |
+| `_DummyAssociation` | | ✓ | | |
 
 ## Source Code
 

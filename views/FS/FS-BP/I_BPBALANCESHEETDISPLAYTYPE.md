@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BPBalanceSheetDisplayType` | `cast ( dd07l.domvalue_l as bp_bal_flg )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BPBalanceSheetDisplayType` | ✓ | |  | `cast ( dd07l.domvalue_l as bp_bal_flg )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

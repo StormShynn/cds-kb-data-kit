@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CN_TaxInvcType` | `typet.CN_TaxInvcType` |
-| key `Language` | `typet.Language` |
-| `CN_TaxInvcTypeTxt` | `typet.CN_TaxInvcTypeTxt` |
-| `_Language` | *Association* |
-| `_TaxInvcType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CN_TaxInvcType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `CN_TaxInvcTypeTxt` |  | |  |  |
+| `_Language` | | ✓ | | |
+| `_TaxInvcType` | | ✓ | | |
 
 ## Associations
 

@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `CompanyCode` |
-| key `TR_EDocBusinessPartnerAlias` | `TR_EDocBusinessPartnerAlias` |
-| key `TR_ElectronicDocumentUnivCode` | `TR_ElectronicDocumentUnivCode` |
-| key `TR_EDocNumberRange` | `TR_EDocNumberRange` |
-| `TR_EDocUnivCodeText` | `TR_EDocUnivCodeText` |
-| `TR_ElectronicDocCompanyCode` | `_CompanyCode.CompanyCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  |  |
+| `TR_EDocBusinessPartnerAlias` | ✓ | |  |  |
+| `TR_ElectronicDocumentUnivCode` | ✓ | |  |  |
+| `TR_EDocNumberRange` | ✓ | |  |  |
+| `TR_EDocUnivCodeText` |  | |  |  |
+| `TR_ElectronicDocCompanyCode` |  | | `_CompanyCode` | `CompanyCode` |
 
 ## Associations
 

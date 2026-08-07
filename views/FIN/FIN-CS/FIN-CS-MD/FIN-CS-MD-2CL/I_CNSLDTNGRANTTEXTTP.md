@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `GrantID` | `_Text.GrantID` |
-| `GrantName` | `_Text.GrantName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnGrantTP` | `_Grant as _Grant : redirected to parent I_CnsldtnGrantTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `GrantID` | ✓ | | `_Text` | `GrantID` |
+| `GrantName` |  | | `_Text` | `GrantName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnGrantTP` |  | |  | `_Grant as _Grant : redirected to parent I_CnsldtnGrantTP` |
 
 ## Source Code
 

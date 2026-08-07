@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAClearingCategory` | `vertyp` |
-| key `Language` | `spras` |
-| `CAClearingCategoryName` | `text` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAClearingCategory` | ✓ | |  | `vertyp` |
+| `Language` | ✓ | |  | `spras` |
+| `CAClearingCategoryName` |  | |  | `text` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

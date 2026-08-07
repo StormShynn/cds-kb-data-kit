@@ -32,34 +32,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductionRoutingGroup` | `ProductionRoutingGroup` |
-| key `ProductionRouting` | `ProductionRouting` |
-| key `ProductionRoutingInternalVers` | `ProductionRoutingInternalVers` |
-| `IsMarkedForDeletion` | `IsMarkedForDeletion` |
-| `BillOfOperationsDesc` | `BillOfOperationsDesc` |
-| `Plant` | `Plant` |
-| `BillOfOperationsUsage` | `BillOfOperationsUsage` |
-| `BillOfOperationsStatus` | `BillOfOperationsStatus` |
-| `ResponsiblePlannerGroup` | `ResponsiblePlannerGroup` |
-| `MinimumLotSizeQuantity` | `MinimumLotSizeQuantity` |
-| `MaximumLotSizeQuantity` | `MaximumLotSizeQuantity` |
-| `BillOfOperationsUnit` | `BillOfOperationsUnit` |
-| `CreationDate` | `CreationDate` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangeDate` | `LastChangeDate` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `ChangeNumber` | `ChangeNumber` |
-| `ChangedDateTime` | `ChangedDateTime` |
-| `PlainLongText` | `PlainLongText` |
-| `PlanningWorkCenter` | `PlanningWorkCenter` |
-| `ReplacedBillOfOperations` | `ReplacedBillOfOperations` |
-| `_ProdnRtgTP` | *Association* |
-| `_MatlAssgmt` | *Association* |
-| `_Sequence` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductionRoutingGroup` | ✓ | |  |  |
+| `ProductionRouting` | ✓ | |  |  |
+| `ProductionRoutingInternalVers` | ✓ | |  |  |
+| `IsMarkedForDeletion` |  | |  |  |
+| `BillOfOperationsDesc` |  | |  |  |
+| `Plant` |  | |  |  |
+| `BillOfOperationsUsage` |  | |  |  |
+| `BillOfOperationsStatus` |  | |  |  |
+| `ResponsiblePlannerGroup` |  | |  |  |
+| `MinimumLotSizeQuantity` |  | |  |  |
+| `MaximumLotSizeQuantity` |  | |  |  |
+| `BillOfOperationsUnit` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ChangeNumber` |  | |  |  |
+| `ChangedDateTime` |  | |  |  |
+| `PlainLongText` |  | |  |  |
+| `PlanningWorkCenter` |  | |  |  |
+| `ReplacedBillOfOperations` |  | |  |  |
+| `_ProdnRtgTP` | | ✓ | | |
+| `_MatlAssgmt` | | ✓ | | |
+| `_Sequence` | | ✓ | | |
 
 ## Source Code
 

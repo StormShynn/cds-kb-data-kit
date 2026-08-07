@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProductTypeCode` | `I_ProductTypeCode.ProductTypeCode` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProductTypeCode` | ✓ | |  |  |
 
 ## Source Code
 

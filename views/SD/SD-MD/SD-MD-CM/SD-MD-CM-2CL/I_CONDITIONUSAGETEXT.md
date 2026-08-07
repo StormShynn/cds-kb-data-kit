@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `spras` |
-| key `ConditionUsage` | `kvewe` |
-| `ConditionUsageName` | `vtext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `ConditionUsage` | ✓ | |  | `kvewe` |
+| `ConditionUsageName` |  | |  | `vtext` |
 
 ## Source Code
 

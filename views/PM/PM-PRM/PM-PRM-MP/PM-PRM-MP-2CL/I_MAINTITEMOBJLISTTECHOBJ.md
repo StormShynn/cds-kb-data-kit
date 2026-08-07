@@ -29,32 +29,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceItemObjectList` | `MaintenanceItemObjectList` |
-| key `MaintenanceItemObject` | `MaintenanceItemObject` |
-| `Equipment` | `Equipment` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `TechObjIsEquipOrFuncnlLoc` | `cast ( 'EAMS_EQUI' as eams_tec_obj_type_value )` |
-| `TechnicalObject` | `}] cast ( Equipment as eams_tec_obj )` |
-| `TechnicalObjectLabel` | `cast ( Equipment as eams_tech_obj_conv )` |
-| `TechnicalObjectDescription` | `cast ( _EquipmentText[1:Language = $session.system_language].EquipmentName as eams_tec_obj_des )` |
-| `Assembly` | `Assembly` |
-| `Material` | `Material` |
-| `SerialNumber` | `SerialNumber` |
-| `MaintenanceNotification` | `MaintenanceNotification` |
-| `MaintObjectLocAcctAssgmtNmbr` | `MaintObjectLocAcctAssgmtNmbr` |
-| `SortField` | `SortField` |
-| `Product` | `Product` |
-| `_TechnicalObject` | *Association* |
-| `_TechObjIsEquipOrFuncnlLoc` | *Association* |
-| `_Assembly` | *Association* |
-| `_Equipment` | *Association* |
-| `_FunctionalLocation` | *Association* |
-| `_LocationAccountAssignment` | *Association* |
-| `_MaintenanceItem` | *Association* |
-| `_MaintenanceNotification` | *Association* |
-| `_Material` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceItemObjectList` | ✓ | |  |  |
+| `MaintenanceItemObject` | ✓ | |  |  |
+| `Equipment` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  | `cast ( 'EAMS_EQUI' as eams_tec_obj_type_value )` |
+| `TechnicalObject` |  | |  | `}] cast ( Equipment as eams_tec_obj )` |
+| `TechnicalObjectLabel` |  | |  | `cast ( Equipment as eams_tech_obj_conv )` |
+| `TechnicalObjectDescription` |  | |  | `cast ( _EquipmentText[1:Language = $session.system_language].EquipmentName as eams_tec_obj_des )` |
+| `Assembly` |  | |  |  |
+| `Material` |  | |  |  |
+| `SerialNumber` |  | |  |  |
+| `MaintenanceNotification` |  | |  |  |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  |
+| `SortField` |  | |  |  |
+| `Product` |  | |  |  |
+| `_TechnicalObject` | | ✓ | | |
+| `_TechObjIsEquipOrFuncnlLoc` | | ✓ | | |
+| `_Assembly` | | ✓ | | |
+| `_Equipment` | | ✓ | | |
+| `_FunctionalLocation` | | ✓ | | |
+| `_LocationAccountAssignment` | | ✓ | | |
+| `_MaintenanceItem` | | ✓ | | |
+| `_MaintenanceNotification` | | ✓ | | |
+| `_Material` | | ✓ | | |
 
 ## Associations
 

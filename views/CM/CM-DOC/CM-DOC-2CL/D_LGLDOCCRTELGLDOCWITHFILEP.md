@@ -26,14 +26,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LglCntntMDocumentLinkedObjKey` | `lcm_uuid_c32` |
-| `DocumentDescription` | `lcm_description` |
-| `FileName` | `abap.char(255)` |
-| `LglCntntMLanguage` | `lcm_language` |
-| `LglCntntMDocAccessLvl` | `lcm_access_lvl` |
-| `LglCntntMDocPaperType` | `lcm_doc_paper_type` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMDocumentLinkedObjKey` |  | |  | `lcm_uuid_c32` |
+| `DocumentDescription` |  | |  | `lcm_description` |
+| `FileName` |  | |  | `abap.char(255)` |
+| `LglCntntMLanguage` |  | |  | `lcm_language` |
+| `LglCntntMDocAccessLvl` |  | |  | `lcm_access_lvl` |
+| `LglCntntMDocPaperType` |  | |  | `lcm_doc_paper_type` |
 
 ## Source Code
 

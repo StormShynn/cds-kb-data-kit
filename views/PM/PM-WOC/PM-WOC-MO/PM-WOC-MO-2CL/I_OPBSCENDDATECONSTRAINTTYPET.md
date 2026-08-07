@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `OpBscEndDateConstraintType` | `cast( dd07t.domvalue_l as einschra )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `FinishConstraintTypeText` | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | *Association* |
-| `_OpBscEndDateConstraintType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `OpBscEndDateConstraintType` | ✓ | |  | `cast( dd07t.domvalue_l as einschra )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `FinishConstraintTypeText` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_OpBscEndDateConstraintType` | | ✓ | | |
 
 ## Associations
 

@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ShippingInstruction` | `evers` |
-| key `Language` | `spras` |
-| `ShippingInstructionName` | `evtxt` |
-| `_ShippingInstruction` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ShippingInstruction` | ✓ | |  | `evers` |
+| `Language` | ✓ | |  | `spras` |
+| `ShippingInstructionName` |  | |  | `evtxt` |
+| `_ShippingInstruction` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

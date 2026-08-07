@@ -27,18 +27,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ComplianceRequirement` | `ehfnd_req_identifier` |
-| `DangerousGoodsTransportCat` | `dangerousgoodstransportcat` |
-| `DngrsGdsEnclosureTotalQuantity` | `dngrsgdsenclosuretotalquantity` |
-| `DngrsGdsEnclosureQuantityText` | `dngrsgdsenclosurequantitytext` |
-| `DangerousGoodsEnclosureSapUnit` | `ehfnd_vdm_component_unit_sap` |
-| `DangerousGoodsEnclosureISOUnit` | `ehfnd_vdm_component_unit_iso` |
-| `DangerousGoodsQtyFactorText` | `dangerousgoodsqtyfactortext` |
-| `DangerousGoodsPointTotalText` | `dangerousgoodspointtotaltext` |
-| `DngrsGdsQtyExemptionIsPossible` | `dngrsgdsqtyexemptionispossible` |
-| `_Root` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ComplianceRequirement` |  | |  | `ehfnd_req_identifier` |
+| `DangerousGoodsTransportCat` |  | |  | `dangerousgoodstransportcat` |
+| `DngrsGdsEnclosureTotalQuantity` |  | |  | `dngrsgdsenclosuretotalquantity` |
+| `DngrsGdsEnclosureQuantityText` |  | |  | `dngrsgdsenclosurequantitytext` |
+| `DangerousGoodsEnclosureSapUnit` |  | |  | `ehfnd_vdm_component_unit_sap` |
+| `DangerousGoodsEnclosureISOUnit` |  | |  | `ehfnd_vdm_component_unit_iso` |
+| `DangerousGoodsQtyFactorText` |  | |  | `dangerousgoodsqtyfactortext` |
+| `DangerousGoodsPointTotalText` |  | |  | `dangerousgoodspointtotaltext` |
+| `DngrsGdsQtyExemptionIsPossible` |  | |  | `dngrsgdsqtyexemptionispossible` |
+| `_Root` | | ✓ | | |
 
 ## Source Code
 

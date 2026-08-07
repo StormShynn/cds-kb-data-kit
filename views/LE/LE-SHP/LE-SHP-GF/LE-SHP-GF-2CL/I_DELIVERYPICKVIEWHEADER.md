@@ -30,37 +30,37 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DeliveryDocument` | `I_DeliveryDocument.DeliveryDocument` |
-| `PickedItemsLocation` | `I_DeliveryDocument.PickedItemsLocation` |
-| `HeaderGrossWeight` | `I_DeliveryDocument.HeaderGrossWeight` |
-| `HeaderWeightUnit` | `I_DeliveryDocument.HeaderWeightUnit` |
-| `PickingDate` | `I_DeliveryDocument.PickingDate` |
-| `ShipToParty` | `I_DeliveryDocument.ShipToParty` |
-| `LoadingDate` | `I_DeliveryDocument.LoadingDate` |
-| `DeliveryPriority` | `I_DeliveryDocument.DeliveryPriority` |
-| `ProposedDeliveryRoute` | `I_DeliveryDocument.ProposedDeliveryRoute` |
-| `HeaderVolumeUnit` | `I_DeliveryDocument.HeaderVolumeUnit` |
-| `HeaderVolume` | `I_DeliveryDocument.HeaderVolume` |
-| `ShippingPoint` | `I_DeliveryDocument.ShippingPoint` |
-| `WarehouseGate` | `I_DeliveryDocument.WarehouseGate` |
-| `WarehouseStagingArea` | `I_DeliveryDocument.WarehouseStagingArea` |
-| `DeliveryDocumentBySupplier` | `I_DeliveryDocument.DeliveryDocumentBySupplier` |
-| `Supplier` | `I_DeliveryDocument.Supplier` |
-| `DeliveryDate` | `I_DeliveryDocument.DeliveryDate` |
-| `SDDocumentCategory` | `I_DeliveryDocument.SDDocumentCategory` |
-| `OverallGoodsMovementStatus` | `I_DeliveryDocument.OverallGoodsMovementStatus` |
-| `OverallWarehouseActivityStatus` | `I_DeliveryDocument.OverallWarehouseActivityStatus` |
-| `TotalCreditCheckStatus` | `I_DeliveryDocument.TotalCreditCheckStatus` |
-| `TransactionCurrency` | `I_DeliveryDocument.TransactionCurrency` |
-| `OverallPickingStatus` | `I_DeliveryDocument.OverallPickingStatus` |
-| `PlantName` | `I_DeliveryDocument._ReceivingPlant.PlantName` |
-| `PlannedGoodsIssueDate` | `I_DeliveryDocument.PlannedGoodsIssueDate` |
-| `_DeliveryDocument` | *Association* |
-| `_DeliveryDocumentFlow` | *Association* |
-| `_DeliveryDocumentItem` | *Association* |
-| `_ShippingPoint` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DeliveryDocument` | ✓ | |  |  |
+| `PickedItemsLocation` |  | |  |  |
+| `HeaderGrossWeight` |  | |  |  |
+| `HeaderWeightUnit` |  | |  |  |
+| `PickingDate` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `LoadingDate` |  | |  |  |
+| `DeliveryPriority` |  | |  |  |
+| `ProposedDeliveryRoute` |  | |  |  |
+| `HeaderVolumeUnit` |  | |  |  |
+| `HeaderVolume` |  | |  |  |
+| `ShippingPoint` |  | |  |  |
+| `WarehouseGate` |  | |  |  |
+| `WarehouseStagingArea` |  | |  |  |
+| `DeliveryDocumentBySupplier` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `DeliveryDate` |  | |  |  |
+| `SDDocumentCategory` |  | |  |  |
+| `OverallGoodsMovementStatus` |  | |  |  |
+| `OverallWarehouseActivityStatus` |  | |  |  |
+| `TotalCreditCheckStatus` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `OverallPickingStatus` |  | |  |  |
+| `PlantName` |  | |  |  |
+| `PlannedGoodsIssueDate` |  | |  |  |
+| `_DeliveryDocument` | | ✓ | | |
+| `_DeliveryDocumentFlow` | | ✓ | | |
+| `_DeliveryDocumentItem` | | ✓ | | |
+| `_ShippingPoint` | | ✓ | | |
 
 ## Associations
 

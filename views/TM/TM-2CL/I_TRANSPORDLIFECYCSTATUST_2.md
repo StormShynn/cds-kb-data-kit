@@ -27,14 +27,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspOrdLifeCycleStatus` | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_lc_status preserving type)` |
-| key `Language` | `ddlanguage` |
-| `TranspOrdLifeCycleStatusDesc` | `cast(ddtext as /scmtms/vdm_tor_lc_status_desc preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `_Language` | *Association* |
-| `_TranspOrdLifeCycleStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspOrdLifeCycleStatus` | ✓ | |  | `cast(substring(domvalue_l, 1, 2) as /scmtms/tor_lc_status preserving type)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `TranspOrdLifeCycleStatusDesc` |  | |  | `cast(ddtext as /scmtms/vdm_tor_lc_status_desc preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Language` | | ✓ | | |
+| `_TranspOrdLifeCycleStatus` | | ✓ | | |
 
 ## Associations
 

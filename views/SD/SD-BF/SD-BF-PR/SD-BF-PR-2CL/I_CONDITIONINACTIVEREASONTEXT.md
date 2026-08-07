@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras )` |
-| key `ConditionInactiveReason` | `cast ( substring( domvalue_l, 1, 1 ) as kinak )` |
-| `ConditionInactiveReasonName` | `cast ( ddtext as price_element_inactive_descr )` |
-| `_ConditionInactiveReason` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras )` |
+| `ConditionInactiveReason` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as kinak )` |
+| `ConditionInactiveReasonName` |  | |  | `cast ( ddtext as price_element_inactive_descr )` |
+| `_ConditionInactiveReason` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

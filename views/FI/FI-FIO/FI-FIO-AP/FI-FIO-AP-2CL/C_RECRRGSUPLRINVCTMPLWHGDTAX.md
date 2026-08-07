@@ -27,16 +27,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RecrrgSuplrInvcTmplWhgdTaxUUID` | `_Withtax.RecrrgSuplrInvcTmplWhgdTaxUUID` |
-| `RecrrgSuplrInvcTmplUUID` | `_Withtax.RecrrgSuplrInvcTmplUUID` |
-| `WithholdingTaxAmount` | `_Withtax.WithholdingTaxAmount` |
-| `WithholdingTaxBaseAmount` | `_Withtax.WithholdingTaxBaseAmount` |
-| `WithholdingTaxCode` | `_Withtax.WithholdingTaxCode` |
-| `WithholdingTaxType` | `_Withtax.WithholdingTaxType` |
-| `TransactionCurrency` | `_Withtax.TransactionCurrency` |
-| `_Tmpl` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RecrrgSuplrInvcTmplWhgdTaxUUID` | ✓ | | `_Withtax` | `RecrrgSuplrInvcTmplWhgdTaxUUID` |
+| `RecrrgSuplrInvcTmplUUID` |  | | `_Withtax` | `RecrrgSuplrInvcTmplUUID` |
+| `WithholdingTaxAmount` |  | | `_Withtax` | `WithholdingTaxAmount` |
+| `WithholdingTaxBaseAmount` |  | | `_Withtax` | `WithholdingTaxBaseAmount` |
+| `WithholdingTaxCode` |  | | `_Withtax` | `WithholdingTaxCode` |
+| `WithholdingTaxType` |  | | `_Withtax` | `WithholdingTaxType` |
+| `TransactionCurrency` |  | | `_Withtax` | `TransactionCurrency` |
+| `_Tmpl` | | ✓ | | |
 
 ## Associations
 

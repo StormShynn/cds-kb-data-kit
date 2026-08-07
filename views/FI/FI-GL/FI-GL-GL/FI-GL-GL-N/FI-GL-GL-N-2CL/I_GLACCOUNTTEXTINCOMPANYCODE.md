@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GLAccount` | `I_GLAccountText.GLAccount` |
-| key `CompanyCode` | `I_GLAccountInCompanyCode.CompanyCode` |
-| key `Language` | `I_GLAccountText.Language` |
-| `ChartOfAccounts` | `I_GLAccountText.ChartOfAccounts` |
-| `GLAccountName` | `cast(I_GLAccountText.GLAccountName as fin_glaccount_name preserving type )` |
-| `GLAccountLongName` | `cast(I_GLAccountText.GLAccountLongName as fis_txt50_skat preserving type )` |
-| `_Language` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ChartOfAccounts` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GLAccount` | ✓ | |  |  |
+| `CompanyCode` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `ChartOfAccounts` |  | |  |  |
+| `GLAccountName` |  | |  | `cast(I_GLAccountText.GLAccountName as fin_glaccount_name preserving type )` |
+| `GLAccountLongName` |  | |  | `cast(I_GLAccountText.GLAccountLongName as fis_txt50_skat preserving type )` |
+| `_Language` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ChartOfAccounts` | | ✓ | | |
 
 ## Associations
 

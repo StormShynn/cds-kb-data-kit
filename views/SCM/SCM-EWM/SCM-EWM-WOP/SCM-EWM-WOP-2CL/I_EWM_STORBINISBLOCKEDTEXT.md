@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `ddlanguage` |
-| key `EWMStorBinIsBlocked` | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as ewm_de_storbinisblocked preserving type )` |
-| `EWMStorageBinBlockedDesc` | `cast( ddtext as ewm_de_storbinblockeddesc preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `ddlanguage` |
+| `EWMStorBinIsBlocked` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 1 ) as ewm_de_storbinisblocked preserving type )` |
+| `EWMStorageBinBlockedDesc` |  | |  | `cast( ddtext as ewm_de_storbinblockeddesc preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

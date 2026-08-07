@@ -29,95 +29,95 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Plant` | `Plant` |
-| key `WorkCenter` | `WorkCenter` |
-| `WorkCenterInternalID` | `WorkCenterInternalID` |
-| `WorkCenterTypeCode` | `WorkCenterTypeCode` |
-| `WorkCenterIsToBeDeleted` | `WorkCenterIsToBeDeleted` |
-| `WorkCenterIsLocked` | `WorkCenterIsLocked` |
-| `WorkCenterIsMntndForCosting` | `WorkCenterIsMntndForCosting` |
-| `WorkCenterIsMntndForScheduling` | `WorkCenterIsMntndForScheduling` |
-| `NumberOfConfirmationSlips` | `NumberOfConfirmationSlips` |
-| `AdvancedPlanningIsSupported` | `AdvancedPlanningIsSupported` |
-| `LaborTrackingIsRequired` | `LaborTrackingIsRequired` |
-| `WorkCenterCategoryCode` | `WorkCenterCategoryCode` |
-| `WorkCenterLocation` | `WorkCenterLocation` |
-| `WorkCenterLocationGroup` | `WorkCenterLocationGroup` |
-| `WorkCenterUsage` | `WorkCenterUsage` |
-| `WorkCenterResponsible` | `WorkCenterResponsible` |
-| `SupplyArea` | `SupplyArea` |
-| `CapacityInternalID` | `CapacityInternalID` |
-| `MachineType` | `MachineType` |
-| `OperationControlProfile` | `OperationControlProfile` |
-| `MatlCompIsMarkedForBackflush` | `MatlCompIsMarkedForBackflush` |
-| `WorkCenterSetupType` | `WorkCenterSetupType` |
-| `FreeDefinedTableFieldSemantic` | `FreeDefinedTableFieldSemantic` |
-| `ObjectInternalID` | `ObjectInternalID` |
-| `StandardTextInternalID` | `StandardTextInternalID` |
-| `EmployeeWageType` | `EmployeeWageType` |
-| `EmployeeWageGroup` | `EmployeeWageGroup` |
-| `EmployeeSuitability` | `EmployeeSuitability` |
-| `NumberOfTimeTickets` | `NumberOfTimeTickets` |
-| `PlanVersion` | `PlanVersion` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `StandardTextIDIsReferenced` | `StandardTextIDIsReferenced` |
-| `EmployeeWageTypeIsReferenced` | `EmployeeWageTypeIsReferenced` |
-| `NmbrOfTimeTicketsIsReferenced` | `NmbrOfTimeTicketsIsReferenced` |
-| `EmployeeWageGroupIsReferenced` | `EmployeeWageGroupIsReferenced` |
-| `EmplSuitabilityIsReferenced` | `EmplSuitabilityIsReferenced` |
-| `WorkCenterSetpTypeIsReferenced` | `WorkCenterSetpTypeIsReferenced` |
-| `OpControlProfileIsReferenced` | `OpControlProfileIsReferenced` |
-| `NumberOfConfSlipsIsReferenced` | `NumberOfConfSlipsIsReferenced` |
-| `WorkCenterStdQueueDurnUnit` | `WorkCenterStdQueueDurnUnit` |
-| `WorkCenterStandardQueueDurn` | `WorkCenterStandardQueueDurn` |
-| `WorkCenterMinimumQueueDurnUnit` | `WorkCenterMinimumQueueDurnUnit` |
-| `WorkCenterMinimumQueueDuration` | `WorkCenterMinimumQueueDuration` |
-| `WorkCenterStandardWorkQtyUnit1` | `WorkCenterStandardWorkQtyUnit1` |
-| `WorkCenterStandardWorkQtyUnit2` | `WorkCenterStandardWorkQtyUnit2` |
-| `WorkCenterStandardWorkQtyUnit3` | `WorkCenterStandardWorkQtyUnit3` |
-| `WorkCenterStandardWorkQtyUnit4` | `WorkCenterStandardWorkQtyUnit4` |
-| `WorkCenterStandardWorkQtyUnit5` | `WorkCenterStandardWorkQtyUnit5` |
-| `WorkCenterStandardWorkQtyUnit6` | `WorkCenterStandardWorkQtyUnit6` |
-| `StandardWorkQuantityUnit` | `StandardWorkQuantityUnit` |
-| `StandardWorkFormulaParamGroup` | `StandardWorkFormulaParamGroup` |
-| `WrkCtrStdValMaintRule1` | `WrkCtrStdValMaintRule1` |
-| `WrkCtrStdValMaintRule2` | `WrkCtrStdValMaintRule2` |
-| `WrkCtrStdValMaintRule3` | `WrkCtrStdValMaintRule3` |
-| `WrkCtrStdValMaintRule4` | `WrkCtrStdValMaintRule4` |
-| `WrkCtrStdValMaintRule5` | `WrkCtrStdValMaintRule5` |
-| `WrkCtrStdValMaintRule6` | `WrkCtrStdValMaintRule6` |
-| `_WorkCenterTextBySemanticKey` | *Association* |
-| `_Plant` | *Association* |
-| `_WorkCenterType` | *Association* |
-| `_WorkCenterResponsible` | *Association* |
-| `_WorkCenterCategory` | *Association* |
-| `_WorkCenterLocation` | *Association* |
-| `_WorkCenterLocationGroup` | *Association* |
-| `_WorkCenterUsage` | *Association* |
-| `_Text` | *Association* |
-| `_Capacity` | *Association* |
-| `_MachineType` | *Association* |
-| `_OperationControlProfile` | *Association* |
-| `_SupplyArea` | *Association* |
-| `_WorkCenterSetupType` | *Association* |
-| `_StandardTextInternalID` | *Association* |
-| `_EmployeeWageGroup` | *Association* |
-| `_EmployeeSuitability` | *Association* |
-| `_ValidityStartDate` | *Association* |
-| `_ValidityEndDate` | *Association* |
-| `_StandardQueueDurationUnit` | *Association* |
-| `_MinimumQueueDurationUnit` | *Association* |
-| `_WorkQuantityUnit1` | *Association* |
-| `_WorkQuantityUnit2` | *Association* |
-| `_WorkQuantityUnit3` | *Association* |
-| `_WorkQuantityUnit4` | *Association* |
-| `_WorkQuantityUnit5` | *Association* |
-| `_WorkQuantityUnit6` | *Association* |
-| `_StandardWorkQuantityUnit` | *Association* |
-| `_StandardWorkFmlaParamGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Plant` | ✓ | |  |  |
+| `WorkCenter` | ✓ | |  |  |
+| `WorkCenterInternalID` |  | |  |  |
+| `WorkCenterTypeCode` |  | |  |  |
+| `WorkCenterIsToBeDeleted` |  | |  |  |
+| `WorkCenterIsLocked` |  | |  |  |
+| `WorkCenterIsMntndForCosting` |  | |  |  |
+| `WorkCenterIsMntndForScheduling` |  | |  |  |
+| `NumberOfConfirmationSlips` |  | |  |  |
+| `AdvancedPlanningIsSupported` |  | |  |  |
+| `LaborTrackingIsRequired` |  | |  |  |
+| `WorkCenterCategoryCode` |  | |  |  |
+| `WorkCenterLocation` |  | |  |  |
+| `WorkCenterLocationGroup` |  | |  |  |
+| `WorkCenterUsage` |  | |  |  |
+| `WorkCenterResponsible` |  | |  |  |
+| `SupplyArea` |  | |  |  |
+| `CapacityInternalID` |  | |  |  |
+| `MachineType` |  | |  |  |
+| `OperationControlProfile` |  | |  |  |
+| `MatlCompIsMarkedForBackflush` |  | |  |  |
+| `WorkCenterSetupType` |  | |  |  |
+| `FreeDefinedTableFieldSemantic` |  | |  |  |
+| `ObjectInternalID` |  | |  |  |
+| `StandardTextInternalID` |  | |  |  |
+| `EmployeeWageType` |  | |  |  |
+| `EmployeeWageGroup` |  | |  |  |
+| `EmployeeSuitability` |  | |  |  |
+| `NumberOfTimeTickets` |  | |  |  |
+| `PlanVersion` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `StandardTextIDIsReferenced` |  | |  |  |
+| `EmployeeWageTypeIsReferenced` |  | |  |  |
+| `NmbrOfTimeTicketsIsReferenced` |  | |  |  |
+| `EmployeeWageGroupIsReferenced` |  | |  |  |
+| `EmplSuitabilityIsReferenced` |  | |  |  |
+| `WorkCenterSetpTypeIsReferenced` |  | |  |  |
+| `OpControlProfileIsReferenced` |  | |  |  |
+| `NumberOfConfSlipsIsReferenced` |  | |  |  |
+| `WorkCenterStdQueueDurnUnit` |  | |  |  |
+| `WorkCenterStandardQueueDurn` |  | |  |  |
+| `WorkCenterMinimumQueueDurnUnit` |  | |  |  |
+| `WorkCenterMinimumQueueDuration` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit1` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit2` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit3` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit4` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit5` |  | |  |  |
+| `WorkCenterStandardWorkQtyUnit6` |  | |  |  |
+| `StandardWorkQuantityUnit` |  | |  |  |
+| `StandardWorkFormulaParamGroup` |  | |  |  |
+| `WrkCtrStdValMaintRule1` |  | |  |  |
+| `WrkCtrStdValMaintRule2` |  | |  |  |
+| `WrkCtrStdValMaintRule3` |  | |  |  |
+| `WrkCtrStdValMaintRule4` |  | |  |  |
+| `WrkCtrStdValMaintRule5` |  | |  |  |
+| `WrkCtrStdValMaintRule6` |  | |  |  |
+| `_WorkCenterTextBySemanticKey` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_WorkCenterType` | | ✓ | | |
+| `_WorkCenterResponsible` | | ✓ | | |
+| `_WorkCenterCategory` | | ✓ | | |
+| `_WorkCenterLocation` | | ✓ | | |
+| `_WorkCenterLocationGroup` | | ✓ | | |
+| `_WorkCenterUsage` | | ✓ | | |
+| `_Text` | | ✓ | | |
+| `_Capacity` | | ✓ | | |
+| `_MachineType` | | ✓ | | |
+| `_OperationControlProfile` | | ✓ | | |
+| `_SupplyArea` | | ✓ | | |
+| `_WorkCenterSetupType` | | ✓ | | |
+| `_StandardTextInternalID` | | ✓ | | |
+| `_EmployeeWageGroup` | | ✓ | | |
+| `_EmployeeSuitability` | | ✓ | | |
+| `_ValidityStartDate` | | ✓ | | |
+| `_ValidityEndDate` | | ✓ | | |
+| `_StandardQueueDurationUnit` | | ✓ | | |
+| `_MinimumQueueDurationUnit` | | ✓ | | |
+| `_WorkQuantityUnit1` | | ✓ | | |
+| `_WorkQuantityUnit2` | | ✓ | | |
+| `_WorkQuantityUnit3` | | ✓ | | |
+| `_WorkQuantityUnit4` | | ✓ | | |
+| `_WorkQuantityUnit5` | | ✓ | | |
+| `_WorkQuantityUnit6` | | ✓ | | |
+| `_StandardWorkQuantityUnit` | | ✓ | | |
+| `_StandardWorkFmlaParamGroup` | | ✓ | | |
 
 ## Associations
 

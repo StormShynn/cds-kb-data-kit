@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `EventBasedProcessingKey` | `EventBasedProcessingKey` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `EventBasedProcessingKey` | ✓ | |  |  |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

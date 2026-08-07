@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `I_InspectionCatalogText.Language` |
-| key `InspSpecAdditionalCatalog` | `I_InspectionCatalogText.InspectionCatalog` |
-| `InspSpecAdditionalCatalogText` | `I_InspectionCatalogText.InspSpecAdditionalCatalogText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `InspSpecAdditionalCatalog` | ✓ | |  | `InspectionCatalog` |
+| `InspSpecAdditionalCatalogText` |  | |  |  |
 
 ## Source Code
 

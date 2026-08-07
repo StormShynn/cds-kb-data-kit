@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesContract` | `SalesContractPrcgElmnt.SalesContract` |
-| key `PricingProcedureStep` | `SalesContractPrcgElmnt.PricingProcedureStep` |
-| key `PricingProcedureCounter` | `SalesContractPrcgElmnt.PricingProcedureCounter` |
-| `ConditionApplication` | `SalesContractPrcgElmnt.ConditionApplication` |
-| `ConditionType` | `SalesContractPrcgElmnt.ConditionType` |
-| `ConditionCalculationType` | `SalesContractPrcgElmnt.ConditionCalculationType` |
-| `ConditionRateAmount` | `SalesContractPrcgElmnt.ConditionRateAmount` |
-| `ConditionCurrency` | `SalesContractPrcgElmnt.ConditionCurrency` |
-| `ConditionRateRatio` | `SalesContractPrcgElmnt.ConditionRateRatio` |
-| `ConditionRateRatioUnit` | `SalesContractPrcgElmnt.ConditionRateRatioUnit` |
-| `ConditionBaseAmount` | `SalesContractPrcgElmnt.ConditionBaseAmount` |
-| `ConditionAmount` | `SalesContractPrcgElmnt.ConditionAmount` |
-| `TransactionCurrency` | `SalesContractPrcgElmnt.TransactionCurrency` |
-| `ConditionBaseQuantity` | `SalesContractPrcgElmnt.ConditionBaseQuantity` |
-| `ConditionQuantity` | `SalesContractPrcgElmnt.ConditionQuantity` |
-| `ConditionQuantityUnit` | `SalesContractPrcgElmnt.ConditionQuantityUnit` |
-| `ConditionIsForStatistics` | `SalesContractPrcgElmnt.ConditionIsForStatistics` |
-| `ConditionIsManuallyChanged` | `SalesContractPrcgElmnt.ConditionIsManuallyChanged` |
-| `ConditionInactiveReason` | `SalesContractPrcgElmnt.ConditionInactiveReason` |
-| `SalesContractType` | `SalesContractPrcgElmnt.SalesContractType` |
-| `SalesOrganization` | `SalesContractPrcgElmnt.SalesOrganization` |
-| `DistributionChannel` | `SalesContractPrcgElmnt.DistributionChannel` |
-| `OrganizationDivision` | `SalesContractPrcgElmnt.OrganizationDivision` |
-| `_SalesContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesContract` | ✓ | |  |  |
+| `PricingProcedureStep` | ✓ | |  |  |
+| `PricingProcedureCounter` | ✓ | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionCalculationType` |  | |  |  |
+| `ConditionRateAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  |  |
+| `ConditionRateRatio` |  | |  |  |
+| `ConditionRateRatioUnit` |  | |  |  |
+| `ConditionBaseAmount` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ConditionBaseQuantity` |  | |  |  |
+| `ConditionQuantity` |  | |  |  |
+| `ConditionQuantityUnit` |  | |  |  |
+| `ConditionIsForStatistics` |  | |  |  |
+| `ConditionIsManuallyChanged` |  | |  |  |
+| `ConditionInactiveReason` |  | |  |  |
+| `SalesContractType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_SalesContract` | | ✓ | | |
 
 ## Source Code
 

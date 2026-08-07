@@ -29,28 +29,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REPartnerRelationUUID` | `objrelguid` |
-| `InternalRealEstateNumber` | `intreno` |
-| `BusinessPartner` | `partner` |
-| `BusinessPartnerRole` | `role` |
-| `REPartnerRoleType` | `subrole` |
-| `AddressType` | `addrtype` |
-| `ValidityStartDate` | `cast ( validfrom as rebdvdmvalidfrom preserving type )` |
-| `ValidityEndDate` | `cast ( validto as rebdvdmvalidto preserving type )` |
-| `REPartnerApplicationCategory` | `appl` |
-| `REFractionalPrptyShrRatio` | `bruteil` |
-| `REOwnershipShrRatio` | `bmiteig` |
-| `RECoOwnershipShrRatio` | `panteil` |
-| `REFractionalShrCnvrsnRatio` | `rfakt` |
-| `ContractAccount` | `vkont` |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartnerRole` | *Association* |
-| `_REPartnerRoleType` | *Association* |
-| `_BusinessPartnerAddressType` | *Association* |
-| `_CAHeader` | *Association* |
-| `_REContract` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REPartnerRelationUUID` | ✓ | |  | `objrelguid` |
+| `InternalRealEstateNumber` |  | |  | `intreno` |
+| `BusinessPartner` |  | |  | `partner` |
+| `BusinessPartnerRole` |  | |  | `role` |
+| `REPartnerRoleType` |  | |  | `subrole` |
+| `AddressType` |  | |  | `addrtype` |
+| `ValidityStartDate` |  | |  | `cast ( validfrom as rebdvdmvalidfrom preserving type )` |
+| `ValidityEndDate` |  | |  | `cast ( validto as rebdvdmvalidto preserving type )` |
+| `REPartnerApplicationCategory` |  | |  | `appl` |
+| `REFractionalPrptyShrRatio` |  | |  | `bruteil` |
+| `REOwnershipShrRatio` |  | |  | `bmiteig` |
+| `RECoOwnershipShrRatio` |  | |  | `panteil` |
+| `REFractionalShrCnvrsnRatio` |  | |  | `rfakt` |
+| `ContractAccount` |  | |  | `vkont` |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartnerRole` | | ✓ | | |
+| `_REPartnerRoleType` | | ✓ | | |
+| `_BusinessPartnerAddressType` | | ✓ | | |
+| `_CAHeader` | | ✓ | | |
+| `_REContract` | | ✓ | | |
 
 ## Associations
 

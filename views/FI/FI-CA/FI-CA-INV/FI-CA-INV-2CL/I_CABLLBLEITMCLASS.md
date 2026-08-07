@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABllbleItmClass` | `_tfk8101C.bitcat` |
-| `_CABllbleItmClassText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABllbleItmClass` | ✓ | | `_tfk8101C` | `bitcat` |
+| `_CABllbleItmClassText` | | ✓ | | |
 
 ## Associations
 

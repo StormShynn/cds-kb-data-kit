@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RptvMfgConfProcessingType` | `cast(substring(l.domvalue_l, 1, 4) as vdm_pp_vaart preserving type)` |
-| `DomainValue` | `l.domvalue_l` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RptvMfgConfProcessingType` | ✓ | |  | `cast(substring(l.domvalue_l, 1, 4) as vdm_pp_vaart preserving type)` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

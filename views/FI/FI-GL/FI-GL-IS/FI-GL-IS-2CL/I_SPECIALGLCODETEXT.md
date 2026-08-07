@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinancialAccountType` | `koart` |
-| key `SpecialGLCode` | `shbkz` |
-| key `Language` | `spras` |
-| `SpecialGLCodeName` | `ktext` |
-| `SpecialGLCodeLongName` | `ltext` |
-| `_Language` | *Association* |
-| `_FinancialAccountType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinancialAccountType` | ✓ | |  | `koart` |
+| `SpecialGLCode` | ✓ | |  | `shbkz` |
+| `Language` | ✓ | |  | `spras` |
+| `SpecialGLCodeName` |  | |  | `ktext` |
+| `SpecialGLCodeLongName` |  | |  | `ltext` |
+| `_Language` | | ✓ | | |
+| `_FinancialAccountType` | | ✓ | | |
 
 ## Associations
 

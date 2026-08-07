@@ -28,55 +28,55 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PackingInstructionSystemUUID` | `packnr` |
-| `PackingInstructionNumber` | `pobjid` |
-| `PackingInstructionExternalName` | `partid` |
-| `HandlingUnitHeight` | `height` |
-| `HandlingUnitWidth` | `width` |
-| `HandlingUnitLength` | `length` |
-| `HandlingUnitInnerHeight` | `iheight` |
-| `HandlingUnitInnerWidth` | `iwidth` |
-| `HandlingUnitInnerLength` | `ilength` |
-| `HandlingUnitUoMDimension` | `unitdim` |
-| `HandlingUnitMeasuresAreFixed` | `sizefix` |
-| `HandlingUnitGrossVolume` | `totlvol` |
-| `HandlingUnitLoadVolume` | `loadvol` |
-| `HandlingUnitAllowedLoadVolume` | `allovol` |
-| `HandlingUnitVolumeUnit` | `unitvol_max` |
-| `HandlingUnitTareVolume` | `tarevol` |
-| `HandlingUnitTareVolumeUnit` | `unitvol` |
-| `HandlingUnitVolumesAreFixed` | `volumfix` |
-| `ExcessVolumeToleranceValue` | `tolevol` |
-| `HandlingUnitGrossWeight` | `totlwei` |
-| `HandlingUnitLoadWeight` | `loadwei` |
-| `HandlingUnitAllowedLoadWeight` | `allowei` |
-| `HandlingUnitWeightUnit` | `unitwei_max` |
-| `HandlingUnitTareWeight` | `tarewei` |
-| `HandlingUnitTareWeightUnit` | `unitwei` |
-| `HandlingUnitWeightsAreFixed` | `weightfix` |
-| `ExcessWeightToleranceValue` | `tolewei` |
-| `PackingInstructionAllwdLoadQty` | `maxstwe` |
-| `HandlingUnitIsClosed` | `indclopa` |
-| `LoadCarrierSystUUID` | `cast( mapaco_item as packing_instruction_component preserving type )` |
-| `PackingInstructionIsDeleted` | `inddel` |
-| `PackingInstructionCheckProfSts` | `checkprof` |
-| `StackingFactor` | `stfac` |
-| `HandlingUnitType` | `hu_type` |
-| `CreatedByUser` | `crnam` |
-| `CreationDate` | `crdat` |
-| `LastChangedByUser` | `chnam` |
-| `LastChangeDate` | `chdat` |
-| `LastChangeTime` | `chtim` |
-| `LastChangeDateTime` | `lastchangeddatetime` |
-| `_PackingInstructionComponent` | *Association* |
-| `_UnitOfMeasureDimension` | *Association* |
-| `_HandlingUnitVolumeUnit` | *Association* |
-| `_HandlingUnitTareVolumeUnit` | *Association* |
-| `_HandlingUnitWeightUnit` | *Association* |
-| `_HandlingUnitTareWeightUnit` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PackingInstructionSystemUUID` | ✓ | |  | `packnr` |
+| `PackingInstructionNumber` |  | |  | `pobjid` |
+| `PackingInstructionExternalName` |  | |  | `partid` |
+| `HandlingUnitHeight` |  | |  | `height` |
+| `HandlingUnitWidth` |  | |  | `width` |
+| `HandlingUnitLength` |  | |  | `length` |
+| `HandlingUnitInnerHeight` |  | |  | `iheight` |
+| `HandlingUnitInnerWidth` |  | |  | `iwidth` |
+| `HandlingUnitInnerLength` |  | |  | `ilength` |
+| `HandlingUnitUoMDimension` |  | |  | `unitdim` |
+| `HandlingUnitMeasuresAreFixed` |  | |  | `sizefix` |
+| `HandlingUnitGrossVolume` |  | |  | `totlvol` |
+| `HandlingUnitLoadVolume` |  | |  | `loadvol` |
+| `HandlingUnitAllowedLoadVolume` |  | |  | `allovol` |
+| `HandlingUnitVolumeUnit` |  | |  | `unitvol_max` |
+| `HandlingUnitTareVolume` |  | |  | `tarevol` |
+| `HandlingUnitTareVolumeUnit` |  | |  | `unitvol` |
+| `HandlingUnitVolumesAreFixed` |  | |  | `volumfix` |
+| `ExcessVolumeToleranceValue` |  | |  | `tolevol` |
+| `HandlingUnitGrossWeight` |  | |  | `totlwei` |
+| `HandlingUnitLoadWeight` |  | |  | `loadwei` |
+| `HandlingUnitAllowedLoadWeight` |  | |  | `allowei` |
+| `HandlingUnitWeightUnit` |  | |  | `unitwei_max` |
+| `HandlingUnitTareWeight` |  | |  | `tarewei` |
+| `HandlingUnitTareWeightUnit` |  | |  | `unitwei` |
+| `HandlingUnitWeightsAreFixed` |  | |  | `weightfix` |
+| `ExcessWeightToleranceValue` |  | |  | `tolewei` |
+| `PackingInstructionAllwdLoadQty` |  | |  | `maxstwe` |
+| `HandlingUnitIsClosed` |  | |  | `indclopa` |
+| `LoadCarrierSystUUID` |  | |  | `cast( mapaco_item as packing_instruction_component preserving type )` |
+| `PackingInstructionIsDeleted` |  | |  | `inddel` |
+| `PackingInstructionCheckProfSts` |  | |  | `checkprof` |
+| `StackingFactor` |  | |  | `stfac` |
+| `HandlingUnitType` |  | |  | `hu_type` |
+| `CreatedByUser` |  | |  | `crnam` |
+| `CreationDate` |  | |  | `crdat` |
+| `LastChangedByUser` |  | |  | `chnam` |
+| `LastChangeDate` |  | |  | `chdat` |
+| `LastChangeTime` |  | |  | `chtim` |
+| `LastChangeDateTime` |  | |  | `lastchangeddatetime` |
+| `_PackingInstructionComponent` | | ✓ | | |
+| `_UnitOfMeasureDimension` | | ✓ | | |
+| `_HandlingUnitVolumeUnit` | | ✓ | | |
+| `_HandlingUnitTareVolumeUnit` | | ✓ | | |
+| `_HandlingUnitWeightUnit` | | ✓ | | |
+| `_HandlingUnitTareWeightUnit` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

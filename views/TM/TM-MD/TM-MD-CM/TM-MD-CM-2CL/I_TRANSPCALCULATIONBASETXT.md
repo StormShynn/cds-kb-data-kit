@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationCalculationBase` | `cast(calc_base as /scmtms/vdm_tcm_calc_base preserving type)` |
-| key `Language` | `language` |
-| `TranspCalculationBaseText` | `cast(description as /scmtms/vdm_tcm_calc_base_text preserving type)` |
-| `_Language` | *Association* |
-| `_TranspCalculationBase` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationCalculationBase` | ✓ | |  | `cast(calc_base as /scmtms/vdm_tcm_calc_base preserving type)` |
+| `Language` | ✓ | |  | `language` |
+| `TranspCalculationBaseText` |  | |  | `cast(description as /scmtms/vdm_tcm_calc_base_text preserving type)` |
+| `_Language` | | ✓ | | |
+| `_TranspCalculationBase` | | ✓ | | |
 
 ## Associations
 

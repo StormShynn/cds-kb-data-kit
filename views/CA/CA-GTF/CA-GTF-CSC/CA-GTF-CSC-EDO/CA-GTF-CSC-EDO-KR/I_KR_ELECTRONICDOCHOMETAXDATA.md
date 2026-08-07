@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `BusinessPlace` | `bupla` |
-| key `KR_EDocHomeTaxDtaApprovalNo` | `apprvl_no` |
-| `KR_EDocHomeTaxDtaTaxBaseValue` | `tax_base_amt` |
-| `KR_EDocHomeTaxDtaTaxValue` | `tax_amount` |
-| `KR_EDocHomeTaxDtaValue` | `amount` |
-| `Currency` | `waers` |
-| `KR_EDocHomeTaxDtaInvcDate` | `invoice_date` |
-| `Customer` | `customer` |
-| `Supplier` | `supplier` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `BusinessPlace` | ✓ | |  | `bupla` |
+| `KR_EDocHomeTaxDtaApprovalNo` | ✓ | |  | `apprvl_no` |
+| `KR_EDocHomeTaxDtaTaxBaseValue` |  | |  | `tax_base_amt` |
+| `KR_EDocHomeTaxDtaTaxValue` |  | |  | `tax_amount` |
+| `KR_EDocHomeTaxDtaValue` |  | |  | `amount` |
+| `Currency` |  | |  | `waers` |
+| `KR_EDocHomeTaxDtaInvcDate` |  | |  | `invoice_date` |
+| `Customer` |  | |  | `customer` |
+| `Supplier` |  | |  | `supplier` |
 
 ## Source Code
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SchedulingAgreementReleaseType` | `substring( domvalue_l,1,1 )` |
-| key `Language` | `ddlanguage` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `SchedgAgrmtReleaseTypeName` | `ddtext` |
-| `_SalesSchedgAgrmtRelType` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SchedulingAgreementReleaseType` | ✓ | |  | `substring( domvalue_l,1,1 )` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `SchedgAgrmtReleaseTypeName` |  | |  | `ddtext` |
+| `_SalesSchedgAgrmtRelType` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

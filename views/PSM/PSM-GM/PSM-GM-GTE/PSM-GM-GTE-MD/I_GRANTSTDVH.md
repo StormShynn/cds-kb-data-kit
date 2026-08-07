@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `GrantID` | `GrantID` |
-| `GrantName` | `_Text[1:Language = $session.system_language].GrantName` |
-| `GranteeMgmtSponsor` | `GranteeMgmtSponsor` |
-| `BusinessPartnerName` | `_Sponsor.BusinessPartnerName` |
-| `GrantIsNotRelevantGrant` | `GrantIsNotRelevantGrant` |
-| `GrantAuthznGrp` | `GrantAuthznGrp` |
-| `GrantLfcycStatusForAuthzn` | `GrantLfcycStatusForAuthzn` |
-| `GrantLifecycleStatus` | `GrantLifecycleStatus` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `_Text` | *Association* |
-| `_Sponsor` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `GrantID` | ✓ | |  |  |
+| `GrantName` |  | |  | `_Text[1:Language = $session.system_language].GrantName` |
+| `GranteeMgmtSponsor` |  | |  |  |
+| `BusinessPartnerName` |  | | `_Sponsor` | `BusinessPartnerName` |
+| `GrantIsNotRelevantGrant` |  | |  |  |
+| `GrantAuthznGrp` |  | |  |  |
+| `GrantLfcycStatusForAuthzn` |  | |  |  |
+| `GrantLifecycleStatus` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `_Text` | | ✓ | | |
+| `_Sponsor` | | ✓ | | |
 
 ## Source Code
 

@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceDocItemCategory` | `itm_type` |
-| key `Language` | `langu` |
-| `ServiceDocItemCategoryName` | `i_description` |
-| `SrvcDocItmCategoryShortName` | `i_description_20` |
-| `_ServiceDocItemCategory` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |
+| `Language` | ✓ | |  | `langu` |
+| `ServiceDocItemCategoryName` |  | |  | `i_description` |
+| `SrvcDocItmCategoryShortName` |  | |  | `i_description_20` |
+| `_ServiceDocItemCategory` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CharcGroup` | `CharcGroup` |
-| `_Text` | `_CharacteristicGroupText` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CharcGroup` | ✓ | |  |  |
+| `_Text` |  | |  | `_CharacteristicGroupText` |
 
 ## Source Code
 

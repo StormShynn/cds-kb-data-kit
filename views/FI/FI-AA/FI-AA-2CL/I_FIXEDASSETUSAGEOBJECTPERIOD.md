@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `comp_code` |
-| key `FixedAssetUsageObject` | `usage_object` |
-| key `ValidityEndDate` | `valid_to_date` |
-| `ValidityStartDate` | `valid_from_date` |
-| `PeriodPlannedQtyInProdnUnit` | `period_units` |
-| `BaseUnit` | `_UsageObject.BaseUnit` |
-| `_UsageObject` | *Association* |
-| `_CompanyCode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `comp_code` |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` |
+| `ValidityStartDate` |  | |  | `valid_from_date` |
+| `PeriodPlannedQtyInProdnUnit` |  | |  | `period_units` |
+| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` |
+| `_UsageObject` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
 
 ## Associations
 

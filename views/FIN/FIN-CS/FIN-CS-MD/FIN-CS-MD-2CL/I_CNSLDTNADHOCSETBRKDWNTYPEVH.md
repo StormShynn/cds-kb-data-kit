@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CnsldtnAdhocSetBrkdwnType` | `CnsldtnAdhocSetBrkdwnType` |
-| `CnsldtnAdhocSetBrkdwnTypeText` | `cast(_Text[1: Language=$session.system_language].CnsldtnAdhocSetBrkdwnTypeText as fincs_description_text_60 preserving type )` |
-| `DomainValue` | `_AdhocSetBrkdwnType.DomainValue` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CnsldtnAdhocSetBrkdwnType` | ✓ | |  |  |
+| `CnsldtnAdhocSetBrkdwnTypeText` |  | |  | `cast(_Text[1: Language=$session.system_language].CnsldtnAdhocSetBrkdwnTypeText as fincs_description_text_60 preserving type )` |
+| `DomainValue` |  | | `_AdhocSetBrkdwnType` | `DomainValue` |
 
 ## Source Code
 

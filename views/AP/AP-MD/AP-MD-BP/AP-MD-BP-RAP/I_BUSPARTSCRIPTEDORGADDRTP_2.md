@@ -30,65 +30,65 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartner` | `BusinessPartner` |
-| key `AddressNumber` | `AddressNumber` |
-| key `AddressRepresentationCode` | `AddressRepresentationCode` |
-| `AddrRepCodeForEditValue` | `AddrRepCodeForEditValue` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `BusinessPartnerAddressUUID` | `BusinessPartnerAddressUUID` |
-| `CareOfName` | `CareOfName` |
-| `AdditionalStreetSuffixName` | `AdditionalStreetSuffixName` |
-| `CorrespondenceLanguage` | `CorrespondenceLanguage` |
-| `PrfrdCommMediumType` | `PrfrdCommMediumType` |
-| `POBoxLobbyName` | `POBoxLobbyName` |
-| `AddressTimeZone` | `AddressTimeZone` |
-| `FullName` | `FullName` |
-| `CityName` | `CityName` |
-| `District` | `District` |
-| `DistrictName` | `DistrictName` |
-| `HomeCityName` | `HomeCityName` |
-| `StreetName` | `StreetName` |
-| `StreetPrefixName` | `StreetPrefixName` |
-| `AdditionalStreetPrefixName` | `AdditionalStreetPrefixName` |
-| `StreetSuffixName` | `StreetSuffixName` |
-| `HouseNumber` | `HouseNumber` |
-| `HouseNumberSupplementText` | `HouseNumberSupplementText` |
-| `Building` | `Building` |
-| `Floor` | `Floor` |
-| `RoomNumber` | `RoomNumber` |
-| `County` | `County` |
-| `BPCountyText` | `BPCountyText` |
-| `FormattedAddress` | `FormattedAddress` |
-| `FormOfAddress` | `FormOfAddress` |
-| `BusinessPartnerName1` | `BusinessPartnerName1` |
-| `BusinessPartnerName2` | `BusinessPartnerName2` |
-| `BusinessPartnerName3` | `BusinessPartnerName3` |
-| `BusinessPartnerName4` | `BusinessPartnerName4` |
-| `SearchTerm1` | `SearchTerm1` |
-| `SearchTerm2` | `SearchTerm2` |
-| `DataControllerSet` | `DataControllerSet` |
-| `DataController1` | `DataController1` |
-| `DataController2` | `DataController2` |
-| `DataController3` | `DataController3` |
-| `DataController4` | `DataController4` |
-| `DataController5` | `DataController5` |
-| `DataController6` | `DataController6` |
-| `DataController7` | `DataController7` |
-| `DataController8` | `DataController8` |
-| `DataController9` | `DataController9` |
-| `DataController10` | `DataController10` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
-| `BPAddressIsProtected` | `BPAddressIsProtected` |
-| `_BusinessPartner` | *Association* |
-| `_BusinessPartnerAddress` | *Association* |
-| `_BPProtectedAddress` | *Association* |
-| `_AddressRepresentation` | *Association* |
-| `_FormOfAddress` | *Association* |
-| `_AuthorizationGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartner` | ✓ | |  |  |
+| `AddressNumber` | ✓ | |  |  |
+| `AddressRepresentationCode` | ✓ | |  |  |
+| `AddrRepCodeForEditValue` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `BusinessPartnerAddressUUID` |  | |  |  |
+| `CareOfName` |  | |  |  |
+| `AdditionalStreetSuffixName` |  | |  |  |
+| `CorrespondenceLanguage` |  | |  |  |
+| `PrfrdCommMediumType` |  | |  |  |
+| `POBoxLobbyName` |  | |  |  |
+| `AddressTimeZone` |  | |  |  |
+| `FullName` |  | |  |  |
+| `CityName` |  | |  |  |
+| `District` |  | |  |  |
+| `DistrictName` |  | |  |  |
+| `HomeCityName` |  | |  |  |
+| `StreetName` |  | |  |  |
+| `StreetPrefixName` |  | |  |  |
+| `AdditionalStreetPrefixName` |  | |  |  |
+| `StreetSuffixName` |  | |  |  |
+| `HouseNumber` |  | |  |  |
+| `HouseNumberSupplementText` |  | |  |  |
+| `Building` |  | |  |  |
+| `Floor` |  | |  |  |
+| `RoomNumber` |  | |  |  |
+| `County` |  | |  |  |
+| `BPCountyText` |  | |  |  |
+| `FormattedAddress` |  | |  |  |
+| `FormOfAddress` |  | |  |  |
+| `BusinessPartnerName1` |  | |  |  |
+| `BusinessPartnerName2` |  | |  |  |
+| `BusinessPartnerName3` |  | |  |  |
+| `BusinessPartnerName4` |  | |  |  |
+| `SearchTerm1` |  | |  |  |
+| `SearchTerm2` |  | |  |  |
+| `DataControllerSet` |  | |  |  |
+| `DataController1` |  | |  |  |
+| `DataController2` |  | |  |  |
+| `DataController3` |  | |  |  |
+| `DataController4` |  | |  |  |
+| `DataController5` |  | |  |  |
+| `DataController6` |  | |  |  |
+| `DataController7` |  | |  |  |
+| `DataController8` |  | |  |  |
+| `DataController9` |  | |  |  |
+| `DataController10` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
+| `BPAddressIsProtected` |  | |  |  |
+| `_BusinessPartner` | | ✓ | | |
+| `_BusinessPartnerAddress` | | ✓ | | |
+| `_BPProtectedAddress` | | ✓ | | |
+| `_AddressRepresentation` | | ✓ | | |
+| `_FormOfAddress` | | ✓ | | |
+| `_AuthorizationGroup` | | ✓ | | |
 
 ## Source Code
 

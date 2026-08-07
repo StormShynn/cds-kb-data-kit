@@ -27,39 +27,39 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `prueflos` |
-| key `InspPlanOperationInternalID` | `vorglfnr` |
-| key `InspectionCharacteristic` | `merknr` |
-| key `InspectionSubsetInternalID` | `probenr` |
-| `InspectionCharacteristicStatus` | `qasv.satzstatus` |
-| `QualityControlChart` | `qasv.qrknr` |
-| `InspSampleAcceptanceNumber` | `qasv.annahmez` |
-| `InspSampleRejectionNumber` | `qasv.rueckwez` |
-| `InspSampleHasAcceptanceFactor` | `qasv.kfaktorni` |
-| `InspSampleAcceptanceFactor` | `qasv.kfaktor` |
-| `DefectFractionEstimationProced` | `qasv.antverf` |
-| `InspSampleValuationRule` | `qasv.bewregel` |
-| `BOOCharcMatlToSampleUnitRate` | `qasv.fakplanme` |
-| `BOOCharcSampleToMatlUnitRate` | `qasv.fakprobme` |
-| `InspectionSampleSize` | `qasv.stiproumf` |
-| `InspCharacteristicSampleUnit` | `qasv.probemgeh` |
-| `InspSpecSampleQuantityFactor` | `qasv.probmgfak` |
-| `InspectionSampleQuantity` | `qasv.pruefumf` |
-| `InspectionLotSampleUnit` | `qasv.mengeneinh` |
-| `InspLotDynRuleStage` | `qasv.prstufe` |
-| `InspectionSeverity` | `qasv.prschaerfe` |
-| `InspSubsetCharcCreationDate` | `qasv.erstelldat` |
-| `_InspectionLot` | *Association* |
-| `_InspectionOperation` | *Association* |
-| `_InspectionSubset` | *Association* |
-| `_InspectionCharacteristic` | *Association* |
-| `_InspSubsetResult` | *Association* |
-| `_InspectionResultValue` | *Association* |
-| `_InspCharacteristicStatus` | *Association* |
-| `_InspectionSeverity` | *Association* |
-| `_InspCharcSampleUnit` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  | `prueflos` |
+| `InspPlanOperationInternalID` | ✓ | |  | `vorglfnr` |
+| `InspectionCharacteristic` | ✓ | |  | `merknr` |
+| `InspectionSubsetInternalID` | ✓ | |  | `probenr` |
+| `InspectionCharacteristicStatus` |  | |  | `satzstatus` |
+| `QualityControlChart` |  | |  | `qrknr` |
+| `InspSampleAcceptanceNumber` |  | |  | `annahmez` |
+| `InspSampleRejectionNumber` |  | |  | `rueckwez` |
+| `InspSampleHasAcceptanceFactor` |  | |  | `kfaktorni` |
+| `InspSampleAcceptanceFactor` |  | |  | `kfaktor` |
+| `DefectFractionEstimationProced` |  | |  | `antverf` |
+| `InspSampleValuationRule` |  | |  | `bewregel` |
+| `BOOCharcMatlToSampleUnitRate` |  | |  | `fakplanme` |
+| `BOOCharcSampleToMatlUnitRate` |  | |  | `fakprobme` |
+| `InspectionSampleSize` |  | |  | `stiproumf` |
+| `InspCharacteristicSampleUnit` |  | |  | `probemgeh` |
+| `InspSpecSampleQuantityFactor` |  | |  | `probmgfak` |
+| `InspectionSampleQuantity` |  | |  | `pruefumf` |
+| `InspectionLotSampleUnit` |  | |  | `mengeneinh` |
+| `InspLotDynRuleStage` |  | |  | `prstufe` |
+| `InspectionSeverity` |  | |  | `prschaerfe` |
+| `InspSubsetCharcCreationDate` |  | |  | `erstelldat` |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionOperation` | | ✓ | | |
+| `_InspectionSubset` | | ✓ | | |
+| `_InspectionCharacteristic` | | ✓ | | |
+| `_InspSubsetResult` | | ✓ | | |
+| `_InspectionResultValue` | | ✓ | | |
+| `_InspCharacteristicStatus` | | ✓ | | |
+| `_InspectionSeverity` | | ✓ | | |
+| `_InspCharcSampleUnit` | | ✓ | | |
 
 ## Associations
 

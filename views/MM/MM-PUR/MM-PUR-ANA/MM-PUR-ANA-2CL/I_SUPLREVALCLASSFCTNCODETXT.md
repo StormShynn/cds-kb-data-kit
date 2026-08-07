@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `SupplierClassification` | `cast( dd07t.domvalue_l as mm_classification )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `SupplierClfnName` | `cast (dd07t.ddtext as mm_classifciation_text )` |
-| `_Language` | *Association* |
-| `_Code` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `SupplierClassification` | ✓ | |  | `cast( dd07t.domvalue_l as mm_classification )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `SupplierClfnName` |  | |  | `cast (dd07t.ddtext as mm_classifciation_text )` |
+| `_Language` | | ✓ | | |
+| `_Code` | | ✓ | | |
 
 ## Associations
 

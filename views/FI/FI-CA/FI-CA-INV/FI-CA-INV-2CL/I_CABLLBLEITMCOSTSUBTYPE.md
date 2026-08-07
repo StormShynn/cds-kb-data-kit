@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CABllbleItmCostType` | `cast(co_type as co_type_gfn_kk preserving type)` |
-| key `CABllbleItmCostSubType` | `cast(co_subtype as co_subtype_gfn_kk preserving type)` |
-| `_CABllbleItmCostType` | *Association* |
-| `_CABllbleItmCostSubtypeText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CABllbleItmCostType` | ✓ | |  | `cast(co_type as co_type_gfn_kk preserving type)` |
+| `CABllbleItmCostSubType` | ✓ | |  | `cast(co_subtype as co_subtype_gfn_kk preserving type)` |
+| `_CABllbleItmCostType` | | ✓ | | |
+| `_CABllbleItmCostSubtypeText` | | ✓ | | |
 
 ## Associations
 

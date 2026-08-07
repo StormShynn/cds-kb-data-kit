@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PlanningCategory` | `fcomc_category.category` |
-| `PlanningCategoryUsage` | `fcomc_category.category_usage` |
-| `AvailabilityControlIsActive` | `fcomc_category.availability_control` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PlanningCategory` | ✓ | |  | `category` |
+| `PlanningCategoryUsage` |  | |  | `category_usage` |
+| `AvailabilityControlIsActive` |  | |  | `availability_control` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CtrlPostgForExtWhseMgmtSyst` | `cast(substring(domvalue_l, 1, 1) as bfwms)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CtrlPostgForExtWhseMgmtSyst` | ✓ | |  | `cast(substring(domvalue_l, 1, 1) as bfwms)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

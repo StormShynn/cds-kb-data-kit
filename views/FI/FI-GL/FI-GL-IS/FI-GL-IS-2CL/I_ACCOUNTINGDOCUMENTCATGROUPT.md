@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingDocumentCatGroup` | `cast( dd07t.domvalue_l as fis_bstat_grp )` |
-| key `Language` | `cast( dd07t.ddlanguage as spras )` |
-| `AccountingDocumentCatGroupName` | `cast(dd07t.ddtext as fis_bstat_grp_name)` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingDocumentCatGroup` | ✓ | |  | `cast( dd07t.domvalue_l as fis_bstat_grp )` |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras )` |
+| `AccountingDocumentCatGroupName` |  | |  | `cast(dd07t.ddtext as fis_bstat_grp_name)` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

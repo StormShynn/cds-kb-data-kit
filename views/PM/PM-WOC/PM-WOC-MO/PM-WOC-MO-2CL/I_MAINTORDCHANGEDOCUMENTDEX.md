@@ -30,28 +30,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ChangeDocObject` | `ChangeDocumentItem.ChangeDocObject` |
-| key `ChangeDocObjectClass` | `ChangeDocumentItem.ChangeDocObjectClass` |
-| key `ChangeDocument` | `ChangeDocumentItem.ChangeDocument` |
-| key `DatabaseTable` | `ChangeDocumentItem.DatabaseTable` |
-| key `ChangeDocTableKey` | `ChangeDocumentItem.ChangeDocTableKey` |
-| key `ChangeDocDatabaseTableField` | `ChangeDocumentItem.ChangeDocDatabaseTableField` |
-| key `ChangeDocItemChangeType` | `ChangeDocumentItem.ChangeDocItemChangeType` |
-| `MaintenanceOrder` | `MaintOrder.MaintenanceOrder` |
-| `MaintenancePlanningPlant` | `MaintOrder.MaintenancePlanningPlant` |
-| `MaintenanceOrderType` | `MaintOrder.MaintenanceOrderType` |
-| `MaintenancePlannerGroup` | `MaintOrder.MaintenancePlannerGroup` |
-| `ChangeDocNewFieldValue` | `ChangeDocumentItem.ChangeDocNewFieldValue` |
-| `ChangeDocPreviousFieldValue` | `ChangeDocumentItem.ChangeDocPreviousFieldValue` |
-| `ChangeDocPreviousUnit` | `cast ( ChangeDocumentItem.ChangeDocPreviousUnit as mmiv_chng_doc_old_unit preserving type )` |
-| `ChangeDocNewUnit` | `cast ( ChangeDocumentItem.ChangeDocNewUnit as mmiv_chng_doc_new_unit preserving type )` |
-| `ChangeDocPreviousCurrency` | `cast ( ChangeDocumentItem.ChangeDocPreviousCurrency as mmiv_chng_doc_old_currency preserving type )` |
-| `ChangeDocNewCurrency` | `cast ( ChangeDocumentItem.ChangeDocNewCurrency as mmiv_chng_doc_new_currency preserving type )` |
-| `CreatedByUser` | `ChangeDocumentItem._ChangeDocument.CreatedByUser` |
-| `CreationDate` | `ChangeDocumentItem._ChangeDocument.CreationDate` |
-| `CreationTime` | `ChangeDocumentItem._ChangeDocument.CreationTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ChangeDocObject` | ✓ | |  |  |
+| `ChangeDocObjectClass` | ✓ | |  |  |
+| `ChangeDocument` | ✓ | |  |  |
+| `DatabaseTable` | ✓ | |  |  |
+| `ChangeDocTableKey` | ✓ | |  |  |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  |
+| `ChangeDocItemChangeType` | ✓ | |  |  |
+| `MaintenanceOrder` |  | |  |  |
+| `MaintenancePlanningPlant` |  | |  |  |
+| `MaintenanceOrderType` |  | |  |  |
+| `MaintenancePlannerGroup` |  | |  |  |
+| `ChangeDocNewFieldValue` |  | |  |  |
+| `ChangeDocPreviousFieldValue` |  | |  |  |
+| `ChangeDocPreviousUnit` |  | |  | `cast ( ChangeDocumentItem.ChangeDocPreviousUnit as mmiv_chng_doc_old_unit preserving type )` |
+| `ChangeDocNewUnit` |  | |  | `cast ( ChangeDocumentItem.ChangeDocNewUnit as mmiv_chng_doc_new_unit preserving type )` |
+| `ChangeDocPreviousCurrency` |  | |  | `cast ( ChangeDocumentItem.ChangeDocPreviousCurrency as mmiv_chng_doc_old_currency preserving type )` |
+| `ChangeDocNewCurrency` |  | |  | `cast ( ChangeDocumentItem.ChangeDocNewCurrency as mmiv_chng_doc_new_currency preserving type )` |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
 
 ## Source Code
 

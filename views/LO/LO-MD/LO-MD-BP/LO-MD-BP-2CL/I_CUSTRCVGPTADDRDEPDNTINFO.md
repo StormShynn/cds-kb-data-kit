@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Customer` | `locnr` |
-| key `AddressID` | `adrnr` |
-| key `ReceivingPoint` | `empst` |
-| `UnloadingPointName` | `ablad` |
-| `_Customer` | *Association* |
-| `_AddressDefaultRepresentation` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Customer` | ✓ | |  | `locnr` |
+| `AddressID` | ✓ | |  | `adrnr` |
+| `ReceivingPoint` | ✓ | |  | `empst` |
+| `UnloadingPointName` |  | |  | `ablad` |
+| `_Customer` | | ✓ | | |
+| `_AddressDefaultRepresentation` | | ✓ | | |
 
 ## Associations
 

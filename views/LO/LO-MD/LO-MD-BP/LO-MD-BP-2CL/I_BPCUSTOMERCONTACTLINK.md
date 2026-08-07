@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BusinessPartnerUUID` | `BPCustomerContactLink.partner_guid` |
-| key `PersonUUID` | `BPCustomerContactLink.person_guid` |
-| key `CustomerContact` | `BPCustomerContactLink.customer_cont` |
-| `CreatedByUser` | `BPCustomerContactLink.cruser` |
-| `CreationDate` | `BPCustomerContactLink.crdat` |
-| `CreationTime` | `BPCustomerContactLink.crtim` |
-| `_CustomerToBusinessPartner` | *Association* |
-| `_BusinessPartnerCompany` | *Association* |
-| `_BusinessPartnerPerson` | *Association* |
-| `_ContactPerson` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusinessPartnerUUID` | ✓ | |  | `partner_guid` |
+| `PersonUUID` | ✓ | |  | `person_guid` |
+| `CustomerContact` | ✓ | |  | `customer_cont` |
+| `CreatedByUser` |  | |  | `cruser` |
+| `CreationDate` |  | |  | `crdat` |
+| `CreationTime` |  | |  | `crtim` |
+| `_CustomerToBusinessPartner` | | ✓ | | |
+| `_BusinessPartnerCompany` | | ✓ | | |
+| `_BusinessPartnerPerson` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
 
 ## Associations
 

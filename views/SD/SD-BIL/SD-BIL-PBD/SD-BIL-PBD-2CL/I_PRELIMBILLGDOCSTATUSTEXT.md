@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PrelimBillingDocumentStatus` | `substring(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `PrelimBillingDocStatusDesc` | `ddtext` |
-| `_PrelimBillgDocStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PrelimBillingDocumentStatus` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `PrelimBillingDocStatusDesc` |  | |  | `ddtext` |
+| `_PrelimBillgDocStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocumentInfoRecordDocType` | `status.dokar` |
-| key `InternalDocumentStatus` | `status.dokst` |
-| `DocInfoRecdStatusType` | `status.dosar` |
-| `_DocTypeText` | *Association* |
-| `_DocType` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocumentInfoRecordDocType` | ✓ | |  | `dokar` |
+| `InternalDocumentStatus` | ✓ | |  | `dokst` |
+| `DocInfoRecdStatusType` |  | |  | `dosar` |
+| `_DocTypeText` | | ✓ | | |
+| `_DocType` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

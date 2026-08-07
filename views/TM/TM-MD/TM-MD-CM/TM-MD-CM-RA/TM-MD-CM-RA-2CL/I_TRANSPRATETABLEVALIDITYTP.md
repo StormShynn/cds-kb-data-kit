@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspRateTableValidityUUID` | `TranspRateTableValidityUUID` |
-| `TransportationRateTableUUID` | `TransportationRateTableUUID` |
-| `TranspRateTblValidityCurrency` | `TranspRateTblValidityCurrency` |
-| `TranspRateTblValdtyLfcycStatus` | `TranspRateTblValdtyLfcycStatus` |
-| `TranspRateTblValidityEndDate` | `TranspRateTblValidityEndDate` |
-| `TranspRateTblValidityStartDate` | `TranspRateTblValidityStartDate` |
-| `TranspRateTblValidityPctUnit` | `TranspRateTblValidityPctUnit` |
-| `I_TransportationRateTableTP` | `TranspRateTableValidity._TransportationRateTable : redirected to parent I_TransportationRateTableTP` |
-| `I_TranspRateTableCalcRuleTP` | `TranspRateTableValidity._TranspRateTableCalcRule : redirected to composition child I_TranspRateTableCalcRuleTP` |
-| `I_TranspRateTableRateTP` | `TranspRateTableValidity._TranspRateTableRate : redirected to composition child I_TranspRateTableRateTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspRateTableValidityUUID` | ✓ | |  |  |
+| `TransportationRateTableUUID` |  | |  |  |
+| `TranspRateTblValidityCurrency` |  | |  |  |
+| `TranspRateTblValdtyLfcycStatus` |  | |  |  |
+| `TranspRateTblValidityEndDate` |  | |  |  |
+| `TranspRateTblValidityStartDate` |  | |  |  |
+| `TranspRateTblValidityPctUnit` |  | |  |  |
+| `I_TransportationRateTableTP` |  | |  | `TranspRateTableValidity._TransportationRateTable : redirected to parent I_TransportationRateTableTP` |
+| `I_TranspRateTableCalcRuleTP` |  | |  | `TranspRateTableValidity._TranspRateTableCalcRule : redirected to composition child I_TranspRateTableCalcRuleTP` |
+| `I_TranspRateTableRateTP` |  | |  | `TranspRateTableValidity._TranspRateTableRate : redirected to composition child I_TranspRateTableRateTP` |
 
 ## Source Code
 

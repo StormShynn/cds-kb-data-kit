@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast(_DomainT.Language as spras preserving type )` |
-| key `CnsldtnTaskLogItemType` | `cast(left(_DomainT.DomainValue, 2) as fincs_lineitemtype preserving type )` |
-| `CnsldtnTaskLogItemTypeText` | `cast(_DomainT.DomainValueText as fincs_logitemtype_text preserving type )` |
-| `DomainValue` | `_DomainT.DomainValue` |
-| `_TaskLogItemType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast(_DomainT.Language as spras preserving type )` |
+| `CnsldtnTaskLogItemType` | ✓ | |  | `cast(left(_DomainT.DomainValue, 2) as fincs_lineitemtype preserving type )` |
+| `CnsldtnTaskLogItemTypeText` |  | |  | `cast(_DomainT.DomainValueText as fincs_logitemtype_text preserving type )` |
+| `DomainValue` |  | | `_DomainT` | `DomainValue` |
+| `_TaskLogItemType` | | ✓ | | |
 
 ## Associations
 

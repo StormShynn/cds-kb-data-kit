@@ -29,40 +29,40 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MeasuringPoint` | `MeasuringPoint` |
-| `MeasuringPointDescription` | `MeasuringPointDescription` |
-| `MeasuringPointObjectIdentifier` | `MeasuringPointObjectIdentifier` |
-| `TechnicalObjectType` | `TechnicalObjectType` |
-| `MeasuringPointPositionNumber` | `MeasuringPointPositionNumber` |
-| `MeasuringPointCategory` | `MeasuringPointCategory` |
-| `CreationDate` | `CreationDate` |
-| `LastChangeDate` | `LastChangeDate` |
-| `AuthorizationGroup` | `AuthorizationGroup` |
-| `MeasuringPointIsCounter` | `MeasuringPointIsCounter` |
-| `MsrgPtInternalCharacteristic` | `MsrgPtInternalCharacteristic` |
-| `CharcValueUnit` | `CharcValueUnit` |
-| `MeasuringPointDecimalPlaces` | `MeasuringPointDecimalPlaces` |
-| `MeasuringPointExponent` | `MeasuringPointExponent` |
-| `MeasuringPointCodeGroup` | `MeasuringPointCodeGroup` |
-| `ValuationCodeIsSufficient` | `ValuationCodeIsSufficient` |
-| `Assembly` | `Assembly` |
-| `MeasuringPointIsInactive` | `MeasuringPointIsInactive` |
-| `MeasuringPointShortText` | `MeasuringPointShortText` |
-| `MeasurementRangeUnit` | `MeasurementRangeUnit` |
-| `MsmtRdngSourceMeasuringPoint` | `MsmtRdngSourceMeasuringPoint` |
-| `MeasuringPointTargetValue` | `MeasuringPointTargetValue` |
-| `MeasuringPointMaximumThreshold` | `MeasuringPointMaximumThreshold` |
-| `MeasuringPointMinimumThreshold` | `MeasuringPointMinimumThreshold` |
-| `MeasuringPointAnnualEstimate` | `MeasuringPointAnnualEstimate` |
-| `CounterOverflowRdngThreshold` | `CounterOverflowRdngThreshold` |
-| `MsrgPtIsCountingBackwards` | `MsrgPtIsCountingBackwards` |
-| `MeasurementTransferIsSupported` | `MeasurementTransferIsSupported` |
-| `FunctionalLocation` | `FunctionalLocation` |
-| `Equipment` | `Equipment` |
-| `MsmtRdngTransferMode` | `MsmtRdngTransferMode` |
-| `_LongText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MeasuringPoint` | ✓ | |  |  |
+| `MeasuringPointDescription` |  | |  |  |
+| `MeasuringPointObjectIdentifier` |  | |  |  |
+| `TechnicalObjectType` |  | |  |  |
+| `MeasuringPointPositionNumber` |  | |  |  |
+| `MeasuringPointCategory` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `AuthorizationGroup` |  | |  |  |
+| `MeasuringPointIsCounter` |  | |  |  |
+| `MsrgPtInternalCharacteristic` |  | |  |  |
+| `CharcValueUnit` |  | |  |  |
+| `MeasuringPointDecimalPlaces` |  | |  |  |
+| `MeasuringPointExponent` |  | |  |  |
+| `MeasuringPointCodeGroup` |  | |  |  |
+| `ValuationCodeIsSufficient` |  | |  |  |
+| `Assembly` |  | |  |  |
+| `MeasuringPointIsInactive` |  | |  |  |
+| `MeasuringPointShortText` |  | |  |  |
+| `MeasurementRangeUnit` |  | |  |  |
+| `MsmtRdngSourceMeasuringPoint` |  | |  |  |
+| `MeasuringPointTargetValue` |  | |  |  |
+| `MeasuringPointMaximumThreshold` |  | |  |  |
+| `MeasuringPointMinimumThreshold` |  | |  |  |
+| `MeasuringPointAnnualEstimate` |  | |  |  |
+| `CounterOverflowRdngThreshold` |  | |  |  |
+| `MsrgPtIsCountingBackwards` |  | |  |  |
+| `MeasurementTransferIsSupported` |  | |  |  |
+| `FunctionalLocation` |  | |  |  |
+| `Equipment` |  | |  |  |
+| `MsmtRdngTransferMode` |  | |  |  |
+| `_LongText` | | ✓ | | |
 
 ## Source Code
 

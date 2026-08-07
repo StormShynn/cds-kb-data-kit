@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `_Text.Language` |
-| key `Industry` | `_Text.Industry` |
-| `IndustryName` | `_Text.IndustryName` |
-| `CnsldtnIsAdditionalMasterData` | `_Text.CnsldtnIsAdditionalMasterData` |
-| `I_CnsldtnIndustryTP` | `_Industry as _Industry : redirected to parent I_CnsldtnIndustryTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | | `_Text` | `Language` |
+| `Industry` | ✓ | | `_Text` | `Industry` |
+| `IndustryName` |  | | `_Text` | `IndustryName` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Text` | `CnsldtnIsAdditionalMasterData` |
+| `I_CnsldtnIndustryTP` |  | |  | `_Industry as _Industry : redirected to parent I_CnsldtnIndustryTP` |
 
 ## Source Code
 

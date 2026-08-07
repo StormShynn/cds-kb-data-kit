@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `GHGEnergyMix` | `cast( _Source.GHGEnergyMix as fincs_ghgenergymix preserving type )` |
-| `GHGEnergyMixName` | `cast( _Source.GHGEnergyMixName as fincs_ghgenergymixname preserving type )` |
-| `_Language` | *Association* |
-| `_GHGEnergyMix` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `GHGEnergyMix` | ✓ | |  | `cast( _Source.GHGEnergyMix as fincs_ghgenergymix preserving type )` |
+| `GHGEnergyMixName` |  | |  | `cast( _Source.GHGEnergyMixName as fincs_ghgenergymixname preserving type )` |
+| `_Language` | | ✓ | | |
+| `_GHGEnergyMix` | | ✓ | | |
 
 ## Associations
 

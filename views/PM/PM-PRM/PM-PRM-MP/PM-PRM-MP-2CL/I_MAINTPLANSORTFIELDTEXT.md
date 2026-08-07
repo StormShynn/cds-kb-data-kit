@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenancePlanSortField` | `plan_sort` |
-| key `Language` | `spras` |
-| `MaintenancePlanSortFieldText` | `txt` |
-| `_Language` | *Association* |
-| `_MaintenancePlanSortField` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenancePlanSortField` | ✓ | |  | `plan_sort` |
+| `Language` | ✓ | |  | `spras` |
+| `MaintenancePlanSortFieldText` |  | |  | `txt` |
+| `_Language` | | ✓ | | |
+| `_MaintenancePlanSortField` | | ✓ | | |
 
 ## Associations
 

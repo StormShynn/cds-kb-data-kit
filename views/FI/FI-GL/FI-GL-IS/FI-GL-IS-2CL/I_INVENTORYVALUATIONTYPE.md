@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InventoryValuationType` | `cast( t149d.bwtar as fis_inventory_valuation_type preserving type )` |
-| `AcctCategoryRef` | `cast( t149d.kkref as fis_acct_category_ref preserving type )` |
-| `InternalPurchasingRule` | `cast( t149d.bsint as fis_internal_purchasing_rule preserving type )` |
-| `ExternalPurchasingRule` | `cast( t149d.bsext as fis_external_purchasing_rule preserving type )` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InventoryValuationType` | ✓ | |  | `cast( t149d.bwtar as fis_inventory_valuation_type preserving type )` |
+| `AcctCategoryRef` |  | |  | `cast( t149d.kkref as fis_acct_category_ref preserving type )` |
+| `InternalPurchasingRule` |  | |  | `cast( t149d.bsint as fis_internal_purchasing_rule preserving type )` |
+| `ExternalPurchasingRule` |  | |  | `cast( t149d.bsext as fis_external_purchasing_rule preserving type )` |
 
 ## Source Code
 

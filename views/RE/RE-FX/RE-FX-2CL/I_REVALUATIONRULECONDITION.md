@@ -28,28 +28,28 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InternalRealEstateNumber` | `intreno` |
-| key `REValuationRuleUUID` | `ruleguid` |
-| key `REConditionUUID` | `condguid` |
-| `REValuationCndnProperty` | `cdprop` |
-| `REValuationCndnConsdtn` | `cdcons` |
-| `REIsValuationCndnConsdtn` | `considercond` |
-| `REValuationCndnSharePercent` | `condperc` |
-| `REValuationCndnShareAbsltAmt` | `condabs` |
-| `REValuationCurrency` | `cast(currency as recdvdmvalcurr preserving type )` |
-| `REValuationCndnStatus` | `statuscondrule` |
-| `REInfoText` | `note` |
-| `REValuationRule` | `_REValuationTerm.REValuationRule` |
-| `_REContract` | *Association* |
-| `_REKeyAssgmt` | *Association* |
-| `_REValuationTerm` | *Association* |
-| `_RECondition` | *Association* |
-| `_REValuationCndnProperty` | *Association* |
-| `_REValuationCndnConsdtn` | *Association* |
-| `_REValuationCndnStatus` | *Association* |
-| `_REValuationRule` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InternalRealEstateNumber` | ✓ | |  | `intreno` |
+| `REValuationRuleUUID` | ✓ | |  | `ruleguid` |
+| `REConditionUUID` | ✓ | |  | `condguid` |
+| `REValuationCndnProperty` |  | |  | `cdprop` |
+| `REValuationCndnConsdtn` |  | |  | `cdcons` |
+| `REIsValuationCndnConsdtn` |  | |  | `considercond` |
+| `REValuationCndnSharePercent` |  | |  | `condperc` |
+| `REValuationCndnShareAbsltAmt` |  | |  | `condabs` |
+| `REValuationCurrency` |  | |  | `cast(currency as recdvdmvalcurr preserving type )` |
+| `REValuationCndnStatus` |  | |  | `statuscondrule` |
+| `REInfoText` |  | |  | `note` |
+| `REValuationRule` |  | | `_REValuationTerm` | `REValuationRule` |
+| `_REContract` | | ✓ | | |
+| `_REKeyAssgmt` | | ✓ | | |
+| `_REValuationTerm` | | ✓ | | |
+| `_RECondition` | | ✓ | | |
+| `_REValuationCndnProperty` | | ✓ | | |
+| `_REValuationCndnConsdtn` | | ✓ | | |
+| `_REValuationCndnStatus` | | ✓ | | |
+| `_REValuationRule` | | ✓ | | |
 
 ## Associations
 

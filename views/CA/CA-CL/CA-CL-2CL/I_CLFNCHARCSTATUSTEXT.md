@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `CharacteristicStatusText.spras` |
-| key `CharcStatus` | `CharacteristicStatusText.atmst` |
-| `CharcStatusName` | `CharacteristicStatusText.atstt` |
-| `_Language` | *Association* |
-| `_CharcStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `spras` |
+| `CharcStatus` | ✓ | |  | `atmst` |
+| `CharcStatusName` |  | |  | `atstt` |
+| `_Language` | | ✓ | | |
+| `_CharcStatus` | | ✓ | | |
 
 ## Associations
 

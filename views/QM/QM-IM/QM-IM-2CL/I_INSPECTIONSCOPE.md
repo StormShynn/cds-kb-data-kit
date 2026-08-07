@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionScope` | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qpumfkz preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionScope` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as vdm_qpumfkz preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

@@ -28,62 +28,62 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintObjectLocAcctAssgmtNmbr` | `iloa.iloan` |
-| `WorkCenterInternalID` | `iloa.ppsid` |
-| `WorkCenterTypeCode` | `iloa.cr_objty` |
-| `FunctionalLocation` | `iloa.tplnr` |
-| `MaintenancePlant` | `iloa.swerk` |
-| `PlantSection` | `}] iloa.beber` |
-| `AssetLocation` | `iloa.stort` |
-| `MaintObjectFreeDefinedAttrib` | `iloa.eqfnr` |
-| `BusinessArea` | `iloa.gsber` |
-| `ControllingArea` | `iloa.kokrs` |
-| `CostCenter` | `}] iloa.kostl` |
-| `CompanyCode` | `iloa.bukrs` |
-| `Division` | `iloa.spart` |
-| `MaintenanceObjectLocation` | `iloa.stort` |
-| `AssetRoom` | `iloa.msgrp` |
-| `ABCIndicator` | `iloa.abckz` |
-| `AddressID` | `iloa.adrnr` |
-| `WBSElementInternalID` | `iloa.proid` |
-| `MasterFixedAsset` | `}] iloa.anlnr` |
-| `FixedAsset` | `}] iloa.anlun` |
-| `SettlementOrder` | `iloa.aufnr` |
-| `StandingOrderNumber` | `iloa.daufn` |
-| `SalesOrganization` | `iloa.vkorg` |
-| `DistributionChannel` | `iloa.vtweg` |
-| `SalesOffice` | `iloa.vkbur` |
-| `OrganizationDivision` | `iloa.spart` |
-| `SalesGroup` | `iloa.vkgrp` |
-| `_WorkCenterType` | *Association* |
-| `_WorkCenter` | *Association* |
-| `_MaintenancePlant` | *Association* |
-| `_FunctionalLocation` | *Association* |
-| `_PlantSection` | *Association* |
-| `_CostCenter` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ControllingArea` | *Association* |
-| `_BusinessArea` | *Association* |
-| `_Division` | *Association* |
-| `_ABCIndicator` | *Association* |
-| `_WBSElementBasicData` | *Association* |
-| `_PMNotifMaintenanceData` | *Association* |
-| `_Location` | *Association* |
-| `_MasterFixedAsset` | *Association* |
-| `_FixedAsset` | *Association* |
-| `_SettlementOrder` | *Association* |
-| `_StandingOrderNumber` | *Association* |
-| `_Address` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_SlsOrganizationDistrChnl` | *Association* |
-| `_SalesAreaSalesOffice` | *Association* |
-| `_SalesOfficeSalesGroup` | *Association* |
-| `_CostCenterText` | *Association* |
-| `_Address2` | *Association* |
-| `_PhoneNumber` | *Association* |
-| `_FaxNumber` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintObjectLocAcctAssgmtNmbr` | ✓ | |  | `iloan` |
+| `WorkCenterInternalID` |  | |  | `ppsid` |
+| `WorkCenterTypeCode` |  | |  | `cr_objty` |
+| `FunctionalLocation` |  | |  | `tplnr` |
+| `MaintenancePlant` |  | |  | `swerk` |
+| `PlantSection` |  | |  | `}] iloa.beber` |
+| `AssetLocation` |  | |  | `stort` |
+| `MaintObjectFreeDefinedAttrib` |  | |  | `eqfnr` |
+| `BusinessArea` |  | |  | `gsber` |
+| `ControllingArea` |  | |  | `kokrs` |
+| `CostCenter` |  | |  | `}] iloa.kostl` |
+| `CompanyCode` |  | |  | `bukrs` |
+| `Division` |  | |  | `spart` |
+| `MaintenanceObjectLocation` |  | |  | `stort` |
+| `AssetRoom` |  | |  | `msgrp` |
+| `ABCIndicator` |  | |  | `abckz` |
+| `AddressID` |  | |  | `adrnr` |
+| `WBSElementInternalID` |  | |  | `proid` |
+| `MasterFixedAsset` |  | |  | `}] iloa.anlnr` |
+| `FixedAsset` |  | |  | `}] iloa.anlun` |
+| `SettlementOrder` |  | |  | `aufnr` |
+| `StandingOrderNumber` |  | |  | `daufn` |
+| `SalesOrganization` |  | |  | `vkorg` |
+| `DistributionChannel` |  | |  | `vtweg` |
+| `SalesOffice` |  | |  | `vkbur` |
+| `OrganizationDivision` |  | |  | `spart` |
+| `SalesGroup` |  | |  | `vkgrp` |
+| `_WorkCenterType` | | ✓ | | |
+| `_WorkCenter` | | ✓ | | |
+| `_MaintenancePlant` | | ✓ | | |
+| `_FunctionalLocation` | | ✓ | | |
+| `_PlantSection` | | ✓ | | |
+| `_CostCenter` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ControllingArea` | | ✓ | | |
+| `_BusinessArea` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_ABCIndicator` | | ✓ | | |
+| `_WBSElementBasicData` | | ✓ | | |
+| `_PMNotifMaintenanceData` | | ✓ | | |
+| `_Location` | | ✓ | | |
+| `_MasterFixedAsset` | | ✓ | | |
+| `_FixedAsset` | | ✓ | | |
+| `_SettlementOrder` | | ✓ | | |
+| `_StandingOrderNumber` | | ✓ | | |
+| `_Address` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_SlsOrganizationDistrChnl` | | ✓ | | |
+| `_SalesAreaSalesOffice` | | ✓ | | |
+| `_SalesOfficeSalesGroup` | | ✓ | | |
+| `_CostCenterText` | | ✓ | | |
+| `_Address2` | | ✓ | | |
+| `_PhoneNumber` | | ✓ | | |
+| `_FaxNumber` | | ✓ | | |
 
 ## Associations
 

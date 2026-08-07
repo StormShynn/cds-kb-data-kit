@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProdnRsceToolCategory` | `cast(fhmar as mpe_fhmar preserving type)` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProdnRsceToolCategory` | ✓ | |  | `cast(fhmar as mpe_fhmar preserving type)` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

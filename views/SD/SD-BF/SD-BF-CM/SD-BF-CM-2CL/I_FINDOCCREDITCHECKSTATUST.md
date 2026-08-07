@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FinDocCreditCheckStatus` | `statu` |
-| key `Language` | `spras` |
-| `FinDocCreditCheckStatusDesc` | `bezei` |
-| `_FinDocCreditCheckStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FinDocCreditCheckStatus` | ✓ | |  | `statu` |
+| `Language` | ✓ | |  | `spras` |
+| `FinDocCreditCheckStatusDesc` |  | |  | `bezei` |
+| `_FinDocCreditCheckStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TranspChrgExchangeRateUUID` | `TranspChrgExchangeRateUUID` |
-| `TranspChargeItemUUID` | `TranspChargeItemUUID` |
-| `TransportationOrderUUID` | `TransportationOrderUUID` |
-| `SourceCurrency` | `SourceCurrency` |
-| `TargetCurrency` | `TargetCurrency` |
-| `TranspChrgExchangeRate` | `TranspChrgExchangeRate` |
-| `TranspChrgExchangeRateType` | `TranspChrgExchangeRateType` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `I_FreightBookingChargeItemTP` | `_TranspOrderChargeItem as _FreightBookingChargeItem : redirected to parent I_FreightBookingChargeItemTP` |
-| `I_FreightBookingTP` | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TranspChrgExchangeRateUUID` | ✓ | |  |  |
+| `TranspChargeItemUUID` |  | |  |  |
+| `TransportationOrderUUID` |  | |  |  |
+| `SourceCurrency` |  | |  |  |
+| `TargetCurrency` |  | |  |  |
+| `TranspChrgExchangeRate` |  | |  |  |
+| `TranspChrgExchangeRateType` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `I_FreightBookingChargeItemTP` |  | |  | `_TranspOrderChargeItem as _FreightBookingChargeItem : redirected to parent I_FreightBookingChargeItemTP` |
+| `I_FreightBookingTP` |  | |  | `_TransportationOrder as _FreightBooking : redirected to I_FreightBookingTP` |
 
 ## Source Code
 

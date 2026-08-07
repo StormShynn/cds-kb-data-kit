@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `AccountingTransferStatus` | `substring(domvalue_l, 1, 1)` |
-| key `Language` | `ddlanguage` |
-| `AccountingTransferStatusDesc` | `ddtext` |
-| `_AccountingTransferStatus` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `AccountingTransferStatus` | ✓ | |  | `substring(domvalue_l, 1, 1)` |
+| `Language` | ✓ | |  | `ddlanguage` |
+| `AccountingTransferStatusDesc` |  | |  | `ddtext` |
+| `_AccountingTransferStatus` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

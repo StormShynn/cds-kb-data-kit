@@ -30,48 +30,48 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConfirmationGroup` | `ConfirmationGroup` |
-| key `ConfirmationCount` | `ConfirmationCount` |
-| key `MaterialDocument` | `MaterialDocument` |
-| key `MaterialDocumentItem` | `MaterialDocumentItem` |
-| key `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `OrderType` | `OrderType` |
-| `OrderID` | `OrderID` |
-| `OrderItem` | `OrderItem` |
-| `ManufacturingOrderCategory` | `ManufacturingOrderCategory` |
-| `Material` | `Material` |
-| `Plant` | `Plant` |
-| `Reservation` | `Reservation` |
-| `ReservationItem` | `ReservationItem` |
-| `StorageLocation` | `StorageLocation` |
-| `ProductionSupplyArea` | `ProductionSupplyArea` |
-| `Batch` | `Batch` |
-| `InventoryValuationType` | `InventoryValuationType` |
-| `GoodsMovementType` | `GoodsMovementType` |
-| `GoodsMovementRefDocType` | `GoodsMovementRefDocType` |
-| `InventoryUsabilityCode` | `InventoryUsabilityCode` |
-| `InventorySpecialStockType` | `InventorySpecialStockType` |
-| `SalesOrder` | `SalesOrder` |
-| `SalesOrderItem` | `SalesOrderItem` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `Supplier` | `Supplier` |
-| `Customer` | `Customer` |
-| `ReservationIsFinallyIssued` | `ReservationIsFinallyIssued` |
-| `IsCompletelyDelivered` | `IsCompletelyDelivered` |
-| `ShelfLifeExpirationDate` | `ShelfLifeExpirationDate` |
-| `ManufactureDate` | `ManufactureDate` |
-| `StorageType` | `StorageType` |
-| `StorageBin` | `StorageBin` |
-| `MaterialDocumentItemText` | `MaterialDocumentItemText` |
-| `EntryUnit` | `EntryUnit` |
-| `EntryUnitISOCode` | `EntryUnitISOCode` |
-| `EntryUnitSAPCode` | `EntryUnitSAPCode` |
-| `QuantityInEntryUnit` | `QuantityInEntryUnit` |
-| `_Customer` | *Association* |
-| `_ProcOrdConf` | *Association* |
-| `_Supplier` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConfirmationGroup` | ✓ | |  |  |
+| `ConfirmationCount` | ✓ | |  |  |
+| `MaterialDocument` | ✓ | |  |  |
+| `MaterialDocumentItem` | ✓ | |  |  |
+| `MaterialDocumentYear` | ✓ | |  |  |
+| `OrderType` |  | |  |  |
+| `OrderID` |  | |  |  |
+| `OrderItem` |  | |  |  |
+| `ManufacturingOrderCategory` |  | |  |  |
+| `Material` |  | |  |  |
+| `Plant` |  | |  |  |
+| `Reservation` |  | |  |  |
+| `ReservationItem` |  | |  |  |
+| `StorageLocation` |  | |  |  |
+| `ProductionSupplyArea` |  | |  |  |
+| `Batch` |  | |  |  |
+| `InventoryValuationType` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `GoodsMovementRefDocType` |  | |  |  |
+| `InventoryUsabilityCode` |  | |  |  |
+| `InventorySpecialStockType` |  | |  |  |
+| `SalesOrder` |  | |  |  |
+| `SalesOrderItem` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Customer` |  | |  |  |
+| `ReservationIsFinallyIssued` |  | |  |  |
+| `IsCompletelyDelivered` |  | |  |  |
+| `ShelfLifeExpirationDate` |  | |  |  |
+| `ManufactureDate` |  | |  |  |
+| `StorageType` |  | |  |  |
+| `StorageBin` |  | |  |  |
+| `MaterialDocumentItemText` |  | |  |  |
+| `EntryUnit` |  | |  |  |
+| `EntryUnitISOCode` |  | |  |  |
+| `EntryUnitSAPCode` |  | |  |  |
+| `QuantityInEntryUnit` |  | |  |  |
+| `_Customer` | | ✓ | | |
+| `_ProcOrdConf` | | ✓ | | |
+| `_Supplier` | | ✓ | | |
 
 ## Source Code
 

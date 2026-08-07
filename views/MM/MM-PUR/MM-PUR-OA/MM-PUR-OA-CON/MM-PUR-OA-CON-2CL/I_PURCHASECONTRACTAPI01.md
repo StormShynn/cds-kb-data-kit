@@ -30,53 +30,53 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchaseContract` | `I_PurchaseContract.PurchaseContract` |
-| `PurchaseContractType` | `I_PurchaseContract.PurchaseContractType` |
-| `PurchasingDocumentCategory` | `I_PurchaseContract.PurchasingDocumentCategory` |
-| `LastChangeDateTime` | `I_PurchaseContract.LastChangeDateTime` |
-| `CreationDate` | `I_PurchaseContract.CreationDate` |
-| `Supplier` | `I_PurchaseContract.Supplier` |
-| `CompanyCode` | `I_PurchaseContract.CompanyCode` |
-| `PurchasingOrganization` | `I_PurchaseContract.PurchasingOrganization` |
-| `PurchasingGroup` | `I_PurchaseContract.PurchasingGroup` |
-| `DocumentCurrency` | `I_PurchaseContract.DocumentCurrency` |
-| `IncotermsClassification` | `I_PurchaseContract.IncotermsClassification` |
-| `IncotermsTransferLocation` | `I_PurchaseContract.IncotermsTransferLocation` |
-| `PaymentTerms` | `I_PurchaseContract.PaymentTerms` |
-| `CashDiscount1Days` | `I_PurchaseContract.CashDiscount1Days` |
-| `CashDiscount2Days` | `I_PurchaseContract.CashDiscount2Days` |
-| `NetPaymentDays` | `I_PurchaseContract.NetPaymentDays` |
-| `CashDiscount1Percent` | `I_PurchaseContract.CashDiscount1Percent` |
-| `CashDiscount2Percent` | `I_PurchaseContract.CashDiscount2Percent` |
-| `PurchaseContractTargetAmount` | `I_PurchaseContract.PurchaseContractTargetAmount` |
-| `ValidityStartDate` | `I_PurchaseContract.ValidityStartDate` |
-| `ValidityEndDate` | `I_PurchaseContract.ValidityEndDate` |
-| `ReleaseCode` | `I_PurchaseContract.ReleaseCode` |
-| `CreatedByUser` | `I_PurchaseContract.CreatedByUser` |
-| `PurchasingDocumentDeletionCode` | `I_PurchaseContract.PurchasingDocumentDeletionCode` |
-| `SupplyingSupplier` | `I_PurchaseContract.SupplyingSupplier` |
-| `InvoicingParty` | `I_PurchaseContract.InvoicingParty` |
-| `ExchangeRate` | `I_PurchaseContract.ExchangeRate` |
-| `ExchangeRateIsFixed` | `I_PurchaseContract.ExchangeRateIsFixed` |
-| `QuotationSubmissionDate` | `I_PurchaseContract.QuotationSubmissionDate` |
-| `SupplierQuotation` | `I_PurchaseContract.SupplierQuotation` |
-| `CorrespncExternalReference` | `I_PurchaseContract.CorrespncExternalReference` |
-| `CorrespncInternalReference` | `I_PurchaseContract.CorrespncInternalReference` |
-| `SupplierRespSalesPersonName` | `I_PurchaseContract.SupplierRespSalesPersonName` |
-| `SupplierPhoneNumber` | `I_PurchaseContract.SupplierPhoneNumber` |
-| `IncotermsVersion` | `I_PurchaseContract.IncotermsVersion` |
-| `IncotermsLocation1` | `I_PurchaseContract.IncotermsLocation1` |
-| `IncotermsLocation2` | `I_PurchaseContract.IncotermsLocation2` |
-| `ReleaseIsNotCompleted` | `I_PurchaseContract.ReleaseIsNotCompleted` |
-| `SupplierAddressID` | `I_PurchaseContract.SupplierAddressID` |
-| `PurgDocExternalReference` | `I_PurchaseContract.PurgDocExternalReference` |
-| `PurchasingDocumentName` | `I_PurchaseContract.PurchasingDocumentName` |
-| `PurchasingDocumentOrigin` | `I_PurchaseContract.PurchasingDocumentOrigin` |
-| `PurchasingProcessingStatus` | `I_PurchaseContract.PurchasingProcessingStatus` |
-| `PurgAggrgdProdCmplncSuplrSts` | `I_PurchaseContract.PurgAggrgdProdCmplncSuplrSts` |
-| `PurgHasCatalogRelevantItems` | `I_PurchaseContract.PurgHasCatalogRelevantItems` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchaseContract` | ✓ | |  |  |
+| `PurchaseContractType` |  | |  |  |
+| `PurchasingDocumentCategory` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `DocumentCurrency` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `CashDiscount1Days` |  | |  |  |
+| `CashDiscount2Days` |  | |  |  |
+| `NetPaymentDays` |  | |  |  |
+| `CashDiscount1Percent` |  | |  |  |
+| `CashDiscount2Percent` |  | |  |  |
+| `PurchaseContractTargetAmount` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `ReleaseCode` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `PurchasingDocumentDeletionCode` |  | |  |  |
+| `SupplyingSupplier` |  | |  |  |
+| `InvoicingParty` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `QuotationSubmissionDate` |  | |  |  |
+| `SupplierQuotation` |  | |  |  |
+| `CorrespncExternalReference` |  | |  |  |
+| `CorrespncInternalReference` |  | |  |  |
+| `SupplierRespSalesPersonName` |  | |  |  |
+| `SupplierPhoneNumber` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `ReleaseIsNotCompleted` |  | |  |  |
+| `SupplierAddressID` |  | |  |  |
+| `PurgDocExternalReference` |  | |  |  |
+| `PurchasingDocumentName` |  | |  |  |
+| `PurchasingDocumentOrigin` |  | |  |  |
+| `PurchasingProcessingStatus` |  | |  |  |
+| `PurgAggrgdProdCmplncSuplrSts` |  | |  |  |
+| `PurgHasCatalogRelevantItems` |  | |  |  |
 
 ## Associations
 

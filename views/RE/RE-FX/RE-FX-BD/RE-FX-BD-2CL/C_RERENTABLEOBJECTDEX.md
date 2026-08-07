@@ -29,29 +29,29 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `RealEstateRentableObjectUUID` | `RealEstateRentableObjectUUID` |
-| `REGenericRentalObjectType` | `REGenericRentalObjectType` |
-| `InternalRealEstateNumber` | `InternalRealEstateNumber` |
-| `REStatusObject` | `REStatusObject` |
-| `RealEstateRentableObjectOID` | `RealEstateRentableObjectOID` |
-| `REGnrcRntlObjectAlternativeID` | `REGnrcRntlObjectAlternativeID` |
-| `REGnrcRentalObjPortfolioID` | `REGnrcRentalObjPortfolioID` |
-| `RealEstateRentableObjectNumber` | `RealEstateRentableObjectNumber` |
-| `RERentableObjectName` | `RERentableObjectName` |
-| `REIdentificationKey` | `REIdentificationKey` |
-| `CompanyCode` | `CompanyCode` |
-| `ValidityStartDate` | `ValidityStartDate` |
-| `ValidityEndDate` | `ValidityEndDate` |
-| `REAuthorizationGroup` | `REAuthorizationGroup` |
-| `REGnrcRentalObjUsageCategory` | `REGnrcRentalObjUsageCategory` |
-| `REGenericRentalObjectUsageType` | `REGenericRentalObjectUsageType` |
-| `REGenericRentalObjParentUUID` | `REGenericRentalObjParentUUID` |
-| `RERentableObjectCategory` | `RERentableObjectCategory` |
-| `CreationDateTime` | `CreationDateTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `LocalLastChangeDateTime` | `LocalLastChangeDateTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `RealEstateRentableObjectUUID` | ✓ | |  |  |
+| `REGenericRentalObjectType` |  | |  |  |
+| `InternalRealEstateNumber` |  | |  |  |
+| `REStatusObject` |  | |  |  |
+| `RealEstateRentableObjectOID` |  | |  |  |
+| `REGnrcRntlObjectAlternativeID` |  | |  |  |
+| `REGnrcRentalObjPortfolioID` |  | |  |  |
+| `RealEstateRentableObjectNumber` |  | |  |  |
+| `RERentableObjectName` |  | |  |  |
+| `REIdentificationKey` |  | |  |  |
+| `CompanyCode` |  | |  |  |
+| `ValidityStartDate` |  | |  |  |
+| `ValidityEndDate` |  | |  |  |
+| `REAuthorizationGroup` |  | |  |  |
+| `REGnrcRentalObjUsageCategory` |  | |  |  |
+| `REGenericRentalObjectUsageType` |  | |  |  |
+| `REGenericRentalObjParentUUID` |  | |  |  |
+| `RERentableObjectCategory` |  | |  |  |
+| `CreationDateTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `LocalLastChangeDateTime` |  | |  |  |
 
 ## Associations
 

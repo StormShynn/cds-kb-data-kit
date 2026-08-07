@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutChargeType` | `SalesOrderWithoutChargeType.SalesOrderWithoutChargeType` |
-| key `Language` | `Text.Language` |
-| `SlsOrdWthoutChrgTypeName` | `cast( Text.SalesDocumentTypeName as sd_sowoc_type_name preserving type )` |
-| `_SalesOrderWithoutChargeType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutChargeType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `SlsOrdWthoutChrgTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as sd_sowoc_type_name preserving type )` |
+| `_SalesOrderWithoutChargeType` | | ✓ | | |
 
 ## Associations
 

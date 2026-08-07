@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CreditMemoRequestType` | `CreditMemoRequestType.CreditMemoRequestType` |
-| key `Language` | `Text.Language` |
-| `CreditMemoRequestTypeName` | `cast( Text.SalesDocumentTypeName as credit_memo_request_type_name preserving type )` |
-| `_CreditMemoRequestType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CreditMemoRequestType` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `CreditMemoRequestTypeName` |  | |  | `cast( Text.SalesDocumentTypeName as credit_memo_request_type_name preserving type )` |
+| `_CreditMemoRequestType` | | ✓ | | |
 
 ## Associations
 

@@ -29,31 +29,31 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrderWithoutCharge` | `SlsOrdWithoutChrgScheduleLine.SalesOrderWithoutCharge` |
-| key `SalesOrderWithoutChargeItem` | `SlsOrdWithoutChrgScheduleLine.SalesOrderWithoutChargeItem` |
-| key `ScheduleLine` | `SlsOrdWithoutChrgScheduleLine.ScheduleLine` |
-| `ScheduleLineForEdit` | `SlsOrdWithoutChrgScheduleLine.ScheduleLineForEdit` |
-| `ScheduleLineCategory` | `SlsOrdWithoutChrgScheduleLine.ScheduleLineCategory` |
-| `OrderQuantityUnit` | `SlsOrdWithoutChrgScheduleLine.OrderQuantityUnit` |
-| `ScheduleLineOrderQuantity` | `SlsOrdWithoutChrgScheduleLine.ScheduleLineOrderQuantity` |
-| `ConfdOrderQtyByMatlAvailCheck` | `SlsOrdWithoutChrgScheduleLine.ConfdOrderQtyByMatlAvailCheck` |
-| `DeliveredQtyInOrderQtyUnit` | `SlsOrdWithoutChrgScheduleLine.DeliveredQtyInOrderQtyUnit` |
-| `OpenConfdDelivQtyInOrdQtyUnit` | `SlsOrdWithoutChrgScheduleLine.OpenConfdDelivQtyInOrdQtyUnit` |
-| `CorrectedQtyInOrderQtyUnit` | `SlsOrdWithoutChrgScheduleLine.CorrectedQtyInOrderQtyUnit` |
-| `RequestedDeliveryDate` | `SlsOrdWithoutChrgScheduleLine.RequestedDeliveryDate` |
-| `ConfirmedDeliveryDate` | `SlsOrdWithoutChrgScheduleLine.ConfirmedDeliveryDate` |
-| `DelivBlockReasonForSchedLine` | `SlsOrdWithoutChrgScheduleLine.DelivBlockReasonForSchedLine` |
-| `PurchaseRequisition` | `SlsOrdWithoutChrgScheduleLine.PurchaseRequisition` |
-| `PurchaseRequisitionItem` | `SlsOrdWithoutChrgScheduleLine.PurchaseRequisitionItem` |
-| `GoodsMovementType` | `SlsOrdWithoutChrgScheduleLine.GoodsMovementType` |
-| `SalesOrderWithoutChargeType` | `SlsOrdWithoutChrgScheduleLine.SalesOrderWithoutChargeType` |
-| `SalesOrganization` | `SlsOrdWithoutChrgScheduleLine.SalesOrganization` |
-| `DistributionChannel` | `SlsOrdWithoutChrgScheduleLine.DistributionChannel` |
-| `OrganizationDivision` | `SlsOrdWithoutChrgScheduleLine.OrganizationDivision` |
-| `_Item` | *Association* |
-| `_SalesOrderWithoutCharge` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrderWithoutCharge` | ✓ | |  |  |
+| `SalesOrderWithoutChargeItem` | ✓ | |  |  |
+| `ScheduleLine` | ✓ | |  |  |
+| `ScheduleLineForEdit` |  | |  |  |
+| `ScheduleLineCategory` |  | |  |  |
+| `OrderQuantityUnit` |  | |  |  |
+| `ScheduleLineOrderQuantity` |  | |  |  |
+| `ConfdOrderQtyByMatlAvailCheck` |  | |  |  |
+| `DeliveredQtyInOrderQtyUnit` |  | |  |  |
+| `OpenConfdDelivQtyInOrdQtyUnit` |  | |  |  |
+| `CorrectedQtyInOrderQtyUnit` |  | |  |  |
+| `RequestedDeliveryDate` |  | |  |  |
+| `ConfirmedDeliveryDate` |  | |  |  |
+| `DelivBlockReasonForSchedLine` |  | |  |  |
+| `PurchaseRequisition` |  | |  |  |
+| `PurchaseRequisitionItem` |  | |  |  |
+| `GoodsMovementType` |  | |  |  |
+| `SalesOrderWithoutChargeType` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `OrganizationDivision` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_SalesOrderWithoutCharge` | | ✓ | | |
 
 ## Source Code
 

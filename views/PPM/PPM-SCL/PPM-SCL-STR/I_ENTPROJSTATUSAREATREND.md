@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `StatusTrend` | `trend` |
-| `Criticality` | `criticality` |
-| `StatusAreaSortNumber` | `sort_number` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `StatusTrend` | ✓ | |  | `trend` |
+| `Criticality` |  | |  | `criticality` |
+| `StatusAreaSortNumber` |  | |  | `sort_number` |
+| `_Text` | | ✓ | | |
 
 ## Source Code
 

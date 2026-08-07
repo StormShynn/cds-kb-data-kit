@@ -29,11 +29,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `LongTextID` | `tdid` |
-| `Language` | `spras` |
-| `LongText` | `systring` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LongTextID` |  | |  | `tdid` |
+| `Language` |  | |  | `spras` |
+| `LongText` |  | |  | `systring` |
 
 ## Source Code
 

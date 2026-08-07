@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Segment` | `segment` |
-| `_Text` | *Association* |
-| `_SegmentHierNode` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Segment` | ✓ | |  | `segment` |
+| `_Text` | | ✓ | | |
+| `_SegmentHierNode` | | ✓ | | |
 
 ## Associations
 

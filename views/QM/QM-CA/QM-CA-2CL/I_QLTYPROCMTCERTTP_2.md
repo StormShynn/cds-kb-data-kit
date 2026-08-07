@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `QualityProcurementCertificate` | `QualityProcurementCertificate` |
-| `QualityCertificateType` | `QualityCertificateType` |
-| `QltyProcmtCertStatus` | `QltyProcmtCertStatus` |
-| `PurchaseOrder` | `PurchaseOrder` |
-| `PurchaseOrderItem` | `PurchaseOrderItem` |
-| `MaterialDocumentYear` | `MaterialDocumentYear` |
-| `MaterialDocumentItem` | `MaterialDocumentItem` |
-| `MaterialDocument` | `MaterialDocument` |
-| `Material` | `Material` |
-| `Supplier` | `Supplier` |
-| `Plant` | `Plant` |
-| `GoodsReceiptPostingDate` | `GoodsReceiptPostingDate` |
-| `QltyProcmtCertReceiptDate` | `QltyProcmtCertReceiptDate` |
-| `BatchBySupplier` | `BatchBySupplier` |
-| `Batch` | `Batch` |
-| `DeliveryNote` | `DeliveryNote` |
-| `QltyProcmtCertCrtedByUsr` | `QltyProcmtCertCrtedByUsr` |
-| `QltyProcmtCertCrtnDte` | `QltyProcmtCertCrtnDte` |
-| `QltyProcmtCertCrtnTme` | `QltyProcmtCertCrtnTme` |
-| `QltyProcmtCertCrtnTmeZn` | `QltyProcmtCertCrtnTmeZn` |
-| `QltyProcmtCertCrtnDateTime` | `QltyProcmtCertCrtnDateTime` |
-| `QltyProcmtCertChgdBy` | `QltyProcmtCertChgdBy` |
-| `QltyProcmtCertChgDte` | `QltyProcmtCertChgDte` |
-| `QltyProcmtCertChgTme` | `QltyProcmtCertChgTme` |
-| `QltyProcmtCertChgDteTme` | `QltyProcmtCertChgDteTme` |
-| `IsBusinessPurposeCompleted` | `IsBusinessPurposeCompleted` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `QualityProcurementCertificate` | ✓ | |  |  |
+| `QualityCertificateType` |  | |  |  |
+| `QltyProcmtCertStatus` |  | |  |  |
+| `PurchaseOrder` |  | |  |  |
+| `PurchaseOrderItem` |  | |  |  |
+| `MaterialDocumentYear` |  | |  |  |
+| `MaterialDocumentItem` |  | |  |  |
+| `MaterialDocument` |  | |  |  |
+| `Material` |  | |  |  |
+| `Supplier` |  | |  |  |
+| `Plant` |  | |  |  |
+| `GoodsReceiptPostingDate` |  | |  |  |
+| `QltyProcmtCertReceiptDate` |  | |  |  |
+| `BatchBySupplier` |  | |  |  |
+| `Batch` |  | |  |  |
+| `DeliveryNote` |  | |  |  |
+| `QltyProcmtCertCrtedByUsr` |  | |  |  |
+| `QltyProcmtCertCrtnDte` |  | |  |  |
+| `QltyProcmtCertCrtnTme` |  | |  |  |
+| `QltyProcmtCertCrtnTmeZn` |  | |  |  |
+| `QltyProcmtCertCrtnDateTime` |  | |  |  |
+| `QltyProcmtCertChgdBy` |  | |  |  |
+| `QltyProcmtCertChgDte` |  | |  |  |
+| `QltyProcmtCertChgTme` |  | |  |  |
+| `QltyProcmtCertChgDteTme` |  | |  |  |
+| `IsBusinessPurposeCompleted` |  | |  |  |
 
 ## Source Code
 

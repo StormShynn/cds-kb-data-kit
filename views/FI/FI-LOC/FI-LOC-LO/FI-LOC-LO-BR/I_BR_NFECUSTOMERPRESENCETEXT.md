@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( ddlanguage as spras preserving type)` |
-| key `BR_NFeCustomerPresence` | `cast( substring(domvalue_l, 1, 1 ) as logbr_nfe_indpres preserving type)` |
-| `BR_NFeCustomerPresenceDesc` | `cast( ddtext as logbr_nfe_indpresdescription preserving type )` |
-| `_BR_NFeCustomerPresence` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |
+| `BR_NFeCustomerPresence` | ✓ | |  | `cast( substring(domvalue_l, 1, 1 ) as logbr_nfe_indpres preserving type)` |
+| `BR_NFeCustomerPresenceDesc` |  | |  | `cast( ddtext as logbr_nfe_indpresdescription preserving type )` |
+| `_BR_NFeCustomerPresence` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

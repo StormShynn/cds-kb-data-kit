@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAInvcgProcess` | `_tfk2602.inv_process` |
-| key `CAApplicationArea` | `_tfk2602.applk` |
-| `_CAInvcgProcessText` | *Association* |
-| `_CAApplicationArea` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAInvcgProcess` | ✓ | | `_tfk2602` | `inv_process` |
+| `CAApplicationArea` | ✓ | | `_tfk2602` | `applk` |
+| `_CAInvcgProcessText` | | ✓ | | |
+| `_CAApplicationArea` | | ✓ | | |
 
 ## Associations
 

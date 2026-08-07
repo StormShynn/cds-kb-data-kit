@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ConsolidationUnitPartner` | `cast( _UnitAttributeValue.CnsldtnUnitAttributeValue as fincs_unitpartner preserving type )` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationUnitPartner` | ✓ | |  | `cast( _UnitAttributeValue.CnsldtnUnitAttributeValue as fincs_unitpartner preserving type )` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

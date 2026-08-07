@@ -35,25 +35,25 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MRCBuildUUID` | `MRCBuildUUID` |
-| `Sequence` | `Sequence` |
-| `MRCUUID` | `MRCUUID` |
-| `MRCCode` | `MRCCode` |
-| `ReplyTableUUID` | `ReplyTableUUID` |
-| `ReplyTable` | `_Reply_Table.ReplyTable` |
-| `Description` | `_Reply_Table.Description` |
-| `ReplyCodeSize` | `_Reply_Table.ReplyCodeSize` |
-| `IsTemporary` | `IsTemporary` |
-| `CreatedBy` | `CreatedBy` |
-| `CreatedAt` | `CreatedAt` |
-| `LastChangedAt` | `LastChangedAt` |
-| `LastChangedBy` | `LastChangedBy` |
-| `LocalLastChanged` | `LocalLastChanged` |
-| `_mrc` | *Association* |
-| `_Reply_Table` | *Association* |
-| `_Reply_Code` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MRCBuildUUID` | ✓ | |  |  |
+| `Sequence` |  | |  |  |
+| `MRCUUID` |  | |  |  |
+| `MRCCode` |  | |  |  |
+| `ReplyTableUUID` |  | |  |  |
+| `ReplyTable` |  | | `_Reply_Table` | `ReplyTable` |
+| `Description` |  | | `_Reply_Table` | `Description` |
+| `ReplyCodeSize` |  | | `_Reply_Table` | `ReplyCodeSize` |
+| `IsTemporary` |  | |  |  |
+| `CreatedBy` |  | |  |  |
+| `CreatedAt` |  | |  |  |
+| `LastChangedAt` |  | |  |  |
+| `LastChangedBy` |  | |  |  |
+| `LocalLastChanged` |  | |  |  |
+| `_mrc` | | ✓ | | |
+| `_Reply_Table` | | ✓ | | |
+| `_Reply_Code` | | ✓ | | |
 
 ## Source Code
 

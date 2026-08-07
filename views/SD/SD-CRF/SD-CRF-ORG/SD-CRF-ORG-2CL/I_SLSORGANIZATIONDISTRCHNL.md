@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SalesOrganization` | `vkorg` |
-| key `DistributionChannel` | `vtweg` |
-| `ReferenceDistributionChannel` | `vtwku` |
-| `ReferenceStore` | `vlgfi` |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SalesOrganization` | ✓ | |  | `vkorg` |
+| `DistributionChannel` | ✓ | |  | `vtweg` |
+| `ReferenceDistributionChannel` |  | |  | `vtwku` |
+| `ReferenceStore` |  | |  | `vlgfi` |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
 
 ## Associations
 

@@ -29,109 +29,109 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ServiceOrder` | `ServiceOrder` |
-| `ServiceObjectType` | `ServiceObjectType` |
-| `ServiceOrderType` | `ServiceOrderType` |
-| `ServiceOrderUUID` | `ServiceOrderUUID` |
-| `ServiceOrderDescription` | `ServiceOrderDescription` |
-| `Language` | `Language` |
-| `PostingDate` | `PostingDate` |
-| `ServiceDocCreationDateTime` | `ServiceDocCreationDateTime` |
-| `ServiceDocChangedDateTime` | `ServiceDocChangedDateTime` |
-| `ServiceDocumentCreatedByUser` | `ServiceDocumentCreatedByUser` |
-| `ServiceDocumentChangedByUser` | `ServiceDocumentChangedByUser` |
-| `SoldToParty` | `SoldToParty` |
-| `ShipToParty` | `ShipToParty` |
-| `BillToParty` | `BillToParty` |
-| `PayerParty` | `PayerParty` |
-| `PaymentTerms` | `PaymentTerms` |
-| `PaymentMethod` | `PaymentMethod` |
-| `SEPAMandate` | `SEPAMandate` |
-| `SrvcSEPAMandateRelevance` | `SrvcSEPAMandateRelevance` |
-| `ContactPersonBusinessPartnerId` | `ContactPersonBusinessPartnerId` |
-| `RespEmployeeBusinessPartnerId` | `RespEmployeeBusinessPartnerId` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `SalesOrganizationOrgUnitID` | `SalesOrganizationOrgUnitID` |
-| `SalesOfficeOrgUnitID` | `SalesOfficeOrgUnitID` |
-| `SalesGroupOrgUnitID` | `SalesGroupOrgUnitID` |
-| `ServiceOrganization` | `ServiceOrganization` |
-| `RespyMgmtServiceTeam` | `RespyMgmtServiceTeam` |
-| `RespyMgmtGlobalTeamID` | `RespyMgmtGlobalTeamID` |
-| `ServiceOrderIsNew` | `ServiceOrderIsNew` |
-| `ServiceOrderIsInProcess` | `ServiceOrderIsInProcess` |
-| `ServiceOrderIsReleased` | `ServiceOrderIsReleased` |
-| `ServiceOrderIsCompleted` | `ServiceOrderIsCompleted` |
-| `ServiceOrderIsRejected` | `ServiceOrderIsRejected` |
-| `ServiceOrderStatus` | `ServiceOrderStatus` |
-| `SrvcOrdReldForBillingStatus` | `SrvcOrdReldForBillingStatus` |
-| `SrvcOrdBillingStatus` | `SrvcOrdBillingStatus` |
-| `ServiceOrderHasError` | `ServiceOrderHasError` |
-| `SrvcDocTransferStatus` | `SrvcDocTransferStatus` |
-| `SrvcOrdExecutionStatus` | `SrvcOrdExecutionStatus` |
-| `SrvcOrdCreditStatus` | `SrvcOrdCreditStatus` |
-| `RequestedServiceStartDateTime` | `RequestedServiceStartDateTime` |
-| `RequestedServiceEndDateTime` | `RequestedServiceEndDateTime` |
-| `ErlstRequestedDeliveryDateTime` | `ErlstRequestedDeliveryDateTime` |
-| `ServiceDocumentPriority` | `ServiceDocumentPriority` |
-| `TransactionCurrency` | `TransactionCurrency` |
-| `ServiceDocGrossAmount` | `} ServiceDocGrossAmount` |
-| `ServiceDocNetAmount` | `} ServiceDocNetAmount` |
-| `ServiceDocTaxAmount` | `} ServiceDocTaxAmount` |
-| `PricingDocument` | `PricingDocument` |
-| `PurchaseOrderByCustomer` | `PurchaseOrderByCustomer` |
-| `CustomerPurchaseOrderDate` | `CustomerPurchaseOrderDate` |
-| `ServiceOrderRejectionReason` | `ServiceOrderRejectionReason` |
-| `SrvcOrdExtReference` | `SrvcOrdExtReference` |
-| `ReferenceServiceContract` | `ReferenceServiceContract` |
-| `RefServiceOrderTemplate` | `RefServiceOrderTemplate` |
-| `ReferenceServiceQtan` | `ReferenceServiceQtan` |
-| `WBSElementExternalID` | `WBSElementExternalID` |
-| `FSMServiceCall` | `FSMServiceCall` |
-| `_ServiceObjType` | *Association* |
-| `_ServiceDocumentType` | *Association* |
-| `_SoldToParty` | *Association* |
-| `_ShipToParty` | *Association* |
-| `_BillToParty` | *Association* |
-| `_PayerParty` | *Association* |
-| `_ContactPerson` | *Association* |
-| `_RespEmployee` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_SalesOrganizationOrgUnit_2` | *Association* |
-| `_SalesOfficeOrgUnit_2` | *Association* |
-| `_SalesGroupOrgUnit_2` | *Association* |
-| `_ServiceOrganizationOrgUnit_2` | *Association* |
-| `_PaymentTerms` | *Association* |
-| `_PaymentMethod` | *Association* |
-| `_SrvcSEPAMandateRelevance` | *Association* |
-| `_TransactionCurrency` | *Association* |
-| `_ServiceDocumentPriority` | *Association* |
-| `_SrvcDocumentRejectionReason` | *Association* |
-| `_Confirmation` | *Association* |
-| `_ServiceOrderItemTP` | *Association* |
-| `_SrvcOrdPartnerTP` | *Association* |
-| `_SrvcOrdReferenceObjectTP` | *Association* |
-| `_SrvcOrdPriceElementTP` | *Association* |
-| `_SrvcOrdUserStatusTP` | *Association* |
-| `_SrvcOrdAppointmentTP` | *Association* |
-| `_SrvcOrdDurationTP` | *Association* |
-| `_SrvcOrdFUPSrvcConfTP` | *Association* |
-| `_SrvcOrdFUPBillgDocTP` | *Association* |
-| `_SrvcOrdFUPPurchaseOrderTP` | *Association* |
-| `_SrvcOrdFUPPurReqnTP` | *Association* |
-| `_SrvcOrdFUPSrvcEntrSheetTP` | *Association* |
-| `_SrvcOrdFUPSuplrInvcTP` | *Association* |
-| `_SrvcOrdFUPMaintOrdTP` | *Association* |
-| `_SrvcOrdLongTextTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ServiceOrder` | ✓ | |  |  |
+| `ServiceObjectType` |  | |  |  |
+| `ServiceOrderType` |  | |  |  |
+| `ServiceOrderUUID` |  | |  |  |
+| `ServiceOrderDescription` |  | |  |  |
+| `Language` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `ServiceDocCreationDateTime` |  | |  |  |
+| `ServiceDocChangedDateTime` |  | |  |  |
+| `ServiceDocumentCreatedByUser` |  | |  |  |
+| `ServiceDocumentChangedByUser` |  | |  |  |
+| `SoldToParty` |  | |  |  |
+| `ShipToParty` |  | |  |  |
+| `BillToParty` |  | |  |  |
+| `PayerParty` |  | |  |  |
+| `PaymentTerms` |  | |  |  |
+| `PaymentMethod` |  | |  |  |
+| `SEPAMandate` |  | |  |  |
+| `SrvcSEPAMandateRelevance` |  | |  |  |
+| `ContactPersonBusinessPartnerId` |  | |  |  |
+| `RespEmployeeBusinessPartnerId` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `SalesOrganizationOrgUnitID` |  | |  |  |
+| `SalesOfficeOrgUnitID` |  | |  |  |
+| `SalesGroupOrgUnitID` |  | |  |  |
+| `ServiceOrganization` |  | |  |  |
+| `RespyMgmtServiceTeam` |  | |  |  |
+| `RespyMgmtGlobalTeamID` |  | |  |  |
+| `ServiceOrderIsNew` |  | |  |  |
+| `ServiceOrderIsInProcess` |  | |  |  |
+| `ServiceOrderIsReleased` |  | |  |  |
+| `ServiceOrderIsCompleted` |  | |  |  |
+| `ServiceOrderIsRejected` |  | |  |  |
+| `ServiceOrderStatus` |  | |  |  |
+| `SrvcOrdReldForBillingStatus` |  | |  |  |
+| `SrvcOrdBillingStatus` |  | |  |  |
+| `ServiceOrderHasError` |  | |  |  |
+| `SrvcDocTransferStatus` |  | |  |  |
+| `SrvcOrdExecutionStatus` |  | |  |  |
+| `SrvcOrdCreditStatus` |  | |  |  |
+| `RequestedServiceStartDateTime` |  | |  |  |
+| `RequestedServiceEndDateTime` |  | |  |  |
+| `ErlstRequestedDeliveryDateTime` |  | |  |  |
+| `ServiceDocumentPriority` |  | |  |  |
+| `TransactionCurrency` |  | |  |  |
+| `ServiceDocGrossAmount` |  | |  | `} ServiceDocGrossAmount` |
+| `ServiceDocNetAmount` |  | |  | `} ServiceDocNetAmount` |
+| `ServiceDocTaxAmount` |  | |  | `} ServiceDocTaxAmount` |
+| `PricingDocument` |  | |  |  |
+| `PurchaseOrderByCustomer` |  | |  |  |
+| `CustomerPurchaseOrderDate` |  | |  |  |
+| `ServiceOrderRejectionReason` |  | |  |  |
+| `SrvcOrdExtReference` |  | |  |  |
+| `ReferenceServiceContract` |  | |  |  |
+| `RefServiceOrderTemplate` |  | |  |  |
+| `ReferenceServiceQtan` |  | |  |  |
+| `WBSElementExternalID` |  | |  |  |
+| `FSMServiceCall` |  | |  |  |
+| `_ServiceObjType` | | ✓ | | |
+| `_ServiceDocumentType` | | ✓ | | |
+| `_SoldToParty` | | ✓ | | |
+| `_ShipToParty` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_ContactPerson` | | ✓ | | |
+| `_RespEmployee` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_SalesOrganizationOrgUnit_2` | | ✓ | | |
+| `_SalesOfficeOrgUnit_2` | | ✓ | | |
+| `_SalesGroupOrgUnit_2` | | ✓ | | |
+| `_ServiceOrganizationOrgUnit_2` | | ✓ | | |
+| `_PaymentTerms` | | ✓ | | |
+| `_PaymentMethod` | | ✓ | | |
+| `_SrvcSEPAMandateRelevance` | | ✓ | | |
+| `_TransactionCurrency` | | ✓ | | |
+| `_ServiceDocumentPriority` | | ✓ | | |
+| `_SrvcDocumentRejectionReason` | | ✓ | | |
+| `_Confirmation` | | ✓ | | |
+| `_ServiceOrderItemTP` | | ✓ | | |
+| `_SrvcOrdPartnerTP` | | ✓ | | |
+| `_SrvcOrdReferenceObjectTP` | | ✓ | | |
+| `_SrvcOrdPriceElementTP` | | ✓ | | |
+| `_SrvcOrdUserStatusTP` | | ✓ | | |
+| `_SrvcOrdAppointmentTP` | | ✓ | | |
+| `_SrvcOrdDurationTP` | | ✓ | | |
+| `_SrvcOrdFUPSrvcConfTP` | | ✓ | | |
+| `_SrvcOrdFUPBillgDocTP` | | ✓ | | |
+| `_SrvcOrdFUPPurchaseOrderTP` | | ✓ | | |
+| `_SrvcOrdFUPPurReqnTP` | | ✓ | | |
+| `_SrvcOrdFUPSrvcEntrSheetTP` | | ✓ | | |
+| `_SrvcOrdFUPSuplrInvcTP` | | ✓ | | |
+| `_SrvcOrdFUPMaintOrdTP` | | ✓ | | |
+| `_SrvcOrdLongTextTP` | | ✓ | | |
 
 ## Source Code
 

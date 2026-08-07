@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintenanceItem` | `MaintenanceItem` |
-| key `NmbrOfMaintComplianceItems` | `NmbrOfMaintComplianceItems` |
-| key `Language` | `Language` |
-| `TextObjectKey` | `TextObjectKey` |
-| `TextObjectCategory` | `TextObjectCategory` |
-| `TextObjectType` | `TextObjectType` |
-| `PlainLongText` | `PlainLongText` |
-| `_MaintenanceItem` | *Association* |
-| `_MaintenanceItemReason` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintenanceItem` | ✓ | |  |  |
+| `NmbrOfMaintComplianceItems` | ✓ | |  |  |
+| `Language` | ✓ | |  |  |
+| `TextObjectKey` |  | |  |  |
+| `TextObjectCategory` |  | |  |  |
+| `TextObjectType` |  | |  |  |
+| `PlainLongText` |  | |  |  |
+| `_MaintenanceItem` | | ✓ | | |
+| `_MaintenanceItemReason` | | ✓ | | |
 
 ## Source Code
 

@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( _Source.Language as spras preserving type )` |
-| key `MaterialGroup` | `cast ( _Source.MaterialGroup as fincs_materialgroup preserving type )` |
-| `AdditionalMasterDataSource` | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
-| `AdditionalMasterDataText` | `cast( _Source.MaterialGroupName as fincs_description_text_20 preserving type )` |
-| `MaterialGroupName` | `cast( _Source.MaterialGroupName as fincs_materialgroupname preserving type )` |
-| `CnsldtnIsAdditionalMasterData` | `_Source.CnsldtnIsAdditionalMasterData` |
-| `_Language` | *Association* |
-| `_MaterialGroup` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( _Source.Language as spras preserving type )` |
+| `MaterialGroup` | ✓ | |  | `cast ( _Source.MaterialGroup as fincs_materialgroup preserving type )` |
+| `AdditionalMasterDataSource` |  | |  | `cast( _Source.AdditionalMasterDataSource as fincs_masterdatasource preserving type )` |
+| `AdditionalMasterDataText` |  | |  | `cast( _Source.MaterialGroupName as fincs_description_text_20 preserving type )` |
+| `MaterialGroupName` |  | |  | `cast( _Source.MaterialGroupName as fincs_materialgroupname preserving type )` |
+| `CnsldtnIsAdditionalMasterData` |  | | `_Source` | `CnsldtnIsAdditionalMasterData` |
+| `_Language` | | ✓ | | |
+| `_MaterialGroup` | | ✓ | | |
 
 ## Associations
 

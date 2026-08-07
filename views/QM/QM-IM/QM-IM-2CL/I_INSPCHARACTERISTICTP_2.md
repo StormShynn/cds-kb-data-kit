@@ -28,93 +28,93 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `InspectionLot` | `InspectionLot` |
-| key `InspPlanOperationInternalID` | `InspPlanOperationInternalID` |
-| key `InspectionCharacteristic` | `InspectionCharacteristic` |
-| `InspectionSpecificationText` | `InspectionSpecificationText` |
-| `HasInspCharcPrtlSmpl` | `HasInspCharcPrtlSmpl` |
-| `InspSpecIsQuantitative` | `InspSpecIsQuantitative` |
-| `InspSpecIsMeasuredValueRqd` | `InspSpecIsMeasuredValueRqd` |
-| `InspSpecIsSelectedSetRequired` | `InspSpecIsSelectedSetRequired` |
-| `InspSpecIsLongTermInspection` | `InspSpecIsLongTermInspection` |
-| `InspSpecRecordingType` | `InspSpecRecordingType` |
-| `InspResultIsDocumentationRqd` | `InspResultIsDocumentationRqd` |
-| `InspSpecCharcCategory` | `InspSpecCharcCategory` |
-| `InspSpecResultCalculation` | `InspSpecResultCalculation` |
-| `InspSpecHasSamplingProcedure` | `InspSpecHasSamplingProcedure` |
-| `InspSpecIsDefectRecordingRqd` | `InspSpecIsDefectRecordingRqd` |
-| `InspSpecIsDefectsRecgAutomatic` | `InspSpecIsDefectsRecgAutomatic` |
-| `InspSpecIsChgDocRequired` | `InspSpecIsChgDocRequired` |
-| `InspSpecHasControlChart` | `InspSpecHasControlChart` |
-| `InspCharcIsNotPlanned` | `InspCharcIsNotPlanned` |
-| `InspectionMethod` | `InspectionMethod` |
-| `InspectionMethodPlant` | `InspectionMethodPlant` |
-| `InspectionMethodVersion` | `InspectionMethodVersion` |
-| `InspectionSpecificationPlant` | `InspectionSpecificationPlant` |
-| `InspectionSpecification` | `InspectionSpecification` |
-| `InspectionSpecificationVersion` | `InspectionSpecificationVersion` |
-| `InspCharcPrtlSmpl` | `InspCharcPrtlSmpl` |
-| `InspectionCharacteristicStatus` | `InspectionCharacteristicStatus` |
-| `InspSpecDecimalPlaces` | `InspSpecDecimalPlaces` |
-| `InspectionSpecificationUnit` | `InspectionSpecificationUnit` |
-| `InspSampleValuationRule` | `InspSampleValuationRule` |
-| `QuantityUnit` | `QuantityUnit` |
-| `InspCharacteristicSampleSize` | `InspCharacteristicSampleSize` |
-| `InspCharacteristicSampleUnit` | `InspCharacteristicSampleUnit` |
-| `InspSpecSampleQuantityFactor` | `InspSpecSampleQuantityFactor` |
-| `InspSpecTargetValue` | `InspSpecTargetValue` |
-| `InspSpecHasTargetValue` | `InspSpecHasTargetValue` |
-| `InspSpecUpperLimit` | `InspSpecUpperLimit` |
-| `InspSpecHasUpperLimit` | `InspSpecHasUpperLimit` |
-| `InspSpecLowerLimit` | `InspSpecLowerLimit` |
-| `InspSpecHasLowerLimit` | `InspSpecHasLowerLimit` |
-| `InspSpecImportanceCode` | `InspSpecImportanceCode` |
-| `CharacteristicAttributeCatalog` | `CharacteristicAttributeCatalog` |
-| `SelectedCodeSet` | `SelectedCodeSet` |
-| `SelectedCodeSetPlant` | `SelectedCodeSetPlant` |
-| `InspSpecAdditionalCatalog2` | `InspSpecAdditionalCatalog2` |
-| `InspSpecAdditionalCatalog3` | `InspSpecAdditionalCatalog3` |
-| `InspSpecAdditionalCatalog4` | `InspSpecAdditionalCatalog4` |
-| `InspSpecAdditionalCatalog5` | `InspSpecAdditionalCatalog5` |
-| `InspSpecAddlSeldCodeSetPlant2` | `InspSpecAddlSeldCodeSetPlant2` |
-| `InspSpecAddlSeldCodeSetPlant3` | `InspSpecAddlSeldCodeSetPlant3` |
-| `InspSpecAddlSeldCodeSetPlant4` | `InspSpecAddlSeldCodeSetPlant4` |
-| `InspSpecAddlSeldCodeSetPlant5` | `InspSpecAddlSeldCodeSetPlant5` |
-| `InspSpecAdditionalSelectedSet2` | `InspSpecAdditionalSelectedSet2` |
-| `InspSpecAdditionalCodeGroup2` | `InspSpecAdditionalCodeGroup2` |
-| `InspSpecAdditionalSelectedSet3` | `InspSpecAdditionalSelectedSet3` |
-| `InspSpecAdditionalCodeGroup3` | `InspSpecAdditionalCodeGroup3` |
-| `InspSpecAdditionalSelectedSet4` | `InspSpecAdditionalSelectedSet4` |
-| `InspSpecAdditionalCodeGroup4` | `InspSpecAdditionalCodeGroup4` |
-| `InspSpecAdditionalSelectedSet5` | `InspSpecAdditionalSelectedSet5` |
-| `InspSpecAdditionalCodeGroup5` | `InspSpecAdditionalCodeGroup5` |
-| `InspSpecificationHasLongText` | `InspSpecificationHasLongText` |
-| `InspectorQualification` | `InspectorQualification` |
-| `InspSpecFormula1` | `InspSpecFormula1` |
-| `InspSpecFormula2` | `InspSpecFormula2` |
-| `InspSpecInformationField1` | `InspSpecInformationField1` |
-| `InspSpecInformationField2` | `InspSpecInformationField2` |
-| `InspSpecInformationField3` | `InspSpecInformationField3` |
-| `InspSpecDefectCodeGrpRjcnLower` | `InspSpecDefectCodeGrpRjcnLower` |
-| `InspSpecDefectCodeRjcnLower` | `InspSpecDefectCodeRjcnLower` |
-| `InspSpecDefectCodeGrpRjcnUpper` | `InspSpecDefectCodeGrpRjcnUpper` |
-| `InspSpecDefectCodeRjcnUpper` | `InspSpecDefectCodeRjcnUpper` |
-| `InspSpecDefectCodeGrpRejection` | `InspSpecDefectCodeGrpRejection` |
-| `InspSpecDefectCodeRejection` | `InspSpecDefectCodeRejection` |
-| `InspCharcQuantity` | `InspCharcQuantity` |
-| `UnplndCharcInspSubsetIntID` | `UnplndCharcInspSubsetIntID` |
-| `InspLotDynamicRule` | `InspLotDynamicRule` |
-| `QualityLevelInternalID` | `QualityLevelInternalID` |
-| `SamplingProcedureInspSubset` | `SamplingProcedureInspSubset` |
-| `ProductionOrderOperationActy` | `ProductionOrderOperationActy` |
-| `ProductionOrderOpActyVers` | `ProductionOrderOpActyVers` |
-| `InspCharcConfirmationNumber` | `InspCharcConfirmationNumber` |
-| `InspCharcCreationDate` | `InspCharcCreationDate` |
-| `_InspectionLot` | *Association* |
-| `_InspectionOperation` | *Association* |
-| `_InspectionResult` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `InspectionLot` | ✓ | |  |  |
+| `InspPlanOperationInternalID` | ✓ | |  |  |
+| `InspectionCharacteristic` | ✓ | |  |  |
+| `InspectionSpecificationText` |  | |  |  |
+| `HasInspCharcPrtlSmpl` |  | |  |  |
+| `InspSpecIsQuantitative` |  | |  |  |
+| `InspSpecIsMeasuredValueRqd` |  | |  |  |
+| `InspSpecIsSelectedSetRequired` |  | |  |  |
+| `InspSpecIsLongTermInspection` |  | |  |  |
+| `InspSpecRecordingType` |  | |  |  |
+| `InspResultIsDocumentationRqd` |  | |  |  |
+| `InspSpecCharcCategory` |  | |  |  |
+| `InspSpecResultCalculation` |  | |  |  |
+| `InspSpecHasSamplingProcedure` |  | |  |  |
+| `InspSpecIsDefectRecordingRqd` |  | |  |  |
+| `InspSpecIsDefectsRecgAutomatic` |  | |  |  |
+| `InspSpecIsChgDocRequired` |  | |  |  |
+| `InspSpecHasControlChart` |  | |  |  |
+| `InspCharcIsNotPlanned` |  | |  |  |
+| `InspectionMethod` |  | |  |  |
+| `InspectionMethodPlant` |  | |  |  |
+| `InspectionMethodVersion` |  | |  |  |
+| `InspectionSpecificationPlant` |  | |  |  |
+| `InspectionSpecification` |  | |  |  |
+| `InspectionSpecificationVersion` |  | |  |  |
+| `InspCharcPrtlSmpl` |  | |  |  |
+| `InspectionCharacteristicStatus` |  | |  |  |
+| `InspSpecDecimalPlaces` |  | |  |  |
+| `InspectionSpecificationUnit` |  | |  |  |
+| `InspSampleValuationRule` |  | |  |  |
+| `QuantityUnit` |  | |  |  |
+| `InspCharacteristicSampleSize` |  | |  |  |
+| `InspCharacteristicSampleUnit` |  | |  |  |
+| `InspSpecSampleQuantityFactor` |  | |  |  |
+| `InspSpecTargetValue` |  | |  |  |
+| `InspSpecHasTargetValue` |  | |  |  |
+| `InspSpecUpperLimit` |  | |  |  |
+| `InspSpecHasUpperLimit` |  | |  |  |
+| `InspSpecLowerLimit` |  | |  |  |
+| `InspSpecHasLowerLimit` |  | |  |  |
+| `InspSpecImportanceCode` |  | |  |  |
+| `CharacteristicAttributeCatalog` |  | |  |  |
+| `SelectedCodeSet` |  | |  |  |
+| `SelectedCodeSetPlant` |  | |  |  |
+| `InspSpecAdditionalCatalog2` |  | |  |  |
+| `InspSpecAdditionalCatalog3` |  | |  |  |
+| `InspSpecAdditionalCatalog4` |  | |  |  |
+| `InspSpecAdditionalCatalog5` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant2` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant3` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant4` |  | |  |  |
+| `InspSpecAddlSeldCodeSetPlant5` |  | |  |  |
+| `InspSpecAdditionalSelectedSet2` |  | |  |  |
+| `InspSpecAdditionalCodeGroup2` |  | |  |  |
+| `InspSpecAdditionalSelectedSet3` |  | |  |  |
+| `InspSpecAdditionalCodeGroup3` |  | |  |  |
+| `InspSpecAdditionalSelectedSet4` |  | |  |  |
+| `InspSpecAdditionalCodeGroup4` |  | |  |  |
+| `InspSpecAdditionalSelectedSet5` |  | |  |  |
+| `InspSpecAdditionalCodeGroup5` |  | |  |  |
+| `InspSpecificationHasLongText` |  | |  |  |
+| `InspectorQualification` |  | |  |  |
+| `InspSpecFormula1` |  | |  |  |
+| `InspSpecFormula2` |  | |  |  |
+| `InspSpecInformationField1` |  | |  |  |
+| `InspSpecInformationField2` |  | |  |  |
+| `InspSpecInformationField3` |  | |  |  |
+| `InspSpecDefectCodeGrpRjcnLower` |  | |  |  |
+| `InspSpecDefectCodeRjcnLower` |  | |  |  |
+| `InspSpecDefectCodeGrpRjcnUpper` |  | |  |  |
+| `InspSpecDefectCodeRjcnUpper` |  | |  |  |
+| `InspSpecDefectCodeGrpRejection` |  | |  |  |
+| `InspSpecDefectCodeRejection` |  | |  |  |
+| `InspCharcQuantity` |  | |  |  |
+| `UnplndCharcInspSubsetIntID` |  | |  |  |
+| `InspLotDynamicRule` |  | |  |  |
+| `QualityLevelInternalID` |  | |  |  |
+| `SamplingProcedureInspSubset` |  | |  |  |
+| `ProductionOrderOperationActy` |  | |  |  |
+| `ProductionOrderOpActyVers` |  | |  |  |
+| `InspCharcConfirmationNumber` |  | |  |  |
+| `InspCharcCreationDate` |  | |  |  |
+| `_InspectionLot` | | ✓ | | |
+| `_InspectionOperation` | | ✓ | | |
+| `_InspectionResult` | | ✓ | | |
 
 ## Source Code
 

@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeZoneID` | `ttzzt.tzone` |
-| key `Language` | `ttzzt.langu` |
-| `TimeZoneText` | `ttzzt.descript` |
-| `_TimeZone` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeZoneID` | ✓ | |  | `tzone` |
+| `Language` | ✓ | |  | `langu` |
+| `TimeZoneText` |  | |  | `descript` |
+| `_TimeZone` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

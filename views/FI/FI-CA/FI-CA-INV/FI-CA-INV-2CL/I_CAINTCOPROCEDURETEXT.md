@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CAIntcoProcedure` | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as ico_proc_kk preserving type )` |
-| key `Language` | `cast ( ddlanguage as spras preserving type )` |
-| `CAIntcoProcedureText` | `cast ( ddtext as ico_proc_txt_gfn_kk preserving type )` |
-| `_CAIntcoProcedure` | *Association* |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CAIntcoProcedure` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as ico_proc_kk preserving type )` |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |
+| `CAIntcoProcedureText` |  | |  | `cast ( ddtext as ico_proc_txt_gfn_kk preserving type )` |
+| `_CAIntcoProcedure` | | ✓ | | |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

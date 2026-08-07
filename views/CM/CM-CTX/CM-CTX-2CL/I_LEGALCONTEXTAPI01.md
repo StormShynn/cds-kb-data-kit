@@ -28,30 +28,30 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `LglCntntMContextUUID` | `LglCntntMContextUUID` |
-| `LglCntntMContext` | `LglCntntMContext` |
-| `LglCntntMContextVersion` | `LglCntntMContextVersion` |
-| `LglCntntMContextTitle` | `LglCntntMContextTitle` |
-| `LglCntntMContextOwner` | `LglCntntMContextOwner` |
-| `LglCntntMProfile` | `LglCntntMProfile` |
-| `LglCntntMContextStatus` | `LglCntntMContextStatus` |
-| `LglCntntMContextValidFromDate` | `LglCntntMContextValidFromDate` |
-| `LglCntntMContextValidToDate` | `LglCntntMContextValidToDate` |
-| `LglCntntMCntxtLanguage` | `LglCntntMCntxtLanguage` |
-| `LglCntntMPrevCntxtVers` | `LglCntntMPrevCntxtVers` |
-| `LglCntntMCntxtIsReadOnly` | `LglCntntMCntxtIsReadOnly` |
-| `LglCntntMGovLaw` | `LglCntntMGovLaw` |
-| `LglCntntMCntxtAccessLvl` | `LglCntntMCntxtAccessLvl` |
-| `LglCntntMMainOrgType` | `LglCntntMMainOrgType` |
-| `LglCntntMMainOrgCoCode` | `LglCntntMMainOrgCoCode` |
-| `LglCntntMMainOrgSalesOrg` | `LglCntntMMainOrgSalesOrg` |
-| `LglCntntMMainOrgPurOrg` | `LglCntntMMainOrgPurOrg` |
-| `LglCntntMCreatedByUser` | `LglCntntMCreatedByUser` |
-| `LglCntntMCreatedUTCDateTime` | `LglCntntMCreatedUTCDateTime` |
-| `LglCntntMChangedUTCDateTime` | `LglCntntMChangedUTCDateTime` |
-| `LglCntntMChangedByUser` | `LglCntntMChangedByUser` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `LglCntntMContextUUID` | ✓ | |  |  |
+| `LglCntntMContext` |  | |  |  |
+| `LglCntntMContextVersion` |  | |  |  |
+| `LglCntntMContextTitle` |  | |  |  |
+| `LglCntntMContextOwner` |  | |  |  |
+| `LglCntntMProfile` |  | |  |  |
+| `LglCntntMContextStatus` |  | |  |  |
+| `LglCntntMContextValidFromDate` |  | |  |  |
+| `LglCntntMContextValidToDate` |  | |  |  |
+| `LglCntntMCntxtLanguage` |  | |  |  |
+| `LglCntntMPrevCntxtVers` |  | |  |  |
+| `LglCntntMCntxtIsReadOnly` |  | |  |  |
+| `LglCntntMGovLaw` |  | |  |  |
+| `LglCntntMCntxtAccessLvl` |  | |  |  |
+| `LglCntntMMainOrgType` |  | |  |  |
+| `LglCntntMMainOrgCoCode` |  | |  |  |
+| `LglCntntMMainOrgSalesOrg` |  | |  |  |
+| `LglCntntMMainOrgPurOrg` |  | |  |  |
+| `LglCntntMCreatedByUser` |  | |  |  |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  |
+| `LglCntntMChangedUTCDateTime` |  | |  |  |
+| `LglCntntMChangedByUser` |  | |  |  |
 
 ## Associations
 

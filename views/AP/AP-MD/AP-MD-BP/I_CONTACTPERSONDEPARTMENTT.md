@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ContactPersonDepartment` | `tb911.abtnr` |
-| key `Language` | `tb911.spras` |
-| `ContactPersonDepartmentName` | `tb911.bez20` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ContactPersonDepartment` | ✓ | |  | `abtnr` |
+| `Language` | ✓ | |  | `spras` |
+| `ContactPersonDepartmentName` |  | |  | `bez20` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

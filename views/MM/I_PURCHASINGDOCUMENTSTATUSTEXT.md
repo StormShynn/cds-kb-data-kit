@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `PurchasingDocumentStatus` | `cast ( dd07t.domvalue_l as mmpur_doc_status )` |
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `PurchasingDocumentStatusName` | `cast ( ddtext as mmpur_doc_status_name preserving type )` |
-| `_Language` | *Association* |
-| `_PurchasingDocumentStatus` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `PurchasingDocumentStatus` | ✓ | |  | `cast ( dd07t.domvalue_l as mmpur_doc_status )` |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `PurchasingDocumentStatusName` |  | |  | `cast ( ddtext as mmpur_doc_status_name preserving type )` |
+| `_Language` | | ✓ | | |
+| `_PurchasingDocumentStatus` | | ✓ | | |
 
 ## Associations
 

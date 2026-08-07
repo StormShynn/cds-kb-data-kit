@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CostCenterHierarchy` | `cast( hrrp_dir_n.hryid_42 as fis_cctr_hryid_42 preserving type )` |
-| key `ValidityEndDate` | `hrrp_dir_n.hryvalto` |
-| `ValidityStartDate` | `hrrp_dir_n.hryvalfrom` |
-| `ControllingArea` | `cast( hrrp_dir_n.hrycls as fis_hrycls_kokrs preserving type )` |
-| `_ControllingArea` | *Association* |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CostCenterHierarchy` | ✓ | |  | `cast( hrrp_dir_n.hryid_42 as fis_cctr_hryid_42 preserving type )` |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` |
+| `ValidityStartDate` |  | |  | `hryvalfrom` |
+| `ControllingArea` |  | |  | `cast( hrrp_dir_n.hrycls as fis_hrycls_kokrs preserving type )` |
+| `_ControllingArea` | | ✓ | | |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

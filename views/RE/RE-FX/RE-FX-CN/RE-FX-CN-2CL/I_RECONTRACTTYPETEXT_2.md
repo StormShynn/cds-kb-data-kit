@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `REContractType` | `smvart` |
-| key `Language` | `spras` |
-| `REContractTypeName` | `cast( xmbez as recnvdmcnttypetxt preserving type )` |
-| `_Language` | *Association* |
-| `_REContractType` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `REContractType` | ✓ | |  | `smvart` |
+| `Language` | ✓ | |  | `spras` |
+| `REContractTypeName` |  | |  | `cast( xmbez as recnvdmcnttypetxt preserving type )` |
+| `_Language` | | ✓ | | |
+| `_REContractType` | | ✓ | | |
 
 ## Associations
 

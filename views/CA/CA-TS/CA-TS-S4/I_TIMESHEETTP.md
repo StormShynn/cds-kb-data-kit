@@ -28,34 +28,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TimeSheetRecordUUID` | `TimeSheetRecordUUID` |
-| `TimeSheetRecord` | `TimeSheetRecord` |
-| `WorkAssignmentExternalID` | `WorkAssignmentExternalID` |
-| `Country2DigitISOCode` | `Country2DigitISOCode` |
-| `WorkAssignment` | `WorkAssignment` |
-| `TimeSheetDate` | `TimeSheetDate` |
-| `RecordedHours` | `RecordedHours` |
-| `HoursUnitOfMeasure` | `HoursUnitOfMeasure` |
-| `TimeSheetRecordLongText` | `TimeSheetRecordLongText` |
-| `WBSElementInternalID` | `WBSElementInternalID` |
-| `ActivityType` | `ActivityType` |
-| `WorkItem` | `WorkItem` |
-| `BillingControlCategory` | `BillingControlCategory` |
-| `TimeSheetStatus` | `TimeSheetStatus` |
-| `TimeSheetPredecessorRecord` | `TimeSheetPredecessorRecord` |
-| `TimeSheetAccountingDocument` | `TimeSheetAccountingDocument` |
-| `WorkflowTaskInternalID` | `WorkflowTaskInternalID` |
-| `CreatedByUser` | `CreatedByUser` |
-| `LastChangedByUser` | `LastChangedByUser` |
-| `TimeSheetApprovedByUser` | `TimeSheetApprovedByUser` |
-| `TimeSheetApprovedDate` | `TimeSheetApprovedDate` |
-| `TimeSheetCreationDate` | `TimeSheetCreationDate` |
-| `TimeSheetEntryTime` | `TimeSheetEntryTime` |
-| `LastChangeDateTime` | `LastChangeDateTime` |
-| `TimeSheetLastChangedDate` | `TimeSheetLastChangedDate` |
-| `TimeSheetLastChangedTime` | `TimeSheetLastChangedTime` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TimeSheetRecordUUID` | ✓ | |  |  |
+| `TimeSheetRecord` |  | |  |  |
+| `WorkAssignmentExternalID` |  | |  |  |
+| `Country2DigitISOCode` |  | |  |  |
+| `WorkAssignment` |  | |  |  |
+| `TimeSheetDate` |  | |  |  |
+| `RecordedHours` |  | |  |  |
+| `HoursUnitOfMeasure` |  | |  |  |
+| `TimeSheetRecordLongText` |  | |  |  |
+| `WBSElementInternalID` |  | |  |  |
+| `ActivityType` |  | |  |  |
+| `WorkItem` |  | |  |  |
+| `BillingControlCategory` |  | |  |  |
+| `TimeSheetStatus` |  | |  |  |
+| `TimeSheetPredecessorRecord` |  | |  |  |
+| `TimeSheetAccountingDocument` |  | |  |  |
+| `WorkflowTaskInternalID` |  | |  |  |
+| `CreatedByUser` |  | |  |  |
+| `LastChangedByUser` |  | |  |  |
+| `TimeSheetApprovedByUser` |  | |  |  |
+| `TimeSheetApprovedDate` |  | |  |  |
+| `TimeSheetCreationDate` |  | |  |  |
+| `TimeSheetEntryTime` |  | |  |  |
+| `LastChangeDateTime` |  | |  |  |
+| `TimeSheetLastChangedDate` |  | |  |  |
+| `TimeSheetLastChangedTime` |  | |  |  |
 
 ## Source Code
 

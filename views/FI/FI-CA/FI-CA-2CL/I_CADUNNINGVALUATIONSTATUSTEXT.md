@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CADunningValuationStatus` | `cast( left( dd07t.domvalue_l ,1 ) as scdst_kk preserving type )` |
-| key `Language` | `cast( ddlanguage as spras preserving type )` |
-| `CADunningValuationStatusName` | `cast( ddtext as scdst_text_kk preserving type )` |
-| `_Language` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CADunningValuationStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l ,1 ) as scdst_kk preserving type )` |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |
+| `CADunningValuationStatusName` |  | |  | `cast( ddtext as scdst_text_kk preserving type )` |
+| `_Language` | | ✓ | | |
 
 ## Associations
 

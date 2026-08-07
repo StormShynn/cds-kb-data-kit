@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `MaintNotifDetectionCodeGroup` | `detectioncodegroup` |
-| key `Language` | `language` |
-| `MaintNotifDetectionCodeGrpTxt` | `eam_detcogrp_t.detectioncodegrouptext` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `MaintNotifDetectionCodeGroup` | ✓ | |  | `detectioncodegroup` |
+| `Language` | ✓ | |  | `language` |
+| `MaintNotifDetectionCodeGrpTxt` |  | |  | `detectioncodegrouptext` |
 
 ## Source Code
 

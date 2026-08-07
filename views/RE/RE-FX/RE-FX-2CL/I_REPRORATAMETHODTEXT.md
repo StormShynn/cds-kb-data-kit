@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `cast( dd07t.ddlanguage as spras preserving type )` |
-| key `REProRataMethod` | `cast( dd07t.domvalue_l as recdvdmprorate )` |
-| `DomainValue` | `dd07t.domvalue_l` |
-| `REProRataMethodName` | `cast( dd07t.ddtext as val_text preserving type )` |
-| `_Language` | *Association* |
-| `_REProRataMethod` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |
+| `REProRataMethod` | ✓ | |  | `cast( dd07t.domvalue_l as recdvdmprorate )` |
+| `DomainValue` |  | |  | `domvalue_l` |
+| `REProRataMethodName` |  | |  | `cast( dd07t.ddtext as val_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_REProRataMethod` | | ✓ | | |
 
 ## Associations
 

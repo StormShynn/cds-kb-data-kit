@@ -25,9 +25,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `BusSolnOrdDescription` | `crmt_process_description` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BusSolnOrdDescription` |  | |  | `crmt_process_description` |
 
 ## Source Code
 

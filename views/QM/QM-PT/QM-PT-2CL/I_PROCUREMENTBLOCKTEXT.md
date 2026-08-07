@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `ProcurementBlock` | `tq04s.sperrfkt` |
-| key `Language` | `tq04s.sprache` |
-| `ProcurementBlockText` | `cast( tq04s.kurztext as vdm_qprocurementblock_text preserving type )` |
-| `_Language` | *Association* |
-| `_ProcurementBlock` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProcurementBlock` | ✓ | |  | `sperrfkt` |
+| `Language` | ✓ | |  | `sprache` |
+| `ProcurementBlockText` |  | |  | `cast( tq04s.kurztext as vdm_qprocurementblock_text preserving type )` |
+| `_Language` | | ✓ | | |
+| `_ProcurementBlock` | | ✓ | | |
 
 ## Associations
 

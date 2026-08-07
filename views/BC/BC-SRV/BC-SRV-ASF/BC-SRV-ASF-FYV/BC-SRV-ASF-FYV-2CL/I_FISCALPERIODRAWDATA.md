@@ -28,15 +28,15 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `FiscalYearVariant` | `cast( t009b.periv as fis_periv preserving type )` |
-| key `FiscalPeriodEndYear` | `t009b.bdatj` |
-| key `FiscalPeriodEndMonth` | `t009b.bumon` |
-| key `FiscalPeriodEndDay` | `t009b.butag` |
-| `FiscalPeriod` | `t009b.poper` |
-| `FiscalYearShift` | `t009b.reljr` |
-| `_FiscalYearVariant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `FiscalYearVariant` | ✓ | |  | `cast( t009b.periv as fis_periv preserving type )` |
+| `FiscalPeriodEndYear` | ✓ | |  | `bdatj` |
+| `FiscalPeriodEndMonth` | ✓ | |  | `bumon` |
+| `FiscalPeriodEndDay` | ✓ | |  | `butag` |
+| `FiscalPeriod` |  | |  | `poper` |
+| `FiscalYearShift` |  | |  | `reljr` |
+| `_FiscalYearVariant` | | ✓ | | |
 
 ## Associations
 

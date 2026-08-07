@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BillingDocumentType` | `BillingDocumentType` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BillingDocumentType` | ✓ | |  |  |
 
 ## Source Code
 

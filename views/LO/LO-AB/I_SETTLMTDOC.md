@@ -27,248 +27,248 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `SettlmtDoc` | `SettlmtDoc` |
-| `SettlmtDocType` | `}] } SettlmtDocType` |
-| `SettlmtDocCat` | `SettlmtDocCat` |
-| `SettlmtProcessType` | `}] } SettlmtProcessType` |
-| `SettlmtProcessCat` | `SettlmtProcessCat` |
-| `LogisticsDataEntryCat` | `LogisticsDataEntryCat` |
-| `SettlmtCat` | `SettlmtCat` |
-| `SupplierPricingProcedure` | `SupplierPricingProcedure` |
-| `CustomerPricingProcedure` | `CustomerPricingProcedure` |
-| `PostingDate` | `PostingDate` |
-| `SettlmtMgmtAcctgTransfSts` | `SettlmtMgmtAcctgTransfSts` |
-| `InvoicingParty` | `}] } InvoicingParty` |
-| `PayeeParty` | `}] } PayeeParty` |
-| `BillToParty` | `}] } BillToParty` |
-| `PayerParty` | `}] } PayerParty` |
-| `PurchasingOrganization` | `PurchasingOrganization` |
-| `PurchasingGroup` | `PurchasingGroup` |
-| `SalesOrganization` | `SalesOrganization` |
-| `DistributionChannel` | `DistributionChannel` |
-| `Division` | `Division` |
-| `SuplrSettlmtCompanyCode` | `}] } SuplrSettlmtCompanyCode` |
-| `CustSettlmtCompanyCode` | `}] } CustSettlmtCompanyCode` |
-| `CreatedByUser` | `CreatedByUser` |
-| `CreationDate` | `CreationDate` |
-| `CreationTime` | `CreationTime` |
-| `LastChangeDate` | `LastChangeDate` |
-| `DocumentDate` | `DocumentDate` |
-| `DocumentReferenceID` | `DocumentReferenceID` |
-| `AssignmentReference` | `AssignmentReference` |
-| `SettlmtDocCurrency` | `SettlmtDocCurrency` |
-| `ExchangeRate` | `ExchangeRate` |
-| `ExchangeRateIsFixed` | `ExchangeRateIsFixed` |
-| `ExchangeRateDate` | `ExchangeRateDate` |
-| `SupplierTotalGrossAmount` | `SupplierTotalGrossAmount` |
-| `SupplierTotalNetAmount` | `SupplierTotalNetAmount` |
-| `CustomerTotalGrossAmount` | `CustomerTotalGrossAmount` |
-| `CustomerTotalNetAmount` | `CustomerTotalNetAmount` |
-| `SupplierPaymentTerms` | `SupplierPaymentTerms` |
-| `SupplierCashDiscount1Days` | `SupplierCashDiscount1Days` |
-| `SupplierCashDiscount2Days` | `SupplierCashDiscount2Days` |
-| `SupplierNetPaymentDays` | `SupplierNetPaymentDays` |
-| `SupplierCashDiscount1Percent` | `SupplierCashDiscount1Percent` |
-| `SupplierCashDiscount2Percent` | `SupplierCashDiscount2Percent` |
-| `SupplierPaymentMethod` | `SupplierPaymentMethod` |
-| `CustomerPaymentTerms` | `CustomerPaymentTerms` |
-| `CustomerCashDiscount1Days` | `CustomerCashDiscount1Days` |
-| `CustomerCashDiscount2Days` | `CustomerCashDiscount2Days` |
-| `CustomerNetPaymentDays` | `CustomerNetPaymentDays` |
-| `CustomerCashDiscount1Percent` | `CustomerCashDiscount1Percent` |
-| `CustomerCashDiscount2Percent` | `CustomerCashDiscount2Percent` |
-| `CustomerPaymentMethod` | `CustomerPaymentMethod` |
-| `SuplrTotEligibleAmtForCshDisc` | `SuplrTotEligibleAmtForCshDisc` |
-| `CustTotEligibleAmtForCshDisc` | `CustTotEligibleAmtForCshDisc` |
-| `SettlmtDocIsCanceled` | `SettlmtDocIsCanceled` |
-| `CanceledSettlmtDoc` | `}] } CanceledSettlmtDoc` |
-| `SupplierPricingDocument` | `SupplierPricingDocument` |
-| `CustomerPricingDocument` | `CustomerPricingDocument` |
-| `SupplierAdditionalValueDays` | `SupplierAdditionalValueDays` |
-| `SupplierFixedValueDate` | `SupplierFixedValueDate` |
-| `CustomerAdditionalValueDays` | `CustomerAdditionalValueDays` |
-| `CustomerFixedValueDate` | `CustomerFixedValueDate` |
-| `SupplierTotalTaxAmount` | `SupplierTotalTaxAmount` |
-| `CustomerTotalTaxAmount` | `CustomerTotalTaxAmount` |
-| `TaxExchangeRate` | `TaxExchangeRate` |
-| `IntercompanyTaxExchangeRate` | `IntercompanyTaxExchangeRate` |
-| `SupplyingCountry` | `SupplyingCountry` |
-| `StateCentralBankPaymentReason` | `StateCentralBankPaymentReason` |
-| `CreditControlArea` | `}] } CreditControlArea` |
-| `SettlmtDocActivityReason` | `SettlmtDocActivityReason` |
-| `PaymentReference` | `PaymentReference` |
-| `SupplierPaymentCurrency` | `SupplierPaymentCurrency` |
-| `SupplierPaytCurrencyExchRate` | `SupplierPaytCurrencyExchRate` |
-| `CustomerPaymentCurrency` | `CustomerPaymentCurrency` |
-| `CustomerPaytCurrencyExchRate` | `CustomerPaytCurrencyExchRate` |
-| `SettlmtApplSts` | `SettlmtApplSts` |
-| `ExchangeRateType` | `ExchangeRateType` |
-| `SalesOffice` | `SalesOffice` |
-| `SalesGroup` | `SalesGroup` |
-| `OneTimeCustomerAddressID` | `OneTimeCustomerAddressID` |
-| `OneTimeSupplierAddressID` | `OneTimeSupplierAddressID` |
-| `SettlmtReltdCndnContr` | `}] } SettlmtReltdCndnContr` |
-| `SettlmtReltdTrdgContr` | `SettlmtReltdTrdgContr` |
-| `SettlmtReltdPurgDoc` | `}] } SettlmtReltdPurgDoc` |
-| `SettlmtReltdBillgDoc` | `}] } SettlmtReltdBillgDoc` |
-| `SettlmtDocSmmrznCat` | `SettlmtDocSmmrznCat` |
-| `CreditControlAreaCurrency` | `CreditControlAreaCurrency` |
-| `ReleasedCreditAmount` | `ReleasedCreditAmount` |
-| `SettlmtClassificationCat` | `SettlmtClassificationCat` |
-| `SettlmtPartnerCat` | `SettlmtPartnerCat` |
-| `SupplierSettlmtStatus` | `SupplierSettlmtStatus` |
-| `CustomerSettlmtStatus` | `CustomerSettlmtStatus` |
-| `SupplierSettlmtDocCat` | `SupplierSettlmtDocCat` |
-| `CustomerSettlmtDocCat` | `CustomerSettlmtDocCat` |
-| `SupplierSettlmtBlkgReason` | `SupplierSettlmtBlkgReason` |
-| `CustomerSettlmtBlkgReason` | `CustomerSettlmtBlkgReason` |
-| `FiscalPeriod` | `FiscalPeriod` |
-| `TrdgExpnDocSettled` | `TrdgExpnDocSettled` |
-| `TrdgExpnCurrency` | `TrdgExpnCurrency` |
-| `TrdgExpnAmount` | `TrdgExpnAmount` |
-| `TrdgExpnSupplier` | `}] } TrdgExpnSupplier` |
-| `TrdgExpnCustomer` | `}] } TrdgExpnCustomer` |
-| `CndnContrType` | `}] } CndnContrType` |
-| `CndnContrProcVar` | `}] } CndnContrProcVar` |
-| `SettlmtDateCat` | `SettlmtDateCat` |
-| `ActualSettlmtDate` | `ActualSettlmtDate` |
-| `SettlmtDateSequentialID` | `SettlmtDateSequentialID` |
-| `SettlmtDocIncmpltnsRsn` | `SettlmtDocIncmpltnsRsn` |
-| `AlternativeInvoicingParty` | `}] } AlternativeInvoicingParty` |
-| `CombinedSettlmtPostgSts` | `CombinedSettlmtPostgSts` |
-| `DocIntrastatRelevance` | `DocIntrastatRelevance` |
-| `TaxDepartureCountry` | `TaxDepartureCountry` |
-| `TaxDestinationCountry` | `TaxDestinationCountry` |
-| `IsEUTriangularDeal` | `IsEUTriangularDeal` |
-| `SupplierVATRegistration` | `SupplierVATRegistration` |
-| `CustomerVATRegistration` | `CustomerVATRegistration` |
-| `IntrastatDeclnGdsFlwCat` | `IntrastatDeclnGdsFlwCat` |
-| `IncotermsVersion` | `IncotermsVersion` |
-| `IncotermsClassification` | `IncotermsClassification` |
-| `IncotermsTransferLocation` | `IncotermsTransferLocation` |
-| `IncotermsLocation1` | `IncotermsLocation1` |
-| `IncotermsLocation2` | `IncotermsLocation2` |
-| `SettlmtDate` | `SettlmtDate` |
-| `RefSettlmtDate` | `RefSettlmtDate` |
-| `SettlmtBusProcVar` | `SettlmtBusProcVar` |
-| `SettlmtDocCollSts` | `SettlmtDocCollSts` |
-| `SettlmtDocIsCollvDoc` | `SettlmtDocIsCollvDoc` |
-| `CollSettlmtBlkgReason` | `CollSettlmtBlkgReason` |
-| `SuplrSettlmtCoCodeTaxCountry` | `SuplrSettlmtCoCodeTaxCountry` |
-| `CustSettlmtCoCodeTaxCountry` | `CustSettlmtCoCodeTaxCountry` |
-| `SettlmtBusProcCat` | `SettlmtBusProcCat` |
-| `SEPAMandate` | `SEPAMandate` |
-| `TotalSettlmtQuantity` | `TotalSettlmtQuantity` |
-| `TotalSettlmtQuantityUnit` | `TotalSettlmtQuantityUnit` |
-| `TotalSettlmtNetWeight` | `TotalSettlmtNetWeight` |
-| `TotalSettlmtGrossWeight` | `TotalSettlmtGrossWeight` |
-| `TotalSettlmtWeightUnit` | `TotalSettlmtWeightUnit` |
-| `TotalSettlmtVolume` | `TotalSettlmtVolume` |
-| `TotalSettlmtVolumeUnit` | `TotalSettlmtVolumeUnit` |
-| `TotalSettlmtPointsQty` | `TotalSettlmtPointsQty` |
-| `TotalSettlmtPointsQtyUnit` | `TotalSettlmtPointsQtyUnit` |
-| `PostingPartnerCat` | `PostingPartnerCat` |
-| `SettlmtPeriodStartDate` | `SettlmtPeriodStartDate` |
-| `SettlmtPeriodEndDate` | `SettlmtPeriodEndDate` |
-| `CndnContrProcessCategory` | `CndnContrProcessCategory` |
-| `SettlmtApplStsGrp` | `SettlmtApplStsGrp` |
-| `SettlmtDocAuthznCat` | `SettlmtDocAuthznCat` |
-| `ETag` | `cast ( '0000' as wlf_entity_tag preserving type )` |
-| `SettlmtDocChangeState` | `SettlmtDocChangeState` |
-| `_Item` | *Association* |
-| `_Partner` | *Association* |
-| `_BankData` | *Association* |
-| `_CanceledSettlmtDoc` | *Association* |
-| `_SettlmtDocIncmpltnsRsn` | *Association* |
-| `_SettlmtDocCollSts` | *Association* |
-| `_SettlmtDocIsCollvDoc` | *Association* |
-| `_CustSettlmtCompanyCode` | *Association* |
-| `_SuplrSettlmtCoCodeTaxCountry` | *Association* |
-| `_CustSettlmtCoCodeTaxCountry` | *Association* |
-| `_BillToPartyCompany` | *Association* |
-| `_PayerPartyCompany` | *Association* |
-| `_SupplierPricingElement` | *Association* |
-| `_CustomerPricingElement` | *Association* |
-| `_CreditControlAreaText` | *Association* |
-| `_SettlmtDocPlainLongText` | *Association* |
-| `_SettlmtReltdCndnContr` | *Association* |
-| `_SettlmtDocType` | *Association* |
-| `_SettlmtProcessType` | *Association* |
-| `_CndnContrType` | *Association* |
-| `_SettlmtBusProcVar` | *Association* |
-| `_SettlmtApplSts` | *Association* |
-| `_SettlmtApplStsGrp` | *Association* |
-| `_SettlmtApplStsGrpStsAssgmt` | *Association* |
-| `_TrdgExpnDocSettled` | *Association* |
-| `_SettlmtDocCat` | *Association* |
-| `_SettlmtProcessCat` | *Association* |
-| `_LogisticsDataEntryCat` | *Association* |
-| `_SettlmtCat` | *Association* |
-| `_SettlmtMgmtAcctgTransfSts` | *Association* |
-| `_InvoicingParty` | *Association* |
-| `_PayeeParty` | *Association* |
-| `_BillToParty` | *Association* |
-| `_PayerParty` | *Association* |
-| `_PurchasingOrganization` | *Association* |
-| `_PurchasingGroup` | *Association* |
-| `_SalesOrganization` | *Association* |
-| `_DistributionChannel` | *Association* |
-| `_Division` | *Association* |
-| `_SuplrSettlmtCompanyCode` | *Association* |
-| `_CreatedByUser` | *Association* |
-| `_SettlmtDocCurrency` | *Association* |
-| `_SupplierPaymentTerms` | *Association* |
-| `_CustomerPaymentTerms` | *Association* |
-| `_SupplyingCountry` | *Association* |
-| `_CreditControlArea` | *Association* |
-| `_SettlmtDocActivityReason` | *Association* |
-| `_SupplierPaymentCurrency` | *Association* |
-| `_CustomerPaymentCurrency` | *Association* |
-| `_ExchangeRateType` | *Association* |
-| `_SalesOffice` | *Association* |
-| `_SalesGroup` | *Association* |
-| `_OneTimeSupplierAddress` | *Association* |
-| `_OneTimeCustomerAddress` | *Association* |
-| `_SettlmtReltdPurgDoc` | *Association* |
-| `_SettlmtReltdBillgDoc` | *Association* |
-| `_SettlmtDocSmmrznCat` | *Association* |
-| `_CreditControlAreaCurrency` | *Association* |
-| `_SettlmtClassificationCat` | *Association* |
-| `_SettlmtPartnerCat` | *Association* |
-| `_SupplierSettlmtStatus` | *Association* |
-| `_CustomerSettlmtStatus` | *Association* |
-| `_SupplierSettlmtDocCat` | *Association* |
-| `_CustomerSettlmtDocCat` | *Association* |
-| `_SupplierSettlmtBlkgReason` | *Association* |
-| `_CustomerSettlmtBlkgReason` | *Association* |
-| `_TrdgExpnCurrency` | *Association* |
-| `_TrdgExpnSupplier` | *Association* |
-| `_TrdgExpnCustomer` | *Association* |
-| `_CndnContrProcVar` | *Association* |
-| `_SettlmtDateCat` | *Association* |
-| `_AlternativeInvoicingParty` | *Association* |
-| `_CombinedSettlmtPostgSts` | *Association* |
-| `_DocIntrastatRelevance` | *Association* |
-| `_TaxDepartureCountry` | *Association* |
-| `_TaxDestinationCountry` | *Association* |
-| `_IntrastatDeclnGdsFlwCat` | *Association* |
-| `_IncotermsVersion` | *Association* |
-| `_IncotermsClassification` | *Association* |
-| `_CollSettlmtBlkgReason` | *Association* |
-| `_SettlmtBusProcCat` | *Association* |
-| `_TotalSettlmtQuantityUnit` | *Association* |
-| `_TotalSettlmtWeightUnit` | *Association* |
-| `_TotalSettlmtVolumeUnit` | *Association* |
-| `_TotalSettlmtPointsQtyUnit` | *Association* |
-| `_PostingPartnerCat` | *Association* |
-| `_InvoicingPartyCompany` | *Association* |
-| `_PayeePartyCompany` | *Association* |
-| `_AltvInvoicingPartyCompany` | *Association* |
-| `_SalesArea` | *Association* |
-| `_CndnContrProcessCategory` | *Association* |
-| `_SettlmtDocAuthznCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `SettlmtDoc` | ✓ | |  |  |
+| `SettlmtDocType` |  | |  | `}] } SettlmtDocType` |
+| `SettlmtDocCat` |  | |  |  |
+| `SettlmtProcessType` |  | |  | `}] } SettlmtProcessType` |
+| `SettlmtProcessCat` |  | |  |  |
+| `LogisticsDataEntryCat` |  | |  |  |
+| `SettlmtCat` |  | |  |  |
+| `SupplierPricingProcedure` |  | |  |  |
+| `CustomerPricingProcedure` |  | |  |  |
+| `PostingDate` |  | |  |  |
+| `SettlmtMgmtAcctgTransfSts` |  | |  |  |
+| `InvoicingParty` |  | |  | `}] } InvoicingParty` |
+| `PayeeParty` |  | |  | `}] } PayeeParty` |
+| `BillToParty` |  | |  | `}] } BillToParty` |
+| `PayerParty` |  | |  | `}] } PayerParty` |
+| `PurchasingOrganization` |  | |  |  |
+| `PurchasingGroup` |  | |  |  |
+| `SalesOrganization` |  | |  |  |
+| `DistributionChannel` |  | |  |  |
+| `Division` |  | |  |  |
+| `SuplrSettlmtCompanyCode` |  | |  | `}] } SuplrSettlmtCompanyCode` |
+| `CustSettlmtCompanyCode` |  | |  | `}] } CustSettlmtCompanyCode` |
+| `CreatedByUser` |  | |  |  |
+| `CreationDate` |  | |  |  |
+| `CreationTime` |  | |  |  |
+| `LastChangeDate` |  | |  |  |
+| `DocumentDate` |  | |  |  |
+| `DocumentReferenceID` |  | |  |  |
+| `AssignmentReference` |  | |  |  |
+| `SettlmtDocCurrency` |  | |  |  |
+| `ExchangeRate` |  | |  |  |
+| `ExchangeRateIsFixed` |  | |  |  |
+| `ExchangeRateDate` |  | |  |  |
+| `SupplierTotalGrossAmount` |  | |  |  |
+| `SupplierTotalNetAmount` |  | |  |  |
+| `CustomerTotalGrossAmount` |  | |  |  |
+| `CustomerTotalNetAmount` |  | |  |  |
+| `SupplierPaymentTerms` |  | |  |  |
+| `SupplierCashDiscount1Days` |  | |  |  |
+| `SupplierCashDiscount2Days` |  | |  |  |
+| `SupplierNetPaymentDays` |  | |  |  |
+| `SupplierCashDiscount1Percent` |  | |  |  |
+| `SupplierCashDiscount2Percent` |  | |  |  |
+| `SupplierPaymentMethod` |  | |  |  |
+| `CustomerPaymentTerms` |  | |  |  |
+| `CustomerCashDiscount1Days` |  | |  |  |
+| `CustomerCashDiscount2Days` |  | |  |  |
+| `CustomerNetPaymentDays` |  | |  |  |
+| `CustomerCashDiscount1Percent` |  | |  |  |
+| `CustomerCashDiscount2Percent` |  | |  |  |
+| `CustomerPaymentMethod` |  | |  |  |
+| `SuplrTotEligibleAmtForCshDisc` |  | |  |  |
+| `CustTotEligibleAmtForCshDisc` |  | |  |  |
+| `SettlmtDocIsCanceled` |  | |  |  |
+| `CanceledSettlmtDoc` |  | |  | `}] } CanceledSettlmtDoc` |
+| `SupplierPricingDocument` |  | |  |  |
+| `CustomerPricingDocument` |  | |  |  |
+| `SupplierAdditionalValueDays` |  | |  |  |
+| `SupplierFixedValueDate` |  | |  |  |
+| `CustomerAdditionalValueDays` |  | |  |  |
+| `CustomerFixedValueDate` |  | |  |  |
+| `SupplierTotalTaxAmount` |  | |  |  |
+| `CustomerTotalTaxAmount` |  | |  |  |
+| `TaxExchangeRate` |  | |  |  |
+| `IntercompanyTaxExchangeRate` |  | |  |  |
+| `SupplyingCountry` |  | |  |  |
+| `StateCentralBankPaymentReason` |  | |  |  |
+| `CreditControlArea` |  | |  | `}] } CreditControlArea` |
+| `SettlmtDocActivityReason` |  | |  |  |
+| `PaymentReference` |  | |  |  |
+| `SupplierPaymentCurrency` |  | |  |  |
+| `SupplierPaytCurrencyExchRate` |  | |  |  |
+| `CustomerPaymentCurrency` |  | |  |  |
+| `CustomerPaytCurrencyExchRate` |  | |  |  |
+| `SettlmtApplSts` |  | |  |  |
+| `ExchangeRateType` |  | |  |  |
+| `SalesOffice` |  | |  |  |
+| `SalesGroup` |  | |  |  |
+| `OneTimeCustomerAddressID` |  | |  |  |
+| `OneTimeSupplierAddressID` |  | |  |  |
+| `SettlmtReltdCndnContr` |  | |  | `}] } SettlmtReltdCndnContr` |
+| `SettlmtReltdTrdgContr` |  | |  |  |
+| `SettlmtReltdPurgDoc` |  | |  | `}] } SettlmtReltdPurgDoc` |
+| `SettlmtReltdBillgDoc` |  | |  | `}] } SettlmtReltdBillgDoc` |
+| `SettlmtDocSmmrznCat` |  | |  |  |
+| `CreditControlAreaCurrency` |  | |  |  |
+| `ReleasedCreditAmount` |  | |  |  |
+| `SettlmtClassificationCat` |  | |  |  |
+| `SettlmtPartnerCat` |  | |  |  |
+| `SupplierSettlmtStatus` |  | |  |  |
+| `CustomerSettlmtStatus` |  | |  |  |
+| `SupplierSettlmtDocCat` |  | |  |  |
+| `CustomerSettlmtDocCat` |  | |  |  |
+| `SupplierSettlmtBlkgReason` |  | |  |  |
+| `CustomerSettlmtBlkgReason` |  | |  |  |
+| `FiscalPeriod` |  | |  |  |
+| `TrdgExpnDocSettled` |  | |  |  |
+| `TrdgExpnCurrency` |  | |  |  |
+| `TrdgExpnAmount` |  | |  |  |
+| `TrdgExpnSupplier` |  | |  | `}] } TrdgExpnSupplier` |
+| `TrdgExpnCustomer` |  | |  | `}] } TrdgExpnCustomer` |
+| `CndnContrType` |  | |  | `}] } CndnContrType` |
+| `CndnContrProcVar` |  | |  | `}] } CndnContrProcVar` |
+| `SettlmtDateCat` |  | |  |  |
+| `ActualSettlmtDate` |  | |  |  |
+| `SettlmtDateSequentialID` |  | |  |  |
+| `SettlmtDocIncmpltnsRsn` |  | |  |  |
+| `AlternativeInvoicingParty` |  | |  | `}] } AlternativeInvoicingParty` |
+| `CombinedSettlmtPostgSts` |  | |  |  |
+| `DocIntrastatRelevance` |  | |  |  |
+| `TaxDepartureCountry` |  | |  |  |
+| `TaxDestinationCountry` |  | |  |  |
+| `IsEUTriangularDeal` |  | |  |  |
+| `SupplierVATRegistration` |  | |  |  |
+| `CustomerVATRegistration` |  | |  |  |
+| `IntrastatDeclnGdsFlwCat` |  | |  |  |
+| `IncotermsVersion` |  | |  |  |
+| `IncotermsClassification` |  | |  |  |
+| `IncotermsTransferLocation` |  | |  |  |
+| `IncotermsLocation1` |  | |  |  |
+| `IncotermsLocation2` |  | |  |  |
+| `SettlmtDate` |  | |  |  |
+| `RefSettlmtDate` |  | |  |  |
+| `SettlmtBusProcVar` |  | |  |  |
+| `SettlmtDocCollSts` |  | |  |  |
+| `SettlmtDocIsCollvDoc` |  | |  |  |
+| `CollSettlmtBlkgReason` |  | |  |  |
+| `SuplrSettlmtCoCodeTaxCountry` |  | |  |  |
+| `CustSettlmtCoCodeTaxCountry` |  | |  |  |
+| `SettlmtBusProcCat` |  | |  |  |
+| `SEPAMandate` |  | |  |  |
+| `TotalSettlmtQuantity` |  | |  |  |
+| `TotalSettlmtQuantityUnit` |  | |  |  |
+| `TotalSettlmtNetWeight` |  | |  |  |
+| `TotalSettlmtGrossWeight` |  | |  |  |
+| `TotalSettlmtWeightUnit` |  | |  |  |
+| `TotalSettlmtVolume` |  | |  |  |
+| `TotalSettlmtVolumeUnit` |  | |  |  |
+| `TotalSettlmtPointsQty` |  | |  |  |
+| `TotalSettlmtPointsQtyUnit` |  | |  |  |
+| `PostingPartnerCat` |  | |  |  |
+| `SettlmtPeriodStartDate` |  | |  |  |
+| `SettlmtPeriodEndDate` |  | |  |  |
+| `CndnContrProcessCategory` |  | |  |  |
+| `SettlmtApplStsGrp` |  | |  |  |
+| `SettlmtDocAuthznCat` |  | |  |  |
+| `ETag` |  | |  | `cast ( '0000' as wlf_entity_tag preserving type )` |
+| `SettlmtDocChangeState` |  | |  |  |
+| `_Item` | | ✓ | | |
+| `_Partner` | | ✓ | | |
+| `_BankData` | | ✓ | | |
+| `_CanceledSettlmtDoc` | | ✓ | | |
+| `_SettlmtDocIncmpltnsRsn` | | ✓ | | |
+| `_SettlmtDocCollSts` | | ✓ | | |
+| `_SettlmtDocIsCollvDoc` | | ✓ | | |
+| `_CustSettlmtCompanyCode` | | ✓ | | |
+| `_SuplrSettlmtCoCodeTaxCountry` | | ✓ | | |
+| `_CustSettlmtCoCodeTaxCountry` | | ✓ | | |
+| `_BillToPartyCompany` | | ✓ | | |
+| `_PayerPartyCompany` | | ✓ | | |
+| `_SupplierPricingElement` | | ✓ | | |
+| `_CustomerPricingElement` | | ✓ | | |
+| `_CreditControlAreaText` | | ✓ | | |
+| `_SettlmtDocPlainLongText` | | ✓ | | |
+| `_SettlmtReltdCndnContr` | | ✓ | | |
+| `_SettlmtDocType` | | ✓ | | |
+| `_SettlmtProcessType` | | ✓ | | |
+| `_CndnContrType` | | ✓ | | |
+| `_SettlmtBusProcVar` | | ✓ | | |
+| `_SettlmtApplSts` | | ✓ | | |
+| `_SettlmtApplStsGrp` | | ✓ | | |
+| `_SettlmtApplStsGrpStsAssgmt` | | ✓ | | |
+| `_TrdgExpnDocSettled` | | ✓ | | |
+| `_SettlmtDocCat` | | ✓ | | |
+| `_SettlmtProcessCat` | | ✓ | | |
+| `_LogisticsDataEntryCat` | | ✓ | | |
+| `_SettlmtCat` | | ✓ | | |
+| `_SettlmtMgmtAcctgTransfSts` | | ✓ | | |
+| `_InvoicingParty` | | ✓ | | |
+| `_PayeeParty` | | ✓ | | |
+| `_BillToParty` | | ✓ | | |
+| `_PayerParty` | | ✓ | | |
+| `_PurchasingOrganization` | | ✓ | | |
+| `_PurchasingGroup` | | ✓ | | |
+| `_SalesOrganization` | | ✓ | | |
+| `_DistributionChannel` | | ✓ | | |
+| `_Division` | | ✓ | | |
+| `_SuplrSettlmtCompanyCode` | | ✓ | | |
+| `_CreatedByUser` | | ✓ | | |
+| `_SettlmtDocCurrency` | | ✓ | | |
+| `_SupplierPaymentTerms` | | ✓ | | |
+| `_CustomerPaymentTerms` | | ✓ | | |
+| `_SupplyingCountry` | | ✓ | | |
+| `_CreditControlArea` | | ✓ | | |
+| `_SettlmtDocActivityReason` | | ✓ | | |
+| `_SupplierPaymentCurrency` | | ✓ | | |
+| `_CustomerPaymentCurrency` | | ✓ | | |
+| `_ExchangeRateType` | | ✓ | | |
+| `_SalesOffice` | | ✓ | | |
+| `_SalesGroup` | | ✓ | | |
+| `_OneTimeSupplierAddress` | | ✓ | | |
+| `_OneTimeCustomerAddress` | | ✓ | | |
+| `_SettlmtReltdPurgDoc` | | ✓ | | |
+| `_SettlmtReltdBillgDoc` | | ✓ | | |
+| `_SettlmtDocSmmrznCat` | | ✓ | | |
+| `_CreditControlAreaCurrency` | | ✓ | | |
+| `_SettlmtClassificationCat` | | ✓ | | |
+| `_SettlmtPartnerCat` | | ✓ | | |
+| `_SupplierSettlmtStatus` | | ✓ | | |
+| `_CustomerSettlmtStatus` | | ✓ | | |
+| `_SupplierSettlmtDocCat` | | ✓ | | |
+| `_CustomerSettlmtDocCat` | | ✓ | | |
+| `_SupplierSettlmtBlkgReason` | | ✓ | | |
+| `_CustomerSettlmtBlkgReason` | | ✓ | | |
+| `_TrdgExpnCurrency` | | ✓ | | |
+| `_TrdgExpnSupplier` | | ✓ | | |
+| `_TrdgExpnCustomer` | | ✓ | | |
+| `_CndnContrProcVar` | | ✓ | | |
+| `_SettlmtDateCat` | | ✓ | | |
+| `_AlternativeInvoicingParty` | | ✓ | | |
+| `_CombinedSettlmtPostgSts` | | ✓ | | |
+| `_DocIntrastatRelevance` | | ✓ | | |
+| `_TaxDepartureCountry` | | ✓ | | |
+| `_TaxDestinationCountry` | | ✓ | | |
+| `_IntrastatDeclnGdsFlwCat` | | ✓ | | |
+| `_IncotermsVersion` | | ✓ | | |
+| `_IncotermsClassification` | | ✓ | | |
+| `_CollSettlmtBlkgReason` | | ✓ | | |
+| `_SettlmtBusProcCat` | | ✓ | | |
+| `_TotalSettlmtQuantityUnit` | | ✓ | | |
+| `_TotalSettlmtWeightUnit` | | ✓ | | |
+| `_TotalSettlmtVolumeUnit` | | ✓ | | |
+| `_TotalSettlmtPointsQtyUnit` | | ✓ | | |
+| `_PostingPartnerCat` | | ✓ | | |
+| `_InvoicingPartyCompany` | | ✓ | | |
+| `_PayeePartyCompany` | | ✓ | | |
+| `_AltvInvoicingPartyCompany` | | ✓ | | |
+| `_SalesArea` | | ✓ | | |
+| `_CndnContrProcessCategory` | | ✓ | | |
+| `_SettlmtDocAuthznCat` | | ✓ | | |
 
 ## Associations
 

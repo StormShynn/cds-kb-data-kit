@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `Language` |
-| key `ControllingArea` | `ControllingArea` |
-| key `ProfitCenter` | `ProfitCenter` |
-| key `ValidityEndDate` | `ValidityEndDate` |
-| `LanguageForEdit` | `LanguageForEdit` |
-| `ProfitCenterName` | `ProfitCenterName` |
-| `ProfitCenterLongName` | `ProfitCenterLongName` |
-| `_ProfitCenterTP` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `ControllingArea` | ✓ | |  |  |
+| `ProfitCenter` | ✓ | |  |  |
+| `ValidityEndDate` | ✓ | |  |  |
+| `LanguageForEdit` |  | |  |  |
+| `ProfitCenterName` |  | |  |  |
+| `ProfitCenterLongName` |  | |  |  |
+| `_ProfitCenterTP` | | ✓ | | |
 
 ## Source Code
 

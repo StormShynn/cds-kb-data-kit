@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `BOMExplosionDateID` | `cast(s.sernr as pph_sernr preserving type)` |
-| `BOMExplosionFixedKeyDate` | `s.brutr` |
-| `Material` | `s.matnr` |
-| `Plant` | `s.werks` |
-| `BOMExplosionDateText` | `cast(s.sntxt as pph_sntxt preserving type)` |
-| `IsDeleted` | `s.xloek` |
-| `EffectivityParameterVariant` | `s.techs` |
-| `_Material` | *Association* |
-| `_Product` | *Association* |
-| `_Plant` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `BOMExplosionDateID` | ✓ | |  | `cast(s.sernr as pph_sernr preserving type)` |
+| `BOMExplosionFixedKeyDate` |  | |  | `brutr` |
+| `Material` |  | |  | `matnr` |
+| `Plant` |  | |  | `werks` |
+| `BOMExplosionDateText` |  | |  | `cast(s.sntxt as pph_sntxt preserving type)` |
+| `IsDeleted` |  | |  | `xloek` |
+| `EffectivityParameterVariant` |  | |  | `techs` |
+| `_Material` | | ✓ | | |
+| `_Product` | | ✓ | | |
+| `_Plant` | | ✓ | | |
 
 ## Associations
 

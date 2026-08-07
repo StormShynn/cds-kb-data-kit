@@ -27,11 +27,11 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ConsolidationVersion` | `fincs_consolidationversion` |
-| `FiscalYear` | `fincs_fiscalyear` |
-| `FiscalPeriod` | `fincs_period` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ConsolidationVersion` |  | |  | `fincs_consolidationversion` |
+| `FiscalYear` |  | |  | `fincs_fiscalyear` |
+| `FiscalPeriod` |  | |  | `fincs_period` |
 
 ## Source Code
 

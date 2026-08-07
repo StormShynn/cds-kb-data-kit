@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `CustomerSupplierAccount` | `accno` |
-| key `WithholdingTaxType` | `witht` |
-| key `WithholdingTaxCode` | `wt_withcd` |
-| key `TaxSection` | `secco` |
-| key `ExemptionDateBegin` | `wt_date` |
-| key `FinancialAccountType` | `koart` |
-| key `BusinessPartnerPanNumber` | `pan_no` |
-| `IN_AccumulationAmount` | `acc_amt` |
-| `CompanyCodeCurrency` | `cast (abap.cuky'INR' as fis_hwaer)` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `CustomerSupplierAccount` | ✓ | |  | `accno` |
+| `WithholdingTaxType` | ✓ | |  | `witht` |
+| `WithholdingTaxCode` | ✓ | |  | `wt_withcd` |
+| `TaxSection` | ✓ | |  | `secco` |
+| `ExemptionDateBegin` | ✓ | |  | `wt_date` |
+| `FinancialAccountType` | ✓ | |  | `koart` |
+| `BusinessPartnerPanNumber` | ✓ | |  | `pan_no` |
+| `IN_AccumulationAmount` |  | |  | `acc_amt` |
+| `CompanyCodeCurrency` |  | |  | `cast (abap.cuky'INR' as fis_hwaer)` |
 
 ## Source Code
 

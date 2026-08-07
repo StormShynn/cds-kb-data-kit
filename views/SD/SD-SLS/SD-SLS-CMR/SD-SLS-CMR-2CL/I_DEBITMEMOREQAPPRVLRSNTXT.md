@@ -28,12 +28,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `Language` | `DebitMemoReqApprvlRsnText.Language` |
-| key `DebitMemoReqApprovalReason` | `DebitMemoReqApprvlRsnText.SalesDocApprovalReason` |
-| `DebitMemoReqApprvlRsnName` | `DebitMemoReqApprvlRsnText.SalesDocApprovalReasonName` |
-| `_DebitMemoReqApprvlRsnText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `Language` | ✓ | |  |  |
+| `DebitMemoReqApprovalReason` | ✓ | |  | `SalesDocApprovalReason` |
+| `DebitMemoReqApprvlRsnName` |  | |  | `SalesDocApprovalReasonName` |
+| `_DebitMemoReqApprvlRsnText` | | ✓ | | |
 
 ## Associations
 

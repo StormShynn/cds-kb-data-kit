@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `TransportationGroup` | `tragr` |
-| `_Text` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `TransportationGroup` | ✓ | |  | `tragr` |
+| `_Text` | | ✓ | | |
 
 ## Associations
 

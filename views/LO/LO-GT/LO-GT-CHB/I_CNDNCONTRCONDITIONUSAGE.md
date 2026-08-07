@@ -29,49 +29,49 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `DocRelationshipUUID` | `DocRelationshipUUID` |
-| `PricingDocument` | `PricingDocument` |
-| `PricingProcedureStep` | `PricingProcedureStep` |
-| `PricingProcedureCounter` | `PricingProcedureCounter` |
-| `ConditionContract` | `}] } ConditionContract` |
-| `CndnContrUUID` | `CndnContrUUID` |
-| `ConditionRecord` | `ConditionRecord` |
-| `ConditionSequentialNumber` | `cast( '00' as kopos preserving type )` |
-| `ConditionSequentialNumberShort` | `ConditionSequentialNumberShort` |
-| `CndnContrAccrRvslSts` | `CndnContrAccrRvslSts` |
-| `AccrSrceDocCategory` | `AccrSrceDocCategory` |
-| `AccrSrceDocument` | `AccrSrceDocument` |
-| `AccrSrceDocumentYear` | `AccrSrceDocumentYear` |
-| `AccrSrceDocumentItem` | `AccrSrceDocumentItem` |
-| `ConditionApplication` | `ConditionApplication` |
-| `ConditionType` | `ConditionType` |
-| `ConditionAmount` | `ConditionAmount` |
-| `ConditionCurrency` | `cast( AccrSrceDocCurrency as waers preserving type )` |
-| `AR_DocumentPostingDate` | `cast( AccrSrceDocPostingDate as wcb_wcocof_budat preserving type )` |
-| `AccrSrceDocPostingDate` | `AccrSrceDocPostingDate` |
-| `SettlmtDate` | `SettlmtDate` |
-| `SettlmtDateSequentialID` | `SettlmtDateSequentialID` |
-| `RefSettlmtDate` | `RefSettlmtDate` |
-| `RefSettlmtDateSequentialID` | `RefSettlmtDateSequentialID` |
-| `FiscalYear` | `AccrSrceDocFiscalYear` |
-| `Plant` | `}] } AccrSrceDocItemPlant` |
-| `CompanyCode` | `}] } AccrSrceDocCompanyCode` |
-| `CndnContrAccrSource` | `CndnContrAccrSource` |
-| `BillingDocument` | `}] } BillingDocument` |
-| `BillingDocumentItem` | `}] } BillingDocumentItem` |
-| `_ConditionContract` | *Association* |
-| `_CndnContrAccrRvslSts` | *Association* |
-| `_PricingConditionType` | *Association* |
-| `_ConditionCurrency` | *Association* |
-| `_Plant` | *Association* |
-| `_CompanyCode` | *Association* |
-| `_ConditionApplication` | *Association* |
-| `_CndnContrAccrSource` | *Association* |
-| `_BillingDocument` | *Association* |
-| `_BillingDocumentItem` | *Association* |
-| `_CndnContrAccrSrceDocCat` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `DocRelationshipUUID` | ✓ | |  |  |
+| `PricingDocument` |  | |  |  |
+| `PricingProcedureStep` |  | |  |  |
+| `PricingProcedureCounter` |  | |  |  |
+| `ConditionContract` |  | |  | `}] } ConditionContract` |
+| `CndnContrUUID` |  | |  |  |
+| `ConditionRecord` |  | |  |  |
+| `ConditionSequentialNumber` |  | |  | `cast( '00' as kopos preserving type )` |
+| `ConditionSequentialNumberShort` |  | |  |  |
+| `CndnContrAccrRvslSts` |  | |  |  |
+| `AccrSrceDocCategory` |  | |  |  |
+| `AccrSrceDocument` |  | |  |  |
+| `AccrSrceDocumentYear` |  | |  |  |
+| `AccrSrceDocumentItem` |  | |  |  |
+| `ConditionApplication` |  | |  |  |
+| `ConditionType` |  | |  |  |
+| `ConditionAmount` |  | |  |  |
+| `ConditionCurrency` |  | |  | `cast( AccrSrceDocCurrency as waers preserving type )` |
+| `AR_DocumentPostingDate` |  | |  | `cast( AccrSrceDocPostingDate as wcb_wcocof_budat preserving type )` |
+| `AccrSrceDocPostingDate` |  | |  |  |
+| `SettlmtDate` |  | |  |  |
+| `SettlmtDateSequentialID` |  | |  |  |
+| `RefSettlmtDate` |  | |  |  |
+| `RefSettlmtDateSequentialID` |  | |  |  |
+| `FiscalYear` |  | |  | `AccrSrceDocFiscalYear` |
+| `Plant` |  | |  | `}] } AccrSrceDocItemPlant` |
+| `CompanyCode` |  | |  | `}] } AccrSrceDocCompanyCode` |
+| `CndnContrAccrSource` |  | |  |  |
+| `BillingDocument` |  | |  | `}] } BillingDocument` |
+| `BillingDocumentItem` |  | |  | `}] } BillingDocumentItem` |
+| `_ConditionContract` | | ✓ | | |
+| `_CndnContrAccrRvslSts` | | ✓ | | |
+| `_PricingConditionType` | | ✓ | | |
+| `_ConditionCurrency` | | ✓ | | |
+| `_Plant` | | ✓ | | |
+| `_CompanyCode` | | ✓ | | |
+| `_ConditionApplication` | | ✓ | | |
+| `_CndnContrAccrSource` | | ✓ | | |
+| `_BillingDocument` | | ✓ | | |
+| `_BillingDocumentItem` | | ✓ | | |
+| `_CndnContrAccrSrceDocCat` | | ✓ | | |
 
 ## Associations
 

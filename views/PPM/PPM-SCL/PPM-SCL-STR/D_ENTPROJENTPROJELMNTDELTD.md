@@ -27,10 +27,10 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| `ProjectElementUUID` | `/s4ppm/tv_entity_guid` |
-| `ProjectElement` | `/s4ppm/tv_external_id` |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `ProjectElementUUID` |  | |  | `/s4ppm/tv_entity_guid` |
+| `ProjectElement` |  | |  | `/s4ppm/tv_external_id` |
 
 ## Source Code
 

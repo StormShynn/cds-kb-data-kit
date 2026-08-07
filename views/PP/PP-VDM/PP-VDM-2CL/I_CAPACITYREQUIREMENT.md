@@ -27,34 +27,34 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CapacityRequirement` | `kbko.bedid` |
-| `CapacityRequirementOrigin` | `cast(kbko.typkz as capacityrequirementorigin preserving type)` |
-| `PlannedOrder` | `kbko.plnum` |
-| `OrderID` | `afko.aufnr` |
-| `OrderInternalID` | `cast(kbko.aufpl as pph_aufpl preserving type)` |
-| `SalesOperationsPlanningOrder` | `kbko.safnr` |
-| `BillOfOperationsType` | `kbko.plnty` |
-| `BillOfOperationsGroup` | `kbko.plnnr` |
-| `BillOfOperations` | `kbko.plnal` |
-| `SchedulingType` | `cast(kbko.terkz as pph_termkz preserving type)` |
-| `ScheduledBasicStartDate` | `kbko.gstrs` |
-| `ScheduledBasicStartTime` | `kbko.gsuzs` |
-| `ScheduledBasicEndDate` | `kbko.gltrs` |
-| `ScheduledBasicEndTime` | `kbko.gluzs` |
-| `LastScheduledDate` | `kbko.trmdt` |
-| `BOOExplosionDate` | `kbko.plauf` |
-| `_CapacityRequirementOrigin` | *Association* |
-| `_PlannedOrder` | *Association* |
-| `_Order` | *Association* |
-| `_OrderInternalID` | *Association* |
-| `_SalesOperationsPlanningOrder` | *Association* |
-| `_BillOfOperationsType` | *Association* |
-| `_BillOfOperationsGroup` | *Association* |
-| `_BillOfOperations` | *Association* |
-| `_SchedulingType` | *Association* |
-| `_CapacityRequirementItem` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CapacityRequirement` | ✓ | |  | `bedid` |
+| `CapacityRequirementOrigin` |  | |  | `cast(kbko.typkz as capacityrequirementorigin preserving type)` |
+| `PlannedOrder` |  | |  | `plnum` |
+| `OrderID` |  | |  | `aufnr` |
+| `OrderInternalID` |  | |  | `cast(kbko.aufpl as pph_aufpl preserving type)` |
+| `SalesOperationsPlanningOrder` |  | |  | `safnr` |
+| `BillOfOperationsType` |  | |  | `plnty` |
+| `BillOfOperationsGroup` |  | |  | `plnnr` |
+| `BillOfOperations` |  | |  | `plnal` |
+| `SchedulingType` |  | |  | `cast(kbko.terkz as pph_termkz preserving type)` |
+| `ScheduledBasicStartDate` |  | |  | `gstrs` |
+| `ScheduledBasicStartTime` |  | |  | `gsuzs` |
+| `ScheduledBasicEndDate` |  | |  | `gltrs` |
+| `ScheduledBasicEndTime` |  | |  | `gluzs` |
+| `LastScheduledDate` |  | |  | `trmdt` |
+| `BOOExplosionDate` |  | |  | `plauf` |
+| `_CapacityRequirementOrigin` | | ✓ | | |
+| `_PlannedOrder` | | ✓ | | |
+| `_Order` | | ✓ | | |
+| `_OrderInternalID` | | ✓ | | |
+| `_SalesOperationsPlanningOrder` | | ✓ | | |
+| `_BillOfOperationsType` | | ✓ | | |
+| `_BillOfOperationsGroup` | | ✓ | | |
+| `_BillOfOperations` | | ✓ | | |
+| `_SchedulingType` | | ✓ | | |
+| `_CapacityRequirementItem` | | ✓ | | |
 
 ## Associations
 

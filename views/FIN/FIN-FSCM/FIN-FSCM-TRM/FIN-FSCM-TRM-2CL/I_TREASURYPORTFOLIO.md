@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Data Source |
-|---|---|
-| key `CompanyCode` | `bukrs` |
-| key `Portfolio` | `rportb` |
-| `_CompanyCode` | *Association* |
-| `_TreasuryPortfolioText` | *Association* |
+| Field | Key | Association | Via | Source |
+|---|---|---|---|---|
+| `CompanyCode` | ✓ | |  | `bukrs` |
+| `Portfolio` | ✓ | |  | `rportb` |
+| `_CompanyCode` | | ✓ | | |
+| `_TreasuryPortfolioText` | | ✓ | | |
 
 ## Associations
 
