@@ -30,25 +30,25 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RelationshipNumber` | ✓ | |  | `relnr` |  |  |
-| `BusinessPartnerCompany` | ✓ | |  | `partner1` |  |  |
-| `BusinessPartnerPerson` | ✓ | |  | `partner2` |  |  |
-| `ValidityEndDate` | ✓ | |  | `date_to` |  |  |
-| `ValidityStartDate` |  | | `_BPContact` | `ValidityStartDate` |  |  |
-| `ContactPersonFunction` |  | |  | `pafkt` |  |  |
-| `BPContactPersonFunction` |  | |  | `pafkt` |  |  |
-| `ContactPersonFunctionName` |  | |  | `fnctn` |  |  |
-| `ContactPersonDepartment` |  | |  | `abtnr` |  |  |
-| `ContactPersonDepartmentName` |  | |  | `dprtmnt` |  |  |
-| `ContactPersonAuthorityType` |  | |  | `paauth` |  |  |
-| `ContactPersonVIPType` |  | |  | `pavip` |  |  |
-| `ContactPersonRemarkText` |  | |  | `parem` |  |  |
-| `PhoneNumber` |  | |  | `tel_number` |  |  |
-| `PhoneNumberExtension` |  | |  | `tel_extens` |  |  |
-| `FaxNumber` |  | |  | `fax_number` |  |  |
-| `FaxNumberExtension` |  | |  | `fax_extens` |  |  |
-| `EmailAddress` |  | |  | `smtp_address` |  |  |
-| `RelationshipCategory` |  | |  | `reltyp` |  |  |
+| `RelationshipNumber` | ✓ | |  | `relnr` | `CHAR(12)` | BP Relationship Number |
+| `BusinessPartnerCompany` | ✓ | |  | `partner1` | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerPerson` | ✓ | |  | `partner2` | `CHAR(10)` | Business Partner Number |
+| `ValidityEndDate` | ✓ | |  | `date_to` | `DATS(8)` | Validity Date (Valid To) |
+| `ValidityStartDate` |  | | `_BPContact` | `ValidityStartDate` | `DATS(8)` | Validity Date (Valid From) |
+| `ContactPersonFunction` |  | |  | `pafkt` | `CHAR(4)` | Function of Partner |
+| `BPContactPersonFunction` |  | |  | `pafkt` | `CHAR(4)` | Function of Partner |
+| `ContactPersonFunctionName` |  | |  | `fnctn` | `CHAR(40)` | Function name of partner |
+| `ContactPersonDepartment` |  | |  | `abtnr` | `CHAR(4)` | Department |
+| `ContactPersonDepartmentName` |  | |  | `dprtmnt` | `CHAR(40)` | Department at business partner |
+| `ContactPersonAuthorityType` |  | |  | `paauth` | `CHAR(1)` | Partner's Authority |
+| `ContactPersonVIPType` |  | |  | `pavip` | `CHAR(1)` | VIP Partner |
+| `ContactPersonRemarkText` |  | |  | `parem` | `CHAR(40)` | Notes for Partner |
+| `PhoneNumber` |  | |  | `tel_number` | `CHAR(30)` | Telephone No.: Dialing Code and Number |
+| `PhoneNumberExtension` |  | |  | `tel_extens` | `CHAR(10)` | Telephone no.: Extension |
+| `FaxNumber` |  | |  | `fax_number` | `CHAR(30)` | Fax Number: Dialing Code and Number |
+| `FaxNumberExtension` |  | |  | `fax_extens` | `CHAR(10)` | Fax no.: Extension |
+| `EmailAddress` |  | |  | `smtp_address` | `CHAR(241)` | Email Address |
+| `RelationshipCategory` |  | |  | `reltyp` | `CHAR(6)` | Business Partner Relationship Category |
 | `_BusinessPartnerCompany` | | ✓ | | | | |
 | `_BusinessPartnerPerson` | | ✓ | | | | |
 | `_ContactPersonDepartment` | | ✓ | | | | |

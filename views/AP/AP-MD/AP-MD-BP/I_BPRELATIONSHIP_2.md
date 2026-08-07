@@ -30,21 +30,21 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RelationshipNumber` | ✓ | |  | `relnr` |  |  |
-| `BusinessPartner1` | ✓ | |  | `partner1` |  |  |
-| `BusinessPartner2` | ✓ | |  | `partner2` |  |  |
-| `ValidityEndDate` | ✓ | |  | `date_to` |  |  |
-| `ValidityStartDate` |  | |  | `date_from` |  |  |
-| `IsStandardRelationship` |  | |  | `xdfrel` |  |  |
-| `RelationshipCategory` |  | |  | `reltyp` |  |  |
-| `BPRelationshipType` |  | |  | `relkind` |  |  |
-| `BusPartRelshpIsRoleDefinition` |  | |  | `xrf` |  |  |
-| `CreatedByUser` |  | |  | `crusr` |  |  |
-| `CreationDate` |  | |  | `crdat` |  |  |
-| `CreationTime` |  | |  | `crtim` |  |  |
-| `LastChangedByUser` |  | |  | `chusr` |  |  |
-| `LastChangeDate` |  | |  | `chdat` |  |  |
-| `LastChangeTime` |  | |  | `chtim` |  |  |
+| `RelationshipNumber` | ✓ | |  | `relnr` | `CHAR(12)` | BP Relationship Number |
+| `BusinessPartner1` | ✓ | |  | `partner1` | `CHAR(10)` | Business Partner Number |
+| `BusinessPartner2` | ✓ | |  | `partner2` | `CHAR(10)` | Business Partner Number |
+| `ValidityEndDate` | ✓ | |  | `date_to` | `DATS(8)` | Validity Date (Valid To) |
+| `ValidityStartDate` |  | |  | `date_from` | `DATS(8)` | Validity Date (Valid From) |
+| `IsStandardRelationship` |  | |  | `xdfrel` | `CHAR(1)` | Standard Relationship |
+| `RelationshipCategory` |  | |  | `reltyp` | `CHAR(6)` | Business Partner Relationship Category |
+| `BPRelationshipType` |  | |  | `relkind` | `CHAR(4)` | Business partner relationship type |
+| `BusPartRelshpIsRoleDefinition` |  | |  | `xrf` | `CHAR(1)` | Business partner role definition instead of BP relationship |
+| `CreatedByUser` |  | |  | `crusr` | `CHAR(12)` | User who created the object |
+| `CreationDate` |  | |  | `crdat` | `DATS(8)` | Date on which the object was created |
+| `CreationTime` |  | |  | `crtim` | `TIMS(6)` | Time at which the object was created |
+| `LastChangedByUser` |  | |  | `chusr` | `CHAR(12)` | Last user to change object |
+| `LastChangeDate` |  | |  | `chdat` | `DATS(8)` | Date when object was last changed |
+| `LastChangeTime` |  | |  | `chtim` | `TIMS(6)` | Time at which object was last changed |
 | `_BusinessPartner1` | | ✓ | | | | |
 | `_BusinessPartner2` | | ✓ | | | | |
 

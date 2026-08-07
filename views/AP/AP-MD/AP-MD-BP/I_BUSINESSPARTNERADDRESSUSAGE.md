@@ -34,13 +34,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `ValidityEndDate` | ✓ | |  | `valid_to` |  |  |
-| `AddressUsage` | ✓ | |  | `adr_kind` |  |  |
-| `AddressNumber` | ✓ | |  | `addrnumber` |  |  |
-| `ValidityStartDate` |  | |  | `valid_from` |  |  |
-| `StandardUsage` |  | |  | `xdfadu` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `ValidityEndDate` | ✓ | |  | `valid_to` | `DEC(15)` | Validity End of a Business Partner Address Usage |
+| `AddressUsage` | ✓ | |  | `adr_kind` | `CHAR(10)` | Address Type |
+| `AddressNumber` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `ValidityStartDate` |  | |  | `valid_from` | `DEC(15)` | Validity Start of a Business Partner Address Usage |
+| `StandardUsage` |  | |  | `xdfadu` | `CHAR(1)` | Indicator: Standard Address Usage |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations

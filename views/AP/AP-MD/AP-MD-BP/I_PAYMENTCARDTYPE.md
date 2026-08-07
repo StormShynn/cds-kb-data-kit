@@ -31,16 +31,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentCardType` | ✓ | |  | `ccins` |  |  |
-| `PaymentCardNumber` | ✓ | |  | `ccnum` |  |  |
-| `ValidityDate` |  | |  | `datab` |  |  |
-| `ValidityEndDate` |  | |  | `datbi` |  |  |
-| `CardHolder` |  | |  | `ccname` |  |  |
-| `PaymentCardCategory` |  | |  | `cctyp` |  |  |
-| `CardIssuingBank` |  | |  | `issbank` |  |  |
-| `CardIssueDate` |  | |  | `ausgdat` |  |  |
-| `PaymentCardLock` |  | |  | `cclock` |  |  |
-| `MaskedCardNumber` |  | |  | `masked_id` |  |  |
+| `PaymentCardType` | ✓ | |  | `ccins` | `CHAR(4)` | Payment Card Type |
+| `PaymentCardNumber` | ✓ | |  | `ccnum` | `CHAR(25)` | Payment cards: Card number |
+| `ValidityDate` |  | |  | `datab` | `DATS(8)` | Payment cards: Valid from |
+| `ValidityEndDate` |  | |  | `datbi` | `DATS(8)` | Payment Cards: Valid To |
+| `CardHolder` |  | |  | `ccname` | `CHAR(40)` | Payment Cards: Name of Cardholder |
+| `PaymentCardCategory` |  | |  | `cctyp` | `CHAR(2)` | Payment cards: Card category |
+| `CardIssuingBank` |  | |  | `issbank` | `CHAR(40)` | Payment cards: Issuing bank |
+| `CardIssueDate` |  | |  | `ausgdat` | `DATS(8)` | Payment Cards: Date of Issue |
+| `PaymentCardLock` |  | |  | `cclock` | `CHAR(2)` | Payment Cards: Reason for Payment Card Lock |
+| `MaskedCardNumber` |  | |  | `masked_id` | `CHAR(25)` | Masked Payment Card Number ( Digital Payment ) |
 
 ## Source Code
 

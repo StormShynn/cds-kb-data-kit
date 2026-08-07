@@ -658,5 +658,265 @@
     "attemptedAt": "2026-08-07T15:56:52.516Z",
     "found": true,
     "matched": 3
+  },
+  "C_COSTCENTERSTATKEYFIGSEMTAG": {
+    "attemptedAt": "2026-08-07T16:04:19.953Z",
+    "found": true,
+    "matched": 37
+  },
+  "C_CREDITLOSSALLOWANCE": {
+    "attemptedAt": "2026-08-07T16:04:20.992Z",
+    "found": true,
+    "matched": 20
+  },
+  "C_CSHFLWINDRCTBSDONACCTTYPE": {
+    "attemptedAt": "2026-08-07T16:04:22.099Z",
+    "found": true,
+    "matched": 59
+  },
+  "I_BUSPARTSCRIPTEDORGADDRTP_2": {
+    "attemptedAt": "2026-08-07T16:04:22.403Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTSCRIPTEDORGADDRTP_2\" (404)"
+  },
+  "I_BUSPARTSCRIPTGROUPADDRTP_2": {
+    "attemptedAt": "2026-08-07T16:04:23.085Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTSCRIPTGROUPADDRTP_2\" (404)"
+  },
+  "I_BUSPARTSCRIPTPERSONADDRTP_2": {
+    "attemptedAt": "2026-08-07T16:04:23.747Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTSCRIPTPERSONADDRTP_2\" (404)"
+  },
+  "I_BUSPARTTAXTYPETEXT": {
+    "attemptedAt": "2026-08-07T16:04:24.977Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUSPARTTELEPHONENUMBERTP_3": {
+    "attemptedAt": "2026-08-07T16:04:25.243Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTTELEPHONENUMBERTP_3\" (404)"
+  },
+  "I_BUSPARTWEBSITETP_3": {
+    "attemptedAt": "2026-08-07T16:04:25.945Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTWEBSITETP_3\" (404)"
+  },
+  "I_BPADDRDEPDNTINTLLOCNUMBER": {
+    "attemptedAt": "2026-08-07T16:04:27.182Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_BPADDRESSINDEPENDENTEMAIL": {
+    "attemptedAt": "2026-08-07T16:04:27.986Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_BPADDRESSINDEPENDENTMOBILE": {
+    "attemptedAt": "2026-08-07T16:04:28.775Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_BPADDRESSINDEPENDENTPHONE": {
+    "attemptedAt": "2026-08-07T16:04:29.536Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_BPCONTACT": {
+    "attemptedAt": "2026-08-07T16:04:30.361Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_BPCONTACTTOADDRESS": {
+    "attemptedAt": "2026-08-07T16:04:31.160Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_BPCONTACTTOFUNCANDDEPT": {
+    "attemptedAt": "2026-08-07T16:04:31.988Z",
+    "found": true,
+    "matched": 19
+  },
+  "I_BPCURRENTDEFAULTADDRESS": {
+    "attemptedAt": "2026-08-07T16:04:32.940Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_BPDATACONTROLLER": {
+    "attemptedAt": "2026-08-07T16:04:33.733Z",
+    "found": true,
+    "matched": 8
+  },
+  "C_CUSTPROJBILLGELMNTMARGQ": {
+    "attemptedAt": "2026-08-07T16:05:42.616Z",
+    "found": true,
+    "matched": 105
+  },
+  "C_CUSTPROJMARGOVWQRY": {
+    "attemptedAt": "2026-08-07T16:05:43.914Z",
+    "found": true,
+    "matched": 105
+  },
+  "I_BPDIFFERENTIATIONTYPEVALUE": {
+    "attemptedAt": "2026-08-07T16:05:44.754Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BPGENDERVALUEHELP": {
+    "attemptedAt": "2026-08-07T16:05:45.553Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BPPROTECTEDADDRESS": {
+    "attemptedAt": "2026-08-07T16:05:46.370Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BPRELATIONSHIP_2": {
+    "attemptedAt": "2026-08-07T16:05:47.122Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_BUPAIDENTIFICATION": {
+    "attemptedAt": "2026-08-07T16:05:47.937Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_BUSINESSPARTNERADDRESSUSAGE": {
+    "attemptedAt": "2026-08-07T16:05:48.715Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_BUSINESSPARTNERINDUSTRY": {
+    "attemptedAt": "2026-08-07T16:05:49.588Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_BUSINESSPARTNERROLESTDVH": {
+    "attemptedAt": "2026-08-07T16:05:50.425Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_BUSINESSPARTNERSTANDARDUSAGE": {
+    "attemptedAt": "2026-08-07T16:05:51.203Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BUSINESSPARTNERTAXNUMBER": {
+    "attemptedAt": "2026-08-07T16:05:52.025Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_BUSINESSPARTNERTOBPROLE": {
+    "attemptedAt": "2026-08-07T16:05:52.895Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_BUSINESSPARTNERTOBPROLE_2": {
+    "attemptedAt": "2026-08-07T16:05:53.846Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_BUSINESSPARTNERVH": {
+    "attemptedAt": "2026-08-07T16:05:54.767Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_BUSPARTADDRESS": {
+    "attemptedAt": "2026-08-07T16:05:55.688Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_BUSPARTSTANDARDUSAGETEXT": {
+    "attemptedAt": "2026-08-07T16:05:56.511Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_CUSTSETTLMTDEX": {
+    "attemptedAt": "2026-08-07T16:07:34.132Z",
+    "found": true,
+    "matched": 178
+  },
+  "C_CUSTSETTLMTLISTDEX": {
+    "attemptedAt": "2026-08-07T16:07:35.173Z",
+    "found": true,
+    "matched": 80
+  },
+  "I_CONTACTPERSONDEPARTMENT": {
+    "attemptedAt": "2026-08-07T16:07:36.060Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CONTACTPERSONDEPARTMENTT": {
+    "attemptedAt": "2026-08-07T16:07:36.931Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CONTACTPERSONFUNCTION": {
+    "attemptedAt": "2026-08-07T16:07:37.727Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CONTACTPERSONFUNCTIONT": {
+    "attemptedAt": "2026-08-07T16:07:38.714Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PAYMENTCARD": {
+    "attemptedAt": "2026-08-07T16:07:39.540Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_PAYMENTCARDLOCK": {
+    "attemptedAt": "2026-08-07T16:07:40.556Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PAYMENTCARDTYPE": {
+    "attemptedAt": "2026-08-07T16:07:41.381Z",
+    "found": true,
+    "matched": 10
+  },
+  "ABP_BEHV_DRAFT_USER_ACCESS": {
+    "attemptedAt": "2026-08-07T16:07:41.675Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"ABP_BEHV_DRAFT_USER_ACCESS\" (404)"
+  },
+  "ABP_BEHV_PAR_SHARE": {
+    "attemptedAt": "2026-08-07T16:07:42.392Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"ABP_BEHV_PAR_SHARE\" (404)"
+  },
+  "I_SAPGUIICON": {
+    "attemptedAt": "2026-08-07T16:07:43.719Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SAPGUIICONTEXT": {
+    "attemptedAt": "2026-08-07T16:07:44.545Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_USERSUBSTITUTE": {
+    "attemptedAt": "2026-08-07T16:07:45.366Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_WORKFLOWAGENTRULE": {
+    "attemptedAt": "2026-08-07T16:07:46.189Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WORKFLOWAGENTRULETEXT": {
+    "attemptedAt": "2026-08-07T16:07:46.998Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_WORKFLOWEXTERNALSTATUS": {
+    "attemptedAt": "2026-08-07T16:07:47.822Z",
+    "found": true,
+    "matched": 1
   }
 }

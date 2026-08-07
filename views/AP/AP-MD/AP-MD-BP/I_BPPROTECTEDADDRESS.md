@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |  |  |
-| `AddressID` | ✓ | |  |  |  |  |
-| `BPAddressIsProtected` |  | |  | `case when BPProtectedAddrUsageCount > 0 then cast('E' as bu_protected) when BPProtectedAddrUsageCount = 0 then cast(' ' as bu_protected) end` |  |  |
+| `BusinessPartner` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `BPAddressIsProtected` |  | |  | `case when BPProtectedAddrUsageCount > 0 then cast('E' as bu_protected) when BPProtectedAddrUsageCount = 0 then cast(' ' as bu_protected) end` | `CHAR(1)` | BP: Sensitivity Indicator |
 | `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations

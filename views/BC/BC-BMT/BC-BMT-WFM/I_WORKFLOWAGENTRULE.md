@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` |  |  |
-| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` |  |  |
-| `WorkflowAgentRule` | ✓ | |  | `ruse_label` |  |  |
+| `WorkflowScenarioDefinition` | ✓ | |  | `wfd_id` | `CHAR(10)` | Number of workflow definition |
+| `WorkflowScenarioDefinitionVers` | ✓ | |  | `version` | `CHAR(4)` | Version |
+| `WorkflowAgentRule` | ✓ | |  | `ruse_label` | `CHAR(40)` | Workflow : Label |
 | `_WorkflowAgentRuleText` | | ✓ | | | | |
 
 ## Associations

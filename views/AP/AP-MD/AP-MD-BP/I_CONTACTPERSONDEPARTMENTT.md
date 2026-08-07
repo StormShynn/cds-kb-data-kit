@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContactPersonDepartment` | ✓ | |  | `abtnr` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ContactPersonDepartmentName` |  | |  | `bez20` |  |  |
+| `ContactPersonDepartment` | ✓ | |  | `abtnr` | `CHAR(4)` | Department |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ContactPersonDepartmentName` |  | |  | `bez20` | `CHAR(20)` | Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

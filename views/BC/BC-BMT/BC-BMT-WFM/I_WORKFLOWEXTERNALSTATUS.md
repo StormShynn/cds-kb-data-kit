@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowExternalStatus` | ✓ | |  | `WorkflowTaskStatus` |  |  |
+| `WorkflowExternalStatus` | ✓ | |  | `WorkflowTaskStatus` | `CHAR(10)` |  |
 | `_WorkflowExternalStatusText` | | ✓ | | | | |
 
 ## Associations

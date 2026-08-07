@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SAPGUIIconASCIICode` | ✓ | |  | `id` |  |  |
-| `SAPGUIIcon` |  | |  | `name` |  |  |
+| `SAPGUIIconASCIICode` | ✓ | |  | `id` | `CHAR(4)` | Icon in text fields (substitute display, alias) |
+| `SAPGUIIcon` |  | |  | `name` | `CHAR(30)` | Name of an Icon |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

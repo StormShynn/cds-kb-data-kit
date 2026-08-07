@@ -34,30 +34,30 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |  |  |
-| `FormOfAddress` |  | |  |  |  |  |
-| `FormOfAddressName` |  | | `_FormOfAddressText` | `FormOfAddressName` |  |  |
-| `BusinessPartnerName` |  | |  |  |  |  |
-| `BusinessPartnerCategory` |  | |  |  |  |  |
-| `BusinessPartnerIDByExtSystem` |  | |  |  |  |  |
-| `FirstName` |  | |  |  |  |  |
-| `LastName` |  | |  |  |  |  |
-| `OrganizationBPName1` |  | |  |  |  |  |
-| `GroupBusinessPartnerName1` |  | |  |  |  |  |
-| `BirthDate` |  | |  |  |  |  |
-| `AuthorizationGroup` |  | |  |  |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
-| `DataControllerSet` |  | |  |  |  |  |
-| `DataController1` |  | |  |  |  |  |
-| `DataController2` |  | |  |  |  |  |
-| `DataController3` |  | |  |  |  |  |
-| `DataController4` |  | |  |  |  |  |
-| `DataController5` |  | |  |  |  |  |
-| `DataController6` |  | |  |  |  |  |
-| `DataController7` |  | |  |  |  |  |
-| `DataController8` |  | |  |  |  |  |
-| `DataController9` |  | |  |  |  |  |
-| `DataController10` |  | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `FormOfAddress` |  | |  |  | `CHAR(4)` | Form-of-Address Key |
+| `FormOfAddressName` |  | | `_FormOfAddressText` | `FormOfAddressName` | `CHAR(30)` | Title text |
+| `BusinessPartnerName` |  | |  |  | `CHAR(81)` |  |
+| `BusinessPartnerCategory` |  | |  |  | `CHAR(1)` | Business Partner Category |
+| `BusinessPartnerIDByExtSystem` |  | |  |  | `CHAR(20)` | Business Partner Number in External System |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `OrganizationBPName1` |  | |  |  | `CHAR(40)` | Name 1 of organization |
+| `GroupBusinessPartnerName1` |  | |  |  | `CHAR(40)` | Name 1 (group) |
+| `BirthDate` |  | |  |  | `DATS(8)` | Date of Birth of Business Partner |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
 | `_FormOfAddressText` | | ✓ | | | | |
 
 ## Associations

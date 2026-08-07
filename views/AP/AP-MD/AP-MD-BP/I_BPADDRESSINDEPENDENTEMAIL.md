@@ -33,23 +33,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |  |  |
-| `AddressID` | ✓ | |  |  |  |  |
-| `Person` | ✓ | |  | `AddressPersonID` |  |  |
-| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |  |  |
-| `AddressIDForEdit` |  | |  | `AddressID` |  |  |
-| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` |  |  |
-| `IsDefaultEmailAddress` |  | |  | `EmailAddressIsCurrentDefault` |  |  |
-| `EmailAddress` |  | |  |  |  |  |
-| `SearchEmailAddress` |  | |  | `cast('' as ad_smtpad2)` |  |  |
-| `IsHomeEmailAddress` |  | |  | `cast('' as ad_flghome)` |  |  |
-| `CommNumberIsNotUsed` |  | |  | `cast('' as ad_flnouse)` |  |  |
-| `ValidityStartDateTime` |  | |  | `cast ( I_AddressEmailAddress_2.ValidityStartDate as ad_valfrom )` |  |  |
-| `ValidityEndDateTime` |  | |  | `cast ( I_AddressEmailAddress_2.ValidityEndDate as ad_valto )` |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
-| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` |  |  |
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `Person` | ✓ | |  | `AddressPersonID` | `CHAR(10)` | Person Number |
+| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` | `NUMC(3)` | Sequence Number |
+| `AddressIDForEdit` |  | |  | `AddressID` | `CHAR(10)` | Address Number |
+| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` | `NUMC(3)` | Sequence Number |
+| `IsDefaultEmailAddress` |  | |  | `EmailAddressIsCurrentDefault` | `CHAR(1)` | Indicator : Current Default Email Address |
+| `EmailAddress` |  | |  |  | `CHAR(241)` | Email Address |
+| `SearchEmailAddress` |  | |  | `cast('' as ad_smtpad2)` | `CHAR(20)` | E-Mail Address Search Field |
+| `IsHomeEmailAddress` |  | |  | `cast('' as ad_flghome)` | `CHAR(1)` | Recipient address in this communication type (mail sys.grp) |
+| `CommNumberIsNotUsed` |  | |  | `cast('' as ad_flnouse)` | `CHAR(1)` | Flag: This Communication Number is Not Used |
+| `ValidityStartDateTime` |  | |  | `cast ( I_AddressEmailAddress_2.ValidityStartDate as ad_valfrom )` | `CHAR(14)` | Communication Data: Valid From (YYYYMMDDHHMMSS) |
+| `ValidityEndDateTime` |  | |  | `cast ( I_AddressEmailAddress_2.ValidityEndDate as ad_valto )` | `CHAR(14)` | Communication Data: Valid To (YYYYMMDDHHMMSS) |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` | `CHAR(50)` | Communication link notes |
 | `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations

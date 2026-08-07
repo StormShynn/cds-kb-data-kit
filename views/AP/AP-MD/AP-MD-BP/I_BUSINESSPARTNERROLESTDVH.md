@@ -35,8 +35,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartnerRole` | ✓ | |  |  |  |  |
-| `RoleCategory` |  | |  |  |  |  |
+| `BusinessPartnerRole` | ✓ | |  |  | `CHAR(6)` | BP Role |
+| `RoleCategory` |  | |  |  | `CHAR(6)` | BP Role Category |
 | `_BusinessPartnerRoleText` | | ✓ | | | | |
 
 ## Source Code

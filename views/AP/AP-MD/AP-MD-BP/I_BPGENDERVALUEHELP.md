@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `GenderCodeName` | ✓ | |  | `gender` |  |  |
+| `GenderCodeName` | ✓ | |  | `gender` | `CHAR(1)` | Gender of Business Partner (Person) |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

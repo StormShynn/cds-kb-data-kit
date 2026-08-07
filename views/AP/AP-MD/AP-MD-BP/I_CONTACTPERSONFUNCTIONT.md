@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContactPersonFunction` | ✓ | |  | `pafkt` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ContactPersonFunctionName` |  | |  | `bez30` |  |  |
+| `ContactPersonFunction` | ✓ | |  | `pafkt` | `CHAR(4)` | Function of Partner |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ContactPersonFunctionName` |  | |  | `bez30` | `CHAR(30)` | Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

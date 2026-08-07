@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentCardLock` | ✓ | |  | `cclock` |  |  |
+| `PaymentCardLock` | ✓ | |  | `cclock` | `CHAR(2)` | Payment Cards: Reason for Payment Card Lock |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

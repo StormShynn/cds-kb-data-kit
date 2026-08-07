@@ -293,5 +293,40 @@
     "appliedAt": "2026-08-07T15:55:48.318Z",
     "fields": 25,
     "action": "updated"
+  },
+  "C_COSTCENTERSTATKEYFIGSEMTAG": {
+    "appliedAt": "2026-08-07T16:04:04.183Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_CREDITLOSSALLOWANCE": {
+    "appliedAt": "2026-08-07T16:04:04.429Z",
+    "fields": 20,
+    "action": "updated"
+  },
+  "C_CSHFLWINDRCTBSDONACCTTYPE": {
+    "appliedAt": "2026-08-07T16:04:04.666Z",
+    "fields": 59,
+    "action": "updated"
+  },
+  "C_CUSTPROJBILLGELMNTMARGQ": {
+    "appliedAt": "2026-08-07T16:05:25.888Z",
+    "fields": 105,
+    "action": "updated"
+  },
+  "C_CUSTPROJMARGOVWQRY": {
+    "appliedAt": "2026-08-07T16:05:26.119Z",
+    "fields": 105,
+    "action": "updated"
+  },
+  "C_CUSTSETTLMTDEX": {
+    "appliedAt": "2026-08-07T16:07:18.906Z",
+    "fields": 182,
+    "action": "updated"
+  },
+  "C_CUSTSETTLMTLISTDEX": {
+    "appliedAt": "2026-08-07T16:07:19.128Z",
+    "fields": 84,
+    "action": "updated"
   }
 }

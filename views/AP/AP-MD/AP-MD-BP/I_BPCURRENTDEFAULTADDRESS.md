@@ -31,12 +31,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `AddressID` |  | |  | `addrnumber` |  |  |
-| `ValidityStartDateTime` |  | |  | `addr_valid_from` |  |  |
-| `ValidityEndDateTime` |  | |  | `addr_valid_to` |  |  |
-| `BPAddressIsProtected` |  | | `_BPProtectedAddress` | `BPAddressIsProtected` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `AddressID` |  | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `ValidityStartDateTime` |  | |  | `addr_valid_from` | `DEC(15)` | Validity Start of a Business Partner Address |
+| `ValidityEndDateTime` |  | |  | `addr_valid_to` | `DEC(15)` | Validity End of a Business Partner Address |
+| `BPAddressIsProtected` |  | | `_BPProtectedAddress` | `BPAddressIsProtected` | `CHAR(1)` | BP: Sensitivity Indicator |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_Address` | | ✓ | | | | |
 | `_StandardAddress` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |

@@ -31,33 +31,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RelationshipNumber` | ✓ | |  | `relnr` |  |  |
-| `BusinessPartnerCompany` | ✓ | |  | `partner1` |  |  |
-| `BusinessPartnerPerson` | ✓ | |  | `partner2` |  |  |
-| `ValidityEndDate` | ✓ | |  | `date_to` |  |  |
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `PersonNumber` |  | |  | `persnumber` |  |  |
-| `IsDefaultAddress` |  | |  | `xdfadr` |  |  |
-| `AddressRepresentationCode` |  | |  | `_AddressDetails[1: nation = ' '].nation` |  |  |
-| `ContactRelationshipFunction` |  | |  | `_AddressDetails[1: nation = ' '].function` |  |  |
-| `ContactRelationshipDepartment` |  | |  | `_AddressDetails[1: nation = ' '].department` |  |  |
-| `Floor` |  | |  | `_AddressDetails[1: nation = ' '].floor` |  |  |
-| `Building` |  | |  | `_AddressDetails[1: nation = ' '].building` |  |  |
-| `RoomNumber` |  | |  | `_AddressDetails[1: nation = ' '].roomnumber` |  |  |
-| `PrfrdCommMediumType` |  | |  | `_AddressDetails[1: nation = ' '].deflt_comm` |  |  |
-| `CorrespondenceShortName` |  | |  | `_AddressDetails[1: nation = ' '].id_code` |  |  |
-| `InhouseMail` |  | |  | `_AddressDetails[1: nation = ' '].ih_mail` |  |  |
-| `InternationalPhoneNumber` |  | | `_Telephone_2` | `InternationalPhoneNumber` |  |  |
-| `PhoneNumberCountry` |  | | `_Telephone_2` | `PhoneNumberCountry` |  |  |
-| `PhoneNumber` |  | | `_Telephone_2` | `PhoneAreaCodeSubscriberNumber` |  |  |
-| `InternationalMobilePhoneNumber` |  | | `_MobilePhone_2` | `InternationalPhoneNumber` |  |  |
-| `MobilePhoneCountry` |  | | `_MobilePhone_2` | `PhoneNumberCountry` |  |  |
-| `MobilePhoneNumber` |  | | `_MobilePhone_2` | `PhoneAreaCodeSubscriberNumber` |  |  |
-| `MobilePhoneNumberExtension` |  | | `_MobilePhone_2` | `PhoneExtensionNumber` |  |  |
-| `InternationalFaxNumber` |  | | `_FaxNumber_2` | `InternationalFaxNumber` |  |  |
-| `FaxCountry` |  | | `_FaxNumber_2` | `FaxNumberCountry` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartnerPerson` | `AuthorizationGroup` |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_BusinessPartnerPerson` | `IsBusinessPurposeCompleted` |  |  |
+| `RelationshipNumber` | ✓ | |  | `relnr` | `CHAR(12)` | BP Relationship Number |
+| `BusinessPartnerCompany` | ✓ | |  | `partner1` | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerPerson` | ✓ | |  | `partner2` | `CHAR(10)` | Business Partner Number |
+| `ValidityEndDate` | ✓ | |  | `date_to` | `DATS(8)` | Validity Date (Valid To) |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `PersonNumber` |  | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `IsDefaultAddress` |  | |  | `xdfadr` | `CHAR(1)` | Indicator: Address is standard address |
+| `AddressRepresentationCode` |  | |  | `_AddressDetails[1: nation = ' '].nation` | `CHAR(1)` | Version ID for International Addresses |
+| `ContactRelationshipFunction` |  | |  | `_AddressDetails[1: nation = ' '].function` | `CHAR(40)` | Function |
+| `ContactRelationshipDepartment` |  | |  | `_AddressDetails[1: nation = ' '].department` | `CHAR(40)` | Department |
+| `Floor` |  | |  | `_AddressDetails[1: nation = ' '].floor` | `CHAR(10)` | Floor in Building |
+| `Building` |  | |  | `_AddressDetails[1: nation = ' '].building` | `CHAR(10)` | Building (number or code) |
+| `RoomNumber` |  | |  | `_AddressDetails[1: nation = ' '].roomnumber` | `CHAR(10)` | Room or Apartment Number |
+| `PrfrdCommMediumType` |  | |  | `_AddressDetails[1: nation = ' '].deflt_comm` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `CorrespondenceShortName` |  | |  | `_AddressDetails[1: nation = ' '].id_code` | `CHAR(10)` | Short name for correspondence |
+| `InhouseMail` |  | |  | `_AddressDetails[1: nation = ' '].ih_mail` | `CHAR(10)` | Internal Mail Postal Code |
+| `InternationalPhoneNumber` |  | | `_Telephone_2` | `InternationalPhoneNumber` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `PhoneNumberCountry` |  | | `_Telephone_2` | `PhoneNumberCountry` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `PhoneNumber` |  | | `_Telephone_2` | `PhoneAreaCodeSubscriberNumber` | `CHAR(30)` | Telephone No.: Dialing Code and Number |
+| `InternationalMobilePhoneNumber` |  | | `_MobilePhone_2` | `InternationalPhoneNumber` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `MobilePhoneCountry` |  | | `_MobilePhone_2` | `PhoneNumberCountry` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `MobilePhoneNumber` |  | | `_MobilePhone_2` | `PhoneAreaCodeSubscriberNumber` | `CHAR(30)` | Telephone No.: Dialing Code and Number |
+| `MobilePhoneNumberExtension` |  | | `_MobilePhone_2` | `PhoneExtensionNumber` | `CHAR(10)` | Telephone no.: Extension |
+| `InternationalFaxNumber` |  | | `_FaxNumber_2` | `InternationalFaxNumber` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `FaxCountry` |  | | `_FaxNumber_2` | `FaxNumberCountry` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `AuthorizationGroup` |  | | `_BusinessPartnerPerson` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | | `_BusinessPartnerPerson` | `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
 | `_BusinessPartnerCompany` | | ✓ | | | | |
 | `_BusinessPartnerPerson` | | ✓ | | | | |
 | `_AddressDetails` | | ✓ | | | | |

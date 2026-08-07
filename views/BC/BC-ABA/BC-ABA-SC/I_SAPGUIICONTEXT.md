@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `SAPGUIIconASCIICode` | ✓ | |  | `id` |  |  |
-| `SAPGUIIconName` |  | |  | `shorttext` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `SAPGUIIconASCIICode` | ✓ | |  | `id` | `CHAR(4)` | Icon in text fields (substitute display, alias) |
+| `SAPGUIIconName` |  | |  | `shorttext` | `CHAR(30)` | Description of an icon |
 | `_Language` | | ✓ | | | | |
 | `_SAPGUIIcon` | | ✓ | | | | |
 

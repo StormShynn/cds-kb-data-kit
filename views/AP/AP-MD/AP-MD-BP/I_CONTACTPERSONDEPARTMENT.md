@@ -30,7 +30,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContactPersonDepartment` | ✓ | |  | `abtnr` |  |  |
+| `ContactPersonDepartment` | ✓ | |  | `abtnr` | `CHAR(4)` | Department |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

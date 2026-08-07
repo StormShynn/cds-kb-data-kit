@@ -34,11 +34,11 @@ tags:
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
 | `mandt` |  | |  |  |  |  |
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `BusinessPartnerRole` | ✓ | |  | `rltyp` |  |  |
-| `ValidFrom` |  | |  | `valid_from` |  |  |
-| `ValidTo` |  | |  | `valid_to` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerRole` | ✓ | |  | `rltyp` | `CHAR(6)` | BP Role |
+| `ValidFrom` |  | |  | `valid_from` | `DEC(15)` | Validity Start of a BP Role |
+| `ValidTo` |  | |  | `valid_to` | `DEC(15)` | Validity End of a BP Role |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_BusinessPartnerRole` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |
 

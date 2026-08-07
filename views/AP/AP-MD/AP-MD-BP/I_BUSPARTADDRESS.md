@@ -32,16 +32,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressUUID` |  | |  | `address_guid` |  |  |
-| `ValidityStartDate` |  | |  | `addr_valid_from` |  |  |
-| `ValidityEndDate` |  | |  | `addr_valid_to` |  |  |
-| `AddressIDByExternalSystem` |  | |  | `adext` |  |  |
-| `BPTargetAddressID` |  | |  | `move_addr` |  |  |
-| `BPAddressMoveDateTime` |  | |  | `addr_move_date` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressUUID` |  | |  | `address_guid` | `RAW(16)` | GUID of a Business Partner Address |
+| `ValidityStartDate` |  | |  | `addr_valid_from` | `DEC(15)` | Validity Start of a Business Partner Address |
+| `ValidityEndDate` |  | |  | `addr_valid_to` | `DEC(15)` | Validity End of a Business Partner Address |
+| `AddressIDByExternalSystem` |  | |  | `adext` | `CHAR(20)` | Address number in external system |
+| `BPTargetAddressID` |  | |  | `move_addr` | `CHAR(10)` | Number of Move Target Address for Address Moves |
+| `BPAddressMoveDateTime` |  | |  | `addr_move_date` | `DEC(15)` | Date of Move for Address Moves |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | | `_BusinessPartner` | `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
 | `_Address` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_BPProtectedAddress` | | ✓ | | | | |

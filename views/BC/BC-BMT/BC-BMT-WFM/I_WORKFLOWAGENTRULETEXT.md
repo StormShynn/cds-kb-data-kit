@@ -33,11 +33,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowScenarioDefinition` | ✓ | | `_reuse` | `wfd_id` |  |  |
-| `WorkflowScenarioDefinitionVers` | ✓ | | `_reuse` | `version` |  |  |
-| `WorkflowAgentRule` | ✓ | | `_reuse` | `ruse_label` |  |  |
-| `Language` | ✓ | | `_text` | `language` |  |  |
-| `WorkflowAgentRuleText` |  | | `_text` | `text` |  |  |
+| `WorkflowScenarioDefinition` | ✓ | | `_reuse` | `wfd_id` | `CHAR(10)` | Number of workflow definition |
+| `WorkflowScenarioDefinitionVers` | ✓ | | `_reuse` | `version` | `CHAR(4)` | Version |
+| `WorkflowAgentRule` | ✓ | | `_reuse` | `ruse_label` | `CHAR(40)` | Workflow : Label |
+| `Language` | ✓ | | `_text` | `language` | `LANG(1)` | Language Key |
+| `WorkflowAgentRuleText` |  | | `_text` | `text` | `CHAR(255)` | Text, 255 Characters |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

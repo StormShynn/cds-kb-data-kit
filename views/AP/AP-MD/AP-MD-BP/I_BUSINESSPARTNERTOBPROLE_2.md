@@ -34,12 +34,12 @@ tags:
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
 | `mandt` |  | |  |  |  |  |
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `BusinessPartnerRole` | ✓ | |  | `rltyp` |  |  |
-| `BusinessPartnerDiffTypeValue` | ✓ | |  | `dfval` |  |  |
-| `ValidFrom` |  | |  | `valid_from` |  |  |
-| `ValidTo` |  | |  | `valid_to` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerRole` | ✓ | |  | `rltyp` | `CHAR(6)` | BP Role |
+| `BusinessPartnerDiffTypeValue` | ✓ | |  | `dfval` | `CHAR(20)` | BP: Differentiation type value |
+| `ValidFrom` |  | |  | `valid_from` | `DEC(15)` | Validity Start of a BP Role |
+| `ValidTo` |  | |  | `valid_to` | `DEC(15)` | Validity End of a BP Role |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_BusinessPartnerRole` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_BusinessPartnerDiffValue` | | ✓ | | | | |

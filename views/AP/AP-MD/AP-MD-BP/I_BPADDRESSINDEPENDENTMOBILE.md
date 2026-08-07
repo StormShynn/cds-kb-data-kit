@@ -31,26 +31,26 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` |  |  |
-| `AddressID` | ✓ | |  |  |  |  |
-| `Person` | ✓ | |  | `AddressPersonID` |  |  |
-| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` |  |  |
-| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` |  |  |
-| `AddressIDForEdit` |  | |  | `AddressID` |  |  |
-| `MobilePhoneCountry` |  | |  | `PhoneNumberCountry` |  |  |
-| `CommNumberIsNotUsed` |  | |  | `cast ( '' as ad_flnouse )` |  |  |
-| `MobilePhoneNumber` |  | |  | `PhoneAreaCodeSubscriberNumber` |  |  |
-| `PhoneNumberExtension` |  | |  | `PhoneExtensionNumber` |  |  |
-| `CompleteTelephoneNumber` |  | |  | `InternationalPhoneNumber` |  |  |
-| `IsDefaultPhoneNumber` |  | |  | `case when PhoneNumberType = '3' then cast('X' as boole_d) else cast(' ' as boole_d) end` |  |  |
-| `PhoneIsSMSEnabled` |  | |  | `cast ('' as ad_flgsms)` |  |  |
-| `PhoneNumberType` |  | |  |  |  |  |
-| `ValidityStartDateTime` |  | |  | `cast ( BPAddressIndependentMobile.ValidityStartDate as ad_valfrom )` |  |  |
-| `ValidityEndDateTime` |  | |  | `cast ( BPAddressIndependentMobile.ValidityEndDate as ad_valto )` |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
-| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` |  |  |
+| `BusinessPartner` | ✓ | | `_BusinessPartner` | `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `Person` | ✓ | |  | `AddressPersonID` | `CHAR(10)` | Person Number |
+| `OrdinalNumber` | ✓ | |  | `CommMediumSequenceNumber` | `NUMC(3)` | Sequence Number |
+| `OrdinalNumberForEdit` |  | |  | `CommMediumSequenceNumber` | `NUMC(3)` | Sequence Number |
+| `AddressIDForEdit` |  | |  | `AddressID` | `CHAR(10)` | Address Number |
+| `MobilePhoneCountry` |  | |  | `PhoneNumberCountry` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `CommNumberIsNotUsed` |  | |  | `cast ( '' as ad_flnouse )` | `CHAR(1)` | Flag: This Communication Number is Not Used |
+| `MobilePhoneNumber` |  | |  | `PhoneAreaCodeSubscriberNumber` | `CHAR(30)` | Telephone No.: Dialing Code and Number |
+| `PhoneNumberExtension` |  | |  | `PhoneExtensionNumber` | `CHAR(10)` | Telephone no.: Extension |
+| `CompleteTelephoneNumber` |  | |  | `InternationalPhoneNumber` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `IsDefaultPhoneNumber` |  | |  | `case when PhoneNumberType = '3' then cast('X' as boole_d) else cast(' ' as boole_d) end` | `CHAR(1)` | Data element for domain BOOLE: TRUE (='X') and FALSE (=' ') |
+| `PhoneIsSMSEnabled` |  | |  | `cast ('' as ad_flgsms)` | `CHAR(1)` | Indicator: Telephone is SMS-Enabled |
+| `PhoneNumberType` |  | |  |  | `CHAR(1)` | Phone Number Type |
+| `ValidityStartDateTime` |  | |  | `cast ( BPAddressIndependentMobile.ValidityStartDate as ad_valfrom )` | `CHAR(14)` | Communication Data: Valid From (YYYYMMDDHHMMSS) |
+| `ValidityEndDateTime` |  | |  | `cast ( BPAddressIndependentMobile.ValidityEndDate as ad_valto )` | `CHAR(14)` | Communication Data: Valid To (YYYYMMDDHHMMSS) |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` |  |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| `AddressCommunicationRemarkText` |  | | `_AddressCommunicationRemark` | `CommunicationRemarkText` | `CHAR(50)` | Communication link notes |
 | `_BusinessPartner` | | ✓ | | | | |
 
 ## Associations

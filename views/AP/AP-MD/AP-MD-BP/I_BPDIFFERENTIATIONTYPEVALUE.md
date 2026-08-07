@@ -30,7 +30,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartnerDiffTypeValue` | ✓ | |  | `dfval` |  |  |
+| `BusinessPartnerDiffTypeValue` | ✓ | |  | `dfval` | `CHAR(20)` | BP: Differentiation type value |
 
 ## Source Code
 

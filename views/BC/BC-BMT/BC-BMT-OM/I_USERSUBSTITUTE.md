@@ -30,12 +30,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserID` | ✓ | |  | `us_name` |  |  |
-| `UserSubstituteIdentifier` | ✓ | |  | `rep_name` |  |  |
-| `ValidityStartDate` | ✓ | |  | `begda` |  |  |
-| `ValidityEndDate` |  | |  | `endda` |  |  |
-| `UserSubstitutionIsActive` |  | |  | `active` |  |  |
-| `SubstituteProfile` |  | |  | `reppr` |  |  |
+| `UserID` | ✓ | |  | `us_name` | `CHAR(12)` | User Name in User Master Record |
+| `UserSubstituteIdentifier` | ✓ | |  | `rep_name` | `CHAR(12)` | User Name in User Master Record |
+| `ValidityStartDate` | ✓ | |  | `begda` | `DATS(8)` | Start Date |
+| `ValidityEndDate` |  | |  | `endda` | `DATS(8)` | End Date |
+| `UserSubstitutionIsActive` |  | |  | `active` | `CHAR(1)` | Indicator: Substitution Active |
+| `SubstituteProfile` |  | |  | `reppr` | `CHAR(12)` | Substitute Profile |
 | `_BusinessUser` | | ✓ | | | | |
 | `_BusinessUserSubstitute` | | ✓ | | | | |
 

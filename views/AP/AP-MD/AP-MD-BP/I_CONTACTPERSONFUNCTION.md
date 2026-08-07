@@ -30,7 +30,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContactPersonFunction` | ✓ | |  | `pafkt` |  |  |
+| `ContactPersonFunction` | ✓ | |  | `pafkt` | `CHAR(4)` | Function of Partner |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

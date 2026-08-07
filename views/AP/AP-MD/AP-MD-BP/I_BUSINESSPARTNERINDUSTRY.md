@@ -33,11 +33,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IndustrySector` | ✓ | |  | `ind_sector` |  |  |
-| `IndustrySystemType` | ✓ | |  | `istype` |  |  |
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `IsStandardIndustry` |  | |  | `isdef` |  |  |
-| `IndustryKeyDescription` |  | | `_Text` | `IndustryKeyDescription` |  |  |
+| `IndustrySector` | ✓ | |  | `ind_sector` | `CHAR(10)` | Industry |
+| `IndustrySystemType` | ✓ | |  | `istype` | `CHAR(4)` | Industry System |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `IsStandardIndustry` |  | |  | `isdef` | `CHAR(1)` | Industry is Standard for BP in Industry System |
+| `IndustryKeyDescription` |  | | `_Text` | `IndustryKeyDescription` | `CHAR(100)` | Description |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 | `_BusPartIndustrySystem` | | ✓ | | | | |

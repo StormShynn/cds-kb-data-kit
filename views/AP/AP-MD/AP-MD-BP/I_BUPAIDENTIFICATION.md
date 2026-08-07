@@ -30,16 +30,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `BPIdentificationType` | ✓ | |  | `type` |  |  |
-| `BPIdentificationNumber` | ✓ | |  | `idnumber` |  |  |
-| `BPIdnNmbrIssuingInstitute` |  | |  | `institute` |  |  |
-| `BPIdentificationEntryDate` |  | |  | `entry_date` |  |  |
-| `Country` |  | |  | `country` |  |  |
-| `Region` |  | |  | `region` |  |  |
-| `ValidityStartDate` |  | |  | `valid_date_from` |  |  |
-| `ValidityEndDate` |  | |  | `valid_date_to` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `BPIdentificationType` | ✓ | |  | `type` | `CHAR(6)` | Identification Type |
+| `BPIdentificationNumber` | ✓ | |  | `idnumber` | `CHAR(60)` | Identification Number |
+| `BPIdnNmbrIssuingInstitute` |  | |  | `institute` | `CHAR(40)` | Responsible Institution for ID Number |
+| `BPIdentificationEntryDate` |  | |  | `entry_date` | `DATS(8)` | Date of Entry for ID Number |
+| `Country` |  | |  | `country` | `CHAR(3)` | Country/Region in Which ID Number is Valid or Was Assigned |
+| `Region` |  | |  | `region` | `CHAR(3)` | Region (State, Province, County) |
+| `ValidityStartDate` |  | |  | `valid_date_from` | `DATS(8)` | Validity Start for ID Number |
+| `ValidityEndDate` |  | |  | `valid_date_to` | `DATS(8)` | Validity End for ID Number |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_BuPaIdentificationType` | | ✓ | | | | |
 

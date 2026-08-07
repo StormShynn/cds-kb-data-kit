@@ -5,9 +5,20 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTSETTLMTLISTDEX')/$value
 semantic_en: Customer Settlement List Extraction
+semantic_vi: Customer Settlement List Extraction — CDS view tiêu dùng dựa trên R_CustSettlmtListDEX.
+keywords:
+  - customer
+  - settlement
+  - list
+  - extraction
+  - cust
+  - settlmt
+  - item
+  - type
+  - process
 tags:
   - LO
   - bo:businesspartner
@@ -16,7 +27,6 @@ tags:
   - customer
   - LO-AB
   - lob:logistics general
-  - metadata-only
 ---
 # C_CUSTSETTLMTLISTDEX
 
@@ -28,14 +38,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTSETTLMTLISTDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTSETTLMTLISTDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CustSettlmtList` |  | |  |  | `CHAR(10)` | Settlement Document: Customer Settlement List |
-| `CustSettlmtListItem` |  | |  |  | `NUMC(6)` | Item in List |
+| `CustSettlmtList` | ✓ | |  |  | `CHAR(10)` | Settlement Document: Customer Settlement List |
+| `CustSettlmtListItem` | ✓ | |  |  | `NUMC(6)` | Item in List |
 | `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
 | `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
 | `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
@@ -114,3 +124,174 @@ tags:
 | `SettlmtRemunerationTaxAmt` |  | |  |  | `CURR(13)` | Tax of Settlement Document List Conditions |
 | `CustSettlmtListItemIsReversed` |  | |  |  | `CHAR(1)` | List Item is Reversed |
 | `PrcDetnIsIncmplt` |  | |  |  | `CHAR(1)` | Indicator that Pricing Determination for Item is Incomplete |
+| `_BillToParty` |  | |  |  |  |  |
+| `_BillToPartyCompany` |  | |  |  |  |  |
+| `_PayerParty` |  | |  |  |  |  |
+| `_PayerPartyCompany` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTSETTLMTLISTDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CUSTSETTLMTLISTDEX')/$value)*
+
+```abap
+@EndUserText.label: 'Customer Settlement List Extraction'
+@AccessControl: {
+    authorizationCheck:      #MANDATORY,
+    personalData.blocking:   #('TRANSACTIONAL_DATA')
+    }
+@ObjectModel: {
+    compositionRoot: true,
+    modelingPattern:#ANALYTICAL_FACT,
+    supportedCapabilities: [#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE],
+    usageType: {
+        dataClass:      #MIXED,
+        serviceQuality: #D,
+        sizeCategory:   #XXL
+        },
+    sapObjectNodeType.name: 'CustomerSettlementList'
+    }
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta: {
+            changeDataCapture: {
+                mapping:[
+                    {
+                        table: 'wbrl', role: #MAIN,
+                        viewElement: ['CustSettlmtList', 'CustSettlmtListItem'],
+                        tableElement: ['wbeln', 'posnr']
+                    },
+                    {
+                        table: 'wbrk', role: #LEFT_OUTER_TO_ONE_JOIN,
+                        viewElement: ['CustSettlmtList'],
+                        tableElement: ['wbeln']
+                    }
+                    ]
+                }
+            }
+        }
+    }
+@VDM.viewType: #CONSUMPTION
+@Metadata: {
+    ignorePropagatedAnnotations: true,
+    allowExtensions:false
+    }
+
+define view entity C_CustSettlmtListDEX
+  as select from R_CustSettlmtListDEX as CustSettlmtListDEX
+{
+  key CustSettlmtList,
+  key CustSettlmtListItem,
+
+      CustSettlmtListDEX.SettlmtDocType          as SettlmtDocType,
+      CustSettlmtListDEX.SettlmtDocCat,
+      CustSettlmtListDEX.SettlmtProcessType,
+      CustSettlmtListDEX.LogisticsDataEntryCat,
+      CustSettlmtListDEX.PostingDate,
+      CustSettlmtListDEX.CustSettlmtListAcctgTransfSts,
+      CustSettlmtListDEX.DocumentDate,
+      CustSettlmtListDEX.DocumentReferenceID,
+      CustSettlmtListDEX.AssignmentReference,
+      CustSettlmtListDEX.SettlmtApplSts,
+      CustSettlmtListDEX.SettlmtApplStsGrp,
+      CustSettlmtListDEX.PricingProcedure,
+      CustSettlmtListDEX.BillToParty,
+      CustSettlmtListDEX.PayerParty,
+      CustSettlmtListDEX.InvoicingParty,
+      CustSettlmtListDEX.PayeeParty,
+      CustSettlmtListDEX.SalesOrganization,
+      CustSettlmtListDEX.DistributionChannel,
+      CustSettlmtListDEX.Division,
+      CustSettlmtListDEX.CompanyCode             as CompanyCode,
+      CustSettlmtListDEX.CreatedByUser,
+      CustSettlmtListDEX.CreationDate,
+      CustSettlmtListDEX.CreationTime,
+      CustSettlmtListDEX.LastChangeDate          as LastChangeDate,
+      CustSettlmtListDEX.CustSettlmtListCurrency as CustSettlmtListCurrency,
+      CustSettlmtListDEX.ExchangeRate,
+      CustSettlmtListDEX.ExchangeRateType,
+      CustSettlmtListDEX.ExchangeRateIsFixed,
+      CustSettlmtListDEX.ExchangeRateDate,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.CustSettlmtListTotGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.CustSettlmtListTotalNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.CustSettlmtListTotalTaxAmount,
+      CustSettlmtListDEX.PaymentTerms,
+      CustSettlmtListDEX.CashDiscount1Days,
+      CustSettlmtListDEX.CashDiscount2Days,
+      CustSettlmtListDEX.NetPaymentDays,
+      CustSettlmtListDEX.CashDiscount1Percent,
+      CustSettlmtListDEX.CashDiscount2Percent,
+      CustSettlmtListDEX.PaymentMethod,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.CustTotEligibleAmtForCshDisc,
+      CustSettlmtListDEX.CustSettlmtListIsReversed,
+      CustSettlmtListDEX.RvsdCustSettlmtList,
+      CustSettlmtListDEX.AdditionalValueDays,
+      CustSettlmtListDEX.FixedValueDate,
+      CustSettlmtListDEX.TaxDepartureCountry,
+      CustSettlmtListDEX.TaxDestinationCountry,
+      CustSettlmtListDEX.IsEUTriangularDeal,
+      CustSettlmtListDEX.SettlmtCoCodeTaxCountry,
+      CustSettlmtListDEX.VATRegistration,
+      CustSettlmtListDEX.StateCentralBankPaymentReason,
+      CustSettlmtListDEX.CreditControlArea,
+      CustSettlmtListDEX.CustSettlmtListActivityReason,
+      CustSettlmtListDEX.PaymentReference,
+      CustSettlmtListDEX.CustSettlmtListPaytCurrency,
+      CustSettlmtListDEX.CustSetlLstPaytCrcyExchRate,
+      CustSettlmtListDEX.OneTimeCustomerAddressID,
+      CustSettlmtListDEX.IntrastatDeclnGdsFlwCat,
+      CustSettlmtListDEX.DocIntrastatRelevance,
+      CustSettlmtListDEX.IncotermsVersion,
+      CustSettlmtListDEX.IncotermsClassification,
+      CustSettlmtListDEX.IncotermsTransferLocation,
+      CustSettlmtListDEX.IncotermsLocation1,
+      CustSettlmtListDEX.IncotermsLocation2,
+      CustSettlmtListDEX.SettlmtBusProcVar,
+      CustSettlmtListDEX.SettlmtBusProcCat,
+      CustSettlmtListDEX.SEPAMandate,
+      CustSettlmtListDEX.SupplyingCountry,
+      CustSettlmtListDEX.FiscalPeriod,
+      CustSettlmtListDEX.SettlmtDate,
+      CustSettlmtListDEX.CustSettlmtListIncmpltnsRsn,
+
+      /* Item */
+      CustSettlmtListDEX.RefSettlmtDoc,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.CustSettlmtListItemNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.CustSettlmtListItemTaxAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.NonDeductibleInputTaxAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.SettlmtRemunerationNetAmt,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CustSettlmtListCurrency'
+      CustSettlmtListDEX.SettlmtRemunerationTaxAmt,
+      CustSettlmtListDEX.CustSettlmtListItemIsReversed,
+      CustSettlmtListDEX.PrcDetnIsIncmplt,
+
+      /* Associations */
+      @Consumption.hidden: true
+      CustSettlmtListDEX._BillToParty            as _BillToParty,
+      @Consumption.hidden: true
+      CustSettlmtListDEX._BillToPartyCompany     as _BillToPartyCompany,
+      @Consumption.hidden: true
+      CustSettlmtListDEX._PayerParty             as _PayerParty,
+      @Consumption.hidden: true
+      CustSettlmtListDEX._PayerPartyCompany      as _PayerPartyCompany
+
+}
+```

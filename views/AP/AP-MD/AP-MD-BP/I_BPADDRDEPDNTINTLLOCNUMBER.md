@@ -30,12 +30,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  | `partner` |  |  |
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `InternationalLocationNumber1` |  | |  | `location_1` |  |  |
-| `InternationalLocationNumber2` |  | |  | `location_2` |  |  |
-| `InternationalLocationNumber3` |  | |  | `location_3` |  |  |
-| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` |  |  |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `InternationalLocationNumber1` |  | |  | `location_1` | `NUMC(7)` | International location number  (part 1) |
+| `InternationalLocationNumber2` |  | |  | `location_2` | `NUMC(5)` | International location number (Part 2) |
+| `InternationalLocationNumber3` |  | |  | `location_3` | `NUMC(1)` | Check digit for the international location number |
+| `AuthorizationGroup` |  | | `_BusinessPartner` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_AddressDefaultRepresentation` | | ✓ | | | | |
 

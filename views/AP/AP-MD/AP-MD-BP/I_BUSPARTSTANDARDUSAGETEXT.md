@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `BusinessPartnerStandardUsage` | ✓ | |  | `domvalue_l` |  |  |
-| `BusPartStandardUsageText` |  | |  | `ddtext` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `BusinessPartnerStandardUsage` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `BusPartStandardUsageText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 
