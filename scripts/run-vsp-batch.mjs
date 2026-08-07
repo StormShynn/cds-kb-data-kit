@@ -84,8 +84,13 @@ function run(cmd, args, opts = {}) {
   return result.status === 0;
 }
 
+// maxBuffer defaults to 1MB in spawnSync, which silently truncates stdout
+// once exceeded rather than erroring — index/search_index.json and
+// index/view-fields.js both run well past that (10-15MB), so a plain
+// `git show :2:<file>` capture came back as truncated, invalid JSON that
+// then failed to parse two steps later during the post-merge rebuild.
 function runCapture(cmd, args, opts = {}) {
-  return spawnSync(cmd, args, { encoding: 'utf-8', ...opts });
+  return spawnSync(cmd, args, { encoding: 'utf-8', maxBuffer: 200 * 1024 * 1024, ...opts });
 }
 
 async function selectCandidates(count, modulePrefixes) {
