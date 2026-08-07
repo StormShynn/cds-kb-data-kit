@@ -12934,5 +12934,27 @@
     "tags": 8,
     "error": null,
     "sourceUrl": null
+  },
+  {
+    "viewName": "C_APDAYSPAYOUTST",
+    "action": "updated",
+    "timestamp": "2026-08-07T16:15:36.497Z",
+    "source": "vsp",
+    "fields": 15,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": null
+  },
+  {
+    "viewName": "C_APFLEXIBLEAGING",
+    "action": "updated",
+    "timestamp": "2026-08-07T16:15:36.762Z",
+    "source": "vsp",
+    "fields": 21,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": null
   }
 ]

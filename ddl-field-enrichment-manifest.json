@@ -270,12 +270,12 @@
     "matched": 6
   },
   "C_APDAYSPAYOUTST": {
-    "attemptedAt": "2026-08-07T15:36:18.993Z",
+    "attemptedAt": "2026-08-07T16:15:51.712Z",
     "found": true,
     "matched": 15
   },
   "C_APFLEXIBLEAGING": {
-    "attemptedAt": "2026-08-07T15:36:20.028Z",
+    "attemptedAt": "2026-08-07T16:15:52.729Z",
     "found": true,
     "matched": 21
   },
@@ -993,5 +993,80 @@
     "attemptedAt": "2026-08-07T16:12:12.999Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"D_CPWF_CONTEXT_PARAMETER\" (404)"
+  },
+  "D_CPWF_START_PARAMETER": {
+    "attemptedAt": "2026-08-07T16:15:53.036Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CPWF_START_PARAMETER\" (404)"
+  },
+  "I_CPWF_INST": {
+    "attemptedAt": "2026-08-07T16:15:53.765Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CPWF_INST\" (404)"
+  },
+  "I_ABAPTRANSPORTREQUESTTEXT": {
+    "attemptedAt": "2026-08-07T16:15:55.068Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CUSTABAPOBJDIRECTORYENTRY": {
+    "attemptedAt": "2026-08-07T16:15:55.907Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_CUSTABAPPACKAGE": {
+    "attemptedAt": "2026-08-07T16:15:56.704Z",
+    "found": true,
+    "matched": 8
+  },
+  "D_SELECTCUSTOMIZINGTRANSPTREQP": {
+    "attemptedAt": "2026-08-07T16:15:57.111Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SELECTCUSTOMIZINGTRANSPTREQP\" (404)"
+  },
+  "I_CSTMBIZCONFIGNLASTCHGD": {
+    "attemptedAt": "2026-08-07T16:15:58.031Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CSTMBIZCONFIGNLASTCHGD\" (404)"
+  },
+  "I_LANGUAGE": {
+    "attemptedAt": "2026-08-07T16:15:59.365Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_LANGUAGETEXT": {
+    "attemptedAt": "2026-08-07T16:16:00.176Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LANGUAGEVH": {
+    "attemptedAt": "2026-08-07T16:16:01.109Z",
+    "found": true,
+    "matched": 2
+  },
+  "SYCM_APS_ATC_FINDINGS": {
+    "attemptedAt": "2026-08-07T16:16:01.404Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SYCM_APS_ATC_FINDINGS\" (404)"
+  },
+  "SYCM_APS_PROJECT": {
+    "attemptedAt": "2026-08-07T16:16:02.337Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SYCM_APS_PROJECT\" (404)"
+  },
+  "SYCM_APS_SCOPE_BY_EP_ITEM": {
+    "attemptedAt": "2026-08-07T16:16:03.034Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SYCM_APS_SCOPE_BY_EP_ITEM\" (404)"
+  },
+  "DDCDS_CUSTOMER_DOMAIN_VALUE": {
+    "attemptedAt": "2026-08-07T16:16:03.863Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_CUSTOMER_DOMAIN_VALUE\" (404)"
+  },
+  "DDCDS_CUSTOMER_DOMAIN_VALUE_T": {
+    "attemptedAt": "2026-08-07T16:16:04.781Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_CUSTOMER_DOMAIN_VALUE_T\" (404)"
   }
 }

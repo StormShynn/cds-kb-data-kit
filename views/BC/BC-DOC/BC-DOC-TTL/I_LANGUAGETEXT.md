@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `LanguageCode` | ✓ | |  | `sprsl` |  |  |
-| `LanguageName` |  | |  | `sptxt` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `LanguageCode` | ✓ | |  | `sprsl` | `LANG(1)` | Language Key |
+| `LanguageName` |  | |  | `sptxt` | `CHAR(16)` | Name of Language |
 | `_Language` | | ✓ | | | | |
 | `_LanguageCode` | | ✓ | | | | |
 

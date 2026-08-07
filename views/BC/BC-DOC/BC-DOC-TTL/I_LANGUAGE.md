@@ -31,8 +31,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `LanguageISOCode` |  | |  | `laiso` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `LanguageISOCode` |  | |  | `laiso` | `CHAR(2)` | 2-Character SAP Language Code |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

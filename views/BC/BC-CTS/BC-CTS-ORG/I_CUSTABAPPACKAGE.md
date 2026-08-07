@@ -30,14 +30,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ABAPPackage` | ✓ | |  |  |  |  |
-| `ABAPPackageResponsibleUser` |  | |  |  |  |  |
-| `ABAPSoftwareComponent` |  | |  |  |  |  |
-| `ABAPNamespace` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
+| `ABAPPackage` | ✓ | |  |  | `CHAR(30)` | Package |
+| `ABAPPackageResponsibleUser` |  | |  |  | `CHAR(12)` | Person responsible for a package |
+| `ABAPSoftwareComponent` |  | |  |  | `CHAR(30)` | Software Component |
+| `ABAPNamespace` |  | |  |  | `CHAR(10)` | Namespace |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Author |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last changed by |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Changed On |
 
 ## Source Code
 

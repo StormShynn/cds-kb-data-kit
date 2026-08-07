@@ -32,8 +32,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  |  |  |  |
-| `LanguageISOCode` |  | |  |  |  |  |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `LanguageISOCode` |  | |  |  | `CHAR(2)` | 2-Character SAP Language Code |
 
 ## Source Code
 

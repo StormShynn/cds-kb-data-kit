@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TransportRequestID` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `TransportRequestDescription` |  | |  | `cast( substring( RelevantText, 2, 60 ) as as4text preserving type )` |  |  |
+| `TransportRequestID` | ✓ | |  |  | `CHAR(20)` | Request/Task |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `TransportRequestDescription` |  | |  | `cast( substring( RelevantText, 2, 60 ) as as4text preserving type )` | `CHAR(60)` | Short Description of Repository Objects |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

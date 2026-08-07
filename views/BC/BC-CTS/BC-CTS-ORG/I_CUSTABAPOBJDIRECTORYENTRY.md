@@ -30,13 +30,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ABAPObjectCategory` | ✓ | |  |  |  |  |
-| `ABAPObjectType` | ✓ | |  |  |  |  |
-| `ABAPObject` | ✓ | |  |  |  |  |
-| `ABAPObjectResponsibleUser` |  | |  |  |  |  |
-| `ABAPObjectIsDeleted` |  | |  |  |  |  |
-| `ABAPPackage` |  | |  |  |  |  |
-| `ABAPSoftwareComponent` |  | |  |  |  |  |
+| `ABAPObjectCategory` | ✓ | |  |  | `CHAR(4)` | Program ID in Requests and Tasks |
+| `ABAPObjectType` | ✓ | |  |  | `CHAR(4)` | Object Type in Object Directory |
+| `ABAPObject` | ✓ | |  |  | `CHAR(40)` | Object Name in Object Directory |
+| `ABAPObjectResponsibleUser` |  | |  |  | `CHAR(12)` | Person Responsible for a Repository Object |
+| `ABAPObjectIsDeleted` |  | |  |  | `CHAR(1)` | Deletion Flag |
+| `ABAPPackage` |  | |  |  | `CHAR(30)` | Package |
+| `ABAPSoftwareComponent` |  | |  |  | `CHAR(30)` | Software Component |
 | `_CustABAPPackage` | | ✓ | | | | |
 
 ## Associations
