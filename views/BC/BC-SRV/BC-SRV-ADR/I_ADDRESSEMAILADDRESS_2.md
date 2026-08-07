@@ -33,14 +33,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
-| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |  |  |
-| `EmailAddress` |  | |  | `smtp_addr` |  |  |
-| `EmailAddressIsCurrentDefault` |  | |  | `cast (flgdefault as ad_emailcurdflt preserving type)` |  |  |
-| `CommLineNotForUnsolicitedCntct` |  | |  | `cast (flg_nouse as ad_commlinenotforunslctdcntct preserving type)` |  |  |
-| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |  |  |
-| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` | `NUMC(3)` | Sequence Number |
+| `EmailAddress` |  | |  | `smtp_addr` | `CHAR(241)` | Email Address |
+| `EmailAddressIsCurrentDefault` |  | |  | `cast (flgdefault as ad_emailcurdflt preserving type)` | `CHAR(1)` | Indicator : Current Default Email Address |
+| `CommLineNotForUnsolicitedCntct` |  | |  | `cast (flg_nouse as ad_commlinenotforunslctdcntct preserving type)` | `CHAR(1)` | Communication line is not to be used for unsolicited contact |
+| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` | `DATS(8)` |  |
 | `_OrgNamePostalAddress` | | ✓ | | | | |
 | `_AddressPersonName` | | ✓ | | | | |
 | `_AddressCommunicationRemark` | | ✓ | | | | |

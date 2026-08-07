@@ -5,9 +5,19 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRSETTLMTDEX')/$value
 semantic_en: Supplier Settlement Extraction
+semantic_vi: Supplier Settlement Extraction — CDS view tiêu dùng dựa trên R_SuplrSettlmtDEX.
+keywords:
+  - supplier
+  - settlement
+  - extraction
+  - suplr
+  - settlmt
+  - item
+  - type
+  - process
 tags:
   - LO
   - component:LO-AB
@@ -15,7 +25,6 @@ tags:
   - LO-AB
   - lob:logistics general
   - supplier
-  - metadata-only
 ---
 # C_SUPLRSETTLMTDEX
 
@@ -27,14 +36,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRSETTLMTDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRSETTLMTDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SuplrSettlmt` |  | |  |  | `CHAR(10)` | Supplier Settlement |
-| `SuplrSettlmtItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `SuplrSettlmt` | ✓ | |  |  | `CHAR(10)` | Supplier Settlement |
+| `SuplrSettlmtItem` | ✓ | |  |  | `NUMC(6)` | Document Item |
 | `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
 | `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
 | `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
@@ -215,3 +224,328 @@ tags:
 | `PriorSupplier` |  | |  |  | `CHAR(10)` | Prior Supplier |
 | `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
 | `SupplierSubrange` |  | |  |  | `CHAR(6)` | Supplier Subrange |
+| `_AlternativeInvoicingParty` |  | |  |  |  |  |
+| `_AltvInvoicingPartyCompany` |  | |  |  |  |  |
+| `_InvoicingParty` |  | |  |  |  |  |
+| `_InvoicingPartyCompany` |  | |  |  |  |  |
+| `_PayeeParty` |  | |  |  |  |  |
+| `_PayeePartyCompany` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRSETTLMTDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRSETTLMTDEX')/$value)*
+
+```abap
+@EndUserText.label: 'Supplier Settlement Extraction'
+@AccessControl: {
+    authorizationCheck:      #MANDATORY,
+    personalData.blocking:   #('TRANSACTIONAL_DATA')
+    }
+@ObjectModel: {
+    compositionRoot: true,
+    modelingPattern:#ANALYTICAL_FACT,
+    supportedCapabilities: [#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE],
+    usageType: {
+       dataClass:      #MIXED,
+       serviceQuality: #D,
+       sizeCategory:   #XXL
+       },
+    sapObjectNodeType.name: 'SupplierSettlement'
+    }
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true, 
+        delta: {
+              changeDataCapture: {
+                  mapping:[
+                      {
+                          table: 'wbrp', role: #MAIN,
+                          viewElement: ['SuplrSettlmt', 'SuplrSettlmtItem'],
+                          tableElement: ['wbeln', 'posnr']
+                      },
+                      {
+                          table: 'wbrk', role: #LEFT_OUTER_TO_ONE_JOIN,
+                          viewElement: ['SuplrSettlmt'],
+                          tableElement: ['wbeln']
+                      }
+                      ]
+                }
+            }
+        }
+    }
+
+@VDM.viewType: #CONSUMPTION
+@Metadata: {
+    ignorePropagatedAnnotations: true,
+    allowExtensions: false 
+    }
+
+define view entity C_SuplrSettlmtDEX
+  as select from R_SuplrSettlmtDEX as SuplrSettlmtDEX
+{
+  key SuplrSettlmt,
+  key SuplrSettlmtItem,
+
+      SuplrSettlmtDEX.SettlmtDocType               as SettlmtDocType,
+      SuplrSettlmtDEX.SettlmtDocCat,
+      SuplrSettlmtDEX.SettlmtProcessType,
+      SuplrSettlmtDEX.LogisticsDataEntryCat,
+      SuplrSettlmtDEX.SettlmtCat,
+      SuplrSettlmtDEX.PostingDate,
+      SuplrSettlmtDEX.SuplrSettlmtAcctgTransfSts,
+      SuplrSettlmtDEX.DocumentDate,
+      SuplrSettlmtDEX.DocumentReferenceID,
+      SuplrSettlmtDEX.AssignmentReference,
+      SuplrSettlmtDEX.StateCentralBankPaymentReason,
+      SuplrSettlmtDEX.SettlmtApplSts,
+      SuplrSettlmtDEX.SettlmtApplStsGrp,
+      SuplrSettlmtDEX.PricingProcedure,
+      SuplrSettlmtDEX.PricingDocument,
+      SuplrSettlmtDEX.InvoicingParty,
+      SuplrSettlmtDEX.PayeeParty,
+      SuplrSettlmtDEX.AlternativeInvoicingParty,
+      SuplrSettlmtDEX.CompanyCode                  as CompanyCode,
+      SuplrSettlmtDEX.PurchasingOrganization,
+      SuplrSettlmtDEX.PurchasingGroup,
+      SuplrSettlmtDEX.CreatedByUser,
+      SuplrSettlmtDEX.CreationDate,
+      SuplrSettlmtDEX.CreationTime,
+      SuplrSettlmtDEX.LastChangeDate               as LastChangeDate,
+      SuplrSettlmtDEX.SuplrSettlmtCurrency         as SuplrSettlmtCurrency,
+      SuplrSettlmtDEX.ExchangeRate,
+      SuplrSettlmtDEX.ExchangeRateType,
+      SuplrSettlmtDEX.ExchangeRateIsFixed,
+      SuplrSettlmtDEX.ExchangeRateDate,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtTotalGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtTotalNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtTotalTaxAmount,
+      SuplrSettlmtDEX.PaymentTerms,
+      SuplrSettlmtDEX.CashDiscount1Days,
+      SuplrSettlmtDEX.CashDiscount2Days,
+      SuplrSettlmtDEX.NetPaymentDays,
+      SuplrSettlmtDEX.CashDiscount1Percent,
+      SuplrSettlmtDEX.CashDiscount2Percent,
+      SuplrSettlmtDEX.PaymentMethod,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrTotEligibleAmtForCshDisc,
+      SuplrSettlmtDEX.SuplrSettlmtIsReversed,
+      SuplrSettlmtDEX.ReversedSupplierSettlement,
+      SuplrSettlmtDEX.AdditionalValueDays,
+      SuplrSettlmtDEX.FixedValueDate,
+      SuplrSettlmtDEX.SupplyingCountry,
+      SuplrSettlmtDEX.TaxDepartureCountry,
+      SuplrSettlmtDEX.TaxDestinationCountry,
+      SuplrSettlmtDEX.IsEUTriangularDeal,
+      SuplrSettlmtDEX.SettlmtCoCodeTaxCountry,
+      SuplrSettlmtDEX.VATRegistration,
+      SuplrSettlmtDEX.CreditControlArea,
+      SuplrSettlmtDEX.CreditControlAreaCurrency    as CreditControlAreaCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CreditControlAreaCurrency'
+      SuplrSettlmtDEX.ReleasedCreditAmount,
+      SuplrSettlmtDEX.SuplrSettlmtActivityReason,
+      SuplrSettlmtDEX.PaymentReference,
+      SuplrSettlmtDEX.SuplrSettlmtPaymentCurrency,
+      SuplrSettlmtDEX.SuplrSettlmtPaytCrcyExchRate,
+      SuplrSettlmtDEX.OneTimeSupplierAddressID,
+      SuplrSettlmtDEX.SettlmtReltdCndnContr,
+      SuplrSettlmtDEX.CndnContrType,
+      SuplrSettlmtDEX.FiscalPeriod,
+      SuplrSettlmtDEX.SettlmtDateCat,
+      SuplrSettlmtDEX.ActualSettlmtDate,
+      SuplrSettlmtDEX.SettlmtDateSequentialID,
+      SuplrSettlmtDEX.SettlmtDate,
+      SuplrSettlmtDEX.SuplrSettlmtIncmpltnsRsn,
+      SuplrSettlmtDEX.DocIntrastatRelevance,
+      SuplrSettlmtDEX.IntrastatDeclnGdsFlwCat,
+      SuplrSettlmtDEX.IncotermsVersion,
+      SuplrSettlmtDEX.IncotermsClassification,
+      SuplrSettlmtDEX.IncotermsTransferLocation,
+      SuplrSettlmtDEX.IncotermsLocation1,
+      SuplrSettlmtDEX.IncotermsLocation2,
+      SuplrSettlmtDEX.SettlmtBusProcVar,
+      SuplrSettlmtDEX.SettlmtBusProcCat,
+      SuplrSettlmtDEX.SEPAMandate,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtQuantityUnit'
+      SuplrSettlmtDEX.TotalSettlmtQuantity,
+      SuplrSettlmtDEX.TotalSettlmtQuantityUnit     as TotalSettlmtQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtWeightUnit'
+      SuplrSettlmtDEX.TotalSettlmtNetWeight,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtWeightUnit'
+      SuplrSettlmtDEX.TotalSettlmtGrossWeight,
+      SuplrSettlmtDEX.TotalSettlmtWeightUnit       as TotalSettlmtWeightUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtVolumeUnit'
+      SuplrSettlmtDEX.TotalSettlmtVolume,
+      SuplrSettlmtDEX.TotalSettlmtVolumeUnit       as TotalSettlmtVolumeUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtPointsQtyUnit'
+      SuplrSettlmtDEX.TotalSettlmtPointsQty,
+      SuplrSettlmtDEX.TotalSettlmtPointsQtyUnit    as TotalSettlmtPointsQtyUnit,
+      SuplrSettlmtDEX.SettlmtPeriodStartDate,
+      SuplrSettlmtDEX.SettlmtPeriodEndDate,
+      SuplrSettlmtDEX.CndnContrProcessCategory,
+
+      /* Items */
+      SuplrSettlmtDEX.Product,
+      SuplrSettlmtDEX.ProductGroup,
+      SuplrSettlmtDEX.Plant,
+      SuplrSettlmtDEX.InventoryValuationType,
+      SuplrSettlmtDEX.PricingDate,
+      SuplrSettlmtDEX.TaxCode,
+      SuplrSettlmtDEX.TaxCountry,
+      SuplrSettlmtDEX.TaxJurisdiction,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'SettlmtQuantityUnit'
+      SuplrSettlmtDEX.SettlmtQuantity,
+      SuplrSettlmtDEX.SettlmtQuantityUnit          as SettlmtQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.NetPriceAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'NetPriceQuantityUnit'
+      SuplrSettlmtDEX.NetPriceQuantity,
+      SuplrSettlmtDEX.NetPriceQuantityUnit         as NetPriceQuantityUnit,
+      SuplrSettlmtDEX.SettlmtToBaseQuantityNmrtr,
+      SuplrSettlmtDEX.SettlmtToBaseQuantityDnmntr,
+      SuplrSettlmtDEX.SettlmtToNetPriceQtyNmrtr,
+      SuplrSettlmtDEX.SettlmtToNetPriceQtyDnmntr,
+      SuplrSettlmtDEX.BaseUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      SuplrSettlmtDEX.ItemNetWeight,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      SuplrSettlmtDEX.ItemGrossWeight,
+      SuplrSettlmtDEX.ItemWeightUnit               as ItemWeightUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemVolumeUnit'
+      SuplrSettlmtDEX.ItemVolume,
+      SuplrSettlmtDEX.ItemVolumeUnit               as ItemVolumeUnit,
+      SuplrSettlmtDEX.ProductPurchasePointsQtyUnit as ProductPurchasePointsQtyUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ProductPurchasePointsQtyUnit'
+      SuplrSettlmtDEX.ProductPurchasePointsQty,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtItemTaxAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtItemGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtItemNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtSubtotal1Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtSubtotal2Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtSubtotal3Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtSubtotal4Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtSubtotal5Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtSubtotal6Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtRebateBasisAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrSettlmtEffctvItemAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.SuplrItmEligibleAmtForCshDisc,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrSettlmtCurrency'
+      SuplrSettlmtDEX.NonDeductibleInputTaxAmount,
+      SuplrSettlmtDEX.SuplrSettlmtItmStstclPrpty,
+      SuplrSettlmtDEX.CashDiscountIsDeductible,
+      SuplrSettlmtDEX.SettlmtSourceDoc,
+      SuplrSettlmtDEX.SettlmtSourceDocItem,
+      SuplrSettlmtDEX.SettlmtSourceDocCat,
+      SuplrSettlmtDEX.SettlmtSourceDocFiscalYear,
+      SuplrSettlmtDEX.SuplrSettlmtItmActivityReason,
+      SuplrSettlmtDEX.SuplrSettlmtItemText,
+      SuplrSettlmtDEX.BusinessArea,
+      SuplrSettlmtDEX.ControllingArea,
+      SuplrSettlmtDEX.CostCenter,
+      SuplrSettlmtDEX.ProfitCenter,
+      SuplrSettlmtDEX.WBSElementInternalID,
+      SuplrSettlmtDEX.SupplierSettlementOrder,
+      SuplrSettlmtDEX.Batch,
+      SuplrSettlmtDEX.PrcDetnIsIncmplt,
+      
+      SuplrSettlmtDEX.SettlmtPrecdgDoc,
+      SuplrSettlmtDEX.SettlmtPrecdgDocItem,
+      SuplrSettlmtDEX.SettlmtPrecdgDocCat,
+      
+      SuplrSettlmtDEX.SettlmtPrecdgDocFiscalYear,
+      
+      SuplrSettlmtDEX.SuplrSettlmtItmCat,
+      
+      SuplrSettlmtDEX.SettlmtItemReltdCndnContr,
+      SuplrSettlmtDEX.SuplrSettlmtItemStatus,
+      SuplrSettlmtDEX.SuplrSettlmtItemReversed,
+      SuplrSettlmtDEX.ServicesRenderedDate,
+      SuplrSettlmtDEX.SettlementFiscalYear,
+      SuplrSettlmtDEX.HigherLevelItem,
+      SuplrSettlmtDEX.LowerLevelItemExists,
+      SuplrSettlmtDEX.ItemDistributionStatus,
+      SuplrSettlmtDEX.SettlmtRefDocType,
+      SuplrSettlmtDEX.SettlmtRefDoc,
+      SuplrSettlmtDEX.SettlmtRefDocFiscalYear,
+      SuplrSettlmtDEX.SettlmtRefDocLogicalSyst,
+      SuplrSettlmtDEX.SettlmtRefDocItem,
+      SuplrSettlmtDEX.SettlmtRefDocCat,
+      SuplrSettlmtDEX.ItemIntrastatRelevance,
+      SuplrSettlmtDEX.SettlmtAddlRefDocType,
+      SuplrSettlmtDEX.SettlmtAddlRefDoc,
+      SuplrSettlmtDEX.SettlmtAddlRefDocFiscalYear,
+      SuplrSettlmtDEX.SettlmtAddlRefDocLogicalSyst,
+      SuplrSettlmtDEX.SettlmtAddlRefDocItem,
+      SuplrSettlmtDEX.SettlmtAddlRefDocCat,
+      SuplrSettlmtDEX.CustomerSettlmtRecipient,
+      SuplrSettlmtDEX.ProductHierarchy,
+      SuplrSettlmtDEX.SalesSpcfcProductGroup1,
+      SuplrSettlmtDEX.SalesSpcfcProductGroup2,
+      SuplrSettlmtDEX.SalesSpcfcProductGroup3,
+      SuplrSettlmtDEX.SalesSpcfcProductGroup4,
+      SuplrSettlmtDEX.SalesSpcfcProductGroup5,
+      SuplrSettlmtDEX.SupplierProductID,
+      SuplrSettlmtDEX.PriorSupplier,
+      SuplrSettlmtDEX.GLAccount,
+      SuplrSettlmtDEX.SupplierSubrange,
+
+      /* Associations */
+      @Consumption.hidden: true
+      SuplrSettlmtDEX._AlternativeInvoicingParty   as _AlternativeInvoicingParty,
+      @Consumption.hidden: true
+      SuplrSettlmtDEX._AltvInvoicingPartyCompany   as _AltvInvoicingPartyCompany,
+      @Consumption.hidden: true
+      SuplrSettlmtDEX._InvoicingParty              as _InvoicingParty,
+      @Consumption.hidden: true
+      SuplrSettlmtDEX._InvoicingPartyCompany       as _InvoicingPartyCompany,
+      @Consumption.hidden: true
+      SuplrSettlmtDEX._PayeeParty                  as _PayeeParty,
+      @Consumption.hidden: true
+      SuplrSettlmtDEX._PayeePartyCompany           as _PayeePartyCompany      
+}
+```

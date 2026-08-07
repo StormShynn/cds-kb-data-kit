@@ -813,5 +813,505 @@
     "appliedAt": "2026-08-07T16:34:34.886Z",
     "fields": 29,
     "action": "updated"
+  },
+  "C_PCCACTLTGTCOSTQRY": {
+    "appliedAt": "2026-08-07T16:46:27.082Z",
+    "fields": 26,
+    "action": "updated"
+  },
+  "C_PCCEVTBSDWIPVARCQRY": {
+    "appliedAt": "2026-08-07T16:46:27.315Z",
+    "fields": 20,
+    "action": "updated"
+  },
+  "C_PERSSETTLMTDOCDEX": {
+    "appliedAt": "2026-08-07T16:46:27.540Z",
+    "fields": 117,
+    "action": "updated"
+  },
+  "C_PNLPLNACTLCMTMTJRNLENTRITMQ": {
+    "appliedAt": "2026-08-07T16:46:27.790Z",
+    "fields": 34,
+    "action": "updated"
+  },
+  "C_POITEMCOUNTFORSUPLRQUERY": {
+    "appliedAt": "2026-08-07T16:46:28.000Z",
+    "fields": 9,
+    "action": "updated"
+  },
+  "C_POWTHNONCMPLNCPAYTTRMQRY": {
+    "appliedAt": "2026-08-07T16:46:28.209Z",
+    "fields": 22,
+    "action": "updated"
+  },
+  "C_PRICEVARIANCEQUERY": {
+    "appliedAt": "2026-08-07T16:46:28.420Z",
+    "fields": 40,
+    "action": "updated"
+  },
+  "C_PRODANDSRVCMARGANLYSQ": {
+    "appliedAt": "2026-08-07T16:46:28.638Z",
+    "fields": 66,
+    "action": "updated"
+  },
+  "C_PRODCOSTBRKDWNCOMPRNQRY": {
+    "appliedAt": "2026-08-07T16:46:28.859Z",
+    "fields": 48,
+    "action": "updated"
+  },
+  "C_PRODCOSTESTCOSTCOMPDEX": {
+    "appliedAt": "2026-08-07T16:46:29.072Z",
+    "fields": 23,
+    "action": "updated"
+  },
+  "C_PRODMARGCOSTBRKDWNQRY": {
+    "appliedAt": "2026-08-07T16:46:29.291Z",
+    "fields": 40,
+    "action": "updated"
+  },
+  "C_PRODUCTCOSTBYORDERQUERY": {
+    "appliedAt": "2026-08-07T16:46:29.505Z",
+    "fields": 52,
+    "action": "updated"
+  },
+  "C_PRODUCTMARGINANALYSISQUERY": {
+    "appliedAt": "2026-08-07T16:46:29.720Z",
+    "fields": 67,
+    "action": "updated"
+  },
+  "C_PRODUCTMARGINCOMPARISONQRY": {
+    "appliedAt": "2026-08-07T16:46:29.942Z",
+    "fields": 75,
+    "action": "updated"
+  },
+  "C_PRODUCTPROFITABILITYQUERY": {
+    "appliedAt": "2026-08-07T16:46:30.145Z",
+    "fields": 78,
+    "action": "updated"
+  },
+  "C_PROFITABILITY_Q0001": {
+    "appliedAt": "2026-08-07T16:46:30.343Z",
+    "fields": 47,
+    "action": "updated"
+  },
+  "C_PROFITABILITY_Q0002": {
+    "appliedAt": "2026-08-07T16:46:30.540Z",
+    "fields": 57,
+    "action": "updated"
+  },
+  "C_PROFITANDLOSSPLANACTQ2903": {
+    "appliedAt": "2026-08-07T16:46:30.750Z",
+    "fields": 69,
+    "action": "updated"
+  },
+  "C_PROFITANDLOSSQ2901": {
+    "appliedAt": "2026-08-07T16:46:30.953Z",
+    "fields": 68,
+    "action": "updated"
+  },
+  "C_PROFITCENTERPLANACTQ2701": {
+    "appliedAt": "2026-08-07T16:46:31.162Z",
+    "fields": 74,
+    "action": "updated"
+  },
+  "C_PROFITCENTERQ2701": {
+    "appliedAt": "2026-08-07T16:46:31.362Z",
+    "fields": 63,
+    "action": "updated"
+  },
+  "C_PROFITCENTERSEMANTICTAG": {
+    "appliedAt": "2026-08-07T16:46:31.643Z",
+    "fields": 65,
+    "action": "updated"
+  },
+  "C_PROFITCENTERSTATKEYFIGSEMTAG": {
+    "appliedAt": "2026-08-07T16:46:31.828Z",
+    "fields": 43,
+    "action": "updated"
+  },
+  "C_PROJECTPLANACTQ2201": {
+    "appliedAt": "2026-08-07T16:46:32.024Z",
+    "fields": 74,
+    "action": "updated"
+  },
+  "C_PROJECTPLANACTQ2203": {
+    "appliedAt": "2026-08-07T16:46:32.229Z",
+    "fields": 53,
+    "action": "updated"
+  },
+  "C_PROJECTQ2201": {
+    "appliedAt": "2026-08-07T16:46:32.431Z",
+    "fields": 64,
+    "action": "updated"
+  },
+  "C_PROJECTWIPHOURSQUERY": {
+    "appliedAt": "2026-08-07T16:46:32.647Z",
+    "fields": 71,
+    "action": "updated"
+  },
+  "C_PROMISETOPAYOVERVIEW": {
+    "appliedAt": "2026-08-07T16:46:32.844Z",
+    "fields": 35,
+    "action": "updated"
+  },
+  "C_PURCHASEORDERVALUE": {
+    "appliedAt": "2026-08-07T16:46:33.044Z",
+    "fields": 46,
+    "action": "updated"
+  },
+  "C_PURCHASEORDERVALUEQUERY": {
+    "appliedAt": "2026-08-07T16:46:33.286Z",
+    "fields": 43,
+    "action": "updated"
+  },
+  "C_PURGSPENDOFFCONTRACT": {
+    "appliedAt": "2026-08-07T16:46:33.538Z",
+    "fields": 39,
+    "action": "updated"
+  },
+  "C_PURORDOUTPUTAUTOMNRATE": {
+    "appliedAt": "2026-08-07T16:46:33.743Z",
+    "fields": 23,
+    "action": "updated"
+  },
+  "C_PURORDSERVICESPENDQUERY": {
+    "appliedAt": "2026-08-07T16:46:33.947Z",
+    "fields": 32,
+    "action": "updated"
+  },
+  "C_QUALITYCERTIFICATEEMAIL": {
+    "appliedAt": "2026-08-07T16:46:34.140Z",
+    "fields": 18,
+    "action": "updated"
+  },
+  "C_RAPOSTINGITEMQUERY_2": {
+    "appliedAt": "2026-08-07T16:46:34.339Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_RATOTALOPENREVENUEQUERY_2": {
+    "appliedAt": "2026-08-07T16:46:34.547Z",
+    "fields": 38,
+    "action": "updated"
+  },
+  "C_RAYRTODTERECGDREVNQUERY_2": {
+    "appliedAt": "2026-08-07T16:46:34.750Z",
+    "fields": 31,
+    "action": "updated"
+  },
+  "C_RESERVATIONDOCUMENTITEMDEX": {
+    "appliedAt": "2026-08-07T16:46:34.951Z",
+    "fields": 43,
+    "action": "updated"
+  },
+  "C_RESOLVEDDISPUTECASE": {
+    "appliedAt": "2026-08-07T16:46:35.147Z",
+    "fields": 47,
+    "action": "updated"
+  },
+  "C_REVENUEFROMINVOICEQRY": {
+    "appliedAt": "2026-08-07T16:46:35.369Z",
+    "fields": 152,
+    "action": "updated"
+  },
+  "C_REVNPRJBILLGELMNTQRY": {
+    "appliedAt": "2026-08-07T16:46:35.572Z",
+    "fields": 73,
+    "action": "updated"
+  },
+  "C_REVNPRJMARGOVWQRY": {
+    "appliedAt": "2026-08-07T16:46:35.774Z",
+    "fields": 73,
+    "action": "updated"
+  },
+  "C_SALESANALYTICSQRY_1": {
+    "appliedAt": "2026-08-07T16:46:35.979Z",
+    "fields": 70,
+    "action": "updated"
+  },
+  "C_SALESCONTRACTITEMQRY": {
+    "appliedAt": "2026-08-07T16:46:36.179Z",
+    "fields": 102,
+    "action": "updated"
+  },
+  "C_SALESCONTRACTITMFLFMTQ": {
+    "appliedAt": "2026-08-07T16:46:36.392Z",
+    "fields": 17,
+    "action": "updated"
+  },
+  "C_SALESORDERITEMQRY": {
+    "appliedAt": "2026-08-07T16:46:36.604Z",
+    "fields": 157,
+    "action": "updated"
+  },
+  "C_SALESORDERQ2301": {
+    "appliedAt": "2026-08-07T16:46:36.800Z",
+    "fields": 53,
+    "action": "updated"
+  },
+  "C_SALESORDERQUERY": {
+    "appliedAt": "2026-08-07T16:46:37.000Z",
+    "fields": 103,
+    "action": "updated"
+  },
+  "C_SALESQUOTATIONITEMQRY": {
+    "appliedAt": "2026-08-07T16:46:37.204Z",
+    "fields": 126,
+    "action": "updated"
+  },
+  "C_SALESSCHEDGAGRMTITEMQRY": {
+    "appliedAt": "2026-08-07T16:46:37.389Z",
+    "fields": 45,
+    "action": "updated"
+  },
+  "C_SALESVOLUMEANALYTICSQRY": {
+    "appliedAt": "2026-08-07T16:46:37.596Z",
+    "fields": 178,
+    "action": "updated"
+  },
+  "C_SERVICECOSTRATEDEX": {
+    "appliedAt": "2026-08-07T16:46:37.805Z",
+    "fields": 27,
+    "action": "updated"
+  },
+  "C_SERVICEMARGINQUERY": {
+    "appliedAt": "2026-08-07T16:46:38.007Z",
+    "fields": 67,
+    "action": "updated"
+  },
+  "C_SERVICEORDERQRY2401": {
+    "appliedAt": "2026-08-07T16:46:38.237Z",
+    "fields": 55,
+    "action": "updated"
+  },
+  "C_SETTLMTDOCDEX": {
+    "appliedAt": "2026-08-07T16:46:38.413Z",
+    "fields": 281,
+    "action": "updated"
+  },
+  "C_SETTLMTDOCLISTDEX": {
+    "appliedAt": "2026-08-07T16:46:38.609Z",
+    "fields": 97,
+    "action": "updated"
+  },
+  "C_SITEDEX": {
+    "appliedAt": "2026-08-07T16:46:38.809Z",
+    "fields": 10,
+    "action": "updated"
+  },
+  "C_SLSMATLDETNRECORDDEX": {
+    "appliedAt": "2026-08-07T16:46:39.023Z",
+    "fields": 29,
+    "action": "updated"
+  },
+  "C_SLSORDCONFANLYTSQRY": {
+    "appliedAt": "2026-08-07T16:46:39.220Z",
+    "fields": 193,
+    "action": "updated"
+  },
+  "C_SLSPERFPLANACTUALQUERY": {
+    "appliedAt": "2026-08-07T16:46:39.421Z",
+    "fields": 56,
+    "action": "updated"
+  },
+  "C_SLSQTANCONVERSIONRATEQ": {
+    "appliedAt": "2026-08-07T16:46:39.635Z",
+    "fields": 21,
+    "action": "updated"
+  },
+  "C_SOLVEDDSPUTCASESTSDURNQ": {
+    "appliedAt": "2026-08-07T16:46:39.821Z",
+    "fields": 18,
+    "action": "updated"
+  },
+  "C_STOCKQTYCURRENTVALUE_2": {
+    "appliedAt": "2026-08-07T16:46:40.030Z",
+    "fields": 20,
+    "action": "updated"
+  },
+  "C_STOCKQTYCURRENTVALUE_3": {
+    "appliedAt": "2026-08-07T16:46:40.220Z",
+    "fields": 21,
+    "action": "updated"
+  },
+  "C_STOCKQUANTITYCURRENTVALUE": {
+    "appliedAt": "2026-08-07T16:46:40.424Z",
+    "fields": 20,
+    "action": "updated"
+  },
+  "C_SUMZDJITCALLEMAILDATAPRVDR": {
+    "appliedAt": "2026-08-07T16:46:40.631Z",
+    "fields": 6,
+    "action": "updated"
+  },
+  "C_SUPLRBILLGDOCDEX": {
+    "appliedAt": "2026-08-07T16:46:40.849Z",
+    "fields": 189,
+    "action": "updated"
+  },
+  "C_SUPLREVALBYQLTYNOTIFQRY": {
+    "appliedAt": "2026-08-07T16:46:41.052Z",
+    "fields": 31,
+    "action": "updated"
+  },
+  "C_SUPLREVALBYQNAIREQRY": {
+    "appliedAt": "2026-08-07T16:46:41.252Z",
+    "fields": 18,
+    "action": "updated"
+  },
+  "C_SUPLREVALBYQUALITYQRY": {
+    "appliedAt": "2026-08-07T16:46:41.449Z",
+    "fields": 28,
+    "action": "updated"
+  },
+  "C_SUPLREVALBYQUANTITYQRY": {
+    "appliedAt": "2026-08-07T16:46:41.642Z",
+    "fields": 35,
+    "action": "updated"
+  },
+  "C_SUPLREVALUSRCRITRASCRQRY": {
+    "appliedAt": "2026-08-07T16:46:41.865Z",
+    "fields": 33,
+    "action": "updated"
+  },
+  "C_SUPLREVALUSRDFNDCRITRASCORES": {
+    "appliedAt": "2026-08-07T16:46:42.077Z",
+    "fields": 26,
+    "action": "updated"
+  },
+  "C_SUPLRINVCEMAILPARAMETER": {
+    "appliedAt": "2026-08-07T16:46:42.273Z",
+    "fields": 11,
+    "action": "updated"
+  },
+  "C_SUPLRSETTLMTDEX": {
+    "appliedAt": "2026-08-07T16:46:42.483Z",
+    "fields": 188,
+    "action": "updated"
+  },
+  "C_SUPLRSETTLMTLISTDEX": {
+    "appliedAt": "2026-08-07T16:46:42.681Z",
+    "fields": 89,
+    "action": "updated"
+  },
+  "C_SUPPLIEREVALOVERALLQRY": {
+    "appliedAt": "2026-08-07T16:46:42.890Z",
+    "fields": 56,
+    "action": "updated"
+  },
+  "C_TIMEVARIANCEQUERY": {
+    "appliedAt": "2026-08-07T16:46:43.094Z",
+    "fields": 46,
+    "action": "updated"
+  },
+  "C_TOTALACCOUNTSRECEIVABLES": {
+    "appliedAt": "2026-08-07T16:46:43.291Z",
+    "fields": 32,
+    "action": "updated"
+  },
+  "C_TRIALBALANCE": {
+    "appliedAt": "2026-08-07T16:46:43.503Z",
+    "fields": 289,
+    "action": "updated"
+  },
+  "C_TRIALBALANCEQ0001": {
+    "appliedAt": "2026-08-07T16:46:43.723Z",
+    "fields": 300,
+    "action": "updated"
+  },
+  "C_TRIALBALANCEQ0002": {
+    "appliedAt": "2026-08-07T16:46:43.950Z",
+    "fields": 416,
+    "action": "updated"
+  },
+  "C_US_TAXPARTNERTAXDOCITEMQUERY": {
+    "appliedAt": "2026-08-07T16:46:44.154Z",
+    "fields": 80,
+    "action": "updated"
+  },
+  "C_WORKCENTERPRODCOSTQUERY": {
+    "appliedAt": "2026-08-07T16:46:44.355Z",
+    "fields": 35,
+    "action": "updated"
+  },
+  "I_ACCOUNTINGDOCUMENT": {
+    "appliedAt": "2026-08-07T16:46:44.640Z",
+    "fields": 48,
+    "action": "updated"
+  },
+  "I_ACCOUNTINGDOCUMENTSTDVH": {
+    "appliedAt": "2026-08-07T16:46:44.804Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ACCOUNTINGDOCUMENTTYPESTDVH": {
+    "appliedAt": "2026-08-07T16:46:44.997Z",
+    "fields": 2,
+    "action": "updated"
+  },
+  "I_ACTLPLNLINEITEMSEMTAGGLACCT": {
+    "appliedAt": "2026-08-07T16:46:45.223Z",
+    "fields": 331,
+    "action": "updated"
+  },
+  "I_ACTLPLNSRVCMARGITEMCUBE": {
+    "appliedAt": "2026-08-07T16:46:45.425Z",
+    "fields": 81,
+    "action": "updated"
+  },
+  "I_ACTUALPLANJRNLENTRYITEMCUBE": {
+    "appliedAt": "2026-08-07T16:46:45.633Z",
+    "fields": 311,
+    "action": "updated"
+  },
+  "I_ACTUALPLANLINEITEMSEMTAG": {
+    "appliedAt": "2026-08-07T16:46:45.848Z",
+    "fields": 429,
+    "action": "updated"
+  },
+  "I_ACTUALPLANSTATKEYFIGSEMTAG": {
+    "appliedAt": "2026-08-07T16:46:46.050Z",
+    "fields": 70,
+    "action": "updated"
+  },
+  "I_ALLOCATIONTABLEITEMCATEGORY": {
+    "appliedAt": "2026-08-07T16:46:46.247Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ALLOCTBLITMCATTXT": {
+    "appliedAt": "2026-08-07T16:46:46.474Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ALTERNATIVEGLACCOUNTISUSED": {
+    "appliedAt": "2026-08-07T16:46:46.671Z",
+    "fields": 1,
+    "action": "updated"
+  },
+  "I_ALTERNATIVEGLACCOUNTISUSEDT": {
+    "appliedAt": "2026-08-07T16:46:46.882Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_AMOUNTFIELDGROUP": {
+    "appliedAt": "2026-08-07T16:46:47.083Z",
+    "fields": 1,
+    "action": "updated"
+  },
+  "I_AMOUNTFIELDGROUPTEXT": {
+    "appliedAt": "2026-08-07T16:46:47.286Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_APDAYSPAYOUTST": {
+    "appliedAt": "2026-08-07T16:46:47.481Z",
+    "fields": 11,
+    "action": "updated"
+  },
+  "I_APFLEXIBLEAGING": {
+    "appliedAt": "2026-08-07T16:46:47.677Z",
+    "fields": 17,
+    "action": "updated"
   }
 }

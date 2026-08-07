@@ -5,9 +5,20 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PERSSETTLMTDOCDEX')/$value
 semantic_en: This CDS view supports data extraction to SAP BW/4HANA. It enables the data transfer to SAP BW/4HANA for personnel settlement documents. Providing all relevant personnel settlement document information, this CDS view also allows you to build analytical reports. This CDS view provides the data to answer the following business question: Which personnel settlement documents are relevant for SAP BW/4HANA data extraction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Personnel Settlement Document Extraction — CDS view tiêu dùng dựa trên R_PersSettlmtDocDEX.
+keywords:
+  - personnel
+  - settlement
+  - document
+  - extraction
+  - pers
+  - settlmt
+  - item
+  - type
+  - process
 tags:
   - LO
   - bo:companycode
@@ -16,7 +27,7 @@ tags:
   - document
   - LO-AB
   - lob:logistics general
-  - metadata-only
+  - bo:salesorder
 ---
 # C_PERSSETTLMTDOCDEX
 
@@ -28,14 +39,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PERSSETTLMTDOCDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PERSSETTLMTDOCDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonnelSettlementDocument` |  | |  |  | `CHAR(10)` | Personnel Settlement Document Number |
-| `PersSettlmtDocItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `PersonnelSettlementDocument` | ✓ | |  |  | `CHAR(10)` | Personnel Settlement Document Number |
+| `PersSettlmtDocItem` | ✓ | |  |  | `NUMC(6)` | Document Item |
 | `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
 | `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
 | `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
@@ -151,3 +162,219 @@ tags:
 | `SalesSpcfcProductGroup5` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 5 |
 | `BusTransDocReferenceID` |  | |  |  | `CHAR(35)` | Business Transaction Document ID |
 | `BusTransDocReferenceItemID` |  | |  |  | `CHAR(10)` | Business Transaction Document Item ID |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PERSSETTLMTDOCDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PERSSETTLMTDOCDEX')/$value)*
+
+```abap
+@EndUserText.label: 'Personnel Settlement Document Extraction'
+@AccessControl: {
+    authorizationCheck:      #MANDATORY,
+    personalData.blocking:   #('TRANSACTIONAL_DATA')
+    }
+@ObjectModel: {
+    compositionRoot: true,
+    modelingPattern:#ANALYTICAL_FACT,
+    supportedCapabilities: [#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE],
+    usageType: {
+       dataClass:      #MIXED,
+       serviceQuality: #D,
+       sizeCategory:   #XXL
+       },
+    sapObjectNodeType.name: 'PersonnelSettlementDocument'
+    }
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta: {
+            changeDataCapture: {
+                mapping:[
+                    {
+                        table: 'wbrp', role: #MAIN,
+                        viewElement: ['PersonnelSettlementDocument', 'PersSettlmtDocItem'],
+                        tableElement: ['wbeln', 'posnr']
+                    },
+                    {
+                        table: 'wbrk', role: #LEFT_OUTER_TO_ONE_JOIN,
+                        viewElement: [ 'PersonnelSettlementDocument'],
+                        tableElement: ['wbeln']
+                    }
+                    ]
+               }
+            }
+        }
+    }
+@VDM.viewType: #CONSUMPTION
+@Metadata: {
+    ignorePropagatedAnnotations: true,
+    allowExtensions: false
+    }
+
+define view entity C_PersSettlmtDocDEX
+  as select from R_PersSettlmtDocDEX as PersSettlmtDocDEX
+{
+  key PersonnelSettlementDocument,
+  key PersSettlmtDocItem,
+
+      PersSettlmtDocDEX.SettlmtDocType,
+      PersSettlmtDocDEX.SettlmtDocCat,
+      PersSettlmtDocDEX.SettlmtProcessType,
+      PersSettlmtDocDEX.LogisticsDataEntryCat,
+      PersSettlmtDocDEX.SettlmtProcessCat,
+      PersSettlmtDocDEX.PostingDate,
+      PersSettlmtDocDEX.PersSettlmtAcctgTransfSts,
+      PersSettlmtDocDEX.DocumentDate,
+      PersSettlmtDocDEX.DocumentReferenceID,
+      PersSettlmtDocDEX.AssignmentReference,
+      PersSettlmtDocDEX.SettlmtApplSts,
+      PersSettlmtDocDEX.SettlmtApplStsGrp,
+      PersSettlmtDocDEX.PricingProcedure,
+      PersSettlmtDocDEX.PricingDocument,
+      PersSettlmtDocDEX.PersonWorkAgreement,
+      PersSettlmtDocDEX.PersonnelCostCenter,
+      PersSettlmtDocDEX.PersonnelControllingArea,
+      PersSettlmtDocDEX.CompanyCode,
+      PersSettlmtDocDEX.SalesOrganization,
+      PersSettlmtDocDEX.DistributionChannel,
+      PersSettlmtDocDEX.Division,
+      PersSettlmtDocDEX.SalesOffice,
+      PersSettlmtDocDEX.SalesGroup,
+      PersSettlmtDocDEX.CreatedByUser,
+      PersSettlmtDocDEX.CreationDate,
+      PersSettlmtDocDEX.CreationTime,
+      PersSettlmtDocDEX.LastChangeDate,
+      PersSettlmtDocDEX.PersSettlmtDocCurrency,
+      PersSettlmtDocDEX.ExchangeRate,
+      PersSettlmtDocDEX.ExchangeRateType,
+      PersSettlmtDocDEX.ExchangeRateIsFixed,
+      PersSettlmtDocDEX.ExchangeRateDate,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocTotalNetAmount,
+      PersSettlmtDocDEX.PersSettlmtDocIsReversed,
+      PersSettlmtDocDEX.RvsdPersSettlmtDoc,
+      PersSettlmtDocDEX.PersSettlmtDocActivityReason,
+      PersSettlmtDocDEX.PaymentReference,
+      PersSettlmtDocDEX.CndnContrType,
+      PersSettlmtDocDEX.SettlmtReltdCndnContr,
+      PersSettlmtDocDEX.CndnContrProcVar,
+      PersSettlmtDocDEX.FiscalPeriod,
+      PersSettlmtDocDEX.SettlmtDateCat,
+      PersSettlmtDocDEX.ActualSettlmtDate,
+      PersSettlmtDocDEX.SettlmtDateSequentialID,
+      PersSettlmtDocDEX.SettlmtDate,
+      PersSettlmtDocDEX.PersSettlmtDocIncmpltnsRsn,
+      PersSettlmtDocDEX.SettlmtBusProcVar,
+      PersSettlmtDocDEX.SettlmtBusProcCat,
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtQuantityUnit'
+      PersSettlmtDocDEX.TotalSettlmtQuantity,
+      PersSettlmtDocDEX.TotalSettlmtQuantityUnit,
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtWeightUnit'
+      PersSettlmtDocDEX.TotalSettlmtNetWeight,
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtWeightUnit'
+      PersSettlmtDocDEX.TotalSettlmtGrossWeight,
+      PersSettlmtDocDEX.TotalSettlmtWeightUnit,
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtVolumeUnit'
+      PersSettlmtDocDEX.TotalSettlmtVolume,
+      PersSettlmtDocDEX.TotalSettlmtVolumeUnit,
+      PersSettlmtDocDEX.SettlmtPeriodStartDate,
+      PersSettlmtDocDEX.SettlmtPeriodEndDate,
+      PersSettlmtDocDEX.CndnContrProcessCategory,
+      PersSettlmtDocDEX.PostingPartnerCat,
+      PersSettlmtDocDEX.JournalEntryCreationDate,
+      PersSettlmtDocDEX.JournalEntryCreationTime,
+      PersSettlmtDocDEX.SettlmtCompensationReason,
+      PersSettlmtDocDEX.SettlmtCompnVar,
+
+      /* Item */
+      PersSettlmtDocDEX.Product,
+      PersSettlmtDocDEX.ProductGroup,
+      PersSettlmtDocDEX.Plant,
+      PersSettlmtDocDEX.PricingDate,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'SettlmtQuantityUnit'
+      PersSettlmtDocDEX.SettlmtQuantity,
+      PersSettlmtDocDEX.SettlmtQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.NetPriceAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'NetPriceQuantityUnit'
+      PersSettlmtDocDEX.NetPriceQuantity,
+      PersSettlmtDocDEX.NetPriceQuantityUnit,
+      PersSettlmtDocDEX.SettlmtToBaseQuantityNmrtr,
+      PersSettlmtDocDEX.SettlmtToBaseQuantityDnmntr,
+      PersSettlmtDocDEX.SettlmtToNetPriceQtyNmrtr,
+      PersSettlmtDocDEX.SettlmtToNetPriceQtyDnmntr,
+      PersSettlmtDocDEX.BaseUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      PersSettlmtDocDEX.ItemNetWeight,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      PersSettlmtDocDEX.ItemGrossWeight,
+      PersSettlmtDocDEX.ItemWeightUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemVolumeUnit'
+      PersSettlmtDocDEX.ItemVolume,
+      PersSettlmtDocDEX.ItemVolumeUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocItemNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocSubtotal1Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocSubtotal2Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocSubtotal3Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocSubtotal4Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocSubtotal5Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocSubtotal6Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'PersSettlmtDocCurrency'
+      PersSettlmtDocDEX.PersSettlmtDocRbteBasisAmount,
+      PersSettlmtDocDEX.PersSettlmtDocItmStstclPrpty,
+      PersSettlmtDocDEX.PersSettlmtDocItmActyReason,
+      PersSettlmtDocDEX.PersSettlmtDocItemText,
+      PersSettlmtDocDEX.BusinessArea,
+      PersSettlmtDocDEX.ControllingArea,
+      PersSettlmtDocDEX.CostCenter,
+      PersSettlmtDocDEX.ProfitCenter,
+      PersSettlmtDocDEX.WBSElementInternalID,
+      PersSettlmtDocDEX.PersSettlmtDocOrder,
+      PersSettlmtDocDEX.PrcDetnIsIncmplt,
+
+      PersSettlmtDocDEX.PersSettlmtDocItemCat,
+
+      PersSettlmtDocDEX.SettlmtItemReltdCndnContr,
+
+      PersSettlmtDocDEX.PersSettlmtDocItemStatus,
+      PersSettlmtDocDEX.PersSettlmtDocItemRvsd,
+      PersSettlmtDocDEX.ServicesRenderedDate,
+      PersSettlmtDocDEX.SettlementFiscalYear,
+      PersSettlmtDocDEX.GLAccount,
+      PersSettlmtDocDEX.ProductHierarchy,
+      PersSettlmtDocDEX.SalesSpcfcProductGroup1,
+      PersSettlmtDocDEX.SalesSpcfcProductGroup2,
+      PersSettlmtDocDEX.SalesSpcfcProductGroup3,
+      PersSettlmtDocDEX.SalesSpcfcProductGroup4,
+      PersSettlmtDocDEX.SalesSpcfcProductGroup5,
+      PersSettlmtDocDEX.BusTransDocReferenceID,
+      PersSettlmtDocDEX.BusTransDocReferenceItemID,
+
+      /* Associations */
+      @Consumption.hidden: true
+      PersSettlmtDocDEX._PersonWorkAgreement
+}
+```

@@ -5,14 +5,23 @@ app_component: SD-ANA-SP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SLSPERFPLANACTUALQUERY')/$value
 semantic_en: This CDS view retrieves sales performance data, including plan and actual data. This CDS view provides the data to answer the following business questions: What's the planned sales value or sales quantity over a period? What's the actual sales value or sales quantity (based on incoming sales orders) over a period? What's the actual sales value or sales quantity (based on sales volume) over a period? Is the sales target reached as planned for a particular product? The system retrieves the actual data from sales documents if the plan data represents incoming sales orders, and from billing documents if the plan data represents sales volume. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Planned and Actual Sales Perf - Query — CDS view tiêu dùng dựa trên I_SlsPerformancePlanActualCube.
 keywords:
   - Sales Performance Plan and Actual - Qry
-  - Sales Performance Plan and Actual - Qry
-  - Sales Performance Plan and Actual - Qry
-  - Sales Performance Plan and Actual - Qry
+  - planned
+  - and
+  - actual
+  - sales
+  - perf
+  - query
+  - plan
+  - item
+  - document
+  - type
+  - billing
 tags:
   - SD
   - billing
@@ -28,7 +37,6 @@ tags:
   - SD-ANA
   - SD-ANA-SP
   - SD-ANA-SP-2CL
-  - metadata-only
 ---
 # C_SLSPERFPLANACTUALQUERY
 
@@ -40,15 +48,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SLSPERFPLANACTUALQUERY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SLSPERFPLANACTUALQUERY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesPlanItemUUID` |  | |  |  | `RAW(16)` | Sales Plan Item UUID |
-| `SDDocument` |  | |  |  | `CHAR(10)` | Sales and Distribution Document Number |
-| `SDDocumentItem` |  | |  |  | `NUMC(6)` | Sales and Distribution Document Item |
+| `SalesPlanItemUUID` | ✓ | |  |  | `RAW(16)` | Sales Plan Item UUID |
+| `SDDocument` | ✓ | |  |  | `CHAR(10)` | Sales and Distribution Document Number |
+| `SDDocumentItem` | ✓ | |  |  | `NUMC(6)` | Sales and Distribution Document Item |
 | `SalesDocumentType` |  | |  |  | `CHAR(4)` | Sales Document Type |
 | `BillingDocumentType` |  | |  |  | `CHAR(4)` | Billing Type |
 | `SalesPlanPurpose` |  | |  |  | `CHAR(1)` | Purposes of Sales Planning |
@@ -102,3 +110,208 @@ tags:
 | `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
 | `SalesPerformanceActualQuantity` |  | |  |  | `QUAN(15)` | Sales Performance Actual Quantity |
 | `SalesPerfActualQuantityUnit` |  | |  |  | `UNIT(3)` | Sales Unit |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SLSPERFPLANACTUALQUERY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SLSPERFPLANACTUALQUERY')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Planned and Actual Sales Perf - Query'
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck:#PRIVILEGED_ONLY 
+@AbapCatalog.preserveKey:true 
+@AbapCatalog: {
+   sqlViewName: 'CSLSPERFPAQ',
+   compiler.compareFilter: true
+}
+@ObjectModel: {
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XL
+   }
+}
+@Analytics.query: true
+@ObjectModel.supportedCapabilities: 
+   [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@Aggregation.allowPrecisionLoss:true
+@Metadata.ignorePropagatedAnnotations:true 
+@OData.publish: true
+
+define view C_SlsPerfPlanActualQuery with parameters
+    @Consumption.defaultValue: 'M'
+    P_ExchangeRateType : kurst,
+    @Consumption.defaultValue: 'EUR'
+    P_DisplayCurrency  : vdm_v_display_currency,
+    @Consumption.valueHelpDefinition: [{
+        entity:{name: 'C_SalesPlanValueHelp', element :'SalesPlan'}
+    }]
+    P_SalesPlan : sales_plan,
+    @Consumption.valueHelpDefinition: [{
+        entity:{name: 'C_SalesPlanVersionValueHelp', element :'SalesPlanVersion' }
+    }]
+    P_SalesPlanVersion : sales_plan_version,
+    @Consumption.valueHelpDefinition: [{
+        entity:{name: 'C_SalesPlanCreatedByUserVH', element :'CreatedByUser'}
+    }]
+    P_CreatedByUser : sd_sp_createdbyuser
+as select from I_SlsPerformancePlanActualCube(
+                 P_ExchangeRateType: $parameters.P_ExchangeRateType,
+                 P_DisplayCurrency:  $parameters.P_DisplayCurrency,
+                 P_SalesPlan: $parameters.P_SalesPlan,
+                 P_SalesPlanVersion: $parameters.P_SalesPlanVersion,
+                 P_CreatedByUser: $parameters.P_CreatedByUser
+                 ) as ISP
+{
+  @AnalyticsDetails.query.hidden
+  key SalesPlanItemUUID,
+  key SDDocument,
+  key SDDocumentItem,
+
+      SalesDocumentType,
+      BillingDocumentType,
+//      SDDocumentObject,
+      
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesPlanPurpose,     
+      @AnalyticsDetails.query.axis: #ROWS
+      SalesPlanPeriodName,
+      @Semantics.systemDate.createdAt: true
+      SalesPerformanceDate,
+      @Semantics.calendar.yearMonth
+      SalesPerformanceYearMonth,
+      @Semantics.calendar.yearQuarter
+      SlsPerformanceYearQuarter,
+      @Semantics.calendar.year
+      SalesPerformanceYear,
+      
+      //Organization
+      @Consumption.filter:{selectionType: #RANGE, multipleSelections: true, mandatory: false}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrganization,
+      @Consumption.filter:{selectionType: #RANGE, multipleSelections: true, mandatory: false}
+      @AnalyticsDetails.query.display: #KEY_TEXT 
+      DistributionChannel,
+      @Consumption.filter:{selectionType: #RANGE, multipleSelections: true, mandatory: false}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrganizationDivision,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOffice,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDistrict,
+
+      //Customer
+      @Consumption.filter:{selectionType: #RANGE, multipleSelections: true, mandatory: false}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToParty,
+      @Consumption.filter:{selectionType: #RANGE, multipleSelections: true, mandatory: false}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShipToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PayerParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup5,
+
+      //Product
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Division,
+      @Consumption.filter:{selectionType: #RANGE, multipleSelections: true, mandatory: false}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Product,
+      @Consumption.filter:{selectionType: #RANGE, multipleSelections: true, mandatory: false}
+      @AnalyticsDetails.query.display: #KEY_TEXT     
+      ProductGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup5,
+
+      //Employee
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesEmployee,
+
+      //Shipping
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Plant,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShippingType,
+
+      //Cost
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProfitCenter,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CostCenter,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CompanyCode,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ControllingArea,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusinessArea,
+
+      //Geography
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Country,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillToPartyCountry,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Region,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillToPartyRegion,
+
+      @Semantics.currencyCode: true
+      DisplayCurrency,
+
+      //Planned Value
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SalesPlanAmountInDspCrcy,
+
+      @Aggregation.default: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SalesPerfActlAmtInDspCurrency,
+
+      //Planned Quantity
+      @Aggregation.default: #SUM
+      @Semantics.quantity.unitOfMeasure: 'SalesPlanUnit'
+      SalesPlanQuantity,
+
+      @Semantics.unitOfMeasure: true
+      SalesPlanUnit,
+ 
+      //Actual Quantity
+      @Aggregation.default: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      SalesPerfActualQtyInBaseUnit,
+      @Semantics.unitOfMeasure: true
+      BaseUnit,
+
+      //Actual Quantity in sales unit
+      @Aggregation.default: #SUM
+      @Semantics.quantity.unitOfMeasure: 'SalesPerfActualQuantityUnit'
+      SalesPerformanceActualQuantity,
+      @Semantics.unitOfMeasure: true
+      SalesPerfActualQuantityUnit    
+}
+```

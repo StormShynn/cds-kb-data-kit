@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressGroup` | ✓ | |  |  |  |  |
+| `AddressGroup` | ✓ | |  |  | `CHAR(4)` | Address Group (Key) (Business Address Services) |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

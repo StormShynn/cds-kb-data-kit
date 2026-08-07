@@ -5,9 +5,18 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SETTLMTDOCDEX')/$value
 semantic_en: This CDS view supports data extraction to SAP BW/4HANA. It enables the data transfer to SAP BW/4HANA for settlement documents. Providing all relevant settlement document information, this CDS view also allows you to build analytical reports. This CDS view provides the data to answer the following business question: Which settled documents are relevant for SAP BW/4HANA data extraction? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Settlement Document Extraction — CDS view tiêu dùng dựa trên R_SettlmtDocDEX.
+keywords:
+  - settlement
+  - document
+  - extraction
+  - settlmt
+  - item
+  - type
+  - process
 tags:
   - LO
   - bo:companycode
@@ -16,7 +25,6 @@ tags:
   - document
   - LO-AB
   - lob:logistics general
-  - metadata-only
 ---
 # C_SETTLMTDOCDEX
 
@@ -28,14 +36,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SETTLMTDOCDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SETTLMTDOCDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SettlmtDoc` |  | |  |  | `CHAR(10)` | Settlement Document Number |
-| `SettlmtDocItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `SettlmtDoc` | ✓ | |  |  | `CHAR(10)` | Settlement Document Number |
+| `SettlmtDocItem` | ✓ | |  |  | `NUMC(6)` | Document Item |
 | `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
 | `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
 | `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
@@ -305,3 +313,485 @@ tags:
 | `ProductCommissionGroup` |  | |  |  | `CHAR(2)` | Commission Group |
 | `PriceSpecificationProductGroup` |  | |  |  | `CHAR(2)` | Product Pricing Group |
 | `SalesVolumeRebateGroup` |  | |  |  | `CHAR(2)` | Sales Volume Rebate Group |
+| `_BillToParty` |  | |  |  |  |  |
+| `_BillToPartyCompany` |  | |  |  |  |  |
+| `_PayerParty` |  | |  |  |  |  |
+| `_PayerPartyCompany` |  | |  |  |  |  |
+| `_InvoicingParty` |  | |  |  |  |  |
+| `_InvoicingPartyCompany` |  | |  |  |  |  |
+| `_PayeeParty` |  | |  |  |  |  |
+| `_PayeePartyCompany` |  | |  |  |  |  |
+| `_AlternativeInvoicingParty` |  | |  |  |  |  |
+| `_AltvInvoicingPartyCompany` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SETTLMTDOCDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SETTLMTDOCDEX')/$value)*
+
+```abap
+@AbapCatalog: {
+  sqlViewName: 'CWLFSDOCDEX',
+  compiler.compareFilter: true,
+  preserveKey: true
+  }
+
+@ObjectModel: {
+ //  representativeKey: 'SettlmtDocItem', // Not needed for Analytics view
+   compositionRoot: true,
+   sapObjectNodeType.name: 'SettlementDocument',
+   modelingPattern: #ANALYTICAL_FACT,
+   supportedCapabilities: [#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE ],
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XXL
+   }
+}
+
+@ClientHandling:{
+  type:      #INHERITED,
+  algorithm: #SESSION_VARIABLE
+}
+
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta: {
+              changeDataCapture: {
+                          mapping:[
+                              {
+                                  table: 'wbrp', role: #MAIN,
+                                  viewElement: ['SettlmtDoc', 'SettlmtDocItem'],
+                                  tableElement: ['wbeln', 'posnr']
+                              },
+                              {
+                                  table: 'wbrk', role: #LEFT_OUTER_TO_ONE_JOIN,
+                                  viewElement: ['SettlmtDoc'],
+                                  tableElement: ['wbeln']
+                              }
+                         ]
+        }
+      }
+    }
+ }
+
+
+@VDM.viewType: #CONSUMPTION
+
+@AccessControl: {
+  authorizationCheck:      #MANDATORY,
+  personalData.blocking:   #('TRANSACTIONAL_DATA')
+}
+
+@EndUserText.label: 'Settlement Document Extraction'
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions:true
+
+
+define view C_SettlmtDocDEX
+  as select from R_SettlmtDocDEX as SettlmtDocDex
+{
+
+      //key
+  key SettlmtDoc,
+  key SettlmtDocItem,
+
+
+
+      SettlmtDocDex.SettlmtDocType               as SettlmtDocType,
+      SettlmtDocDex.SettlmtDocCat,
+      SettlmtDocDex.SettlmtProcessType,
+      SettlmtDocDex.SettlmtProcessCat,
+      SettlmtDocDex.LogisticsDataEntryCat,
+      SettlmtDocDex.SettlmtCat,
+      SettlmtDocDex.SupplierPricingProcedure,
+      SettlmtDocDex.CustomerPricingProcedure,
+      SettlmtDocDex.PostingDate,
+      SettlmtDocDex.SettlmtMgmtAcctgTransfSts,
+      SettlmtDocDex.InvoicingParty,
+      SettlmtDocDex.PayeeParty,
+      SettlmtDocDex.BillToParty,
+      SettlmtDocDex.PayerParty,
+      SettlmtDocDex.PurchasingOrganization,
+      SettlmtDocDex.PurchasingGroup,
+      SettlmtDocDex.SalesOrganization,
+      SettlmtDocDex.DistributionChannel,
+      SettlmtDocDex.Division,
+      SettlmtDocDex.SuplrSettlmtCompanyCode      as SuplrSettlmtCompanyCode,
+      SettlmtDocDex.CustSettlmtCompanyCode       as CustSettlmtCompanyCode,
+      SettlmtDocDex.CreatedByUser,
+      SettlmtDocDex.CreationDate,
+      SettlmtDocDex.CreationTime,
+      SettlmtDocDex.LastChangeDate               as LastChangeDate,
+      SettlmtDocDex.DocumentDate,
+      SettlmtDocDex.DocumentReferenceID,
+      SettlmtDocDex.AssignmentReference,
+      SettlmtDocDex.SettlmtDocCurrency           as SettlmtDocCurrency,
+      SettlmtDocDex.ExchangeRate,
+      SettlmtDocDex.ExchangeRateIsFixed,
+      SettlmtDocDex.ExchangeRateDate,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierTotalGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierTotalNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerTotalGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerTotalNetAmount,
+      SettlmtDocDex.SupplierPaymentTerms,
+      SettlmtDocDex.SupplierCashDiscount1Days,
+      SettlmtDocDex.SupplierCashDiscount2Days,
+      SettlmtDocDex.SupplierNetPaymentDays,
+      SettlmtDocDex.SupplierCashDiscount1Percent,
+      SettlmtDocDex.SupplierCashDiscount2Percent,
+      SettlmtDocDex.SupplierPaymentMethod,
+      SettlmtDocDex.CustomerPaymentTerms,
+      SettlmtDocDex.CustomerCashDiscount1Days,
+      SettlmtDocDex.CustomerCashDiscount2Days,
+      SettlmtDocDex.CustomerNetPaymentDays,
+      SettlmtDocDex.CustomerCashDiscount1Percent,
+      SettlmtDocDex.CustomerCashDiscount2Percent,
+      SettlmtDocDex.CustomerPaymentMethod,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SuplrTotEligibleAmtForCshDisc,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustTotEligibleAmtForCshDisc,
+      SettlmtDocDex.SettlmtDocIsCanceled,
+      SettlmtDocDex.CanceledSettlmtDoc,
+      SettlmtDocDex.SupplierPricingDocument,
+      SettlmtDocDex.CustomerPricingDocument,
+      SettlmtDocDex.SupplierAdditionalValueDays,
+      SettlmtDocDex.SupplierFixedValueDate,
+      SettlmtDocDex.CustomerAdditionalValueDays,
+      SettlmtDocDex.CustomerFixedValueDate,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierTotalTaxAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerTotalTaxAmount,
+      SettlmtDocDex.SupplyingCountry,
+      SettlmtDocDex.StateCentralBankPaymentReason,
+      SettlmtDocDex.CreditControlArea,
+      SettlmtDocDex.SettlmtDocActivityReason,
+      SettlmtDocDex.PaymentReference,
+      SettlmtDocDex.SupplierPaymentCurrency,
+      SettlmtDocDex.SupplierPaytCurrencyExchRate,
+      SettlmtDocDex.CustomerPaymentCurrency,
+      SettlmtDocDex.CustomerPaytCurrencyExchRate,
+      SettlmtDocDex.SettlmtApplSts,
+      SettlmtDocDex.ExchangeRateType,
+      SettlmtDocDex.SalesOffice,
+      SettlmtDocDex.SalesGroup,
+      SettlmtDocDex.OneTimeCustomerAddressID,
+      SettlmtDocDex.OneTimeSupplierAddressID,
+      SettlmtDocDex.SettlmtReltdCndnContr,
+      SettlmtDocDex.SettlmtReltdTrdgContr,
+      SettlmtDocDex.SettlmtReltdPurgDoc,
+      SettlmtDocDex.SettlmtReltdBillgDoc,
+      SettlmtDocDex.SettlmtDocSmmrznCat,
+      SettlmtDocDex.CreditControlAreaCurrency    as CreditControlAreaCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'CreditControlAreaCurrency'
+      SettlmtDocDex.ReleasedCreditAmount,
+      SettlmtDocDex.SettlmtClassificationCat,
+      SettlmtDocDex.SettlmtPartnerCat,
+      SettlmtDocDex.SupplierSettlmtStatus,
+      SettlmtDocDex.CustomerSettlmtStatus,
+      SettlmtDocDex.SupplierSettlmtDocCat,
+      SettlmtDocDex.CustomerSettlmtDocCat,
+      SettlmtDocDex.SupplierSettlmtBlkgReason,
+      SettlmtDocDex.CustomerSettlmtBlkgReason,
+      SettlmtDocDex.FiscalPeriod,
+      SettlmtDocDex.TrdgExpnDocSettled,
+      SettlmtDocDex.TrdgExpnCurrency             as TrdgExpnCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'TrdgExpnCurrency'
+      SettlmtDocDex.TrdgExpnAmount,
+      SettlmtDocDex.TrdgExpnSupplier,
+      SettlmtDocDex.TrdgExpnCustomer,
+      SettlmtDocDex.CndnContrType,
+      SettlmtDocDex.SettlmtDateCat,
+      SettlmtDocDex.ActualSettlmtDate,
+      SettlmtDocDex.SettlmtDateSequentialID,
+      SettlmtDocDex.SettlmtDocIncmpltnsRsn,
+      SettlmtDocDex.AlternativeInvoicingParty,
+      SettlmtDocDex.CombinedSettlmtPostgSts,
+      SettlmtDocDex.TaxDepartureCountry,
+      SettlmtDocDex.TaxDestinationCountry,
+      SettlmtDocDex.IsEUTriangularDeal,
+      SettlmtDocDex.SupplierVATRegistration,
+      SettlmtDocDex.CustomerVATRegistration,
+      SettlmtDocDex.IntrastatDeclnGdsFlwCat,
+      SettlmtDocDex.IncotermsVersion,
+      SettlmtDocDex.IncotermsClassification,
+      SettlmtDocDex.IncotermsTransferLocation,
+      SettlmtDocDex.IncotermsLocation1,
+      SettlmtDocDex.IncotermsLocation2,
+      SettlmtDocDex.SettlmtDate,
+      SettlmtDocDex.SettlmtBusProcVar,
+      SettlmtDocDex.SettlmtDocCollSts,
+      SettlmtDocDex.SettlmtDocIsCollvDoc,
+      SettlmtDocDex.CollSettlmtBlkgReason,
+      SettlmtDocDex.SuplrSettlmtCoCodeTaxCountry,
+      SettlmtDocDex.CustSettlmtCoCodeTaxCountry,
+      SettlmtDocDex.SettlmtBusProcCat,
+      SettlmtDocDex.SEPAMandate,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.TotalSettlmtQuantityUnit     as TotalSettlmtQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtQuantityUnit'
+      SettlmtDocDex.TotalSettlmtQuantity,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.TotalSettlmtWeightUnit       as TotalSettlmtWeightUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtWeightUnit'
+      SettlmtDocDex.TotalSettlmtNetWeight,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtWeightUnit'
+      SettlmtDocDex.TotalSettlmtGrossWeight,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.TotalSettlmtVolumeUnit       as TotalSettlmtVolumeUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtVolumeUnit'
+      SettlmtDocDex.TotalSettlmtVolume,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.TotalSettlmtPointsQtyUnit    as TotalSettlmtPointsQtyUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtPointsQtyUnit'
+      SettlmtDocDex.TotalSettlmtPointsQty,
+      SettlmtDocDex.PostingPartnerCat,
+      SettlmtDocDex.SettlmtPeriodStartDate,
+      SettlmtDocDex.SettlmtPeriodEndDate,
+      SettlmtDocDex.CndnContrProcessCategory,
+      SettlmtDocDex.SettlmtApplStsGrp,
+      SettlmtDocDex.SettlmtDocAuthznCat,
+      SettlmtDocDex.Product,
+      SettlmtDocDex.ProductGroup,
+      SettlmtDocDex.Plant,
+      SettlmtDocDex.SupplierTaxCode,
+      SettlmtDocDex.CustomerTaxCode,
+      SettlmtDocDex.PricingDate,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'SettlmtQuantityUnit'
+      SettlmtDocDex.SettlmtQuantity,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.SettlmtQuantityUnit          as SettlmtQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.NetPriceAmount,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.NetPriceQuantityUnit         as NetPriceQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'NetPriceQuantityUnit'
+      SettlmtDocDex.NetPriceQuantity,
+      SettlmtDocDex.SettlmtToBaseQuantityNmrtr,
+      SettlmtDocDex.SettlmtToBaseQuantityDnmntr,
+      SettlmtDocDex.SettlmtToNetPriceQtyNmrtr,
+      SettlmtDocDex.SettlmtToNetPriceQtyDnmntr,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.BaseUnit,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.ItemWeightUnit               as ItemWeightUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      SettlmtDocDex.ItemNetWeight,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      SettlmtDocDex.ItemGrossWeight,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.ItemVolumeUnit               as ItemVolumeUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemVolumeUnit'
+      SettlmtDocDex.ItemVolume,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierItemGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierItemNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierSubtotal1Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierSubtotal2Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierSubtotal3Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierSubtotal4Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierSubtotal5Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierSubtotal6Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierRebateBasisAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierEffectiveItemAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SuplrItmEligibleAmtForCshDisc,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.SupplierItemTaxAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerItemGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerItemNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerSubtotal1Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerSubtotal2Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerSubtotal3Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerSubtotal4Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerSubtotal5Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerSubtotal6Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerRebateBasisAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerEffectiveItemAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustItmEligibleAmtForCshDisc,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.CustomerItemTaxAmount,
+      SettlmtDocDex.SettlmtItmStatisticalPrpty,
+      SettlmtDocDex.CashDiscountIsDeductible,
+      SettlmtDocDex.SettlmtSourceDoc,
+      SettlmtDocDex.SettlmtSourceDocItem,
+      SettlmtDocDex.SettlmtSourceDocCat,
+      SettlmtDocDex.SettlmtSourceDocFiscalYear,
+      SettlmtDocDex.SettlmtItemActivityReason,
+      SettlmtDocDex.SettlmtDocItemText,
+      SettlmtDocDex.SupplierProductID,
+      SettlmtDocDex.TaxJurisdiction,
+      @Semantics.unitOfMeasure: true
+      SettlmtDocDex.ProductPurchasePointsQtyUnit as ProductPurchasePointsQtyUnit,
+      @Semantics.quantity.unitOfMeasure: 'ProductPurchasePointsQtyUnit'
+      SettlmtDocDex.ProductPurchasePointsQty,
+      SettlmtDocDex.PriorSupplier,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SettlmtDocCurrency'
+      SettlmtDocDex.NonDeductibleInputTaxAmount,
+      SettlmtDocDex.InventoryValuationType,
+      SettlmtDocDex.SuplrSettlmtBusinessArea,
+      SettlmtDocDex.CustSettlmtBusinessArea,
+      SettlmtDocDex.SuplrSettlmtControllingArea,
+      SettlmtDocDex.SuplrSettlmtCostCenter,
+      SettlmtDocDex.SuplrSettlmtProfitCenter,
+      SettlmtDocDex.CustSettlmtControllingArea,
+      SettlmtDocDex.CustSettlmtCostCenter,
+      SettlmtDocDex.CustSettlmtProfitCenter,
+      SettlmtDocDex.Batch,
+      SettlmtDocDex.SupplierPrcDetnIsIncmplt,
+      SettlmtDocDex.CustomerPrcDetnIsIncmplt,
+      SettlmtDocDex.SettlmtPrecdgDoc,
+      SettlmtDocDex.SettlmtPrecdgDocItem,
+      SettlmtDocDex.SettlmtPrecdgDocCat,
+      SettlmtDocDex.SettlmtPrecdgDocFiscalYear,
+      SettlmtDocDex.SettlmtDocItemCat,
+      SettlmtDocDex.SettlmtItemReltdCndnContr,
+      SettlmtDocDex.SettlmtItemReltdTrdgContr,
+      SettlmtDocDex.SettlmtItemReltdTrdgContrItem,
+      SettlmtDocDex.SettlmtItemReltdPurgDoc,
+      SettlmtDocDex.SettlmtItemReltdPurgDocItem,
+      SettlmtDocDex.SettlmtItemReltdBillgDoc,
+      SettlmtDocDex.SettlmtItemReltdBillgDocItem,
+      SettlmtDocDex.SettlmtDocItemStatus,
+      SettlmtDocDex.SettlmtDocItemCancld,
+      SettlmtDocDex.SupplierSettlementOrder,
+      SettlmtDocDex.SupplierItemSettlmtStatus,
+      SettlmtDocDex.CustomerItemSettlmtStatus,
+      SettlmtDocDex.SupplierItemSettlmtBlkgReason,
+      SettlmtDocDex.CustomerItemSettlmtBlkgReason,
+      SettlmtDocDex.ItemSettlmtRelevance,
+      SettlmtDocDex.ServicesRenderedDate,
+      SettlmtDocDex.GLAccount,
+      SettlmtDocDex.SettlementFiscalYear,
+      SettlmtDocDex.HigherLevelItem,
+      SettlmtDocDex.LowerLevelItemExists,
+      SettlmtDocDex.ItemDistributionStatus,
+      SettlmtDocDex.SettlmtRefDoc,
+      SettlmtDocDex.SettlmtRefDocFiscalYear,
+      SettlmtDocDex.SettlmtRefDocLogicalSyst,
+      SettlmtDocDex.SettlmtRefDocCompanyCode,
+      SettlmtDocDex.SettlmtRefDocItem,
+      SettlmtDocDex.SettlmtRefDocCat,
+      SettlmtDocDex.ItemIntrastatRelevance,
+      SettlmtDocDex.CustomerSettlementOrder,
+      SettlmtDocDex.SuplrSettlmtWBSElmntInternalID,
+      SettlmtDocDex.CustSettlmtWBSElmntInternalID,
+      SettlmtDocDex.SettlmtDocItemCollSts,
+      SettlmtDocDex.CollSettlmtItemBlkgReason,
+      SettlmtDocDex.ItmSettlmtDocCollRelevance,
+      SettlmtDocDex.SettlmtAddlRefDoc,
+      SettlmtDocDex.SettlmtAddlRefDocFiscalYear,
+      SettlmtDocDex.SettlmtAddlRefDocLogicalSyst,
+      SettlmtDocDex.SettlmtAddlRefDocItem,
+      SettlmtDocDex.SettlmtAddlRefDocCat,
+      SettlmtDocDex.CustomerSettlmtRecipient,
+      SettlmtDocDex.SupplierSubrange,
+      SettlmtDocDex.ProductHierarchy,
+      SettlmtDocDex.SalesSpcfcProductGroup1,
+      SettlmtDocDex.SalesSpcfcProductGroup2,
+      SettlmtDocDex.SalesSpcfcProductGroup3,
+      SettlmtDocDex.SalesSpcfcProductGroup4,
+      SettlmtDocDex.SalesSpcfcProductGroup5,
+      SettlmtDocDex.BusVolDocSalesOrganization,
+      SettlmtDocDex.BusVolDocDistributionChannel,
+      SettlmtDocDex.BusVolDocDivision,
+      SettlmtDocDex.ProductCommissionGroup,
+      SettlmtDocDex.PriceSpecificationProductGroup,
+      SettlmtDocDex.SalesVolumeRebateGroup,
+
+      @Consumption.hidden: true
+      SettlmtDocDex._BillToParty                 as _BillToParty,
+      @Consumption.hidden: true
+      SettlmtDocDex._BillToPartyCompany          as _BillToPartyCompany,
+      @Consumption.hidden: true
+      SettlmtDocDex._PayerParty                  as _PayerParty,
+      @Consumption.hidden: true
+      SettlmtDocDex._PayerPartyCompany           as _PayerPartyCompany,
+      @Consumption.hidden: true
+      SettlmtDocDex._InvoicingParty              as _InvoicingParty,
+      @Consumption.hidden: true
+      SettlmtDocDex._InvoicingPartyCompany       as _InvoicingPartyCompany,
+      @Consumption.hidden: true
+      SettlmtDocDex._PayeeParty                  as _PayeeParty,
+      @Consumption.hidden: true
+      SettlmtDocDex._PayeePartyCompany           as _PayeePartyCompany,
+      @Consumption.hidden: true
+      SettlmtDocDex._AlternativeInvoicingParty   as _AlternativeInvoicingParty,
+      @Consumption.hidden: true
+      SettlmtDocDex._AltvInvoicingPartyCompany   as _AltvInvoicingPartyCompany
+
+}
+```

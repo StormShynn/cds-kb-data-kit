@@ -5,13 +5,23 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODMARGCOSTBRKDWNQRY')/$value
 semantic_en: This CDS view is designed to provide a detailed analysis of product profitability by breaking down costs associated with products. It allows users to analyze financial data related to product costs, including variable and fixed costs, within a specified fiscal period and reporting date. The view is structured to support analytical queries, enabling users to filter and aggregate data based on various dimensions such as company code, fiscal year, product group, and more. This CDS view provides the data to answer the following business questions: What is the profitability of specific products within a given fiscal period? How do variable and fixed costs contribute to the overall cost of goods sold (COGS) for products? What are the cost breakdown components for products sold within a specific time frame? How do different sales and distribution channels impact product profitability? What is the financial impact of specific sales documents and customer groups on product costs? How do different organizational divisions and profit centers contribute to product profitability? What is the effect of different cost breakdown methods on the analysis of product costs? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Product Profitability CostBrkDwn - Qry — CDS view tiêu dùng dựa trên Product Profitability CostBrkDwn - Qry.
 keywords:
   - Product Profitability CostBrkDwn - Qry
-  - Product Profitability CostBrkDwn - Qry
-  - Product Profitability CostBrkDwn - Qry
+  - product
+  - profitability
+  - costbrkdwn
+  - qry
+  - currency
+  - field
+  - company
+  - code
+  - fiscal
+  - year
+  - ledger
 tags:
   - CO
   - bo:businesspartner
@@ -25,7 +35,7 @@ tags:
   - lob:controlling
   - lob:finance
   - product
-  - metadata-only
+  - bo:companycode
 ---
 # C_PRODMARGCOSTBRKDWNQRY
 
@@ -37,7 +47,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODMARGCOSTBRKDWNQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODMARGCOSTBRKDWNQRY')/$value) |
 
 ## Fields
 
@@ -74,7 +84,7 @@ tags:
 | `CostBreakdownComponent` |  | |  |  | `CHAR(10)` |  |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
 | `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Currency Role Currency |
-| `VarblCOGSAmtInDspCrcy` |  | |  |  | `CURR(24)` |  |
+| `VarblCOGSAmtInDspCrcy` |  | |  | `$projection.amountindisplaycurrency - $projection.fixedamountindspcrcy` | `CURR(24)` |  |
 | `FixedAmountInDspCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Currency Role Currency |
 | `Product` |  | |  |  | `CHAR(40)` | Product |
 | `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
@@ -83,3 +93,219 @@ tags:
 | `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
 | `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
 | `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `_DocumentStore` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODMARGCOSTBRKDWNQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODMARGCOSTBRKDWNQRY')/$value)*
+
+```abap
+@EndUserText.label: 'Product Profitability CostBrkDwn - Qry'
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.modelingPattern:#ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities:[#ANALYTICAL_QUERY]
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.dataClass: #MIXED
+@Analytics.settings.maxProcessingEffort: #HIGH
+@Metadata.ignorePropagatedAnnotations: true
+@AccessControl.personalData.blocking:#REQUIRED
+@Analytics.intentBasedNavigation.filterMapper: 'CL_FINS_MA_PRODMARGA_RB_EXIT'
+@Analytics.variableCheck.implementedBy: 'ABAP:CL_FINS_MA_CDS_CHECK_VAR'
+
+
+define transient view entity C_ProdMargCostBrkDwnQry
+  provider contract analytical_query
+  with parameters
+    @EndUserText.label: 'Financial Statement Version'
+    @Consumption.valueHelpDefinition: [{
+      entity: {
+       name:    'I_GLAccountHierarchyStdVH',
+       element: 'GLAccountHierarchy'
+           }
+      }]
+    @Consumption.defaultValue: 'YPS2'
+    P_GLAccountHierarchy       : fins_sem_tag_hryid,
+    @Consumption.derivation: { lookupEntity: 'I_UserSetGetParamForCtrlgArea',
+                               resultElement: 'FiscalYearVariant' }
+    @Semantics.fiscal.yearVariant: true
+    P_FiscalYearVariant          : fis_periv,
+
+    @EndUserText.label: 'Cost Breakdown Method'
+    @Consumption.defaultValue: 'CBPB'
+//    @Consumption.valueHelpDefinition: [{
+//        entity: {
+//            name:    'I_CostBreakdownMethodVH',
+//            element: 'ComponentBreakdownMethod'
+//        }
+//        }]
+    P_ComponentBreakdownMethod : fucb_method,
+
+    @EndUserText.label:'Reporting Date'
+    @Semantics.businessDate.at: true
+    @Environment.systemField : #SYSTEM_DATE
+    P_ReportingDate              : vdm_v_key_date,
+
+    @Consumption.derivation: { lookupEntity: 'I_FiscalCalendarDate',
+                               resultElement: 'FiscalYearStartDate',
+                               binding: [ { targetElement: 'CalendarDate', type: #PARAMETER, value: 'P_ReportingDate' },
+                                          { targetElement: 'FiscalYearVariant',
+                                            type: #ELEMENT,
+                                            value: 'FiscalYearVariant' } ] }                                            
+    @Consumption.hidden: true
+    P_FiscalYearStartDate         : vdm_v_key_date
+
+  as projection on I_ProdMargCostBrkDwnCube
+                                  ( 
+                                    P_ComponentBreakdownMethod : 'CBPB',
+                                    P_GLAccountHierarchy : $parameters.P_GLAccountHierarchy
+                                  )  as I_ProdMargCostBrkDwnCube
+
+{
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: true, defaultValue: 'GC  ' }
+  @AnalyticsDetails.query: {axis: #COLUMNS}
+  @UI.textArrangement: #TEXT_ONLY
+  CurrencyField,
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: true }
+  @UI.textArrangement: #TEXT_LAST
+  CompanyCode,
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  FiscalYear,
+  @Consumption.derivation: { lookupEntity: 'I_Ledger',
+    resultElement: 'Ledger', binding: [
+    { targetElement : 'IsLeadingLedger' , type : #CONSTANT, value : 'X' } ]
+   }
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+  @UI.textArrangement: #TEXT_LAST
+  @Consumption.dynamicLabel: { label: 'Ledger'}
+  Ledger,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  LedgerFiscalYear,
+  
+  @Consumption.filter: {selectionType: #SINGLE, multipleSelections: false, mandatory: true, hidden: true}
+  @Consumption.derivation: { lookupEntity: 'F_LdgrCoCodeFsclYrVariant',
+                             resultElement: 'FiscalYearVariant',
+                             resultAggregation: #MAX,
+                             binding: [ { targetElement: 'Ledger',      type: #ELEMENT, value: 'Ledger'      },
+                                          { targetElement: 'CompanyCode', type: #ELEMENT, value: 'CompanyCode' } ] }  
+  @Semantics.fiscal.yearVariant: true
+  FiscalYearVariant,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  FiscalPeriod,
+  
+  FiscalYearPeriod,
+  
+  @UI.textArrangement: #TEXT_LAST
+  CurrencyRole,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SoldProductGroup,
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SoldProduct,
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  CustomerGroup,
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SalesDocument,
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  Customer,
+  
+  @UI.textArrangement: #TEXT_LAST
+  @Consumption.dynamicLabel: { label: 'Sales Document Item'}
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  SalesDocumentItem,
+  
+  @UI.textArrangement: #TEXT_LAST
+  SalesDistrict,
+  @UI.textArrangement: #TEXT_LAST
+  BillToParty,
+  @UI.textArrangement: #TEXT_LAST
+  ShipToParty,
+  @UI.textArrangement: #TEXT_LAST
+  TradingPartner,
+  @EndUserText.label: 'Cost Breakdown Method'
+  @UI.textArrangement: #TEXT_LAST
+  ComponentBreakdownMethod,
+  @EndUserText.label: 'Cost Breakdown Structure'
+  @UI.textArrangement: #TEXT_LAST
+  CostBreakdownStructure,
+  
+  @UI.textArrangement: #TEXT_LAST
+  AccountAssignmentType,
+  
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  GLAccount,
+  
+  @UI.textArrangement: #TEXT_LAST
+  SalesOrganization,
+  @UI.textArrangement: #TEXT_LAST
+  DistributionChannel,
+  @UI.textArrangement: #TEXT_LAST
+  OrganizationDivision,
+  @UI.textArrangement: #TEXT_LAST
+  Plant,
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  ProfitCenter,
+  
+  @AnalyticsDetails.query.axis: #ROWS
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.totals: #SHOW 
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  @EndUserText.label: 'Cost Breakdown Component'
+  CostBreakdownComponent,
+
+  Currency,
+
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label: 'COGS'
+  @AnalyticsDetails.query.reverseSign: true
+  AmountInDisplayCurrency,
+  
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label: 'COGS Variable'
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.reverseSign: true
+  $projection.amountindisplaycurrency -   $projection.fixedamountindspcrcy   as VarblCOGSAmtInDspCrcy,
+  
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label: 'COGS Fixed'
+  @Aggregation.default: #SUM
+  @AnalyticsDetails.query.reverseSign: true
+  FixedAmountInDspCrcy,
+  
+  @UI.textArrangement: #TEXT_LAST
+  Product,
+  @UI.textArrangement: #TEXT_LAST
+  BusinessTransactionType,
+  @UI.textArrangement: #TEXT_LAST
+  ReferenceDocumentType,
+  @UI.textArrangement: #TEXT_LAST
+  InventoryValuationType,
+
+  @UI.textArrangement: #TEXT_LAST
+  SourceLedger,
+  @UI.textArrangement: #TEXT_LAST
+  AccountingDocument,
+  @UI.textArrangement: #TEXT_LAST
+  LedgerGLLineItem,
+  
+  _DocumentStore
+}
+where
+          ComponentBreakdownMethod = $parameters.P_ComponentBreakdownMethod 
+      and PostingDate              >= $parameters.P_FiscalYearStartDate
+      and PostingDate              <= $parameters.P_ReportingDate
+```

@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `AddressGroup` | ✓ | |  | `addr_group` |  |  |
-| `AddressGroupName` |  | |  | `group_text` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `AddressGroup` | ✓ | |  | `addr_group` | `CHAR(4)` | Address Group (Key) (Business Address Services) |
+| `AddressGroupName` |  | |  | `group_text` | `CHAR(40)` | Address group description |
 
 ## Source Code
 

@@ -1051,18 +1051,6 @@
     "modifiedAt": 1784095916690,
     "fetchedAt": "2026-08-07T16:01:59.549Z"
   },
-  "C_PCCACTLTGTCOSTQRY": {
-    "modifiedAt": 1784095853229,
-    "fetchedAt": "2026-08-07T16:01:59.841Z"
-  },
-  "C_PCCEVTBSDWIPVARCQRY": {
-    "modifiedAt": 1784095849202,
-    "fetchedAt": "2026-08-07T16:01:59.914Z"
-  },
-  "C_PERSSETTLMTDOCDEX": {
-    "modifiedAt": 1784095296603,
-    "fetchedAt": "2026-08-07T16:02:00.148Z"
-  },
   "C_PFMGOODSMOVEMENTDOCUMENTDEX": {
     "modifiedAt": 1784095710413,
     "fetchedAt": "2026-08-07T16:02:00.392Z"
@@ -1070,18 +1058,6 @@
   "C_PFMPRODUCTSTOCKDEX": {
     "modifiedAt": 1784095675761,
     "fetchedAt": "2026-08-07T16:02:00.499Z"
-  },
-  "C_PNLPLNACTLCMTMTJRNLENTRITMQ": {
-    "modifiedAt": 1784095853299,
-    "fetchedAt": "2026-08-07T16:02:00.751Z"
-  },
-  "C_POITEMCOUNTFORSUPLRQUERY": {
-    "modifiedAt": 1784095472662,
-    "fetchedAt": "2026-08-07T16:02:00.994Z"
-  },
-  "C_POWTHNONCMPLNCPAYTTRMQRY": {
-    "modifiedAt": 1784095469407,
-    "fetchedAt": "2026-08-07T16:02:01.099Z"
   },
   "C_PRAACCTGDOCUMENTHDRQRY": {
     "modifiedAt": 1784095655976,
@@ -1170,94 +1146,6 @@
   "C_PRATAXRPTGHISTWYCONSVNQRY": {
     "modifiedAt": 1784095713161,
     "fetchedAt": "2026-08-07T16:02:05.598Z"
-  },
-  "C_PRICEVARIANCEQUERY": {
-    "modifiedAt": 1784095466691,
-    "fetchedAt": "2026-08-07T16:02:05.816Z"
-  },
-  "C_PRODANDSRVCMARGANLYSQ": {
-    "modifiedAt": 1784095860658,
-    "fetchedAt": "2026-08-07T16:02:05.784Z"
-  },
-  "C_PRODCOSTBRKDWNCOMPRNQRY": {
-    "modifiedAt": 1784095857555,
-    "fetchedAt": "2026-08-07T16:02:06.187Z"
-  },
-  "C_PRODCOSTESTCOSTCOMPDEX": {
-    "modifiedAt": 1784095861019,
-    "fetchedAt": "2026-08-07T16:02:06.362Z"
-  },
-  "C_PRODMARGCOSTBRKDWNQRY": {
-    "modifiedAt": 1784095843067,
-    "fetchedAt": "2026-08-07T16:02:06.401Z"
-  },
-  "C_PRODUCTCOSTBYORDERQUERY": {
-    "modifiedAt": 1784095843238,
-    "fetchedAt": "2026-08-07T16:02:06.779Z"
-  },
-  "C_PRODUCTMARGINANALYSISQUERY": {
-    "modifiedAt": 1784095845821,
-    "fetchedAt": "2026-08-07T16:02:06.962Z"
-  },
-  "C_PRODUCTMARGINCOMPARISONQRY": {
-    "modifiedAt": 1784095846568,
-    "fetchedAt": "2026-08-07T16:02:06.991Z"
-  },
-  "C_PRODUCTPROFITABILITYQUERY": {
-    "modifiedAt": 1784095843665,
-    "fetchedAt": "2026-08-07T16:02:07.314Z"
-  },
-  "C_PROFITABILITY_Q0002": {
-    "modifiedAt": 1784095843195,
-    "fetchedAt": "2026-08-07T16:02:07.563Z"
-  },
-  "C_PROFITABILITY_Q0001": {
-    "modifiedAt": 1784095856031,
-    "fetchedAt": "2026-08-07T16:02:07.574Z"
-  },
-  "C_PROFITANDLOSSPLANACTQ2903": {
-    "modifiedAt": 1784095843875,
-    "fetchedAt": "2026-08-07T16:02:07.884Z"
-  },
-  "C_PROFITANDLOSSQ2901": {
-    "modifiedAt": 1784095843365,
-    "fetchedAt": "2026-08-07T16:02:08.187Z"
-  },
-  "C_PROFITCENTERPLANACTQ2701": {
-    "modifiedAt": 1784095848062,
-    "fetchedAt": "2026-08-07T16:02:08.116Z"
-  },
-  "C_PROFITCENTERQ2701": {
-    "modifiedAt": 1784095839528,
-    "fetchedAt": "2026-08-07T16:02:08.440Z"
-  },
-  "C_PROFITCENTERSEMANTICTAG": {
-    "modifiedAt": 1784095846335,
-    "fetchedAt": "2026-08-07T16:02:08.711Z"
-  },
-  "C_PROFITCENTERSTATKEYFIGSEMTAG": {
-    "modifiedAt": 1784095842509,
-    "fetchedAt": "2026-08-07T16:02:08.743Z"
-  },
-  "C_PROJECTPLANACTQ2201": {
-    "modifiedAt": 1784095842623,
-    "fetchedAt": "2026-08-07T16:02:09.028Z"
-  },
-  "C_PROJECTPLANACTQ2203": {
-    "modifiedAt": 1784095851006,
-    "fetchedAt": "2026-08-07T16:02:09.255Z"
-  },
-  "C_PROJECTQ2201": {
-    "modifiedAt": 1784095852603,
-    "fetchedAt": "2026-08-07T16:02:09.353Z"
-  },
-  "C_PROJECTWIPHOURSQUERY": {
-    "modifiedAt": 1784095839604,
-    "fetchedAt": "2026-08-07T16:02:09.610Z"
-  },
-  "C_PROMISETOPAYOVERVIEW": {
-    "modifiedAt": 1784095912514,
-    "fetchedAt": "2026-08-07T16:02:09.838Z"
   },
   "C_PUBLICSECTORBUDGETQUERY": {
     "modifiedAt": 1784095672101,
@@ -1371,45 +1259,9 @@
     "modifiedAt": 1784095684082,
     "fetchedAt": "2026-08-07T16:02:15.168Z"
   },
-  "C_PURCHASEORDERVALUE": {
-    "modifiedAt": 1784095468000,
-    "fetchedAt": "2026-08-07T16:02:15.389Z"
-  },
-  "C_PURCHASEORDERVALUEQUERY": {
-    "modifiedAt": 1784095487216,
-    "fetchedAt": "2026-08-07T16:02:15.468Z"
-  },
-  "C_PURGSPENDOFFCONTRACT": {
-    "modifiedAt": 1784095480890,
-    "fetchedAt": "2026-08-07T16:02:15.719Z"
-  },
-  "C_PURORDOUTPUTAUTOMNRATE": {
-    "modifiedAt": 1784095473995,
-    "fetchedAt": "2026-08-07T16:02:15.954Z"
-  },
-  "C_PURORDSERVICESPENDQUERY": {
-    "modifiedAt": 1784095478311,
-    "fetchedAt": "2026-08-07T16:02:16.019Z"
-  },
-  "C_QUALITYCERTIFICATEEMAIL": {
-    "modifiedAt": 1784095177646,
-    "fetchedAt": "2026-08-07T16:02:16.334Z"
-  },
   "C_RAOPENREVENUEPERPERIODQRY_3": {
     "modifiedAt": 1781168887607,
     "fetchedAt": "2026-07-06T10:00:03.238Z"
-  },
-  "C_RAPOSTINGITEMQUERY_2": {
-    "modifiedAt": 1784095855427,
-    "fetchedAt": "2026-08-07T16:02:16.506Z"
-  },
-  "C_RATOTALOPENREVENUEQUERY_2": {
-    "modifiedAt": 1784095854072,
-    "fetchedAt": "2026-08-07T16:02:16.612Z"
-  },
-  "C_RAYRTODTERECGDREVNQUERY_2": {
-    "modifiedAt": 1784095844963,
-    "fetchedAt": "2026-08-07T16:02:16.890Z"
   },
   "C_RDPBATCHCLASSIFICATIONDEX": {
     "modifiedAt": 1784095675257,
@@ -1487,181 +1339,21 @@
     "modifiedAt": 1784095660970,
     "fetchedAt": "2026-08-07T16:02:20.414Z"
   },
-  "C_RESERVATIONDOCUMENTITEMDEX": {
-    "modifiedAt": 1784095536209,
-    "fetchedAt": "2026-08-07T16:02:20.603Z"
-  },
-  "C_RESOLVEDDISPUTECASE": {
-    "modifiedAt": 1784095910550,
-    "fetchedAt": "2026-08-07T16:02:20.759Z"
-  },
-  "C_REVNPRJBILLGELMNTQRY": {
-    "modifiedAt": 1784095838825,
-    "fetchedAt": "2026-08-07T16:02:20.983Z"
-  },
-  "C_REVENUEFROMINVOICEQRY": {
-    "modifiedAt": 1784095255006,
-    "fetchedAt": "2026-08-07T16:02:21.181Z"
-  },
-  "C_REVNPRJMARGOVWQRY": {
-    "modifiedAt": 1784095846053,
-    "fetchedAt": "2026-08-07T16:02:21.317Z"
-  },
-  "C_SALESANALYTICSQRY_1": {
-    "modifiedAt": 1784095247505,
-    "fetchedAt": "2026-08-07T16:02:21.570Z"
-  },
-  "C_SALESCONTRACTITEMQRY": {
-    "modifiedAt": 1784095251634,
-    "fetchedAt": "2026-08-07T16:02:21.739Z"
-  },
-  "C_SALESCONTRACTITMFLFMTQ": {
-    "modifiedAt": 1784095304666,
-    "fetchedAt": "2026-08-07T16:02:21.891Z"
-  },
-  "C_SALESORDERITEMQRY": {
-    "modifiedAt": 1784095252100,
-    "fetchedAt": "2026-08-07T16:02:22.112Z"
-  },
-  "C_SALESORDERQ2301": {
-    "modifiedAt": 1784095855287,
-    "fetchedAt": "2026-08-07T16:02:22.302Z"
-  },
-  "C_SALESORDERQUERY": {
-    "modifiedAt": 1784095249381,
-    "fetchedAt": "2026-08-07T16:02:22.425Z"
-  },
-  "C_SALESQUOTATIONITEMQRY": {
-    "modifiedAt": 1784095290147,
-    "fetchedAt": "2026-08-07T16:02:22.651Z"
-  },
-  "C_SALESSCHEDGAGRMTITEMQRY": {
-    "modifiedAt": 1784095253915,
-    "fetchedAt": "2026-08-07T16:02:22.870Z"
-  },
-  "C_SALESVOLUMEANALYTICSQRY": {
-    "modifiedAt": 1784095248087,
-    "fetchedAt": "2026-08-07T16:02:22.995Z"
-  },
   "C_SECURITYPRICEQUERY": {
     "modifiedAt": 1784095909721,
     "fetchedAt": "2026-08-07T16:02:23.181Z"
-  },
-  "C_SERVICECOSTRATEDEX": {
-    "modifiedAt": 1784095841338,
-    "fetchedAt": "2026-08-07T16:02:23.429Z"
-  },
-  "C_SERVICEMARGINQUERY": {
-    "modifiedAt": 1784095845142,
-    "fetchedAt": "2026-08-07T16:02:23.618Z"
   },
   "C_SERVICEORDERQUERY": {
     "modifiedAt": 1784095254973,
     "fetchedAt": "2026-08-07T16:02:23.788Z"
   },
-  "C_SERVICEORDERQRY2401": {
-    "modifiedAt": 1784095843472,
-    "fetchedAt": "2026-08-07T16:02:23.985Z"
-  },
-  "C_SETTLMTDOCDEX": {
-    "modifiedAt": 1784095254446,
-    "fetchedAt": "2026-08-07T16:02:24.212Z"
-  },
   "C_SFTYDATASHTOUTPREQFDP_2": {
     "modifiedAt": 1784095678222,
     "fetchedAt": "2026-08-07T16:02:24.361Z"
   },
-  "C_SETTLMTDOCLISTDEX": {
-    "modifiedAt": 1784095259090,
-    "fetchedAt": "2026-08-07T16:02:24.535Z"
-  },
   "C_SHPDASPLNDDELIVITEMSQRY": {
     "modifiedAt": 1784095534590,
     "fetchedAt": "2026-08-07T16:02:24.821Z"
-  },
-  "C_SITEDEX": {
-    "modifiedAt": 1784095779977,
-    "fetchedAt": "2026-08-07T16:02:24.903Z"
-  },
-  "C_SLSMATLDETNRECORDDEX": {
-    "modifiedAt": 1784095257439,
-    "fetchedAt": "2026-08-07T16:02:25.114Z"
-  },
-  "C_SLSORDCONFANLYTSQRY": {
-    "modifiedAt": 1784095260574,
-    "fetchedAt": "2026-08-07T16:02:25.365Z"
-  },
-  "C_SLSPERFPLANACTUALQUERY": {
-    "modifiedAt": 1784095254911,
-    "fetchedAt": "2026-08-07T16:02:25.462Z"
-  },
-  "C_SLSQTANCONVERSIONRATEQ": {
-    "modifiedAt": 1784095298671,
-    "fetchedAt": "2026-08-07T16:02:25.702Z"
-  },
-  "C_SOLVEDDSPUTCASESTSDURNQ": {
-    "modifiedAt": 1784095917277,
-    "fetchedAt": "2026-08-07T16:02:25.981Z"
-  },
-  "C_STOCKQTYCURRENTVALUE_2": {
-    "modifiedAt": 1784095533394,
-    "fetchedAt": "2026-08-07T16:02:25.997Z"
-  },
-  "C_STOCKQTYCURRENTVALUE_3": {
-    "modifiedAt": 1784095538979,
-    "fetchedAt": "2026-08-07T16:02:26.244Z"
-  },
-  "C_STOCKQUANTITYCURRENTVALUE": {
-    "modifiedAt": 1784095532992,
-    "fetchedAt": "2026-08-07T16:02:26.569Z"
-  },
-  "C_SUMZDJITCALLEMAILDATAPRVDR": {
-    "modifiedAt": 1784095168365,
-    "fetchedAt": "2026-08-07T16:02:26.608Z"
-  },
-  "C_SUPLRBILLGDOCDEX": {
-    "modifiedAt": 1784095259610,
-    "fetchedAt": "2026-08-07T16:02:27.050Z"
-  },
-  "C_SUPLREVALBYQLTYNOTIFQRY": {
-    "modifiedAt": 1784095488574,
-    "fetchedAt": "2026-08-07T16:02:27.147Z"
-  },
-  "C_SUPLREVALBYQNAIREQRY": {
-    "modifiedAt": 1784095475682,
-    "fetchedAt": "2026-08-07T16:02:27.169Z"
-  },
-  "C_SUPLREVALBYQUALITYQRY": {
-    "modifiedAt": 1784095478563,
-    "fetchedAt": "2026-08-07T16:02:27.625Z"
-  },
-  "C_SUPLREVALUSRCRITRASCRQRY": {
-    "modifiedAt": 1784095470071,
-    "fetchedAt": "2026-08-07T16:02:27.697Z"
-  },
-  "C_SUPLREVALBYQUANTITYQRY": {
-    "modifiedAt": 1784095471560,
-    "fetchedAt": "2026-08-07T16:02:27.709Z"
-  },
-  "C_SUPLREVALUSRDFNDCRITRASCORES": {
-    "modifiedAt": 1784095470280,
-    "fetchedAt": "2026-08-07T16:02:28.161Z"
-  },
-  "C_SUPLRINVCEMAILPARAMETER": {
-    "modifiedAt": 1784095488248,
-    "fetchedAt": "2026-08-07T16:02:28.281Z"
-  },
-  "C_SUPLRSETTLMTDEX": {
-    "modifiedAt": 1784095305887,
-    "fetchedAt": "2026-08-07T16:02:28.332Z"
-  },
-  "C_SUPLRSETTLMTLISTDEX": {
-    "modifiedAt": 1784095289809,
-    "fetchedAt": "2026-08-07T16:02:28.730Z"
-  },
-  "C_SUPPLIEREVALOVERALLQRY": {
-    "modifiedAt": 1784095466751,
-    "fetchedAt": "2026-08-07T16:02:28.869Z"
   },
   "C_SUSTCOMPANYCODEADDRESSDEX": {
     "modifiedAt": 1784095737996,
@@ -1687,33 +1379,13 @@
     "modifiedAt": 1784095680238,
     "fetchedAt": "2026-08-07T16:02:30.044Z"
   },
-  "C_TIMEVARIANCEQUERY": {
-    "modifiedAt": 1784095468892,
-    "fetchedAt": "2026-08-07T16:02:30.062Z"
-  },
-  "C_TOTALACCOUNTSRECEIVABLES": {
-    "modifiedAt": 1784095909267,
-    "fetchedAt": "2026-08-07T16:02:30.421Z"
-  },
   "C_TRANSPORTATIONORDEREDP": {
     "modifiedAt": 1784095544945,
     "fetchedAt": "2026-08-07T16:02:30.635Z"
   },
-  "C_TRIALBALANCE": {
-    "modifiedAt": 1784095849928,
-    "fetchedAt": "2026-08-07T16:02:30.646Z"
-  },
-  "C_TRIALBALANCEQ0001": {
-    "modifiedAt": 1784095843924,
-    "fetchedAt": "2026-08-07T16:02:30.951Z"
-  },
   "C_TRSYCTPTYLIMITOVERVIEWQ": {
     "modifiedAt": 1784095911506,
     "fetchedAt": "2026-08-07T16:02:31.172Z"
-  },
-  "C_TRIALBALANCEQ0002": {
-    "modifiedAt": 1784095843257,
-    "fetchedAt": "2026-08-07T16:02:31.193Z"
   },
   "C_TRSYCTPTYLMTBPRATINGQRY": {
     "modifiedAt": 1784095921171,
@@ -1731,10 +1403,6 @@
     "modifiedAt": 1784095268274,
     "fetchedAt": "2026-08-07T16:02:32.096Z"
   },
-  "C_US_TAXPARTNERTAXDOCITEMQUERY": {
-    "modifiedAt": 1784095851356,
-    "fetchedAt": "2026-08-07T16:02:32.374Z"
-  },
   "C_VALUATIONDOCUMENTHDRQRY": {
     "modifiedAt": 1784095669248,
     "fetchedAt": "2026-08-07T16:02:32.371Z"
@@ -1746,42 +1414,6 @@
   "C_WELLCOMPLTNDISPOSNVOLQRY": {
     "modifiedAt": 1784095678432,
     "fetchedAt": "2026-08-07T16:02:32.953Z"
-  },
-  "C_WORKCENTERPRODCOSTQUERY": {
-    "modifiedAt": 1784095844464,
-    "fetchedAt": "2026-08-07T16:02:32.949Z"
-  },
-  "I_ACCOUNTINGDOCUMENT": {
-    "modifiedAt": 1784095847622,
-    "fetchedAt": "2026-08-07T16:02:33.210Z"
-  },
-  "I_ACCOUNTINGDOCUMENTSTDVH": {
-    "modifiedAt": 1784095839795,
-    "fetchedAt": "2026-08-07T16:02:33.495Z"
-  },
-  "I_ACCOUNTINGDOCUMENTTYPESTDVH": {
-    "modifiedAt": 1784095841736,
-    "fetchedAt": "2026-08-07T16:02:33.499Z"
-  },
-  "I_ACTLPLNLINEITEMSEMTAGGLACCT": {
-    "modifiedAt": 1784095841872,
-    "fetchedAt": "2026-08-07T16:02:33.840Z"
-  },
-  "I_ACTLPLNSRVCMARGITEMCUBE": {
-    "modifiedAt": 1784095845117,
-    "fetchedAt": "2026-08-07T16:02:34.121Z"
-  },
-  "I_ACTUALPLANJRNLENTRYITEMCUBE": {
-    "modifiedAt": 1784095840099,
-    "fetchedAt": "2026-08-07T16:02:34.079Z"
-  },
-  "I_ACTUALPLANLINEITEMSEMTAG": {
-    "modifiedAt": 1784095852774,
-    "fetchedAt": "2026-08-07T16:02:34.424Z"
-  },
-  "I_ACTUALPLANSTATKEYFIGSEMTAG": {
-    "modifiedAt": 1784095859799,
-    "fetchedAt": "2026-08-07T16:02:34.648Z"
   },
   "I_AGENCYPAYORREPORTTYPE": {
     "modifiedAt": 1784095701513,
@@ -2030,38 +1662,6 @@
   "I_ALLOCATIONFREQUENCYTEXT": {
     "modifiedAt": 1784095765278,
     "fetchedAt": "2026-08-07T16:02:46.430Z"
-  },
-  "I_ALLOCATIONTABLEITEMCATEGORY": {
-    "modifiedAt": 1784095654779,
-    "fetchedAt": "2026-08-07T16:02:46.666Z"
-  },
-  "I_ALLOCTBLITMCATTXT": {
-    "modifiedAt": 1784095654356,
-    "fetchedAt": "2026-08-07T16:02:46.736Z"
-  },
-  "I_ALTERNATIVEGLACCOUNTISUSED": {
-    "modifiedAt": 1784095845430,
-    "fetchedAt": "2026-08-07T16:02:47.036Z"
-  },
-  "I_ALTERNATIVEGLACCOUNTISUSEDT": {
-    "modifiedAt": 1784095851482,
-    "fetchedAt": "2026-08-07T16:02:47.209Z"
-  },
-  "I_AMOUNTFIELDGROUP": {
-    "modifiedAt": 1784095255272,
-    "fetchedAt": "2026-08-07T16:02:47.314Z"
-  },
-  "I_AMOUNTFIELDGROUPTEXT": {
-    "modifiedAt": 1784095271538,
-    "fetchedAt": "2026-08-07T16:02:47.574Z"
-  },
-  "I_APDAYSPAYOUTST": {
-    "modifiedAt": 1784095922929,
-    "fetchedAt": "2026-08-07T16:02:47.787Z"
-  },
-  "I_APFLEXIBLEAGING": {
-    "modifiedAt": 1784095911403,
-    "fetchedAt": "2026-08-07T16:02:47.889Z"
   },
   "I_APJRNLENTRITMAGINGGRID": {
     "modifiedAt": 1784095911963,

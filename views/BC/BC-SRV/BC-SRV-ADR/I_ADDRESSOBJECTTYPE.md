@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressObjectType` | ✓ | |  | `cast ( domvalue_l as ad_adrtype )` |  |  |
+| `AddressObjectType` | ✓ | |  | `cast ( domvalue_l as ad_adrtype )` | `CHAR(1)` | Address type (1=Organization, 2=Person, 3=Contact person) |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

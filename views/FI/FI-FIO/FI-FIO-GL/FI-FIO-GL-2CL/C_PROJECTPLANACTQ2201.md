@@ -5,12 +5,18 @@ app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROJECTPLANACTQ2201')/$value
 semantic_en: This CDS view provides the prerequisites for answering the following business questions: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in company code currency or global currency? What are the absolute and relative differences of the actual and the plan amounts in company code currency and global currency? Optional: What are the actual and plan amounts for each WBS element, Project Definition, and G/L account in transaction currency? What are the absolute and relative differences of the actual and the plan amounts in transaction currency? For all three currency types, you can drill down for further relevant characteristics.
+semantic_vi: Project Plan Actual — CDS view tiêu dùng dựa trên I_ActualPlanJrnlEntryItemCube.
 keywords:
   - Project Plan Actual
-  - Project Plan Actual
+  - project
+  - plan
+  - actual
+  - statistical
+  - element
+  - external
 tags:
   - FI
   - account
@@ -24,7 +30,7 @@ tags:
   - plan
   - project
   - transaction
-  - metadata-only
+  - bo:project
 ---
 # C_PROJECTPLANACTQ2201
 
@@ -36,7 +42,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROJECTPLANACTQ2201')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROJECTPLANACTQ2201')/$value) |
 
 ## Fields
 
@@ -48,7 +54,6 @@ tags:
 | `WBSElement` |  | |  |  | `CHAR(24)` | WBS Element |
 | `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
 | `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `GLAccountName` |  | |  |  | `CHAR(20)` | G/L Account Name |
 | `BillableControl` |  | |  |  | `CHAR(2)` | Billable Control |
 | `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
 | `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
@@ -79,7 +84,7 @@ tags:
 | `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
 | `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Partner Cost Center |
 | `PartnerFunctionalArea` |  | |  |  | `CHAR(16)` | Partner Functional Area |
-| `PartnerOrder` |  | |  |  | `CHAR(12)` | Partner Order |
+| `PartnerOrder` |  | |  | `PartnerOrder_2` | `CHAR(12)` | Partner Order |
 | `PartnerProfitCenter` |  | |  |  | `CHAR(10)` | Partner Profit Center |
 | `PartnerProject` |  | |  |  | `CHAR(24)` | Partner Project |
 | `PartnerProjectExternalID` |  | |  |  | `CHAR(24)` | Partner Project External ID |
@@ -92,29 +97,540 @@ tags:
 | `SoldProduct` |  | |  |  | `CHAR(40)` | Product Sold |
 | `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
 | `CostAnalysisResource` |  | |  |  | `CHAR(10)` | Cost Analysis Resource |
-| `CostAnalysisResourceName` |  | |  |  | `CHAR(20)` | Cost Analysis Resource Name |
 | `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
 | `ServicesRenderedDate` |  | |  |  | `DATS(8)` | Date on which services are rendered |
-| `SoldMaterial` |  | |  |  | `CHAR(40)` | Sold Material |
+| `SoldMaterial` |  | |  | `cast(SoldMaterial as fis_sold_material preserving type)` | `CHAR(40)` | Sold Material |
 | `PartnerCompany` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
 | `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
 | `WorkItem` |  | |  |  | `CHAR(10)` | Work Item ID |
 | `YearMonth` |  | |  |  | `NUMC(6)` | Year Month |
 | `YearQuarter` |  | |  |  | `NUMC(5)` | Year Quarter |
 | `YearWeek` |  | |  |  | `NUMC(6)` | Year Week |
-| `ActualAmountInTransactionCrcy` |  | |  |  | `CURR(23)` | Amount in Global Currency |
-| `PlanAmountInTransactionCrcy` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
-| `DifferenceAmtInTransCrcy` |  | |  |  | `INT1(3)` |  |
-| `TransCrcyDifferencePct` |  | |  |  | `INT1(3)` |  |
-| `ActualAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
-| `PlanAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
-| `DifferenceAmtInCoCodeCrcy` |  | |  |  | `INT1(3)` |  |
-| `CoCodeCrcyDifferencePct` |  | |  |  | `INT1(3)` |  |
-| `ActualAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
-| `PlanAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
-| `DifferenceAmtInGlobalCrcy` |  | |  |  | `INT1(3)` |  |
-| `GlobalCrcyDifferencePct` |  | |  |  | `INT1(3)` |  |
-| `ActualAmountInObjectCurrency` |  | |  |  | `CURR(23)` | Actual Amount in Object Currency |
+| `ActualAmountInTransactionCrcy` |  | |  | `case when PlanningCategory = 'ACT01' then ActualAmountInTransactionCrcy else cast( 0 as fins_vkcur12) end` | `CURR(23)` | Amount in Global Currency |
+| `PlanAmountInTransactionCrcy` |  | |  | `case when PlanningCategory = :P_PlanningCategory then PlanAmountInTransactionCrcy else cast( '0' as fins_vhcur12) end` | `CURR(23)` | Amount in Company Code Currency |
+| `DifferenceAmtInTransCrcy` |  | |  | `1` | `INT1(3)` |  |
+| `TransCrcyDifferencePct` |  | |  | `1` | `INT1(3)` |  |
+| `ActualAmountInCompanyCodeCrcy` |  | |  | `case when PlanningCategory = 'ACT01' then ActualAmountInCompanyCodeCrcy else cast( 0 as fins_vhcur12) end` | `CURR(23)` | Amount in Company Code Currency |
+| `PlanAmountInCompanyCodeCrcy` |  | |  | `case when PlanningCategory = :P_PlanningCategory then PlanAmountInCompanyCodeCrcy else cast( '0' as fins_vhcur12) end` | `CURR(23)` | Amount in Company Code Currency |
+| `DifferenceAmtInCoCodeCrcy` |  | |  | `1` | `INT1(3)` |  |
+| `CoCodeCrcyDifferencePct` |  | |  | `1` | `INT1(3)` |  |
+| `ActualAmountInGlobalCurrency` |  | |  | `case when PlanningCategory = 'ACT01' then ActualAmountInGlobalCurrency else cast( 0 as fins_vkcur12) end` | `CURR(23)` | Amount in Global Currency |
+| `PlanAmountInGlobalCurrency` |  | |  | `case when PlanningCategory = :P_PlanningCategory then PlanAmountInGlobalCurrency else cast( '0' as fins_vkcur12) end` | `CURR(23)` | Amount in Global Currency |
+| `DifferenceAmtInGlobalCrcy` |  | |  | `0` | `INT1(3)` |  |
+| `GlobalCrcyDifferencePct` |  | |  | `1` | `INT1(3)` |  |
+| `ActualAmountInObjectCurrency` |  | |  | `case when PlanningCategory = 'ACT01' then ActualAmountInObjectCurrency else cast( '0' as fis_act_co_osl) end` | `CURR(23)` | Actual Amount in Object Currency |
 | `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
-| `ActualValuationQuantity` |  | |  |  | `QUAN(23)` | Actual Valuation Quantity |
-| `PlanValuationQuantity` |  | |  |  | `QUAN(23)` | Plan Valuation Quantity |
+| `ActualValuationQuantity` |  | |  | `case when PlanningCategory = 'ACT01' then ActualValuationQuantity else cast( '0' as fis_val_quan_act) end` | `QUAN(23)` | Actual Valuation Quantity |
+| `PlanValuationQuantity` |  | |  | `case when PlanningCategory = :P_PlanningCategory then PlanValuationQuantity else cast( '0' as fis_val_quan_plan) end` | `QUAN(23)` | Plan Valuation Quantity |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROJECTPLANACTQ2201')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROJECTPLANACTQ2201')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'CFIPRPLANACT2201'
+@EndUserText.label: 'Project Plan Actual'
+@VDM.viewType: #CONSUMPTION
+@Analytics.query: true
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+
+@Analytics.settings.maxProcessingEffort: #HIGH
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.dataClass: #MIXED
+
+define view C_ProjectPlanActQ2201
+  with parameters
+
+    @EndUserText.label: 'Plan Category'
+    @AnalyticsDetails.query.variableSequence: 35
+    P_PlanningCategory : fcom_category,
+
+    @Semantics.businessDate.at: true
+    @Environment.systemField: #SYSTEM_DATE
+    P_KeyDate          : vdm_v_key_date,
+
+    @Consumption.hidden: true
+    @Environment.systemField: #SYSTEM_LANGUAGE
+    P_Language         : sylangu,
+
+    @Consumption.hidden: true
+    @Environment.systemField: #USER
+    P_BusinessUser     : syuname,
+
+    @Consumption.hidden: true
+    @Consumption.derivation: { lookupEntity: 'I_UserSetGetParamForCtrlgArea',
+          resultElement: 'ControllingArea',
+          binding: [ { targetElement : 'BusinessUser' , type : #PARAMETER, value : 'P_BusinessUser' } ] }
+    @AnalyticsDetails.query.variableSequence: 5
+    P_ControllingArea  : kokrs,
+
+    @Consumption.derivation: { lookupEntity: 'I_Ledger',
+      resultElement: 'Ledger',
+      binding:
+      [ { targetElement : 'IsLeadingLedger' ,
+          type : #CONSTANT,
+          value : 'X'
+        }
+      ]
+    }
+    @AnalyticsDetails.query.variableSequence: 10
+    P_Ledger           : fins_ledger
+
+  as select from I_ActualPlanJrnlEntryItemCube as I_ActualPlanJrnlEntryItemCube
+{
+
+  //@EndUserText.label: 'Plan Category'
+  //@AnalyticsDetails.query.variableSequence: 35
+  //$parameters.P_PlanningCategory as PlanningCategory,
+
+  ------------------------------------------------------------------------------------------
+  -- ROWS
+  ------------------------------------------------------------------------------------------
+
+  @AnalyticsDetails.query.axis: #ROWS
+  WBSIsStatisticalWBSElement,
+
+  @AnalyticsDetails.query.variableSequence: 80
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  // @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'ProjectExternalID'
+  @VDM.lifecycle.status:    #DEPRECATED
+  @VDM.lifecycle.successor: 'ProjectExternalID'
+  Project,
+
+  @AnalyticsDetails.query.variableSequence: 80
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ProjectExternalID,
+  //_Project.ProjectDescription,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  //@AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'WBSElementExternalID'
+  @VDM.lifecycle.status:    #DEPRECATED
+  @VDM.lifecycle.successor: 'WBSElementExternalID'
+  WBSElement,
+
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WBSElementExternalID,
+
+  //_WBSElement.WBSDescription,
+
+  @AnalyticsDetails.query.variableSequence: 94
+  @Consumption.filter: {  selectionType: #HIERARCHY_NODE, multipleSelections: true, mandatory: false,
+                          hierarchyBinding : [{type : #USER_INPUT, value : 'P_GLAccountHierarchyName', variableSequence: 93 } ] }
+  @AnalyticsDetails.query.displayHierarchy: #FILTER
+  @AnalyticsDetails.query.axis: #ROWS
+  @AnalyticsDetails.query.totals: #SHOW
+  GLAccount,
+  _GLAccountInChartOfAccounts._Text[1:Language = $parameters.P_Language].GLAccountName,
+
+  ------------------------------------------------------------------------------------------
+  -- FREE
+  ------------------------------------------------------------------------------------------
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  BillableControl,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  BusinessTransactionType,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarMonth,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarQuarter,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarWeek,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CalendarYear,
+
+  @Consumption.filter: { selectionType: #SINGLE, multipleSelections: false, mandatory: true, hidden: true }
+  @Consumption.derivation: { lookupEntity: 'I_ControllingArea',
+    resultElement: 'ChartOfAccounts',
+    binding:
+    [
+      {
+        targetElement : 'ControllingArea' ,
+        type : #PARAMETER,
+        value : 'P_ControllingArea'
+      }
+    ]
+  }
+  @AnalyticsDetails.query.variableSequence: 45
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ChartOfAccounts,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  ControllingObjectCurrency,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  //@Consumption.derivation: {
+  //    lookupEntity: 'I_UserSettingsForCompanyCode',
+  //    resultElement: 'CompanyCode',
+  //    binding:
+  //    [
+  //      {
+  //        targetElement : 'BusinessUser' ,
+  //        type : #PARAMETER,
+  //        value : 'P_BusinessUser'
+  //      }
+  //    ]
+  //  }
+  @AnalyticsDetails.query.variableSequence: 40
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  CompanyCode,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  CompanyCodeCurrency,
+
+  CostSourceUnit,
+
+  @AnalyticsDetails.query.variableSequence: 85
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  Customer,
+
+  @AnalyticsDetails.query.axis: #FREE
+  ControllingDebitCreditCode,
+
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence: 30
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalPeriod,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalQuarter,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalWeek,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalYearPeriod,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalYearQuarter,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalYearWeek,
+
+  //@Consumption.filter: {selectionType: #SINGLE, multipleSelections: false, mandatory: true, hidden: true}
+  //@Consumption.derivation: {
+  //  lookupEntity: 'I_ControllingArea',
+  //  resultElement: 'FiscalYearVariant',
+  //  binding:
+  //  [
+  //    {
+  //      targetElement : 'ControllingArea' ,
+  //      type : #PARAMETER,
+  //      value : 'P_ControllingArea'
+  //    }
+  //  ]
+  //}
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FiscalYearVariant,
+
+  @AnalyticsDetails.query.variableSequence: 70
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  FunctionalArea,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  GlobalCurrency,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  AccountingDocument,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  LedgerGLLineItem,
+
+  @AnalyticsDetails.query.axis: #FREE
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: true }
+  @Consumption.derivation: { lookupEntity: 'I_CalendarDate',
+          resultElement: 'CalendarYear', binding: [
+          { targetElement : 'CalendarDate' , type : #PARAMETER, value : 'P_KeyDate' } ]
+         }
+  @AnalyticsDetails.query.variableSequence: 20
+  LedgerFiscalYear,
+
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'Product'
+  //  @VDM.lifecycle.status:    #DEPRECATED
+  //  @VDM.lifecycle.successor: 'Product'
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Material, // do not use any longer, use Product
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  OriginProfitCenter,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  PartnerCostCtrActivityType,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerCostCenter,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerFunctionalArea,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerOrder_2                                          as PartnerOrder,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerProfitCenter,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  // @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'PartnerProjectExternalID'
+  @VDM.lifecycle.status:    #DEPRECATED
+  @VDM.lifecycle.successor: 'PartnerProjectExternalID'
+  PartnerProject,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerProjectExternalID,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  // @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'PartnerWBSElementExternalID'
+  @VDM.lifecycle.status:    #DEPRECATED
+  @VDM.lifecycle.successor: 'PartnerWBSElementExternalID'
+  PartnerWBSElement,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PartnerWBSElementExternalID,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  PersonnelNumber,
+  //_Employment[1:EndDate >= $parameters.P_KeyDate and StartDate <= $parameters.P_KeyDate]._Employee.EmployeeFullName as
+  //EmployeeFullName,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  PlanningCategory,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  PostingDate,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Product,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  SoldProduct, //Product
+
+  @AnalyticsDetails.query.variableSequence: 60
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  ProfitCenter,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.axis: #FREE
+  CostAnalysisResource,
+  _CostAnalysisResource[1:ValidityEndDate >= $parameters.P_KeyDate and ValidityStartDate <= $parameters.P_KeyDate]._Text[1:Language = $parameters.P_Language].CostAnalysisResourceName,
+
+  @AnalyticsDetails.query.variableSequence: 70
+  @Consumption.filter: { selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.axis: #FREE
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  Segment,
+
+  @AnalyticsDetails.query.axis: #FREE
+  ServicesRenderedDate,
+
+  @API.element.releaseState: #DEPRECATED
+  @API.element.successor:   'SoldProduct'
+  //  @VDM.lifecycle.status:    #DEPRECATED
+  //  @VDM.lifecycle.successor: 'SoldProduct'
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  cast(SoldMaterial as fis_sold_material preserving type) as SoldMaterial, // do not use any longer, use SoldProduct
+
+  @AnalyticsDetails.query.totals: #SHOW
+  PartnerCompany, // = Trading Partner
+
+  @AnalyticsDetails.query.totals: #SHOW
+  TransactionCurrency,
+
+  @AnalyticsDetails.query.totals: #SHOW
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  WorkItem,
+  //_WorkPackageWorkItem.WorkItemName,
+
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  YearMonth,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  YearQuarter,
+  @AnalyticsDetails.query.display: #KEY_TEXT
+  YearWeek,
+
+  ------------------------------------------------------------------------------------------
+  -- Key Figures
+  ------------------------------------------------------------------------------------------
+  //
+  // Transaction Currency: WSL
+  //
+  @EndUserText.label: 'Actual Amount in Trans Crcy'
+  @AnalyticsDetails.query.hidden: true
+  @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+  @AnalyticsDetails.query.axis: #COLUMNS
+  case when PlanningCategory = 'ACT01' then ActualAmountInTransactionCrcy
+                        else cast( 0 as fins_vkcur12)
+  end                                                     as ActualAmountInTransactionCrcy,
+
+  @EndUserText.label: 'Plan Amount in Trans Crcy'
+  @AnalyticsDetails.query.hidden: true
+  @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+  @AnalyticsDetails.query.axis: #COLUMNS
+  case when PlanningCategory = :P_PlanningCategory then PlanAmountInTransactionCrcy
+                        else cast( '0' as fins_vhcur12)
+  end                                                     as PlanAmountInTransactionCrcy,
+
+  @EndUserText.label: 'Difference Actual Plan in Trans Crcy'
+  @DefaultAggregation : #FORMULA
+  @AnalyticsDetails.query.hidden: true
+  @AnalyticsDetails.query.formula : '$projection.ActualAmountInTransactionCrcy - $projection.PlanAmountInTransactionCrcy'
+  1                                                       as DifferenceAmtInTransCrcy,
+
+  @EndUserText.label : 'Difference (%) TC'
+  @AnalyticsDetails.query.hidden: true
+  @AnalyticsDetails.query.decimals: 2
+  @AnalyticsDetails.query.formula : 'CASE WHEN $projection.ActualAmountInTransactionCrcy > 0 
+                                   THEN ($projection.ActualAmountInTransactionCrcy - $projection.PlanAmountInTransactionCrcy) / $projection.ActualAmountInTransactionCrcy * 100 
+                                   ELSE NDIV0(($projection.PlanAmountInTransactionCrcy - $projection.ActualAmountInTransactionCrcy ) / $projection.ActualAmountInTransactionCrcy) * 100 END'
+  1                                                       as TransCrcyDifferencePct,
+
+  //
+  // Company Code Currency: HSL
+  //
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label: 'Actual Amount in Company Code Crcy'
+  @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+  case when PlanningCategory = 'ACT01' then ActualAmountInCompanyCodeCrcy
+                        else cast( 0 as fins_vhcur12)
+  end                                                     as ActualAmountInCompanyCodeCrcy,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label: 'Plan Amount in CC Crcy'
+  @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+  case when PlanningCategory = :P_PlanningCategory then PlanAmountInCompanyCodeCrcy
+                        else cast( '0' as fins_vhcur12)
+  end                                                     as PlanAmountInCompanyCodeCrcy,
+
+  @EndUserText.label: 'Difference Actual Plan in CC Crcy'
+  @DefaultAggregation : #FORMULA
+  @AnalyticsDetails.query.formula : '$projection.ActualAmountInCompanyCodeCrcy - $projection.PlanAmountInCompanyCodeCrcy'
+  1                                                       as DifferenceAmtInCoCodeCrcy,
+
+  @EndUserText.label : 'Difference (%) CC'
+  @AnalyticsDetails.query.decimals: 2
+  @AnalyticsDetails.query.formula : 'CASE WHEN $projection.ActualAmountInCompanyCodeCrcy > 0 
+                                   THEN ($projection.ActualAmountInCompanyCodeCrcy - $projection.PlanAmountInCompanyCodeCrcy) / $projection.ActualAmountInCompanyCodeCrcy * 100 
+                                   ELSE NDIV0(($projection.PlanAmountInCompanyCodeCrcy - $projection.ActualAmountInCompanyCodeCrcy ) / $projection.ActualAmountInCompanyCodeCrcy) * 100 END'
+  1                                                       as CoCodeCrcyDifferencePct,
+
+  //
+  // Global Currency: KSL RKCUR
+  //
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label: 'Actual Amount in Global Crcy'
+  @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+  case when PlanningCategory = 'ACT01' then ActualAmountInGlobalCurrency
+                        else cast( 0 as fins_vkcur12)
+  end                                                     as ActualAmountInGlobalCurrency,
+
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label: 'Plan Amount in Global Crcy'
+  @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+  case when PlanningCategory = :P_PlanningCategory then PlanAmountInGlobalCurrency
+                        else cast( '0' as fins_vkcur12)
+  end                                                     as PlanAmountInGlobalCurrency,
+
+  @EndUserText.label: 'Difference Actual Plan in Global Crcy'
+  @AnalyticsDetails.query.formula : '$projection.ActualAmountInGlobalCurrency - $projection.PlanAmountInGlobalCurrency'
+  0                                                       as DifferenceAmtInGlobalCrcy,
+
+  @EndUserText.label : 'Difference (%) GC'
+  @AnalyticsDetails.query.decimals: 2
+  @AnalyticsDetails.query.formula :  'CASE WHEN $projection.ActualAmountInGlobalCurrency > 0 
+                                   THEN ($projection.ActualAmountInGlobalCurrency - $projection.PlanAmountInGlobalCurrency) / $projection.ActualAmountInGlobalCurrency * 100 
+                                   ELSE NDIV0(($projection.PlanAmountInGlobalCurrency - $projection.ActualAmountInGlobalCurrency ) / $projection.ActualAmountInGlobalCurrency) * 100 END'
+  1                                                       as GlobalCrcyDifferencePct,
+
+  @AnalyticsDetails.query.hidden: true
+  @AnalyticsDetails.query.axis: #COLUMNS
+  @EndUserText.label: 'Amount in CO Object Crcy'
+  @Semantics: { amount : {currencyCode: 'ControllingObjectCurrency'} }
+  case when PlanningCategory = 'ACT01' then ActualAmountInObjectCurrency
+                        else cast( '0' as fis_act_co_osl)
+  end                                                     as ActualAmountInObjectCurrency,
+
+  @AnalyticsDetails.query.hidden: true
+  @AnalyticsDetails.query.axis: #COLUMNS
+  //@Semantics: { quantity : {unitOfMeasure: 'CostSourceUnit'} }
+  ValuationQuantity,
+
+  @AnalyticsDetails.query.hidden: true
+  @AnalyticsDetails.query.axis: #COLUMNS
+  //@Semantics: { quantity : {unitOfMeasure: 'CostSourceUnit'} }
+  case when PlanningCategory = 'ACT01' then ActualValuationQuantity
+                        else cast( '0' as fis_val_quan_act)
+  end                                                     as ActualValuationQuantity,
+
+  @AnalyticsDetails.query.hidden: true
+  @AnalyticsDetails.query.axis: #COLUMNS
+  //@Semantics: { quantity : {unitOfMeasure: 'CostSourceUnit'} }
+  case when PlanningCategory =  :P_PlanningCategory then PlanValuationQuantity
+                        else cast( '0' as fis_val_quan_plan)
+  end                                                     as PlanValuationQuantity
+
+}
+where
+       Ledger           = :P_Ledger
+  and  ControllingArea  = :P_ControllingArea
+  and(
+       PlanningCategory = 'ACT01'
+    or PlanningCategory = :P_PlanningCategory
+  );
+```

@@ -31,8 +31,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressManagementURIType` | ✓ | |  | `cast ( domvalue_l as ad_uritype )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `AddressManagementURIType` | ✓ | |  | `cast ( domvalue_l as ad_uritype )` | `CHAR(3)` | URI type flag |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

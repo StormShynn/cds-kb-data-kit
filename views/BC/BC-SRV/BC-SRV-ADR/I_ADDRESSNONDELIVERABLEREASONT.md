@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `AddressNonDeliverableReason` | ✓ | |  | `undeliver` |  |  |
-| `AddressNonDeliverableReasonTxt` |  | |  | `undeli_tx` |  |  |
-| `AddrNonDeliverableReasonDesc` |  | |  | `undeli_dc` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `AddressNonDeliverableReason` | ✓ | |  | `undeliver` | `CHAR(4)` | Not Deliverable Flag |
+| `AddressNonDeliverableReasonTxt` |  | |  | `undeli_tx` | `CHAR(30)` | Reason for Non-Delivery (Text) |
+| `AddrNonDeliverableReasonDesc` |  | |  | `undeli_dc` | `CHAR(70)` | Reason for Non-Delivery (Text) |
 
 ## Source Code
 

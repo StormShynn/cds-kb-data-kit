@@ -5,13 +5,25 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODANDSRVCMARGANLYSQ')/$value
 semantic_en: This CDS view is designed to provide analytical insights into product and service margins by aggregating and projecting financial data related to revenues, costs, and margins. It is intended for use in analytical queries to assess financial performance across various dimensions such as company code, fiscal year, profit center, and more. This CDS view provides the data to answer the following business questions: What are the recognized revenues and costs for products and services in a specific company code and fiscal year? How do the margins for products and services vary across different profit centers and sales organizations? What is the impact of sales deductions and revenue adjustments on the overall financial performance? How do accrued and deferred revenues and costs affect the financial statements? What are the reserves for imminent losses, sales deductions, and unrealized costs? How does the margin percentage compare across different products, customer groups, and sales districts? What are the financial implications of business solution orders, service contracts, and sales orders on margins? How do different account assignment types and ledger entries influence the product and service margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Product and Service Margins - Qry — CDS view tiêu dùng dựa trên Product and Service Margins - Qry.
 keywords:
   - Product and Service Margins - Qry
-  - Product and Service Margins - Qry
-  - Product and Service Margins - Qry
+  - product
+  - and
+  - service
+  - margins
+  - qry
+  - company
+  - code
+  - currency
+  - field
+  - fiscal
+  - year
+  - ledger
+  - period
 tags:
   - CO
   - account
@@ -29,7 +41,7 @@ tags:
   - product
   - project
   - sales-order
-  - metadata-only
+  - bo:material
 ---
 # C_PRODANDSRVCMARGANLYSQ
 
@@ -41,7 +53,7 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODANDSRVCMARGANLYSQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODANDSRVCMARGANLYSQ')/$value) |
 
 ## Fields
 
@@ -108,19 +120,310 @@ tags:
 | `ImminentLossRsrvAmtInDspCrcy` |  | |  |  | `CURR(23)` | Imminent Loss Reserve |
 | `SalesDeductReserveAmtInDspCrcy` |  | |  |  | `CURR(23)` | Reserves for Anticipated Sales Deductions |
 | `UnrlzdCostsReserveAmtInDspCrcy` |  | |  |  | `CURR(23)` | Reserves for Unrealized Costs |
-| `Reserves` |  | |  |  | `CURR(23)` | Reserves |
+| `Reserves` |  | |  | `cast( ImminentLossRsrvAmtInDspCrcy + SalesDeductReserveAmtInDspCrcy + UnrlzdCostsReserveAmtInDspCrcy as fins_trr_reserves )` | `CURR(23)` | Reserves |
 | `ProjAndSlsOrdStkAmtInDspCrcy` |  | |  |  | `CURR(23)` | Project/Sales Order Stock |
 | `MnlContrAccrPnLItmAmtInDspCrcy` |  | |  |  | `CURR(23)` | Manual Contract Accruals Income Statement in Display Crcy |
 | `DownPaymentAmountInDspCrcy` |  | |  |  | `CURR(23)` | Open Down Payment Amount in Display Currency |
-| `MarginInPct` |  | |  |  | `DECF(34)` |  |
-| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
-| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
-| `MarketingOvhdAmtInDspCrcy` |  | |  |  | `CURR(23)` | Marketing Overhead |
-| `SalesOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | Sales Overhead |
-| `AdminOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | Administration Overhead |
-| `RnDOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | Research and Development Overhead |
+| `MarginInPct` |  | |  | `ratio_of( portion => cast ( $projection.recognizedmargamtindisplaycrcy as abap.dec( 23, 2 ) ) , total => cast ( $projection.recognizedrevnamtindspcrcy as abap.dec( 23, 2 ) ) ) * 100` | `DECF(34)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODANDSRVCMARGANLYSQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODANDSRVCMARGANLYSQ')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@ObjectModel.usageType:{
+  serviceQuality: #D,
+  sizeCategory: #XL,
+  dataClass: #MIXED
+}
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@EndUserText.label: 'Product and Service Margins - Qry'
+@Metadata.allowExtensions: true
+@Analytics.settings.maxProcessingEffort: #HIGH
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern:#ANALYTICAL_QUERY
+@OData.publish: true
+define transient view entity C_ProdAndSrvcMargAnlysQ 
+  provider contract analytical_query
+  with parameters
+    @Consumption.valueHelpDefinition: [{
+        entity: {
+            name:    'I_FinancialStatementHierarchy',
+            element: 'GLAccountHierarchy'
+        }
+        }]
+    @Consumption.defaultValue: 'YPS2'
+    @Consumption.derivation: { lookupEntity: 'I_UserSetGetParamForCtrlgArea', 
+          resultElement: 'CtrlgStdFinStatementVersion' }
+    @AnalyticsDetails.query.variableSequence : 10 
+    P_GLAccountHierarchy : fins_sem_tag_hryid
+      
+   as projection on I_ProdAndSrvcMargAnlysCube(P_GLAccountHierarchy :$parameters.P_GLAccountHierarchy)  as I_MargAnlysProdAndSrvcCube
+{
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence : 30
+  @UI.textArrangement: #TEXT_LAST
+  CompanyCode,
+  
+  @Consumption.filter :{ selectionType: #SINGLE, 
+                         multipleSelections: true, 
+                         mandatory: true, 
+                         defaultValue: 'CCC ' }
+  @AnalyticsDetails.query: {axis: #COLUMNS}
+  @UI.textArrangement: #TEXT_ONLY
+  @AnalyticsDetails.query.variableSequence : 200
+  CurrencyField,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence : 40
+  @Consumption.derivation: {
+     lookupEntity:  'F_FsclYrDteFuncSglVal',
+     resultElement: 'FiscalYear',
+     binding: [
+          { targetParameter: 'P_DateFunction', type : #CONSTANT, value: 'CURRENTFISCALYEAR' },
+          { targetParameter: 'P_FiscalYearVariant', type : #CONSTANT, value: 'K4' }
+          ]
+  }
+  @Semantics.fiscal.year: true
+  FiscalYear,
+  
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: false, mandatory: true, defaultValue: '0L' }
+  @AnalyticsDetails.query.variableSequence : 20
+  Ledger,  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence : 50
+  @Consumption.derivation: {
+     lookupEntity:  'F_FsclPerdDteFuncSglVal',
+     resultElement: 'FiscalPeriod',
+     binding: [
+          { targetParameter: 'P_DateFunction', type : #CONSTANT, value: 'CURRENTFISCALPERIOD' },
+          { targetParameter: 'P_FiscalYearVariant', type : #CONSTANT, value: 'K4' }
+          ]
+  }
+  @Semantics.fiscal.period: true
+  FiscalPeriod,
+
+  FiscalYearPeriod,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false , defaultValue: 'EO', defaultValueHigh: 'SV' } 
+  @AnalyticsDetails.query.variableSequence : 60
+  AccountAssignmentType,
+  
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.variableSequence : 70
+  @UI.textArrangement: #TEXT_LAST
+  ProfitCenter,
+  
+  
+  @AnalyticsDetails.query.variableSequence : 80
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  BusinessSolutionOrder, 
+   
+  BusinessSolutionOrderItem,
+  
+  @AnalyticsDetails.query.variableSequence : 90
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  ServiceDocument,
+
+  ServiceDocumentItem,
+  
+  ServiceDocumentType,
+  
+  @AnalyticsDetails.query.variableSequence : 100
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  ServiceContract,
+
+  ServiceContractItem,
+
+  ServiceContractType,
+  
+  @AnalyticsDetails.query.variableSequence : 110
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  SalesOrder,
+
+  @ObjectModel.text.element: null
+  SalesOrderItem,
+
+  SalesDocument,
+
+  @ObjectModel.text.element: null
+  SalesDocumentItem,
+  
+  @AnalyticsDetails.query.variableSequence : 120
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  ProjectExternalID,
+  
+  @AnalyticsDetails.query.axis:#ROWS
+  @AnalyticsDetails.query.variableSequence : 130
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SoldProductGroup,
+  
+  @AnalyticsDetails.query.variableSequence : 140
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  SoldProduct,
+  
+  @AnalyticsDetails.query.variableSequence : 150
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  CustomerGroup,
+  
+  @AnalyticsDetails.query.variableSequence : 160
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  Customer,
+  
+  @AnalyticsDetails.query.variableSequence : 170
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  ProviderContract,
+  
+  @AnalyticsDetails.query.variableSequence : 180
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  ProviderContractItem,
+  @AnalyticsDetails.query.variableSequence : 190
+  @UI.textArrangement: #TEXT_LAST
+  SalesDistrict,
+  
+  @UI.textArrangement: #TEXT_LAST
+  Product,
+  @UI.textArrangement: #TEXT_LAST
+  BillToParty,
+  @UI.textArrangement: #TEXT_LAST
+  CustomerSupplierCountry,
+  @UI.textArrangement: #TEXT_LAST
+  DistributionChannel,
+  @UI.textArrangement: #TEXT_LAST
+  OrganizationDivision,
+  @UI.textArrangement: #TEXT_LAST
+  Plant,
+  @UI.textArrangement: #TEXT_LAST
+  ShipToParty,
+  
+  @UI.textArrangement: #TEXT_LAST
+  WBSElement,
+  
+  @UI.textArrangement: #TEXT_LAST
+  WBSElementExternalID,
+  
+  ServicesRenderedDate,
+  OrderID,
+  
+//exposed these two fields because some odd ATC check errors
+  ChartOfAccounts,
+  ControllingArea,
+  BusinessTransactionType,
+  @UI.textArrangement: #TEXT_LAST
+  GLAccount,
+  @UI.textArrangement: #TEXT_LAST
+  CustomerSupplierIndustry,
+  @UI.textArrangement: #TEXT_LAST
+  SalesOrganization,
+  
+  // Convert type CURR to DEC
+  Currency,
+
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  RecognizedRevnAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  BilledRevenueAmtInDspCrcy,
+  @Semantics.amount.currencyCode: 'Currency'
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  SalesDeductionAmountInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  RevenueAdjustmentAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  RecognizedCOGSAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  RecognizableCostAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  COGSAdjustmentAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  RecognizedMargAmtInDisplayCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  AccruedRevenueAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  DeferredRevenueAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  AccruedCOGSAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  DeferredCOGSAmtInDspCrcy,
+  @Semantics.amount.currencyCode: 'Currency'
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  ImminentLossRsrvAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  SalesDeductReserveAmtInDspCrcy,
+  @Semantics.amount.currencyCode: 'Currency'
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  UnrlzdCostsReserveAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #FORMULA
+  cast( ImminentLossRsrvAmtInDspCrcy + SalesDeductReserveAmtInDspCrcy + 
+        UnrlzdCostsReserveAmtInDspCrcy as fins_trr_reserves ) as Reserves,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  ProjAndSlsOrdStkAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  MnlContrAccrPnLItmAmtInDspCrcy,
+  @Semantics: { amount : {currencyCode: 'Currency'} }
+  @Aggregation.default: #SUM
+  @OData.v2.amount.noDecimalShift: true
+  @AnalyticsDetails.query.reverseSign: true
+  DownPaymentAmountInDspCrcy,
+  @AnalyticsDetails.query.collisionHandling.formula: #THIS 
+  @Aggregation.default: #FORMULA
+  @AnalyticsDetails.query.decimals: 2
+  @EndUserText.label: 'Margin in Percent %'
+  ratio_of( portion =>  cast ( $projection.recognizedmargamtindisplaycrcy as abap.dec( 23, 2 ) ) ,
+            total => cast ( $projection.recognizedrevnamtindspcrcy as abap.dec( 23, 2 ) ) ) * 100
+  as MarginInPct
+
+  
+
+  
+
+}
+```

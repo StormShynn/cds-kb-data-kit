@@ -31,63 +31,63 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |  |  |
-| `AddressPersonID` |  | |  |  |  |  |
-| `AddressRepresentationCode` |  | |  |  |  |  |
-| `AddressObjectType` |  | |  |  |  |  |
-| `CorrespondenceLanguage` |  | |  |  |  |  |
-| `PrfrdCommMediumType` |  | |  |  |  |  |
-| `AddresseeFullName` |  | |  |  |  |  |
-| `PersonGivenName` |  | |  |  |  |  |
-| `PersonFamilyName` |  | |  |  |  |  |
-| `OrganizationName1` |  | |  |  |  |  |
-| `OrganizationName2` |  | |  |  |  |  |
-| `OrganizationName3` |  | |  |  |  |  |
-| `OrganizationName4` |  | |  |  |  |  |
-| `AddressSearchTerm1` |  | |  |  |  |  |
-| `AddressSearchTerm2` |  | |  |  |  |  |
-| `CityNumber` |  | |  |  |  |  |
-| `CityName` |  | |  |  |  |  |
-| `DistrictName` |  | |  |  |  |  |
-| `VillageName` |  | |  |  |  |  |
-| `PostalCode` |  | |  |  |  |  |
-| `CompanyPostalCode` |  | |  |  |  |  |
-| `Street` |  | |  |  |  |  |
-| `StreetName` |  | |  |  |  |  |
-| `StreetAddrNonDeliverableReason` |  | |  |  |  |  |
-| `StreetPrefixName1` |  | |  |  |  |  |
-| `StreetPrefixName2` |  | |  |  |  |  |
-| `StreetSuffixName1` |  | |  |  |  |  |
-| `StreetSuffixName2` |  | |  |  |  |  |
-| `HouseNumber` |  | |  |  |  |  |
-| `HouseNumberSupplementText` |  | |  |  |  |  |
-| `Building` |  | |  |  |  |  |
-| `Floor` |  | |  |  |  |  |
-| `RoomNumber` |  | |  |  |  |  |
-| `Country` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
-| `FormOfAddress` |  | |  |  |  |  |
-| `TaxJurisdiction` |  | |  |  |  |  |
-| `TransportZone` |  | |  |  |  |  |
-| `POBox` |  | |  |  |  |  |
-| `POBoxAddrNonDeliverableReason` |  | |  |  |  |  |
-| `POBoxIsWithoutNumber` |  | |  |  |  |  |
-| `POBoxPostalCode` |  | |  |  |  |  |
-| `POBoxLobbyName` |  | |  |  |  |  |
-| `POBoxDeviatingCityName` |  | |  |  |  |  |
-| `POBoxDeviatingCityCode` |  | |  |  |  |  |
-| `POBoxDeviatingRegion` |  | |  |  |  |  |
-| `POBoxDeviatingCountry` |  | |  |  |  |  |
-| `CareOfName` |  | |  |  |  |  |
-| `DeliveryServiceTypeCode` |  | |  |  |  |  |
-| `DeliveryServiceNumber` |  | |  |  |  |  |
-| `AddressTimeZone` |  | |  |  |  |  |
-| `SecondaryRegion` |  | |  |  |  |  |
-| `SecondaryRegionName` |  | |  |  |  |  |
-| `TertiaryRegion` |  | |  |  |  |  |
-| `TertiaryRegionName` |  | |  |  |  |  |
-| `RegionalStructureCheckStatus` |  | |  |  |  |  |
-| `AddressGroup` |  | |  |  |  |  |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` |  | |  |  | `CHAR(10)` | Person Number |
+| `AddressRepresentationCode` |  | |  |  | `CHAR(1)` | Version ID for International Addresses |
+| `AddressObjectType` |  | |  |  | `CHAR(1)` | Address type (1=Organization, 2=Person, 3=Contact person) |
+| `CorrespondenceLanguage` |  | |  |  | `LANG(1)` | Language Key |
+| `PrfrdCommMediumType` |  | |  |  | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `AddresseeFullName` |  | |  |  | `CHAR(80)` | Full Name of Person |
+| `PersonGivenName` |  | |  |  | `CHAR(40)` | First Name |
+| `PersonFamilyName` |  | |  |  | `CHAR(40)` | Last Name |
+| `OrganizationName1` |  | |  |  | `CHAR(40)` | Name 1 |
+| `OrganizationName2` |  | |  |  | `CHAR(40)` | Name 2 |
+| `OrganizationName3` |  | |  |  | `CHAR(40)` | Name 3 |
+| `OrganizationName4` |  | |  |  | `CHAR(40)` | Name 4 |
+| `AddressSearchTerm1` |  | |  |  | `CHAR(20)` | Search Term 1 |
+| `AddressSearchTerm2` |  | |  |  | `CHAR(20)` | Search Term 2 |
+| `CityNumber` |  | |  |  | `CHAR(12)` | City code for city/street file |
+| `CityName` |  | |  |  | `CHAR(40)` | City |
+| `DistrictName` |  | |  |  | `CHAR(40)` | District |
+| `VillageName` |  | |  |  | `CHAR(40)` | City (different from postal city) |
+| `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
+| `CompanyPostalCode` |  | |  |  | `CHAR(10)` | Company Postal Code (for Large Customers) |
+| `Street` |  | |  |  | `CHAR(12)` | Street Number for City/Street File |
+| `StreetName` |  | |  |  | `CHAR(60)` | Street |
+| `StreetAddrNonDeliverableReason` |  | |  |  | `CHAR(4)` | Street Address Undeliverable Flag |
+| `StreetPrefixName1` |  | |  |  | `CHAR(40)` | Street 2 |
+| `StreetPrefixName2` |  | |  |  | `CHAR(40)` | Street 3 |
+| `StreetSuffixName1` |  | |  |  | `CHAR(40)` | Street 4 |
+| `StreetSuffixName2` |  | |  |  | `CHAR(40)` | Street 5 |
+| `HouseNumber` |  | |  |  | `CHAR(10)` | House Number |
+| `HouseNumberSupplementText` |  | |  |  | `CHAR(10)` | House number supplement |
+| `Building` |  | |  |  | `CHAR(20)` | Building (Number or Code) |
+| `Floor` |  | |  |  | `CHAR(10)` | Floor in Building |
+| `RoomNumber` |  | |  |  | `CHAR(10)` | Room or Apartment Number |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `FormOfAddress` |  | |  |  | `CHAR(4)` | Form-of-Address Key |
+| `TaxJurisdiction` |  | |  |  | `CHAR(15)` | Tax Jurisdiction |
+| `TransportZone` |  | |  |  | `CHAR(10)` | Transportation zone to or from which the goods are delivered |
+| `POBox` |  | |  |  | `CHAR(10)` | PO Box |
+| `POBoxAddrNonDeliverableReason` |  | |  |  | `CHAR(4)` | PO Box Address Undeliverable Flag |
+| `POBoxIsWithoutNumber` |  | |  |  | `CHAR(1)` | Flag: PO Box Without Number |
+| `POBoxPostalCode` |  | |  |  | `CHAR(10)` | PO Box Postal Code |
+| `POBoxLobbyName` |  | |  |  | `CHAR(40)` | PO Box Lobby |
+| `POBoxDeviatingCityName` |  | |  |  | `CHAR(40)` | PO Box city |
+| `POBoxDeviatingCityCode` |  | |  |  | `CHAR(12)` | City PO box code (City file) |
+| `POBoxDeviatingRegion` |  | |  |  | `CHAR(3)` | Region for PO Box (Country/Region, State, Province, ...) |
+| `POBoxDeviatingCountry` |  | |  |  | `CHAR(3)` | PO Box of Country/Region |
+| `CareOfName` |  | |  |  | `CHAR(40)` | c/o name |
+| `DeliveryServiceTypeCode` |  | |  |  | `CHAR(4)` | Type of Delivery Service |
+| `DeliveryServiceNumber` |  | |  |  | `CHAR(10)` | Number of Delivery Service |
+| `AddressTimeZone` |  | |  |  | `CHAR(6)` | Address Time Zone |
+| `SecondaryRegion` |  | |  |  | `CHAR(8)` | County code for county |
+| `SecondaryRegionName` |  | |  |  | `CHAR(40)` | County |
+| `TertiaryRegion` |  | |  |  | `CHAR(8)` | Township code for Township |
+| `TertiaryRegionName` |  | |  |  | `CHAR(40)` | Township |
+| `RegionalStructureCheckStatus` |  | |  |  | `CHAR(1)` | City File Test Status |
+| `AddressGroup` |  | |  |  | `CHAR(4)` | Address Group (Key) (Business Address Services) |
 | `_AddrAdditionalRepresentation` | | ✓ | | | | |
 
 ## Associations

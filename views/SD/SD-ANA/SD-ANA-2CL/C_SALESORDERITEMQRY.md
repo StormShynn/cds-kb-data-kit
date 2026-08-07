@@ -5,11 +5,18 @@ app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESORDERITEMQRY')/$value
 semantic_en: This CDS view provides the total net values of sales order items by various dimensions, such as sales organization, product, fiscal year, customer group, and many more. This CDS view provides the prerequisites for answering the following business questions: What are the total net values of sales orders in my sales organizations? What are my top 10 products based on my incoming sales orders? Who are my top 10 customers? Will I reach my business goals this year?
+semantic_vi: Sales Order Item - Query — CDS view tiêu dùng dựa trên I_SalesOrderItemCube.
 keywords:
   - Sales Order Item - Query
+  - sales
+  - order
+  - item
+  - query
+  - type
+  - category
 tags:
   - SD
   - bo:businesspartner
@@ -22,7 +29,7 @@ tags:
   - sales-order
   - SD-ANA
   - SD-ANA-2CL
-  - metadata-only
+  - bo:salesorder
 ---
 # C_SALESORDERITEMQRY
 
@@ -34,19 +41,19 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESORDERITEMQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESORDERITEMQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
-| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `SalesOrder` | ✓ | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` | ✓ | |  |  | `NUMC(6)` | Sales Order Item |
 | `SalesOrderType` |  | |  |  | `CHAR(4)` | Sales Document Type |
 | `SalesOrderItemCategory` |  | |  |  | `CHAR(4)` | Sales Order Item Category |
 | `SalesOrderItemType` |  | |  |  | `CHAR(1)` | Sales Order Item Type |
 | `IsReturnsItem` |  | |  |  | `CHAR(1)` | Returns Item |
-| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `DisplayCurrency` |  | |  | `cast(:P_DisplayCurrency as vdm_v_display_currency)` | `CUKY(5)` | Display Currency |
 | `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
 | `NetAmountInDisplayCurrency` |  | |  |  | `CURR(19)` | Net Value in Display Currency |
 | `IncomingSalesOrdersNetAmtInDC` |  | |  |  | `CURR(19)` | Incoming Sales Orders Net Value In Display Currency |
@@ -197,3 +204,375 @@ tags:
 | `ItemDeliveryIncompletionStatus` |  | |  |  | `CHAR(1)` | Delivery Incompletion Status (Item) |
 | `SDDocumentRejectionStatus` |  | |  |  | `CHAR(1)` | Rejection Status (Item) |
 | `TotalSDDocReferenceStatus` |  | |  |  | `CHAR(1)` | Overall Reference Status (Item) |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESORDERITEMQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESORDERITEMQRY')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Sales Order Item - Query'
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@AbapCatalog: {
+   sqlViewName: 'CSDSLSORDERITEMQ',
+   compiler.compareFilter: true
+}
+@ObjectModel: {
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XL
+   }
+}
+@Analytics.query:true
+@ObjectModel.supportedCapabilities:
+   [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@OData.publish: true
+
+define view C_SalesOrderItemQry
+  with parameters
+    @Consumption.defaultValue: 'M'
+    @Consumption.valueHelpDefinition: [{
+      entity: {
+        name:'I_ExchangeRateType',
+        element:'ExchangeRateType'
+      }
+    }]       
+    P_ExchangeRateType : kurst,
+    P_DisplayCurrency  : vdm_v_display_currency
+  as select from I_SalesOrderItemCube(P_ExchangeRateType:$parameters.P_ExchangeRateType, P_DisplayCurrency: $parameters.P_DisplayCurrency)
+{
+      //Key
+  key SalesOrder,
+  key SalesOrderItem,
+
+      //Category
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrderType,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrderItemCategory,
+      SalesOrderItemType,
+      IsReturnsItem,
+
+      @Semantics.currencyCode: true
+      cast(:P_DisplayCurrency as vdm_v_display_currency) as DisplayCurrency,
+      @Semantics.unitOfMeasure: true
+      BaseUnit,
+
+      //KPI: Incoming Sales
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      NetAmountInDisplayCurrency,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      IncomingSalesOrdersNetAmtInDC,
+
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      IncomingSalesOrdersQuantity,
+
+      @DefaultAggregation: #SUM
+      NumberOfIncomingSlsOrderItems,
+
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      ConfdDeliveryQtyInBaseUnit,
+
+      //Admin
+      CreatedByUser,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      CreationTime,
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      @Semantics.calendar.year
+      CreationDateYear,
+      @Semantics.calendar.yearQuarter
+      CreationDateYearQuarter,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @Semantics.calendar.yearMonth
+      CreationDateYearMonth,
+      @Semantics.calendar.year
+      SalesOrderDateYear,
+      @Semantics.calendar.yearQuarter
+      SalesOrderDateYearQuarter,
+      @Semantics.calendar.yearMonth
+      SalesOrderDateYearMonth,
+
+      //Orgnization
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true}
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.totals: #SHOW
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrganization,
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DistributionChannel,
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrganizationDivision,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Division,
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOffice,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @Analytics.internalName: #LOCAL
+      PartnerCompany,
+
+      //Partner
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShipToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PayerParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesEmployee,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ResponsibleEmployee,
+
+      //Sales
+      PurchaseOrderByCustomer,
+      CustomerRebateAgreement,
+      CustomerPurchaseOrderType,
+      CustomerPurchaseOrderDate,
+      SalesOrderDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDDocumentReason,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup5,
+      SalesOrderItemText,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDistrict,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CreditControlArea,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDeal,
+      SalesPromotion,
+      RetailPromotion,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDocumentRjcnReason,
+
+
+      //Product
+      @UI.hidden: true
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: 'Product'
+      Material,
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true}
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Product,
+      MaterialByCustomer,
+      Batch,
+      @UI.hidden: true
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: 'ProductGroup'
+      MaterialGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProductGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup5,
+      
+      //BoM
+      MainItemPricingRefProduct,
+      HigherLevelItem,
+      BillOfMaterial,
+      PropagatePrftbltySgmt2BOM,
+      CostDeterminationIsRequired,
+
+      //Pricing
+      SalesOrderCondition,
+      PricingDate,
+      //ExchangeRateType,
+      //ExchangeRateDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      IncotermsVersion,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      IncotermsClassification,
+      IncotermsTransferLocation,
+      IncotermsLocation1,
+      IncotermsLocation2,
+
+      //Shipping
+      RequestedDeliveryDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryBlockReason,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryPriority,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Plant,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      StorageLocation,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShippingPoint,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShippingType,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Route,
+      ItemIsDeliveryRelevant,
+
+      //Billing
+      BillingCompanyCode,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HeaderBillingBlockReason,
+      BillingDocumentDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemBillingBlockReason,
+      ItemIsBillingRelevant,
+      BillingPlan,
+
+      //Payment
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerPaymentTerms,
+      PaymentMethod,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerProject,
+
+      //Accounting
+      FiscalYear,
+      FiscalPeriod,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerAccountAssignmentGroup,
+      FixedValueDate,
+      AdditionalValueDays,
+      CostCenterBusinessArea,
+      CostCenter,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ControllingArea,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusinessArea,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProfitCenter,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor: 'WBSElementInternalID'
+      WBSElement,
+      WBSElementInternalID,
+      WBSElementExternalID,
+      OrderID,
+      @API.element.releaseState: #DECOMMISSIONED
+      @API.element.successor:    'ProfitabilitySegment_2'
+      ProfitabilitySegment,
+      ProfitabilitySegment_2,
+      //Reference
+      ReferenceSDDocument,
+      ReferenceSDDocumentItem,
+      ReferenceSDDocumentCategory,
+      @Analytics.internalName: #LOCAL
+      BusinessSolutionOrder, --AT19May2020: Added for CE2008
+      //      @Analytics.internalName: #LOCAL
+      //      BusinessSolutionOrderItem,  --AT4.6.2020 ignore Item Reference due to framework problems
+
+      //Status
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDProcessStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallPurchaseConfStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDDocumentRejectionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDelivConfStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallTotalDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDeliveryBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallOrdReltdBillgStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallBillingBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallTotalSDDocRefStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDDocReferenceStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalCreditCheckStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      MaxDocValueCreditCheckStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PaymentTermCreditCheckStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      FinDocCreditCheckStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ExprtInsurCreditCheckStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PaytAuthsnCreditCheckSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CentralCreditCheckStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CentralCreditChkTechErrSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HdrGeneralIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallPricingIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HeaderDelivIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HeaderBillgIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmGeneralIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmBillingIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmDelivIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDProcessStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryConfirmationStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PurchaseConfirmationStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrderRelatedBillingStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillingBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemGeneralIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemBillingIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PricingIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemDeliveryIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDDocumentRejectionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalSDDocReferenceStatus
+}
+```

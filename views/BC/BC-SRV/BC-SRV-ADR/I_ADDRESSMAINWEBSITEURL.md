@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |  |  |
-| `AddressPersonID` | ✓ | |  |  |  |  |
-| `CommMediumSequenceNumber` |  | |  |  |  |  |
-| `UniformResourceIdentifier` |  | |  |  |  |  |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` |  | |  |  | `NUMC(3)` | Sequence Number |
+| `UniformResourceIdentifier` |  | |  |  | `STRI(2048)` |  |
 | `_AddressCommunicationRemark` | | ✓ | | | | |
 | `_AddressCommunicationUsage` | | ✓ | | | | |
 

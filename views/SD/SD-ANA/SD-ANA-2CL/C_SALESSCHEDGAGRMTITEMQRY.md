@@ -5,11 +5,24 @@ app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESSCHEDGAGRMTITEMQRY')/$value
 semantic_en: This CDS view provides prerequisites for analyzing to what extent sales scheduling agreements are being processed. It answers the following business questions about sales scheduling agreements with delivery schedules: What is the cumulative delivered quantity? What is the cumulative issued quantity? What is the cumulative quantity received by customer?
+semantic_vi: Sales Scheduling Agreement Item - Query — CDS view tiêu dùng dựa trên I_SalesSchedgAgrmtItemCube.
 keywords:
   - Sales Scheduling Agreement Item - Query
+  - sales
+  - scheduling
+  - agreement
+  - item
+  - query
+  - release
+  - type
+  - schedg
+  - agrmt
+  - last
+  - change
+  - date
 tags:
   - SD
   - bo:businesspartner
@@ -20,7 +33,6 @@ tags:
   - lob:sales & distribution
   - SD-ANA
   - SD-ANA-2CL
-  - metadata-only
 ---
 # C_SALESSCHEDGAGRMTITEMQRY
 
@@ -32,15 +44,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESSCHEDGAGRMTITEMQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESSCHEDGAGRMTITEMQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesSchedulingAgreement` |  | |  |  | `CHAR(10)` | Sales Scheduling Agreement |
-| `SalesSchedulingAgreementItem` |  | |  |  | `NUMC(6)` | Sales Scheduling Agreement Item |
-| `SchedulingAgreementReleaseType` |  | |  |  | `CHAR(1)` | Release type |
+| `SalesSchedulingAgreement` | ✓ | |  |  | `CHAR(10)` | Sales Scheduling Agreement |
+| `SalesSchedulingAgreementItem` | ✓ | |  |  | `NUMC(6)` | Sales Scheduling Agreement Item |
+| `SchedulingAgreementReleaseType` | ✓ | |  |  | `CHAR(1)` | Release type |
 | `SalesSchedgAgrmtType` |  | |  |  | `CHAR(4)` | Sales Scheduling Agreement Type |
 | `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
@@ -83,3 +95,151 @@ tags:
 | `CumulativeDeliveredQuantity` |  | |  |  | `QUAN(15)` | Cumulative qty for delivery/MAIS in base unit of measure |
 | `CumulativeIssuedQuantity` |  | |  |  | `QUAN(15)` | GI Posted Cumulative Delivered Quantity |
 | `CumulativeReceiptQuantity` |  | |  |  | `QUAN(15)` | Cumulative Quantity Received by Customer |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESSCHEDGAGRMTITEMQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESSCHEDGAGRMTITEMQRY')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Sales Scheduling Agreement Item - Query'
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+
+@AbapCatalog: {
+  sqlViewName: 'CSDSCHEDGAGRMTIQ',
+  compiler.compareFilter: true,
+  preserveKey: true
+}
+
+@ObjectModel: {
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XL
+   }
+}
+
+@Analytics.query:true
+@ObjectModel.supportedCapabilities: 
+   [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@OData.publish: true
+@Metadata.ignorePropagatedAnnotations: true
+
+define view C_SalesSchedgAgrmtItemQry 
+  as select from I_SalesSchedgAgrmtItemCube 
+{     
+      //Key
+  key SalesSchedulingAgreement,
+  key SalesSchedulingAgreementItem,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+  key SchedulingAgreementReleaseType,
+      
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesSchedgAgrmtType,
+      
+      //Admin
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      CreatedByUser,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      CreationTime,
+      @Semantics.calendar.year
+      CreationDateYear,
+      @Semantics.calendar.yearQuarter
+      CreationDateYearQuarter,
+      @Semantics.calendar.yearMonth
+      CreationDateYearMonth,
+      
+      //Organization
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrganization,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DistributionChannel,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrganizationDivision,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOffice,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @Analytics.internalName: #LOCAL
+      PartnerCompany,
+      
+      //Partner
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShipToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      PayerParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup5,
+      
+      //Product
+      MaterialByCustomer,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Division,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Plant,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Product,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProductGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup5,
+  
+      //Other
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillingCompanyCode,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDistrict,
+
+      
+      CustomerFiscalYear,
+      @Semantics.unitOfMeasure: true
+      OrderQuantityUnit,
+      @Semantics.unitOfMeasure: true
+      BaseUnit,
+      
+      //KPIs
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      CumulativeDeliveredQuantity,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      CumulativeIssuedQuantity,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+      CumulativeReceiptQuantity
+      
+      //BOM
+      //MainItemPricingRefProduct,
+      //HigherLevelItem,
+      //BillOfMaterial,
+      //PropagatePrftbltySgmt2BOM,
+      //CostDeterminationIsRequired
+}
+```

@@ -5,11 +5,18 @@ app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESQUOTATIONITEMQRY')/$value
 semantic_en: This CDS view provides prerequisites for analyzing sales quotations on a variety of dimensions. It answers the following business questions: What are the net amounts of my sales quotations on a month-to-month basis? What is the item quantity of my sales quotations? Have my quotations been converted to orders? To what extent? What are the current situations of my quotations? Are they expiring, expired, or rejected?
+semantic_vi: Sales Quotation Item - Query — CDS view tiêu dùng dựa trên I_SalesQuotationItemCube_2.
 keywords:
   - Sales Quotation Item - Query
+  - sales
+  - quotation
+  - item
+  - query
+  - type
+  - category
 tags:
   - SD
   - bo:plant
@@ -20,7 +27,6 @@ tags:
   - quotation
   - SD-ANA
   - SD-ANA-2CL
-  - metadata-only
 ---
 # C_SALESQUOTATIONITEMQRY
 
@@ -32,14 +38,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESQUOTATIONITEMQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESQUOTATIONITEMQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesQuotation` |  | |  |  | `CHAR(10)` | Sales Quotation |
-| `SalesQuotationItem` |  | |  |  | `NUMC(6)` | Sales Quotation Item |
+| `SalesQuotation` | ✓ | |  |  | `CHAR(10)` | Sales Quotation |
+| `SalesQuotationItem` | ✓ | |  |  | `NUMC(6)` | Sales Quotation Item |
 | `SalesQuotationType` |  | |  |  | `CHAR(4)` | Sales Document Type |
 | `SalesQuotationItemType` |  | |  |  | `CHAR(1)` | Item Type |
 | `SalesQuotationItemCategory` |  | |  |  | `CHAR(4)` | Sales Document Item Category |
@@ -125,7 +131,7 @@ tags:
 | `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
 | `SalesQuotationNetAmtInDspCrcy` |  | |  |  | `CURR(19)` | Net Amount of Sales Quotation Items in Display Currency |
 | `CnvrtdSalesQtanNetAmtInDspCrcy` |  | |  |  | `CURR(19)` | Converted Sales Quoation Net Amount in Display Currency |
-| `SalesQuotationConversionRate` |  | |  |  | `DEC(7)` | Sales Quotation Conversion Rate |
+| `SalesQuotationConversionRate` |  | |  | `cast (1 as sd_quotation_conversion_rate)` | `DEC(7)` | Sales Quotation Conversion Rate |
 | `SalesQuotationQuantity` |  | |  |  | `QUAN(15)` | Quantity of Sales Quotation Items |
 | `NmbrOfOpenSlsQuotationItems` |  | |  |  | `INT8(19)` | Number of Open Sales Quotation Items |
 | `SlsQuotationOpenNetAmtInDC` |  | |  |  | `CURR(19)` | Net Value of Open Sales Quotations in Display Currency |
@@ -164,3 +170,329 @@ tags:
 | `ItemDeliveryIncompletionStatus` |  | |  |  | `CHAR(1)` | Delivery Incompletion Status (Item) |
 | `SDDocumentRejectionStatus` |  | |  |  | `CHAR(1)` | Rejection Status (Item) |
 | `TotalSDDocReferenceStatus` |  | |  |  | `CHAR(1)` | Overall Reference Status (Item) |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESQUOTATIONITEMQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESQUOTATIONITEMQRY')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Sales Quotation Item - Query'
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@AbapCatalog: {
+   sqlViewName: 'CSDSLSQTANITMQRY',
+   compiler.compareFilter: true,
+   preserveKey: true
+}
+@ObjectModel: {
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #L
+   }
+}
+@Analytics.query:true
+@ObjectModel.supportedCapabilities: 
+   [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@OData.publish: true
+@Metadata.ignorePropagatedAnnotations: true
+
+define view C_SalesQuotationItemQry
+  with parameters
+    @Consumption.defaultValue: 'M'
+    @Consumption.valueHelpDefinition: [{
+      entity: {
+        name:'I_ExchangeRateType',
+        element:'ExchangeRateType'
+      }
+    }]      
+    P_ExchangeRateType : kurst,
+    P_DisplayCurrency  : vdm_v_display_currency
+as select from I_SalesQuotationItemCube_2(P_ExchangeRateType:$parameters.P_ExchangeRateType, P_DisplayCurrency: $parameters.P_DisplayCurrency)
+{
+      //Key
+  key SalesQuotation,
+  key SalesQuotationItem,
+
+      //Category
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesQuotationType,
+      SalesQuotationItemType,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesQuotationItemCategory,
+
+      //Admin
+      CreatedByUser,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      CreationTime,
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      @Semantics.calendar.year
+      CreationDateYear,
+      @Semantics.calendar.yearQuarter
+      CreationDateYearQuarter,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @Semantics.calendar.yearMonth
+      CreationDateYearMonth,
+      SalesQuotationDate,
+      @Semantics.calendar.year
+      SalesQuotationDateYear,
+      @Semantics.calendar.yearQuarter
+      SalesQuotationDateYearQuarter,
+      @Semantics.calendar.yearMonth
+      SalesQuotationDateYearMonth,
+
+      //Quotation Valid Period
+      BindingPeriodValidityStartDate,
+      BindingPeriodValidityEndDate,
+
+      //Orgnization
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true, mandatory: false} 
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.totals: #SHOW
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrganization,
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true, mandatory: false} 
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DistributionChannel,
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true, mandatory: false} 
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrganizationDivision,
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true, mandatory: false} 
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOffice,
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true, mandatory: false} 
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @Analytics.internalName: #LOCAL
+      PartnerCompany, 
+      
+      //Sales
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true, mandatory: false} 
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup5,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDDocumentReason,
+      CustomerPurchaseOrderType,
+      PurchaseOrderByCustomer,
+      CustomerPurchaseOrderDate,
+      SalesQuotationItemText,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDocumentRjcnReason,
+
+      //Shipping
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShipToParty,
+      RequestedDeliveryDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShippingCondition,
+      CompleteDeliveryIsDefined,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryBlockReason,
+      ShippingPoint,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryPriority,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShippingType,
+      Route,
+
+      //Product
+      @Consumption.filter: {selectionType: #RANGE, multipleSelections: true} 
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Product,
+      OriginallyRequestedMaterial,
+      MaterialByCustomer,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProductGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup5,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Division,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Plant,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      StorageLocation,
+      
+      //BoM
+      MainItemPricingRefProduct,
+      HigherLevelItem,
+      BillOfMaterial,
+      PropagatePrftbltySgmt2BOM,
+      CostDeterminationIsRequired,      
+
+      //Pricing
+      PricingDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDistrict,
+
+      //Terms of Delivery
+      IncotermsVersion,
+      IncotermsClassification,
+      IncotermsTransferLocation,
+      IncotermsLocation1,
+      IncotermsLocation2,
+
+      //Payment
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerPaymentTerms,
+      PaymentMethod,
+
+      //Billing
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillingCompanyCode,
+      BillingDocumentDate,
+
+      //Accounting
+      FiscalYear,
+      FiscalPeriod,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusinessArea,
+      ProfitCenter,
+      CustomerAccountAssignmentGroup,
+
+      //Reference
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ReferenceSDDocumentCategory,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ReferenceSDDocument,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ReferenceSDDocumentItem,
+
+      @Semantics.currencyCode: true
+      DisplayCurrency,
+      @Semantics.currencyCode: true
+      TransactionCurrency,
+      @Semantics.unitOfMeasure: true
+      BaseUnit,
+
+      //KPI of Quotation
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SalesQuotationNetAmtInDspCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      CnvrtdSalesQtanNetAmtInDspCrcy,
+
+      @EndUserText.label: 'Conversion Rate'
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails.query.formula: 'NDIV0( $projection.CnvrtdSalesQtanNetAmtInDspCrcy / $projection.SalesQuotationNetAmtInDspCrcy )'
+      cast (1 as sd_quotation_conversion_rate)  as SalesQuotationConversionRate,
+
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      SalesQuotationQuantity,
+      
+      @DefaultAggregation: #SUM
+      NmbrOfOpenSlsQuotationItems,
+      
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SlsQuotationOpenNetAmtInDC,
+      
+      @DefaultAggregation: #SUM
+      NmbrOfExpiredSlsQuotationItems,
+      
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SlsQuotationExpiredNetAmtInDC,
+      
+      @DefaultAggregation: #SUM
+      NmbrOfExprgSlsQuotationItems,
+      
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SlsQuotationExpiringNetAmtInDC,
+      
+      @DefaultAggregation: #SUM
+      NmbrOfRejectedSlsQtanItems,
+   
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SlsQtanRejectedNetAmountInDC,
+      
+      //Status
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDProcessStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDDocumentRejectionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDelivConfStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallTotalDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDeliveryBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallOrdReltdBillgStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallBillingBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallTotalSDDocRefStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDDocReferenceStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HdrGeneralIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HeaderDelivIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HeaderBillgIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmGeneralIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmBillingIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmDelivIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDProcessStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryConfirmationStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrderRelatedBillingStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillingBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemGeneralIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemBillingIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemDeliveryIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDDocumentRejectionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalSDDocReferenceStatus
+}
+```

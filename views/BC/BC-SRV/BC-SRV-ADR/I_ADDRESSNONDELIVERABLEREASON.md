@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressNonDeliverableReason` | ✓ | |  | `undeliver` |  |  |
+| `AddressNonDeliverableReason` | ✓ | |  | `undeliver` | `CHAR(4)` | Not Deliverable Flag |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

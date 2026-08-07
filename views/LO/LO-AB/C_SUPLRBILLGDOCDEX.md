@@ -5,9 +5,21 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRBILLGDOCDEX')/$value
 semantic_en: Supplier Billing Document Extraction
+semantic_vi: Supplier Billing Document Extraction — CDS view tiêu dùng dựa trên R_SuplrBillgDocDEX.
+keywords:
+  - supplier
+  - billing
+  - document
+  - extraction
+  - suplr
+  - billg
+  - item
+  - settlmt
+  - type
+  - process
 tags:
   - LO
   - billing
@@ -18,7 +30,6 @@ tags:
   - LO-AB
   - lob:logistics general
   - supplier
-  - metadata-only
 ---
 # C_SUPLRBILLGDOCDEX
 
@@ -30,14 +41,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRBILLGDOCDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRBILLGDOCDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SuplrBillgDoc` |  | |  |  | `CHAR(10)` | Supplier Billing Document Number |
-| `SuplrBillgDocItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `SuplrBillgDoc` | ✓ | |  |  | `CHAR(10)` | Supplier Billing Document Number |
+| `SuplrBillgDocItem` | ✓ | |  |  | `NUMC(6)` | Document Item |
 | `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
 | `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
 | `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
@@ -219,3 +230,330 @@ tags:
 | `PriorSupplier` |  | |  |  | `CHAR(10)` | Prior Supplier |
 | `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
 | `SupplierSubrange` |  | |  |  | `CHAR(6)` | Supplier Subrange |
+| `_AlternativeInvoicingParty` |  | |  |  |  |  |
+| `_AltvInvoicingPartyCompany` |  | |  |  |  |  |
+| `_InvoicingParty` |  | |  |  |  |  |
+| `_InvoicingPartyCompany` |  | |  |  |  |  |
+| `_PayeeParty` |  | |  |  |  |  |
+| `_PayeePartyCompany` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRBILLGDOCDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUPLRBILLGDOCDEX')/$value)*
+
+```abap
+@ObjectModel: {
+   compositionRoot: true,
+   modelingPattern:#ANALYTICAL_FACT,
+   supportedCapabilities: [#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE ],
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #XXL
+   },
+   sapObjectNodeType.name: 'SupplierBillingDocument'
+}
+
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta: {
+              changeDataCapture: {
+                          mapping:[
+                              {
+                                  table: 'wbrp', role: #MAIN,
+                                  viewElement: ['SuplrBillgDoc', 'SuplrBillgDocItem'],
+                                  tableElement: ['wbeln', 'posnr']
+                              },
+                              {
+                                  table: 'wbrk', role: #LEFT_OUTER_TO_ONE_JOIN,
+                                  viewElement: ['SuplrBillgDoc'],
+                                  tableElement: ['wbeln']
+                              }
+                         ]
+        }
+      }
+    }
+ }
+
+
+@VDM.viewType: #CONSUMPTION
+
+@AccessControl: {
+  authorizationCheck:      #MANDATORY,
+  personalData.blocking:   #('TRANSACTIONAL_DATA')
+}
+
+@EndUserText.label: 'Supplier Billing Document Extraction'
+@Metadata: {
+    ignorePropagatedAnnotations: true,
+    allowExtensions: false 
+    }
+
+define view entity C_SuplrBillgDocDEX
+  as select from R_SuplrBillgDocDEX as SuplrBillgDocDEX
+{
+  key SuplrBillgDoc,
+  key SuplrBillgDocItem,
+
+      SuplrBillgDocDEX.SettlmtDocType               as SettlmtDocType,
+      SuplrBillgDocDEX.SettlmtDocCat,
+      SuplrBillgDocDEX.SettlmtProcessType,
+      SuplrBillgDocDEX.LogisticsDataEntryCat,
+      SuplrBillgDocDEX.SettlmtCat,
+      SuplrBillgDocDEX.PostingDate,
+      SuplrBillgDocDEX.SuplrBillgDocAcctgTransfSts,
+      SuplrBillgDocDEX.DocumentDate,
+      SuplrBillgDocDEX.DocumentReferenceID,
+      SuplrBillgDocDEX.AssignmentReference,
+      SuplrBillgDocDEX.SettlmtApplSts,
+      SuplrBillgDocDEX.SettlmtApplStsGrp,
+      SuplrBillgDocDEX.PricingProcedure,
+      SuplrBillgDocDEX.PricingDocument,
+      SuplrBillgDocDEX.InvoicingParty,
+      SuplrBillgDocDEX.PayeeParty,
+      SuplrBillgDocDEX.AlternativeInvoicingParty,
+      SuplrBillgDocDEX.CompanyCode                  as CompanyCode,
+      SuplrBillgDocDEX.PurchasingOrganization,
+      SuplrBillgDocDEX.PurchasingGroup,
+      SuplrBillgDocDEX.CreatedByUser,
+      SuplrBillgDocDEX.CreationDate,
+      SuplrBillgDocDEX.CreationTime,
+      SuplrBillgDocDEX.LastChangeDate               as LastChangeDate,
+      SuplrBillgDocDEX.SuplrBillgDocCurrency        as SuplrBillgDocCurrency,
+      SuplrBillgDocDEX.ExchangeRate,
+      SuplrBillgDocDEX.ExchangeRateType,
+      SuplrBillgDocDEX.ExchangeRateIsFixed,
+      SuplrBillgDocDEX.ExchangeRateDate,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocTotalGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocTotalNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocTotalTaxAmount,
+      SuplrBillgDocDEX.PaymentTerms,
+      SuplrBillgDocDEX.CashDiscount1Days,
+      SuplrBillgDocDEX.CashDiscount2Days,
+      SuplrBillgDocDEX.NetPaymentDays,
+      SuplrBillgDocDEX.CashDiscount1Percent,
+      SuplrBillgDocDEX.CashDiscount2Percent,
+      SuplrBillgDocDEX.PaymentMethod,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrTotEligibleAmtForCshDisc,
+      SuplrBillgDocDEX.SuplrBillgDocIsReversed,
+      SuplrBillgDocDEX.RvsdSuplrBillgDoc,
+      SuplrBillgDocDEX.AdditionalValueDays,
+      SuplrBillgDocDEX.FixedValueDate,
+      SuplrBillgDocDEX.SupplyingCountry,
+      SuplrBillgDocDEX.StateCentralBankPaymentReason,
+      SuplrBillgDocDEX.TaxDepartureCountry,
+      SuplrBillgDocDEX.TaxDestinationCountry,
+      SuplrBillgDocDEX.IsEUTriangularDeal,
+      SuplrBillgDocDEX.SettlmtCoCodeTaxCountry,
+      SuplrBillgDocDEX.VATRegistration,
+      SuplrBillgDocDEX.CreditControlArea,
+      SuplrBillgDocDEX.SuplrBillgDocActivityReason,
+      SuplrBillgDocDEX.PaymentReference,
+      SuplrBillgDocDEX.SuplrBillgDocPaymentCurrency,
+      SuplrBillgDocDEX.SuplrBillgDocPaytCrcyExchRate,
+      SuplrBillgDocDEX.OneTimeSupplierAddressID,
+      SuplrBillgDocDEX.SettlmtReltdCndnContr,
+      SuplrBillgDocDEX.SettlmtReltdTrdgContr,
+      SuplrBillgDocDEX.CndnContrType,
+      SuplrBillgDocDEX.FiscalPeriod,
+      SuplrBillgDocDEX.SettlmtDate,
+      SuplrBillgDocDEX.SuplrBillgDocIncmpltnsRsn,
+      SuplrBillgDocDEX.DocIntrastatRelevance,
+      SuplrBillgDocDEX.IntrastatDeclnGdsFlwCat,
+      SuplrBillgDocDEX.IncotermsVersion,
+      SuplrBillgDocDEX.IncotermsClassification,
+      SuplrBillgDocDEX.IncotermsTransferLocation,
+      SuplrBillgDocDEX.IncotermsLocation1,
+      SuplrBillgDocDEX.IncotermsLocation2,
+      SuplrBillgDocDEX.SettlmtBusProcVar,
+      SuplrBillgDocDEX.SettlmtBusProcCat,
+      SuplrBillgDocDEX.SEPAMandate,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtQuantityUnit'
+      SuplrBillgDocDEX.TotalSettlmtQuantity,
+      SuplrBillgDocDEX.TotalSettlmtQuantityUnit     as TotalSettlmtQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtWeightUnit'
+      SuplrBillgDocDEX.TotalSettlmtNetWeight,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtWeightUnit'
+      SuplrBillgDocDEX.TotalSettlmtGrossWeight,
+      SuplrBillgDocDEX.TotalSettlmtWeightUnit       as TotalSettlmtWeightUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtVolumeUnit'
+      SuplrBillgDocDEX.TotalSettlmtVolume,
+      SuplrBillgDocDEX.TotalSettlmtVolumeUnit       as TotalSettlmtVolumeUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'TotalSettlmtPointsQtyUnit'
+      SuplrBillgDocDEX.TotalSettlmtPointsQty,
+      SuplrBillgDocDEX.TotalSettlmtPointsQtyUnit    as TotalSettlmtPointsQtyUnit,
+      SuplrBillgDocDEX.SettlmtDocSmmrznCat,
+      SuplrBillgDocDEX.SettlmtClassificationCat,
+      SuplrBillgDocDEX.TrdgExpnSettlmtDoc,
+      SuplrBillgDocDEX.TrdgExpnDocSettled,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'TrdgExpnCurrency'
+      SuplrBillgDocDEX.TrdgExpnAmount,
+      SuplrBillgDocDEX.TrdgExpnCurrency             as TrdgExpnCurrency,
+      SuplrBillgDocDEX.TrdgExpnSupplier,
+
+      /* Items */
+      SuplrBillgDocDEX.Product,
+      SuplrBillgDocDEX.ProductGroup,
+      SuplrBillgDocDEX.Plant,
+      SuplrBillgDocDEX.InventoryValuationType,
+      SuplrBillgDocDEX.PricingDate,
+      SuplrBillgDocDEX.TaxCode,
+      SuplrBillgDocDEX.TaxJurisdiction,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'SettlmtQuantityUnit'
+      SuplrBillgDocDEX.SettlmtQuantity,
+      SuplrBillgDocDEX.SettlmtQuantityUnit          as SettlmtQuantityUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.NetPriceAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'NetPriceQuantityUnit'
+      SuplrBillgDocDEX.NetPriceQuantity,
+      SuplrBillgDocDEX.NetPriceQuantityUnit         as NetPriceQuantityUnit,
+      SuplrBillgDocDEX.SettlmtToBaseQuantityNmrtr,
+      SuplrBillgDocDEX.SettlmtToBaseQuantityDnmntr,
+      SuplrBillgDocDEX.SettlmtToNetPriceQtyNmrtr,
+      SuplrBillgDocDEX.SettlmtToNetPriceQtyDnmntr,
+      SuplrBillgDocDEX.BaseUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      SuplrBillgDocDEX.ItemNetWeight,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      SuplrBillgDocDEX.ItemGrossWeight,
+      SuplrBillgDocDEX.ItemWeightUnit               as ItemWeightUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ItemVolumeUnit'
+      SuplrBillgDocDEX.ItemVolume,
+      SuplrBillgDocDEX.ItemVolumeUnit               as ItemVolumeUnit,
+      SuplrBillgDocDEX.ProductPurchasePointsQtyUnit as ProductPurchasePointsQtyUnit,
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'ProductPurchasePointsQtyUnit'
+      SuplrBillgDocDEX.ProductPurchasePointsQty,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocItemTaxAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocItemGrossAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocItemNetAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocSubtotal1Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocSubtotal2Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocSubtotal3Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocSubtotal4Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocSubtotal5Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocSubtotal6Amount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocRebateBasisAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrBillgDocEffctvItemAmount,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.SuplrItmEligibleAmtForCshDisc,
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'SuplrBillgDocCurrency'
+      SuplrBillgDocDEX.NonDeductibleInputTaxAmount,
+      SuplrBillgDocDEX.SuplrBillgDocItmStstclPrpty,
+      SuplrBillgDocDEX.CashDiscountIsDeductible,
+      SuplrBillgDocDEX.SettlmtSourceDoc,
+      SuplrBillgDocDEX.SettlmtSourceDocItem,
+      SuplrBillgDocDEX.SettlmtSourceDocCat,
+      SuplrBillgDocDEX.SettlmtSourceDocFiscalYear,
+      SuplrBillgDocDEX.SuplrBillgDocItmActyReason,
+      SuplrBillgDocDEX.SuplrBillgDocItemText,
+      SuplrBillgDocDEX.BusinessArea,
+      SuplrBillgDocDEX.ControllingArea,
+      SuplrBillgDocDEX.CostCenter,
+      SuplrBillgDocDEX.ProfitCenter,
+      SuplrBillgDocDEX.WBSElementInternalID,
+      SuplrBillgDocDEX.SupplierBillingDocumentOrder,
+      SuplrBillgDocDEX.Batch,
+      SuplrBillgDocDEX.PrcDetnIsIncmplt,
+      SuplrBillgDocDEX.SettlmtPrecdgDoc,
+      SuplrBillgDocDEX.SettlmtPrecdgDocItem,
+      SuplrBillgDocDEX.SettlmtPrecdgDocCat,
+      SuplrBillgDocDEX.SettlmtPrecdgDocFiscalYear,
+      SuplrBillgDocDEX.SuplrBillgDocItmCat,
+      SuplrBillgDocDEX.SettlmtItemReltdCndnContr,
+      SuplrBillgDocDEX.SettlmtItemReltdTrdgContr,
+      SuplrBillgDocDEX.SettlmtItemReltdTrdgContrItem,
+      SuplrBillgDocDEX.SuplrBillgDocItemStatus,
+      SuplrBillgDocDEX.SuplrBillgDocItmReversed,
+      SuplrBillgDocDEX.ServicesRenderedDate,
+      SuplrBillgDocDEX.SettlementFiscalYear,
+      SuplrBillgDocDEX.HigherLevelItem,
+      SuplrBillgDocDEX.LowerLevelItemExists,
+      SuplrBillgDocDEX.ItemDistributionStatus,
+      SuplrBillgDocDEX.SettlmtRefDocType,
+      SuplrBillgDocDEX.SettlmtRefDoc,
+      SuplrBillgDocDEX.SettlmtRefDocFiscalYear,
+      SuplrBillgDocDEX.SettlmtRefDocLogicalSyst,
+      SuplrBillgDocDEX.SettlmtRefDocItem,
+      SuplrBillgDocDEX.SettlmtRefDocCat,
+      SuplrBillgDocDEX.ItemIntrastatRelevance,
+      SuplrBillgDocDEX.SettlmtAddlRefDocType,
+      SuplrBillgDocDEX.SettlmtAddlRefDoc,
+      SuplrBillgDocDEX.SettlmtAddlRefDocFiscalYear,
+      SuplrBillgDocDEX.SettlmtAddlRefDocLogicalSyst,
+      SuplrBillgDocDEX.SettlmtAddlRefDocItem,
+      SuplrBillgDocDEX.SettlmtAddlRefDocCat,
+      SuplrBillgDocDEX.CustomerSettlmtRecipient,
+      SuplrBillgDocDEX.ProductHierarchy,
+      SuplrBillgDocDEX.SalesSpcfcProductGroup1,
+      SuplrBillgDocDEX.SalesSpcfcProductGroup2,
+      SuplrBillgDocDEX.SalesSpcfcProductGroup3,
+      SuplrBillgDocDEX.SalesSpcfcProductGroup4,
+      SuplrBillgDocDEX.SalesSpcfcProductGroup5,
+      SuplrBillgDocDEX.SupplierProductID,
+      SuplrBillgDocDEX.PriorSupplier,
+      SuplrBillgDocDEX.GLAccount,
+      SuplrBillgDocDEX.SupplierSubrange,
+
+
+      /* Associations */
+      @Consumption.hidden: true
+      SuplrBillgDocDEX._AlternativeInvoicingParty   as _AlternativeInvoicingParty,
+      @Consumption.hidden: true
+      SuplrBillgDocDEX._AltvInvoicingPartyCompany   as _AltvInvoicingPartyCompany,
+      @Consumption.hidden: true
+      SuplrBillgDocDEX._InvoicingParty              as _InvoicingParty,
+      @Consumption.hidden: true
+      SuplrBillgDocDEX._InvoicingPartyCompany       as _InvoicingPartyCompany,
+      @Consumption.hidden: true
+      SuplrBillgDocDEX._PayeeParty                  as _PayeeParty,
+      @Consumption.hidden: true
+      SuplrBillgDocDEX._PayeePartyCompany           as _PayeePartyCompany
+}
+```

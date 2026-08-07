@@ -31,17 +31,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
-| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |  |  |
-| `FaxNumberCountry` |  | |  | `country` |  |  |
-| `CommLineNotForUnsolicitedCntct` |  | |  | `flg_nouse` |  |  |
-| `FaxAreaCodeSubscriberNumber` |  | |  | `fax_number` |  |  |
-| `FaxExtensionNumber` |  | |  | `fax_extens` |  |  |
-| `InternationalFaxNumber` |  | |  | `faxnr_long` |  |  |
-| `FaxNumberIsCurrentDefault` |  | |  | `cast (flgdefault as ad_faxcurdflt preserving type)` |  |  |
-| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |  |  |
-| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` | `NUMC(3)` | Sequence Number |
+| `FaxNumberCountry` |  | |  | `country` | `CHAR(3)` | Country/Region for Telephone/Fax Number |
+| `CommLineNotForUnsolicitedCntct` |  | |  | `flg_nouse` | `CHAR(1)` | Flag: This Communication Number is Not Used |
+| `FaxAreaCodeSubscriberNumber` |  | |  | `fax_number` | `CHAR(30)` | Fax Number: Dialing Code and Number |
+| `FaxExtensionNumber` |  | |  | `fax_extens` | `CHAR(10)` | Fax no.: Extension |
+| `InternationalFaxNumber` |  | |  | `faxnr_long` | `CHAR(30)` | Complete Number: Dialing Code+Number+Extension |
+| `FaxNumberIsCurrentDefault` |  | |  | `cast (flgdefault as ad_faxcurdflt preserving type)` | `CHAR(1)` | Indicator : Current Default Fax Number |
+| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` | `DATS(8)` |  |
 | `_AddressCommunicationRemark` | | ✓ | | | | |
 | `_AddressCommunicationUsage` | | ✓ | | | | |
 | `_FaxNumberCountry` | | ✓ | | | | |

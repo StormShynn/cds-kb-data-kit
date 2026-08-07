@@ -33,8 +33,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DeliveryServiceTypeCode` | ✓ | |  | `deli_serv_type` |  |  |
-| `DeliveryServiceTypeName` |  | |  | `deli_serv_text` |  |  |
+| `DeliveryServiceTypeCode` | ✓ | |  | `deli_serv_type` | `CHAR(4)` | Type of Delivery Service |
+| `DeliveryServiceTypeName` |  | |  | `deli_serv_text` | `CHAR(40)` | Delivery Service Text |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

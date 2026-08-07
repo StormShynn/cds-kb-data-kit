@@ -5,12 +5,27 @@ app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACTLPLNLINEITEMSEMTAGGLACCT')/$value
 semantic_en: This CDS view contains details for journal entries, such as G/L accounts, company code, cost center, or profit center. Most importantly, this view contains both actual and planned KPI amounts based on the corresponding semantic tags. This CDS view provides the prerequisites for answering the following business questions: What are the plan and actual values for KPIs based on semantic tags?
+semantic_vi: Actual and Plan Line Item with Semantic Tag — CDS view giao diện dựa trên P_ActlPlnLineItemSemTagGLAcct.
 keywords:
   - Actual and Plan Line Item with Semantic Tag
-  - Actual and Plan Line Item with Semantic Tag
+  - actual
+  - and
+  - plan
+  - line
+  - item
+  - with
+  - semantic
+  - tag
+  - ledger
+  - source
+  - company
+  - code
+  - fiscal
+  - year
+  - accounting
 tags:
   - FI
   - account
@@ -23,7 +38,6 @@ tags:
   - interface-view
   - lob:finance
   - plan
-  - metadata-only
 ---
 # I_ACTLPLNLINEITEMSEMTAGGLACCT
 
@@ -35,25 +49,25 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACTLPLNLINEITEMSEMTAGGLACCT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACTLPLNLINEITEMSEMTAGGLACCT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `FinancialPlanningReqTransSqnc` |  | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
-| `FinancialPlanningDataPacket` |  | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
-| `FinancialPlanningEntryItem` |  | |  |  | `INT4(10)` | Financial Planning Entry Item |
-| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
-| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `FinancialPlanningReqTransSqnc` | ✓ | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
+| `FinancialPlanningDataPacket` | ✓ | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
+| `FinancialPlanningEntryItem` | ✓ | |  |  | `INT4(10)` | Financial Planning Entry Item |
+| `GLAccountHierarchy` | ✓ | |  |  | `CHAR(42)` | Financial Statement Version |
+| `SemanticTag` | ✓ | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `ValidityStartDate` | ✓ | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid To Date |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
 | `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |
@@ -108,15 +122,15 @@ tags:
 | `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
 | `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
-| `InvertedAmtInCoCodeCurrency` |  | |  |  | `CURR(23)` | Inverted Amount in Company Code Currency |
+| `InvertedAmtInCoCodeCurrency` |  | |  | `cast(( AmountInCompanyCodeCurrency * -1 ) as fis_hsl_inverted)` | `CURR(23)` | Inverted Amount in Company Code Currency |
 | `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
 | `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
 | `FunctionalCurrency` |  | |  |  | `CUKY(5)` | Functional Currency |
 | `AmountInFunctionalCurrency` |  | |  |  | `CURR(23)` | Amount in Functional Currency |
-| `InvertedAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Inverted Amount in Global Currency |
+| `InvertedAmountInGlobalCurrency` |  | |  | `cast(( AmountInGlobalCurrency * -1 ) as fis_ksl_inverted)` | `CURR(23)` | Inverted Amount in Global Currency |
 | `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
 | `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
-| `InvertedAmtInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Inverted Amount in Free Defined Currency |
+| `InvertedAmtInFreeDefinedCrcy1` |  | |  | `cast(( AmountInFreeDefinedCurrency1 * -1 ) as fis_osl_inverted)` | `CURR(23)` | Inverted Amount in Free Defined Currency |
 | `FreeDefinedCurrency2` |  | |  |  | `CUKY(5)` | Freely Defined Currency 2 |
 | `AmountInFreeDefinedCurrency2` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 2 |
 | `FreeDefinedCurrency3` |  | |  |  | `CUKY(5)` | Freely Defined Currency 3 |
@@ -236,7 +250,6 @@ tags:
 | `PersonnelNumber` |  | |  |  | `NUMC(8)` | Personnel Number |
 | `ControllingObjectClass` |  | |  |  | `CHAR(2)` | Controlling Object Class |
 | `OriginCostCenter` |  | |  |  | `CHAR(10)` | Origin Cost Center |
-| `OriginProfitCenter` |  | |  |  | `CHAR(10)` | Origin Profit Center |
 | `OriginCostCtrActivityType` |  | |  |  | `CHAR(6)` | Origin Cost Center Activity Type |
 | `AccountAssignment` |  | |  |  | `CHAR(30)` | Account Assignment |
 | `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
@@ -366,10 +379,1540 @@ tags:
 | `PlnNetRsltAmtInCCCrcy` |  | |  |  | `CURR(23)` | Plan Net Result Amount In Company Code Currency |
 | `PlnPnLResultAmtInCCCrcy` |  | |  |  | `CURR(23)` | Plan P&L Result Amount In company code currency |
 | `PlnGLAcctNetIncAmtInCCCrcy` |  | |  |  | `CURR(23)` | Plan Net Income Amount In CompanyCode Currency |
-| `GLAccountAuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
-| `SupplierBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
-| `CustomerBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
-| `AcctgDocTypeAuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
-| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
-| `SalesOrderType` |  | |  |  | `CHAR(4)` | Sales Document Type |
+| `GLAccountAuthorizationGroup` |  | |  | `cast( '' as brgru)` | `CHAR(4)` | Authorization Group |
+| `SupplierBasicAuthorizationGrp` |  | |  | `cast( '' as brgru)` | `CHAR(4)` | Authorization Group |
+| `CustomerBasicAuthorizationGrp` |  | |  | `cast( '' as brgru)` | `CHAR(4)` | Authorization Group |
+| `AcctgDocTypeAuthorizationGroup` |  | |  | `cast( '' as brgru)` | `CHAR(4)` | Authorization Group |
+| `OrderType` |  | |  | `cast( '' as aufart)` | `CHAR(4)` | Order Type |
+| `SalesOrderType` |  | |  | `cast( '' as auart)` | `CHAR(4)` | Sales Document Type |
 | `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
+| `_SourceLedger` | | ✓ | | | | |
+| `_JournalEntry` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_GLAccountInChartOfAccounts` | | ✓ | | | | |
+| `_ChartOfAccounts` | | ✓ | | | | |
+| `_GLAccountInCompanyCode` | | ✓ | | | | |
+| `_FiscalYear` | | ✓ | | | | |
+| `_LedgerFiscalYearForVariant` | | ✓ | | | | |
+| `_FiscalPeriod` | | ✓ | | | | |
+| `_GLAccountType` | | ✓ | | | | |
+| `_FiscalPeriodForVariant` | | ✓ | | | | |
+| `_BusinessArea` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_CurrentProfitCenter` | | ✓ | | | | |
+| `_CostCenter` | | ✓ | | | | |
+| `_CurrentCostCenter` | | ✓ | | | | |
+| `_InventorySpecialStockValnType` | | ✓ | | | | |
+| `_InventorySpclStockValnType` | | ✓ | | | | |
+| `_InventorySpecialStockType` | | ✓ | | | | |
+| `_InventorySpclStkSalesDocument` | | ✓ | | | | |
+| `_InventorySpclStkSalesDocItm` | | ✓ | | | | |
+| `_InvtrySpclStockWBSElmntIntID` | | ✓ | | | | |
+| `_InvtrySpclStkWBSElmntBscData` | | ✓ | | | | |
+| `_InvtrySpclStockWBSElmntExtID` | | ✓ | | | | |
+| `_InventorySpclStockWBSElement` | | ✓ | | | | |
+| `_InventorySpecialStockSupplier` | | ✓ | | | | |
+| `_InventoryValuationType` | | ✓ | | | | |
+| `_PurReqValuationArea` | | ✓ | | | | |
+| `_Project` | | ✓ | | | | |
+| `_ProjectBasicData` | | ✓ | | | | |
+| `_ProjectBasicDataText` | | ✓ | | | | |
+| `_ProjectExternalID` | | ✓ | | | | |
+| `_ProjectExternalIDText` | | ✓ | | | | |
+| `_PartnerProjectBasicData` | | ✓ | | | | |
+| `_PartnerProjectBasicDataText` | | ✓ | | | | |
+| `_PartnerProjectExternalID` | | ✓ | | | | |
+| `_PartnerProjectExternalIDText` | | ✓ | | | | |
+| `_WBSElement` | | ✓ | | | | |
+| `_WBSElementInternalID` | | ✓ | | | | |
+| `_WBSElementBasicData` | | ✓ | | | | |
+| `_WBSElementBasicDataText` | | ✓ | | | | |
+| `_WBSElementExternalID` | | ✓ | | | | |
+| `_WBSElementExternalIDText` | | ✓ | | | | |
+| `_PartnerWBSElementBasicData` | | ✓ | | | | |
+| `_PartnerWBSElementBscDataText` | | ✓ | | | | |
+| `_PartnerWBSElementExternalID` | | ✓ | | | | |
+| `_PartnerWBSElementExtIDText` | | ✓ | | | | |
+| `_FunctionalArea` | | ✓ | | | | |
+| `_Segment` | | ✓ | | | | |
+| `_CostCtrActivityType` | | ✓ | | | | |
+| `_CostAnalysisResource` | | ✓ | | | | |
+| `_InternalOrder` | | ✓ | | | | |
+| `_Order` | | ✓ | | | | |
+| `_WorkPackageWorkItem` | | ✓ | | | | |
+| `_WorkPackage` | | ✓ | | | | |
+| `_PartnerCompanyCode` | | ✓ | | | | |
+| `_PartnerBusinessArea` | | ✓ | | | | |
+| `_PartnerProfitCenter` | | ✓ | | | | |
+| `_PartnerCostCenter` | | ✓ | | | | |
+| `_PartnerProject` | | ✓ | | | | |
+| `_PartnerWBSElement` | | ✓ | | | | |
+| `_PartnerFunctionalArea` | | ✓ | | | | |
+| `_PartnerSegment` | | ✓ | | | | |
+| `_PartnerCostCtrActivityType` | | ✓ | | | | |
+| `_PartnerOrder` | | ✓ | | | | |
+| `_PartnerOrder_2` | | ✓ | | | | |
+| `_PartnerCompany` | | ✓ | | | | |
+| `_FiscalYearVariant` | | ✓ | | | | |
+| `_ControllingDebitCreditCode` | | ✓ | | | | |
+| `_Employment` | | ✓ | | | | |
+| `_BusinessTransactionType` | | ✓ | | | | |
+| `_AccountingDocumentType` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Supplier` | | ✓ | | | | |
+| `_MasterFixedAsset` | | ✓ | | | | |
+| `_FixedAsset` | | ✓ | | | | |
+| `_SalesOrder` | | ✓ | | | | |
+| `_SalesOrderItem` | | ✓ | | | | |
+| `_SalesDocument` | | ✓ | | | | |
+| `_BillingDocumentType` | | ✓ | | | | |
+| `_SalesOrganization` | | ✓ | | | | |
+| `_DistributionChannel` | | ✓ | | | | |
+| `_Division` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_CustomerGroup` | | ✓ | | | | |
+| `_CustomerSupplierCountry` | | ✓ | | | | |
+| `_SalesDistrict` | | ✓ | | | | |
+| `_BillToParty` | | ✓ | | | | |
+| `_ShipToParty` | | ✓ | | | | |
+| `_TransactionCurrency` | | ✓ | | | | |
+| `_CompanyCodeCurrency` | | ✓ | | | | |
+| `_GlobalCurrency` | | ✓ | | | | |
+| `_FunctionalCurrency` | | ✓ | | | | |
+| `_FreeDefinedCurrency1` | | ✓ | | | | |
+| `_FreeDefinedCurrency2` | | ✓ | | | | |
+| `_FreeDefinedCurrency3` | | ✓ | | | | |
+| `_FreeDefinedCurrency4` | | ✓ | | | | |
+| `_FreeDefinedCurrency5` | | ✓ | | | | |
+| `_FreeDefinedCurrency6` | | ✓ | | | | |
+| `_FreeDefinedCurrency7` | | ✓ | | | | |
+| `_FreeDefinedCurrency8` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_CostSourceUnit` | | ✓ | | | | |
+| `_AdditionalQuantity1Unit` | | ✓ | | | | |
+| `_AdditionalQuantity2Unit` | | ✓ | | | | |
+| `_AdditionalQuantity3Unit` | | ✓ | | | | |
+| `_PlanningCategory` | | ✓ | | | | |
+| `_SemanticTag` | | ✓ | | | | |
+| `_ConditionContract` | | ✓ | | | | |
+| `_ProjectInternalID` | | ✓ | | | | |
+| `_SoldProduct` | | ✓ | | | | |
+| `_SoldProductGroup` | | ✓ | | | | |
+| `_MaintenanceOrderSubOperation` | | ✓ | | | | |
+| `_Equipment` | | ✓ | | | | |
+| `_FunctionalLocation` | | ✓ | | | | |
+| `_Assembly` | | ✓ | | | | |
+| `_MaintenanceActivityType` | | ✓ | | | | |
+| `_MaintOrdPlngDegreeCode` | | ✓ | | | | |
+| `_PMNotificationPriorityType` | | ✓ | | | | |
+| `_PMNotificationPriority` | | ✓ | | | | |
+| `_SuperiorOrder` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
+| `_ServiceDocumentType` | | ✓ | | | | |
+| `_ServiceDocument` | | ✓ | | | | |
+| `_ServiceDocumentItem` | | ✓ | | | | |
+| `_ServiceContractType` | | ✓ | | | | |
+| `_ServiceContract` | | ✓ | | | | |
+| `_ServiceContractItem` | | ✓ | | | | |
+| `_ProviderContract` | | ✓ | | | | |
+| `_ProviderContractItem` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Extension_acdoca` | `E_JournalEntryItem` | [1..1] |
+| `_Extension_acdocp` | `E_FinancialPlanningEntryItem` | [1..1] |
+| `_SourceLedger` | `I_Ledger` | [0..1] |
+| `_JournalEntry` | `I_JournalEntry` | [1..1] |
+| `_ControllingArea` | `I_ControllingArea` | [0..1] |
+| `_Ledger` | `I_Ledger` | [0..1] |
+| `_CompanyCode` | `I_CompanyCode` | [1] |
+| `_GLAccountInChartOfAccounts` | `I_GLAccountInChartOfAccounts` | [0..1] |
+| `_ChartOfAccounts` | `I_ChartOfAccounts` | [1] |
+| `_GLAccountInCompanyCode` | `I_GLAccountInCompanyCode` | [0..1] |
+| `_FiscalYear` | `I_FiscalYearForCompanyCode` | [0..1] |
+| `_LedgerFiscalYearForVariant` | `I_FiscalYearForVariant` | [0..1] |
+| `_FiscalPeriod` | `I_FiscalYearPeriodForCmpnyCode` | [0..1] |
+| `_GLAccountType` | `I_GLAccountType` | [0..1] |
+| `_FiscalPeriodForVariant` | `I_FiscalPeriodForVariant` | [0..1] |
+| `_BusinessArea` | `I_BusinessArea` | [0..1] |
+| `_ProfitCenter` | `I_ProfitCenter` | [0..*] |
+| `_CurrentProfitCenter` | `I_ProfitCenter` | [0..1] |
+| `_CostCenter` | `I_CostCenter` | [0..*] |
+| `_CurrentCostCenter` | `I_CostCenter` | [0..1] |
+| `_InventorySpecialStockValnType` | `I_InventoryValuationType` | [0..1] |
+| `_InventorySpclStockValnType` | `I_InvtrySpecialStockValnType` | [0..1] |
+| `_InventorySpecialStockType` | `I_InventorySpecialStockType` | [0..1] |
+| `_InventorySpclStkSalesDocument` | `I_SalesOrder` | [0..1] |
+| `_InventorySpclStkSalesDocItm` | `I_SalesOrderItem` | [0..1] |
+| `_InvtrySpclStockWBSElmntIntID` | `I_WBSElementByInternalKey` | [0..1] |
+| `_InvtrySpclStkWBSElmntBscData` | `I_WBSElementBasicData` | [0..1] |
+| `_InvtrySpclStockWBSElmntExtID` | `I_WBSElementByExternalID` | [0..1] |
+| `_InventorySpclStockWBSElement` | `I_WBSElement` | [0..1] |
+| `_InventorySpecialStockSupplier` | `I_Supplier` | [0..1] |
+| `_InventoryValuationType` | `I_InventoryValuationType` | [0..1] |
+| `_PurReqValuationArea` | `I_Purreqvaluationarea` | [0..1] |
+| `_Project` | `I_Project` | [0..1] |
+| `_ProjectBasicData` | `I_ProjectBasicData` | [0..1] |
+| `_ProjectBasicDataText` | `I_ProjectBasicData` | [0..1] |
+| `_ProjectExternalID` | `I_ProjectByExternalID` | [0..1] |
+| `_ProjectExternalIDText` | `I_ProjectByExternalID` | [0..1] |
+| `_PartnerProjectBasicData` | `I_ProjectBasicData` | [0..1] |
+| `_PartnerProjectBasicDataText` | `I_ProjectBasicData` | [0..1] |
+| `_PartnerProjectExternalID` | `I_ProjectByExternalID` | [0..1] |
+| `_PartnerProjectExternalIDText` | `I_ProjectByExternalID` | [0..1] |
+| `_WBSElement` | `I_WBSElement` | [0..1] |
+| `_WBSElementInternalID` | `I_WBSElementByInternalKey` | [0..1] |
+| `_WBSElementBasicData` | `I_WBSElementBasicData` | [0..1] |
+| `_WBSElementBasicDataText` | `I_WBSElementBasicData` | [0..1] |
+| `_WBSElementExternalID` | `I_WBSElementByExternalID` | [0..1] |
+| `_WBSElementExternalIDText` | `I_WBSElementByExternalID` | [0..1] |
+| `_PartnerWBSElementBasicData` | `I_WBSElementBasicData` | [0..1] |
+| `_PartnerWBSElementBscDataText` | `I_WBSElementBasicData` | [0..1] |
+| `_PartnerWBSElementExternalID` | `I_WBSElementByExternalID` | [0..1] |
+| `_PartnerWBSElementExtIDText` | `I_WBSElementByExternalID` | [0..1] |
+| `_FunctionalArea` | `I_FunctionalArea` | [0..1] |
+| `_Segment` | `I_Segment` | [0..1] |
+| `_CostCtrActivityType` | `I_CostCenterActivityType` | [0..*] |
+| `_CostAnalysisResource` | `I_CostAnalysisResource` | [0..*] |
+| `_InternalOrder` | `I_InternalOrder` | [0..1] |
+| `_Order` | `I_Order` | [0..1] |
+| `_WorkPackageWorkItem` | `I_WorkPackageWorkItem` | [0..1] |
+| `_WorkPackage` | `I_WorkPackage` | [0..1] |
+| `_PartnerCompanyCode` | `I_CompanyCode` | [0..1] |
+| `_PartnerBusinessArea` | `I_BusinessArea` | [0..1] |
+| `_PartnerProfitCenter` | `I_ProfitCenter` | [0..*] |
+| `_PartnerCostCenter` | `I_CostCenter` | [0..*] |
+| `_PartnerProject` | `I_Project` | [0..1] |
+| `_PartnerWBSElement` | `I_WBSElement` | [0..1] |
+| `_PartnerFunctionalArea` | `I_FunctionalArea` | [0..1] |
+| `_PartnerSegment` | `I_Segment` | [0..1] |
+| `_PartnerCostCtrActivityType` | `I_CostCenterActivityType` | [0..*] |
+| `_PartnerOrder` | `I_InternalOrder` | [0..1] |
+| `_PartnerOrder_2` | `I_Order` | [0..1] |
+| `_PartnerCompany` | `I_Partnercompany` | [1..1] |
+| `_FiscalYearVariant` | `I_FiscalYearVariant` | [1] |
+| `_ControllingDebitCreditCode` | `I_ControllingDebitCreditCode` | [0..1] |
+| `_Employment` | `I_Employment` | [0..1] |
+| `_BusinessTransactionType` | `I_BusinessTransactionType` | [0..1] |
+| `_AccountingDocumentType` | `I_AccountingDocumentType` | [0..1] |
+| `_Plant` | `I_Plant` | [0..1] |
+| `_Customer` | `I_Customer` | [0..1] |
+| `_Supplier` | `I_Supplier` | [0..1] |
+| `_MasterFixedAsset` | `I_MasterFixedAsset` | [0..1] |
+| `_FixedAsset` | `I_FixedAsset` | [0..1] |
+| `_SalesOrder` | `I_SalesOrder` | [0..1] |
+| `_SalesOrderItem` | `I_SalesOrderItem` | [0..1] |
+| `_SalesDocument` | `I_SalesDocument` | [0..1] |
+| `_BillingDocumentType` | `I_BillingDocumentType` | [0..1] |
+| `_SalesOrganization` | `I_SalesOrganization` | [0..1] |
+| `_DistributionChannel` | `I_DistributionChannel` | [0..1] |
+| `_Division` | `I_Division` | [0..1] |
+| `_ProductGroup` | `I_ProductGroup` | [0..1] |
+| `_CustomerGroup` | `I_CustomerGroup` | [0..1] |
+| `_CustomerSupplierCountry` | `I_Country` | [0..1] |
+| `_SalesDistrict` | `I_SalesDistrict` | [0..1] |
+| `_BillToParty` | `I_Customer` | [0..1] |
+| `_ShipToParty` | `I_Customer` | [0..1] |
+| `_TransactionCurrency` | `I_Currency` | [0..1] |
+| `_CompanyCodeCurrency` | `I_Currency` | [1] |
+| `_GlobalCurrency` | `I_Currency` | [0..1] |
+| `_FunctionalCurrency` | `I_Currency` | [0..1] |
+| `_FreeDefinedCurrency1` | `I_Currency` | [0..1] |
+| `_FreeDefinedCurrency2` | `I_Currency` | [0..1] |
+| `_FreeDefinedCurrency3` | `I_Currency` | [0..1] |
+| `_FreeDefinedCurrency4` | `I_Currency` | [0..1] |
+| `_FreeDefinedCurrency5` | `I_Currency` | [0..1] |
+| `_FreeDefinedCurrency6` | `I_Currency` | [0..1] |
+| `_FreeDefinedCurrency7` | `I_Currency` | [0..1] |
+| `_FreeDefinedCurrency8` | `I_Currency` | [0..1] |
+| `_BaseUnit` | `I_UnitOfMeasure` | [0..1] |
+| `_CostSourceUnit` | `I_UnitOfMeasure` | [0..1] |
+| `_AdditionalQuantity1Unit` | `I_UnitOfMeasure` | [0..1] |
+| `_AdditionalQuantity2Unit` | `I_UnitOfMeasure` | [0..1] |
+| `_AdditionalQuantity3Unit` | `I_UnitOfMeasure` | [0..1] |
+| `_PlanningCategory` | `I_PlanningCategory` | [0..1] |
+| `_SemanticTag` | `I_SemanticTag` | [0..1] |
+| `_BillableControl` | `I_BillableControl` | [0..1] |
+| `_ConditionContract` | `I_ConditionContract` | [0..1] |
+| `_ProjectInternalID` | `I_ProjectByInternalKey` | [0..1] |
+| `_SoldProduct` | `I_Product` | [0..1] |
+| `_SoldProductGroup` | `I_ProductGroup` | [0..1] |
+| `_MaintenanceOrderSubOperation` | `I_MaintenanceOrderSubOperation` | [0..1] |
+| `_Equipment` | `I_Equipment` | [0..1] |
+| `_FunctionalLocation` | `I_FunctionalLocation` | [0..1] |
+| `_Assembly` | `I_Product` | [0..1] |
+| `_MaintenanceActivityType` | `I_MaintenanceActivityType` | [0..1] |
+| `_MaintOrdPlngDegreeCode` | `I_MaintOrdPlngDegreeCode` | [0..1] |
+| `_PMNotificationPriorityType` | `I_PMNotificationPriorityType` | [0..1] |
+| `_PMNotificationPriority` | `I_PMNotificationPriority` | [0..1] |
+| `_SuperiorOrder` | `I_LogisticsOrder` | [0..1] |
+| `_Hierarchy` | `I_SemTagGLAccountHierarchy` | [0..*] |
+| `_ServiceDocumentType` | `I_ServiceDocumentType` | [0..1] |
+| `_ServiceDocument` | `I_SrvcDocByDocumentType` | [0..1] |
+| `_ServiceDocumentItem` | `I_SrvcDocItemByDocumentType` | [0..1] |
+| `_ServiceContractType` | `I_ServiceDocumentType` | [0..1] |
+| `_ServiceContract` | `I_SrvcDocByDocumentType` | [0..1] |
+| `_ServiceContractItem` | `I_SrvcDocItemByDocumentType` | [0..1] |
+| `_ProviderContract` | `I_ProviderContract` | [0..1] |
+| `_ProviderContractItem` | `I_ProviderContractItem` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACTLPLNLINEITEMSEMTAGGLACCT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACTLPLNLINEITEMSEMTAGGLACCT')/$value)*
+
+```abap
+@AbapCatalog.sqlViewName: 'IFIAPGLACCLITSTG'
+@EndUserText.label: 'Actual and Plan Line Item with Semantic Tag'
+@AccessControl.authorizationCheck: #CHECK
+@AccessControl.personalData.blocking: #REQUIRED
+@Analytics.dataCategory: #CUBE
+@VDM.viewType: #COMPOSITE
+@AbapCatalog.preserveKey: true
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.dataClass:  #MIXED
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.modelingPattern: #ANALYTICAL_CUBE
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_PROVIDER,
+                                      #SQL_DATA_SOURCE,
+                                      #CDS_MODELING_DATA_SOURCE ]
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@AbapCatalog.buffering.status: #NOT_ALLOWED
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations:true
+@AbapCatalog.compiler.compareFilter:true
+@Analytics.internalName:#LOCAL
+@Consumption.dbHints: ['USE_HEX_PLAN','NO_JOIN_THRU_AGGR']
+define view I_ActlPlnLineItemSemTagGLAcct
+  as select from P_ActlPlnLineItemSemTagGLAcct as P_ActlPlnLineItemSemTagGLAcct
+  association [1..1] to E_JournalEntryItem             as _Extension_acdoca              on  $projection.SourceLedger       = _Extension_acdoca.SourceLedger
+                                                                                         and $projection.CompanyCode        = _Extension_acdoca.CompanyCode
+                                                                                         and $projection.FiscalYear         = _Extension_acdoca.FiscalYear
+                                                                                         and $projection.AccountingDocument = _Extension_acdoca.AccountingDocument
+                                                                                         and $projection.LedgerGLLineItem   = _Extension_acdoca.LedgerGLLineItem
+  association [1..1] to E_FinancialPlanningEntryItem   as _Extension_acdocp              on  $projection.FinancialPlanningReqTransSqnc = _Extension_acdocp.FinancialPlanningReqTransSqnc
+                                                                                         and $projection.FinancialPlanningDataPacket   = _Extension_acdocp.FinancialPlanningDataPacket
+                                                                                         and $projection.FinancialPlanningEntryItem    = _Extension_acdocp.FinancialPlanningEntryItem
+  association [0..1] to I_Ledger                       as _SourceLedger                  on  $projection.SourceLedger = _SourceLedger.Ledger
+  association [1..1] to I_JournalEntry                 as _JournalEntry                  on  $projection.CompanyCode        = _JournalEntry.CompanyCode
+                                                                                         and $projection.FiscalYear         = _JournalEntry.FiscalYear
+                                                                                         and $projection.AccountingDocument = _JournalEntry.AccountingDocument
+  association [0..1] to I_ControllingArea              as _ControllingArea               on  $projection.ControllingArea = _ControllingArea.ControllingArea
+  association [0..1] to I_Ledger                       as _Ledger                        on  $projection.Ledger = _Ledger.Ledger
+  association [1]    to I_CompanyCode                  as _CompanyCode                   on  $projection.CompanyCode = _CompanyCode.CompanyCode
+  association [0..1] to I_GLAccountInChartOfAccounts   as _GLAccountInChartOfAccounts    on  $projection.ChartOfAccounts = _GLAccountInChartOfAccounts.ChartOfAccounts
+                                                                                         and $projection.GLAccount       = _GLAccountInChartOfAccounts.GLAccount
+  association [1]    to I_ChartOfAccounts              as _ChartOfAccounts               on  $projection.ChartOfAccounts = _ChartOfAccounts.ChartOfAccounts
+  association [0..1] to I_GLAccountInCompanyCode       as _GLAccountInCompanyCode        on  $projection.CompanyCode = _GLAccountInCompanyCode.CompanyCode
+                                                                                         and $projection.GLAccount   = _GLAccountInCompanyCode.GLAccount
+  association [0..1] to I_FiscalYearForCompanyCode     as _FiscalYear                    on  $projection.FiscalYear  = _FiscalYear.FiscalYear
+                                                                                         and $projection.CompanyCode = _FiscalYear.CompanyCode
+  association [0..1] to I_FiscalYearForVariant         as _LedgerFiscalYearForVariant    on  $projection.LedgerFiscalYear  = _LedgerFiscalYearForVariant.FiscalYear
+                                                                                         and $projection.FiscalYearVariant = _LedgerFiscalYearForVariant.FiscalYearVariant
+  // begin DO NOT USE these associations. Use Associations ForVariant instead
+  association [0..1] to I_FiscalYearPeriodForCmpnyCode as _FiscalPeriod                  on  $projection.FiscalYear   = _FiscalPeriod.FiscalYear
+                                                                                         and $projection.FiscalPeriod = _FiscalPeriod.FiscalPeriod
+                                                                                         and $projection.CompanyCode  = _FiscalPeriod.CompanyCode
+
+  association [0..1] to I_GLAccountType                as _GLAccountType                 on  $projection.GLAccountType = _GLAccountType.GLAccountType
+  // end
+  association [0..1] to I_FiscalPeriodForVariant       as _FiscalPeriodForVariant        on  $projection.LedgerFiscalYear  = _FiscalPeriodForVariant.FiscalYear
+                                                                                         and $projection.FiscalPeriod      = _FiscalPeriodForVariant.FiscalPeriod
+                                                                                         and $projection.FiscalYearVariant = _FiscalPeriodForVariant.FiscalYearVariant
+  association [0..1] to I_BusinessArea                 as _BusinessArea                  on  $projection.BusinessArea = _BusinessArea.BusinessArea
+  association [0..*] to I_ProfitCenter                 as _ProfitCenter                  on  $projection.ControllingArea = _ProfitCenter.ControllingArea
+                                                                                         and $projection.ProfitCenter    = _ProfitCenter.ProfitCenter
+  association [0..1] to I_ProfitCenter                 as _CurrentProfitCenter           on  $projection.ControllingArea            = _CurrentProfitCenter.ControllingArea
+                                                                                         and $projection.ProfitCenter               = _CurrentProfitCenter.ProfitCenter
+                                                                                         and _CurrentProfitCenter.ValidityStartDate <= $session.system_date
+                                                                                         and _CurrentProfitCenter.ValidityEndDate   >= $session.system_date
+  association [0..*] to I_CostCenter                   as _CostCenter                    on  $projection.ControllingArea = _CostCenter.ControllingArea
+                                                                                         and $projection.CostCenter      = _CostCenter.CostCenter
+  association [0..1] to I_CostCenter                   as _CurrentCostCenter             on  $projection.ControllingArea          = _CurrentCostCenter.ControllingArea
+                                                                                         and $projection.CostCenter               = _CurrentCostCenter.CostCenter
+                                                                                         and _CurrentCostCenter.ValidityStartDate <= $session.system_date
+                                                                                         and _CurrentCostCenter.ValidityEndDate   >= $session.system_date
+  association [0..1] to I_InventoryValuationType       as _InventorySpecialStockValnType on  $projection.InventorySpecialStockValnType = _InventorySpecialStockValnType.InventoryValuationType
+  association [0..1] to I_InvtrySpecialStockValnType   as _InventorySpclStockValnType    on  $projection.InvtrySpecialStockValnType_2  = _InventorySpclStockValnType.InventorySpecialStockValnType
+  association [0..1] to I_InventorySpecialStockType    as _InventorySpecialStockType     on  $projection.InventorySpecialStockType = _InventorySpecialStockType.InventorySpecialStockType
+
+  association [0..1] to I_SalesOrder                   as _InventorySpclStkSalesDocument on  $projection.InventorySpclStkSalesDocument = _InventorySpclStkSalesDocument.SalesOrder
+
+  association [0..1] to I_SalesOrderItem               as _InventorySpclStkSalesDocItm   on  $projection.InventorySpclStkSalesDocument = _InventorySpclStkSalesDocItm.SalesOrder
+                                                                                         and $projection.InventorySpclStkSalesDocItm   = _InventorySpclStkSalesDocItm.SalesOrderItem
+
+  association [0..1] to I_WBSElementByInternalKey      as _InvtrySpclStockWBSElmntIntID  on  $projection.InvtrySpclStockWBSElmntIntID = _InvtrySpclStockWBSElmntIntID.WBSElementInternalID
+  association [0..1] to I_WBSElementBasicData          as _InvtrySpclStkWBSElmntBscData  on  $projection.InvtrySpclStockWBSElmntIntID = _InvtrySpclStkWBSElmntBscData.WBSElementInternalID
+  association [0..1] to I_WBSElementByExternalID       as _InvtrySpclStockWBSElmntExtID  on  $projection.InvtrySpclStockWBSElmntExtID = _InvtrySpclStockWBSElmntExtID.WBSElementExternalID
+  association [0..1] to I_WBSElement                   as _InventorySpclStockWBSElement  on  $projection.InventorySpclStockWBSElement = _InventorySpclStockWBSElement.WBSElement
+
+  association [0..1] to I_Supplier                     as _InventorySpecialStockSupplier on  $projection.InventorySpecialStockSupplier = _InventorySpecialStockSupplier.Supplier
+
+  association [0..1] to I_InventoryValuationType       as _InventoryValuationType        on  $projection.InventoryValuationType = _InventoryValuationType.InventoryValuationType
+
+  association [0..1] to I_Purreqvaluationarea          as _PurReqValuationArea           on  $projection.ValuationArea = _PurReqValuationArea.ValuationArea
+
+  association [0..1] to I_Project                      as _Project                       on  $projection.Project = _Project.Project
+  association [0..1] to I_ProjectBasicData             as _ProjectBasicData              on  $projection.ProjectInternalID = _ProjectBasicData.ProjectInternalID
+  association [0..1] to I_ProjectBasicData             as _ProjectBasicDataText          on  $projection.ProjectInternalID = _ProjectBasicDataText.ProjectInternalID
+  association [0..1] to I_ProjectByExternalID          as _ProjectExternalID             on  $projection.ProjectExternalID = _ProjectExternalID.ProjectExternalID
+  association [0..1] to I_ProjectByExternalID          as _ProjectExternalIDText         on  $projection.ProjectExternalID = _ProjectExternalIDText.ProjectExternalID
+  association [0..1] to I_ProjectBasicData             as _PartnerProjectBasicData       on  $projection.PartnerProjectInternalID = _PartnerProjectBasicData.ProjectInternalID
+  association [0..1] to I_ProjectBasicData             as _PartnerProjectBasicDataText   on  $projection.PartnerProjectInternalID = _PartnerProjectBasicDataText.ProjectInternalID
+  association [0..1] to I_ProjectByExternalID          as _PartnerProjectExternalID      on  $projection.PartnerProjectExternalID = _PartnerProjectExternalID.ProjectExternalID
+  association [0..1] to I_ProjectByExternalID          as _PartnerProjectExternalIDText  on  $projection.PartnerProjectExternalID = _PartnerProjectExternalIDText.ProjectExternalID
+  association [0..1] to I_WBSElement                   as _WBSElement                    on  $projection.WBSElement = _WBSElement.WBSElement
+  association [0..1] to I_WBSElementByInternalKey      as _WBSElementInternalID          on  $projection.WBSElementInternalID = _WBSElementInternalID.WBSElementInternalID
+  association [0..1] to I_WBSElementBasicData          as _WBSElementBasicData           on  $projection.WBSElementInternalID = _WBSElementBasicData.WBSElementInternalID
+  association [0..1] to I_WBSElementBasicData          as _WBSElementBasicDataText       on  $projection.WBSElementInternalID = _WBSElementBasicDataText.WBSElementInternalID
+  association [0..1] to I_WBSElementByExternalID       as _WBSElementExternalID          on  $projection.WBSElementExternalID = _WBSElementExternalID.WBSElementExternalID
+  association [0..1] to I_WBSElementByExternalID       as _WBSElementExternalIDText      on  $projection.WBSElementExternalID = _WBSElementExternalIDText.WBSElementExternalID
+  association [0..1] to I_WBSElementBasicData          as _PartnerWBSElementBasicData    on  $projection.PartnerWBSElementInternalID = _PartnerWBSElementBasicData.WBSElementInternalID
+  association [0..1] to I_WBSElementBasicData          as _PartnerWBSElementBscDataText  on  $projection.PartnerWBSElementInternalID = _PartnerWBSElementBscDataText.WBSElementInternalID
+  association [0..1] to I_WBSElementByExternalID       as _PartnerWBSElementExternalID   on  $projection.PartnerWBSElementExternalID = _PartnerWBSElementExternalID.WBSElementExternalID
+  association [0..1] to I_WBSElementByExternalID       as _PartnerWBSElementExtIDText    on  $projection.PartnerWBSElementExternalID = _PartnerWBSElementExtIDText.WBSElementExternalID
+  association [0..1] to I_FunctionalArea               as _FunctionalArea                on  $projection.FunctionalArea = _FunctionalArea.FunctionalArea
+  association [0..1] to I_Segment                      as _Segment                       on  $projection.Segment = _Segment.Segment
+  association [0..*] to I_CostCenterActivityType       as _CostCtrActivityType           on  $projection.ControllingArea     = _CostCtrActivityType.ControllingArea
+                                                                                         and $projection.CostCtrActivityType = _CostCtrActivityType.CostCtrActivityType
+  association [0..*] to I_CostAnalysisResource         as _CostAnalysisResource          on  $projection.ControllingArea      = _CostAnalysisResource.ControllingArea
+                                                                                         and $projection.CostAnalysisResource = _CostAnalysisResource.CostAnalysisResource
+  association [0..1] to I_InternalOrder                as _InternalOrder                 on  $projection.OrderID = _InternalOrder.InternalOrder
+  association [0..1] to I_Order                        as _Order                         on  $projection.OrderID = _Order.OrderID
+  association [0..1] to I_WorkPackageWorkItem          as _WorkPackageWorkItem           on  $projection.WorkItem    = _WorkPackageWorkItem.WorkItem
+                                                                                         and $projection.WorkPackage = _WorkPackageWorkItem.WorkPackage
+  association [0..1] to I_WorkPackage                  as _WorkPackage                   on  $projection.WorkPackage = _WorkPackage.WorkPackage
+  association [0..1] to I_CompanyCode                  as _PartnerCompanyCode            on  $projection.PartnerCompanyCode = _PartnerCompanyCode.CompanyCode
+  association [0..1] to I_BusinessArea                 as _PartnerBusinessArea           on  $projection.PartnerBusinessArea = _PartnerBusinessArea.BusinessArea
+  association [0..*] to I_ProfitCenter                 as _PartnerProfitCenter           on  $projection.ControllingArea     = _PartnerProfitCenter.ControllingArea
+                                                                                         and $projection.PartnerProfitCenter = _PartnerProfitCenter.ProfitCenter
+  association [0..*] to I_CostCenter                   as _PartnerCostCenter             on  $projection.ControllingArea   = _PartnerCostCenter.ControllingArea
+                                                                                         and $projection.PartnerCostCenter = _PartnerCostCenter.CostCenter
+  association [0..1] to I_Project                      as _PartnerProject                on  $projection.PartnerProject = _PartnerProject.Project
+  association [0..1] to I_WBSElement                   as _PartnerWBSElement             on  $projection.PartnerWBSElement = _PartnerWBSElement.WBSElement
+  association [0..1] to I_FunctionalArea               as _PartnerFunctionalArea         on  $projection.PartnerFunctionalArea = _PartnerFunctionalArea.FunctionalArea
+  association [0..1] to I_Segment                      as _PartnerSegment                on  $projection.PartnerSegment = _PartnerSegment.Segment
+  association [0..*] to I_CostCenterActivityType       as _PartnerCostCtrActivityType    on  $projection.ControllingArea            = _PartnerCostCtrActivityType.ControllingArea
+                                                                                         and $projection.PartnerCostCtrActivityType = _PartnerCostCtrActivityType.CostCtrActivityType
+  association [0..1] to I_InternalOrder                as _PartnerOrder                  on  $projection.PartnerOrder = _PartnerOrder.InternalOrder
+  association [0..1] to I_Order                        as _PartnerOrder_2                on  $projection.PartnerOrder_2 = _PartnerOrder_2.OrderID  
+  association [1..1] to I_Partnercompany               as _PartnerCompany                on  $projection.PartnerCompany = _PartnerCompany.PartnerCompany
+  association [1]    to I_FiscalYearVariant            as _FiscalYearVariant             on  $projection.FiscalYearVariant = _FiscalYearVariant.FiscalYearVariant
+  association [0..1] to I_ControllingDebitCreditCode   as _ControllingDebitCreditCode    on  $projection.ControllingDebitCreditCode = _ControllingDebitCreditCode.ControllingDebitCreditCode
+  association [0..1] to I_Employment                   as _Employment                    on  $projection.PersonnelNumber = _Employment.EmploymentInternalID
+  association [0..1] to I_BusinessTransactionType      as _BusinessTransactionType       on  $projection.BusinessTransactionType = _BusinessTransactionType.BusinessTransactionType
+  association [0..1] to I_AccountingDocumentType       as _AccountingDocumentType        on  $projection.AccountingDocumentType = _AccountingDocumentType.AccountingDocumentType
+  association [0..1] to I_Plant                        as _Plant                         on  $projection.Plant = _Plant.Plant
+  //association [0..1] to I_Material                     as _Material                      on  $projection.material = _Material.Material
+  association [0..1] to I_Customer                     as _Customer                      on  $projection.Customer = _Customer.Customer
+  association [0..1] to I_Supplier                     as _Supplier                      on  $projection.Supplier = _Supplier.Supplier
+  association [0..1] to I_MasterFixedAsset             as _MasterFixedAsset              on  $projection.CompanyCode      = _MasterFixedAsset.CompanyCode
+                                                                                         and $projection.MasterFixedAsset = _MasterFixedAsset.MasterFixedAsset
+  association [0..1] to I_FixedAsset                   as _FixedAsset                    on  $projection.CompanyCode      = _FixedAsset.CompanyCode
+                                                                                         and $projection.MasterFixedAsset = _FixedAsset.MasterFixedAsset
+                                                                                         and $projection.FixedAsset       = _FixedAsset.FixedAsset
+  association [0..1] to I_SalesOrder                   as _SalesOrder                    on  $projection.SalesOrder = _SalesOrder.SalesOrder
+  association [0..1] to I_SalesOrderItem               as _SalesOrderItem                on  $projection.SalesOrder     = _SalesOrderItem.SalesOrder
+                                                                                         and $projection.SalesOrderItem = _SalesOrderItem.SalesOrderItem
+  association [0..1] to I_SalesDocument                as _SalesDocument                 on  $projection.SalesDocument = _SalesDocument.SalesDocument
+  association [0..1] to I_BillingDocumentType          as _BillingDocumentType           on  $projection.BillingDocumentType = _BillingDocumentType.BillingDocumentType
+  association [0..1] to I_SalesOrganization            as _SalesOrganization             on  $projection.SalesOrganization = _SalesOrganization.SalesOrganization
+  association [0..1] to I_DistributionChannel          as _DistributionChannel           on  $projection.DistributionChannel = _DistributionChannel.DistributionChannel
+  association [0..1] to I_Division                     as _Division                      on  $projection.Division = _Division.Division
+  //association [0..1] to I_Material                     as _SoldMaterial                  on  $projection.soldmaterial = _SoldMaterial.Material
+  //association [0..1] to I_MaterialGroup                as _MaterialGroup                 on  $projection.materialgroup = _MaterialGroup.MaterialGroup
+  association [0..1] to I_ProductGroup                 as _ProductGroup                  on  $projection.ProductGroup = _ProductGroup.MaterialGroup
+  association [0..1] to I_CustomerGroup                as _CustomerGroup                 on  $projection.CustomerGroup = _CustomerGroup.CustomerGroup
+  association [0..1] to I_Country                      as _CustomerSupplierCountry       on  $projection.CustomerSupplierCountry = _CustomerSupplierCountry.Country
+  association [0..1] to I_SalesDistrict                as _SalesDistrict                 on  $projection.SalesDistrict = _SalesDistrict.SalesDistrict
+  association [0..1] to I_Customer                     as _BillToParty                   on  $projection.BillToParty = _BillToParty.Customer
+  association [0..1] to I_Customer                     as _ShipToParty                   on  $projection.ShipToParty = _ShipToParty.Customer
+  association [0..1] to I_Currency                     as _TransactionCurrency           on  $projection.TransactionCurrency = _TransactionCurrency.Currency
+  association [1]    to I_Currency                     as _CompanyCodeCurrency           on  $projection.CompanyCodeCurrency = _CompanyCodeCurrency.Currency
+  association [0..1] to I_Currency                     as _GlobalCurrency                on  $projection.GlobalCurrency = _GlobalCurrency.Currency
+  association [0..1] to I_Currency                     as _FunctionalCurrency                on  $projection.FunctionalCurrency = _FunctionalCurrency.Currency
+  association [0..1] to I_Currency                     as _FreeDefinedCurrency1          on  $projection.FreeDefinedCurrency1 = _FreeDefinedCurrency1.Currency
+  association [0..1] to I_Currency                     as _FreeDefinedCurrency2          on  $projection.FreeDefinedCurrency2 = _FreeDefinedCurrency2.Currency
+  association [0..1] to I_Currency                     as _FreeDefinedCurrency3          on  $projection.FreeDefinedCurrency3 = _FreeDefinedCurrency3.Currency
+  association [0..1] to I_Currency                     as _FreeDefinedCurrency4          on  $projection.FreeDefinedCurrency4 = _FreeDefinedCurrency4.Currency
+  association [0..1] to I_Currency                     as _FreeDefinedCurrency5          on  $projection.FreeDefinedCurrency5 = _FreeDefinedCurrency5.Currency
+  association [0..1] to I_Currency                     as _FreeDefinedCurrency6          on  $projection.FreeDefinedCurrency6 = _FreeDefinedCurrency6.Currency
+  association [0..1] to I_Currency                     as _FreeDefinedCurrency7          on  $projection.FreeDefinedCurrency7 = _FreeDefinedCurrency7.Currency
+  association [0..1] to I_Currency                     as _FreeDefinedCurrency8          on  $projection.FreeDefinedCurrency8 = _FreeDefinedCurrency8.Currency
+  association [0..1] to I_UnitOfMeasure                as _BaseUnit                      on  $projection.BaseUnit = _BaseUnit.UnitOfMeasure
+  association [0..1] to I_UnitOfMeasure                as _CostSourceUnit                on  $projection.CostSourceUnit = _CostSourceUnit.UnitOfMeasure
+  association [0..1] to I_UnitOfMeasure                as _AdditionalQuantity1Unit       on  $projection.AdditionalQuantity1Unit = _AdditionalQuantity1Unit.UnitOfMeasure
+  association [0..1] to I_UnitOfMeasure                as _AdditionalQuantity2Unit       on  $projection.AdditionalQuantity2Unit = _AdditionalQuantity2Unit.UnitOfMeasure
+  association [0..1] to I_UnitOfMeasure                as _AdditionalQuantity3Unit       on  $projection.AdditionalQuantity3Unit = _AdditionalQuantity3Unit.UnitOfMeasure
+  association [0..1] to I_PlanningCategory             as _PlanningCategory              on  $projection.PlanningCategory = _PlanningCategory.PlanningCategory
+  association [0..1] to I_SemanticTag                  as _SemanticTag                   on  $projection.SemanticTag = _SemanticTag.SemanticTag
+  association [0..1] to I_BillableControl              as _BillableControl               on  $projection.BillableControl = _BillableControl.BillableControl
+
+  association [0..1] to I_ConditionContract            as _ConditionContract             on  $projection.ConditionContract = _ConditionContract.ConditionContract
+
+  association [0..1] to I_ProjectByInternalKey         as _ProjectInternalID             on  $projection.ProjectInternalID = _ProjectInternalID.ProjectInternalID
+  association [0..1] to I_Product                      as _SoldProduct                   on  $projection.SoldProduct = _SoldProduct.Product
+  association [0..1] to I_ProductGroup                 as _SoldProductGroup              on  $projection.SoldProductGroup = _SoldProductGroup.MaterialGroup
+
+  association [0..1] to I_MaintenanceOrderSubOperation as _MaintenanceOrderSubOperation  on  $projection.OrderID           = _MaintenanceOrderSubOperation.MaintenanceOrder
+                                                                                         and $projection.OrderOperation    = _MaintenanceOrderSubOperation.MaintenanceOrderOperation
+                                                                                         and $projection.OrderSuboperation = _MaintenanceOrderSubOperation.MaintenanceOrderSubOperation
+
+  association [0..1] to I_Equipment                    as _Equipment                     on  $projection.Equipment = _Equipment.Equipment
+
+  association [0..1] to I_FunctionalLocation           as _FunctionalLocation            on  $projection.FunctionalLocation = _FunctionalLocation.FunctionalLocation
+
+  association [0..1] to I_Product                      as _Assembly                      on  $projection.Assembly = _Assembly.Product
+
+  association [0..1] to I_MaintenanceActivityType      as _MaintenanceActivityType       on  $projection.MaintenanceActivityType = _MaintenanceActivityType.MaintenanceActivityType
+
+  association [0..1] to I_MaintOrdPlngDegreeCode       as _MaintOrdPlngDegreeCode        on  $projection.MaintenanceOrderPlanningCode = _MaintOrdPlngDegreeCode.MaintenanceOrderPlanningCode
+
+  association [0..1] to I_PMNotificationPriorityType   as _PMNotificationPriorityType    on  $projection.MaintPriorityType = _PMNotificationPriorityType.MaintPriorityType
+
+  association [0..1] to I_PMNotificationPriority       as _PMNotificationPriority        on  $projection.MaintPriority     = _PMNotificationPriority.MaintPriority
+                                                                                         and $projection.MaintPriorityType = _PMNotificationPriority.MaintPriorityType
+
+  association [0..1] to I_LogisticsOrder               as _SuperiorOrder                 on  $projection.SuperiorOrder = _SuperiorOrder.OrderID
+  association [0..*] to I_SemTagGLAccountHierarchy     as _Hierarchy                     on  $projection.GLAccountHierarchy = _Hierarchy.GLAccountHierarchy
+
+  association [0..1] to I_ServiceDocumentType          as _ServiceDocumentType           on  $projection.ServiceDocumentType = _ServiceDocumentType.ServiceDocumentType
+
+  association [0..1] to I_SrvcDocByDocumentType        as _ServiceDocument               on  $projection.ServiceDocumentType = _ServiceDocument.ServiceDocumentType
+                                                                                         and $projection.ServiceDocument     = _ServiceDocument.ServiceDocument
+
+  association [0..1] to I_SrvcDocItemByDocumentType    as _ServiceDocumentItem           on  $projection.ServiceDocumentType = _ServiceDocumentItem.ServiceDocumentType
+                                                                                         and $projection.ServiceDocument     = _ServiceDocumentItem.ServiceDocument
+                                                                                         and $projection.ServiceDocumentItem = _ServiceDocumentItem.ServiceDocumentItem
+
+  association [0..1] to I_ServiceDocumentType          as _ServiceContractType           on  $projection.ServiceContractType = _ServiceContractType.ServiceDocumentType
+
+  association [0..1] to I_SrvcDocByDocumentType        as _ServiceContract               on  $projection.ServiceContractType = _ServiceContract.ServiceDocumentType
+                                                                                         and $projection.ServiceContract     = _ServiceContract.ServiceDocument
+
+  association [0..1] to I_SrvcDocItemByDocumentType    as _ServiceContractItem           on  $projection.ServiceContractType = _ServiceContractItem.ServiceDocumentType
+                                                                                         and $projection.ServiceContract     = _ServiceContractItem.ServiceDocument
+                                                                                         and $projection.ServiceContractItem = _ServiceContractItem.ServiceDocumentItem
+
+  association [0..1]  to I_ProviderContract            as _ProviderContract              on  $projection.ProviderContract     = _ProviderContract.ProviderContract
+  association [0..1]  to I_ProviderContractItem        as _ProviderContractItem          on  $projection.ProviderContract     = _ProviderContractItem.ProviderContract
+                                                                                         and $projection.ProviderContractItem = _ProviderContractItem.ProviderContractItem
+
+{
+      @ObjectModel.foreignKey.association: '_Ledger'
+  key Ledger,
+      @ObjectModel.foreignKey.association: '_SourceLedger'
+  key SourceLedger,
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key CompanyCode,
+      @ObjectModel.foreignKey.association: '_FiscalYear'
+  key FiscalYear,
+      @ObjectModel.foreignKey.association: '_JournalEntry'
+  key AccountingDocument,
+  key LedgerGLLineItem,
+
+  key FinancialPlanningReqTransSqnc,
+  key FinancialPlanningDataPacket,
+  key FinancialPlanningEntryItem,
+
+      ///////////////////////////////////////////////////////////////////////
+      // I_SemTagFuncArea
+      ///////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_Hierarchy'
+  key GLAccountHierarchy,
+      @ObjectModel.foreignKey.association: '_SemanticTag'
+  key SemanticTag,
+      @Semantics.businessDate.from: true
+  key ValidityStartDate,
+      @Semantics.businessDate.to: true
+  key ValidityEndDate,
+      // '_LedgerFiscalYear'
+      @Semantics.fiscal.year: true
+      //@ObjectModel.foreignKey.association: '_LedgerFiscalYearForVariant'
+      LedgerFiscalYear,
+      ActualPlanCode,
+      //  @ObjectModel.foreignKey.association: '_FiscalQuarter'
+      FiscalQuarter,
+
+      // Test workaround
+      @ObjectModel.foreignKey.association: '_ChartOfAccounts'
+      ChartOfAccounts,
+      @ObjectModel.foreignKey.association: '_ControllingArea'
+      ControllingArea,
+
+      ///////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_00  Unified Journal Entry: Transaction, Currencies, Units
+      ///////////////////////////////////////////////////////////////////////////////
+      FinancialTransactionType,
+      @ObjectModel.foreignKey.association: '_BusinessTransactionType'
+      BusinessTransactionType,
+      ReferenceDocumentType,
+      LogicalSystem,
+      ReferenceDocumentContext,
+      ReferenceDocument,
+      ReferenceDocumentItem,
+      ReferenceDocumentItemGroup,
+      //SUBTA,
+      IsReversal,
+      IsReversed,
+      //XTRUEREV,
+      //AWTYP_REV,
+      ReversalReferenceDocumentCntxt,
+      ReversalReferenceDocument,
+      //SUBTA_REV,
+      IsSettlement,
+      IsSettled,
+      PredecessorReferenceDocType,
+      PredecessorReferenceDocCntxt,
+      PredecessorReferenceDocument,
+      PredecessorReferenceDocItem,
+      //PREC_SUBTA,
+
+      SourceReferenceDocumentType,
+      SourceLogicalSystem,
+      SourceReferenceDocumentCntxt,
+      SourceReferenceDocument,
+      SourceReferenceDocumentItem,
+      SourceReferenceDocSubitem,
+      IsCommitment,
+
+      @ObjectModel.foreignKey.association: '_GLAccountInChartOfAccounts'
+      GLAccount,
+      @ObjectModel.foreignKey.association: '_WorkPackage'
+      WorkPackage,
+      @ObjectModel.foreignKey.association: '_WorkPackageWorkItem'
+      WorkItem,
+      BillableControl,
+      IsLotSizeIndependent,
+
+      ////////////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE  ACDOC_SI_GL_ACCAS Unified Journal Entry: G/L additional account assignments
+      ////////////////////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_CostCenter'
+      CostCenter,
+      @ObjectModel.foreignKey.association: '_ProfitCenter'
+      ProfitCenter,
+      @ObjectModel.foreignKey.association: '_FunctionalArea'
+      FunctionalArea,
+      @ObjectModel.foreignKey.association: '_BusinessArea'
+      BusinessArea,
+      @ObjectModel.foreignKey.association: '_Segment'
+      Segment,
+      @ObjectModel.foreignKey.association: '_PartnerCostCenter'
+      PartnerCostCenter,
+      @ObjectModel.foreignKey.association: '_PartnerProfitCenter'
+      PartnerProfitCenter,
+      @ObjectModel.foreignKey.association: '_PartnerFunctionalArea'
+      PartnerFunctionalArea,
+      @ObjectModel.foreignKey.association: '_PartnerBusinessArea'
+      PartnerBusinessArea,
+      @ObjectModel.foreignKey.association: '_PartnerCompany'
+      PartnerCompany,
+      @ObjectModel.foreignKey.association: '_PartnerSegment'
+      PartnerSegment,
+      @ObjectModel.foreignKey.association: '_PartnerCompanyCode'
+      PartnerCompanyCode,
+      PartnerControllingObjectClass,
+
+      /////////////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_VALUE_DATA Unified Journal Entry: Value Fields
+      /////////////////////////////////////////////////////////////////////////////////////
+
+      @Semantics.currencyCode:true
+      BalanceTransactionCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'BalanceTransactionCurrency'} }
+      AmountInBalanceTransacCrcy,
+
+      @Semantics.currencyCode:true
+      TransactionCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      AmountInTransactionCurrency,
+
+      @Semantics.currencyCode:true
+      CompanyCodeCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      AmountInCompanyCodeCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      cast(( AmountInCompanyCodeCurrency * -1 ) as fis_hsl_inverted)  as InvertedAmtInCoCodeCurrency,
+      ////////////////////////////////////
+      // NEW
+      @Semantics.currencyCode:true
+      GlobalCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      AmountInGlobalCurrency,
+      
+      // Functional Currency
+      @ObjectModel.foreignKey.association: '_FunctionalCurrency'
+      @Semantics.currencyCode:true
+      FunctionalCurrency,
+      @Aggregation.default: #SUM
+      @Semantics: { amount : {currencyCode: 'FunctionalCurrency'} }
+      AmountInFunctionalCurrency,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      cast(( AmountInGlobalCurrency * -1 ) as fis_ksl_inverted)       as InvertedAmountInGlobalCurrency,
+
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency1,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      AmountInFreeDefinedCurrency1,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      cast(( AmountInFreeDefinedCurrency1 * -1 ) as fis_osl_inverted) as InvertedAmtInFreeDefinedCrcy1,
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency2,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency2'} }
+      AmountInFreeDefinedCurrency2,
+
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency3,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency3'} }
+      AmountInFreeDefinedCurrency3,
+
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency4,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency4'} }
+      AmountInFreeDefinedCurrency4,
+
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency5,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency5'} }
+      AmountInFreeDefinedCurrency5,
+
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency6,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency6'} }
+      AmountInFreeDefinedCurrency6,
+
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency7,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency7'} }
+      AmountInFreeDefinedCurrency7,
+
+      @Semantics.currencyCode:true
+      FreeDefinedCurrency8,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency8'} }
+      AmountInFreeDefinedCurrency8,
+      ////////////////////////////////////
+
+      ////////////////////////////////////
+      // NEW
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      FixedAmountInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      GrpValnFixedAmtInGlobCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      PrftCtrValnFxdAmtInGlobCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      TotalPriceVarcInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      GrpValnTotPrcVarcInGlobCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      PrftCtrValnTotPrcVarcInGlbCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      FixedPriceVarcInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      GrpValnFixedPrcVarcInGlobCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      PrftCtrValnFxdPrcVarcInGlbCrcy,
+      ////////////////////////////////////
+
+
+      @Semantics.currencyCode:true
+      ControllingObjectCurrency,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'ControllingObjectCurrency'} }
+      AmountInObjectCurrency,
+
+      @ObjectModel.foreignKey.association: '_BaseUnit'
+      @Semantics.unitOfMeasure:true
+      BaseUnit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} }
+      Quantity,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'BaseUnit'} }
+      FixedQuantity,
+
+      @ObjectModel.foreignKey.association: '_CostSourceUnit'
+      @Semantics.unitOfMeasure:true
+      CostSourceUnit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'CostSourceUnit'} }
+      ValuationQuantity,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'CostSourceUnit'} }
+      ValuationFixedQuantity,
+
+      @ObjectModel.foreignKey.association: '_AdditionalQuantity1Unit'
+      @Semantics.unitOfMeasure:true
+      AdditionalQuantity1Unit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'AdditionalQuantity1Unit'} }
+      AdditionalQuantity1,
+
+      @ObjectModel.foreignKey.association: '_AdditionalQuantity2Unit'
+      @Semantics.unitOfMeasure:true
+      AdditionalQuantity2Unit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'AdditionalQuantity2Unit'} }
+      AdditionalQuantity2,
+
+      @ObjectModel.foreignKey.association: '_AdditionalQuantity3Unit'
+      @Semantics.unitOfMeasure:true
+      AdditionalQuantity3Unit,
+      @DefaultAggregation: #SUM
+      @Semantics: { quantity : {unitOfMeasure: 'AdditionalQuantity3Unit'} }
+      AdditionalQuantity3,
+
+
+      /////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_FIX  Unified Journal Entry: Mandatory fields for G/L
+      ////////////////////////////////////////////////////////////////////////////
+      DebitCreditCode,
+      //@ObjectModel.foreignKey.association: '_FiscalPeriodForVariant'
+      FiscalPeriod,
+      @ObjectModel.foreignKey.association: '_FiscalYearVariant'
+      FiscalYearVariant,
+      FiscalYearPeriod,
+      PostingDate,
+      DocumentDate,
+      AccountingDocumentType,
+      AccountingDocumentItem,
+      AssignmentReference,
+      AccountingDocumentCategory,
+      PostingKey,
+      TransactionTypeDetermination,
+      //slalittype,
+      //      @ObjectModel.foreignKey.association: '_User'
+      AccountingDocCreatedByUser,
+      LastChangeDateTime,
+      -- cast(div(timestamp, 1000000) as FIS_TIMESTAMP) as CreationDate,
+      CreationDate,
+      EliminationProfitCenter,
+      OriginObjectType,
+      @ObjectModel.foreignKey.association: '_GLAccountType'
+      GLAccountType,
+      AlternativeGLAccount,
+      CountryChartOfAccounts,
+
+
+      ///////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_GEN  Unified Journal Entry: Fields for several subledgers
+      //////////////////////////////////////////////////////////////////////////
+      InvoiceReference,
+      InvoiceReferenceFiscalYear,
+      FollowOnDocumentType,
+      InvoiceItemReference,
+      ReferencePurchaseOrderCategory,
+      PurchasingDocument,
+      PurchasingDocumentItem,
+      AccountAssignmentNumber,
+      DocumentItemText,
+      @ObjectModel.foreignKey.association: '_SalesOrder'
+      SalesOrder,
+      @ObjectModel.foreignKey.association: '_SalesOrderItem'
+      SalesOrderItem,
+      @ObjectModel.foreignKey.association: '_SalesDocument'
+      SalesDocument,
+      //      @ObjectModel.foreignKey.association: '_Material'
+      //      Material,
+      @ObjectModel.foreignKey.association: '_Plant'
+      Plant,
+      @ObjectModel.foreignKey.association: '_Supplier'
+      Supplier,
+      @ObjectModel.foreignKey.association: '_Customer'
+      Customer,
+
+      ServicesRenderedDate,
+      @ObjectModel.foreignKey.association: '_ConditionContract'
+      ConditionContract,
+
+      @ObjectModel.foreignKey.association: '_PlanningCategory'
+      PlanningCategory,
+      @ObjectModel.foreignKey.association: '_ControllingDebitCreditCode'
+      ControllingDebitCreditCode,
+      /////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_FI  Unified Journal Entry: Fields for FI subledgers
+      /////////////////////////////////////////////////////////////////////////
+      FinancialAccountType,
+      SpecialGLCode,
+      TaxCode,
+      HouseBank,
+      HouseBankAccount,
+      IsOpenItemManaged,
+      ClearingDate,
+      ClearingAccountingDocument,
+      ClearingDocFiscalYear,
+
+
+      /////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_FAA  Unified Journal Entry: Fields for Asset Accounting
+      /////////////////////////////////////////////////////////////////////////
+      AssetDepreciationArea,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_MasterFixedAsset'      
+      MasterFixedAsset,
+      @ObjectModel.foreignKey.association: '_FixedAsset'      
+      @Analytics.internalName: #LOCAL
+      FixedAsset,
+      AssetValueDate,
+      AssetTransactionType,
+      AssetAcctTransClassfctn,
+      DepreciationFiscalPeriod,
+      GroupMasterFixedAsset,
+      //      @ObjectModel.foreignKey.association: '_GroupFixedAsset'
+      GroupFixedAsset,
+
+
+      //////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_ML Unified Journal Entry: Fields for Material Ledger
+      //////////////////////////////////////////////////////////////////////////
+      CostEstimate,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'InvtrySpecialStockValnType_2'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'InvtrySpecialStockValnType_2'
+      @ObjectModel.foreignKey.association: '_InventorySpecialStockValnType'
+      InventorySpecialStockValnType,
+      @Analytics.internalName: #LOCAL         
+      @ObjectModel.foreignKey.association: '_InventorySpclStockValnType'
+      InvtrySpecialStockValnType_2,
+      //xobew,
+      @ObjectModel.foreignKey.association: '_InventorySpecialStockType'
+      InventorySpecialStockType,
+      @ObjectModel.foreignKey.association: '_InventorySpclStkSalesDocument'
+      InventorySpclStkSalesDocument, //  as InventorySpecialStockSalesDocument,
+      @ObjectModel.foreignKey.association: '_InventorySpclStkSalesDocItm'
+      InventorySpclStkSalesDocItm, //  as InventorySpecialStockSalesDocumentItem,
+      //      @ObjectModel.foreignKey.association: '_InvtrySpclStockWBSElmntIntID'
+      InvtrySpclStockWBSElmntIntID,
+      @ObjectModel.foreignKey.association: '_InvtrySpclStockWBSElmntExtID'
+      InvtrySpclStockWBSElmntExtID,
+      //      @ObjectModel.foreignKey.association: '_InventorySpclStockWBSElement'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'InvtrySpclStockWBSElmntIntID'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'InvtrySpclStockWBSElmntIntID'   
+      InventorySpclStockWBSElement, //  as InventorySpecialStockWBSElement,
+      @ObjectModel.foreignKey.association: '_InventorySpecialStockSupplier'
+      InventorySpecialStockSupplier,
+      @ObjectModel.foreignKey.association: '_InventoryValuationType'
+      InventoryValuationType,
+      //      @ObjectModel.foreignKey.association: '_Purreqvaluationarea'
+      ValuationArea,
+
+
+      ////////////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_CFIN   Unified Journal Entry: Fields for Central Finance
+      //////////////////////////////////////////////////////////////////////////////
+      SenderGLAccount,
+      SenderAccountAssignment,
+      SenderAccountAssignmentType,
+
+
+      ////////////////////////////////////////////////////////////////////////////
+      //  .INCLUDE  ACDOC_SI_CO  Unified Journal Entry: CO fields
+      ///////////////////////////////////////////////////////////////////////////
+      CostOriginGroup,
+      OriginSenderObject,
+      //co_belkz,
+      ControllingObjectDebitType,
+      QuantityIsIncomplete,
+      OffsettingAccount,
+      OffsettingAccountType,
+      LineItemIsCompleted,
+      PersonnelNumber,
+      ControllingObjectClass,
+
+      OriginCostCenter,
+      OriginCostCtrActivityType,
+      AccountAssignment,
+      AccountAssignmentType,
+      @ObjectModel.foreignKey.association: '_CostCtrActivityType'
+      CostCtrActivityType,
+      @ObjectModel.foreignKey.association: '_Order'
+      OrderID,
+      OrderCategory,
+      //      @Analytics.internalName: #LOCAL
+      //      @ObjectModel.foreignKey.association: '_WBSElementBasicData'//'_WBSElementInternalID'
+      WBSElementInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_WBSElementExternalID'
+      WBSElementExternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerWBSElementBasicData'
+      PartnerWBSElementInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerWBSElementExternalID'
+      PartnerWBSElementExternalID,
+      //      @ObjectModel.foreignKey.association: '_WBSElement'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'WBSElementInternalID'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'WBSElementInternalID'   
+      WBSElement,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ProjectBasicData' //'_ProjectInternalID'
+      ProjectInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ProjectExternalID'
+      ProjectExternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerProjectBasicData'
+      PartnerProjectInternalID,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_PartnerProjectExternalID'
+      PartnerProjectExternalID,
+      //      @ObjectModel.foreignKey.association: '_Project'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:   'ProjectInternalID'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: 'ProjectInternalID'    
+      Project,
+      OperatingConcern,
+      ProjectNetwork,
+      //      @ObjectModel.foreignKey.association: '_RelatedNetworkActivity'
+      RelatedNetworkActivity,
+      BusinessProcess,
+      CostObject,
+      //bemot,
+      @ObjectModel.foreignKey.association: '_CostAnalysisResource'
+      CostAnalysisResource,
+      CustomerServiceNotification,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_AcctgServiceDocumentTypeVH',
+                         element: 'ServiceDocumentType' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceDocumentType'
+      ServiceDocumentType,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_AcctgServiceDocumentVH',
+                         element: 'ServiceDocument' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceDocument'
+      ServiceDocument,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_AcctgServiceDocumentItemVH',
+                         element: 'ServiceDocumentItem' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceDocumentItem'
+      ServiceDocumentItem,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_ServiceContractTypeStdVH',
+                         element: 'ServiceContractType' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceContractType'
+      ServiceContractType,
+      @Consumption.valueHelpDefinition: [
+            { entity:  { name:    'I_AcctgServiceContractVH',
+                         element: 'ServiceContract' }
+            }]
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceContract'
+      ServiceContract,
+      @Analytics.internalName: #LOCAL
+      @ObjectModel.foreignKey.association: '_ServiceContractItem'
+      ServiceContractItem,
+
+      BusinessSolutionOrder,
+      BusinessSolutionOrderItem,
+
+      @ObjectModel.foreignKey.association: '_ProviderContract'
+      ProviderContract,
+      @ObjectModel.foreignKey.association: '_ProviderContractItem'
+      ProviderContractItem,
+
+      PartnerAccountAssignment,
+      PartnerAccountAssignmentType,
+      @ObjectModel.foreignKey.association: '_PartnerCostCtrActivityType'
+      PartnerCostCtrActivityType,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    'PartnerOrder_2'
+      @VDM.lifecycle.status:     #DEPRECATED
+      @VDM.lifecycle.successor:  'PartnerOrder_2'     
+      @ObjectModel.foreignKey.association: '_PartnerOrder'
+      PartnerOrder,
+      @Analytics.internalName: #LOCAL      
+      @ObjectModel.foreignKey.association: '_PartnerOrder_2'
+      PartnerOrder_2, 
+      PartnerOrderCategory,
+      //      @ObjectModel.foreignKey.association: '_PartnerWBSElement'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    'PartnerWBSElementInternalID'
+      @VDM.lifecycle.status:     #DEPRECATED
+      @VDM.lifecycle.successor:  'PartnerWBSElementInternalID' 
+      PartnerWBSElement,
+      //      @ObjectModel.foreignKey.association: '_PartnerProject'
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    'PartnerProjectInternalID'
+      @VDM.lifecycle.status:     #DEPRECATED
+      @VDM.lifecycle.successor:  'PartnerProjectInternalID' 
+      PartnerProject,
+      PartnerSalesDocument,
+      PartnerSalesDocumentItem,
+      PartnerProjectNetwork,
+      //      @ObjectModel.foreignKey.association: '_PartnerProjectNetworkActivity'
+      PartnerProjectNetworkActivity,
+      PartnerBusinessProcess,
+      PartnerCostObject,
+
+      //////////////////////////////////////////////////////////////////////
+      //  .INCLUDE  ACDOC_SI_COPA  Unified Journal Entry: CO-PA fields
+      //////////////////////////////////////////////////////////////////////
+      @ObjectModel.foreignKey.association: '_BillingDocumentType'
+      BillingDocumentType,
+      @ObjectModel.foreignKey.association: '_SalesOrganization'
+      SalesOrganization,
+      @ObjectModel.foreignKey.association: '_DistributionChannel'
+      DistributionChannel,
+      @ObjectModel.foreignKey.association: '_Division'
+      Division,
+      OrganizationDivision,
+      //      @ObjectModel.foreignKey.association: '_SoldMaterial'
+      //      SoldMaterial,
+      //      @ObjectModel.foreignKey.association: '_MaterialGroup'
+      //      MaterialGroup,
+      @ObjectModel.foreignKey.association: '_SoldProduct'
+      SoldProduct,
+      @ObjectModel.foreignKey.association: '_SoldProductGroup'
+      SoldProductGroup,
+      @ObjectModel.foreignKey.association: '_ProductGroup'
+      ProductGroup,
+      @ObjectModel.foreignKey.association: '_CustomerGroup'
+      CustomerGroup,
+      @ObjectModel.foreignKey.association: '_CustomerSupplierCountry'
+      CustomerSupplierCountry,
+      CustomerSupplierIndustry,
+      @ObjectModel.foreignKey.association: '_SalesDistrict'
+      SalesDistrict,
+      @ObjectModel.foreignKey.association: '_BillToParty'
+      BillToParty,
+      @ObjectModel.foreignKey.association: '_ShipToParty'
+      ShipToParty,
+      CustomerSupplierCorporateGroup,
+
+
+      //////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_PS  Unified Journal Entry: Fields for Public Sector
+      /////////////////////////////////////////////////////////////////////
+      FinancialManagementArea,
+      Fund,
+      GrantID,
+      BudgetPeriod,
+      PartnerFund,
+      PartnerGrant,
+      PartnerBudgetPeriod,
+      FundsCenter,
+      FundedProgram,
+
+      ///////////////////////////////////////////////////////////////////////
+      // .INCLUDE ACDOC_SI_JVA  Unified Journal Entry: Fields for Joint Venture Accounting
+      ///////////////////////////////////////////////////////////////////////
+      JointVenture,
+      JointVentureEquityGroup,
+      JointVentureCostRecoveryCode,
+      //vptnr,
+      //btype,
+      JointVentureEquityType,
+      //prodper,
+
+
+      SettlementReferenceDate,
+
+      WorkCenterInternalID,
+      OrderOperation,
+      OrderItem,
+
+      //////////////////////////////////////////////////
+      // .INCLUDE  ACDOC_SI_LOG_ACT:  New Fields  PM  //
+      //////////////////////////////////////////////////
+      //@ObjectModel.foreignKey.association: '_MaintenanceOrderSubOperation'
+      OrderSuboperation,
+      @ObjectModel.foreignKey.association: '_Equipment'
+      Equipment,
+      @ObjectModel.foreignKey.association: '_FunctionalLocation'
+      FunctionalLocation,
+      @ObjectModel.foreignKey.association: '_Assembly'
+      Assembly,
+      @ObjectModel.foreignKey.association: '_MaintenanceActivityType'
+      MaintenanceActivityType,
+      @ObjectModel.foreignKey.association: '_MaintOrdPlngDegreeCode'
+      MaintenanceOrderPlanningCode,
+      //      @ObjectModel.foreignKey.association: '_PMNotificationPriorityType'
+      MaintPriorityType,
+      //      @ObjectModel.foreignKey.association: '_PMNotificationPriority'
+      MaintPriority,
+      //      @ObjectModel.foreignKey.association: '_SuperiorOrder'
+      SuperiorOrder,
+      MaintenanceOrderIsPlanned,
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      DebitAmountInCoCodeCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'CompanyCodeCurrency'} }
+      CreditAmountInCoCodeCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      DebitAmountInTransCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'TransactionCurrency'} }
+      CreditAmountInTransCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'BalanceTransactionCurrency'} }
+      DebitAmountInBalanceTransCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'BalanceTransactionCurrency'} }
+      CreditAmountInBalanceTransCrcy,
+
+      ////////////////////////////////////
+      // NEW
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      DebitAmountInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'GlobalCurrency'} }
+      CreditAmountInGlobalCrcy,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      DebitAmountInFreeDfndCrcy1,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency1'} }
+      CreditAmountInFreeDfndCrcy1,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency2'} }
+      DebitAmountInFreeDfndCrcy2,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency2'} }
+      CreditAmountInFreeDfndCrcy2,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency3'} }
+      DebitAmountInFreeDfndCrcy3,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency3'} }
+      CreditAmountInFreeDfndCrcy3,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency4'} }
+      DebitAmountInFreeDfndCrcy4,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency4'} }
+      CreditAmountInFreeDfndCrcy4,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency5'} }
+      DebitAmountInFreeDfndCrcy5,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency5'} }
+      CreditAmountInFreeDfndCrcy5,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency6'} }
+      DebitAmountInFreeDfndCrcy6,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency6'} }
+      CreditAmountInFreeDfndCrcy6,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency7'} }
+      DebitAmountInFreeDfndCrcy7,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency7'} }
+      CreditAmountInFreeDfndCrcy7,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency8'} }
+      DebitAmountInFreeDfndCrcy8,
+
+      @DefaultAggregation: #SUM
+      @Semantics: { amount : {currencyCode: 'FreeDefinedCurrency8'} }
+      CreditAmountInFreeDfndCrcy8,
+      //////////////////////////////////
+
+
+      IsStatisticalOrder,
+      IsStatisticalCostCenter,
+      IsStatisticalSalesDocument,
+      WBSIsStatisticalWBSElement,
+
+      ///////////////////////////////////////////////////////////////////////
+      // Restricted Key Figures
+      ///////////////////////////////////////////////////////////////////////
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      ActlAssetAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      ActlLbltyEquityAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      ActlNotAssignedAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      ActlNetRsltAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      ActlPnLResultAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      ActlGLAcctNetIncAmtInCCCrcy,
+      ////////////////////////////////////////////////////////////
+
+      ///////////////////////////////////////////////////////////////////////
+      // Cash Flow Statement (IFRS)
+      ///////////////////////////////////////////////////////////////////////
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      PlnAssetAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      PlnLbltyEquityAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      PlnNotAssignedAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      PlnNetRsltAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      PlnPnLResultAmtInCCCrcy,
+
+      @Semantics.amount.currencyCode: 'CompanyCodeCurrency'
+      @DefaultAggregation: #SUM
+      PlnGLAcctNetIncAmtInCCCrcy,
+
+
+      _SourceLedger,
+      _JournalEntry,
+      _ControllingArea,
+      _Ledger,
+      _CompanyCode,
+      _GLAccountInChartOfAccounts,
+      _ChartOfAccounts,
+      _GLAccountInCompanyCode,
+      _FiscalYear,
+      _LedgerFiscalYearForVariant,
+      @VDM.lifecycle.status: #DEPRECATED
+      @VDM.lifecycle.successor: '_FiscalPeriodForVariant'
+      _FiscalPeriod,
+      _FiscalPeriodForVariant,
+      _BusinessArea,
+      _ProfitCenter,
+      _CurrentProfitCenter,
+      _CostCenter,
+      _CurrentCostCenter,
+      _Project,
+      _ProjectBasicData,
+      _ProjectBasicDataText,
+      _ProjectExternalID,
+      _ProjectExternalIDText,
+      _PartnerProjectBasicData,
+      _PartnerProjectBasicDataText,
+      _PartnerProjectExternalID,
+      _PartnerProjectExternalIDText,
+      _WBSElement,
+      _WBSElementInternalID,
+      _WBSElementExternalID,
+      _WBSElementExternalIDText,
+      _WBSElementBasicData,
+      _WBSElementBasicDataText,
+      _PartnerWBSElementBasicData,
+      _PartnerWBSElementBscDataText,
+      _PartnerWBSElementExternalID,
+      _PartnerWBSElementExtIDText,
+      _FunctionalArea,
+      _Segment,
+      _CostCtrActivityType,
+      _CostAnalysisResource,
+      _InternalOrder,
+      _Order,
+      _WorkPackageWorkItem,
+      _WorkPackage,
+      _PartnerCompanyCode,
+      _PartnerBusinessArea,
+      _PartnerProfitCenter,
+      _PartnerCostCenter,
+      _PartnerProject,
+      _PartnerWBSElement,
+      _PartnerFunctionalArea,
+      _PartnerSegment,
+      _PartnerCostCtrActivityType,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    '_PartnerOrder_2'
+      @VDM.lifecycle.status:     #DEPRECATED
+      @VDM.lifecycle.successor:  '_PartnerOrder_2'   
+      _PartnerOrder,
+      _PartnerOrder_2,
+      _PartnerCompany,
+      _FiscalYearVariant,
+      _ControllingDebitCreditCode,
+      _Employment,
+      _BusinessTransactionType,
+      _AccountingDocumentType,
+      _Plant,
+      //      _Material,
+      _Customer,
+      _Supplier,
+      _SalesOrder,
+      _SalesOrderItem,
+      _SalesDocument,
+      _BillingDocumentType,
+      _SalesOrganization,
+      _DistributionChannel,
+      _Division,
+      //      _SoldMaterial,
+      //      _MaterialGroup,
+      _ProductGroup,
+      _CustomerGroup,
+      _TransactionCurrency,
+      _CompanyCodeCurrency,
+      _GlobalCurrency,
+      _FunctionalCurrency,
+      @API.element.releaseState: #DEPRECATED
+      @API.element.successor:    '_InventorySpclStockValnType'
+      @VDM.lifecycle.status:    #DEPRECATED
+      @VDM.lifecycle.successor: '_InventorySpclStockValnType'
+      @ObjectModel.association.boundFields.dataMatchesSourceAndTargetTypes: true
+      _InventorySpecialStockValnType,
+      _InventorySpclStockValnType,
+      _InventorySpecialStockType,
+      _InventorySpclStkSalesDocument,
+      _InventorySpclStkSalesDocItm,
+      _InvtrySpclStockWBSElmntIntID,
+      _InvtrySpclStkWBSElmntBscData,
+      _InvtrySpclStockWBSElmntExtID,
+      _InventorySpclStockWBSElement,
+      _InventorySpecialStockSupplier,
+      _InventoryValuationType,
+      _FreeDefinedCurrency1,
+      _FreeDefinedCurrency2,
+      _FreeDefinedCurrency3,
+      _FreeDefinedCurrency4,
+      _FreeDefinedCurrency5,
+      _FreeDefinedCurrency6,
+      _FreeDefinedCurrency7,
+      _FreeDefinedCurrency8,
+      _BaseUnit,
+      _CostSourceUnit,
+      _AdditionalQuantity1Unit,
+      _AdditionalQuantity2Unit,
+      _AdditionalQuantity3Unit,
+      _CustomerSupplierCountry,
+      _SalesDistrict,
+      _BillToParty,
+      _ShipToParty,
+      _PlanningCategory,
+      _SemanticTag,
+      _PurReqValuationArea,
+
+      _Equipment,
+      _FunctionalLocation,
+      _MaintenanceActivityType,
+      _MaintOrdPlngDegreeCode,
+      _PMNotificationPriorityType,
+      _PMNotificationPriority,
+      _MaintenanceOrderSubOperation,
+      _Assembly,
+      _SuperiorOrder,
+      _ProjectInternalID,
+      _ConditionContract,
+      _SoldProduct,
+      _SoldProductGroup,
+      _Hierarchy,
+
+      _ServiceDocumentType,
+      _ServiceDocument,
+      _ServiceDocumentItem,
+      _ServiceContract,
+      _ServiceContractItem,
+      _ServiceContractType,
+
+      _GLAccountType,
+      //      _Hierarchy,
+      _MasterFixedAsset,
+      _FixedAsset,
+
+      _ProviderContract,
+      _ProviderContractItem,
+      
+      // Just for Authorization Check!!! DO NOT USE!!! WILL BE DEPRECATED!!!
+      cast( '' as brgru)                                              as GLAccountAuthorizationGroup,
+      cast( '' as brgru)                                              as SupplierBasicAuthorizationGrp,
+      cast( '' as brgru)                                              as CustomerBasicAuthorizationGrp,
+      cast( '' as brgru)                                              as AcctgDocTypeAuthorizationGroup,
+      cast( '' as aufart)                                             as OrderType,
+      cast( '' as auart)                                              as SalesOrderType,
+      //      cast( '' as anlkl)              as AssetClass
+            
+      AssetClass
+
+}
+```

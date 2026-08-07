@@ -5,11 +5,18 @@ app_component: SD-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESCONTRACTITEMQRY')/$value
 semantic_en: This CDS view provides the prerequisites for answering questions about various aspects of sales contracts. The example questions are: What is the target value or quantity of a given contact item? Which contracts are soon to be expired?
+semantic_vi: Sales Contract Item - Query — CDS view tiêu dùng dựa trên I_SalesContractItemCube.
 keywords:
   - Sales Contract Item - Query
+  - sales
+  - contract
+  - item
+  - query
+  - type
+  - category
 tags:
   - SD
   - bo:plant
@@ -19,7 +26,6 @@ tags:
   - lob:sales & distribution
   - SD-ANA
   - SD-ANA-2CL
-  - metadata-only
 ---
 # C_SALESCONTRACTITEMQRY
 
@@ -31,14 +37,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESCONTRACTITEMQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESCONTRACTITEMQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesContract` |  | |  |  | `CHAR(10)` | Sales Contract |
-| `SalesContractItem` |  | |  |  | `NUMC(6)` | Sales Contract Item |
+| `SalesContract` | ✓ | |  |  | `CHAR(10)` | Sales Contract |
+| `SalesContractItem` | ✓ | |  |  | `NUMC(6)` | Sales Contract Item |
 | `SalesContractType` |  | |  |  | `CHAR(4)` | Sales Document Type |
 | `SalesContractItemType` |  | |  |  | `CHAR(1)` | Item Type |
 | `SalesContractItemCategory` |  | |  |  | `CHAR(4)` | Sales Document Item Category |
@@ -109,7 +115,7 @@ tags:
 | `IncomingSlsContractNetAmtInDC` |  | |  |  | `CURR(19)` | Incoming Sales Contracts Net Value in Display Currency |
 | `IncomingSlsContractQuantity` |  | |  |  | `QUAN(15)` | Quantity of Incoming Sales Contract Items |
 | `SalesContractReleasedAmtInDC` |  | |  |  | `CURR(19)` | Released Value in Sales Contracts in Display Currency |
-| `SalesContractFulfillmentRate` |  | |  |  | `INT1(3)` |  |
+| `SalesContractFulfillmentRate` |  | |  | `1` | `INT1(3)` |  |
 | `OverallSDProcessStatus` |  | |  |  | `CHAR(1)` | Overall Processing Status (Header/All Items) |
 | `OverallSDDocumentRejectionSts` |  | |  |  | `CHAR(1)` | Rejection Status (All Items) |
 | `TotalBlockStatus` |  | |  |  | `CHAR(1)` | Overall Block Status (Header) |
@@ -139,3 +145,274 @@ tags:
 | `ItemDeliveryIncompletionStatus` |  | |  |  | `CHAR(1)` | Delivery Incompletion Status (Item) |
 | `SDDocumentRejectionStatus` |  | |  |  | `CHAR(1)` | Rejection Status (Item) |
 | `TotalSDDocReferenceStatus` |  | |  |  | `CHAR(1)` | Overall Reference Status (Item) |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESCONTRACTITEMQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SALESCONTRACTITEMQRY')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@EndUserText.label: 'Sales Contract Item - Query'
+@VDM.viewType: #CONSUMPTION
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@AbapCatalog: {
+   sqlViewName: 'CSDSLSCONTRITMQ',
+   compiler.compareFilter: true,
+   preserveKey: true
+}
+@ObjectModel: {
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #L
+   }
+}
+@Analytics.query:true
+@ObjectModel.supportedCapabilities: 
+   [ #ANALYTICAL_QUERY ]
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@OData.publish: true
+@Metadata.ignorePropagatedAnnotations: true
+
+define view C_SalesContractItemQry
+with parameters
+  @Consumption.defaultValue: 'M'
+  P_ExchangeRateType : kurst,
+  P_DisplayCurrency  : vdm_v_display_currency
+as select from I_SalesContractItemCube(P_ExchangeRateType:$parameters.P_ExchangeRateType, P_DisplayCurrency: $parameters.P_DisplayCurrency)
+{
+      //Key
+  key SalesContract,
+  key SalesContractItem,
+
+      //Category
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesContractType,
+      SalesContractItemType,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesContractItemCategory,
+
+      //Admin
+      CreatedByUser,
+      @Semantics.systemDate.createdAt: true
+      CreationDate,
+      CreationTime,
+      @Semantics.systemDate.lastChangedAt: true
+      LastChangeDate,
+      @Semantics.calendar.year
+      CreationDateYear,
+      @Semantics.calendar.yearQuarter
+      CreationDateYearQuarter,
+      @AnalyticsDetails.query.axis: #COLUMNS
+      @Semantics.calendar.yearMonth
+      CreationDateYearMonth,
+
+      //Sales Contract Valid Period
+      SalesContractValidityStartDate,
+      SalesContractValidityEndDate,
+
+      //Orgnization
+      @AnalyticsDetails.query.axis: #ROWS
+      @AnalyticsDetails.query.totals: #SHOW
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOrganization,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DistributionChannel,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrganizationDivision,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesOffice,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @Analytics.internalName: #LOCAL
+      PartnerCompany, 
+
+      //Sales
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SoldToParty,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalCustomerGroup5,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDDocumentReason,
+      //CustomerPurchaseOrderType,
+      PurchaseOrderByCustomer,
+      CustomerPurchaseOrderDate,
+      SalesContractItemText,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDocumentRjcnReason,
+
+      //Shipping
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ShipToParty,
+
+      //Sales Employee & Responsible Employee
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesEmployee,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ResponsibleEmployee,
+
+      //Product
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Product,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProductGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup1,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup2,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup3,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup4,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      AdditionalMaterialGroup5,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Division,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      Plant,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      StorageLocation,
+      
+      //BoM
+      MainItemPricingRefProduct,
+      HigherLevelItem,
+      BillOfMaterial,
+      PropagatePrftbltySgmt2BOM,
+      CostDeterminationIsRequired,
+      
+      //Pricing
+      PricingDate,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SalesDistrict,
+
+      //Payment
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      CustomerPaymentTerms,
+      PaymentMethod,
+
+      //Billing
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillingCompanyCode,
+      BillingDocumentDate,
+
+      //Accounting
+      FiscalYear,
+      FiscalPeriod,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BusinessArea,
+      ProfitCenter,
+      CustomerAccountAssignmentGroup,
+
+      //Reference
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ReferenceSDDocumentCategory,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ReferenceSDDocument,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ReferenceSDDocumentItem,
+
+      @Semantics.currencyCode: true
+      DisplayCurrency,
+      @Semantics.currencyCode: true
+      TransactionCurrency,
+      @Semantics.unitOfMeasure: true
+      BaseUnit,
+
+      //KPI of Sales Contract
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SalesContractTargetAmountInDC,
+
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      SalesContractTargetQuantity,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      IncomingSlsContractNetAmtInDC,
+
+      @DefaultAggregation: #SUM
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      IncomingSlsContractQuantity,
+
+      @DefaultAggregation: #SUM
+      @Semantics.amount.currencyCode: 'DisplayCurrency'
+      SalesContractReleasedAmtInDC,
+      
+      @DefaultAggregation: #FORMULA
+      @AnalyticsDetails.query.formula: 'NDIV0( $projection.SalesContractReleasedAmtInDC / $projection.IncomingSlsContractNetAmtInDC )'
+      @EndUserText.label: 'Contract Fulfillment Rate'
+      1                    as SalesContractFulfillmentRate,
+      
+      //Status
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDProcessStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDDocumentRejectionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDelivConfStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallTotalDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallDeliveryBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallOrdReltdBillgStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallBillingBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallTotalSDDocRefStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OverallSDDocReferenceStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HdrGeneralIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HeaderDelivIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      HeaderBillgIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmGeneralIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmBillingIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OvrlItmDelivIncompletionSts,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDProcessStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryConfirmationStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalDeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      DeliveryBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      OrderRelatedBillingStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      BillingBlockStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemGeneralIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemBillingIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ItemDeliveryIncompletionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      SDDocumentRejectionStatus,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      TotalSDDocReferenceStatus
+}
+```

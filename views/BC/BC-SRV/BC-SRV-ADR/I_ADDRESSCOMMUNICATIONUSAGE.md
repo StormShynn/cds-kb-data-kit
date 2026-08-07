@@ -31,13 +31,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  | `addrnumber` |  |  |
-| `AddressPersonID` | ✓ | |  | `persnumber` |  |  |
-| `CommunicationMediumType` | ✓ | |  | `comm_type` |  |  |
-| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` |  |  |
-| `CommunicationMediumTypeUsage` | ✓ | |  | `comm_usage` |  |  |
-| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` |  |  |
-| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` |  |  |
+| `AddressID` | ✓ | |  | `addrnumber` | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  | `persnumber` | `CHAR(10)` | Person Number |
+| `CommunicationMediumType` | ✓ | |  | `comm_type` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `CommMediumSequenceNumber` | ✓ | |  | `consnumber` | `NUMC(3)` | Sequence Number |
+| `CommunicationMediumTypeUsage` | ✓ | |  | `comm_usage` | `CHAR(10)` | Communication Usage: Key Field |
+| `ValidityStartDate` |  | |  | `case valid_from when '' then '00010101' else cast( substring( valid_from,1,8) as abap.dats) end` | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  | `case valid_to when '' then '99991231' else cast( substring( valid_to,1,8) as abap.dats) end` | `DATS(8)` |  |
 
 ## Source Code
 
