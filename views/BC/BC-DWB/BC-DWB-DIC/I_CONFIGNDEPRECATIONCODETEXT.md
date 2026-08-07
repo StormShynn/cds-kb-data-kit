@@ -32,10 +32,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `ConfigurationDeprecationCode` | ✓ | |  | `cast( dd07t.domvalue_l as config_deprecation_code )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `ConfignDeprecationCodeName` |  | |  | `cast( dd07t.ddtext as config_deprecation_code_name preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `ConfigurationDeprecationCode` | ✓ | |  | `cast( dd07t.domvalue_l as config_deprecation_code )` | `CHAR(1)` | Deprecated Entries |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `ConfignDeprecationCodeName` |  | |  | `cast( dd07t.ddtext as config_deprecation_code_name preserving type )` | `CHAR(60)` | Value Help: Flag Obsolete Entries |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

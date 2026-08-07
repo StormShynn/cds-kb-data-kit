@@ -340,47 +340,47 @@
     "matched": 37
   },
   "C_CNTRLCONTRCNSMPNQRY": {
-    "attemptedAt": "2026-08-07T15:36:36.297Z",
+    "attemptedAt": "2026-08-07T16:28:52.914Z",
     "found": true,
     "matched": 34
   },
   "C_COMARGINFORPERIODCOMPRNQRY": {
-    "attemptedAt": "2026-08-07T15:36:37.326Z",
+    "attemptedAt": "2026-08-07T16:28:56.299Z",
     "found": true,
     "matched": 99
   },
   "C_COMARGPERDCOMPARISONQRY_2": {
-    "attemptedAt": "2026-08-07T15:36:38.320Z",
+    "attemptedAt": "2026-08-07T16:28:57.331Z",
     "found": true,
     "matched": 102
   },
   "C_COMPANYMARGINQUERY": {
-    "attemptedAt": "2026-08-07T15:36:39.330Z",
+    "attemptedAt": "2026-08-07T16:28:58.363Z",
     "found": true,
     "matched": 81
   },
   "C_COMPANYMARGINQUERY_2": {
-    "attemptedAt": "2026-08-07T15:36:40.700Z",
+    "attemptedAt": "2026-08-07T16:28:59.407Z",
     "found": true,
     "matched": 84
   },
   "C_COSTCOMPONENTASSIGNMENTDEX": {
-    "attemptedAt": "2026-08-07T15:36:41.931Z",
+    "attemptedAt": "2026-08-07T16:29:08.239Z",
     "found": true,
     "matched": 6
   },
   "C_CREDITMEMOREQUESTITEMQRY": {
-    "attemptedAt": "2026-08-07T15:36:49.609Z",
+    "attemptedAt": "2026-08-07T16:29:09.503Z",
     "found": true,
     "matched": 49
   },
   "C_CUSTOMERRETURNITEMQRY_2": {
-    "attemptedAt": "2026-08-07T15:36:50.871Z",
+    "attemptedAt": "2026-08-07T16:29:10.623Z",
     "found": true,
     "matched": 61
   },
   "C_CUSTOMERRETURNRATEQRY": {
-    "attemptedAt": "2026-08-07T15:36:51.967Z",
+    "attemptedAt": "2026-08-07T16:29:11.659Z",
     "found": true,
     "matched": 58
   },
@@ -530,62 +530,62 @@
     "matched": 111
   },
   "C_CMMDTYMTMDAYOVERDAYQRY": {
-    "attemptedAt": "2026-08-07T15:56:28.220Z",
+    "attemptedAt": "2026-08-07T16:28:45.761Z",
     "found": true,
     "matched": 111
   },
   "C_CMMDTYMTMENDOFDAYQRY": {
-    "attemptedAt": "2026-08-07T15:56:29.218Z",
+    "attemptedAt": "2026-08-07T16:28:46.870Z",
     "found": true,
     "matched": 111
   },
   "C_CMMDTYPOSCURRENTDATEQRY": {
-    "attemptedAt": "2026-08-07T15:56:30.320Z",
+    "attemptedAt": "2026-08-07T16:28:47.848Z",
     "found": true,
     "matched": 87
   },
   "C_CMMDTYPOSDAYOVERDAYQRY": {
-    "attemptedAt": "2026-08-07T15:56:31.346Z",
+    "attemptedAt": "2026-08-07T16:28:48.857Z",
     "found": true,
     "matched": 89
   },
   "C_CMMDTYPOSENDOFDAYQRY": {
-    "attemptedAt": "2026-08-07T15:56:32.991Z",
+    "attemptedAt": "2026-08-07T16:28:49.795Z",
     "found": true,
     "matched": 88
   },
   "C_CNDNCONTRBUSVOLSELCRITERIADP": {
-    "attemptedAt": "2026-08-07T15:56:34.106Z",
+    "attemptedAt": "2026-08-07T16:28:50.875Z",
     "found": true,
     "matched": 53
   },
   "C_CNDNCONTRSETTLMTCALDP": {
-    "attemptedAt": "2026-08-07T15:56:35.243Z",
+    "attemptedAt": "2026-08-07T16:28:51.900Z",
     "found": true,
     "matched": 14
   },
   "C_CO_DIANSTRPEMPLOYEEOPENITEMC": {
-    "attemptedAt": "2026-08-07T15:56:36.237Z",
+    "attemptedAt": "2026-08-07T16:28:53.932Z",
     "found": true,
     "matched": 25
   },
   "C_COLLECTIONPROGRESSQ": {
-    "attemptedAt": "2026-08-07T15:56:37.265Z",
+    "attemptedAt": "2026-08-07T16:28:55.175Z",
     "found": true,
     "matched": 16
   },
   "C_COMPLAINTAGAINSTSUPPLIERFDP": {
-    "attemptedAt": "2026-08-07T15:56:38.310Z",
+    "attemptedAt": "2026-08-07T16:29:00.508Z",
     "found": true,
     "matched": 22
   },
   "C_CONDITIONCONTRACTDEX": {
-    "attemptedAt": "2026-08-07T15:56:39.270Z",
+    "attemptedAt": "2026-08-07T16:29:01.505Z",
     "found": true,
     "matched": 70
   },
   "C_CONDITIONCONTRACTDP": {
-    "attemptedAt": "2026-08-07T15:56:40.332Z",
+    "attemptedAt": "2026-08-07T16:29:02.535Z",
     "found": true,
     "matched": 76
   },
@@ -595,17 +595,17 @@
     "matched": 43
   },
   "C_COSTCENTERPLANACTQ2001": {
-    "attemptedAt": "2026-08-07T15:56:42.406Z",
+    "attemptedAt": "2026-08-07T16:29:03.663Z",
     "found": true,
     "matched": 69
   },
   "C_COSTCENTERQ2001": {
-    "attemptedAt": "2026-08-07T15:56:43.406Z",
+    "attemptedAt": "2026-08-07T16:29:05.814Z",
     "found": true,
     "matched": 48
   },
   "C_COSTCENTERSEMANTICTAG": {
-    "attemptedAt": "2026-08-07T15:56:44.418Z",
+    "attemptedAt": "2026-08-07T16:29:07.149Z",
     "found": true,
     "matched": 58
   },
@@ -1218,5 +1218,85 @@
     "attemptedAt": "2026-08-07T16:27:18.491Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC4_T_SCP\" (404)"
+  },
+  "C_DAYSBEYONDTERMS": {
+    "attemptedAt": "2026-08-07T16:29:12.657Z",
+    "found": true,
+    "matched": 27
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC5_SCP": {
+    "attemptedAt": "2026-08-07T16:29:12.933Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC5_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC5_T_SCP": {
+    "attemptedAt": "2026-08-07T16:29:13.604Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC5_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC6_SCP": {
+    "attemptedAt": "2026-08-07T16:29:14.288Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC6_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP": {
+    "attemptedAt": "2026-08-07T16:29:14.988Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC7_SCP": {
+    "attemptedAt": "2026-08-07T16:29:15.741Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC7_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC7_T_SCP": {
+    "attemptedAt": "2026-08-07T16:29:16.574Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC7_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC8_SCP": {
+    "attemptedAt": "2026-08-07T16:29:17.248Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC8_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC8_T_SCP": {
+    "attemptedAt": "2026-08-07T16:29:17.938Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC8_T_SCP\" (404)"
+  },
+  "I_CONFIGNDEPRECATIONCODE": {
+    "attemptedAt": "2026-08-07T16:29:19.209Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CONFIGNDEPRECATIONCODETEXT": {
+    "attemptedAt": "2026-08-07T16:29:20.161Z",
+    "found": true,
+    "matched": 4
+  },
+  "SATC_API_FINDINGS": {
+    "attemptedAt": "2026-08-07T16:29:20.603Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SATC_API_FINDINGS\" (404)"
+  },
+  "SATC_API_RESULT_HEADERS": {
+    "attemptedAt": "2026-08-07T16:29:21.282Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SATC_API_RESULT_HEADERS\" (404)"
+  },
+  "SATC_EXEMPTIONS_DDLV_EC1": {
+    "attemptedAt": "2026-08-07T16:29:21.988Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SATC_EXEMPTIONS_DDLV_EC1\" (404)"
+  },
+  "SATC_EXEMPTIONS_DDLV_EC2": {
+    "attemptedAt": "2026-08-07T16:29:22.707Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SATC_EXEMPTIONS_DDLV_EC2\" (404)"
+  },
+  "I_SYSTEMUSER": {
+    "attemptedAt": "2026-08-07T16:29:24.048Z",
+    "found": true,
+    "matched": 2
   }
 }

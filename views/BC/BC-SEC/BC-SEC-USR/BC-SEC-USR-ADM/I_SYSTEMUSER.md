@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserID` | ✓ | |  | `cast( _usr02.bname as vdm_userid preserving type )` |  |  |
-| `UserDescription` |  | |  | `cast( _usr21.techdesc as vdm_userdescription preserving type )` |  |  |
+| `UserID` | ✓ | |  | `cast( _usr02.bname as vdm_userid preserving type )` | `CHAR(12)` | User ID |
+| `UserDescription` |  | |  | `cast( _usr21.techdesc as vdm_userdescription preserving type )` | `CHAR(80)` | User Description |
 
 ## Source Code
 

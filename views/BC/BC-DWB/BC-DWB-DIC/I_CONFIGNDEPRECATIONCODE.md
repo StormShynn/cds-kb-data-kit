@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ConfigurationDeprecationCode` | ✓ | |  | `cast( dd07l.domvalue_l as config_deprecation_code )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `ConfigurationDeprecationCode` | ✓ | |  | `cast( dd07l.domvalue_l as config_deprecation_code )` | `CHAR(1)` | Deprecated Entries |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Associations
