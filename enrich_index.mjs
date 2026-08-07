@@ -78,12 +78,26 @@ let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
 // ("vwerk as SupplyingPlant") — src/template.mjs's Fields table already
 // carries that raw name in its Source column (via splitViaSource's fallback
 // branch, whenever the source is anything other than a qualified
-// association path). This regex is how rawFieldIndex tells "yes, this is a
-// real bare column name" apart from the other things that column can hold —
-// a `cast(...)` expression, a `_Association.Field` chain, string literals —
-// none of which represent a single raw column and would produce a false
-// mapping if indexed as one.
-const BARE_IDENTIFIER_RE = /^[A-Za-z_]\w*$/;
+// association path). Real DDIC column/domain names are conventionally all
+// lowercase (vwerk, matnr, gjahr); a bare or cast-wrapped identifier that
+// isn't — ProductName, ValidityStartDate, IsNaturalPerson — is virtually
+// always another CDS-level field being routed through a type coercion, not
+// a raw table column, so requiring lowercase here is a precision filter,
+// not just a style preference (confirmed empirically: of ~26k source
+// expressions across every view, ~2.6k are exactly this mixed-case,
+// non-raw shape — indexing them as "raw DDIC columns" would be wrong often
+// enough to matter).
+const BARE_IDENTIFIER_RE = /^[a-z][a-z0-9_]*$/;
+// The other place a raw name commonly hides: `cast(vwerks as werks_d
+// preserving type) as SupplyingPlant` — splitViaSource's fallback treats
+// the whole cast expression as one opaque "source" string (correctly, for
+// rendering — a cast isn't a single column reference), so this repo-wide
+// index needs its own targeted extraction: only the first bare argument of
+// a *single*, non-nested cast(...) call, immediately followed by "as"
+// (skips string literals like `cast('' as ...)`, qualified paths like
+// `cast(dd07l.domname as ...)`, and nested/function-call arguments like
+// `cast(substring(x,1,1) as ...)`, none of which are one real column either).
+const CAST_RE = /^cast\s*\(\s*([A-Za-z_]\w*)\s+as\b/i;
 
 // The immediate `as select from X` / `as projection on X` target isn't
 // rendered as its own table anywhere in the .md (only association targets
@@ -138,9 +152,14 @@ for (let i = 0; i < viewFiles.length; i++) {
         fieldName = row[0];
         isKey = row[1] === '✓';
         const source = row[4];
-        if (source && BARE_IDENTIFIER_RE.test(source) && source.toUpperCase() !== fieldName.toUpperCase()) {
-          const rawKey = source.toUpperCase();
-          (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo });
+        if (source) {
+          const bareMatch = BARE_IDENTIFIER_RE.test(source) ? source : null;
+          const castMatch = !bareMatch ? source.match(CAST_RE)?.[1] : null;
+          const rawName = bareMatch || (castMatch && BARE_IDENTIFIER_RE.test(castMatch) ? castMatch : null);
+          if (rawName && rawName.toUpperCase() !== fieldName.toUpperCase()) {
+            const rawKey = rawName.toUpperCase();
+            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo });
+          }
         }
       } else {
         if (row[row.length - 1] === '*Association*') continue;
