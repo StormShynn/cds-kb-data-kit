@@ -46,9 +46,10 @@ async function readJson(file, fallback) {
 }
 
 async function main() {
-  console.log('📋 Reading field-index.json / table-index.json / view-paths.json...');
+  console.log('📋 Reading field-index.json / table-index.json / raw-field-index.json / view-paths.json...');
   const fieldIndex = await readJson(path.join(DATA_DIR, 'index', 'field-index.json'), null);
   const tableIndex = await readJson(path.join(DATA_DIR, 'index', 'table-index.json'), null);
+  const rawFieldIndex = await readJson(path.join(DATA_DIR, 'index', 'raw-field-index.json'), null);
   const viewPaths = await readJson(path.join(DATA_DIR, 'index', 'view-paths.json'), {});
 
   if (!fieldIndex || !tableIndex) {
@@ -75,19 +76,35 @@ async function main() {
       return [e.view, e.relation === 'source' ? 's' : 'a', e.alias || ''];
     });
   }
+  // R: RAW DDIC column name (e.g. "VWERK", as seen in SE11/an old ABAP
+  // report) -> the CDS-renamed semantic field a view actually exposes it
+  // as (e.g. "SupplyingPlant") — see enrich_index.mjs's rawFieldIndex for
+  // how this is recovered from each field's "vwerk as SupplyingPlant"-style
+  // source expression. Older data repos built before this index existed
+  // just get an empty R (raw-name lookups silently find nothing extra).
+  const R = {};
+  if (rawFieldIndex) {
+    for (const [raw, entries] of Object.entries(rawFieldIndex.fields)) {
+      R[raw] = entries.map((e) => {
+        if (!(e.view in viewMeta)) viewMeta[e.view] = e.appComponent || '';
+        return [e.view, e.field, e.isKey ? 1 : 0];
+      });
+    }
+  }
 
-  const embedded = JSON.stringify({ F, T, M: viewMeta, P: viewPaths })
+  const embedded = JSON.stringify({ F, T, R, M: viewMeta, P: viewPaths })
     .replace(/<\/script/gi, '<\\/script');
 
   const html = renderHtml(embedded, {
     fieldCount: Object.keys(F).length,
     tableCount: Object.keys(T).length,
+    rawFieldCount: Object.keys(R).length,
     viewCount: Object.keys(viewMeta).length,
   });
 
   await fs.writeFile(OUTPUT_FILE, html, 'utf-8');
   const sizeMb = (Buffer.byteLength(html) / 1024 / 1024).toFixed(1);
-  console.log(`✅ Wrote ${OUTPUT_FILE} (${sizeMb} MB) — ${Object.keys(F).length} field name(s), ${Object.keys(T).length} table/view name(s)`);
+  console.log(`✅ Wrote ${OUTPUT_FILE} (${sizeMb} MB) — ${Object.keys(F).length} field name(s), ${Object.keys(T).length} table/view name(s), ${Object.keys(R).length} raw DDIC column name(s)`);
 }
 
 function renderHtml(embeddedJson, stats) {
@@ -150,9 +167,9 @@ function renderHtml(embeddedJson, stats) {
 <body class="viz-root">
 <div class="container">
   <h1>CDS Knowledge Base <span>· Field/Table Search</span></h1>
-  <p class="subtitle">Paste an exact field name or table/CDS-view name found in ABAP code (SE11, DDL, a search on the SAP Business Accelerator Hub) to instantly find every local CDS view that uses it — no need to search the Hub website by hand.</p>
+  <p class="subtitle">Paste an exact field name, raw DDIC column name (SE11), or table/CDS-view name found in ABAP code to instantly find every local CDS view that uses it — no need to search the Hub website by hand. A raw column like <code>VWERK</code> resolves to whatever semantic name a view renamed it to (e.g. <code>SupplyingPlant</code>).</p>
 
-  <input id="q" type="text" placeholder="e.g. MATNR, CompanyCode, BKPF, I_JournalEntryItem…" autofocus autocomplete="off" spellcheck="false" />
+  <input id="q" type="text" placeholder="e.g. MATNR, CompanyCode, VWERK, BKPF, I_JournalEntryItem…" autofocus autocomplete="off" spellcheck="false" />
   <p class="hint">Exact matches shown first; substring matches below. Case-insensitive. View names open on github.com (rendered markdown) — needs internet.</p>
 
   <div id="results"></div>
@@ -165,7 +182,7 @@ function renderHtml(embeddedJson, stats) {
   const q = document.getElementById('q');
   const results = document.getElementById('results');
   const statsLine = document.getElementById('statsLine');
-  statsLine.textContent = ${JSON.stringify(`${stats.fieldCount} field name(s) · ${stats.tableCount} table/view name(s) · ${stats.viewCount} view(s) covered`)};
+  statsLine.textContent = ${JSON.stringify(`${stats.fieldCount} field name(s) · ${stats.tableCount} table/view name(s) · ${stats.rawFieldCount} raw DDIC column name(s) · ${stats.viewCount} view(s) covered`)};
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -196,6 +213,13 @@ function renderHtml(embeddedJson, stats) {
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
+  function rawFieldRow([view, semanticField, isKey]) {
+    const ac = DATA.M[view] || '';
+    return '<div class="row">' + viewLink(view) + ' <span class="tag">— as <code>' + escapeHtml(semanticField) + '</code></span>' +
+      (isKey ? ' <span class="badge key">key</span>' : '') +
+      (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
+  }
+
   function render() {
     const raw = q.value.trim();
     if (!raw) { results.innerHTML = ''; return; }
@@ -203,14 +227,17 @@ function renderHtml(embeddedJson, stats) {
 
     const fieldKeys = Object.keys(DATA.F);
     const tableKeys = Object.keys(DATA.T);
+    const rawKeys = Object.keys(DATA.R);
 
     const fieldExact = DATA.F[key] || null;
     const tableExact = DATA.T[key] || null;
+    const rawExact = DATA.R[key] || null;
     const fieldSubstr = fieldKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
     const tableSubstr = tableKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
+    const rawSubstr = rawKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
 
-    if (!fieldExact && !tableExact && fieldSubstr.length === 0 && tableSubstr.length === 0) {
-      results.innerHTML = '<div class="empty">No field or table/view name matches "' + escapeHtml(raw) + '".</div>';
+    if (!fieldExact && !tableExact && !rawExact && fieldSubstr.length === 0 && tableSubstr.length === 0 && rawSubstr.length === 0) {
+      results.innerHTML = '<div class="empty">No field, table/view, or raw DDIC column name matches "' + escapeHtml(raw) + '".</div>';
       return;
     }
 
@@ -223,6 +250,10 @@ function renderHtml(embeddedJson, stats) {
       html += '<div class="section"><h2>As a table/view reference — "' + escapeHtml(key) + '" (' + tableExact.length + ' view' + (tableExact.length === 1 ? '' : 's') + ')</h2>' +
         tableExact.map(tableRow).join('') + '</div>';
     }
+    if (rawExact) {
+      html += '<div class="section"><h2>As a raw DDIC column (SE11/ABAP) — "' + escapeHtml(key) + '" renamed in ' + rawExact.length + ' view' + (rawExact.length === 1 ? '' : 's') + '</h2>' +
+        rawExact.map(rawFieldRow).join('') + '</div>';
+    }
     if (fieldSubstr.length > 0) {
       html += '<div class="section"><h2>Field names containing "' + escapeHtml(key) + '"</h2>' +
         fieldSubstr.map(k => '<div class="row"><span class="tag">' + escapeHtml(k) + '</span> <span class="tag">(' + DATA.F[k].length + ' view' + (DATA.F[k].length === 1 ? '' : 's') + ')</span></div>').join('') + '</div>';
@@ -230,6 +261,10 @@ function renderHtml(embeddedJson, stats) {
     if (tableSubstr.length > 0) {
       html += '<div class="section"><h2>Table/view names containing "' + escapeHtml(key) + '"</h2>' +
         tableSubstr.map(k => '<div class="row"><span class="tag">' + escapeHtml(k) + '</span> <span class="tag">(' + DATA.T[k].length + ' view' + (DATA.T[k].length === 1 ? '' : 's') + ')</span></div>').join('') + '</div>';
+    }
+    if (rawSubstr.length > 0) {
+      html += '<div class="section"><h2>Raw DDIC column names containing "' + escapeHtml(key) + '"</h2>' +
+        rawSubstr.map(k => '<div class="row"><span class="tag">' + escapeHtml(k) + '</span> <span class="tag">(' + DATA.R[k].length + ' view' + (DATA.R[k].length === 1 ? '' : 's') + ')</span></div>').join('') + '</div>';
     }
     results.innerHTML = html;
   }

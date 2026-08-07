@@ -71,7 +71,19 @@ const docs = [];
 const fieldsMap = {};
 const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo }]
 const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo }]
+const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo }]
 let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
+
+// A CDS view almost always renames a raw DDIC column to a semantic name
+// ("vwerk as SupplyingPlant") — src/template.mjs's Fields table already
+// carries that raw name in its Source column (via splitViaSource's fallback
+// branch, whenever the source is anything other than a qualified
+// association path). This regex is how rawFieldIndex tells "yes, this is a
+// real bare column name" apart from the other things that column can hold —
+// a `cast(...)` expression, a `_Association.Field` chain, string literals —
+// none of which represent a single raw column and would produce a false
+// mapping if indexed as one.
+const BARE_IDENTIFIER_RE = /^[A-Za-z_]\w*$/;
 
 // The immediate `as select from X` / `as projection on X` target isn't
 // rendered as its own table anywhere in the .md (only association targets
@@ -125,6 +137,11 @@ for (let i = 0; i < viewFiles.length; i++) {
         if (row[2] === '✓') continue; // association row, not a data field
         fieldName = row[0];
         isKey = row[1] === '✓';
+        const source = row[4];
+        if (source && BARE_IDENTIFIER_RE.test(source) && source.toUpperCase() !== fieldName.toUpperCase()) {
+          const rawKey = source.toUpperCase();
+          (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo });
+        }
       } else {
         if (row[row.length - 1] === '*Association*') continue;
         fieldName = row[0];
@@ -285,3 +302,19 @@ const tableIndexOutput = {
 };
 await fs.writeFile(tableIndexFile, JSON.stringify(tableIndexOutput), 'utf-8');
 console.log(`Wrote ${tableIndexFile} (${Object.keys(tableIndex).length} distinct table/view name(s))`);
+
+// ── raw-field-index.json — RAW DDIC COLUMN NAME -> [{view, field, isKey, appComponent, lob, bo}] ─
+// The lookup field-index.json and table-index.json can't do: "I found VWERK
+// in an old ABAP report / SE11 — which CDS views is that, under whatever
+// semantic name the view renamed it to?" (here, `vwerk as SupplyingPlant`).
+for (const key of Object.keys(rawFieldIndex)) {
+  rawFieldIndex[key].sort((a, b) => a.view.localeCompare(b.view));
+}
+const rawFieldIndexFile = path.join(dataRoot, 'index', 'raw-field-index.json');
+const rawFieldIndexOutput = {
+  builtAt: output.builtAt,
+  rawFieldCount: Object.keys(rawFieldIndex).length,
+  fields: rawFieldIndex,
+};
+await fs.writeFile(rawFieldIndexFile, JSON.stringify(rawFieldIndexOutput), 'utf-8');
+console.log(`Wrote ${rawFieldIndexFile} (${Object.keys(rawFieldIndex).length} distinct raw DDIC column name(s))`);
