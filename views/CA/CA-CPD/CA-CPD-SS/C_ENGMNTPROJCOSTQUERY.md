@@ -1,13 +1,13 @@
 ---
 name: C_ENGMNTPROJCOSTQUERY
-description: This CDS view provides the prerequisites for answering the following business questions. Note that information is retrieved only from the leading ledger. What is the financial status of projects that I'm responsible for? What is the financial status of projects in a given cost center or company code? What is the profitability in projects that I manage? What is the proportion of billable and non-billable project costs in a given company code? Are my project costs on track, compared to the baseline plan?
+description: This CDS view provides the prerequisites for answering the following business questions: What is the financial status of projects that I'm responsible for? What is the financial status of projects in a given cost center or company code? What is the profitability in projects that I manage? What is the proportion of billable and non-billable project costs in a given company code? Are my project costs on track, compared to the baseline plan?
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMNTPROJCOSTQUERY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions. Note that information is retrieved only from the leading ledger. What is the financial status of projects that I'm responsible for? What is the financial status of projects in a given cost center or company code? What is the profitability in projects that I manage? What is the proportion of billable and non-billable project costs in a given company code? Are my project costs on track, compared to the baseline plan?
+semantic_en: This CDS view provides the prerequisites for answering the following business questions: What is the financial status of projects that I'm responsible for? What is the financial status of projects in a given cost center or company code? What is the profitability in projects that I manage? What is the proportion of billable and non-billable project costs in a given company code? Are my project costs on track, compared to the baseline plan?
 tags:
   - CA
   - bo:companycode
@@ -22,7 +22,7 @@ tags:
 ---
 # C_ENGMNTPROJCOSTQUERY
 
-**This CDS view provides the prerequisites for answering the following business questions. Note that information is retrieved only from the leading ledger. What is the financial status of projects that I'm responsible for? What is the financial status of projects in a given cost center or company code? What is the profitability in projects that I manage? What is the proportion of billable and non-billable project costs in a given company code? Are my project costs on track, compared to the baseline plan?**
+**This CDS view provides the prerequisites for answering the following business questions: What is the financial status of projects that I'm responsible for? What is the financial status of projects in a given cost center or company code? What is the profitability in projects that I manage? What is the proportion of billable and non-billable project costs in a given company code? Are my project costs on track, compared to the baseline plan?**
 
 | Property | Value |
 |---|---|

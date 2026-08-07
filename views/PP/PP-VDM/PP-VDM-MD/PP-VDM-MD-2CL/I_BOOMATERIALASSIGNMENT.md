@@ -1,15 +1,16 @@
 ---
 name: I_BOOMATERIALASSIGNMENT
-description: Material assgmt to Bill of Operations
+description: This CDS view can build foreign key associations to the sixth key field of material assignment data (MAPL-ZKRIZ) in analytical CDS views.
 app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BOOMATERIALASSIGNMENT')/$value
-semantic_en: Material assgmt to Bill of Operations
+semantic_en: This CDS view can build foreign key associations to the sixth key field of material assignment data (MAPL-ZKRIZ) in analytical CDS views.
 tags:
   - PP
+  - bo:companycode
   - component:PP-VDM-MD-2CL
   - interface-view
   - lob:manufacturing
@@ -21,7 +22,7 @@ tags:
 ---
 # I_BOOMATERIALASSIGNMENT
 
-**Material assgmt to Bill of Operations**
+**This CDS view can build foreign key associations to the sixth key field of material assignment data (MAPL-ZKRIZ) in analytical CDS views.**
 
 | Property | Value |
 |---|---|

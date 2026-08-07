@@ -1,13 +1,13 @@
 ---
 name: I_BATCHWITHPLANT_2
-description: Batch Info with Plant Specific Data
+description: This CDS view of the batch master record provides both root and plant-specific data, and it is aligned with the SAP business object Batch. This CDS view is intended to replace the CDS view Batch (Successor available) (I_BATCH). This CDS view provides the data to answer the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use? In which plants has the batch been used? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: LO-BM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BATCHWITHPLANT_2')/$value
-semantic_en: Batch Info with Plant Specific Data
+semantic_en: This CDS view of the batch master record provides both root and plant-specific data, and it is aligned with the SAP business object Batch. This CDS view is intended to replace the CDS view Batch (Successor available) (I_BATCH). This CDS view provides the data to answer the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use? In which plants has the batch been used? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - LO
   - bo:companycode
@@ -18,11 +18,12 @@ tags:
   - LO-BM-MD-2CL
   - lob:logistics general
   - plan
+  - supplier
   - metadata-only
 ---
 # I_BATCHWITHPLANT_2
 
-**Batch Info with Plant Specific Data**
+**This CDS view of the batch master record provides both root and plant-specific data, and it is aligned with the SAP business object Batch. This CDS view is intended to replace the CDS view Batch (Successor available) (I_BATCH). This CDS view provides the data to answer the following business questions: When will the shelf life of the batch expire? To which supplier can a batch be traced? Where and when was the batch manufactured? Which batches are available for unrestricted use? In which plants has the batch been used? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

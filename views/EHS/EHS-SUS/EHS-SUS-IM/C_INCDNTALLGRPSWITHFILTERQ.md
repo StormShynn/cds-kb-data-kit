@@ -1,13 +1,13 @@
 ---
 name: C_INCDNTALLGRPSWITHFILTERQ
-description: All Incident Groups Query
+description: This CDS view retrieves the number incident records per incident, near miss, or safety observation group for a specific location and its sublocations. This CDS view provides the data to answer the following business questions: How many incidents were reported at my location and its sublocations last year? How many near misses were reported at my location that happened because of unsafe conditions? How many safety observations were reported at my location that involved unsafe use of equipment? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INCDNTALLGRPSWITHFILTERQ')/$value
-semantic_en: All Incident Groups Query
+semantic_en: This CDS view retrieves the number incident records per incident, near miss, or safety observation group for a specific location and its sublocations. This CDS view provides the data to answer the following business questions: How many incidents were reported at my location and its sublocations last year? How many near misses were reported at my location that happened because of unsafe conditions? How many safety observations were reported at my location that involved unsafe use of equipment? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - EHS
   - bo:companycode
@@ -19,7 +19,7 @@ tags:
 ---
 # C_INCDNTALLGRPSWITHFILTERQ
 
-**All Incident Groups Query**
+**This CDS view retrieves the number incident records per incident, near miss, or safety observation group for a specific location and its sublocations. This CDS view provides the data to answer the following business questions: How many incidents were reported at my location and its sublocations last year? How many near misses were reported at my location that happened because of unsafe conditions? How many safety observations were reported at my location that involved unsafe use of equipment? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

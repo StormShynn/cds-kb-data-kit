@@ -1,20 +1,22 @@
 ---
 name: C_ORIGNPRFTCTRONPROJQRY
-description: Origin Profit Center on Project - Query
+description: This CDS view is designed to provide an analytical query for analyzing financial data related to projects, specifically focusing on the origin profit center. It is intended for consumption in analytical applications and provides a comprehensive overview of project-related financial metrics, such as recognized revenue, costs, and margins. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for a specific project or set of projects? How does the margin percentage compare across different projects or fiscal periods? What are the billed revenues and work-in-progress amounts for projects? How do the financial metrics vary by company code, ledger, or fiscal year? What is the impact of cost of goods sold (COGS) adjustments on the recognized costs? How do different account assignment types affect the financial outcomes of projects? What are the financial details associated with specific profit centers or origin profit centers? How do the financial metrics align with specific project profiles or billing elements? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ORIGNPRFTCTRONPROJQRY')/$value
-semantic_en: Origin Profit Center on Project - Query
+semantic_en: This CDS view is designed to provide an analytical query for analyzing financial data related to projects, specifically focusing on the origin profit center. It is intended for consumption in analytical applications and provides a comprehensive overview of project-related financial metrics, such as recognized revenue, costs, and margins. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for a specific project or set of projects? How does the margin percentage compare across different projects or fiscal periods? What are the billed revenues and work-in-progress amounts for projects? How do the financial metrics vary by company code, ledger, or fiscal year? What is the impact of cost of goods sold (COGS) adjustments on the recognized costs? How do different account assignment types affect the financial outcomes of projects? What are the financial details associated with specific profit centers or origin profit centers? How do the financial metrics align with specific project profiles or billing elements? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Origin Profit Center on Project - Query
   - Origin Profit Center on Project - Query
   - Origin Profit Center on Project - Query
 tags:
   - CO
-  - bo:companycode
+  - account
+  - billing
+  - bo:billingdocument
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
@@ -27,7 +29,7 @@ tags:
 ---
 # C_ORIGNPRFTCTRONPROJQRY
 
-**Origin Profit Center on Project - Query**
+**This CDS view is designed to provide an analytical query for analyzing financial data related to projects, specifically focusing on the origin profit center. It is intended for consumption in analytical applications and provides a comprehensive overview of project-related financial metrics, such as recognized revenue, costs, and margins. This CDS view provides the data to answer the following business questions: What is the recognized revenue and cost for a specific project or set of projects? How does the margin percentage compare across different projects or fiscal periods? What are the billed revenues and work-in-progress amounts for projects? How do the financial metrics vary by company code, ledger, or fiscal year? What is the impact of cost of goods sold (COGS) adjustments on the recognized costs? How do different account assignment types affect the financial outcomes of projects? What are the financial details associated with specific profit centers or origin profit centers? How do the financial metrics align with specific project profiles or billing elements? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

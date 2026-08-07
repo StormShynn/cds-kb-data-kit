@@ -1,17 +1,17 @@
 ---
 name: C_CSHFLWINDRCTBSDONACCTTYPE
-description: Cash Flow Statement with Net Income from G/L Account Type
+description: This CDS view is designed to generate a cash flow statement using the indirect method, based on general ledger account types. It provides a detailed breakdown of cash flows from operating, investing, and financing activities, along with adjustments for non-cash transactions and changes in assets and liabilities. This CDS view provides the data to answer the following business questions: What is the cash flow from operating activities, including net income and adjustments for non-cash transactions? How do changes in assets and liabilities affect the cash flow from operating activities? What is the cash flow from investing activities, including purchases and sales of fixed and intangible assets? How do long-term investments impact the cash flow from investing activities? What is the cash flow from financing activities, including changes in common stocks and borrowings? What is the net cash flow for the period, combining operating, investing, and financing activities? How does the net cash flow compare to the cash and cash equivalents at the end of the period for validation purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FI-FIO-GL-HIE-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CSHFLWINDRCTBSDONACCTTYPE')/$value
-semantic_en: Cash Flow Statement with Net Income from G/L Account Type
+semantic_en: This CDS view is designed to generate a cash flow statement using the indirect method, based on general ledger account types. It provides a detailed breakdown of cash flows from operating, investing, and financing activities, along with adjustments for non-cash transactions and changes in assets and liabilities. This CDS view provides the data to answer the following business questions: What is the cash flow from operating activities, including net income and adjustments for non-cash transactions? How do changes in assets and liabilities affect the cash flow from operating activities? What is the cash flow from investing activities, including purchases and sales of fixed and intangible assets? How do long-term investments impact the cash flow from investing activities? What is the cash flow from financing activities, including changes in common stocks and borrowings? What is the net cash flow for the period, combining operating, investing, and financing activities? How does the net cash flow compare to the cash and cash equivalents at the end of the period for validation purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - FI
   - account
-  - bo:salesorganization
+  - bo:companycode
   - component:FI-FIO-GL-HIE-2CL
   - consumption-view
   - FI-FIO
@@ -19,11 +19,13 @@ tags:
   - FI-FIO-GL-HIE
   - FI-FIO-GL-HIE-2CL
   - lob:finance
+  - stock
+  - transaction
   - metadata-only
 ---
 # C_CSHFLWINDRCTBSDONACCTTYPE
 
-**Cash Flow Statement with Net Income from G/L Account Type**
+**This CDS view is designed to generate a cash flow statement using the indirect method, based on general ledger account types. It provides a detailed breakdown of cash flows from operating, investing, and financing activities, along with adjustments for non-cash transactions and changes in assets and liabilities. This CDS view provides the data to answer the following business questions: What is the cash flow from operating activities, including net income and adjustments for non-cash transactions? How do changes in assets and liabilities affect the cash flow from operating activities? What is the cash flow from investing activities, including purchases and sales of fixed and intangible assets? How do long-term investments impact the cash flow from investing activities? What is the cash flow from financing activities, including changes in common stocks and borrowings? What is the net cash flow for the period, combining operating, investing, and financing activities? How does the net cash flow compare to the cash and cash equivalents at the end of the period for validation purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

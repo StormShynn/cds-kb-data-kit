@@ -238,6 +238,7 @@ tags:
 | `PersonnelNumber` |  | |  |  | `NUMC(8)` | Personnel Number |
 | `ControllingObjectClass` |  | |  |  | `CHAR(2)` | Controlling Object Class |
 | `OriginCostCenter` |  | |  |  | `CHAR(10)` | Origin Cost Center |
+| `OriginProfitCenter` |  | |  |  | `CHAR(10)` | Origin Profit Center |
 | `OriginCostCtrActivityType` |  | |  |  | `CHAR(6)` | Origin Cost Center Activity Type |
 | `AccountAssignment` |  | |  |  | `CHAR(30)` | Account Assignment |
 | `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |

@@ -60,5 +60,5 @@ tags:
 | `SalesQuotationConversionRate` |  | |  |  | `DEC(7)` | Sales Quotation Conversion Rate |
 | `SlsQtanPeriodElapsedPercent` |  | |  |  | `DEC(9)` | Sales Quotation Period Elapsed Percent |
 | `SlsQtanPeriodDueDays` |  | |  |  | `INT4(10)` | Days Before Expiry of Quotation |
-| `PrdtvSlsQtanCnvrsnAmtInDspCrcy` |  | |  |  | `CURR(19)` | Predicted Order Value in Display Currency |
-| `PrdtvSlsQtanCnvrsnRate` |  | |  |  | `DEC(7)` | Predicted Sales Quotation Conversion Rate |
+| `PrdtvSlsQtanCnvrsnAmtInDspCrcy` |  | |  |  | `CURR(19)` | Predicted Order Value in Display Currency (Deprecated) |
+| `PrdtvSlsQtanCnvrsnRate` |  | |  |  | `DEC(7)` | Predicted Sales Quotation Conversion Rate (Deprecated) |

@@ -5,21 +5,11 @@ app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDP')/$value
 semantic_en: Condition Contract
-semantic_vi: Condition Contract — CDS view tiêu dùng dựa trên R_ConditionContract.
 keywords:
   - Condition Contract
-  - condition
-  - contract
-  - cndn
-  - contr
-  - type
-  - classfctn
-  - proc
-  - document
-  - reference
 tags:
   - LO
   - component:LO-GT-CHB
@@ -28,6 +18,7 @@ tags:
   - LO-GT
   - LO-GT-CHB
   - lob:logistics general
+  - metadata-only
 ---
 # C_CONDITIONCONTRACTDP
 
@@ -39,13 +30,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDP')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDP')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ConditionContract` | ✓ | |  |  | `CHAR(10)` | Condition Contract |
+| `ConditionContract` |  | |  |  | `CHAR(10)` | Condition Contract |
 | `CndnContrType` |  | |  |  | `CHAR(4)` | Condition Contract Type |
 | `CndnContrClassfctnType` |  | |  |  | `CHAR(2)` | Condition Contract Category |
 | `CndnContrProcVar` |  | |  |  | `CHAR(4)` | Condition Contract Process Variant |
@@ -96,7 +87,7 @@ tags:
 | `DeltaAccrualSettlmtCalendar` |  | |  |  | `CHAR(2)` | Calendar for Delta Accruals Settlement |
 | `AccrualClearingSettlmtCalendar` |  | |  |  | `CHAR(2)` | Calendar for Accruals Deferral Settlement |
 | `CndnContrExtensionCalendar` |  | |  |  | `CHAR(2)` | Calendar for Condition Contract Extension |
-| `PrecedingConditionContract` |  | |  | `PrecedingConditionDocument` | `CHAR(10)` | Predecessor Condition Contract |
+| `PrecedingConditionContract` |  | |  |  | `CHAR(10)` | Predecessor Condition Contract |
 | `CndnContrPurposeCat` |  | |  |  | `CHAR(2)` | Condition Contract Purpose Category |
 | `CndnContrSourceDocCat` |  | |  |  | `CHAR(2)` | External Reference Document Category |
 | `CndnContrSourceDoc` |  | |  |  | `CHAR(32)` | External Reference |
@@ -121,212 +112,3 @@ tags:
 | `CndnContrProcessCategory` |  | |  |  | `CHAR(2)` | Process Category of a Condition Contract |
 | `CndnContrPartnerCat` |  | |  |  | `CHAR(2)` | Type of Business Partner for Condition Contract |
 | `CndnContrSettlmtType` |  | |  |  | `CHAR(1)` | Conditon Contract Settlement Type |
-| `_CndnContrSettlmtCal` | | ✓ | | | | |
-| `_CndnContrBusVolSelCriteria` | | ✓ | | | | |
-
-## Associations
-
-| Alias | Target View | Cardinality |
-|---|---|---|
-| `_CndnContrSettlmtCal` | `C_CndnContrSettlmtCalDP` | [0..*] |
-| `_CndnContrBusVolSelCriteria` | `C_CndnContrBusVolSelCriteriaDP` | [0..*] |
-| `_Extension` | `E_ConditionContract` | [1..1] |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDP')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDP')/$value)*
-
-```abap
-@EndUserText.label: 'Condition Contract'
-@AccessControl: {
-  authorizationCheck: #PRIVILEGED_ONLY,
-  personalData.blocking: #('TRANSACTIONAL_DATA'),
-  privilegedAssociations: [
-    '_CndnContrSettlmtCal',
-    '_CndnContrBusVolSelCriteria'
-  ]
-}
-@ObjectModel: {
-  modelingPattern: #NONE,
-  sapObjectNodeType.name: 'ConditionContract',
-  supportedCapabilities: [#EXTRACTION_DATA_SOURCE],
-  usageType: {
-    serviceQuality: #A,
-    dataClass: #TRANSACTIONAL,
-    sizeCategory: #XXL
-  }
-}
-@Analytics.dataExtraction.enabled: true
-@VDM.viewType: #CONSUMPTION
-@Metadata: {
-  ignorePropagatedAnnotations: true,
-  allowExtensions: false
-}
-
-define view entity C_ConditionContractDP
-  as select from R_ConditionContract
-
-  association [0..*] to C_CndnContrSettlmtCalDP        as _CndnContrSettlmtCal        on $projection.ConditionContract = _CndnContrSettlmtCal.ConditionContract
-  association [0..*] to C_CndnContrBusVolSelCriteriaDP as _CndnContrBusVolSelCriteria on $projection.ConditionContract = _CndnContrBusVolSelCriteria.ConditionContract
-
-  association [1..1] to E_ConditionContract            as _Extension                  on $projection.ConditionContract = _Extension.ConditionContract
-
-{
-  key ConditionContract,
-
-      CndnContrType,
-
-      CndnContrClassfctnType,
-
-      CndnContrProcVar,
-
-      DocumentReferenceID,
-
-      CndnContrAssgmtRef,
-
-      ExternalDocumentReferenceID,
-
-      CndnContrExternalPartner,
-
-      CndnContrActvtnStatus,
-
-      CndnContrValidFrom,
-
-      CndnContrValidTo,
-
-      Supplier,
-
-      Customer,
-
-      PriorSupplier,
-
-      CompanyCode,
-
-      PurchasingOrganization,
-
-      PurchasingGroup,
-
-      SalesOrganization,
-
-      DistributionChannel,
-
-      Division,
-
-      SalesGroup,
-
-      SalesOffice,
-
-      CreatedByUser,
-
-      CreationDate,
-
-      CreationTime,
-
-      CreationTimeZone,
-
-      CreationUTCDateTime,
-
-      LastChangedByUser,
-
-      LastChangedDate,
-
-      LastChangeTime,
-
-      LastChangeUTCDateTime,
-
-      CndnContrCurrency,
-
-      ExchangeRateType,
-
-      ExchangeRate,
-
-      ExchangeRateDate,
-
-      PaymentTerms,
-
-      CashDiscount1Days,
-
-      CashDiscount1Percent,
-
-      CashDiscount2Days,
-
-      CashDiscount2Percent,
-
-      NetPaymentDays,
-
-      PaymentMethod,
-
-      CndnContrSuplrSettlmtCat,
-
-      CndnContrCustSettlmtCat,
-
-      SettlmtProduct,
-
-      FinalSettlmtCalendar,
-
-      PartialSettlmtCalendar,
-
-      DeltaSettlmtCalendar,
-
-      DeltaAccrualSettlmtCalendar,
-
-      AccrualClearingSettlmtCalendar,
-
-      CndnContrExtensionCalendar,
-
-      PrecedingConditionDocument          as PrecedingConditionContract,
-
-      CndnContrPurposeCat,
-
-      CndnContrSourceDocCat,
-
-      CndnContrSourceDoc,
-
-      CndnContrSourceDocItem,
-
-      BusVolTableGroup,
-
-      AmountFieldGroup,
-
-      CndnContrUnit,
-
-      CndnContrWeightUnit,
-
-      CndnContrVolumeUnit,
-
-      CndnContrPointsQtyUnit,
-
-      AccrualUpdateIsRequired,
-
-      CndnContrUUID,
-
-      CndnContrSourceUUID,
-
-      SettlmtPartTxRegnNmbr,
-
-      TaxCountry,
-
-      SettlmtPartTxRegnCntry,
-
-      CndnContrPrcgDetnRlvnceCat,
-
-      CndnContrWorkerCostCenter,
-
-      CndnContrWorkerSettlmtCat,
-
-      DataController,
-
-      CndnContrSemanticCode,
-
-      CndnContrProcessCategory,
-
-      CndnContrPartnerCat,
-
-      CndnContrSettlmtType,
-
-      /* Associations */
-      _CndnContrSettlmtCal,
-      _CndnContrBusVolSelCriteria
-
-}
-```

@@ -5,21 +5,9 @@ app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDEX')/$value
 semantic_en: This CDS view is used for data extraction to SAP BW/4HANA. It enables the data transfer to SAP BW/4HANA for condition contracts. Providing all relevant information for condition contracts, this CDS view allows you to build analytical reports. This CDS view provides the data to answer the following business question: Which condition contracts are relevant for data extraction to SAP BW/4HANA? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
-semantic_vi: Condition Contract Extraction — CDS view tiêu dùng dựa trên R_ConditionContractDEX.
-keywords:
-  - condition
-  - contract
-  - extraction
-  - cndn
-  - contr
-  - type
-  - classfctn
-  - proc
-  - document
-  - reference
 tags:
   - LO
   - bo:companycode
@@ -29,6 +17,7 @@ tags:
   - LO-GT
   - LO-GT-CHB
   - lob:logistics general
+  - metadata-only
 ---
 # C_CONDITIONCONTRACTDEX
 
@@ -40,13 +29,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDEX')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ConditionContract` | ✓ | |  |  | `CHAR(10)` | Condition Contract |
+| `ConditionContract` |  | |  |  | `CHAR(10)` | Condition Contract |
 | `CndnContrType` |  | |  |  | `CHAR(4)` | Condition Contract Type |
 | `CndnContrClassfctnType` |  | |  |  | `CHAR(2)` | Condition Contract Category |
 | `CndnContrProcVar` |  | |  |  | `CHAR(4)` | Condition Contract Process Variant |
@@ -98,7 +87,7 @@ tags:
 | `DeltaAccrualSettlmtCalendar` |  | |  |  | `CHAR(2)` | Calendar for Delta Accruals Settlement |
 | `AccrualClearingSettlmtCalendar` |  | |  |  | `CHAR(2)` | Calendar for Accruals Deferral Settlement |
 | `CndnContrExtensionCalendar` |  | |  |  | `CHAR(2)` | Calendar for Condition Contract Extension |
-| `PrecedingConditionContract` |  | |  | `PrecedingConditionDocument` | `CHAR(10)` | Predecessor Condition Contract |
+| `PrecedingConditionContract` |  | |  |  | `CHAR(10)` | Predecessor Condition Contract |
 | `CndnContrPurposeCat` |  | |  |  | `CHAR(2)` | Condition Contract Purpose Category |
 | `CndnContrSourceDocCat` |  | |  |  | `CHAR(2)` | External Reference Document Category |
 | `CndnContrSourceDoc` |  | |  |  | `CHAR(32)` | External Reference |
@@ -116,132 +105,3 @@ tags:
 | `BasicConditionContract` |  | |  |  | `CHAR(10)` | Basic Contract of Contract |
 | `CndnContrWorkerCostCenter` |  | |  |  | `CHAR(10)` | Worker Cost Center |
 | `CndnContrSemanticCode` |  | |  |  | `NUMC(4)` | Semantic Type |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CONDITIONCONTRACTDEX')/$value)*
-
-```abap
-@EndUserText.label: 'Condition Contract Extraction'
-@AccessControl: {
-    authorizationCheck:      #MANDATORY,
-    personalData.blocking:   #('TRANSACTIONAL_DATA')
-    }
-@ObjectModel: {
-    modelingPattern:#ANALYTICAL_FACT,
-    supportedCapabilities: [#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE],
-    sapObjectNodeType.name: 'ConditionContract',
-    usageType: {
-       dataClass:      #MIXED,
-       serviceQuality: #D,
-       sizeCategory:   #XXL 
-       } 
-    }
-@Analytics: {
-    dataCategory: #FACT,
-    dataExtraction: {
-        enabled: true,
-        delta: {
-              changeDataCapture: {
-                  mapping:[
-                      {
-                          table: 'wcocoh', role: #MAIN,
-                          viewElement: ['ConditionContract'],
-                          tableElement: ['num']
-                      }
-                      ]
-                }
-            }
-        }
-    }
-@VDM.viewType: #CONSUMPTION
-@Metadata: {
-    ignorePropagatedAnnotations: true,
-    allowExtensions: false
-    }
-
-define view entity C_ConditionContractDEX
-  as select from R_ConditionContractDEX as ConditionContractDEX
-{
-  key ConditionContract,
-      ConditionContractDEX.CndnContrType,
-      ConditionContractDEX.CndnContrClassfctnType,
-      ConditionContractDEX.CndnContrProcVar,
-      ConditionContractDEX.DocumentReferenceID,
-      ConditionContractDEX.CndnContrAssgmtRef,
-      ConditionContractDEX.ExternalDocumentReferenceID,
-      ConditionContractDEX.CndnContrExternalPartner,
-      ConditionContractDEX.CndnContrActvtnStatus,
-      ConditionContractDEX.CndnContrValidFrom,
-      ConditionContractDEX.CndnContrValidTo,
-      ConditionContractDEX.Supplier,
-      ConditionContractDEX.Customer,
-      ConditionContractDEX.PriorSupplier,
-      ConditionContractDEX.PersonWorkAgreement,
-      ConditionContractDEX.CompanyCode,
-      ConditionContractDEX.PurchasingOrganization,
-      ConditionContractDEX.PurchasingGroup,
-      ConditionContractDEX.SalesOrganization,
-      ConditionContractDEX.DistributionChannel,
-      ConditionContractDEX.Division,
-      ConditionContractDEX.SalesGroup,
-      ConditionContractDEX.SalesOffice,
-      ConditionContractDEX.CreatedByUser,
-      ConditionContractDEX.CreationDate,
-      ConditionContractDEX.CreationTime,
-      ConditionContractDEX.CreationTimeZone,
-      ConditionContractDEX.CreationUTCDateTime,
-      ConditionContractDEX.LastChangedByUser,
-      ConditionContractDEX.LastChangedDate,
-      ConditionContractDEX.LastChangeTime,
-      ConditionContractDEX.LastChangeUTCDateTime,
-      ConditionContractDEX.CndnContrCurrency,
-      ConditionContractDEX.ExchangeRate,
-      ConditionContractDEX.ExchangeRateType,
-      ConditionContractDEX.ExchangeRateDate,
-      ConditionContractDEX.PaymentTerms,
-      ConditionContractDEX.CashDiscount1Days,
-      ConditionContractDEX.CashDiscount1Percent,
-      ConditionContractDEX.CashDiscount2Days,
-      ConditionContractDEX.CashDiscount2Percent,
-      ConditionContractDEX.NetPaymentDays,
-      ConditionContractDEX.PaymentMethod,
-      ConditionContractDEX.CndnContrSuplrSettlmtCat,
-      ConditionContractDEX.CndnContrCustSettlmtCat,
-      ConditionContractDEX.SettlmtProduct,
-      ConditionContractDEX.FinalSettlmtCalendar,
-      ConditionContractDEX.PartialSettlmtCalendar,
-      ConditionContractDEX.DeltaSettlmtCalendar,
-      ConditionContractDEX.DeltaAccrualSettlmtCalendar,
-      ConditionContractDEX.AccrualClearingSettlmtCalendar,
-      ConditionContractDEX.CndnContrExtensionCalendar,
-      ConditionContractDEX.PrecedingConditionDocument as PrecedingConditionContract,
-      ConditionContractDEX.CndnContrPurposeCat,
-      ConditionContractDEX.CndnContrSourceDocCat,
-      ConditionContractDEX.CndnContrSourceDoc,
-      ConditionContractDEX.CndnContrSourceDocItem,
-      ConditionContractDEX.BusVolTableGroup,
-      ConditionContractDEX.AmountFieldGroup,
-      ConditionContractDEX.CndnContrUnit,
-      ConditionContractDEX.CndnContrWeightUnit,
-      ConditionContractDEX.CndnContrVolumeUnit,
-      ConditionContractDEX.CndnContrPointsQtyUnit,
-      ConditionContractDEX.AccrualUpdateIsRequired,
-      ConditionContractDEX.TaxCountry,
-      ConditionContractDEX.SettlmtPartTxRegnCntry,
-      ConditionContractDEX.SettlmtPartTxRegnNmbr,
-      ConditionContractDEX.BasicConditionContract,
-      ConditionContractDEX.CndnContrWorkerCostCenter,
-      ConditionContractDEX.CndnContrSemanticCode,
-
-      /* Associations */
-      @Consumption.hidden: true
-      ConditionContractDEX._Customer,
-      @Consumption.hidden: true
-      ConditionContractDEX._Supplier,
-      @Consumption.hidden: true
-      ConditionContractDEX._PriorSupplier,
-      @Consumption.hidden: true
-      ConditionContractDEX._PersonWorkAgreement
-}
-```

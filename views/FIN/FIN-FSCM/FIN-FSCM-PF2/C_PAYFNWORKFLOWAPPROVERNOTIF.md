@@ -1,7 +1,7 @@
 ---
 name: C_PAYFNWORKFLOWAPPROVERNOTIF
 description: Flex Workflow Approval Notification
-app_component: FIN-FSCM-PF2
+app_component: FIN-FSCM-PF2-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
@@ -11,10 +11,11 @@ semantic_en: Flex Workflow Approval Notification
 tags:
   - FIN
   - bo:companycode
-  - component:FIN-FSCM-PF2
+  - component:FIN-FSCM-PF2-2CL
   - consumption-view
   - FIN-FSCM
   - FIN-FSCM-PF2
+  - FIN-FSCM-PF2-2CL
   - lob:finance
   - notification
   - metadata-only
@@ -25,7 +26,7 @@ tags:
 
 | Property | Value |
 |---|---|
-| App Component | `FIN-FSCM-PF2` |
+| App Component | `FIN-FSCM-PF2-2CL` |
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |

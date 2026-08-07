@@ -1,13 +1,13 @@
 ---
 name: I_BPCOCODECOMPANYRELSHPVH
-description: Company Relationship of Business Partner in CoCode
+description: Company Relationship of BP in CoCode
 app_component: FS-BP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPCOCODECOMPANYRELSHPVH')/$value
-semantic_en: Company Relationship of Business Partner in CoCode
+semantic_en: Company Relationship of BP in CoCode
 tags:
   - FS
   - bo:businesspartner
@@ -18,7 +18,7 @@ tags:
 ---
 # I_BPCOCODECOMPANYRELSHPVH
 
-**Company Relationship of Business Partner in CoCode**
+**Company Relationship of BP in CoCode**
 
 | Property | Value |
 |---|---|

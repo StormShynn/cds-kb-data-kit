@@ -1,16 +1,16 @@
 ---
 name: I_BANKPOWEROFATTORNEY
-description: POA for Banking Transactions
+description: This CDS view provides the header data of powers of attorney for banking transactions as well as the creation and change data. This CDS view provides the data to answer the following business questions: Which powers of attorney for banking transactions exist? Which payment approval rule is assigned to the power of attorney for banking transactions? What is the validity period of a power of attorney for banking transactions? Who created the power of attorney for banking transactions? When was the power of attorney for banking transactions created? By whom and when was the power of attorney for banking transactions last changed? Is a power of attorney for banking transactions blocked? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FIN-FSCM-CLM-BAM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BANKPOWEROFATTORNEY')/$value
-semantic_en: POA for Banking Transactions
+semantic_en: This CDS view provides the header data of powers of attorney for banking transactions as well as the creation and change data. This CDS view provides the data to answer the following business questions: Which powers of attorney for banking transactions exist? Which payment approval rule is assigned to the power of attorney for banking transactions? What is the validity period of a power of attorney for banking transactions? Who created the power of attorney for banking transactions? When was the power of attorney for banking transactions created? By whom and when was the power of attorney for banking transactions last changed? Is a power of attorney for banking transactions blocked? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - FIN
-  - bo:purchaseorder
+  - bo:companycode
   - component:FIN-FSCM-CLM-BAM-2CL
   - FIN-FSCM
   - FIN-FSCM-CLM
@@ -18,12 +18,13 @@ tags:
   - FIN-FSCM-CLM-BAM-2CL
   - interface-view
   - lob:finance
+  - payment
   - transaction
   - metadata-only
 ---
 # I_BANKPOWEROFATTORNEY
 
-**POA for Banking Transactions**
+**This CDS view provides the header data of powers of attorney for banking transactions as well as the creation and change data. This CDS view provides the data to answer the following business questions: Which powers of attorney for banking transactions exist? Which payment approval rule is assigned to the power of attorney for banking transactions? What is the validity period of a power of attorney for banking transactions? Who created the power of attorney for banking transactions? When was the power of attorney for banking transactions created? By whom and when was the power of attorney for banking transactions last changed? Is a power of attorney for banking transactions blocked? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

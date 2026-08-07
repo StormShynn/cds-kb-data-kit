@@ -61,7 +61,7 @@ tags:
 | `CustomerClassificationDesc` |  | |  |  | `CHAR(20)` | Customer Classification Description |
 | `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
 | `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
-| `NumberOfOpenItems` |  | |  |  | `INT4(10)` | Number of Open Items |
+| `NumberOfOpenItems` |  | |  |  | `INT4(10)` | Number of Items |
 | `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `TotalOverdueAmtInDspCrcy` |  | |  |  | `CURR(23)` | Overdue Amount in Display Currency |
 | `TotalNotOvrdAmtInDspCrcy` |  | |  |  | `CURR(23)` | Not Overdue Amount in Display Currency |

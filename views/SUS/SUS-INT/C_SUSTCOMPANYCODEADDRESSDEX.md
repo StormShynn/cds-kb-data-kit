@@ -1,13 +1,13 @@
 ---
 name: C_SUSTCOMPANYCODEADDRESSDEX
-description: This CDS view is used by SAP Product Footprint Management for the data extraction of a relevant company code address. This view provides the necessary address detail data based on the company code.
+description: This CDS view is used by Product Footprint Management for the data extraction of a relevant company code address. This view provides the necessary address detail data based on the company code.
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUSTCOMPANYCODEADDRESSDEX')/$value
-semantic_en: This CDS view is used by SAP Product Footprint Management for the data extraction of a relevant company code address. This view provides the necessary address detail data based on the company code.
+semantic_en: This CDS view is used by Product Footprint Management for the data extraction of a relevant company code address. This view provides the necessary address detail data based on the company code.
 tags:
   - SUS
   - bo:material
@@ -19,7 +19,7 @@ tags:
 ---
 # C_SUSTCOMPANYCODEADDRESSDEX
 
-**This CDS view is used by SAP Product Footprint Management for the data extraction of a relevant company code address. This view provides the necessary address detail data based on the company code.**
+**This CDS view is used by Product Footprint Management for the data extraction of a relevant company code address. This view provides the necessary address detail data based on the company code.**
 
 | Property | Value |
 |---|---|

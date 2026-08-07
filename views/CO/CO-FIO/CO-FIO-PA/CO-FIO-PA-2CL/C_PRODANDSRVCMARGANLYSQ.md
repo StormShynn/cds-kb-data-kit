@@ -1,29 +1,39 @@
 ---
 name: C_PRODANDSRVCMARGANLYSQ
-description: Product and Service Margins - Qry
+description: This CDS view is designed to provide analytical insights into product and service margins by aggregating and projecting financial data related to revenues, costs, and margins. It is intended for use in analytical queries to assess financial performance across various dimensions such as company code, fiscal year, profit center, and more. This CDS view provides the data to answer the following business questions: What are the recognized revenues and costs for products and services in a specific company code and fiscal year? How do the margins for products and services vary across different profit centers and sales organizations? What is the impact of sales deductions and revenue adjustments on the overall financial performance? How do accrued and deferred revenues and costs affect the financial statements? What are the reserves for imminent losses, sales deductions, and unrealized costs? How does the margin percentage compare across different products, customer groups, and sales districts? What are the financial implications of business solution orders, service contracts, and sales orders on margins? How do different account assignment types and ledger entries influence the product and service margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PRODANDSRVCMARGANLYSQ')/$value
-semantic_en: Product and Service Margins - Qry
+semantic_en: This CDS view is designed to provide analytical insights into product and service margins by aggregating and projecting financial data related to revenues, costs, and margins. It is intended for use in analytical queries to assess financial performance across various dimensions such as company code, fiscal year, profit center, and more. This CDS view provides the data to answer the following business questions: What are the recognized revenues and costs for products and services in a specific company code and fiscal year? How do the margins for products and services vary across different profit centers and sales organizations? What is the impact of sales deductions and revenue adjustments on the overall financial performance? How do accrued and deferred revenues and costs affect the financial statements? What are the reserves for imminent losses, sales deductions, and unrealized costs? How does the margin percentage compare across different products, customer groups, and sales districts? What are the financial implications of business solution orders, service contracts, and sales orders on margins? How do different account assignment types and ledger entries influence the product and service margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+keywords:
+  - Product and Service Margins - Qry
+  - Product and Service Margins - Qry
+  - Product and Service Margins - Qry
 tags:
   - CO
-  - bo:material
+  - account
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
+  - contract
+  - customer
   - lob:controlling
   - lob:finance
+  - order
   - product
+  - project
+  - sales-order
   - metadata-only
 ---
 # C_PRODANDSRVCMARGANLYSQ
 
-**Product and Service Margins - Qry**
+**This CDS view is designed to provide analytical insights into product and service margins by aggregating and projecting financial data related to revenues, costs, and margins. It is intended for use in analytical queries to assess financial performance across various dimensions such as company code, fiscal year, profit center, and more. This CDS view provides the data to answer the following business questions: What are the recognized revenues and costs for products and services in a specific company code and fiscal year? How do the margins for products and services vary across different profit centers and sales organizations? What is the impact of sales deductions and revenue adjustments on the overall financial performance? How do accrued and deferred revenues and costs affect the financial statements? What are the reserves for imminent losses, sales deductions, and unrealized costs? How does the margin percentage compare across different products, customer groups, and sales districts? What are the financial implications of business solution orders, service contracts, and sales orders on margins? How do different account assignment types and ledger entries influence the product and service margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -103,3 +113,14 @@ tags:
 | `MnlContrAccrPnLItmAmtInDspCrcy` |  | |  |  | `CURR(23)` | Manual Contract Accruals Income Statement in Display Crcy |
 | `DownPaymentAmountInDspCrcy` |  | |  |  | `CURR(23)` | Open Down Payment Amount in Display Currency |
 | `MarginInPct` |  | |  |  | `DECF(34)` |  |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
+| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `MarketingOvhdAmtInDspCrcy` |  | |  |  | `CURR(23)` | Marketing Overhead |
+| `SalesOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | Sales Overhead |
+| `AdminOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | Administration Overhead |
+| `RnDOverheadAmtInDspCrcy` |  | |  |  | `CURR(23)` | Research and Development Overhead |

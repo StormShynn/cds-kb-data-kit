@@ -1,18 +1,19 @@
 ---
 name: C_MDQANLYTSSCRCUSTQ
-description: MDQ Score for Customer - Query
+description: This CDS view helps to retrieve the results of quality evaluations and master data scores for customer general data. You can analyze the data using master data attributes, for example, country or customer account group, to identify any issues and improve the data. This CDS view provides the data to answer the following business questions: What is the quality score of my customer general data? Which data is compliant with or violating specific validation rules? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQANLYTSSCRCUSTQ')/$value
-semantic_en: MDQ Score for Customer - Query
+semantic_en: This CDS view helps to retrieve the results of quality evaluations and master data scores for customer general data. You can analyze the data using master data attributes, for example, country or customer account group, to identify any issues and improve the data. This CDS view provides the data to answer the following business questions: What is the quality score of my customer general data? Which data is compliant with or violating specific validation rules? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - MDQ Score for Customer
   - MDQ Score for Customer
 tags:
   - CA
+  - account
   - bo:businesspartner
   - CA-MDG
   - CA-MDG-ADQ
@@ -20,11 +21,12 @@ tags:
   - consumption-view
   - customer
   - lob:cross_application components
+  - master-data
   - metadata-only
 ---
 # C_MDQANLYTSSCRCUSTQ
 
-**MDQ Score for Customer - Query**
+**This CDS view helps to retrieve the results of quality evaluations and master data scores for customer general data. You can analyze the data using master data attributes, for example, country or customer account group, to identify any issues and improve the data. This CDS view provides the data to answer the following business questions: What is the quality score of my customer general data? Which data is compliant with or violating specific validation rules? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -63,7 +65,7 @@ tags:
 | `MDQltyBusinessRuleBaseTabName` |  | |  |  | `CHAR(80)` | Alias of a table |
 | `MDQltyBusinessRuleOwner` |  | |  |  | `CHAR(12)` | Master Data Quality Business Rule Owner |
 | `MDQltyBusRuleCheckedField` |  | |  |  | `CHAR(30)` | Master Data Quality Fieldname of the Checked Field |
-| `MDQltyBusRuleCheckedFieldTable` |  | |  |  | `CHAR(30)` | Maste Data Quality Table Name of Checked Field |
+| `MDQltyBusRuleCheckedFieldTable` |  | |  |  | `CHAR(30)` | Name of Table with Checked Field |
 | `MDQltyBusRuleChkdFieldAndTable` |  | |  |  | `CHAR(61)` | Master Data Quality Table and Field Name of Checked Field |
 | `MDQltyBusRuleEvalResultCode` |  | |  |  | `CHAR(1)` | Master Data Quality Rule Evaluation Result Type |
 | `MDQualityBusinessRule` |  | |  |  | `CHAR(26)` | Master Data Quality Rule Definition ID |

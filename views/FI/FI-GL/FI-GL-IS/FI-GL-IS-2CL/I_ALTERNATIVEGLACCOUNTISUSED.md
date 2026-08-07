@@ -1,13 +1,13 @@
 ---
 name: I_ALTERNATIVEGLACCOUNTISUSED
-description: Alternative General Ledger Account Is Used
+description: Alternative GL Account Is Used
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ALTERNATIVEGLACCOUNTISUSED')/$value
-semantic_en: Alternative General Ledger Account Is Used
+semantic_en: Alternative GL Account Is Used
 tags:
   - FI
   - account
@@ -21,7 +21,7 @@ tags:
 ---
 # I_ALTERNATIVEGLACCOUNTISUSED
 
-**Alternative General Ledger Account Is Used**
+**Alternative GL Account Is Used**
 
 | Property | Value |
 |---|---|

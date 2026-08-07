@@ -1,27 +1,32 @@
 ---
 name: C_COLLECTIONSMCHNLRNGINFERENCE
-description: Collections Machine Learning Inference
+description: This CDS view provide insights into SAP Collections Management and SAP Credit Management by leveraging machine learning inference data. It integrates various financial and operational metrics related to accounting documents, customer behavior, and payment patterns, allowing businesses to analyze and predict credit risk and collection efficiency. This CDS view provides the data to answer the following business questions: What is the credit risk classification of customers based on historical payment behavior and current financial metrics? How do payment terms and net due dates affect the collection process and overdue amounts? What is the average delay in clearing payments, and how does it compare to previous periods (12 and 24 months ago)? How many accounting document items are overdue, and what is the total overdue amount in the target currency? What are the trends in dunning levels and clearing delays over time? How does the number of payments and clearing amounts in the target currency vary over different periods? What is the impact of country and customer account group on payment behavior and credit risk? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FIN-FSCM-COL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_COLLECTIONSMCHNLRNGINFERENCE')/$value
-semantic_en: Collections Machine Learning Inference
+semantic_en: This CDS view provide insights into SAP Collections Management and SAP Credit Management by leveraging machine learning inference data. It integrates various financial and operational metrics related to accounting documents, customer behavior, and payment patterns, allowing businesses to analyze and predict credit risk and collection efficiency. This CDS view provides the data to answer the following business questions: What is the credit risk classification of customers based on historical payment behavior and current financial metrics? How do payment terms and net due dates affect the collection process and overdue amounts? What is the average delay in clearing payments, and how does it compare to previous periods (12 and 24 months ago)? How many accounting document items are overdue, and what is the total overdue amount in the target currency? What are the trends in dunning levels and clearing delays over time? How does the number of payments and clearing amounts in the target currency vary over different periods? What is the impact of country and customer account group on payment behavior and credit risk? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - FIN
+  - account
+  - bo:businesspartner
   - component:FIN-FSCM-COL-2CL
   - consumption-view
+  - customer
+  - document
   - FIN-FSCM
   - FIN-FSCM-COL
   - FIN-FSCM-COL-2CL
   - lob:controlling
   - lob:finance
+  - payment
   - metadata-only
 ---
 # C_COLLECTIONSMCHNLRNGINFERENCE
 
-**Collections Machine Learning Inference**
+**This CDS view provide insights into SAP Collections Management and SAP Credit Management by leveraging machine learning inference data. It integrates various financial and operational metrics related to accounting documents, customer behavior, and payment patterns, allowing businesses to analyze and predict credit risk and collection efficiency. This CDS view provides the data to answer the following business questions: What is the credit risk classification of customers based on historical payment behavior and current financial metrics? How do payment terms and net due dates affect the collection process and overdue amounts? What is the average delay in clearing payments, and how does it compare to previous periods (12 and 24 months ago)? How many accounting document items are overdue, and what is the total overdue amount in the target currency? What are the trends in dunning levels and clearing delays over time? How does the number of payments and clearing amounts in the target currency vary over different periods? What is the impact of country and customer account group on payment behavior and credit risk? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

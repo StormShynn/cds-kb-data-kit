@@ -1,13 +1,13 @@
 ---
 name: I_AGRMTGUARANTEEAUTHAPPRVLTEXT
-description: Agreement Guarantee Authority Approval - Text
+description: Agrmt Guarantee Auth Approval - Text
 app_component: FS-CMS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_AGRMTGUARANTEEAUTHAPPRVLTEXT')/$value
-semantic_en: Agreement Guarantee Authority Approval - Text
+semantic_en: Agrmt Guarantee Auth Approval - Text
 tags:
   - FS
   - component:FS-CMS
@@ -17,7 +17,7 @@ tags:
 ---
 # I_AGRMTGUARANTEEAUTHAPPRVLTEXT
 
-**Agreement Guarantee Authority Approval - Text**
+**Agrmt Guarantee Auth Approval - Text**
 
 | Property | Value |
 |---|---|

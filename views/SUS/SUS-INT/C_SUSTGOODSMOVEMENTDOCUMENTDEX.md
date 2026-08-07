@@ -1,23 +1,25 @@
 ---
 name: C_SUSTGOODSMOVEMENTDOCUMENTDEX
-description: Goods Movement data extractor
+description: This CDS view is used by SAP sustainability applications (such as SAP Responsible Design and Production) for the data extraction of goods movement data. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: SUS-INT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_SUSTGOODSMOVEMENTDOCUMENTDEX')/$value
-semantic_en: Goods Movement data extractor
+semantic_en: This CDS view is used by SAP sustainability applications (such as SAP Responsible Design and Production) for the data extraction of goods movement data. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - SUS
+  - bo:companycode
   - component:SUS-INT
   - consumption-view
+  - product
   - SUS-INT
   - metadata-only
 ---
 # C_SUSTGOODSMOVEMENTDOCUMENTDEX
 
-**Goods Movement data extractor**
+**This CDS view is used by SAP sustainability applications (such as SAP Responsible Design and Production) for the data extraction of goods movement data. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -37,6 +39,7 @@ tags:
 | `MaterialDocumentKey4` |  | |  |  | `RAW(1)` | Key field 4 |
 | `MaterialDocumentKey5` |  | |  |  | `RAW(1)` | Key field 5 |
 | `MaterialDocumentKey6` |  | |  |  | `RAW(1)` | Key field 6 |
+| `MaterialDocumentRecordType` |  | |  |  | `CHAR(30)` | Record Type |
 | `MaterialDocumentYear` |  | |  |  | `NUMC(4)` | Material Document Year |
 | `MaterialDocument` |  | |  |  | `CHAR(10)` | Number of Material Document |
 | `MaterialDocumentItem` |  | |  |  | `NUMC(4)` | Material Document Item |
@@ -94,6 +97,8 @@ tags:
 | `MainProduct` |  | |  |  | `CHAR(40)` | Main Product |
 | `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
 | `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchaseOrderType` |  | |  |  | `CHAR(4)` | Purchase Order Type |
+| `PurchaseOrderSubtype` |  | |  |  | `CHAR(1)` | Control indicator for purchasing document type |
 | `ProjectNetwork` |  | |  |  | `CHAR(12)` | Network Number for Account Assignment |
 | `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
 | `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
@@ -114,6 +119,7 @@ tags:
 | `IssuingOrReceivingPlantRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
 | `SupplierCountry` |  | |  |  | `CHAR(3)` | Country/Region Key |
 | `SupplierRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `SupplierPlant` |  | |  |  | `CHAR(4)` | Plant (Own or External) |
 | `CustomerCountry` |  | |  |  | `CHAR(3)` | Country/Region Key |
 | `CustomerRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
 | `SoldToParty` |  | |  |  | `CHAR(10)` | Customer Number |
@@ -145,6 +151,7 @@ tags:
 | `StockChangeCategory` |  | |  |  | `CHAR(2)` | Stock Change Category |
 | `IsCrossPlantTransfer` |  | |  |  | `CHAR(1)` | Is Cross Plant Transfer |
 | `IncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms (Part 1) |
+| `IsConsumptionMovement` |  | |  |  | `CHAR(1)` | Is Consumption Movement |
 | `MaterialBaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
 | `EntryUnit` |  | |  |  | `UNIT(3)` | Unit of Entry |
 | `TotalGoodsMvtAmtInCCCrcy` |  | |  |  | `CURR(13)` | Amount in Local Currency |

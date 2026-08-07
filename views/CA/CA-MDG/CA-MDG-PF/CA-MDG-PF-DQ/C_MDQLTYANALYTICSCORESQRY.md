@@ -1,13 +1,13 @@
 ---
 name: C_MDQLTYANALYTICSCORESQRY
-description: This CDS view helps to retrieve master data quality scores based on validation rules. These rules are used to evaluate master data, to analyze incorrect data, and to correct identified master data issues. This CDS view provides the prerequisites for answering the following business questions: What is the average data quality of my master data? What is the score of the validation rules? What is the average quality score of the defined categories and dimensions?
+description: This CDS view helps to retrieve master data quality scores based on data quality business rules. These rules are used to evaluate master data, to analyze incorrect data, and to correct identified master data issues. This CDS view provides the prerequisites for answering the following business questions: What is the average data quality of my master data? What is the score of the data quality rules? What is the average quality score of the defined categories and dimensions?
 app_component: CA-MDG-PF-DQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_MDQLTYANALYTICSCORESQRY')/$value
-semantic_en: This CDS view helps to retrieve master data quality scores based on validation rules. These rules are used to evaluate master data, to analyze incorrect data, and to correct identified master data issues. This CDS view provides the prerequisites for answering the following business questions: What is the average data quality of my master data? What is the score of the validation rules? What is the average quality score of the defined categories and dimensions?
+semantic_en: This CDS view helps to retrieve master data quality scores based on data quality business rules. These rules are used to evaluate master data, to analyze incorrect data, and to correct identified master data issues. This CDS view provides the prerequisites for answering the following business questions: What is the average data quality of my master data? What is the score of the data quality rules? What is the average quality score of the defined categories and dimensions?
 tags:
   - CA
   - bo:businesspartner
@@ -22,7 +22,7 @@ tags:
 ---
 # C_MDQLTYANALYTICSCORESQRY
 
-**This CDS view helps to retrieve master data quality scores based on validation rules. These rules are used to evaluate master data, to analyze incorrect data, and to correct identified master data issues. This CDS view provides the prerequisites for answering the following business questions: What is the average data quality of my master data? What is the score of the validation rules? What is the average quality score of the defined categories and dimensions?**
+**This CDS view helps to retrieve master data quality scores based on data quality business rules. These rules are used to evaluate master data, to analyze incorrect data, and to correct identified master data issues. This CDS view provides the prerequisites for answering the following business questions: What is the average data quality of my master data? What is the score of the data quality rules? What is the average quality score of the defined categories and dimensions?**
 
 | Property | Value |
 |---|---|

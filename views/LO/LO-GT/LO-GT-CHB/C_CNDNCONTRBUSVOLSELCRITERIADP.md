@@ -5,24 +5,9 @@ app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNDNCONTRBUSVOLSELCRITERIADP')/$value
 semantic_en: Business Volume Selection Criteria
-semantic_vi: Business Volume Selection Criteria — CDS view tiêu dùng dựa trên R_CndnContrBusVolSelCriteria.
-keywords:
-  - business
-  - volume
-  - selection
-  - criteria
-  - condition
-  - contract
-  - cndn
-  - contr
-  - field
-  - combn
-  - type
-  - group
-  - sign
 tags:
   - LO
   - component:LO-GT-CHB
@@ -30,6 +15,7 @@ tags:
   - LO-GT
   - LO-GT-CHB
   - lob:logistics general
+  - metadata-only
 ---
 # C_CNDNCONTRBUSVOLSELCRITERIADP
 
@@ -41,14 +27,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNDNCONTRBUSVOLSELCRITERIADP')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNDNCONTRBUSVOLSELCRITERIADP')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ConditionContract` | ✓ | |  |  | `CHAR(10)` | Condition Contract |
-| `CndnContrBusVolUUID` | ✓ | |  |  | `RAW(16)` | Business Volume Selection UUID |
+| `ConditionContract` |  | |  |  | `CHAR(10)` | Condition Contract |
+| `CndnContrBusVolUUID` |  | |  |  | `RAW(16)` | Business Volume Selection UUID |
 | `BusVolFieldCombnType` |  | |  |  | `CHAR(4)` | Field Combination for Business Volume Selection |
 | `BusVolFldCombnGroup` |  | |  |  | `CHAR(2)` | Field Combination Group for Business Volume Selection in BVB |
 | `CndnContrBusVolSign` |  | |  |  | `CHAR(1)` | Status Including / Excluding |
@@ -100,144 +86,3 @@ tags:
 | `CustomerHierarchyRootNode` |  | |  |  | `CHAR(20)` | Customer Hierarchy Root Node ID (Hier ID) |
 | `CustomerHierarchyNodeID` |  | |  |  | `CHAR(40)` | Customer Hierarchy Node ID |
 | `CustomerHierarchyNodeType` |  | |  |  | `CHAR(30)` | Customer Hierarchy Node Type |
-| `_ConditionContract` | | ✓ | | | | |
-
-## Associations
-
-| Alias | Target View | Cardinality |
-|---|---|---|
-| `_ConditionContract` | `C_ConditionContractDP` | [1..1] |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNDNCONTRBUSVOLSELCRITERIADP')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CNDNCONTRBUSVOLSELCRITERIADP')/$value)*
-
-```abap
-@EndUserText.label: 'Business Volume Selection Criteria'
-
-@VDM.viewType: #CONSUMPTION
-@AccessControl: {
-  authorizationCheck: #PRIVILEGED_ONLY,
-  personalData.blocking: #('TRANSACTIONAL_DATA'),
-  privilegedAssociations: [
-    '_ConditionContract'
-  ]
-}
-@Analytics: {
-  technicalName: 'CBVSCDP',
-  dataExtraction.enabled: true
-}
-@ObjectModel: {
-  modelingPattern: #NONE,
-  sapObjectNodeType.name: 'BusVolSelectionCriteria',
-  supportedCapabilities: [#EXTRACTION_DATA_SOURCE],
-  usageType: {
-    serviceQuality: #A,
-    dataClass: #TRANSACTIONAL,
-    sizeCategory: #XXL
-  }
-}
-@Metadata: {
-  ignorePropagatedAnnotations: true,
-  allowExtensions: false
-}
-
-define view entity C_CndnContrBusVolSelCriteriaDP
-  as select from R_CndnContrBusVolSelCriteria as BusVolSelectionCriteria
-  
-  association [1..1] to C_ConditionContractDP as _ConditionContract 
-                     on $projection.ConditionContract = _ConditionContract.ConditionContract
-  
-{
-  key ConditionContract,
-  key CndnContrBusVolUUID,
-      BusVolFieldCombnType,
-      BusVolFldCombnGroup,
-      CndnContrBusVolSign,
-      BusVolSelectionGroup,
-      CndnContrSupplier,
-      CndnContrCustomer,
-      CndnContrBusVolValidFrom,
-      CndnContrBusVolValidTo,
-      Supplier,
-      Customer,
-      CompanyCode,
-      PurchasingOrganization,
-      PurchasingGroup,
-      SalesOrganization,
-      DistributionChannel,
-      Division,
-      SalesOffice,
-      SalesGroup,
-      Plant,
-      SupplierSubrange,
-      ProductGroup,
-      Product,
-      ProductType,
-      //      CustomerHierarchy,
-      //      ProductHierarchy,
-      ProdUnivHierarchyNode,
-      //      SalesSpcfcProductGroup1,
-      //      SalesSpcfcProductGroup2,
-      //      SalesSpcfcProductGroup3,
-      //      SalesSpcfcProductGroup4,
-      //      SalesSpcfcProductGroup5,
-      SalesOrderReason,
-      Manufacturer,
-      RoyaltyRecipient,
-      CommissionRecipient,
-//      @Consumption.hidden: true
-//      WorkerCommissionRecipient,
-      ShipToParty,
-      PayerParty,
-      //      CndnContrCustomerList,
-      //      CndnContrSupplierList,
-      //      CndnContrPlantList,
-      //      CndnContrBusVolList,
-      ServiceDocumentType,
-      ServiceDocument,
-      ServiceDocumentItem,
-      CustomerGroup,
-      //      AdditionalCustomerGroup1,
-      //      AdditionalCustomerGroup2,
-      //      AdditionalCustomerGroup3,
-      //      AdditionalCustomerGroup4,
-      //      AdditionalCustomerGroup5,
-      //      CustomerConditionGroup1,
-      //      CustomerConditionGroup2,
-      //      CustomerConditionGroup3,
-      //      CustomerConditionGroup4,
-      //      CustomerConditionGroup5,
-      Country,
-      Region,
-      ProductCommissionGroup,
-      PricingReferenceProduct,
-      SoldProduct,
-      SalesDistrict,
-      ProductPricingGroup,
-      SalesVolumeRebateGroup,
-      BizVolSelCndnContrProcVar,
-      BizVolSelConditionContract,
-      WBSElementInternalID,
-      CndnContrSuplrInvcDlvCostCat,
-      CndnContrSemanticCode,
-      CndnContrSourceBusVolUUID,
-
-      /* New CustomerHierachy is only valid for Cloud Edition */
-      CustomerHierarchyRootNode,
-      CustomerHierarchyNodeID,
-      CustomerHierarchyNodeType,
-
-      /* Associations */
-      _ConditionContract
-
-      //      _CustomerHierarchy,
-      //      _Manufacturer,
-      //      _RoyaltyRecipient,
-      //      _CommissionRecipient,
-      //      _Supplier,
-      //      _Customer,
-      //      @Consumption.hidden: true
-      //      _WorkerCommissionRecipient
-}
-```

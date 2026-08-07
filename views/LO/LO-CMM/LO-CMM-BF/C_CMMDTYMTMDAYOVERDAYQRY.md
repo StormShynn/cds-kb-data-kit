@@ -5,25 +5,9 @@ app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMDAYOVERDAYQRY')/$value
 semantic_en: MtM Day Over Day Query
-semantic_vi: MtM Day Over Day Query — CDS view tiêu dùng dựa trên I_CmmdtyMTMLogFinValCube.
-keywords:
-  - mtm
-  - day
-  - over
-  - query
-  - pricing
-  - version
-  - document
-  - item
-  - vers
-  - stock
-  - record
-  - commodity
-  - price
-  - exposure
 tags:
   - LO
   - component:LO-CMM-BF
@@ -32,7 +16,7 @@ tags:
   - LO-CMM-BF
   - lob:logistics general
   - lob:sourcing & procurement
-  - bo:companycode
+  - metadata-only
 ---
 # C_CMMDTYMTMDAYOVERDAYQRY
 
@@ -44,19 +28,19 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMDAYOVERDAYQRY')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMDAYOVERDAYQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PricingKey` | ✓ | |  |  | `CHAR(40)` | A key required to access versioned pricing data |
-| `Version` | ✓ | |  |  | `NUMC(10)` | Version of an MtM Valuation Record |
-| `PricingDocumentItem` | ✓ | |  |  | `NUMC(6)` | Condition item number |
-| `VersStockRecordUUID` | ✓ | |  |  | `RAW(16)` | GUID assigned to the VlogP stock delta record |
-| `CommodityPriceExposure` | ✓ | |  |  | `CHAR(13)` | Commodity Price Exposure ID |
-| `CommodityExposureCategory` | ✓ | |  |  | `CHAR(2)` | Exposure Category |
-| `CommodityPriceSubExposure` | ✓ | |  |  | `CHAR(40)` | Hash key |
+| `PricingKey` |  | |  |  | `CHAR(40)` | A key required to access versioned pricing data |
+| `Version` |  | |  |  | `NUMC(10)` | Version of an MtM Valuation Record |
+| `PricingDocumentItem` |  | |  |  | `NUMC(6)` | Condition item number |
+| `VersStockRecordUUID` |  | |  |  | `RAW(16)` | GUID assigned to the VlogP stock delta record |
+| `CommodityPriceExposure` |  | |  |  | `CHAR(13)` | Commodity Price Exposure ID |
+| `CommodityExposureCategory` |  | |  |  | `CHAR(2)` | Exposure Category |
+| `CommodityPriceSubExposure` |  | |  |  | `CHAR(40)` | Hash key |
 | `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 | `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
 | `Plant` |  | |  |  | `CHAR(4)` | Plant |
@@ -161,244 +145,4 @@ tags:
 | `FinInstrExternalReference` |  | |  |  | `CHAR(16)` | External Reference |
 | `HasError` |  | |  |  | `CHAR(1)` | Flag: Error occured |
 | `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMDAYOVERDAYQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYMTMDAYOVERDAYQRY')/$value)*
-
-```abap
-@AbapCatalog.sqlViewName: 'CMTMPFDODQRY'
-@ClientHandling.algorithm: #SESSION_VARIABLE
-@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
-@AbapCatalog.compiler.compareFilter: true
-@Analytics.query: true
-@VDM.viewType: #CONSUMPTION
-@ObjectModel.usageType:{  sizeCategory: #XL,
-                          serviceQuality: #D,
-                          dataClass: #TRANSACTIONAL }
-@Metadata.ignorePropagatedAnnotations: true
-@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
-@EndUserText.label: 'MtM Day Over Day Query'
-
-define view C_CmmdtyMTMDayOverDayQry
-  with parameters
-
-    @Environment.systemField: #SYSTEM_DATE
-    P_EndOfDaySnapshotFromDate : cmm_snapshot_start, -- Evaluation Date
-    @Environment.systemField: #SYSTEM_DATE
-    P_EndOfDaySnapshotToDate   : cmm_snapshot_end, -- Evaluation Date
-    @Consumption.defaultValue: 'P'
-    P_DisplayUnitOfMeasure     : cds_posrep_view_uom -- Display UoM
-
-  as select from I_CmmdtyMTMLogFinValCube
-                 (
-                       P_DisplayUnitOfMeasure:      :P_DisplayUnitOfMeasure,
-                       P_EvaluationDate:            :P_EndOfDaySnapshotFromDate, -- valuation key date
-                       P_ExchRateEvaluationDate:    :P_EndOfDaySnapshotFromDate, -- FX valuation date
-                       P_EndOfDaySnapshotFromDate:  :P_EndOfDaySnapshotFromDate, -- date of snapshot to be selected
-                       P_EndOfDaySnapshotToDate:    :P_EndOfDaySnapshotToDate, -- date of snapshot to be selected
-                       P_MTMDataSelectionType:      '02')
-
-{
-  key PricingKey,
-  key Version,
-  key PricingDocumentItem,
-  key VersStockRecordUUID,
-  key CommodityPriceExposure,
-  key CommodityExposureCategory,
-  key CommodityPriceSubExposure,
-      @AnalyticsDetails.query.totals: #SHOW  -- Total MtM Gain/Loss
-      @AnalyticsDetails.query.axis: #ROWS
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  1
-      @AnalyticsDetails.query.display: #KEY_TEXT
-      CompanyCode,
-      @AnalyticsDetails.query.totals: #SHOW
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.variableSequence:  7
-      @AnalyticsDetails.query.display: #KEY_TEXT
-      ProfitCenter,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      Plant,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  2
-      PhysicalCommodity,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      Material,
-      @Consumption.filter.multipleSelections: true
-      @AnalyticsDetails.query.variableSequence:  3
-      @AnalyticsDetails.query.axis: #ROWS
-      OriginReferenceDocument,
-
-      @AnalyticsDetails.query.totals: #SHOW  -- Root Document specific MtM Gain/Loss
-      @AnalyticsDetails.query.axis: #ROWS
-      SourceDocument,
-      @AnalyticsDetails.query.axis: #ROWS
-      SourceDocumentItem,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      SourceDocumentBusObjType,
-      @AnalyticsDetails.query.axis: #ROWS
-      EndOfDaySnapshotDate,
-      @AnalyticsDetails.query.axis: #ROWS
-      ValidityStartDate,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      IncotermsClassification,
-      @AnalyticsDetails.query.axis: #ROWS
-      IncotermsTransferLocation,
-      @AnalyticsDetails.query.axis: #ROWS
-      ConditionApplication,
-      @AnalyticsDetails.query.axis: #ROWS
-      StatisticsCurrency,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      MTMCalculationGroup,
-      @AnalyticsDetails.query.totals: #SHOW  -- MtMCalculationGroup specific MtM Gain/Loss
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      MTMConditionGroupCategory,
-      @AnalyticsDetails.query.axis: #ROWS
-      DerivativeContractMaturityCode,
-      MaturityKeyDate,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      BasisID,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      DerivativeContrSpecification,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      MarketIdentifierCode,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      PricingStatus,
-      @AnalyticsDetails.query.axis: #ROWS
-      @AnalyticsDetails.query.display: #TEXT
-      MTMAdjustmentType,
-      @AnalyticsDetails.query.axis: #ROWS
-      ConditionTermRateFixation,
-      @AnalyticsDetails.query.axis: #ROWS
-      QuotationPeriodReferenceDate,
-
-      @AnalyticsDetails.query.axis: #ROWS
-      ConditionType,
-      @AnalyticsDetails.query.axis: #ROWS
-      SubConditionType,
-
-      @Semantics.amount.currencyCode: 'StatisticsCurrency'
-      @DefaultAggregation: #SUM
-      @AnalyticsDetails.query.axis: #COLUMNS
-      ConditionTermValueInStstcCrcy,
-      @Semantics.currencyCode: true
-      DocumentCurrency,
-      @Semantics.amount.currencyCode: 'DocumentCurrency'
-      @DefaultAggregation: #SUM
-      @AnalyticsDetails.query.axis: #COLUMNS
-      ConditionTermValueInDocCrcy,
-      @Semantics.amount.currencyCode: 'ConditionTermRateCurrency'
-      @DefaultAggregation: #SUM
-      @AnalyticsDetails.query.axis: #COLUMNS
-      ConditionTermRate,
-      @DefaultAggregation:#SUM
-      @AnalyticsDetails.query.axis: #COLUMNS
-      MarketToDocExchRate,
-      @Semantics.currencyCode: true
-      ConditionTermRateCurrency,
-      @DefaultAggregation:#SUM
-      @AnalyticsDetails.query.axis: #COLUMNS
-      DocToStatisticalExchRate,
-      @Semantics.quantity.unitOfMeasure: 'CommodityUnit'
-      @DefaultAggregation: #SUM
-      @AnalyticsDetails.query.axis: #COLUMNS
-      CommodityQuantity,
-      @DefaultAggregation: #SUM
-      @Semantics.quantity.unitOfMeasure: 'ConditionTermRateQuantityUnit'
-      @AnalyticsDetails.query.axis: #COLUMNS
-      CommodityQuantityInTermUnit,
-      @Semantics.unitOfMeasure: true
-      CommodityUnit,
-
-      /*Attributes */
-      SalesOrganization,
-      DistributionChannel,
-      Division,
-      Creditor,
-      SoldToParty,
-      StorageLocation,
-      Batch,
-      GoodsMovementType,
-      ReferenceDocument,
-      ReferenceDocumentItem,
-      ReferenceDocBusObjType,
-      ExpectedPaymentDate,
-      ExchRateEvaluationDate,
-      DocToStstcCrcyExchRateEvalDate,
-      BusinessArea,
-      PurchasingOrganization,
-      MaterialGroup,
-      IsIntercompanyTransfer,
-      ConditionTermRateQuantity,
-      ConditionTermRateQuantityUnit,
-      ConditionTermValueCurrency,
-      BasisType,
-      QuotationPriceType,
-      MarketPriceCurrency,
-      OldestQuotationDate,
-      MTMConditionGroup,
-      MTMCalcGrpMarketPriceCondition,
-      ConditionTermExchRateIsFixed,
-      CndnTermRateFixationDate,
-      CndnTermRateFixationTime,
-      CndnTermExchRateFixationDate,
-      CndnTermExchRateFixationTime,
-      ExchRateMaturityDate,
-      @AnalyticsDetails.query.hidden
-      @AnalyticsDetails.query.decimals: 4
-      BasisMarketRefRate,
-      @AnalyticsDetails.query.hidden
-      @AnalyticsDetails.query.decimals: 4
-      BasisMarketRefAdjustmentSpread,
-      @AnalyticsDetails.query.hidden
-      @AnalyticsDetails.query.decimals: 4
-      MarketToDocFrozenExchRate,
-      BsMktRefDrvtvContrMaturityCode,
-      BasisMarketRefRateCurrency,
-      BasisMarketRefKeyDate,
-      ConditionTermFactor,
-      ConditionTermRateIsFixed,
-      MaximumVersion,
-      ExposureDueDate,
-      ReportingDate,
-      CashFlowDirection,
-      TreasuryPositionLongShortCode,
-      TimeToMaturity,
-      CmmdtyForwardIndexTiming,
-      CmmdtyForwardIndexTimingText,
-      FinancialInstrProductCategory,
-      FinancialAssetsMgmtProductType,
-      FinInstrTransactionCategory,
-      FinancialInstrumentProductType,
-      FinancialInstrActivityCategory,
-      EvaluationDate,
-      MTMDataSourceType,
-      OriginReferenceDocumentItem,
-      OriginReferenceDocBusObjType,
-      DeliveryDate,
-      DeliveryYear,
-      DeliveryMonth,
-      ExternalKeyFigureValue,
-      OptionDeltaFactor,
-      FinInstrExternalReference,
-      HasError,
-      @AnalyticsDetails.query.hidden: true
-      ControllingArea,
-      _CmmdtyMtmMessage[1:Language = $session.system_language].SystemMessageText
-
-
-}
-```
+| `SystemMessageText` |  | |  |  | `CHAR(73)` | Message Text |

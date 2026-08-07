@@ -1,17 +1,17 @@
 ---
 name: I_ACCOUNTINGDOCUMENT
-description: Accounting Document
+description: This CDS view is designed to represent accounting documents within a system. It provides a structured way to access and analyze accounting document data, including various attributes and associations related to accounting documents, for example, company code, fiscal year, and document type. This CDS view provides the data to answer the following business questions: What are the details of accounting documents for a specific company code and fiscal year? How can I retrieve the document type and category for a given accounting document? What is the posting date and document date for specific accounting documents? Who created a particular accounting document, and when was it created? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACCOUNTINGDOCUMENT')/$value
-semantic_en: Accounting Document
+semantic_en: This CDS view is designed to represent accounting documents within a system. It provides a structured way to access and analyze accounting document data, including various attributes and associations related to accounting documents, for example, company code, fiscal year, and document type. This CDS view provides the data to answer the following business questions: What are the details of accounting documents for a specific company code and fiscal year? How can I retrieve the document type and category for a given accounting document? What is the posting date and document date for specific accounting documents? Who created a particular accounting document, and when was it created? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 tags:
   - FI
   - account
-  - bo:journalentry
+  - bo:companycode
   - component:FI-GL-IS-2CL
   - document
   - FI-GL
@@ -23,7 +23,7 @@ tags:
 ---
 # I_ACCOUNTINGDOCUMENT
 
-**Accounting Document**
+**This CDS view is designed to represent accounting documents within a system. It provides a structured way to access and analyze accounting document data, including various attributes and associations related to accounting documents, for example, company code, fiscal year, and document type. This CDS view provides the data to answer the following business questions: What are the details of accounting documents for a specific company code and fiscal year? How can I retrieve the document type and category for a given accounting document? What is the posting date and document date for specific accounting documents? Who created a particular accounting document, and when was it created? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

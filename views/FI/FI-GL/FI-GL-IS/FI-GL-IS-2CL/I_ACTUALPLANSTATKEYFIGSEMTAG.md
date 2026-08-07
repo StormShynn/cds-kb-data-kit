@@ -1,30 +1,33 @@
 ---
 name: I_ACTUALPLANSTATKEYFIGSEMTAG
-description: Semantic Tag with Statistical Key Figure
+description: This CDS view is designed to provide a comprehensive analytical framework for financial planning and actuals data, specifically focusing on statistical key figures and their association with semantic tags. It integrates various financial dimensions such as ledger, company code, fiscal year, and period, along with statistical key figures and semantic tags, to enable detailed analysis and reporting. This CDS view provides the data to answer the following business questions: How do actual and planned financial figures compare across different fiscal periods and company codes? What are the statistical key figures associated with specific semantic tags, and how do they impact financial planning? How can financial data be analyzed in terms of cost centers, profit centers, and controlling areas? What is the distribution of financial amounts across different currencies and units of measure? How do financial planning categories and semantic tags correlate with actual financial outcomes? What are the detailed ledger and accounting document entries related to specific financial planning and statistical key figures? How can financial data be aggregated and analyzed using various dimensions such as GL account hierarchies and functional areas? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ACTUALPLANSTATKEYFIGSEMTAG')/$value
-semantic_en: Semantic Tag with Statistical Key Figure
+semantic_en: This CDS view is designed to provide a comprehensive analytical framework for financial planning and actuals data, specifically focusing on statistical key figures and their association with semantic tags. It integrates various financial dimensions such as ledger, company code, fiscal year, and period, along with statistical key figures and semantic tags, to enable detailed analysis and reporting. This CDS view provides the data to answer the following business questions: How do actual and planned financial figures compare across different fiscal periods and company codes? What are the statistical key figures associated with specific semantic tags, and how do they impact financial planning? How can financial data be analyzed in terms of cost centers, profit centers, and controlling areas? What is the distribution of financial amounts across different currencies and units of measure? How do financial planning categories and semantic tags correlate with actual financial outcomes? What are the detailed ledger and accounting document entries related to specific financial planning and statistical key figures? How can financial data be aggregated and analyzed using various dimensions such as GL account hierarchies and functional areas? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Semantic Tag with Statistical Key Figure
   - Semantic Tag with Statistical Key Figure
 tags:
   - FI
+  - account
   - bo:companycode
   - component:FI-GL-IS-2CL
+  - document
   - FI-GL
   - FI-GL-IS
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
+  - plan
   - metadata-only
 ---
 # I_ACTUALPLANSTATKEYFIGSEMTAG
 
-**Semantic Tag with Statistical Key Figure**
+**This CDS view is designed to provide a comprehensive analytical framework for financial planning and actuals data, specifically focusing on statistical key figures and their association with semantic tags. It integrates various financial dimensions such as ledger, company code, fiscal year, and period, along with statistical key figures and semantic tags, to enable detailed analysis and reporting. This CDS view provides the data to answer the following business questions: How do actual and planned financial figures compare across different fiscal periods and company codes? What are the statistical key figures associated with specific semantic tags, and how do they impact financial planning? How can financial data be analyzed in terms of cost centers, profit centers, and controlling areas? What is the distribution of financial amounts across different currencies and units of measure? How do financial planning categories and semantic tags correlate with actual financial outcomes? What are the detailed ledger and accounting document entries related to specific financial planning and statistical key figures? How can financial data be aggregated and analyzed using various dimensions such as GL account hierarchies and functional areas? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

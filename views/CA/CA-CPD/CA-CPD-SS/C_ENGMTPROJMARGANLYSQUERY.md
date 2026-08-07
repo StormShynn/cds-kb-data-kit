@@ -1,13 +1,13 @@
 ---
 name: C_ENGMTPROJMARGANLYSQUERY
-description: This CDS view provides the prerequisites for answering the following business questions. Note that business questions related to revenue and margin are not applicable to internal projects. What is the total planned cost of the project? What is the total planned revenue of the project? What is the total actual cost of the project? What is the total billed revenue of the project? What is the total planned cost of the project up to the current month? What is the total planned revenue of the project up to the current month? What is the total actual cost of the project up to the current month? What is the billed revenue of the project up to the current month? What is the probable margin (in percentage) when the project is completed?
+description: This CDS view provides the prerequisites for answering the following business questions. Note that business questions related to revenue and margin are not applicable to internal projects. What is the total planned cost of the project? What is the total planned revenue of the project? What is the total actual cost of the project? What is the total actual revenue of the project? What is the total planned cost of the project up to the current month? What is the total planned revenue of the project up to the current month? What is the total actual cost of the project up to the current month? What is the total actual revenue of the project up to the current month? What is the likely margin (in percentage) when the project is completed?
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ENGMTPROJMARGANLYSQUERY')/$value
-semantic_en: This CDS view provides the prerequisites for answering the following business questions. Note that business questions related to revenue and margin are not applicable to internal projects. What is the total planned cost of the project? What is the total planned revenue of the project? What is the total actual cost of the project? What is the total billed revenue of the project? What is the total planned cost of the project up to the current month? What is the total planned revenue of the project up to the current month? What is the total actual cost of the project up to the current month? What is the billed revenue of the project up to the current month? What is the probable margin (in percentage) when the project is completed?
+semantic_en: This CDS view provides the prerequisites for answering the following business questions. Note that business questions related to revenue and margin are not applicable to internal projects. What is the total planned cost of the project? What is the total planned revenue of the project? What is the total actual cost of the project? What is the total actual revenue of the project? What is the total planned cost of the project up to the current month? What is the total planned revenue of the project up to the current month? What is the total actual cost of the project up to the current month? What is the total actual revenue of the project up to the current month? What is the likely margin (in percentage) when the project is completed?
 tags:
   - CA
   - bo:plant
@@ -22,7 +22,7 @@ tags:
 ---
 # C_ENGMTPROJMARGANLYSQUERY
 
-**This CDS view provides the prerequisites for answering the following business questions. Note that business questions related to revenue and margin are not applicable to internal projects. What is the total planned cost of the project? What is the total planned revenue of the project? What is the total actual cost of the project? What is the total billed revenue of the project? What is the total planned cost of the project up to the current month? What is the total planned revenue of the project up to the current month? What is the total actual cost of the project up to the current month? What is the billed revenue of the project up to the current month? What is the probable margin (in percentage) when the project is completed?**
+**This CDS view provides the prerequisites for answering the following business questions. Note that business questions related to revenue and margin are not applicable to internal projects. What is the total planned cost of the project? What is the total planned revenue of the project? What is the total actual cost of the project? What is the total actual revenue of the project? What is the total planned cost of the project up to the current month? What is the total planned revenue of the project up to the current month? What is the total actual cost of the project up to the current month? What is the total actual revenue of the project up to the current month? What is the likely margin (in percentage) when the project is completed?**
 
 | Property | Value |
 |---|---|

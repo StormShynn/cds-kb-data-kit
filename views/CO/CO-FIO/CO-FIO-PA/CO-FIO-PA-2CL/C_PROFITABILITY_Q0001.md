@@ -1,33 +1,35 @@
 ---
 name: C_PROFITABILITY_Q0001
-description: Project Profitability
+description: This CDS view provides analytical insights into projects, including engagement projects and enterprise projects. The amount is calculated on company code currency. This CDS view provides the data to answer the following business questions: What is the revenue, cost, and margin of each project in company code currency? What is the ratio of margin to revenue? What are the breakdown key figures on a more detailed level, like product,customer, and sales organization? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PROFITABILITY_Q0001')/$value
-semantic_en: Project Profitability
+semantic_en: This CDS view provides analytical insights into projects, including engagement projects and enterprise projects. The amount is calculated on company code currency. This CDS view provides the data to answer the following business questions: What is the revenue, cost, and margin of each project in company code currency? What is the ratio of margin to revenue? What are the breakdown key figures on a more detailed level, like product,customer, and sales organization? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
 keywords:
   - Project Profitability
   - Project Profitability
   - Project Profitability
 tags:
   - CO
-  - bo:companycode
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
   - consumption-view
+  - customer
   - lob:controlling
   - lob:finance
+  - product
   - project
   - metadata-only
 ---
 # C_PROFITABILITY_Q0001
 
-**Project Profitability**
+**This CDS view provides analytical insights into projects, including engagement projects and enterprise projects. The amount is calculated on company code currency. This CDS view provides the data to answer the following business questions: What is the revenue, cost, and margin of each project in company code currency? What is the ratio of margin to revenue? What are the breakdown key figures on a more detailed level, like product,customer, and sales organization? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

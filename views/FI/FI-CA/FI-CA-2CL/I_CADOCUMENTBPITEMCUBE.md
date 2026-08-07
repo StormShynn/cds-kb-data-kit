@@ -64,7 +64,7 @@ tags:
 | `CAAccountDeterminationCode` |  | |  |  | `CHAR(2)` | Account Determination ID |
 | `CADoubtfulOrValueAdjmtCode` |  | |  |  | `NUMC(3)` | Doubtful Entry / Individual Value Adjustment |
 | `CAAccountAssignmentCategory` |  | |  |  | `CHAR(2)` | Account Assignment Category |
-| `CAAccountAssignment` |  | |  |  | `CHAR(50)` | Acct assnmnt string for industry-specific account assngments |
+| `CAAccountAssignment` |  | |  |  | `CHAR(50)` | Account Assgt String for Application-Specific Account Assgts |
 | `CADocumentType` |  | |  |  | `CHAR(2)` | Document Type |
 | `CAIsDownPaymentRequest` |  | |  |  | `CHAR(1)` | Item is a Down Payment/Down Payment Request |
 | `CAItemIsOnlyForSettlement` |  | |  |  | `CHAR(1)` | Item Can Only Be Cleared |
@@ -82,7 +82,7 @@ tags:
 | `CAReceivingCountry` |  | |  |  | `CHAR(3)` | Destination Country/Region (for Tax Reports) |
 | `CAInternalPostingReasonCode` |  | |  |  | `CHAR(1)` | Reason for Automatic Creation of Posting |
 | `CAWorkflowCheckReason` |  | |  |  | `CHAR(2)` | Check Reason for Workflows Acc. to Dual Control Principle |
-| `CAWorkflowCheckProcess` |  | |  |  | `CHAR(1)` | Editing Process To Be Confirmed |
+| `CAWorkflowCheckProcess` |  | |  |  | `CHAR(1)` | Editing Process to Be Confirmed |
 | `CANegativePostingControlCode` |  | |  |  | `NUMC(1)` | Control Field for Negative Posting |
 | `CAPartnerSettlementStatus` |  | |  |  | `CHAR(1)` | Status of Partner Settlement Using Billable Items |
 | `CAIsPartOfJointLiability` |  | |  |  | `CHAR(1)` | Item Is Part of a Collaborative Liability |
@@ -106,7 +106,7 @@ tags:
 | `CAAmountInThirdCurrency` |  | |  |  | `CURR(13)` | Amount in third parallel currency with +/- sign |
 | `CACashDiscountDueDate` |  | |  |  | `DATS(8)` | Due Date for Cash Discount |
 | `CACashDiscountRate` |  | |  |  | `DEC(5)` | Cash Discount Percentage Rate |
-| `CAEligibleAmountForCshDiscount` |  | |  |  | `CURR(13)` | Amount eligible for cash discount in document currency |
+| `CAEligibleAmountForCshDiscount` |  | |  |  | `CURR(13)` | Amount Eligible for Cash Discount in Document Currency |
 | `TaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
 | `CASupplementaryTaxCode` |  | |  |  | `CHAR(2)` | Supplementary Tax |
 | `CATaxAmountInLocalCurrency` |  | |  |  | `CURR(13)` | Tax Amount in Local Currency With +/- Sign |
@@ -152,7 +152,7 @@ tags:
 | `CAGrpgCodeForTransfToCollAgcy` |  | |  |  | `NUMC(3)` | Collection Item |
 | `CAIsIncludedInCollectionCase` |  | |  |  | `CHAR(1)` | Item Is Included in Collection Case |
 | `CashPlanningGroup` |  | |  |  | `CHAR(10)` | Planning Group |
-| `PlanningLevel` |  | |  |  | `CHAR(2)` | Planning level |
+| `PlanningLevel` |  | |  |  | `CHAR(2)` | Planning Level |
 | `CAAdditionalDaysForCashMgmt` |  | |  |  | `NUMC(2)` | Cash Management Extra Days |
 | `PlannedAmtInTransactionCrcy` |  | |  |  | `CURR(23)` | Planned Amount in Transaction Currency |
 | `CAAltvBPForPayment` |  | |  |  | `CHAR(10)` | Alternative Business Partner for Payments |
