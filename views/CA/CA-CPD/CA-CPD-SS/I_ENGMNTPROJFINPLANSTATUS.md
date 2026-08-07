@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectReviewStatus` | `CHAR(4)` | Status ID |
-| `EngmntProjReviewStsIsInitial` | `CHAR(1)` | Initial Status |
-| `EngmntProjReviewStsIsPerdStart` | `CHAR(1)` | Initial Status |
-| `EngmntProjReviewStsIsPerdEnd` | `CHAR(1)` | Reverse Completion |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectReviewStatus` |  | |  |  | `CHAR(4)` | Status ID |
+| `EngmntProjReviewStsIsInitial` |  | |  |  | `CHAR(1)` | Initial Status |
+| `EngmntProjReviewStsIsPerdStart` |  | |  |  | `CHAR(1)` | Initial Status |
+| `EngmntProjReviewStsIsPerdEnd` |  | |  |  | `CHAR(1)` | Reverse Completion |

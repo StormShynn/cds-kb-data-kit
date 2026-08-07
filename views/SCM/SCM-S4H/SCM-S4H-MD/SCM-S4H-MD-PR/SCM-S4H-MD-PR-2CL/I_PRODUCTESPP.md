@@ -35,16 +35,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Product` | `CHAR(40)` | Material Number |
-| `ProductIsForKitToOrder` | `CHAR(1)` | Product for Kit-to-Order |
-| `ProductIsForProcureToOrder` | `CHAR(1)` | Product can be used for Procure-to-Order |
-| `ProdIsForPushDplntFromSupplier` | `CHAR(1)` | Carry Out Push Deployment from Supplier |
-| `InventoryBalancingIsNotAllowed` | `CHAR(1)` | Inventory Balancing Not Allowed |
-| `ProdIsForGlobalStockOnEntryLoc` | `CHAR(1)` | Global Stock on Entry Location DRP |
-| `ProdIsExclFromExpressShipment` | `CHAR(1)` | Exclude from Express Shipment |
-| `SrvcPartsProductIsNew` | `CHAR(1)` | New Product |
-| `SrvcPartsProdProdnStartDate` | `DATS(8)` | Production Start Date |
-| `SrvcPartsProdProdnEndDate` | `DATS(8)` | Production End Date |
-| `SrvcPartsInvtryPlngMode` | `CHAR(1)` | Inventory Planning Mode |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` |  | |  |  | `CHAR(40)` | Material Number |
+| `ProductIsForKitToOrder` |  | |  |  | `CHAR(1)` | Product for Kit-to-Order |
+| `ProductIsForProcureToOrder` |  | |  |  | `CHAR(1)` | Product can be used for Procure-to-Order |
+| `ProdIsForPushDplntFromSupplier` |  | |  |  | `CHAR(1)` | Carry Out Push Deployment from Supplier |
+| `InventoryBalancingIsNotAllowed` |  | |  |  | `CHAR(1)` | Inventory Balancing Not Allowed |
+| `ProdIsForGlobalStockOnEntryLoc` |  | |  |  | `CHAR(1)` | Global Stock on Entry Location DRP |
+| `ProdIsExclFromExpressShipment` |  | |  |  | `CHAR(1)` | Exclude from Express Shipment |
+| `SrvcPartsProductIsNew` |  | |  |  | `CHAR(1)` | New Product |
+| `SrvcPartsProdProdnStartDate` |  | |  |  | `DATS(8)` | Production Start Date |
+| `SrvcPartsProdProdnEndDate` |  | |  |  | `DATS(8)` | Production End Date |
+| `SrvcPartsInvtryPlngMode` |  | |  |  | `CHAR(1)` | Inventory Planning Mode |

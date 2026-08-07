@@ -31,27 +31,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InternalRealEstateNumberLvl0` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `InternalRealEstateNumberLvl3` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `RealEstateExternalIDLvl0` | `CHAR(45)` | External Identification |
-| `InternalRealEstateNumberLvl1` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `InternalRealEstateNumberLvl2` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `RealEstateExternalIDLvl1` | `CHAR(45)` | External Identification |
-| `RealEstateExternalIDLvl2` | `CHAR(45)` | External Identification |
-| `RealEstateExternalIDLvl3` | `CHAR(45)` | External Identification |
-| `ValidityStartDateLvl0` | `DATS(8)` | Validity Start Date |
-| `ValidityEndDateLvl0` | `DATS(8)` | Validity End Date |
-| `ValidityStartDateLvl1` | `DATS(8)` | Validity Start Date |
-| `ValidityEndDateLvl1` | `DATS(8)` | Validity End Date |
-| `ValidityStartDateLvl2` | `DATS(8)` | Validity Start Date |
-| `ValidityEndDateLvl2` | `DATS(8)` | Validity End Date |
-| `ValidityStartDateLvl3` | `DATS(8)` | Validity Start Date |
-| `ValidityEndDateLvl3` | `DATS(8)` | Validity End Date |
-| `InternalRealEstateNumberRltn` | `CHAR(13)` | Internal Object Number (Relation) |
-| `REIsObjectRelationPartial` | `CHAR(1)` | Partial Object Relation Indicator |
-| `REInternalNumberForUseEnable` | `CHAR(13)` | Internal Object Number (Enable Use) |
-| `REIntegObjSpaceGroupType` | `CHAR(4)` | Group Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumberLvl0` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `InternalRealEstateNumberLvl3` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `RealEstateExternalIDLvl0` |  | |  |  | `CHAR(45)` | External Identification |
+| `InternalRealEstateNumberLvl1` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `InternalRealEstateNumberLvl2` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `RealEstateExternalIDLvl1` |  | |  |  | `CHAR(45)` | External Identification |
+| `RealEstateExternalIDLvl2` |  | |  |  | `CHAR(45)` | External Identification |
+| `RealEstateExternalIDLvl3` |  | |  |  | `CHAR(45)` | External Identification |
+| `ValidityStartDateLvl0` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndDateLvl0` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ValidityStartDateLvl1` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndDateLvl1` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ValidityStartDateLvl2` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndDateLvl2` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ValidityStartDateLvl3` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndDateLvl3` |  | |  |  | `DATS(8)` | Validity End Date |
+| `InternalRealEstateNumberRltn` |  | |  |  | `CHAR(13)` | Internal Object Number (Relation) |
+| `REIsObjectRelationPartial` |  | |  |  | `CHAR(1)` | Partial Object Relation Indicator |
+| `REInternalNumberForUseEnable` |  | |  |  | `CHAR(13)` | Internal Object Number (Enable Use) |
+| `REIntegObjSpaceGroupType` |  | |  |  | `CHAR(4)` | Group Type |

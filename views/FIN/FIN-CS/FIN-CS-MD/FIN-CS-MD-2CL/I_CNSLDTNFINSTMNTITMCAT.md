@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialStatementItemCategory` | `CHAR(1)` | FS Item Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialStatementItemCategory` |  | |  |  | `CHAR(1)` | FS Item Category |

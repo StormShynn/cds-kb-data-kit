@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BasisID` | `CHAR(18)` | Basis ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BasisID` |  | |  |  | `CHAR(18)` | Basis ID |

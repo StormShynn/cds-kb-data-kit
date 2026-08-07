@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InjuredPersonInfoUUID` | `RAW(16)` | Injured Person Information UUID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `InvolvedPersonUUID` | `RAW(16)` | Involved Person UUID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `IncidentType` | `CHAR(21)` | Incident Type |
-| `InjuryIllnessIsFatal` | `CHAR(1)` | Fatal Injury / Illness |
-| `InjuryIllnessCaseIsRecordable` | `CHAR(1)` | Reporting Required |
-| `PersnHasTrtmtBeyond1stAid` | `CHAR(1)` | Treatment Beyond First Aid |
-| `PersnIsTreatedInEmgyRoom` | `CHAR(1)` | Emergency Room Treatment |
-| `PersonIsInpatientOvernight` | `CHAR(1)` | Inpatient Treatment Overnight |
-| `PersonHasReceivedFirstAid` | `CHAR(1)` | First Aid Treatment |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InjuredPersonInfoUUID` |  | |  |  | `RAW(16)` | Injured Person Information UUID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `InvolvedPersonUUID` |  | |  |  | `RAW(16)` | Involved Person UUID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `IncidentType` |  | |  |  | `CHAR(21)` | Incident Type |
+| `InjuryIllnessIsFatal` |  | |  |  | `CHAR(1)` | Fatal Injury / Illness |
+| `InjuryIllnessCaseIsRecordable` |  | |  |  | `CHAR(1)` | Reporting Required |
+| `PersnHasTrtmtBeyond1stAid` |  | |  |  | `CHAR(1)` | Treatment Beyond First Aid |
+| `PersnIsTreatedInEmgyRoom` |  | |  |  | `CHAR(1)` | Emergency Room Treatment |
+| `PersonIsInpatientOvernight` |  | |  |  | `CHAR(1)` | Inpatient Treatment Overnight |
+| `PersonHasReceivedFirstAid` |  | |  |  | `CHAR(1)` | First Aid Treatment |

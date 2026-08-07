@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SEPAPaymentType` | `CHAR(1)` | Mandate: Payment Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SEPAPaymentType` |  | |  |  | `CHAR(1)` | Mandate: Payment Type |

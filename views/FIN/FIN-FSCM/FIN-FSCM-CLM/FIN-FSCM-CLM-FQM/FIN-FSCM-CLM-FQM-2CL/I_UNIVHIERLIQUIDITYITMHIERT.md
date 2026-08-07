@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LiquidityItemHierarchy` | `CHAR(42)` | Hierarchy ID |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `LiquidityItemName` | `CHAR(50)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LiquidityItemHierarchy` |  | |  |  | `CHAR(42)` | Hierarchy ID |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `LiquidityItemName` |  | |  |  | `CHAR(50)` |  |

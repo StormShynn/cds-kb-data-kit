@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralObjectCategory` | `CHAR(6)` | Object Category |
-| `CollateralObjClassification` | `CHAR(6)` | Classification |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `CollateralObjClassification` |  | |  |  | `CHAR(6)` | Classification |

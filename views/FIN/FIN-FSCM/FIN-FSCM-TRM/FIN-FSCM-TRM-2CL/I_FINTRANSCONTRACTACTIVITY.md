@@ -35,12 +35,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `FinancialInstrumentActivity` | `NUMC(5)` | Transaction Activity |
-| `FinTransActyConclusionDate` | `DATS(8)` | Conclusion Date of a Financial Transaction Activity |
-| `FinTransActyConclusionTime` | `TIMS(6)` | Time of Contract Conclusion |
-| `FinTransActyConclusionTimeZone` | `CHAR(6)` | Time Zone of Contract Date and Time |
-| `ExchangeRate` | `DEC(13)` | Rate of Foreign Exchange Transaction |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `FinancialInstrumentActivity` |  | |  |  | `NUMC(5)` | Transaction Activity |
+| `FinTransActyConclusionDate` |  | |  |  | `DATS(8)` | Conclusion Date of a Financial Transaction Activity |
+| `FinTransActyConclusionTime` |  | |  |  | `TIMS(6)` | Time of Contract Conclusion |
+| `FinTransActyConclusionTimeZone` |  | |  |  | `CHAR(6)` | Time Zone of Contract Date and Time |
+| `ExchangeRate` |  | |  |  | `DEC(13)` | Rate of Foreign Exchange Transaction |

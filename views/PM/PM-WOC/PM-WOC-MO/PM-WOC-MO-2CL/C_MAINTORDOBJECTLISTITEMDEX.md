@@ -33,18 +33,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenanceOrderObjectList` | `INT8(19)` | Object list number |
-| `MaintenanceObjectListItem` | `INT4(10)` | Object list counters |
-| `MaintenanceOrder` | `CHAR(12)` | Order Number |
-| `MaintenanceObjectListUsageCode` | `CHAR(1)` | Object list usage |
-| `MaintenanceNotification` | `CHAR(12)` | Notification Number |
-| `Equipment` | `CHAR(18)` | Equipment Number |
-| `Assembly` | `CHAR(40)` | Assembly |
-| `Material` | `CHAR(40)` | Material Number |
-| `SerialNumber` | `CHAR(18)` | Serial Number |
-| `UniqueItemIdentifier` | `CHAR(72)` | Unique Item Identifier |
-| `CreationDate` | `DATS(8)` | Date |
-| `MaintObjectListItemSequence` | `CHAR(20)` | Object list sort field |
-| `MaintObjListEntryIsProcessed` | `CHAR(1)` | Checkbox |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrderObjectList` |  | |  |  | `INT8(19)` | Object list number |
+| `MaintenanceObjectListItem` |  | |  |  | `INT4(10)` | Object list counters |
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintenanceObjectListUsageCode` |  | |  |  | `CHAR(1)` | Object list usage |
+| `MaintenanceNotification` |  | |  |  | `CHAR(12)` | Notification Number |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `Assembly` |  | |  |  | `CHAR(40)` | Assembly |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `SerialNumber` |  | |  |  | `CHAR(18)` | Serial Number |
+| `UniqueItemIdentifier` |  | |  |  | `CHAR(72)` | Unique Item Identifier |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date |
+| `MaintObjectListItemSequence` |  | |  |  | `CHAR(20)` | Object list sort field |
+| `MaintObjListEntryIsProcessed` |  | |  |  | `CHAR(1)` | Checkbox |

@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRReportedTransType` | `CHAR(2)` | ONRR-2014 - Transaction Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRReportedTransType` |  | |  |  | `CHAR(2)` | ONRR-2014 - Transaction Code |

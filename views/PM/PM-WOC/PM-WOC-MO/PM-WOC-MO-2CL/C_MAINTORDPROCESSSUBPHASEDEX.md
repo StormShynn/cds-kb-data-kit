@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintOrdProcessPhaseCode` | `CHAR(2)` | Process Phase |
-| `MaintOrdProcessSubPhaseCode` | `CHAR(4)` | Process Subphase |
-| `EAMOverallStatusEntity` | `CHAR(3)` | Entity Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrdProcessPhaseCode` |  | |  |  | `CHAR(2)` | Process Phase |
+| `MaintOrdProcessSubPhaseCode` |  | |  |  | `CHAR(4)` | Process Subphase |
+| `EAMOverallStatusEntity` |  | |  |  | `CHAR(3)` | Entity Type |

@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetLiquidationType` | `CHAR(6)` | Liquidation Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `ObjAssetLiquidationTypeText` | `CHAR(40)` | Liquidation Type Name in the specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetLiquidationType` |  | |  |  | `CHAR(6)` | Liquidation Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `ObjAssetLiquidationTypeText` |  | |  |  | `CHAR(40)` | Liquidation Type Name in the specified Language |

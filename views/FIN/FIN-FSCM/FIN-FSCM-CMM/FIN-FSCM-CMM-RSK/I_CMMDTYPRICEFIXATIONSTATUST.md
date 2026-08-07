@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CommodityPriceFixationStatus` | `CHAR(1)` | Fixation Status (OBSOLETE) |
-| `Language` | `LANG(1)` | Language Key |
-| `CmmdtyPriceFixationStatusName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CommodityPriceFixationStatus` |  | |  |  | `CHAR(1)` | Fixation Status (OBSOLETE) |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CmmdtyPriceFixationStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

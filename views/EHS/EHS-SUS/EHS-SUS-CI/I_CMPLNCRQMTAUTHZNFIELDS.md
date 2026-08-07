@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplRqUUID` | `RAW(16)` | Compliance Requirement |
-| `EHSTaskHostObjectInstance` | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
-| `CmplRqVersUUID` | `RAW(16)` | Compliance Requirement UUID |
-| `CmplRqDomain` | `CHAR(21)` | Compliance Requirement Domain |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplRqUUID` |  | |  |  | `RAW(16)` | Compliance Requirement |
+| `EHSTaskHostObjectInstance` |  | |  |  | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
+| `CmplRqVersUUID` |  | |  |  | `RAW(16)` | Compliance Requirement UUID |
+| `CmplRqDomain` |  | |  |  | `CHAR(21)` | Compliance Requirement Domain |

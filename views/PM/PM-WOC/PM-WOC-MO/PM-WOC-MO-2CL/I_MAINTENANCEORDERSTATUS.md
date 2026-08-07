@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenanceOrder` | `CHAR(12)` | Order Number |
-| `MaintenanceOrderInternalID` | `CHAR(22)` | Object Number |
-| `MaintenanceOrderIsCreated` | `CHAR(1)` | Checkbox |
-| `MaintenanceOrderIsReleased` | `CHAR(1)` | Checkbox |
-| `MaintOrderMainWorkIsCompleted` | `CHAR(1)` | Checkbox |
-| `MaintOrdIsTechlyCmpltd` | `CHAR(1)` | Checkbox |
-| `MaintOrderIsBusinessCompleted` | `CHAR(1)` | Checkbox |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintenanceOrderInternalID` |  | |  |  | `CHAR(22)` | Object Number |
+| `MaintenanceOrderIsCreated` |  | |  |  | `CHAR(1)` | Checkbox |
+| `MaintenanceOrderIsReleased` |  | |  |  | `CHAR(1)` | Checkbox |
+| `MaintOrderMainWorkIsCompleted` |  | |  |  | `CHAR(1)` | Checkbox |
+| `MaintOrdIsTechlyCmpltd` |  | |  |  | `CHAR(1)` | Checkbox |
+| `MaintOrderIsBusinessCompleted` |  | |  |  | `CHAR(1)` | Checkbox |

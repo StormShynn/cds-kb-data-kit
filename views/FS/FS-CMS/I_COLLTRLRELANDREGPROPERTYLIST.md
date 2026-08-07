@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlLandRegPropertyListUUID` | `RAW(16)` | GUID for Table CMS_LR_DE_B |
-| `ColltrlLandRegisterHeaderUUID` | `RAW(16)` | GUID for Table CMS_LR_DE_A |
-| `ColltrlLandRegPrptyListNumber` | `CHAR(4)` | Serial number of the Property List Number |
-| `ColltrlLandRegPrptyListLoc` | `CHAR(60)` | Location / Parish |
-| `CollateralLandRegisterAreaSize` | `QUAN(13)` | Area |
-| `ColltrlLandRegUnitOfMeasure` | `UNIT(3)` | Unit of Measure |
-| `CollateralLandRegisterPlot` | `CHAR(10)` | Flur |
-| `ColltrlLandRegisterLandParcel` | `CHAR(60)` | Parcel of the land. Flurstueck in German |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlLandRegPropertyListUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_LR_DE_B |
+| `ColltrlLandRegisterHeaderUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_LR_DE_A |
+| `ColltrlLandRegPrptyListNumber` |  | |  |  | `CHAR(4)` | Serial number of the Property List Number |
+| `ColltrlLandRegPrptyListLoc` |  | |  |  | `CHAR(60)` | Location / Parish |
+| `CollateralLandRegisterAreaSize` |  | |  |  | `QUAN(13)` | Area |
+| `ColltrlLandRegUnitOfMeasure` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `CollateralLandRegisterPlot` |  | |  |  | `CHAR(10)` | Flur |
+| `ColltrlLandRegisterLandParcel` |  | |  |  | `CHAR(60)` | Parcel of the land. Flurstueck in German |

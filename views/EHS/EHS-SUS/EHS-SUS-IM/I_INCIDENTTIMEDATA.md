@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentTimeDataUUID` | `RAW(16)` | NodeID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `InjuredPersonInfoUUID` | `RAW(16)` | Injured Person Information UUID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `NmbrOfCalendarDaysAwayFromWork` | `INT4(10)` | Actual Calendar Days of Absence |
-| `CaseHasPermanentAbsences` | `CHAR(1)` | Permanent Absence Exists |
-| `NmbrOfRstrcdAndTransfCalDays` | `INT4(10)` | Actual Calendar Days of Restricted Duty |
-| `CaseHasPermanentRestrictions` | `CHAR(1)` | Permanent Restriction Exists |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentTimeDataUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `InjuredPersonInfoUUID` |  | |  |  | `RAW(16)` | Injured Person Information UUID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `NmbrOfCalendarDaysAwayFromWork` |  | |  |  | `INT4(10)` | Actual Calendar Days of Absence |
+| `CaseHasPermanentAbsences` |  | |  |  | `CHAR(1)` | Permanent Absence Exists |
+| `NmbrOfRstrcdAndTransfCalDays` |  | |  |  | `INT4(10)` | Actual Calendar Days of Restricted Duty |
+| `CaseHasPermanentRestrictions` |  | |  |  | `CHAR(1)` | Permanent Restriction Exists |

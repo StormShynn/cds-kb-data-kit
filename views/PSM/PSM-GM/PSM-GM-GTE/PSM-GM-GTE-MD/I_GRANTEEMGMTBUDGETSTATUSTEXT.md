@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `GranteeMgmtBudgetStatus` | `CHAR(1)` | Budget Status: Unreleased/Released |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `GranteeMgmtBudgetStatusName` | `CHAR(45)` | Budget Status Name |
-| `DomainValueName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GranteeMgmtBudgetStatus` |  | |  |  | `CHAR(1)` | Budget Status: Unreleased/Released |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `GranteeMgmtBudgetStatusName` |  | |  |  | `CHAR(45)` | Budget Status Name |
+| `DomainValueName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

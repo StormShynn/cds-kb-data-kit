@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinTransGenActivityCategory` | `NUMC(3)` | Activity Category (General) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinTransGenActivityCategory` |  | |  |  | `NUMC(3)` | Activity Category (General) |

@@ -34,15 +34,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Site` | `CHAR(4)` | Plant |
-| `SiteName` | `CHAR(30)` | Site Name |
-| `AddressID` | `CHAR(10)` | Address |
-| `StreetName` | `CHAR(60)` | Street |
-| `HouseNumber` | `CHAR(10)` | House Number |
-| `PostalCode` | `CHAR(10)` | City Postal Code |
-| `CityName` | `CHAR(40)` | City |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `County` | `CHAR(40)` | County |
-| `Country` | `CHAR(3)` | Country/Region Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Site` |  | |  |  | `CHAR(4)` | Plant |
+| `SiteName` |  | |  |  | `CHAR(30)` | Site Name |
+| `AddressID` |  | |  |  | `CHAR(10)` | Address |
+| `StreetName` |  | |  |  | `CHAR(60)` | Street |
+| `HouseNumber` |  | |  |  | `CHAR(10)` | House Number |
+| `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
+| `CityName` |  | |  |  | `CHAR(40)` | City |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `County` |  | |  |  | `CHAR(40)` | County |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |

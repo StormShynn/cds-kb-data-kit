@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinInstrTransactionCategory` | `NUMC(3)` | Transaction Category |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Financial Product Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinInstrTransactionCategory` |  | |  |  | `NUMC(3)` | Transaction Category |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Financial Product Category |

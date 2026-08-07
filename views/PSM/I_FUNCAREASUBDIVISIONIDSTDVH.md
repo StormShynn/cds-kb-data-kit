@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FunctionalAreaSubdivisionID` | `CHAR(10)` | Functional Area Subdivision ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalAreaSubdivisionID` |  | |  |  | `CHAR(10)` | Functional Area Subdivision ID |

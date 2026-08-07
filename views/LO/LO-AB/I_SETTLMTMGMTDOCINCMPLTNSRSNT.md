@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtDocIncmpltnsRsn` | `CHAR(4)` | Incompleteness Reason of Settlement Management Document |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtMgmtDocIncmpltnsRsnDesc` | `CHAR(100)` | Text (100 characters) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtDocIncmpltnsRsn` |  | |  |  | `CHAR(4)` | Incompleteness Reason of Settlement Management Document |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtMgmtDocIncmpltnsRsnDesc` |  | |  |  | `CHAR(100)` | Text (100 characters) |

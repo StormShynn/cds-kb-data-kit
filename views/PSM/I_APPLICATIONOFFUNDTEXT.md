@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `ApplicationOfFunds` | `CHAR(16)` | Application of Funds |
-| `Language` | `LANG(1)` | Language Key |
-| `ApplicationOfFundsName` | `CHAR(20)` | Application of Funds Name |
-| `ApplicationOfFundsDescription` | `CHAR(40)` | Application of Funds Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `ApplicationOfFunds` |  | |  |  | `CHAR(16)` | Application of Funds |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ApplicationOfFundsName` |  | |  |  | `CHAR(20)` | Application of Funds Name |
+| `ApplicationOfFundsDescription` |  | |  |  | `CHAR(40)` | Application of Funds Description |

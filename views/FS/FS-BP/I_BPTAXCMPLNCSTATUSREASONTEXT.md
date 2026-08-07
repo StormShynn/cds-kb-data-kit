@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BPTaxComplianceStatus` | `CHAR(1)` | Tax Compliance Status |
-| `BPTaxComplianceType` | `CHAR(6)` | Tax Compliance Type |
-| `BPTaxComplianceStatusReason` | `CHAR(2)` | Tax Compliance: Reason for Status |
-| `BPTxComplianceStatusReasonDesc` | `CHAR(40)` | Tax Compliance: Text for Status Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BPTaxComplianceStatus` |  | |  |  | `CHAR(1)` | Tax Compliance Status |
+| `BPTaxComplianceType` |  | |  |  | `CHAR(6)` | Tax Compliance Type |
+| `BPTaxComplianceStatusReason` |  | |  |  | `CHAR(2)` | Tax Compliance: Reason for Status |
+| `BPTxComplianceStatusReasonDesc` |  | |  |  | `CHAR(40)` | Tax Compliance: Text for Status Reason |

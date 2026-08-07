@@ -32,35 +32,35 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DeliveryNetwork` | `CHAR(20)` | Delivery network number |
-| `MeasurementPoint` | `CHAR(20)` | Measurement point number |
-| `Well` | `CHAR(15)` | Well ID number |
-| `WellCompletion` | `CHAR(5)` | Well Completion Number |
-| `Material` | `CHAR(40)` | Material Number |
-| `PRAContract` | `CHAR(10)` | Contract Number |
-| `SalesDate` | `DATS(8)` | Sales date |
-| `PRAOwner` | `CHAR(10)` | PRA owner |
-| `OwnerInterestType` | `CHAR(2)` | Participant Interest Type |
-| `OwnerInterestSequence` | `CHAR(2)` | Owner Interest Sequence Number |
-| `OriginatingMeasurementPt` | `CHAR(20)` | Original measurement point number |
-| `Transporter` | `CHAR(10)` | Transporter number |
-| `IsLeaseOrPlant` | `CHAR(1)` | Lease Plant Code |
-| `OriginTransaction` | `CHAR(32)` | Source Transaction ID |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On Timestamp |
-| `VolumeUnit` | `UNIT(3)` | Actual Volume Units |
-| `HeatingValUnit` | `UNIT(3)` | Heating Value Unit |
-| `EnergyUnit` | `UNIT(3)` | Actual Energy Unit |
-| `VolReducnUnit` | `UNIT(3)` | PVR Unit |
-| `EnergyReducnUnit` | `UNIT(3)` | PTR Unit |
-| `ActualVolume` | `QUAN(13)` | Actual Volume |
-| `HeatingValue` | `QUAN(13)` | Heating value |
-| `ActualEnergy` | `QUAN(13)` | Actual Energy |
-| `EntitledVolume` | `QUAN(13)` | Entitled Contract Volume |
-| `EntitledEnergy` | `QUAN(13)` | Entitled Contract Energy |
-| `ActualVolReducn` | `QUAN(13)` | Owner PVR |
-| `ActualEnergyReducn` | `QUAN(13)` | Owner PTR |
-| `EntitledVolReducn` | `QUAN(13)` | Owner PVR |
-| `EntitledEngyReducn` | `QUAN(13)` | Owner PTR |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryNetwork` |  | |  |  | `CHAR(20)` | Delivery network number |
+| `MeasurementPoint` |  | |  |  | `CHAR(20)` | Measurement point number |
+| `Well` |  | |  |  | `CHAR(15)` | Well ID number |
+| `WellCompletion` |  | |  |  | `CHAR(5)` | Well Completion Number |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `PRAContract` |  | |  |  | `CHAR(10)` | Contract Number |
+| `SalesDate` |  | |  |  | `DATS(8)` | Sales date |
+| `PRAOwner` |  | |  |  | `CHAR(10)` | PRA owner |
+| `OwnerInterestType` |  | |  |  | `CHAR(2)` | Participant Interest Type |
+| `OwnerInterestSequence` |  | |  |  | `CHAR(2)` | Owner Interest Sequence Number |
+| `OriginatingMeasurementPt` |  | |  |  | `CHAR(20)` | Original measurement point number |
+| `Transporter` |  | |  |  | `CHAR(10)` | Transporter number |
+| `IsLeaseOrPlant` |  | |  |  | `CHAR(1)` | Lease Plant Code |
+| `OriginTransaction` |  | |  |  | `CHAR(32)` | Source Transaction ID |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |
+| `VolumeUnit` |  | |  |  | `UNIT(3)` | Actual Volume Units |
+| `HeatingValUnit` |  | |  |  | `UNIT(3)` | Heating Value Unit |
+| `EnergyUnit` |  | |  |  | `UNIT(3)` | Actual Energy Unit |
+| `VolReducnUnit` |  | |  |  | `UNIT(3)` | PVR Unit |
+| `EnergyReducnUnit` |  | |  |  | `UNIT(3)` | PTR Unit |
+| `ActualVolume` |  | |  |  | `QUAN(13)` | Actual Volume |
+| `HeatingValue` |  | |  |  | `QUAN(13)` | Heating value |
+| `ActualEnergy` |  | |  |  | `QUAN(13)` | Actual Energy |
+| `EntitledVolume` |  | |  |  | `QUAN(13)` | Entitled Contract Volume |
+| `EntitledEnergy` |  | |  |  | `QUAN(13)` | Entitled Contract Energy |
+| `ActualVolReducn` |  | |  |  | `QUAN(13)` | Owner PVR |
+| `ActualEnergyReducn` |  | |  |  | `QUAN(13)` | Owner PTR |
+| `EntitledVolReducn` |  | |  |  | `QUAN(13)` | Owner PVR |
+| `EntitledEngyReducn` |  | |  |  | `QUAN(13)` | Owner PTR |

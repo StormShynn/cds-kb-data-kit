@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementCostType` | `CHAR(6)` | Cost Type of the Pool Agreement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementCostType` |  | |  |  | `CHAR(6)` | Cost Type of the Pool Agreement |

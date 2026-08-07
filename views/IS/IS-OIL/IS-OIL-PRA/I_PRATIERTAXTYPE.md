@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TierTaxType` | `CHAR(1)` | Tier Tax |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TierTaxType` |  | |  |  | `CHAR(1)` | Tier Tax |

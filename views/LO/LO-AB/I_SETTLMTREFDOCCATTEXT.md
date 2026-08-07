@@ -42,9 +42,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtRefDocCat` | `CHAR(2)` | Reference Document Category in Settlement Management |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtRefDocCatName` | `CHAR(60)` | Text of Reference Document Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtRefDocCat` |  | |  |  | `CHAR(2)` | Reference Document Category in Settlement Management |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtRefDocCatName` |  | |  |  | `CHAR(60)` | Text of Reference Document Category |

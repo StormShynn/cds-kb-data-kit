@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `ActualPlanCode` | `CHAR(1)` | Actual Plan Code |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `AmountInCompanyCodeCurrency` | `CURR(23)` |  |
-| `CountryRegion` | `CHAR(6)` |  |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `AmountInGlobalCurrency` | `CURR(23)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` |  |
+| `CountryRegion` |  | |  |  | `CHAR(6)` |  |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` |  |

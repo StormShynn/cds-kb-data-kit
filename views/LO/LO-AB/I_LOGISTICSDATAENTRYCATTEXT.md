@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LogisticsDataEntryCat` | `CHAR(1)` | Entry Category for Logistics Data |
-| `Language` | `LANG(1)` | Language Key |
-| `LogisticsDataEntryCatName` | `CHAR(60)` | Description of Entry Category for Logistics Data |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LogisticsDataEntryCat` |  | |  |  | `CHAR(1)` | Entry Category for Logistics Data |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LogisticsDataEntryCatName` |  | |  |  | `CHAR(60)` | Description of Entry Category for Logistics Data |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementCostType` | `CHAR(6)` | Cost Type of the Pool Agreement |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `AgreementCostTypeText` | `CHAR(40)` | Name of the Liquidation Mode |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementCostType` |  | |  |  | `CHAR(6)` | Cost Type of the Pool Agreement |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `AgreementCostTypeText` |  | |  |  | `CHAR(40)` | Name of the Liquidation Mode |

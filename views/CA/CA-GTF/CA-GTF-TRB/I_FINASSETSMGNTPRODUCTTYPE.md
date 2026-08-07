@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialAssetsMgmtProductType` | `CHAR(3)` | Product Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialAssetsMgmtProductType` |  | |  |  | `CHAR(3)` | Product Type |

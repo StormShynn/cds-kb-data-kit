@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountReviewAreaUUID` | `RAW(16)` | Review Area UUID |
-| `BankAccountReviewUUID` | `RAW(16)` | Bank Account Review UUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountReviewAreaUUID` |  | |  |  | `RAW(16)` | Review Area UUID |
+| `BankAccountReviewUUID` |  | |  |  | `RAW(16)` | Bank Account Review UUID |

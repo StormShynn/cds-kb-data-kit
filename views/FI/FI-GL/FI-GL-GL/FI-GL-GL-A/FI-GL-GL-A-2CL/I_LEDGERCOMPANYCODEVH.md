@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `CityName` | `CHAR(25)` | City |
-| `Currency` | `CUKY(5)` | Currency Key |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `CityName` |  | |  |  | `CHAR(25)` | City |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |

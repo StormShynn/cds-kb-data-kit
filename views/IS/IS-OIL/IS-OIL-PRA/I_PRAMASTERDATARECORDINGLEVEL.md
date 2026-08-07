@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MasterDataRecordingLvl` | `CHAR(1)` | ONRR-2014 - Master Level |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MasterDataRecordingLvl` |  | |  |  | `CHAR(1)` | ONRR-2014 - Master Level |

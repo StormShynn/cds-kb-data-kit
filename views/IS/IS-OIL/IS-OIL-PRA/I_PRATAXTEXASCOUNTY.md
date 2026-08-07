@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TexasCounty` | `NUMC(3)` | Texas County Identifier |
-| `TexasCountyName` | `CHAR(30)` | Texas County Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TexasCounty` |  | |  |  | `NUMC(3)` | Texas County Identifier |
+| `TexasCountyName` |  | |  |  | `CHAR(30)` | Texas County Name |

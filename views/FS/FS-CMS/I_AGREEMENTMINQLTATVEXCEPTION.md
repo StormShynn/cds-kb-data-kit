@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlAgrmtMinQltatvExcptn` | `CHAR(6)` | Exceptions for Minimum Risk Weight |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlAgrmtMinQltatvExcptn` |  | |  |  | `CHAR(6)` | Exceptions for Minimum Risk Weight |

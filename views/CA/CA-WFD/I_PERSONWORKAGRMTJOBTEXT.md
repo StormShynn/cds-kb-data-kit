@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Job` | `CHAR(128)` | Job Code |
-| `Language` | `LANG(1)` | Language Key |
-| `StartDate` | `DATS(8)` | Start Date |
-| `EndDate` | `DATS(8)` | End Date |
-| `JobShortName` | `CHAR(128)` | Job Code |
-| `JobName` | `CHAR(256)` | Job Title |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Job` |  | |  |  | `CHAR(128)` | Job Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `StartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `EndDate` |  | |  |  | `DATS(8)` | End Date |
+| `JobShortName` |  | |  |  | `CHAR(128)` | Job Code |
+| `JobName` |  | |  |  | `CHAR(256)` | Job Title |

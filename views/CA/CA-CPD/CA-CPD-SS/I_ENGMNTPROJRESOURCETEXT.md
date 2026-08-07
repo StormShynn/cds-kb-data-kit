@@ -35,10 +35,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectResourceType` | `CHAR(4)` |  |
-| `EngagementProjectResource` | `CHAR(40)` | Resource ID |
-| `Language` | `LANG(1)` | Language Key |
-| `EngagementProjResourceText` | `CHAR(40)` | Resource Description |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectResourceType` |  | |  |  | `CHAR(4)` |  |
+| `EngagementProjectResource` |  | |  |  | `CHAR(40)` | Resource ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EngagementProjResourceText` |  | |  |  | `CHAR(40)` | Resource Description |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |

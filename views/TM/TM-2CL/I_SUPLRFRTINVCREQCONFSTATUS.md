@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrFrtInvcReqConfStatus` | `CHAR(2)` | Freight Settlement Confirmation Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrFrtInvcReqConfStatus` |  | |  |  | `CHAR(2)` | Freight Settlement Confirmation Status |

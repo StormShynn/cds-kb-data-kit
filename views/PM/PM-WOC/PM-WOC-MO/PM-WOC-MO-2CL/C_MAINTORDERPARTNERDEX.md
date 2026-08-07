@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintObjectInternalID` | `CHAR(22)` | Object Number |
-| `PartnerFunction` | `CHAR(2)` | Partner Function |
-| `MaintenancePartnerObjectNumber` | `NUMC(6)` | Counter for differentiation 6-digit |
-| `MaintenanceOrder` | `CHAR(12)` | Order Number |
-| `MaintObjectCategory` | `CHAR(3)` | Object Category |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreationTime` | `TIMS(6)` | Time at Which Record Was Added |
-| `LastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `LastChangeTime` | `TIMS(6)` | Time of Change |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `MaintenancePartner` | `CHAR(12)` | Partner |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintObjectInternalID` |  | |  |  | `CHAR(22)` | Object Number |
+| `PartnerFunction` |  | |  |  | `CHAR(2)` | Partner Function |
+| `MaintenancePartnerObjectNumber` |  | |  |  | `NUMC(6)` | Counter for differentiation 6-digit |
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintObjectCategory` |  | |  |  | `CHAR(3)` | Object Category |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at Which Record Was Added |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time of Change |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `MaintenancePartner` |  | |  |  | `CHAR(12)` | Partner |

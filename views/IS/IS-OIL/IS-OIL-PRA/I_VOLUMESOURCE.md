@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `VolumeSource` | `CHAR(1)` | Volume Source Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VolumeSource` |  | |  |  | `CHAR(1)` | Volume Source Code |

@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `Language` | `LANG(1)` | Language Key |
-| `BankAccountDescription` | `CHAR(60)` | Account Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BankAccountDescription` |  | |  |  | `CHAR(60)` | Account Description |

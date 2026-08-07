@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LglCntntMDocumentStampUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LglCntntMDocument` | `CHAR(10)` | Document ID |
-| `LglCntntMDocumentStampName` | `CHAR(40)` | Long Text |
-| `LegalTransactionHealthName` | `CHAR(40)` | Long Text |
-| `LglCntntMEntity` | `CHAR(10)` | Entity ID |
-| `LglCntntMEntityTypeName` | `CHAR(40)` | Long Text |
-| `LglCntntMGovLawText` | `CHAR(92)` | Governing Law Text |
-| `LglCntntMMainOrgName` | `CHAR(25)` | Name of Company Code or Company |
-| `LglCntntMMainOrgTypeName` | `CHAR(60)` | Short Text for Fixed Values |
-| `TotalNumberOfLegalDocuments` | `INT4(10)` | Total No. of Files |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocumentStampUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMDocument` |  | |  |  | `CHAR(10)` | Document ID |
+| `LglCntntMDocumentStampName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LegalTransactionHealthName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMEntity` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMEntityTypeName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMGovLawText` |  | |  |  | `CHAR(92)` | Governing Law Text |
+| `LglCntntMMainOrgName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `LglCntntMMainOrgTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `TotalNumberOfLegalDocuments` |  | |  |  | `INT4(10)` | Total No. of Files |

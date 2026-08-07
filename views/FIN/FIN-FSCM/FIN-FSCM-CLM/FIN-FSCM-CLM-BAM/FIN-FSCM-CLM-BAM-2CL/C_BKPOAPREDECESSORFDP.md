@@ -34,13 +34,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankPowerOfAttorneyUUID` | `RAW(16)` | Power of Attorney UUID |
-| `BkPOAPredecessorUUID` | `RAW(16)` | Power of Attorney: Predecessor Row UUID |
-| `BkPOAAuthorizationGroup` | `CHAR(10)` | Authorization Group for Powers of Attorney |
-| `BankPowerOfAttorneyPredecessor` | `CHAR(20)` | ID of Predecessor Power of Attorney |
-| `PredecessorBankPOAUUID` | `RAW(16)` | Power of Attorney UUID |
-| `BankPowerOfAttorneyName` | `CHAR(40)` | Power of Attorney Description |
-| `ValidityEndDate` | `DATS(8)` | Valid-To Date |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` |  | |  |  | `RAW(16)` | Power of Attorney UUID |
+| `BkPOAPredecessorUUID` |  | |  |  | `RAW(16)` | Power of Attorney: Predecessor Row UUID |
+| `BkPOAAuthorizationGroup` |  | |  |  | `CHAR(10)` | Authorization Group for Powers of Attorney |
+| `BankPowerOfAttorneyPredecessor` |  | |  |  | `CHAR(20)` | ID of Predecessor Power of Attorney |
+| `PredecessorBankPOAUUID` |  | |  |  | `RAW(16)` | Power of Attorney UUID |
+| `BankPowerOfAttorneyName` |  | |  |  | `CHAR(40)` | Power of Attorney Description |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |

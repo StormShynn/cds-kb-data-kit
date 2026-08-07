@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompetitionPressureCategory` | `CHAR(1)` | Competition characterization of a product |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompetitionPressureCategory` |  | |  |  | `CHAR(1)` | Competition characterization of a product |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

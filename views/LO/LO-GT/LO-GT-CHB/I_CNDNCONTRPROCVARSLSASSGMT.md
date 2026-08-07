@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrProcVar` | `CHAR(4)` | Condition Contract Process Variant |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrProcVar` |  | |  |  | `CHAR(4)` | Condition Contract Process Variant |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |

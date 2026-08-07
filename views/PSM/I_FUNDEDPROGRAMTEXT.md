@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundedProgram` | `CHAR(24)` | Funded Program |
-| `Language` | `LANG(1)` | Language Key |
-| `FundedProgramName` | `CHAR(20)` | Funded Program Name |
-| `FundedProgramDescription` | `CHAR(50)` | Funded Program Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundedProgram` |  | |  |  | `CHAR(24)` | Funded Program |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FundedProgramName` |  | |  |  | `CHAR(20)` | Funded Program Name |
+| `FundedProgramDescription` |  | |  |  | `CHAR(50)` | Funded Program Description |

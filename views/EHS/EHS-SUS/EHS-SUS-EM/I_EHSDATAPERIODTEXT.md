@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSDataPeriod` | `CHAR(3)` | Data Period of Data Collection Definition |
-| `Language` | `LANG(1)` | Language Key |
-| `EHSDataPeriodText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSDataPeriod` |  | |  |  | `CHAR(3)` | Data Period of Data Collection Definition |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EHSDataPeriodText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

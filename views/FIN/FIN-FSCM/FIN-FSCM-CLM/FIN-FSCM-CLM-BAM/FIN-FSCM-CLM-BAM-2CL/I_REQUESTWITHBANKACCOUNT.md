@@ -35,20 +35,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountChangeRequest` | `NUMC(12)` | Change Request ID |
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `BankAccountRevision` | `NUMC(4)` | Revision Number |
-| `BankAccount` | `CHAR(40)` | Bank Account Number |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` | `CHAR(15)` | Bank Key |
-| `AccountType` | `CHAR(10)` | Bank Account Type ID |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BankAccountType` | `CHAR(10)` | Bank Account Type ID |
-| `BankAccountHolderName` | `CHAR(60)` | Bank Account Holder |
-| `IBAN` | `CHAR(34)` | IBAN (International Bank Account Number) |
-| `BankAccountCurrency` | `CUKY(5)` | Currency Key |
-| `CountryName` | `CHAR(50)` | Country/Region Name |
-| `BankAccountNumber` | `CHAR(40)` | Bank Account Number |
-| `BankAccountStatus` | `CHAR(2)` | Bank Account Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountChangeRequest` |  | |  |  | `NUMC(12)` | Change Request ID |
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `BankAccountRevision` |  | |  |  | `NUMC(4)` | Revision Number |
+| `BankAccount` |  | |  |  | `CHAR(40)` | Bank Account Number |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Key |
+| `AccountType` |  | |  |  | `CHAR(10)` | Bank Account Type ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BankAccountType` |  | |  |  | `CHAR(10)` | Bank Account Type ID |
+| `BankAccountHolderName` |  | |  |  | `CHAR(60)` | Bank Account Holder |
+| `IBAN` |  | |  |  | `CHAR(34)` | IBAN (International Bank Account Number) |
+| `BankAccountCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
+| `BankAccountNumber` |  | |  |  | `CHAR(40)` | Bank Account Number |
+| `BankAccountStatus` |  | |  |  | `CHAR(2)` | Bank Account Status |

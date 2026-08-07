@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdLifeCycleStatus` | `CHAR(2)` | Life Cycle Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdLifeCycleStatus` |  | |  |  | `CHAR(2)` | Life Cycle Status |

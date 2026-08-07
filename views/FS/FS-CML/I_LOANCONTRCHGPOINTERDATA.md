@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanChangePointerUUID` | `CHAR(32)` | GUID in 'CHAR' Format in Uppercase |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `LoanArchivingCategory` | `CHAR(1)` | Archiving Category Indicator |
-| `LoanContractID` | `CHAR(13)` | Contract Number |
-| `LoanChgPointerLastChgDteTme` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `LoanChgPointerChangeCat` | `CHAR(4)` | Change Category |
-| `LoanChgPointerChgSubCat` | `CHAR(4)` | Change Sub-Category |
-| `LoanChgPointerEnteredDate` | `DATS(8)` | First Entered On |
-| `LoanChgPointerEnteredTime` | `TIMS(6)` | Time of Creation |
-| `LoanChgPointerEnteredBy` | `CHAR(12)` | Entered By |
-| `LoanChgPointerEnteredSource` | `CHAR(10)` | Source of Initial Entry |
-| `LoanChgPointerProcgSts` | `CHAR(1)` | Status of Change Pointer Regarding ALE Processing |
-| `LoanChgPointerProcgGrp` | `NUMC(2)` | ALE Processing Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanChangePointerUUID` |  | |  |  | `CHAR(32)` | GUID in 'CHAR' Format in Uppercase |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `LoanArchivingCategory` |  | |  |  | `CHAR(1)` | Archiving Category Indicator |
+| `LoanContractID` |  | |  |  | `CHAR(13)` | Contract Number |
+| `LoanChgPointerLastChgDteTme` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LoanChgPointerChangeCat` |  | |  |  | `CHAR(4)` | Change Category |
+| `LoanChgPointerChgSubCat` |  | |  |  | `CHAR(4)` | Change Sub-Category |
+| `LoanChgPointerEnteredDate` |  | |  |  | `DATS(8)` | First Entered On |
+| `LoanChgPointerEnteredTime` |  | |  |  | `TIMS(6)` | Time of Creation |
+| `LoanChgPointerEnteredBy` |  | |  |  | `CHAR(12)` | Entered By |
+| `LoanChgPointerEnteredSource` |  | |  |  | `CHAR(10)` | Source of Initial Entry |
+| `LoanChgPointerProcgSts` |  | |  |  | `CHAR(1)` | Status of Change Pointer Regarding ALE Processing |
+| `LoanChgPointerProcgGrp` |  | |  |  | `NUMC(2)` | ALE Processing Group |

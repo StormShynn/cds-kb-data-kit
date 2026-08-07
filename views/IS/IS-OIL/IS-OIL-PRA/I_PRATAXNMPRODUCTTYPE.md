@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductType` | `CHAR(2)` | Tax 2.0 - NM - Product Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` |  | |  |  | `CHAR(2)` | Tax 2.0 - NM - Product Code |

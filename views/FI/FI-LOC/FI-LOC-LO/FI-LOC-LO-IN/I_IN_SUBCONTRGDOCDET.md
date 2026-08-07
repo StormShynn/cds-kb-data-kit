@@ -35,27 +35,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PurgOrgCompanyCode` | `CHAR(4)` | Company Code |
-| `MaterialDocument` | `CHAR(10)` | Number of Material Document |
-| `MaterialDocumentYear` | `NUMC(4)` | Material Document Year |
-| `MaterialDocumentItem` | `NUMC(4)` | Item in Material Document |
-| `IN_SequenceNumber` | `NUMC(4)` | Sequence number |
-| `IN_SubcontrgDocNmbr` | `CHAR(10)` | Challan Number or Invoice Number for Subcontracting |
-| `IN_SubcontractingDocumentItem` | `NUMC(6)` | Challan Item or Invoice Item for Subcontracting |
-| `MaterialDocPostgDate` | `DATS(8)` | Posting Date in the Document |
-| `GoodsMovementType` | `CHAR(3)` | Movement Type (Inventory Management) |
-| `Plant` | `CHAR(4)` | Plant |
-| `QuantityInBaseUnit` | `QUAN(13)` | Quantity |
-| `IN_GRItemRemainingQuantity` | `QUAN(13)` | GR Remaining Quantity |
-| `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `Quantity` | `QUAN(13)` | Quantity |
-| `IN_ChallanItemOpenQuantity` | `QUAN(13)` | Challan Quantity Open for Reconciliation |
-| `Material` | `CHAR(40)` | Material Number |
-| `ActiveSupplier` | `CHAR(10)` | Account Number of Supplier |
-| `IN_SubcontrgItmRcnldQty` | `QUAN(13)` | Challan Reconciled Quantity |
-| `QuantityUnit` | `UNIT(3)` | Base Unit of Measure |
-| `IN_ChallanItemStatus` | `CHAR(1)` | Subcontracting Status |
-| `IssgOrRcvgStkIdfgSpclStkType` | `CHAR(1)` | Special Stock Indicator |
-| `Batch` | `CHAR(10)` | Batch Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurgOrgCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `MaterialDocument` |  | |  |  | `CHAR(10)` | Number of Material Document |
+| `MaterialDocumentYear` |  | |  |  | `NUMC(4)` | Material Document Year |
+| `MaterialDocumentItem` |  | |  |  | `NUMC(4)` | Item in Material Document |
+| `IN_SequenceNumber` |  | |  |  | `NUMC(4)` | Sequence number |
+| `IN_SubcontrgDocNmbr` |  | |  |  | `CHAR(10)` | Challan Number or Invoice Number for Subcontracting |
+| `IN_SubcontractingDocumentItem` |  | |  |  | `NUMC(6)` | Challan Item or Invoice Item for Subcontracting |
+| `MaterialDocPostgDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `GoodsMovementType` |  | |  |  | `CHAR(3)` | Movement Type (Inventory Management) |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `QuantityInBaseUnit` |  | |  |  | `QUAN(13)` | Quantity |
+| `IN_GRItemRemainingQuantity` |  | |  |  | `QUAN(13)` | GR Remaining Quantity |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `Quantity` |  | |  |  | `QUAN(13)` | Quantity |
+| `IN_ChallanItemOpenQuantity` |  | |  |  | `QUAN(13)` | Challan Quantity Open for Reconciliation |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `ActiveSupplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `IN_SubcontrgItmRcnldQty` |  | |  |  | `QUAN(13)` | Challan Reconciled Quantity |
+| `QuantityUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `IN_ChallanItemStatus` |  | |  |  | `CHAR(1)` | Subcontracting Status |
+| `IssgOrRcvgStkIdfgSpclStkType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |

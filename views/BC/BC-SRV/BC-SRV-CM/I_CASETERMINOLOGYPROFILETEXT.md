@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CaseTerminologyProfile` | `CHAR(8)` | Terminology Profile ID |
-| `Profiledescription` | `CHAR(40)` | Case: Profile Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseTerminologyProfile` |  | |  |  | `CHAR(8)` | Terminology Profile ID |
+| `Profiledescription` |  | |  |  | `CHAR(40)` | Case: Profile Description |

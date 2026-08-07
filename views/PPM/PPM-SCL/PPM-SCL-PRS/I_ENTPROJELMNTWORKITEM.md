@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EntProjElmntWorkItemUUID` | `RAW(16)` | Entity Guid |
-| `ProjectElementUUID` | `RAW(16)` | Entity Guid |
-| `ProjectUUID` | `RAW(16)` | Entity Guid |
-| `EntProjElmntWorkItem` | `CHAR(10)` | Enterprise Project Element Work Item |
-| `EntProjElmntWorkItemName` | `CHAR(40)` | Enterprise Project Element Work Item Name |
-| `EntProjElmntWorkItemIsInactive` | `CHAR(1)` | Enterprise Project Element Work Item is Inactive |
-| `EntProjElmntWorkItemIsCnfgrd` | `CHAR(1)` | Enterprise Project Element Work Item is Configured |
-| `EntProjElmntWrkItmLastUpdtSrce` | `CHAR(1)` | Enterprise Project Element Work Item - Source of Update |
-| `EntProjElmntWrkItmCrtedByUsr` | `CHAR(12)` | Name of Person Who Created Object |
-| `EntProjElmntWrkItmCrtnDteTme` | `DEC(15)` | Timestamp of Object Creation |
-| `EntProjElmntWrkItmLstChgByUsr` | `CHAR(12)` | Name of Person Who Changed Object |
-| `EntProjElmntWrkItmLstChgDteTme` | `DEC(15)` | Timestamp of Last Object Change |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntWorkItemUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `ProjectElementUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `ProjectUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `EntProjElmntWorkItem` |  | |  |  | `CHAR(10)` | Enterprise Project Element Work Item |
+| `EntProjElmntWorkItemName` |  | |  |  | `CHAR(40)` | Enterprise Project Element Work Item Name |
+| `EntProjElmntWorkItemIsInactive` |  | |  |  | `CHAR(1)` | Enterprise Project Element Work Item is Inactive |
+| `EntProjElmntWorkItemIsCnfgrd` |  | |  |  | `CHAR(1)` | Enterprise Project Element Work Item is Configured |
+| `EntProjElmntWrkItmLastUpdtSrce` |  | |  |  | `CHAR(1)` | Enterprise Project Element Work Item - Source of Update |
+| `EntProjElmntWrkItmCrtedByUsr` |  | |  |  | `CHAR(12)` | Name of Person Who Created Object |
+| `EntProjElmntWrkItmCrtnDteTme` |  | |  |  | `DEC(15)` | Timestamp of Object Creation |
+| `EntProjElmntWrkItmLstChgByUsr` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `EntProjElmntWrkItmLstChgDteTme` |  | |  |  | `DEC(15)` | Timestamp of Last Object Change |

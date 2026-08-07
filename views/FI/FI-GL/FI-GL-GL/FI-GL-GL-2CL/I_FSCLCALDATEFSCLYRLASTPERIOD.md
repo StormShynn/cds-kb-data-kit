@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Ledger` | `CHAR(2)` | Ledger |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |

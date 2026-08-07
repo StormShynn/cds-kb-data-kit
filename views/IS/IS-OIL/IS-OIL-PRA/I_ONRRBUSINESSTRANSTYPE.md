@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRBusinessTransactionType` | `CHAR(1)` | ONRR-2014 - PRA Detail Line Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRBusinessTransactionType` |  | |  |  | `CHAR(1)` | ONRR-2014 - PRA Detail Line Type |

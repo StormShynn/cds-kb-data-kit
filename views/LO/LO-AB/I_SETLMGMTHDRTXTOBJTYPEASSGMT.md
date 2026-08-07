@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtHdrTxtDetnProced` | `CHAR(2)` | Text Determination Procedure for Header |
-| `SettlmtMgmtHdrTxtObjType` | `CHAR(4)` | Specific Text ID for a Settlement Management Document Header |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtHdrTxtDetnProced` |  | |  |  | `CHAR(2)` | Text Determination Procedure for Header |
+| `SettlmtMgmtHdrTxtObjType` |  | |  |  | `CHAR(4)` | Specific Text ID for a Settlement Management Document Header |

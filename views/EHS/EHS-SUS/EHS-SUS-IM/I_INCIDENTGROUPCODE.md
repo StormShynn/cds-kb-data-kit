@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentGroupCode` | `CHAR(21)` | Incident Group |
-| `EHSInactiveConfiguration` | `CHAR(1)` | Deactivate Configuration |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentGroupCode` |  | |  |  | `CHAR(21)` | Incident Group |
+| `EHSInactiveConfiguration` |  | |  |  | `CHAR(1)` | Deactivate Configuration |

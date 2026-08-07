@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusVolTableGroup` | `CHAR(4)` | Business Volume Table Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolTableGroup` |  | |  |  | `CHAR(4)` | Business Volume Table Group |

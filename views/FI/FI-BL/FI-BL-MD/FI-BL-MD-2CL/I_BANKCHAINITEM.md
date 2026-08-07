@@ -32,18 +32,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BkChnCountryKeyOfRecipientBank` | `CHAR(3)` | Country/Region Key of Recipient Bank |
-| `BkChnBankKeyOfRecipientBank` | `CHAR(15)` | Bank Key of Recipient Bank |
-| `BkChnAcctNumberAtRecipientBank` | `CHAR(35)` | Account Number at Recipient Bank |
-| `BkChnCurrencyKey` | `CUKY(5)` | Currency |
-| `BkChnCountryKeyOfSenderBank` | `CHAR(3)` | Country/Region Key of Sender Bank |
-| `BkChnBankKeyOfSenderBank` | `CHAR(15)` | Bank Key of Sender Bank |
-| `BkChnPaymentMethodSupplement` | `CHAR(2)` | Payment method supplement |
-| `BkChnIntermediaryBank` | `NUMC(2)` | Current Number of a Bank in Bank Chain |
-| `BkChnTypeOfBankInBankChain` | `CHAR(1)` | Type of Bank in a Bank Chain (Correspondent, Intermediary) |
-| `BkChnCntryKeyOfCorrespondentBk` | `CHAR(3)` | Country/Region Key of a Correspondent Bank |
-| `BkChnBkKeyOfCorrespondenceBank` | `CHAR(15)` | Bank Key of a Correspondent Bank |
-| `BkChnAcctNmbrAtCorrespondBank` | `CHAR(35)` | Account Number at Correspondent Bank |
-| `IBAN` | `CHAR(34)` | IBAN (International Bank Account Number) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BkChnCountryKeyOfRecipientBank` |  | |  |  | `CHAR(3)` | Country/Region Key of Recipient Bank |
+| `BkChnBankKeyOfRecipientBank` |  | |  |  | `CHAR(15)` | Bank Key of Recipient Bank |
+| `BkChnAcctNumberAtRecipientBank` |  | |  |  | `CHAR(35)` | Account Number at Recipient Bank |
+| `BkChnCurrencyKey` |  | |  |  | `CUKY(5)` | Currency |
+| `BkChnCountryKeyOfSenderBank` |  | |  |  | `CHAR(3)` | Country/Region Key of Sender Bank |
+| `BkChnBankKeyOfSenderBank` |  | |  |  | `CHAR(15)` | Bank Key of Sender Bank |
+| `BkChnPaymentMethodSupplement` |  | |  |  | `CHAR(2)` | Payment method supplement |
+| `BkChnIntermediaryBank` |  | |  |  | `NUMC(2)` | Current Number of a Bank in Bank Chain |
+| `BkChnTypeOfBankInBankChain` |  | |  |  | `CHAR(1)` | Type of Bank in a Bank Chain (Correspondent, Intermediary) |
+| `BkChnCntryKeyOfCorrespondentBk` |  | |  |  | `CHAR(3)` | Country/Region Key of a Correspondent Bank |
+| `BkChnBkKeyOfCorrespondenceBank` |  | |  |  | `CHAR(15)` | Bank Key of a Correspondent Bank |
+| `BkChnAcctNmbrAtCorrespondBank` |  | |  |  | `CHAR(35)` | Account Number at Correspondent Bank |
+| `IBAN` |  | |  |  | `CHAR(34)` | IBAN (International Bank Account Number) |

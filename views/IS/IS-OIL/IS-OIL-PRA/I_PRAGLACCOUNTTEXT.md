@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `GLAccount` | `CHAR(10)` | G/L Account Number |
-| `Language` | `LANG(1)` | Language Key |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `GLAccountName` | `CHAR(20)` | G/L Account Name |
-| `GLAccountLongName` | `CHAR(50)` | G/L Account Long Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account Number |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `GLAccountName` |  | |  |  | `CHAR(20)` | G/L Account Name |
+| `GLAccountLongName` |  | |  |  | `CHAR(50)` | G/L Account Long Name |

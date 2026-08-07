@@ -34,23 +34,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MasterDataChangeProcess` | `NUMC(12)` | Master Data Change Process Identifier |
-| `MDQltyDimensionCategory` | `CHAR(20)` | MDQ Dimension Category |
-| `MDQltyDimension` | `CHAR(20)` | MDQ Dimension |
-| `MDQualityBusinessRule` | `CHAR(26)` | Master Data Quality Rule Definition ID |
-| `MDQltyBusinessObjectTypeCode` | `CHAR(10)` | Master Data Change Process Business Object Type Code |
-| `MDQualityBusinessRuleName` | `CHAR(50)` | Master Data Quality Rule Definition Name |
-| `MDQltyBusinessRuleBaseTable` | `CHAR(30)` | Base Table |
-| `MDQltyBusinessRuleOwner` | `CHAR(12)` | Master Data Quality Business Rule Owner |
-| `MDQltyBusRuleCheckedField` | `CHAR(30)` | Master Data Quality Fieldname of the Checked Field |
-| `MDQltyBusinessRuleExpert` | `CHAR(12)` | Master Data Quality Business Rule Expert |
-| `MDChgProcessIsLatest` | `CHAR(1)` |  |
-| `MDChgProcessFinishDate` | `DATS(8)` |  |
-| `MDQltyBusRuleNavigationPath` | `CHAR(248)` | Fiori Host Path concatenated with Validation Rule Nav Path |
-| `MDQltyDimensionScore` | `INT1(3)` |  |
-| `MDQltyDimnTargetScoreValue` | `DEC(4)` | MDQ Evaluation Target Threshold |
-| `MDQltyDimnCategoryScore` | `INT1(3)` |  |
-| `MDQltyDimnCatTargetScoreValue` | `DEC(4)` | MDQ Evaluation Target Threshold |
-| `MDQltyRuleScore` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MasterDataChangeProcess` |  | |  |  | `NUMC(12)` | Master Data Change Process Identifier |
+| `MDQltyDimensionCategory` |  | |  |  | `CHAR(20)` | MDQ Dimension Category |
+| `MDQltyDimension` |  | |  |  | `CHAR(20)` | MDQ Dimension |
+| `MDQualityBusinessRule` |  | |  |  | `CHAR(26)` | Master Data Quality Rule Definition ID |
+| `MDQltyBusinessObjectTypeCode` |  | |  |  | `CHAR(10)` | Master Data Change Process Business Object Type Code |
+| `MDQualityBusinessRuleName` |  | |  |  | `CHAR(50)` | Master Data Quality Rule Definition Name |
+| `MDQltyBusinessRuleBaseTable` |  | |  |  | `CHAR(30)` | Base Table |
+| `MDQltyBusinessRuleOwner` |  | |  |  | `CHAR(12)` | Master Data Quality Business Rule Owner |
+| `MDQltyBusRuleCheckedField` |  | |  |  | `CHAR(30)` | Master Data Quality Fieldname of the Checked Field |
+| `MDQltyBusinessRuleExpert` |  | |  |  | `CHAR(12)` | Master Data Quality Business Rule Expert |
+| `MDChgProcessIsLatest` |  | |  |  | `CHAR(1)` |  |
+| `MDChgProcessFinishDate` |  | |  |  | `DATS(8)` |  |
+| `MDQltyBusRuleNavigationPath` |  | |  |  | `CHAR(248)` | Fiori Host Path concatenated with Validation Rule Nav Path |
+| `MDQltyDimensionScore` |  | |  |  | `INT1(3)` |  |
+| `MDQltyDimnTargetScoreValue` |  | |  |  | `DEC(4)` | MDQ Evaluation Target Threshold |
+| `MDQltyDimnCategoryScore` |  | |  |  | `INT1(3)` |  |
+| `MDQltyDimnCatTargetScoreValue` |  | |  |  | `DEC(4)` | MDQ Evaluation Target Threshold |
+| `MDQltyRuleScore` |  | |  |  | `INT1(3)` |  |

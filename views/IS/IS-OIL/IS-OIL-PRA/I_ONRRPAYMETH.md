@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRPaymentMethod` | `CHAR(1)` | ONRR-2014 - Payment Method Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRPaymentMethod` |  | |  |  | `CHAR(1)` | ONRR-2014 - Payment Method Code |

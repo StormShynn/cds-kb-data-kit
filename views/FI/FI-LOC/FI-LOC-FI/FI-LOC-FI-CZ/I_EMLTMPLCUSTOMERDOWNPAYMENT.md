@@ -36,9 +36,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `OfficialDocumentNumber` | `CHAR(200)` | Official Document Number Value |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `OfficialDocumentNumber` |  | |  |  | `CHAR(200)` | Official Document Number Value |

@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LocAggregationUUID` | `RAW(16)` | NodeID |
-| `LocAggregationID` | `CHAR(20)` | Location Aggregation ID |
-| `LocAggregationMigrationSource` | `CHAR(60)` | Migration Source |
-| `LocAggregationName` | `CHAR(132)` | Location Aggregation Name |
-| `DataUsagePeriodicity` | `CHAR(3)` | Data Period of Aggregation Definition |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `UnitOfMeasure` | `UNIT(3)` | Units of Measurement of Various Types |
-| `EHSSubjectType` | `CHAR(2)` | Subject Type |
-| `EHSSubjectUUID` | `RAW(16)` | Reference to Subject Type BO Root Node ID |
-| `LocAggregationTitle` | `CHAR(132)` | Description (Long) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LocAggregationUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `LocAggregationID` |  | |  |  | `CHAR(20)` | Location Aggregation ID |
+| `LocAggregationMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |
+| `LocAggregationName` |  | |  |  | `CHAR(132)` | Location Aggregation Name |
+| `DataUsagePeriodicity` |  | |  |  | `CHAR(3)` | Data Period of Aggregation Definition |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Units of Measurement of Various Types |
+| `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
+| `LocAggregationTitle` |  | |  |  | `CHAR(132)` | Description (Long) |

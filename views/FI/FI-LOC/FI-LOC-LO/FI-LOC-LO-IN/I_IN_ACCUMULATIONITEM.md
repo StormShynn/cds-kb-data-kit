@@ -36,34 +36,34 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IN_ThresholdAmountCategory` | `CHAR(4)` | Category for Threshold amount |
-| `IN_SellerPan` | `CHAR(10)` | Permanent account number - Company code |
-| `IN_BuyerIdentificationType` | `CHAR(2)` | Type of ID Number |
-| `IN_BuyerIdentificationNumber` | `CHAR(40)` | Identification Number |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `IN_ThresholdValidFromDate` | `DATS(8)` | Valid From Date |
-| `IN_AccumulationSequenceNumber` | `NUMC(8)` | Sequence number for accumulation |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `AccountingDocument` | `CHAR(10)` | Document Number of an Accounting Document |
-| `PostingFiscalYear` | `NUMC(4)` | Fiscal Year |
-| `AccountingDocumentItem` | `NUMC(3)` | Number of Line Item Within Accounting Document |
-| `AccountingDocumentType` | `CHAR(2)` | Document Type |
-| `PostingDate` | `DATS(8)` | Posting Date in the Document |
-| `IN_PreviousAccumulationAmount` | `CURR(23)` | Previous Accumulation Amount |
-| `IN_PrevTxColltdAtSrceAmt` | `CURR(23)` | Previous TCS Amount |
-| `IN_ItemAmount` | `CURR(23)` | Item Amount |
-| `IN_TaxCollectedAtSourceBaseAmt` | `CURR(23)` | TCS Base Amount |
-| `IN_TxColltdAtSrceCndnRateAmt` | `CURR(11)` | Condition Amount or Percentage |
-| `IN_TaxCollectedAtSourceAmount` | `CURR(23)` | TCS Amount |
-| `IN_CurrentAccumulationAmount` | `CURR(23)` | Current Accumulation Amount |
-| `IN_CurTxColltdSrceAmt` | `CURR(23)` | Current TCS Tax Amount |
-| `IN_AdjustmentAmount` | `CURR(23)` | Adjustment Amount |
-| `IN_NetAdvanceAmount` | `CURR(23)` | Net Advance Amount |
-| `IN_TaxAdjustmentDocumentNumber` | `CHAR(10)` | Tax adjustment document Number |
-| `IN_JournalVoucherStatus` | `CHAR(1)` | JV Status for TCS adjustment amount |
-| `IN_ThresholdAmount` | `CURR(23)` | Threshold Amount |
-| `IN_CertificateCategory` | `CHAR(10)` | Certificate Category |
-| `IN_CertificateNumber` | `CHAR(30)` | Certificate Number |
-| `TransactionCurrency` | `CUKY(5)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IN_ThresholdAmountCategory` |  | |  |  | `CHAR(4)` | Category for Threshold amount |
+| `IN_SellerPan` |  | |  |  | `CHAR(10)` | Permanent account number - Company code |
+| `IN_BuyerIdentificationType` |  | |  |  | `CHAR(2)` | Type of ID Number |
+| `IN_BuyerIdentificationNumber` |  | |  |  | `CHAR(40)` | Identification Number |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `IN_ThresholdValidFromDate` |  | |  |  | `DATS(8)` | Valid From Date |
+| `IN_AccumulationSequenceNumber` |  | |  |  | `NUMC(8)` | Sequence number for accumulation |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
+| `PostingFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Number of Line Item Within Accounting Document |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `IN_PreviousAccumulationAmount` |  | |  |  | `CURR(23)` | Previous Accumulation Amount |
+| `IN_PrevTxColltdAtSrceAmt` |  | |  |  | `CURR(23)` | Previous TCS Amount |
+| `IN_ItemAmount` |  | |  |  | `CURR(23)` | Item Amount |
+| `IN_TaxCollectedAtSourceBaseAmt` |  | |  |  | `CURR(23)` | TCS Base Amount |
+| `IN_TxColltdAtSrceCndnRateAmt` |  | |  |  | `CURR(11)` | Condition Amount or Percentage |
+| `IN_TaxCollectedAtSourceAmount` |  | |  |  | `CURR(23)` | TCS Amount |
+| `IN_CurrentAccumulationAmount` |  | |  |  | `CURR(23)` | Current Accumulation Amount |
+| `IN_CurTxColltdSrceAmt` |  | |  |  | `CURR(23)` | Current TCS Tax Amount |
+| `IN_AdjustmentAmount` |  | |  |  | `CURR(23)` | Adjustment Amount |
+| `IN_NetAdvanceAmount` |  | |  |  | `CURR(23)` | Net Advance Amount |
+| `IN_TaxAdjustmentDocumentNumber` |  | |  |  | `CHAR(10)` | Tax adjustment document Number |
+| `IN_JournalVoucherStatus` |  | |  |  | `CHAR(1)` | JV Status for TCS adjustment amount |
+| `IN_ThresholdAmount` |  | |  |  | `CURR(23)` | Threshold Amount |
+| `IN_CertificateCategory` |  | |  |  | `CHAR(10)` | Certificate Category |
+| `IN_CertificateNumber` |  | |  |  | `CHAR(30)` | Certificate Number |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` |  |

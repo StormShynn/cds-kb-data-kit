@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentGroupUUID` | `RAW(16)` | NodeID |
-| `IncidentUUID` | `RAW(16)` | NodeID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `IncidentGroupCode` | `CHAR(21)` | Incident Group |
-| `NearMissGroupCode` | `CHAR(21)` | Near Miss Group |
-| `SafetyObservationGroupCode` | `CHAR(21)` | Safety Observation Group |
-| `EHSIncidentGroupSeverity` | `CHAR(21)` | Severity Level Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentGroupUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `IncidentGroupCode` |  | |  |  | `CHAR(21)` | Incident Group |
+| `NearMissGroupCode` |  | |  |  | `CHAR(21)` | Near Miss Group |
+| `SafetyObservationGroupCode` |  | |  |  | `CHAR(21)` | Safety Observation Group |
+| `EHSIncidentGroupSeverity` |  | |  |  | `CHAR(21)` | Severity Level Code |

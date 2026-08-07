@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NotaFiscal` | `NUMC(10)` | Document Number |
-| `BR_NotaFiscalItem` | `NUMC(6)` | Document Item Number |
-| `BR_NFImportIndicatorFuelOrigin` | `CHAR(1)` | Fuel Origin Import Indicator |
-| `BR_NFOriginRegion` | `CHAR(3)` | Origin UF of producer or importer |
-| `BR_NFRegionOriginatingPercent` | `DEC(7)` | Originating percentage for the UF |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` |  | |  |  | `NUMC(10)` | Document Number |
+| `BR_NotaFiscalItem` |  | |  |  | `NUMC(6)` | Document Item Number |
+| `BR_NFImportIndicatorFuelOrigin` |  | |  |  | `CHAR(1)` | Fuel Origin Import Indicator |
+| `BR_NFOriginRegion` |  | |  |  | `CHAR(3)` | Origin UF of producer or importer |
+| `BR_NFRegionOriginatingPercent` |  | |  |  | `DEC(7)` | Originating percentage for the UF |

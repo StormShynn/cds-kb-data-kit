@@ -29,17 +29,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgrmtTerminationAndCostUUID` | `RAW(16)` | GUID for Table CMS_CAG_TRMCST |
-| `AgreementTermnAndCostLinkUUID` | `RAW(16)` | Link Guid for table CMS_CAG_TRMCST |
-| `AgreementCostType` | `CHAR(6)` | Cost Type of the Pool Agreement |
-| `AgreementCostDueDate` | `DATS(8)` | Date by which the Compensation Amount must be Paid |
-| `AgreementTermnRightType` | `CHAR(6)` | Termination Right Type |
-| `AgreementTerminationReason` | `CHAR(6)` | Termination Type |
-| `AgrmtTerminationPossibleDate` | `DATS(8)` | First possible date of Termination by business partner |
-| `AgreementTerminationNoticeDate` | `DATS(8)` | Date on which Termination Notice is sent by Business Partner |
-| `AgrmtTermnAndCostAmt` | `CURR(17)` | Amount |
-| `AgrmtTermnAndCostCrcy` | `CUKY(5)` | Currency |
-| `AgrmtTermnAndCostFrqcyUnit` | `CHAR(2)` | The unit for period of  frequency |
-| `AgrmtTermnAndCostFrqcyPeriod` | `NUMC(4)` | Period of  frequency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgrmtTerminationAndCostUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_TRMCST |
+| `AgreementTermnAndCostLinkUUID` |  | |  |  | `RAW(16)` | Link Guid for table CMS_CAG_TRMCST |
+| `AgreementCostType` |  | |  |  | `CHAR(6)` | Cost Type of the Pool Agreement |
+| `AgreementCostDueDate` |  | |  |  | `DATS(8)` | Date by which the Compensation Amount must be Paid |
+| `AgreementTermnRightType` |  | |  |  | `CHAR(6)` | Termination Right Type |
+| `AgreementTerminationReason` |  | |  |  | `CHAR(6)` | Termination Type |
+| `AgrmtTerminationPossibleDate` |  | |  |  | `DATS(8)` | First possible date of Termination by business partner |
+| `AgreementTerminationNoticeDate` |  | |  |  | `DATS(8)` | Date on which Termination Notice is sent by Business Partner |
+| `AgrmtTermnAndCostAmt` |  | |  |  | `CURR(17)` | Amount |
+| `AgrmtTermnAndCostCrcy` |  | |  |  | `CUKY(5)` | Currency |
+| `AgrmtTermnAndCostFrqcyUnit` |  | |  |  | `CHAR(2)` | The unit for period of  frequency |
+| `AgrmtTermnAndCostFrqcyPeriod` |  | |  |  | `NUMC(4)` | Period of  frequency |

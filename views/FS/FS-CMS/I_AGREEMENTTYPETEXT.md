@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralAgreementType` | `CHAR(6)` | Collateral Agreement Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralAgreementTypeText` | `CHAR(40)` | Name of Collateral Agreement Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralAgreementType` |  | |  |  | `CHAR(6)` | Collateral Agreement Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralAgreementTypeText` |  | |  |  | `CHAR(40)` | Name of Collateral Agreement Type |

@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `ConsolidationReportingItemHier` | `CHAR(10)` | Reporting Item Hierarchy |
-| `ConsolidationReportingRuleID` | `CHAR(3)` | Reporting Rule Variant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `ConsolidationReportingItemHier` |  | |  |  | `CHAR(10)` | Reporting Item Hierarchy |
+| `ConsolidationReportingRuleID` |  | |  |  | `CHAR(3)` | Reporting Rule Variant |

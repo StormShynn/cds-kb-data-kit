@@ -31,36 +31,36 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PersonWorkAgreement` | `NUMC(8)` | Personnel Number |
-| `Person` | `CHAR(45)` | ID of Related Object |
-| `LastName` | `CHAR(40)` | Last Name of Business Partner (Person) |
-| `FamilyName` | `CHAR(35)` | Search Help Field 1 (Name 1/Last Name) |
-| `FirstName` | `CHAR(40)` | First Name of Business Partner (Person) |
-| `GivenName` | `CHAR(35)` | Search Help Field 2 (Name 2/First Name) |
-| `PersonExternalID` | `CHAR(60)` | Identification Number |
-| `UserID` | `CHAR(12)` | User ID |
-| `PersonFullName` | `CHAR(80)` | Full Name |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CostCenterName` | `CHAR(20)` | Cost Center Name |
-| `Job` | `NUMC(8)` | Job |
-| `JobName` | `CHAR(256)` | Job Title |
-| `OrganizationalUnitName` | `CHAR(40)` | Object Name |
-| `PersonWorkAgrmtAuthznGrpg` | `CHAR(14)` | Organizational Key |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
-| `DataControllerSet` | `CHAR(1)` | BP: Data Controller Set Flag |
-| `DataController1` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController2` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController3` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController4` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController5` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController6` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController7` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController8` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController9` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController10` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonWorkAgreement` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `Person` |  | |  |  | `CHAR(45)` | ID of Related Object |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `FamilyName` |  | |  |  | `CHAR(35)` | Search Help Field 1 (Name 1/Last Name) |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `GivenName` |  | |  |  | `CHAR(35)` | Search Help Field 2 (Name 2/First Name) |
+| `PersonExternalID` |  | |  |  | `CHAR(60)` | Identification Number |
+| `UserID` |  | |  |  | `CHAR(12)` | User ID |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | Full Name |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CostCenterName` |  | |  |  | `CHAR(20)` | Cost Center Name |
+| `Job` |  | |  |  | `NUMC(8)` | Job |
+| `JobName` |  | |  |  | `CHAR(256)` | Job Title |
+| `OrganizationalUnitName` |  | |  |  | `CHAR(40)` | Object Name |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  |  | `CHAR(14)` | Organizational Key |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |

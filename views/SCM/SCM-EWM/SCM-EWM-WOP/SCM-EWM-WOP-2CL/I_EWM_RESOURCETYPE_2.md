@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMResourceType` | `CHAR(4)` | Resource Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMResourceType` |  | |  |  | `CHAR(4)` | Resource Type |

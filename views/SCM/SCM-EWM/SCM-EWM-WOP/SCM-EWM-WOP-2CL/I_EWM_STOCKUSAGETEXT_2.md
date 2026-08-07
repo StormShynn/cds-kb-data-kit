@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMStockUsage` | `CHAR(1)` | Stock Usage |
-| `StockUsageName` | `CHAR(30)` | Short Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMStockUsage` |  | |  |  | `CHAR(1)` | Stock Usage |
+| `StockUsageName` |  | |  |  | `CHAR(30)` | Short Text |

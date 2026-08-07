@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationComparisonVersion` | `CHAR(3)` | Comparison Version |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationComparisonVersion` |  | |  |  | `CHAR(3)` | Comparison Version |

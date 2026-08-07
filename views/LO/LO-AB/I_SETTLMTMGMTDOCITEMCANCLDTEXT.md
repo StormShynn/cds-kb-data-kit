@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtDocItemCancld` | `CHAR(1)` | Item Was Canceled |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtMgmtDocItemCancldName` | `CHAR(60)` | Description of Item Cancelation Status |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtDocItemCancld` |  | |  |  | `CHAR(1)` | Item Was Canceled |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtMgmtDocItemCancldName` |  | |  |  | `CHAR(60)` | Description of Item Cancelation Status |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

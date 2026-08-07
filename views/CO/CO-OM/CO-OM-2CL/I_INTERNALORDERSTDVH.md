@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InternalOrder` | `CHAR(12)` | Internal Order |
-| `InternalOrderDescription` | `CHAR(40)` | Internal Order Description |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `OrderType` | `CHAR(4)` | Order Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalOrder` |  | |  |  | `CHAR(12)` | Internal Order |
+| `InternalOrderDescription` |  | |  |  | `CHAR(40)` | Internal Order Description |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |

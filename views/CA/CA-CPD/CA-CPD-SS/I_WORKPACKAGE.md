@@ -38,20 +38,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkPackage` | `CHAR(50)` | Plan Item |
-| `WorkPackageUUID` | `RAW(16)` | Work Package UUID |
-| `EngagementProjFinPlanUUID` | `RAW(16)` | Financial Plan UUID |
-| `WorkPackageName` | `CHAR(60)` | Plan Item Description |
-| `WorkPackageStartDate` | `DATS(8)` | Start Date |
-| `WorkPackageEndDate` | `DATS(8)` | End Date |
-| `WBSElementObject` | `CHAR(50)` | Object ID |
-| `WBSDescription` | `CHAR(80)` | Object Name |
-| `SalesOrder` | `CHAR(10)` | Sales Document |
-| `SalesOrderItem` | `NUMC(6)` | Sales Document Item |
-| `LastChangedByUser` | `CHAR(12)` | Changed By |
-| `LastChangeDateTime` | `DEC(15)` | Commercial Project Last Changed On |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On |
-| `WorkPackageType` | `CHAR(1)` | Work Package Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Plan Item |
+| `WorkPackageUUID` |  | |  |  | `RAW(16)` | Work Package UUID |
+| `EngagementProjFinPlanUUID` |  | |  |  | `RAW(16)` | Financial Plan UUID |
+| `WorkPackageName` |  | |  |  | `CHAR(60)` | Plan Item Description |
+| `WorkPackageStartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `WorkPackageEndDate` |  | |  |  | `DATS(8)` | End Date |
+| `WBSElementObject` |  | |  |  | `CHAR(50)` | Object ID |
+| `WBSDescription` |  | |  |  | `CHAR(80)` | Object Name |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Document |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Commercial Project Last Changed On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On |
+| `WorkPackageType` |  | |  |  | `CHAR(1)` | Work Package Type |

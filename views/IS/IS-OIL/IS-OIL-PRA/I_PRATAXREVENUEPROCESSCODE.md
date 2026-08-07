@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RevenueProcessCode` | `CHAR(2)` | Revenue Process Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RevenueProcessCode` |  | |  |  | `CHAR(2)` | Revenue Process Code |

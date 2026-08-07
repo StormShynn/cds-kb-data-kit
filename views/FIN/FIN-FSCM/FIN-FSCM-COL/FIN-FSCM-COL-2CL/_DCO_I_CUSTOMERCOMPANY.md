@@ -34,14 +34,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Customer` | `CHAR(10)` | Customer |
-| `CompanyCode` | `CHAR(4)` | Company Code (FI System) |
-| `LogicalSystem` | `CHAR(10)` | Logical System |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Is Completed |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `AccountByCustomer` | `CHAR(12)` | Account at Customer |
-| `CustomerHeadOffice` | `CHAR(10)` | Head Office |
-| `AccountingClerkInternetAddress` | `SSTR(130)` | Internet Address |
-| `DunningClerk` | `CHAR(2)` | Dunning Clerk |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` |  | |  |  | `CHAR(10)` | Customer |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code (FI System) |
+| `LogicalSystem` |  | |  |  | `CHAR(10)` | Logical System |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Is Completed |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `AccountByCustomer` |  | |  |  | `CHAR(12)` | Account at Customer |
+| `CustomerHeadOffice` |  | |  |  | `CHAR(10)` | Head Office |
+| `AccountingClerkInternetAddress` |  | |  |  | `SSTR(130)` | Internet Address |
+| `DunningClerk` |  | |  |  | `CHAR(2)` | Dunning Clerk |

@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RESpaceGroupUsageType` | `CHAR(4)` | Group Usage Type |
-| `REIsUseEnableUsageType` | `CHAR(1)` | Usage Enablement Type Indicator |
-| `REIsOccupancyUsageType` | `CHAR(1)` | Occupancy Usage Type Indicator |
-| `REHasOccpcyUsageTypeCostObject` | `CHAR(1)` | Occupancy Usage Type Has Cost Object Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RESpaceGroupUsageType` |  | |  |  | `CHAR(4)` | Group Usage Type |
+| `REIsUseEnableUsageType` |  | |  |  | `CHAR(1)` | Usage Enablement Type Indicator |
+| `REIsOccupancyUsageType` |  | |  |  | `CHAR(1)` | Occupancy Usage Type Indicator |
+| `REHasOccpcyUsageTypeCostObject` |  | |  |  | `CHAR(1)` | Occupancy Usage Type Has Cost Object Indicator |

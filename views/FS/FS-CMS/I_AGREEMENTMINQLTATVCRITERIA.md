@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlAgrmtMinQltatvCriteria` | `CHAR(6)` | MInimum Qualitative Criterion |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlAgrmtMinQltatvCriteria` |  | |  |  | `CHAR(6)` | MInimum Qualitative Criterion |

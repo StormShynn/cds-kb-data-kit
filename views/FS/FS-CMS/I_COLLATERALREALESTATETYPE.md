@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRealEstateType` | `CHAR(6)` | Real Estate Object Type ID |
-| `CollateralProcessControlKey` | `CHAR(10)` | Process Control Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRealEstateType` |  | |  |  | `CHAR(6)` | Real Estate Object Type ID |
+| `CollateralProcessControlKey` |  | |  |  | `CHAR(10)` | Process Control Key |

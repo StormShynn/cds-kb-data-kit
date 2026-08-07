@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RecordType` | `CHAR(1)` | Payment Processing - Record Type |
-| `Language` | `LANG(1)` | Language Key |
-| `RecordTypeName` | `CHAR(60)` | Record Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RecordType` |  | |  |  | `CHAR(1)` | Payment Processing - Record Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RecordTypeName` |  | |  |  | `CHAR(60)` | Record Type Name |

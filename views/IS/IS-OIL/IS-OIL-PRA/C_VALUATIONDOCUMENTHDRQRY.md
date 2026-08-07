@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ValuationDocumentNumber` | `CHAR(20)` | Val. document number |
-| `ValuationDocumentYear` | `NUMC(4)` | Document year |
-| `ValuationDocumentStatus` | `CHAR(2)` | Valuation Document Status |
-| `PrimaryGeogrlLocation` | `CHAR(2)` | Primary Geographical Location |
-| `DeliveryNetworkHier` | `CHAR(15)` | Delivery Network Hierarchy Group |
-| `DeliveryNetwork` | `CHAR(20)` | Delivery network number |
-| `SalesDate` | `DATS(8)` | Sales Date / Month |
-| `AllocationFrequency` | `CHAR(1)` | Frequency |
-| `ValuationDocumentType` | `CHAR(4)` | Valuation Document Type |
-| `ProcessingStatus` | `CHAR(1)` | Valuation Document Processing Status |
-| `LastExecutionDate` | `DATS(8)` | Run Date |
-| `LastExecutionTime` | `TIMS(6)` | Run time |
-| `NumberOfDocuments` | `INT4(10)` | Number of Documents |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationDocumentNumber` |  | |  |  | `CHAR(20)` | Val. document number |
+| `ValuationDocumentYear` |  | |  |  | `NUMC(4)` | Document year |
+| `ValuationDocumentStatus` |  | |  |  | `CHAR(2)` | Valuation Document Status |
+| `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+| `DeliveryNetworkHier` |  | |  |  | `CHAR(15)` | Delivery Network Hierarchy Group |
+| `DeliveryNetwork` |  | |  |  | `CHAR(20)` | Delivery network number |
+| `SalesDate` |  | |  |  | `DATS(8)` | Sales Date / Month |
+| `AllocationFrequency` |  | |  |  | `CHAR(1)` | Frequency |
+| `ValuationDocumentType` |  | |  |  | `CHAR(4)` | Valuation Document Type |
+| `ProcessingStatus` |  | |  |  | `CHAR(1)` | Valuation Document Processing Status |
+| `LastExecutionDate` |  | |  |  | `DATS(8)` | Run Date |
+| `LastExecutionTime` |  | |  |  | `TIMS(6)` | Run time |
+| `NumberOfDocuments` |  | |  |  | `INT4(10)` | Number of Documents |

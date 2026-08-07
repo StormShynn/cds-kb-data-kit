@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ResourceRequestSkillTagUUID` | `RAW(16)` | Skill Tag Key |
-| `ResourceRequestUUID` | `RAW(16)` | Demand Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ResourceRequestSkillTagUUID` |  | |  |  | `RAW(16)` | Skill Tag Key |
+| `ResourceRequestUUID` |  | |  |  | `RAW(16)` | Demand Key |

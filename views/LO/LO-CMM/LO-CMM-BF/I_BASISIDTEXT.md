@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BasisID` | `CHAR(18)` | Basis ID |
-| `Language` | `LANG(1)` | Language Key |
-| `BasisIDName` | `CHAR(40)` | Basis ID Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BasisID` |  | |  |  | `CHAR(18)` | Basis ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BasisIDName` |  | |  |  | `CHAR(40)` | Basis ID Description |

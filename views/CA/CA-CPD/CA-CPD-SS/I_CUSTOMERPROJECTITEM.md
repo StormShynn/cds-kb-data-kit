@@ -36,9 +36,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustomerProject` | `CHAR(40)` | Commercial Project ID |
-| `CustomerProjectItemType` | `CHAR(5)` | Customer Project Item Type |
-| `CustomerProjectItem` | `CHAR(40)` | Customer Project Item |
-| `CustomerProjectUUID` | `RAW(16)` | Customer Project UUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerProject` |  | |  |  | `CHAR(40)` | Commercial Project ID |
+| `CustomerProjectItemType` |  | |  |  | `CHAR(5)` | Customer Project Item Type |
+| `CustomerProjectItem` |  | |  |  | `CHAR(40)` | Customer Project Item |
+| `CustomerProjectUUID` |  | |  |  | `RAW(16)` | Customer Project UUID |

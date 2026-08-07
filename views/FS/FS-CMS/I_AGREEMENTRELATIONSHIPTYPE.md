@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementRelationshipType` | `CHAR(6)` | Relationship type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementRelationshipType` |  | |  |  | `CHAR(6)` | Relationship type |

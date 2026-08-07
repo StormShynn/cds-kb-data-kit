@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PRAContractType` | `CHAR(2)` | Contract Type |
-| `Language` | `LANG(1)` | Language Key |
-| `PRAContractTypeName` | `CHAR(50)` | Contract Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PRAContractType` |  | |  |  | `CHAR(2)` | Contract Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PRAContractTypeName` |  | |  |  | `CHAR(50)` | Contract Type Description |

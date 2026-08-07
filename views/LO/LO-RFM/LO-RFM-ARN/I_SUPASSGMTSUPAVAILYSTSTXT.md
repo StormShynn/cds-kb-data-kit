@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SupAssgmtSupAvailySts` | `CHAR(2)` | Supply Availability Status for a Demand |
-| `Language` | `LANG(1)` | Language Key |
-| `SupAssgmtSupAvailyStsTxt` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupAssgmtSupAvailySts` |  | |  |  | `CHAR(2)` | Supply Availability Status for a Demand |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SupAssgmtSupAvailyStsTxt` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

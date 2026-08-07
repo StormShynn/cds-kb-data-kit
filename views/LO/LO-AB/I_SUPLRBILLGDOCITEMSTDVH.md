@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrBillgDoc` | `CHAR(10)` | Supplier Billing Document Number |
-| `SuplrBillgDocItem` | `NUMC(6)` | Document Item |
-| `CustomerSettlmtRecipient` | `CHAR(10)` | Customer Settlement Recipient |
-| `PriorSupplier` | `CHAR(10)` | Prior Supplier |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrBillgDoc` |  | |  |  | `CHAR(10)` | Supplier Billing Document Number |
+| `SuplrBillgDocItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `CustomerSettlmtRecipient` |  | |  |  | `CHAR(10)` | Customer Settlement Recipient |
+| `PriorSupplier` |  | |  |  | `CHAR(10)` | Prior Supplier |

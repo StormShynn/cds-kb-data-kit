@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumberStatus` | `NUMC(2)` | Status of Change Number |
-| `ChangeIsAllowed` | `CHAR(1)` | Status allows changes |
-| `DateChangeIsAllowed` | `CHAR(1)` | Valid-from date can be changed |
-| `DistributionIsLocked` | `CHAR(1)` | Indicator: Distribution lock |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberStatus` |  | |  |  | `NUMC(2)` | Status of Change Number |
+| `ChangeIsAllowed` |  | |  |  | `CHAR(1)` | Status allows changes |
+| `DateChangeIsAllowed` |  | |  |  | `CHAR(1)` | Valid-from date can be changed |
+| `DistributionIsLocked` |  | |  |  | `CHAR(1)` | Indicator: Distribution lock |

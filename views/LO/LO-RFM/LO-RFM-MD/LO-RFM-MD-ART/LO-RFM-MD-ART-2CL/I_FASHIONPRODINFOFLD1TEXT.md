@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FashionProdInformationField1` | `CHAR(10)` | Fashion Information Field: 1 |
-| `Language` | `LANG(1)` | Language Key |
-| `FashionProdInfoField1Text` | `CHAR(40)` | Fashion Information Field: Description for field 1 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FashionProdInformationField1` |  | |  |  | `CHAR(10)` | Fashion Information Field: 1 |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FashionProdInfoField1Text` |  | |  |  | `CHAR(40)` | Fashion Information Field: Description for field 1 |

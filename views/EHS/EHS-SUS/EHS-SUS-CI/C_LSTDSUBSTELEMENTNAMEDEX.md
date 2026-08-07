@@ -30,12 +30,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ListedSubstance` | `CHAR(12)` | Listed Substance |
-| `ListedSubstanceNameCharUUID` | `CHAR(32)` | Listed Substance UUID in character form |
-| `ListedSubstanceNameUUID` | `RAW(16)` | Listed Substance Name UUID |
-| `ListedSubstanceUUID` | `RAW(16)` | Listed Substance Key |
-| `ListedSubstanceNameSequence` | `INT1(3)` | Listed Substance Name Sequence Number |
-| `Language` | `LANG(1)` | Language |
-| `ListedSubstanceName` | `CHAR(1333)` | Listed Substance Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ListedSubstance` |  | |  |  | `CHAR(12)` | Listed Substance |
+| `ListedSubstanceNameCharUUID` |  | |  |  | `CHAR(32)` | Listed Substance UUID in character form |
+| `ListedSubstanceNameUUID` |  | |  |  | `RAW(16)` | Listed Substance Name UUID |
+| `ListedSubstanceUUID` |  | |  |  | `RAW(16)` | Listed Substance Key |
+| `ListedSubstanceNameSequence` |  | |  |  | `INT1(3)` | Listed Substance Name Sequence Number |
+| `Language` |  | |  |  | `LANG(1)` | Language |
+| `ListedSubstanceName` |  | |  |  | `CHAR(1333)` | Listed Substance Name |

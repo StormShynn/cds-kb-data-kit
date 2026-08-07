@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenancePlan` | `CHAR(12)` | Maintenance Plan |
-| `MaintenancePlanCycle` | `NUMC(2)` | Counter in Control Tables |
-| `ComparisonOperator` | `CHAR(2)` | Comparison operator for maint. package cycle duration |
-| `MaintPlanCycRcrrcIntervalQty` | `FLTP(16)` | Maintenance package cycle/offset |
-| `MaintPlanCycRcrrcIntervalUnit` | `UNIT(3)` | Unit for the performance of maintenance tasks |
-| `MaintPlanCycleDesc` | `CHAR(30)` | Text for maintenance package/cycle (time/performance) |
-| `Language` | `LANG(1)` | Primary language for object texts |
-| `MeasuringPoint` | `CHAR(12)` | Measuring Point |
-| `MaintPlanCycleStartOffsetValue` | `FLTP(16)` | Start offset of a time-based maintenance package |
-| `MaintCycleNextPlndCntrRdng` | `FLTP(16)` | Next planned counter reading |
-| `CycleSetSequence` | `NUMC(2)` | Cycle Set Sequence |
-| `CycleSetSequenceRepeatFactor` | `NUMC(2)` | Repeat Factor for Cycle Set Sequence |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlan` |  | |  |  | `CHAR(12)` | Maintenance Plan |
+| `MaintenancePlanCycle` |  | |  |  | `NUMC(2)` | Counter in Control Tables |
+| `ComparisonOperator` |  | |  |  | `CHAR(2)` | Comparison operator for maint. package cycle duration |
+| `MaintPlanCycRcrrcIntervalQty` |  | |  |  | `FLTP(16)` | Maintenance package cycle/offset |
+| `MaintPlanCycRcrrcIntervalUnit` |  | |  |  | `UNIT(3)` | Unit for the performance of maintenance tasks |
+| `MaintPlanCycleDesc` |  | |  |  | `CHAR(30)` | Text for maintenance package/cycle (time/performance) |
+| `Language` |  | |  |  | `LANG(1)` | Primary language for object texts |
+| `MeasuringPoint` |  | |  |  | `CHAR(12)` | Measuring Point |
+| `MaintPlanCycleStartOffsetValue` |  | |  |  | `FLTP(16)` | Start offset of a time-based maintenance package |
+| `MaintCycleNextPlndCntrRdng` |  | |  |  | `FLTP(16)` | Next planned counter reading |
+| `CycleSetSequence` |  | |  |  | `NUMC(2)` | Cycle Set Sequence |
+| `CycleSetSequenceRepeatFactor` |  | |  |  | `NUMC(2)` | Repeat Factor for Cycle Set Sequence |

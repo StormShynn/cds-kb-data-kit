@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AgrmtSpclArrgmtLegalStatus` | `CHAR(2)` | Special Arrangement Legal Status |
-| `AgrmtSpclArrgmtLegalStatusText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgrmtSpclArrgmtLegalStatus` |  | |  |  | `CHAR(2)` | Special Arrangement Legal Status |
+| `AgrmtSpclArrgmtLegalStatusText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

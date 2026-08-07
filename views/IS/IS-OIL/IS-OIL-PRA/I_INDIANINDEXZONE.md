@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IndianIndexZone` | `CHAR(3)` | ONRR-2014 - Index Zone |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndianIndexZone` |  | |  |  | `CHAR(3)` | ONRR-2014 - Index Zone |

@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `FinancialStatementItemHier` | `CHAR(10)` | Item Hierarchy |
-| `AdditionalMasterDataHierarchy` | `CHAR(40)` | Consolidation Hierarchy ID |
-| `Language` | `LANG(1)` | Language Key |
-| `FinancialStatementItemHierTxt` | `CHAR(50)` | Hierarchy description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `FinancialStatementItemHier` |  | |  |  | `CHAR(10)` | Item Hierarchy |
+| `AdditionalMasterDataHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Hierarchy ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FinancialStatementItemHierTxt` |  | |  |  | `CHAR(50)` | Hierarchy description |

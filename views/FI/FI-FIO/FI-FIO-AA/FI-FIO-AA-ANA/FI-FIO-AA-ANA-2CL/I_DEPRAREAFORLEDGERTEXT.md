@@ -34,11 +34,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `AssetDepreciationArea` | `NUMC(2)` | Depreciation Area Real or Derived |
-| `Language` | `LANG(1)` | Language Key |
-| `AssetDepreciationAreaName` | `CHAR(50)` | Depreciation Area Name |
-| `AssetDepreciationAreaShortName` | `CHAR(12)` | Short Name for Depreciation Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `AssetDepreciationArea` |  | |  |  | `NUMC(2)` | Depreciation Area Real or Derived |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AssetDepreciationAreaName` |  | |  |  | `CHAR(50)` | Depreciation Area Name |
+| `AssetDepreciationAreaShortName` |  | |  |  | `CHAR(12)` | Short Name for Depreciation Area |

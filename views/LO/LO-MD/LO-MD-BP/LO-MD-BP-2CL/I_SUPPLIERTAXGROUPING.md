@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Supplier` | `CHAR(10)` | Account Number of Supplier |
-| `TaxGroupingCode` | `CHAR(3)` | Category Indicator for Tax Codes |
-| `CollectionAuthStartDate` | `DATS(8)` | Starting Date of Collection Authorization |
-| `CollectionAuthEndDate` | `DATS(8)` | End Date for Collection Authorization |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `TaxGroupingCode` |  | |  |  | `CHAR(3)` | Category Indicator for Tax Codes |
+| `CollectionAuthStartDate` |  | |  |  | `DATS(8)` | Starting Date of Collection Authorization |
+| `CollectionAuthEndDate` |  | |  |  | `DATS(8)` | End Date for Collection Authorization |

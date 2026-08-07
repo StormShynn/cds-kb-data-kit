@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrPrcgDetnRlvnceCat` | `CHAR(1)` | CC Determination Relevance in Pricing (Condition Contract) |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrPrcgDetnRlvnceCat` |  | |  |  | `CHAR(1)` | CC Determination Relevance in Pricing (Condition Contract) |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

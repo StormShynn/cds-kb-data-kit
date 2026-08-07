@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MajorProduct` | `CHAR(1)` | Major product code |
-| `MarketingType` | `CHAR(2)` | Marketing type code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MajorProduct` |  | |  |  | `CHAR(1)` | Major product code |
+| `MarketingType` |  | |  |  | `CHAR(2)` | Marketing type code |

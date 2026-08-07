@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SupplierItemSettlmtStatus` | `CHAR(1)` | Settlement Status - Item - Supplier |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierItemSettlmtStatus` |  | |  |  | `CHAR(1)` | Settlement Status - Item - Supplier |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

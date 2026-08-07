@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PricingStatus` | `CHAR(2)` | Future/Basis Price Fixation Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingStatus` |  | |  |  | `CHAR(2)` | Future/Basis Price Fixation Status |

@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralAdminOrgUnit` | `CHAR(12)` | Administration Organizational Unit |
-| `CollateralProcessControlArea` | `CHAR(6)` | Process Control Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralAdminOrgUnit` |  | |  |  | `CHAR(12)` | Administration Organizational Unit |
+| `CollateralProcessControlArea` |  | |  |  | `CHAR(6)` | Process Control Area |

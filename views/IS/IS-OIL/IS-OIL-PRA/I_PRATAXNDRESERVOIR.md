@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Reservoir` | `CHAR(3)` | Tax 2.0: ND Pool Code |
-| `ReservoirName` | `CHAR(50)` | General Description - 50 Characters |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Reservoir` |  | |  |  | `CHAR(3)` | Tax 2.0: ND Pool Code |
+| `ReservoirName` |  | |  |  | `CHAR(50)` | General Description - 50 Characters |

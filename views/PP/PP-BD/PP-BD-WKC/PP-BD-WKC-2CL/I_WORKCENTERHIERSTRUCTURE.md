@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WrkCtrHierParentType` | `CHAR(2)` | Object types of the CIM resource |
-| `WrkCtrHierParentID` | `NUMC(8)` | Object ID of the resource |
-| `WrkCtrHierChildType` | `CHAR(2)` | Object types of the CIM resource |
-| `WrkCtrHierChildID` | `NUMC(8)` | Object ID of the resource |
-| `WrkCtrHierUpObjType` | `CHAR(2)` | Type of resource which is superior in the hierarchy |
-| `WrkCtrHierUpObjID` | `NUMC(8)` | ID of superior object in the hierarchy |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrkCtrHierParentType` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
+| `WrkCtrHierParentID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `WrkCtrHierChildType` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
+| `WrkCtrHierChildID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `WrkCtrHierUpObjType` |  | |  |  | `CHAR(2)` | Type of resource which is superior in the hierarchy |
+| `WrkCtrHierUpObjID` |  | |  |  | `NUMC(8)` | ID of superior object in the hierarchy |

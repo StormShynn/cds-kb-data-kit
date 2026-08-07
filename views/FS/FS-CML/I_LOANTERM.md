@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanTerm` | `NUMC(2)` | Loan Term |
-| `LoanMinNumberOfMonths` | `NUMC(3)` | Minimum Term in Months |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanTerm` |  | |  |  | `NUMC(2)` | Loan Term |
+| `LoanMinNumberOfMonths` |  | |  |  | `NUMC(3)` | Minimum Term in Months |

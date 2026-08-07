@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyIDForFund` | `CHAR(42)` | Hierarchy ID for Fund |
-| `CtrlObjForFund` | `CHAR(50)` | Control Object for a Fund |
-| `CtrlObjNameForFund` | `CHAR(50)` | Name of a Control Object for a Fund |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyIDForFund` |  | |  |  | `CHAR(42)` | Hierarchy ID for Fund |
+| `CtrlObjForFund` |  | |  |  | `CHAR(50)` | Control Object for a Fund |
+| `CtrlObjNameForFund` |  | |  |  | `CHAR(50)` | Name of a Control Object for a Fund |

@@ -37,27 +37,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `BankInternalID` | `CHAR(15)` | Bank Keys |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `PaymentManualTransacTypeName` | `CHAR(40)` | Manual Transaction Text |
-| `PaymentExternalTransacType` | `CHAR(27)` | External Business Transaction |
-| `BankStmntItemReprocessReason` | `CHAR(2)` | Reprocessing Reason Code |
-| `BankStmntItemReprocessRsnName` | `CHAR(60)` | Reprocessing Reason |
-| `YearMonth` | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `CustomerName` | `CHAR(80)` | Name of Customer |
-| `AccountingClerkName` | `CHAR(30)` | Name of Accounting Clerk |
-| `BankName` | `CHAR(60)` | Name of Financial Institution |
-| `NumberOfItems` | `INT4(10)` | Number of Items |
-| `NumberOfReprocessedItems` | `INT4(10)` | Number of Reprocessed Items |
-| `BankStmntItemReprocgRate` | `INT1(3)` |  |
-| `Currency` | `CUKY(5)` | Display Currency |
-| `ReprocessingCostPerCoCode` | `CURR(23)` | Average Cost to Reprocess an Incoming Payment |
-| `TotalAmountInDisplayCrcy` | `CURR(23)` | Total Amount in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` |  | |  |  | `CHAR(15)` | Bank Keys |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `PaymentManualTransacTypeName` |  | |  |  | `CHAR(40)` | Manual Transaction Text |
+| `PaymentExternalTransacType` |  | |  |  | `CHAR(27)` | External Business Transaction |
+| `BankStmntItemReprocessReason` |  | |  |  | `CHAR(2)` | Reprocessing Reason Code |
+| `BankStmntItemReprocessRsnName` |  | |  |  | `CHAR(60)` | Reprocessing Reason |
+| `YearMonth` |  | |  |  | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `CustomerName` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `AccountingClerkName` |  | |  |  | `CHAR(30)` | Name of Accounting Clerk |
+| `BankName` |  | |  |  | `CHAR(60)` | Name of Financial Institution |
+| `NumberOfItems` |  | |  |  | `INT4(10)` | Number of Items |
+| `NumberOfReprocessedItems` |  | |  |  | `INT4(10)` | Number of Reprocessed Items |
+| `BankStmntItemReprocgRate` |  | |  |  | `INT1(3)` |  |
+| `Currency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `ReprocessingCostPerCoCode` |  | |  |  | `CURR(23)` | Average Cost to Reprocess an Incoming Payment |
+| `TotalAmountInDisplayCrcy` |  | |  |  | `CURR(23)` | Total Amount in Display Currency |

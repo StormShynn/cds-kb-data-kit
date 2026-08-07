@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetVerificationFrqcy` | `CHAR(2)` | Indicator: Units of time for verification of an asset |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetVerificationFrqcy` |  | |  |  | `CHAR(2)` | Indicator: Units of time for verification of an asset |

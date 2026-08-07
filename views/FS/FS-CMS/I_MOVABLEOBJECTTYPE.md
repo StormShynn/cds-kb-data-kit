@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MovableObjectCategory` | `CHAR(6)` | Object Category |
-| `MovableObjectType` | `CHAR(6)` | Movable types |
-| `CollateralProcessControlKey` | `CHAR(10)` | Process Control Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MovableObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `MovableObjectType` |  | |  |  | `CHAR(6)` | Movable types |
+| `CollateralProcessControlKey` |  | |  |  | `CHAR(10)` | Process Control Key |

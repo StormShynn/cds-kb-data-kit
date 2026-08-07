@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `ChartOfAccounts` | `CHAR(4)` | G/L Chart of Accounts |
-| `AdditionalMasterDataSource` | `CHAR(10)` | Consolidation Additional Master Data Source |
-| `CnsldtnIsAdditionalMasterData` | `CHAR(1)` | Is Additional Master Data |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | G/L Chart of Accounts |
+| `AdditionalMasterDataSource` |  | |  |  | `CHAR(10)` | Consolidation Additional Master Data Source |
+| `CnsldtnIsAdditionalMasterData` |  | |  |  | `CHAR(1)` | Is Additional Master Data |

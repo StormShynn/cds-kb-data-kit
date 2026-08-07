@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustMgmtDateRuleName` | `CHAR(12)` | Object Name |
-| `Language` | `LANG(1)` | Language Key |
-| `CustMgmtDateRuleText` | `CHAR(50)` | Descriptive Text for Date Rule |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtDateRuleName` |  | |  |  | `CHAR(12)` | Object Name |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CustMgmtDateRuleText` |  | |  |  | `CHAR(50)` | Descriptive Text for Date Rule |

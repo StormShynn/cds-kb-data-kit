@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TernaryLogicalState` | `CHAR(1)` | Tristate |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TernaryLogicalState` |  | |  |  | `CHAR(1)` | Tristate |

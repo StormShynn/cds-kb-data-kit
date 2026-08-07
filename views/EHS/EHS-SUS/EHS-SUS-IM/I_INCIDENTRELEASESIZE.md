@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentReleaseSize` | `CHAR(21)` | Release Size |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentReleaseSize` |  | |  |  | `CHAR(21)` | Release Size |

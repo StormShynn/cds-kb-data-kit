@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `IndicatorValue` | `CHAR(1)` | Checkbox |
-| `IndicatorText` | `CHAR(60)` | Indicator Text |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IndicatorValue` |  | |  |  | `CHAR(1)` | Checkbox |
+| `IndicatorText` |  | |  |  | `CHAR(60)` | Indicator Text |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

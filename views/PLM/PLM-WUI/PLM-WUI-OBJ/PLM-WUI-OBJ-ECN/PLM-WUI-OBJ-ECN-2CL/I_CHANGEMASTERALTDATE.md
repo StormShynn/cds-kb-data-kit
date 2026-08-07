@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumber` | `CHAR(12)` | Change Number |
-| `ChgNmbrAlternativeDateCounter` | `NUMC(3)` | Engineering change management: alternative date counter |
-| `ChgNmbrAlternativeDateID` | `CHAR(18)` | Alternative date external key |
-| `ChgNmbrAlternativeDate` | `DATS(8)` | Valid-From Date |
-| `ChgNmbrAlternativeDateText` | `CHAR(18)` | Alternative date external key |
-| `ChgNmbrAltvDateIsAssignedToObj` | `CHAR(1)` | Objects Allocated |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ChgNmbrAlternativeDateCounter` |  | |  |  | `NUMC(3)` | Engineering change management: alternative date counter |
+| `ChgNmbrAlternativeDateID` |  | |  |  | `CHAR(18)` | Alternative date external key |
+| `ChgNmbrAlternativeDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ChgNmbrAlternativeDateText` |  | |  |  | `CHAR(18)` | Alternative date external key |
+| `ChgNmbrAltvDateIsAssignedToObj` |  | |  |  | `CHAR(1)` | Objects Allocated |

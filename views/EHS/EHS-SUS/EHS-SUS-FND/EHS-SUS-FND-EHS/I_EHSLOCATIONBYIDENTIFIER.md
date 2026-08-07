@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `EHSLocationRevisionUUID` | `RAW(16)` | EHS Location - Revision UUID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `EHSLocationRevisionUUID` |  | |  |  | `RAW(16)` | EHS Location - Revision UUID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |

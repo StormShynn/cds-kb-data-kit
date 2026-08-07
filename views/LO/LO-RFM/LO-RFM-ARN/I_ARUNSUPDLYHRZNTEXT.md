@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ARunSupDlyHrznInWeeks` | `CHAR(2)` | Delay of Supply in Time Horizon |
-| `Language` | `LANG(1)` | Language Key |
-| `ARunSupDlyHrznInWeeksTxt` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ARunSupDlyHrznInWeeks` |  | |  |  | `CHAR(2)` | Delay of Supply in Time Horizon |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ARunSupDlyHrznInWeeksTxt` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

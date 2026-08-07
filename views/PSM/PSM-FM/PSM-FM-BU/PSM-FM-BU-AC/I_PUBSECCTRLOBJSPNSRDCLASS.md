@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SponsoredClassHierarchy` | `CHAR(42)` | Sponsored Class Hierarchy |
-| `CtrlObjForSponsoredClass` | `CHAR(50)` | Control Object for a Sponsored Class |
-| `CtrlObjForSponsoredClassName` | `CHAR(50)` | Control Object for a Sponsored Class |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredClassHierarchy` |  | |  |  | `CHAR(42)` | Sponsored Class Hierarchy |
+| `CtrlObjForSponsoredClass` |  | |  |  | `CHAR(50)` | Control Object for a Sponsored Class |
+| `CtrlObjForSponsoredClassName` |  | |  |  | `CHAR(50)` | Control Object for a Sponsored Class |

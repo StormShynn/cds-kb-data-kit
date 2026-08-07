@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `REIntegObjSpaceGroupType` | `CHAR(4)` | Group Type |
-| `Language` | `LANG(1)` | Language Key |
-| `REIntegObjSpaceGroupTypeText` | `CHAR(60)` | Description for Group Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REIntegObjSpaceGroupType` |  | |  |  | `CHAR(4)` | Group Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `REIntegObjSpaceGroupTypeText` |  | |  |  | `CHAR(60)` | Description for Group Type |

@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentApprovalRule` | `CHAR(20)` | Payment Approval Rule ID |
-| `PaymentApprovalRuleItem` | `CHAR(10)` | Payment Approval Rule Item |
-| `PaytApprvlLimitCurrency` | `CUKY(5)` | Limit Currency |
-| `PaytApprvlAmountInLmtCurrency` | `CURR(23)` | Limit Amount |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentApprovalRule` |  | |  |  | `CHAR(20)` | Payment Approval Rule ID |
+| `PaymentApprovalRuleItem` |  | |  |  | `CHAR(10)` | Payment Approval Rule Item |
+| `PaytApprvlLimitCurrency` |  | |  |  | `CUKY(5)` | Limit Currency |
+| `PaytApprvlAmountInLmtCurrency` |  | |  |  | `CURR(23)` | Limit Amount |

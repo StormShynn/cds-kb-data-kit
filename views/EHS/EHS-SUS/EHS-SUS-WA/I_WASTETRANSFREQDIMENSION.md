@@ -30,15 +30,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WasteTransferRequestNumber` | `CHAR(20)` | Number of Waste Transfer Request |
-| `WasteStreamPtOfGnrtnLocUUID` | `RAW(16)` | Waste Stream - Point of Generation UUID |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `WasteStreamPtOfGnrtnLocName` | `CHAR(60)` | Location |
-| `WasteTransfReqStatus` | `CHAR(2)` | Status of Waste Transfer Request |
-| `WasteTransfReqStatusName` | `CHAR(60)` | Short Text for Fixed Values |
-| `Country` | `CHAR(3)` | Country/Region |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `WasteStreamUUID` | `RAW(16)` | Waste Stream UUID |
-| `EnvrmtWasteGnrtrHasCurUsrAssgd` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WasteTransferRequestNumber` |  | |  |  | `CHAR(20)` | Number of Waste Transfer Request |
+| `WasteStreamPtOfGnrtnLocUUID` |  | |  |  | `RAW(16)` | Waste Stream - Point of Generation UUID |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `WasteStreamPtOfGnrtnLocName` |  | |  |  | `CHAR(60)` | Location |
+| `WasteTransfReqStatus` |  | |  |  | `CHAR(2)` | Status of Waste Transfer Request |
+| `WasteTransfReqStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `WasteStreamUUID` |  | |  |  | `RAW(16)` | Waste Stream UUID |
+| `EnvrmtWasteGnrtrHasCurUsrAssgd` |  | |  |  | `INT1(3)` |  |

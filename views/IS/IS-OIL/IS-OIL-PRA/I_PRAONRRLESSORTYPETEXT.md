@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRLessorType` | `CHAR(1)` | ONRR-2014 - Lessor Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ONRRLessorTypeName` | `CHAR(60)` | PRA ONRR Lessor type text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRLessorType` |  | |  |  | `CHAR(1)` | ONRR-2014 - Lessor Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ONRRLessorTypeName` |  | |  |  | `CHAR(60)` | PRA ONRR Lessor type text |

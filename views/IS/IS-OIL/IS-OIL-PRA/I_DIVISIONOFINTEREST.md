@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `JointVenture` | `CHAR(6)` | Joint Venture |
-| `DivisionOfInterest` | `CHAR(5)` | Division of Interest (DOI) |
-| `DivisionOfInterestName` | `CHAR(30)` | Division of Interest Name |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `PrimaryGeogrlLocation` | `CHAR(2)` | Primary Geographical Location |
-| `SecondaryGeogrlLocation` | `CHAR(3)` | Secondary geographic location |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
+| `DivisionOfInterest` |  | |  |  | `CHAR(5)` | Division of Interest (DOI) |
+| `DivisionOfInterestName` |  | |  |  | `CHAR(30)` | Division of Interest Name |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+| `SecondaryGeogrlLocation` |  | |  |  | `CHAR(3)` | Secondary geographic location |

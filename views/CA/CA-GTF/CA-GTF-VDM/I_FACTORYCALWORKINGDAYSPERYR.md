@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FactoryCalendar` | `CHAR(2)` | Factory Calendar |
-| `CalendarYear` | `NUMC(4)` | Year stored |
-| `Month01WorkingDaysString` | `CHAR(31)` | Calendar: Month01WorkingDays |
-| `Month02WorkingDaysString` | `CHAR(31)` | Calendar:Month02WorkingDays |
-| `Month03WorkingDaysString` | `CHAR(31)` | Calendar:Month03WorkingDays |
-| `Month04WorkingDaysString` | `CHAR(31)` | Calendar:Month04WorkingDays |
-| `Month05WorkingDaysString` | `CHAR(31)` | Calendar:Month05WorkingDaysString |
-| `Month06WorkingDaysString` | `CHAR(31)` | Month06WorkingDaysString |
-| `Month07WorkingDaysString` | `CHAR(31)` | Calendar:Month07WorkingDays |
-| `Month08WorkingDaysString` | `CHAR(31)` | Calendar:Month08WorkingDays |
-| `Month09WorkingDaysString` | `CHAR(31)` | Calendar:Month09WorkingDaysString |
-| `Month10WorkingDaysString` | `CHAR(31)` | Calendar:Month10WorkingDaysString |
-| `Month11WorkingDaysString` | `CHAR(31)` | Calendar:Month11WorkingDays |
-| `Month12WorkingDaysString` | `CHAR(31)` | Calendar:Month12WorkingDays |
-| `FactoryCalYearStartDayValue` | `NUMC(5)` | Start of factory day numbering |
-| `NumberOfNonWorkingDays` | `NUMC(3)` | Number of days in year |
-| `NumberOfWorkingDays` | `NUMC(3)` | Number of workdays in the year |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory Calendar |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Year stored |
+| `Month01WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar: Month01WorkingDays |
+| `Month02WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month02WorkingDays |
+| `Month03WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month03WorkingDays |
+| `Month04WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month04WorkingDays |
+| `Month05WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month05WorkingDaysString |
+| `Month06WorkingDaysString` |  | |  |  | `CHAR(31)` | Month06WorkingDaysString |
+| `Month07WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month07WorkingDays |
+| `Month08WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month08WorkingDays |
+| `Month09WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month09WorkingDaysString |
+| `Month10WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month10WorkingDaysString |
+| `Month11WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month11WorkingDays |
+| `Month12WorkingDaysString` |  | |  |  | `CHAR(31)` | Calendar:Month12WorkingDays |
+| `FactoryCalYearStartDayValue` |  | |  |  | `NUMC(5)` | Start of factory day numbering |
+| `NumberOfNonWorkingDays` |  | |  |  | `NUMC(3)` | Number of days in year |
+| `NumberOfWorkingDays` |  | |  |  | `NUMC(3)` | Number of workdays in the year |

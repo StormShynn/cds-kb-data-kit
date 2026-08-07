@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `MaintEventLikelihoodCode` | `NUMC(2)` | Likelihood ID |
-| `MaintEvtLikelihoodDescription` | `CHAR(70)` | Likelihood Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MaintEventLikelihoodCode` |  | |  |  | `NUMC(2)` | Likelihood ID |
+| `MaintEvtLikelihoodDescription` |  | |  |  | `CHAR(70)` | Likelihood Description |

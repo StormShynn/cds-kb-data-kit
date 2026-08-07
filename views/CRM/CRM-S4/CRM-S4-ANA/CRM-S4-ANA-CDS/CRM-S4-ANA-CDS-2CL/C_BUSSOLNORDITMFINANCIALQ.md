@@ -35,48 +35,48 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceObjectType` | `CHAR(10)` | Business Trans. Cat. |
-| `BusinessSolutionOrder` | `CHAR(10)` | Transaction ID |
-| `BusinessSolutionOrderItem` | `NUMC(6)` | Shortened Item Number in Document |
-| `BusSolnOrdType` | `CHAR(4)` | Business Transaction Type |
-| `BusSolnOrdDescription` | `CHAR(40)` | Transaction Description |
-| `BusSolnOrdItmDescription` | `CHAR(40)` | Product Description |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `SalesOffice` | `CHAR(4)` | Sales Office |
-| `SalesGroup` | `CHAR(3)` | Sales Group |
-| `SoldToParty` | `CHAR(10)` | Sold-To Party |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `ServiceDocItemCategory` | `CHAR(4)` | Item Category |
-| `Product` | `CHAR(40)` | Product |
-| `PostingDate` | `DATS(8)` | Posting Date for a Business Transaction |
-| `ProductGroup` | `CHAR(9)` | Product Group |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `ServiceDocumentItemObjectType` | `CHAR(10)` | CRM Item Object Type |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `BusSolnOrdOpgMarginRatio` | `DEC(23)` | Operating Margin Global Currency Percent |
-| `TotBusSolnOrdItmNetAmtPerPerd` | `CURR(15)` |  |
-| `BusSolnOrdRevnAmtInDC` | `CURR(23)` |  |
-| `BusSolnOrdCostAmtInDC` | `CURR(23)` |  |
-| `BusSolnOrdRecgdMargAmtInDC` | `CURR(23)` |  |
-| `SlsItmNetAmount` | `CURR(15)` |  |
-| `ServiceContractItemNetAmount` | `CURR(15)` |  |
-| `ExpnItmNetAmount` | `CURR(15)` |  |
-| `SbscrBilgItmNetAmount` | `CURR(15)` |  |
-| `SrvcPrtItmNetAmount` | `CURR(15)` |  |
-| `SrvcItmNetAmount` | `CURR(15)` |  |
-| `EnterpriseProjectItemNetAmount` | `CURR(15)` |  |
-| `NrOfOpenBusSolnOrders` | `INT4(10)` |  |
-| `NrOfReldBusSolnOrders` | `INT4(10)` |  |
-| `NrOfCmpltdBusSolnOrders` | `INT4(10)` |  |
-| `BusSolnOrdStatus` | `CHAR(4)` | Life Cycle Status |
-| `BusSolnOrdItmStatus` | `CHAR(4)` | Life Cycle Status |
-| `ServiceDocItemCreationDate` | `DATS(8)` | Created On |
-| `ServiceDocumentCreationDate` | `DATS(8)` | Created On |
-| `BusSolnOrdCreationQuarter` | `NUMC(1)` | Calendar Quarter |
-| `BusSolnOrdCreationMonth` | `NUMC(2)` | Calendar Month |
-| `BusSolnOrdCreationYear` | `NUMC(4)` | Calendar Year |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `BusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Transaction ID |
+| `BusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` | Shortened Item Number in Document |
+| `BusSolnOrdType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `BusSolnOrdDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `BusSolnOrdItmDescription` |  | |  |  | `CHAR(40)` | Product Description |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ServiceDocItemCategory` |  | |  |  | `CHAR(4)` | Item Category |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `ServiceDocumentItemObjectType` |  | |  |  | `CHAR(10)` | CRM Item Object Type |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `BusSolnOrdOpgMarginRatio` |  | |  |  | `DEC(23)` | Operating Margin Global Currency Percent |
+| `TotBusSolnOrdItmNetAmtPerPerd` |  | |  |  | `CURR(15)` |  |
+| `BusSolnOrdRevnAmtInDC` |  | |  |  | `CURR(23)` |  |
+| `BusSolnOrdCostAmtInDC` |  | |  |  | `CURR(23)` |  |
+| `BusSolnOrdRecgdMargAmtInDC` |  | |  |  | `CURR(23)` |  |
+| `SlsItmNetAmount` |  | |  |  | `CURR(15)` |  |
+| `ServiceContractItemNetAmount` |  | |  |  | `CURR(15)` |  |
+| `ExpnItmNetAmount` |  | |  |  | `CURR(15)` |  |
+| `SbscrBilgItmNetAmount` |  | |  |  | `CURR(15)` |  |
+| `SrvcPrtItmNetAmount` |  | |  |  | `CURR(15)` |  |
+| `SrvcItmNetAmount` |  | |  |  | `CURR(15)` |  |
+| `EnterpriseProjectItemNetAmount` |  | |  |  | `CURR(15)` |  |
+| `NrOfOpenBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `NrOfReldBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `NrOfCmpltdBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `BusSolnOrdStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `BusSolnOrdItmStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceDocItemCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `ServiceDocumentCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `BusSolnOrdCreationQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `BusSolnOrdCreationMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `BusSolnOrdCreationYear` |  | |  |  | `NUMC(4)` | Calendar Year |

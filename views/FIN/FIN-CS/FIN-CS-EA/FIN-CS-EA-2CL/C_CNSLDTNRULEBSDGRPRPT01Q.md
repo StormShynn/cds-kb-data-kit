@@ -33,31 +33,31 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationVersion` | `CHAR(3)` | Consolidation Version |
-| `YearToDateAmountInGrpCrcy` | `CURR(23)` | Cumulative Value in Group Currency |
-| `PrevPerdYTDAmtInGroupCurrency` | `CURR(23)` | Cumulative Value in Group Currency |
-| `PerdcAmountInGroupCurrency` | `INT1(3)` |  |
-| `ConsolidationGroup` | `CHAR(18)` | Consolidation Group |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationLedger` | `CHAR(2)` | Ledger |
-| `GroupCurrency` | `CUKY(5)` | Group Currency |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `SubItemCategory` | `CHAR(3)` | Subitem Category |
-| `SubItem` | `CHAR(10)` | Subitem |
-| `ConsolidationReportingItem` | `CHAR(10)` | Reporting Item |
-| `FinancialStatementItem` | `CHAR(10)` | Financial Statement Item |
-| `ConsolidationUnit` | `CHAR(18)` | Consolidation Unit |
-| `PartnerConsolidationUnit` | `CHAR(18)` | Partner Unit |
-| `PostingLevel` | `CHAR(2)` | Posting Level |
-| `Segment` | `CHAR(10)` | Segment for Segmental Reporting |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `PreviousFiscalYear` | `NUMC(4)` |  |
-| `PreviousPeriodBackShift1` | `NUMC(3)` |  |
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `ConsolidationReportingItemHier` | `CHAR(10)` |  |
-| `ConsolidationSimlnRptgRuleID` | `CHAR(3)` |  |
-| `ConsolidationReportingRuleID` | `CHAR(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationVersion` |  | |  |  | `CHAR(3)` | Consolidation Version |
+| `YearToDateAmountInGrpCrcy` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `PrevPerdYTDAmtInGroupCurrency` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `PerdcAmountInGroupCurrency` |  | |  |  | `INT1(3)` |  |
+| `ConsolidationGroup` |  | |  |  | `CHAR(18)` | Consolidation Group |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationLedger` |  | |  |  | `CHAR(2)` | Ledger |
+| `GroupCurrency` |  | |  |  | `CUKY(5)` | Group Currency |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `SubItemCategory` |  | |  |  | `CHAR(3)` | Subitem Category |
+| `SubItem` |  | |  |  | `CHAR(10)` | Subitem |
+| `ConsolidationReportingItem` |  | |  |  | `CHAR(10)` | Reporting Item |
+| `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `PartnerConsolidationUnit` |  | |  |  | `CHAR(18)` | Partner Unit |
+| `PostingLevel` |  | |  |  | `CHAR(2)` | Posting Level |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `PreviousFiscalYear` |  | |  |  | `NUMC(4)` |  |
+| `PreviousPeriodBackShift1` |  | |  |  | `NUMC(3)` |  |
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `ConsolidationReportingItemHier` |  | |  |  | `CHAR(10)` |  |
+| `ConsolidationSimlnRptgRuleID` |  | |  |  | `CHAR(3)` |  |
+| `ConsolidationReportingRuleID` |  | |  |  | `CHAR(3)` |  |

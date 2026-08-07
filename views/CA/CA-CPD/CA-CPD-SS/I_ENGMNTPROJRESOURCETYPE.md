@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectResourceType` | `CHAR(4)` | Resource Type ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectResourceType` |  | |  |  | `CHAR(4)` | Resource Type ID |

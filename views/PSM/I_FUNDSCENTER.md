@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundsCenter` | `CHAR(16)` | Funds Center |
-| `ValidityEndDate` | `DATS(8)` | Funds Center Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Funds Center Validity Start Date |
-| `CreatedByUser` | `CHAR(12)` | Funds Center Created by User |
-| `CreationDate` | `DATS(8)` | Funds Center Created on Date |
-| `LastChangeUser` | `CHAR(12)` | Funds Center Last Changed by User |
-| `LastChangeDate` | `DATS(8)` | Funds Center Last Changed on Date |
-| `FundsCenterExpirationDate` | `DATS(8)` | Funds Center Expiration Date |
-| `FundsCenterResponsible` | `CHAR(12)` | Funds Center Manager in Organization Model |
-| `FundsCenterManager` | `CHAR(12)` | Funds Center Manager |
-| `FundsCenterResponsibleName` | `CHAR(20)` | Name of Person Responsible |
-| `FundsCenterDefaultFund` | `CHAR(10)` | Default Fund Value in a Funds Center |
-| `FundsCenterAuthznGrp` | `CHAR(10)` | Funds Center Authorization Group |
-| `FndsCenterFinMgmtAreaForAuthzn` | `CHAR(4)` | FM Area for Auth Grp for Funds Center |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundsCenter` |  | |  |  | `CHAR(16)` | Funds Center |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Funds Center Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Funds Center Validity Start Date |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Funds Center Created by User |
+| `CreationDate` |  | |  |  | `DATS(8)` | Funds Center Created on Date |
+| `LastChangeUser` |  | |  |  | `CHAR(12)` | Funds Center Last Changed by User |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Funds Center Last Changed on Date |
+| `FundsCenterExpirationDate` |  | |  |  | `DATS(8)` | Funds Center Expiration Date |
+| `FundsCenterResponsible` |  | |  |  | `CHAR(12)` | Funds Center Manager in Organization Model |
+| `FundsCenterManager` |  | |  |  | `CHAR(12)` | Funds Center Manager |
+| `FundsCenterResponsibleName` |  | |  |  | `CHAR(20)` | Name of Person Responsible |
+| `FundsCenterDefaultFund` |  | |  |  | `CHAR(10)` | Default Fund Value in a Funds Center |
+| `FundsCenterAuthznGrp` |  | |  |  | `CHAR(10)` | Funds Center Authorization Group |
+| `FndsCenterFinMgmtAreaForAuthzn` |  | |  |  | `CHAR(4)` | FM Area for Auth Grp for Funds Center |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |

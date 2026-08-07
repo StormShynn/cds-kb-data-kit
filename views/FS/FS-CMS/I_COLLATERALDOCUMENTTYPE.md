@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralDocumentType` | `CHAR(6)` | Document Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralDocumentType` |  | |  |  | `CHAR(6)` | Document Type |

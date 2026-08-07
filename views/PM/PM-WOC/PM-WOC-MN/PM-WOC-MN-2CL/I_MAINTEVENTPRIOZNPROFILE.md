@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintEvtPrioritizationProfile` | `CHAR(10)` | Prioritization Profile ID |
-| `ConfigDeprecationCode` | `CHAR(1)` | Deprecated Entries |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintEvtPrioritizationProfile` |  | |  |  | `CHAR(10)` | Prioritization Profile ID |
+| `ConfigDeprecationCode` |  | |  |  | `CHAR(1)` | Deprecated Entries |

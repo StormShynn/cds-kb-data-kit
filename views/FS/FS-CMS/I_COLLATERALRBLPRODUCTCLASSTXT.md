@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblProductClass` | `CHAR(6)` | Product Class |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralRblProductClassTxt` | `CHAR(40)` | Product Name in a Specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblProductClass` |  | |  |  | `CHAR(6)` | Product Class |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralRblProductClassTxt` |  | |  |  | `CHAR(40)` | Product Name in a Specified Language |

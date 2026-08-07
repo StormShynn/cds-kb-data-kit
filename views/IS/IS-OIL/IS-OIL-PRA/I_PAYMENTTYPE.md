@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentType` | `CHAR(1)` | Payment Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentType` |  | |  |  | `CHAR(1)` | Payment Type |

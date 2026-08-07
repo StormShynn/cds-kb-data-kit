@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralAgreementType` | `CHAR(6)` | Collateral Agreement Type |
-| `CollateralProcessControlKey` | `CHAR(10)` | Process Control Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralAgreementType` |  | |  |  | `CHAR(6)` | Collateral Agreement Type |
+| `CollateralProcessControlKey` |  | |  |  | `CHAR(10)` | Process Control Key |

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSRiskControlUUID` | `RAW(16)` | UUID in X form (binary) |
-| `EHSTaskHostObjectInstance` | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
-| `EHSRiskAssessmentType` | `CHAR(21)` | Risk Assessment Type |
-| `EHSRiskAssessment2Status` | `CHAR(2)` | Risk Assessment Status |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `EHSRiskAssessmentAuthznGrp` | `CHAR(21)` | Authorization Group for Risk Assessment |
-| `EHSRiskAssessmentIsBlocked` | `CHAR(1)` | Risk Assessment is Blocked |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSRiskControlUUID` |  | |  |  | `RAW(16)` | UUID in X form (binary) |
+| `EHSTaskHostObjectInstance` |  | |  |  | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
+| `EHSRiskAssessmentType` |  | |  |  | `CHAR(21)` | Risk Assessment Type |
+| `EHSRiskAssessment2Status` |  | |  |  | `CHAR(2)` | Risk Assessment Status |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `EHSRiskAssessmentAuthznGrp` |  | |  |  | `CHAR(21)` | Authorization Group for Risk Assessment |
+| `EHSRiskAssessmentIsBlocked` |  | |  |  | `CHAR(1)` | Risk Assessment is Blocked |

@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuspenseReason` | `CHAR(3)` | Suspense Reason Code |
-| `Language` | `LANG(1)` | Language Key |
-| `SuspenseReasonName` | `CHAR(40)` | Suspense Reason Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuspenseReason` |  | |  |  | `CHAR(3)` | Suspense Reason Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SuspenseReasonName` |  | |  |  | `CHAR(40)` | Suspense Reason Description |

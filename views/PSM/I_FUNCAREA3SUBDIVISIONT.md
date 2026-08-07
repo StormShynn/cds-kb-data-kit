@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `FunctionalAreaSubdivisionID` | `CHAR(10)` | Master Data Subdivision ID |
-| `FunctionalArea3Subdivision` | `CHAR(10)` | Substring 3 of Functional Area |
-| `FuncArea3SubdivisionDesc` | `CHAR(50)` | Substring Description 1 |
-| `FuncArea3SubdivisionDesc2` | `CHAR(50)` | Substring Description 2 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FunctionalAreaSubdivisionID` |  | |  |  | `CHAR(10)` | Master Data Subdivision ID |
+| `FunctionalArea3Subdivision` |  | |  |  | `CHAR(10)` | Substring 3 of Functional Area |
+| `FuncArea3SubdivisionDesc` |  | |  |  | `CHAR(50)` | Substring Description 1 |
+| `FuncArea3SubdivisionDesc2` |  | |  |  | `CHAR(50)` | Substring Description 2 |

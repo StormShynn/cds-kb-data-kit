@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NorthDakotaPostalAreaCode` | `CHAR(4)` | Tax 2.0: ND Posting Code |
-| `NorthDakotaPostalAreaName` | `CHAR(50)` | General Description - 50 Characters |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NorthDakotaPostalAreaCode` |  | |  |  | `CHAR(4)` | Tax 2.0: ND Posting Code |
+| `NorthDakotaPostalAreaName` |  | |  |  | `CHAR(50)` | General Description - 50 Characters |

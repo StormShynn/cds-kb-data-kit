@@ -34,24 +34,24 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessSolutionOrder` | `CHAR(10)` |  |
-| `BusinessSolutionOrderItem` | `NUMC(6)` |  |
-| `BusSolnOrderItemCharUUID` | `CHAR(32)` | 32 Character CRM Object GUID (Converted) |
-| `ServiceObjectType` | `CHAR(10)` | Business Trans. Cat. |
-| `ServiceDocumentType` | `CHAR(4)` | Business Transaction Type |
-| `ResponsibleEmployeeUserID` | `CHAR(12)` | User ID |
-| `SuccessorProject` | `CHAR(24)` | Project ID |
-| `ServiceEmployee` | `CHAR(10)` | Executing Service Employee |
-| `ProjectInternalID` | `NUMC(8)` | Project (internal) |
-| `ProcessingStatus` | `CHAR(2)` | Object Processing Status |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SalesOffice` | `CHAR(4)` | Sales Office |
-| `SalesGroup` | `CHAR(3)` | Sales Group |
-| `SalesOfficeOrgUnitID` | `CHAR(14)` | Sales Office |
-| `SalesOrganizationOrgUnitID` | `CHAR(14)` | Sales Organization ID |
-| `SalesGroupOrgUnitID` | `CHAR(14)` | Sales Group |
-| `ServiceOrganization` | `CHAR(14)` | Service Organization |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` |  | |  |  | `CHAR(10)` |  |
+| `BusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` |  |
+| `BusSolnOrderItemCharUUID` |  | |  |  | `CHAR(32)` | 32 Character CRM Object GUID (Converted) |
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ResponsibleEmployeeUserID` |  | |  |  | `CHAR(12)` | User ID |
+| `SuccessorProject` |  | |  |  | `CHAR(24)` | Project ID |
+| `ServiceEmployee` |  | |  |  | `CHAR(10)` | Executing Service Employee |
+| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project (internal) |
+| `ProcessingStatus` |  | |  |  | `CHAR(2)` | Object Processing Status |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SalesOfficeOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Office |
+| `SalesOrganizationOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Organization ID |
+| `SalesGroupOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Group |
+| `ServiceOrganization` |  | |  |  | `CHAR(14)` | Service Organization |

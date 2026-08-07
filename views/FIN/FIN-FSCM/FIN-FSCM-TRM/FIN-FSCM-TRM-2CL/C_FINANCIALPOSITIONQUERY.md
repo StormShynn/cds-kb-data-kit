@@ -34,38 +34,38 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `CompanyCodeIsTreasuryCenter` | `CHAR(1)` | Treasury Center Indicator |
-| `TreasuryCenterSortSequenceVal` | `INT2(5)` | Treasury Center Ranking |
-| `FinPositionAssetLiabilityCode` | `CHAR(1)` | Assets or Liabilities |
-| `FinancialPositionGroup` | `CHAR(20)` | Financial Position Group |
-| `FinancialPosition` | `CHAR(20)` | Financial Position |
-| `FinancialPositionDataSource` | `CHAR(35)` | Data Source |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `HouseBank` | `CHAR(5)` | House Bank Key |
-| `HouseBankAccount` | `CHAR(5)` | House Bank Account |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `Issuer` | `CHAR(10)` | Issuer Identity Key |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `FinancialInstrTransactionType` | `CHAR(3)` | Financial Transaction Type |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `TreasuryValuationClass` | `NUMC(4)` | Valuation Class |
-| `Portfolio` | `CHAR(10)` | Portfolio |
-| `SecurityAccount` | `CHAR(10)` | Security Account |
-| `SecurityClass` | `CHAR(13)` | Security Class |
-| `TreasuryPositionAccount` | `CHAR(10)` | Futures Account for Listed Options and Futures |
-| `TreasuryValuationArea` | `CHAR(3)` | Treasury Valuation Area |
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `AccountingDocumentType` | `CHAR(2)` | Journal Entry Type |
-| `AccountingDocument` | `CHAR(10)` | Document Number of an Accounting Document |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `AmountInTransactionCurrency` | `CURR(23)` |  |
-| `BookValueAmountInDC` | `CURR(23)` | Book Value in Display Currency |
-| `NominalAmountInDisplayCurrency` | `CURR(23)` | Nominal Amount in Display Currency |
-| `AmountInDisplayCurrency` | `CURR(23)` | Financial Position Amount in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `CompanyCodeIsTreasuryCenter` |  | |  |  | `CHAR(1)` | Treasury Center Indicator |
+| `TreasuryCenterSortSequenceVal` |  | |  |  | `INT2(5)` | Treasury Center Ranking |
+| `FinPositionAssetLiabilityCode` |  | |  |  | `CHAR(1)` | Assets or Liabilities |
+| `FinancialPositionGroup` |  | |  |  | `CHAR(20)` | Financial Position Group |
+| `FinancialPosition` |  | |  |  | `CHAR(20)` | Financial Position |
+| `FinancialPositionDataSource` |  | |  |  | `CHAR(35)` | Data Source |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `HouseBank` |  | |  |  | `CHAR(5)` | House Bank Key |
+| `HouseBankAccount` |  | |  |  | `CHAR(5)` | House Bank Account |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Issuer` |  | |  |  | `CHAR(10)` | Issuer Identity Key |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `FinancialInstrTransactionType` |  | |  |  | `CHAR(3)` | Financial Transaction Type |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `TreasuryValuationClass` |  | |  |  | `NUMC(4)` | Valuation Class |
+| `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `SecurityAccount` |  | |  |  | `CHAR(10)` | Security Account |
+| `SecurityClass` |  | |  |  | `CHAR(13)` | Security Class |
+| `TreasuryPositionAccount` |  | |  |  | `CHAR(10)` | Futures Account for Listed Options and Futures |
+| `TreasuryValuationArea` |  | |  |  | `CHAR(3)` | Treasury Valuation Area |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` |  |
+| `BookValueAmountInDC` |  | |  |  | `CURR(23)` | Book Value in Display Currency |
+| `NominalAmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Nominal Amount in Display Currency |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Financial Position Amount in Display Currency |

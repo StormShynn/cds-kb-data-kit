@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NoticeOfViolationType` | `CHAR(21)` | Violation Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NoticeOfViolationType` |  | |  |  | `CHAR(21)` | Violation Type |

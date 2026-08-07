@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `TrdgDocSuplrBillgBlkRsn` | `CHAR(2)` | Blocking Reason Document Header |
-| `TrdgDocSuplrBillgBlkRsnName` | `CHAR(40)` | Description of Blocking Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TrdgDocSuplrBillgBlkRsn` |  | |  |  | `CHAR(2)` | Blocking Reason Document Header |
+| `TrdgDocSuplrBillgBlkRsnName` |  | |  |  | `CHAR(40)` | Description of Blocking Reason |

@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `BusinessProcess` | `CHAR(12)` | Business Process |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `BusinessProcess` |  | |  |  | `CHAR(12)` | Business Process |

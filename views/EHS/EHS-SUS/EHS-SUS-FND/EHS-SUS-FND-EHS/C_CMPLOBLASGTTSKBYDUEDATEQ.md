@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplncOblgnRqmtAssignmentUUID` | `RAW(16)` | Obligation Requirement Assignment UUID |
-| `EHSPlannedTaskUUID` | `RAW(16)` | Planned Task UUID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationName` | `CHAR(60)` | Location Revision Text |
-| `EHSTaskTitle` | `CHAR(60)` | Task Title |
-| `EHSTaskDueDate` | `DATS(8)` | Due Date of a Planned Task |
-| `EHSTaskStatus` | `CHAR(2)` | Status of Task Instance (Without Conversion Exit) |
-| `ComplianceObligationTypeCode` | `CHAR(2)` | Compliance Obligation Type |
-| `CmplncOblgnTypeDescription` | `CHAR(60)` | Compliance Obligation Type Description |
-| `ComplianceObligationDomainCode` | `CHAR(21)` | Compliance Obligation Domain |
-| `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
-| `EHSTaskDueInValue` | `INT4(10)` | Number of Records |
-| `NumberOfRecords` | `INT4(10)` | Number of Records |
-| `EHSTaskHostSemanticObject` | `CHAR(30)` | Semantic Object |
-| `EHSTaskOwnerUser` | `CHAR(12)` | User ID |
-| `EHSTaskAssignedUserName` | `CHAR(80)` | User Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplncOblgnRqmtAssignmentUUID` |  | |  |  | `RAW(16)` | Obligation Requirement Assignment UUID |
+| `EHSPlannedTaskUUID` |  | |  |  | `RAW(16)` | Planned Task UUID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location Revision Text |
+| `EHSTaskTitle` |  | |  |  | `CHAR(60)` | Task Title |
+| `EHSTaskDueDate` |  | |  |  | `DATS(8)` | Due Date of a Planned Task |
+| `EHSTaskStatus` |  | |  |  | `CHAR(2)` | Status of Task Instance (Without Conversion Exit) |
+| `ComplianceObligationTypeCode` |  | |  |  | `CHAR(2)` | Compliance Obligation Type |
+| `CmplncOblgnTypeDescription` |  | |  |  | `CHAR(60)` | Compliance Obligation Type Description |
+| `ComplianceObligationDomainCode` |  | |  |  | `CHAR(21)` | Compliance Obligation Domain |
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
+| `EHSTaskDueInValue` |  | |  |  | `INT4(10)` | Number of Records |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Records |
+| `EHSTaskHostSemanticObject` |  | |  |  | `CHAR(30)` | Semantic Object |
+| `EHSTaskOwnerUser` |  | |  |  | `CHAR(12)` | User ID |
+| `EHSTaskAssignedUserName` |  | |  |  | `CHAR(80)` | User Description |

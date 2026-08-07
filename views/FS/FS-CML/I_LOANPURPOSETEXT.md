@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanProductType` | `CHAR(3)` | Product Type |
-| `LoanPurpose` | `CHAR(2)` | Purpose of Loan |
-| `LoanPurposeText` | `CHAR(30)` | Text (30 Characters) |
-| `LoanPurposeShortText` | `CHAR(15)` | Short Name |
-| `LoanPurposeLongText` | `CHAR(50)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `LoanPurpose` |  | |  |  | `CHAR(2)` | Purpose of Loan |
+| `LoanPurposeText` |  | |  |  | `CHAR(30)` | Text (30 Characters) |
+| `LoanPurposeShortText` |  | |  |  | `CHAR(15)` | Short Name |
+| `LoanPurposeLongText` |  | |  |  | `CHAR(50)` | Name |

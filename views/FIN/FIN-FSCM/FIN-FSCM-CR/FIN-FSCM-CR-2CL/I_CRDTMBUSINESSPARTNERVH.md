@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerName` | `CHAR(81)` |  |
-| `FirstName` | `CHAR(40)` | First Name of Business Partner (Person) |
-| `LastName` | `CHAR(40)` | Last Name of Business Partner (Person) |
-| `OrganizationBPName1` | `CHAR(40)` | Name 1 of organization |
-| `OrganizationBPName2` | `CHAR(40)` | Name 2 of organization |
-| `Country` | `CHAR(3)` | Country/Region of a Business Partner |
-| `SearchTerm1` | `CHAR(20)` | Search Term 1 for Business Partner |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerName` |  | |  |  | `CHAR(81)` |  |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `OrganizationBPName1` |  | |  |  | `CHAR(40)` | Name 1 of organization |
+| `OrganizationBPName2` |  | |  |  | `CHAR(40)` | Name 2 of organization |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region of a Business Partner |
+| `SearchTerm1` |  | |  |  | `CHAR(20)` | Search Term 1 for Business Partner |

@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkCenterFormula` | `CHAR(6)` | Formula Key |
-| `FormulaIsAllowedForCosting` | `CHAR(1)` | Indicates it is allowed for costing |
-| `FormulaIsAllwdForCapRqmtPlng` | `CHAR(1)` | Indicator: work center is allowed for capacity requirements |
-| `FormulaIsAllwdForProdnRsceTool` | `CHAR(1)` | Indicator: PRT allowed for requirements |
-| `FormulaIsAllowedForScheduling` | `CHAR(1)` | Indicator: Allowed for scheduling |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterFormula` |  | |  |  | `CHAR(6)` | Formula Key |
+| `FormulaIsAllowedForCosting` |  | |  |  | `CHAR(1)` | Indicates it is allowed for costing |
+| `FormulaIsAllwdForCapRqmtPlng` |  | |  |  | `CHAR(1)` | Indicator: work center is allowed for capacity requirements |
+| `FormulaIsAllwdForProdnRsceTool` |  | |  |  | `CHAR(1)` | Indicator: PRT allowed for requirements |
+| `FormulaIsAllowedForScheduling` |  | |  |  | `CHAR(1)` | Indicator: Allowed for scheduling |

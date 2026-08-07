@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtItmTxtObjType` | `CHAR(4)` | Specific Text ID for a Settlement Management Document Item |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtMgmtItmTxtObjTypeDesc` | `CHAR(30)` | Settlement Management Item Text ID Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtItmTxtObjType` |  | |  |  | `CHAR(4)` | Specific Text ID for a Settlement Management Document Item |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtMgmtItmTxtObjTypeDesc` |  | |  |  | `CHAR(30)` | Settlement Management Item Text ID Description |

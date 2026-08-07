@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AllocTableItemCategoryName` | `CHAR(4)` | Item category of allocation table |
-| `Language` | `LANG(1)` | Language Key |
-| `AllocTblItmCatDesc` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AllocTableItemCategoryName` |  | |  |  | `CHAR(4)` | Item category of allocation table |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AllocTblItmCatDesc` |  | |  |  | `CHAR(40)` | Description |

@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationPrftCtrHierarchy` | `CHAR(40)` | Consolidation Profit Center Hierarchy |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `CnsldtnProfitCenterHierText` | `CHAR(50)` | Consolidation Hierarchy Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationPrftCtrHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Profit Center Hierarchy |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CnsldtnProfitCenterHierText` |  | |  |  | `CHAR(50)` | Consolidation Hierarchy Description |

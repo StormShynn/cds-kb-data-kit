@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusVolDocCat` | `CHAR(2)` | Document Type of Business Volume Source Document |
-| `Language` | `LANG(1)` | Language Key |
-| `BusVolDocCatName` | `CHAR(60)` | Document Type Description of Business Volume Source Document |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolDocCat` |  | |  |  | `CHAR(2)` | Document Type of Business Volume Source Document |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusVolDocCatName` |  | |  |  | `CHAR(60)` | Document Type Description of Business Volume Source Document |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

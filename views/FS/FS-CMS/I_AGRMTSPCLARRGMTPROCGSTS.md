@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgrmtSpclArrgmtProcgStatus` | `CHAR(2)` | Processing Status of Special Arrangement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgrmtSpclArrgmtProcgStatus` |  | |  |  | `CHAR(2)` | Processing Status of Special Arrangement |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintEventCnsqncCategoryCode` | `NUMC(2)` | Consequence Category ID |
-| `MaintEventConsequenceCode` | `NUMC(2)` | Consequence ID |
-| `MaintEventCnsqncPositionValue` | `NUMC(2)` | Consequence Position |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintEventCnsqncCategoryCode` |  | |  |  | `NUMC(2)` | Consequence Category ID |
+| `MaintEventConsequenceCode` |  | |  |  | `NUMC(2)` | Consequence ID |
+| `MaintEventCnsqncPositionValue` |  | |  |  | `NUMC(2)` | Consequence Position |

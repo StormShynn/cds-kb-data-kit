@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialAssetsMgmtProductType` | `CHAR(3)` | Product Type |
-| `Language` | `LANG(1)` | Language Key |
-| `FinAssetsMgmtProdTypeLongName` | `CHAR(30)` | Text (30 Characters) |
-| `FinAssetsMgmtProdTypeShortName` | `CHAR(10)` | Text (10 Characters) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialAssetsMgmtProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FinAssetsMgmtProdTypeLongName` |  | |  |  | `CHAR(30)` | Text (30 Characters) |
+| `FinAssetsMgmtProdTypeShortName` |  | |  |  | `CHAR(10)` | Text (10 Characters) |

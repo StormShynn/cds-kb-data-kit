@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationProcessType` | `CHAR(6)` | Process Date Types |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `LiquidationProcessTypeText` | `CHAR(40)` | Data: Process date type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationProcessType` |  | |  |  | `CHAR(6)` | Process Date Types |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `LiquidationProcessTypeText` |  | |  |  | `CHAR(40)` | Data: Process date type |

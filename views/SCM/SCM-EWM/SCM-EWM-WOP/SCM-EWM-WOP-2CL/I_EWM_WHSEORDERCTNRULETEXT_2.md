@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `WarehouseOrderCreationRule` | `CHAR(4)` | Warehouse Order Creation Rule |
-| `WarehouseOrderCreationRuleName` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `WarehouseOrderCreationRule` |  | |  |  | `CHAR(4)` | Warehouse Order Creation Rule |
+| `WarehouseOrderCreationRuleName` |  | |  |  | `CHAR(40)` | Description |

@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusVolFieldCombnType` | `CHAR(4)` | Field Combination for Business Volume Selection |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolFieldCombnType` |  | |  |  | `CHAR(4)` | Field Combination for Business Volume Selection |

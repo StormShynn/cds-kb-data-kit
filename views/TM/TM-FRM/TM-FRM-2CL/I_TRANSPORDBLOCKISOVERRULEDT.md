@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdBlockIsOverruled` | `CHAR(1)` | Transportation Order Block Is Overruled |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdBlockIsOverruledDesc` | `CHAR(60)` | Transportation Order Block Is Overruled Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdBlockIsOverruled` |  | |  |  | `CHAR(1)` | Transportation Order Block Is Overruled |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdBlockIsOverruledDesc` |  | |  |  | `CHAR(60)` | Transportation Order Block Is Overruled Description |

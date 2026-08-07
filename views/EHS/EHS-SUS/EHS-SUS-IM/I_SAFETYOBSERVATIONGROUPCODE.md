@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SafetyObservationGroupCode` | `CHAR(21)` | Safety Observation Group |
-| `EHSInactiveConfiguration` | `CHAR(1)` | Deactivate Configuration |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SafetyObservationGroupCode` |  | |  |  | `CHAR(21)` | Safety Observation Group |
+| `EHSInactiveConfiguration` |  | |  |  | `CHAR(1)` | Deactivate Configuration |

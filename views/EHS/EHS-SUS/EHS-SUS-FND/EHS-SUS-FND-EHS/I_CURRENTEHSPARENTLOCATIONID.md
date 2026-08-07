@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSSuperiorLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSSuperiorLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |

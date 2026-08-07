@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DeliveryItemType` | `CHAR(4)` | Item Type |
-| `EWMDeliveryDocumentCategory` | `CHAR(3)` | Document Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryItemType` |  | |  |  | `CHAR(4)` | Item Type |
+| `EWMDeliveryDocumentCategory` |  | |  |  | `CHAR(3)` | Document Category |

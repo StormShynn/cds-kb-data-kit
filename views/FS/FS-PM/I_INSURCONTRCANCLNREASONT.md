@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurContrCanclnRsn` | `NUMC(5)` | Reversal Reason |
-| `InsurContrCanclnRsnName` | `CHAR(50)` | Reversal Reason Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurContrCanclnRsn` |  | |  |  | `NUMC(5)` | Reversal Reason |
+| `InsurContrCanclnRsnName` |  | |  |  | `CHAR(50)` | Reversal Reason Name |

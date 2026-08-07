@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SystemMessageNumber` | `CHAR(3)` | Message number |
-| `Language` | `LANG(1)` | Language Key |
-| `SystemMessageText` | `CHAR(73)` | Message Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SystemMessageNumber` |  | |  |  | `CHAR(3)` | Message number |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SystemMessageText` |  | |  |  | `CHAR(73)` | Message Text |

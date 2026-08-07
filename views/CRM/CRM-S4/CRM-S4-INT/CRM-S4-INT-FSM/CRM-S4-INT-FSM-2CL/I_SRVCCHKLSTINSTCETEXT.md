@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceChecklistInstance` | `CHAR(10)` | Instance ID |
-| `SrvcChklstLanguage` | `LANG(1)` | Language |
-| `SrvcChklstInstceDescription` | `CHAR(1333)` | Description |
-| `SvCklInstceUnfinishedExplText` | `CHAR(1333)` | Unfinished Explanation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceChecklistInstance` |  | |  |  | `CHAR(10)` | Instance ID |
+| `SrvcChklstLanguage` |  | |  |  | `LANG(1)` | Language |
+| `SrvcChklstInstceDescription` |  | |  |  | `CHAR(1333)` | Description |
+| `SvCklInstceUnfinishedExplText` |  | |  |  | `CHAR(1333)` | Unfinished Explanation |

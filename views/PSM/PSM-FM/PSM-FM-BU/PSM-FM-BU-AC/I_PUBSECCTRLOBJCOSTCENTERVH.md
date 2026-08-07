@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CtrlObjForCostCenter` | `CHAR(50)` | Control Object for a Cost Center |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `CtrlObjNameForCostCenter` | `CHAR(50)` | Name of a Control Object for a Cost Center |
-| `CostCenterDescription` | `CHAR(40)` | Description of Cost Center |
-| `HierarchyNodeText` | `CHAR(50)` | Hierarchy node description |
-| `HierarchyIDForCostCenter` | `CHAR(42)` | Hierarchy ID for Cost Center |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CtrlObjForCostCenter` |  | |  |  | `CHAR(50)` | Control Object for a Cost Center |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `CtrlObjNameForCostCenter` |  | |  |  | `CHAR(50)` | Name of a Control Object for a Cost Center |
+| `CostCenterDescription` |  | |  |  | `CHAR(40)` | Description of Cost Center |
+| `HierarchyNodeText` |  | |  |  | `CHAR(50)` | Hierarchy node description |
+| `HierarchyIDForCostCenter` |  | |  |  | `CHAR(42)` | Hierarchy ID for Cost Center |

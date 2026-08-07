@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `CompanyCodeOID` | `CHAR(128)` | MDI Business Object Instance ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `CompanyCodeOID` |  | |  |  | `CHAR(128)` | MDI Business Object Instance ID |

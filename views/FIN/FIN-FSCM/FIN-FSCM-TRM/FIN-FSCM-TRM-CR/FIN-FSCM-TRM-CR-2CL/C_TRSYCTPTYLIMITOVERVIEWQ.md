@@ -35,13 +35,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LimitUtilznDeterminationDate` | `DATS(8)` | Base Date for Determining Limit Utilization |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `LimitProductGroup` | `CHAR(3)` | Limit Product Group |
-| `IntLimitAmountInDisplayCrcy` | `CURR(17)` | Internal Limit Amount |
-| `LimitUtilznAmountInDisplayCrcy` | `CURR(17)` | Limit Amount Utilized: Totals Record |
-| `FreeIntLimitAmountInDspCrcy` | `CURR(17)` | Free Internal Limit Amount |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LimitUtilznDeterminationDate` |  | |  |  | `DATS(8)` | Base Date for Determining Limit Utilization |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `LimitProductGroup` |  | |  |  | `CHAR(3)` | Limit Product Group |
+| `IntLimitAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | Internal Limit Amount |
+| `LimitUtilznAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | Limit Amount Utilized: Totals Record |
+| `FreeIntLimitAmountInDspCrcy` |  | |  |  | `CURR(17)` | Free Internal Limit Amount |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |

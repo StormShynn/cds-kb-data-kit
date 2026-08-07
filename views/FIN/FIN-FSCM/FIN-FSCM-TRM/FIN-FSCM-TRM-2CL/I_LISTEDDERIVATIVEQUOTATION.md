@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ListedDerivativeQuotation` | `CHAR(1)` | Quotation type option/future |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ListedDerivativeQuotation` |  | |  |  | `CHAR(1)` | Quotation type option/future |

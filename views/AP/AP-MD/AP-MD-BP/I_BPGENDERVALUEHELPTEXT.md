@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GenderCodeName` | `CHAR(1)` | Gender of Business Partner (Person) |
-| `Language` | `LANG(1)` | Language Key |
-| `GenderCodeNameText` | `CHAR(50)` | Gender of Business Partner |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GenderCodeName` |  | |  |  | `CHAR(1)` | Gender of Business Partner (Person) |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GenderCodeNameText` |  | |  |  | `CHAR(50)` | Gender of Business Partner |

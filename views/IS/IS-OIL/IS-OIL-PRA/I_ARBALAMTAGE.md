@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BalAmtAgeCode` | `CHAR(3)` | Accounts Receivable Age |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BalAmtAgeCode` |  | |  |  | `CHAR(3)` | Accounts Receivable Age |

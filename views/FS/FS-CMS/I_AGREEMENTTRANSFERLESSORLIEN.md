@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlAgrmtTransfLessorLien` | `CHAR(2)` | Indicator for Lessor Lien on Collateral Agreement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlAgrmtTransfLessorLien` |  | |  |  | `CHAR(2)` | Indicator for Lessor Lien on Collateral Agreement |

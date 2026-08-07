@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementSpecialArrgmtType` | `CHAR(6)` | Special Arrangement Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `AgreementSpclArrgmtTypeText` | `CHAR(40)` |  Name of Special Arrangement Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementSpecialArrgmtType` |  | |  |  | `CHAR(6)` | Special Arrangement Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `AgreementSpclArrgmtTypeText` |  | |  |  | `CHAR(40)` | Name of Special Arrangement Type |

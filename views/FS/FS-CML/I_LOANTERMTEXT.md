@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanTerm` | `NUMC(2)` | Loan Term |
-| `LoanTermShortText` | `CHAR(15)` | Text (15 characters) |
-| `LoanTermText` | `CHAR(40)` | Text, 40 Characters Long |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanTerm` |  | |  |  | `NUMC(2)` | Loan Term |
+| `LoanTermShortText` |  | |  |  | `CHAR(15)` | Text (15 characters) |
+| `LoanTermText` |  | |  |  | `CHAR(40)` | Text, 40 Characters Long |

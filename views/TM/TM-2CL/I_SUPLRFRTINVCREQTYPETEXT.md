@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrFrtInvcReqType` | `CHAR(4)` | Type |
-| `Language` | `LANG(1)` | Language Key |
-| `SuplrFrtInvcReqTypeDesc` | `CHAR(40)` | Freight Settlement Document Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrFrtInvcReqType` |  | |  |  | `CHAR(4)` | Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SuplrFrtInvcReqTypeDesc` |  | |  |  | `CHAR(40)` | Freight Settlement Document Type Description |

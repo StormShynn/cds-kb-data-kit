@@ -35,16 +35,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Supplier` | `CHAR(10)` | Supplier |
-| `YearMonth` | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
-| `SupplierCountry` | `CHAR(3)` | Country/Region Key |
-| `SupplierRegion` | `CHAR(3)` | Supplier Region |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `SupplierBasicAuthorizationGrp` | `CHAR(4)` | Supplier Basic Authorization Group |
-| `SupplierFinsAuthorizationGrp` | `CHAR(4)` | Authorization Group |
-| `WeightedNetAmountInDisplayCrcy` | `CURR(23)` | Weighted Net Amount in Display Currency |
-| `AmountInDisplayCurrency` | `CURR(23)` | Amount in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `YearMonth` |  | |  |  | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
+| `SupplierCountry` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `SupplierRegion` |  | |  |  | `CHAR(3)` | Supplier Region |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `SupplierBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Supplier Basic Authorization Group |
+| `SupplierFinsAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `WeightedNetAmountInDisplayCrcy` |  | |  |  | `CURR(23)` | Weighted Net Amount in Display Currency |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |

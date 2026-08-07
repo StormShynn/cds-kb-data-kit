@@ -34,19 +34,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ResubmissionUUID` | `CHAR(32)` | Resubmission Key |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CollectionSegment` | `CHAR(10)` | Collection Segment |
-| `ResubmissionDueDate` | `DATS(8)` | Resubmission Date |
-| `CollResubmissionDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `NoCntctUntilResubmsnDateIsReq` | `CHAR(1)` | Don't Contact Until Resubmission Date |
-| `ResubmissionReason` | `CHAR(4)` | Reason for Resubmission |
-| `ResubmissionStatus` | `CHAR(1)` | Status of Resubmission |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created At |
-| `ChangedBy` | `CHAR(12)` | Last Changed By |
-| `ChangedOnDateTime` | `DEC(15)` | Last Changed At |
-| `ObjectType` | `CHAR(10)` | Object Type |
-| `ObjectKey` | `CHAR(70)` | Object key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ResubmissionUUID` |  | |  |  | `CHAR(32)` | Resubmission Key |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CollectionSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `ResubmissionDueDate` |  | |  |  | `DATS(8)` | Resubmission Date |
+| `CollResubmissionDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `NoCntctUntilResubmsnDateIsReq` |  | |  |  | `CHAR(1)` | Don't Contact Until Resubmission Date |
+| `ResubmissionReason` |  | |  |  | `CHAR(4)` | Reason for Resubmission |
+| `ResubmissionStatus` |  | |  |  | `CHAR(1)` | Status of Resubmission |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created At |
+| `ChangedBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `ChangedOnDateTime` |  | |  |  | `DEC(15)` | Last Changed At |
+| `ObjectType` |  | |  |  | `CHAR(10)` | Object Type |
+| `ObjectKey` |  | |  |  | `CHAR(70)` | Object key |

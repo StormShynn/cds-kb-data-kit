@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ListedDerivativeCategory` | `NUMC(2)` | Options/futures category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ListedDerivativeCategory` |  | |  |  | `NUMC(2)` | Options/futures category |

@@ -36,9 +36,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDocListItemCat` | `CHAR(1)` | Category of List Document Item |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtDocListItemCatName` | `CHAR(60)` | Text Document Category List Items |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocListItemCat` |  | |  |  | `CHAR(1)` | Category of List Document Item |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtDocListItemCatName` |  | |  |  | `CHAR(60)` | Text Document Category List Items |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

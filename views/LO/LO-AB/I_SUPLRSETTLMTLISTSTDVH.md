@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrSettlmtList` | `CHAR(10)` | Supplier Settlement List |
-| `AlternativeInvoicingParty` | `CHAR(10)` | Alternative Supplier |
-| `SuplrSettlmtCompanyCode` | `CHAR(4)` | Company Code |
-| `InvoicingParty` | `CHAR(10)` | Supplier in Settlement Management |
-| `PayeeParty` | `CHAR(10)` | Payee |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `SettlmtDocType` | `CHAR(4)` | Settlement Document Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrSettlmtList` |  | |  |  | `CHAR(10)` | Supplier Settlement List |
+| `AlternativeInvoicingParty` |  | |  |  | `CHAR(10)` | Alternative Supplier |
+| `SuplrSettlmtCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `InvoicingParty` |  | |  |  | `CHAR(10)` | Supplier in Settlement Management |
+| `PayeeParty` |  | |  |  | `CHAR(10)` | Payee |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |

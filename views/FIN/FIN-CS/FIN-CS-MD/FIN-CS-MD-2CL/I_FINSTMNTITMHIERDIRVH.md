@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialStatementItemHier` | `CHAR(10)` | Item Hierarchy |
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `AdditionalMasterDataHierarchy` | `CHAR(40)` | Consolidation Hierarchy ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialStatementItemHier` |  | |  |  | `CHAR(10)` | Item Hierarchy |
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `AdditionalMasterDataHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Hierarchy ID |

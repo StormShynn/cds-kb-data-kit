@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtApplStsGrp` | `CHAR(4)` | Status Group for Settlement Management Documents |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtApplStsGrpDesc` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtApplStsGrp` |  | |  |  | `CHAR(4)` | Status Group for Settlement Management Documents |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtApplStsGrpDesc` |  | |  |  | `CHAR(40)` | Description |

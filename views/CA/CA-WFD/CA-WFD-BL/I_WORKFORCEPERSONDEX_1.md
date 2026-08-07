@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `FirstName` | `CHAR(40)` | First Name of Business Partner (Person) |
-| `MiddleName` | `CHAR(40)` | Middle Name or Second Forename of a Person |
-| `LastName` | `CHAR(40)` | Last Name of Business Partner (Person) |
-| `FullName` | `CHAR(80)` | Full Name |
-| `BirthName` | `CHAR(40)` | Name at birth of business partner |
-| `Initials` | `CHAR(10)` | "Middle Initial" or personal initials |
-| `NativePreferredLanguage` | `LANG(1)` | Business Partner: Correspondence Language |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
-| `DataControllerSet` | `CHAR(1)` | BP: Data Controller Set Flag |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `MiddleName` |  | |  |  | `CHAR(40)` | Middle Name or Second Forename of a Person |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `FullName` |  | |  |  | `CHAR(80)` | Full Name |
+| `BirthName` |  | |  |  | `CHAR(40)` | Name at birth of business partner |
+| `Initials` |  | |  |  | `CHAR(10)` | "Middle Initial" or personal initials |
+| `NativePreferredLanguage` |  | |  |  | `LANG(1)` | Business Partner: Correspondence Language |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |

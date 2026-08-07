@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MasterDataRecordingLvl` | `CHAR(1)` | Texas Master Data Level |
-| `Language` | `LANG(1)` | Language Key |
-| `MasterDataRecordingLvlName` | `CHAR(60)` | Tax 2.0 - Master Level Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MasterDataRecordingLvl` |  | |  |  | `CHAR(1)` | Texas Master Data Level |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MasterDataRecordingLvlName` |  | |  |  | `CHAR(60)` | Tax 2.0 - Master Level Name |

@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsSequenceCat` | `CHAR(1)` | Sequence Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsSequenceCat` |  | |  |  | `CHAR(1)` | Sequence Category |

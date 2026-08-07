@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TransportationActivity` | `CHAR(2)` | Transportation Activity |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationActivity` |  | |  |  | `CHAR(2)` | Transportation Activity |

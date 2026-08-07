@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductType` | `CHAR(1)` | Oil and Gas Indicator |
-| `Language` | `LANG(1)` | Language Key |
-| `ProductTypeName` | `CHAR(60)` | PRA Tax Wyoming Product Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` |  | |  |  | `CHAR(1)` | Oil and Gas Indicator |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProductTypeName` |  | |  |  | `CHAR(60)` | PRA Tax Wyoming Product Type Name |

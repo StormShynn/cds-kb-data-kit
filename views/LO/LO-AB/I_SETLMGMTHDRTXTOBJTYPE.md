@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtHdrTxtObjType` | `CHAR(4)` | Specific Text ID for a Settlement Management Document Header |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtHdrTxtObjType` |  | |  |  | `CHAR(4)` | Specific Text ID for a Settlement Management Document Header |

@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InvoicingIsBlocked` | `CHAR(1)` | Freight Settlement Document Block |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvoicingIsBlocked` |  | |  |  | `CHAR(1)` | Freight Settlement Document Block |

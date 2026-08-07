@@ -35,12 +35,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AFDFUniqueKeyUUID` | `RAW(16)` | Globally Unique Identifier |
-| `AFDFDocumentKey1` | `CHAR(32)` | AFD Dynamic 1 |
-| `AFDFDocumentType` | `CHAR(3)` | AFD Document Type |
-| `AFDFRecordType` | `CHAR(20)` | AFD Record Type |
-| `IN_ShippingBillDate` | `DATS(8)` | Shipping Bill Date : Export India |
-| `IN_ShippingBillNumber` | `CHAR(10)` | Shipping Bill Number : Export India |
-| `IN_ShippingBillPortNumber` | `CHAR(10)` | Shipping Bill Port Number : Export India |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AFDFUniqueKeyUUID` |  | |  |  | `RAW(16)` | Globally Unique Identifier |
+| `AFDFDocumentKey1` |  | |  |  | `CHAR(32)` | AFD Dynamic 1 |
+| `AFDFDocumentType` |  | |  |  | `CHAR(3)` | AFD Document Type |
+| `AFDFRecordType` |  | |  |  | `CHAR(20)` | AFD Record Type |
+| `IN_ShippingBillDate` |  | |  |  | `DATS(8)` | Shipping Bill Date : Export India |
+| `IN_ShippingBillNumber` |  | |  |  | `CHAR(10)` | Shipping Bill Number : Export India |
+| `IN_ShippingBillPortNumber` |  | |  |  | `CHAR(10)` | Shipping Bill Port Number : Export India |

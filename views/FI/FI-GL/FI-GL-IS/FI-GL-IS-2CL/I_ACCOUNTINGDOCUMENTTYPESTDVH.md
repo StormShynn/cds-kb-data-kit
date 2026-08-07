@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AccountingDocumentType` | `CHAR(2)` | Journal Entry Type |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |

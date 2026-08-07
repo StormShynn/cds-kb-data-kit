@@ -32,20 +32,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MobileUserApplication` | `CHAR(30)` | Mobile Application Name |
-| `MaintMblTransBusinessObjectKey` | `CHAR(100)` | Mobile transaction history object key |
-| `BusinessObjectType` | `CHAR(10)` | Object type |
-| `MobileDataObject` | `CHAR(40)` | Syclo Mobile Data Object ID |
-| `MblDtaObjectHandlerMethodType` | `CHAR(3)` | Mobile Data Object Handler Method Type |
-| `MaintMblApplInbTransReqType` | `CHAR(1)` | Inbound Transaction: Requesting Type |
-| `ODataMobileDataObject` | `CHAR(40)` | oData Mobile Data Object Id |
-| `OMDOModelEntityTypeName` | `CHAR(128)` | Service Builder: Artifact Name |
-| `OMDOTechnicalEntityType` | `CHAR(40)` | oMDO - Technical Entity Type |
-| `OMDOOperation` | `CHAR(30)` | oMDO Operation |
-| `MaintMblTransChangedByUserUUID` | `CHAR(32)` | User GUID |
-| `LastChangeDate` | `DATS(8)` |  |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `NrOfMaintMblTransHistRecords` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MobileUserApplication` |  | |  |  | `CHAR(30)` | Mobile Application Name |
+| `MaintMblTransBusinessObjectKey` |  | |  |  | `CHAR(100)` | Mobile transaction history object key |
+| `BusinessObjectType` |  | |  |  | `CHAR(10)` | Object type |
+| `MobileDataObject` |  | |  |  | `CHAR(40)` | Syclo Mobile Data Object ID |
+| `MblDtaObjectHandlerMethodType` |  | |  |  | `CHAR(3)` | Mobile Data Object Handler Method Type |
+| `MaintMblApplInbTransReqType` |  | |  |  | `CHAR(1)` | Inbound Transaction: Requesting Type |
+| `ODataMobileDataObject` |  | |  |  | `CHAR(40)` | oData Mobile Data Object Id |
+| `OMDOModelEntityTypeName` |  | |  |  | `CHAR(128)` | Service Builder: Artifact Name |
+| `OMDOTechnicalEntityType` |  | |  |  | `CHAR(40)` | oMDO - Technical Entity Type |
+| `OMDOOperation` |  | |  |  | `CHAR(30)` | oMDO Operation |
+| `MaintMblTransChangedByUserUUID` |  | |  |  | `CHAR(32)` | User GUID |
+| `LastChangeDate` |  | |  |  | `DATS(8)` |  |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `NrOfMaintMblTransHistRecords` |  | |  |  | `INT1(3)` |  |

@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `SEPAPaymentType` | `CHAR(1)` | Mandate: Payment Type |
-| `SEPAPaymentTypeName` | `CHAR(60)` | SEPA Mandate Payment Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SEPAPaymentType` |  | |  |  | `CHAR(1)` | Mandate: Payment Type |
+| `SEPAPaymentTypeName` |  | |  |  | `CHAR(60)` | SEPA Mandate Payment Type Name |

@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdStageType` | `CHAR(3)` | Stage Type |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdStageTypeDesc` | `CHAR(40)` | Transportation Order Stage Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStageType` |  | |  |  | `CHAR(3)` | Stage Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdStageTypeDesc` |  | |  |  | `CHAR(40)` | Transportation Order Stage Type Description |

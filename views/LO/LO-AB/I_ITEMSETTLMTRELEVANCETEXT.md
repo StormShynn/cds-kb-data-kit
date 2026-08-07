@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ItemSettlmtRelevance` | `CHAR(1)` | Item Settlement Relevance |
-| `Language` | `LANG(1)` | Language Key |
-| `ItemSettlmtRelevanceName` | `CHAR(60)` | Description of Settlement Relevance Item Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ItemSettlmtRelevance` |  | |  |  | `CHAR(1)` | Item Settlement Relevance |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ItemSettlmtRelevanceName` |  | |  |  | `CHAR(60)` | Description of Settlement Relevance Item Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

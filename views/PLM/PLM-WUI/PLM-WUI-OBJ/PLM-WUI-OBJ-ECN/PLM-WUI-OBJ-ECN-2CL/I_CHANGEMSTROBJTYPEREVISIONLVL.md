@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumberObjectType` | `NUMC(2)` | Object Type |
-| `RevisionLevel` | `CHAR(2)` | Revision Level without Conversion Exit |
-| `RevisionLevelOrdinalNumber` | `NUMC(3)` | Revision Level Order |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberObjectType` |  | |  |  | `NUMC(2)` | Object Type |
+| `RevisionLevel` |  | |  |  | `CHAR(2)` | Revision Level without Conversion Exit |
+| `RevisionLevelOrdinalNumber` |  | |  |  | `NUMC(3)` | Revision Level Order |

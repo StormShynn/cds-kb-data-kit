@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ImpliedVolatilityName` | `CHAR(15)` | Volatility Name |
-| `VolatilityProfile` | `CHAR(15)` | Volatility Pofile |
-| `VolatilityType` | `CHAR(3)` | Volatility Type |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `ImpliedVolatilityValue` | `DEC(11)` | Implied Volatility Value |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ImpliedVolatilityName` |  | |  |  | `CHAR(15)` | Volatility Name |
+| `VolatilityProfile` |  | |  |  | `CHAR(15)` | Volatility Pofile |
+| `VolatilityType` |  | |  |  | `CHAR(3)` | Volatility Type |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `ImpliedVolatilityValue` |  | |  |  | `DEC(11)` | Implied Volatility Value |

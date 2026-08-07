@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `LoanSpecialPostingType` | `CHAR(2)` | Special posting treatment |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `LoanSpecialPostingType` |  | |  |  | `CHAR(2)` | Special posting treatment |

@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumberReleaseKey` | `NUMC(2)` | ECM: Release Key |
-| `Language` | `LANG(1)` | Language Key |
-| `ChangeNumberReleaseKeyText` | `CHAR(30)` | Description for release key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberReleaseKey` |  | |  |  | `NUMC(2)` | ECM: Release Key |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ChangeNumberReleaseKeyText` |  | |  |  | `CHAR(30)` | Description for release key |

@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Group5AssetEvaluationKey` | `CHAR(8)` | Evaluation Group 5 |
-| `Language` | `LANG(1)` | Language Key |
-| `Group5AssetEvaluationKeyName` | `CHAR(50)` | Evaluation group:Short description 5 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Group5AssetEvaluationKey` |  | |  |  | `CHAR(8)` | Evaluation Group 5 |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `Group5AssetEvaluationKeyName` |  | |  |  | `CHAR(50)` | Evaluation group:Short description 5 |

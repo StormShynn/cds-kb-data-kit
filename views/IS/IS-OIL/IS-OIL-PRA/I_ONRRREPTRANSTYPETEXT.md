@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRReportedTransType` | `CHAR(2)` | ONRR-2014 - Transaction Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ONRRReportedTransTypeName` | `CHAR(60)` | ONRR Reported Transaction Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRReportedTransType` |  | |  |  | `CHAR(2)` | ONRR-2014 - Transaction Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ONRRReportedTransTypeName` |  | |  |  | `CHAR(60)` | ONRR Reported Transaction Type Name |

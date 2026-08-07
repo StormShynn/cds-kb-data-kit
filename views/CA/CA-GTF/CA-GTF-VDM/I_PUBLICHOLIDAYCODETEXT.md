@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PublicHolidayCode` | `CHAR(3)` | Public holiday key |
-| `Language` | `LANG(1)` | Language Key |
-| `PublicHolidayName` | `CHAR(30)` | Long text |
-| `PublicHolidayShortName` | `CHAR(10)` | Public holidays, short text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCode` |  | |  |  | `CHAR(3)` | Public holiday key |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PublicHolidayName` |  | |  |  | `CHAR(30)` | Long text |
+| `PublicHolidayShortName` |  | |  |  | `CHAR(10)` | Public holidays, short text |

@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtCompensationReason` | `CHAR(4)` | Compensation Reason for a Settlement Management Document |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtCompensationReason` |  | |  |  | `CHAR(4)` | Compensation Reason for a Settlement Management Document |

@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ItmSettlmtDocCollRelevance` | `CHAR(1)` | Collective Settlement Relevance of Settlement Documents |
-| `Language` | `LANG(1)` | Language Key |
-| `ItmSettlmtDocCollRelevanceName` | `CHAR(60)` | Description of Collective Settlement Relevance Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ItmSettlmtDocCollRelevance` |  | |  |  | `CHAR(1)` | Collective Settlement Relevance of Settlement Documents |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ItmSettlmtDocCollRelevanceName` |  | |  |  | `CHAR(60)` | Description of Collective Settlement Relevance Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

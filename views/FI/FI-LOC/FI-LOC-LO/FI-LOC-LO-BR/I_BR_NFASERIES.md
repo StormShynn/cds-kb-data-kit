@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `BR_NFeSeriesRangeFrom` | `CHAR(3)` | Initial Series |
-| `BR_NFeSeriesRangeTo` | `CHAR(3)` | Final Series |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `BR_NFeSeriesRangeFrom` |  | |  |  | `CHAR(3)` | Initial Series |
+| `BR_NFeSeriesRangeTo` |  | |  |  | `CHAR(3)` | Final Series |

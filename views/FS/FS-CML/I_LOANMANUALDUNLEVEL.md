@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanManualDunLevel` | `CHAR(1)` | Loan Manual Dunning Level |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanManualDunLevel` |  | |  |  | `CHAR(1)` | Loan Manual Dunning Level |

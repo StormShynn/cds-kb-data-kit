@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `GrantStatus` | `CHAR(5)` | Grant Status |
-| `GrantStatusName` | `CHAR(30)` | Grant Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GrantStatus` |  | |  |  | `CHAR(5)` | Grant Status |
+| `GrantStatusName` |  | |  |  | `CHAR(30)` | Grant Status Name |

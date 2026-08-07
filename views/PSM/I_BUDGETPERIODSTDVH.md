@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BudgetPeriod` | `CHAR(10)` | Budget Period |
-| `BudgetPeriodAuthznGrp` | `CHAR(10)` | Budget Period Authorization Group |
-| `BudgetPeriodName` | `CHAR(35)` | Budget Period Name |
-| `ValidityStartDate` | `DATS(8)` | Budget Period Valid From |
-| `ValidityEndDate` | `DATS(8)` | Budget Period Valid To |
-| `BudgetPeriodExpirationDate` | `DATS(8)` | Budget Period Expiration Date |
-| `BudgetPeriodPeriodicity` | `CHAR(10)` | Frequency for Budget Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BudgetPeriod` |  | |  |  | `CHAR(10)` | Budget Period |
+| `BudgetPeriodAuthznGrp` |  | |  |  | `CHAR(10)` | Budget Period Authorization Group |
+| `BudgetPeriodName` |  | |  |  | `CHAR(35)` | Budget Period Name |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Budget Period Valid From |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Budget Period Valid To |
+| `BudgetPeriodExpirationDate` |  | |  |  | `DATS(8)` | Budget Period Expiration Date |
+| `BudgetPeriodPeriodicity` |  | |  |  | `CHAR(10)` | Frequency for Budget Period |

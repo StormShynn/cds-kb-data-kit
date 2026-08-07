@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxPyblStatus` | `CHAR(2)` | Taxes Payable Status |
-| `Language` | `LANG(1)` | Language Key |
-| `TaxPyblStatusName` | `CHAR(60)` | Taxes Payable Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxPyblStatus` |  | |  |  | `CHAR(2)` | Taxes Payable Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TaxPyblStatusName` |  | |  |  | `CHAR(60)` | Taxes Payable Status Name |

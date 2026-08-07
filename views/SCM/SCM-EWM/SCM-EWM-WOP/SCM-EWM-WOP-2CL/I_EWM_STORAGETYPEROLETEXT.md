@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMStorageTypeRole` | `CHAR(1)` | Storage Type Role |
-| `EWMStorageTypeRoleDesc` | `CHAR(60)` | Storage Type Role Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMStorageTypeRole` |  | |  |  | `CHAR(1)` | Storage Type Role |
+| `EWMStorageTypeRoleDesc` |  | |  |  | `CHAR(60)` | Storage Type Role Description |

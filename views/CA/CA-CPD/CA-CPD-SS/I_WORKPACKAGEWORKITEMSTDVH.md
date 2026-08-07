@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkItem` | `CHAR(10)` | Work Item ID |
-| `WorkPackage` | `CHAR(50)` | Plan Item |
-| `WorkItemName` | `CHAR(40)` | Work Item Name |
-| `EngagementProjFinPlanUUID` | `RAW(16)` | Financial Plan UUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkItem` |  | |  |  | `CHAR(10)` | Work Item ID |
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Plan Item |
+| `WorkItemName` |  | |  |  | `CHAR(40)` | Work Item Name |
+| `EngagementProjFinPlanUUID` |  | |  |  | `RAW(16)` | Financial Plan UUID |

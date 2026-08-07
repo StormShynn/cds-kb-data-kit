@@ -35,22 +35,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PlanLineItemUUID` | `RAW(16)` | Planning Line GUID |
-| `ResourceRequestUUID` | `RAW(16)` | Demand Key |
-| `FiscalPeriod` | `NUMC(3)` | Period |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `EngagementProject` | `CHAR(40)` | Engagement Project ID |
-| `WorkPackage` | `CHAR(50)` | Plan Item |
-| `EngagementProjectResourceType` | `CHAR(4)` | Resource Type ID |
-| `EngagementProjectResource` | `CHAR(40)` | Resource ID |
-| `EmploymentInternalID` | `NUMC(8)` | Object ID |
-| `WorkItem` | `CHAR(10)` | Work Item ID |
-| `BillingControlCategory` | `CHAR(8)` | Billing Control Category |
-| `DeliveryOrganization` | `CHAR(5)` | Service Organization |
-| `Currency` | `CUKY(5)` | Plan Currency |
-| `PlndCostAmt` | `CURR(17)` | Amount |
-| `UnitOfMeasure` | `UNIT(3)` | Unit of Measure |
-| `PlndEffortQty` | `QUAN(15)` | Total Quantity |
-| `PlndRevnAmt` | `CURR(17)` | Amount |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanLineItemUUID` |  | |  |  | `RAW(16)` | Planning Line GUID |
+| `ResourceRequestUUID` |  | |  |  | `RAW(16)` | Demand Key |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Period |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Plan Item |
+| `EngagementProjectResourceType` |  | |  |  | `CHAR(4)` | Resource Type ID |
+| `EngagementProjectResource` |  | |  |  | `CHAR(40)` | Resource ID |
+| `EmploymentInternalID` |  | |  |  | `NUMC(8)` | Object ID |
+| `WorkItem` |  | |  |  | `CHAR(10)` | Work Item ID |
+| `BillingControlCategory` |  | |  |  | `CHAR(8)` | Billing Control Category |
+| `DeliveryOrganization` |  | |  |  | `CHAR(5)` | Service Organization |
+| `Currency` |  | |  |  | `CUKY(5)` | Plan Currency |
+| `PlndCostAmt` |  | |  |  | `CURR(17)` | Amount |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `PlndEffortQty` |  | |  |  | `QUAN(15)` | Total Quantity |
+| `PlndRevnAmt` |  | |  |  | `CURR(17)` | Amount |

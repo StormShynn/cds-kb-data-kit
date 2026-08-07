@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocHierarchyUUID` | `RAW(16)` | Location Hierarchy Root Key |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `EHSLocationUUID` | `RAW(16)` | Location Key |
-| `EHSParentLocationUUID` | `RAW(16)` | Location Hierarchy Parent Key |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `EHSLocHierarchyRevisionUUID` | `RAW(16)` | Location Hierarchy Revision Key |
-| `EHSLocHierarchyNodeUUID` | `RAW(16)` | Location Hierarchy Key |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocHierarchyUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Root Key |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location Key |
+| `EHSParentLocationUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Parent Key |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `EHSLocHierarchyRevisionUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Revision Key |
+| `EHSLocHierarchyNodeUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Key |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |

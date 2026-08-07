@@ -35,21 +35,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesOrder` | `CHAR(10)` | Sales Order |
-| `SalesOrderType` | `CHAR(4)` | Sales Order Type |
-| `OrganizationDivision` | `CHAR(2)` | Division |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `CreditControlArea` | `CHAR(4)` | Credit Control Area |
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `SalesOrderHasCreditDecisionDoc` | `CHAR(1)` |  |
-| `NumberOfSalesOrders` | `INT4(10)` | Number of Sales Orders |
-| `NumberOfCreditDecisionDocs` | `INT4(10)` | Number of Credit Blocked Sales Orders |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderType` |  | |  |  | `CHAR(4)` | Sales Order Type |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `CreditControlArea` |  | |  |  | `CHAR(4)` | Credit Control Area |
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `SalesOrderHasCreditDecisionDoc` |  | |  |  | `CHAR(1)` |  |
+| `NumberOfSalesOrders` |  | |  |  | `INT4(10)` | Number of Sales Orders |
+| `NumberOfCreditDecisionDocs` |  | |  |  | `INT4(10)` | Number of Credit Blocked Sales Orders |

@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PublicHolidayCalendar` | `CHAR(2)` | Public Holiday Calendar |
-| `PublicHolidayDate` | `DATS(8)` | Date |
-| `PublicHolidayCode` | `CHAR(3)` | Public holiday key |
-| `PublicHolidayIsGuaranteed` | `CHAR(1)` | Indicator:PublicHolidayIsGuaranteed |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCalendar` |  | |  |  | `CHAR(2)` | Public Holiday Calendar |
+| `PublicHolidayDate` |  | |  |  | `DATS(8)` | Date |
+| `PublicHolidayCode` |  | |  |  | `CHAR(3)` | Public holiday key |
+| `PublicHolidayIsGuaranteed` |  | |  |  | `CHAR(1)` | Indicator:PublicHolidayIsGuaranteed |

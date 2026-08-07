@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdItemCategory` | `CHAR(3)` | Item Category |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdItemCategoryDesc` | `CHAR(60)` | Transportation Order Item Category Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemCategory` |  | |  |  | `CHAR(3)` | Item Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdItemCategoryDesc` |  | |  |  | `CHAR(60)` | Transportation Order Item Category Description |

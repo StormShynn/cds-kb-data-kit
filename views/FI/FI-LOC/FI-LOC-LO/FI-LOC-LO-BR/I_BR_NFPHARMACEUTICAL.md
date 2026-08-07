@@ -35,15 +35,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NotaFiscal` | `NUMC(10)` | Document Number |
-| `BR_NotaFiscalItem` | `NUMC(6)` | Document Item Number |
-| `BR_NFePharmaMedicineLineID` | `NUMC(4)` | Counter |
-| `MedicineBatch` | `CHAR(20)` | Batch Number of Medicines and Pharmaceutical Raw Materials |
-| `MedicineQuantity` | `DEC(11)` | Quantity of Medicines and Pharmaceutical Raw Materials |
-| `MedicineManufacturingDate` | `DATS(8)` | Manufacturing Date |
-| `MedicineExpiringDate` | `DATS(8)` | Expiring Date of Medicines and Pharmaceutical Raw Materials |
-| `ConsumerMaxPriceMedicineAmount` | `DEC(15)` | Consumer Maximum Price |
-| `SalesDocumentCurrency` | `CUKY(5)` | SD Document Currency |
-| `BaseUnit` | `UNIT(3)` | Base unit of measure |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` |  | |  |  | `NUMC(10)` | Document Number |
+| `BR_NotaFiscalItem` |  | |  |  | `NUMC(6)` | Document Item Number |
+| `BR_NFePharmaMedicineLineID` |  | |  |  | `NUMC(4)` | Counter |
+| `MedicineBatch` |  | |  |  | `CHAR(20)` | Batch Number of Medicines and Pharmaceutical Raw Materials |
+| `MedicineQuantity` |  | |  |  | `DEC(11)` | Quantity of Medicines and Pharmaceutical Raw Materials |
+| `MedicineManufacturingDate` |  | |  |  | `DATS(8)` | Manufacturing Date |
+| `MedicineExpiringDate` |  | |  |  | `DATS(8)` | Expiring Date of Medicines and Pharmaceutical Raw Materials |
+| `ConsumerMaxPriceMedicineAmount` |  | |  |  | `DEC(15)` | Consumer Maximum Price |
+| `SalesDocumentCurrency` |  | |  |  | `CUKY(5)` | SD Document Currency |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base unit of measure |

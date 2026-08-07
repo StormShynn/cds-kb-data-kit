@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseUniqueID` | `CHAR(32)` | Technical Case Key (Case GUID) |
-| `CaseRecordPersistentID` | `CHAR(32)` | Record POID ID |
-| `CaseNotePersistentID` | `CHAR(32)` | Note POID ID |
-| `CaseProcessRouteID` | `NUMC(12)` | Process Route ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseUniqueID` |  | |  |  | `CHAR(32)` | Technical Case Key (Case GUID) |
+| `CaseRecordPersistentID` |  | |  |  | `CHAR(32)` | Record POID ID |
+| `CaseNotePersistentID` |  | |  |  | `CHAR(32)` | Note POID ID |
+| `CaseProcessRouteID` |  | |  |  | `NUMC(12)` | Process Route ID |

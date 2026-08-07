@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DerivativeContractSpecCategory` | `CHAR(3)` | Derivative Contract Specification Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DerivativeContractSpecCategory` |  | |  |  | `CHAR(3)` | Derivative Contract Specification Category |

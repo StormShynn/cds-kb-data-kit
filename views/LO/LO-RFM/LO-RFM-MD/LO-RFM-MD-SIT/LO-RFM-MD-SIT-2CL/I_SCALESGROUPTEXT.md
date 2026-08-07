@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ScalesGroup` | `CHAR(4)` | Scales group |
-| `ScalesGroupName` | `CHAR(20)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ScalesGroup` |  | |  |  | `CHAR(4)` | Scales group |
+| `ScalesGroupName` |  | |  |  | `CHAR(20)` | Description |

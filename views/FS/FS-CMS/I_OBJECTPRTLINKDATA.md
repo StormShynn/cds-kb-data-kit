@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectPrtLinkUUID` | `RAW(16)` | Part Link GUID |
-| `ObjectReferenceUUID` | `RAW(16)` | Object reference GUID |
-| `ObjectPrtRefUUID` | `RAW(16)` | Part Reference GUID |
-| `ObjectPrtID` | `NUMC(4)` | Object Part Link - Part ID |
-| `ObjectPrtReferenceSystem` | `CHAR(6)` | Object System Reference ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectPrtLinkUUID` |  | |  |  | `RAW(16)` | Part Link GUID |
+| `ObjectReferenceUUID` |  | |  |  | `RAW(16)` | Object reference GUID |
+| `ObjectPrtRefUUID` |  | |  |  | `RAW(16)` | Part Reference GUID |
+| `ObjectPrtID` |  | |  |  | `NUMC(4)` | Object Part Link - Part ID |
+| `ObjectPrtReferenceSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID |

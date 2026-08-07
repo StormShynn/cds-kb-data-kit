@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AmountFieldGroup` | `CHAR(4)` | Amount Fields Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AmountFieldGroup` |  | |  |  | `CHAR(4)` | Amount Fields Group |

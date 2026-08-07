@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationSegmentHierarchy` | `CHAR(40)` | Segment Hierarchy |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationSegmentHierarchy` |  | |  |  | `CHAR(40)` | Segment Hierarchy |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |

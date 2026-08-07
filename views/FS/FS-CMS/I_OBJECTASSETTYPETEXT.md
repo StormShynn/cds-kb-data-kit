@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetType` | `CHAR(6)` | Asset Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `ObjectAssetTypeText` | `CHAR(40)` | Asset Type Name in a Specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetType` |  | |  |  | `CHAR(6)` | Asset Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `ObjectAssetTypeText` |  | |  |  | `CHAR(40)` | Asset Type Name in a Specified Language |

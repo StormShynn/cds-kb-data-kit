@@ -34,30 +34,30 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenanceNotification` | `CHAR(12)` | Notification Number |
-| `MaintenanceNotificationTask` | `NUMC(4)` | Sequential Task Number |
-| `MaintenanceNotificationItem` | `NUMC(4)` | Item Number in Item Record |
-| `MaintNotifTaskCodeCatalog` | `CHAR(1)` | Catalog Type - Tasks |
-| `MaintNotifTaskCodeGroup` | `CHAR(8)` | Code Group - Tasks |
-| `MaintNotifTaskCode` | `CHAR(4)` | Task Code |
-| `MaintNotifTaskTxt` | `CHAR(40)` | Short Text for Task |
-| `ResponsiblePersonFunctionCode` | `CHAR(2)` | Partner Function |
-| `ResponsiblePerson` | `NUMC(8)` | Number of the Responsible Person (Project Manager) |
-| `NotificationTaskSortNumber` | `NUMC(4)` | Sort Number for Task |
-| `PlannedStartDate` | `DATS(8)` | Planned Start Date |
-| `PlannedStartTime` | `TIMS(6)` | Planned Start Time for Task |
-| `PlannedEndDate` | `DATS(8)` | Planned Finish Date |
-| `PlannedEndTime` | `TIMS(6)` | Planned Finish Time for Task |
-| `CompletionDate` | `DATS(8)` | Date on Which the Task Was Completed |
-| `CompletionTime` | `TIMS(6)` | Time at Which Task Was Completed |
-| `CompletedByUser` | `CHAR(12)` | Person Who Completed the Task |
-| `IsDeleted` | `CHAR(1)` | Delete Data Record |
-| `MaintNotifTaskInternalID` | `CHAR(22)` | Object Number for Status Management |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreationTime` | `TIMS(6)` | Time at Which Record Was Added |
-| `LastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `LastChangeTime` | `TIMS(6)` | Time of Change |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceNotification` |  | |  |  | `CHAR(12)` | Notification Number |
+| `MaintenanceNotificationTask` |  | |  |  | `NUMC(4)` | Sequential Task Number |
+| `MaintenanceNotificationItem` |  | |  |  | `NUMC(4)` | Item Number in Item Record |
+| `MaintNotifTaskCodeCatalog` |  | |  |  | `CHAR(1)` | Catalog Type - Tasks |
+| `MaintNotifTaskCodeGroup` |  | |  |  | `CHAR(8)` | Code Group - Tasks |
+| `MaintNotifTaskCode` |  | |  |  | `CHAR(4)` | Task Code |
+| `MaintNotifTaskTxt` |  | |  |  | `CHAR(40)` | Short Text for Task |
+| `ResponsiblePersonFunctionCode` |  | |  |  | `CHAR(2)` | Partner Function |
+| `ResponsiblePerson` |  | |  |  | `NUMC(8)` | Number of the Responsible Person (Project Manager) |
+| `NotificationTaskSortNumber` |  | |  |  | `NUMC(4)` | Sort Number for Task |
+| `PlannedStartDate` |  | |  |  | `DATS(8)` | Planned Start Date |
+| `PlannedStartTime` |  | |  |  | `TIMS(6)` | Planned Start Time for Task |
+| `PlannedEndDate` |  | |  |  | `DATS(8)` | Planned Finish Date |
+| `PlannedEndTime` |  | |  |  | `TIMS(6)` | Planned Finish Time for Task |
+| `CompletionDate` |  | |  |  | `DATS(8)` | Date on Which the Task Was Completed |
+| `CompletionTime` |  | |  |  | `TIMS(6)` | Time at Which Task Was Completed |
+| `CompletedByUser` |  | |  |  | `CHAR(12)` | Person Who Completed the Task |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Delete Data Record |
+| `MaintNotifTaskInternalID` |  | |  |  | `CHAR(22)` | Object Number for Status Management |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at Which Record Was Added |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time of Change |

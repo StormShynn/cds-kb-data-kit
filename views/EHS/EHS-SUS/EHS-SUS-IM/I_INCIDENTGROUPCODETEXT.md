@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentGroupCode` | `CHAR(21)` | Incident Group |
-| `Language` | `LANG(1)` | Language Key |
-| `IncidentGroupCodeName` | `CHAR(132)` | Description (Long) |
-| `IncidentGroupCodeText` | `CHAR(132)` | Description (Long) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentGroupCode` |  | |  |  | `CHAR(21)` | Incident Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IncidentGroupCodeName` |  | |  |  | `CHAR(132)` | Description (Long) |
+| `IncidentGroupCodeText` |  | |  |  | `CHAR(132)` | Description (Long) |

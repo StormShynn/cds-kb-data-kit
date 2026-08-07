@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AggrgnClassifierUUID` | `RAW(16)` | NodeID |
-| `EHSDataClassifierUUID` | `RAW(16)` | Aggregation Classifier Unique Key |
-| `EHSDataClassifierID` | `CHAR(30)` | Data Classifier for Location Aggregation |
-| `LocAggregationUUID` | `RAW(16)` | NodeID |
-| `LocAggregationID` | `CHAR(20)` | Location Aggregation ID |
-| `LocAggregationTitle` | `CHAR(132)` | Description (Long) |
-| `LocAggregationName` | `CHAR(132)` | Location Aggregation Name |
-| `DataUsagePeriodicity` | `CHAR(3)` | Data Period of Aggregation Definition |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSSubjectType` | `CHAR(2)` | Subject Type |
-| `EHSSubjectUUID` | `RAW(16)` | Reference to Subject Type BO Root Node ID |
-| `LocAggregationMigrationSource` | `CHAR(60)` | Migration Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AggrgnClassifierUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSDataClassifierUUID` |  | |  |  | `RAW(16)` | Aggregation Classifier Unique Key |
+| `EHSDataClassifierID` |  | |  |  | `CHAR(30)` | Data Classifier for Location Aggregation |
+| `LocAggregationUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `LocAggregationID` |  | |  |  | `CHAR(20)` | Location Aggregation ID |
+| `LocAggregationTitle` |  | |  |  | `CHAR(132)` | Description (Long) |
+| `LocAggregationName` |  | |  |  | `CHAR(132)` | Location Aggregation Name |
+| `DataUsagePeriodicity` |  | |  |  | `CHAR(3)` | Data Period of Aggregation Definition |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
+| `LocAggregationMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |

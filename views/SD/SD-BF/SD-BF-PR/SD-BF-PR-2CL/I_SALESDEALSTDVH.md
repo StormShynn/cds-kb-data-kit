@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesDeal` | `CHAR(10)` | Agreement (various conditions grouped together) |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDeal` |  | |  |  | `CHAR(10)` | Agreement (various conditions grouped together) |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |

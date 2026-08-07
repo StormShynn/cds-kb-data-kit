@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationUnit` | `CHAR(25)` | Consolidation Elimination Member |
-| `Language` | `LANG(1)` | Language Key |
-| `ConsolidationUnitMdmText` | `CHAR(50)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationUnit` |  | |  |  | `CHAR(25)` | Consolidation Elimination Member |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConsolidationUnitMdmText` |  | |  |  | `CHAR(50)` | Description |

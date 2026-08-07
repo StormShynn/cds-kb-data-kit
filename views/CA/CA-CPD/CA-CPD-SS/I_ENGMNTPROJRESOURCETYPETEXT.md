@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectResourceType` | `CHAR(4)` | Resource Type ID |
-| `Language` | `LANG(1)` | Language Key |
-| `EngagementProjResourceTypeText` | `CHAR(60)` | Resource Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectResourceType` |  | |  |  | `CHAR(4)` | Resource Type ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EngagementProjResourceTypeText` |  | |  |  | `CHAR(60)` | Resource Type Description |

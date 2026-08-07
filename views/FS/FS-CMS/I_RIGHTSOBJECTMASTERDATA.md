@@ -30,32 +30,32 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RightsObjectUUID` | `RAW(16)` | Rights GUID |
-| `RightsObjectCategory` | `CHAR(6)` | Object Category |
-| `RightsObjectType` | `CHAR(6)` | Right Type |
-| `RightsObjectID` | `CHAR(40)` | Rights ID |
-| `RightsObjectDescription` | `CHAR(30)` | Additional description of the right |
-| `RightsObjectValidityStartDate` | `DATS(8)` | Start date of the right |
-| `RightsObjectValidityEndDate` | `DATS(8)` | Validity End Date of the Right or Patent |
-| `RightsObjectClassification` | `CHAR(6)` | Classification |
-| `RightsObjectNotarizationDate` | `DATS(8)` | Notarization Date |
-| `RightsObjectRegistrationDate` | `DATS(8)` | Date of Patent Registration |
-| `RightsObjectPatentNumber` | `CHAR(40)` | Patent Number |
-| `RightsObjPatentRegistryNumber` | `CHAR(20)` | No. of the Register in the Patent Office |
-| `RightsObjectPatentOffice` | `CHAR(30)` | Patent Office |
-| `RightsObjectAdditionalProperty` | `CHAR(6)` | Additional Property Rights that are Available |
-| `RightsObjectPatentParentUUID` | `RAW(16)` | Links to Parent Patent - GUID of the Parent |
-| `ClaimsObjectDueDate` | `DATS(8)` | Due date of a claim |
-| `ClaimsObjectCompositionDesc` | `CHAR(30)` | Composition of the claim |
-| `ClaimsObjectSavingsSumPercent` | `DEC(10)` | Savings sum in Percentage (In building savings contracts) |
-| `ClaimsObjectDoubtfulDebtAmount` | `CURR(17)` | Provision doubtful debt amount |
-| `ClaimsObjectDoubtfulDebtCrcy` | `CUKY(5)` | Currency of Provision of doubfull debt |
-| `ClaimsObjectAddressID` | `CHAR(10)` |  Address of the object (for build.sav.contr./rental claim) |
-| `ClaimsObjectAccountNumber` | `CHAR(35)` | Account number |
-| `ClaimsObjectBankCountryKey` | `CHAR(3)` | Key of Bank Country/Region |
-| `ClaimsObjectBankKey` | `CHAR(15)` | Bank Key |
-| `CollateralAdminOrgUnit` | `CHAR(12)` | Administration Organizational Unit |
-| `RightsObjectEnteredDateTime` | `DEC(15)` | Creation Timestamp |
-| `RightsObjLastChangedDateTime` | `DEC(15)` | Change Timestamp |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RightsObjectUUID` |  | |  |  | `RAW(16)` | Rights GUID |
+| `RightsObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `RightsObjectType` |  | |  |  | `CHAR(6)` | Right Type |
+| `RightsObjectID` |  | |  |  | `CHAR(40)` | Rights ID |
+| `RightsObjectDescription` |  | |  |  | `CHAR(30)` | Additional description of the right |
+| `RightsObjectValidityStartDate` |  | |  |  | `DATS(8)` | Start date of the right |
+| `RightsObjectValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date of the Right or Patent |
+| `RightsObjectClassification` |  | |  |  | `CHAR(6)` | Classification |
+| `RightsObjectNotarizationDate` |  | |  |  | `DATS(8)` | Notarization Date |
+| `RightsObjectRegistrationDate` |  | |  |  | `DATS(8)` | Date of Patent Registration |
+| `RightsObjectPatentNumber` |  | |  |  | `CHAR(40)` | Patent Number |
+| `RightsObjPatentRegistryNumber` |  | |  |  | `CHAR(20)` | No. of the Register in the Patent Office |
+| `RightsObjectPatentOffice` |  | |  |  | `CHAR(30)` | Patent Office |
+| `RightsObjectAdditionalProperty` |  | |  |  | `CHAR(6)` | Additional Property Rights that are Available |
+| `RightsObjectPatentParentUUID` |  | |  |  | `RAW(16)` | Links to Parent Patent - GUID of the Parent |
+| `ClaimsObjectDueDate` |  | |  |  | `DATS(8)` | Due date of a claim |
+| `ClaimsObjectCompositionDesc` |  | |  |  | `CHAR(30)` | Composition of the claim |
+| `ClaimsObjectSavingsSumPercent` |  | |  |  | `DEC(10)` | Savings sum in Percentage (In building savings contracts) |
+| `ClaimsObjectDoubtfulDebtAmount` |  | |  |  | `CURR(17)` | Provision doubtful debt amount |
+| `ClaimsObjectDoubtfulDebtCrcy` |  | |  |  | `CUKY(5)` | Currency of Provision of doubfull debt |
+| `ClaimsObjectAddressID` |  | |  |  | `CHAR(10)` | Address of the object (for build.sav.contr./rental claim) |
+| `ClaimsObjectAccountNumber` |  | |  |  | `CHAR(35)` | Account number |
+| `ClaimsObjectBankCountryKey` |  | |  |  | `CHAR(3)` | Key of Bank Country/Region |
+| `ClaimsObjectBankKey` |  | |  |  | `CHAR(15)` | Bank Key |
+| `CollateralAdminOrgUnit` |  | |  |  | `CHAR(12)` | Administration Organizational Unit |
+| `RightsObjectEnteredDateTime` |  | |  |  | `DEC(15)` | Creation Timestamp |
+| `RightsObjLastChangedDateTime` |  | |  |  | `DEC(15)` | Change Timestamp |

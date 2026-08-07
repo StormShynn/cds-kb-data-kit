@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GranteeMgmtBillingRule` | `NUMC(4)` | Rule Used as a Basis for Billing |
-| `Language` | `LANG(1)` | Language Key |
-| `GranteeMgmtBillingRuleDesc` | `CHAR(30)` | Billing Rule Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GranteeMgmtBillingRule` |  | |  |  | `NUMC(4)` | Rule Used as a Basis for Billing |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GranteeMgmtBillingRuleDesc` |  | |  |  | `CHAR(30)` | Billing Rule Description |

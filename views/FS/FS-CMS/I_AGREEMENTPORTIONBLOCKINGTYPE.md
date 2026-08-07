@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionBlockingType` | `CHAR(2)` | Blocking Category for Collateral Agreement Portion |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionBlockingType` |  | |  |  | `CHAR(2)` | Blocking Category for Collateral Agreement Portion |

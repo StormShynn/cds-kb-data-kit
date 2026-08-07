@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyCvrgInsrdSumCalcMeth` | `NUMC(3)` | Type of Sum Insured |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyCvrgInsrdSumCalcMeth` |  | |  |  | `NUMC(3)` | Type of Sum Insured |

@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblStatus` | `CHAR(2)` | Status of Receivable |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblStatus` |  | |  |  | `CHAR(2)` | Status of Receivable |

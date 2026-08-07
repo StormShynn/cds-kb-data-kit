@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MatchingReasonCode` | `CHAR(6)` | Reason Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MatchingReasonCode` |  | |  |  | `CHAR(6)` | Reason Code |

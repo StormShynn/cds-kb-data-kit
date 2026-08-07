@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrCustSettlmtCat` | `CHAR(1)` | Settlement Type Customer |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrCustSettlmtCatName` | `CHAR(60)` | Description of Settlement Type Customer |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrCustSettlmtCat` |  | |  |  | `CHAR(1)` | Settlement Type Customer |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrCustSettlmtCatName` |  | |  |  | `CHAR(60)` | Description of Settlement Type Customer |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

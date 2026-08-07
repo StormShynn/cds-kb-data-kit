@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtApplStsGrp` | `CHAR(4)` | Status Group for Settlement Management Documents |
-| `SettlmtApplSts` | `CHAR(4)` | Application Status for a Settlement Management Document |
-| `SettlmtApplStsAprvd` | `CHAR(4)` | Application Status Approved |
-| `SettlmtApplStsRjctd` | `CHAR(4)` | Application Status Rejected |
-| `ApplStsIsRlvtForRelProc` | `CHAR(1)` | Release Process Active for Application Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtApplStsGrp` |  | |  |  | `CHAR(4)` | Status Group for Settlement Management Documents |
+| `SettlmtApplSts` |  | |  |  | `CHAR(4)` | Application Status for a Settlement Management Document |
+| `SettlmtApplStsAprvd` |  | |  |  | `CHAR(4)` | Application Status Approved |
+| `SettlmtApplStsRjctd` |  | |  |  | `CHAR(4)` | Application Status Rejected |
+| `ApplStsIsRlvtForRelProc` |  | |  |  | `CHAR(1)` | Release Process Active for Application Status |

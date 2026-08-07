@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BlockStatus` | `CHAR(2)` | Block Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BlockStatus` |  | |  |  | `CHAR(2)` | Block Status |

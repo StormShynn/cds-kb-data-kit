@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `SponsoredClassType` | `CHAR(1)` | Sponsored Class Type |
-| `SponsoredClassIsBillable` | `CHAR(1)` | Billable |
-| `GteeMBdgtTransfObjIsVldtd` | `CHAR(1)` | Indicator:  Validate Budget Transfer Object |
-| `GteeMBdgtAndPostObjIsVldtd` | `CHAR(1)` | Indicator:  Validate Allowed Budget and Posting objects |
-| `SponsoredClassAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `CreatedByUser` | `CHAR(12)` | Record Created by |
-| `CreationDate` | `DATS(8)` | Created on |
-| `LastChangedByUser` | `CHAR(12)` | Last Modified by |
-| `LastChangeDate` | `DATS(8)` | Date last modified |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `SponsoredClassType` |  | |  |  | `CHAR(1)` | Sponsored Class Type |
+| `SponsoredClassIsBillable` |  | |  |  | `CHAR(1)` | Billable |
+| `GteeMBdgtTransfObjIsVldtd` |  | |  |  | `CHAR(1)` | Indicator:  Validate Budget Transfer Object |
+| `GteeMBdgtAndPostObjIsVldtd` |  | |  |  | `CHAR(1)` | Indicator:  Validate Allowed Budget and Posting objects |
+| `SponsoredClassAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Record Created by |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created on |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Modified by |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date last modified |

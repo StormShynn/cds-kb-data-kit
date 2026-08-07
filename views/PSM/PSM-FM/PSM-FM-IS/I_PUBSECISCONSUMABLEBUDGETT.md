@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PubSecIsConsumableBudget` | `CHAR(1)` | Include Consumable Budget (AVC) |
-| `Language` | `LANG(1)` | Language Key |
-| `PubSecConsumableBudgetText` | `CHAR(60)` | Include Consumable Budget Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PubSecIsConsumableBudget` |  | |  |  | `CHAR(1)` | Include Consumable Budget (AVC) |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PubSecConsumableBudgetText` |  | |  |  | `CHAR(60)` | Include Consumable Budget Text |

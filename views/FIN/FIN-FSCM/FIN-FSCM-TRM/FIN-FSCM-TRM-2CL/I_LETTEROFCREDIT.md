@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `FinancialInstrumentActivity` | `NUMC(5)` | Transaction Activity |
-| `LetterOfCredit` | `CHAR(16)` | Letter of Credit Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `FinancialInstrumentActivity` |  | |  |  | `NUMC(5)` | Transaction Activity |
+| `LetterOfCredit` |  | |  |  | `CHAR(16)` | Letter of Credit Number |

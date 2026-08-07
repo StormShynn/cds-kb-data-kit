@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusVolFieldCombnType` | `CHAR(4)` | Field Combination for Business Volume Selection |
-| `BusVolFldCombnFieldName` | `CHAR(30)` | CCS: Field of a Field Combination |
-| `BusVolFldCombnFldInitIsAllwd` | `CHAR(1)` | Initial Values allowed |
-| `BusVolFldCombnExtFieldName` | `CHAR(30)` | Map Side Fieldname (Left) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolFieldCombnType` |  | |  |  | `CHAR(4)` | Field Combination for Business Volume Selection |
+| `BusVolFldCombnFieldName` |  | |  |  | `CHAR(30)` | CCS: Field of a Field Combination |
+| `BusVolFldCombnFldInitIsAllwd` |  | |  |  | `CHAR(1)` | Initial Values allowed |
+| `BusVolFldCombnExtFieldName` |  | |  |  | `CHAR(30)` | Map Side Fieldname (Left) |

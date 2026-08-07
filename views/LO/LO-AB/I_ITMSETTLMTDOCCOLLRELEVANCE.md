@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ItmSettlmtDocCollRelevance` | `CHAR(1)` | Collective Settlement Relevance of Settlement Documents |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ItmSettlmtDocCollRelevance` |  | |  |  | `CHAR(1)` | Collective Settlement Relevance of Settlement Documents |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

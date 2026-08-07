@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ReportingAgencyLease` | `CHAR(7)` | Texas Lease Number |
-| `ReportingAgencyLeaseName` | `CHAR(50)` | Texas Lease Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReportingAgencyLease` |  | |  |  | `CHAR(7)` | Texas Lease Number |
+| `ReportingAgencyLeaseName` |  | |  |  | `CHAR(50)` | Texas Lease Name |

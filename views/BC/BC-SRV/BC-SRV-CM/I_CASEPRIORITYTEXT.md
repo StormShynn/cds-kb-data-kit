@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CasePriority` | `NUMC(1)` | Priority |
-| `Language` | `LANG(1)` | Language Key |
-| `CasePriorityName` | `CHAR(40)` | Text, 40 Characters Long |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CasePriority` |  | |  |  | `NUMC(1)` | Priority |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CasePriorityName` |  | |  |  | `CHAR(40)` | Text, 40 Characters Long |

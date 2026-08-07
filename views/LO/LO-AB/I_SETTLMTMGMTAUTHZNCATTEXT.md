@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtAuthznCat` | `CHAR(1)` | Authorization Category |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtMgmtAuthznCatName` | `CHAR(60)` | Text of Settlement Mangement Authorization Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtAuthznCat` |  | |  |  | `CHAR(1)` | Authorization Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtMgmtAuthznCatName` |  | |  |  | `CHAR(60)` | Text of Settlement Mangement Authorization Category |

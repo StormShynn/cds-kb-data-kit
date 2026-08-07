@@ -36,27 +36,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialAccountType` | `CHAR(1)` | Account Type |
-| `YearMonth` | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
-| `CustomerCountry` | `CHAR(3)` | Country / Region Key |
-| `CustomerRegion` | `CHAR(3)` | Region (State, Province, County) |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `DurationUnit` | `UNIT(3)` |  |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `ReconciliationAccount` | `CHAR(10)` | Reconciliation Account in General Ledger |
-| `CustomerBasicAuthorizationGrp` | `CHAR(4)` | Customer Basic Authorization Group |
-| `CustomerFinsAuthorizationGrp` | `CHAR(4)` | Authorization Group |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerClassification` | `CHAR(2)` | Customer Classification |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `WeightedClearedAmountInDspCrcy` | `CURR(31)` |  |
-| `ClearedAmountInDisplayCurrency` | `CURR(25)` |  |
-| `WgtdPaidWthnTermsAmtInDspCrcy` | `CURR(31)` |  |
-| `WgtdPaidOutOfTermsAmtInDspCrcy` | `CURR(31)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `YearMonth` |  | |  |  | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
+| `CustomerCountry` |  | |  |  | `CHAR(3)` | Country / Region Key |
+| `CustomerRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `DurationUnit` |  | |  |  | `UNIT(3)` |  |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `ReconciliationAccount` |  | |  |  | `CHAR(10)` | Reconciliation Account in General Ledger |
+| `CustomerBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Customer Basic Authorization Group |
+| `CustomerFinsAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `WeightedClearedAmountInDspCrcy` |  | |  |  | `CURR(31)` |  |
+| `ClearedAmountInDisplayCurrency` |  | |  |  | `CURR(25)` |  |
+| `WgtdPaidWthnTermsAmtInDspCrcy` |  | |  |  | `CURR(31)` |  |
+| `WgtdPaidOutOfTermsAmtInDspCrcy` |  | |  |  | `CURR(31)` |  |

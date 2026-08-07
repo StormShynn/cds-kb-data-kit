@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoActivityResult` | `CHAR(2)` | Activity Result |
-| `DCoCustomerIsReached` | `CHAR(1)` | Customer Was Reached |
-| `DCoWorklistItemIsFinalized` | `CHAR(1)` | Worklist Item Is Completed |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoActivityResult` |  | |  |  | `CHAR(2)` | Activity Result |
+| `DCoCustomerIsReached` |  | |  |  | `CHAR(1)` | Customer Was Reached |
+| `DCoWorklistItemIsFinalized` |  | |  |  | `CHAR(1)` | Worklist Item Is Completed |

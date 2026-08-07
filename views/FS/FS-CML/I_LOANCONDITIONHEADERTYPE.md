@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanConditionHeaderType` | `NUMC(2)` | Type of Condition Header |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanConditionHeaderType` |  | |  |  | `NUMC(2)` | Type of Condition Header |

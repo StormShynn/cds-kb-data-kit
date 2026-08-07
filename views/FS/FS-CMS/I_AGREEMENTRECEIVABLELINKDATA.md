@@ -29,26 +29,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementReceivableUUID` | `RAW(16)` | GUID for Table CMS_CAG_RBL |
-| `AgreementPortionUUID` | `RAW(16)` | GUID for Table CMS_CAG_POR |
-| `CollateralRblCreditSystem` | `CHAR(3)` | Credit System |
-| `CollateralReceivableID` | `CHAR(64)` | Receivable ID |
-| `AgreementRblLinkValidFromDate` | `DATS(8)` | Date |
-| `AgreementRblLinkValidToDate` | `DATS(8)` | Date |
-| `AgreementRblPriorityVal` | `NUMC(4)` | Priority of the Collateral Agreement - Receivable Link |
-| `AgreementRblRankingClassVal` | `NUMC(4)` | Ranking Class of the Collateral Agreement - Receivable Link |
-| `AgreementReceivableLinkType` | `CHAR(2)` | Indicator for Manually or Automatic Links |
-| `AgreementTemporaryColltrlSign` | `CHAR(2)` | Indicates if Collateral Agreement is a Temporary Collateral |
-| `AgreementRblSecuredAmount` | `CURR(17)` | Secured Receivable Amount |
-| `AgreementRblSecuredCurrency` | `CUKY(5)` | Currency of the Receivable  Amounts Specified in the Link |
-| `AgreementReceivablePercent` | `DEC(10)` | Percentage of the Receivable |
-| `AgreementReceivablePortion` | `CHAR(2)` | Portion of the Receivable |
-| `AgreementRblMiddlePortnRefAmt` | `CURR(17)` | Reference Amount of Receivable for Middle Portion |
-| `AgreementRblMiddlePortnRefPct` | `DEC(10)` | Reference Percentage of Receivable for Middle Portion |
-| `AgreementRblComponentType` | `CHAR(3)` | CComponent Type of a Receivable |
-| `AgreementRblLinkEnteredBy` | `CHAR(12)` | Login ID of the User who created the Record |
-| `AgreementRblLinkEnteredDteTme` | `DEC(15)` | Creation Timestamp |
-| `AgreementRblLinkLastChangedBy` | `CHAR(12)` | Last Changed By |
-| `AgreementRblLinkLastChgdDteTme` | `DEC(15)` | Change Timestamp |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementReceivableUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_RBL |
+| `AgreementPortionUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_POR |
+| `CollateralRblCreditSystem` |  | |  |  | `CHAR(3)` | Credit System |
+| `CollateralReceivableID` |  | |  |  | `CHAR(64)` | Receivable ID |
+| `AgreementRblLinkValidFromDate` |  | |  |  | `DATS(8)` | Date |
+| `AgreementRblLinkValidToDate` |  | |  |  | `DATS(8)` | Date |
+| `AgreementRblPriorityVal` |  | |  |  | `NUMC(4)` | Priority of the Collateral Agreement - Receivable Link |
+| `AgreementRblRankingClassVal` |  | |  |  | `NUMC(4)` | Ranking Class of the Collateral Agreement - Receivable Link |
+| `AgreementReceivableLinkType` |  | |  |  | `CHAR(2)` | Indicator for Manually or Automatic Links |
+| `AgreementTemporaryColltrlSign` |  | |  |  | `CHAR(2)` | Indicates if Collateral Agreement is a Temporary Collateral |
+| `AgreementRblSecuredAmount` |  | |  |  | `CURR(17)` | Secured Receivable Amount |
+| `AgreementRblSecuredCurrency` |  | |  |  | `CUKY(5)` | Currency of the Receivable  Amounts Specified in the Link |
+| `AgreementReceivablePercent` |  | |  |  | `DEC(10)` | Percentage of the Receivable |
+| `AgreementReceivablePortion` |  | |  |  | `CHAR(2)` | Portion of the Receivable |
+| `AgreementRblMiddlePortnRefAmt` |  | |  |  | `CURR(17)` | Reference Amount of Receivable for Middle Portion |
+| `AgreementRblMiddlePortnRefPct` |  | |  |  | `DEC(10)` | Reference Percentage of Receivable for Middle Portion |
+| `AgreementRblComponentType` |  | |  |  | `CHAR(3)` | CComponent Type of a Receivable |
+| `AgreementRblLinkEnteredBy` |  | |  |  | `CHAR(12)` | Login ID of the User who created the Record |
+| `AgreementRblLinkEnteredDteTme` |  | |  |  | `DEC(15)` | Creation Timestamp |
+| `AgreementRblLinkLastChangedBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `AgreementRblLinkLastChgdDteTme` |  | |  |  | `DEC(15)` | Change Timestamp |

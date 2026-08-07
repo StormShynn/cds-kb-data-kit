@@ -35,29 +35,29 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Product` | `CHAR(40)` | Material for Stock Mamangement |
-| `Plant` | `CHAR(4)` | Plant |
-| `StorageLocation` | `CHAR(4)` | Storage Location |
-| `Batch` | `CHAR(10)` | Batch Number (Stock Identifier) |
-| `Supplier` | `CHAR(10)` | Supplier for Special Stock |
-| `SDDocument` | `CHAR(10)` | Sales Order Number of Valuated Sales Order Stock |
-| `SDDocumentItem` | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
-| `WBSElementInternalID` | `NUMC(8)` | Valuated Sales Order Stock WBS Element |
-| `Customer` | `CHAR(10)` | Customer for Special Stock |
-| `SpecialStockIdfgStockOwner` | `CHAR(10)` | Add. Supplier for Special Stock |
-| `InventoryStockType` | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
-| `InventorySpecialStockType` | `CHAR(1)` | Special Stock Type |
-| `MaterialBaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `AlternativeUnit` | `UNIT(3)` | Alternative Unit of Measure for Stockkeeping Unit |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `MatlWrhsStkQtyInMatlBaseUnit` | `QUAN(31)` |  |
-| `MatlCnsmpnQtyInMatlBaseUnit` | `QUAN(31)` |  |
-| `MatlStkIncrQtyInMatlBaseUnit` | `QUAN(31)` |  |
-| `MatlStkDecrQtyInMatlBaseUnit` | `QUAN(31)` |  |
-| `MatlWrhsStkQtyInAltUoM` | `QUAN(31)` | Stock Quantity in AUoM |
-| `MatlCnsmpnQtyInAltUoM` | `QUAN(31)` | Consumption Quantity in AUoM |
-| `MatlStkIncrQtyInAltUoM` | `QUAN(31)` | Stock Increase Quantity in AUoM |
-| `MatlStkDecrQtyInAltUoM` | `QUAN(31)` | Stock Decrease Quantity in AUoM |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` |  | |  |  | `CHAR(40)` | Material for Stock Mamangement |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number (Stock Identifier) |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier for Special Stock |
+| `SDDocument` |  | |  |  | `CHAR(10)` | Sales Order Number of Valuated Sales Order Stock |
+| `SDDocumentItem` |  | |  |  | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | Valuated Sales Order Stock WBS Element |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer for Special Stock |
+| `SpecialStockIdfgStockOwner` |  | |  |  | `CHAR(10)` | Add. Supplier for Special Stock |
+| `InventoryStockType` |  | |  |  | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Type |
+| `MaterialBaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `AlternativeUnit` |  | |  |  | `UNIT(3)` | Alternative Unit of Measure for Stockkeeping Unit |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  | `QUAN(31)` |  |
+| `MatlCnsmpnQtyInMatlBaseUnit` |  | |  |  | `QUAN(31)` |  |
+| `MatlStkIncrQtyInMatlBaseUnit` |  | |  |  | `QUAN(31)` |  |
+| `MatlStkDecrQtyInMatlBaseUnit` |  | |  |  | `QUAN(31)` |  |
+| `MatlWrhsStkQtyInAltUoM` |  | |  |  | `QUAN(31)` | Stock Quantity in AUoM |
+| `MatlCnsmpnQtyInAltUoM` |  | |  |  | `QUAN(31)` | Consumption Quantity in AUoM |
+| `MatlStkIncrQtyInAltUoM` |  | |  |  | `QUAN(31)` | Stock Increase Quantity in AUoM |
+| `MatlStkDecrQtyInAltUoM` |  | |  |  | `QUAN(31)` | Stock Decrease Quantity in AUoM |

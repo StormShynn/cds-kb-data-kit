@@ -28,6 +28,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PriorityCode` | `CHAR(1)` | Priority |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PriorityCode` |  | |  |  | `CHAR(1)` | Priority |

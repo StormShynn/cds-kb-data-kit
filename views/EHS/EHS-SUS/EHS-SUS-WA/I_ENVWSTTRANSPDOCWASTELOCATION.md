@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EnvrmtWasteGnrtrUUID` | `RAW(16)` | Location |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `EHSLocationPhone` | `CHAR(30)` | Telephone Number |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region |
-| `CityName` | `CHAR(40)` | City |
-| `StreetName` | `CHAR(60)` | Street Address |
-| `PostalCode` | `CHAR(10)` | City Postal Code |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `EHSLocationIsAssigned` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EnvrmtWasteGnrtrUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSLocationPhone` |  | |  |  | `CHAR(30)` | Telephone Number |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region |
+| `CityName` |  | |  |  | `CHAR(40)` | City |
+| `StreetName` |  | |  |  | `CHAR(60)` | Street Address |
+| `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `EHSLocationIsAssigned` |  | |  |  | `INT1(3)` |  |

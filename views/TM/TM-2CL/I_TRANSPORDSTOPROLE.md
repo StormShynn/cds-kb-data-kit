@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdStopRole` | `CHAR(2)` | Role of the Stop |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStopRole` |  | |  |  | `CHAR(2)` | Role of the Stop |

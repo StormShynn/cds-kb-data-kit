@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyIDForCostCenter` | `CHAR(42)` | Hierarchy ID for Cost Center |
-| `CtrlObjForCostCenter` | `CHAR(50)` | Control Object for a Cost Center |
-| `CtrlObjNameForCostCenter` | `CHAR(50)` | Name of a Control Object for a Cost Center |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyIDForCostCenter` |  | |  |  | `CHAR(42)` | Hierarchy ID for Cost Center |
+| `CtrlObjForCostCenter` |  | |  |  | `CHAR(50)` | Control Object for a Cost Center |
+| `CtrlObjNameForCostCenter` |  | |  |  | `CHAR(50)` | Name of a Control Object for a Cost Center |

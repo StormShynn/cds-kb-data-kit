@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentReleaseSize` | `CHAR(21)` | Release Size |
-| `Language` | `LANG(1)` | Language Key |
-| `IncidentReleaseSizeName` | `CHAR(40)` | Description (Extra Short) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentReleaseSize` |  | |  |  | `CHAR(21)` | Release Size |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IncidentReleaseSizeName` |  | |  |  | `CHAR(40)` | Description (Extra Short) |

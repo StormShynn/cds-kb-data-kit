@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxExemptCode` | `NUMC(2)` | Tax 2.0 OKGP - Exempt Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxExemptCode` |  | |  |  | `NUMC(2)` | Tax 2.0 OKGP - Exempt Code |

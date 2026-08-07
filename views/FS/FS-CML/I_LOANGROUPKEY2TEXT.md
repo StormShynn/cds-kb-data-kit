@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanGroupKey2` | `CHAR(6)` | Group Key 2 (Freely Available) |
-| `LoanGroupKey2ShortText` | `CHAR(50)` | Name |
-| `LoanGroupKey2Text` | `CHAR(15)` | Short Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanGroupKey2` |  | |  |  | `CHAR(6)` | Group Key 2 (Freely Available) |
+| `LoanGroupKey2ShortText` |  | |  |  | `CHAR(50)` | Name |
+| `LoanGroupKey2Text` |  | |  |  | `CHAR(15)` | Short Name |

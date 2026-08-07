@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectReviewStatus` | `CHAR(4)` | Status ID |
-| `Language` | `LANG(1)` | Language Key |
-| `EngagementProjReviewStatusText` | `CHAR(40)` | Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectReviewStatus` |  | |  |  | `CHAR(4)` | Status ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EngagementProjReviewStatusText` |  | |  |  | `CHAR(40)` | Status Description |

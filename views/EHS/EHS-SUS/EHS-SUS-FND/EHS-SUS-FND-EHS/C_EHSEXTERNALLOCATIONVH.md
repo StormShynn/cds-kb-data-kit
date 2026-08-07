@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationName` | `CHAR(60)` | Location |
-| `EHSLocationNameFreeSrch` | `CHAR(60)` | Location |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Field Name |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessArea` | `CHAR(4)` | Business Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location |
+| `EHSLocationNameFreeSrch` |  | |  |  | `CHAR(60)` | Location |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Field Name |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |

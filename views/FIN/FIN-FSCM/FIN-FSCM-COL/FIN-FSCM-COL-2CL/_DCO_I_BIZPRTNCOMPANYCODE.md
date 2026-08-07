@@ -36,18 +36,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `DCoBizPrtnCoCodeAssignmentUUID` | `RAW(16)` | Business Partner Company Code Assignment UUID |
-| `DebtCollectionsCompanyCode` | `CHAR(4)` | Company Code in Collections and Dispute Automation |
-| `DebtCollectionsProcedure` | `CHAR(10)` | Collection Procedure |
-| `DCoARAccountantGroup` | `CHAR(40)` | AR Accountant Group |
-| `DCoLglDunProceedingsStartDate` | `DATS(8)` | Start Date of Legal Dunning Procedure |
-| `DCoDunningBlockStartDate` | `DATS(8)` | Start Date from Which an Item Is Blocked for Dunning |
-| `DCoDunningBlockEndDate` | `DATS(8)` | End Date Until Which an Item Is Blocked for Dunning |
-| `DCoDunningCommunicationChannel` | `CHAR(1)` | Communication Channel |
-| `DCoBizPrtnCoCodeCreatedByUser` | `CHAR(12)` | Created By |
-| `DCoBPCoCodeCreationDateTime` | `DEC(15)` | Created On/At |
-| `DCoBPCoCodeLastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `DCoBPCoCodeLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `DCoBizPrtnCoCodeAssignmentUUID` |  | |  |  | `RAW(16)` | Business Partner Company Code Assignment UUID |
+| `DebtCollectionsCompanyCode` |  | |  |  | `CHAR(4)` | Company Code in Collections and Dispute Automation |
+| `DebtCollectionsProcedure` |  | |  |  | `CHAR(10)` | Collection Procedure |
+| `DCoARAccountantGroup` |  | |  |  | `CHAR(40)` | AR Accountant Group |
+| `DCoLglDunProceedingsStartDate` |  | |  |  | `DATS(8)` | Start Date of Legal Dunning Procedure |
+| `DCoDunningBlockStartDate` |  | |  |  | `DATS(8)` | Start Date from Which an Item Is Blocked for Dunning |
+| `DCoDunningBlockEndDate` |  | |  |  | `DATS(8)` | End Date Until Which an Item Is Blocked for Dunning |
+| `DCoDunningCommunicationChannel` |  | |  |  | `CHAR(1)` | Communication Channel |
+| `DCoBizPrtnCoCodeCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `DCoBPCoCodeCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DCoBPCoCodeLastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DCoBPCoCodeLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |

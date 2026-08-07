@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OperationStdWorkQtyGrpgCat` | `CHAR(1)` |  |
-| `Language` | `LANG(1)` | Language Key |
-| `OperationStdWrkQtyGrpCatName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OperationStdWorkQtyGrpgCat` |  | |  |  | `CHAR(1)` |  |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `OperationStdWrkQtyGrpCatName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

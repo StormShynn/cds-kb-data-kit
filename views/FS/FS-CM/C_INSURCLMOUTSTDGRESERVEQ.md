@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsuranceClaim` | `CHAR(17)` | Number of Claim |
-| `InsurClmLossExpnType` | `CHAR(1)` | Losses or Expenses |
-| `InsurClmType` | `CHAR(4)` | Internal Claim Type |
-| `InsurClmAuthznGrp` | `CHAR(4)` | Authorization Group for Claims (VIP) |
-| `InsuranceContract` | `CHAR(17)` | Contract Number |
-| `InsurClmLifeCycSts` | `CHAR(2)` | Status of Claim |
-| `InsurClmSubclmType` | `CHAR(4)` | Subclaim Type |
-| `InsurLineOfBus` | `CHAR(3)` | Insurance Line of Business |
-| `InsurClmCoverageType` | `CHAR(10)` | Coverage Type |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit |
-| `ParentOrganizationalUnit` | `NUMC(8)` | Higher-Level Organizational Unit |
-| `InsurClmOutsdngRsrvAmt` | `CURR(15)` | Outstanding Reserve |
-| `DisplayCurrency` | `CUKY(5)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsuranceClaim` |  | |  |  | `CHAR(17)` | Number of Claim |
+| `InsurClmLossExpnType` |  | |  |  | `CHAR(1)` | Losses or Expenses |
+| `InsurClmType` |  | |  |  | `CHAR(4)` | Internal Claim Type |
+| `InsurClmAuthznGrp` |  | |  |  | `CHAR(4)` | Authorization Group for Claims (VIP) |
+| `InsuranceContract` |  | |  |  | `CHAR(17)` | Contract Number |
+| `InsurClmLifeCycSts` |  | |  |  | `CHAR(2)` | Status of Claim |
+| `InsurClmSubclmType` |  | |  |  | `CHAR(4)` | Subclaim Type |
+| `InsurLineOfBus` |  | |  |  | `CHAR(3)` | Insurance Line of Business |
+| `InsurClmCoverageType` |  | |  |  | `CHAR(10)` | Coverage Type |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit |
+| `ParentOrganizationalUnit` |  | |  |  | `NUMC(8)` | Higher-Level Organizational Unit |
+| `InsurClmOutsdngRsrvAmt` |  | |  |  | `CURR(15)` | Outstanding Reserve |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |

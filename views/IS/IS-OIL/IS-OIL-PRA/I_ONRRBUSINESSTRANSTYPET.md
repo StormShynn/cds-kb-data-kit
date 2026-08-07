@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRBusinessTransactionType` | `CHAR(1)` | ONRR-2014 - PRA Detail Line Type |
-| `Language` | `LANG(1)` | Language Key |
-| `ONRRBusTransactionTypeName` | `CHAR(60)` | ONRR Business transaction type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRBusinessTransactionType` |  | |  |  | `CHAR(1)` | ONRR-2014 - PRA Detail Line Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ONRRBusTransactionTypeName` |  | |  |  | `CHAR(60)` | ONRR Business transaction type Name |

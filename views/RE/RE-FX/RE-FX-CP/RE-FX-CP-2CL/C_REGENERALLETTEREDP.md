@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CorrespondenceApplication` | `CHAR(4)` |  |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `RealEstateContract` | `CHAR(13)` | Real Estate Contract Number |
-| `REContractType` | `CHAR(4)` | Contract Type |
-| `ContractStartDate` | `DATS(8)` | Contract Start Date |
-| `ContractEndDate` | `DATS(8)` | Contract End Date |
-| `REContractName` | `CHAR(80)` | Contract Name |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CorrespondenceApplication` |  | |  |  | `CHAR(4)` |  |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `RealEstateContract` |  | |  |  | `CHAR(13)` | Real Estate Contract Number |
+| `REContractType` |  | |  |  | `CHAR(4)` | Contract Type |
+| `ContractStartDate` |  | |  |  | `DATS(8)` | Contract Start Date |
+| `ContractEndDate` |  | |  |  | `DATS(8)` | Contract End Date |
+| `REContractName` |  | |  |  | `CHAR(80)` | Contract Name |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |

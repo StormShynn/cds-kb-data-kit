@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BalAmtAgeCode` | `CHAR(3)` | Taxes Payable Write-off Age |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BalAmtAgeCode` |  | |  |  | `CHAR(3)` | Taxes Payable Write-off Age |

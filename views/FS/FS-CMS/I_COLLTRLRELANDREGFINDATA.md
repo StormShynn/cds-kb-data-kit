@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlLandRegFinancialUUID` | `RAW(16)` | GUID for Table CMS_LR_DE_2 |
-| `ColltrlLandRegisterHeaderUUID` | `RAW(16)` | GUID for Table CMS_LR_DE_A |
-| `ColltrlLandRegChrgSerialNumber` | `CHAR(32)` | Serial No |
-| `ColltrlLandRegPrptyListNumber` | `CHAR(4)` | Serial number of the Property List Number |
-| `ColltrlLandRegChrgPrioValue` | `NUMC(4)` | Priority of the Charge |
-| `ColltrlLandRegisterChargeType` | `CHAR(6)` | Section II Charge/Restriction Type |
-| `ColltrlLandRegChargeAmount` | `CURR(17)` | Value of the Charge/Restriction |
-| `ColltrlLandRegChargeCurrency` | `CUKY(5)` | Currency of the Charge |
-| `ColltrlLandRegChrgDescription` | `CHAR(60)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlLandRegFinancialUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_LR_DE_2 |
+| `ColltrlLandRegisterHeaderUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_LR_DE_A |
+| `ColltrlLandRegChrgSerialNumber` |  | |  |  | `CHAR(32)` | Serial No |
+| `ColltrlLandRegPrptyListNumber` |  | |  |  | `CHAR(4)` | Serial number of the Property List Number |
+| `ColltrlLandRegChrgPrioValue` |  | |  |  | `NUMC(4)` | Priority of the Charge |
+| `ColltrlLandRegisterChargeType` |  | |  |  | `CHAR(6)` | Section II Charge/Restriction Type |
+| `ColltrlLandRegChargeAmount` |  | |  |  | `CURR(17)` | Value of the Charge/Restriction |
+| `ColltrlLandRegChargeCurrency` |  | |  |  | `CUKY(5)` | Currency of the Charge |
+| `ColltrlLandRegChrgDescription` |  | |  |  | `CHAR(60)` | Description |

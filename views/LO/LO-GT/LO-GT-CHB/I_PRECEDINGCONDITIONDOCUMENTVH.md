@@ -34,21 +34,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PrecedingConditionDocument` | `CHAR(10)` | Predecessor Condition Contract |
-| `CndnContrType` | `CHAR(4)` | Condition Contract Type |
-| `CndnContrTypeDesc` | `CHAR(40)` | Condition Contract Type Description |
-| `ConditionDocumentValidFromDate` | `DATS(8)` | Valid From |
-| `ConditionDocumentValidToDate` | `DATS(8)` | Valid To |
-| `Customer` | `CHAR(10)` | Customer as Partner of a Condition Contract |
-| `PriorSupplier` | `CHAR(10)` | Prior Supplier |
-| `Supplier` | `CHAR(10)` | Supplier as Partner of a Condition Contract |
-| `PersonWorkAgreement` | `NUMC(8)` | Worker as Partner of a Condition Contract |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CndnDocWorkerCostCenter` | `CHAR(10)` | Worker Cost Center |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PrecedingConditionDocument` |  | |  |  | `CHAR(10)` | Predecessor Condition Contract |
+| `CndnContrType` |  | |  |  | `CHAR(4)` | Condition Contract Type |
+| `CndnContrTypeDesc` |  | |  |  | `CHAR(40)` | Condition Contract Type Description |
+| `ConditionDocumentValidFromDate` |  | |  |  | `DATS(8)` | Valid From |
+| `ConditionDocumentValidToDate` |  | |  |  | `DATS(8)` | Valid To |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer as Partner of a Condition Contract |
+| `PriorSupplier` |  | |  |  | `CHAR(10)` | Prior Supplier |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier as Partner of a Condition Contract |
+| `PersonWorkAgreement` |  | |  |  | `NUMC(8)` | Worker as Partner of a Condition Contract |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CndnDocWorkerCostCenter` |  | |  |  | `CHAR(10)` | Worker Cost Center |

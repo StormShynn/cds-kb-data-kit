@@ -30,25 +30,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `WBSElementInternalID` | `NUMC(8)` | WBS Element |
-| `WBSDescription` | `CHAR(40)` | Work Breakdown Structure Element Name |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `ResponsibleCostCenter` | `CHAR(10)` | Responsible Cost Center |
-| `Plant` | `CHAR(4)` | Plant |
-| `FactoryCalendar` | `CHAR(2)` | Calendar |
-| `CostingSheet` | `CHAR(6)` | Costing Sheet |
-| `CostCenter` | `CHAR(10)` | Cost center to which costs are actually posted |
-| `ProjectInternalID` | `NUMC(8)` | Project (internal) |
-| `WBSElementIsBillingElement` | `CHAR(1)` | Indicator: Billing element |
-| `WBSElementObject` | `CHAR(22)` | Object Number |
-| `InvestmentProfile` | `CHAR(6)` | Investment Measure Profile |
-| `WBSIsStatisticalWBSElement` | `CHAR(1)` | Statistical WBS element |
-| `ProjectType` | `CHAR(2)` | Project Type |
-| `JntIntrstBillgClass` | `CHAR(3)` | JIB/JIBE Class |
-| `JntIntrstBillgSubClass` | `CHAR(5)` | JIB/JIBE Subclass A |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `WBSDescription` |  | |  |  | `CHAR(40)` | Work Breakdown Structure Element Name |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ResponsibleCostCenter` |  | |  |  | `CHAR(10)` | Responsible Cost Center |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Calendar |
+| `CostingSheet` |  | |  |  | `CHAR(6)` | Costing Sheet |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost center to which costs are actually posted |
+| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project (internal) |
+| `WBSElementIsBillingElement` |  | |  |  | `CHAR(1)` | Indicator: Billing element |
+| `WBSElementObject` |  | |  |  | `CHAR(22)` | Object Number |
+| `InvestmentProfile` |  | |  |  | `CHAR(6)` | Investment Measure Profile |
+| `WBSIsStatisticalWBSElement` |  | |  |  | `CHAR(1)` | Statistical WBS element |
+| `ProjectType` |  | |  |  | `CHAR(2)` | Project Type |
+| `JntIntrstBillgClass` |  | |  |  | `CHAR(3)` | JIB/JIBE Class |
+| `JntIntrstBillgSubClass` |  | |  |  | `CHAR(5)` | JIB/JIBE Subclass A |

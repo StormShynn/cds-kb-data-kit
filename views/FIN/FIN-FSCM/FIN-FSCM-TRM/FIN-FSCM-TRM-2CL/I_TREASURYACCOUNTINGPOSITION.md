@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TreasuryPosition` | `CHAR(32)` | Object Identity in Database Format |
-| `TrsyPositionIdentificationUUID` | `CHAR(32)` | Object Identity in Database Format |
-| `TreasuryGLAccountAssignmentRef` | `CHAR(12)` | Account Assignment Reference of Position Management |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `CostCenter` | `CHAR(10)` | Cost Center |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryPosition` |  | |  |  | `CHAR(32)` | Object Identity in Database Format |
+| `TrsyPositionIdentificationUUID` |  | |  |  | `CHAR(32)` | Object Identity in Database Format |
+| `TreasuryGLAccountAssignmentRef` |  | |  |  | `CHAR(12)` | Account Assignment Reference of Position Management |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |

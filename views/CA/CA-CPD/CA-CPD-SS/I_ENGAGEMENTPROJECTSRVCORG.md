@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `EngmtProjServiceOrgIsSales` | `CHAR(1)` | Sales Org |
-| `EngmtProjServiceOrgIsDelivery` | `CHAR(1)` | Delivery Organization |
-| `TimePostingIsRestricted` | `CHAR(1)` | Restrict Unstaffed Posting |
-| `RestrictedTimePosting` | `CHAR(1)` | Restrict Unstaffed Posting |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `EngmtProjServiceOrgIsSales` |  | |  |  | `CHAR(1)` | Sales Org |
+| `EngmtProjServiceOrgIsDelivery` |  | |  |  | `CHAR(1)` | Delivery Organization |
+| `TimePostingIsRestricted` |  | |  |  | `CHAR(1)` | Restrict Unstaffed Posting |
+| `RestrictedTimePosting` |  | |  |  | `CHAR(1)` | Restrict Unstaffed Posting |

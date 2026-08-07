@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EntityAffiliationCode` | `CHAR(2)` | Tax 2.0 - NM - Affilication Code |
-| `Language` | `LANG(1)` | Language Key |
-| `EntityAffiliationCodeName` | `CHAR(60)` | New Mexico Affiliation Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntityAffiliationCode` |  | |  |  | `CHAR(2)` | Tax 2.0 - NM - Affilication Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EntityAffiliationCodeName` |  | |  |  | `CHAR(60)` | New Mexico Affiliation Code Name |

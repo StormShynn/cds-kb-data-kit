@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationUnitHierarchy` | `CHAR(40)` | Consolidation Unit Hierarchy |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `ConsolidationUnitHierarchyText` | `CHAR(50)` | Consolidation Hierarchy Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnitHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Unit Hierarchy |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ConsolidationUnitHierarchyText` |  | |  |  | `CHAR(50)` | Consolidation Hierarchy Description |

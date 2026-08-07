@@ -35,16 +35,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountReviewUUID` | `RAW(16)` | Bank Account Review UUID |
-| `BankAccountReviewAreaUUID` | `RAW(16)` | Review Area UUID |
-| `BankAccountReviewerUUID` | `RAW(16)` | Reviewer UUID |
-| `BankAccountReviewStep` | `INT1(3)` | Review Step |
-| `BankAccountReviewerUser` | `CHAR(12)` | Reviewer |
-| `BkAccountReviewerReviewResult` | `CHAR(2)` | Review Result |
-| `ProcessedByUser` | `CHAR(12)` | Processed By (User ID) |
-| `CreatedByUser` | `CHAR(12)` | Bank Account Review: Created By |
-| `CreationDateTime` | `DEC(15)` | Bank Account Review: Creation Timestamp |
-| `LastChangedByUser` | `CHAR(12)` | Bank Account Review: Changed By |
-| `LocalLastChangeDateTime` | `DEC(15)` | Bank Account Review: Local Change Timestamp |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountReviewUUID` |  | |  |  | `RAW(16)` | Bank Account Review UUID |
+| `BankAccountReviewAreaUUID` |  | |  |  | `RAW(16)` | Review Area UUID |
+| `BankAccountReviewerUUID` |  | |  |  | `RAW(16)` | Reviewer UUID |
+| `BankAccountReviewStep` |  | |  |  | `INT1(3)` | Review Step |
+| `BankAccountReviewerUser` |  | |  |  | `CHAR(12)` | Reviewer |
+| `BkAccountReviewerReviewResult` |  | |  |  | `CHAR(2)` | Review Result |
+| `ProcessedByUser` |  | |  |  | `CHAR(12)` | Processed By (User ID) |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Bank Account Review: Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Bank Account Review: Creation Timestamp |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Bank Account Review: Changed By |
+| `LocalLastChangeDateTime` |  | |  |  | `DEC(15)` | Bank Account Review: Local Change Timestamp |

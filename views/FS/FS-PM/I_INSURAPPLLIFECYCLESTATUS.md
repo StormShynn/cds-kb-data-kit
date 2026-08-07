@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurApplLifeCycSts` | `NUMC(3)` | Status of Policy |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurApplLifeCycSts` |  | |  |  | `NUMC(3)` | Status of Policy |

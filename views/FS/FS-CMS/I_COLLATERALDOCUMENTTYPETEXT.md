@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralDocumentType` | `CHAR(6)` | Document Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralDocumentTypeText` | `CHAR(40)` | Document Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralDocumentType` |  | |  |  | `CHAR(6)` | Document Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralDocumentTypeText` |  | |  |  | `CHAR(40)` | Document Name |

@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `TrdgDocExecWrkbnType` | `CHAR(4)` | Trading Execution Workbench Type |
-| `TrdgDocExecWrkbnTypeText` | `CHAR(40)` | Description Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TrdgDocExecWrkbnType` |  | |  |  | `CHAR(4)` | Trading Execution Workbench Type |
+| `TrdgDocExecWrkbnTypeText` |  | |  |  | `CHAR(40)` | Description Text |

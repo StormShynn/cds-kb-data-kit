@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanSecurityType` | `NUMC(2)` | Borrower's Note Loan Security Type |
-| `LoanSecurityTypeShortText` | `CHAR(15)` | Short Name |
-| `LoanSecurityTypeText` | `CHAR(30)` | Normal name (30 characters) |
-| `LoanSecurityTypeLongText` | `CHAR(50)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanSecurityType` |  | |  |  | `NUMC(2)` | Borrower's Note Loan Security Type |
+| `LoanSecurityTypeShortText` |  | |  |  | `CHAR(15)` | Short Name |
+| `LoanSecurityTypeText` |  | |  |  | `CHAR(30)` | Normal name (30 characters) |
+| `LoanSecurityTypeLongText` |  | |  |  | `CHAR(50)` | Name |

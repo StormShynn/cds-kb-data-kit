@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AssortmentListType` | `CHAR(1)` | Assortment List Type |
-| `AssortmentListTypeName` | `CHAR(20)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AssortmentListType` |  | |  |  | `CHAR(1)` | Assortment List Type |
+| `AssortmentListTypeName` |  | |  |  | `CHAR(20)` | Description |

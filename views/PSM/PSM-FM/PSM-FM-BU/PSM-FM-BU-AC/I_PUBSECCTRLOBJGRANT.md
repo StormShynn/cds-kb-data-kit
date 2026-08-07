@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantHierarchy` | `CHAR(42)` | Grant Hierarchy |
-| `CtrlObjForGrant` | `CHAR(50)` | Control Object for a Grant |
-| `CtrlObjForGrantName` | `CHAR(50)` | Control Object for a Grant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantHierarchy` |  | |  |  | `CHAR(42)` | Grant Hierarchy |
+| `CtrlObjForGrant` |  | |  |  | `CHAR(50)` | Control Object for a Grant |
+| `CtrlObjForGrantName` |  | |  |  | `CHAR(50)` | Control Object for a Grant |

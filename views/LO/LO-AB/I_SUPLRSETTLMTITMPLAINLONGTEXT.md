@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrSettlmt` | `CHAR(10)` | Supplier Settlement |
-| `SuplrSettlmtItem` | `NUMC(6)` | Document Item |
-| `TextObjectType` | `CHAR(4)` | Text Object type |
-| `Language` | `LANG(1)` | Language Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrSettlmt` |  | |  |  | `CHAR(10)` | Supplier Settlement |
+| `SuplrSettlmtItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `TextObjectType` |  | |  |  | `CHAR(4)` | Text Object type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |

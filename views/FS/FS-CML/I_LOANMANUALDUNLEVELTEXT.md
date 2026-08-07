@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanManualDunLevel` | `CHAR(1)` | Loan Manual Dunning Level |
-| `LoanManualDunLevelShortText` | `CHAR(50)` | Name |
-| `LoanManualDunLevelText` | `CHAR(15)` | Short Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanManualDunLevel` |  | |  |  | `CHAR(1)` | Loan Manual Dunning Level |
+| `LoanManualDunLevelShortText` |  | |  |  | `CHAR(50)` | Name |
+| `LoanManualDunLevelText` |  | |  |  | `CHAR(15)` | Short Name |

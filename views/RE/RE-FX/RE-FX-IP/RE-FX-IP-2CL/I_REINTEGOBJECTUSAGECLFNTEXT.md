@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `REIntegObjectUsageClfn` | `CHAR(1)` | Usage Classification |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `REIntegObjectUsageClfnText` | `CHAR(60)` | RE Description 60 Characters |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `REIntegObjectUsageClfn` |  | |  |  | `CHAR(1)` | Usage Classification |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `REIntegObjectUsageClfnText` |  | |  |  | `CHAR(60)` | RE Description 60 Characters |

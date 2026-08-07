@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspDimnWeightProfile` | `CHAR(10)` | Dimensional Weight Profile |
-| `TransportationCalculationBase` | `CHAR(15)` | Calculation Base |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspDimnWeightProfile` |  | |  |  | `CHAR(10)` | Dimensional Weight Profile |
+| `TransportationCalculationBase` |  | |  |  | `CHAR(15)` | Calculation Base |

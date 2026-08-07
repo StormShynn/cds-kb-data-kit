@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FrtCostAllocSrceDocCat` | `CHAR(2)` | Document Category of Source Document |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `FrtCostAllocSrceDocCatName` | `CHAR(60)` | Text of Source Document Category for Frt Cost Alloc Doc |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FrtCostAllocSrceDocCat` |  | |  |  | `CHAR(2)` | Document Category of Source Document |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `FrtCostAllocSrceDocCatName` |  | |  |  | `CHAR(60)` | Text of Source Document Category for Frt Cost Alloc Doc |

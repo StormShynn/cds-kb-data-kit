@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BusVolFldCombnSet` | `CHAR(4)` | Set of Field Combinations |
-| `BusVolFldCombnSetDesc` | `CHAR(40)` | Description for Set of Field Combinations |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusVolFldCombnSet` |  | |  |  | `CHAR(4)` | Set of Field Combinations |
+| `BusVolFldCombnSetDesc` |  | |  |  | `CHAR(40)` | Description for Set of Field Combinations |

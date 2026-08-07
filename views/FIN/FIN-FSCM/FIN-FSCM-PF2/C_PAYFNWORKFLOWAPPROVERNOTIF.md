@@ -33,16 +33,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
-| `PayFnSetUUID` | `RAW(16)` | Object UUID |
-| `PayFnApprovalCurrency` | `CUKY(5)` | Approval Currency |
-| `PayFnApprovalAmount` | `DEC(22)` | Approval Amount |
-| `PayFnFunctionalApprovalCode` | `CHAR(8)` | Functional payment approval classifier |
-| `PayFnFuncnlApprovalCodeDesc` | `CHAR(36)` | Functional payment approval classifier - Description text |
-| `UserDescription` | `CHAR(130)` | Created by User Fullname |
-| `WorkflowTaskURL` | `SSTR(1333)` | Workflow: Workflow Task URL |
-| `WorkflowTaskExternalStatus` | `CHAR(12)` | Processing Status of a Work Item |
-| `WorkflowTaskProcessor` | `CHAR(12)` | Actual Agent of Work Item |
-| `WorkflowTaskStepType` | `CHAR(40)` | Workflow: Step Id |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
+| `PayFnSetUUID` |  | |  |  | `RAW(16)` | Object UUID |
+| `PayFnApprovalCurrency` |  | |  |  | `CUKY(5)` | Approval Currency |
+| `PayFnApprovalAmount` |  | |  |  | `DEC(22)` | Approval Amount |
+| `PayFnFunctionalApprovalCode` |  | |  |  | `CHAR(8)` | Functional payment approval classifier |
+| `PayFnFuncnlApprovalCodeDesc` |  | |  |  | `CHAR(36)` | Functional payment approval classifier - Description text |
+| `UserDescription` |  | |  |  | `CHAR(130)` | Created by User Fullname |
+| `WorkflowTaskURL` |  | |  |  | `SSTR(1333)` | Workflow: Workflow Task URL |
+| `WorkflowTaskExternalStatus` |  | |  |  | `CHAR(12)` | Processing Status of a Work Item |
+| `WorkflowTaskProcessor` |  | |  |  | `CHAR(12)` | Actual Agent of Work Item |
+| `WorkflowTaskStepType` |  | |  |  | `CHAR(40)` | Workflow: Step Id |

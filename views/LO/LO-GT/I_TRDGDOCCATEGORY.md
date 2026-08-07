@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdgDocCategory` | `CHAR(1)` | Trading Document Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdgDocCategory` |  | |  |  | `CHAR(1)` | Trading Document Category |

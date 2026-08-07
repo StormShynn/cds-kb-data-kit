@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetDocUUID` | `RAW(16)` | GUID for Table CMS_AST_DOC |
-| `ObjectAssetUUID` | `RAW(16)` | GUID for Table CMS_AST |
-| `ObjectAssetDocReferenceNumber` | `CHAR(64)` | Reference Document ID |
-| `ObjectAssetDocType` | `CHAR(6)` | Document Type |
-| `ObjectAssetDocDate` | `DATS(8)` | Document Date |
-| `ObjectAssetDocPhysicalLocation` | `CHAR(6)` | Physical Location of Document |
-| `ObjectAssetDocValidFromDate` | `DATS(8)` | Date |
-| `ObjectAssetDocValidToDate` | `DATS(8)` | Date |
-| `ObjectAssetReferenceSystem` | `CHAR(6)` | Object System Reference ID |
-| `LiquidationObjectRefSystem` | `CHAR(6)` | Object System Reference ID for Liquidation |
-| `InsuranceObjectCategory` | `CHAR(6)` | Object Category |
-| `CollateralObjectCategory` | `CHAR(6)` | Object Category |
-| `MovableObjectUUID` | `RAW(16)` | GUID for  CMS_MOVABLES |
-| `RightsObjectUUID` | `RAW(16)` | Rights GUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetDocUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_AST_DOC |
+| `ObjectAssetUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_AST |
+| `ObjectAssetDocReferenceNumber` |  | |  |  | `CHAR(64)` | Reference Document ID |
+| `ObjectAssetDocType` |  | |  |  | `CHAR(6)` | Document Type |
+| `ObjectAssetDocDate` |  | |  |  | `DATS(8)` | Document Date |
+| `ObjectAssetDocPhysicalLocation` |  | |  |  | `CHAR(6)` | Physical Location of Document |
+| `ObjectAssetDocValidFromDate` |  | |  |  | `DATS(8)` | Date |
+| `ObjectAssetDocValidToDate` |  | |  |  | `DATS(8)` | Date |
+| `ObjectAssetReferenceSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID |
+| `LiquidationObjectRefSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID for Liquidation |
+| `InsuranceObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `CollateralObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `MovableObjectUUID` |  | |  |  | `RAW(16)` | GUID for  CMS_MOVABLES |
+| `RightsObjectUUID` |  | |  |  | `RAW(16)` | Rights GUID |

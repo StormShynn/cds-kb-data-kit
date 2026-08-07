@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InjuryIllnessUUID` | `RAW(16)` | Injury/Illness Case UUID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `InjuredPersonInfoUUID` | `RAW(16)` | Injured Person Information UUID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `InjuryIllnessClassification` | `CHAR(21)` | Injury/Illness Classification |
-| `InjuryIllnessType` | `CHAR(21)` | Injury/Illness Type |
-| `InjuryIllnessIsRecordable` | `CHAR(1)` | Reporting of Injury/Illness Required |
-| `InjuryIllnessIsMainInjury` | `CHAR(1)` | Main Injury/Illness |
-| `IncidentBodyPart` | `CHAR(21)` | Injured Body Part |
-| `IncidentBodySide` | `CHAR(21)` | Injured Body Side |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InjuryIllnessUUID` |  | |  |  | `RAW(16)` | Injury/Illness Case UUID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `InjuredPersonInfoUUID` |  | |  |  | `RAW(16)` | Injured Person Information UUID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `InjuryIllnessClassification` |  | |  |  | `CHAR(21)` | Injury/Illness Classification |
+| `InjuryIllnessType` |  | |  |  | `CHAR(21)` | Injury/Illness Type |
+| `InjuryIllnessIsRecordable` |  | |  |  | `CHAR(1)` | Reporting of Injury/Illness Required |
+| `InjuryIllnessIsMainInjury` |  | |  |  | `CHAR(1)` | Main Injury/Illness |
+| `IncidentBodyPart` |  | |  |  | `CHAR(21)` | Injured Body Part |
+| `IncidentBodySide` |  | |  |  | `CHAR(21)` | Injured Body Side |

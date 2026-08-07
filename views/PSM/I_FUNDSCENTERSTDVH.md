@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundsCenter` | `CHAR(16)` | Funds Center |
-| `ValidityEndDate` | `DATS(8)` | Funds Center Validity End Date |
-| `FndsCenterFinMgmtAreaForAuthzn` | `CHAR(4)` | FM Area for Auth Grp for Funds Center |
-| `FundsCenterAuthznGrp` | `CHAR(10)` | Funds Center Authorization Group |
-| `FundsCenterName` | `CHAR(20)` | Funds Center Name |
-| `FundsCenterDescription` | `CHAR(40)` | Funds Center Description |
-| `ValidityStartDate` | `DATS(8)` | Funds Center Validity Start Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundsCenter` |  | |  |  | `CHAR(16)` | Funds Center |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Funds Center Validity End Date |
+| `FndsCenterFinMgmtAreaForAuthzn` |  | |  |  | `CHAR(4)` | FM Area for Auth Grp for Funds Center |
+| `FundsCenterAuthznGrp` |  | |  |  | `CHAR(10)` | Funds Center Authorization Group |
+| `FundsCenterName` |  | |  |  | `CHAR(20)` | Funds Center Name |
+| `FundsCenterDescription` |  | |  |  | `CHAR(40)` | Funds Center Description |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Funds Center Validity Start Date |

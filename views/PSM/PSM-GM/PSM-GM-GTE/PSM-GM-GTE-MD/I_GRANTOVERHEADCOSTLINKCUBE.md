@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `ValidityStartDate` | `DATS(8)` | Valid-from Date |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `NumberOfGteeMMasterDataRecords` | `INT1(3)` |  |
-| `AvgGteeMIndirectCostRateInPct` | `DEC(6)` | Indirect Overhead Rate |
-| `GrantIsNotRelevantGrant` | `CHAR(1)` | Identify the Not Relevant Grant |
-| `GrantAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-from Date |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
+| `AvgGteeMIndirectCostRateInPct` |  | |  |  | `DEC(6)` | Indirect Overhead Rate |
+| `GrantIsNotRelevantGrant` |  | |  |  | `CHAR(1)` | Identify the Not Relevant Grant |
+| `GrantAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |

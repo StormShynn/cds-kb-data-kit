@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CurrencyPair` | `CHAR(20)` | Currency Pair |
-| `SourceCurrency` | `CUKY(5)` | Leading Currency in Exchange Rate Quotation |
-| `TargetCurrency` | `CUKY(5)` | Following Currency in Exchange Rate Quotation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CurrencyPair` |  | |  |  | `CHAR(20)` | Currency Pair |
+| `SourceCurrency` |  | |  |  | `CUKY(5)` | Leading Currency in Exchange Rate Quotation |
+| `TargetCurrency` |  | |  |  | `CUKY(5)` | Following Currency in Exchange Rate Quotation |

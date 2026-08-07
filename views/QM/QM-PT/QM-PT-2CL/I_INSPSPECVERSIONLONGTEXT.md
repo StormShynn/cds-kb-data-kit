@@ -33,15 +33,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InspectionSpecificationPlant` | `CHAR(4)` | Plant for Master Inspection Characteristic |
-| `InspectionSpecification` | `CHAR(8)` | Master Inspection Characteristic |
-| `InspectionSpecificationVersion` | `CHAR(6)` | Version Number of Master Inspection Characteristic |
-| `LongTextInternalNumber` | `INT2(5)` | Long Text Counter |
-| `Language` | `LANG(1)` | Language Key |
-| `LongTextID` | `CHAR(4)` | Text ID |
-| `LongTextCreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `LongTextCreatedAt` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `LongTextLastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `LongTextLastChangedAt` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionSpecificationPlant` |  | |  |  | `CHAR(4)` | Plant for Master Inspection Characteristic |
+| `InspectionSpecification` |  | |  |  | `CHAR(8)` | Master Inspection Characteristic |
+| `InspectionSpecificationVersion` |  | |  |  | `CHAR(6)` | Version Number of Master Inspection Characteristic |
+| `LongTextInternalNumber` |  | |  |  | `INT2(5)` | Long Text Counter |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LongTextID` |  | |  |  | `CHAR(4)` | Text ID |
+| `LongTextCreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LongTextCreatedAt` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LongTextLastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LongTextLastChangedAt` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |

@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsType` | `CHAR(1)` | Task List Type |
-| `ProductionRoutingGroup` | `CHAR(8)` | Key for Task List Group |
-| `ProductionRouting` | `CHAR(2)` | Group Counter |
-| `ProductionRoutingSequence` | `CHAR(6)` | Sequence |
-| `ProductionRoutingOpIntID` | `NUMC(8)` | Number of the Task List Node |
-| `ProdnRtgSqncOpAssgmtIntVers` | `NUMC(8)` | Internal counter |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `IsDeleted` | `CHAR(1)` | Deletion Indicator |
-| `IsImplicitlyDeleted` | `CHAR(1)` | Deletion Indicator |
-| `ChangeNumber` | `CHAR(12)` | Change Number |
-| `CreationDate` | `DATS(8)` | Created On |
-| `CreatedByUser` | `CHAR(12)` | Created By User |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Last Changed By User |
-| `BillOfOperationsVersion` | `CHAR(4)` | Routing Version |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `ProductionRoutingGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `ProductionRouting` |  | |  |  | `CHAR(2)` | Group Counter |
+| `ProductionRoutingSequence` |  | |  |  | `CHAR(6)` | Sequence |
+| `ProductionRoutingOpIntID` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
+| `ProdnRtgSqncOpAssgmtIntVers` |  | |  |  | `NUMC(8)` | Internal counter |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `IsImplicitlyDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By User |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By User |
+| `BillOfOperationsVersion` |  | |  |  | `CHAR(4)` | Routing Version |

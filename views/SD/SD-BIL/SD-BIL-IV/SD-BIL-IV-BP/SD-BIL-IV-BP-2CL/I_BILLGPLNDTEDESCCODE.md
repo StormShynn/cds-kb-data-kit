@@ -36,6 +36,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillingPlanDateDescriptionCode` | `CHAR(4)` | Date Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingPlanDateDescriptionCode` |  | |  |  | `CHAR(4)` | Date Description |

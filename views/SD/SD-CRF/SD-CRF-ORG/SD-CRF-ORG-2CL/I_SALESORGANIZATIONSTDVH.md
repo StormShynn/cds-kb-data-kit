@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |

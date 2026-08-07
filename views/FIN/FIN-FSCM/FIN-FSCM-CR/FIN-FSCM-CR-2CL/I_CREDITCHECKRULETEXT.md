@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CreditCheckRule` | `CHAR(10)` | Rule for Credit Check |
-| `CreditCheckRuleName` | `CHAR(50)` | Name of Check Rule |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CreditCheckRule` |  | |  |  | `CHAR(10)` | Rule for Credit Check |
+| `CreditCheckRuleName` |  | |  |  | `CHAR(50)` | Name of Check Rule |

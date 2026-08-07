@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationUnit` | `CHAR(18)` | Consolidation Unit |
-| `Language` | `LANG(1)` | Language Key |
-| `ConsolidationUnitText` | `CHAR(20)` | Short description |
-| `ConsolidationUnitMdmText` | `CHAR(40)` | Medium description |
-| `LongText` | `CHAR(60)` | Long description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConsolidationUnitText` |  | |  |  | `CHAR(20)` | Short description |
+| `ConsolidationUnitMdmText` |  | |  |  | `CHAR(40)` | Medium description |
+| `LongText` |  | |  |  | `CHAR(60)` | Long description |

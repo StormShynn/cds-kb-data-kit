@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `JointVentureRecoveryCode` | `CHAR(2)` | Recovery Indicator |
-| `Language` | `LANG(1)` | Language Key |
-| `JointVentureRecoveryCodeName` | `CHAR(35)` | Recovery Indicator Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `JointVentureRecoveryCode` |  | |  |  | `CHAR(2)` | Recovery Indicator |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `JointVentureRecoveryCodeName` |  | |  |  | `CHAR(35)` | Recovery Indicator Description |

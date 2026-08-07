@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SamplingDefinitionUUID` | `RAW(16)` | NodeID |
-| `SamplingDefinitionName` | `CHAR(132)` | Sampling Definition Name |
-| `DataUsagePeriodicity` | `CHAR(3)` |  |
-| `SamplingDefMigrationSource` | `CHAR(60)` | Migration Source |
-| `EHSSubjectType` | `CHAR(2)` | Subject Type |
-| `EHSSubjectUUID` | `RAW(16)` | Reference to Subject Type BO Root Node ID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SamplingDefinitionUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `SamplingDefinitionName` |  | |  |  | `CHAR(132)` | Sampling Definition Name |
+| `DataUsagePeriodicity` |  | |  |  | `CHAR(3)` |  |
+| `SamplingDefMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |
+| `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |

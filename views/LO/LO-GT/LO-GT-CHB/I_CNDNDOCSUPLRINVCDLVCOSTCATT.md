@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnDocSuplrInvcDlvCostCat` | `CHAR(1)` | Item Category of Supplier Invoice |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `CndnDocSuplrInvcDlvCostCatName` | `CHAR(60)` | Item Category of Supplier Invoice Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnDocSuplrInvcDlvCostCat` |  | |  |  | `CHAR(1)` | Item Category of Supplier Invoice |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CndnDocSuplrInvcDlvCostCatName` |  | |  |  | `CHAR(60)` | Item Category of Supplier Invoice Text |

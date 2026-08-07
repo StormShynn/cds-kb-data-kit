@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ReconciliationReportUUID` | `RAW(16)` | NodeID |
-| `Language` | `LANG(1)` | Language Key |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CompanyCodeName` | `CHAR(163)` |  |
-| `StartDate` | `DATS(8)` | Start Date |
-| `EndDate` | `DATS(8)` | End Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReconciliationReportUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CompanyCodeName` |  | |  |  | `CHAR(163)` |  |
+| `StartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `EndDate` |  | |  |  | `DATS(8)` | End Date |

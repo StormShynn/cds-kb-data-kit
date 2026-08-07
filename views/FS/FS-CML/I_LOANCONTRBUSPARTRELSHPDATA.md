@@ -30,18 +30,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanBPObjectCode` | `CHAR(2)` | Key for number range object |
-| `LoanBPObjectInternalKey` | `CHAR(13)` | Internal key for object for business partner table |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerRole` | `CHAR(6)` | BP Role |
-| `LoanBPObjectGenerationDate` | `DATS(8)` | Flow data key: System date |
-| `LoanBusPartRelshpStrtDte` | `DATS(8)` | Date of start of relationship |
-| `LoanBusPartRelshpEndDte` | `DATS(8)` | Date of end of relationship |
-| `LoanCorrespncRoleType` | `CHAR(4)` | CML Correspondence Role Type of Recipient |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `BPBankAccountInternalID` | `CHAR(4)` | Partner bank type |
-| `BPPaymentMethod` | `CHAR(1)` | Payment Method |
-| `LoanBPDunLetterType` | `CHAR(1)` | Type of Dunning Letter |
-| `LoanBPIsPostDunCharge` | `CHAR(1)` | Post Dunning Charges and Interest to This Partner |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanBPObjectCode` |  | |  |  | `CHAR(2)` | Key for number range object |
+| `LoanBPObjectInternalKey` |  | |  |  | `CHAR(13)` | Internal key for object for business partner table |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerRole` |  | |  |  | `CHAR(6)` | BP Role |
+| `LoanBPObjectGenerationDate` |  | |  |  | `DATS(8)` | Flow data key: System date |
+| `LoanBusPartRelshpStrtDte` |  | |  |  | `DATS(8)` | Date of start of relationship |
+| `LoanBusPartRelshpEndDte` |  | |  |  | `DATS(8)` | Date of end of relationship |
+| `LoanCorrespncRoleType` |  | |  |  | `CHAR(4)` | CML Correspondence Role Type of Recipient |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `BPBankAccountInternalID` |  | |  |  | `CHAR(4)` | Partner bank type |
+| `BPPaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `LoanBPDunLetterType` |  | |  |  | `CHAR(1)` | Type of Dunning Letter |
+| `LoanBPIsPostDunCharge` |  | |  |  | `CHAR(1)` | Post Dunning Charges and Interest to This Partner |

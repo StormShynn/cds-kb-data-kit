@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRPayerCode` | `NUMC(5)` | ONRR-2014 - Payor Code |
-| `ONRRPayerCodeName` | `CHAR(30)` | ONEE-2014 - Payor Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRPayerCode` |  | |  |  | `NUMC(5)` | ONRR-2014 - Payor Code |
+| `ONRRPayerCodeName` |  | |  |  | `CHAR(30)` | ONEE-2014 - Payor Name |

@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationVersion` | `CHAR(3)` | Consolidation Version |
-| `ConsolidationVersionElement` | `CHAR(3)` | Consolidation Version Element |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationVersion` |  | |  |  | `CHAR(3)` | Consolidation Version |
+| `ConsolidationVersionElement` |  | |  |  | `CHAR(3)` | Consolidation Version Element |

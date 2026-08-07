@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentCycle` | `CHAR(1)` | Payment Processing - Future Pay Flag |
-| `Language` | `LANG(1)` | Language Key |
-| `PaymentCycleName` | `CHAR(60)` | Future Pay Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentCycle` |  | |  |  | `CHAR(1)` | Payment Processing - Future Pay Flag |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PaymentCycleName` |  | |  |  | `CHAR(60)` | Future Pay Name |

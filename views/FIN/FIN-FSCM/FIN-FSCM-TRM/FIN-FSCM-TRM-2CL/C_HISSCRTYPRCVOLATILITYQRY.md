@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `VolatilityType` | `CHAR(3)` | Volatility Type |
-| `SecurityClass` | `CHAR(13)` | Security Class |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `VolatilityTermInDays` | `INT4(10)` |  |
-| `SecurityPriceVolatilityValue` | `DEC(11)` | Security Price Volatility |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VolatilityType` |  | |  |  | `CHAR(3)` | Volatility Type |
+| `SecurityClass` |  | |  |  | `CHAR(13)` | Security Class |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `VolatilityTermInDays` |  | |  |  | `INT4(10)` |  |
+| `SecurityPriceVolatilityValue` |  | |  |  | `DEC(11)` | Security Price Volatility |

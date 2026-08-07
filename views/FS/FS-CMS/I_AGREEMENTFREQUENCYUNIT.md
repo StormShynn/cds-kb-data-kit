@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementFrequencyUnit` | `CHAR(2)` | The unit for period of Release Frequency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementFrequencyUnit` |  | |  |  | `CHAR(2)` | The unit for period of Release Frequency |

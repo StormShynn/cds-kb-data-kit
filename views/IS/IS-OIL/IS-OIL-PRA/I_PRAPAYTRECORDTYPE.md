@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RecordType` | `CHAR(1)` | Payment Processing - Record Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RecordType` |  | |  |  | `CHAR(1)` | Payment Processing - Record Type |

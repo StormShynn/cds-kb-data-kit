@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SecondCustSpecificCmmdtyGroup` | `CHAR(3)` | Commodity Group2 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecondCustSpecificCmmdtyGroup` |  | |  |  | `CHAR(3)` | Commodity Group2 |

@@ -32,24 +32,24 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkAssignmentBusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BankIdentification` | `CHAR(4)` | Bank Details ID |
-| `WorkAssignment` | `NUMC(8)` | Workforce Assignment ID |
-| `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
-| `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `BankAccountHolderName` | `CHAR(60)` | Account Holder Name |
-| `BankAccountName` | `CHAR(40)` | Name of Bank Account |
-| `BankControlKey` | `CHAR(2)` | Bank Control Key |
-| `BankCountryKey` | `CHAR(3)` | Bank Country/Region Key |
-| `BankNumber` | `CHAR(15)` | Bank Key |
-| `BankName` | `CHAR(60)` | Name of Financial Institution |
-| `BankAccount` | `CHAR(18)` | Bank Account Number |
-| `IBAN` | `CHAR(34)` | IBAN (International Bank Account Number) |
-| `SWIFTCode` | `CHAR(11)` | SWIFT/BIC for International Payments |
-| `StartDate` | `DATS(8)` | Start Date |
-| `EndDate` | `DATS(8)` | End Date |
-| `BankAccountReferenceText` | `CHAR(20)` | Reference Details for Bank Details |
-| `IsBlocked` | `CHAR(1)` | Blocked Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkAssignmentBusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BankIdentification` |  | |  |  | `CHAR(4)` | Bank Details ID |
+| `WorkAssignment` |  | |  |  | `NUMC(8)` | Workforce Assignment ID |
+| `WorkAssignmentExternalID` |  | |  |  | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` |  | |  |  | `CHAR(2)` | Workforce Country ISO Code |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `BankAccountHolderName` |  | |  |  | `CHAR(60)` | Account Holder Name |
+| `BankAccountName` |  | |  |  | `CHAR(40)` | Name of Bank Account |
+| `BankControlKey` |  | |  |  | `CHAR(2)` | Bank Control Key |
+| `BankCountryKey` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankNumber` |  | |  |  | `CHAR(15)` | Bank Key |
+| `BankName` |  | |  |  | `CHAR(60)` | Name of Financial Institution |
+| `BankAccount` |  | |  |  | `CHAR(18)` | Bank Account Number |
+| `IBAN` |  | |  |  | `CHAR(34)` | IBAN (International Bank Account Number) |
+| `SWIFTCode` |  | |  |  | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `StartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `EndDate` |  | |  |  | `DATS(8)` | End Date |
+| `BankAccountReferenceText` |  | |  |  | `CHAR(20)` | Reference Details for Bank Details |
+| `IsBlocked` |  | |  |  | `CHAR(1)` | Blocked Indicator |

@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProjectUUID` | `RAW(16)` | Engagement Project UUID |
-| `IsMyProject` | `CHAR(1)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectUUID` |  | |  |  | `RAW(16)` | Engagement Project UUID |
+| `IsMyProject` |  | |  |  | `CHAR(1)` |  |

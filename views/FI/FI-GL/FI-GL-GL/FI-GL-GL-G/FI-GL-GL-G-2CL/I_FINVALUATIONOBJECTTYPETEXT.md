@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialValuationObjectType` | `CHAR(4)` | Type of the Financial Valuation Object |
-| `Language` | `LANG(1)` | Language Key |
-| `FinValuationObjectTypeName` | `CHAR(50)` | Financial Valuation Object Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialValuationObjectType` |  | |  |  | `CHAR(4)` | Type of the Financial Valuation Object |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FinValuationObjectTypeName` |  | |  |  | `CHAR(50)` | Financial Valuation Object Type Description |

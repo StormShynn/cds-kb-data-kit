@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `Fund` | `CHAR(10)` | Fund |
-| `Customer` | `CHAR(10)` | Customer Account Number for Fund |
-| `ApplicationOfFunds` | `CHAR(16)` | Application of Funds |
-| `FundCreatedBy` | `CHAR(12)` | Fund Created by User |
-| `FundCreatedAt` | `DATS(8)` | Fund Created on Date |
-| `LastChangeUser` | `CHAR(12)` | Fund Last Changed by User |
-| `LastChangeDate` | `DATS(8)` | Fund Last Changed on Date |
-| `FundAuthznGrp` | `CHAR(10)` | Fund Authorization Group |
-| `FundFinMgmtAreaForAuthzn` | `CHAR(4)` | FM Area for Auth Grp for Fund |
-| `ValidityStartDate` | `DATS(8)` | Fund Valid From |
-| `ValidityEndDate` | `DATS(8)` | Fund Valid To |
-| `FundReversalDate` | `DATS(8)` | Fund Reversal Date |
-| `FundExpirationDate` | `DATS(8)` | Fund Expiration Date |
-| `FundType` | `CHAR(6)` | Fund Type |
-| `FundPeriodicity` | `CHAR(10)` | Fund Frequency |
-| `FundResponsibleUser` | `CHAR(12)` | Responsible User for Fund |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Account Number for Fund |
+| `ApplicationOfFunds` |  | |  |  | `CHAR(16)` | Application of Funds |
+| `FundCreatedBy` |  | |  |  | `CHAR(12)` | Fund Created by User |
+| `FundCreatedAt` |  | |  |  | `DATS(8)` | Fund Created on Date |
+| `LastChangeUser` |  | |  |  | `CHAR(12)` | Fund Last Changed by User |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Fund Last Changed on Date |
+| `FundAuthznGrp` |  | |  |  | `CHAR(10)` | Fund Authorization Group |
+| `FundFinMgmtAreaForAuthzn` |  | |  |  | `CHAR(4)` | FM Area for Auth Grp for Fund |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Fund Valid From |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Fund Valid To |
+| `FundReversalDate` |  | |  |  | `DATS(8)` | Fund Reversal Date |
+| `FundExpirationDate` |  | |  |  | `DATS(8)` | Fund Expiration Date |
+| `FundType` |  | |  |  | `CHAR(6)` | Fund Type |
+| `FundPeriodicity` |  | |  |  | `CHAR(10)` | Fund Frequency |
+| `FundResponsibleUser` |  | |  |  | `CHAR(12)` | Responsible User for Fund |

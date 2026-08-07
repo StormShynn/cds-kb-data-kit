@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NotaFiscal` | `NUMC(10)` | Document Number |
-| `BR_NFMessageSequenceNumber` | `NUMC(2)` | Sequence number |
-| `BR_NFMessageLineNumber` | `NUMC(2)` | Line Number |
-| `BR_NFMessageText` | `CHAR(72)` | Message |
-| `BR_NFMessageIsManual` | `CHAR(1)` | Manual |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` |  | |  |  | `NUMC(10)` | Document Number |
+| `BR_NFMessageSequenceNumber` |  | |  |  | `NUMC(2)` | Sequence number |
+| `BR_NFMessageLineNumber` |  | |  |  | `NUMC(2)` | Line Number |
+| `BR_NFMessageText` |  | |  |  | `CHAR(72)` | Message |
+| `BR_NFMessageIsManual` |  | |  |  | `CHAR(1)` | Manual |

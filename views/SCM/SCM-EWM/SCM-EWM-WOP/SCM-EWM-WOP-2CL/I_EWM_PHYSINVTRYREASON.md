@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMPhysInvtryReason` | `CHAR(4)` | Reason |
-| `EWMPhysicalInventoryPriority` | `NUMC(1)` | Priority |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMPhysInvtryReason` |  | |  |  | `CHAR(4)` | Reason |
+| `EWMPhysicalInventoryPriority` |  | |  |  | `NUMC(1)` | Priority |

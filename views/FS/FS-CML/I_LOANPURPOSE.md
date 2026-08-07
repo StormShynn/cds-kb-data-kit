@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanProductType` | `CHAR(3)` | Product Type |
-| `LoanPurpose` | `CHAR(2)` | Purpose of Loan |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `LoanPurpose` |  | |  |  | `CHAR(2)` | Purpose of Loan |

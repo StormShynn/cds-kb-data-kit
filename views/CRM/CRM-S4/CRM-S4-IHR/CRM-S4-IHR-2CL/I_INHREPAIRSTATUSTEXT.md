@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InhRepairStatus` | `CHAR(4)` | In-House Repair Status |
-| `Language` | `LANG(1)` | Language Key of Description |
-| `InhRepairStatusName` | `CHAR(60)` | Description of In-House Repair Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InhRepairStatus` |  | |  |  | `CHAR(4)` | In-House Repair Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key of Description |
+| `InhRepairStatusName` |  | |  |  | `CHAR(60)` | Description of In-House Repair Status |

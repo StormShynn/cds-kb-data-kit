@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `FiscalYear` | `NUMC(4)` |  |
-| `FromFiscalPeriod` | `NUMC(3)` | Fiscal Period From |
-| `ToFiscalPeriod` | `NUMC(3)` | Fiscal Period To |
-| `FromFiscalYearPeriod` | `NUMC(7)` | Fiscal Year Period |
-| `ToFiscalYearPeriod` | `NUMC(7)` | Fiscal Year Period |
-| `FromPostingDate` | `DATS(8)` | Posting Date From |
-| `ToPostingDate` | `DATS(8)` | Posting Date To |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `FiscalYear` |  | |  |  | `NUMC(4)` |  |
+| `FromFiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period From |
+| `ToFiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period To |
+| `FromFiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `ToFiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `FromPostingDate` |  | |  |  | `DATS(8)` | Posting Date From |
+| `ToPostingDate` |  | |  |  | `DATS(8)` | Posting Date To |

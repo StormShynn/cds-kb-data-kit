@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `StstcKeyFigCategory` | `CHAR(1)` | Statistical Key Figure Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StstcKeyFigCategory` |  | |  |  | `CHAR(1)` | Statistical Key Figure Category |

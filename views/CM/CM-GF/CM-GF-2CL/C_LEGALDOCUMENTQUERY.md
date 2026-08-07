@@ -34,44 +34,44 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LglCntntMDocumentUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LglCntntMDocument` | `CHAR(10)` | Document ID |
-| `LglCntntMDocumentLinkedObject` | `CHAR(10)` | Linked SAP Object |
-| `LglCntntMCreatedDate` | `DATS(8)` |  |
-| `LglCntntMChangedDate` | `DATS(8)` |  |
-| `LglCntntMSignatureDocStatus` | `CHAR(2)` | Signature Document Status |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarQuarter` | `NUMC(1)` | Calendar Quarter |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `LglCntntMGovLawText` | `CHAR(92)` | Governing Law Text |
-| `LglCntntMDocType` | `CHAR(1)` | Document Type |
-| `DocumentDescription` | `CHAR(255)` | Name |
-| `LegalTransactionTitle` | `CHAR(128)` | Legal Transaction Name |
-| `LglCntntMDocContentType` | `CHAR(4)` | Document Content Type |
-| `LglCntntMDocContentTypeName` | `CHAR(40)` | Long Text |
-| `LglCntntMDocAccessLvl` | `CHAR(4)` | Access Level |
-| `LglCntntMDocLowTouchLevelTxt` | `CHAR(60)` | Short Text for Fixed Values |
-| `LglCntntMSgntrDocStatusName` | `CHAR(60)` | Short Text for Fixed Values |
-| `LegalDocumentVersion` | `NUMC(4)` | Legal Document Version |
-| `LglCntntMDocTemplateName` | `CHAR(255)` | Document Template Name |
-| `LglCntntMDocTemplateVersion` | `CHAR(10)` | Document Template Version |
-| `LglCntntMDocAssemblyStatusText` | `CHAR(40)` | Long Text |
-| `LglCntntMDocStatusName` | `CHAR(40)` | Long Text |
-| `LegalTransaction` | `CHAR(10)` | Legal Transaction ID |
-| `LglCntntMProfile` | `CHAR(10)` | Profile |
-| `LglCntntMEntityName` | `CHAR(81)` |  |
-| `LegalTransactionHealthName` | `CHAR(40)` | Long Text |
-| `LglCntntMMainOrgTypeName` | `CHAR(60)` | Short Text for Fixed Values |
-| `LglCntntMEntityTypeName` | `CHAR(40)` | Long Text |
-| `LglCntntMMainOrgName` | `CHAR(25)` | Name of Company Code or Company |
-| `LglCntntMDocReferenceNumber` | `CHAR(32)` | Document Reference Number |
-| `TotalNumberOfLegalDocuments` | `INT4(10)` |  |
-| `LegalDocTotalNrOfElectronicSgd` | `INT4(10)` |  |
-| `LegalDocTotNrOfAcceptedStatus` | `INT4(10)` |  |
-| `LegalDocTotalNumberOfFiles` | `INT4(10)` | Total No. of Files |
-| `LegalDocTotNrOfVirtualDocument` | `INT4(10)` |  |
-| `LegalDocTotalNmbrOfLowTouchDoc` | `INT4(10)` |  |
-| `LglDocTotNrOfWaitElectronicSgd` | `INT4(10)` |  |
-| `LegalDocAvgTimeFinalization` | `INT4(10)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocumentUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMDocument` |  | |  |  | `CHAR(10)` | Document ID |
+| `LglCntntMDocumentLinkedObject` |  | |  |  | `CHAR(10)` | Linked SAP Object |
+| `LglCntntMCreatedDate` |  | |  |  | `DATS(8)` |  |
+| `LglCntntMChangedDate` |  | |  |  | `DATS(8)` |  |
+| `LglCntntMSignatureDocStatus` |  | |  |  | `CHAR(2)` | Signature Document Status |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `LglCntntMGovLawText` |  | |  |  | `CHAR(92)` | Governing Law Text |
+| `LglCntntMDocType` |  | |  |  | `CHAR(1)` | Document Type |
+| `DocumentDescription` |  | |  |  | `CHAR(255)` | Name |
+| `LegalTransactionTitle` |  | |  |  | `CHAR(128)` | Legal Transaction Name |
+| `LglCntntMDocContentType` |  | |  |  | `CHAR(4)` | Document Content Type |
+| `LglCntntMDocContentTypeName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMDocAccessLvl` |  | |  |  | `CHAR(4)` | Access Level |
+| `LglCntntMDocLowTouchLevelTxt` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `LglCntntMSgntrDocStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `LegalDocumentVersion` |  | |  |  | `NUMC(4)` | Legal Document Version |
+| `LglCntntMDocTemplateName` |  | |  |  | `CHAR(255)` | Document Template Name |
+| `LglCntntMDocTemplateVersion` |  | |  |  | `CHAR(10)` | Document Template Version |
+| `LglCntntMDocAssemblyStatusText` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMDocStatusName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LegalTransaction` |  | |  |  | `CHAR(10)` | Legal Transaction ID |
+| `LglCntntMProfile` |  | |  |  | `CHAR(10)` | Profile |
+| `LglCntntMEntityName` |  | |  |  | `CHAR(81)` |  |
+| `LegalTransactionHealthName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMMainOrgTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `LglCntntMEntityTypeName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMMainOrgName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `LglCntntMDocReferenceNumber` |  | |  |  | `CHAR(32)` | Document Reference Number |
+| `TotalNumberOfLegalDocuments` |  | |  |  | `INT4(10)` |  |
+| `LegalDocTotalNrOfElectronicSgd` |  | |  |  | `INT4(10)` |  |
+| `LegalDocTotNrOfAcceptedStatus` |  | |  |  | `INT4(10)` |  |
+| `LegalDocTotalNumberOfFiles` |  | |  |  | `INT4(10)` | Total No. of Files |
+| `LegalDocTotNrOfVirtualDocument` |  | |  |  | `INT4(10)` |  |
+| `LegalDocTotalNmbrOfLowTouchDoc` |  | |  |  | `INT4(10)` |  |
+| `LglDocTotNrOfWaitElectronicSgd` |  | |  |  | `INT4(10)` |  |
+| `LegalDocAvgTimeFinalization` |  | |  |  | `INT4(10)` |  |

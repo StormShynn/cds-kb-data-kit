@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AssetAccountingKeyFigureSet` | `CHAR(10)` | Key Figure Group |
-| `AssetAcctgKeyFigSetAnlytlCntxt` | `CHAR(2)` | Application Context of Key Figure Variant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AssetAccountingKeyFigureSet` |  | |  |  | `CHAR(10)` | Key Figure Group |
+| `AssetAcctgKeyFigSetAnlytlCntxt` |  | |  |  | `CHAR(2)` | Application Context of Key Figure Variant |

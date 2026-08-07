@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtItmTxtObjType` | `CHAR(4)` | Specific Text ID for a Settlement Management Document Item |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtItmTxtObjType` |  | |  |  | `CHAR(4)` | Specific Text ID for a Settlement Management Document Item |

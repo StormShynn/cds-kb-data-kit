@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrPartnerCat` | `CHAR(2)` | Type of Business Partner for Condition Contract |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrPartnerCat` |  | |  |  | `CHAR(2)` | Type of Business Partner for Condition Contract |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

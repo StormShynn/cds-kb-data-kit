@@ -32,20 +32,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ILMNotificationUUID` | `CHAR(32)` | UUID in Character Format |
-| `ILMNotifDataObjectID` | `INT4(10)` | Object Number |
-| `ILMNotifDataObjectRecdID` | `INT4(10)` | Record Number |
-| `ILMNotificationTable` | `CHAR(30)` | Table Name |
-| `ILMNotificationField` | `CHAR(30)` | Field Name |
-| `ILMObject` | `CHAR(30)` | ILM Object Name |
-| `CDSView` | `CHAR(30)` | DD: Name of a structured object (e.g. entity, context) |
-| `CDSViewField` | `CHAR(30)` | Field Name |
-| `ILMNotifCreationDateTime` | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
-| `ILMNotificationMode` | `CHAR(2)` | ILM Notification Mode |
-| `ILMToSAPBWNotificationMode` | `CHAR(1)` | Notification Mode |
-| `DataBlockingDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `DataExpirationDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `CDSViewExtractionIsActive` | `CHAR(1)` | Generic Extractor Checkbox |
-| `SAPBWOperationalDataProvider` | `CHAR(30)` | ODP Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ILMNotificationUUID` |  | |  |  | `CHAR(32)` | UUID in Character Format |
+| `ILMNotifDataObjectID` |  | |  |  | `INT4(10)` | Object Number |
+| `ILMNotifDataObjectRecdID` |  | |  |  | `INT4(10)` | Record Number |
+| `ILMNotificationTable` |  | |  |  | `CHAR(30)` | Table Name |
+| `ILMNotificationField` |  | |  |  | `CHAR(30)` | Field Name |
+| `ILMObject` |  | |  |  | `CHAR(30)` | ILM Object Name |
+| `CDSView` |  | |  |  | `CHAR(30)` | DD: Name of a structured object (e.g. entity, context) |
+| `CDSViewField` |  | |  |  | `CHAR(30)` | Field Name |
+| `ILMNotifCreationDateTime` |  | |  |  | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
+| `ILMNotificationMode` |  | |  |  | `CHAR(2)` | ILM Notification Mode |
+| `ILMToSAPBWNotificationMode` |  | |  |  | `CHAR(1)` | Notification Mode |
+| `DataBlockingDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `DataExpirationDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `CDSViewExtractionIsActive` |  | |  |  | `CHAR(1)` | Generic Extractor Checkbox |
+| `SAPBWOperationalDataProvider` |  | |  |  | `CHAR(30)` | ODP Name |

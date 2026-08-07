@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationGroup` | `CHAR(18)` | Consolidation Group |
-| `Language` | `LANG(1)` | Language Key |
-| `ConsolidationGroupText` | `CHAR(15)` | Short Text |
-| `ConsolidationGroupMediumText` | `CHAR(30)` | Medium Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationGroup` |  | |  |  | `CHAR(18)` | Consolidation Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConsolidationGroupText` |  | |  |  | `CHAR(15)` | Short Text |
+| `ConsolidationGroupMediumText` |  | |  |  | `CHAR(30)` | Medium Text |

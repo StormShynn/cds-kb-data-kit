@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationCashFlowUUID` | `RAW(16)` | Liquidation Cashflow GUID |
-| `CollateralLiquidationUUID` | `RAW(16)` | Liquidation GUID |
-| `LiquidationCashFlowAmount` | `CURR(17)` | Liquidation Cash Flow Amount |
-| `LiquidationCashFlowCurrency` | `CUKY(5)` | Liquidation cash flow currency |
-| `LiquidationCashFlowType` | `CHAR(6)` | Cash Flow Type |
-| `LiquidationCashFlowDate` | `DATS(8)` | Liquidation Cash Flow Date |
-| `LiquidationObjectRefSystem` | `CHAR(6)` | Object System Reference ID for Liquidation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationCashFlowUUID` |  | |  |  | `RAW(16)` | Liquidation Cashflow GUID |
+| `CollateralLiquidationUUID` |  | |  |  | `RAW(16)` | Liquidation GUID |
+| `LiquidationCashFlowAmount` |  | |  |  | `CURR(17)` | Liquidation Cash Flow Amount |
+| `LiquidationCashFlowCurrency` |  | |  |  | `CUKY(5)` | Liquidation cash flow currency |
+| `LiquidationCashFlowType` |  | |  |  | `CHAR(6)` | Cash Flow Type |
+| `LiquidationCashFlowDate` |  | |  |  | `DATS(8)` | Liquidation Cash Flow Date |
+| `LiquidationObjectRefSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID for Liquidation |

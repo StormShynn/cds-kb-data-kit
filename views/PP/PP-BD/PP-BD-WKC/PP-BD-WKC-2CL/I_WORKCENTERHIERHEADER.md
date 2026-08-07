@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WrkCtrHierObjType` | `CHAR(2)` | Object types of the CIM resource |
-| `WrkCtrHierObjID` | `NUMC(8)` | Object ID of the resource |
-| `WrkCtrHierName` | `CHAR(10)` | Name of Hierarchy |
-| `WrkCtrHierPlant` | `CHAR(4)` | Plant |
-| `WorkCenterGroupType` | `CHAR(10)` | Work Center Group Type |
-| `IsDeleted` | `CHAR(1)` | Checkbox |
-| `ShiftReportType` | `CHAR(10)` | Shift Report Type |
-| `ShiftNoteType` | `CHAR(2)` | Shift Note Type |
-| `CreationDate` | `DATS(8)` | Date Record Created On |
-| `CreatedByUser` | `CHAR(12)` | User Who Created Record |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WrkCtrHierObjType` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
+| `WrkCtrHierObjID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `WrkCtrHierName` |  | |  |  | `CHAR(10)` | Name of Hierarchy |
+| `WrkCtrHierPlant` |  | |  |  | `CHAR(4)` | Plant |
+| `WorkCenterGroupType` |  | |  |  | `CHAR(10)` | Work Center Group Type |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Checkbox |
+| `ShiftReportType` |  | |  |  | `CHAR(10)` | Shift Report Type |
+| `ShiftNoteType` |  | |  |  | `CHAR(2)` | Shift Note Type |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date Record Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Who Created Record |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |

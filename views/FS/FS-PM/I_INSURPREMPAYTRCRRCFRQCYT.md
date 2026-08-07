@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurPremSpecPaytRcrrcFrqcy` | `CHAR(2)` | Premium Payment Frequency |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `InsurPremPaytRcrrcFrqcyName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurPremSpecPaytRcrrcFrqcy` |  | |  |  | `CHAR(2)` | Premium Payment Frequency |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `InsurPremPaytRcrrcFrqcyName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

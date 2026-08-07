@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspChargeType` | `CHAR(15)` | Charge Type |
-| `TransportationMode` | `CHAR(2)` | Transportation Mode Code |
-| `TransportationShippingType` | `CHAR(3)` | Shipping Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChargeType` |  | |  |  | `CHAR(15)` | Charge Type |
+| `TransportationMode` |  | |  |  | `CHAR(2)` | Transportation Mode Code |
+| `TransportationShippingType` |  | |  |  | `CHAR(3)` | Shipping Type |

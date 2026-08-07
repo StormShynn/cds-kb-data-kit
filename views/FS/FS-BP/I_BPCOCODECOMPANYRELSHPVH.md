@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BPCoCodeCompanyRelationship` | `CHAR(1)` | Company Relationship in Company Code |
-| `BPCoCodeCompanyRelshpDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPCoCodeCompanyRelationship` |  | |  |  | `CHAR(1)` | Company Relationship in Company Code |
+| `BPCoCodeCompanyRelshpDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

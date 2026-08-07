@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GLAccountType` | `CHAR(2)` | Account Type |
-| `Language` | `LANG(1)` | Language Key |
-| `GLAccountTypeName` | `CHAR(60)` | Account Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountType` |  | |  |  | `CHAR(2)` | Account Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GLAccountTypeName` |  | |  |  | `CHAR(60)` | Account Type Name |

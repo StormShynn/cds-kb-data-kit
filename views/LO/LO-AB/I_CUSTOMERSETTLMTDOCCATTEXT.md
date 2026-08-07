@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustomerSettlmtDocCat` | `CHAR(1)` | Settlement Document Type - Customer |
-| `Language` | `LANG(1)` | Language Key |
-| `CustomerSettlmtDocCatName` | `CHAR(60)` | Settlement Document Type - Customer Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerSettlmtDocCat` |  | |  |  | `CHAR(1)` | Settlement Document Type - Customer |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CustomerSettlmtDocCatName` |  | |  |  | `CHAR(60)` | Settlement Document Type - Customer Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

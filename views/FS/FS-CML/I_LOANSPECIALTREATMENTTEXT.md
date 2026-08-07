@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanSpecialTreatment` | `NUMC(2)` | Special treatment of loan |
-| `LoanSpecialTreatmentShortText` | `CHAR(15)` | Text (15 characters) |
-| `LoanSpecialTreatmentText` | `CHAR(40)` | Text, 40 Characters Long |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanSpecialTreatment` |  | |  |  | `NUMC(2)` | Special treatment of loan |
+| `LoanSpecialTreatmentShortText` |  | |  |  | `CHAR(15)` | Text (15 characters) |
+| `LoanSpecialTreatmentText` |  | |  |  | `CHAR(40)` | Text, 40 Characters Long |

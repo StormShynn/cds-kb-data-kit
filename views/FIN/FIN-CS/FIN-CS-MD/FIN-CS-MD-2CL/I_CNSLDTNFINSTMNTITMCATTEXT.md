@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialStatementItemCategory` | `CHAR(1)` | FS Item Category |
-| `Language` | `LANG(1)` | Language Key |
-| `FinancialStatementItemTypeText` | `CHAR(30)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialStatementItemCategory` |  | |  |  | `CHAR(1)` | FS Item Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FinancialStatementItemTypeText` |  | |  |  | `CHAR(30)` | Description |

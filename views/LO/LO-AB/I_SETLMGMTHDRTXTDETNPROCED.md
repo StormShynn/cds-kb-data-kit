@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtHdrTxtDetnProced` | `CHAR(2)` | Text Determination Procedure for Header |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtHdrTxtDetnProced` |  | |  |  | `CHAR(2)` | Text Determination Procedure for Header |

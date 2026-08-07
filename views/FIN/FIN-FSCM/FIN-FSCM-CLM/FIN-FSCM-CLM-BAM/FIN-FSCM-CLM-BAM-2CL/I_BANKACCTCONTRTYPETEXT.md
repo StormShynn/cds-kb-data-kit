@@ -36,8 +36,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountContractType` | `CHAR(2)` | Bank Account Contract Type |
-| `Language` | `LANG(1)` | Language Key |
-| `BankAccountContractTypeName` | `CHAR(60)` | Bank Account Contract Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountContractType` |  | |  |  | `CHAR(2)` | Bank Account Contract Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BankAccountContractTypeName` |  | |  |  | `CHAR(60)` | Bank Account Contract Type Description |

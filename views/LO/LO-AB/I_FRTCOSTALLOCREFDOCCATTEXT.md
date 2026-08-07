@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FrtCostAllocRefDocCat` | `CHAR(2)` | Reference Document Category in Settlement Management |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `FrtCostAllocRefDocCatName` | `CHAR(60)` | Text of Reference Document Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FrtCostAllocRefDocCat` |  | |  |  | `CHAR(2)` | Reference Document Category in Settlement Management |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `FrtCostAllocRefDocCatName` |  | |  |  | `CHAR(60)` | Text of Reference Document Category |

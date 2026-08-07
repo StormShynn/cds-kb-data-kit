@@ -31,22 +31,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RelationshipNumber` | `CHAR(12)` | BP Relationship Number |
-| `BusinessPartnerCompany` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerPerson` | `CHAR(10)` | Business Partner Number |
-| `ValidityEndDate` | `DATS(8)` | Validity Date (Valid To) |
-| `BusinessPartner1` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartner2` | `CHAR(10)` | Business Partner Number |
-| `ValidityStartDate` | `DATS(8)` | Validity Date (Valid From) |
-| `IsStandardRelationship` | `CHAR(1)` | Standard Relationship |
-| `RelationshipCategory` | `CHAR(6)` | Business Partner Relationship Category |
-| `BPRelationshipType` | `CHAR(4)` | Business partner relationship type |
-| `BusPartRelshpIsRoleDefinition` | `CHAR(1)` | Business partner role definition instead of BP relationship |
-| `CreatedByUser` | `CHAR(12)` | User who created the object |
-| `CreationDate` | `DATS(8)` | Date on which the object was created |
-| `CreationTime` | `TIMS(6)` | Time at which the object was created |
-| `LastChangedByUser` | `CHAR(12)` | Last user to change object |
-| `LastChangeDate` | `DATS(8)` | Date when object was last changed |
-| `LastChangeTime` | `TIMS(6)` | Time at which object was last changed |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RelationshipNumber` |  | |  |  | `CHAR(12)` | BP Relationship Number |
+| `BusinessPartnerCompany` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerPerson` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity Date (Valid To) |
+| `BusinessPartner1` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartner2` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Date (Valid From) |
+| `IsStandardRelationship` |  | |  |  | `CHAR(1)` | Standard Relationship |
+| `RelationshipCategory` |  | |  |  | `CHAR(6)` | Business Partner Relationship Category |
+| `BPRelationshipType` |  | |  |  | `CHAR(4)` | Business partner relationship type |
+| `BusPartRelshpIsRoleDefinition` |  | |  |  | `CHAR(1)` | Business partner role definition instead of BP relationship |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User who created the object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date on which the object was created |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at which the object was created |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last user to change object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date when object was last changed |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time at which object was last changed |

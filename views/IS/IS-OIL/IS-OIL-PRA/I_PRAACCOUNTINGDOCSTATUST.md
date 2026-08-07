@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AccountingDocumentStatus` | `CHAR(2)` | Accounting Document Status |
-| `Language` | `LANG(1)` | Language Key |
-| `AccountingDocumentStatusName` | `CHAR(60)` | Acctg Doc Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocumentStatus` |  | |  |  | `CHAR(2)` | Accounting Document Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AccountingDocumentStatusName` |  | |  |  | `CHAR(60)` | Acctg Doc Status Name |

@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CtrlObjForSponsoredProgram` | `CHAR(50)` | Control Object for a Sponsored Program |
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `CtrlObjForSponsoredProgramName` | `CHAR(50)` | Control Object for a Sponsored Program |
-| `SponsoredProgramDescription` | `CHAR(30)` | Sponsored Program Description |
-| `HierarchyNodeText` | `CHAR(50)` | Hierarchy node description |
-| `SponsoredProgramHierarchy` | `CHAR(42)` | Sponsored Program Hierarchy |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CtrlObjForSponsoredProgram` |  | |  |  | `CHAR(50)` | Control Object for a Sponsored Program |
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `CtrlObjForSponsoredProgramName` |  | |  |  | `CHAR(50)` | Control Object for a Sponsored Program |
+| `SponsoredProgramDescription` |  | |  |  | `CHAR(30)` | Sponsored Program Description |
+| `HierarchyNodeText` |  | |  |  | `CHAR(50)` | Hierarchy node description |
+| `SponsoredProgramHierarchy` |  | |  |  | `CHAR(42)` | Sponsored Program Hierarchy |

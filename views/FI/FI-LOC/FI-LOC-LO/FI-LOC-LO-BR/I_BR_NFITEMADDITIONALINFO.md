@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NotaFiscal` | `NUMC(10)` | Document Number |
-| `BR_NotaFiscalItem` | `NUMC(6)` | Document Item Number |
-| `BR_NFInfoFieldUsage` | `CHAR(1)` | Usage |
-| `BR_NFAdditionalInformationID` | `CHAR(20)` | Field ID |
-| `BR_NFAdditionalInfoDesc` | `CHAR(60)` | Field Content |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` |  | |  |  | `NUMC(10)` | Document Number |
+| `BR_NotaFiscalItem` |  | |  |  | `NUMC(6)` | Document Item Number |
+| `BR_NFInfoFieldUsage` |  | |  |  | `CHAR(1)` | Usage |
+| `BR_NFAdditionalInformationID` |  | |  |  | `CHAR(20)` | Field ID |
+| `BR_NFAdditionalInfoDesc` |  | |  |  | `CHAR(60)` | Field Content |

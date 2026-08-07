@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CharacteristicInternalID` | `NUMC(10)` | Internal Characteristic Number |
-| `RetailCharacteristicValue` | `CHAR(18)` | Characteristic Value |
-| `Language` | `LANG(1)` | Language Key |
-| `RetailCharacteristicValueDesc` | `CHAR(70)` | Characteristic value description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharacteristicInternalID` |  | |  |  | `NUMC(10)` | Internal Characteristic Number |
+| `RetailCharacteristicValue` |  | |  |  | `CHAR(18)` | Characteristic Value |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RetailCharacteristicValueDesc` |  | |  |  | `CHAR(70)` | Characteristic value description |

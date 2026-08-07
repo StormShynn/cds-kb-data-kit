@@ -31,30 +31,30 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentID` | `CHAR(20)` | Incident ID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `IncidentGroupUUID` | `RAW(16)` | NodeID |
-| `IncidentGroupCode` | `CHAR(21)` | Incident Group |
-| `NearMissGroupCode` | `CHAR(21)` | Near Miss Group |
-| `SafetyObservationGroupCode` | `CHAR(21)` | Safety Observation Group |
-| `IncidentTitle` | `CHAR(80)` | Incident Title |
-| `IncidentCategory` | `CHAR(3)` | Incident Category |
-| `IncidentStatus` | `CHAR(2)` | Incident Status |
-| `IncidentDate` | `DATS(8)` | Incident Start Date |
-| `IncidentYear` | `NUMC(4)` | Calendar Year |
-| `IncidentMonth` | `NUMC(2)` | Calendar Month |
-| `IncidentYearMonth` | `NUMC(6)` | Year Month |
-| `IncidentYearQuarter` | `NUMC(1)` | Calendar Quarter |
-| `IncidentWeekDay` | `NUMC(1)` | Week Day |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `Country` | `CHAR(3)` | Country/Region of Incident |
-| `Region` | `CHAR(3)` | Region of Incident |
-| `IncidentMajorRootCause` | `CHAR(21)` | Major Root Cause |
-| `EHSIncidentGroupSeverity` | `CHAR(21)` | Severity Level Code |
-| `NumberOfIncidentRecords` | `INT4(10)` | Number of Incident Records |
-| `NumberOfNearMissRecords` | `INT4(10)` | Number of Near Miss Records |
-| `NumberOfSftyObservationRecords` | `INT4(10)` | Number of Safety Observation Records |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentID` |  | |  |  | `CHAR(20)` | Incident ID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `IncidentGroupUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentGroupCode` |  | |  |  | `CHAR(21)` | Incident Group |
+| `NearMissGroupCode` |  | |  |  | `CHAR(21)` | Near Miss Group |
+| `SafetyObservationGroupCode` |  | |  |  | `CHAR(21)` | Safety Observation Group |
+| `IncidentTitle` |  | |  |  | `CHAR(80)` | Incident Title |
+| `IncidentCategory` |  | |  |  | `CHAR(3)` | Incident Category |
+| `IncidentStatus` |  | |  |  | `CHAR(2)` | Incident Status |
+| `IncidentDate` |  | |  |  | `DATS(8)` | Incident Start Date |
+| `IncidentYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `IncidentMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `IncidentYearMonth` |  | |  |  | `NUMC(6)` | Year Month |
+| `IncidentYearQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `IncidentWeekDay` |  | |  |  | `NUMC(1)` | Week Day |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region of Incident |
+| `Region` |  | |  |  | `CHAR(3)` | Region of Incident |
+| `IncidentMajorRootCause` |  | |  |  | `CHAR(21)` | Major Root Cause |
+| `EHSIncidentGroupSeverity` |  | |  |  | `CHAR(21)` | Severity Level Code |
+| `NumberOfIncidentRecords` |  | |  |  | `INT4(10)` | Number of Incident Records |
+| `NumberOfNearMissRecords` |  | |  |  | `INT4(10)` | Number of Near Miss Records |
+| `NumberOfSftyObservationRecords` |  | |  |  | `INT4(10)` | Number of Safety Observation Records |

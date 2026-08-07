@@ -35,15 +35,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesOrder` | `CHAR(10)` | Sales Order |
-| `SalesOrderType` | `CHAR(4)` | Sales Order Type |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `NumberOfSalesOrders` | `INT4(10)` | Number of Sales Orders |
-| `NumberOfCreditDecisionDocs` | `INT4(10)` | Number of Credit Blocked Sales Orders |
-| `CreditBlockedSalesOrdersPct` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderType` |  | |  |  | `CHAR(4)` | Sales Order Type |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `NumberOfSalesOrders` |  | |  |  | `INT4(10)` | Number of Sales Orders |
+| `NumberOfCreditDecisionDocs` |  | |  |  | `INT4(10)` | Number of Credit Blocked Sales Orders |
+| `CreditBlockedSalesOrdersPct` |  | |  |  | `INT1(3)` |  |

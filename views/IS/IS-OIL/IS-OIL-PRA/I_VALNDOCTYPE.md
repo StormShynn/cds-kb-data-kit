@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ValuationDocumentType` | `CHAR(4)` | Valuation Document Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationDocumentType` |  | |  |  | `CHAR(4)` | Valuation Document Type |

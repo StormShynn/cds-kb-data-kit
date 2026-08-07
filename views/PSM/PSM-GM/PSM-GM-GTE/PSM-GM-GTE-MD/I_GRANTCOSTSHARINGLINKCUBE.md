@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `Fund` | `CHAR(10)` | Fund |
-| `GteeMCostSharingSource` | `CHAR(1)` | Cost Sharing Source |
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `AvgGteeMCostSharingRateInPct` | `DEC(6)` | Cost Sharing Percentage |
-| `NumberOfGteeMMasterDataRecords` | `INT1(3)` |  |
-| `GrantIsNotRelevantGrant` | `CHAR(1)` | Identify the Not Relevant Grant |
-| `GrantAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `GteeMCostSharingSource` |  | |  |  | `CHAR(1)` | Cost Sharing Source |
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `AvgGteeMCostSharingRateInPct` |  | |  |  | `DEC(6)` | Cost Sharing Percentage |
+| `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
+| `GrantIsNotRelevantGrant` |  | |  |  | `CHAR(1)` | Identify the Not Relevant Grant |
+| `GrantAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |

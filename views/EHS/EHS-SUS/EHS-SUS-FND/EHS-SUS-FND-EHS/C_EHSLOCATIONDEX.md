@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `WasteRegistrationNumber` | `CHAR(60)` | Waste Registration Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `WasteRegistrationNumber` |  | |  |  | `CHAR(60)` | Waste Registration Number |

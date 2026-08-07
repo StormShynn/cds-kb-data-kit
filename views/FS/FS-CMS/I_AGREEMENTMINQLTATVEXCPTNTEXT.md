@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlAgrmtMinQltatvExcptn` | `CHAR(6)` | Exceptions for Minimum Risk Weight |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `ColltrlAgrmtMinQltatvExcptnTxt` | `CHAR(40)` | Name of Minimum Qualitative Criterion in specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlAgrmtMinQltatvExcptn` |  | |  |  | `CHAR(6)` | Exceptions for Minimum Risk Weight |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `ColltrlAgrmtMinQltatvExcptnTxt` |  | |  |  | `CHAR(40)` | Name of Minimum Qualitative Criterion in specified Language |

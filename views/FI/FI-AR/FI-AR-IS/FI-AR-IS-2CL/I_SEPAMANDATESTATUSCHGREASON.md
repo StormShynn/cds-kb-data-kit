@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SEPAMandateApplication` | `CHAR(1)` | SEPA Mandate Management: SEPA Application |
-| `SEPAMandateStatus` | `CHAR(1)` | Mandate Status |
-| `SEPAMandateStatusChangeReason` | `CHAR(3)` | Reason Code for Status Change |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SEPAMandateApplication` |  | |  |  | `CHAR(1)` | SEPA Mandate Management: SEPA Application |
+| `SEPAMandateStatus` |  | |  |  | `CHAR(1)` | Mandate Status |
+| `SEPAMandateStatusChangeReason` |  | |  |  | `CHAR(3)` | Reason Code for Status Change |

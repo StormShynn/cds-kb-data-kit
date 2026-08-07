@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PublicHolidayCalendar` | `CHAR(2)` | Public Holiday Calendar |
-| `ValidityEndYear` | `NUMC(4)` | Publicholiday: ValidityEndYear |
-| `PublicHolidayCode` | `CHAR(3)` | Public holiday key |
-| `ValidityStartYear` | `NUMC(4)` | PublicHoliday:ValidityStartYear |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCalendar` |  | |  |  | `CHAR(2)` | Public Holiday Calendar |
+| `ValidityEndYear` |  | |  |  | `NUMC(4)` | Publicholiday: ValidityEndYear |
+| `PublicHolidayCode` |  | |  |  | `CHAR(3)` | Public holiday key |
+| `ValidityStartYear` |  | |  |  | `NUMC(4)` | PublicHoliday:ValidityStartYear |

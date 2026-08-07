@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `ChartOfDepreciation` | `CHAR(4)` | Chart of Depreciaton for Asset Valuation |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ChartOfDepreciation` |  | |  |  | `CHAR(4)` | Chart of Depreciaton for Asset Valuation |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |

@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `DeliveryStatus` | `CHAR(1)` | Status Value |
-| `DeliveryStatusType` | `CHAR(3)` |  |
-| `StatusName` | `CHAR(30)` | Individual Status of an Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DeliveryStatus` |  | |  |  | `CHAR(1)` | Status Value |
+| `DeliveryStatusType` |  | |  |  | `CHAR(3)` |  |
+| `StatusName` |  | |  |  | `CHAR(30)` | Individual Status of an Object |

@@ -32,18 +32,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `PersonExternalID` | `CHAR(60)` | Identification Number |
-| `BPIdentificationType` | `CHAR(6)` | Identification Type |
-| `FirstName` | `CHAR(40)` | First Name of Business Partner (Person) |
-| `LastName` | `CHAR(40)` | Last Name of Business Partner (Person) |
-| `MiddleName` | `CHAR(40)` | Middle Name or Second Forename of a Person |
-| `PersonFullName` | `CHAR(80)` | Full Name |
-| `BirthName` | `CHAR(40)` | Name at birth of business partner |
-| `Initials` | `CHAR(10)` | "Middle Initial" or personal initials |
-| `NativePreferredLanguage` | `LANG(1)` | Business Partner: Correspondence Language |
-| `LastNamePrefix` | `CHAR(4)` | Name Prefix (Key) |
-| `BusinessPartnerUUID` | `RAW(16)` | Business Partner GUID |
-| `UserID` | `CHAR(12)` | User ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `PersonExternalID` |  | |  |  | `CHAR(60)` | Identification Number |
+| `BPIdentificationType` |  | |  |  | `CHAR(6)` | Identification Type |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `MiddleName` |  | |  |  | `CHAR(40)` | Middle Name or Second Forename of a Person |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | Full Name |
+| `BirthName` |  | |  |  | `CHAR(40)` | Name at birth of business partner |
+| `Initials` |  | |  |  | `CHAR(10)` | "Middle Initial" or personal initials |
+| `NativePreferredLanguage` |  | |  |  | `LANG(1)` | Business Partner: Correspondence Language |
+| `LastNamePrefix` |  | |  |  | `CHAR(4)` | Name Prefix (Key) |
+| `BusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner GUID |
+| `UserID` |  | |  |  | `CHAR(12)` | User ID |

@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SupAssgmtContrExpryRnge` | `CHAR(2)` |  |
-| `SupAssgmtContrExpryRngeName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupAssgmtContrExpryRnge` |  | |  |  | `CHAR(2)` |  |
+| `SupAssgmtContrExpryRngeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

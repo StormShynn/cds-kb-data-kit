@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `SponsoredProgramName` | `CHAR(24)` | Sponsored Program Name |
-| `SponsoredProgramDescription` | `CHAR(30)` | Sponsored Program Description |
-| `SponsoredProgramAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `SponsoredProgramName` |  | |  |  | `CHAR(24)` | Sponsored Program Name |
+| `SponsoredProgramDescription` |  | |  |  | `CHAR(30)` | Sponsored Program Description |
+| `SponsoredProgramAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |

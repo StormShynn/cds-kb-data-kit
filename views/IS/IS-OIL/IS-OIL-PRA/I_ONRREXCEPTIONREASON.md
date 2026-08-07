@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ExceptionReason` | `CHAR(3)` | ONRR-2014 - Suspend Reason Code |
-| `ExceptionReasonName` | `CHAR(30)` | ONRR Exception Reason |
-| `EntityIsInactive` | `CHAR(1)` | Inactive indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExceptionReason` |  | |  |  | `CHAR(3)` | ONRR-2014 - Suspend Reason Code |
+| `ExceptionReasonName` |  | |  |  | `CHAR(30)` | ONRR Exception Reason |
+| `EntityIsInactive` |  | |  |  | `CHAR(1)` | Inactive indicator |

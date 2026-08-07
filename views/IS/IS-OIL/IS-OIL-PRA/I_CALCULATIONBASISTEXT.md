@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CalculationBasis` | `CHAR(1)` | Actual, Entitlement, Settlement Codes |
-| `Language` | `LANG(1)` | Language Key |
-| `CalculationBasisName` | `CHAR(60)` | Indicator of Actual, Entitled, or Settlement Basis Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalculationBasis` |  | |  |  | `CHAR(1)` | Actual, Entitlement, Settlement Codes |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CalculationBasisName` |  | |  |  | `CHAR(60)` | Indicator of Actual, Entitled, or Settlement Basis Name |

@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Route` | `CHAR(6)` | Route |
-| `Language` | `LANG(1)` | Language Key |
-| `RouteName` | `CHAR(40)` | Route Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Route` |  | |  |  | `CHAR(6)` | Route |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RouteName` |  | |  |  | `CHAR(40)` | Route Description |

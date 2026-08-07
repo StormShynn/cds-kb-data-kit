@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PerformanceEfficiencyRatioCode` | `CHAR(3)` | Key for performance efficiency rate |
-| `Language` | `LANG(1)` | Language Key |
-| `PerformanceEfficiencyRatioText` | `CHAR(20)` | Description of the performance efficiency rate key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PerformanceEfficiencyRatioCode` |  | |  |  | `CHAR(3)` | Key for performance efficiency rate |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PerformanceEfficiencyRatioText` |  | |  |  | `CHAR(20)` | Description of the performance efficiency rate key |

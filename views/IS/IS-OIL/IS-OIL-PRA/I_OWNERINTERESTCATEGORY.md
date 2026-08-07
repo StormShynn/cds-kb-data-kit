@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OwnerInterestCategory` | `CHAR(1)` | Interest Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OwnerInterestCategory` |  | |  |  | `CHAR(1)` | Interest Category |

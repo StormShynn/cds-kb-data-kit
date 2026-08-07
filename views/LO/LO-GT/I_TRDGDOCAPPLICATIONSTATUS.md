@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdgDocApplicationStatus` | `CHAR(1)` | Application Status of Trading Contract |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdgDocApplicationStatus` |  | |  |  | `CHAR(1)` | Application Status of Trading Contract |

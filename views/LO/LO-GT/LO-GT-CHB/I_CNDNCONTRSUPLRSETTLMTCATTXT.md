@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrSuplrSettlmtCat` | `CHAR(1)` | Settlement Type Supplier |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrSuplrSettlmtCatName` | `CHAR(60)` | Description of Settlement Type Supplier |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrSuplrSettlmtCat` |  | |  |  | `CHAR(1)` | Settlement Type Supplier |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrSuplrSettlmtCatName` |  | |  |  | `CHAR(60)` | Description of Settlement Type Supplier |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

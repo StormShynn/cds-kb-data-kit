@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRSalesType` | `CHAR(4)` | ONRR-2014 - Sales Type Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRSalesType` |  | |  |  | `CHAR(4)` | ONRR-2014 - Sales Type Code |

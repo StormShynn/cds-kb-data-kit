@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PRALegalForm` | `CHAR(2)` | Entity Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PRALegalForm` |  | |  |  | `CHAR(2)` | Entity Code |

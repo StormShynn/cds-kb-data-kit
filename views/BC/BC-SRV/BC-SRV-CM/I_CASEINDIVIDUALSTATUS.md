@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseStatusProfile` | `CHAR(8)` | Case: Status Profile |
-| `CaseStatus` | `NUMC(2)` | Case: Status |
-| `CaseSystemStatus` | `CHAR(3)` | Case: System Status |
-| `CaseLowestStatus` | `NUMC(2)` | Case: Lowest Status |
-| `CaseHighestStatus` | `NUMC(2)` | Case: Highest Status |
-| `CaseEvent` | `CHAR(32)` | Case: Event |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseStatusProfile` |  | |  |  | `CHAR(8)` | Case: Status Profile |
+| `CaseStatus` |  | |  |  | `NUMC(2)` | Case: Status |
+| `CaseSystemStatus` |  | |  |  | `CHAR(3)` | Case: System Status |
+| `CaseLowestStatus` |  | |  |  | `NUMC(2)` | Case: Lowest Status |
+| `CaseHighestStatus` |  | |  |  | `NUMC(2)` | Case: Highest Status |
+| `CaseEvent` |  | |  |  | `CHAR(32)` | Case: Event |

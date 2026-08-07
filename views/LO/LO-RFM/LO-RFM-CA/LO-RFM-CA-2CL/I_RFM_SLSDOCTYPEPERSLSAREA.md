@@ -35,12 +35,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesDocumentType` | `CHAR(4)` | Sales Document Type |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SeasonDetnControl` | `CHAR(1)` | Season Processing |
-| `SeasonDeterminationMessageType` | `CHAR(1)` | Season Processing Message Type |
-| `DelivDteFrmSeasnMstrIsPrpsd` | `CHAR(1)` | Delivery Date Proposal Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDocumentType` |  | |  |  | `CHAR(4)` | Sales Document Type |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SeasonDetnControl` |  | |  |  | `CHAR(1)` | Season Processing |
+| `SeasonDeterminationMessageType` |  | |  |  | `CHAR(1)` | Season Processing Message Type |
+| `DelivDteFrmSeasnMstrIsPrpsd` |  | |  |  | `CHAR(1)` | Delivery Date Proposal Flag |

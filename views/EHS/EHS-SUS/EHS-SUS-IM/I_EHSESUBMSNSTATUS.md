@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSElectronicSubmissionStatus` | `CHAR(2)` | Electronic Submission Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSElectronicSubmissionStatus` |  | |  |  | `CHAR(2)` | Electronic Submission Status |

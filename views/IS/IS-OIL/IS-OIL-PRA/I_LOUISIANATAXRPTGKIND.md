@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LouisianaTaxRptgKind` | `NUMC(1)` | Tax 2.0 LA - Kind Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LouisianaTaxRptgKind` |  | |  |  | `NUMC(1)` | Tax 2.0 LA - Kind Code |

@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanCorrespncRoleType` | `CHAR(4)` | CML Correspondence Role Type of Recipient |
-| `LoanCorrespncRoleTypeText` | `CHAR(30)` | Description of Correspondence Role Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanCorrespncRoleType` |  | |  |  | `CHAR(4)` | CML Correspondence Role Type of Recipient |
+| `LoanCorrespncRoleTypeText` |  | |  |  | `CHAR(30)` | Description of Correspondence Role Type |

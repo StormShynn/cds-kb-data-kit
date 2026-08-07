@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseAttributeProfile` | `CHAR(8)` | Case: Attribute Profile ID |
-| `CaseTableName` | `CHAR(30)` | Table Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseAttributeProfile` |  | |  |  | `CHAR(8)` | Case: Attribute Profile ID |
+| `CaseTableName` |  | |  |  | `CHAR(30)` | Table Name |

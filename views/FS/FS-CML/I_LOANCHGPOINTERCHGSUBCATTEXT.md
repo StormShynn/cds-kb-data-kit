@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanChgPointerChangeCat` | `CHAR(4)` | Change Category |
-| `LoanChgPointerChgSubCat` | `CHAR(4)` | Change Sub-Category |
-| `LoanChgPointerChgSubCatText` | `CHAR(50)` | Name of Change Sub-Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanChgPointerChangeCat` |  | |  |  | `CHAR(4)` | Change Category |
+| `LoanChgPointerChgSubCat` |  | |  |  | `CHAR(4)` | Change Sub-Category |
+| `LoanChgPointerChgSubCatText` |  | |  |  | `CHAR(50)` | Name of Change Sub-Category |

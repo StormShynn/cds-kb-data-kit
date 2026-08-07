@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetUUID` | `RAW(16)` | GUID for Table CMS_AST |
-| `CollateralAgreementUUID` | `RAW(16)` | GUID for Table CMS_CAG |
-| `AgreementPriorChargeUUID` | `RAW(16)` | GUID for Table CMS_CAG |
-| `AssetAgreementUUID` | `RAW(16)` | GUID for Table CMS_CHG |
-| `CollateralConstellationUUID` | `RAW(16)` | Constellation GUID |
-| `CollateralAgreementAssetCrcy` | `CUKY(5)` | Calculations Result Currency |
-| `AgrAssDistrd1stLnRgCurRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd2ndLnRgCurRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd3rdLnRgCurRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd4thLnRgCurRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd5thLnRgCurRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd1stLnRgMaxRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd2ndLnRgMaxRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd3rdLnRgMaxRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd4thLnRgMaxRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgrAssDistrd5thLnRgMaxRskAmt` | `CURR(17)` | Distributed Lending Range |
-| `AgreementAssetPriorChargeAmt` | `CURR(17)` | Prior Charges calculation for ast-cag link |
-| `AgreementAssetPriorChargePct` | `DEC(10)` | Calculations Result as Pecentage |
-| `AgreementAssetCalcLastChgdBy` | `CHAR(12)` | Last Changed By |
-| `AgreementAssetCalcLastChgdDate` | `DATS(8)` | Date on which last change was done |
-| `AgreementAssetCalcLastChgdTime` | `TIMS(6)` | Time at which last change was made |
-| `ObjectAssetReferenceSystem` | `CHAR(6)` | Object System Reference ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_AST |
+| `CollateralAgreementUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG |
+| `AgreementPriorChargeUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG |
+| `AssetAgreementUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CHG |
+| `CollateralConstellationUUID` |  | |  |  | `RAW(16)` | Constellation GUID |
+| `CollateralAgreementAssetCrcy` |  | |  |  | `CUKY(5)` | Calculations Result Currency |
+| `AgrAssDistrd1stLnRgCurRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd2ndLnRgCurRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd3rdLnRgCurRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd4thLnRgCurRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd5thLnRgCurRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd1stLnRgMaxRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd2ndLnRgMaxRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd3rdLnRgMaxRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd4thLnRgMaxRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgrAssDistrd5thLnRgMaxRskAmt` |  | |  |  | `CURR(17)` | Distributed Lending Range |
+| `AgreementAssetPriorChargeAmt` |  | |  |  | `CURR(17)` | Prior Charges calculation for ast-cag link |
+| `AgreementAssetPriorChargePct` |  | |  |  | `DEC(10)` | Calculations Result as Pecentage |
+| `AgreementAssetCalcLastChgdBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `AgreementAssetCalcLastChgdDate` |  | |  |  | `DATS(8)` | Date on which last change was done |
+| `AgreementAssetCalcLastChgdTime` |  | |  |  | `TIMS(6)` | Time at which last change was made |
+| `ObjectAssetReferenceSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID |

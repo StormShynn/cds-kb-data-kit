@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Plant` | `CHAR(4)` | Plant |
-| `LogisticalRoundingProfile` | `CHAR(4)` | Logistical Rounding Profile |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `LogisticalRoundingProfile` |  | |  |  | `CHAR(4)` | Logistical Rounding Profile |

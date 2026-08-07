@@ -28,8 +28,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundType` | `CHAR(6)` | Fund Type |
-| `GranteeMgmtFundType` | `CHAR(1)` | Fund Type for Grants Management |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundType` |  | |  |  | `CHAR(6)` | Fund Type |
+| `GranteeMgmtFundType` |  | |  |  | `CHAR(1)` | Fund Type for Grants Management |

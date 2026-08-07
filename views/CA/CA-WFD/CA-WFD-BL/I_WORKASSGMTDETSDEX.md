@@ -33,23 +33,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkAssignment` | `NUMC(8)` | Workforce Assignment ID |
-| `WorkAssignmentStartDate` | `DATS(8)` | Start Date |
-| `WorkAssignmentEndDate` | `DATS(8)` | End Date |
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `WorkAssignmentIsPrimary` | `CHAR(1)` | Primary Employment Indicator |
-| `WorkAssignmentExternalID` | `CHAR(100)` | External User ID |
-| `SupervisorWorkAssignmentID` | `NUMC(8)` | Manager Workforce Assignment ID |
-| `SupervisorWorkAssignmentExtID` | `CHAR(100)` | Manager Workforce Assignment External ID |
-| `WorkforcePersonJobTitle` | `CHAR(256)` | Job Title |
-| `WorkforcePersonJobCode` | `CHAR(128)` | Job Code |
-| `WorkingHoursPerWeek` | `DEC(5)` | Working Hours in a Week |
-| `EmploymentPercent` | `DEC(5)` | Employment Percentage |
-| `WorkingDaysPerWeek` | `DEC(4)` | Working Days in a Week |
-| `WorkAssignmentStatus` | `CHAR(1)` | Employment Status |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CountryOrRegion` | `CHAR(3)` | Country/Region Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkAssignment` |  | |  |  | `NUMC(8)` | Workforce Assignment ID |
+| `WorkAssignmentStartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `WorkAssignmentEndDate` |  | |  |  | `DATS(8)` | End Date |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `WorkAssignmentIsPrimary` |  | |  |  | `CHAR(1)` | Primary Employment Indicator |
+| `WorkAssignmentExternalID` |  | |  |  | `CHAR(100)` | External User ID |
+| `SupervisorWorkAssignmentID` |  | |  |  | `NUMC(8)` | Manager Workforce Assignment ID |
+| `SupervisorWorkAssignmentExtID` |  | |  |  | `CHAR(100)` | Manager Workforce Assignment External ID |
+| `WorkforcePersonJobTitle` |  | |  |  | `CHAR(256)` | Job Title |
+| `WorkforcePersonJobCode` |  | |  |  | `CHAR(128)` | Job Code |
+| `WorkingHoursPerWeek` |  | |  |  | `DEC(5)` | Working Hours in a Week |
+| `EmploymentPercent` |  | |  |  | `DEC(5)` | Employment Percentage |
+| `WorkingDaysPerWeek` |  | |  |  | `DEC(4)` | Working Days in a Week |
+| `WorkAssignmentStatus` |  | |  |  | `CHAR(1)` | Employment Status |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CountryOrRegion` |  | |  |  | `CHAR(3)` | Country/Region Key |

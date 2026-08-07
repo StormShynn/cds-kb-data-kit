@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Supplier` | `CHAR(10)` | Account Number of Supplier |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `NmbrOfAvailableSuppliers` | `INT8(19)` |  |
-| `NumberOfContracts` | `INT8(19)` |  |
-| `NmbrOfSuplrWithOutContracts` | `INT8(19)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `NmbrOfAvailableSuppliers` |  | |  |  | `INT8(19)` |  |
+| `NumberOfContracts` |  | |  |  | `INT8(19)` |  |
+| `NmbrOfSuplrWithOutContracts` |  | |  |  | `INT8(19)` |  |

@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `HierarchyNodeType` | `CHAR(15)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `HierarchyNodeType` |  | |  |  | `CHAR(15)` |  |

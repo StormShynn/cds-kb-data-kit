@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductBalancingAgreement` | `CHAR(10)` | PBA Number |
-| `ProductBalancingAgreementName` | `CHAR(35)` | Product Balancing Agreement Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductBalancingAgreement` |  | |  |  | `CHAR(10)` | PBA Number |
+| `ProductBalancingAgreementName` |  | |  |  | `CHAR(35)` | Product Balancing Agreement Name |

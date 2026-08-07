@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CtrlObjForGrant` | `CHAR(50)` | Control Object for a Grant |
-| `ControlObjectForGrantTrimmed` | `CHAR(50)` | Control Object for a Grant |
-| `GrantID` | `CHAR(20)` | Grant |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `CtrlObjForGrantName` | `CHAR(50)` | Control Object for a Grant |
-| `GrantDescription` | `CHAR(80)` | Descriptive Text |
-| `HierarchyNodeText` | `CHAR(50)` | Hierarchy node description |
-| `GrantHierarchy` | `CHAR(42)` | Grant Hierarchy |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CtrlObjForGrant` |  | |  |  | `CHAR(50)` | Control Object for a Grant |
+| `ControlObjectForGrantTrimmed` |  | |  |  | `CHAR(50)` | Control Object for a Grant |
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `CtrlObjForGrantName` |  | |  |  | `CHAR(50)` | Control Object for a Grant |
+| `GrantDescription` |  | |  |  | `CHAR(80)` | Descriptive Text |
+| `HierarchyNodeText` |  | |  |  | `CHAR(50)` | Hierarchy node description |
+| `GrantHierarchy` |  | |  |  | `CHAR(42)` | Grant Hierarchy |

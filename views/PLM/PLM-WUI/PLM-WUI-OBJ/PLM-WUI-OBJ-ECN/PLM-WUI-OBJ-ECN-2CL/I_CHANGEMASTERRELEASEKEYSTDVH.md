@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumberReleaseKey` | `NUMC(2)` | ECM: Release Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberReleaseKey` |  | |  |  | `NUMC(2)` | ECM: Release Key |

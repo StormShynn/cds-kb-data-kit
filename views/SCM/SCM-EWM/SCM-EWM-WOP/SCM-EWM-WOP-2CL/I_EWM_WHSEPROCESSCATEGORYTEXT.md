@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `WarehouseProcessCategory` | `CHAR(1)` | Warehouse Process Category |
-| `WarehouseProcessCategoryName` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `WarehouseProcessCategory` |  | |  |  | `CHAR(1)` | Warehouse Process Category |
+| `WarehouseProcessCategoryName` |  | |  |  | `CHAR(40)` | Description |

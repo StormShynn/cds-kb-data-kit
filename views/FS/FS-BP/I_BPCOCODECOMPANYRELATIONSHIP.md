@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BPCoCodeCompanyRelationship` | `CHAR(1)` | Company Relationship in Company Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPCoCodeCompanyRelationship` |  | |  |  | `CHAR(1)` | Company Relationship in Company Code |

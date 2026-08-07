@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ExpnSettlmt` | `CHAR(10)` | Document Number of Expense Settlement |
-| `TextObjectType` | `CHAR(4)` | Text Object type |
-| `Language` | `LANG(1)` | Language Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExpnSettlmt` |  | |  |  | `CHAR(10)` | Document Number of Expense Settlement |
+| `TextObjectType` |  | |  |  | `CHAR(4)` | Text Object type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |

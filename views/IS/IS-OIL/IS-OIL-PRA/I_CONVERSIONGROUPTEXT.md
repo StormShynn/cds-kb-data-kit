@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConversionGroup` | `CHAR(4)` | Conversion Group (Oil, Natural Gas,..) |
-| `Language` | `LANG(1)` | Language Key |
-| `ConversionGroupName` | `CHAR(40)` | Conversion Group Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConversionGroup` |  | |  |  | `CHAR(4)` | Conversion Group (Oil, Natural Gas,..) |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConversionGroupName` |  | |  |  | `CHAR(40)` | Conversion Group Name |

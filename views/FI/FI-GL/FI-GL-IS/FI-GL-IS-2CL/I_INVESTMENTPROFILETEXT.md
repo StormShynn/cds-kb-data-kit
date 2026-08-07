@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InvestmentProfile` | `CHAR(6)` | Investment Measure Profile |
-| `InvestmentProfileName` | `CHAR(50)` | Name of capital investment profile |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InvestmentProfile` |  | |  |  | `CHAR(6)` | Investment Measure Profile |
+| `InvestmentProfileName` |  | |  |  | `CHAR(50)` | Name of capital investment profile |

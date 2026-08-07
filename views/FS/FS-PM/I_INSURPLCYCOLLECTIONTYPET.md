@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurPlcyCollectionType` | `CHAR(1)` | Collection Type |
-| `InsurPlcyCollTypeDescName` | `CHAR(50)` | Collection Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurPlcyCollectionType` |  | |  |  | `CHAR(1)` | Collection Type |
+| `InsurPlcyCollTypeDescName` |  | |  |  | `CHAR(50)` | Collection Type Description |

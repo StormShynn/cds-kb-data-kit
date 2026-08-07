@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DerivativeContrSpecification` | `CHAR(20)` | Derivative Contract Specification ID |
-| `MarketIdentifierCode` | `CHAR(4)` | Market Identifier Code |
-| `PriceQuotationDate` | `DATS(8)` | Date of Price Quotation |
-| `PriceQuotationType` | `CHAR(2)` | Type of Price Quotation |
-| `MaturityKeyDate` | `DATS(8)` | Maturity Key Date |
-| `PriceQuotationTime` | `TIMS(6)` | Time of Price Quotation |
-| `ValidityStartUTCDateTime` | `DEC(21)` | Commodity Price Valid From (Date and Time) |
-| `TimeToMaturity` | `CHAR(10)` | Time to Maturity |
-| `PriceQuotation` | `DF34(31)` | Quotation Price |
-| `UnitOfMeasure` | `UNIT(3)` | Quotation Unit of Measure |
-| `Currency` | `CUKY(5)` | Quotation Currency |
-| `CreatedByUser` | `CHAR(12)` | First Entered By |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DerivativeContrSpecification` |  | |  |  | `CHAR(20)` | Derivative Contract Specification ID |
+| `MarketIdentifierCode` |  | |  |  | `CHAR(4)` | Market Identifier Code |
+| `PriceQuotationDate` |  | |  |  | `DATS(8)` | Date of Price Quotation |
+| `PriceQuotationType` |  | |  |  | `CHAR(2)` | Type of Price Quotation |
+| `MaturityKeyDate` |  | |  |  | `DATS(8)` | Maturity Key Date |
+| `PriceQuotationTime` |  | |  |  | `TIMS(6)` | Time of Price Quotation |
+| `ValidityStartUTCDateTime` |  | |  |  | `DEC(21)` | Commodity Price Valid From (Date and Time) |
+| `TimeToMaturity` |  | |  |  | `CHAR(10)` | Time to Maturity |
+| `PriceQuotation` |  | |  |  | `DF34(31)` | Quotation Price |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Quotation Unit of Measure |
+| `Currency` |  | |  |  | `CUKY(5)` | Quotation Currency |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | First Entered By |

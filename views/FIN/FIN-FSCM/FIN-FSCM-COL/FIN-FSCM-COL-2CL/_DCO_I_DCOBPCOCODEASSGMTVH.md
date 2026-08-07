@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `DebtCollectionsCompanyCode` | `CHAR(4)` | Company Code in Collections and Dispute Automation |
-| `DCoCompanyCodeName` | `CHAR(50)` | Company Code in Collections and Dispute Automation (Name) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `DebtCollectionsCompanyCode` |  | |  |  | `CHAR(4)` | Company Code in Collections and Dispute Automation |
+| `DCoCompanyCodeName` |  | |  |  | `CHAR(50)` | Company Code in Collections and Dispute Automation (Name) |

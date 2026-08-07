@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WarehouseProcessCategory` | `CHAR(1)` | Warehouse Process Category |
-| `WarehouseProcessTypeIsAssigned` | `CHAR(1)` | Assign Warehouse Process Type - Activity |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarehouseProcessCategory` |  | |  |  | `CHAR(1)` | Warehouse Process Category |
+| `WarehouseProcessTypeIsAssigned` |  | |  |  | `CHAR(1)` | Assign Warehouse Process Type - Activity |

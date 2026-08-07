@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MeansOfTransport` | `CHAR(10)` | Means of Transport |
-| `Language` | `LANG(1)` | Language Key |
-| `MeansOfTransportDesc` | `CHAR(40)` | Means of Transport Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeansOfTransport` |  | |  |  | `CHAR(10)` | Means of Transport |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MeansOfTransportDesc` |  | |  |  | `CHAR(40)` | Means of Transport Description |

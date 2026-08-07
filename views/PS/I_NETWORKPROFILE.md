@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NetworkProfile` | `CHAR(7)` | Network Profile |
-| `BillOfOperationsApplication` | `CHAR(1)` | Application of the task list |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NetworkProfile` |  | |  |  | `CHAR(7)` | Network Profile |
+| `BillOfOperationsApplication` |  | |  |  | `CHAR(1)` | Application of the task list |

@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `FinancialTransactionDirection` | `NUMC(1)` | Direction of Transaction |
-| `FinTransFlowNomAmt` | `CURR(18)` |  |
-| `FinTransFlowNomAmtCrcy` | `CUKY(5)` | Flow Nominal Amount Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `FinancialTransactionDirection` |  | |  |  | `NUMC(1)` | Direction of Transaction |
+| `FinTransFlowNomAmt` |  | |  |  | `CURR(18)` |  |
+| `FinTransFlowNomAmtCrcy` |  | |  |  | `CUKY(5)` | Flow Nominal Amount Currency |

@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InternalRealEstateNumber` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `REAccountingObject` | `CHAR(22)` | Object Number |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `REStatusObjectSource` | `CHAR(22)` | Object Number |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `REAccountingObjectType` | `CHAR(2)` | Object Type |
-| `REOnlyInfoAssgmt` | `CHAR(1)` | Informational Assignment |
-| `REIsLeadingObject` | `CHAR(1)` | Leading object Indicator |
-| `REIntegObjSpaceGroupType` | `CHAR(4)` | Group Type |
-| `REParentIntegObjectType` | `CHAR(4)` | Parent Object Type |
-| `REParentIntegObjectExternalID` | `CHAR(45)` | Parent External Identification |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `InternalOrder` | `CHAR(12)` | Internal Order |
-| `OrderType` | `CHAR(4)` | Order Type |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `REAccountingObject` |  | |  |  | `CHAR(22)` | Object Number |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `REStatusObjectSource` |  | |  |  | `CHAR(22)` | Object Number |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `REAccountingObjectType` |  | |  |  | `CHAR(2)` | Object Type |
+| `REOnlyInfoAssgmt` |  | |  |  | `CHAR(1)` | Informational Assignment |
+| `REIsLeadingObject` |  | |  |  | `CHAR(1)` | Leading object Indicator |
+| `REIntegObjSpaceGroupType` |  | |  |  | `CHAR(4)` | Group Type |
+| `REParentIntegObjectType` |  | |  |  | `CHAR(4)` | Parent Object Type |
+| `REParentIntegObjectExternalID` |  | |  |  | `CHAR(45)` | Parent External Identification |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `InternalOrder` |  | |  |  | `CHAR(12)` | Internal Order |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |

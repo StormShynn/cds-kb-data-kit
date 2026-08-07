@@ -34,17 +34,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `TransactionDate` | `DATS(8)` | Key Date |
-| `FinancialPositionDataSource` | `CHAR(10)` | Data Source of Liquidity Position |
-| `BankAccount` | `CHAR(40)` | Bank Account Number |
-| `Bank` | `CHAR(15)` |  |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `LiquidityItem` | `CHAR(16)` | Liquidity Item |
-| `TransactionCurrency` | `CUKY(5)` | Currency |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `AmountInTransactionCurrency` | `CURR(23)` |  |
-| `AmountInDisplayCurrency` | `CURR(23)` |  |
-| `BankAccountDescription` | `CHAR(60)` | Account Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `TransactionDate` |  | |  |  | `DATS(8)` | Key Date |
+| `FinancialPositionDataSource` |  | |  |  | `CHAR(10)` | Data Source of Liquidity Position |
+| `BankAccount` |  | |  |  | `CHAR(40)` | Bank Account Number |
+| `Bank` |  | |  |  | `CHAR(15)` |  |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `LiquidityItem` |  | |  |  | `CHAR(16)` | Liquidity Item |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` |  |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` |  |
+| `BankAccountDescription` |  | |  |  | `CHAR(60)` | Account Description |

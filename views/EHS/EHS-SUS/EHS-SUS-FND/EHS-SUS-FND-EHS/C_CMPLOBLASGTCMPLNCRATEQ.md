@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplncObligationAssignmentUUID` | `RAW(16)` | Compliance Obligation Assignment UUID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationName` | `CHAR(60)` | Location Revision Text |
-| `ComplianceObligationUUID` | `RAW(16)` | Compliance Obligation |
-| `CmplncOblgnAssgmtAppltyStatus` | `CHAR(2)` | Applicability |
-| `CmplncOblgnAssgmtCmplncStatus` | `CHAR(2)` | Status |
-| `ComplianceObligationTypeCode` | `CHAR(2)` | Compliance Obligation Type |
-| `ComplianceObligationDomainCode` | `CHAR(21)` | Compliance Obligation Domain |
-| `NumberOfFulfilledObligations` | `INT4(10)` | Number of Obligations |
-| `NumberOfRecords` | `INT4(10)` | Number of Obligations |
-| `CmplOblAsgtFlfmtAggrgdValue` | `INT4(10)` | Number of Obligations |
-| `FulfillmentPercentageValue` | `DEC(5)` | Percentage of Fullfilled Obligations |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplncObligationAssignmentUUID` |  | |  |  | `RAW(16)` | Compliance Obligation Assignment UUID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location Revision Text |
+| `ComplianceObligationUUID` |  | |  |  | `RAW(16)` | Compliance Obligation |
+| `CmplncOblgnAssgmtAppltyStatus` |  | |  |  | `CHAR(2)` | Applicability |
+| `CmplncOblgnAssgmtCmplncStatus` |  | |  |  | `CHAR(2)` | Status |
+| `ComplianceObligationTypeCode` |  | |  |  | `CHAR(2)` | Compliance Obligation Type |
+| `ComplianceObligationDomainCode` |  | |  |  | `CHAR(21)` | Compliance Obligation Domain |
+| `NumberOfFulfilledObligations` |  | |  |  | `INT4(10)` | Number of Obligations |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Obligations |
+| `CmplOblAsgtFlfmtAggrgdValue` |  | |  |  | `INT4(10)` | Number of Obligations |
+| `FulfillmentPercentageValue` |  | |  |  | `DEC(5)` | Percentage of Fullfilled Obligations |

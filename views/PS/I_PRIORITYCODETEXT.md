@@ -28,8 +28,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `PriorityCode` | `CHAR(1)` | Priority |
-| `PriorityCodeName` | `CHAR(40)` | Priority description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PriorityCode` |  | |  |  | `CHAR(1)` | Priority |
+| `PriorityCodeName` |  | |  |  | `CHAR(40)` | Priority description |

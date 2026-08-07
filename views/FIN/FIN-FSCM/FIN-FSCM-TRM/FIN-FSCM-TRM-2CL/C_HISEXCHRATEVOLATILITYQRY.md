@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `VolatilityType` | `CHAR(3)` | Volatility Type |
-| `SourceCurrency` | `CUKY(5)` | From currency |
-| `TargetCurrency` | `CUKY(5)` | To Currency |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `VolatilityTermInDays` | `NUMC(10)` | Term in Days |
-| `ExchangeRateVolatilityValue` | `DEC(11)` | Exchange Rate Volatility |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VolatilityType` |  | |  |  | `CHAR(3)` | Volatility Type |
+| `SourceCurrency` |  | |  |  | `CUKY(5)` | From currency |
+| `TargetCurrency` |  | |  |  | `CUKY(5)` | To Currency |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `VolatilityTermInDays` |  | |  |  | `NUMC(10)` | Term in Days |
+| `ExchangeRateVolatilityValue` |  | |  |  | `DEC(11)` | Exchange Rate Volatility |

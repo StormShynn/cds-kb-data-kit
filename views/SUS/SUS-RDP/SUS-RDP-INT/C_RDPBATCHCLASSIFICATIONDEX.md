@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Batch` | `CHAR(10)` | Batch Number |
-| `Material` | `CHAR(40)` | Material Number |
-| `Plant` | `CHAR(4)` | Plant |
-| `BatchClass` | `CHAR(18)` | Class number |
-| `BatchCharacteristic` | `CHAR(30)` | Characteristic Name |
-| `BatchCharacteristicValue` | `CHAR(70)` | Characteristic Value |
-| `ManufactureDate` | `DATS(8)` | Date of Manufacture |
-| `LastChangeDateTime` | `DEC(21)` | Last Change Timestamp |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `BatchClass` |  | |  |  | `CHAR(18)` | Class number |
+| `BatchCharacteristic` |  | |  |  | `CHAR(30)` | Characteristic Name |
+| `BatchCharacteristicValue` |  | |  |  | `CHAR(70)` | Characteristic Value |
+| `ManufactureDate` |  | |  |  | `DATS(8)` | Date of Manufacture |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | Last Change Timestamp |

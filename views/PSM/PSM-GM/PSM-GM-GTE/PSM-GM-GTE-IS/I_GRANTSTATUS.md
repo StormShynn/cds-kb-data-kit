@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SystemStatus` | `CHAR(5)` | System status |
-| `StatusIsHidden` | `CHAR(1)` | 'Do not display status' flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SystemStatus` |  | |  |  | `CHAR(5)` | System status |
+| `StatusIsHidden` |  | |  |  | `CHAR(1)` | 'Do not display status' flag |

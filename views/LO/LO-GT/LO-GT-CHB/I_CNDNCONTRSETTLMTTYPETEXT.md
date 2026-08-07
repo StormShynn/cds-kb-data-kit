@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrSettlmtType` | `CHAR(1)` | Condition Contract Settlement Type |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrSettlmtTypeName` | `CHAR(60)` | Condition Contract Settlement Type Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrSettlmtType` |  | |  |  | `CHAR(1)` | Condition Contract Settlement Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrSettlmtTypeName` |  | |  |  | `CHAR(60)` | Condition Contract Settlement Type Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

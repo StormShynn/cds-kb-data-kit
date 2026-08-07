@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ContactPersonVIPType` | `CHAR(1)` | VIP Partner |
-| `Language` | `LANG(1)` | Language Key |
-| `BPContactPersonVIPText` | `CHAR(20)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContactPersonVIPType` |  | |  |  | `CHAR(1)` | VIP Partner |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BPContactPersonVIPText` |  | |  |  | `CHAR(20)` | Description |

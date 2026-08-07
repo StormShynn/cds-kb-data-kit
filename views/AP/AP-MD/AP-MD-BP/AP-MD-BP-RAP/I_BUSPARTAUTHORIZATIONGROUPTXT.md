@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AuthorizationObject` | `CHAR(10)` | Authorization Group Object |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `AuthorizationGroupName` | `CHAR(50)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AuthorizationObject` |  | |  |  | `CHAR(10)` | Authorization Group Object |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `AuthorizationGroupName` |  | |  |  | `CHAR(50)` | Description |

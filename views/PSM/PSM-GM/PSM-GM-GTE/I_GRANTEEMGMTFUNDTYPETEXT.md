@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `GranteeMgmtFundType` | `CHAR(1)` | Fund Type for Grants Management |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `GranteeMgmtFundTypeName` | `CHAR(40)` | Fund Type Name in Grantee Management |
-| `DomainValueName` | `CHAR(60)` | Short Text for Fixed Values |
-| `GrnteMgmtFundTypeNameSearchTxt` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GranteeMgmtFundType` |  | |  |  | `CHAR(1)` | Fund Type for Grants Management |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `GranteeMgmtFundTypeName` |  | |  |  | `CHAR(40)` | Fund Type Name in Grantee Management |
+| `DomainValueName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `GrnteMgmtFundTypeNameSearchTxt` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

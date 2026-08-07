@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrSettlmt` | `CHAR(10)` | Supplier Settlement |
-| `SuplrSettlmtItem` | `NUMC(6)` | Document Item |
-| `CustomerSettlmtRecipient` | `CHAR(10)` | Customer Settlement Recipient |
-| `PriorSupplier` | `CHAR(10)` | Prior Supplier |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrSettlmt` |  | |  |  | `CHAR(10)` | Supplier Settlement |
+| `SuplrSettlmtItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `CustomerSettlmtRecipient` |  | |  |  | `CHAR(10)` | Customer Settlement Recipient |
+| `PriorSupplier` |  | |  |  | `CHAR(10)` | Prior Supplier |

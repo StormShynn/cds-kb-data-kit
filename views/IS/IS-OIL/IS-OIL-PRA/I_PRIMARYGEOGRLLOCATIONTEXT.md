@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `PrimaryGeogrlLocation` | `CHAR(2)` | Primary Geographical Location |
-| `Language` | `LANG(1)` | Language Key |
-| `PrimaryGeogrlLocationName` | `CHAR(30)` | Primary geographical location description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PrimaryGeogrlLocationName` |  | |  |  | `CHAR(30)` | Primary geographical location description |

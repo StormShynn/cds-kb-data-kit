@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillingDocumentClearingStatus` | `CHAR(1)` | Billing Document Clearing Status |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingDocumentClearingStatus` |  | |  |  | `CHAR(1)` | Billing Document Clearing Status |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

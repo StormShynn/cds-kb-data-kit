@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ChangeRecordStatus` | `CHAR(2)` | User Status Code |
-| `ChangeRecordStatusDescription` | `CHAR(30)` | Status Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ChangeRecordStatus` |  | |  |  | `CHAR(2)` | User Status Code |
+| `ChangeRecordStatusDescription` |  | |  |  | `CHAR(30)` | Status Text |

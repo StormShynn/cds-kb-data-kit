@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FiscalTimeUnit` | `CHAR(1)` | Fiscal Time Period Offset Unit |
-| `FiscalTimeUnitName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalTimeUnit` |  | |  |  | `CHAR(1)` | Fiscal Time Period Offset Unit |
+| `FiscalTimeUnitName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

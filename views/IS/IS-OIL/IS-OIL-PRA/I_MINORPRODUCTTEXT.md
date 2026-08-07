@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MajorProduct` | `CHAR(1)` | Major product code |
-| `MinorProduct` | `CHAR(2)` | Minor Product Code |
-| `Language` | `LANG(1)` | Language Key |
-| `MinorProductName` | `CHAR(50)` | Minor Product Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MajorProduct` |  | |  |  | `CHAR(1)` | Major product code |
+| `MinorProduct` |  | |  |  | `CHAR(2)` | Minor Product Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MinorProductName` |  | |  |  | `CHAR(50)` | Minor Product Name |

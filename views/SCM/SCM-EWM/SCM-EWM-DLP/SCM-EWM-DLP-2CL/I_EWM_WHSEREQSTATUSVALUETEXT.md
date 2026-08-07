@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouseRequestStatusType` | `CHAR(5)` | Status Type |
-| `EWMWarehouseRequestStatus` | `CHAR(1)` | Status Value |
-| `Language` | `LANG(1)` | Language Key |
-| `EWMWarehouseRequestStatusName` | `CHAR(30)` | Individual Status of an Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouseRequestStatusType` |  | |  |  | `CHAR(5)` | Status Type |
+| `EWMWarehouseRequestStatus` |  | |  |  | `CHAR(1)` | Status Value |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMWarehouseRequestStatusName` |  | |  |  | `CHAR(30)` | Individual Status of an Object |

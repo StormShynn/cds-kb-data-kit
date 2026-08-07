@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SupAssgmtSource` | `CHAR(1)` | Stock Source for All Documents of Supply Demand Overview |
-| `SupAssgmtSourceName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupAssgmtSource` |  | |  |  | `CHAR(1)` | Stock Source for All Documents of Supply Demand Overview |
+| `SupAssgmtSourceName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

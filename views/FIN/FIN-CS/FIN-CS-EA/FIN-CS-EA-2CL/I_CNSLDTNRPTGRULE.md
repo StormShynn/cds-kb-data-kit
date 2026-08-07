@@ -33,20 +33,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CnsldtnRptgRuleUUID` | `CHAR(32)` | Financial Consolidation UUID |
-| `SequenceNumber` | `NUMC(6)` | Reporting Rule Position Number |
-| `ConsolidationReportingRuleID` | `CHAR(3)` | Reporting Rule Variant |
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `ConsolidationReportingItemHier` | `CHAR(10)` | Reporting Item Hierarchy |
-| `ConsolidationReportingItem` | `CHAR(10)` | Reporting Item |
-| `FinancialStatementItem` | `CHAR(10)` | Financial Statement Item |
-| `SubItemCategory` | `CHAR(3)` | Subitem Category |
-| `SubItem` | `CHAR(10)` | Subitem |
-| `ConsolidationDocumentType` | `CHAR(2)` | Document Type |
-| `ConsolidationUnit` | `CHAR(18)` | Consolidation Unit |
-| `ConsolidationReverseSign` | `CHAR(2)` | Reverse Sign Indicator |
-| `ConsolidationVersion` | `CHAR(3)` | Consolidation Version |
-| `FromFiscalYearPeriod` | `NUMC(7)` | Fiscal Year Period |
-| `ToFiscalYearPeriod` | `NUMC(7)` | Fiscal Year Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnsldtnRptgRuleUUID` |  | |  |  | `CHAR(32)` | Financial Consolidation UUID |
+| `SequenceNumber` |  | |  |  | `NUMC(6)` | Reporting Rule Position Number |
+| `ConsolidationReportingRuleID` |  | |  |  | `CHAR(3)` | Reporting Rule Variant |
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `ConsolidationReportingItemHier` |  | |  |  | `CHAR(10)` | Reporting Item Hierarchy |
+| `ConsolidationReportingItem` |  | |  |  | `CHAR(10)` | Reporting Item |
+| `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
+| `SubItemCategory` |  | |  |  | `CHAR(3)` | Subitem Category |
+| `SubItem` |  | |  |  | `CHAR(10)` | Subitem |
+| `ConsolidationDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `ConsolidationReverseSign` |  | |  |  | `CHAR(2)` | Reverse Sign Indicator |
+| `ConsolidationVersion` |  | |  |  | `CHAR(3)` | Consolidation Version |
+| `FromFiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `ToFiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |

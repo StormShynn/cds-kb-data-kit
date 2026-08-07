@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GranteeMgmtBillingRule` | `NUMC(4)` | Rule Used as a Basis for Billing |
-| `GteeMManualBillingIsAllowed` | `CHAR(1)` | Allow Manual Billing Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GranteeMgmtBillingRule` |  | |  |  | `NUMC(4)` | Rule Used as a Basis for Billing |
+| `GteeMManualBillingIsAllowed` |  | |  |  | `CHAR(1)` | Allow Manual Billing Indicator |

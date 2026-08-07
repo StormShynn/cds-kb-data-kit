@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IsLeaseOrPlant` | `CHAR(1)` | Lease Plant Code |
-| `Language` | `LANG(1)` | Language Key |
-| `IsLeaseOrPlantName` | `CHAR(60)` | Lease or Plant Origin |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IsLeaseOrPlant` |  | |  |  | `CHAR(1)` | Lease Plant Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IsLeaseOrPlantName` |  | |  |  | `CHAR(60)` | Lease or Plant Origin |

@@ -34,38 +34,38 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Supplier` | `CHAR(10)` | Account Number of Supplier |
-| `PurchasingCategory` | `CHAR(20)` | Purchasing Category ID |
-| `SuplrEvalUserDefinedCriteria` | `CHAR(10)` | Criterion Identifier |
-| `MaterialGroup` | `CHAR(9)` | Material Group |
-| `SupplierCountry` | `CHAR(3)` | Supplier Country/Region |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `CalendarWeek` | `NUMC(2)` | Calendar Week |
-| `CalendarQuarter` | `NUMC(1)` | Calendar Quarter |
-| `PurgCatName` | `CHAR(1)` |  |
-| `NmbrOfSuplrEvalUsrDfndCritra1` | `INT1(3)` |  |
-| `NmbrOfSuplrEvalUsrDfndCritra2` | `INT1(3)` |  |
-| `NmbrOfSuplrEvalUsrDfndCritra3` | `INT1(3)` |  |
-| `NmbrOfSuplrEvalUsrDfndCritra4` | `INT1(3)` |  |
-| `NmbrOfSuplrEvalUsrDfndCritra5` | `INT1(3)` |  |
-| `NmbrOfSuplrEvalUsrDfndCritra6` | `INT1(3)` |  |
-| `SuplrEvalUsrDfndCritra1Value` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCritra2Value` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCritra3Value` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCritra4Value` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCritra5Value` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrCriteria6WgtgValue` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `TotNmbrOfSuplrUsrDfndCritra` | `INT4(10)` |  |
-| `SuplrEvalUsrDfndCritraSumValue` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCritraTotVal` | `DEC(5)` | Weight % for Supplier Evaluation |
-| `SuplrEvalUsrDfndCriteria1Score` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCriteria2Score` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCriteria3Score` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCriteria4Score` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCriteria5Score` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SupplierEvalUsrCriteria6Value` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
-| `SuplrEvalUsrDfndCritraTotScore` | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `PurchasingCategory` |  | |  |  | `CHAR(20)` | Purchasing Category ID |
+| `SuplrEvalUserDefinedCriteria` |  | |  |  | `CHAR(10)` | Criterion Identifier |
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
+| `SupplierCountry` |  | |  |  | `CHAR(3)` | Supplier Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `CalendarWeek` |  | |  |  | `NUMC(2)` | Calendar Week |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `PurgCatName` |  | |  |  | `CHAR(1)` |  |
+| `NmbrOfSuplrEvalUsrDfndCritra1` |  | |  |  | `INT1(3)` |  |
+| `NmbrOfSuplrEvalUsrDfndCritra2` |  | |  |  | `INT1(3)` |  |
+| `NmbrOfSuplrEvalUsrDfndCritra3` |  | |  |  | `INT1(3)` |  |
+| `NmbrOfSuplrEvalUsrDfndCritra4` |  | |  |  | `INT1(3)` |  |
+| `NmbrOfSuplrEvalUsrDfndCritra5` |  | |  |  | `INT1(3)` |  |
+| `NmbrOfSuplrEvalUsrDfndCritra6` |  | |  |  | `INT1(3)` |  |
+| `SuplrEvalUsrDfndCritra1Value` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCritra2Value` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCritra3Value` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCritra4Value` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCritra5Value` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrCriteria6WgtgValue` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `TotNmbrOfSuplrUsrDfndCritra` |  | |  |  | `INT4(10)` |  |
+| `SuplrEvalUsrDfndCritraSumValue` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCritraTotVal` |  | |  |  | `DEC(5)` | Weight % for Supplier Evaluation |
+| `SuplrEvalUsrDfndCriteria1Score` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCriteria2Score` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCriteria3Score` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCriteria4Score` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCriteria5Score` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SupplierEvalUsrCriteria6Value` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |
+| `SuplrEvalUsrDfndCritraTotScore` |  | |  |  | `DEC(10)` | User-Defined Score for Supplier Evaluation |

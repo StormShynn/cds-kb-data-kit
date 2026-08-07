@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanCorrespncRoleType` | `CHAR(4)` | CML Correspondence Role Type of Recipient |
-| `RoleCategory` | `CHAR(6)` | BP Role Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanCorrespncRoleType` |  | |  |  | `CHAR(4)` | CML Correspondence Role Type of Recipient |
+| `RoleCategory` |  | |  |  | `CHAR(6)` | BP Role Category |

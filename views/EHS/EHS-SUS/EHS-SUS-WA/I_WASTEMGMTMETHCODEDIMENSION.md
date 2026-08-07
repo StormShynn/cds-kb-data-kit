@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EnvrmtWasteMgmtMethCode` | `CHAR(10)` | Waste Management Method Code |
-| `EnvrmtWasteMgmtMethCodeGrp` | `CHAR(10)` | Waste Management Method Group |
-| `EnvrmtWasteMgmtMethCodeText` | `CHAR(255)` | Description (Extra Long) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EnvrmtWasteMgmtMethCode` |  | |  |  | `CHAR(10)` | Waste Management Method Code |
+| `EnvrmtWasteMgmtMethCodeGrp` |  | |  |  | `CHAR(10)` | Waste Management Method Group |
+| `EnvrmtWasteMgmtMethCodeText` |  | |  |  | `CHAR(255)` | Description (Extra Long) |

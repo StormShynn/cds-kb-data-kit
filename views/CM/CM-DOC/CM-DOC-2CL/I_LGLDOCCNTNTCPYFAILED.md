@@ -34,13 +34,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LglCntntMDocMappingUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LegalTransactionUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LegalTransaction` | `CHAR(10)` | Legal Transaction ID |
-| `LglCntntMDocumentUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LglCntntMDocument` | `CHAR(10)` | Document ID |
-| `LglCntntMGovLaw` | `CHAR(7)` | Governing Law |
-| `LglCntntMProfile` | `CHAR(10)` | Profile |
-| `LglTransAccessLvl` | `CHAR(4)` | Access Level |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocMappingUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransaction` |  | |  |  | `CHAR(10)` | Legal Transaction ID |
+| `LglCntntMDocumentUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMDocument` |  | |  |  | `CHAR(10)` | Document ID |
+| `LglCntntMGovLaw` |  | |  |  | `CHAR(7)` | Governing Law |
+| `LglCntntMProfile` |  | |  |  | `CHAR(10)` | Profile |
+| `LglTransAccessLvl` |  | |  |  | `CHAR(4)` | Access Level |

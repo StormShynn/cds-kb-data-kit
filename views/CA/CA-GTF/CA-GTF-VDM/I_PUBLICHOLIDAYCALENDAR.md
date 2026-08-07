@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PublicHolidayCalendar` | `CHAR(2)` | Public Holiday Calendar |
-| `ValidityStartYear` | `NUMC(4)` | Year from which data is stored |
-| `ValidityEndYear` | `NUMC(4)` | Year until which data is saved |
-| `LastChangeDate` | `DATS(8)` | Date |
-| `LastChangeTime` | `TIMS(6)` | Calendar: Creation or change time |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCalendar` |  | |  |  | `CHAR(2)` | Public Holiday Calendar |
+| `ValidityStartYear` |  | |  |  | `NUMC(4)` | Year from which data is stored |
+| `ValidityEndYear` |  | |  |  | `NUMC(4)` | Year until which data is saved |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Calendar: Creation or change time |

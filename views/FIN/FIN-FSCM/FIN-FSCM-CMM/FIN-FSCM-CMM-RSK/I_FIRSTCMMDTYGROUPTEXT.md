@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FirstCustSpecificCmmdtyGroup` | `CHAR(3)` | Commodity Group1 |
-| `Language` | `LANG(1)` | Language Key |
-| `FirstCustSpcfcCmmdtyGrpName` | `CHAR(30)` | Commodity Group Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FirstCustSpecificCmmdtyGroup` |  | |  |  | `CHAR(3)` | Commodity Group1 |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FirstCustSpcfcCmmdtyGrpName` |  | |  |  | `CHAR(30)` | Commodity Group Text |

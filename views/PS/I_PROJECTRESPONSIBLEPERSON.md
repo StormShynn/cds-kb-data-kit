@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ResponsiblePerson` | `NUMC(8)` | Number of the Responsible Person (Project Manager) |
-| `ResponsiblePersonName` | `CHAR(25)` | Name of responsible person (Project manager) |
-| `ResponsiblePersonIsBlocked` | `CHAR(1)` | Blocked |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ResponsiblePerson` |  | |  |  | `NUMC(8)` | Number of the Responsible Person (Project Manager) |
+| `ResponsiblePersonName` |  | |  |  | `CHAR(25)` | Name of responsible person (Project manager) |
+| `ResponsiblePersonIsBlocked` |  | |  |  | `CHAR(1)` | Blocked |

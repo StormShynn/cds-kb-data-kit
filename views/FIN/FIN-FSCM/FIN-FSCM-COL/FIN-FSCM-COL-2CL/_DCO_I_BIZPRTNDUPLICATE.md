@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `DCoBPDuplicateUUID` | `RAW(16)` | Business Partner Duplicate UUID |
-| `DCoBusinessPartnerDuplicate` | `CHAR(10)` | Business Partner Duplicate |
-| `DCoBPDuplicateCreatedByUser` | `CHAR(12)` | Created By |
-| `DCoBPDuplicateCreationDateTime` | `DEC(15)` | Created On/At |
-| `DCoBPDplLastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `DCoBPDplLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `DCoBPDuplicateUUID` |  | |  |  | `RAW(16)` | Business Partner Duplicate UUID |
+| `DCoBusinessPartnerDuplicate` |  | |  |  | `CHAR(10)` | Business Partner Duplicate |
+| `DCoBPDuplicateCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `DCoBPDuplicateCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DCoBPDplLastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DCoBPDplLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |

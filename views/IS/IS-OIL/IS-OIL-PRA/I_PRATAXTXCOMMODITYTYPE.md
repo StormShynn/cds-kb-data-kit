@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CommodityType` | `CHAR(3)` | Texas Commodity Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CommodityType` |  | |  |  | `CHAR(3)` | Texas Commodity Type |

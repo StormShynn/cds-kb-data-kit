@@ -36,8 +36,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `MaterialValuationClass` | `CHAR(4)` | Valuation Class |
-| `GLAccount` | `CHAR(10)` | G/L Account |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `MaterialValuationClass` |  | |  |  | `CHAR(4)` | Valuation Class |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |

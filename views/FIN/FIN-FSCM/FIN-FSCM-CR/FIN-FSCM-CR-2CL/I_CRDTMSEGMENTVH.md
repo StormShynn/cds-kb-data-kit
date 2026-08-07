@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |

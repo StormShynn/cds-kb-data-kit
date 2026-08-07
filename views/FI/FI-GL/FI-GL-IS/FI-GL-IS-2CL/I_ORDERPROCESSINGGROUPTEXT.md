@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `OrderProcessingGroup` | `NUMC(2)` | Processing group |
-| `OrderProcessingGroupName` | `CHAR(40)` | Order Processing Group Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `OrderProcessingGroup` |  | |  |  | `NUMC(2)` | Processing group |
+| `OrderProcessingGroupName` |  | |  |  | `CHAR(40)` | Order Processing Group Name |

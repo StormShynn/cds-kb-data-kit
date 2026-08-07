@@ -33,15 +33,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ResourceRequestUUID` | `RAW(16)` | Demand Key |
-| `EngagementProject` | `CHAR(40)` | Commercial Project ID |
-| `WorkPackage` | `CHAR(50)` | Plan Item |
-| `ResourceRequestStatus` | `CHAR(1)` | Assignment Status for a Resource Demand |
-| `StartDate` | `DATS(8)` | Field of type DATS |
-| `EndDate` | `DATS(8)` | Field of type DATS |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On |
-| `LastChangedByUser` | `CHAR(12)` | Changed By |
-| `LastChangeDateTime` | `DEC(15)` | Commercial Project Last Changed On |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ResourceRequestUUID` |  | |  |  | `RAW(16)` | Demand Key |
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Commercial Project ID |
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Plan Item |
+| `ResourceRequestStatus` |  | |  |  | `CHAR(1)` | Assignment Status for a Resource Demand |
+| `StartDate` |  | |  |  | `DATS(8)` | Field of type DATS |
+| `EndDate` |  | |  |  | `DATS(8)` | Field of type DATS |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Commercial Project Last Changed On |

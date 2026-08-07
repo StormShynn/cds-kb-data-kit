@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralObjectCategory` | `CHAR(6)` | Object Category |
-| `CollateralInsuranceType` | `CHAR(6)` | Insurance Type |
-| `Language` | `LANG(1)` | Language Key |
-| `CollateralInsuranceTypeText` | `CHAR(40)` | Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `CollateralInsuranceType` |  | |  |  | `CHAR(6)` | Insurance Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CollateralInsuranceTypeText` |  | |  |  | `CHAR(40)` | Type Name |

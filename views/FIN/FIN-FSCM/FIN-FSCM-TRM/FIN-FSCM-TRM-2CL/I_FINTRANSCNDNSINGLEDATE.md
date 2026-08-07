@@ -34,23 +34,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `FinancialInstrumentActivity` | `NUMC(5)` | Transaction Activity |
-| `FinancialTransactionDirection` | `NUMC(1)` | Direction of Transaction |
-| `FinConditionItem` | `NUMC(4)` | Condition |
-| `ConditionItemValidityStartDate` | `DATS(8)` | Condition Item Effective From |
-| `FinConditionSubItem` | `NUMC(2)` | Level Number of Condition Item for Recurring Payments |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Financial Instrument Product Category |
-| `FinConditionConditionCategory` | `CHAR(2)` | Condition Category |
-| `CalculationDate` | `DATS(8)` | Calculation Date |
-| `CalcDateIsAsEndDateMonthEnd` | `CHAR(1)` | Indicator showing calculation date is month end |
-| `DueDate` | `DATS(8)` | Due Date |
-| `DueDateIsAsEndDateMonthEnd` | `CHAR(1)` | Indicator showing due date is month end |
-| `ConditionPercentageRate` | `DEC(10)` | Percentage rate for condition items |
-| `FinConditionFixedAmount` | `CURR(13)` | Fixed Amount |
-| `FinConditionFixedAmountCrcy` | `CUKY(5)` | Fixed Amount Currency |
-| `InterestRateAdjustmentDate` | `DATS(8)` | Interest Rate Adjustment Date |
-| `IntrstRateAdjmtDateIsMonthEnd` | `CHAR(1)` | Indicator showing adjustment date is month end |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `FinancialInstrumentActivity` |  | |  |  | `NUMC(5)` | Transaction Activity |
+| `FinancialTransactionDirection` |  | |  |  | `NUMC(1)` | Direction of Transaction |
+| `FinConditionItem` |  | |  |  | `NUMC(4)` | Condition |
+| `ConditionItemValidityStartDate` |  | |  |  | `DATS(8)` | Condition Item Effective From |
+| `FinConditionSubItem` |  | |  |  | `NUMC(2)` | Level Number of Condition Item for Recurring Payments |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Financial Instrument Product Category |
+| `FinConditionConditionCategory` |  | |  |  | `CHAR(2)` | Condition Category |
+| `CalculationDate` |  | |  |  | `DATS(8)` | Calculation Date |
+| `CalcDateIsAsEndDateMonthEnd` |  | |  |  | `CHAR(1)` | Indicator showing calculation date is month end |
+| `DueDate` |  | |  |  | `DATS(8)` | Due Date |
+| `DueDateIsAsEndDateMonthEnd` |  | |  |  | `CHAR(1)` | Indicator showing due date is month end |
+| `ConditionPercentageRate` |  | |  |  | `DEC(10)` | Percentage rate for condition items |
+| `FinConditionFixedAmount` |  | |  |  | `CURR(13)` | Fixed Amount |
+| `FinConditionFixedAmountCrcy` |  | |  |  | `CUKY(5)` | Fixed Amount Currency |
+| `InterestRateAdjustmentDate` |  | |  |  | `DATS(8)` | Interest Rate Adjustment Date |
+| `IntrstRateAdjmtDateIsMonthEnd` |  | |  |  | `CHAR(1)` | Indicator showing adjustment date is month end |

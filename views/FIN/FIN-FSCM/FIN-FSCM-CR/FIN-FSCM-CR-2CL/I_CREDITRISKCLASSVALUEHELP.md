@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `CreditRiskClassName` | `CHAR(40)` | Name of Risk Class |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `CreditRiskClassName` |  | |  |  | `CHAR(40)` | Name of Risk Class |

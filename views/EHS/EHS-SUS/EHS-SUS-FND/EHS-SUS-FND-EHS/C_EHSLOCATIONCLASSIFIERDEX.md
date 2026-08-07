@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocClassifierUUID` | `RAW(16)` | Location Classifier UUID |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `EHSLocClassifierID` | `CHAR(40)` | BCO ID |
-| `EHSLocClassifierCentralID` | `CHAR(32)` | BCO KEY |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `LocationMigrationSource` | `CHAR(60)` | Migration Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocClassifierUUID` |  | |  |  | `RAW(16)` | Location Classifier UUID |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSLocClassifierID` |  | |  |  | `CHAR(40)` | BCO ID |
+| `EHSLocClassifierCentralID` |  | |  |  | `CHAR(32)` | BCO KEY |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `LocationMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |

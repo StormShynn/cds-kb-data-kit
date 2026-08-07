@@ -34,36 +34,36 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Project |
-| `EngagementProjFinPlanUUID` | `RAW(16)` | Financial Plan UUID |
-| `WorkPackage` | `CHAR(50)` | Work Package |
-| `WorkItem` | `CHAR(10)` | Work Item |
-| `EngagementProjectResourceType` | `CHAR(4)` | Resource Type ID |
-| `EngmtProjFinPlanVersion` | `CHAR(28)` | Plan Version ID |
-| `EngagementProjectResource` | `CHAR(40)` | Role / Expense |
-| `FiscalPeriod` | `NUMC(3)` | Period |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalYearPeriod` | `NUMC(7)` | Review Year Period |
-| `Currency` | `CUKY(5)` | Plan Currency |
-| `PlndCostAmt` | `CURR(17)` | Planned Cost |
-| `ActlCostAmt` | `CURR(23)` | Actual Cost |
-| `PlndRevnAmt` | `CURR(17)` | Planned Revenue |
-| `SupplyEffortQty` | `QUAN(15)` | Planned Effort |
-| `UnitOfMeasure` | `UNIT(3)` | Base Unit of Measure |
-| `PlndEffortQty` | `QUAN(15)` | Planned Effort |
-| `ActlEffortQty` | `QUAN(23)` | Actual Effort |
-| `ActualPlanDeviationCost` | `CURR(17)` |  |
-| `ActualPlanDeviationEffort` | `QUAN(15)` |  |
-| `EngmntProjectDeliveryOrg` | `CHAR(5)` |  |
-| `SalesOrder` | `CHAR(10)` | Sales Document |
-| `SalesOrderItem` | `NUMC(6)` | Sales Document Item |
-| `CappedNetAmount` | `CURR(15)` |  |
-| `CappedNetAmtAlertThldInPct` | `NUMC(3)` |  |
-| `WBSElement` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) |
-| `SalesOrderItemText` | `CHAR(40)` | Short Text for Sales Order Item |
-| `ActlRevnAmt` | `CURR(23)` |  |
-| `EngmntProjPlanLineType` | `CHAR(1)` | Line type |
-| `IsMyProject` | `CHAR(1)` |  |
-| `ProjectVisibility` | `CHAR(1)` | Confidential Indicator for Commercial Project |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Project |
+| `EngagementProjFinPlanUUID` |  | |  |  | `RAW(16)` | Financial Plan UUID |
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Work Package |
+| `WorkItem` |  | |  |  | `CHAR(10)` | Work Item |
+| `EngagementProjectResourceType` |  | |  |  | `CHAR(4)` | Resource Type ID |
+| `EngmtProjFinPlanVersion` |  | |  |  | `CHAR(28)` | Plan Version ID |
+| `EngagementProjectResource` |  | |  |  | `CHAR(40)` | Role / Expense |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Period |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Review Year Period |
+| `Currency` |  | |  |  | `CUKY(5)` | Plan Currency |
+| `PlndCostAmt` |  | |  |  | `CURR(17)` | Planned Cost |
+| `ActlCostAmt` |  | |  |  | `CURR(23)` | Actual Cost |
+| `PlndRevnAmt` |  | |  |  | `CURR(17)` | Planned Revenue |
+| `SupplyEffortQty` |  | |  |  | `QUAN(15)` | Planned Effort |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `PlndEffortQty` |  | |  |  | `QUAN(15)` | Planned Effort |
+| `ActlEffortQty` |  | |  |  | `QUAN(23)` | Actual Effort |
+| `ActualPlanDeviationCost` |  | |  |  | `CURR(17)` |  |
+| `ActualPlanDeviationEffort` |  | |  |  | `QUAN(15)` |  |
+| `EngmntProjectDeliveryOrg` |  | |  |  | `CHAR(5)` |  |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Document |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `CappedNetAmount` |  | |  |  | `CURR(15)` |  |
+| `CappedNetAmtAlertThldInPct` |  | |  |  | `NUMC(3)` |  |
+| `WBSElement` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) |
+| `SalesOrderItemText` |  | |  |  | `CHAR(40)` | Short Text for Sales Order Item |
+| `ActlRevnAmt` |  | |  |  | `CURR(23)` |  |
+| `EngmntProjPlanLineType` |  | |  |  | `CHAR(1)` | Line type |
+| `IsMyProject` |  | |  |  | `CHAR(1)` |  |
+| `ProjectVisibility` |  | |  |  | `CHAR(1)` | Confidential Indicator for Commercial Project |

@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtGlobalTeamID` | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
-| `RespyMgmtTeamName` | `CHAR(40)` | Name |
-| `RespyMgmtTeamStatus` | `CHAR(2)` | Team Status |
-| `RespyMgmtTeamType` | `CHAR(30)` | Team Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtGlobalTeamID` |  | |  |  | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
+| `RespyMgmtTeamName` |  | |  |  | `CHAR(40)` | Name |
+| `RespyMgmtTeamStatus` |  | |  |  | `CHAR(2)` | Team Status |
+| `RespyMgmtTeamType` |  | |  |  | `CHAR(30)` | Team Type |

@@ -34,25 +34,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RequirementDocumentNumber` | `CHAR(10)` | Sales Document |
-| `RequirementDocumentItem` | `NUMC(6)` | Sales Document Item |
-| `Issue` | `CHAR(4)` | Issue |
-| `IssueName` | `CHAR(60)` | Short Text for Fixed Values |
-| `NumberOfSalesOrderItems` | `INT4(10)` | Item Issues in Order |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `TotActualAmtInDisplayCurrency` | `CURR(19)` | Net Value in Display Currency |
-| `RequirementType` | `CHAR(2)` |  |
-| `RequestedDeliveryDate` | `DATS(8)` |  |
-| `Material` | `CHAR(40)` | Material Number |
-| `CrossPlantConfigurableProduct` | `CHAR(40)` | Cross-Plant Configurable Material |
-| `MaterialGroup` | `CHAR(9)` | Material Group |
-| `Plant` | `CHAR(4)` | Plant |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SalesDistrict` | `CHAR(6)` | Sales District |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `CompanyCode` | `CHAR(4)` | Company Code to Be Billed |
-| `RequirementSegment` | `CHAR(40)` | Requirement Segment |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RequirementDocumentNumber` |  | |  |  | `CHAR(10)` | Sales Document |
+| `RequirementDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `Issue` |  | |  |  | `CHAR(4)` | Issue |
+| `IssueName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `NumberOfSalesOrderItems` |  | |  |  | `INT4(10)` | Item Issues in Order |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `TotActualAmtInDisplayCurrency` |  | |  |  | `CURR(19)` | Net Value in Display Currency |
+| `RequirementType` |  | |  |  | `CHAR(2)` |  |
+| `RequestedDeliveryDate` |  | |  |  | `DATS(8)` |  |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `CrossPlantConfigurableProduct` |  | |  |  | `CHAR(40)` | Cross-Plant Configurable Material |
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesDistrict` |  | |  |  | `CHAR(6)` | Sales District |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code to Be Billed |
+| `RequirementSegment` |  | |  |  | `CHAR(40)` | Requirement Segment |

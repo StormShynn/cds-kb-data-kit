@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OwnerPaymentStatus` | `CHAR(2)` | Pay Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OwnerPaymentStatus` |  | |  |  | `CHAR(2)` | Pay Code |

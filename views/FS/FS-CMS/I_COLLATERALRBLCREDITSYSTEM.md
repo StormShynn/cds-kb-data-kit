@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblCreditSystem` | `CHAR(3)` | Credit System |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblCreditSystem` |  | |  |  | `CHAR(3)` | Credit System |

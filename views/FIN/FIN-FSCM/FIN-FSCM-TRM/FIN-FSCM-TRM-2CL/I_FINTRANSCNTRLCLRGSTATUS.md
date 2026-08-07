@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinTransCentralClearingStatus` | `NUMC(1)` | Clearing Status (TREA) |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinTransCentralClearingStatus` |  | |  |  | `NUMC(1)` | Clearing Status (TREA) |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

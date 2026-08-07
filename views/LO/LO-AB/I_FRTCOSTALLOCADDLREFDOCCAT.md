@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FrtCostAllocAddlRefDocCat` | `CHAR(2)` | Additional Reference Document Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FrtCostAllocAddlRefDocCat` |  | |  |  | `CHAR(2)` | Additional Reference Document Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

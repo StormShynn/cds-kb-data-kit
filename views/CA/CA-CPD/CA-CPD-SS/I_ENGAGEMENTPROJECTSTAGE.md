@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectStage` | `CHAR(4)` | Commercial Project: Stage |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |

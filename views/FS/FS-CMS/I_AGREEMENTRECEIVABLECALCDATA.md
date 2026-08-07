@@ -29,19 +29,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementReceivableUUID` | `RAW(16)` | GUID for Table CMS_CAG_RBL |
-| `CollateralRblCreditSystem` | `CHAR(3)` | Credit System |
-| `CollateralReceivableID` | `CHAR(64)` | Receivable ID |
-| `AgreementPortionUUID` | `RAW(16)` | GUID for Table CMS_CAG_POR |
-| `CollateralAgreementUUID` | `RAW(16)` | GUID for Table CMS_CAG |
-| `CollateralConstellationUUID` | `RAW(16)` | Constellation GUID |
-| `CollateralAgreementRblCrcy` | `CUKY(5)` | Calculations Result Currency |
-| `AgrmtRblDistrdColltrlCurRskAmt` | `CURR(17)` | Distributed Collateral value |
-| `AgrmtRblDistrdColltrlMaxRskAmt` | `CURR(17)` | Distributed Collateral value |
-| `AgrmtRblDistrdColltrlCurRskPct` | `DEC(10)` | Calculations Result as Pecentage |
-| `AgrmtRblDistrdColltrlMaxRskPct` | `DEC(10)` | Calculations Result as Pecentage |
-| `AgreementRblCalcLastChgdBy` | `CHAR(12)` | Last Changed By |
-| `AgreementRblCalcLastChgdDate` | `DATS(8)` | Date on which last change was done |
-| `AgreementRblCalcLastChgdTime` | `TIMS(6)` | Time at which last change was made |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementReceivableUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_RBL |
+| `CollateralRblCreditSystem` |  | |  |  | `CHAR(3)` | Credit System |
+| `CollateralReceivableID` |  | |  |  | `CHAR(64)` | Receivable ID |
+| `AgreementPortionUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_POR |
+| `CollateralAgreementUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG |
+| `CollateralConstellationUUID` |  | |  |  | `RAW(16)` | Constellation GUID |
+| `CollateralAgreementRblCrcy` |  | |  |  | `CUKY(5)` | Calculations Result Currency |
+| `AgrmtRblDistrdColltrlCurRskAmt` |  | |  |  | `CURR(17)` | Distributed Collateral value |
+| `AgrmtRblDistrdColltrlMaxRskAmt` |  | |  |  | `CURR(17)` | Distributed Collateral value |
+| `AgrmtRblDistrdColltrlCurRskPct` |  | |  |  | `DEC(10)` | Calculations Result as Pecentage |
+| `AgrmtRblDistrdColltrlMaxRskPct` |  | |  |  | `DEC(10)` | Calculations Result as Pecentage |
+| `AgreementRblCalcLastChgdBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `AgreementRblCalcLastChgdDate` |  | |  |  | `DATS(8)` | Date on which last change was done |
+| `AgreementRblCalcLastChgdTime` |  | |  |  | `TIMS(6)` | Time at which last change was made |

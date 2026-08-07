@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblProductClass` | `CHAR(6)` | Product Class |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblProductClass` |  | |  |  | `CHAR(6)` | Product Class |

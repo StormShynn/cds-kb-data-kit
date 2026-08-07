@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `SuplrRetMatlAuthznRqmtSts` | `CHAR(1)` | Supplier RMA Number Required |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SuplrRetMatlAuthznRqmtStsName` | `CHAR(60)` | Supplier RMA Number Required Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SuplrRetMatlAuthznRqmtSts` |  | |  |  | `CHAR(1)` | Supplier RMA Number Required |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SuplrRetMatlAuthznRqmtStsName` |  | |  |  | `CHAR(60)` | Supplier RMA Number Required Name |

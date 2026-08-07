@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CreditDecisionDocApprvlStatus` | `CHAR(1)` | Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditDecisionDocApprvlStatus` |  | |  |  | `CHAR(1)` | Status |

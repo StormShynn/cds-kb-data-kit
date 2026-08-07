@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductionResourceType` | `CHAR(2)` | Production Resource Type |
-| `ProductionResourceInternalID` | `NUMC(8)` | Object ID of the resource |
-| `Language` | `LANG(1)` | Language Key |
-| `ProductionResourceText` | `CHAR(40)` | Production Resource Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductionResourceType` |  | |  |  | `CHAR(2)` | Production Resource Type |
+| `ProductionResourceInternalID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProductionResourceText` |  | |  |  | `CHAR(40)` | Production Resource Text |

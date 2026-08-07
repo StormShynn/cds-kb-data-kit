@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSControlInstanceUUID` | `RAW(16)` | NodeID |
-| `EHSTaskHostObjectInstance` | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
-| `EHSRiskAssessmentType` | `CHAR(21)` | Risk Assessment Type |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessArea` | `CHAR(4)` | Business Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSControlInstanceUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSTaskHostObjectInstance` |  | |  |  | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
+| `EHSRiskAssessmentType` |  | |  |  | `CHAR(21)` | Risk Assessment Type |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |

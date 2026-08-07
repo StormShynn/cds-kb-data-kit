@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NoticeOfViolationSource` | `CHAR(21)` | Violation Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NoticeOfViolationSource` |  | |  |  | `CHAR(21)` | Violation Source |

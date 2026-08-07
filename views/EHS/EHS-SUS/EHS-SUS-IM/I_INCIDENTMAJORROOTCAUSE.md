@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentMajorRootCause` | `CHAR(21)` | Root Cause |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentMajorRootCause` |  | |  |  | `CHAR(21)` | Root Cause |

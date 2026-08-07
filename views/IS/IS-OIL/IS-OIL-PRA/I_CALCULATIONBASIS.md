@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CalculationBasis` | `CHAR(1)` | Actual, Entitlement, Settlement Codes |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalculationBasis` |  | |  |  | `CHAR(1)` | Actual, Entitlement, Settlement Codes |

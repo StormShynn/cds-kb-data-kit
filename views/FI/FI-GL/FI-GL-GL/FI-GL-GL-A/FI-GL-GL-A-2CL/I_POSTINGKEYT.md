@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `PostingKey` | `CHAR(2)` | Posting Key |
-| `SpecialGLCode` | `CHAR(1)` | Special G/L Indicator |
-| `FinancialAccountType` | `CHAR(1)` | Account Type |
-| `PostingKeyName` | `CHAR(20)` | Posting Key Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PostingKey` |  | |  |  | `CHAR(2)` | Posting Key |
+| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `PostingKeyName` |  | |  |  | `CHAR(20)` | Posting Key Name |

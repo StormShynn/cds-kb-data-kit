@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MTMDataSourceType` | `CHAR(2)` | Type of Data Record |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MTMDataSourceType` |  | |  |  | `CHAR(2)` | Type of Data Record |

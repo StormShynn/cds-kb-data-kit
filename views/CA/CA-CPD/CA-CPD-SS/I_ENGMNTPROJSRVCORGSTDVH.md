@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |

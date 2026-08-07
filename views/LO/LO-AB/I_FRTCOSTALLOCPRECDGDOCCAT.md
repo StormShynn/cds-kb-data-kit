@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FrtCostAllocPrecdgDocCat` | `CHAR(2)` | Document Category of Preceding Document |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FrtCostAllocPrecdgDocCat` |  | |  |  | `CHAR(2)` | Document Category of Preceding Document |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

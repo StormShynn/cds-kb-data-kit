@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinInstrTransactionCategory` | `NUMC(3)` | Transaction Category |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Financial Product Category |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainText` | `CHAR(30)` | Name of Transaction Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinInstrTransactionCategory` |  | |  |  | `NUMC(3)` | Transaction Category |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Financial Product Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainText` |  | |  |  | `CHAR(30)` | Name of Transaction Category |

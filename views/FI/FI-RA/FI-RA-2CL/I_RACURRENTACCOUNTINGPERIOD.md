@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `AccountingPrinciple` | `CHAR(4)` | Accounting Principle |
-| `FiscalYearCurrentPeriod` | `NUMC(7)` | Fiscal Year + Fiscal Period |
-| `CurrentFiscalYear` | `NUMC(4)` | Fiscal Year |
-| `CurrentFiscalPeriod` | `NUMC(3)` | Fiscal Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `AccountingPrinciple` |  | |  |  | `CHAR(4)` | Accounting Principle |
+| `FiscalYearCurrentPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `CurrentFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `CurrentFiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |

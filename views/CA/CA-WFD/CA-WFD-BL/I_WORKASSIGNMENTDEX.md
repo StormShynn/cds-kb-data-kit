@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkAssignment` | `NUMC(8)` | Workforce Assignment ID |
-| `WorkAssignmentStartDate` | `DATS(8)` | Start Date |
-| `WorkAssignmentEndDate` | `DATS(8)` | End Date |
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `WorkAssignmentExternalID` | `CHAR(100)` | External User ID |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `IsContingentWorker` | `CHAR(1)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkAssignment` |  | |  |  | `NUMC(8)` | Workforce Assignment ID |
+| `WorkAssignmentStartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `WorkAssignmentEndDate` |  | |  |  | `DATS(8)` | End Date |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `WorkAssignmentExternalID` |  | |  |  | `CHAR(100)` | External User ID |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `IsContingentWorker` |  | |  |  | `CHAR(1)` |  |

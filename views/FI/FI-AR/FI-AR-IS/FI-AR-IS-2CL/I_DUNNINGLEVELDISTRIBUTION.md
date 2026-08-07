@@ -35,30 +35,30 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Customer` | `CHAR(10)` | Customer |
-| `DunningLevel` | `NUMC(1)` | Dunning Level |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `CustomerCountry` | `CHAR(3)` | Country / Region Key |
-| `CustomerRegion` | `CHAR(3)` | Region (State, Province, County) |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `ReconciliationAccount` | `CHAR(10)` | Reconciliation Account in General Ledger |
-| `CustomerBasicAuthorizationGrp` | `CHAR(4)` | Customer Basic Authorization Group |
-| `CustomerFinsAuthorizationGrp` | `CHAR(4)` | Authorization Group |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerClassification` | `CHAR(2)` | Customer Classification |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `DunningLevel1AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 1 in Display Currency |
-| `DunningLevel2AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 2 in Display Currency |
-| `DunningLevel3AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 3 in Display Currency |
-| `DunningLevel4AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 4 in Display Currency |
-| `DunningLevel5AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 5 in Display Currency |
-| `DunningLevel6AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 6 in Display Currency |
-| `DunningLevel7AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 7 in Display Currency |
-| `DunningLevel8AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 8 in Display Currency |
-| `DunningLevel9AmtInDspCrcy` | `CURR(23)` | Dunning Amount Level 9 in Display Currency |
-| `DunningLevelRngeAmtInDspCrcy` | `CURR(23)` | Dunning Level Range Amount in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer |
+| `DunningLevel` |  | |  |  | `NUMC(1)` | Dunning Level |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `CustomerCountry` |  | |  |  | `CHAR(3)` | Country / Region Key |
+| `CustomerRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `ReconciliationAccount` |  | |  |  | `CHAR(10)` | Reconciliation Account in General Ledger |
+| `CustomerBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Customer Basic Authorization Group |
+| `CustomerFinsAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `DunningLevel1AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 1 in Display Currency |
+| `DunningLevel2AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 2 in Display Currency |
+| `DunningLevel3AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 3 in Display Currency |
+| `DunningLevel4AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 4 in Display Currency |
+| `DunningLevel5AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 5 in Display Currency |
+| `DunningLevel6AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 6 in Display Currency |
+| `DunningLevel7AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 7 in Display Currency |
+| `DunningLevel8AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 8 in Display Currency |
+| `DunningLevel9AmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Amount Level 9 in Display Currency |
+| `DunningLevelRngeAmtInDspCrcy` |  | |  |  | `CURR(23)` | Dunning Level Range Amount in Display Currency |

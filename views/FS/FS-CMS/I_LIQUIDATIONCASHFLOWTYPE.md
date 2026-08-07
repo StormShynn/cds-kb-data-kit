@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationCashFlowType` | `CHAR(6)` | Cash Flow Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationCashFlowType` |  | |  |  | `CHAR(6)` | Cash Flow Type |

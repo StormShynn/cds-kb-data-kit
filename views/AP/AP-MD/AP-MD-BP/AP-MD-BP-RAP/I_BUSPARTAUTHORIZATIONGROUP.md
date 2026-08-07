@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `AuthorizationObject` | `CHAR(10)` | Authorization Group Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `AuthorizationObject` |  | |  |  | `CHAR(10)` | Authorization Group Object |

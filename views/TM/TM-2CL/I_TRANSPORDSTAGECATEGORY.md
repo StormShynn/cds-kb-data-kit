@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdStageCategory` | `CHAR(1)` | Stage Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStageCategory` |  | |  |  | `CHAR(1)` | Stage Category |

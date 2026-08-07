@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidityItemHierarchy` | `CHAR(42)` | Hierarchy ID |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `ParentNode` | `CHAR(50)` | Hierarchy parent node |
-| `LiquidityItem` | `CHAR(40)` | Node value |
-| `ParentLiquidityItem` | `CHAR(40)` | Node value |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidityItemHierarchy` |  | |  |  | `CHAR(42)` | Hierarchy ID |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `ParentNode` |  | |  |  | `CHAR(50)` | Hierarchy parent node |
+| `LiquidityItem` |  | |  |  | `CHAR(40)` | Node value |
+| `ParentLiquidityItem` |  | |  |  | `CHAR(40)` | Node value |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |

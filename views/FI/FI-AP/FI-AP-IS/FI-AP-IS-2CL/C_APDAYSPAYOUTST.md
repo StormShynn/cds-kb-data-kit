@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Supplier` | `CHAR(10)` | Supplier |
-| `YearMonth` | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
-| `SupplierRegion` | `CHAR(3)` | Supplier Region |
-| `SupplierRegionName` | `CHAR(20)` | Description |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `SupplierName` | `CHAR(80)` | Name of Supplier |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `AccountingClerkName` | `CHAR(30)` | Name of Accounting Clerk |
-| `SupplierCountry` | `CHAR(3)` | Country/Region Key |
-| `SupplierCountryName` | `CHAR(50)` | Country/Region Name |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `WeightedNetAmountInDisplayCrcy` | `CURR(23)` | Weighted Net Amount in Display Currency |
-| `AmountInDisplayCurrency` | `CURR(23)` | Amount in Display Currency |
-| `DaysPayablesOutstanding` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `YearMonth` |  | |  |  | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
+| `SupplierRegion` |  | |  |  | `CHAR(3)` | Supplier Region |
+| `SupplierRegionName` |  | |  |  | `CHAR(20)` | Description |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `SupplierName` |  | |  |  | `CHAR(80)` | Name of Supplier |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `AccountingClerkName` |  | |  |  | `CHAR(30)` | Name of Accounting Clerk |
+| `SupplierCountry` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `SupplierCountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `WeightedNetAmountInDisplayCrcy` |  | |  |  | `CURR(23)` | Weighted Net Amount in Display Currency |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
+| `DaysPayablesOutstanding` |  | |  |  | `INT1(3)` |  |

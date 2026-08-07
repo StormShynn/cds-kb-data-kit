@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Commodity` | `CHAR(18)` | Commodity |
-| `CommodityUnit` | `UNIT(3)` | Unit of Measure of Commodity |
-| `CommodityType` | `CHAR(3)` | Type of Commodity |
-| `CommodityCategory` | `CHAR(3)` | Commodity Category |
-| `FirstCustSpecificCmmdtyGroup` | `CHAR(3)` | Commodity Group1 |
-| `SecondCustSpecificCmmdtyGroup` | `CHAR(3)` | Commodity Group2 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Commodity` |  | |  |  | `CHAR(18)` | Commodity |
+| `CommodityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure of Commodity |
+| `CommodityType` |  | |  |  | `CHAR(3)` | Type of Commodity |
+| `CommodityCategory` |  | |  |  | `CHAR(3)` | Commodity Category |
+| `FirstCustSpecificCmmdtyGroup` |  | |  |  | `CHAR(3)` | Commodity Group1 |
+| `SecondCustSpecificCmmdtyGroup` |  | |  |  | `CHAR(3)` | Commodity Group2 |

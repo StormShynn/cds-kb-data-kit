@@ -33,21 +33,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DisputeCaseUUID` | `CHAR(32)` | FSCM-DM: GUID (Internal Key of Dispute Case) |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Customer` | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
-| `LinkedInvoiceKey` | `CHAR(70)` | Object key |
-| `PromisedAmount` | `CURR(15)` | Amount Promised for Payment |
-| `PaidAmount` | `CURR(15)` | Amount Paid |
-| `Currency` | `CUKY(5)` | Currency of Promise to Pay |
-| `DueDate` | `DATS(8)` | Date for Which Payment Is Promised |
-| `CreationDate` | `DATS(8)` | Date on Which Promise to Pay Was Given |
-| `Status` | `CHAR(1)` | State of Promise to Pay |
-| `LastPaymentDate` | `DATS(8)` | Date of Last Payment |
-| `PromiseToPayLevel` | `INT1(3)` | Level of Promise to Pay |
-| `PromiseToPayGivenByPersonName` | `CHAR(40)` | Clerk That Gave the Promise to Pay |
-| `NumberOfInstallments` | `INT4(10)` | Number of Installments in the Promise to Pay in Installments |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `GlobalCurrencyExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DisputeCaseUUID` |  | |  |  | `CHAR(32)` | FSCM-DM: GUID (Internal Key of Dispute Case) |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Customer` |  | |  |  | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
+| `LinkedInvoiceKey` |  | |  |  | `CHAR(70)` | Object key |
+| `PromisedAmount` |  | |  |  | `CURR(15)` | Amount Promised for Payment |
+| `PaidAmount` |  | |  |  | `CURR(15)` | Amount Paid |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency of Promise to Pay |
+| `DueDate` |  | |  |  | `DATS(8)` | Date for Which Payment Is Promised |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date on Which Promise to Pay Was Given |
+| `Status` |  | |  |  | `CHAR(1)` | State of Promise to Pay |
+| `LastPaymentDate` |  | |  |  | `DATS(8)` | Date of Last Payment |
+| `PromiseToPayLevel` |  | |  |  | `INT1(3)` | Level of Promise to Pay |
+| `PromiseToPayGivenByPersonName` |  | |  |  | `CHAR(40)` | Clerk That Gave the Promise to Pay |
+| `NumberOfInstallments` |  | |  |  | `INT4(10)` | Number of Installments in the Promise to Pay in Installments |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `GlobalCurrencyExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |

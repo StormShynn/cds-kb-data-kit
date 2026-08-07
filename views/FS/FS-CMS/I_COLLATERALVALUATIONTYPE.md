@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralValuationType` | `CHAR(2)` | Type of Valuation Check performed on Collateral Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralValuationType` |  | |  |  | `CHAR(2)` | Type of Valuation Check performed on Collateral Object |

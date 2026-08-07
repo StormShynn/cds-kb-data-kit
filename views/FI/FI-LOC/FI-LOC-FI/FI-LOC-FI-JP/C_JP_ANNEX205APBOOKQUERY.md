@@ -37,39 +37,39 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Supplier` | `CHAR(10)` | Supplier |
-| `SourceLedger` | `CHAR(2)` | Source Ledger |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `JP_Annex205APLeadingAcctgDoc` | `CHAR(10)` | Japan Annex21(5) Leading Accounting Document Number |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `PostingDate` | `DATS(8)` | Posting Date |
-| `AccountingDocumentType` | `CHAR(2)` | Journal Entry Type |
-| `DocumentDate` | `DATS(8)` | Journal Entry Date |
-| `ClearingDate` | `DATS(8)` | Clearing Date |
-| `AccountingDocumentHeaderText` | `CHAR(25)` | Document Header Text |
-| `DocumentItemText` | `CHAR(50)` | Item Text |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `PurchasingDocument` | `CHAR(10)` | Purchasing Document |
-| `PurchasingDocumentItem` | `NUMC(5)` | Purchasing Document Item |
-| `DebitCreditCode` | `CHAR(1)` | Debit/Credit Code |
-| `ReferenceDocument` | `CHAR(10)` | Reference Doc. Number |
-| `ReferenceDocumentItem` | `NUMC(6)` | Reference Document Item |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `AmountInTransactionCurrency` | `CURR(23)` | Amount in Transaction Currency |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `AmountInCompanyCodeCurrency` | `CURR(23)` | Amount in Company Code Currency |
-| `AcctsPyblAmtInCCCrcy` | `CURR(23)` | Increase (Decrease) in Accounts Payable (Net) |
-| `Product` | `CHAR(40)` | Product |
-| `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `Quantity` | `QUAN(23)` | Quantity of Japan Annex21 |
-| `DocumentCurrency` | `CUKY(5)` | Currency Key |
-| `OrderPriceUnit` | `UNIT(3)` | Order Price Unit (Purchasing) |
-| `NetPriceQuantity` | `QUAN(5)` | Net price quantity |
-| `NetPriceAmount` | `CURR(11)` | Net Price in Purchasing Document (in Document Currency) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `JP_Annex205APLeadingAcctgDoc` |  | |  |  | `CHAR(10)` | Japan Annex21(5) Leading Accounting Document Number |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
+| `ClearingDate` |  | |  |  | `DATS(8)` | Clearing Date |
+| `AccountingDocumentHeaderText` |  | |  |  | `CHAR(25)` | Document Header Text |
+| `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document |
+| `PurchasingDocumentItem` |  | |  |  | `NUMC(5)` | Purchasing Document Item |
+| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
+| `ReferenceDocument` |  | |  |  | `CHAR(10)` | Reference Doc. Number |
+| `ReferenceDocumentItem` |  | |  |  | `NUMC(6)` | Reference Document Item |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `AcctsPyblAmtInCCCrcy` |  | |  |  | `CURR(23)` | Increase (Decrease) in Accounts Payable (Net) |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `Quantity` |  | |  |  | `QUAN(23)` | Quantity of Japan Annex21 |
+| `DocumentCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `OrderPriceUnit` |  | |  |  | `UNIT(3)` | Order Price Unit (Purchasing) |
+| `NetPriceQuantity` |  | |  |  | `QUAN(5)` | Net price quantity |
+| `NetPriceAmount` |  | |  |  | `CURR(11)` | Net Price in Purchasing Document (in Document Currency) |

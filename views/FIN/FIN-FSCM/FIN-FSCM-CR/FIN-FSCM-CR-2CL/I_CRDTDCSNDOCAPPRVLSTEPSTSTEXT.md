@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CreditDecisionDocApprvlStatus` | `CHAR(1)` | Status |
-| `Language` | `LANG(1)` | Language Key |
-| `CreditDecisionDocApprvlStsName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditDecisionDocApprvlStatus` |  | |  |  | `CHAR(1)` | Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CreditDecisionDocApprvlStsName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

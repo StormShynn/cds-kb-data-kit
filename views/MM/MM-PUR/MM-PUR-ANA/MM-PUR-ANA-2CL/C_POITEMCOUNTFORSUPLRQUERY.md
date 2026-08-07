@@ -34,14 +34,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Supplier` | `CHAR(10)` | Account Number of Supplier |
-| `PurchaseOrder` | `CHAR(10)` | Purchase Order Number |
-| `PurchaseOrderItem` | `NUMC(5)` | Item Number of Purchase Order |
-| `SupplierAccountGroup` | `CHAR(4)` | Supplier Account Group |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `NumberOfPurchaseOrders` | `INT4(10)` | Number of Purchase Orders |
-| `NumberOfPurchaseOrderItems` | `INT4(10)` | Number of Purchase Order Items |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `PurchaseOrder` |  | |  |  | `CHAR(10)` | Purchase Order Number |
+| `PurchaseOrderItem` |  | |  |  | `NUMC(5)` | Item Number of Purchase Order |
+| `SupplierAccountGroup` |  | |  |  | `CHAR(4)` | Supplier Account Group |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `NumberOfPurchaseOrders` |  | |  |  | `INT4(10)` | Number of Purchase Orders |
+| `NumberOfPurchaseOrderItems` |  | |  |  | `INT4(10)` | Number of Purchase Order Items |

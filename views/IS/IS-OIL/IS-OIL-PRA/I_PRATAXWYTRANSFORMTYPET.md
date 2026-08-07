@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxTransacFormType` | `CHAR(1)` | Tax 2.0 - Original / Amended / Unknown Indicator |
-| `Language` | `LANG(1)` | Language Key |
-| `TaxTransacFormTypeName` | `CHAR(60)` | PRA Tax Wyoming Transaction Form Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxTransacFormType` |  | |  |  | `CHAR(1)` | Tax 2.0 - Original / Amended / Unknown Indicator |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TaxTransacFormTypeName` |  | |  |  | `CHAR(60)` | PRA Tax Wyoming Transaction Form Type Name |

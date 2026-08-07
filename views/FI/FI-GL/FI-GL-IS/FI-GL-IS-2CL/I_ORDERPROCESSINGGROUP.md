@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `OrderProcessingGroup` | `NUMC(2)` | Processing group |
-| `OrdProcgGrpForSettlmtToCostCtr` | `CHAR(1)` | Identifier for Settlement to Cost Center |
-| `OrdProcgGrpForSettlmtToGLAcct` | `CHAR(1)` | Flag for Settlement to G/L Account |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `OrderProcessingGroup` |  | |  |  | `NUMC(2)` | Processing group |
+| `OrdProcgGrpForSettlmtToCostCtr` |  | |  |  | `CHAR(1)` | Identifier for Settlement to Cost Center |
+| `OrdProcgGrpForSettlmtToGLAcct` |  | |  |  | `CHAR(1)` | Flag for Settlement to G/L Account |

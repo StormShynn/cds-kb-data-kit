@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OperatorOrPurchaserCode` | `CHAR(1)` | Tax 2.0 - NM - Operator/Purchaser Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OperatorOrPurchaserCode` |  | |  |  | `CHAR(1)` | Tax 2.0 - NM - Operator/Purchaser Indicator |

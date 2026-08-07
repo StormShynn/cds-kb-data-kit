@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DebtCollectionsCompanyCode` | `CHAR(4)` | Company Code in Collections and Dispute Automation |
-| `CompanyCode` | `CHAR(4)` | Company Code (FI System) |
-| `LogicalSystem` | `CHAR(10)` | Logical System |
-| `DCoCompanyCodeName` | `CHAR(50)` | Company Code in Collections and Dispute Automation (Name) |
-| `CompanyCodeDescription` | `CHAR(50)` | Company Code in FI System (Name) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DebtCollectionsCompanyCode` |  | |  |  | `CHAR(4)` | Company Code in Collections and Dispute Automation |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code (FI System) |
+| `LogicalSystem` |  | |  |  | `CHAR(10)` | Logical System |
+| `DCoCompanyCodeName` |  | |  |  | `CHAR(50)` | Company Code in Collections and Dispute Automation (Name) |
+| `CompanyCodeDescription` |  | |  |  | `CHAR(50)` | Company Code in FI System (Name) |

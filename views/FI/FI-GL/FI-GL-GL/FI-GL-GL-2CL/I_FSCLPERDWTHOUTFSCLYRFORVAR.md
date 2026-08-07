@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |

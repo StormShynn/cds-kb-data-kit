@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrFrtInvcReqCreationType` | `CHAR(2)` | Freight Settlement Document Creation Type |
-| `Language` | `LANG(1)` | Language Key |
-| `SuplrFrtInvcReqCrtnTypeDesc` | `CHAR(60)` | Freight Settlement Document Creation Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrFrtInvcReqCreationType` |  | |  |  | `CHAR(2)` | Freight Settlement Document Creation Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SuplrFrtInvcReqCrtnTypeDesc` |  | |  |  | `CHAR(60)` | Freight Settlement Document Creation Type Description |

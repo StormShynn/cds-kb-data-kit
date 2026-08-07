@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
-| `DebtCollectionsSegmentName` | `CHAR(50)` | Name of Collection Segment |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `DebtCollectionsSegmentName` |  | |  |  | `CHAR(50)` | Name of Collection Segment |

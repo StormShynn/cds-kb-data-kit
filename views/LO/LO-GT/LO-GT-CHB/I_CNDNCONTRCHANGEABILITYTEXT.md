@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrChangeability` | `CHAR(2)` | Control for Changes on the User Interface |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrChangeabilityName` | `CHAR(60)` | UI Changeability Category Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrChangeability` |  | |  |  | `CHAR(2)` | Control for Changes on the User Interface |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrChangeabilityName` |  | |  |  | `CHAR(60)` | UI Changeability Category Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

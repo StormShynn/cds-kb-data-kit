@@ -34,17 +34,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `KeyDate` | `DATS(8)` | Key Date |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `BankGroup` | `CHAR(10)` | Bank Group ID |
-| `AmountInTransactionCurrency` | `CURR(18)` |  |
-| `TransactionCurrency` | `CUKY(5)` | Valuation Currency |
-| `FinTransProductGroup` | `CHAR(4)` | Product Group for Financial Transaction |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `FinancialInstrTransactionType` | `CHAR(3)` | Financial Instrument Transaction Type |
-| `Portfolio` | `CHAR(10)` | Portfolio |
-| `SecurityAccount` | `CHAR(10)` | Security Account |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `KeyDate` |  | |  |  | `DATS(8)` | Key Date |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(18)` |  |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Valuation Currency |
+| `FinTransProductGroup` |  | |  |  | `CHAR(4)` | Product Group for Financial Transaction |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `FinancialInstrTransactionType` |  | |  |  | `CHAR(3)` | Financial Instrument Transaction Type |
+| `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `SecurityAccount` |  | |  |  | `CHAR(10)` | Security Account |

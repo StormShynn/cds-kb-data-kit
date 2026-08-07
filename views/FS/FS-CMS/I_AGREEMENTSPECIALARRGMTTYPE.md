@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementSpecialArrgmtType` | `CHAR(6)` | Special Arrangement Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementSpecialArrgmtType` |  | |  |  | `CHAR(6)` | Special Arrangement Type |

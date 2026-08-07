@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CheckStatus` | `CHAR(2)` | Payment Processing - Check Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CheckStatus` |  | |  |  | `CHAR(2)` | Payment Processing - Check Status |

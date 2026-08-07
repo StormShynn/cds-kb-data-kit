@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustMgmtPartnerFunction` | `CHAR(8)` | Partner Function |
-| `Language` | `LANG(1)` | Language Key |
-| `SrvcMgmtPartnerFunctionText` | `CHAR(30)` | Partner Function Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtPartnerFunction` |  | |  |  | `CHAR(8)` | Partner Function |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SrvcMgmtPartnerFunctionText` |  | |  |  | `CHAR(30)` | Partner Function Description |

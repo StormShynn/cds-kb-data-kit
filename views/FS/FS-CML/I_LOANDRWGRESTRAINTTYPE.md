@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanDrwgRestraintType` | `NUMC(2)` | Type of Restraint on Drawing |
-| `LoanDrwgIsScrtyLending` | `CHAR(1)` | Austria- Securities lending indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanDrwgRestraintType` |  | |  |  | `NUMC(2)` | Type of Restraint on Drawing |
+| `LoanDrwgIsScrtyLending` |  | |  |  | `CHAR(1)` | Austria- Securities lending indicator |

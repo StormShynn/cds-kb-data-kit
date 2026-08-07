@@ -37,42 +37,42 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OrderID` | `CHAR(12)` | Order Number |
-| `OrderItem` | `NUMC(4)` | Number of Order Item |
-| `WorkCenterInternalID` | `NUMC(8)` | Object ID of the resource |
-| `WorkCenter` | `CHAR(8)` | Work Center |
-| `OrderOperation` | `CHAR(4)` | Operation or Phase Number |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `PartnerCostCtrActivityType` | `CHAR(6)` | Partner Cost Center Activity Type |
-| `PartnerCostCenter` | `CHAR(10)` | Partner Cost Center |
-| `Plant` | `CHAR(4)` | Plant |
-| `Product` | `CHAR(40)` | Product |
-| `UnitOfMeasure` | `UNIT(3)` | Cost Source Unit |
-| `CurPlanProjSlsOrdValnStrategy` | `CHAR(1)` | Val. Strat. for Current Plan Price, Sales Order/Proj. Stock |
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `ProducedProduct` | `CHAR(40)` | Product |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `OrderType` | `CHAR(4)` | Order Type |
-| `OrderCategory` | `NUMC(2)` | Order Category |
-| `SalesOrder` | `CHAR(10)` | Sales Order |
-| `SalesOrderItem` | `NUMC(6)` | Sales Order Item |
-| `WBSElementInternalID` | `NUMC(8)` | WBS Element |
-| `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `DisplayCurrency` | `CUKY(5)` | Currency Key |
-| `CreditActlCostInDspCrcy` | `CURR(23)` | Actual Cost Credit |
-| `DebitActlCostInDspCrcy` | `CURR(23)` | Actual Cost Debit |
-| `CrdtActlFxdCostInDspCrcy` | `CURR(23)` | Actual Fixed Cost Credit |
-| `DebitActlFxdCostInDspCrcy` | `CURR(23)` | Actual Fixed Cost Debit |
-| `ActualQtyInCostSourceUnit` | `INT1(3)` |  |
-| `CreditPlanCostInDspCrcy` | `CURR(23)` | Plan Cost Credit |
-| `DebitPlanCostInDspCrcy` | `CURR(23)` | Plan Cost Debit |
-| `CrdtPlnFxdCostInDspCrcy` | `CURR(23)` | Plan Fixed Cost Credit |
-| `DebitPlnFxdCostInDspCrcy` | `CURR(23)` | Plan Fixed Cost Debit |
-| `PlanQtyInCostSourceUnit` | `INT1(3)` |  |
-| `CrdtTargetCostInDspCrcy` | `CURR(23)` | Target Cost Credit |
-| `DebitTargetCostInDspCrcy` | `CURR(23)` | Target Cost Debit |
-| `TargetQtyInCostSourceUnit` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderID` |  | |  |  | `CHAR(12)` | Order Number |
+| `OrderItem` |  | |  |  | `NUMC(4)` | Number of Order Item |
+| `WorkCenterInternalID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `WorkCenter` |  | |  |  | `CHAR(8)` | Work Center |
+| `OrderOperation` |  | |  |  | `CHAR(4)` | Operation or Phase Number |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
+| `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Partner Cost Center |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Cost Source Unit |
+| `CurPlanProjSlsOrdValnStrategy` |  | |  |  | `CHAR(1)` | Val. Strat. for Current Plan Price, Sales Order/Proj. Stock |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ProducedProduct` |  | |  |  | `CHAR(40)` | Product |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CreditActlCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Cost Credit |
+| `DebitActlCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Cost Debit |
+| `CrdtActlFxdCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Fixed Cost Credit |
+| `DebitActlFxdCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Fixed Cost Debit |
+| `ActualQtyInCostSourceUnit` |  | |  |  | `INT1(3)` |  |
+| `CreditPlanCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Cost Credit |
+| `DebitPlanCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Cost Debit |
+| `CrdtPlnFxdCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Fixed Cost Credit |
+| `DebitPlnFxdCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Fixed Cost Debit |
+| `PlanQtyInCostSourceUnit` |  | |  |  | `INT1(3)` |  |
+| `CrdtTargetCostInDspCrcy` |  | |  |  | `CURR(23)` | Target Cost Credit |
+| `DebitTargetCostInDspCrcy` |  | |  |  | `CURR(23)` | Target Cost Debit |
+| `TargetQtyInCostSourceUnit` |  | |  |  | `INT1(3)` |  |

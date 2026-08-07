@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdgDocIsComplete` | `CHAR(1)` | Document Is Complete |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdgDocIsComplete` |  | |  |  | `CHAR(1)` | Document Is Complete |

@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RevenueProcessCode` | `CHAR(2)` | Revenue Process Code |
-| `Language` | `LANG(1)` | Language Key |
-| `RevenueProcessCodeName` | `CHAR(60)` | PRA Tax Colorado Revenue Process Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RevenueProcessCode` |  | |  |  | `CHAR(2)` | Revenue Process Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RevenueProcessCodeName` |  | |  |  | `CHAR(60)` | PRA Tax Colorado Revenue Process Code Name |

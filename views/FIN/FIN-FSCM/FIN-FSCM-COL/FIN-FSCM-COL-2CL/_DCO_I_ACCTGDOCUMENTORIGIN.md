@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoAccountingDocumentOrigin` | `CHAR(5)` | Origin of Receivable Item |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoAccountingDocumentOrigin` |  | |  |  | `CHAR(5)` | Origin of Receivable Item |

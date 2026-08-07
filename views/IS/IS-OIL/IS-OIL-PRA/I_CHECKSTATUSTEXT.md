@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CheckStatus` | `CHAR(2)` | Payment Processing - Check Status |
-| `Language` | `LANG(1)` | Language Key |
-| `CheckStatusName` | `CHAR(60)` | Payment Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CheckStatus` |  | |  |  | `CHAR(2)` | Payment Processing - Check Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CheckStatusName` |  | |  |  | `CHAR(60)` | Payment Status Name |

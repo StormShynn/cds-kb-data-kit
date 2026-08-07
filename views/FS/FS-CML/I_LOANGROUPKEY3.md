@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanGroupKey3` | `CHAR(6)` | Group Key 3 (Freely Available) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanGroupKey3` |  | |  |  | `CHAR(6)` | Group Key 3 (Freely Available) |

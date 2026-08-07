@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspChargeType` | `CHAR(15)` | Charge Type |
-| `TranspChargeIsDependent` | `CHAR(1)` | Dependent Charge Type |
-| `TranspRateSignType` | `CHAR(1)` | Positive/Negative |
-| `TransportationRateValueType` | `CHAR(1)` | Value Type |
-| `TranspChargeTypeIsInactive` | `CHAR(1)` | Inactive Charge Type |
-| `TransportationCalculationBase` | `CHAR(15)` | Calculation Base |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChargeType` |  | |  |  | `CHAR(15)` | Charge Type |
+| `TranspChargeIsDependent` |  | |  |  | `CHAR(1)` | Dependent Charge Type |
+| `TranspRateSignType` |  | |  |  | `CHAR(1)` | Positive/Negative |
+| `TransportationRateValueType` |  | |  |  | `CHAR(1)` | Value Type |
+| `TranspChargeTypeIsInactive` |  | |  |  | `CHAR(1)` | Inactive Charge Type |
+| `TransportationCalculationBase` |  | |  |  | `CHAR(15)` | Calculation Base |

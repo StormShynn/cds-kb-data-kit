@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `PubSecBudgetAccount` | `CHAR(10)` | Budget Account |
-| `Language` | `LANG(1)` | Language Key |
-| `BudgetAccountName` | `CHAR(20)` | Budget Account Name |
-| `BudgetAccountDescription` | `CHAR(50)` | Budget Account Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `PubSecBudgetAccount` |  | |  |  | `CHAR(10)` | Budget Account |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BudgetAccountName` |  | |  |  | `CHAR(20)` | Budget Account Name |
+| `BudgetAccountDescription` |  | |  |  | `CHAR(50)` | Budget Account Description |

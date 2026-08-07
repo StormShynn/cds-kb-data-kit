@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlREFixtureFittingType` | `CHAR(6)` | Fixtures and Fittings Type ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlREFixtureFittingType` |  | |  |  | `CHAR(6)` | Fixtures and Fittings Type ID |

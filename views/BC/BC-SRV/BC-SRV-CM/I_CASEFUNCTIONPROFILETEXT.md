@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CaseFunctionProfile` | `CHAR(8)` | Case: Function Profile ID |
-| `CaseFunctionProfileName` | `CHAR(40)` | Case: Profile Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseFunctionProfile` |  | |  |  | `CHAR(8)` | Case: Function Profile ID |
+| `CaseFunctionProfileName` |  | |  |  | `CHAR(40)` | Case: Profile Description |

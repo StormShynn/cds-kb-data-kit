@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PRAOwner` | `CHAR(10)` | PRA owner |
-| `PRAOwnerName` | `CHAR(80)` | Name of Owner |
-| `AffiliatedCompanyCode` | `CHAR(4)` | Affiliated Company Code |
-| `PRALegalForm` | `CHAR(2)` | Entity Code |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `SupplierAccountGroup` | `CHAR(4)` | Supplier Account Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PRAOwner` |  | |  |  | `CHAR(10)` | PRA owner |
+| `PRAOwnerName` |  | |  |  | `CHAR(80)` | Name of Owner |
+| `AffiliatedCompanyCode` |  | |  |  | `CHAR(4)` | Affiliated Company Code |
+| `PRALegalForm` |  | |  |  | `CHAR(2)` | Entity Code |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `SupplierAccountGroup` |  | |  |  | `CHAR(4)` | Supplier Account Group |

@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `PRAJointVenture` | `CHAR(6)` | Joint Venture |
-| `PRAJointVentureName` | `CHAR(35)` | Venture Name |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `PrimaryGeogrlLocation` | `CHAR(2)` | Primary Geographical Location |
-| `SecondaryGeogrlLocation` | `CHAR(3)` | Secondary geographic location |
-| `JointVentureIsUnit` | `CHAR(1)` | Unit venture flag |
-| `DivisionOfInterestIsByTract` | `CHAR(1)` | DOI by tract flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `PRAJointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
+| `PRAJointVentureName` |  | |  |  | `CHAR(35)` | Venture Name |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+| `SecondaryGeogrlLocation` |  | |  |  | `CHAR(3)` | Secondary geographic location |
+| `JointVentureIsUnit` |  | |  |  | `CHAR(1)` | Unit venture flag |
+| `DivisionOfInterestIsByTract` |  | |  |  | `CHAR(1)` | DOI by tract flag |

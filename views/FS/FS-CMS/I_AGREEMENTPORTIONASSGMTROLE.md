@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionAssgmtRole` | `CHAR(2)` | Role in which Collateral Agreement Portion is Assigned |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionAssgmtRole` |  | |  |  | `CHAR(2)` | Role in which Collateral Agreement Portion is Assigned |

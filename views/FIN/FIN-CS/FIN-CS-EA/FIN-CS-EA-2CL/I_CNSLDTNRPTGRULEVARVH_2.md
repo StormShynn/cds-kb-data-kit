@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationReportingItemHier` | `CHAR(10)` | Reporting Item Hierarchy |
-| `ConsolidationReportingRuleID` | `CHAR(3)` | Reporting Rule Variant |
-| `ConsolidationReportingRuleText` | `CHAR(30)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationReportingItemHier` |  | |  |  | `CHAR(10)` | Reporting Item Hierarchy |
+| `ConsolidationReportingRuleID` |  | |  |  | `CHAR(3)` | Reporting Rule Variant |
+| `ConsolidationReportingRuleText` |  | |  |  | `CHAR(30)` | Description |

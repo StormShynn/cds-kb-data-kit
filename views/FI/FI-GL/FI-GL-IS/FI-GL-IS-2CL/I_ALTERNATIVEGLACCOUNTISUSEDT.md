@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AlternativeGLAccountIsUsed` | `CHAR(1)` | Use Alternative Accounts |
-| `Language` | `LANG(1)` | Language Key |
-| `LongText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AlternativeGLAccountIsUsed` |  | |  |  | `CHAR(1)` | Use Alternative Accounts |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LongText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

@@ -32,20 +32,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LegalTransactionUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LegalTransactionLinkdObjUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LglCntntMLinkdObjType` | `CHAR(4)` | Linked Object Type |
-| `LglCntntMLinkdObjTypeName` | `CHAR(40)` | Long Text |
-| `LglCntntMLinkdObj` | `CHAR(255)` | Linked Object ID |
-| `LglTransTriggerObjNameText` | `CHAR(1)` | Text for Legal Transaction with Triggering Object |
-| `LegalTransactionHealthName` | `CHAR(40)` | Long Text |
-| `LglCntntMEntity` | `CHAR(10)` | Entity ID |
-| `LglCntntMEntityTypeName` | `CHAR(40)` | Long Text |
-| `LglCntntMGovLawText` | `CHAR(92)` | Governing Law Text |
-| `LglCntntMMainOrgName` | `CHAR(25)` | Name of Company Code or Company |
-| `LglCntntMMainOrgTypeName` | `CHAR(60)` | Short Text for Fixed Values |
-| `TotalNumberOfLegalTransactions` | `INT4(10)` | Total Numbers of Legal Transaction |
-| `TotNrOfLegalTransWithLinkedObj` | `INT4(10)` |  |
-| `LegalTransWithTrggrObjPercent` | `DEC(5)` | % of Renewed Contracts |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionLinkdObjUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMLinkdObjType` |  | |  |  | `CHAR(4)` | Linked Object Type |
+| `LglCntntMLinkdObjTypeName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMLinkdObj` |  | |  |  | `CHAR(255)` | Linked Object ID |
+| `LglTransTriggerObjNameText` |  | |  |  | `CHAR(1)` | Text for Legal Transaction with Triggering Object |
+| `LegalTransactionHealthName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMEntity` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMEntityTypeName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMGovLawText` |  | |  |  | `CHAR(92)` | Governing Law Text |
+| `LglCntntMMainOrgName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `LglCntntMMainOrgTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `TotalNumberOfLegalTransactions` |  | |  |  | `INT4(10)` | Total Numbers of Legal Transaction |
+| `TotNrOfLegalTransWithLinkedObj` |  | |  |  | `INT4(10)` |  |
+| `LegalTransWithTrggrObjPercent` |  | |  |  | `DEC(5)` | % of Renewed Contracts |

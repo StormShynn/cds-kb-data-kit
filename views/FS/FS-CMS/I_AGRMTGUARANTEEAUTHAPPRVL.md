@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlAgrmtGuarAuthApproval` | `CHAR(2)` | Approval from authorities |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlAgrmtGuarAuthApproval` |  | |  |  | `CHAR(2)` | Approval from authorities |

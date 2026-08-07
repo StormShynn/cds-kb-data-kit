@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SecuritiesAccountAssetType` | `CHAR(6)` | Asset Type |
-| `CollateralProcessControlKey` | `CHAR(10)` | Process Control Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecuritiesAccountAssetType` |  | |  |  | `CHAR(6)` | Asset Type |
+| `CollateralProcessControlKey` |  | |  |  | `CHAR(10)` | Process Control Key |

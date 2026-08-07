@@ -36,29 +36,29 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CABillgDocument` | `CHAR(12)` | Number of Billing Document |
-| `CABillgDocSourceItem` | `NUMC(8)` | Sequence Number of Source Item |
-| `CABillgGroupingSourceItems` | `CHAR(8)` | Grouping of Source Items |
-| `CABillgRecordType` | `CHAR(2)` | Record Type in Billing Document |
-| `CABillgIsDocumentSimulated` | `CHAR(1)` | Billing Document Is Simulated |
-| `CABillgDocCreationDate` | `DATS(8)` | Date on Which Billing Document Was Created |
-| `CACnsmpnItmClass` | `CHAR(4)` | Consumption Item Class |
-| `CABllbleItmClass` | `CHAR(4)` | Billable Item Class |
-| `CABllbleItmStatus` | `CHAR(1)` | Status of Billable Item |
-| `CABllbleItmRecordType` | `CHAR(2)` | Record Type of Billable Item |
-| `CABllbleItmDatabaseTable` | `CHAR(16)` | Billable Item Database Table |
-| `CABillgGroupingBillableItem` | `NUMC(8)` | Grouping of Billable Items in Billing Document |
-| `CABillgSubprocess` | `CHAR(4)` | Subprocess of Billing |
-| `CABllbleItmType` | `CHAR(4)` | Type of Billable Item |
-| `CABllbleItmSourceTransType` | `CHAR(5)` | Source Transaction Type |
-| `CABillgSourceTransRefType` | `CHAR(1)` | Type of Reference to Source Transaction in Billing Document |
-| `CABillgSourceTransRef` | `CHAR(22)` | Reference to Source Transaction in Billing Document |
-| `CABllbleItmPrimary` | `CHAR(1)` | Primary Billable Item |
-| `CABllbleItmPrimaryType` | `CHAR(2)` | Type of Relationship to Primary Item |
-| `CABllbleItmOriginMonth` | `NUMC(6)` | Month of Origin of Billable Item |
-| `CABllbleItmCreationMonth` | `NUMC(6)` | Month in Which Billable Item Was Created |
-| `CABllbleItmAmount` | `CURR(13)` | Amount of Billable Item |
-| `CABllbleItmCurrency` | `CUKY(5)` | Currency of Billable Item |
-| `CABllbleItmNumber` | `INT4(10)` | Number of Billable Items |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgDocument` |  | |  |  | `CHAR(12)` | Number of Billing Document |
+| `CABillgDocSourceItem` |  | |  |  | `NUMC(8)` | Sequence Number of Source Item |
+| `CABillgGroupingSourceItems` |  | |  |  | `CHAR(8)` | Grouping of Source Items |
+| `CABillgRecordType` |  | |  |  | `CHAR(2)` | Record Type in Billing Document |
+| `CABillgIsDocumentSimulated` |  | |  |  | `CHAR(1)` | Billing Document Is Simulated |
+| `CABillgDocCreationDate` |  | |  |  | `DATS(8)` | Date on Which Billing Document Was Created |
+| `CACnsmpnItmClass` |  | |  |  | `CHAR(4)` | Consumption Item Class |
+| `CABllbleItmClass` |  | |  |  | `CHAR(4)` | Billable Item Class |
+| `CABllbleItmStatus` |  | |  |  | `CHAR(1)` | Status of Billable Item |
+| `CABllbleItmRecordType` |  | |  |  | `CHAR(2)` | Record Type of Billable Item |
+| `CABllbleItmDatabaseTable` |  | |  |  | `CHAR(16)` | Billable Item Database Table |
+| `CABillgGroupingBillableItem` |  | |  |  | `NUMC(8)` | Grouping of Billable Items in Billing Document |
+| `CABillgSubprocess` |  | |  |  | `CHAR(4)` | Subprocess of Billing |
+| `CABllbleItmType` |  | |  |  | `CHAR(4)` | Type of Billable Item |
+| `CABllbleItmSourceTransType` |  | |  |  | `CHAR(5)` | Source Transaction Type |
+| `CABillgSourceTransRefType` |  | |  |  | `CHAR(1)` | Type of Reference to Source Transaction in Billing Document |
+| `CABillgSourceTransRef` |  | |  |  | `CHAR(22)` | Reference to Source Transaction in Billing Document |
+| `CABllbleItmPrimary` |  | |  |  | `CHAR(1)` | Primary Billable Item |
+| `CABllbleItmPrimaryType` |  | |  |  | `CHAR(2)` | Type of Relationship to Primary Item |
+| `CABllbleItmOriginMonth` |  | |  |  | `NUMC(6)` | Month of Origin of Billable Item |
+| `CABllbleItmCreationMonth` |  | |  |  | `NUMC(6)` | Month in Which Billable Item Was Created |
+| `CABllbleItmAmount` |  | |  |  | `CURR(13)` | Amount of Billable Item |
+| `CABllbleItmCurrency` |  | |  |  | `CUKY(5)` | Currency of Billable Item |
+| `CABllbleItmNumber` |  | |  |  | `INT4(10)` | Number of Billable Items |

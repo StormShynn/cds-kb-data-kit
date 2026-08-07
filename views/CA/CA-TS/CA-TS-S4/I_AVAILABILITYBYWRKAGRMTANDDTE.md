@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PersonWorkAgreement` | `NUMC(8)` | Personnel Number |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `AvailabilityInHours` | `DEC(14)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonWorkAgreement` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `AvailabilityInHours` |  | |  |  | `DEC(14)` |  |

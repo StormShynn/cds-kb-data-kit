@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SubscriptionRateElementType` | `CHAR(1)` | Rate Type |
-| `Language` | `LANG(1)` | Language Key |
-| `SubscrpnRateElementTypeText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubscriptionRateElementType` |  | |  |  | `CHAR(1)` | Rate Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SubscrpnRateElementTypeText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

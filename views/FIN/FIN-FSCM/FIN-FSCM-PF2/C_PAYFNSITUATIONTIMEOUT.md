@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PayFnSetUUID` | `RAW(16)` | Object UUID |
-| `PayFnRelatedGenericObjectType` | `CHAR(10)` | Linked Object Type - Right Side |
-| `PayFnFuncnlApprovalCodeDesc` | `CHAR(36)` | Functional payment approval classifier - Description text |
-| `PayFnNotifyTimeoutDurationHr` | `DEC(10)` |  |
-| `PayFnApprovalDurationHr` | `DEC(10)` |  |
-| `PayFnNumberOfPayments` | `INT4(10)` |  |
-| `SitnBaseTemplateID` | `CHAR(40)` | Situation Scenario ID |
-| `SitnConfignTemplateID` | `CHAR(40)` | Situation Template ID |
-| `SitnTypeID` | `CHAR(40)` | Situation Type ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PayFnSetUUID` |  | |  |  | `RAW(16)` | Object UUID |
+| `PayFnRelatedGenericObjectType` |  | |  |  | `CHAR(10)` | Linked Object Type - Right Side |
+| `PayFnFuncnlApprovalCodeDesc` |  | |  |  | `CHAR(36)` | Functional payment approval classifier - Description text |
+| `PayFnNotifyTimeoutDurationHr` |  | |  |  | `DEC(10)` |  |
+| `PayFnApprovalDurationHr` |  | |  |  | `DEC(10)` |  |
+| `PayFnNumberOfPayments` |  | |  |  | `INT4(10)` |  |
+| `SitnBaseTemplateID` |  | |  |  | `CHAR(40)` | Situation Scenario ID |
+| `SitnConfignTemplateID` |  | |  |  | `CHAR(40)` | Situation Template ID |
+| `SitnTypeID` |  | |  |  | `CHAR(40)` | Situation Type ID |

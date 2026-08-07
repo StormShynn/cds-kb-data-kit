@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrBusVolSign` | `CHAR(1)` | Status Including / Excluding |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrBusVolSignName` | `CHAR(60)` | Description of Bus. Vol. Selection Criteria Sign Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrBusVolSign` |  | |  |  | `CHAR(1)` | Status Including / Excluding |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrBusVolSignName` |  | |  |  | `CHAR(60)` | Description of Bus. Vol. Selection Criteria Sign Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

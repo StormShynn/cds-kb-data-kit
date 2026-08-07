@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FunctionalLocation` | `CHAR(30)` | Functional Location |
-| `MaintObjectInternalID` | `CHAR(22)` | Object Number |
-| `FuncnlLocIsMarkedForDeletion` | `CHAR(1)` | Checkbox |
-| `FuncnlLocIsDeleted` | `CHAR(1)` | Checkbox |
-| `FunctionalLocationIsActive` | `CHAR(1)` | Checkbox |
-| `FunctionalLocationIsCreated` | `CHAR(1)` | Checkbox |
-| `FuncnlLocIsDeactivated` | `CHAR(1)` | Checkbox |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `MaintObjectInternalID` |  | |  |  | `CHAR(22)` | Object Number |
+| `FuncnlLocIsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Checkbox |
+| `FuncnlLocIsDeleted` |  | |  |  | `CHAR(1)` | Checkbox |
+| `FunctionalLocationIsActive` |  | |  |  | `CHAR(1)` | Checkbox |
+| `FunctionalLocationIsCreated` |  | |  |  | `CHAR(1)` | Checkbox |
+| `FuncnlLocIsDeactivated` |  | |  |  | `CHAR(1)` | Checkbox |

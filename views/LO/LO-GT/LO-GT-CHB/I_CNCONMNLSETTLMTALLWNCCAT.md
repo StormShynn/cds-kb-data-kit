@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CnConMnlSettlmtAllwncCat` | `CHAR(1)` | Manual Entry of Settlement Documents Allowed |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnConMnlSettlmtAllwncCat` |  | |  |  | `CHAR(1)` | Manual Entry of Settlement Documents Allowed |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

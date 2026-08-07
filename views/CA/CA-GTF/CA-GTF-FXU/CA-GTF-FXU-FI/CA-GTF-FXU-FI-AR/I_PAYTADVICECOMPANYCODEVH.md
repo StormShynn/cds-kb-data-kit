@@ -36,10 +36,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `CityName` | `CHAR(25)` | City |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `Currency` | `CUKY(5)` | Currency Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `CityName` |  | |  |  | `CHAR(25)` | City |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |

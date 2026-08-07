@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `CostCtrActivityType` | `CHAR(6)` | Activity Type |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `CostCenterCategory` | `CHAR(1)` |  |
-| `IsGeneric` | `CHAR(1)` | Indicator: Cost Center Category is Generic |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `CostCenterCategory` |  | |  |  | `CHAR(1)` |  |
+| `IsGeneric` |  | |  |  | `CHAR(1)` | Indicator: Cost Center Category is Generic |

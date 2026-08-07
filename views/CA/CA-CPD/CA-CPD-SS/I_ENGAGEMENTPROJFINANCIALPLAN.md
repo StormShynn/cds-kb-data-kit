@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjFinPlanUUID` | `RAW(16)` | Financial Plan UUID |
-| `EngagementProjectUUID` | `RAW(16)` | Engagement Project UUID |
-| `Currency` | `CUKY(5)` | Plan Currency |
-| `UnitOfMeasure` | `UNIT(3)` | Unit of Measure for Display |
-| `LastChangeDateTime` | `DEC(15)` | Commercial Project Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Changed By |
-| `EngmntProjReviewYearPeriod` | `NUMC(7)` | Review Year Period |
-| `EngagementProjectReviewStatus` | `CHAR(10)` | Forecast Status ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjFinPlanUUID` |  | |  |  | `RAW(16)` | Financial Plan UUID |
+| `EngagementProjectUUID` |  | |  |  | `RAW(16)` | Engagement Project UUID |
+| `Currency` |  | |  |  | `CUKY(5)` | Plan Currency |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Unit of Measure for Display |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Commercial Project Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `EngmntProjReviewYearPeriod` |  | |  |  | `NUMC(7)` | Review Year Period |
+| `EngagementProjectReviewStatus` |  | |  |  | `CHAR(10)` | Forecast Status ID |

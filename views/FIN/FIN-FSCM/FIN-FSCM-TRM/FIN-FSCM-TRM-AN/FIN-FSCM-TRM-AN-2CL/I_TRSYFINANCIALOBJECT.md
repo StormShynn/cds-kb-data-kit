@@ -35,23 +35,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TreasuryFinancialObject` | `CHAR(22)` | Object Number for Financial Transactions |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `TrsyFinObjValidityStartDate` | `DATS(8)` | Transaction Start for Risk Management |
-| `TrsyFinObjValidityEndDate` | `DATS(8)` | Transaction End for Risk Management |
-| `TreasuryContractType` | `CHAR(1)` | Contract Type |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Product Category |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `Portfolio` | `CHAR(10)` | Portfolio |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `SecurityClass` | `CHAR(13)` | Security Class ID Number |
-| `SecurityAccount` | `CHAR(10)` | Securities Account |
-| `TreasuryPositionAccount` | `CHAR(10)` | Futures Account for Listed Options and Futures |
-| `FinancialExposurePosition` | `CHAR(20)` | Exposure Position ID |
-| `LoanContract` | `CHAR(13)` | Contract Number |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `MktRiskCharacteristicCurrency` | `CUKY(5)` | Analytic Characteristic Currency |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `FinancialInstrCharacteristic` | `CHAR(25)` | Characteristics |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryFinancialObject` |  | |  |  | `CHAR(22)` | Object Number for Financial Transactions |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `TrsyFinObjValidityStartDate` |  | |  |  | `DATS(8)` | Transaction Start for Risk Management |
+| `TrsyFinObjValidityEndDate` |  | |  |  | `DATS(8)` | Transaction End for Risk Management |
+| `TreasuryContractType` |  | |  |  | `CHAR(1)` | Contract Type |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Product Category |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `SecurityClass` |  | |  |  | `CHAR(13)` | Security Class ID Number |
+| `SecurityAccount` |  | |  |  | `CHAR(10)` | Securities Account |
+| `TreasuryPositionAccount` |  | |  |  | `CHAR(10)` | Futures Account for Listed Options and Futures |
+| `FinancialExposurePosition` |  | |  |  | `CHAR(20)` | Exposure Position ID |
+| `LoanContract` |  | |  |  | `CHAR(13)` | Contract Number |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `MktRiskCharacteristicCurrency` |  | |  |  | `CUKY(5)` | Analytic Characteristic Currency |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `FinancialInstrCharacteristic` |  | |  |  | `CHAR(25)` | Characteristics |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdExecInfoSource` | `CHAR(1)` | Source of Execution Information |
-| `Language` | `LANG(1)` | Language Key |
-| `ExecInfoSourceDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdExecInfoSource` |  | |  |  | `CHAR(1)` | Source of Execution Information |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ExecInfoSourceDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

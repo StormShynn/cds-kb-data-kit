@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ActivityArea` | `CHAR(4)` | Activity Area |
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ActivityArea` |  | |  |  | `CHAR(4)` | Activity Area |
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |

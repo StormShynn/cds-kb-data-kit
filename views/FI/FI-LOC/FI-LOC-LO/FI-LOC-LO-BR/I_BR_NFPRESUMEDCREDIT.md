@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NotaFiscal` | `NUMC(10)` | Document Number |
-| `BR_NotaFiscalItem` | `NUMC(6)` | Document Item Number |
-| `BR_NFPrsmdCreditSequenceNumber` | `NUMC(4)` | Counter |
-| `BR_FsclBnftCodePresumedCredit` | `CHAR(10)` | State Fiscal Benefit Code of Presumed Credit |
-| `BR_PresumedCreditPercent` | `DEC(7)` | Presumed Credit Percentage |
-| `BR_PresumedCreditAmount` | `CURR(15)` | Presumed Credit Amount |
-| `SalesDocumentCurrency` | `CUKY(5)` | SD Document Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` |  | |  |  | `NUMC(10)` | Document Number |
+| `BR_NotaFiscalItem` |  | |  |  | `NUMC(6)` | Document Item Number |
+| `BR_NFPrsmdCreditSequenceNumber` |  | |  |  | `NUMC(4)` | Counter |
+| `BR_FsclBnftCodePresumedCredit` |  | |  |  | `CHAR(10)` | State Fiscal Benefit Code of Presumed Credit |
+| `BR_PresumedCreditPercent` |  | |  |  | `DEC(7)` | Presumed Credit Percentage |
+| `BR_PresumedCreditAmount` |  | |  |  | `CURR(15)` | Presumed Credit Amount |
+| `SalesDocumentCurrency` |  | |  |  | `CUKY(5)` | SD Document Currency |

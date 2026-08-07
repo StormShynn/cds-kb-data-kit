@@ -34,39 +34,39 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DisputeCaseUUID` | `CHAR(32)` | UUID in Character Format |
-| `DisputeCaseCoordinator` | `CHAR(12)` | Coordinator of Dispute Case |
-| `DisputeCaseRootCause` | `CHAR(4)` | Root Cause Code |
-| `CaseProcessingDeadlineDate` | `DATS(8)` | Processing Deadline |
-| `OriginalAmount` | `CURR(15)` | Original Disputed Amount |
-| `DisputedAmount` | `CURR(15)` | Current Disputed Amount |
-| `PaidAmount` | `CURR(15)` | Amount Paid |
-| `CreditedAmount` | `CURR(15)` | Amount Credited |
-| `WriteOffAmount` | `CURR(15)` | Amount Cleared Manually |
-| `ManuallyClearedAmount` | `CURR(15)` | Automatically Written Off |
-| `CaseID` | `CHAR(12)` | Case ID |
-| `DisputeCaseCurrency` | `CUKY(5)` | Currency of Dispute Case |
-| `CustomerDisputedAmount` | `CURR(15)` | Customer Disputed Amount |
-| `CustomerDisputedCurrency` | `CUKY(5)` | Currency of Customer-Disputed Amount |
-| `Customer` | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `DisputeCaseExternalApplication` | `CHAR(4)` | Processing by External Application |
-| `CaseType` | `CHAR(4)` | Case Type |
-| `CaseExternalReference` | `CHAR(30)` | External Reference |
-| `CaseCreatedBy` | `CHAR(12)` | Created By |
-| `CaseCreatedOn` | `DEC(15)` | Created At |
-| `CaseLastChangedBy` | `CHAR(12)` | Last Changed By |
-| `CaseLastChangedOn` | `DEC(15)` | Last Changed At |
-| `CaseClosedBy` | `CHAR(12)` | Closed by User |
-| `CaseClosedTime` | `DEC(15)` | Closed At |
-| `CasePlannedCloseDate` | `DATS(8)` | Planned Close Date |
-| `CaseProcessor` | `CHAR(12)` | Processor |
-| `CaseResponsible` | `CHAR(12)` | Person Responsible |
-| `CaseEscalationReason` | `CHAR(2)` | Reason for Escalation |
-| `CaseCategory` | `CHAR(4)` | Category |
-| `CasePriority` | `NUMC(1)` | Priority |
-| `CaseStatus` | `NUMC(2)` | Case: Status |
-| `CaseSystemStatus` | `CHAR(3)` | Case: System Status |
-| `CaseReason` | `CHAR(4)` | Reason for Case |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DisputeCaseUUID` |  | |  |  | `CHAR(32)` | UUID in Character Format |
+| `DisputeCaseCoordinator` |  | |  |  | `CHAR(12)` | Coordinator of Dispute Case |
+| `DisputeCaseRootCause` |  | |  |  | `CHAR(4)` | Root Cause Code |
+| `CaseProcessingDeadlineDate` |  | |  |  | `DATS(8)` | Processing Deadline |
+| `OriginalAmount` |  | |  |  | `CURR(15)` | Original Disputed Amount |
+| `DisputedAmount` |  | |  |  | `CURR(15)` | Current Disputed Amount |
+| `PaidAmount` |  | |  |  | `CURR(15)` | Amount Paid |
+| `CreditedAmount` |  | |  |  | `CURR(15)` | Amount Credited |
+| `WriteOffAmount` |  | |  |  | `CURR(15)` | Amount Cleared Manually |
+| `ManuallyClearedAmount` |  | |  |  | `CURR(15)` | Automatically Written Off |
+| `CaseID` |  | |  |  | `CHAR(12)` | Case ID |
+| `DisputeCaseCurrency` |  | |  |  | `CUKY(5)` | Currency of Dispute Case |
+| `CustomerDisputedAmount` |  | |  |  | `CURR(15)` | Customer Disputed Amount |
+| `CustomerDisputedCurrency` |  | |  |  | `CUKY(5)` | Currency of Customer-Disputed Amount |
+| `Customer` |  | |  |  | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `DisputeCaseExternalApplication` |  | |  |  | `CHAR(4)` | Processing by External Application |
+| `CaseType` |  | |  |  | `CHAR(4)` | Case Type |
+| `CaseExternalReference` |  | |  |  | `CHAR(30)` | External Reference |
+| `CaseCreatedBy` |  | |  |  | `CHAR(12)` | Created By |
+| `CaseCreatedOn` |  | |  |  | `DEC(15)` | Created At |
+| `CaseLastChangedBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `CaseLastChangedOn` |  | |  |  | `DEC(15)` | Last Changed At |
+| `CaseClosedBy` |  | |  |  | `CHAR(12)` | Closed by User |
+| `CaseClosedTime` |  | |  |  | `DEC(15)` | Closed At |
+| `CasePlannedCloseDate` |  | |  |  | `DATS(8)` | Planned Close Date |
+| `CaseProcessor` |  | |  |  | `CHAR(12)` | Processor |
+| `CaseResponsible` |  | |  |  | `CHAR(12)` | Person Responsible |
+| `CaseEscalationReason` |  | |  |  | `CHAR(2)` | Reason for Escalation |
+| `CaseCategory` |  | |  |  | `CHAR(4)` | Category |
+| `CasePriority` |  | |  |  | `NUMC(1)` | Priority |
+| `CaseStatus` |  | |  |  | `NUMC(2)` | Case: Status |
+| `CaseSystemStatus` |  | |  |  | `CHAR(3)` | Case: System Status |
+| `CaseReason` |  | |  |  | `CHAR(4)` | Reason for Case |

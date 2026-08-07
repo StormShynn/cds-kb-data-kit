@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrFrtInvcReqType` | `CHAR(4)` | Freight Settlement Document Type |
-| `SuplrFrtInvcReqCategory` | `CHAR(2)` | Freight Settlement Document Category |
-| `FrtSettlmtTypeIsBusWrhsRlvt` | `CHAR(1)` | SAP NetWeaver Business Warehouse |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrFrtInvcReqType` |  | |  |  | `CHAR(4)` | Freight Settlement Document Type |
+| `SuplrFrtInvcReqCategory` |  | |  |  | `CHAR(2)` | Freight Settlement Document Category |
+| `FrtSettlmtTypeIsBusWrhsRlvt` |  | |  |  | `CHAR(1)` | SAP NetWeaver Business Warehouse |

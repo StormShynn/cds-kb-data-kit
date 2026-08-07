@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMStorageBin` | `CHAR(18)` | Storage Bin |
-| `Activity` | `CHAR(4)` | Activity |
-| `ActivityArea` | `CHAR(4)` | Activity Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMStorageBin` |  | |  |  | `CHAR(18)` | Storage Bin |
+| `Activity` |  | |  |  | `CHAR(4)` | Activity |
+| `ActivityArea` |  | |  |  | `CHAR(4)` | Activity Area |

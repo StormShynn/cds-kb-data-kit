@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CtrlObjForFund` | `CHAR(50)` | Control Object for a Fund |
-| `Fund` | `CHAR(10)` | Fund |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `CtrlObjNameForFund` | `CHAR(50)` | Name of a Control Object for a Fund |
-| `FundDescription` | `CHAR(40)` | Fund Description |
-| `HierarchyNodeText` | `CHAR(50)` | Hierarchy node description |
-| `HierarchyIDForFund` | `CHAR(42)` | Hierarchy ID for Fund |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CtrlObjForFund` |  | |  |  | `CHAR(50)` | Control Object for a Fund |
+| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `CtrlObjNameForFund` |  | |  |  | `CHAR(50)` | Name of a Control Object for a Fund |
+| `FundDescription` |  | |  |  | `CHAR(40)` | Fund Description |
+| `HierarchyNodeText` |  | |  |  | `CHAR(50)` | Hierarchy node description |
+| `HierarchyIDForFund` |  | |  |  | `CHAR(42)` | Hierarchy ID for Fund |

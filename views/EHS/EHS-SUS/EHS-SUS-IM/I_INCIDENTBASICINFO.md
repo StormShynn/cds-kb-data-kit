@@ -34,38 +34,38 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentBasicInfoUUID` | `RAW(16)` | Incident Basic Information UUID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `IncidentTitle` | `CHAR(80)` | Incident Title |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit ID |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `IncidentLocationType` | `CHAR(21)` | Location Classification |
-| `IncidentUTCDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `IncidentUTCEndDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `IncidentTimeIsUnknown` | `CHAR(1)` | Time Unknown for Incident Start |
-| `IncidentTimeZone` | `CHAR(6)` | Time Zone of Incident Start |
-| `IncidentEndTimeZone` | `CHAR(6)` | Time Zone for Incident End |
-| `IncidentDate` | `DATS(8)` | Incident Start Date |
-| `IncidentHasAccessRestriction` | `CHAR(1)` | Restricted Access to Incident Record |
-| `Country` | `CHAR(3)` | Country/Region of Incident |
-| `Region` | `CHAR(3)` | Region of Incident |
-| `IncidentInjuryIllnLogType` | `CHAR(50)` | Injury/Illness Log Entry Type |
-| `EHSStreetHouseNumberText` | `CHAR(60)` | Street / House Number of Incident |
-| `EHSPostalCodeText` | `CHAR(10)` | Postal Code of Incident |
-| `EHSCityText` | `CHAR(40)` | City of Incident |
-| `IncidentDescOfEventUUID` | `RAW(16)` | NodeID |
-| `IncidentReportedDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `IncidentReportedTimeZone` | `CHAR(6)` | Time Zone for Initial Incident Report |
-| `EHSLocationID` | `CHAR(20)` |  |
-| `IncidentLatitudeValue` | `DEC(15)` | Geographic Latitude |
-| `IncidentLongitudeValue` | `DEC(15)` | Geographic Longitude |
-| `IncidentIsReportedAnonymously` | `CHAR(1)` | Report Incident Anonymously |
-| `IncidentLocationDescUUID` | `RAW(16)` | NodeID |
-| `IncidentImmdActionDescUUID` | `RAW(16)` | NodeID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentBasicInfoUUID` |  | |  |  | `RAW(16)` | Incident Basic Information UUID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `IncidentTitle` |  | |  |  | `CHAR(80)` | Incident Title |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit ID |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `IncidentLocationType` |  | |  |  | `CHAR(21)` | Location Classification |
+| `IncidentUTCDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `IncidentUTCEndDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `IncidentTimeIsUnknown` |  | |  |  | `CHAR(1)` | Time Unknown for Incident Start |
+| `IncidentTimeZone` |  | |  |  | `CHAR(6)` | Time Zone of Incident Start |
+| `IncidentEndTimeZone` |  | |  |  | `CHAR(6)` | Time Zone for Incident End |
+| `IncidentDate` |  | |  |  | `DATS(8)` | Incident Start Date |
+| `IncidentHasAccessRestriction` |  | |  |  | `CHAR(1)` | Restricted Access to Incident Record |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region of Incident |
+| `Region` |  | |  |  | `CHAR(3)` | Region of Incident |
+| `IncidentInjuryIllnLogType` |  | |  |  | `CHAR(50)` | Injury/Illness Log Entry Type |
+| `EHSStreetHouseNumberText` |  | |  |  | `CHAR(60)` | Street / House Number of Incident |
+| `EHSPostalCodeText` |  | |  |  | `CHAR(10)` | Postal Code of Incident |
+| `EHSCityText` |  | |  |  | `CHAR(40)` | City of Incident |
+| `IncidentDescOfEventUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentReportedDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `IncidentReportedTimeZone` |  | |  |  | `CHAR(6)` | Time Zone for Initial Incident Report |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` |  |
+| `IncidentLatitudeValue` |  | |  |  | `DEC(15)` | Geographic Latitude |
+| `IncidentLongitudeValue` |  | |  |  | `DEC(15)` | Geographic Longitude |
+| `IncidentIsReportedAnonymously` |  | |  |  | `CHAR(1)` | Report Incident Anonymously |
+| `IncidentLocationDescUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentImmdActionDescUUID` |  | |  |  | `RAW(16)` | NodeID |

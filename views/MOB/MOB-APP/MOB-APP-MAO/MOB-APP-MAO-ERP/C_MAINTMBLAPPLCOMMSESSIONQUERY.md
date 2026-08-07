@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MobileUserInternal` | `CHAR(32)` | User GUID |
-| `MobileUserSessionServer` | `CHAR(32)` | Middleware Server GUID |
-| `MobileUserSessionIsActive` | `CHAR(1)` | Active Flag |
-| `MobileUserHasLoggedIn` | `CHAR(1)` | Active Flag |
-| `CreationDate` | `DATS(8)` |  |
-| `MaintMblApplCommSssnCrtnYear` | `NUMC(4)` | Calendar Year |
-| `MaintMblApplCommSssnCrtnMonth` | `NUMC(2)` | Calendar Month |
-| `MaintMblApplCommSessionEndDate` | `DATS(8)` |  |
-| `MaintMblApplCommSessionEndYear` | `NUMC(4)` | Calendar Year |
-| `MaintMblApplCommSssnEndMonth` | `NUMC(2)` | Calendar Month |
-| `MaintMblApplNrOfCommSessions` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MobileUserInternal` |  | |  |  | `CHAR(32)` | User GUID |
+| `MobileUserSessionServer` |  | |  |  | `CHAR(32)` | Middleware Server GUID |
+| `MobileUserSessionIsActive` |  | |  |  | `CHAR(1)` | Active Flag |
+| `MobileUserHasLoggedIn` |  | |  |  | `CHAR(1)` | Active Flag |
+| `CreationDate` |  | |  |  | `DATS(8)` |  |
+| `MaintMblApplCommSssnCrtnYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `MaintMblApplCommSssnCrtnMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `MaintMblApplCommSessionEndDate` |  | |  |  | `DATS(8)` |  |
+| `MaintMblApplCommSessionEndYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `MaintMblApplCommSssnEndMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `MaintMblApplNrOfCommSessions` |  | |  |  | `INT1(3)` |  |

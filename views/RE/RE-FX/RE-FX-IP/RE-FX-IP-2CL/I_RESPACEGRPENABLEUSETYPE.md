@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RESpaceGrpEnableUseType` | `CHAR(4)` | Usage Enablement Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RESpaceGrpEnableUseType` |  | |  |  | `CHAR(4)` | Usage Enablement Type |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Customer` | `CHAR(10)` | Customer |
-| `LogicalSystem` | `CHAR(10)` | Logical System |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Is Completed |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` |  | |  |  | `CHAR(10)` | Customer |
+| `LogicalSystem` |  | |  |  | `CHAR(10)` | Logical System |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Is Completed |

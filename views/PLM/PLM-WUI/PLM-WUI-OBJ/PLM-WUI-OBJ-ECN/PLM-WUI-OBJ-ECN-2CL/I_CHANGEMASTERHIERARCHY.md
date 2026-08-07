@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PackageChangeNumber` | `CHAR(12)` | Change package |
-| `LeadingChangeNumber` | `CHAR(12)` | Leading change master record |
-| `LeadChangeNumberCreationDate` | `DATS(8)` | Date record created on |
-| `LeadChangeNumberCreatedByUser` | `CHAR(12)` | User who created record |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PackageChangeNumber` |  | |  |  | `CHAR(12)` | Change package |
+| `LeadingChangeNumber` |  | |  |  | `CHAR(12)` | Leading change master record |
+| `LeadChangeNumberCreationDate` |  | |  |  | `DATS(8)` | Date record created on |
+| `LeadChangeNumberCreatedByUser` |  | |  |  | `CHAR(12)` | User who created record |

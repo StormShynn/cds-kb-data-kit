@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProcessRun` | `NUMC(10)` | Proc 2.0 - Run ID |
-| `ProcessRunName` | `CHAR(25)` | Run Description Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessRun` |  | |  |  | `NUMC(10)` | Proc 2.0 - Run ID |
+| `ProcessRunName` |  | |  |  | `CHAR(25)` | Run Description Name |

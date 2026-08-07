@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InvoicingIsBlocked` | `CHAR(1)` | Freight Settlement Document Block |
-| `Language` | `LANG(1)` | Language Key |
-| `InvoicingIsBlockedDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvoicingIsBlocked` |  | |  |  | `CHAR(1)` | Freight Settlement Document Block |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InvoicingIsBlockedDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

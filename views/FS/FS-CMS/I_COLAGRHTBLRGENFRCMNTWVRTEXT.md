@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColAgrHtBlRgEnfrcmntWvr` | `CHAR(2)` | Indicator for Waiver of HBR Enforcement |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `ColAgrHtBlRgEnfrcmntWvrText` | `CHAR(40)` | Waiver of HBR Enforcement Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColAgrHtBlRgEnfrcmntWvr` |  | |  |  | `CHAR(2)` | Indicator for Waiver of HBR Enforcement |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `ColAgrHtBlRgEnfrcmntWvrText` |  | |  |  | `CHAR(40)` | Waiver of HBR Enforcement Name |

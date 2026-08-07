@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CurrencyField` | `CHAR(4)` | Currency Role Field |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |

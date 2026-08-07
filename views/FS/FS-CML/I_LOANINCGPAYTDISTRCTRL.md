@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanIncgPaytDistrCtrl` | `NUMC(2)` | Indicator for Control of Incoming Payment Distribution |
-| `LoanPaymentSmmrznLevel` | `NUMC(2)` | Payment summarization level |
-| `LoanOverPaymentPrelimFltr` | `NUMC(2)` | Advance payments / overpayments preliminary filter |
-| `LoanOpenItemGroupLevel` | `NUMC(2)` | Grouping level open items/incoming payment distribution |
-| `LoanOpenItemPrelimFilter` | `NUMC(2)` | Open items/incoming pmnt distribution pre-filter |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanIncgPaytDistrCtrl` |  | |  |  | `NUMC(2)` | Indicator for Control of Incoming Payment Distribution |
+| `LoanPaymentSmmrznLevel` |  | |  |  | `NUMC(2)` | Payment summarization level |
+| `LoanOverPaymentPrelimFltr` |  | |  |  | `NUMC(2)` | Advance payments / overpayments preliminary filter |
+| `LoanOpenItemGroupLevel` |  | |  |  | `NUMC(2)` | Grouping level open items/incoming payment distribution |
+| `LoanOpenItemPrelimFilter` |  | |  |  | `NUMC(2)` | Open items/incoming pmnt distribution pre-filter |

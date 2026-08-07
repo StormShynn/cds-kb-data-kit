@@ -34,26 +34,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaterialDocumentKey1` | `RAW(4)` | Key field 1 |
-| `MaterialDocumentKey2` | `RAW(4)` | Key field 2 |
-| `MaterialDocumentKey3` | `RAW(5)` | Key field 3 |
-| `MaterialDocumentKey4` | `RAW(1)` | Key field 4 |
-| `MaterialDocumentKey5` | `RAW(1)` | Key field 5 |
-| `MaterialDocumentKey6` | `RAW(1)` | Key field 6 |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Plant` | `CHAR(4)` | Plant |
-| `Material` | `CHAR(40)` | Material for Stock Mamangement |
-| `StorageLocation` | `CHAR(4)` | Storage Location (Stock Identifier) |
-| `Supplier` | `CHAR(10)` | Supplier for Special Stock |
-| `Customer` | `CHAR(10)` | Customer for Special Stock |
-| `InventoryStockType` | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
-| `InventorySpecialStockType` | `CHAR(1)` | Special Stock Type |
-| `PostingDate` | `DATS(8)` | Posting Date in the Document |
-| `MaterialBaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `MaterialDocumentYear` | `NUMC(4)` | Material Document Year |
-| `CalendarMonth` | `NUMC(2)` | Month (1 - 12) |
-| `MaterialGroup` | `CHAR(9)` | Material Group |
-| `MaterialType` | `CHAR(4)` | Material Type |
-| `MatlWrhsStkQtyInMatlBaseUnit` | `QUAN(31)` | Stock Quantity |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialDocumentKey1` |  | |  |  | `RAW(4)` | Key field 1 |
+| `MaterialDocumentKey2` |  | |  |  | `RAW(4)` | Key field 2 |
+| `MaterialDocumentKey3` |  | |  |  | `RAW(5)` | Key field 3 |
+| `MaterialDocumentKey4` |  | |  |  | `RAW(1)` | Key field 4 |
+| `MaterialDocumentKey5` |  | |  |  | `RAW(1)` | Key field 5 |
+| `MaterialDocumentKey6` |  | |  |  | `RAW(1)` | Key field 6 |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `Material` |  | |  |  | `CHAR(40)` | Material for Stock Mamangement |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location (Stock Identifier) |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier for Special Stock |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer for Special Stock |
+| `InventoryStockType` |  | |  |  | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Type |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `MaterialBaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `MaterialDocumentYear` |  | |  |  | `NUMC(4)` | Material Document Year |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Month (1 - 12) |
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
+| `MaterialType` |  | |  |  | `CHAR(4)` | Material Type |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  | `QUAN(31)` | Stock Quantity |

@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoAcctPrioznBasicRule` | `CHAR(10)` | Basic Rule |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoAcctPrioznBasicRule` |  | |  |  | `CHAR(10)` | Basic Rule |

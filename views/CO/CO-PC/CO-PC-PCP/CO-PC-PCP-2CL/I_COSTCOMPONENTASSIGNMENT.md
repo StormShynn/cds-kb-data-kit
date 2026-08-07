@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `CostComponentStructure` | `CHAR(2)` | Cost Component Structure - CGM and Sales/Administr. Costs |
-| `FromCostElement` | `CHAR(10)` | From Cost Element |
-| `CostOriginGroup` | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
-| `VarianceResultsAnlysCategory` | `NUMC(2)` | Category for Variance/Results Analysis |
-| `ToCostElement` | `CHAR(10)` | To Cost Element |
-| `CostComponent` | `NUMC(3)` | Cost Component Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `CostComponentStructure` |  | |  |  | `CHAR(2)` | Cost Component Structure - CGM and Sales/Administr. Costs |
+| `FromCostElement` |  | |  |  | `CHAR(10)` | From Cost Element |
+| `CostOriginGroup` |  | |  |  | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
+| `VarianceResultsAnlysCategory` |  | |  |  | `NUMC(2)` | Category for Variance/Results Analysis |
+| `ToCostElement` |  | |  |  | `CHAR(10)` | To Cost Element |
+| `CostComponent` |  | |  |  | `NUMC(3)` | Cost Component Number |

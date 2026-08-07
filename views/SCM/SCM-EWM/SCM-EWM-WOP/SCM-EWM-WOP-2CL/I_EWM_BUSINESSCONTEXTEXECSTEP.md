@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessContextExecutionStep` | `CHAR(2)` | Execution Step in Business Context |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessContextExecutionStep` |  | |  |  | `CHAR(2)` | Execution Step in Business Context |

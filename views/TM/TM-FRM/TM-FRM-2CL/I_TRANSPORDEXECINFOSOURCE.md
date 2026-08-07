@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdExecInfoSource` | `CHAR(1)` | Source of Execution Information |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdExecInfoSource` |  | |  |  | `CHAR(1)` | Source of Execution Information |

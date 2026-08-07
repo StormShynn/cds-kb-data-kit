@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CommodityType` | `CHAR(3)` | Type of Commodity |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CommodityType` |  | |  |  | `CHAR(3)` | Type of Commodity |

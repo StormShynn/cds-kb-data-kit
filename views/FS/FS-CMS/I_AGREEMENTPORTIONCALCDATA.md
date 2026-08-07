@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionUUID` | `RAW(16)` | GUID for Table CMS_CAG_POR |
-| `CollateralAgreementUUID` | `RAW(16)` | GUID for Table CMS_CAG |
-| `CollateralConstellationUUID` | `RAW(16)` | Constellation GUID |
-| `CollateralAgreementPortionCrcy` | `CUKY(5)` | Calculations Result Currency |
-| `AgrmtPortnFreeColltrlMaxRskAmt` | `CURR(17)` | Free collateral calculation for CAG |
-| `AgrmtPortnFreeColltrlCurRskAmt` | `CURR(17)` | Free collateral calculation for CAG |
-| `AgrmtPortnFreeColltrlCurRskPct` | `DEC(10)` | Calculations Result as Pecentage |
-| `AgrmtPortnFreeColltrlMaxRskPct` | `DEC(10)` | Calculations Result as Pecentage |
-| `AgrmtPortnCalcLastChgdBy` | `CHAR(12)` | Last Changed By |
-| `AgrmtPortnCalcLastChgdDate` | `DATS(8)` | Date on which last change was done |
-| `AgrmtPortnCalcLastChgdTime` | `TIMS(6)` | Time at which last change was made |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_POR |
+| `CollateralAgreementUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG |
+| `CollateralConstellationUUID` |  | |  |  | `RAW(16)` | Constellation GUID |
+| `CollateralAgreementPortionCrcy` |  | |  |  | `CUKY(5)` | Calculations Result Currency |
+| `AgrmtPortnFreeColltrlMaxRskAmt` |  | |  |  | `CURR(17)` | Free collateral calculation for CAG |
+| `AgrmtPortnFreeColltrlCurRskAmt` |  | |  |  | `CURR(17)` | Free collateral calculation for CAG |
+| `AgrmtPortnFreeColltrlCurRskPct` |  | |  |  | `DEC(10)` | Calculations Result as Pecentage |
+| `AgrmtPortnFreeColltrlMaxRskPct` |  | |  |  | `DEC(10)` | Calculations Result as Pecentage |
+| `AgrmtPortnCalcLastChgdBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `AgrmtPortnCalcLastChgdDate` |  | |  |  | `DATS(8)` | Date on which last change was done |
+| `AgrmtPortnCalcLastChgdTime` |  | |  |  | `TIMS(6)` | Time at which last change was made |

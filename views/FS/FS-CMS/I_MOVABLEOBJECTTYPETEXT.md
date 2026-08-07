@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MovableObjectCategory` | `CHAR(6)` | Object Category |
-| `MovableObjectType` | `CHAR(6)` | Movable types |
-| `Language` | `LANG(1)` | Language in which description is needed |
-| `MovableObjectTypeText` | `CHAR(40)` | Name in a specified language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MovableObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `MovableObjectType` |  | |  |  | `CHAR(6)` | Movable types |
+| `Language` |  | |  |  | `LANG(1)` | Language in which description is needed |
+| `MovableObjectTypeText` |  | |  |  | `CHAR(40)` | Name in a specified language |

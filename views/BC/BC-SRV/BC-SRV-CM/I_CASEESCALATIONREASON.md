@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseEscalationReason` | `CHAR(2)` | Reason for Escalation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseEscalationReason` |  | |  |  | `CHAR(2)` | Reason for Escalation |

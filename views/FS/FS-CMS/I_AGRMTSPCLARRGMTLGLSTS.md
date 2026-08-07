@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgrmtSpclArrgmtLegalStatus` | `CHAR(2)` | Special Arrangement Legal Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgrmtSpclArrgmtLegalStatus` |  | |  |  | `CHAR(2)` | Special Arrangement Legal Status |

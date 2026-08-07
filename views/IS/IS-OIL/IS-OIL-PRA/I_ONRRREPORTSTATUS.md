@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRReportStatus` | `CHAR(1)` | ONRR-2014 - Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRReportStatus` |  | |  |  | `CHAR(1)` | ONRR-2014 - Status |

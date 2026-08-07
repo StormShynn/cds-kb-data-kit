@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtUIMaintScpCat` | `CHAR(1)` | Maintenance Scope for Online Transactions |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtMgmtUIMaintScpCatName` | `CHAR(60)` | Text of UI Maintenance Scope in Settlement Management |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtUIMaintScpCat` |  | |  |  | `CHAR(1)` | Maintenance Scope for Online Transactions |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtMgmtUIMaintScpCatName` |  | |  |  | `CHAR(60)` | Text of UI Maintenance Scope in Settlement Management |

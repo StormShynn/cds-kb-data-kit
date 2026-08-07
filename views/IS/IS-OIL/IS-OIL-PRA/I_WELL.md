@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Well` | `CHAR(15)` | Well ID number |
-| `WellName` | `CHAR(35)` | Well Description |
-| `APIWellNumber` | `CHAR(12)` | Roy 2.0 CO -  Well API Number |
-| `LatitudeUnit` | `UNIT(3)` | Unit of Measure |
-| `LongitudeUnit` | `UNIT(3)` | Unit of Measure |
-| `WellLatitude` | `DEC(8)` | Surface Latitude |
-| `WellLatitudeDirection` | `CHAR(1)` | Surface latitude Direction |
-| `WellLongitude` | `DEC(9)` | Surface longitude |
-| `WellLongitudeDirection` | `CHAR(1)` | Surface longitude direction code |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On Timestamp |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Well` |  | |  |  | `CHAR(15)` | Well ID number |
+| `WellName` |  | |  |  | `CHAR(35)` | Well Description |
+| `APIWellNumber` |  | |  |  | `CHAR(12)` | Roy 2.0 CO -  Well API Number |
+| `LatitudeUnit` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `LongitudeUnit` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `WellLatitude` |  | |  |  | `DEC(8)` | Surface Latitude |
+| `WellLatitudeDirection` |  | |  |  | `CHAR(1)` | Surface latitude Direction |
+| `WellLongitude` |  | |  |  | `DEC(9)` | Surface longitude |
+| `WellLongitudeDirection` |  | |  |  | `CHAR(1)` | Surface longitude direction code |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |

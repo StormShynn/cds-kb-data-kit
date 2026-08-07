@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FunctionalAreaSubdivisionID` | `CHAR(10)` | Master Data Subdivision ID |
-| `FunctionalArea1Subdivision` | `CHAR(10)` | Substring 1 of Functional Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalAreaSubdivisionID` |  | |  |  | `CHAR(10)` | Master Data Subdivision ID |
+| `FunctionalArea1Subdivision` |  | |  |  | `CHAR(10)` | Substring 1 of Functional Area |

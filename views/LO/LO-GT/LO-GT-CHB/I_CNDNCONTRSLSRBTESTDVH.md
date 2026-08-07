@@ -33,22 +33,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConditionContract` | `CHAR(10)` | Condition Contract |
-| `CndnContrType` | `CHAR(4)` | Condition Contract Type |
-| `CndnContrTypeDesc` | `CHAR(40)` | Condition Contract Type Description |
-| `Customer` | `CHAR(10)` | Customer as Partner of a Condition Contract |
-| `ExternalDocumentReferenceID` | `CHAR(30)` | External Document Identifier |
-| `CndnContrValidFrom` | `DATS(8)` | Valid From |
-| `CndnContrValidTo` | `DATS(8)` | Valid To |
-| `PriorSupplier` | `CHAR(10)` | Prior Supplier |
-| `Supplier` | `CHAR(10)` | Supplier as Partner of a Condition Contract |
-| `PersonWorkAgreement` | `NUMC(8)` | Worker as Partner of a Condition Contract |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CndnContrWorkerCostCenter` | `CHAR(10)` | Worker Cost Center |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionContract` |  | |  |  | `CHAR(10)` | Condition Contract |
+| `CndnContrType` |  | |  |  | `CHAR(4)` | Condition Contract Type |
+| `CndnContrTypeDesc` |  | |  |  | `CHAR(40)` | Condition Contract Type Description |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer as Partner of a Condition Contract |
+| `ExternalDocumentReferenceID` |  | |  |  | `CHAR(30)` | External Document Identifier |
+| `CndnContrValidFrom` |  | |  |  | `DATS(8)` | Valid From |
+| `CndnContrValidTo` |  | |  |  | `DATS(8)` | Valid To |
+| `PriorSupplier` |  | |  |  | `CHAR(10)` | Prior Supplier |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier as Partner of a Condition Contract |
+| `PersonWorkAgreement` |  | |  |  | `NUMC(8)` | Worker as Partner of a Condition Contract |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CndnContrWorkerCostCenter` |  | |  |  | `CHAR(10)` | Worker Cost Center |

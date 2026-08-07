@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MTMAdjustmentType` | `CHAR(2)` | Type of adjustment for the MtM or TPL calculation |
-| `Language` | `LANG(1)` | Language Key |
-| `MTMAdjustmentTypeName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MTMAdjustmentType` |  | |  |  | `CHAR(2)` | Type of adjustment for the MtM or TPL calculation |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MTMAdjustmentTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

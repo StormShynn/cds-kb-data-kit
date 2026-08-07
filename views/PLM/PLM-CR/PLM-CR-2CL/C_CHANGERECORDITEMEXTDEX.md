@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeRecordReferenceUUID` | `RAW(16)` | NodeID |
-| `ChangeRecordItemProcgStatus` | `CHAR(2)` | Item Processing Status |
-| `ChgRecdItmDSgntr` | `CHAR(2)` | Digital Singature for Object reference |
-| `ChgRecdReasonForChange` | `CHAR(40)` | Reason for Change |
-| `ChangeNumber` | `CHAR(12)` | Change Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeRecordReferenceUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `ChangeRecordItemProcgStatus` |  | |  |  | `CHAR(2)` | Item Processing Status |
+| `ChgRecdItmDSgntr` |  | |  |  | `CHAR(2)` | Digital Singature for Object reference |
+| `ChgRecdReasonForChange` |  | |  |  | `CHAR(40)` | Reason for Change |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |

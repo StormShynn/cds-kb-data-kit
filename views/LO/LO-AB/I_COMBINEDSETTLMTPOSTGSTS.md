@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CombinedSettlmtPostgSts` | `CHAR(1)` | Posting Status for Combined Settlement |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CombinedSettlmtPostgSts` |  | |  |  | `CHAR(1)` | Posting Status for Combined Settlement |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

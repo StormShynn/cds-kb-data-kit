@@ -33,28 +33,28 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PurchaseOrder` | `CHAR(10)` | Purchase Order Number |
-| `POOutputMessageItemID` | `NUMC(6)` | Output Request Item ID |
-| `POOutputChannel` | `CHAR(5)` | Output Channel |
-| `Supplier` | `CHAR(10)` | Supplier |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarQuarter` | `NUMC(1)` | Calendar Quarter |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `CalendarWeek` | `NUMC(2)` | Calendar Week |
-| `POOutputChannelManualUniqueID` | `CHAR(14)` | Text field length 14 |
-| `POOutputChannelAutomnUniqueID` | `CHAR(14)` | Text field length 14 |
-| `PurchaseOrderOutputIsAutomated` | `CHAR(1)` | Is Automated |
-| `NmbrOfPOOutputItems` | `INT4(10)` |  |
-| `NmbrOfPurchaseOrdersPrinted` | `INT4(10)` | Number of Purchase Orders - Printed |
-| `NmbrOfPurchaseOrdersEmailed` | `INT4(10)` | Number of Purchase Orders Mailed |
-| `NmbrOfPurOrdersOutputAsXML` | `INT4(10)` | Number of Purchase Orders with Output as XML |
-| `NmbrOfPurOrdersOutputAsIDOC` | `INT4(10)` | Number of Purchase Orders with Output as IDOC |
-| `NmbrOfPurOrdersOutputAsEDI` | `INT4(10)` | Number of Purchase Orders with Output as EDI |
-| `NmbrOfPurOrdsWithAutomnOutput` | `INT4(10)` |  |
-| `NmbrOfPurOrdsWithNonAutomnOutp` | `INT4(10)` |  |
-| `POOutputAutomationPercent` | `DEC(15)` |  |
-| `POOutputNonAutomnPercent` | `DEC(15)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` |  | |  |  | `CHAR(10)` | Purchase Order Number |
+| `POOutputMessageItemID` |  | |  |  | `NUMC(6)` | Output Request Item ID |
+| `POOutputChannel` |  | |  |  | `CHAR(5)` | Output Channel |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `CalendarWeek` |  | |  |  | `NUMC(2)` | Calendar Week |
+| `POOutputChannelManualUniqueID` |  | |  |  | `CHAR(14)` | Text field length 14 |
+| `POOutputChannelAutomnUniqueID` |  | |  |  | `CHAR(14)` | Text field length 14 |
+| `PurchaseOrderOutputIsAutomated` |  | |  |  | `CHAR(1)` | Is Automated |
+| `NmbrOfPOOutputItems` |  | |  |  | `INT4(10)` |  |
+| `NmbrOfPurchaseOrdersPrinted` |  | |  |  | `INT4(10)` | Number of Purchase Orders - Printed |
+| `NmbrOfPurchaseOrdersEmailed` |  | |  |  | `INT4(10)` | Number of Purchase Orders Mailed |
+| `NmbrOfPurOrdersOutputAsXML` |  | |  |  | `INT4(10)` | Number of Purchase Orders with Output as XML |
+| `NmbrOfPurOrdersOutputAsIDOC` |  | |  |  | `INT4(10)` | Number of Purchase Orders with Output as IDOC |
+| `NmbrOfPurOrdersOutputAsEDI` |  | |  |  | `INT4(10)` | Number of Purchase Orders with Output as EDI |
+| `NmbrOfPurOrdsWithAutomnOutput` |  | |  |  | `INT4(10)` |  |
+| `NmbrOfPurOrdsWithNonAutomnOutp` |  | |  |  | `INT4(10)` |  |
+| `POOutputAutomationPercent` |  | |  |  | `DEC(15)` |  |
+| `POOutputNonAutomnPercent` |  | |  |  | `DEC(15)` |  |

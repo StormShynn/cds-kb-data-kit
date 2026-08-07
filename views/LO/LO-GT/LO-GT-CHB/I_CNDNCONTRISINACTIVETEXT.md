@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrIsInactive` | `CHAR(1)` | Condition Contract Activation Status |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrIsInactiveName` | `CHAR(60)` | Condition Contract Activation Status Name |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrIsInactive` |  | |  |  | `CHAR(1)` | Condition Contract Activation Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrIsInactiveName` |  | |  |  | `CHAR(60)` | Condition Contract Activation Status Name |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

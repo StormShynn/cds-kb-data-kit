@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BookingReversalType` | `CHAR(1)` | Booking/Reversal Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BookingReversalType` |  | |  |  | `CHAR(1)` | Booking/Reversal Indicator |

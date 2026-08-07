@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GranteeMgmtBudgetStatus` | `CHAR(1)` | Budget Status: Unreleased/Released |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GranteeMgmtBudgetStatus` |  | |  |  | `CHAR(1)` | Budget Status: Unreleased/Released |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

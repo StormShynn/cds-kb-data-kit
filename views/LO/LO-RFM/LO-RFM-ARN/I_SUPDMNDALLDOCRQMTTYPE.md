@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RequirementType` | `CHAR(2)` | Requirement Type |
-| `RequirementTypeName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RequirementType` |  | |  |  | `CHAR(2)` | Requirement Type |
+| `RequirementTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

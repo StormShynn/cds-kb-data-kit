@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrSettlmtList` | `CHAR(10)` | Supplier Settlement List |
-| `SuplrSettlmtListItem` | `NUMC(6)` | Item in List |
-| `RefSettlmtDoc` | `CHAR(10)` | Settlement Document Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrSettlmtList` |  | |  |  | `CHAR(10)` | Supplier Settlement List |
+| `SuplrSettlmtListItem` |  | |  |  | `NUMC(6)` | Item in List |
+| `RefSettlmtDoc` |  | |  |  | `CHAR(10)` | Settlement Document Number |

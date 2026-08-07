@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CommodityCurveDrvtvContrSpec` | `CHAR(20)` | Derivative Contract Specification ID |
-| `ValidFrom` | `DATS(8)` | Derivative Contract Specification: Valid From |
-| `ConditionTermRateMktCurrency` | `CUKY(5)` | Quotation Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CommodityCurveDrvtvContrSpec` |  | |  |  | `CHAR(20)` | Derivative Contract Specification ID |
+| `ValidFrom` |  | |  |  | `DATS(8)` | Derivative Contract Specification: Valid From |
+| `ConditionTermRateMktCurrency` |  | |  |  | `CUKY(5)` | Quotation Currency |

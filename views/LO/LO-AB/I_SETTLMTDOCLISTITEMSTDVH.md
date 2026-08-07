@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDocList` | `CHAR(10)` | Document Number of Settlement Document List |
-| `SettlmtDocListItem` | `NUMC(6)` | Item in List |
-| `BillToParty` | `CHAR(10)` | Customer in Settlement Management |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `InvoicingParty` | `CHAR(10)` | Supplier in Settlement Management |
-| `PayeeParty` | `CHAR(10)` | Payee |
-| `PayerParty` | `CHAR(10)` | Payer |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocList` |  | |  |  | `CHAR(10)` | Document Number of Settlement Document List |
+| `SettlmtDocListItem` |  | |  |  | `NUMC(6)` | Item in List |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Customer in Settlement Management |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `InvoicingParty` |  | |  |  | `CHAR(10)` | Supplier in Settlement Management |
+| `PayeeParty` |  | |  |  | `CHAR(10)` | Payee |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |

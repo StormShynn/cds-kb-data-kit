@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlREValuationResult` | `CHAR(10)` | Value Calculation Method |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlREValuationResult` |  | |  |  | `CHAR(10)` | Value Calculation Method |

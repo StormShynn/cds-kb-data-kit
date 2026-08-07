@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `REIntegObjectCtrlgObjectType` | `CHAR(1)` | Controlling Object Type |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `REIntegObjCtrlgObjTypeName` | `CHAR(60)` | RE Description 60 Characters |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `REIntegObjectCtrlgObjectType` |  | |  |  | `CHAR(1)` | Controlling Object Type |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `REIntegObjCtrlgObjTypeName` |  | |  |  | `CHAR(60)` | RE Description 60 Characters |

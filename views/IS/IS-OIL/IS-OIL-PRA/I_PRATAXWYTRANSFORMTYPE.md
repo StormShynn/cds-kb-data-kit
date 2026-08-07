@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxTransacFormType` | `CHAR(1)` | Tax 2.0 - Original / Amended / Unknown Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxTransacFormType` |  | |  |  | `CHAR(1)` | Tax 2.0 - Original / Amended / Unknown Indicator |

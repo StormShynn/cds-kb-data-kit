@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PersonWorkAgreement` | `NUMC(8)` | Personnel Number |
-| `StartDate` | `DATS(8)` | Start Date |
-| `EndDate` | `DATS(8)` | End Date |
-| `WorkAgreementStatus` | `CHAR(1)` | Model S: Employment Status |
-| `PersonWorkAgrmtAuthznGrpg` | `CHAR(14)` | Organizational Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonWorkAgreement` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `StartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `EndDate` |  | |  |  | `DATS(8)` | End Date |
+| `WorkAgreementStatus` |  | |  |  | `CHAR(1)` | Model S: Employment Status |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  |  | `CHAR(14)` | Organizational Key |

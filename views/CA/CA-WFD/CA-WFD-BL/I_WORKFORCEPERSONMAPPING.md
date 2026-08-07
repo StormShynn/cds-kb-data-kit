@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
-| `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
-| `WorkAssignmentStartDate` | `DATS(8)` | Start Date |
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `WorkforcePersonID` | `CHAR(36)` | Worker ID |
-| `FirstName` | `CHAR(40)` | First Name of Business Partner (Person) |
-| `LastName` | `CHAR(40)` | Last Name of Business Partner (Person) |
-| `PersonFullName` | `CHAR(80)` | Full Name |
-| `UserID` | `CHAR(12)` | User ID |
-| `WorkAssignmentBusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `Supplier` | `CHAR(10)` | Account Number of Supplier |
-| `IsBlocked` | `CHAR(1)` | Blocked Indicator |
-| `Person` | `CHAR(10)` | Business Partner Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkAssignmentExternalID` |  | |  |  | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` |  | |  |  | `CHAR(2)` | Workforce Country ISO Code |
+| `WorkAssignmentStartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `WorkforcePersonID` |  | |  |  | `CHAR(36)` | Worker ID |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | Full Name |
+| `UserID` |  | |  |  | `CHAR(12)` | User ID |
+| `WorkAssignmentBusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `IsBlocked` |  | |  |  | `CHAR(1)` | Blocked Indicator |
+| `Person` |  | |  |  | `CHAR(10)` | Business Partner Number |

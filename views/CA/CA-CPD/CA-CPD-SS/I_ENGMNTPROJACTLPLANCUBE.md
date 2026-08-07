@@ -34,62 +34,62 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Engagement Project ID |
-| `Ledger` | `CHAR(2)` | Ledger |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `SalesOrder` | `CHAR(10)` | Sales Order |
-| `SalesOrderItem` | `NUMC(6)` | Sales Order Item |
-| `UnitOfMeasure` | `UNIT(3)` | Unit of Measure |
-| `ProjectStartDate` | `DATS(8)` | Commercial Project: Start Date |
-| `ProjectEndDate` | `DATS(8)` | Commercial Project: End Date |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `EngagementProjectType` | `CHAR(4)` | Engagement Project Type |
-| `EngagementProjectStage` | `CHAR(4)` | Commercial Project: Stage |
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `EngagementProjectCategory` | `CHAR(1)` | Project Type |
-| `ProjectProfileCode` | `CHAR(7)` | Project Profile |
-| `EngagementProjectResourceType` | `CHAR(4)` | Resource Type ID |
-| `BillingControlCategory` | `CHAR(8)` |  |
-| `ProjectManagerName` | `CHAR(80)` |  |
-| `CompanyCode` | `CHAR(4)` | Company code for the project |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `SalesOrderItemCategory` | `CHAR(4)` | Sales Document Item Category |
-| `ControllingArea` | `CHAR(4)` | Controlling area for the project |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `CostCenter` | `CHAR(20)` | Organization Unit Key |
-| `ActlEffortQty` | `QUAN(15)` |  |
-| `PlndEffortQty` | `QUAN(15)` |  |
-| `BaselinePlndEffortQty` | `QUAN(15)` |  |
-| `FiscalYearPeriod` | `CHAR(7)` |  |
-| `Currency` | `CUKY(5)` | Custom Project Currency |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `ActlRevnInProjCrcy` | `CURR(28)` |  |
-| `BilledRevenueAmtInProjCrcy` | `CURR(28)` |  |
-| `ActlCostInProjCrcy` | `CURR(23)` |  |
-| `PlndCostAmtInProjCrcy` | `CURR(23)` |  |
-| `BaselinePlndCostAmt` | `CURR(23)` |  |
-| `RevenueAsSoldAmount` | `CURR(23)` |  |
-| `ActlCostUpToInptPerdAmtInPC` | `CURR(23)` |  |
-| `ActlCostUpToCurPerdAmtInPC` | `CURR(23)` |  |
-| `ActlRevnUpToInptPerdAmtInPC` | `CURR(28)` |  |
-| `BilledRevnUpToInptPerdAmtInPC` | `CURR(28)` |  |
-| `ActlRevnUpToCurPerdAmtInPC` | `CURR(28)` |  |
-| `BilledRevnUpToCurPerdAmtInPC` | `CURR(28)` |  |
-| `PlnCostUpToCurPerdAmtInPC` | `CURR(23)` |  |
-| `PlnCostUpToPrevPerdAmtInPC` | `CURR(23)` |  |
-| `BslnCostUpToCurPerdAmtInPC` | `CURR(23)` |  |
-| `BslnCostUpToPrevPerdAmtInPC` | `CURR(23)` |  |
-| `PlndEffortUpToCurPerd` | `QUAN(15)` |  |
-| `PlnEffortUpToPrevPerdQty` | `QUAN(15)` |  |
-| `BslnEffortUpToCurPerdQty` | `QUAN(15)` |  |
-| `BslnEffortUpToPrevPerdQty` | `QUAN(15)` |  |
-| `ActlEffortUpToInptPerdQty` | `QUAN(15)` |  |
-| `ActlEffortQtyUpToCurPerd` | `QUAN(15)` |  |
-| `ActlEffortUpToPrevPerdQty` | `QUAN(15)` |  |
-| `IsMyProject` | `CHAR(1)` |  |
-| `DiffBtwnPlnAndActlEffortQty` | `QUAN(16)` |  |
-| `ProjectVisibility` | `CHAR(1)` | Confidential Indicator for Commercial Project |
-| `ProjectManagerWorkAgreement` | `NUMC(8)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `ProjectStartDate` |  | |  |  | `DATS(8)` | Commercial Project: Start Date |
+| `ProjectEndDate` |  | |  |  | `DATS(8)` | Commercial Project: End Date |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `EngagementProjectType` |  | |  |  | `CHAR(4)` | Engagement Project Type |
+| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `EngagementProjectCategory` |  | |  |  | `CHAR(1)` | Project Type |
+| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
+| `EngagementProjectResourceType` |  | |  |  | `CHAR(4)` | Resource Type ID |
+| `BillingControlCategory` |  | |  |  | `CHAR(8)` |  |
+| `ProjectManagerName` |  | |  |  | `CHAR(80)` |  |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company code for the project |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `SalesOrderItemCategory` |  | |  |  | `CHAR(4)` | Sales Document Item Category |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling area for the project |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(20)` | Organization Unit Key |
+| `ActlEffortQty` |  | |  |  | `QUAN(15)` |  |
+| `PlndEffortQty` |  | |  |  | `QUAN(15)` |  |
+| `BaselinePlndEffortQty` |  | |  |  | `QUAN(15)` |  |
+| `FiscalYearPeriod` |  | |  |  | `CHAR(7)` |  |
+| `Currency` |  | |  |  | `CUKY(5)` | Custom Project Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `ActlRevnInProjCrcy` |  | |  |  | `CURR(28)` |  |
+| `BilledRevenueAmtInProjCrcy` |  | |  |  | `CURR(28)` |  |
+| `ActlCostInProjCrcy` |  | |  |  | `CURR(23)` |  |
+| `PlndCostAmtInProjCrcy` |  | |  |  | `CURR(23)` |  |
+| `BaselinePlndCostAmt` |  | |  |  | `CURR(23)` |  |
+| `RevenueAsSoldAmount` |  | |  |  | `CURR(23)` |  |
+| `ActlCostUpToInptPerdAmtInPC` |  | |  |  | `CURR(23)` |  |
+| `ActlCostUpToCurPerdAmtInPC` |  | |  |  | `CURR(23)` |  |
+| `ActlRevnUpToInptPerdAmtInPC` |  | |  |  | `CURR(28)` |  |
+| `BilledRevnUpToInptPerdAmtInPC` |  | |  |  | `CURR(28)` |  |
+| `ActlRevnUpToCurPerdAmtInPC` |  | |  |  | `CURR(28)` |  |
+| `BilledRevnUpToCurPerdAmtInPC` |  | |  |  | `CURR(28)` |  |
+| `PlnCostUpToCurPerdAmtInPC` |  | |  |  | `CURR(23)` |  |
+| `PlnCostUpToPrevPerdAmtInPC` |  | |  |  | `CURR(23)` |  |
+| `BslnCostUpToCurPerdAmtInPC` |  | |  |  | `CURR(23)` |  |
+| `BslnCostUpToPrevPerdAmtInPC` |  | |  |  | `CURR(23)` |  |
+| `PlndEffortUpToCurPerd` |  | |  |  | `QUAN(15)` |  |
+| `PlnEffortUpToPrevPerdQty` |  | |  |  | `QUAN(15)` |  |
+| `BslnEffortUpToCurPerdQty` |  | |  |  | `QUAN(15)` |  |
+| `BslnEffortUpToPrevPerdQty` |  | |  |  | `QUAN(15)` |  |
+| `ActlEffortUpToInptPerdQty` |  | |  |  | `QUAN(15)` |  |
+| `ActlEffortQtyUpToCurPerd` |  | |  |  | `QUAN(15)` |  |
+| `ActlEffortUpToPrevPerdQty` |  | |  |  | `QUAN(15)` |  |
+| `IsMyProject` |  | |  |  | `CHAR(1)` |  |
+| `DiffBtwnPlnAndActlEffortQty` |  | |  |  | `QUAN(16)` |  |
+| `ProjectVisibility` |  | |  |  | `CHAR(1)` | Confidential Indicator for Commercial Project |
+| `ProjectManagerWorkAgreement` |  | |  |  | `NUMC(8)` |  |

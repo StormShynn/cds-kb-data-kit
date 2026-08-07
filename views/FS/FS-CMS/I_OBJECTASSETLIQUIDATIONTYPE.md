@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetLiquidationType` | `CHAR(6)` | Liquidation Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetLiquidationType` |  | |  |  | `CHAR(6)` | Liquidation Type |

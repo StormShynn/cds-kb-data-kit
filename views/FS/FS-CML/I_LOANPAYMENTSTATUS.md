@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanPaymentStatus` | `CHAR(1)` | Payment Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanPaymentStatus` |  | |  |  | `CHAR(1)` | Payment Status |

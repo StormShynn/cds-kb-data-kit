@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DensityType` | `CHAR(1)` | Density Type |
-| `Language` | `LANG(1)` | Language Key |
-| `DensityTypeName` | `CHAR(60)` | Density Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DensityType` |  | |  |  | `CHAR(1)` | Density Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DensityTypeName` |  | |  |  | `CHAR(60)` | Density Type Name |

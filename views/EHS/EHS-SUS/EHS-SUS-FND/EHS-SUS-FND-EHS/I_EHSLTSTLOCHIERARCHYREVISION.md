@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocHierarchyUUID` | `RAW(16)` | Location Hierarchy Root Key |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `RevisionDescription` | `CHAR(80)` | Revision Description |
-| `EHSLocHierarchyRevisionUUID` | `RAW(16)` | Location Hierarchy Revision Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocHierarchyUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Root Key |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `RevisionDescription` |  | |  |  | `CHAR(80)` | Revision Description |
+| `EHSLocHierarchyRevisionUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Revision Key |

@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BOOCharacteristicType` | `CHAR(1)` | Characteristic Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BOOCharacteristicType` |  | |  |  | `CHAR(1)` | Characteristic Type |

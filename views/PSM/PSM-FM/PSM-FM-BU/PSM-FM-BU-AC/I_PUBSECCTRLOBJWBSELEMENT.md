@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyIDForWBSElement` | `CHAR(42)` | Hierarchy ID for WBS Element |
-| `CtrlObjForWBSElement` | `CHAR(50)` | Control Object for a WBS Element |
-| `CtrlObjNameForWBSElement` | `CHAR(50)` | Name of a Control Object for a WBS Element |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyIDForWBSElement` |  | |  |  | `CHAR(42)` | Hierarchy ID for WBS Element |
+| `CtrlObjForWBSElement` |  | |  |  | `CHAR(50)` | Control Object for a WBS Element |
+| `CtrlObjNameForWBSElement` |  | |  |  | `CHAR(50)` | Name of a Control Object for a WBS Element |

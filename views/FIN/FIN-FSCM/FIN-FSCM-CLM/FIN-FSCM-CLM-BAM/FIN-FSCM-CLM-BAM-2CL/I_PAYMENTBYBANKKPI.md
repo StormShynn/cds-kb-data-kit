@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Bank` | `CHAR(15)` | Bank Key |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `NrOfBanksRated` | `INT1(3)` |  |
-| `InAmountInDisplayCurrency` | `CURR(23)` |  |
-| `OutAmountInDisplayCurrency` | `CURR(23)` |  |
-| `DisplayCurrency` | `CUKY(5)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Key |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `NrOfBanksRated` |  | |  |  | `INT1(3)` |  |
+| `InAmountInDisplayCurrency` |  | |  |  | `CURR(23)` |  |
+| `OutAmountInDisplayCurrency` |  | |  |  | `CURR(23)` |  |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |

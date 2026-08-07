@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanProductType` | `CHAR(3)` | Product Type |
-| `LoanType` | `NUMC(3)` | Loan Type Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `LoanType` |  | |  |  | `NUMC(3)` | Loan Type Indicator |

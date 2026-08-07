@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `PrimaryGeogrlLocation` | `CHAR(2)` | Primary Geographical Location |
-| `SecondaryGeogrlLocation` | `CHAR(3)` | Secondary geographic location |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+| `SecondaryGeogrlLocation` |  | |  |  | `CHAR(3)` | Secondary geographic location |

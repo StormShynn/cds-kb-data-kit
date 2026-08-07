@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IntrastatDeclnGdsFlwCat` | `CHAR(1)` | Type of Goods Flow for Intrastat Declarations |
-| `Language` | `LANG(1)` | Language Key |
-| `IntrastatDeclnGdsFlwCatName` | `CHAR(60)` | Type Description of Goods Flow for Intrastat Declarations |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IntrastatDeclnGdsFlwCat` |  | |  |  | `CHAR(1)` | Type of Goods Flow for Intrastat Declarations |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IntrastatDeclnGdsFlwCatName` |  | |  |  | `CHAR(60)` | Type Description of Goods Flow for Intrastat Declarations |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

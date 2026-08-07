@@ -35,35 +35,35 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LimitType` | `CHAR(3)` | Limit Type |
-| `LimitUtilznDeterminationDate` | `DATS(8)` | Base Date for Determining Limit Utilization |
-| `LimitUtilizationBase` | `NUMC(1)` | Limit Utilization Base |
-| `LmtCharacteristicsRecordNumber` | `NUMC(20)` | Number of Limit Record |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `LimitProductGroup` | `CHAR(3)` | Limit Product Group |
-| `Portfolio` | `CHAR(10)` | Portfolio |
-| `CharacteristicCurrency` | `CUKY(5)` | Currency as Limit Characteristic |
-| `FreeDefinedMonitoringAttribute` | `CHAR(10)` | Monitoring Unit |
-| `InternalOrganizationalCenter` | `CHAR(10)` | Internal Organizational Unit |
-| `CountryRiskCountry` | `CHAR(3)` | Relevant Country/Region for Country/Region Risk |
-| `LimitValidityStartDate` | `DATS(8)` | Valid-From Date of a Limit |
-| `LimitValidityEndDate` | `DATS(8)` | Valid-To Date of a Limit |
-| `LimitUtilizationValidityDate` | `DATS(8)` | Valid-From Date of the Limit Utilization |
-| `CounterpartyLimitIsLocked` | `CHAR(1)` | Limit is locked |
-| `IntLimitSpecAmountInDspCrcy` | `CURR(17)` | Internal Limit Specification Amount |
-| `IntInterimLimitAmountInDspCrcy` | `CURR(17)` | Internal Interim Limit Amount |
-| `ExtLimitSpecAmountInDspCrcy` | `CURR(17)` | External Limit Specification Amount |
-| `ExtInterimLimitAmountInDspCrcy` | `CURR(17)` | External Interim Limit Amount |
-| `IntLimitTransfAmountInDspCrcy` | `CURR(17)` | Internal Limit Transfer Amount |
-| `ExtLimitTransfAmountInDspCrcy` | `CURR(17)` | External Limit Transfer Amount |
-| `IntLimitAmountInDisplayCrcy` | `CURR(17)` | Internal Limit Amount |
-| `ExtLimitAmountInDisplayCrcy` | `CURR(17)` | External Limit Amount |
-| `LimitUtilznAmountInDisplayCrcy` | `CURR(17)` | Limit Amount Utilized: Totals Record |
-| `FreeIntLimitAmountInDspCrcy` | `CURR(17)` | Free Internal Limit Amount |
-| `FreeExtLimitAmountInDspCrcy` | `CURR(17)` | Free External Limit Amount |
-| `CtptyLmtWrngThldAmtInDspCrcy` | `CURR(17)` | Warning Threshold |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `CtptyLmtWrngThresholdCategory` | `NUMC(1)` | Early Warning Control |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LimitType` |  | |  |  | `CHAR(3)` | Limit Type |
+| `LimitUtilznDeterminationDate` |  | |  |  | `DATS(8)` | Base Date for Determining Limit Utilization |
+| `LimitUtilizationBase` |  | |  |  | `NUMC(1)` | Limit Utilization Base |
+| `LmtCharacteristicsRecordNumber` |  | |  |  | `NUMC(20)` | Number of Limit Record |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `LimitProductGroup` |  | |  |  | `CHAR(3)` | Limit Product Group |
+| `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `CharacteristicCurrency` |  | |  |  | `CUKY(5)` | Currency as Limit Characteristic |
+| `FreeDefinedMonitoringAttribute` |  | |  |  | `CHAR(10)` | Monitoring Unit |
+| `InternalOrganizationalCenter` |  | |  |  | `CHAR(10)` | Internal Organizational Unit |
+| `CountryRiskCountry` |  | |  |  | `CHAR(3)` | Relevant Country/Region for Country/Region Risk |
+| `LimitValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date of a Limit |
+| `LimitValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date of a Limit |
+| `LimitUtilizationValidityDate` |  | |  |  | `DATS(8)` | Valid-From Date of the Limit Utilization |
+| `CounterpartyLimitIsLocked` |  | |  |  | `CHAR(1)` | Limit is locked |
+| `IntLimitSpecAmountInDspCrcy` |  | |  |  | `CURR(17)` | Internal Limit Specification Amount |
+| `IntInterimLimitAmountInDspCrcy` |  | |  |  | `CURR(17)` | Internal Interim Limit Amount |
+| `ExtLimitSpecAmountInDspCrcy` |  | |  |  | `CURR(17)` | External Limit Specification Amount |
+| `ExtInterimLimitAmountInDspCrcy` |  | |  |  | `CURR(17)` | External Interim Limit Amount |
+| `IntLimitTransfAmountInDspCrcy` |  | |  |  | `CURR(17)` | Internal Limit Transfer Amount |
+| `ExtLimitTransfAmountInDspCrcy` |  | |  |  | `CURR(17)` | External Limit Transfer Amount |
+| `IntLimitAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | Internal Limit Amount |
+| `ExtLimitAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | External Limit Amount |
+| `LimitUtilznAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | Limit Amount Utilized: Totals Record |
+| `FreeIntLimitAmountInDspCrcy` |  | |  |  | `CURR(17)` | Free Internal Limit Amount |
+| `FreeExtLimitAmountInDspCrcy` |  | |  |  | `CURR(17)` | Free External Limit Amount |
+| `CtptyLmtWrngThldAmtInDspCrcy` |  | |  |  | `CURR(17)` | Warning Threshold |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `CtptyLmtWrngThresholdCategory` |  | |  |  | `NUMC(1)` | Early Warning Control |

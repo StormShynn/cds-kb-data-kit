@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NotaFiscal` | `NUMC(10)` | Document Number |
-| `BR_NFDocRefSequenceNumber` | `NUMC(3)` | Counter |
-| `BR_NFDocumentReferenceType` | `CHAR(1)` | Document Reference Type |
-| `BR_NFDocReferenceAccessKey` | `CHAR(44)` | 44-Digit Access Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` |  | |  |  | `NUMC(10)` | Document Number |
+| `BR_NFDocRefSequenceNumber` |  | |  |  | `NUMC(3)` | Counter |
+| `BR_NFDocumentReferenceType` |  | |  |  | `CHAR(1)` | Document Reference Type |
+| `BR_NFDocReferenceAccessKey` |  | |  |  | `CHAR(44)` | 44-Digit Access Key |

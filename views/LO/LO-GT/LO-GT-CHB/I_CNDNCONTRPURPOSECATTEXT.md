@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrPurposeCat` | `CHAR(2)` | Condition Contract Purpose Category |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrPurposeCatName` | `CHAR(60)` | Condition Contract Purpose Category Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrPurposeCat` |  | |  |  | `CHAR(2)` | Condition Contract Purpose Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrPurposeCatName` |  | |  |  | `CHAR(60)` | Condition Contract Purpose Category Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

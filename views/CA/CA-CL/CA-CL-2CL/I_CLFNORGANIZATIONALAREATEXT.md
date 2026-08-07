@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ClassType` | `CHAR(3)` | Class Type |
-| `ClfnOrganizationalAreaCode` | `CHAR(1)` | Organizational Area Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ClfnOrganizationalAreaName` | `CHAR(40)` | Organizational Area Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassType` |  | |  |  | `CHAR(3)` | Class Type |
+| `ClfnOrganizationalAreaCode` |  | |  |  | `CHAR(1)` | Organizational Area Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ClfnOrganizationalAreaName` |  | |  |  | `CHAR(40)` | Organizational Area Description |

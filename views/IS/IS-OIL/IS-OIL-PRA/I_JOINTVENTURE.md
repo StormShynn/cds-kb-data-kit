@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `JointVenture` | `CHAR(6)` | Joint Venture |
-| `JointVentureType` | `CHAR(1)` | Venture Type |
-| `Operator` | `CHAR(10)` | Operator for Non-Operated Venture |
-| `TaxCode` | `CHAR(2)` | Tax on Sales/Purchases Code |
-| `JointVentureClass` | `CHAR(2)` | Venture Class |
-| `JntVentureOperatingAgmt` | `CHAR(6)` | Joint Operating Agreement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
+| `JointVentureType` |  | |  |  | `CHAR(1)` | Venture Type |
+| `Operator` |  | |  |  | `CHAR(10)` | Operator for Non-Operated Venture |
+| `TaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `JointVentureClass` |  | |  |  | `CHAR(2)` | Venture Class |
+| `JntVentureOperatingAgmt` |  | |  |  | `CHAR(6)` | Joint Operating Agreement |

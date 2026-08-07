@@ -35,23 +35,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `FinancialStatementItem` | `CHAR(10)` | Financial Statement Item |
-| `FinancialStatementItemType` | `CHAR(10)` | Financial Statement Item Type |
-| `BreakdownCategory` | `CHAR(4)` | Breakdown Category |
-| `IsConsolidationItem` | `CHAR(1)` | Is Consolidation Item |
-| `FinancialStatementItemIsBlkd` | `CHAR(1)` | Blocked for Posting |
-| `NetBalanceIsCarriedForward` | `CHAR(1)` | Carry Forward Balances |
-| `FSItemLink` | `CHAR(1333)` | URL |
-| `FSItemLinkLabel` | `CHAR(255)` | Label for Link |
-| `ETag` | `CHAR(32)` | Financial Statement Item ETag |
-| `FinancialStatementItemGroup` | `CHAR(1)` | Financial Statement Item Type |
-| `DebitCreditCode` | `CHAR(1)` | Debit/credit sign (+/-) |
-| `FinancialStatementItemClass` | `CHAR(10)` | Financial Statement Item Type |
-| `FinancialStatementItemCategory` | `CHAR(1)` | FS Item Category |
-| `SignOfBalanceIsChecked` | `CHAR(1)` | Check the Sign of Balance |
-| `IsAppropriationItem` | `CHAR(1)` | Appropriation Item |
-| `NetBalanceIsCarryForward` | `CHAR(1)` | Carry Forward the Net Balance |
-| `TotalItemIsRecorded` | `CHAR(1)` | Totals Item May Be Entered/Posted to |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
+| `FinancialStatementItemType` |  | |  |  | `CHAR(10)` | Financial Statement Item Type |
+| `BreakdownCategory` |  | |  |  | `CHAR(4)` | Breakdown Category |
+| `IsConsolidationItem` |  | |  |  | `CHAR(1)` | Is Consolidation Item |
+| `FinancialStatementItemIsBlkd` |  | |  |  | `CHAR(1)` | Blocked for Posting |
+| `NetBalanceIsCarriedForward` |  | |  |  | `CHAR(1)` | Carry Forward Balances |
+| `FSItemLink` |  | |  |  | `CHAR(1333)` | URL |
+| `FSItemLinkLabel` |  | |  |  | `CHAR(255)` | Label for Link |
+| `ETag` |  | |  |  | `CHAR(32)` | Financial Statement Item ETag |
+| `FinancialStatementItemGroup` |  | |  |  | `CHAR(1)` | Financial Statement Item Type |
+| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/credit sign (+/-) |
+| `FinancialStatementItemClass` |  | |  |  | `CHAR(10)` | Financial Statement Item Type |
+| `FinancialStatementItemCategory` |  | |  |  | `CHAR(1)` | FS Item Category |
+| `SignOfBalanceIsChecked` |  | |  |  | `CHAR(1)` | Check the Sign of Balance |
+| `IsAppropriationItem` |  | |  |  | `CHAR(1)` | Appropriation Item |
+| `NetBalanceIsCarryForward` |  | |  |  | `CHAR(1)` | Carry Forward the Net Balance |
+| `TotalItemIsRecorded` |  | |  |  | `CHAR(1)` | Totals Item May Be Entered/Posted to |

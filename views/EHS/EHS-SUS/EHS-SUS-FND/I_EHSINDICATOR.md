@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IndicatorValue` | `CHAR(1)` | Checkbox |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndicatorValue` |  | |  |  | `CHAR(1)` | Checkbox |

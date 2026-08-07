@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `DCoAccountUUID` | `RAW(16)` | UUID of Collection Account |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `DCoAccountUUID` |  | |  |  | `RAW(16)` | UUID of Collection Account |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |

@@ -30,11 +30,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `JointVenture` | `CHAR(6)` | Joint Venture |
-| `Language` | `LANG(1)` | Language Key |
-| `JointVentureName` | `CHAR(35)` | Joint Venture Name |
-| `JointVentureClass` | `CHAR(2)` | Venture Class |
-| `JointVentureType` | `CHAR(1)` | Venture Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `JointVentureName` |  | |  |  | `CHAR(35)` | Joint Venture Name |
+| `JointVentureClass` |  | |  |  | `CHAR(2)` | Venture Class |
+| `JointVentureType` |  | |  |  | `CHAR(1)` | Venture Type |

@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SrvcDocAppointmentType` | `CHAR(12)` | Technical Date Type Name |
-| `LanguageCode` | `LANG(1)` | Language Key |
-| `SrvcDocAppointmentTypeText` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcDocAppointmentType` |  | |  |  | `CHAR(12)` | Technical Date Type Name |
+| `LanguageCode` |  | |  |  | `LANG(1)` | Language Key |
+| `SrvcDocAppointmentTypeText` |  | |  |  | `CHAR(40)` | Description |

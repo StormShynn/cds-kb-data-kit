@@ -35,14 +35,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankGroup` | `CHAR(10)` | Bank Group ID |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` | `CHAR(15)` | Bank Key |
-| `CreditRating` | `CHAR(3)` | Rating |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BankInBankGroup` | `CHAR(10)` | Bank In Bank Group |
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `NumberOfBankAccounts` | `INT4(10)` | Number of Bank Accounts |
-| `NrOfBanksRated` | `INT4(10)` | Number of Banks |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Key |
+| `CreditRating` |  | |  |  | `CHAR(3)` | Rating |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BankInBankGroup` |  | |  |  | `CHAR(10)` | Bank In Bank Group |
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `NumberOfBankAccounts` |  | |  |  | `INT4(10)` | Number of Bank Accounts |
+| `NrOfBanksRated` |  | |  |  | `INT4(10)` | Number of Banks |

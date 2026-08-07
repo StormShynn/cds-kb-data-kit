@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TierTaxType` | `CHAR(1)` | Tier Tax |
-| `Language` | `LANG(1)` | Language Key |
-| `TierTaxTypeName` | `CHAR(60)` | Tier Tax Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TierTaxType` |  | |  |  | `CHAR(1)` | Tier Tax |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TierTaxTypeName` |  | |  |  | `CHAR(60)` | Tier Tax Type Name |

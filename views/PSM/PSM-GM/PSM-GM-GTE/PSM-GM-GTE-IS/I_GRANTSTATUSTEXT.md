@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SystemStatus` | `CHAR(5)` | System status |
-| `Language` | `LANG(1)` | Language Key |
-| `SystemStatusName` | `CHAR(30)` | Individual Status of an Object |
-| `SystemStatusShortName` | `CHAR(4)` | Individual status of an object (short form) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SystemStatus` |  | |  |  | `CHAR(5)` | System status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SystemStatusName` |  | |  |  | `CHAR(30)` | Individual Status of an Object |
+| `SystemStatusShortName` |  | |  |  | `CHAR(4)` | Individual status of an object (short form) |

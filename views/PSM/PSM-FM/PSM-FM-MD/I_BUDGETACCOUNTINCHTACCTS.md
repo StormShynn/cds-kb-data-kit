@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `PubSecBudgetAccount` | `CHAR(10)` | Budget Account |
-| `PubSecBudgetCnsmpnType` | `CHAR(2)` | Budget Consumption Type |
-| `PubSecBdgtAcctRevnExpnCode` | `CHAR(1)` | Expense or Revenue on Budget Account |
-| `PubSecBudgetIsRelevant` | `CHAR(1)` | Budget-Relevant Indicator |
-| `PubSecBdgtAcctIsPostgAllowed` | `CHAR(1)` | Posting to Budget Account Allowed |
-| `PubSecBdgtAcctIsBdgtAllowed` | `CHAR(1)` | Budgeting Allowed for Budget Account |
-| `PubSecBdgtAcctIsCarryFwd` | `CHAR(1)` | Use Budget Account as Carryforward Account |
-| `PubSecBdgtAcctCarryFwdTo` | `CHAR(10)` | Carry Forward Budget Account To Account |
-| `CashLedgerAccount` | `CHAR(10)` | Cash Origin Account |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `PubSecBudgetAccount` |  | |  |  | `CHAR(10)` | Budget Account |
+| `PubSecBudgetCnsmpnType` |  | |  |  | `CHAR(2)` | Budget Consumption Type |
+| `PubSecBdgtAcctRevnExpnCode` |  | |  |  | `CHAR(1)` | Expense or Revenue on Budget Account |
+| `PubSecBudgetIsRelevant` |  | |  |  | `CHAR(1)` | Budget-Relevant Indicator |
+| `PubSecBdgtAcctIsPostgAllowed` |  | |  |  | `CHAR(1)` | Posting to Budget Account Allowed |
+| `PubSecBdgtAcctIsBdgtAllowed` |  | |  |  | `CHAR(1)` | Budgeting Allowed for Budget Account |
+| `PubSecBdgtAcctIsCarryFwd` |  | |  |  | `CHAR(1)` | Use Budget Account as Carryforward Account |
+| `PubSecBdgtAcctCarryFwdTo` |  | |  |  | `CHAR(10)` | Carry Forward Budget Account To Account |
+| `CashLedgerAccount` |  | |  |  | `CHAR(10)` | Cash Origin Account |

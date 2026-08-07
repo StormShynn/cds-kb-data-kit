@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralProcessCtrlObj` | `CHAR(6)` | Process Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralProcessCtrlObj` |  | |  |  | `CHAR(6)` | Process Object |

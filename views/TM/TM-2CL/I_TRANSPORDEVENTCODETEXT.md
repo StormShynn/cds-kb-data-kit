@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdEventCode` | `CHAR(20)` | Event Occurring for a Transportation Activity |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdEventCodeDesc` | `CHAR(40)` | Transportation Order Event Code Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdEventCode` |  | |  |  | `CHAR(20)` | Event Occurring for a Transportation Activity |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdEventCodeDesc` |  | |  |  | `CHAR(40)` | Transportation Order Event Code Description |

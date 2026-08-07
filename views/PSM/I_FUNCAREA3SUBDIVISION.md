@@ -28,7 +28,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FunctionalAreaSubdivisionID` | `CHAR(10)` | Master Data Subdivision ID |
-| `FunctionalArea3Subdivision` | `CHAR(10)` | Substring 3 of Functional Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalAreaSubdivisionID` |  | |  |  | `CHAR(10)` | Master Data Subdivision ID |
+| `FunctionalArea3Subdivision` |  | |  |  | `CHAR(10)` | Substring 3 of Functional Area |

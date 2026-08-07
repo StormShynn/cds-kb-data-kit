@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Batch` | `CHAR(10)` | Batch Number |
-| `Material` | `CHAR(40)` | Material Number |
-| `Plant` | `CHAR(4)` | Plant |
-| `ManufactureDate` | `DATS(8)` | Date of Manufacture |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ManufactureDate` |  | |  |  | `DATS(8)` | Date of Manufacture |

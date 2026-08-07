@@ -34,23 +34,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumber` | `CHAR(12)` | Change Number |
-| `Material` | `CHAR(40)` | Material Number |
-| `ObjMgmtRecdObject` | `CHAR(90)` | Change object (internal use) |
-| `ObjMgmtRecdObjectInternalID` | `CHAR(90)` | Identification of object to be changed |
-| `ChgNmbrAlternativeDateCounter` | `NUMC(3)` | Engineering change management: alternative date counter |
-| `ObjMgmtRecdDescription` | `CHAR(40)` | Object management record description |
-| `ObjMgmtRecdItemUUID` | `CHAR(32)` | Object Management Record Item GUID |
-| `ObjMgmtRecdLastChangedAt` | `DATS(8)` | Date of Last Change |
-| `ObjMgmtRecdLastChangedBy` | `CHAR(12)` | Name of person who changed object |
-| `ObjMgmtRecdCreationDate` | `DATS(8)` | Date record created on |
-| `ObjMgmtRecdCreatedBy` | `CHAR(12)` | User who created record |
-| `ObjMgmtRecdObjLastChangedAt` | `DATS(8)` | Date on Which Object Was Last Changed |
-| `ObjMgmtRecdObjLastChangedBy` | `CHAR(12)` | User who last changed the object |
-| `ObjMgmtRecdObjIsLockedForChg` | `CHAR(1)` | Indicator: Object locked for changes |
-| `ObjMgmtRecdObjIsBaselined` | `CHAR(1)` | Baselining for object was performed |
-| `ObjMgmtRecdChangeType` | `NUMC(3)` | Change Type for Object |
-| `ObjMgmtRecdObjIsPlanned` | `CHAR(1)` | Indicator: planned record |
-| `ObjMgmtRecdObjRevisionLevel` | `CHAR(2)` | Revision Level without Conversion Exit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `ObjMgmtRecdObject` |  | |  |  | `CHAR(90)` | Change object (internal use) |
+| `ObjMgmtRecdObjectInternalID` |  | |  |  | `CHAR(90)` | Identification of object to be changed |
+| `ChgNmbrAlternativeDateCounter` |  | |  |  | `NUMC(3)` | Engineering change management: alternative date counter |
+| `ObjMgmtRecdDescription` |  | |  |  | `CHAR(40)` | Object management record description |
+| `ObjMgmtRecdItemUUID` |  | |  |  | `CHAR(32)` | Object Management Record Item GUID |
+| `ObjMgmtRecdLastChangedAt` |  | |  |  | `DATS(8)` | Date of Last Change |
+| `ObjMgmtRecdLastChangedBy` |  | |  |  | `CHAR(12)` | Name of person who changed object |
+| `ObjMgmtRecdCreationDate` |  | |  |  | `DATS(8)` | Date record created on |
+| `ObjMgmtRecdCreatedBy` |  | |  |  | `CHAR(12)` | User who created record |
+| `ObjMgmtRecdObjLastChangedAt` |  | |  |  | `DATS(8)` | Date on Which Object Was Last Changed |
+| `ObjMgmtRecdObjLastChangedBy` |  | |  |  | `CHAR(12)` | User who last changed the object |
+| `ObjMgmtRecdObjIsLockedForChg` |  | |  |  | `CHAR(1)` | Indicator: Object locked for changes |
+| `ObjMgmtRecdObjIsBaselined` |  | |  |  | `CHAR(1)` | Baselining for object was performed |
+| `ObjMgmtRecdChangeType` |  | |  |  | `NUMC(3)` | Change Type for Object |
+| `ObjMgmtRecdObjIsPlanned` |  | |  |  | `CHAR(1)` | Indicator: planned record |
+| `ObjMgmtRecdObjRevisionLevel` |  | |  |  | `CHAR(2)` | Revision Level without Conversion Exit |

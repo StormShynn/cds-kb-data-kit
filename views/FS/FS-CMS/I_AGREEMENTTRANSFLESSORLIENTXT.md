@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlAgrmtTransfLessorLien` | `CHAR(2)` | Indicator for Lessor Lien on Collateral Agreement |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `AgrmtTransfLessorLienTxt` | `CHAR(40)` | CAG Lessor Lien Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlAgrmtTransfLessorLien` |  | |  |  | `CHAR(2)` | Indicator for Lessor Lien on Collateral Agreement |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `AgrmtTransfLessorLienTxt` |  | |  |  | `CHAR(40)` | CAG Lessor Lien Name |

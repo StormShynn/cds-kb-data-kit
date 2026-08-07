@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeRecordStatus` | `CHAR(2)` | User Status Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeRecordStatus` |  | |  |  | `CHAR(2)` | User Status Code |

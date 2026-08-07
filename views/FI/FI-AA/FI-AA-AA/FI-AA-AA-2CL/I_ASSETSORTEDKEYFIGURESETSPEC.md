@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AssetAccountingKeyFigureSet` | `CHAR(10)` | Key Figure Group |
-| `AssetAccountingSortedKeyFigure` | `CHAR(17)` | Key Figure Box Number for Asset Accounting |
-| `AssetAccountingKeyFigure` | `CHAR(10)` | Key Figure for Asset Accounting |
-| `AssetAcctgKeyFigureSortSqnc` | `NUMC(6)` | Sort sequence of Asset Acc. Key Figure Codes in a group |
-| `ZeroBalAmountKeyFigureIsHidden` | `CHAR(1)` | Indicator: Key Figure is hidden when Balance Amount is zero |
-| `AssetAccountingKeyFigureText` | `CHAR(70)` | Key Figure Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AssetAccountingKeyFigureSet` |  | |  |  | `CHAR(10)` | Key Figure Group |
+| `AssetAccountingSortedKeyFigure` |  | |  |  | `CHAR(17)` | Key Figure Box Number for Asset Accounting |
+| `AssetAccountingKeyFigure` |  | |  |  | `CHAR(10)` | Key Figure for Asset Accounting |
+| `AssetAcctgKeyFigureSortSqnc` |  | |  |  | `NUMC(6)` | Sort sequence of Asset Acc. Key Figure Codes in a group |
+| `ZeroBalAmountKeyFigureIsHidden` |  | |  |  | `CHAR(1)` | Indicator: Key Figure is hidden when Balance Amount is zero |
+| `AssetAccountingKeyFigureText` |  | |  |  | `CHAR(70)` | Key Figure Code Name |

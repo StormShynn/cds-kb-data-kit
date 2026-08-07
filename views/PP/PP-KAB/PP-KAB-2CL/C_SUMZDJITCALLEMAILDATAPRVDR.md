@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `JITCallNumber` | `CHAR(10)` | JIT Call Number |
-| `Supplier` | `CHAR(10)` | Supplier's Account Number |
-| `OutputPartnerForSumzdJITCall` | `CHAR(10)` | Output Partner |
-| `JITCallProfile` | `CHAR(4)` | JIT Call Profile |
-| `Plant` | `CHAR(4)` | Plant |
-| `PlantName` | `CHAR(30)` | Plant Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JITCallNumber` |  | |  |  | `CHAR(10)` | JIT Call Number |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier's Account Number |
+| `OutputPartnerForSumzdJITCall` |  | |  |  | `CHAR(10)` | Output Partner |
+| `JITCallProfile` |  | |  |  | `CHAR(4)` | JIT Call Profile |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `PlantName` |  | |  |  | `CHAR(30)` | Plant Name |

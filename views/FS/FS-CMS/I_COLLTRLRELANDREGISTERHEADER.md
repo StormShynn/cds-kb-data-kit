@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlLandRegisterHeaderUUID` | `RAW(16)` | GUID for Table CMS_LR_DE_A |
-| `ColltrlLandRegDistrictCourt` | `CHAR(25)` | District Court |
-| `ColltrlLandRegDistrictSubCourt` | `CHAR(25)` | Land Register District |
-| `ColltrlLandRegVolumeNumber` | `CHAR(15)` | Volume Number |
-| `ColltrlLandRegisterPageNumber` | `CHAR(15)` | Page Number |
-| `CollateralLandRegisterType` | `CHAR(6)` | Register Type |
-| `ColltrlLandRegExtRefNumber` | `CHAR(32)` | Reference of Old Land Register, in case data was migrated |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlLandRegisterHeaderUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_LR_DE_A |
+| `ColltrlLandRegDistrictCourt` |  | |  |  | `CHAR(25)` | District Court |
+| `ColltrlLandRegDistrictSubCourt` |  | |  |  | `CHAR(25)` | Land Register District |
+| `ColltrlLandRegVolumeNumber` |  | |  |  | `CHAR(15)` | Volume Number |
+| `ColltrlLandRegisterPageNumber` |  | |  |  | `CHAR(15)` | Page Number |
+| `CollateralLandRegisterType` |  | |  |  | `CHAR(6)` | Register Type |
+| `ColltrlLandRegExtRefNumber` |  | |  |  | `CHAR(32)` | Reference of Old Land Register, in case data was migrated |

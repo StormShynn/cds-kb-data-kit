@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumberObjectType` | `NUMC(2)` | Object Type |
-| `Language` | `LANG(1)` | Language Key |
-| `ObjectTypeText` | `CHAR(30)` | Object Type Description |
-| `ObjectTypeShortText` | `CHAR(10)` | Object Type Short Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberObjectType` |  | |  |  | `NUMC(2)` | Object Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ObjectTypeText` |  | |  |  | `CHAR(30)` | Object Type Description |
+| `ObjectTypeShortText` |  | |  |  | `CHAR(10)` | Object Type Short Description |

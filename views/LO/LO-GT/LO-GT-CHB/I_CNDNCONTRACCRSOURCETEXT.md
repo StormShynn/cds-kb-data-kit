@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrAccrSource` | `CHAR(1)` | Source of Accruals |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrAccrSourceName` | `CHAR(60)` | Description of Source of Accurals Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrAccrSource` |  | |  |  | `CHAR(1)` | Source of Accruals |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrAccrSourceName` |  | |  |  | `CHAR(60)` | Description of Source of Accurals Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

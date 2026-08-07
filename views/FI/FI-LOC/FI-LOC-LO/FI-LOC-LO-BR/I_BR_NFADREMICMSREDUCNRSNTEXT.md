@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BR_NFAdRemICMSReductionReason` | `CHAR(1)` | Reason for ad rem reduction |
-| `BR_NFAdRemICMSReducnReasonDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BR_NFAdRemICMSReductionReason` |  | |  |  | `CHAR(1)` | Reason for ad rem reduction |
+| `BR_NFAdRemICMSReducnReasonDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

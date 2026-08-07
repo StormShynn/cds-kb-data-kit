@@ -39,52 +39,52 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `AccountAssignmentType` | `CHAR(2)` | Account Assignment Type |
-| `CurrencyField` | `CHAR(4)` | Currency Role Field |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `LedgerFiscalYear` | `NUMC(4)` | Fiscal Year of Ledger |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `FiscalYearPeriod` | `NUMC(7)` | Fiscal Year Period |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `PostingDate` | `DATS(8)` | Posting Date |
-| `EvtBsdRevnRecgnLastEvalDate` | `DATS(8)` | Last re-evaluation date for event based revenue rec. |
-| `ServicesRenderedDate` | `DATS(8)` | Date on which services are rendered |
-| `Project` | `CHAR(24)` | Project (external ID) |
-| `ProjectExternalID` | `CHAR(24)` | Project Number (External) Edited |
-| `ProjectProfileCode` | `CHAR(7)` | Project Profile |
-| `BillingWBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `OriginProfitCenter` | `CHAR(10)` | Origin Profit Center |
-| `SemanticTag` | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `CustomerGroup` | `CHAR(2)` | Customer Group |
-| `SoldProduct` | `CHAR(40)` | Product Sold |
-| `SoldProductGroup` | `CHAR(9)` | Product Sold Group |
-| `Material` | `CHAR(40)` | Material Number |
-| `SalesDocument` | `CHAR(10)` | Sales Document |
-| `Currency` | `CUKY(5)` | Currency Key |
-| `RecognizedRevnAmtInDspCrcy` | `CURR(23)` | Recognized Revenue Amount in Display Currency |
-| `RecognizedCOGSAmtInDspCrcy` | `CURR(23)` | Recognized COS |
-| `RecognizedMargAmtInDisplayCrcy` | `CURR(23)` | Recognized Margin |
-| `WIPProjAmtInDspCrcy` | `CURR(23)` | WIP - Project |
-| `BilledRevenueAmtInDspCrcy` | `CURR(23)` | Billed Revenue |
-| `MarginInPct` | `DECF(34)` |  |
-| `ActualCostAmtInDspCrcy` | `CURR(23)` | Actual Cost |
-| `COGSAdjustmentAmtInDspCrcy` | `CURR(23)` | COS Adjustment |
-| `RecognizedCostAmtInDspCrcy` | `DEC(23)` |  |
-| `FinancialPlanningReqTransSqnc` | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
-| `FinancialPlanningDataPacket` | `NUMC(6)` | Financial Planning Data Packet Number |
-| `LineIsSemTagCalculated` | `CHAR(1)` | Indicator: Calculated by Semantic Tag |
-| `SourceLedger` | `CHAR(2)` | Source Ledger |
-| `FinancialPlanningEntryItem` | `INT4(10)` | Financial Planning Entry Item |
-| `TechnicalCompletionDate` | `DATS(8)` | Technically complete date |
-| `PersonnelNumber` | `NUMC(8)` | Personnel Number |
-| `DocumentItemText` | `CHAR(50)` | Item Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `EvtBsdRevnRecgnLastEvalDate` |  | |  |  | `DATS(8)` | Last re-evaluation date for event based revenue rec. |
+| `ServicesRenderedDate` |  | |  |  | `DATS(8)` | Date on which services are rendered |
+| `Project` |  | |  |  | `CHAR(24)` | Project (external ID) |
+| `ProjectExternalID` |  | |  |  | `CHAR(24)` | Project Number (External) Edited |
+| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
+| `BillingWBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `OriginProfitCenter` |  | |  |  | `CHAR(10)` | Origin Profit Center |
+| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `SoldProduct` |  | |  |  | `CHAR(40)` | Product Sold |
+| `SoldProductGroup` |  | |  |  | `CHAR(9)` | Product Sold Group |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `RecognizedRevnAmtInDspCrcy` |  | |  |  | `CURR(23)` | Recognized Revenue Amount in Display Currency |
+| `RecognizedCOGSAmtInDspCrcy` |  | |  |  | `CURR(23)` | Recognized COS |
+| `RecognizedMargAmtInDisplayCrcy` |  | |  |  | `CURR(23)` | Recognized Margin |
+| `WIPProjAmtInDspCrcy` |  | |  |  | `CURR(23)` | WIP - Project |
+| `BilledRevenueAmtInDspCrcy` |  | |  |  | `CURR(23)` | Billed Revenue |
+| `MarginInPct` |  | |  |  | `DECF(34)` |  |
+| `ActualCostAmtInDspCrcy` |  | |  |  | `CURR(23)` | Actual Cost |
+| `COGSAdjustmentAmtInDspCrcy` |  | |  |  | `CURR(23)` | COS Adjustment |
+| `RecognizedCostAmtInDspCrcy` |  | |  |  | `DEC(23)` |  |
+| `FinancialPlanningReqTransSqnc` |  | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
+| `FinancialPlanningDataPacket` |  | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
+| `LineIsSemTagCalculated` |  | |  |  | `CHAR(1)` | Indicator: Calculated by Semantic Tag |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `FinancialPlanningEntryItem` |  | |  |  | `INT4(10)` | Financial Planning Entry Item |
+| `TechnicalCompletionDate` |  | |  |  | `DATS(8)` | Technically complete date |
+| `PersonnelNumber` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |

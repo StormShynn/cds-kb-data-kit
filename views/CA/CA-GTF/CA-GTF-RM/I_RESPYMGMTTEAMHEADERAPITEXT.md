@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtGlobalTeamID` | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
-| `Language` | `LANG(1)` | Language Key |
-| `RespyMgmtTeamDescription` | `CHAR(50)` | Team Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtGlobalTeamID` |  | |  |  | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RespyMgmtTeamDescription` |  | |  |  | `CHAR(50)` | Team Description |

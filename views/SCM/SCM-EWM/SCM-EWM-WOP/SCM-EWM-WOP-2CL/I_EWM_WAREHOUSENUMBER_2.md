@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `TimeZoneID` | `CHAR(6)` | Time Zone |
-| `TimeZoneText` | `CHAR(30)` | Time Zone Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `TimeZoneID` |  | |  |  | `CHAR(6)` | Time Zone |
+| `TimeZoneText` |  | |  |  | `CHAR(30)` | Time Zone Text |

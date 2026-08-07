@@ -34,25 +34,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MasterDataChangeProcess` | `NUMC(12)` | Master Data Change Process Identifier |
-| `MDQualityBusinessRule` | `CHAR(26)` | Master Data Quality Rule Definition ID |
-| `MDQltyDimensionCategory` | `CHAR(20)` | MDQ Dimension Category |
-| `MDQltyDimension` | `CHAR(20)` | MDQ Dimension |
-| `MDQltyBusinessObjectTypeCode` | `CHAR(10)` | Master Data Change Process Business Object Type Code |
-| `MDQltyDimensionUUID` | `RAW(16)` | MDQ Dimension UUID |
-| `MDQualityBusinessRuleName` | `CHAR(50)` | Master Data Quality Rule Definition Name |
-| `MDQltyBusinessRuleOwner` | `CHAR(12)` | Master Data Quality Business Rule Owner |
-| `MDQltyBusRuleCheckedField` | `CHAR(30)` | Master Data Quality Fieldname of the Checked Field |
-| `MDQltyBusinessRuleExpert` | `CHAR(12)` | Master Data Quality Business Rule Expert |
-| `MDQltyBusinessRuleBaseTable` | `CHAR(30)` | Base Table |
-| `MDChgProcessFinishDate` | `DATS(8)` |  |
-| `MDChgProcessIsLatest` | `CHAR(1)` |  |
-| `MDQltyBusRuleNavigationPath` | `CHAR(248)` | Fiori Host Path concatenated with Validation Rule Nav Path |
-| `MDQltyRuleScore` | `FLTP(16)` |  |
-| `MDQltyDimensionScore` | `DEC(4)` |  |
-| `MDQltyDimnTargetScoreValue` | `DEC(4)` | MDQ Evaluation Target Threshold |
-| `MDQltyDimensionCategoryUUID` | `RAW(16)` | MDQ Dimension Category UUID |
-| `MDQltyDimnCategoryScore` | `DEC(4)` |  |
-| `MDQltyDimnCatTargetScoreValue` | `DEC(4)` | MDQ Evaluation Target Threshold |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MasterDataChangeProcess` |  | |  |  | `NUMC(12)` | Master Data Change Process Identifier |
+| `MDQualityBusinessRule` |  | |  |  | `CHAR(26)` | Master Data Quality Rule Definition ID |
+| `MDQltyDimensionCategory` |  | |  |  | `CHAR(20)` | MDQ Dimension Category |
+| `MDQltyDimension` |  | |  |  | `CHAR(20)` | MDQ Dimension |
+| `MDQltyBusinessObjectTypeCode` |  | |  |  | `CHAR(10)` | Master Data Change Process Business Object Type Code |
+| `MDQltyDimensionUUID` |  | |  |  | `RAW(16)` | MDQ Dimension UUID |
+| `MDQualityBusinessRuleName` |  | |  |  | `CHAR(50)` | Master Data Quality Rule Definition Name |
+| `MDQltyBusinessRuleOwner` |  | |  |  | `CHAR(12)` | Master Data Quality Business Rule Owner |
+| `MDQltyBusRuleCheckedField` |  | |  |  | `CHAR(30)` | Master Data Quality Fieldname of the Checked Field |
+| `MDQltyBusinessRuleExpert` |  | |  |  | `CHAR(12)` | Master Data Quality Business Rule Expert |
+| `MDQltyBusinessRuleBaseTable` |  | |  |  | `CHAR(30)` | Base Table |
+| `MDChgProcessFinishDate` |  | |  |  | `DATS(8)` |  |
+| `MDChgProcessIsLatest` |  | |  |  | `CHAR(1)` |  |
+| `MDQltyBusRuleNavigationPath` |  | |  |  | `CHAR(248)` | Fiori Host Path concatenated with Validation Rule Nav Path |
+| `MDQltyRuleScore` |  | |  |  | `FLTP(16)` |  |
+| `MDQltyDimensionScore` |  | |  |  | `DEC(4)` |  |
+| `MDQltyDimnTargetScoreValue` |  | |  |  | `DEC(4)` | MDQ Evaluation Target Threshold |
+| `MDQltyDimensionCategoryUUID` |  | |  |  | `RAW(16)` | MDQ Dimension Category UUID |
+| `MDQltyDimnCategoryScore` |  | |  |  | `DEC(4)` |  |
+| `MDQltyDimnCatTargetScoreValue` |  | |  |  | `DEC(4)` | MDQ Evaluation Target Threshold |

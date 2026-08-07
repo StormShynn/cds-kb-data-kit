@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AcctDeterminationCategory` | `CHAR(4)` | Account category code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AcctDeterminationCategory` |  | |  |  | `CHAR(4)` | Account category code |

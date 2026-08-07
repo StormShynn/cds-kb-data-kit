@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InvoicingStatus` | `CHAR(2)` | Invoicing Status |
-| `Language` | `LANG(1)` | Language Key |
-| `InvoicingStatusDesc` | `CHAR(60)` | Transportation Charge Object Invoicing Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvoicingStatus` |  | |  |  | `CHAR(2)` | Invoicing Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InvoicingStatusDesc` |  | |  |  | `CHAR(60)` | Transportation Charge Object Invoicing Status Description |

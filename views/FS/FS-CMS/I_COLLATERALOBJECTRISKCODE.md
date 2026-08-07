@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralObjectRiskCode` | `CHAR(6)` | Risk Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralObjectRiskCode` |  | |  |  | `CHAR(6)` | Risk Code |

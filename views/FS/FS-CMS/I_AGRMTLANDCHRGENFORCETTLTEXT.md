@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AgrmtLandChrgEnfrcmntTtlType` | `CHAR(2)` | Indicator for Enforcement Title |
-| `AgrmtLandChrgEnforceTtlText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgrmtLandChrgEnfrcmntTtlType` |  | |  |  | `CHAR(2)` | Indicator for Enforcement Title |
+| `AgrmtLandChrgEnforceTtlText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

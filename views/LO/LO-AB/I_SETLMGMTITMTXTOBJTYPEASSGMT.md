@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtItmTxtDetnProced` | `CHAR(2)` | Text Determination Procedure for Item |
-| `SettlmtMgmtItmTxtObjType` | `CHAR(4)` | Specific Text ID for a Settlement Management Document Item |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtItmTxtDetnProced` |  | |  |  | `CHAR(2)` | Text Determination Procedure for Item |
+| `SettlmtMgmtItmTxtObjType` |  | |  |  | `CHAR(4)` | Specific Text ID for a Settlement Management Document Item |

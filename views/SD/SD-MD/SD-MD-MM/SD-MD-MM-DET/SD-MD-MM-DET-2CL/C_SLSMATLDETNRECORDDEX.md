@@ -35,34 +35,34 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConditionRecord` | `CHAR(10)` | Number of Condition Record |
-| `SlsMatlDetnSequenceNumber` | `CHAR(3)` | Number |
-| `ConditionApplication` | `CHAR(2)` | Application |
-| `ConditionType` | `CHAR(4)` | Material Determination Type |
-| `ConditionTable` | `CHAR(3)` | Condition Table |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SlsMatlDetnSubstituteMaterial` | `CHAR(40)` | Substitute Material |
-| `SlsMatlDetnSubstitMaterialUoM` | `UNIT(3)` | Substitute Unit of Measure |
-| `MaterialSubstitutionReason` | `CHAR(4)` | Reason for material substitution |
-| `ConditionValidityEndDate` | `DATS(8)` | Validity end date of the condition record |
-| `ConditionValidityStartDate` | `DATS(8)` | Validity start date of the condition record |
-| `LastChangeDateTime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
-| `SDDocumentCategory` | `CHAR(4)` | SD Document Category |
-| `SalesDocumentType` | `CHAR(4)` | Sales Document Type |
-| `Customer` | `CHAR(10)` | Customer number |
-| `CustomerGroup` | `CHAR(2)` | Customer Group |
-| `SoldToParty` | `CHAR(10)` | Sold-to Party |
-| `ShipToParty` | `CHAR(10)` | Ship-to Party |
-| `PayerParty` | `CHAR(10)` | Payer |
-| `SalesEmployee` | `NUMC(8)` | Sales Employee |
-| `ForwardingAgent` | `CHAR(10)` | Forwarding Agent |
-| `Product` | `CHAR(40)` | Product |
-| `ProductType` | `CHAR(4)` | Product Type |
-| `ProductGroup` | `CHAR(9)` | Product Group |
-| `MaterialPricingGroup` | `CHAR(2)` | Material Price Group |
-| `OriginallyRequestedMaterial` | `CHAR(40)` | Material Entered |
-| `PricingReferenceMaterial` | `CHAR(40)` | Pricing Reference Material |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionRecord` |  | |  |  | `CHAR(10)` | Number of Condition Record |
+| `SlsMatlDetnSequenceNumber` |  | |  |  | `CHAR(3)` | Number |
+| `ConditionApplication` |  | |  |  | `CHAR(2)` | Application |
+| `ConditionType` |  | |  |  | `CHAR(4)` | Material Determination Type |
+| `ConditionTable` |  | |  |  | `CHAR(3)` | Condition Table |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SlsMatlDetnSubstituteMaterial` |  | |  |  | `CHAR(40)` | Substitute Material |
+| `SlsMatlDetnSubstitMaterialUoM` |  | |  |  | `UNIT(3)` | Substitute Unit of Measure |
+| `MaterialSubstitutionReason` |  | |  |  | `CHAR(4)` | Reason for material substitution |
+| `ConditionValidityEndDate` |  | |  |  | `DATS(8)` | Validity end date of the condition record |
+| `ConditionValidityStartDate` |  | |  |  | `DATS(8)` | Validity start date of the condition record |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `SDDocumentCategory` |  | |  |  | `CHAR(4)` | SD Document Category |
+| `SalesDocumentType` |  | |  |  | `CHAR(4)` | Sales Document Type |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer number |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
+| `SalesEmployee` |  | |  |  | `NUMC(8)` | Sales Employee |
+| `ForwardingAgent` |  | |  |  | `CHAR(10)` | Forwarding Agent |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ProductType` |  | |  |  | `CHAR(4)` | Product Type |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `MaterialPricingGroup` |  | |  |  | `CHAR(2)` | Material Price Group |
+| `OriginallyRequestedMaterial` |  | |  |  | `CHAR(40)` | Material Entered |
+| `PricingReferenceMaterial` |  | |  |  | `CHAR(40)` | Pricing Reference Material |

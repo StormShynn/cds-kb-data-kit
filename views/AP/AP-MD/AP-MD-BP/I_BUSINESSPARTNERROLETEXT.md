@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartnerRole` | `CHAR(6)` | BP Role |
-| `Language` | `LANG(1)` | Language Key |
-| `BusinessPartnerRoleShortName` | `CHAR(25)` | BP Role Title |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerRole` |  | |  |  | `CHAR(6)` | BP Role |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusinessPartnerRoleShortName` |  | |  |  | `CHAR(25)` | BP Role Title |

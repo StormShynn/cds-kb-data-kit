@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `VolumeType` | `CHAR(2)` | Volume Type Code |
-| `Language` | `LANG(1)` | Language Key |
-| `VolumeTypeName` | `CHAR(50)` | Volume Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VolumeType` |  | |  |  | `CHAR(2)` | Volume Type Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `VolumeTypeName` |  | |  |  | `CHAR(50)` | Volume Type Description |

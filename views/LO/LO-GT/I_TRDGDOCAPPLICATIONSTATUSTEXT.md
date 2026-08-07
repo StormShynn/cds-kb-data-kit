@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `TrdgDocApplicationStatus` | `CHAR(1)` | Application Status of Trading Contract |
-| `TrdgDocApplicationStatusName` | `CHAR(40)` | Trading Contract: Name of Application Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TrdgDocApplicationStatus` |  | |  |  | `CHAR(1)` | Application Status of Trading Contract |
+| `TrdgDocApplicationStatusName` |  | |  |  | `CHAR(40)` | Trading Contract: Name of Application Status |

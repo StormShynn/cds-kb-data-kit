@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `VolatilityType` | `CHAR(3)` | Volatility Type |
-| `ReferenceInterestRate` | `CHAR(10)` | Reference Interest Rate |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `VolatilityTermInDays` | `INT4(10)` |  |
-| `InterestRateVolatilityValue` | `DEC(11)` | Interest Rate Volatility |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VolatilityType` |  | |  |  | `CHAR(3)` | Volatility Type |
+| `ReferenceInterestRate` |  | |  |  | `CHAR(10)` | Reference Interest Rate |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `VolatilityTermInDays` |  | |  |  | `INT4(10)` |  |
+| `InterestRateVolatilityValue` |  | |  |  | `DEC(11)` | Interest Rate Volatility |

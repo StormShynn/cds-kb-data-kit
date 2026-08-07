@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GenericPriorityType` | `CHAR(2)` | Priority Type |
-| `PriorityCode` | `CHAR(1)` | Priority |
-| `GenericStartDateShiftFactor` | `NUMC(2)` | Relative Start Date for Task/Notification in Days |
-| `GenericStrtDateShiftFactorUnit` | `UNIT(3)` | Relative Start Date Unit |
-| `GenericEndDateShiftFactor` | `NUMC(2)` | Relative End Date for Task/Notification in Days |
-| `GenericEndDateShiftFactorUnit` | `UNIT(3)` | Relative End Date Unit |
-| `GenericPriorityColorCode` | `NUMC(1)` | Priority color code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GenericPriorityType` |  | |  |  | `CHAR(2)` | Priority Type |
+| `PriorityCode` |  | |  |  | `CHAR(1)` | Priority |
+| `GenericStartDateShiftFactor` |  | |  |  | `NUMC(2)` | Relative Start Date for Task/Notification in Days |
+| `GenericStrtDateShiftFactorUnit` |  | |  |  | `UNIT(3)` | Relative Start Date Unit |
+| `GenericEndDateShiftFactor` |  | |  |  | `NUMC(2)` | Relative End Date for Task/Notification in Days |
+| `GenericEndDateShiftFactorUnit` |  | |  |  | `UNIT(3)` | Relative End Date Unit |
+| `GenericPriorityColorCode` |  | |  |  | `NUMC(1)` | Priority color code |

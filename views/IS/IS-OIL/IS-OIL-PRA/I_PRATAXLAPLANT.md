@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Plant` | `CHAR(5)` | Tax 2.0 LA - Plant ID |
-| `PlantName` | `CHAR(50)` | Plant Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` |  | |  |  | `CHAR(5)` | Tax 2.0 LA - Plant ID |
+| `PlantName` |  | |  |  | `CHAR(50)` | Plant Name |

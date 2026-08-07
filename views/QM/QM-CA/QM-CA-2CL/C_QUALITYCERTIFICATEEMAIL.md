@@ -33,23 +33,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DeliveryDocument` | `CHAR(10)` | Delivery |
-| `DeliveryDocumentItem` | `NUMC(6)` | Delivery Item |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `ShippingPoint` | `CHAR(4)` | Shipping Point / Receiving Point |
-| `ShipToParty` | `CHAR(10)` | Ship-to Party |
-| `SoldToParty` | `CHAR(10)` | Sold-to Party |
-| `DeliveryDocumentType` | `CHAR(4)` | Delivery Type |
-| `OverallGoodsMovementStatus` | `CHAR(1)` | Goods Movement Status (All Items) |
-| `OverallPickingStatus` | `CHAR(1)` | Picking Status/Putaway Status (All Items) |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `MaterialGroup` | `CHAR(9)` | Material Group |
-| `Material` | `CHAR(40)` | Material Number |
-| `MaterialByCustomer` | `CHAR(35)` | Customer Material |
-| `MaterialTypePrimary` | `CHAR(4)` | Material Type |
-| `SDDocumentCategory` | `CHAR(4)` | SD Document Category |
-| `Plant` | `CHAR(4)` | Plant |
-| `DeliveryDocumentItemCategory` | `CHAR(4)` | Delivery Item Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocument` |  | |  |  | `CHAR(10)` | Delivery |
+| `DeliveryDocumentItem` |  | |  |  | `NUMC(6)` | Delivery Item |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `ShippingPoint` |  | |  |  | `CHAR(4)` | Shipping Point / Receiving Point |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `DeliveryDocumentType` |  | |  |  | `CHAR(4)` | Delivery Type |
+| `OverallGoodsMovementStatus` |  | |  |  | `CHAR(1)` | Goods Movement Status (All Items) |
+| `OverallPickingStatus` |  | |  |  | `CHAR(1)` | Picking Status/Putaway Status (All Items) |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `MaterialByCustomer` |  | |  |  | `CHAR(35)` | Customer Material |
+| `MaterialTypePrimary` |  | |  |  | `CHAR(4)` | Material Type |
+| `SDDocumentCategory` |  | |  |  | `CHAR(4)` | SD Document Category |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `DeliveryDocumentItemCategory` |  | |  |  | `CHAR(4)` | Delivery Item Category |

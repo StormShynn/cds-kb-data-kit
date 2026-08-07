@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdgDocExecWrkbnType` | `CHAR(4)` | Trading Execution Workbench Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdgDocExecWrkbnType` |  | |  |  | `CHAR(4)` | Trading Execution Workbench Type |

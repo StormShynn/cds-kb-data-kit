@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `EnvrmtWastePartnerType` | `CHAR(2)` | Waste Partner Type |
-| `EnvrmtWastePartnerName` | `CHAR(81)` |  |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `EnvrmtWastePartnerType` |  | |  |  | `CHAR(2)` | Waste Partner Type |
+| `EnvrmtWastePartnerName` |  | |  |  | `CHAR(81)` |  |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |

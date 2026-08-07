@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AgreementPortionAssgmtRole` | `CHAR(2)` | Role in which Collateral Agreement Portion is Assigned |
-| `AgrmtPortionAssgmtRoleText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgreementPortionAssgmtRole` |  | |  |  | `CHAR(2)` | Role in which Collateral Agreement Portion is Assigned |
+| `AgrmtPortionAssgmtRoleText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

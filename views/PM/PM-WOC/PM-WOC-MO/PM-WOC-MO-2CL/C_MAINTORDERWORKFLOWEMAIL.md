@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
-| `MaintenanceOrder` | `CHAR(12)` | Order Number |
-| `MaintenanceOrderDesc` | `CHAR(40)` | Description |
-| `MaintPriority` | `CHAR(1)` | Priority |
-| `MaintenancePlanningPlant` | `CHAR(4)` | Maintenance Planning Plant |
-| `MaintenancePlannerGroup` | `CHAR(3)` | Planner Group for Customer Service and Plant Maintenance |
-| `MaintenanceOrderType` | `CHAR(4)` | Order Type |
-| `MaintOrdBasicStartDate` | `DATS(8)` | Basic Start Date |
-| `MaintOrdBasicEndDate` | `DATS(8)` | Basic Finish Date |
-| `TechnicalObject` | `CHAR(40)` | Technical Object |
-| `TechObjIsEquipOrFuncnlLocDesc` | `CHAR(40)` | Description of Technical Object Type |
-| `TechnicalObjectDescription` | `CHAR(40)` | Technical Object Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintenanceOrderDesc` |  | |  |  | `CHAR(40)` | Description |
+| `MaintPriority` |  | |  |  | `CHAR(1)` | Priority |
+| `MaintenancePlanningPlant` |  | |  |  | `CHAR(4)` | Maintenance Planning Plant |
+| `MaintenancePlannerGroup` |  | |  |  | `CHAR(3)` | Planner Group for Customer Service and Plant Maintenance |
+| `MaintenanceOrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `MaintOrdBasicStartDate` |  | |  |  | `DATS(8)` | Basic Start Date |
+| `MaintOrdBasicEndDate` |  | |  |  | `DATS(8)` | Basic Finish Date |
+| `TechnicalObject` |  | |  |  | `CHAR(40)` | Technical Object |
+| `TechObjIsEquipOrFuncnlLocDesc` |  | |  |  | `CHAR(40)` | Description of Technical Object Type |
+| `TechnicalObjectDescription` |  | |  |  | `CHAR(40)` | Technical Object Description |

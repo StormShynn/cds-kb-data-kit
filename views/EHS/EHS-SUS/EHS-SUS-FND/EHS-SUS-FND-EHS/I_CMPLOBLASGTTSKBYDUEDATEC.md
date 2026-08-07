@@ -32,23 +32,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplncOblgnRqmtAssignmentUUID` | `RAW(16)` | Obligation Requirement Assignment UUID |
-| `CmplncObligationAssignmentUUID` | `RAW(16)` | Compliance Obligation Assignment UUID |
-| `ComplianceObligationUUID` | `RAW(16)` | Compliance Obligation |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationName` | `CHAR(60)` | Location Revision Text |
-| `CmplncOblgnTypeDescription` | `CHAR(60)` | Compliance Obligation Type Description |
-| `ComplianceObligationTypeCode` | `CHAR(2)` | Compliance Obligation Type |
-| `ComplianceObligationDomainCode` | `CHAR(21)` | Compliance Obligation Domain |
-| `EHSTaskDueInValue` | `INT4(10)` | Number of Records |
-| `NumberOfRecords` | `INT4(10)` | Number of Records |
-| `EHSPlannedTaskUUID` | `RAW(16)` | Planned Task UUID |
-| `EHSTaskTitle` | `CHAR(60)` | Task Title |
-| `EHSTaskDueDate` | `DATS(8)` | Due Date of a Planned Task |
-| `EHSTaskHostSemanticObject` | `CHAR(30)` | Semantic Object |
-| `EHSTaskStatus` | `CHAR(2)` | Status of Task Instance (Without Conversion Exit) |
-| `EHSTaskAssignedUserName` | `CHAR(80)` | User Description |
-| `EHSTaskOwnerUser` | `CHAR(12)` | User ID |
-| `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplncOblgnRqmtAssignmentUUID` |  | |  |  | `RAW(16)` | Obligation Requirement Assignment UUID |
+| `CmplncObligationAssignmentUUID` |  | |  |  | `RAW(16)` | Compliance Obligation Assignment UUID |
+| `ComplianceObligationUUID` |  | |  |  | `RAW(16)` | Compliance Obligation |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location Revision Text |
+| `CmplncOblgnTypeDescription` |  | |  |  | `CHAR(60)` | Compliance Obligation Type Description |
+| `ComplianceObligationTypeCode` |  | |  |  | `CHAR(2)` | Compliance Obligation Type |
+| `ComplianceObligationDomainCode` |  | |  |  | `CHAR(21)` | Compliance Obligation Domain |
+| `EHSTaskDueInValue` |  | |  |  | `INT4(10)` | Number of Records |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Records |
+| `EHSPlannedTaskUUID` |  | |  |  | `RAW(16)` | Planned Task UUID |
+| `EHSTaskTitle` |  | |  |  | `CHAR(60)` | Task Title |
+| `EHSTaskDueDate` |  | |  |  | `DATS(8)` | Due Date of a Planned Task |
+| `EHSTaskHostSemanticObject` |  | |  |  | `CHAR(30)` | Semantic Object |
+| `EHSTaskStatus` |  | |  |  | `CHAR(2)` | Status of Task Instance (Without Conversion Exit) |
+| `EHSTaskAssignedUserName` |  | |  |  | `CHAR(80)` | User Description |
+| `EHSTaskOwnerUser` |  | |  |  | `CHAR(12)` | User ID |
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |

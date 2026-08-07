@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationSegmentHierarchy` | `CHAR(40)` | Segment Hierarchy |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `Segment` | `CHAR(10)` | Segment for Segmental Reporting |
-| `PartnerSegment` | `CHAR(10)` | Partner Segment for Segmental Reporting |
-| `ConsolidationSegmentForElim` | `CHAR(25)` | Consolidation Elimination Member |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationSegmentHierarchy` |  | |  |  | `CHAR(40)` | Segment Hierarchy |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `PartnerSegment` |  | |  |  | `CHAR(10)` | Partner Segment for Segmental Reporting |
+| `ConsolidationSegmentForElim` |  | |  |  | `CHAR(25)` | Consolidation Elimination Member |

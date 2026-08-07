@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TradingDocumentType` | `CHAR(4)` | Reference Document Type |
-| `TrdgDocCtrlGrpPurg` | `CHAR(4)` | Control Group Purchasing for Trading Contracts |
-| `TrdgDocCtrlGrpSls` | `CHAR(4)` | Control Group Sales for Trading Contracts |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TradingDocumentType` |  | |  |  | `CHAR(4)` | Reference Document Type |
+| `TrdgDocCtrlGrpPurg` |  | |  |  | `CHAR(4)` | Control Group Purchasing for Trading Contracts |
+| `TrdgDocCtrlGrpSls` |  | |  |  | `CHAR(4)` | Control Group Sales for Trading Contracts |

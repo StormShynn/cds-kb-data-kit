@@ -33,30 +33,30 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DocRelationshipUUID` | `RAW(16)` | SD Unique Document Relationship Identification |
-| `PrecedingDocument` | `CHAR(10)` | Preceding sales and distribution document |
-| `PrecedingDocumentItem` | `NUMC(6)` | Preceding Item of an SD Document |
-| `PrecedingDocumentCategory` | `CHAR(4)` | SD Document Category of Reference SD Document |
-| `SubsequentDocument` | `CHAR(10)` | Subsequent Sales and Distribution Document |
-| `SubsequentDocumentItem` | `NUMC(6)` | Subsequent Item of an SD Document |
-| `SubsequentDocumentCategory` | `CHAR(4)` | Document Category of Subsequent Document |
-| `ProcessFlowLevel` | `NUMC(2)` | Level of the document flow record |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreationTime` | `TIMS(6)` | Entry time |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `QuantityInBaseUnit` | `QUAN(15)` | Referenced quantity in base unit of measure |
-| `RefQuantityInOrdQtyUnitAsFloat` | `FLTP(16)` | Referenced quantity in sales unit (float) |
-| `RefQuantityInBaseUnitAsFloat` | `FLTP(16)` | Referenced quantity in base unit of measure (float) |
-| `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `OrderQuantityUnit` | `UNIT(3)` | Sales Unit |
-| `SDFulfillmentCalculationRule` | `CHAR(1)` | Quantity is calculated positively, negatively or not at all |
-| `NetAmount` | `CURR(15)` | Reference Value |
-| `StatisticsCurrency` | `CUKY(5)` | Statistics currency |
-| `TransferOrderInWrhsMgmtIsConfd` | `CHAR(1)` | ID: MM-WM Transfer Order Confirmed |
-| `WarehouseNumber` | `CHAR(3)` | Warehouse Number / Warehouse Complex |
-| `MaterialDocumentYear` | `NUMC(4)` | Material Document Year |
-| `GoodsMovementType` | `CHAR(3)` | Movement Type (Inventory Management) |
-| `BillingPlan` | `CHAR(10)` | Billing Plan Number / Invoicing Plan Number |
-| `BillingPlanItem` | `NUMC(6)` | Item for billing plan/invoice plan/payment cards |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocRelationshipUUID` |  | |  |  | `RAW(16)` | SD Unique Document Relationship Identification |
+| `PrecedingDocument` |  | |  |  | `CHAR(10)` | Preceding sales and distribution document |
+| `PrecedingDocumentItem` |  | |  |  | `NUMC(6)` | Preceding Item of an SD Document |
+| `PrecedingDocumentCategory` |  | |  |  | `CHAR(4)` | SD Document Category of Reference SD Document |
+| `SubsequentDocument` |  | |  |  | `CHAR(10)` | Subsequent Sales and Distribution Document |
+| `SubsequentDocumentItem` |  | |  |  | `NUMC(6)` | Subsequent Item of an SD Document |
+| `SubsequentDocumentCategory` |  | |  |  | `CHAR(4)` | Document Category of Subsequent Document |
+| `ProcessFlowLevel` |  | |  |  | `NUMC(2)` | Level of the document flow record |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Entry time |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `QuantityInBaseUnit` |  | |  |  | `QUAN(15)` | Referenced quantity in base unit of measure |
+| `RefQuantityInOrdQtyUnitAsFloat` |  | |  |  | `FLTP(16)` | Referenced quantity in sales unit (float) |
+| `RefQuantityInBaseUnitAsFloat` |  | |  |  | `FLTP(16)` | Referenced quantity in base unit of measure (float) |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `OrderQuantityUnit` |  | |  |  | `UNIT(3)` | Sales Unit |
+| `SDFulfillmentCalculationRule` |  | |  |  | `CHAR(1)` | Quantity is calculated positively, negatively or not at all |
+| `NetAmount` |  | |  |  | `CURR(15)` | Reference Value |
+| `StatisticsCurrency` |  | |  |  | `CUKY(5)` | Statistics currency |
+| `TransferOrderInWrhsMgmtIsConfd` |  | |  |  | `CHAR(1)` | ID: MM-WM Transfer Order Confirmed |
+| `WarehouseNumber` |  | |  |  | `CHAR(3)` | Warehouse Number / Warehouse Complex |
+| `MaterialDocumentYear` |  | |  |  | `NUMC(4)` | Material Document Year |
+| `GoodsMovementType` |  | |  |  | `CHAR(3)` | Movement Type (Inventory Management) |
+| `BillingPlan` |  | |  |  | `CHAR(10)` | Billing Plan Number / Invoicing Plan Number |
+| `BillingPlanItem` |  | |  |  | `NUMC(6)` | Item for billing plan/invoice plan/payment cards |

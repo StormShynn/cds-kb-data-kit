@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CurrencyField` | `CHAR(4)` | Currency Role Field |
-| `CurrencyRole` | `CHAR(2)` | Currency Type |
-| `Currency` | `CUKY(5)` | Currency Key |
-| `CurrencyRoleName` | `CHAR(80)` | Currency Role Name |
-| `CurrencyRoleLongName` | `CHAR(100)` | Currency Role Name |
-| `CurrencyFieldName` | `CHAR(60)` | Text for Currency Role Field |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyRole` |  | |  |  | `CHAR(2)` | Currency Type |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CurrencyRoleName` |  | |  |  | `CHAR(80)` | Currency Role Name |
+| `CurrencyRoleLongName` |  | |  |  | `CHAR(100)` | Currency Role Name |
+| `CurrencyFieldName` |  | |  |  | `CHAR(60)` | Text for Currency Role Field |

@@ -28,25 +28,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `SourceLedger` | `CHAR(2)` | Source Ledger |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `AccountingDocumentItem` | `NUMC(3)` | Journal Entry Posting View Item |
-| `GrantID` | `CHAR(20)` | Grant |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `GrantType` | `CHAR(2)` | Grant Type |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
-| `ValidityStartDate` | `DATS(8)` | Valid-from Date |
-| `ValidityEndDate` | `DATS(8)` | Valid-to Date |
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `Fund` | `CHAR(10)` | Fund |
-| `IndirectCostAmtInCoCodeCrcy` | `CURR(23)` | Indirect Cost Amount in Company Code Currency |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `AmountInGlobalCurrency` | `CURR(23)` | Amount in Global Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `GrantType` |  | |  |  | `CHAR(2)` | Grant Type |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-from Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to Date |
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `IndirectCostAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Indirect Cost Amount in Company Code Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |

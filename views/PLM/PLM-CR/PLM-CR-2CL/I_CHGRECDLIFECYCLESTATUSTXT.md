@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeRecordLifecycleStatus` | `CHAR(2)` | Issue Lifecycle Status Code |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `ChangeRecordLifecycleStatusTxt` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeRecordLifecycleStatus` |  | |  |  | `CHAR(2)` | Issue Lifecycle Status Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `ChangeRecordLifecycleStatusTxt` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

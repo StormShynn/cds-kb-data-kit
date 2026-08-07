@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OrganizationalUnit` | `NUMC(8)` | Object ID |
-| `Language` | `LANG(1)` | Language Key |
-| `StartDate` | `DATS(8)` | Start Date |
-| `EndDate` | `DATS(8)` | End Date |
-| `OrganizationalUnitShortName` | `CHAR(12)` | Object Abbreviation |
-| `OrganizationalUnitName` | `CHAR(40)` | Object Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Object ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `StartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `EndDate` |  | |  |  | `DATS(8)` | End Date |
+| `OrganizationalUnitShortName` |  | |  |  | `CHAR(12)` | Object Abbreviation |
+| `OrganizationalUnitName` |  | |  |  | `CHAR(40)` | Object Name |

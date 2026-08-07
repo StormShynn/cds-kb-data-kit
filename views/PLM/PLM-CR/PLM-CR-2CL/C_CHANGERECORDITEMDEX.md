@@ -30,23 +30,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeRecordReferenceUUID` | `RAW(16)` | NodeID |
-| `ChangeRecordUUID` | `RAW(16)` | NodeID |
-| `ChangeRecordReferenceType` | `CHAR(3)` | Object Type |
-| `ChangeRecordReferenceSubtype` | `CHAR(3)` | Object Subtype |
-| `ChangeRecordRefObjectUUID` | `RAW(16)` | Internal Key of type GUID |
-| `ChgRecRefInternalKey1` | `CHAR(40)` | Internal Key of an Object Reference |
-| `ChgRecRefInternalKey2` | `CHAR(40)` | Internal Key of an Object Reference |
-| `ChgRecRefInternalKey3` | `CHAR(40)` | Internal Key of an Object Reference |
-| `ChgRecRefInternalKey4` | `CHAR(40)` | Internal Key of an Object Reference |
-| `ParentChangeRecordRefUUID` | `RAW(16)` | Business Object Node ID |
-| `IsMainReference` | `CHAR(1)` | Main Reference |
-| `ChangeRecordReference` | `CHAR(90)` | Reference Object ID |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `LastChangedByUser` | `CHAR(12)` | Changed By |
-| `LastChangeDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `ChangeRecordVirtualRefInd` | `CHAR(1)` | Virtual object indicated in Change Record |
-| `ChangeRecordItemRelevance` | `CHAR(3)` | Change Record Item Relevance |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeRecordReferenceUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `ChangeRecordUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `ChangeRecordReferenceType` |  | |  |  | `CHAR(3)` | Object Type |
+| `ChangeRecordReferenceSubtype` |  | |  |  | `CHAR(3)` | Object Subtype |
+| `ChangeRecordRefObjectUUID` |  | |  |  | `RAW(16)` | Internal Key of type GUID |
+| `ChgRecRefInternalKey1` |  | |  |  | `CHAR(40)` | Internal Key of an Object Reference |
+| `ChgRecRefInternalKey2` |  | |  |  | `CHAR(40)` | Internal Key of an Object Reference |
+| `ChgRecRefInternalKey3` |  | |  |  | `CHAR(40)` | Internal Key of an Object Reference |
+| `ChgRecRefInternalKey4` |  | |  |  | `CHAR(40)` | Internal Key of an Object Reference |
+| `ParentChangeRecordRefUUID` |  | |  |  | `RAW(16)` | Business Object Node ID |
+| `IsMainReference` |  | |  |  | `CHAR(1)` | Main Reference |
+| `ChangeRecordReference` |  | |  |  | `CHAR(90)` | Reference Object ID |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `ChangeRecordVirtualRefInd` |  | |  |  | `CHAR(1)` | Virtual object indicated in Change Record |
+| `ChangeRecordItemRelevance` |  | |  |  | `CHAR(3)` | Change Record Item Relevance |

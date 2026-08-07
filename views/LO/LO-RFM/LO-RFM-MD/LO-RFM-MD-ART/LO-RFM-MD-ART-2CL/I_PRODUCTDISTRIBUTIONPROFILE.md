@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductDistributionProfile` | `CHAR(3)` | Product Distribution Profile |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductDistributionProfile` |  | |  |  | `CHAR(3)` | Product Distribution Profile |

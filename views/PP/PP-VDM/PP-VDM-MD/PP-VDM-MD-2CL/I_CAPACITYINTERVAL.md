@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CapacityInternalID` | `NUMC(8)` | Capacity ID |
-| `CapacityActiveVersion` | `NUMC(2)` | Available capacity version |
-| `IntervalEndDate` | `DATS(8)` | Valid-to date |
-| `IntervalStartDate` | `DATS(8)` | Valid-From Date |
-| `StdAvailableCapacityIsValid` | `CHAR(1)` | Ind.: Standard Available Capacity is Valid for this Interval |
-| `ShiftSequence` | `CHAR(4)` | Key for the Shift Sequence |
-| `WorkDayRule` | `CHAR(1)` | Workday Rule Code |
-| `CapacityNumberOfShifts` | `NUMC(1)` | Number of Shifts in a Day |
-| `AvailableCapacityIntervalDurn` | `NUMC(2)` | Duration of an Available Capacity Interval |
-| `CapacityNumberOfCapacities` | `INT2(5)` | Number of Individual Capacities |
-| `CapacityPlanUtilizationPercent` | `NUMC(3)` | Capacity Utilization Ratio in Percent |
-| `CapacityLastChangeDateTime` | `DEC(21)` | Capacity Last Change Date Time |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityInternalID` |  | |  |  | `NUMC(8)` | Capacity ID |
+| `CapacityActiveVersion` |  | |  |  | `NUMC(2)` | Available capacity version |
+| `IntervalEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
+| `IntervalStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `StdAvailableCapacityIsValid` |  | |  |  | `CHAR(1)` | Ind.: Standard Available Capacity is Valid for this Interval |
+| `ShiftSequence` |  | |  |  | `CHAR(4)` | Key for the Shift Sequence |
+| `WorkDayRule` |  | |  |  | `CHAR(1)` | Workday Rule Code |
+| `CapacityNumberOfShifts` |  | |  |  | `NUMC(1)` | Number of Shifts in a Day |
+| `AvailableCapacityIntervalDurn` |  | |  |  | `NUMC(2)` | Duration of an Available Capacity Interval |
+| `CapacityNumberOfCapacities` |  | |  |  | `INT2(5)` | Number of Individual Capacities |
+| `CapacityPlanUtilizationPercent` |  | |  |  | `NUMC(3)` | Capacity Utilization Ratio in Percent |
+| `CapacityLastChangeDateTime` |  | |  |  | `DEC(21)` | Capacity Last Change Date Time |

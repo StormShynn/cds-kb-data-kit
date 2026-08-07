@@ -30,36 +30,36 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NoticeOfViolationUUID` | `RAW(16)` | NodeID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `IncidentID` | `CHAR(20)` | Incident ID |
-| `IncidentTitle` | `CHAR(80)` | Incident Title |
-| `IncidentStatus` | `CHAR(2)` | Incident Status |
-| `IncidentCategory` | `CHAR(3)` | Incident Category |
-| `IncidentMajorRootCause` | `CHAR(21)` | Major Root Cause |
-| `Country` | `CHAR(3)` | Country/Region of Incident |
-| `Region` | `CHAR(3)` | Region of Incident |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit ID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `IncidentDate` | `DATS(8)` | Incident Start Date |
-| `IncidentMonth` | `NUMC(2)` | Calendar Month |
-| `IncidentYear` | `NUMC(4)` | Calendar Year |
-| `IncidentYearQuarter` | `NUMC(1)` | Calendar Quarter |
-| `IncidentYearMonth` | `NUMC(6)` | Year Month |
-| `IncidentWeekDay` | `NUMC(1)` | Week Day |
-| `IncidentTimeIsUnknown` | `CHAR(1)` | Time Unknown for Incident Start |
-| `IncidentTime` | `TIMS(6)` | Field of type TIMS |
-| `IncidentHour` | `CHAR(2)` | Hour |
-| `IncidentHasAccessRestriction` | `CHAR(1)` | Restricted Access to Incident Record |
-| `NoticeOfViolationCategory` | `CHAR(21)` | Violation Category |
-| `NoticeOfViolationType` | `CHAR(21)` | Violation Type |
-| `NoticeOfViolationSource` | `CHAR(21)` | Violation Source |
-| `FinalPenaltyAmount` | `CURR(15)` | Final Penalty Amount |
-| `FinalPenaltyCurrency` | `CUKY(5)` | Currency for Final Penalty |
-| `ProposedPenaltyAmount` | `CURR(15)` | Proposed Penalty Amount |
-| `ProposedPenaltyCurrency` | `CUKY(5)` | Currency for Proposed Penalty |
-| `NumberOfNoticeOfViolationCases` | `INT4(10)` | Number of Notice Of Violation Cases |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NoticeOfViolationUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `IncidentID` |  | |  |  | `CHAR(20)` | Incident ID |
+| `IncidentTitle` |  | |  |  | `CHAR(80)` | Incident Title |
+| `IncidentStatus` |  | |  |  | `CHAR(2)` | Incident Status |
+| `IncidentCategory` |  | |  |  | `CHAR(3)` | Incident Category |
+| `IncidentMajorRootCause` |  | |  |  | `CHAR(21)` | Major Root Cause |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region of Incident |
+| `Region` |  | |  |  | `CHAR(3)` | Region of Incident |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit ID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `IncidentDate` |  | |  |  | `DATS(8)` | Incident Start Date |
+| `IncidentMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `IncidentYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `IncidentYearQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `IncidentYearMonth` |  | |  |  | `NUMC(6)` | Year Month |
+| `IncidentWeekDay` |  | |  |  | `NUMC(1)` | Week Day |
+| `IncidentTimeIsUnknown` |  | |  |  | `CHAR(1)` | Time Unknown for Incident Start |
+| `IncidentTime` |  | |  |  | `TIMS(6)` | Field of type TIMS |
+| `IncidentHour` |  | |  |  | `CHAR(2)` | Hour |
+| `IncidentHasAccessRestriction` |  | |  |  | `CHAR(1)` | Restricted Access to Incident Record |
+| `NoticeOfViolationCategory` |  | |  |  | `CHAR(21)` | Violation Category |
+| `NoticeOfViolationType` |  | |  |  | `CHAR(21)` | Violation Type |
+| `NoticeOfViolationSource` |  | |  |  | `CHAR(21)` | Violation Source |
+| `FinalPenaltyAmount` |  | |  |  | `CURR(15)` | Final Penalty Amount |
+| `FinalPenaltyCurrency` |  | |  |  | `CUKY(5)` | Currency for Final Penalty |
+| `ProposedPenaltyAmount` |  | |  |  | `CURR(15)` | Proposed Penalty Amount |
+| `ProposedPenaltyCurrency` |  | |  |  | `CUKY(5)` | Currency for Proposed Penalty |
+| `NumberOfNoticeOfViolationCases` |  | |  |  | `INT4(10)` | Number of Notice Of Violation Cases |

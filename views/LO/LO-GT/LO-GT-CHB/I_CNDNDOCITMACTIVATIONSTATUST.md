@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnDocItmActivationStatus` | `CHAR(1)` | Condition Document Item Activation Status |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `CndnDocItmActivationStatusName` | `CHAR(60)` | Condition Document Item Activation Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnDocItmActivationStatus` |  | |  |  | `CHAR(1)` | Condition Document Item Activation Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CndnDocItmActivationStatusName` |  | |  |  | `CHAR(60)` | Condition Document Item Activation Status Name |

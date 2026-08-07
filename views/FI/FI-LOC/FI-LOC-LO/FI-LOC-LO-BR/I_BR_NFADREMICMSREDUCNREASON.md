@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NFAdRemICMSReductionReason` | `CHAR(1)` | Reason for ad rem reduction |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NFAdRemICMSReductionReason` |  | |  |  | `CHAR(1)` | Reason for ad rem reduction |

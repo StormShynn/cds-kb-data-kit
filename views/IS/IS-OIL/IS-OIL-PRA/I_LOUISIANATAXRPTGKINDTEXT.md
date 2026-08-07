@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LouisianaTaxRptgKind` | `NUMC(1)` | Tax 2.0 LA - Kind Code |
-| `Language` | `LANG(1)` | Language Key |
-| `LouisianaTaxRptgKindName` | `CHAR(60)` | Louisiana Tax Reporting Kind Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LouisianaTaxRptgKind` |  | |  |  | `NUMC(1)` | Tax 2.0 LA - Kind Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LouisianaTaxRptgKindName` |  | |  |  | `CHAR(60)` | Louisiana Tax Reporting Kind Name |

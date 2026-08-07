@@ -35,12 +35,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `KanbanControlCycle` | `CHAR(7)` | Kanban Control Cycle |
-| `Product` | `CHAR(40)` | Product |
-| `Plant` | `CHAR(4)` | Plant |
-| `StorageLocation` | `CHAR(4)` | Storage Location |
-| `SourceStorageLocation` | `CHAR(4)` | Source Storage Location |
-| `SupplySourcePlant` | `CHAR(4)` | Plant of Supply Source |
-| `Supplier` | `CHAR(10)` | Supplier's Account Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `KanbanControlCycle` |  | |  |  | `CHAR(7)` | Kanban Control Cycle |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `SourceStorageLocation` |  | |  |  | `CHAR(4)` | Source Storage Location |
+| `SupplySourcePlant` |  | |  |  | `CHAR(4)` | Plant of Supply Source |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier's Account Number |

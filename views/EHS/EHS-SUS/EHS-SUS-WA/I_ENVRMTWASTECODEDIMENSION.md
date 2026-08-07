@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EnvrmtWasteCode` | `CHAR(20)` | Waste Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EnvrmtWasteCode` |  | |  |  | `CHAR(20)` | Waste Code |

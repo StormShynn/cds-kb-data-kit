@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AssetRedesignSwitchIsActive` | `CHAR(1)` | Single-Character Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AssetRedesignSwitchIsActive` |  | |  |  | `CHAR(1)` | Single-Character Flag |

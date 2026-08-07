@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtItmTxtDetnProced` | `CHAR(2)` | Text Determination Procedure for Item |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtItmTxtDetnProced` |  | |  |  | `CHAR(2)` | Text Determination Procedure for Item |

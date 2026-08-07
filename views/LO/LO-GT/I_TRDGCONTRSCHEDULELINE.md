@@ -33,23 +33,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TradingContract` | `CHAR(10)` | Trading Contract |
-| `TradingContractItem` | `NUMC(6)` | Item Number of Trading Contract |
-| `TradingContractScheduleLine` | `NUMC(4)` | Schedule Line Number in Trading Contract |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreationTime` | `TIMS(6)` | Created At |
-| `TrdgContrSalesQuantity` | `QUAN(15)` | Cumulative Order Quantity in Sales Units |
-| `TrdgContrSlsQuantityUnit` | `UNIT(3)` | Sales Unit |
-| `TrdgContrPurgQuantity` | `QUAN(13)` | Quantity ordered against this purchase requisition |
-| `TrdgContrPurgQuantityUnit` | `UNIT(3)` | Purchase Order Unit of Measure |
-| `TrdgContrSlsSchedLineDelivDte` | `DATS(8)` | Sales Schedule Line Delivery Date |
-| `TrdgContrPurgSchedLineDelivDte` | `DATS(8)` | Purchasing Schedule line delivery date |
-| `TrdgContrSlsDelivDteCat` | `CHAR(1)` | Sales Delivery Date Category |
-| `TrdgContrPurgDelivDteCat` | `CHAR(1)` | Purchasing Delivery Date Category |
-| `TrdgContrSlsReqdDelivTme` | `TIMS(6)` | Sales Requested Delivery Time |
-| `TrdgContrPurgReqdDelivTme` | `TIMS(6)` | Purchasing Requested Delivery Time |
-| `TrdgContrInbLglCtrlChkSts` | `CHAR(1)` | Legal Control Check Status (Inbound) |
-| `TrdgContrOutbLglCtrlChkSts` | `CHAR(1)` | Legal Control Check Status (Outbound) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TradingContract` |  | |  |  | `CHAR(10)` | Trading Contract |
+| `TradingContractItem` |  | |  |  | `NUMC(6)` | Item Number of Trading Contract |
+| `TradingContractScheduleLine` |  | |  |  | `NUMC(4)` | Schedule Line Number in Trading Contract |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Created At |
+| `TrdgContrSalesQuantity` |  | |  |  | `QUAN(15)` | Cumulative Order Quantity in Sales Units |
+| `TrdgContrSlsQuantityUnit` |  | |  |  | `UNIT(3)` | Sales Unit |
+| `TrdgContrPurgQuantity` |  | |  |  | `QUAN(13)` | Quantity ordered against this purchase requisition |
+| `TrdgContrPurgQuantityUnit` |  | |  |  | `UNIT(3)` | Purchase Order Unit of Measure |
+| `TrdgContrSlsSchedLineDelivDte` |  | |  |  | `DATS(8)` | Sales Schedule Line Delivery Date |
+| `TrdgContrPurgSchedLineDelivDte` |  | |  |  | `DATS(8)` | Purchasing Schedule line delivery date |
+| `TrdgContrSlsDelivDteCat` |  | |  |  | `CHAR(1)` | Sales Delivery Date Category |
+| `TrdgContrPurgDelivDteCat` |  | |  |  | `CHAR(1)` | Purchasing Delivery Date Category |
+| `TrdgContrSlsReqdDelivTme` |  | |  |  | `TIMS(6)` | Sales Requested Delivery Time |
+| `TrdgContrPurgReqdDelivTme` |  | |  |  | `TIMS(6)` | Purchasing Requested Delivery Time |
+| `TrdgContrInbLglCtrlChkSts` |  | |  |  | `CHAR(1)` | Legal Control Check Status (Inbound) |
+| `TrdgContrOutbLglCtrlChkSts` |  | |  |  | `CHAR(1)` | Legal Control Check Status (Outbound) |

@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Material` | `CHAR(40)` | Material Number |
-| `Plant` | `CHAR(4)` | Plant |
-| `BillOfOperationsType` | `CHAR(1)` | Task List Type |
-| `BillOfOperationsGroup` | `CHAR(8)` | Key for Task List Group |
-| `BillOfOperationsVariant` | `CHAR(2)` | Group Counter |
-| `BOOToMaterialInternalID` | `NUMC(7)` | Counter for Additional Criteria |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `BillOfOperationsGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `BillOfOperationsVariant` |  | |  |  | `CHAR(2)` | Group Counter |
+| `BOOToMaterialInternalID` |  | |  |  | `NUMC(7)` | Counter for Additional Criteria |

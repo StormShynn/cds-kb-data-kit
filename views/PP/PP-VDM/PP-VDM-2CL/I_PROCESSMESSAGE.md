@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProcessMessage` | `NUMC(18)` | Number of the Process Message |
-| `Plant` | `CHAR(4)` | Plant |
-| `ProcessOrder` | `CHAR(12)` | Process Order Number |
-| `ProcessMessageCategory` | `CHAR(8)` | Process Message Category |
-| `ProcessMessageProcessingStatus` | `CHAR(1)` | Processing Status of the Process Message/the Control Recipe |
-| `ProcessMessageIsForTesting` | `CHAR(1)` | Indicator: Message or Control Recipe for Test Purposes |
-| `ProcessMessageSenderName` | `CHAR(32)` | Sender of the process message |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreationTime` | `TIMS(6)` | Time when the record was created |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessMessage` |  | |  |  | `NUMC(18)` | Number of the Process Message |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ProcessOrder` |  | |  |  | `CHAR(12)` | Process Order Number |
+| `ProcessMessageCategory` |  | |  |  | `CHAR(8)` | Process Message Category |
+| `ProcessMessageProcessingStatus` |  | |  |  | `CHAR(1)` | Processing Status of the Process Message/the Control Recipe |
+| `ProcessMessageIsForTesting` |  | |  |  | `CHAR(1)` | Indicator: Message or Control Recipe for Test Purposes |
+| `ProcessMessageSenderName` |  | |  |  | `CHAR(32)` | Sender of the process message |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time when the record was created |

@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CreditCheckRule` | `CHAR(10)` | Rule for Credit Check |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditCheckRule` |  | |  |  | `CHAR(10)` | Rule for Credit Check |

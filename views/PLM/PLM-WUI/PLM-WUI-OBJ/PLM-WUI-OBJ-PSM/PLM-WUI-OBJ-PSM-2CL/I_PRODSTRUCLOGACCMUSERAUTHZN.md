@@ -34,16 +34,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LogAccMObjectID` | `CHAR(90)` | Internal Key |
-| `LogAccMActivitySecureID` | `RAW(16)` | Secure ID |
-| `LogAccMActivityRoleID` | `CHAR(30)` | Role ID |
-| `LogAccMUserAuthznObject` | `CHAR(10)` | Authorization Object |
-| `LogAccMUserAuthznField` | `CHAR(10)` | Authorization Field |
-| `LogAccMUserAuthznFrom` | `CHAR(40)` | Authorization Value |
-| `LogAccMUserEntityType` | `CHAR(10)` | User Entity Type |
-| `LogAccMUserEntityID` | `CHAR(32)` | User Entity ID |
-| `UserID` | `CHAR(12)` | User ID |
-| `LogAccMReadActivityIsEnabled` | `CHAR(1)` | Data element for domain BOOLE: TRUE (='X') and FALSE (=' ') |
-| `LogAccMObjectType` | `CHAR(10)` | Object Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LogAccMObjectID` |  | |  |  | `CHAR(90)` | Internal Key |
+| `LogAccMActivitySecureID` |  | |  |  | `RAW(16)` | Secure ID |
+| `LogAccMActivityRoleID` |  | |  |  | `CHAR(30)` | Role ID |
+| `LogAccMUserAuthznObject` |  | |  |  | `CHAR(10)` | Authorization Object |
+| `LogAccMUserAuthznField` |  | |  |  | `CHAR(10)` | Authorization Field |
+| `LogAccMUserAuthznFrom` |  | |  |  | `CHAR(40)` | Authorization Value |
+| `LogAccMUserEntityType` |  | |  |  | `CHAR(10)` | User Entity Type |
+| `LogAccMUserEntityID` |  | |  |  | `CHAR(32)` | User Entity ID |
+| `UserID` |  | |  |  | `CHAR(12)` | User ID |
+| `LogAccMReadActivityIsEnabled` |  | |  |  | `CHAR(1)` | Data element for domain BOOLE: TRUE (='X') and FALSE (=' ') |
+| `LogAccMObjectType` |  | |  |  | `CHAR(10)` | Object Type |

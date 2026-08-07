@@ -35,15 +35,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SeasonInternalIdentifier` | `RAW(16)` | Season Internal Unique Identifier |
-| `Language` | `LANG(1)` | Language Key |
-| `ProductSeasonText` | `CHAR(20)` | Name of Season, Collection, or Theme |
-| `LongText` | `CHAR(132)` | Text Line |
-| `CreatedByUser` | `CHAR(12)` | User Who Created the Object |
-| `CreationDate` | `DATS(8)` | Date on Which the Object Was Created |
-| `CreationTime` | `TIMS(6)` | Time at Which the Object Was Created |
-| `LastChangedByUser` | `CHAR(12)` | Last User to Change the Object |
-| `LastChangeDate` | `DATS(8)` | Date on Which the Object Was Last Changed |
-| `LastChangeTime` | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SeasonInternalIdentifier` |  | |  |  | `RAW(16)` | Season Internal Unique Identifier |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProductSeasonText` |  | |  |  | `CHAR(20)` | Name of Season, Collection, or Theme |
+| `LongText` |  | |  |  | `CHAR(132)` | Text Line |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Who Created the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Created |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Created |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last User to Change the Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Last Changed |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Last Changed |

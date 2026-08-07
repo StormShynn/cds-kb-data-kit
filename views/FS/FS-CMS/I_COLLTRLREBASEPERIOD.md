@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRealEstateBasePeriod` | `CHAR(1)` | Base period for the rent |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRealEstateBasePeriod` |  | |  |  | `CHAR(1)` | Base period for the rent |

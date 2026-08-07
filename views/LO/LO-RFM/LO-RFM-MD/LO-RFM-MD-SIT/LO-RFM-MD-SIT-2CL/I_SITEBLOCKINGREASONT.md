@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SiteBlockingReason` | `CHAR(2)` | Blocking Reason |
-| `Language` | `LANG(1)` | Language Key |
-| `SiteBlockingReasonName` | `CHAR(20)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SiteBlockingReason` |  | |  |  | `CHAR(2)` | Blocking Reason |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SiteBlockingReasonName` |  | |  |  | `CHAR(20)` | Description |

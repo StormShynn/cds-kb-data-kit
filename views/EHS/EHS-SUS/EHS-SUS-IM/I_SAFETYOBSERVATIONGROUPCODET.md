@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SafetyObservationGroupCode` | `CHAR(21)` | Safety Observation Group |
-| `Language` | `LANG(1)` | Language Key |
-| `SafetyObservationGroupCodeName` | `CHAR(132)` | Description (Long) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SafetyObservationGroupCode` |  | |  |  | `CHAR(21)` | Safety Observation Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SafetyObservationGroupCodeName` |  | |  |  | `CHAR(132)` | Description (Long) |

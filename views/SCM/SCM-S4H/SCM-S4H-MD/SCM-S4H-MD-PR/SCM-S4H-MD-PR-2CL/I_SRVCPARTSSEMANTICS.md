@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SCMSemantics` | `CHAR(30)` | TSDM Mapping: Semantics |
-| `SCMSemanticType` | `CHAR(3)` | TSDM Mapping: Semantic Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SCMSemantics` |  | |  |  | `CHAR(30)` | TSDM Mapping: Semantics |
+| `SCMSemanticType` |  | |  |  | `CHAR(3)` | TSDM Mapping: Semantic Type |

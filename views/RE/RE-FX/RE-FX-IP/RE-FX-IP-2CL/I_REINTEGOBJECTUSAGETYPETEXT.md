@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `REIntegObjectUsageType` | `CHAR(4)` | Object Usage Type |
-| `Language` | `LANG(1)` | Language Key |
-| `REIntegObjectUsageTypeName` | `CHAR(60)` | Description for Object Usage Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REIntegObjectUsageType` |  | |  |  | `CHAR(4)` | Object Usage Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `REIntegObjectUsageTypeName` |  | |  |  | `CHAR(60)` | Description for Object Usage Type |

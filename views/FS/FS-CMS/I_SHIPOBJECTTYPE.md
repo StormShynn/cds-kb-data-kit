@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ShipObjectType` | `CHAR(6)` | Ship Type |
-| `CollateralProcessControlKey` | `CHAR(10)` | Process Control Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShipObjectType` |  | |  |  | `CHAR(6)` | Ship Type |
+| `CollateralProcessControlKey` |  | |  |  | `CHAR(10)` | Process Control Key |

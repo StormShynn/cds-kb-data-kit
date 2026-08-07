@@ -33,20 +33,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `FreeDefinedTableFieldSemantic` | `CHAR(7)` | Key word ID for user-defined fields |
-| `FreeDfndTableFieldSemanticName` | `CHAR(40)` | Description for the key word ID |
-| `FreeDefinedAttribute01Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedAttribute02Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedAttribute03Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedAttribute04Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedQuantity1Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedQuantity2Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedAmount1Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedAmount2Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedDate1Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedDate2Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedIndicator1Label` | `CHAR(15)` | Key word for user-defined fields |
-| `FreeDefinedIndicator2Label` | `CHAR(15)` | Key word for user-defined fields |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FreeDefinedTableFieldSemantic` |  | |  |  | `CHAR(7)` | Key word ID for user-defined fields |
+| `FreeDfndTableFieldSemanticName` |  | |  |  | `CHAR(40)` | Description for the key word ID |
+| `FreeDefinedAttribute01Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedAttribute02Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedAttribute03Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedAttribute04Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedQuantity1Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedQuantity2Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedAmount1Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedAmount2Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedDate1Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedDate2Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedIndicator1Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |
+| `FreeDefinedIndicator2Label` |  | |  |  | `CHAR(15)` | Key word for user-defined fields |

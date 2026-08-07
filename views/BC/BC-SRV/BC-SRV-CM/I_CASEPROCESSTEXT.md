@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CaseProcess` | `CHAR(4)` | Permitted Process for Case Type |
-| `CaseProcessName` | `CHAR(40)` | Case: Process Short Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseProcess` |  | |  |  | `CHAR(4)` | Permitted Process for Case Type |
+| `CaseProcessName` |  | |  |  | `CHAR(40)` | Case: Process Short Text |

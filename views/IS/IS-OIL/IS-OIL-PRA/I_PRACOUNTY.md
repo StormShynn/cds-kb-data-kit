@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `County` | `CHAR(3)` | County Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `County` |  | |  |  | `CHAR(3)` | County Code |

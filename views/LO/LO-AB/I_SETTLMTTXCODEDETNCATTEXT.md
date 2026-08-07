@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtTxCodeDetnCat` | `CHAR(1)` | Tax Code Determination |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtTxCodeDetnCatName` | `CHAR(60)` | Text of Tax Code Determination |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtTxCodeDetnCat` |  | |  |  | `CHAR(1)` | Tax Code Determination |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtTxCodeDetnCatName` |  | |  |  | `CHAR(60)` | Text of Tax Code Determination |

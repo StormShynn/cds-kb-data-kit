@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CapacityInternalID` | `NUMC(8)` | Capacity ID |
-| `Language` | `LANG(1)` | Language Key |
-| `CapacityText` | `CHAR(40)` | Capacity Short Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CapacityInternalID` |  | |  |  | `NUMC(8)` | Capacity ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CapacityText` |  | |  |  | `CHAR(40)` | Capacity Short Text |

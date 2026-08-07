@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SetlMgmtProdBsdDocPrtnCat` | `CHAR(1)` | Business Partner for Product Based Settlement |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SetlMgmtProdBsdDocPrtnCat` |  | |  |  | `CHAR(1)` | Business Partner for Product Based Settlement |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

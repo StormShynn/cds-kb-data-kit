@@ -34,17 +34,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankPowerOfAttorneyUUID` | `RAW(16)` | Power of Attorney UUID |
-| `BkPOAAuthzdRepresentativeUUID` | `RAW(16)` | Power of Attorney: Authorized Representative UUID |
-| `BkPOAAuthorizationGroup` | `CHAR(10)` | Authorization Group for Powers of Attorney |
-| `BkPOAAuthzdRepresentative` | `CHAR(10)` | Business Partner Number of Authorized Representative |
-| `BusinessPartnerName` | `CHAR(81)` |  |
-| `FormOfAddress` | `CHAR(4)` | Form-of-Address Key |
-| `FormOfAddressName` | `CHAR(30)` | Title text |
-| `FirstName` | `CHAR(40)` | First Name of Business Partner (Person) |
-| `LastName` | `CHAR(40)` | Last Name of Business Partner (Person) |
-| `BirthDate` | `DATS(8)` | Date of Birth of Business Partner |
-| `PaymentApproverGroup` | `CHAR(3)` | Payment Approver Group |
-| `PaymentApproverGroupName` | `CHAR(60)` | Payment Approver Group Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` |  | |  |  | `RAW(16)` | Power of Attorney UUID |
+| `BkPOAAuthzdRepresentativeUUID` |  | |  |  | `RAW(16)` | Power of Attorney: Authorized Representative UUID |
+| `BkPOAAuthorizationGroup` |  | |  |  | `CHAR(10)` | Authorization Group for Powers of Attorney |
+| `BkPOAAuthzdRepresentative` |  | |  |  | `CHAR(10)` | Business Partner Number of Authorized Representative |
+| `BusinessPartnerName` |  | |  |  | `CHAR(81)` |  |
+| `FormOfAddress` |  | |  |  | `CHAR(4)` | Form-of-Address Key |
+| `FormOfAddressName` |  | |  |  | `CHAR(30)` | Title text |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `BirthDate` |  | |  |  | `DATS(8)` | Date of Birth of Business Partner |
+| `PaymentApproverGroup` |  | |  |  | `CHAR(3)` | Payment Approver Group |
+| `PaymentApproverGroupName` |  | |  |  | `CHAR(60)` | Payment Approver Group Name |

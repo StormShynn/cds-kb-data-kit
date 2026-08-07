@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MeasurementPoint` | `CHAR(20)` | Measurement point number |
-| `MeasurementPtName` | `CHAR(35)` | Measurement point description |
-| `MeasurementPtType` | `CHAR(2)` | Measurement point type code |
-| `MeasurementPtMeterClass` | `CHAR(1)` | Meter class |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `PrimaryGeogrlLocation` | `CHAR(2)` | Primary Geographical Location |
-| `SecondaryGeogrlLocation` | `CHAR(3)` | Secondary geographic location |
-| `LatitudeUnit` | `UNIT(3)` | Unit of Measure |
-| `MeasurementPtLatitude` | `DEC(8)` | Latitude number |
-| `MeasurementPtLatitudeDrctn` | `CHAR(1)` | Latitude direction code |
-| `LongitudeUnit` | `UNIT(3)` | Unit of Measure |
-| `MeasurementPtLongitude` | `DEC(9)` | Longitude |
-| `MeasurementPtLongitudeDrctn` | `CHAR(1)` | Longitude Direction Code |
-| `MeasurementPtHier` | `CHAR(15)` | Measurement point hierarchy group |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On Timestamp |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeasurementPoint` |  | |  |  | `CHAR(20)` | Measurement point number |
+| `MeasurementPtName` |  | |  |  | `CHAR(35)` | Measurement point description |
+| `MeasurementPtType` |  | |  |  | `CHAR(2)` | Measurement point type code |
+| `MeasurementPtMeterClass` |  | |  |  | `CHAR(1)` | Meter class |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+| `SecondaryGeogrlLocation` |  | |  |  | `CHAR(3)` | Secondary geographic location |
+| `LatitudeUnit` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `MeasurementPtLatitude` |  | |  |  | `DEC(8)` | Latitude number |
+| `MeasurementPtLatitudeDrctn` |  | |  |  | `CHAR(1)` | Latitude direction code |
+| `LongitudeUnit` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `MeasurementPtLongitude` |  | |  |  | `DEC(9)` | Longitude |
+| `MeasurementPtLongitudeDrctn` |  | |  |  | `CHAR(1)` | Longitude Direction Code |
+| `MeasurementPtHier` |  | |  |  | `CHAR(15)` | Measurement point hierarchy group |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |

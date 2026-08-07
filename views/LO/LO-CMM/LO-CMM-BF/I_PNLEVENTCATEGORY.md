@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PnLEventCategory` | `CHAR(10)` | Profit and Loss Event Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PnLEventCategory` |  | |  |  | `CHAR(10)` | Profit and Loss Event Category |

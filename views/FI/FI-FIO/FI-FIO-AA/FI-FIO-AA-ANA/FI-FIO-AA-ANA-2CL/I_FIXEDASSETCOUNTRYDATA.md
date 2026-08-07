@@ -35,54 +35,54 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `MasterFixedAsset` | `CHAR(12)` | Main Asset Number |
-| `FixedAsset` | `CHAR(4)` | Asset Subnumber |
-| `NationalClassification` | `CHAR(12)` | National Classification Code |
-| `TaxDepreciationGroup` | `CHAR(4)` | Tax Depreciation Group |
-| `RU_LongSerialNumber` | `CHAR(32)` | Russia: Serial Number |
-| `RU_WorkwearMaterial` | `CHAR(40)` | Material Number |
-| `RU_RetiredMasterFixedAsset` | `CHAR(12)` | Number of Retired Asset |
-| `RU_RetiredFixedAsset` | `CHAR(4)` | Subnumber of Retired Asset |
-| `RU_ProdTraceabilityStartDate` | `DATS(8)` | Start date of traceability |
-| `RU_ProdTraceabilityEndDate` | `DATS(8)` | End date of traceability |
-| `RU_AssetTNVED` | `CHAR(17)` | Foreign Trade Goods Classification Code of the Customs Union |
-| `RU_AssetTransportType` | `CHAR(5)` | Transport Type |
-| `RU_VehicleIdNumber` | `CHAR(30)` | Manufacturer Vehicle Identification Number for Fleet Object |
-| `RU_ManufacturingDate` | `DATS(8)` | Manufacturing Date |
-| `RU_VehicleEcologicalClass` | `CHAR(1)` | Ecological Class |
-| `RU_PropertyAddress` | `CHAR(10)` | Russia: Property Address |
-| `RU_PropertyOwnershipRegnDate` | `DATS(8)` | Registration Date of Real Estate Ownership Rights |
-| `RU_PropertyOwnershipTermnDate` | `DATS(8)` | Termination Date of Real Estate Ownership Rights |
-| `JP_Annex16AssetStructure` | `CHAR(5)` | Japan: Asset Structure of Annex16 |
-| `JP_Annex16AssetItem` | `CHAR(5)` | Japan: Asset Item of Annex16 |
-| `JP_Annex16LeasingAgrmtDate` | `DATS(8)` | Japan: Leasing Agreement Date of Annex16-4 Report |
-| `JP_PrptyTxRptCity` | `CHAR(8)` | Japan: City Code of Property Tax Report |
-| `JP_PrptyTxRptClassfctnKey` | `CHAR(4)` | Japan: Classification Key of Property Tax Report |
-| `JP_PrptyTxRptSpclDepr` | `CHAR(3)` | Japan: Special Depreciation Code of Property Tax Report |
-| `JP_PrptyTxRptAddlDepr` | `CHAR(8)` | Additional Depreciation Code |
-| `IN_AssetBlock` | `CHAR(5)` | India: Block Key |
-| `IN_AssetPutToUseDate` | `DATS(8)` | India: Put to use date |
-| `IN_AdditionalAssetBlock` | `CHAR(5)` | India: Additional Depreciation Block Key |
-| `IN_AssetIsResearchAndDev` | `CHAR(1)` | India: R & D Asset |
-| `IN_AssetIsPriorYear` | `CHAR(1)` | India: Prior Year Transaction |
-| `PT_VehicleTypeByEnergy` | `CHAR(2)` | Portugal: Vehicle Type |
-| `PT_VehicleIsWithoutLimit` | `CHAR(1)` | Portugal: Is Vehicle Without Limit |
-| `PT_BigRepairAssetLink` | `CHAR(8)` | Portugal: Repair Asset Link |
-| `PT_LandAssetLink` | `CHAR(8)` | Portugal: Land Asset Link |
-| `PT_AssetReportFormCategory` | `CHAR(1)` | Portugal: Asset Report Form Category |
-| `PT_AmortizedAssetIsReevaluated` | `CHAR(1)` | Portugal: Is Amortized Asset Revaluated |
-| `IL_InvmtCtrInternalCode` | `CHAR(10)` | Israel: Internal code |
-| `IL_InvmtCtrApprovalDocNmbr` | `CHAR(15)` | Israel: Approval document number |
-| `IL_InvmtCtrApprovalVersion` | `CHAR(3)` | Israel: Approval version |
-| `IL_InvmtCtrBogusAssetNumber` | `CHAR(12)` | Israel: Bogus asset number |
-| `IL_InvmtCtrAssetVersion` | `CHAR(3)` | Israel: Asset version |
-| `RS_GroupDeprExclusionYear` | `NUMC(4)` | Exclusion Year |
-| `RS_AssetLastInvoiceDate` | `DATS(8)` | Last Invoice Date |
-| `PL_AcquisitionProductionDate` | `DATS(8)` | Fixed Asset Acquisition/Production Date |
-| `PL_AcquisitionDocumentType` | `CHAR(1)` | Acquisition Document Type |
-| `PL_AcquisitionFormNumber` | `CHAR(25)` | Asset Acquisition Form/OT Document Number |
-| `PL_AssetTaxGroup` | `CHAR(2)` | SAFT Asset Tax Group |
-| `Country` | `CHAR(3)` | Country/Region Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `MasterFixedAsset` |  | |  |  | `CHAR(12)` | Main Asset Number |
+| `FixedAsset` |  | |  |  | `CHAR(4)` | Asset Subnumber |
+| `NationalClassification` |  | |  |  | `CHAR(12)` | National Classification Code |
+| `TaxDepreciationGroup` |  | |  |  | `CHAR(4)` | Tax Depreciation Group |
+| `RU_LongSerialNumber` |  | |  |  | `CHAR(32)` | Russia: Serial Number |
+| `RU_WorkwearMaterial` |  | |  |  | `CHAR(40)` | Material Number |
+| `RU_RetiredMasterFixedAsset` |  | |  |  | `CHAR(12)` | Number of Retired Asset |
+| `RU_RetiredFixedAsset` |  | |  |  | `CHAR(4)` | Subnumber of Retired Asset |
+| `RU_ProdTraceabilityStartDate` |  | |  |  | `DATS(8)` | Start date of traceability |
+| `RU_ProdTraceabilityEndDate` |  | |  |  | `DATS(8)` | End date of traceability |
+| `RU_AssetTNVED` |  | |  |  | `CHAR(17)` | Foreign Trade Goods Classification Code of the Customs Union |
+| `RU_AssetTransportType` |  | |  |  | `CHAR(5)` | Transport Type |
+| `RU_VehicleIdNumber` |  | |  |  | `CHAR(30)` | Manufacturer Vehicle Identification Number for Fleet Object |
+| `RU_ManufacturingDate` |  | |  |  | `DATS(8)` | Manufacturing Date |
+| `RU_VehicleEcologicalClass` |  | |  |  | `CHAR(1)` | Ecological Class |
+| `RU_PropertyAddress` |  | |  |  | `CHAR(10)` | Russia: Property Address |
+| `RU_PropertyOwnershipRegnDate` |  | |  |  | `DATS(8)` | Registration Date of Real Estate Ownership Rights |
+| `RU_PropertyOwnershipTermnDate` |  | |  |  | `DATS(8)` | Termination Date of Real Estate Ownership Rights |
+| `JP_Annex16AssetStructure` |  | |  |  | `CHAR(5)` | Japan: Asset Structure of Annex16 |
+| `JP_Annex16AssetItem` |  | |  |  | `CHAR(5)` | Japan: Asset Item of Annex16 |
+| `JP_Annex16LeasingAgrmtDate` |  | |  |  | `DATS(8)` | Japan: Leasing Agreement Date of Annex16-4 Report |
+| `JP_PrptyTxRptCity` |  | |  |  | `CHAR(8)` | Japan: City Code of Property Tax Report |
+| `JP_PrptyTxRptClassfctnKey` |  | |  |  | `CHAR(4)` | Japan: Classification Key of Property Tax Report |
+| `JP_PrptyTxRptSpclDepr` |  | |  |  | `CHAR(3)` | Japan: Special Depreciation Code of Property Tax Report |
+| `JP_PrptyTxRptAddlDepr` |  | |  |  | `CHAR(8)` | Additional Depreciation Code |
+| `IN_AssetBlock` |  | |  |  | `CHAR(5)` | India: Block Key |
+| `IN_AssetPutToUseDate` |  | |  |  | `DATS(8)` | India: Put to use date |
+| `IN_AdditionalAssetBlock` |  | |  |  | `CHAR(5)` | India: Additional Depreciation Block Key |
+| `IN_AssetIsResearchAndDev` |  | |  |  | `CHAR(1)` | India: R & D Asset |
+| `IN_AssetIsPriorYear` |  | |  |  | `CHAR(1)` | India: Prior Year Transaction |
+| `PT_VehicleTypeByEnergy` |  | |  |  | `CHAR(2)` | Portugal: Vehicle Type |
+| `PT_VehicleIsWithoutLimit` |  | |  |  | `CHAR(1)` | Portugal: Is Vehicle Without Limit |
+| `PT_BigRepairAssetLink` |  | |  |  | `CHAR(8)` | Portugal: Repair Asset Link |
+| `PT_LandAssetLink` |  | |  |  | `CHAR(8)` | Portugal: Land Asset Link |
+| `PT_AssetReportFormCategory` |  | |  |  | `CHAR(1)` | Portugal: Asset Report Form Category |
+| `PT_AmortizedAssetIsReevaluated` |  | |  |  | `CHAR(1)` | Portugal: Is Amortized Asset Revaluated |
+| `IL_InvmtCtrInternalCode` |  | |  |  | `CHAR(10)` | Israel: Internal code |
+| `IL_InvmtCtrApprovalDocNmbr` |  | |  |  | `CHAR(15)` | Israel: Approval document number |
+| `IL_InvmtCtrApprovalVersion` |  | |  |  | `CHAR(3)` | Israel: Approval version |
+| `IL_InvmtCtrBogusAssetNumber` |  | |  |  | `CHAR(12)` | Israel: Bogus asset number |
+| `IL_InvmtCtrAssetVersion` |  | |  |  | `CHAR(3)` | Israel: Asset version |
+| `RS_GroupDeprExclusionYear` |  | |  |  | `NUMC(4)` | Exclusion Year |
+| `RS_AssetLastInvoiceDate` |  | |  |  | `DATS(8)` | Last Invoice Date |
+| `PL_AcquisitionProductionDate` |  | |  |  | `DATS(8)` | Fixed Asset Acquisition/Production Date |
+| `PL_AcquisitionDocumentType` |  | |  |  | `CHAR(1)` | Acquisition Document Type |
+| `PL_AcquisitionFormNumber` |  | |  |  | `CHAR(25)` | Asset Acquisition Form/OT Document Number |
+| `PL_AssetTaxGroup` |  | |  |  | `CHAR(2)` | SAFT Asset Tax Group |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |

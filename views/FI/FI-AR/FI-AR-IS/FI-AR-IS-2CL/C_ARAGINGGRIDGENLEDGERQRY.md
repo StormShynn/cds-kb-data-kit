@@ -35,52 +35,52 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `AccountingDocumentItem` | `NUMC(3)` | Journal Entry Posting View Item |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `SpecialGLCode` | `CHAR(1)` | Special G/L Indicator |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `Segment` | `CHAR(10)` | Segment for Segmental Reporting |
-| `BillingDocument` | `CHAR(10)` | Billing Document |
-| `AssignmentReference` | `CHAR(18)` | Assignment Reference |
-| `CustomerCountry` | `CHAR(3)` | Customer Country/Region |
-| `CustomerRegion` | `CHAR(3)` | Region (Customer) |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `ReconciliationAccount` | `CHAR(10)` | Reconciliation Account in General Ledger |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerClassification` | `CHAR(2)` | Customer Classification |
-| `CustomerCorporateGroup` | `CHAR(10)` | Customer Corporate Group |
-| `CustomerAccountNote` | `CHAR(30)` | Memo |
-| `Reference1IDByBusinessPartner` | `CHAR(12)` | ID of Reference 1 by Business Partner |
-| `Reference2IDByBusinessPartner` | `CHAR(12)` | ID of Reference 2 by Business Partner |
-| `Reference3IDByBusinessPartner` | `CHAR(20)` | ID of Reference 3 by Business Partner |
-| `PaymentMethod` | `CHAR(1)` | Payment Method |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `FinancialAccountType` | `CHAR(1)` | Account Type |
-| `CompanyCodeCountry` | `CHAR(3)` | Company Code Country/Region |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `OverdueIntvl7AmtInCoCodeCrcy` | `CURR(23)` | Amount in 7th Overdue Period (Company Currency) |
-| `OverdueIntvl6AmtInCoCodeCrcy` | `CURR(23)` | Amount in 6th Overdue Period (Company Currency) |
-| `OverdueIntvl5AmtInCoCodeCrcy` | `CURR(23)` | Amount in 5th Overdue Period (Company Currency) |
-| `OverdueIntvl4AmtInCoCodeCrcy` | `CURR(23)` | Amount in 4th Overdue Period (Company Currency) |
-| `OverdueIntvl3AmtInCoCodeCrcy` | `CURR(23)` | Amount in 3rd Overdue Period (Company Currency) |
-| `OverdueIntvl2AmtInCoCodeCrcy` | `CURR(23)` | Amount in 2nd Overdue Period (Company Currency) |
-| `OverdueIntvl1AmtInCoCodeCrcy` | `CURR(23)` | Amount in 1st Overdue Period (Company Currency) |
-| `DueAtKeyDateAmtInCoCodeCrcy` | `CURR(23)` | Amount in Company Currency due at Key Date |
-| `FutureDueIntvl1AmtInCoCodeCrcy` | `CURR(23)` | Amount in 1st Future Due Period (Company Currency) |
-| `FutureDueIntvl2AmtInCoCodeCrcy` | `CURR(23)` | Amount in 2nd Future Due Period (Company Currency) |
-| `FutureDueIntvl3AmtInCoCodeCrcy` | `CURR(23)` | Amount in 3rd Future Due Period (Company Currency) |
-| `FutureDueIntvl4AmtInCoCodeCrcy` | `CURR(23)` | Amount in 4th Future Due Period (Company Currency) |
-| `OverdueAmtInCoCodeCrcy` | `CURR(23)` | Overdue Amount in Company Currency |
-| `NotOverdueAmtInCoCodeCrcy` | `CURR(23)` | Not Overdue Amount in Company Currency |
-| `FutureDueAmtInCoCodeCrcy` | `CURR(23)` | Future Due Amount in Company Currency |
-| `AmountInCompanyCodeCurrency` | `CURR(23)` | Total Open Receivables Amount in Company Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `BillingDocument` |  | |  |  | `CHAR(10)` | Billing Document |
+| `AssignmentReference` |  | |  |  | `CHAR(18)` | Assignment Reference |
+| `CustomerCountry` |  | |  |  | `CHAR(3)` | Customer Country/Region |
+| `CustomerRegion` |  | |  |  | `CHAR(3)` | Region (Customer) |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `ReconciliationAccount` |  | |  |  | `CHAR(10)` | Reconciliation Account in General Ledger |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `CustomerCorporateGroup` |  | |  |  | `CHAR(10)` | Customer Corporate Group |
+| `CustomerAccountNote` |  | |  |  | `CHAR(30)` | Memo |
+| `Reference1IDByBusinessPartner` |  | |  |  | `CHAR(12)` | ID of Reference 1 by Business Partner |
+| `Reference2IDByBusinessPartner` |  | |  |  | `CHAR(12)` | ID of Reference 2 by Business Partner |
+| `Reference3IDByBusinessPartner` |  | |  |  | `CHAR(20)` | ID of Reference 3 by Business Partner |
+| `PaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `CompanyCodeCountry` |  | |  |  | `CHAR(3)` | Company Code Country/Region |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `OverdueIntvl7AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 7th Overdue Period (Company Currency) |
+| `OverdueIntvl6AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 6th Overdue Period (Company Currency) |
+| `OverdueIntvl5AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 5th Overdue Period (Company Currency) |
+| `OverdueIntvl4AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 4th Overdue Period (Company Currency) |
+| `OverdueIntvl3AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 3rd Overdue Period (Company Currency) |
+| `OverdueIntvl2AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 2nd Overdue Period (Company Currency) |
+| `OverdueIntvl1AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 1st Overdue Period (Company Currency) |
+| `DueAtKeyDateAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in Company Currency due at Key Date |
+| `FutureDueIntvl1AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 1st Future Due Period (Company Currency) |
+| `FutureDueIntvl2AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 2nd Future Due Period (Company Currency) |
+| `FutureDueIntvl3AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 3rd Future Due Period (Company Currency) |
+| `FutureDueIntvl4AmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Amount in 4th Future Due Period (Company Currency) |
+| `OverdueAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Overdue Amount in Company Currency |
+| `NotOverdueAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Not Overdue Amount in Company Currency |
+| `FutureDueAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Future Due Amount in Company Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Total Open Receivables Amount in Company Currency |

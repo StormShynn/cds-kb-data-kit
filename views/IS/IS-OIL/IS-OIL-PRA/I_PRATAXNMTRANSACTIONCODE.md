@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TransactionCode` | `CHAR(2)` | Tax 2.0 - NM - Transaction Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransactionCode` |  | |  |  | `CHAR(2)` | Tax 2.0 - NM - Transaction Code |

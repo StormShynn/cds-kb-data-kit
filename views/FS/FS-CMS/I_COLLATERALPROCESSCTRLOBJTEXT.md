@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralProcessCtrlObj` | `CHAR(6)` | Process Object |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralProcessCtrlObjText` | `CHAR(40)` | Process Object Name in specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralProcessCtrlObj` |  | |  |  | `CHAR(6)` | Process Object |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralProcessCtrlObjText` |  | |  |  | `CHAR(40)` | Process Object Name in specified Language |

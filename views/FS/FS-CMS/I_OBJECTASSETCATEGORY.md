@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetCategory` | `CHAR(6)` | Asset Category Identification No |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetCategory` |  | |  |  | `CHAR(6)` | Asset Category Identification No |

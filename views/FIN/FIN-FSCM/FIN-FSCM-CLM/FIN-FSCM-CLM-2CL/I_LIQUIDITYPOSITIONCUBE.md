@@ -34,21 +34,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialPositionDataSource` | `CHAR(10)` | Data Source of Liquidity Position |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `HouseBank` | `CHAR(5)` | Short Key for a House Bank |
-| `HouseBankAccount` | `CHAR(5)` | ID for Account Details |
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `TransactionCurrency` | `CUKY(5)` | Currency |
-| `LiquidityItem` | `CHAR(16)` | Liquidity Item |
-| `BankAccountCurrency` | `CUKY(5)` | Currency |
-| `BankAccount` | `CHAR(40)` | Bank Account Number |
-| `Bank` | `CHAR(15)` |  |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `TransactionDate` | `DATS(8)` | Key Date |
-| `BankAccountDescription` | `CHAR(60)` | Account Description |
-| `BankName` | `CHAR(60)` |  |
-| `LiquidityItemName` | `CHAR(30)` | Liquidity Item Name |
-| `AmountInTransactionCurrency` | `CURR(23)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialPositionDataSource` |  | |  |  | `CHAR(10)` | Data Source of Liquidity Position |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `HouseBank` |  | |  |  | `CHAR(5)` | Short Key for a House Bank |
+| `HouseBankAccount` |  | |  |  | `CHAR(5)` | ID for Account Details |
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `LiquidityItem` |  | |  |  | `CHAR(16)` | Liquidity Item |
+| `BankAccountCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `BankAccount` |  | |  |  | `CHAR(40)` | Bank Account Number |
+| `Bank` |  | |  |  | `CHAR(15)` |  |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `TransactionDate` |  | |  |  | `DATS(8)` | Key Date |
+| `BankAccountDescription` |  | |  |  | `CHAR(60)` | Account Description |
+| `BankName` |  | |  |  | `CHAR(60)` |  |
+| `LiquidityItemName` |  | |  |  | `CHAR(30)` | Liquidity Item Name |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` |  |

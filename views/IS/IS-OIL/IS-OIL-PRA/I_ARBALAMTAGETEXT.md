@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BalAmtAgeCode` | `CHAR(3)` | Accounts Receivable Age |
-| `Language` | `LANG(1)` | Language Key |
-| `BalAmtAgeName` | `CHAR(60)` | Accounts Receivable Age Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BalAmtAgeCode` |  | |  |  | `CHAR(3)` | Accounts Receivable Age |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BalAmtAgeName` |  | |  |  | `CHAR(60)` | Accounts Receivable Age Name |

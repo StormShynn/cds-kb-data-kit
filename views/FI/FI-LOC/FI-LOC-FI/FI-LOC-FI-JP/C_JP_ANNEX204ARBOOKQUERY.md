@@ -37,32 +37,32 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Customer` | `CHAR(10)` | Customer Number |
-| `SourceLedger` | `CHAR(2)` | Source Ledger |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `PostingDate` | `DATS(8)` | Posting Date |
-| `AccountingDocumentType` | `CHAR(2)` | Journal Entry Type |
-| `DocumentDate` | `DATS(8)` | Journal Entry Date |
-| `ClearingDate` | `DATS(8)` | Clearing Date |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `DocumentItemText` | `CHAR(50)` | Item Text |
-| `DebitCreditCode` | `CHAR(1)` | Debit/Credit Code |
-| `Product` | `CHAR(40)` | Product |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `AmountInTransactionCurrency` | `CURR(23)` | Amount in Transaction Currency |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `AmountInCompanyCodeCurrency` | `CURR(23)` | Amount in Company Code Currency |
-| `AcctsRblAmtInCCCrcy` | `CURR(23)` | Increase (Decrease) in Accounts Receivable (Net) |
-| `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `Quantity` | `QUAN(13)` | Quantity |
-| `NetPriceQuantityUnit` | `UNIT(3)` | Condition Unit |
-| `NetPriceQuantity` | `QUAN(5)` | Net price quantity |
-| `NetPriceAmount` | `CURR(11)` | Net Price |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
+| `ClearingDate` |  | |  |  | `DATS(8)` | Clearing Date |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
+| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `AcctsRblAmtInCCCrcy` |  | |  |  | `CURR(23)` | Increase (Decrease) in Accounts Receivable (Net) |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `Quantity` |  | |  |  | `QUAN(13)` | Quantity |
+| `NetPriceQuantityUnit` |  | |  |  | `UNIT(3)` | Condition Unit |
+| `NetPriceQuantity` |  | |  |  | `QUAN(5)` | Net price quantity |
+| `NetPriceAmount` |  | |  |  | `CURR(11)` | Net Price |

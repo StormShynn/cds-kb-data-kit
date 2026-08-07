@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductType` | `NUMC(1)` | Tax 2.0 - Oklahoma Product Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` |  | |  |  | `NUMC(1)` | Tax 2.0 - Oklahoma Product Code |

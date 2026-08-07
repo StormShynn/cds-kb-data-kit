@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanAssignmentCreditor` | `CHAR(4)` | Assignee |
-| `LoanAcctAssgmtRef` | `CHAR(8)` | Account Assignment Reference in Financial Assets Management |
-| `LoanAssignmentContractText` | `CHAR(25)` | Contract of assignment proposal |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanAssignmentCreditor` |  | |  |  | `CHAR(4)` | Assignee |
+| `LoanAcctAssgmtRef` |  | |  |  | `CHAR(8)` | Account Assignment Reference in Financial Assets Management |
+| `LoanAssignmentContractText` |  | |  |  | `CHAR(25)` | Contract of assignment proposal |

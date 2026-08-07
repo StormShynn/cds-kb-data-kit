@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdgDocReleaseStatus` | `CHAR(1)` | Release Status for Follow-On Document Generation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdgDocReleaseStatus` |  | |  |  | `CHAR(1)` | Release Status for Follow-On Document Generation |

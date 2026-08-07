@@ -33,19 +33,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `KeyDate` | `DATS(8)` | Key Date |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `SyndicatedCounterparty` | `CHAR(10)` | Business Partner Number |
-| `FinInstrTransactionCategory` | `NUMC(3)` | Transaction Category |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `FinancialInstrTransactionType` | `CHAR(3)` | Financial Instrument Transaction Type |
-| `Portfolio` | `CHAR(10)` | Portfolio |
-| `FinancialInstrumentAssignment` | `CHAR(18)` | Free Assignment of Financial Transaction |
-| `FinancialInstrumentReference` | `CHAR(16)` | Free Internal Reference of Financial Transaction |
-| `FinancialInstrCharacteristic` | `CHAR(25)` | Free Characteristic of Financial Transaction |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `TotalAmountInTransactionCrcy` | `CURR(17)` | Credit Line in Transaction Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `KeyDate` |  | |  |  | `DATS(8)` | Key Date |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `SyndicatedCounterparty` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `FinInstrTransactionCategory` |  | |  |  | `NUMC(3)` | Transaction Category |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `FinancialInstrTransactionType` |  | |  |  | `CHAR(3)` | Financial Instrument Transaction Type |
+| `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `FinancialInstrumentAssignment` |  | |  |  | `CHAR(18)` | Free Assignment of Financial Transaction |
+| `FinancialInstrumentReference` |  | |  |  | `CHAR(16)` | Free Internal Reference of Financial Transaction |
+| `FinancialInstrCharacteristic` |  | |  |  | `CHAR(25)` | Free Characteristic of Financial Transaction |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `TotalAmountInTransactionCrcy` |  | |  |  | `CURR(17)` | Credit Line in Transaction Currency |

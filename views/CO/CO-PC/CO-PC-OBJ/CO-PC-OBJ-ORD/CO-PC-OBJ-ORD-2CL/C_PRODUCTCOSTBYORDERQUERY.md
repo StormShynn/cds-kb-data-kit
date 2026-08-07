@@ -39,57 +39,57 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OrderID` | `CHAR(12)` | Order Number |
-| `OrderType` | `CHAR(4)` | Order Type |
-| `OrderCategory` | `NUMC(2)` | Order Category |
-| `ReferenceOrder` | `CHAR(12)` | Reference Order Number |
-| `ExternalOrder` | `CHAR(20)` | External Order Number |
-| `OrderDescription` | `CHAR(40)` | Order Description |
-| `OrderTypeName` | `CHAR(40)` | Name of an Order Type |
-| `OrderCategoryName` | `CHAR(60)` | Order Category Name |
-| `Plant` | `CHAR(4)` | Plant |
-| `PlantName` | `CHAR(30)` | Plant Name |
-| `ProductionUnit` | `UNIT(3)` | Output Unit of Measure |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `ControllingAreaName` | `CHAR(25)` | Controlling Area Name |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Company Code Name |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `CreationDate` | `DATS(8)` | Created On |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `FiscalWeek` | `NUMC(2)` | Fiscal Week |
-| `Material` | `CHAR(40)` | Product |
-| `MaterialName` | `CHAR(40)` | Material Description |
-| `StorageLocation` | `CHAR(4)` | Storage Location |
-| `ScheduledBasicEndDate` | `DATS(8)` | Scheduled Finish Date |
-| `ScheduledReleaseDate` | `DATS(8)` | Scheduled Release Date |
-| `ActualStartDate` | `DATS(8)` | Actual Start Date |
-| `ConfirmedEndDate` | `DATS(8)` | Manufacturing Order Confirmed End Date |
-| `ActualReleasedDate` | `DATS(8)` | Actual Release Date |
-| `DisplayCurrency` | `CUKY(5)` | Currency |
-| `ActlCostInDspCrcy` | `CURR(23)` | Total Actual Cost |
-| `ActlVarblCostInDspCrcy` | `CURR(23)` | Actual Variable Cost |
-| `ActlFixedCostInDspCrcy` | `CURR(23)` | Actual Fixed Cost |
-| `PlanCostInDspCrcy` | `CURR(23)` | Total Plan Cost |
-| `PlanFixedCostInDspCrcy` | `CURR(23)` | Plan Fixed Cost |
-| `PlanVarblCostInDspCrcy` | `CURR(23)` | Plan Variable Cost |
-| `InptPrVarcAmtInDspCrcy` | `CURR(23)` | Input Price Variance in Display Currency |
-| `InptQtyVarcAmtInDspCrcy` | `CURR(23)` | Input Quantity Variance |
-| `RsceUsgeVarcAmtInDspCrcy` | `CURR(23)` | Resource Usage Variance |
-| `InptRmngVarcAmtInDspCrcy` | `CURR(23)` | Remaining Input Variance |
-| `MixedPrVarcAmtInDspCrcy` | `CURR(23)` | Mixed-Price Variance |
-| `OutpPrVarcAmtInDspCrcy` | `CURR(23)` | Output Price Variance |
-| `LotSizeVarcAmtInDspCrcy` | `CURR(23)` | Lot Size Variance |
-| `OutpQtyVarcAmtInDspCrcy` | `CURR(23)` | Output Quantity Variance |
-| `OutpRmngVarcAmtInDspCrcy` | `CURR(23)` | Remaining Variance |
-| `ScrapVarcAmtInDspCrcy` | `CURR(23)` | Scrap Variance |
-| `CostVarianceInDspCrcy` | `CURR(23)` | Cost Variance |
-| `WIPAmtInDisplayCurrency` | `CURR(23)` | Work In Process |
-| `RsrvAmountInDisplayCrcy` | `CURR(23)` | Reserves for Unrealized Costs |
-| `PlanOutputQuantity` | `QUAN(23)` | Plan Output Quantity |
-| `ActualOutputQuantity` | `QUAN(23)` | Actual Output Quantity |
-| `DebitActlPlnDiffCostInDspCrcy` | `CURR(23)` | Plan Cost Debit/Actual Cost Debit Variance |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrderID` |  | |  |  | `CHAR(12)` | Order Number |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `ReferenceOrder` |  | |  |  | `CHAR(12)` | Reference Order Number |
+| `ExternalOrder` |  | |  |  | `CHAR(20)` | External Order Number |
+| `OrderDescription` |  | |  |  | `CHAR(40)` | Order Description |
+| `OrderTypeName` |  | |  |  | `CHAR(40)` | Name of an Order Type |
+| `OrderCategoryName` |  | |  |  | `CHAR(60)` | Order Category Name |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `PlantName` |  | |  |  | `CHAR(30)` | Plant Name |
+| `ProductionUnit` |  | |  |  | `UNIT(3)` | Output Unit of Measure |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ControllingAreaName` |  | |  |  | `CHAR(25)` | Controlling Area Name |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Company Code Name |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalWeek` |  | |  |  | `NUMC(2)` | Fiscal Week |
+| `Material` |  | |  |  | `CHAR(40)` | Product |
+| `MaterialName` |  | |  |  | `CHAR(40)` | Material Description |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `ScheduledBasicEndDate` |  | |  |  | `DATS(8)` | Scheduled Finish Date |
+| `ScheduledReleaseDate` |  | |  |  | `DATS(8)` | Scheduled Release Date |
+| `ActualStartDate` |  | |  |  | `DATS(8)` | Actual Start Date |
+| `ConfirmedEndDate` |  | |  |  | `DATS(8)` | Manufacturing Order Confirmed End Date |
+| `ActualReleasedDate` |  | |  |  | `DATS(8)` | Actual Release Date |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `ActlCostInDspCrcy` |  | |  |  | `CURR(23)` | Total Actual Cost |
+| `ActlVarblCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Variable Cost |
+| `ActlFixedCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Fixed Cost |
+| `PlanCostInDspCrcy` |  | |  |  | `CURR(23)` | Total Plan Cost |
+| `PlanFixedCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Fixed Cost |
+| `PlanVarblCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Variable Cost |
+| `InptPrVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Input Price Variance in Display Currency |
+| `InptQtyVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Input Quantity Variance |
+| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Resource Usage Variance |
+| `InptRmngVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Remaining Input Variance |
+| `MixedPrVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Mixed-Price Variance |
+| `OutpPrVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Output Price Variance |
+| `LotSizeVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Lot Size Variance |
+| `OutpQtyVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Output Quantity Variance |
+| `OutpRmngVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Remaining Variance |
+| `ScrapVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Scrap Variance |
+| `CostVarianceInDspCrcy` |  | |  |  | `CURR(23)` | Cost Variance |
+| `WIPAmtInDisplayCurrency` |  | |  |  | `CURR(23)` | Work In Process |
+| `RsrvAmountInDisplayCrcy` |  | |  |  | `CURR(23)` | Reserves for Unrealized Costs |
+| `PlanOutputQuantity` |  | |  |  | `QUAN(23)` | Plan Output Quantity |
+| `ActualOutputQuantity` |  | |  |  | `QUAN(23)` | Actual Output Quantity |
+| `DebitActlPlnDiffCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Cost Debit/Actual Cost Debit Variance |

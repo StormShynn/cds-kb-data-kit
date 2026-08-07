@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `HouseBank` | `CHAR(5)` | Short Key for a House Bank |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `BankInternalID` | `CHAR(15)` | Bank Keys |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `HouseBank` |  | |  |  | `CHAR(5)` | Short Key for a House Bank |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` |  | |  |  | `CHAR(15)` | Bank Keys |

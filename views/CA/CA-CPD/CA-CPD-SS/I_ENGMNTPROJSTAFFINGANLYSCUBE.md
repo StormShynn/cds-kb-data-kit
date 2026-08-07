@@ -34,40 +34,40 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Engagement Project ID |
-| `FiscalYearPeriod` | `CHAR(7)` |  |
-| `EngagementProjectResource` | `CHAR(40)` | Resource ID |
-| `BillingControlCategory` | `CHAR(8)` |  |
-| `FiscalPeriod` | `NUMC(3)` | Period |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `ProjectStartDate` | `DATS(8)` | Commercial Project: Start Date |
-| `ProjectEndDate` | `DATS(8)` | Commercial Project: End Date |
-| `ProjectProfileCode` | `CHAR(7)` | Project Profile |
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `ControllingArea` | `CHAR(4)` | Controlling area for the project |
-| `CompanyCode` | `CHAR(4)` | Company code for the project |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `CostCenter` | `CHAR(20)` | Organization Unit Key |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `EngagementProjectStage` | `CHAR(4)` | Commercial Project: Stage |
-| `EngagementProjectType` | `CHAR(4)` | Engagement Project Type |
-| `EngagementProjectCategory` | `CHAR(1)` | Project Type |
-| `ProjectVisibility` | `CHAR(1)` | Confidential Indicator for Commercial Project |
-| `ProjectManager` | `CHAR(12)` |  |
-| `ProjectManagerExternalID` | `CHAR(60)` |  |
-| `ProjectManagerName` | `CHAR(80)` |  |
-| `ProjectManagerWorkAgreement` | `NUMC(8)` |  |
-| `EngagementProjectResourceType` | `CHAR(4)` | Resource Type ID |
-| `BillingControlCategoryText` | `CHAR(60)` | Short Text for Fixed Values |
-| `IsMyProject` | `CHAR(1)` |  |
-| `UnitOfMeasure` | `UNIT(3)` | Unit of Measure |
-| `PlndEffortQty` | `QUAN(15)` | Total Quantity |
-| `PlndEffortUpToCurPerd` | `QUAN(15)` | Total Quantity |
-| `EngmntProjStaffedEffort` | `QUAN(15)` | Total Quantity |
-| `StaffedEffortUpToCurPerdQty` | `QUAN(15)` | Total Quantity |
-| `ActlEffortQty` | `QUAN(15)` |  |
-| `TotalRecordedHours` | `QUAN(15)` |  |
-| `TotalApprovedHours` | `QUAN(15)` |  |
-| `TotRecHrsSentForApproval` | `QUAN(15)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `FiscalYearPeriod` |  | |  |  | `CHAR(7)` |  |
+| `EngagementProjectResource` |  | |  |  | `CHAR(40)` | Resource ID |
+| `BillingControlCategory` |  | |  |  | `CHAR(8)` |  |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Period |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `ProjectStartDate` |  | |  |  | `DATS(8)` | Commercial Project: Start Date |
+| `ProjectEndDate` |  | |  |  | `DATS(8)` | Commercial Project: End Date |
+| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling area for the project |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company code for the project |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(20)` | Organization Unit Key |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |
+| `EngagementProjectType` |  | |  |  | `CHAR(4)` | Engagement Project Type |
+| `EngagementProjectCategory` |  | |  |  | `CHAR(1)` | Project Type |
+| `ProjectVisibility` |  | |  |  | `CHAR(1)` | Confidential Indicator for Commercial Project |
+| `ProjectManager` |  | |  |  | `CHAR(12)` |  |
+| `ProjectManagerExternalID` |  | |  |  | `CHAR(60)` |  |
+| `ProjectManagerName` |  | |  |  | `CHAR(80)` |  |
+| `ProjectManagerWorkAgreement` |  | |  |  | `NUMC(8)` |  |
+| `EngagementProjectResourceType` |  | |  |  | `CHAR(4)` | Resource Type ID |
+| `BillingControlCategoryText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `IsMyProject` |  | |  |  | `CHAR(1)` |  |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `PlndEffortQty` |  | |  |  | `QUAN(15)` | Total Quantity |
+| `PlndEffortUpToCurPerd` |  | |  |  | `QUAN(15)` | Total Quantity |
+| `EngmntProjStaffedEffort` |  | |  |  | `QUAN(15)` | Total Quantity |
+| `StaffedEffortUpToCurPerdQty` |  | |  |  | `QUAN(15)` | Total Quantity |
+| `ActlEffortQty` |  | |  |  | `QUAN(15)` |  |
+| `TotalRecordedHours` |  | |  |  | `QUAN(15)` |  |
+| `TotalApprovedHours` |  | |  |  | `QUAN(15)` |  |
+| `TotRecHrsSentForApproval` |  | |  |  | `QUAN(15)` |  |

@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkAssignment` | `NUMC(8)` | Workforce Assignment ID |
-| `StartDate` | `DATS(8)` | Start Date |
-| `EndDate` | `DATS(8)` | End Date |
-| `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
-| `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `ServiceCostLevel` | `NUMC(4)` | Service Cost Level |
-| `IsBlocked` | `CHAR(1)` | Blocked Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkAssignment` |  | |  |  | `NUMC(8)` | Workforce Assignment ID |
+| `StartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `EndDate` |  | |  |  | `DATS(8)` | End Date |
+| `WorkAssignmentExternalID` |  | |  |  | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` |  | |  |  | `CHAR(2)` | Workforce Country ISO Code |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `ServiceCostLevel` |  | |  |  | `NUMC(4)` | Service Cost Level |
+| `IsBlocked` |  | |  |  | `CHAR(1)` | Blocked Indicator |

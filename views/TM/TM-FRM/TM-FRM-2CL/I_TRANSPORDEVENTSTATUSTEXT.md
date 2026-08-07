@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdEventStatus` | `CHAR(1)` | Event Status |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdEventStatusDesc` | `CHAR(60)` | Transportation Order Event Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdEventStatus` |  | |  |  | `CHAR(1)` | Event Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdEventStatusDesc` |  | |  |  | `CHAR(60)` | Transportation Order Event Status Description |

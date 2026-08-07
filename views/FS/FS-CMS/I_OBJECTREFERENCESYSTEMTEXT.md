@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectReferenceSystem` | `CHAR(6)` | Object System Reference ID |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `ObjectReferenceSystemText` | `CHAR(40)` | Object System Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectReferenceSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `ObjectReferenceSystemText` |  | |  |  | `CHAR(40)` | Object System Name |

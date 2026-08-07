@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkAssignment` | `NUMC(8)` | Workforce Assignment ID |
-| `WorkAssignmentStartDate` | `DATS(8)` | Start Date |
-| `WorkAssignmentEndDate` | `DATS(8)` | End Date |
-| `ServiceCostLevel` | `NUMC(4)` | Service Cost Level |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkAssignment` |  | |  |  | `NUMC(8)` | Workforce Assignment ID |
+| `WorkAssignmentStartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `WorkAssignmentEndDate` |  | |  |  | `DATS(8)` | End Date |
+| `ServiceCostLevel` |  | |  |  | `NUMC(4)` | Service Cost Level |

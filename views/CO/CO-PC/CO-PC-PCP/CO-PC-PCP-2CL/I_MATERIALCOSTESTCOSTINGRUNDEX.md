@@ -34,23 +34,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EstimatedCostCostingRun` | `CHAR(8)` | Name of Costing Run |
-| `EstimatedCostCostingRunDate` | `DATS(8)` | Costing Run Date |
-| `CostingVersion` | `NUMC(2)` | Costing Version |
-| `CostingRunStatus` | `CHAR(2)` | Costing Status |
-| `CostEstimateValidityStartDate` | `DATS(8)` | Costing Date From |
-| `MaterialValuationDate` | `DATS(8)` | Valuation Date of a Cost Estimate |
-| `QuantityStructureDate` | `DATS(8)` | Quantity Structure Date for Costing |
-| `CostEstimateValidityEndDate` | `DATS(8)` | Costing Date To |
-| `CostingVariant` | `CHAR(4)` | Marked Costing Variant (Release Standard Cost Estimate) |
-| `CostingType` | `CHAR(2)` | Costing Type |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `CreatedByUser` | `CHAR(12)` | Entered By |
-| `CreationDate` | `DATS(8)` | Date on Which Cost Estimate Was Created |
-| `CostEstimateTransferControl` | `CHAR(4)` | Transfer Control |
-| `CostingRunStatusHistorySqnc` | `NUMC(3)` | Counter for Costing Run History |
-| `CostingErrorLogID` | `NUMC(12)` | Error Management Number |
-| `CostingErrorLogObject` | `CHAR(4)` | Object ID for Processing Within PPC Error Analysis |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EstimatedCostCostingRun` |  | |  |  | `CHAR(8)` | Name of Costing Run |
+| `EstimatedCostCostingRunDate` |  | |  |  | `DATS(8)` | Costing Run Date |
+| `CostingVersion` |  | |  |  | `NUMC(2)` | Costing Version |
+| `CostingRunStatus` |  | |  |  | `CHAR(2)` | Costing Status |
+| `CostEstimateValidityStartDate` |  | |  |  | `DATS(8)` | Costing Date From |
+| `MaterialValuationDate` |  | |  |  | `DATS(8)` | Valuation Date of a Cost Estimate |
+| `QuantityStructureDate` |  | |  |  | `DATS(8)` | Quantity Structure Date for Costing |
+| `CostEstimateValidityEndDate` |  | |  |  | `DATS(8)` | Costing Date To |
+| `CostingVariant` |  | |  |  | `CHAR(4)` | Marked Costing Variant (Release Standard Cost Estimate) |
+| `CostingType` |  | |  |  | `CHAR(2)` | Costing Type |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Entered By |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date on Which Cost Estimate Was Created |
+| `CostEstimateTransferControl` |  | |  |  | `CHAR(4)` | Transfer Control |
+| `CostingRunStatusHistorySqnc` |  | |  |  | `NUMC(3)` | Counter for Costing Run History |
+| `CostingErrorLogID` |  | |  |  | `NUMC(12)` | Error Management Number |
+| `CostingErrorLogObject` |  | |  |  | `CHAR(4)` | Object ID for Processing Within PPC Error Analysis |

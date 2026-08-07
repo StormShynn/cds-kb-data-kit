@@ -34,16 +34,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
-| `BankPowerOfAttorney` | `CHAR(20)` | Power of Attorney ID |
-| `BankPowerOfAttorneyName` | `CHAR(40)` | Power of Attorney Description |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` | `DATS(8)` | Valid-To Date |
-| `BankPowerOfAttorneyType` | `CHAR(4)` | Power of Attorney Type |
-| `BankPowerOfAttorneyTypeName` | `CHAR(50)` | Power of Attorney Type Description |
-| `BankPowerOfAttorneyStatus` | `CHAR(2)` | Power of Attorney Status |
-| `BankPowerOfAttorneyStatusName` | `CHAR(60)` | Short Text for Fixed Values |
-| `BkPOAAuthorizationGroup` | `CHAR(10)` | Authorization Group for Powers of Attorney |
-| `WorkflowTaskURL` | `SSTR(1333)` | Workflow: Workflow Task URL |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
+| `BankPowerOfAttorney` |  | |  |  | `CHAR(20)` | Power of Attorney ID |
+| `BankPowerOfAttorneyName` |  | |  |  | `CHAR(40)` | Power of Attorney Description |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date |
+| `BankPowerOfAttorneyType` |  | |  |  | `CHAR(4)` | Power of Attorney Type |
+| `BankPowerOfAttorneyTypeName` |  | |  |  | `CHAR(50)` | Power of Attorney Type Description |
+| `BankPowerOfAttorneyStatus` |  | |  |  | `CHAR(2)` | Power of Attorney Status |
+| `BankPowerOfAttorneyStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `BkPOAAuthorizationGroup` |  | |  |  | `CHAR(10)` | Authorization Group for Powers of Attorney |
+| `WorkflowTaskURL` |  | |  |  | `SSTR(1333)` | Workflow: Workflow Task URL |

@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkCenterInternalID` | `NUMC(8)` | Object ID of the resource |
-| `WorkCenterTypeCode` | `CHAR(2)` | Object types of the CIM resource |
-| `CapacityCategoryAllocation` | `NUMC(4)` | Capacity Category Allocation |
-| `CapacityInternalID` | `NUMC(8)` | Capacity ID |
-| `Language` | `LANG(1)` | Language Key |
-| `CapacityText` | `CHAR(40)` | Capacity Short Text |
-| `CapacityLastChangeDateTime` | `DEC(21)` | Capacity Last Change Date Time |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `WorkCenterTypeCode` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
+| `CapacityCategoryAllocation` |  | |  |  | `NUMC(4)` | Capacity Category Allocation |
+| `CapacityInternalID` |  | |  |  | `NUMC(8)` | Capacity ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CapacityText` |  | |  |  | `CHAR(40)` | Capacity Short Text |
+| `CapacityLastChangeDateTime` |  | |  |  | `DEC(21)` | Capacity Last Change Date Time |

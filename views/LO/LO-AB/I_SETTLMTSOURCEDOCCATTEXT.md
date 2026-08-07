@@ -42,9 +42,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtSourceDocCat` | `CHAR(2)` | Document Category of Source Document |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtSourceDocCatName` | `CHAR(60)` | Description of Source Document Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtSourceDocCat` |  | |  |  | `CHAR(2)` | Document Category of Source Document |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtSourceDocCatName` |  | |  |  | `CHAR(60)` | Description of Source Document Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

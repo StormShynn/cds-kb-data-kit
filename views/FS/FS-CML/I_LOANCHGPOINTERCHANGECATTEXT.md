@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanChgPointerChangeCat` | `CHAR(4)` | Change Category |
-| `LoanChgPointerChangeCatText` | `CHAR(50)` | Name of Change Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanChgPointerChangeCat` |  | |  |  | `CHAR(4)` | Change Category |
+| `LoanChgPointerChangeCatText` |  | |  |  | `CHAR(50)` | Name of Change Category |

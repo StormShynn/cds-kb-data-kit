@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DateFunction` | `CHAR(32)` | Relative Date Function ID |
-| `DateFunctionName` | `CHAR(40)` | Date Function Name |
-| `DateFunctionDescription` | `CHAR(255)` | Date Function Description |
-| `DateFunctionGranularity` | `NUMC(2)` | Date Function Granularity |
-| `DateFunctionType` | `NUMC(2)` | Date Function Type |
-| `DateFunctionStartDate` | `DATS(8)` | Date Function Start Date |
-| `DateFunctionEndDate` | `DATS(8)` | Date Function End Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DateFunction` |  | |  |  | `CHAR(32)` | Relative Date Function ID |
+| `DateFunctionName` |  | |  |  | `CHAR(40)` | Date Function Name |
+| `DateFunctionDescription` |  | |  |  | `CHAR(255)` | Date Function Description |
+| `DateFunctionGranularity` |  | |  |  | `NUMC(2)` | Date Function Granularity |
+| `DateFunctionType` |  | |  |  | `NUMC(2)` | Date Function Type |
+| `DateFunctionStartDate` |  | |  |  | `DATS(8)` | Date Function Start Date |
+| `DateFunctionEndDate` |  | |  |  | `DATS(8)` | Date Function End Date |

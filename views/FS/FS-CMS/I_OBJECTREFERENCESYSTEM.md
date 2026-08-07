@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectReferenceSystem` | `CHAR(6)` | Object System Reference ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectReferenceSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID |

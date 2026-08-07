@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ListedDerivativeCategory` | `NUMC(2)` | Options/futures category |
-| `ListedDerivativeCategoryName` | `CHAR(60)` | Name of Option/Future Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ListedDerivativeCategory` |  | |  |  | `NUMC(2)` | Options/futures category |
+| `ListedDerivativeCategoryName` |  | |  |  | `CHAR(60)` | Name of Option/Future Category |

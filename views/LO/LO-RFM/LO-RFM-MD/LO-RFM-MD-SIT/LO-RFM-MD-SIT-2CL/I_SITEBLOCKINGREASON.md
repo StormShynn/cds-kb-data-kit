@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SiteBlockingReason` | `CHAR(2)` | Blocking Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SiteBlockingReason` |  | |  |  | `CHAR(2)` | Blocking Reason |

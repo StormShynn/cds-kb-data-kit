@@ -36,18 +36,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Store` | `CHAR(4)` | Retail plant |
-| `StoreStockAdjustmentUUID` | `RAW(16)` | Unique Identifier for New Stock Adjustment |
-| `GoodsMovementType` | `CHAR(3)` | Movement Type (Inventory Management) |
-| `StockAdjustmentReason` | `CHAR(4)` | Stock Adjustment Reason |
-| `StorageLocation` | `CHAR(4)` | Storage Location |
-| `StockAdjustmentStatus` | `CHAR(2)` | Processing Status of the Stock Adjustment |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDateTime` | `DEC(21)` | Creation date and time of Stock Adjustment |
-| `LastChangedByUser` | `CHAR(12)` | User Who Last Changed the Business Document |
-| `LastChangeDateTime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
-| `CreationDate` | `DATS(8)` | Date |
-| `LastChangeDate` | `DATS(8)` | Date |
-| `MaterialDocument` | `CHAR(10)` | Number of Material Document |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Store` |  | |  |  | `CHAR(4)` | Retail plant |
+| `StoreStockAdjustmentUUID` |  | |  |  | `RAW(16)` | Unique Identifier for New Stock Adjustment |
+| `GoodsMovementType` |  | |  |  | `CHAR(3)` | Movement Type (Inventory Management) |
+| `StockAdjustmentReason` |  | |  |  | `CHAR(4)` | Stock Adjustment Reason |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `StockAdjustmentStatus` |  | |  |  | `CHAR(2)` | Processing Status of the Stock Adjustment |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDateTime` |  | |  |  | `DEC(21)` | Creation date and time of Stock Adjustment |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | User Who Last Changed the Business Document |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date |
+| `MaterialDocument` |  | |  |  | `CHAR(10)` | Number of Material Document |

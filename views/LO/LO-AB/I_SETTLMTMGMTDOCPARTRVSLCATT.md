@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtDocPartRvslCat` | `CHAR(1)` | Category of the Partner Reversal |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtMgmtDocPartRvslCatName` | `CHAR(60)` | Name of Partner Reversal Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtDocPartRvslCat` |  | |  |  | `CHAR(1)` | Category of the Partner Reversal |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtMgmtDocPartRvslCatName` |  | |  |  | `CHAR(60)` | Name of Partner Reversal Category |

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Person` | `CHAR(45)` | ID of Related Object |
-| `WorkforcePersonSkillTagID` | `RAW(16)` | GUID in 'RAW' format |
-| `WorkforcePersonSkillTagType` | `CHAR(1)` | Tag Type |
-| `SystemOfRecordID` | `CHAR(80)` | System ID |
-| `LastChangeDate` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
-| `LastChangedByUser` | `CHAR(12)` | User Name |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Person` |  | |  |  | `CHAR(45)` | ID of Related Object |
+| `WorkforcePersonSkillTagID` |  | |  |  | `RAW(16)` | GUID in 'RAW' format |
+| `WorkforcePersonSkillTagType` |  | |  |  | `CHAR(1)` | Tag Type |
+| `SystemOfRecordID` |  | |  |  | `CHAR(80)` | System ID |
+| `LastChangeDate` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | User Name |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |

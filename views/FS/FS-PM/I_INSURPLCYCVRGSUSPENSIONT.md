@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurPlcyCoverageSuspension` | `CHAR(1)` | Suspension Type |
-| `InsurPlcyCvrgSuspensionName` | `CHAR(50)` | Name of Suspension Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurPlcyCoverageSuspension` |  | |  |  | `CHAR(1)` | Suspension Type |
+| `InsurPlcyCvrgSuspensionName` |  | |  |  | `CHAR(50)` | Name of Suspension Type |

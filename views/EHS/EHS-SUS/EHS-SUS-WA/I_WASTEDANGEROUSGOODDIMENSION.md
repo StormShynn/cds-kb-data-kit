@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ClassifiedAsDangerousGood` | `CHAR(2)` | Classified as Dangerous Good Indicator |
-| `ClassifiedAsDangerousGoodName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassifiedAsDangerousGood` |  | |  |  | `CHAR(2)` | Classified as Dangerous Good Indicator |
+| `ClassifiedAsDangerousGoodName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

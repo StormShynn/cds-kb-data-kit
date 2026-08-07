@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AcctsRblStatus` | `CHAR(2)` | Accounts Receivable Status |
-| `Language` | `LANG(1)` | Language Key |
-| `AcctsRblStatusName` | `CHAR(60)` | AR Balance Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AcctsRblStatus` |  | |  |  | `CHAR(2)` | Accounts Receivable Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AcctsRblStatusName` |  | |  |  | `CHAR(60)` | AR Balance Status Name |

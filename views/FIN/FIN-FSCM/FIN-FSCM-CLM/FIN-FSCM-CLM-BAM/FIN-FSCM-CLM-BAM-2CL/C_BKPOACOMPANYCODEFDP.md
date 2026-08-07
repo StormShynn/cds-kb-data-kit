@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankPowerOfAttorneyUUID` | `RAW(16)` | Power of Attorney UUID |
-| `BkPOACompanyCodeUUID` | `RAW(16)` | Power of Attorney: Company Code UUID |
-| `BkPOAAuthorizationGroup` | `CHAR(10)` | Authorization Group for Powers of Attorney |
-| `BkPOACompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` |  | |  |  | `RAW(16)` | Power of Attorney UUID |
+| `BkPOACompanyCodeUUID` |  | |  |  | `RAW(16)` | Power of Attorney: Company Code UUID |
+| `BkPOAAuthorizationGroup` |  | |  |  | `CHAR(10)` | Authorization Group for Powers of Attorney |
+| `BkPOACompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |

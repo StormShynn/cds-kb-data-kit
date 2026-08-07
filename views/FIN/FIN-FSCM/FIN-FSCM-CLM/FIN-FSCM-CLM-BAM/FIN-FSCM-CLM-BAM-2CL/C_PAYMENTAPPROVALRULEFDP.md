@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentApprovalRule` | `CHAR(20)` | Payment Approval Rule ID |
-| `PaymentApprovalRuleName` | `CHAR(40)` | Description of Payment Approval Rule |
-| `PaymentApprovalRuleStatus` | `CHAR(2)` | Payment Approval Rule Status |
-| `PaymentApprovalRuleStatusName` | `CHAR(60)` | Short Text for Fixed Values |
-| `PaytApprvlDfltLmtCurrency` | `CUKY(5)` | Default Limit Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentApprovalRule` |  | |  |  | `CHAR(20)` | Payment Approval Rule ID |
+| `PaymentApprovalRuleName` |  | |  |  | `CHAR(40)` | Description of Payment Approval Rule |
+| `PaymentApprovalRuleStatus` |  | |  |  | `CHAR(2)` | Payment Approval Rule Status |
+| `PaymentApprovalRuleStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `PaytApprvlDfltLmtCurrency` |  | |  |  | `CUKY(5)` | Default Limit Currency |

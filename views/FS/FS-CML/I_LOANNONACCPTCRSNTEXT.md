@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `LoanProductType` | `CHAR(3)` | Product Type |
-| `LoanNonAccptcRsn` | `NUMC(2)` | Reason for Non-Acceptance |
-| `LoanNonAccptcRsnText` | `CHAR(40)` | Reason Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `LoanProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `LoanNonAccptcRsn` |  | |  |  | `NUMC(2)` | Reason for Non-Acceptance |
+| `LoanNonAccptcRsnText` |  | |  |  | `CHAR(40)` | Reason Name |

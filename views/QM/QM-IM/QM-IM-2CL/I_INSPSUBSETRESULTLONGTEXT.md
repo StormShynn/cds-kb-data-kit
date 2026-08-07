@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InspectionLot` | `NUMC(12)` | Inspection Lot Number |
-| `InspPlanOperationInternalID` | `NUMC(8)` | Current Node Number from Order Counter |
-| `InspectionCharacteristic` | `NUMC(4)` | Inspection Characteristic Number |
-| `InspectionSubsetInternalID` | `NUMC(6)` | Number of Partial Sample |
-| `ItemCounter` | `INT2(5)` | Long Text Counter |
-| `Language` | `LANG(1)` | Language Key |
-| `LongTextID` | `CHAR(4)` | Text ID |
-| `LongTextCreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `LongTextCreatedAt` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `LongTextLastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `LongTextLastChangedAt` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InspectionLot` |  | |  |  | `NUMC(12)` | Inspection Lot Number |
+| `InspPlanOperationInternalID` |  | |  |  | `NUMC(8)` | Current Node Number from Order Counter |
+| `InspectionCharacteristic` |  | |  |  | `NUMC(4)` | Inspection Characteristic Number |
+| `InspectionSubsetInternalID` |  | |  |  | `NUMC(6)` | Number of Partial Sample |
+| `ItemCounter` |  | |  |  | `INT2(5)` | Long Text Counter |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LongTextID` |  | |  |  | `CHAR(4)` | Text ID |
+| `LongTextCreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LongTextCreatedAt` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LongTextLastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LongTextLastChangedAt` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |

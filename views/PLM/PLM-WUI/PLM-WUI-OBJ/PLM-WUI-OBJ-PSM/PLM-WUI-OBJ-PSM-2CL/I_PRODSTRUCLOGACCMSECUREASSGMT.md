@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LogAccMObjectID` | `CHAR(90)` | Internal Key |
-| `LogAccMSecureID` | `RAW(16)` | Secure ID |
-| `LogAccMObjectType` | `CHAR(10)` | Object Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LogAccMObjectID` |  | |  |  | `CHAR(90)` | Internal Key |
+| `LogAccMSecureID` |  | |  |  | `RAW(16)` | Secure ID |
+| `LogAccMObjectType` |  | |  |  | `CHAR(10)` | Object Type |

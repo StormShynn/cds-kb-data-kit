@@ -31,24 +31,24 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EmployeeExtID` | `CHAR(60)` | Identification Number |
-| `Person` | `CHAR(10)` | Business Partner Number |
-| `LastName` | `CHAR(35)` | Search Help Field 1 (Name 1/Last Name) |
-| `FirstName` | `CHAR(35)` | Search Help Field 2 (Name 2/First Name) |
-| `PersonFullName` | `CHAR(80)` | Full Name |
-| `UserID` | `CHAR(12)` | User ID |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
-| `DataControllerSet` | `CHAR(1)` | BP: Data Controller Set Flag |
-| `DataController1` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController2` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController3` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController4` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController5` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController6` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController7` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController8` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController9` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController10` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EmployeeExtID` |  | |  |  | `CHAR(60)` | Identification Number |
+| `Person` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `LastName` |  | |  |  | `CHAR(35)` | Search Help Field 1 (Name 1/Last Name) |
+| `FirstName` |  | |  |  | `CHAR(35)` | Search Help Field 2 (Name 2/First Name) |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | Full Name |
+| `UserID` |  | |  |  | `CHAR(12)` | User ID |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |

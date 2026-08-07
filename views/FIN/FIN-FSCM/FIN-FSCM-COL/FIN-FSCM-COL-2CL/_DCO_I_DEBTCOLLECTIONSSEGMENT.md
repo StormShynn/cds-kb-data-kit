@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
-| `DebtCollectionsSegmentCurrency` | `CUKY(5)` | Segment Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `DebtCollectionsSegmentCurrency` |  | |  |  | `CUKY(5)` | Segment Currency |

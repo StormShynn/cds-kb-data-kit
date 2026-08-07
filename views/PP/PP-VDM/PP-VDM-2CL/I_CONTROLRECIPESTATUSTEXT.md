@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ControlRecipeStatus` | `CHAR(5)` | Control Recipe Status |
-| `Language` | `LANG(1)` | Language Key |
-| `ControlRecipeStatusName` | `CHAR(30)` | Description of the Control Recipe Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControlRecipeStatus` |  | |  |  | `CHAR(5)` | Control Recipe Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ControlRecipeStatusName` |  | |  |  | `CHAR(30)` | Description of the Control Recipe Status |

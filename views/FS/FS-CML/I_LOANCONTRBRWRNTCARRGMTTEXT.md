@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanContrBrwrNtcArrgmt` | `NUMC(3)` | Notice Arrangement Borrower |
-| `LoanContrBrwrNtcArrgmtText` | `CHAR(30)` | Text (30 Characters) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanContrBrwrNtcArrgmt` |  | |  |  | `NUMC(3)` | Notice Arrangement Borrower |
+| `LoanContrBrwrNtcArrgmtText` |  | |  |  | `CHAR(30)` | Text (30 Characters) |

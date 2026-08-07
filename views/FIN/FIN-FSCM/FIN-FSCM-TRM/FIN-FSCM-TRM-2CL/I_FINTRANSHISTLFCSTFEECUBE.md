@@ -34,29 +34,29 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `FinTransFeeDataSource` | `CHAR(10)` | Data source for FinTrans Fee |
-| `FinTransFlowType` | `CHAR(4)` | Flow Type |
-| `FinTransFlowCreationTime` | `TIMS(6)` | Flow Entry Time |
-| `FinancialInstrumentActivity` | `NUMC(5)` | Transaction Activity |
-| `FinTransFlowCreationDate` | `DATS(8)` | Entered On |
-| `FinTransFlowNumber` | `NUMC(4)` | Transaction Flow |
-| `FinTransFlowPaymentDate` | `DATS(8)` | Flow Payment Date |
-| `TreasuryContractType` | `CHAR(1)` | Contract Type |
-| `FinTransFlowPostingStatus` | `CHAR(1)` | Flow Fixing Status |
-| `FinTransFlowFixingStatus` | `CHAR(1)` | Flow Fixing Status |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `FinTransFlowPaytAmt` | `CURR(13)` | Flow Payment Amount |
-| `FinTransFlowPaytAmtCrcy` | `CUKY(5)` | Payment Currency |
-| `BankGroup` | `CHAR(10)` | Bank Group ID |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `Portfolio` | `CHAR(10)` | Portfolio |
-| `SecurityAccount` | `CHAR(10)` | Security Account |
-| `FinancialInstrTransactionType` | `CHAR(3)` | Financial Instrument Transaction Type |
-| `YearMonth` | `NUMC(6)` | Year Month |
-| `YearQuarter` | `NUMC(5)` | Year Quarter |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `FinTransFeeDataSource` |  | |  |  | `CHAR(10)` | Data source for FinTrans Fee |
+| `FinTransFlowType` |  | |  |  | `CHAR(4)` | Flow Type |
+| `FinTransFlowCreationTime` |  | |  |  | `TIMS(6)` | Flow Entry Time |
+| `FinancialInstrumentActivity` |  | |  |  | `NUMC(5)` | Transaction Activity |
+| `FinTransFlowCreationDate` |  | |  |  | `DATS(8)` | Entered On |
+| `FinTransFlowNumber` |  | |  |  | `NUMC(4)` | Transaction Flow |
+| `FinTransFlowPaymentDate` |  | |  |  | `DATS(8)` | Flow Payment Date |
+| `TreasuryContractType` |  | |  |  | `CHAR(1)` | Contract Type |
+| `FinTransFlowPostingStatus` |  | |  |  | `CHAR(1)` | Flow Fixing Status |
+| `FinTransFlowFixingStatus` |  | |  |  | `CHAR(1)` | Flow Fixing Status |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `FinTransFlowPaytAmt` |  | |  |  | `CURR(13)` | Flow Payment Amount |
+| `FinTransFlowPaytAmtCrcy` |  | |  |  | `CUKY(5)` | Payment Currency |
+| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `SecurityAccount` |  | |  |  | `CHAR(10)` | Security Account |
+| `FinancialInstrTransactionType` |  | |  |  | `CHAR(3)` | Financial Instrument Transaction Type |
+| `YearMonth` |  | |  |  | `NUMC(6)` | Year Month |
+| `YearQuarter` |  | |  |  | `NUMC(5)` | Year Quarter |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |

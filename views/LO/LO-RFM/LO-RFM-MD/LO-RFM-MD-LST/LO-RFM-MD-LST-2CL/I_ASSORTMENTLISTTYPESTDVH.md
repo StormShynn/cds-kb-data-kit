@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AssortmentListType` | `CHAR(1)` | Assortment List Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AssortmentListType` |  | |  |  | `CHAR(1)` | Assortment List Type |

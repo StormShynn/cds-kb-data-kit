@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WarehouseProcessType` | `CHAR(4)` | Warehouse Process Type |
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WarehouseProcessType` |  | |  |  | `CHAR(4)` | Warehouse Process Type |
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |

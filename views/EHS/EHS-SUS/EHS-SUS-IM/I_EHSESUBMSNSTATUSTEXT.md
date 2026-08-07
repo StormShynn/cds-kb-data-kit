@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSElectronicSubmissionStatus` | `CHAR(2)` | Electronic Submission Status |
-| `Language` | `LANG(1)` | Language Key |
-| `EHSESubmsnStatusText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSElectronicSubmissionStatus` |  | |  |  | `CHAR(2)` | Electronic Submission Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EHSESubmsnStatusText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BudgetingType` | `CHAR(8)` | Budget Type (Subcategory) |
-| `Language` | `LANG(1)` | Language Key |
-| `BudgetingTypeText` | `CHAR(40)` | Budget Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BudgetingType` |  | |  |  | `CHAR(8)` | Budget Type (Subcategory) |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BudgetingTypeText` |  | |  |  | `CHAR(40)` | Budget Type Description |

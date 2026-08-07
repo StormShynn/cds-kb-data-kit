@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMStockType` | `CHAR(2)` | Stock Type |
-| `EWMAvailabilityGroup` | `CHAR(10)` | Availability Group |
-| `EWMLocIndepStockType` | `CHAR(2)` | Location-Independent Stock Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMStockType` |  | |  |  | `CHAR(2)` | Stock Type |
+| `EWMAvailabilityGroup` |  | |  |  | `CHAR(10)` | Availability Group |
+| `EWMLocIndepStockType` |  | |  |  | `CHAR(2)` | Location-Independent Stock Type |

@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentPersonRoleUUID` | `RAW(16)` | NodeID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `InvolvedPersonUUID` | `RAW(16)` | Involved Person UUID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `IncidentPersonRole` | `CHAR(21)` | Role of Involved Person |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentPersonRoleUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `InvolvedPersonUUID` |  | |  |  | `RAW(16)` | Involved Person UUID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `IncidentPersonRole` |  | |  |  | `CHAR(21)` | Role of Involved Person |

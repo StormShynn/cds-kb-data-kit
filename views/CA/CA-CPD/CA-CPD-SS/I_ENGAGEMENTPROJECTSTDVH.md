@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Engagement Project ID |
-| `EngagementProjectName` | `CHAR(40)` | Customer Project Name |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `ProjectManager` | `NUMC(8)` |  |
-| `ProjectManagerWorkAgreement` | `NUMC(8)` |  |
-| `EngagementProjectCategory` | `CHAR(1)` | Project Type |
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `EngagementProjectType` | `CHAR(4)` | Engagement Project Type |
-| `ProjectProfileCode` | `CHAR(7)` | Project Profile |
-| `ProjectVisibility` | `CHAR(1)` | Confidential Indicator for Commercial Project |
-| `CompanyCode` | `CHAR(4)` | Company code for the project |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `IsMyProject` | `CHAR(1)` |  |
-| `EngagementProjectStage` | `CHAR(4)` | Commercial Project: Stage |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `EngagementProjectName` |  | |  |  | `CHAR(40)` | Customer Project Name |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `ProjectManager` |  | |  |  | `NUMC(8)` |  |
+| `ProjectManagerWorkAgreement` |  | |  |  | `NUMC(8)` |  |
+| `EngagementProjectCategory` |  | |  |  | `CHAR(1)` | Project Type |
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `EngagementProjectType` |  | |  |  | `CHAR(4)` | Engagement Project Type |
+| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
+| `ProjectVisibility` |  | |  |  | `CHAR(1)` | Confidential Indicator for Commercial Project |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company code for the project |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `IsMyProject` |  | |  |  | `CHAR(1)` |  |
+| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |

@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialValuationObjectType` | `CHAR(4)` | Type of the Financial Valuation Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialValuationObjectType` |  | |  |  | `CHAR(4)` | Type of the Financial Valuation Object |

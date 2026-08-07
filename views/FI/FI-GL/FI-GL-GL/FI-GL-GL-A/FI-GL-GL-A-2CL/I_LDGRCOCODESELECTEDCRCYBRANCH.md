@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `SelectedCurrencyBranch` | `CHAR(2)` | Currency Type |
-| `CurrencyRole` | `CHAR(2)` | Company Code Currency Role |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `SelectedCurrencyBranch` |  | |  |  | `CHAR(2)` | Currency Type |
+| `CurrencyRole` |  | |  |  | `CHAR(2)` | Company Code Currency Role |

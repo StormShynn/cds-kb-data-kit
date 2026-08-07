@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RESpaceGrpEnableUseType` | `CHAR(4)` | Usage Enablement Type |
-| `Language` | `LANG(1)` | Language Key |
-| `RESpaceGrpEnableUseTypeText` | `CHAR(60)` | Description Usage Enablement Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RESpaceGrpEnableUseType` |  | |  |  | `CHAR(4)` | Usage Enablement Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RESpaceGrpEnableUseTypeText` |  | |  |  | `CHAR(60)` | Description Usage Enablement Type |

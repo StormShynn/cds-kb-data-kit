@@ -35,27 +35,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Customer` | `CHAR(10)` | Customer |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `SpecialGLCode` | `CHAR(1)` | Special G/L Indicator |
-| `FinancialAccountType` | `CHAR(1)` | Account Type |
-| `YearMonth` | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `CustomerCountry` | `CHAR(3)` | Country / Region Key |
-| `CustomerRegion` | `CHAR(3)` | Region (State, Province, County) |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `DurationUnit` | `UNIT(3)` | Unit of Measurement |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `ReconciliationAccount` | `CHAR(10)` | Reconciliation Account in General Ledger |
-| `CustomerBasicAuthorizationGrp` | `CHAR(4)` | Customer Basic Authorization Group |
-| `CustomerFinsAuthorizationGrp` | `CHAR(4)` | Authorization Group |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerClassification` | `CHAR(2)` | Customer Classification |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `DebitAmtInDisplayCrcy` | `CURR(27)` |  |
-| `RevenueAmountInDisplayCrcy` | `CURR(27)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `YearMonth` |  | |  |  | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `CustomerCountry` |  | |  |  | `CHAR(3)` | Country / Region Key |
+| `CustomerRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `DurationUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `ReconciliationAccount` |  | |  |  | `CHAR(10)` | Reconciliation Account in General Ledger |
+| `CustomerBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Customer Basic Authorization Group |
+| `CustomerFinsAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `DebitAmtInDisplayCrcy` |  | |  |  | `CURR(27)` |  |
+| `RevenueAmountInDisplayCrcy` |  | |  |  | `CURR(27)` |  |

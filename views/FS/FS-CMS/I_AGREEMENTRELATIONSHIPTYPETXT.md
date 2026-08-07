@@ -29,10 +29,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementRelationshipType` | `CHAR(6)` | Relationship type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `AgreementRelationshipTypeTxt` | `CHAR(40)` | Relationship name in a specified language |
-| `AgreementRelshpTypeSrceTxt` | `CHAR(40)` | Relationship name from Source to destination |
-| `AgreementRelshpTypeDestTxt` | `CHAR(40)` | Relationship name from  Destination to Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementRelationshipType` |  | |  |  | `CHAR(6)` | Relationship type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `AgreementRelationshipTypeTxt` |  | |  |  | `CHAR(40)` | Relationship name in a specified language |
+| `AgreementRelshpTypeSrceTxt` |  | |  |  | `CHAR(40)` | Relationship name from Source to destination |
+| `AgreementRelshpTypeDestTxt` |  | |  |  | `CHAR(40)` | Relationship name from  Destination to Source |

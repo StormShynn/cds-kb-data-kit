@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ConcurDocumentType` | `CHAR(2)` | Concur Document Type |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `ConcurDocumentTypeName` | `CHAR(60)` | Name of the type of incoming Concur Document |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConcurDocumentType` |  | |  |  | `CHAR(2)` | Concur Document Type |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `ConcurDocumentTypeName` |  | |  |  | `CHAR(60)` | Name of the type of incoming Concur Document |

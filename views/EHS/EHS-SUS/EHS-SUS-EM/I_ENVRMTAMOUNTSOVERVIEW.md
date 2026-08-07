@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSAmountUUID` | `RAW(16)` | NodeID |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region |
-| `DataUsagePeriodicity` | `CHAR(3)` | Data Period of Data Collection Definition |
-| `EHSAmountSourceType` | `CHAR(2)` | Data Source Type |
-| `EHSAmountSourceTypeName` | `CHAR(255)` | Text Field in OTR |
-| `EHSAmountUTCDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `EHSAmountUTCDate` | `DATS(8)` | Date |
-| `EHSLocationName` | `CHAR(60)` | Location |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSSubjectType` | `CHAR(2)` | Subject Type |
-| `EHSSubjectUUID` | `RAW(16)` | Reference to Subject Type BO Root Node ID |
-| `DataPeriodName` | `CHAR(60)` | Short Text for Fixed Values |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `UnitOfMeasureName` | `CHAR(10)` | Unit of Measurement Text (Maximum 10 Characters) |
-| `UnitOfMeasure` | `UNIT(3)` | Units of Measurement of Various Types |
-| `EHSSubjectName` | `CHAR(1333)` |  |
-| `NumberOfRecords` | `INT4(10)` | Whole Number with +/- Sign (-2.147.483.648 .. 2.147.483.647) |
-| `EHSAmountValue` | `FLTP(16)` | Amount Value |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSAmountUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region |
+| `DataUsagePeriodicity` |  | |  |  | `CHAR(3)` | Data Period of Data Collection Definition |
+| `EHSAmountSourceType` |  | |  |  | `CHAR(2)` | Data Source Type |
+| `EHSAmountSourceTypeName` |  | |  |  | `CHAR(255)` | Text Field in OTR |
+| `EHSAmountUTCDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `EHSAmountUTCDate` |  | |  |  | `DATS(8)` | Date |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
+| `DataPeriodName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Text (Maximum 10 Characters) |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Units of Measurement of Various Types |
+| `EHSSubjectName` |  | |  |  | `CHAR(1333)` |  |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Whole Number with +/- Sign (-2.147.483.648 .. 2.147.483.647) |
+| `EHSAmountValue` |  | |  |  | `FLTP(16)` | Amount Value |

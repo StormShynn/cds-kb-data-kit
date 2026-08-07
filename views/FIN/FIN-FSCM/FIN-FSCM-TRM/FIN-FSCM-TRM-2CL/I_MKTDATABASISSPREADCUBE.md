@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MktDataBasisSpreadID` | `CHAR(15)` | Basis Spread ID |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `SpreadQuotationType` | `NUMC(1)` | Quotation Type |
-| `MktDataBasisSpreadValue` | `DEC(17)` | Basis Spread Value in Basis Points |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MktDataBasisSpreadID` |  | |  |  | `CHAR(15)` | Basis Spread ID |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `SpreadQuotationType` |  | |  |  | `NUMC(1)` | Quotation Type |
+| `MktDataBasisSpreadValue` |  | |  |  | `DEC(17)` | Basis Spread Value in Basis Points |

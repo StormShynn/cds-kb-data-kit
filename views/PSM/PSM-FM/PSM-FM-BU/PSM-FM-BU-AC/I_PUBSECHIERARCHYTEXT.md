@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyID` | `CHAR(42)` | Hierarchy ID |
-| `Language` | `LANG(1)` | Language Key |
-| `CtrlObjNameForWBSElement` | `CHAR(50)` | Hierarchy description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyID` |  | |  |  | `CHAR(42)` | Hierarchy ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CtrlObjNameForWBSElement` |  | |  |  | `CHAR(50)` | Hierarchy description |

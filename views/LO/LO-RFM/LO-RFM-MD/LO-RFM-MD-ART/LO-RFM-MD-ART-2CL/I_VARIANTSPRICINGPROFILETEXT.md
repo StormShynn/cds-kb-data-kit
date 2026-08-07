@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `VariantsPricingProfile` | `CHAR(1)` | Pricing profile for variants |
-| `VariantsPricingProfileDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `VariantsPricingProfile` |  | |  |  | `CHAR(1)` | Pricing profile for variants |
+| `VariantsPricingProfileDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

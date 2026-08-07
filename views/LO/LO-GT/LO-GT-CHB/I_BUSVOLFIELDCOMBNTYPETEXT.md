@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BusVolFieldCombnType` | `CHAR(4)` | Field Combination for Business Volume Selection |
-| `BusVolFieldCombnTypeDesc` | `CHAR(40)` | Field Combination Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusVolFieldCombnType` |  | |  |  | `CHAR(4)` | Field Combination for Business Volume Selection |
+| `BusVolFieldCombnTypeDesc` |  | |  |  | `CHAR(40)` | Field Combination Description |

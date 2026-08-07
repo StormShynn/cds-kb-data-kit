@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanSalesRegion` | `CHAR(4)` | Sales Region |
-| `LoanSalesRegionShortText` | `CHAR(15)` | Short Name |
-| `LoanSalesRegionText` | `CHAR(50)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanSalesRegion` |  | |  |  | `CHAR(4)` | Sales Region |
+| `LoanSalesRegionShortText` |  | |  |  | `CHAR(15)` | Short Name |
+| `LoanSalesRegionText` |  | |  |  | `CHAR(50)` | Name |

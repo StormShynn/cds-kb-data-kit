@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SecurityClass` | `CHAR(13)` | Security Class |
-| `ListedDerivativeQuotation` | `CHAR(1)` | Listed Derivative Quotation |
-| `ListedDerivativeCategory` | `NUMC(2)` | Options/futures category |
-| `OptionPutCallCode` | `NUMC(1)` | Put/Call Indicator |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `LstdDerivative1stQuotationDate` | `DATS(8)` | First Quotation Date |
-| `LstdDerivativeLastQuotationDte` | `DATS(8)` | First Quotation Date |
-| `ListedDerivativeSettlementDate` | `DATS(8)` | Settlement Date |
-| `ListedDerivativeTermEndDate` | `DATS(8)` | End of Term |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityClass` |  | |  |  | `CHAR(13)` | Security Class |
+| `ListedDerivativeQuotation` |  | |  |  | `CHAR(1)` | Listed Derivative Quotation |
+| `ListedDerivativeCategory` |  | |  |  | `NUMC(2)` | Options/futures category |
+| `OptionPutCallCode` |  | |  |  | `NUMC(1)` | Put/Call Indicator |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `LstdDerivative1stQuotationDate` |  | |  |  | `DATS(8)` | First Quotation Date |
+| `LstdDerivativeLastQuotationDte` |  | |  |  | `DATS(8)` | First Quotation Date |
+| `ListedDerivativeSettlementDate` |  | |  |  | `DATS(8)` | Settlement Date |
+| `ListedDerivativeTermEndDate` |  | |  |  | `DATS(8)` | End of Term |

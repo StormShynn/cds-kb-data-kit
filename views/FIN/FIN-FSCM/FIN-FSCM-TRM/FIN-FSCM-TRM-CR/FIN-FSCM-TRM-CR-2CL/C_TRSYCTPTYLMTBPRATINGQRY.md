@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerRatingProcedure` | `CHAR(10)` | Rating Procedure |
-| `BusinessPartnerRatingGrade` | `CHAR(10)` | Rating |
-| `BusinessPartnerRatingTrend` | `CHAR(2)` | Trend |
-| `NumberOfRecords` | `INT4(10)` | Number of Records |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerRatingProcedure` |  | |  |  | `CHAR(10)` | Rating Procedure |
+| `BusinessPartnerRatingGrade` |  | |  |  | `CHAR(10)` | Rating |
+| `BusinessPartnerRatingTrend` |  | |  |  | `CHAR(2)` | Trend |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Records |

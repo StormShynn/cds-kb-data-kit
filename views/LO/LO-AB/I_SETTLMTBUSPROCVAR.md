@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtBusProcVar` | `CHAR(4)` | Settlement Management Process Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtBusProcVar` |  | |  |  | `CHAR(4)` | Settlement Management Process Category |

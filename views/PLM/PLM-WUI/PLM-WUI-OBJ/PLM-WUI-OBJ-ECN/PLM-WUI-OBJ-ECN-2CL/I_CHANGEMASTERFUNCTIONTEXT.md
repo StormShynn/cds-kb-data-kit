@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumberFunction` | `CHAR(1)` | Change number function |
-| `Language` | `LANG(1)` | Language Key |
-| `ChangeNumberFunctionText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberFunction` |  | |  |  | `CHAR(1)` | Change number function |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ChangeNumberFunctionText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

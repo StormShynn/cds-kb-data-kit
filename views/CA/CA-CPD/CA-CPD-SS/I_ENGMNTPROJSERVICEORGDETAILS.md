@@ -36,17 +36,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `EngmtProjServiceOrgIsSales` | `CHAR(1)` | Sales Org |
-| `EngmtProjServiceOrgIsDelivery` | `CHAR(1)` | Delivery Organization |
-| `RestrictedTimePosting` | `CHAR(1)` | Restrict Unstaffed Posting |
-| `EngmntProjectCompanyCode` | `CHAR(20)` |  |
-| `EngagementProjectCtrlgArea` | `CHAR(20)` |  |
-| `EngagementProjectSalesOrg` | `CHAR(20)` |  |
-| `EngagementProjectDistrChnl` | `CHAR(20)` |  |
-| `EngagementProjectDivision` | `CHAR(20)` |  |
-| `EngagementProjectPurchasingOrg` | `CHAR(20)` |  |
-| `EngagementProjectPlant` | `CHAR(20)` |  |
-| `ServiceOrgDefaultCostCenter` | `CHAR(20)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `EngmtProjServiceOrgIsSales` |  | |  |  | `CHAR(1)` | Sales Org |
+| `EngmtProjServiceOrgIsDelivery` |  | |  |  | `CHAR(1)` | Delivery Organization |
+| `RestrictedTimePosting` |  | |  |  | `CHAR(1)` | Restrict Unstaffed Posting |
+| `EngmntProjectCompanyCode` |  | |  |  | `CHAR(20)` |  |
+| `EngagementProjectCtrlgArea` |  | |  |  | `CHAR(20)` |  |
+| `EngagementProjectSalesOrg` |  | |  |  | `CHAR(20)` |  |
+| `EngagementProjectDistrChnl` |  | |  |  | `CHAR(20)` |  |
+| `EngagementProjectDivision` |  | |  |  | `CHAR(20)` |  |
+| `EngagementProjectPurchasingOrg` |  | |  |  | `CHAR(20)` |  |
+| `EngagementProjectPlant` |  | |  |  | `CHAR(20)` |  |
+| `ServiceOrgDefaultCostCenter` |  | |  |  | `CHAR(20)` |  |

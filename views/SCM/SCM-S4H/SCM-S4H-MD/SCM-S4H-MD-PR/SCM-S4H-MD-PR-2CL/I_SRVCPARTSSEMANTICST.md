@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `SCMSemantics` | `CHAR(30)` | TSDM Mapping: Semantics |
-| `SCMSemanticsText` | `CHAR(40)` | TSDM Mapping: Text for Semantic |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SCMSemantics` |  | |  |  | `CHAR(30)` | TSDM Mapping: Semantics |
+| `SCMSemanticsText` |  | |  |  | `CHAR(40)` | TSDM Mapping: Text for Semantic |

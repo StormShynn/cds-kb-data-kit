@@ -35,25 +35,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Product` | `CHAR(40)` | Product |
-| `Plant` | `CHAR(4)` | Plant |
-| `ESPPIsUsed` | `CHAR(1)` | Usage in Extended Service Parts Planning |
-| `ProductAlertRelevanceCode` | `CHAR(1)` | Alert Relevance of Product |
-| `LocProdGoodsReceiptProcHours` | `DEC(11)` | Goods Receipt Processing Time |
-| `LocProdGoodsIssueProcHours` | `DEC(11)` | Goods Issue Processing Time |
-| `SrvcPartsThroughputTimeDurn` | `DEC(11)` | Service Parts Throughput Time |
-| `ThirdPartyOrderProcessing` | `CHAR(2)` | Third-Party Order Processing |
-| `ParLocSafetyStockQuantity` | `QUAN(13)` | Safety Stock at Parent Location |
-| `RepairSafetyStockQuantity` | `QUAN(13)` | Repair Safety Stock |
-| `VCLSafetyStockQuantity` | `QUAN(13)` | Safety Stock for Virtual Child Location |
-| `VCLParLocSafetyStockQuantity` | `QUAN(13)` | Safety Stock of Parent Location Virtual Child Location |
-| `VCLRepairSafetyStockQuantity` | `QUAN(13)` | Repair Safety Stock for Virtual Child Location |
-| `VCLReorderPointQuantity` | `QUAN(13)` | Reorder Point for Virtual Child Location |
-| `VCLMaximumStockQuantity` | `QUAN(13)` | Maximum Stock Level for Virtual Child Locations |
-| `CostFactorForStockHoldingVal` | `DEC(3)` | Cost Factor for Stockholding Costs |
-| `ProductProcurementCostsVal` | `DEC(13)` | Procurement Costs for Product |
-| `GoodsReceiptHandlingCost` | `DEC(13)` | Goods Receiving Costs |
-| `GoodsIssueHandlingCost` | `DEC(13)` | Goods Issue Costs |
-| `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ESPPIsUsed` |  | |  |  | `CHAR(1)` | Usage in Extended Service Parts Planning |
+| `ProductAlertRelevanceCode` |  | |  |  | `CHAR(1)` | Alert Relevance of Product |
+| `LocProdGoodsReceiptProcHours` |  | |  |  | `DEC(11)` | Goods Receipt Processing Time |
+| `LocProdGoodsIssueProcHours` |  | |  |  | `DEC(11)` | Goods Issue Processing Time |
+| `SrvcPartsThroughputTimeDurn` |  | |  |  | `DEC(11)` | Service Parts Throughput Time |
+| `ThirdPartyOrderProcessing` |  | |  |  | `CHAR(2)` | Third-Party Order Processing |
+| `ParLocSafetyStockQuantity` |  | |  |  | `QUAN(13)` | Safety Stock at Parent Location |
+| `RepairSafetyStockQuantity` |  | |  |  | `QUAN(13)` | Repair Safety Stock |
+| `VCLSafetyStockQuantity` |  | |  |  | `QUAN(13)` | Safety Stock for Virtual Child Location |
+| `VCLParLocSafetyStockQuantity` |  | |  |  | `QUAN(13)` | Safety Stock of Parent Location Virtual Child Location |
+| `VCLRepairSafetyStockQuantity` |  | |  |  | `QUAN(13)` | Repair Safety Stock for Virtual Child Location |
+| `VCLReorderPointQuantity` |  | |  |  | `QUAN(13)` | Reorder Point for Virtual Child Location |
+| `VCLMaximumStockQuantity` |  | |  |  | `QUAN(13)` | Maximum Stock Level for Virtual Child Locations |
+| `CostFactorForStockHoldingVal` |  | |  |  | `DEC(3)` | Cost Factor for Stockholding Costs |
+| `ProductProcurementCostsVal` |  | |  |  | `DEC(13)` | Procurement Costs for Product |
+| `GoodsReceiptHandlingCost` |  | |  |  | `DEC(13)` | Goods Receiving Costs |
+| `GoodsIssueHandlingCost` |  | |  |  | `DEC(13)` | Goods Issue Costs |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |

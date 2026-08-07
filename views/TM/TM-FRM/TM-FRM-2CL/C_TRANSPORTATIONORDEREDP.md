@@ -34,22 +34,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TransportationOrderUUID` | `RAW(16)` | Transportation Order UUID |
-| `TransportationOrder` | `CHAR(20)` | Transportation Order |
-| `TransportationOrderCatDesc` | `CHAR(60)` | Transportation Order Category Description |
-| `TranspShipperFullName` | `CHAR(80)` | Full Name of Person |
-| `TranspShipperCityName` | `CHAR(40)` | City |
-| `TranspShipperPostalCode` | `CHAR(10)` | City Postal Code |
-| `TranspShipperStreetName` | `CHAR(60)` | Street |
-| `TranspShipperHouseNumber` | `CHAR(10)` | House Number |
-| `ShipperCountry` | `CHAR(3)` | Country/Region Key |
-| `ShipperRegion` | `CHAR(3)` | Region (State, Province, County) |
-| `ShipperNormalizedAddressID` | `CHAR(10)` | Address Number |
-| `TransportationOrderCategory` | `CHAR(2)` | Transportation Order Category |
-| `TransportationOrderType` | `CHAR(4)` | Transportation Order Type |
-| `TranspPurgOrg` | `CHAR(4)` | Purchasing Organization |
-| `TranspPurgGroup` | `CHAR(3)` | Purchasing Group |
-| `TranspOrdResponsiblePerson` | `CHAR(12)` | Person Responsible |
-| `TransportationMode` | `CHAR(2)` | Transportation Mode |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderUUID` |  | |  |  | `RAW(16)` | Transportation Order UUID |
+| `TransportationOrder` |  | |  |  | `CHAR(20)` | Transportation Order |
+| `TransportationOrderCatDesc` |  | |  |  | `CHAR(60)` | Transportation Order Category Description |
+| `TranspShipperFullName` |  | |  |  | `CHAR(80)` | Full Name of Person |
+| `TranspShipperCityName` |  | |  |  | `CHAR(40)` | City |
+| `TranspShipperPostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
+| `TranspShipperStreetName` |  | |  |  | `CHAR(60)` | Street |
+| `TranspShipperHouseNumber` |  | |  |  | `CHAR(10)` | House Number |
+| `ShipperCountry` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `ShipperRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ShipperNormalizedAddressID` |  | |  |  | `CHAR(10)` | Address Number |
+| `TransportationOrderCategory` |  | |  |  | `CHAR(2)` | Transportation Order Category |
+| `TransportationOrderType` |  | |  |  | `CHAR(4)` | Transportation Order Type |
+| `TranspPurgOrg` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `TranspPurgGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `TranspOrdResponsiblePerson` |  | |  |  | `CHAR(12)` | Person Responsible |
+| `TransportationMode` |  | |  |  | `CHAR(2)` | Transportation Mode |

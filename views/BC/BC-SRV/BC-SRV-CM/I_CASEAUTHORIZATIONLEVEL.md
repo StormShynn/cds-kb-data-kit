@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseAuthorizationLevel` | `CHAR(1)` | Authorization level |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseAuthorizationLevel` |  | |  |  | `CHAR(1)` | Authorization level |

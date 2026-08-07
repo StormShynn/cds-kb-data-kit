@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FrtCostAllocRefDocCat` | `CHAR(2)` | Reference Document Category in Settlement Management |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FrtCostAllocRefDocCat` |  | |  |  | `CHAR(2)` | Reference Document Category in Settlement Management |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

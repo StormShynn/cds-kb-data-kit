@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtDocItemCat` | `CHAR(1)` | Item Category |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtMgmtDocItemCatName` | `CHAR(60)` | Item Category Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtDocItemCat` |  | |  |  | `CHAR(1)` | Item Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtMgmtDocItemCatName` |  | |  |  | `CHAR(60)` | Item Category Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

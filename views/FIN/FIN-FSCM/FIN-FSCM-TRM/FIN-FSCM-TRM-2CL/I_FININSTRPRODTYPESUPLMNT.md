@@ -35,13 +35,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `TreasurySettlementType` | `CHAR(1)` | Settlement Indicator |
-| `OptionExerciseType` | `NUMC(1)` | Exercise Type (American or European) |
-| `TradeFinanceCategory` | `CHAR(1)` | Trade Finance Category |
-| `OptionUnderlyingProductType` | `CHAR(3)` | Underlying Product Type of the Option |
-| `OptionUndrlgTransactionType` | `CHAR(3)` | Transaction Type of Underlying |
-| `IntrstRateSwapIsCrossCurrency` | `CHAR(1)` | Indicator: Currency swap |
-| `ProductTypeCashFlowCalculation` | `CHAR(2)` | Cash Flow Calculation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `TreasurySettlementType` |  | |  |  | `CHAR(1)` | Settlement Indicator |
+| `OptionExerciseType` |  | |  |  | `NUMC(1)` | Exercise Type (American or European) |
+| `TradeFinanceCategory` |  | |  |  | `CHAR(1)` | Trade Finance Category |
+| `OptionUnderlyingProductType` |  | |  |  | `CHAR(3)` | Underlying Product Type of the Option |
+| `OptionUndrlgTransactionType` |  | |  |  | `CHAR(3)` | Transaction Type of Underlying |
+| `IntrstRateSwapIsCrossCurrency` |  | |  |  | `CHAR(1)` | Indicator: Currency swap |
+| `ProductTypeCashFlowCalculation` |  | |  |  | `CHAR(2)` | Cash Flow Calculation |

@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentReportingSourceCode` | `CHAR(2)` | Incident Reporting Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentReportingSourceCode` |  | |  |  | `CHAR(2)` | Incident Reporting Source |

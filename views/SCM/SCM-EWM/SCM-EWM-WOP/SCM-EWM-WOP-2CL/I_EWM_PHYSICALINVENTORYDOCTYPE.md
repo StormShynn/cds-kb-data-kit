@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PhysicalInventoryDocumentType` | `CHAR(2)` | Physical Inventory Procedure (Document Type of Phys. Inv.) |
-| `PhysInventoryProcessCategory` | `CHAR(1)` | Physical Inventory Process Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PhysicalInventoryDocumentType` |  | |  |  | `CHAR(2)` | Physical Inventory Procedure (Document Type of Phys. Inv.) |
+| `PhysInventoryProcessCategory` |  | |  |  | `CHAR(1)` | Physical Inventory Process Category |

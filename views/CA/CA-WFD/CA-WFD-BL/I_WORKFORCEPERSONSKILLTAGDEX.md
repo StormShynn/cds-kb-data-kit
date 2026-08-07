@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CentralPerson` | `NUMC(8)` | Central Person Workforce Assignment ID |
-| `WorkforcePersonSkillTagID` | `RAW(16)` | GUID in 'RAW' format |
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralPerson` |  | |  |  | `NUMC(8)` | Central Person Workforce Assignment ID |
+| `WorkforcePersonSkillTagID` |  | |  |  | `RAW(16)` | GUID in 'RAW' format |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |

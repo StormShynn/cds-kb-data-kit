@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `GenericPriorityType` | `CHAR(2)` | Priority Type |
-| `PriorityCode` | `CHAR(1)` | Priority |
-| `GenericPriorityDesc` | `CHAR(20)` | Priority Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GenericPriorityType` |  | |  |  | `CHAR(2)` | Priority Type |
+| `PriorityCode` |  | |  |  | `CHAR(1)` | Priority |
+| `GenericPriorityDesc` |  | |  |  | `CHAR(20)` | Priority Text |

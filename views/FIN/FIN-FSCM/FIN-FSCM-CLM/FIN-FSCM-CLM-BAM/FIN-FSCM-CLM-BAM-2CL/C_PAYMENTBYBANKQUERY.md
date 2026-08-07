@@ -35,14 +35,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` | `CHAR(15)` | Bank Key |
-| `TransactionDate` | `DATS(8)` | Transaction Date |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `InAmountInDisplayCurrency` | `CURR(23)` |  |
-| `OutAmountInDisplayCurrency` | `CURR(23)` |  |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `AmountInDisplayCurrency` | `CURR(23)` |  |
-| `CreditRating` | `CHAR(3)` | Rating |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Key |
+| `TransactionDate` |  | |  |  | `DATS(8)` | Transaction Date |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `InAmountInDisplayCurrency` |  | |  |  | `CURR(23)` |  |
+| `OutAmountInDisplayCurrency` |  | |  |  | `CURR(23)` |  |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` |  |
+| `CreditRating` |  | |  |  | `CHAR(3)` | Rating |

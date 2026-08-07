@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AssortmentType` | `CHAR(4)` | Assortment Type |
-| `AssortmentDimension1` | `CHAR(2)` | Assortment Dimension |
-| `AssortmentDimension2` | `CHAR(2)` | Assortment Dimension |
-| `AssortmentDimension3` | `CHAR(2)` | Assortment Dimension |
-| `AsrtAsgtToLaytMdlIsPosbl` | `CHAR(1)` | Flag: Assortment Can Be Assigned Layout Module |
-| `LaytMdlIsCrtedAutomly` | `CHAR(1)` | Flag: Create Layout Module Automatically |
-| `LaytMdlIsNotRdyForInpt` | `CHAR(1)` | Indicator: Field Layout Module Not Ready for Input |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AssortmentType` |  | |  |  | `CHAR(4)` | Assortment Type |
+| `AssortmentDimension1` |  | |  |  | `CHAR(2)` | Assortment Dimension |
+| `AssortmentDimension2` |  | |  |  | `CHAR(2)` | Assortment Dimension |
+| `AssortmentDimension3` |  | |  |  | `CHAR(2)` | Assortment Dimension |
+| `AsrtAsgtToLaytMdlIsPosbl` |  | |  |  | `CHAR(1)` | Flag: Assortment Can Be Assigned Layout Module |
+| `LaytMdlIsCrtedAutomly` |  | |  |  | `CHAR(1)` | Flag: Create Layout Module Automatically |
+| `LaytMdlIsNotRdyForInpt` |  | |  |  | `CHAR(1)` | Indicator: Field Layout Module Not Ready for Input |

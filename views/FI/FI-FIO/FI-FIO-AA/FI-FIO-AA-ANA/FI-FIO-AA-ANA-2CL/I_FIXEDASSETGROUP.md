@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FixedAssetGroup` | `CHAR(12)` | Asset Super Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FixedAssetGroup` |  | |  |  | `CHAR(12)` | Asset Super Number |

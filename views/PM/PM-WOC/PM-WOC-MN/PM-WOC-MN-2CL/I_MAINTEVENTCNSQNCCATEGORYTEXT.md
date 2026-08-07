@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `MaintEventCnsqncCategoryCode` | `NUMC(2)` | Consequence Category ID |
-| `MaintEventCnsqncCategoryTitle` | `CHAR(40)` | Consequence Category Title |
-| `MaintEvtCnsqncCategorySubTitle` | `CHAR(40)` | Consequence Category Subtitle |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MaintEventCnsqncCategoryCode` |  | |  |  | `NUMC(2)` | Consequence Category ID |
+| `MaintEventCnsqncCategoryTitle` |  | |  |  | `CHAR(40)` | Consequence Category Title |
+| `MaintEvtCnsqncCategorySubTitle` |  | |  |  | `CHAR(40)` | Consequence Category Subtitle |

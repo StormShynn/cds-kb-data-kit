@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ReportingAgencyLease` | `CHAR(7)` | Kansas Lease Number |
-| `ReportingAgencyLeaseName` | `CHAR(50)` | Kansas Lease Name |
-| `LeaseType` | `CHAR(1)` | Kansas Lease Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReportingAgencyLease` |  | |  |  | `CHAR(7)` | Kansas Lease Number |
+| `ReportingAgencyLeaseName` |  | |  |  | `CHAR(50)` | Kansas Lease Name |
+| `LeaseType` |  | |  |  | `CHAR(1)` | Kansas Lease Type |

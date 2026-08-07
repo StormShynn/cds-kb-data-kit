@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `County` | `CHAR(3)` | County Code |
-| `Language` | `LANG(1)` | Language Key |
-| `CountyName` | `CHAR(20)` | County Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `County` |  | |  |  | `CHAR(3)` | County Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CountyName` |  | |  |  | `CHAR(20)` | County Name |

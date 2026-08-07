@@ -35,27 +35,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConditionContract` | `CHAR(10)` | Condition Contract |
-| `SettlmtDoc` | `CHAR(10)` | Settlement Document Number |
-| `SettlmtDocItem` | `NUMC(6)` | Document Item |
-| `SetldBusVolDocCategory` | `CHAR(2)` | Settled Business Volume Document Type |
-| `SettledBillgDoc` | `CHAR(10)` | Billing Document Settled as Business Volume Document |
-| `SettledBillgDocItem` | `NUMC(6)` | Item of a Settled Billing Document |
-| `BusVolSelDteForSettlmt` | `DATS(8)` | Date for Settlement |
-| `SettledBusVolQty` | `QUAN(13)` | Quantity |
-| `SettledBusVolQtyUnit` | `UNIT(3)` | Unit of measure |
-| `SettledBusVolAmount1` | `CURR(13)` | Business Volume 1 |
-| `SettledBusVolAmount2` | `CURR(13)` | Business Volume 2 |
-| `SettledBusVolAmount3` | `CURR(13)` | Business Volume 3 |
-| `SettledBusVolAmount4` | `CURR(13)` | Business Volume 4 |
-| `SettledBusVolNetWeight` | `QUAN(13)` | Net Weight |
-| `SettledBusVolGrossWeight` | `QUAN(13)` | Gross Weight |
-| `SettledBusVolWeightUnit` | `UNIT(3)` | Unit of Weight |
-| `SettledBusVolVolume` | `QUAN(13)` | Volume |
-| `SettledBusVolVolumeUnit` | `UNIT(3)` | Volume Unit |
-| `SettledBusVolPointsQty` | `QUAN(13)` | Number of Points |
-| `SettledBusVolPointsQtyUnit` | `UNIT(3)` | Points Unit |
-| `SettlmtDocType` | `CHAR(4)` | Settlement Document Type |
-| `BusVolDocCurrency` | `CUKY(5)` | Currency Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionContract` |  | |  |  | `CHAR(10)` | Condition Contract |
+| `SettlmtDoc` |  | |  |  | `CHAR(10)` | Settlement Document Number |
+| `SettlmtDocItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `SetldBusVolDocCategory` |  | |  |  | `CHAR(2)` | Settled Business Volume Document Type |
+| `SettledBillgDoc` |  | |  |  | `CHAR(10)` | Billing Document Settled as Business Volume Document |
+| `SettledBillgDocItem` |  | |  |  | `NUMC(6)` | Item of a Settled Billing Document |
+| `BusVolSelDteForSettlmt` |  | |  |  | `DATS(8)` | Date for Settlement |
+| `SettledBusVolQty` |  | |  |  | `QUAN(13)` | Quantity |
+| `SettledBusVolQtyUnit` |  | |  |  | `UNIT(3)` | Unit of measure |
+| `SettledBusVolAmount1` |  | |  |  | `CURR(13)` | Business Volume 1 |
+| `SettledBusVolAmount2` |  | |  |  | `CURR(13)` | Business Volume 2 |
+| `SettledBusVolAmount3` |  | |  |  | `CURR(13)` | Business Volume 3 |
+| `SettledBusVolAmount4` |  | |  |  | `CURR(13)` | Business Volume 4 |
+| `SettledBusVolNetWeight` |  | |  |  | `QUAN(13)` | Net Weight |
+| `SettledBusVolGrossWeight` |  | |  |  | `QUAN(13)` | Gross Weight |
+| `SettledBusVolWeightUnit` |  | |  |  | `UNIT(3)` | Unit of Weight |
+| `SettledBusVolVolume` |  | |  |  | `QUAN(13)` | Volume |
+| `SettledBusVolVolumeUnit` |  | |  |  | `UNIT(3)` | Volume Unit |
+| `SettledBusVolPointsQty` |  | |  |  | `QUAN(13)` | Number of Points |
+| `SettledBusVolPointsQtyUnit` |  | |  |  | `UNIT(3)` | Points Unit |
+| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
+| `BusVolDocCurrency` |  | |  |  | `CUKY(5)` | Currency Key |

@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OverrideOwnerOperatedType` | `CHAR(1)` | Royalty 2.0 - WY - Override Operated Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverrideOwnerOperatedType` |  | |  |  | `CHAR(1)` | Royalty 2.0 - WY - Override Operated Flag |

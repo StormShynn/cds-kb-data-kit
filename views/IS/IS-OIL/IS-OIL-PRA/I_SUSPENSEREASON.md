@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuspenseReason` | `CHAR(3)` | Suspense Reason Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuspenseReason` |  | |  |  | `CHAR(3)` | Suspense Reason Code |

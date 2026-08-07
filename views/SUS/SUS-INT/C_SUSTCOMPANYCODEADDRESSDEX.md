@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `AddressID` | `CHAR(10)` | Address |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `CityName` | `CHAR(40)` | City |
-| `PostalCode` | `CHAR(10)` | City Postal Code |
-| `StreetName` | `CHAR(60)` | Street |
-| `HouseNumber` | `CHAR(10)` | House Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `AddressID` |  | |  |  | `CHAR(10)` | Address |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `CityName` |  | |  |  | `CHAR(40)` | City |
+| `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
+| `StreetName` |  | |  |  | `CHAR(60)` | Street |
+| `HouseNumber` |  | |  |  | `CHAR(10)` | House Number |

@@ -36,14 +36,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Store` | `CHAR(4)` | Retail plant |
-| `StoreStockAdhocCountUUID` | `RAW(16)` | Unique identifier for New Store Stock Ad hoc Count |
-| `StorageLocation` | `CHAR(4)` | Storage Location |
-| `StoreStockAdhocCntStatus` | `CHAR(2)` | Store Stock Ad hoc Count processing status |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDateTime` | `DEC(21)` | Creation date and time of stock count |
-| `LastChangedByUser` | `CHAR(12)` | User Who Last Changed the Business Document |
-| `LastChangeDateTime` | `DEC(21)` | Changed date and time |
-| `LastChangeDate` | `DATS(8)` | Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Store` |  | |  |  | `CHAR(4)` | Retail plant |
+| `StoreStockAdhocCountUUID` |  | |  |  | `RAW(16)` | Unique identifier for New Store Stock Ad hoc Count |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `StoreStockAdhocCntStatus` |  | |  |  | `CHAR(2)` | Store Stock Ad hoc Count processing status |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDateTime` |  | |  |  | `DEC(21)` | Creation date and time of stock count |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | User Who Last Changed the Business Document |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | Changed date and time |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date |

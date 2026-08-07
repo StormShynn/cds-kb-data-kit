@@ -33,37 +33,37 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialStatementItem` | `CHAR(10)` | Financial Statement Item |
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationUnit` | `CHAR(18)` | Consolidation Unit |
-| `SubItemCategory` | `CHAR(3)` | Subitem Category |
-| `SubItem` | `CHAR(10)` | Subitem |
-| `PartnerConsolidationUnit` | `CHAR(18)` | Partner Unit |
-| `PostingLevel` | `CHAR(2)` | Posting Level |
-| `CurrencyConversionsDiffType` | `NUMC(1)` | Currency Translation |
-| `ConsolidationDocumentType` | `CHAR(2)` | Document Type |
-| `ActualYTDAmountInGroupCrcy1` | `CURR(23)` | Cumulative Value in Group Currency |
-| `ActualYTDAmountInGroupCrcy2` | `CURR(23)` | Cumulative Value in Group Currency |
-| `ActualAmountInGroupCrcy` | `INT1(3)` |  |
-| `BudgetYTDAmountInGrpCurrency1` | `CURR(23)` | Cumulative Value in Group Currency |
-| `BudgetYTDAmountInGrpCurrency2` | `CURR(23)` | Cumulative Value in Group Currency |
-| `BudgetAmountInGroupCurrency` | `INT1(3)` |  |
-| `BdgtExchRateAmtInGrpCurrency1` | `CURR(23)` | Cumulative Value in Group Currency |
-| `BdgtExchRateAmtInGrpCurrency2` | `CURR(23)` | Cumulative Value in Group Currency |
-| `BdgtExchRateAmtInGroupCurrency` | `INT1(3)` |  |
-| `OverAllVarianceAmountInGrpCrcy` | `INT1(3)` |  |
-| `OverAllVarianceRate` | `INT1(3)` |  |
-| `ExchRateDrivenVarcAmtInGrpCrcy` | `INT1(3)` |  |
-| `ExchangeRateDrivenVarianceRate` | `INT1(3)` |  |
-| `OperationalVarcAmtInGrpCrcy` | `INT1(3)` |  |
-| `OperationalVarianceRate` | `INT1(3)` |  |
-| `GroupCurrency` | `CUKY(5)` | Group Currency |
-| `ConsolidationGroup` | `CHAR(18)` | Consolidation Group |
-| `FiscalYear` | `NUMC(4)` |  |
-| `FiscalPeriod` | `NUMC(3)` |  |
-| `PreviousPeriodBackShift1` | `NUMC(3)` |  |
-| `ConsolidationVersion` | `CHAR(3)` |  |
-| `ConsolidationChartOfAccounts` | `CHAR(2)` |  |
-| `FinancialStatementItemHier` | `CHAR(10)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `SubItemCategory` |  | |  |  | `CHAR(3)` | Subitem Category |
+| `SubItem` |  | |  |  | `CHAR(10)` | Subitem |
+| `PartnerConsolidationUnit` |  | |  |  | `CHAR(18)` | Partner Unit |
+| `PostingLevel` |  | |  |  | `CHAR(2)` | Posting Level |
+| `CurrencyConversionsDiffType` |  | |  |  | `NUMC(1)` | Currency Translation |
+| `ConsolidationDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `ActualYTDAmountInGroupCrcy1` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `ActualYTDAmountInGroupCrcy2` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `ActualAmountInGroupCrcy` |  | |  |  | `INT1(3)` |  |
+| `BudgetYTDAmountInGrpCurrency1` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `BudgetYTDAmountInGrpCurrency2` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `BudgetAmountInGroupCurrency` |  | |  |  | `INT1(3)` |  |
+| `BdgtExchRateAmtInGrpCurrency1` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `BdgtExchRateAmtInGrpCurrency2` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `BdgtExchRateAmtInGroupCurrency` |  | |  |  | `INT1(3)` |  |
+| `OverAllVarianceAmountInGrpCrcy` |  | |  |  | `INT1(3)` |  |
+| `OverAllVarianceRate` |  | |  |  | `INT1(3)` |  |
+| `ExchRateDrivenVarcAmtInGrpCrcy` |  | |  |  | `INT1(3)` |  |
+| `ExchangeRateDrivenVarianceRate` |  | |  |  | `INT1(3)` |  |
+| `OperationalVarcAmtInGrpCrcy` |  | |  |  | `INT1(3)` |  |
+| `OperationalVarianceRate` |  | |  |  | `INT1(3)` |  |
+| `GroupCurrency` |  | |  |  | `CUKY(5)` | Group Currency |
+| `ConsolidationGroup` |  | |  |  | `CHAR(18)` | Consolidation Group |
+| `FiscalYear` |  | |  |  | `NUMC(4)` |  |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` |  |
+| `PreviousPeriodBackShift1` |  | |  |  | `NUMC(3)` |  |
+| `ConsolidationVersion` |  | |  |  | `CHAR(3)` |  |
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` |  |
+| `FinancialStatementItemHier` |  | |  |  | `CHAR(10)` |  |

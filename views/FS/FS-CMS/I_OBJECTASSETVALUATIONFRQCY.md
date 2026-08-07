@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetValuationFrequency` | `CHAR(2)` | Indicator: Units of time for revaluation of an asset |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetValuationFrequency` |  | |  |  | `CHAR(2)` | Indicator: Units of time for revaluation of an asset |

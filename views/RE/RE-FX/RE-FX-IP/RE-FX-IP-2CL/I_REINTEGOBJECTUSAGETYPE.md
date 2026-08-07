@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `REIntegObjectUsageType` | `CHAR(4)` | Object Usage Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REIntegObjectUsageType` |  | |  |  | `CHAR(4)` | Object Usage Type |

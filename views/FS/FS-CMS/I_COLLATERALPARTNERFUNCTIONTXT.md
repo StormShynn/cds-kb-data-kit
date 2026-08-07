@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralPartnerFunction` | `CHAR(6)` | Business Partner Function |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralPartnerFunctionTxt` | `CHAR(40)` | Business Partner Function Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralPartnerFunction` |  | |  |  | `CHAR(6)` | Business Partner Function |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralPartnerFunctionTxt` |  | |  |  | `CHAR(40)` | Business Partner Function Name |

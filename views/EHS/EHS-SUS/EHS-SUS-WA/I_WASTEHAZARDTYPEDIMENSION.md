@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EnvrmtWasteHazardCharcID` | `CHAR(2)` | Waste Type ID |
-| `EnvrmtWasteHazardCharcName` | `CHAR(100)` | Waste Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EnvrmtWasteHazardCharcID` |  | |  |  | `CHAR(2)` | Waste Type ID |
+| `EnvrmtWasteHazardCharcName` |  | |  |  | `CHAR(100)` | Waste Type Description |

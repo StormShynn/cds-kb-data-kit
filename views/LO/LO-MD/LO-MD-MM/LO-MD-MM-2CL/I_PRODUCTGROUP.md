@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaterialGroup` | `CHAR(9)` | Product Group |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |

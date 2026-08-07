@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyID` | `CHAR(42)` | Hierarchy ID |
-| `HierarchyType` | `CHAR(4)` | Hierarchy Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyID` |  | |  |  | `CHAR(42)` | Hierarchy ID |
+| `HierarchyType` |  | |  |  | `CHAR(4)` | Hierarchy Type |

@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AgreementFrequencyUnit` | `CHAR(2)` | The unit for period of Release Frequency |
-| `AgreementFrequencyUnitText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgreementFrequencyUnit` |  | |  |  | `CHAR(2)` | The unit for period of Release Frequency |
+| `AgreementFrequencyUnitText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

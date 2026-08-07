@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesDeal` | `CHAR(10)` | Agreement (various conditions grouped together) |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SalesDealType` | `CHAR(4)` | Agreement type |
-| `SalesDealValidityStartDate` | `DATS(8)` | Agreement valid-from date |
-| `SalesDealValidityEndDate` | `DATS(8)` | Agreement valid-to date |
-| `SalesDealDescription` | `CHAR(40)` | Description of agreement (e.g. sales deal, promotion) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesDeal` |  | |  |  | `CHAR(10)` | Agreement (various conditions grouped together) |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesDealType` |  | |  |  | `CHAR(4)` | Agreement type |
+| `SalesDealValidityStartDate` |  | |  |  | `DATS(8)` | Agreement valid-from date |
+| `SalesDealValidityEndDate` |  | |  |  | `DATS(8)` | Agreement valid-to date |
+| `SalesDealDescription` |  | |  |  | `CHAR(40)` | Description of agreement (e.g. sales deal, promotion) |

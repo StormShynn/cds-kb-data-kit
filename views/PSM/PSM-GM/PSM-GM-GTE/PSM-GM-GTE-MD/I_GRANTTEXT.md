@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `Language` | `LANG(1)` | Language Key |
-| `GrantName` | `CHAR(20)` | Short Description of the Grant |
-| `GrantDescription` | `CHAR(80)` | Descriptive Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GrantName` |  | |  |  | `CHAR(20)` | Short Description of the Grant |
+| `GrantDescription` |  | |  |  | `CHAR(80)` | Descriptive Text |

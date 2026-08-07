@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `Language` | `LANG(1)` | Language Key |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `CostCenterName` | `CHAR(20)` | Cost Center Name |
-| `CostCenterDescription` | `CHAR(40)` | Description of Cost Center |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCenterName` |  | |  |  | `CHAR(20)` | Cost Center Name |
+| `CostCenterDescription` |  | |  |  | `CHAR(40)` | Description of Cost Center |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |

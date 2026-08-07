@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtPartnerCat` | `CHAR(1)` | Settlement Partner Category |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtPartnerCatName` | `CHAR(60)` | Description of Settlement Partner Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtPartnerCat` |  | |  |  | `CHAR(1)` | Settlement Partner Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtPartnerCatName` |  | |  |  | `CHAR(60)` | Description of Settlement Partner Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

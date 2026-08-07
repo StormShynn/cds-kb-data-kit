@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMPhysicalInventoryPriority` | `NUMC(1)` | Priority |
-| `PInvPriorityText` | `CHAR(12)` | Priority Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMPhysicalInventoryPriority` |  | |  |  | `NUMC(1)` | Priority |
+| `PInvPriorityText` |  | |  |  | `CHAR(12)` | Priority Description |

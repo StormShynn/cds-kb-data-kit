@@ -34,22 +34,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChmlCmplncInfoUUID` | `RAW(16)` | Chemical Compliance Information |
-| `ProdStewardshipRespUnit` | `CHAR(10)` | Responsible Unit |
-| `DngrsGdsRespUnit` | `CHAR(10)` | Responsible Unit for Dangerous Goods |
-| `ChmlCmplncInfoType` | `CHAR(2)` | CCI Type |
-| `ChmlCmplncInternalName` | `CHAR(132)` | Internal Name |
-| `MaterialIsBaseProduct` | `CHAR(1)` | Material is Base Product (obsolete) |
-| `MaterialIsSold` | `CHAR(1)` | Product is Sold |
-| `MaterialIsTransported` | `CHAR(1)` | Product is Transported |
-| `MaterialIsSourced` | `CHAR(1)` | Product is Sourced |
-| `MaterialIsProduced` | `CHAR(1)` | Product is Produced |
-| `MaterialIsDisposed` | `CHAR(1)` | Product is Disposed |
-| `MaterialIsEmissionRelevant` | `CHAR(1)` | Product is Emission Relevant |
-| `Specification` | `CHAR(12)` | Internal Number |
-| `SpecificationInternalID` | `NUMC(20)` | Sequential Number of Data Record |
-| `ChmlCmplncProdIsResearched` | `CHAR(1)` | Research and Development Sample |
-| `ChmlCmplncMatlAssgmtUUID` | `RAW(16)` | Product Assignment |
-| `Material` | `CHAR(40)` | Product |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChmlCmplncInfoUUID` |  | |  |  | `RAW(16)` | Chemical Compliance Information |
+| `ProdStewardshipRespUnit` |  | |  |  | `CHAR(10)` | Responsible Unit |
+| `DngrsGdsRespUnit` |  | |  |  | `CHAR(10)` | Responsible Unit for Dangerous Goods |
+| `ChmlCmplncInfoType` |  | |  |  | `CHAR(2)` | CCI Type |
+| `ChmlCmplncInternalName` |  | |  |  | `CHAR(132)` | Internal Name |
+| `MaterialIsBaseProduct` |  | |  |  | `CHAR(1)` | Material is Base Product (obsolete) |
+| `MaterialIsSold` |  | |  |  | `CHAR(1)` | Product is Sold |
+| `MaterialIsTransported` |  | |  |  | `CHAR(1)` | Product is Transported |
+| `MaterialIsSourced` |  | |  |  | `CHAR(1)` | Product is Sourced |
+| `MaterialIsProduced` |  | |  |  | `CHAR(1)` | Product is Produced |
+| `MaterialIsDisposed` |  | |  |  | `CHAR(1)` | Product is Disposed |
+| `MaterialIsEmissionRelevant` |  | |  |  | `CHAR(1)` | Product is Emission Relevant |
+| `Specification` |  | |  |  | `CHAR(12)` | Internal Number |
+| `SpecificationInternalID` |  | |  |  | `NUMC(20)` | Sequential Number of Data Record |
+| `ChmlCmplncProdIsResearched` |  | |  |  | `CHAR(1)` | Research and Development Sample |
+| `ChmlCmplncMatlAssgmtUUID` |  | |  |  | `RAW(16)` | Product Assignment |
+| `Material` |  | |  |  | `CHAR(40)` | Product |

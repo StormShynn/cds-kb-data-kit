@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `Language` | `LANG(1)` | Language Key |
-| `ConsolidationDimensionText` | `CHAR(15)` | Short Text |
-| `ConsolidationDimensionMdmText` | `CHAR(30)` | Medium Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConsolidationDimensionText` |  | |  |  | `CHAR(15)` | Short Text |
+| `ConsolidationDimensionMdmText` |  | |  |  | `CHAR(30)` | Medium Text |

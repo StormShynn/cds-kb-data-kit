@@ -35,31 +35,31 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Engagement Project ID |
-| `SalesOrder` | `CHAR(10)` | Sales Order |
-| `SalesOrderItem` | `NUMC(6)` | Sales Order Item |
-| `FiscalYearPeriod` | `CHAR(7)` |  |
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `EngagementProjectCategory` | `CHAR(1)` | Project Type |
-| `EngagementProjectType` | `CHAR(4)` | Engagement Project Type |
-| `ProjectProfileCode` | `CHAR(7)` | Project Profile |
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `ProjectStartDate` | `DATS(8)` | Commercial Project: Start Date |
-| `ProjectEndDate` | `DATS(8)` | Commercial Project: End Date |
-| `ControllingArea` | `CHAR(4)` | Controlling area for the project |
-| `CompanyCode` | `CHAR(4)` | Company code for the project |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `CostCenter` | `CHAR(20)` | Organization Unit Key |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `ProjectManager` | `CHAR(60)` |  |
-| `ProjectManagerName` | `CHAR(80)` |  |
-| `SalesOrderItemCategory` | `CHAR(4)` | Sales Document Item Category |
-| `Material` | `CHAR(40)` |  |
-| `IsMyProject` | `CHAR(1)` |  |
-| `ProjectCurrency` | `CUKY(5)` | Plan Currency |
-| `EngagementProjectStage` | `CHAR(4)` | Commercial Project: Stage |
-| `UnbilldRevnAmountInProjCrcy` | `CURR(23)` |  |
-| `ProjectVisibility` | `CHAR(1)` | Confidential Indicator for Commercial Project |
-| `ProjectManagerWorkAgreement` | `NUMC(8)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `FiscalYearPeriod` |  | |  |  | `CHAR(7)` |  |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `EngagementProjectCategory` |  | |  |  | `CHAR(1)` | Project Type |
+| `EngagementProjectType` |  | |  |  | `CHAR(4)` | Engagement Project Type |
+| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `ProjectStartDate` |  | |  |  | `DATS(8)` | Commercial Project: Start Date |
+| `ProjectEndDate` |  | |  |  | `DATS(8)` | Commercial Project: End Date |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling area for the project |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company code for the project |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(20)` | Organization Unit Key |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `ProjectManager` |  | |  |  | `CHAR(60)` |  |
+| `ProjectManagerName` |  | |  |  | `CHAR(80)` |  |
+| `SalesOrderItemCategory` |  | |  |  | `CHAR(4)` | Sales Document Item Category |
+| `Material` |  | |  |  | `CHAR(40)` |  |
+| `IsMyProject` |  | |  |  | `CHAR(1)` |  |
+| `ProjectCurrency` |  | |  |  | `CUKY(5)` | Plan Currency |
+| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |
+| `UnbilldRevnAmountInProjCrcy` |  | |  |  | `CURR(23)` |  |
+| `ProjectVisibility` |  | |  |  | `CHAR(1)` | Confidential Indicator for Commercial Project |
+| `ProjectManagerWorkAgreement` |  | |  |  | `NUMC(8)` |  |

@@ -35,26 +35,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `DCoAccountUUID` | `RAW(16)` | UUID of Collection Account |
-| `DebtCollectionsTaskUUID` | `RAW(16)` | UUID of Task in Collections and Dispute Automation |
-| `DebtCollectionsTask` | `CHAR(12)` | Task |
-| `DebtCollectionsTaskReason` | `CHAR(3)` | Task Reason |
-| `DebtCollectionsTaskDueDate` | `DATS(8)` | Due Date of the Task |
-| `DebtCollectionsTaskStatus` | `NUMC(1)` | Task Status |
-| `DCoAcctIsExcldFrmWlUntilDuDte` | `CHAR(1)` | Account Is Excluded from Worklist When Task Is Open |
-| `BusinessPartner` | `CHAR(10)` | Business Partner |
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
-| `DbtCollsTaskProcessorGroup` | `CHAR(40)` | Task Processor Group |
-| `DCoActivityIsCreated` | `CHAR(1)` | Activity Is Created |
-| `DebtCollectionsTaskIsMigrated` | `CHAR(1)` | Task Is Migrated |
-| `DCoDebtCollectionsActivity` | `CHAR(12)` | Activity |
-| `DbtCollsTaskCreatedByUser` | `CHAR(12)` | Created By |
-| `DbtCollsTaskCreationDateTime` | `DEC(15)` | Created On/At |
-| `DbtCollsTaskLastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `DbtCollsTaskLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
-| `DbtCollsTaskClosedByUser` | `CHAR(12)` | Closed By |
-| `DbtCollsTaskClosingDateTime` | `DEC(15)` | Closed On/At |
-| `DebtCollectionsTaskCriticality` | `INT1(3)` | Task Criticality |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `DCoAccountUUID` |  | |  |  | `RAW(16)` | UUID of Collection Account |
+| `DebtCollectionsTaskUUID` |  | |  |  | `RAW(16)` | UUID of Task in Collections and Dispute Automation |
+| `DebtCollectionsTask` |  | |  |  | `CHAR(12)` | Task |
+| `DebtCollectionsTaskReason` |  | |  |  | `CHAR(3)` | Task Reason |
+| `DebtCollectionsTaskDueDate` |  | |  |  | `DATS(8)` | Due Date of the Task |
+| `DebtCollectionsTaskStatus` |  | |  |  | `NUMC(1)` | Task Status |
+| `DCoAcctIsExcldFrmWlUntilDuDte` |  | |  |  | `CHAR(1)` | Account Is Excluded from Worklist When Task Is Open |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner |
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `DbtCollsTaskProcessorGroup` |  | |  |  | `CHAR(40)` | Task Processor Group |
+| `DCoActivityIsCreated` |  | |  |  | `CHAR(1)` | Activity Is Created |
+| `DebtCollectionsTaskIsMigrated` |  | |  |  | `CHAR(1)` | Task Is Migrated |
+| `DCoDebtCollectionsActivity` |  | |  |  | `CHAR(12)` | Activity |
+| `DbtCollsTaskCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `DbtCollsTaskCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DbtCollsTaskLastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DbtCollsTaskLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |
+| `DbtCollsTaskClosedByUser` |  | |  |  | `CHAR(12)` | Closed By |
+| `DbtCollsTaskClosingDateTime` |  | |  |  | `DEC(15)` | Closed On/At |
+| `DebtCollectionsTaskCriticality` |  | |  |  | `INT1(3)` | Task Criticality |

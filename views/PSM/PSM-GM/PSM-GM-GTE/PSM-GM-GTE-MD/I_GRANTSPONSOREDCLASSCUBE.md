@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `GrantCurrency` | `CUKY(5)` | Grant currency |
-| `GrantTotalAmountInGrantCrcy` | `CURR(13)` | Total Grant Value in Sponsor Currency |
-| `NumberOfGteeMMasterDataRecords` | `INT1(3)` |  |
-| `GrantIsNotRelevantGrant` | `CHAR(1)` | Identify the Not Relevant Grant |
-| `GrantAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `GrantCurrency` |  | |  |  | `CUKY(5)` | Grant currency |
+| `GrantTotalAmountInGrantCrcy` |  | |  |  | `CURR(13)` | Total Grant Value in Sponsor Currency |
+| `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
+| `GrantIsNotRelevantGrant` |  | |  |  | `CHAR(1)` | Identify the Not Relevant Grant |
+| `GrantAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |

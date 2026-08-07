@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FundAuthznGrp` | `CHAR(10)` | Authorization Group |
-| `Language` | `LANG(1)` | Language Key |
-| `FundAuthznGrpText` | `CHAR(20)` | Authorization Group Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FundAuthznGrp` |  | |  |  | `CHAR(10)` | Authorization Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FundAuthznGrpText` |  | |  |  | `CHAR(20)` | Authorization Group Description |

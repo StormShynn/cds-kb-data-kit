@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDateCat` | `CHAR(1)` | Rebates: Settlement Date Type |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtDateCatName` | `CHAR(60)` | Rebates: Settlement Date Type Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDateCat` |  | |  |  | `CHAR(1)` | Rebates: Settlement Date Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtDateCatName` |  | |  |  | `CHAR(60)` | Rebates: Settlement Date Type Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

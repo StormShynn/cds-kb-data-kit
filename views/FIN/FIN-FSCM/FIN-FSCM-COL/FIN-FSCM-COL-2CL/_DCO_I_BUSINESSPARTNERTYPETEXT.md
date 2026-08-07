@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerType` | `CHAR(1)` | Type |
-| `Language` | `LANG(1)` | Language Key |
-| `DCoBusinessPartnerTypeName` | `CHAR(50)` | Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerType` |  | |  |  | `CHAR(1)` | Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DCoBusinessPartnerTypeName` |  | |  |  | `CHAR(50)` | Type Description |

@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtTxCodeTxTypeChkCat` | `CHAR(1)` | Control of Tax Type Check for Tax Codes |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtTxCodeTxTypeChkCat` |  | |  |  | `CHAR(1)` | Control of Tax Type Check for Tax Codes |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

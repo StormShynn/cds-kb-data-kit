@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseSystemStatus` | `CHAR(3)` | Case: System Status |
-| `Language` | `LANG(1)` | Language Key |
-| `CaseSystemStatusName` | `CHAR(40)` | Case: System Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseSystemStatus` |  | |  |  | `CHAR(3)` | Case: System Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseSystemStatusName` |  | |  |  | `CHAR(40)` | Case: System Status Description |

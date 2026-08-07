@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MeansOfTransport` | `CHAR(10)` | Means of Transport |
-| `TransportationMode` | `CHAR(2)` | Transportation Mode |
-| `MeansOfTransportIsPassive` | `CHAR(1)` | Passive |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MeansOfTransport` |  | |  |  | `CHAR(10)` | Means of Transport |
+| `TransportationMode` |  | |  |  | `CHAR(2)` | Transportation Mode |
+| `MeansOfTransportIsPassive` |  | |  |  | `CHAR(1)` | Passive |

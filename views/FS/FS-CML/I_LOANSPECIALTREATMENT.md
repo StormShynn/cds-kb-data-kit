@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanSpecialTreatment` | `NUMC(2)` | Special treatment of loan |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanSpecialTreatment` |  | |  |  | `NUMC(2)` | Special treatment of loan |

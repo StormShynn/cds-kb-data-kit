@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ListedSubstance` | `CHAR(12)` | Listed Substance |
-| `ListedSubstanceCharUUID` | `CHAR(32)` | BCO KEY |
-| `ListedSubstanceUUID` | `RAW(16)` | Listed Substance Key |
-| `CASNumber` | `CHAR(20)` | CAS Number |
-| `ECNumber` | `CHAR(9)` | Listed Substance EC Number |
-| `MolecularFormula` | `CHAR(60)` | Molecular Formula |
-| `ListedSubstanceCndn` | `CHAR(21)` | Conditions for Listed Substances |
-| `ListedSubstanceReference` | `CHAR(12)` | Referenced Listed Substance |
-| `ListedSubstanceIsGroup` | `CHAR(1)` | Indicator for a Listed Substance Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ListedSubstance` |  | |  |  | `CHAR(12)` | Listed Substance |
+| `ListedSubstanceCharUUID` |  | |  |  | `CHAR(32)` | BCO KEY |
+| `ListedSubstanceUUID` |  | |  |  | `RAW(16)` | Listed Substance Key |
+| `CASNumber` |  | |  |  | `CHAR(20)` | CAS Number |
+| `ECNumber` |  | |  |  | `CHAR(9)` | Listed Substance EC Number |
+| `MolecularFormula` |  | |  |  | `CHAR(60)` | Molecular Formula |
+| `ListedSubstanceCndn` |  | |  |  | `CHAR(21)` | Conditions for Listed Substances |
+| `ListedSubstanceReference` |  | |  |  | `CHAR(12)` | Referenced Listed Substance |
+| `ListedSubstanceIsGroup` |  | |  |  | `CHAR(1)` | Indicator for a Listed Substance Group |

@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanNoticeReason` | `NUMC(3)` | Reason for Notice |
-| `LoanNtcProcgIsAllwd` | `CHAR(1)` | ID Further Editing in Internal Functions |
-| `LoanNoticeIsCreditor` | `CHAR(1)` | Creditor Notice Type Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanNoticeReason` |  | |  |  | `NUMC(3)` | Reason for Notice |
+| `LoanNtcProcgIsAllwd` |  | |  |  | `CHAR(1)` | ID Further Editing in Internal Functions |
+| `LoanNoticeIsCreditor` |  | |  |  | `CHAR(1)` | Creditor Notice Type Indicator |

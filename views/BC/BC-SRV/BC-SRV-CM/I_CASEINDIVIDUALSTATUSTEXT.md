@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseStatusProfile` | `CHAR(8)` | Case: Status Profile |
-| `Language` | `LANG(1)` | Language Key |
-| `CaseStatus` | `NUMC(2)` | Case: Status |
-| `CaseStatusName` | `CHAR(40)` | Case: Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseStatusProfile` |  | |  |  | `CHAR(8)` | Case: Status Profile |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseStatus` |  | |  |  | `NUMC(2)` | Case: Status |
+| `CaseStatusName` |  | |  |  | `CHAR(40)` | Case: Status Description |

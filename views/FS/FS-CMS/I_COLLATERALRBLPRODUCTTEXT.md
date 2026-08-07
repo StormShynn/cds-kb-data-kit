@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblProduct` | `CHAR(12)` | Product of Receivable |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralRblProductText` | `CHAR(40)` | Product of receivable name in a specified language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblProduct` |  | |  |  | `CHAR(12)` | Product of Receivable |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralRblProductText` |  | |  |  | `CHAR(40)` | Product of receivable name in a specified language |

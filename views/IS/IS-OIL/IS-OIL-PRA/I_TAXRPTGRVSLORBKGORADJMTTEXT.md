@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxRptgRvslOrBkgOrAdjmt` | `CHAR(1)` | Reversal/Booking/Adjustment |
-| `Language` | `LANG(1)` | Language Key |
-| `TaxRptgRvslOrBkgOrAdjmtName` | `CHAR(60)` | Tax Reporting Reversal Or Booking Or Adjustment Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxRptgRvslOrBkgOrAdjmt` |  | |  |  | `CHAR(1)` | Reversal/Booking/Adjustment |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TaxRptgRvslOrBkgOrAdjmtName` |  | |  |  | `CHAR(60)` | Tax Reporting Reversal Or Booking Or Adjustment Name |

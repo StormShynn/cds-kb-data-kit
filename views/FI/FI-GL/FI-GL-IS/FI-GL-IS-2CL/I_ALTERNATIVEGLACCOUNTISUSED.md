@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AlternativeGLAccountIsUsed` | `CHAR(1)` | Use Alternative Accounts |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AlternativeGLAccountIsUsed` |  | |  |  | `CHAR(1)` | Use Alternative Accounts |

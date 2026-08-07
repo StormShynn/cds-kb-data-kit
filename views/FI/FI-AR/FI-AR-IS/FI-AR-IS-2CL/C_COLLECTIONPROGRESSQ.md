@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollectionGroup` | `CHAR(10)` | Collection Group |
-| `CollectionSegment` | `CHAR(10)` | Collection Segment |
-| `CollectionSpecialist` | `CHAR(12)` | Collection Specialist |
-| `CollectionSpecialistName` | `CHAR(80)` | Full Name of Person |
-| `CollectionGroupName` | `CHAR(60)` | Name of Collection Group |
-| `CollectionSegmentName` | `CHAR(50)` | Name of Collection Segment |
-| `CollectionPriority` | `NUMC(1)` | Priority of Worklist Item |
-| `CollectionPriorityName` | `CHAR(15)` | Name of Priority of Worklist Items |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `NumberOfWorklistItems` | `INT4(10)` | Number of Worklist Items |
-| `NumberOfCompletedItems` | `INT4(10)` | Number of Completed Items |
-| `NumberOfCustomerReachedItems` | `INT4(10)` | Number of Customer Reached |
-| `PromisedAmount` | `CURR(23)` | Promised Amount |
-| `CollectableAmount` | `CURR(23)` | Collectable Amount |
-| `CollectionProgressRatio` | `DEC(5)` | Collection Progress Ratio |
-| `CollectionProgressRate` | `FLTP(16)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollectionGroup` |  | |  |  | `CHAR(10)` | Collection Group |
+| `CollectionSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `CollectionSpecialist` |  | |  |  | `CHAR(12)` | Collection Specialist |
+| `CollectionSpecialistName` |  | |  |  | `CHAR(80)` | Full Name of Person |
+| `CollectionGroupName` |  | |  |  | `CHAR(60)` | Name of Collection Group |
+| `CollectionSegmentName` |  | |  |  | `CHAR(50)` | Name of Collection Segment |
+| `CollectionPriority` |  | |  |  | `NUMC(1)` | Priority of Worklist Item |
+| `CollectionPriorityName` |  | |  |  | `CHAR(15)` | Name of Priority of Worklist Items |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `NumberOfWorklistItems` |  | |  |  | `INT4(10)` | Number of Worklist Items |
+| `NumberOfCompletedItems` |  | |  |  | `INT4(10)` | Number of Completed Items |
+| `NumberOfCustomerReachedItems` |  | |  |  | `INT4(10)` | Number of Customer Reached |
+| `PromisedAmount` |  | |  |  | `CURR(23)` | Promised Amount |
+| `CollectableAmount` |  | |  |  | `CURR(23)` | Collectable Amount |
+| `CollectionProgressRatio` |  | |  |  | `DEC(5)` | Collection Progress Ratio |
+| `CollectionProgressRate` |  | |  |  | `FLTP(16)` |  |

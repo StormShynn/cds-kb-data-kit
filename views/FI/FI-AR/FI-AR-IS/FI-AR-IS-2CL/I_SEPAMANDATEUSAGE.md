@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SEPAMandateUUID` | `RAW(16)` | Globally Unique Identifier |
-| `SEPAMandateUseDate` | `DATS(8)` | Date |
-| `SEPAMandateUseObjectType` | `CHAR(10)` | Object Type |
-| `SEPAMandateUsePaymentDoc` | `CHAR(70)` | Object key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SEPAMandateUUID` |  | |  |  | `RAW(16)` | Globally Unique Identifier |
+| `SEPAMandateUseDate` |  | |  |  | `DATS(8)` | Date |
+| `SEPAMandateUseObjectType` |  | |  |  | `CHAR(10)` | Object Type |
+| `SEPAMandateUsePaymentDoc` |  | |  |  | `CHAR(70)` | Object key |

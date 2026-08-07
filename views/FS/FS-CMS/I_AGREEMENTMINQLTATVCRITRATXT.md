@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlAgrmtMinQltatvCriteria` | `CHAR(6)` | MInimum Qualitative Criterion |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `ColltrlAgrmtMinQltatvCritraTxt` | `CHAR(40)` | Name of Minimum Qualitative Criterion in specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlAgrmtMinQltatvCriteria` |  | |  |  | `CHAR(6)` | MInimum Qualitative Criterion |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `ColltrlAgrmtMinQltatvCritraTxt` |  | |  |  | `CHAR(40)` | Name of Minimum Qualitative Criterion in specified Language |

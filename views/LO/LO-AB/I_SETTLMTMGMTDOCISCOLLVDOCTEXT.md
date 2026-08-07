@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtDocIsCollvDoc` | `CHAR(1)` | Indicator that Document is a Collective Document |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtMgmtDocIsCollvDocName` | `CHAR(60)` | Description of Document is Collective Document Indicator |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtDocIsCollvDoc` |  | |  |  | `CHAR(1)` | Indicator that Document is a Collective Document |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtMgmtDocIsCollvDocName` |  | |  |  | `CHAR(60)` | Description of Document is Collective Document Indicator |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

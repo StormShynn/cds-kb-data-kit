@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MarketIdentifierCode` | `CHAR(4)` | Market Identifier Code |
-| `Location` | `CHAR(25)` | City |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MarketIdentifierCode` |  | |  |  | `CHAR(4)` | Market Identifier Code |
+| `Location` |  | |  |  | `CHAR(25)` | City |

@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Plant` | `CHAR(4)` | Plant |
-| `ProcessMessageCategory` | `CHAR(8)` | Process Message Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ProcessMessageCategory` |  | |  |  | `CHAR(8)` | Process Message Category |

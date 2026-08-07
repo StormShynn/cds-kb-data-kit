@@ -30,16 +30,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurClmOccrncYear` | `NUMC(4)` | Year of Claim Date |
-| `InsurClmCoverageType` | `CHAR(10)` | Coverage Type |
-| `InsurLineOfBus` | `CHAR(3)` | Insurance Line of Business |
-| `InsurClmType` | `CHAR(4)` | Internal Claim Type |
-| `InsurClmSubclmType` | `CHAR(4)` | Subclaim Type |
-| `InsurClmAuthznGrp` | `CHAR(4)` | Authorization Group for Claims (VIP) |
-| `InsurClm12MnthPaidLossAmt` | `CURR(15)` | Total Amount in Claim Date Year |
-| `InsurClm24MnthPaidLossAmt` | `CURR(15)` | Total Amount in Claim Date Year and in Next Year |
-| `InsurClm36MnthPaidLossAmt` | `CURR(15)` | Total Amount in Claim Date Year and in Next Two Years |
-| `InsurClm48MnthPaidLossAmt` | `CURR(15)` | Total Amount in Claim Date Year and in Next Three Years |
-| `InsurClm60MnthPaidLossAmt` | `CURR(15)` | Total Amount in Claim Date Year and in Next Four Years |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurClmOccrncYear` |  | |  |  | `NUMC(4)` | Year of Claim Date |
+| `InsurClmCoverageType` |  | |  |  | `CHAR(10)` | Coverage Type |
+| `InsurLineOfBus` |  | |  |  | `CHAR(3)` | Insurance Line of Business |
+| `InsurClmType` |  | |  |  | `CHAR(4)` | Internal Claim Type |
+| `InsurClmSubclmType` |  | |  |  | `CHAR(4)` | Subclaim Type |
+| `InsurClmAuthznGrp` |  | |  |  | `CHAR(4)` | Authorization Group for Claims (VIP) |
+| `InsurClm12MnthPaidLossAmt` |  | |  |  | `CURR(15)` | Total Amount in Claim Date Year |
+| `InsurClm24MnthPaidLossAmt` |  | |  |  | `CURR(15)` | Total Amount in Claim Date Year and in Next Year |
+| `InsurClm36MnthPaidLossAmt` |  | |  |  | `CURR(15)` | Total Amount in Claim Date Year and in Next Two Years |
+| `InsurClm48MnthPaidLossAmt` |  | |  |  | `CURR(15)` | Total Amount in Claim Date Year and in Next Three Years |
+| `InsurClm60MnthPaidLossAmt` |  | |  |  | `CURR(15)` | Total Amount in Claim Date Year and in Next Four Years |

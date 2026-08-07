@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ConsignmentControl` | `CHAR(1)` | Consignment Control |
-| `ConsignmentControlDescription` | `CHAR(60)` | Name of Consignment Control |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConsignmentControl` |  | |  |  | `CHAR(1)` | Consignment Control |
+| `ConsignmentControlDescription` |  | |  |  | `CHAR(60)` | Name of Consignment Control |

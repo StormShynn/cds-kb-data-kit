@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentDetailRejectionRsn` | `CHAR(3)` | Payment Processing - Detail Level Reject Code |
-| `Language` | `LANG(1)` | Language Key |
-| `PaymentDetailRejectionRsnName` | `CHAR(30)` | Detail Reject Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentDetailRejectionRsn` |  | |  |  | `CHAR(3)` | Payment Processing - Detail Level Reject Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PaymentDetailRejectionRsnName` |  | |  |  | `CHAR(30)` | Detail Reject Name |

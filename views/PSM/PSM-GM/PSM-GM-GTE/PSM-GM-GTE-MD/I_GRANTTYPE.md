@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantType` | `CHAR(2)` | Grant Type |
-| `StatusProfile` | `CHAR(8)` | Status profile for the user states attached to system states |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantType` |  | |  |  | `CHAR(2)` | Grant Type |
+| `StatusProfile` |  | |  |  | `CHAR(8)` | Status profile for the user states attached to system states |

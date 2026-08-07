@@ -35,29 +35,29 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `CashBalanceType` | `CHAR(1)` | Cash Balance Type |
-| `CashBalanceAmount` | `CURR(23)` | Balance Amount |
-| `CashBalanceCurrency` | `CUKY(5)` | Balance Currency |
-| `CashBalanceDate` | `DATS(8)` | Transaction Date |
-| `OriginDocument` | `CHAR(32)` | Source Document ID |
-| `BankStatementShortID` | `NUMC(8)` | Bank Statement Short Key |
-| `CashBalanceChannel` | `CHAR(10)` | Bank Account Balance Update Method |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CashBalanceCreatedAtDateTime` | `DEC(21)` | FQM Flow Creation Timestamp |
-| `CreatedByUser` | `CHAR(12)` | FQM Flow Create User |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `TransactionDate` | `DATS(8)` | Key Date |
-| `CalculatedAmountInDspCrcy` | `CURR(19)` | Net Value in Display Currency |
-| `BankAccountType` | `CHAR(10)` | Bank Account Type ID |
-| `BankAccountCharacteristic` | `CHAR(5)` | Bank Account Characteristic |
-| `BankAccountNumber` | `CHAR(40)` | Bank Account Number |
-| `BankAccountContractType` | `CHAR(2)` | Bank Account Contract Type |
-| `BankAccountDescription` | `CHAR(60)` | Account Description |
-| `BankAccountStatus` | `CHAR(2)` | Bank Account Status |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` | `CHAR(15)` | Bank Key |
-| `SWIFTCode` | `CHAR(11)` | SWIFT/BIC for International Payments |
-| `BankName` | `CHAR(60)` | Name of Financial Institution |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `CashBalanceType` |  | |  |  | `CHAR(1)` | Cash Balance Type |
+| `CashBalanceAmount` |  | |  |  | `CURR(23)` | Balance Amount |
+| `CashBalanceCurrency` |  | |  |  | `CUKY(5)` | Balance Currency |
+| `CashBalanceDate` |  | |  |  | `DATS(8)` | Transaction Date |
+| `OriginDocument` |  | |  |  | `CHAR(32)` | Source Document ID |
+| `BankStatementShortID` |  | |  |  | `NUMC(8)` | Bank Statement Short Key |
+| `CashBalanceChannel` |  | |  |  | `CHAR(10)` | Bank Account Balance Update Method |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CashBalanceCreatedAtDateTime` |  | |  |  | `DEC(21)` | FQM Flow Creation Timestamp |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | FQM Flow Create User |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `TransactionDate` |  | |  |  | `DATS(8)` | Key Date |
+| `CalculatedAmountInDspCrcy` |  | |  |  | `CURR(19)` | Net Value in Display Currency |
+| `BankAccountType` |  | |  |  | `CHAR(10)` | Bank Account Type ID |
+| `BankAccountCharacteristic` |  | |  |  | `CHAR(5)` | Bank Account Characteristic |
+| `BankAccountNumber` |  | |  |  | `CHAR(40)` | Bank Account Number |
+| `BankAccountContractType` |  | |  |  | `CHAR(2)` | Bank Account Contract Type |
+| `BankAccountDescription` |  | |  |  | `CHAR(60)` | Account Description |
+| `BankAccountStatus` |  | |  |  | `CHAR(2)` | Bank Account Status |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Key |
+| `SWIFTCode` |  | |  |  | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `BankName` |  | |  |  | `CHAR(60)` | Name of Financial Institution |

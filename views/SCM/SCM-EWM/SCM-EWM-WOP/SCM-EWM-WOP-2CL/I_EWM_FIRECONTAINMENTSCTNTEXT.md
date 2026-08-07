@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMFireContainmentSection` | `CHAR(2)` | Fire-Containment Section |
-| `EWMFireContainmentSectionDesc` | `CHAR(40)` | Fire Containment Section Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMFireContainmentSection` |  | |  |  | `CHAR(2)` | Fire-Containment Section |
+| `EWMFireContainmentSectionDesc` |  | |  |  | `CHAR(40)` | Fire Containment Section Description |

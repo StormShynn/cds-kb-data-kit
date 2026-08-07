@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AmountFieldGroup` | `CHAR(4)` | Amount Fields Group |
-| `AmountFieldGroupDesc` | `CHAR(40)` | Description of Amount Field Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AmountFieldGroup` |  | |  |  | `CHAR(4)` | Amount Fields Group |
+| `AmountFieldGroupDesc` |  | |  |  | `CHAR(40)` | Description of Amount Field Group |

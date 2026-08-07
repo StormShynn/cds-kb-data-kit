@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Origin` | `CHAR(2)` | Application |
-| `AccountingDocumentType` | `CHAR(2)` | Document Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Origin` |  | |  |  | `CHAR(2)` | Application |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Document Type |

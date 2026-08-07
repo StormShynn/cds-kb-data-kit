@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CurrencyRole` | `CHAR(2)` | Currency Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CurrencyRole` |  | |  |  | `CHAR(2)` | Currency Type |

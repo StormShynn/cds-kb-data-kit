@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NFVehicleType` | `CHAR(2)` | Vehicle Type |
-| `VehicleUsage` | `CHAR(1)` | Vehicle Usage |
-| `BR_VehicleAssignmentStartDate` | `DATS(8)` | Date from which the type and usage are valid |
-| `BR_VehicleAssignmentEndDate` | `DATS(8)` | Date to which the type and usage are valid |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NFVehicleType` |  | |  |  | `CHAR(2)` | Vehicle Type |
+| `VehicleUsage` |  | |  |  | `CHAR(1)` | Vehicle Usage |
+| `BR_VehicleAssignmentStartDate` |  | |  |  | `DATS(8)` | Date from which the type and usage are valid |
+| `BR_VehicleAssignmentEndDate` |  | |  |  | `DATS(8)` | Date to which the type and usage are valid |

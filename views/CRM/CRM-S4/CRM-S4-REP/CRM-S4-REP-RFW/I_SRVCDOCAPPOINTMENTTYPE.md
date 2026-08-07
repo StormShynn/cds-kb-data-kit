@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SrvcDocAppointmentType` | `CHAR(12)` | Technical Date Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcDocAppointmentType` |  | |  |  | `CHAR(12)` | Technical Date Type Name |

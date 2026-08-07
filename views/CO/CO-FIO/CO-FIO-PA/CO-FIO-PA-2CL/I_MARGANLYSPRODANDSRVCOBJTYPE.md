@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MarginAnalysisObjectType` | `CHAR(2)` | Object Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MarginAnalysisObjectType` |  | |  |  | `CHAR(2)` | Object Type |

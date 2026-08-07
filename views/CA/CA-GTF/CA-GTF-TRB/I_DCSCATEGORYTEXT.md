@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DerivativeContractSpecCategory` | `CHAR(3)` | Derivative Contract Specification Category |
-| `Language` | `LANG(1)` | Language Key |
-| `DerivativeContrSpecCatName` | `CHAR(40)` | Derivative Category Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DerivativeContractSpecCategory` |  | |  |  | `CHAR(3)` | Derivative Contract Specification Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DerivativeContrSpecCatName` |  | |  |  | `CHAR(40)` | Derivative Category Description |

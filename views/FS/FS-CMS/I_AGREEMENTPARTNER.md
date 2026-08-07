@@ -29,12 +29,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPartnerUUID` | `RAW(16)` | GUID for Table CMS_CAG_BP |
-| `CollateralAgreementUUID` | `RAW(16)` | GUID for Table CMS_CAG |
-| `AgreementPortionUUID` | `RAW(16)` | GUID for Table CMS_CAG_POR |
-| `AgreementPartnerID` | `CHAR(32)` | Business Partner ID |
-| `AgreementPartnerFunction` | `CHAR(6)` | Business Partner Function |
-| `AgreementPartnerSignDate` | `DATS(8)` | Date on which Business Partner Signs an Agreement |
-| `AgrmtPartnerAgrmtDisclosureDte` | `DATS(8)` | Date on which Business Partner is disclosed an agreement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPartnerUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_BP |
+| `CollateralAgreementUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG |
+| `AgreementPortionUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_POR |
+| `AgreementPartnerID` |  | |  |  | `CHAR(32)` | Business Partner ID |
+| `AgreementPartnerFunction` |  | |  |  | `CHAR(6)` | Business Partner Function |
+| `AgreementPartnerSignDate` |  | |  |  | `DATS(8)` | Date on which Business Partner Signs an Agreement |
+| `AgrmtPartnerAgrmtDisclosureDte` |  | |  |  | `DATS(8)` | Date on which Business Partner is disclosed an agreement |

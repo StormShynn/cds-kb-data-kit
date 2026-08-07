@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PricingStatus` | `CHAR(2)` | Future/Basis Price Fixation Status |
-| `Language` | `LANG(1)` | Language Key |
-| `PricingStatusName` | `CHAR(50)` | Future/Basis Price Fixation Status - Long Text |
-| `PricingStatusShortName` | `CHAR(5)` | Future/Basis Price Fixation Status - Short Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PricingStatus` |  | |  |  | `CHAR(2)` | Future/Basis Price Fixation Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PricingStatusName` |  | |  |  | `CHAR(50)` | Future/Basis Price Fixation Status - Long Text |
+| `PricingStatusShortName` |  | |  |  | `CHAR(5)` | Future/Basis Price Fixation Status - Short Text |

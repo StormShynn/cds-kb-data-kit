@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblCreditSystem` | `CHAR(3)` | Credit System |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralRblCreditSystemTxt` | `CHAR(20)` | Credit System Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblCreditSystem` |  | |  |  | `CHAR(3)` | Credit System |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralRblCreditSystemTxt` |  | |  |  | `CHAR(20)` | Credit System Text |

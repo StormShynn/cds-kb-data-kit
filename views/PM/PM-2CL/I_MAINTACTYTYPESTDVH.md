@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenanceActivityType` | `CHAR(3)` | Maintenance Activity Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceActivityType` |  | |  |  | `CHAR(3)` | Maintenance Activity Type |

@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PubSecBudgetAccount` | `CHAR(10)` | Budget Account |
-| `PubSecBudgetAccountCoCode` | `CHAR(4)` | Budget Account Company Code |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `PubSecBdgtAcctRevnExpnCode` | `CHAR(1)` | Expense or Revenue on Budget Account |
-| `PubSecBudgetIsRelevant` | `CHAR(1)` | Budget-Relevant Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PubSecBudgetAccount` |  | |  |  | `CHAR(10)` | Budget Account |
+| `PubSecBudgetAccountCoCode` |  | |  |  | `CHAR(4)` | Budget Account Company Code |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `PubSecBdgtAcctRevnExpnCode` |  | |  |  | `CHAR(1)` | Expense or Revenue on Budget Account |
+| `PubSecBudgetIsRelevant` |  | |  |  | `CHAR(1)` | Budget-Relevant Indicator |

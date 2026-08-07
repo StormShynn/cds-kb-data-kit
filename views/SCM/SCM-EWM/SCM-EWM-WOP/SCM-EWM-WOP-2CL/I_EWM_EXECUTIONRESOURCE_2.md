@@ -32,15 +32,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `ExecutingResource` | `CHAR(18)` | Resource (Means of Transportation or User) |
-| `ExecutingResourceType` | `CHAR(4)` | Resource Type |
-| `ExecutingResourceGroup` | `CHAR(4)` | Resource Group |
-| `UserName` | `CHAR(12)` | User Name in User Master Record |
-| `WarehouseOrderQueue` | `CHAR(10)` | Queue |
-| `EWMCurrentQueue` | `CHAR(10)` | Actual Queue of Resource |
-| `EWMStorTypeOfLastWhseTaskConf` | `CHAR(4)` | Storage Type of Last Removal |
-| `EWMDfltPresentationDvcePrfl` | `CHAR(4)` | Default Presentation Device |
-| `EWMResourcePrintBehavior` | `CHAR(1)` | Resource Print Behavior |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `ExecutingResource` |  | |  |  | `CHAR(18)` | Resource (Means of Transportation or User) |
+| `ExecutingResourceType` |  | |  |  | `CHAR(4)` | Resource Type |
+| `ExecutingResourceGroup` |  | |  |  | `CHAR(4)` | Resource Group |
+| `UserName` |  | |  |  | `CHAR(12)` | User Name in User Master Record |
+| `WarehouseOrderQueue` |  | |  |  | `CHAR(10)` | Queue |
+| `EWMCurrentQueue` |  | |  |  | `CHAR(10)` | Actual Queue of Resource |
+| `EWMStorTypeOfLastWhseTaskConf` |  | |  |  | `CHAR(4)` | Storage Type of Last Removal |
+| `EWMDfltPresentationDvcePrfl` |  | |  |  | `CHAR(4)` | Default Presentation Device |
+| `EWMResourcePrintBehavior` |  | |  |  | `CHAR(1)` | Resource Print Behavior |

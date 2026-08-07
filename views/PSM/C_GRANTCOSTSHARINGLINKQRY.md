@@ -28,14 +28,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `Fund` | `CHAR(10)` | Fund |
-| `GteeMCostSharingSource` | `CHAR(1)` | Cost Sharing Source |
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `NumberOfGteeMMasterDataRecords` | `INT1(3)` |  |
-| `AvgGteeMCostSharingRateInPct` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `GteeMCostSharingSource` |  | |  |  | `CHAR(1)` | Cost Sharing Source |
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
+| `AvgGteeMCostSharingRateInPct` |  | |  |  | `INT1(3)` |  |

@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseProcess` | `CHAR(4)` | Permitted Process for Case Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseProcess` |  | |  |  | `CHAR(4)` | Permitted Process for Case Type |

@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BPTaxComplianceStatus` | `CHAR(1)` | Tax Compliance Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPTaxComplianceStatus` |  | |  |  | `CHAR(1)` | Tax Compliance Status |

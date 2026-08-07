@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `Language` | `LANG(1)` | Language |
-| `EHSLocationStatusText` | `CHAR(60)` | Location Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `Language` |  | |  |  | `LANG(1)` | Language |
+| `EHSLocationStatusText` |  | |  |  | `CHAR(60)` | Location Status Name |

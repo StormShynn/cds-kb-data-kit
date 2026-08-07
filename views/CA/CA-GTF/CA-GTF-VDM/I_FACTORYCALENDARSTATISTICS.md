@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FactoryCalendarStatisticsCode` | `CHAR(1)` | Calendar: Termination flag |
-| `LastChangeDate` | `DATS(8)` | Date |
-| `LastChangeTime` | `TIMS(6)` | Calendar: Creation or change time |
-| `NumberOfCalendars` | `NUMC(4)` | Year stored |
-| `CalendarsMemorySizeInBytes` | `NUMC(8)` | Memory requirement (Bytes) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FactoryCalendarStatisticsCode` |  | |  |  | `CHAR(1)` | Calendar: Termination flag |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Calendar: Creation or change time |
+| `NumberOfCalendars` |  | |  |  | `NUMC(4)` | Year stored |
+| `CalendarsMemorySizeInBytes` |  | |  |  | `NUMC(8)` | Memory requirement (Bytes) |

@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AdditionalMasterDataSource` | `CHAR(10)` | Master Data Source |
-| `MDSourceForConsolidationFields` | `CHAR(60)` | Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AdditionalMasterDataSource` |  | |  |  | `CHAR(10)` | Master Data Source |
+| `MDSourceForConsolidationFields` |  | |  |  | `CHAR(60)` | Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

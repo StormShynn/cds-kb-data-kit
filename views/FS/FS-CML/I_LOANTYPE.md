@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanType` | `NUMC(3)` | Loan Type Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanType` |  | |  |  | `NUMC(3)` | Loan Type Indicator |

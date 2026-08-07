@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FunctionalLocation` | `CHAR(30)` | Functional Location |
-| `FunctionalLocationLabelName` | `CHAR(40)` | Functional Location Label |
-| `FunctionalLocLabelingSyst` | `CHAR(1)` | Labeling system for functional locations |
-| `FuncnlLocUserLabelName` | `CHAR(40)` | Functional Location Label |
-| `FuncnlLocPrimaryLabelName` | `CHAR(40)` | Functional Location Label |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `FunctionalLocationLabelName` |  | |  |  | `CHAR(40)` | Functional Location Label |
+| `FunctionalLocLabelingSyst` |  | |  |  | `CHAR(1)` | Labeling system for functional locations |
+| `FuncnlLocUserLabelName` |  | |  |  | `CHAR(40)` | Functional Location Label |
+| `FuncnlLocPrimaryLabelName` |  | |  |  | `CHAR(40)` | Functional Location Label |

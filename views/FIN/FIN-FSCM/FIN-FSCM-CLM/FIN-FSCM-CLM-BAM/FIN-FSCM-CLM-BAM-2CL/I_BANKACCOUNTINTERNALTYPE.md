@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountInternalType` | `CHAR(10)` | Bank Account Type ID |
-| `BankAccountContractType` | `CHAR(2)` | Bank Account Contract Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountInternalType` |  | |  |  | `CHAR(10)` | Bank Account Type ID |
+| `BankAccountContractType` |  | |  |  | `CHAR(2)` | Bank Account Contract Type |

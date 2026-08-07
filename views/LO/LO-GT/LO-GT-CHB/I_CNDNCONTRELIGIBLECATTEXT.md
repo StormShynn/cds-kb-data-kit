@@ -36,9 +36,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrEligibleCat` | `CHAR(2)` | Type of Eligible Partner for a Condition Contract |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrEligibleCatName` | `CHAR(60)` | Decription of Eligible Partner Type |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrEligibleCat` |  | |  |  | `CHAR(2)` | Type of Eligible Partner for a Condition Contract |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrEligibleCatName` |  | |  |  | `CHAR(60)` | Decription of Eligible Partner Type |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

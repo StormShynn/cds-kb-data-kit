@@ -29,13 +29,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `Fund` | `CHAR(10)` | Fund |
-| `BudgetPeriod` | `CHAR(10)` | Budget Period |
-| `ApplOfFundByBudgetPeriod` | `CHAR(16)` | Application of Funds by Budget Period |
-| `BdgtPerdAssociationIsInactive` | `CHAR(1)` | Indicator: Fund to Budget Period assignment is inactive |
-| `FundFinMgmtAreaForAuthzn` | `CHAR(4)` | FM Area for Auth Grp for Fund |
-| `FundAuthznGrp` | `CHAR(10)` | Fund Authorization Group |
-| `BudgetPeriodAuthznGrp` | `CHAR(10)` | Budget Period Authorization Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `BudgetPeriod` |  | |  |  | `CHAR(10)` | Budget Period |
+| `ApplOfFundByBudgetPeriod` |  | |  |  | `CHAR(16)` | Application of Funds by Budget Period |
+| `BdgtPerdAssociationIsInactive` |  | |  |  | `CHAR(1)` | Indicator: Fund to Budget Period assignment is inactive |
+| `FundFinMgmtAreaForAuthzn` |  | |  |  | `CHAR(4)` | FM Area for Auth Grp for Fund |
+| `FundAuthznGrp` |  | |  |  | `CHAR(10)` | Fund Authorization Group |
+| `BudgetPeriodAuthznGrp` |  | |  |  | `CHAR(10)` | Budget Period Authorization Group |

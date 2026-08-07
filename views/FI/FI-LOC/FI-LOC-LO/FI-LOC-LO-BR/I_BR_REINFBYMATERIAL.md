@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Material` | `CHAR(40)` | Material Number |
-| `BR_EFDREINFServiceCode` | `CHAR(9)` | EFD-REINF Service Type Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `BR_EFDREINFServiceCode` |  | |  |  | `CHAR(9)` | EFD-REINF Service Type Code |

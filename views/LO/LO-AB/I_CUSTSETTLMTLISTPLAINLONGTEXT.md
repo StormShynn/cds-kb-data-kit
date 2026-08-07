@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustSettlmtList` | `CHAR(10)` | Settlement Document: Customer Settlement List |
-| `TextObjectType` | `CHAR(4)` | Text Object type |
-| `Language` | `LANG(1)` | Language Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustSettlmtList` |  | |  |  | `CHAR(10)` | Settlement Document: Customer Settlement List |
+| `TextObjectType` |  | |  |  | `CHAR(4)` | Text Object type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |

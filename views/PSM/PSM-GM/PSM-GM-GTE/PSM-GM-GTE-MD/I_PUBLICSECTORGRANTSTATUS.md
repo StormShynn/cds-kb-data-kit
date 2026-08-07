@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantStatus` | `CHAR(5)` | Grant Status |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
-| `GrantIsSystemStatus` | `CHAR(1)` | Grant System Status |
-| `GrantStatusName` | `CHAR(30)` | Grant Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantStatus` |  | |  |  | `CHAR(5)` | Grant Status |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
+| `GrantIsSystemStatus` |  | |  |  | `CHAR(1)` | Grant System Status |
+| `GrantStatusName` |  | |  |  | `CHAR(30)` | Grant Status Name |

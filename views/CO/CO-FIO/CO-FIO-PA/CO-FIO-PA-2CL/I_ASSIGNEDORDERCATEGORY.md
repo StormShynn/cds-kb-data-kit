@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ETOOrdCategory` | `CHAR(2)` | Order Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ETOOrdCategory` |  | |  |  | `CHAR(2)` | Order Category |

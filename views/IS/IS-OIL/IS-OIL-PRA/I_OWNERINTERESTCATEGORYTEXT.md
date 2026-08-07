@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OwnerInterestCategory` | `CHAR(1)` | Interest Category |
-| `Language` | `LANG(1)` | Language Key |
-| `OwnerInterestCategoryName` | `CHAR(60)` | Interest Category Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OwnerInterestCategory` |  | |  |  | `CHAR(1)` | Interest Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `OwnerInterestCategoryName` |  | |  |  | `CHAR(60)` | Interest Category Name |

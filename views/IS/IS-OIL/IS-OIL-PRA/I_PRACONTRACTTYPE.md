@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PRAContractType` | `CHAR(2)` | Contract Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PRAContractType` |  | |  |  | `CHAR(2)` | Contract Type |

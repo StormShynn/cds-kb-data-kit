@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrPrtlSettlmtCat` | `CHAR(1)` | Condition Contract Settlement: Partial Settlement Type |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrPrtlSettlmtCatName` | `CHAR(60)` | Short Text for Fixed Values |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrPrtlSettlmtCat` |  | |  |  | `CHAR(1)` | Condition Contract Settlement: Partial Settlement Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrPrtlSettlmtCatName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

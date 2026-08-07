@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationSegmentHierarchy` | `CHAR(40)` | Segment Hierarchy |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `Language` | `LANG(1)` | Language Key |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `ConsolidationSegmentHierText` | `CHAR(50)` | Consolidation Hierarchy Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationSegmentHierarchy` |  | |  |  | `CHAR(40)` | Segment Hierarchy |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ConsolidationSegmentHierText` |  | |  |  | `CHAR(50)` | Consolidation Hierarchy Description |

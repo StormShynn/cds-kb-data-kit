@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtUIDocBehvrCat` | `CHAR(1)` | The Display Behavior in Settlement Management Apps |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtMgmtUIDocBehvrCatName` | `CHAR(60)` | The Display Behavior in Settlement Management App Texts |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtUIDocBehvrCat` |  | |  |  | `CHAR(1)` | The Display Behavior in Settlement Management Apps |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtMgmtUIDocBehvrCatName` |  | |  |  | `CHAR(60)` | The Display Behavior in Settlement Management App Texts |

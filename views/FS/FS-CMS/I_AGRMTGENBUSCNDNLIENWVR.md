@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgrmtGenBusCndnLienWvr` | `CHAR(2)` | GBC Lien on Agreement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgrmtGenBusCndnLienWvr` |  | |  |  | `CHAR(2)` | GBC Lien on Agreement |

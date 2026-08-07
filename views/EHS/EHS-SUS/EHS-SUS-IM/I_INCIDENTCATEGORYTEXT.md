@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentCategory` | `CHAR(3)` | Incident Category |
-| `Language` | `LANG(1)` | Language Key |
-| `IncidentCategoryText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentCategory` |  | |  |  | `CHAR(3)` | Incident Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IncidentCategoryText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

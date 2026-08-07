@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdgDocSuplrBillgBlkRsn` | `CHAR(2)` | Blocking Reason Document Header |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdgDocSuplrBillgBlkRsn` |  | |  |  | `CHAR(2)` | Blocking Reason Document Header |

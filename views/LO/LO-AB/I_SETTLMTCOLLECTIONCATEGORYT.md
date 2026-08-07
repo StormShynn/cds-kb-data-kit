@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtCollectionCategory` | `CHAR(1)` | Collection Category for Settlement |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtCollectionCategoryName` | `CHAR(60)` | Description of Collection Category for Settlement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtCollectionCategory` |  | |  |  | `CHAR(1)` | Collection Category for Settlement |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtCollectionCategoryName` |  | |  |  | `CHAR(60)` | Description of Collection Category for Settlement |

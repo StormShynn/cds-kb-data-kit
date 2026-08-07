@@ -31,25 +31,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PredictionRecordID` | `CHAR(32)` | Prediction Result Record Identifier |
-| `BhvrlInsgtsRecordID` | `CHAR(32)` | Record ID |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerName` | `CHAR(40)` | Name 1 of organization |
-| `PredictionScenarioID` | `INT1(3)` | Scenario Identifier |
-| `PredictionScenarioDateTime` | `DEC(15)` | Prediction UTC Time Stamp |
-| `BhvrlInsgtsAccountNumber` | `CHAR(12)` | Account Number |
-| `BhvrlInsgtsAccountName` | `CHAR(35)` | Contract Account Name |
-| `BhvrlInsgtsSubAccountNumber` | `CHAR(20)` | Subaccount Number |
-| `BhvrlInsgtsSubAccountName` | `CHAR(1)` |  |
-| `BhvrlInsgtsPredictionValue` | `INT1(3)` |  |
-| `NumberOfBusinessPartners` | `INT4(10)` |  |
-| `PredictionScenarioName` | `CHAR(60)` | Description of the scenario that must be displayed on the UI |
-| `RiskRangeCategory` | `CHAR(10)` | Range Category |
-| `RiskRangeCategoryText` | `CHAR(60)` | Short Text for Fixed Values |
-| `BhvrlInsgtsReasonCodeValue` | `CHAR(128)` | Reason Code Value |
-| `BhvrlInsgtsReasonCodeName` | `CHAR(30)` | Field Name |
-| `BhvrlInsgtsReasonText` | `CHAR(60)` | Reason Text |
-| `BhvrlInsgtsRsnWgtgValue` | `DECF(16)` | 8 Byte Decfloat16 |
-| `BhvrlInsgtsReasonQualityValue` | `DEC(16)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PredictionRecordID` |  | |  |  | `CHAR(32)` | Prediction Result Record Identifier |
+| `BhvrlInsgtsRecordID` |  | |  |  | `CHAR(32)` | Record ID |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerName` |  | |  |  | `CHAR(40)` | Name 1 of organization |
+| `PredictionScenarioID` |  | |  |  | `INT1(3)` | Scenario Identifier |
+| `PredictionScenarioDateTime` |  | |  |  | `DEC(15)` | Prediction UTC Time Stamp |
+| `BhvrlInsgtsAccountNumber` |  | |  |  | `CHAR(12)` | Account Number |
+| `BhvrlInsgtsAccountName` |  | |  |  | `CHAR(35)` | Contract Account Name |
+| `BhvrlInsgtsSubAccountNumber` |  | |  |  | `CHAR(20)` | Subaccount Number |
+| `BhvrlInsgtsSubAccountName` |  | |  |  | `CHAR(1)` |  |
+| `BhvrlInsgtsPredictionValue` |  | |  |  | `INT1(3)` |  |
+| `NumberOfBusinessPartners` |  | |  |  | `INT4(10)` |  |
+| `PredictionScenarioName` |  | |  |  | `CHAR(60)` | Description of the scenario that must be displayed on the UI |
+| `RiskRangeCategory` |  | |  |  | `CHAR(10)` | Range Category |
+| `RiskRangeCategoryText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `BhvrlInsgtsReasonCodeValue` |  | |  |  | `CHAR(128)` | Reason Code Value |
+| `BhvrlInsgtsReasonCodeName` |  | |  |  | `CHAR(30)` | Field Name |
+| `BhvrlInsgtsReasonText` |  | |  |  | `CHAR(60)` | Reason Text |
+| `BhvrlInsgtsRsnWgtgValue` |  | |  |  | `DECF(16)` | 8 Byte Decfloat16 |
+| `BhvrlInsgtsReasonQualityValue` |  | |  |  | `DEC(16)` |  |

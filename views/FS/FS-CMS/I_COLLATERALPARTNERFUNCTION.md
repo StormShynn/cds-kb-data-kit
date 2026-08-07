@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralPartnerFunction` | `CHAR(6)` | Business Partner Function |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralPartnerFunction` |  | |  |  | `CHAR(6)` | Business Partner Function |

@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductType` | `NUMC(3)` | Royalty 2.0 - Wyoming - Product Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` |  | |  |  | `NUMC(3)` | Royalty 2.0 - Wyoming - Product Code |

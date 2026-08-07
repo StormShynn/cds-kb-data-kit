@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
-| `DebtCollectionsSegmentName` | `CHAR(50)` | Name of Collection Segment |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `DebtCollectionsSegmentName` |  | |  |  | `CHAR(50)` | Name of Collection Segment |

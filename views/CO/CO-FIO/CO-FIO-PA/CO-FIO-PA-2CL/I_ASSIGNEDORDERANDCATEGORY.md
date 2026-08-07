@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AssignedOrderNumber` | `CHAR(12)` | Standing order number |
-| `ETOOrdCategory` | `CHAR(2)` | Order Category |
-| `AssignedOrdName` | `CHAR(40)` | Assigned Ord Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AssignedOrderNumber` |  | |  |  | `CHAR(12)` | Standing order number |
+| `ETOOrdCategory` |  | |  |  | `CHAR(2)` | Order Category |
+| `AssignedOrdName` |  | |  |  | `CHAR(40)` | Assigned Ord Description |

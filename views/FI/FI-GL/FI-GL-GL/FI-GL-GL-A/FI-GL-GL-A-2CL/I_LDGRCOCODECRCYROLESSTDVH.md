@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeCurrencyRole` | `CHAR(2)` | Company Code Currency Role |
-| `GlobalCurrencyRole` | `CHAR(2)` | Global Currency Role |
-| `FreeDefinedCurrency1Role` | `CHAR(2)` | Freely Defined Currency 1 Role  (Currency Type) |
-| `FreeDefinedCurrency2Role` | `CHAR(2)` | Freely Defined Currency 2 Role  (Currency Type) |
-| `FreeDefinedCurrency3Role` | `CHAR(2)` | Freely Defined Currency 3 Role  (Currency Type) |
-| `FreeDefinedCurrency4Role` | `CHAR(2)` | Freely Defined Currency 4 Role  (Currency Type) |
-| `FreeDefinedCurrency5Role` | `CHAR(2)` | Freely Defined Currency 5 Role  (Currency Type) |
-| `FreeDefinedCurrency6Role` | `CHAR(2)` | Freely Defined Currency 6 Role  (Currency Type) |
-| `FreeDefinedCurrency7Role` | `CHAR(2)` | Freely Defined Currency 7 Role  (Currency Type) |
-| `FreeDefinedCurrency8Role` | `CHAR(2)` | Freely Defined Currency 8 Role  (Currency Type) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeCurrencyRole` |  | |  |  | `CHAR(2)` | Company Code Currency Role |
+| `GlobalCurrencyRole` |  | |  |  | `CHAR(2)` | Global Currency Role |
+| `FreeDefinedCurrency1Role` |  | |  |  | `CHAR(2)` | Freely Defined Currency 1 Role  (Currency Type) |
+| `FreeDefinedCurrency2Role` |  | |  |  | `CHAR(2)` | Freely Defined Currency 2 Role  (Currency Type) |
+| `FreeDefinedCurrency3Role` |  | |  |  | `CHAR(2)` | Freely Defined Currency 3 Role  (Currency Type) |
+| `FreeDefinedCurrency4Role` |  | |  |  | `CHAR(2)` | Freely Defined Currency 4 Role  (Currency Type) |
+| `FreeDefinedCurrency5Role` |  | |  |  | `CHAR(2)` | Freely Defined Currency 5 Role  (Currency Type) |
+| `FreeDefinedCurrency6Role` |  | |  |  | `CHAR(2)` | Freely Defined Currency 6 Role  (Currency Type) |
+| `FreeDefinedCurrency7Role` |  | |  |  | `CHAR(2)` | Freely Defined Currency 7 Role  (Currency Type) |
+| `FreeDefinedCurrency8Role` |  | |  |  | `CHAR(2)` | Freely Defined Currency 8 Role  (Currency Type) |

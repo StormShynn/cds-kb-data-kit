@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OperationStdWorkQtyGrpgCat` | `CHAR(1)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OperationStdWorkQtyGrpgCat` |  | |  |  | `CHAR(1)` |  |

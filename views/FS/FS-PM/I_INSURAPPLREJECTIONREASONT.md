@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurApplRjcnRsn` | `NUMC(3)` | Refusal Reason |
-| `InsurApplRjcnRsnName` | `CHAR(40)` | Name of Refusal Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurApplRjcnRsn` |  | |  |  | `NUMC(3)` | Refusal Reason |
+| `InsurApplRjcnRsnName` |  | |  |  | `CHAR(40)` | Name of Refusal Reason |

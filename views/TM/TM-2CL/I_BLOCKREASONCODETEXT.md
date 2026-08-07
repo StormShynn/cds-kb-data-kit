@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BlockReason` | `CHAR(2)` | Block Reason |
-| `Language` | `LANG(1)` | Language Key |
-| `BlockReasonDesc` | `CHAR(40)` | Block Reason Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BlockReason` |  | |  |  | `CHAR(2)` | Block Reason |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BlockReasonDesc` |  | |  |  | `CHAR(40)` | Block Reason Description |

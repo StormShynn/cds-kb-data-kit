@@ -35,35 +35,35 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Customer` | `CHAR(10)` | Customer |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `SpecialGLCode` | `CHAR(1)` | Special G/L Indicator |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `YearMonth` | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `CustomerCountry` | `CHAR(3)` | Country / Region Key |
-| `CustomerRegion` | `CHAR(3)` | Region (State, Province, County) |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `ReconciliationAccount` | `CHAR(10)` | Reconciliation Account in General Ledger |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `DurationUnit` | `UNIT(3)` | Unit of Measurement |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `CustomerName` | `CHAR(80)` | Name of Customer |
-| `CustomerCountryName` | `CHAR(50)` | Country/Region Name |
-| `CustomerRegionName` | `CHAR(20)` | Description |
-| `AccountingClerkName` | `CHAR(30)` | Name of Accounting Clerk |
-| `ReconciliationAccountLongName` | `CHAR(50)` | G/L Account Long Name |
-| `SpecialGLCodeName` | `CHAR(30)` | Long Text for Special G/L Indicators |
-| `GLAccountLongName` | `CHAR(50)` | G/L Account Long Name |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerAccountGroupName` | `CHAR(30)` | Account Group Name |
-| `CustomerClassification` | `CHAR(2)` | Customer Classification |
-| `CustomerClassificationDesc` | `CHAR(20)` | Customer Classification Description |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `DebitAmtInDisplayCrcy` | `CURR(27)` |  |
-| `RevenueAmountInDisplayCrcy` | `CURR(27)` |  |
-| `DaysSalesOutstanding` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `YearMonth` |  | |  |  | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `CustomerCountry` |  | |  |  | `CHAR(3)` | Country / Region Key |
+| `CustomerRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `ReconciliationAccount` |  | |  |  | `CHAR(10)` | Reconciliation Account in General Ledger |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `DurationUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `CustomerName` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `CustomerCountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
+| `CustomerRegionName` |  | |  |  | `CHAR(20)` | Description |
+| `AccountingClerkName` |  | |  |  | `CHAR(30)` | Name of Accounting Clerk |
+| `ReconciliationAccountLongName` |  | |  |  | `CHAR(50)` | G/L Account Long Name |
+| `SpecialGLCodeName` |  | |  |  | `CHAR(30)` | Long Text for Special G/L Indicators |
+| `GLAccountLongName` |  | |  |  | `CHAR(50)` | G/L Account Long Name |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerAccountGroupName` |  | |  |  | `CHAR(30)` | Account Group Name |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `CustomerClassificationDesc` |  | |  |  | `CHAR(20)` | Customer Classification Description |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `DebitAmtInDisplayCrcy` |  | |  |  | `CURR(27)` |  |
+| `RevenueAmountInDisplayCrcy` |  | |  |  | `CURR(27)` |  |
+| `DaysSalesOutstanding` |  | |  |  | `INT1(3)` |  |

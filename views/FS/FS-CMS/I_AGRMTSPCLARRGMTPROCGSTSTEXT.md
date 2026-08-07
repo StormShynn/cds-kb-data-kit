@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AgrmtSpclArrgmtProcgStatus` | `CHAR(2)` | Processing Status of Special Arrangement |
-| `AgrmtSpclArrgmtProcgStatusText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgrmtSpclArrgmtProcgStatus` |  | |  |  | `CHAR(2)` | Processing Status of Special Arrangement |
+| `AgrmtSpclArrgmtProcgStatusText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

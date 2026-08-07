@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlREValuationResult` | `CHAR(10)` | Value Calculation Method |
-| `Language` | `LANG(1)` | Language in which description is needed |
-| `ColltrlREValuationResultText` | `CHAR(30)` | Description of valuation result |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlREValuationResult` |  | |  |  | `CHAR(10)` | Value Calculation Method |
+| `Language` |  | |  |  | `LANG(1)` | Language in which description is needed |
+| `ColltrlREValuationResultText` |  | |  |  | `CHAR(30)` | Description of valuation result |

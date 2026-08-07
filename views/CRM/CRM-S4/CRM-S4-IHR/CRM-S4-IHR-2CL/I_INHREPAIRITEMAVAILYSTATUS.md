@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InhRepairItemAvailyStatus` | `CHAR(5)` | Availability of Repair Object at Repair Center |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InhRepairItemAvailyStatus` |  | |  |  | `CHAR(5)` | Availability of Repair Object at Repair Center |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

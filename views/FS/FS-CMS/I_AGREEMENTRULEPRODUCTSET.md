@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionRulesProdSet` | `CHAR(6)` | Identification of a Product Set |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionRulesProdSet` |  | |  |  | `CHAR(6)` | Identification of a Product Set |

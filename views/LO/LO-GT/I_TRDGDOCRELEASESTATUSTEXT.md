@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `TrdgDocReleaseStatus` | `CHAR(1)` | Release Status for Follow-On Document Generation |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `TrdgDocReleaseStatusName` | `CHAR(60)` | Desc. of Release Status of TC for Follow-On Doc. Generation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TrdgDocReleaseStatus` |  | |  |  | `CHAR(1)` | Release Status for Follow-On Document Generation |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `TrdgDocReleaseStatusName` |  | |  |  | `CHAR(60)` | Desc. of Release Status of TC for Follow-On Doc. Generation |

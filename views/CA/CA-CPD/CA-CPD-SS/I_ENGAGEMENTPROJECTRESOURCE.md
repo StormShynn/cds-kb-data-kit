@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectResourceType` | `CHAR(4)` |  |
-| `EngagementProjectResource` | `CHAR(40)` | Resource ID |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectResourceType` |  | |  |  | `CHAR(4)` |  |
+| `EngagementProjectResource` |  | |  |  | `CHAR(40)` | Resource ID |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |

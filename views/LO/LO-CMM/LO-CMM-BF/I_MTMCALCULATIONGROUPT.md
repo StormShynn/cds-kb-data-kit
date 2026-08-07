@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MTMCalculationGroup` | `CHAR(1)` | MtM Condition Group |
-| `Language` | `LANG(1)` | Language Key |
-| `MTMCalculationGroupName` | `CHAR(20)` | Condition Group - Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MTMCalculationGroup` |  | |  |  | `CHAR(1)` | MtM Condition Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MTMCalculationGroupName` |  | |  |  | `CHAR(20)` | Condition Group - Description |

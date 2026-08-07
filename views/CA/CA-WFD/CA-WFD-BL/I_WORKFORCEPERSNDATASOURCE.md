@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `WorkforcePersonDataSource` | `CHAR(1)` | Data Source |
-| `WorkforcePersonDataSourceText` | `CHAR(60)` | Explanatory Short Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `WorkforcePersonDataSource` |  | |  |  | `CHAR(1)` | Data Source |
+| `WorkforcePersonDataSourceText` |  | |  |  | `CHAR(60)` | Explanatory Short Text |

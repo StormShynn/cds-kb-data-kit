@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProjAssignmentPerDayUUID` | `RAW(16)` | UUID in X form (binary) |
-| `ProjAssignmentUUID` | `RAW(16)` | UUID in X form (binary) |
-| `ProjAssignmentDate` | `DATS(8)` | Field of type DATS |
-| `ProjAssignmentDuration` | `QUAN(15)` | Assignment Duration |
-| `ProjAssignmentDurationUnit` | `UNIT(3)` | Unit of Measure |
-| `ProjAssignmentDurationInHours` | `DEC(15)` | Project Assignment Duration in Hours |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjAssignmentPerDayUUID` |  | |  |  | `RAW(16)` | UUID in X form (binary) |
+| `ProjAssignmentUUID` |  | |  |  | `RAW(16)` | UUID in X form (binary) |
+| `ProjAssignmentDate` |  | |  |  | `DATS(8)` | Field of type DATS |
+| `ProjAssignmentDuration` |  | |  |  | `QUAN(15)` | Assignment Duration |
+| `ProjAssignmentDurationUnit` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `ProjAssignmentDurationInHours` |  | |  |  | `DEC(15)` | Project Assignment Duration in Hours |

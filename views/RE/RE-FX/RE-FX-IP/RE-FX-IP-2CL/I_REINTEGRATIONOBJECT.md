@@ -31,33 +31,33 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InternalRealEstateNumber` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `RealEstateExternalID` | `CHAR(45)` | External Identification |
-| `REStatusObject` | `CHAR(22)` | Object Number |
-| `REIntegrationObjectNumber` | `CHAR(20)` | Real Estate Object Number |
-| `REIntegrationObjectType` | `CHAR(4)` | Object Type |
-| `REIntegObjectCtrlgObjectType` | `CHAR(1)` | Controlling Object Type |
-| `REIntegrationObjectName` | `CHAR(30)` | Object Name (Short) |
-| `REIntegObjectLongName` | `CHAR(250)` | Object Name (Long) |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `REIntegObjSpaceGroupType` | `CHAR(4)` | Group Type |
-| `RESpaceGroupUsageType` | `CHAR(4)` | Group Usage Type |
-| `RESpaceGrpEnableUseType` | `CHAR(4)` | Usage Enablement Type |
-| `REInternalNumberForUseEnable` | `CHAR(13)` | Internal Object Number (Enable Use) |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `REParentIntegObjectType` | `CHAR(4)` | Parent Object Type |
-| `REParentIntegObjectExternalID` | `CHAR(45)` | Parent External Identification |
-| `REAreaUnit` | `UNIT(3)` | Area Unit |
-| `CreatedByUser` | `CHAR(12)` | Entered By |
-| `CreationDate` | `DATS(8)` | First Entered On |
-| `CreationTime` | `TIMS(6)` | Time of Creation |
-| `RESourceOfCreation` | `CHAR(10)` | Source of Initial Entry |
-| `LastChangedByUser` | `CHAR(12)` | Employee ID |
-| `LastChangeDate` | `DATS(8)` | Last Edited On |
-| `LastChangeTime` | `TIMS(6)` | Last Edited At |
-| `RESourceOfChange` | `CHAR(10)` | Editing Source |
-| `Responsible` | `CHAR(12)` | Person Responsible |
-| `REAuthorizationGroup` | `CHAR(40)` | Authorization Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalRealEstateNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `RealEstateExternalID` |  | |  |  | `CHAR(45)` | External Identification |
+| `REStatusObject` |  | |  |  | `CHAR(22)` | Object Number |
+| `REIntegrationObjectNumber` |  | |  |  | `CHAR(20)` | Real Estate Object Number |
+| `REIntegrationObjectType` |  | |  |  | `CHAR(4)` | Object Type |
+| `REIntegObjectCtrlgObjectType` |  | |  |  | `CHAR(1)` | Controlling Object Type |
+| `REIntegrationObjectName` |  | |  |  | `CHAR(30)` | Object Name (Short) |
+| `REIntegObjectLongName` |  | |  |  | `CHAR(250)` | Object Name (Long) |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `REIntegObjSpaceGroupType` |  | |  |  | `CHAR(4)` | Group Type |
+| `RESpaceGroupUsageType` |  | |  |  | `CHAR(4)` | Group Usage Type |
+| `RESpaceGrpEnableUseType` |  | |  |  | `CHAR(4)` | Usage Enablement Type |
+| `REInternalNumberForUseEnable` |  | |  |  | `CHAR(13)` | Internal Object Number (Enable Use) |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `REParentIntegObjectType` |  | |  |  | `CHAR(4)` | Parent Object Type |
+| `REParentIntegObjectExternalID` |  | |  |  | `CHAR(45)` | Parent External Identification |
+| `REAreaUnit` |  | |  |  | `UNIT(3)` | Area Unit |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Entered By |
+| `CreationDate` |  | |  |  | `DATS(8)` | First Entered On |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Creation |
+| `RESourceOfCreation` |  | |  |  | `CHAR(10)` | Source of Initial Entry |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Employee ID |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Edited On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Last Edited At |
+| `RESourceOfChange` |  | |  |  | `CHAR(10)` | Editing Source |
+| `Responsible` |  | |  |  | `CHAR(12)` | Person Responsible |
+| `REAuthorizationGroup` |  | |  |  | `CHAR(40)` | Authorization Group |

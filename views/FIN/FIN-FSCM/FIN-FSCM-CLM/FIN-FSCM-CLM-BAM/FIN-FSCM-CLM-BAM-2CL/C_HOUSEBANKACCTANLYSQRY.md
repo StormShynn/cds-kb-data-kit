@@ -34,15 +34,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankGroup` | `CHAR(10)` | Bank Group ID |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` | `CHAR(15)` | Bank Keys |
-| `CreditRating` | `CHAR(3)` | Rating |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BankInBankGroup` | `CHAR(10)` | Bank In Bank Group |
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `HouseBank` | `CHAR(5)` | House Bank ID |
-| `HouseBankAccount` | `CHAR(5)` | House Bank Account |
-| `NumberOfCompanyCodes` | `INT4(10)` | Number of Company Codes |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Keys |
+| `CreditRating` |  | |  |  | `CHAR(3)` | Rating |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BankInBankGroup` |  | |  |  | `CHAR(10)` | Bank In Bank Group |
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `HouseBank` |  | |  |  | `CHAR(5)` | House Bank ID |
+| `HouseBankAccount` |  | |  |  | `CHAR(5)` | House Bank Account |
+| `NumberOfCompanyCodes` |  | |  |  | `INT4(10)` | Number of Company Codes |

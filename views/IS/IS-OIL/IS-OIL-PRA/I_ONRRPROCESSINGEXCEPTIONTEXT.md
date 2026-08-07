@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProcessingException` | `CHAR(1)` | ONRR-2014 - Disposition Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ProcessingExceptionName` | `CHAR(60)` | Disposition Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessingException` |  | |  |  | `CHAR(1)` | ONRR-2014 - Disposition Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProcessingExceptionName` |  | |  |  | `CHAR(60)` | Disposition Name |

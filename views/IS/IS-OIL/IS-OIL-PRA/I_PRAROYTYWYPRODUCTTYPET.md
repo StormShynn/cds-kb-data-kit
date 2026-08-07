@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductType` | `NUMC(3)` | Royalty 2.0 - Wyoming - Product Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ProductTypeName` | `CHAR(60)` | Wyoming Product Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` |  | |  |  | `NUMC(3)` | Royalty 2.0 - Wyoming - Product Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProductTypeName` |  | |  |  | `CHAR(60)` | Wyoming Product Type Name |

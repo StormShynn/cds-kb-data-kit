@@ -28,18 +28,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `CommitmentItemHierarchy` | `CHAR(40)` | Commitment Item Hierarchy |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `ValidityEndDate` | `DATS(8)` | Commitment Item Validity End Date |
-| `ParentNode` | `CHAR(50)` | Hierarchy parent node |
-| `HierarchyVersion` | `NUMC(15)` | Hierarchy version |
-| `ValidityStartDate` | `DATS(8)` | Commitment Item Validity Start Date |
-| `CommitmentItemFiscalYear` | `NUMC(4)` |  |
-| `CommitmentItem` | `CHAR(24)` | Commitment Item |
-| `SequenceNumber` | `CHAR(56)` |  |
-| `HierarchyNodeSequence` | `NUMC(6)` | Hierarchy Sequence Number |
-| `HierarchyNodeLevel` | `NUMC(6)` | Hierarchy Level |
-| `NodeType` | `CHAR(1)` | Hierarchy node type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `CommitmentItemHierarchy` |  | |  |  | `CHAR(40)` | Commitment Item Hierarchy |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Commitment Item Validity End Date |
+| `ParentNode` |  | |  |  | `CHAR(50)` | Hierarchy parent node |
+| `HierarchyVersion` |  | |  |  | `NUMC(15)` | Hierarchy version |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Commitment Item Validity Start Date |
+| `CommitmentItemFiscalYear` |  | |  |  | `NUMC(4)` |  |
+| `CommitmentItem` |  | |  |  | `CHAR(24)` | Commitment Item |
+| `SequenceNumber` |  | |  |  | `CHAR(56)` |  |
+| `HierarchyNodeSequence` |  | |  |  | `NUMC(6)` | Hierarchy Sequence Number |
+| `HierarchyNodeLevel` |  | |  |  | `NUMC(6)` | Hierarchy Level |
+| `NodeType` |  | |  |  | `CHAR(1)` | Hierarchy node type |

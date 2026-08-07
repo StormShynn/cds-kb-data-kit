@@ -36,13 +36,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Product` | `CHAR(40)` | Material Number |
-| `ProductSeasonYear` | `CHAR(4)` | Season Year |
-| `ProductSeason` | `CHAR(10)` | Season |
-| `ProductCollection` | `CHAR(10)` | Fashion Collection |
-| `ProductTheme` | `CHAR(10)` | Fashion Theme |
-| `CrossPlantConfigurableProduct` | `CHAR(40)` | Cross-Plant Configurable Material |
-| `ProductSeasonInternalUUID` | `RAW(16)` | Season Internal Unique Identifier |
-| `ProductSeasonName` | `CHAR(80)` | Description of Season Assigned to Article |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` |  | |  |  | `CHAR(40)` | Material Number |
+| `ProductSeasonYear` |  | |  |  | `CHAR(4)` | Season Year |
+| `ProductSeason` |  | |  |  | `CHAR(10)` | Season |
+| `ProductCollection` |  | |  |  | `CHAR(10)` | Fashion Collection |
+| `ProductTheme` |  | |  |  | `CHAR(10)` | Fashion Theme |
+| `CrossPlantConfigurableProduct` |  | |  |  | `CHAR(40)` | Cross-Plant Configurable Material |
+| `ProductSeasonInternalUUID` |  | |  |  | `RAW(16)` | Season Internal Unique Identifier |
+| `ProductSeasonName` |  | |  |  | `CHAR(80)` | Description of Season Assigned to Article |

@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OwnerPaymentStatus` | `CHAR(2)` | Pay Code |
-| `Language` | `LANG(1)` | Language Key |
-| `OwnerPaymentStatusName` | `CHAR(60)` | Owner Pay Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OwnerPaymentStatus` |  | |  |  | `CHAR(2)` | Pay Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `OwnerPaymentStatusName` |  | |  |  | `CHAR(60)` | Owner Pay Code Name |

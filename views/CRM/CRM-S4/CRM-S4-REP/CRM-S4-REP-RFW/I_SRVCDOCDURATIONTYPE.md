@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SrvcDocDurationType` | `CHAR(12)` | Name for Type of Time Duration |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcDocDurationType` |  | |  |  | `CHAR(12)` | Name for Type of Time Duration |

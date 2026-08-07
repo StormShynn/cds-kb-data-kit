@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `REInternalFinNumber` | `CHAR(8)` | Internal Key of Real Estate Object (FI) |
-| `REStatusObject` | `CHAR(22)` | Object Number |
-| `InternalRealEstateNumber` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `RealEstateObjectType` | `CHAR(2)` | Object Type |
-| `REIdentificationKey` | `CHAR(45)` | ID Part Key, for example "1000/123" |
-| `REIdentification` | `CHAR(50)` | Complete Object Identification, for Example BE 1000/123 |
-| `REAccountingObjectName` | `CHAR(50)` | Complete Object Identification, for Example BE 1000/123 |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `RealEstateContract` | `CHAR(13)` | Real Estate Contract Number |
-| `REBusinessEntity` | `CHAR(8)` | RE Business Entity |
-| `RERentalObject` | `CHAR(8)` | RE Rental Object |
-| `RealEstateBuilding` | `CHAR(8)` | Real Estate Building |
-| `RealEstateProperty` | `CHAR(8)` | Real Estate Property |
-| `REServiceChargeKey` | `CHAR(4)` | RE Service Charge Key |
-| `RESettlementUnitID` | `CHAR(5)` | RE Settlement Unit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REInternalFinNumber` |  | |  |  | `CHAR(8)` | Internal Key of Real Estate Object (FI) |
+| `REStatusObject` |  | |  |  | `CHAR(22)` | Object Number |
+| `InternalRealEstateNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `RealEstateObjectType` |  | |  |  | `CHAR(2)` | Object Type |
+| `REIdentificationKey` |  | |  |  | `CHAR(45)` | ID Part Key, for example "1000/123" |
+| `REIdentification` |  | |  |  | `CHAR(50)` | Complete Object Identification, for Example BE 1000/123 |
+| `REAccountingObjectName` |  | |  |  | `CHAR(50)` | Complete Object Identification, for Example BE 1000/123 |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `RealEstateContract` |  | |  |  | `CHAR(13)` | Real Estate Contract Number |
+| `REBusinessEntity` |  | |  |  | `CHAR(8)` | RE Business Entity |
+| `RERentalObject` |  | |  |  | `CHAR(8)` | RE Rental Object |
+| `RealEstateBuilding` |  | |  |  | `CHAR(8)` | Real Estate Building |
+| `RealEstateProperty` |  | |  |  | `CHAR(8)` | Real Estate Property |
+| `REServiceChargeKey` |  | |  |  | `CHAR(4)` | RE Service Charge Key |
+| `RESettlementUnitID` |  | |  |  | `CHAR(5)` | RE Settlement Unit |

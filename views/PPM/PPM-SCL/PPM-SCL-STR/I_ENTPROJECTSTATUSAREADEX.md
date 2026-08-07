@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `StatusAreaUUID` | `RAW(16)` | Entity Guid |
-| `ProjectUUID` | `RAW(16)` | Entity Guid |
-| `StatusArea` | `CHAR(4)` | Status Area Category |
-| `StatusAreaStatus` | `CHAR(2)` | Status Area Status |
-| `StatusTrend` | `CHAR(2)` | Status Area Trend |
-| `StatusAreaNote` | `STRI(5000)` | Comments |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Who Created Object |
-| `CreationDateTime` | `DEC(15)` | Timestamp of Object Creation |
-| `LastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `LastChangeDateTime` | `DEC(15)` | Timestamp of Last Object Change |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StatusAreaUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `ProjectUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `StatusArea` |  | |  |  | `CHAR(4)` | Status Area Category |
+| `StatusAreaStatus` |  | |  |  | `CHAR(2)` | Status Area Status |
+| `StatusTrend` |  | |  |  | `CHAR(2)` | Status Area Trend |
+| `StatusAreaNote` |  | |  |  | `STRI(5000)` | Comments |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Created Object |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Timestamp of Object Creation |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Timestamp of Last Object Change |

@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSInvestigationActivityStatus` | `CHAR(2)` | Status of Investigation Activity |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSInvestigationActivityStatus` |  | |  |  | `CHAR(2)` | Status of Investigation Activity |

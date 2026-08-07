@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentHour` | `CHAR(2)` | Hour |
-| `Language` | `LANG(1)` | Language Key |
-| `IncidentHourName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentHour` |  | |  |  | `CHAR(2)` | Hour |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IncidentHourName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

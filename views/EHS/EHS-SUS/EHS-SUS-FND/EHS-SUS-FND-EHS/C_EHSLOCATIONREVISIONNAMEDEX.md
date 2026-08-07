@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationRevisionNameUUID` | `RAW(16)` | EHS Location - Revision Name UUID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationRevisionUUID` | `RAW(16)` | EHS Location - Revision UUID |
-| `Language` | `LANG(1)` | Language |
-| `EHSLocationName` | `CHAR(60)` | Location Revision Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationRevisionNameUUID` |  | |  |  | `RAW(16)` | EHS Location - Revision Name UUID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationRevisionUUID` |  | |  |  | `RAW(16)` | EHS Location - Revision UUID |
+| `Language` |  | |  |  | `LANG(1)` | Language |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location Revision Text |

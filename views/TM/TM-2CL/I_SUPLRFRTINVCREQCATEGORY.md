@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrFrtInvcReqCategory` | `CHAR(2)` | Freight Settlement Document Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrFrtInvcReqCategory` |  | |  |  | `CHAR(2)` | Freight Settlement Document Category |

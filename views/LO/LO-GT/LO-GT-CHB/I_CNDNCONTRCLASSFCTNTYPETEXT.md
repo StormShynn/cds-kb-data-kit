@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrClassfctnType` | `CHAR(2)` | Condition Contract Category |
-| `CndnContrClassfctnTypeDesc` | `CHAR(40)` | Condition Contract Category Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrClassfctnType` |  | |  |  | `CHAR(2)` | Condition Contract Category |
+| `CndnContrClassfctnTypeDesc` |  | |  |  | `CHAR(40)` | Condition Contract Category Text |

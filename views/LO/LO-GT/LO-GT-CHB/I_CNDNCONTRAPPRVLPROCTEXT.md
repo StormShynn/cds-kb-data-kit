@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrApprvlProc` | `CHAR(1)` | Approval Process |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrApprvlProcName` | `CHAR(60)` | Description of Approval Process Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrApprvlProc` |  | |  |  | `CHAR(1)` | Approval Process |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrApprvlProcName` |  | |  |  | `CHAR(60)` | Description of Approval Process Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductType` | `CHAR(2)` | Tax 2.0 - NM - Product Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ProductTypeName` | `CHAR(60)` | New Mexico Product Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` |  | |  |  | `CHAR(2)` | Tax 2.0 - NM - Product Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProductTypeName` |  | |  |  | `CHAR(60)` | New Mexico Product Type Name |

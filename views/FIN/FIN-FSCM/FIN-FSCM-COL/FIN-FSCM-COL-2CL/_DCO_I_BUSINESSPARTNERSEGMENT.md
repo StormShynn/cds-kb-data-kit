@@ -37,19 +37,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `DCoAccountUUID` | `RAW(16)` | UUID of Collection Account |
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
-| `DCoCollectorGroup` | `CHAR(40)` | Collections Agent Group |
-| `DCoAccountPrioritizationRule` | `CHAR(10)` | Account Prioritization Rule |
-| `DbtCollsAccountClassification` | `CHAR(2)` | Account Classification |
-| `DCoAcctExclsnFrmWlStartDate` | `DATS(8)` | Start Date from Which an Account Is Excluded from Worklist |
-| `DCoAcctExclsnFrmWlEndDate` | `DATS(8)` | Date Until Which an Account Is Excluded from Worklist |
-| `DCoAcctMainCustContactPerson` | `CHAR(10)` | Main Customer Contact Person |
-| `DCoPaymentBehaviorRating` | `CHAR(2)` | Payment Behavior Rating |
-| `DCoAccountCreatedByUser` | `CHAR(12)` | Created By |
-| `DCoAccountCreationDateTime` | `DEC(15)` | Created On/At |
-| `DCoAccountLastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `DCoAccountLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `DCoAccountUUID` |  | |  |  | `RAW(16)` | UUID of Collection Account |
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `DCoCollectorGroup` |  | |  |  | `CHAR(40)` | Collections Agent Group |
+| `DCoAccountPrioritizationRule` |  | |  |  | `CHAR(10)` | Account Prioritization Rule |
+| `DbtCollsAccountClassification` |  | |  |  | `CHAR(2)` | Account Classification |
+| `DCoAcctExclsnFrmWlStartDate` |  | |  |  | `DATS(8)` | Start Date from Which an Account Is Excluded from Worklist |
+| `DCoAcctExclsnFrmWlEndDate` |  | |  |  | `DATS(8)` | Date Until Which an Account Is Excluded from Worklist |
+| `DCoAcctMainCustContactPerson` |  | |  |  | `CHAR(10)` | Main Customer Contact Person |
+| `DCoPaymentBehaviorRating` |  | |  |  | `CHAR(2)` | Payment Behavior Rating |
+| `DCoAccountCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `DCoAccountCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DCoAccountLastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DCoAccountLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |

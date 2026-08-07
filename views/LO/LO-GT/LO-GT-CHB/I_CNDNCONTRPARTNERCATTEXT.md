@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrPartnerCat` | `CHAR(2)` | Type of Business Partner for Condition Contract |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrPartnerCatName` | `CHAR(60)` | Condition Contract Partner Category Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrPartnerCat` |  | |  |  | `CHAR(2)` | Type of Business Partner for Condition Contract |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrPartnerCatName` |  | |  |  | `CHAR(60)` | Condition Contract Partner Category Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementRblComponentType` | `CHAR(3)` | CComponent Type of a Receivable |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementRblComponentType` |  | |  |  | `CHAR(3)` | CComponent Type of a Receivable |

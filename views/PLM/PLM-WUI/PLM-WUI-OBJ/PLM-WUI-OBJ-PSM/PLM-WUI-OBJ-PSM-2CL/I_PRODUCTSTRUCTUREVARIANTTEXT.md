@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductStructureVariantUUID` | `RAW(16)` | Internal Number of the PVS Variant |
-| `ProdStrucVariantChgStateIntID` | `CHAR(8)` |  |
-| `Language` | `LANG(1)` | Language Key |
-| `ProdStrucVariantDescription` | `CHAR(60)` | Description of iPPE Variant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductStructureVariantUUID` |  | |  |  | `RAW(16)` | Internal Number of the PVS Variant |
+| `ProdStrucVariantChgStateIntID` |  | |  |  | `CHAR(8)` |  |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProdStrucVariantDescription` |  | |  |  | `CHAR(60)` | Description of iPPE Variant |

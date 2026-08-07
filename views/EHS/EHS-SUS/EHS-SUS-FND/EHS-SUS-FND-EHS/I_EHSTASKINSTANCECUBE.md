@@ -33,77 +33,77 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSPlannedTaskUUID` | `RAW(16)` | Planned Task UUID |
-| `EHSMainLocationID` | `CHAR(20)` | Location ID |
-| `EHSLocClassifierID` | `CHAR(40)` | BCO ID |
-| `TaskFollowRefObjUUID` | `RAW(16)` | UUID of Follow-Up Object of Task |
-| `EHSPlannedTaskID` | `CHAR(20)` | Planned Task ID |
-| `EHSTaskDueDate` | `DATS(8)` | Due Date of a Planned Task |
-| `EHSTaskStartDate` | `DATS(8)` | Start Date of a Planned Task |
-| `EHSTaskInstceCompletionDate` | `DATS(8)` | Completion Date of a Planned Task |
-| `EHSTaskOwnerBP` | `CHAR(10)` | Owner |
-| `EHSTaskOwnerUserName` | `CHAR(80)` | User Description |
-| `EHSTaskDefinitionUUID` | `RAW(16)` | Task Identifier |
-| `EHSTaskTitle` | `CHAR(60)` | Task Title |
-| `EHSTaskPriority` | `NUMC(1)` | Task Definition - Priority |
-| `EHSTaskPriorityName` | `CHAR(60)` | Short Text for Fixed Values |
-| `EHSTaskDefinitionStatus` | `CHAR(2)` | Task Status |
-| `EHSTaskAssignedUser` | `CHAR(10)` | Assignee |
-| `EHSTaskAssignedUserName` | `CHAR(80)` | User Description |
-| `EHSTaskApprovingUser` | `CHAR(10)` | Approver |
-| `EHSTaskApprovingUserName` | `CHAR(80)` | User Description |
-| `EHSSemanticObject` | `CHAR(30)` | Semantic Object |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSTaskDefinitionType` | `CHAR(32)` | Task Type |
-| `EHSTaskDefinitionTypeName` | `CHAR(132)` | Description of the Task Type |
-| `EHSTaskStatus` | `CHAR(2)` | Status of Task Instance (Without Conversion Exit) |
-| `WorkflowTaskStatus` | `CHAR(12)` | Processing Status of a Work Item |
-| `EHSTaskRelatedObjInstanceUUID` | `RAW(16)` | Task Host Object Instance Identifier |
-| `EHSLocationName` | `CHAR(60)` | Location |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationTypeText` | `CHAR(40)` | Location Type Name |
-| `Country` | `CHAR(3)` | Country/Region |
-| `CountryName` | `CHAR(50)` | Country/Region Name |
-| `Region` | `CHAR(3)` | Region |
-| `RegionName` | `CHAR(20)` | Description |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `PlantName` | `CHAR(30)` | Plant Name |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit ID |
-| `OrganizationalUnitName` | `CHAR(25)` | Short Text of Organizational Unit |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `ControllingAreaName` | `CHAR(25)` | Controlling Area Name |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CostCenterName` | `CHAR(20)` | Cost Center Name |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `EHSLocClassifiersText` | `CHAR(255)` | List of Classifiers (Comma Separated) - short |
-| `TaskFollowCategoryCode` | `CHAR(21)` | Follow Up Category |
-| `EHSTriggerCategoryDesc` | `CHAR(40)` | Description (Extra Short) |
-| `CmplRqVersUUID` | `RAW(16)` | Compliance Requirement UUID |
-| `ComplianceRequirement` | `CHAR(30)` | Compliance Requirement |
-| `CmplRqVersName` | `CHAR(255)` | Compliance Requirement Version Name |
-| `CmplRqUUID` | `RAW(16)` | Compliance Requirement |
-| `CmplRqType` | `CHAR(2)` | Compliance Requirement Type |
-| `CmplRqTypeName` | `CHAR(60)` | Short Text for Fixed Values |
-| `CmplRqVersParagraphID` | `CHAR(30)` | Compliance Requirement Paragraph ID |
-| `CmplRqVersParagraphName` | `CHAR(255)` | Paragraph Name |
-| `EHSComplianceScenarioRootUUID` | `RAW(16)` | NodeID |
-| `EHSComplianceScenarioName` | `CHAR(60)` | Common Data Element for Translation |
-| `DeviationUUID` | `RAW(16)` | NodeID |
-| `IncidentRefUUID` | `RAW(16)` | Incident Key |
-| `IncidentID` | `CHAR(20)` | Incident ID |
-| `EHSTaskHostObjectInstanceUUID` | `RAW(16)` | Task Host Object Instance Identifier |
-| `EHSTaskHostObjectInstance` | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
-| `IncdntTskRefAccessRestriction` | `CHAR(1)` | Restricted Access to Person Information |
-| `EHSTaskIsRecurrent` | `CHAR(1)` | Recurrence |
-| `EHSTaskHasWorkflow` | `CHAR(1)` | Workflow Exists |
-| `EHSTaskHasDeviation` | `CHAR(1)` | EHS Task has deviation |
-| `EHSSemanticObjectName` | `CHAR(60)` | Task Origin |
-| `IsOverdue` | `CHAR(1)` | Overdue Task |
-| `NumberOfRecords` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSPlannedTaskUUID` |  | |  |  | `RAW(16)` | Planned Task UUID |
+| `EHSMainLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSLocClassifierID` |  | |  |  | `CHAR(40)` | BCO ID |
+| `TaskFollowRefObjUUID` |  | |  |  | `RAW(16)` | UUID of Follow-Up Object of Task |
+| `EHSPlannedTaskID` |  | |  |  | `CHAR(20)` | Planned Task ID |
+| `EHSTaskDueDate` |  | |  |  | `DATS(8)` | Due Date of a Planned Task |
+| `EHSTaskStartDate` |  | |  |  | `DATS(8)` | Start Date of a Planned Task |
+| `EHSTaskInstceCompletionDate` |  | |  |  | `DATS(8)` | Completion Date of a Planned Task |
+| `EHSTaskOwnerBP` |  | |  |  | `CHAR(10)` | Owner |
+| `EHSTaskOwnerUserName` |  | |  |  | `CHAR(80)` | User Description |
+| `EHSTaskDefinitionUUID` |  | |  |  | `RAW(16)` | Task Identifier |
+| `EHSTaskTitle` |  | |  |  | `CHAR(60)` | Task Title |
+| `EHSTaskPriority` |  | |  |  | `NUMC(1)` | Task Definition - Priority |
+| `EHSTaskPriorityName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `EHSTaskDefinitionStatus` |  | |  |  | `CHAR(2)` | Task Status |
+| `EHSTaskAssignedUser` |  | |  |  | `CHAR(10)` | Assignee |
+| `EHSTaskAssignedUserName` |  | |  |  | `CHAR(80)` | User Description |
+| `EHSTaskApprovingUser` |  | |  |  | `CHAR(10)` | Approver |
+| `EHSTaskApprovingUserName` |  | |  |  | `CHAR(80)` | User Description |
+| `EHSSemanticObject` |  | |  |  | `CHAR(30)` | Semantic Object |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSTaskDefinitionType` |  | |  |  | `CHAR(32)` | Task Type |
+| `EHSTaskDefinitionTypeName` |  | |  |  | `CHAR(132)` | Description of the Task Type |
+| `EHSTaskStatus` |  | |  |  | `CHAR(2)` | Status of Task Instance (Without Conversion Exit) |
+| `WorkflowTaskStatus` |  | |  |  | `CHAR(12)` | Processing Status of a Work Item |
+| `EHSTaskRelatedObjInstanceUUID` |  | |  |  | `RAW(16)` | Task Host Object Instance Identifier |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationTypeText` |  | |  |  | `CHAR(40)` | Location Type Name |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `CountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
+| `Region` |  | |  |  | `CHAR(3)` | Region |
+| `RegionName` |  | |  |  | `CHAR(20)` | Description |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `PlantName` |  | |  |  | `CHAR(30)` | Plant Name |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit ID |
+| `OrganizationalUnitName` |  | |  |  | `CHAR(25)` | Short Text of Organizational Unit |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ControllingAreaName` |  | |  |  | `CHAR(25)` | Controlling Area Name |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CostCenterName` |  | |  |  | `CHAR(20)` | Cost Center Name |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSLocClassifiersText` |  | |  |  | `CHAR(255)` | List of Classifiers (Comma Separated) - short |
+| `TaskFollowCategoryCode` |  | |  |  | `CHAR(21)` | Follow Up Category |
+| `EHSTriggerCategoryDesc` |  | |  |  | `CHAR(40)` | Description (Extra Short) |
+| `CmplRqVersUUID` |  | |  |  | `RAW(16)` | Compliance Requirement UUID |
+| `ComplianceRequirement` |  | |  |  | `CHAR(30)` | Compliance Requirement |
+| `CmplRqVersName` |  | |  |  | `CHAR(255)` | Compliance Requirement Version Name |
+| `CmplRqUUID` |  | |  |  | `RAW(16)` | Compliance Requirement |
+| `CmplRqType` |  | |  |  | `CHAR(2)` | Compliance Requirement Type |
+| `CmplRqTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `CmplRqVersParagraphID` |  | |  |  | `CHAR(30)` | Compliance Requirement Paragraph ID |
+| `CmplRqVersParagraphName` |  | |  |  | `CHAR(255)` | Paragraph Name |
+| `EHSComplianceScenarioRootUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSComplianceScenarioName` |  | |  |  | `CHAR(60)` | Common Data Element for Translation |
+| `DeviationUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentRefUUID` |  | |  |  | `RAW(16)` | Incident Key |
+| `IncidentID` |  | |  |  | `CHAR(20)` | Incident ID |
+| `EHSTaskHostObjectInstanceUUID` |  | |  |  | `RAW(16)` | Task Host Object Instance Identifier |
+| `EHSTaskHostObjectInstance` |  | |  |  | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
+| `IncdntTskRefAccessRestriction` |  | |  |  | `CHAR(1)` | Restricted Access to Person Information |
+| `EHSTaskIsRecurrent` |  | |  |  | `CHAR(1)` | Recurrence |
+| `EHSTaskHasWorkflow` |  | |  |  | `CHAR(1)` | Workflow Exists |
+| `EHSTaskHasDeviation` |  | |  |  | `CHAR(1)` | EHS Task has deviation |
+| `EHSSemanticObjectName` |  | |  |  | `CHAR(60)` | Task Origin |
+| `IsOverdue` |  | |  |  | `CHAR(1)` | Overdue Task |
+| `NumberOfRecords` |  | |  |  | `INT1(3)` |  |

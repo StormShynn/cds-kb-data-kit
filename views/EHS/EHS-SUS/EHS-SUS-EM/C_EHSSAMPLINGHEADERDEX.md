@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SamplingHeaderUUID` | `RAW(16)` | NodeID |
-| `SamplingDefinitionUUID` | `RAW(16)` | NodeID |
-| `EHSSamplingHeaderID` | `CHAR(20)` | Header ID of Sampling Definition |
-| `EHSSamplingHeaderTitle` | `CHAR(132)` | Sampling Definition Name |
-| `SamplingDefinitionName` | `CHAR(132)` | Sampling Definition Name |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `SamplingAnalyteType` | `CHAR(2)` | Subject Type |
-| `SamplingAnalyteUUID` | `RAW(16)` | Collective Subject Search |
-| `EHSSubjectType` | `CHAR(2)` | Subject Type |
-| `EHSSubjectUUID` | `RAW(16)` | Reference to Subject Type BO Root Node ID |
-| `SamplingDefMigrationSource` | `CHAR(60)` | Migration Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SamplingHeaderUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `SamplingDefinitionUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSSamplingHeaderID` |  | |  |  | `CHAR(20)` | Header ID of Sampling Definition |
+| `EHSSamplingHeaderTitle` |  | |  |  | `CHAR(132)` | Sampling Definition Name |
+| `SamplingDefinitionName` |  | |  |  | `CHAR(132)` | Sampling Definition Name |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `SamplingAnalyteType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `SamplingAnalyteUUID` |  | |  |  | `RAW(16)` | Collective Subject Search |
+| `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
+| `SamplingDefMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |

@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NotaFiscal` | `NUMC(10)` | Document Number |
-| `BR_AgricultureSequenceNumber` | `NUMC(4)` | Counter |
-| `BR_PrescriptionNumber` | `CHAR(30)` | Prescription Number |
-| `BR_TechnicalResponsibleCPF` | `NUMC(11)` | Responsible Technician's CPF |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NotaFiscal` |  | |  |  | `NUMC(10)` | Document Number |
+| `BR_AgricultureSequenceNumber` |  | |  |  | `NUMC(4)` | Counter |
+| `BR_PrescriptionNumber` |  | |  |  | `CHAR(30)` | Prescription Number |
+| `BR_TechnicalResponsibleCPF` |  | |  |  | `NUMC(11)` | Responsible Technician's CPF |

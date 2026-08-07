@@ -34,11 +34,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `MasterFixedAsset` | `CHAR(12)` | Main Asset Number |
-| `FixedAsset` | `CHAR(4)` | Asset Subnumber |
-| `FixedAssetDescription` | `CHAR(50)` | Asset Description |
-| `AssetClass` | `CHAR(8)` | Asset Class |
-| `AssetAuthorizationContext` | `CHAR(10)` | Asset Authorization Context |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `MasterFixedAsset` |  | |  |  | `CHAR(12)` | Main Asset Number |
+| `FixedAsset` |  | |  |  | `CHAR(4)` | Asset Subnumber |
+| `FixedAssetDescription` |  | |  |  | `CHAR(50)` | Asset Description |
+| `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
+| `AssetAuthorizationContext` |  | |  |  | `CHAR(10)` | Asset Authorization Context |

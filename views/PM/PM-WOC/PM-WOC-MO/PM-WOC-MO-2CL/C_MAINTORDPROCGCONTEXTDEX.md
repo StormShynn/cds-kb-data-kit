@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintOrderProcessingContext` | `CHAR(2)` | Additional Processing Context for Maintenance Order |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrderProcessingContext` |  | |  |  | `CHAR(2)` | Additional Processing Context for Maintenance Order |

@@ -28,20 +28,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `ChangeDocObjectClass` | `CHAR(15)` | Object Class |
-| `CreationDate` | `DATS(8)` |  |
-| `CreationTime` | `TIMS(6)` |  |
-| `GrantStatus` | `CHAR(5)` | Grant Status |
-| `ChangeDocNewFieldValue` | `CHAR(254)` | New Content of Changed Field |
-| `ChangeDocPreviousFieldValue` | `CHAR(254)` | Old Content of Changed Field |
-| `IsChangeDocument` | `INT1(3)` |  |
-| `GrantAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `GrantIsNotRelevantGrant` | `CHAR(1)` | Identify the Not Relevant Grant |
-| `NumberOfGteeMMasterDataRecords` | `INT1(3)` |  |
-| `GrantToNextStatusInPercent` | `DECF(34)` |  |
-| `GrantPreviousStatusInPercent` | `DECF(34)` |  |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `ChangeDocObjectClass` |  | |  |  | `CHAR(15)` | Object Class |
+| `CreationDate` |  | |  |  | `DATS(8)` |  |
+| `CreationTime` |  | |  |  | `TIMS(6)` |  |
+| `GrantStatus` |  | |  |  | `CHAR(5)` | Grant Status |
+| `ChangeDocNewFieldValue` |  | |  |  | `CHAR(254)` | New Content of Changed Field |
+| `ChangeDocPreviousFieldValue` |  | |  |  | `CHAR(254)` | Old Content of Changed Field |
+| `IsChangeDocument` |  | |  |  | `INT1(3)` |  |
+| `GrantAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `GrantIsNotRelevantGrant` |  | |  |  | `CHAR(1)` | Identify the Not Relevant Grant |
+| `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
+| `GrantToNextStatusInPercent` |  | |  |  | `DECF(34)` |  |
+| `GrantPreviousStatusInPercent` |  | |  |  | `DECF(34)` |  |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |

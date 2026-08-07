@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DataExtractionViewName` | `CHAR(30)` |  |
-| `DataExtractionViewDescription` | `CHAR(60)` | Short Description of Repository Objects |
-| `IsSAPReleasedView` | `CHAR(1)` | Truth Value: True/False |
-| `DeltaChgDataCaptureIsSupported` | `CHAR(1)` | Truth Value: True/False |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DataExtractionViewName` |  | |  |  | `CHAR(30)` |  |
+| `DataExtractionViewDescription` |  | |  |  | `CHAR(60)` | Short Description of Repository Objects |
+| `IsSAPReleasedView` |  | |  |  | `CHAR(1)` | Truth Value: True/False |
+| `DeltaChgDataCaptureIsSupported` |  | |  |  | `CHAR(1)` | Truth Value: True/False |

@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlREValuationFrequency` | `CHAR(2)` | Indicator : Valuation Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlREValuationFrequency` |  | |  |  | `CHAR(2)` | Indicator : Valuation Period |

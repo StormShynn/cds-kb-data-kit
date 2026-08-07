@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgencyReportType` | `CHAR(1)` | Proc 2.0 - Amended/Current Indicator |
-| `Language` | `LANG(1)` | Language Key |
-| `AgencyReportTypeName` | `CHAR(60)` | Agency Report Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgencyReportType` |  | |  |  | `CHAR(1)` | Proc 2.0 - Amended/Current Indicator |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgencyReportTypeName` |  | |  |  | `CHAR(60)` | Agency Report Type Name |

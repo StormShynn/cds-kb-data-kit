@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdShippingType` | `CHAR(3)` | Shipping Type |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdShippingTypeDesc` | `CHAR(40)` | Transportation Order Shipping Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdShippingType` |  | |  |  | `CHAR(3)` | Shipping Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdShippingTypeDesc` |  | |  |  | `CHAR(40)` | Transportation Order Shipping Type Description |

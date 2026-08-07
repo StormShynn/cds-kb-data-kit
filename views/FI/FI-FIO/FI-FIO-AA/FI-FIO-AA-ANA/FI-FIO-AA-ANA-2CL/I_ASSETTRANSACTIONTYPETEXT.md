@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AssetTransactionType` | `CHAR(3)` | Asset Transaction Type |
-| `Language` | `LANG(1)` | Language Key |
-| `AssetTransactionTypeName` | `CHAR(50)` | Asset Transaction Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AssetTransactionType` |  | |  |  | `CHAR(3)` | Asset Transaction Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AssetTransactionTypeName` |  | |  |  | `CHAR(50)` | Asset Transaction Type Name |

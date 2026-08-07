@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MajorProduct` | `CHAR(1)` | Major product code |
-| `Language` | `LANG(1)` | Language Key |
-| `MajorProductName` | `CHAR(60)` | Major Product Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MajorProduct` |  | |  |  | `CHAR(1)` | Major product code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MajorProductName` |  | |  |  | `CHAR(60)` | Major Product Name |

@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `BR_CNPJ` | `NUMC(14)` | [DEPRECATED] CNPJ Numeric |
-| `BR_CNPJ_2` | `CHAR(14)` | National Registry of Legal Entities (CNPJ) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `BR_CNPJ` |  | |  |  | `NUMC(14)` | [DEPRECATED] CNPJ Numeric |
+| `BR_CNPJ_2` |  | |  |  | `CHAR(14)` | National Registry of Legal Entities (CNPJ) |

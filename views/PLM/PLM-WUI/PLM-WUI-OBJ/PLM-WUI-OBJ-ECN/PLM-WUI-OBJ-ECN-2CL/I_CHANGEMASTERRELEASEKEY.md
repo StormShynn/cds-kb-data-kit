@@ -35,13 +35,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumberReleaseKey` | `NUMC(2)` | ECM: Release Key |
-| `IsGloballyReleased` | `CHAR(1)` | ECM: global release indicator |
-| `IsReleasedForCosting` | `CHAR(1)` | Release for costing |
-| `IsReleasedForPlanning` | `CHAR(1)` | Release for planning |
-| `IsReleasedForProduction` | `CHAR(1)` | Release for production |
-| `IsReleasedForSimulation` | `CHAR(1)` | Release for simulation |
-| `IsDateShiftCreatedOCMPresel` | `CHAR(1)` | Date shift creates preselection for OCM |
-| `IsReleaseKeyCreatedOCMPresel` | `CHAR(1)` | Release key creates preselection for OCM |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumberReleaseKey` |  | |  |  | `NUMC(2)` | ECM: Release Key |
+| `IsGloballyReleased` |  | |  |  | `CHAR(1)` | ECM: global release indicator |
+| `IsReleasedForCosting` |  | |  |  | `CHAR(1)` | Release for costing |
+| `IsReleasedForPlanning` |  | |  |  | `CHAR(1)` | Release for planning |
+| `IsReleasedForProduction` |  | |  |  | `CHAR(1)` | Release for production |
+| `IsReleasedForSimulation` |  | |  |  | `CHAR(1)` | Release for simulation |
+| `IsDateShiftCreatedOCMPresel` |  | |  |  | `CHAR(1)` | Date shift creates preselection for OCM |
+| `IsReleaseKeyCreatedOCMPresel` |  | |  |  | `CHAR(1)` | Release key creates preselection for OCM |

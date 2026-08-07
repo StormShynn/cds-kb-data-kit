@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountStatus` | `CHAR(2)` | Bank Account Status |
-| `Language` | `LANG(1)` | Language Key |
-| `BankAccountStatusName` | `CHAR(60)` | Bank Account Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountStatus` |  | |  |  | `CHAR(2)` | Bank Account Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BankAccountStatusName` |  | |  |  | `CHAR(60)` | Bank Account Status Description |

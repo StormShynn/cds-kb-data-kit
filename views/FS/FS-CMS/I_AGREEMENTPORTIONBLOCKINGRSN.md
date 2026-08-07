@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionBlockingReason` | `CHAR(6)` | Portion Restriction |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionBlockingReason` |  | |  |  | `CHAR(6)` | Portion Restriction |

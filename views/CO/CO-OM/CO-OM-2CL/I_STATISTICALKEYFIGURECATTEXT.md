@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `StstcKeyFigCategory` | `CHAR(1)` | Statistical Key Figure Category |
-| `Language` | `LANG(1)` | Language Key |
-| `StstcKeyFigCategoryDesc` | `CHAR(60)` | Statistical Key Figure Category Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `StstcKeyFigCategory` |  | |  |  | `CHAR(1)` | Statistical Key Figure Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `StstcKeyFigCategoryDesc` |  | |  |  | `CHAR(60)` | Statistical Key Figure Category Description |

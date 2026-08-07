@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CaseTextProfile` | `CHAR(8)` | Text Profile for Case Notes |
-| `CaseTextProfileName` | `CHAR(40)` | Case: Profile Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseTextProfile` |  | |  |  | `CHAR(8)` | Text Profile for Case Notes |
+| `CaseTextProfileName` |  | |  |  | `CHAR(40)` | Case: Profile Description |

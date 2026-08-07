@@ -31,10 +31,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SenderFullName` | `CHAR(80)` | Full Name of Party |
-| `EHSReceiverFullName` | `CHAR(80)` | Full Name of Party |
-| `CmplncOblgnAssgmtURL` | `CHAR(1333)` | Long Text (max) |
-| `ComplianceObligationTitle` | `CHAR(255)` | Compliance Obligation Title |
-| `EHSLocationName` | `CHAR(60)` | Location Revision Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SenderFullName` |  | |  |  | `CHAR(80)` | Full Name of Party |
+| `EHSReceiverFullName` |  | |  |  | `CHAR(80)` | Full Name of Party |
+| `CmplncOblgnAssgmtURL` |  | |  |  | `CHAR(1333)` | Long Text (max) |
+| `ComplianceObligationTitle` |  | |  |  | `CHAR(255)` | Compliance Obligation Title |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location Revision Text |

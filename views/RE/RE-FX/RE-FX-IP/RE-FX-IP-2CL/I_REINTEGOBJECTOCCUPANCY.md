@@ -31,23 +31,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `REIntegObjectStatusObject` | `CHAR(22)` | Object Number |
-| `REContractStatusObject` | `CHAR(22)` | Object Number |
-| `REIntegObjectInternalNumber` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `REContractInternalNumber` | `CHAR(13)` | Internal Key of Real Estate Object |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `RealEstateContract` | `CHAR(13)` | Real Estate Contract Number |
-| `REOccupancyFromDate` | `DATS(8)` | Contract Start Date |
-| `REOccupancyToDate` | `DATS(8)` | Contract End Date |
-| `REIntegObjectValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `REIntegObjectValidityEndDate` | `DATS(8)` | Validity End Date |
-| `ContractStartDate` | `DATS(8)` | Contract Start Date |
-| `ContractEndDate` | `DATS(8)` | Contract End Date |
-| `REObjAssgmtValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `REObjAssgmtValidityEndDate` | `DATS(8)` | Validity End Date |
-| `REObjectPossessionStartDate` | `DATS(8)` | Date From Which the Object Is Made Available for Use |
-| `REObjectPossessionEndDate` | `DATS(8)` | Date Up to Which the Object Is Used |
-| `IsVacant` | `CHAR(1)` | Truth Value: True/False |
-| `REContractIsActive` | `CHAR(1)` | Truth Value: True/False |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REIntegObjectStatusObject` |  | |  |  | `CHAR(22)` | Object Number |
+| `REContractStatusObject` |  | |  |  | `CHAR(22)` | Object Number |
+| `REIntegObjectInternalNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `REContractInternalNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `RealEstateContract` |  | |  |  | `CHAR(13)` | Real Estate Contract Number |
+| `REOccupancyFromDate` |  | |  |  | `DATS(8)` | Contract Start Date |
+| `REOccupancyToDate` |  | |  |  | `DATS(8)` | Contract End Date |
+| `REIntegObjectValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `REIntegObjectValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ContractStartDate` |  | |  |  | `DATS(8)` | Contract Start Date |
+| `ContractEndDate` |  | |  |  | `DATS(8)` | Contract End Date |
+| `REObjAssgmtValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `REObjAssgmtValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `REObjectPossessionStartDate` |  | |  |  | `DATS(8)` | Date From Which the Object Is Made Available for Use |
+| `REObjectPossessionEndDate` |  | |  |  | `DATS(8)` | Date Up to Which the Object Is Used |
+| `IsVacant` |  | |  |  | `CHAR(1)` | Truth Value: True/False |
+| `REContractIsActive` |  | |  |  | `CHAR(1)` | Truth Value: True/False |

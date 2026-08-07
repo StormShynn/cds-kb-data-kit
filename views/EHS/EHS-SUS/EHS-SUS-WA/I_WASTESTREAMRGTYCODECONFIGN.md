@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WasteStreamRgtyCode` | `CHAR(4)` | Waste Stream Regulatory Code |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `WasteStreamRgtyCodeText` | `CHAR(60)` | Description (Short) |
-| `CountryName` | `CHAR(50)` | Country/Region Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WasteStreamRgtyCode` |  | |  |  | `CHAR(4)` | Waste Stream Regulatory Code |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `WasteStreamRgtyCodeText` |  | |  |  | `CHAR(60)` | Description (Short) |
+| `CountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |

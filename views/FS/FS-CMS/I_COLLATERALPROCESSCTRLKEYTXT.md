@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralProcessCtrlObj` | `CHAR(6)` | Process Object |
-| `CollateralProcessControlKey` | `CHAR(10)` | Process Control Key |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralProcessCtrlKeyTxt` | `CHAR(40)` | Process Control Key Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralProcessCtrlObj` |  | |  |  | `CHAR(6)` | Process Object |
+| `CollateralProcessControlKey` |  | |  |  | `CHAR(10)` | Process Control Key |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralProcessCtrlKeyTxt` |  | |  |  | `CHAR(40)` | Process Control Key Name |

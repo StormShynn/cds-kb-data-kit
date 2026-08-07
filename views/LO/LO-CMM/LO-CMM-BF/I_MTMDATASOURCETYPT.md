@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MTMDataSourceType` | `CHAR(2)` | Type of Data Record |
-| `Language` | `LANG(1)` | Language Key |
-| `MTMDataSourceTypeName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MTMDataSourceType` |  | |  |  | `CHAR(2)` | Type of Data Record |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MTMDataSourceTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

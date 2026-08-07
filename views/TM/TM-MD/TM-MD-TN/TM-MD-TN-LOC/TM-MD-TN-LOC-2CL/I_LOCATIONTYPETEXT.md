@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LocationType` | `CHAR(4)` | Location Type |
-| `Language` | `LANG(1)` | Language Key |
-| `LocationTypeDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LocationType` |  | |  |  | `CHAR(4)` | Location Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LocationTypeDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BalAmtAgeCode` | `CHAR(3)` | Taxes Payable Write-off Age |
-| `Language` | `LANG(1)` | Language Key |
-| `BalAmtAgeName` | `CHAR(60)` | Taxes Payable Age Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BalAmtAgeCode` |  | |  |  | `CHAR(3)` | Taxes Payable Write-off Age |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BalAmtAgeName` |  | |  |  | `CHAR(60)` | Taxes Payable Age Name |

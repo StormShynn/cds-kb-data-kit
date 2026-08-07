@@ -34,14 +34,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductStructureVariantUUID` | `RAW(16)` | Internal Number of the PVS Variant |
-| `ProdStrucVariantChgStateIntID` | `NUMC(8)` | Internal Counter for iPPE Objects |
-| `ProdStrucVariantUniqueID` | `CHAR(32)` |  |
-| `ProdStrucVarBasicDataChgState` | `NUMC(8)` | Internal Counter for iPPE Objects |
-| `ProdStrucVariantChangeNumber` | `CHAR(12)` | Change Number in iPPE |
-| `ProdStrucVarIsMrkdForDeletion` | `CHAR(1)` | Deletion Indicator |
-| `ProdStrucVarChgNmbrDescription` | `CHAR(40)` | Change number description |
-| `AuthorizationGroup` | `CHAR(4)` | Change Master Authorization Group |
-| `ProductStructureGnrcObjType` | `CHAR(10)` | Object Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductStructureVariantUUID` |  | |  |  | `RAW(16)` | Internal Number of the PVS Variant |
+| `ProdStrucVariantChgStateIntID` |  | |  |  | `NUMC(8)` | Internal Counter for iPPE Objects |
+| `ProdStrucVariantUniqueID` |  | |  |  | `CHAR(32)` |  |
+| `ProdStrucVarBasicDataChgState` |  | |  |  | `NUMC(8)` | Internal Counter for iPPE Objects |
+| `ProdStrucVariantChangeNumber` |  | |  |  | `CHAR(12)` | Change Number in iPPE |
+| `ProdStrucVarIsMrkdForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `ProdStrucVarChgNmbrDescription` |  | |  |  | `CHAR(40)` | Change number description |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Change Master Authorization Group |
+| `ProductStructureGnrcObjType` |  | |  |  | `CHAR(10)` | Object Type |

@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundedProgram` | `CHAR(24)` | Funded Program |
-| `FundedPgmFinMgmtAreaForAuthzn` | `CHAR(4)` | FM Area for Auth Grp for Funded Program |
-| `FundedProgramAuthznGrp` | `CHAR(10)` | Funded Program Authorization Group |
-| `ValidityEndDate` | `DATS(8)` | Funded Program Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Funded Program Validity Start Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundedProgram` |  | |  |  | `CHAR(24)` | Funded Program |
+| `FundedPgmFinMgmtAreaForAuthzn` |  | |  |  | `CHAR(4)` | FM Area for Auth Grp for Funded Program |
+| `FundedProgramAuthznGrp` |  | |  |  | `CHAR(10)` | Funded Program Authorization Group |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Funded Program Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Funded Program Validity Start Date |

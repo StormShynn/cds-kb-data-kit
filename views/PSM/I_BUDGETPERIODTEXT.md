@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BudgetPeriod` | `CHAR(10)` | Budget Period |
-| `BudgetPeriodName` | `CHAR(35)` | Budget Period Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BudgetPeriod` |  | |  |  | `CHAR(10)` | Budget Period |
+| `BudgetPeriodName` |  | |  |  | `CHAR(35)` | Budget Period Name |

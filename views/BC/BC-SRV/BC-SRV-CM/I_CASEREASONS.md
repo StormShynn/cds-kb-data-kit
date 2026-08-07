@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseType` | `CHAR(4)` | Case Type |
-| `CaseReason` | `CHAR(4)` | Reason for Case |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseType` |  | |  |  | `CHAR(4)` | Case Type |
+| `CaseReason` |  | |  |  | `CHAR(4)` | Reason for Case |

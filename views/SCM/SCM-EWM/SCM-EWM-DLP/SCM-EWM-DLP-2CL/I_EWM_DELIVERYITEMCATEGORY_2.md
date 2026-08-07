@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMInboundDeliveryItemCategory` | `CHAR(3)` | Item Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMInboundDeliveryItemCategory` |  | |  |  | `CHAR(3)` | Item Category |

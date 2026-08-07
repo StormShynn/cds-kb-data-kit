@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SEPAMandateSenderType` | `CHAR(10)` | Object type |
-| `Language` | `LANG(1)` | Language Key |
-| `SEPAMandateSenderTypeName` | `CHAR(80)` | SEPA Mandate Sender Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SEPAMandateSenderType` |  | |  |  | `CHAR(10)` | Object type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SEPAMandateSenderTypeName` |  | |  |  | `CHAR(80)` | SEPA Mandate Sender Type Name |

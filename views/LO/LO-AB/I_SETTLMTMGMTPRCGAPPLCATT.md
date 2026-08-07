@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtPrcgApplCat` | `CHAR(2)` | Application for Price Determination |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtMgmtPrcgApplCatName` | `CHAR(60)` | Text of Application for Price Determination |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtPrcgApplCat` |  | |  |  | `CHAR(2)` | Application for Price Determination |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtMgmtPrcgApplCatName` |  | |  |  | `CHAR(60)` | Text of Application for Price Determination |

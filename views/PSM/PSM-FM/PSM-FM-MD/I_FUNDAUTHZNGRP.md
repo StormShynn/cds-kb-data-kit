@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FundAuthznGrp` | `CHAR(10)` | Authorization Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FundAuthznGrp` |  | |  |  | `CHAR(10)` | Authorization Group |

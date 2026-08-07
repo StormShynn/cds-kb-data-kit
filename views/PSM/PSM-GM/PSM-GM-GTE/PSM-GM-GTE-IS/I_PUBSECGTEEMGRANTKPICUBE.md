@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `PubSecRevnActlAmtInGlobalCrcy` | `CURR(23)` |  |
-| `BdgtAvailableAmtInGlobalCrcy` | `CURR(24)` |  |
-| `NotPaidRevenueAmtInGCrcy` | `CURR(23)` |  |
-| `NumberOfGteeMMasterDataRecords` | `INT1(3)` |  |
-| `GrantAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `GrantIsNotRelevantGrant` | `CHAR(1)` | Identify the Not Relevant Grant |
-| `GrantLfcycStatusForAuthzn` | `CHAR(5)` | GM Lifecycle Status for Auth Grp |
-| `BdgtAvailableExpnAmtInGCrcy` | `CURR(23)` | Amount in Company Code Currency |
-| `CompanyCodeCurrency` | `CUKY(5)` | Global Currency |
-| `RevenueAmountInCompanyCodeCrcy` | `CURR(23)` | Amount in Company Code Currency |
-| `AvailableAmountInCCCrcy` | `CURR(23)` | Amount in Company Code Currency |
-| `NotPaidRevenueAmtInDocCrcy` | `CURR(23)` | Amount in Company Code Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `PubSecRevnActlAmtInGlobalCrcy` |  | |  |  | `CURR(23)` |  |
+| `BdgtAvailableAmtInGlobalCrcy` |  | |  |  | `CURR(24)` |  |
+| `NotPaidRevenueAmtInGCrcy` |  | |  |  | `CURR(23)` |  |
+| `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
+| `GrantAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `GrantIsNotRelevantGrant` |  | |  |  | `CHAR(1)` | Identify the Not Relevant Grant |
+| `GrantLfcycStatusForAuthzn` |  | |  |  | `CHAR(5)` | GM Lifecycle Status for Auth Grp |
+| `BdgtAvailableExpnAmtInGCrcy` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `RevenueAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `AvailableAmountInCCCrcy` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `NotPaidRevenueAmtInDocCrcy` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |

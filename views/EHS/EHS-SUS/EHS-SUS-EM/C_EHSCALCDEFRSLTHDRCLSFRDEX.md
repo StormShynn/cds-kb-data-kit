@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CalcRsltHdrClassifierUUID` | `RAW(16)` | NodeID |
-| `EHSDataClassifierUUID` | `RAW(16)` | Aggregation Classifier Unique Key |
-| `EHSDataClassifierID` | `CHAR(30)` | Data Classifier for Location Aggregation |
-| `CalculationResultHeaderUUID` | `RAW(16)` | NodeID |
-| `CalculationRootUUID` | `RAW(16)` | NodeID |
-| `CalculationResultHeaderID` | `CHAR(20)` | Calculation Definition - Result Header ID |
-| `CalculationResultHeaderTitle` | `CHAR(132)` | Description (Long) |
-| `CalculationResultHeaderName` | `CHAR(30)` | Calculation Variable Name |
-| `EHSCalculationSetupName` | `CHAR(60)` | Calculation Name |
-| `DataUsagePeriodicity` | `CHAR(3)` | Data Period |
-| `EHSLocationUUID` | `RAW(16)` | NodeID |
-| `EHSSubjectType` | `CHAR(2)` | Subject Type |
-| `EHSSubjectUUID` | `RAW(16)` | Reference to Subject Type BO Root Node ID |
-| `EHSCalcMigrationSource` | `CHAR(60)` | Migration Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalcRsltHdrClassifierUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSDataClassifierUUID` |  | |  |  | `RAW(16)` | Aggregation Classifier Unique Key |
+| `EHSDataClassifierID` |  | |  |  | `CHAR(30)` | Data Classifier for Location Aggregation |
+| `CalculationResultHeaderUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `CalculationRootUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `CalculationResultHeaderID` |  | |  |  | `CHAR(20)` | Calculation Definition - Result Header ID |
+| `CalculationResultHeaderTitle` |  | |  |  | `CHAR(132)` | Description (Long) |
+| `CalculationResultHeaderName` |  | |  |  | `CHAR(30)` | Calculation Variable Name |
+| `EHSCalculationSetupName` |  | |  |  | `CHAR(60)` | Calculation Name |
+| `DataUsagePeriodicity` |  | |  |  | `CHAR(3)` | Data Period |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
+| `EHSCalcMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |

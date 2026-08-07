@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxExemptCode` | `CHAR(1)` | Tax Reporting - Kansas Exemption |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxExemptCode` |  | |  |  | `CHAR(1)` | Tax Reporting - Kansas Exemption |

@@ -37,13 +37,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Store` | `CHAR(4)` | Retail plant |
-| `StoreStockAdhocCountUUID` | `RAW(16)` | Unique identifier for New Store Stock Ad hoc Count |
-| `StoreStockAdhocCntProduct` | `CHAR(40)` | Store Stock Ad hoc Count Product |
-| `PhysicalInventoryStockType` | `CHAR(1)` | Stock type |
-| `CreationDateTime` | `DEC(21)` | Creation date and time of stock count |
-| `LastChangeDateTime` | `DEC(21)` | Changed date and time |
-| `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `GlobalTradeItemNumber` | `CHAR(18)` | International Article Number (EAN/UPC) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Store` |  | |  |  | `CHAR(4)` | Retail plant |
+| `StoreStockAdhocCountUUID` |  | |  |  | `RAW(16)` | Unique identifier for New Store Stock Ad hoc Count |
+| `StoreStockAdhocCntProduct` |  | |  |  | `CHAR(40)` | Store Stock Ad hoc Count Product |
+| `PhysicalInventoryStockType` |  | |  |  | `CHAR(1)` | Stock type |
+| `CreationDateTime` |  | |  |  | `DEC(21)` | Creation date and time of stock count |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | Changed date and time |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `GlobalTradeItemNumber` |  | |  |  | `CHAR(18)` | International Article Number (EAN/UPC) |

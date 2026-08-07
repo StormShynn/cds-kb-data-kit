@@ -32,39 +32,39 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerName` | `CHAR(81)` |  |
-| `CreditSegmentName` | `CHAR(50)` | Name of Credit Segment |
-| `BusinessPartnerIsCritical` | `CHAR(1)` | Special Attention Required |
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `CreditRiskClassName` | `CHAR(40)` | Name of Risk Class |
-| `Country` | `CHAR(3)` | Country/Region |
-| `CountryName` | `CHAR(50)` | Country/Region Name |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `RegionName` | `CHAR(20)` | Description |
-| `CreditAccountGroup` | `NUMC(4)` | Customer Credit Group (Obsolete) |
-| `CreditAccountGroupName` | `CHAR(40)` | Text for Credit Group |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `CreditSegmentCurrency` | `CUKY(5)` | Credit Segment Currency |
-| `CustomerCreditExposureAmount` | `CURR(23)` | Credit Exposure Amount |
-| `CustomerCreditLimitAmount` | `CURR(23)` | Customer's Credit Limit |
-| `HedgedExposureAmount` | `CURR(15)` | Hedged Credit Exposure |
-| `CustomerIsAboveThreshold` | `INT4(10)` | Threshold exceeded |
-| `AboveLimitAmtInDspCrcy` | `CURR(24)` |  |
-| `AbvThldWthnLmtAmtInDspCrcy` | `INT1(3)` |  |
-| `AbvThldPct` | `INT1(3)` |  |
-| `CreditLimitUtilizationPct` | `INT1(3)` |  |
-| `WthnThldCrdtLmtUtilizationPct` | `INT1(3)` |  |
-| `LimitExceededPct` | `INT1(3)` |  |
-| `CreditLimitExceededPct` | `INT1(3)` |  |
-| `RemainingCreditPct` | `INT1(3)` |  |
-| `AbvThldWithinLmtPct` | `INT1(3)` |  |
-| `AbvThldWithinLmtCrdtUtilznPct` | `INT1(3)` |  |
-| `CreditLimitUtilizationAllPct` | `INT1(3)` |  |
-| `CrdtUsageWthnLmtAmtInDspCrcy` | `CURR(23)` | Credit Amount used within Limit |
-| `CrdtLmtExceededAmtInDspCrcy` | `CURR(23)` | Credit Limit Exceeded Amount |
-| `RemainingCreditAmtInDspCrcy` | `CURR(23)` | Remaining Credit Amount |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerName` |  | |  |  | `CHAR(81)` |  |
+| `CreditSegmentName` |  | |  |  | `CHAR(50)` | Name of Credit Segment |
+| `BusinessPartnerIsCritical` |  | |  |  | `CHAR(1)` | Special Attention Required |
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `CreditRiskClassName` |  | |  |  | `CHAR(40)` | Name of Risk Class |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `CountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `RegionName` |  | |  |  | `CHAR(20)` | Description |
+| `CreditAccountGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group (Obsolete) |
+| `CreditAccountGroupName` |  | |  |  | `CHAR(40)` | Text for Credit Group |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `CreditSegmentCurrency` |  | |  |  | `CUKY(5)` | Credit Segment Currency |
+| `CustomerCreditExposureAmount` |  | |  |  | `CURR(23)` | Credit Exposure Amount |
+| `CustomerCreditLimitAmount` |  | |  |  | `CURR(23)` | Customer's Credit Limit |
+| `HedgedExposureAmount` |  | |  |  | `CURR(15)` | Hedged Credit Exposure |
+| `CustomerIsAboveThreshold` |  | |  |  | `INT4(10)` | Threshold exceeded |
+| `AboveLimitAmtInDspCrcy` |  | |  |  | `CURR(24)` |  |
+| `AbvThldWthnLmtAmtInDspCrcy` |  | |  |  | `INT1(3)` |  |
+| `AbvThldPct` |  | |  |  | `INT1(3)` |  |
+| `CreditLimitUtilizationPct` |  | |  |  | `INT1(3)` |  |
+| `WthnThldCrdtLmtUtilizationPct` |  | |  |  | `INT1(3)` |  |
+| `LimitExceededPct` |  | |  |  | `INT1(3)` |  |
+| `CreditLimitExceededPct` |  | |  |  | `INT1(3)` |  |
+| `RemainingCreditPct` |  | |  |  | `INT1(3)` |  |
+| `AbvThldWithinLmtPct` |  | |  |  | `INT1(3)` |  |
+| `AbvThldWithinLmtCrdtUtilznPct` |  | |  |  | `INT1(3)` |  |
+| `CreditLimitUtilizationAllPct` |  | |  |  | `INT1(3)` |  |
+| `CrdtUsageWthnLmtAmtInDspCrcy` |  | |  |  | `CURR(23)` | Credit Amount used within Limit |
+| `CrdtLmtExceededAmtInDspCrcy` |  | |  |  | `CURR(23)` | Credit Limit Exceeded Amount |
+| `RemainingCreditAmtInDspCrcy` |  | |  |  | `CURR(23)` | Remaining Credit Amount |

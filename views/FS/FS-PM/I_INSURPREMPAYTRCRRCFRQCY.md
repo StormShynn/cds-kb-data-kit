@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPremSpecPaytRcrrcFrqcy` | `CHAR(2)` | Premium Payment Frequency |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPremSpecPaytRcrrcFrqcy` |  | |  |  | `CHAR(2)` | Premium Payment Frequency |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CaseType` | `CHAR(4)` | Case Type |
-| `CaseCategory` | `CHAR(4)` | Category |
-| `CaseCategoryName` | `CHAR(60)` | Text Field of Length 60 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseType` |  | |  |  | `CHAR(4)` | Case Type |
+| `CaseCategory` |  | |  |  | `CHAR(4)` | Category |
+| `CaseCategoryName` |  | |  |  | `CHAR(60)` | Text Field of Length 60 |

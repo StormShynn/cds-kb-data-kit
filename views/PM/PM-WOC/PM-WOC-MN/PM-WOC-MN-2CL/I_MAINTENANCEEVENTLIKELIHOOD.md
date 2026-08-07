@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintEventLikelihoodCode` | `NUMC(2)` | Likelihood ID |
-| `MaintEvtLklihdPositionValue` | `NUMC(2)` | Indicates the position of  occurrence on the UI |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintEventLikelihoodCode` |  | |  |  | `NUMC(2)` | Likelihood ID |
+| `MaintEvtLklihdPositionValue` |  | |  |  | `NUMC(2)` | Indicates the position of  occurrence on the UI |

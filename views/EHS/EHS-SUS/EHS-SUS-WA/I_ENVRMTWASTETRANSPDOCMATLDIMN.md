@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EnvWstTranspDocMatlAssgdUUID` | `RAW(16)` | Waste Transportation Document Material Assigned |
-| `EnvrmtWasteTranspDocUUID` | `RAW(16)` | Waste Transportation Document UUID |
-| `EnvrmtWasteTranspDocStatus` | `CHAR(3)` | Waste Transportation Document Status |
-| `EnvrmtWasteTranspDocType` | `CHAR(10)` | Waste Transportation Document Type ID |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EnvWstTranspDocMatlAssgdUUID` |  | |  |  | `RAW(16)` | Waste Transportation Document Material Assigned |
+| `EnvrmtWasteTranspDocUUID` |  | |  |  | `RAW(16)` | Waste Transportation Document UUID |
+| `EnvrmtWasteTranspDocStatus` |  | |  |  | `CHAR(3)` | Waste Transportation Document Status |
+| `EnvrmtWasteTranspDocType` |  | |  |  | `CHAR(10)` | Waste Transportation Document Type ID |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region |

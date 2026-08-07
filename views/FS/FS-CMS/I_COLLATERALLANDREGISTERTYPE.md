@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralLandRegisterType` | `CHAR(6)` | Register Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralLandRegisterType` |  | |  |  | `CHAR(6)` | Register Type |

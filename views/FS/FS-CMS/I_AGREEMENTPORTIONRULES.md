@@ -30,14 +30,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionRulesUUID` | `RAW(16)` | GUID for Table CMS_CAG_RULES |
-| `AgreementPortionUUID` | `RAW(16)` | GUID for Table CMS_CAG_POR |
-| `AgreementPortionRulesPartnerID` | `CHAR(32)` | Business Partner ID |
-| `AgreementPortionRulesBPFunc` | `CHAR(6)` | Business Partner Function |
-| `AgreementPortionRulesCurrency` | `CUKY(5)` | Currency of the Receivable  Amounts Specified in the Link |
-| `AgreementPortionRulesOrgUnit` | `CHAR(10)` | Organization Unit for a Receivable |
-| `AgreementPortionRulesProdSet` | `CHAR(6)` | Identification of a Product Set |
-| `AgreementPortionRulesRemarkTxt` | `CHAR(60)` | Text for remarks |
-| `AgreementPortionRulesLender` | `CHAR(32)` | Business Partner ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionRulesUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_RULES |
+| `AgreementPortionUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG_POR |
+| `AgreementPortionRulesPartnerID` |  | |  |  | `CHAR(32)` | Business Partner ID |
+| `AgreementPortionRulesBPFunc` |  | |  |  | `CHAR(6)` | Business Partner Function |
+| `AgreementPortionRulesCurrency` |  | |  |  | `CUKY(5)` | Currency of the Receivable  Amounts Specified in the Link |
+| `AgreementPortionRulesOrgUnit` |  | |  |  | `CHAR(10)` | Organization Unit for a Receivable |
+| `AgreementPortionRulesProdSet` |  | |  |  | `CHAR(6)` | Identification of a Product Set |
+| `AgreementPortionRulesRemarkTxt` |  | |  |  | `CHAR(60)` | Text for remarks |
+| `AgreementPortionRulesLender` |  | |  |  | `CHAR(32)` | Business Partner ID |

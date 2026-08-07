@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrAccrRvslSts` | `CHAR(1)` | Status of Accruals Reversal for a Condition Contract |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrAccrRvslStsName` | `CHAR(60)` | Description of Accruals Reversal Status Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrAccrRvslSts` |  | |  |  | `CHAR(1)` | Status of Accruals Reversal for a Condition Contract |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrAccrRvslStsName` |  | |  |  | `CHAR(60)` | Description of Accruals Reversal Status Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

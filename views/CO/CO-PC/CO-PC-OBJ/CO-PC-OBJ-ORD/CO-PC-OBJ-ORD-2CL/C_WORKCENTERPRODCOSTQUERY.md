@@ -40,40 +40,40 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkCenterInternalID` | `NUMC(8)` | Object ID of the resource |
-| `OrderOperation` | `CHAR(4)` | Operation |
-| `OrderID` | `CHAR(12)` | Order |
-| `GLAccount` | `CHAR(10)` | General Ledger Account |
-| `Material` | `CHAR(40)` | Material Number |
-| `Plant` | `CHAR(4)` | Plant |
-| `PartnerCostCenter` | `CHAR(10)` | Partner Cost Center |
-| `PartnerCostCtrActivityType` | `CHAR(6)` | Activity Type |
-| `WorkCenter` | `CHAR(8)` | Work Center |
-| `WorkCenterText` | `CHAR(40)` | Work Center Text |
-| `MaterialName` | `CHAR(40)` | Material Description |
-| `PlantName` | `CHAR(30)` | Plant Name |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `ControllingAreaName` | `CHAR(25)` | Controlling Area Name |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Company Code Name |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `OrderDescription` | `CHAR(40)` | Order Description |
-| `OrderTypeName` | `CHAR(40)` | Name of an Order Type |
-| `OrderCategory` | `NUMC(2)` | Order Category |
-| `OrderType` | `CHAR(4)` | Order Type |
-| `UnitOfMeasure` | `UNIT(3)` | Unit of Measure |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `DebitPlanCostInDspCrcy` | `CURR(23)` | Plan Cost Debit |
-| `DebitPlnFxdCostInDspCrcy` | `CURR(23)` | Plan Fixed Cost Debit |
-| `DebitPlnVarblCostInDspCrcy` | `CURR(23)` | Plan Variable Cost Debit |
-| `DebitActlCostInDspCrcy` | `CURR(23)` | Actual Cost Debit |
-| `DebitActlFxdCostInDspCrcy` | `CURR(23)` | Actual Fixed Cost Debit |
-| `DebitActlVarblCostInDspCrcy` | `CURR(23)` | Actual Variable Cost Debit |
-| `DebitActlPlnDiffCostInDspCrcy` | `CURR(23)` | Plan Cost Debit/Actual Cost Debit Variance |
-| `ActualQtyInCostSourceUnit` | `QUAN(23)` | Actual Quantity |
-| `PlanQtyInCostSourceUnit` | `QUAN(23)` | Plan Quantity |
-| `ActlPlanDiffQuantity` | `QUAN(23)` | Plan/Actual Quantity Variance |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `OrderOperation` |  | |  |  | `CHAR(4)` | Operation |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order |
+| `GLAccount` |  | |  |  | `CHAR(10)` | General Ledger Account |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Partner Cost Center |
+| `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `WorkCenter` |  | |  |  | `CHAR(8)` | Work Center |
+| `WorkCenterText` |  | |  |  | `CHAR(40)` | Work Center Text |
+| `MaterialName` |  | |  |  | `CHAR(40)` | Material Description |
+| `PlantName` |  | |  |  | `CHAR(30)` | Plant Name |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ControllingAreaName` |  | |  |  | `CHAR(25)` | Controlling Area Name |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Company Code Name |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `OrderDescription` |  | |  |  | `CHAR(40)` | Order Description |
+| `OrderTypeName` |  | |  |  | `CHAR(40)` | Name of an Order Type |
+| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Unit of Measure |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `DebitPlanCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Cost Debit |
+| `DebitPlnFxdCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Fixed Cost Debit |
+| `DebitPlnVarblCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Variable Cost Debit |
+| `DebitActlCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Cost Debit |
+| `DebitActlFxdCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Fixed Cost Debit |
+| `DebitActlVarblCostInDspCrcy` |  | |  |  | `CURR(23)` | Actual Variable Cost Debit |
+| `DebitActlPlnDiffCostInDspCrcy` |  | |  |  | `CURR(23)` | Plan Cost Debit/Actual Cost Debit Variance |
+| `ActualQtyInCostSourceUnit` |  | |  |  | `QUAN(23)` | Actual Quantity |
+| `PlanQtyInCostSourceUnit` |  | |  |  | `QUAN(23)` | Plan Quantity |
+| `ActlPlanDiffQuantity` |  | |  |  | `QUAN(23)` | Plan/Actual Quantity Variance |

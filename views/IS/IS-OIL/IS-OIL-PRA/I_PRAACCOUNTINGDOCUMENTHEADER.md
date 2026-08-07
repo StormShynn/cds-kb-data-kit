@@ -34,24 +34,24 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalPeriod` | `ACCP(6)` | Fiscal Period |
-| `AccountingDocument` | `CHAR(10)` | Revenue Accounting Document Number |
-| `DocumentDescription` | `CHAR(60)` | Document Description |
-| `Origin` | `CHAR(2)` | Application |
-| `AccountingDocumentType` | `CHAR(2)` | Document Type |
-| `OriginReferenceDocument` | `CHAR(20)` | Source Reference Document (VL,CI,SS,FT) |
-| `AccountingDocumentStatus` | `CHAR(2)` | Accounting Document Status |
-| `AccountingDocumentIsReversed` | `CHAR(1)` | Accounting Reverse Flag |
-| `AccountingDocumentCrossCoRef` | `CHAR(20)` | Cross Company key for Accounting Document Header |
-| `PostingDate` | `DATS(8)` | Accounting Document Posting Date |
-| `DocumentDate` | `DATS(8)` | Document Date |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On Timestamp |
-| `LastChangedByUser` | `CHAR(12)` | Changed By |
-| `ChangedDateTime` | `DEC(15)` | Changed On Timestamp |
-| `NumberOfItems` | `INT4(10)` | Number of Items |
-| `NumberOfRejectedItems` | `INT4(10)` | Number of Rejected Items |
-| `NumberOfDocuments` | `INT4(10)` | Number of Documents |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalPeriod` |  | |  |  | `ACCP(6)` | Fiscal Period |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Revenue Accounting Document Number |
+| `DocumentDescription` |  | |  |  | `CHAR(60)` | Document Description |
+| `Origin` |  | |  |  | `CHAR(2)` | Application |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `OriginReferenceDocument` |  | |  |  | `CHAR(20)` | Source Reference Document (VL,CI,SS,FT) |
+| `AccountingDocumentStatus` |  | |  |  | `CHAR(2)` | Accounting Document Status |
+| `AccountingDocumentIsReversed` |  | |  |  | `CHAR(1)` | Accounting Reverse Flag |
+| `AccountingDocumentCrossCoRef` |  | |  |  | `CHAR(20)` | Cross Company key for Accounting Document Header |
+| `PostingDate` |  | |  |  | `DATS(8)` | Accounting Document Posting Date |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Document Date |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `ChangedDateTime` |  | |  |  | `DEC(15)` | Changed On Timestamp |
+| `NumberOfItems` |  | |  |  | `INT4(10)` | Number of Items |
+| `NumberOfRejectedItems` |  | |  |  | `INT4(10)` | Number of Rejected Items |
+| `NumberOfDocuments` |  | |  |  | `INT4(10)` | Number of Documents |

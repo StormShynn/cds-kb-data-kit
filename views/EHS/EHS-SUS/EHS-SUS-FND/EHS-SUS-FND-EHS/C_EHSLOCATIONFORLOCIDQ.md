@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | EHS Location - Root UUID |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `EHSLocationName` | `CHAR(60)` | Location |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationTypeText` | `CHAR(40)` | Location Type Name |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `PlantName` | `CHAR(30)` | Plant Name |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `NumberOfLocations` | `INT4(10)` | Number of Locations |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | EHS Location - Root UUID |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationTypeText` |  | |  |  | `CHAR(40)` | Location Type Name |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `PlantName` |  | |  |  | `CHAR(30)` | Plant Name |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `NumberOfLocations` |  | |  |  | `INT4(10)` | Number of Locations |

@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurPlcyInsuredObjectCategory` | `NUMC(5)` | Object Category |
-| `InsurPlcyInsrdObjCategoryName` | `CHAR(50)` | Object Category Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurPlcyInsuredObjectCategory` |  | |  |  | `NUMC(5)` | Object Category |
+| `InsurPlcyInsrdObjCategoryName` |  | |  |  | `CHAR(50)` | Object Category Name |

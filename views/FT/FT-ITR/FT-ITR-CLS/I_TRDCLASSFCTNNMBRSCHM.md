@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdClassfctnNmbrSchm` | `CHAR(10)` | Trade Classification Numbering Scheme |
-| `TrdClassfctnNmbrSchmType` | `CHAR(2)` | Type of Numbering Scheme |
-| `TrdClassfctnNmbrngSchmSrceType` | `CHAR(1)` | Receiving of Classification |
-| `TrdClassfctnDistributionType` | `CHAR(1)` | Distribution of Classification |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdClassfctnNmbrSchm` |  | |  |  | `CHAR(10)` | Trade Classification Numbering Scheme |
+| `TrdClassfctnNmbrSchmType` |  | |  |  | `CHAR(2)` | Type of Numbering Scheme |
+| `TrdClassfctnNmbrngSchmSrceType` |  | |  |  | `CHAR(1)` | Receiving of Classification |
+| `TrdClassfctnDistributionType` |  | |  |  | `CHAR(1)` | Distribution of Classification |

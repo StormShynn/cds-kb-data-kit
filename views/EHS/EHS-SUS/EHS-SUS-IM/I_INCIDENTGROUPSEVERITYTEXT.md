@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSIncidentGroupSeverity` | `CHAR(21)` | Severity Level Code |
-| `Language` | `LANG(1)` | Language Key |
-| `EHSIncidentGroupSeverityText` | `CHAR(40)` | Description (Extra Short) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSIncidentGroupSeverity` |  | |  |  | `CHAR(21)` | Severity Level Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EHSIncidentGroupSeverityText` |  | |  |  | `CHAR(40)` | Description (Extra Short) |

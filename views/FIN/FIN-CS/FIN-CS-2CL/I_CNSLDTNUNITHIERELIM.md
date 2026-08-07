@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationUnitHierarchy` | `CHAR(40)` | Consolidation Unit Hierarchy |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `ConsolidationUnit` | `CHAR(18)` | Consolidation Unit |
-| `PartnerConsolidationUnit` | `CHAR(18)` | Partner Unit |
-| `ConsolidationUnitForElim` | `CHAR(25)` | Consolidation Elimination Member |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnitHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Unit Hierarchy |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `PartnerConsolidationUnit` |  | |  |  | `CHAR(18)` | Partner Unit |
+| `ConsolidationUnitForElim` |  | |  |  | `CHAR(25)` | Consolidation Elimination Member |

@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `Language` | `LANG(1)` | Language Key |
-| `SponsoredClassDescription` | `CHAR(30)` | Sponsored Class Description |
-| `SponsoredClassName` | `CHAR(20)` | Sponsored Class Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SponsoredClassDescription` |  | |  |  | `CHAR(30)` | Sponsored Class Description |
+| `SponsoredClassName` |  | |  |  | `CHAR(20)` | Sponsored Class Name |

@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `CnsldtnUnitMaxNmbrOfCharacters` | `NUMC(2)` | Length of the consolidation unit |
-| `CnsldtnGrpMaxNmbrOfCharacters` | `NUMC(2)` | Length of consolidation group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `CnsldtnUnitMaxNmbrOfCharacters` |  | |  |  | `NUMC(2)` | Length of the consolidation unit |
+| `CnsldtnGrpMaxNmbrOfCharacters` |  | |  |  | `NUMC(2)` | Length of consolidation group |

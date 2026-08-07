@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RejectionReason` | `CHAR(2)` | Tax 2.0 CO - Reject Code |
-| `Language` | `LANG(1)` | Language Key |
-| `RejectionReasonName` | `CHAR(50)` | ONRR Rejection Reason Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RejectionReason` |  | |  |  | `CHAR(2)` | Tax 2.0 CO - Reject Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RejectionReasonName` |  | |  |  | `CHAR(50)` | ONRR Rejection Reason Name |

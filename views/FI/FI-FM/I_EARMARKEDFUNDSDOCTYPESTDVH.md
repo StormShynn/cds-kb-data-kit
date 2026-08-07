@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EarmarkedFundsDocumentType` | `CHAR(2)` | Earmarked Fund Document Type |
-| `EarmarkedFundsDocumentCategory` | `NUMC(3)` | Earmarked Funds Document Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EarmarkedFundsDocumentType` |  | |  |  | `CHAR(2)` | Earmarked Fund Document Type |
+| `EarmarkedFundsDocumentCategory` |  | |  |  | `NUMC(3)` | Earmarked Funds Document Category |

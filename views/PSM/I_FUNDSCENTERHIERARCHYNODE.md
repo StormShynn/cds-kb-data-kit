@@ -28,17 +28,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundsCenterHierarchy` | `CHAR(40)` | Funds Center Hierarchy |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `ValidityEndDate` | `DATS(8)` | Funds Center Validity End Date |
-| `ParentNode` | `CHAR(50)` | Hierarchy parent node |
-| `HierarchyVersion` | `NUMC(15)` | Hierarchy version |
-| `ValidityStartDate` | `DATS(8)` | Funds Center Validity Start Date |
-| `FundsCenter` | `CHAR(16)` | Funds Center |
-| `SequenceNumber` | `CHAR(56)` |  |
-| `HierarchyNodeSequence` | `NUMC(6)` | Hierarchy Sequence Number |
-| `HierarchyNodeLevel` | `NUMC(6)` | Hierarchy Level |
-| `NodeType` | `CHAR(1)` | Hierarchy node type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundsCenterHierarchy` |  | |  |  | `CHAR(40)` | Funds Center Hierarchy |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Funds Center Validity End Date |
+| `ParentNode` |  | |  |  | `CHAR(50)` | Hierarchy parent node |
+| `HierarchyVersion` |  | |  |  | `NUMC(15)` | Hierarchy version |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Funds Center Validity Start Date |
+| `FundsCenter` |  | |  |  | `CHAR(16)` | Funds Center |
+| `SequenceNumber` |  | |  |  | `CHAR(56)` |  |
+| `HierarchyNodeSequence` |  | |  |  | `NUMC(6)` | Hierarchy Sequence Number |
+| `HierarchyNodeLevel` |  | |  |  | `NUMC(6)` | Hierarchy Level |
+| `NodeType` |  | |  |  | `CHAR(1)` | Hierarchy node type |

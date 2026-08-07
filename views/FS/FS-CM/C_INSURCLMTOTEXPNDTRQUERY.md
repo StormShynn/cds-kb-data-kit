@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsuranceClaim` | `CHAR(17)` | Number of Claim |
-| `InsurClmLossExpnType` | `CHAR(1)` | Losses or Expenses |
-| `InsurClmRsrvType` | `CHAR(2)` | Reserve Type |
-| `InsurClmReserveCurrency` | `CUKY(5)` | Currency of Reserve (Transactn Crcy) |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit |
-| `ParentOrganizationalUnit` | `NUMC(8)` | Higher-Level Organizational Unit |
-| `InsurClmType` | `CHAR(4)` | Internal Claim Type |
-| `InsurClmSubclmType` | `CHAR(4)` | Subclaim Type |
-| `InsurClmAuthznGrp` | `CHAR(4)` | Authorization Group for Claims (VIP) |
-| `InsurClmCoverageType` | `CHAR(10)` | Coverage Type |
-| `InsurClmLifeCycSts` | `CHAR(2)` | Status of Claim |
-| `InsuranceContract` | `CHAR(17)` | Contract Number |
-| `InsurLineOfBus` | `CHAR(3)` | Insurance Line of Business |
-| `InsurClmPerformerObjID` | `CHAR(12)` | Claim Handler |
-| `InsurClmDisplayCurrency` | `CUKY(5)` |  |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `CalendarQuarter` | `NUMC(1)` | Calendar Quarter |
-| `YearQuarter` | `NUMC(5)` | Year Quarter |
-| `InsurClmTotExpndtrAmt` | `CURR(15)` | Total Expenditure in Reserve Currency |
-| `GrossReserveAmount` | `CURR(15)` | Total Expenditure in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsuranceClaim` |  | |  |  | `CHAR(17)` | Number of Claim |
+| `InsurClmLossExpnType` |  | |  |  | `CHAR(1)` | Losses or Expenses |
+| `InsurClmRsrvType` |  | |  |  | `CHAR(2)` | Reserve Type |
+| `InsurClmReserveCurrency` |  | |  |  | `CUKY(5)` | Currency of Reserve (Transactn Crcy) |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit |
+| `ParentOrganizationalUnit` |  | |  |  | `NUMC(8)` | Higher-Level Organizational Unit |
+| `InsurClmType` |  | |  |  | `CHAR(4)` | Internal Claim Type |
+| `InsurClmSubclmType` |  | |  |  | `CHAR(4)` | Subclaim Type |
+| `InsurClmAuthznGrp` |  | |  |  | `CHAR(4)` | Authorization Group for Claims (VIP) |
+| `InsurClmCoverageType` |  | |  |  | `CHAR(10)` | Coverage Type |
+| `InsurClmLifeCycSts` |  | |  |  | `CHAR(2)` | Status of Claim |
+| `InsuranceContract` |  | |  |  | `CHAR(17)` | Contract Number |
+| `InsurLineOfBus` |  | |  |  | `CHAR(3)` | Insurance Line of Business |
+| `InsurClmPerformerObjID` |  | |  |  | `CHAR(12)` | Claim Handler |
+| `InsurClmDisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `YearQuarter` |  | |  |  | `NUMC(5)` | Year Quarter |
+| `InsurClmTotExpndtrAmt` |  | |  |  | `CURR(15)` | Total Expenditure in Reserve Currency |
+| `GrossReserveAmount` |  | |  |  | `CURR(15)` | Total Expenditure in Display Currency |

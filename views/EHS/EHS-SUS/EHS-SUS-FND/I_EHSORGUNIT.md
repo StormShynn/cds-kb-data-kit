@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit |
-| `OrganizationalUnitCode` | `CHAR(12)` | Object Abbreviation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit |
+| `OrganizationalUnitCode` |  | |  |  | `CHAR(12)` | Object Abbreviation |

@@ -33,23 +33,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenancePlan` | `CHAR(12)` | Maintenance Plan |
-| `MaintenancePlanCallNumber` | `INT4(10)` | Maintenance Plan Call Number |
-| `MaintenancePackage` | `NUMC(2)` | Maintenance Package Number |
-| `SchedulingType` | `CHAR(1)` | Scheduling type |
-| `SchedulingStatus` | `CHAR(1)` | Single-Character Flag |
-| `MeasuringPoint` | `CHAR(12)` | Measuring Point |
-| `MaintenanceCallNextPlannedDate` | `DATS(8)` | Next planned date |
-| `CompletionDate` | `DATS(8)` | Date of last completion in maintenance plan |
-| `CycleSetSequence` | `NUMC(2)` | Cycle Set Sequence |
-| `MaintCallCompltnCntrRdng` | `FLTP(16)` | Counter reading confirmation |
-| `MaintenanceCallIsOutstanding` | `CHAR(1)` | Scheduling status: call outstanding |
-| `MaintCallIsInvokedOnPlndDate` | `CHAR(1)` | Scheduling status: planned date called |
-| `MaintCallHorizonIsNotReached` | `CHAR(1)` | Scheduling status: call horizon not reached |
-| `MaintPlanLastScheduledDate` | `DATS(8)` | Date of the call |
-| `ReleasedByUserName` | `CHAR(12)` | Name of the person who made the call |
-| `MaintPlanPrdcssrCallCompltnDte` | `DATS(8)` | Completion for Predecessor |
-| `MaintenancePlanManualCallDate` | `DATS(8)` | Manual call date |
-| `MaintenanceCallLastPlannedDate` | `DATS(8)` | Last planned date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlan` |  | |  |  | `CHAR(12)` | Maintenance Plan |
+| `MaintenancePlanCallNumber` |  | |  |  | `INT4(10)` | Maintenance Plan Call Number |
+| `MaintenancePackage` |  | |  |  | `NUMC(2)` | Maintenance Package Number |
+| `SchedulingType` |  | |  |  | `CHAR(1)` | Scheduling type |
+| `SchedulingStatus` |  | |  |  | `CHAR(1)` | Single-Character Flag |
+| `MeasuringPoint` |  | |  |  | `CHAR(12)` | Measuring Point |
+| `MaintenanceCallNextPlannedDate` |  | |  |  | `DATS(8)` | Next planned date |
+| `CompletionDate` |  | |  |  | `DATS(8)` | Date of last completion in maintenance plan |
+| `CycleSetSequence` |  | |  |  | `NUMC(2)` | Cycle Set Sequence |
+| `MaintCallCompltnCntrRdng` |  | |  |  | `FLTP(16)` | Counter reading confirmation |
+| `MaintenanceCallIsOutstanding` |  | |  |  | `CHAR(1)` | Scheduling status: call outstanding |
+| `MaintCallIsInvokedOnPlndDate` |  | |  |  | `CHAR(1)` | Scheduling status: planned date called |
+| `MaintCallHorizonIsNotReached` |  | |  |  | `CHAR(1)` | Scheduling status: call horizon not reached |
+| `MaintPlanLastScheduledDate` |  | |  |  | `DATS(8)` | Date of the call |
+| `ReleasedByUserName` |  | |  |  | `CHAR(12)` | Name of the person who made the call |
+| `MaintPlanPrdcssrCallCompltnDte` |  | |  |  | `DATS(8)` | Completion for Predecessor |
+| `MaintenancePlanManualCallDate` |  | |  |  | `DATS(8)` | Manual call date |
+| `MaintenanceCallLastPlannedDate` |  | |  |  | `DATS(8)` | Last planned date |

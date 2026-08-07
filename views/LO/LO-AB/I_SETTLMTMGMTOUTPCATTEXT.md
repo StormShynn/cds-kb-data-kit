@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtOutpCat` | `CHAR(1)` | Output Category in Settlement Management |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtMgmtOutpCatName` | `CHAR(60)` | Text of Output Category in Settlement Management |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtOutpCat` |  | |  |  | `CHAR(1)` | Output Category in Settlement Management |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtMgmtOutpCatName` |  | |  |  | `CHAR(60)` | Text of Output Category in Settlement Management |

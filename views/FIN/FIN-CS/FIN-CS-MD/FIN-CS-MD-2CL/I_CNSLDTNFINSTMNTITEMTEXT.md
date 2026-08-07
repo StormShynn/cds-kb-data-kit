@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `FinancialStatementItem` | `CHAR(10)` | Financial Statement Item |
-| `Language` | `LANG(1)` | Language Key |
-| `FinancialStatementItemText` | `CHAR(15)` | Name |
-| `FinancialStatementItemMdmText` | `CHAR(50)` | Description |
-| `FinancialStatementItemLongText` | `CHAR(250)` | Long Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FinancialStatementItemText` |  | |  |  | `CHAR(15)` | Name |
+| `FinancialStatementItemMdmText` |  | |  |  | `CHAR(50)` | Description |
+| `FinancialStatementItemLongText` |  | |  |  | `CHAR(250)` | Long Description |

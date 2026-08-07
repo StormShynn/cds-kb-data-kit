@@ -33,16 +33,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BudgetPeriod` | `CHAR(10)` | Budget Period |
-| `ValidityStartDate` | `DATS(8)` | Budget Period Valid From |
-| `ValidityEndDate` | `DATS(8)` | Budget Period Valid To |
-| `BudgetPeriodExpirationDate` | `DATS(8)` | Budget Period Expiration Date |
-| `BudgetPeriodReversalDate` | `DATS(8)` | Budget Period Reversal Date |
-| `BudgetPeriodAuthznGrp` | `CHAR(10)` | Budget Period Authorization Group |
-| `CreatedByUser` | `CHAR(12)` | Budget Period Created by User |
-| `CreationDate` | `DATS(8)` | Budget Period Created on Date |
-| `LastChangeUser` | `CHAR(12)` | Budget Period Last Changed by User |
-| `LastChangeDate` | `DATS(8)` | Budget Period Last Changed on Date |
-| `BudgetPeriodPeriodicity` | `CHAR(10)` | Frequency for Budget Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BudgetPeriod` |  | |  |  | `CHAR(10)` | Budget Period |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Budget Period Valid From |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Budget Period Valid To |
+| `BudgetPeriodExpirationDate` |  | |  |  | `DATS(8)` | Budget Period Expiration Date |
+| `BudgetPeriodReversalDate` |  | |  |  | `DATS(8)` | Budget Period Reversal Date |
+| `BudgetPeriodAuthznGrp` |  | |  |  | `CHAR(10)` | Budget Period Authorization Group |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Budget Period Created by User |
+| `CreationDate` |  | |  |  | `DATS(8)` | Budget Period Created on Date |
+| `LastChangeUser` |  | |  |  | `CHAR(12)` | Budget Period Last Changed by User |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Budget Period Last Changed on Date |
+| `BudgetPeriodPeriodicity` |  | |  |  | `CHAR(10)` | Frequency for Budget Period |

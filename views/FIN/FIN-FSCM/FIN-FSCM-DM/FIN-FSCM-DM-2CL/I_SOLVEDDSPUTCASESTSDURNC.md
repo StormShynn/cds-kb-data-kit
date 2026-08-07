@@ -33,23 +33,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DisputeCaseUUID` | `CHAR(32)` | UUID in Character Format |
-| `DisputeCaseStatus` | `NUMC(2)` | Case: Status |
-| `CaseID` | `CHAR(12)` | Case ID |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Customer` | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
-| `DisputeCaseProcessor` | `CHAR(12)` | Processor |
-| `DisputeCaseCoordinator` | `CHAR(12)` | Coordinator of Dispute Case |
-| `CaseCreationDate` | `DATS(8)` | Created On |
-| `CaseClosingDate` | `DATS(8)` | Closed On |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerBasicAuthorizationGrp` | `CHAR(4)` | Authorization Group |
-| `DisputeCaseReason` | `CHAR(4)` | Reason for Case |
-| `DisputeCasePriority` | `NUMC(1)` | Priority |
-| `DisputeCaseRootCause` | `CHAR(4)` | Root Cause Code |
-| `StatusProfile` | `CHAR(8)` | Case: Status Profile |
-| `CaseType` | `CHAR(4)` | Case Type |
-| `DisputeCaseStatusDurnInDays` | `INT4(10)` | Solved Case Status Duration in Days |
-| `NumberOfDisputeCases` | `INT4(10)` | Number of Dispute Cases |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DisputeCaseUUID` |  | |  |  | `CHAR(32)` | UUID in Character Format |
+| `DisputeCaseStatus` |  | |  |  | `NUMC(2)` | Case: Status |
+| `CaseID` |  | |  |  | `CHAR(12)` | Case ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Customer` |  | |  |  | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
+| `DisputeCaseProcessor` |  | |  |  | `CHAR(12)` | Processor |
+| `DisputeCaseCoordinator` |  | |  |  | `CHAR(12)` | Coordinator of Dispute Case |
+| `CaseCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `CaseClosingDate` |  | |  |  | `DATS(8)` | Closed On |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `DisputeCaseReason` |  | |  |  | `CHAR(4)` | Reason for Case |
+| `DisputeCasePriority` |  | |  |  | `NUMC(1)` | Priority |
+| `DisputeCaseRootCause` |  | |  |  | `CHAR(4)` | Root Cause Code |
+| `StatusProfile` |  | |  |  | `CHAR(8)` | Case: Status Profile |
+| `CaseType` |  | |  |  | `CHAR(4)` | Case Type |
+| `DisputeCaseStatusDurnInDays` |  | |  |  | `INT4(10)` | Solved Case Status Duration in Days |
+| `NumberOfDisputeCases` |  | |  |  | `INT4(10)` | Number of Dispute Cases |

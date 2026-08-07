@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RightsObjectCategory` | `CHAR(6)` | Object Category |
-| `RightsObjectType` | `CHAR(6)` | Right Type |
-| `Language` | `LANG(1)` | Language Key |
-| `RightsObjectTypeText` | `CHAR(40)` | Right  Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RightsObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `RightsObjectType` |  | |  |  | `CHAR(6)` | Right Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RightsObjectTypeText` |  | |  |  | `CHAR(40)` | Right  Type Name |

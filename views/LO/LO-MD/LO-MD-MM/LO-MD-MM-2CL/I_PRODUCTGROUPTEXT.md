@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaterialGroup` | `CHAR(9)` | Product Group |
-| `Language` | `LANG(1)` | Language Key |
-| `MaterialGroupName` | `CHAR(20)` | Product Group Description |
-| `MaterialGroupText` | `CHAR(60)` | Description of the Material Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MaterialGroupName` |  | |  |  | `CHAR(20)` | Product Group Description |
+| `MaterialGroupText` |  | |  |  | `CHAR(60)` | Description of the Material Group |

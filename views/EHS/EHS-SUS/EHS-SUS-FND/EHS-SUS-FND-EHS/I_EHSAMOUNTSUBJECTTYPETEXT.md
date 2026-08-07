@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSAmountSubjectType` | `CHAR(2)` | Subject Type |
-| `Language` | `LANG(1)` | Language Key |
-| `EHSAmountSubjectTypeText` | `CHAR(60)` | Amount Subject Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSAmountSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EHSAmountSubjectTypeText` |  | |  |  | `CHAR(60)` | Amount Subject Type Description |

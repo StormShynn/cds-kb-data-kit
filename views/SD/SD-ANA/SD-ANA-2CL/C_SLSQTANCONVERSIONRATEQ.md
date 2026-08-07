@@ -39,26 +39,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesQuotation` | `CHAR(10)` | Sales Quotation |
-| `SalesQuotationItem` | `NUMC(6)` | Sales Quotation Item |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `OrganizationDivision` | `CHAR(2)` | Division |
-| `SalesOffice` | `CHAR(4)` | Sales Office |
-| `SalesGroup` | `CHAR(3)` | Sales Group |
-| `PartnerCompany` | `CHAR(6)` | Company ID of Trading Partner |
-| `SoldToParty` | `CHAR(10)` | Sold-to Party |
-| `ResponsibleEmployee` | `NUMC(8)` | Employee Responsible |
-| `SalesEmployee` | `NUMC(8)` | Sales Employee |
-| `Material` | `CHAR(40)` | Material Number |
-| `Product` | `CHAR(40)` | Product |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `SalesQuotationNetAmtInDspCrcy` | `CURR(19)` | Sales Quotation Net Amount In Display Currency |
-| `CnvrtdSalesQtanNetAmtInDspCrcy` | `CURR(19)` | Converted Sales Quoation Net Amount in Display Currency |
-| `SalesQuotationConversionRate` | `DEC(7)` | Sales Quotation Conversion Rate |
-| `SlsQtanPeriodElapsedPercent` | `DEC(9)` | Sales Quotation Period Elapsed Percent |
-| `SlsQtanPeriodDueDays` | `INT4(10)` | Days Before Expiry of Quotation |
-| `PrdtvSlsQtanCnvrsnAmtInDspCrcy` | `CURR(19)` | Predicted Order Value in Display Currency |
-| `PrdtvSlsQtanCnvrsnRate` | `DEC(7)` | Predicted Sales Quotation Conversion Rate |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesQuotation` |  | |  |  | `CHAR(10)` | Sales Quotation |
+| `SalesQuotationItem` |  | |  |  | `NUMC(6)` | Sales Quotation Item |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `PartnerCompany` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `ResponsibleEmployee` |  | |  |  | `NUMC(8)` | Employee Responsible |
+| `SalesEmployee` |  | |  |  | `NUMC(8)` | Sales Employee |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `SalesQuotationNetAmtInDspCrcy` |  | |  |  | `CURR(19)` | Sales Quotation Net Amount In Display Currency |
+| `CnvrtdSalesQtanNetAmtInDspCrcy` |  | |  |  | `CURR(19)` | Converted Sales Quoation Net Amount in Display Currency |
+| `SalesQuotationConversionRate` |  | |  |  | `DEC(7)` | Sales Quotation Conversion Rate |
+| `SlsQtanPeriodElapsedPercent` |  | |  |  | `DEC(9)` | Sales Quotation Period Elapsed Percent |
+| `SlsQtanPeriodDueDays` |  | |  |  | `INT4(10)` | Days Before Expiry of Quotation |
+| `PrdtvSlsQtanCnvrsnAmtInDspCrcy` |  | |  |  | `CURR(19)` | Predicted Order Value in Display Currency |
+| `PrdtvSlsQtanCnvrsnRate` |  | |  |  | `DEC(7)` | Predicted Sales Quotation Conversion Rate |

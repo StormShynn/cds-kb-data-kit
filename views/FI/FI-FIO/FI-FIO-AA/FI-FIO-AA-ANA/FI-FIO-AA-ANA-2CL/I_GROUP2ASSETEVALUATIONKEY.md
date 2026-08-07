@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Group2AssetEvaluationKey` | `CHAR(4)` | Evaluation groups 1 - 4 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Group2AssetEvaluationKey` |  | |  |  | `CHAR(4)` | Evaluation groups 1 - 4 |

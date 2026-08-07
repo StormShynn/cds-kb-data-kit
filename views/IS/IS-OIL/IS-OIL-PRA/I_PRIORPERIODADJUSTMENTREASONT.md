@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PriorPeriodAdjustmentReason` | `CHAR(2)` | Prior Period Adjustment Reason Code |
-| `Language` | `LANG(1)` | Language Key |
-| `PriorPeriodAdjustmentRsnName` | `CHAR(50)` | Prior Period Adjustment Reason Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PriorPeriodAdjustmentReason` |  | |  |  | `CHAR(2)` | Prior Period Adjustment Reason Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PriorPeriodAdjustmentRsnName` |  | |  |  | `CHAR(50)` | Prior Period Adjustment Reason Description |

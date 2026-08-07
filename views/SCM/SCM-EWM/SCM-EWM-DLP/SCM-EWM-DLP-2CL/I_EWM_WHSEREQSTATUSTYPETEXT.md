@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouseRequestStatusType` | `CHAR(5)` | Status Type |
-| `Language` | `LANG(1)` | Language Key |
-| `EWMWhseReqStatusTypeName` | `CHAR(30)` | Description of a Status Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouseRequestStatusType` |  | |  |  | `CHAR(5)` | Status Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMWhseReqStatusTypeName` |  | |  |  | `CHAR(30)` | Description of a Status Type |

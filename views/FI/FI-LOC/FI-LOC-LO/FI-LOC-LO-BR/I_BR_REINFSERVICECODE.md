@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_EFDREINFServiceCode` | `CHAR(9)` | EFD-REINF Service Type Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_EFDREINFServiceCode` |  | |  |  | `CHAR(9)` | EFD-REINF Service Type Code |

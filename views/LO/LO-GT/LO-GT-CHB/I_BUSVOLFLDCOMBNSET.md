@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusVolFldCombnSet` | `CHAR(4)` | Set of Field Combinations |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolFldCombnSet` |  | |  |  | `CHAR(4)` | Set of Field Combinations |

@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CompetitionPressureCategory` | `CHAR(1)` | Competition characterization of a product |
-| `CompetitionPressureCatDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CompetitionPressureCategory` |  | |  |  | `CHAR(1)` | Competition characterization of a product |
+| `CompetitionPressureCatDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

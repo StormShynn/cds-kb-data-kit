@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMDeliveryDocumentCategory` | `CHAR(3)` | Document Category |
-| `DeliveryItemType` | `CHAR(4)` | Item Type |
-| `DeliveryItemTypeName` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMDeliveryDocumentCategory` |  | |  |  | `CHAR(3)` | Document Category |
+| `DeliveryItemType` |  | |  |  | `CHAR(4)` | Item Type |
+| `DeliveryItemTypeName` |  | |  |  | `CHAR(40)` | Description |

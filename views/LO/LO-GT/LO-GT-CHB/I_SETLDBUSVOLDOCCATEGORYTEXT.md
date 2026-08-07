@@ -41,9 +41,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SetldBusVolDocCategory` | `CHAR(2)` | Settled Business Volume Document Type |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SetldBusVolDocCategoryName` | `CHAR(60)` | Settled Business Volume Document Type Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SetldBusVolDocCategory` |  | |  |  | `CHAR(2)` | Settled Business Volume Document Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SetldBusVolDocCategoryName` |  | |  |  | `CHAR(60)` | Settled Business Volume Document Type Text |

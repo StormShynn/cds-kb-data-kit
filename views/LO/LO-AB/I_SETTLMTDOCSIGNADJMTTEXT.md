@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDocSignAdjustment` | `CHAR(1)` | Adjust Plus/Minus Sign |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtDocSignAdjustmentName` | `CHAR(60)` | Short Text for Fixed Values |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocSignAdjustment` |  | |  |  | `CHAR(1)` | Adjust Plus/Minus Sign |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtDocSignAdjustmentName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

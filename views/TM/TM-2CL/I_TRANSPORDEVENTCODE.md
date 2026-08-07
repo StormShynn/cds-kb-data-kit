@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdEventCode` | `CHAR(20)` | Event Occurring for a Transportation Activity |
-| `TransportationActivity` | `CHAR(2)` | Transportation Activity |
-| `TranspOrdStopCategory` | `CHAR(1)` | Stop Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdEventCode` |  | |  |  | `CHAR(20)` | Event Occurring for a Transportation Activity |
+| `TransportationActivity` |  | |  |  | `CHAR(2)` | Transportation Activity |
+| `TranspOrdStopCategory` |  | |  |  | `CHAR(1)` | Stop Category |

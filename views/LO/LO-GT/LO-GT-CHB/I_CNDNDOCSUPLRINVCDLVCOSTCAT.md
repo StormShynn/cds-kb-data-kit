@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnDocSuplrInvcDlvCostCat` | `CHAR(1)` | Item Category of Supplier Invoice |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnDocSuplrInvcDlvCostCat` |  | |  |  | `CHAR(1)` | Item Category of Supplier Invoice |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

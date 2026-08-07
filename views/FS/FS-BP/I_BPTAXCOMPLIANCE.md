@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BPTaxComplianceID` | `CHAR(6)` | Tax Compliance ID |
-| `BPTaxComplianceType` | `CHAR(6)` | Tax Compliance Type |
-| `BPTaxComplianceCountryRegion` | `CHAR(3)` | Tax Compliance: Country/Region |
-| `BPTaxComplianceRegion` | `CHAR(3)` | Tax Compliance: Region |
-| `BPTaxComplianceStatus` | `CHAR(1)` | Tax Compliance Status |
-| `BPTaxComplianceStatusReason` | `CHAR(2)` | Tax Compliance: Reason for Status |
-| `BPTaxComplianceValidFromDate` | `DATS(8)` | Tax Compliance: Start Date |
-| `BPTaxComplianceValidToDate` | `DATS(8)` | Tax Compliance: End Date |
-| `BPTaxComplianceRatingDate` | `DATS(8)` | Tax Compliance: Rating Date |
-| `BPTaxComplianceAgreementStatus` | `CHAR(1)` | Tax Compliance: Agreement Status |
-| `BPTaxComplianceAgreementDate` | `DATS(8)` | Tax Compliance: Agreement Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BPTaxComplianceID` |  | |  |  | `CHAR(6)` | Tax Compliance ID |
+| `BPTaxComplianceType` |  | |  |  | `CHAR(6)` | Tax Compliance Type |
+| `BPTaxComplianceCountryRegion` |  | |  |  | `CHAR(3)` | Tax Compliance: Country/Region |
+| `BPTaxComplianceRegion` |  | |  |  | `CHAR(3)` | Tax Compliance: Region |
+| `BPTaxComplianceStatus` |  | |  |  | `CHAR(1)` | Tax Compliance Status |
+| `BPTaxComplianceStatusReason` |  | |  |  | `CHAR(2)` | Tax Compliance: Reason for Status |
+| `BPTaxComplianceValidFromDate` |  | |  |  | `DATS(8)` | Tax Compliance: Start Date |
+| `BPTaxComplianceValidToDate` |  | |  |  | `DATS(8)` | Tax Compliance: End Date |
+| `BPTaxComplianceRatingDate` |  | |  |  | `DATS(8)` | Tax Compliance: Rating Date |
+| `BPTaxComplianceAgreementStatus` |  | |  |  | `CHAR(1)` | Tax Compliance: Agreement Status |
+| `BPTaxComplianceAgreementDate` |  | |  |  | `DATS(8)` | Tax Compliance: Agreement Date |

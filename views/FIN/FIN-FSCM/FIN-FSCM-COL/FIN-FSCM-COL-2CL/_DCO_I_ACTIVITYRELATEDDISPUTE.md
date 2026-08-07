@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoActivityUUID` | `RAW(16)` | Activity UUID |
-| `DCoActivityRelatedDisputeUUID` | `RAW(16)` | Activity-Related Dispute UUID |
-| `DCoDisputeUUID` | `RAW(16)` | Dispute UUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoActivityUUID` |  | |  |  | `RAW(16)` | Activity UUID |
+| `DCoActivityRelatedDisputeUUID` |  | |  |  | `RAW(16)` | Activity-Related Dispute UUID |
+| `DCoDisputeUUID` |  | |  |  | `RAW(16)` | Dispute UUID |

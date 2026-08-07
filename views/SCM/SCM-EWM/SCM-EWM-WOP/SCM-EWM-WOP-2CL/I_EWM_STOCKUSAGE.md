@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMStockUsage` | `CHAR(1)` | Stock Usage |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMStockUsage` |  | |  |  | `CHAR(1)` | Stock Usage |

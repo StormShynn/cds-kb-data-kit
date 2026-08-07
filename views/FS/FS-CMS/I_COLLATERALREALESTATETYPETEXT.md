@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRealEstateType` | `CHAR(6)` | Real Estate Object Type ID |
-| `Language` | `LANG(1)` | Language in which description is needed |
-| `CollateralRealEstateTypeText` | `CHAR(40)` | Name in a specified language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRealEstateType` |  | |  |  | `CHAR(6)` | Real Estate Object Type ID |
+| `Language` |  | |  |  | `LANG(1)` | Language in which description is needed |
+| `CollateralRealEstateTypeText` |  | |  |  | `CHAR(40)` | Name in a specified language |

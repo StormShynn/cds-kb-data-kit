@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeRecordLifecycleStatus` | `CHAR(2)` | Issue Lifecycle Status Code |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `ABAPDomain` | `CHAR(30)` | Domain name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeRecordLifecycleStatus` |  | |  |  | `CHAR(2)` | Issue Lifecycle Status Code |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `ABAPDomain` |  | |  |  | `CHAR(30)` | Domain name |

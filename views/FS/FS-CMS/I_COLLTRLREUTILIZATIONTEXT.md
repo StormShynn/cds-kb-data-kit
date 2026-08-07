@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ColltrlRealEstateUtilization` | `CHAR(6)` | Utilization of the Object |
-| `ColltrlREUtilizationText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ColltrlRealEstateUtilization` |  | |  |  | `CHAR(6)` | Utilization of the Object |
+| `ColltrlREUtilizationText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

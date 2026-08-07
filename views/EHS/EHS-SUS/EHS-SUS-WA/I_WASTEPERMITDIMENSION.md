@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplRqVersPermitNumber` | `CHAR(80)` | Permit Number |
-| `CmplRqVersUUID` | `RAW(16)` | Compliance Requirement UUID |
-| `CmplRqVersName` | `CHAR(255)` | Compliance Requirement Version Name |
-| `CmplRqDomain` | `CHAR(21)` | Compliance Requirement Domain |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplRqVersPermitNumber` |  | |  |  | `CHAR(80)` | Permit Number |
+| `CmplRqVersUUID` |  | |  |  | `RAW(16)` | Compliance Requirement UUID |
+| `CmplRqVersName` |  | |  |  | `CHAR(255)` | Compliance Requirement Version Name |
+| `CmplRqDomain` |  | |  |  | `CHAR(21)` | Compliance Requirement Domain |

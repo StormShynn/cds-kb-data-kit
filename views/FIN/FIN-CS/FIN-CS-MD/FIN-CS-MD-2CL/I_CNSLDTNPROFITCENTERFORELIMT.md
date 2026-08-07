@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ControllingArea` | `CHAR(12)` | Node class |
-| `ProfitCenter` | `CHAR(25)` | Consolidation Profit Center for Elimination |
-| `Language` | `LANG(1)` | Language Key |
-| `AdditionalMasterDataText` | `CHAR(50)` | Profit Center Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` |  | |  |  | `CHAR(12)` | Node class |
+| `ProfitCenter` |  | |  |  | `CHAR(25)` | Consolidation Profit Center for Elimination |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AdditionalMasterDataText` |  | |  |  | `CHAR(50)` | Profit Center Description |

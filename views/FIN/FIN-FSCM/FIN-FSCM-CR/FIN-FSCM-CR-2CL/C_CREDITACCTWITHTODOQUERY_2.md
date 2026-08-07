@@ -33,26 +33,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `CreditAnalyst` | `CHAR(10)` | Credit Analyst |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `CustomerCreditExposureAmount` | `CURR(23)` | Credit Exposure Amount |
-| `CustomerCreditLimitAmount` | `CURR(23)` | Customer's Credit Limit |
-| `CreditAccountResubmissionDate` | `DATS(8)` | Resubmission Date |
-| `BusinessPartnerIsCritical` | `CHAR(1)` | Special Attention Required |
-| `CreditLimitIsZero` | `CHAR(1)` | Credit Limit is Zero |
-| `CreditAccountBlockReason` | `CHAR(2)` | Credit Account Blocking Reason |
-| `NumberOfCreditDecisionDocs` | `INT4(10)` | Number of Documented Credit Decisions |
-| `NumberOfCreditLimitRequests` | `INT4(10)` | Number of Credit Limit Requests |
-| `NumberOfResubmissions` | `INT4(10)` | Number of Resubmisisons |
-| `BPHasCreditDecisionDocument` | `CHAR(1)` | Documented Credit Decision exists |
-| `BPHasCreditLimitRequest` | `CHAR(1)` | Credit Limit Request exists |
-| `BPHasResubmission` | `CHAR(1)` | Resubmission exists |
-| `CreditLimitUtilizationPct` | `DEC(10)` | Credit Limit Change (in Percent) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `CreditAnalyst` |  | |  |  | `CHAR(10)` | Credit Analyst |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `CustomerCreditExposureAmount` |  | |  |  | `CURR(23)` | Credit Exposure Amount |
+| `CustomerCreditLimitAmount` |  | |  |  | `CURR(23)` | Customer's Credit Limit |
+| `CreditAccountResubmissionDate` |  | |  |  | `DATS(8)` | Resubmission Date |
+| `BusinessPartnerIsCritical` |  | |  |  | `CHAR(1)` | Special Attention Required |
+| `CreditLimitIsZero` |  | |  |  | `CHAR(1)` | Credit Limit is Zero |
+| `CreditAccountBlockReason` |  | |  |  | `CHAR(2)` | Credit Account Blocking Reason |
+| `NumberOfCreditDecisionDocs` |  | |  |  | `INT4(10)` | Number of Documented Credit Decisions |
+| `NumberOfCreditLimitRequests` |  | |  |  | `INT4(10)` | Number of Credit Limit Requests |
+| `NumberOfResubmissions` |  | |  |  | `INT4(10)` | Number of Resubmisisons |
+| `BPHasCreditDecisionDocument` |  | |  |  | `CHAR(1)` | Documented Credit Decision exists |
+| `BPHasCreditLimitRequest` |  | |  |  | `CHAR(1)` | Credit Limit Request exists |
+| `BPHasResubmission` |  | |  |  | `CHAR(1)` | Resubmission exists |
+| `CreditLimitUtilizationPct` |  | |  |  | `DEC(10)` | Credit Limit Change (in Percent) |

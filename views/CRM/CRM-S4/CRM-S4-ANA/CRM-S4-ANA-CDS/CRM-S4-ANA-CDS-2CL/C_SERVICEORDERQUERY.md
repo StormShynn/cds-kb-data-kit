@@ -38,30 +38,30 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceObjectType` | `CHAR(10)` | Business Trans. Cat. |
-| `ServiceOrder` | `CHAR(10)` | Transaction ID |
-| `ServiceOrderDescription` | `CHAR(40)` | Transaction Description |
-| `ServiceOrderStatus` | `CHAR(4)` | Life Cycle Status |
-| `ServiceDocumentType` | `CHAR(4)` | Business Transaction Type |
-| `RefBusinessSolutionOrder` | `CHAR(10)` | Reference Solution Order ID |
-| `SoldToParty` | `CHAR(10)` | Sold-To Party |
-| `RequestedServiceEndDate` | `DATS(8)` | Changed On |
-| `ServiceDocumentCreationDate` | `DATS(8)` | Created On |
-| `SrvcOrdCreationQuarter` | `NUMC(1)` | Calendar Quarter |
-| `SrvcOrdCreationMonth` | `NUMC(2)` | Calendar Month |
-| `SrvcOrdCreationYear` | `NUMC(4)` | Calendar Year |
-| `ServiceDocumentPriority` | `NUMC(1)` | Activity Priority |
-| `ServiceDocumentHasError` | `CHAR(1)` | Error Status |
-| `ServiceDocumentIsOpen` | `CHAR(1)` | Status "Open" |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `NetAmountInDisplayCurrency` | `CURR(15)` |  |
-| `NumberOfIncomingServiceOrders` | `INT4(10)` |  |
-| `NumberOfOpenServiceOrders` | `INT4(10)` |  |
-| `TransactionCurrency` | `CUKY(5)` | Currency |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SalesOffice` | `CHAR(4)` | Sales Office |
-| `SalesGroup` | `CHAR(3)` | Sales Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceOrder` |  | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceOrderDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `ServiceOrderStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `RefBusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Reference Solution Order ID |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `RequestedServiceEndDate` |  | |  |  | `DATS(8)` | Changed On |
+| `ServiceDocumentCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `SrvcOrdCreationQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `SrvcOrdCreationMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `SrvcOrdCreationYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `ServiceDocumentPriority` |  | |  |  | `NUMC(1)` | Activity Priority |
+| `ServiceDocumentHasError` |  | |  |  | `CHAR(1)` | Error Status |
+| `ServiceDocumentIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `NetAmountInDisplayCurrency` |  | |  |  | `CURR(15)` |  |
+| `NumberOfIncomingServiceOrders` |  | |  |  | `INT4(10)` |  |
+| `NumberOfOpenServiceOrders` |  | |  |  | `INT4(10)` |  |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |

@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationType` | `CHAR(6)` | Liquidation Measure Type ID |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `LiquidationTypeText` | `CHAR(40)` | Name of the Liquidation type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationType` |  | |  |  | `CHAR(6)` | Liquidation Measure Type ID |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `LiquidationTypeText` |  | |  |  | `CHAR(40)` | Name of the Liquidation type |

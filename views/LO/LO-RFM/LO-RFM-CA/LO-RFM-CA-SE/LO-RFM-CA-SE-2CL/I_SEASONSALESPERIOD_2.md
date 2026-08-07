@@ -35,29 +35,29 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConditionRecord` | `CHAR(10)` | Condition Record Number for Seasons |
-| `ProductSeasonYear` | `CHAR(4)` | Season Year |
-| `ProductSeason` | `CHAR(10)` | Season |
-| `ProductCollection` | `CHAR(10)` | Fashion Collection |
-| `ProductTheme` | `CHAR(10)` | Fashion Theme |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `CustomerGroup` | `CHAR(2)` | Customer Group |
-| `SoldToParty` | `CHAR(10)` | Customer Number |
-| `DeliveryStartDate` | `DATS(8)` | Delivery Date From |
-| `DeliveryEndDate` | `DATS(8)` | Delivery Date To |
-| `OrderStartDate` | `DATS(8)` | Order Date From |
-| `OrderEndDate` | `DATS(8)` | Order Date To |
-| `CreatedByUser` | `CHAR(12)` | User Who Created the Object |
-| `CreationDate` | `DATS(8)` | Date on Which the Object Was Created |
-| `CreationTime` | `TIMS(6)` | Time at Which the Object Was Created |
-| `LastChangedByUser` | `CHAR(12)` | Last User to Change the Object |
-| `LastChangeDate` | `DATS(8)` | Date on Which the Object Was Last Changed |
-| `LastChangeTime` | `TIMS(6)` | Time at Which the Object Was Last Changed |
-| `SeasonInternalIdentifier` | `RAW(16)` | Season Internal Unique Identifier |
-| `SeasonSalesPeriodUUID` | `RAW(16)` | Unique Identifier of the Season Sales Periods |
-| `SeasonPeriodType` | `CHAR(2)` | Season period type like sales or stock tranfer |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionRecord` |  | |  |  | `CHAR(10)` | Condition Record Number for Seasons |
+| `ProductSeasonYear` |  | |  |  | `CHAR(4)` | Season Year |
+| `ProductSeason` |  | |  |  | `CHAR(10)` | Season |
+| `ProductCollection` |  | |  |  | `CHAR(10)` | Fashion Collection |
+| `ProductTheme` |  | |  |  | `CHAR(10)` | Fashion Theme |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Customer Number |
+| `DeliveryStartDate` |  | |  |  | `DATS(8)` | Delivery Date From |
+| `DeliveryEndDate` |  | |  |  | `DATS(8)` | Delivery Date To |
+| `OrderStartDate` |  | |  |  | `DATS(8)` | Order Date From |
+| `OrderEndDate` |  | |  |  | `DATS(8)` | Order Date To |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Who Created the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Created |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Created |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last User to Change the Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Last Changed |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| `SeasonInternalIdentifier` |  | |  |  | `RAW(16)` | Season Internal Unique Identifier |
+| `SeasonSalesPeriodUUID` |  | |  |  | `RAW(16)` | Unique Identifier of the Season Sales Periods |
+| `SeasonPeriodType` |  | |  |  | `CHAR(2)` | Season period type like sales or stock tranfer |

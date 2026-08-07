@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DefectInternalID` | `CHAR(12)` | Internal Defect ID |
-| `DfctSerialNmbrSequentialNumber` | `INT2(5)` | Counter of Serial Number in a Defect |
-| `Defect` | `CHAR(11)` | Defect Number |
-| `SerialNumber` | `CHAR(18)` | Serial Number |
-| `Equipment` | `CHAR(18)` | Equipment Number |
-| `SerialNumberAssignmentDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DefectInternalID` |  | |  |  | `CHAR(12)` | Internal Defect ID |
+| `DfctSerialNmbrSequentialNumber` |  | |  |  | `INT2(5)` | Counter of Serial Number in a Defect |
+| `Defect` |  | |  |  | `CHAR(11)` | Defect Number |
+| `SerialNumber` |  | |  |  | `CHAR(18)` | Serial Number |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `SerialNumberAssignmentDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |

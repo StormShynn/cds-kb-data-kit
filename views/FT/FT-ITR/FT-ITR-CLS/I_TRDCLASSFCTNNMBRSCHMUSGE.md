@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdClassfctnNmbrSchmType` | `CHAR(2)` | Type of Numbering Scheme |
-| `Country` | `CHAR(3)` | Country/Region |
-| `TrdClassfctnNmbrSchm` | `CHAR(10)` | Trade Classification Numbering Scheme |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdClassfctnNmbrSchmType` |  | |  |  | `CHAR(2)` | Type of Numbering Scheme |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `TrdClassfctnNmbrSchm` |  | |  |  | `CHAR(10)` | Trade Classification Numbering Scheme |

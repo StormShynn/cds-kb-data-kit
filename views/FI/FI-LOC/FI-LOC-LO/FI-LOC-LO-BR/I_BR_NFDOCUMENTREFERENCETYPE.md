@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NFDocumentReferenceType` | `CHAR(1)` | Document Reference Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NFDocumentReferenceType` |  | |  |  | `CHAR(1)` | Document Reference Type |

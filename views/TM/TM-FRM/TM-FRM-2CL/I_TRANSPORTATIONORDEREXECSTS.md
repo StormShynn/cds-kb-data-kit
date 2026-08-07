@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TransportationOrderExecSts` | `CHAR(2)` | Execution Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderExecSts` |  | |  |  | `CHAR(2)` | Execution Status |

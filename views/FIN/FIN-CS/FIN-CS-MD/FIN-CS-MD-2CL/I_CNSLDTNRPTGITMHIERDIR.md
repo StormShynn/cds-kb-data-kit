@@ -35,11 +35,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `ConsolidationReportingItemHier` | `CHAR(10)` | Reporting Item Hierarchy |
-| `AdditionalMasterDataHierarchy` | `CHAR(40)` | Consolidation Hierarchy ID |
-| `LastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `LastChangeTime` | `DEC(15)` | Last Updated At (Timestamp) |
-| `LastChangeDateTime` | `DEC(15)` | Last Updated At (Timestamp) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `ConsolidationReportingItemHier` |  | |  |  | `CHAR(10)` | Reporting Item Hierarchy |
+| `AdditionalMasterDataHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Hierarchy ID |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `LastChangeTime` |  | |  |  | `DEC(15)` | Last Updated At (Timestamp) |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Last Updated At (Timestamp) |

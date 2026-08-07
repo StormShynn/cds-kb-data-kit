@@ -30,18 +30,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TrdClassfctnNmbrSchm` | ✓ | |  |  |  |  |
-| `CustomsTariffNumber` | ✓ | |  |  |  |  |
-| `TrdClassfctnNmbrSchmCntnt` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `TrdClassfctnNmbrForOfclDesc` |  | |  |  |  |  |
-| `TrdClassfctnNmbrForCnctntdDesc` |  | |  |  |  |  |
-| `UnitOfMeasureSystem` |  | |  |  |  |  |
-| `CustomsUnitOfMeasure` |  | |  |  |  |  |
-| `SecondCustomsUnitOfMeasure` |  | |  |  |  |  |
-| `SupplementaryUnit` |  | |  |  |  |  |
-| `SecondSupplementaryUnit` |  | |  |  |  |  |
+| `TrdClassfctnNmbrSchm` | ✓ | |  |  | `CHAR(10)` | Trade Classification Numbering Scheme |
+| `CustomsTariffNumber` | ✓ | |  |  | `CHAR(30)` | Customs Tariff Number |
+| `TrdClassfctnNmbrSchmCntnt` |  | |  |  | `CHAR(10)` | Trade Classification Numbering Scheme Content |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid From |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To |
+| `TrdClassfctnNmbrForOfclDesc` |  | |  |  | `CHAR(30)` | Number |
+| `TrdClassfctnNmbrForCnctntdDesc` |  | |  |  | `CHAR(30)` | Number |
+| `UnitOfMeasureSystem` |  | |  |  | `CHAR(10)` | Unit of Measure System |
+| `CustomsUnitOfMeasure` |  | |  |  | `CHAR(10)` | First Customs Unit of Measure |
+| `SecondCustomsUnitOfMeasure` |  | |  |  | `CHAR(10)` | Second Customs Unit of Measure |
+| `SupplementaryUnit` |  | |  |  | `UNIT(3)` | First Supplementary Unit |
+| `SecondSupplementaryUnit` |  | |  |  | `UNIT(3)` | Second Supplementary Unit |
 | `_Date` | | ✓ | | | | |
 | `_OfficialDesc` | | ✓ | | | | |
 | `_CnctntdDesc` | | ✓ | | | | |

@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocClassifierID` | `CHAR(40)` | Location Classifier Identifier |
-| `EHSLocClassifierCentralID` | `CHAR(32)` | Location Classifier Character Key |
-| `EHSLocClassifierNameUUID` | `RAW(16)` | Location Classifier Text Key |
-| `EHSLocClassifierUUID` | `RAW(16)` | Location Classifier Key |
-| `EHSLocClassifierText` | `CHAR(255)` | Location Classifier Name |
-| `Language` | `LANG(1)` | Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocClassifierID` |  | |  |  | `CHAR(40)` | Location Classifier Identifier |
+| `EHSLocClassifierCentralID` |  | |  |  | `CHAR(32)` | Location Classifier Character Key |
+| `EHSLocClassifierNameUUID` |  | |  |  | `RAW(16)` | Location Classifier Text Key |
+| `EHSLocClassifierUUID` |  | |  |  | `RAW(16)` | Location Classifier Key |
+| `EHSLocClassifierText` |  | |  |  | `CHAR(255)` | Location Classifier Name |
+| `Language` |  | |  |  | `LANG(1)` | Language |

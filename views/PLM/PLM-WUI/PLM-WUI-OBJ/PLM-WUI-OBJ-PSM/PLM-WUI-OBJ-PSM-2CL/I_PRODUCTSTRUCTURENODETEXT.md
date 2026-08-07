@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductStructureNodeUUID` | `RAW(16)` | Internal Number of iPPE Node |
-| `Language` | `LANG(1)` | Language Key |
-| `ProdStrucNodeDescription` | `CHAR(60)` | Short Text for iPPE Node |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductStructureNodeUUID` |  | |  |  | `RAW(16)` | Internal Number of iPPE Node |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProdStrucNodeDescription` |  | |  |  | `CHAR(60)` | Short Text for iPPE Node |

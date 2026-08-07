@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `MaintEventConsequenceGroup` | `CHAR(10)` | Consequence Category Group ID |
-| `MaintEvtCnsqncCategoryGrpDesc` | `CHAR(70)` | Consequence Category Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MaintEventConsequenceGroup` |  | |  |  | `CHAR(10)` | Consequence Category Group ID |
+| `MaintEvtCnsqncCategoryGrpDesc` |  | |  |  | `CHAR(70)` | Consequence Category Description |

@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FashionGrade` | `CHAR(4)` | Fashion Grade |
-| `Language` | `LANG(1)` | Language Key |
-| `FashionGradeText` | `CHAR(20)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FashionGrade` |  | |  |  | `CHAR(4)` | Fashion Grade |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FashionGradeText` |  | |  |  | `CHAR(20)` | Description |

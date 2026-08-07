@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanLenderNoticeArrgmt` | `NUMC(3)` | Notice Arrangement Lender |
-| `LoanLenderNoticeArrgmtText` | `CHAR(30)` | Text (30 Characters) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanLenderNoticeArrgmt` |  | |  |  | `NUMC(3)` | Notice Arrangement Lender |
+| `LoanLenderNoticeArrgmtText` |  | |  |  | `CHAR(30)` | Text (30 Characters) |

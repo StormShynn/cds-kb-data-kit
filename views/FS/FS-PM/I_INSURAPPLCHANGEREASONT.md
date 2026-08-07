@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurApplChgRsn` | `NUMC(4)` | Change Reason for Business Process |
-| `InsurApplChgRsnName` | `CHAR(50)` | Description of Business Process Change Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurApplChgRsn` |  | |  |  | `NUMC(4)` | Change Reason for Business Process |
+| `InsurApplChgRsnName` |  | |  |  | `CHAR(50)` | Description of Business Process Change Reason |

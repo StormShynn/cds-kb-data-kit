@@ -34,15 +34,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenanceOrder` | `CHAR(12)` | Order Number |
-| `MaintenanceOrderOperation` | `CHAR(4)` | Activity Number |
-| `MaintenanceOrderSubOperation` | `CHAR(4)` | Activity Number |
-| `MaintenanceOrderType` | `CHAR(4)` | Order Type |
-| `MaintenancePlanningPlant` | `CHAR(4)` | Maintenance Planning Plant |
-| `MaintenancePlannerGroup` | `CHAR(3)` | Planner Group for Customer Service and Plant Maintenance |
-| `MaintObjectLocAcctAssgmtNmbr` | `CHAR(12)` | Location and account assignment for technical object |
-| `FunctionalLocation` | `CHAR(30)` | Functional Location |
-| `Equipment` | `CHAR(18)` | Equipment Number |
-| `OperationPersonResponsible` | `NUMC(8)` | Personnel number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintenanceOrderOperation` |  | |  |  | `CHAR(4)` | Activity Number |
+| `MaintenanceOrderSubOperation` |  | |  |  | `CHAR(4)` | Activity Number |
+| `MaintenanceOrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `MaintenancePlanningPlant` |  | |  |  | `CHAR(4)` | Maintenance Planning Plant |
+| `MaintenancePlannerGroup` |  | |  |  | `CHAR(3)` | Planner Group for Customer Service and Plant Maintenance |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  | `CHAR(12)` | Location and account assignment for technical object |
+| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `OperationPersonResponsible` |  | |  |  | `NUMC(8)` | Personnel number |

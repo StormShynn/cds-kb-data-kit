@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationLedger` | `CHAR(2)` | Ledger |
-| `Language` | `LANG(1)` | Language Key |
-| `ConsolidationLedgerName` | `CHAR(30)` | Ledger Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationLedger` |  | |  |  | `CHAR(2)` | Ledger |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConsolidationLedgerName` |  | |  |  | `CHAR(30)` | Ledger Name |

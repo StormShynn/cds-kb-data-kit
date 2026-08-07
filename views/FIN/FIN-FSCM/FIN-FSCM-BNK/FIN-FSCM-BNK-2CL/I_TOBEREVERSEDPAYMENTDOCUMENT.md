@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessTransactionDocUUID` | `RAW(16)` | Globally Unique Identifier |
-| `PaymentRunDate` | `DATS(8)` | Date on Which the Program Is to Be Run |
-| `PaymentRunIdentification` | `CHAR(6)` | Additional Identification |
-| `CompanyCode` | `CHAR(4)` | Paying Company Code |
-| `PaymentDocument` | `CHAR(10)` | Document Number of the Payment Document |
-| `PaymentOrder` | `CHAR(10)` | Payment Order |
-| `PaymentBatch` | `NUMC(10)` | Batch Identification Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessTransactionDocUUID` |  | |  |  | `RAW(16)` | Globally Unique Identifier |
+| `PaymentRunDate` |  | |  |  | `DATS(8)` | Date on Which the Program Is to Be Run |
+| `PaymentRunIdentification` |  | |  |  | `CHAR(6)` | Additional Identification |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Paying Company Code |
+| `PaymentDocument` |  | |  |  | `CHAR(10)` | Document Number of the Payment Document |
+| `PaymentOrder` |  | |  |  | `CHAR(10)` | Payment Order |
+| `PaymentBatch` |  | |  |  | `NUMC(10)` | Batch Identification Number |

@@ -36,18 +36,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Store` | `CHAR(4)` | Retail plant |
-| `StorePickUpOrder` | `CHAR(10)` | Store Pickup Order |
-| `StoreOrderExpdHandoverDteTme` | `DEC(21)` | Expected Date and Time of Order Handover |
-| `Customer` | `CHAR(10)` | Sold-to Party |
-| `StoreOrderPickingStatus` | `CHAR(2)` | Order Picking Status |
-| `StoreOrderPaymentStatus` | `CHAR(1)` | Store Pickup Order Payment Status |
-| `StoreOrderOverallStatus` | `CHAR(1)` | Pickup Order Overall Status |
-| `StoreOrderRejectionReason` | `CHAR(2)` | Store Pickup Order Rejection Reason |
-| `NmbrOfFullyPickedItems` | `CHAR(6)` | Number of Fully Picked Items |
-| `NmbrOfPartiallyPickedItems` | `CHAR(6)` | Count of Partially Picked Items in Store |
-| `NmbrOfUnavailableItems` | `CHAR(6)` | Count of Unavailable Items in Store |
-| `StorePickUpOrderIsSubstnEnbld` | `CHAR(1)` | Substitution Preference for Store Pickup Order |
-| `NmbrOfSubstitutedItems` | `CHAR(6)` | Count of Substituted Items |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Store` |  | |  |  | `CHAR(4)` | Retail plant |
+| `StorePickUpOrder` |  | |  |  | `CHAR(10)` | Store Pickup Order |
+| `StoreOrderExpdHandoverDteTme` |  | |  |  | `DEC(21)` | Expected Date and Time of Order Handover |
+| `Customer` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `StoreOrderPickingStatus` |  | |  |  | `CHAR(2)` | Order Picking Status |
+| `StoreOrderPaymentStatus` |  | |  |  | `CHAR(1)` | Store Pickup Order Payment Status |
+| `StoreOrderOverallStatus` |  | |  |  | `CHAR(1)` | Pickup Order Overall Status |
+| `StoreOrderRejectionReason` |  | |  |  | `CHAR(2)` | Store Pickup Order Rejection Reason |
+| `NmbrOfFullyPickedItems` |  | |  |  | `CHAR(6)` | Number of Fully Picked Items |
+| `NmbrOfPartiallyPickedItems` |  | |  |  | `CHAR(6)` | Count of Partially Picked Items in Store |
+| `NmbrOfUnavailableItems` |  | |  |  | `CHAR(6)` | Count of Unavailable Items in Store |
+| `StorePickUpOrderIsSubstnEnbld` |  | |  |  | `CHAR(1)` | Substitution Preference for Store Pickup Order |
+| `NmbrOfSubstitutedItems` |  | |  |  | `CHAR(6)` | Count of Substituted Items |

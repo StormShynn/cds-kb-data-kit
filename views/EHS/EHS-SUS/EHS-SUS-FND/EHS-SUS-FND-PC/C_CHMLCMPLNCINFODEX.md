@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChmlCmplncInfoUUID` | `RAW(16)` | Chemical Compliance Information |
-| `ChemicalComplianceInfo` | `CHAR(12)` | Internal Number |
-| `ChmlCmplncInternalName` | `CHAR(132)` | Internal Name |
-| `ChmlCmplncInfoType` | `CHAR(2)` | CCI Type |
-| `ResponsibleUnit` | `CHAR(10)` | Responsible Unit |
-| `DngrsGdsRespUnit` | `CHAR(10)` | Responsible Unit for Dangerous Goods |
-| `ProdStewardshipRespUnit` | `CHAR(10)` | Responsible Unit |
-| `MaterialIsSold` | `CHAR(1)` | Product is Sold |
-| `MaterialIsTransported` | `CHAR(1)` | Product is Transported |
-| `MaterialIsSourced` | `CHAR(1)` | Product is Sourced |
-| `MaterialIsProduced` | `CHAR(1)` | Product is Produced |
-| `ChmlCmplncProdIsResearched` | `CHAR(1)` | Research and Development Sample |
-| `SftyDataShtIsNotRequired` | `CHAR(1)` | Product is not relevant for product safety |
-| `MaterialIsDisposed` | `CHAR(1)` | Product is Disposed |
-| `MaterialIsEmissionRelevant` | `CHAR(1)` | Product is Emission Relevant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChmlCmplncInfoUUID` |  | |  |  | `RAW(16)` | Chemical Compliance Information |
+| `ChemicalComplianceInfo` |  | |  |  | `CHAR(12)` | Internal Number |
+| `ChmlCmplncInternalName` |  | |  |  | `CHAR(132)` | Internal Name |
+| `ChmlCmplncInfoType` |  | |  |  | `CHAR(2)` | CCI Type |
+| `ResponsibleUnit` |  | |  |  | `CHAR(10)` | Responsible Unit |
+| `DngrsGdsRespUnit` |  | |  |  | `CHAR(10)` | Responsible Unit for Dangerous Goods |
+| `ProdStewardshipRespUnit` |  | |  |  | `CHAR(10)` | Responsible Unit |
+| `MaterialIsSold` |  | |  |  | `CHAR(1)` | Product is Sold |
+| `MaterialIsTransported` |  | |  |  | `CHAR(1)` | Product is Transported |
+| `MaterialIsSourced` |  | |  |  | `CHAR(1)` | Product is Sourced |
+| `MaterialIsProduced` |  | |  |  | `CHAR(1)` | Product is Produced |
+| `ChmlCmplncProdIsResearched` |  | |  |  | `CHAR(1)` | Research and Development Sample |
+| `SftyDataShtIsNotRequired` |  | |  |  | `CHAR(1)` | Product is not relevant for product safety |
+| `MaterialIsDisposed` |  | |  |  | `CHAR(1)` | Product is Disposed |
+| `MaterialIsEmissionRelevant` |  | |  |  | `CHAR(1)` | Product is Emission Relevant |

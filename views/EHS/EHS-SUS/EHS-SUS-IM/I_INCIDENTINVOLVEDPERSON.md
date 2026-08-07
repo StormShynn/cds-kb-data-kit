@@ -33,16 +33,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InvolvedPersonUUID` | `RAW(16)` | Involved Person UUID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `PersonFullName` | `CHAR(80)` | Name of Involved Person |
-| `EHSCombinedBusinessPartner` | `CHAR(13)` | Involved Person |
-| `EHSPersonPositionDesc` | `CHAR(40)` | Description of Involved Person's Position |
-| `EHSPersonGroup` | `CHAR(21)` | Person Group of Person |
-| `PersonInfoHasAccRestriction` | `CHAR(1)` | Restricted Access to Person Information |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvolvedPersonUUID` |  | |  |  | `RAW(16)` | Involved Person UUID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | Name of Involved Person |
+| `EHSCombinedBusinessPartner` |  | |  |  | `CHAR(13)` | Involved Person |
+| `EHSPersonPositionDesc` |  | |  |  | `CHAR(40)` | Description of Involved Person's Position |
+| `EHSPersonGroup` |  | |  |  | `CHAR(21)` | Person Group of Person |
+| `PersonInfoHasAccRestriction` |  | |  |  | `CHAR(1)` | Restricted Access to Person Information |

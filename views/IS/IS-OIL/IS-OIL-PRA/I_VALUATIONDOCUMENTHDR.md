@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ValuationDocumentYear` | `NUMC(4)` | Document year |
-| `ValuationDocumentNumber` | `CHAR(20)` | Val. document number |
-| `DeliveryNetwork` | `CHAR(20)` | Delivery network number |
-| `SalesDate` | `DATS(8)` | Sales Date / Month |
-| `AllocationFrequency` | `CHAR(1)` | Frequency |
-| `ValuationDocumentStatus` | `CHAR(2)` | Valuation Document Status |
-| `ValuationDocumentType` | `CHAR(4)` | Valuation Document Type |
-| `ProcessingStatus` | `CHAR(1)` | Valuation Document Processing Status |
-| `LastExecutionDate` | `DATS(8)` | Run Date |
-| `LastExecutionTime` | `TIMS(6)` | Run time |
-| `DocumentIsArchived` | `CHAR(1)` | Indicator: Document Already Archived? |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `NumberOfDocuments` | `INT4(10)` | Number of Documents |
-| `OriginTransaction` | `CHAR(32)` | Source Transaction ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationDocumentYear` |  | |  |  | `NUMC(4)` | Document year |
+| `ValuationDocumentNumber` |  | |  |  | `CHAR(20)` | Val. document number |
+| `DeliveryNetwork` |  | |  |  | `CHAR(20)` | Delivery network number |
+| `SalesDate` |  | |  |  | `DATS(8)` | Sales Date / Month |
+| `AllocationFrequency` |  | |  |  | `CHAR(1)` | Frequency |
+| `ValuationDocumentStatus` |  | |  |  | `CHAR(2)` | Valuation Document Status |
+| `ValuationDocumentType` |  | |  |  | `CHAR(4)` | Valuation Document Type |
+| `ProcessingStatus` |  | |  |  | `CHAR(1)` | Valuation Document Processing Status |
+| `LastExecutionDate` |  | |  |  | `DATS(8)` | Run Date |
+| `LastExecutionTime` |  | |  |  | `TIMS(6)` | Run time |
+| `DocumentIsArchived` |  | |  |  | `CHAR(1)` | Indicator: Document Already Archived? |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `NumberOfDocuments` |  | |  |  | `INT4(10)` | Number of Documents |
+| `OriginTransaction` |  | |  |  | `CHAR(32)` | Source Transaction ID |

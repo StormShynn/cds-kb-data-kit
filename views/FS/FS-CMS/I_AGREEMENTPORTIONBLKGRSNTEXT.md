@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionBlockingReason` | `CHAR(6)` | Portion Restriction |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `AgreementPortionBlkgRsnText` | `CHAR(40)` | Portion Restriction name in the Specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionBlockingReason` |  | |  |  | `CHAR(6)` | Portion Restriction |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `AgreementPortionBlkgRsnText` |  | |  |  | `CHAR(40)` | Portion Restriction name in the Specified Language |

@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit |
-| `OrganizationalUnitName` | `CHAR(25)` | Short Text of Organizational Unit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit |
+| `OrganizationalUnitName` |  | |  |  | `CHAR(25)` | Short Text of Organizational Unit |

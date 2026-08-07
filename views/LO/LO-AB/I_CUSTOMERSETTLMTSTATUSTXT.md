@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustomerSettlmtStatus` | `CHAR(1)` | Settlement Status - Customer |
-| `Language` | `LANG(1)` | Language Key |
-| `CustomerSettlmtStatusName` | `CHAR(60)` | Settlement Status - Customer Description |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerSettlmtStatus` |  | |  |  | `CHAR(1)` | Settlement Status - Customer |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CustomerSettlmtStatusName` |  | |  |  | `CHAR(60)` | Settlement Status - Customer Description |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

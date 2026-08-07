@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AllocTableItemCategoryName` | `CHAR(4)` | Item category of allocation table |
-| `AllocTblItmPurOrdGdsRcpnt` | `CHAR(1)` | Goods Recipient of Supplier Purchase Order |
-| `AllocTblItmStkTransfDocCat` | `CHAR(1)` | Stock Transfer From DC to Recipients |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AllocTableItemCategoryName` |  | |  |  | `CHAR(4)` | Item category of allocation table |
+| `AllocTblItmPurOrdGdsRcpnt` |  | |  |  | `CHAR(1)` | Goods Recipient of Supplier Purchase Order |
+| `AllocTblItmStkTransfDocCat` |  | |  |  | `CHAR(1)` | Stock Transfer From DC to Recipients |

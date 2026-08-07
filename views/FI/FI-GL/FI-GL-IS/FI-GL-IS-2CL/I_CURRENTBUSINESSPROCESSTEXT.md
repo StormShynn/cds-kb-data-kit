@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `BusinessProcess` | `CHAR(12)` | Business Process |
-| `Language` | `LANG(1)` | Language Key |
-| `BusinessProcessName` | `CHAR(20)` | General Name |
-| `BusinessProcessDescription` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `BusinessProcess` |  | |  |  | `CHAR(12)` | Business Process |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusinessProcessName` |  | |  |  | `CHAR(20)` | General Name |
+| `BusinessProcessDescription` |  | |  |  | `CHAR(40)` | Description |

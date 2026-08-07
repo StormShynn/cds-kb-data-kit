@@ -36,11 +36,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CAInvcgReferenceObject` | `CHAR(10)` | Reference Object |
-| `CAReferenceObjectID` | `CHAR(40)` | Reference Object ID |
-| `CABillgDocCreationDate` | `DATS(8)` | Date on Which Billing Document Was Created |
-| `CABillgDocument` | `CHAR(12)` | Number of Billing Document |
-| `CABillgIsDocumentSimulated` | `CHAR(1)` | Billing Document Is Simulated |
-| `CAReferenceObjectAddlText` | `CHAR(128)` | Additional Data for Reference Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CAInvcgReferenceObject` |  | |  |  | `CHAR(10)` | Reference Object |
+| `CAReferenceObjectID` |  | |  |  | `CHAR(40)` | Reference Object ID |
+| `CABillgDocCreationDate` |  | |  |  | `DATS(8)` | Date on Which Billing Document Was Created |
+| `CABillgDocument` |  | |  |  | `CHAR(12)` | Number of Billing Document |
+| `CABillgIsDocumentSimulated` |  | |  |  | `CHAR(1)` | Billing Document Is Simulated |
+| `CAReferenceObjectAddlText` |  | |  |  | `CHAR(128)` | Additional Data for Reference Object |

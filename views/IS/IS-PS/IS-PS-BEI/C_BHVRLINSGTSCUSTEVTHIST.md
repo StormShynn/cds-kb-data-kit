@@ -32,28 +32,28 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustomerEventRecordID` | `CHAR(70)` |  |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerName` | `CHAR(40)` | Name 1 of organization |
-| `BhvrlInsgtsEventNumber` | `INT2(5)` |  |
-| `BhvrlInsgtsEventName` | `CHAR(60)` | Event Name |
-| `BhvrlInsgtsEventCategoryTxt` | `CHAR(60)` | Event Category Name |
-| `CustomerEventStartDate` | `DATS(8)` | Record Creation Date |
-| `CustomerEventEndDate` | `DATS(8)` |  |
-| `CustomerEventStartDateTime` | `DEC(15)` |  |
-| `CustomerEventEndDateTime` | `DEC(15)` |  |
-| `OpenAmountInLocalCurrency` | `CURR(13)` |  |
-| `ClearedAmountInLocalCurrency` | `CURR(13)` |  |
-| `LocalCurrency` | `CUKY(5)` |  |
-| `BhvrlInsgtsPeriodCode` | `CHAR(4)` | Key for Period Assignment |
-| `BhvrlInsgtsPeriodCodeTxt` | `CHAR(50)` | Text for Period Key |
-| `CustomerEventValue` | `CHAR(100)` |  |
-| `CustomerEventValueTxt` | `CHAR(100)` |  |
-| `BhvrlInsgtsAccountNumber` | `CHAR(12)` | Contract Account Number |
-| `BhvrlInsgtsAccountName` | `CHAR(35)` | Contract Account Name |
-| `BhvrlInsgtsAccountCategory` | `CHAR(2)` | Contract Account Category |
-| `BhvrlInsgtsAccountCategoryTxt` | `CHAR(50)` | Description of Contract Account Category |
-| `BhvrlInsgtsSubAccountNumber` | `CHAR(20)` | Reference Specifications from Contract |
-| `BhvrlInsgtsSubAccountName` | `CHAR(1)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustomerEventRecordID` |  | |  |  | `CHAR(70)` |  |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerName` |  | |  |  | `CHAR(40)` | Name 1 of organization |
+| `BhvrlInsgtsEventNumber` |  | |  |  | `INT2(5)` |  |
+| `BhvrlInsgtsEventName` |  | |  |  | `CHAR(60)` | Event Name |
+| `BhvrlInsgtsEventCategoryTxt` |  | |  |  | `CHAR(60)` | Event Category Name |
+| `CustomerEventStartDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CustomerEventEndDate` |  | |  |  | `DATS(8)` |  |
+| `CustomerEventStartDateTime` |  | |  |  | `DEC(15)` |  |
+| `CustomerEventEndDateTime` |  | |  |  | `DEC(15)` |  |
+| `OpenAmountInLocalCurrency` |  | |  |  | `CURR(13)` |  |
+| `ClearedAmountInLocalCurrency` |  | |  |  | `CURR(13)` |  |
+| `LocalCurrency` |  | |  |  | `CUKY(5)` |  |
+| `BhvrlInsgtsPeriodCode` |  | |  |  | `CHAR(4)` | Key for Period Assignment |
+| `BhvrlInsgtsPeriodCodeTxt` |  | |  |  | `CHAR(50)` | Text for Period Key |
+| `CustomerEventValue` |  | |  |  | `CHAR(100)` |  |
+| `CustomerEventValueTxt` |  | |  |  | `CHAR(100)` |  |
+| `BhvrlInsgtsAccountNumber` |  | |  |  | `CHAR(12)` | Contract Account Number |
+| `BhvrlInsgtsAccountName` |  | |  |  | `CHAR(35)` | Contract Account Name |
+| `BhvrlInsgtsAccountCategory` |  | |  |  | `CHAR(2)` | Contract Account Category |
+| `BhvrlInsgtsAccountCategoryTxt` |  | |  |  | `CHAR(50)` | Description of Contract Account Category |
+| `BhvrlInsgtsSubAccountNumber` |  | |  |  | `CHAR(20)` | Reference Specifications from Contract |
+| `BhvrlInsgtsSubAccountName` |  | |  |  | `CHAR(1)` |  |

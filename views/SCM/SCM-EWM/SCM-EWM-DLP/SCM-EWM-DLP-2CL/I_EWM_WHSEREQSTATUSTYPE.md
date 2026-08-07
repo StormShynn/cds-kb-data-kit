@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouseRequestStatusType` | `CHAR(5)` | Status Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouseRequestStatusType` |  | |  |  | `CHAR(5)` | Status Type |

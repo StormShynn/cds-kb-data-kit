@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanIncgPaytDistrCtrl` | `NUMC(2)` | Indicator for Control of Incoming Payment Distribution |
-| `LoanIncgPaytDistrCtrlText` | `CHAR(15)` | Text (15 characters) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanIncgPaytDistrCtrl` |  | |  |  | `NUMC(2)` | Indicator for Control of Incoming Payment Distribution |
+| `LoanIncgPaytDistrCtrlText` |  | |  |  | `CHAR(15)` | Text (15 characters) |

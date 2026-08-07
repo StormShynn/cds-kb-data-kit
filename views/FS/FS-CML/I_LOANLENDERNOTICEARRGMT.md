@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanLenderNoticeArrgmt` | `NUMC(3)` | Notice Arrangement Lender |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanLenderNoticeArrgmt` |  | |  |  | `NUMC(3)` | Notice Arrangement Lender |

@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenancePlanningPlant` | `CHAR(4)` | Maintenance Planning Plant |
-| `PlantName1` | `CHAR(30)` | Name |
-| `PlantName2` | `CHAR(30)` | Name 2 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlanningPlant` |  | |  |  | `CHAR(4)` | Maintenance Planning Plant |
+| `PlantName1` |  | |  |  | `CHAR(30)` | Name |
+| `PlantName2` |  | |  |  | `CHAR(30)` | Name 2 |

@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AllocationFrequency` | `CHAR(1)` | Frequency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AllocationFrequency` |  | |  |  | `CHAR(1)` | Frequency |

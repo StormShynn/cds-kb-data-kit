@@ -35,18 +35,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumber` | `CHAR(12)` | Change Number |
-| `ChangeNumberObjectType` | `NUMC(2)` | Object Type |
-| `IsActiveForChangeNumber` | `CHAR(1)` | Object Type Active for Change Number |
-| `IsLockedForChanges` | `CHAR(1)` | Indicator: Object type locked for changes |
-| `IsPartiallyDisplayed` | `CHAR(1)` | Indicator: display partial objects for object |
-| `ObjMgmtRecdIsRequired` | `CHAR(1)` | Management Record Is Required for Each Object |
-| `ObjMgmtRecdIsGenerated` | `CHAR(1)` | Object Management Record Was Generated |
-| `ObjMgmtRecdIsAutomlyCrted` | `CHAR(1)` | Mgmt Record Generated Automatically Only for New Objects |
-| `ObjMgmtRecdIsAutomlyCrtedByDlg` | `CHAR(1)` | Automatic Generation with Dialog Box |
-| `ObjectTypeCreationDate` | `DATS(8)` | Date record created on |
-| `ObjectTypeCreatedByUser` | `CHAR(12)` | User who created record |
-| `ObjectTypeLastChangedDate` | `DATS(8)` | Date of Last Change |
-| `ObjectTypeLastChangedByUser` | `CHAR(12)` | Name of person who changed object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ChangeNumberObjectType` |  | |  |  | `NUMC(2)` | Object Type |
+| `IsActiveForChangeNumber` |  | |  |  | `CHAR(1)` | Object Type Active for Change Number |
+| `IsLockedForChanges` |  | |  |  | `CHAR(1)` | Indicator: Object type locked for changes |
+| `IsPartiallyDisplayed` |  | |  |  | `CHAR(1)` | Indicator: display partial objects for object |
+| `ObjMgmtRecdIsRequired` |  | |  |  | `CHAR(1)` | Management Record Is Required for Each Object |
+| `ObjMgmtRecdIsGenerated` |  | |  |  | `CHAR(1)` | Object Management Record Was Generated |
+| `ObjMgmtRecdIsAutomlyCrted` |  | |  |  | `CHAR(1)` | Mgmt Record Generated Automatically Only for New Objects |
+| `ObjMgmtRecdIsAutomlyCrtedByDlg` |  | |  |  | `CHAR(1)` | Automatic Generation with Dialog Box |
+| `ObjectTypeCreationDate` |  | |  |  | `DATS(8)` | Date record created on |
+| `ObjectTypeCreatedByUser` |  | |  |  | `CHAR(12)` | User who created record |
+| `ObjectTypeLastChangedDate` |  | |  |  | `DATS(8)` | Date of Last Change |
+| `ObjectTypeLastChangedByUser` |  | |  |  | `CHAR(12)` | Name of person who changed object |

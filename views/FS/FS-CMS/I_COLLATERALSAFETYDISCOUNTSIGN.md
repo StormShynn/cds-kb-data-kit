@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralSafetyDiscountSign` | `CHAR(2)` | Indicates that the asset has a default sfty discount or not |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralSafetyDiscountSign` |  | |  |  | `CHAR(2)` | Indicates that the asset has a default sfty discount or not |

@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SetlMgmtProdBsdDocPrtnCat` | `CHAR(1)` | Business Partner for Product Based Settlement |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SetlMgmtProdBsdDocPrtnCatName` | `CHAR(60)` | Text of Product Based Settlement Business Partner |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SetlMgmtProdBsdDocPrtnCat` |  | |  |  | `CHAR(1)` | Business Partner for Product Based Settlement |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SetlMgmtProdBsdDocPrtnCatName` |  | |  |  | `CHAR(60)` | Text of Product Based Settlement Business Partner |

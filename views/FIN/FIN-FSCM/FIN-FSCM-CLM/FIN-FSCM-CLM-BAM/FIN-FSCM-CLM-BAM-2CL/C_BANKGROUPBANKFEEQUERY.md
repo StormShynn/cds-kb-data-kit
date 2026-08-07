@@ -34,28 +34,28 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankGroup` | `CHAR(10)` | Bank Group ID |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` | `CHAR(15)` | Bank Keys |
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `BankAccountNumber` | `CHAR(40)` | Bank Account Number |
-| `CalendarYearMonth` | `NUMC(6)` |  |
-| `BankFeeSrvcComCodeIssuer` | `CHAR(6)` | Bank Service Common Code Issuer |
-| `BankFeeSrvcComCode` | `CHAR(8)` |  |
-| `BankFeeChargeType` | `CHAR(12)` | Charge Type |
-| `BankFeeChargeTypeText` | `CHAR(20)` | Charge Type Long Text |
-| `BankFeeSrvcType` | `CHAR(12)` |  |
-| `BankFeeService` | `CHAR(35)` | Billing Service ID |
-| `BankFeeServiceDescription` | `CHAR(70)` | Description field of length 70 |
-| `BankAccountDescription` | `CHAR(60)` | Account Description |
-| `ValidityStartDate` | `DATS(8)` |  |
-| `ValidityEndDate` | `DATS(8)` | To Date |
-| `FeeType` | `CHAR(12)` |  |
-| `CalendarYear` | `NUMC(4)` |  |
-| `CalendarQuarter` | `NUMC(1)` | Fiori Reference Apps: Calendar Quarter |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `ChargePriceInDC` | `CURR(23)` |  |
-| `TaxInDC` | `CURR(23)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Keys |
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `BankAccountNumber` |  | |  |  | `CHAR(40)` | Bank Account Number |
+| `CalendarYearMonth` |  | |  |  | `NUMC(6)` |  |
+| `BankFeeSrvcComCodeIssuer` |  | |  |  | `CHAR(6)` | Bank Service Common Code Issuer |
+| `BankFeeSrvcComCode` |  | |  |  | `CHAR(8)` |  |
+| `BankFeeChargeType` |  | |  |  | `CHAR(12)` | Charge Type |
+| `BankFeeChargeTypeText` |  | |  |  | `CHAR(20)` | Charge Type Long Text |
+| `BankFeeSrvcType` |  | |  |  | `CHAR(12)` |  |
+| `BankFeeService` |  | |  |  | `CHAR(35)` | Billing Service ID |
+| `BankFeeServiceDescription` |  | |  |  | `CHAR(70)` | Description field of length 70 |
+| `BankAccountDescription` |  | |  |  | `CHAR(60)` | Account Description |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` |  |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | To Date |
+| `FeeType` |  | |  |  | `CHAR(12)` |  |
+| `CalendarYear` |  | |  |  | `NUMC(4)` |  |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Fiori Reference Apps: Calendar Quarter |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `ChargePriceInDC` |  | |  |  | `CURR(23)` |  |
+| `TaxInDC` |  | |  |  | `CURR(23)` |  |

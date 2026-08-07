@@ -35,10 +35,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationLedger` | `CHAR(2)` | Ledger |
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `CnsldtnGroupJrnlEntry` | `CHAR(10)` | Group Journal Entry |
-| `CnsldtnGroupJrnlEntryItem` | `CHAR(6)` | Group Journal Entry Item |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationLedger` |  | |  |  | `CHAR(2)` | Ledger |
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `CnsldtnGroupJrnlEntry` |  | |  |  | `CHAR(10)` | Group Journal Entry |
+| `CnsldtnGroupJrnlEntryItem` |  | |  |  | `CHAR(6)` | Group Journal Entry Item |

@@ -34,19 +34,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Engagement Project ID |
-| `EngagementProjectTeamRole` | `CHAR(15)` | Role Type |
-| `CreationDateTime` | `DEC(15)` | Timestamp of Object Creation |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `ObjectName` | `CHAR(40)` | Name of Role Type |
-| `EngagementProjectUUID` | `RAW(16)` | Engagement Project UUID |
-| `EngagementProjectTeamRoleUUID` | `RAW(16)` | Team Role UUID |
-| `EngmtProjTeamMemberUUID` | `RAW(16)` | Team Member UUID |
-| `EngagementProjectMemberUUID` | `RAW(16)` | Project Member UUID |
-| `BusinessPartnerUUID` | `RAW(16)` | Business Partner GUID |
-| `BusinessPartnerFullName` | `CHAR(80)` | Full Name |
-| `BusinessPartnerType` | `CHAR(4)` | Business Partner Type |
-| `BusinessUser` | `CHAR(12)` | User ID |
-| `PersonExternalID` | `CHAR(60)` | Identification Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `EngagementProjectTeamRole` |  | |  |  | `CHAR(15)` | Role Type |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Timestamp of Object Creation |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `ObjectName` |  | |  |  | `CHAR(40)` | Name of Role Type |
+| `EngagementProjectUUID` |  | |  |  | `RAW(16)` | Engagement Project UUID |
+| `EngagementProjectTeamRoleUUID` |  | |  |  | `RAW(16)` | Team Role UUID |
+| `EngmtProjTeamMemberUUID` |  | |  |  | `RAW(16)` | Team Member UUID |
+| `EngagementProjectMemberUUID` |  | |  |  | `RAW(16)` | Project Member UUID |
+| `BusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner GUID |
+| `BusinessPartnerFullName` |  | |  |  | `CHAR(80)` | Full Name |
+| `BusinessPartnerType` |  | |  |  | `CHAR(4)` | Business Partner Type |
+| `BusinessUser` |  | |  |  | `CHAR(12)` | User ID |
+| `PersonExternalID` |  | |  |  | `CHAR(60)` | Identification Number |

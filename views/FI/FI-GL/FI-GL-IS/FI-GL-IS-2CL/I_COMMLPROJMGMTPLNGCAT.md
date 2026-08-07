@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PlanningCategory` | `CHAR(10)` | Plan Category |
-| `PlngCategoryApplicationType` | `NUMC(2)` | Application Type |
-| `IsBaselinePlngCategory` | `CHAR(1)` | Category is used for baseline plan version |
-| `IsOngoingPlngCategory` | `CHAR(1)` | Category is used for ongoing plan version |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
+| `PlngCategoryApplicationType` |  | |  |  | `NUMC(2)` | Application Type |
+| `IsBaselinePlngCategory` |  | |  |  | `CHAR(1)` | Category is used for baseline plan version |
+| `IsOngoingPlngCategory` |  | |  |  | `CHAR(1)` | Category is used for ongoing plan version |

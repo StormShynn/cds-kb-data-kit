@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MTMConditionGroupCategory` | `CHAR(1)` | Categorization of Condition Group |
-| `Language` | `LANG(1)` | Language Key |
-| `MTMConditionGroupCategoryName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MTMConditionGroupCategory` |  | |  |  | `CHAR(1)` | Categorization of Condition Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MTMConditionGroupCategoryName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductType` | `CHAR(1)` | Product Cd |
-| `Language` | `LANG(1)` | Language Key |
-| `ProductTypeName` | `CHAR(60)` | Colorado Product Code Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductType` |  | |  |  | `CHAR(1)` | Product Cd |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProductTypeName` |  | |  |  | `CHAR(60)` | Colorado Product Code Text |

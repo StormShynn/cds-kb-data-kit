@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMStockType` | `CHAR(2)` | Stock Type |
-| `EWMStockTypeName` | `CHAR(30)` | Description of Stock Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMStockType` |  | |  |  | `CHAR(2)` | Stock Type |
+| `EWMStockTypeName` |  | |  |  | `CHAR(30)` | Description of Stock Type |

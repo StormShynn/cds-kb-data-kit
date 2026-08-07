@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BR_LC116ServiceCode` | `CHAR(5)` | LC 116 Service Type Code |
-| `BR_LC116ServiceCodeDesc` | `CHAR(255)` | LC 116 Service Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BR_LC116ServiceCode` |  | |  |  | `CHAR(5)` | LC 116 Service Type Code |
+| `BR_LC116ServiceCodeDesc` |  | |  |  | `CHAR(255)` | LC 116 Service Type Description |

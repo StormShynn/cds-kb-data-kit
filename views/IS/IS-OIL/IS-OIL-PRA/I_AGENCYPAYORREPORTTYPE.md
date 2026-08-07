@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgencyPayOrReportType` | `CHAR(1)` | Royalty 2.0 - TX GLO/TAMU - Pay/Report Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgencyPayOrReportType` |  | |  |  | `CHAR(1)` | Royalty 2.0 - TX GLO/TAMU - Pay/Report Flag |

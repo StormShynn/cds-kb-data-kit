@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `ChangeDocObjectClass` | `CHAR(15)` | Object Class |
-| `CreationDate` | `DATS(8)` | Creation Date of Change Document |
-| `CreationTime` | `TIMS(6)` | Time of Change |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
-| `ChangeDocNewFieldValue` | `CHAR(254)` | New Content of Changed Field |
-| `ChangeDocPreviousFieldValue` | `CHAR(254)` | Old Content of Changed Field |
-| `IsChangeDocument` | `INT1(3)` |  |
-| `GrantAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `GrantIsNotRelevantGrant` | `CHAR(1)` | Identify the Not Relevant Grant |
-| `NumberOfGteeMMasterDataRecords` | `INT1(3)` |  |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `ChangeDocObjectClass` |  | |  |  | `CHAR(15)` | Object Class |
+| `CreationDate` |  | |  |  | `DATS(8)` | Creation Date of Change Document |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Change |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
+| `ChangeDocNewFieldValue` |  | |  |  | `CHAR(254)` | New Content of Changed Field |
+| `ChangeDocPreviousFieldValue` |  | |  |  | `CHAR(254)` | Old Content of Changed Field |
+| `IsChangeDocument` |  | |  |  | `INT1(3)` |  |
+| `GrantAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `GrantIsNotRelevantGrant` |  | |  |  | `CHAR(1)` | Identify the Not Relevant Grant |
+| `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |

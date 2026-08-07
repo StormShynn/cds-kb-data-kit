@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationID` | `CHAR(20)` | id |
-| `EHSLocationName` | `CHAR(60)` | Location |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationTypeText` | `CHAR(40)` | Location Type Name |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `EHSLocationStatusText` | `CHAR(60)` | Location Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | id |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationTypeText` |  | |  |  | `CHAR(40)` | Location Type Name |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `EHSLocationStatusText` |  | |  |  | `CHAR(60)` | Location Status Name |

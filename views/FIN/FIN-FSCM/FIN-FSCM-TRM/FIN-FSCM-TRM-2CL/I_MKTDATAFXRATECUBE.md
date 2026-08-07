@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CurrencyPair` | `CHAR(20)` | Currency Pair |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `SourceCurrency` | `CUKY(5)` | From-Currency |
-| `TargetCurrency` | `CUKY(5)` | To-Currency |
-| `NumberOfSourceCurrencyUnits` | `DEC(9)` | Ratio for the "from" currency units |
-| `NumberOfTargetCurrencyUnits` | `DEC(9)` | Ratio for the "to" currency units |
-| `ExchangeRate` | `DEC(16)` | Exchange Rate |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CurrencyPair` |  | |  |  | `CHAR(20)` | Currency Pair |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `SourceCurrency` |  | |  |  | `CUKY(5)` | From-Currency |
+| `TargetCurrency` |  | |  |  | `CUKY(5)` | To-Currency |
+| `NumberOfSourceCurrencyUnits` |  | |  |  | `DEC(9)` | Ratio for the "from" currency units |
+| `NumberOfTargetCurrencyUnits` |  | |  |  | `DEC(9)` | Ratio for the "to" currency units |
+| `ExchangeRate` |  | |  |  | `DEC(16)` | Exchange Rate |

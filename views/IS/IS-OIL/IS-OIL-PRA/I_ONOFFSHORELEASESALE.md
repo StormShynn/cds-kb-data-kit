@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OnOrOffShoreLeaseSale` | `CHAR(1)` | ONRR-2014 - On-Shore/Off-Shore Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OnOrOffShoreLeaseSale` |  | |  |  | `CHAR(1)` | ONRR-2014 - On-Shore/Off-Shore Indicator |

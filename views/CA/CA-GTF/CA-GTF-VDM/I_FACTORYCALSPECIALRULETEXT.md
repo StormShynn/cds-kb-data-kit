@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `FactoryCalendar` | `CHAR(2)` | Factory Calendar |
-| `CalendarYear` | `NUMC(4)` | Year stored |
-| `ValidityStartDate` | `DATS(8)` | Date from which special rule is valid |
-| `FactoryCalSpclRuleDescription` | `CHAR(60)` | Object Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory Calendar |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Year stored |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Date from which special rule is valid |
+| `FactoryCalSpclRuleDescription` |  | |  |  | `CHAR(60)` | Object Text |

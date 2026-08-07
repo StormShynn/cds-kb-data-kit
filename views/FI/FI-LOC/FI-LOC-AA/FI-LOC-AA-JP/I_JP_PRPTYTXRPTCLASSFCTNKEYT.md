@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `JP_PrptyTxRptClassfctnKey` | `CHAR(4)` | Japan: Classification Key of Property Tax Report |
-| `Language` | `LANG(1)` | Language Key |
-| `JP_PrptyTxRptClassfctnKeyDesc` | `CHAR(50)` | Classification Key description of Japan Property Tax Report |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `JP_PrptyTxRptClassfctnKey` |  | |  |  | `CHAR(4)` | Japan: Classification Key of Property Tax Report |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `JP_PrptyTxRptClassfctnKeyDesc` |  | |  |  | `CHAR(50)` | Classification Key description of Japan Property Tax Report |

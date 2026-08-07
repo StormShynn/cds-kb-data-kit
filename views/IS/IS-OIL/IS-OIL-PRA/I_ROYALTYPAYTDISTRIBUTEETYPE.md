@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RoyaltyPaytDistributeeType` | `NUMC(3)` | ONRR-2014 - Distributee Code |
-| `RoyaltyPaytDistributeeTypeName` | `CHAR(30)` | Distributee Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RoyaltyPaytDistributeeType` |  | |  |  | `NUMC(3)` | ONRR-2014 - Distributee Code |
+| `RoyaltyPaytDistributeeTypeName` |  | |  |  | `CHAR(30)` | Distributee Code Name |

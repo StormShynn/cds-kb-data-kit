@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LogAccMObjectType` | `CHAR(10)` | Object Type |
-| `LogAccMObjectTypeIsActive` | `CHAR(1)` | Access Control Activated for Object Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LogAccMObjectType` |  | |  |  | `CHAR(10)` | Object Type |
+| `LogAccMObjectTypeIsActive` |  | |  |  | `CHAR(1)` | Access Control Activated for Object Type |

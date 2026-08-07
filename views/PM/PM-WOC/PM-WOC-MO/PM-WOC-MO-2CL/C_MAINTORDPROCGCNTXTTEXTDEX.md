@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintOrderProcessingContext` | `CHAR(2)` | Additional Processing Context for Maintenance Order |
-| `Language` | `LANG(1)` | Language Key |
-| `MaintOrdProcessingContextText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrderProcessingContext` |  | |  |  | `CHAR(2)` | Additional Processing Context for Maintenance Order |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MaintOrdProcessingContextText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

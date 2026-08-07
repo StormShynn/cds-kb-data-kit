@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgencyReportType` | `CHAR(1)` | Royalty 2.0 - TX GLOTAMU - Original Report |
-| `Language` | `LANG(1)` | Language Key |
-| `AgencyReportTypeName` | `CHAR(60)` | Royalty - TX GLO Agency Report Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgencyReportType` |  | |  |  | `CHAR(1)` | Royalty 2.0 - TX GLOTAMU - Original Report |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgencyReportTypeName` |  | |  |  | `CHAR(60)` | Royalty - TX GLO Agency Report Type Name |

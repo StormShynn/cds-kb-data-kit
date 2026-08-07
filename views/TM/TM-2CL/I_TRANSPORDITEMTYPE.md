@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdItemType` | `CHAR(4)` | Transportation Order Item Type |
-| `TranspOrdItemCategory` | `CHAR(3)` | Item Category |
-| `TranspOrdChildItemType` | `CHAR(4)` | Transportation Order Child Item Type |
-| `IsMultiItem` | `CHAR(1)` | Multi-Item |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdItemType` |  | |  |  | `CHAR(4)` | Transportation Order Item Type |
+| `TranspOrdItemCategory` |  | |  |  | `CHAR(3)` | Item Category |
+| `TranspOrdChildItemType` |  | |  |  | `CHAR(4)` | Transportation Order Child Item Type |
+| `IsMultiItem` |  | |  |  | `CHAR(1)` | Multi-Item |

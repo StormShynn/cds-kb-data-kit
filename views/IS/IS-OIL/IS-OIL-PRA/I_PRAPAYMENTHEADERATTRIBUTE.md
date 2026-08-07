@@ -34,19 +34,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProcessRun` | `NUMC(10)` | Proc 2.0 - Run ID |
-| `PaymentReference` | `CHAR(13)` | Check Number |
-| `PRAOwner` | `CHAR(10)` | PRA owner |
-| `PaymentDate` | `DATS(8)` | Check Date |
-| `PaymentType` | `CHAR(1)` | Payment Type |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CheckStatus` | `CHAR(2)` | Payment Processing - Check Status |
-| `PaymentStatusDate` | `DATS(8)` | Status Date |
-| `PaymentHeaderRejectionRsn` | `CHAR(3)` | Payment Processing - High Level Reject Code |
-| `CheckIsOutOfTolerance` | `CHAR(1)` | Payment Processing - Out-Of-Tolerance Flag |
-| `CheckIsSentToBank` | `CHAR(1)` | Flag Indicating Sent to Bank |
-| `OriginTransaction` | `CHAR(32)` | Source Transaction ID |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On Timestamp |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessRun` |  | |  |  | `NUMC(10)` | Proc 2.0 - Run ID |
+| `PaymentReference` |  | |  |  | `CHAR(13)` | Check Number |
+| `PRAOwner` |  | |  |  | `CHAR(10)` | PRA owner |
+| `PaymentDate` |  | |  |  | `DATS(8)` | Check Date |
+| `PaymentType` |  | |  |  | `CHAR(1)` | Payment Type |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CheckStatus` |  | |  |  | `CHAR(2)` | Payment Processing - Check Status |
+| `PaymentStatusDate` |  | |  |  | `DATS(8)` | Status Date |
+| `PaymentHeaderRejectionRsn` |  | |  |  | `CHAR(3)` | Payment Processing - High Level Reject Code |
+| `CheckIsOutOfTolerance` |  | |  |  | `CHAR(1)` | Payment Processing - Out-Of-Tolerance Flag |
+| `CheckIsSentToBank` |  | |  |  | `CHAR(1)` | Flag Indicating Sent to Bank |
+| `OriginTransaction` |  | |  |  | `CHAR(32)` | Source Transaction ID |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |

@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyBusProcType` | `CHAR(5)` | Business Process |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyBusProcType` |  | |  |  | `CHAR(5)` | Business Process |

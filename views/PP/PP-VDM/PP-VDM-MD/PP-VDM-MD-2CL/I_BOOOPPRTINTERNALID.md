@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsType` | `CHAR(1)` | Task List Type |
-| `BillOfOperationsGroup` | `CHAR(8)` | Key for Task List Group |
-| `BOOOperationPRTInternalID` | `NUMC(8)` | Item Counter for Production Resources/Tools |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `BillOfOperationsGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `BOOOperationPRTInternalID` |  | |  |  | `NUMC(8)` | Item Counter for Production Resources/Tools |

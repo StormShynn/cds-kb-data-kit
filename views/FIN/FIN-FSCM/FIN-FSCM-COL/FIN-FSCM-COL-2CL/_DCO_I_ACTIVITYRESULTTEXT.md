@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `DCoActivityResult` | `CHAR(2)` | Activity Result |
-| `DCoActivityResultName` | `CHAR(50)` | Activity Result Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DCoActivityResult` |  | |  |  | `CHAR(2)` | Activity Result |
+| `DCoActivityResultName` |  | |  |  | `CHAR(50)` | Activity Result Name |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CostOriginGroup` | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
-| `Language` | `LANG(1)` | Language Key |
-| `CostOriginGroupName` | `CHAR(40)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CostOriginGroup` |  | |  |  | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CostOriginGroupName` |  | |  |  | `CHAR(40)` | Name |

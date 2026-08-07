@@ -38,47 +38,47 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PerformanceObligation` | `CHAR(16)` | Performance Obligation |
-| `RevenueAccountingContract` | `CHAR(14)` | Revenue Contract |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `AccountingPrinciple` | `CHAR(4)` | Accounting Principle |
-| `AccountingPrincipleName` | `CHAR(70)` | Name of Accounting Principle |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `GLAccount` | `CHAR(10)` | G/L Account Number |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `FunctionalAreaName` | `CHAR(25)` | Name of the Functional Area |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `BusinessAreaName` | `CHAR(30)` | Business Area Name |
-| `Segment` | `CHAR(10)` | Segment for Segmental Reporting |
-| `SegmentName` | `CHAR(50)` | Segment Name |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `ProfitCenterName` | `CHAR(20)` | Description of Profit Center |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CostCenterName` | `CHAR(20)` | Cost Center Name |
-| `OrderID` | `CHAR(12)` | Order Number |
-| `SalesOrder` | `CHAR(10)` | Sales Order Number |
-| `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `RevnAcctgContractCreationDate` | `DATS(8)` | Created On |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerName` | `CHAR(81)` |  |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `CustomerName` | `CHAR(80)` | Name of Customer |
-| `PerfOblgnFulfillmentType` | `CHAR(1)` | Fulfillment Type |
-| `RAPerformanceObligationType` | `CHAR(10)` | Revenue Accounting Performance Obligation Type |
-| `RevnAcctgSalesOrganization` | `CHAR(20)` | Sales Organization for Revenue Accounting |
-| `SalesDocumentCurrency` | `CUKY(5)` | SD Document Currency |
-| `AdditionalCurrency1` | `CUKY(5)` | Currency Key of Second Local Currency |
-| `AdditionalCurrency2` | `CUKY(5)` | Currency Key of Third Local Currency |
-| `RevnAcctgPostgAmtInSlsDocCrcy` | `CURR(23)` | Posting Revenue in Document Currency |
-| `RevnAcctgPostgAmtInCoCodeCrcy` | `CURR(23)` | Posting Revenue in Company Code Currency |
-| `RevnAcctgPostgAmtInAddlCrcy1` | `CURR(23)` | Posting Revenue in Local Currency 2 |
-| `RevnAcctgPostgAmtInAddlCrcy2` | `CURR(23)` | Posting Revenue in Local Currency 3 |
-| `RAPostedCostInSlsDocCrcy` | `CURR(23)` | Posting Cost in Document Currency |
-| `RAPostedCostAmountInCoCodeCrcy` | `CURR(23)` | Posting Cost in Company Code Currency |
-| `RAPostedCostAmountInAddlCrcy1` | `CURR(23)` | Posting Cost in Local Currency 2 |
-| `RAPostedCostAmountInAddlCrcy2` | `CURR(23)` | Posting Cost in Local Currency 3 |
-| `RAContractIsUniversal` | `CHAR(1)` | Universal Revenue Recognition Contract |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PerformanceObligation` |  | |  |  | `CHAR(16)` | Performance Obligation |
+| `RevenueAccountingContract` |  | |  |  | `CHAR(14)` | Revenue Contract |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `AccountingPrinciple` |  | |  |  | `CHAR(4)` | Accounting Principle |
+| `AccountingPrincipleName` |  | |  |  | `CHAR(70)` | Name of Accounting Principle |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account Number |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `FunctionalAreaName` |  | |  |  | `CHAR(25)` | Name of the Functional Area |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `BusinessAreaName` |  | |  |  | `CHAR(30)` | Business Area Name |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `SegmentName` |  | |  |  | `CHAR(50)` | Segment Name |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ProfitCenterName` |  | |  |  | `CHAR(20)` | Description of Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CostCenterName` |  | |  |  | `CHAR(20)` | Cost Center Name |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order Number |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order Number |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `RevnAcctgContractCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerName` |  | |  |  | `CHAR(81)` |  |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CustomerName` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `PerfOblgnFulfillmentType` |  | |  |  | `CHAR(1)` | Fulfillment Type |
+| `RAPerformanceObligationType` |  | |  |  | `CHAR(10)` | Revenue Accounting Performance Obligation Type |
+| `RevnAcctgSalesOrganization` |  | |  |  | `CHAR(20)` | Sales Organization for Revenue Accounting |
+| `SalesDocumentCurrency` |  | |  |  | `CUKY(5)` | SD Document Currency |
+| `AdditionalCurrency1` |  | |  |  | `CUKY(5)` | Currency Key of Second Local Currency |
+| `AdditionalCurrency2` |  | |  |  | `CUKY(5)` | Currency Key of Third Local Currency |
+| `RevnAcctgPostgAmtInSlsDocCrcy` |  | |  |  | `CURR(23)` | Posting Revenue in Document Currency |
+| `RevnAcctgPostgAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Posting Revenue in Company Code Currency |
+| `RevnAcctgPostgAmtInAddlCrcy1` |  | |  |  | `CURR(23)` | Posting Revenue in Local Currency 2 |
+| `RevnAcctgPostgAmtInAddlCrcy2` |  | |  |  | `CURR(23)` | Posting Revenue in Local Currency 3 |
+| `RAPostedCostInSlsDocCrcy` |  | |  |  | `CURR(23)` | Posting Cost in Document Currency |
+| `RAPostedCostAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Posting Cost in Company Code Currency |
+| `RAPostedCostAmountInAddlCrcy1` |  | |  |  | `CURR(23)` | Posting Cost in Local Currency 2 |
+| `RAPostedCostAmountInAddlCrcy2` |  | |  |  | `CURR(23)` | Posting Cost in Local Currency 3 |
+| `RAContractIsUniversal` |  | |  |  | `CHAR(1)` | Universal Revenue Recognition Contract |

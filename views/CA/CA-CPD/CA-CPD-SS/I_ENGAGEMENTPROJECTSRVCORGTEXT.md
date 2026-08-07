@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `Language` | `LANG(1)` | Language Key |
-| `EngmtProjectServiceOrgName` | `CHAR(40)` | Description of Organization Unit ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EngmtProjectServiceOrgName` |  | |  |  | `CHAR(40)` | Description of Organization Unit ID |

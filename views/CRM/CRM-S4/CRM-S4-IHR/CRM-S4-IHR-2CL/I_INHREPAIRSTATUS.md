@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InhRepairStatus` | `CHAR(4)` | In-House Repair Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InhRepairStatus` |  | |  |  | `CHAR(4)` | In-House Repair Status |

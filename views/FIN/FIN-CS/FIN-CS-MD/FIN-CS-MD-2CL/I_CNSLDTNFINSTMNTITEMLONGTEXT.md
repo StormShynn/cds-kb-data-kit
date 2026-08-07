@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `FinancialStatementItem` | `CHAR(10)` | Financial Statement Item |
-| `Language` | `LANG(1)` | Language Key |
-| `ConsolidationRecordNumber` | `NUMC(1)` | Sequence number |
-| `FinancialStatementItemLongText` | `CHAR(250)` | Financial Statement Item Long Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ConsolidationRecordNumber` |  | |  |  | `NUMC(1)` | Sequence number |
+| `FinancialStatementItemLongText` |  | |  |  | `CHAR(250)` | Financial Statement Item Long Description |

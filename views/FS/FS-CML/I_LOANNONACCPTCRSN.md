@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `LoanProductType` | `CHAR(3)` | Product Type |
-| `LoanNonAccptcRsn` | `NUMC(2)` | Reason for Non-Acceptance |
-| `LoanLifeCycleStatus` | `NUMC(2)` | Status which can be reached as target status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `LoanProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `LoanNonAccptcRsn` |  | |  |  | `NUMC(2)` | Reason for Non-Acceptance |
+| `LoanLifeCycleStatus` |  | |  |  | `NUMC(2)` | Status which can be reached as target status |

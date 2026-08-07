@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentApprovalRule` | `CHAR(20)` | Payment Approval Rule ID |
-| `PaymentApprovalRuleItem` | `CHAR(10)` | Payment Approval Rule Item |
-| `PaymentApprovalCategory` | `CHAR(3)` | Payment Approval Category |
-| `PaymentApprovalCategoryName` | `CHAR(60)` | Short Text for Fixed Values |
-| `IsUnlimited` | `CHAR(1)` | Unlimited Payment Approval Authorization |
-| `PaytApprvlLmtAmtInDfltLmtCrcy` | `CURR(23)` | Default Limit Amount |
-| `PaytApprvlDfltLmtCurrency` | `CUKY(5)` | Default Limit Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentApprovalRule` |  | |  |  | `CHAR(20)` | Payment Approval Rule ID |
+| `PaymentApprovalRuleItem` |  | |  |  | `CHAR(10)` | Payment Approval Rule Item |
+| `PaymentApprovalCategory` |  | |  |  | `CHAR(3)` | Payment Approval Category |
+| `PaymentApprovalCategoryName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `IsUnlimited` |  | |  |  | `CHAR(1)` | Unlimited Payment Approval Authorization |
+| `PaytApprvlLmtAmtInDfltLmtCrcy` |  | |  |  | `CURR(23)` | Default Limit Amount |
+| `PaytApprvlDfltLmtCurrency` |  | |  |  | `CUKY(5)` | Default Limit Currency |

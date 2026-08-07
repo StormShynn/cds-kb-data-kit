@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdBlockIsOverruled` | `CHAR(1)` | Transportation Order Block Is Overruled |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdBlockIsOverruled` |  | |  |  | `CHAR(1)` | Transportation Order Block Is Overruled |

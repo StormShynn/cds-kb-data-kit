@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseFunctionProfile` | `CHAR(8)` | Case: Function Profile ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseFunctionProfile` |  | |  |  | `CHAR(8)` | Case: Function Profile ID |

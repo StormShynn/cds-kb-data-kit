@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtActivityReason` | `CHAR(3)` | Activity Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtActivityReason` |  | |  |  | `CHAR(3)` | Activity Reason |

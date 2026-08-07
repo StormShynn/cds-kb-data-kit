@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
-| `BusinessPartnerFullName` | `CHAR(81)` |  |
-| `DebtCollectionsSegmentName` | `CHAR(50)` | Name of Collection Segment |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `BusinessPartnerFullName` |  | |  |  | `CHAR(81)` |  |
+| `DebtCollectionsSegmentName` |  | |  |  | `CHAR(50)` | Name of Collection Segment |

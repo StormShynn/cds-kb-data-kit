@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationObjectRefSystem` | `CHAR(6)` | Object System Reference ID for Liquidation |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `LiquidationObjRefSystemText` | `CHAR(40)` | Object System Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationObjectRefSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID for Liquidation |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `LiquidationObjRefSystemText` |  | |  |  | `CHAR(40)` | Object System Name |

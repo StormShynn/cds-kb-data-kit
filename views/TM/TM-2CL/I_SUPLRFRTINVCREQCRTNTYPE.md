@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrFrtInvcReqCreationType` | `CHAR(2)` | Freight Settlement Document Creation Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrFrtInvcReqCreationType` |  | |  |  | `CHAR(2)` | Freight Settlement Document Creation Type |

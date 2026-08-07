@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyCoverageSuspension` | `CHAR(1)` | Suspension Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyCoverageSuspension` |  | |  |  | `CHAR(1)` | Suspension Type |

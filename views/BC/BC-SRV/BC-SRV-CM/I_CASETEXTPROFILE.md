@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseTextProfile` | `CHAR(8)` | Text Profile for Case Notes |
-| `CaseSortTextBy` | `CHAR(2)` | Case: Sort Texts By |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseTextProfile` |  | |  |  | `CHAR(8)` | Text Profile for Case Notes |
+| `CaseSortTextBy` |  | |  |  | `CHAR(2)` | Case: Sort Texts By |

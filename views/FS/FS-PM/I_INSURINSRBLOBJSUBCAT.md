@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyInsrdObjSubCategory` | `NUMC(5)` | Object Type |
-| `InsurPlcyInsuredObjectCategory` | `NUMC(5)` | Object Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyInsrdObjSubCategory` |  | |  |  | `NUMC(5)` | Object Type |
+| `InsurPlcyInsuredObjectCategory` |  | |  |  | `NUMC(5)` | Object Category |

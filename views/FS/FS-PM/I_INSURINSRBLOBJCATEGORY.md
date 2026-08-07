@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyInsuredObjectCategory` | `NUMC(5)` | Object Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyInsuredObjectCategory` |  | |  |  | `NUMC(5)` | Object Category |

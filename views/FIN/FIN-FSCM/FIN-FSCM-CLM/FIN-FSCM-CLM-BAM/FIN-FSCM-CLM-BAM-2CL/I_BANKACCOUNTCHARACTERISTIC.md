@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountCharacteristic` | `CHAR(5)` | Bank Account Characteristic |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountCharacteristic` |  | |  |  | `CHAR(5)` | Bank Account Characteristic |

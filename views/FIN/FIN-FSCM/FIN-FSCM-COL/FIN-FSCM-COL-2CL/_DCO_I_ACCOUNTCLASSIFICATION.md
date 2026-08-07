@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DbtCollsAccountClassification` | `CHAR(2)` | Account Classification |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DbtCollsAccountClassification` |  | |  |  | `CHAR(2)` | Account Classification |

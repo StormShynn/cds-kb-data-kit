@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseAttributeProfile` | `CHAR(8)` | Case: Attribute Profile ID |
-| `Language` | `LANG(1)` | Language Key |
-| `CaseAttributeProfileName` | `CHAR(40)` | Case: Profile Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseAttributeProfile` |  | |  |  | `CHAR(8)` | Case: Attribute Profile ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseAttributeProfileName` |  | |  |  | `CHAR(40)` | Case: Profile Description |

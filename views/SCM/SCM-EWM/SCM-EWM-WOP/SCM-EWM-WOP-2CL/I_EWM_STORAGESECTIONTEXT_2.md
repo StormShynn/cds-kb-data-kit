@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMStorageType` | `CHAR(4)` | Storage Type |
-| `EWMStorageSection` | `CHAR(4)` | Storage Section |
-| `StorageSectionName` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMStorageType` |  | |  |  | `CHAR(4)` | Storage Type |
+| `EWMStorageSection` |  | |  |  | `CHAR(4)` | Storage Section |
+| `StorageSectionName` |  | |  |  | `CHAR(40)` | Description |

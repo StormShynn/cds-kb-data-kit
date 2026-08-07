@@ -30,19 +30,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundedProgram` | `CHAR(24)` | Funded Program |
-| `ValidityStartDate` | `DATS(8)` | Funded Program Validity Start Date |
-| `ValidityEndDate` | `DATS(8)` | Funded Program Validity End Date |
-| `FundedProgramExpirationDate` | `DATS(8)` | Funded Program Expiration Date |
-| `FundedProgramAuthznGrp` | `CHAR(10)` | Funded Program Authorization Group |
-| `FundedPgmFinMgmtAreaForAuthzn` | `CHAR(4)` | FM Area for Auth Grp for Funded Program |
-| `CreatedByUser` | `CHAR(12)` | Funded Program Created by User |
-| `CreationDate` | `DATS(8)` | Funded Program Created on Date |
-| `CreationTime` | `TIMS(6)` | Funded Program Created at Time |
-| `LastChangedByUser` | `CHAR(12)` | Funded Program Changed by User |
-| `LastChangeDate` | `DATS(8)` | Funded Program Changed on Date |
-| `LastChangeTime` | `TIMS(6)` | Funded Program Changed at Time |
-| `FundedProgramType` | `CHAR(4)` | Funded Program Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundedProgram` |  | |  |  | `CHAR(24)` | Funded Program |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Funded Program Validity Start Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Funded Program Validity End Date |
+| `FundedProgramExpirationDate` |  | |  |  | `DATS(8)` | Funded Program Expiration Date |
+| `FundedProgramAuthznGrp` |  | |  |  | `CHAR(10)` | Funded Program Authorization Group |
+| `FundedPgmFinMgmtAreaForAuthzn` |  | |  |  | `CHAR(4)` | FM Area for Auth Grp for Funded Program |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Funded Program Created by User |
+| `CreationDate` |  | |  |  | `DATS(8)` | Funded Program Created on Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Funded Program Created at Time |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Funded Program Changed by User |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Funded Program Changed on Date |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Funded Program Changed at Time |
+| `FundedProgramType` |  | |  |  | `CHAR(4)` | Funded Program Type |

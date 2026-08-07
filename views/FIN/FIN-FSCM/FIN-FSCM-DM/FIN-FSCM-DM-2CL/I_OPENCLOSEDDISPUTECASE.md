@@ -32,38 +32,38 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DisputeCaseUUID` | `CHAR(32)` | UUID in Character Format |
-| `Customer` | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
-| `CaseID` | `CHAR(12)` | Case ID |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerBasicAuthorizationGrp` | `CHAR(4)` | Authorization Group |
-| `DisputeCaseProcessor` | `CHAR(12)` | Processor |
-| `DisputeCaseProcessorFullName` | `CHAR(80)` | Full Name of Processor |
-| `DisputeCaseRootCause` | `CHAR(4)` | Root Cause Code |
-| `DisputeCaseCoordinator` | `CHAR(12)` | Coordinator of Dispute Case |
-| `DsputCaseCoordinatorFullName` | `CHAR(80)` | Fullname of Coordinator |
-| `DisputeCaseReason` | `CHAR(4)` | Reason for Case |
-| `Status` | `CHAR(3)` | Case: System Status |
-| `StatusProfile` | `CHAR(8)` | Case: Status Profile |
-| `CaseProcessingStatus` | `NUMC(2)` | Case: Status |
-| `CaseType` | `CHAR(4)` | Case Type |
-| `DisputeCasePriority` | `NUMC(1)` | Priority |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `CaseCreationDate` | `DATS(8)` |  |
-| `CaseClosingDate` | `DATS(8)` |  |
-| `CurrentDay` | `INT4(10)` | Current Day |
-| `IsCreatedToday` | `INT1(3)` | Created today |
-| `IsSolvedToday` | `INT4(10)` | Solved Today |
-| `IsCreatedLast5Days` | `INT1(3)` | Created in Last 5 Days |
-| `IsSolvedLast5Days` | `INT4(10)` | Solved in Last 5 Days |
-| `IsCreatedCurrentMonth` | `INT4(10)` | Created in Current Month |
-| `IsSolvedCurrentMonth` | `INT4(10)` | Solved in current month |
-| `TodayCreatedAmtInDspCrcy` | `CURR(23)` | New Amount, Today |
-| `TodaySolvedAmtInDspCrcy` | `CURR(23)` | Amount Solved Today |
-| `Last5DaysCrtedAmtInDspCrcy` | `CURR(23)` | New Amount in Last 5 Days |
-| `Last5DaysSolvedAmtInDspCrcy` | `CURR(23)` | Amount Solved in Last 5 Days |
-| `CurMonthCreatedAmtInDspCrcy` | `CURR(23)` | New Amount, Current Month |
-| `CurMonthSolvedAmtInDspCrcy` | `CURR(23)` | Solved Amount Current Month |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DisputeCaseUUID` |  | |  |  | `CHAR(32)` | UUID in Character Format |
+| `Customer` |  | |  |  | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
+| `CaseID` |  | |  |  | `CHAR(12)` | Case ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `DisputeCaseProcessor` |  | |  |  | `CHAR(12)` | Processor |
+| `DisputeCaseProcessorFullName` |  | |  |  | `CHAR(80)` | Full Name of Processor |
+| `DisputeCaseRootCause` |  | |  |  | `CHAR(4)` | Root Cause Code |
+| `DisputeCaseCoordinator` |  | |  |  | `CHAR(12)` | Coordinator of Dispute Case |
+| `DsputCaseCoordinatorFullName` |  | |  |  | `CHAR(80)` | Fullname of Coordinator |
+| `DisputeCaseReason` |  | |  |  | `CHAR(4)` | Reason for Case |
+| `Status` |  | |  |  | `CHAR(3)` | Case: System Status |
+| `StatusProfile` |  | |  |  | `CHAR(8)` | Case: Status Profile |
+| `CaseProcessingStatus` |  | |  |  | `NUMC(2)` | Case: Status |
+| `CaseType` |  | |  |  | `CHAR(4)` | Case Type |
+| `DisputeCasePriority` |  | |  |  | `NUMC(1)` | Priority |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `CaseCreationDate` |  | |  |  | `DATS(8)` |  |
+| `CaseClosingDate` |  | |  |  | `DATS(8)` |  |
+| `CurrentDay` |  | |  |  | `INT4(10)` | Current Day |
+| `IsCreatedToday` |  | |  |  | `INT1(3)` | Created today |
+| `IsSolvedToday` |  | |  |  | `INT4(10)` | Solved Today |
+| `IsCreatedLast5Days` |  | |  |  | `INT1(3)` | Created in Last 5 Days |
+| `IsSolvedLast5Days` |  | |  |  | `INT4(10)` | Solved in Last 5 Days |
+| `IsCreatedCurrentMonth` |  | |  |  | `INT4(10)` | Created in Current Month |
+| `IsSolvedCurrentMonth` |  | |  |  | `INT4(10)` | Solved in current month |
+| `TodayCreatedAmtInDspCrcy` |  | |  |  | `CURR(23)` | New Amount, Today |
+| `TodaySolvedAmtInDspCrcy` |  | |  |  | `CURR(23)` | Amount Solved Today |
+| `Last5DaysCrtedAmtInDspCrcy` |  | |  |  | `CURR(23)` | New Amount in Last 5 Days |
+| `Last5DaysSolvedAmtInDspCrcy` |  | |  |  | `CURR(23)` | Amount Solved in Last 5 Days |
+| `CurMonthCreatedAmtInDspCrcy` |  | |  |  | `CURR(23)` | New Amount, Current Month |
+| `CurMonthSolvedAmtInDspCrcy` |  | |  |  | `CURR(23)` | Solved Amount Current Month |

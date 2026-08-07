@@ -34,33 +34,33 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `DCoAccountUUID` | `RAW(16)` | UUID of Collection Account |
-| `DCoPromiseToPayUUID` | `RAW(16)` | UUID of Promise to Pay |
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
-| `DCoBusinessPartnerBranch` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartner` | `CHAR(10)` | Business Partner |
-| `DebtCollectionsPromiseToPay` | `CHAR(12)` | Promise to Pay |
-| `DebtCollectionsCompanyCode` | `CHAR(4)` | Company Code in Collections and Dispute Automation |
-| `DCoPromiseToPayDueDate` | `DATS(8)` | Promised For |
-| `DCoPromiseToPayAmount` | `CURR(23)` | Overall Promised Amount |
-| `DCoPrms2PDistrdPromisedAmount` | `CURR(23)` | Distributed Promised Amount |
-| `DCoPrmsToPayUsedCreditAmount` | `CURR(23)` | Overall Credit Amount Used for the Promise to Pay |
-| `DCoPrms2PInsmPlnNrOfInstlmnts` | `INT2(5)` | Installments |
-| `DCoPromiseToPayCurrency` | `CUKY(5)` | Currency of Promise to Pay |
-| `DCoPrms2PMainCustContactPerson` | `CHAR(10)` | Main Customer Contact Person for This Promise to Pay |
-| `DCoPromiseToPayStatus` | `NUMC(1)` | Status of Promise to Pay |
-| `DCoPromiseToPayPromisedBy` | `CHAR(10)` | Promised By |
-| `DCoActivityIsCreated` | `CHAR(1)` | Activity Is Created |
-| `DCoPromiseToPayIsMigrated` | `CHAR(1)` | Promise to Pay Is Migrated |
-| `DCoPredecessorPromiseToPay` | `CHAR(12)` | Preceding Promise to Pay |
-| `DCoDebtCollectionsActivity` | `CHAR(12)` | Activity |
-| `DCoPromiseToPayCreatedByUser` | `CHAR(12)` | Created By |
-| `DCoPrmsToPayCreationDateTime` | `DEC(15)` | Created On/At |
-| `DCoPrmsToPayLastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `DCoPrmsToPayLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
-| `DCoPromiseToPayClosedByUser` | `CHAR(12)` | Closed By |
-| `DCoPromiseToPayClosingDateTime` | `DEC(15)` | Closed On/At |
-| `DCoPromiseToPayCriticality` | `INT1(3)` | Criticality |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `DCoAccountUUID` |  | |  |  | `RAW(16)` | UUID of Collection Account |
+| `DCoPromiseToPayUUID` |  | |  |  | `RAW(16)` | UUID of Promise to Pay |
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `DCoBusinessPartnerBranch` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner |
+| `DebtCollectionsPromiseToPay` |  | |  |  | `CHAR(12)` | Promise to Pay |
+| `DebtCollectionsCompanyCode` |  | |  |  | `CHAR(4)` | Company Code in Collections and Dispute Automation |
+| `DCoPromiseToPayDueDate` |  | |  |  | `DATS(8)` | Promised For |
+| `DCoPromiseToPayAmount` |  | |  |  | `CURR(23)` | Overall Promised Amount |
+| `DCoPrms2PDistrdPromisedAmount` |  | |  |  | `CURR(23)` | Distributed Promised Amount |
+| `DCoPrmsToPayUsedCreditAmount` |  | |  |  | `CURR(23)` | Overall Credit Amount Used for the Promise to Pay |
+| `DCoPrms2PInsmPlnNrOfInstlmnts` |  | |  |  | `INT2(5)` | Installments |
+| `DCoPromiseToPayCurrency` |  | |  |  | `CUKY(5)` | Currency of Promise to Pay |
+| `DCoPrms2PMainCustContactPerson` |  | |  |  | `CHAR(10)` | Main Customer Contact Person for This Promise to Pay |
+| `DCoPromiseToPayStatus` |  | |  |  | `NUMC(1)` | Status of Promise to Pay |
+| `DCoPromiseToPayPromisedBy` |  | |  |  | `CHAR(10)` | Promised By |
+| `DCoActivityIsCreated` |  | |  |  | `CHAR(1)` | Activity Is Created |
+| `DCoPromiseToPayIsMigrated` |  | |  |  | `CHAR(1)` | Promise to Pay Is Migrated |
+| `DCoPredecessorPromiseToPay` |  | |  |  | `CHAR(12)` | Preceding Promise to Pay |
+| `DCoDebtCollectionsActivity` |  | |  |  | `CHAR(12)` | Activity |
+| `DCoPromiseToPayCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `DCoPrmsToPayCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DCoPrmsToPayLastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DCoPrmsToPayLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |
+| `DCoPromiseToPayClosedByUser` |  | |  |  | `CHAR(12)` | Closed By |
+| `DCoPromiseToPayClosingDateTime` |  | |  |  | `DEC(15)` | Closed On/At |
+| `DCoPromiseToPayCriticality` |  | |  |  | `INT1(3)` | Criticality |

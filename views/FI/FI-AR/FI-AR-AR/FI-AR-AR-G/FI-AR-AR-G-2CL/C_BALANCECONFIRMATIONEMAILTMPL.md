@@ -34,17 +34,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OutputRequestItemUUID` | `RAW(16)` | NodeID |
-| `Account` | `CHAR(10)` | Recipient ID |
-| `CompanyCode` | `CHAR(40)` | Output Management: Organization ID |
-| `FinancialAccountType` | `CHAR(1)` | Financial Account Type |
-| `BalanceConfirmationID` | `CHAR(255)` | Application Object ID |
-| `Name` | `CHAR(80)` | Name of Customer |
-| `FullName` | `CHAR(220)` | Customer Full Name |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `ReferenceAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `KeyDate` | `DATS(8)` | Balance Reconciliation Key Date |
-| `IssueDate` | `DATS(8)` | Issue Date of the Balance Confirmations |
-| `ReplyUntilDate` | `DATS(8)` | Latest Date up Until Which a Reply Should Take Place |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OutputRequestItemUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `Account` |  | |  |  | `CHAR(10)` | Recipient ID |
+| `CompanyCode` |  | |  |  | `CHAR(40)` | Output Management: Organization ID |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Financial Account Type |
+| `BalanceConfirmationID` |  | |  |  | `CHAR(255)` | Application Object ID |
+| `Name` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `FullName` |  | |  |  | `CHAR(220)` | Customer Full Name |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `ReferenceAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `KeyDate` |  | |  |  | `DATS(8)` | Balance Reconciliation Key Date |
+| `IssueDate` |  | |  |  | `DATS(8)` | Issue Date of the Balance Confirmations |
+| `ReplyUntilDate` |  | |  |  | `DATS(8)` | Latest Date up Until Which a Reply Should Take Place |

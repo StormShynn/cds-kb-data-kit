@@ -29,32 +29,32 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralLiquidationUUID` | `RAW(16)` | Liquidation GUID |
-| `ObjectReferenceUUID` | `RAW(16)` | Object link GUID for liquidation |
-| `LiquidationObjectRefSystem` | `CHAR(6)` | Object System Reference ID for Liquidation |
-| `LiquidationType` | `CHAR(6)` | Liquidation Measure Type ID |
-| `LiquidationStartDate` | `DATS(8)` | Start Date for the Liquidation Measure |
-| `LiquidationEndDate` | `DATS(8)` | End Date of a Liquidation Measure |
-| `LiquidationInitiatedBy` | `CHAR(6)` | Liquidation Initiated By |
-| `LiquidationApplicationDate` | `DATS(8)` | Application Date for Enforcement Measure |
-| `LiquidationCourtOrderDate` | `DATS(8)` | Court's Order Date |
-| `LqdtnCourtOrderReceivedDate` | `DATS(8)` | Decision of Order Received On |
-| `LiquidationDecisionClosedDate` | `DATS(8)` | Date of Decision of Close |
-| `LqdtnDecisionCloseReceivedDate` | `DATS(8)` | Decision of Close Received On |
-| `LqdtnGuaranteeCallingAmount` | `CURR(17)` | Value of Guarantee at Time of Liquidation |
-| `LqdtnGuaranteeCallingCurrency` | `CUKY(5)` | Liquidation guarantee value currency |
-| `LqdtnGuaranteeCallingDate` | `DATS(8)` | Calling date for guarantees |
-| `LqdtnGuaranteeEnforceableDate` | `DATS(8)` | Date of Enforceable Title for Guarantees |
-| `LqdtnEnfrcmntTitleObtained` | `CHAR(2)` | Enforceable Title Obtained |
-| `LiquidationEnforceableDesc` | `CHAR(40)` | Enforceable title description |
-| `LiquidationAffidavitDate` | `DATS(8)` | Date of Affidavit |
-| `LiquidationAffidavitDesc` | `CHAR(40)` | Affidavit description |
-| `LiquidationAmicableDate` | `DATS(8)` | Date of the Amicable Settlement |
-| `LiquidationAmicableDescription` | `CHAR(40)` | CMS Liquidation Amicable description |
-| `LiquidationRegistrationDate` | `DATS(8)` | Registration Date |
-| `LiquidationAdminRcvrReqDte` | `DATS(8)` | Date of Request for Admin. Receivership |
-| `LiquidationAttachmentDate` | `DATS(8)` | Date of Attachment |
-| `LqdtnEnfrcmntTtlRqdBfrDte` | `DATS(8)` | Date Before Which the Enforcement Title is Required |
-| `LqdtnOutOfCourtSettlmtDte` | `DATS(8)` | Date of Out-of-Court Settlement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralLiquidationUUID` |  | |  |  | `RAW(16)` | Liquidation GUID |
+| `ObjectReferenceUUID` |  | |  |  | `RAW(16)` | Object link GUID for liquidation |
+| `LiquidationObjectRefSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID for Liquidation |
+| `LiquidationType` |  | |  |  | `CHAR(6)` | Liquidation Measure Type ID |
+| `LiquidationStartDate` |  | |  |  | `DATS(8)` | Start Date for the Liquidation Measure |
+| `LiquidationEndDate` |  | |  |  | `DATS(8)` | End Date of a Liquidation Measure |
+| `LiquidationInitiatedBy` |  | |  |  | `CHAR(6)` | Liquidation Initiated By |
+| `LiquidationApplicationDate` |  | |  |  | `DATS(8)` | Application Date for Enforcement Measure |
+| `LiquidationCourtOrderDate` |  | |  |  | `DATS(8)` | Court's Order Date |
+| `LqdtnCourtOrderReceivedDate` |  | |  |  | `DATS(8)` | Decision of Order Received On |
+| `LiquidationDecisionClosedDate` |  | |  |  | `DATS(8)` | Date of Decision of Close |
+| `LqdtnDecisionCloseReceivedDate` |  | |  |  | `DATS(8)` | Decision of Close Received On |
+| `LqdtnGuaranteeCallingAmount` |  | |  |  | `CURR(17)` | Value of Guarantee at Time of Liquidation |
+| `LqdtnGuaranteeCallingCurrency` |  | |  |  | `CUKY(5)` | Liquidation guarantee value currency |
+| `LqdtnGuaranteeCallingDate` |  | |  |  | `DATS(8)` | Calling date for guarantees |
+| `LqdtnGuaranteeEnforceableDate` |  | |  |  | `DATS(8)` | Date of Enforceable Title for Guarantees |
+| `LqdtnEnfrcmntTitleObtained` |  | |  |  | `CHAR(2)` | Enforceable Title Obtained |
+| `LiquidationEnforceableDesc` |  | |  |  | `CHAR(40)` | Enforceable title description |
+| `LiquidationAffidavitDate` |  | |  |  | `DATS(8)` | Date of Affidavit |
+| `LiquidationAffidavitDesc` |  | |  |  | `CHAR(40)` | Affidavit description |
+| `LiquidationAmicableDate` |  | |  |  | `DATS(8)` | Date of the Amicable Settlement |
+| `LiquidationAmicableDescription` |  | |  |  | `CHAR(40)` | CMS Liquidation Amicable description |
+| `LiquidationRegistrationDate` |  | |  |  | `DATS(8)` | Registration Date |
+| `LiquidationAdminRcvrReqDte` |  | |  |  | `DATS(8)` | Date of Request for Admin. Receivership |
+| `LiquidationAttachmentDate` |  | |  |  | `DATS(8)` | Date of Attachment |
+| `LqdtnEnfrcmntTtlRqdBfrDte` |  | |  |  | `DATS(8)` | Date Before Which the Enforcement Title is Required |
+| `LqdtnOutOfCourtSettlmtDte` |  | |  |  | `DATS(8)` | Date of Out-of-Court Settlement |

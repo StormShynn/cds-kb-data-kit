@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSInvestigationStatus` | `CHAR(2)` | Investigation Status |
-| `Language` | `LANG(1)` | Language Key |
-| `EHSInvestigationStatusText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSInvestigationStatus` |  | |  |  | `CHAR(2)` | Investigation Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EHSInvestigationStatusText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

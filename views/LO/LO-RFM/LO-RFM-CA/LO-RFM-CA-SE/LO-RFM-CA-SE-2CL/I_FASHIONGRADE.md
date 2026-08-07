@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FashionGrade` | `CHAR(4)` | Fashion Grade |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FashionGrade` |  | |  |  | `CHAR(4)` | Fashion Grade |

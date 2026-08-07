@@ -34,15 +34,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IN_ThresholdAmountCategory` | `CHAR(4)` | Category for Threshold amount |
-| `IN_SellerPan` | `CHAR(10)` | Permanent account number - Company code |
-| `IN_BuyerIdentificationType` | `CHAR(2)` | Type of ID Number |
-| `IN_BuyerIdentificationNumber` | `CHAR(40)` | Identification Number |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `IN_ThresholdValidFromDate` | `DATS(8)` | Valid From Date |
-| `IN_AccumulationAmount` | `CURR(23)` | Accumulation Amount |
-| `IN_TaxCollectedAtSourceAmount` | `CURR(23)` | TCS Amount |
-| `IN_AccumulationDate` | `DATS(8)` | Last Accumulation date |
-| `TransactionCurrency` | `CUKY(5)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IN_ThresholdAmountCategory` |  | |  |  | `CHAR(4)` | Category for Threshold amount |
+| `IN_SellerPan` |  | |  |  | `CHAR(10)` | Permanent account number - Company code |
+| `IN_BuyerIdentificationType` |  | |  |  | `CHAR(2)` | Type of ID Number |
+| `IN_BuyerIdentificationNumber` |  | |  |  | `CHAR(40)` | Identification Number |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `IN_ThresholdValidFromDate` |  | |  |  | `DATS(8)` | Valid From Date |
+| `IN_AccumulationAmount` |  | |  |  | `CURR(23)` | Accumulation Amount |
+| `IN_TaxCollectedAtSourceAmount` |  | |  |  | `CURR(23)` | TCS Amount |
+| `IN_AccumulationDate` |  | |  |  | `DATS(8)` | Last Accumulation date |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` |  |

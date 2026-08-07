@@ -34,11 +34,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `RegionName` | `CHAR(20)` | Description |
-| `BR_CNPJ` | `NUMC(14)` | [DEPRECATED] CNPJ Numeric |
-| `BR_CNPJ_2` | `CHAR(14)` | National Registry of Legal Entities (CNPJ) |
-| `BR_NFeSeriesRangeFrom` | `CHAR(3)` | Initial Series |
-| `BR_NFeSeriesRangeTo` | `CHAR(3)` | Final Series |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `RegionName` |  | |  |  | `CHAR(20)` | Description |
+| `BR_CNPJ` |  | |  |  | `NUMC(14)` | [DEPRECATED] CNPJ Numeric |
+| `BR_CNPJ_2` |  | |  |  | `CHAR(14)` | National Registry of Legal Entities (CNPJ) |
+| `BR_NFeSeriesRangeFrom` |  | |  |  | `CHAR(3)` | Initial Series |
+| `BR_NFeSeriesRangeTo` |  | |  |  | `CHAR(3)` | Final Series |

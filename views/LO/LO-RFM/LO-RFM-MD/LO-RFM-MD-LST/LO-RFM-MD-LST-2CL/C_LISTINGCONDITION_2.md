@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SiteCustomer` | `CHAR(10)` | Customer Number of Site |
-| `Product` | `CHAR(40)` | Product |
-| `ListingConditionEndDate` | `DATS(8)` | Valid To |
-| `SequenceNumber` | `NUMC(3)` | Sequence Number |
-| `ListingConditionStartDate` | `DATS(8)` | Valid From |
-| `LastChangeDate` | `DATS(8)` | Changed On |
-| `ListingSource` | `CHAR(1)` | Listing Source (Transaction / Function Environment) |
-| `ProductOfSuprordLstgCondition` | `CHAR(40)` | Structured Material |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SiteCustomer` |  | |  |  | `CHAR(10)` | Customer Number of Site |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ListingConditionEndDate` |  | |  |  | `DATS(8)` | Valid To |
+| `SequenceNumber` |  | |  |  | `NUMC(3)` | Sequence Number |
+| `ListingConditionStartDate` |  | |  |  | `DATS(8)` | Valid From |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Changed On |
+| `ListingSource` |  | |  |  | `CHAR(1)` | Listing Source (Transaction / Function Environment) |
+| `ProductOfSuprordLstgCondition` |  | |  |  | `CHAR(40)` | Structured Material |

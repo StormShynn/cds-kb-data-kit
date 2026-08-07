@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrPrcgDetnRlvnceCat` | `CHAR(1)` | CC Determination Relevance in Pricing (Condition Contract) |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `CndnContrPrcgDetnRlvnceCatName` | `CHAR(60)` | Text of CC Determination Relevance in Pricing (CC) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrPrcgDetnRlvnceCat` |  | |  |  | `CHAR(1)` | CC Determination Relevance in Pricing (Condition Contract) |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CndnContrPrcgDetnRlvnceCatName` |  | |  |  | `CHAR(60)` | Text of CC Determination Relevance in Pricing (CC) |

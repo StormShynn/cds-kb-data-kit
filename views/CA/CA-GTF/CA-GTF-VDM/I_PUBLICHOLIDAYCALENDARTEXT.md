@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PublicHolidayCalendar` | `CHAR(2)` | Public Holiday Calendar |
-| `Language` | `LANG(1)` | Language Key |
-| `PublicHolidayCalendarName` | `CHAR(60)` | Object Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCalendar` |  | |  |  | `CHAR(2)` | Public Holiday Calendar |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PublicHolidayCalendarName` |  | |  |  | `CHAR(60)` | Object Text |

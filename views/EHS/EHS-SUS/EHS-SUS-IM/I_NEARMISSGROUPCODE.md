@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NearMissGroupCode` | `CHAR(21)` | Near Miss Group |
-| `EHSInactiveConfiguration` | `CHAR(1)` | Deactivate Configuration |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NearMissGroupCode` |  | |  |  | `CHAR(21)` | Near Miss Group |
+| `EHSInactiveConfiguration` |  | |  |  | `CHAR(1)` | Deactivate Configuration |

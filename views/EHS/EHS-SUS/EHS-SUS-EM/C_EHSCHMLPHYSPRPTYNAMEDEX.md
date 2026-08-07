@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSChmlPhysPrptyBusConfignVers` | `CHAR(40)` | BCO ID |
-| `EHSChmlPhysPrptyNameCentralID` | `CHAR(32)` | BCO KEY |
-| `EHSChemicalPhysicalPropUUID` | `RAW(16)` | NodeID |
-| `Language` | `LANG(1)` | Language Key |
-| `EHSPropertyName` | `CHAR(60)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSChmlPhysPrptyBusConfignVers` |  | |  |  | `CHAR(40)` | BCO ID |
+| `EHSChmlPhysPrptyNameCentralID` |  | |  |  | `CHAR(32)` | BCO KEY |
+| `EHSChemicalPhysicalPropUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EHSPropertyName` |  | |  |  | `CHAR(60)` | Name |

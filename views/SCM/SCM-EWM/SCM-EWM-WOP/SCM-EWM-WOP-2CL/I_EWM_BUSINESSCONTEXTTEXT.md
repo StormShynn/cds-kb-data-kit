@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BusinessContext` | `CHAR(3)` | Business Context |
-| `BusinessContextName` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusinessContext` |  | |  |  | `CHAR(3)` | Business Context |
+| `BusinessContextName` |  | |  |  | `CHAR(40)` | Description |

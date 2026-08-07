@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BPTaxComplianceType` | `CHAR(6)` | Tax Compliance Type |
-| `BPTaxComplianceStatus` | `CHAR(1)` | Tax Compliance Status |
-| `BPTaxComplianceStatusReason` | `CHAR(2)` | Tax Compliance: Reason for Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BPTaxComplianceType` |  | |  |  | `CHAR(6)` | Tax Compliance Type |
+| `BPTaxComplianceStatus` |  | |  |  | `CHAR(1)` | Tax Compliance Status |
+| `BPTaxComplianceStatusReason` |  | |  |  | `CHAR(2)` | Tax Compliance: Reason for Status |

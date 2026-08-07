@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentType` | `CHAR(1)` | Payment Type |
-| `Language` | `LANG(1)` | Language Key |
-| `PaymentTypeName` | `CHAR(60)` | Payment Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentType` |  | |  |  | `CHAR(1)` | Payment Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PaymentTypeName` |  | |  |  | `CHAR(60)` | Payment Type Name |

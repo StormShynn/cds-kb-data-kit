@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDocType` | `CHAR(4)` | Settlement Document Type |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtDocTypeDesc` | `CHAR(40)` | Settlement Document Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtDocTypeDesc` |  | |  |  | `CHAR(40)` | Settlement Document Type Description |

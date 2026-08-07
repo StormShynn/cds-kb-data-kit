@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceChecklistInstance` | `CHAR(10)` | Instance ID |
-| `SrvcChecklistTemplateElement` | `NUMC(4)` | Element ID |
-| `SrvcChklstInstceElmntOccren` | `INT4(10)` | Sequence Number |
-| `SrvcChklstInstceElmntValueType` | `CHAR(30)` | Value Type |
-| `SrvcChklstInstceElmntSeriesIdx` | `CHAR(10)` | Series Index |
-| `SrvcChklstInstceElmntTblRowIdx` | `CHAR(10)` | Table Row |
-| `SrvcChklstInstceStateElmntIdx` | `CHAR(10)` | State Element Index |
-| `SrvcChklstInstceAttchPickerIdx` | `CHAR(10)` | Attachment Picker Index |
-| `NrOfSvCklInstceStateElements` | `CHAR(1333)` | State Element Quantity |
-| `SrvcChklstInstceElementValue` | `CHAR(1333)` | Element Value |
-| `SrvcChklstInstceElmntDesc` | `CHAR(1333)` | Element Description |
-| `SrvcChklstInstceElmntComment` | `CHAR(1333)` | Element Comment |
-| `SrvcChklstInstceElmntImage` | `CHAR(1333)` | Element Image |
-| `SrvcChklstInstceElmntItem` | `CHAR(1333)` | Element Item |
-| `SrvcChklstLanguage` | `LANG(1)` | Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceChecklistInstance` |  | |  |  | `CHAR(10)` | Instance ID |
+| `SrvcChecklistTemplateElement` |  | |  |  | `NUMC(4)` | Element ID |
+| `SrvcChklstInstceElmntOccren` |  | |  |  | `INT4(10)` | Sequence Number |
+| `SrvcChklstInstceElmntValueType` |  | |  |  | `CHAR(30)` | Value Type |
+| `SrvcChklstInstceElmntSeriesIdx` |  | |  |  | `CHAR(10)` | Series Index |
+| `SrvcChklstInstceElmntTblRowIdx` |  | |  |  | `CHAR(10)` | Table Row |
+| `SrvcChklstInstceStateElmntIdx` |  | |  |  | `CHAR(10)` | State Element Index |
+| `SrvcChklstInstceAttchPickerIdx` |  | |  |  | `CHAR(10)` | Attachment Picker Index |
+| `NrOfSvCklInstceStateElements` |  | |  |  | `CHAR(1333)` | State Element Quantity |
+| `SrvcChklstInstceElementValue` |  | |  |  | `CHAR(1333)` | Element Value |
+| `SrvcChklstInstceElmntDesc` |  | |  |  | `CHAR(1333)` | Element Description |
+| `SrvcChklstInstceElmntComment` |  | |  |  | `CHAR(1333)` | Element Comment |
+| `SrvcChklstInstceElmntImage` |  | |  |  | `CHAR(1333)` | Element Image |
+| `SrvcChklstInstceElmntItem` |  | |  |  | `CHAR(1333)` | Element Item |
+| `SrvcChklstLanguage` |  | |  |  | `LANG(1)` | Language |

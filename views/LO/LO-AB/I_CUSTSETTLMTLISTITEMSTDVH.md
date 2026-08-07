@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustSettlmtList` | `CHAR(10)` | Settlement Document: Customer Settlement List |
-| `CustSettlmtListItem` | `NUMC(6)` | Item in List |
-| `RefSettlmtDoc` | `CHAR(10)` | Settlement Document Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustSettlmtList` |  | |  |  | `CHAR(10)` | Settlement Document: Customer Settlement List |
+| `CustSettlmtListItem` |  | |  |  | `NUMC(6)` | Item in List |
+| `RefSettlmtDoc` |  | |  |  | `CHAR(10)` | Settlement Document Number |

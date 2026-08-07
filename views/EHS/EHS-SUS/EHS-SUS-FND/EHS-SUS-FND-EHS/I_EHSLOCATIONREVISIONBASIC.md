@@ -33,36 +33,36 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationRevisionUUID` | `RAW(16)` | EHS Location - Revision UUID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `CreationDateTime` | `DEC(21)` | Created On |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `LastChangeDateTime` | `DEC(21)` | Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Last Change By |
-| `RevisionDescription` | `CHAR(80)` | Revision Description |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `EHSFunctionalLocation` | `CHAR(40)` | Functional Location ID |
-| `Equipment` | `CHAR(18)` | Equipment |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit ID |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `CityName` | `CHAR(40)` | City |
-| `PostalCode` | `CHAR(10)` | City Postal Code |
-| `StreetName` | `CHAR(60)` | Street Address |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region |
-| `EHSLocationPhone` | `CHAR(30)` | Telephone Number |
-| `Longitude` | `DEC(15)` | Geographic Longitude |
-| `Latitude` | `DEC(15)` | Geographic Latitude |
-| `LongitudeUnit` | `UNIT(3)` | Longitude Unit |
-| `LatitudeUnit` | `UNIT(3)` | Latitude Unit |
-| `StorageLocation` | `CHAR(4)` | Storage Location |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationRevisionUUID` |  | |  |  | `RAW(16)` | EHS Location - Revision UUID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `CreationDateTime` |  | |  |  | `DEC(21)` | Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Change By |
+| `RevisionDescription` |  | |  |  | `CHAR(80)` | Revision Description |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `EHSFunctionalLocation` |  | |  |  | `CHAR(40)` | Functional Location ID |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit ID |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `CityName` |  | |  |  | `CHAR(40)` | City |
+| `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
+| `StreetName` |  | |  |  | `CHAR(60)` | Street Address |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region |
+| `EHSLocationPhone` |  | |  |  | `CHAR(30)` | Telephone Number |
+| `Longitude` |  | |  |  | `DEC(15)` | Geographic Longitude |
+| `Latitude` |  | |  |  | `DEC(15)` | Geographic Latitude |
+| `LongitudeUnit` |  | |  |  | `UNIT(3)` | Longitude Unit |
+| `LatitudeUnit` |  | |  |  | `UNIT(3)` | Latitude Unit |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |

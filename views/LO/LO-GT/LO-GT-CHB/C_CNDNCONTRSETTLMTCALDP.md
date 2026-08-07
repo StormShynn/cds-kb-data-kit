@@ -32,19 +32,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConditionContract` | `CHAR(10)` | Condition Contract |
-| `SettlmtDate` | `DATS(8)` | Rebates: Settlement Date |
-| `SettlmtDateSequentialID` | `NUMC(1)` | Settlement Date - Sequential ID |
-| `SettlmtDateCat` | `CHAR(1)` | Rebates: Settlement Date Type |
-| `RefSettlmtDate` | `DATS(8)` | Reference Date for a Delta Settlement |
-| `RefSettlmtDateSequentialID` | `NUMC(1)` | Reference Settlement Date - Sequential ID |
-| `SettlmtExecutionDate` | `DATS(8)` | Settlement Execution Date |
-| `SettlementFixedValueDate` | `DATS(8)` | Fixed Value Date |
-| `BusVolDateFrom` | `DATS(8)` | Business Volume Date From |
-| `BusVolDateTo` | `DATS(8)` | Business Volume Date To |
-| `SettlmtDateUsage` | `CHAR(1)` | Settlement Date Usage |
-| `CndnContrCalItemUUID` | `RAW(16)` | Condition Contract: Settlement Calendar item GUID |
-| `CndnContrSourceCalItemUUID` | `RAW(16)` | External Calendar GUID |
-| `CndnContrSemanticCode` | `NUMC(4)` | Semantic Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionContract` |  | |  |  | `CHAR(10)` | Condition Contract |
+| `SettlmtDate` |  | |  |  | `DATS(8)` | Rebates: Settlement Date |
+| `SettlmtDateSequentialID` |  | |  |  | `NUMC(1)` | Settlement Date - Sequential ID |
+| `SettlmtDateCat` |  | |  |  | `CHAR(1)` | Rebates: Settlement Date Type |
+| `RefSettlmtDate` |  | |  |  | `DATS(8)` | Reference Date for a Delta Settlement |
+| `RefSettlmtDateSequentialID` |  | |  |  | `NUMC(1)` | Reference Settlement Date - Sequential ID |
+| `SettlmtExecutionDate` |  | |  |  | `DATS(8)` | Settlement Execution Date |
+| `SettlementFixedValueDate` |  | |  |  | `DATS(8)` | Fixed Value Date |
+| `BusVolDateFrom` |  | |  |  | `DATS(8)` | Business Volume Date From |
+| `BusVolDateTo` |  | |  |  | `DATS(8)` | Business Volume Date To |
+| `SettlmtDateUsage` |  | |  |  | `CHAR(1)` | Settlement Date Usage |
+| `CndnContrCalItemUUID` |  | |  |  | `RAW(16)` | Condition Contract: Settlement Calendar item GUID |
+| `CndnContrSourceCalItemUUID` |  | |  |  | `RAW(16)` | External Calendar GUID |
+| `CndnContrSemanticCode` |  | |  |  | `NUMC(4)` | Semantic Type |

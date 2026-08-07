@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtGlobalTeamID` | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
-| `RespyMgmtAttributeName` | `CHAR(30)` | Responsibility Definition Name |
-| `RespyMgmtAttributeSign` | `CHAR(1)` | Type of SIGN component in row type of a Ranges type |
-| `RespyMgmtAttributeOption` | `CHAR(2)` | Type of OPTION component in row type of a Ranges type |
-| `RespyMgmtAttributeLowValue` | `CHAR(50)` | Start Value of Selection Criteria |
-| `RespyMgmtAttributeHighValue` | `CHAR(50)` | End Value of Selection Criteria |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtGlobalTeamID` |  | |  |  | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
+| `RespyMgmtAttributeName` |  | |  |  | `CHAR(30)` | Responsibility Definition Name |
+| `RespyMgmtAttributeSign` |  | |  |  | `CHAR(1)` | Type of SIGN component in row type of a Ranges type |
+| `RespyMgmtAttributeOption` |  | |  |  | `CHAR(2)` | Type of OPTION component in row type of a Ranges type |
+| `RespyMgmtAttributeLowValue` |  | |  |  | `CHAR(50)` | Start Value of Selection Criteria |
+| `RespyMgmtAttributeHighValue` |  | |  |  | `CHAR(50)` | End Value of Selection Criteria |

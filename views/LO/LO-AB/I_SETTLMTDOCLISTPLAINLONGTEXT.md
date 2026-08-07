@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDocList` | `CHAR(10)` | Document Number of Settlement Document List |
-| `TextObjectType` | `CHAR(4)` | Text Object type |
-| `Language` | `LANG(1)` | Language Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocList` |  | |  |  | `CHAR(10)` | Document Number of Settlement Document List |
+| `TextObjectType` |  | |  |  | `CHAR(4)` | Text Object type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |

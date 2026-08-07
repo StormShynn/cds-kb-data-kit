@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsVersionStatus` | `CHAR(2)` | Processing Status of a Version |
-| `Language` | `LANG(1)` | Language Key |
-| `BOOVersionStatusText` | `CHAR(30)` | Processing Status of a Version |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsVersionStatus` |  | |  |  | `CHAR(2)` | Processing Status of a Version |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BOOVersionStatusText` |  | |  |  | `CHAR(30)` | Processing Status of a Version |

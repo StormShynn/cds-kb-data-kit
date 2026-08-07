@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SubscriptionBillingCycle` | `CHAR(4)` | Billing Cycle |
-| `Language` | `LANG(1)` | Language Key |
-| `SubscriptionBillingCycleText` | `CHAR(60)` | Short Text for Fixed Values |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubscriptionBillingCycle` |  | |  |  | `CHAR(4)` | Billing Cycle |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SubscriptionBillingCycleText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

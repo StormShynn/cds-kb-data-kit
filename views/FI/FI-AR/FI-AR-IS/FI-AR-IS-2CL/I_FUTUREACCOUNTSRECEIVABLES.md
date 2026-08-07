@@ -35,31 +35,31 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Customer` | `CHAR(10)` | Customer |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `SpecialGLCode` | `CHAR(1)` | Special G/L Indicator |
-| `NetDueIntervalText` | `CHAR(50)` | Net Due Date Interval |
-| `FinancialAccountType` | `CHAR(1)` | Financial Account Type |
-| `ReconciliationAccount` | `CHAR(10)` | Reconciliation Account in General Ledger |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `CustomerCountry` | `CHAR(3)` | Country / Region Key |
-| `CustomerRegion` | `CHAR(3)` | Region (State, Province, County) |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `CustomerBasicAuthorizationGrp` | `CHAR(4)` | Customer Basic Authorization Group |
-| `CustomerFinsAuthorizationGrp` | `CHAR(4)` | Authorization Group |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerClassification` | `CHAR(2)` | Customer Classification |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `NumberOfOpenItems` | `INT4(10)` | Number of Open Items |
-| `AmountInDisplayCurrency` | `CURR(23)` | Amount in Display Currency |
-| `TotalOverdueAmtInDspCrcy` | `CURR(23)` | Overdue Amount in Display Currency |
-| `TotalNotOvrdAmtInDspCrcy` | `CURR(23)` | Not Overdue Amount in Display Currency |
-| `NetDueIntvl1AmtInDspCrcy` | `CURR(23)` | Amount in 1st Due Period (Display Currency) |
-| `NetDueIntvl2AmtInDspCrcy` | `CURR(23)` | Amount in 2nd Due Period (Display Currency) |
-| `NetDueIntvl3AmtInDspCrcy` | `CURR(23)` | Amount in 3rd Due Period (Display Currency) |
-| `NetDueIntvl4AmtInDspCrcy` | `CURR(23)` | Amount in 4th Due Period (Display Currency) |
-| `NetDueLastIntvlAmtInDspCrcy` | `CURR(23)` | Overdue Amount in Last Interval in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
+| `NetDueIntervalText` |  | |  |  | `CHAR(50)` | Net Due Date Interval |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Financial Account Type |
+| `ReconciliationAccount` |  | |  |  | `CHAR(10)` | Reconciliation Account in General Ledger |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `CustomerCountry` |  | |  |  | `CHAR(3)` | Country / Region Key |
+| `CustomerRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `CustomerBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Customer Basic Authorization Group |
+| `CustomerFinsAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `NumberOfOpenItems` |  | |  |  | `INT4(10)` | Number of Open Items |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
+| `TotalOverdueAmtInDspCrcy` |  | |  |  | `CURR(23)` | Overdue Amount in Display Currency |
+| `TotalNotOvrdAmtInDspCrcy` |  | |  |  | `CURR(23)` | Not Overdue Amount in Display Currency |
+| `NetDueIntvl1AmtInDspCrcy` |  | |  |  | `CURR(23)` | Amount in 1st Due Period (Display Currency) |
+| `NetDueIntvl2AmtInDspCrcy` |  | |  |  | `CURR(23)` | Amount in 2nd Due Period (Display Currency) |
+| `NetDueIntvl3AmtInDspCrcy` |  | |  |  | `CURR(23)` | Amount in 3rd Due Period (Display Currency) |
+| `NetDueIntvl4AmtInDspCrcy` |  | |  |  | `CURR(23)` | Amount in 4th Due Period (Display Currency) |
+| `NetDueLastIntvlAmtInDspCrcy` |  | |  |  | `CURR(23)` | Overdue Amount in Last Interval in Display Currency |

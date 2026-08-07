@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SEPAMandateStatus` | `CHAR(1)` | Mandate Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SEPAMandateStatus` |  | |  |  | `CHAR(1)` | Mandate Status |

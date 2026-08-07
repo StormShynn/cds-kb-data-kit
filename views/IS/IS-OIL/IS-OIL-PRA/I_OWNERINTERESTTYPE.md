@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OwnerInterestType` | `CHAR(2)` | Participant Interest Type |
-| `OwnerInterestCategory` | `CHAR(1)` | Interest Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OwnerInterestType` |  | |  |  | `CHAR(2)` | Participant Interest Type |
+| `OwnerInterestCategory` |  | |  |  | `CHAR(1)` | Interest Category |

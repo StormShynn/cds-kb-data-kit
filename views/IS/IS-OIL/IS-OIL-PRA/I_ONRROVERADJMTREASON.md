@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRROverrideAdjmtReason` | `NUMC(2)` | ONRR-2014 - Override Adjustment Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRROverrideAdjmtReason` |  | |  |  | `NUMC(2)` | ONRR-2014 - Override Adjustment Code |

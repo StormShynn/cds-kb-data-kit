@@ -31,19 +31,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplncObligationAssignmentUUID` | `RAW(16)` | Compliance Obligation Assignment UUID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationName` | `CHAR(60)` | Location Revision Text |
-| `ComplianceObligationUUID` | `RAW(16)` | Compliance Obligation |
-| `CmplncOblgnAssgmtAppltyStatus` | `CHAR(2)` | Applicability |
-| `CmplncOblgnAssgmtCmplncStatus` | `CHAR(2)` | Status |
-| `CmplncOblgnAssgmtAppltyStsText` | `CHAR(60)` | Short Text for Fixed Values |
-| `CmplncOblgnAssgmtCmplncStsText` | `CHAR(60)` | Short Text for Fixed Values |
-| `ComplianceObligationTypeCode` | `CHAR(2)` | Compliance Obligation Type |
-| `CmplncOblgnTypeDescription` | `CHAR(60)` | Compliance Obligation Type Description |
-| `NumberOfRecords` | `INT4(10)` | Number of Obligations |
-| `NumberOfFulfilledObligations` | `INT4(10)` | Number of Fulfilled Obligations |
-| `CmplOblAsgtFulfilledUUID` | `RAW(16)` | Compliance Obligation Assignment UUID |
-| `ComplianceObligationDomainCode` | `CHAR(21)` | Compliance Obligation Domain |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplncObligationAssignmentUUID` |  | |  |  | `RAW(16)` | Compliance Obligation Assignment UUID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location Revision Text |
+| `ComplianceObligationUUID` |  | |  |  | `RAW(16)` | Compliance Obligation |
+| `CmplncOblgnAssgmtAppltyStatus` |  | |  |  | `CHAR(2)` | Applicability |
+| `CmplncOblgnAssgmtCmplncStatus` |  | |  |  | `CHAR(2)` | Status |
+| `CmplncOblgnAssgmtAppltyStsText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `CmplncOblgnAssgmtCmplncStsText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `ComplianceObligationTypeCode` |  | |  |  | `CHAR(2)` | Compliance Obligation Type |
+| `CmplncOblgnTypeDescription` |  | |  |  | `CHAR(60)` | Compliance Obligation Type Description |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Obligations |
+| `NumberOfFulfilledObligations` |  | |  |  | `INT4(10)` | Number of Fulfilled Obligations |
+| `CmplOblAsgtFulfilledUUID` |  | |  |  | `RAW(16)` | Compliance Obligation Assignment UUID |
+| `ComplianceObligationDomainCode` |  | |  |  | `CHAR(21)` | Compliance Obligation Domain |

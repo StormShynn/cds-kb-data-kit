@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Language` | `LANG(1)` | Language Key |
-| `LoanSpecialPostingType` | `CHAR(2)` | Special posting treatment |
-| `LoanSpecialPostingTypeShortTxt` | `CHAR(15)` | Short Name |
-| `LoanSpecialPostingTypeText` | `CHAR(50)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanSpecialPostingType` |  | |  |  | `CHAR(2)` | Special posting treatment |
+| `LoanSpecialPostingTypeShortTxt` |  | |  |  | `CHAR(15)` | Short Name |
+| `LoanSpecialPostingTypeText` |  | |  |  | `CHAR(50)` | Name |

@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdClassfctnNmbrSchm` | `CHAR(10)` | Trade Classification Numbering Scheme |
-| `Product` | `CHAR(40)` | Product |
-| `CommodityCode` | `CHAR(30)` | Commodity Code |
-| `ValidityStartDate` | `DATS(8)` | Valid From |
-| `Country` | `CHAR(3)` | Country/Region |
-| `ValidityEndDate` | `DATS(8)` | Valid To |
-| `TrdClassfctnNmbrUUID` | `RAW(16)` | NodeID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdClassfctnNmbrSchm` |  | |  |  | `CHAR(10)` | Trade Classification Numbering Scheme |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `CommodityCode` |  | |  |  | `CHAR(30)` | Commodity Code |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid From |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To |
+| `TrdClassfctnNmbrUUID` |  | |  |  | `RAW(16)` | NodeID |

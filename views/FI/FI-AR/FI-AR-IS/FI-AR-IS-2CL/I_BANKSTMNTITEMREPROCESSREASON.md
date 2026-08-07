@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankStmntItemReprocessReason` | `CHAR(2)` | Reprocessing Reason Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankStmntItemReprocessReason` |  | |  |  | `CHAR(2)` | Reprocessing Reason Code |

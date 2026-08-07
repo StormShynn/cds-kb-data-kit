@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `FinancialInstrumentActivity` | `NUMC(5)` | Transaction Activity |
-| `FinancialTransactionDirection` | `NUMC(1)` | Direction of Transaction |
-| `FinConditionItem` | `NUMC(4)` | Condition |
-| `ConditionItemValidityStartDate` | `DATS(8)` | Condition Item Effective From |
-| `FinInstrConditionLogicGroup` | `NUMC(4)` | Condition Logic Group |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Financial Instrument Product Category |
-| `FinCndnScaleLowerLimitAmount` | `CURR(23)` | Lower Limit for Amount |
-| `FinCndnScaleUpperLimitAmount` | `CURR(23)` | Upper Limit for Amt |
-| `FinCndnLimitAmountCurrency` | `CUKY(5)` | Limit Amount Currency |
-| `FinConditionInterestCategory` | `NUMC(2)` |  |
-| `ConditionPercentageRate` | `DEC(10)` | Percentage rate for condition items |
-| `InterestReference` | `CHAR(10)` | Reference Interest Rate |
-| `FinConditionFormulaReference` | `CHAR(4)` | Formula Reference |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `FinancialInstrumentActivity` |  | |  |  | `NUMC(5)` | Transaction Activity |
+| `FinancialTransactionDirection` |  | |  |  | `NUMC(1)` | Direction of Transaction |
+| `FinConditionItem` |  | |  |  | `NUMC(4)` | Condition |
+| `ConditionItemValidityStartDate` |  | |  |  | `DATS(8)` | Condition Item Effective From |
+| `FinInstrConditionLogicGroup` |  | |  |  | `NUMC(4)` | Condition Logic Group |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Financial Instrument Product Category |
+| `FinCndnScaleLowerLimitAmount` |  | |  |  | `CURR(23)` | Lower Limit for Amount |
+| `FinCndnScaleUpperLimitAmount` |  | |  |  | `CURR(23)` | Upper Limit for Amt |
+| `FinCndnLimitAmountCurrency` |  | |  |  | `CUKY(5)` | Limit Amount Currency |
+| `FinConditionInterestCategory` |  | |  |  | `NUMC(2)` |  |
+| `ConditionPercentageRate` |  | |  |  | `DEC(10)` | Percentage rate for condition items |
+| `InterestReference` |  | |  |  | `CHAR(10)` | Reference Interest Rate |
+| `FinConditionFormulaReference` |  | |  |  | `CHAR(4)` | Formula Reference |

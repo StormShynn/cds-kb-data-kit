@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SrvcItemRelshpType` | `CHAR(3)` | Item Relationship Type |
-| `Language` | `LANG(1)` | Language Key of Description |
-| `SrvcItemRelshpFromTypeName` | `CHAR(50)` | Name of Item Relationship (Forward) |
-| `SrvcItemRelshpToTypeName` | `CHAR(50)` | Name of Item Relationship (Backward) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcItemRelshpType` |  | |  |  | `CHAR(3)` | Item Relationship Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key of Description |
+| `SrvcItemRelshpFromTypeName` |  | |  |  | `CHAR(50)` | Name of Item Relationship (Forward) |
+| `SrvcItemRelshpToTypeName` |  | |  |  | `CHAR(50)` | Name of Item Relationship (Backward) |

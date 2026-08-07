@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkAssignment` | `NUMC(8)` | Workforce Assignment ID |
-| `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
-| `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
-| `WorkforcePersonExternalID` | `CHAR(100)` |  |
-| `WorkAssignmentStartDate` | `DATS(8)` | Start Date |
-| `WorkAssignmentEndDate` | `DATS(8)` | End Date |
-| `IsContingentWorker` | `CHAR(1)` | Contingent Worker Flag |
-| `IsBlocked` | `CHAR(1)` | Blocked Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkAssignment` |  | |  |  | `NUMC(8)` | Workforce Assignment ID |
+| `WorkAssignmentExternalID` |  | |  |  | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` |  | |  |  | `CHAR(2)` | Workforce Country ISO Code |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` |  |
+| `WorkAssignmentStartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `WorkAssignmentEndDate` |  | |  |  | `DATS(8)` | End Date |
+| `IsContingentWorker` |  | |  |  | `CHAR(1)` | Contingent Worker Flag |
+| `IsBlocked` |  | |  |  | `CHAR(1)` | Blocked Indicator |

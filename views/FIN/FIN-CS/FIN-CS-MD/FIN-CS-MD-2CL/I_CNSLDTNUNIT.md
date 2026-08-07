@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationUnit` | `CHAR(18)` | Consolidation Unit |
-| `DocumentEntryIsInGroupCurrency` | `CHAR(1)` | Entry in Group Currency |
-| `Country` | `CHAR(3)` | Country/Region |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `DocumentEntryIsInGroupCurrency` |  | |  |  | `CHAR(1)` | Entry in Group Currency |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |

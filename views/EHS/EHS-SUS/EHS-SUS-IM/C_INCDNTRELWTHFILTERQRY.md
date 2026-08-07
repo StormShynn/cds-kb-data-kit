@@ -31,26 +31,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentReleaseUUID` | `RAW(16)` | NodeID |
-| `IncidentID` | `CHAR(20)` | Incident ID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `IncidentTitle` | `CHAR(80)` | Incident Title |
-| `IncidentStatus` | `CHAR(2)` | Incident Status |
-| `IncidentDate` | `DATS(8)` | Incident Start Date |
-| `IncidentYear` | `NUMC(4)` | Calendar Year |
-| `IncidentMonth` | `NUMC(2)` | Calendar Month |
-| `IncidentYearMonth` | `NUMC(6)` | Year Month |
-| `IncidentYearQuarter` | `NUMC(1)` | Calendar Quarter |
-| `IncidentWeekDay` | `NUMC(1)` | Week Day |
-| `IncidentTime` | `TIMS(6)` | Field of type TIMS |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `Country` | `CHAR(3)` | Country/Region of Incident |
-| `Region` | `CHAR(3)` | Region of Incident |
-| `IncidentMajorRootCause` | `CHAR(21)` | Major Root Cause |
-| `IncidentReleaseType` | `CHAR(21)` | Release Type |
-| `IncidentReleaseSize` | `CHAR(21)` | Release Size |
-| `NumberOfReleaseCases` | `INT4(10)` | Number of Release-Related Cases |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentReleaseUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `IncidentID` |  | |  |  | `CHAR(20)` | Incident ID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `IncidentTitle` |  | |  |  | `CHAR(80)` | Incident Title |
+| `IncidentStatus` |  | |  |  | `CHAR(2)` | Incident Status |
+| `IncidentDate` |  | |  |  | `DATS(8)` | Incident Start Date |
+| `IncidentYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `IncidentMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `IncidentYearMonth` |  | |  |  | `NUMC(6)` | Year Month |
+| `IncidentYearQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `IncidentWeekDay` |  | |  |  | `NUMC(1)` | Week Day |
+| `IncidentTime` |  | |  |  | `TIMS(6)` | Field of type TIMS |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region of Incident |
+| `Region` |  | |  |  | `CHAR(3)` | Region of Incident |
+| `IncidentMajorRootCause` |  | |  |  | `CHAR(21)` | Major Root Cause |
+| `IncidentReleaseType` |  | |  |  | `CHAR(21)` | Release Type |
+| `IncidentReleaseSize` |  | |  |  | `CHAR(21)` | Release Size |
+| `NumberOfReleaseCases` |  | |  |  | `INT4(10)` | Number of Release-Related Cases |

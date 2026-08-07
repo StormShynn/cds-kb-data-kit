@@ -30,17 +30,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSAmountUUID` | `RAW(16)` | NodeID |
-| `EHSAmountUTCDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `EHSAmountValue` | `FLTP(16)` | Amount Value |
-| `UnitOfMeasure` | `UNIT(3)` | Unit of measure |
-| `EHSAmountHasWarning` | `CHAR(1)` | Warning |
-| `EHSAmountIsFaulty` | `CHAR(1)` | Faulty Value |
-| `EHSAmountSourceType` | `CHAR(2)` | Data Source Type |
-| `EHSAmountSourceUUID` | `RAW(16)` | Reference to Source Type BO Root Node ID |
-| `EHSAmountExternalSource` | `CHAR(80)` | External Source |
-| `EHSSubjectType` | `CHAR(2)` | Subject Type |
-| `EHSSubjectUUID` | `RAW(16)` | Reference to Subject Type BO Root Node ID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSAmountUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSAmountUTCDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `EHSAmountValue` |  | |  |  | `FLTP(16)` | Amount Value |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Unit of measure |
+| `EHSAmountHasWarning` |  | |  |  | `CHAR(1)` | Warning |
+| `EHSAmountIsFaulty` |  | |  |  | `CHAR(1)` | Faulty Value |
+| `EHSAmountSourceType` |  | |  |  | `CHAR(2)` | Data Source Type |
+| `EHSAmountSourceUUID` |  | |  |  | `RAW(16)` | Reference to Source Type BO Root Node ID |
+| `EHSAmountExternalSource` |  | |  |  | `CHAR(80)` | External Source |
+| `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |

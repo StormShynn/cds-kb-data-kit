@@ -33,30 +33,30 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `KeyDate` | `DATS(8)` | Key Date |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `SyndicatedCounterparty` | `CHAR(10)` | Syndicated Counterparty |
-| `CreditLineReportingPeriod` | `CHAR(10)` | Reporting Period |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `FinancialInstrTransactionType` | `CHAR(3)` | Financial Instrument Transaction Type |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Financial Instrument Product Category |
-| `FinInstrTransactionCategory` | `NUMC(3)` | Transaction Category |
-| `CompanyCodeCountry` | `CHAR(3)` | Country/Region Key of Company Code |
-| `Portfolio` | `CHAR(10)` | Portfolio |
-| `TotalAmountInTransactionCrcy` | `CURR(17)` | Credit Line in Transaction Currency |
-| `UtilizedAmountInTransCrcy` | `CURR(17)` | Utilized Amount in Transaction Currency |
-| `AvailableAmountInTransCrcy` | `DEC(23)` |  |
-| `FcltyOvrdrftAmtInTransCrcy` | `DEC(23)` |  |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `TotalAmountInDisplayCrcy` | `CURR(17)` | Credit Line in Display Currency |
-| `UtilizedAmountInDisplayCrcy` | `CURR(17)` | Utilized Amount in Display Currency |
-| `AvailableAmountInDisplayCrcy` | `DEC(23)` |  |
-| `FcltyOvrdrftAmtInDisplayCrcy` | `DEC(23)` |  |
-| `CreditLineUtilizationRatio` | `DEC(10)` | Utilization Rate (%) |
-| `CrdtLineUnderUtilizationRatio` | `DEC(10)` | Underutilization Rate (%) |
-| `FcltyTermEndExceededIsAllowed` | `CHAR(1)` | Exceedance of End of Term |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `KeyDate` |  | |  |  | `DATS(8)` | Key Date |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `SyndicatedCounterparty` |  | |  |  | `CHAR(10)` | Syndicated Counterparty |
+| `CreditLineReportingPeriod` |  | |  |  | `CHAR(10)` | Reporting Period |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `FinancialInstrTransactionType` |  | |  |  | `CHAR(3)` | Financial Instrument Transaction Type |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Financial Instrument Product Category |
+| `FinInstrTransactionCategory` |  | |  |  | `NUMC(3)` | Transaction Category |
+| `CompanyCodeCountry` |  | |  |  | `CHAR(3)` | Country/Region Key of Company Code |
+| `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `TotalAmountInTransactionCrcy` |  | |  |  | `CURR(17)` | Credit Line in Transaction Currency |
+| `UtilizedAmountInTransCrcy` |  | |  |  | `CURR(17)` | Utilized Amount in Transaction Currency |
+| `AvailableAmountInTransCrcy` |  | |  |  | `DEC(23)` |  |
+| `FcltyOvrdrftAmtInTransCrcy` |  | |  |  | `DEC(23)` |  |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `TotalAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | Credit Line in Display Currency |
+| `UtilizedAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | Utilized Amount in Display Currency |
+| `AvailableAmountInDisplayCrcy` |  | |  |  | `DEC(23)` |  |
+| `FcltyOvrdrftAmtInDisplayCrcy` |  | |  |  | `DEC(23)` |  |
+| `CreditLineUtilizationRatio` |  | |  |  | `DEC(10)` | Utilization Rate (%) |
+| `CrdtLineUnderUtilizationRatio` |  | |  |  | `DEC(10)` | Underutilization Rate (%) |
+| `FcltyTermEndExceededIsAllowed` |  | |  |  | `CHAR(1)` | Exceedance of End of Term |

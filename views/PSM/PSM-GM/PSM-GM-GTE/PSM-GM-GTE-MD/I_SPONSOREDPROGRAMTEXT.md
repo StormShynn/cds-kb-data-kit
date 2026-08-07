@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `Language` | `LANG(1)` | Language Key |
-| `SponsoredProgramDescription` | `CHAR(30)` | Sponsored Program Description |
-| `SponsoredProgramName` | `CHAR(24)` | Sponsored Program Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SponsoredProgramDescription` |  | |  |  | `CHAR(30)` | Sponsored Program Description |
+| `SponsoredProgramName` |  | |  |  | `CHAR(24)` | Sponsored Program Name |

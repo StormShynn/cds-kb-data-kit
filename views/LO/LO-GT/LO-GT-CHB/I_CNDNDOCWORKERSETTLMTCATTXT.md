@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnDocWorkerSettlmtCat` | `CHAR(1)` | Settlement Type Worker |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `CndnDocWorkerSettlmtCatName` | `CHAR(60)` | Text of Settlement Type Worker |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnDocWorkerSettlmtCat` |  | |  |  | `CHAR(1)` | Settlement Type Worker |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CndnDocWorkerSettlmtCatName` |  | |  |  | `CHAR(60)` | Text of Settlement Type Worker |

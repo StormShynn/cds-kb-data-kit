@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionRulesProdSet` | `CHAR(6)` | Identification of a Product Set |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `AgreementPortnRulesProdSetText` | `CHAR(40)` | Name of Product Set in a Specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionRulesProdSet` |  | |  |  | `CHAR(6)` | Identification of a Product Set |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `AgreementPortnRulesProdSetText` |  | |  |  | `CHAR(40)` | Name of Product Set in a Specified Language |

@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PlannedGIStartDate` | `DATS(8)` |  |
-| `PlannedGIEndDate` | `DATS(8)` |  |
-| `DeliveryType` | `CHAR(4)` | Document Type |
-| `EWMDeliveryDocumentType` | `CHAR(4)` | Document Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlannedGIStartDate` |  | |  |  | `DATS(8)` |  |
+| `PlannedGIEndDate` |  | |  |  | `DATS(8)` |  |
+| `DeliveryType` |  | |  |  | `CHAR(4)` | Document Type |
+| `EWMDeliveryDocumentType` |  | |  |  | `CHAR(4)` | Document Type |

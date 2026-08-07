@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BlockCategory` | `CHAR(1)` | Block Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BlockCategory` |  | |  |  | `CHAR(1)` | Block Category |

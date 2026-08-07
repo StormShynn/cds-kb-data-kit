@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaterialFreightGroup` | `CHAR(8)` | Material Freight Group |
-| `MaterialFreightGroupName` | `CHAR(20)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialFreightGroup` |  | |  |  | `CHAR(8)` | Material Freight Group |
+| `MaterialFreightGroupName` |  | |  |  | `CHAR(20)` | Description |

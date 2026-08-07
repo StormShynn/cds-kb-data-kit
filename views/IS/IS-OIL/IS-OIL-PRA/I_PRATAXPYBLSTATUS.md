@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxPyblStatus` | `CHAR(2)` | Taxes Payable Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxPyblStatus` |  | |  |  | `CHAR(2)` | Taxes Payable Status |

@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Origin` | `CHAR(2)` | Application |
-| `Language` | `LANG(1)` | Language Key |
-| `OriginName` | `CHAR(60)` | Application Origin Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Origin` |  | |  |  | `CHAR(2)` | Application |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `OriginName` |  | |  |  | `CHAR(60)` | Application Origin Name |

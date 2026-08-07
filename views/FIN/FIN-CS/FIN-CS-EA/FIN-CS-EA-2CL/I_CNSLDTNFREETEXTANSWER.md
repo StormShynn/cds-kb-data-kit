@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationReportedAnswer` | `CHAR(32)` | Reported Answer |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationReportedAnswer` |  | |  |  | `CHAR(32)` | Reported Answer |

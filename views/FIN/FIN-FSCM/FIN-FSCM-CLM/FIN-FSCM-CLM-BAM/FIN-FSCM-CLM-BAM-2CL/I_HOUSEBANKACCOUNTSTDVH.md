@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `HouseBank` | `CHAR(5)` | House Bank ID |
-| `HouseBankAccount` | `CHAR(5)` | House Bank Account |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `HouseBank` |  | |  |  | `CHAR(5)` | House Bank ID |
+| `HouseBankAccount` |  | |  |  | `CHAR(5)` | House Bank Account |

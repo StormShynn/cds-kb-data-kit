@@ -33,70 +33,70 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PlanningCategory` | `CHAR(10)` | Plan Category |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `FiscalYearPeriod` | `NUMC(7)` | Fiscal Year Period |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `BusinessTransactionType` | `CHAR(4)` | Business Transaction Type |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `FreeDefinedCurrency1` | `CUKY(5)` | Freely Defined Currency 1 |
-| `SemanticTag` | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `ControllingDebitCreditCode` | `CHAR(1)` | Controlling Debit Credit Code |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `IsCommitment` | `CHAR(1)` | Indicator: Is Commitment |
-| `ActualValue` | `INT1(3)` |  |
-| `PlanValue` | `INT1(3)` |  |
-| `PlanActualDeltaValue` | `INT1(3)` |  |
-| `ServiceCostInGlobalCrcy` | `CURR(23)` | Service Cost in Global Currency |
-| `AdministrationCostInGlobalCrcy` | `CURR(23)` | Administration Cost in Global Currnecy |
-| `TravelCostInGlobalCrcy` | `CURR(23)` | Travel Cost Amount in Global Currency |
-| `PersonnelCostInGlobalCrcy` | `CURR(23)` | Personnel Cost Amount in Global Currency |
-| `MaterialCostInGlobalCrcy` | `CURR(23)` | Material Cost Amount in Global Currency |
-| `MaintenanceCostInGlobCrcy` | `CURR(23)` | Maintenance Cost Amount in Global Currency |
-| `DepreciationCostInGlobCrcy` | `CURR(23)` | Depreciation Cost Amount in Global Currency |
-| `OverheadCostInGlobalCrcy` | `CURR(23)` | Overhead Cost in Global Currency |
-| `AllocationCostInGlobalCrcy` | `CURR(23)` | Allocation Cost in Global Currency |
-| `TrainingCostInGlobalCrcy` | `CURR(23)` | Training Cost in Global Currency |
-| `UtilityCostInGlobalCrcy` | `CURR(23)` | Utility Cost in Global Currency |
-| `SettlementCostInGlobalCrcy` | `CURR(23)` | Settlement Cost in Global Currency |
-| `MiscellaneousCostInGlobalCrcy` | `CURR(23)` | Miscellaneous Cost in Global Currency |
-| `RevenueInGlobalCurrency` | `CURR(23)` | Revenue Amount in Global Currency |
-| `SalesDeductionAmountInGlobCrcy` | `CURR(23)` | Sales Deduction |
-| `ServiceCostInCoCodeCrcy` | `CURR(23)` | Service Cost in CoCode Currency |
-| `AdministrationCostInCoCodeCrcy` | `CURR(23)` | Administration Cost in CoCode Currnecy |
-| `UtilityCostInCoCodeCrcy` | `CURR(23)` | Travel Cost Amount in Company Code Currency |
-| `TravelCostInCoCodeCrcy` | `CURR(23)` | Travel Cost Amount in Company Code Currency |
-| `PersonnelCostInCoCodeCrcy` | `CURR(23)` | Personnel Cost Amount in Company Code Currency |
-| `MaterialCostInCoCodeCrcy` | `CURR(23)` | Material Cost Amount in Company Code Currency |
-| `MaintenanceCostInCoCodeCrcy` | `CURR(23)` | Maintenance Cost Amount in Company Code Currency |
-| `DepreciationCostInCoCodeCrcy` | `CURR(23)` | Depreciation Cost Amount in Company Code Currency |
-| `OverheadCostInCoCodeCrcy` | `CURR(23)` | Overhead Cost in Company Code Currency |
-| `AllocationCostInCoCodeCrcy` | `CURR(23)` | Allocation Cost in Company Code Currency |
-| `TrainingCostInCoCodeCrcy` | `CURR(23)` | Training Cost in Company Code Currency |
-| `SettlementCostInCoCodeCrcy` | `CURR(23)` | Settlement Cost in Company Code Currency |
-| `MiscellaneousCostInCoCodeCrcy` | `CURR(23)` | Miscellaneous Cost in Company Code Currency |
-| `RevenueAmountInCompanyCodeCrcy` | `CURR(23)` | Revenue in Company Code Currency |
-| `SalesDeductionAmtInCoCodeCrcy` | `CURR(23)` | Sales Deduction Company Code Currency |
-| `ServiceCostInFreeDefinedCrcy1` | `CURR(23)` | Service Cost in FreeDfnd Currency1 |
-| `AdminCostInFreeDfndCrcy1` | `CURR(23)` | Administration Cost in CoCode Currnecy |
-| `UtilityCostInFreeDefinedCrcy1` | `CURR(23)` | Travel Cost Amount in Free Defined Currency1 |
-| `TravelCostInFreeDefinedCrcy1` | `CURR(23)` | Travel Cost Amount in Free Defined Currency1 |
-| `PersonnelCostInFreeDfndCrcy1` | `CURR(23)` | Personnel Cost Amount in Free Defined Currency1 |
-| `MaterialCostInFreeDfndCrcy1` | `CURR(23)` | Material Cost Amount in Free Defined Currency1 |
-| `MaintenanceCostInFreeDfndCrcy1` | `CURR(23)` | Maintenance Cost Free Defined Currency1 |
-| `DeprCostInFreeDfndCrcy1` | `CURR(23)` | Depreciation Cost Amount in Free Defined Currency1 |
-| `OverheadCostInFreeDfndCrcy1` | `CURR(23)` | Overhead Cost in Free Defined Currency1 |
-| `AllocationCostInFreeDfndCrcy1` | `CURR(23)` | Allocation Cost in Free Defined Currency1 |
-| `TrainingCostInFreeDfndCrcy1` | `CURR(23)` | Training Cost in Free Defiend Currency1 |
-| `SettlementCostInFreeDfndCrcy1` | `CURR(23)` | Settlement Cost in Free Defined Currency1 |
-| `MiscCostInFreeDfndCrcy1` | `CURR(23)` | Miscellaneous Cost in Free Defined Currency1 |
-| `RevenueAmtInFreeDefinedCrcy1` | `CURR(23)` | Revenue Amount in Free Defined Currency1 |
-| `SlsDeductionAmtInFreeDfndCrcy1` | `CURR(23)` | Sales Deduction Free Defined Currency1 |
-| `RecognizedMarginAmount` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
+| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | Controlling Debit Credit Code |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `IsCommitment` |  | |  |  | `CHAR(1)` | Indicator: Is Commitment |
+| `ActualValue` |  | |  |  | `INT1(3)` |  |
+| `PlanValue` |  | |  |  | `INT1(3)` |  |
+| `PlanActualDeltaValue` |  | |  |  | `INT1(3)` |  |
+| `ServiceCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Service Cost in Global Currency |
+| `AdministrationCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Administration Cost in Global Currnecy |
+| `TravelCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Travel Cost Amount in Global Currency |
+| `PersonnelCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Personnel Cost Amount in Global Currency |
+| `MaterialCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Material Cost Amount in Global Currency |
+| `MaintenanceCostInGlobCrcy` |  | |  |  | `CURR(23)` | Maintenance Cost Amount in Global Currency |
+| `DepreciationCostInGlobCrcy` |  | |  |  | `CURR(23)` | Depreciation Cost Amount in Global Currency |
+| `OverheadCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Overhead Cost in Global Currency |
+| `AllocationCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Allocation Cost in Global Currency |
+| `TrainingCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Training Cost in Global Currency |
+| `UtilityCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Utility Cost in Global Currency |
+| `SettlementCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Settlement Cost in Global Currency |
+| `MiscellaneousCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Miscellaneous Cost in Global Currency |
+| `RevenueInGlobalCurrency` |  | |  |  | `CURR(23)` | Revenue Amount in Global Currency |
+| `SalesDeductionAmountInGlobCrcy` |  | |  |  | `CURR(23)` | Sales Deduction |
+| `ServiceCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Service Cost in CoCode Currency |
+| `AdministrationCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Administration Cost in CoCode Currnecy |
+| `UtilityCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Travel Cost Amount in Company Code Currency |
+| `TravelCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Travel Cost Amount in Company Code Currency |
+| `PersonnelCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Personnel Cost Amount in Company Code Currency |
+| `MaterialCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Material Cost Amount in Company Code Currency |
+| `MaintenanceCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Maintenance Cost Amount in Company Code Currency |
+| `DepreciationCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Depreciation Cost Amount in Company Code Currency |
+| `OverheadCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Overhead Cost in Company Code Currency |
+| `AllocationCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Allocation Cost in Company Code Currency |
+| `TrainingCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Training Cost in Company Code Currency |
+| `SettlementCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Settlement Cost in Company Code Currency |
+| `MiscellaneousCostInCoCodeCrcy` |  | |  |  | `CURR(23)` | Miscellaneous Cost in Company Code Currency |
+| `RevenueAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Revenue in Company Code Currency |
+| `SalesDeductionAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Sales Deduction Company Code Currency |
+| `ServiceCostInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Service Cost in FreeDfnd Currency1 |
+| `AdminCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Administration Cost in CoCode Currnecy |
+| `UtilityCostInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Travel Cost Amount in Free Defined Currency1 |
+| `TravelCostInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Travel Cost Amount in Free Defined Currency1 |
+| `PersonnelCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Personnel Cost Amount in Free Defined Currency1 |
+| `MaterialCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Material Cost Amount in Free Defined Currency1 |
+| `MaintenanceCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Maintenance Cost Free Defined Currency1 |
+| `DeprCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Depreciation Cost Amount in Free Defined Currency1 |
+| `OverheadCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Overhead Cost in Free Defined Currency1 |
+| `AllocationCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Allocation Cost in Free Defined Currency1 |
+| `TrainingCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Training Cost in Free Defiend Currency1 |
+| `SettlementCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Settlement Cost in Free Defined Currency1 |
+| `MiscCostInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Miscellaneous Cost in Free Defined Currency1 |
+| `RevenueAmtInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Revenue Amount in Free Defined Currency1 |
+| `SlsDeductionAmtInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Sales Deduction Free Defined Currency1 |
+| `RecognizedMarginAmount` |  | |  |  | `INT1(3)` |  |

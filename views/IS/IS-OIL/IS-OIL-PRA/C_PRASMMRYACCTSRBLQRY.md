@@ -31,24 +31,24 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Remitter` | `CHAR(10)` | Remitter (Customer) |
-| `AccountsReceivableJointVenture` | `CHAR(6)` | AR Venture |
-| `AcctsRblDivisionOfInterest` | `CHAR(5)` | AR DOI |
-| `AcctsRblMeasurementPt` | `CHAR(20)` | AR MP |
-| `Product` | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
-| `SalesDate` | `DATS(8)` | Sales Date / Month |
-| `BalAmtAgeCode` | `CHAR(3)` | Accounts Receivable Age |
-| `CompanyCodeCurrency` | `CUKY(5)` | Currency Key |
-| `AcctsRblStatus` | `CHAR(2)` | Accounts Receivable Status |
-| `StatusLastChangedByUser` | `CHAR(12)` | Accounts Receivable Status User |
-| `WriteOffResponsibleUser` | `CHAR(12)` | Accounts Receivable Writeoff User |
-| `AgingPeriod` | `CHAR(8)` | Aging Accounting Period(YYYYMM01) |
-| `GLAccountType` | `CHAR(2)` | Account Type |
-| `BalAmtInCompanyCodeCrcy` | `CURR(13)` | Current Balance |
-| `ReceivableAmtInCoCodeCrcy` | `CURR(13)` | Total Receivable Balance |
-| `CashAmtInCoCodeCrcy` | `CURR(13)` | Total Cash Received |
-| `StatusAmtInCompanyCodeCrcy` | `CURR(13)` | Status Amount |
-| `WriteOffAmtInCoCodeCrcy` | `CURR(13)` | Auto Write Off Amount |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Remitter` |  | |  |  | `CHAR(10)` | Remitter (Customer) |
+| `AccountsReceivableJointVenture` |  | |  |  | `CHAR(6)` | AR Venture |
+| `AcctsRblDivisionOfInterest` |  | |  |  | `CHAR(5)` | AR DOI |
+| `AcctsRblMeasurementPt` |  | |  |  | `CHAR(20)` | AR MP |
+| `Product` |  | |  |  | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
+| `SalesDate` |  | |  |  | `DATS(8)` | Sales Date / Month |
+| `BalAmtAgeCode` |  | |  |  | `CHAR(3)` | Accounts Receivable Age |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `AcctsRblStatus` |  | |  |  | `CHAR(2)` | Accounts Receivable Status |
+| `StatusLastChangedByUser` |  | |  |  | `CHAR(12)` | Accounts Receivable Status User |
+| `WriteOffResponsibleUser` |  | |  |  | `CHAR(12)` | Accounts Receivable Writeoff User |
+| `AgingPeriod` |  | |  |  | `CHAR(8)` | Aging Accounting Period(YYYYMM01) |
+| `GLAccountType` |  | |  |  | `CHAR(2)` | Account Type |
+| `BalAmtInCompanyCodeCrcy` |  | |  |  | `CURR(13)` | Current Balance |
+| `ReceivableAmtInCoCodeCrcy` |  | |  |  | `CURR(13)` | Total Receivable Balance |
+| `CashAmtInCoCodeCrcy` |  | |  |  | `CURR(13)` | Total Cash Received |
+| `StatusAmtInCompanyCodeCrcy` |  | |  |  | `CURR(13)` | Status Amount |
+| `WriteOffAmtInCoCodeCrcy` |  | |  |  | `CURR(13)` | Auto Write Off Amount |

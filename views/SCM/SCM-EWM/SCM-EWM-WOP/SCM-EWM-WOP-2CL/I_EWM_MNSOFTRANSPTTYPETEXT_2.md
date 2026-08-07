@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMMeansOfTransportType` | `CHAR(10)` | Means of Transport |
-| `EWMMeansOfTransportTypeName` | `CHAR(40)` | Means of Transport Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMMeansOfTransportType` |  | |  |  | `CHAR(10)` | Means of Transport |
+| `EWMMeansOfTransportTypeName` |  | |  |  | `CHAR(40)` | Means of Transport Description |

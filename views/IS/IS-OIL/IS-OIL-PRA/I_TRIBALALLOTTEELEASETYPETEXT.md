@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TribalOrAllotteeLeaseType` | `CHAR(1)` | ONRR-2014 - Tribal / Allottee Indicator |
-| `Language` | `LANG(1)` | Language Key |
-| `TribalOrAllotteeLeaseTypeName` | `CHAR(60)` | PRA Tribal or Allottee lease type text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TribalOrAllotteeLeaseType` |  | |  |  | `CHAR(1)` | ONRR-2014 - Tribal / Allottee Indicator |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TribalOrAllotteeLeaseTypeName` |  | |  |  | `CHAR(60)` | PRA Tribal or Allottee lease type text |

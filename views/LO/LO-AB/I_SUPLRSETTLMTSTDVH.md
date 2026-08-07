@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrSettlmt` | `CHAR(10)` | Supplier Settlement |
-| `AlternativeInvoicingParty` | `CHAR(10)` | Alternative Supplier |
-| `SuplrSettlmtCompanyCode` | `CHAR(4)` | Company Code |
-| `InvoicingParty` | `CHAR(10)` | Supplier in Settlement Management |
-| `PayeeParty` | `CHAR(10)` | Payee |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `SettlmtDocType` | `CHAR(4)` | Settlement Document Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrSettlmt` |  | |  |  | `CHAR(10)` | Supplier Settlement |
+| `AlternativeInvoicingParty` |  | |  |  | `CHAR(10)` | Alternative Supplier |
+| `SuplrSettlmtCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `InvoicingParty` |  | |  |  | `CHAR(10)` | Supplier in Settlement Management |
+| `PayeeParty` |  | |  |  | `CHAR(10)` | Payee |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |

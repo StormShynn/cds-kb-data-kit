@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ExternalStorageProcessStep` | `CHAR(4)` | External Storage Process Step |
-| `ExternalStorageProcessStepName` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ExternalStorageProcessStep` |  | |  |  | `CHAR(4)` | External Storage Process Step |
+| `ExternalStorageProcessStepName` |  | |  |  | `CHAR(40)` | Description |

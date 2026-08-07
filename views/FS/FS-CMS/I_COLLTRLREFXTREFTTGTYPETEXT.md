@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlREFixtureFittingType` | `CHAR(6)` | Fixtures and Fittings Type ID |
-| `Language` | `LANG(1)` | Language in which description is needed |
-| `ColltrlREFxtreFittingTypeText` | `CHAR(40)` | Name in a specified language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlREFixtureFittingType` |  | |  |  | `CHAR(6)` | Fixtures and Fittings Type ID |
+| `Language` |  | |  |  | `LANG(1)` | Language in which description is needed |
+| `ColltrlREFxtreFittingTypeText` |  | |  |  | `CHAR(40)` | Name in a specified language |

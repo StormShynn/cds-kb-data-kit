@@ -31,20 +31,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RestrictedDutyUUID` | `RAW(16)` | Restricted Duty UUID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `InjuredPersonInfoUUID` | `RAW(16)` | Injured Person Information UUID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `RestrictedDutyCategory` | `CHAR(3)` | Category of Restricted Duty |
-| `RestrictedDutyStartDate` | `DATS(8)` | Start Date of Restricted Duty |
-| `RestrictedDutyEndDate` | `DATS(8)` | Actual End Date of Restricted Duty |
-| `RestrictedDutyEstimatedEndDate` | `DATS(8)` | Estimated End Date of Restricted Duty |
-| `RestrictedDutyInWorkDays` | `INT4(10)` | Actual Workdays of Restricted Duty |
-| `RestrictedDutyInCalendarDays` | `INT4(10)` | Actual Calendar Days of Restricted Duty |
-| `RestrictedDutyIsJobTransfer` | `CHAR(1)` | Job Transfer |
-| `RestrictedDutyIsPermanent` | `CHAR(1)` | Permanent Restricted Duty |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RestrictedDutyUUID` |  | |  |  | `RAW(16)` | Restricted Duty UUID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `InjuredPersonInfoUUID` |  | |  |  | `RAW(16)` | Injured Person Information UUID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `RestrictedDutyCategory` |  | |  |  | `CHAR(3)` | Category of Restricted Duty |
+| `RestrictedDutyStartDate` |  | |  |  | `DATS(8)` | Start Date of Restricted Duty |
+| `RestrictedDutyEndDate` |  | |  |  | `DATS(8)` | Actual End Date of Restricted Duty |
+| `RestrictedDutyEstimatedEndDate` |  | |  |  | `DATS(8)` | Estimated End Date of Restricted Duty |
+| `RestrictedDutyInWorkDays` |  | |  |  | `INT4(10)` | Actual Workdays of Restricted Duty |
+| `RestrictedDutyInCalendarDays` |  | |  |  | `INT4(10)` | Actual Calendar Days of Restricted Duty |
+| `RestrictedDutyIsJobTransfer` |  | |  |  | `CHAR(1)` | Job Transfer |
+| `RestrictedDutyIsPermanent` |  | |  |  | `CHAR(1)` | Permanent Restricted Duty |

@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollectionSegment` | `CHAR(10)` | Collection Segment |
-| `CollectionSpecialist` | `CHAR(12)` | Collection Specialist |
-| `CollectionGroup` | `CHAR(10)` | Collection Group |
-| `CollectionPriority` | `NUMC(1)` | Priority of Worklist Item |
-| `CollectionSpecialistName` | `CHAR(80)` | User Description |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `NumberOfWorklistItems` | `INT4(10)` | Number of Worklist Items |
-| `NumberOfCompletedItems` | `INT4(10)` | Number of Completed Items |
-| `NumberOfCustomerReachedItems` | `INT4(10)` | Number of Customer Reached |
-| `PromisedAmount` | `CURR(23)` | Promised Amount |
-| `CollectableAmount` | `CURR(23)` | Collectable Amount |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollectionSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `CollectionSpecialist` |  | |  |  | `CHAR(12)` | Collection Specialist |
+| `CollectionGroup` |  | |  |  | `CHAR(10)` | Collection Group |
+| `CollectionPriority` |  | |  |  | `NUMC(1)` | Priority of Worklist Item |
+| `CollectionSpecialistName` |  | |  |  | `CHAR(80)` | User Description |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `NumberOfWorklistItems` |  | |  |  | `INT4(10)` | Number of Worklist Items |
+| `NumberOfCompletedItems` |  | |  |  | `INT4(10)` | Number of Completed Items |
+| `NumberOfCustomerReachedItems` |  | |  |  | `INT4(10)` | Number of Customer Reached |
+| `PromisedAmount` |  | |  |  | `CURR(23)` | Promised Amount |
+| `CollectableAmount` |  | |  |  | `CURR(23)` | Collectable Amount |

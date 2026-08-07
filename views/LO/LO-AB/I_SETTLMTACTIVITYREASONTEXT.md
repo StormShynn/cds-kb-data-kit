@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtActivityReason` | `CHAR(3)` | Activity Reason |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtActivityReasonDesc` | `CHAR(100)` | Activity Reason Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtActivityReason` |  | |  |  | `CHAR(3)` | Activity Reason |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtActivityReasonDesc` |  | |  |  | `CHAR(100)` | Activity Reason Description |

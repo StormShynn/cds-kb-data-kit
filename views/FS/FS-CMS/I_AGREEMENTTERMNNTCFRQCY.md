@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlAgrmtTermnNoticeFrqcy` | `CHAR(2)` | The Unit for the Termination Notice Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlAgrmtTermnNoticeFrqcy` |  | |  |  | `CHAR(2)` | The Unit for the Termination Notice Period |

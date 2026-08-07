@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankPowerOfAttorneyUUID` | `RAW(16)` | Power of Attorney UUID |
-| `BkPOAActivityAssignmentUUID` | `RAW(16)` | Power of Attorney: Activity UUID |
-| `BkPOAAuthorizationGroup` | `CHAR(10)` | Authorization Group for Powers of Attorney |
-| `BankPowerOfAttorneyActivity` | `CHAR(4)` | Power of Attorney: Activity ID |
-| `BkPowerOfAttorneyActivityName` | `CHAR(50)` | Power of Attorney: Activity Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` |  | |  |  | `RAW(16)` | Power of Attorney UUID |
+| `BkPOAActivityAssignmentUUID` |  | |  |  | `RAW(16)` | Power of Attorney: Activity UUID |
+| `BkPOAAuthorizationGroup` |  | |  |  | `CHAR(10)` | Authorization Group for Powers of Attorney |
+| `BankPowerOfAttorneyActivity` |  | |  |  | `CHAR(4)` | Power of Attorney: Activity ID |
+| `BkPowerOfAttorneyActivityName` |  | |  |  | `CHAR(50)` | Power of Attorney: Activity Description |

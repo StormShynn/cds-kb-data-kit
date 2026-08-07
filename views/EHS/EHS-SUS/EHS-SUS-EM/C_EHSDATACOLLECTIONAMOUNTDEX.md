@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSAmountUUID` | `RAW(16)` | NodeID |
-| `EHSAmountUTCDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `EHSAmountValue` | `FLTP(16)` | Amount Value |
-| `UnitOfMeasure` | `UNIT(3)` | Units of Measurement of Various Types |
-| `EHSAmountHasWarning` | `CHAR(1)` | Warning |
-| `EHSAmountIsFaulty` | `CHAR(1)` | Faulty Value |
-| `DataCollectionUUID` | `RAW(16)` | NodeID |
-| `DataCollectionID` | `CHAR(20)` | Data Collection Definition ID |
-| `DataCollectionTitle` | `CHAR(132)` | Description (Long) |
-| `DataCollectionName` | `CHAR(132)` | Data Collection Definition Name |
-| `DataUsagePeriodicity` | `CHAR(3)` | Data Period of Data Collection Definition |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSSubjectType` | `CHAR(2)` | Subject Type |
-| `EHSSubjectUUID` | `RAW(16)` | Reference to Subject Type BO Root Node ID |
-| `EHSAmountExternalSource` | `CHAR(80)` | External Source |
-| `DataCollectionMigrationSource` | `CHAR(60)` | Migration Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSAmountUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSAmountUTCDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `EHSAmountValue` |  | |  |  | `FLTP(16)` | Amount Value |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Units of Measurement of Various Types |
+| `EHSAmountHasWarning` |  | |  |  | `CHAR(1)` | Warning |
+| `EHSAmountIsFaulty` |  | |  |  | `CHAR(1)` | Faulty Value |
+| `DataCollectionUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `DataCollectionID` |  | |  |  | `CHAR(20)` | Data Collection Definition ID |
+| `DataCollectionTitle` |  | |  |  | `CHAR(132)` | Description (Long) |
+| `DataCollectionName` |  | |  |  | `CHAR(132)` | Data Collection Definition Name |
+| `DataUsagePeriodicity` |  | |  |  | `CHAR(3)` | Data Period of Data Collection Definition |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |
+| `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
+| `EHSAmountExternalSource` |  | |  |  | `CHAR(80)` | External Source |
+| `DataCollectionMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |

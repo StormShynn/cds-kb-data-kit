@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ListedSubstance` | `CHAR(12)` | Listed Substance |
-| `ListedSubstanceCharUUID` | `CHAR(32)` | BCO KEY |
-| `ListedSubstanceUUID` | `RAW(16)` | Listed Substance Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ListedSubstance` |  | |  |  | `CHAR(12)` | Listed Substance |
+| `ListedSubstanceCharUUID` |  | |  |  | `CHAR(32)` | BCO KEY |
+| `ListedSubstanceUUID` |  | |  |  | `RAW(16)` | Listed Substance Key |

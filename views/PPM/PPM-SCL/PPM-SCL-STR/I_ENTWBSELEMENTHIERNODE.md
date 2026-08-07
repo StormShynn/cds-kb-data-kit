@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WBSElementHierarchy` | `CHAR(42)` |  WBS Element Hierarchy |
-| `HierarchyNodeUUID` | `RAW(16)` | Hierarchy Node GUID |
-| `WBSElementInternalID` | `NUMC(8)` | Internal WBS Element ID |
-| `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `ParentObjectUUID` | `RAW(16)` | Parent Entity Guid |
-| `ProjectElementOrdinalNumber` | `INT4(10)` | Sortnumber |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WBSElementHierarchy` |  | |  |  | `CHAR(42)` | WBS Element Hierarchy |
+| `HierarchyNodeUUID` |  | |  |  | `RAW(16)` | Hierarchy Node GUID |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | Internal WBS Element ID |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `ParentObjectUUID` |  | |  |  | `RAW(16)` | Parent Entity Guid |
+| `ProjectElementOrdinalNumber` |  | |  |  | `INT4(10)` | Sortnumber |

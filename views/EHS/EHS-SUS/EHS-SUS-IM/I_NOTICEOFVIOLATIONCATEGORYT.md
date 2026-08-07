@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NoticeOfViolationCategory` | `CHAR(21)` | Violation Category |
-| `Language` | `LANG(1)` | Language Key |
-| `NoticeOfViolationCategoryName` | `CHAR(40)` | Description (Extra Short) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NoticeOfViolationCategory` |  | |  |  | `CHAR(21)` | Violation Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `NoticeOfViolationCategoryName` |  | |  |  | `CHAR(40)` | Description (Extra Short) |

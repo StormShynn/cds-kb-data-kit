@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DerivativeContrSpecification` | `CHAR(20)` | Derivative Contract Specification ID |
-| `DerivativeContractSpecCategory` | `NUMC(3)` | Derivative Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DerivativeContrSpecification` |  | |  |  | `CHAR(20)` | Derivative Contract Specification ID |
+| `DerivativeContractSpecCategory` |  | |  |  | `NUMC(3)` | Derivative Category |

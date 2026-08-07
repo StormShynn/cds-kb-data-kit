@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurPlcyAcqnType` | `NUMC(3)` | Acquisition Type |
-| `InsurPlcyAcqnTypeName` | `CHAR(50)` | Name of Acquisition Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurPlcyAcqnType` |  | |  |  | `NUMC(3)` | Acquisition Type |
+| `InsurPlcyAcqnTypeName` |  | |  |  | `CHAR(50)` | Name of Acquisition Type |

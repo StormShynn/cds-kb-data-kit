@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplRqVers` | `CHAR(40)` | Compliance Requirement Version ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplRqVers` |  | |  |  | `CHAR(40)` | Compliance Requirement Version ID |

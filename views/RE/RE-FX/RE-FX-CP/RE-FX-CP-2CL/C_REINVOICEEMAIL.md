@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `InvoiceNumber` | `CHAR(50)` | Issued Invoice ID |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `RealEstateContract` | `CHAR(13)` | Contract Number |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `InvoiceNumber` |  | |  |  | `CHAR(50)` | Issued Invoice ID |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `RealEstateContract` |  | |  |  | `CHAR(13)` | Contract Number |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |

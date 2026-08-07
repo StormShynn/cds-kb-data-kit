@@ -31,11 +31,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OrgManagementPositionID` | `NUMC(8)` | Object ID |
-| `Language` | `LANG(1)` | Language Key |
-| `StartDate` | `DATS(8)` | Start Date |
-| `EndDate` | `DATS(8)` | End Date |
-| `OrgManagementPositionShortName` | `CHAR(12)` | Object Abbreviation |
-| `OrgManagementPositionName` | `CHAR(40)` | Object Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OrgManagementPositionID` |  | |  |  | `NUMC(8)` | Object ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `StartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `EndDate` |  | |  |  | `DATS(8)` | End Date |
+| `OrgManagementPositionShortName` |  | |  |  | `CHAR(12)` | Object Abbreviation |
+| `OrgManagementPositionName` |  | |  |  | `CHAR(40)` | Object Name |

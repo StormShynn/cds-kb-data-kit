@@ -35,21 +35,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProjectExternalID` | `CHAR(24)` | Project (external ID) |
-| `ProjectInternalID` | `NUMC(8)` | Project (internal) |
-| `ProjectDescription` | `CHAR(40)` | Project Name |
-| `ProjectProfileCode` | `CHAR(7)` | Project Profile |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `ProjectObject` | `CHAR(22)` | Object Number |
-| `PlannedStartDate` | `DATS(8)` | Project planned start date |
-| `PlannedEndDate` | `DATS(8)` | Project planned finish date |
-| `AvailabilityControlProfile` | `CHAR(6)` | Budget Availability Control: Profile |
-| `AvailabilityControlIsActive` | `CHAR(1)` | Availability control indicator(AVC) |
-| `JntIntrstBillgClass` | `CHAR(3)` | JIB/JIBE Class |
-| `JntIntrstBillgSubClass` | `CHAR(5)` | JIB/JIBE Subclass A |
-| `Plant` | `CHAR(4)` | Plant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectExternalID` |  | |  |  | `CHAR(24)` | Project (external ID) |
+| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project (internal) |
+| `ProjectDescription` |  | |  |  | `CHAR(40)` | Project Name |
+| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ProjectObject` |  | |  |  | `CHAR(22)` | Object Number |
+| `PlannedStartDate` |  | |  |  | `DATS(8)` | Project planned start date |
+| `PlannedEndDate` |  | |  |  | `DATS(8)` | Project planned finish date |
+| `AvailabilityControlProfile` |  | |  |  | `CHAR(6)` | Budget Availability Control: Profile |
+| `AvailabilityControlIsActive` |  | |  |  | `CHAR(1)` | Availability control indicator(AVC) |
+| `JntIntrstBillgClass` |  | |  |  | `CHAR(3)` | JIB/JIBE Class |
+| `JntIntrstBillgSubClass` |  | |  |  | `CHAR(5)` | JIB/JIBE Subclass A |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |

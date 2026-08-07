@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralObjectType` | `CHAR(3)` | CMS Object Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralObjectType` |  | |  |  | `CHAR(3)` | CMS Object Type |

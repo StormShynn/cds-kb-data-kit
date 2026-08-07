@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TransportationOrderExecSts` | `CHAR(2)` | Execution Status |
-| `Language` | `LANG(1)` | Language Key |
-| `TransportationOrderExecStsDesc` | `CHAR(60)` | Transportation Order Execution Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationOrderExecSts` |  | |  |  | `CHAR(2)` | Execution Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TransportationOrderExecStsDesc` |  | |  |  | `CHAR(60)` | Transportation Order Execution Status Description |

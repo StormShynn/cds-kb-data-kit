@@ -36,23 +36,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Customer` | `CHAR(10)` | Customer Number |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `InvcSmmryRole` | `CHAR(1)` | Invoice Summary Role |
-| `InvcSmmryRecipient` | `CHAR(10)` | Invoice Summary Recipient |
-| `InvcSmmryPayer` | `CHAR(10)` | Invoice Summary Payer |
-| `InvcSmmryPyrInvcNumberRange` | `CHAR(2)` | Number range number for Payer Invoice |
-| `InvcSmmryMnthlyInvcNmbrRange` | `CHAR(2)` | Number range number for Monthly Invoice |
-| `InvcSmmryHasTaxCalcdInHeader` | `CHAR(1)` | Calculate Tax at MI Header Level |
-| `InvcSmmryHldayDueDateRcalc` | `CHAR(1)` | Consider JP Holidays In Due Date Calculation |
-| `InvcSmmryBkChargeIsPaidByPayee` | `CHAR(1)` | Bank Charges Paid By Payee |
-| `InvcSmmryBankChargePatternID` | `CHAR(2)` | Bank Charge Pattern ID |
-| `InvcSmmryBankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `InvcSmmryBank` | `CHAR(15)` | Bank Keys |
-| `InvcSmmryVirtualAcctNo` | `CHAR(10)` | Virtual Account Number |
-| `InvcSmmryPaytTermProposalRule` | `CHAR(1)` | Proposal of Payment Term |
-| `VirtualAcctNmbrIsAutomlyAssgd` | `CHAR(1)` | Relevant for Special Cases |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `InvcSmmryRole` |  | |  |  | `CHAR(1)` | Invoice Summary Role |
+| `InvcSmmryRecipient` |  | |  |  | `CHAR(10)` | Invoice Summary Recipient |
+| `InvcSmmryPayer` |  | |  |  | `CHAR(10)` | Invoice Summary Payer |
+| `InvcSmmryPyrInvcNumberRange` |  | |  |  | `CHAR(2)` | Number range number for Payer Invoice |
+| `InvcSmmryMnthlyInvcNmbrRange` |  | |  |  | `CHAR(2)` | Number range number for Monthly Invoice |
+| `InvcSmmryHasTaxCalcdInHeader` |  | |  |  | `CHAR(1)` | Calculate Tax at MI Header Level |
+| `InvcSmmryHldayDueDateRcalc` |  | |  |  | `CHAR(1)` | Consider JP Holidays In Due Date Calculation |
+| `InvcSmmryBkChargeIsPaidByPayee` |  | |  |  | `CHAR(1)` | Bank Charges Paid By Payee |
+| `InvcSmmryBankChargePatternID` |  | |  |  | `CHAR(2)` | Bank Charge Pattern ID |
+| `InvcSmmryBankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `InvcSmmryBank` |  | |  |  | `CHAR(15)` | Bank Keys |
+| `InvcSmmryVirtualAcctNo` |  | |  |  | `CHAR(10)` | Virtual Account Number |
+| `InvcSmmryPaytTermProposalRule` |  | |  |  | `CHAR(1)` | Proposal of Payment Term |
+| `VirtualAcctNmbrIsAutomlyAssgd` |  | |  |  | `CHAR(1)` | Relevant for Special Cases |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |

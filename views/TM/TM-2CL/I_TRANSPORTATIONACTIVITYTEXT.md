@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TransportationActivity` | `CHAR(2)` | Transportation Activity |
-| `Language` | `LANG(1)` | Language Key |
-| `TransportationActivityDesc` | `CHAR(40)` | Transportation Activity Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransportationActivity` |  | |  |  | `CHAR(2)` | Transportation Activity |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TransportationActivityDesc` |  | |  |  | `CHAR(40)` | Transportation Activity Description |

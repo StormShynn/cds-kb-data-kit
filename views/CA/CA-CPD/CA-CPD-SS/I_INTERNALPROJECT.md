@@ -34,24 +34,24 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InternalProject` | `CHAR(40)` | Engagement Project ID |
-| `InternalProjectUUID` | `RAW(16)` | Engagement Project UUID |
-| `InternalProjectName` | `CHAR(40)` | Customer Project Name |
-| `EngagementProjectType` | `CHAR(4)` | Engagement Project Type |
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `EngagementProjectStage` | `CHAR(4)` | Commercial Project: Stage |
-| `EngagementProjectCategory` | `CHAR(1)` | Project Type |
-| `ProjectStartDate` | `DATS(8)` | Commercial Project: Start Date |
-| `ProjectEndDate` | `DATS(8)` | Commercial Project: End Date |
-| `ProjectVisibility` | `CHAR(1)` | Confidential Indicator for Commercial Project |
-| `ProjectManager` | `NUMC(8)` |  |
-| `ProjectManagerWorkAgreement` | `NUMC(8)` |  |
-| `LastChangeDateTime` | `DEC(15)` | Commercial Project Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Changed By |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `CostCenter` | `CHAR(20)` | Organization Unit Key |
-| `ControllingArea` | `CHAR(4)` | Controlling area for the project |
-| `ProjectProfileCode` | `CHAR(7)` | Project Profile |
-| `CompanyCode` | `CHAR(4)` | Company code for the project |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InternalProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `InternalProjectUUID` |  | |  |  | `RAW(16)` | Engagement Project UUID |
+| `InternalProjectName` |  | |  |  | `CHAR(40)` | Customer Project Name |
+| `EngagementProjectType` |  | |  |  | `CHAR(4)` | Engagement Project Type |
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |
+| `EngagementProjectCategory` |  | |  |  | `CHAR(1)` | Project Type |
+| `ProjectStartDate` |  | |  |  | `DATS(8)` | Commercial Project: Start Date |
+| `ProjectEndDate` |  | |  |  | `DATS(8)` | Commercial Project: End Date |
+| `ProjectVisibility` |  | |  |  | `CHAR(1)` | Confidential Indicator for Commercial Project |
+| `ProjectManager` |  | |  |  | `NUMC(8)` |  |
+| `ProjectManagerWorkAgreement` |  | |  |  | `NUMC(8)` |  |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Commercial Project Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(20)` | Organization Unit Key |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling area for the project |
+| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company code for the project |

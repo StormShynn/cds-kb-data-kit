@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSRiskAssessmentUUID` | `RAW(16)` | Risk Assessment - Root UUID |
-| `EHSTaskHostObjectInstance` | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
-| `EHSRiskAssessmentType` | `CHAR(21)` | Risk Assessment Type |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `EHSLocationUUIDHex` | `CHAR(32)` | EHS Location - Root UUID Hex |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSRiskAssessmentUUID` |  | |  |  | `RAW(16)` | Risk Assessment - Root UUID |
+| `EHSTaskHostObjectInstance` |  | |  |  | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
+| `EHSRiskAssessmentType` |  | |  |  | `CHAR(21)` | Risk Assessment Type |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `EHSLocationUUIDHex` |  | |  |  | `CHAR(32)` | EHS Location - Root UUID Hex |

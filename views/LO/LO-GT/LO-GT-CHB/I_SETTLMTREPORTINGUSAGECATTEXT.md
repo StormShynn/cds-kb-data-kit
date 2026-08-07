@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtReportingUsageCat` | `CHAR(1)` | Reporting Usage of Settlement Document Type |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtReportingUsageCatName` | `CHAR(60)` | Text of Reporting Usage |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtReportingUsageCat` |  | |  |  | `CHAR(1)` | Reporting Usage of Settlement Document Type |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtReportingUsageCatName` |  | |  |  | `CHAR(60)` | Text of Reporting Usage |

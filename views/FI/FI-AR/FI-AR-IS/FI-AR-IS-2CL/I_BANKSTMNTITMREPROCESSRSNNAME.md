@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankStmntItemReprocessReason` | `CHAR(2)` | Reprocessing Reason Code |
-| `Language` | `LANG(1)` | Language Key |
-| `BankStmntItemReprocessRsnName` | `CHAR(60)` | Reprocessing Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankStmntItemReprocessReason` |  | |  |  | `CHAR(2)` | Reprocessing Reason Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BankStmntItemReprocessRsnName` |  | |  |  | `CHAR(60)` | Reprocessing Reason |

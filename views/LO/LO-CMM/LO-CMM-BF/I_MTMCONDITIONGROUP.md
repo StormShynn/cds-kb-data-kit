@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MTMConditionGroup` | `CHAR(1)` | MtM Condition Group |
-| `IsContractValue` | `CHAR(1)` | Assign to Contractual Value Column |
-| `IsMarketValue` | `CHAR(1)` | Assign to Market Value Column |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MTMConditionGroup` |  | |  |  | `CHAR(1)` | MtM Condition Group |
+| `IsContractValue` |  | |  |  | `CHAR(1)` | Assign to Contractual Value Column |
+| `IsMarketValue` |  | |  |  | `CHAR(1)` | Assign to Market Value Column |

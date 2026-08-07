@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CommodityType` | `CHAR(3)` | Texas Commodity Type |
-| `Language` | `LANG(1)` | Language Key |
-| `CommodityCodeName` | `CHAR(60)` | Commodity Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CommodityType` |  | |  |  | `CHAR(3)` | Texas Commodity Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CommodityCodeName` |  | |  |  | `CHAR(60)` | Commodity Type Name |

@@ -33,22 +33,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationRevisionUUID` | `RAW(16)` | EHS Location - Revision UUID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit ID |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `LocationMigrationSource` | `CHAR(60)` | Migration Source |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationRevisionUUID` |  | |  |  | `RAW(16)` | EHS Location - Revision UUID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit ID |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `LocationMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |

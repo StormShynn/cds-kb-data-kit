@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinTransGenActivityCategory` | `NUMC(3)` | Activity Category (General) |
-| `Language` | `LANG(1)` | Language Key |
-| `FinTransGenActyCatName` | `CHAR(60)` | Name for Financial Transaction General Activity Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinTransGenActivityCategory` |  | |  |  | `NUMC(3)` | Activity Category (General) |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FinTransGenActyCatName` |  | |  |  | `CHAR(60)` | Name for Financial Transaction General Activity Category |

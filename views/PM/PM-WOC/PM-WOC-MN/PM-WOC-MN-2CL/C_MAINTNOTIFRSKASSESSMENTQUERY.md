@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenanceNotification` | `CHAR(12)` | Notification Number |
-| `MaintEventCnsqncCategoryCode` | `NUMC(2)` | Consequence Category ID |
-| `MaintEventConsequenceCode` | `NUMC(2)` | Consequence ID |
-| `MaintEvtPrioritizationProfile` | `CHAR(10)` | Prioritization Profile ID |
-| `MaintEventLikelihoodCode` | `NUMC(2)` | Likelihood ID |
-| `MaintEventConsequenceGroup` | `CHAR(10)` | Consequence Category Group ID |
-| `MaintEventConsequenceIsLeading` | `CHAR(1)` | Leading Consequence Indicator |
-| `TechnicalObject` | `CHAR(40)` | Technical Object |
-| `FunctionalLocation` | `CHAR(30)` | 30 Characters |
-| `Equipment` | `CHAR(18)` | Equipment Number |
-| `MaintenancePlant` | `CHAR(4)` | Maintenance Plant |
-| `NotificationType` | `CHAR(2)` | Notification Type |
-| `MaintenanceOrder` | `CHAR(12)` | Order Number |
-| `MaintPriority` | `CHAR(1)` | Priority |
-| `NumberOfMaintNotifRisk` | `INT4(10)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceNotification` |  | |  |  | `CHAR(12)` | Notification Number |
+| `MaintEventCnsqncCategoryCode` |  | |  |  | `NUMC(2)` | Consequence Category ID |
+| `MaintEventConsequenceCode` |  | |  |  | `NUMC(2)` | Consequence ID |
+| `MaintEvtPrioritizationProfile` |  | |  |  | `CHAR(10)` | Prioritization Profile ID |
+| `MaintEventLikelihoodCode` |  | |  |  | `NUMC(2)` | Likelihood ID |
+| `MaintEventConsequenceGroup` |  | |  |  | `CHAR(10)` | Consequence Category Group ID |
+| `MaintEventConsequenceIsLeading` |  | |  |  | `CHAR(1)` | Leading Consequence Indicator |
+| `TechnicalObject` |  | |  |  | `CHAR(40)` | Technical Object |
+| `FunctionalLocation` |  | |  |  | `CHAR(30)` | 30 Characters |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `MaintenancePlant` |  | |  |  | `CHAR(4)` | Maintenance Plant |
+| `NotificationType` |  | |  |  | `CHAR(2)` | Notification Type |
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintPriority` |  | |  |  | `CHAR(1)` | Priority |
+| `NumberOfMaintNotifRisk` |  | |  |  | `INT4(10)` |  |

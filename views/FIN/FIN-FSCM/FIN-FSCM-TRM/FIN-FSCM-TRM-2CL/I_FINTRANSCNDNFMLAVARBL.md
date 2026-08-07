@@ -33,16 +33,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `FinancialInstrumentActivity` | `NUMC(5)` | Transaction Activity |
-| `FinancialTransactionDirection` | `NUMC(1)` | Direction of Transaction |
-| `FinConditionItem` | `NUMC(4)` | Condition |
-| `ConditionItemValidityStartDate` | `DATS(8)` | Condition Item Effective From |
-| `FinConditionFormulaReference` | `CHAR(4)` | Formula Reference |
-| `FinCndnFormulaVariable` | `CHAR(4)` | Variable Name |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Financial Instrument Product Category |
-| `ConditionPercentageRate` | `DEC(10)` | Percentage rate for condition items |
-| `InterestReference` | `CHAR(10)` | Reference Interest Rate |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `FinancialInstrumentActivity` |  | |  |  | `NUMC(5)` | Transaction Activity |
+| `FinancialTransactionDirection` |  | |  |  | `NUMC(1)` | Direction of Transaction |
+| `FinConditionItem` |  | |  |  | `NUMC(4)` | Condition |
+| `ConditionItemValidityStartDate` |  | |  |  | `DATS(8)` | Condition Item Effective From |
+| `FinConditionFormulaReference` |  | |  |  | `CHAR(4)` | Formula Reference |
+| `FinCndnFormulaVariable` |  | |  |  | `CHAR(4)` | Variable Name |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Financial Instrument Product Category |
+| `ConditionPercentageRate` |  | |  |  | `DEC(10)` | Percentage rate for condition items |
+| `InterestReference` |  | |  |  | `CHAR(10)` | Reference Interest Rate |

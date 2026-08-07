@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRReportStatus` | `CHAR(1)` | ONRR-2014 - Status |
-| `Language` | `LANG(1)` | Language Key |
-| `ONRRReportStatusName` | `CHAR(60)` | ONRR Report Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRReportStatus` |  | |  |  | `CHAR(1)` | ONRR-2014 - Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ONRRReportStatusName` |  | |  |  | `CHAR(60)` | ONRR Report Status Name |

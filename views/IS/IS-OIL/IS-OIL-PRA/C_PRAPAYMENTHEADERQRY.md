@@ -31,24 +31,24 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProcessRun` | `NUMC(10)` | Proc 2.0 - Run ID |
-| `PaymentReference` | `CHAR(13)` | Check Number |
-| `PRAOwner` | `CHAR(10)` | PRA owner |
-| `PaymentDate` | `DATS(8)` | Check Date |
-| `PaymentType` | `CHAR(1)` | Payment Type |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CheckStatus` | `CHAR(2)` | Payment Processing - Check Status |
-| `PaymentStatusDate` | `DATS(8)` | Status Date |
-| `PaymentHeaderRejectionRsn` | `CHAR(3)` | Payment Processing - High Level Reject Code |
-| `CheckIsOutOfTolerance` | `CHAR(1)` | Payment Processing - Out-Of-Tolerance Flag |
-| `CheckIsSentToBank` | `CHAR(1)` | Flag Indicating Sent to Bank |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On Timestamp |
-| `CompanyCodeCurrency` | `CUKY(5)` | Currency Key |
-| `OwnerNetAmount` | `CURR(13)` | Owner Net Value |
-| `VarianceAmount` | `CURR(13)` | Payment Processing - Variance Amount |
-| `VarianceRatio` | `DEC(8)` | Payment Processing - Variance Percent |
-| `MinimumPaymentAmt` | `CURR(13)` | Payment Processing - Owner Minimum Pay |
-| `NumberOfDocuments` | `INT4(10)` | Number of Documents |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessRun` |  | |  |  | `NUMC(10)` | Proc 2.0 - Run ID |
+| `PaymentReference` |  | |  |  | `CHAR(13)` | Check Number |
+| `PRAOwner` |  | |  |  | `CHAR(10)` | PRA owner |
+| `PaymentDate` |  | |  |  | `DATS(8)` | Check Date |
+| `PaymentType` |  | |  |  | `CHAR(1)` | Payment Type |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CheckStatus` |  | |  |  | `CHAR(2)` | Payment Processing - Check Status |
+| `PaymentStatusDate` |  | |  |  | `DATS(8)` | Status Date |
+| `PaymentHeaderRejectionRsn` |  | |  |  | `CHAR(3)` | Payment Processing - High Level Reject Code |
+| `CheckIsOutOfTolerance` |  | |  |  | `CHAR(1)` | Payment Processing - Out-Of-Tolerance Flag |
+| `CheckIsSentToBank` |  | |  |  | `CHAR(1)` | Flag Indicating Sent to Bank |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `OwnerNetAmount` |  | |  |  | `CURR(13)` | Owner Net Value |
+| `VarianceAmount` |  | |  |  | `CURR(13)` | Payment Processing - Variance Amount |
+| `VarianceRatio` |  | |  |  | `DEC(8)` | Payment Processing - Variance Percent |
+| `MinimumPaymentAmt` |  | |  |  | `CURR(13)` | Payment Processing - Owner Minimum Pay |
+| `NumberOfDocuments` |  | |  |  | `INT4(10)` | Number of Documents |

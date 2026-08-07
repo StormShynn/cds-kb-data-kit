@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CharacteristicInternalID` | `NUMC(10)` | Internal Characteristic Number |
-| `RetailCharacteristicValue` | `CHAR(18)` | Characteristic Value |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharacteristicInternalID` |  | |  |  | `NUMC(10)` | Internal Characteristic Number |
+| `RetailCharacteristicValue` |  | |  |  | `CHAR(18)` | Characteristic Value |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |

@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustSettlmt` | `CHAR(10)` | Customer Settlement |
-| `CustSettlmtItem` | `NUMC(6)` | Document Item |
-| `TextObjectType` | `CHAR(4)` | Text Object type |
-| `Language` | `LANG(1)` | Language Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustSettlmt` |  | |  |  | `CHAR(10)` | Customer Settlement |
+| `CustSettlmtItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `TextObjectType` |  | |  |  | `CHAR(4)` | Text Object type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |

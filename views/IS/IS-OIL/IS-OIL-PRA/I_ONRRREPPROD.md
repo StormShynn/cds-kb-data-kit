@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRReportedProduct` | `CHAR(2)` | ONRR-2014 - Product Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRReportedProduct` |  | |  |  | `CHAR(2)` | ONRR-2014 - Product Code |

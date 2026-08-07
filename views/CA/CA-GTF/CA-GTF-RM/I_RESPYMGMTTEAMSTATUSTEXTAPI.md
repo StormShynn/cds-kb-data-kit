@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtTeamStatus` | `CHAR(2)` | Team Status |
-| `Language` | `LANG(1)` | Language Key |
-| `RespyMgmtTeamStatusText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtTeamStatus` |  | |  |  | `CHAR(2)` | Team Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RespyMgmtTeamStatusText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

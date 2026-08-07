@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSPlannedTaskUUID` | `RAW(16)` | Planned Task UUID |
-| `EHSPlannedTaskID` | `CHAR(20)` | Planned Task ID |
-| `EHSTaskDueDate` | `DATS(8)` | Due Date of a Planned Task |
-| `EHSTaskStartDate` | `DATS(8)` | Start Date of a Planned Task |
-| `EHSTaskInstceCompletionDate` | `DATS(8)` | Completion Date of a Planned Task |
-| `EHSTaskDefinitionUUID` | `RAW(16)` | Task Identifier |
-| `EHSTaskTitle` | `CHAR(60)` | Task Title |
-| `EHSTaskPriority` | `NUMC(1)` | Task Definition - Priority |
-| `EHSTaskDefinitionStatus` | `CHAR(2)` | Task Status |
-| `EHSTaskAssignedUser` | `CHAR(10)` | Task Assignee (Business Partner) |
-| `EHSTaskApprovingUser` | `CHAR(10)` | Task Approver (Business Partner) |
-| `EHSTaskDefinitionType` | `CHAR(32)` | Task Type |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSTaskHostSemanticObject` | `CHAR(30)` | Semantic Object |
-| `EHSTaskIsRecurrent` | `CHAR(1)` | Recurrence |
-| `EHSTaskHasWorkflow` | `CHAR(1)` | Workflow Exists |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSPlannedTaskUUID` |  | |  |  | `RAW(16)` | Planned Task UUID |
+| `EHSPlannedTaskID` |  | |  |  | `CHAR(20)` | Planned Task ID |
+| `EHSTaskDueDate` |  | |  |  | `DATS(8)` | Due Date of a Planned Task |
+| `EHSTaskStartDate` |  | |  |  | `DATS(8)` | Start Date of a Planned Task |
+| `EHSTaskInstceCompletionDate` |  | |  |  | `DATS(8)` | Completion Date of a Planned Task |
+| `EHSTaskDefinitionUUID` |  | |  |  | `RAW(16)` | Task Identifier |
+| `EHSTaskTitle` |  | |  |  | `CHAR(60)` | Task Title |
+| `EHSTaskPriority` |  | |  |  | `NUMC(1)` | Task Definition - Priority |
+| `EHSTaskDefinitionStatus` |  | |  |  | `CHAR(2)` | Task Status |
+| `EHSTaskAssignedUser` |  | |  |  | `CHAR(10)` | Task Assignee (Business Partner) |
+| `EHSTaskApprovingUser` |  | |  |  | `CHAR(10)` | Task Approver (Business Partner) |
+| `EHSTaskDefinitionType` |  | |  |  | `CHAR(32)` | Task Type |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSTaskHostSemanticObject` |  | |  |  | `CHAR(30)` | Semantic Object |
+| `EHSTaskIsRecurrent` |  | |  |  | `CHAR(1)` | Recurrence |
+| `EHSTaskHasWorkflow` |  | |  |  | `CHAR(1)` | Workflow Exists |

@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceChecklistInstance` | `CHAR(10)` | Instance ID |
-| `ServiceChecklistTemplate` | `CHAR(10)` | Template ID |
-| `SrvcChklstLanguage` | `LANG(1)` | Language |
-| `SrvcChklstInstceStatus` | `CHAR(1)` | Instance Status |
-| `SrvcChklstInstceDeltnReason` | `CHAR(2)` | Checklist Instance Deletion Reason |
-| `SrvcChklstCreationDateTime` | `DEC(21)` | Created At |
-| `SrvcChklstCreatedByUser` | `CHAR(12)` | Created By |
-| `SrvcChklstChangedDateTime` | `DEC(21)` | Last Changed At |
-| `SrvcChklstChangedByUser` | `CHAR(12)` | Last Changed By |
-| `FSMChecklistRequest` | `CHAR(40)` | Request ID |
-| `SrvcChklstInstceLinkedObject` | `CHAR(40)` | Linked Object ID |
-| `SrvcChklstInstceLinkdObjType` | `CHAR(20)` | Linked Object's Obj. Type |
-| `FSMChecklistInstanceUUID` | `RAW(16)` | FSM Instance ID |
-| `SrvcChklstInstceSourceSystem` | `CHAR(2)` | Source System |
-| `FSMChklstInstanceResponsible` | `CHAR(20)` | FSM Checklist Instance Responsible |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceChecklistInstance` |  | |  |  | `CHAR(10)` | Instance ID |
+| `ServiceChecklistTemplate` |  | |  |  | `CHAR(10)` | Template ID |
+| `SrvcChklstLanguage` |  | |  |  | `LANG(1)` | Language |
+| `SrvcChklstInstceStatus` |  | |  |  | `CHAR(1)` | Instance Status |
+| `SrvcChklstInstceDeltnReason` |  | |  |  | `CHAR(2)` | Checklist Instance Deletion Reason |
+| `SrvcChklstCreationDateTime` |  | |  |  | `DEC(21)` | Created At |
+| `SrvcChklstCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `SrvcChklstChangedDateTime` |  | |  |  | `DEC(21)` | Last Changed At |
+| `SrvcChklstChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `FSMChecklistRequest` |  | |  |  | `CHAR(40)` | Request ID |
+| `SrvcChklstInstceLinkedObject` |  | |  |  | `CHAR(40)` | Linked Object ID |
+| `SrvcChklstInstceLinkdObjType` |  | |  |  | `CHAR(20)` | Linked Object's Obj. Type |
+| `FSMChecklistInstanceUUID` |  | |  |  | `RAW(16)` | FSM Instance ID |
+| `SrvcChklstInstceSourceSystem` |  | |  |  | `CHAR(2)` | Source System |
+| `FSMChklstInstanceResponsible` |  | |  |  | `CHAR(20)` | FSM Checklist Instance Responsible |

@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseUUID` | `CHAR(32)` | Technical Case Key (Case GUID) |
-| `CrdtLmtChgReqApprvlHierUUID` | `RAW(16)` | UUID serving as key (parent key, root key) |
-| `CrdtLmtChgReqApprvlHierLevel` | `INT2(5)` | Approval Level |
-| `CreditLimitChangeReqApprover` | `CHAR(12)` | Approver |
-| `CreditLimitChgReqApprvrGroup` | `CHAR(40)` | Approver Group |
-| `CreditLimitChgReqApprvlStatus` | `CHAR(1)` | Status |
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `CaseID` | `CHAR(12)` | Case ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseUUID` |  | |  |  | `CHAR(32)` | Technical Case Key (Case GUID) |
+| `CrdtLmtChgReqApprvlHierUUID` |  | |  |  | `RAW(16)` | UUID serving as key (parent key, root key) |
+| `CrdtLmtChgReqApprvlHierLevel` |  | |  |  | `INT2(5)` | Approval Level |
+| `CreditLimitChangeReqApprover` |  | |  |  | `CHAR(12)` | Approver |
+| `CreditLimitChgReqApprvrGroup` |  | |  |  | `CHAR(40)` | Approver Group |
+| `CreditLimitChgReqApprvlStatus` |  | |  |  | `CHAR(1)` | Status |
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `CaseID` |  | |  |  | `CHAR(12)` | Case ID |

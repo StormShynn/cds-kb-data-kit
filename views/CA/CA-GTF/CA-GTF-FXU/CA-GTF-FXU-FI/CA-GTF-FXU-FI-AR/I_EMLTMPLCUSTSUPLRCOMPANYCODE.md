@@ -34,29 +34,29 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Account` | `CHAR(10)` | Customer Number |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialAccountType` | `CHAR(1)` |  |
-| `Name` | `CHAR(80)` | Name of Customer |
-| `FullName` | `CHAR(220)` | Customer Full Name |
-| `BusinessPartnerName1` | `CHAR(40)` | Name 1 |
-| `BusinessPartnerName2` | `CHAR(40)` | Name 2 |
-| `BusinessPartnerName3` | `CHAR(40)` | Name 3 |
-| `BusinessPartnerName4` | `CHAR(40)` | Name 4 |
-| `OrganizationBPName1` | `CHAR(35)` | Name |
-| `OrganizationBPName2` | `CHAR(35)` | Name 2 |
-| `StreetName` | `CHAR(35)` | Street and House Number |
-| `CityName` | `CHAR(35)` | City |
-| `PostalCode` | `CHAR(10)` | Postal Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `ReferenceAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CoCodeSpcfcAuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `PersonFullName` | `CHAR(80)` | Full Name of Person |
-| `EmailAddress` | `CHAR(241)` | Email Address |
-| `PhoneNumber` | `CHAR(30)` | Current Default Mobile Phone Number |
-| `AccountingClerkName` | `CHAR(80)` | Full Name of Person |
-| `AccountingClerkEmailAddress` | `CHAR(241)` | Email Address |
-| `AccountingClerkPhoneNumber` | `CHAR(30)` | Current Default Mobile Phone Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Account` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` |  |
+| `Name` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `FullName` |  | |  |  | `CHAR(220)` | Customer Full Name |
+| `BusinessPartnerName1` |  | |  |  | `CHAR(40)` | Name 1 |
+| `BusinessPartnerName2` |  | |  |  | `CHAR(40)` | Name 2 |
+| `BusinessPartnerName3` |  | |  |  | `CHAR(40)` | Name 3 |
+| `BusinessPartnerName4` |  | |  |  | `CHAR(40)` | Name 4 |
+| `OrganizationBPName1` |  | |  |  | `CHAR(35)` | Name |
+| `OrganizationBPName2` |  | |  |  | `CHAR(35)` | Name 2 |
+| `StreetName` |  | |  |  | `CHAR(35)` | Street and House Number |
+| `CityName` |  | |  |  | `CHAR(35)` | City |
+| `PostalCode` |  | |  |  | `CHAR(10)` | Postal Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `ReferenceAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CoCodeSpcfcAuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | Full Name of Person |
+| `EmailAddress` |  | |  |  | `CHAR(241)` | Email Address |
+| `PhoneNumber` |  | |  |  | `CHAR(30)` | Current Default Mobile Phone Number |
+| `AccountingClerkName` |  | |  |  | `CHAR(80)` | Full Name of Person |
+| `AccountingClerkEmailAddress` |  | |  |  | `CHAR(241)` | Email Address |
+| `AccountingClerkPhoneNumber` |  | |  |  | `CHAR(30)` | Current Default Mobile Phone Number |

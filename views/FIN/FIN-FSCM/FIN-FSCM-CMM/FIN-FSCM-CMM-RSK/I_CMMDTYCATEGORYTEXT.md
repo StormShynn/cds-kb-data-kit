@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CommodityCategory` | `CHAR(3)` | Commodity Category |
-| `Language` | `LANG(1)` | Language Key |
-| `CommodityCategoryName` | `CHAR(30)` | Commodity Category Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CommodityCategory` |  | |  |  | `CHAR(3)` | Commodity Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CommodityCategoryName` |  | |  |  | `CHAR(30)` | Commodity Category Text |

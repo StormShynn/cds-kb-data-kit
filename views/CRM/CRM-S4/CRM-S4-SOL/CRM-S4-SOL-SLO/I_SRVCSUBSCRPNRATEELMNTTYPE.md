@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SubscriptionRateElementType` | `CHAR(1)` | Rate Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubscriptionRateElementType` |  | |  |  | `CHAR(1)` | Rate Type |

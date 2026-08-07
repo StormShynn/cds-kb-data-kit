@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtTeamID` | `NUMC(8)` | Object ID |
-| `DCoARAccountantGroup` | `CHAR(40)` | AR Accountant Group |
-| `DCoARAccountantGroupName` | `SSTR(80)` | Name of AR Accountant Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtTeamID` |  | |  |  | `NUMC(8)` | Object ID |
+| `DCoARAccountantGroup` |  | |  |  | `CHAR(40)` | AR Accountant Group |
+| `DCoARAccountantGroupName` |  | |  |  | `SSTR(80)` | Name of AR Accountant Group |

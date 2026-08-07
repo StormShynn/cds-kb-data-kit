@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurApplLifeCycSts` | `NUMC(3)` | Status of Policy |
-| `InsurApplLifeCycStsName` | `CHAR(50)` | Policy Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurApplLifeCycSts` |  | |  |  | `NUMC(3)` | Status of Policy |
+| `InsurApplLifeCycStsName` |  | |  |  | `CHAR(50)` | Policy Status |

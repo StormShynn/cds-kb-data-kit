@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FashionProdInformationField1` | `CHAR(10)` | Fashion Information Field: 1 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FashionProdInformationField1` |  | |  |  | `CHAR(10)` | Fashion Information Field: 1 |

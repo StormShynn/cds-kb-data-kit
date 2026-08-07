@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDocTypeVariant` | `CHAR(1)` | Settlement Document Type Variant |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtDocTypeVariantName` | `CHAR(60)` | Text of Settlement Document Type Variant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocTypeVariant` |  | |  |  | `CHAR(1)` | Settlement Document Type Variant |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtDocTypeVariantName` |  | |  |  | `CHAR(60)` | Text of Settlement Document Type Variant |

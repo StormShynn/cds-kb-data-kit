@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `MaintenanceStrategy` | `CHAR(6)` | Maintenance Strategy |
-| `MaintenancePackage` | `NUMC(2)` | Maintenance Package Number |
-| `MaintenancePackageText` | `CHAR(30)` | Text for maintenance package/cycle (time/performance) |
-| `MaintPackageHierarchyShortText` | `CHAR(2)` | Short text of the maintenance package hierarchy |
-| `MaintenanceCycleShortText` | `CHAR(2)` | Short text for the maintenance cycle (time/performance) |
-| `StartOffsetShortText` | `CHAR(2)` | Short text for the start offset (time/performance) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MaintenanceStrategy` |  | |  |  | `CHAR(6)` | Maintenance Strategy |
+| `MaintenancePackage` |  | |  |  | `NUMC(2)` | Maintenance Package Number |
+| `MaintenancePackageText` |  | |  |  | `CHAR(30)` | Text for maintenance package/cycle (time/performance) |
+| `MaintPackageHierarchyShortText` |  | |  |  | `CHAR(2)` | Short text of the maintenance package hierarchy |
+| `MaintenanceCycleShortText` |  | |  |  | `CHAR(2)` | Short text for the maintenance cycle (time/performance) |
+| `StartOffsetShortText` |  | |  |  | `CHAR(2)` | Short text for the start offset (time/performance) |

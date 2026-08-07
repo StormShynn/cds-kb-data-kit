@@ -32,18 +32,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PayFnPaymentUUID` | `RAW(16)` | Payment UUID |
-| `PayFnBusinessStatus` | `CHAR(4)` | Payment Business Status |
-| `PayFnBusinessStatusText` | `CHAR(140)` | Payment Business Status Description |
-| `PayFnOriginDocument` | `CHAR(35)` | Senders/Origin Document Identifier |
-| `PayFnOriginDocumentTypeText` | `CHAR(140)` | ISO Code Name |
-| `PayFnTransactionAmount` | `DEC(22)` | Amount |
-| `PayFnTransactionCurrency` | `CUKY(5)` | Currency |
-| `CategoryPurposeISOCode` | `CHAR(4)` | External Category Purpose Code |
-| `PurposeISOCode` | `CHAR(4)` | External Purpose Code |
-| `PayFnStatusReasonISOCode` | `CHAR(35)` | Status Reason Standard ISO Code |
-| `PaymentStatusReasonText` | `CHAR(1)` |  |
-| `PayFnInitiatorCompanyCode` | `CHAR(4)` | Payer Company Code |
-| `PayFnApprovalDuration` | `DEC(15)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PayFnPaymentUUID` |  | |  |  | `RAW(16)` | Payment UUID |
+| `PayFnBusinessStatus` |  | |  |  | `CHAR(4)` | Payment Business Status |
+| `PayFnBusinessStatusText` |  | |  |  | `CHAR(140)` | Payment Business Status Description |
+| `PayFnOriginDocument` |  | |  |  | `CHAR(35)` | Senders/Origin Document Identifier |
+| `PayFnOriginDocumentTypeText` |  | |  |  | `CHAR(140)` | ISO Code Name |
+| `PayFnTransactionAmount` |  | |  |  | `DEC(22)` | Amount |
+| `PayFnTransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `CategoryPurposeISOCode` |  | |  |  | `CHAR(4)` | External Category Purpose Code |
+| `PurposeISOCode` |  | |  |  | `CHAR(4)` | External Purpose Code |
+| `PayFnStatusReasonISOCode` |  | |  |  | `CHAR(35)` | Status Reason Standard ISO Code |
+| `PaymentStatusReasonText` |  | |  |  | `CHAR(1)` |  |
+| `PayFnInitiatorCompanyCode` |  | |  |  | `CHAR(4)` | Payer Company Code |
+| `PayFnApprovalDuration` |  | |  |  | `DEC(15)` |  |

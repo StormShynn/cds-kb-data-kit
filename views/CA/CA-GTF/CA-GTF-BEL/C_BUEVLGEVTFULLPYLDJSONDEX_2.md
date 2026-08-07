@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessEventUUID` | `CHAR(32)` | Event GUID |
-| `SAPObjectType` | `CHAR(30)` | RAP SOT: SAP Object Type |
-| `BusEvtLogLastChangedDateTime` | `DEC(15)` | Timestamp of Last Change |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessEventUUID` |  | |  |  | `CHAR(32)` | Event GUID |
+| `SAPObjectType` |  | |  |  | `CHAR(30)` | RAP SOT: SAP Object Type |
+| `BusEvtLogLastChangedDateTime` |  | |  |  | `DEC(15)` | Timestamp of Last Change |

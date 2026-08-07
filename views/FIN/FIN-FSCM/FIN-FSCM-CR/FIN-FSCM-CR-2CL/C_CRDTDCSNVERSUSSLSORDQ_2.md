@@ -35,17 +35,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesOrder` | `CHAR(10)` | Sales Order |
-| `SalesOrderType` | `CHAR(4)` | Sales Order Type |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `Country` | `CHAR(3)` | Country/Region |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `NumberOfSalesOrders` | `INT4(10)` | Number of Sales Orders |
-| `NumberOfCreditDecisionDocs` | `INT4(10)` | Number of Credit Blocked Sales Orders |
-| `CreditBlockedSalesOrdersPct` | `DECF(34)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderType` |  | |  |  | `CHAR(4)` | Sales Order Type |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `NumberOfSalesOrders` |  | |  |  | `INT4(10)` | Number of Sales Orders |
+| `NumberOfCreditDecisionDocs` |  | |  |  | `INT4(10)` | Number of Credit Blocked Sales Orders |
+| `CreditBlockedSalesOrdersPct` |  | |  |  | `DECF(34)` |  |

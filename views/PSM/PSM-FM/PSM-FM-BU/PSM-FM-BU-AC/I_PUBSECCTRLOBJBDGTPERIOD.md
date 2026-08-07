@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyIDForBudgetPeriod` | `CHAR(42)` | Hierarchy ID for Budget Period |
-| `CtrlObjForBudgetPeriod` | `CHAR(50)` | Control Object for a Budget Period |
-| `CtrlObjNameForBudgetPeriod` | `CHAR(50)` | Name of a Control Object for a Budget Period |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyIDForBudgetPeriod` |  | |  |  | `CHAR(42)` | Hierarchy ID for Budget Period |
+| `CtrlObjForBudgetPeriod` |  | |  |  | `CHAR(50)` | Control Object for a Budget Period |
+| `CtrlObjNameForBudgetPeriod` |  | |  |  | `CHAR(50)` | Name of a Control Object for a Budget Period |

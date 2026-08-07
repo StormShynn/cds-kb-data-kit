@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PersonWorkAgreement` | `NUMC(8)` | Personnel Number |
-| `KeyDate` | `DATS(8)` |  |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `Job` | `NUMC(8)` | Job |
-| `PersonWorkAgrmtAuthznGrpg` | `CHAR(14)` | Organizational Key |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit |
-| `WorkAgreementStatus` | `CHAR(1)` | Model S: Employment Status |
-| `WorkingTimePercentage` | `DEC(5)` | Employment percentage |
-| `WeeklyWorkdays` | `DEC(4)` | Weekly Workdays |
-| `WeeklyWorkingHours` | `DEC(5)` | Hours per week |
-| `ServiceCostLevel` | `NUMC(4)` | Service Cost Level |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PersonWorkAgreement` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `KeyDate` |  | |  |  | `DATS(8)` |  |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `Job` |  | |  |  | `NUMC(8)` | Job |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  |  | `CHAR(14)` | Organizational Key |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit |
+| `WorkAgreementStatus` |  | |  |  | `CHAR(1)` | Model S: Employment Status |
+| `WorkingTimePercentage` |  | |  |  | `DEC(5)` | Employment percentage |
+| `WeeklyWorkdays` |  | |  |  | `DEC(4)` | Weekly Workdays |
+| `WeeklyWorkingHours` |  | |  |  | `DEC(5)` | Hours per week |
+| `ServiceCostLevel` |  | |  |  | `NUMC(4)` | Service Cost Level |

@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `MobileUserDefaultAddressType` | `CHAR(10)` | Notification address type |
-| `MntMblAppUsrDfltAddrTypeName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MobileUserDefaultAddressType` |  | |  |  | `CHAR(10)` | Notification address type |
+| `MntMblAppUsrDfltAddrTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

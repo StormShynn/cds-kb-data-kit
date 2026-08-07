@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NearMissGroupCode` | `CHAR(21)` | Near Miss Group |
-| `Language` | `LANG(1)` | Language Key |
-| `NearMissGroupCodeName` | `CHAR(132)` | Description (Long) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NearMissGroupCode` |  | |  |  | `CHAR(21)` | Near Miss Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `NearMissGroupCodeName` |  | |  |  | `CHAR(132)` | Description (Long) |

@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SubscrpnBillgCndnCalcType` | `CHAR(1)` | Calculation Type for Condition |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SubscrpnBillgCndnCalcTypeText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubscrpnBillgCndnCalcType` |  | |  |  | `CHAR(1)` | Calculation Type for Condition |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SubscrpnBillgCndnCalcTypeText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

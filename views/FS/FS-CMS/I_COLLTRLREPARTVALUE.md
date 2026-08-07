@@ -29,23 +29,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlRealEstatePartValueUUID` | `RAW(16)` | GUID for part value |
-| `CollateralRealEstatePartUUID` | `RAW(16)` | GUID for Object part |
-| `CollateralRealEstatePartID` | `NUMC(10)` | Part ID for the Object |
-| `CollateralRealEstateValueType` | `CHAR(10)` | Value Calculation Method |
-| `ColltrlREValueCalculatedAmount` | `CURR(17)` | Calculated Value |
-| `ColltrlREValCalculatedCurrency` | `CUKY(5)` | Calculated value Currency |
-| `ColltrlREValueEnteredAmount` | `CURR(17)` | Entered Value |
-| `ColltrlREValueEnteredCurrency` | `CUKY(5)` | Entered value Currency |
-| `ColltrlREValueValidFromDate` | `DATS(8)` | Date from which Real Estate Value stands Valid |
-| `ColltrlREValueValidToDate` | `DATS(8)` | Date unitl which Real Estate Value stands Valid |
-| `ColltrlRealEstateValuationDate` | `DATS(8)` | Date on which Real Estate Valuation was Performed |
-| `ColltrlRealEstateValueOrigin` | `CHAR(6)` | Origin of Value |
-| `CollateralRealEstateEnteredBy` | `CHAR(12)` | Real Estate Add-On User |
-| `ColltrlRealEstateEnteredDate` | `DATS(8)` | Created On |
-| `ColltrlRealEstateEnteredTime` | `TIMS(6)` | Created At |
-| `ColltrlRealEstateLastChangedBy` | `CHAR(12)` | Last Changed By |
-| `ColltrlRELastChangedDate` | `DATS(8)` | Last Changed On |
-| `ColltrlRELastChangedTime` | `TIMS(6)` | Last Changed At |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlRealEstatePartValueUUID` |  | |  |  | `RAW(16)` | GUID for part value |
+| `CollateralRealEstatePartUUID` |  | |  |  | `RAW(16)` | GUID for Object part |
+| `CollateralRealEstatePartID` |  | |  |  | `NUMC(10)` | Part ID for the Object |
+| `CollateralRealEstateValueType` |  | |  |  | `CHAR(10)` | Value Calculation Method |
+| `ColltrlREValueCalculatedAmount` |  | |  |  | `CURR(17)` | Calculated Value |
+| `ColltrlREValCalculatedCurrency` |  | |  |  | `CUKY(5)` | Calculated value Currency |
+| `ColltrlREValueEnteredAmount` |  | |  |  | `CURR(17)` | Entered Value |
+| `ColltrlREValueEnteredCurrency` |  | |  |  | `CUKY(5)` | Entered value Currency |
+| `ColltrlREValueValidFromDate` |  | |  |  | `DATS(8)` | Date from which Real Estate Value stands Valid |
+| `ColltrlREValueValidToDate` |  | |  |  | `DATS(8)` | Date unitl which Real Estate Value stands Valid |
+| `ColltrlRealEstateValuationDate` |  | |  |  | `DATS(8)` | Date on which Real Estate Valuation was Performed |
+| `ColltrlRealEstateValueOrigin` |  | |  |  | `CHAR(6)` | Origin of Value |
+| `CollateralRealEstateEnteredBy` |  | |  |  | `CHAR(12)` | Real Estate Add-On User |
+| `ColltrlRealEstateEnteredDate` |  | |  |  | `DATS(8)` | Created On |
+| `ColltrlRealEstateEnteredTime` |  | |  |  | `TIMS(6)` | Created At |
+| `ColltrlRealEstateLastChangedBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `ColltrlRELastChangedDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `ColltrlRELastChangedTime` |  | |  |  | `TIMS(6)` | Last Changed At |

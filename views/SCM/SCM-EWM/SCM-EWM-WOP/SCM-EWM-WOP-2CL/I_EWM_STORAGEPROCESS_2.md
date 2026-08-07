@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `StorageProcess` | `CHAR(4)` | Storage Process |
-| `StorageProcessCategory` | `CHAR(1)` | Storage Process Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `StorageProcess` |  | |  |  | `CHAR(4)` | Storage Process |
+| `StorageProcessCategory` |  | |  |  | `CHAR(1)` | Storage Process Category |

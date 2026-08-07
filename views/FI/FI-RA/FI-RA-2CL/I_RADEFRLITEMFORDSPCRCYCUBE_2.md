@@ -37,35 +37,35 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PerformanceObligation` | `CHAR(16)` | Performance Obligation |
-| `RevnAcctgReconciliationKey` | `CHAR(14)` | Reconciliation Key for a Contract in a Revenue Acctg. Period |
-| `ConditionType` | `CHAR(4)` | Condition Type |
-| `RevnAcctgConditionCategory` | `CHAR(1)` | Price or Cost Condition |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Posting Period |
-| `RevenueAccountingContract` | `CHAR(14)` | Revenue Contract |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `AccountingPrinciple` | `CHAR(4)` | Accounting Principle |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `PerfOblgnFulfillmentType` | `CHAR(1)` | Fulfillment Type |
-| `RAPerformanceObligationType` | `CHAR(10)` | Revenue Accounting Performance Obligation Type |
-| `PerformanceObligationClass` | `CHAR(30)` | Performance Obligation Name |
-| `RevnAcctgSalesOrganization` | `CHAR(20)` | Sales Organization for Revenue Accounting |
-| `RevnAcctgPerfOblgnStatus` | `CHAR(1)` | Performance Obligation Status |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `Segment` | `CHAR(10)` | Segment for Segmental Reporting |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `OrderID` | `CHAR(12)` | Order Number |
-| `SalesOrder` | `CHAR(10)` | Account assignment Sales Order |
-| `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `RAContractIsUniversal` | `CHAR(1)` | Universal Revenue Recognition Contract |
-| `SalesDocumentCurrency` | `CUKY(5)` | SD Document Currency |
-| `ConditionIsForStatistics` | `CHAR(1)` | Condition is used for statistics |
-| `DeltaRecognizedAmtInSlsDocCrcy` | `CURR(23)` | Amount for Posting |
-| `RecgdCatchUpAmtInSlsDocCrcy` | `CURR(23)` | Amount of Retrospective Revenue Catch-up |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PerformanceObligation` |  | |  |  | `CHAR(16)` | Performance Obligation |
+| `RevnAcctgReconciliationKey` |  | |  |  | `CHAR(14)` | Reconciliation Key for a Contract in a Revenue Acctg. Period |
+| `ConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
+| `RevnAcctgConditionCategory` |  | |  |  | `CHAR(1)` | Price or Cost Condition |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Posting Period |
+| `RevenueAccountingContract` |  | |  |  | `CHAR(14)` | Revenue Contract |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `AccountingPrinciple` |  | |  |  | `CHAR(4)` | Accounting Principle |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `PerfOblgnFulfillmentType` |  | |  |  | `CHAR(1)` | Fulfillment Type |
+| `RAPerformanceObligationType` |  | |  |  | `CHAR(10)` | Revenue Accounting Performance Obligation Type |
+| `PerformanceObligationClass` |  | |  |  | `CHAR(30)` | Performance Obligation Name |
+| `RevnAcctgSalesOrganization` |  | |  |  | `CHAR(20)` | Sales Organization for Revenue Accounting |
+| `RevnAcctgPerfOblgnStatus` |  | |  |  | `CHAR(1)` | Performance Obligation Status |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order Number |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Account assignment Sales Order |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `RAContractIsUniversal` |  | |  |  | `CHAR(1)` | Universal Revenue Recognition Contract |
+| `SalesDocumentCurrency` |  | |  |  | `CUKY(5)` | SD Document Currency |
+| `ConditionIsForStatistics` |  | |  |  | `CHAR(1)` | Condition is used for statistics |
+| `DeltaRecognizedAmtInSlsDocCrcy` |  | |  |  | `CURR(23)` | Amount for Posting |
+| `RecgdCatchUpAmtInSlsDocCrcy` |  | |  |  | `CURR(23)` | Amount of Retrospective Revenue Catch-up |

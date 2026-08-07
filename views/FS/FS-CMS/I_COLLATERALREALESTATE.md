@@ -29,37 +29,37 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRealEstateUUID` | `RAW(16)` | GUID for Real Estate Object |
-| `ColltrlRealEstateConvertedID` | `CHAR(40)` | Reference ID for the object |
-| `CollateralRealEstateIdentifier` | `CHAR(20)` | Object ID |
-| `CollateralRealEstateType` | `CHAR(6)` | Real Estate Object Type ID |
-| `CollateralRealEstateAddressID` | `CHAR(10)` | Address ID |
-| `ColltrlRealEstateDescription` | `CHAR(30)` | Description of the Real Estate Object |
-| `CollateralRealEstateParentUUID` | `RAW(16)` | GUID for Real Estate Object |
-| `ColltrlREExtReferenceNumber` | `CHAR(32)` | External reference Number of an External System |
-| `ColltrlREFixtureFittingType` | `CHAR(6)` | Fixtures and Fittings Type ID |
-| `CollateralRealEstateAreaUnit` | `UNIT(3)` | Unit of Measure for Area |
-| `CollateralRealEstateVolumeUnit` | `UNIT(3)` | Unit of Measure for Volume of Real Estate |
-| `ColltrlREObjectCurrency` | `CUKY(5)` | Object Currency |
-| `ColltrlRealEstateMacroLocation` | `CHAR(6)` | Macro Location |
-| `ColltrlRealEstateMicroLocation` | `CHAR(6)` | Micro Location |
-| `ColltrlRETransptConncn` | `CHAR(6)` | Transport Connection |
-| `ColltrlREEnvironmentalStatus` | `CHAR(6)` | Enviromental Status |
-| `ColltrlRealEstateIsFloodZone` | `CHAR(1)` | Indicator for Flood Zone |
-| `ColltrlREIsEarthquakeZone` | `CHAR(1)` | Indicator : Eathquake Zone |
-| `ColltrlREIsArchlConsvnArea` | `CHAR(1)` | Indicator for Architectural Conservation Area |
-| `ColltrlREIsHistoricalSite` | `CHAR(1)` | Indicator for Historical Site |
-| `ColltrlREHasFctrsImprngVal` | `CHAR(1)` | Indicates existence of Factors Impairing Real Estate Value |
-| `ColltrlREFctrsImprngValDesc` | `CHAR(30)` | Description of the value imparing factor |
-| `CollateralAdminOrgUnit` | `CHAR(12)` | Administration Organizational Unit |
-| `CollateralBankArea` | `CHAR(4)` | Bank Area in Collateral Management |
-| `CollateralRealEstateEnteredBy` | `CHAR(12)` | Real Estate Add-On User |
-| `ColltrlRealEstateEnteredDate` | `DATS(8)` | Created On |
-| `ColltrlRealEstateEnteredTime` | `TIMS(6)` | Created At |
-| `ColltrlRealEstateEnteredSource` | `CHAR(32)` | Sorce of Initial entry |
-| `ColltrlRealEstateLastChangedBy` | `CHAR(12)` | Last Changed By |
-| `ColltrlRELastChangedDate` | `DATS(8)` | Last Changed On |
-| `ColltrlRELastChangedTime` | `TIMS(6)` | Last Changed At |
-| `ColltrlRELastChangedSource` | `CHAR(32)` | Processing Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRealEstateUUID` |  | |  |  | `RAW(16)` | GUID for Real Estate Object |
+| `ColltrlRealEstateConvertedID` |  | |  |  | `CHAR(40)` | Reference ID for the object |
+| `CollateralRealEstateIdentifier` |  | |  |  | `CHAR(20)` | Object ID |
+| `CollateralRealEstateType` |  | |  |  | `CHAR(6)` | Real Estate Object Type ID |
+| `CollateralRealEstateAddressID` |  | |  |  | `CHAR(10)` | Address ID |
+| `ColltrlRealEstateDescription` |  | |  |  | `CHAR(30)` | Description of the Real Estate Object |
+| `CollateralRealEstateParentUUID` |  | |  |  | `RAW(16)` | GUID for Real Estate Object |
+| `ColltrlREExtReferenceNumber` |  | |  |  | `CHAR(32)` | External reference Number of an External System |
+| `ColltrlREFixtureFittingType` |  | |  |  | `CHAR(6)` | Fixtures and Fittings Type ID |
+| `CollateralRealEstateAreaUnit` |  | |  |  | `UNIT(3)` | Unit of Measure for Area |
+| `CollateralRealEstateVolumeUnit` |  | |  |  | `UNIT(3)` | Unit of Measure for Volume of Real Estate |
+| `ColltrlREObjectCurrency` |  | |  |  | `CUKY(5)` | Object Currency |
+| `ColltrlRealEstateMacroLocation` |  | |  |  | `CHAR(6)` | Macro Location |
+| `ColltrlRealEstateMicroLocation` |  | |  |  | `CHAR(6)` | Micro Location |
+| `ColltrlRETransptConncn` |  | |  |  | `CHAR(6)` | Transport Connection |
+| `ColltrlREEnvironmentalStatus` |  | |  |  | `CHAR(6)` | Enviromental Status |
+| `ColltrlRealEstateIsFloodZone` |  | |  |  | `CHAR(1)` | Indicator for Flood Zone |
+| `ColltrlREIsEarthquakeZone` |  | |  |  | `CHAR(1)` | Indicator : Eathquake Zone |
+| `ColltrlREIsArchlConsvnArea` |  | |  |  | `CHAR(1)` | Indicator for Architectural Conservation Area |
+| `ColltrlREIsHistoricalSite` |  | |  |  | `CHAR(1)` | Indicator for Historical Site |
+| `ColltrlREHasFctrsImprngVal` |  | |  |  | `CHAR(1)` | Indicates existence of Factors Impairing Real Estate Value |
+| `ColltrlREFctrsImprngValDesc` |  | |  |  | `CHAR(30)` | Description of the value imparing factor |
+| `CollateralAdminOrgUnit` |  | |  |  | `CHAR(12)` | Administration Organizational Unit |
+| `CollateralBankArea` |  | |  |  | `CHAR(4)` | Bank Area in Collateral Management |
+| `CollateralRealEstateEnteredBy` |  | |  |  | `CHAR(12)` | Real Estate Add-On User |
+| `ColltrlRealEstateEnteredDate` |  | |  |  | `DATS(8)` | Created On |
+| `ColltrlRealEstateEnteredTime` |  | |  |  | `TIMS(6)` | Created At |
+| `ColltrlRealEstateEnteredSource` |  | |  |  | `CHAR(32)` | Sorce of Initial entry |
+| `ColltrlRealEstateLastChangedBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `ColltrlRELastChangedDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `ColltrlRELastChangedTime` |  | |  |  | `TIMS(6)` | Last Changed At |
+| `ColltrlRELastChangedSource` |  | |  |  | `CHAR(32)` | Processing Source |

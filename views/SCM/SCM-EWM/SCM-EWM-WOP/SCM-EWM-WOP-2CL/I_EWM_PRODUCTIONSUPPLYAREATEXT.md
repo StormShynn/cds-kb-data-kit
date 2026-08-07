@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMProductionSupplyArea` | `CHAR(15)` | Production Supply Area |
-| `Language` | `LANG(1)` | Language Key |
-| `EWMProductionSupplyAreaName` | `CHAR(40)` | Production Supply Area Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMProductionSupplyArea` |  | |  |  | `CHAR(15)` | Production Supply Area |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMProductionSupplyAreaName` |  | |  |  | `CHAR(40)` | Production Supply Area Description |

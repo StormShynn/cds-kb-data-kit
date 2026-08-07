@@ -30,26 +30,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FinMgmtAreaFiscalYear` | `NUMC(4)` | Fiscal Year for Financial Management Area |
-| `CommitmentItem` | `CHAR(24)` | Commitment Item |
-| `CommitmentItemShortID` | `CHAR(14)` | Commitment Item Short ID |
-| `CommitmentItemIsPostingEnabled` | `NUMC(1)` | Postable |
-| `CmtmtItmFinancialTransaction` | `NUMC(2)` | Financial transaction |
-| `CommitmentItemCategory` | `NUMC(1)` | Commitment Item Category |
-| `CommitmentItemType` | `CHAR(3)` | Commitment Item Type |
-| `ParentCommitmentItem` | `CHAR(24)` | Superior Commitment Item |
-| `CommitmentItemInternalId` | `CHAR(8)` | Internal ID of Commitment Item |
-| `FundsCenter` | `CHAR(16)` | Funds Center Default Value |
-| `CmtmtItmDefaultFundsCenter` | `CHAR(16)` | Default Funds Center for Commitment Item |
-| `CmtmtItmCarryFwdItmCategory` | `CHAR(2)` | Carryforward Item Category for Commitment Item |
-| `CommitmentItemIsStatistical` | `CHAR(1)` | Statistical commitment item |
-| `CommitmentItemAuthznGrp` | `CHAR(10)` | Authorization Group for Commitment Item |
-| `CmtmtItemFinMgmtAreaForAuthzn` | `CHAR(4)` | FM Area for Auth Grp for Commitment Item |
-| `ValidityEndDate` | `DATS(8)` | Commitment Item Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Commitment Item Validity Start Date |
-| `CommitmentItemExpirationDate` | `DATS(8)` | Commitment Item Expiration Date |
-| `CreationDate` | `DATS(8)` | FIFM: Entry Date |
-| `CreatedByUser` | `CHAR(12)` | FIFM: Created By |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FinMgmtAreaFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year for Financial Management Area |
+| `CommitmentItem` |  | |  |  | `CHAR(24)` | Commitment Item |
+| `CommitmentItemShortID` |  | |  |  | `CHAR(14)` | Commitment Item Short ID |
+| `CommitmentItemIsPostingEnabled` |  | |  |  | `NUMC(1)` | Postable |
+| `CmtmtItmFinancialTransaction` |  | |  |  | `NUMC(2)` | Financial transaction |
+| `CommitmentItemCategory` |  | |  |  | `NUMC(1)` | Commitment Item Category |
+| `CommitmentItemType` |  | |  |  | `CHAR(3)` | Commitment Item Type |
+| `ParentCommitmentItem` |  | |  |  | `CHAR(24)` | Superior Commitment Item |
+| `CommitmentItemInternalId` |  | |  |  | `CHAR(8)` | Internal ID of Commitment Item |
+| `FundsCenter` |  | |  |  | `CHAR(16)` | Funds Center Default Value |
+| `CmtmtItmDefaultFundsCenter` |  | |  |  | `CHAR(16)` | Default Funds Center for Commitment Item |
+| `CmtmtItmCarryFwdItmCategory` |  | |  |  | `CHAR(2)` | Carryforward Item Category for Commitment Item |
+| `CommitmentItemIsStatistical` |  | |  |  | `CHAR(1)` | Statistical commitment item |
+| `CommitmentItemAuthznGrp` |  | |  |  | `CHAR(10)` | Authorization Group for Commitment Item |
+| `CmtmtItemFinMgmtAreaForAuthzn` |  | |  |  | `CHAR(4)` | FM Area for Auth Grp for Commitment Item |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Commitment Item Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Commitment Item Validity Start Date |
+| `CommitmentItemExpirationDate` |  | |  |  | `DATS(8)` | Commitment Item Expiration Date |
+| `CreationDate` |  | |  |  | `DATS(8)` | FIFM: Entry Date |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | FIFM: Created By |

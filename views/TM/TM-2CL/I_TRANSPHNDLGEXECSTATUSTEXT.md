@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdStopHndlgExecStatus` | `CHAR(2)` | Handling Execution Status at Stop Level |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdStopHndlgExecStsDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStopHndlgExecStatus` |  | |  |  | `CHAR(2)` | Handling Execution Status at Stop Level |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdStopHndlgExecStsDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

@@ -33,38 +33,38 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationUnit` | `CHAR(18)` | Consolidation Unit |
-| `FinancialStatementItem` | `CHAR(10)` | Financial Statement Item |
-| `SubItemCategory` | `CHAR(3)` | Subitem Category |
-| `SubItem` | `CHAR(10)` | Subitem |
-| `PartnerConsolidationUnit` | `CHAR(18)` | Partner Unit |
-| `PostingLevel` | `CHAR(2)` | Posting Level |
-| `CurrencyConversionsDiffType` | `NUMC(1)` | Currency Translation |
-| `ConsolidationDocumentType` | `CHAR(2)` | Document Type |
-| `YTDAmtInGroupCurrencyForPerd01` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd02` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd03` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd04` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd05` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd06` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd07` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd08` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd09` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd10` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd11` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGroupCurrencyForPerd12` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGrpCrcyForYrShft1` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGrpCrcyForYrShft2` | `CURR(23)` | Cumulative Value in Group Currency |
-| `YTDAmtInGrpCrcyForYrShft3` | `CURR(23)` | Cumulative Value in Group Currency |
-| `GroupCurrency` | `CUKY(5)` | Group Currency |
-| `FiscalYear` | `NUMC(4)` |  |
-| `ConsolidationGroup` | `CHAR(18)` |  |
-| `NextFiscalYear` | `NUMC(4)` |  |
-| `FiscalYearShift2` | `NUMC(4)` |  |
-| `FiscalYearShift3` | `NUMC(4)` |  |
-| `ConsolidationVersion` | `CHAR(3)` |  |
-| `ConsolidationChartOfAccounts` | `CHAR(2)` |  |
-| `FinancialStatementItemHier` | `CHAR(10)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
+| `SubItemCategory` |  | |  |  | `CHAR(3)` | Subitem Category |
+| `SubItem` |  | |  |  | `CHAR(10)` | Subitem |
+| `PartnerConsolidationUnit` |  | |  |  | `CHAR(18)` | Partner Unit |
+| `PostingLevel` |  | |  |  | `CHAR(2)` | Posting Level |
+| `CurrencyConversionsDiffType` |  | |  |  | `NUMC(1)` | Currency Translation |
+| `ConsolidationDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `YTDAmtInGroupCurrencyForPerd01` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd02` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd03` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd04` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd05` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd06` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd07` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd08` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd09` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd10` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd11` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGroupCurrencyForPerd12` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGrpCrcyForYrShft1` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGrpCrcyForYrShft2` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `YTDAmtInGrpCrcyForYrShft3` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `GroupCurrency` |  | |  |  | `CUKY(5)` | Group Currency |
+| `FiscalYear` |  | |  |  | `NUMC(4)` |  |
+| `ConsolidationGroup` |  | |  |  | `CHAR(18)` |  |
+| `NextFiscalYear` |  | |  |  | `NUMC(4)` |  |
+| `FiscalYearShift2` |  | |  |  | `NUMC(4)` |  |
+| `FiscalYearShift3` |  | |  |  | `NUMC(4)` |  |
+| `ConsolidationVersion` |  | |  |  | `CHAR(3)` |  |
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` |  |
+| `FinancialStatementItemHier` |  | |  |  | `CHAR(10)` |  |

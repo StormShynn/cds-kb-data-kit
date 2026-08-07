@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseType` | `CHAR(4)` | Case Type |
-| `CaseReason` | `CHAR(4)` | Reason for Case |
-| `Language` | `LANG(1)` | Language Key |
-| `CaseReasonName` | `CHAR(60)` | Text Field of Length 60 |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseType` |  | |  |  | `CHAR(4)` | Case Type |
+| `CaseReason` |  | |  |  | `CHAR(4)` | Reason for Case |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseReasonName` |  | |  |  | `CHAR(60)` | Text Field of Length 60 |

@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseType` | `CHAR(4)` | Case Type |
-| `CaseCategory` | `CHAR(4)` | Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseType` |  | |  |  | `CHAR(4)` | Case Type |
+| `CaseCategory` |  | |  |  | `CHAR(4)` | Category |

@@ -30,20 +30,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsuranceClaim` | `CHAR(17)` | Number of Claim |
-| `InsurClmAuthznGrp` | `CHAR(4)` | Authorization Group for Claims (VIP) |
-| `InsurClmType` | `CHAR(4)` | Internal Claim Type |
-| `InsurLineOfBus` | `CHAR(3)` | Insurance Line of Business |
-| `InsurClmLifeCycSts` | `CHAR(2)` | Status of Claim |
-| `InsurClmCoverageType` | `CHAR(10)` | Coverage Type |
-| `InsurClmSubclmType` | `CHAR(4)` | Subclaim Type |
-| `InsurClmSubclaimPerformerObjID` | `CHAR(12)` | Claim Handler |
-| `OrganizationalUnit` | `NUMC(8)` | Organizational Unit |
-| `ParentOrganizationalUnit` | `NUMC(8)` | Higher-Level Organizational Unit |
-| `NmbrOfOpenInsurClmSubclms` | `INT4(10)` | Number of Open Subclaims at Start of Period |
-| `NmbrOfPndgInsurClmSubclms` | `INT4(10)` | Number of Open Subclaims at End of Period |
-| `NmbrOfReopenedInsurClmSubclms` | `INT4(10)` | Number of Reopened Subclaims |
-| `NmbrOfClsdInsurClmSubclms` | `INT4(10)` | Number of Closed Subclaims |
-| `NmbrOfNewOpenInsurClmSubclms` | `INT4(10)` | Number of Opened Subclaims |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsuranceClaim` |  | |  |  | `CHAR(17)` | Number of Claim |
+| `InsurClmAuthznGrp` |  | |  |  | `CHAR(4)` | Authorization Group for Claims (VIP) |
+| `InsurClmType` |  | |  |  | `CHAR(4)` | Internal Claim Type |
+| `InsurLineOfBus` |  | |  |  | `CHAR(3)` | Insurance Line of Business |
+| `InsurClmLifeCycSts` |  | |  |  | `CHAR(2)` | Status of Claim |
+| `InsurClmCoverageType` |  | |  |  | `CHAR(10)` | Coverage Type |
+| `InsurClmSubclmType` |  | |  |  | `CHAR(4)` | Subclaim Type |
+| `InsurClmSubclaimPerformerObjID` |  | |  |  | `CHAR(12)` | Claim Handler |
+| `OrganizationalUnit` |  | |  |  | `NUMC(8)` | Organizational Unit |
+| `ParentOrganizationalUnit` |  | |  |  | `NUMC(8)` | Higher-Level Organizational Unit |
+| `NmbrOfOpenInsurClmSubclms` |  | |  |  | `INT4(10)` | Number of Open Subclaims at Start of Period |
+| `NmbrOfPndgInsurClmSubclms` |  | |  |  | `INT4(10)` | Number of Open Subclaims at End of Period |
+| `NmbrOfReopenedInsurClmSubclms` |  | |  |  | `INT4(10)` | Number of Reopened Subclaims |
+| `NmbrOfClsdInsurClmSubclms` |  | |  |  | `INT4(10)` | Number of Closed Subclaims |
+| `NmbrOfNewOpenInsurClmSubclms` |  | |  |  | `INT4(10)` | Number of Opened Subclaims |

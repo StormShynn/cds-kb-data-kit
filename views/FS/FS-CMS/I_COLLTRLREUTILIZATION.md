@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlRealEstateUtilization` | `CHAR(6)` | Utilization of the Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlRealEstateUtilization` |  | |  |  | `CHAR(6)` | Utilization of the Object |

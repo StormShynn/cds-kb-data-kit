@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AgreementPortionRblType` | `CHAR(2)` | Indicator for Receivable Type |
-| `AgreementPortionRblTypeText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgreementPortionRblType` |  | |  |  | `CHAR(2)` | Indicator for Receivable Type |
+| `AgreementPortionRblTypeText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

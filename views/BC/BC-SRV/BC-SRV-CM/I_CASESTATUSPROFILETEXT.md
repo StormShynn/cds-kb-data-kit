@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseStatusProfile` | `CHAR(8)` | Case: Status Profile |
-| `Language` | `LANG(1)` | Language Key |
-| `CaseStatusProfileName` | `CHAR(40)` | Case: Profile Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseStatusProfile` |  | |  |  | `CHAR(8)` | Case: Status Profile |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseStatusProfileName` |  | |  |  | `CHAR(40)` | Case: Profile Description |

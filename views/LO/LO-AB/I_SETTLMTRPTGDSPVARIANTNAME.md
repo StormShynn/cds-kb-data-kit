@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtRptgDisplayVariant` | `CHAR(1)` | Invert Sign for Amount/Quantity Fields in Reporting |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtRptgDisplayVariantName` | `CHAR(60)` | Settlement Reporting Display Variant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtRptgDisplayVariant` |  | |  |  | `CHAR(1)` | Invert Sign for Amount/Quantity Fields in Reporting |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtRptgDisplayVariantName` |  | |  |  | `CHAR(60)` | Settlement Reporting Display Variant |

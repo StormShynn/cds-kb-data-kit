@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TribalOrAllotteeLeaseType` | `CHAR(1)` | ONRR-2014 - Tribal / Allottee Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TribalOrAllotteeLeaseType` |  | |  |  | `CHAR(1)` | ONRR-2014 - Tribal / Allottee Indicator |

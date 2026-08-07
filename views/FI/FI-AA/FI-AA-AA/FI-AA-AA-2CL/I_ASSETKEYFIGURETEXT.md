@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `AssetAccountingKeyFigure` | `CHAR(10)` | Key Figure for Asset Accounting |
-| `AssetAccountingKeyFigureText` | `CHAR(70)` | Key Figure Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AssetAccountingKeyFigure` |  | |  |  | `CHAR(10)` | Key Figure for Asset Accounting |
+| `AssetAccountingKeyFigureText` |  | |  |  | `CHAR(70)` | Key Figure Code Name |

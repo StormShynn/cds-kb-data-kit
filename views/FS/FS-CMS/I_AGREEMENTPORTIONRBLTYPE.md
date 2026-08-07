@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementPortionRblType` | `CHAR(2)` | Indicator for Receivable Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementPortionRblType` |  | |  |  | `CHAR(2)` | Indicator for Receivable Type |

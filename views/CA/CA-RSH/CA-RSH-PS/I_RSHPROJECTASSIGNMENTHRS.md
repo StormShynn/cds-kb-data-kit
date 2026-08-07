@@ -33,25 +33,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProjAssignmentUUID` | `RAW(16)` | UUID in X form (binary) |
-| `ResourceDemandUUID` | `RAW(16)` | Demand Key |
-| `EmploymentInternalID` | `NUMC(8)` | Object ID |
-| `ProjAssignmentStartDate` | `DATS(8)` |  |
-| `ProjAssignmentEndDate` | `DATS(8)` |  |
-| `ProjAssignmentTotalHours` | `DEC(15)` | Total duration of assignment in seconds |
-| `SourceOfSupply` | `CHAR(5)` | Source of Supply |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
-| `ServiceOrganization` | `CHAR(5)` | Service Organization ID |
-| `EmployeeRequestHdrSrvOrg` | `CHAR(5)` | Service Organization |
-| `EmployeeRequestDelivOrg` | `CHAR(5)` | Service Organization |
-| `ProjectVisibility` | `CHAR(2)` | Public Project |
-| `IsBusPrpsCmpltdCustomer` | `CHAR(1)` | Business Purpose Completed Flag |
-| `CustomerAuthznGrp` | `CHAR(4)` | Authorization Group |
-| `IsBusPrpsCmpltdProjectManager` | `CHAR(1)` | Business Purpose Completed Flag |
-| `ProjectManagerAuthznGrp` | `CHAR(4)` | Authorization Group |
-| `ExternalStaffingIsActive` | `CHAR(1)` | Enable External Staffing |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjAssignmentUUID` |  | |  |  | `RAW(16)` | UUID in X form (binary) |
+| `ResourceDemandUUID` |  | |  |  | `RAW(16)` | Demand Key |
+| `EmploymentInternalID` |  | |  |  | `NUMC(8)` | Object ID |
+| `ProjAssignmentStartDate` |  | |  |  | `DATS(8)` |  |
+| `ProjAssignmentEndDate` |  | |  |  | `DATS(8)` |  |
+| `ProjAssignmentTotalHours` |  | |  |  | `DEC(15)` | Total duration of assignment in seconds |
+| `SourceOfSupply` |  | |  |  | `CHAR(5)` | Source of Supply |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `ServiceOrganization` |  | |  |  | `CHAR(5)` | Service Organization ID |
+| `EmployeeRequestHdrSrvOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `EmployeeRequestDelivOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `ProjectVisibility` |  | |  |  | `CHAR(2)` | Public Project |
+| `IsBusPrpsCmpltdCustomer` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `CustomerAuthznGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `IsBusPrpsCmpltdProjectManager` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `ProjectManagerAuthznGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `ExternalStaffingIsActive` |  | |  |  | `CHAR(1)` | Enable External Staffing |

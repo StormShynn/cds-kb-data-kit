@@ -37,17 +37,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CashFlowID` | `NUMC(16)` | Flow ID |
-| `CshFlwValdtyStrtDteTmeVal` | `DEC(21)` | FQM Flow Valid From - Decimal Type |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `TransactionDate` | `DATS(8)` | Transaction Date |
-| `PostingDate` | `DATS(8)` | Posting Date in the Document |
-| `TransactionCurrency` | `CUKY(5)` | Currency |
-| `AmountInTransactionCurrency` | `CURR(23)` | Amount |
-| `CompanyCodeCurrency` | `CUKY(5)` | Currency Key |
-| `AmountInCompanyCodeCurrency` | `CURR(23)` | Amount in Company Code Currency |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `AmountInGlobalCurrency` | `CURR(23)` | Amount in Global Currency |
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CashFlowID` |  | |  |  | `NUMC(16)` | Flow ID |
+| `CshFlwValdtyStrtDteTmeVal` |  | |  |  | `DEC(21)` | FQM Flow Valid From - Decimal Type |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `TransactionDate` |  | |  |  | `DATS(8)` | Transaction Date |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspDimnWeightProfile` | `CHAR(10)` | Dimensional Weight Profile |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspDimnWeightProfDesc` | `CHAR(80)` | Dimensional Weight Profile Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspDimnWeightProfile` |  | |  |  | `CHAR(10)` | Dimensional Weight Profile |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspDimnWeightProfDesc` |  | |  |  | `CHAR(80)` | Dimensional Weight Profile Description |

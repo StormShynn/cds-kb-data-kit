@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `OffsettingAccountType` | `CHAR(1)` | Offsetting Account Type |
-| `OffsettingAccount` | `CHAR(10)` | Offsetting Account |
-| `OffsettingAccountName` | `CHAR(80)` | Name of Offsetting Account |
-| `OffsettingAccountShortName` | `CHAR(35)` | Short Name of Offsetting Account |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `OffsettingAccountType` |  | |  |  | `CHAR(1)` | Offsetting Account Type |
+| `OffsettingAccount` |  | |  |  | `CHAR(10)` | Offsetting Account |
+| `OffsettingAccountName` |  | |  |  | `CHAR(80)` | Name of Offsetting Account |
+| `OffsettingAccountShortName` |  | |  |  | `CHAR(35)` | Short Name of Offsetting Account |

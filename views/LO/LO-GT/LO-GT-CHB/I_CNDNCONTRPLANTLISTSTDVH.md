@@ -34,15 +34,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConditionContract` | `CHAR(10)` | Condition Contract |
-| `CndnContrType` | `CHAR(4)` | Condition Contract Type |
-| `CndnContrTypeDesc` | `CHAR(40)` | Condition Contract Type Description |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `CndnContrValidFrom` | `DATS(8)` | Valid From |
-| `CndnContrValidTo` | `DATS(8)` | Valid To |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionContract` |  | |  |  | `CHAR(10)` | Condition Contract |
+| `CndnContrType` |  | |  |  | `CHAR(4)` | Condition Contract Type |
+| `CndnContrTypeDesc` |  | |  |  | `CHAR(40)` | Condition Contract Type Description |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `CndnContrValidFrom` |  | |  |  | `DATS(8)` | Valid From |
+| `CndnContrValidTo` |  | |  |  | `DATS(8)` | Valid To |

@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralAttributeIndCat` | `CHAR(6)` | Attribute Indicator ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralAttributeIndCat` |  | |  |  | `CHAR(6)` | Attribute Indicator ID |

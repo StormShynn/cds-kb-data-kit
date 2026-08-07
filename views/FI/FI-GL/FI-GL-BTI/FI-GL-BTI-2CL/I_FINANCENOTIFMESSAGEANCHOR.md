@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinanceNotifMessageUniqueKey` | `CHAR(70)` | Message Unique Key |
-| `LatestMessageClass` | `CHAR(20)` | Message class of the latest message |
-| `LatestMessageNumber` | `CHAR(3)` | Message number of the latest message |
-| `LatestMessageVariable1Text` | `CHAR(50)` | Message variable 1 of the latest message |
-| `LatestMessageVariable2Text` | `CHAR(50)` | Message variable 2 of the latest message |
-| `LatestMessageVariable3Text` | `CHAR(50)` | Message variable 3 of the latest message |
-| `LatestMessageVariable4Text` | `CHAR(50)` | Message variable 4 of the latest message |
-| `LogMessageText` | `CHAR(132)` | Message Text composed with variables |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinanceNotifMessageUniqueKey` |  | |  |  | `CHAR(70)` | Message Unique Key |
+| `LatestMessageClass` |  | |  |  | `CHAR(20)` | Message class of the latest message |
+| `LatestMessageNumber` |  | |  |  | `CHAR(3)` | Message number of the latest message |
+| `LatestMessageVariable1Text` |  | |  |  | `CHAR(50)` | Message variable 1 of the latest message |
+| `LatestMessageVariable2Text` |  | |  |  | `CHAR(50)` | Message variable 2 of the latest message |
+| `LatestMessageVariable3Text` |  | |  |  | `CHAR(50)` | Message variable 3 of the latest message |
+| `LatestMessageVariable4Text` |  | |  |  | `CHAR(50)` | Message variable 4 of the latest message |
+| `LogMessageText` |  | |  |  | `CHAR(132)` | Message Text composed with variables |

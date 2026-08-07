@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MobileUserApplication` | `CHAR(30)` | Mobile Application Name |
-| `MaintMblApplicationObjectKey` | `CHAR(100)` | Object key for Mobile Status |
-| `MaintMblApplObjMblStatusRecord` | `NUMC(10)` | Record no. |
-| `MaintMblApplMobileStatus` | `CHAR(10)` | Mobile Object Status |
-| `MaintMblApplObjMblStsIsActive` | `CHAR(1)` | Active Flag |
-| `MaintMblApplicationObjectType` | `CHAR(30)` | Object Type for Mobile Status |
-| `MaintMblApplObjectSortValue` | `CHAR(40)` | Sort field |
-| `CreatedByUser` | `CHAR(12)` | Created by |
-| `CreationDate` | `DATS(8)` |  |
-| `MaintMblApplObjMblStsCrtnYear` | `NUMC(4)` | Calendar Year |
-| `MaintMblApplObjMblStsCrtnMonth` | `NUMC(2)` | Calendar Month |
-| `MntMblAppNrOfObjMblStsRecords` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MobileUserApplication` |  | |  |  | `CHAR(30)` | Mobile Application Name |
+| `MaintMblApplicationObjectKey` |  | |  |  | `CHAR(100)` | Object key for Mobile Status |
+| `MaintMblApplObjMblStatusRecord` |  | |  |  | `NUMC(10)` | Record no. |
+| `MaintMblApplMobileStatus` |  | |  |  | `CHAR(10)` | Mobile Object Status |
+| `MaintMblApplObjMblStsIsActive` |  | |  |  | `CHAR(1)` | Active Flag |
+| `MaintMblApplicationObjectType` |  | |  |  | `CHAR(30)` | Object Type for Mobile Status |
+| `MaintMblApplObjectSortValue` |  | |  |  | `CHAR(40)` | Sort field |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created by |
+| `CreationDate` |  | |  |  | `DATS(8)` |  |
+| `MaintMblApplObjMblStsCrtnYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `MaintMblApplObjMblStsCrtnMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `MntMblAppNrOfObjMblStsRecords` |  | |  |  | `INT1(3)` |  |

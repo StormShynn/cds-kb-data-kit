@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanDrwgRestraintType` | `NUMC(2)` | Type of Restraint on Drawing |
-| `LoanDrwgRestraintTypeShortText` | `CHAR(15)` | Short Name |
-| `LoanDrwgRestraintTypeText` | `CHAR(50)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanDrwgRestraintType` |  | |  |  | `NUMC(2)` | Type of Restraint on Drawing |
+| `LoanDrwgRestraintTypeShortText` |  | |  |  | `CHAR(15)` | Short Name |
+| `LoanDrwgRestraintTypeText` |  | |  |  | `CHAR(50)` | Name |

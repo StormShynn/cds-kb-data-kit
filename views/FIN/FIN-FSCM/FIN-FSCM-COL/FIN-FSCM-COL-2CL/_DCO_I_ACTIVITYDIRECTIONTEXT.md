@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `DCoActivityDirection` | `CHAR(1)` | Activity Direction |
-| `DCoActivityDirectionName` | `CHAR(50)` | Activity Direction Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DCoActivityDirection` |  | |  |  | `CHAR(1)` | Activity Direction |
+| `DCoActivityDirectionName` |  | |  |  | `CHAR(50)` | Activity Direction Name |

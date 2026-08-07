@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationUnitHierarchy` | `CHAR(40)` | Consolidation Unit Hierarchy |
-| `ConsolidationUnitHierarchyText` | `CHAR(50)` | Consolidation Hierarchy Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationUnitHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Unit Hierarchy |
+| `ConsolidationUnitHierarchyText` |  | |  |  | `CHAR(50)` | Consolidation Hierarchy Description |

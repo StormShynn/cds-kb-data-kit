@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `GLAccount` | `CHAR(10)` | G/L Account Number |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `GLAccountType` | `CHAR(2)` | Account Type |
-| `StatusIsActive` | `CHAR(1)` | Active Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account Number |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `GLAccountType` |  | |  |  | `CHAR(2)` | Account Type |
+| `StatusIsActive` |  | |  |  | `CHAR(1)` | Active Indicator |

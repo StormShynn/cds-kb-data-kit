@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProcessingStatus` | `CHAR(1)` | Valuation Document Processing Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessingStatus` |  | |  |  | `CHAR(1)` | Valuation Document Processing Status |

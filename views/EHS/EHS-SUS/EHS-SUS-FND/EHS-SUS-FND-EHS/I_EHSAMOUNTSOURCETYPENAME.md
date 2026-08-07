@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSAmountSourceType` | `CHAR(2)` |  |
-| `Language` | `LANG(1)` | Language Key |
-| `EHSAmountSourceTypeName` | `CHAR(255)` | Text Field in OTR |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSAmountSourceType` |  | |  |  | `CHAR(2)` |  |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EHSAmountSourceTypeName` |  | |  |  | `CHAR(255)` | Text Field in OTR |

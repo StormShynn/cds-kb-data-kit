@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `ObjectKey` | `CHAR(20)` | Object key |
-| `DocumentDate` | `DATS(8)` | Journal Entry Date |
-| `PostingDate` | `DATS(8)` | Posting Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `ObjectKey` |  | |  |  | `CHAR(20)` | Object key |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |

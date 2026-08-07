@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SubscrpnContrDurationUnit` | `CHAR(1)` | Unit for Contract Term |
-| `Language` | `LANG(1)` | Language Key |
-| `SubscrpnContrDurationUnitText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubscrpnContrDurationUnit` |  | |  |  | `CHAR(1)` | Unit for Contract Term |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SubscrpnContrDurationUnitText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

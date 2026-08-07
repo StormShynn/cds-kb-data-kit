@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtRptgDisplayVariant` | `CHAR(1)` | Invert Sign for Amount/Quantity Fields in Reporting |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtRptgDisplayVariant` |  | |  |  | `CHAR(1)` | Invert Sign for Amount/Quantity Fields in Reporting |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

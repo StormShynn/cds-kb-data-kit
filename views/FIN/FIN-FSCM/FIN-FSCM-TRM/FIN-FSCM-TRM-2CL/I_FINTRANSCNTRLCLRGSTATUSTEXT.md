@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `FinTransCentralClearingStatus` | `NUMC(1)` | Clearing Status (TREA) |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `FinTransCntrlClrgStatusName` | `CHAR(60)` | Clearing Status Name (TREA) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FinTransCentralClearingStatus` |  | |  |  | `NUMC(1)` | Clearing Status (TREA) |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `FinTransCntrlClrgStatusName` |  | |  |  | `CHAR(60)` | Clearing Status Name (TREA) |

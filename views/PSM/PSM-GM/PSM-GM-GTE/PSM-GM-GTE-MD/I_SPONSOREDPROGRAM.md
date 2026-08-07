@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `GteeMBdgtTransfObjIsVldtd` | `CHAR(1)` | Indicator:  Validate Budget Transfer Object |
-| `GteeMBdgtAndPostObjIsVldtd` | `CHAR(1)` | Indicator:  Validate Allowed Budget and Posting objects |
-| `GranteeMgmtLegislativeDistrict` | `CHAR(6)` | Legislative District Code |
-| `SponsoredProgramAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `CreatedByUser` | `CHAR(12)` | Record Created by |
-| `CreationDate` | `DATS(8)` | Created on |
-| `LastChangedByUser` | `CHAR(12)` | Last Modified by |
-| `LastChangeDate` | `DATS(8)` | Date last modified |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `GteeMBdgtTransfObjIsVldtd` |  | |  |  | `CHAR(1)` | Indicator:  Validate Budget Transfer Object |
+| `GteeMBdgtAndPostObjIsVldtd` |  | |  |  | `CHAR(1)` | Indicator:  Validate Allowed Budget and Posting objects |
+| `GranteeMgmtLegislativeDistrict` |  | |  |  | `CHAR(6)` | Legislative District Code |
+| `SponsoredProgramAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Record Created by |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created on |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Modified by |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date last modified |

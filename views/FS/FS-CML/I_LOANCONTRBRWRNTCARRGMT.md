@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanContrBrwrNtcArrgmt` | `NUMC(3)` | Notice Arrangement Borrower |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanContrBrwrNtcArrgmt` |  | |  |  | `NUMC(3)` | Notice Arrangement Borrower |

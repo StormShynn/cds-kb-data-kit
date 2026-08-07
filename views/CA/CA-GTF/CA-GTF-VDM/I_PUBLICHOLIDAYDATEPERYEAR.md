@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PublicHolidayCode` | `CHAR(3)` | Public holiday key |
-| `CalendarYear` | `NUMC(4)` | Year stored |
-| `PublicHolidayMonth` | `NUMC(2)` | Month for holiday calculation |
-| `PublicHolidayDayOfMonth` | `NUMC(2)` | Day of month for public holiday calculation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCode` |  | |  |  | `CHAR(3)` | Public holiday key |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Year stored |
+| `PublicHolidayMonth` |  | |  |  | `NUMC(2)` | Month for holiday calculation |
+| `PublicHolidayDayOfMonth` |  | |  |  | `NUMC(2)` | Day of month for public holiday calculation |

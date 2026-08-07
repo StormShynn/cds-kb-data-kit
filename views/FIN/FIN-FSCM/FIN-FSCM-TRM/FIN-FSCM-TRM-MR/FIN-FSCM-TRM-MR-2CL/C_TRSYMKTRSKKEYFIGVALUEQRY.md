@@ -36,38 +36,38 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MarketRiskKeyFigureSet` | `CHAR(6)` | Market Risk Key Figure Set |
-| `ValidityDate` | `DATS(8)` | Key Date in Results Databases |
-| `TreasuryFinancialObject` | `CHAR(22)` | Object Number for Financial Transactions |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `TreasuryContractType` | `CHAR(1)` | Contract Type |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Product Category |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `Portfolio` | `CHAR(10)` | Portfolio |
-| `SecurityClass` | `CHAR(13)` | Security Class ID Number |
-| `SecurityAccount` | `CHAR(10)` | Securities Account |
-| `TreasuryPositionAccount` | `CHAR(10)` | Futures Account for Listed Options and Futures |
-| `FinancialExposurePosition` | `CHAR(20)` | Exposure Position ID |
-| `LoanContract` | `CHAR(13)` | Contract Number |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `MktRiskCharacteristicCurrency` | `CUKY(5)` | Analytic Characteristic Currency |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `FinancialInstrCharacteristic` | `CHAR(25)` | Characteristics |
-| `NetPresentValueSign` | `CHAR(1)` | Sign of Net Present Value |
-| `NetPresentValueInDisplayCrcy` | `CURR(23)` | Net Present Value in Display Currency |
-| `CleanPriceAmountInDisplayCrcy` | `CURR(23)` | Clean Price in Display Currency |
-| `BasePointValueAmountInDspCrcy` | `CURR(23)` | Basis Point Value in Display Currency |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `NetPresentValueInEvalCrcy` | `CURR(23)` | Net Present Value in Evaluation Currency |
-| `CleanPriceAmountInEvalCrcy` | `CURR(23)` | Clean Price in Evaluation Currency |
-| `BasePointValueAmountInEvalCrcy` | `CURR(23)` | Basis Point Value in Evaluation Currency |
-| `EvaluationCurrency` | `CUKY(5)` | Evaluation Currency |
-| `MktRskKeyFigMacaulayDuration` | `FLTP(16)` | Macaulay Duration |
-| `MktRskKeyFigModifiedDuration` | `FLTP(16)` | Modified Duration |
-| `MktRskKeyFigFisherWeilDuration` | `FLTP(16)` | Fisher-Weil Duration Value |
-| `NetPresentValueConvexityValue` | `FLTP(16)` | Convexity |
-| `OptionDeltaValue` | `FLTP(16)` | Option Delta |
-| `YieldToMaturityRate` | `FLTP(16)` | Yield to Maturity |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MarketRiskKeyFigureSet` |  | |  |  | `CHAR(6)` | Market Risk Key Figure Set |
+| `ValidityDate` |  | |  |  | `DATS(8)` | Key Date in Results Databases |
+| `TreasuryFinancialObject` |  | |  |  | `CHAR(22)` | Object Number for Financial Transactions |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `TreasuryContractType` |  | |  |  | `CHAR(1)` | Contract Type |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Product Category |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `Portfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `SecurityClass` |  | |  |  | `CHAR(13)` | Security Class ID Number |
+| `SecurityAccount` |  | |  |  | `CHAR(10)` | Securities Account |
+| `TreasuryPositionAccount` |  | |  |  | `CHAR(10)` | Futures Account for Listed Options and Futures |
+| `FinancialExposurePosition` |  | |  |  | `CHAR(20)` | Exposure Position ID |
+| `LoanContract` |  | |  |  | `CHAR(13)` | Contract Number |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `MktRiskCharacteristicCurrency` |  | |  |  | `CUKY(5)` | Analytic Characteristic Currency |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `FinancialInstrCharacteristic` |  | |  |  | `CHAR(25)` | Characteristics |
+| `NetPresentValueSign` |  | |  |  | `CHAR(1)` | Sign of Net Present Value |
+| `NetPresentValueInDisplayCrcy` |  | |  |  | `CURR(23)` | Net Present Value in Display Currency |
+| `CleanPriceAmountInDisplayCrcy` |  | |  |  | `CURR(23)` | Clean Price in Display Currency |
+| `BasePointValueAmountInDspCrcy` |  | |  |  | `CURR(23)` | Basis Point Value in Display Currency |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `NetPresentValueInEvalCrcy` |  | |  |  | `CURR(23)` | Net Present Value in Evaluation Currency |
+| `CleanPriceAmountInEvalCrcy` |  | |  |  | `CURR(23)` | Clean Price in Evaluation Currency |
+| `BasePointValueAmountInEvalCrcy` |  | |  |  | `CURR(23)` | Basis Point Value in Evaluation Currency |
+| `EvaluationCurrency` |  | |  |  | `CUKY(5)` | Evaluation Currency |
+| `MktRskKeyFigMacaulayDuration` |  | |  |  | `FLTP(16)` | Macaulay Duration |
+| `MktRskKeyFigModifiedDuration` |  | |  |  | `FLTP(16)` | Modified Duration |
+| `MktRskKeyFigFisherWeilDuration` |  | |  |  | `FLTP(16)` | Fisher-Weil Duration Value |
+| `NetPresentValueConvexityValue` |  | |  |  | `FLTP(16)` | Convexity |
+| `OptionDeltaValue` |  | |  |  | `FLTP(16)` | Option Delta |
+| `YieldToMaturityRate` |  | |  |  | `FLTP(16)` | Yield to Maturity |

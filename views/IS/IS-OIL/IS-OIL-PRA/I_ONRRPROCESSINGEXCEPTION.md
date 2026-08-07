@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProcessingException` | `CHAR(1)` | ONRR-2014 - Disposition Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProcessingException` |  | |  |  | `CHAR(1)` | ONRR-2014 - Disposition Code |

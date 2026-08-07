@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxExemptCode` | `CHAR(1)` | Tax Reporting - Kansas Exemption |
-| `Language` | `LANG(1)` | Language Key |
-| `TaxExemptCodeName` | `CHAR(60)` | Tax Reporting - Kansas Exempt Type Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxExemptCode` |  | |  |  | `CHAR(1)` | Tax Reporting - Kansas Exemption |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TaxExemptCodeName` |  | |  |  | `CHAR(60)` | Tax Reporting - Kansas Exempt Type Text |

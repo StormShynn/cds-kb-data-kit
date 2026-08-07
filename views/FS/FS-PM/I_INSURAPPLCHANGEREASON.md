@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurApplChgRsn` | `NUMC(4)` | Change Reason for Business Process |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurApplChgRsn` |  | |  |  | `NUMC(4)` | Change Reason for Business Process |

@@ -36,8 +36,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillingPlanDateDescriptionCode` | `CHAR(4)` | Date Description |
-| `Language` | `LANG(1)` | Language Key |
-| `BillingPlanDateDescription` | `CHAR(40)` | Date description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillingPlanDateDescriptionCode` |  | |  |  | `CHAR(4)` | Date Description |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BillingPlanDateDescription` |  | |  |  | `CHAR(40)` | Date description |

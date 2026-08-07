@@ -34,27 +34,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialInstrProductCategory` | `NUMC(3)` | Product Category |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `FinancialInstrTransactionType` | `CHAR(3)` | Financial Transaction Type |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `FinInstrTransactionCategory` | `NUMC(3)` | Transaction Category |
-| `FinInstrConditionLogicGroup` | `NUMC(4)` | Condition Logic Group |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `InterestCalculationType` | `INT1(3)` | Interest Calculation Type |
-| `TransactionCurrency` | `CUKY(5)` | Nominal Currency |
-| `NominalAmountInNominalCurrency` | `CURR(26)` |  |
-| `FeeAmountInTransactionCrcy` | `CURR(23)` | Financial Position Amount In Transaction Currency |
-| `PaymentCurrency` | `CUKY(5)` | Transaction Currency |
-| `ConditionPercentageRate` | `DEC(10)` | Percentage rate for condition items |
-| `NominalAmountInDisplayCurrency` | `CURR(21)` | Nominal Amount in Display Currency |
-| `FeeAmountInDisplayCurrency` | `CURR(21)` | Fee Amount in Display Currency |
-| `EstimatedFeeAmtInDisplayCrcy` | `CURR(21)` | Estimated Fee Amount in Display Currency |
-| `NmbrOfFinancialTransactions` | `INT4(10)` | Number of Financial Transactions |
-| `VolumeIsCounted` | `CHAR(1)` | Indicator whether transaction has valid condition |
-| `ConditionIsValid` | `CHAR(1)` | Indicator whether transaction has valid condition |
-| `ExchangeRateType` | `CHAR(4)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Product Category |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `FinancialInstrTransactionType` |  | |  |  | `CHAR(3)` | Financial Transaction Type |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `FinInstrTransactionCategory` |  | |  |  | `NUMC(3)` | Transaction Category |
+| `FinInstrConditionLogicGroup` |  | |  |  | `NUMC(4)` | Condition Logic Group |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `InterestCalculationType` |  | |  |  | `INT1(3)` | Interest Calculation Type |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Nominal Currency |
+| `NominalAmountInNominalCurrency` |  | |  |  | `CURR(26)` |  |
+| `FeeAmountInTransactionCrcy` |  | |  |  | `CURR(23)` | Financial Position Amount In Transaction Currency |
+| `PaymentCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `ConditionPercentageRate` |  | |  |  | `DEC(10)` | Percentage rate for condition items |
+| `NominalAmountInDisplayCurrency` |  | |  |  | `CURR(21)` | Nominal Amount in Display Currency |
+| `FeeAmountInDisplayCurrency` |  | |  |  | `CURR(21)` | Fee Amount in Display Currency |
+| `EstimatedFeeAmtInDisplayCrcy` |  | |  |  | `CURR(21)` | Estimated Fee Amount in Display Currency |
+| `NmbrOfFinancialTransactions` |  | |  |  | `INT4(10)` | Number of Financial Transactions |
+| `VolumeIsCounted` |  | |  |  | `CHAR(1)` | Indicator whether transaction has valid condition |
+| `ConditionIsValid` |  | |  |  | `CHAR(1)` | Indicator whether transaction has valid condition |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` |  |

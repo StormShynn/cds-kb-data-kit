@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CtrlObjForSponsoredClass` | `CHAR(50)` | Control Object for a Sponsored Class |
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `CtrlObjForSponsoredClassName` | `CHAR(50)` | Control Object for a Sponsored Class |
-| `SponsoredClassDescription` | `CHAR(30)` | Sponsored Class Description |
-| `HierarchyNodeText` | `CHAR(50)` | Hierarchy node description |
-| `SponsoredClassHierarchy` | `CHAR(42)` | Sponsored Class Hierarchy |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CtrlObjForSponsoredClass` |  | |  |  | `CHAR(50)` | Control Object for a Sponsored Class |
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `CtrlObjForSponsoredClassName` |  | |  |  | `CHAR(50)` | Control Object for a Sponsored Class |
+| `SponsoredClassDescription` |  | |  |  | `CHAR(30)` | Sponsored Class Description |
+| `HierarchyNodeText` |  | |  |  | `CHAR(50)` | Hierarchy node description |
+| `SponsoredClassHierarchy` |  | |  |  | `CHAR(42)` | Sponsored Class Hierarchy |

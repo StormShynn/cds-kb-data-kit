@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementReceivablePortion` | `CHAR(2)` | Portion of the Receivable |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementReceivablePortion` |  | |  |  | `CHAR(2)` | Portion of the Receivable |

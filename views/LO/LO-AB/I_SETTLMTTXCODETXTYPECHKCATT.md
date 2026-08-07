@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtTxCodeTxTypeChkCat` | `CHAR(1)` | Control of Tax Type Check for Tax Codes |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtTxCodeTxTypeChkCatName` | `CHAR(60)` | Text of Tax Type Check Control for Tax Codes |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtTxCodeTxTypeChkCat` |  | |  |  | `CHAR(1)` | Control of Tax Type Check for Tax Codes |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtTxCodeTxTypeChkCatName` |  | |  |  | `CHAR(60)` | Text of Tax Type Check Control for Tax Codes |

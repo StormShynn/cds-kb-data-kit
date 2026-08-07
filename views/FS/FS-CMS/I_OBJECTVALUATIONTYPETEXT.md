@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectValuationType` | `CHAR(6)` | Value Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `ObjectValuationTypeText` | `CHAR(40)` | Value Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectValuationType` |  | |  |  | `CHAR(6)` | Value Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `ObjectValuationTypeText` |  | |  |  | `CHAR(40)` | Value Name |

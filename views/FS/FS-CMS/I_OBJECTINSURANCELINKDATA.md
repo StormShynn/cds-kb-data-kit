@@ -29,14 +29,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectInsuranceLinkUUID` | `RAW(16)` | Insurance Link GUID |
-| `ObjectReferenceUUID` | `RAW(16)` | Object reference GUID |
-| `ObjectInsuranceReferenceUUID` | `RAW(16)` | Insurance Reference GUID |
-| `InsuranceReferenceSystem` | `CHAR(6)` | Object System Reference ID |
-| `RealEstateUUID` | `RAW(16)` | GUID for Real Estate Object |
-| `CollateralRealEstateUUID` | `RAW(16)` | GUID for Real Estate Object |
-| `MovableObjectUUID` | `RAW(16)` | GUID for  CMS_MOVABLES |
-| `ShipObjectUUID` | `RAW(16)` | Globally Unique Identifier |
-| `RightsObjectUUID` | `RAW(16)` | Rights GUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectInsuranceLinkUUID` |  | |  |  | `RAW(16)` | Insurance Link GUID |
+| `ObjectReferenceUUID` |  | |  |  | `RAW(16)` | Object reference GUID |
+| `ObjectInsuranceReferenceUUID` |  | |  |  | `RAW(16)` | Insurance Reference GUID |
+| `InsuranceReferenceSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID |
+| `RealEstateUUID` |  | |  |  | `RAW(16)` | GUID for Real Estate Object |
+| `CollateralRealEstateUUID` |  | |  |  | `RAW(16)` | GUID for Real Estate Object |
+| `MovableObjectUUID` |  | |  |  | `RAW(16)` | GUID for  CMS_MOVABLES |
+| `ShipObjectUUID` |  | |  |  | `RAW(16)` | Globally Unique Identifier |
+| `RightsObjectUUID` |  | |  |  | `RAW(16)` | Rights GUID |

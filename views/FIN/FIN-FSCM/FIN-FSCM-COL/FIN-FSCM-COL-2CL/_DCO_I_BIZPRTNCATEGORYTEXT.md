@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `DCoBusinessPartnerCategory` | `CHAR(3)` | Business Partner Category for Collection Process |
-| `DCoBusinessPartnerCategoryName` | `CHAR(50)` | Name of Business Partner Category for Collection Process |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DCoBusinessPartnerCategory` |  | |  |  | `CHAR(3)` | Business Partner Category for Collection Process |
+| `DCoBusinessPartnerCategoryName` |  | |  |  | `CHAR(50)` | Name of Business Partner Category for Collection Process |

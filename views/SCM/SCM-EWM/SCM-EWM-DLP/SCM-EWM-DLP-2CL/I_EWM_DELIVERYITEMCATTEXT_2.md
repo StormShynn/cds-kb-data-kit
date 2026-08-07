@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMInboundDeliveryItemCategory` | `CHAR(3)` | Item Category |
-| `DeliveryItemCategoryName` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMInboundDeliveryItemCategory` |  | |  |  | `CHAR(3)` | Item Category |
+| `DeliveryItemCategoryName` |  | |  |  | `CHAR(40)` | Description |

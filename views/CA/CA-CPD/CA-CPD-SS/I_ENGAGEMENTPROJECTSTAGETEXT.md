@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProjectStage` | `CHAR(4)` | Commercial Project: Stage |
-| `Language` | `LANG(1)` | Language Key |
-| `EngagementProjectStageText` | `CHAR(40)` | Master Project: Stage Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EngagementProjectStageText` |  | |  |  | `CHAR(40)` | Master Project: Stage Description |

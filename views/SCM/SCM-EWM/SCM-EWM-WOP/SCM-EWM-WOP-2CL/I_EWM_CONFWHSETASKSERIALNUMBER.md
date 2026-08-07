@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `WarehouseTask` | `NUMC(12)` | Warehouse Task |
-| `WarehouseTaskItem` | `NUMC(4)` | Warehouse Task Item |
-| `EWMSerialNumber` | `CHAR(30)` | 30 Characters |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `WarehouseTask` |  | |  |  | `NUMC(12)` | Warehouse Task |
+| `WarehouseTaskItem` |  | |  |  | `NUMC(4)` | Warehouse Task Item |
+| `EWMSerialNumber` |  | |  |  | `CHAR(30)` | 30 Characters |

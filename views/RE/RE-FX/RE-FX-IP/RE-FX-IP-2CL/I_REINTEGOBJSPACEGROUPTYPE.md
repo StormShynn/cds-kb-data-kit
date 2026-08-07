@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `REIntegObjSpaceGroupType` | `CHAR(4)` | Group Type |
-| `REIntegObjectCategory` | `CHAR(1)` | Object Category |
-| `RESpaceGroupDirection` | `CHAR(2)` | Group Direction |
-| `REIntegObjectReference` | `CHAR(1)` | Object Reference |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REIntegObjSpaceGroupType` |  | |  |  | `CHAR(4)` | Group Type |
+| `REIntegObjectCategory` |  | |  |  | `CHAR(1)` | Object Category |
+| `RESpaceGroupDirection` |  | |  |  | `CHAR(2)` | Group Direction |
+| `REIntegObjectReference` |  | |  |  | `CHAR(1)` | Object Reference |

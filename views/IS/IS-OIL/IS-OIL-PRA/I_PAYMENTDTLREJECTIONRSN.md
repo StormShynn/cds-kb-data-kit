@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentDetailRejectionRsn` | `CHAR(3)` | Payment Processing - Detail Level Reject Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentDetailRejectionRsn` |  | |  |  | `CHAR(3)` | Payment Processing - Detail Level Reject Code |

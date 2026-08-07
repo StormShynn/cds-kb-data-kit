@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColAgrHtBlRgEnfrcmntWvr` | `CHAR(2)` | Indicator for Waiver of HBR Enforcement |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColAgrHtBlRgEnfrcmntWvr` |  | |  |  | `CHAR(2)` | Indicator for Waiver of HBR Enforcement |

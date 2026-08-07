@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgencyGasDispositionType` | `NUMC(2)` | Royalty 2.0 - TX GLO/TAMU - Royalty Gas Disposition Code |
-| `Language` | `LANG(1)` | Language Key |
-| `AgencyGasDispositionTypeName` | `CHAR(60)` | Royalty TX GLO Agency Gas Disposition Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgencyGasDispositionType` |  | |  |  | `NUMC(2)` | Royalty 2.0 - TX GLO/TAMU - Royalty Gas Disposition Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AgencyGasDispositionTypeName` |  | |  |  | `CHAR(60)` | Royalty TX GLO Agency Gas Disposition Code Name |

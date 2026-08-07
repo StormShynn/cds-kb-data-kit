@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblOrganizationUnit` | `CHAR(10)` | Organization Unit for a Receivable |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralRblOrgUnitText` | `CHAR(40)` | Name Receivable OrgUnit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblOrganizationUnit` |  | |  |  | `CHAR(10)` | Organization Unit for a Receivable |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralRblOrgUnitText` |  | |  |  | `CHAR(40)` | Name Receivable OrgUnit |

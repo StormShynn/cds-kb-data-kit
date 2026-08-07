@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OnOrOffLeaseSale` | `CHAR(1)` | Texas On-/Off-Lease Sale Code |
-| `Language` | `LANG(1)` | Language Key |
-| `OnOrOffLeaseSaleName` | `CHAR(60)` | On-/Off-Lease Sale Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OnOrOffLeaseSale` |  | |  |  | `CHAR(1)` | Texas On-/Off-Lease Sale Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `OnOrOffLeaseSaleName` |  | |  |  | `CHAR(60)` | On-/Off-Lease Sale Name |

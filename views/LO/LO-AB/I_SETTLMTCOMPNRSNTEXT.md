@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtCompensationReason` | `CHAR(4)` | Compensation Reason for a Settlement Management Document |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtCompnRsnDesc` | `CHAR(60)` | Settlement Compensation Reason Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtCompensationReason` |  | |  |  | `CHAR(4)` | Compensation Reason for a Settlement Management Document |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtCompnRsnDesc` |  | |  |  | `CHAR(60)` | Settlement Compensation Reason Description |

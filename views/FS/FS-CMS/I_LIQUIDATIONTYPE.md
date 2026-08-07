@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationType` | `CHAR(6)` | Liquidation Measure Type ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationType` |  | |  |  | `CHAR(6)` | Liquidation Measure Type ID |

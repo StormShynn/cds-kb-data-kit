@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlRealEstateBaseMeasure` | `CHAR(1)` | Base Measure |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlRealEstateBaseMeasure` |  | |  |  | `CHAR(1)` | Base Measure |

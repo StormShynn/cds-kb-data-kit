@@ -35,47 +35,47 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoAccountingDocumentUUID` | `RAW(16)` | UUID of Receivable Item |
-| `BusinessPartner` | `CHAR(10)` | Business Partner |
-| `CompanyCode` | `CHAR(4)` | Company Code (FI System) |
-| `DCoAccountingDocumentOrigin` | `CHAR(5)` | Origin of Receivable Item |
-| `PostingClassification` | `CHAR(10)` | Posting Classification |
-| `PostingSubclassification` | `CHAR(2)` | Posting Subclassification |
-| `DCoAccountingDocumentID` | `CHAR(32)` | ID of Receivable Item |
-| `DCoAccountingDocumentDate` | `DATN(8)` | Document Date |
-| `DCoAcctgDocOriginalDueDate` | `DATS(8)` | Original Due Date of Receivable Item |
-| `DCoAccountingDocumentDueDate` | `DATN(8)` | Current Due Date |
-| `DCoAcctgDocLastPaymentDate` | `DATN(8)` | Last Payment Date |
-| `DCoAccountingDocumentCurrency` | `CUKY(5)` | Currency |
-| `DCoAcctgDocumentOriginalAmount` | `CURR(23)` | Original Amount of Receivable Item |
-| `DCoAcctgDocumentOpenAmount` | `CURR(23)` | Open Amount of Receivable Item |
-| `DCoAcctgDocumentPaidAmount` | `CURR(23)` | Paid Amount of Receivable Item |
-| `DCoAcctgDocumentCreditedAmount` | `CURR(23)` | Credited Amount |
-| `DCoAcctgDocWriteOffAmount` | `CURR(23)` | Amount Written Off for Receivable Item |
-| `DCoAcctgDocCshDiscUsedAmount` | `CURR(23)` | Amount of Used Cash Discount |
-| `DCoAccountingDocumentBranch` | `CHAR(10)` | Branch Account |
-| `PaymentDifferenceReason` | `CHAR(3)` | Payment Difference Reason |
-| `DCoAcctgDocumentCreationUser` | `CHAR(12)` | Created By |
-| `DCoAcctgDocCreationDateTime` | `DEC(15)` | Created On/At |
-| `DCoAcctgDocLastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `DCoAcctgDocLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
-| `DCoDocumentReference` | `CHAR(35)` | Reference Document |
-| `DCoAltvDocumentReference` | `CHAR(35)` | Alternative Reference Document |
-| `DCoAcctgDocumentReference1ID` | `CHAR(35)` | Reference 1 |
-| `DCoAcctgDocumentReference2ID` | `CHAR(35)` | Reference 2 |
-| `DCoAcctgDocumentReference3ID` | `CHAR(35)` | Reference 3 |
-| `DCoAcctgDocIsBlockedForPayment` | `CHAR(1)` | Receivable Item Is Blocked for Payments |
-| `DCoAccountingDocumentNoteText` | `CHAR(100)` | Text for the Receivable Item |
-| `DCoAccountingDocumentIsCleared` | `CHAR(1)` | Receivable Item Is Cleared |
-| `DCoAcctgDocumentLogicalSystem` | `CHAR(10)` | Logical System of Receivable Item |
-| `DCoPaymentIsArranged` | `CHAR(1)` | Payment Is Arranged |
-| `DCoPrdcssrAcctgDocumentUUID` | `RAW(16)` | Predecessor Receivable Item UUID |
-| `DCoOriglAccountingDocumentUUID` | `RAW(16)` | Original Receivable Item UUID |
-| `DCoAcctgDocHierarchyLevelValue` | `INT2(5)` | Receivable Item Hierarchy Level |
-| `DCoRefAccountingDocumentUUID` | `RAW(16)` | Reference Receivable Item UUID |
-| `DCoAcctgDocumentIsReversed` | `CHAR(1)` | Receivable Item Is Reversed |
-| `DCoOriginalReferenceDocument` | `CHAR(20)` | Invoice |
-| `DCoOriglReferenceDocumentType` | `CHAR(5)` | Invoice Type |
-| `DCoOriglRefDocLogicalSystem` | `CHAR(10)` | Logical System of Invoice |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoAccountingDocumentUUID` |  | |  |  | `RAW(16)` | UUID of Receivable Item |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code (FI System) |
+| `DCoAccountingDocumentOrigin` |  | |  |  | `CHAR(5)` | Origin of Receivable Item |
+| `PostingClassification` |  | |  |  | `CHAR(10)` | Posting Classification |
+| `PostingSubclassification` |  | |  |  | `CHAR(2)` | Posting Subclassification |
+| `DCoAccountingDocumentID` |  | |  |  | `CHAR(32)` | ID of Receivable Item |
+| `DCoAccountingDocumentDate` |  | |  |  | `DATN(8)` | Document Date |
+| `DCoAcctgDocOriginalDueDate` |  | |  |  | `DATS(8)` | Original Due Date of Receivable Item |
+| `DCoAccountingDocumentDueDate` |  | |  |  | `DATN(8)` | Current Due Date |
+| `DCoAcctgDocLastPaymentDate` |  | |  |  | `DATN(8)` | Last Payment Date |
+| `DCoAccountingDocumentCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `DCoAcctgDocumentOriginalAmount` |  | |  |  | `CURR(23)` | Original Amount of Receivable Item |
+| `DCoAcctgDocumentOpenAmount` |  | |  |  | `CURR(23)` | Open Amount of Receivable Item |
+| `DCoAcctgDocumentPaidAmount` |  | |  |  | `CURR(23)` | Paid Amount of Receivable Item |
+| `DCoAcctgDocumentCreditedAmount` |  | |  |  | `CURR(23)` | Credited Amount |
+| `DCoAcctgDocWriteOffAmount` |  | |  |  | `CURR(23)` | Amount Written Off for Receivable Item |
+| `DCoAcctgDocCshDiscUsedAmount` |  | |  |  | `CURR(23)` | Amount of Used Cash Discount |
+| `DCoAccountingDocumentBranch` |  | |  |  | `CHAR(10)` | Branch Account |
+| `PaymentDifferenceReason` |  | |  |  | `CHAR(3)` | Payment Difference Reason |
+| `DCoAcctgDocumentCreationUser` |  | |  |  | `CHAR(12)` | Created By |
+| `DCoAcctgDocCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DCoAcctgDocLastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DCoAcctgDocLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |
+| `DCoDocumentReference` |  | |  |  | `CHAR(35)` | Reference Document |
+| `DCoAltvDocumentReference` |  | |  |  | `CHAR(35)` | Alternative Reference Document |
+| `DCoAcctgDocumentReference1ID` |  | |  |  | `CHAR(35)` | Reference 1 |
+| `DCoAcctgDocumentReference2ID` |  | |  |  | `CHAR(35)` | Reference 2 |
+| `DCoAcctgDocumentReference3ID` |  | |  |  | `CHAR(35)` | Reference 3 |
+| `DCoAcctgDocIsBlockedForPayment` |  | |  |  | `CHAR(1)` | Receivable Item Is Blocked for Payments |
+| `DCoAccountingDocumentNoteText` |  | |  |  | `CHAR(100)` | Text for the Receivable Item |
+| `DCoAccountingDocumentIsCleared` |  | |  |  | `CHAR(1)` | Receivable Item Is Cleared |
+| `DCoAcctgDocumentLogicalSystem` |  | |  |  | `CHAR(10)` | Logical System of Receivable Item |
+| `DCoPaymentIsArranged` |  | |  |  | `CHAR(1)` | Payment Is Arranged |
+| `DCoPrdcssrAcctgDocumentUUID` |  | |  |  | `RAW(16)` | Predecessor Receivable Item UUID |
+| `DCoOriglAccountingDocumentUUID` |  | |  |  | `RAW(16)` | Original Receivable Item UUID |
+| `DCoAcctgDocHierarchyLevelValue` |  | |  |  | `INT2(5)` | Receivable Item Hierarchy Level |
+| `DCoRefAccountingDocumentUUID` |  | |  |  | `RAW(16)` | Reference Receivable Item UUID |
+| `DCoAcctgDocumentIsReversed` |  | |  |  | `CHAR(1)` | Receivable Item Is Reversed |
+| `DCoOriginalReferenceDocument` |  | |  |  | `CHAR(20)` | Invoice |
+| `DCoOriglReferenceDocumentType` |  | |  |  | `CHAR(5)` | Invoice Type |
+| `DCoOriglRefDocLogicalSystem` |  | |  |  | `CHAR(10)` | Logical System of Invoice |

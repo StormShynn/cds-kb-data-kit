@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProducerOrPurchaserCode` | `CHAR(1)` | Producer or Purchaser |
-| `Language` | `LANG(1)` | Language Key |
-| `ProducerOrPurchaserCodeName` | `CHAR(60)` | Producer or Purchaser Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProducerOrPurchaserCode` |  | |  |  | `CHAR(1)` | Producer or Purchaser |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProducerOrPurchaserCodeName` |  | |  |  | `CHAR(60)` | Producer or Purchaser Code Name |

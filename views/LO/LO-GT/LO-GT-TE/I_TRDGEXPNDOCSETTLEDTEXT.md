@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TrdgExpnDocSettled` | `CHAR(1)` | Trading Expense Document Settled Indicator |
-| `Language` | `LANG(1)` | Language Key |
-| `TrdgExpnDocSettledName` | `CHAR(60)` | Description of Trading Expense Settlement Indicator |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TrdgExpnDocSettled` |  | |  |  | `CHAR(1)` | Trading Expense Document Settled Indicator |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TrdgExpnDocSettledName` |  | |  |  | `CHAR(60)` | Description of Trading Expense Settlement Indicator |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

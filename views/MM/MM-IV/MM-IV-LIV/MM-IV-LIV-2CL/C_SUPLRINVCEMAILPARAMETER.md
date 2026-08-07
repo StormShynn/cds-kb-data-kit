@@ -35,16 +35,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SupplierInvoice` | `CHAR(10)` | Document Number of an Invoice Document |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `DocumentDate` | `DATS(8)` | Invoice Date in Document |
-| `CreationDate` | `DATS(8)` | Day On Which Accounting Document Was Entered |
-| `SupplierInvoiceIDByInvcgParty` | `CHAR(16)` | Reference Document Number |
-| `InvoicingParty` | `CHAR(10)` | Different Invoicing Party |
-| `BPSupplierName` | `CHAR(81)` | Supplier Name |
-| `DocumentCurrency` | `CUKY(5)` | Currency Key |
-| `InvoiceGrossAmount` | `CURR(13)` | Gross Invoice Amount in Document Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SupplierInvoice` |  | |  |  | `CHAR(10)` | Document Number of an Invoice Document |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Invoice Date in Document |
+| `CreationDate` |  | |  |  | `DATS(8)` | Day On Which Accounting Document Was Entered |
+| `SupplierInvoiceIDByInvcgParty` |  | |  |  | `CHAR(16)` | Reference Document Number |
+| `InvoicingParty` |  | |  |  | `CHAR(10)` | Different Invoicing Party |
+| `BPSupplierName` |  | |  |  | `CHAR(81)` | Supplier Name |
+| `DocumentCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `InvoiceGrossAmount` |  | |  |  | `CURR(13)` | Gross Invoice Amount in Document Currency |

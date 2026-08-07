@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyAcqnType` | `NUMC(3)` | Acquisition Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyAcqnType` |  | |  |  | `NUMC(3)` | Acquisition Type |

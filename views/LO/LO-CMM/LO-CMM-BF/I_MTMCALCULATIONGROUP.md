@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MTMCalculationGroup` | `CHAR(1)` | MtM Calculation Group |
-| `ConditionApplication` | `CHAR(2)` | Application |
-| `PricingProcedure` | `CHAR(6)` | Procedure (Pricing, Output Control, Acct. Det., Costing,...) |
-| `ConditionType` | `CHAR(4)` | Leading Condition within a calculation group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MTMCalculationGroup` |  | |  |  | `CHAR(1)` | MtM Calculation Group |
+| `ConditionApplication` |  | |  |  | `CHAR(2)` | Application |
+| `PricingProcedure` |  | |  |  | `CHAR(6)` | Procedure (Pricing, Output Control, Acct. Det., Costing,...) |
+| `ConditionType` |  | |  |  | `CHAR(4)` | Leading Condition within a calculation group |

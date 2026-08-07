@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ItemDistributionStatus` | `CHAR(1)` | Distribution Status of Settlement Item |
-| `Language` | `LANG(1)` | Language Key |
-| `ItemDistributionStatusName` | `CHAR(60)` | Description of Distribution Status |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ItemDistributionStatus` |  | |  |  | `CHAR(1)` | Distribution Status of Settlement Item |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ItemDistributionStatusName` |  | |  |  | `CHAR(60)` | Description of Distribution Status |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

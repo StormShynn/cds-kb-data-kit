@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanBranchOffice` | `CHAR(4)` | Branch Office |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanBranchOffice` |  | |  |  | `CHAR(4)` | Branch Office |

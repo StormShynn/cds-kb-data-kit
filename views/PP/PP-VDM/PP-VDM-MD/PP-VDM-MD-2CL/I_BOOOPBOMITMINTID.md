@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsType` | `CHAR(1)` | Task List Type |
-| `BillOfOperationsGroup` | `CHAR(8)` | Key for Task List Group |
-| `BOOOpBOMItemInternalID` | `NUMC(8)` | No. for material comp. allocation to task list |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `BillOfOperationsGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `BOOOpBOMItemInternalID` |  | |  |  | `NUMC(8)` | No. for material comp. allocation to task list |

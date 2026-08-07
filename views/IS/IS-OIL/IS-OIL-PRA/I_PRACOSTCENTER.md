@@ -33,17 +33,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `CostCtrResponsiblePersonName` | `CHAR(20)` | Person Responsible |
-| `CostCtrResponsibleUser` | `CHAR(12)` | User Responsible |
-| `CostCenterCurrency` | `CUKY(5)` | Currency Key |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `Department` | `CHAR(12)` | Department |
-| `CostingSheet` | `CHAR(6)` | Costing Sheet |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `CostCtrResponsiblePersonName` |  | |  |  | `CHAR(20)` | Person Responsible |
+| `CostCtrResponsibleUser` |  | |  |  | `CHAR(12)` | User Responsible |
+| `CostCenterCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `Department` |  | |  |  | `CHAR(12)` | Department |
+| `CostingSheet` |  | |  |  | `CHAR(6)` | Costing Sheet |

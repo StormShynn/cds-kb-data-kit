@@ -33,16 +33,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DeliveryNetwork` | `CHAR(20)` | Delivery network number |
-| `DeliveryNetworkName` | `CHAR(35)` | Delivery network description |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `PrimaryGeogrlLocation` | `CHAR(2)` | Primary Geographical Location |
-| `SecondaryGeogrlLocation` | `CHAR(3)` | Secondary geographic location |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `JointVenture` | `CHAR(6)` | Joint Venture |
-| `DeliveryNetworkType` | `CHAR(1)` | Delivery network type code |
-| `DeliveryNetworkHier` | `CHAR(15)` | Delivery Network Hierarchy Group |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Created On Timestamp |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryNetwork` |  | |  |  | `CHAR(20)` | Delivery network number |
+| `DeliveryNetworkName` |  | |  |  | `CHAR(35)` | Delivery network description |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `PrimaryGeogrlLocation` |  | |  |  | `CHAR(2)` | Primary Geographical Location |
+| `SecondaryGeogrlLocation` |  | |  |  | `CHAR(3)` | Secondary geographic location |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
+| `DeliveryNetworkType` |  | |  |  | `CHAR(1)` | Delivery network type code |
+| `DeliveryNetworkHier` |  | |  |  | `CHAR(15)` | Delivery Network Hierarchy Group |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Created On Timestamp |

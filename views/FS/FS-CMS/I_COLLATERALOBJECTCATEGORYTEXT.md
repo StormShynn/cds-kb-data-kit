@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralObjectCategory` | `CHAR(6)` | Object Category |
-| `Language` | `LANG(1)` | Language Key |
-| `CollateralObjectCategoryText` | `CHAR(40)` | Object Category Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CollateralObjectCategoryText` |  | |  |  | `CHAR(40)` | Object Category Name |

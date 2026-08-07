@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgencyReportType` | `CHAR(1)` | Royalty 2.0 - TX GLOTAMU - Original Report |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgencyReportType` |  | |  |  | `CHAR(1)` | Royalty 2.0 - TX GLOTAMU - Original Report |

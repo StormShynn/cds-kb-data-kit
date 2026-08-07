@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CalculationRootUUID` | `RAW(16)` | NodeID |
-| `EHSCalculationSetupName` | `CHAR(60)` | Calculation Name |
-| `EHSLocationUUID` | `RAW(16)` | NodeID |
-| `DataUsagePeriodicity` | `CHAR(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalculationRootUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSCalculationSetupName` |  | |  |  | `CHAR(60)` | Calculation Name |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `DataUsagePeriodicity` |  | |  |  | `CHAR(3)` |  |

@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InvoicingStatus` | `CHAR(2)` | Invoicing Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvoicingStatus` |  | |  |  | `CHAR(2)` | Invoicing Status |

@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BlockStatus` | `CHAR(2)` | Block Status |
-| `Language` | `LANG(1)` | Language Key |
-| `BlockStatusDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BlockStatus` |  | |  |  | `CHAR(2)` | Block Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BlockStatusDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

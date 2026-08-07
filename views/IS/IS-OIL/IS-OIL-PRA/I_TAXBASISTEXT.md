@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxBasis` | `CHAR(2)` | Tax Free Code |
-| `Language` | `LANG(1)` | Language Key |
-| `TaxBasisName` | `CHAR(50)` | Tax Free Code Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxBasis` |  | |  |  | `CHAR(2)` | Tax Free Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TaxBasisName` |  | |  |  | `CHAR(50)` | Tax Free Code Description |

@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ProductDistributionProfile` | `CHAR(3)` | Product Distribution Profile |
-| `ProductDistributionProfileName` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProductDistributionProfile` |  | |  |  | `CHAR(3)` | Product Distribution Profile |
+| `ProductDistributionProfileName` |  | |  |  | `CHAR(40)` | Description |

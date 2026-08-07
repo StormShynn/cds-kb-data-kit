@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ShipObjectClass` | `CHAR(2)` | Specifies whether the Ship is Sea Ship or Inland Ship |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShipObjectClass` |  | |  |  | `CHAR(2)` | Specifies whether the Ship is Sea Ship or Inland Ship |

@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Store` | `CHAR(4)` | Plant |
-| `AssignedUser` | `CHAR(12)` | User ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Store` |  | |  |  | `CHAR(4)` | Plant |
+| `AssignedUser` |  | |  |  | `CHAR(12)` | User ID |

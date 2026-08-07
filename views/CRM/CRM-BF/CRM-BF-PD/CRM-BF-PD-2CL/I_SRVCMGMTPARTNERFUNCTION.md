@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustMgmtPartnerFunction` | `CHAR(8)` | Partner Function |
-| `SrvcMgmtPrtnFuncApplication` | `CHAR(4)` | Partner Function Sub-Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtPartnerFunction` |  | |  |  | `CHAR(8)` | Partner Function |
+| `SrvcMgmtPrtnFuncApplication` |  | |  |  | `CHAR(4)` | Partner Function Sub-Type |

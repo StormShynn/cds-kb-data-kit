@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SrvcDocDurationType` | `CHAR(12)` | Name for Type of Time Duration |
-| `Language` | `LANG(1)` | Language Key |
-| `SrvcDocDurationTypeText` | `CHAR(40)` | Descriptive text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SrvcDocDurationType` |  | |  |  | `CHAR(12)` | Name for Type of Time Duration |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SrvcDocDurationTypeText` |  | |  |  | `CHAR(40)` | Descriptive text |

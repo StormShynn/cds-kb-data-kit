@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustMgmtDateRuleName` | `CHAR(12)` | Name for Date Rule |
-| `CustMgmtDateRuleUUID` | `RAW(16)` | ID for Date Rule |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtDateRuleName` |  | |  |  | `CHAR(12)` | Name for Date Rule |
+| `CustMgmtDateRuleUUID` |  | |  |  | `RAW(16)` | ID for Date Rule |

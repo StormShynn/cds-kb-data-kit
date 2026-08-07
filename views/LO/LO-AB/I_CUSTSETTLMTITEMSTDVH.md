@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustSettlmt` | `CHAR(10)` | Customer Settlement |
-| `CustSettlmtItem` | `NUMC(6)` | Document Item |
-| `CustomerSettlmtRecipient` | `CHAR(10)` | Customer Settlement Recipient |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustSettlmt` |  | |  |  | `CHAR(10)` | Customer Settlement |
+| `CustSettlmtItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `CustomerSettlmtRecipient` |  | |  |  | `CHAR(10)` | Customer Settlement Recipient |

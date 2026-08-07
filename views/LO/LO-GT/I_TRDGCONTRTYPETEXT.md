@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `TradingContractType` | `CHAR(4)` | Reference Document Type |
-| `TrdgContrTypeName` | `CHAR(40)` | Trading Contract Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TradingContractType` |  | |  |  | `CHAR(4)` | Reference Document Type |
+| `TrdgContrTypeName` |  | |  |  | `CHAR(40)` | Trading Contract Type Description |

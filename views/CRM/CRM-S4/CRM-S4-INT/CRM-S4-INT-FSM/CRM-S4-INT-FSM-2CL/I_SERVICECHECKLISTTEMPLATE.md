@@ -34,20 +34,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceChecklistTemplate` | `CHAR(10)` | Template ID |
-| `SrvcChklstTmplStatus` | `CHAR(1)` | Template Status |
-| `SrvcChklstTmplCategory` | `CHAR(10)` | Checklist Template Category ID |
-| `SrvcChklstCreationDateTime` | `DEC(21)` | Created At |
-| `SrvcChklstCreatedByUser` | `CHAR(12)` | Created By |
-| `SrvcChklstChangedDateTime` | `DEC(21)` | Last Changed At |
-| `SrvcChklstChangedByUser` | `CHAR(12)` | Last Changed By |
-| `FSMChecklistTemplateUUID` | `RAW(16)` | FSM Template ID |
-| `FSMChecklistCategoryUUID` | `RAW(16)` | FSM Category ID |
-| `FSMAccount` | `CHAR(10)` | FSM Account ID |
-| `FSMCompany` | `CHAR(10)` | FSM Company ID |
-| `FSMChecklistTemplateGroupUUID` | `RAW(16)` | FSM Checklist Template Group UUID |
-| `FSMChecklistRequest` | `CHAR(40)` | Request ID |
-| `SrvcChklstTmplVersion` | `INT1(3)` | Version |
-| `SrvcChklstLanguage` | `LANG(1)` | Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceChecklistTemplate` |  | |  |  | `CHAR(10)` | Template ID |
+| `SrvcChklstTmplStatus` |  | |  |  | `CHAR(1)` | Template Status |
+| `SrvcChklstTmplCategory` |  | |  |  | `CHAR(10)` | Checklist Template Category ID |
+| `SrvcChklstCreationDateTime` |  | |  |  | `DEC(21)` | Created At |
+| `SrvcChklstCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `SrvcChklstChangedDateTime` |  | |  |  | `DEC(21)` | Last Changed At |
+| `SrvcChklstChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `FSMChecklistTemplateUUID` |  | |  |  | `RAW(16)` | FSM Template ID |
+| `FSMChecklistCategoryUUID` |  | |  |  | `RAW(16)` | FSM Category ID |
+| `FSMAccount` |  | |  |  | `CHAR(10)` | FSM Account ID |
+| `FSMCompany` |  | |  |  | `CHAR(10)` | FSM Company ID |
+| `FSMChecklistTemplateGroupUUID` |  | |  |  | `RAW(16)` | FSM Checklist Template Group UUID |
+| `FSMChecklistRequest` |  | |  |  | `CHAR(40)` | Request ID |
+| `SrvcChklstTmplVersion` |  | |  |  | `INT1(3)` | Version |
+| `SrvcChklstLanguage` |  | |  |  | `LANG(1)` | Language |

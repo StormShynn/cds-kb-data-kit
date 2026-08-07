@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BillingDocumentClearingStatus` | `CHAR(1)` | Billing Document Clearing Status |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `BillingDocClearingStatusName` | `CHAR(60)` | Billing Document Clearing Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BillingDocumentClearingStatus` |  | |  |  | `CHAR(1)` | Billing Document Clearing Status |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `BillingDocClearingStatusName` |  | |  |  | `CHAR(60)` | Billing Document Clearing Status Name |

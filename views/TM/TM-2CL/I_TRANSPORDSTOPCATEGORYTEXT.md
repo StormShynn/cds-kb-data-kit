@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdStopCategory` | `CHAR(1)` | Stop Category |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdStopCategoryDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStopCategory` |  | |  |  | `CHAR(1)` | Stop Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdStopCategoryDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

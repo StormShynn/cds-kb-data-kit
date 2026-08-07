@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `Activity` | `CHAR(4)` | Activity |
-| `WarehouseProcessCategory` | `CHAR(1)` | Warehouse Process Category |
-| `ExternalStorageProcessStep` | `CHAR(4)` | External Process Step for Workload Record for Whse Order |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `Activity` |  | |  |  | `CHAR(4)` | Activity |
+| `WarehouseProcessCategory` |  | |  |  | `CHAR(1)` | Warehouse Process Category |
+| `ExternalStorageProcessStep` |  | |  |  | `CHAR(4)` | External Process Step for Workload Record for Whse Order |

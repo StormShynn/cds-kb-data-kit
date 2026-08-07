@@ -34,17 +34,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerRatingProcedure` | `CHAR(10)` | Rating Procedure |
-| `BPRatingValidityEndDate` | `DATS(8)` | Valid-to Date for Rating |
-| `BPRatingValidityStartDate` | `DATS(8)` | Valid-from Date for Rating |
-| `BusinessPartnerRatingGrade` | `CHAR(10)` | Rating |
-| `BusinessPartnerRatingTrend` | `CHAR(2)` | Trend |
-| `BPRatingCreationDate` | `DATS(8)` | Entered-on Date for Rating |
-| `BusinessPartnerRatingComment` | `CHAR(60)` | Text for Ratings |
-| `BusinessPartnerRatingIsAllowed` | `CHAR(1)` | Rating Allowed |
-| `BPRatingIsValidOnKeyDate` | `CHAR(1)` | Business Partner Rating is valid on Key Date |
-| `BusinessPartnerRatingIsExpired` | `CHAR(1)` | Rating Validity is Expired according to Permitted Period |
-| `NumberOfRecords` | `INT4(10)` | Number of Records |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerRatingProcedure` |  | |  |  | `CHAR(10)` | Rating Procedure |
+| `BPRatingValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to Date for Rating |
+| `BPRatingValidityStartDate` |  | |  |  | `DATS(8)` | Valid-from Date for Rating |
+| `BusinessPartnerRatingGrade` |  | |  |  | `CHAR(10)` | Rating |
+| `BusinessPartnerRatingTrend` |  | |  |  | `CHAR(2)` | Trend |
+| `BPRatingCreationDate` |  | |  |  | `DATS(8)` | Entered-on Date for Rating |
+| `BusinessPartnerRatingComment` |  | |  |  | `CHAR(60)` | Text for Ratings |
+| `BusinessPartnerRatingIsAllowed` |  | |  |  | `CHAR(1)` | Rating Allowed |
+| `BPRatingIsValidOnKeyDate` |  | |  |  | `CHAR(1)` | Business Partner Rating is valid on Key Date |
+| `BusinessPartnerRatingIsExpired` |  | |  |  | `CHAR(1)` | Rating Validity is Expired according to Permitted Period |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Records |

@@ -33,19 +33,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ContactPerson` | `NUMC(10)` | Number of Contact Person |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `Supplier` | `CHAR(10)` | Account Number of Supplier |
-| `ContactPersonFunction` | `CHAR(2)` | Contact person function |
-| `ContactPersonDepartment` | `CHAR(4)` | Contact person department |
-| `SearchTerm` | `CHAR(10)` | Sort Field |
-| `PersonNumber` | `CHAR(10)` | Person Number |
-| `UpperCaseFirstName` | `CHAR(25)` | First Name in Uppercase for Search Help |
-| `UpperCaseLastName` | `CHAR(25)` | Last Name in Uppercase for Search Help |
-| `FirstName` | `CHAR(40)` | First Name |
-| `LastName` | `CHAR(40)` | Last Name |
-| `ValidityStartDate` | `DATS(8)` | Valid-from date - in current Release only 00010101 possible |
-| `AddressRepresentationCode` | `CHAR(1)` | Version ID for International Addresses |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ContactPerson` |  | |  |  | `NUMC(10)` | Number of Contact Person |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `ContactPersonFunction` |  | |  |  | `CHAR(2)` | Contact person function |
+| `ContactPersonDepartment` |  | |  |  | `CHAR(4)` | Contact person department |
+| `SearchTerm` |  | |  |  | `CHAR(10)` | Sort Field |
+| `PersonNumber` |  | |  |  | `CHAR(10)` | Person Number |
+| `UpperCaseFirstName` |  | |  |  | `CHAR(25)` | First Name in Uppercase for Search Help |
+| `UpperCaseLastName` |  | |  |  | `CHAR(25)` | Last Name in Uppercase for Search Help |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-from date - in current Release only 00010101 possible |
+| `AddressRepresentationCode` |  | |  |  | `CHAR(1)` | Version ID for International Addresses |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |

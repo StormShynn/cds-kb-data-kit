@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblProduct` | `CHAR(12)` | Product of Receivable |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblProduct` |  | |  |  | `CHAR(12)` | Product of Receivable |

@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MblUsrClntStateTechEntityType` | `CHAR(40)` | oMDO - Technical Entity Type |
-| `OMDOModelEntityTypeName` | `CHAR(128)` | Service Builder: Artifact Name |
-| `ODataMobileDataObject` | `CHAR(40)` | oData Mobile Data Object Id |
-| `OMDOOperation` | `CHAR(30)` | oMDO Operation |
-| `MobileUserInternal` | `CHAR(32)` | User GUID |
-| `MobileUserApplication` | `CHAR(30)` | Mobile Application Name |
-| `MobileUserHasUserSwitched` | `CHAR(1)` | Boolean Type: 'X' == True '' == False |
-| `MntMblAppClntStateInitSyncDate` | `DATS(8)` |  |
-| `MntMblAppClntStateInitSyncYear` | `NUMC(4)` | Calendar Year |
-| `MntMblAppClntStateInitSyncMnth` | `NUMC(2)` | Calendar Month |
-| `MobileUserClientStateIsActive` | `CHAR(1)` | Boolean Type: 'X' == True '' == False |
-| `LastChangeDate` | `DATS(8)` |  |
-| `MaintMblApplClntStateLastChgYr` | `NUMC(4)` | Calendar Year |
-| `MntMblAppClntStateLastChgMonth` | `NUMC(2)` | Calendar Month |
-| `MblUsrNumberOfClientStateKeys` | `INT4(10)` | 4 Byte Signed Integer |
-| `MntMblAppNrOfClntStateRecords` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MblUsrClntStateTechEntityType` |  | |  |  | `CHAR(40)` | oMDO - Technical Entity Type |
+| `OMDOModelEntityTypeName` |  | |  |  | `CHAR(128)` | Service Builder: Artifact Name |
+| `ODataMobileDataObject` |  | |  |  | `CHAR(40)` | oData Mobile Data Object Id |
+| `OMDOOperation` |  | |  |  | `CHAR(30)` | oMDO Operation |
+| `MobileUserInternal` |  | |  |  | `CHAR(32)` | User GUID |
+| `MobileUserApplication` |  | |  |  | `CHAR(30)` | Mobile Application Name |
+| `MobileUserHasUserSwitched` |  | |  |  | `CHAR(1)` | Boolean Type: 'X' == True '' == False |
+| `MntMblAppClntStateInitSyncDate` |  | |  |  | `DATS(8)` |  |
+| `MntMblAppClntStateInitSyncYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `MntMblAppClntStateInitSyncMnth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `MobileUserClientStateIsActive` |  | |  |  | `CHAR(1)` | Boolean Type: 'X' == True '' == False |
+| `LastChangeDate` |  | |  |  | `DATS(8)` |  |
+| `MaintMblApplClntStateLastChgYr` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `MntMblAppClntStateLastChgMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `MblUsrNumberOfClientStateKeys` |  | |  |  | `INT4(10)` | 4 Byte Signed Integer |
+| `MntMblAppNrOfClntStateRecords` |  | |  |  | `INT1(3)` |  |

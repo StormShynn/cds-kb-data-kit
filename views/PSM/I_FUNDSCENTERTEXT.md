@@ -28,13 +28,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundsCenter` | `CHAR(16)` | Funds Center |
-| `ValidityEndDate` | `DATS(8)` | Funds Center Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Funds Center Validity Start Date |
-| `FundsCenterName` | `CHAR(20)` | Funds Center Name |
-| `FundsCenterDescription` | `CHAR(40)` | Funds Center Description |
-| `FundsCenterSearchTerm` | `CHAR(20)` | Search Term for Matchcode Search |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundsCenter` |  | |  |  | `CHAR(16)` | Funds Center |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Funds Center Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Funds Center Validity Start Date |
+| `FundsCenterName` |  | |  |  | `CHAR(20)` | Funds Center Name |
+| `FundsCenterDescription` |  | |  |  | `CHAR(40)` | Funds Center Description |
+| `FundsCenterSearchTerm` |  | |  |  | `CHAR(20)` | Search Term for Matchcode Search |

@@ -35,14 +35,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `AccountingDocumentType` | `CHAR(2)` | Journal Entry Type |
-| `DocumentDate` | `DATS(8)` | Journal Entry Date |
-| `PostingDate` | `DATS(8)` | Posting Date |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `UserDescription` | `CHAR(80)` | User Description |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `UserDescription` |  | |  |  | `CHAR(80)` | User Description |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |

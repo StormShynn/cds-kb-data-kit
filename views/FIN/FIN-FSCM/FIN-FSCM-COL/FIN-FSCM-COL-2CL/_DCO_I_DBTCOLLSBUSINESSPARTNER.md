@@ -35,13 +35,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `DebtCollectionsSegmentGroup` | `CHAR(10)` | Collection Segment Group |
-| `DCoBusinessPartnerCategory` | `CHAR(3)` | Business Partner Category for Collection Process |
-| `DCoBusinessPartnerCreatedBy` | `CHAR(12)` | Created By |
-| `DCoBizPrtnCreationDateTime` | `DEC(15)` | Created On/At |
-| `DCoBizPrtnLastChangedBy` | `CHAR(12)` | Last Changed By |
-| `DCoBizPrtnLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `DebtCollectionsSegmentGroup` |  | |  |  | `CHAR(10)` | Collection Segment Group |
+| `DCoBusinessPartnerCategory` |  | |  |  | `CHAR(3)` | Business Partner Category for Collection Process |
+| `DCoBusinessPartnerCreatedBy` |  | |  |  | `CHAR(12)` | Created By |
+| `DCoBizPrtnCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DCoBizPrtnLastChangedBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DCoBizPrtnLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |

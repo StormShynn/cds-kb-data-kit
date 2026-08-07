@@ -33,16 +33,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CrdtMgmtBPChangeUUID` | `CHAR(32)` | GUID of a Master Data Change |
-| `CrdtMgmtBPChangeDateTime` | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CreditWorthinessScoreValue` | `CHAR(10)` | Score |
-| `PrevCreditWorthinessScoreValue` | `CHAR(10)` | Previous Internal Score |
-| `CrdtWrthnssScoreNumericValue` | `DEC(12)` | New Internal Score (Numeric) |
-| `OldCrdtWrthnssScrNumericValue` | `DEC(12)` | Old Internal Score (Numeric) |
-| `CrdtWrthnssScoreChangePercent` | `DEC(6)` | Change to Internal Score (in Percent) |
-| `CrdtWrthnssScrAdjustmentValue` | `DEC(10)` | Delta Value of Internal Score |
-| `CreditScoreAndLimitCalcRule` | `CHAR(10)` | Rule for Calculating Score and Credit Limit |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CrdtMgmtBPChangeUUID` |  | |  |  | `CHAR(32)` | GUID of a Master Data Change |
+| `CrdtMgmtBPChangeDateTime` |  | |  |  | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CreditWorthinessScoreValue` |  | |  |  | `CHAR(10)` | Score |
+| `PrevCreditWorthinessScoreValue` |  | |  |  | `CHAR(10)` | Previous Internal Score |
+| `CrdtWrthnssScoreNumericValue` |  | |  |  | `DEC(12)` | New Internal Score (Numeric) |
+| `OldCrdtWrthnssScrNumericValue` |  | |  |  | `DEC(12)` | Old Internal Score (Numeric) |
+| `CrdtWrthnssScoreChangePercent` |  | |  |  | `DEC(6)` | Change to Internal Score (in Percent) |
+| `CrdtWrthnssScrAdjustmentValue` |  | |  |  | `DEC(10)` | Delta Value of Internal Score |
+| `CreditScoreAndLimitCalcRule` |  | |  |  | `CHAR(10)` | Rule for Calculating Score and Credit Limit |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |

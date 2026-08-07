@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ReferenceInterestRate` | `CHAR(10)` | Reference Interest Rate |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `Currency` | `CUKY(5)` | Currency Key |
-| `EffectiveInterestRate` | `DEC(10)` | Interest Rate |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ReferenceInterestRate` |  | |  |  | `CHAR(10)` | Reference Interest Rate |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `EffectiveInterestRate` |  | |  |  | `DEC(10)` | Interest Rate |

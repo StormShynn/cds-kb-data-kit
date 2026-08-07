@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdStopHndlgExecStatus` | `CHAR(2)` | Handling Execution Status at Stop Level |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStopHndlgExecStatus` |  | |  |  | `CHAR(2)` | Handling Execution Status at Stop Level |

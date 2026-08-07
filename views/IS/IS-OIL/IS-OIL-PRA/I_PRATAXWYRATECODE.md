@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxCode` | `CHAR(3)` | Tax 2.0 - Wyoming Rate Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxCode` |  | |  |  | `CHAR(3)` | Tax 2.0 - Wyoming Rate Code |

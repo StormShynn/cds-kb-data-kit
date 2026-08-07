@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationSegmentHierarchy` | `CHAR(40)` | Consolidation Segment Hierarchy |
-| `ConsolidationSegmentHierText` | `CHAR(50)` | Consolidation Hierarchy Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationSegmentHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Segment Hierarchy |
+| `ConsolidationSegmentHierText` |  | |  |  | `CHAR(50)` | Consolidation Hierarchy Description |

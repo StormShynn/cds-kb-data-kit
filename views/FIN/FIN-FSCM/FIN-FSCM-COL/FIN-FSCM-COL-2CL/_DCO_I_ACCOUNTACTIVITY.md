@@ -35,22 +35,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `DCoAccountUUID` | `RAW(16)` | UUID of Collection Account |
-| `DCoActivityUUID` | `RAW(16)` | Activity UUID |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `DebtCollectionsSegment` | `CHAR(10)` | Collection Segment |
-| `DCoDebtCollectionsActivity` | `CHAR(12)` | Activity in Collection Process |
-| `DCoActyMainCustContactPerson` | `CHAR(10)` | Main Customer Contact Person for Activity |
-| `DCoActivityDirection` | `CHAR(1)` | Activity Direction |
-| `DCoActivityType` | `CHAR(2)` | Activity Type |
-| `DCoActivityResult` | `CHAR(2)` | Activity Result |
-| `DCoActivityIsMigrated` | `CHAR(1)` | Activity Is Migrated |
-| `DCoWorklistItemIsFinalized` | `CHAR(1)` | Worklist Item Is Completed |
-| `DCoActivityCreatedByUser` | `CHAR(12)` | Created By |
-| `DCoActivityCreationDateTime` | `DEC(15)` | Created On/At |
-| `DCoActivityLastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `DCoActivityLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
-| `DCoActivityCriticality` | `INT1(3)` | Activity Criticality |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `DCoAccountUUID` |  | |  |  | `RAW(16)` | UUID of Collection Account |
+| `DCoActivityUUID` |  | |  |  | `RAW(16)` | Activity UUID |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `DebtCollectionsSegment` |  | |  |  | `CHAR(10)` | Collection Segment |
+| `DCoDebtCollectionsActivity` |  | |  |  | `CHAR(12)` | Activity in Collection Process |
+| `DCoActyMainCustContactPerson` |  | |  |  | `CHAR(10)` | Main Customer Contact Person for Activity |
+| `DCoActivityDirection` |  | |  |  | `CHAR(1)` | Activity Direction |
+| `DCoActivityType` |  | |  |  | `CHAR(2)` | Activity Type |
+| `DCoActivityResult` |  | |  |  | `CHAR(2)` | Activity Result |
+| `DCoActivityIsMigrated` |  | |  |  | `CHAR(1)` | Activity Is Migrated |
+| `DCoWorklistItemIsFinalized` |  | |  |  | `CHAR(1)` | Worklist Item Is Completed |
+| `DCoActivityCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `DCoActivityCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DCoActivityLastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DCoActivityLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |
+| `DCoActivityCriticality` |  | |  |  | `INT1(3)` | Activity Criticality |

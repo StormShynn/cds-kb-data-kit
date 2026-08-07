@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintOrdProcessSubPhaseCode` | `CHAR(4)` | Process Subphase |
-| `Language` | `LANG(1)` | Language Key |
-| `MaintOrdProcessSubPhaseCodeTxt` | `CHAR(40)` | Description of Overall Process Subphase |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrdProcessSubPhaseCode` |  | |  |  | `CHAR(4)` | Process Subphase |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MaintOrdProcessSubPhaseCodeTxt` |  | |  |  | `CHAR(40)` | Description of Overall Process Subphase |

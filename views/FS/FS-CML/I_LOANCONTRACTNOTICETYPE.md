@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanContrNtcType` | `NUMC(3)` | Notice Type for the Loan |
-| `LoanContrNtcAdjmtType` | `NUMC(2)` | Adjustment Indicator for Notice Fields |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanContrNtcType` |  | |  |  | `NUMC(3)` | Notice Type for the Loan |
+| `LoanContrNtcAdjmtType` |  | |  |  | `NUMC(2)` | Adjustment Indicator for Notice Fields |

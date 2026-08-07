@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AvailabilityControlProfile` | `CHAR(6)` | Budget Availability Control Profile for Public Sector Mgmt |
-| `BudgetScenario` | `CHAR(30)` | Budgeting Scenario |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AvailabilityControlProfile` |  | |  |  | `CHAR(6)` | Budget Availability Control Profile for Public Sector Mgmt |
+| `BudgetScenario` |  | |  |  | `CHAR(30)` | Budgeting Scenario |

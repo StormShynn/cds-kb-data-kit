@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseStatusProfile` | `CHAR(8)` | Case: Status Profile |
-| `CaseStatusObjectType` | `CHAR(3)` | Case: Status Object Type of Application (Central Stat. Mgmt) |
-| `CaseUserStatusSchema` | `CHAR(8)` | Case: User Status Schema (Central Status Administration) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseStatusProfile` |  | |  |  | `CHAR(8)` | Case: Status Profile |
+| `CaseStatusObjectType` |  | |  |  | `CHAR(3)` | Case: Status Object Type of Application (Central Stat. Mgmt) |
+| `CaseUserStatusSchema` |  | |  |  | `CHAR(8)` | Case: User Status Schema (Central Status Administration) |

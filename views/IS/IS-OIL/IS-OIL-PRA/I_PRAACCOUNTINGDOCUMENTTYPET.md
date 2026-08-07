@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Origin` | `CHAR(2)` | Application |
-| `AccountingDocumentType` | `CHAR(2)` | Document Type |
-| `Language` | `LANG(1)` | Language Key |
-| `AccountingDocumentTypeName` | `CHAR(30)` | Document Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Origin` |  | |  |  | `CHAR(2)` | Application |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AccountingDocumentTypeName` |  | |  |  | `CHAR(30)` | Document Type Description |

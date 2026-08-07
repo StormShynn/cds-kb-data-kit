@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtDocItemDistrCat` | `CHAR(1)` | Distribution Category for Document Items |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtMgmtDocItemDistrCatName` | `CHAR(60)` | Description of Distribution Category for Document Items |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtDocItemDistrCat` |  | |  |  | `CHAR(1)` | Distribution Category for Document Items |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtMgmtDocItemDistrCatName` |  | |  |  | `CHAR(60)` | Description of Distribution Category for Document Items |

@@ -35,22 +35,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `Supplier` | `CHAR(10)` | Supplier |
-| `AccountingDocumentCategory` | `CHAR(1)` | Document Status |
-| `AgingGridText` | `CHAR(20)` | Aging Grid Text |
-| `SpecialGLCode` | `CHAR(1)` | Special G/L Indicator |
-| `FinancialAccountType` | `CHAR(1)` | Financial Account Type |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `SupplierAccountGroup` | `CHAR(4)` | Supplier Account Group |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `SupplierBasicAuthorizationGrp` | `CHAR(4)` | Supplier Basic Authorization Group |
-| `SupplierFinsAuthorizationGrp` | `CHAR(4)` | Authorization Group |
-| `AmountInDisplayCurrency_E` | `CURR(23)` | Amount in Display Currency |
-| `TotalNotOvrdAmtInDspCrcy` | `CURR(23)` | Not Overdue Amount in Display Currency |
-| `TotalOverdueAmtInDspCrcy_E` | `CURR(23)` | Total Overdue Amount in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `AccountingDocumentCategory` |  | |  |  | `CHAR(1)` | Document Status |
+| `AgingGridText` |  | |  |  | `CHAR(20)` | Aging Grid Text |
+| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Financial Account Type |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `SupplierAccountGroup` |  | |  |  | `CHAR(4)` | Supplier Account Group |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `SupplierBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Supplier Basic Authorization Group |
+| `SupplierFinsAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `AmountInDisplayCurrency_E` |  | |  |  | `CURR(23)` | Amount in Display Currency |
+| `TotalNotOvrdAmtInDspCrcy` |  | |  |  | `CURR(23)` | Not Overdue Amount in Display Currency |
+| `TotalOverdueAmtInDspCrcy_E` |  | |  |  | `CURR(23)` | Total Overdue Amount in Display Currency |

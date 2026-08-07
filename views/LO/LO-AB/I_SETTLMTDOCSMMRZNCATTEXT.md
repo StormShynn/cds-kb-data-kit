@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDocSmmrznCat` | `CHAR(1)` | Document Summarization Category |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtDocSmmrznCatName` | `CHAR(60)` | Description of Document Summarization Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDocSmmrznCat` |  | |  |  | `CHAR(1)` | Document Summarization Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtDocSmmrznCatName` |  | |  |  | `CHAR(60)` | Description of Document Summarization Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

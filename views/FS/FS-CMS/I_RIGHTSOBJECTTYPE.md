@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RightsObjectCategory` | `CHAR(6)` | Object Category |
-| `RightsObjectType` | `CHAR(6)` | Right Type |
-| `CollateralProcessControlKey` | `CHAR(10)` | Process Control Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RightsObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
+| `RightsObjectType` |  | |  |  | `CHAR(6)` | Right Type |
+| `CollateralProcessControlKey` |  | |  |  | `CHAR(10)` | Process Control Key |

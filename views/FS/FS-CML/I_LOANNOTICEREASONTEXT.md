@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanNoticeReason` | `NUMC(3)` | Reason for Notice |
-| `LoanNoticeReasonText` | `CHAR(30)` | Text (30 Characters) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanNoticeReason` |  | |  |  | `NUMC(3)` | Reason for Notice |
+| `LoanNoticeReasonText` |  | |  |  | `CHAR(30)` | Text (30 Characters) |

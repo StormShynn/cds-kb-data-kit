@@ -33,32 +33,32 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Posting Period |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `GeneralLedgerAgingIncrement` | `CHAR(15)` | Aging Increment |
-| `GLAccount` | `CHAR(10)` | Account Number |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `Segment` | `CHAR(10)` | Segment for Segmental Reporting |
-| `PartnerCostCenter` | `CHAR(10)` | Sender Cost Center |
-| `PartnerProfitCenter` | `CHAR(10)` | Partner Profit Center |
-| `PartnerFunctionalArea` | `CHAR(16)` | Partner Functional Area |
-| `PartnerBusinessArea` | `CHAR(4)` | Trading Partner's Business Area |
-| `PartnerCompany` | `CHAR(6)` | Company ID of Trading Partner |
-| `PartnerSegment` | `CHAR(10)` | Partner Segment for Segmental Reporting |
-| `LossAllowanceKeyFigure` | `CHAR(30)` | Key Figure |
-| `LossAllowanceSortSequenceValue` | `NUMC(3)` | Sorting Order of Key Figures in a Layout |
-| `SubLedgerAcctLineItemType` | `NUMC(5)` | Subledger-Specific Line Item Type |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `AmountInDisplayCurrency` | `CURR(23)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Posting Period |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `GeneralLedgerAgingIncrement` |  | |  |  | `CHAR(15)` | Aging Increment |
+| `GLAccount` |  | |  |  | `CHAR(10)` | Account Number |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Sender Cost Center |
+| `PartnerProfitCenter` |  | |  |  | `CHAR(10)` | Partner Profit Center |
+| `PartnerFunctionalArea` |  | |  |  | `CHAR(16)` | Partner Functional Area |
+| `PartnerBusinessArea` |  | |  |  | `CHAR(4)` | Trading Partner's Business Area |
+| `PartnerCompany` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
+| `PartnerSegment` |  | |  |  | `CHAR(10)` | Partner Segment for Segmental Reporting |
+| `LossAllowanceKeyFigure` |  | |  |  | `CHAR(30)` | Key Figure |
+| `LossAllowanceSortSequenceValue` |  | |  |  | `NUMC(3)` | Sorting Order of Key Figures in a Layout |
+| `SubLedgerAcctLineItemType` |  | |  |  | `NUMC(5)` | Subledger-Specific Line Item Type |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` |  |

@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMPhysInventoryCountingCycle` | `CHAR(1)` | Cycle Counting Indicator |
-| `EWMPInvCycCountingIntvlValue` | `NUMC(4)` | Cycle Counting Interval in Working Days |
-| `EWMPInvCycCountingBufferValue` | `NUMC(2)` | Cycle Counting Buffer in Working Days |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMPhysInventoryCountingCycle` |  | |  |  | `CHAR(1)` | Cycle Counting Indicator |
+| `EWMPInvCycCountingIntvlValue` |  | |  |  | `NUMC(4)` | Cycle Counting Interval in Working Days |
+| `EWMPInvCycCountingBufferValue` |  | |  |  | `NUMC(2)` | Cycle Counting Buffer in Working Days |

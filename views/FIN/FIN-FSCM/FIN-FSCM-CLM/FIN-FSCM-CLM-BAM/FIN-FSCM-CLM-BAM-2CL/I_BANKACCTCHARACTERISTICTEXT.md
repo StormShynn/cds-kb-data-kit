@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountCharacteristic` | `CHAR(5)` | Bank Account Characteristic |
-| `Language` | `LANG(1)` | Language Key |
-| `BankAccountCharacteristicDesc` | `CHAR(60)` | Bank Account Characteristic Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountCharacteristic` |  | |  |  | `CHAR(5)` | Bank Account Characteristic |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BankAccountCharacteristicDesc` |  | |  |  | `CHAR(60)` | Bank Account Characteristic Name |

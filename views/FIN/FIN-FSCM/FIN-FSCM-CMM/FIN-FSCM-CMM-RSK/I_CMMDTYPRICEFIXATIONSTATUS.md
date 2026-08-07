@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CommodityPriceFixationStatus` | `CHAR(1)` | Fixation Status (OBSOLETE) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CommodityPriceFixationStatus` |  | |  |  | `CHAR(1)` | Fixation Status (OBSOLETE) |

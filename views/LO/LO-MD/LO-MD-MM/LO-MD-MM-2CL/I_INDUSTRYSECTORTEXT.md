@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IndustrySector` | `CHAR(1)` | Industry |
-| `Language` | `LANG(1)` | Language Key |
-| `IndustrySectorName` | `CHAR(25)` | Industry sector description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IndustrySector` |  | |  |  | `CHAR(1)` | Industry |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IndustrySectorName` |  | |  |  | `CHAR(25)` | Industry sector description |

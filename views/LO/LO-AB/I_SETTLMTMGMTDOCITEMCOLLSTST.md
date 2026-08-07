@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtDocItemCollSts` | `CHAR(1)` | Status for Collection of Settlement Document Item |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtMgmtDocItemCollStsName` | `CHAR(60)` | Description of Settlement Document Item Collection Status |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtDocItemCollSts` |  | |  |  | `CHAR(1)` | Status for Collection of Settlement Document Item |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtMgmtDocItemCollStsName` |  | |  |  | `CHAR(60)` | Description of Settlement Document Item Collection Status |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

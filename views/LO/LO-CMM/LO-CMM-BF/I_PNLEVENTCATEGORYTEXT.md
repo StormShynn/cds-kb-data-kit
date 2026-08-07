@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PnLEventCategory` | `CHAR(10)` | Profit and Loss Event Category |
-| `Language` | `LANG(1)` | Language Key |
-| `PnLEventCategoryName` | `CHAR(40)` | Profit and Loss Event Category Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PnLEventCategory` |  | |  |  | `CHAR(10)` | Profit and Loss Event Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PnLEventCategoryName` |  | |  |  | `CHAR(40)` | Profit and Loss Event Category Text |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspChargeType` | `CHAR(15)` | Charge Type |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspChargeTypeDesc` | `CHAR(80)` | Transportation Charge Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspChargeType` |  | |  |  | `CHAR(15)` | Charge Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspChargeTypeDesc` |  | |  |  | `CHAR(80)` | Transportation Charge Type Description |

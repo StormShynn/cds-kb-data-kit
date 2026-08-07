@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `JointVentureEquityType` | `CHAR(3)` | Equity Type |
-| `Language` | `LANG(1)` | Language Key |
-| `JointVentureEquityTypeName` | `CHAR(35)` | Equity Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `JointVentureEquityType` |  | |  |  | `CHAR(3)` | Equity Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `JointVentureEquityTypeName` |  | |  |  | `CHAR(35)` | Equity Type Name |

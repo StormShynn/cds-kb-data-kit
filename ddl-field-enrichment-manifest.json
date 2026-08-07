@@ -253,5 +253,10 @@
     "attemptedAt": "2026-08-07T14:30:36.231Z",
     "found": true,
     "matched": 4
+  },
+  "C_CSTMSTRIFNMBRFORKEYDATE": {
+    "attemptedAt": "2026-08-07T14:39:49.649Z",
+    "found": true,
+    "matched": 12
   }
 }

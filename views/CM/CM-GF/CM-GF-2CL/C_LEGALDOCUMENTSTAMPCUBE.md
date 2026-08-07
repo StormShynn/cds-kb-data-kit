@@ -32,18 +32,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LglCntntMDocumentStampUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LglCntntMDocumentUUID` | `RAW(16)` | Universal Unique Identifier |
-| `LglCntntMDocument` | `CHAR(10)` | Document ID |
-| `LglCntntMDocumentStamp` | `CHAR(4)` | Document Stamp Name |
-| `LglCntntMDocumentStampName` | `CHAR(40)` | Long Text |
-| `LegalTransactionHealthName` | `CHAR(40)` | Long Text |
-| `LglCntntMEntity` | `CHAR(10)` | Entity ID |
-| `LglCntntMEntityTypeName` | `CHAR(40)` | Long Text |
-| `LglCntntMGovLawText` | `CHAR(92)` | Governing Law Text |
-| `LegalTransactionHealth` | `CHAR(4)` | Legal Transaction Status |
-| `LglCntntMMainOrgTypeName` | `CHAR(60)` | Short Text for Fixed Values |
-| `LglCntntMMainOrgName` | `CHAR(25)` | Name of Company Code or Company |
-| `TotalNumberOfLegalDocuments` | `INT4(10)` | Total No. of Files |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LglCntntMDocumentStampUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMDocumentUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMDocument` |  | |  |  | `CHAR(10)` | Document ID |
+| `LglCntntMDocumentStamp` |  | |  |  | `CHAR(4)` | Document Stamp Name |
+| `LglCntntMDocumentStampName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LegalTransactionHealthName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMEntity` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMEntityTypeName` |  | |  |  | `CHAR(40)` | Long Text |
+| `LglCntntMGovLawText` |  | |  |  | `CHAR(92)` | Governing Law Text |
+| `LegalTransactionHealth` |  | |  |  | `CHAR(4)` | Legal Transaction Status |
+| `LglCntntMMainOrgTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `LglCntntMMainOrgName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `TotalNumberOfLegalDocuments` |  | |  |  | `INT4(10)` | Total No. of Files |

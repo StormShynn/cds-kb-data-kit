@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IsLeaseOrPlant` | `CHAR(1)` | Lease Plant Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IsLeaseOrPlant` |  | |  |  | `CHAR(1)` | Lease Plant Code |

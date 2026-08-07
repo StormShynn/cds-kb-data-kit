@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsSequenceCat` | `CHAR(1)` | Sequence Category |
-| `Language` | `LANG(1)` | Language Key |
-| `BOOSequenceCategoryName` | `CHAR(30)` | Description of a Sequence Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsSequenceCat` |  | |  |  | `CHAR(1)` | Sequence Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BOOSequenceCategoryName` |  | |  |  | `CHAR(30)` | Description of a Sequence Category |

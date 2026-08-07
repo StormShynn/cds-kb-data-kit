@@ -35,12 +35,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `FinancialStatementItemHier` | `CHAR(10)` | Item Hierarchy |
-| `AdditionalMasterDataHierarchy` | `CHAR(40)` | Consolidation Hierarchy ID |
-| `LastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `LastChangeTime` | `DEC(15)` | Last Updated At (Timestamp) |
-| `LastChangeDateTime` | `DEC(15)` | Last Updated At (Timestamp) |
-| `HierarchyType` | `CHAR(4)` | Hierarchy Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `FinancialStatementItemHier` |  | |  |  | `CHAR(10)` | Item Hierarchy |
+| `AdditionalMasterDataHierarchy` |  | |  |  | `CHAR(40)` | Consolidation Hierarchy ID |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `LastChangeTime` |  | |  |  | `DEC(15)` | Last Updated At (Timestamp) |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Last Updated At (Timestamp) |
+| `HierarchyType` |  | |  |  | `CHAR(4)` | Hierarchy Type |

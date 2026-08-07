@@ -31,12 +31,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplncObligationAssignmentUUID` | `RAW(16)` | Compliance Obligation Assignment UUID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `ComplianceObligationUUID` | `RAW(16)` | Compliance Obligation |
-| `CmplncOblgnAssgmtAppltyStatus` | `CHAR(2)` | Applicability |
-| `NumberOfRecords` | `INT4(10)` | Number of Obligations |
-| `ComplianceObligationTypeCode` | `CHAR(2)` | Compliance Obligation Type |
-| `ComplianceObligationDomainCode` | `CHAR(21)` | Compliance Obligation Domain |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplncObligationAssignmentUUID` |  | |  |  | `RAW(16)` | Compliance Obligation Assignment UUID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `ComplianceObligationUUID` |  | |  |  | `RAW(16)` | Compliance Obligation |
+| `CmplncOblgnAssgmtAppltyStatus` |  | |  |  | `CHAR(2)` | Applicability |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Obligations |
+| `ComplianceObligationTypeCode` |  | |  |  | `CHAR(2)` | Compliance Obligation Type |
+| `ComplianceObligationDomainCode` |  | |  |  | `CHAR(21)` | Compliance Obligation Domain |

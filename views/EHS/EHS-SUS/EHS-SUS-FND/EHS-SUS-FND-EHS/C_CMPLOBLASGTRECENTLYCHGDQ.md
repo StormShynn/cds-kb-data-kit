@@ -31,17 +31,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CmplncObligationAssignmentUUID` | `RAW(16)` | Compliance Obligation Assignment UUID |
-| `ComplianceObligationTitle` | `CHAR(255)` | Compliance Obligation Title |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationName` | `CHAR(60)` | Location Revision Text |
-| `CmplncOblgnAssgmtCmplncStatus` | `CHAR(2)` | Status |
-| `CmplncOblgnAssgmtCmplncStsText` | `CHAR(60)` | Short Text for Fixed Values |
-| `IsDeleted` | `CHAR(1)` | Is Deleted |
-| `ComplianceOblgnAssgmtActnRqd` | `CHAR(2)` | Action Required |
-| `ComplianceObligationTypeCode` | `CHAR(2)` | Compliance Obligation Type |
-| `ComplianceObligationDomainCode` | `CHAR(21)` | Compliance Obligation Domain |
-| `LastChangedDate` | `DATS(8)` | Last Changed Date |
-| `LastChangeUTCDateTime` | `DEC(21)` | Last Change Date Time |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CmplncObligationAssignmentUUID` |  | |  |  | `RAW(16)` | Compliance Obligation Assignment UUID |
+| `ComplianceObligationTitle` |  | |  |  | `CHAR(255)` | Compliance Obligation Title |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location Revision Text |
+| `CmplncOblgnAssgmtCmplncStatus` |  | |  |  | `CHAR(2)` | Status |
+| `CmplncOblgnAssgmtCmplncStsText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Is Deleted |
+| `ComplianceOblgnAssgmtActnRqd` |  | |  |  | `CHAR(2)` | Action Required |
+| `ComplianceObligationTypeCode` |  | |  |  | `CHAR(2)` | Compliance Obligation Type |
+| `ComplianceObligationDomainCode` |  | |  |  | `CHAR(21)` | Compliance Obligation Domain |
+| `LastChangedDate` |  | |  |  | `DATS(8)` | Last Changed Date |
+| `LastChangeUTCDateTime` |  | |  |  | `DEC(21)` | Last Change Date Time |

@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusVolSelectionGroup` | `CHAR(4)` | Selection Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolSelectionGroup` |  | |  |  | `CHAR(4)` | Selection Group |

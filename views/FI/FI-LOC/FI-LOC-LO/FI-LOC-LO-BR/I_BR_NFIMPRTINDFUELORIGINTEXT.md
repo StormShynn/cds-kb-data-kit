@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BR_NFImportIndicatorFuelOrigin` | `CHAR(1)` | Fuel Origin Import Indicator |
-| `BR_NFImprtIndFuelOriginDesc` | `CHAR(60)` | Fuel Origin Import Indicator Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BR_NFImportIndicatorFuelOrigin` |  | |  |  | `CHAR(1)` | Fuel Origin Import Indicator |
+| `BR_NFImprtIndFuelOriginDesc` |  | |  |  | `CHAR(60)` | Fuel Origin Import Indicator Description |

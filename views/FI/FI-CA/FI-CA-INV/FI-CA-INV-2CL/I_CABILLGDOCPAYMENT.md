@@ -37,20 +37,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CABillgDocument` | `CHAR(12)` | Number of Billing Document |
-| `CABillgDocPaymentItem` | `NUMC(8)` | Sequence Number of Payment Data Item |
-| `CABillgGrpgOfPaymentData` | `CHAR(8)` | Grouping of Payment Data |
-| `CABillgPaymentReference` | `CHAR(30)` | Payment Reference |
-| `CABillgPaymentAmount` | `CURR(13)` | Maximum Payment Amount |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `CABillgDocPaytItmExtSyst` | `CHAR(10)` | Payment Data Item in External System |
-| `CABillgDocItemIsReversal` | `CHAR(1)` | Reversal Item |
-| `CAPaymentMethod` | `CHAR(1)` | Payment Method |
-| `CABankOfAltvBPForPayment` | `CHAR(4)` | Bank Details ID of Payee |
-| `CAAltvBPForPayment` | `CHAR(10)` | Alternative Business Partner for Payments |
-| `CAKeyForPaymentCardSupplement` | `RAW(16)` | Key for Payment Card Supplement |
-| `CAPaymentBillingStatus` | `CHAR(1)` | Settlement Status |
-| `CABillgDocPaymentItemPriority` | `NUMC(4)` | Priority of Payment Type |
-| `CABillgGroupingSourceItems` | `CHAR(8)` | Grouping of Source Items |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgDocument` |  | |  |  | `CHAR(12)` | Number of Billing Document |
+| `CABillgDocPaymentItem` |  | |  |  | `NUMC(8)` | Sequence Number of Payment Data Item |
+| `CABillgGrpgOfPaymentData` |  | |  |  | `CHAR(8)` | Grouping of Payment Data |
+| `CABillgPaymentReference` |  | |  |  | `CHAR(30)` | Payment Reference |
+| `CABillgPaymentAmount` |  | |  |  | `CURR(13)` | Maximum Payment Amount |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `CABillgDocPaytItmExtSyst` |  | |  |  | `CHAR(10)` | Payment Data Item in External System |
+| `CABillgDocItemIsReversal` |  | |  |  | `CHAR(1)` | Reversal Item |
+| `CAPaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `CABankOfAltvBPForPayment` |  | |  |  | `CHAR(4)` | Bank Details ID of Payee |
+| `CAAltvBPForPayment` |  | |  |  | `CHAR(10)` | Alternative Business Partner for Payments |
+| `CAKeyForPaymentCardSupplement` |  | |  |  | `RAW(16)` | Key for Payment Card Supplement |
+| `CAPaymentBillingStatus` |  | |  |  | `CHAR(1)` | Settlement Status |
+| `CABillgDocPaymentItemPriority` |  | |  |  | `NUMC(4)` | Priority of Payment Type |
+| `CABillgGroupingSourceItems` |  | |  |  | `CHAR(8)` | Grouping of Source Items |

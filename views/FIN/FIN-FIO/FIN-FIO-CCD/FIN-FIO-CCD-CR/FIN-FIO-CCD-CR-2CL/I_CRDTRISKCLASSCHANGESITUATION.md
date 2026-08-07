@@ -33,13 +33,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CrdtMgmtBPChangeUUID` | `CHAR(32)` | GUID of a Master Data Change |
-| `CrdtMgmtBPChangeDateTime` | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CurrentCreditRiskClass` | `CHAR(3)` | Risk Class |
-| `PreviousCreditRiskClass` | `CHAR(3)` | Risk Class (Old) |
-| `CrdtRskClCritltyAdjmtValue` | `DEC(3)` | Risk Class Change (Using Internal Score) |
-| `CreditScoreAndLimitCalcRule` | `CHAR(10)` | Rule for Calculating Score and Credit Limit |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CrdtMgmtBPChangeUUID` |  | |  |  | `CHAR(32)` | GUID of a Master Data Change |
+| `CrdtMgmtBPChangeDateTime` |  | |  |  | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CurrentCreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `PreviousCreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class (Old) |
+| `CrdtRskClCritltyAdjmtValue` |  | |  |  | `DEC(3)` | Risk Class Change (Using Internal Score) |
+| `CreditScoreAndLimitCalcRule` |  | |  |  | `CHAR(10)` | Rule for Calculating Score and Credit Limit |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |

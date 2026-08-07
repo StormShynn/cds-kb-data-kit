@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtDataXtrctnCat` | `CHAR(1)` | Settlement Document Type is Relevant for BW/4HANA Extraction |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtDataXtrctnCat` |  | |  |  | `CHAR(1)` | Settlement Document Type is Relevant for BW/4HANA Extraction |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

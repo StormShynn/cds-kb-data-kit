@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlInsuranceFrequencyUnit` | `CHAR(2)` | Indicator: Units of time for revaluation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlInsuranceFrequencyUnit` |  | |  |  | `CHAR(2)` | Indicator: Units of time for revaluation |

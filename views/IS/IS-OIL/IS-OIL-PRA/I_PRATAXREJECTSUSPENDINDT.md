@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RejectedOrSuspendedType` | `CHAR(1)` | Rejection-Suspension Status |
-| `Language` | `LANG(1)` | Language Key |
-| `RejectedOrSuspendedTypeName` | `CHAR(60)` | Reject/Suspend Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RejectedOrSuspendedType` |  | |  |  | `CHAR(1)` | Rejection-Suspension Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RejectedOrSuspendedTypeName` |  | |  |  | `CHAR(60)` | Reject/Suspend Indicator |

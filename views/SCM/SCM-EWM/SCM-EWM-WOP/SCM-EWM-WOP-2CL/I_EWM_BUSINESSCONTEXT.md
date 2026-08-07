@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessContext` | `CHAR(3)` | Business Context |
-| `DocumentCategory` | `CHAR(3)` | Document Category |
-| `EWMDeliveryDocumentCategory` | `CHAR(3)` | Document Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessContext` |  | |  |  | `CHAR(3)` | Business Context |
+| `DocumentCategory` |  | |  |  | `CHAR(3)` | Document Category |
+| `EWMDeliveryDocumentCategory` |  | |  |  | `CHAR(3)` | Document Category |

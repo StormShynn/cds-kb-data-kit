@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BlockCategory` | `CHAR(1)` | Block Category |
-| `Language` | `LANG(1)` | Language Key |
-| `BlockCategoryDesc` | `CHAR(60)` | Transportation Order Block Category Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BlockCategory` |  | |  |  | `CHAR(1)` | Block Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BlockCategoryDesc` |  | |  |  | `CHAR(60)` | Transportation Order Block Category Description |

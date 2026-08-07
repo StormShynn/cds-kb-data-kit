@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TransactionCode` | `CHAR(2)` | Tax 2.0 - NM - Transaction Code |
-| `Language` | `LANG(1)` | Language Key |
-| `TransactionCodeName` | `CHAR(60)` | New Mexico Transaction Code Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TransactionCode` |  | |  |  | `CHAR(2)` | Tax 2.0 - NM - Transaction Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TransactionCodeName` |  | |  |  | `CHAR(60)` | New Mexico Transaction Code Name |

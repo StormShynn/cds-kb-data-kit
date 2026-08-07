@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyNode` | `CHAR(18)` | Equipment Number |
-| `EquipUsagePeriodSequenceNumber` | `NUMC(3)` | Consecutive numbering of EquipUsagePeriods on same day |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `Equipment` | `CHAR(18)` | Equipment Number |
-| `SuperordinateEquipment` | `CHAR(18)` | Superordinate Equipment |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyNode` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `EquipUsagePeriodSequenceNumber` |  | |  |  | `NUMC(3)` | Consecutive numbering of EquipUsagePeriods on same day |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `SuperordinateEquipment` |  | |  |  | `CHAR(18)` | Superordinate Equipment |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |

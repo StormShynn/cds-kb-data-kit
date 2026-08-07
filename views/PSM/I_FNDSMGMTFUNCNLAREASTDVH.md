@@ -28,10 +28,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `FunctionalAreaName` | `CHAR(25)` | Name of the Functional Area |
-| `FunctionalAreaAuthznGrp` | `CHAR(10)` | FM: Authorization Group of Functional Area |
-| `ValidityEndDate` | `DATS(8)` | Functional Area Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Functional Area Validity Start Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `FunctionalAreaName` |  | |  |  | `CHAR(25)` | Name of the Functional Area |
+| `FunctionalAreaAuthznGrp` |  | |  |  | `CHAR(10)` | FM: Authorization Group of Functional Area |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Functional Area Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Functional Area Validity Start Date |

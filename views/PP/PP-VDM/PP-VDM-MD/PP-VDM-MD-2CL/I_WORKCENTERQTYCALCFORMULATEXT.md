@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkCenterFormula` | `CHAR(6)` | Formula Key |
-| `Language` | `LANG(1)` | Language Key |
-| `WorkCenterFormulaName` | `CHAR(20)` | Short Text for the Formula |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterFormula` |  | |  |  | `CHAR(6)` | Formula Key |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `WorkCenterFormulaName` |  | |  |  | `CHAR(20)` | Short Text for the Formula |

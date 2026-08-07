@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BusVolTableGroup` | `CHAR(4)` | Business Volume Table Group |
-| `BusVolTableGroupDesc` | `CHAR(40)` | Description for Business Volume Table Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusVolTableGroup` |  | |  |  | `CHAR(4)` | Business Volume Table Group |
+| `BusVolTableGroupDesc` |  | |  |  | `CHAR(40)` | Description for Business Volume Table Group |

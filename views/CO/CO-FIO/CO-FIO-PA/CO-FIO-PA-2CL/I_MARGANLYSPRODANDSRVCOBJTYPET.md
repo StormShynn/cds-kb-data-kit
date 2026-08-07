@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `MarginAnalysisObjectType` | `CHAR(2)` | Object Type |
-| `MarginAnalysisObjectTypeDesc` | `CHAR(60)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MarginAnalysisObjectType` |  | |  |  | `CHAR(2)` | Object Type |
+| `MarginAnalysisObjectTypeDesc` |  | |  |  | `CHAR(60)` | Description |

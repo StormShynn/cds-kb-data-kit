@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanChgPointerProcgGrp` | `NUMC(2)` | ALE Processing Group |
-| `LoanMasterDataIsRead` | `CHAR(1)` | Read Details for Master Data |
-| `LoanCashFlowIsRead` | `CHAR(1)` | Determination of Cash Flows |
-| `LoanCapitalAmountIsRead` | `CHAR(1)` | Determining Capital Amounts |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanChgPointerProcgGrp` |  | |  |  | `NUMC(2)` | ALE Processing Group |
+| `LoanMasterDataIsRead` |  | |  |  | `CHAR(1)` | Read Details for Master Data |
+| `LoanCashFlowIsRead` |  | |  |  | `CHAR(1)` | Determination of Cash Flows |
+| `LoanCapitalAmountIsRead` |  | |  |  | `CHAR(1)` | Determining Capital Amounts |

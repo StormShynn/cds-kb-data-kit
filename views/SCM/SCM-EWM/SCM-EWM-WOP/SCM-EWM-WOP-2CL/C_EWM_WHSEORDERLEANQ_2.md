@@ -33,42 +33,42 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `WarehouseOrder` | `NUMC(10)` | Warehouse Order Number |
-| `WarehouseOrderCreationRule` | `CHAR(4)` | Warehouse Order Creation Rule |
-| `WarehouseOrderStatus` | `CHAR(1)` | Warehouse Order Status |
-| `WarehouseOrderStatusName` | `CHAR(60)` | Short Text for Fixed Values |
-| `WhseOrderOverdueHours` | `DEC(16)` |  |
-| `WhseOrderLastChgUTCDateTime` | `DEC(15)` | Time of Change |
-| `LastChangedByUser` | `CHAR(12)` | Changed By |
-| `WarehouseOrderHasWhseTask` | `CHAR(1)` | Warehouse Order Contains Warehouse Task |
-| `WarehouseOrderHasPhysInvtryDoc` | `CHAR(1)` | WO Contains Physical Inventory Document |
-| `WhseOrderCrtnWhseTmznDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `WhseOrderCrtnWhseTmznYear` | `NUMC(4)` |  |
-| `WhseOrderCrtnWhseTmznMonth` | `NUMC(6)` |  |
-| `WhseOrderCrtnWhseTmznDate` | `DATS(8)` |  |
-| `WhseOrderCrtnWhseTmznHour` | `NUMC(10)` |  |
-| `WhseOrderCrtnWhseTmznTime` | `TIMS(6)` |  |
-| `WhseOrdLtstStrtWhseTmznDteTme` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `WhseOrdLtstStrtWhseTmznYear` | `NUMC(4)` |  |
-| `WhseOrdLtstStrtWhseTmznMonth` | `NUMC(6)` |  |
-| `WhseOrdLtstStrtWhseTmznDate` | `DATS(8)` |  |
-| `WhseOrdLtstStrtWhseTmznHour` | `NUMC(10)` |  |
-| `WhseOrdLtstStrtWhseTmznTime` | `TIMS(6)` |  |
-| `WhseOrderConfWhseTmznDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `WhseOrderConfWhseTmznYear` | `NUMC(4)` |  |
-| `WhseOrderConfWhseTmznMonth` | `NUMC(6)` |  |
-| `WhseOrderConfWhseTmznDate` | `DATS(8)` |  |
-| `WhseOrderConfWhseTmznHour` | `NUMC(10)` |  |
-| `WhseOrderConfWhseTmznTime` | `TIMS(6)` |  |
-| `WrhsOrdStrtUTCDateTime` | `DEC(15)` | Start Time |
-| `WhseOrderConfUTCDateTime` | `DEC(15)` | Time of Confirmation |
-| `WarehouseOrderConfirmedBy` | `CHAR(12)` | Confirmed By |
-| `EWMWave` | `NUMC(10)` | Wave |
-| `ActivityArea` | `CHAR(4)` | Activity Area |
-| `ActivityAreaName` | `CHAR(40)` | Description |
-| `WrhsOrdCrtnUTCDateTime` | `DEC(15)` | Creation Time |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `NumberOfWarehouseOrders` | `FLTP(16)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `WarehouseOrder` |  | |  |  | `NUMC(10)` | Warehouse Order Number |
+| `WarehouseOrderCreationRule` |  | |  |  | `CHAR(4)` | Warehouse Order Creation Rule |
+| `WarehouseOrderStatus` |  | |  |  | `CHAR(1)` | Warehouse Order Status |
+| `WarehouseOrderStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `WhseOrderOverdueHours` |  | |  |  | `DEC(16)` |  |
+| `WhseOrderLastChgUTCDateTime` |  | |  |  | `DEC(15)` | Time of Change |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `WarehouseOrderHasWhseTask` |  | |  |  | `CHAR(1)` | Warehouse Order Contains Warehouse Task |
+| `WarehouseOrderHasPhysInvtryDoc` |  | |  |  | `CHAR(1)` | WO Contains Physical Inventory Document |
+| `WhseOrderCrtnWhseTmznDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `WhseOrderCrtnWhseTmznYear` |  | |  |  | `NUMC(4)` |  |
+| `WhseOrderCrtnWhseTmznMonth` |  | |  |  | `NUMC(6)` |  |
+| `WhseOrderCrtnWhseTmznDate` |  | |  |  | `DATS(8)` |  |
+| `WhseOrderCrtnWhseTmznHour` |  | |  |  | `NUMC(10)` |  |
+| `WhseOrderCrtnWhseTmznTime` |  | |  |  | `TIMS(6)` |  |
+| `WhseOrdLtstStrtWhseTmznDteTme` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `WhseOrdLtstStrtWhseTmznYear` |  | |  |  | `NUMC(4)` |  |
+| `WhseOrdLtstStrtWhseTmznMonth` |  | |  |  | `NUMC(6)` |  |
+| `WhseOrdLtstStrtWhseTmznDate` |  | |  |  | `DATS(8)` |  |
+| `WhseOrdLtstStrtWhseTmznHour` |  | |  |  | `NUMC(10)` |  |
+| `WhseOrdLtstStrtWhseTmznTime` |  | |  |  | `TIMS(6)` |  |
+| `WhseOrderConfWhseTmznDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `WhseOrderConfWhseTmznYear` |  | |  |  | `NUMC(4)` |  |
+| `WhseOrderConfWhseTmznMonth` |  | |  |  | `NUMC(6)` |  |
+| `WhseOrderConfWhseTmznDate` |  | |  |  | `DATS(8)` |  |
+| `WhseOrderConfWhseTmznHour` |  | |  |  | `NUMC(10)` |  |
+| `WhseOrderConfWhseTmznTime` |  | |  |  | `TIMS(6)` |  |
+| `WrhsOrdStrtUTCDateTime` |  | |  |  | `DEC(15)` | Start Time |
+| `WhseOrderConfUTCDateTime` |  | |  |  | `DEC(15)` | Time of Confirmation |
+| `WarehouseOrderConfirmedBy` |  | |  |  | `CHAR(12)` | Confirmed By |
+| `EWMWave` |  | |  |  | `NUMC(10)` | Wave |
+| `ActivityArea` |  | |  |  | `CHAR(4)` | Activity Area |
+| `ActivityAreaName` |  | |  |  | `CHAR(40)` | Description |
+| `WrhsOrdCrtnUTCDateTime` |  | |  |  | `DEC(15)` | Creation Time |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `NumberOfWarehouseOrders` |  | |  |  | `FLTP(16)` |  |

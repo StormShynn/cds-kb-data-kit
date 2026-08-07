@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FixedAssetGroup` | `CHAR(12)` | Asset Super Number |
-| `Language` | `LANG(1)` | Language Key |
-| `FixedAssetGroupName` | `CHAR(50)` | Text for asset group number / asset group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FixedAssetGroup` |  | |  |  | `CHAR(12)` | Asset Super Number |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FixedAssetGroupName` |  | |  |  | `CHAR(50)` | Text for asset group number / asset group |

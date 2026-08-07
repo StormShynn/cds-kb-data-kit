@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartnerSupplier` | `CHAR(10)` | Business Partner Number |
-| `Person` | `CHAR(10)` | Business Partner Number |
-| `EndDate` | `DATS(8)` | Validity Date (Valid To) |
-| `StartDate` | `DATS(8)` | Validity Date (Valid From) |
-| `RelationshipCategory` | `CHAR(6)` | Business Partner Relationship Category |
-| `DataControllerSet` | `CHAR(1)` | BP: Data Controller Set Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerSupplier` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `Person` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `EndDate` |  | |  |  | `DATS(8)` | Validity Date (Valid To) |
+| `StartDate` |  | |  |  | `DATS(8)` | Validity Date (Valid From) |
+| `RelationshipCategory` |  | |  |  | `CHAR(6)` | Business Partner Relationship Category |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |

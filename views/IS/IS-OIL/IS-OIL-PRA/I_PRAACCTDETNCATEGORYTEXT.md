@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AcctDeterminationCategory` | `CHAR(4)` | Account category code |
-| `Language` | `LANG(1)` | Language Key |
-| `AcctDeterminationCategoryName` | `CHAR(60)` | Account Category Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AcctDeterminationCategory` |  | |  |  | `CHAR(4)` | Account category code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AcctDeterminationCategoryName` |  | |  |  | `CHAR(60)` | Account Category Name |

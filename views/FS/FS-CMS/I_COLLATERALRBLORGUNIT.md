@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRblOrganizationUnit` | `CHAR(10)` | Organization Unit for a Receivable |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRblOrganizationUnit` |  | |  |  | `CHAR(10)` | Organization Unit for a Receivable |

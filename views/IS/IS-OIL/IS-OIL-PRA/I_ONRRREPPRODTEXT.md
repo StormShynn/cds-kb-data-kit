@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRReportedProduct` | `CHAR(2)` | ONRR-2014 - Product Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ONRRReportedProductName` | `CHAR(60)` | ONRR Reproted Product Code Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRReportedProduct` |  | |  |  | `CHAR(2)` | ONRR-2014 - Product Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ONRRReportedProductName` |  | |  |  | `CHAR(60)` | ONRR Reproted Product Code Text |

@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DateFunction` | `CHAR(32)` | Relative Date Function ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DateFunction` |  | |  |  | `CHAR(32)` | Relative Date Function ID |

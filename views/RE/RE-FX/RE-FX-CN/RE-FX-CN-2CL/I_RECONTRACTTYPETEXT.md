@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `REContractType` | `CHAR(4)` | External Real Estate Contract Type |
-| `Language` | `LANG(1)` | Language Key |
-| `REContractTypeName` | `CHAR(30)` | Contract Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `REContractType` |  | |  |  | `CHAR(4)` | External Real Estate Contract Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `REContractTypeName` |  | |  |  | `CHAR(30)` | Contract Type Name |

@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralObjectRiskCode` | `CHAR(6)` | Risk Code |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralObjectRiskCodeText` | `CHAR(40)` | Risk Code Name in a specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralObjectRiskCode` |  | |  |  | `CHAR(6)` | Risk Code |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralObjectRiskCodeText` |  | |  |  | `CHAR(40)` | Risk Code Name in a specified Language |

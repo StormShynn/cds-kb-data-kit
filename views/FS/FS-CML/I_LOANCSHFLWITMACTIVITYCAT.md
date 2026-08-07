@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanCshFlwItmActivityCat` | `CHAR(4)` | Activity Category (Posting Area) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanCshFlwItmActivityCat` |  | |  |  | `CHAR(4)` | Activity Category (Posting Area) |

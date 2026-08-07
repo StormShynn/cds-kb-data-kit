@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaskListType` | `CHAR(1)` | Task List Type |
-| `TaskListGroup` | `CHAR(8)` | Key for Task List Group |
-| `TaskListGroupCounter` | `CHAR(2)` | Group Counter |
-| `TaskListSequence` | `CHAR(6)` | Sequence |
-| `TaskListOperationInternalId` | `NUMC(8)` | Number of the Task List Node |
-| `TaskListOpPRTIntID` | `NUMC(8)` | Item Counter for Production Resources/Tools |
-| `TaskListOpPRTIntVersCounter` | `NUMC(8)` | Internal counter |
-| `ProdnRsceToolItemNumber` | `NUMC(4)` | Item Number for Production Resource/Tool |
-| `ProdnRsceToolStandardWorkQty` | `QUAN(9)` | Standard Value for Quantity of Production Resources/Tools |
-| `ProdnRsceToolStdWorkQtyUnit` | `UNIT(3)` | Unit for Quantity of Production Resources/Tools |
-| `ProdnRsceToolUsageQuantity` | `QUAN(9)` | Standard Usage Value for Production Resources/Tools |
-| `ProdnRsceToolUsageQuantityUnit` | `UNIT(3)` | Usage Value Unit of the Production Resource/Tool |
-| `ProductionResourceType` | `CHAR(2)` | Object types of the CIM resource |
-| `ProductionResourceInternalID` | `NUMC(8)` | Object ID of the resource |
-| `ProdnRsceToolText` | `CHAR(40)` | First Line of Text for Production Resources/Tools |
-| `IsDeleted` | `CHAR(1)` | Deletion Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaskListType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `TaskListGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `TaskListGroupCounter` |  | |  |  | `CHAR(2)` | Group Counter |
+| `TaskListSequence` |  | |  |  | `CHAR(6)` | Sequence |
+| `TaskListOperationInternalId` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
+| `TaskListOpPRTIntID` |  | |  |  | `NUMC(8)` | Item Counter for Production Resources/Tools |
+| `TaskListOpPRTIntVersCounter` |  | |  |  | `NUMC(8)` | Internal counter |
+| `ProdnRsceToolItemNumber` |  | |  |  | `NUMC(4)` | Item Number for Production Resource/Tool |
+| `ProdnRsceToolStandardWorkQty` |  | |  |  | `QUAN(9)` | Standard Value for Quantity of Production Resources/Tools |
+| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  | `UNIT(3)` | Unit for Quantity of Production Resources/Tools |
+| `ProdnRsceToolUsageQuantity` |  | |  |  | `QUAN(9)` | Standard Usage Value for Production Resources/Tools |
+| `ProdnRsceToolUsageQuantityUnit` |  | |  |  | `UNIT(3)` | Usage Value Unit of the Production Resource/Tool |
+| `ProductionResourceType` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
+| `ProductionResourceInternalID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `ProdnRsceToolText` |  | |  |  | `CHAR(40)` | First Line of Text for Production Resources/Tools |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |

@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationInitiatedBy` | `CHAR(6)` | Liquidation Initiated By |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationInitiatedBy` |  | |  |  | `CHAR(6)` | Liquidation Initiated By |

@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanSalesRegion` | `CHAR(4)` | Sales Region |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanSalesRegion` |  | |  |  | `CHAR(4)` | Sales Region |

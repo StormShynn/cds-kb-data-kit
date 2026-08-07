@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MajorProduct` | `CHAR(1)` | Major product code |
-| `MinorProduct` | `CHAR(2)` | Minor Product Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MajorProduct` |  | |  |  | `CHAR(1)` | Major product code |
+| `MinorProduct` |  | |  |  | `CHAR(2)` | Minor Product Code |

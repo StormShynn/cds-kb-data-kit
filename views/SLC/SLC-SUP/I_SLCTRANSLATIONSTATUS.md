@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SLCTranslationStatus` | `NUMC(2)` | Translation Relevance and Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SLCTranslationStatus` |  | |  |  | `NUMC(2)` | Translation Relevance and Status |

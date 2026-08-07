@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `NetworkProfile` | `CHAR(7)` | Network Profile |
-| `BillOfOperationsApplication` | `CHAR(1)` | Application of the task list |
-| `NetworkProfileName` | `CHAR(40)` | Text for Profile |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `NetworkProfile` |  | |  |  | `CHAR(7)` | Network Profile |
+| `BillOfOperationsApplication` |  | |  |  | `CHAR(1)` | Application of the task list |
+| `NetworkProfileName` |  | |  |  | `CHAR(40)` | Text for Profile |

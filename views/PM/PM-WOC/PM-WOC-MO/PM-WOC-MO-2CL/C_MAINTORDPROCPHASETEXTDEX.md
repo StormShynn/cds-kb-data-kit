@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintOrdProcessPhaseCode` | `CHAR(2)` | Process Phase |
-| `Language` | `LANG(1)` | Language Key |
-| `MaintOrdProcessPhaseDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrdProcessPhaseCode` |  | |  |  | `CHAR(2)` | Process Phase |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MaintOrdProcessPhaseDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

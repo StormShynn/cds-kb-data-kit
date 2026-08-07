@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NoticeOfViolationSource` | `CHAR(21)` | Violation Source |
-| `Language` | `LANG(1)` | Language Key |
-| `NoticeOfViolationSourceName` | `CHAR(40)` | Description (Extra Short) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NoticeOfViolationSource` |  | |  |  | `CHAR(21)` | Violation Source |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `NoticeOfViolationSourceName` |  | |  |  | `CHAR(40)` | Description (Extra Short) |

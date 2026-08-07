@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DocIntrastatRelevance` | `CHAR(1)` | Document is Relevant for Intrastat Declarations |
-| `Language` | `LANG(1)` | Language Key |
-| `DocIntrastatRelevanceName` | `CHAR(60)` | Description of Intrastat Declaration Relevance Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DocIntrastatRelevance` |  | |  |  | `CHAR(1)` | Document is Relevant for Intrastat Declarations |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DocIntrastatRelevanceName` |  | |  |  | `CHAR(60)` | Description of Intrastat Declaration Relevance Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

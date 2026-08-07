@@ -35,8 +35,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankGroup` | `CHAR(10)` | Business Partner Number |
-| `NumberOfBankAccounts` | `INT4(10)` |  |
-| `NumberOfCompanyCodes` | `INT4(10)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankGroup` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `NumberOfBankAccounts` |  | |  |  | `INT4(10)` |  |
+| `NumberOfCompanyCodes` |  | |  |  | `INT4(10)` |  |

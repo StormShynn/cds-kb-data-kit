@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurPlcyBusProcType` | `CHAR(5)` | Business Process |
-| `InsurPlcyBusProcTypeName` | `CHAR(50)` | Business Process Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurPlcyBusProcType` |  | |  |  | `CHAR(5)` | Business Process |
+| `InsurPlcyBusProcTypeName` |  | |  |  | `CHAR(50)` | Business Process Description |

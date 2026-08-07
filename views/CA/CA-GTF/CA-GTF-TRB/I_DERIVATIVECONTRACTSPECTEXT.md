@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DerivativeContrSpecification` | `CHAR(20)` | Derivative Contract Specification ID |
-| `Language` | `LANG(1)` | Language Key |
-| `DerivativeContrSpecName` | `CHAR(40)` | Description of Derivative Contract Specification |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DerivativeContrSpecification` |  | |  |  | `CHAR(20)` | Derivative Contract Specification ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DerivativeContrSpecName` |  | |  |  | `CHAR(40)` | Description of Derivative Contract Specification |

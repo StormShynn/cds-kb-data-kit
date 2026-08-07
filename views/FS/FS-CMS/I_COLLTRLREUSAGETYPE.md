@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRealEstateUsageType` | `CHAR(6)` | Usage Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRealEstateUsageType` |  | |  |  | `CHAR(6)` | Usage Type |

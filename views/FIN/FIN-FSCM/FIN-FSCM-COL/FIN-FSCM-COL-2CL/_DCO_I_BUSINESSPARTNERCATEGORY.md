@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerCategory` | `CHAR(3)` | Business Partner Category for Collection Process |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerCategory` |  | |  |  | `CHAR(3)` | Business Partner Category for Collection Process |

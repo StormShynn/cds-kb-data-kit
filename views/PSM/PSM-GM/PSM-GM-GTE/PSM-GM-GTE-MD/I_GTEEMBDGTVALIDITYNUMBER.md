@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `GteeMBudgetValidityNumber` | `CHAR(3)` | Budget Validity Number |
-| `GranteeMgmtBdgtPhase` | `CHAR(1)` | Budget Phase |
-| `GranteeMgmtBudgetStatus` | `CHAR(1)` | Budget Status: Unreleased/Released |
-| `GteeMBdgtValidityNumberStrtDte` | `DATS(8)` | Start Date of Budget Validity Number |
-| `GteeMBdgtValidityNumberEndDate` | `DATS(8)` | End Date of Budget Validity Number |
-| `GrantFiscalYear` | `NUMC(4)` | Fiscal Year of Sponsor (is Grant Fiscal Year) |
-| `GranteeFiscalYear` | `NUMC(4)` | Fiscal Year for Grantee Organization |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `GteeMBudgetValidityNumber` |  | |  |  | `CHAR(3)` | Budget Validity Number |
+| `GranteeMgmtBdgtPhase` |  | |  |  | `CHAR(1)` | Budget Phase |
+| `GranteeMgmtBudgetStatus` |  | |  |  | `CHAR(1)` | Budget Status: Unreleased/Released |
+| `GteeMBdgtValidityNumberStrtDte` |  | |  |  | `DATS(8)` | Start Date of Budget Validity Number |
+| `GteeMBdgtValidityNumberEndDate` |  | |  |  | `DATS(8)` | End Date of Budget Validity Number |
+| `GrantFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Sponsor (is Grant Fiscal Year) |
+| `GranteeFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year for Grantee Organization |

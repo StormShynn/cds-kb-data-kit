@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurContrCanclnRsn` | `NUMC(5)` | Reversal Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurContrCanclnRsn` |  | |  |  | `NUMC(5)` | Reversal Reason |

@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ApplicantCode` | `NUMC(8)` | Applicant number |
-| `ApplicantName` | `CHAR(25)` | Applicant |
-| `ProjectApplicantIsBlocked` | `CHAR(1)` | Blocked |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ApplicantCode` |  | |  |  | `NUMC(8)` | Applicant number |
+| `ApplicantName` |  | |  |  | `CHAR(25)` | Applicant |
+| `ProjectApplicantIsBlocked` |  | |  |  | `CHAR(1)` | Blocked |

@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartnerRole` | `CHAR(6)` | BP Role |
-| `RoleCategory` | `CHAR(6)` | BP Role Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartnerRole` |  | |  |  | `CHAR(6)` | BP Role |
+| `RoleCategory` |  | |  |  | `CHAR(6)` | BP Role Category |

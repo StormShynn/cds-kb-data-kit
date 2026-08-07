@@ -34,11 +34,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CharcInternalID` | `NUMC(10)` | Numeric Character Field, Length 10 |
-| `Characteristic` | `CHAR(30)` | Characteristic Name |
-| `RetailCharacteristicType` | `CHAR(1)` | Characteristic Type |
-| `RtlCharcValValdtn` | `CHAR(1)` | Check Option |
-| `LastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `LastChangedDate` | `DATS(8)` | Last Changed On |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CharcInternalID` |  | |  |  | `NUMC(10)` | Numeric Character Field, Length 10 |
+| `Characteristic` |  | |  |  | `CHAR(30)` | Characteristic Name |
+| `RetailCharacteristicType` |  | |  |  | `CHAR(1)` | Characteristic Type |
+| `RtlCharcValValdtn` |  | |  |  | `CHAR(1)` | Check Option |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangedDate` |  | |  |  | `DATS(8)` | Last Changed On |

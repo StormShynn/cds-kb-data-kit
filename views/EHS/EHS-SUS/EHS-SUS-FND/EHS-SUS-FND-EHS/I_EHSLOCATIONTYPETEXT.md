@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `Language` | `LANG(1)` | Language |
-| `EHSLocationTypeText` | `CHAR(40)` | Location Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `Language` |  | |  |  | `LANG(1)` | Language |
+| `EHSLocationTypeText` |  | |  |  | `CHAR(40)` | Location Type Name |

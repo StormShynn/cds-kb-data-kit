@@ -31,13 +31,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `CreationDateTime` | `DEC(21)` | Created On |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `LastChangeDateTime` | `DEC(21)` | Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Last Change By |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `LocationMigrationSource` | `CHAR(60)` | Migration Source |
-| `WasteRegistrationNumber` | `CHAR(60)` | Waste Registration Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `CreationDateTime` |  | |  |  | `DEC(21)` | Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Change By |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `LocationMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |
+| `WasteRegistrationNumber` |  | |  |  | `CHAR(60)` | Waste Registration Number |

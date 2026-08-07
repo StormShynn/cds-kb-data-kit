@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BankGuaranteeType` | `CHAR(4)` | Bank Guarantee Type |
-| `BankGuaranteeTypeName` | `CHAR(50)` | Bank Guarantee Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BankGuaranteeType` |  | |  |  | `CHAR(4)` | Bank Guarantee Type |
+| `BankGuaranteeTypeName` |  | |  |  | `CHAR(50)` | Bank Guarantee Type Description |

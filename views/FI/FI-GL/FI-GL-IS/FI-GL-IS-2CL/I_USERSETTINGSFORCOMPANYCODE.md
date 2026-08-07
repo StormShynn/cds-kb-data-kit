@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessUser` | `CHAR(12)` | User ID |
-| `CompanyCode` | `CHAR(40)` | Parameter value |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessUser` |  | |  |  | `CHAR(12)` | User ID |
+| `CompanyCode` |  | |  |  | `CHAR(40)` | Parameter value |

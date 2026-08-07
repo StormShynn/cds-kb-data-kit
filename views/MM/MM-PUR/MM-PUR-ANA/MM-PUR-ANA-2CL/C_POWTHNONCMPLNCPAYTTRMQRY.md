@@ -34,27 +34,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PurchaseOrder` | `CHAR(10)` | Purchase Order Number |
-| `PurchaseOrderItem` | `NUMC(5)` | Item Number of Purchase Order |
-| `Supplier` | `CHAR(10)` | Supplier |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `MaterialGroup` | `CHAR(9)` | Material Group |
-| `Plant` | `CHAR(4)` | Plant |
-| `SupplierCountry` | `CHAR(3)` | Supplier Country/Region |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `IncotermsClassification` | `CHAR(3)` | Incoterms (Part 1) |
-| `PaymentTerms` | `CHAR(4)` | Terms of Payment Key |
-| `PaymentTermsDescription` | `CHAR(1024)` | Payment Terms Description |
-| `PurchaseOrderDate` | `DATS(8)` | Purchase Order Date |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `PurOrdNetAmountInDisplayCrcy` | `CURR(21)` | Purchase Order Net Amount |
-| `NrOfPOInNonCompliantPaytTrms` | `INT4(10)` | Number of PO with non compliant payment terms |
-| `NumberOfPurchaseOrders` | `INT4(10)` | Number of Purchase Orders |
-| `MinNrOfPOWithNonCompPaytTrm` | `INT4(10)` | Number of PO with non compliant payment terms |
-| `NrOfPOWithNonCompliantPaytTrm` | `INT4(10)` | Number of PO with non compliant payment terms |
-| `POWithNonCompliantPaytTrmPct` | `DEC(15)` | Percentage of PO with non compliant payment terms |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PurchaseOrder` |  | |  |  | `CHAR(10)` | Purchase Order Number |
+| `PurchaseOrderItem` |  | |  |  | `NUMC(5)` | Item Number of Purchase Order |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `SupplierCountry` |  | |  |  | `CHAR(3)` | Supplier Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `IncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms (Part 1) |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment Key |
+| `PaymentTermsDescription` |  | |  |  | `CHAR(1024)` | Payment Terms Description |
+| `PurchaseOrderDate` |  | |  |  | `DATS(8)` | Purchase Order Date |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `PurOrdNetAmountInDisplayCrcy` |  | |  |  | `CURR(21)` | Purchase Order Net Amount |
+| `NrOfPOInNonCompliantPaytTrms` |  | |  |  | `INT4(10)` | Number of PO with non compliant payment terms |
+| `NumberOfPurchaseOrders` |  | |  |  | `INT4(10)` | Number of Purchase Orders |
+| `MinNrOfPOWithNonCompPaytTrm` |  | |  |  | `INT4(10)` | Number of PO with non compliant payment terms |
+| `NrOfPOWithNonCompliantPaytTrm` |  | |  |  | `INT4(10)` | Number of PO with non compliant payment terms |
+| `POWithNonCompliantPaytTrmPct` |  | |  |  | `DEC(15)` | Percentage of PO with non compliant payment terms |

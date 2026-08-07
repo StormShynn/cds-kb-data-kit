@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TaxBasis` | `CHAR(2)` | Tax Free Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TaxBasis` |  | |  |  | `CHAR(2)` | Tax Free Code |

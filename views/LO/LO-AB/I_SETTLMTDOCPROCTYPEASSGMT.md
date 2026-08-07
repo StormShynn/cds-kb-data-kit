@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtProcessType` | `CHAR(4)` | Settlement Process Type |
-| `SettlmtDocType` | `CHAR(4)` | Settlement Document Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
+| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |

@@ -29,18 +29,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementRelationshipUUID` | `RAW(16)` | GUID for Table CMS_REL |
-| `AgreementRelationshipSrceUUID` | `RAW(16)` | GUID for Table CMS_CAG |
-| `AgrmtRelshpSrceSecdryUUID` | `RAW(16)` | Relationship Source Secondary GUID |
-| `AgreementRelationshipDestUUID` | `RAW(16)` | GUID for Table CMS_CAG |
-| `CollateralConstellationUUID` | `RAW(16)` | Constellation GUID |
-| `AgreementRelationshipCurrency` | `CUKY(5)` | Calculations Result Currency |
-| `AgrRelDistrdColltrlCurRskAmt` | `CURR(17)` | Distributed Collateral value |
-| `AgrRelDistrdColltrlMaxRskAmt` | `CURR(17)` | Distributed Collateral value |
-| `AgrRelDistrdColltrlCurRskPct` | `DEC(10)` | Calculations Result as Pecentage |
-| `AgrRelDistrdColltrlMaxRskPct` | `DEC(10)` | Calculations Result as Pecentage |
-| `AgrmtRelshpCalcLastChgdBy` | `CHAR(12)` | Last Changed By |
-| `AgrmtRelshpCalcLastChgdDate` | `DATS(8)` | Date on which last change was done |
-| `AgrmtRelshpCalcLastChgdTime` | `TIMS(6)` | Time at which last change was made |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementRelationshipUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_REL |
+| `AgreementRelationshipSrceUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG |
+| `AgrmtRelshpSrceSecdryUUID` |  | |  |  | `RAW(16)` | Relationship Source Secondary GUID |
+| `AgreementRelationshipDestUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_CAG |
+| `CollateralConstellationUUID` |  | |  |  | `RAW(16)` | Constellation GUID |
+| `AgreementRelationshipCurrency` |  | |  |  | `CUKY(5)` | Calculations Result Currency |
+| `AgrRelDistrdColltrlCurRskAmt` |  | |  |  | `CURR(17)` | Distributed Collateral value |
+| `AgrRelDistrdColltrlMaxRskAmt` |  | |  |  | `CURR(17)` | Distributed Collateral value |
+| `AgrRelDistrdColltrlCurRskPct` |  | |  |  | `DEC(10)` | Calculations Result as Pecentage |
+| `AgrRelDistrdColltrlMaxRskPct` |  | |  |  | `DEC(10)` | Calculations Result as Pecentage |
+| `AgrmtRelshpCalcLastChgdBy` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `AgrmtRelshpCalcLastChgdDate` |  | |  |  | `DATS(8)` | Date on which last change was done |
+| `AgrmtRelshpCalcLastChgdTime` |  | |  |  | `TIMS(6)` | Time at which last change was made |

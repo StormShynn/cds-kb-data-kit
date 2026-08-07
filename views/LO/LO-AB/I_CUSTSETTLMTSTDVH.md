@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustSettlmt` | `CHAR(10)` | Customer Settlement |
-| `BillToParty` | `CHAR(10)` | Customer in Settlement Management |
-| `CustSettlmtCompanyCode` | `CHAR(4)` | Company Code |
-| `PayerParty` | `CHAR(10)` | Payer |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `SettlmtDocType` | `CHAR(4)` | Settlement Document Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustSettlmt` |  | |  |  | `CHAR(10)` | Customer Settlement |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Customer in Settlement Management |
+| `CustSettlmtCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |

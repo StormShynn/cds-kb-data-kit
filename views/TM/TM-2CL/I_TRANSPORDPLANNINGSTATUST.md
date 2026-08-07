@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdPlanningStatus` | `CHAR(2)` | Planning Status |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdPlanningStatusDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdPlanningStatus` |  | |  |  | `CHAR(2)` | Planning Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdPlanningStatusDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

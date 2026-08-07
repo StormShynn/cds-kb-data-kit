@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EntProjElmntLongTextUUID` | `RAW(16)` | Entity Guid |
-| `ProjectElementUUID` | `RAW(16)` | Projectelement Guid |
-| `LongText` | `STRI(5000)` | Comments |
-| `ProjectUUID` | `RAW(16)` | Project GUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EntProjElmntLongTextUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `ProjectElementUUID` |  | |  |  | `RAW(16)` | Projectelement Guid |
+| `LongText` |  | |  |  | `STRI(5000)` | Comments |
+| `ProjectUUID` |  | |  |  | `RAW(16)` | Project GUID |

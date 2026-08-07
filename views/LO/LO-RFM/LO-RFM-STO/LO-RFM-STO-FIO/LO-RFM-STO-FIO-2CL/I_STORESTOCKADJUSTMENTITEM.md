@@ -36,17 +36,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Store` | `CHAR(4)` | Retail plant |
-| `StoreStockAdjustmentUUID` | `RAW(16)` | Unique Identifier for New Stock Adjustment |
-| `Product` | `CHAR(40)` | Material Number |
-| `StockAdjustmentQuantity` | `QUAN(13)` | Stock Adjustment Quantity |
-| `UnitOfMeasure` | `UNIT(3)` | Base Unit of Measure |
-| `ProductSalesPrice` | `CURR(23)` | Product Sales Price |
-| `Currency` | `CUKY(5)` | Currency Key |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `PaymentServiceProviderName` | `CHAR(40)` | Service Provider |
-| `ProductClaimDescription` | `CHAR(50)` | Comment |
-| `CreationDateTime` | `DEC(21)` | Creation date and time of Stock Adjustment |
-| `LastChangeDateTime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Store` |  | |  |  | `CHAR(4)` | Retail plant |
+| `StoreStockAdjustmentUUID` |  | |  |  | `RAW(16)` | Unique Identifier for New Stock Adjustment |
+| `Product` |  | |  |  | `CHAR(40)` | Material Number |
+| `StockAdjustmentQuantity` |  | |  |  | `QUAN(13)` | Stock Adjustment Quantity |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `ProductSalesPrice` |  | |  |  | `CURR(23)` | Product Sales Price |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `PaymentServiceProviderName` |  | |  |  | `CHAR(40)` | Service Provider |
+| `ProductClaimDescription` |  | |  |  | `CHAR(50)` | Comment |
+| `CreationDateTime` |  | |  |  | `DEC(21)` | Creation date and time of Stock Adjustment |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |

@@ -31,18 +31,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `ActualPlanCode` | `CHAR(1)` | Actual Plan Code |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `AmountInCompanyCodeCurrency` | `CURR(23)` |  |
-| `AmountInGlobalCurrency` | `CURR(23)` |  |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `CountryRegion` | `CHAR(6)` |  |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `GrantAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
-| `GrantLfcycStatusForAuthzn` | `CHAR(5)` | GM Lifecycle Status for Auth Grp |
-| `GrantIsNotRelevantGrant` | `CHAR(1)` | Identify the Not Relevant Grant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` |  |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` |  |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `CountryRegion` |  | |  |  | `CHAR(6)` |  |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `GrantAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |
+| `GrantLfcycStatusForAuthzn` |  | |  |  | `CHAR(5)` | GM Lifecycle Status for Auth Grp |
+| `GrantIsNotRelevantGrant` |  | |  |  | `CHAR(1)` | Identify the Not Relevant Grant |

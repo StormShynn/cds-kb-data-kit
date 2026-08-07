@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationLedger` | `CHAR(2)` | Ledger |
-| `GroupCurrency` | `CUKY(5)` | Group Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationLedger` |  | |  |  | `CHAR(2)` | Ledger |
+| `GroupCurrency` |  | |  |  | `CUKY(5)` | Group Currency |

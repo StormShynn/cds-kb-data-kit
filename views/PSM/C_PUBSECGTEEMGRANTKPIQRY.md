@@ -28,11 +28,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `NumberOfGteeMMasterDataRecords` | `INT1(3)` |  |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `PubSecRevnActlAmtInGlobalCrcy` | `CURR(23)` |  |
-| `BdgtAvailableAmtInGlobalCrcy` | `CURR(24)` |  |
-| `NotPaidRevenueAmtInGCrcy` | `CURR(23)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `NumberOfGteeMMasterDataRecords` |  | |  |  | `INT1(3)` |  |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `PubSecRevnActlAmtInGlobalCrcy` |  | |  |  | `CURR(23)` |  |
+| `BdgtAvailableAmtInGlobalCrcy` |  | |  |  | `CURR(24)` |  |
+| `NotPaidRevenueAmtInGCrcy` |  | |  |  | `CURR(23)` |  |

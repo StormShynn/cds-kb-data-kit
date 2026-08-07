@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceChecklistTemplate` | `CHAR(10)` | Template ID |
-| `SrvcChecklistTemplateElement` | `NUMC(4)` | Element ID |
-| `SrvcChklstLanguage` | `LANG(1)` | Language |
-| `SrvcChklstTmplElmntName` | `CHAR(1333)` | Element Name |
-| `SrvcChklstTmplElmntValueText` | `CHAR(1333)` | Element Value |
-| `SrvcChklstTmplElmntTitle` | `CHAR(1333)` | Element Title |
-| `SrvcChklstTmplElmntDescription` | `CHAR(1333)` | Element Description |
-| `SrvcChklstTmplElmntDisplayName` | `CHAR(1333)` | Element Display Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceChecklistTemplate` |  | |  |  | `CHAR(10)` | Template ID |
+| `SrvcChecklistTemplateElement` |  | |  |  | `NUMC(4)` | Element ID |
+| `SrvcChklstLanguage` |  | |  |  | `LANG(1)` | Language |
+| `SrvcChklstTmplElmntName` |  | |  |  | `CHAR(1333)` | Element Name |
+| `SrvcChklstTmplElmntValueText` |  | |  |  | `CHAR(1333)` | Element Value |
+| `SrvcChklstTmplElmntTitle` |  | |  |  | `CHAR(1333)` | Element Title |
+| `SrvcChklstTmplElmntDescription` |  | |  |  | `CHAR(1333)` | Element Description |
+| `SrvcChklstTmplElmntDisplayName` |  | |  |  | `CHAR(1333)` | Element Display Name |

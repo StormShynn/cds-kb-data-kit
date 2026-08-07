@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LouisianaCounty` | `NUMC(2)` | Tax 2.0 LA - Parish |
-| `Language` | `LANG(1)` | Language Key |
-| `LouisianaCountyName` | `CHAR(60)` | Louisiana Parish Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LouisianaCounty` |  | |  |  | `NUMC(2)` | Tax 2.0 LA - Parish |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LouisianaCountyName` |  | |  |  | `CHAR(60)` | Louisiana Parish Name |

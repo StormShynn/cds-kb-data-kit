@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralRealEstateUsageType` | `CHAR(6)` | Usage Type |
-| `Language` | `LANG(1)` | Language in which description is needed |
-| `ColltrlRealEstateUsageTypeText` | `CHAR(40)` | Name in a specified language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralRealEstateUsageType` |  | |  |  | `CHAR(6)` | Usage Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which description is needed |
+| `ColltrlRealEstateUsageTypeText` |  | |  |  | `CHAR(40)` | Name in a specified language |

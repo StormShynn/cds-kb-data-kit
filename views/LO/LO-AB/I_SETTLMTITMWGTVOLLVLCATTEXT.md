@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtItmWgtVolLvlCat` | `CHAR(1)` | Level on which You Enter Weight and Volume |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtItmWgtVolLvlCatName` | `CHAR(60)` | Text of Weight/Volume Level Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtItmWgtVolLvlCat` |  | |  |  | `CHAR(1)` | Level on which You Enter Weight and Volume |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtItmWgtVolLvlCatName` |  | |  |  | `CHAR(60)` | Text of Weight/Volume Level Category |

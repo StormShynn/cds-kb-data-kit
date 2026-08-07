@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FactoryCalendar` | `CHAR(2)` | Factory Calendar ID |
-| `Language` | `LANG(1)` | Language Key |
-| `FactoryCalendarName` | `CHAR(60)` | Factory Calendar Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory Calendar ID |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FactoryCalendarName` |  | |  |  | `CHAR(60)` | Factory Calendar Text |

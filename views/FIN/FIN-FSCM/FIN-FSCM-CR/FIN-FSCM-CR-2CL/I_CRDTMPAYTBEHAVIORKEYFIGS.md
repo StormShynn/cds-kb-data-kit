@@ -34,18 +34,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `CrdtMKeyFigureInfoIsErroneous` | `CHAR(1)` | Key Figures are Erroneous |
-| `DaysSalesOutstanding` | `DEC(6)` | Key Figure: Days Sales Outstanding |
-| `TotalOutstandingAmtInSndrCrcy` | `CURR(15)` | Total Outstanding Amount |
-| `SenderCurrency` | `CUKY(5)` | Currency of Key Figures |
-| `CrdtMKeyFigureTransmnDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `NoCshDiscAvgNrOfDaysInArrears` | `DEC(3)` | Average Arrears for Payments Where No Cash Discount Taken |
-| `PaytNoCshDiscTotAmtInSndrCrcy` | `CURR(15)` | Gross Total of Cleared Items with Cash Discount Not Taken |
-| `CshDiscClmAvgNrOfDaysInArrears` | `DEC(3)` | Average Arrears with Cash Discount Payments |
-| `PaytWthCshDiscTotAmtInSndrCrcy` | `CURR(15)` | Gross Total of Cleared Items Without Cash Discount Loss |
-| `TotLast12MnthsSlsAmtInSndrCrcy` | `CURR(15)` | Sales of Last 12 Months |
-| `Last12MnthsMaxSlsAmtInSndrCrcy` | `CURR(15)` | Highest Monthly Sales in Last 12 Months |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `CrdtMKeyFigureInfoIsErroneous` |  | |  |  | `CHAR(1)` | Key Figures are Erroneous |
+| `DaysSalesOutstanding` |  | |  |  | `DEC(6)` | Key Figure: Days Sales Outstanding |
+| `TotalOutstandingAmtInSndrCrcy` |  | |  |  | `CURR(15)` | Total Outstanding Amount |
+| `SenderCurrency` |  | |  |  | `CUKY(5)` | Currency of Key Figures |
+| `CrdtMKeyFigureTransmnDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `NoCshDiscAvgNrOfDaysInArrears` |  | |  |  | `DEC(3)` | Average Arrears for Payments Where No Cash Discount Taken |
+| `PaytNoCshDiscTotAmtInSndrCrcy` |  | |  |  | `CURR(15)` | Gross Total of Cleared Items with Cash Discount Not Taken |
+| `CshDiscClmAvgNrOfDaysInArrears` |  | |  |  | `DEC(3)` | Average Arrears with Cash Discount Payments |
+| `PaytWthCshDiscTotAmtInSndrCrcy` |  | |  |  | `CURR(15)` | Gross Total of Cleared Items Without Cash Discount Loss |
+| `TotLast12MnthsSlsAmtInSndrCrcy` |  | |  |  | `CURR(15)` | Sales of Last 12 Months |
+| `Last12MnthsMaxSlsAmtInSndrCrcy` |  | |  |  | `CURR(15)` | Highest Monthly Sales in Last 12 Months |

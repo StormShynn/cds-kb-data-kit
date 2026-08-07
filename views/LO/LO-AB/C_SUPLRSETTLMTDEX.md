@@ -31,187 +31,187 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrSettlmt` | `CHAR(10)` | Supplier Settlement |
-| `SuplrSettlmtItem` | `NUMC(6)` | Document Item |
-| `SettlmtDocType` | `CHAR(4)` | Settlement Document Type |
-| `SettlmtDocCat` | `CHAR(2)` | Settlement Document Category |
-| `SettlmtProcessType` | `CHAR(4)` | Settlement Process Type |
-| `LogisticsDataEntryCat` | `CHAR(1)` | Entry Category for Logistics Data |
-| `SettlmtCat` | `CHAR(1)` | Settlement Category |
-| `PostingDate` | `DATS(8)` | Posting Date |
-| `SuplrSettlmtAcctgTransfSts` | `CHAR(1)` | Posting Status for Transfer to Financial Accounting |
-| `DocumentDate` | `DATS(8)` | Document Date in Settlement Management Document |
-| `DocumentReferenceID` | `CHAR(16)` | Reference Document Number |
-| `AssignmentReference` | `CHAR(18)` | Assignment Number |
-| `StateCentralBankPaymentReason` | `CHAR(3)` | State Central Bank Indicator |
-| `SettlmtApplSts` | `CHAR(4)` | Application Status for a Settlement Management Document |
-| `SettlmtApplStsGrp` | `CHAR(4)` | Status Group for Settlement Management Documents |
-| `PricingProcedure` | `CHAR(6)` | Pricing Procedure |
-| `PricingDocument` | `CHAR(10)` | Number of the Document Condition |
-| `InvoicingParty` | `CHAR(10)` | Supplier in Settlement Management |
-| `PayeeParty` | `CHAR(10)` | Payee |
-| `AlternativeInvoicingParty` | `CHAR(10)` | Alternative Supplier |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `CreatedByUser` | `CHAR(12)` | Name of User who Created the Document |
-| `CreationDate` | `DATS(8)` | Date of Document Creation |
-| `CreationTime` | `TIMS(6)` | Time of Document Creation |
-| `LastChangeDate` | `DATS(8)` | Date of Last Document Change |
-| `SuplrSettlmtCurrency` | `CUKY(5)` | Currency of Settlement Document |
-| `ExchangeRate` | `DEC(9)` | Conversion Rate (Not Converted) |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `ExchangeRateIsFixed` | `CHAR(1)` | Indicator for Fixed Exchange Rate |
-| `ExchangeRateDate` | `DATS(8)` | Exchange Rate Date |
-| `SuplrSettlmtTotalGrossAmount` | `CURR(15)` | Gross Settlement Amount in Document Currency |
-| `SuplrSettlmtTotalNetAmount` | `CURR(15)` | Net Settlement Amount in Document Currency |
-| `SuplrSettlmtTotalTaxAmount` | `CURR(13)` | Total Tax Amount in Document Currency |
-| `PaymentTerms` | `CHAR(4)` | Terms of Payment Key |
-| `CashDiscount1Days` | `DEC(3)` | Cash Discount Days 1 |
-| `CashDiscount2Days` | `DEC(3)` | Cash Discount Days 2 |
-| `NetPaymentDays` | `DEC(3)` | Net Payment Terms Period |
-| `CashDiscount1Percent` | `DEC(5)` | Cash Discount Percentage 1 |
-| `CashDiscount2Percent` | `DEC(5)` | Cash Discount Percentage 2 |
-| `PaymentMethod` | `CHAR(1)` | Payment Method |
-| `SuplrTotEligibleAmtForCshDisc` | `CURR(13)` | Total Amount eligible for cash discount in document currency |
-| `SuplrSettlmtIsReversed` | `CHAR(1)` | Supplier Settlement Is Reversed |
-| `ReversedSupplierSettlement` | `CHAR(10)` | Reversed Document |
-| `AdditionalValueDays` | `NUMC(2)` | Additional Value Days |
-| `FixedValueDate` | `DATS(8)` | Fixed Value Date |
-| `SupplyingCountry` | `CHAR(3)` | Supplying Country/Region |
-| `TaxDepartureCountry` | `CHAR(3)` | Tax Departure Country/Region |
-| `TaxDestinationCountry` | `CHAR(3)` | Tax Destination Country/Region |
-| `IsEUTriangularDeal` | `CHAR(1)` | Indicator: Triangular Deal Within the EU |
-| `SettlmtCoCodeTaxCountry` | `CHAR(3)` | Tax Country/Region Company Code |
-| `VATRegistration` | `CHAR(20)` | VAT Registration Number |
-| `CreditControlArea` | `CHAR(4)` | Credit Control Area |
-| `CreditControlAreaCurrency` | `CUKY(5)` | Currency of Credit Control Area |
-| `ReleasedCreditAmount` | `CURR(15)` | Released credit amount |
-| `SuplrSettlmtActivityReason` | `CHAR(3)` | Header Activity Reason for Document Creation |
-| `PaymentReference` | `CHAR(30)` | Payment Reference |
-| `SuplrSettlmtPaymentCurrency` | `CUKY(5)` | Payment Currency |
-| `SuplrSettlmtPaytCrcyExchRate` | `DEC(9)` | Exchange Rate of Payment Currency (not converted) |
-| `OneTimeSupplierAddressID` | `CHAR(10)` | Address of One-Time Supplier |
-| `SettlmtReltdCndnContr` | `CHAR(10)` | Related Condition Contract in Settlement Management |
-| `CndnContrType` | `CHAR(4)` | Condition Contract Type |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `SettlmtDateCat` | `CHAR(1)` | Rebates: Settlement Date Type |
-| `ActualSettlmtDate` | `DATS(8)` | Actual Settlement Date |
-| `SettlmtDateSequentialID` | `NUMC(1)` | Settlement Date - Sequential ID |
-| `SettlmtDate` | `DATS(8)` | Rebates: Settlement Date |
-| `SuplrSettlmtIncmpltnsRsn` | `CHAR(4)` | Incompleteness Reason of Settlement Management Document |
-| `DocIntrastatRelevance` | `CHAR(1)` | Document is Relevant for Intrastat Declarations |
-| `IntrastatDeclnGdsFlwCat` | `CHAR(1)` | Type of Goods Flow for Intrastat Declarations |
-| `IncotermsVersion` | `CHAR(4)` | Incoterms Version |
-| `IncotermsClassification` | `CHAR(3)` | Incoterms (Part 1) |
-| `IncotermsTransferLocation` | `CHAR(28)` | Incoterms (Part 2) |
-| `IncotermsLocation1` | `CHAR(70)` | Incoterms Location 1 |
-| `IncotermsLocation2` | `CHAR(70)` | Incoterms Location 2 |
-| `SettlmtBusProcVar` | `CHAR(4)` | Settlement Management Process Category |
-| `SettlmtBusProcCat` | `CHAR(2)` | Use Case Type |
-| `SEPAMandate` | `CHAR(35)` | Unique Reference to Mandate for each Payee |
-| `TotalSettlmtQuantity` | `QUAN(15)` | Total Quantity of the Business Volume in a Settlement Run |
-| `TotalSettlmtQuantityUnit` | `UNIT(3)` | Unit of Measure for Total Quantity |
-| `TotalSettlmtNetWeight` | `QUAN(15)` | Total Net Weight of the Business Volume in a Settlement Run |
-| `TotalSettlmtGrossWeight` | `QUAN(15)` | Total Gross Weight of the Bus Volume in a Settlement Run |
-| `TotalSettlmtWeightUnit` | `UNIT(3)` | Unit of Weight for Total Weight |
-| `TotalSettlmtVolume` | `QUAN(15)` | Total Volume of the Business Volume in a Settlement Run |
-| `TotalSettlmtVolumeUnit` | `UNIT(3)` | Volume Unit for Total Volume |
-| `TotalSettlmtPointsQty` | `QUAN(15)` | Total Points of the Business Volume in a Settlement Run |
-| `TotalSettlmtPointsQtyUnit` | `UNIT(3)` | Points Unit for Total Points |
-| `SettlmtPeriodStartDate` | `DATS(8)` | Start Date of Settlement Period |
-| `SettlmtPeriodEndDate` | `DATS(8)` | End Date of Settlement Period |
-| `CndnContrProcessCategory` | `CHAR(2)` | Process Category of a Condition Contract |
-| `Product` | `CHAR(40)` | Product |
-| `ProductGroup` | `CHAR(9)` | Product Group |
-| `Plant` | `CHAR(4)` | Plant |
-| `InventoryValuationType` | `CHAR(10)` | Inventory Valuation Type |
-| `PricingDate` | `DATS(8)` | Date for Pricing and Exchange Rate |
-| `TaxCode` | `CHAR(2)` | Tax on Sales/Purchases Code |
-| `TaxCountry` | `CHAR(3)` | Tax Reporting Country/Region |
-| `TaxJurisdiction` | `CHAR(15)` | Tax Jurisdiction |
-| `SettlmtQuantity` | `QUAN(13)` | Quantity of Settlement Management Document Item |
-| `SettlmtQuantityUnit` | `UNIT(3)` | Unit of Measure of Settlement Management Doc Item Quantity |
-| `NetPriceAmount` | `CURR(11)` | Net Price in Document Currency |
-| `NetPriceQuantity` | `DEC(5)` | Price Unit of Settlement Management Document Item |
-| `NetPriceQuantityUnit` | `UNIT(3)` | Settlement Management Document Item Price Unit |
-| `SettlmtToBaseQuantityNmrtr` | `DEC(5)` | Numerator Converting Qty in Settlement Document to Base Unit |
-| `SettlmtToBaseQuantityDnmntr` | `DEC(5)` | Denominator Converting Qty in Settlement Doc. to Base Unit |
-| `SettlmtToNetPriceQtyNmrtr` | `DEC(5)` | Numerator for Converting Settl. UoM to Settl. Price UoM |
-| `SettlmtToNetPriceQtyDnmntr` | `DEC(5)` | Denominator for Converting Settl. UoM to Settl. Price UoM |
-| `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `ItemNetWeight` | `QUAN(15)` | Net Weight |
-| `ItemGrossWeight` | `QUAN(15)` | Gross Weight |
-| `ItemWeightUnit` | `UNIT(3)` | Unit of Weight |
-| `ItemVolume` | `QUAN(15)` | Volume |
-| `ItemVolumeUnit` | `UNIT(3)` | Volume Unit |
-| `ProductPurchasePointsQtyUnit` | `UNIT(3)` | Quantity Unit of Purchase Points of a Product |
-| `ProductPurchasePointsQty` | `QUAN(13)` | Purchase Points Quantity of a Product |
-| `SuplrSettlmtItemTaxAmount` | `CURR(13)` | Item Tax Amount in Document Currency |
-| `SuplrSettlmtItemGrossAmount` | `CURR(15)` | Gross Amount of Item in Document Currency |
-| `SuplrSettlmtItemNetAmount` | `CURR(15)` | Net Amount of Item in Document Currency |
-| `SuplrSettlmtSubtotal1Amount` | `CURR(13)` | Subtotal 1 Amount |
-| `SuplrSettlmtSubtotal2Amount` | `CURR(13)` | Subtotal 2 Amount |
-| `SuplrSettlmtSubtotal3Amount` | `CURR(13)` | Subtotal 3 Amount |
-| `SuplrSettlmtSubtotal4Amount` | `CURR(13)` | Subtotal 4 Amount |
-| `SuplrSettlmtSubtotal5Amount` | `CURR(13)` | Subtotal 5 Amount |
-| `SuplrSettlmtSubtotal6Amount` | `CURR(13)` | Subtotal 6 Amount |
-| `SuplrSettlmtRebateBasisAmount` | `CURR(13)` | Rebate Basis Amount |
-| `SuplrSettlmtEffctvItemAmount` | `CURR(13)` | Effective Amount of Item (Supplier-Side) |
-| `SuplrItmEligibleAmtForCshDisc` | `CURR(13)` | Amount Eligible for Cash Discount in Document Currency |
-| `NonDeductibleInputTaxAmount` | `CURR(13)` | Non Deductible Input Tax Amount |
-| `SuplrSettlmtItmStstclPrpty` | `CHAR(1)` | Statistical Property of Settlement Management Item |
-| `CashDiscountIsDeductible` | `CHAR(1)` | Cash Discount is Deductible |
-| `SettlmtSourceDoc` | `CHAR(10)` | Document Number of the Source Document |
-| `SettlmtSourceDocItem` | `NUMC(6)` | Item of the Source Document |
-| `SettlmtSourceDocCat` | `CHAR(2)` | Document Category of Source Document |
-| `SettlmtSourceDocFiscalYear` | `NUMC(4)` | Fiscal Year of a Source Document in Settlement Management |
-| `SuplrSettlmtItmActivityReason` | `CHAR(3)` | Activity Reason for Document Creation |
-| `SuplrSettlmtItemText` | `CHAR(40)` | Short Text |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `WBSElementInternalID` | `NUMC(8)` | Work Breakdown Structure Element (WBS Element) not converted |
-| `SupplierSettlementOrder` | `CHAR(12)` | Order for Account Assignment in Settlement Management |
-| `Batch` | `CHAR(10)` | Batch Number |
-| `PrcDetnIsIncmplt` | `CHAR(1)` | Price Determination is Incomplete |
-| `SettlmtPrecdgDoc` | `CHAR(10)` | Preceding Document of the Settlement Management Document |
-| `SettlmtPrecdgDocItem` | `NUMC(6)` | Item of Preceding Document |
-| `SettlmtPrecdgDocCat` | `CHAR(2)` | Document Category of Preceding Document |
-| `SettlmtPrecdgDocFiscalYear` | `NUMC(4)` | Fiscal Year of a Preceding Document in Settlement Management |
-| `SuplrSettlmtItmCat` | `CHAR(1)` | Item Category |
-| `SettlmtItemReltdCndnContr` | `CHAR(10)` | Related Condition Contract of a Settlement Management Item |
-| `SuplrSettlmtItemStatus` | `CHAR(1)` | Item Status |
-| `SuplrSettlmtItemReversed` | `CHAR(1)` | Item Was Canceled |
-| `ServicesRenderedDate` | `DATS(8)` | Date of Services Rendered |
-| `SettlementFiscalYear` | `NUMC(4)` | Fiscal Year of Settlement |
-| `HigherLevelItem` | `NUMC(6)` | Higher-Level Item in Bill of Material Structures |
-| `LowerLevelItemExists` | `CHAR(1)` | Subitems Exist |
-| `ItemDistributionStatus` | `CHAR(1)` | Distribution Status of Settlement Item |
-| `SettlmtRefDocType` | `CHAR(4)` | Type of Reference Document for Settlement Management |
-| `SettlmtRefDoc` | `CHAR(20)` | Reference Document for Settlement Management |
-| `SettlmtRefDocFiscalYear` | `NUMC(4)` | Year of Reference Document |
-| `SettlmtRefDocLogicalSyst` | `CHAR(10)` | Logical System of Reference Document for Smt Mgmt |
-| `SettlmtRefDocItem` | `NUMC(10)` | Reference Document Item for Settlement Management Document |
-| `SettlmtRefDocCat` | `CHAR(2)` | Reference Document Category in Settlement Management |
-| `ItemIntrastatRelevance` | `CHAR(1)` | Document Item Is Relevant for Intrastat Declarations |
-| `SettlmtAddlRefDocType` | `CHAR(4)` | Type of Additional Reference Document for Settlmt Mgmt |
-| `SettlmtAddlRefDoc` | `CHAR(20)` | Additional Reference Document for Settlement Management |
-| `SettlmtAddlRefDocFiscalYear` | `NUMC(4)` | Year of Additional Reference Document |
-| `SettlmtAddlRefDocLogicalSyst` | `CHAR(10)` | Logical System of Additional Reference Document for Smt Mgmt |
-| `SettlmtAddlRefDocItem` | `NUMC(10)` | Additional Reference Doc Item for Settlement Mgmt. Document |
-| `SettlmtAddlRefDocCat` | `CHAR(2)` | Additional Reference Document Category |
-| `CustomerSettlmtRecipient` | `CHAR(10)` | Customer Settlement Recipient |
-| `ProductHierarchy` | `CHAR(18)` | Product Hierarchy |
-| `SalesSpcfcProductGroup1` | `CHAR(3)` | Sales-Specific Product Group 1 |
-| `SalesSpcfcProductGroup2` | `CHAR(3)` | Sales-Specific Product Group 2 |
-| `SalesSpcfcProductGroup3` | `CHAR(3)` | Sales-Specific Product Group 3 |
-| `SalesSpcfcProductGroup4` | `CHAR(3)` | Sales-Specific Product Group 4 |
-| `SalesSpcfcProductGroup5` | `CHAR(3)` | Sales-Specific Product Group 5 |
-| `SupplierProductID` | `CHAR(35)` | Material Number Used by Supplier |
-| `PriorSupplier` | `CHAR(10)` | Prior Supplier |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `SupplierSubrange` | `CHAR(6)` | Supplier Subrange |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrSettlmt` |  | |  |  | `CHAR(10)` | Supplier Settlement |
+| `SuplrSettlmtItem` |  | |  |  | `NUMC(6)` | Document Item |
+| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
+| `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
+| `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
+| `LogisticsDataEntryCat` |  | |  |  | `CHAR(1)` | Entry Category for Logistics Data |
+| `SettlmtCat` |  | |  |  | `CHAR(1)` | Settlement Category |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `SuplrSettlmtAcctgTransfSts` |  | |  |  | `CHAR(1)` | Posting Status for Transfer to Financial Accounting |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Document Date in Settlement Management Document |
+| `DocumentReferenceID` |  | |  |  | `CHAR(16)` | Reference Document Number |
+| `AssignmentReference` |  | |  |  | `CHAR(18)` | Assignment Number |
+| `StateCentralBankPaymentReason` |  | |  |  | `CHAR(3)` | State Central Bank Indicator |
+| `SettlmtApplSts` |  | |  |  | `CHAR(4)` | Application Status for a Settlement Management Document |
+| `SettlmtApplStsGrp` |  | |  |  | `CHAR(4)` | Status Group for Settlement Management Documents |
+| `PricingProcedure` |  | |  |  | `CHAR(6)` | Pricing Procedure |
+| `PricingDocument` |  | |  |  | `CHAR(10)` | Number of the Document Condition |
+| `InvoicingParty` |  | |  |  | `CHAR(10)` | Supplier in Settlement Management |
+| `PayeeParty` |  | |  |  | `CHAR(10)` | Payee |
+| `AlternativeInvoicingParty` |  | |  |  | `CHAR(10)` | Alternative Supplier |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of User who Created the Document |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date of Document Creation |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Document Creation |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date of Last Document Change |
+| `SuplrSettlmtCurrency` |  | |  |  | `CUKY(5)` | Currency of Settlement Document |
+| `ExchangeRate` |  | |  |  | `DEC(9)` | Conversion Rate (Not Converted) |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `ExchangeRateIsFixed` |  | |  |  | `CHAR(1)` | Indicator for Fixed Exchange Rate |
+| `ExchangeRateDate` |  | |  |  | `DATS(8)` | Exchange Rate Date |
+| `SuplrSettlmtTotalGrossAmount` |  | |  |  | `CURR(15)` | Gross Settlement Amount in Document Currency |
+| `SuplrSettlmtTotalNetAmount` |  | |  |  | `CURR(15)` | Net Settlement Amount in Document Currency |
+| `SuplrSettlmtTotalTaxAmount` |  | |  |  | `CURR(13)` | Total Tax Amount in Document Currency |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment Key |
+| `CashDiscount1Days` |  | |  |  | `DEC(3)` | Cash Discount Days 1 |
+| `CashDiscount2Days` |  | |  |  | `DEC(3)` | Cash Discount Days 2 |
+| `NetPaymentDays` |  | |  |  | `DEC(3)` | Net Payment Terms Period |
+| `CashDiscount1Percent` |  | |  |  | `DEC(5)` | Cash Discount Percentage 1 |
+| `CashDiscount2Percent` |  | |  |  | `DEC(5)` | Cash Discount Percentage 2 |
+| `PaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `SuplrTotEligibleAmtForCshDisc` |  | |  |  | `CURR(13)` | Total Amount eligible for cash discount in document currency |
+| `SuplrSettlmtIsReversed` |  | |  |  | `CHAR(1)` | Supplier Settlement Is Reversed |
+| `ReversedSupplierSettlement` |  | |  |  | `CHAR(10)` | Reversed Document |
+| `AdditionalValueDays` |  | |  |  | `NUMC(2)` | Additional Value Days |
+| `FixedValueDate` |  | |  |  | `DATS(8)` | Fixed Value Date |
+| `SupplyingCountry` |  | |  |  | `CHAR(3)` | Supplying Country/Region |
+| `TaxDepartureCountry` |  | |  |  | `CHAR(3)` | Tax Departure Country/Region |
+| `TaxDestinationCountry` |  | |  |  | `CHAR(3)` | Tax Destination Country/Region |
+| `IsEUTriangularDeal` |  | |  |  | `CHAR(1)` | Indicator: Triangular Deal Within the EU |
+| `SettlmtCoCodeTaxCountry` |  | |  |  | `CHAR(3)` | Tax Country/Region Company Code |
+| `VATRegistration` |  | |  |  | `CHAR(20)` | VAT Registration Number |
+| `CreditControlArea` |  | |  |  | `CHAR(4)` | Credit Control Area |
+| `CreditControlAreaCurrency` |  | |  |  | `CUKY(5)` | Currency of Credit Control Area |
+| `ReleasedCreditAmount` |  | |  |  | `CURR(15)` | Released credit amount |
+| `SuplrSettlmtActivityReason` |  | |  |  | `CHAR(3)` | Header Activity Reason for Document Creation |
+| `PaymentReference` |  | |  |  | `CHAR(30)` | Payment Reference |
+| `SuplrSettlmtPaymentCurrency` |  | |  |  | `CUKY(5)` | Payment Currency |
+| `SuplrSettlmtPaytCrcyExchRate` |  | |  |  | `DEC(9)` | Exchange Rate of Payment Currency (not converted) |
+| `OneTimeSupplierAddressID` |  | |  |  | `CHAR(10)` | Address of One-Time Supplier |
+| `SettlmtReltdCndnContr` |  | |  |  | `CHAR(10)` | Related Condition Contract in Settlement Management |
+| `CndnContrType` |  | |  |  | `CHAR(4)` | Condition Contract Type |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `SettlmtDateCat` |  | |  |  | `CHAR(1)` | Rebates: Settlement Date Type |
+| `ActualSettlmtDate` |  | |  |  | `DATS(8)` | Actual Settlement Date |
+| `SettlmtDateSequentialID` |  | |  |  | `NUMC(1)` | Settlement Date - Sequential ID |
+| `SettlmtDate` |  | |  |  | `DATS(8)` | Rebates: Settlement Date |
+| `SuplrSettlmtIncmpltnsRsn` |  | |  |  | `CHAR(4)` | Incompleteness Reason of Settlement Management Document |
+| `DocIntrastatRelevance` |  | |  |  | `CHAR(1)` | Document is Relevant for Intrastat Declarations |
+| `IntrastatDeclnGdsFlwCat` |  | |  |  | `CHAR(1)` | Type of Goods Flow for Intrastat Declarations |
+| `IncotermsVersion` |  | |  |  | `CHAR(4)` | Incoterms Version |
+| `IncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms (Part 1) |
+| `IncotermsTransferLocation` |  | |  |  | `CHAR(28)` | Incoterms (Part 2) |
+| `IncotermsLocation1` |  | |  |  | `CHAR(70)` | Incoterms Location 1 |
+| `IncotermsLocation2` |  | |  |  | `CHAR(70)` | Incoterms Location 2 |
+| `SettlmtBusProcVar` |  | |  |  | `CHAR(4)` | Settlement Management Process Category |
+| `SettlmtBusProcCat` |  | |  |  | `CHAR(2)` | Use Case Type |
+| `SEPAMandate` |  | |  |  | `CHAR(35)` | Unique Reference to Mandate for each Payee |
+| `TotalSettlmtQuantity` |  | |  |  | `QUAN(15)` | Total Quantity of the Business Volume in a Settlement Run |
+| `TotalSettlmtQuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure for Total Quantity |
+| `TotalSettlmtNetWeight` |  | |  |  | `QUAN(15)` | Total Net Weight of the Business Volume in a Settlement Run |
+| `TotalSettlmtGrossWeight` |  | |  |  | `QUAN(15)` | Total Gross Weight of the Bus Volume in a Settlement Run |
+| `TotalSettlmtWeightUnit` |  | |  |  | `UNIT(3)` | Unit of Weight for Total Weight |
+| `TotalSettlmtVolume` |  | |  |  | `QUAN(15)` | Total Volume of the Business Volume in a Settlement Run |
+| `TotalSettlmtVolumeUnit` |  | |  |  | `UNIT(3)` | Volume Unit for Total Volume |
+| `TotalSettlmtPointsQty` |  | |  |  | `QUAN(15)` | Total Points of the Business Volume in a Settlement Run |
+| `TotalSettlmtPointsQtyUnit` |  | |  |  | `UNIT(3)` | Points Unit for Total Points |
+| `SettlmtPeriodStartDate` |  | |  |  | `DATS(8)` | Start Date of Settlement Period |
+| `SettlmtPeriodEndDate` |  | |  |  | `DATS(8)` | End Date of Settlement Period |
+| `CndnContrProcessCategory` |  | |  |  | `CHAR(2)` | Process Category of a Condition Contract |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Inventory Valuation Type |
+| `PricingDate` |  | |  |  | `DATS(8)` | Date for Pricing and Exchange Rate |
+| `TaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `TaxCountry` |  | |  |  | `CHAR(3)` | Tax Reporting Country/Region |
+| `TaxJurisdiction` |  | |  |  | `CHAR(15)` | Tax Jurisdiction |
+| `SettlmtQuantity` |  | |  |  | `QUAN(13)` | Quantity of Settlement Management Document Item |
+| `SettlmtQuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure of Settlement Management Doc Item Quantity |
+| `NetPriceAmount` |  | |  |  | `CURR(11)` | Net Price in Document Currency |
+| `NetPriceQuantity` |  | |  |  | `DEC(5)` | Price Unit of Settlement Management Document Item |
+| `NetPriceQuantityUnit` |  | |  |  | `UNIT(3)` | Settlement Management Document Item Price Unit |
+| `SettlmtToBaseQuantityNmrtr` |  | |  |  | `DEC(5)` | Numerator Converting Qty in Settlement Document to Base Unit |
+| `SettlmtToBaseQuantityDnmntr` |  | |  |  | `DEC(5)` | Denominator Converting Qty in Settlement Doc. to Base Unit |
+| `SettlmtToNetPriceQtyNmrtr` |  | |  |  | `DEC(5)` | Numerator for Converting Settl. UoM to Settl. Price UoM |
+| `SettlmtToNetPriceQtyDnmntr` |  | |  |  | `DEC(5)` | Denominator for Converting Settl. UoM to Settl. Price UoM |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `ItemNetWeight` |  | |  |  | `QUAN(15)` | Net Weight |
+| `ItemGrossWeight` |  | |  |  | `QUAN(15)` | Gross Weight |
+| `ItemWeightUnit` |  | |  |  | `UNIT(3)` | Unit of Weight |
+| `ItemVolume` |  | |  |  | `QUAN(15)` | Volume |
+| `ItemVolumeUnit` |  | |  |  | `UNIT(3)` | Volume Unit |
+| `ProductPurchasePointsQtyUnit` |  | |  |  | `UNIT(3)` | Quantity Unit of Purchase Points of a Product |
+| `ProductPurchasePointsQty` |  | |  |  | `QUAN(13)` | Purchase Points Quantity of a Product |
+| `SuplrSettlmtItemTaxAmount` |  | |  |  | `CURR(13)` | Item Tax Amount in Document Currency |
+| `SuplrSettlmtItemGrossAmount` |  | |  |  | `CURR(15)` | Gross Amount of Item in Document Currency |
+| `SuplrSettlmtItemNetAmount` |  | |  |  | `CURR(15)` | Net Amount of Item in Document Currency |
+| `SuplrSettlmtSubtotal1Amount` |  | |  |  | `CURR(13)` | Subtotal 1 Amount |
+| `SuplrSettlmtSubtotal2Amount` |  | |  |  | `CURR(13)` | Subtotal 2 Amount |
+| `SuplrSettlmtSubtotal3Amount` |  | |  |  | `CURR(13)` | Subtotal 3 Amount |
+| `SuplrSettlmtSubtotal4Amount` |  | |  |  | `CURR(13)` | Subtotal 4 Amount |
+| `SuplrSettlmtSubtotal5Amount` |  | |  |  | `CURR(13)` | Subtotal 5 Amount |
+| `SuplrSettlmtSubtotal6Amount` |  | |  |  | `CURR(13)` | Subtotal 6 Amount |
+| `SuplrSettlmtRebateBasisAmount` |  | |  |  | `CURR(13)` | Rebate Basis Amount |
+| `SuplrSettlmtEffctvItemAmount` |  | |  |  | `CURR(13)` | Effective Amount of Item (Supplier-Side) |
+| `SuplrItmEligibleAmtForCshDisc` |  | |  |  | `CURR(13)` | Amount Eligible for Cash Discount in Document Currency |
+| `NonDeductibleInputTaxAmount` |  | |  |  | `CURR(13)` | Non Deductible Input Tax Amount |
+| `SuplrSettlmtItmStstclPrpty` |  | |  |  | `CHAR(1)` | Statistical Property of Settlement Management Item |
+| `CashDiscountIsDeductible` |  | |  |  | `CHAR(1)` | Cash Discount is Deductible |
+| `SettlmtSourceDoc` |  | |  |  | `CHAR(10)` | Document Number of the Source Document |
+| `SettlmtSourceDocItem` |  | |  |  | `NUMC(6)` | Item of the Source Document |
+| `SettlmtSourceDocCat` |  | |  |  | `CHAR(2)` | Document Category of Source Document |
+| `SettlmtSourceDocFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of a Source Document in Settlement Management |
+| `SuplrSettlmtItmActivityReason` |  | |  |  | `CHAR(3)` | Activity Reason for Document Creation |
+| `SuplrSettlmtItemText` |  | |  |  | `CHAR(40)` | Short Text |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | Work Breakdown Structure Element (WBS Element) not converted |
+| `SupplierSettlementOrder` |  | |  |  | `CHAR(12)` | Order for Account Assignment in Settlement Management |
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
+| `PrcDetnIsIncmplt` |  | |  |  | `CHAR(1)` | Price Determination is Incomplete |
+| `SettlmtPrecdgDoc` |  | |  |  | `CHAR(10)` | Preceding Document of the Settlement Management Document |
+| `SettlmtPrecdgDocItem` |  | |  |  | `NUMC(6)` | Item of Preceding Document |
+| `SettlmtPrecdgDocCat` |  | |  |  | `CHAR(2)` | Document Category of Preceding Document |
+| `SettlmtPrecdgDocFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of a Preceding Document in Settlement Management |
+| `SuplrSettlmtItmCat` |  | |  |  | `CHAR(1)` | Item Category |
+| `SettlmtItemReltdCndnContr` |  | |  |  | `CHAR(10)` | Related Condition Contract of a Settlement Management Item |
+| `SuplrSettlmtItemStatus` |  | |  |  | `CHAR(1)` | Item Status |
+| `SuplrSettlmtItemReversed` |  | |  |  | `CHAR(1)` | Item Was Canceled |
+| `ServicesRenderedDate` |  | |  |  | `DATS(8)` | Date of Services Rendered |
+| `SettlementFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Settlement |
+| `HigherLevelItem` |  | |  |  | `NUMC(6)` | Higher-Level Item in Bill of Material Structures |
+| `LowerLevelItemExists` |  | |  |  | `CHAR(1)` | Subitems Exist |
+| `ItemDistributionStatus` |  | |  |  | `CHAR(1)` | Distribution Status of Settlement Item |
+| `SettlmtRefDocType` |  | |  |  | `CHAR(4)` | Type of Reference Document for Settlement Management |
+| `SettlmtRefDoc` |  | |  |  | `CHAR(20)` | Reference Document for Settlement Management |
+| `SettlmtRefDocFiscalYear` |  | |  |  | `NUMC(4)` | Year of Reference Document |
+| `SettlmtRefDocLogicalSyst` |  | |  |  | `CHAR(10)` | Logical System of Reference Document for Smt Mgmt |
+| `SettlmtRefDocItem` |  | |  |  | `NUMC(10)` | Reference Document Item for Settlement Management Document |
+| `SettlmtRefDocCat` |  | |  |  | `CHAR(2)` | Reference Document Category in Settlement Management |
+| `ItemIntrastatRelevance` |  | |  |  | `CHAR(1)` | Document Item Is Relevant for Intrastat Declarations |
+| `SettlmtAddlRefDocType` |  | |  |  | `CHAR(4)` | Type of Additional Reference Document for Settlmt Mgmt |
+| `SettlmtAddlRefDoc` |  | |  |  | `CHAR(20)` | Additional Reference Document for Settlement Management |
+| `SettlmtAddlRefDocFiscalYear` |  | |  |  | `NUMC(4)` | Year of Additional Reference Document |
+| `SettlmtAddlRefDocLogicalSyst` |  | |  |  | `CHAR(10)` | Logical System of Additional Reference Document for Smt Mgmt |
+| `SettlmtAddlRefDocItem` |  | |  |  | `NUMC(10)` | Additional Reference Doc Item for Settlement Mgmt. Document |
+| `SettlmtAddlRefDocCat` |  | |  |  | `CHAR(2)` | Additional Reference Document Category |
+| `CustomerSettlmtRecipient` |  | |  |  | `CHAR(10)` | Customer Settlement Recipient |
+| `ProductHierarchy` |  | |  |  | `CHAR(18)` | Product Hierarchy |
+| `SalesSpcfcProductGroup1` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 1 |
+| `SalesSpcfcProductGroup2` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 2 |
+| `SalesSpcfcProductGroup3` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 3 |
+| `SalesSpcfcProductGroup4` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 4 |
+| `SalesSpcfcProductGroup5` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 5 |
+| `SupplierProductID` |  | |  |  | `CHAR(35)` | Material Number Used by Supplier |
+| `PriorSupplier` |  | |  |  | `CHAR(10)` | Prior Supplier |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `SupplierSubrange` |  | |  |  | `CHAR(6)` | Supplier Subrange |

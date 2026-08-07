@@ -33,15 +33,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSTaskDueDate` | `DATS(8)` | Due Date of a Planned Task |
-| `EHSTaskStartDate` | `DATS(8)` | Start Date of a Planned Task |
-| `EHSTaskInstceCompletionDate` | `DATS(8)` | Completion Date of a Planned Task |
-| `EHSTaskPriority` | `NUMC(1)` | Task Definition - Priority |
-| `EHSTaskPriorityName` | `CHAR(60)` | Task Definition Priority Description |
-| `EHSSemanticObjectName` | `CHAR(60)` | Task Origin |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `NumberOfRecords` | `INT4(10)` | Number of Records |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSTaskDueDate` |  | |  |  | `DATS(8)` | Due Date of a Planned Task |
+| `EHSTaskStartDate` |  | |  |  | `DATS(8)` | Start Date of a Planned Task |
+| `EHSTaskInstceCompletionDate` |  | |  |  | `DATS(8)` | Completion Date of a Planned Task |
+| `EHSTaskPriority` |  | |  |  | `NUMC(1)` | Task Definition - Priority |
+| `EHSTaskPriorityName` |  | |  |  | `CHAR(60)` | Task Definition Priority Description |
+| `EHSSemanticObjectName` |  | |  |  | `CHAR(60)` | Task Origin |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Records |

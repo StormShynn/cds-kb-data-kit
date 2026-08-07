@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Country` | `CHAR(3)` | Country/Region Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |

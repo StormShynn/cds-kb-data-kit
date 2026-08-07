@@ -35,21 +35,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `BankInternalID` | `CHAR(15)` | Bank Key |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `BankAccountNumber` | `CHAR(40)` | Bank Account Number |
-| `BankAccountCurrency` | `CUKY(5)` | Currency Key |
-| `BankControlKey` | `CHAR(2)` | Bank Control Key |
-| `BankAccountContractType` | `CHAR(2)` | Bank Account Contract Type |
-| `BankNumber` | `CHAR(15)` | Bank Number |
-| `SWIFTCode` | `CHAR(11)` | SWIFT/BIC for International Payments |
-| `BankGroup` | `CHAR(10)` | Bank Group ID |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BankAccountInternalType` | `CHAR(10)` | Bank Account Type ID |
-| `BankAccountCharacteristic` | `CHAR(5)` | Bank Account Characteristic |
-| `BankAccountStatus` | `CHAR(2)` | Bank Account Status |
-| `ValidityStartDate` | `DATS(8)` | Bank Account Opening Date |
-| `ValidityEndDate` | `DATS(8)` | Bank Account Closing Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `BankInternalID` |  | |  |  | `CHAR(15)` | Bank Key |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankAccountNumber` |  | |  |  | `CHAR(40)` | Bank Account Number |
+| `BankAccountCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `BankControlKey` |  | |  |  | `CHAR(2)` | Bank Control Key |
+| `BankAccountContractType` |  | |  |  | `CHAR(2)` | Bank Account Contract Type |
+| `BankNumber` |  | |  |  | `CHAR(15)` | Bank Number |
+| `SWIFTCode` |  | |  |  | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BankAccountInternalType` |  | |  |  | `CHAR(10)` | Bank Account Type ID |
+| `BankAccountCharacteristic` |  | |  |  | `CHAR(5)` | Bank Account Characteristic |
+| `BankAccountStatus` |  | |  |  | `CHAR(2)` | Bank Account Status |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Bank Account Opening Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Bank Account Closing Date |

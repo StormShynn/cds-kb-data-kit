@@ -39,60 +39,60 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OutboundDelivery` | `CHAR(10)` | Outbound Delivery |
-| `OutboundDeliveryItem` | `NUMC(6)` | Outbound Delivery Item |
-| `PlannedGoodsIssueDate` | `DATS(8)` | Planned Goods Movement Date |
-| `AdjustedPlannedGoodsIssueDate` | `DATS(8)` | Adjusted PLanned GI Date |
-| `ActualGoodsMovementDate` | `DATS(8)` | Actual Goods Movement Date |
-| `DeliveryPriority` | `NUMC(2)` | Delivery Priority |
-| `GoodsMovementStatus` | `CHAR(1)` | Goods Movement Status (Item) |
-| `Plant` | `CHAR(4)` | Plant |
-| `TransportationGroup` | `CHAR(4)` | Transportation Group |
-| `Warehouse` | `CHAR(3)` | Warehouse Number / Warehouse Complex |
-| `DeliveryDocumentType` | `CHAR(4)` | Delivery Type |
-| `ReceivingPlant` | `CHAR(4)` | Receiving Plant for Deliveries |
-| `ShipToParty` | `CHAR(10)` | Ship-to Party |
-| `ShippingCondition` | `CHAR(2)` | Shipping Conditions |
-| `ShippingPoint` | `CHAR(4)` | Shipping Point / Receiving Point |
-| `SoldToParty` | `CHAR(10)` | Sold-to Party |
-| `ProposedDeliveryRoute` | `CHAR(6)` | Route |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarQuarter` | `NUMC(1)` | Calendar Quarter |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `CalendarWeek` | `NUMC(2)` | Calendar Week |
-| `YearMonth` | `NUMC(6)` | Year Month |
-| `YearQuarter` | `NUMC(5)` | Year Quarter |
-| `YearWeek` | `NUMC(6)` | Year Week |
-| `Product` | `CHAR(40)` | Product |
-| `ProductGroup` | `CHAR(9)` | Product Group |
-| `CustomerClassification` | `CHAR(2)` | Customer Classification |
-| `ForwardingAgent` | `CHAR(10)` | Account Number of Supplier |
-| `ReferenceSDDocument` | `CHAR(10)` | Document Number of Reference Document |
-| `ReferenceSDDocumentItem` | `NUMC(6)` | Item Number of the Reference Item |
-| `ReferenceSDDocumentCategory` | `CHAR(4)` | SD Document Category of Reference SD Document |
-| `HundredInPercent` | `INT1(3)` |  |
-| `NumberOfDeliveryItems` | `INT8(19)` | Number of Delivery Items |
-| `AvgGIToPlndGIDelayInDays` | `INT4(10)` | Average Goods Issue Performance as Days of Delay |
-| `GIToPlndGIDelayInDays` | `INT4(10)` | Delay of Goods Issue Compared to the Planned GI Date (Days) |
-| `MaxGIToPlndGIDelayInDays` | `INT4(10)` | Max. Delay of GI Compared to the Planned GI Date (Days) |
-| `DelivItemsShpdAsPlndRatio` | `DEC(13)` | Ratio of  Delivery Items Shipped as Planned |
-| `NmbrOfShpdAsPlndDelivItems` | `INT8(19)` | Number of Delivery Items Shipped as Planned |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `DeliveryDocumentTypeName` | `CHAR(20)` | Description |
-| `SupplierName` | `CHAR(80)` | Name of Supplier |
-| `ReceivingPlantName` | `CHAR(30)` | Plant Name |
-| `PlantName` | `CHAR(30)` | Plant Name |
-| `SDDocumentCategoryName` | `CHAR(60)` | SD Document Category Description |
-| `ShippingConditionName` | `CHAR(20)` | Shipping Conditions Description |
-| `ShippingPointName` | `CHAR(30)` | Description |
-| `ShipToPartyName` | `CHAR(80)` | Name of Customer |
-| `SoldToPartyName` | `CHAR(80)` | Name of Customer |
-| `ProductName` | `CHAR(40)` | Product Description |
-| `WarehouseName` | `CHAR(25)` | Warehouse Number Description |
-| `GoodsMovementStatusDesc` | `CHAR(20)` | Status Description |
-| `TransportationGroupName` | `CHAR(20)` | Description |
-| `DeliveryPriorityDesc` | `CHAR(20)` | Description |
-| `ProductGroupName` | `CHAR(20)` | Product Group Description |
-| `CustomerClassificationDesc` | `CHAR(20)` | Customer Classification Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OutboundDelivery` |  | |  |  | `CHAR(10)` | Outbound Delivery |
+| `OutboundDeliveryItem` |  | |  |  | `NUMC(6)` | Outbound Delivery Item |
+| `PlannedGoodsIssueDate` |  | |  |  | `DATS(8)` | Planned Goods Movement Date |
+| `AdjustedPlannedGoodsIssueDate` |  | |  |  | `DATS(8)` | Adjusted PLanned GI Date |
+| `ActualGoodsMovementDate` |  | |  |  | `DATS(8)` | Actual Goods Movement Date |
+| `DeliveryPriority` |  | |  |  | `NUMC(2)` | Delivery Priority |
+| `GoodsMovementStatus` |  | |  |  | `CHAR(1)` | Goods Movement Status (Item) |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `TransportationGroup` |  | |  |  | `CHAR(4)` | Transportation Group |
+| `Warehouse` |  | |  |  | `CHAR(3)` | Warehouse Number / Warehouse Complex |
+| `DeliveryDocumentType` |  | |  |  | `CHAR(4)` | Delivery Type |
+| `ReceivingPlant` |  | |  |  | `CHAR(4)` | Receiving Plant for Deliveries |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
+| `ShippingCondition` |  | |  |  | `CHAR(2)` | Shipping Conditions |
+| `ShippingPoint` |  | |  |  | `CHAR(4)` | Shipping Point / Receiving Point |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `ProposedDeliveryRoute` |  | |  |  | `CHAR(6)` | Route |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `CalendarWeek` |  | |  |  | `NUMC(2)` | Calendar Week |
+| `YearMonth` |  | |  |  | `NUMC(6)` | Year Month |
+| `YearQuarter` |  | |  |  | `NUMC(5)` | Year Quarter |
+| `YearWeek` |  | |  |  | `NUMC(6)` | Year Week |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `ForwardingAgent` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `ReferenceSDDocument` |  | |  |  | `CHAR(10)` | Document Number of Reference Document |
+| `ReferenceSDDocumentItem` |  | |  |  | `NUMC(6)` | Item Number of the Reference Item |
+| `ReferenceSDDocumentCategory` |  | |  |  | `CHAR(4)` | SD Document Category of Reference SD Document |
+| `HundredInPercent` |  | |  |  | `INT1(3)` |  |
+| `NumberOfDeliveryItems` |  | |  |  | `INT8(19)` | Number of Delivery Items |
+| `AvgGIToPlndGIDelayInDays` |  | |  |  | `INT4(10)` | Average Goods Issue Performance as Days of Delay |
+| `GIToPlndGIDelayInDays` |  | |  |  | `INT4(10)` | Delay of Goods Issue Compared to the Planned GI Date (Days) |
+| `MaxGIToPlndGIDelayInDays` |  | |  |  | `INT4(10)` | Max. Delay of GI Compared to the Planned GI Date (Days) |
+| `DelivItemsShpdAsPlndRatio` |  | |  |  | `DEC(13)` | Ratio of  Delivery Items Shipped as Planned |
+| `NmbrOfShpdAsPlndDelivItems` |  | |  |  | `INT8(19)` | Number of Delivery Items Shipped as Planned |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `DeliveryDocumentTypeName` |  | |  |  | `CHAR(20)` | Description |
+| `SupplierName` |  | |  |  | `CHAR(80)` | Name of Supplier |
+| `ReceivingPlantName` |  | |  |  | `CHAR(30)` | Plant Name |
+| `PlantName` |  | |  |  | `CHAR(30)` | Plant Name |
+| `SDDocumentCategoryName` |  | |  |  | `CHAR(60)` | SD Document Category Description |
+| `ShippingConditionName` |  | |  |  | `CHAR(20)` | Shipping Conditions Description |
+| `ShippingPointName` |  | |  |  | `CHAR(30)` | Description |
+| `ShipToPartyName` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `SoldToPartyName` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `ProductName` |  | |  |  | `CHAR(40)` | Product Description |
+| `WarehouseName` |  | |  |  | `CHAR(25)` | Warehouse Number Description |
+| `GoodsMovementStatusDesc` |  | |  |  | `CHAR(20)` | Status Description |
+| `TransportationGroupName` |  | |  |  | `CHAR(20)` | Description |
+| `DeliveryPriorityDesc` |  | |  |  | `CHAR(20)` | Description |
+| `ProductGroupName` |  | |  |  | `CHAR(20)` | Product Group Description |
+| `CustomerClassificationDesc` |  | |  |  | `CHAR(20)` | Customer Classification Description |

@@ -36,26 +36,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Product` | `CHAR(40)` | Material for Stock Mamangement |
-| `Plant` | `CHAR(4)` | Plant |
-| `StorageLocation` | `CHAR(4)` | Storage Location |
-| `Batch` | `CHAR(10)` | Batch Number (Stock Identifier) |
-| `Supplier` | `CHAR(10)` | Supplier for Special Stock |
-| `SDDocument` | `CHAR(10)` | Sales Order Number of Valuated Sales Order Stock |
-| `SDDocumentItem` | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
-| `WBSElementInternalID` | `NUMC(8)` | Valuated Sales Order Stock WBS Element |
-| `Customer` | `CHAR(10)` | Customer for Special Stock |
-| `SpecialStockIdfgStockOwner` | `CHAR(10)` | Add. Supplier for Special Stock |
-| `InventoryStockType` | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
-| `InventorySpecialStockType` | `CHAR(1)` | Special Stock Type |
-| `ProductGroup` | `CHAR(9)` | Product Group |
-| `ProductType` | `CHAR(4)` | Product Type |
-| `MaterialBaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `Currency` | `CUKY(5)` | Currency Key |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `ValuationAreaType` | `CHAR(1)` | Valuation area setting |
-| `MatlWrhsStkQtyInMatlBaseUnit` | `QUAN(17)` | Stock Quantity in Base Unit of Measure |
-| `StockValueInCCCrcy` | `CURR(17)` | Stock Value in Company Code Currency |
-| `StockValueInDisplayCurrency` | `CURR(17)` | Stock Value in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` |  | |  |  | `CHAR(40)` | Material for Stock Mamangement |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number (Stock Identifier) |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier for Special Stock |
+| `SDDocument` |  | |  |  | `CHAR(10)` | Sales Order Number of Valuated Sales Order Stock |
+| `SDDocumentItem` |  | |  |  | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | Valuated Sales Order Stock WBS Element |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer for Special Stock |
+| `SpecialStockIdfgStockOwner` |  | |  |  | `CHAR(10)` | Add. Supplier for Special Stock |
+| `InventoryStockType` |  | |  |  | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Type |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `ProductType` |  | |  |  | `CHAR(4)` | Product Type |
+| `MaterialBaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `ValuationAreaType` |  | |  |  | `CHAR(1)` | Valuation area setting |
+| `MatlWrhsStkQtyInMatlBaseUnit` |  | |  |  | `QUAN(17)` | Stock Quantity in Base Unit of Measure |
+| `StockValueInCCCrcy` |  | |  |  | `CURR(17)` | Stock Value in Company Code Currency |
+| `StockValueInDisplayCurrency` |  | |  |  | `CURR(17)` | Stock Value in Display Currency |

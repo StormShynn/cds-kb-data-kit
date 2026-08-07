@@ -34,15 +34,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductStructureNodeUUID` | `RAW(16)` | Internal Number of iPPE Node |
-| `ProductStructureNodeUniqueID` | `CHAR(32)` |  |
-| `ProductStructureNodeName` | `CHAR(40)` | iPPE Node Description |
-| `ClassInternalID` | `NUMC(10)` | Internal Class Number |
-| `ProductStructureNodeType` | `CHAR(8)` | iPPE Node Type |
-| `ProductStructureGnrcObjType` | `CHAR(10)` | Object Type |
-| `ProductStructureCreationDate` | `DATS(8)` | Date of Application |
-| `ProductStructureCreatedByUser` | `CHAR(12)` | User who created record |
-| `ProductStrucLastChangedDate` | `DATS(8)` | Date of Last Change |
-| `ProductStrucLastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductStructureNodeUUID` |  | |  |  | `RAW(16)` | Internal Number of iPPE Node |
+| `ProductStructureNodeUniqueID` |  | |  |  | `CHAR(32)` |  |
+| `ProductStructureNodeName` |  | |  |  | `CHAR(40)` | iPPE Node Description |
+| `ClassInternalID` |  | |  |  | `NUMC(10)` | Internal Class Number |
+| `ProductStructureNodeType` |  | |  |  | `CHAR(8)` | iPPE Node Type |
+| `ProductStructureGnrcObjType` |  | |  |  | `CHAR(10)` | Object Type |
+| `ProductStructureCreationDate` |  | |  |  | `DATS(8)` | Date of Application |
+| `ProductStructureCreatedByUser` |  | |  |  | `CHAR(12)` | User who created record |
+| `ProductStrucLastChangedDate` |  | |  |  | `DATS(8)` | Date of Last Change |
+| `ProductStrucLastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |

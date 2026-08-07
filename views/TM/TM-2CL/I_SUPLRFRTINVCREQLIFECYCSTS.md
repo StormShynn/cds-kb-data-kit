@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrFrtInvcReqLifeCycSts` | `CHAR(2)` | Freight Settlement Document Life Cycle Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrFrtInvcReqLifeCycSts` |  | |  |  | `CHAR(2)` | Freight Settlement Document Life Cycle Status |

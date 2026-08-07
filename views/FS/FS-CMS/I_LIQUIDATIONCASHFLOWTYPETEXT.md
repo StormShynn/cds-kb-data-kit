@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationCashFlowType` | `CHAR(6)` | Cash Flow Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `LiquidationCashFlowTypeText` | `CHAR(40)` | Description cashflow types |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationCashFlowType` |  | |  |  | `CHAR(6)` | Cash Flow Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `LiquidationCashFlowTypeText` |  | |  |  | `CHAR(40)` | Description cashflow types |

@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Engagement Project ID |
-| `EngagementProjectTeamRole` | `CHAR(4)` | Role ID |
-| `BusinessUser` | `CHAR(12)` | User ID |
-| `EngagementProjectCategory` | `CHAR(1)` | Project Type |
-| `EmploymentInternalID` | `CHAR(60)` | Member ID |
-| `EmployeeFullName` | `CHAR(80)` | Full Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `EngagementProjectTeamRole` |  | |  |  | `CHAR(4)` | Role ID |
+| `BusinessUser` |  | |  |  | `CHAR(12)` | User ID |
+| `EngagementProjectCategory` |  | |  |  | `CHAR(1)` | Project Type |
+| `EmploymentInternalID` |  | |  |  | `CHAR(60)` | Member ID |
+| `EmployeeFullName` |  | |  |  | `CHAR(80)` | Full Name |

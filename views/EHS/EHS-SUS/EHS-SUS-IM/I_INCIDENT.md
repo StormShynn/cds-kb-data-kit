@@ -33,16 +33,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `CreationDateTime` | `DEC(15)` | Object Created On/At |
-| `CreatedByUser` | `CHAR(12)` | Object Created By |
-| `LastChangeDateTime` | `DEC(15)` | Object Changed On/At |
-| `LastChangedByUser` | `CHAR(12)` | Object Changed By |
-| `IncidentID` | `CHAR(20)` | Incident ID |
-| `IncidentCategory` | `CHAR(3)` | Incident Category |
-| `IncidentStatus` | `CHAR(2)` | Incident Status |
-| `IncidentMigrationSourceText` | `CHAR(60)` | Incident Migration Source |
-| `EHSDeviationHasJoinCondition` | `CHAR(1)` |  |
-| `IncidentReportingSourceCode` | `CHAR(2)` | Incident Reporting Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Object Created On/At |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Object Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Object Changed On/At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Object Changed By |
+| `IncidentID` |  | |  |  | `CHAR(20)` | Incident ID |
+| `IncidentCategory` |  | |  |  | `CHAR(3)` | Incident Category |
+| `IncidentStatus` |  | |  |  | `CHAR(2)` | Incident Status |
+| `IncidentMigrationSourceText` |  | |  |  | `CHAR(60)` | Incident Migration Source |
+| `EHSDeviationHasJoinCondition` |  | |  |  | `CHAR(1)` |  |
+| `IncidentReportingSourceCode` |  | |  |  | `CHAR(2)` | Incident Reporting Source |

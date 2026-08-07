@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Segment` | `CHAR(25)` | Consolidation Segment for Elimination |
-| `Language` | `LANG(1)` | Language Key |
-| `AdditionalMasterDataText` | `CHAR(50)` | Description |
-| `SegmentName` | `CHAR(50)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Segment` |  | |  |  | `CHAR(25)` | Consolidation Segment for Elimination |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AdditionalMasterDataText` |  | |  |  | `CHAR(50)` | Description |
+| `SegmentName` |  | |  |  | `CHAR(50)` | Description |

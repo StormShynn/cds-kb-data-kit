@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoAcctPrioznBasicRule` | `CHAR(10)` | Basic Rule |
-| `DCoAcctPrioritizationRuleNode` | `CHAR(50)` | Business Object Node Used for Basic Rule |
-| `DCoAcctPrioznRuleAssociation` | `CHAR(30)` | Business Object Association |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoAcctPrioznBasicRule` |  | |  |  | `CHAR(10)` | Basic Rule |
+| `DCoAcctPrioritizationRuleNode` |  | |  |  | `CHAR(50)` | Business Object Node Used for Basic Rule |
+| `DCoAcctPrioznRuleAssociation` |  | |  |  | `CHAR(30)` | Business Object Association |

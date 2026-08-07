@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChmlCmplncMatlAssgmtUUID` | `RAW(16)` | Product Assignment |
-| `ChmlCmplncInfoUUID` | `RAW(16)` | Chemical Compliance Information |
-| `Material` | `CHAR(40)` | Product |
-| `MatlAssgmtIsPrimary` | `CHAR(1)` | Name Representing the Product |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChmlCmplncMatlAssgmtUUID` |  | |  |  | `RAW(16)` | Product Assignment |
+| `ChmlCmplncInfoUUID` |  | |  |  | `RAW(16)` | Chemical Compliance Information |
+| `Material` |  | |  |  | `CHAR(40)` | Product |
+| `MatlAssgmtIsPrimary` |  | |  |  | `CHAR(1)` | Name Representing the Product |

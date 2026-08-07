@@ -35,25 +35,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` | `CHAR(15)` | Bank Key |
-| `BankName` | `CHAR(60)` | Name of Financial Institution |
-| `SWIFTCode` | `CHAR(11)` | SWIFT/BIC for International Payments |
-| `BankAccountType` | `CHAR(10)` | Bank Account Type ID |
-| `BankAccountCharacteristic` | `CHAR(5)` | Bank Account Characteristic |
-| `BankAccountNumber` | `CHAR(40)` | Bank Account Number |
-| `CashBalanceType` | `CHAR(1)` | Cash Balance Type |
-| `CashBalanceDate` | `DATS(8)` | Transaction Date |
-| `TransactionDate` | `DATS(8)` | Key Date |
-| `CashBalanceAmount` | `CURR(23)` | Balance Amount |
-| `CashBalanceCurrency` | `CUKY(5)` | Balance Currency |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `CalculatedAmountInDspCrcy` | `CURR(19)` | Net Value in Display Currency |
-| `BankAccountStatus` | `CHAR(2)` | Bank Account Status |
-| `BankAccountContractType` | `CHAR(2)` | Bank Account Contract Type |
-| `BankStatementShortID` | `NUMC(8)` | Bank Statement Short Key |
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `BankAccountDescription` | `CHAR(60)` | Account Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Key |
+| `BankName` |  | |  |  | `CHAR(60)` | Name of Financial Institution |
+| `SWIFTCode` |  | |  |  | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `BankAccountType` |  | |  |  | `CHAR(10)` | Bank Account Type ID |
+| `BankAccountCharacteristic` |  | |  |  | `CHAR(5)` | Bank Account Characteristic |
+| `BankAccountNumber` |  | |  |  | `CHAR(40)` | Bank Account Number |
+| `CashBalanceType` |  | |  |  | `CHAR(1)` | Cash Balance Type |
+| `CashBalanceDate` |  | |  |  | `DATS(8)` | Transaction Date |
+| `TransactionDate` |  | |  |  | `DATS(8)` | Key Date |
+| `CashBalanceAmount` |  | |  |  | `CURR(23)` | Balance Amount |
+| `CashBalanceCurrency` |  | |  |  | `CUKY(5)` | Balance Currency |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `CalculatedAmountInDspCrcy` |  | |  |  | `CURR(19)` | Net Value in Display Currency |
+| `BankAccountStatus` |  | |  |  | `CHAR(2)` | Bank Account Status |
+| `BankAccountContractType` |  | |  |  | `CHAR(2)` | Bank Account Contract Type |
+| `BankStatementShortID` |  | |  |  | `NUMC(8)` | Bank Statement Short Key |
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `BankAccountDescription` |  | |  |  | `CHAR(60)` | Account Description |

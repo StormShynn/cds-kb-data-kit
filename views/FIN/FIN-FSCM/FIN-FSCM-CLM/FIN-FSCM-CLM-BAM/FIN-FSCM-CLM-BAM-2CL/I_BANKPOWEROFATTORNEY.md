@@ -35,23 +35,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankPowerOfAttorneyUUID` | `RAW(16)` | Power of Attorney UUID |
-| `BankPowerOfAttorney` | `CHAR(20)` | Power of Attorney ID |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` | `DATS(8)` | Valid-To Date |
-| `BkPOAAdjustedValidityEndDate` | `DATS(8)` | Valid-To Date |
-| `BkPOABankAccountAssignmentType` | `CHAR(2)` | Bank Account Assignment Type |
-| `BankPowerOfAttorneyName` | `CHAR(40)` | Power of Attorney Description |
-| `BankPowerOfAttorneyStatus` | `CHAR(2)` | Power of Attorney Status |
-| `BkPOAAuthorizationGroup` | `CHAR(10)` | Authorization Group for Powers of Attorney |
-| `PaymentApprovalRule` | `CHAR(20)` | Payment Approval Rule ID |
-| `LastChangeDateTime` | `DEC(15)` | Power of Attorney: Change Timestamp |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `CreationDateTime` | `DEC(15)` | Power of Attorney: Creation Timestamp |
-| `LastChangedByUser` | `CHAR(12)` | Changed By |
-| `LocalLastChangeDateTime` | `DEC(15)` | Power of Attorney: Local Change Timestamp |
-| `BkPOARtntnPeriodStartDateTime` | `DEC(15)` | Power of Attorney: Start of Retention Period Timestamp |
-| `BankPowerOfAttorneyIsBlocked` | `CHAR(1)` | Power of Attorney: Blocking Indicator |
-| `BankPowerOfAttorneyType` | `CHAR(4)` | Power of Attorney Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` |  | |  |  | `RAW(16)` | Power of Attorney UUID |
+| `BankPowerOfAttorney` |  | |  |  | `CHAR(20)` | Power of Attorney ID |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date |
+| `BkPOAAdjustedValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date |
+| `BkPOABankAccountAssignmentType` |  | |  |  | `CHAR(2)` | Bank Account Assignment Type |
+| `BankPowerOfAttorneyName` |  | |  |  | `CHAR(40)` | Power of Attorney Description |
+| `BankPowerOfAttorneyStatus` |  | |  |  | `CHAR(2)` | Power of Attorney Status |
+| `BkPOAAuthorizationGroup` |  | |  |  | `CHAR(10)` | Authorization Group for Powers of Attorney |
+| `PaymentApprovalRule` |  | |  |  | `CHAR(20)` | Payment Approval Rule ID |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Power of Attorney: Change Timestamp |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Power of Attorney: Creation Timestamp |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Changed By |
+| `LocalLastChangeDateTime` |  | |  |  | `DEC(15)` | Power of Attorney: Local Change Timestamp |
+| `BkPOARtntnPeriodStartDateTime` |  | |  |  | `DEC(15)` | Power of Attorney: Start of Retention Period Timestamp |
+| `BankPowerOfAttorneyIsBlocked` |  | |  |  | `CHAR(1)` | Power of Attorney: Blocking Indicator |
+| `BankPowerOfAttorneyType` |  | |  |  | `CHAR(4)` | Power of Attorney Type |

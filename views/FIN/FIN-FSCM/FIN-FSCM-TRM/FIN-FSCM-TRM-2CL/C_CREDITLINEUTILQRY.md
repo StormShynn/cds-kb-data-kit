@@ -34,23 +34,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `SyndicatedCounterparty` | `CHAR(10)` | Syndicated Counterparty |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `FinancialInstrTransactionType` | `CHAR(3)` | Financial Instrument Transaction Type |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `UtilizedAmountInTransCrcy` | `CURR(17)` |  |
-| `TotalAmountInTransactionCrcy` | `CURR(17)` | Credit Line in Transaction Currency |
-| `FreeCreditLineAmtInTransCrcy` | `CURR(18)` |  |
-| `TotalAmountInDisplayCrcy` | `CURR(17)` | Credit Line in Display Currency |
-| `UtilizedAmountInDisplayCrcy` | `CURR(17)` | Utilized Amount in Display Currency |
-| `FreeCreditLineAmtInDspCrcy` | `CURR(17)` | Available Amount in Display Currency |
-| `TotalAmtInDspCrcyOfStrtDay` | `CURR(17)` | Credit Line in Display Currency |
-| `UtilizedAmtInDspCrcyOfStrtDay` | `CURR(17)` | Utilized Amount in Display Currency of Start Day |
-| `ExchangeRateType` | `CHAR(4)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `SyndicatedCounterparty` |  | |  |  | `CHAR(10)` | Syndicated Counterparty |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `FinancialInstrTransactionType` |  | |  |  | `CHAR(3)` | Financial Instrument Transaction Type |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `UtilizedAmountInTransCrcy` |  | |  |  | `CURR(17)` |  |
+| `TotalAmountInTransactionCrcy` |  | |  |  | `CURR(17)` | Credit Line in Transaction Currency |
+| `FreeCreditLineAmtInTransCrcy` |  | |  |  | `CURR(18)` |  |
+| `TotalAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | Credit Line in Display Currency |
+| `UtilizedAmountInDisplayCrcy` |  | |  |  | `CURR(17)` | Utilized Amount in Display Currency |
+| `FreeCreditLineAmtInDspCrcy` |  | |  |  | `CURR(17)` | Available Amount in Display Currency |
+| `TotalAmtInDspCrcyOfStrtDay` |  | |  |  | `CURR(17)` | Credit Line in Display Currency |
+| `UtilizedAmtInDspCrcyOfStrtDay` |  | |  |  | `CURR(17)` | Utilized Amount in Display Currency of Start Day |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` |  |

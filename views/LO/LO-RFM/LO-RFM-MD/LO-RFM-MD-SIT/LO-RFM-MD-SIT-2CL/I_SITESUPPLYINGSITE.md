@@ -34,12 +34,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SiteCustomer` | `CHAR(10)` | Customer Number |
-| `ProductGroup` | `CHAR(9)` | Product Group |
-| `ValidityEndDate` | `DATS(8)` | Valid to date |
-| `ValidityStartDate` | `DATS(8)` | Valid-from date |
-| `SupplyingSite` | `CHAR(4)` | Supplying Site (Source of Supply) |
-| `MerchandiseCategory` | `CHAR(9)` | Material Group |
-| `SupplyingSitePriority` | `NUMC(2)` | Supplying Site Priority |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SiteCustomer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid to date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-from date |
+| `SupplyingSite` |  | |  |  | `CHAR(4)` | Supplying Site (Source of Supply) |
+| `MerchandiseCategory` |  | |  |  | `CHAR(9)` | Material Group |
+| `SupplyingSitePriority` |  | |  |  | `NUMC(2)` | Supplying Site Priority |

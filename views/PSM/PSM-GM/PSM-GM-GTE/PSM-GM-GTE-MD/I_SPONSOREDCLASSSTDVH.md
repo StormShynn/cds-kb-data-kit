@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `SponsoredClassName` | `CHAR(20)` | Sponsored Class Name |
-| `SponsoredClassDescription` | `CHAR(30)` | Sponsored Class Description |
-| `SponsoredClassType` | `CHAR(1)` | Sponsored Class Type |
-| `SponsoredClassIsBillable` | `CHAR(1)` | Billable |
-| `GteeMBdgtAcctForSpnsrdCl` | `CHAR(10)` | Account for Budget |
-| `SponsoredClassAuthznGrp` | `CHAR(10)` | Grants Management: Authorization Groups |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `SponsoredClassName` |  | |  |  | `CHAR(20)` | Sponsored Class Name |
+| `SponsoredClassDescription` |  | |  |  | `CHAR(30)` | Sponsored Class Description |
+| `SponsoredClassType` |  | |  |  | `CHAR(1)` | Sponsored Class Type |
+| `SponsoredClassIsBillable` |  | |  |  | `CHAR(1)` | Billable |
+| `GteeMBdgtAcctForSpnsrdCl` |  | |  |  | `CHAR(10)` | Account for Budget |
+| `SponsoredClassAuthznGrp` |  | |  |  | `CHAR(10)` | Grants Management: Authorization Groups |

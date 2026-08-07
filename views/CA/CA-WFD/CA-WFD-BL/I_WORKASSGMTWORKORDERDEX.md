@@ -33,15 +33,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RelationshipNumber` | `CHAR(12)` | BP Relationship Number |
-| `Supplier` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartner2` | `CHAR(10)` | Business Partner Number |
-| `EndDate` | `DATS(8)` | Validity Date (Valid To) |
-| `StartDate` | `DATS(8)` | Validity Date (Valid From) |
-| `WorkAssignment` | `NUMC(8)` | Workforce Assignment ID |
-| `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
-| `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
-| `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
-| `IsBlocked` | `CHAR(1)` | Blocked Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RelationshipNumber` |  | |  |  | `CHAR(12)` | BP Relationship Number |
+| `Supplier` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartner2` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `EndDate` |  | |  |  | `DATS(8)` | Validity Date (Valid To) |
+| `StartDate` |  | |  |  | `DATS(8)` | Validity Date (Valid From) |
+| `WorkAssignment` |  | |  |  | `NUMC(8)` | Workforce Assignment ID |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `WorkAssignmentExternalID` |  | |  |  | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` |  | |  |  | `CHAR(2)` | Workforce Country ISO Code |
+| `IsBlocked` |  | |  |  | `CHAR(1)` | Blocked Indicator |

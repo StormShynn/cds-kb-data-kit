@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WasteStreamContainerType` | `CHAR(4)` | Waste Stream Container Type |
-| `WasteStreamContainerTypeText` | `CHAR(80)` | Description (Medium) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WasteStreamContainerType` |  | |  |  | `CHAR(4)` | Waste Stream Container Type |
+| `WasteStreamContainerTypeText` |  | |  |  | `CHAR(80)` | Description (Medium) |

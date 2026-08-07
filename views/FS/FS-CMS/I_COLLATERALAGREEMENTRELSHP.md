@@ -29,16 +29,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementRelationshipUUID` | `RAW(16)` | GUID for Table CMS_REL |
-| `AgreementRelationshipType` | `CHAR(6)` | Relationship type |
-| `AgreementRelationshipSrceUUID` | `RAW(16)` | Relationship Source GUID |
-| `AgrmtRelshpSrceSecdryUUID` | `RAW(16)` | Relationship Source Secondary GUID |
-| `AgreementRelationshipDestUUID` | `RAW(16)` | Relationship destination GUID |
-| `AgrmtRelshpValidFromDate` | `DATS(8)` | Date |
-| `AgrmtRelshpValidToDate` | `DATS(8)` | Date |
-| `AgrmtRelshpRankValue` | `NUMC(4)` | Relationship Rank-Order of the source linked to destination |
-| `AgrmtRelshpPriorityValue` | `NUMC(4)` | Priority of a Relationship |
-| `AgreementRelationshipCalcType` | `CHAR(6)` | Calculation type for relations of collateral agreements |
-| `AgreementRelationshipObject` | `CHAR(6)` | Relationship Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementRelationshipUUID` |  | |  |  | `RAW(16)` | GUID for Table CMS_REL |
+| `AgreementRelationshipType` |  | |  |  | `CHAR(6)` | Relationship type |
+| `AgreementRelationshipSrceUUID` |  | |  |  | `RAW(16)` | Relationship Source GUID |
+| `AgrmtRelshpSrceSecdryUUID` |  | |  |  | `RAW(16)` | Relationship Source Secondary GUID |
+| `AgreementRelationshipDestUUID` |  | |  |  | `RAW(16)` | Relationship destination GUID |
+| `AgrmtRelshpValidFromDate` |  | |  |  | `DATS(8)` | Date |
+| `AgrmtRelshpValidToDate` |  | |  |  | `DATS(8)` | Date |
+| `AgrmtRelshpRankValue` |  | |  |  | `NUMC(4)` | Relationship Rank-Order of the source linked to destination |
+| `AgrmtRelshpPriorityValue` |  | |  |  | `NUMC(4)` | Priority of a Relationship |
+| `AgreementRelationshipCalcType` |  | |  |  | `CHAR(6)` | Calculation type for relations of collateral agreements |
+| `AgreementRelationshipObject` |  | |  |  | `CHAR(6)` | Relationship Object |

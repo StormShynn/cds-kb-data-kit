@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AcctsRblStatus` | `CHAR(2)` | Accounts Receivable Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AcctsRblStatus` |  | |  |  | `CHAR(2)` | Accounts Receivable Status |

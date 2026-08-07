@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CaseTerminologyProfile` | `CHAR(8)` | Terminology Profile ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CaseTerminologyProfile` |  | |  |  | `CHAR(8)` | Terminology Profile ID |

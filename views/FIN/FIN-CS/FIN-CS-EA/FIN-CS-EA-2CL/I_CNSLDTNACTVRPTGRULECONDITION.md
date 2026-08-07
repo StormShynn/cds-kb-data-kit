@@ -33,20 +33,20 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationChartOfAccounts` | `CHAR(2)` | Consolidation Chart of Accounts |
-| `ConsolidationReportingItemHier` | `CHAR(10)` | Reporting Item Hierarchy |
-| `ConsolidationReportingRuleID` | `CHAR(3)` | Reporting Rule |
-| `CnsldtnRptgRuleActivationMode` | `CHAR(1)` | Reporting Rule Activation Mode |
-| `CnsldtnRptgRuleStaticModeDate` | `DATS(8)` | Reporting Rule Static Mode Date |
-| `ConsolidationReportingItem` | `CHAR(10)` | Reporting Item |
-| `FinancialSelection` | `CHAR(32)` | Selection |
-| `ConsolidationCharacteristic` | `CHAR(30)` | Characteristic |
-| `CnsldtnActiveRptgRuleSequence` | `NUMC(9)` | Active Reporting Rule Sequence |
-| `CnsldtnFSItemAttributeVersion` | `CHAR(3)` | FS Item Attributes Version |
-| `CnsldtnUnitAttributeVersion` | `CHAR(3)` | Consolidation Unit Attributes |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `CnsldtnCharacteristicValue` | `CHAR(100)` | Characteristic Value |
-| `SignIsInverted` | `CHAR(1)` | Sign is Inverted |
-| `CnsldtnCharcGlobalFieldName` | `CHAR(30)` | Characteristic Global Field Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `ConsolidationReportingItemHier` |  | |  |  | `CHAR(10)` | Reporting Item Hierarchy |
+| `ConsolidationReportingRuleID` |  | |  |  | `CHAR(3)` | Reporting Rule |
+| `CnsldtnRptgRuleActivationMode` |  | |  |  | `CHAR(1)` | Reporting Rule Activation Mode |
+| `CnsldtnRptgRuleStaticModeDate` |  | |  |  | `DATS(8)` | Reporting Rule Static Mode Date |
+| `ConsolidationReportingItem` |  | |  |  | `CHAR(10)` | Reporting Item |
+| `FinancialSelection` |  | |  |  | `CHAR(32)` | Selection |
+| `ConsolidationCharacteristic` |  | |  |  | `CHAR(30)` | Characteristic |
+| `CnsldtnActiveRptgRuleSequence` |  | |  |  | `NUMC(9)` | Active Reporting Rule Sequence |
+| `CnsldtnFSItemAttributeVersion` |  | |  |  | `CHAR(3)` | FS Item Attributes Version |
+| `CnsldtnUnitAttributeVersion` |  | |  |  | `CHAR(3)` | Consolidation Unit Attributes |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `CnsldtnCharacteristicValue` |  | |  |  | `CHAR(100)` | Characteristic Value |
+| `SignIsInverted` |  | |  |  | `CHAR(1)` | Sign is Inverted |
+| `CnsldtnCharcGlobalFieldName` |  | |  |  | `CHAR(30)` | Characteristic Global Field Name |

@@ -33,23 +33,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkCenterInternalID` | `NUMC(8)` | Object ID of the resource |
-| `WorkCenterTypeCode` | `CHAR(2)` | Object types of the CIM resource |
-| `CapacityCategoryAllocation` | `NUMC(4)` | Capacity Category Allocation |
-| `CapacityInternalID` | `NUMC(8)` | Capacity ID |
-| `LastChangeDate` | `DATS(8)` | Changed On |
-| `LastChangedByUser` | `CHAR(12)` | User Name |
-| `Plant` | `CHAR(4)` | Plant |
-| `WorkCenter` | `CHAR(8)` | Work Center |
-| `WorkCenterCategoryCode` | `CHAR(4)` | Work Center Category |
-| `CapacityCategoryCode` | `CHAR(3)` | Capacity Category |
-| `Capacity` | `CHAR(8)` | Capacity name |
-| `SetupCapRequirementFormula` | `CHAR(6)` | Formula for Setup Capacity Requirements |
-| `ProcgCapRequirementFormula` | `CHAR(6)` | Formula for Processing Capacity Requirements |
-| `TeardownCapRequirementFormula` | `CHAR(6)` | Formula for Teardown Capacity Requirements |
-| `OtherCapRequirementFormula` | `CHAR(6)` | Formula for Other Capacity Requirements |
-| `ValidityStartDate` | `DATS(8)` | Start Date |
-| `ValidityEndDate` | `DATS(8)` | End Date |
-| `WorkCenterLastChangeDateTime` | `DEC(21)` | Date and Time of Last Change |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkCenterInternalID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
+| `WorkCenterTypeCode` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
+| `CapacityCategoryAllocation` |  | |  |  | `NUMC(4)` | Capacity Category Allocation |
+| `CapacityInternalID` |  | |  |  | `NUMC(8)` | Capacity ID |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | User Name |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `WorkCenter` |  | |  |  | `CHAR(8)` | Work Center |
+| `WorkCenterCategoryCode` |  | |  |  | `CHAR(4)` | Work Center Category |
+| `CapacityCategoryCode` |  | |  |  | `CHAR(3)` | Capacity Category |
+| `Capacity` |  | |  |  | `CHAR(8)` | Capacity name |
+| `SetupCapRequirementFormula` |  | |  |  | `CHAR(6)` | Formula for Setup Capacity Requirements |
+| `ProcgCapRequirementFormula` |  | |  |  | `CHAR(6)` | Formula for Processing Capacity Requirements |
+| `TeardownCapRequirementFormula` |  | |  |  | `CHAR(6)` | Formula for Teardown Capacity Requirements |
+| `OtherCapRequirementFormula` |  | |  |  | `CHAR(6)` | Formula for Other Capacity Requirements |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | End Date |
+| `WorkCenterLastChangeDateTime` |  | |  |  | `DEC(21)` | Date and Time of Last Change |

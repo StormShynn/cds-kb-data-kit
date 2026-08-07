@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MasterDataRecordingLvl` | `CHAR(1)` | ONRR-2014 - Master Level |
-| `Language` | `LANG(1)` | Language Key |
-| `MasterDataRecordingLvlName` | `CHAR(60)` | Master Data Recording Level Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MasterDataRecordingLvl` |  | |  |  | `CHAR(1)` | ONRR-2014 - Master Level |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MasterDataRecordingLvlName` |  | |  |  | `CHAR(60)` | Master Data Recording Level Name |

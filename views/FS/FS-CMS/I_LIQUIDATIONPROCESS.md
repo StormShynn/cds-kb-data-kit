@@ -29,15 +29,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidationProcessUUID` | `RAW(16)` | GUID for enforcement process details |
-| `CollateralLiquidationUUID` | `RAW(16)` | Liquidation GUID |
-| `LiquidationProcessDate` | `DATS(8)` | Process Date |
-| `LiquidationProcessType` | `CHAR(6)` | Enforcement Process Date Type |
-| `LiquidationProcessMaxBidAmount` | `CURR(17)` | Maximum Bid Amount for a Process Step |
-| `LiquidationProcessMaxBidCrcy` | `CUKY(5)` | Currency: Maximum Bid |
-| `LqdtnProcessForclrSaleResult` | `CHAR(6)` | Result of a Foreclosure Sale |
-| `LiquidationProcessEnfrcmntAmt` | `CURR(17)` | Joining Amount |
-| `LiquidationProcessEnfrcmntCrcy` | `CUKY(5)` | Currency: Joining amount |
-| `LiquidationObjectRefSystem` | `CHAR(6)` | Object System Reference ID for Liquidation |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidationProcessUUID` |  | |  |  | `RAW(16)` | GUID for enforcement process details |
+| `CollateralLiquidationUUID` |  | |  |  | `RAW(16)` | Liquidation GUID |
+| `LiquidationProcessDate` |  | |  |  | `DATS(8)` | Process Date |
+| `LiquidationProcessType` |  | |  |  | `CHAR(6)` | Enforcement Process Date Type |
+| `LiquidationProcessMaxBidAmount` |  | |  |  | `CURR(17)` | Maximum Bid Amount for a Process Step |
+| `LiquidationProcessMaxBidCrcy` |  | |  |  | `CUKY(5)` | Currency: Maximum Bid |
+| `LqdtnProcessForclrSaleResult` |  | |  |  | `CHAR(6)` | Result of a Foreclosure Sale |
+| `LiquidationProcessEnfrcmntAmt` |  | |  |  | `CURR(17)` | Joining Amount |
+| `LiquidationProcessEnfrcmntCrcy` |  | |  |  | `CUKY(5)` | Currency: Joining amount |
+| `LiquidationObjectRefSystem` |  | |  |  | `CHAR(6)` | Object System Reference ID for Liquidation |

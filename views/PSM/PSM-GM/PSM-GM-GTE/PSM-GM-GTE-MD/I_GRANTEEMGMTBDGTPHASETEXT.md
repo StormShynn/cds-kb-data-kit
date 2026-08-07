@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `GranteeMgmtBdgtPhase` | `CHAR(1)` | Budget Phase |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `GranteeMgmtBdgtPhaseText` | `CHAR(45)` | Grantee Management Budget Phase Description |
-| `DomainValueName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GranteeMgmtBdgtPhase` |  | |  |  | `CHAR(1)` | Budget Phase |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `GranteeMgmtBdgtPhaseText` |  | |  |  | `CHAR(45)` | Grantee Management Budget Phase Description |
+| `DomainValueName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

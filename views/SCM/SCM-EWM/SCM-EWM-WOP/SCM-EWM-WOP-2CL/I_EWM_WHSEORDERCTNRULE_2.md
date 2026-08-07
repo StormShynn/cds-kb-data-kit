@@ -33,12 +33,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `WarehouseOrderCreationRule` | `CHAR(4)` | Warehouse Order Creation Rule |
-| `WhseOrderCreationRuleCategory` | `CHAR(1)` | Category of Warehouse Order Creation Rule |
-| `DestinationStorageType` | `CHAR(4)` | Destination Storage Type |
-| `DestinationStorageSection` | `CHAR(4)` | Destination Storage Section |
-| `DestinationStorageBin` | `CHAR(18)` | Destination Storage Bin |
-| `StorageProcess` | `CHAR(4)` | Storage Process |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `WarehouseOrderCreationRule` |  | |  |  | `CHAR(4)` | Warehouse Order Creation Rule |
+| `WhseOrderCreationRuleCategory` |  | |  |  | `CHAR(1)` | Category of Warehouse Order Creation Rule |
+| `DestinationStorageType` |  | |  |  | `CHAR(4)` | Destination Storage Type |
+| `DestinationStorageSection` |  | |  |  | `CHAR(4)` | Destination Storage Section |
+| `DestinationStorageBin` |  | |  |  | `CHAR(18)` | Destination Storage Bin |
+| `StorageProcess` |  | |  |  | `CHAR(4)` | Storage Process |

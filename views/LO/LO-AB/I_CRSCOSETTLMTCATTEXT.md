@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CrsCoSettlmtCat` | `CHAR(1)` | Cross-Company Settlement Category |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `CrsCoSettlmtCatName` | `CHAR(60)` | Description of Cross-Company Settlement Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CrsCoSettlmtCat` |  | |  |  | `CHAR(1)` | Cross-Company Settlement Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CrsCoSettlmtCatName` |  | |  |  | `CHAR(60)` | Description of Cross-Company Settlement Category |

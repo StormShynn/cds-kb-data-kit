@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DatabaseTable` | `CHAR(30)` | Table Name |
-| `DatabaseTableField` | `CHAR(30)` | Name of an Additional Quantity Field |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `UnitOfMeasureDimension` | `CHAR(6)` | Dimension |
-| `UnitOfMeasure` | `UNIT(3)` | Standard Unit of Measure |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DatabaseTable` |  | |  |  | `CHAR(30)` | Table Name |
+| `DatabaseTableField` |  | |  |  | `CHAR(30)` | Name of an Additional Quantity Field |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `UnitOfMeasureDimension` |  | |  |  | `CHAR(6)` | Dimension |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Standard Unit of Measure |

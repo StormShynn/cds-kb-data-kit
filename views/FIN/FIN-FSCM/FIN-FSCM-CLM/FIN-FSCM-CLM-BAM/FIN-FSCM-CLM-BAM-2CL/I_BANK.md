@@ -35,27 +35,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `BankInternalID` | `CHAR(15)` | Bank Keys |
-| `CreationDate` | `DATS(8)` | Record Created On |
-| `CreatedByUser` | `CHAR(12)` | Name of Accounting Clerk Responsible for Adding the Object |
-| `BankName` | `CHAR(60)` | Name of Financial Institution |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `StreetName` | `CHAR(35)` | Street and House Number |
-| `ShortStreetName` | `CHAR(35)` | Street and House Number |
-| `CityName` | `CHAR(35)` | City |
-| `ShortCityName` | `CHAR(35)` | City |
-| `SWIFTCode` | `CHAR(11)` | SWIFT/BIC for International Payments |
-| `BankGroup` | `CHAR(2)` | Bank group (bank network) |
-| `BankNetworkGrouping` | `CHAR(2)` | Bank group (bank network) |
-| `IsPostBankAccount` | `CHAR(1)` | Post Office Bank Current Account |
-| `IsMarkedForDeletion` | `CHAR(1)` | Deletion Indicator |
-| `Bank` | `CHAR(15)` | Bank Number |
-| `PostOfficeBankAccount` | `CHAR(16)` | Post office bank current account number |
-| `Branch` | `CHAR(40)` | Bank Branch |
-| `BankBranch` | `CHAR(40)` | Bank Branch |
-| `CheckDigitCalculationMethod` | `CHAR(4)` | Check digit calculation method |
-| `BankDataFileFormat` | `CHAR(3)` | Format of File with Bank Data |
-| `AddressID` | `CHAR(10)` | Address Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` |  | |  |  | `CHAR(15)` | Bank Keys |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Accounting Clerk Responsible for Adding the Object |
+| `BankName` |  | |  |  | `CHAR(60)` | Name of Financial Institution |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `StreetName` |  | |  |  | `CHAR(35)` | Street and House Number |
+| `ShortStreetName` |  | |  |  | `CHAR(35)` | Street and House Number |
+| `CityName` |  | |  |  | `CHAR(35)` | City |
+| `ShortCityName` |  | |  |  | `CHAR(35)` | City |
+| `SWIFTCode` |  | |  |  | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `BankGroup` |  | |  |  | `CHAR(2)` | Bank group (bank network) |
+| `BankNetworkGrouping` |  | |  |  | `CHAR(2)` | Bank group (bank network) |
+| `IsPostBankAccount` |  | |  |  | `CHAR(1)` | Post Office Bank Current Account |
+| `IsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Number |
+| `PostOfficeBankAccount` |  | |  |  | `CHAR(16)` | Post office bank current account number |
+| `Branch` |  | |  |  | `CHAR(40)` | Bank Branch |
+| `BankBranch` |  | |  |  | `CHAR(40)` | Bank Branch |
+| `CheckDigitCalculationMethod` |  | |  |  | `CHAR(4)` | Check digit calculation method |
+| `BankDataFileFormat` |  | |  |  | `CHAR(3)` | Format of File with Bank Data |
+| `AddressID` |  | |  |  | `CHAR(10)` | Address Number |

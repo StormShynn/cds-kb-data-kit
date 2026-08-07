@@ -33,40 +33,40 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `BusinessPartnerName` | `CHAR(81)` |  |
-| `CreditSegmentName` | `CHAR(50)` | Name of Credit Segment |
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `CreditRiskClassName` | `CHAR(40)` | Name of Risk Class |
-| `Country` | `CHAR(3)` | Country/Region |
-| `CountryName` | `CHAR(50)` | Country/Region Name |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `RegionName` | `CHAR(20)` | Description |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `CustomerCreditExposureAmount` | `CURR(23)` | Credit Exposure Amount |
-| `CustomerCreditLimitAmount` | `CURR(23)` | Customer's Credit Limit |
-| `CreditLimitCalculatedAmount` | `CURR(23)` | Calculated Credit Limit |
-| `CreditLimitRequestedAmount` | `CURR(23)` | Requested Credit Limit |
-| `NumberOfBusinessPartners` | `INT4(10)` | Number of Business Partners |
-| `CrdtLimitIsEqualCrdtLimitCalcd` | `CHAR(1)` | Current Limit Vs. Calculated Limit |
-| `CrdtLimitIsEqualCrdtLimitReqd` | `CHAR(1)` | Current Limit Vs. Requested Limit |
-| `CreditAccountIsBlocked` | `CHAR(1)` | Blocked Credit Account |
-| `CreditLimitValidityEndDate` | `DATS(8)` | Credit Limit Validity End Date |
-| `CreditLimitLastChangeDate` | `DATS(8)` | Last Change Date for Credit Limit |
-| `CreditAccountGroup` | `NUMC(4)` | Customer Credit Group |
-| `CreditAccountGroupName` | `CHAR(40)` | Text for Credit Group |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
-| `CreditAccountResubmissionDate` | `DATS(8)` | Resubmission Date |
-| `BusinessPartnerIsCritical` | `CHAR(1)` | Special Attention Required |
-| `CreditLimitIsZero` | `CHAR(1)` | Credit Limit is Zero |
-| `CreditAccountBlockReason` | `CHAR(2)` | Credit Account Blocking Reason |
-| `CrdtAcctBlockReasonDescription` | `CHAR(40)` | SAP Credit Management: Description for Blocks |
-| `CrdtLmtIsReqdFrmAutomCalc` | `CHAR(1)` | Credit Limit Request from Automatic Calculation |
-| `CreditLimitReqdValidityEndDate` | `DATS(8)` | Credit Limit Requested Validity End Date |
-| `CreditLimitRequestDate` | `DATS(8)` | Credit Limit Requested Date |
-| `CrdtLimitValidityRemainingDays` | `INT4(10)` | Limit Remaining Days |
-| `CreditLimitLastChangeDays` | `INT4(10)` | Days Since Last Change Made to Credit Limit |
-| `CreditLimitUtilizationPct` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `BusinessPartnerName` |  | |  |  | `CHAR(81)` |  |
+| `CreditSegmentName` |  | |  |  | `CHAR(50)` | Name of Credit Segment |
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `CreditRiskClassName` |  | |  |  | `CHAR(40)` | Name of Risk Class |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `CountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `RegionName` |  | |  |  | `CHAR(20)` | Description |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `CustomerCreditExposureAmount` |  | |  |  | `CURR(23)` | Credit Exposure Amount |
+| `CustomerCreditLimitAmount` |  | |  |  | `CURR(23)` | Customer's Credit Limit |
+| `CreditLimitCalculatedAmount` |  | |  |  | `CURR(23)` | Calculated Credit Limit |
+| `CreditLimitRequestedAmount` |  | |  |  | `CURR(23)` | Requested Credit Limit |
+| `NumberOfBusinessPartners` |  | |  |  | `INT4(10)` | Number of Business Partners |
+| `CrdtLimitIsEqualCrdtLimitCalcd` |  | |  |  | `CHAR(1)` | Current Limit Vs. Calculated Limit |
+| `CrdtLimitIsEqualCrdtLimitReqd` |  | |  |  | `CHAR(1)` | Current Limit Vs. Requested Limit |
+| `CreditAccountIsBlocked` |  | |  |  | `CHAR(1)` | Blocked Credit Account |
+| `CreditLimitValidityEndDate` |  | |  |  | `DATS(8)` | Credit Limit Validity End Date |
+| `CreditLimitLastChangeDate` |  | |  |  | `DATS(8)` | Last Change Date for Credit Limit |
+| `CreditAccountGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
+| `CreditAccountGroupName` |  | |  |  | `CHAR(40)` | Text for Credit Group |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
+| `CreditAccountResubmissionDate` |  | |  |  | `DATS(8)` | Resubmission Date |
+| `BusinessPartnerIsCritical` |  | |  |  | `CHAR(1)` | Special Attention Required |
+| `CreditLimitIsZero` |  | |  |  | `CHAR(1)` | Credit Limit is Zero |
+| `CreditAccountBlockReason` |  | |  |  | `CHAR(2)` | Credit Account Blocking Reason |
+| `CrdtAcctBlockReasonDescription` |  | |  |  | `CHAR(40)` | SAP Credit Management: Description for Blocks |
+| `CrdtLmtIsReqdFrmAutomCalc` |  | |  |  | `CHAR(1)` | Credit Limit Request from Automatic Calculation |
+| `CreditLimitReqdValidityEndDate` |  | |  |  | `DATS(8)` | Credit Limit Requested Validity End Date |
+| `CreditLimitRequestDate` |  | |  |  | `DATS(8)` | Credit Limit Requested Date |
+| `CrdtLimitValidityRemainingDays` |  | |  |  | `INT4(10)` | Limit Remaining Days |
+| `CreditLimitLastChangeDays` |  | |  |  | `INT4(10)` | Days Since Last Change Made to Credit Limit |
+| `CreditLimitUtilizationPct` |  | |  |  | `INT1(3)` |  |

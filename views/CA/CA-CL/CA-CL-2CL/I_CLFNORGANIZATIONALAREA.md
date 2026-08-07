@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ClassType` | `CHAR(3)` | Class Type |
-| `ClfnOrganizationalAreaCode` | `CHAR(1)` | Organizational Area Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ClassType` |  | |  |  | `CHAR(3)` | Class Type |
+| `ClfnOrganizationalAreaCode` |  | |  |  | `CHAR(1)` | Organizational Area Code |

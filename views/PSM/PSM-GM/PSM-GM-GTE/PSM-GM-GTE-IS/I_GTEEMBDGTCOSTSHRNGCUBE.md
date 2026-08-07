@@ -32,23 +32,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GrantID` | `CHAR(20)` | Grant |
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `SponsoredProgram` | `CHAR(20)` | Sponsored Program |
-| `SponsoredClass` | `CHAR(20)` | Sponsored Class |
-| `GranteeMgmtSponsor` | `CHAR(10)` | Grant Sponsor |
-| `ActualPlanCode` | `CHAR(1)` | Actual Plan Code |
-| `PubSecBudgetCnsmpnType` | `CHAR(2)` | Budget Consumption Type |
-| `BudgetDocWorkFlowStatus` | `CHAR(1)` |  |
-| `GrantType` | `CHAR(2)` | Grant Type |
-| `GrantLifecycleStatus` | `CHAR(5)` | Lifecycle Status |
-| `GteeMCostSharingRateInPercent` | `DEC(6)` |  |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `CostShrngContrbnAmtInGlobCrcy` | `CURR(23)` |  |
-| `SpnsrContrbnAmtInGlobCrcy` | `CURR(23)` |  |
-| `ExcessCostShrngContrbnAmt` | `CURR(23)` | Excess Cost Sharing Contribution Amount in Global Currency |
-| `GrantIsNotRelevantGrant` | `CHAR(1)` | Identify the Not Relevant Grant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `SponsoredProgram` |  | |  |  | `CHAR(20)` | Sponsored Program |
+| `SponsoredClass` |  | |  |  | `CHAR(20)` | Sponsored Class |
+| `GranteeMgmtSponsor` |  | |  |  | `CHAR(10)` | Grant Sponsor |
+| `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
+| `PubSecBudgetCnsmpnType` |  | |  |  | `CHAR(2)` | Budget Consumption Type |
+| `BudgetDocWorkFlowStatus` |  | |  |  | `CHAR(1)` |  |
+| `GrantType` |  | |  |  | `CHAR(2)` | Grant Type |
+| `GrantLifecycleStatus` |  | |  |  | `CHAR(5)` | Lifecycle Status |
+| `GteeMCostSharingRateInPercent` |  | |  |  | `DEC(6)` |  |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `CostShrngContrbnAmtInGlobCrcy` |  | |  |  | `CURR(23)` |  |
+| `SpnsrContrbnAmtInGlobCrcy` |  | |  |  | `CURR(23)` |  |
+| `ExcessCostShrngContrbnAmt` |  | |  |  | `CURR(23)` | Excess Cost Sharing Contribution Amount in Global Currency |
+| `GrantIsNotRelevantGrant` |  | |  |  | `CHAR(1)` | Identify the Not Relevant Grant |

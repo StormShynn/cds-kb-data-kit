@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocHierarchyUUID` | `RAW(16)` | Location Hierarchy Root Key |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `RevisionDescription` | `CHAR(80)` | Revision Description |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `EHSLocHierarchyRevisionUUID` | `RAW(16)` | Location Hierarchy Revision Key |
-| `LastChangeDate` | `DEC(21)` | Last Changed On |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocHierarchyUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Root Key |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `RevisionDescription` |  | |  |  | `CHAR(80)` | Revision Description |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `EHSLocHierarchyRevisionUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Revision Key |
+| `LastChangeDate` |  | |  |  | `DEC(21)` | Last Changed On |

@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsType` | `CHAR(1)` | Task List Type |
-| `ProductionRoutingGroup` | `CHAR(8)` | Key for Task List Group |
-| `ProductionRoutingOpIntID` | `NUMC(8)` | Number of the Task List Node |
-| `BOOCharacteristic` | `NUMC(4)` | Inspection Characteristic Number |
-| `BillOfOperationsVersion` | `CHAR(4)` | Routing Version |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `ProductionRoutingGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `ProductionRoutingOpIntID` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
+| `BOOCharacteristic` |  | |  |  | `NUMC(4)` | Inspection Characteristic Number |
+| `BillOfOperationsVersion` |  | |  |  | `CHAR(4)` | Routing Version |

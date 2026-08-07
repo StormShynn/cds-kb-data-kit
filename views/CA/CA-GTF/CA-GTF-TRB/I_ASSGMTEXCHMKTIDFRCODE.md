@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MarketIdentifierCode` | `CHAR(4)` | Market Identifier Code |
-| `SecurityExchange` | `CHAR(10)` | Exchange |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MarketIdentifierCode` |  | |  |  | `CHAR(4)` | Market Identifier Code |
+| `SecurityExchange` |  | |  |  | `CHAR(10)` | Exchange |

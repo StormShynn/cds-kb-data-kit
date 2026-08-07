@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Material` | `CHAR(40)` | Material Number |
-| `BR_LC116ServiceCode` | `CHAR(5)` | LC 116 Service Type Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `BR_LC116ServiceCode` |  | |  |  | `CHAR(5)` | LC 116 Service Type Code |

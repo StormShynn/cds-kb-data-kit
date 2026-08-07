@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `NextFiscalPeriod` | `NUMC(3)` | Next Fiscal Period |
-| `PreviousPeriodBackShift1` | `NUMC(3)` | Previous Period Back Shift1 |
-| `PreviousFiscalYear` | `NUMC(4)` | Fiscal Year |
-| `NextFiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalYearShift2` | `NUMC(4)` | Fiscal Year |
-| `FiscalYearShift3` | `NUMC(4)` | Fiscal Year |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `NextFiscalPeriod` |  | |  |  | `NUMC(3)` | Next Fiscal Period |
+| `PreviousPeriodBackShift1` |  | |  |  | `NUMC(3)` | Previous Period Back Shift1 |
+| `PreviousFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `NextFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalYearShift2` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalYearShift3` |  | |  |  | `NUMC(4)` | Fiscal Year |

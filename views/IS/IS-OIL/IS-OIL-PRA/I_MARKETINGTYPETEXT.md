@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MajorProduct` | `CHAR(1)` | Major product code |
-| `MarketingType` | `CHAR(2)` | Marketing type code |
-| `Language` | `LANG(1)` | Language Key |
-| `MarketingTypeName` | `CHAR(50)` | Marketing Cost Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MajorProduct` |  | |  |  | `CHAR(1)` | Major product code |
+| `MarketingType` |  | |  |  | `CHAR(2)` | Marketing type code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MarketingTypeName` |  | |  |  | `CHAR(50)` | Marketing Cost Type Description |

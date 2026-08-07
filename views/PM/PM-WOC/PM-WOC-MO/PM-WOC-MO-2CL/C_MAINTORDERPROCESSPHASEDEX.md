@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintOrdProcessPhaseCode` | `CHAR(2)` | Process Phase |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintOrdProcessPhaseCode` |  | |  |  | `CHAR(2)` | Process Phase |

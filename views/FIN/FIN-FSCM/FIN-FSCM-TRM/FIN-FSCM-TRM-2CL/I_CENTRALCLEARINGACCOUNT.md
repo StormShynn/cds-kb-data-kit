@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CentralClearingAccountUUID` | `RAW(16)` | Internal ID of the Central Clearing Account |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `CentralClearingAccount` | `CHAR(10)` | Central Clearing Account |
-| `CentralClearingAccountName` | `CHAR(30)` | Name of the Central Clearing Account |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CentralClearingAccountUUID` |  | |  |  | `RAW(16)` | Internal ID of the Central Clearing Account |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CentralClearingAccount` |  | |  |  | `CHAR(10)` | Central Clearing Account |
+| `CentralClearingAccountName` |  | |  |  | `CHAR(30)` | Name of the Central Clearing Account |

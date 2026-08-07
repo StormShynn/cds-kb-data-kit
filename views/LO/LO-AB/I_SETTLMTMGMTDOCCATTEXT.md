@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtMgmtDocCat` | `CHAR(1)` | Settlement Management Document Category |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtMgmtDocCatName` | `CHAR(60)` | Document Category Text |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtMgmtDocCat` |  | |  |  | `CHAR(1)` | Settlement Management Document Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtMgmtDocCatName` |  | |  |  | `CHAR(60)` | Document Category Text |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

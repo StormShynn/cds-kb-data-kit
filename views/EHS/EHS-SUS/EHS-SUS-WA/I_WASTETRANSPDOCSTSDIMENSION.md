@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EnvrmtWasteTranspDocStatus` | `CHAR(3)` | Waste Transportation Document Status |
-| `EnvWstTranspDocStatusName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EnvrmtWasteTranspDocStatus` |  | |  |  | `CHAR(3)` | Waste Transportation Document Status |
+| `EnvWstTranspDocStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

@@ -32,21 +32,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MatchingMethodID` | `CHAR(5)` | Matching Method ID |
-| `MatchingDocument` | `NUMC(10)` | Matching Document Number |
-| `MatchingDocumentItem` | `INT4(10)` | Matching Document Line Item Number |
-| `Company` | `CHAR(6)` | Company |
-| `TradingPartner` | `CHAR(6)` | Company ID of Trading Partner |
-| `MatchingAssignmentNumber` | `NUMC(12)` | Assignment Number |
-| `MatchingMethodDesc` | `CHAR(80)` | Medium Length Description |
-| `MatchingRuleID` | `NUMC(4)` | Matching Rule ID |
-| `MatchingRuleDesc` | `CHAR(80)` | Medium Length Description |
-| `MatchingReasonCode` | `CHAR(6)` | Reason Code |
-| `MatchingReasonCodeDesc` | `CHAR(80)` | Medium Length Description |
-| `FiscalYearPeriod` | `NUMC(7)` | Fiscal Year + Fiscal Period |
-| `ReconciliationCaseID` | `CHAR(5)` | Reconciliation Case ID |
-| `ReconciliationCaseDesc` | `CHAR(80)` | Medium Length Description |
-| `LoggedInUser` | `CHAR(12)` | User Name in User Master Record |
-| `UserDescription` | `CHAR(80)` | Full Name of Person |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MatchingMethodID` |  | |  |  | `CHAR(5)` | Matching Method ID |
+| `MatchingDocument` |  | |  |  | `NUMC(10)` | Matching Document Number |
+| `MatchingDocumentItem` |  | |  |  | `INT4(10)` | Matching Document Line Item Number |
+| `Company` |  | |  |  | `CHAR(6)` | Company |
+| `TradingPartner` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
+| `MatchingAssignmentNumber` |  | |  |  | `NUMC(12)` | Assignment Number |
+| `MatchingMethodDesc` |  | |  |  | `CHAR(80)` | Medium Length Description |
+| `MatchingRuleID` |  | |  |  | `NUMC(4)` | Matching Rule ID |
+| `MatchingRuleDesc` |  | |  |  | `CHAR(80)` | Medium Length Description |
+| `MatchingReasonCode` |  | |  |  | `CHAR(6)` | Reason Code |
+| `MatchingReasonCodeDesc` |  | |  |  | `CHAR(80)` | Medium Length Description |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `ReconciliationCaseID` |  | |  |  | `CHAR(5)` | Reconciliation Case ID |
+| `ReconciliationCaseDesc` |  | |  |  | `CHAR(80)` | Medium Length Description |
+| `LoggedInUser` |  | |  |  | `CHAR(12)` | User Name in User Master Record |
+| `UserDescription` |  | |  |  | `CHAR(80)` | Full Name of Person |

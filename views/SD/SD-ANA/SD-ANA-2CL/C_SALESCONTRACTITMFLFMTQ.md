@@ -37,22 +37,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesContract` | `CHAR(10)` | Sales Contract |
-| `SalesContractItem` | `NUMC(6)` | Sales Contract Item |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `PartnerCompany` | `CHAR(6)` | Company ID of Trading Partner |
-| `SoldToParty` | `CHAR(10)` | Sold-to Party |
-| `ResponsibleEmployee` | `NUMC(8)` | Employee Responsible |
-| `SalesEmployee` | `NUMC(8)` | Sales Employee |
-| `Material` | `CHAR(40)` | Material Number |
-| `Product` | `CHAR(40)` | Product |
-| `SDDocumentRejectionStatus` | `CHAR(1)` | Rejection Status (Item) |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `SlsContrPeriodElapsedPercent` | `DEC(9)` | Sales Contract Period Elapsed Percent |
-| `SalesContractTargetAmountInDC` | `CURR(19)` | Target Value of Sales Contracts in Display Currency |
-| `SalesContractTargetValue` | `CURR(19)` | Target Value of Sales Contracts in Display Currency |
-| `SalesContractReleasedAmtInDC` | `CURR(19)` | Released Value in Sales Contracts in Display Currency |
-| `ReleasedNetAmount` | `CURR(19)` | Released Value in Sales Contracts in Display Currency |
-| `SalesContractFulfillmentRate` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesContract` |  | |  |  | `CHAR(10)` | Sales Contract |
+| `SalesContractItem` |  | |  |  | `NUMC(6)` | Sales Contract Item |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `PartnerCompany` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `ResponsibleEmployee` |  | |  |  | `NUMC(8)` | Employee Responsible |
+| `SalesEmployee` |  | |  |  | `NUMC(8)` | Sales Employee |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `SDDocumentRejectionStatus` |  | |  |  | `CHAR(1)` | Rejection Status (Item) |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `SlsContrPeriodElapsedPercent` |  | |  |  | `DEC(9)` | Sales Contract Period Elapsed Percent |
+| `SalesContractTargetAmountInDC` |  | |  |  | `CURR(19)` | Target Value of Sales Contracts in Display Currency |
+| `SalesContractTargetValue` |  | |  |  | `CURR(19)` | Target Value of Sales Contracts in Display Currency |
+| `SalesContractReleasedAmtInDC` |  | |  |  | `CURR(19)` | Released Value in Sales Contracts in Display Currency |
+| `ReleasedNetAmount` |  | |  |  | `CURR(19)` | Released Value in Sales Contracts in Display Currency |
+| `SalesContractFulfillmentRate` |  | |  |  | `INT1(3)` |  |

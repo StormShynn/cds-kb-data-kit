@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSDataCollectionInputMethod` | `CHAR(2)` | Data Collection Input Method |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSDataCollectionInputMethod` |  | |  |  | `CHAR(2)` | Data Collection Input Method |

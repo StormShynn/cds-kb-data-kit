@@ -29,27 +29,27 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `Fund` | `CHAR(10)` | Fund |
-| `FundType` | `CHAR(6)` | Fund Type |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `PostingDate` | `DATS(8)` | Posting Date |
-| `Segment` | `CHAR(10)` | Segment for Segmental Reporting |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CostCenterName` | `CHAR(20)` | Cost Center Name |
-| `WBSElementExternalID` | `CHAR(24)` | WBS Element External ID |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `GrantID` | `CHAR(20)` | Grant |
-| `PubSecBudgetCnsmpnDate` | `DATS(8)` | Budget Consumption Date |
-| `PubSecBudgetCnsmpnTypeGroup` | `CHAR(2)` | Budget Consumption Type Group |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `AmountInCompanyCodeCurrency` | `CURR(23)` | Amount in Company Code Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `FundType` |  | |  |  | `CHAR(6)` | Fund Type |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CostCenterName` |  | |  |  | `CHAR(20)` | Cost Center Name |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `PubSecBudgetCnsmpnDate` |  | |  |  | `DATS(8)` | Budget Consumption Date |
+| `PubSecBudgetCnsmpnTypeGroup` |  | |  |  | `CHAR(2)` | Budget Consumption Type Group |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |

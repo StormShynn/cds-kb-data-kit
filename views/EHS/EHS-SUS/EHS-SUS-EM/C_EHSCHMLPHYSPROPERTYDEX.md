@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSChmlPhysPrptyBusConfignVers` | `CHAR(40)` | BCO ID |
-| `EHSChmlPhysPrptyCentralID` | `CHAR(32)` | BCO KEY |
-| `EHSChemicalPhysicalPropUUID` | `RAW(16)` | NodeID |
-| `EHSChemicalPhysicalPropID` | `CHAR(20)` | id |
-| `ChmlPhysPropMigrationSource` | `CHAR(60)` | Migration Source |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSChmlPhysPrptyBusConfignVers` |  | |  |  | `CHAR(40)` | BCO ID |
+| `EHSChmlPhysPrptyCentralID` |  | |  |  | `CHAR(32)` | BCO KEY |
+| `EHSChemicalPhysicalPropUUID` |  | |  |  | `RAW(16)` | NodeID |
+| `EHSChemicalPhysicalPropID` |  | |  |  | `CHAR(20)` | id |
+| `ChmlPhysPropMigrationSource` |  | |  |  | `CHAR(60)` | Migration Source |

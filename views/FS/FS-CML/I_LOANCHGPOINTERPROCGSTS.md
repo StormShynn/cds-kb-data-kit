@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanChgPointerProcgSts` | `CHAR(1)` | Status of Change Pointer Regarding ALE Processing |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanChgPointerProcgSts` |  | |  |  | `CHAR(1)` | Status of Change Pointer Regarding ALE Processing |

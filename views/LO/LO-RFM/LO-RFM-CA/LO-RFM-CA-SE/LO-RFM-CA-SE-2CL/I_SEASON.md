@@ -35,23 +35,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SeasonInternalIdentifier` | `RAW(16)` | Season Internal Unique Identifier |
-| `ProductSeasonYear` | `CHAR(4)` | Season Year |
-| `ProductSeason` | `CHAR(10)` | Season |
-| `ProductCollection` | `CHAR(10)` | Fashion Collection |
-| `ProductTheme` | `CHAR(10)` | Fashion Theme |
-| `ProductSeasonValidFrom` | `DATS(8)` | Valid From Date |
-| `ProductSeasonValidTo` | `DATS(8)` | Valid To Date |
-| `CreatedByUser` | `CHAR(12)` | User Who Created the Object |
-| `CreationDate` | `DATS(8)` | Date on Which the Object Was Created |
-| `CreationTime` | `TIMS(6)` | Time at Which the Object Was Created |
-| `LastChangedByUser` | `CHAR(12)` | Last User to Change the Object |
-| `LastChangeDate` | `DATS(8)` | Date on Which the Object Was Last Changed |
-| `LastChangeTime` | `TIMS(6)` | Time at Which the Object Was Last Changed |
-| `SeasonLevel` | `CHAR(1)` | Season Level |
-| `SeasonYearParent` | `CHAR(4)` | Season Year Parent |
-| `SeasonParent` | `CHAR(10)` | Season Parent |
-| `CollectionParent` | `CHAR(10)` | Collection Parent |
-| `ThemeParent` | `CHAR(10)` | Theme Parent |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SeasonInternalIdentifier` |  | |  |  | `RAW(16)` | Season Internal Unique Identifier |
+| `ProductSeasonYear` |  | |  |  | `CHAR(4)` | Season Year |
+| `ProductSeason` |  | |  |  | `CHAR(10)` | Season |
+| `ProductCollection` |  | |  |  | `CHAR(10)` | Fashion Collection |
+| `ProductTheme` |  | |  |  | `CHAR(10)` | Fashion Theme |
+| `ProductSeasonValidFrom` |  | |  |  | `DATS(8)` | Valid From Date |
+| `ProductSeasonValidTo` |  | |  |  | `DATS(8)` | Valid To Date |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Who Created the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Created |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Created |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last User to Change the Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Last Changed |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| `SeasonLevel` |  | |  |  | `CHAR(1)` | Season Level |
+| `SeasonYearParent` |  | |  |  | `CHAR(4)` | Season Year Parent |
+| `SeasonParent` |  | |  |  | `CHAR(10)` | Season Parent |
+| `CollectionParent` |  | |  |  | `CHAR(10)` | Collection Parent |
+| `ThemeParent` |  | |  |  | `CHAR(10)` | Theme Parent |

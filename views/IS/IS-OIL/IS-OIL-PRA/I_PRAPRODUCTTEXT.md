@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Product` | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
-| `Language` | `LANG(1)` | Language Key |
-| `ProductName` | `CHAR(50)` | Minor Product Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` |  | |  |  | `CHAR(3)` | Full three char. product code (Major and Detail Products) |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProductName` |  | |  |  | `CHAR(50)` | Minor Product Name |

@@ -30,9 +30,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanBranchOffice` | `CHAR(4)` | Branch Office |
-| `LoanBranchOfficeShortText` | `CHAR(15)` | Short Name |
-| `LoanBranchOfficeText` | `CHAR(50)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanBranchOffice` |  | |  |  | `CHAR(4)` | Branch Office |
+| `LoanBranchOfficeShortText` |  | |  |  | `CHAR(15)` | Short Name |
+| `LoanBranchOfficeText` |  | |  |  | `CHAR(50)` | Name |

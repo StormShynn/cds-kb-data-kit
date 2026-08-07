@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoActivityUUID` | `RAW(16)` | Activity UUID |
-| `DCoActyRelatedPromiseToPayUUID` | `RAW(16)` | Activity-Related Promise to Pay UUID |
-| `DCoPromiseToPayUUID` | `RAW(16)` | UUID of Promise to Pay |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoActivityUUID` |  | |  |  | `RAW(16)` | Activity UUID |
+| `DCoActyRelatedPromiseToPayUUID` |  | |  |  | `RAW(16)` | Activity-Related Promise to Pay UUID |
+| `DCoPromiseToPayUUID` |  | |  |  | `RAW(16)` | UUID of Promise to Pay |

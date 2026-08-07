@@ -33,21 +33,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChangeNumber` | `CHAR(12)` | Change Number |
-| `ChangeNumberStatus` | `NUMC(2)` | Status of Change Number |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization group for change master record |
-| `ChangeNumberFunction` | `CHAR(1)` | Change number function |
-| `IsTechnicallyReleased` | `CHAR(1)` | Indicator: Technical release occurs |
-| `ChangeNumberReleaseKey` | `NUMC(2)` | Release Key for Change Master Record |
-| `ReasonForChangeText` | `CHAR(40)` | Reason for change |
-| `ChangeNumberDescription` | `CHAR(40)` | Change number description |
-| `ChangeNumberValidFromDate` | `DATS(8)` | Valid-From Date |
-| `ChangeNumberCreationDate` | `DATS(8)` | Date on Which Record Was Created |
-| `ChangeNumberCreatedByUser` | `CHAR(12)` | User Who Created Record |
-| `ChangeNumberLastChangedDate` | `DATS(8)` | Changed On |
-| `ChangeNumberLastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `IsUsedForDataDefinition` | `CHAR(1)` | Change Number Is Currently Being Used in Objects |
-| `ChangeNumberIsMrkdForDeletion` | `CHAR(1)` | Deletion Flag for Change Number (Reorganization) |
-| `ChangeNumberLastChgdDateTime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `ChangeNumberStatus` |  | |  |  | `NUMC(2)` | Status of Change Number |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization group for change master record |
+| `ChangeNumberFunction` |  | |  |  | `CHAR(1)` | Change number function |
+| `IsTechnicallyReleased` |  | |  |  | `CHAR(1)` | Indicator: Technical release occurs |
+| `ChangeNumberReleaseKey` |  | |  |  | `NUMC(2)` | Release Key for Change Master Record |
+| `ReasonForChangeText` |  | |  |  | `CHAR(40)` | Reason for change |
+| `ChangeNumberDescription` |  | |  |  | `CHAR(40)` | Change number description |
+| `ChangeNumberValidFromDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ChangeNumberCreationDate` |  | |  |  | `DATS(8)` | Date on Which Record Was Created |
+| `ChangeNumberCreatedByUser` |  | |  |  | `CHAR(12)` | User Who Created Record |
+| `ChangeNumberLastChangedDate` |  | |  |  | `DATS(8)` | Changed On |
+| `ChangeNumberLastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `IsUsedForDataDefinition` |  | |  |  | `CHAR(1)` | Change Number Is Currently Being Used in Objects |
+| `ChangeNumberIsMrkdForDeletion` |  | |  |  | `CHAR(1)` | Deletion Flag for Change Number (Reorganization) |
+| `ChangeNumberLastChgdDateTime` |  | |  |  | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |

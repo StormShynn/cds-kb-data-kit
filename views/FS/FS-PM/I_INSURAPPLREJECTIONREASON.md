@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurApplRjcnRsn` | `NUMC(3)` | Refusal Reason |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurApplRjcnRsn` |  | |  |  | `NUMC(3)` | Refusal Reason |

@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NorthDakotaTaxExmpWellType` | `CHAR(2)` | Tax 2.0: ND Well Code |
-| `NorthDakotaTaxExmpWellTypeName` | `CHAR(100)` | Tax 2.0 ND Well Code Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NorthDakotaTaxExmpWellType` |  | |  |  | `CHAR(2)` | Tax 2.0: ND Well Code |
+| `NorthDakotaTaxExmpWellTypeName` |  | |  |  | `CHAR(100)` | Tax 2.0 ND Well Code Description |

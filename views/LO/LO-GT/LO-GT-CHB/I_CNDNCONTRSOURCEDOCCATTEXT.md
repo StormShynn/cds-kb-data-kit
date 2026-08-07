@@ -36,9 +36,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrSourceDocCat` | `CHAR(2)` | External Reference Document Category |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrSourceDocCatName` | `CHAR(60)` | Description of External Reference Document Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrSourceDocCat` |  | |  |  | `CHAR(2)` | External Reference Document Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrSourceDocCatName` |  | |  |  | `CHAR(60)` | Description of External Reference Document Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

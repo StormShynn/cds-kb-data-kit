@@ -33,19 +33,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenancePlan` | `CHAR(12)` | Maintenance Plan |
-| `MaintenancePlanCallNumber` | `INT4(10)` | Maintenance Plan Call Number |
-| `MaintenanceItem` | `CHAR(16)` | Maintenance Item |
-| `MaintenanceOrder` | `CHAR(12)` | Order Number |
-| `MaintenanceNotification` | `CHAR(12)` | Notification Number |
-| `MaintCallHorizonIsNotReached` | `CHAR(1)` | Scheduling status: call horizon not reached |
-| `SchedulingStatus` | `CHAR(1)` | Scheduling status |
-| `PlannedStartDate` | `DATS(8)` | Basic start date |
-| `ReleasedByUserName` | `CHAR(1)` | Scheduling determined by user |
-| `ServiceOrder` | `CHAR(10)` | Transaction ID |
-| `CompletionDate` | `DATS(8)` | Completion Date for Call Object |
-| `CompletionTime` | `TIMS(6)` | Completion Time for Call Object |
-| `ServiceEntrySheet` | `CHAR(10)` | Entry Sheet Number |
-| `RevisionNumber` | `NUMC(3)` | Revision Number |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenancePlan` |  | |  |  | `CHAR(12)` | Maintenance Plan |
+| `MaintenancePlanCallNumber` |  | |  |  | `INT4(10)` | Maintenance Plan Call Number |
+| `MaintenanceItem` |  | |  |  | `CHAR(16)` | Maintenance Item |
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintenanceNotification` |  | |  |  | `CHAR(12)` | Notification Number |
+| `MaintCallHorizonIsNotReached` |  | |  |  | `CHAR(1)` | Scheduling status: call horizon not reached |
+| `SchedulingStatus` |  | |  |  | `CHAR(1)` | Scheduling status |
+| `PlannedStartDate` |  | |  |  | `DATS(8)` | Basic start date |
+| `ReleasedByUserName` |  | |  |  | `CHAR(1)` | Scheduling determined by user |
+| `ServiceOrder` |  | |  |  | `CHAR(10)` | Transaction ID |
+| `CompletionDate` |  | |  |  | `DATS(8)` | Completion Date for Call Object |
+| `CompletionTime` |  | |  |  | `TIMS(6)` | Completion Time for Call Object |
+| `ServiceEntrySheet` |  | |  |  | `CHAR(10)` | Entry Sheet Number |
+| `RevisionNumber` |  | |  |  | `NUMC(3)` | Revision Number |

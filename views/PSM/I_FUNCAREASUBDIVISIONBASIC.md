@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FunctionalAreaSubdivisionID` | `CHAR(10)` | Functional Area Subdivision ID |
-| `FndsMgmtAcctAssgmtElementID` | `CHAR(1)` | Account Assignment Element |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FunctionalAreaSubdivisionID` |  | |  |  | `CHAR(10)` | Functional Area Subdivision ID |
+| `FndsMgmtAcctAssgmtElementID` |  | |  |  | `CHAR(1)` | Account Assignment Element |

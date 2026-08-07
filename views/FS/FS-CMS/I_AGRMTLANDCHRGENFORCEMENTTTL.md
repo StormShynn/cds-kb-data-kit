@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgrmtLandChrgEnfrcmntTtlType` | `CHAR(2)` | Indicator for Enforcement Title |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgrmtLandChrgEnfrcmntTtlType` |  | |  |  | `CHAR(2)` | Indicator for Enforcement Title |

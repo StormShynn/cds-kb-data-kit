@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralLandRegisterType` | `CHAR(6)` | Register Type |
-| `Language` | `LANG(1)` | Language in which description is needed |
-| `CollateralLandRegisterTypeText` | `CHAR(40)` | Name in a specified language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralLandRegisterType` |  | |  |  | `CHAR(6)` | Register Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which description is needed |
+| `CollateralLandRegisterTypeText` |  | |  |  | `CHAR(40)` | Name in a specified language |

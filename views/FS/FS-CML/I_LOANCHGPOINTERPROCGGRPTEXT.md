@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LoanChgPointerProcgGrp` | `NUMC(2)` | ALE Processing Group |
-| `LoanChgPointerProcgGrpText` | `CHAR(50)` | Name of ALE Processing Groups |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LoanChgPointerProcgGrp` |  | |  |  | `NUMC(2)` | ALE Processing Group |
+| `LoanChgPointerProcgGrpText` |  | |  |  | `CHAR(50)` | Name of ALE Processing Groups |

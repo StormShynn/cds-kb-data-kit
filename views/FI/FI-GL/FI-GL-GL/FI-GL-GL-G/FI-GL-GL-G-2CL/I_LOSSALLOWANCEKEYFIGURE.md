@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LossAllowanceKeyFigure` | `CHAR(30)` | Key Figure |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LossAllowanceKeyFigure` |  | |  |  | `CHAR(30)` | Key Figure |

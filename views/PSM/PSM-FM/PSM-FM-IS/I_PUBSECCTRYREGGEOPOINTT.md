@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CountryRegion` | `CHAR(6)` |  |
-| `Language` | `LANG(1)` | Language Key |
-| `RegionName` | `CHAR(20)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CountryRegion` |  | |  |  | `CHAR(6)` |  |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `RegionName` |  | |  |  | `CHAR(20)` | Description |

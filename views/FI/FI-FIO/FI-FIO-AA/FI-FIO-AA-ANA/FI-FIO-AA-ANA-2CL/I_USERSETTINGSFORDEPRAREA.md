@@ -34,7 +34,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessUser` | `CHAR(12)` | User ID |
-| `AssetDepreciationArea` | `NUMC(2)` | Asset Depreciation Area (Real or Derived) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessUser` |  | |  |  | `CHAR(12)` | User ID |
+| `AssetDepreciationArea` |  | |  |  | `NUMC(2)` | Asset Depreciation Area (Real or Derived) |

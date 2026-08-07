@@ -33,30 +33,30 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationGroup` | `CHAR(18)` | Consolidation Group |
-| `ConsolidationUnit` | `CHAR(18)` | Consolidation Unit |
-| `FinancialStatementItem` | `CHAR(10)` | Financial Statement Item |
-| `SubItemCategory` | `CHAR(3)` | Subitem Category |
-| `SubItem` | `CHAR(10)` | Subitem |
-| `PartnerConsolidationUnit` | `CHAR(18)` | Partner Unit |
-| `PostingLevel` | `CHAR(2)` | Posting Level |
-| `CurrencyConversionsDiffType` | `NUMC(1)` | Currency Translation |
-| `ConsolidationDocumentType` | `CHAR(2)` | Document Type |
-| `ActualAmountInGroupCrcy` | `CURR(23)` | Cumulative Value in Group Currency |
-| `BudgetAmountInGroupCurrency` | `CURR(23)` | Cumulative Value in Group Currency |
-| `BdgtExchRateAmtInGroupCurrency` | `CURR(23)` | Cumulative Value in Group Currency |
-| `OverAllVarianceAmountInGrpCrcy` | `INT1(3)` |  |
-| `OverAllVarianceRate` | `INT1(3)` |  |
-| `ExchRateDrivenVarcAmtInGrpCrcy` | `INT1(3)` |  |
-| `ExchangeRateDrivenVarianceRate` | `INT1(3)` |  |
-| `OperationalVarcAmtInGrpCrcy` | `INT1(3)` |  |
-| `OperationalVarianceRate` | `INT1(3)` |  |
-| `GroupCurrency` | `CUKY(5)` | Group Currency |
-| `FiscalYear` | `NUMC(4)` |  |
-| `FiscalPeriod` | `NUMC(3)` |  |
-| `ConsolidationVersion` | `CHAR(3)` |  |
-| `ConsolidationChartOfAccounts` | `CHAR(2)` |  |
-| `FinancialStatementItemHier` | `CHAR(10)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationGroup` |  | |  |  | `CHAR(18)` | Consolidation Group |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `FinancialStatementItem` |  | |  |  | `CHAR(10)` | Financial Statement Item |
+| `SubItemCategory` |  | |  |  | `CHAR(3)` | Subitem Category |
+| `SubItem` |  | |  |  | `CHAR(10)` | Subitem |
+| `PartnerConsolidationUnit` |  | |  |  | `CHAR(18)` | Partner Unit |
+| `PostingLevel` |  | |  |  | `CHAR(2)` | Posting Level |
+| `CurrencyConversionsDiffType` |  | |  |  | `NUMC(1)` | Currency Translation |
+| `ConsolidationDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `ActualAmountInGroupCrcy` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `BudgetAmountInGroupCurrency` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `BdgtExchRateAmtInGroupCurrency` |  | |  |  | `CURR(23)` | Cumulative Value in Group Currency |
+| `OverAllVarianceAmountInGrpCrcy` |  | |  |  | `INT1(3)` |  |
+| `OverAllVarianceRate` |  | |  |  | `INT1(3)` |  |
+| `ExchRateDrivenVarcAmtInGrpCrcy` |  | |  |  | `INT1(3)` |  |
+| `ExchangeRateDrivenVarianceRate` |  | |  |  | `INT1(3)` |  |
+| `OperationalVarcAmtInGrpCrcy` |  | |  |  | `INT1(3)` |  |
+| `OperationalVarianceRate` |  | |  |  | `INT1(3)` |  |
+| `GroupCurrency` |  | |  |  | `CUKY(5)` | Group Currency |
+| `FiscalYear` |  | |  |  | `NUMC(4)` |  |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` |  |
+| `ConsolidationVersion` |  | |  |  | `CHAR(3)` |  |
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` |  |
+| `FinancialStatementItemHier` |  | |  |  | `CHAR(10)` |  |

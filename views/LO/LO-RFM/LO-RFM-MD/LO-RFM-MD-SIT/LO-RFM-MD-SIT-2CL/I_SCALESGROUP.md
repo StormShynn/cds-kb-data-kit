@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ScalesGroup` | `CHAR(4)` | Scales group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ScalesGroup` |  | |  |  | `CHAR(4)` | Scales group |

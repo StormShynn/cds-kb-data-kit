@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PaymentCycle` | `CHAR(1)` | Payment Processing - Future Pay Flag |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PaymentCycle` |  | |  |  | `CHAR(1)` | Payment Processing - Future Pay Flag |

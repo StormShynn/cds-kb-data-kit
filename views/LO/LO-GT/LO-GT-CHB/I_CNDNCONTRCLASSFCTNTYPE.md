@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrClassfctnType` | `CHAR(2)` | Condition Contract Category |
-| `CndnContrProcessCategory` | `CHAR(2)` | Process Category of a Condition Contract |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrClassfctnType` |  | |  |  | `CHAR(2)` | Condition Contract Category |
+| `CndnContrProcessCategory` |  | |  |  | `CHAR(2)` | Process Category of a Condition Contract |

@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BR_EFDREINFServiceCode` | `CHAR(9)` | EFD-REINF Service Type Code |
-| `BR_EFDREINFServiceCodeDesc` | `CHAR(255)` | EFD-REINF Service Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BR_EFDREINFServiceCode` |  | |  |  | `CHAR(9)` | EFD-REINF Service Type Code |
+| `BR_EFDREINFServiceCodeDesc` |  | |  |  | `CHAR(255)` | EFD-REINF Service Type Description |

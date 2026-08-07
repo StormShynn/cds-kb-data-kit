@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CreditDecisionDocumentCategory` | `CHAR(4)` | Category of the Documented Credit Decision |
-| `CrdtDcsnDocumentCategoryName` | `CHAR(40)` | Name of Category of the Documented Credit Decision |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CreditDecisionDocumentCategory` |  | |  |  | `CHAR(4)` | Category of the Documented Credit Decision |
+| `CrdtDcsnDocumentCategoryName` |  | |  |  | `CHAR(40)` | Name of Category of the Documented Credit Decision |

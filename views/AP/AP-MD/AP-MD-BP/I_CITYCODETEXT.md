@@ -30,10 +30,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `CityCode` | `CHAR(4)` | City Code |
-| `Language` | `LANG(1)` | Language Key |
-| `CityCodeName` | `CHAR(20)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `CityCode` |  | |  |  | `CHAR(4)` | City Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CityCodeName` |  | |  |  | `CHAR(20)` | Description |

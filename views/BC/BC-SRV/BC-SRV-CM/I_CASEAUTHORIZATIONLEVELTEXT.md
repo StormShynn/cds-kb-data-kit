@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CaseAuthorizationLevel` | `CHAR(1)` | Authorization level |
-| `CaseAuthorizationLevelName` | `CHAR(40)` | Text, 40 Characters Long |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CaseAuthorizationLevel` |  | |  |  | `CHAR(1)` | Authorization level |
+| `CaseAuthorizationLevelName` |  | |  |  | `CHAR(40)` | Text, 40 Characters Long |

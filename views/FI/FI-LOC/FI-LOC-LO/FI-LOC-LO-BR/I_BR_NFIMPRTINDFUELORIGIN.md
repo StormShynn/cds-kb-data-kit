@@ -35,6 +35,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BR_NFImportIndicatorFuelOrigin` | `CHAR(1)` | Fuel Origin Import Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BR_NFImportIndicatorFuelOrigin` |  | |  |  | `CHAR(1)` | Fuel Origin Import Indicator |

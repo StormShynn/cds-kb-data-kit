@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `EWMStorageBehavior` | `CHAR(1)` | Storage Behavior |
-| `EWMStorageBehaviorDesc` | `CHAR(60)` | Storage Behavior Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMStorageBehavior` |  | |  |  | `CHAR(1)` | Storage Behavior |
+| `EWMStorageBehaviorDesc` |  | |  |  | `CHAR(60)` | Storage Behavior Description |

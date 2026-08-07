@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationPrftCtrHierarchy` | `CHAR(42)` | Consolidation Profit Center Hierarchy |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `PartnerProfitCenter` | `CHAR(10)` | Partner Profit Center |
-| `ConsolidationPrftCtrForElim` | `CHAR(25)` | Consolidation Elimination Member |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationPrftCtrHierarchy` |  | |  |  | `CHAR(42)` | Consolidation Profit Center Hierarchy |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `PartnerProfitCenter` |  | |  |  | `CHAR(10)` | Partner Profit Center |
+| `ConsolidationPrftCtrForElim` |  | |  |  | `CHAR(25)` | Consolidation Elimination Member |

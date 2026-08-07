@@ -34,19 +34,19 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Store` | `CHAR(4)` | Retail plant |
-| `StorePickingRequest` | `CHAR(10)` | Store Picking Request ID |
-| `StoreReferenceOrder` | `CHAR(10)` | Order Number of the Reference Document |
-| `StoreReferenceDocumentType` | `CHAR(2)` | Document Type of the Reference Document |
-| `StorePlannedPickingDateTime` | `DEC(21)` | Time Stamp of Store Picking Request |
-| `StorePickingRequestStatus` | `CHAR(2)` | Store Picking Request Status |
-| `HandoverShelfSpaceID` | `CHAR(20)` | Handover Shelf Space ID |
-| `UserAssignedToPickingRequest` | `CHAR(12)` | User Name |
-| `GrossWeight` | `QUAN(15)` | Store Picking Request Gross Weight |
-| `WeightUnit` | `UNIT(3)` | Store Picking Request Gross Weight Unit of Measure |
-| `GrossVolume` | `QUAN(15)` | Store Picking Request Gross Volume |
-| `VolumeUnit` | `UNIT(3)` | Store Picking Request Gross Volume Unit of Measure |
-| `RetailStoreCustomerReference` | `CHAR(35)` | Customer Reference |
-| `RetailStoreExternalReference` | `CHAR(12)` | Your Reference |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Store` |  | |  |  | `CHAR(4)` | Retail plant |
+| `StorePickingRequest` |  | |  |  | `CHAR(10)` | Store Picking Request ID |
+| `StoreReferenceOrder` |  | |  |  | `CHAR(10)` | Order Number of the Reference Document |
+| `StoreReferenceDocumentType` |  | |  |  | `CHAR(2)` | Document Type of the Reference Document |
+| `StorePlannedPickingDateTime` |  | |  |  | `DEC(21)` | Time Stamp of Store Picking Request |
+| `StorePickingRequestStatus` |  | |  |  | `CHAR(2)` | Store Picking Request Status |
+| `HandoverShelfSpaceID` |  | |  |  | `CHAR(20)` | Handover Shelf Space ID |
+| `UserAssignedToPickingRequest` |  | |  |  | `CHAR(12)` | User Name |
+| `GrossWeight` |  | |  |  | `QUAN(15)` | Store Picking Request Gross Weight |
+| `WeightUnit` |  | |  |  | `UNIT(3)` | Store Picking Request Gross Weight Unit of Measure |
+| `GrossVolume` |  | |  |  | `QUAN(15)` | Store Picking Request Gross Volume |
+| `VolumeUnit` |  | |  |  | `UNIT(3)` | Store Picking Request Gross Volume Unit of Measure |
+| `RetailStoreCustomerReference` |  | |  |  | `CHAR(35)` | Customer Reference |
+| `RetailStoreExternalReference` |  | |  |  | `CHAR(12)` | Your Reference |

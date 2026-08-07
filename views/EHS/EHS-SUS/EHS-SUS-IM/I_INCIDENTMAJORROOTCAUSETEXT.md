@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentMajorRootCause` | `CHAR(21)` | Root Cause |
-| `Language` | `LANG(1)` | Language Key |
-| `IncidentMajorRootCauseName` | `CHAR(40)` | Description (Extra Short) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentMajorRootCause` |  | |  |  | `CHAR(21)` | Root Cause |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IncidentMajorRootCauseName` |  | |  |  | `CHAR(40)` | Description (Extra Short) |

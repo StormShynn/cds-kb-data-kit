@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `VolumeCategory` | `CHAR(1)` | Volume Category Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VolumeCategory` |  | |  |  | `CHAR(1)` | Volume Category Code |

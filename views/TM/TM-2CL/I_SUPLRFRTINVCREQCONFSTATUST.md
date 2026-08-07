@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SuplrFrtInvcReqConfStatus` | `CHAR(2)` | Freight Settlement Confirmation Status |
-| `Language` | `LANG(1)` | Language Key |
-| `SuplrFrtInvcReqConfStatusDesc` | `CHAR(60)` | Freight Settlement Document Confirmation Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SuplrFrtInvcReqConfStatus` |  | |  |  | `CHAR(2)` | Freight Settlement Confirmation Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SuplrFrtInvcReqConfStatusDesc` |  | |  |  | `CHAR(60)` | Freight Settlement Document Confirmation Status Description |

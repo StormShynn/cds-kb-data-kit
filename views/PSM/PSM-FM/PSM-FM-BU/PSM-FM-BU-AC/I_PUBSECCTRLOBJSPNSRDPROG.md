@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SponsoredProgramHierarchy` | `CHAR(42)` | Sponsored Program Hierarchy |
-| `CtrlObjForSponsoredProgram` | `CHAR(50)` | Control Object for a Sponsored Program |
-| `CtrlObjForSponsoredProgramName` | `CHAR(50)` | Control Object for a Sponsored Program |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SponsoredProgramHierarchy` |  | |  |  | `CHAR(42)` | Sponsored Program Hierarchy |
+| `CtrlObjForSponsoredProgram` |  | |  |  | `CHAR(50)` | Control Object for a Sponsored Program |
+| `CtrlObjForSponsoredProgramName` |  | |  |  | `CHAR(50)` | Control Object for a Sponsored Program |

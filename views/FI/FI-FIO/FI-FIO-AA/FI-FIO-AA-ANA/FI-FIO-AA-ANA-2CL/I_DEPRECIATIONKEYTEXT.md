@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ChartOfDepreciation` | `CHAR(4)` | Chart of Depreciaton for Asset Valuation |
-| `DepreciationKey` | `CHAR(4)` | Depreciation Key |
-| `Language` | `LANG(1)` | Language Key |
-| `DepreciationKeyName` | `CHAR(50)` | Depreciation Key Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ChartOfDepreciation` |  | |  |  | `CHAR(4)` | Chart of Depreciaton for Asset Valuation |
+| `DepreciationKey` |  | |  |  | `CHAR(4)` | Depreciation Key |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DepreciationKeyName` |  | |  |  | `CHAR(50)` | Depreciation Key Name |

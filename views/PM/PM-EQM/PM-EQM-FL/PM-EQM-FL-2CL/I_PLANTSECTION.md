@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PlantSection` | `CHAR(3)` | Plant Section |
-| `Plant` | `CHAR(4)` | Plant |
-| `PlantSectionPersonRespName` | `CHAR(14)` | Group of Employees Responsible for Company Area |
-| `PlantSectionPersonRespPhone` | `CHAR(12)` | Phone Number of Employee Group Responsible for Company Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PlantSection` |  | |  |  | `CHAR(3)` | Plant Section |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `PlantSectionPersonRespName` |  | |  |  | `CHAR(14)` | Group of Employees Responsible for Company Area |
+| `PlantSectionPersonRespPhone` |  | |  |  | `CHAR(12)` | Phone Number of Employee Group Responsible for Company Area |

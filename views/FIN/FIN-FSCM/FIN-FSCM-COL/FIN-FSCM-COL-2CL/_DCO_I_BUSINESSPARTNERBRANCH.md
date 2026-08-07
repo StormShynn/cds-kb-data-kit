@@ -34,13 +34,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoBusinessPartnerUUID` | `RAW(16)` | Business Partner UUID for Collection Process |
-| `DCoBPBranchUUID` | `RAW(16)` | Business Partner Branch UUID |
-| `DCoBusinessPartnerBranch` | `CHAR(10)` | Branch Office in Collections and Dispute Automation |
-| `DCoRblsAreCollectedOnBranch` | `CHAR(1)` | Receivable Items Are Collected on Branch |
-| `DCoBPBranchCreatedByUser` | `CHAR(12)` | Created By |
-| `DCoBPBranchCreationDateTime` | `DEC(15)` | Created On/At |
-| `DCoBPBranchLastChangedByUser` | `CHAR(12)` | Last Changed By |
-| `DCoBPBrnchLastChangeDateTime` | `DEC(15)` | Last Changed On/At |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoBusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner UUID for Collection Process |
+| `DCoBPBranchUUID` |  | |  |  | `RAW(16)` | Business Partner Branch UUID |
+| `DCoBusinessPartnerBranch` |  | |  |  | `CHAR(10)` | Branch Office in Collections and Dispute Automation |
+| `DCoRblsAreCollectedOnBranch` |  | |  |  | `CHAR(1)` | Receivable Items Are Collected on Branch |
+| `DCoBPBranchCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `DCoBPBranchCreationDateTime` |  | |  |  | `DEC(15)` | Created On/At |
+| `DCoBPBranchLastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `DCoBPBrnchLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Changed On/At |

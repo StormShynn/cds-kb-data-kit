@@ -38,28 +38,28 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Product` | `CHAR(40)` | Material Number |
-| `Plant` | `CHAR(4)` | Plant |
-| `StorageLocation` | `CHAR(4)` | Storage Location |
-| `WarehouseStorageBin` | `CHAR(10)` | Storage Bin |
-| `MaintenanceStatus` | `CHAR(15)` | Maintenance Status |
-| `IsMarkedForDeletion` | `CHAR(1)` | Flag Material for Deletion at Storage Location Level |
-| `PhysicalInventoryBlockInd` | `CHAR(1)` | Physical Inventory Blocking Indicator |
-| `CreationDate` | `DATS(8)` | Created On |
-| `DateOfLastPostedCntUnRstrcdStk` | `DATS(8)` | Date of Last Posted Count |
-| `InventoryCorrectionFactor` | `FLTP(16)` | Inventory Correction Factor |
-| `InvtryRestrictedUseStockInd` | `CHAR(3)` | Physical inventory indicator for restricted-use stock |
-| `InvtryCurrentYearStockInd` | `CHAR(3)` | Physical inventory indicator for whse stock in current year |
-| `InvtryQualInspCurrentYrStkInd` | `CHAR(3)` | Phys. inventory ind. f. stock in qual. insp. in current year |
-| `InventoryBlockStockInd` | `CHAR(3)` | Physical inventory indicator for blocked stock |
-| `InvtryRestStockPrevPeriodInd` | `CHAR(3)` | Physical inventory ind. for restricted-use stock, prev.pd |
-| `InventoryStockPrevPeriod` | `CHAR(3)` | Physical inventory indicator for stock in previous year |
-| `InvtryStockQltyInspPrevPeriod` | `CHAR(3)` | Phys. inventory ind. f. stock in qual. insp. in prev. period |
-| `HasInvtryBlockStockPrevPeriod` | `CHAR(3)` | Phys. inventory indicator for blocked stock in prev. period |
-| `FiscalYearCurrentPeriod` | `NUMC(4)` |  |
-| `FiscalMonthCurrentPeriod` | `NUMC(2)` |  |
-| `FiscalYearCurrentInvtryPeriod` | `NUMC(4)` | Fiscal year of current physical inventory indicator |
-| `IsActiveEntity` | `CHAR(1)` | Draft - Indicator - Is active document |
-| `LeanWrhsManagementPickingArea` | `CHAR(3)` | Picking area for lean WM |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `WarehouseStorageBin` |  | |  |  | `CHAR(10)` | Storage Bin |
+| `MaintenanceStatus` |  | |  |  | `CHAR(15)` | Maintenance Status |
+| `IsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Flag Material for Deletion at Storage Location Level |
+| `PhysicalInventoryBlockInd` |  | |  |  | `CHAR(1)` | Physical Inventory Blocking Indicator |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `DateOfLastPostedCntUnRstrcdStk` |  | |  |  | `DATS(8)` | Date of Last Posted Count |
+| `InventoryCorrectionFactor` |  | |  |  | `FLTP(16)` | Inventory Correction Factor |
+| `InvtryRestrictedUseStockInd` |  | |  |  | `CHAR(3)` | Physical inventory indicator for restricted-use stock |
+| `InvtryCurrentYearStockInd` |  | |  |  | `CHAR(3)` | Physical inventory indicator for whse stock in current year |
+| `InvtryQualInspCurrentYrStkInd` |  | |  |  | `CHAR(3)` | Phys. inventory ind. f. stock in qual. insp. in current year |
+| `InventoryBlockStockInd` |  | |  |  | `CHAR(3)` | Physical inventory indicator for blocked stock |
+| `InvtryRestStockPrevPeriodInd` |  | |  |  | `CHAR(3)` | Physical inventory ind. for restricted-use stock, prev.pd |
+| `InventoryStockPrevPeriod` |  | |  |  | `CHAR(3)` | Physical inventory indicator for stock in previous year |
+| `InvtryStockQltyInspPrevPeriod` |  | |  |  | `CHAR(3)` | Phys. inventory ind. f. stock in qual. insp. in prev. period |
+| `HasInvtryBlockStockPrevPeriod` |  | |  |  | `CHAR(3)` | Phys. inventory indicator for blocked stock in prev. period |
+| `FiscalYearCurrentPeriod` |  | |  |  | `NUMC(4)` |  |
+| `FiscalMonthCurrentPeriod` |  | |  |  | `NUMC(2)` |  |
+| `FiscalYearCurrentInvtryPeriod` |  | |  |  | `NUMC(4)` | Fiscal year of current physical inventory indicator |
+| `IsActiveEntity` |  | |  |  | `CHAR(1)` | Draft - Indicator - Is active document |
+| `LeanWrhsManagementPickingArea` |  | |  |  | `CHAR(3)` | Picking area for lean WM |

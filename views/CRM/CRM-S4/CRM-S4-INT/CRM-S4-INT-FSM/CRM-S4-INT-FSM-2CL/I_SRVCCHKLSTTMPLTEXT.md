@@ -32,11 +32,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceChecklistTemplate` | `CHAR(10)` | Template ID |
-| `SrvcChklstLanguage` | `LANG(1)` | Language |
-| `SrvcChklstTmplName` | `CHAR(128)` | Template Name |
-| `SrvcChklstTmplDescription` | `CHAR(150)` | FSM Template Description |
-| `SrvcChklstTmplCategoryName` | `CHAR(1333)` | FSM Category Name |
-| `SrvcChklstTmplTagsString` | `CHAR(1333)` | Template Tags |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceChecklistTemplate` |  | |  |  | `CHAR(10)` | Template ID |
+| `SrvcChklstLanguage` |  | |  |  | `LANG(1)` | Language |
+| `SrvcChklstTmplName` |  | |  |  | `CHAR(128)` | Template Name |
+| `SrvcChklstTmplDescription` |  | |  |  | `CHAR(150)` | FSM Template Description |
+| `SrvcChklstTmplCategoryName` |  | |  |  | `CHAR(1333)` | FSM Category Name |
+| `SrvcChklstTmplTagsString` |  | |  |  | `CHAR(1333)` | Template Tags |

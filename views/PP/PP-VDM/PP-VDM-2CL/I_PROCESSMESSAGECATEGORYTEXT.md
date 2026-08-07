@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Plant` | `CHAR(4)` | Plant |
-| `ProcessMessageCategory` | `CHAR(8)` | Process Message Category |
-| `Language` | `LANG(1)` | Language Key |
-| `ProcessMessageCategoryName` | `CHAR(40)` | Description of the Process Message or Instruction Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ProcessMessageCategory` |  | |  |  | `CHAR(8)` | Process Message Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ProcessMessageCategoryName` |  | |  |  | `CHAR(40)` | Description of the Process Message or Instruction Category |

@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BR_NFDocumentReferenceType` | `CHAR(1)` | Document Reference Type |
-| `BR_NFDocumentReferenceTypeDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BR_NFDocumentReferenceType` |  | |  |  | `CHAR(1)` | Document Reference Type |
+| `BR_NFDocumentReferenceTypeDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

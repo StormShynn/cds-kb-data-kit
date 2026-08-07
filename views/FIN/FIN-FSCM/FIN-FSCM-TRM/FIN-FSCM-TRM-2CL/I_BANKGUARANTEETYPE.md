@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankGuaranteeType` | `CHAR(4)` | Bank Guarantee Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankGuaranteeType` |  | |  |  | `CHAR(4)` | Bank Guarantee Type |

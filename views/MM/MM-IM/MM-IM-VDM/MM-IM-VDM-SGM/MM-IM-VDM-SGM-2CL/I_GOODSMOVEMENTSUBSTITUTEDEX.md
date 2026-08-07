@@ -37,48 +37,48 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaterialDocumentKey1` | `RAW(4)` | Key field 1 |
-| `MaterialDocumentKey2` | `RAW(4)` | Key field 2 |
-| `MaterialDocumentKey3` | `RAW(5)` | Key field 3 |
-| `MaterialDocumentKey4` | `RAW(1)` | Key field 4 |
-| `MaterialDocumentKey5` | `RAW(1)` | Key field 5 |
-| `MaterialDocumentKey6` | `RAW(1)` | Key field 6 |
-| `StockIdentifyingMaterial` | `CHAR(40)` | Material for Stock Mamangement |
-| `Plant` | `CHAR(4)` | Plant |
-| `StockIdfgStorageLocation` | `CHAR(4)` | Storage Location (Stock Identifier) |
-| `StockIdentifyingBatch` | `CHAR(10)` | Batch Number (Stock Identifier) |
-| `SpecialStockIdfgSupplier` | `CHAR(10)` | Supplier for Special Stock |
-| `SpecialStockIdfgSalesOrder` | `CHAR(10)` | Sales Order Number of Valuated Sales Order Stock |
-| `SpecialStockIdfgSalesOrderItem` | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
-| `SpecialStockIdfgWBSElement` | `NUMC(8)` | Valuated Sales Order Stock WBS Element |
-| `SpecialStockIdfgCustomer` | `CHAR(10)` | Customer for Special Stock |
-| `InventorySpecialStockType` | `CHAR(1)` | Special Stock Type |
-| `InventoryStockType` | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
-| `SpecialStockIdfgStockOwner` | `CHAR(10)` | Add. Supplier for Special Stock |
-| `ResourceID` | `CHAR(40)` | Resource |
-| `CostEstimate` | `NUMC(12)` | Cost Estimate Number - Product Costing |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `InventorySpecialStockValnType` | `CHAR(1)` | Separate Valuation Type |
-| `MatlStkChangeQtyInBaseUnit` | `QUAN(31)` | Stock Quantity |
-| `MatlCnsmpnQtyInMatlBaseUnit` | `QUAN(31)` | Consumption Quantity |
-| `MaterialBaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `GoodsMovementStkAmtInCCCrcy` | `CURR(13)` | Amount in Local Currency with Sign of Stock Quantity |
-| `GoodsMvtCnsmpnAmtInCCCrcy` | `CURR(13)` | Amount in Local Currency with Sign of Consumption Quantity |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `InventoryValuationType` | `CHAR(10)` | Valuation Type |
-| `DocumentDate` | `DATS(8)` | Document Date in Document |
-| `PostingDate` | `DATS(8)` | Posting Date in the Document |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalYearPeriod` | `NUMC(7)` | Period Year |
-| `YearDay` | `NUMC(7)` | Year-Day-Combination |
-| `YearWeek` | `NUMC(6)` | Year-Week-Combination |
-| `YearMonth` | `NUMC(6)` | Year-Month-Combination |
-| `YearQuarter` | `NUMC(5)` | Year-Quarter-Combination |
-| `CalendarQuarter` | `NUMC(1)` | Quarter (1 - 4) |
-| `CalendarMonth` | `NUMC(2)` | Month (1 - 12) |
-| `CalendarWeek` | `NUMC(2)` | Calendar Week (1 - 53) |
-| `CalendarDayOfYear` | `NUMC(3)` | Day of Year (1 - 366) |
-| `WeekDay` | `NUMC(1)` | Day of Week |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaterialDocumentKey1` |  | |  |  | `RAW(4)` | Key field 1 |
+| `MaterialDocumentKey2` |  | |  |  | `RAW(4)` | Key field 2 |
+| `MaterialDocumentKey3` |  | |  |  | `RAW(5)` | Key field 3 |
+| `MaterialDocumentKey4` |  | |  |  | `RAW(1)` | Key field 4 |
+| `MaterialDocumentKey5` |  | |  |  | `RAW(1)` | Key field 5 |
+| `MaterialDocumentKey6` |  | |  |  | `RAW(1)` | Key field 6 |
+| `StockIdentifyingMaterial` |  | |  |  | `CHAR(40)` | Material for Stock Mamangement |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `StockIdfgStorageLocation` |  | |  |  | `CHAR(4)` | Storage Location (Stock Identifier) |
+| `StockIdentifyingBatch` |  | |  |  | `CHAR(10)` | Batch Number (Stock Identifier) |
+| `SpecialStockIdfgSupplier` |  | |  |  | `CHAR(10)` | Supplier for Special Stock |
+| `SpecialStockIdfgSalesOrder` |  | |  |  | `CHAR(10)` | Sales Order Number of Valuated Sales Order Stock |
+| `SpecialStockIdfgSalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
+| `SpecialStockIdfgWBSElement` |  | |  |  | `NUMC(8)` | Valuated Sales Order Stock WBS Element |
+| `SpecialStockIdfgCustomer` |  | |  |  | `CHAR(10)` | Customer for Special Stock |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Type |
+| `InventoryStockType` |  | |  |  | `CHAR(2)` | Stock Type of Goods Movement (Stock Identifier) |
+| `SpecialStockIdfgStockOwner` |  | |  |  | `CHAR(10)` | Add. Supplier for Special Stock |
+| `ResourceID` |  | |  |  | `CHAR(40)` | Resource |
+| `CostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate Number - Product Costing |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `InventorySpecialStockValnType` |  | |  |  | `CHAR(1)` | Separate Valuation Type |
+| `MatlStkChangeQtyInBaseUnit` |  | |  |  | `QUAN(31)` | Stock Quantity |
+| `MatlCnsmpnQtyInMatlBaseUnit` |  | |  |  | `QUAN(31)` | Consumption Quantity |
+| `MaterialBaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `GoodsMovementStkAmtInCCCrcy` |  | |  |  | `CURR(13)` | Amount in Local Currency with Sign of Stock Quantity |
+| `GoodsMvtCnsmpnAmtInCCCrcy` |  | |  |  | `CURR(13)` | Amount in Local Currency with Sign of Consumption Quantity |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Document Date in Document |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Period Year |
+| `YearDay` |  | |  |  | `NUMC(7)` | Year-Day-Combination |
+| `YearWeek` |  | |  |  | `NUMC(6)` | Year-Week-Combination |
+| `YearMonth` |  | |  |  | `NUMC(6)` | Year-Month-Combination |
+| `YearQuarter` |  | |  |  | `NUMC(5)` | Year-Quarter-Combination |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Quarter (1 - 4) |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Month (1 - 12) |
+| `CalendarWeek` |  | |  |  | `NUMC(2)` | Calendar Week (1 - 53) |
+| `CalendarDayOfYear` |  | |  |  | `NUMC(3)` | Day of Year (1 - 366) |
+| `WeekDay` |  | |  |  | `NUMC(1)` | Day of Week |

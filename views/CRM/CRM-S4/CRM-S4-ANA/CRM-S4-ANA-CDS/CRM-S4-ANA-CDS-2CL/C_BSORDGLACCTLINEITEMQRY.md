@@ -34,43 +34,43 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessSolutionOrder` | `CHAR(10)` | Transaction ID |
-| `BusinessSolutionOrderItem` | `NUMC(6)` | Shortened Item Number in Document |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `SemanticTag` | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `BusSolnOrdType` | `CHAR(4)` | Business Transaction Type |
-| `BusSolnOrdDescription` | `CHAR(40)` | Transaction Description |
-| `BusSolnOrdItmDescription` | `CHAR(40)` | Product Description |
-| `BusSolnOrdItmStatus` | `CHAR(4)` | Life Cycle Status |
-| `BusSolnOrdStatus` | `CHAR(4)` | Life Cycle Status |
-| `TransactionCurrency` | `CUKY(5)` | Currency |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Division` | `CHAR(2)` | Division |
-| `SalesOffice` | `CHAR(4)` | Sales Office |
-| `SalesGroup` | `CHAR(3)` | Sales Group |
-| `SoldToParty` | `CHAR(10)` | Sold-To Party |
-| `PostingDate` | `DATS(8)` | Posting Date |
-| `CompanyCodeCurrency` | `CUKY(5)` | Company Code Currency |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `BusSolnOrdRevnAmtInDC` | `CURR(23)` |  |
-| `BusSolnOrdCostAmtInDC` | `CURR(23)` |  |
-| `BusSolnOrdRecgdMargAmtInDC` | `CURR(23)` |  |
-| `SlsItmRevenueAmount` | `CURR(23)` |  |
-| `SrvcContrItmRevenueAmount` | `CURR(23)` |  |
-| `ExpnItmRevenueAmount` | `CURR(23)` |  |
-| `SbscrBilgItmRevenueAmount` | `CURR(23)` |  |
-| `SrvcPrtItmRevenueAmount` | `CURR(23)` |  |
-| `SrvcItmRevenueAmount` | `CURR(23)` |  |
-| `EntProjItmRevenueAmount` | `CURR(23)` |  |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `CalendarQuarter` | `NUMC(1)` | Calendar Quarter |
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `FiscalYearVariant` | `CHAR(2)` | Fiscal Year Variant |
-| `FiscalPeriod` | `NUMC(3)` | Fiscal Period |
-| `FiscalQuarter` | `NUMC(1)` | Fiscal Quarter |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Transaction ID |
+| `BusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` | Shortened Item Number in Document |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `BusSolnOrdType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `BusSolnOrdDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `BusSolnOrdItmDescription` |  | |  |  | `CHAR(40)` | Product Description |
+| `BusSolnOrdItmStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `BusSolnOrdStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `BusSolnOrdRevnAmtInDC` |  | |  |  | `CURR(23)` |  |
+| `BusSolnOrdCostAmtInDC` |  | |  |  | `CURR(23)` |  |
+| `BusSolnOrdRecgdMargAmtInDC` |  | |  |  | `CURR(23)` |  |
+| `SlsItmRevenueAmount` |  | |  |  | `CURR(23)` |  |
+| `SrvcContrItmRevenueAmount` |  | |  |  | `CURR(23)` |  |
+| `ExpnItmRevenueAmount` |  | |  |  | `CURR(23)` |  |
+| `SbscrBilgItmRevenueAmount` |  | |  |  | `CURR(23)` |  |
+| `SrvcPrtItmRevenueAmount` |  | |  |  | `CURR(23)` |  |
+| `SrvcItmRevenueAmount` |  | |  |  | `CURR(23)` |  |
+| `EntProjItmRevenueAmount` |  | |  |  | `CURR(23)` |  |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |

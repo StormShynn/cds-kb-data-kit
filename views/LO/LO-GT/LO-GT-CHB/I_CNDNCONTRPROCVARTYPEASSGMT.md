@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrProcVar` | `CHAR(4)` | Condition Contract Process Variant |
-| `CndnContrType` | `CHAR(4)` | Condition Contract Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrProcVar` |  | |  |  | `CHAR(4)` | Condition Contract Process Variant |
+| `CndnContrType` |  | |  |  | `CHAR(4)` | Condition Contract Type |

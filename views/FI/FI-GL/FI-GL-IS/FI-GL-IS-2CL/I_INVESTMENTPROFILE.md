@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InvestmentProfile` | `CHAR(6)` | Investment Measure Profile |
-| `InvestmentProfileName` | `CHAR(50)` | Name of capital investment profile |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InvestmentProfile` |  | |  |  | `CHAR(6)` | Investment Measure Profile |
+| `InvestmentProfileName` |  | |  |  | `CHAR(50)` | Name of capital investment profile |

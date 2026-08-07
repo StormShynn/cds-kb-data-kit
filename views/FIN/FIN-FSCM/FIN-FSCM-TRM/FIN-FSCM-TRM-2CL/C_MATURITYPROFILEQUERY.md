@@ -34,29 +34,29 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `SecurityAccount` | `CHAR(10)` | Securities Account |
-| `SecurityClass` | `CHAR(13)` | Security Class |
-| `FixedVariableInterestRateCat` | `CHAR(1)` | Interest Rate Category (for Interest Rate Management) |
-| `TrsyCshFlowDebtInvmtCode` | `CHAR(1)` | Debt Investment Indicator |
-| `PaymentDate` | `DATS(8)` | Payment or Delivery Date |
-| `ReferenceInterestRate` | `CHAR(10)` | Reference Interest Rate |
-| `InterestRateInPercent` | `CHAR(17)` |  |
-| `FinancialInstrProductCategory` | `NUMC(3)` | Product Category |
-| `FinancialInstrumentProductType` | `CHAR(3)` | Product Type |
-| `FinancialInstrTransactionType` | `CHAR(3)` | Financial Transaction Type |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `DifferentiationPortfolio` | `CHAR(10)` | Portfolio |
-| `SecurityAccountGroup` | `CHAR(10)` | Securities Account Group |
-| `CalendarYear` | `CHAR(10)` | Reporting Period |
-| `YearMonth` | `CHAR(8)` |  |
-| `YearQuarter` | `CHAR(7)` |  |
-| `NominalAmountInNominalCurrency` | `CURR(31)` |  |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `NominalAmountInReportingCrcy` | `CURR(21)` |  |
-| `SignedNominalAmtInDisplayCrcy` | `CURR(21)` |  |
-| `ExchangeRateType` | `CHAR(4)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `SecurityAccount` |  | |  |  | `CHAR(10)` | Securities Account |
+| `SecurityClass` |  | |  |  | `CHAR(13)` | Security Class |
+| `FixedVariableInterestRateCat` |  | |  |  | `CHAR(1)` | Interest Rate Category (for Interest Rate Management) |
+| `TrsyCshFlowDebtInvmtCode` |  | |  |  | `CHAR(1)` | Debt Investment Indicator |
+| `PaymentDate` |  | |  |  | `DATS(8)` | Payment or Delivery Date |
+| `ReferenceInterestRate` |  | |  |  | `CHAR(10)` | Reference Interest Rate |
+| `InterestRateInPercent` |  | |  |  | `CHAR(17)` |  |
+| `FinancialInstrProductCategory` |  | |  |  | `NUMC(3)` | Product Category |
+| `FinancialInstrumentProductType` |  | |  |  | `CHAR(3)` | Product Type |
+| `FinancialInstrTransactionType` |  | |  |  | `CHAR(3)` | Financial Transaction Type |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `DifferentiationPortfolio` |  | |  |  | `CHAR(10)` | Portfolio |
+| `SecurityAccountGroup` |  | |  |  | `CHAR(10)` | Securities Account Group |
+| `CalendarYear` |  | |  |  | `CHAR(10)` | Reporting Period |
+| `YearMonth` |  | |  |  | `CHAR(8)` |  |
+| `YearQuarter` |  | |  |  | `CHAR(7)` |  |
+| `NominalAmountInNominalCurrency` |  | |  |  | `CURR(31)` |  |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `NominalAmountInReportingCrcy` |  | |  |  | `CURR(21)` |  |
+| `SignedNominalAmtInDisplayCrcy` |  | |  |  | `CURR(21)` |  |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` |  |

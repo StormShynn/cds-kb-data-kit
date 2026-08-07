@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSDataPeriod` | `CHAR(3)` | Data Period of Data Collection Definition |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSDataPeriod` |  | |  |  | `CHAR(3)` | Data Period of Data Collection Definition |

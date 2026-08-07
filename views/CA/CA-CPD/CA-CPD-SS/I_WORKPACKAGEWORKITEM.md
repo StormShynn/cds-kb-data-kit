@@ -32,14 +32,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkItem` | `CHAR(10)` | Work Item ID |
-| `WorkPackage` | `CHAR(50)` | Plan Item |
-| `EngagementProject` | `CHAR(40)` | Commercial Project ID |
-| `WBSElementObject` | `CHAR(50)` | Object ID |
-| `WorkPackageUUID` | `RAW(16)` | Work Package UUID |
-| `WorkItemUUID` | `RAW(16)` | Work Item UUID |
-| `EngagementProjFinPlanUUID` | `RAW(16)` | Financial Plan UUID |
-| `WorkItemName` | `CHAR(40)` | Work Item Name |
-| `WorkItemIsInactive` | `CHAR(1)` | Data Element for Work Item is Inactive |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkItem` |  | |  |  | `CHAR(10)` | Work Item ID |
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Plan Item |
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Commercial Project ID |
+| `WBSElementObject` |  | |  |  | `CHAR(50)` | Object ID |
+| `WorkPackageUUID` |  | |  |  | `RAW(16)` | Work Package UUID |
+| `WorkItemUUID` |  | |  |  | `RAW(16)` | Work Item UUID |
+| `EngagementProjFinPlanUUID` |  | |  |  | `RAW(16)` | Financial Plan UUID |
+| `WorkItemName` |  | |  |  | `CHAR(40)` | Work Item Name |
+| `WorkItemIsInactive` |  | |  |  | `CHAR(1)` | Data Element for Work Item is Inactive |

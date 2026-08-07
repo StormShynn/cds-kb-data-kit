@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtTeamType` | `CHAR(30)` | Team Type |
-| `RespyMgmtTeamCategory` | `CHAR(30)` | Team Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtTeamType` |  | |  |  | `CHAR(30)` | Team Type |
+| `RespyMgmtTeamCategory` |  | |  |  | `CHAR(30)` | Team Category |

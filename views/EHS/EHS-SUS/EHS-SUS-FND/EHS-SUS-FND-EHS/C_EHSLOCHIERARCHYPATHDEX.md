@@ -33,14 +33,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocHierarchyPathUUID` | `RAW(16)` | Location Hierarchy - Path UUID |
-| `EHSLocHierarchyRevisionUUID` | `RAW(16)` | Location Hierarchy Revision Key |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `RevisionDescription` | `CHAR(80)` | Revision Description |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `EHSLocationID` | `CHAR(20)` | Location ID |
-| `EHSParentLocationUUID` | `RAW(16)` | Location |
-| `EHSParentLocationID` | `CHAR(20)` | Location ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocHierarchyPathUUID` |  | |  |  | `RAW(16)` | Location Hierarchy - Path UUID |
+| `EHSLocHierarchyRevisionUUID` |  | |  |  | `RAW(16)` | Location Hierarchy Revision Key |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `RevisionDescription` |  | |  |  | `CHAR(80)` | Revision Description |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
+| `EHSParentLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `EHSParentLocationID` |  | |  |  | `CHAR(20)` | Location ID |

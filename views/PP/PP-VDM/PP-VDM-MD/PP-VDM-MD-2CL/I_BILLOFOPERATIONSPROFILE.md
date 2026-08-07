@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsApplication` | `CHAR(1)` | Application of the task list |
-| `BillOfOperationsProfile` | `CHAR(7)` | Profile |
-| `OperationControlKey` | `CHAR(4)` | Control key for internal activities |
-| `OperationAutoIncrementNumber` | `NUMC(4)` | Operation Increment |
-| `OperationRelationshipType` | `CHAR(1)` | Key: View of relationships |
-| `ChangeRule` | `CHAR(1)` | Change Rule |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsApplication` |  | |  |  | `CHAR(1)` | Application of the task list |
+| `BillOfOperationsProfile` |  | |  |  | `CHAR(7)` | Profile |
+| `OperationControlKey` |  | |  |  | `CHAR(4)` | Control key for internal activities |
+| `OperationAutoIncrementNumber` |  | |  |  | `NUMC(4)` | Operation Increment |
+| `OperationRelationshipType` |  | |  |  | `CHAR(1)` | Key: View of relationships |
+| `ChangeRule` |  | |  |  | `CHAR(1)` | Change Rule |

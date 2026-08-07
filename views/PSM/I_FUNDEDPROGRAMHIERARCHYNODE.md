@@ -28,16 +28,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FinancialManagementArea` | `CHAR(4)` | Financial Management Area |
-| `FundedProgramHierarchy` | `CHAR(40)` | Funded Program Hierarchy |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `ValidityEndDate` | `DATS(8)` | Funded Program Validity End Date |
-| `ParentNode` | `CHAR(50)` | Hierarchy parent node |
-| `HierarchyVersion` | `NUMC(15)` | Hierarchy version |
-| `ValidityStartDate` | `DATS(8)` | Funded Program Validity Start Date |
-| `FundedProgram` | `CHAR(24)` | Funded Program |
-| `HierarchyNodeSequence` | `NUMC(6)` | Hierarchy Sequence Number |
-| `HierarchyNodeLevel` | `NUMC(6)` | Hierarchy Level |
-| `NodeType` | `CHAR(1)` | Hierarchy node type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundedProgramHierarchy` |  | |  |  | `CHAR(40)` | Funded Program Hierarchy |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Funded Program Validity End Date |
+| `ParentNode` |  | |  |  | `CHAR(50)` | Hierarchy parent node |
+| `HierarchyVersion` |  | |  |  | `NUMC(15)` | Hierarchy version |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Funded Program Validity Start Date |
+| `FundedProgram` |  | |  |  | `CHAR(24)` | Funded Program |
+| `HierarchyNodeSequence` |  | |  |  | `NUMC(6)` | Hierarchy Sequence Number |
+| `HierarchyNodeLevel` |  | |  |  | `NUMC(6)` | Hierarchy Level |
+| `NodeType` |  | |  |  | `CHAR(1)` | Hierarchy node type |

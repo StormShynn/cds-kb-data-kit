@@ -34,16 +34,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `KeyDate` | `DATS(8)` | Key Date |
-| `Counterparty` | `CHAR(10)` | Counterparty Number |
-| `BankGroup` | `CHAR(10)` | Bank Group ID |
-| `FinTransProductGroup` | `CHAR(4)` | Product Group for Financial Transaction |
-| `TransactionCurrency` | `CUKY(5)` | Valuation Currency |
-| `AmountInTransactionCurrency` | `CURR(18)` |  |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `FinTransAmtInDisplayCurrency` | `CURR(17)` | Fin Trans Amt in Display Crcy |
-| `ExchangeRateType` | `CHAR(4)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `KeyDate` |  | |  |  | `DATS(8)` | Key Date |
+| `Counterparty` |  | |  |  | `CHAR(10)` | Counterparty Number |
+| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
+| `FinTransProductGroup` |  | |  |  | `CHAR(4)` | Product Group for Financial Transaction |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Valuation Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(18)` |  |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `FinTransAmtInDisplayCurrency` |  | |  |  | `CURR(17)` | Fin Trans Amt in Display Crcy |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` |  |

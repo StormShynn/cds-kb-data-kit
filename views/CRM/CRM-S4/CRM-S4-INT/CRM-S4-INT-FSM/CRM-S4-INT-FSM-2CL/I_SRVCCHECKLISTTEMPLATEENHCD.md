@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ServiceChecklistTemplate` | `CHAR(10)` | Template ID |
-| `SrvcChklstTmplStatus` | `CHAR(1)` | Template Status |
-| `SrvcChklstTmplCategory` | `CHAR(10)` | Checklist Template Category ID |
-| `SrvcChklstCreationDateTime` | `DEC(21)` | Created At |
-| `SrvcChklstCreatedByUser` | `CHAR(12)` | Created By |
-| `SrvcChklstChangedDateTime` | `DEC(21)` | Last Changed At |
-| `SrvcChklstChangedByUser` | `CHAR(12)` | Last Changed By |
-| `FSMChecklistTemplateUUID` | `RAW(16)` | FSM Template ID |
-| `FSMChecklistCategoryUUID` | `RAW(16)` | FSM Category ID |
-| `SrvcChklstTmplVersion` | `INT1(3)` | Version |
-| `SrvcChklstLanguage` | `LANG(1)` | Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ServiceChecklistTemplate` |  | |  |  | `CHAR(10)` | Template ID |
+| `SrvcChklstTmplStatus` |  | |  |  | `CHAR(1)` | Template Status |
+| `SrvcChklstTmplCategory` |  | |  |  | `CHAR(10)` | Checklist Template Category ID |
+| `SrvcChklstCreationDateTime` |  | |  |  | `DEC(21)` | Created At |
+| `SrvcChklstCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `SrvcChklstChangedDateTime` |  | |  |  | `DEC(21)` | Last Changed At |
+| `SrvcChklstChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `FSMChecklistTemplateUUID` |  | |  |  | `RAW(16)` | FSM Template ID |
+| `FSMChecklistCategoryUUID` |  | |  |  | `RAW(16)` | FSM Category ID |
+| `SrvcChklstTmplVersion` |  | |  |  | `INT1(3)` | Version |
+| `SrvcChklstLanguage` |  | |  |  | `LANG(1)` | Language |

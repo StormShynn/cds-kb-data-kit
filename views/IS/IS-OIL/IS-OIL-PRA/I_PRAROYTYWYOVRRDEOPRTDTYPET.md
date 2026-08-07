@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OverrideOwnerOperatedType` | `CHAR(1)` | Royalty 2.0 - WY - Override Operated Flag |
-| `Language` | `LANG(1)` | Language Key |
-| `OverrideOwnrOperatedTypeName` | `CHAR(60)` | Wyoming Override Operated Flag Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OverrideOwnerOperatedType` |  | |  |  | `CHAR(1)` | Royalty 2.0 - WY - Override Operated Flag |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `OverrideOwnrOperatedTypeName` |  | |  |  | `CHAR(60)` | Wyoming Override Operated Flag Name |

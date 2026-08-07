@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyChangeProcessID` | `CHAR(20)` | Processing |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyChangeProcessID` |  | |  |  | `CHAR(20)` | Processing |

@@ -35,14 +35,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConcurSystemKey` | `INT1(3)` | System Key |
-| `ConcurDocumentType` | `CHAR(2)` | Posting Document Type |
-| `ConcurDocumentID` | `CHAR(32)` | Concur Document ID |
-| `ConcurDocumentRevisionNumber` | `CHAR(3)` | Concur Document Revision Number |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `JournalEntry` | `CHAR(10)` | Document Number of an Accounting Document |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `PostingDate` | `DATS(8)` | Posting Date in the Document |
-| `AccDocIsPrimaryForConcurDoc` | `CHAR(1)` | Concur Document - Primary document |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConcurSystemKey` |  | |  |  | `INT1(3)` | System Key |
+| `ConcurDocumentType` |  | |  |  | `CHAR(2)` | Posting Document Type |
+| `ConcurDocumentID` |  | |  |  | `CHAR(32)` | Concur Document ID |
+| `ConcurDocumentRevisionNumber` |  | |  |  | `CHAR(3)` | Concur Document Revision Number |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `JournalEntry` |  | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `AccDocIsPrimaryForConcurDoc` |  | |  |  | `CHAR(1)` | Concur Document - Primary document |

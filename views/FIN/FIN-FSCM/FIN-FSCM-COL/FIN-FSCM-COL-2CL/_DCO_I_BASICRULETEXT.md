@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoAcctPrioznBasicRule` | `CHAR(10)` | Basic Rule |
-| `Language` | `LANG(1)` | Language Key |
-| `DCoAcctPrioznBasicRuleName` | `CHAR(80)` | Basic Rule Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoAcctPrioznBasicRule` |  | |  |  | `CHAR(10)` | Basic Rule |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DCoAcctPrioznBasicRuleName` |  | |  |  | `CHAR(80)` | Basic Rule Name |

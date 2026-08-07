@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMMeansOfTransportType` | `CHAR(10)` | Means of Transport |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMMeansOfTransportType` |  | |  |  | `CHAR(10)` | Means of Transport |

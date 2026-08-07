@@ -34,15 +34,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SequenceNumber` | `NUMC(3)` | Sequence Number (Three Characters) |
-| `ProductCategory` | `CHAR(2)` | Material Category |
-| `StrucdArticleExplsnRlvtAppl` | `NUMC(3)` | Transaction Key |
-| `PlantCategory` | `CHAR(1)` | Plant category |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `Site` | `CHAR(4)` | Plant |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `Product` | `CHAR(40)` | Structured Material |
-| `StructuredArticleExplsnType` | `CHAR(1)` | Indicates splitting type of a structured material |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SequenceNumber` |  | |  |  | `NUMC(3)` | Sequence Number (Three Characters) |
+| `ProductCategory` |  | |  |  | `CHAR(2)` | Material Category |
+| `StrucdArticleExplsnRlvtAppl` |  | |  |  | `NUMC(3)` | Transaction Key |
+| `PlantCategory` |  | |  |  | `CHAR(1)` | Plant category |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Site` |  | |  |  | `CHAR(4)` | Plant |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `Product` |  | |  |  | `CHAR(40)` | Structured Material |
+| `StructuredArticleExplsnType` |  | |  |  | `CHAR(1)` | Indicates splitting type of a structured material |

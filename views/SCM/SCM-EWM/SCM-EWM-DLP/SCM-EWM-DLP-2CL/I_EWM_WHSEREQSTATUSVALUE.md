@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouseRequestStatusType` | `CHAR(5)` | Status Type |
-| `EWMWarehouseRequestStatus` | `CHAR(1)` | Status Value |
-| `EWMWhseReqCustomRefStatus` | `CHAR(5)` | Custom reference to ISTAT in TJ02T |
-| `EWMWhseReqSystemRefStatus` | `CHAR(5)` | System reference to ISTAT in TJ02T |
-| `EWMWhseReqReferenceStatus` | `CHAR(5)` | Reference to ISTAT in TJ02T |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouseRequestStatusType` |  | |  |  | `CHAR(5)` | Status Type |
+| `EWMWarehouseRequestStatus` |  | |  |  | `CHAR(1)` | Status Value |
+| `EWMWhseReqCustomRefStatus` |  | |  |  | `CHAR(5)` | Custom reference to ISTAT in TJ02T |
+| `EWMWhseReqSystemRefStatus` |  | |  |  | `CHAR(5)` | System reference to ISTAT in TJ02T |
+| `EWMWhseReqReferenceStatus` |  | |  |  | `CHAR(5)` | Reference to ISTAT in TJ02T |

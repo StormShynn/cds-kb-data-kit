@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgencyReportType` | `CHAR(1)` | Proc 2.0 - Amended/Current Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgencyReportType` |  | |  |  | `CHAR(1)` | Proc 2.0 - Amended/Current Indicator |

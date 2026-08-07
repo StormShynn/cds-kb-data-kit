@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `Plant` | `CHAR(4)` | Plant |
-| `LogisticalRoundingProfile` | `CHAR(4)` | Logistical Rounding Profile |
-| `LogisticalRoundingProfileName` | `CHAR(40)` | Text, 40 Characters Long |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `LogisticalRoundingProfile` |  | |  |  | `CHAR(4)` | Logistical Rounding Profile |
+| `LogisticalRoundingProfileName` |  | |  |  | `CHAR(40)` | Text, 40 Characters Long |

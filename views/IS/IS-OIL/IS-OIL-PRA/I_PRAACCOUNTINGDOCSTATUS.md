@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AccountingDocumentStatus` | `CHAR(2)` | Accounting Document Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AccountingDocumentStatus` |  | |  |  | `CHAR(2)` | Accounting Document Status |

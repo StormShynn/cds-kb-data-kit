@@ -36,18 +36,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CABillgDocument` | `CHAR(12)` | Number of Billing Document |
-| `CABillgDocTaxItem` | `NUMC(8)` | Sequential Number of Tax Item |
-| `CABillgTaxGroup` | `CHAR(8)` | Grouping of Tax Items |
-| `CATaxAmount` | `CURR(13)` | Tax Amount |
-| `CABillgCurrency` | `CUKY(5)` | Currency of Billing Document |
-| `CATaxBaseAmount` | `CURR(13)` | Tax Base Amount |
-| `CATaxDate` | `DATS(8)` | Tax Date |
-| `CABillgTaxItemExternalSystem` | `CHAR(10)` | Tax Item Number in External System |
-| `CABillgDocItemIsReversal` | `CHAR(1)` | Reversal Item |
-| `CATaxRateInPercent` | `DEC(6)` | Tax Percentage |
-| `CATransactionKeyAccountDetn` | `CHAR(3)` | Transaction Key for Account Determination |
-| `CAConditionType` | `CHAR(4)` | Condition Type |
-| `CABillgGroupingSourceItems` | `CHAR(8)` | Grouping of Source Items |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CABillgDocument` |  | |  |  | `CHAR(12)` | Number of Billing Document |
+| `CABillgDocTaxItem` |  | |  |  | `NUMC(8)` | Sequential Number of Tax Item |
+| `CABillgTaxGroup` |  | |  |  | `CHAR(8)` | Grouping of Tax Items |
+| `CATaxAmount` |  | |  |  | `CURR(13)` | Tax Amount |
+| `CABillgCurrency` |  | |  |  | `CUKY(5)` | Currency of Billing Document |
+| `CATaxBaseAmount` |  | |  |  | `CURR(13)` | Tax Base Amount |
+| `CATaxDate` |  | |  |  | `DATS(8)` | Tax Date |
+| `CABillgTaxItemExternalSystem` |  | |  |  | `CHAR(10)` | Tax Item Number in External System |
+| `CABillgDocItemIsReversal` |  | |  |  | `CHAR(1)` | Reversal Item |
+| `CATaxRateInPercent` |  | |  |  | `DEC(6)` | Tax Percentage |
+| `CATransactionKeyAccountDetn` |  | |  |  | `CHAR(3)` | Transaction Key for Account Determination |
+| `CAConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
+| `CABillgGroupingSourceItems` |  | |  |  | `CHAR(8)` | Grouping of Source Items |

@@ -31,21 +31,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `BusinessPartnerUUID` | `RAW(16)` | Business Partner GUID |
-| `BusinessPartnerName` | `CHAR(40)` | Name 1 of organization |
-| `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
-| `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
-| `DataControllerSet` | `CHAR(1)` | BP: Data Controller Set Flag |
-| `DataController1` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController2` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController3` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController4` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController5` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController6` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController7` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController8` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController9` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController10` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `BusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner GUID |
+| `BusinessPartnerName` |  | |  |  | `CHAR(40)` | Name 1 of organization |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |

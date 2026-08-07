@@ -30,7 +30,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanChgPointerChangeCat` | `CHAR(4)` | Change Category |
-| `LoanChgPointerChgSubCat` | `CHAR(4)` | Change Sub-Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanChgPointerChangeCat` |  | |  |  | `CHAR(4)` | Change Category |
+| `LoanChgPointerChgSubCat` |  | |  |  | `CHAR(4)` | Change Sub-Category |

@@ -34,11 +34,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TechnicalObject` | `CHAR(40)` | Technical Object |
-| `TechObjIsEquipOrFuncnlLoc` | `CHAR(20)` | Technical Object Type |
-| `MaintObjectLocAcctAssgmtNmbr` | `CHAR(12)` | Location and account assignment for technical object |
-| `AuthorizationGroup` | `CHAR(4)` | Technical Object Authorization Group |
-| `MaintenancePlannerGroup` | `CHAR(3)` | Planner Group for Customer Service and Plant Maintenance |
-| `MaintenancePlanningPlant` | `CHAR(4)` | Maintenance Planning Plant |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TechnicalObject` |  | |  |  | `CHAR(40)` | Technical Object |
+| `TechObjIsEquipOrFuncnlLoc` |  | |  |  | `CHAR(20)` | Technical Object Type |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  | `CHAR(12)` | Location and account assignment for technical object |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Technical Object Authorization Group |
+| `MaintenancePlannerGroup` |  | |  |  | `CHAR(3)` | Planner Group for Customer Service and Plant Maintenance |
+| `MaintenancePlanningPlant` |  | |  |  | `CHAR(4)` | Maintenance Planning Plant |

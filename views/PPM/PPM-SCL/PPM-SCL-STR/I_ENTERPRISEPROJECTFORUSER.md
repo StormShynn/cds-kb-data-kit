@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProjectUUID` | `RAW(16)` | Entity Guid |
-| `ProjectCategory` | `CHAR(1)` | Project Category |
-| `EnterpriseProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `EntProjectIsConfidential` | `CHAR(1)` | Enterprise Project Is Confidential |
-| `UserID` | `CHAR(12)` | User ID |
-| `IsMyProject` | `CHAR(1)` | User Involvement in Project |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProjectUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `ProjectCategory` |  | |  |  | `CHAR(1)` | Project Category |
+| `EnterpriseProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `EntProjectIsConfidential` |  | |  |  | `CHAR(1)` | Enterprise Project Is Confidential |
+| `UserID` |  | |  |  | `CHAR(12)` | User ID |
+| `IsMyProject` |  | |  |  | `CHAR(1)` | User Involvement in Project |

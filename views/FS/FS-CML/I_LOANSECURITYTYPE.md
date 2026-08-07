@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanSecurityType` | `NUMC(2)` | Borrower's Note Loan Security Type |
-| `LoanBorrowerNoteIsExist` | `CHAR(1)` | Indicator: Display in PRF3 repayment list |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanSecurityType` |  | |  |  | `NUMC(2)` | Borrower's Note Loan Security Type |
+| `LoanBorrowerNoteIsExist` |  | |  |  | `CHAR(1)` | Indicator: Display in PRF3 repayment list |

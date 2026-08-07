@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `TrdClassfctnNmbrSchm` | `CHAR(10)` | Trade Classification Numbering Scheme |
-| `TrdClassfctnNmbrSchmName` | `CHAR(60)` | Trade Classification Numbering Scheme Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TrdClassfctnNmbrSchm` |  | |  |  | `CHAR(10)` | Trade Classification Numbering Scheme |
+| `TrdClassfctnNmbrSchmName` |  | |  |  | `CHAR(60)` | Trade Classification Numbering Scheme Description |

@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementTermnRightType` | `CHAR(6)` | Termination Right Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `AgreementTermnRightTypeText` | `CHAR(40)` | Name of Termination Right Type in the Specified Language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementTermnRightType` |  | |  |  | `CHAR(6)` | Termination Right Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `AgreementTermnRightTypeText` |  | |  |  | `CHAR(40)` | Name of Termination Right Type in the Specified Language |

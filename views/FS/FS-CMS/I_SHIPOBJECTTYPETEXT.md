@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ShipObjectType` | `CHAR(6)` | Ship Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `ShipObjectTypeText` | `CHAR(40)` | Ship type name in a specified language |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ShipObjectType` |  | |  |  | `CHAR(6)` | Ship Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `ShipObjectTypeText` |  | |  |  | `CHAR(40)` | Ship type name in a specified language |

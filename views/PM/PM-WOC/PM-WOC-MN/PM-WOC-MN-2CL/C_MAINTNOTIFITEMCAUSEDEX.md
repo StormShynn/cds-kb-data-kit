@@ -33,21 +33,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MaintenanceNotification` | `CHAR(12)` | Notification Number |
-| `MaintenanceNotificationItem` | `NUMC(4)` | Item Number in Item Record |
-| `MaintenanceNotificationCause` | `NUMC(4)` | Sequential Number for Cause |
-| `MaintNotifCauseCodeCatalog` | `CHAR(1)` | Catalog Type - Causes |
-| `MaintNotifCauseCodeGroup` | `CHAR(8)` | Code Group - Causes |
-| `MaintNotificationCauseCode` | `CHAR(4)` | Cause Code |
-| `MaintNotifCauseText` | `CHAR(40)` | Cause Text |
-| `MaintNotificationRootCause` | `CHAR(1)` | Root Cause |
-| `IsDeleted` | `CHAR(1)` | Delete Data Record |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreationTime` | `TIMS(6)` | Time at Which Record Was Added |
-| `LastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `LastChangeDateTime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `LastChangeTime` | `TIMS(6)` | Time of Change |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MaintenanceNotification` |  | |  |  | `CHAR(12)` | Notification Number |
+| `MaintenanceNotificationItem` |  | |  |  | `NUMC(4)` | Item Number in Item Record |
+| `MaintenanceNotificationCause` |  | |  |  | `NUMC(4)` | Sequential Number for Cause |
+| `MaintNotifCauseCodeCatalog` |  | |  |  | `CHAR(1)` | Catalog Type - Causes |
+| `MaintNotifCauseCodeGroup` |  | |  |  | `CHAR(8)` | Code Group - Causes |
+| `MaintNotificationCauseCode` |  | |  |  | `CHAR(4)` | Cause Code |
+| `MaintNotifCauseText` |  | |  |  | `CHAR(40)` | Cause Text |
+| `MaintNotificationRootCause` |  | |  |  | `CHAR(1)` | Root Cause |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Delete Data Record |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at Which Record Was Added |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time of Change |

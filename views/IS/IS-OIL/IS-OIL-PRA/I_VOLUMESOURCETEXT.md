@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `VolumeSource` | `CHAR(1)` | Volume Source Code |
-| `Language` | `LANG(1)` | Language Key |
-| `VolumeSourceName` | `CHAR(50)` | Volume source description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `VolumeSource` |  | |  |  | `CHAR(1)` | Volume Source Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `VolumeSourceName` |  | |  |  | `CHAR(50)` | Volume source description |

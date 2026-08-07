@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AllocationFrequency` | `CHAR(1)` | Frequency |
-| `Language` | `LANG(1)` | Language Key |
-| `AllocationFrequencyName` | `CHAR(60)` | Allocation Frequency Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AllocationFrequency` |  | |  |  | `CHAR(1)` | Frequency |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `AllocationFrequencyName` |  | |  |  | `CHAR(60)` | Allocation Frequency Name |

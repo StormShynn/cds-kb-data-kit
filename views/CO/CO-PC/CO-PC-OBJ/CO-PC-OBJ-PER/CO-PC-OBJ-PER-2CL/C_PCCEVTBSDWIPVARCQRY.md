@@ -38,25 +38,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `OrderID` | `CHAR(12)` | Order Number |
-| `OrderType` | `CHAR(4)` | Order Type |
-| `OrderCategory` | `NUMC(2)` | Order Category |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `Plant` | `CHAR(4)` | Plant |
-| `ProducedProduct` | `CHAR(40)` | Material Number for Order |
-| `OriginProduct` | `CHAR(40)` | Origin Product |
-| `OriginCostCenter` | `CHAR(10)` | Origin Cost Center |
-| `OriginCostCtrActivityType` | `CHAR(6)` | Origin Cost Center Activity Type |
-| `DisplayCurrency` | `CUKY(5)` |  |
-| `InptPrVarcAmtInDspCrcy` | `DECF(34)` |  |
-| `InptQtyVarcAmtInDspCrcy` | `DECF(34)` |  |
-| `RsceUsgeVarcAmtInDspCrcy` | `DECF(34)` |  |
-| `RmngVarcAmtInDspCrcy` | `DECF(34)` |  |
-| `CostVarianceInDspCrcy` | `DECF(34)` |  |
-| `WIPCostInDspCrcy` | `DECF(34)` |  |
-| `OutpPrVarcAmtInDspCrcy` | `DECF(34)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order Number |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ProducedProduct` |  | |  |  | `CHAR(40)` | Material Number for Order |
+| `OriginProduct` |  | |  |  | `CHAR(40)` | Origin Product |
+| `OriginCostCenter` |  | |  |  | `CHAR(10)` | Origin Cost Center |
+| `OriginCostCtrActivityType` |  | |  |  | `CHAR(6)` | Origin Cost Center Activity Type |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` |  |
+| `InptPrVarcAmtInDspCrcy` |  | |  |  | `DECF(34)` |  |
+| `InptQtyVarcAmtInDspCrcy` |  | |  |  | `DECF(34)` |  |
+| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  | `DECF(34)` |  |
+| `RmngVarcAmtInDspCrcy` |  | |  |  | `DECF(34)` |  |
+| `CostVarianceInDspCrcy` |  | |  |  | `DECF(34)` |  |
+| `WIPCostInDspCrcy` |  | |  |  | `DECF(34)` |  |
+| `OutpPrVarcAmtInDspCrcy` |  | |  |  | `DECF(34)` |  |

@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyCollectionType` | `CHAR(1)` | Collection Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyCollectionType` |  | |  |  | `CHAR(1)` | Collection Type |

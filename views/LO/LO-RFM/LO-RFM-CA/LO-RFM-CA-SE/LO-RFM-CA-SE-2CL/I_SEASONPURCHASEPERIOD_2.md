@@ -35,23 +35,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConditionRecord` | `CHAR(10)` | Condition Record Number for Seasons |
-| `ProductSeasonYear` | `CHAR(4)` | Season Year |
-| `ProductSeason` | `CHAR(10)` | Season |
-| `ProductCollection` | `CHAR(10)` | Fashion Collection |
-| `ProductTheme` | `CHAR(10)` | Fashion Theme |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `PurchasingGroup` | `CHAR(3)` | Purchasing Group |
-| `Supplier` | `CHAR(10)` | Supplier's Account Number |
-| `DeliveryStartDate` | `DATS(8)` | Delivery Date From |
-| `DeliveryEndDate` | `DATS(8)` | Delivery Date To |
-| `OrderStartDate` | `DATS(8)` | Order Date From |
-| `OrderEndDate` | `DATS(8)` | Order Date To |
-| `CreatedByUser` | `CHAR(12)` | User Who Created the Object |
-| `CreationDate` | `DATS(8)` | Date on Which the Object Was Created |
-| `CreationTime` | `TIMS(6)` | Time at Which the Object Was Created |
-| `LastChangedByUser` | `CHAR(12)` | Last User to Change the Object |
-| `LastChangeDate` | `DATS(8)` | Date on Which the Object Was Last Changed |
-| `LastChangeTime` | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConditionRecord` |  | |  |  | `CHAR(10)` | Condition Record Number for Seasons |
+| `ProductSeasonYear` |  | |  |  | `CHAR(4)` | Season Year |
+| `ProductSeason` |  | |  |  | `CHAR(10)` | Season |
+| `ProductCollection` |  | |  |  | `CHAR(10)` | Fashion Collection |
+| `ProductTheme` |  | |  |  | `CHAR(10)` | Fashion Theme |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier's Account Number |
+| `DeliveryStartDate` |  | |  |  | `DATS(8)` | Delivery Date From |
+| `DeliveryEndDate` |  | |  |  | `DATS(8)` | Delivery Date To |
+| `OrderStartDate` |  | |  |  | `DATS(8)` | Order Date From |
+| `OrderEndDate` |  | |  |  | `DATS(8)` | Order Date To |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Who Created the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Created |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Created |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last User to Change the Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date on Which the Object Was Last Changed |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Last Changed |

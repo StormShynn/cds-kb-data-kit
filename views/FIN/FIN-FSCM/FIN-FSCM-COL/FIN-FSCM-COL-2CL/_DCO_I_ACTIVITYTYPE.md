@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DCoActivityType` | `CHAR(2)` | Activity Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DCoActivityType` |  | |  |  | `CHAR(2)` | Activity Type |

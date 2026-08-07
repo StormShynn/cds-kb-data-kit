@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusVolFldCombnAllwdSign` | `CHAR(1)` | Including / Excluding Control for BV Selection Criteria |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolFldCombnAllwdSign` |  | |  |  | `CHAR(1)` | Including / Excluding Control for BV Selection Criteria |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

@@ -31,15 +31,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PublicHolidayCode` | `CHAR(3)` | Public holiday key |
-| `PublicHolidayRule` | `CHAR(1)` | Holiday rule |
-| `PublicHolidayMonth` | `NUMC(2)` | Month for holiday calculation |
-| `PublicHolidayDayOfMonth` | `NUMC(2)` | Day of month for public holiday calculation |
-| `PublicHolidayWeekday` | `NUMC(1)` | Code:Day for public holiday calculation |
-| `DistanceFromEasterInDays` | `DEC(3)` | Distance of public holiday from Easter |
-| `ReligiousDenomination` | `CHAR(2)` | Calendar religion key |
-| `PublicHolidayClass` | `CHAR(1)` | Holiday class |
-| `PublicHolidayGuaranteeRule` | `CHAR(1)` | Public holiday guaranteed flag |
-| `PublicHolidaySortValue` | `CHAR(3)` | Sort field for public holidays |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PublicHolidayCode` |  | |  |  | `CHAR(3)` | Public holiday key |
+| `PublicHolidayRule` |  | |  |  | `CHAR(1)` | Holiday rule |
+| `PublicHolidayMonth` |  | |  |  | `NUMC(2)` | Month for holiday calculation |
+| `PublicHolidayDayOfMonth` |  | |  |  | `NUMC(2)` | Day of month for public holiday calculation |
+| `PublicHolidayWeekday` |  | |  |  | `NUMC(1)` | Code:Day for public holiday calculation |
+| `DistanceFromEasterInDays` |  | |  |  | `DEC(3)` | Distance of public holiday from Easter |
+| `ReligiousDenomination` |  | |  |  | `CHAR(2)` | Calendar religion key |
+| `PublicHolidayClass` |  | |  |  | `CHAR(1)` | Holiday class |
+| `PublicHolidayGuaranteeRule` |  | |  |  | `CHAR(1)` | Public holiday guaranteed flag |
+| `PublicHolidaySortValue` |  | |  |  | `CHAR(3)` | Sort field for public holidays |

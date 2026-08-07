@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentInjuryIllnLogType` | `CHAR(50)` | Injury/Illness Log Entry Type |
-| `Language` | `LANG(1)` | Language Key |
-| `IncidentInjuryIllnLogTypeText` | `CHAR(40)` | Description (Extra Short) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentInjuryIllnLogType` |  | |  |  | `CHAR(50)` | Injury/Illness Log Entry Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IncidentInjuryIllnLogTypeText` |  | |  |  | `CHAR(40)` | Description (Extra Short) |

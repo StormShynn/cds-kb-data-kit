@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtBlockingReason` | `CHAR(2)` | Reason for Settlement Block |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtBlockingReason` |  | |  |  | `CHAR(2)` | Reason for Settlement Block |

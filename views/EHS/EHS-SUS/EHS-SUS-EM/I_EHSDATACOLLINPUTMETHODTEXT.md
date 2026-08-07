@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSDataCollectionInputMethod` | `CHAR(2)` | Data Collection Input Method |
-| `Language` | `LANG(1)` | Language Key |
-| `EHSDataCollInputMethodText` | `CHAR(60)` | Data Collection Input Method Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSDataCollectionInputMethod` |  | |  |  | `CHAR(2)` | Data Collection Input Method |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EHSDataCollInputMethodText` |  | |  |  | `CHAR(60)` | Data Collection Input Method Description |

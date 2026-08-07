@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BookingReversalType` | `CHAR(1)` | Booking/Reversal Indicator |
-| `Language` | `LANG(1)` | Language Key |
-| `BookingReversalTypeName` | `CHAR(60)` | Booking Reversal Indicator Type Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BookingReversalType` |  | |  |  | `CHAR(1)` | Booking/Reversal Indicator |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BookingReversalTypeName` |  | |  |  | `CHAR(60)` | Booking Reversal Indicator Type Name |

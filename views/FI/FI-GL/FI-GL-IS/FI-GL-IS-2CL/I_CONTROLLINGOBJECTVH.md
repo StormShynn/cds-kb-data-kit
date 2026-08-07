@@ -32,16 +32,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ControllingObject` | `CHAR(22)` | Object Number |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `OrderID` | `CHAR(12)` | Order Number |
-| `BusinessProcess` | `CHAR(12)` | Business Process |
-| `CostCtrActivityType` | `CHAR(6)` | Activity Type |
-| `SalesDocument` | `CHAR(10)` | Sales Document |
-| `SalesDocumentItem` | `NUMC(6)` | Sales Document Item |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `WBSElementInternalID` | `NUMC(8)` | WBS Element Internal ID |
-| `ProjectInternalID` | `NUMC(8)` | Project Internal ID |
-| `ControllingObjectType` | `CHAR(2)` | Object Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControllingObject` |  | |  |  | `CHAR(22)` | Object Number |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order Number |
+| `BusinessProcess` |  | |  |  | `CHAR(12)` | Business Process |
+| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
+| `SalesDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
+| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project Internal ID |
+| `ControllingObjectType` |  | |  |  | `CHAR(2)` | Object Type |

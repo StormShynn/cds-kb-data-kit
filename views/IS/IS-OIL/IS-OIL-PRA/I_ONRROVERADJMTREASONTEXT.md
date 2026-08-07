@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRROverrideAdjmtReason` | `NUMC(2)` | ONRR-2014 - Override Adjustment Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ONRROverrideAdjmtReasonName` | `CHAR(60)` | ONRR Override Adjustment Reason Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRROverrideAdjmtReason` |  | |  |  | `NUMC(2)` | ONRR-2014 - Override Adjustment Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ONRROverrideAdjmtReasonName` |  | |  |  | `CHAR(60)` | ONRR Override Adjustment Reason Name |

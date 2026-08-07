@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ControlRecipeStatus` | `CHAR(5)` | Control Recipe Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ControlRecipeStatus` |  | |  |  | `CHAR(5)` | Control Recipe Status |

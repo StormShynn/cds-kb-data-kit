@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrProcVar` | `CHAR(4)` | Condition Contract Process Variant |
-| `PurchasingOrganization` | `CHAR(4)` | Purchasing Organization |
-| `CompanyCode` | `CHAR(4)` | Company Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrProcVar` |  | |  |  | `CHAR(4)` | Condition Contract Process Variant |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |

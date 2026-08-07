@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LossAllowanceLayout` | `CHAR(30)` | Key Figure Layout |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LossAllowanceLayout` |  | |  |  | `CHAR(30)` | Key Figure Layout |

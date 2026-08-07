@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsignmentControl` | `CHAR(1)` | Consignment Control |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsignmentControl` |  | |  |  | `CHAR(1)` | Consignment Control |

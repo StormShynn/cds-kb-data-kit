@@ -34,10 +34,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TreasuryReferenceEntity` | `CHAR(15)` | Reference Entity |
-| `CreditSpreadID` | `CHAR(15)` | Credit Spread ID |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `SpreadQuotationType` | `NUMC(1)` | Quotation Type |
-| `CreditSpreadValue` | `DEC(17)` | Credit Spread Value in Basis Points |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TreasuryReferenceEntity` |  | |  |  | `CHAR(15)` | Reference Entity |
+| `CreditSpreadID` |  | |  |  | `CHAR(15)` | Credit Spread ID |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `SpreadQuotationType` |  | |  |  | `NUMC(1)` | Quotation Type |
+| `CreditSpreadValue` |  | |  |  | `DEC(17)` | Credit Spread Value in Basis Points |

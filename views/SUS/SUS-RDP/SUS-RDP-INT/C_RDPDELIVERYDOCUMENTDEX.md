@@ -34,21 +34,21 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DeliveryDocument` | `CHAR(10)` | Delivery |
-| `DeliveryDocumentType` | `CHAR(4)` | Delivery Type |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `ShipToParty` | `CHAR(10)` | Ship-to Party |
-| `ShipToPartyAddressID` | `CHAR(10)` | Address Number |
-| `ShipToPartyCountry` | `CHAR(3)` | Country/Region Key |
-| `ShipToPartyRegion` | `CHAR(3)` | Region (State, Province, County) |
-| `ActualGoodsMovementDate` | `DATS(8)` | Actual Goods Movement Date |
-| `OverallSDProcessStatus` | `CHAR(1)` | Overall Processing Status (Header/All Items) |
-| `OverallGoodsMovementStatus` | `CHAR(1)` | Goods Movement Status (All Items) |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreationTime` | `TIMS(6)` | Entry time |
-| `LastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `DeletionIndicator` | `CHAR(1)` | Document deletion indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DeliveryDocument` |  | |  |  | `CHAR(10)` | Delivery |
+| `DeliveryDocumentType` |  | |  |  | `CHAR(4)` | Delivery Type |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
+| `ShipToPartyAddressID` |  | |  |  | `CHAR(10)` | Address Number |
+| `ShipToPartyCountry` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `ShipToPartyRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ActualGoodsMovementDate` |  | |  |  | `DATS(8)` | Actual Goods Movement Date |
+| `OverallSDProcessStatus` |  | |  |  | `CHAR(1)` | Overall Processing Status (Header/All Items) |
+| `OverallGoodsMovementStatus` |  | |  |  | `CHAR(1)` | Goods Movement Status (All Items) |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Entry time |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `DeletionIndicator` |  | |  |  | `CHAR(1)` | Document deletion indicator |

@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdPlanningStatus` | `CHAR(2)` | Planning Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdPlanningStatus` |  | |  |  | `CHAR(2)` | Planning Status |

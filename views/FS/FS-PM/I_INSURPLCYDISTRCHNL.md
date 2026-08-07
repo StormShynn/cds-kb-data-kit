@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InsurPlcyDistrChnl` | `NUMC(3)` | Distribution Channel |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InsurPlcyDistrChnl` |  | |  |  | `NUMC(3)` | Distribution Channel |

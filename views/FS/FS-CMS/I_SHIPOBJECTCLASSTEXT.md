@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ShipObjectClass` | `CHAR(2)` | Specifies whether the Ship is Sea Ship or Inland Ship |
-| `ShipObjectClassText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ShipObjectClass` |  | |  |  | `CHAR(2)` | Specifies whether the Ship is Sea Ship or Inland Ship |
+| `ShipObjectClassText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

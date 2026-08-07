@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AdditionalMasterDataHierarchy` | `CHAR(40)` | Profit Center Hierarchy |
-| `ValidityEndDate` | `DATS(8)` | Validity End Date |
-| `ValidityStartDate` | `DATS(8)` | Validity Start Date |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AdditionalMasterDataHierarchy` |  | |  |  | `CHAR(40)` | Profit Center Hierarchy |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |

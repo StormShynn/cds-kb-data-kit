@@ -35,13 +35,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankAccountInternalID` | `NUMC(10)` | Bank Account Technical ID |
-| `Bank` | `CHAR(15)` | Bank Key |
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BankGroup` | `CHAR(10)` | Bank Group ID |
-| `CreditRating` | `CHAR(3)` | Rating |
-| `BankInBankGroup` | `CHAR(10)` | Bank In Bank Group |
-| `NumberOfBankAccounts` | `INT4(10)` | Number of Bank Accounts |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankAccountInternalID` |  | |  |  | `NUMC(10)` | Bank Account Technical ID |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Key |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BankGroup` |  | |  |  | `CHAR(10)` | Bank Group ID |
+| `CreditRating` |  | |  |  | `CHAR(3)` | Rating |
+| `BankInBankGroup` |  | |  |  | `CHAR(10)` | Bank In Bank Group |
+| `NumberOfBankAccounts` |  | |  |  | `INT4(10)` | Number of Bank Accounts |

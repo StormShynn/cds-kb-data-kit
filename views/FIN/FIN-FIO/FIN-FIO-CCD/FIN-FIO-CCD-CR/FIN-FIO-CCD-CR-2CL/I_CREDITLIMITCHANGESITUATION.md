@@ -33,16 +33,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CrdtMgmtBPChangeUUID` | `CHAR(32)` | GUID of a Master Data Change |
-| `CrdtMgmtBPChangeDateTime` | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `CreditSegment` | `CHAR(10)` | Credit Segment |
-| `NewCreditLimitAmount` | `CURR(15)` | Credit Limit (New) |
-| `OldCreditLimitAmount` | `CURR(15)` | Credit Limit (Old) |
-| `CreditSegmentCurrency` | `CUKY(5)` | Credit Segment Currency |
-| `CreditLimitChangeInPercent` | `DEC(10)` | Credit Limit Change (in Percent) |
-| `CreditLimitAdjustmentAmount` | `CURR(15)` | Amount Change to Credit Limit |
-| `CreditScoreAndLimitCalcRule` | `CHAR(10)` | Rule for Calculating Score and Credit Limit |
-| `CrdtMgmtBusinessPartnerGroup` | `NUMC(4)` | Customer Credit Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CrdtMgmtBPChangeUUID` |  | |  |  | `CHAR(32)` | GUID of a Master Data Change |
+| `CrdtMgmtBPChangeDateTime` |  | |  |  | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CreditSegment` |  | |  |  | `CHAR(10)` | Credit Segment |
+| `NewCreditLimitAmount` |  | |  |  | `CURR(15)` | Credit Limit (New) |
+| `OldCreditLimitAmount` |  | |  |  | `CURR(15)` | Credit Limit (Old) |
+| `CreditSegmentCurrency` |  | |  |  | `CUKY(5)` | Credit Segment Currency |
+| `CreditLimitChangeInPercent` |  | |  |  | `DEC(10)` | Credit Limit Change (in Percent) |
+| `CreditLimitAdjustmentAmount` |  | |  |  | `CURR(15)` | Amount Change to Credit Limit |
+| `CreditScoreAndLimitCalcRule` |  | |  |  | `CHAR(10)` | Rule for Calculating Score and Credit Limit |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |

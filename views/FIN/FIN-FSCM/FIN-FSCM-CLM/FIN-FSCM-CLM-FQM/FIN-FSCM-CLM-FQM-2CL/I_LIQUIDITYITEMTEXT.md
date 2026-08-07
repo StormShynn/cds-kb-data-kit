@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidityItem` | `CHAR(16)` | Liquidity Item |
-| `Language` | `LANG(1)` | Language Key |
-| `LiquidityItemName` | `CHAR(30)` | Liquidity Item Name |
-| `LongText` | `CHAR(60)` | Liquidity Item Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidityItem` |  | |  |  | `CHAR(16)` | Liquidity Item |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LiquidityItemName` |  | |  |  | `CHAR(30)` | Liquidity Item Name |
+| `LongText` |  | |  |  | `CHAR(60)` | Liquidity Item Description |

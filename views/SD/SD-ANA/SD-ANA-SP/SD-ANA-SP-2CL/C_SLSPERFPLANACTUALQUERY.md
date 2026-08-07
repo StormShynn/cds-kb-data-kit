@@ -44,61 +44,61 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SalesPlanItemUUID` | `RAW(16)` | Sales Plan Item UUID |
-| `SDDocument` | `CHAR(10)` | Sales and Distribution Document Number |
-| `SDDocumentItem` | `NUMC(6)` | Sales and Distribution Document Item |
-| `SalesDocumentType` | `CHAR(4)` | Sales Document Type |
-| `BillingDocumentType` | `CHAR(4)` | Billing Type |
-| `SalesPlanPurpose` | `CHAR(1)` | Purposes of Sales Planning |
-| `SalesPlanPeriodName` | `CHAR(20)` | Sales Plan Period |
-| `SalesPerformanceDate` | `DATS(8)` | Sales Performance Date |
-| `SalesPerformanceYearMonth` | `NUMC(6)` | Month of Sales Performance |
-| `SlsPerformanceYearQuarter` | `NUMC(5)` | Quarter of Sales Performance |
-| `SalesPerformanceYear` | `NUMC(4)` | Year of Sales Performance |
-| `SalesOrganization` | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` | `CHAR(2)` | Distribution Channel |
-| `OrganizationDivision` | `CHAR(2)` | Organization Division |
-| `SalesOffice` | `CHAR(4)` | Sales Office |
-| `SalesGroup` | `CHAR(3)` | Sales Group |
-| `SalesDistrict` | `CHAR(6)` | Sales District |
-| `SoldToParty` | `CHAR(10)` | Sold-to Party |
-| `CustomerGroup` | `CHAR(2)` | Customer Group |
-| `ShipToParty` | `CHAR(10)` | Ship-to Party |
-| `BillToParty` | `CHAR(10)` | Bill-to Party |
-| `PayerParty` | `CHAR(10)` | Payer |
-| `AdditionalCustomerGroup1` | `CHAR(3)` | Customer Group 1 |
-| `AdditionalCustomerGroup2` | `CHAR(3)` | Customer Group 2 |
-| `AdditionalCustomerGroup3` | `CHAR(3)` | Customer Group 3 |
-| `AdditionalCustomerGroup4` | `CHAR(3)` | Customer Group 4 |
-| `AdditionalCustomerGroup5` | `CHAR(3)` | Customer Group 5 |
-| `Division` | `CHAR(2)` | Division |
-| `Product` | `CHAR(40)` | Product |
-| `ProductGroup` | `CHAR(9)` | Product Group |
-| `AdditionalMaterialGroup1` | `CHAR(3)` | Material Group 1 |
-| `AdditionalMaterialGroup2` | `CHAR(3)` | Material Group 2 |
-| `AdditionalMaterialGroup3` | `CHAR(3)` | Material Group 3 |
-| `AdditionalMaterialGroup4` | `CHAR(3)` | Material Group 4 |
-| `AdditionalMaterialGroup5` | `CHAR(3)` | Material Group 5 |
-| `SalesEmployee` | `NUMC(8)` | Sales Employee |
-| `Plant` | `CHAR(4)` | Plant |
-| `ShippingType` | `CHAR(2)` | Shipping Type |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `ControllingArea` | `CHAR(4)` | Controlling Area |
-| `BusinessArea` | `CHAR(4)` | Business Area |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `BillToPartyCountry` | `CHAR(3)` | Destination Country/Region of Sales Order |
-| `Region` | `CHAR(3)` | Region (State, Province, County) |
-| `BillToPartyRegion` | `CHAR(3)` | Region of Sales Order |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `SalesPlanAmountInDspCrcy` | `CURR(19)` | Sales Plan Amount in Display Currency |
-| `SalesPerfActlAmtInDspCurrency` | `CURR(15)` | Sales Plan Actual Amount in Display Currency |
-| `SalesPlanQuantity` | `QUAN(15)` | Planned Quantity |
-| `SalesPlanUnit` | `UNIT(3)` | Unit of Measure Used in Sales Plans |
-| `SalesPerfActualQtyInBaseUnit` | `QUAN(15)` | Sales Performance Actual Quantity In Base Unit |
-| `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
-| `SalesPerformanceActualQuantity` | `QUAN(15)` | Sales Performance Actual Quantity |
-| `SalesPerfActualQuantityUnit` | `UNIT(3)` | Sales Unit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SalesPlanItemUUID` |  | |  |  | `RAW(16)` | Sales Plan Item UUID |
+| `SDDocument` |  | |  |  | `CHAR(10)` | Sales and Distribution Document Number |
+| `SDDocumentItem` |  | |  |  | `NUMC(6)` | Sales and Distribution Document Item |
+| `SalesDocumentType` |  | |  |  | `CHAR(4)` | Sales Document Type |
+| `BillingDocumentType` |  | |  |  | `CHAR(4)` | Billing Type |
+| `SalesPlanPurpose` |  | |  |  | `CHAR(1)` | Purposes of Sales Planning |
+| `SalesPlanPeriodName` |  | |  |  | `CHAR(20)` | Sales Plan Period |
+| `SalesPerformanceDate` |  | |  |  | `DATS(8)` | Sales Performance Date |
+| `SalesPerformanceYearMonth` |  | |  |  | `NUMC(6)` | Month of Sales Performance |
+| `SlsPerformanceYearQuarter` |  | |  |  | `NUMC(5)` | Quarter of Sales Performance |
+| `SalesPerformanceYear` |  | |  |  | `NUMC(4)` | Year of Sales Performance |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Organization Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SalesDistrict` |  | |  |  | `CHAR(6)` | Sales District |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-to Party |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
+| `AdditionalCustomerGroup1` |  | |  |  | `CHAR(3)` | Customer Group 1 |
+| `AdditionalCustomerGroup2` |  | |  |  | `CHAR(3)` | Customer Group 2 |
+| `AdditionalCustomerGroup3` |  | |  |  | `CHAR(3)` | Customer Group 3 |
+| `AdditionalCustomerGroup4` |  | |  |  | `CHAR(3)` | Customer Group 4 |
+| `AdditionalCustomerGroup5` |  | |  |  | `CHAR(3)` | Customer Group 5 |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `AdditionalMaterialGroup1` |  | |  |  | `CHAR(3)` | Material Group 1 |
+| `AdditionalMaterialGroup2` |  | |  |  | `CHAR(3)` | Material Group 2 |
+| `AdditionalMaterialGroup3` |  | |  |  | `CHAR(3)` | Material Group 3 |
+| `AdditionalMaterialGroup4` |  | |  |  | `CHAR(3)` | Material Group 4 |
+| `AdditionalMaterialGroup5` |  | |  |  | `CHAR(3)` | Material Group 5 |
+| `SalesEmployee` |  | |  |  | `NUMC(8)` | Sales Employee |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ShippingType` |  | |  |  | `CHAR(2)` | Shipping Type |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `BillToPartyCountry` |  | |  |  | `CHAR(3)` | Destination Country/Region of Sales Order |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `BillToPartyRegion` |  | |  |  | `CHAR(3)` | Region of Sales Order |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `SalesPlanAmountInDspCrcy` |  | |  |  | `CURR(19)` | Sales Plan Amount in Display Currency |
+| `SalesPerfActlAmtInDspCurrency` |  | |  |  | `CURR(15)` | Sales Plan Actual Amount in Display Currency |
+| `SalesPlanQuantity` |  | |  |  | `QUAN(15)` | Planned Quantity |
+| `SalesPlanUnit` |  | |  |  | `UNIT(3)` | Unit of Measure Used in Sales Plans |
+| `SalesPerfActualQtyInBaseUnit` |  | |  |  | `QUAN(15)` | Sales Performance Actual Quantity In Base Unit |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `SalesPerformanceActualQuantity` |  | |  |  | `QUAN(15)` | Sales Performance Actual Quantity |
+| `SalesPerfActualQuantityUnit` |  | |  |  | `UNIT(3)` | Sales Unit |

@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PerformanceEfficiencyRatioCode` | `CHAR(3)` | Key for performance efficiency rate |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PerformanceEfficiencyRatioCode` |  | |  |  | `CHAR(3)` | Key for performance efficiency rate |

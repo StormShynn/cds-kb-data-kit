@@ -30,13 +30,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SecuritiesAccountPartnerUUID` | `RAW(16)` |  Account Business partner guid |
-| `SecuritiesAccountObjectUUID` | `RAW(16)` | GUID for securities account |
-| `SecuritiesAccountPartnerID` | `CHAR(32)` | Business Partner ID |
-| `SecuritiesAccountPartnerFunc` | `CHAR(6)` | Business Partner Function |
-| `SecuritiesAccountBPShareNmrtr` | `INT4(10)` | Numerator in Business Partner Share of Securities Account |
-| `SecuritiesAccountBPShareDnmntr` | `INT4(10)` | Denominator in Business Partner Share of Securities Account |
-| `SecuritiesAcctBPValdFrmDte` | `DATS(8)` | Date from which Real Estate Value stands Valid |
-| `SecuritiesAcctBPValdToDte` | `DATS(8)` | Date unitl which Real Estate Value stands Valid |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecuritiesAccountPartnerUUID` |  | |  |  | `RAW(16)` | Account Business partner guid |
+| `SecuritiesAccountObjectUUID` |  | |  |  | `RAW(16)` | GUID for securities account |
+| `SecuritiesAccountPartnerID` |  | |  |  | `CHAR(32)` | Business Partner ID |
+| `SecuritiesAccountPartnerFunc` |  | |  |  | `CHAR(6)` | Business Partner Function |
+| `SecuritiesAccountBPShareNmrtr` |  | |  |  | `INT4(10)` | Numerator in Business Partner Share of Securities Account |
+| `SecuritiesAccountBPShareDnmntr` |  | |  |  | `INT4(10)` | Denominator in Business Partner Share of Securities Account |
+| `SecuritiesAcctBPValdFrmDte` |  | |  |  | `DATS(8)` | Date from which Real Estate Value stands Valid |
+| `SecuritiesAcctBPValdToDte` |  | |  |  | `DATS(8)` | Date unitl which Real Estate Value stands Valid |

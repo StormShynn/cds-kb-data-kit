@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GLAccountType` | `CHAR(2)` | Account Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountType` |  | |  |  | `CHAR(2)` | Account Type |

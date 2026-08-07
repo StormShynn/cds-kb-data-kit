@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BillOfOperationsVersionStatus` | `CHAR(2)` | Processing Status of a Version |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BillOfOperationsVersionStatus` |  | |  |  | `CHAR(2)` | Processing Status of a Version |

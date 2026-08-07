@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ONRRSalesType` | `CHAR(4)` | ONRR-2014 - Sales Type Code |
-| `Language` | `LANG(1)` | Language Key |
-| `ONRRSalesTypeName` | `CHAR(50)` | General Description - 50 Characters |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ONRRSalesType` |  | |  |  | `CHAR(4)` | ONRR-2014 - Sales Type Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ONRRSalesTypeName` |  | |  |  | `CHAR(50)` | General Description - 50 Characters |

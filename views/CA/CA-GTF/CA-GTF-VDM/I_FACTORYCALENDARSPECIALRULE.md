@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `FactoryCalendar` | `CHAR(2)` | Factory Calendar |
-| `CalendarYear` | `NUMC(4)` | Year stored |
-| `ValidityStartDate` | `DATS(8)` | Date from which special rule is valid |
-| `ValidityEndDate` | `DATS(8)` | Date, until which the rule applies |
-| `IsWorkingDay` | `CHAR(1)` | Indicator:IsWorkingDay |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory Calendar |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Year stored |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Date from which special rule is valid |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Date, until which the rule applies |
+| `IsWorkingDay` |  | |  |  | `CHAR(1)` | Indicator:IsWorkingDay |

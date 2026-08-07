@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BudgetProcess` | `CHAR(4)` | Budget Process Type |
-| `Language` | `LANG(1)` | Language Key |
-| `BudgetProcessText` | `CHAR(40)` | Budget Process Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BudgetProcess` |  | |  |  | `CHAR(4)` | Budget Process Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BudgetProcessText` |  | |  |  | `CHAR(40)` | Budget Process Description |

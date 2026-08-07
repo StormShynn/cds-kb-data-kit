@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ValuationDocumentStatus` | `CHAR(2)` | Valuation Document Status |
-| `Language` | `LANG(1)` | Language Key |
-| `ValuationDocumentStatusName` | `CHAR(60)` | Valuation Document Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ValuationDocumentStatus` |  | |  |  | `CHAR(2)` | Valuation Document Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ValuationDocumentStatusName` |  | |  |  | `CHAR(60)` | Valuation Document Status Name |

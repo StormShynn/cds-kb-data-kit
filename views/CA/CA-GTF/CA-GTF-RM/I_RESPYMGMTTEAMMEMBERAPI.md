@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtGlobalTeamID` | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
-| `ResponsibilityTeamMember` | `CHAR(10)` | Business Partner Number |
-| `RespyMgmtTeamMemberType` | `CHAR(2)` | Team Member Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtGlobalTeamID` |  | |  |  | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
+| `ResponsibilityTeamMember` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `RespyMgmtTeamMemberType` |  | |  |  | `CHAR(2)` | Team Member Type |

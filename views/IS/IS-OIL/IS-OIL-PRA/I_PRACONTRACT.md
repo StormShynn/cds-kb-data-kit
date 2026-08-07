@@ -34,22 +34,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PRAContract` | `CHAR(10)` | Contract Number |
-| `PRAContractDesc` | `CHAR(40)` | Contract Description |
-| `PRAContractDate` | `DATS(8)` | Document Date (Date Received/Sent) |
-| `SoldToParty` | `CHAR(10)` | Sold-to Party |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `PRAContractType` | `CHAR(2)` | Contract Type |
-| `IsApproved` | `CHAR(1)` | Approval indicator |
-| `PreviousPRAContract` | `CHAR(10)` | Old / Previous Contract Number |
-| `CustomerOrSupplierType` | `CHAR(1)` | Customer/Vendor Indicator |
-| `MarketingRep` | `CHAR(10)` | Marketing Representative No |
-| `MarketingRepIntrstSequNmbr` | `CHAR(2)` | Marketing Representative Interest Sequence No |
-| `MarketingRepName` | `CHAR(35)` | Marketing Representative Name |
-| `MarketingRepCustomer` | `CHAR(10)` | Marketing Representative Customer |
-| `MarketingRepSupplier` | `CHAR(10)` | Marketing Representative Supplier |
-| `CreatedByUser` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDate` | `DATS(8)` | Record Creation Date |
-| `CreationTime` | `TIMS(6)` | Creation Time |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PRAContract` |  | |  |  | `CHAR(10)` | Contract Number |
+| `PRAContractDesc` |  | |  |  | `CHAR(40)` | Contract Description |
+| `PRAContractDate` |  | |  |  | `DATS(8)` | Document Date (Date Received/Sent) |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-to Party |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `PRAContractType` |  | |  |  | `CHAR(2)` | Contract Type |
+| `IsApproved` |  | |  |  | `CHAR(1)` | Approval indicator |
+| `PreviousPRAContract` |  | |  |  | `CHAR(10)` | Old / Previous Contract Number |
+| `CustomerOrSupplierType` |  | |  |  | `CHAR(1)` | Customer/Vendor Indicator |
+| `MarketingRep` |  | |  |  | `CHAR(10)` | Marketing Representative No |
+| `MarketingRepIntrstSequNmbr` |  | |  |  | `CHAR(2)` | Marketing Representative Interest Sequence No |
+| `MarketingRepName` |  | |  |  | `CHAR(35)` | Marketing Representative Name |
+| `MarketingRepCustomer` |  | |  |  | `CHAR(10)` | Marketing Representative Customer |
+| `MarketingRepSupplier` |  | |  |  | `CHAR(10)` | Marketing Representative Supplier |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Creation Time |

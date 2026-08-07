@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `IncidentReportingSourceCode` | `CHAR(2)` | Incident Reporting Source |
-| `Language` | `LANG(1)` | Language Key |
-| `IncidentReportingSourceText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `IncidentReportingSourceCode` |  | |  |  | `CHAR(2)` | Incident Reporting Source |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `IncidentReportingSourceText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

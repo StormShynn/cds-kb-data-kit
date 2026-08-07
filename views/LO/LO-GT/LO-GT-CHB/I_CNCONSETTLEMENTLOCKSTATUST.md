@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CnConSettlementLockStatus` | `CHAR(1)` | Settlement Lock Status |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `CnConSettlementLockStatusName` | `CHAR(60)` | Settlement Lock Status Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CnConSettlementLockStatus` |  | |  |  | `CHAR(1)` | Settlement Lock Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CnConSettlementLockStatusName` |  | |  |  | `CHAR(60)` | Settlement Lock Status Text |

@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WBSElementHierarchy` | `CHAR(42)` |  WBS Element Hierarchy |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `LastChangedByUser` | `CHAR(12)` | Last Changed By |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WBSElementHierarchy` |  | |  |  | `CHAR(42)` | WBS Element Hierarchy |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |

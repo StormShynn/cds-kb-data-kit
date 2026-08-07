@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BudgetingType` | `CHAR(8)` | Budget Type (Subcategory) |
-| `PubSecBudgetReleaseStatus` | `CHAR(1)` | Budget Release Status |
-| `PubSecBudgetIsConsumable` | `CHAR(1)` | Consumable Budget |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BudgetingType` |  | |  |  | `CHAR(8)` | Budget Type (Subcategory) |
+| `PubSecBudgetReleaseStatus` |  | |  |  | `CHAR(1)` | Budget Release Status |
+| `PubSecBudgetIsConsumable` |  | |  |  | `CHAR(1)` | Consumable Budget |

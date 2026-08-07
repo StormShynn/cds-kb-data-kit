@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ColltrlREPrtLandRegisterUUID` | `RAW(16)` | GUID for part LR |
-| `CollateralRealEstatePartUUID` | `RAW(16)` | GUID for Object part |
-| `CollateralRealEstatePartID` | `NUMC(10)` | Part ID for the Object |
-| `ColltrlRELandRegisterLinkUUID` | `RAW(16)` | Link Key between RE and LR systems |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ColltrlREPrtLandRegisterUUID` |  | |  |  | `RAW(16)` | GUID for part LR |
+| `CollateralRealEstatePartUUID` |  | |  |  | `RAW(16)` | GUID for Object part |
+| `CollateralRealEstatePartID` |  | |  |  | `NUMC(10)` | Part ID for the Object |
+| `ColltrlRELandRegisterLinkUUID` |  | |  |  | `RAW(16)` | Link Key between RE and LR systems |

@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CasePriority` | `NUMC(1)` | Priority |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CasePriority` |  | |  |  | `NUMC(1)` | Priority |

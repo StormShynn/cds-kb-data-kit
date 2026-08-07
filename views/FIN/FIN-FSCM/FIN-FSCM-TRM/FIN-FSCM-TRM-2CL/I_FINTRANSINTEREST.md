@@ -35,18 +35,18 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `FinancialTransaction` | `CHAR(13)` | Financial Transaction |
-| `FinancialTransactionDirection` | `NUMC(1)` | Direction of Transaction |
-| `FinConditionInterestCategory` | `NUMC(2)` |  |
-| `FinTransFlowPaytAmt` | `CURR(13)` | Flow Payment Amount |
-| `FinTransFlowPaytAmtCrcy` | `CUKY(5)` | Payment Currency |
-| `FinTransFlowPaymentDate` | `DATS(8)` | Flow Payment Date |
-| `FinTransFlowPaymentDueDate` | `DATS(8)` | Due Date |
-| `FinTransFlowIntrstRateFixDate` | `DATS(8)` | Interest Rate Fixing Date |
-| `ConditionPercentageRate` | `DEC(10)` | Percentage rate for condition items |
-| `FinInterestRateAdjmtStatus` | `CHAR(2)` | Status of Interest Rate Adjustment |
-| `FinTransIntrstHndlgAtRollover` | `NUMC(1)` | Interest Handling At Rollover |
-| `RolloverDfrrdIntrstPyoutDte` | `DATS(8)` | Payout Date for Deferred Interest |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FinancialTransaction` |  | |  |  | `CHAR(13)` | Financial Transaction |
+| `FinancialTransactionDirection` |  | |  |  | `NUMC(1)` | Direction of Transaction |
+| `FinConditionInterestCategory` |  | |  |  | `NUMC(2)` |  |
+| `FinTransFlowPaytAmt` |  | |  |  | `CURR(13)` | Flow Payment Amount |
+| `FinTransFlowPaytAmtCrcy` |  | |  |  | `CUKY(5)` | Payment Currency |
+| `FinTransFlowPaymentDate` |  | |  |  | `DATS(8)` | Flow Payment Date |
+| `FinTransFlowPaymentDueDate` |  | |  |  | `DATS(8)` | Due Date |
+| `FinTransFlowIntrstRateFixDate` |  | |  |  | `DATS(8)` | Interest Rate Fixing Date |
+| `ConditionPercentageRate` |  | |  |  | `DEC(10)` | Percentage rate for condition items |
+| `FinInterestRateAdjmtStatus` |  | |  |  | `CHAR(2)` | Status of Interest Rate Adjustment |
+| `FinTransIntrstHndlgAtRollover` |  | |  |  | `NUMC(1)` | Interest Handling At Rollover |
+| `RolloverDfrrdIntrstPyoutDte` |  | |  |  | `DATS(8)` | Payout Date for Deferred Interest |

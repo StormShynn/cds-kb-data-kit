@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrTypeBlockUsage` | `CHAR(1)` | Condition Contract Type Block |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrTypeBlockUsageName` | `CHAR(60)` | Description of Condition Contract Type Block Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrTypeBlockUsage` |  | |  |  | `CHAR(1)` | Condition Contract Type Block |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrTypeBlockUsageName` |  | |  |  | `CHAR(60)` | Description of Condition Contract Type Block Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

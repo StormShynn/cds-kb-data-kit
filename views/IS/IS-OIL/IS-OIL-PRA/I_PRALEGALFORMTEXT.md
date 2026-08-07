@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PRALegalForm` | `CHAR(2)` | Entity Code |
-| `Language` | `LANG(1)` | Language Key |
-| `PRALegalFormName` | `CHAR(60)` | Valuation Document Status Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PRALegalForm` |  | |  |  | `CHAR(2)` | Entity Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PRALegalFormName` |  | |  |  | `CHAR(60)` | Valuation Document Status Name |

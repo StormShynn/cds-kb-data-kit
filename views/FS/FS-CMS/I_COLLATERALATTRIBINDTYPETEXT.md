@@ -29,9 +29,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralAttributeIndCat` | `CHAR(6)` | Attribute Indicator ID |
-| `CollateralAttributeIndType` | `CHAR(6)` | Attribute Indicator Type |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `CollateralAttributeIndTypeText` | `CHAR(40)` | Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralAttributeIndCat` |  | |  |  | `CHAR(6)` | Attribute Indicator ID |
+| `CollateralAttributeIndType` |  | |  |  | `CHAR(6)` | Attribute Indicator Type |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `CollateralAttributeIndTypeText` |  | |  |  | `CHAR(40)` | Name |

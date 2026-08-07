@@ -34,6 +34,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `NotificationType` | `CHAR(2)` | Notification Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `NotificationType` |  | |  |  | `CHAR(2)` | Notification Type |

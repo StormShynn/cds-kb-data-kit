@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SubscrpnBillgPricingScaleType` | `CHAR(1)` | Rate Type |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SubscrpnBillgPrcgScaleTypeText` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubscrpnBillgPricingScaleType` |  | |  |  | `CHAR(1)` | Rate Type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SubscrpnBillgPrcgScaleTypeText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ItemIntrastatRelevance` | `CHAR(1)` | Document Item is Relevant for Intrastat Declarations |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ItemIntrastatRelevance` |  | |  |  | `CHAR(1)` | Document Item is Relevant for Intrastat Declarations |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

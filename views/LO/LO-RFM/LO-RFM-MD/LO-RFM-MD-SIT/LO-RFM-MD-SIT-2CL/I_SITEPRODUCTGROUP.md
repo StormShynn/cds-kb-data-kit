@@ -35,15 +35,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SiteCustomer` | `CHAR(10)` | Customer Number |
-| `ProductGroup` | `CHAR(9)` | Product Group |
-| `ContactPersonStdDepartment` | `CHAR(4)` | Department number |
-| `AssortmentGrade` | `CHAR(2)` | Assortment grade |
-| `ProdGroupIsExcldFrmPOSOutbound` | `CHAR(1)` | Exclude material group from POS outbound processing |
-| `ProdReplnmtRqmtGroup` | `CHAR(2)` | Replenishment: requirement group |
-| `StoreProcurementProfile` | `CHAR(4)` | Store procurement profile for store order, replenishment |
-| `PriceListType` | `CHAR(2)` | Price determination: Item-based price list type |
-| `RevaluationProfile` | `CHAR(4)` | Retail revalution profile |
-| `PriceIsIncludingSalesTax` | `CHAR(1)` | Price including sales tax |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SiteCustomer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `ContactPersonStdDepartment` |  | |  |  | `CHAR(4)` | Department number |
+| `AssortmentGrade` |  | |  |  | `CHAR(2)` | Assortment grade |
+| `ProdGroupIsExcldFrmPOSOutbound` |  | |  |  | `CHAR(1)` | Exclude material group from POS outbound processing |
+| `ProdReplnmtRqmtGroup` |  | |  |  | `CHAR(2)` | Replenishment: requirement group |
+| `StoreProcurementProfile` |  | |  |  | `CHAR(4)` | Store procurement profile for store order, replenishment |
+| `PriceListType` |  | |  |  | `CHAR(2)` | Price determination: Item-based price list type |
+| `RevaluationProfile` |  | |  |  | `CHAR(4)` | Retail revalution profile |
+| `PriceIsIncludingSalesTax` |  | |  |  | `CHAR(1)` | Price including sales tax |

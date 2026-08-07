@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PnLEventType` | `CHAR(10)` | Profit and Loss Event Type |
-| `PnLEventCategory` | `CHAR(10)` | Profit and Loss Event Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PnLEventType` |  | |  |  | `CHAR(10)` | Profit and Loss Event Type |
+| `PnLEventCategory` |  | |  |  | `CHAR(10)` | Profit and Loss Event Category |

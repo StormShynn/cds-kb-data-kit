@@ -32,12 +32,12 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusVolFldCombnSet` | `CHAR(4)` | Set of Field Combinations |
-| `BusVolFieldCombnType` | `CHAR(4)` | Field Combination for Business Volume Selection |
-| `BusVolFldCombnGroup` | `CHAR(2)` | Field Combination Group for Business Volume Selection |
-| `BusVolFldCombnAllwdSign` | `CHAR(1)` | Including / Excluding Control for BV Selection Criteria |
-| `BusVolFldCombnValdtyIsAllwd` | `CHAR(1)` | Business Volume Base with Validity |
-| `BusVolFldCombnMinNrOfEntries` | `DEC(3)` | Minimum Number of Entries for Field Combination |
-| `BusVolFldCombnMaxNrOfEntries` | `DEC(3)` | Maximum Number of Entries for Field Combination |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusVolFldCombnSet` |  | |  |  | `CHAR(4)` | Set of Field Combinations |
+| `BusVolFieldCombnType` |  | |  |  | `CHAR(4)` | Field Combination for Business Volume Selection |
+| `BusVolFldCombnGroup` |  | |  |  | `CHAR(2)` | Field Combination Group for Business Volume Selection |
+| `BusVolFldCombnAllwdSign` |  | |  |  | `CHAR(1)` | Including / Excluding Control for BV Selection Criteria |
+| `BusVolFldCombnValdtyIsAllwd` |  | |  |  | `CHAR(1)` | Business Volume Base with Validity |
+| `BusVolFldCombnMinNrOfEntries` |  | |  |  | `DEC(3)` | Minimum Number of Entries for Field Combination |
+| `BusVolFldCombnMaxNrOfEntries` |  | |  |  | `DEC(3)` | Maximum Number of Entries for Field Combination |

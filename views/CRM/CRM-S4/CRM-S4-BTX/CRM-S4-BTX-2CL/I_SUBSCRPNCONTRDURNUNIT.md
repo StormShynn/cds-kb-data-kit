@@ -32,6 +32,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SubscrpnContrDurationUnit` | `CHAR(1)` | Unit for Contract Term |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SubscrpnContrDurationUnit` |  | |  |  | `CHAR(1)` | Unit for Contract Term |

@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyIDForBudgetAccount` | `CHAR(42)` | Hierarchy ID for Budget Account Element |
-| `CtrlObjForBudgetAccount` | `CHAR(50)` | Control Object for a Budget Account |
-| `CtrlObjNameForBudgetAccount` | `CHAR(50)` | Name of a Control Object for a Budget Account |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyIDForBudgetAccount` |  | |  |  | `CHAR(42)` | Hierarchy ID for Budget Account Element |
+| `CtrlObjForBudgetAccount` |  | |  |  | `CHAR(50)` | Control Object for a Budget Account |
+| `CtrlObjNameForBudgetAccount` |  | |  |  | `CHAR(50)` | Name of a Control Object for a Budget Account |

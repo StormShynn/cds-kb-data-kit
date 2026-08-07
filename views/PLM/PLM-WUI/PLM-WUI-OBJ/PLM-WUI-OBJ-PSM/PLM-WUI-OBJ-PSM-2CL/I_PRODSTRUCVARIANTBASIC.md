@@ -34,15 +34,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ProductStructureVariantUUID` | `RAW(16)` | Internal Number of the PVS Variant |
-| `ProdStrucVariantUniqueID` | `CHAR(32)` |  |
-| `ProductStructureVariantName` | `CHAR(8)` | Variant |
-| `ProdStructureVariantParentUUID` | `RAW(16)` | Internal Number of iPPE Node |
-| `ProductStructureVariantType` | `CHAR(8)` | iPPE Variant Type |
-| `ProductStructureGnrcObjType` | `CHAR(10)` | Object Type |
-| `ProductStructureCreationDate` | `DATS(8)` | Date of Application |
-| `ProductStructureCreatedByUser` | `CHAR(12)` | User who created record |
-| `ProductStrucLastChangedDate` | `DATS(8)` | Date of Last Change |
-| `ProductStrucLastChangedByUser` | `CHAR(12)` | Name of Person Who Changed Object |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ProductStructureVariantUUID` |  | |  |  | `RAW(16)` | Internal Number of the PVS Variant |
+| `ProdStrucVariantUniqueID` |  | |  |  | `CHAR(32)` |  |
+| `ProductStructureVariantName` |  | |  |  | `CHAR(8)` | Variant |
+| `ProdStructureVariantParentUUID` |  | |  |  | `RAW(16)` | Internal Number of iPPE Node |
+| `ProductStructureVariantType` |  | |  |  | `CHAR(8)` | iPPE Variant Type |
+| `ProductStructureGnrcObjType` |  | |  |  | `CHAR(10)` | Object Type |
+| `ProductStructureCreationDate` |  | |  |  | `DATS(8)` | Date of Application |
+| `ProductStructureCreatedByUser` |  | |  |  | `CHAR(12)` | User who created record |
+| `ProductStrucLastChangedDate` |  | |  |  | `DATS(8)` | Date of Last Change |
+| `ProductStrucLastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |

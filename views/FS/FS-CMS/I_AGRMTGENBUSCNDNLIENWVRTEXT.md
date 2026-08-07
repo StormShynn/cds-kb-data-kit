@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgrmtGenBusCndnLienWvr` | `CHAR(2)` | GBC Lien on Agreement |
-| `Language` | `LANG(1)` | Language in which Description is Required |
-| `AgrmtGenBusCndnLienWvrText` | `CHAR(40)` | GBC Lien Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgrmtGenBusCndnLienWvr` |  | |  |  | `CHAR(2)` | GBC Lien on Agreement |
+| `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
+| `AgrmtGenBusCndnLienWvrText` |  | |  |  | `CHAR(40)` | GBC Lien Name |

@@ -32,17 +32,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `DisputeCaseUUID` | `CHAR(32)` | UUID in Character Format |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `Customer` | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
-| `Status` | `CHAR(3)` | Case: System Status |
-| `DisputedAmount` | `CURR(15)` | Current Disputed Amount |
-| `OriginalAmount` | `CURR(15)` | Original Disputed Amount |
-| `Currency` | `CUKY(5)` | Currency of Dispute Case |
-| `DisputeCaseRootCause` | `CHAR(4)` | Root Cause Code |
-| `DisputeCaseCoordinator` | `CHAR(12)` | Coordinator of Dispute Case |
-| `DsputCaseCoordinatorFullName` | `CHAR(80)` | User Description |
-| `GlobalCurrency` | `CUKY(5)` | Global Currency |
-| `GlobalCurrencyExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `DisputeCaseUUID` |  | |  |  | `CHAR(32)` | UUID in Character Format |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Customer` |  | |  |  | `CHAR(10)` | Key of Customer in Accounts Receivable Accounting |
+| `Status` |  | |  |  | `CHAR(3)` | Case: System Status |
+| `DisputedAmount` |  | |  |  | `CURR(15)` | Current Disputed Amount |
+| `OriginalAmount` |  | |  |  | `CURR(15)` | Original Disputed Amount |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency of Dispute Case |
+| `DisputeCaseRootCause` |  | |  |  | `CHAR(4)` | Root Cause Code |
+| `DisputeCaseCoordinator` |  | |  |  | `CHAR(12)` | Coordinator of Dispute Case |
+| `DsputCaseCoordinatorFullName` |  | |  |  | `CHAR(80)` | User Description |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `GlobalCurrencyExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |

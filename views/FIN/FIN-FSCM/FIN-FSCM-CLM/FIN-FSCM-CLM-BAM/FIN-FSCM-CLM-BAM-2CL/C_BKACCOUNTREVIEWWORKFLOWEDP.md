@@ -35,14 +35,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
-| `BankAccountReviewArea` | `CHAR(20)` | Review Area ID |
-| `BankAccountReviewAreaName` | `CHAR(40)` | Bank Account Review Area Description |
-| `BkAcctReviewAreaSnapshotDate` | `DATS(8)` | Bank Account Snapshot Date |
-| `BkAcctReviewAreaSnapshotTime` | `TIMS(6)` | Bank Account Snapshot Time |
-| `BankAccountReview` | `CHAR(20)` | Bank Account Review ID |
-| `BankAccountReviewName` | `CHAR(40)` | Bank Account Review Description |
-| `BankAccountReviewDate` | `DATS(8)` | Bank Account Review - Reference Date |
-| `WorkflowTaskURL` | `SSTR(1333)` | Workflow: Workflow Task URL |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
+| `BankAccountReviewArea` |  | |  |  | `CHAR(20)` | Review Area ID |
+| `BankAccountReviewAreaName` |  | |  |  | `CHAR(40)` | Bank Account Review Area Description |
+| `BkAcctReviewAreaSnapshotDate` |  | |  |  | `DATS(8)` | Bank Account Snapshot Date |
+| `BkAcctReviewAreaSnapshotTime` |  | |  |  | `TIMS(6)` | Bank Account Snapshot Time |
+| `BankAccountReview` |  | |  |  | `CHAR(20)` | Bank Account Review ID |
+| `BankAccountReviewName` |  | |  |  | `CHAR(40)` | Bank Account Review Description |
+| `BankAccountReviewDate` |  | |  |  | `DATS(8)` | Bank Account Review - Reference Date |
+| `WorkflowTaskURL` |  | |  |  | `SSTR(1333)` | Workflow: Workflow Task URL |

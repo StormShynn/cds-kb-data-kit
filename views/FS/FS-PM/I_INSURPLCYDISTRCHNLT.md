@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `InsurPlcyDistrChnl` | `NUMC(3)` | Distribution Channel |
-| `InsurPlcyDistrChnlName` | `CHAR(50)` | Name of Distribution Channel |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `InsurPlcyDistrChnl` |  | |  |  | `NUMC(3)` | Distribution Channel |
+| `InsurPlcyDistrChnlName` |  | |  |  | `CHAR(50)` | Name of Distribution Channel |

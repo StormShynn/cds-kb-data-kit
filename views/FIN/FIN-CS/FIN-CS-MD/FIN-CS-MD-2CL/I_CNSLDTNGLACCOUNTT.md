@@ -34,13 +34,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `ChartOfAccounts` | `CHAR(4)` | G/L Chart of Accounts |
-| `AdditionalMasterDataSource` | `CHAR(10)` | Consolidation Additional Master Data Source |
-| `AdditionalMasterDataText` | `CHAR(20)` | Description |
-| `GLAccountName` | `CHAR(20)` | G/L Account Name |
-| `GLAccountLongName` | `CHAR(50)` | Long Description |
-| `CnsldtnIsAdditionalMasterData` | `CHAR(1)` | Is Additional Master Data |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | G/L Chart of Accounts |
+| `AdditionalMasterDataSource` |  | |  |  | `CHAR(10)` | Consolidation Additional Master Data Source |
+| `AdditionalMasterDataText` |  | |  |  | `CHAR(20)` | Description |
+| `GLAccountName` |  | |  |  | `CHAR(20)` | G/L Account Name |
+| `GLAccountLongName` |  | |  |  | `CHAR(50)` | Long Description |
+| `CnsldtnIsAdditionalMasterData` |  | |  |  | `CHAR(1)` | Is Additional Master Data |

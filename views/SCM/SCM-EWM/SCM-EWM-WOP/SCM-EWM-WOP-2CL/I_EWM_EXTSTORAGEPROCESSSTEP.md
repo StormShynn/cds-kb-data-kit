@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ExternalStorageProcessStep` | `CHAR(4)` | External Storage Process Step |
-| `InternalStorageProcessStep` | `CHAR(4)` | Internal Storage Process Step |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ExternalStorageProcessStep` |  | |  |  | `CHAR(4)` | External Storage Process Step |
+| `InternalStorageProcessStep` |  | |  |  | `CHAR(4)` | Internal Storage Process Step |

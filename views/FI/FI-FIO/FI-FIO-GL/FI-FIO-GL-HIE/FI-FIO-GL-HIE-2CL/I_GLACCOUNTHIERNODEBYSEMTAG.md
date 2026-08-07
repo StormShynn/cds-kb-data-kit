@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GLAccountHierarchy` | `CHAR(42)` | Hierarchy ID |
-| `HierarchyNode` | `CHAR(50)` | Hierarchy node |
-| `SemanticTag` | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `HierarchyNodeType` | `CHAR(30)` | Field Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Hierarchy ID |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `HierarchyNodeType` |  | |  |  | `CHAR(30)` | Field Name |

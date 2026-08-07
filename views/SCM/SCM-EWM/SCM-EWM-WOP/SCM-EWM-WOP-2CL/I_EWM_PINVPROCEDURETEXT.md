@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `PhysicalInventoryDocumentType` | `CHAR(2)` | Physical Inventory Procedure (Document Type of Phys. Inv.) |
-| `PInvDocumentTypeText` | `CHAR(50)` | Short Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PhysicalInventoryDocumentType` |  | |  |  | `CHAR(2)` | Physical Inventory Procedure (Document Type of Phys. Inv.) |
+| `PInvDocumentTypeText` |  | |  |  | `CHAR(50)` | Short Text |

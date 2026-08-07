@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BusVolSelectionGroup` | `CHAR(4)` | Selection Group |
-| `BusVolFieldCombnTypeDesc` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusVolSelectionGroup` |  | |  |  | `CHAR(4)` | Selection Group |
+| `BusVolFieldCombnTypeDesc` |  | |  |  | `CHAR(40)` | Description |

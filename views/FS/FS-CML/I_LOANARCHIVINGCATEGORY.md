@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanArchivingCategory` | `CHAR(1)` | Archiving Category Indicator |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanArchivingCategory` |  | |  |  | `CHAR(1)` | Archiving Category Indicator |

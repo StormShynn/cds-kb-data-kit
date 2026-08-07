@@ -31,23 +31,23 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `RevisionEndDate` | `DATS(8)` | Revision End Date |
-| `Language` | `LANG(1)` | Language |
-| `EHSLocationRevisionNameUUID` | `RAW(16)` | EHS Location - Revision Name UUID |
-| `EHSLocationRevisionUUID` | `RAW(16)` | EHS Location - Revision UUID |
-| `RevisionStartDate` | `DATS(8)` | Revision Start Date |
-| `CreationDateTime` | `DEC(21)` | Created On |
-| `CreatedByUser` | `CHAR(12)` | Created By |
-| `LastChangeDateTime` | `DEC(21)` | Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Last Change By |
-| `EHSLocationName` | `CHAR(60)` | Location |
-| `EHSLocationType` | `CHAR(21)` | Location Type |
-| `EHSLocationStatus` | `CHAR(2)` | Location Status |
-| `EHSLocationAuthorizationGroup` | `CHAR(21)` | Location Authorization Group |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `BusinessArea` | `CHAR(4)` | Business Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `RevisionEndDate` |  | |  |  | `DATS(8)` | Revision End Date |
+| `Language` |  | |  |  | `LANG(1)` | Language |
+| `EHSLocationRevisionNameUUID` |  | |  |  | `RAW(16)` | EHS Location - Revision Name UUID |
+| `EHSLocationRevisionUUID` |  | |  |  | `RAW(16)` | EHS Location - Revision UUID |
+| `RevisionStartDate` |  | |  |  | `DATS(8)` | Revision Start Date |
+| `CreationDateTime` |  | |  |  | `DEC(21)` | Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Change By |
+| `EHSLocationName` |  | |  |  | `CHAR(60)` | Location |
+| `EHSLocationType` |  | |  |  | `CHAR(21)` | Location Type |
+| `EHSLocationStatus` |  | |  |  | `CHAR(2)` | Location Status |
+| `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |

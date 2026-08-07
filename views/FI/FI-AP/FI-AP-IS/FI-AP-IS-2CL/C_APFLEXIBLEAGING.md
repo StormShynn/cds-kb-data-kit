@@ -35,26 +35,26 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
-| `GLAccount` | `CHAR(10)` | G/L Account |
-| `Supplier` | `CHAR(10)` | Supplier |
-| `AccountingDocumentCategory` | `CHAR(1)` | Document Status |
-| `AgingGridText` | `CHAR(20)` | Aging Grid Text |
-| `SpecialGLCode` | `CHAR(1)` | Special G/L Indicator |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `GLAccountLongName` | `CHAR(50)` | G/L Account Long Name |
-| `SupplierName` | `CHAR(80)` | Name of Supplier |
-| `AccountingDocumentCategoryName` | `CHAR(60)` | Short Text for Fixed Values |
-| `SpecialGLCodeName` | `CHAR(30)` | Long Text for Special G/L Indicators |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `ChartOfAccountsName` | `CHAR(50)` | Chart of Accounts Description |
-| `SupplierAccountGroup` | `CHAR(4)` | Supplier Account Group |
-| `SupplierAccountGroupName` | `CHAR(30)` | Account Group Name |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `AmountInDisplayCurrency_E` | `CURR(23)` | Amount in Display Currency |
-| `TotalNotOvrdAmtInDspCrcy` | `CURR(23)` | Not Overdue Amount in Display Currency |
-| `TotalOverdueAmtInDspCrcy_E` | `CURR(23)` | Total Overdue Amount in Display Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `AccountingDocumentCategory` |  | |  |  | `CHAR(1)` | Document Status |
+| `AgingGridText` |  | |  |  | `CHAR(20)` | Aging Grid Text |
+| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `GLAccountLongName` |  | |  |  | `CHAR(50)` | G/L Account Long Name |
+| `SupplierName` |  | |  |  | `CHAR(80)` | Name of Supplier |
+| `AccountingDocumentCategoryName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `SpecialGLCodeName` |  | |  |  | `CHAR(30)` | Long Text for Special G/L Indicators |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `ChartOfAccountsName` |  | |  |  | `CHAR(50)` | Chart of Accounts Description |
+| `SupplierAccountGroup` |  | |  |  | `CHAR(4)` | Supplier Account Group |
+| `SupplierAccountGroupName` |  | |  |  | `CHAR(30)` | Account Group Name |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `AmountInDisplayCurrency_E` |  | |  |  | `CURR(23)` | Amount in Display Currency |
+| `TotalNotOvrdAmtInDspCrcy` |  | |  |  | `CURR(23)` | Not Overdue Amount in Display Currency |
+| `TotalOverdueAmtInDspCrcy_E` |  | |  |  | `CURR(23)` | Total Overdue Amount in Display Currency |

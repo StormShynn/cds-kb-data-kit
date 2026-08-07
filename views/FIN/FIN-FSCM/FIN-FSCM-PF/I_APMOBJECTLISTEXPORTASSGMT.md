@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `APMObjectRelationUUID` | `RAW(16)` | Globally Unique Identifier |
-| `ClearingArea` | `CHAR(6)` | Clearing Area |
-| `APMObjectCategory` | `CHAR(2)` | Object Category |
-| `APMObjectDate` | `DATS(8)` | Object Date |
-| `APMObjectNumber` | `NUMC(12)` | Object Number |
-| `APMObjectIdExtended` | `CHAR(35)` | Additional Object ID |
-| `APMObjectExtendedReference` | `CHAR(120)` | Extended data reference |
-| `APMObjectRelationCode` | `CHAR(2)` | Business Object Relation Indicator |
-| `APMRelatedObjectCategory` | `CHAR(2)` | Object Category |
-| `RelatedClearingArea` | `CHAR(6)` | Clearing Area |
-| `APMRelatedObjectDate` | `DATS(8)` | Object Date |
-| `APMRelatedObjectNumber` | `NUMC(12)` | Object Number |
-| `APMRelatedObjectIdExtended` | `CHAR(35)` | Additional Object ID |
-| `APMRelatedObjectExtendedRef` | `CHAR(120)` | Extended data reference |
-| `APMExternalSystemCode` | `CHAR(3)` | External Components Identification |
-| `APMObjectRelationState` | `CHAR(2)` | Relation State of Business Objects |
-| `APMProcessUUID` | `RAW(16)` | Unique Process Identifier |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `APMObjectRelationUUID` |  | |  |  | `RAW(16)` | Globally Unique Identifier |
+| `ClearingArea` |  | |  |  | `CHAR(6)` | Clearing Area |
+| `APMObjectCategory` |  | |  |  | `CHAR(2)` | Object Category |
+| `APMObjectDate` |  | |  |  | `DATS(8)` | Object Date |
+| `APMObjectNumber` |  | |  |  | `NUMC(12)` | Object Number |
+| `APMObjectIdExtended` |  | |  |  | `CHAR(35)` | Additional Object ID |
+| `APMObjectExtendedReference` |  | |  |  | `CHAR(120)` | Extended data reference |
+| `APMObjectRelationCode` |  | |  |  | `CHAR(2)` | Business Object Relation Indicator |
+| `APMRelatedObjectCategory` |  | |  |  | `CHAR(2)` | Object Category |
+| `RelatedClearingArea` |  | |  |  | `CHAR(6)` | Clearing Area |
+| `APMRelatedObjectDate` |  | |  |  | `DATS(8)` | Object Date |
+| `APMRelatedObjectNumber` |  | |  |  | `NUMC(12)` | Object Number |
+| `APMRelatedObjectIdExtended` |  | |  |  | `CHAR(35)` | Additional Object ID |
+| `APMRelatedObjectExtendedRef` |  | |  |  | `CHAR(120)` | Extended data reference |
+| `APMExternalSystemCode` |  | |  |  | `CHAR(3)` | External Components Identification |
+| `APMObjectRelationState` |  | |  |  | `CHAR(2)` | Relation State of Business Objects |
+| `APMProcessUUID` |  | |  |  | `RAW(16)` | Unique Process Identifier |

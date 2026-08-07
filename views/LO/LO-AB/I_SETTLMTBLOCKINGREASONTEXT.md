@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtBlockingReason` | `CHAR(2)` | Reason for Settlement Block |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtBlockingReasonDesc` | `CHAR(40)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtBlockingReason` |  | |  |  | `CHAR(2)` | Reason for Settlement Block |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtBlockingReasonDesc` |  | |  |  | `CHAR(40)` | Description |

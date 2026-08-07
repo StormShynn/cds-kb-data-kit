@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtTeamID` | `NUMC(8)` | Object ID |
-| `DCoCollectorGroup` | `CHAR(40)` | Collections Agent Group |
-| `DCoCollectorGroupName` | `SSTR(80)` | Name of Collections Agent Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtTeamID` |  | |  |  | `NUMC(8)` | Object ID |
+| `DCoCollectorGroup` |  | |  |  | `CHAR(40)` | Collections Agent Group |
+| `DCoCollectorGroupName` |  | |  |  | `SSTR(80)` | Name of Collections Agent Group |

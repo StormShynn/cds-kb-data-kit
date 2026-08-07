@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `CostComponentStructure` | `CHAR(2)` | Cost Component Structure - CGM and Sales/Administr. Costs |
-| `CostComponentStructureName` | `CHAR(25)` | Name of Cost Component Structure |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CostComponentStructure` |  | |  |  | `CHAR(2)` | Cost Component Structure - CGM and Sales/Administr. Costs |
+| `CostComponentStructureName` |  | |  |  | `CHAR(25)` | Name of Cost Component Structure |

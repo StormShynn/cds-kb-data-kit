@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessObjectType` | `CHAR(10)` | Object type |
-| `Language` | `LANG(1)` | Language Key |
-| `BusinessObjectTypeName` | `CHAR(20)` | Name |
-| `BusinessObjectTypeDescription` | `CHAR(80)` | Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessObjectType` |  | |  |  | `CHAR(10)` | Object type |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BusinessObjectTypeName` |  | |  |  | `CHAR(20)` | Name |
+| `BusinessObjectTypeDescription` |  | |  |  | `CHAR(80)` | Description |

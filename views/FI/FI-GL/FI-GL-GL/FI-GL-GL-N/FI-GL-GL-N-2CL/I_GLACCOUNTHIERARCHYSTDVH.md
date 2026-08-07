@@ -34,8 +34,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `GLAccountHierarchy` | `CHAR(42)` | G/L Account Hierarchy |
-| `ValidityEndDate` | `DATS(8)` | Valid To Date |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | G/L Account Hierarchy |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |

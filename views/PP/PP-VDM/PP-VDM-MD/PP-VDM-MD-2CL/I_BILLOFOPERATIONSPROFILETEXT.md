@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `BillOfOperationsApplication` | `CHAR(1)` | Application of the task list |
-| `BillOfOperationsProfile` | `CHAR(7)` | Profile |
-| `BillOfOperationsProfileName` | `CHAR(40)` | Text for Profile |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `BillOfOperationsApplication` |  | |  |  | `CHAR(1)` | Application of the task list |
+| `BillOfOperationsProfile` |  | |  |  | `CHAR(7)` | Profile |
+| `BillOfOperationsProfileName` |  | |  |  | `CHAR(40)` | Text for Profile |

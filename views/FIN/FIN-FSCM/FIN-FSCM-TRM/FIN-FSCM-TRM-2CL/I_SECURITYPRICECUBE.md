@@ -33,11 +33,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SecurityClass` | `CHAR(13)` | Security Class ID Number |
-| `SecurityExchange` | `CHAR(10)` | Security exchange |
-| `CalendarDate` | `DATS(8)` | Calendar Date |
-| `SecurityClassPriceType` | `CHAR(2)` | Market Data: Security Price Type |
-| `SecurityClassStockPriceCrcy` | `CUKY(5)` | Quotation Currency (that prices are in) |
-| `SecurityClassValueInQtanUnit` | `DEC(23)` | Price of Unit- or Percentage-Quoted Security |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SecurityClass` |  | |  |  | `CHAR(13)` | Security Class ID Number |
+| `SecurityExchange` |  | |  |  | `CHAR(10)` | Security exchange |
+| `CalendarDate` |  | |  |  | `DATS(8)` | Calendar Date |
+| `SecurityClassPriceType` |  | |  |  | `CHAR(2)` | Market Data: Security Price Type |
+| `SecurityClassStockPriceCrcy` |  | |  |  | `CUKY(5)` | Quotation Currency (that prices are in) |
+| `SecurityClassValueInQtanUnit` |  | |  |  | `DEC(23)` | Price of Unit- or Percentage-Quoted Security |

@@ -31,6 +31,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSAmountSubjectType` | `CHAR(2)` | Subject Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSAmountSubjectType` |  | |  |  | `CHAR(2)` | Subject Type |

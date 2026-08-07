@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CurrencyPair` | `CHAR(20)` | Currency Pair |
-| `SourceCurrency` | `CUKY(5)` | From Currency |
-| `TargetCurrency` | `CUKY(5)` | To Currency |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CurrencyPair` |  | |  |  | `CHAR(20)` | Currency Pair |
+| `SourceCurrency` |  | |  |  | `CUKY(5)` | From Currency |
+| `TargetCurrency` |  | |  |  | `CUKY(5)` | To Currency |

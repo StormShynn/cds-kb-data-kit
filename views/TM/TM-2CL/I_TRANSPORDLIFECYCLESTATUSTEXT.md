@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdLifeCycleStatus` | `CHAR(2)` | Life Cycle Status |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdLifeCycleStatusDesc` | `CHAR(60)` | Transportation Order Life Cycle Status Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdLifeCycleStatus` |  | |  |  | `CHAR(2)` | Life Cycle Status |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdLifeCycleStatusDesc` |  | |  |  | `CHAR(60)` | Transportation Order Life Cycle Status Description |

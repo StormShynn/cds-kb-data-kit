@@ -33,10 +33,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationReportingRuleVers` | `CHAR(3)` | Reporting Rule Version |
-| `CurrentDate` | `CHAR(7)` |  |
-| `ConsolidationReportingRuleID` | `CHAR(3)` | Reporting Rule Variant |
-| `ValidityStartDate` | `NUMC(7)` | Valid-From Fiscal Period and Year |
-| `ValidityEndDate` | `NUMC(7)` | Valid-To Fiscal Period and Year |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationReportingRuleVers` |  | |  |  | `CHAR(3)` | Reporting Rule Version |
+| `CurrentDate` |  | |  |  | `CHAR(7)` |  |
+| `ConsolidationReportingRuleID` |  | |  |  | `CHAR(3)` | Reporting Rule Variant |
+| `ValidityStartDate` |  | |  |  | `NUMC(7)` | Valid-From Fiscal Period and Year |
+| `ValidityEndDate` |  | |  |  | `NUMC(7)` | Valid-To Fiscal Period and Year |

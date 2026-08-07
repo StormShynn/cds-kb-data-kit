@@ -34,9 +34,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `TreasuryPositionAccount` | `CHAR(10)` | Futures Account for Listed Options and Futures |
-| `TreasuryPositionAccountName` | `CHAR(30)` | Name of the Futures Account for Listed Options and Futures |
-| `DepositoryBank` | `CHAR(10)` | Business Partner in Role Depository Bank |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `TreasuryPositionAccount` |  | |  |  | `CHAR(10)` | Futures Account for Listed Options and Futures |
+| `TreasuryPositionAccountName` |  | |  |  | `CHAR(30)` | Name of the Futures Account for Listed Options and Futures |
+| `DepositoryBank` |  | |  |  | `CHAR(10)` | Business Partner in Role Depository Bank |

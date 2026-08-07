@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtItmTxtDetnProced` | `CHAR(2)` | Text Determination Procedure for Item |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtItmTxtDetnProcedDesc` | `CHAR(20)` | Item Text Determination Procedure Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtItmTxtDetnProced` |  | |  |  | `CHAR(2)` | Text Determination Procedure for Item |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtItmTxtDetnProcedDesc` |  | |  |  | `CHAR(20)` | Item Text Determination Procedure Description |

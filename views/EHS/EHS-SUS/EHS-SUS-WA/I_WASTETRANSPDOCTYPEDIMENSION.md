@@ -32,7 +32,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EnvrmtWasteTranspDocType` | `CHAR(10)` | Waste Transportation Document Type ID |
-| `EnvWstTranspDocTypeDesc` | `CHAR(99)` | Waste Transportation Document Type Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EnvrmtWasteTranspDocType` |  | |  |  | `CHAR(10)` | Waste Transportation Document Type ID |
+| `EnvWstTranspDocTypeDesc` |  | |  |  | `CHAR(99)` | Waste Transportation Document Type Description |

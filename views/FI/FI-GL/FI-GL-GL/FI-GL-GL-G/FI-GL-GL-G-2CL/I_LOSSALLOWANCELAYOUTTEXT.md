@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `LossAllowanceLayout` | `CHAR(30)` | Key Figure Layout |
-| `LossAllowanceLayoutName` | `CHAR(70)` | Name of Key Figure Layout |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `LossAllowanceLayout` |  | |  |  | `CHAR(30)` | Key Figure Layout |
+| `LossAllowanceLayoutName` |  | |  |  | `CHAR(70)` | Name of Key Figure Layout |

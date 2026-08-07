@@ -33,32 +33,32 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `LedgerName` | `CHAR(30)` | Ledger Name |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `FiscalYear` | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` | `NUMC(3)` | Posting Period |
-| `BusinessPartner` | `CHAR(10)` | Business Partner Number |
-| `Country` | `CHAR(3)` | Country/Region Key |
-| `CreditRiskClass` | `CHAR(3)` | Risk Class |
-| `GeneralLedgerAgingIncrement` | `CHAR(15)` | Aging Increment |
-| `GLAccount` | `CHAR(10)` | Account Number |
-| `GLAccountName` | `CHAR(20)` | G/L Account Name |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `CustomerName` | `CHAR(80)` | Name of Customer |
-| `CostCenter` | `CHAR(10)` | Cost Center |
-| `CostCenterName` | `CHAR(20)` | Cost Center Name |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `ProfitCenterName` | `CHAR(20)` | Description of Profit Center |
-| `FunctionalArea` | `CHAR(16)` | Functional Area |
-| `FunctionalAreaName` | `CHAR(25)` | Name of the Functional Area |
-| `Segment` | `CHAR(10)` | Segment for Segmental Reporting |
-| `SegmentName` | `CHAR(50)` | Segment Name |
-| `LossAllowanceSortSequenceValue` | `NUMC(3)` | Sorting Order of Key Figures in a Layout |
-| `LossAllowanceKeyFigure` | `CHAR(30)` | Key Figure |
-| `LossAllowanceKeyFigureName` | `CHAR(70)` | Name of Key Figure |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `AmountInDisplayCurrency` | `CURR(23)` | Balance Amount |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `LedgerName` |  | |  |  | `CHAR(30)` | Ledger Name |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Posting Period |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
+| `GeneralLedgerAgingIncrement` |  | |  |  | `CHAR(15)` | Aging Increment |
+| `GLAccount` |  | |  |  | `CHAR(10)` | Account Number |
+| `GLAccountName` |  | |  |  | `CHAR(20)` | G/L Account Name |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CustomerName` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CostCenterName` |  | |  |  | `CHAR(20)` | Cost Center Name |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ProfitCenterName` |  | |  |  | `CHAR(20)` | Description of Profit Center |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `FunctionalAreaName` |  | |  |  | `CHAR(25)` | Name of the Functional Area |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `SegmentName` |  | |  |  | `CHAR(50)` | Segment Name |
+| `LossAllowanceSortSequenceValue` |  | |  |  | `NUMC(3)` | Sorting Order of Key Figures in a Layout |
+| `LossAllowanceKeyFigure` |  | |  |  | `CHAR(30)` | Key Figure |
+| `LossAllowanceKeyFigureName` |  | |  |  | `CHAR(70)` | Name of Key Figure |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Balance Amount |

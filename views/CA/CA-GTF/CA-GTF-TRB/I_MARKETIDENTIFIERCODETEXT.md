@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MarketIdentifierCode` | `CHAR(4)` | Market Identifier Code |
-| `Language` | `LANG(1)` | Language Key |
-| `MarketIdentifierCodeName` | `CHAR(40)` | Market Identifier Code Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MarketIdentifierCode` |  | |  |  | `CHAR(4)` | Market Identifier Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MarketIdentifierCodeName` |  | |  |  | `CHAR(40)` | Market Identifier Code Description |

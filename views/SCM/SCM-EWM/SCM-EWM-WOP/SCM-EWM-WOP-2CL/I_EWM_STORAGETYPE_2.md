@@ -32,9 +32,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `EWMStorageType` | `CHAR(4)` | Storage Type |
-| `EWMStorageTypeRole` | `CHAR(1)` | Storage Type Role |
-| `EWMStorageBehavior` | `CHAR(1)` | Storage Behavior |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `EWMStorageType` |  | |  |  | `CHAR(4)` | Storage Type |
+| `EWMStorageTypeRole` |  | |  |  | `CHAR(1)` | Storage Type Role |
+| `EWMStorageBehavior` |  | |  |  | `CHAR(1)` | Storage Behavior |

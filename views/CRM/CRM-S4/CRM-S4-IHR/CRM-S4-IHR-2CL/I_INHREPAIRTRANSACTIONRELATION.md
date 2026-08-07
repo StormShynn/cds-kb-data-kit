@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CustMgmtTransacRelationUUID` | `CHAR(22)` | Object Relationship Service : GUID binary link |
-| `CustMgmtPrdcssrTransactionUUID` | `RAW(16)` | GUID of a CRM Order Object |
-| `CustMgmtPrdcssrTransacObjType` | `CHAR(10)` | Object Type |
-| `CustMgmtSuccssrTransactionUUID` | `RAW(16)` | GUID of a CRM Order Object |
-| `CustMgmtSuccssrTransactionKey` | `CHAR(70)` | Object key |
-| `CustMgmtSuccssrTransacObjType` | `CHAR(10)` | Object Type |
-| `CustMgmtTransacRelationType` | `CHAR(4)` | Relationship type |
-| `CustMgmtPrdcssrTransactionKey` | `CHAR(70)` | Object key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CustMgmtTransacRelationUUID` |  | |  |  | `CHAR(22)` | Object Relationship Service : GUID binary link |
+| `CustMgmtPrdcssrTransactionUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `CustMgmtPrdcssrTransacObjType` |  | |  |  | `CHAR(10)` | Object Type |
+| `CustMgmtSuccssrTransactionUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `CustMgmtSuccssrTransactionKey` |  | |  |  | `CHAR(70)` | Object key |
+| `CustMgmtSuccssrTransacObjType` |  | |  |  | `CHAR(10)` | Object Type |
+| `CustMgmtTransacRelationType` |  | |  |  | `CHAR(4)` | Relationship type |
+| `CustMgmtPrdcssrTransactionKey` |  | |  |  | `CHAR(70)` | Object key |

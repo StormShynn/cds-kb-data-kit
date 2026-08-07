@@ -32,10 +32,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `Material` | `CHAR(40)` | Material Number |
-| `BatchIdentifyingPlant` | `CHAR(4)` | Plant |
-| `Batch` | `CHAR(10)` | Batch Number |
-| `BatchDescription` | `CHAR(40)` | Batch Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `BatchIdentifyingPlant` |  | |  |  | `CHAR(4)` | Plant |
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
+| `BatchDescription` |  | |  |  | `CHAR(40)` | Batch Description |

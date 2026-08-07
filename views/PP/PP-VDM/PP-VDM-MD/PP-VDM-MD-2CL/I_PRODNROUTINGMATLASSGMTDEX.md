@@ -35,25 +35,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Product` | `CHAR(40)` | Material Number |
-| `Plant` | `CHAR(4)` | Plant |
-| `BillOfOperationsType` | `CHAR(1)` | Task List Type |
-| `ProductionRoutingGroup` | `CHAR(8)` | Key for Task List Group |
-| `ProductionRouting` | `CHAR(2)` | Group Counter |
-| `ProductionRoutingMatlAssgmt` | `NUMC(7)` | Counter for Additional Criteria |
-| `ProductionRtgMatlAssgmtIntVers` | `NUMC(8)` | Internal counter |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` | `DATS(8)` | Valid-to date |
-| `ChangeNumber` | `CHAR(12)` | Change Number |
-| `CreationDate` | `DATS(8)` | Date Record Created On |
-| `CreatedByUser` | `CHAR(12)` | Created By User |
-| `LastChangeDate` | `DATS(8)` | Last Changed On |
-| `LastChangedByUser` | `CHAR(12)` | Last Changed By User |
-| `IsDeleted` | `CHAR(1)` | Deletion Indicator |
-| `IsImplicitlyDeleted` | `CHAR(1)` | Deletion Indicator |
-| `Supplier` | `CHAR(10)` | Supplier's Account Number |
-| `Customer` | `CHAR(10)` | Account number of customer |
-| `SalesOrder` | `CHAR(10)` | Sales Document |
-| `SalesOrderItem` | `NUMC(6)` | Sales Document Item |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Product` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `ProductionRoutingGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `ProductionRouting` |  | |  |  | `CHAR(2)` | Group Counter |
+| `ProductionRoutingMatlAssgmt` |  | |  |  | `NUMC(7)` | Counter for Additional Criteria |
+| `ProductionRtgMatlAssgmtIntVers` |  | |  |  | `NUMC(8)` | Internal counter |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-to date |
+| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date Record Created On |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By User |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By User |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `IsImplicitlyDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier's Account Number |
+| `Customer` |  | |  |  | `CHAR(10)` | Account number of customer |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Document |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Document Item |

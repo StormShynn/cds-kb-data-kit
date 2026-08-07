@@ -34,17 +34,17 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankPowerOfAttorneyUUID` | `RAW(16)` | Power of Attorney UUID |
-| `BankPowerOfAttorney` | `CHAR(20)` | Power of Attorney ID |
-| `BkPOAAuthorizationGroup` | `CHAR(10)` | Authorization Group for Powers of Attorney |
-| `ValidityStartDate` | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` | `DATS(8)` | Valid-To Date |
-| `BkPOAAdjustedValidityEndDate` | `DATS(8)` | Valid-To Date |
-| `BankPowerOfAttorneyType` | `CHAR(4)` | Power of Attorney Type |
-| `BankPowerOfAttorneyTypeName` | `CHAR(50)` | Power of Attorney Type Description |
-| `BkPOABankAccountAssignmentType` | `CHAR(2)` | Bank Account Assignment Type |
-| `BkPOABkAcctAssignmentTypeName` | `CHAR(60)` | Short Text for Fixed Values |
-| `BankPowerOfAttorneyName` | `CHAR(40)` | Power of Attorney Description |
-| `PaymentApprovalRule` | `CHAR(20)` | Payment Approval Rule ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankPowerOfAttorneyUUID` |  | |  |  | `RAW(16)` | Power of Attorney UUID |
+| `BankPowerOfAttorney` |  | |  |  | `CHAR(20)` | Power of Attorney ID |
+| `BkPOAAuthorizationGroup` |  | |  |  | `CHAR(10)` | Authorization Group for Powers of Attorney |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date |
+| `BkPOAAdjustedValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date |
+| `BankPowerOfAttorneyType` |  | |  |  | `CHAR(4)` | Power of Attorney Type |
+| `BankPowerOfAttorneyTypeName` |  | |  |  | `CHAR(50)` | Power of Attorney Type Description |
+| `BkPOABankAccountAssignmentType` |  | |  |  | `CHAR(2)` | Bank Account Assignment Type |
+| `BkPOABkAcctAssignmentTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `BankPowerOfAttorneyName` |  | |  |  | `CHAR(40)` | Power of Attorney Description |
+| `PaymentApprovalRule` |  | |  |  | `CHAR(20)` | Payment Approval Rule ID |

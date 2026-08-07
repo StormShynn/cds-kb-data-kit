@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `TranspOrdStopRole` | `CHAR(2)` | Role of the Stop |
-| `Language` | `LANG(1)` | Language Key |
-| `TranspOrdStopRoleDesc` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `TranspOrdStopRole` |  | |  |  | `CHAR(2)` | Role of the Stop |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `TranspOrdStopRoleDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

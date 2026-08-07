@@ -33,7 +33,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `RespyMgmtTeamID` | `NUMC(8)` | Object ID |
-| `CreditDecisionDocApprvrGroup` | `CHAR(40)` | Approver Group |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `RespyMgmtTeamID` |  | |  |  | `NUMC(8)` | Object ID |
+| `CreditDecisionDocApprvrGroup` |  | |  |  | `CHAR(40)` | Approver Group |

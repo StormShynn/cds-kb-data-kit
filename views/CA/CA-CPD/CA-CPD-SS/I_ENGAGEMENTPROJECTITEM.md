@@ -36,9 +36,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Commercial Project ID |
-| `EngagementProjectItemType` | `CHAR(5)` | Master Project: Related Object Link |
-| `EngagementProjectItem` | `CHAR(40)` | Item Key (Master Project) |
-| `EngagementProjectUUID` | `RAW(16)` | Engagement Project UUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Commercial Project ID |
+| `EngagementProjectItemType` |  | |  |  | `CHAR(5)` | Master Project: Related Object Link |
+| `EngagementProjectItem` |  | |  |  | `CHAR(40)` | Item Key (Master Project) |
+| `EngagementProjectUUID` |  | |  |  | `RAW(16)` | Engagement Project UUID |

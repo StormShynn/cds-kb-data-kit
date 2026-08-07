@@ -35,9 +35,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrProcessCategory` | `CHAR(2)` | Process Category of a Condition Contract |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrProcessCategoryDesc` | `CHAR(60)` | Description of Condition Contract Process Category |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrProcessCategory` |  | |  |  | `CHAR(2)` | Process Category of a Condition Contract |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrProcessCategoryDesc` |  | |  |  | `CHAR(60)` | Description of Condition Contract Process Category |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |

@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkPackage` | `CHAR(50)` | Plan Item |
-| `WorkPackageName` | `CHAR(60)` | Plan Item Description |
-| `EngagementProjFinPlanUUID` | `RAW(16)` | Financial Plan UUID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Plan Item |
+| `WorkPackageName` |  | |  |  | `CHAR(60)` | Plan Item Description |
+| `EngagementProjFinPlanUUID` |  | |  |  | `RAW(16)` | Financial Plan UUID |

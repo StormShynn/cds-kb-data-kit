@@ -36,32 +36,32 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CalendarMonth` | `NUMC(2)` | Calendar Month |
-| `CalendarYear` | `NUMC(4)` | Calendar Year |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `YearMonth` | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
-| `CustomerCountry` | `CHAR(3)` | Country / Region Key |
-| `CustomerRegion` | `CHAR(3)` | Region (State, Province, County) |
-| `AccountingClerk` | `CHAR(2)` | Accounting Clerk |
-| `ExchangeRateType` | `CHAR(4)` | Exchange Rate Type |
-| `ReconciliationAccount` | `CHAR(10)` | Reconciliation Account in General Ledger |
-| `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
-| `DisplayCurrency` | `CUKY(5)` | Display Currency |
-| `DurationUnit` | `UNIT(3)` |  |
-| `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
-| `CustomerName` | `CHAR(80)` | Name of Customer |
-| `CustomerCountryName` | `CHAR(50)` | Country/Region Name |
-| `CustomerRegionName` | `CHAR(20)` | Description |
-| `AccountingClerkName` | `CHAR(30)` | Name of Accounting Clerk |
-| `ReconciliationAccountLongName` | `CHAR(50)` | G/L Account Long Name |
-| `CustomerAccountGroup` | `CHAR(4)` | Customer Account Group |
-| `CustomerAccountGroupName` | `CHAR(30)` | Account Group Name |
-| `CustomerClassification` | `CHAR(2)` | Customer Classification |
-| `CustomerClassificationDesc` | `CHAR(20)` | Customer Classification Description |
-| `TotalAmountInDisplayCrcy` | `INT1(3)` |  |
-| `BeyondTermDays` | `INT1(3)` |  |
-| `PaymentsInTermPercent` | `INT1(3)` |  |
-| `PaymentsOutOfTermPercent` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `YearMonth` |  | |  |  | `CHAR(6)` | Calendar Year Month in external format MM.YYYY |
+| `CustomerCountry` |  | |  |  | `CHAR(3)` | Country / Region Key |
+| `CustomerRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `AccountingClerk` |  | |  |  | `CHAR(2)` | Accounting Clerk |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `ReconciliationAccount` |  | |  |  | `CHAR(10)` | Reconciliation Account in General Ledger |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
+| `DurationUnit` |  | |  |  | `UNIT(3)` |  |
+| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
+| `CustomerName` |  | |  |  | `CHAR(80)` | Name of Customer |
+| `CustomerCountryName` |  | |  |  | `CHAR(50)` | Country/Region Name |
+| `CustomerRegionName` |  | |  |  | `CHAR(20)` | Description |
+| `AccountingClerkName` |  | |  |  | `CHAR(30)` | Name of Accounting Clerk |
+| `ReconciliationAccountLongName` |  | |  |  | `CHAR(50)` | G/L Account Long Name |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `CustomerAccountGroupName` |  | |  |  | `CHAR(30)` | Account Group Name |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `CustomerClassificationDesc` |  | |  |  | `CHAR(20)` | Customer Classification Description |
+| `TotalAmountInDisplayCrcy` |  | |  |  | `INT1(3)` |  |
+| `BeyondTermDays` |  | |  |  | `INT1(3)` |  |
+| `PaymentsInTermPercent` |  | |  |  | `INT1(3)` |  |
+| `PaymentsOutOfTermPercent` |  | |  |  | `INT1(3)` |  |

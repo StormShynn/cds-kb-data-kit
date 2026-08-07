@@ -31,8 +31,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `HierarchyIDForFunctionalArea` | `CHAR(42)` | Hierarchy ID for Functional Area |
-| `CtrlObjForFunctionalArea` | `CHAR(50)` | Control Object for a Functional Area |
-| `CtrlObjNameForFunctionalArea` | `CHAR(50)` | Name of a Control Object for a Functional Area |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `HierarchyIDForFunctionalArea` |  | |  |  | `CHAR(42)` | Hierarchy ID for Functional Area |
+| `CtrlObjForFunctionalArea` |  | |  |  | `CHAR(50)` | Control Object for a Functional Area |
+| `CtrlObjNameForFunctionalArea` |  | |  |  | `CHAR(50)` | Name of a Control Object for a Functional Area |

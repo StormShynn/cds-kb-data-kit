@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `MatchingReasonCode` | `CHAR(6)` | Reason Code |
-| `Language` | `LANG(1)` | Language Key |
-| `MatchingReasonCodeDesc` | `CHAR(80)` | Medium Length Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `MatchingReasonCode` |  | |  |  | `CHAR(6)` | Reason Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `MatchingReasonCodeDesc` |  | |  |  | `CHAR(80)` | Medium Length Description |

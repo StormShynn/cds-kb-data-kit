@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `IsLeadingLedger` | `CHAR(1)` | Indicator: Leading Ledger |
-| `LedgerName` | `CHAR(30)` | Ledger Name |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `IsLeadingLedger` |  | |  |  | `CHAR(1)` | Indicator: Leading Ledger |
+| `LedgerName` |  | |  |  | `CHAR(30)` | Ledger Name |

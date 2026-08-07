@@ -31,9 +31,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key of Description |
-| `InhRepairItemStatus` | `CHAR(4)` | Repair Object Status |
-| `InhRepairItemCategory` | `CHAR(4)` | Item Category |
-| `InhRepairItemStatusName` | `CHAR(40)` | Description of Repair Object Status |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key of Description |
+| `InhRepairItemStatus` |  | |  |  | `CHAR(4)` | Repair Object Status |
+| `InhRepairItemCategory` |  | |  |  | `CHAR(4)` | Item Category |
+| `InhRepairItemStatusName` |  | |  |  | `CHAR(40)` | Description of Repair Object Status |

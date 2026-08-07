@@ -31,16 +31,16 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EHSTaskHostObjectInstanceUUID` | `RAW(16)` | Incident UUID |
-| `IncidentUUID` | `RAW(16)` | Incident UUID |
-| `InvestigationAccessRestriction` | `CHAR(1)` |  |
-| `IncidentCategory` | `CHAR(3)` | Incident Category |
-| `IncidentStatus` | `CHAR(2)` | Incident Status |
-| `Plant` | `CHAR(4)` | Plant ID |
-| `IncidentID` | `CHAR(20)` | Incident ID |
-| `EHSLocationUUID` | `RAW(16)` | Location |
-| `Country` | `CHAR(3)` | Country/Region of Incident |
-| `Region` | `CHAR(3)` | Region of Incident |
-| `IncidentAccessRestriction` | `CHAR(1)` | Restricted Access to Incident Record |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EHSTaskHostObjectInstanceUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `IncidentUUID` |  | |  |  | `RAW(16)` | Incident UUID |
+| `InvestigationAccessRestriction` |  | |  |  | `CHAR(1)` |  |
+| `IncidentCategory` |  | |  |  | `CHAR(3)` | Incident Category |
+| `IncidentStatus` |  | |  |  | `CHAR(2)` | Incident Status |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
+| `IncidentID` |  | |  |  | `CHAR(20)` | Incident ID |
+| `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region of Incident |
+| `Region` |  | |  |  | `CHAR(3)` | Region of Incident |
+| `IncidentAccessRestriction` |  | |  |  | `CHAR(1)` | Restricted Access to Incident Record |

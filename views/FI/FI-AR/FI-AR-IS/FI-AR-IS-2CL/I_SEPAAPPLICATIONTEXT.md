@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `SEPAMandateApplication` | `CHAR(1)` | SEPA Mandate Management: SEPA Application |
-| `SEPAMandateApplicationName` | `CHAR(50)` | Mandate Management: Name of Application |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SEPAMandateApplication` |  | |  |  | `CHAR(1)` | SEPA Mandate Management: SEPA Application |
+| `SEPAMandateApplicationName` |  | |  |  | `CHAR(50)` | Mandate Management: Name of Application |

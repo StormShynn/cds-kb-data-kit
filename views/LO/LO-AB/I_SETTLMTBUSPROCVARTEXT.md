@@ -30,8 +30,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtBusProcVar` | `CHAR(4)` | Settlement Management Process Category |
-| `Language` | `LANG(1)` | Language Key |
-| `SettlmtBusProcVarDesc` | `CHAR(40)` | Process Category Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtBusProcVar` |  | |  |  | `CHAR(4)` | Settlement Management Process Category |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SettlmtBusProcVarDesc` |  | |  |  | `CHAR(40)` | Process Category Description |

@@ -30,6 +30,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LoanChgPointerChangeCat` | `CHAR(4)` | Change Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LoanChgPointerChangeCat` |  | |  |  | `CHAR(4)` | Change Category |

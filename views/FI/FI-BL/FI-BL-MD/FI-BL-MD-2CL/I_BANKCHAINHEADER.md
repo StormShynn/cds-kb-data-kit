@@ -33,15 +33,15 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BkChnCountryKeyOfRecipientBank` | `CHAR(3)` | Country/Region Key of Recipient Bank |
-| `BkChnBankKeyOfRecipientBank` | `CHAR(15)` | Bank Key of Recipient Bank |
-| `BkChnAcctNumberAtRecipientBank` | `CHAR(35)` | Account Number at Recipient Bank |
-| `BkChnCurrencyKey` | `CUKY(5)` | Currency |
-| `BkChnCountryKeyOfSenderBank` | `CHAR(3)` | Country/Region Key of Sender Bank |
-| `BkChnBankKeyOfSenderBank` | `CHAR(15)` | Bank Key of Sender Bank |
-| `BkChnPaymentMethodSupplement` | `CHAR(2)` | Payment method supplement |
-| `BkChnBankAccountNumberForUI` | `CHAR(35)` | Account Number at Recipient Bank |
-| `NumberOfOccurrences` | `INT4(10)` | Account Number of a Technical Type |
-| `IBAN` | `CHAR(34)` | IBAN (International Bank Account Number) |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BkChnCountryKeyOfRecipientBank` |  | |  |  | `CHAR(3)` | Country/Region Key of Recipient Bank |
+| `BkChnBankKeyOfRecipientBank` |  | |  |  | `CHAR(15)` | Bank Key of Recipient Bank |
+| `BkChnAcctNumberAtRecipientBank` |  | |  |  | `CHAR(35)` | Account Number at Recipient Bank |
+| `BkChnCurrencyKey` |  | |  |  | `CUKY(5)` | Currency |
+| `BkChnCountryKeyOfSenderBank` |  | |  |  | `CHAR(3)` | Country/Region Key of Sender Bank |
+| `BkChnBankKeyOfSenderBank` |  | |  |  | `CHAR(15)` | Bank Key of Sender Bank |
+| `BkChnPaymentMethodSupplement` |  | |  |  | `CHAR(2)` | Payment method supplement |
+| `BkChnBankAccountNumberForUI` |  | |  |  | `CHAR(35)` | Account Number at Recipient Bank |
+| `NumberOfOccurrences` |  | |  |  | `INT4(10)` | Account Number of a Technical Type |
+| `IBAN` |  | |  |  | `CHAR(34)` | IBAN (International Bank Account Number) |

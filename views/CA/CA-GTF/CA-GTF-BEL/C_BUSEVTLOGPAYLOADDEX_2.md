@@ -32,22 +32,22 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BusinessEventUUID` | `CHAR(32)` | Event GUID |
-| `SAPObjectType` | `CHAR(30)` | RAP SOT: SAP Object Type |
-| `BusEvtLogFieldName` | `CHAR(30)` | Field Identifier for SAP Object |
-| `BusEvtLogOldFieldValue` | `CHAR(256)` | Previous Value of an Attribute |
-| `BusEvtLogOldFieldUnit` | `UNIT(3)` | Previous Unit of Measure |
-| `BusEvtLogNewFieldValue` | `CHAR(256)` | Updated Value of an Attribute |
-| `BusEvtLogNewFieldUnit` | `UNIT(3)` | Updated Unit of Measure |
-| `BusEvtLogOldFieldCurrency` | `CUKY(5)` | Previous Currency Key |
-| `BusEvtLogNewFieldCurrency` | `CUKY(5)` | Updated Currency Key |
-| `BusEvtLogFieldHasOldValue` | `CHAR(1)` | Field has an Old Value |
-| `BusEvtLogFieldIsQualifier` | `CHAR(1)` | Specifies if the Attribute is a Qualifier |
-| `BusEvtLogLastChangedDateTime` | `DEC(15)` | Timestamp of Last Change |
-| `BusEvtLogGlobalFieldName` | `CHAR(30)` | Field Name |
-| `BuEvLgGlobalFieldNameUpperCase` | `CHAR(30)` | Property Name of the Object |
-| `ChangeDocumentDatabaseTable` | `CHAR(30)` | Table Name |
-| `ChangeDocDatabaseTableField` | `CHAR(30)` | Field Name |
-| `BusEvtLogBusinessActivity` | `CHAR(32)` | Activity ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BusinessEventUUID` |  | |  |  | `CHAR(32)` | Event GUID |
+| `SAPObjectType` |  | |  |  | `CHAR(30)` | RAP SOT: SAP Object Type |
+| `BusEvtLogFieldName` |  | |  |  | `CHAR(30)` | Field Identifier for SAP Object |
+| `BusEvtLogOldFieldValue` |  | |  |  | `CHAR(256)` | Previous Value of an Attribute |
+| `BusEvtLogOldFieldUnit` |  | |  |  | `UNIT(3)` | Previous Unit of Measure |
+| `BusEvtLogNewFieldValue` |  | |  |  | `CHAR(256)` | Updated Value of an Attribute |
+| `BusEvtLogNewFieldUnit` |  | |  |  | `UNIT(3)` | Updated Unit of Measure |
+| `BusEvtLogOldFieldCurrency` |  | |  |  | `CUKY(5)` | Previous Currency Key |
+| `BusEvtLogNewFieldCurrency` |  | |  |  | `CUKY(5)` | Updated Currency Key |
+| `BusEvtLogFieldHasOldValue` |  | |  |  | `CHAR(1)` | Field has an Old Value |
+| `BusEvtLogFieldIsQualifier` |  | |  |  | `CHAR(1)` | Specifies if the Attribute is a Qualifier |
+| `BusEvtLogLastChangedDateTime` |  | |  |  | `DEC(15)` | Timestamp of Last Change |
+| `BusEvtLogGlobalFieldName` |  | |  |  | `CHAR(30)` | Field Name |
+| `BuEvLgGlobalFieldNameUpperCase` |  | |  |  | `CHAR(30)` | Property Name of the Object |
+| `ChangeDocumentDatabaseTable` |  | |  |  | `CHAR(30)` | Table Name |
+| `ChangeDocDatabaseTableField` |  | |  |  | `CHAR(30)` | Field Name |
+| `BusEvtLogBusinessActivity` |  | |  |  | `CHAR(32)` | Activity ID |

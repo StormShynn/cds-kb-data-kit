@@ -29,8 +29,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `ColltrlAgrmtTermnNoticeFrqcy` | `CHAR(2)` | The Unit for the Termination Notice Period |
-| `ColltrlAgrmtTermnNtcFrqcyTxt` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ColltrlAgrmtTermnNoticeFrqcy` |  | |  |  | `CHAR(2)` | The Unit for the Termination Notice Period |
+| `ColltrlAgrmtTermnNtcFrqcyTxt` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

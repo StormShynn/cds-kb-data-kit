@@ -29,6 +29,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `AgreementTermnRightType` | `CHAR(6)` | Termination Right Type |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `AgreementTermnRightType` |  | |  |  | `CHAR(6)` | Termination Right Type |

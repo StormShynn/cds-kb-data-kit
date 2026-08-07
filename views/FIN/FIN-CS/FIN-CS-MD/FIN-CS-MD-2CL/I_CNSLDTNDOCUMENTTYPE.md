@@ -35,10 +35,10 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ConsolidationDimension` | `CHAR(2)` | Dimension |
-| `ConsolidationDocumentType` | `CHAR(2)` | Document Type |
-| `PostingLevel` | `CHAR(2)` | Posting Level |
-| `ConsolidationBalanceCheck` | `CHAR(1)` | Balance check for consolidation document |
-| `ConsolidationPostgItemAutoFlag` | `CHAR(1)` | Manual Posting |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ConsolidationDimension` |  | |  |  | `CHAR(2)` | Dimension |
+| `ConsolidationDocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `PostingLevel` |  | |  |  | `CHAR(2)` | Posting Level |
+| `ConsolidationBalanceCheck` |  | |  |  | `CHAR(1)` | Balance check for consolidation document |
+| `ConsolidationPostgItemAutoFlag` |  | |  |  | `CHAR(1)` | Manual Posting |

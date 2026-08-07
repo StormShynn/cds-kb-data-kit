@@ -33,6 +33,6 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `OnOrOffLeaseSale` | `CHAR(1)` | Texas On-/Off-Lease Sale Code |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `OnOrOffLeaseSale` |  | |  |  | `CHAR(1)` | Texas On-/Off-Lease Sale Code |

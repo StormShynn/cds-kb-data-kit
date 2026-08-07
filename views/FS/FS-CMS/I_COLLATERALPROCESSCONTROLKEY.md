@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CollateralProcessCtrlObj` | `CHAR(6)` | Process Object |
-| `CollateralProcessControlKey` | `CHAR(10)` | Process Control Key |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CollateralProcessCtrlObj` |  | |  |  | `CHAR(6)` | Process Object |
+| `CollateralProcessControlKey` |  | |  |  | `CHAR(10)` | Process Control Key |

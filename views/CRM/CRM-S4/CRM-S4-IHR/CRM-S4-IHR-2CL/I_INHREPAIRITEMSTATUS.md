@@ -31,7 +31,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `InhRepairItemStatus` | `CHAR(4)` | Repair Object Status |
-| `InhRepairItemCategory` | `CHAR(4)` | Item Category |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `InhRepairItemStatus` |  | |  |  | `CHAR(4)` | Repair Object Status |
+| `InhRepairItemCategory` |  | |  |  | `CHAR(4)` | Item Category |

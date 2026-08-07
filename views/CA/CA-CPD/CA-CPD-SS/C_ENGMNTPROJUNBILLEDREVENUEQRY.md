@@ -34,25 +34,25 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `ProjectManagerName` | `CHAR(80)` |  |
-| `EngagementProject` | `CHAR(40)` | Engagement Project ID |
-| `ProjectVisibility` | `CHAR(1)` | Confidential Indicator for Commercial Project |
-| `SalesOrder` | `CHAR(10)` | Sales Order |
-| `SalesOrderItem` | `NUMC(6)` | Sales Order Item |
-| `EngagementProjectServiceOrg` | `CHAR(5)` | Service Organization |
-| `ProjectStartDate` | `DATS(8)` | Commercial Project: Start Date |
-| `ProjectEndDate` | `DATS(8)` | Commercial Project: End Date |
-| `ControllingArea` | `CHAR(4)` | Controlling area for the project |
-| `CompanyCode` | `CHAR(4)` | Company code for the project |
-| `ProfitCenter` | `CHAR(10)` | Profit Center |
-| `CostCenter` | `CHAR(20)` | Organization Unit Key |
-| `Customer` | `CHAR(10)` | Customer Number |
-| `EngagementProjectStage` | `CHAR(4)` | Commercial Project: Stage |
-| `SalesOrderItemCategory` | `CHAR(4)` | Sales Document Item Category |
-| `Material` | `CHAR(40)` |  |
-| `IsMyProject` | `CHAR(1)` |  |
-| `FiscalYearPeriod` | `CHAR(7)` |  |
-| `UnbilldRevnAmountInProjCrcy` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `ProjectManagerName` |  | |  |  | `CHAR(80)` |  |
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Engagement Project ID |
+| `ProjectVisibility` |  | |  |  | `CHAR(1)` | Confidential Indicator for Commercial Project |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `EngagementProjectServiceOrg` |  | |  |  | `CHAR(5)` | Service Organization |
+| `ProjectStartDate` |  | |  |  | `DATS(8)` | Commercial Project: Start Date |
+| `ProjectEndDate` |  | |  |  | `DATS(8)` | Commercial Project: End Date |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling area for the project |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company code for the project |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(20)` | Organization Unit Key |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |
+| `SalesOrderItemCategory` |  | |  |  | `CHAR(4)` | Sales Document Item Category |
+| `Material` |  | |  |  | `CHAR(40)` |  |
+| `IsMyProject` |  | |  |  | `CHAR(1)` |  |
+| `FiscalYearPeriod` |  | |  |  | `CHAR(7)` |  |
+| `UnbilldRevnAmountInProjCrcy` |  | |  |  | `INT1(3)` |  |

@@ -31,63 +31,63 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CompanyCode` | `CHAR(4)` | Company Code |
-| `PostedDocumentID` | `CHAR(10)` | Document Number of Document Header (Loan) |
-| `PostedDocumentActivityNumber` | `CHAR(3)` | Activity number |
-| `CashFlowItemType` | `CHAR(4)` | Flow Type |
-| `CashFlowItemReferenceType` | `CHAR(4)` | Reference flow type |
-| `CashFlowItemCategory` | `CHAR(4)` | Flow Category |
-| `CashFlowItmNominalAmt` | `CURR(13)` | Nominal amount |
-| `CashFlowItmNominalAmtCrcy` | `CUKY(5)` | Currency of nominal amount |
-| `CshFlwItmAmtInPosCrcy` | `CURR(13)` | Amount in Position Currency |
-| `CashFlowItemPositionCurrency` | `CUKY(5)` | Position Currency (Currency of Position Amount) |
-| `CshFlwItmAmtInSettlmtCrcy` | `CURR(13)` | Settlement Amount |
-| `CashFlowItemSettlementCurrency` | `CUKY(5)` | Settlement Currency |
-| `CashFlowItemCalcDate` | `DATS(8)` | Calculation Date |
-| `CashFlowItemDueDate` | `DATS(8)` | Due Date |
-| `CashFlowItemPaymentDate` | `DATS(8)` | Payment Date |
-| `CalculationPeriodStartDate` | `DATS(8)` | Start of Calculation Period |
-| `CashFlowItemPostingDirection` | `CHAR(1)` | Debit/credit indicator |
-| `CshFlwItmDebitPostgAcct` | `CHAR(10)` | Account for debit posting |
-| `CshFlwItmCreditPostgAcct` | `CHAR(10)` | Account for credit posting |
-| `CashFlowItemPercentageRate` | `DEC(10)` | Percentage rate for condition items |
-| `CashFlowItemSource` | `CHAR(1)` | Source of flow record |
-| `CalculationPeriodEndDate` | `DATS(8)` | End of Calculation Period |
-| `CashFlowItemGenerationDate` | `DATS(8)` | Flow data key: System date |
-| `CashFlowItemGenerationTime` | `TIMS(6)` | Transaction data key: system time |
-| `CashFlowItemSequenceNumber` | `NUMC(4)` | Transaction data key: Consecutive number |
-| `LoanBusinessArea` | `CHAR(4)` | Business Area |
-| `FinConditionConditionType` | `NUMC(4)` | Condition Type (Smallest Subdivision of Condition Records) |
-| `CalcPeriodStartDateIsExclusive` | `NUMC(1)` | Exclusive Indicator for the Start of a Calculation Period |
-| `CalcPeriodEndDateIsInclusive` | `NUMC(1)` | Inclusive Indicator for the End of a Calculation Period |
-| `CalcEndDteIsInclusive` | `NUMC(1)` | Inclusive Indicator for Beginning and End of a Period |
-| `CshFlwItmSettlementDate` | `DATS(8)` | Settlement date |
-| `CshFlwItmClrgDteIsInclusive` | `NUMC(1)` | Inclusive Indicator for Clearing Date |
-| `AccrDefrlRefFlwCat` | `CHAR(4)` | Refer.flow category in accrual/deferral flow records |
-| `DebitCrdtCtrlActyType` | `NUMC(2)` | Activity indicator for debit/credit control |
-| `CashFlowItemEnteredBy` | `CHAR(12)` | Entered By |
-| `CashFlowItemEnteredDate` | `DATS(8)` | First Entered On |
-| `CashFlowItemEnteredTime` | `TIMS(6)` | Time of Creation |
-| `CashFlowItemEnteredSource` | `CHAR(10)` | Source of Initial Entry |
-| `CashFlowItemEditedBy` | `CHAR(12)` | Employee ID |
-| `CashFlowItemEditedDate` | `DATS(8)` | Last Edited On |
-| `CashFlowItemEditedTime` | `TIMS(6)` | Last Edited At |
-| `CashFlowItemEditedSource` | `CHAR(10)` | Editing Source |
-| `LoanMainBrwrCustNmbr` | `CHAR(10)` | Main Borrower Customer Number |
-| `AccountingDocument` | `CHAR(10)` | Document Number of an Accounting Document |
-| `LoanCshFlwItmActivityCat` | `CHAR(4)` | Activity Category (Posting Area) |
-| `CshFlwItmDirectionOfFlow` | `CHAR(1)` | Direction of Flow |
-| `CashFlowItemBillDueDate` | `DATS(8)` | Due Date for Bill |
-| `LoanContractID` | `CHAR(13)` | Contract Number |
-| `LoanClassfctnNmbr` | `CHAR(13)` | Classification Number for Finance Projects |
-| `LoanLifeCycleStatus` | `NUMC(2)` | Status of data record |
-| `LoanAcctAssgmtRef` | `CHAR(8)` | Account Assignment Reference in Financial Assets Management |
-| `CshFlwItmGLAccount` | `CHAR(10)` | General Ledger Account |
-| `CashFlowItemPostingDate` | `DATS(8)` | Posting Date in the Document |
-| `CashFlowItemReversalStatus` | `CHAR(1)` | Reversal indicator |
-| `ReverseDocument` | `CHAR(10)` | Reverse Document Number |
-| `WvrWriteoffDocument` | `CHAR(10)` | Doc.no. of debit pos. doc.header (only for inc.pmnt records) |
-| `CshFlwItmTransfToFinAcctgDte` | `DATS(8)` | Date of transferal to FiAc |
-| `CshFlwItmBusTransNmbr` | `CHAR(10)` | Daybook no. |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `PostedDocumentID` |  | |  |  | `CHAR(10)` | Document Number of Document Header (Loan) |
+| `PostedDocumentActivityNumber` |  | |  |  | `CHAR(3)` | Activity number |
+| `CashFlowItemType` |  | |  |  | `CHAR(4)` | Flow Type |
+| `CashFlowItemReferenceType` |  | |  |  | `CHAR(4)` | Reference flow type |
+| `CashFlowItemCategory` |  | |  |  | `CHAR(4)` | Flow Category |
+| `CashFlowItmNominalAmt` |  | |  |  | `CURR(13)` | Nominal amount |
+| `CashFlowItmNominalAmtCrcy` |  | |  |  | `CUKY(5)` | Currency of nominal amount |
+| `CshFlwItmAmtInPosCrcy` |  | |  |  | `CURR(13)` | Amount in Position Currency |
+| `CashFlowItemPositionCurrency` |  | |  |  | `CUKY(5)` | Position Currency (Currency of Position Amount) |
+| `CshFlwItmAmtInSettlmtCrcy` |  | |  |  | `CURR(13)` | Settlement Amount |
+| `CashFlowItemSettlementCurrency` |  | |  |  | `CUKY(5)` | Settlement Currency |
+| `CashFlowItemCalcDate` |  | |  |  | `DATS(8)` | Calculation Date |
+| `CashFlowItemDueDate` |  | |  |  | `DATS(8)` | Due Date |
+| `CashFlowItemPaymentDate` |  | |  |  | `DATS(8)` | Payment Date |
+| `CalculationPeriodStartDate` |  | |  |  | `DATS(8)` | Start of Calculation Period |
+| `CashFlowItemPostingDirection` |  | |  |  | `CHAR(1)` | Debit/credit indicator |
+| `CshFlwItmDebitPostgAcct` |  | |  |  | `CHAR(10)` | Account for debit posting |
+| `CshFlwItmCreditPostgAcct` |  | |  |  | `CHAR(10)` | Account for credit posting |
+| `CashFlowItemPercentageRate` |  | |  |  | `DEC(10)` | Percentage rate for condition items |
+| `CashFlowItemSource` |  | |  |  | `CHAR(1)` | Source of flow record |
+| `CalculationPeriodEndDate` |  | |  |  | `DATS(8)` | End of Calculation Period |
+| `CashFlowItemGenerationDate` |  | |  |  | `DATS(8)` | Flow data key: System date |
+| `CashFlowItemGenerationTime` |  | |  |  | `TIMS(6)` | Transaction data key: system time |
+| `CashFlowItemSequenceNumber` |  | |  |  | `NUMC(4)` | Transaction data key: Consecutive number |
+| `LoanBusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `FinConditionConditionType` |  | |  |  | `NUMC(4)` | Condition Type (Smallest Subdivision of Condition Records) |
+| `CalcPeriodStartDateIsExclusive` |  | |  |  | `NUMC(1)` | Exclusive Indicator for the Start of a Calculation Period |
+| `CalcPeriodEndDateIsInclusive` |  | |  |  | `NUMC(1)` | Inclusive Indicator for the End of a Calculation Period |
+| `CalcEndDteIsInclusive` |  | |  |  | `NUMC(1)` | Inclusive Indicator for Beginning and End of a Period |
+| `CshFlwItmSettlementDate` |  | |  |  | `DATS(8)` | Settlement date |
+| `CshFlwItmClrgDteIsInclusive` |  | |  |  | `NUMC(1)` | Inclusive Indicator for Clearing Date |
+| `AccrDefrlRefFlwCat` |  | |  |  | `CHAR(4)` | Refer.flow category in accrual/deferral flow records |
+| `DebitCrdtCtrlActyType` |  | |  |  | `NUMC(2)` | Activity indicator for debit/credit control |
+| `CashFlowItemEnteredBy` |  | |  |  | `CHAR(12)` | Entered By |
+| `CashFlowItemEnteredDate` |  | |  |  | `DATS(8)` | First Entered On |
+| `CashFlowItemEnteredTime` |  | |  |  | `TIMS(6)` | Time of Creation |
+| `CashFlowItemEnteredSource` |  | |  |  | `CHAR(10)` | Source of Initial Entry |
+| `CashFlowItemEditedBy` |  | |  |  | `CHAR(12)` | Employee ID |
+| `CashFlowItemEditedDate` |  | |  |  | `DATS(8)` | Last Edited On |
+| `CashFlowItemEditedTime` |  | |  |  | `TIMS(6)` | Last Edited At |
+| `CashFlowItemEditedSource` |  | |  |  | `CHAR(10)` | Editing Source |
+| `LoanMainBrwrCustNmbr` |  | |  |  | `CHAR(10)` | Main Borrower Customer Number |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
+| `LoanCshFlwItmActivityCat` |  | |  |  | `CHAR(4)` | Activity Category (Posting Area) |
+| `CshFlwItmDirectionOfFlow` |  | |  |  | `CHAR(1)` | Direction of Flow |
+| `CashFlowItemBillDueDate` |  | |  |  | `DATS(8)` | Due Date for Bill |
+| `LoanContractID` |  | |  |  | `CHAR(13)` | Contract Number |
+| `LoanClassfctnNmbr` |  | |  |  | `CHAR(13)` | Classification Number for Finance Projects |
+| `LoanLifeCycleStatus` |  | |  |  | `NUMC(2)` | Status of data record |
+| `LoanAcctAssgmtRef` |  | |  |  | `CHAR(8)` | Account Assignment Reference in Financial Assets Management |
+| `CshFlwItmGLAccount` |  | |  |  | `CHAR(10)` | General Ledger Account |
+| `CashFlowItemPostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `CashFlowItemReversalStatus` |  | |  |  | `CHAR(1)` | Reversal indicator |
+| `ReverseDocument` |  | |  |  | `CHAR(10)` | Reverse Document Number |
+| `WvrWriteoffDocument` |  | |  |  | `CHAR(10)` | Doc.no. of debit pos. doc.header (only for inc.pmnt records) |
+| `CshFlwItmTransfToFinAcctgDte` |  | |  |  | `DATS(8)` | Date of transferal to FiAc |
+| `CshFlwItmBusTransNmbr` |  | |  |  | `CHAR(10)` | Daybook no. |

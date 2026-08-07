@@ -31,14 +31,14 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `PayFnPaymentUUID` | `RAW(16)` | Payment UUID |
-| `PayFnBusinessStatus` | `CHAR(4)` | Payment Business Status |
-| `PayFnStatusReasonISOCode` | `CHAR(35)` | Status Reason Standard ISO Code |
-| `PayFnBusinessStatusText` | `CHAR(140)` | Payment Business Status Description |
-| `PaymentStatusReasonText` | `CHAR(140)` | ISO Code Name |
-| `PayFnNotificationDurationHr` | `DEC(10)` |  |
-| `SitnBaseTemplateID` | `CHAR(40)` | Situation Scenario ID |
-| `SitnConfignTemplateID` | `CHAR(40)` | Situation Template ID |
-| `SitnTypeID` | `CHAR(40)` | Situation Type ID |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `PayFnPaymentUUID` |  | |  |  | `RAW(16)` | Payment UUID |
+| `PayFnBusinessStatus` |  | |  |  | `CHAR(4)` | Payment Business Status |
+| `PayFnStatusReasonISOCode` |  | |  |  | `CHAR(35)` | Status Reason Standard ISO Code |
+| `PayFnBusinessStatusText` |  | |  |  | `CHAR(140)` | Payment Business Status Description |
+| `PaymentStatusReasonText` |  | |  |  | `CHAR(140)` | ISO Code Name |
+| `PayFnNotificationDurationHr` |  | |  |  | `DEC(10)` |  |
+| `SitnBaseTemplateID` |  | |  |  | `CHAR(40)` | Situation Scenario ID |
+| `SitnConfignTemplateID` |  | |  |  | `CHAR(40)` | Situation Template ID |
+| `SitnTypeID` |  | |  |  | `CHAR(40)` | Situation Type ID |

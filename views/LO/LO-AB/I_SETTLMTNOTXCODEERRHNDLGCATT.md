@@ -33,9 +33,9 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `SettlmtNoTxCodeErrHndlgCat` | `CHAR(1)` | Handling of Missing Tax Code |
-| `Language` | `LANG(1)` | Language Key |
-| `DomainValue` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
-| `SettlmtNoTxCodeErrHndlgCatName` | `CHAR(60)` | Text of Missing Tax Code Handling |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `SettlmtNoTxCodeErrHndlgCat` |  | |  |  | `CHAR(1)` | Handling of Missing Tax Code |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  |  | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SettlmtNoTxCodeErrHndlgCatName` |  | |  |  | `CHAR(60)` | Text of Missing Tax Code Handling |

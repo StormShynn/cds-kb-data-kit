@@ -35,11 +35,11 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `BankCountry` | `CHAR(3)` | Bank Country/Region Key |
-| `Bank` | `CHAR(15)` | Bank Keys |
-| `CreditRating` | `CHAR(3)` | Rating |
-| `NumberOfBankAccounts` | `INT4(10)` |  |
-| `NumberOfCompanyCodes` | `INT4(10)` |  |
-| `NrOfBanksRated` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `Bank` |  | |  |  | `CHAR(15)` | Bank Keys |
+| `CreditRating` |  | |  |  | `CHAR(3)` | Rating |
+| `NumberOfBankAccounts` |  | |  |  | `INT4(10)` |  |
+| `NumberOfCompanyCodes` |  | |  |  | `INT4(10)` |  |
+| `NrOfBanksRated` |  | |  |  | `INT1(3)` |  |

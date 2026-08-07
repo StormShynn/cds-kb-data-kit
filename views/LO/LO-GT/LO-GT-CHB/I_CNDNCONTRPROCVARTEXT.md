@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `CndnContrProcVar` | `CHAR(4)` | Condition Contract Process Variant |
-| `Language` | `LANG(1)` | Language Key |
-| `CndnContrProcVarDesc` | `CHAR(40)` | Condition Contract Process Variant Text |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `CndnContrProcVar` |  | |  |  | `CHAR(4)` | Condition Contract Process Variant |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `CndnContrProcVarDesc` |  | |  |  | `CHAR(40)` | Condition Contract Process Variant Text |

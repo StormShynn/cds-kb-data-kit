@@ -33,8 +33,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `Language` | `LANG(1)` | Language Key |
-| `SEPAMandateStatus` | `CHAR(1)` | Mandate Status |
-| `SEPAMandateStatusName` | `CHAR(60)` | Short Text for Fixed Values |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SEPAMandateStatus` |  | |  |  | `CHAR(1)` | Mandate Status |
+| `SEPAMandateStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

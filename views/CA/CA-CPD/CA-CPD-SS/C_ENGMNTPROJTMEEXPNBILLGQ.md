@@ -35,38 +35,38 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EngagementProject` | `CHAR(40)` | Project |
-| `IsMyProject` | `CHAR(1)` |  |
-| `ProjectVisibility` | `CHAR(1)` | Confidential Indicator for Commercial Project |
-| `WBSElement` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) |
-| `SalesOrderItemText` | `CHAR(40)` | Short Text for Sales Order Item |
-| `CappedNetAmtAlertThldInPct` | `NUMC(3)` |  |
-| `CappedNetAmount` | `CURR(15)` |  |
-| `ActlRevnAmt` | `CURR(23)` |  |
-| `PlndCostAmt` | `CURR(17)` | Planned Cost |
-| `PlannedEffortCostAmt` | `CURR(17)` | Planned Cost |
-| `PlndEffortQty` | `QUAN(15)` | Planned Effort |
-| `ActualPlanDeviationCost` | `CURR(17)` | Cost Deviation |
-| `ActualPlanDeviationEffort` | `QUAN(15)` | Effort Deviation |
-| `ActlCostAmt` | `CURR(23)` | Actual Cost |
-| `ActlEffortQty` | `QUAN(23)` | Actual Effort |
-| `PlannedExpenseCost` | `CURR(18)` |  |
-| `ActualExpenseCost` | `CURR(23)` | Actual Cost |
-| `ActualPlanDeviationExpnCost` | `CURR(17)` |  |
-| `PlannedCostRate` | `INT1(3)` |  |
-| `CostVariance` | `INT1(3)` |  |
-| `EffortVariance` | `INT1(3)` |  |
-| `CalculatedAdjustedRmngCost` | `INT1(3)` |  |
-| `CalculatedAdjustedRmngEffort` | `INT1(3)` |  |
-| `CalcdAdjustedRmngExpnCost` | `INT1(3)` |  |
-| `AdjustedRemainingExpnCost` | `INT1(3)` |  |
-| `AdjustedRemainingEffort` | `INT1(3)` |  |
-| `AdjustedRemainingEffortCost` | `INT1(3)` |  |
-| `AdjustedRemainingCostPlnAmt` | `INT1(3)` |  |
-| `EstimateAtCompletionEffort` | `INT1(3)` |  |
-| `EstimateAtCompletionCost` | `INT1(3)` |  |
-| `EffortCompletionRateInPercent` | `INT1(3)` |  |
-| `CostCompletionRateInPercent` | `INT1(3)` |  |
-| `CappedNetAmountConsumedInPct` | `INT1(3)` |  |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EngagementProject` |  | |  |  | `CHAR(40)` | Project |
+| `IsMyProject` |  | |  |  | `CHAR(1)` |  |
+| `ProjectVisibility` |  | |  |  | `CHAR(1)` | Confidential Indicator for Commercial Project |
+| `WBSElement` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) |
+| `SalesOrderItemText` |  | |  |  | `CHAR(40)` | Short Text for Sales Order Item |
+| `CappedNetAmtAlertThldInPct` |  | |  |  | `NUMC(3)` |  |
+| `CappedNetAmount` |  | |  |  | `CURR(15)` |  |
+| `ActlRevnAmt` |  | |  |  | `CURR(23)` |  |
+| `PlndCostAmt` |  | |  |  | `CURR(17)` | Planned Cost |
+| `PlannedEffortCostAmt` |  | |  |  | `CURR(17)` | Planned Cost |
+| `PlndEffortQty` |  | |  |  | `QUAN(15)` | Planned Effort |
+| `ActualPlanDeviationCost` |  | |  |  | `CURR(17)` | Cost Deviation |
+| `ActualPlanDeviationEffort` |  | |  |  | `QUAN(15)` | Effort Deviation |
+| `ActlCostAmt` |  | |  |  | `CURR(23)` | Actual Cost |
+| `ActlEffortQty` |  | |  |  | `QUAN(23)` | Actual Effort |
+| `PlannedExpenseCost` |  | |  |  | `CURR(18)` |  |
+| `ActualExpenseCost` |  | |  |  | `CURR(23)` | Actual Cost |
+| `ActualPlanDeviationExpnCost` |  | |  |  | `CURR(17)` |  |
+| `PlannedCostRate` |  | |  |  | `INT1(3)` |  |
+| `CostVariance` |  | |  |  | `INT1(3)` |  |
+| `EffortVariance` |  | |  |  | `INT1(3)` |  |
+| `CalculatedAdjustedRmngCost` |  | |  |  | `INT1(3)` |  |
+| `CalculatedAdjustedRmngEffort` |  | |  |  | `INT1(3)` |  |
+| `CalcdAdjustedRmngExpnCost` |  | |  |  | `INT1(3)` |  |
+| `AdjustedRemainingExpnCost` |  | |  |  | `INT1(3)` |  |
+| `AdjustedRemainingEffort` |  | |  |  | `INT1(3)` |  |
+| `AdjustedRemainingEffortCost` |  | |  |  | `INT1(3)` |  |
+| `AdjustedRemainingCostPlnAmt` |  | |  |  | `INT1(3)` |  |
+| `EstimateAtCompletionEffort` |  | |  |  | `INT1(3)` |  |
+| `EstimateAtCompletionCost` |  | |  |  | `INT1(3)` |  |
+| `EffortCompletionRateInPercent` |  | |  |  | `INT1(3)` |  |
+| `CostCompletionRateInPercent` |  | |  |  | `INT1(3)` |  |
+| `CappedNetAmountConsumedInPct` |  | |  |  | `INT1(3)` |  |

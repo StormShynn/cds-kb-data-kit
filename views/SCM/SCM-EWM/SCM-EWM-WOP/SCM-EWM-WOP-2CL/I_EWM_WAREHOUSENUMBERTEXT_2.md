@@ -32,8 +32,8 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `EWMWarehouse` | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `Language` | `LANG(1)` | Language Key |
-| `EWMWarehouseDescription` | `CHAR(40)` | Warehouse Number Description |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `EWMWarehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `EWMWarehouseDescription` |  | |  |  | `CHAR(40)` | Warehouse Number Description |

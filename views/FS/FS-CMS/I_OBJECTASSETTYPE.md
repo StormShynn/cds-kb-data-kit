@@ -29,7 +29,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `ObjectAssetType` | `CHAR(6)` | Asset Type |
-| `ObjectAssetCategory` | `CHAR(6)` | Asset Category Identification No |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ObjectAssetType` |  | |  |  | `CHAR(6)` | Asset Type |
+| `ObjectAssetCategory` |  | |  |  | `CHAR(6)` | Asset Category Identification No |

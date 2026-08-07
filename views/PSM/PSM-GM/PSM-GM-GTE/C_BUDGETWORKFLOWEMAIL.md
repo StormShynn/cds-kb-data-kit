@@ -32,13 +32,13 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
-| `BudgetDocument` | `CHAR(10)` | Budget Document Number |
-| `PlanningCategory` | `CHAR(10)` | Plan Category |
-| `BudgetDocumentType` | `CHAR(4)` | Budget Document Type |
-| `WorkflowTaskResult` | `CHAR(255)` | Workflow: Returncode flexible workflow |
-| `UserDescription` | `CHAR(80)` | User Description |
-| `WorkflowTaskResultReasonText` | `CHAR(60)` | Flexible Workflow: Decision Reason Text |
-| `WorkflowTaskCurrentUser` | `CHAR(12)` | Actual Agent of Work Item |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
+| `BudgetDocument` |  | |  |  | `CHAR(10)` | Budget Document Number |
+| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
+| `BudgetDocumentType` |  | |  |  | `CHAR(4)` | Budget Document Type |
+| `WorkflowTaskResult` |  | |  |  | `CHAR(255)` | Workflow: Returncode flexible workflow |
+| `UserDescription` |  | |  |  | `CHAR(80)` | User Description |
+| `WorkflowTaskResultReasonText` |  | |  |  | `CHAR(60)` | Flexible Workflow: Decision Reason Text |
+| `WorkflowTaskCurrentUser` |  | |  |  | `CHAR(12)` | Actual Agent of Work Item |

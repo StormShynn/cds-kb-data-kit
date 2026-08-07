@@ -35,7 +35,7 @@ tags:
 
 ## Fields
 
-| Field | Type | Description |
-|---|---|---|
-| `LiquidityItem` | `CHAR(16)` | Liquidity Item |
-| `CashFlowDirection` | `CHAR(4)` | Cash Flow Direction |
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `LiquidityItem` |  | |  |  | `CHAR(16)` | Liquidity Item |
+| `CashFlowDirection` |  | |  |  | `CHAR(4)` | Cash Flow Direction |
