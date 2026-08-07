@@ -2,3 +2,11 @@ node_modules/
 *.tmp
 *.bak
 tools/
+
+# vsp (local SAP dev tooling, not part of this repo's data/automation)
+.mcp.json
+.mcp.json.example
+.env
+.env.example
+.vsp.json
+.vsp.json.example
