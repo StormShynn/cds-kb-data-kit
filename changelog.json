@@ -1,8 +1,129 @@
 [
   {
+    "viewName": "_DCO_I_ACCOUNTDISPUTE",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:00.394Z",
+    "source": "hub-catalog",
+    "fields": 48,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTDISPUTE')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNTINGDOCUMENT",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:00.407Z",
+    "source": "hub-catalog",
+    "fields": 42,
+    "associations": 0,
+    "tags": 11,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTINGDOCUMENT')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNTDISPUTEVH",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:00.454Z",
+    "source": "hub-catalog",
+    "fields": 55,
+    "associations": 0,
+    "tags": 11,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTDISPUTEVH')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNTPROMISETOPAY",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:01.081Z",
+    "source": "hub-catalog",
+    "fields": 28,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTPROMISETOPAY')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNTPROMISETOPAYVH",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:01.104Z",
+    "source": "hub-catalog",
+    "fields": 32,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTPROMISETOPAYVH')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCOUNTTASK",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:01.113Z",
+    "source": "hub-catalog",
+    "fields": 21,
+    "associations": 0,
+    "tags": 11,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTTASK')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCTGDOCUMENTORIGIN",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:01.782Z",
+    "source": "hub-catalog",
+    "fields": 1,
+    "associations": 0,
+    "tags": 11,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCTGDOCUMENTORIGIN')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCTACCOUNTINGDOCUMENT",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:01.796Z",
+    "source": "hub-catalog",
+    "fields": 43,
+    "associations": 0,
+    "tags": 11,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCTACCOUNTINGDOCUMENT')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACCTCLASSIFICATIONTEXT",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:01.814Z",
+    "source": "hub-catalog",
+    "fields": 3,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCTCLASSIFICATIONTEXT')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACTIVITYDIRECTIONTEXT",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:02.428Z",
+    "source": "hub-catalog",
+    "fields": 3,
+    "associations": 0,
+    "tags": 8,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACTIVITYDIRECTIONTEXT')/$value"
+  },
+  {
+    "viewName": "_DCO_I_ACTIVITYDIRECTION",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:02.507Z",
+    "source": "hub-catalog",
+    "fields": 1,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACTIVITYDIRECTION')/$value"
+  },
+  {
     "viewName": "_DCO_I_ACTIVITYRELATEDDISPUTE",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:15.369Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:03.071Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -12,8 +133,8 @@
   },
   {
     "viewName": "_DCO_I_ACTIVITYRESULT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:15.400Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:03.107Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -23,8 +144,8 @@
   },
   {
     "viewName": "_DCO_I_ACTIVITYRESULTTEXT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:15.438Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:03.149Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -33,20 +154,9 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACTIVITYRESULTTEXT')/$value"
   },
   {
-    "viewName": "_DCO_I_ACTIVITYTYPETEXT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:15.961Z",
-    "source": "hub-catalog",
-    "fields": 3,
-    "associations": 0,
-    "tags": 8,
-    "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACTIVITYTYPETEXT')/$value"
-  },
-  {
     "viewName": "_DCO_I_ACTIVITYTYPE",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:16.009Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:03.722Z",
     "source": "hub-catalog",
     "fields": 1,
     "associations": 0,
@@ -55,9 +165,20 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACTIVITYTYPE')/$value"
   },
   {
+    "viewName": "_DCO_I_ACTIVITYTYPETEXT",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:03.729Z",
+    "source": "hub-catalog",
+    "fields": 3,
+    "associations": 0,
+    "tags": 8,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACTIVITYTYPETEXT')/$value"
+  },
+  {
     "viewName": "_DCO_I_ACTYRELATEDPROMISETOPAY",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:16.069Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:03.777Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -66,20 +187,9 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACTYRELATEDPROMISETOPAY')/$value"
   },
   {
-    "viewName": "_DCO_I_ARACCOUNTANTGROUP",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:16.581Z",
-    "source": "hub-catalog",
-    "fields": 3,
-    "associations": 0,
-    "tags": 10,
-    "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ARACCOUNTANTGROUP')/$value"
-  },
-  {
     "viewName": "_DCO_I_BASICRULE",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:16.615Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:04.350Z",
     "source": "hub-catalog",
     "fields": 1,
     "associations": 0,
@@ -88,9 +198,20 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BASICRULE')/$value"
   },
   {
+    "viewName": "_DCO_I_ARACCOUNTANTGROUP",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:04.419Z",
+    "source": "hub-catalog",
+    "fields": 3,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ARACCOUNTANTGROUP')/$value"
+  },
+  {
     "viewName": "_DCO_I_BASICRULENODEASSIGNMENT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:16.650Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:04.457Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -99,20 +220,9 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BASICRULENODEASSIGNMENT')/$value"
   },
   {
-    "viewName": "_DCO_I_BASICRULEVH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:17.161Z",
-    "source": "hub-catalog",
-    "fields": 1,
-    "associations": 0,
-    "tags": 10,
-    "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BASICRULEVH')/$value"
-  },
-  {
     "viewName": "_DCO_I_BASICRULETEXT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:17.178Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:05.035Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -122,8 +232,8 @@
   },
   {
     "viewName": "_DCO_I_BIZPRTNCATEGORYTEXT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:17.248Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:05.097Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -132,20 +242,20 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BIZPRTNCATEGORYTEXT')/$value"
   },
   {
-    "viewName": "_DCO_I_BIZPRTNDUPLICATE",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:17.770Z",
+    "viewName": "_DCO_I_BASICRULEVH",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:05.178Z",
     "source": "hub-catalog",
-    "fields": 7,
+    "fields": 1,
     "associations": 0,
-    "tags": 9,
+    "tags": 10,
     "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BIZPRTNDUPLICATE')/$value"
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BASICRULEVH')/$value"
   },
   {
     "viewName": "_DCO_I_BIZPRTNCOMPANYCODE",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:17.795Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:05.700Z",
     "source": "hub-catalog",
     "fields": 13,
     "associations": 0,
@@ -154,9 +264,20 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BIZPRTNCOMPANYCODE')/$value"
   },
   {
+    "viewName": "_DCO_I_BIZPRTNDUPLICATE",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:05.724Z",
+    "source": "hub-catalog",
+    "fields": 7,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BIZPRTNDUPLICATE')/$value"
+  },
+  {
     "viewName": "_DCO_I_BIZPRTNHEADOFFICEVH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:17.849Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:05.798Z",
     "source": "hub-catalog",
     "fields": 2,
     "associations": 0,
@@ -166,8 +287,8 @@
   },
   {
     "viewName": "_DCO_I_BIZPRTNSEGMENTVH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:18.373Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:06.418Z",
     "source": "hub-catalog",
     "fields": 4,
     "associations": 0,
@@ -177,8 +298,8 @@
   },
   {
     "viewName": "_DCO_I_BUSINESSPARTNERBRANCH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:18.376Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:06.419Z",
     "source": "hub-catalog",
     "fields": 8,
     "associations": 0,
@@ -188,8 +309,8 @@
   },
   {
     "viewName": "_DCO_I_BUSINESSPARTNERCATEGORY",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:18.393Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:06.425Z",
     "source": "hub-catalog",
     "fields": 1,
     "associations": 0,
@@ -199,8 +320,8 @@
   },
   {
     "viewName": "_DCO_I_BUSINESSPARTNERTYPE",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:18.945Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:07.075Z",
     "source": "hub-catalog",
     "fields": 1,
     "associations": 0,
@@ -210,8 +331,8 @@
   },
   {
     "viewName": "_DCO_I_BUSINESSPARTNERSEGMENT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:18.950Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:07.088Z",
     "source": "hub-catalog",
     "fields": 14,
     "associations": 0,
@@ -221,8 +342,8 @@
   },
   {
     "viewName": "_DCO_I_BUSINESSPARTNERTYPETEXT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:18.993Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:07.114Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -231,20 +352,9 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BUSINESSPARTNERTYPETEXT')/$value"
   },
   {
-    "viewName": "_DCO_I_COLLECTORTEAM",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:19.520Z",
-    "source": "hub-catalog",
-    "fields": 3,
-    "associations": 0,
-    "tags": 9,
-    "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_COLLECTORTEAM')/$value"
-  },
-  {
     "viewName": "_DCO_I_BUSINESSUSERVH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:19.567Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:07.790Z",
     "source": "hub-catalog",
     "fields": 22,
     "associations": 0,
@@ -253,9 +363,20 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_BUSINESSUSERVH')/$value"
   },
   {
+    "viewName": "_DCO_I_COLLECTORTEAM",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:07.794Z",
+    "source": "hub-catalog",
+    "fields": 3,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_COLLECTORTEAM')/$value"
+  },
+  {
     "viewName": "_DCO_I_COLLECTORTEAMVH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:19.598Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:07.867Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -265,8 +386,8 @@
   },
   {
     "viewName": "_DCO_I_COMPANYCODE",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:20.131Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:08.442Z",
     "source": "hub-catalog",
     "fields": 2,
     "associations": 0,
@@ -275,20 +396,9 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_COMPANYCODE')/$value"
   },
   {
-    "viewName": "_DCO_I_COMPANYCODETEXT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:20.204Z",
-    "source": "hub-catalog",
-    "fields": 3,
-    "associations": 0,
-    "tags": 8,
-    "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_COMPANYCODETEXT')/$value"
-  },
-  {
     "viewName": "_DCO_I_COMPANYCODEMAPPING",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:20.341Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:08.457Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -297,9 +407,31 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_COMPANYCODEMAPPING')/$value"
   },
   {
+    "viewName": "_DCO_I_COMPANYCODETEXT",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:08.529Z",
+    "source": "hub-catalog",
+    "fields": 3,
+    "associations": 0,
+    "tags": 8,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_COMPANYCODETEXT')/$value"
+  },
+  {
+    "viewName": "_DCO_I_DBTCOLLSBUSINESSPARTNER",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:09.089Z",
+    "source": "hub-catalog",
+    "fields": 8,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DBTCOLLSBUSINESSPARTNER')/$value"
+  },
+  {
     "viewName": "_DCO_I_COMPANYCODEVH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:20.685Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:09.121Z",
     "source": "hub-catalog",
     "fields": 5,
     "associations": 0,
@@ -309,8 +441,8 @@
   },
   {
     "viewName": "_DCO_I_DBTCOLLSSEGMENTTEXT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:20.883Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:09.182Z",
     "source": "hub-catalog",
     "fields": 3,
     "associations": 0,
@@ -319,20 +451,9 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DBTCOLLSSEGMENTTEXT')/$value"
   },
   {
-    "viewName": "_DCO_I_DBTCOLLSBUSINESSPARTNER",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:20.916Z",
-    "source": "hub-catalog",
-    "fields": 8,
-    "associations": 0,
-    "tags": 9,
-    "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DBTCOLLSBUSINESSPARTNER')/$value"
-  },
-  {
     "viewName": "_DCO_I_DBTCOLLSSEGMENTVH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:21.271Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:09.779Z",
     "source": "hub-catalog",
     "fields": 2,
     "associations": 0,
@@ -341,20 +462,9 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DBTCOLLSSEGMENTVH')/$value"
   },
   {
-    "viewName": "_DCO_I_DCOBPCOCODEASSGMTVH",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:21.456Z",
-    "source": "hub-catalog",
-    "fields": 3,
-    "associations": 0,
-    "tags": 9,
-    "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DCOBPCOCODEASSGMTVH')/$value"
-  },
-  {
     "viewName": "_DCO_I_DEBTCOLLECTIONSSEGMENT",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:21.467Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:09.811Z",
     "source": "hub-catalog",
     "fields": 2,
     "associations": 0,
@@ -363,25 +473,36 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DEBTCOLLECTIONSSEGMENT')/$value"
   },
   {
-    "viewName": "_DCO_I_DISPUTE",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:21.930Z",
+    "viewName": "_DCO_I_DCOBPCOCODEASSGMTVH",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:09.846Z",
     "source": "hub-catalog",
-    "fields": 86,
+    "fields": 3,
     "associations": 0,
     "tags": 9,
     "error": null,
-    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DISPUTE')/$value"
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DCOBPCOCODEASSGMTVH')/$value"
   },
   {
     "viewName": "_DCO_I_DISPUTEALLPROCESSSTEP",
-    "action": "added",
-    "timestamp": "2026-08-06T09:40:22.040Z",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:10.448Z",
     "source": "hub-catalog",
     "fields": 1,
     "associations": 0,
     "tags": 8,
     "error": null,
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DISPUTEALLPROCESSSTEP')/$value"
+  },
+  {
+    "viewName": "_DCO_I_DISPUTE",
+    "action": "updated",
+    "timestamp": "2026-08-07T08:15:10.453Z",
+    "source": "hub-catalog",
+    "fields": 86,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_DISPUTE')/$value"
   }
 ]
