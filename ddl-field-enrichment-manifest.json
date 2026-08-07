@@ -285,57 +285,57 @@
     "matched": 39
   },
   "C_ARAGINGGRIDGENLEDGERQRY": {
-    "attemptedAt": "2026-08-07T15:36:22.894Z",
+    "attemptedAt": "2026-08-07T16:26:42.673Z",
     "found": true,
     "matched": 47
   },
   "C_ARBANKSTMTREPROCESSING": {
-    "attemptedAt": "2026-08-07T15:36:24.020Z",
+    "attemptedAt": "2026-08-07T16:26:43.772Z",
     "found": true,
     "matched": 22
   },
   "C_ARJRNLENTRITMAGINGGRID": {
-    "attemptedAt": "2026-08-07T15:36:25.173Z",
+    "attemptedAt": "2026-08-07T16:26:44.811Z",
     "found": true,
     "matched": 42
   },
   "C_ARUNANLYTSALLASSGMTQUERY": {
-    "attemptedAt": "2026-08-07T15:36:26.248Z",
+    "attemptedAt": "2026-08-07T16:26:45.726Z",
     "found": true,
     "matched": 38
   },
   "C_ARUNANLYTSBLKDSLSORDQUERY": {
-    "attemptedAt": "2026-08-07T15:36:27.298Z",
+    "attemptedAt": "2026-08-07T16:26:46.674Z",
     "found": true,
     "matched": 20
   },
   "C_ARUNANLYTSOPENDELIVQUERY": {
-    "attemptedAt": "2026-08-07T15:36:29.340Z",
+    "attemptedAt": "2026-08-07T16:26:47.748Z",
     "found": true,
     "matched": 25
   },
   "C_ARUNANLYTSPURGCONTRQRY": {
-    "attemptedAt": "2026-08-07T15:36:30.473Z",
+    "attemptedAt": "2026-08-07T16:26:48.798Z",
     "found": true,
     "matched": 37
   },
   "C_ARUNANLYTSSALESRETURNS": {
-    "attemptedAt": "2026-08-07T15:36:31.488Z",
+    "attemptedAt": "2026-08-07T16:26:49.830Z",
     "found": true,
     "matched": 45
   },
   "C_ARUNANLYTSSALESRETURNSQRY": {
-    "attemptedAt": "2026-08-07T15:36:32.625Z",
+    "attemptedAt": "2026-08-07T16:26:50.840Z",
     "found": true,
     "matched": 35
   },
   "C_ARUNANLYTSSLSCONTRQRY": {
-    "attemptedAt": "2026-08-07T15:36:34.067Z",
+    "attemptedAt": "2026-08-07T16:26:51.773Z",
     "found": true,
     "matched": 51
   },
   "C_BILLGITMPRCGELFORCOTYPQ": {
-    "attemptedAt": "2026-08-07T15:36:35.188Z",
+    "attemptedAt": "2026-08-07T16:27:03.441Z",
     "found": true,
     "matched": 37
   },
@@ -460,72 +460,72 @@
     "reason": "Hub catalog fetch failed for \"I_BUSPARTEMAILADDRESSTP_3\" (404)"
   },
   "C_ARUNANLYTSSLSORDREJECTION": {
-    "attemptedAt": "2026-08-07T15:56:13.353Z",
+    "attemptedAt": "2026-08-07T16:26:52.899Z",
     "found": true,
     "matched": 58
   },
   "C_ARUNANLYTSSUPASSGMTQRY": {
-    "attemptedAt": "2026-08-07T15:56:14.441Z",
+    "attemptedAt": "2026-08-07T16:26:53.908Z",
     "found": true,
     "matched": 37
   },
   "C_ARUNANLYTSSUPDMNDOVWQRY": {
-    "attemptedAt": "2026-08-07T15:56:15.442Z",
+    "attemptedAt": "2026-08-07T16:26:54.971Z",
     "found": true,
     "matched": 55
   },
   "C_ARUNANLYTSTOTDMNDQRY": {
-    "attemptedAt": "2026-08-07T15:56:16.468Z",
+    "attemptedAt": "2026-08-07T16:26:56.062Z",
     "found": true,
     "matched": 61
   },
   "C_ARUNANLYTSTOTSUPQRY": {
-    "attemptedAt": "2026-08-07T15:56:17.400Z",
+    "attemptedAt": "2026-08-07T16:26:57.009Z",
     "found": true,
     "matched": 37
   },
   "C_ASSETBALANCE": {
-    "attemptedAt": "2026-08-07T15:56:18.427Z",
+    "attemptedAt": "2026-08-07T16:26:58.010Z",
     "found": true,
     "matched": 102
   },
   "C_ASSETHISTORYSHEET": {
-    "attemptedAt": "2026-08-07T15:56:19.478Z",
+    "attemptedAt": "2026-08-07T16:26:59.022Z",
     "found": true,
     "matched": 105
   },
   "C_BALANCECONFIRMATIONEMAILTMPL": {
-    "attemptedAt": "2026-08-07T15:56:20.592Z",
+    "attemptedAt": "2026-08-07T16:27:00.071Z",
     "found": true,
     "matched": 12
   },
   "C_BALANCESHEETCURRENCYROLEVH": {
-    "attemptedAt": "2026-08-07T15:56:21.625Z",
+    "attemptedAt": "2026-08-07T16:27:01.193Z",
     "found": true,
     "matched": 8
   },
   "C_BASICCONDITIONCONTRACTDEX": {
-    "attemptedAt": "2026-08-07T15:56:22.755Z",
+    "attemptedAt": "2026-08-07T16:27:02.324Z",
     "found": true,
     "matched": 66
   },
   "C_BILLOFOPERATIONSBASICOPDEX": {
-    "attemptedAt": "2026-08-07T15:56:23.716Z",
+    "attemptedAt": "2026-08-07T16:27:04.753Z",
     "found": true,
     "matched": 164
   },
   "C_BOOMATLASSGMTCHGSTDEX": {
-    "attemptedAt": "2026-08-07T15:56:24.729Z",
+    "attemptedAt": "2026-08-07T16:27:05.799Z",
     "found": true,
     "matched": 25
   },
   "C_CASHFLOWINDIRECTIFRS": {
-    "attemptedAt": "2026-08-07T15:56:26.153Z",
+    "attemptedAt": "2026-08-07T16:27:06.825Z",
     "found": true,
     "matched": 59
   },
   "C_CMMDTYMTMCURRENTDATEQRY": {
-    "attemptedAt": "2026-08-07T15:56:27.185Z",
+    "attemptedAt": "2026-08-07T16:27:07.837Z",
     "found": true,
     "matched": 111
   },
@@ -1143,5 +1143,80 @@
     "attemptedAt": "2026-08-07T16:20:55.391Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR8_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR8_T_SCP": {
+    "attemptedAt": "2026-08-07T16:27:08.254Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR8_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT1_SCP": {
+    "attemptedAt": "2026-08-07T16:27:08.965Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT1_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT1_T_SCP": {
+    "attemptedAt": "2026-08-07T16:27:09.791Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT1_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT2_SCP": {
+    "attemptedAt": "2026-08-07T16:27:10.502Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT2_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT2_T_SCP": {
+    "attemptedAt": "2026-08-07T16:27:11.218Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT2_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT4_SCP": {
+    "attemptedAt": "2026-08-07T16:27:11.937Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT4_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT4_T_SCP": {
+    "attemptedAt": "2026-08-07T16:27:12.630Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT4_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC1_SCP": {
+    "attemptedAt": "2026-08-07T16:27:13.480Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC1_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC1_T_SCP": {
+    "attemptedAt": "2026-08-07T16:27:14.304Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC1_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC2_SCP": {
+    "attemptedAt": "2026-08-07T16:27:15.023Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC2_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC2_T_SCP": {
+    "attemptedAt": "2026-08-07T16:27:15.730Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC2_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC3_SCP": {
+    "attemptedAt": "2026-08-07T16:27:16.419Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC3_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC3_T_SCP": {
+    "attemptedAt": "2026-08-07T16:27:17.086Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC3_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC4_SCP": {
+    "attemptedAt": "2026-08-07T16:27:17.780Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC4_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC4_T_SCP": {
+    "attemptedAt": "2026-08-07T16:27:18.491Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC4_T_SCP\" (404)"
   }
 }

@@ -5,9 +5,19 @@ app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BILLOFOPERATIONSBASICOPDEX')/$value
 semantic_en: This CDS view helps you retrieve material assignment data (table MAPL) for the bill of operations. This CDS view provides the data to answer the following business questions: Which materials are assigned to which manufacturing bill of operations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.
+semantic_vi: Bill of Operations Operation — CDS view tiêu dùng dựa trên I_BillOfOperationsOpBasic.
+keywords:
+  - bill
+  - operations
+  - operation
+  - type
+  - group
+  - internal
+  - version
+  - counter
 tags:
   - PP
   - bo:companycode
@@ -18,7 +28,7 @@ tags:
   - PP-VDM
   - PP-VDM-MD
   - PP-VDM-MD-2CL
-  - metadata-only
+  - bo:salesorder
 ---
 # C_BILLOFOPERATIONSBASICOPDEX
 
@@ -30,16 +40,16 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BILLOFOPERATIONSBASICOPDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BILLOFOPERATIONSBASICOPDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
-| `BillOfOperationsGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
-| `BOOOperationInternalID` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
-| `BOOOpInternalVersionCounter` |  | |  |  | `NUMC(8)` | Internal counter |
+| `BillOfOperationsType` | ✓ | |  |  | `CHAR(1)` | Task List Type |
+| `BillOfOperationsGroup` | ✓ | |  |  | `CHAR(8)` | Key for Task List Group |
+| `BOOOperationInternalID` | ✓ | |  |  | `NUMC(8)` | Number of the Task List Node |
+| `BOOOpInternalVersionCounter` | ✓ | |  |  | `NUMC(8)` | Internal counter |
 | `BillOfOperationsVersion` |  | |  |  | `CHAR(4)` | Routing Version |
 | `WorkCenterInternalID` |  | |  |  | `NUMC(8)` | Object ID |
 | `WorkCenterTypeCode` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
@@ -48,7 +58,7 @@ tags:
 | `SuperiorOperationInternalID` |  | |  |  | `NUMC(8)` | Node Number of the Superior Operation |
 | `BOORefOperationIncrementValue` |  | |  |  | `DEC(3)` | Increment between referenced operations |
 | `OperationExternalID` |  | |  |  | `CHAR(8)` | External Operation ID |
-| `Operation` |  | |  |  | `CHAR(4)` | Operation or Phase Number |
+| `Operation` |  | |  | `Operation_2` | `CHAR(4)` | Operation or Phase Number |
 | `OperationText` |  | |  |  | `CHAR(40)` | Operation Short Text |
 | `LongTextLanguageCode` |  | |  |  | `LANG(1)` | Language Key |
 | `Plant` |  | |  |  | `CHAR(4)` | Plant |
@@ -171,7 +181,7 @@ tags:
 | `PurchaseOrderQty` |  | |  |  | `QUAN(13)` | Purchase Order Quantity: Operation |
 | `PurchaseOrderQuantityUnit` |  | |  |  | `UNIT(3)` | Operation order quantity unit |
 | `PurchasingInfoRecordCategory` |  | |  |  | `CHAR(1)` | Purchasing info record category |
-| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `FunctionalLocation` |  | |  | `cast(FunctionalLocation as vdm_eam_tplnr preserving type )` | `CHAR(30)` | Functional Location |
 | `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
 | `FreeDefinedTableFieldSemantic` |  | |  |  | `CHAR(7)` | Key word ID for user-defined fields |
 | `FreeDefinedAttribute01` |  | |  |  | `CHAR(20)` | User field with 20 characters |
@@ -182,9 +192,9 @@ tags:
 | `FreeDefinedQuantity1Unit` |  | |  |  | `UNIT(3)` | User field: Unit for quantity fields |
 | `FreeDefinedQuantity2` |  | |  |  | `QUAN(13)` | User field for quantity (length 10.3) |
 | `FreeDefinedQuantity2Unit` |  | |  |  | `UNIT(3)` | User field: Unit for quantity fields |
-| `FreeDefinedAmount1` |  | |  |  | `CURR(13)` | User-defined field for values |
+| `FreeDefinedAmount1` |  | |  | `cast(FreeDefinedAmount1 as vdm_usrcurr )` | `CURR(13)` | User-defined field for values |
 | `FreeDefinedAmount1Currency` |  | |  |  | `CUKY(5)` | User field: Unit for value fields |
-| `FreeDefinedAmount2` |  | |  |  | `CURR(13)` | User-defined field for values |
+| `FreeDefinedAmount2` |  | |  | `cast(FreeDefinedAmount2 as vdm_usrcurr )` | `CURR(13)` | User-defined field for values |
 | `FreeDefinedAmount2Currency` |  | |  |  | `CUKY(5)` | User field: Unit for value fields |
 | `FreeDefinedDate1` |  | |  |  | `DATS(8)` | User field for date |
 | `FreeDefinedDate2` |  | |  |  | `DATS(8)` | User field for date |
@@ -200,3 +210,244 @@ tags:
 | `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date |
 | `OpPlannedWorkQuantity` |  | |  |  | `QUAN(7)` | Work involved in the activity |
 | `OpWorkQuantityUnit` |  | |  |  | `UNIT(3)` | Unit for Work |
+| `_BillOfOperationsGroup` | | ✓ | | | | |
+| `_BillOfOperationsType` | | ✓ | | | | |
+| `_BOOOperationInternalID` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BILLOFOPERATIONSBASICOPDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BILLOFOPERATIONSBASICOPDEX')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@VDM.viewType: #CONSUMPTION
+@Analytics: {dataCategory: #DIMENSION,
+    dataExtraction: {
+       enabled: true,
+       delta.changeDataCapture: {
+       automatic : true
+       }
+     },
+internalName: #LOCAL
+}
+@ObjectModel.representativeKey: 'BOOOpInternalVersionCounter'
+@EndUserText.label: 'Bill of Operations Operation'
+@ObjectModel.usageType: { serviceQuality: #A, sizeCategory: #L, dataClass: #MASTER }
+@Metadata.allowExtensions:true
+@Metadata.ignorePropagatedAnnotations:true
+@VDM.lifecycle.contract.type:#PUBLIC_LOCAL_API
+@ObjectModel.supportedCapabilities:[#EXTRACTION_DATA_SOURCE,#ANALYTICAL_DIMENSION,#CDS_MODELING_ASSOCIATION_TARGET]
+@ObjectModel.modelingPattern:#ANALYTICAL_DIMENSION
+@ObjectModel.sapObjectNodeType.name:'ProductionRoutingOperation'
+@AccessControl.personalData.blocking: #('TRANSACTIONAL_DATA')
+
+define view entity C_BillOfOperationsBasicOpDEX
+  as select from I_BillOfOperationsOpBasic
+{
+      @ObjectModel.foreignKey.association: '_BillOfOperationsType'
+  key BillOfOperationsType,
+      @ObjectModel.foreignKey.association: '_BillOfOperationsGroup'
+  key BillOfOperationsGroup,
+      @ObjectModel.foreignKey.association: '_BOOOperationInternalID'
+  key BOOOperationInternalID,
+      @ObjectModel.text.element: ['OperationText']
+  key BOOOpInternalVersionCounter,
+      BillOfOperationsVersion,
+      WorkCenterInternalID,
+      WorkCenterTypeCode,
+      IsDeleted,
+      IsImplicitlyDeleted,
+      SuperiorOperationInternalID,
+      BOORefOperationIncrementValue,
+      OperationExternalID,
+      Operation_2                                                as Operation,
+      @Semantics.text: true
+      OperationText,
+      LongTextLanguageCode,
+      Plant,
+      OperationControlProfile,
+      OperationStandardTextCode,
+      BillOfOperationsRefType,
+      BillOfOperationsRefGroup,
+      BillOfOperationsRefVariant,
+      LineSegmentTakt,
+      OperationStdWorkQtyGrpgCat,
+      OrderHasNoSubOperations,
+      @Semantics.quantity.unitOfMeasure: 'OperationUnit'
+      OperationReferenceQuantity,
+      OperationUnit,
+      OpQtyToBaseQtyNmrtr,
+      OpQtyToBaseQtyDnmntr,
+      @Semantics.quantity.unitOfMeasure:'BillOfOperationsBreakDurnUnit'
+      BillOfOperationsBreakDuration,
+      BillOfOperationsBreakDurnUnit,
+      @Semantics.quantity.unitOfMeasure: 'StandardWorkQuantityUnit1'
+      StandardWorkQuantity1,
+      StandardWorkQuantityUnit1,
+      CostCtrActivityType1,
+      PerfEfficiencyRatioCode1,
+      @Semantics.quantity.unitOfMeasure: 'StandardWorkQuantityUnit2'
+      StandardWorkQuantity2,
+      StandardWorkQuantityUnit2,
+      CostCtrActivityType2,
+      PerfEfficiencyRatioCode2,
+      @Semantics.quantity.unitOfMeasure: 'StandardWorkQuantityUnit3'
+      StandardWorkQuantity3,
+      StandardWorkQuantityUnit3,
+      CostCtrActivityType3,
+      PerfEfficiencyRatioCode3,
+      @Semantics.quantity.unitOfMeasure: 'StandardWorkQuantityUnit4'
+      StandardWorkQuantity4,
+      StandardWorkQuantityUnit4,
+      CostCtrActivityType4,
+      PerfEfficiencyRatioCode4,
+      @Semantics.quantity.unitOfMeasure: 'StandardWorkQuantityUnit5'
+      StandardWorkQuantity5,
+      StandardWorkQuantityUnit5,
+      CostCtrActivityType5,
+      PerfEfficiencyRatioCode5,
+      @Semantics.quantity.unitOfMeasure: 'StandardWorkQuantityUnit6'
+      StandardWorkQuantity6,
+      StandardWorkQuantityUnit6,
+      CostCtrActivityType6,
+      PerfEfficiencyRatioCode6,
+      BusinessProcess,
+      LeadTimeReductionStrategy,
+      TeardownAndWaitIsParallel,
+      @Semantics.quantity.unitOfMeasure: 'MaximumWaitDurationUnit'
+      MaximumWaitDuration,
+      MaximumWaitDurationUnit,
+      @Semantics.quantity.unitOfMeasure: 'MinimumWaitDurationUnit'
+      MinimumWaitDuration,
+      MinimumWaitDurationUnit,
+      @Semantics.quantity.unitOfMeasure: 'StandardQueueDurationUnit'
+      StandardQueueDuration,
+      StandardQueueDurationUnit,
+      @Semantics.quantity.unitOfMeasure: 'MinimumQueueDurationUnit'
+      MinimumQueueDuration,
+      MinimumQueueDurationUnit,
+      @Semantics.quantity.unitOfMeasure: 'StandardMoveDurationUnit'
+      StandardMoveDuration,
+      StandardMoveDurationUnit,
+      @Semantics.quantity.unitOfMeasure: 'MinimumMoveDurationUnit'
+      MinimumMoveDuration,
+      MinimumMoveDurationUnit,
+      OperationSplitIsRequired,
+      MaximumNumberOfSplits,
+      @Semantics.quantity.unitOfMeasure: 'MinProcessingDurnPerSplitUnit'
+      MinProcessingDurationPerSplit,
+      MinProcessingDurnPerSplitUnit,
+      OperationOverlappingIsRequired,
+      OperationOverlappingIsPossible,
+      OperationsIsAlwaysOverlapping,
+      @Semantics.quantity.unitOfMeasure: 'OverlapMinimumDurationUnit'
+      OverlapMinimumDuration,
+      OverlapMinimumDurationUnit,
+      @Semantics.quantity.unitOfMeasure: 'OverlapMinimumTransferQtyUnit'
+      OverlapMinimumTransferQty,
+      OverlapMinimumTransferQtyUnit,
+      StartDateOffsetDurationUnit,
+      @Semantics.quantity.unitOfMeasure: 'StartDateOffsetDurationUnit'
+      StartDateOffsetDuration,
+      EndDateOffsetDurationUnit,
+      @Semantics.quantity.unitOfMeasure: 'EndDateOffsetDurationUnit'
+      EndDateOffsetDuration,
+      OperationScrapPercent,
+      NumberOfTimeTickets,
+      NumberOfConfirmationSlips,
+      EmployeeWageGroup,
+      EmployeeWageType,
+      EmployeeSuitability,
+      NumberOfEmployees,
+      OperationSetupType,
+      OperationSetupGroupCategory,
+      OperationSetupGroup,
+      OperationCostingRelevancyType,
+      @Semantics.booleanIndicator
+      IsNonValueAddedOperation,
+      @Semantics.booleanIndicator
+      OpIsExtlyProcdWithSubcontrg,
+      PurchasingInfoRecord,
+      PurchasingOrganization,
+      PurchaseContract,
+      PurchaseContractItem,
+      PurchasingInfoRecdAddlGrpgName,
+      MaterialGroup,
+      PurchasingGroup,
+      Supplier,
+      PlannedDeliveryDuration,
+      NumberOfOperationPriceUnits,
+      @Semantics.amount.currencyCode: 'OpExternalProcessingCurrency'
+      OpExternalProcessingPrice,
+      InspectionLotType,
+      CostElement,
+      OpExternalProcessingCurrency,
+      CapacityCategoryCode,
+      BOOOperationIsPhase,
+      BOOPhaseSuperiorOpInternalID,
+      ControlRecipeDestination,
+      InspResultRecordingView,
+      @Semantics.quantity.unitOfMeasure: 'MinimumDurationUnit'
+      MinimumDuration,
+      MinimumDurationUnit,
+      OperationWorkPercent,
+      CapRqmtsDistributionFunction,
+      CompanyCode,
+      FactoryCalendar,
+      CapacityRequirementDistrKey,
+      InspSbstCompletionConfirmation,
+      @Semantics.booleanIndicator
+      InspSbstHasNoTimeOrQuantity,
+      @Semantics.quantity.unitOfMeasure: 'OperationStandardDurationUnit'
+      OperationStandardDuration,
+      OperationStandardDurationUnit,
+      NumberOfCapacities,
+      OperationSystemCondition,
+      CostCtrActivityType,
+      OperationCalculationControl,
+      Assembly,
+      @Semantics.quantity.unitOfMeasure: 'PurchaseOrderQuantityUnit'
+      PurchaseOrderQty,
+      PurchaseOrderQuantityUnit,
+      PurchasingInfoRecordCategory,
+      cast(FunctionalLocation as vdm_eam_tplnr preserving type ) as FunctionalLocation,
+      Equipment,
+      FreeDefinedTableFieldSemantic,
+      FreeDefinedAttribute01,
+      FreeDefinedAttribute02,
+      FreeDefinedAttribute03,
+      FreeDefinedAttribute04,
+      @Semantics.quantity.unitOfMeasure: 'FreeDefinedQuantity1Unit'
+      FreeDefinedQuantity1,
+      FreeDefinedQuantity1Unit,
+      @Semantics.quantity.unitOfMeasure: 'FreeDefinedQuantity2Unit'
+      FreeDefinedQuantity2,
+      FreeDefinedQuantity2Unit,
+      @Semantics.amount.currencyCode: 'FreeDefinedAmount1Currency'
+      cast(FreeDefinedAmount1 as vdm_usrcurr ) as FreeDefinedAmount1,
+      FreeDefinedAmount1Currency,
+      @Semantics.amount.currencyCode: 'FreeDefinedAmount2Currency'
+      cast(FreeDefinedAmount2 as vdm_usrcurr )  as FreeDefinedAmount2,
+      FreeDefinedAmount2Currency,
+      FreeDefinedDate1,
+      FreeDefinedDate2,
+      FreeDefinedIndicator1,
+      FreeDefinedIndicator2,
+      MaintOperationExecStageCode,
+      CreationDate,
+      CreatedByUser,
+      LastChangeDate,
+      LastChangedByUser,
+      ChangeNumber,
+      ValidityStartDate,
+      ValidityEndDate,
+      @Semantics.quantity.unitOfMeasure: 'OpWorkQuantityUnit'
+      OpPlannedWorkQuantity,
+      OpWorkQuantityUnit,
+      /* Associations */
+
+      _BillOfOperationsGroup,
+      _BillOfOperationsType,
+      _BOOOperationInternalID
+}
+```

@@ -5,9 +5,25 @@ app_component: LO-RFM-ARN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSALESRETURNSQRY')/$value
 semantic_en: Return Sales Orders
+semantic_vi: Return Sales Orders — CDS view tiêu dùng dựa trên I_ARunAnlytsSlsOrdRetCube.
+keywords:
+  - return
+  - sales
+  - orders
+  - requirement
+  - document
+  - number
+  - item
+  - supply
+  - schedule
+  - line
+  - assigned
+  - type
+  - assgmt
+  - source
 tags:
   - LO
   - component:LO-RFM-ARN
@@ -17,7 +33,7 @@ tags:
   - lob:logistics general
   - order
   - sales-order
-  - metadata-only
+  - bo:salesorder
 ---
 # C_ARUNANLYTSSALESRETURNSQRY
 
@@ -29,15 +45,15 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSALESRETURNSQRY')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSALESRETURNSQRY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RequirementDocumentNumber` |  | |  |  | `CHAR(10)` | Sales Document |
-| `RequirementDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
-| `SupplyScheduleLine` |  | |  |  | `NUMC(4)` | Schedule Line Number |
+| `RequirementDocumentNumber` | ✓ | |  |  | `CHAR(10)` | Sales Document |
+| `RequirementDocumentItem` | ✓ | |  |  | `NUMC(6)` | Sales Document Item |
+| `SupplyScheduleLine` | ✓ | |  |  | `NUMC(4)` | Schedule Line Number |
 | `AssignedSupplyType` |  | |  |  | `CHAR(1)` |  |
 | `SupAssgmtSource` |  | |  |  | `CHAR(1)` |  |
 | `SupplyDeliveryDate` |  | |  |  | `DATS(8)` | Requested Delivery Date |
@@ -70,3 +86,94 @@ tags:
 | `DocumentCurrency` |  | |  |  | `CUKY(5)` | SD Document Currency |
 | `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
 | `NmbrOfItemsInOrder` |  | |  |  | `INT4(10)` | Item Issues in Order |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSALESRETURNSQRY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ARUNANLYTSSALESRETURNSQRY')/$value)*
+
+```abap
+@ClientHandling.algorithm: #SESSION_VARIABLE
+@VDM.viewType: #CONSUMPTION
+@AccessControl: {
+  authorizationCheck: #PRIVILEGED_ONLY,
+  personalData.blocking: #REQUIRED
+}
+@AbapCatalog: {
+  sqlViewName: 'CARNANLYTSRETSOQ',
+  compiler.compareFilter: true,
+  preserveKey:true
+}
+@ObjectModel:{
+   usageType: {
+     dataClass:      #MIXED,
+     serviceQuality: #D,
+     sizeCategory:   #L
+   }
+}
+@Metadata.ignorePropagatedAnnotations:true
+@Analytics.query: true
+@EndUserText.label: 'Return Sales Orders'
+@ObjectModel.supportedCapabilities: #ANALYTICAL_QUERY
+define view C_ARunAnlytsSalesReturnsQry
+  with parameters
+    @Consumption.defaultValue: 'USD'
+    P_DisplayCurrency : vdm_v_display_currency
+  as select from I_ARunAnlytsSlsOrdRetCube ( P_DisplayCurrency: $parameters.P_DisplayCurrency)
+{
+  key RequirementDocumentNumber,
+  key RequirementDocumentItem,
+  key SupplyScheduleLine,
+      AssignedSupplyType,
+      SupAssgmtSource,
+      SupplyDeliveryDate,
+      @EndUserText.label: 'Delivery Date'
+      ProductAvailabilityDate,
+      @EndUserText.label: 'Requested Delivery Date'
+      RequestedDeliveryDate,
+      TotalQuantity,
+      OpenSupplyQuantity,
+      BaseUnit,
+      @EndUserText.label: 'Product'
+      Product,
+      @EndUserText.label: 'Product Group'
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      ProductGroup,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @EndUserText.label: 'Plant'
+      Plant,
+      OrderType,
+      @EndUserText.label: 'Product Type'
+      ProductType,
+      @EndUserText.label: 'Stock Segment'
+      @Feature:'SW:RFM_SEGMTN_UI'
+      StockSegment,
+      @EndUserText.label: 'Generic Article'
+      CrossPlantConfigurableProduct,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @EndUserText.label: 'Sales Organization'
+      SalesOrganization,
+      DistributionChannel,
+      Division,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @EndUserText.label: 'Sales District'
+      SalesDistrict,
+      PurchasingOrganization,
+      PurchasingGroup,
+      Batch,
+      StorageLocation,
+      Customer,
+      @AnalyticsDetails.query.display: #KEY_TEXT
+      @EndUserText.label: 'Company Code'
+      CompanyCode,
+      SDDocumentReason,
+      @EndUserText.label: 'Reason for Rejection'
+      SalesDocumentRjcnReason,
+      NetPriceAmount,
+      @EndUserText.label: 'Amount'
+      NetAmount,
+      DocumentCurrency,
+      DisplayCurrency,
+      @EndUserText.label: 'Number of Items'
+      NmbrOfItemsInOrder
+}
+```
