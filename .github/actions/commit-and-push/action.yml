@@ -51,12 +51,22 @@ runs:
         git config user.name "cds-kb-bot"
         git config user.email "bot@cds-kb.local"
 
-        if git diff --quiet -- $PATHS; then
+        # Some callers pass a path that only exists once its own pipeline has
+        # actually produced it (e.g. usage-stats.json before telemetry is
+        # configured) — `git add` on a path that isn't there aborts the whole
+        # command (pathspec did not match any files), so only ever diff/add
+        # paths that currently exist on disk.
+        EXISTING=""
+        for p in $PATHS; do
+          if ls $p >/dev/null 2>&1; then EXISTING="$EXISTING $p"; fi
+        done
+
+        if [ -z "$EXISTING" ] || git diff --quiet -- $EXISTING; then
           echo "ℹ️  $EMPTY_MESSAGE"
           exit 0
         fi
 
-        git add $PATHS
+        git add $EXISTING
         git commit -m "$COMMIT_MESSAGE"
 
         for attempt in 1 2 3 4 5; do
