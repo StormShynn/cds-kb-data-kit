@@ -458,5 +458,205 @@
     "attemptedAt": "2026-08-07T15:37:06.236Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"I_BUSPARTEMAILADDRESSTP_3\" (404)"
+  },
+  "C_ARUNANLYTSSLSORDREJECTION": {
+    "attemptedAt": "2026-08-07T15:56:13.353Z",
+    "found": true,
+    "matched": 58
+  },
+  "C_ARUNANLYTSSUPASSGMTQRY": {
+    "attemptedAt": "2026-08-07T15:56:14.441Z",
+    "found": true,
+    "matched": 37
+  },
+  "C_ARUNANLYTSSUPDMNDOVWQRY": {
+    "attemptedAt": "2026-08-07T15:56:15.442Z",
+    "found": true,
+    "matched": 55
+  },
+  "C_ARUNANLYTSTOTDMNDQRY": {
+    "attemptedAt": "2026-08-07T15:56:16.468Z",
+    "found": true,
+    "matched": 61
+  },
+  "C_ARUNANLYTSTOTSUPQRY": {
+    "attemptedAt": "2026-08-07T15:56:17.400Z",
+    "found": true,
+    "matched": 37
+  },
+  "C_ASSETBALANCE": {
+    "attemptedAt": "2026-08-07T15:56:18.427Z",
+    "found": true,
+    "matched": 102
+  },
+  "C_ASSETHISTORYSHEET": {
+    "attemptedAt": "2026-08-07T15:56:19.478Z",
+    "found": true,
+    "matched": 105
+  },
+  "C_BALANCECONFIRMATIONEMAILTMPL": {
+    "attemptedAt": "2026-08-07T15:56:20.592Z",
+    "found": true,
+    "matched": 12
+  },
+  "C_BALANCESHEETCURRENCYROLEVH": {
+    "attemptedAt": "2026-08-07T15:56:21.625Z",
+    "found": true,
+    "matched": 8
+  },
+  "C_BASICCONDITIONCONTRACTDEX": {
+    "attemptedAt": "2026-08-07T15:56:22.755Z",
+    "found": true,
+    "matched": 66
+  },
+  "C_BILLOFOPERATIONSBASICOPDEX": {
+    "attemptedAt": "2026-08-07T15:56:23.716Z",
+    "found": true,
+    "matched": 164
+  },
+  "C_BOOMATLASSGMTCHGSTDEX": {
+    "attemptedAt": "2026-08-07T15:56:24.729Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_CASHFLOWINDIRECTIFRS": {
+    "attemptedAt": "2026-08-07T15:56:26.153Z",
+    "found": true,
+    "matched": 59
+  },
+  "C_CMMDTYMTMCURRENTDATEQRY": {
+    "attemptedAt": "2026-08-07T15:56:27.185Z",
+    "found": true,
+    "matched": 111
+  },
+  "C_CMMDTYMTMDAYOVERDAYQRY": {
+    "attemptedAt": "2026-08-07T15:56:28.220Z",
+    "found": true,
+    "matched": 111
+  },
+  "C_CMMDTYMTMENDOFDAYQRY": {
+    "attemptedAt": "2026-08-07T15:56:29.218Z",
+    "found": true,
+    "matched": 111
+  },
+  "C_CMMDTYPOSCURRENTDATEQRY": {
+    "attemptedAt": "2026-08-07T15:56:30.320Z",
+    "found": true,
+    "matched": 87
+  },
+  "C_CMMDTYPOSDAYOVERDAYQRY": {
+    "attemptedAt": "2026-08-07T15:56:31.346Z",
+    "found": true,
+    "matched": 89
+  },
+  "C_CMMDTYPOSENDOFDAYQRY": {
+    "attemptedAt": "2026-08-07T15:56:32.991Z",
+    "found": true,
+    "matched": 88
+  },
+  "C_CNDNCONTRBUSVOLSELCRITERIADP": {
+    "attemptedAt": "2026-08-07T15:56:34.106Z",
+    "found": true,
+    "matched": 53
+  },
+  "C_CNDNCONTRSETTLMTCALDP": {
+    "attemptedAt": "2026-08-07T15:56:35.243Z",
+    "found": true,
+    "matched": 14
+  },
+  "C_CO_DIANSTRPEMPLOYEEOPENITEMC": {
+    "attemptedAt": "2026-08-07T15:56:36.237Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_COLLECTIONPROGRESSQ": {
+    "attemptedAt": "2026-08-07T15:56:37.265Z",
+    "found": true,
+    "matched": 16
+  },
+  "C_COMPLAINTAGAINSTSUPPLIERFDP": {
+    "attemptedAt": "2026-08-07T15:56:38.310Z",
+    "found": true,
+    "matched": 22
+  },
+  "C_CONDITIONCONTRACTDEX": {
+    "attemptedAt": "2026-08-07T15:56:39.270Z",
+    "found": true,
+    "matched": 70
+  },
+  "C_CONDITIONCONTRACTDP": {
+    "attemptedAt": "2026-08-07T15:56:40.332Z",
+    "found": true,
+    "matched": 76
+  },
+  "C_COSTCENTERBUDGETQUERY": {
+    "attemptedAt": "2026-08-07T15:56:41.382Z",
+    "found": true,
+    "matched": 43
+  },
+  "C_COSTCENTERPLANACTQ2001": {
+    "attemptedAt": "2026-08-07T15:56:42.406Z",
+    "found": true,
+    "matched": 69
+  },
+  "C_COSTCENTERQ2001": {
+    "attemptedAt": "2026-08-07T15:56:43.406Z",
+    "found": true,
+    "matched": 48
+  },
+  "C_COSTCENTERSEMANTICTAG": {
+    "attemptedAt": "2026-08-07T15:56:44.418Z",
+    "found": true,
+    "matched": 58
+  },
+  "I_BUSPARTFAXNUMBERTP_3": {
+    "attemptedAt": "2026-08-07T15:56:44.689Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTFAXNUMBERTP_3\" (404)"
+  },
+  "I_BUSPARTIDENTIFICATIONTP_3": {
+    "attemptedAt": "2026-08-07T15:56:45.490Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTIDENTIFICATIONTP_3\" (404)"
+  },
+  "I_BUSPARTINDUSTRYKEY": {
+    "attemptedAt": "2026-08-07T15:56:46.711Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_BUSPARTINDUSTRYKEYTEXT": {
+    "attemptedAt": "2026-08-07T15:56:47.533Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_BUSPARTINDUSTRYSYSTEM": {
+    "attemptedAt": "2026-08-07T15:56:48.453Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BUSPARTINDUSTRYSYSTEMTEXT": {
+    "attemptedAt": "2026-08-07T15:56:49.264Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUSPARTMARITALSTATUS": {
+    "attemptedAt": "2026-08-07T15:56:50.157Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BUSPARTMARITALSTATUSTEXT": {
+    "attemptedAt": "2026-08-07T15:56:51.038Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUSPARTMOBILEPHONENUMBERTP_3": {
+    "attemptedAt": "2026-08-07T15:56:51.327Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSPARTMOBILEPHONENUMBERTP_3\" (404)"
+  },
+  "I_BUSPARTOCCUPATIONTEXT": {
+    "attemptedAt": "2026-08-07T15:56:52.516Z",
+    "found": true,
+    "matched": 3
   }
 }

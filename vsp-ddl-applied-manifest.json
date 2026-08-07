@@ -143,5 +143,155 @@
     "appliedAt": "2026-08-07T15:34:16.187Z",
     "fields": 23,
     "action": "updated"
+  },
+  "C_ARUNANLYTSSLSORDREJECTION": {
+    "appliedAt": "2026-08-07T15:55:42.070Z",
+    "fields": 58,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSSUPASSGMTQRY": {
+    "appliedAt": "2026-08-07T15:55:42.298Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSSUPDMNDOVWQRY": {
+    "appliedAt": "2026-08-07T15:55:42.525Z",
+    "fields": 55,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSTOTDMNDQRY": {
+    "appliedAt": "2026-08-07T15:55:42.748Z",
+    "fields": 61,
+    "action": "updated"
+  },
+  "C_ARUNANLYTSTOTSUPQRY": {
+    "appliedAt": "2026-08-07T15:55:42.961Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_ASSETBALANCE": {
+    "appliedAt": "2026-08-07T15:55:43.236Z",
+    "fields": 102,
+    "action": "updated"
+  },
+  "C_ASSETHISTORYSHEET": {
+    "appliedAt": "2026-08-07T15:55:43.468Z",
+    "fields": 105,
+    "action": "updated"
+  },
+  "C_BALANCECONFIRMATIONEMAILTMPL": {
+    "appliedAt": "2026-08-07T15:55:43.681Z",
+    "fields": 12,
+    "action": "updated"
+  },
+  "C_BALANCESHEETCURRENCYROLEVH": {
+    "appliedAt": "2026-08-07T15:55:43.897Z",
+    "fields": 8,
+    "action": "updated"
+  },
+  "C_BASICCONDITIONCONTRACTDEX": {
+    "appliedAt": "2026-08-07T15:55:44.119Z",
+    "fields": 66,
+    "action": "updated"
+  },
+  "C_BILLOFOPERATIONSBASICOPDEX": {
+    "appliedAt": "2026-08-07T15:55:44.334Z",
+    "fields": 164,
+    "action": "updated"
+  },
+  "C_BOOMATLASSGMTCHGSTDEX": {
+    "appliedAt": "2026-08-07T15:55:44.554Z",
+    "fields": 25,
+    "action": "updated"
+  },
+  "C_CASHFLOWINDIRECTIFRS": {
+    "appliedAt": "2026-08-07T15:55:44.772Z",
+    "fields": 59,
+    "action": "updated"
+  },
+  "C_CMMDTYMTMCURRENTDATEQRY": {
+    "appliedAt": "2026-08-07T15:55:44.983Z",
+    "fields": 111,
+    "action": "updated"
+  },
+  "C_CMMDTYMTMDAYOVERDAYQRY": {
+    "appliedAt": "2026-08-07T15:55:45.189Z",
+    "fields": 111,
+    "action": "updated"
+  },
+  "C_CMMDTYMTMENDOFDAYQRY": {
+    "appliedAt": "2026-08-07T15:55:45.468Z",
+    "fields": 111,
+    "action": "updated"
+  },
+  "C_CMMDTYPOSCURRENTDATEQRY": {
+    "appliedAt": "2026-08-07T15:55:45.651Z",
+    "fields": 87,
+    "action": "updated"
+  },
+  "C_CMMDTYPOSDAYOVERDAYQRY": {
+    "appliedAt": "2026-08-07T15:55:45.853Z",
+    "fields": 89,
+    "action": "updated"
+  },
+  "C_CMMDTYPOSENDOFDAYQRY": {
+    "appliedAt": "2026-08-07T15:55:46.063Z",
+    "fields": 88,
+    "action": "updated"
+  },
+  "C_CNDNCONTRBUSVOLSELCRITERIADP": {
+    "appliedAt": "2026-08-07T15:55:46.272Z",
+    "fields": 53,
+    "action": "updated"
+  },
+  "C_CNDNCONTRSETTLMTCALDP": {
+    "appliedAt": "2026-08-07T15:55:46.472Z",
+    "fields": 14,
+    "action": "updated"
+  },
+  "C_COLLECTIONPROGRESSQ": {
+    "appliedAt": "2026-08-07T15:55:46.678Z",
+    "fields": 16,
+    "action": "updated"
+  },
+  "C_COMPLAINTAGAINSTSUPPLIERFDP": {
+    "appliedAt": "2026-08-07T15:55:46.883Z",
+    "fields": 23,
+    "action": "updated"
+  },
+  "C_CONDITIONCONTRACTDEX": {
+    "appliedAt": "2026-08-07T15:55:47.084Z",
+    "fields": 70,
+    "action": "updated"
+  },
+  "C_CONDITIONCONTRACTDP": {
+    "appliedAt": "2026-08-07T15:55:47.281Z",
+    "fields": 76,
+    "action": "updated"
+  },
+  "C_COSTCENTERBUDGETQUERY": {
+    "appliedAt": "2026-08-07T15:55:47.484Z",
+    "fields": 45,
+    "action": "updated"
+  },
+  "C_COSTCENTERPLANACTQ2001": {
+    "appliedAt": "2026-08-07T15:55:47.697Z",
+    "fields": 69,
+    "action": "updated"
+  },
+  "C_COSTCENTERQ2001": {
+    "appliedAt": "2026-08-07T15:55:47.904Z",
+    "fields": 48,
+    "action": "updated"
+  },
+  "C_COSTCENTERSEMANTICTAG": {
+    "appliedAt": "2026-08-07T15:55:48.115Z",
+    "fields": 58,
+    "action": "updated"
+  },
+  "C_CO_DIANSTRPEMPLOYEEOPENITEMC": {
+    "appliedAt": "2026-08-07T15:55:48.318Z",
+    "fields": 25,
+    "action": "updated"
   }
 }

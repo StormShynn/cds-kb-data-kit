@@ -32,7 +32,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MaritalStatus` | ✓ | |  | `marst` |  |  |
+| `MaritalStatus` | ✓ | |  | `marst` | `CHAR(1)` | Marital Status of Business Partner |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

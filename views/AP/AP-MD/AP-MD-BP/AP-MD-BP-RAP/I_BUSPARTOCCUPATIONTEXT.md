@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `BusinessPartnerOccupation` | ✓ | |  | `jobgr` |  |  |
-| `OccupationDescription` |  | |  | `bez30` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `BusinessPartnerOccupation` | ✓ | |  | `jobgr` | `CHAR(4)` | Occupation/group |
+| `OccupationDescription` |  | |  | `bez30` | `CHAR(70)` | Description |
 
 ## Source Code
 

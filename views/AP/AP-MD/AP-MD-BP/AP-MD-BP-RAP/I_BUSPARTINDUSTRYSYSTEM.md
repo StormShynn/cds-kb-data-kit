@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IndustrySystemType` | ✓ | |  | `istype` |  |  |
+| `IndustrySystemType` | ✓ | |  | `istype` | `CHAR(4)` | Industry System |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

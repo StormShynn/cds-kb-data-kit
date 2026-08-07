@@ -5,9 +5,22 @@ app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BASICCONDITIONCONTRACTDEX')/$value
 semantic_en: Basic Condition Contract Extraction
+semantic_vi: Basic Condition Contract Extraction — CDS view tiêu dùng dựa trên R_BasicConditionContractDEX.
+keywords:
+  - basic
+  - condition
+  - contract
+  - extraction
+  - cndn
+  - contr
+  - type
+  - classfctn
+  - proc
+  - document
+  - reference
 tags:
   - LO
   - component:LO-GT-CHB
@@ -16,7 +29,6 @@ tags:
   - LO-GT
   - LO-GT-CHB
   - lob:logistics general
-  - metadata-only
 ---
 # C_BASICCONDITIONCONTRACTDEX
 
@@ -28,13 +40,13 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BASICCONDITIONCONTRACTDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BASICCONDITIONCONTRACTDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BasicConditionContract` |  | |  |  | `CHAR(10)` | Basic Contract of Contract |
+| `BasicConditionContract` | ✓ | |  |  | `CHAR(10)` | Basic Contract of Contract |
 | `CndnContrType` |  | |  |  | `CHAR(4)` | Condition Contract Type |
 | `CndnContrClassfctnType` |  | |  |  | `CHAR(2)` | Condition Contract Category |
 | `CndnContrProcVar` |  | |  |  | `CHAR(4)` | Condition Contract Process Variant |
@@ -85,7 +97,7 @@ tags:
 | `DeltaAccrualSettlmtCalendar` |  | |  |  | `CHAR(2)` | Calendar for Delta Accruals Settlement |
 | `AccrualClearingSettlmtCalendar` |  | |  |  | `CHAR(2)` | Calendar for Accruals Deferral Settlement |
 | `CndnContrExtensionCalendar` |  | |  |  | `CHAR(2)` | Calendar for Condition Contract Extension |
-| `PrecdgBasicConditionContract` |  | |  |  | `CHAR(10)` | Predecessor Condition Contract |
+| `PrecdgBasicConditionContract` |  | |  | `PrecedingConditionDocument` | `CHAR(10)` | Predecessor Condition Contract |
 | `BscCndnContrPurposeCategory` |  | |  |  | `CHAR(2)` | Condition Contract Purpose Category |
 | `BscCndnContrSrceDocCategory` |  | |  |  | `CHAR(2)` | External Reference Document Category |
 | `BscCndnContrSourceDocument` |  | |  |  | `CHAR(32)` | External Reference |
@@ -100,3 +112,151 @@ tags:
 | `TaxCountry` |  | |  |  | `CHAR(3)` | Tax Reporting Country/Region |
 | `SettlmtPartTxRegnCntry` |  | |  |  | `CHAR(3)` | Partner Tax Country/Region |
 | `SettlmtPartTxRegnNmbr` |  | |  |  | `CHAR(20)` | VAT Registration Number |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BASICCONDITIONCONTRACTDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_BASICCONDITIONCONTRACTDEX')/$value)*
+
+```abap
+@EndUserText.label: 'Basic Condition Contract Extraction'
+@AccessControl: {
+    authorizationCheck:      #MANDATORY,
+    personalData.blocking:   #('TRANSACTIONAL_DATA')
+    }
+@ObjectModel: {
+    modelingPattern:#ANALYTICAL_FACT,
+    supportedCapabilities: [#CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE, #EXTRACTION_DATA_SOURCE],
+    sapObjectNodeType.name: 'BasicConditionContract',
+    usageType: {
+       dataClass:      #MIXED,
+       serviceQuality: #D,
+       sizeCategory:   #XXL 
+       } 
+    }
+@Analytics: {
+    dataCategory: #FACT,
+    dataExtraction: {
+        enabled: true,
+        delta: {
+            changeDataCapture: {
+                mapping:[
+                    {
+                        table: 'wcocoh', role: #MAIN,
+                        viewElement: ['BasicConditionContract'],
+                        tableElement: ['num']
+                    }
+                    ]
+               }
+            }
+        }
+    }
+@VDM.viewType: #CONSUMPTION
+@Metadata: {
+    ignorePropagatedAnnotations: true,
+    allowExtensions: false
+    }
+define view entity C_BasicConditionContractDEX
+  as select from R_BasicConditionContractDEX as BasicConditionContract
+{
+  key BasicConditionContract.BasicConditionContract,
+      BasicConditionContract.CndnContrType,
+      BasicConditionContract.CndnContrClassfctnType,
+      BasicConditionContract.CndnContrProcVar,
+      BasicConditionContract.DocumentReferenceID,
+      BasicConditionContract.BscCndnContrAssgmtReference,
+      BasicConditionContract.ExternalDocumentReferenceID,
+      BasicConditionContract.BscCndnContrExternalPartner,
+      BasicConditionContract.BscCndnContrActivationStatus,
+
+      /* Validity */
+      BasicConditionContract.BscCndnContrValidFromDate,
+      BasicConditionContract.BscCndnContrValidToDate,
+
+      /* Partners */
+      BasicConditionContract.Supplier,
+      BasicConditionContract.Customer,
+      BasicConditionContract.PriorSupplier,
+
+      /* Organizational Data */
+      BasicConditionContract.CompanyCode,
+      BasicConditionContract.PurchasingOrganization,
+      BasicConditionContract.PurchasingGroup,
+      BasicConditionContract.SalesOrganization,
+      BasicConditionContract.DistributionChannel,
+      BasicConditionContract.Division,
+      BasicConditionContract.SalesGroup,
+      BasicConditionContract.SalesOffice,
+
+      /* Administrative Data */
+      BasicConditionContract.CreatedByUser,
+      BasicConditionContract.CreationDate,
+      BasicConditionContract.CreationTime,
+      BasicConditionContract.CreationTimeZone,
+      BasicConditionContract.CreationUTCDateTime,
+      BasicConditionContract.LastChangedByUser,
+      BasicConditionContract.LastChangedDate,
+      BasicConditionContract.LastChangeTime,
+      BasicConditionContract.LastChangeUTCDateTime,
+
+      /* Currency and Exchange Rate */
+      BasicConditionContract.BscConditionContractCurrency,
+      BasicConditionContract.ExchangeRate,
+      BasicConditionContract.ExchangeRateType,
+      BasicConditionContract.ExchangeRateDate,
+
+      /* Payment terms and method */
+      BasicConditionContract.PaymentTerms,
+      BasicConditionContract.CashDiscount1Days,
+      BasicConditionContract.CashDiscount1Percent,
+      BasicConditionContract.CashDiscount2Days,
+      BasicConditionContract.CashDiscount2Percent,
+      BasicConditionContract.NetPaymentDays,
+      BasicConditionContract.PaymentMethod,
+      BasicConditionContract.BscCndnContrSuplrSettlmtCat,
+      BasicConditionContract.BscCndnContrCustSettlmtCat,
+      BasicConditionContract.SettlmtProduct,
+
+      /* Calendars */
+      BasicConditionContract.FinalSettlmtCalendar,
+      BasicConditionContract.PartialSettlmtCalendar,
+      BasicConditionContract.DeltaSettlmtCalendar,
+      BasicConditionContract.DeltaAccrualSettlmtCalendar,
+      BasicConditionContract.AccrualClearingSettlmtCalendar,
+      BasicConditionContract.CndnContrExtensionCalendar,
+      BasicConditionContract.PrecedingConditionDocument as PrecdgBasicConditionContract,
+      BasicConditionContract.BscCndnContrPurposeCategory,
+
+      /* Source Document */
+      BasicConditionContract.BscCndnContrSrceDocCategory,
+      BasicConditionContract.BscCndnContrSourceDocument,
+      BasicConditionContract.BscCndnContrSourceDocumentItem,
+
+
+      BasicConditionContract.BusVolTableGroup,
+      BasicConditionContract.AmountFieldGroup,
+
+      /* Units */
+      BasicConditionContract.BasicConditionContractUnit,
+      BasicConditionContract.BscCndnContrWeightUnit,
+      BasicConditionContract.BscCndnContrVolumeUnit,
+      BasicConditionContract.BscCndnContrPtsQuantityUnit,
+
+
+      BasicConditionContract.AccrualUpdateIsRequired,
+
+      /* Tax */
+      BasicConditionContract.TaxCountry,
+      BasicConditionContract.SettlmtPartTxRegnCntry,
+
+      /* VAT Registration */
+      BasicConditionContract.SettlmtPartTxRegnNmbr,
+
+      /* Associations*/
+      @Consumption.hidden: true
+      BasicConditionContract._Customer,
+      @Consumption.hidden: true
+      BasicConditionContract._PriorSupplier,
+      @Consumption.hidden: true
+      BasicConditionContract._Supplier
+}
+```

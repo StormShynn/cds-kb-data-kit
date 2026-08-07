@@ -34,9 +34,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `MaritalStatus` | ✓ | |  | `marst` |  |  |
-| `MaritalStatusName` |  | |  | `bez20` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `MaritalStatus` | ✓ | |  | `marst` | `CHAR(1)` | Marital Status of Business Partner |
+| `MaritalStatusName` |  | |  | `bez20` | `CHAR(20)` | Short name |
 
 ## Source Code
 

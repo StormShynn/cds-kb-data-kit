@@ -31,8 +31,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IndustrySystemType` | ✓ | |  | `istype` |  |  |
-| `IndustrySector` | ✓ | |  | `ind_sector` |  |  |
+| `IndustrySystemType` | ✓ | |  | `istype` | `CHAR(4)` | Industry System |
+| `IndustrySector` | ✓ | |  | `ind_sector` | `CHAR(10)` | Industry |
 | `_Text` | | ✓ | | | | |
 | `_BusPartIndustrySystem` | | ✓ | | | | |
 

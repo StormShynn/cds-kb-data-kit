@@ -33,10 +33,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `IndustrySystemType` | ✓ | |  | `istype` |  |  |
-| `IndustrySector` | ✓ | |  | `ind_sector` |  |  |
-| `IndustryKeyDescription` |  | |  | `text` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `IndustrySystemType` | ✓ | |  | `istype` | `CHAR(4)` | Industry System |
+| `IndustrySector` | ✓ | |  | `ind_sector` | `CHAR(10)` | Industry |
+| `IndustryKeyDescription` |  | |  | `text` | `CHAR(100)` | Description |
 | `_BusPartIndustryKey` | | ✓ | | | | |
 
 ## Associations
