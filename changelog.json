@@ -572,6 +572,72 @@
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_ACCOUNTDISPUTE')/$value"
   },
   {
+    "viewName": "_DCO_I_PAYTDIFFREASONTEXT",
+    "action": "added",
+    "timestamp": "2026-08-07T15:28:30.475Z",
+    "source": "hub-catalog",
+    "fields": 5,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_PAYTDIFFREASONTEXT')/$value"
+  },
+  {
+    "viewName": "_DCO_I_POSTINGCLASSTEXT",
+    "action": "added",
+    "timestamp": "2026-08-07T15:28:30.667Z",
+    "source": "hub-catalog",
+    "fields": 5,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_POSTINGCLASSTEXT')/$value"
+  },
+  {
+    "viewName": "_DCO_I_POSTINGSUBCLASS",
+    "action": "added",
+    "timestamp": "2026-08-07T15:28:31.016Z",
+    "source": "hub-catalog",
+    "fields": 3,
+    "associations": 0,
+    "tags": 10,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_POSTINGSUBCLASS')/$value"
+  },
+  {
+    "viewName": "_DCO_I_PRMS2PINSMPLANITEM",
+    "action": "added",
+    "timestamp": "2026-08-07T15:28:31.021Z",
+    "source": "hub-catalog",
+    "fields": 11,
+    "associations": 0,
+    "tags": 11,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_PRMS2PINSMPLANITEM')/$value"
+  },
+  {
+    "viewName": "_DCO_I_PRMS2PPROCESSINGSTATUS",
+    "action": "added",
+    "timestamp": "2026-08-07T15:28:31.276Z",
+    "source": "hub-catalog",
+    "fields": 1,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_PRMS2PPROCESSINGSTATUS')/$value"
+  },
+  {
+    "viewName": "_DCO_I_PRMS2PPROCGSTATUSTEXT",
+    "action": "added",
+    "timestamp": "2026-08-07T15:28:31.555Z",
+    "source": "hub-catalog",
+    "fields": 3,
+    "associations": 0,
+    "tags": 8,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('_DCO_I_PRMS2PPROCGSTATUSTEXT')/$value"
+  },
+  {
     "viewName": "C_ACTLPLNSRVCMARGITEMQUERY",
     "action": "updated",
     "timestamp": "2026-08-07T15:34:10.394Z",
