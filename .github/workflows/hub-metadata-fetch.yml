@@ -40,7 +40,7 @@ on:
       limit:
         description: 'Max views to process this run (0 = no limit)'
         type: string
-        default: '50'
+        default: '100'
       dry_run:
         description: 'Dry run (preview only, no files written)'
         type: boolean
@@ -107,7 +107,7 @@ jobs:
           # repo has a SAP_API_HUB_KEY secret configured.
           SAP_API_HUB_KEY: ${{ secrets.SAP_API_HUB_KEY }}
         run: |
-          LIMIT="${{ github.event.inputs.limit || '50' }}"
+          LIMIT="${{ github.event.inputs.limit || '100' }}"
           ARGS=("--limit" "$LIMIT")
 
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
