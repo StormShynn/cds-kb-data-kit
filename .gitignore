@@ -10,3 +10,7 @@ tools/
 .env.example
 .vsp.json
 .vsp.json.example
+
+# Harness core maintenance binary
+scripts/bin/harness
+scripts/bin/harness.exe

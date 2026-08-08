@@ -50,6 +50,7 @@ async function main() {
   const fieldIndex = await readJson(path.join(DATA_DIR, 'index', 'field-index.json'), null);
   const tableIndex = await readJson(path.join(DATA_DIR, 'index', 'table-index.json'), null);
   const rawFieldIndex = await readJson(path.join(DATA_DIR, 'index', 'raw-field-index.json'), null);
+  const taxonomy = await readJson(path.join(DATA_DIR, 'index', 'taxonomy.json'), null);
   const viewPaths = await readJson(path.join(DATA_DIR, 'index', 'view-paths.json'), {});
 
   if (!fieldIndex || !tableIndex) {
@@ -92,19 +93,36 @@ async function main() {
     }
   }
 
-  const embedded = JSON.stringify({ F, T, R, M: viewMeta, P: viewPaths })
+  // BIZ: business-object/line-of-business keyword lookup, used only as a
+  // fallback when a query matches nothing technical (no field/table/raw
+  // hit at all) — a lot of what someone pastes here is a business term
+  // ("Material Master"), not a technical name, and taxonomy.json already
+  // has these mapped to tags (bo:material -> ["Material Master", "MARA",
+  // "Product", "LO-MD-MM"]) for exactly this kind of matching elsewhere
+  // (search_cds's module/bo filters). Small (829 BOs + 12 LOBs, a few
+  // keywords each) — a flat list embeds cheaply next to the ~10MB the three
+  // technical indices already cost.
+  const BIZ = [];
+  if (taxonomy) {
+    for (const b of [...(taxonomy.lobs || []), ...(taxonomy.bos || [])]) {
+      if (b.tag && b.keywords?.length) BIZ.push([b.tag, b.keywords]);
+    }
+  }
+
+  const embedded = JSON.stringify({ F, T, R, BIZ, M: viewMeta, P: viewPaths })
     .replace(/<\/script/gi, '<\\/script');
 
   const html = renderHtml(embedded, {
     fieldCount: Object.keys(F).length,
     tableCount: Object.keys(T).length,
     rawFieldCount: Object.keys(R).length,
+    bizCount: BIZ.length,
     viewCount: Object.keys(viewMeta).length,
   });
 
   await fs.writeFile(OUTPUT_FILE, html, 'utf-8');
   const sizeMb = (Buffer.byteLength(html) / 1024 / 1024).toFixed(1);
-  console.log(`✅ Wrote ${OUTPUT_FILE} (${sizeMb} MB) — ${Object.keys(F).length} field name(s), ${Object.keys(T).length} table/view name(s), ${Object.keys(R).length} raw DDIC column name(s)`);
+  console.log(`✅ Wrote ${OUTPUT_FILE} (${sizeMb} MB) — ${Object.keys(F).length} field name(s), ${Object.keys(T).length} table/view name(s), ${Object.keys(R).length} raw DDIC column name(s), ${BIZ.length} business term(s)`);
 }
 
 function renderHtml(embeddedJson, stats) {
@@ -182,7 +200,7 @@ function renderHtml(embeddedJson, stats) {
   const q = document.getElementById('q');
   const results = document.getElementById('results');
   const statsLine = document.getElementById('statsLine');
-  statsLine.textContent = ${JSON.stringify(`${stats.fieldCount} field name(s) · ${stats.tableCount} table/view name(s) · ${stats.rawFieldCount} raw DDIC column name(s) · ${stats.viewCount} view(s) covered`)};
+  statsLine.textContent = ${JSON.stringify(`${stats.fieldCount} field name(s) · ${stats.tableCount} table/view name(s) · ${stats.rawFieldCount} raw DDIC column name(s) · ${stats.bizCount} business term(s) · ${stats.viewCount} view(s) covered`)};
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -236,8 +254,29 @@ function renderHtml(embeddedJson, stats) {
     const tableSubstr = tableKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
     const rawSubstr = rawKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
 
-    if (!fieldExact && !tableExact && !rawExact && fieldSubstr.length === 0 && tableSubstr.length === 0 && rawSubstr.length === 0) {
-      results.innerHTML = '<div class="empty">No field, table/view, or raw DDIC column name matches "' + escapeHtml(raw) + '".</div>';
+    const hasTechnicalMatch = fieldExact || tableExact || rawExact || fieldSubstr.length > 0 || tableSubstr.length > 0 || rawSubstr.length > 0;
+
+    if (!hasTechnicalMatch) {
+      // Nothing technical matched at all — the query might be a business
+      // term ("Material Master") rather than a field/table name. Check
+      // taxonomy keywords both ways (query-in-keyword and keyword-in-query)
+      // since a real term is rarely an exact match either direction ("cost
+      // center" vs "Cost Center Master Data").
+      const bizMatches = DATA.BIZ.filter(([, kws]) =>
+        kws.some(kw => kw.toUpperCase().includes(key) || key.includes(kw.toUpperCase()))
+      ).slice(0, 10);
+
+      if (bizMatches.length === 0) {
+        results.innerHTML = '<div class="empty">No field, table/view, or raw DDIC column name matches "' + escapeHtml(raw) + '".</div>';
+        return;
+      }
+
+      const lines = bizMatches.map(([tag, kws]) =>
+        '<div class="row"><span class="tag" style="color:var(--text-primary);font-family:ui-monospace,monospace">' + escapeHtml(tag) + '</span>' +
+        ' <span class="tag">' + escapeHtml(kws.join(', ')) + '</span></div>'
+      ).join('');
+      results.innerHTML = '<div class="section"><h2>No exact technical match for "' + escapeHtml(raw) + '" — but it looks related to</h2>' +
+        lines + '<p class="hint" style="margin-top:10px">This is a business area, not an exact field/table — use search_cds (MCP) or dashboard.html to browse views tagged with it.</p></div>';
       return;
     }
 

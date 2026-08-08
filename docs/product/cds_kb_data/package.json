@@ -5,6 +5,7 @@
   "description": "Data + fetch/tag/enrich automation for the SAP CDS knowledge base. Consumed read-only by cds-kb-mcp-kit's MCP server (local clone or remote GitHub Contents API).",
   "type": "module",
   "scripts": {
+    "test": "node --test",
     "check-coverage": "node scripts/check-coverage.mjs",
     "add-hub-metadata": "node scripts/add_hub_metadata.mjs",
     "backfill-source-links": "node scripts/backfill_source_links.mjs",
