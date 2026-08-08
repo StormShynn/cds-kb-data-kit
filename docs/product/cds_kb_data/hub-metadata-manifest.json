@@ -2152,404 +2152,404 @@
     "fetchedAt": "2026-08-07T16:03:29.660Z"
   },
   "I_CASEPRIORITY": {
-    "modifiedAt": 1781165656335,
-    "fetchedAt": "2026-07-06T10:01:15.489Z"
+    "modifiedAt": 1784095252459,
+    "fetchedAt": "2026-08-08T07:50:18.323Z"
   },
   "I_CASEPRIORITYTEXT": {
-    "modifiedAt": 1781165661708,
-    "fetchedAt": "2026-07-06T10:01:15.632Z"
+    "modifiedAt": 1784095259162,
+    "fetchedAt": "2026-08-08T07:50:18.286Z"
   },
   "I_CASEPROCESS": {
-    "modifiedAt": 1781165679426,
-    "fetchedAt": "2026-07-06T10:01:15.781Z"
+    "modifiedAt": 1784095281115,
+    "fetchedAt": "2026-08-08T07:50:18.460Z"
   },
   "I_CASEPROCESSTEXT": {
-    "modifiedAt": 1781165654266,
-    "fetchedAt": "2026-07-06T10:01:16.074Z"
+    "modifiedAt": 1784095249545,
+    "fetchedAt": "2026-08-08T07:50:18.939Z"
   },
   "I_CASEREASONS": {
-    "modifiedAt": 1781165686315,
-    "fetchedAt": "2026-07-06T10:01:16.202Z"
+    "modifiedAt": 1784095289402,
+    "fetchedAt": "2026-08-08T07:50:18.943Z"
   },
   "I_CASEREASONSTEXT": {
-    "modifiedAt": 1781165656416,
-    "fetchedAt": "2026-07-06T10:01:16.347Z"
+    "modifiedAt": 1784095252558,
+    "fetchedAt": "2026-08-08T07:50:19.061Z"
   },
   "I_CASESTATUSPROFILE": {
-    "modifiedAt": 1781165665290,
-    "fetchedAt": "2026-07-06T10:01:16.618Z"
+    "modifiedAt": 1784095263800,
+    "fetchedAt": "2026-08-08T07:50:19.562Z"
   },
   "I_CASESTATUSPROFILETEXT": {
-    "modifiedAt": 1781165668614,
-    "fetchedAt": "2026-07-06T10:01:16.777Z"
+    "modifiedAt": 1784095271002,
+    "fetchedAt": "2026-08-08T07:50:19.568Z"
   },
   "I_CASESYSTEMSTATUSTEXT": {
-    "modifiedAt": 1781165656969,
-    "fetchedAt": "2026-07-06T10:01:16.913Z"
+    "modifiedAt": 1784095253279,
+    "fetchedAt": "2026-08-08T07:50:19.598Z"
   },
   "I_CASETERMINOLOGYPROFILE": {
-    "modifiedAt": 1781165665095,
-    "fetchedAt": "2026-07-06T10:01:17.170Z"
+    "modifiedAt": 1784095263558,
+    "fetchedAt": "2026-08-08T07:50:20.116Z"
   },
   "I_CASETERMINOLOGYPROFILETEXT": {
-    "modifiedAt": 1781165678677,
-    "fetchedAt": "2026-07-06T10:01:17.317Z"
+    "modifiedAt": 1784095282871,
+    "fetchedAt": "2026-08-08T07:50:20.173Z"
   },
   "I_CASETEXTPROFILE": {
-    "modifiedAt": 1781165661485,
-    "fetchedAt": "2026-07-06T10:01:17.491Z"
+    "modifiedAt": 1784095258939,
+    "fetchedAt": "2026-08-08T07:50:20.137Z"
   },
   "I_CASETEXTPROFILETEXT": {
-    "modifiedAt": 1781165656396,
-    "fetchedAt": "2026-07-06T10:01:17.758Z"
+    "modifiedAt": 1784095252536,
+    "fetchedAt": "2026-08-08T07:50:20.743Z"
   },
   "I_CASETYPES": {
-    "modifiedAt": 1781165665789,
-    "fetchedAt": "2026-07-06T10:01:17.863Z"
+    "modifiedAt": 1784095303554,
+    "fetchedAt": "2026-08-08T07:50:20.734Z"
   },
   "I_CASETYPESTEXT": {
-    "modifiedAt": 1781165664918,
-    "fetchedAt": "2026-07-06T10:01:18.065Z"
+    "modifiedAt": 1784095263356,
+    "fetchedAt": "2026-08-08T07:50:20.755Z"
   },
   "I_CASHFLOWCUBE": {
-    "modifiedAt": 1781165416133,
-    "fetchedAt": "2026-07-06T10:01:18.286Z"
+    "modifiedAt": 1784095919223,
+    "fetchedAt": "2026-08-08T07:50:21.343Z"
   },
   "I_CASHJOURNALDOCUMENT_2": {
-    "modifiedAt": 1781165413353,
-    "fetchedAt": "2026-07-06T10:01:18.430Z"
+    "modifiedAt": 1784095914810,
+    "fetchedAt": "2026-08-08T07:50:21.316Z"
   },
   "I_CASHLIQUIDITYACTUALFLOW": {
-    "modifiedAt": 1781165410562,
-    "fetchedAt": "2026-07-06T10:01:18.592Z"
+    "modifiedAt": 1784095910586,
+    "fetchedAt": "2026-08-08T07:50:21.326Z"
   },
   "I_CASHLIQUIDITYFORECASTFLOW": {
-    "modifiedAt": 1781165412519,
-    "fetchedAt": "2026-07-06T10:01:18.870Z"
+    "modifiedAt": 1784095913426,
+    "fetchedAt": "2026-08-08T07:50:21.894Z"
   },
   "I_CENTRALCLEARINGACCOUNT": {
-    "modifiedAt": 1781165415036,
-    "fetchedAt": "2026-07-06T10:01:19.003Z"
+    "modifiedAt": 1784095917536,
+    "fetchedAt": "2026-08-08T07:50:21.928Z"
   },
   "I_CH_QUICKRESPONSEIBANCTRLDATA": {
-    "modifiedAt": 1781175958413,
-    "fetchedAt": "2026-07-06T10:01:19.159Z"
+    "modifiedAt": 1784095729017,
+    "fetchedAt": "2026-08-08T07:50:21.955Z"
   },
   "I_CHANGEMASTER": {
-    "modifiedAt": 1781165465024,
-    "fetchedAt": "2026-07-06T10:01:19.388Z"
+    "modifiedAt": 1784095347464,
+    "fetchedAt": "2026-08-08T07:50:22.493Z"
   },
   "I_CHANGEMASTERALTDATE": {
-    "modifiedAt": 1781165464395,
-    "fetchedAt": "2026-07-06T10:01:19.592Z"
+    "modifiedAt": 1784095345848,
+    "fetchedAt": "2026-08-08T07:50:22.521Z"
   },
   "I_CHANGEMASTERFUNCTION": {
-    "modifiedAt": 1781165463026,
-    "fetchedAt": "2026-07-06T10:01:19.798Z"
+    "modifiedAt": 1784095343064,
+    "fetchedAt": "2026-08-08T07:50:22.562Z"
   },
   "I_CHANGEMASTERFUNCTIONSTDVH": {
-    "modifiedAt": 1781165462607,
-    "fetchedAt": "2026-07-06T10:01:19.927Z"
+    "modifiedAt": 1784095342043,
+    "fetchedAt": "2026-08-08T07:50:23.052Z"
   },
   "I_CHANGEMASTERFUNCTIONTEXT": {
-    "modifiedAt": 1781165463699,
-    "fetchedAt": "2026-07-06T10:01:20.172Z"
+    "modifiedAt": 1784095344499,
+    "fetchedAt": "2026-08-08T07:50:23.106Z"
   },
   "I_CHANGEMASTERHIERARCHY": {
-    "modifiedAt": 1781165464310,
-    "fetchedAt": "2026-07-06T10:01:20.366Z"
+    "modifiedAt": 1784095345707,
+    "fetchedAt": "2026-08-08T07:50:23.160Z"
   },
   "I_CHANGEMASTERLOGACCMACTIVE": {
-    "modifiedAt": 1781165464971,
-    "fetchedAt": "2026-07-06T10:01:20.509Z"
+    "modifiedAt": 1784095347370,
+    "fetchedAt": "2026-08-08T07:50:23.668Z"
   },
   "I_CHANGEMASTEROBJECTTYPE": {
-    "modifiedAt": 1781165463872,
-    "fetchedAt": "2026-07-06T10:01:20.729Z"
+    "modifiedAt": 1784095344802,
+    "fetchedAt": "2026-08-08T07:50:23.692Z"
   },
   "I_CHANGEMASTEROBJECTTYPETEXT": {
-    "modifiedAt": 1781165463587,
-    "fetchedAt": "2026-07-06T10:01:20.923Z"
+    "modifiedAt": 1784095344298,
+    "fetchedAt": "2026-08-08T07:50:23.723Z"
   },
   "I_CHANGEMASTEROBJTYPEASSGMT": {
-    "modifiedAt": 1781165464590,
-    "fetchedAt": "2026-07-06T10:01:21.063Z"
+    "modifiedAt": 1784095346569,
+    "fetchedAt": "2026-08-08T07:50:24.268Z"
   },
   "I_CHANGEMASTERRELEASEKEY": {
-    "modifiedAt": 1781165463053,
-    "fetchedAt": "2026-07-06T10:01:21.340Z"
+    "modifiedAt": 1784095343133,
+    "fetchedAt": "2026-08-08T07:50:24.302Z"
   },
   "I_CHANGEMASTERRELEASEKEYSTDVH": {
-    "modifiedAt": 1781165463153,
-    "fetchedAt": "2026-07-06T10:01:21.463Z"
+    "modifiedAt": 1784095349780,
+    "fetchedAt": "2026-08-08T07:50:24.297Z"
   },
   "I_CHANGEMASTERRELEASEKEYTEXT": {
-    "modifiedAt": 1781165465909,
-    "fetchedAt": "2026-07-06T10:01:21.587Z"
+    "modifiedAt": 1784095348949,
+    "fetchedAt": "2026-08-08T07:50:24.881Z"
   },
   "I_CHANGEMASTERSTATUS": {
-    "modifiedAt": 1781165465857,
-    "fetchedAt": "2026-07-06T10:01:21.865Z"
+    "modifiedAt": 1784095348861,
+    "fetchedAt": "2026-08-08T07:50:24.892Z"
   },
   "I_CHANGEMASTERVH": {
-    "modifiedAt": 1781165463262,
-    "fetchedAt": "2026-07-06T10:01:21.995Z"
+    "modifiedAt": 1784095343590,
+    "fetchedAt": "2026-08-08T07:50:24.886Z"
   },
   "I_CHANGEMSTRLOGACCMUSERAUTHZN": {
-    "modifiedAt": 1781165463429,
-    "fetchedAt": "2026-07-06T10:01:22.183Z"
+    "modifiedAt": 1784095343967,
+    "fetchedAt": "2026-08-08T07:50:25.514Z"
   },
   "I_CHANGEMSTROBJECTMGMTRECORD": {
-    "modifiedAt": 1781165462927,
-    "fetchedAt": "2026-07-06T10:01:22.480Z"
+    "modifiedAt": 1784095342804,
+    "fetchedAt": "2026-08-08T07:50:25.552Z"
   },
   "I_CHANGEMSTROBJTYPEREVISIONLVL": {
-    "modifiedAt": 1781165465827,
-    "fetchedAt": "2026-07-06T10:01:22.588Z"
+    "modifiedAt": 1784095348811,
+    "fetchedAt": "2026-08-08T07:50:25.499Z"
   },
   "I_CHANGEMSTROBMGREDOCINFORECD": {
-    "modifiedAt": 1781165463105,
-    "fetchedAt": "2026-07-06T10:01:22.763Z"
+    "modifiedAt": 1784095343263,
+    "fetchedAt": "2026-08-08T07:50:26.082Z"
   },
   "I_CHANGEMSTROBMGREMATERIAL": {
-    "modifiedAt": 1781165463167,
-    "fetchedAt": "2026-07-06T10:01:23.057Z"
+    "modifiedAt": 1784095343396,
+    "fetchedAt": "2026-08-08T07:50:26.140Z"
   },
   "I_CHANGEMSTROBMGREMATLBOM": {
-    "modifiedAt": 1781165463182,
-    "fetchedAt": "2026-07-06T10:01:23.108Z"
+    "modifiedAt": 1784095343410,
+    "fetchedAt": "2026-08-08T07:50:26.116Z"
   },
   "I_CHECKSTATUS": {
-    "modifiedAt": 1781175917666,
-    "fetchedAt": "2026-07-06T10:01:23.332Z"
+    "modifiedAt": 1784095680359,
+    "fetchedAt": "2026-08-08T07:50:26.661Z"
   },
   "I_CHECKSTATUSTEXT": {
-    "modifiedAt": 1781175927582,
-    "fetchedAt": "2026-07-06T10:01:23.611Z"
+    "modifiedAt": 1784095692401,
+    "fetchedAt": "2026-08-08T07:50:26.685Z"
   },
   "I_CHGMSTRLOGACCMSECUREIDASSGMT": {
-    "modifiedAt": 1781165463219,
-    "fetchedAt": "2026-07-06T10:01:23.709Z"
+    "modifiedAt": 1784095343476,
+    "fetchedAt": "2026-08-08T07:50:26.674Z"
   },
   "I_CHGRECDLIFECYCLESTATUSTXT": {
-    "modifiedAt": 1781164863247,
-    "fetchedAt": "2026-07-06T10:01:23.936Z"
+    "modifiedAt": 1784095393601,
+    "fetchedAt": "2026-08-08T07:50:27.232Z"
   },
   "I_CHGRECORDLIFECYCLESTATUS": {
-    "modifiedAt": 1781164863283,
-    "fetchedAt": "2026-07-06T10:01:24.152Z"
+    "modifiedAt": 1784095393547,
+    "fetchedAt": "2026-08-08T07:50:27.279Z"
   },
   "I_CHGRECORDUSERSTATUS": {
-    "modifiedAt": 1781164863293,
-    "fetchedAt": "2026-07-06T10:01:24.228Z"
+    "modifiedAt": 1784095393380,
+    "fetchedAt": "2026-08-08T07:50:27.279Z"
   },
   "I_CHGRECORDUSERSTATUSTEXT": {
-    "modifiedAt": 1781164863280,
-    "fetchedAt": "2026-07-06T10:01:24.495Z"
+    "modifiedAt": 1784095393330,
+    "fetchedAt": "2026-08-08T07:50:27.812Z"
   },
   "I_CITYCODE": {
-    "modifiedAt": 1781171424183,
-    "fetchedAt": "2026-07-06T10:01:24.686Z"
+    "modifiedAt": 1784095378660,
+    "fetchedAt": "2026-08-08T07:50:27.865Z"
   },
   "I_CITYCODETEXT": {
-    "modifiedAt": 1781171424595,
-    "fetchedAt": "2026-07-06T10:01:24.817Z"
+    "modifiedAt": 1784095379270,
+    "fetchedAt": "2026-08-08T07:50:27.821Z"
   },
   "I_CLFNORGANIZATIONALAREA": {
-    "modifiedAt": 1781165462809,
-    "fetchedAt": "2026-07-06T10:01:25.062Z"
+    "modifiedAt": 1784095342512,
+    "fetchedAt": "2026-08-08T07:50:28.427Z"
   },
   "I_CLFNORGANIZATIONALAREATEXT": {
-    "modifiedAt": 1781165462761,
-    "fetchedAt": "2026-07-06T10:01:25.303Z"
+    "modifiedAt": 1784095342403,
+    "fetchedAt": "2026-08-08T07:50:28.439Z"
   },
   "I_CMMDTY": {
-    "modifiedAt": 1781165416805,
-    "fetchedAt": "2026-07-06T10:01:25.425Z"
+    "modifiedAt": 1784095920276,
+    "fetchedAt": "2026-08-08T07:50:28.438Z"
   },
   "I_CMMDTYCATEGORY": {
-    "modifiedAt": 1781165412240,
-    "fetchedAt": "2026-07-06T10:01:25.686Z"
+    "modifiedAt": 1784095912905,
+    "fetchedAt": "2026-08-08T07:50:29.031Z"
   },
   "I_CMMDTYCATEGORYTEXT": {
-    "modifiedAt": 1781165416333,
-    "fetchedAt": "2026-07-06T10:01:25.850Z"
+    "modifiedAt": 1784095919486,
+    "fetchedAt": "2026-08-08T07:50:28.998Z"
   },
   "I_CMMDTYDRVTVCONTRSPEC": {
-    "modifiedAt": 1781175900749,
-    "fetchedAt": "2026-07-06T10:01:25.947Z"
+    "modifiedAt": 1784095660655,
+    "fetchedAt": "2026-08-08T07:50:29.034Z"
   },
   "I_CMMDTYMTMFINVALUESCUBE": {
-    "modifiedAt": 1781165413191,
-    "fetchedAt": "2026-07-06T10:01:26.252Z"
+    "modifiedAt": 1784095914554,
+    "fetchedAt": "2026-08-08T07:50:29.538Z"
   },
   "I_CMMDTYMTMLOGFINVALCUBE": {
-    "modifiedAt": 1781175909745,
-    "fetchedAt": "2026-07-06T10:01:26.398Z"
+    "modifiedAt": 1784095671185,
+    "fetchedAt": "2026-08-08T07:50:29.624Z"
   },
   "I_CMMDTYMTMMESSAGE": {
-    "modifiedAt": 1781175895493,
-    "fetchedAt": "2026-07-06T10:01:26.463Z"
+    "modifiedAt": 1784095654841,
+    "fetchedAt": "2026-08-08T07:50:29.609Z"
   },
   "I_CMMDTYMTMVALUECUBE": {
-    "modifiedAt": 1781175909067,
-    "fetchedAt": "2026-07-06T10:01:26.769Z"
+    "modifiedAt": 1784095670337,
+    "fetchedAt": "2026-08-08T07:50:30.117Z"
   },
   "I_CMMDTYPNLFINVALUESCUBE": {
-    "modifiedAt": 1781165411419,
-    "fetchedAt": "2026-07-06T10:01:26.975Z"
+    "modifiedAt": 1784095911262,
+    "fetchedAt": "2026-08-08T07:50:30.214Z"
   },
   "I_CMMDTYPOSITIONREPQTYCUBE": {
-    "modifiedAt": 1781175898967,
-    "fetchedAt": "2026-07-06T10:01:27.040Z"
+    "modifiedAt": 1784095658867,
+    "fetchedAt": "2026-08-08T07:50:30.208Z"
   },
   "I_CMMDTYPRICEFIXATIONSTATUS": {
-    "modifiedAt": 1781165412789,
-    "fetchedAt": "2026-07-06T10:01:27.356Z"
+    "modifiedAt": 1784095913864,
+    "fetchedAt": "2026-08-08T07:50:30.742Z"
   },
   "I_CMMDTYPRICEFIXATIONSTATUST": {
-    "modifiedAt": 1781165410724,
-    "fetchedAt": "2026-07-06T10:01:27.515Z"
+    "modifiedAt": 1784095909833,
+    "fetchedAt": "2026-08-08T07:50:30.750Z"
   },
   "I_CMMDTYTEXT": {
-    "modifiedAt": 1781165414894,
-    "fetchedAt": "2026-07-06T10:01:27.604Z"
+    "modifiedAt": 1784095917343,
+    "fetchedAt": "2026-08-08T07:50:30.798Z"
   },
   "I_CMMDTYTYPE": {
-    "modifiedAt": 1781165415221,
-    "fetchedAt": "2026-07-06T10:01:27.913Z"
+    "modifiedAt": 1784095919589,
+    "fetchedAt": "2026-08-08T07:50:31.325Z"
   },
   "I_CMMDTYTYPETEXT": {
-    "modifiedAt": 1781165413131,
-    "fetchedAt": "2026-07-06T10:01:28.087Z"
+    "modifiedAt": 1784095915641,
+    "fetchedAt": "2026-08-08T07:50:31.321Z"
   },
   "I_CMPLNCOBLGNASSIGNMENTCUBE": {
-    "modifiedAt": 1781175905785,
-    "fetchedAt": "2026-07-06T10:01:28.154Z"
+    "modifiedAt": 1784095666770,
+    "fetchedAt": "2026-08-08T07:50:31.377Z"
   },
   "I_CMPLNCRQMTAUTHZNFIELDS": {
-    "modifiedAt": 1781175956651,
-    "fetchedAt": "2026-07-06T10:01:28.471Z"
+    "modifiedAt": 1784095726778,
+    "fetchedAt": "2026-08-08T07:50:31.906Z"
   },
   "I_CMPLOBLASGTACTNRQDCHGDNOTIF": {
-    "modifiedAt": 1781175963356,
-    "fetchedAt": "2026-07-06T10:01:28.641Z"
+    "modifiedAt": 1784095734807,
+    "fetchedAt": "2026-08-08T07:50:31.943Z"
   },
   "I_CMPLOBLASGTCMPLNCRATECUBE": {
-    "modifiedAt": 1781175925643,
-    "fetchedAt": "2026-07-06T10:01:28.719Z"
+    "modifiedAt": 1784095690120,
+    "fetchedAt": "2026-08-08T07:50:31.910Z"
   },
   "I_CMPLOBLASGTRECENTLYCHGDC": {
-    "modifiedAt": 1781175894892,
-    "fetchedAt": "2026-07-06T10:01:29.020Z"
+    "modifiedAt": 1784095654151,
+    "fetchedAt": "2026-08-08T07:50:32.493Z"
   },
   "I_CMPLOBLASGTTSKBYDUEDATEC": {
-    "modifiedAt": 1781175895934,
-    "fetchedAt": "2026-07-06T10:01:29.247Z"
+    "modifiedAt": 1784095655332,
+    "fetchedAt": "2026-08-08T07:50:32.508Z"
   },
   "I_CMPLOBLRQMTASGTTASKCUBE": {
-    "modifiedAt": 1781175895533,
-    "fetchedAt": "2026-07-06T10:01:29.352Z"
+    "modifiedAt": 1784095654889,
+    "fetchedAt": "2026-08-08T07:50:32.505Z"
   },
   "I_CNCONMNLSETTLMTALLWNCCAT": {
-    "modifiedAt": 1781165673541,
-    "fetchedAt": "2026-07-06T10:01:29.553Z"
+    "modifiedAt": 1784095273870,
+    "fetchedAt": "2026-08-08T07:50:33.089Z"
   },
   "I_CNCONMNLSETTLMTALLWNCCATT": {
-    "modifiedAt": 1781165684728,
-    "fetchedAt": "2026-07-06T10:01:29.843Z"
+    "modifiedAt": 1784095288113,
+    "fetchedAt": "2026-08-08T07:50:33.104Z"
   },
   "I_CNCONSETLDETLDSTMNTBILLGDOC": {
-    "modifiedAt": 1781165679739,
-    "fetchedAt": "2026-07-06T10:01:29.886Z"
+    "modifiedAt": 1784095281513,
+    "fetchedAt": "2026-08-08T07:50:33.093Z"
   },
   "I_CNCONSETLDETLDSTMNTMATLDOC": {
-    "modifiedAt": 1781165661205,
-    "fetchedAt": "2026-07-06T10:01:30.141Z"
+    "modifiedAt": 1784095302759,
+    "fetchedAt": "2026-08-08T07:50:33.691Z"
   },
   "I_CNCONSETLDETLDSTMNTSUPLRINVC": {
-    "modifiedAt": 1781165688698,
-    "fetchedAt": "2026-07-06T10:01:30.407Z"
+    "modifiedAt": 1784095293269,
+    "fetchedAt": "2026-08-08T07:50:33.654Z"
   },
   "I_CNCONSETTLEMENTLOCKSTATUS": {
-    "modifiedAt": 1781165674519,
-    "fetchedAt": "2026-07-06T10:01:30.466Z"
+    "modifiedAt": 1784095304431,
+    "fetchedAt": "2026-08-08T07:50:33.718Z"
   },
   "I_CNCONSETTLEMENTLOCKSTATUST": {
-    "modifiedAt": 1781165662718,
-    "fetchedAt": "2026-07-06T10:01:30.716Z"
+    "modifiedAt": 1784095260612,
+    "fetchedAt": "2026-08-08T07:50:34.257Z"
   },
   "I_CNDNCONTRACCRRVSLCAT": {
-    "modifiedAt": 1781165672558,
-    "fetchedAt": "2026-07-06T10:01:30.971Z"
+    "modifiedAt": 1784095272696,
+    "fetchedAt": "2026-08-08T07:50:34.257Z"
   },
   "I_CNDNCONTRACCRRVSLCATTEXT": {
-    "modifiedAt": 1781165685430,
-    "fetchedAt": "2026-07-06T10:01:30.984Z"
+    "modifiedAt": 1784095292973,
+    "fetchedAt": "2026-08-08T07:50:34.305Z"
   },
   "I_CNDNCONTRACCRRVSLSTS": {
-    "modifiedAt": 1781165679244,
-    "fetchedAt": "2026-07-06T10:01:31.260Z"
+    "modifiedAt": 1784095280868,
+    "fetchedAt": "2026-08-08T07:50:34.847Z"
   },
   "I_CNDNCONTRACCRRVSLSTSTEXT": {
-    "modifiedAt": 1781165662340,
-    "fetchedAt": "2026-07-06T10:01:31.535Z"
+    "modifiedAt": 1784095260058,
+    "fetchedAt": "2026-08-08T07:50:34.898Z"
   },
   "I_CNDNCONTRACCRSOURCE": {
-    "modifiedAt": 1781165654785,
-    "fetchedAt": "2026-07-06T10:01:31.536Z"
+    "modifiedAt": 1784095251820,
+    "fetchedAt": "2026-08-08T07:50:34.847Z"
   },
   "I_CNDNCONTRACCRSOURCETEXT": {
-    "modifiedAt": 1781165687800,
-    "fetchedAt": "2026-07-06T10:01:31.850Z"
+    "modifiedAt": 1784095291370,
+    "fetchedAt": "2026-08-08T07:50:35.426Z"
   },
   "I_CNDNCONTRAPPRVLPROC": {
-    "modifiedAt": 1781165653658,
-    "fetchedAt": "2026-07-06T10:01:32.062Z"
+    "modifiedAt": 1784095248472,
+    "fetchedAt": "2026-08-08T07:50:35.444Z"
   },
   "I_CNDNCONTRAPPRVLPROCTEXT": {
-    "modifiedAt": 1781165685032,
-    "fetchedAt": "2026-07-06T10:01:32.176Z"
+    "modifiedAt": 1784095306047,
+    "fetchedAt": "2026-08-08T07:50:35.456Z"
   },
   "I_CNDNCONTRBUSVOLSIGN": {
-    "modifiedAt": 1781165691604,
-    "fetchedAt": "2026-07-06T10:01:32.399Z"
+    "modifiedAt": 1784095296940,
+    "fetchedAt": "2026-08-08T07:50:36.016Z"
   },
   "I_CNDNCONTRBUSVOLSIGNTEXT": {
-    "modifiedAt": 1781165670293,
-    "fetchedAt": "2026-07-06T10:01:32.618Z"
+    "modifiedAt": 1784095269591,
+    "fetchedAt": "2026-08-08T07:50:35.999Z"
   },
   "I_CNDNCONTRCHANGEABILITY": {
-    "modifiedAt": 1781165653076,
-    "fetchedAt": "2026-07-06T10:01:32.764Z"
+    "modifiedAt": 1784095247590,
+    "fetchedAt": "2026-08-08T07:50:36.057Z"
   },
   "I_CNDNCONTRCHANGEABILITYTEXT": {
-    "modifiedAt": 1781165654849,
-    "fetchedAt": "2026-07-06T10:01:32.991Z"
+    "modifiedAt": 1784095250416,
+    "fetchedAt": "2026-08-08T07:50:36.567Z"
   },
   "I_CNDNCONTRCLASSFCTNTYPE": {
-    "modifiedAt": 1781165653713,
-    "fetchedAt": "2026-07-06T10:01:33.178Z"
+    "modifiedAt": 1784095248552,
+    "fetchedAt": "2026-08-08T07:50:36.603Z"
   },
   "I_CNDNCONTRCLASSFCTNTYPETEXT": {
-    "modifiedAt": 1781165674095,
-    "fetchedAt": "2026-07-06T10:01:33.332Z"
+    "modifiedAt": 1784095274581,
+    "fetchedAt": "2026-08-08T07:50:36.629Z"
   },
   "I_CNDNCONTRCUSTOMERLISTSTDVH": {
-    "modifiedAt": 1781165663953,
-    "fetchedAt": "2026-07-06T10:01:33.546Z"
+    "modifiedAt": 1784095262211,
+    "fetchedAt": "2026-08-08T07:50:37.184Z"
   },
   "I_CNDNCONTRCUSTOMERSTDVH": {
-    "modifiedAt": 1781165661560,
-    "fetchedAt": "2026-07-06T10:01:33.710Z"
+    "modifiedAt": 1784095259042,
+    "fetchedAt": "2026-08-08T07:50:37.196Z"
   },
   "I_CNDNCONTRCUSTSETTLMTCAT": {
-    "modifiedAt": 1781165656838,
-    "fetchedAt": "2026-07-06T10:01:33.940Z"
+    "modifiedAt": 1784095253091,
+    "fetchedAt": "2026-08-08T07:50:37.200Z"
   },
   "I_CNDNCONTRCUSTSETTLMTCATTXT": {
-    "modifiedAt": 1781165655831,
-    "fetchedAt": "2026-07-06T10:01:34.107Z"
+    "modifiedAt": 1784095252049,
+    "fetchedAt": "2026-08-08T07:50:37.741Z"
   },
   "I_CNDNCONTRELIGIBLECAT": {
     "modifiedAt": 1781165666563,

@@ -1,28 +1,29 @@
 ---
 name: I_CASHJOURNALDOCUMENT_2
-description: "Cash Journal Document"
+description: "This CDS view retrieves the cash journal information of a company code. This CDS view provides the data to answer the following business questions: How many cash journals are set up for a company code? What is the payment amount in a cash journal? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-BL-PT-CJ-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASHJOURNALDOCUMENT_2')/$value
-semantic_en: "Cash Journal Document"
+semantic_en: "This CDS view retrieves the cash journal information of a company code. This CDS view provides the data to answer the following business questions: How many cash journals are set up for a company code? What is the payment amount in a cash journal? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
+  - bo:companycode
   - component:FI-BL-PT-CJ-2CL
-  - document
   - FI-BL
   - FI-BL-PT
   - FI-BL-PT-CJ
   - FI-BL-PT-CJ-2CL
   - interface-view
   - lob:finance
+  - payment
   - metadata-only
 ---
 # I_CASHJOURNALDOCUMENT_2
 
-**Cash Journal Document**
+**This CDS view retrieves the cash journal information of a company code. This CDS view provides the data to answer the following business questions: How many cash journals are set up for a company code? What is the payment amount in a cash journal? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
