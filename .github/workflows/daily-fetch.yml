@@ -50,6 +50,16 @@ permissions:
 jobs:
   fetch-views:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        # The CDS KB project lives under this subpath now — see
+        # check-coverage.yml's comment for the full rationale. Every plain
+        # `run:` step below (npm/node calls, and this workflow's own manual
+        # git add/diff blocks, which resolve their `views/`-style pathspecs
+        # relative to whatever the current directory is) picks this up
+        # automatically; only `uses:` steps would need a separate fix, and
+        # this workflow has none that read/write repo paths.
+        working-directory: docs/product/cds_kb_data
 
     steps:
       - name: Checkout repository
@@ -63,6 +73,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: docs/product/cds_kb_data/package-lock.json
 
       - name: Install dependencies
         run: npm ci --ignore-scripts

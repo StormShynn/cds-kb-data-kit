@@ -17,7 +17,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'views/**'
+      - 'docs/product/cds_kb_data/views/**'
   workflow_dispatch: {}
 
 permissions:
@@ -26,6 +26,16 @@ permissions:
 jobs:
   check-coverage:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        # The CDS KB project lives under this subpath now (moved out of the
+        # repo root to make room for other, unrelated project material) —
+        # every `run:` step below resolves relative paths (package.json,
+        # scripts/, views/) against it. `uses:` steps (checkout, setup-node,
+        # the commit-and-push composite action) are NOT affected by this —
+        # they still operate from the repo root, which is why the
+        # commit-and-push step's `paths:` input below is prefixed by hand.
+        working-directory: docs/product/cds_kb_data
 
     steps:
       - name: Checkout repository
@@ -36,6 +46,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: docs/product/cds_kb_data/package-lock.json
 
       - name: Install dependencies
         run: npm ci --ignore-scripts
@@ -51,7 +62,7 @@ jobs:
       - name: Commit and push if changed
         uses: ./.github/actions/commit-and-push
         with:
-          paths: coverage.json coverage-report.html
+          paths: docs/product/cds_kb_data/coverage.json docs/product/cds_kb_data/coverage-report.html
           commit-message: "Update Hub coverage report [skip ci]"
           empty-message: Coverage unchanged
           success-message: Coverage report updated
