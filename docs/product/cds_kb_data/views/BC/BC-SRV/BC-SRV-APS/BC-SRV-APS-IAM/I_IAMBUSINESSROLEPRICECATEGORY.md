@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessRoleUUID` | ✓ | |  |  |  |  |
-| `BusinessRole` |  | |  |  |  |  |
-| `BusinessRoleGroup` |  | |  |  |  |  |
-| `BusinessRolePriceCategory` |  | |  | `case res.access_restriction_code when '3' then pc.PriceCategoryRead else pc.PriceCategory end` |  |  |
+| `BusinessRoleUUID` | ✓ | |  |  | `RAW(16)` | Global Unique ID for table |
+| `BusinessRole` |  | |  |  | `CHAR(40)` | IAM: Business Role ID |
+| `BusinessRoleGroup` |  | |  |  | `CHAR(12)` | Role Group |
+| `BusinessRolePriceCategory` |  | |  | `case res.access_restriction_code when '3' then pc.PriceCategoryRead else pc.PriceCategory end` | `CHAR(30)` | 30 Characters |
 
 ## Source Code
 

@@ -31,8 +31,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonNameSupplementCode` | ✓ | |  |  |  |  |
-| `NameSupplement` |  | |  |  |  |  |
+| `PersonNameSupplementCode` | ✓ | |  |  | `CHAR(4)` | Name supplement, e.g. noble title (key) |
+| `NameSupplement` |  | |  |  | `CHAR(20)` | Name supplement, e.g. noble title (written form) |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

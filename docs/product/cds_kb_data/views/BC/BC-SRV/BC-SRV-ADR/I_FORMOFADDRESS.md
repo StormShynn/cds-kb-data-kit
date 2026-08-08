@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FormOfAddress` | ✓ | |  | `title` |  |  |
+| `FormOfAddress` | ✓ | |  | `title` | `CHAR(4)` | Form-of-Address Key |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

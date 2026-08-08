@@ -32,12 +32,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `Country` | ✓ | |  | `country` |  |  |
-| `Region` | ✓ | |  | `region` |  |  |
-| `SecondaryRegion` | ✓ | |  | `county_code` |  |  |
-| `TertiaryRegion` | ✓ | |  | `township_code` |  |  |
-| `TertiaryRegionName` |  | |  | `township` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `Country` | ✓ | |  | `country` | `CHAR(3)` | Country/Region Key |
+| `Region` | ✓ | |  | `region` | `CHAR(3)` | Region (State, Province, County) |
+| `SecondaryRegion` | ✓ | |  | `county_code` | `CHAR(8)` | County code for county |
+| `TertiaryRegion` | ✓ | |  | `township_code` | `CHAR(8)` | Township code for Township |
+| `TertiaryRegionName` |  | |  | `township` | `CHAR(40)` | Township |
 | `_Country` | | ✓ | | | | |
 | `_Region` | | ✓ | | | | |
 | `_SecondaryRegion` | | ✓ | | | | |

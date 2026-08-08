@@ -32,10 +32,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  |  |  |  |
-| `Description` |  | |  | `_Text[1: Language = $session.system_language].CountryName` |  |  |
-| `CountryThreeLetterISOCode` |  | |  |  |  |  |
-| `CountryThreeDigitISOCode` |  | |  |  |  |  |
+| `Country` | ✓ | |  |  | `CHAR(3)` | Country/Region Key |
+| `Description` |  | |  | `_Text[1: Language = $session.system_language].CountryName` | `CHAR(50)` | Country/Region Name |
+| `CountryThreeLetterISOCode` |  | |  |  | `CHAR(3)` | ISO Country/Region Code 3 Characters |
+| `CountryThreeDigitISOCode` |  | |  |  | `NUMC(3)` | ISO Country/Region Code Numeric 3-Characters |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

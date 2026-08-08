@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `country` |  |  |
-| `Street` | ✓ | |  | `strt_code` |  |  |
-| `CityNumber` |  | |  | `city_code` |  |  |
+| `Country` | ✓ | |  | `country` | `CHAR(3)` | Country/Region Key |
+| `Street` | ✓ | |  | `strt_code` | `CHAR(12)` | Street Number for City/Street File |
+| `CityNumber` |  | |  | `city_code` | `CHAR(12)` | City Code for City/Street File |
 | `_Country` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 | `_PostalCity` | | ✓ | | | | |

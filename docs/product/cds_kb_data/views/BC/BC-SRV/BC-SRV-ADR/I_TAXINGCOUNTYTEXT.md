@@ -33,11 +33,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `Country` | ✓ | |  | `land1` |  |  |
-| `Region` | ✓ | |  | `regio` |  |  |
-| `TaxingCounty` | ✓ | |  | `counc` |  |  |
-| `TaxingCountyName` |  | |  | `bezei` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `Region` | ✓ | |  | `regio` | `CHAR(3)` | Region (State, Province, County) |
+| `TaxingCounty` | ✓ | |  | `counc` | `CHAR(3)` | County Code |
+| `TaxingCountyName` |  | |  | `bezei` | `CHAR(20)` | Description |
 | `_Country` | | ✓ | | | | |
 | `_Region` | | ✓ | | | | |
 | `_TaxingCounty` | | ✓ | | | | |

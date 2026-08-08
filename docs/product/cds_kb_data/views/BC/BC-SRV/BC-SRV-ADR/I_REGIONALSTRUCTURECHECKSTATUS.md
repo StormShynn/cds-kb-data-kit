@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RegionalStructureCheckStatus` | ✓ | |  | `cast ( domvalue_l as ad_checkst )` |  |  |
+| `RegionalStructureCheckStatus` | ✓ | |  | `cast ( domvalue_l as ad_checkst )` | `CHAR(1)` | City File Test Status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

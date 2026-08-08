@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PhoneNumberType` | ✓ | |  | `cast ( domvalue_l as ad_flgmob)` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `PhoneNumberTypeText` |  | |  | `ddtext` |  |  |
+| `PhoneNumberType` | ✓ | |  | `cast ( domvalue_l as ad_flgmob)` | `CHAR(1)` | Indicator: Telephone is a Mobile Telephone |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `PhoneNumberTypeText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

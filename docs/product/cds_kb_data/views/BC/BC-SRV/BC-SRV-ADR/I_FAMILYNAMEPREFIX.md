@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FamilyNamePrefix` | ✓ | |  | `prefix_key` |  |  |
-| `FamilyNamePrefixName` |  | |  | `prefix_txt` |  |  |
+| `FamilyNamePrefix` | ✓ | |  | `prefix_key` | `CHAR(4)` | Name Prefix (Key) |
+| `FamilyNamePrefixName` |  | |  | `prefix_txt` | `CHAR(20)` | Name prefix |
 
 ## Source Code
 

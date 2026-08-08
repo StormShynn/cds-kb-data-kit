@@ -33,10 +33,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TransportZone` | ✓ | |  | `zone1` |  |  |
-| `CountryCode` | ✓ | |  | `land1` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `TransportZoneDescription` |  | |  | `vtext` |  |  |
+| `TransportZone` | ✓ | |  | `zone1` | `CHAR(10)` | Transportation zone to or from which the goods are delivered |
+| `CountryCode` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `TransportZoneDescription` |  | |  | `vtext` | `CHAR(20)` | Description |
 
 ## Source Code
 
