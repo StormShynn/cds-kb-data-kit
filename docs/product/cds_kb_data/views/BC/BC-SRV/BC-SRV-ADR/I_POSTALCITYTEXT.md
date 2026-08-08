@@ -32,10 +32,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `Country` | ✓ | |  | `country` |  |  |
-| `CityNumber` | ✓ | |  | `city_code` |  |  |
-| `CityName` |  | |  | `city_name` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `Country` | ✓ | |  | `country` | `CHAR(3)` | Country/Region Key |
+| `CityNumber` | ✓ | |  | `city_code` | `CHAR(12)` | City Code for City/Street File |
+| `CityName` |  | |  | `city_name` | `CHAR(40)` | City |
 | `_Country` | | ✓ | | | | |
 | `_PostalCity` | | ✓ | | | | |
 

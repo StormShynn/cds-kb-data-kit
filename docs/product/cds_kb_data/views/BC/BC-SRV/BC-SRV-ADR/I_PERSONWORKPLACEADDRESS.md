@@ -31,32 +31,32 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |  |  |
-| `AddressPersonID` | ✓ | |  |  |  |  |
-| `AddressRepresentationCode` | ✓ | |  |  |  |  |
-| `CorrespondenceLanguage` |  | | `_PersonName` | `CorrespondenceLanguage` |  |  |
-| `GivenName` |  | | `_PersonName` | `GivenName` |  |  |
-| `FamilyName` |  | | `_PersonName` | `FamilyName` |  |  |
-| `PersonBirthName` |  | | `_PersonName` | `PersonBirthName` |  |  |
-| `PersonMiddleName` |  | | `_PersonName` | `PersonMiddleName` |  |  |
-| `SecondFamilyName` |  | | `_PersonName` | `SecondFamilyName` |  |  |
-| `AcademicTitle` |  | | `_PersonName` | `AcademicTitle` |  |  |
-| `AcademicTitle2` |  | | `_PersonName` | `AcademicTitle2` |  |  |
-| `FamilyNamePrefix` |  | | `_PersonName` | `FamilyNamePrefix` |  |  |
-| `FamilyNameSecondPrefix` |  | | `_PersonName` | `FamilyNameSecondPrefix` |  |  |
-| `PersonNameSupplementCode` |  | | `_PersonName` | `PersonNameSupplementCode` |  |  |
-| `PersonNickname` |  | | `_PersonName` | `PersonNickname` |  |  |
-| `NameInitials` |  | | `_PersonName` | `NameInitials` |  |  |
-| `PersonFullName` |  | | `_PersonName` | `PersonFullName` |  |  |
-| `FormOfAddress` |  | | `_PersonName` | `FormOfAddress` |  |  |
-| `WorkplaceBuilding` |  | |  |  |  |  |
-| `WorkplaceFloor` |  | |  |  |  |  |
-| `WorkplaceRoomNumber` |  | |  |  |  |  |
-| `WorkplaceFunctionalTitleName` |  | |  |  |  |  |
-| `WorkplaceDepartmentName` |  | |  |  |  |  |
-| `WorkplacePrfrdCommMediumType` |  | |  |  |  |  |
-| `WorkplaceCorrespncShortName` |  | |  |  |  |  |
-| `WorkplaceInhouseMail` |  | |  |  |  |  |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `AddressRepresentationCode` | ✓ | |  |  | `CHAR(1)` | Version ID for International Addresses |
+| `CorrespondenceLanguage` |  | | `_PersonName` | `CorrespondenceLanguage` | `LANG(1)` | Language Key |
+| `GivenName` |  | | `_PersonName` | `GivenName` | `CHAR(40)` | First Name |
+| `FamilyName` |  | | `_PersonName` | `FamilyName` | `CHAR(40)` | Last Name |
+| `PersonBirthName` |  | | `_PersonName` | `PersonBirthName` | `CHAR(40)` | Name of person at birth |
+| `PersonMiddleName` |  | | `_PersonName` | `PersonMiddleName` | `CHAR(40)` | Middle name or second forename of a person |
+| `SecondFamilyName` |  | | `_PersonName` | `SecondFamilyName` | `CHAR(40)` | Other Last Name of a Person |
+| `AcademicTitle` |  | | `_PersonName` | `AcademicTitle` | `CHAR(4)` | Academic Title: Key |
+| `AcademicTitle2` |  | | `_PersonName` | `AcademicTitle2` | `CHAR(4)` | Second academic title (key) |
+| `FamilyNamePrefix` |  | | `_PersonName` | `FamilyNamePrefix` | `CHAR(4)` | Name Prefix (Key) |
+| `FamilyNameSecondPrefix` |  | | `_PersonName` | `FamilyNameSecondPrefix` | `CHAR(4)` | 2nd name prefix (key) |
+| `PersonNameSupplementCode` |  | | `_PersonName` | `PersonNameSupplementCode` | `CHAR(4)` | Name supplement, e.g. noble title (key) |
+| `PersonNickname` |  | | `_PersonName` | `PersonNickname` | `CHAR(40)` | Nickname or name used |
+| `NameInitials` |  | | `_PersonName` | `NameInitials` | `CHAR(10)` | "Middle Initial" or personal initials |
+| `PersonFullName` |  | | `_PersonName` | `PersonFullName` | `CHAR(80)` | Full Name of Person |
+| `FormOfAddress` |  | | `_PersonName` | `FormOfAddress` | `CHAR(4)` | Form-of-Address Key |
+| `WorkplaceBuilding` |  | |  |  | `CHAR(10)` | Building (number or code) |
+| `WorkplaceFloor` |  | |  |  | `CHAR(10)` | Floor in Building |
+| `WorkplaceRoomNumber` |  | |  |  | `CHAR(10)` | Room or Apartment Number |
+| `WorkplaceFunctionalTitleName` |  | |  |  | `CHAR(40)` | Function |
+| `WorkplaceDepartmentName` |  | |  |  | `CHAR(40)` | Department |
+| `WorkplacePrfrdCommMediumType` |  | |  |  | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `WorkplaceCorrespncShortName` |  | |  |  | `CHAR(10)` | Short name for correspondence |
+| `WorkplaceInhouseMail` |  | |  |  | `CHAR(10)` | Internal Mail Postal Code |
 | `_OrganizationAddress` | | ✓ | | | | |
 | `_EmailAddress` | | ✓ | | | | |
 | `_CurrentDfltEmailAddress` | | ✓ | | | | |

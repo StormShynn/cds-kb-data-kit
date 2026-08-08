@@ -2968,5 +2968,255 @@
     "attemptedAt": "2026-08-07T16:57:23.222Z",
     "found": true,
     "matched": 6
+  },
+  "I_COUNTRYVH": {
+    "attemptedAt": "2026-08-08T08:40:58.422Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_FAMILYNAMEPREFIX": {
+    "attemptedAt": "2026-08-08T08:40:59.068Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_FAMILYNAMEPREFIXVH": {
+    "attemptedAt": "2026-08-08T08:40:59.659Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_FORMOFADDRESS": {
+    "attemptedAt": "2026-08-08T08:41:00.188Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_FORMOFADDRESSTEXT": {
+    "attemptedAt": "2026-08-08T08:41:00.800Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NAMESUPPLEMENT": {
+    "attemptedAt": "2026-08-08T08:41:01.406Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_NAMESUPPLEMENTTEXT": {
+    "attemptedAt": "2026-08-08T08:41:01.969Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NAMESUPPLEMENTVH": {
+    "attemptedAt": "2026-08-08T08:41:02.566Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ORGADDRESSDEFAULTRPRSTN": {
+    "attemptedAt": "2026-08-08T08:41:03.152Z",
+    "found": true,
+    "matched": 55
+  },
+  "I_ORGANIZATIONADDRESS": {
+    "attemptedAt": "2026-08-08T08:41:03.745Z",
+    "found": true,
+    "matched": 62
+  },
+  "I_ORGNAMEPOSTLADDRDFLTRPRSTN": {
+    "attemptedAt": "2026-08-08T08:41:04.281Z",
+    "found": true,
+    "matched": 53
+  },
+  "I_PERSONADDRESS": {
+    "attemptedAt": "2026-08-08T08:41:04.866Z",
+    "found": true,
+    "matched": 73
+  },
+  "I_PERSONADDRESSDEFAULTRPRSTN": {
+    "attemptedAt": "2026-08-08T08:41:05.429Z",
+    "found": true,
+    "matched": 63
+  },
+  "I_PERSONWORKPLACEADDRESS": {
+    "attemptedAt": "2026-08-08T08:41:06.055Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_PHONENUMBERTYPE": {
+    "attemptedAt": "2026-08-08T08:41:06.600Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PHONENUMBERTYPETEXT": {
+    "attemptedAt": "2026-08-08T08:41:07.235Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_POSTALCITY": {
+    "attemptedAt": "2026-08-08T08:41:07.814Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_POSTALCITYTEXT": {
+    "attemptedAt": "2026-08-08T08:41:08.368Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_REGION": {
+    "attemptedAt": "2026-08-08T08:41:08.956Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_REGIONALSTRUCCHECKSTATUSTEXT": {
+    "attemptedAt": "2026-08-08T08:41:09.558Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_REGIONALSTRUCTURECHECKSTATUS": {
+    "attemptedAt": "2026-08-08T08:41:10.154Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_REGIONTEXT": {
+    "attemptedAt": "2026-08-08T08:41:10.726Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_REGIONVH": {
+    "attemptedAt": "2026-08-08T08:41:11.290Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SECONDARYREGION": {
+    "attemptedAt": "2026-08-08T08:41:11.849Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SECONDARYREGIONTEXT": {
+    "attemptedAt": "2026-08-08T08:41:12.408Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_STREET": {
+    "attemptedAt": "2026-08-08T08:41:12.963Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_STREETTEXT": {
+    "attemptedAt": "2026-08-08T08:41:13.558Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_TAXINGCOUNTY": {
+    "attemptedAt": "2026-08-08T08:41:14.115Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TAXINGCOUNTYTEXT": {
+    "attemptedAt": "2026-08-08T08:41:14.660Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_TERTIARYREGION": {
+    "attemptedAt": "2026-08-08T08:41:15.199Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TERTIARYREGIONTEXT": {
+    "attemptedAt": "2026-08-08T08:41:15.732Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_TRANSPORTATIONZONE": {
+    "attemptedAt": "2026-08-08T08:41:16.266Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TRANSPORTATIONZONETEXT": {
+    "attemptedAt": "2026-08-08T08:41:16.784Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TRANSPORTATIONZONEVH": {
+    "attemptedAt": "2026-08-08T08:41:17.343Z",
+    "found": true,
+    "matched": 2
+  },
+  "C_PCF_CODEVALUEHELP": {
+    "attemptedAt": "2026-08-08T08:41:17.544Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"C_PCF_CODEVALUEHELP\" (404)"
+  },
+  "I_CUSTOMFIELDCODELISTTEXT": {
+    "attemptedAt": "2026-08-08T08:41:18.042Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CUSTOMFIELDCODELISTTEXT\" (404)"
+  },
+  "I_CUSTOMFIELDCODELISTVALUE": {
+    "attemptedAt": "2026-08-08T08:41:18.501Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CUSTOMFIELDCODELISTVALUE\" (404)"
+  },
+  "I_CUSTOMFIELDCODELISTVALUEHELP": {
+    "attemptedAt": "2026-08-08T08:41:18.986Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CUSTOMFIELDCODELISTVALUEHELP\" (404)"
+  },
+  "I_PCF_CODEVALUEHELP": {
+    "attemptedAt": "2026-08-08T08:41:19.437Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PCF_CODEVALUEHELP\" (404)"
+  },
+  "I_PCF_CODEVALUEHELPTEXT": {
+    "attemptedAt": "2026-08-08T08:41:19.882Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PCF_CODEVALUEHELPTEXT\" (404)"
+  },
+  "I_PCF_FIELD_TEXT_API": {
+    "attemptedAt": "2026-08-08T08:41:20.334Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PCF_FIELD_TEXT_API\" (404)"
+  },
+  "I_ABAPCLOUDCUSTOMOBJECTS": {
+    "attemptedAt": "2026-08-08T08:41:21.122Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_APISFORCLOUDDEVELOPMENT": {
+    "attemptedAt": "2026-08-08T08:41:21.330Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_APISFORCLOUDDEVELOPMENT\" (404)"
+  },
+  "I_APISWITHCLOUDDEVSUCCESSOR": {
+    "attemptedAt": "2026-08-08T08:41:21.827Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_APISWITHCLOUDDEVSUCCESSOR\" (404)"
+  },
+  "I_CUSTABAPSOFTWARECOMPONENT": {
+    "attemptedAt": "2026-08-08T08:41:22.603Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CUSTABAPSOFTWARECOMPONENTTXT": {
+    "attemptedAt": "2026-08-08T08:41:23.187Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_IAMBUSINESSROLE": {
+    "attemptedAt": "2026-08-08T08:41:23.760Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_IAMBUSINESSROLEPRICECATEGORY": {
+    "attemptedAt": "2026-08-08T08:41:24.310Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_IAMBUSINESSROLEPRICECATTEXT": {
+    "attemptedAt": "2026-08-08T08:41:24.859Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_IAMBUSINESSROLETEXT": {
+    "attemptedAt": "2026-08-08T08:41:25.436Z",
+    "found": true,
+    "matched": 6
   }
 }

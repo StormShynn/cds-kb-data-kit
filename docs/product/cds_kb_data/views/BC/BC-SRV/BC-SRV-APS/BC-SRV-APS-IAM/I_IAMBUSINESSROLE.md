@@ -30,14 +30,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessRoleUUID` | ✓ | |  | `uuid` |  |  |
-| `BusinessRole` |  | |  | `id` |  |  |
-| `BusinessRoleGroup` |  | |  | `brole_group` |  |  |
-| `BusinessRoleTemplate` |  | |  | `brt_id` |  |  |
-| `CreatedByUser` |  | |  | `creation_user_name` |  |  |
-| `CreationDateTime` |  | |  | `creation_date_time` |  |  |
-| `LastChangedByUser` |  | |  | `last_change_user_name` |  |  |
-| `LastChangeDateTime` |  | |  | `last_change_date_time` |  |  |
+| `BusinessRoleUUID` | ✓ | |  | `uuid` | `RAW(16)` | Global Unique ID for table |
+| `BusinessRole` |  | |  | `id` | `CHAR(40)` | IAM: Business Role ID |
+| `BusinessRoleGroup` |  | |  | `brole_group` | `CHAR(12)` | Role Group |
+| `BusinessRoleTemplate` |  | |  | `brt_id` | `CHAR(30)` | IAM: Business Role Template ID |
+| `CreatedByUser` |  | |  | `creation_user_name` | `CHAR(12)` | User Name |
+| `CreationDateTime` |  | |  | `creation_date_time` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `LastChangedByUser` |  | |  | `last_change_user_name` | `CHAR(12)` | User Name |
+| `LastChangeDateTime` |  | |  | `last_change_date_time` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
 | `_User` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ABAPObjectType` | ✓ | |  | `object` |  |  |
-| `ABAPObjectName` | ✓ | |  | `obj_name` |  |  |
-| `ABAPCloudCustomObjectCategory` |  | |  | `case software_component.comp_type when cast(ARS_SOFTWARE_COMPONENT_TYPE.#key_user_extensibility as relc_type) then CUSTOM_OBJECT_CATEGORY.#key_user_extensibility else CUSTOM_OBJECT_CATEGORY.#developer_extensibility end` |  |  |
+| `ABAPObjectType` | ✓ | |  | `object` | `CHAR(4)` | Object Type in Object Directory |
+| `ABAPObjectName` | ✓ | |  | `obj_name` | `CHAR(40)` | Object Name in Object Directory |
+| `ABAPCloudCustomObjectCategory` |  | |  | `case software_component.comp_type when cast(ARS_SOFTWARE_COMPONENT_TYPE.#key_user_extensibility as relc_type) then CUSTOM_OBJECT_CATEGORY.#key_user_extensibility else CUSTOM_OBJECT_CATEGORY.#developer_extensibility end` | `ENUM(1)` |  |
 
 ## Source Code
 

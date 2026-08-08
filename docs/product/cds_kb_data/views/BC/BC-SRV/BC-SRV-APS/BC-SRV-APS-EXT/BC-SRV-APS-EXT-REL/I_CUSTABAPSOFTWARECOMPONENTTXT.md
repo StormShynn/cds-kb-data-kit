@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ABAPSoftwareComponent` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `ABAPSoftwareComponentName` |  | |  |  |  |  |
+| `ABAPSoftwareComponent` | ✓ | |  |  | `CHAR(30)` | Software Component |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `ABAPSoftwareComponentName` |  | |  |  | `CHAR(80)` | Short Description of a Software Component |
 | `_ABAPSoftwareComponent` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

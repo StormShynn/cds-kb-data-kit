@@ -32,12 +32,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `BusinessRoleUUID` | ✓ | |  |  |  |  |
-| `BusinessRolePriceCategory` | ✓ | |  | `usrprc_id` |  |  |
-| `BusinessRole` |  | |  |  |  |  |
-| `BusinessRoleGroup` |  | |  |  |  |  |
-| `BusinessRolePriceCategoryName` |  | |  | `text` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `BusinessRoleUUID` | ✓ | |  |  | `RAW(16)` | Global Unique ID for table |
+| `BusinessRolePriceCategory` | ✓ | |  | `usrprc_id` | `CHAR(30)` | IAM: User Price Category ID |
+| `BusinessRole` |  | |  |  | `CHAR(40)` | IAM: Business Role ID |
+| `BusinessRoleGroup` |  | |  |  | `CHAR(12)` | Role Group |
+| `BusinessRolePriceCategoryName` |  | |  | `text` | `CHAR(80)` | IAM: Description |
 | `_BusinessRolePriceCategory` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

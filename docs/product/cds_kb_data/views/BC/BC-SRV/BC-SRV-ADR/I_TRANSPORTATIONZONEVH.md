@@ -32,8 +32,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TransportZone` | ✓ | |  |  |  |  |
-| `CountryCode` | ✓ | |  |  |  |  |
+| `TransportZone` | ✓ | |  |  | `CHAR(10)` | Transportation zone to or from which the goods are delivered |
+| `CountryCode` | ✓ | |  |  | `CHAR(3)` | Country/Region Key |
 | `_Country` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

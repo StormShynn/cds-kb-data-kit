@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PhoneNumberType` | ✓ | |  | `cast ( domvalue_l as ad_flgmob )` |  |  |
+| `PhoneNumberType` | ✓ | |  | `cast ( domvalue_l as ad_flgmob )` | `CHAR(1)` | Indicator: Telephone is a Mobile Telephone |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RegionalStructureCheckStatus` | ✓ | |  | `cast(domvalue_l as AD_CHECKST)` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `RegionalStrucCheckStatusText` |  | |  | `ddtext` |  |  |
+| `RegionalStructureCheckStatus` | ✓ | |  | `cast(domvalue_l as AD_CHECKST)` | `CHAR(1)` | City File Test Status |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `RegionalStrucCheckStatusText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

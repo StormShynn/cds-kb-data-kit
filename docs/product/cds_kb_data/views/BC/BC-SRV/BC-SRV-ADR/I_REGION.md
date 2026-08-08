@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `Region` | ✓ | |  | `bland` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `Region` | ✓ | |  | `bland` | `CHAR(3)` | Region (State, Province, County) |
 | `_RegionText` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 

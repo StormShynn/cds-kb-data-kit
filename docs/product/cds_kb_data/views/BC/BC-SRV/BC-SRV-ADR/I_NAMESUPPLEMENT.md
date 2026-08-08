@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonNameSupplementCode` | ✓ | |  | `title_key` |  |  |
-| `NameSupplement` |  | |  | `title_text` |  |  |
+| `PersonNameSupplementCode` | ✓ | |  | `title_key` | `CHAR(4)` | Name supplement, e.g. noble title (key) |
+| `NameSupplement` |  | |  | `title_text` | `CHAR(20)` | Name supplement, e.g. noble title (written form) |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

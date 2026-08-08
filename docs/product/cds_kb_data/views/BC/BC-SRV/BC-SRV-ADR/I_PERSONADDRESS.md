@@ -31,79 +31,79 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AddressID` | ✓ | |  |  |  |  |
-| `AddressPersonID` | ✓ | |  |  |  |  |
-| `AddressRepresentationCode` | ✓ | |  |  |  |  |
-| `AddressObjectType` |  | |  | `cast('2' as ad_adrtype)` |  |  |
-| `CorrespondenceLanguage` |  | | `_PersonName` | `CorrespondenceLanguage` |  |  |
-| `GivenName` |  | | `_PersonName` | `GivenName` |  |  |
-| `FamilyName` |  | | `_PersonName` | `FamilyName` |  |  |
-| `PersonBirthName` |  | | `_PersonName` | `PersonBirthName` |  |  |
-| `PersonMiddleName` |  | | `_PersonName` | `PersonMiddleName` |  |  |
-| `SecondFamilyName` |  | | `_PersonName` | `SecondFamilyName` |  |  |
-| `AcademicTitle` |  | | `_PersonName` | `AcademicTitle` |  |  |
-| `AcademicTitle2` |  | | `_PersonName` | `AcademicTitle2` |  |  |
-| `FamilyNamePrefix` |  | | `_PersonName` | `FamilyNamePrefix` |  |  |
-| `FamilyNameSecondPrefix` |  | | `_PersonName` | `FamilyNameSecondPrefix` |  |  |
-| `PersonNameSupplementCode` |  | | `_PersonName` | `PersonNameSupplementCode` |  |  |
-| `PersonNickname` |  | | `_PersonName` | `PersonNickname` |  |  |
-| `NameInitials` |  | | `_PersonName` | `NameInitials` |  |  |
-| `PersonFullName` |  | | `_PersonName` | `PersonFullName` |  |  |
-| `FormOfAddress` |  | | `_PersonName` | `FormOfAddress` |  |  |
-| `AddressPersonSearchTerm1` |  | | `_PersonName` | `AddressPersonSearchTerm1` |  |  |
-| `AddressPersonSearchTerm2` |  | | `_PersonName` | `AddressPersonSearchTerm2` |  |  |
-| `PersonFullNameFormattingCode` |  | | `_PersonName` | `PersonFullNameFormattingCode` |  |  |
-| `PersonFullNameFormattingCntry` |  | | `_PersonName` | `PersonFullNameFormattingCntry` |  |  |
-| `converted` |  | | `_PersonName` | `converted` |  |  |
-| `PrfrdCommMediumType` |  | | `_OrgNamePostalAddress` | `PrfrdCommMediumType` |  |  |
-| `CityNumber` |  | | `_OrgNamePostalAddress` | `CityNumber` |  |  |
-| `CityName` |  | | `_OrgNamePostalAddress` | `CityName` |  |  |
-| `DistrictName` |  | | `_OrgNamePostalAddress` | `DistrictName` |  |  |
-| `VillageName` |  | | `_OrgNamePostalAddress` | `VillageName` |  |  |
-| `PostalCode` |  | | `_OrgNamePostalAddress` | `PostalCode` |  |  |
-| `CompanyPostalCode` |  | | `_OrgNamePostalAddress` | `CompanyPostalCode` |  |  |
-| `Street` |  | | `_OrgNamePostalAddress` | `Street` |  |  |
-| `StreetName` |  | | `_OrgNamePostalAddress` | `StreetName` |  |  |
-| `StreetAddrNonDeliverableReason` |  | | `_OrgNamePostalAddress` | `StreetAddrNonDeliverableReason` |  |  |
-| `StreetPrefixName1` |  | | `_OrgNamePostalAddress` | `StreetPrefixName1` |  |  |
-| `StreetPrefixName2` |  | | `_OrgNamePostalAddress` | `StreetPrefixName2` |  |  |
-| `StreetSuffixName1` |  | | `_OrgNamePostalAddress` | `StreetSuffixName1` |  |  |
-| `StreetSuffixName2` |  | | `_OrgNamePostalAddress` | `StreetSuffixName2` |  |  |
-| `HouseNumber` |  | | `_OrgNamePostalAddress` | `HouseNumber` |  |  |
-| `HouseNumberSupplementText` |  | | `_OrgNamePostalAddress` | `HouseNumberSupplementText` |  |  |
-| `Building` |  | | `_OrgNamePostalAddress` | `Building` |  |  |
-| `Floor` |  | | `_OrgNamePostalAddress` | `Floor` |  |  |
-| `RoomNumber` |  | | `_OrgNamePostalAddress` | `RoomNumber` |  |  |
-| `Country` |  | | `_OrgNamePostalAddress` | `Country` |  |  |
-| `Region` |  | | `_OrgNamePostalAddress` | `Region` |  |  |
-| `TaxJurisdiction` |  | | `_OrgNamePostalAddress` | `TaxJurisdiction` |  |  |
-| `TransportZone` |  | | `_OrgNamePostalAddress` | `TransportZone` |  |  |
-| `POBox` |  | | `_OrgNamePostalAddress` | `POBox` |  |  |
-| `POBoxAddrNonDeliverableReason` |  | | `_OrgNamePostalAddress` | `POBoxAddrNonDeliverableReason` |  |  |
-| `POBoxIsWithoutNumber` |  | | `_OrgNamePostalAddress` | `POBoxIsWithoutNumber` |  |  |
-| `POBoxPostalCode` |  | | `_OrgNamePostalAddress` | `POBoxPostalCode` |  |  |
-| `POBoxLobbyName` |  | | `_OrgNamePostalAddress` | `POBoxLobbyName` |  |  |
-| `POBoxDeviatingCityName` |  | | `_OrgNamePostalAddress` | `POBoxDeviatingCityName` |  |  |
-| `POBoxDeviatingCityCode` |  | | `_OrgNamePostalAddress` | `POBoxDeviatingCityCode` |  |  |
-| `POBoxDeviatingRegion` |  | | `_OrgNamePostalAddress` | `POBoxDeviatingRegion` |  |  |
-| `POBoxDeviatingCountry` |  | | `_OrgNamePostalAddress` | `POBoxDeviatingCountry` |  |  |
-| `CareOfName` |  | | `_OrgNamePostalAddress` | `CareOfName` |  |  |
-| `DeliveryServiceTypeCode` |  | | `_OrgNamePostalAddress` | `DeliveryServiceTypeCode` |  |  |
-| `DeliveryServiceNumber` |  | | `_OrgNamePostalAddress` | `DeliveryServiceNumber` |  |  |
-| `AddressTimeZone` |  | | `_OrgNamePostalAddress` | `AddressTimeZone` |  |  |
-| `SecondaryRegion` |  | | `_OrgNamePostalAddress` | `SecondaryRegion` |  |  |
-| `SecondaryRegionName` |  | | `_OrgNamePostalAddress` | `SecondaryRegionName` |  |  |
-| `TertiaryRegion` |  | | `_OrgNamePostalAddress` | `TertiaryRegion` |  |  |
-| `TertiaryRegionName` |  | | `_OrgNamePostalAddress` | `TertiaryRegionName` |  |  |
-| `RegionalStructureCheckStatus` |  | | `_OrgNamePostalAddress` | `RegionalStructureCheckStatus` |  |  |
-| `AddressGroup` |  | | `_OrgNamePostalAddress` | `AddressGroup` |  |  |
-| `DistrictNumber` |  | | `_OrgNamePostalAddress` | `DistrictNumber` |  |  |
-| `Village` |  | | `_OrgNamePostalAddress` | `Village` |  |  |
-| `RegionalStructureGroup` |  | | `_OrgNamePostalAddress` | `RegionalStructureGroup` |  |  |
-| `AddressCreatedByUser` |  | | `_OrgNamePostalAddress` | `AddressCreatedByUser` |  |  |
-| `AddressCreatedOnDateTime` |  | | `_OrgNamePostalAddress` | `AddressCreatedOnDateTime` |  |  |
-| `AddressChangedByUser` |  | | `_OrgNamePostalAddress` | `AddressChangedByUser` |  |  |
-| `AddressChangedOnDateTime` |  | | `_OrgNamePostalAddress` | `AddressChangedOnDateTime` |  |  |
+| `AddressID` | ✓ | |  |  | `CHAR(10)` | Address Number |
+| `AddressPersonID` | ✓ | |  |  | `CHAR(10)` | Person Number |
+| `AddressRepresentationCode` | ✓ | |  |  | `CHAR(1)` | Version ID for International Addresses |
+| `AddressObjectType` |  | |  | `cast('2' as ad_adrtype)` | `CHAR(1)` | Address type (1=Organization, 2=Person, 3=Contact person) |
+| `CorrespondenceLanguage` |  | | `_PersonName` | `CorrespondenceLanguage` | `LANG(1)` | Language Key |
+| `GivenName` |  | | `_PersonName` | `GivenName` | `CHAR(40)` | First Name |
+| `FamilyName` |  | | `_PersonName` | `FamilyName` | `CHAR(40)` | Last Name |
+| `PersonBirthName` |  | | `_PersonName` | `PersonBirthName` | `CHAR(40)` | Name of person at birth |
+| `PersonMiddleName` |  | | `_PersonName` | `PersonMiddleName` | `CHAR(40)` | Middle name or second forename of a person |
+| `SecondFamilyName` |  | | `_PersonName` | `SecondFamilyName` | `CHAR(40)` | Other Last Name of a Person |
+| `AcademicTitle` |  | | `_PersonName` | `AcademicTitle` | `CHAR(4)` | Academic Title: Key |
+| `AcademicTitle2` |  | | `_PersonName` | `AcademicTitle2` | `CHAR(4)` | Second academic title (key) |
+| `FamilyNamePrefix` |  | | `_PersonName` | `FamilyNamePrefix` | `CHAR(4)` | Name Prefix (Key) |
+| `FamilyNameSecondPrefix` |  | | `_PersonName` | `FamilyNameSecondPrefix` | `CHAR(4)` | 2nd name prefix (key) |
+| `PersonNameSupplementCode` |  | | `_PersonName` | `PersonNameSupplementCode` | `CHAR(4)` | Name supplement, e.g. noble title (key) |
+| `PersonNickname` |  | | `_PersonName` | `PersonNickname` | `CHAR(40)` | Nickname or name used |
+| `NameInitials` |  | | `_PersonName` | `NameInitials` | `CHAR(10)` | "Middle Initial" or personal initials |
+| `PersonFullName` |  | | `_PersonName` | `PersonFullName` | `CHAR(80)` | Full Name of Person |
+| `FormOfAddress` |  | | `_PersonName` | `FormOfAddress` | `CHAR(4)` | Form-of-Address Key |
+| `AddressPersonSearchTerm1` |  | | `_PersonName` | `AddressPersonSearchTerm1` | `CHAR(20)` | Search Term 1 |
+| `AddressPersonSearchTerm2` |  | | `_PersonName` | `AddressPersonSearchTerm2` | `CHAR(20)` | Search Term 2 |
+| `PersonFullNameFormattingCode` |  | | `_PersonName` | `PersonFullNameFormattingCode` | `CHAR(2)` | Name format |
+| `PersonFullNameFormattingCntry` |  | | `_PersonName` | `PersonFullNameFormattingCntry` | `CHAR(3)` | Country/Region for Name Format Rule |
+| `converted` |  | | `_PersonName` | `converted` | `CHAR(1)` | Generation Status of 'Full Name of Person' Field |
+| `PrfrdCommMediumType` |  | | `_OrgNamePostalAddress` | `PrfrdCommMediumType` | `CHAR(3)` | Communication Method (Key) (Business Address Services) |
+| `CityNumber` |  | | `_OrgNamePostalAddress` | `CityNumber` | `CHAR(12)` | City code for city/street file |
+| `CityName` |  | | `_OrgNamePostalAddress` | `CityName` | `CHAR(40)` | City |
+| `DistrictName` |  | | `_OrgNamePostalAddress` | `DistrictName` | `CHAR(40)` | District |
+| `VillageName` |  | | `_OrgNamePostalAddress` | `VillageName` | `CHAR(40)` | City (different from postal city) |
+| `PostalCode` |  | | `_OrgNamePostalAddress` | `PostalCode` | `CHAR(10)` | City Postal Code |
+| `CompanyPostalCode` |  | | `_OrgNamePostalAddress` | `CompanyPostalCode` | `CHAR(10)` | Company Postal Code (for Large Customers) |
+| `Street` |  | | `_OrgNamePostalAddress` | `Street` | `CHAR(12)` | Street Number for City/Street File |
+| `StreetName` |  | | `_OrgNamePostalAddress` | `StreetName` | `CHAR(60)` | Street |
+| `StreetAddrNonDeliverableReason` |  | | `_OrgNamePostalAddress` | `StreetAddrNonDeliverableReason` | `CHAR(4)` | Street Address Undeliverable Flag |
+| `StreetPrefixName1` |  | | `_OrgNamePostalAddress` | `StreetPrefixName1` | `CHAR(40)` | Street 2 |
+| `StreetPrefixName2` |  | | `_OrgNamePostalAddress` | `StreetPrefixName2` | `CHAR(40)` | Street 3 |
+| `StreetSuffixName1` |  | | `_OrgNamePostalAddress` | `StreetSuffixName1` | `CHAR(40)` | Street 4 |
+| `StreetSuffixName2` |  | | `_OrgNamePostalAddress` | `StreetSuffixName2` | `CHAR(40)` | Street 5 |
+| `HouseNumber` |  | | `_OrgNamePostalAddress` | `HouseNumber` | `CHAR(10)` | House Number |
+| `HouseNumberSupplementText` |  | | `_OrgNamePostalAddress` | `HouseNumberSupplementText` | `CHAR(10)` | House number supplement |
+| `Building` |  | | `_OrgNamePostalAddress` | `Building` | `CHAR(20)` | Building (Number or Code) |
+| `Floor` |  | | `_OrgNamePostalAddress` | `Floor` | `CHAR(10)` | Floor in Building |
+| `RoomNumber` |  | | `_OrgNamePostalAddress` | `RoomNumber` | `CHAR(10)` | Room or Apartment Number |
+| `Country` |  | | `_OrgNamePostalAddress` | `Country` | `CHAR(3)` | Country/Region Key |
+| `Region` |  | | `_OrgNamePostalAddress` | `Region` | `CHAR(3)` | Region (State, Province, County) |
+| `TaxJurisdiction` |  | | `_OrgNamePostalAddress` | `TaxJurisdiction` | `CHAR(15)` | Tax Jurisdiction |
+| `TransportZone` |  | | `_OrgNamePostalAddress` | `TransportZone` | `CHAR(10)` | Transportation zone to or from which the goods are delivered |
+| `POBox` |  | | `_OrgNamePostalAddress` | `POBox` | `CHAR(10)` | PO Box |
+| `POBoxAddrNonDeliverableReason` |  | | `_OrgNamePostalAddress` | `POBoxAddrNonDeliverableReason` | `CHAR(4)` | PO Box Address Undeliverable Flag |
+| `POBoxIsWithoutNumber` |  | | `_OrgNamePostalAddress` | `POBoxIsWithoutNumber` | `CHAR(1)` | Flag: PO Box Without Number |
+| `POBoxPostalCode` |  | | `_OrgNamePostalAddress` | `POBoxPostalCode` | `CHAR(10)` | PO Box Postal Code |
+| `POBoxLobbyName` |  | | `_OrgNamePostalAddress` | `POBoxLobbyName` | `CHAR(40)` | PO Box Lobby |
+| `POBoxDeviatingCityName` |  | | `_OrgNamePostalAddress` | `POBoxDeviatingCityName` | `CHAR(40)` | PO Box city |
+| `POBoxDeviatingCityCode` |  | | `_OrgNamePostalAddress` | `POBoxDeviatingCityCode` | `CHAR(12)` | City PO box code (City file) |
+| `POBoxDeviatingRegion` |  | | `_OrgNamePostalAddress` | `POBoxDeviatingRegion` | `CHAR(3)` | Region for PO Box (Country/Region, State, Province, ...) |
+| `POBoxDeviatingCountry` |  | | `_OrgNamePostalAddress` | `POBoxDeviatingCountry` | `CHAR(3)` | PO Box of Country/Region |
+| `CareOfName` |  | | `_OrgNamePostalAddress` | `CareOfName` | `CHAR(40)` | c/o name |
+| `DeliveryServiceTypeCode` |  | | `_OrgNamePostalAddress` | `DeliveryServiceTypeCode` | `CHAR(4)` | Type of Delivery Service |
+| `DeliveryServiceNumber` |  | | `_OrgNamePostalAddress` | `DeliveryServiceNumber` | `CHAR(10)` | Number of Delivery Service |
+| `AddressTimeZone` |  | | `_OrgNamePostalAddress` | `AddressTimeZone` | `CHAR(6)` | Address Time Zone |
+| `SecondaryRegion` |  | | `_OrgNamePostalAddress` | `SecondaryRegion` | `CHAR(8)` | County code for county |
+| `SecondaryRegionName` |  | | `_OrgNamePostalAddress` | `SecondaryRegionName` | `CHAR(40)` | County |
+| `TertiaryRegion` |  | | `_OrgNamePostalAddress` | `TertiaryRegion` | `CHAR(8)` | Township code for Township |
+| `TertiaryRegionName` |  | | `_OrgNamePostalAddress` | `TertiaryRegionName` | `CHAR(40)` | Township |
+| `RegionalStructureCheckStatus` |  | | `_OrgNamePostalAddress` | `RegionalStructureCheckStatus` | `CHAR(1)` | City File Test Status |
+| `AddressGroup` |  | | `_OrgNamePostalAddress` | `AddressGroup` | `CHAR(4)` | Address Group (Key) (Business Address Services) |
+| `DistrictNumber` |  | | `_OrgNamePostalAddress` | `DistrictNumber` | `CHAR(8)` | District code for City and Street file |
+| `Village` |  | | `_OrgNamePostalAddress` | `Village` | `CHAR(12)` | Different city for city/street file |
+| `RegionalStructureGroup` |  | | `_OrgNamePostalAddress` | `RegionalStructureGroup` | `CHAR(8)` | Regional structure grouping |
+| `AddressCreatedByUser` |  | | `_OrgNamePostalAddress` | `AddressCreatedByUser` | `CHAR(12)` | Created By User |
+| `AddressCreatedOnDateTime` |  | | `_OrgNamePostalAddress` | `AddressCreatedOnDateTime` | `UTCL(27)` | Creation Date Time |
+| `AddressChangedByUser` |  | | `_OrgNamePostalAddress` | `AddressChangedByUser` | `CHAR(12)` | Last Changed By User |
+| `AddressChangedOnDateTime` |  | | `_OrgNamePostalAddress` | `AddressChangedOnDateTime` | `UTCL(27)` | Last Change Date Time |
 | `_EmailAddress` | | ✓ | | | | |
 | `_CurrentDfltEmailAddress` | | ✓ | | | | |
 | `_PhoneNumber` | | ✓ | | | | |

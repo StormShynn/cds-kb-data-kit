@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `FormOfAddress` | ✓ | |  | `title` |  |  |
-| `FormOfAddressName` |  | |  | `title_medi` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `FormOfAddress` | ✓ | |  | `title` | `CHAR(4)` | Form-of-Address Key |
+| `FormOfAddressName` |  | |  | `title_medi` | `CHAR(30)` | Title text |
 | `_Language` | | ✓ | | | | |
 | `_FormOfAddress` | | ✓ | | | | |
 

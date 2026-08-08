@@ -32,12 +32,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessRoleUUID` | ✓ | |  | `parent_uuid` |  |  |
-| `LanguageCode` | ✓ | |  | `language_code` |  |  |
-| `BusinessRole` |  | |  |  |  |  |
-| `BusinessRoleGroup` |  | |  |  |  |  |
-| `Name` |  | |  | `description` |  |  |
-| `Description` |  | |  | `long_text` |  |  |
+| `BusinessRoleUUID` | ✓ | |  | `parent_uuid` | `RAW(16)` | Global Unique ID for table |
+| `LanguageCode` | ✓ | |  | `language_code` | `LANG(1)` | Language Key |
+| `BusinessRole` |  | |  |  | `CHAR(40)` | IAM: Business Role ID |
+| `BusinessRoleGroup` |  | |  |  | `CHAR(12)` | Role Group |
+| `Name` |  | |  | `description` | `CHAR(80)` | IAM: Business Role Description |
+| `Description` |  | |  | `long_text` | `SSTR(1024)` | IAM: Business Role long text |
 | `_BusinessRole` | | ✓ | | | | |
 
 ## Source Code
