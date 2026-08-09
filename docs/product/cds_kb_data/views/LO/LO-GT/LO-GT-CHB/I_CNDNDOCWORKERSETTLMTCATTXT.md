@@ -1,16 +1,18 @@
 ---
 name: I_CNDNDOCWORKERSETTLMTCATTXT
-description: "Cndn Doc Wrkr Settlement Category - Text"
+description: "This CDS view provides the data to answer the following business question: Which are the relevant settlement categories related to worker in condition contracts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCWORKERSETTLMTCATTXT')/$value
-semantic_en: "Cndn Doc Wrkr Settlement Category - Text"
+semantic_en: "This CDS view provides the data to answer the following business question: Which are the relevant settlement categories related to worker in condition contracts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - LO
+  - bo:companycode
   - component:LO-GT-CHB
+  - contract
   - interface-view
   - LO-GT
   - LO-GT-CHB
@@ -19,7 +21,7 @@ tags:
 ---
 # I_CNDNDOCWORKERSETTLMTCATTXT
 
-**Cndn Doc Wrkr Settlement Category - Text**
+**This CDS view provides the data to answer the following business question: Which are the relevant settlement categories related to worker in condition contracts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
