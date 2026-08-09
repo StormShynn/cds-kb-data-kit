@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ABAPSoftwareComponent` | ✓ | |  |  |  |  |
-| `ABAPSoftwareComponentType` |  | |  | `cast(ABAPSoftwareComponentType as CUSTOM_SOFTWARE_COMPONENT_TYPE)` |  |  |
-| `ABAPCloudCustomObjectCategory` |  | |  | `case ABAPSoftwareComponentType when cast(ARS_SOFTWARE_COMPONENT_TYPE.#key_user_extensibility as relc_type) then CUSTOM_OBJECT_CATEGORY.#key_user_extensibility when cast(ARS_SOFTWARE_COMPONENT_TYPE.#key_user_extensibility_add_on as relc_type) then CUSTOM_OBJECT_CATEGORY.#key_user_extensibility else CUSTOM_OBJECT_CATEGORY.#developer_extensibility end` |  |  |
+| `ABAPSoftwareComponent` | ✓ | |  |  | `CHAR(30)` | Software Component |
+| `ABAPSoftwareComponentType` |  | |  | `cast(ABAPSoftwareComponentType as CUSTOM_SOFTWARE_COMPONENT_TYPE)` | `ENUM(1)` |  |
+| `ABAPCloudCustomObjectCategory` |  | |  | `case ABAPSoftwareComponentType when cast(ARS_SOFTWARE_COMPONENT_TYPE.#key_user_extensibility as relc_type) then CUSTOM_OBJECT_CATEGORY.#key_user_extensibility when cast(ARS_SOFTWARE_COMPONENT_TYPE.#key_user_extensibility_add_on as relc_type) then CUSTOM_OBJECT_CATEGORY.#key_user_extensibility else CUSTOM_OBJECT_CATEGORY.#developer_extensibility end` | `ENUM(1)` |  |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

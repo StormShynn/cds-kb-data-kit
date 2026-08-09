@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `country` |  |  |
-| `Region` | ✓ | |  | `region` |  |  |
-| `SecondaryRegion` | ✓ | |  | `county_code` |  |  |
+| `Country` | ✓ | |  | `country` | `CHAR(3)` | Country/Region Key |
+| `Region` | ✓ | |  | `region` | `CHAR(3)` | Region (State, Province, County) |
+| `SecondaryRegion` | ✓ | |  | `county_code` | `CHAR(8)` | County code for county |
 | `_Country` | | ✓ | | | | |
 | `_Region` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `PersonNameSupplementCode` | ✓ | |  | `title_key` |  |  |
-| `NameSupplementDescription` |  | |  | `title_dscr` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `PersonNameSupplementCode` | ✓ | |  | `title_key` | `CHAR(4)` | Name supplement, e.g. noble title (key) |
+| `NameSupplementDescription` |  | |  | `title_dscr` | `CHAR(40)` | Name suffix/noble title description |
 
 ## Source Code
 

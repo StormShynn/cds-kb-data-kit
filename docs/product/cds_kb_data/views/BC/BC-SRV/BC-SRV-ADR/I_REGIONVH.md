@@ -31,8 +31,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  |  |  |  |
-| `Region` | ✓ | |  |  |  |  |
+| `Country` | ✓ | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` | ✓ | |  |  | `CHAR(3)` | Region (State, Province, County) |
 | `_RegionText` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 

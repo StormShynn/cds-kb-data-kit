@@ -31,8 +31,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FamilyNamePrefix` | ✓ | |  |  |  |  |
-| `FamilyNamePrefixName` |  | |  |  |  |  |
+| `FamilyNamePrefix` | ✓ | |  |  | `CHAR(4)` | Name Prefix (Key) |
+| `FamilyNamePrefixName` |  | |  |  | `CHAR(20)` | Name prefix |
 
 ## Source Code
 

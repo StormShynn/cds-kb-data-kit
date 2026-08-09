@@ -31,9 +31,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `Region` | ✓ | |  | `regio` |  |  |
-| `TaxingCounty` | ✓ | |  | `counc` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `Region` | ✓ | |  | `regio` | `CHAR(3)` | Region (State, Province, County) |
+| `TaxingCounty` | ✓ | |  | `counc` | `CHAR(3)` | County Code |
 | `_Country` | | ✓ | | | | |
 | `_Region` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

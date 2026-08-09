@@ -50,23 +50,50 @@ Node.js, just to see the request shape and caching strategy.
 | `index/version.json` | `{schemaVersion, commit, builtAt, viewCount, enrichedCount}` | Cheap poll (~200 bytes) — compare `commit` to the last one you saw before fetching anything bigger |
 | `index/view-paths.json` | `{ "NAME": "views/<MODULE>/.../NAME.md", ... }` | Look up a view's real file path by name |
 | `index/taxonomy.json` | LoB → Business Object → keyword map | Business-domain categorization; plain JSON, language-agnostic |
-| `index/search_index.json` | Serialized [MiniSearch](https://github.com/lucaong/minisearch) index | **Only useful from Node.js with the `minisearch` package.** In any other stack, ignore this file and build your own index from the `.md` frontmatter instead (see §4) |
+| `index/search_index.json` | Serialized [MiniSearch](https://github.com/lucaong/minisearch) index | **Only useful from Node.js with the `minisearch` package.** In any other stack, use `index/search.db` instead (see §4) |
+| `index/search.db` | SQLite FTS5 database (built by `scripts/build-sqlite-index.mjs`) | Plain SQL, any language with an SQLite driver — no MiniSearch dependency. See §4 |
 | `views/<MODULE>/.../<NAME>.md` | YAML frontmatter + Markdown body | The actual view: name, description, tags, app_component, release_state, fields, associations, and DDL source when available. Nested one folder per app_component segment — depth varies per view, always resolve via view-paths.json |
 
 ## 4. Not using Node.js / MiniSearch?
 
 Don't try to parse `search_index.json` — it's a MiniSearch-internal
-serialization, not a generic format. Instead:
+serialization, not a generic format. Use `index/search.db` instead: a plain
+SQLite file with two tables, rebuilt from `search_index.json` on every
+`enrich_index.mjs` run (see `scripts/build-sqlite-index.mjs`) —
 
-1. Fetch `index/view-paths.json` once — it's the full list of view names and
-   where each one lives.
-2. Fetch each `views/<MODULE>/.../<NAME>.md` (cache these — see §5), parse the
-   YAML frontmatter block between the first two `---` lines yourself
-   (`name`, `description`, `app_component`, `release_state`, `tags`).
-3. Build whatever search/index structure your own stack already has good
-   tools for (SQLite FTS5, Elasticsearch, a simple in-memory keyword map —
-   whatever fits). There's nothing MiniSearch-specific about the *data*,
-   only about that one pre-built file.
+```sql
+CREATE TABLE views (
+  id INTEGER PRIMARY KEY, name TEXT, path TEXT, description TEXT,
+  semanticDescription TEXT, module TEXT, lob TEXT, bo TEXT,
+  appComponent TEXT, synonyms TEXT, usageCount INTEGER
+);
+CREATE VIRTUAL TABLE views_fts USING fts5(
+  name, semanticDescription, description, synonyms, appComponent,
+  content='views', content_rowid='id'
+);
+```
+
+Query it with plain SQL, from any language with an SQLite driver:
+
+```sql
+SELECT v.name, v.path, v.module, bm25(views_fts) AS score
+FROM views_fts
+JOIN views v ON v.id = views_fts.rowid
+WHERE views_fts MATCH 'purchase order' AND v.module = 'MM'
+ORDER BY score
+LIMIT 10;
+```
+
+`path` is relative to the data repo root — resolve it the same way as any
+other consumer (`views/<MODULE>/.../<NAME>.md`, fetched via the Contents API
+per §2). If you need per-field/table reverse lookups too, `field-index.json`,
+`table-index.json`, and `raw-field-index.json` are already plain JSON —
+no MiniSearch involved in those at all.
+
+If you'd rather not depend on this repo's build script, the fallback is
+still available: fetch `index/view-paths.json`, fetch each view `.md` and
+parse its YAML frontmatter yourself, and build whatever index structure
+fits your stack (Elasticsearch, a simple in-memory keyword map, etc.).
 
 ## 5. Be a good citizen
 
