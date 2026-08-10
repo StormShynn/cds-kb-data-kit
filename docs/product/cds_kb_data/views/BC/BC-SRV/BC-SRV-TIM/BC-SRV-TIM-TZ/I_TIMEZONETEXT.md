@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeZoneID` | ✓ | |  | `tzone` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `TimeZoneText` |  | |  | `descript` |  |  |
+| `TimeZoneID` | ✓ | |  | `tzone` | `CHAR(6)` | Time Zone |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `TimeZoneText` |  | |  | `descript` | `CHAR(30)` | Time Zone Text |
 | `_TimeZone` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

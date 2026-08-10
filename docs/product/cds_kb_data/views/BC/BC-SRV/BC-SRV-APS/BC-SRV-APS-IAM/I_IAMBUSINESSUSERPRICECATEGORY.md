@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserID` | ✓ | |  | `cast( bu_weight.UserID as aps_userid preserving type )` |  |  |
-| `BusinessUserPriceCategory` | ✓ | |  | `usrprc_id` |  |  |
+| `UserID` | ✓ | |  | `cast( bu_weight.UserID as aps_userid preserving type )` | `CHAR(12)` | User ID |
+| `BusinessUserPriceCategory` | ✓ | |  | `usrprc_id` | `CHAR(30)` | IAM: User Price Category ID |
 | `_Text` | | ✓ | | | | |
 | `_BusinessUser` | | ✓ | | | | |
 | `_IAMBusinessUserLogonDetails` | | ✓ | | | | |

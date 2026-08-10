@@ -31,24 +31,24 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UnitOfMeasure` | ✓ | |  | `cast ( msehi as msehiunit preserving type )` |  |  |
-| `UnitOfMeasureSAPCode` |  | |  | `cast ( msehi as meinsint )` |  |  |
-| `UnitOfMeasureISOCode` |  | |  | `isocode` |  |  |
-| `IsPrimaryUnitForISOCode` |  | |  | `primary` |  |  |
-| `UnitOfMeasureNumberOfDecimals` |  | |  | `andec` |  |  |
-| `UnitOfMeasureIsCommercial` |  | |  | `kzkeh` |  |  |
-| `UnitOfMeasureDimension` |  | |  | `dimid` |  |  |
-| `SIUnitCnvrsnRateNumerator` |  | |  | `zaehl` |  |  |
-| `SIUnitCnvrsnRateDenominator` |  | |  | `nennr` |  |  |
-| `SIUnitCnvrsnRateExponent` |  | |  | `exp10` |  |  |
-| `SIUnitCnvrsnAdditiveValue` |  | |  | `addko` |  |  |
-| `UnitOfMeasureDspExponent` |  | |  | `expon` |  |  |
-| `UnitOfMeasureDspNmbrOfDcmls` |  | |  | `decan` |  |  |
-| `UnitOfMeasureTemperature` |  | |  | `temp_value` |  |  |
-| `UnitOfMeasureTemperatureUnit` |  | |  | `temp_unit` |  |  |
-| `UnitOfMeasurePressure` |  | |  | `press_val` |  |  |
-| `UnitOfMeasurePressureUnit` |  | |  | `press_unit` |  |  |
-| `UnitOfMeasure_E` |  | |  | `_Text[ 1: Language = $session.system_language ].UnitOfMeasure_E` |  |  |
+| `UnitOfMeasure` | ✓ | |  | `cast ( msehi as msehiunit preserving type )` | `UNIT(3)` | Unit of Measure |
+| `UnitOfMeasureSAPCode` |  | |  | `cast ( msehi as meinsint )` | `CHAR(3)` | Unit of Measurement, Internal SAP Code (No Conversion) |
+| `UnitOfMeasureISOCode` |  | |  | `isocode` | `CHAR(3)` | ISO Code for Unit of Measurement |
+| `IsPrimaryUnitForISOCode` |  | |  | `primary` | `CHAR(1)` | Selection Field for Conversion from ISO Code to Int. Code |
+| `UnitOfMeasureNumberOfDecimals` |  | |  | `andec` | `INT2(5)` | No. of Decimal Places for Rounding |
+| `UnitOfMeasureIsCommercial` |  | |  | `kzkeh` | `CHAR(1)` | Commercial Measurement Unit Flag |
+| `UnitOfMeasureDimension` |  | |  | `dimid` | `CHAR(6)` | Dimension |
+| `SIUnitCnvrsnRateNumerator` |  | |  | `zaehl` | `INT4(10)` | Numerator for Conversion to SI Unit |
+| `SIUnitCnvrsnRateDenominator` |  | |  | `nennr` | `INT4(10)` | Denominator for Conversion into SI Unit |
+| `SIUnitCnvrsnRateExponent` |  | |  | `exp10` | `INT2(5)` | Base Ten Exponent for Conversion to SI Unit |
+| `SIUnitCnvrsnAdditiveValue` |  | |  | `addko` | `DEC(9)` | Additive Constant for Conversion to SI Unit |
+| `UnitOfMeasureDspExponent` |  | |  | `expon` | `INT2(5)` | Exponent of 10 for Floating Point Format |
+| `UnitOfMeasureDspNmbrOfDcmls` |  | |  | `decan` | `INT2(5)` | Number of Decimal Places for Number Display |
+| `UnitOfMeasureTemperature` |  | |  | `temp_value` | `FLTP(16)` | Temperature |
+| `UnitOfMeasureTemperatureUnit` |  | |  | `temp_unit` | `UNIT(3)` | Temperature Unit |
+| `UnitOfMeasurePressure` |  | |  | `press_val` | `FLTP(16)` | Pressure Value |
+| `UnitOfMeasurePressureUnit` |  | |  | `press_unit` | `UNIT(3)` | Unit of Pressure |
+| `UnitOfMeasure_E` |  | |  | `_Text[ 1: Language = $session.system_language ].UnitOfMeasure_E` | `CHAR(3)` | External Commercial Unit of Measurement (3-Character Format) |
 | `_Text` | | ✓ | | | | |
 | `_Dimension` | | ✓ | | | | |
 | `_DimensionText` | | ✓ | | | | |

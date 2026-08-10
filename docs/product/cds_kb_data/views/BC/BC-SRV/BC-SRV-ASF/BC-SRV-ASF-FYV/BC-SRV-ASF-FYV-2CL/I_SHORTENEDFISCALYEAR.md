@@ -30,12 +30,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  | `cast( t009y.periv as fis_periv preserving type )` |  |  |
-| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
-| `PostingPeriodsNumberVal` |  | |  | `anzbp` |  |  |
-| `NumberOfSpecialPeriods` |  | |  | `anzsp` |  |  |
-| `FiscalYearStartDate` |  | |  | `gjbeg` |  |  |
-| `FiscalYearEndDate` |  | |  | `gjend` |  |  |
+| `FiscalYearVariant` | ✓ | |  | `cast( t009y.periv as fis_periv preserving type )` | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` | ✓ | |  | `gjahr` | `NUMC(4)` | Fiscal Year |
+| `PostingPeriodsNumberVal` |  | |  | `anzbp` | `NUMC(3)` | Number of Posting Periods |
+| `NumberOfSpecialPeriods` |  | |  | `anzsp` | `NUMC(2)` | Number of Special Periods |
+| `FiscalYearStartDate` |  | |  | `gjbeg` | `DATS(8)` | Fiscal year start date |
+| `FiscalYearEndDate` |  | |  | `gjend` | `DATS(8)` | Fiscal year end date |
 | `_FiscalYearVariant` | | ✓ | | | | |
 
 ## Associations

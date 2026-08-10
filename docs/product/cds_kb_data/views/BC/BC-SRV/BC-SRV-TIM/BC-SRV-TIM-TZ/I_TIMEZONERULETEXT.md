@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeZoneRule` | ✓ | |  | `zonerule` |  |  |
-| `Language` | ✓ | |  | `language` |  |  |
-| `TimeZoneRuleText` |  | |  | `descript` |  |  |
+| `TimeZoneRule` | ✓ | |  | `zonerule` | `CHAR(6)` | Time Zone Rule |
+| `Language` | ✓ | |  | `language` | `LANG(1)` | Language Key |
+| `TimeZoneRuleText` |  | |  | `descript` | `CHAR(20)` | Name of Time Zone Rule (Difference from UTC) |
 | `_TimeZoneRule` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

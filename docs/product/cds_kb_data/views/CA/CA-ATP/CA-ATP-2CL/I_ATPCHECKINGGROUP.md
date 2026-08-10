@@ -25,6 +25,20 @@ tags:
 | Release State | Released (Level A) |
 | System Type | S/4HANA Cloud Public Edition |
 
+## Fields
+
+| Field | Key | Association | Via | Source | Type | Description |
+|---|---|---|---|---|---|---|
+| `ATPCheckingGroup` | ✓ | |  | `mtvfp` | `CHAR(2)` | Checking Group for Availability Check |
+| `AdvancedATPIsActive` |  | |  | `case when adv_atp = 'A' then 'X' else '' end` | `CHAR(1)` |  |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_ATPCheckingGroupText` | [0..*] |
+
 ## Source Code
 
 ```abap

@@ -31,15 +31,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ConcurSystemKey` | ✓ | |  |  |  |  |
-| `ConcurDocumentType` | ✓ | |  |  |  |  |
-| `ConcurDocumentID` | ✓ | |  |  |  |  |
-| `ConcurDocumentRevisionNumber` | ✓ | |  |  |  |  |
-| `ConcurEntryIdentifier` | ✓ | |  |  |  |  |
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `JournalEntry` | ✓ | |  |  |  |  |
-| `ConcurDocumentFiscalYear` | ✓ | |  |  |  |  |
-| `ReferenceDocumentItem` | ✓ | |  |  |  |  |
+| `ConcurSystemKey` | ✓ | |  |  | `INT1(3)` | System Key |
+| `ConcurDocumentType` | ✓ | |  |  | `CHAR(2)` | Concur Document Type |
+| `ConcurDocumentID` | ✓ | |  |  | `CHAR(32)` | ID of Concur Document |
+| `ConcurDocumentRevisionNumber` | ✓ | |  |  | `CHAR(3)` | Concur Document Revision Number |
+| `ConcurEntryIdentifier` | ✓ | |  |  | `CHAR(32)` | Concur Node ID |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `JournalEntry` | ✓ | |  |  | `CHAR(10)` | Document Number of an Accounting Document |
+| `ConcurDocumentFiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `ReferenceDocumentItem` | ✓ | |  |  | `NUMC(6)` | Reference Document Line Item |
 
 ## Source Code
 

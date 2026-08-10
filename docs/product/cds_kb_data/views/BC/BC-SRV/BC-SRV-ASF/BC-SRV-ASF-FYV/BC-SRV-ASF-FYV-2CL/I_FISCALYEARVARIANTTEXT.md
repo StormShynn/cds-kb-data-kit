@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `FiscalYearVariant` | ✓ | |  | `cast( t009t.periv as fis_periv preserving type )` |  |  |
-| `FiscalYearVariantDescription` |  | |  | `cast(t009t.ltext as fis_periv_desc preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `FiscalYearVariant` | ✓ | |  | `cast( t009t.periv as fis_periv preserving type )` | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYearVariantDescription` |  | |  | `cast(t009t.ltext as fis_periv_desc preserving type )` | `CHAR(30)` | Description of Fiscal Year Variant |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

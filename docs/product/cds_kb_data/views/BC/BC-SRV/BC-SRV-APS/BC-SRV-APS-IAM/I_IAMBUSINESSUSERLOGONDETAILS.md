@@ -30,25 +30,25 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserID` | ✓ | |  |  |  |  |
-| `UserName` |  | |  |  |  |  |
-| `UserGroup` |  | |  |  |  |  |
-| `UserValidFrom` |  | |  | `ValidFrom` |  |  |
-| `UserValidTo` |  | |  | `ValidTo` |  |  |
-| `UserIsLocked` |  | |  | `IsLocked` |  |  |
-| `UserLockStatus` |  | |  | `LockStatus` |  |  |
-| `UserLogonLanguage` |  | |  | `LogonLanguage` |  |  |
-| `UserDecimalFormat` |  | |  | `DecimalFormat` |  |  |
-| `UserDateFormat` |  | |  | `DateFormat` |  |  |
-| `UserTimeFormat` |  | |  | `TimeFormat` |  |  |
-| `UserLocalTimeZone` |  | |  | `LocalTimeZone` |  |  |
-| `UserLastLogonDate` |  | |  | `LastLogonDate` |  |  |
-| `UserLastLogonTime` |  | |  | `LastLogonTime` |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDateTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangedDate` |  | |  |  |  |  |
-| `LastChangedTime` |  | |  |  |  |  |
+| `UserID` | ✓ | |  |  | `CHAR(12)` | User ID |
+| `UserName` |  | |  |  | `CHAR(40)` | Internet user alias |
+| `UserGroup` |  | |  |  | `CHAR(12)` | User Group |
+| `UserValidFrom` |  | |  | `ValidFrom` | `DATS(8)` | User valid from |
+| `UserValidTo` |  | |  | `ValidTo` | `DATS(8)` | User valid to |
+| `UserIsLocked` |  | |  | `IsLocked` | `CHAR(1)` |  |
+| `UserLockStatus` |  | |  | `LockStatus` | `INT1(3)` | User Lock Status |
+| `UserLogonLanguage` |  | |  | `LogonLanguage` | `LANG(1)` | Logon Language |
+| `UserDecimalFormat` |  | |  | `DecimalFormat` | `CHAR(1)` | Decimal Format |
+| `UserDateFormat` |  | |  | `DateFormat` | `CHAR(1)` | Date format |
+| `UserTimeFormat` |  | |  | `TimeFormat` | `CHAR(1)` | Time Format (12-/24-Hour Specification) |
+| `UserLocalTimeZone` |  | |  | `LocalTimeZone` | `CHAR(6)` | Time Zone |
+| `UserLastLogonDate` |  | |  | `LastLogonDate` | `DATS(8)` | Last Logon Date |
+| `UserLastLogonTime` |  | |  | `LastLogonTime` | `TIMS(6)` | Last Logon Time |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Creator of the User Master Record |
+| `CreationDateTime` |  | |  |  | `DEC(15)` | Creation Date of User Master (System Time Stamp) |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `LastChangedDate` |  | |  |  | `DATS(8)` | Modification date |
+| `LastChangedTime` |  | |  |  | `TIMS(6)` | Modification time |
 | `_BusinessUser` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 | `_TimeZone` | | ✓ | | | | |

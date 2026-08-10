@@ -33,7 +33,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Currency` | ✓ | |  |  |  |  |
+| `Currency` | ✓ | |  |  | `CUKY(5)` | Currency Key |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

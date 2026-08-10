@@ -3218,5 +3218,255 @@
     "attemptedAt": "2026-08-08T08:41:25.436Z",
     "found": true,
     "matched": 6
+  },
+  "I_IAMBUSINESSUSERBUSINESSROLE": {
+    "attemptedAt": "2026-08-09T08:42:18.383Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_IAMBUSINESSUSERLOGONDETAILS": {
+    "attemptedAt": "2026-08-09T08:42:18.969Z",
+    "found": true,
+    "matched": 19
+  },
+  "I_IAMBUSINESSUSERPRICECATEGORY": {
+    "attemptedAt": "2026-08-09T08:42:19.545Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_IAMBUSINESSUSERPRICECATTEXT": {
+    "attemptedAt": "2026-08-09T08:42:20.092Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_IAMSUPPORTUSERREQUESTLOG": {
+    "attemptedAt": "2026-08-09T08:42:20.685Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_FACTORYCALENDARBASIC": {
+    "attemptedAt": "2026-08-09T08:42:21.232Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_FACTORYCALENDARBASICTEXT": {
+    "attemptedAt": "2026-08-09T08:42:21.828Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_FACTORYCALENDARVALUEHELP": {
+    "attemptedAt": "2026-08-09T08:42:22.370Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PUBLHOLIDAYCALENDARBASICTEXT": {
+    "attemptedAt": "2026-08-09T08:42:22.935Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PUBLICHOLIDAYCALENDARBASIC": {
+    "attemptedAt": "2026-08-09T08:42:23.506Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PUBLICHOLIDAYCALENDARVH": {
+    "attemptedAt": "2026-08-09T08:42:24.104Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_FISCALPERIODRAWDATA": {
+    "attemptedAt": "2026-08-09T08:42:24.657Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_FISCALPERIODTEXTRAWDATA": {
+    "attemptedAt": "2026-08-09T08:42:25.194Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_FISCALYEARVARIANT": {
+    "attemptedAt": "2026-08-09T08:42:25.761Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_FISCALYEARVARIANTTEXT": {
+    "attemptedAt": "2026-08-09T08:42:26.290Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SHORTENEDFISCALYEAR": {
+    "attemptedAt": "2026-08-09T08:42:26.866Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_UNITOFMEASURE": {
+    "attemptedAt": "2026-08-09T08:42:27.430Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_UNITOFMEASUREDIMENSION": {
+    "attemptedAt": "2026-08-09T08:42:28.003Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_UNITOFMEASUREDIMENSIONTEXT": {
+    "attemptedAt": "2026-08-09T08:42:28.634Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_UNITOFMEASUREISOCODE": {
+    "attemptedAt": "2026-08-09T08:42:29.198Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_UNITOFMEASUREISOCODETEXT": {
+    "attemptedAt": "2026-08-09T08:42:29.773Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_UNITOFMEASURESTDVH": {
+    "attemptedAt": "2026-08-09T08:42:30.340Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_UNITOFMEASURETEXT": {
+    "attemptedAt": "2026-08-09T08:42:30.869Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_BPDATACONTROLLERUSAGE": {
+    "attemptedAt": "2026-08-09T08:42:31.462Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_BUPAIDENTIFICATIONTYPE": {
+    "attemptedAt": "2026-08-09T08:42:32.061Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_WORKPLACEADDRESS": {
+    "attemptedAt": "2026-08-09T08:42:32.603Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_CURRENCY": {
+    "attemptedAt": "2026-08-09T08:42:33.142Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_CURRENCYSTDVH": {
+    "attemptedAt": "2026-08-09T08:42:33.735Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CURRENCYTEXT": {
+    "attemptedAt": "2026-08-09T08:42:34.308Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_EXCHANGERATEFACTORSRAWDATA": {
+    "attemptedAt": "2026-08-09T08:42:34.886Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_EXCHANGERATERAWDATA": {
+    "attemptedAt": "2026-08-09T08:42:35.453Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_EXCHANGERATESPREADRAWDATA": {
+    "attemptedAt": "2026-08-09T08:42:35.992Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EXCHANGERATETYPE": {
+    "attemptedAt": "2026-08-09T08:42:36.523Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_EXCHANGERATETYPESTDVH": {
+    "attemptedAt": "2026-08-09T08:42:37.054Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EXCHANGERATETYPETEXT": {
+    "attemptedAt": "2026-08-09T08:42:37.610Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EXCHRATEQTANTYPERAWDATA": {
+    "attemptedAt": "2026-08-09T08:42:38.159Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_BPUSREXTERNALID": {
+    "attemptedAt": "2026-08-09T08:42:38.710Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_BPUSRROLE": {
+    "attemptedAt": "2026-08-09T08:42:39.301Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_BUSINESSUSERBASIC": {
+    "attemptedAt": "2026-08-09T08:42:39.856Z",
+    "found": true,
+    "matched": 39
+  },
+  "I_BUSINESSUSERVH": {
+    "attemptedAt": "2026-08-09T08:42:40.387Z",
+    "found": true,
+    "matched": 23
+  },
+  "I_DAYLIGHTSAVINGRULE": {
+    "attemptedAt": "2026-08-09T08:42:40.912Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DAYLIGHTSAVINGRULETEXT": {
+    "attemptedAt": "2026-08-09T08:42:41.476Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TIMEZONE": {
+    "attemptedAt": "2026-08-09T08:42:42.078Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TIMEZONEIANACODEMAP": {
+    "attemptedAt": "2026-08-09T08:42:42.657Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TIMEZONEIANACODESTDVH": {
+    "attemptedAt": "2026-08-09T08:42:43.199Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TIMEZONERULE": {
+    "attemptedAt": "2026-08-09T08:42:43.775Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TIMEZONERULETEXT": {
+    "attemptedAt": "2026-08-09T08:42:44.334Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TIMEZONETEXT": {
+    "attemptedAt": "2026-08-09T08:42:44.902Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_CONCURACCTGDOCITMRLTNDEX": {
+    "attemptedAt": "2026-08-09T08:42:45.456Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_ATPCHECKINGGROUP": {
+    "attemptedAt": "2026-08-09T08:42:46.012Z",
+    "found": true,
+    "matched": 2
   }
 }

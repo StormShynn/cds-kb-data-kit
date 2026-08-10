@@ -30,13 +30,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  | `cast( t009.periv as fis_periv preserving type )` |  |  |
-| `FiscalPeriodIsEqualMonth` |  | |  | `cast( t009.xkale as fis_xkale preserving type )` |  |  |
-| `IsYearDependent` |  | |  | `xjabh` |  |  |
-| `PostingPeriodsNumberVal` |  | |  | `anzbp` |  |  |
-| `NumberOfSpecialPeriods` |  | |  | `anzsp` |  |  |
-| `FsclWeekStartIsFsclYearStart` |  | |  | `xweek` |  |  |
-| `FiscalCalendarIsWeekBased` |  | |  | `xweekquart` |  |  |
+| `FiscalYearVariant` | ✓ | |  | `cast( t009.periv as fis_periv preserving type )` | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriodIsEqualMonth` |  | |  | `cast( t009.xkale as fis_xkale preserving type )` | `CHAR(1)` | Indicator: Fiscal Period Is Equal Calendar Month |
+| `IsYearDependent` |  | |  | `xjabh` | `CHAR(1)` | Indicator: Fiscal year variants year-dependent ? |
+| `PostingPeriodsNumberVal` |  | |  | `anzbp` | `NUMC(3)` | Number of Posting Periods |
+| `NumberOfSpecialPeriods` |  | |  | `anzsp` | `NUMC(2)` | Number of Special Periods |
+| `FsclWeekStartIsFsclYearStart` |  | |  | `xweek` | `CHAR(1)` | Flag: Fiscal Weeks Calculated from Start of Fiscal Year |
+| `FiscalCalendarIsWeekBased` |  | |  | `xweekquart` | `CHAR(1)` | Flag: Fiscal Year Variant as Week Calendar |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

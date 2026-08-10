@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FactoryCalendarLanguage` | ✓ | |  |  |  |  |
-| `FactoryCalendarID` | ✓ | |  |  |  |  |
-| `FactoryCalendarDescription` |  | |  |  |  |  |
+| `FactoryCalendarLanguage` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `FactoryCalendarID` | ✓ | |  |  | `CHAR(32)` | Factory calendar ID |
+| `FactoryCalendarDescription` |  | |  |  | `CHAR(255)` | Description |
 
 ## Source Code
 

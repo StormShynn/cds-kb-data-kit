@@ -33,13 +33,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `UnitOfMeasure` | ✓ | |  | `msehi` |  |  |
-| `UnitOfMeasureLongName` |  | |  | `msehl` |  |  |
-| `UnitOfMeasureName` |  | |  | `mseht` |  |  |
-| `UnitOfMeasureTechnicalName` |  | |  | `mseh6` |  |  |
-| `UnitOfMeasure_E` |  | |  | `mseh3` |  |  |
-| `UnitOfMeasureCommercialName` |  | |  | `mseh3` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `UnitOfMeasure` | ✓ | |  | `msehi` | `UNIT(3)` | Unit of Measurement |
+| `UnitOfMeasureLongName` |  | |  | `msehl` | `CHAR(30)` | Unit of Measurement Long Text with a 30-Character Maximum |
+| `UnitOfMeasureName` |  | |  | `mseht` | `CHAR(10)` | Unit of Measurement Short Text with a 10-Character Maximum |
+| `UnitOfMeasureTechnicalName` |  | |  | `mseh6` | `CHAR(6)` | External Technical Unit of Measurement (6-Character Format) |
+| `UnitOfMeasure_E` |  | |  | `mseh3` | `CHAR(3)` | External Commercial Unit of Measurement (3-Character Format) |
+| `UnitOfMeasureCommercialName` |  | |  | `mseh3` | `CHAR(3)` | External Commercial Unit of Measurement (3-Character Format) |
 | `_UnitOfMeasure` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

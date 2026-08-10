@@ -32,9 +32,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DaylightSavingRule` | ✓ | |  | `dstrule` |  |  |
-| `Language` | ✓ | |  | `language` |  |  |
-| `DaylightSavingRuleText` |  | |  | `descript` |  |  |
+| `DaylightSavingRule` | ✓ | |  | `dstrule` | `CHAR(6)` | Daylight Saving Time Rule |
+| `Language` | ✓ | |  | `language` | `LANG(1)` | Language Key |
+| `DaylightSavingRuleText` |  | |  | `descript` | `CHAR(20)` | Daylight Saving Time Rule |
 | `_DaylightSavingRule` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

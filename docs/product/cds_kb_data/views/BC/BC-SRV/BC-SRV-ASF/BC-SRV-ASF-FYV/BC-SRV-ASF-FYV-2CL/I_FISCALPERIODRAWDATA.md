@@ -30,12 +30,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  | `cast( t009b.periv as fis_periv preserving type )` |  |  |
-| `FiscalPeriodEndYear` | ✓ | |  | `bdatj` |  |  |
-| `FiscalPeriodEndMonth` | ✓ | |  | `bumon` |  |  |
-| `FiscalPeriodEndDay` | ✓ | |  | `butag` |  |  |
-| `FiscalPeriod` |  | |  | `poper` |  |  |
-| `FiscalYearShift` |  | |  | `reljr` |  |  |
+| `FiscalYearVariant` | ✓ | |  | `cast( t009b.periv as fis_periv preserving type )` | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriodEndYear` | ✓ | |  | `bdatj` | `NUMC(4)` | Posting Date YYYY |
+| `FiscalPeriodEndMonth` | ✓ | |  | `bumon` | `NUMC(2)` | Posting date calendar month |
+| `FiscalPeriodEndDay` | ✓ | |  | `butag` | `NUMC(2)` | Calendar day from the posting date |
+| `FiscalPeriod` |  | |  | `poper` | `NUMC(3)` | Posting Period |
+| `FiscalYearShift` |  | |  | `reljr` | `CHAR(2)` | Year shift relative to the current year |
 | `_FiscalYearVariant` | | ✓ | | | | |
 
 ## Associations
