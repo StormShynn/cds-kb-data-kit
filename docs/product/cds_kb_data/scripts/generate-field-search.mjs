@@ -62,18 +62,21 @@ async function main() {
   // raw indices repeat appComponent/lob/bo on every entry, which is fine for
   // a server-side reverse lookup but would multiply the embedded page size
   // by the average fan-out (a view exposes dozens of fields).
-  // Per view: [appComponent, releaseState, isAbstract, isMasterData] — same
-  // one-per-view dedup as before, just carrying more fields so the page can
-  // rank "released" (confirmed SAP-delivered) views ahead of "unverified"
-  // community-sourced ones, either kind of real "define view entity" ahead
-  // of a "define abstract entity" action-parameter/data structure (e.g.
+  // Per view: [appComponent, releaseState, isAbstract, isMasterData,
+  // referencedByCount, usageCount] — same one-per-view dedup as before, just
+  // carrying more fields so the page can rank "released" (confirmed
+  // SAP-delivered) views ahead of "unverified" community-sourced ones,
+  // either kind of real "define view entity" ahead of a "define abstract
+  // entity" action-parameter/data structure (e.g.
   // D_BillOfMaterialCompareBOMP) — which has no runtime entity set to query
-  // at all, even when released — and a master-data view (@ObjectModel.
+  // at all, even when released — a master-data view (@ObjectModel.
   // usageType.dataClass: #MASTER, e.g. I_Product) ahead of a transactional
-  // one that merely references the same field, instead of suggesting either
-  // on equal footing with the view someone actually wants.
+  // one that merely references the same field, and (as a fine tie-break) a
+  // view many other views build FROM/associate to, or with real recorded
+  // usage, ahead of one nobody else touches — instead of suggesting any of
+  // these on equal footing with the view someone actually wants.
   const viewMeta = {};
-  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0, e.isMasterData ? 1 : 0];
+  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0, e.isMasterData ? 1 : 0, e.referencedByCount || 0, e.usageCount || 0];
   const F = {};
   for (const [field, entries] of Object.entries(fieldIndex.fields)) {
     F[field] = entries.map((e) => {
@@ -273,6 +276,16 @@ function renderHtml(embeddedJson, stats) {
   //          prefixes (C_, D_, R_, P_, ...) ahead of I_ views half the time
   //          purely because their prefix letter sorts earlier (confirmed for
   //          MATNR: 76 D_ views before the first I_ view).
+  //   fine tie-break, weighted well below the +1 above so it only decides
+  //   between two matches that are otherwise identical on every signal so
+  //   far:
+  //     -0.002 × usageCount        real runtime call telemetry (stays 0 for
+  //                                every view — hence the small weight —
+  //                                until pull-usage-stats.mjs's endpoint is
+  //                                configured; ready for when it is).
+  //     -0.001 × referencedByCount how many other views build FROM/associate
+  //                                to this one right now — how central it is
+  //                                to the rest of the model.
   function rankOf(view, isKey) {
     const meta = DATA.M[view] || [];
     let score = 0;
@@ -281,6 +294,8 @@ function renderHtml(embeddedJson, stats) {
     if (!isKey) score += 10;
     if (!meta[3]) score += 5;
     if (!view.startsWith('I_')) score += 1;
+    score -= (meta[4] || 0) * 0.001;
+    score -= (meta[5] || 0) * 0.002;
     return score;
   }
   function byReleaseState(entries, getIsKey) {

@@ -74,9 +74,9 @@ const viewFiles = await listViewFiles(viewsDir);
 
 const docs = [];
 const fieldsMap = {};
-const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData }]
-const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo, releaseState, isAbstract, isMasterData }]
-const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData }]
+const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount, referencedByCount }]
+const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount, referencedByCount }]
+const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount, referencedByCount }]
 let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
 
 // A CDS view almost always renames a raw DDIC column to a semantic name
@@ -164,6 +164,7 @@ for (let i = 0; i < viewFiles.length; i++) {
   const releaseState = scalar(fm, 'release_state') || 'released';
   const isAbstract = isAbstractEntity(content);
   const isMasterData = isMasterDataEntity(content);
+  const usageCount = usageCounts[name] || 0;
 
   // field-index.json: FIELD_NAME -> which views expose it, so a lookup like
   // "which views have a material code field" resolves straight to a
@@ -195,7 +196,7 @@ for (let i = 0; i < viewFiles.length; i++) {
           const rawName = bareMatch || (castMatch && BARE_IDENTIFIER_RE.test(castMatch) ? castMatch : null);
           if (rawName && rawName.toUpperCase() !== fieldName.toUpperCase()) {
             const rawKey = rawName.toUpperCase();
-            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData });
+            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount });
           }
         }
       } else {
@@ -206,7 +207,7 @@ for (let i = 0; i < viewFiles.length; i++) {
       }
       if (!fieldName) continue;
       const key = fieldName.toUpperCase();
-      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData });
+      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount });
     }
   }
 
@@ -217,13 +218,13 @@ for (let i = 0; i < viewFiles.length; i++) {
   const sourceTable = extractSourceTable(content);
   if (sourceTable) {
     const key = sourceTable.toUpperCase();
-    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState, isAbstract, isMasterData });
+    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount });
   }
   if (assocTable) {
     for (const [alias, targetView] of assocTable.rows) {
       if (!targetView) continue;
       const key = targetView.toUpperCase();
-      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState, isAbstract, isMasterData });
+      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount });
     }
   }
 
@@ -266,6 +267,26 @@ for (let i = 0; i < viewFiles.length; i++) {
 
 console.log(`Views: ${docs.length} | with DDL label: ${withLabel} | with bo: ${withBo}`);
 console.log(`Genuinely enriched (semantic_en/vi): ${enriched} | with synonyms: ${synCount}`);
+
+// ── referencedByCount: how many OTHER CDS views build FROM or associate to
+// this one — tableIndex[VIEW] is exactly that list, but only known once every
+// view has been scanned, so this can't be computed inline in the loop above
+// like isAbstract/isMasterData/usageCount. A rough "how central is this view
+// to the rest of the model" popularity signal for field/table/raw-column
+// lookups, independent of usageCount (real runtime call telemetry, which
+// stays 0 for every view until pull-usage-stats.mjs's endpoint is configured).
+const referencedByCount = {};
+for (const [tkey, entries] of Object.entries(tableIndex)) {
+  referencedByCount[tkey] = entries.length;
+}
+function attachReferencedByCount(indexObj) {
+  for (const entries of Object.values(indexObj)) {
+    for (const e of entries) e.referencedByCount = referencedByCount[e.view] || 0;
+  }
+}
+attachReferencedByCount(fieldIndex);
+attachReferencedByCount(tableIndex);
+attachReferencedByCount(rawFieldIndex);
 
 // ── Build MiniSearch index ─────────────────────────────────────────────────
 const MiniSearch = (await import('minisearch')).default;
