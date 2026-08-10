@@ -99,10 +99,17 @@ const BARE_IDENTIFIER_RE = /^[a-z][a-z0-9_]*$/;
 // rendering — a cast isn't a single column reference), so this repo-wide
 // index needs its own targeted extraction: only the first bare argument of
 // a *single*, non-nested cast(...) call, immediately followed by "as"
-// (skips string literals like `cast('' as ...)`, qualified paths like
-// `cast(dd07l.domname as ...)`, and nested/function-call arguments like
-// `cast(substring(x,1,1) as ...)`, none of which are one real column either).
-const CAST_RE = /^cast\s*\(\s*([A-Za-z_]\w*)\s+as\b/i;
+// (skips string literals like `cast('' as ...)` and nested/function-call
+// arguments like `cast(substring(x,1,1) as ...)`, neither of which is one
+// real column either). The argument may optionally be qualified by the
+// view's own base table — `cast(mara.matnr as productnumber preserving
+// type)` in I_PRODUCT (as select from mara) — in which case group 1 holds
+// the qualifier for the caller to check against that view's sourceTable
+// before trusting it; a qualifier pointing at some OTHER table, e.g.
+// `cast(dd07l.domname as ...)`, is a value-help/domain lookup join, not a
+// column of the view's own source, so it's deliberately left for the
+// caller to reject rather than captured unconditionally here.
+const CAST_RE = /^cast\s*\(\s*(?:(\w+)\.)?([A-Za-z_]\w*)\s+as\b/i;
 
 // The immediate `as select from X` / `as projection on X` target isn't
 // rendered as its own table anywhere in the .md (only association targets
@@ -165,6 +172,7 @@ for (let i = 0; i < viewFiles.length; i++) {
   const isAbstract = isAbstractEntity(content);
   const isMasterData = isMasterDataEntity(content);
   const usageCount = usageCounts[name] || 0;
+  const sourceTable = extractSourceTable(content);
 
   // field-index.json: FIELD_NAME -> which views expose it, so a lookup like
   // "which views have a material code field" resolves straight to a
@@ -192,7 +200,9 @@ for (let i = 0; i < viewFiles.length; i++) {
         const source = row[4];
         if (source) {
           const bareMatch = BARE_IDENTIFIER_RE.test(source) ? source : null;
-          const castMatch = !bareMatch ? source.match(CAST_RE)?.[1] : null;
+          const castResult = !bareMatch ? source.match(CAST_RE) : null;
+          const castQualifierOk = !castResult?.[1] || castResult[1].toLowerCase() === sourceTable.toLowerCase();
+          const castMatch = castQualifierOk ? castResult?.[2] : null;
           const rawName = bareMatch || (castMatch && BARE_IDENTIFIER_RE.test(castMatch) ? castMatch : null);
           if (rawName && rawName.toUpperCase() !== fieldName.toUpperCase()) {
             const rawKey = rawName.toUpperCase();
@@ -215,7 +225,6 @@ for (let i = 0; i < viewFiles.length; i++) {
   // FROM source) or associate to it — the reverse lookup for "I found table
   // BKPF / view I_JournalEntryItem in some ABAP code, which of our CDS
   // views involve it" instead of grepping every DDL source block by hand.
-  const sourceTable = extractSourceTable(content);
   if (sourceTable) {
     const key = sourceTable.toUpperCase();
     (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount });
