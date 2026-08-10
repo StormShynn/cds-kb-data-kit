@@ -59,10 +59,13 @@ jobs:
           SAP_API_HUB_KEY: ${{ secrets.SAP_API_HUB_KEY }}
         run: node scripts/check-coverage.mjs
 
+      - name: Flag locally-released views not on the Hub's current list
+        run: node scripts/flag-release-state-review.mjs
+
       - name: Commit and push if changed
         uses: ./.github/actions/commit-and-push
         with:
-          paths: docs/product/cds_kb_data/coverage.json docs/product/cds_kb_data/coverage-report.html
+          paths: docs/product/cds_kb_data/coverage.json docs/product/cds_kb_data/coverage-report.html docs/product/cds_kb_data/release-state-review.json
           commit-message: "Update Hub coverage report [skip ci]"
           empty-message: Coverage unchanged
           success-message: Coverage report updated
