@@ -125,18 +125,43 @@ function extractSourceTable(content) {
   return sm ? sm[1] : '';
 }
 
-// "define abstract entity" (action-parameter/data structures, e.g.
-// D_BillOfMaterialCompareBOMP's "Parameters for BOM Comparison") have no
-// runtime entity set — nothing to query by field, even when released — but
-// still contain real fields (including renamed DDIC columns like matnr), so
-// they otherwise surface in field/table/raw-column lookups indistinguishably
-// from an actual queryable view. Flagged here so those lookups can rank them
-// last instead of alongside real "define view entity" results.
+// "define abstract entity" / "define root abstract entity"
+// (action-parameter/data structures, e.g. D_BillOfMaterialCompareBOMP's
+// "Parameters for BOM Comparison") have no runtime entity set — nothing to
+// query by field, even when released — but still contain real fields
+// (including renamed DDIC columns like matnr), so they otherwise surface in
+// field/table/raw-column lookups indistinguishably from an actual queryable
+// view. Flagged here so those lookups can rank them last instead of
+// alongside real "define view entity" results.
+//
+// Checked line-by-line, skipping comments, for two reasons: (1) a
+// commented-out annotation shouldn't count (same reasoning as
+// isMasterDataEntity below), and (2) the "define (root )?abstract entity"
+// keyword itself was previously matched against the whole DDL in one regex
+// with no "root" branch — missed 86 "define root abstract entity" views
+// entirely (e.g. D_SalesDocCreateWithRefDocP).
+//
+// Deliberately does NOT also check @ObjectModel.modelingPattern /
+// .supportedCapabilities: #DATA_STRUCTURE — tried that as a second signal,
+// but it produces false positives: I_BusinessPlace and
+// I_JP_InvoiceSummaryDocument are genuine `define view`/`define view
+// entity` (real runtime entity set, queryable) that both carry
+// modelingPattern: #DATA_STRUCTURE anyway, describing their *shape*
+// (flat, structure-like) rather than the "no runtime instance" property
+// this flag needs. @VDM.usage.type: [#ACTION_PARAMETER_STRUCTURE] doesn't
+// have that problem (confirmed empirically: never appears without the
+// "abstract entity" keyword also present, across the whole repo), so it's
+// kept as a defensive fallback for a DDL shape the keyword regex might not
+// anticipate, without reopening that false-positive risk.
 function isAbstractEntity(content) {
   const m = content.match(DDL_BLOCK_RE);
   if (!m) return false;
-  const ddl = m[1];
-  return /define\s+abstract\s+entity/i.test(ddl) || /modelingPattern\s*:\s*#DATA_STRUCTURE/i.test(ddl);
+  return m[1].split('\n').some((line) => {
+    const trimmed = line.trim();
+    if (trimmed.startsWith('//')) return false;
+    return /define\s+(root\s+)?abstract\s+entity/i.test(trimmed)
+      || /#ACTION_PARAMETER_STRUCTURE\b/i.test(trimmed);
+  });
 }
 
 // SAP's standard master-data marker: @ObjectModel.usageType.dataClass: #MASTER
