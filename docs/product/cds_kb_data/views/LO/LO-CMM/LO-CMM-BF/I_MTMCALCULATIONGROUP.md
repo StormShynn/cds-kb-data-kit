@@ -1,13 +1,13 @@
 ---
 name: I_MTMCALCULATIONGROUP
-description: "Mark To Market Calculation Group"
+description: "MtM Calculation Group"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMCALCULATIONGROUP')/$value
-semantic_en: "Mark To Market Calculation Group"
+semantic_en: "MtM Calculation Group"
 tags:
   - LO
   - component:LO-CMM-BF
@@ -20,7 +20,7 @@ tags:
 ---
 # I_MTMCALCULATIONGROUP
 
-**Mark To Market Calculation Group**
+**MtM Calculation Group**
 
 | Property | Value |
 |---|---|

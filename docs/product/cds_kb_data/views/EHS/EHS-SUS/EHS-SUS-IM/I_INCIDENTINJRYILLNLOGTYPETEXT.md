@@ -1,15 +1,16 @@
 ---
 name: I_INCIDENTINJRYILLNLOGTYPETEXT
-description: "Incident Injury Illness Log Type - Text"
+description: "This CDS view provides you with supported values for injury and illness log entry types. You can use it to categorize and classify different types of injuries and illnesses that are recorded in the Injury/Illness Log. This CDS view provides the data to answer the following business questions: What types of injuries and illnesses are recorded in the incident management system? How can I classify incident log entries by injury or illness type? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: EHS-SUS-IM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INCIDENTINJRYILLNLOGTYPETEXT')/$value
-semantic_en: "Incident Injury Illness Log Type - Text"
+semantic_en: "This CDS view provides you with supported values for injury and illness log entry types. You can use it to categorize and classify different types of injuries and illnesses that are recorded in the Injury/Illness Log. This CDS view provides the data to answer the following business questions: What types of injuries and illnesses are recorded in the incident management system? How can I classify incident log entries by injury or illness type? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - EHS
+  - bo:companycode
   - component:EHS-SUS-IM
   - EHS-SUS
   - EHS-SUS-IM
@@ -18,7 +19,7 @@ tags:
 ---
 # I_INCIDENTINJRYILLNLOGTYPETEXT
 
-**Incident Injury Illness Log Type - Text**
+**This CDS view provides you with supported values for injury and illness log entry types. You can use it to categorize and classify different types of injuries and illnesses that are recorded in the Injury/Illness Log. This CDS view provides the data to answer the following business questions: What types of injuries and illnesses are recorded in the incident management system? How can I classify incident log entries by injury or illness type? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

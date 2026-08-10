@@ -1,17 +1,19 @@
 ---
 name: I_EWM_HANDLINGUNITHDR_2
-description: "Warehouse Handling Unit Header"
+description: "This CDS view provides details about handling units, for example, the weight, volume, or packaging material. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_HANDLINGUNITHDR_2')/$value
-semantic_en: "Warehouse Handling Unit Header"
+semantic_en: "This CDS view provides details about handling units, for example, the weight, volume, or packaging material. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - SCM
+  - bo:companycode
   - component:SCM-EWM-WOP-2CL
   - interface-view
+  - material
   - SCM-EWM
   - SCM-EWM-WOP
   - SCM-EWM-WOP-2CL
@@ -19,7 +21,7 @@ tags:
 ---
 # I_EWM_HANDLINGUNITHDR_2
 
-**Warehouse Handling Unit Header**
+**This CDS view provides details about handling units, for example, the weight, volume, or packaging material. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

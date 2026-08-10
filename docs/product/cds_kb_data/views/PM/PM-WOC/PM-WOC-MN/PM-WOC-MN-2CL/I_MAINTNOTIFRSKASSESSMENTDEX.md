@@ -1,13 +1,13 @@
 ---
 name: I_MAINTNOTIFRSKASSESSMENTDEX
-description: "Maintenance Notification Risk Assessment"
+description: "This CDS view is designed to provide a comprehensive assessment of risks associated with maintenance notifications. It integrates data from various sources to evaluate the consequences and likelihood of maintenance events, facilitating informed decision-making in maintenance management. This CDS view provides the data to answer the following business questions: What is the priority of the event based on the consequence? What is the priority of the event based on the prioritization profile? What is the priority of the event based on the likelihood? What is the maintenance order of the related maintenance notification? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: PM-WOC-MN-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTNOTIFRSKASSESSMENTDEX')/$value
-semantic_en: "Maintenance Notification Risk Assessment"
+semantic_en: "This CDS view is designed to provide a comprehensive assessment of risks associated with maintenance notifications. It integrates data from various sources to evaluate the consequences and likelihood of maintenance events, facilitating informed decision-making in maintenance management. This CDS view provides the data to answer the following business questions: What is the priority of the event based on the consequence? What is the priority of the event based on the prioritization profile? What is the priority of the event based on the likelihood? What is the maintenance order of the related maintenance notification? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - PM
   - bo:companycode
@@ -15,6 +15,7 @@ tags:
   - interface-view
   - lob:plant maintenance
   - notification
+  - order
   - PM-WOC
   - PM-WOC-MN
   - PM-WOC-MN-2CL
@@ -22,7 +23,7 @@ tags:
 ---
 # I_MAINTNOTIFRSKASSESSMENTDEX
 
-**Maintenance Notification Risk Assessment**
+**This CDS view is designed to provide a comprehensive assessment of risks associated with maintenance notifications. It integrates data from various sources to evaluate the consequences and likelihood of maintenance events, facilitating informed decision-making in maintenance management. This CDS view provides the data to answer the following business questions: What is the priority of the event based on the consequence? What is the priority of the event based on the prioritization profile? What is the priority of the event based on the likelihood? What is the maintenance order of the related maintenance notification? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

@@ -1,7 +1,7 @@
 ---
 name: I_OFFSETTINGACCOUNTSTDVH
 description: "Offsetting Account"
-app_component: FI-GL-IS-2CL
+app_component: FI-GL-GL-N-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
@@ -11,10 +11,11 @@ semantic_en: "Offsetting Account"
 tags:
   - FI
   - account
-  - component:FI-GL-IS-2CL
+  - component:FI-GL-GL-N-2CL
   - FI-GL
-  - FI-GL-IS
-  - FI-GL-IS-2CL
+  - FI-GL-GL
+  - FI-GL-GL-N
+  - FI-GL-GL-N-2CL
   - interface-view
   - lob:finance
   - metadata-only
@@ -25,7 +26,7 @@ tags:
 
 | Property | Value |
 |---|---|
-| App Component | `FI-GL-IS-2CL` |
+| App Component | `FI-GL-GL-N-2CL` |
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |

@@ -1,16 +1,16 @@
 ---
 name: I_ONRRREPORTSTATUSTEXT
-description: "Office of Natural Resources Revenue Report Status - Text"
+description: "ONRR Report Status - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ONRRREPORTSTATUSTEXT')/$value
-semantic_en: "Office of Natural Resources Revenue Report Status - Text"
+semantic_en: "ONRR Report Status - Text"
 tags:
   - IS
-  - bo:companycode
+  - bo:purchaseorder
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
@@ -19,7 +19,7 @@ tags:
 ---
 # I_ONRRREPORTSTATUSTEXT
 
-**Office of Natural Resources Revenue Report Status - Text**
+**ONRR Report Status - Text**
 
 | Property | Value |
 |---|---|

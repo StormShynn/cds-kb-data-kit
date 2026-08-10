@@ -1,13 +1,13 @@
 ---
 name: I_CONDITIONCONTRACTSTDVH
-description: "This CDS view exposes the values for the condition contract."
+description: "This CDS view exposes the values for the Condition Contract."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CONDITIONCONTRACTSTDVH')/$value
-semantic_en: "This CDS view exposes the values for the condition contract."
+semantic_en: "This CDS view exposes the values for the Condition Contract."
 tags:
   - LO
   - bo:purchaseorder
@@ -21,7 +21,7 @@ tags:
 ---
 # I_CONDITIONCONTRACTSTDVH
 
-**This CDS view exposes the values for the condition contract.**
+**This CDS view exposes the values for the Condition Contract.**
 
 | Property | Value |
 |---|---|

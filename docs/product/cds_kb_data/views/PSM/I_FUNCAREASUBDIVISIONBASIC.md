@@ -1,23 +1,22 @@
 ---
 name: I_FUNCAREASUBDIVISIONBASIC
-description: "Functional Area Subdivision Identifier"
+description: "Functional Area Subdivision ID"
 app_component: PSM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FUNCAREASUBDIVISIONBASIC')/$value
-semantic_en: "Functional Area Subdivision Identifier"
+semantic_en: "Functional Area Subdivision ID"
 tags:
   - PSM
-  - bo:companycode
   - component:PSM
   - interface-view
   - metadata-only
 ---
 # I_FUNCAREASUBDIVISIONBASIC
 
-**Functional Area Subdivision Identifier**
+**Functional Area Subdivision ID**
 
 | Property | Value |
 |---|---|

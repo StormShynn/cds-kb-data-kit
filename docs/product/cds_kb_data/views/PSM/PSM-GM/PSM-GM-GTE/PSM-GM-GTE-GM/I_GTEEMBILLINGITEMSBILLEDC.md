@@ -1,13 +1,13 @@
 ---
 name: I_GTEEMBILLINGITEMSBILLEDC
-description: "Grantee Management Billing Items Billed - Cube"
+description: "Grantee Mgmt Billing Items Billed - Cube"
 app_component: PSM-GM-GTE-GM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GTEEMBILLINGITEMSBILLEDC')/$value
-semantic_en: "Grantee Management Billing Items Billed - Cube"
+semantic_en: "Grantee Mgmt Billing Items Billed - Cube"
 tags:
   - PSM
   - billing
@@ -21,7 +21,7 @@ tags:
 ---
 # I_GTEEMBILLINGITEMSBILLEDC
 
-**Grantee Management Billing Items Billed - Cube**
+**Grantee Mgmt Billing Items Billed - Cube**
 
 | Property | Value |
 |---|---|

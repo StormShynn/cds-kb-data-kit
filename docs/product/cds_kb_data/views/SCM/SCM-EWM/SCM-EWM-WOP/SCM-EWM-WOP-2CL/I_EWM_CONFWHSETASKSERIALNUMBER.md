@@ -1,13 +1,13 @@
 ---
 name: I_EWM_CONFWHSETASKSERIALNUMBER
-description: "Srl Number of Confirmed Warehouse Task"
+description: "This CDS view provides access to the serial numbers that are assigned to confirmed warehouse tasks in Warehouse Management. It is designed as a basic data source for tracking and auditing which serial numbers have been processed during the execution of warehouse tasks. This CDS view provides the data to answer the following business questions: Which serial numbers are assigned to each confirmed warehouse task and item? For a given warehouse, which serial numbers were moved as part of a specific task? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_CONFWHSETASKSERIALNUMBER')/$value
-semantic_en: "Srl Number of Confirmed Warehouse Task"
+semantic_en: "This CDS view provides access to the serial numbers that are assigned to confirmed warehouse tasks in Warehouse Management. It is designed as a basic data source for tracking and auditing which serial numbers have been processed during the execution of warehouse tasks. This CDS view provides the data to answer the following business questions: Which serial numbers are assigned to each confirmed warehouse task and item? For a given warehouse, which serial numbers were moved as part of a specific task? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - SCM
   - bo:companycode
@@ -21,7 +21,7 @@ tags:
 ---
 # I_EWM_CONFWHSETASKSERIALNUMBER
 
-**Srl Number of Confirmed Warehouse Task**
+**This CDS view provides access to the serial numbers that are assigned to confirmed warehouse tasks in Warehouse Management. It is designed as a basic data source for tracking and auditing which serial numbers have been processed during the execution of warehouse tasks. This CDS view provides the data to answer the following business questions: Which serial numbers are assigned to each confirmed warehouse task and item? For a given warehouse, which serial numbers were moved as part of a specific task? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

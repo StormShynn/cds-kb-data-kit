@@ -1,13 +1,13 @@
 ---
 name: I_MTMCONDITIONGROUP
-description: "Mark To Market Condition Group"
+description: "MtM Condition Group"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMCONDITIONGROUP')/$value
-semantic_en: "Mark To Market Condition Group"
+semantic_en: "MtM Condition Group"
 tags:
   - LO
   - component:LO-CMM-BF
@@ -20,7 +20,7 @@ tags:
 ---
 # I_MTMCONDITIONGROUP
 
-**Mark To Market Condition Group**
+**MtM Condition Group**
 
 | Property | Value |
 |---|---|

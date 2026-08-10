@@ -1,20 +1,19 @@
 ---
 name: I_ENGAGEMENTPROJECTITEM
-description: "This CDS view provides the prerequisites for answering the following business questions: What is the sales order for a customer project?"
+description: "This CDS view provides the prerequisites for answering the following business questions: What is the sales order for a project?"
 app_component: CA-CPD-SS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGAGEMENTPROJECTITEM')/$value
-semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the sales order for a customer project?"
+semantic_en: "This CDS view provides the prerequisites for answering the following business questions: What is the sales order for a project?"
 tags:
   - CA
-  - bo:businesspartner
+  - bo:plant
   - CA-CPD
   - CA-CPD-SS
   - component:CA-CPD-SS
-  - customer
   - interface-view
   - lob:cross_application components
   - order
@@ -24,7 +23,7 @@ tags:
 ---
 # I_ENGAGEMENTPROJECTITEM
 
-**This CDS view provides the prerequisites for answering the following business questions: What is the sales order for a customer project?**
+**This CDS view provides the prerequisites for answering the following business questions: What is the sales order for a project?**
 
 | Property | Value |
 |---|---|

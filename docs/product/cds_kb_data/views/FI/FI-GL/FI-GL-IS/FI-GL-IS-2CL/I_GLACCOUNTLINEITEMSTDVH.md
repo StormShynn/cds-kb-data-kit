@@ -1,17 +1,19 @@
 ---
 name: I_GLACCOUNTLINEITEMSTDVH
-description: "General Ledger Account Line Item"
+description: "This CDS view is designed to provide a value help for G/L account line items. It serves as a dimension in analytics, offering a structured way to access and utilize data related to general ledger line items. The view is intended to be used as a value help provider, facilitating the selection and association of G/L account line items in various business processes. This view provides value help for LedgerGLLineItem. This view should be used for value help purposes only. This CDS view provides the data to answer the following business questions: What are the available G/L account line items for a specific ledger and fiscal year? How can I retrieve the key identifiers for G/L account line items, such as Source Ledger, Company Code, Fiscal Year, Accounting Document, and Ledger? What are the associations between G/L account line items and other financial dimensions like cost centers, profit centers, and controlling areas? How can I access hidden attributes related to G/L account line items for internal processing or reporting purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value
-semantic_en: "General Ledger Account Line Item"
+semantic_en: "This CDS view is designed to provide a value help for G/L account line items. It serves as a dimension in analytics, offering a structured way to access and utilize data related to general ledger line items. The view is intended to be used as a value help provider, facilitating the selection and association of G/L account line items in various business processes. This view provides value help for LedgerGLLineItem. This view should be used for value help purposes only. This CDS view provides the data to answer the following business questions: What are the available G/L account line items for a specific ledger and fiscal year? How can I retrieve the key identifiers for G/L account line items, such as Source Ledger, Company Code, Fiscal Year, Accounting Document, and Ledger? What are the associations between G/L account line items and other financial dimensions like cost centers, profit centers, and controlling areas? How can I access hidden attributes related to G/L account line items for internal processing or reporting purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
   - account
+  - bo:companycode
   - component:FI-GL-IS-2CL
+  - document
   - FI-GL
   - FI-GL-IS
   - FI-GL-IS-2CL
@@ -21,7 +23,7 @@ tags:
 ---
 # I_GLACCOUNTLINEITEMSTDVH
 
-**General Ledger Account Line Item**
+**This CDS view is designed to provide a value help for G/L account line items. It serves as a dimension in analytics, offering a structured way to access and utilize data related to general ledger line items. The view is intended to be used as a value help provider, facilitating the selection and association of G/L account line items in various business processes. This view provides value help for LedgerGLLineItem. This view should be used for value help purposes only. This CDS view provides the data to answer the following business questions: What are the available G/L account line items for a specific ledger and fiscal year? How can I retrieve the key identifiers for G/L account line items, such as Source Ledger, Company Code, Fiscal Year, Accounting Document, and Ledger? What are the associations between G/L account line items and other financial dimensions like cost centers, profit centers, and controlling areas? How can I access hidden attributes related to G/L account line items for internal processing or reporting purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

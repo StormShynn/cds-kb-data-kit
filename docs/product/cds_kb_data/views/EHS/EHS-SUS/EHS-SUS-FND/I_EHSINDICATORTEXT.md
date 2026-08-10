@@ -1,15 +1,16 @@
 ---
 name: I_EHSINDICATORTEXT
-description: "Indicator - Text"
+description: "This CDS view provides you with supported values for indicator fields. You can use it to validate indicator values and retrieve their text descriptions. The view contains the following indicator values and their meanings: Value Meaning X Yes (blank) No To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: EHS-SUS-FND
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSINDICATORTEXT')/$value
-semantic_en: "Indicator - Text"
+semantic_en: "This CDS view provides you with supported values for indicator fields. You can use it to validate indicator values and retrieve their text descriptions. The view contains the following indicator values and their meanings: Value Meaning X Yes (blank) No To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - EHS
+  - bo:companycode
   - component:EHS-SUS-FND
   - EHS-SUS
   - EHS-SUS-FND
@@ -18,7 +19,7 @@ tags:
 ---
 # I_EHSINDICATORTEXT
 
-**Indicator - Text**
+**This CDS view provides you with supported values for indicator fields. You can use it to validate indicator values and retrieve their text descriptions. The view contains the following indicator values and their meanings: Value Meaning X Yes (blank) No To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

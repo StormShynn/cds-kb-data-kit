@@ -1,27 +1,25 @@
 ---
 name: I_ONRRRPTGHISTORYPRADETAILS
-description: "Office of Natural Resources Revenue Reporting History Production Revenue Accounting Details"
+description: "ONRR Reporting History PRA Details"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ONRRRPTGHISTORYPRADETAILS')/$value
-semantic_en: "Office of Natural Resources Revenue Reporting History Production Revenue Accounting Details"
+semantic_en: "ONRR Reporting History PRA Details"
 tags:
   - IS
-  - account
-  - bo:companycode
+  - bo:purchaseorder
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_ONRRRPTGHISTORYPRADETAILS
 
-**Office of Natural Resources Revenue Reporting History Production Revenue Accounting Details**
+**ONRR Reporting History PRA Details**
 
 | Property | Value |
 |---|---|

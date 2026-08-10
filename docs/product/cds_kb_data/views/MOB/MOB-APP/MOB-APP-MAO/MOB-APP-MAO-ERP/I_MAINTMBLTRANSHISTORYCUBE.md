@@ -1,26 +1,26 @@
 ---
 name: I_MAINTMBLTRANSHISTORYCUBE
-description: "Mobile Transaction History - Cube"
+description: "This CDS view provides the data to answer the following business questions: Who creates or updates business objects actively? How many business objects are created by the user? How many business objects are created each day? How many business objects are processed perday? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: MOB-APP-MAO-ERP
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTMBLTRANSHISTORYCUBE')/$value
-semantic_en: "Mobile Transaction History - Cube"
+semantic_en: "This CDS view provides the data to answer the following business questions: Who creates or updates business objects actively? How many business objects are created by the user? How many business objects are created each day? How many business objects are processed perday? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - MOB
+  - bo:companycode
   - component:MOB-APP-MAO-ERP
   - interface-view
   - MOB-APP
   - MOB-APP-MAO
   - MOB-APP-MAO-ERP
-  - transaction
   - metadata-only
 ---
 # I_MAINTMBLTRANSHISTORYCUBE
 
-**Mobile Transaction History - Cube**
+**This CDS view provides the data to answer the following business questions: Who creates or updates business objects actively? How many business objects are created by the user? How many business objects are created each day? How many business objects are processed perday? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

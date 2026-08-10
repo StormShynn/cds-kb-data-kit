@@ -33,5 +33,5 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CustMgmtDateRuleName` |  | |  |  | `CHAR(12)` | Name for Date Rule |
-| `CustMgmtDateRuleUUID` |  | |  |  | `RAW(16)` | ID for Date Rule |
+| `CustMgmtDateRuleName` |  | |  |  | `CHAR(12)` | Date Rule |
+| `CustMgmtDateRuleUUID` |  | |  |  | `RAW(16)` | Date Rule Version ID |

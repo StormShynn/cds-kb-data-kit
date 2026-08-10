@@ -1,27 +1,29 @@
 ---
 name: I_FINANCENOTIFPROCSTEPMESSAGE
-description: "Trigger object for finance notif step"
+description: "This CDS view consolidates finance notification process step messages with their related notification and reference document context, and ties them to company code information. It is designed to act as a situation handling trigger object: exposing the latest message details and severity, the processing status of the finance component and step, and the linkage to the underlying reference document, company code, and posting date so that issues can be detected, monitored, and acted upon. This CDS view provides the data to answer the following business questions: Which finance notification process steps currently have errors, warnings, or informational messages? What is the current processing status of each finance component within a notification? What is the latest log message for a given notification step, including message class, number, severity, and variable texts? Which reference document and event does a notification step relate to (type, display ID, OID, event display ID, logical system)? Which company code and posting date are associated with the notification, and what fiscal year variant applies? Which notification types are involved, enabling filtering or routing by FinanceNotificationType? How can messages be correlated to application logs for deeper diagnostics and troubleshooting? For a given reference document, what are all related finance notification steps and their statuses/messages? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-GL-BTI-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINANCENOTIFPROCSTEPMESSAGE')/$value
-semantic_en: "Trigger object for finance notif step"
+semantic_en: "This CDS view consolidates finance notification process step messages with their related notification and reference document context, and ties them to company code information. It is designed to act as a situation handling trigger object: exposing the latest message details and severity, the processing status of the finance component and step, and the linkage to the underlying reference document, company code, and posting date so that issues can be detected, monitored, and acted upon. This CDS view provides the data to answer the following business questions: Which finance notification process steps currently have errors, warnings, or informational messages? What is the current processing status of each finance component within a notification? What is the latest log message for a given notification step, including message class, number, severity, and variable texts? Which reference document and event does a notification step relate to (type, display ID, OID, event display ID, logical system)? Which company code and posting date are associated with the notification, and what fiscal year variant applies? Which notification types are involved, enabling filtering or routing by FinanceNotificationType? How can messages be correlated to application logs for deeper diagnostics and troubleshooting? For a given reference document, what are all related finance notification steps and their statuses/messages? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
   - bo:companycode
   - component:FI-GL-BTI-2CL
+  - document
   - FI-GL
   - FI-GL-BTI
   - FI-GL-BTI-2CL
   - interface-view
   - lob:finance
+  - notification
   - metadata-only
 ---
 # I_FINANCENOTIFPROCSTEPMESSAGE
 
-**Trigger object for finance notif step**
+**This CDS view consolidates finance notification process step messages with their related notification and reference document context, and ties them to company code information. It is designed to act as a situation handling trigger object: exposing the latest message details and severity, the processing status of the finance component and step, and the linkage to the underlying reference document, company code, and posting date so that issues can be detected, monitored, and acted upon. This CDS view provides the data to answer the following business questions: Which finance notification process steps currently have errors, warnings, or informational messages? What is the current processing status of each finance component within a notification? What is the latest log message for a given notification step, including message class, number, severity, and variable texts? Which reference document and event does a notification step relate to (type, display ID, OID, event display ID, logical system)? Which company code and posting date are associated with the notification, and what fiscal year variant applies? Which notification types are involved, enabling filtering or routing by FinanceNotificationType? How can messages be correlated to application logs for deeper diagnostics and troubleshooting? For a given reference document, what are all related finance notification steps and their statuses/messages? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

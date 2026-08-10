@@ -1,16 +1,19 @@
 ---
 name: I_OPENDISPUTEPROCESSINGTIME
-description: "Open Dispute Processing Time - Cube"
+description: "This CDS view is designed to provide analytical insights into the processing time of open dispute cases within an organization. It aggregates and categorizes data related to dispute cases in SAP Dispute Management, allowing users to analyze the duration and financial impact of disputes over various time intervals. This CDS view provides the data to answer the following business questions: What is the total number of open dispute cases within the organization? How many dispute cases fall into specific processing time intervals (e.g., 1-2 days, 3-5 days, etc.)? What is the total disputed amount in the display currency for each processing time interval? Who are the processors and coordinators responsible for handling these dispute cases? What are the reasons and root causes associated with the open dispute cases? How does the priority and status of dispute cases affect their processing time? What is the distribution of dispute cases across different company codes and customer account groups? How does the processing time of dispute cases correlate with their creation dates? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPENDISPUTEPROCESSINGTIME')/$value
-semantic_en: "Open Dispute Processing Time - Cube"
+semantic_en: "This CDS view is designed to provide analytical insights into the processing time of open dispute cases within an organization. It aggregates and categorizes data related to dispute cases in SAP Dispute Management, allowing users to analyze the duration and financial impact of disputes over various time intervals. This CDS view provides the data to answer the following business questions: What is the total number of open dispute cases within the organization? How many dispute cases fall into specific processing time intervals (e.g., 1-2 days, 3-5 days, etc.)? What is the total disputed amount in the display currency for each processing time interval? Who are the processors and coordinators responsible for handling these dispute cases? What are the reasons and root causes associated with the open dispute cases? How does the priority and status of dispute cases affect their processing time? What is the distribution of dispute cases across different company codes and customer account groups? How does the processing time of dispute cases correlate with their creation dates? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
+  - account
+  - bo:businesspartner
   - component:FIN-FSCM-DM-2CL
+  - customer
   - FIN-FSCM
   - FIN-FSCM-DM
   - FIN-FSCM-DM-2CL
@@ -20,7 +23,7 @@ tags:
 ---
 # I_OPENDISPUTEPROCESSINGTIME
 
-**Open Dispute Processing Time - Cube**
+**This CDS view is designed to provide analytical insights into the processing time of open dispute cases within an organization. It aggregates and categorizes data related to dispute cases in SAP Dispute Management, allowing users to analyze the duration and financial impact of disputes over various time intervals. This CDS view provides the data to answer the following business questions: What is the total number of open dispute cases within the organization? How many dispute cases fall into specific processing time intervals (e.g., 1-2 days, 3-5 days, etc.)? What is the total disputed amount in the display currency for each processing time interval? Who are the processors and coordinators responsible for handling these dispute cases? What are the reasons and root causes associated with the open dispute cases? How does the priority and status of dispute cases affect their processing time? What is the distribution of dispute cases across different company codes and customer account groups? How does the processing time of dispute cases correlate with their creation dates? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

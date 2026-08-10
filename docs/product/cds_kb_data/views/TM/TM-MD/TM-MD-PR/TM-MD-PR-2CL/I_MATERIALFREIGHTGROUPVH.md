@@ -1,15 +1,16 @@
 ---
 name: I_MATERIALFREIGHTGROUPVH
-description: "Material Freight Group"
+description: "This CDS view provides value help for Material Freight Group. This view should be used for value help purposes only. If you intend to select the entire business data, use the CDS view I_MaterialFreightGroup instead."
 app_component: TM-MD-PR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MATERIALFREIGHTGROUPVH')/$value
-semantic_en: "Material Freight Group"
+semantic_en: "This CDS view provides value help for Material Freight Group. This view should be used for value help purposes only. If you intend to select the entire business data, use the CDS view I_MaterialFreightGroup instead."
 tags:
   - TM
+  - bo:purchaseorder
   - component:TM-MD-PR-2CL
   - interface-view
   - material
@@ -20,7 +21,7 @@ tags:
 ---
 # I_MATERIALFREIGHTGROUPVH
 
-**Material Freight Group**
+**This CDS view provides value help for Material Freight Group. This view should be used for value help purposes only. If you intend to select the entire business data, use the CDS view I_MaterialFreightGroup instead.**
 
 | Property | Value |
 |---|---|

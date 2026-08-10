@@ -1,15 +1,16 @@
 ---
 name: I_LEDGERCOMPANYCODECRCYROLEVH
-description: "Currency Roles for Ledger"
+description: "This CDS view is designed to provide a comprehensive overview of currency roles associated with ledgers and company codes. It serves as a value help provider, offering detailed information about various currency roles and their corresponding currencies within a company's financial structure. This CDS view provides the data to answer the following business questions: What are the currency roles defined for a specific ledger and company code? What are the names and types of currencies associated with each currency role for a company code? How can I retrieve the global currency role and its associated currency for a company code? What are the free-defined currency roles and their corresponding currencies for a company code? How is the functional currency role defined for a company code, and what currency is associated with it? This view provides value help for CompanyCode. This view should be used for value help purposes only. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LEDGERCOMPANYCODECRCYROLEVH')/$value
-semantic_en: "Currency Roles for Ledger"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of currency roles associated with ledgers and company codes. It serves as a value help provider, offering detailed information about various currency roles and their corresponding currencies within a company's financial structure. This CDS view provides the data to answer the following business questions: What are the currency roles defined for a specific ledger and company code? What are the names and types of currencies associated with each currency role for a company code? How can I retrieve the global currency role and its associated currency for a company code? What are the free-defined currency roles and their corresponding currencies for a company code? How is the functional currency role defined for a company code, and what currency is associated with it? This view provides value help for CompanyCode. This view should be used for value help purposes only. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
+  - bo:companycode
   - component:FI-GL-GL-A-2CL
   - FI-GL
   - FI-GL-GL
@@ -21,7 +22,7 @@ tags:
 ---
 # I_LEDGERCOMPANYCODECRCYROLEVH
 
-**Currency Roles for Ledger**
+**This CDS view is designed to provide a comprehensive overview of currency roles associated with ledgers and company codes. It serves as a value help provider, offering detailed information about various currency roles and their corresponding currencies within a company's financial structure. This CDS view provides the data to answer the following business questions: What are the currency roles defined for a specific ledger and company code? What are the names and types of currencies associated with each currency role for a company code? How can I retrieve the global currency role and its associated currency for a company code? What are the free-defined currency roles and their corresponding currencies for a company code? How is the functional currency role defined for a company code, and what currency is associated with it? This view provides value help for CompanyCode. This view should be used for value help purposes only. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

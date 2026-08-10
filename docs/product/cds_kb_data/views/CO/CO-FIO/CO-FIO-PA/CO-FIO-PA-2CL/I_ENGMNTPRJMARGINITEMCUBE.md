@@ -1,33 +1,40 @@
 ---
 name: I_ENGMNTPRJMARGINITEMCUBE
-description: "Engagement Project Margin Items - Cube"
+description: "This CDS view is designed to provide a comprehensive analytical cube for engagement project margin items. It aggregates and organizes data related to financial and project management aspects, enabling detailed analysis of project margins, financial transactions, and associated business entities. This CDS view provides the data to answer the following business questions: What are the margins associated with specific engagement projects? How do financial transactions impact the margins of engagement projects? Which business partners are managing the projects, and what are their roles? What are the fiscal details (year, period) associated with the project margins? How do different service contracts and solutions orders contribute to project margins? What is the distribution of project margins across different profit centers and sales organizations? How do various accounting documents and ledger items relate to project margins? What are the quantities and amounts in different currencies and units of measure for project margin items? How do customer and supplier details influence project margins? What is the impact of different cost centers and functional areas on project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPRJMARGINITEMCUBE')/$value
-semantic_en: "Engagement Project Margin Items - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive analytical cube for engagement project margin items. It aggregates and organizes data related to financial and project management aspects, enabling detailed analysis of project margins, financial transactions, and associated business entities. This CDS view provides the data to answer the following business questions: What are the margins associated with specific engagement projects? How do financial transactions impact the margins of engagement projects? Which business partners are managing the projects, and what are their roles? What are the fiscal details (year, period) associated with the project margins? How do different service contracts and solutions orders contribute to project margins? What is the distribution of project margins across different profit centers and sales organizations? How do various accounting documents and ledger items relate to project margins? What are the quantities and amounts in different currencies and units of measure for project margin items? How do customer and supplier details influence project margins? What is the impact of different cost centers and functional areas on project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "Engagement Project Margin Items - Cube"
   - "Engagement Project Margin Items - Cube"
   - "Engagement Project Margin Items - Cube"
 tags:
   - CO
-  - bo:project
+  - account
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - contract
+  - customer
+  - document
   - interface-view
   - lob:controlling
   - lob:finance
+  - order
   - project
+  - supplier
+  - transaction
   - metadata-only
 ---
 # I_ENGMNTPRJMARGINITEMCUBE
 
-**Engagement Project Margin Items - Cube**
+**This CDS view is designed to provide a comprehensive analytical cube for engagement project margin items. It aggregates and organizes data related to financial and project management aspects, enabling detailed analysis of project margins, financial transactions, and associated business entities. This CDS view provides the data to answer the following business questions: What are the margins associated with specific engagement projects? How do financial transactions impact the margins of engagement projects? Which business partners are managing the projects, and what are their roles? What are the fiscal details (year, period) associated with the project margins? How do different service contracts and solutions orders contribute to project margins? What is the distribution of project margins across different profit centers and sales organizations? How do various accounting documents and ledger items relate to project margins? What are the quantities and amounts in different currencies and units of measure for project margin items? How do customer and supplier details influence project margins? What is the impact of different cost centers and functional areas on project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

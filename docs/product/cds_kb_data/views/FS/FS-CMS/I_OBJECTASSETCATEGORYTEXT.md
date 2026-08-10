@@ -33,4 +33,4 @@ tags:
 |---|---|---|---|---|---|---|
 | `ObjectAssetCategory` |  | |  |  | `CHAR(6)` | Asset Category Identification No |
 | `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
-| `ObjectAssetCategoryText` |  | |  |  | `CHAR(40)` | Asset Category Name in a Specified Language |
+| `ObjectAssetCategoryText` |  | |  |  | `CHAR(40)` |  Asset Category Name in a Specified Language |

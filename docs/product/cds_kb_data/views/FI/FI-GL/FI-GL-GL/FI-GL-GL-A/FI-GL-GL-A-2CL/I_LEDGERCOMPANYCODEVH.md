@@ -1,15 +1,17 @@
 ---
 name: I_LEDGERCOMPANYCODEVH
-description: "Company Codes for Ledger"
+description: "This CDS view is designed to provide a comprehensive value help for company codes associated with specific ledgers. It combines information from ledger roles and company code details to facilitate easy access and searchability for end users. The view is optimized for use in applications where users need to select or search for company codes based on ledger information, ensuring efficient data retrieval and usability. This view should be used for value help purposes only This CDS view provides the data to answer the following business questions: Which company codes are associated with a specific ledger? What are the details of a company code, such as its name, controlling area, chart of accounts, city, and currency? How can users efficiently search for company codes using fuzzy search capabilities? What fiscal year variant is associated with a particular company code and ledger combination? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_LEDGERCOMPANYCODEVH')/$value
-semantic_en: "Company Codes for Ledger"
+semantic_en: "This CDS view is designed to provide a comprehensive value help for company codes associated with specific ledgers. It combines information from ledger roles and company code details to facilitate easy access and searchability for end users. The view is optimized for use in applications where users need to select or search for company codes based on ledger information, ensuring efficient data retrieval and usability. This view should be used for value help purposes only This CDS view provides the data to answer the following business questions: Which company codes are associated with a specific ledger? What are the details of a company code, such as its name, controlling area, chart of accounts, city, and currency? How can users efficiently search for company codes using fuzzy search capabilities? What fiscal year variant is associated with a particular company code and ledger combination? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
+  - account
+  - bo:companycode
   - component:FI-GL-GL-A-2CL
   - FI-GL
   - FI-GL-GL
@@ -21,7 +23,7 @@ tags:
 ---
 # I_LEDGERCOMPANYCODEVH
 
-**Company Codes for Ledger**
+**This CDS view is designed to provide a comprehensive value help for company codes associated with specific ledgers. It combines information from ledger roles and company code details to facilitate easy access and searchability for end users. The view is optimized for use in applications where users need to select or search for company codes based on ledger information, ensuring efficient data retrieval and usability. This view should be used for value help purposes only This CDS view provides the data to answer the following business questions: Which company codes are associated with a specific ledger? What are the details of a company code, such as its name, controlling area, chart of accounts, city, and currency? How can users efficiently search for company codes using fuzzy search capabilities? What fiscal year variant is associated with a particular company code and ledger combination? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

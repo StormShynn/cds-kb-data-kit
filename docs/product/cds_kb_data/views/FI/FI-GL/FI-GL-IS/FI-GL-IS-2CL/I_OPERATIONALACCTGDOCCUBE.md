@@ -1,26 +1,33 @@
 ---
 name: I_OPERATIONALACCTGDOCCUBE
-description: "Operational Journal Entry Item - Cube"
+description: "This CDS view is designed to provide a comprehensive analytical cube for operational journal entry items. It aggregates and organizes financial data from various accounting documents, allowing for detailed analysis and reporting. The view includes associations with multiple related entities to enrich the data with additional context, such as business transaction types, financial management areas, and ledger information. This CDS view provides the data to answer the following business questions: What are the detailed financial transactions recorded in the operational accounting documents? How can we analyze financial data across different currencies and units of measure? What is the status of clearing and reconciliation for specific accounting documents? What are the tax implications and calculations associated with specific journal entries? How can we track and report on financial transactions by various dimensions such as company code, cost center, profit center, and segment? How can we assess the impact of financial transactions on cash flow and payment processes? What are the relationships between different financial entities, such as customers, suppliers, and business areas, in the context of journal entries? How can we evaluate the financial performance and position of the organization using aggregated financial data? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPERATIONALACCTGDOCCUBE')/$value
-semantic_en: "Operational Journal Entry Item - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive analytical cube for operational journal entry items. It aggregates and organizes financial data from various accounting documents, allowing for detailed analysis and reporting. The view includes associations with multiple related entities to enrich the data with additional context, such as business transaction types, financial management areas, and ledger information. This CDS view provides the data to answer the following business questions: What are the detailed financial transactions recorded in the operational accounting documents? How can we analyze financial data across different currencies and units of measure? What is the status of clearing and reconciliation for specific accounting documents? What are the tax implications and calculations associated with specific journal entries? How can we track and report on financial transactions by various dimensions such as company code, cost center, profit center, and segment? How can we assess the impact of financial transactions on cash flow and payment processes? What are the relationships between different financial entities, such as customers, suppliers, and business areas, in the context of journal entries? How can we evaluate the financial performance and position of the organization using aggregated financial data? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
+  - account
+  - bo:businesspartner
   - component:FI-GL-IS-2CL
+  - customer
+  - document
   - FI-GL
   - FI-GL-IS
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
+  - payment
+  - supplier
+  - transaction
   - metadata-only
 ---
 # I_OPERATIONALACCTGDOCCUBE
 
-**Operational Journal Entry Item - Cube**
+**This CDS view is designed to provide a comprehensive analytical cube for operational journal entry items. It aggregates and organizes financial data from various accounting documents, allowing for detailed analysis and reporting. The view includes associations with multiple related entities to enrich the data with additional context, such as business transaction types, financial management areas, and ledger information. This CDS view provides the data to answer the following business questions: What are the detailed financial transactions recorded in the operational accounting documents? How can we analyze financial data across different currencies and units of measure? What is the status of clearing and reconciliation for specific accounting documents? What are the tax implications and calculations associated with specific journal entries? How can we track and report on financial transactions by various dimensions such as company code, cost center, profit center, and segment? How can we assess the impact of financial transactions on cash flow and payment processes? What are the relationships between different financial entities, such as customers, suppliers, and business areas, in the context of journal entries? How can we evaluate the financial performance and position of the organization using aggregated financial data? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -128,7 +135,7 @@ tags:
 | `InvoiceList` |  | |  |  | `NUMC(8)` | Invoice List |
 | `BillOfExchangeUsage` |  | |  |  | `CHAR(1)` | Bill of Exchange Usage Type |
 | `DunningKey` |  | |  |  | `CHAR(1)` | Dunning Key |
-| `DunningBlockingReason` |  | |  |  | `CHAR(1)` | Dunning Blocking Reason |
+| `DunningBlockingReason` |  | |  |  | `CHAR(1)` | Dunning Block Reason |
 | `LastDunningDate` |  | |  |  | `DATS(8)` | Date of Last Dunning Notice |
 | `DunningLevel` |  | |  |  | `NUMC(1)` | Dunning Level |
 | `DunningArea` |  | |  |  | `CHAR(2)` | Dunning Area |

@@ -1,28 +1,32 @@
 ---
 name: I_GVOAGRPJRNLITEMC
-description: "GVOA - Cube"
+description: "Use this CDS view to extend the Group View on Accounting review booklet. This CDS view provides the data to answer the following business questions: What are the consolidated financial results for a specific fiscal year and period? How do financial results vary across different consolidation units and groups? What are the amounts in transaction, local, and group currencies for specific financial statement items? How do different business transaction types impact the consolidated financial statements? What is the impact of currency conversion differences on the consolidated financial results? How do specific consolidation document types and posting levels affect the financial consolidation process? What are the quantities and amounts associated with specific financial transactions in base units? How do industry-specific fields, such as those for financial services or public sector, influence the financial consolidation outcomes? What is the relationship between various financial dimensions, such as cost centers, profit centers, and segments, in the context of consolidation? How do partner units and intercompany transactions affect the overall consolidation results? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-CS-EA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GVOAGRPJRNLITEMC')/$value
-semantic_en: "GVOA - Cube"
+semantic_en: "Use this CDS view to extend the Group View on Accounting review booklet. This CDS view provides the data to answer the following business questions: What are the consolidated financial results for a specific fiscal year and period? How do financial results vary across different consolidation units and groups? What are the amounts in transaction, local, and group currencies for specific financial statement items? How do different business transaction types impact the consolidated financial statements? What is the impact of currency conversion differences on the consolidated financial results? How do specific consolidation document types and posting levels affect the financial consolidation process? What are the quantities and amounts associated with specific financial transactions in base units? How do industry-specific fields, such as those for financial services or public sector, influence the financial consolidation outcomes? What is the relationship between various financial dimensions, such as cost centers, profit centers, and segments, in the context of consolidation? How do partner units and intercompany transactions affect the overall consolidation results? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "GVOA - Cube"
 tags:
   - FIN
+  - account
+  - bo:companycode
   - component:FIN-CS-EA-2CL
+  - document
   - FIN-CS
   - FIN-CS-EA
   - FIN-CS-EA-2CL
   - interface-view
   - lob:finance
+  - transaction
   - metadata-only
 ---
 # I_GVOAGRPJRNLITEMC
 
-**GVOA - Cube**
+**Use this CDS view to extend the Group View on Accounting review booklet. This CDS view provides the data to answer the following business questions: What are the consolidated financial results for a specific fiscal year and period? How do financial results vary across different consolidation units and groups? What are the amounts in transaction, local, and group currencies for specific financial statement items? How do different business transaction types impact the consolidated financial statements? What is the impact of currency conversion differences on the consolidated financial results? How do specific consolidation document types and posting levels affect the financial consolidation process? What are the quantities and amounts associated with specific financial transactions in base units? How do industry-specific fields, such as those for financial services or public sector, influence the financial consolidation outcomes? What is the relationship between various financial dimensions, such as cost centers, profit centers, and segments, in the context of consolidation? How do partner units and intercompany transactions affect the overall consolidation results? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

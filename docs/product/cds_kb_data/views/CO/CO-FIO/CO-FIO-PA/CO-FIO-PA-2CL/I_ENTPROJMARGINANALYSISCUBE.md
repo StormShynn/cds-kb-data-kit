@@ -1,29 +1,38 @@
 ---
 name: I_ENTPROJMARGINANALYSISCUBE
-description: "Enterprise Project - Cube"
+description: "This CDS view is designed to provide a comprehensive analysis of enterprise project margins by integrating various financial and project-related data. It serves as an analytical cube that aggregates and associates data from multiple sources, enabling detailed margin analysis for enterprise projects. This CDS view provides the data to answer the following business questions: What are the financial margins for specific enterprise projects? How do different projects perform financially across various fiscal years and company codes? What is the impact of different sales documents and items on project margins? How do different organizational units, such as profit centers and cost centers, contribute to project margins? What are the variations in project costs and revenues in different currencies and units of measure? How do different customer and supplier relationships affect project financials? What is the role of specific products and services in the overall project margin analysis? How do different accounting documents and ledger entries relate to project financial performance? What is the effect of different project statuses and profiles on financial outcomes? How do different sales organizations and distribution channels impact project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPROJMARGINANALYSISCUBE')/$value
-semantic_en: "Enterprise Project - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive analysis of enterprise project margins by integrating various financial and project-related data. It serves as an analytical cube that aggregates and associates data from multiple sources, enabling detailed margin analysis for enterprise projects. This CDS view provides the data to answer the following business questions: What are the financial margins for specific enterprise projects? How do different projects perform financially across various fiscal years and company codes? What is the impact of different sales documents and items on project margins? How do different organizational units, such as profit centers and cost centers, contribute to project margins? What are the variations in project costs and revenues in different currencies and units of measure? How do different customer and supplier relationships affect project financials? What is the role of specific products and services in the overall project margin analysis? How do different accounting documents and ledger entries relate to project financial performance? What is the effect of different project statuses and profiles on financial outcomes? How do different sales organizations and distribution channels impact project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+keywords:
+  - "Enterprise Project - Cube"
+  - "Enterprise Project - Cube"
+  - "Enterprise Project - Cube"
 tags:
   - CO
-  - bo:project
+  - account
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - customer
+  - document
   - interface-view
   - lob:controlling
   - lob:finance
+  - product
   - project
+  - supplier
   - metadata-only
 ---
 # I_ENTPROJMARGINANALYSISCUBE
 
-**Enterprise Project - Cube**
+**This CDS view is designed to provide a comprehensive analysis of enterprise project margins by integrating various financial and project-related data. It serves as an analytical cube that aggregates and associates data from multiple sources, enabling detailed margin analysis for enterprise projects. This CDS view provides the data to answer the following business questions: What are the financial margins for specific enterprise projects? How do different projects perform financially across various fiscal years and company codes? What is the impact of different sales documents and items on project margins? How do different organizational units, such as profit centers and cost centers, contribute to project margins? What are the variations in project costs and revenues in different currencies and units of measure? How do different customer and supplier relationships affect project financials? What is the role of specific products and services in the overall project margin analysis? How do different accounting documents and ledger entries relate to project financial performance? What is the effect of different project statuses and profiles on financial outcomes? How do different sales organizations and distribution channels impact project margins? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -113,3 +122,5 @@ tags:
 | `LotSizeVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Lot Size Variance Amount in Display Currency |
 | `InptRmngVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Remaining Variance Amount in Display Currency |
 | `WBSIsStatisticalWBSElement` |  | |  |  | `CHAR(1)` | Indicator: WBS Element is Statistical Account Assignment |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `SubLedgerAcctLineItemType` |  | |  |  | `NUMC(5)` | Subledger-Specific Line Item Type |

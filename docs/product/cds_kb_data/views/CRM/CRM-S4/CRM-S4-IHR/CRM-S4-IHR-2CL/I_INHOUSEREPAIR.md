@@ -8,6 +8,8 @@ system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INHOUSEREPAIR')/$value
 semantic_en: "In-House Service"
+keywords:
+  - "In-House Service"
 tags:
   - CRM
   - component:CRM-S4-IHR-2CL
@@ -61,3 +63,4 @@ tags:
 | `Division` |  | |  |  | `CHAR(2)` | Division |
 | `ReferenceCustomerReturn` |  | |  |  | `CHAR(10)` | Sales and Distribution Document Number |
 | `RefRetsMgmtProcess` |  | |  |  | `CHAR(10)` | Process Identification Number |
+| `InhouseRepairRejectionReason` |  | |  |  | `CHAR(2)` | Cancellation Reason Code |

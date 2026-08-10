@@ -1,18 +1,20 @@
 ---
 name: I_EWM_WHSEDOCUMENTITEM
-description: "Warehouse Document Item"
+description: "This CDS view provides a comprehensive and harmonized representation of warehouse document item data in Warehouse Management. You can use this view to extract and analyze detailed warehouse item information, track movements, and support operational warehouse processes. This CDS view provides the data to answer the following business questions: Which products, batches, or handling units are included in a specific warehouse document item? What are the source and destination warehouse bins, types, and sections for each warehouse document item? Who created or confirmed the warehouse document item and when did these actions occur? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: SCM-EWM-WOP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_WHSEDOCUMENTITEM')/$value
-semantic_en: "Warehouse Document Item"
+semantic_en: "This CDS view provides a comprehensive and harmonized representation of warehouse document item data in Warehouse Management. You can use this view to extract and analyze detailed warehouse item information, track movements, and support operational warehouse processes. This CDS view provides the data to answer the following business questions: Which products, batches, or handling units are included in a specific warehouse document item? What are the source and destination warehouse bins, types, and sections for each warehouse document item? Who created or confirmed the warehouse document item and when did these actions occur? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - SCM
+  - bo:companycode
   - component:SCM-EWM-WOP-2CL
   - document
   - interface-view
+  - product
   - SCM-EWM
   - SCM-EWM-WOP
   - SCM-EWM-WOP-2CL
@@ -20,7 +22,7 @@ tags:
 ---
 # I_EWM_WHSEDOCUMENTITEM
 
-**Warehouse Document Item**
+**This CDS view provides a comprehensive and harmonized representation of warehouse document item data in Warehouse Management. You can use this view to extract and analyze detailed warehouse item information, track movements, and support operational warehouse processes. This CDS view provides the data to answer the following business questions: Which products, batches, or handling units are included in a specific warehouse document item? What are the source and destination warehouse bins, types, and sections for each warehouse document item? Who created or confirmed the warehouse document item and when did these actions occur? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -46,9 +48,9 @@ tags:
 | `Batch` |  | |  |  | `CHAR(10)` | Batch |
 | `EWMStockType` |  | |  |  | `CHAR(2)` | Stock Type |
 | `StockDocumentCategory` |  | |  |  | `CHAR(3)` | Special Reference Stock Type |
-| `StockDocumentNumber` |  | |  |  | `CHAR(35)` | Sales Order/Project |
+| `StockDocumentNumber` |  | |  |  | `CHAR(35)` | Stock Reference Document of a Sales Order or Project Stock |
 | `StockItemNumber` |  | |  |  | `NUMC(10)` | Sales Order Item for Sales Order Stock |
-| `ExternalStockDocumentNumber` |  | |  |  | `CHAR(35)` | Sales Order/Project |
+| `ExternalStockDocumentNumber` |  | |  |  | `CHAR(35)` | Stock Reference Document of a Sales Order or Project Stock |
 | `EWMStockUsage` |  | |  |  | `CHAR(1)` | Stock Usage |
 | `EWMStockOwner` |  | |  |  | `CHAR(10)` | Stock Owner |
 | `EWMStockOwnerName` |  | |  |  | `CHAR(81)` |  |
