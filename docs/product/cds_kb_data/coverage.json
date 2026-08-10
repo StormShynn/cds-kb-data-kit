@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-09T06:39:20.264Z",
+  "generatedAt": "2026-08-10T07:11:53.480Z",
   "hubContainer": "SAPS4HANACloud",
   "hubTotal": 8864,
-  "localTotal": 10616,
+  "localTotal": 10617,
   "matchedTotal": 8822,
   "missingTotal": 42,
   "metadataOnlyTotal": 2808,
   "fullTotal": 6014,
-  "extraTotal": 1794,
+  "extraTotal": 1795,
   "rows": [
     {
       "name": "_DCO_I_ACCOUNT",
@@ -134772,6 +134772,12 @@
     {
       "name": "ZSAT_P_CLASS.DDLS",
       "description": "\"ABAP OO Class/Interface\"",
+      "appComponent": "",
+      "releaseState": "unverified"
+    },
+    {
+      "name": "ZSCV_DDICVIEW.DDLS",
+      "description": "\"DDic View\"",
       "appComponent": "",
       "releaseState": "unverified"
     },
