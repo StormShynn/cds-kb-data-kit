@@ -45,7 +45,8 @@ db.exec(`
     bo TEXT,
     appComponent TEXT,
     synonyms TEXT,
-    usageCount INTEGER DEFAULT 0
+    usageCount INTEGER DEFAULT 0,
+    releaseState TEXT DEFAULT 'released'
   );
   CREATE INDEX idx_views_module ON views(module);
   CREATE INDEX idx_views_lob ON views(lob);
@@ -61,8 +62,8 @@ db.exec(`
 `);
 
 const insertView = db.prepare(`
-  INSERT INTO views (id, name, path, description, semanticDescription, module, lob, bo, appComponent, synonyms, usageCount)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  INSERT INTO views (id, name, path, description, semanticDescription, module, lob, bo, appComponent, synonyms, usageCount, releaseState)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 const insertFts = db.prepare(`
   INSERT INTO views_fts (rowid, name, semanticDescription, description, synonyms, appComponent)
@@ -76,7 +77,7 @@ for (const r of rows) {
   insertView.run(
     id, r.name, r.path, r.description || '', r.semanticDescription || '',
     r.module || '', r.lob || '', r.bo || '', r.appComponent || '',
-    r.synonyms || '', r.usageCount || 0,
+    r.synonyms || '', r.usageCount || 0, r.releaseState || 'released',
   );
   insertFts.run(id, r.name, r.semanticDescription || '', r.description || '', r.synonyms || '', r.appComponent || '');
 }

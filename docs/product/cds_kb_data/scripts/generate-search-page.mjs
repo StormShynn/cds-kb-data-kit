@@ -75,6 +75,7 @@ function renderHtml(embeddedIndexJson, miniSearchSrc, stats) {
     --gridline: #2c2c2a;
     --border: rgba(255,255,255,0.10);
     --status-good: #0ca30c;
+    --status-warn: #d9a72c;
     --accent: #4c9eff;
   }
   * { box-sizing: border-box; }
@@ -113,6 +114,8 @@ function renderHtml(embeddedIndexJson, miniSearchSrc, stats) {
   .desc { color: var(--text-secondary); flex-basis: 100%; }
   .tag { color: var(--text-muted); font-size: 11px; }
   .score { color: var(--text-muted); font-size: 11px; font-family: ui-monospace, monospace; }
+  .badge { font-size: 10px; border: 1px solid; border-radius: 4px; padding: 1px 5px; font-weight: 600; }
+  .badge.unverified { color: var(--status-warn); border-color: var(--status-warn); }
   .empty { color: var(--text-muted); font-size: 13px; padding: 20px 0; }
   .stats { color: var(--text-muted); font-size: 12px; margin-top: 32px; border-top: 1px solid var(--gridline); padding-top: 16px; }
 </style>
@@ -174,7 +177,9 @@ ${miniSearchSrc}
     const nameHtml = link
       ? '<a href="' + escapeHtml(link) + '" target="_blank" rel="noopener">' + escapeHtml(r.name) + '</a>'
       : '<span style="font-family:ui-monospace,monospace;font-weight:600">' + escapeHtml(r.name) + '</span>';
+    const unverified = r.releaseState === 'unverified';
     return '<div class="row">' + nameHtml +
+      (unverified ? ' <span class="badge unverified" title="Community-sourced Z/Y-namespace view — not confirmed to exist in any real SAP system">unverified</span>' : '') +
       ' <span class="tag">' + escapeHtml(r.appComponent || r.module || '-') + '</span>' +
       ' <span class="score">score ' + r.score.toFixed(1) + '</span>' +
       (desc ? '<span class="desc">' + escapeHtml(desc) + '</span>' : '') +
@@ -190,7 +195,12 @@ ${miniSearchSrc}
       (!mod || (r.module || '').toUpperCase() === mod.toUpperCase()) &&
       (!lob || (r.lob || '').toLowerCase() === lob.toLowerCase());
 
-    const hits = mini.search(query, { boost: BOOST, prefix: true, fuzzy: 0.2, filter }).slice(0, 50);
+    // Released (confirmed SAP-delivered) views rank ahead of unverified
+    // community-sourced ones regardless of text-match score — an unverified
+    // hit isn't something you can rely on existing in a real SAP system, so
+    // it should never outrank an equally-relevant released view.
+    const boostDocument = (id, term, storedFields) => storedFields.releaseState === 'unverified' ? 0.15 : 1;
+    const hits = mini.search(query, { boost: BOOST, boostDocument, prefix: true, fuzzy: 0.2, filter }).slice(0, 50);
     if (hits.length === 0) {
       results.innerHTML = '<div class="empty">No CDS views matched "' + escapeHtml(query) + '". Try broader terms or clear the filters.</div>';
       return;

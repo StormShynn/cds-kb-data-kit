@@ -45,6 +45,11 @@ if (!options.storeFields.includes('synonyms')) options.storeFields.push('synonym
 // ever read back via storedFields, for cds-kb-mcp-kit's boostDocument to
 // rank popular views higher in search_cds results.
 if (!options.storeFields.includes('usageCount')) options.storeFields.push('usageCount');
+// releaseState: same deal — read back via storedFields so search ranking
+// can push "released" (confirmed SAP-delivered) views ahead of "unverified"
+// ones (community-sourced Z/Y-namespace DDL under views/_UNVERIFIED/ with
+// no confirmation they exist in any real SAP system).
+if (!options.storeFields.includes('releaseState')) options.storeFields.push('releaseState');
 
 let taxonomy = null;
 try {
@@ -127,6 +132,7 @@ for (let i = 0; i < viewFiles.length; i++) {
   const bo = (tags.find((t) => t.startsWith('bo:')) || '').slice(3);
   const appComponent = scalar(fm, 'app_component');
   const module = appComponent ? appComponent.split('-')[0] : '';
+  const releaseState = scalar(fm, 'release_state') || 'released';
 
   // field-index.json: FIELD_NAME -> which views expose it, so a lookup like
   // "which views have a material code field" resolves straight to a
@@ -158,7 +164,7 @@ for (let i = 0; i < viewFiles.length; i++) {
           const rawName = bareMatch || (castMatch && BARE_IDENTIFIER_RE.test(castMatch) ? castMatch : null);
           if (rawName && rawName.toUpperCase() !== fieldName.toUpperCase()) {
             const rawKey = rawName.toUpperCase();
-            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo });
+            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState });
           }
         }
       } else {
@@ -169,7 +175,7 @@ for (let i = 0; i < viewFiles.length; i++) {
       }
       if (!fieldName) continue;
       const key = fieldName.toUpperCase();
-      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo });
+      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState });
     }
   }
 
@@ -180,13 +186,13 @@ for (let i = 0; i < viewFiles.length; i++) {
   const sourceTable = extractSourceTable(content);
   if (sourceTable) {
     const key = sourceTable.toUpperCase();
-    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo });
+    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState });
   }
   if (assocTable) {
     for (const [alias, targetView] of assocTable.rows) {
       if (!targetView) continue;
       const key = targetView.toUpperCase();
-      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo });
+      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState });
     }
   }
 
@@ -223,6 +229,7 @@ for (let i = 0; i < viewFiles.length; i++) {
     lob,
     bo,
     usageCount: usageCounts[name] || 0,
+    releaseState,
   });
 }
 
