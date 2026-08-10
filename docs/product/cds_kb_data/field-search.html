@@ -99,12 +99,21 @@
       : '';
   }
 
-  // Released (confirmed SAP-delivered) views list ahead of unverified
-  // community-sourced ones for the same field/table/column — an unverified
-  // match isn't something you can rely on existing in a real SAP system.
+  // Ranking for same-field/table/column matches, most-useful first:
+  //   0. released + I_ prefix   — the canonical SAP Interface view for the
+  //      entity (e.g. I_PRODUCT for MATNR) — what most lookups actually want.
+  //   1. released, any other prefix (C_, D_, R_, P_, ...) — plain
+  //      alphabetical sort otherwise put these ahead of I_ views half the
+  //      time purely because their prefix letter sorts earlier (confirmed
+  //      for MATNR: 76 D_ views before the first I_ view).
+  //   2. unverified — community-sourced Z/Y-namespace, not confirmed to
+  //      exist in any real SAP system.
+  function rankOf(view) {
+    if ((DATA.M[view] || [])[1] === 'unverified') return 2;
+    return view.startsWith('I_') ? 0 : 1;
+  }
   function byReleaseState(entries) {
-    const rsOf = (view) => ((DATA.M[view] || [])[1] === 'unverified' ? 1 : 0);
-    return [...entries].sort((a, b) => rsOf(a[0]) - rsOf(b[0]));
+    return [...entries].sort((a, b) => rankOf(a[0]) - rankOf(b[0]));
   }
 
   function fieldRow([view, isKey]) {
