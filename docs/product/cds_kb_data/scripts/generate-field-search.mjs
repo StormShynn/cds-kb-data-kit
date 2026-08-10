@@ -239,7 +239,7 @@ function renderHtml(embeddedJson, stats) {
 
   function abstractBadge(view) {
     return (DATA.M[view] || [])[2]
-      ? ' <span class="badge abstract" title="define abstract entity — an action-parameter/data structure, no runtime entity set to query even though it\'s released">structure, not a view</span>'
+      ? ' <span class="badge abstract" title="define abstract entity — an action-parameter/data structure, no runtime entity set to query regardless of release state">structure, not a view</span>'
       : '';
   }
 
