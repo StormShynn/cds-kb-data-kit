@@ -118,6 +118,20 @@ function extractSourceTable(content) {
   return sm ? sm[1] : '';
 }
 
+// "define abstract entity" (action-parameter/data structures, e.g.
+// D_BillOfMaterialCompareBOMP's "Parameters for BOM Comparison") have no
+// runtime entity set — nothing to query by field, even when released — but
+// still contain real fields (including renamed DDIC columns like matnr), so
+// they otherwise surface in field/table/raw-column lookups indistinguishably
+// from an actual queryable view. Flagged here so those lookups can rank them
+// last instead of alongside real "define view entity" results.
+function isAbstractEntity(content) {
+  const m = content.match(DDL_BLOCK_RE);
+  if (!m) return false;
+  const ddl = m[1];
+  return /define\s+abstract\s+entity/i.test(ddl) || /modelingPattern\s*:\s*#DATA_STRUCTURE/i.test(ddl);
+}
+
 for (let i = 0; i < viewFiles.length; i++) {
   const { name, relPath } = viewFiles[i];
   const content = await fs.readFile(path.join(viewsDir, ...relPath.split('/')), 'utf-8');
@@ -133,6 +147,7 @@ for (let i = 0; i < viewFiles.length; i++) {
   const appComponent = scalar(fm, 'app_component');
   const module = appComponent ? appComponent.split('-')[0] : '';
   const releaseState = scalar(fm, 'release_state') || 'released';
+  const isAbstract = isAbstractEntity(content);
 
   // field-index.json: FIELD_NAME -> which views expose it, so a lookup like
   // "which views have a material code field" resolves straight to a
@@ -164,7 +179,7 @@ for (let i = 0; i < viewFiles.length; i++) {
           const rawName = bareMatch || (castMatch && BARE_IDENTIFIER_RE.test(castMatch) ? castMatch : null);
           if (rawName && rawName.toUpperCase() !== fieldName.toUpperCase()) {
             const rawKey = rawName.toUpperCase();
-            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState });
+            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState, isAbstract });
           }
         }
       } else {
@@ -175,7 +190,7 @@ for (let i = 0; i < viewFiles.length; i++) {
       }
       if (!fieldName) continue;
       const key = fieldName.toUpperCase();
-      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState });
+      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState, isAbstract });
     }
   }
 
@@ -186,13 +201,13 @@ for (let i = 0; i < viewFiles.length; i++) {
   const sourceTable = extractSourceTable(content);
   if (sourceTable) {
     const key = sourceTable.toUpperCase();
-    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState });
+    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState, isAbstract });
   }
   if (assocTable) {
     for (const [alias, targetView] of assocTable.rows) {
       if (!targetView) continue;
       const key = targetView.toUpperCase();
-      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState });
+      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState, isAbstract });
     }
   }
 

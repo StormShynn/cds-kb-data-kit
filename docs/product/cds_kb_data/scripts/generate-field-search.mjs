@@ -62,23 +62,27 @@ async function main() {
   // raw indices repeat appComponent/lob/bo on every entry, which is fine for
   // a server-side reverse lookup but would multiply the embedded page size
   // by the average fan-out (a view exposes dozens of fields).
-  // Per view: [appComponent, releaseState] — same one-per-view dedup as
-  // before, just carrying one more field so the page can rank "released"
-  // (confirmed SAP-delivered) views ahead of "unverified" community-sourced
-  // ones and flag the latter, instead of suggesting a view with no
-  // confirmation it exists in any real SAP system on equal footing.
+  // Per view: [appComponent, releaseState, isAbstract] — same one-per-view
+  // dedup as before, just carrying two more fields so the page can rank
+  // "released" (confirmed SAP-delivered) views ahead of "unverified"
+  // community-sourced ones, and either kind of real "define view entity"
+  // ahead of a "define abstract entity" action-parameter/data structure
+  // (e.g. D_BillOfMaterialCompareBOMP) — which has no runtime entity set to
+  // query at all, even when released — instead of suggesting either on
+  // equal footing with a view someone can actually query.
   const viewMeta = {};
+  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0];
   const F = {};
   for (const [field, entries] of Object.entries(fieldIndex.fields)) {
     F[field] = entries.map((e) => {
-      if (!(e.view in viewMeta)) viewMeta[e.view] = [e.appComponent || '', e.releaseState || 'released'];
+      if (!(e.view in viewMeta)) viewMeta[e.view] = metaOf(e);
       return [e.view, e.isKey ? 1 : 0];
     });
   }
   const T = {};
   for (const [table, entries] of Object.entries(tableIndex.tables)) {
     T[table] = entries.map((e) => {
-      if (!(e.view in viewMeta)) viewMeta[e.view] = [e.appComponent || '', e.releaseState || 'released'];
+      if (!(e.view in viewMeta)) viewMeta[e.view] = metaOf(e);
       return [e.view, e.relation === 'source' ? 's' : 'a', e.alias || ''];
     });
   }
@@ -92,7 +96,7 @@ async function main() {
   if (rawFieldIndex) {
     for (const [raw, entries] of Object.entries(rawFieldIndex.fields)) {
       R[raw] = entries.map((e) => {
-        if (!(e.view in viewMeta)) viewMeta[e.view] = [e.appComponent || '', e.releaseState || 'released'];
+        if (!(e.view in viewMeta)) viewMeta[e.view] = metaOf(e);
         return [e.view, e.field, e.isKey ? 1 : 0];
       });
     }
@@ -185,6 +189,7 @@ function renderHtml(embeddedJson, stats) {
   }
   .badge.key { color: var(--status-good); border-color: var(--status-good); }
   .badge.unverified { color: var(--status-warn); border-color: var(--status-warn); }
+  .badge.abstract { color: var(--text-muted); border-color: var(--text-muted); }
   .empty { color: var(--text-muted); font-size: 13px; padding: 20px 0; }
   .stats { color: var(--text-muted); font-size: 12px; margin-top: 32px; border-top: 1px solid var(--gridline); padding-top: 16px; }
 </style>
@@ -232,17 +237,31 @@ function renderHtml(embeddedJson, stats) {
       : '';
   }
 
+  function abstractBadge(view) {
+    return (DATA.M[view] || [])[2]
+      ? ' <span class="badge abstract" title="define abstract entity — an action-parameter/data structure, no runtime entity set to query even though it\'s released">structure, not a view</span>'
+      : '';
+  }
+
   // Ranking for same-field/table/column matches, most-useful first:
-  //   0. released + I_ prefix   — the canonical SAP Interface view for the
-  //      entity (e.g. I_PRODUCT for MATNR) — what most lookups actually want.
-  //   1. released, any other prefix (C_, D_, R_, P_, ...) — plain
-  //      alphabetical sort otherwise put these ahead of I_ views half the
-  //      time purely because their prefix letter sorts earlier (confirmed
-  //      for MATNR: 76 D_ views before the first I_ view).
+  //   0. released + I_ prefix, a real queryable view — the canonical SAP
+  //      Interface view for the entity (e.g. I_PRODUCT for MATNR) — what
+  //      most lookups actually want.
+  //   1. released, any other prefix (C_, D_, R_, P_, ...), a real queryable
+  //      view — plain alphabetical sort otherwise put these ahead of I_
+  //      views half the time purely because their prefix letter sorts
+  //      earlier (confirmed for MATNR: 76 D_ views before the first I_ view).
   //   2. unverified — community-sourced Z/Y-namespace, not confirmed to
   //      exist in any real SAP system.
+  //   3. abstract entity / action-parameter structure (e.g.
+  //      D_BillOfMaterialCompareBOMP) — has real fields (so it still matches
+  //      a field/table/raw-column lookup) but no runtime entity set at all,
+  //      so it can never actually be queried — least useful regardless of
+  //      prefix or release state, ranked below even unverified.
   function rankOf(view) {
-    if ((DATA.M[view] || [])[1] === 'unverified') return 2;
+    const meta = DATA.M[view] || [];
+    if (meta[2]) return 3;
+    if (meta[1] === 'unverified') return 2;
     return view.startsWith('I_') ? 0 : 1;
   }
   function byReleaseState(entries) {
@@ -251,21 +270,21 @@ function renderHtml(embeddedJson, stats) {
 
   function fieldRow([view, isKey]) {
     const ac = (DATA.M[view] || [])[0] || '';
-    return '<div class="row">' + viewLink(view) + (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) +
+    return '<div class="row">' + viewLink(view) + (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + abstractBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
   function tableRow([view, rel, alias]) {
     const ac = (DATA.M[view] || [])[0] || '';
     const relLabel = rel === 's' ? 'built FROM this' : 'associates via <code>' + escapeHtml(alias) + '</code>';
-    return '<div class="row">' + viewLink(view) + ' <span class="tag">— ' + relLabel + '</span>' + unverifiedBadge(view) +
+    return '<div class="row">' + viewLink(view) + ' <span class="tag">— ' + relLabel + '</span>' + unverifiedBadge(view) + abstractBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
   function rawFieldRow([view, semanticField, isKey]) {
     const ac = (DATA.M[view] || [])[0] || '';
     return '<div class="row">' + viewLink(view) + ' <span class="tag">— as <code>' + escapeHtml(semanticField) + '</code></span>' +
-      (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) +
+      (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + abstractBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
