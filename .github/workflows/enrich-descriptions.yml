@@ -1,0 +1,121 @@
+# .github/workflows/enrich-descriptions.yml
+# Optional LLM enrichment of view descriptions (semantic_en / semantic_vi /
+# keywords). Strictly opt-in: every step that touches the LLM runs only when
+# one of GROQ_API_KEY / OPENROUTER_API_KEY / LLM_ENRICH_API_KEY repo secrets
+# is configured — with none set, the workflow runs, prints "skipping", and
+# exits 0 (no cost, no failures to page anyone about).
+#
+# The script chips away at the backlog: default --limit 150 per run, views
+# missing semantic_en sorted released-first, so over ~50 daily runs the
+# whole KB gets real descriptions. Free tiers comfortably cover 150/day
+# (Groq 14,400 req/day; OpenRouter free 50/day — for OpenRouter lower the
+# limit to ~40 via workflow_dispatch if you use it).
+#
+# Results open as a PR (like daily-fetch.yml) — frontmatter is data, and
+# generated descriptions are worth a human glance before merging. The index
+# is rebuilt (enrich_index.mjs) so the PR carries fresh search_index.json /
+# view-fields.js / field/table/raw-field indexes alongside the view edits.
+
+name: Enrich View Descriptions (LLM)
+
+on:
+  schedule:
+    # 05:30 UTC — before daily-fetch.yml (06:00) so the two PR branches
+    # never touch the same files in the same hour.
+    - cron: '30 5 * * *'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Views to enrich this run (0 = unlimited)'
+        type: number
+        default: 150
+      dry_run:
+        description: 'Dry run — list what would be enriched, write nothing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: enrich-descriptions
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs/product/cds_kb_data
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: docs/product/cds_kb_data/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Run LLM enrichment
+        if: ${{ secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '' }}
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          LLM_ENRICH_API_KEY: ${{ secrets.LLM_ENRICH_API_KEY }}
+        run: |
+          ARGS=(--limit ${{ github.event.inputs.limit || '150' }})
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS+=(--dry-run)
+          fi
+          node scripts/enrich-descriptions.mjs . "${ARGS[@]}"
+
+      - name: Rebuild indexes
+        if: ${{ github.event.inputs.dry_run != 'true' && (secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '') }}
+        run: node enrich_index.mjs .
+
+      - name: Commit and open PR for review
+        if: ${{ github.event.inputs.dry_run != 'true' && (secrets.GROQ_API_KEY != '' || secrets.OPENROUTER_API_KEY != '' || secrets.LLM_ENRICH_API_KEY != '') }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "cds-kb-bot"
+          git config user.email "bot@cds-kb.local"
+
+          if git diff --quiet HEAD -- views/ index/; then
+            echo "ℹ️  No new descriptions to commit (all views already enriched?)"
+            exit 0
+          fi
+
+          DATE="$(date +'%Y-%m-%d')"
+          BRANCH="enrich-descriptions/${DATE}-${{ github.run_id }}"
+
+          git checkout -b "$BRANCH"
+          git add views/ index/
+          git commit -m "LLM description enrichment ($DATE)"
+
+          cat > pr_body.md <<'EOF'
+          LLM-generated `semantic_en` / `semantic_vi` / `keywords` for views
+          that didn't have them (opt-in workflow — see
+          `scripts/enrich-descriptions.mjs`).
+
+          **Review before merging.** Descriptions are machine-generated; spot-check
+          a few for accuracy. Views whose descriptions you disagree with can be
+          edited by hand and the frontmatter overwritten on the next run.
+          EOF
+
+          gh pr create \
+            --title "LLM description enrichment ($DATE)" \
+            --base main \
+            --head "$BRANCH" \
+            --body-file pr_body.md
+
+          echo "✅ PR opened for review: $BRANCH"

@@ -15,6 +15,7 @@
     "generate-field-search": "node scripts/generate-field-search.mjs",
     "generate-search-page": "node scripts/generate-search-page.mjs .",
     "build-sqlite-index": "node scripts/build-sqlite-index.mjs .",
+    "enrich-descriptions": "node scripts/enrich-descriptions.mjs .",
     "rebuild-index": "node enrich_index.mjs .",
     "resync-folders": "node scripts/migrate-to-module-folders.mjs . && node enrich_index.mjs ."
   },
@@ -22,6 +23,9 @@
     "minisearch": "^7.2.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@abaplint/core": "^2.120.21"
   }
 }

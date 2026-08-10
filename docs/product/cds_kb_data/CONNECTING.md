@@ -58,29 +58,60 @@ Node.js, just to see the request shape and caching strategy.
 
 Don't try to parse `search_index.json` — it's a MiniSearch-internal
 serialization, not a generic format. Use `index/search.db` instead: a plain
-SQLite file with two tables, rebuilt from `search_index.json` on every
-`enrich_index.mjs` run (see `scripts/build-sqlite-index.mjs`) —
+SQLite database, rebuilt from `search_index.json` on every `enrich_index.mjs`
+run (see `scripts/build-sqlite-index.mjs`). Schema v2:
 
 ```sql
 CREATE TABLE views (
   id INTEGER PRIMARY KEY, name TEXT, path TEXT, description TEXT,
   semanticDescription TEXT, module TEXT, lob TEXT, bo TEXT,
-  appComponent TEXT, synonyms TEXT, usageCount INTEGER
+  appComponent TEXT, synonyms TEXT, usageCount INTEGER,
+  releaseState TEXT, sourceUrl TEXT  -- sourceUrl: recorded fetch-time link
 );
 CREATE VIRTUAL TABLE views_fts USING fts5(
   name, semanticDescription, description, synonyms, appComponent,
   content='views', content_rowid='id'
 );
+CREATE TABLE fields (
+  view_id INTEGER REFERENCES views(id), name TEXT, is_key INTEGER,
+  source TEXT, type TEXT, description TEXT
+);  -- per-view field rows, incl. the raw DDIC source column when known
+CREATE TABLE associations (
+  view_id INTEGER REFERENCES views(id), alias TEXT, target TEXT, cardinality TEXT
+);  -- declared association aliases and their target views
 ```
+
+Note: since schema v2 the file is ~26 MB (it now carries the fields and
+associations tables plus `source_url`, not just the FTS index) — budget
+accordingly if you re-download it on every refresh.
 
 Query it with plain SQL, from any language with an SQLite driver:
 
 ```sql
+-- full-text, same as before:
 SELECT v.name, v.path, v.module, bm25(views_fts) AS score
 FROM views_fts
 JOIN views v ON v.id = views_fts.rowid
 WHERE views_fts MATCH 'purchase order' AND v.module = 'MM'
 ORDER BY score
+LIMIT 10;
+
+-- which views expose a semantic field (e.g. Material), plus their source link:
+SELECT v.name, v.path, v.sourceUrl
+FROM fields f JOIN views v ON v.id = f.view_id
+WHERE f.name = 'Material'
+LIMIT 10;
+
+-- which views route a raw DDIC column (lowercase, e.g. vwerk) through a field:
+SELECT v.name, f.name AS semantic_field
+FROM fields f JOIN views v ON v.id = f.view_id
+WHERE f.source = 'vwerk'
+LIMIT 10;
+
+-- which views associate to I_CompanyCode:
+SELECT v.name, a.alias, a.cardinality
+FROM associations a JOIN views v ON v.id = a.view_id
+WHERE a.target = 'I_CompanyCode'
 LIMIT 10;
 ```
 

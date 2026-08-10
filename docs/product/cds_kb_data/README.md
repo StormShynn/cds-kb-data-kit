@@ -18,8 +18,10 @@ views/<MODULE>/.../            CDS view definitions, one .md each (YAML frontmat
                                _UNVERIFIED/ for release_state: unverified regardless
                                of module, so items needing review aren't scattered
 index/search_index.json       Pre-built MiniSearch (BM25) search index (self-describing)
-index/search.db                SQLite FTS5 build of the same per-view records, for non-Node
-                               consumers (plain SQL, no MiniSearch dependency) — see CONNECTING.md §4
+index/search.db                SQLite build of the same per-view records, for non-Node
+                               consumers (plain SQL, no MiniSearch dependency) — FTS5 search
+                               plus views.source_url and fields/associations tables since schema
+                               v2 — see CONNECTING.md §4
 index/view-paths.json         NAME -> real path (e.g. "views/FI/I_X.md") — lets views
                                live in any folder layout without cds-kb-mcp-kit needing
                                to know the scheme; consulted before falling back to a
@@ -62,11 +64,13 @@ locally, or use the published copy at
 | `scripts/backfill_source_links.mjs` | Best-effort re-link pre-existing DDL entries with no recorded source |
 | `scripts/generate-dashboard.mjs` | Render `dashboard.html` from `changelog.json` |
 | `scripts/migrate-to-module-folders.mjs` | Reconcile every view's folder against its current `app_component`/`release_state` — safe to re-run any time, no-op when nothing's misplaced |
-| `scripts/build-sqlite-index.mjs` | Rebuild `index/search.db` (SQLite FTS5) from `search_index.json` — run after `enrich_index.mjs` |
+| `scripts/build-sqlite-index.mjs` | Rebuild `index/search.db` (SQLite: FTS5 + fields/associations tables + `source_url`) from `search_index.json` — run after `enrich_index.mjs` |
+| `scripts/enrich-descriptions.mjs` | Opt-in LLM generation of `semantic_en`/`semantic_vi`/`keywords` for views missing them (Groq/OpenRouter, no key = no-op) |
+| `scripts/validate-views.mjs` | Structural sanity check over every view .md (frontmatter, name/filename, duplicates) — run in CI on every PR |
 | `scripts/generate-search-page.mjs` | Rebuild `search.html` (business-language search) — run after `enrich_index.mjs` |
 | `scripts/generate-field-search.mjs` | Rebuild `field-search.html` (exact field/table lookup) — run after `enrich_index.mjs` |
 
-Zero npm dependencies except `minisearch` (used only by `enrich_index.mjs`).
+Zero **runtime** npm dependencies except `minisearch`; `@abaplint/core` is a devDependency used only by the parser cross-check test (`test/ddl-abaplint-crosscheck.test.mjs`). Requires **Node ≥ 24** (the SQLite index build uses `node:sqlite`).
 
 ### Optional: SAP API key
 
@@ -91,6 +95,8 @@ something currently required. Same header convention as
 | `update-dashboard.yml` | on push to `changelog.json`/`views/**` | Regenerates `dashboard.html`, pushes directly |
 | `resync-folders.yml` | on push to `views/**` | Runs `npm run resync-folders` (see below), pushes any resulting moves directly |
 | `deploy-pages.yml` | on push to any tracked `.html`/`index/**` file + manual | Publishes `overview.html` and everything it embeds to GitHub Pages |
+| `enrich-descriptions.yml` | daily 05:30 UTC + manual | **Opt-in** LLM enrichment of view descriptions; no API key secret configured = no-op. Opens a PR for review |
+| `ci.yml` | on every PR + pushes touching `docs/product/cds_kb_data/**` | Runs `npm test` (incl. the abaplint DDL cross-check) + `scripts/validate-views.mjs` |
 
 This repo is public, with GitHub Pages serving `overview.html` (and the
 pages it embeds) at <https://stormshynn.github.io/cds-kb-data-kit/> — see

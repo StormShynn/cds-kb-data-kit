@@ -1,0 +1,22 @@
+# .github/dependabot.yml
+# Keep the two npm dependencies (minisearch, @abaplint/core) and the GitHub
+# Actions in this repo up to date. Weekly cadence — this data repo doesn't
+# need daily dependency churn.
+
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /docs/product/cds_kb_data
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore(deps)"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore(ci)"
+    open-pull-requests-limit: 5
