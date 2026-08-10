@@ -50,6 +50,16 @@ if (!options.storeFields.includes('usageCount')) options.storeFields.push('usage
 // ones (community-sourced Z/Y-namespace DDL under views/_UNVERIFIED/ with
 // no confirmation they exist in any real SAP system).
 if (!options.storeFields.includes('releaseState')) options.storeFields.push('releaseState');
+// isAbstract/isMasterData/referencedByCount: same field/table/raw-column
+// lookup signals field-search.html and get_views_by_field already rank by
+// (see isAbstractEntity/isMasterDataEntity below), now also read back via
+// storedFields so search_cds/search.html's boostDocument can sink an
+// action-parameter/data-structure entity (no runtime entity set to query
+// even when released) and favor a master-data view the same way, instead
+// of ranking purely on text relevance.
+if (!options.storeFields.includes('isAbstract')) options.storeFields.push('isAbstract');
+if (!options.storeFields.includes('isMasterData')) options.storeFields.push('isMasterData');
+if (!options.storeFields.includes('referencedByCount')) options.storeFields.push('referencedByCount');
 
 let taxonomy = null;
 try {
@@ -296,6 +306,8 @@ for (let i = 0; i < viewFiles.length; i++) {
     bo,
     usageCount: usageCounts[name] || 0,
     releaseState,
+    isAbstract,
+    isMasterData,
   });
 }
 
@@ -321,6 +333,7 @@ function attachReferencedByCount(indexObj) {
 attachReferencedByCount(fieldIndex);
 attachReferencedByCount(tableIndex);
 attachReferencedByCount(rawFieldIndex);
+for (const doc of docs) doc.referencedByCount = referencedByCount[doc.name] || 0;
 
 // ── Build MiniSearch index ─────────────────────────────────────────────────
 const MiniSearch = (await import('minisearch')).default;

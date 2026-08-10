@@ -116,6 +116,8 @@ function renderHtml(embeddedIndexJson, miniSearchSrc, stats) {
   .score { color: var(--text-muted); font-size: 11px; font-family: ui-monospace, monospace; }
   .badge { font-size: 10px; border: 1px solid; border-radius: 4px; padding: 1px 5px; font-weight: 600; }
   .badge.unverified { color: var(--status-warn); border-color: var(--status-warn); }
+  .badge.abstract { color: var(--text-muted); border-color: var(--text-muted); }
+  .badge.master { color: var(--accent); border-color: var(--accent); }
   .empty { color: var(--text-muted); font-size: 13px; padding: 20px 0; }
   .stats { color: var(--text-muted); font-size: 12px; margin-top: 32px; border-top: 1px solid var(--gridline); padding-top: 16px; }
 </style>
@@ -180,6 +182,8 @@ ${miniSearchSrc}
     const unverified = r.releaseState === 'unverified';
     return '<div class="row">' + nameHtml +
       (unverified ? ' <span class="badge unverified" title="Community-sourced Z/Y-namespace view — not confirmed to exist in any real SAP system">unverified</span>' : '') +
+      (r.isAbstract ? ' <span class="badge abstract" title="define abstract entity — an action-parameter/data structure, no runtime entity set to query regardless of release state">structure, not a view</span>' : '') +
+      (r.isMasterData ? ' <span class="badge master" title="@ObjectModel.usageType.dataClass: #MASTER — a master-data view (e.g. Product/Customer master), not a transactional one">master data</span>' : '') +
       ' <span class="tag">' + escapeHtml(r.appComponent || r.module || '-') + '</span>' +
       ' <span class="score">score ' + r.score.toFixed(1) + '</span>' +
       (desc ? '<span class="desc">' + escapeHtml(desc) + '</span>' : '') +
@@ -195,11 +199,28 @@ ${miniSearchSrc}
       (!mod || (r.module || '').toUpperCase() === mod.toUpperCase()) &&
       (!lob || (r.lob || '').toLowerCase() === lob.toLowerCase());
 
-    // Released (confirmed SAP-delivered) views rank ahead of unverified
-    // community-sourced ones regardless of text-match score — an unverified
-    // hit isn't something you can rely on existing in a real SAP system, so
-    // it should never outrank an equally-relevant released view.
-    const boostDocument = (id, term, storedFields) => storedFields.releaseState === 'unverified' ? 0.15 : 1;
+    // Mirrors cds-kb-mcp-kit's search_cds boostDocument — same signals
+    // enrich_index.mjs computes per view, same weights:
+    //   x0.01 isAbstract (define (root )?abstract entity / an action-param
+    //         structure — no runtime entity set to query even when
+    //         released, sinks below everything else regardless of text match)
+    //   x0.15 unverified (community-sourced Z/Y-namespace, not confirmed to
+    //         exist in any real SAP system)
+    //   x1.5  isMasterData (@ObjectModel.usageType.dataClass: #MASTER) —
+    //         what "which view covers <business topic>" usually means
+    //   log-scaled usageCount (real runtime call telemetry, 0 for every doc
+    //   until pull-usage-stats.mjs's endpoint is configured) and
+    //   referencedByCount (how many other views build FROM/associate to
+    //   this one right now), the latter weighted well below the former.
+    const boostDocument = (id, term, storedFields) => {
+      if (storedFields.isAbstract) return 0.01;
+      let boost = 1;
+      if (storedFields.releaseState === 'unverified') boost *= 0.15;
+      if (storedFields.isMasterData) boost *= 1.5;
+      boost *= 1 + Math.log10(1 + (storedFields.usageCount || 0));
+      boost *= 1 + Math.log10(1 + (storedFields.referencedByCount || 0)) * 0.1;
+      return boost;
+    };
     const hits = mini.search(query, { boost: BOOST, boostDocument, prefix: true, fuzzy: 0.2, filter }).slice(0, 50);
     if (hits.length === 0) {
       results.innerHTML = '<div class="empty">No CDS views matched "' + escapeHtml(query) + '". Try broader terms or clear the filters.</div>';
