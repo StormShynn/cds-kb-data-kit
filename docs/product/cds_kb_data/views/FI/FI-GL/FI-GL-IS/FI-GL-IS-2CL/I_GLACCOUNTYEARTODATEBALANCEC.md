@@ -1,13 +1,13 @@
 ---
 name: I_GLACCOUNTYEARTODATEBALANCEC
-description: "General Ledger Account Balances - Cube"
+description: "This CDS view is designed to provide a comprehensive analytical cube for General Ledger (G/L) account balances, aggregating financial data across various dimensions and currencies. It serves as a composite view that integrates detailed line item data from the General Ledger, enabling users to analyze financial transactions and balances year-to-date. This CDS view provides the data to answer the following business questions: What are the year-to-date balances for specific G/L accounts across different currencies? How do financial transactions aggregate by fiscal year, period, and quarter? What is the impact of specific business transactions on G/L account balances? How do balances vary across different organizational units such as cost centers, profit centers, and segments? What are the debit and credit amounts in various currencies for specific G/L accounts? How do balances relate to specific projects, orders, and WBS elements? What are the financial impacts of specific asset transactions and depreciation areas? How do balances correlate with specific sales and purchasing documents? What are the balances associated with specific financial services products and branches? How do balances align with specific joint ventures and real estate contracts? What are the balances related to specific accrual objects and financial valuation objects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTYEARTODATEBALANCEC')/$value
-semantic_en: "General Ledger Account Balances - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive analytical cube for General Ledger (G/L) account balances, aggregating financial data across various dimensions and currencies. It serves as a composite view that integrates detailed line item data from the General Ledger, enabling users to analyze financial transactions and balances year-to-date. This CDS view provides the data to answer the following business questions: What are the year-to-date balances for specific G/L accounts across different currencies? How do financial transactions aggregate by fiscal year, period, and quarter? What is the impact of specific business transactions on G/L account balances? How do balances vary across different organizational units such as cost centers, profit centers, and segments? What are the debit and credit amounts in various currencies for specific G/L accounts? How do balances relate to specific projects, orders, and WBS elements? What are the financial impacts of specific asset transactions and depreciation areas? How do balances correlate with specific sales and purchasing documents? What are the balances associated with specific financial services products and branches? How do balances align with specific joint ventures and real estate contracts? What are the balances related to specific accrual objects and financial valuation objects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "G/L Account Balances"
   - "G/L Account Balances"
@@ -15,17 +15,24 @@ keywords:
 tags:
   - FI
   - account
+  - bo:asset
   - component:FI-GL-IS-2CL
+  - contract
+  - document
   - FI-GL
   - FI-GL-IS
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
+  - order
+  - product
+  - project
+  - transaction
   - metadata-only
 ---
 # I_GLACCOUNTYEARTODATEBALANCEC
 
-**General Ledger Account Balances - Cube**
+**This CDS view is designed to provide a comprehensive analytical cube for General Ledger (G/L) account balances, aggregating financial data across various dimensions and currencies. It serves as a composite view that integrates detailed line item data from the General Ledger, enabling users to analyze financial transactions and balances year-to-date. This CDS view provides the data to answer the following business questions: What are the year-to-date balances for specific G/L accounts across different currencies? How do financial transactions aggregate by fiscal year, period, and quarter? What is the impact of specific business transactions on G/L account balances? How do balances vary across different organizational units such as cost centers, profit centers, and segments? What are the debit and credit amounts in various currencies for specific G/L accounts? How do balances relate to specific projects, orders, and WBS elements? What are the financial impacts of specific asset transactions and depreciation areas? How do balances correlate with specific sales and purchasing documents? What are the balances associated with specific financial services products and branches? How do balances align with specific joint ventures and real estate contracts? What are the balances related to specific accrual objects and financial valuation objects? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

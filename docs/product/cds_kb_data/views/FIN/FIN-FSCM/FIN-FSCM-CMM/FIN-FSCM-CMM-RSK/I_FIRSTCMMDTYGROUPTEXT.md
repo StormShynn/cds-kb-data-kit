@@ -1,18 +1,17 @@
 ---
 name: I_FIRSTCMMDTYGROUPTEXT
-description: "First Customer Specific Cmdty GrpName - Text"
+description: "First Cust Specific Cmdty GrpName - Text"
 app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FIRSTCMMDTYGROUPTEXT')/$value
-semantic_en: "First Customer Specific Cmdty GrpName - Text"
+semantic_en: "First Cust Specific Cmdty GrpName - Text"
 tags:
   - FIN
-  - bo:businesspartner
+  - bo:companycode
   - component:FIN-FSCM-CMM-RSK
-  - customer
   - FIN-FSCM
   - FIN-FSCM-CMM
   - FIN-FSCM-CMM-RSK
@@ -23,7 +22,7 @@ tags:
 ---
 # I_FIRSTCMMDTYGROUPTEXT
 
-**First Customer Specific Cmdty GrpName - Text**
+**First Cust Specific Cmdty GrpName - Text**
 
 | Property | Value |
 |---|---|

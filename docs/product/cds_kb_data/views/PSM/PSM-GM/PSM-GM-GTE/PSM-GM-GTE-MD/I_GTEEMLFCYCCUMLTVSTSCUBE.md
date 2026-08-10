@@ -1,13 +1,13 @@
 ---
 name: I_GTEEMLFCYCCUMLTVSTSCUBE
-description: "Grant Life Cycle Cumulative Status Changes - Cube"
+description: "Grant Life Cyc Cumltv Sts Changes - Cube"
 app_component: PSM-GM-GTE-MD
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GTEEMLFCYCCUMLTVSTSCUBE')/$value
-semantic_en: "Grant Life Cycle Cumulative Status Changes - Cube"
+semantic_en: "Grant Life Cyc Cumltv Sts Changes - Cube"
 tags:
   - PSM
   - component:PSM-GM-GTE-MD
@@ -19,7 +19,7 @@ tags:
 ---
 # I_GTEEMLFCYCCUMLTVSTSCUBE
 
-**Grant Life Cycle Cumulative Status Changes - Cube**
+**Grant Life Cyc Cumltv Sts Changes - Cube**
 
 | Property | Value |
 |---|---|

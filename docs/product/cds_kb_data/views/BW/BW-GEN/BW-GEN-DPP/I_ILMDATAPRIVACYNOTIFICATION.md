@@ -40,7 +40,7 @@ tags:
 | `ILMNotificationTable` |  | |  |  | `CHAR(30)` | Table Name |
 | `ILMNotificationField` |  | |  |  | `CHAR(30)` | Field Name |
 | `ILMObject` |  | |  |  | `CHAR(30)` | ILM Object Name |
-| `CDSView` |  | |  |  | `CHAR(30)` | DD: Name of a structured object (e.g. entity, context) |
+| `CDSView` |  | |  |  | `CHAR(30)` | DD: Name of Structured Object (e.g. Entity, Context) |
 | `CDSViewField` |  | |  |  | `CHAR(30)` | Field Name |
 | `ILMNotifCreationDateTime` |  | |  |  | `DEC(21)` | UTC time stamp in long form (YYYYMMDDhhmmss,mmmuuun) |
 | `ILMNotificationMode` |  | |  |  | `CHAR(2)` | ILM Notification Mode |

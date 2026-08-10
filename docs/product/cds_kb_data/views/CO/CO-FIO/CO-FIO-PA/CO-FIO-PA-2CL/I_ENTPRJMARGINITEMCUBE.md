@@ -1,33 +1,40 @@
 ---
 name: I_ENTPRJMARGINITEMCUBE
-description: "Enterprise Project Margin Item - Cube"
+description: "This CDS view is designed to provide a comprehensive analytical cube for enterprise project margin items. It aggregates and organizes data related to financial planning, accounting documents, project management, and various business entities involved in enterprise projects. The view facilitates complex data analysis and reporting by integrating multiple associations and key fields, enabling users to gain insights into project margins and related financial metrics. This CDS view provides the data to answer the following business questions: What is the financial margin of specific enterprise projects over a given fiscal year? How do different financial planning categories impact the overall project margin? What are the actual versus planned financial figures for enterprise projects? Which projects are managed by specific project managers, and what are their financial outcomes? How do different service contracts and sales orders contribute to project margins? What is the distribution of project margins across various profit centers and controlling areas? How do currency fluctuations affect the financial outcomes of enterprise projects? What is the impact of specific cost centers and functional areas on project margins? How do different customer groups and industries influence project financials? What are the quantities and amounts in display currency for enterprise project items? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPRJMARGINITEMCUBE')/$value
-semantic_en: "Enterprise Project Margin Item - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive analytical cube for enterprise project margin items. It aggregates and organizes data related to financial planning, accounting documents, project management, and various business entities involved in enterprise projects. The view facilitates complex data analysis and reporting by integrating multiple associations and key fields, enabling users to gain insights into project margins and related financial metrics. This CDS view provides the data to answer the following business questions: What is the financial margin of specific enterprise projects over a given fiscal year? How do different financial planning categories impact the overall project margin? What are the actual versus planned financial figures for enterprise projects? Which projects are managed by specific project managers, and what are their financial outcomes? How do different service contracts and sales orders contribute to project margins? What is the distribution of project margins across various profit centers and controlling areas? How do currency fluctuations affect the financial outcomes of enterprise projects? What is the impact of specific cost centers and functional areas on project margins? How do different customer groups and industries influence project financials? What are the quantities and amounts in display currency for enterprise project items? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "Enterprise Project Margin Item - Cube"
   - "Enterprise Project Margin Item - Cube"
   - "Enterprise Project Margin Item - Cube"
 tags:
   - CO
-  - bo:project
+  - account
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - contract
+  - customer
+  - document
   - interface-view
   - lob:controlling
   - lob:finance
+  - order
+  - plan
   - project
+  - sales-order
   - metadata-only
 ---
 # I_ENTPRJMARGINITEMCUBE
 
-**Enterprise Project Margin Item - Cube**
+**This CDS view is designed to provide a comprehensive analytical cube for enterprise project margin items. It aggregates and organizes data related to financial planning, accounting documents, project management, and various business entities involved in enterprise projects. The view facilitates complex data analysis and reporting by integrating multiple associations and key fields, enabling users to gain insights into project margins and related financial metrics. This CDS view provides the data to answer the following business questions: What is the financial margin of specific enterprise projects over a given fiscal year? How do different financial planning categories impact the overall project margin? What are the actual versus planned financial figures for enterprise projects? Which projects are managed by specific project managers, and what are their financial outcomes? How do different service contracts and sales orders contribute to project margins? What is the distribution of project margins across various profit centers and controlling areas? How do currency fluctuations affect the financial outcomes of enterprise projects? What is the impact of specific cost centers and functional areas on project margins? How do different customer groups and industries influence project financials? What are the quantities and amounts in display currency for enterprise project items? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -122,3 +129,4 @@ tags:
 | `ProjectUUID` |  | |  |  | `RAW(16)` | Entity Guid |
 | `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
 | `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | CO Debit/Credit Indicator |
+| `StdProject` |  | |  |  | `CHAR(24)` | Project (external ID) |

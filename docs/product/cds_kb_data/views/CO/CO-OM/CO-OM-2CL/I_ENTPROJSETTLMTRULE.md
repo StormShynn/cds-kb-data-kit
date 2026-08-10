@@ -1,16 +1,17 @@
 ---
 name: I_ENTPROJSETTLMTRULE
-description: "Enterprise Project Settlement Rule"
+description: "This CDS view provides a comprehensive interface for managing and accessing settlement rules for enterprise project Work Breakdown Structure (WBS) elements. It combines project element data with controlling object settlement rules to enable the configuration and tracking of how costs and revenues from project WBS elements are settled to other objects (such as assets, cost centers, or G/L accounts). The view supports authorization control and includes audit trail information for settlement rule maintenance. This CDS view provides the data to answer the following business questions: What settlement rules are configured for each WBS element in an enterprise project, including the allocation structure and settlement profile being used? When was a settlement rule last created or modified, and by which user, to support audit and compliance requirements? Which WBS elements have settlement rules that were last used in a specific fiscal period and year for settlement processing tracking? What is the processing sequence and currency configuration for settlement rules across different project elements? Which controlling objects (WBS elements) are associated with specific settlement rules, including their organizational assignments such as profit center, company code, and cost center? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPROJSETTLMTRULE')/$value
-semantic_en: "Enterprise Project Settlement Rule"
+semantic_en: "This CDS view provides a comprehensive interface for managing and accessing settlement rules for enterprise project Work Breakdown Structure (WBS) elements. It combines project element data with controlling object settlement rules to enable the configuration and tracking of how costs and revenues from project WBS elements are settled to other objects (such as assets, cost centers, or G/L accounts). The view supports authorization control and includes audit trail information for settlement rule maintenance. This CDS view provides the data to answer the following business questions: What settlement rules are configured for each WBS element in an enterprise project, including the allocation structure and settlement profile being used? When was a settlement rule last created or modified, and by which user, to support audit and compliance requirements? Which WBS elements have settlement rules that were last used in a specific fiscal period and year for settlement processing tracking? What is the processing sequence and currency configuration for settlement rules across different project elements? Which controlling objects (WBS elements) are associated with specific settlement rules, including their organizational assignments such as profit center, company code, and cost center? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - CO
-  - bo:project
+  - account
+  - bo:companycode
   - CO-OM
   - CO-OM-2CL
   - component:CO-OM-2CL
@@ -21,7 +22,7 @@ tags:
 ---
 # I_ENTPROJSETTLMTRULE
 
-**Enterprise Project Settlement Rule**
+**This CDS view provides a comprehensive interface for managing and accessing settlement rules for enterprise project Work Breakdown Structure (WBS) elements. It combines project element data with controlling object settlement rules to enable the configuration and tracking of how costs and revenues from project WBS elements are settled to other objects (such as assets, cost centers, or G/L accounts). The view supports authorization control and includes audit trail information for settlement rule maintenance. This CDS view provides the data to answer the following business questions: What settlement rules are configured for each WBS element in an enterprise project, including the allocation structure and settlement profile being used? When was a settlement rule last created or modified, and by which user, to support audit and compliance requirements? Which WBS elements have settlement rules that were last used in a specific fiscal period and year for settlement processing tracking? What is the processing sequence and currency configuration for settlement rules across different project elements? Which controlling objects (WBS elements) are associated with specific settlement rules, including their organizational assignments such as profit center, company code, and cost center? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

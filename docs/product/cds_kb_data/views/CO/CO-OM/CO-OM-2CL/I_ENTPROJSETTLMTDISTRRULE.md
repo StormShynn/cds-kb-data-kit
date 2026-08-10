@@ -1,27 +1,29 @@
 ---
 name: I_ENTPROJSETTLMTDISTRRULE
-description: "Ent Project Settlement Distribution Rule"
+description: "This CDS view provides a comprehensive interface for Enterprise Project Settlement Distribution Rules by combining project element data with controlling object settlement distribution rules. It exposes settlement rule configurations that determine how costs accumulated on project WBS elements are distributed to various receivers (such as cost centers, orders, assets, or G/L accounts) during the settlement process. The view includes validity periods, distribution amounts or percentages, and receiver account assignments, while also incorporating sender project attributes for authorization control. This CDS view provides the data to answer the following business questions: How are costs from a specific project WBS element distributed across different receivers during settlement, including the distribution percentages, amounts, and target account assignments? What are the valid fiscal periods for each settlement distribution rule, and which rules are currently active or will become active in future periods? Which settlement receivers (cost centers, orders, assets, G/L accounts) are configured for a project element, and what are their respective settlement types and distribution methods? Which settlement distribution rules apply to specific ledgers or ledger groups, and how do the rules vary across different accounting ledgers within the same project? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-OM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPROJSETTLMTDISTRRULE')/$value
-semantic_en: "Ent Project Settlement Distribution Rule"
+semantic_en: "This CDS view provides a comprehensive interface for Enterprise Project Settlement Distribution Rules by combining project element data with controlling object settlement distribution rules. It exposes settlement rule configurations that determine how costs accumulated on project WBS elements are distributed to various receivers (such as cost centers, orders, assets, or G/L accounts) during the settlement process. The view includes validity periods, distribution amounts or percentages, and receiver account assignments, while also incorporating sender project attributes for authorization control. This CDS view provides the data to answer the following business questions: How are costs from a specific project WBS element distributed across different receivers during settlement, including the distribution percentages, amounts, and target account assignments? What are the valid fiscal periods for each settlement distribution rule, and which rules are currently active or will become active in future periods? Which settlement receivers (cost centers, orders, assets, G/L accounts) are configured for a project element, and what are their respective settlement types and distribution methods? Which settlement distribution rules apply to specific ledgers or ledger groups, and how do the rules vary across different accounting ledgers within the same project? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - CO
-  - bo:project
+  - account
+  - bo:companycode
   - CO-OM
   - CO-OM-2CL
   - component:CO-OM-2CL
   - interface-view
   - lob:controlling
+  - order
   - project
   - metadata-only
 ---
 # I_ENTPROJSETTLMTDISTRRULE
 
-**Ent Project Settlement Distribution Rule**
+**This CDS view provides a comprehensive interface for Enterprise Project Settlement Distribution Rules by combining project element data with controlling object settlement distribution rules. It exposes settlement rule configurations that determine how costs accumulated on project WBS elements are distributed to various receivers (such as cost centers, orders, assets, or G/L accounts) during the settlement process. The view includes validity periods, distribution amounts or percentages, and receiver account assignments, while also incorporating sender project attributes for authorization control. This CDS view provides the data to answer the following business questions: How are costs from a specific project WBS element distributed across different receivers during settlement, including the distribution percentages, amounts, and target account assignments? What are the valid fiscal periods for each settlement distribution rule, and which rules are currently active or will become active in future periods? Which settlement receivers (cost centers, orders, assets, G/L accounts) are configured for a project element, and what are their respective settlement types and distribution methods? Which settlement distribution rules apply to specific ledgers or ledger groups, and how do the rules vary across different accounting ledgers within the same project? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

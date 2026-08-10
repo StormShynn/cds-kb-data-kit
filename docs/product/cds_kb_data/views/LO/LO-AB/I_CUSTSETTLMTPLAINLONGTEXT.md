@@ -1,19 +1,18 @@
 ---
 name: I_CUSTSETTLMTPLAINLONGTEXT
-description: "Plain Long Text for Customer Settlement Document"
+description: "Plain Long Text for Customer Settlement Doc"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CUSTSETTLMTPLAINLONGTEXT')/$value
-semantic_en: "Plain Long Text for Customer Settlement Document"
+semantic_en: "Plain Long Text for Customer Settlement Doc"
 tags:
   - LO
   - bo:businesspartner
   - component:LO-AB
   - customer
-  - document
   - interface-view
   - LO-AB
   - lob:logistics general
@@ -21,7 +20,7 @@ tags:
 ---
 # I_CUSTSETTLMTPLAINLONGTEXT
 
-**Plain Long Text for Customer Settlement Document**
+**Plain Long Text for Customer Settlement Doc**
 
 | Property | Value |
 |---|---|

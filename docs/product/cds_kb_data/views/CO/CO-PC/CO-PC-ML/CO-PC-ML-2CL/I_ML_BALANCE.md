@@ -1,27 +1,30 @@
 ---
 name: I_ML_BALANCE
-description: "Balance Summary for Material Ledger"
+description: "This CDS view provides material inventory relevant journal entry items per key date and company code, ledger, G/L account. This CDS view provides the data to answer the following business questions: What are the quantities and values per journal entry item that were posted to a material inventory account up to the specified key date? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ML_BALANCE')/$value
-semantic_en: "Balance Summary for Material Ledger"
+semantic_en: "This CDS view provides material inventory relevant journal entry items per key date and company code, ledger, G/L account. This CDS view provides the data to answer the following business questions: What are the quantities and values per journal entry item that were posted to a material inventory account up to the specified key date? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - CO
+  - account
+  - bo:companycode
   - CO-PC
   - CO-PC-ML
   - CO-PC-ML-2CL
   - component:CO-PC-ML-2CL
   - interface-view
+  - inventory
   - lob:controlling
   - material
   - metadata-only
 ---
 # I_ML_BALANCE
 
-**Balance Summary for Material Ledger**
+**This CDS view provides material inventory relevant journal entry items per key date and company code, ledger, G/L account. This CDS view provides the data to answer the following business questions: What are the quantities and values per journal entry item that were posted to a material inventory account up to the specified key date? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

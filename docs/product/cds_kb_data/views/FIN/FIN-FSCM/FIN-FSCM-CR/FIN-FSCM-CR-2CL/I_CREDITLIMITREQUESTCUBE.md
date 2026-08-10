@@ -1,26 +1,29 @@
 ---
 name: I_CREDITLIMITREQUESTCUBE
-description: "Credit Limit Request - Cube"
+description: "This CDS view is designed to provide a comprehensive overview of credit limit requests, including details about the business partner, credit segment, and various case attributes. It aggregates and presents data related to credit limits, requests, approvals, and associated business metrics, allowing for detailed analysis and reporting. This CDS view provides the data to answer the following business questions: What are the details of credit limit requests for a specific business partner or credit segment? How many credit limit requests have been made, and what is their status? What is the utilization percentage of the credit limit for a business partner? What are the credit risk class and business partner rating associated with the credit limit requests? How do the requested, approved, and actual credit limit amounts compare? What is the expected sales amount and customer credit exposure amount related to the credit limit requests? Are there any cases where the planned close date for a credit limit request has been exceeded? What are the details of the case processor, creator, last changer, and closer for each credit limit request? What are the reasons, types, and categories associated with the credit limit request cases? What is the priority and system status of each credit limit request case? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITLIMITREQUESTCUBE')/$value
-semantic_en: "Credit Limit Request - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of credit limit requests, including details about the business partner, credit segment, and various case attributes. It aggregates and presents data related to credit limits, requests, approvals, and associated business metrics, allowing for detailed analysis and reporting. This CDS view provides the data to answer the following business questions: What are the details of credit limit requests for a specific business partner or credit segment? How many credit limit requests have been made, and what is their status? What is the utilization percentage of the credit limit for a business partner? What are the credit risk class and business partner rating associated with the credit limit requests? How do the requested, approved, and actual credit limit amounts compare? What is the expected sales amount and customer credit exposure amount related to the credit limit requests? Are there any cases where the planned close date for a credit limit request has been exceeded? What are the details of the case processor, creator, last changer, and closer for each credit limit request? What are the reasons, types, and categories associated with the credit limit request cases? What is the priority and system status of each credit limit request case? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
+  - bo:businesspartner
   - component:FIN-FSCM-CR-2CL
+  - customer
   - FIN-FSCM
   - FIN-FSCM-CR
   - FIN-FSCM-CR-2CL
   - interface-view
   - lob:finance
+  - plan
   - metadata-only
 ---
 # I_CREDITLIMITREQUESTCUBE
 
-**Credit Limit Request - Cube**
+**This CDS view is designed to provide a comprehensive overview of credit limit requests, including details about the business partner, credit segment, and various case attributes. It aggregates and presents data related to credit limits, requests, approvals, and associated business metrics, allowing for detailed analysis and reporting. This CDS view provides the data to answer the following business questions: What are the details of credit limit requests for a specific business partner or credit segment? How many credit limit requests have been made, and what is their status? What is the utilization percentage of the credit limit for a business partner? What are the credit risk class and business partner rating associated with the credit limit requests? How do the requested, approved, and actual credit limit amounts compare? What is the expected sales amount and customer credit exposure amount related to the credit limit requests? Are there any cases where the planned close date for a credit limit request has been exceeded? What are the details of the case processor, creator, last changer, and closer for each credit limit request? What are the reasons, types, and categories associated with the credit limit request cases? What is the priority and system status of each credit limit request case? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

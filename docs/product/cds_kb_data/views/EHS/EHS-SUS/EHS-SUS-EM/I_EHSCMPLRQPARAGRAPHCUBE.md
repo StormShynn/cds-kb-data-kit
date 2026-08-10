@@ -1,15 +1,16 @@
 ---
 name: I_EHSCMPLRQPARAGRAPHCUBE
-description: "Compliance Requirement Paragraph - Cube"
+description: "This CDS view provides the data to answer the following business question: What data is available for compliance requirement paragraphs and related objects, such as location, and location classifier? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities. To find out what use cases are best supported by this CDS view, access the CDS view entry in the View Browser app, and find the values for this annotation under the Annotation tab. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: EHS-SUS-EM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSCMPLRQPARAGRAPHCUBE')/$value
-semantic_en: "Compliance Requirement Paragraph - Cube"
+semantic_en: "This CDS view provides the data to answer the following business question: What data is available for compliance requirement paragraphs and related objects, such as location, and location classifier? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities. To find out what use cases are best supported by this CDS view, access the CDS view entry in the View Browser app, and find the values for this annotation under the Annotation tab. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - EHS
+  - bo:companycode
   - component:EHS-SUS-EM
   - EHS-SUS
   - EHS-SUS-EM
@@ -18,7 +19,7 @@ tags:
 ---
 # I_EHSCMPLRQPARAGRAPHCUBE
 
-**Compliance Requirement Paragraph - Cube**
+**This CDS view provides the data to answer the following business question: What data is available for compliance requirement paragraphs and related objects, such as location, and location classifier? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities. To find out what use cases are best supported by this CDS view, access the CDS view entry in the View Browser app, and find the values for this annotation under the Annotation tab. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -58,7 +59,7 @@ tags:
 | `CmplRqVersMaintStatus` |  | |  |  | `CHAR(2)` | Compliance Requirement Status |
 | `CmplRqType` |  | |  |  | `CHAR(2)` | Compliance Requirement Type |
 | `CmplRqTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
-| `CmplRqApplicationComponent` |  | |  |  | `CHAR(5)` | Solution Area |
+| `CmplRqApplicationComponent` |  | |  |  | `CHAR(5)` | Request Initiator |
 | `CmplRqVersEHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
 | `EHSLocationID` |  | |  |  | `CHAR(20)` | Location ID |
 | `EHSLocationName` |  | |  |  | `CHAR(60)` | Location |

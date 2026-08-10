@@ -1,13 +1,13 @@
 ---
 name: I_DATAEXTRACTIONENABLEDVIEW
-description: "Core Data Services Views enabled for Data Extraction"
+description: "CDS Views enabled for Data Extraction"
 app_component: BC-DB-CDC
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DATAEXTRACTIONENABLEDVIEW')/$value
-semantic_en: "Core Data Services Views enabled for Data Extraction"
+semantic_en: "CDS Views enabled for Data Extraction"
 tags:
   - BC
   - BC-DB
@@ -19,7 +19,7 @@ tags:
 ---
 # I_DATAEXTRACTIONENABLEDVIEW
 
-**Core Data Services Views enabled for Data Extraction**
+**CDS Views enabled for Data Extraction**
 
 | Property | Value |
 |---|---|

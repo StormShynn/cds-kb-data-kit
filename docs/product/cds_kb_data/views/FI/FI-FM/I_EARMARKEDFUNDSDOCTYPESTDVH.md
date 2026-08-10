@@ -1,13 +1,13 @@
 ---
 name: I_EARMARKEDFUNDSDOCTYPESTDVH
-description: "Earmarked Funds Document Type Standard"
+description: "Earmarked Funds Document Type Std"
 app_component: FI-FM
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EARMARKEDFUNDSDOCTYPESTDVH')/$value
-semantic_en: "Earmarked Funds Document Type Standard"
+semantic_en: "Earmarked Funds Document Type Std"
 tags:
   - FI
   - bo:salesorganization
@@ -20,7 +20,7 @@ tags:
 ---
 # I_EARMARKEDFUNDSDOCTYPESTDVH
 
-**Earmarked Funds Document Type Standard**
+**Earmarked Funds Document Type Std**
 
 | Property | Value |
 |---|---|

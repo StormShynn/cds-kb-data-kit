@@ -1,29 +1,37 @@
 ---
 name: I_COMPANYMARGINCUBE
-description: "Company Margin - Cube"
+description: "This CDS view is designed to provide a comprehensive analytical cube for evaluating company margins. It aggregates financial data from general ledger account line items and associates it with various business dimensions such as currency fields, product and service object types, solution orders, customer industries, and organizational divisions. The view is structured to support complex analytical queries and facilitate decision-making processes related to financial performance and margin analysis. This CDS view provides the data to answer the following business questions: What is the company's margin across different fiscal years and periods? How do margins vary by business solution orders and their items? What is the impact of different account assignment types on company margins? How do margins differ across various customer industries and divisions? What are the financial results associated with specific semantic tags like revenue, cost of goods sold, and overhead costs? How do margins correlate with sales orders, contracts, and service documents? What is the distribution of margins across different profit centers and organizational units? How do currency fluctuations affect the company's financial performance? What are the key drivers of variable and fixed amounts in company code currency? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCUBE')/$value
-semantic_en: "Company Margin - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive analytical cube for evaluating company margins. It aggregates financial data from general ledger account line items and associates it with various business dimensions such as currency fields, product and service object types, solution orders, customer industries, and organizational divisions. The view is structured to support complex analytical queries and facilitate decision-making processes related to financial performance and margin analysis. This CDS view provides the data to answer the following business questions: What is the company's margin across different fiscal years and periods? How do margins vary by business solution orders and their items? What is the impact of different account assignment types on company margins? How do margins differ across various customer industries and divisions? What are the financial results associated with specific semantic tags like revenue, cost of goods sold, and overhead costs? How do margins correlate with sales orders, contracts, and service documents? What is the distribution of margins across different profit centers and organizational units? How do currency fluctuations affect the company's financial performance? What are the key drivers of variable and fixed amounts in company code currency? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "Company Margin - Cube"
 tags:
   - CO
+  - account
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - contract
+  - customer
+  - document
   - interface-view
   - lob:controlling
   - lob:finance
+  - order
+  - product
+  - sales-order
   - metadata-only
 ---
 # I_COMPANYMARGINCUBE
 
-**Company Margin - Cube**
+**This CDS view is designed to provide a comprehensive analytical cube for evaluating company margins. It aggregates financial data from general ledger account line items and associates it with various business dimensions such as currency fields, product and service object types, solution orders, customer industries, and organizational divisions. The view is structured to support complex analytical queries and facilitate decision-making processes related to financial performance and margin analysis. This CDS view provides the data to answer the following business questions: What is the company's margin across different fiscal years and periods? How do margins vary by business solution orders and their items? What is the impact of different account assignment types on company margins? How do margins differ across various customer industries and divisions? What are the financial results associated with specific semantic tags like revenue, cost of goods sold, and overhead costs? How do margins correlate with sales orders, contracts, and service documents? What is the distribution of margins across different profit centers and organizational units? How do currency fluctuations affect the company's financial performance? What are the key drivers of variable and fixed amounts in company code currency? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

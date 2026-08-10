@@ -1,29 +1,38 @@
 ---
 name: I_ETOPROJMARGOVWCUBE
-description: "ETO Project Margin - Cube"
+description: "This CDS view is designed to provide a comprehensive overview of project margins within an Enterprise Project context. It aggregates financial data related to project costs, revenues, and margins, allowing for detailed analysis of project financial performance. The view integrates various financial and project-related data sources to offer insights into the economic aspects of projects, including actual and planned costs, revenues, and margins. This CDS view provides the data to answer the following business questions: What is the overall financial performance of enterprise projects in terms of margins? How do actual costs and revenues compare to planned figures for specific projects? What are the recognized and deferred revenues and costs associated with projects? How do different financial elements such as overheads and adjustments impact project margins? What is the status of unbilled revenues and work-in-progress amounts for projects? How do project margins vary across different fiscal periods and organizational divisions? What are the contributions of specific products, customers, and sales orders to project margins? How do project managers and other stakeholders influence project financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJMARGOVWCUBE')/$value
-semantic_en: "ETO Project Margin - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of project margins within an Enterprise Project context. It aggregates financial data related to project costs, revenues, and margins, allowing for detailed analysis of project financial performance. The view integrates various financial and project-related data sources to offer insights into the economic aspects of projects, including actual and planned costs, revenues, and margins. This CDS view provides the data to answer the following business questions: What is the overall financial performance of enterprise projects in terms of margins? How do actual costs and revenues compare to planned figures for specific projects? What are the recognized and deferred revenues and costs associated with projects? How do different financial elements such as overheads and adjustments impact project margins? What is the status of unbilled revenues and work-in-progress amounts for projects? How do project margins vary across different fiscal periods and organizational divisions? What are the contributions of specific products, customers, and sales orders to project margins? How do project managers and other stakeholders influence project financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+keywords:
+  - "ETO Project Margin - Cube"
+  - "ETO Project Margin - Cube"
+  - "ETO Project Margin - Cube"
 tags:
   - CO
-  - bo:project
+  - bo:businesspartner
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - customer
   - interface-view
   - lob:controlling
   - lob:finance
+  - order
+  - plan
+  - product
   - project
+  - sales-order
   - metadata-only
 ---
 # I_ETOPROJMARGOVWCUBE
 
-**ETO Project Margin - Cube**
+**This CDS view is designed to provide a comprehensive overview of project margins within an Enterprise Project context. It aggregates financial data related to project costs, revenues, and margins, allowing for detailed analysis of project financial performance. The view integrates various financial and project-related data sources to offer insights into the economic aspects of projects, including actual and planned costs, revenues, and margins. This CDS view provides the data to answer the following business questions: What is the overall financial performance of enterprise projects in terms of margins? How do actual costs and revenues compare to planned figures for specific projects? What are the recognized and deferred revenues and costs associated with projects? How do different financial elements such as overheads and adjustments impact project margins? What is the status of unbilled revenues and work-in-progress amounts for projects? How do project margins vary across different fiscal periods and organizational divisions? What are the contributions of specific products, customers, and sales orders to project margins? How do project managers and other stakeholders influence project financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -150,8 +159,10 @@ tags:
 | `MatlStkAmtInDspCrcy` |  | |  |  | `CURR(23)` | Material Stock |
 | `WIPProdnAmtInDspCrcy` |  | |  |  | `CURR(23)` | WIP - Production |
 | `DownPaymentAmountInDspCrcy` |  | |  |  | `CURR(23)` | Open Down Payment Amount in Display Currency |
-| `MnlContrAccrIncStatAmtInDC` |  | |  |  | `CURR(23)` | Manual Contract Accrual (I/S) |
+| `MnlContrAccrIncStatAmtInDC` |  | |  |  | `CURR(23)` | Manual Contract Accruals (I/S) |
 | `ImminentLossRsrvAdjAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves Adj. |
 | `ImmntLossRsrvBalShtAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves (B/S) |
 | `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document |
 | `ProjectUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `SalesDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `ResultAnalysisInternalID` |  | |  |  | `CHAR(6)` | Results Analysis Key |

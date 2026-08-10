@@ -1,13 +1,13 @@
 ---
 name: I_MTMADJUSTMENTTYPET
-description: "Mark To Market Adjustment Type Name - Text"
+description: "MtM Adjustment Type Name - Text"
 app_component: LO-CMM-BF
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MTMADJUSTMENTTYPET')/$value
-semantic_en: "Mark To Market Adjustment Type Name - Text"
+semantic_en: "MtM Adjustment Type Name - Text"
 tags:
   - LO
   - component:LO-CMM-BF
@@ -20,7 +20,7 @@ tags:
 ---
 # I_MTMADJUSTMENTTYPET
 
-**Mark To Market Adjustment Type Name - Text**
+**MtM Adjustment Type Name - Text**
 
 | Property | Value |
 |---|---|

@@ -335,3 +335,5 @@ tags:
 | `docstat` |  | |  |  | `CHAR(1)` |  |
 | `session_id` |  | |  |  | `CHAR(30)` |  |
 | `timestamp` |  | |  |  | `DEC(15)` |  |
+| `tra_00055` |  | |  |  | `CHAR(1)` |  |
+| `sva_00055` |  | |  |  | `CHAR(1)` |  |

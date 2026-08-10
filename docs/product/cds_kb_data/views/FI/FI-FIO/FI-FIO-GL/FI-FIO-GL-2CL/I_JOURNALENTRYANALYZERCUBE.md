@@ -1,30 +1,34 @@
 ---
 name: I_JOURNALENTRYANALYZERCUBE
-description: "Journal Entry Analyzer - Cube"
+description: "The CDS entity I_JournalEntryAnalyzerCube is an analytical cube that provides insights into journal entries in the financial system. It allows detailed analysis of financial transactions using dimensions like company code, fiscal year, ledger, and general ledger accounts. The entity supports SQL data sourcing and analytical reporting, making it suitable for financial data aggregation and visualization. It includes associations with master data entities like cost centers, profit centers, and currencies to enrich the analysis. It also supports evaluating amounts in multiple currencies and units of measure, ensuring comprehensive financial reporting. This CDS view provides the data to answer the following business questions: What is the total debit and credit amount in company code currency for a specific fiscal year? Which general ledger accounts are most frequently used in journal entries? What is the distribution of journal entries across different company codes and fiscal periods? How do the amounts in transaction currency compare to amounts in global currency for journal entries? Which cost centers and profit centers are associated with the highest transaction amounts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-FIO-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_JOURNALENTRYANALYZERCUBE')/$value
-semantic_en: "Journal Entry Analyzer - Cube"
+semantic_en: "The CDS entity I_JournalEntryAnalyzerCube is an analytical cube that provides insights into journal entries in the financial system. It allows detailed analysis of financial transactions using dimensions like company code, fiscal year, ledger, and general ledger accounts. The entity supports SQL data sourcing and analytical reporting, making it suitable for financial data aggregation and visualization. It includes associations with master data entities like cost centers, profit centers, and currencies to enrich the analysis. It also supports evaluating amounts in multiple currencies and units of measure, ensuring comprehensive financial reporting. This CDS view provides the data to answer the following business questions: What is the total debit and credit amount in company code currency for a specific fiscal year? Which general ledger accounts are most frequently used in journal entries? What is the distribution of journal entries across different company codes and fiscal periods? How do the amounts in transaction currency compare to amounts in global currency for journal entries? Which cost centers and profit centers are associated with the highest transaction amounts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "Journal Entry Analyzer - Cube"
   - "Journal Entry Analyzer - Cube"
   - "Journal Entry Analyzer - Cube"
 tags:
   - FI
+  - account
+  - bo:businesspartner
   - component:FI-FIO-GL-2CL
   - FI-FIO
   - FI-FIO-GL
   - FI-FIO-GL-2CL
   - interface-view
   - lob:finance
+  - master-data
+  - transaction
   - metadata-only
 ---
 # I_JOURNALENTRYANALYZERCUBE
 
-**Journal Entry Analyzer - Cube**
+**The CDS entity I_JournalEntryAnalyzerCube is an analytical cube that provides insights into journal entries in the financial system. It allows detailed analysis of financial transactions using dimensions like company code, fiscal year, ledger, and general ledger accounts. The entity supports SQL data sourcing and analytical reporting, making it suitable for financial data aggregation and visualization. It includes associations with master data entities like cost centers, profit centers, and currencies to enrich the analysis. It also supports evaluating amounts in multiple currencies and units of measure, ensuring comprehensive financial reporting. This CDS view provides the data to answer the following business questions: What is the total debit and credit amount in company code currency for a specific fiscal year? Which general ledger accounts are most frequently used in journal entries? What is the distribution of journal entries across different company codes and fiscal periods? How do the amounts in transaction currency compare to amounts in global currency for journal entries? Which cost centers and profit centers are associated with the highest transaction amounts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

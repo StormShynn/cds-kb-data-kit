@@ -296,3 +296,5 @@ tags:
 | `docstat` |  | |  |  | `CHAR(1)` |  |
 | `session_id` |  | |  |  | `CHAR(30)` |  |
 | `timestamp` |  | |  |  | `DEC(15)` |  |
+| `tra_stdproject` |  | |  |  | `CHAR(24)` |  |
+| `sva_stdproject` |  | |  |  | `CHAR(1)` |  |

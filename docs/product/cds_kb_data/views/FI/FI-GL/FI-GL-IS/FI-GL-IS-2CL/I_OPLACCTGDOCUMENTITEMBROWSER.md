@@ -115,7 +115,7 @@ tags:
 | `InvoiceList` |  | |  |  | `NUMC(8)` | Invoice List |
 | `BillOfExchangeUsage` |  | |  |  | `CHAR(1)` | Bill of Exchange Usage Type |
 | `DunningKey` |  | |  |  | `CHAR(1)` | Dunning Key |
-| `DunningBlockingReason` |  | |  |  | `CHAR(1)` | Dunning Blocking Reason |
+| `DunningBlockingReason` |  | |  |  | `CHAR(1)` | Dunning Block Reason |
 | `LastDunningDate` |  | |  |  | `DATS(8)` | Date of Last Dunning Notice |
 | `DunningLevel` |  | |  |  | `NUMC(1)` | Dunning Level |
 | `DunningArea` |  | |  |  | `CHAR(2)` | Dunning Area |

@@ -35,4 +35,4 @@ tags:
 | `CollateralObjectCategory` |  | |  |  | `CHAR(6)` | Object Category |
 | `CollateralObjClassification` |  | |  |  | `CHAR(6)` | Classification |
 | `Language` |  | |  |  | `LANG(1)` | Language in which Description is Required |
-| `CollateralObjClassfctnText` |  | |  |  | `CHAR(40)` | Feature of the object type/ Object classification |
+| `CollateralObjClassfctnText` |  | |  |  | `CHAR(40)` |  Feature of the object type/ Object classification |

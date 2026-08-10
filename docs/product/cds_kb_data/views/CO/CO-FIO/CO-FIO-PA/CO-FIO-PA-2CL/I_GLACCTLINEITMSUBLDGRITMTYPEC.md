@@ -1,13 +1,13 @@
 ---
 name: I_GLACCTLINEITMSUBLDGRITMTYPEC
-description: "General Ledger Account Line Item based on SubLedger Item Type - Cube"
+description: "This CDS view provides a comprehensive analytical cube for General Ledger (G/L) account line items, specifically focusing on sub-ledger item types. It aggregates financial data across various dimensions such as company code, fiscal year, profit center, and more, allowing for detailed financial analysis and reporting. This CDS view provides the data to answer the following business questions: What are the G/L account line items based on specific sub-ledger item types? How do financial figures vary across different currencies, such as global currency and company code currency? What are the financial impacts of specific sub-ledger account line item types, such as input price variance or lot size variance? How do financial transactions distribute across different organizational dimensions like profit centers, sales organizations, and segments? What is the financial performance over different fiscal periods and years? How do sales orders and documents relate to financial postings in the G/L accounts? What are the financial implications of specific business transactions and account assignments? How do financial figures align with specific projects, orders, and contracts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTLINEITMSUBLDGRITMTYPEC')/$value
-semantic_en: "General Ledger Account Line Item based on SubLedger Item Type - Cube"
+semantic_en: "This CDS view provides a comprehensive analytical cube for General Ledger (G/L) account line items, specifically focusing on sub-ledger item types. It aggregates financial data across various dimensions such as company code, fiscal year, profit center, and more, allowing for detailed financial analysis and reporting. This CDS view provides the data to answer the following business questions: What are the G/L account line items based on specific sub-ledger item types? How do financial figures vary across different currencies, such as global currency and company code currency? What are the financial impacts of specific sub-ledger account line item types, such as input price variance or lot size variance? How do financial transactions distribute across different organizational dimensions like profit centers, sales organizations, and segments? What is the financial performance over different fiscal periods and years? How do sales orders and documents relate to financial postings in the G/L accounts? What are the financial implications of specific business transactions and account assignments? How do financial figures align with specific projects, orders, and contracts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "GL Account Line Item Calculated Based on SubLedger Item Type"
   - "GL Account Line Item Calculated Based on SubLedger Item Type"
@@ -15,18 +15,25 @@ keywords:
 tags:
   - CO
   - account
+  - bo:companycode
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - contract
+  - document
   - interface-view
   - lob:controlling
   - lob:finance
+  - order
+  - project
+  - sales-order
+  - transaction
   - metadata-only
 ---
 # I_GLACCTLINEITMSUBLDGRITMTYPEC
 
-**General Ledger Account Line Item based on SubLedger Item Type - Cube**
+**This CDS view provides a comprehensive analytical cube for General Ledger (G/L) account line items, specifically focusing on sub-ledger item types. It aggregates financial data across various dimensions such as company code, fiscal year, profit center, and more, allowing for detailed financial analysis and reporting. This CDS view provides the data to answer the following business questions: What are the G/L account line items based on specific sub-ledger item types? How do financial figures vary across different currencies, such as global currency and company code currency? What are the financial impacts of specific sub-ledger account line item types, such as input price variance or lot size variance? How do financial transactions distribute across different organizational dimensions like profit centers, sales organizations, and segments? What is the financial performance over different fiscal periods and years? How do sales orders and documents relate to financial postings in the G/L accounts? What are the financial implications of specific business transactions and account assignments? How do financial figures align with specific projects, orders, and contracts? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

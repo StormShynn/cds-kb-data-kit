@@ -1,29 +1,39 @@
 ---
 name: I_ETOPROJBDGTAVAILYCTRLCUBE
-description: "ETO Prj Budget AvailabilityCtrl - Cube"
+description: "This CDS view is designed to provide a comprehensive analytical cube for monitoring and controlling the budget availability of Enterprise Project Management (ETO) projects. It aggregates financial data related to project budgets, actual costs, planned costs, and commitments, allowing for detailed analysis and reporting on project financials. This CDS view provides the data to answer the following business questions: What is the current budget availability for specific ETO projects? How do actual costs compare to planned costs for a given project? What are the total committed amounts for projects, and how do they impact budget availability? How are project costs distributed across different fiscal periods and profit centers? What is the financial impact of sales orders and purchasing documents on project budgets? How do different organizational units, such as sales organizations and distribution channels, affect project financials? What is the role of specific project managers and business partners in managing project budgets? How do various financial planning and accounting documents contribute to the overall project budget control? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ETOPROJBDGTAVAILYCTRLCUBE')/$value
-semantic_en: "ETO Prj Budget AvailabilityCtrl - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive analytical cube for monitoring and controlling the budget availability of Enterprise Project Management (ETO) projects. It aggregates financial data related to project budgets, actual costs, planned costs, and commitments, allowing for detailed analysis and reporting on project financials. This CDS view provides the data to answer the following business questions: What is the current budget availability for specific ETO projects? How do actual costs compare to planned costs for a given project? What are the total committed amounts for projects, and how do they impact budget availability? How are project costs distributed across different fiscal periods and profit centers? What is the financial impact of sales orders and purchasing documents on project budgets? How do different organizational units, such as sales organizations and distribution channels, affect project financials? What is the role of specific project managers and business partners in managing project budgets? How do various financial planning and accounting documents contribute to the overall project budget control? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+keywords:
+  - "ETO Prj Budget AvailabilityCtrl - Cube"
+  - "ETO Prj Budget AvailabilityCtrl - Cube"
+  - "ETO Prj Budget AvailabilityCtrl - Cube"
 tags:
   - CO
-  - bo:project
+  - account
+  - bo:companycode
   - budget
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - document
   - interface-view
   - lob:controlling
   - lob:finance
+  - order
+  - plan
+  - project
+  - sales-order
   - metadata-only
 ---
 # I_ETOPROJBDGTAVAILYCTRLCUBE
 
-**ETO Prj Budget AvailabilityCtrl - Cube**
+**This CDS view is designed to provide a comprehensive analytical cube for monitoring and controlling the budget availability of Enterprise Project Management (ETO) projects. It aggregates financial data related to project budgets, actual costs, planned costs, and commitments, allowing for detailed analysis and reporting on project financials. This CDS view provides the data to answer the following business questions: What is the current budget availability for specific ETO projects? How do actual costs compare to planned costs for a given project? What are the total committed amounts for projects, and how do they impact budget availability? How are project costs distributed across different fiscal periods and profit centers? What is the financial impact of sales orders and purchasing documents on project budgets? How do different organizational units, such as sales organizations and distribution channels, affect project financials? What is the role of specific project managers and business partners in managing project budgets? How do various financial planning and accounting documents contribute to the overall project budget control? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

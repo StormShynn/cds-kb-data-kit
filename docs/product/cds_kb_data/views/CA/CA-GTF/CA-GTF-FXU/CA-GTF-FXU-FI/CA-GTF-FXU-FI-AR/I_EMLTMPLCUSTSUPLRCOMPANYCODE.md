@@ -1,28 +1,32 @@
 ---
 name: I_EMLTMPLCUSTSUPLRCOMPANYCODE
-description: "Email Template Data Provider"
+description: "This CDS view provides data for email templates used to communicate with customers and suppliers. You can use this view to access customer and supplier information, such as names, addresses, contact details, and authorization groups, which can be incorporated into automated email communications. This CDS view provides the data to answer the following business questions: What are the contact details for a specific customer or supplier within a given company code? Which accounting clerk is responsible for a particular customer or supplier account? Which authorization groups are assigned to customers and suppliers for email communication purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CA-GTF-FXU-FI-AR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EMLTMPLCUSTSUPLRCOMPANYCODE')/$value
-semantic_en: "Email Template Data Provider"
+semantic_en: "This CDS view provides data for email templates used to communicate with customers and suppliers. You can use this view to access customer and supplier information, such as names, addresses, contact details, and authorization groups, which can be incorporated into automated email communications. This CDS view provides the data to answer the following business questions: What are the contact details for a specific customer or supplier within a given company code? Which accounting clerk is responsible for a particular customer or supplier account? Which authorization groups are assigned to customers and suppliers for email communication purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - CA
+  - account
+  - bo:businesspartner
   - CA-GTF
   - CA-GTF-FXU
   - CA-GTF-FXU-FI
   - CA-GTF-FXU-FI-AR
   - component:CA-GTF-FXU-FI-AR
+  - customer
   - interface-view
   - lob:cross_application components
   - lob:finance
+  - supplier
   - metadata-only
 ---
 # I_EMLTMPLCUSTSUPLRCOMPANYCODE
 
-**Email Template Data Provider**
+**This CDS view provides data for email templates used to communicate with customers and suppliers. You can use this view to access customer and supplier information, such as names, addresses, contact details, and authorization groups, which can be incorporated into automated email communications. This CDS view provides the data to answer the following business questions: What are the contact details for a specific customer or supplier within a given company code? Which accounting clerk is responsible for a particular customer or supplier account? Which authorization groups are assigned to customers and suppliers for email communication purposes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

@@ -34,7 +34,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WBSElementHierarchy` |  | |  |  | `CHAR(42)` | WBS Element Hierarchy |
+| `WBSElementHierarchy` |  | |  |  | `CHAR(42)` |  WBS Element Hierarchy |
 | `HierarchyNodeUUID` |  | |  |  | `RAW(16)` | Hierarchy Node GUID |
 | `WBSElementInternalID` |  | |  |  | `NUMC(8)` | Internal WBS Element ID |
 | `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |

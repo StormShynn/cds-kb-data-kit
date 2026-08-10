@@ -1,13 +1,13 @@
 ---
 name: I_FINTRANSAMTCUBE
-description: "Financial Transaction Amount - Cube"
+description: "Fin Trans Amt - Cube"
 app_component: FIN-FSCM-TRM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINTRANSAMTCUBE')/$value
-semantic_en: "Financial Transaction Amount - Cube"
+semantic_en: "Fin Trans Amt - Cube"
 tags:
   - FIN
   - bo:companycode
@@ -17,12 +17,11 @@ tags:
   - FIN-FSCM-TRM-2CL
   - interface-view
   - lob:finance
-  - transaction
   - metadata-only
 ---
 # I_FINTRANSAMTCUBE
 
-**Financial Transaction Amount - Cube**
+**Fin Trans Amt - Cube**
 
 | Property | Value |
 |---|---|

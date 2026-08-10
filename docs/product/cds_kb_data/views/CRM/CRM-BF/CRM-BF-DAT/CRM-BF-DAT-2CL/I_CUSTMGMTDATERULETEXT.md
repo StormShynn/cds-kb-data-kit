@@ -35,6 +35,6 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CustMgmtDateRuleName` |  | |  |  | `CHAR(12)` | Object Name |
+| `CustMgmtDateRuleName` |  | |  |  | `CHAR(12)` | Date Rule |
 | `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `CustMgmtDateRuleText` |  | |  |  | `CHAR(50)` | Descriptive Text for Date Rule |
+| `CustMgmtDateRuleText` |  | |  |  | `CHAR(50)` | Date Rule Description |

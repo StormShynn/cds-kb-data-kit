@@ -1,15 +1,16 @@
 ---
 name: I_CRDTRISKCLASSCHANGESITUATION
-description: "Credit Risk Class Change"
+description: "This CDS view is designed to track changes in the credit risk class of business partners. It provides a detailed view of the credit risk class transitions, including the previous and current risk classes, the date and time of the change, and associated business partner information. This view is useful for monitoring and analyzing credit risk adjustments over time. This CDS view provides the data to answer the following business questions: What are the changes in the credit risk class for a specific business partner? When did the credit risk class change occur for a business partner? What was the previous credit risk class before the change? What is the current credit risk class after the change? What is the criticality adjustment value associated with the credit risk class change? What credit score and limit calculation rule is applied to the business partner? Which credit management business partner group does the business partner belong to? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FIO-CCD-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRDTRISKCLASSCHANGESITUATION')/$value
-semantic_en: "Credit Risk Class Change"
+semantic_en: "This CDS view is designed to track changes in the credit risk class of business partners. It provides a detailed view of the credit risk class transitions, including the previous and current risk classes, the date and time of the change, and associated business partner information. This view is useful for monitoring and analyzing credit risk adjustments over time. This CDS view provides the data to answer the following business questions: What are the changes in the credit risk class for a specific business partner? When did the credit risk class change occur for a business partner? What was the previous credit risk class before the change? What is the current credit risk class after the change? What is the criticality adjustment value associated with the credit risk class change? What credit score and limit calculation rule is applied to the business partner? Which credit management business partner group does the business partner belong to? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
+  - bo:companycode
   - component:FIN-FIO-CCD-CR-2CL
   - FIN-FIO
   - FIN-FIO-CCD
@@ -21,7 +22,7 @@ tags:
 ---
 # I_CRDTRISKCLASSCHANGESITUATION
 
-**Credit Risk Class Change**
+**This CDS view is designed to track changes in the credit risk class of business partners. It provides a detailed view of the credit risk class transitions, including the previous and current risk classes, the date and time of the change, and associated business partner information. This view is useful for monitoring and analyzing credit risk adjustments over time. This CDS view provides the data to answer the following business questions: What are the changes in the credit risk class for a specific business partner? When did the credit risk class change occur for a business partner? What was the previous credit risk class before the change? What is the current credit risk class after the change? What is the criticality adjustment value associated with the credit risk class change? What credit score and limit calculation rule is applied to the business partner? Which credit management business partner group does the business partner belong to? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

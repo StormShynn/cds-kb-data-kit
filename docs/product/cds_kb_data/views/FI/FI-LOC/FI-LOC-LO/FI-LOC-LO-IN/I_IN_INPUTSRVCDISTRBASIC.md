@@ -1,27 +1,29 @@
 ---
 name: I_IN_INPUTSRVCDISTRBASIC
-description: "Input Service Distribution Basic CDS"
+description: "This CDS view provides the complete list of ISD invoices and it's credit note distribution data. What are the ISD invoices distributed under the company code? What are the input service distribution business places where input tax credit is distributed for an ISD invoice? What are the taxes applied for ISD invoices? When is the ISD invoice posted in system? For which ISD invoice a credit note is created and distributed?"
 app_component: FI-LOC-LO-IN
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_IN_INPUTSRVCDISTRBASIC')/$value
-semantic_en: "Input Service Distribution Basic CDS"
+semantic_en: "This CDS view provides the complete list of ISD invoices and it's credit note distribution data. What are the ISD invoices distributed under the company code? What are the input service distribution business places where input tax credit is distributed for an ISD invoice? What are the taxes applied for ISD invoices? When is the ISD invoice posted in system? For which ISD invoice a credit note is created and distributed?"
 tags:
   - FI
+  - bo:billingdocument
   - component:FI-LOC-LO-IN
   - FI-LOC
   - FI-LOC-LO
   - FI-LOC-LO-IN
   - interface-view
+  - invoice
   - lob:finance
   - lob:logistics general
   - metadata-only
 ---
 # I_IN_INPUTSRVCDISTRBASIC
 
-**Input Service Distribution Basic CDS**
+**This CDS view provides the complete list of ISD invoices and it's credit note distribution data. What are the ISD invoices distributed under the company code? What are the input service distribution business places where input tax credit is distributed for an ISD invoice? What are the taxes applied for ISD invoices? When is the ISD invoice posted in system? For which ISD invoice a credit note is created and distributed?**
 
 | Property | Value |
 |---|---|

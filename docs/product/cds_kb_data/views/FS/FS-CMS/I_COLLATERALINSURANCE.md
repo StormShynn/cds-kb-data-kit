@@ -37,7 +37,7 @@ tags:
 | `CollateralInsuranceType` |  | |  |  | `CHAR(6)` | Insurance Type |
 | `CollateralInsuranceIdentifier` |  | |  |  | `CHAR(40)` | Insurance ID |
 | `CollateralInsuranceDescription` |  | |  |  | `CHAR(30)` | Insurance Description |
-| `ColltrlInsuranceBankTaxDebit` |  | |  |  | `CHAR(1)` | Insurance tax to the debit of the bank |
+| `ColltrlInsuranceBankTaxDebit` |  | |  |  | `CHAR(1)` |  Insurance tax to the debit of the bank |
 | `ColltrlInsuranceSettlementType` |  | |  |  | `CHAR(6)` | Type of settlement |
 | `CollateralInsuranceSumAmount` |  | |  |  | `CURR(17)` | Insurance Sum |
 | `CollateralInsuranceSumCurrency` |  | |  |  | `CUKY(5)` | Insurance Currency |

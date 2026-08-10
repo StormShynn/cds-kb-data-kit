@@ -1,13 +1,13 @@
 ---
 name: I_EXPNSETTLMTITEMPLAINLONGTEXT
-description: "Plain Long Text for Expense Settlement Item"
+description: "Plain Long Text for Expense Settlmt Item"
 app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTITEMPLAINLONGTEXT')/$value
-semantic_en: "Plain Long Text for Expense Settlement Item"
+semantic_en: "Plain Long Text for Expense Settlmt Item"
 tags:
   - LO
   - component:LO-AB
@@ -18,7 +18,7 @@ tags:
 ---
 # I_EXPNSETTLMTITEMPLAINLONGTEXT
 
-**Plain Long Text for Expense Settlement Item**
+**Plain Long Text for Expense Settlmt Item**
 
 | Property | Value |
 |---|---|

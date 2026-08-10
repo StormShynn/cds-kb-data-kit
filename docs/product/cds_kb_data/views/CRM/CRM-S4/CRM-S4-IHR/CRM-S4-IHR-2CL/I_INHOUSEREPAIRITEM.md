@@ -8,6 +8,8 @@ system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INHOUSEREPAIRITEM')/$value
 semantic_en: "In-House Service Item"
+keywords:
+  - "In-House Service Item"
 tags:
   - CRM
   - component:CRM-S4-IHR-2CL
@@ -56,6 +58,7 @@ tags:
 | `InhRepairItemIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
 | `InhRepairReferenceEquipment` |  | |  |  | `CHAR(18)` | Equipment Number |
 | `SerialNumber` |  | |  |  | `CHAR(18)` | Serial Number of Equipment |
+| `InhRepairItemRejectionReason` |  | |  |  | `CHAR(2)` | Cancellation Reason Code |
 | `InhRepairType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
 | `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
 | `ReferenceCustomerReturnItem` |  | |  |  | `NUMC(6)` | Item number of the SD document |

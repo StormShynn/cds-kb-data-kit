@@ -1,27 +1,26 @@
 ---
 name: I_INSPSPECVERSIONLONGTEXT
-description: "This CDS view provides access to the data of a master inspection characteristic version. This CDS view provides the data to answer the following business questions: Which master inspection characteristics exist in a plant? Which limits and tolerances are defined for a quantitative characteristic? Which inspection methods and catalogs are assigned to a master inspection characteristic? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+description: "This CDS view provides access to the data of a master inspection characteristic version."
 app_component: QM-PT-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INSPSPECVERSIONLONGTEXT')/$value
-semantic_en: "This CDS view provides access to the data of a master inspection characteristic version. This CDS view provides the data to answer the following business questions: Which master inspection characteristics exist in a plant? Which limits and tolerances are defined for a quantitative characteristic? Which inspection methods and catalogs are assigned to a master inspection characteristic? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_en: "This CDS view provides access to the data of a master inspection characteristic version."
 tags:
   - QM
-  - bo:companycode
+  - bo:project
   - component:QM-PT-2CL
   - interface-view
   - lob:quality management
-  - plan
   - QM-PT
   - QM-PT-2CL
   - metadata-only
 ---
 # I_INSPSPECVERSIONLONGTEXT
 
-**This CDS view provides access to the data of a master inspection characteristic version. This CDS view provides the data to answer the following business questions: Which master inspection characteristics exist in a plant? Which limits and tolerances are defined for a quantitative characteristic? Which inspection methods and catalogs are assigned to a master inspection characteristic? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
+**This CDS view provides access to the data of a master inspection characteristic version.**
 
 | Property | Value |
 |---|---|

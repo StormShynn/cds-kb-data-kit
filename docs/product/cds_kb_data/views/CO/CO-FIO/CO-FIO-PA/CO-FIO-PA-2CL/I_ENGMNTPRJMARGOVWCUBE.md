@@ -1,33 +1,39 @@
 ---
 name: I_ENGMNTPRJMARGOVWCUBE
-description: "Engagement Project Margin - Cube"
+description: "This CDS view is designed to provide a comprehensive overview of engagement project margins by aggregating financial and project-related data. It serves as an analytical cube that allows for detailed analysis of project financials, including revenue, costs, and margins, across various dimensions such as fiscal year, company code, and project details. This CDS view provides the data to answer the following business questions: What is the overall financial performance of engagement projects in terms of revenue, costs, and margins? How do project margins vary across different fiscal years and company codes? What are the recognized revenues and costs for specific projects or project managers? How do planned and actual financial figures compare for engagement projects? What are the detailed financial transactions associated with specific projects, including sales orders and service contracts? How do different cost components, such as fixed costs and overheads, contribute to the overall project margin? What is the impact of currency fluctuations on project financials when viewed in a display currency? How do project financials align with organizational structures such as profit centers, cost centers, and sales organizations? What are the quantities and values associated with work in progress (WIP) and completed work for projects? How do billing elements and work breakdown structures (WBS) influence project financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPRJMARGOVWCUBE')/$value
-semantic_en: "Engagement Project Margin - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of engagement project margins by aggregating financial and project-related data. It serves as an analytical cube that allows for detailed analysis of project financials, including revenue, costs, and margins, across various dimensions such as fiscal year, company code, and project details. This CDS view provides the data to answer the following business questions: What is the overall financial performance of engagement projects in terms of revenue, costs, and margins? How do project margins vary across different fiscal years and company codes? What are the recognized revenues and costs for specific projects or project managers? How do planned and actual financial figures compare for engagement projects? What are the detailed financial transactions associated with specific projects, including sales orders and service contracts? How do different cost components, such as fixed costs and overheads, contribute to the overall project margin? What is the impact of currency fluctuations on project financials when viewed in a display currency? How do project financials align with organizational structures such as profit centers, cost centers, and sales organizations? What are the quantities and values associated with work in progress (WIP) and completed work for projects? How do billing elements and work breakdown structures (WBS) influence project financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "Engagement Project Margin - Cube"
   - "Engagement Project Margin - Cube"
   - "Engagement Project Margin - Cube"
 tags:
   - CO
-  - bo:project
+  - billing
+  - bo:billingdocument
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - contract
   - interface-view
   - lob:controlling
   - lob:finance
+  - order
+  - plan
   - project
+  - sales-order
+  - transaction
   - metadata-only
 ---
 # I_ENGMNTPRJMARGOVWCUBE
 
-**Engagement Project Margin - Cube**
+**This CDS view is designed to provide a comprehensive overview of engagement project margins by aggregating financial and project-related data. It serves as an analytical cube that allows for detailed analysis of project financials, including revenue, costs, and margins, across various dimensions such as fiscal year, company code, and project details. This CDS view provides the data to answer the following business questions: What is the overall financial performance of engagement projects in terms of revenue, costs, and margins? How do project margins vary across different fiscal years and company codes? What are the recognized revenues and costs for specific projects or project managers? How do planned and actual financial figures compare for engagement projects? What are the detailed financial transactions associated with specific projects, including sales orders and service contracts? How do different cost components, such as fixed costs and overheads, contribute to the overall project margin? What is the impact of currency fluctuations on project financials when viewed in a display currency? How do project financials align with organizational structures such as profit centers, cost centers, and sales organizations? What are the quantities and values associated with work in progress (WIP) and completed work for projects? How do billing elements and work breakdown structures (WBS) influence project financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -183,3 +189,6 @@ tags:
 | `ProjectManager` |  | |  |  | `CHAR(10)` | Business Partner Number |
 | `TechnicalCompletionDate` |  | |  |  | `DATS(8)` | Technically complete date |
 | `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
+| `MnlContrAccrIncStatAmtInDC` |  | |  |  | `CURR(23)` | Manual Contract Accruals (I/S) |
+| `ImminentLossRsrvAdjAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves Adj. |
+| `ImmntLossRsrvBalShtAmtInDC` |  | |  |  | `CURR(23)` | Imminent Loss Reserves (B/S) |

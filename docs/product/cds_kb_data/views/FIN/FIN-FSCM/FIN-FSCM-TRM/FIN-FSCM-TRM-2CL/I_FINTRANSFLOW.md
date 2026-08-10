@@ -138,3 +138,4 @@ tags:
 | `TrsyTransacMgmtBizTransaction` |  | |  |  | `CHAR(60)` | Business Transaction Identifier in Transaction Management |
 | `PaymentRequest` |  | |  |  | `CHAR(10)` | Key Number for Payment Request |
 | `FinTransFlowPostingDate` |  | |  |  | `DATS(8)` | Flow Posting Date |
+| `CashFlowCalculationCategory` |  | |  |  | `CHAR(4)` | Calculation Category for Cash Flow Calculator |

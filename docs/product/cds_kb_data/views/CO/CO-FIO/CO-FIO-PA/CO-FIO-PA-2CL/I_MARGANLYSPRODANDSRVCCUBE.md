@@ -1,33 +1,39 @@
 ---
 name: I_MARGANLYSPRODANDSRVCCUBE
-description: "Product and Service Margins - Cube"
+description: "This CDS view provides a comprehensive analysis of product and service margins by aggregating financial and accounting data. It integrates various dimensions such as fiscal year, company code, service documents, and account assignments to offer insights into revenue, costs, and margins associated with products and services. This CDS view provides the data to answer the following business questions: What are the recognized revenues and costs for products and services within a specific fiscal year and company code? How do the margins for different products and services compare across various business solution orders and service contracts? What are the adjustments in revenue and cost of goods sold (COGS) for the company code currency? How much revenue and COGS are deferred or accrued, and what is the impact on the financial statements? What are the imminent loss reserves and sales deduction reserves for the company? How do different account assignment types (for examle., project, order, service) contribute to the overall financial performance? What is the impact of down payments and manual contract accruals on the profit and loss items? How do different organizational dimensions such as profit centres, sales organizations, and distribution channels affect the financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MARGANLYSPRODANDSRVCCUBE')/$value
-semantic_en: "Product and Service Margins - Cube"
+semantic_en: "This CDS view provides a comprehensive analysis of product and service margins by aggregating financial and accounting data. It integrates various dimensions such as fiscal year, company code, service documents, and account assignments to offer insights into revenue, costs, and margins associated with products and services. This CDS view provides the data to answer the following business questions: What are the recognized revenues and costs for products and services within a specific fiscal year and company code? How do the margins for different products and services compare across various business solution orders and service contracts? What are the adjustments in revenue and cost of goods sold (COGS) for the company code currency? How much revenue and COGS are deferred or accrued, and what is the impact on the financial statements? What are the imminent loss reserves and sales deduction reserves for the company? How do different account assignment types (for examle., project, order, service) contribute to the overall financial performance? What is the impact of down payments and manual contract accruals on the profit and loss items? How do different organizational dimensions such as profit centres, sales organizations, and distribution channels affect the financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 keywords:
   - "Product and Service Margins - Cube"
   - "Product and Service Margins - Cube"
   - "Product and Service Margins - Cube"
 tags:
   - CO
-  - bo:material
+  - account
+  - bo:companycode
   - CO-FIO
   - CO-FIO-PA
   - CO-FIO-PA-2CL
   - component:CO-FIO-PA-2CL
+  - contract
+  - document
   - interface-view
   - lob:controlling
   - lob:finance
+  - order
+  - payment
   - product
+  - project
   - metadata-only
 ---
 # I_MARGANLYSPRODANDSRVCCUBE
 
-**Product and Service Margins - Cube**
+**This CDS view provides a comprehensive analysis of product and service margins by aggregating financial and accounting data. It integrates various dimensions such as fiscal year, company code, service documents, and account assignments to offer insights into revenue, costs, and margins associated with products and services. This CDS view provides the data to answer the following business questions: What are the recognized revenues and costs for products and services within a specific fiscal year and company code? How do the margins for different products and services compare across various business solution orders and service contracts? What are the adjustments in revenue and cost of goods sold (COGS) for the company code currency? How much revenue and COGS are deferred or accrued, and what is the impact on the financial statements? What are the imminent loss reserves and sales deduction reserves for the company? How do different account assignment types (for examle., project, order, service) contribute to the overall financial performance? What is the impact of down payments and manual contract accruals on the profit and loss items? How do different organizational dimensions such as profit centres, sales organizations, and distribution channels affect the financial outcomes? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

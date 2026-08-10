@@ -1,26 +1,32 @@
 ---
 name: I_JOURNALENTRYITEMBASIC
-description: "Journal Entry Item Basic"
+description: "This CDS view is designed to provide a comprehensive and detailed representation of journal entry items in a financial system. It aggregates and associates various financial and controlling data elements, such as ledger, company code, cost center, profit center, and more, to facilitate analytical and reporting capabilities. The view is structured to support analytical processing and is intended to be used as a data source for reporting and analysis in financial contexts.. This CDS view provides the data to answer the following business questions: What are the details of journal entries for a specific fiscal year and period? How can I analyze financial transactions by ledger, company code, or controlling area? What are the amounts in different currencies (transaction, company code, global) for journal entries? How can I view journal entries by cost center, profit center, or business area? What are the associated projects, WBS elements, and internal orders for specific journal entries? How can I analyze journal entries by customer, sales organization, or distribution channel? What are the partner-related financial details, such as partner company code or partner cost center, for journal entries? How can I access text descriptions for various financial dimensions like GL accounts, cost centers, and profit centers? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_JOURNALENTRYITEMBASIC')/$value
-semantic_en: "Journal Entry Item Basic"
+semantic_en: "This CDS view is designed to provide a comprehensive and detailed representation of journal entry items in a financial system. It aggregates and associates various financial and controlling data elements, such as ledger, company code, cost center, profit center, and more, to facilitate analytical and reporting capabilities. The view is structured to support analytical processing and is intended to be used as a data source for reporting and analysis in financial contexts.. This CDS view provides the data to answer the following business questions: What are the details of journal entries for a specific fiscal year and period? How can I analyze financial transactions by ledger, company code, or controlling area? What are the amounts in different currencies (transaction, company code, global) for journal entries? How can I view journal entries by cost center, profit center, or business area? What are the associated projects, WBS elements, and internal orders for specific journal entries? How can I analyze journal entries by customer, sales organization, or distribution channel? What are the partner-related financial details, such as partner company code or partner cost center, for journal entries? How can I access text descriptions for various financial dimensions like GL accounts, cost centers, and profit centers? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
+  - account
+  - bo:businesspartner
   - component:FI-GL-IS-2CL
+  - customer
   - FI-GL
   - FI-GL-IS
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
+  - order
+  - project
+  - transaction
   - metadata-only
 ---
 # I_JOURNALENTRYITEMBASIC
 
-**Journal Entry Item Basic**
+**This CDS view is designed to provide a comprehensive and detailed representation of journal entry items in a financial system. It aggregates and associates various financial and controlling data elements, such as ledger, company code, cost center, profit center, and more, to facilitate analytical and reporting capabilities. The view is structured to support analytical processing and is intended to be used as a data source for reporting and analysis in financial contexts.. This CDS view provides the data to answer the following business questions: What are the details of journal entries for a specific fiscal year and period? How can I analyze financial transactions by ledger, company code, or controlling area? What are the amounts in different currencies (transaction, company code, global) for journal entries? How can I view journal entries by cost center, profit center, or business area? What are the associated projects, WBS elements, and internal orders for specific journal entries? How can I analyze journal entries by customer, sales organization, or distribution channel? What are the partner-related financial details, such as partner company code or partner cost center, for journal entries? How can I access text descriptions for various financial dimensions like GL accounts, cost centers, and profit centers? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
