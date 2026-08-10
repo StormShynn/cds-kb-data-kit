@@ -1,27 +1,25 @@
 ---
 name: I_CMMDTYDRVTVCONTRSPEC
-description: "Derivative Contract Specification LOF Commodity Currency"
+description: "DCS LOF Commodity Currency"
 app_component: CA-GTF-TRB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYDRVTVCONTRSPEC')/$value
-semantic_en: "Derivative Contract Specification LOF Commodity Currency"
+semantic_en: "DCS LOF Commodity Currency"
 tags:
   - CA
-  - bo:companycode
   - CA-GTF
   - CA-GTF-TRB
   - component:CA-GTF-TRB
-  - contract
   - interface-view
   - lob:cross_application components
   - metadata-only
 ---
 # I_CMMDTYDRVTVCONTRSPEC
 
-**Derivative Contract Specification LOF Commodity Currency**
+**DCS LOF Commodity Currency**
 
 | Property | Value |
 |---|---|

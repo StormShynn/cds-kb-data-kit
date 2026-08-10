@@ -1,25 +1,32 @@
 ---
 name: I_CNDNDOCSUPLRINVCDLVCOSTCATT
-description: "Cndn Doc Supplr Invc Deliv Cost Cat - Text"
+description: "This view provides supported values for condition document supplier invoice delivery cost category. The values and their meanings are: Value Meaning &nbsp; Standard Purchase Order Item X Purchase Order Delivery Cost Item To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCSUPLRINVCDLVCOSTCATT')/$value
-semantic_en: "Cndn Doc Supplr Invc Deliv Cost Cat - Text"
+semantic_en: "This view provides supported values for condition document supplier invoice delivery cost category. The values and their meanings are: Value Meaning &nbsp; Standard Purchase Order Item X Purchase Order Delivery Cost Item To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - LO
+  - bo:billingdocument
   - component:LO-GT-CHB
+  - delivery
+  - document
   - interface-view
+  - invoice
   - LO-GT
   - LO-GT-CHB
   - lob:logistics general
+  - order
+  - purchase-order
+  - supplier
   - metadata-only
 ---
 # I_CNDNDOCSUPLRINVCDLVCOSTCATT
 
-**Cndn Doc Supplr Invc Deliv Cost Cat - Text**
+**This view provides supported values for condition document supplier invoice delivery cost category. The values and their meanings are: Value Meaning &nbsp; Standard Purchase Order Item X Purchase Order Delivery Cost Item To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

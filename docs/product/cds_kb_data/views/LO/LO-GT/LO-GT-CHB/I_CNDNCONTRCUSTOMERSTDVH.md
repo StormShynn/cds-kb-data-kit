@@ -1,13 +1,13 @@
 ---
 name: I_CNDNCONTRCUSTOMERSTDVH
-description: "This CDS view exposes the values for the customer condition contracts."
+description: "This CDS view exposes the values for the Customer Condition Contracts related."
 app_component: LO-GT-CHB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCUSTOMERSTDVH')/$value
-semantic_en: "This CDS view exposes the values for the customer condition contracts."
+semantic_en: "This CDS view exposes the values for the Customer Condition Contracts related."
 tags:
   - LO
   - bo:businesspartner
@@ -22,7 +22,7 @@ tags:
 ---
 # I_CNDNCONTRCUSTOMERSTDVH
 
-**This CDS view exposes the values for the customer condition contracts.**
+**This CDS view exposes the values for the Customer Condition Contracts related.**
 
 | Property | Value |
 |---|---|

@@ -1,16 +1,15 @@
 ---
 name: I_CLFNORGANIZATIONALAREA
-description: "Organizational Area of Classification Class Type"
+description: "Organizational Area of Clfn Class Type"
 app_component: CA-CL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CLFNORGANIZATIONALAREA')/$value
-semantic_en: "Organizational Area of Classification Class Type"
+semantic_en: "Organizational Area of Clfn Class Type"
 tags:
   - CA
-  - bo:companycode
   - CA-CL
   - CA-CL-2CL
   - component:CA-CL-2CL
@@ -20,7 +19,7 @@ tags:
 ---
 # I_CLFNORGANIZATIONALAREA
 
-**Organizational Area of Classification Class Type**
+**Organizational Area of Clfn Class Type**
 
 | Property | Value |
 |---|---|

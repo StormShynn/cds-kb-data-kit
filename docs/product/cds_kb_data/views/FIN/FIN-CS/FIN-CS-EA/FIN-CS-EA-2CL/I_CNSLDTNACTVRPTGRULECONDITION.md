@@ -44,6 +44,8 @@ tags:
 | `FinancialSelection` |  | |  |  | `CHAR(32)` | Selection |
 | `ConsolidationCharacteristic` |  | |  |  | `CHAR(30)` | Characteristic |
 | `CnsldtnActiveRptgRuleSequence` |  | |  |  | `NUMC(9)` | Active Reporting Rule Sequence |
+| `FromFiscalYearPeriod` |  | |  |  | `NUMC(7)` | From Fiscal Year Period |
+| `ToFiscalYearPeriod` |  | |  |  | `NUMC(7)` | To Fiscal Year Period |
 | `CnsldtnFSItemAttributeVersion` |  | |  |  | `CHAR(3)` | FS Item Attributes Version |
 | `CnsldtnUnitAttributeVersion` |  | |  |  | `CHAR(3)` | Consolidation Unit Attributes |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
