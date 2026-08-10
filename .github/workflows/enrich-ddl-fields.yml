@@ -62,6 +62,9 @@ jobs:
 
       - name: Prepare working branch
         id: branch
+        env:
+          # Needed to check for an open PR (not just branch existence) below.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "cds-kb-bot"
           git config user.email "bot@cds-kb.local"
@@ -69,13 +72,26 @@ jobs:
           BRANCH="enrich-ddl-fields/pending"
           echo "branch=$BRANCH" >> $GITHUB_OUTPUT
 
-          if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
-            echo "ℹ️  Reusing existing pending branch (previous PR not merged yet)"
+          # Reuse the branch only if it has an OPEN PR. `gh pr view "$BRANCH"`
+          # matches merged/closed PRs too, so branch-existence alone isn't a
+          # safe signal — once a PR merges, the branch lingers and looks
+          # "pending" forever. That let two days of fetch commits (2026-08-08,
+          # 2026-08-09) get silently skipped for PR creation, then merging
+          # main into the stale branch on 2026-08-10 hit an index/ conflict
+          # (recovered manually in PR #10).
+          OPEN_PR_COUNT=$(gh pr list --head "$BRANCH" --state open --json number --jq 'length')
+
+          if [ "$OPEN_PR_COUNT" -gt 0 ]; then
+            echo "ℹ️  Reusing existing pending branch (open PR found)"
             git fetch origin "$BRANCH"
             git checkout -B "$BRANCH" "origin/$BRANCH"
             git merge "origin/${GITHUB_REF_NAME}" --no-edit -m "Merge $GITHUB_REF_NAME into $BRANCH"
           else
-            echo "ℹ️  No pending branch — starting a fresh one"
+            if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+              echo "⚠️  Pending branch exists but has no open PR (already merged/closed) — resetting it from ${GITHUB_REF_NAME}"
+            else
+              echo "ℹ️  No pending branch — starting a fresh one"
+            fi
             git checkout -b "$BRANCH"
           fi
 
@@ -121,9 +137,14 @@ jobs:
             git add ddl-field-enrichment-request.json
           fi
           git commit -m "Enrich DDL fields from Hub catalog ($(date +'%Y-%m-%d'))"
-          git push origin "$BRANCH"
+          # Force-push: the branch above may have just been reset from main
+          # (no open PR referencing the old tip), which is a non-fast-forward
+          # from the remote's perspective. Safe here — this branch is only
+          # ever written by this workflow.
+          git push --force origin "$BRANCH"
 
-          if gh pr view "$BRANCH" >/dev/null 2>&1; then
+          OPEN_PR_COUNT=$(gh pr list --head "$BRANCH" --state open --json number --jq 'length')
+          if [ "$OPEN_PR_COUNT" -gt 0 ]; then
             echo "✅ Added commit to existing PR: $BRANCH"
           else
             cat > pr_body.md <<'EOF'
