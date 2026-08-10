@@ -16740,5 +16740,16 @@
     "tags": 8,
     "error": null,
     "sourceUrl": null
+  },
+  {
+    "viewName": "ZSCV_DDICVIEW.DDLS",
+    "action": "added",
+    "timestamp": "2026-08-09T06:57:53.467Z",
+    "source": "github",
+    "fields": 5,
+    "associations": 0,
+    "tags": 0,
+    "error": null,
+    "sourceUrl": "https://github.com/alwinvandeput/zscv_search_cds_views/blob/bc7197a3c1b03cfa42769be7c35e54cc2774318b/src/zscv_ddicview.ddls.asddls"
   }
 ]
