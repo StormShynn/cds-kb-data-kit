@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T12:45:29.577Z",
+  "generatedAt": "2026-08-10T15:07:13.305Z",
   "hubContainer": "SAPS4HANACloud",
   "hubTotal": 8864,
   "localTotal": 10617,
@@ -30636,7 +30636,7 @@
       "modifiedAt": 1784095252459,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:15.489Z",
+      "lastFetchedAt": "2026-08-08T07:50:18.323Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPRIORITY')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30650,7 +30650,7 @@
       "modifiedAt": 1784095259162,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:15.632Z",
+      "lastFetchedAt": "2026-08-08T07:50:18.286Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPRIORITYTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30664,7 +30664,7 @@
       "modifiedAt": 1784095281115,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:15.781Z",
+      "lastFetchedAt": "2026-08-08T07:50:18.460Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPROCESS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30678,7 +30678,7 @@
       "modifiedAt": 1784095249545,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:16.074Z",
+      "lastFetchedAt": "2026-08-08T07:50:18.939Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEPROCESSTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30706,7 +30706,7 @@
       "modifiedAt": 1784095289402,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:16.202Z",
+      "lastFetchedAt": "2026-08-08T07:50:18.943Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEREASONS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30720,7 +30720,7 @@
       "modifiedAt": 1784095252558,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:16.347Z",
+      "lastFetchedAt": "2026-08-08T07:50:19.061Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASEREASONSTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30790,7 +30790,7 @@
       "modifiedAt": 1784095263800,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:16.618Z",
+      "lastFetchedAt": "2026-08-08T07:50:19.562Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASESTATUSPROFILE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30804,7 +30804,7 @@
       "modifiedAt": 1784095271002,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:16.777Z",
+      "lastFetchedAt": "2026-08-08T07:50:19.568Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASESTATUSPROFILETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30832,7 +30832,7 @@
       "modifiedAt": 1784095253279,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:16.913Z",
+      "lastFetchedAt": "2026-08-08T07:50:19.598Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASESYSTEMSTATUSTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30846,7 +30846,7 @@
       "modifiedAt": 1784095263558,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:17.170Z",
+      "lastFetchedAt": "2026-08-08T07:50:20.116Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASETERMINOLOGYPROFILE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30860,7 +30860,7 @@
       "modifiedAt": 1784095282871,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:17.317Z",
+      "lastFetchedAt": "2026-08-08T07:50:20.173Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASETERMINOLOGYPROFILETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30874,7 +30874,7 @@
       "modifiedAt": 1784095258939,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:17.491Z",
+      "lastFetchedAt": "2026-08-08T07:50:20.137Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASETEXTPROFILE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30888,7 +30888,7 @@
       "modifiedAt": 1784095252536,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:17.758Z",
+      "lastFetchedAt": "2026-08-08T07:50:20.743Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASETEXTPROFILETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30916,7 +30916,7 @@
       "modifiedAt": 1784095303554,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:17.863Z",
+      "lastFetchedAt": "2026-08-08T07:50:20.734Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASETYPES')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30930,7 +30930,7 @@
       "modifiedAt": 1784095263356,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:18.065Z",
+      "lastFetchedAt": "2026-08-08T07:50:20.755Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASETYPESTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -30986,7 +30986,7 @@
       "modifiedAt": 1784095919223,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:18.286Z",
+      "lastFetchedAt": "2026-08-08T07:50:21.343Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASHFLOWCUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -31014,7 +31014,7 @@
       "modifiedAt": 1784095914810,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:18.430Z",
+      "lastFetchedAt": "2026-08-08T07:50:21.316Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASHJOURNALDOCUMENT_2')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -31028,7 +31028,7 @@
       "modifiedAt": 1784095910586,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:18.592Z",
+      "lastFetchedAt": "2026-08-08T07:50:21.326Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASHLIQUIDITYACTUALFLOW')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -31042,7 +31042,7 @@
       "modifiedAt": 1784095913426,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:18.870Z",
+      "lastFetchedAt": "2026-08-08T07:50:21.894Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CASHLIQUIDITYFORECASTFLOW')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -31728,7 +31728,7 @@
       "modifiedAt": 1784095917536,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:19.003Z",
+      "lastFetchedAt": "2026-08-08T07:50:21.928Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CENTRALCLEARINGACCOUNT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32036,7 +32036,7 @@
       "modifiedAt": 1784095729017,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:19.159Z",
+      "lastFetchedAt": "2026-08-08T07:50:21.955Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CH_QUICKRESPONSEIBANCTRLDATA')/$value",
       "devExtStatus": "Released",
       "atcState": null
@@ -32050,7 +32050,7 @@
       "modifiedAt": 1784095347464,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:19.388Z",
+      "lastFetchedAt": "2026-08-08T07:50:22.493Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTER')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32064,7 +32064,7 @@
       "modifiedAt": 1784095345848,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:19.592Z",
+      "lastFetchedAt": "2026-08-08T07:50:22.521Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERALTDATE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32078,7 +32078,7 @@
       "modifiedAt": 1784095343064,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:19.798Z",
+      "lastFetchedAt": "2026-08-08T07:50:22.562Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERFUNCTION')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32092,7 +32092,7 @@
       "modifiedAt": 1784095342043,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:19.927Z",
+      "lastFetchedAt": "2026-08-08T07:50:23.052Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERFUNCTIONSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32106,7 +32106,7 @@
       "modifiedAt": 1784095344499,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:20.172Z",
+      "lastFetchedAt": "2026-08-08T07:50:23.106Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERFUNCTIONTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32120,7 +32120,7 @@
       "modifiedAt": 1784095345707,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:20.366Z",
+      "lastFetchedAt": "2026-08-08T07:50:23.160Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERHIERARCHY')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32134,7 +32134,7 @@
       "modifiedAt": 1784095347370,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:20.509Z",
+      "lastFetchedAt": "2026-08-08T07:50:23.668Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERLOGACCMACTIVE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32148,7 +32148,7 @@
       "modifiedAt": 1784095344802,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:20.729Z",
+      "lastFetchedAt": "2026-08-08T07:50:23.692Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTEROBJECTTYPE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32162,7 +32162,7 @@
       "modifiedAt": 1784095344298,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:20.923Z",
+      "lastFetchedAt": "2026-08-08T07:50:23.723Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTEROBJECTTYPETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32176,7 +32176,7 @@
       "modifiedAt": 1784095346569,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:21.063Z",
+      "lastFetchedAt": "2026-08-08T07:50:24.268Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTEROBJTYPEASSGMT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32190,7 +32190,7 @@
       "modifiedAt": 1784095343133,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:21.340Z",
+      "lastFetchedAt": "2026-08-08T07:50:24.302Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERRELEASEKEY')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32204,7 +32204,7 @@
       "modifiedAt": 1784095349780,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:21.463Z",
+      "lastFetchedAt": "2026-08-08T07:50:24.297Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERRELEASEKEYSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32218,7 +32218,7 @@
       "modifiedAt": 1784095348949,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:21.587Z",
+      "lastFetchedAt": "2026-08-08T07:50:24.881Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERRELEASEKEYTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32232,7 +32232,7 @@
       "modifiedAt": 1784095348861,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:21.865Z",
+      "lastFetchedAt": "2026-08-08T07:50:24.892Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERSTATUS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32288,7 +32288,7 @@
       "modifiedAt": 1784095343590,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:21.995Z",
+      "lastFetchedAt": "2026-08-08T07:50:24.886Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMASTERVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32302,7 +32302,7 @@
       "modifiedAt": 1784095343967,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:22.183Z",
+      "lastFetchedAt": "2026-08-08T07:50:25.514Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTRLOGACCMUSERAUTHZN')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32316,7 +32316,7 @@
       "modifiedAt": 1784095342804,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:22.480Z",
+      "lastFetchedAt": "2026-08-08T07:50:25.552Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBJECTMGMTRECORD')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32330,7 +32330,7 @@
       "modifiedAt": 1784095348811,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:22.588Z",
+      "lastFetchedAt": "2026-08-08T07:50:25.499Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBJTYPEREVISIONLVL')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32344,7 +32344,7 @@
       "modifiedAt": 1784095343263,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:22.763Z",
+      "lastFetchedAt": "2026-08-08T07:50:26.082Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBMGREDOCINFORECD')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32358,7 +32358,7 @@
       "modifiedAt": 1784095343396,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:23.057Z",
+      "lastFetchedAt": "2026-08-08T07:50:26.140Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBMGREMATERIAL')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32372,7 +32372,7 @@
       "modifiedAt": 1784095343410,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:23.108Z",
+      "lastFetchedAt": "2026-08-08T07:50:26.116Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHANGEMSTROBMGREMATLBOM')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32610,7 +32610,7 @@
       "modifiedAt": 1784095680359,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:23.332Z",
+      "lastFetchedAt": "2026-08-08T07:50:26.661Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHECKSTATUS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32624,7 +32624,7 @@
       "modifiedAt": 1784095692401,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:23.611Z",
+      "lastFetchedAt": "2026-08-08T07:50:26.685Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHECKSTATUSTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32638,7 +32638,7 @@
       "modifiedAt": 1784095343476,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:23.709Z",
+      "lastFetchedAt": "2026-08-08T07:50:26.674Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHGMSTRLOGACCMSECUREIDASSGMT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32652,7 +32652,7 @@
       "modifiedAt": 1784095393601,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:23.936Z",
+      "lastFetchedAt": "2026-08-08T07:50:27.232Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHGRECDLIFECYCLESTATUSTXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32666,7 +32666,7 @@
       "modifiedAt": 1784095393547,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:24.152Z",
+      "lastFetchedAt": "2026-08-08T07:50:27.279Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHGRECORDLIFECYCLESTATUS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32680,7 +32680,7 @@
       "modifiedAt": 1784095393380,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:24.228Z",
+      "lastFetchedAt": "2026-08-08T07:50:27.279Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHGRECORDUSERSTATUS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32694,7 +32694,7 @@
       "modifiedAt": 1784095393330,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:24.495Z",
+      "lastFetchedAt": "2026-08-08T07:50:27.812Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CHGRECORDUSERSTATUSTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32960,7 +32960,7 @@
       "modifiedAt": 1784095378660,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:24.686Z",
+      "lastFetchedAt": "2026-08-08T07:50:27.865Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITYCODE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -32974,7 +32974,7 @@
       "modifiedAt": 1784095379270,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:24.817Z",
+      "lastFetchedAt": "2026-08-08T07:50:27.821Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CITYCODETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33786,7 +33786,7 @@
       "modifiedAt": 1784095342512,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:25.062Z",
+      "lastFetchedAt": "2026-08-08T07:50:28.427Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CLFNORGANIZATIONALAREA')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33800,7 +33800,7 @@
       "modifiedAt": 1784095342403,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:25.303Z",
+      "lastFetchedAt": "2026-08-08T07:50:28.439Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CLFNORGANIZATIONALAREATEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33814,7 +33814,7 @@
       "modifiedAt": 1784095920276,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:25.425Z",
+      "lastFetchedAt": "2026-08-08T07:50:28.438Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTY')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33828,7 +33828,7 @@
       "modifiedAt": 1784095912905,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:25.686Z",
+      "lastFetchedAt": "2026-08-08T07:50:29.031Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYCATEGORY')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33842,7 +33842,7 @@
       "modifiedAt": 1784095919486,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:25.850Z",
+      "lastFetchedAt": "2026-08-08T07:50:28.998Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYCATEGORYTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33856,7 +33856,7 @@
       "modifiedAt": 1784095660655,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:25.947Z",
+      "lastFetchedAt": "2026-08-08T07:50:29.034Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYDRVTVCONTRSPEC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33870,7 +33870,7 @@
       "modifiedAt": 1784095914554,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:26.252Z",
+      "lastFetchedAt": "2026-08-08T07:50:29.538Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMFINVALUESCUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33884,7 +33884,7 @@
       "modifiedAt": 1784095671185,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:26.398Z",
+      "lastFetchedAt": "2026-08-08T07:50:29.624Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMLOGFINVALCUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33898,7 +33898,7 @@
       "modifiedAt": 1784095654841,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:26.463Z",
+      "lastFetchedAt": "2026-08-08T07:50:29.609Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMMESSAGE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33912,7 +33912,7 @@
       "modifiedAt": 1784095670337,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:26.769Z",
+      "lastFetchedAt": "2026-08-08T07:50:30.117Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYMTMVALUECUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33926,7 +33926,7 @@
       "modifiedAt": 1784095911262,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:26.975Z",
+      "lastFetchedAt": "2026-08-08T07:50:30.214Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPNLFINVALUESCUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33940,7 +33940,7 @@
       "modifiedAt": 1784095658867,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:27.040Z",
+      "lastFetchedAt": "2026-08-08T07:50:30.208Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPOSITIONREPQTYCUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33954,7 +33954,7 @@
       "modifiedAt": 1784095913864,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:27.356Z",
+      "lastFetchedAt": "2026-08-08T07:50:30.742Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPRICEFIXATIONSTATUS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33968,7 +33968,7 @@
       "modifiedAt": 1784095909833,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:27.515Z",
+      "lastFetchedAt": "2026-08-08T07:50:30.750Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYPRICEFIXATIONSTATUST')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33982,7 +33982,7 @@
       "modifiedAt": 1784095917343,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:27.604Z",
+      "lastFetchedAt": "2026-08-08T07:50:30.798Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -33996,7 +33996,7 @@
       "modifiedAt": 1784095919589,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:27.913Z",
+      "lastFetchedAt": "2026-08-08T07:50:31.325Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYTYPE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34010,7 +34010,7 @@
       "modifiedAt": 1784095915641,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:28.087Z",
+      "lastFetchedAt": "2026-08-08T07:50:31.321Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMMDTYTYPETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34024,7 +34024,7 @@
       "modifiedAt": 1784095666770,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:28.154Z",
+      "lastFetchedAt": "2026-08-08T07:50:31.377Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLNCOBLGNASSIGNMENTCUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34038,7 +34038,7 @@
       "modifiedAt": 1784095726778,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:28.471Z",
+      "lastFetchedAt": "2026-08-08T07:50:31.906Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLNCRQMTAUTHZNFIELDS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34052,7 +34052,7 @@
       "modifiedAt": 1784095734807,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:28.641Z",
+      "lastFetchedAt": "2026-08-08T07:50:31.943Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLOBLASGTACTNRQDCHGDNOTIF')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34066,7 +34066,7 @@
       "modifiedAt": 1784095690120,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:28.719Z",
+      "lastFetchedAt": "2026-08-08T07:50:31.910Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLOBLASGTCMPLNCRATECUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34080,7 +34080,7 @@
       "modifiedAt": 1784095654151,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:29.020Z",
+      "lastFetchedAt": "2026-08-08T07:50:32.493Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLOBLASGTRECENTLYCHGDC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34094,7 +34094,7 @@
       "modifiedAt": 1784095655332,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:29.247Z",
+      "lastFetchedAt": "2026-08-08T07:50:32.508Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLOBLASGTTSKBYDUEDATEC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34108,7 +34108,7 @@
       "modifiedAt": 1784095654889,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:29.352Z",
+      "lastFetchedAt": "2026-08-08T07:50:32.505Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CMPLOBLRQMTASGTTASKCUBE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34612,7 +34612,7 @@
       "modifiedAt": 1784095273870,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:29.553Z",
+      "lastFetchedAt": "2026-08-08T07:50:33.089Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNCONMNLSETTLMTALLWNCCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34626,7 +34626,7 @@
       "modifiedAt": 1784095288113,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:29.843Z",
+      "lastFetchedAt": "2026-08-08T07:50:33.104Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNCONMNLSETTLMTALLWNCCATT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34640,7 +34640,7 @@
       "modifiedAt": 1784095281513,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:29.886Z",
+      "lastFetchedAt": "2026-08-08T07:50:33.093Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNCONSETLDETLDSTMNTBILLGDOC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34654,7 +34654,7 @@
       "modifiedAt": 1784095302759,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:30.141Z",
+      "lastFetchedAt": "2026-08-08T07:50:33.691Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNCONSETLDETLDSTMNTMATLDOC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34668,7 +34668,7 @@
       "modifiedAt": 1784095293269,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:30.407Z",
+      "lastFetchedAt": "2026-08-08T07:50:33.654Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNCONSETLDETLDSTMNTSUPLRINVC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34682,7 +34682,7 @@
       "modifiedAt": 1784095304431,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:30.466Z",
+      "lastFetchedAt": "2026-08-08T07:50:33.718Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNCONSETTLEMENTLOCKSTATUS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34696,7 +34696,7 @@
       "modifiedAt": 1784095260612,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:30.716Z",
+      "lastFetchedAt": "2026-08-08T07:50:34.257Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNCONSETTLEMENTLOCKSTATUST')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34724,7 +34724,7 @@
       "modifiedAt": 1784095272696,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:30.971Z",
+      "lastFetchedAt": "2026-08-08T07:50:34.257Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRACCRRVSLCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34738,7 +34738,7 @@
       "modifiedAt": 1784095292973,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:30.984Z",
+      "lastFetchedAt": "2026-08-08T07:50:34.305Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRACCRRVSLCATTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34752,7 +34752,7 @@
       "modifiedAt": 1784095280868,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:31.260Z",
+      "lastFetchedAt": "2026-08-08T07:50:34.847Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRACCRRVSLSTS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34766,7 +34766,7 @@
       "modifiedAt": 1784095260058,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:31.535Z",
+      "lastFetchedAt": "2026-08-08T07:50:34.898Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRACCRRVSLSTSTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34780,7 +34780,7 @@
       "modifiedAt": 1784095251820,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:31.536Z",
+      "lastFetchedAt": "2026-08-08T07:50:34.847Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRACCRSOURCE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34794,7 +34794,7 @@
       "modifiedAt": 1784095291370,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:31.850Z",
+      "lastFetchedAt": "2026-08-08T07:50:35.426Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRACCRSOURCETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34892,7 +34892,7 @@
       "modifiedAt": 1784095248472,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:32.062Z",
+      "lastFetchedAt": "2026-08-08T07:50:35.444Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRAPPRVLPROC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34906,7 +34906,7 @@
       "modifiedAt": 1784095306047,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:32.176Z",
+      "lastFetchedAt": "2026-08-08T07:50:35.456Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRAPPRVLPROCTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34934,7 +34934,7 @@
       "modifiedAt": 1784095296940,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:32.399Z",
+      "lastFetchedAt": "2026-08-08T07:50:36.016Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRBUSVOLSIGN')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34948,7 +34948,7 @@
       "modifiedAt": 1784095269591,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:32.618Z",
+      "lastFetchedAt": "2026-08-08T07:50:35.999Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRBUSVOLSIGNTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -34990,7 +34990,7 @@
       "modifiedAt": 1784095247590,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:32.764Z",
+      "lastFetchedAt": "2026-08-08T07:50:36.057Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCHANGEABILITY')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35004,7 +35004,7 @@
       "modifiedAt": 1784095250416,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:32.991Z",
+      "lastFetchedAt": "2026-08-08T07:50:36.567Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCHANGEABILITYTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35018,7 +35018,7 @@
       "modifiedAt": 1784095248552,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:33.178Z",
+      "lastFetchedAt": "2026-08-08T07:50:36.603Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCLASSFCTNTYPE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35032,7 +35032,7 @@
       "modifiedAt": 1784095274581,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:33.332Z",
+      "lastFetchedAt": "2026-08-08T07:50:36.629Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCLASSFCTNTYPETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35060,7 +35060,7 @@
       "modifiedAt": 1784095262211,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:33.546Z",
+      "lastFetchedAt": "2026-08-08T07:50:37.184Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCUSTOMERLISTSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35074,7 +35074,7 @@
       "modifiedAt": 1784095259042,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:33.710Z",
+      "lastFetchedAt": "2026-08-08T07:50:37.196Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCUSTOMERSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35088,7 +35088,7 @@
       "modifiedAt": 1784095253091,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:33.940Z",
+      "lastFetchedAt": "2026-08-08T07:50:37.200Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCUSTSETTLMTCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35102,7 +35102,7 @@
       "modifiedAt": 1784095252049,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:34.107Z",
+      "lastFetchedAt": "2026-08-08T07:50:37.741Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRCUSTSETTLMTCATTXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35116,7 +35116,7 @@
       "modifiedAt": 1784095265433,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:34.259Z",
+      "lastFetchedAt": "2026-08-09T07:54:22.642Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRELIGIBLECAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35130,7 +35130,7 @@
       "modifiedAt": 1784095302407,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:34.458Z",
+      "lastFetchedAt": "2026-08-09T07:54:22.604Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRELIGIBLECATTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35144,7 +35144,7 @@
       "modifiedAt": 1784095276717,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:34.674Z",
+      "lastFetchedAt": "2026-08-09T07:54:22.604Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTREXTSLSCOMMSNSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35158,7 +35158,7 @@
       "modifiedAt": 1784095275868,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:34.821Z",
+      "lastFetchedAt": "2026-08-09T07:54:23.213Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRISINACTIVE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35172,7 +35172,7 @@
       "modifiedAt": 1784095253983,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:35.001Z",
+      "lastFetchedAt": "2026-08-09T07:54:23.207Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRISINACTIVETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35186,7 +35186,7 @@
       "modifiedAt": 1784095267114,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:35.221Z",
+      "lastFetchedAt": "2026-08-09T07:54:23.302Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRITEMCATEGORY')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35200,7 +35200,7 @@
       "modifiedAt": 1784095272549,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:35.393Z",
+      "lastFetchedAt": "2026-08-09T07:54:23.792Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRITEMCATEGORYTXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35214,7 +35214,7 @@
       "modifiedAt": 1784095277992,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:35.522Z",
+      "lastFetchedAt": "2026-08-09T07:54:23.767Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPARTNERCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35228,7 +35228,7 @@
       "modifiedAt": 1784095256889,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:35.818Z",
+      "lastFetchedAt": "2026-08-09T07:54:23.919Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPARTNERCATTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35242,7 +35242,7 @@
       "modifiedAt": 1784095296539,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:35.963Z",
+      "lastFetchedAt": "2026-08-09T07:54:24.361Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPLANTLISTSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35256,7 +35256,7 @@
       "modifiedAt": 1784095247573,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:36.074Z",
+      "lastFetchedAt": "2026-08-09T07:54:24.438Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPRCGDETNRLVNCECAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35270,7 +35270,7 @@
       "modifiedAt": 1784095254479,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:36.374Z",
+      "lastFetchedAt": "2026-08-09T07:54:24.494Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPRCGDETNRLVNCECATT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35284,7 +35284,7 @@
       "modifiedAt": 1784095252741,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:36.512Z",
+      "lastFetchedAt": "2026-08-09T07:54:24.949Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPROCESSCATEGORY')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35298,7 +35298,7 @@
       "modifiedAt": 1784095275232,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:36.631Z",
+      "lastFetchedAt": "2026-08-09T07:54:25.005Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPROCESSCATEGORYTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35326,7 +35326,7 @@
       "modifiedAt": 1784095292219,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:36.960Z",
+      "lastFetchedAt": "2026-08-09T07:54:25.083Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPROCVARPURASSGMT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35340,7 +35340,7 @@
       "modifiedAt": 1784095274474,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:37.048Z",
+      "lastFetchedAt": "2026-08-09T07:54:25.590Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPROCVARSLSASSGMT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35354,7 +35354,7 @@
       "modifiedAt": 1784095266501,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:37.166Z",
+      "lastFetchedAt": "2026-08-09T07:54:25.598Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPROCVARSTDVH')/$value",
       "devExtStatus": "Released",
       "atcState": null
@@ -35368,7 +35368,7 @@
       "modifiedAt": 1784095272799,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:37.505Z",
+      "lastFetchedAt": "2026-08-09T07:54:25.654Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPROCVARTEXT')/$value",
       "devExtStatus": "Released",
       "atcState": null
@@ -35382,7 +35382,7 @@
       "modifiedAt": 1784095276767,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:37.605Z",
+      "lastFetchedAt": "2026-08-09T07:54:26.175Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPROCVARTYPEASSGMT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35396,7 +35396,7 @@
       "modifiedAt": 1784095257723,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:37.709Z",
+      "lastFetchedAt": "2026-08-09T07:54:26.194Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPRTLSETTLMTCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35410,7 +35410,7 @@
       "modifiedAt": 1784095252986,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:38.073Z",
+      "lastFetchedAt": "2026-08-09T07:54:26.410Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPRTLSETTLMTCATTXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35424,7 +35424,7 @@
       "modifiedAt": 1784095258672,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:38.170Z",
+      "lastFetchedAt": "2026-08-09T07:54:26.790Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPURPOSECAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35438,7 +35438,7 @@
       "modifiedAt": 1784095264477,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:38.252Z",
+      "lastFetchedAt": "2026-08-09T07:54:27.044Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRPURPOSECATTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35452,7 +35452,7 @@
       "modifiedAt": 1784095247102,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:38.590Z",
+      "lastFetchedAt": "2026-08-09T07:54:27.079Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRROYALTYSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35522,7 +35522,7 @@
       "modifiedAt": 1784095257501,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:38.737Z",
+      "lastFetchedAt": "2026-08-09T07:54:27.363Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSETTLMTLOCKED')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35536,7 +35536,7 @@
       "modifiedAt": 1784095259888,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:38.857Z",
+      "lastFetchedAt": "2026-08-09T07:54:27.652Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSETTLMTLOCKTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35550,7 +35550,7 @@
       "modifiedAt": 1784095259276,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:39.139Z",
+      "lastFetchedAt": "2026-08-09T07:54:27.661Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSETTLMTTYPE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35564,7 +35564,7 @@
       "modifiedAt": 1784095265178,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:39.343Z",
+      "lastFetchedAt": "2026-08-09T07:54:27.924Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSETTLMTTYPETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35578,7 +35578,7 @@
       "modifiedAt": 1784095282032,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:39.439Z",
+      "lastFetchedAt": "2026-08-09T07:54:28.248Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSLSRBTESTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35592,7 +35592,7 @@
       "modifiedAt": 1784095289200,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:39.701Z",
+      "lastFetchedAt": "2026-08-09T07:54:28.379Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSOURCEDOCCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35606,7 +35606,7 @@
       "modifiedAt": 1784095259406,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:39.887Z",
+      "lastFetchedAt": "2026-08-09T07:54:28.522Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSOURCEDOCCATTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35620,7 +35620,7 @@
       "modifiedAt": 1784095249278,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:40.006Z",
+      "lastFetchedAt": "2026-08-09T07:54:28.857Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSUPLRRBTESTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35634,7 +35634,7 @@
       "modifiedAt": 1784095302111,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:40.275Z",
+      "lastFetchedAt": "2026-08-09T07:54:28.970Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSUPLRSETTLMTCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35648,7 +35648,7 @@
       "modifiedAt": 1784095297142,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:40.453Z",
+      "lastFetchedAt": "2026-08-09T07:54:29.112Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSUPLRSETTLMTCATTXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35662,7 +35662,7 @@
       "modifiedAt": 1784095248753,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:40.612Z",
+      "lastFetchedAt": "2026-08-09T07:54:29.455Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSUPPLIERLISTSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35676,7 +35676,7 @@
       "modifiedAt": 1784095269500,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:40.793Z",
+      "lastFetchedAt": "2026-08-09T07:54:29.532Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRSUPPLIERSTDVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35704,7 +35704,7 @@
       "modifiedAt": 1784095249772,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:40.973Z",
+      "lastFetchedAt": "2026-08-09T07:54:29.693Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRTYPEBLOCKUSAGE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35718,7 +35718,7 @@
       "modifiedAt": 1784095256402,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:41.198Z",
+      "lastFetchedAt": "2026-08-09T07:54:30.145Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNCONTRTYPEBLOCKUSAGETEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35760,7 +35760,7 @@
       "modifiedAt": 1784095258148,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:41.368Z",
+      "lastFetchedAt": "2026-08-09T07:54:30.661Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCITMACTIVATIONSTATUS')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35774,7 +35774,7 @@
       "modifiedAt": 1784095292475,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:41.561Z",
+      "lastFetchedAt": "2026-08-09T07:54:30.633Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCITMACTIVATIONSTATUST')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35788,7 +35788,7 @@
       "modifiedAt": 1784095288914,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:41.710Z",
+      "lastFetchedAt": "2026-08-09T07:54:30.714Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCSUPLRINVCDLVCOSTCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35802,7 +35802,7 @@
       "modifiedAt": 1784095252231,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:41.908Z",
+      "lastFetchedAt": "2026-08-09T07:54:31.218Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCSUPLRINVCDLVCOSTCATT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35816,7 +35816,7 @@
       "modifiedAt": 1784095296012,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:42.100Z",
+      "lastFetchedAt": "2026-08-09T07:54:31.224Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCWORKERSETTLMTCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35830,7 +35830,7 @@
       "modifiedAt": 1784095275624,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:42.229Z",
+      "lastFetchedAt": "2026-08-09T07:54:31.300Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNDNDOCWORKERSETTLMTCATTXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -35942,7 +35942,7 @@
       "modifiedAt": 1784095120292,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:42.485Z",
+      "lastFetchedAt": "2026-08-09T07:54:31.799Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNACTVRPTGRULECONDITION')/$value",
       "devExtStatus": "Released",
       "atcState": null
@@ -36362,7 +36362,7 @@
       "modifiedAt": 1784095109155,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:42.697Z",
+      "lastFetchedAt": "2026-08-09T07:54:31.790Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNBUDGETVERSIONDRVTN')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -36516,7 +36516,7 @@
       "modifiedAt": 1784095120583,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:42.823Z",
+      "lastFetchedAt": "2026-08-09T07:54:31.874Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNCNSTNTCRCYVERSDRVTN')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37034,7 +37034,7 @@
       "modifiedAt": 1784095117144,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:43.028Z",
+      "lastFetchedAt": "2026-08-09T07:54:32.414Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNDIMENSION')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37048,7 +37048,7 @@
       "modifiedAt": 1784095112705,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:43.206Z",
+      "lastFetchedAt": "2026-08-09T07:54:32.422Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNDIMENSIONT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37342,7 +37342,7 @@
       "modifiedAt": 1784095112207,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:43.354Z",
+      "lastFetchedAt": "2026-08-09T07:54:32.475Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNDOCUMENTTYPE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37370,7 +37370,7 @@
       "modifiedAt": 1784095115781,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:43.586Z",
+      "lastFetchedAt": "2026-08-09T07:54:33.018Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNDOCUMENTTYPET')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37622,7 +37622,7 @@
       "modifiedAt": 1784095112147,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:43.722Z",
+      "lastFetchedAt": "2026-08-09T07:54:32.994Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITEM')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37636,7 +37636,7 @@
       "modifiedAt": 1784095109856,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:43.912Z",
+      "lastFetchedAt": "2026-08-09T07:54:33.102Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITEMGROUP')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37650,7 +37650,7 @@
       "modifiedAt": 1784095109182,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:44.157Z",
+      "lastFetchedAt": "2026-08-09T07:54:33.614Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITEMGROUPT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37664,7 +37664,7 @@
       "modifiedAt": 1784095121032,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:44.283Z",
+      "lastFetchedAt": "2026-08-09T07:54:33.589Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITEMLONGTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37678,7 +37678,7 @@
       "modifiedAt": 1784095117840,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:44.513Z",
+      "lastFetchedAt": "2026-08-09T07:54:33.684Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITEMTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37734,7 +37734,7 @@
       "modifiedAt": 1784095110170,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:44.752Z",
+      "lastFetchedAt": "2026-08-09T07:54:34.188Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITMCAT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37748,7 +37748,7 @@
       "modifiedAt": 1784095109375,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:44.844Z",
+      "lastFetchedAt": "2026-08-09T07:54:34.184Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFINSTMNTITMCATTEXT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -37860,7 +37860,7 @@
       "modifiedAt": 1784095123457,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:45.055Z",
+      "lastFetchedAt": "2026-08-09T07:54:34.277Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNFREETEXTANSWER')/$value",
       "devExtStatus": "Released",
       "atcState": null
@@ -38924,7 +38924,7 @@
       "modifiedAt": 1784095115834,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:45.410Z",
+      "lastFetchedAt": "2026-08-09T07:54:34.821Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNGLACCOUNT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -39008,7 +39008,7 @@
       "modifiedAt": 1784095120547,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:45.434Z",
+      "lastFetchedAt": "2026-08-09T07:54:34.772Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNGLACCOUNTT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -39204,7 +39204,7 @@
       "modifiedAt": 1784095122253,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:45.905Z",
+      "lastFetchedAt": "2026-08-09T07:54:34.869Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNGROUP')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -39288,7 +39288,7 @@
       "modifiedAt": 1784095109583,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:45.983Z",
+      "lastFetchedAt": "2026-08-09T07:54:35.368Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNGROUPT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -39330,7 +39330,7 @@
       "modifiedAt": 1784095113566,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:45.962Z",
+      "lastFetchedAt": "2026-08-09T07:54:35.320Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNGRPJRNLITEMC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -39484,7 +39484,7 @@
       "modifiedAt": 1784095112888,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:46.470Z",
+      "lastFetchedAt": "2026-08-09T07:54:35.504Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNLEDGER')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -39498,7 +39498,7 @@
       "modifiedAt": 1784095118668,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:46.541Z",
+      "lastFetchedAt": "2026-08-09T07:54:35.914Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNLEDGERT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -39708,7 +39708,7 @@
       "modifiedAt": 1784095116448,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:46.593Z",
+      "lastFetchedAt": "2026-08-09T07:54:35.955Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNMDSOURCE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -39722,7 +39722,7 @@
       "modifiedAt": 1784095113423,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:46.988Z",
+      "lastFetchedAt": "2026-08-09T07:54:36.067Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNMDSOURCET')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40086,7 +40086,7 @@
       "modifiedAt": 1784095110037,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:47.140Z",
+      "lastFetchedAt": "2026-08-09T07:54:36.533Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPRFTCTRHIERELIM')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40114,7 +40114,7 @@
       "modifiedAt": 1784095117363,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:47.124Z",
+      "lastFetchedAt": "2026-08-09T07:54:36.496Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPRFTCTRTMPRLNDEHIERVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40380,7 +40380,7 @@
       "modifiedAt": 1784095120146,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:47.532Z",
+      "lastFetchedAt": "2026-08-09T07:54:36.663Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPROFITCENTERFORELIMT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40422,7 +40422,7 @@
       "modifiedAt": 1784095120690,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:47.680Z",
+      "lastFetchedAt": "2026-08-09T07:54:37.077Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPROFITCENTERHIERDIRT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40436,7 +40436,7 @@
       "modifiedAt": 1784095121994,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:47.756Z",
+      "lastFetchedAt": "2026-08-09T07:54:37.139Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPROFITCENTERHIERDIRVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40492,7 +40492,7 @@
       "modifiedAt": 1784095121851,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:48.196Z",
+      "lastFetchedAt": "2026-08-09T07:54:37.264Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNPROFITCENTERHIERVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40800,7 +40800,7 @@
       "modifiedAt": 1784095122321,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:48.338Z",
+      "lastFetchedAt": "2026-08-09T07:54:37.735Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGITMHIERDIR')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40814,7 +40814,7 @@
       "modifiedAt": 1784095121692,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:48.304Z",
+      "lastFetchedAt": "2026-08-09T07:54:37.644Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGITMHIERDIRT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40828,7 +40828,7 @@
       "modifiedAt": 1784095114628,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:48.763Z",
+      "lastFetchedAt": "2026-08-09T07:54:37.827Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGITMHIERDIRVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40856,7 +40856,7 @@
       "modifiedAt": 1784095114424,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:48.972Z",
+      "lastFetchedAt": "2026-08-09T07:54:38.244Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULE')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40870,7 +40870,7 @@
       "modifiedAt": 1784095109272,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:48.994Z",
+      "lastFetchedAt": "2026-08-09T07:54:38.315Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEIDINDEX')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40884,7 +40884,7 @@
       "modifiedAt": 1784095115934,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:49.340Z",
+      "lastFetchedAt": "2026-08-09T07:54:38.395Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEVAR')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40898,7 +40898,7 @@
       "modifiedAt": 1784095109193,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:49.563Z",
+      "lastFetchedAt": "2026-08-09T07:54:38.914Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEVARASSGMT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40912,7 +40912,7 @@
       "modifiedAt": 1784095115750,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:49.538Z",
+      "lastFetchedAt": "2026-08-09T07:54:38.827Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEVARASSGMT_2')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40926,7 +40926,7 @@
       "modifiedAt": 1784095117977,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:49.979Z",
+      "lastFetchedAt": "2026-08-09T07:54:39.003Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEVART')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40940,7 +40940,7 @@
       "modifiedAt": 1784095116610,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:50.099Z",
+      "lastFetchedAt": "2026-08-09T07:54:39.376Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEVARVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40954,7 +40954,7 @@
       "modifiedAt": 1784095114270,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:50.118Z",
+      "lastFetchedAt": "2026-08-09T07:54:39.535Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRPTGRULEVARVH_2')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -40968,7 +40968,7 @@
       "modifiedAt": 1784095119174,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:50.589Z",
+      "lastFetchedAt": "2026-08-09T07:54:39.625Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNRULEBSDGRPJRNLITEMC')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -41234,7 +41234,7 @@
       "modifiedAt": 1784095109311,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:50.679Z",
+      "lastFetchedAt": "2026-08-09T07:54:40.097Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTFORELIMT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -41304,7 +41304,7 @@
       "modifiedAt": 1784095112488,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:50.670Z",
+      "lastFetchedAt": "2026-08-09T07:54:39.960Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTHIERARCHYVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -41318,7 +41318,7 @@
       "modifiedAt": 1784095112508,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:51.156Z",
+      "lastFetchedAt": "2026-08-09T07:54:40.192Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTHIERDIRT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -41332,7 +41332,7 @@
       "modifiedAt": 1784095114320,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:51.192Z",
+      "lastFetchedAt": "2026-08-09T07:54:40.575Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSEGMENTHIERDIRVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -41486,7 +41486,7 @@
       "modifiedAt": 1784095111545,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:51.310Z",
+      "lastFetchedAt": "2026-08-09T07:54:40.681Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSGMTHIERELIM')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -41500,7 +41500,7 @@
       "modifiedAt": 1784095109363,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:51.704Z",
+      "lastFetchedAt": "2026-08-09T07:54:40.783Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSGMTTMPRLNODEHIERVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -42284,7 +42284,7 @@
       "modifiedAt": 1784095123117,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:51.775Z",
+      "lastFetchedAt": "2026-08-09T07:54:41.134Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNIT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -42452,7 +42452,7 @@
       "modifiedAt": 1784095109544,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:51.890Z",
+      "lastFetchedAt": "2026-08-09T07:54:41.267Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNITFORELIMINATIONT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -42522,7 +42522,7 @@
       "modifiedAt": 1784095112019,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:52.307Z",
+      "lastFetchedAt": "2026-08-09T07:54:41.363Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNITHIERARCHYVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -42536,7 +42536,7 @@
       "modifiedAt": 1784095108941,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:52.385Z",
+      "lastFetchedAt": "2026-08-09T07:54:41.736Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNITHIERDIRT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -42550,7 +42550,7 @@
       "modifiedAt": 1784095111924,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:52.481Z",
+      "lastFetchedAt": "2026-08-09T07:54:41.880Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNITHIERDIRVH')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -42564,7 +42564,7 @@
       "modifiedAt": 1784095115032,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:52.858Z",
+      "lastFetchedAt": "2026-08-09T07:54:41.968Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNITHIERELIM')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -42704,7 +42704,7 @@
       "modifiedAt": 1784095121067,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:52.916Z",
+      "lastFetchedAt": "2026-08-09T07:54:42.331Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNITT')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
@@ -42732,7 +42732,7 @@
       "modifiedAt": 1784095122731,
       "inLocal": true,
       "status": "metadata-only",
-      "lastFetchedAt": "2026-07-06T10:01:53.042Z",
+      "lastFetchedAt": "2026-08-09T07:54:42.469Z",
       "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNUNITTEXT_2')/$value",
       "devExtStatus": "Not Released",
       "atcState": null
