@@ -30,20 +30,20 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FactoryCalendarID` | ✓ | |  |  |  |  |
-| `FactoryCalendarLegacyID` |  | |  |  |  |  |
-| `PublicHolidayCalendarID` |  | |  |  |  |  |
-| `FctryCalMondayIsWorkingDay` |  | |  |  |  |  |
-| `FctryCalTuesdayIsWorkingDay` |  | |  |  |  |  |
-| `FctryCalWednesdayIsWorkingDay` |  | |  |  |  |  |
-| `FctryCalThursdayIsWorkingDay` |  | |  |  |  |  |
-| `FctryCalFridayIsWorkingDay` |  | |  |  |  |  |
-| `FctryCalSaturdayIsWorkingDay` |  | |  |  |  |  |
-| `FctryCalSundayIsWorkingDay` |  | |  |  |  |  |
-| `FctryCalHolidayIsWorkingDay` |  | |  |  |  |  |
-| `FctryCalendarValidityStartDate` |  | |  |  |  |  |
-| `FactoryCalendarValidityEndDate` |  | |  |  |  |  |
-| `FactoryCalendarStartDateValue` |  | |  |  |  |  |
+| `FactoryCalendarID` | ✓ | |  |  | `CHAR(32)` | Factory calendar ID |
+| `FactoryCalendarLegacyID` |  | |  |  | `CHAR(2)` | Factory Calendar |
+| `PublicHolidayCalendarID` |  | |  |  | `CHAR(32)` | Holiday calendar ID |
+| `FctryCalMondayIsWorkingDay` |  | |  |  | `CHAR(1)` | Bit for workday |
+| `FctryCalTuesdayIsWorkingDay` |  | |  |  | `CHAR(1)` | Bit for workday |
+| `FctryCalWednesdayIsWorkingDay` |  | |  |  | `CHAR(1)` | Bit for workday |
+| `FctryCalThursdayIsWorkingDay` |  | |  |  | `CHAR(1)` | Bit for workday |
+| `FctryCalFridayIsWorkingDay` |  | |  |  | `CHAR(1)` | Bit for workday |
+| `FctryCalSaturdayIsWorkingDay` |  | |  |  | `CHAR(1)` | Bit for workday |
+| `FctryCalSundayIsWorkingDay` |  | |  |  | `CHAR(1)` | Bit for workday |
+| `FctryCalHolidayIsWorkingDay` |  | |  |  | `CHAR(1)` | Bit for workday |
+| `FctryCalendarValidityStartDate` |  | |  |  | `DATS(8)` | Date (from) |
+| `FactoryCalendarValidityEndDate` |  | |  |  | `DATS(8)` | Date (to) |
+| `FactoryCalendarStartDateValue` |  | |  |  | `INT4(10)` | Factorydate |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

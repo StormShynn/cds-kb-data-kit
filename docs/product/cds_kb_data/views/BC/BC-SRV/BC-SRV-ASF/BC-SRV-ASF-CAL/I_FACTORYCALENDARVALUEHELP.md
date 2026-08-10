@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FactoryCalendarID` | ✓ | |  |  |  |  |
-| `FactoryCalendarLegacyID` |  | |  |  |  |  |
-| `FctryCalendarValidityStartDate` |  | |  |  |  |  |
-| `FactoryCalendarValidityEndDate` |  | |  |  |  |  |
+| `FactoryCalendarID` | ✓ | |  |  | `CHAR(32)` | Factory calendar ID |
+| `FactoryCalendarLegacyID` |  | |  |  | `CHAR(2)` | Factory Calendar |
+| `FctryCalendarValidityStartDate` |  | |  |  | `DATS(8)` | Date (from) |
+| `FactoryCalendarValidityEndDate` |  | |  |  | `DATS(8)` | Date (to) |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -5,9 +5,15 @@ app_component: CO-OM-CCA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETCOSTCENTERRPTGCUBE')/$value
 semantic_en: "Cost Center Review Booklet Budget - Cube"
+semantic_vi: "I_BUDGETCOSTCENTERRPTGCUBE — CDS view giao diện dựa trên I_BUDGETCOSTCENTERRPTGCUBE."
+keywords:
+  - "budgetcostcenterrptgcube"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - CO
   - budget
@@ -18,7 +24,6 @@ tags:
   - interface-view
   - lob:controlling
   - lob:cross_application components
-  - metadata-only
 ---
 # I_BUDGETCOSTCENTERRPTGCUBE
 
@@ -30,113 +35,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETCOSTCENTERRPTGCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETCOSTCENTERRPTGCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `FinancialPlanningReqTransSqnc` |  | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
-| `FinancialPlanningDataPacket` |  | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
-| `ActualPlanJournalEntryItem` |  | |  |  | `CHAR(12)` | Actual Plan Journal Entry Item |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `FinancialPlanningEntryItem` |  | |  |  | `INT4(10)` | Financial Planning Entry Item |
-| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
-| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
-| `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
-| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
-| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
-| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `ProjectExternalID` |  | |  |  | `CHAR(24)` | Project External ID |
-| `PartnerProjectInternalID` |  | |  |  | `NUMC(8)` | Partner Project Internal ID |
-| `PartnerProjectExternalID` |  | |  |  | `CHAR(24)` | Partner Project External ID |
-| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
-| `PartnerWBSElementExternalID` |  | |  |  | `CHAR(24)` | Partner WBS Element External ID |
-| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
-| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
-| `CostAnalysisResource` |  | |  |  | `CHAR(10)` | Cost Analysis Resource |
-| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
-| `WorkPackage` |  | |  |  | `CHAR(50)` | Plan Item |
-| `PartnerAccountAssignmentType` |  | |  |  | `CHAR(2)` | Partner Account Assignment Type |
-| `PartnerCompanyCode` |  | |  |  | `CHAR(4)` | Partner Company Code |
-| `PartnerProfitCenter` |  | |  |  | `CHAR(10)` | Partner Profit Center |
-| `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Partner Cost Center |
-| `PartnerFunctionalArea` |  | |  |  | `CHAR(16)` | Partner Functional Area |
-| `PartnerSegment` |  | |  |  | `CHAR(10)` | Partner Segment for Segmental Reporting |
-| `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
-| `PartnerOrder` |  | |  |  | `CHAR(12)` | Partner Order |
-| `GLAccountHierNodeSemanticKey` |  | |  |  | `CHAR(63)` | Budget G/L Account Hierarchy Semantic Key |
-| `BudgetCarryingCostCenter` |  | |  |  | `CHAR(10)` | Budget-Carrying Cost Center |
-| `AvailabilityControlProfile` |  | |  |  | `CHAR(6)` | Budget Availability Control: Profile |
-| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
-| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
-| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
-| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
-| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
-| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
-| `ServicesRenderedDate` |  | |  |  | `DATS(8)` | Date on which services are rendered |
-| `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
-| `BusinessTransactionCategory` |  | |  |  | `CHAR(4)` | Business Transaction Category |
-| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
-| `FinancialTransactionType` |  | |  |  | `CHAR(3)` | Financial Transaction Type |
-| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
-| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
-| `IsStatisticalCostCenter` |  | |  |  | `CHAR(1)` | Indicator: Cost Center is Statistical Account Assignment |
-| `IsCommitment` |  | |  |  | `CHAR(1)` | Indicator: Is Commitment |
-| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
-| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
-| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
-| `FunctionalCurrency` |  | |  |  | `CUKY(5)` | Functional Currency |
-| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
-| `CostSourceUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
-| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
-| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
-| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
-| `AmountInFunctionalCurrency` |  | |  |  | `CURR(23)` | Amount in Functional Currency |
-| `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
-| `FixedAmountInGlobalCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Global Currency |
-| `FixedAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Company Currency |
-| `FixedAmountInTransCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Transaction Currency |
-| `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
-| `ValuationFixedQuantity` |  | |  |  | `QUAN(23)` | Valuation Fixed Quantity |
-| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
-| `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
-| `FixedQuantity` |  | |  |  | `QUAN(23)` | Fixed Quantity |
-| `ActualAmountInTransactionCrcy` |  | |  |  | `CURR(23)` | Actual Amount in Transaction Currency |
-| `ActualAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Actual Amount in Company Code Currency |
-| `ActualAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Actual Amount in Global Currency |
-| `ActualAmountInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Actual Amount in Freely Defined Currency 1 |
-| `ActualValuationQuantity` |  | |  |  | `QUAN(23)` | Actual Valuation Quantity |
-| `ActualQuantityInBaseUnit` |  | |  |  | `QUAN(23)` | Actual Quantity in Base Unit |
-| `PlanAmountInTransactionCrcy` |  | |  |  | `CURR(23)` | Plan Amount in Transaction Currency |
-| `PlanAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Plan Amount in Company Code Currency |
-| `PlanAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Plan Amount in Global Currency |
-| `PlanAmountInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Plan Amount in Freely Defined Currency 1 |
-| `PlanValuationQuantity` |  | |  |  | `QUAN(23)` | Plan Valuation Quantity |
-| `PlanPriceInGlobalCurrency` |  | |  |  | `CURR(23)` | Price in Global Currency |
-| `PlanPriceInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Price in Company Code Currency |
-| `PlanPriceInTransactionCurrency` |  | |  |  | `CURR(23)` | Price in Transaction Currency |
-| `ActlPlnDiffAmtInTransCrcy` |  | |  |  | `CURR(23)` | Actual plan difference in transaction currency |
-| `ActlPlnDiffAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Actual plan difference in company code currency |
-| `ActlPlnDiffAmtInGlobalCrcy` |  | |  |  | `CURR(23)` | Actual plan difference in global currency |
-| `ActlPlnDiffAmtInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Actual plan difference in freely defined currency 1 |
-| `ActlPanDiffValuationQuantity` |  | |  |  | `QUAN(23)` | Actual Plan Difference Valuation Quantity |
-| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
-| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
-| `YearQuarter` |  | |  |  | `NUMC(5)` | Year Quarter |
-| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
-| `YearMonth` |  | |  |  | `NUMC(6)` | Year Month |
-| `CalendarWeek` |  | |  |  | `NUMC(2)` | Calendar Week |
-| `YearWeek` |  | |  |  | `NUMC(6)` | Year Week |
-| `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |
-| `FiscalWeek` |  | |  |  | `NUMC(2)` | Fiscal Week |
-| `FiscalYearQuarter` |  | |  |  | `NUMC(5)` | Fiscal Year + Fiscal Quarter |
-| `FiscalYearWeek` |  | |  |  | `NUMC(6)` | Fiscal Year + Fiscal Week |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETCOSTCENTERRPTGCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUDGETCOSTCENTERRPTGCUBE')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzobfcbxvqzwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWJmY2I3NTA5NmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTM6MDhaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1iZmNiNzUwOTZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPklkdmZ5L2s2VlB4cUxHUlhMTDFFcTY5RXRKRT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;RTR6RWdSZldpeEF6eldMUzI0bUxTTStLMGxtQlhOOW1NdjFncnBaczc1cVJielM4bUh1ZjR4S2xlUlcveXplZFVreEhubjJVNTgvbgp2ejFUaXp0NHJDdytxcG9lUzNqeGlUMUV3alZmTEMvS2lUeUpXQTY4aEphdEFkU1NQL2kzbkpKeE40L1lIL0w2RG5xR2t3bHlPdWFHCjUzOGd1WDNiWlhmUy9Yc2lqQzRIZlJOV3BweUhId0ZteE1NQk1yM0lXWjgrZ2xCSGFpTkFKNzUwRC9Rb0xtNmp4b1N0cktRSGJ4d0QKaXlJTHEwbHJWeWlOLzlVbGxnTnM0SHhTY0Q2U1oyYU9ySU1CNU5mb1pkR0s2bmhyZ0F4Zk9nNEJMRW9aY1g2R3BlUXU4RXpnTzlrdApIVHRSU0xNVVJkbEFyUTJUMFBJN0ErdVY4RDVHVmlpUys1UVVYRHB5Zytld1lGZjMxVmxvVDFSbWpUS2pzZFhrSENUb1RMY0VhcUVzCkE4eVVXR0g1RStGSXhGd1I0M1FqQ1Nnb01IZlhwZDh2WnhxYzJrMWlJcFBjc3ZGWkJUNVBQQkN6T25wYUtNWHNlMFJZeUJhVERDK1YKQ1haczh3ZGl2OGIreGYzVlArRE8vaFJYc3FYU0xUY0Y2cEN0OWhtNHJQZ0JXWk83ZVRXbEF1NFI8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzobfcbxvqzwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

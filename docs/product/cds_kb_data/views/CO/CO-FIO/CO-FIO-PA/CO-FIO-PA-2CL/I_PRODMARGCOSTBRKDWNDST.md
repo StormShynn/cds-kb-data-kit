@@ -5,9 +5,15 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODMARGCOSTBRKDWNDST')/$value
 semantic_en: "Product Profitability UCB Document Store"
+semantic_vi: "I_PRODMARGCOSTBRKDWNDST — CDS view giao diện dựa trên I_PRODMARGCOSTBRKDWNDST."
+keywords:
+  - "prodmargcostbrkdwndst"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - CO
   - bo:companycode
@@ -20,7 +26,6 @@ tags:
   - lob:controlling
   - lob:finance
   - product
-  - metadata-only
 ---
 # I_PRODMARGCOSTBRKDWNDST
 
@@ -32,211 +37,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODMARGCOSTBRKDWNDST')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODMARGCOSTBRKDWNDST')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `docid` |  | |  |  | `NUMC(16)` |  |
-| `version` |  | |  |  | `NUMC(6)` |  |
-| `doctag` |  | |  |  | `CHAR(60)` |  |
-| `docqprov` |  | |  |  | `CHAR(30)` |  |
-| `tra_00001` |  | |  |  | `NUMC(4)` |  |
-| `sva_00001` |  | |  |  | `CHAR(1)` |  |
-| `svh_00001` |  | |  |  | `CHAR(1)` |  |
-| `hnm_00001` |  | |  |  | `CHAR(30)` |  |
-| `hno_00001` |  | |  |  | `CHAR(32)` |  |
-| `hio_00001` |  | |  |  | `CHAR(30)` |  |
-| `tra_sourceledger` |  | |  |  | `CHAR(2)` |  |
-| `sva_sourceledger` |  | |  |  | `CHAR(1)` |  |
-| `tra_00002` |  | |  |  | `NUMC(6)` |  |
-| `sva_00002` |  | |  |  | `CHAR(1)` |  |
-| `tra_00003` |  | |  |  | `CHAR(2)` |  |
-| `sva_00003` |  | |  |  | `CHAR(1)` |  |
-| `svh_00003` |  | |  |  | `CHAR(1)` |  |
-| `hnm_00003` |  | |  |  | `CHAR(30)` |  |
-| `hno_00003` |  | |  |  | `CHAR(32)` |  |
-| `hio_00003` |  | |  |  | `CHAR(30)` |  |
-| `tra_salesdocument` |  | |  |  | `CHAR(10)` |  |
-| `sva_salesdocument` |  | |  |  | `CHAR(1)` |  |
-| `tra_shiptoparty` |  | |  |  | `CHAR(10)` |  |
-| `sva_shiptoparty` |  | |  |  | `CHAR(1)` |  |
-| `svh_shiptoparty` |  | |  |  | `CHAR(1)` |  |
-| `hnm_shiptoparty` |  | |  |  | `CHAR(30)` |  |
-| `hno_shiptoparty` |  | |  |  | `CHAR(32)` |  |
-| `hio_shiptoparty` |  | |  |  | `CHAR(30)` |  |
-| `tra_00004` |  | |  |  | `CHAR(10)` |  |
-| `sva_00004` |  | |  |  | `CHAR(1)` |  |
-| `svh_00004` |  | |  |  | `CHAR(1)` |  |
-| `hnm_00004` |  | |  |  | `CHAR(30)` |  |
-| `hno_00004` |  | |  |  | `CHAR(32)` |  |
-| `hio_00004` |  | |  |  | `CHAR(30)` |  |
-| `tra_salesdistrict` |  | |  |  | `CHAR(6)` |  |
-| `sva_salesdistrict` |  | |  |  | `CHAR(1)` |  |
-| `svh_salesdistrict` |  | |  |  | `CHAR(1)` |  |
-| `hnm_salesdistrict` |  | |  |  | `CHAR(30)` |  |
-| `hno_salesdistrict` |  | |  |  | `CHAR(32)` |  |
-| `hio_salesdistrict` |  | |  |  | `CHAR(30)` |  |
-| `tra_billtoparty` |  | |  |  | `CHAR(10)` |  |
-| `sva_billtoparty` |  | |  |  | `CHAR(1)` |  |
-| `svh_billtoparty` |  | |  |  | `CHAR(1)` |  |
-| `hnm_billtoparty` |  | |  |  | `CHAR(30)` |  |
-| `hno_billtoparty` |  | |  |  | `CHAR(32)` |  |
-| `hio_billtoparty` |  | |  |  | `CHAR(30)` |  |
-| `tra_orderid` |  | |  |  | `CHAR(12)` |  |
-| `sva_orderid` |  | |  |  | `CHAR(1)` |  |
-| `svh_orderid` |  | |  |  | `CHAR(1)` |  |
-| `hnm_orderid` |  | |  |  | `CHAR(30)` |  |
-| `hno_orderid` |  | |  |  | `CHAR(32)` |  |
-| `hio_orderid` |  | |  |  | `CHAR(30)` |  |
-| `tra_currency` |  | |  |  | `CUKY(5)` |  |
-| `sva_currency` |  | |  |  | `CHAR(1)` |  |
-| `tra_00005` |  | |  |  | `CHAR(4)` |  |
-| `sva_00005` |  | |  |  | `CHAR(1)` |  |
-| `svh_00005` |  | |  |  | `CHAR(1)` |  |
-| `hnm_00005` |  | |  |  | `CHAR(30)` |  |
-| `hno_00005` |  | |  |  | `CHAR(32)` |  |
-| `hio_00005` |  | |  |  | `CHAR(30)` |  |
-| `tra_businessarea` |  | |  |  | `CHAR(4)` |  |
-| `sva_businessarea` |  | |  |  | `CHAR(1)` |  |
-| `svh_businessarea` |  | |  |  | `CHAR(1)` |  |
-| `hnm_businessarea` |  | |  |  | `CHAR(30)` |  |
-| `hno_businessarea` |  | |  |  | `CHAR(32)` |  |
-| `hio_businessarea` |  | |  |  | `CHAR(30)` |  |
-| `tra_00006` |  | |  |  | `CHAR(2)` |  |
-| `sva_00006` |  | |  |  | `CHAR(1)` |  |
-| `tra_00007` |  | |  |  | `CHAR(5)` |  |
-| `sva_00007` |  | |  |  | `CHAR(1)` |  |
-| `tra_tradingpartner` |  | |  |  | `CHAR(6)` |  |
-| `sva_tradingpartner` |  | |  |  | `CHAR(1)` |  |
-| `tra_glaccount` |  | |  |  | `CHAR(10)` |  |
-| `sva_glaccount` |  | |  |  | `CHAR(1)` |  |
-| `svh_glaccount` |  | |  |  | `CHAR(1)` |  |
-| `hnm_glaccount` |  | |  |  | `CHAR(30)` |  |
-| `hno_glaccount` |  | |  |  | `CHAR(32)` |  |
-| `hio_glaccount` |  | |  |  | `CHAR(30)` |  |
-| `tra_00008` |  | |  |  | `NUMC(7)` |  |
-| `sva_00008` |  | |  |  | `CHAR(1)` |  |
-| `tra_00009` |  | |  |  | `CHAR(9)` |  |
-| `sva_00009` |  | |  |  | `CHAR(1)` |  |
-| `tra_customergroup` |  | |  |  | `CHAR(2)` |  |
-| `sva_customergroup` |  | |  |  | `CHAR(1)` |  |
-| `svh_customergroup` |  | |  |  | `CHAR(1)` |  |
-| `hnm_customergroup` |  | |  |  | `CHAR(30)` |  |
-| `hno_customergroup` |  | |  |  | `CHAR(32)` |  |
-| `hio_customergroup` |  | |  |  | `CHAR(30)` |  |
-| `tra_fiscalyear` |  | |  |  | `NUMC(4)` |  |
-| `sva_fiscalyear` |  | |  |  | `CHAR(1)` |  |
-| `tra_00010` |  | |  |  | `CHAR(4)` |  |
-| `sva_00010` |  | |  |  | `CHAR(1)` |  |
-| `tra_soldproduct` |  | |  |  | `CHAR(40)` |  |
-| `sva_soldproduct` |  | |  |  | `CHAR(1)` |  |
-| `svh_soldproduct` |  | |  |  | `CHAR(1)` |  |
-| `hnm_soldproduct` |  | |  |  | `CHAR(30)` |  |
-| `hno_soldproduct` |  | |  |  | `CHAR(32)` |  |
-| `hio_soldproduct` |  | |  |  | `CHAR(30)` |  |
-| `tra_product` |  | |  |  | `CHAR(40)` |  |
-| `sva_product` |  | |  |  | `CHAR(1)` |  |
-| `svh_product` |  | |  |  | `CHAR(1)` |  |
-| `hnm_product` |  | |  |  | `CHAR(30)` |  |
-| `hno_product` |  | |  |  | `CHAR(32)` |  |
-| `hio_product` |  | |  |  | `CHAR(30)` |  |
-| `tra_ledger` |  | |  |  | `CHAR(2)` |  |
-| `sva_ledger` |  | |  |  | `CHAR(1)` |  |
-| `tra_00011` |  | |  |  | `CHAR(10)` |  |
-| `sva_00011` |  | |  |  | `CHAR(1)` |  |
-| `tra_00012` |  | |  |  | `CHAR(10)` |  |
-| `sva_00012` |  | |  |  | `CHAR(1)` |  |
-| `tra_00013` |  | |  |  | `CHAR(4)` |  |
-| `sva_00013` |  | |  |  | `CHAR(1)` |  |
-| `tra_00014` |  | |  |  | `CHAR(42)` |  |
-| `sva_00014` |  | |  |  | `CHAR(1)` |  |
-| `tra_postingdate` |  | |  |  | `DATS(8)` |  |
-| `sva_postingdate` |  | |  |  | `CHAR(1)` |  |
-| `svh_postingdate` |  | |  |  | `CHAR(1)` |  |
-| `hnm_postingdate` |  | |  |  | `CHAR(30)` |  |
-| `hno_postingdate` |  | |  |  | `CHAR(32)` |  |
-| `hio_postingdate` |  | |  |  | `CHAR(30)` |  |
-| `tra_currencyrole` |  | |  |  | `CHAR(2)` |  |
-| `sva_currencyrole` |  | |  |  | `CHAR(1)` |  |
-| `tra_currencyfield` |  | |  |  | `CHAR(4)` |  |
-| `sva_currencyfield` |  | |  |  | `CHAR(1)` |  |
-| `tra_00015` |  | |  |  | `CHAR(4)` |  |
-| `sva_00015` |  | |  |  | `CHAR(1)` |  |
-| `tra_companycode` |  | |  |  | `CHAR(4)` |  |
-| `sva_companycode` |  | |  |  | `CHAR(1)` |  |
-| `svh_companycode` |  | |  |  | `CHAR(1)` |  |
-| `hnm_companycode` |  | |  |  | `CHAR(30)` |  |
-| `hno_companycode` |  | |  |  | `CHAR(32)` |  |
-| `hio_companycode` |  | |  |  | `CHAR(30)` |  |
-| `tra_segment` |  | |  |  | `CHAR(10)` |  |
-| `sva_segment` |  | |  |  | `CHAR(1)` |  |
-| `svh_segment` |  | |  |  | `CHAR(1)` |  |
-| `hnm_segment` |  | |  |  | `CHAR(30)` |  |
-| `hno_segment` |  | |  |  | `CHAR(32)` |  |
-| `hio_segment` |  | |  |  | `CHAR(30)` |  |
-| `tra_customer` |  | |  |  | `CHAR(10)` |  |
-| `sva_customer` |  | |  |  | `CHAR(1)` |  |
-| `svh_customer` |  | |  |  | `CHAR(1)` |  |
-| `hnm_customer` |  | |  |  | `CHAR(30)` |  |
-| `hno_customer` |  | |  |  | `CHAR(32)` |  |
-| `hio_customer` |  | |  |  | `CHAR(30)` |  |
-| `tra_fiscalperiod` |  | |  |  | `NUMC(3)` |  |
-| `sva_fiscalperiod` |  | |  |  | `CHAR(1)` |  |
-| `svh_fiscalperiod` |  | |  |  | `CHAR(1)` |  |
-| `hnm_fiscalperiod` |  | |  |  | `CHAR(30)` |  |
-| `hno_fiscalperiod` |  | |  |  | `CHAR(32)` |  |
-| `hio_fiscalperiod` |  | |  |  | `CHAR(30)` |  |
-| `tra_00016` |  | |  |  | `CHAR(2)` |  |
-| `sva_00016` |  | |  |  | `CHAR(1)` |  |
-| `tra_00017` |  | |  |  | `CHAR(4)` |  |
-| `sva_00017` |  | |  |  | `CHAR(1)` |  |
-| `tra_functionalarea` |  | |  |  | `CHAR(16)` |  |
-| `sva_functionalarea` |  | |  |  | `CHAR(1)` |  |
-| `svh_functionalarea` |  | |  |  | `CHAR(1)` |  |
-| `hnm_functionalarea` |  | |  |  | `CHAR(30)` |  |
-| `hno_functionalarea` |  | |  |  | `CHAR(32)` |  |
-| `hio_functionalarea` |  | |  |  | `CHAR(30)` |  |
-| `tra_costcenter` |  | |  |  | `CHAR(10)` |  |
-| `sva_costcenter` |  | |  |  | `CHAR(1)` |  |
-| `svh_costcenter` |  | |  |  | `CHAR(1)` |  |
-| `hnm_costcenter` |  | |  |  | `CHAR(30)` |  |
-| `hno_costcenter` |  | |  |  | `CHAR(32)` |  |
-| `hio_costcenter` |  | |  |  | `CHAR(30)` |  |
-| `tra_plant` |  | |  |  | `CHAR(4)` |  |
-| `sva_plant` |  | |  |  | `CHAR(1)` |  |
-| `svh_plant` |  | |  |  | `CHAR(1)` |  |
-| `hnm_plant` |  | |  |  | `CHAR(30)` |  |
-| `hno_plant` |  | |  |  | `CHAR(32)` |  |
-| `hio_plant` |  | |  |  | `CHAR(30)` |  |
-| `tra_profitcenter` |  | |  |  | `CHAR(10)` |  |
-| `sva_profitcenter` |  | |  |  | `CHAR(1)` |  |
-| `svh_profitcenter` |  | |  |  | `CHAR(1)` |  |
-| `hnm_profitcenter` |  | |  |  | `CHAR(30)` |  |
-| `hno_profitcenter` |  | |  |  | `CHAR(32)` |  |
-| `hio_profitcenter` |  | |  |  | `CHAR(30)` |  |
-| `tra_00018` |  | |  |  | `CHAR(2)` |  |
-| `sva_00018` |  | |  |  | `CHAR(1)` |  |
-| `svh_00018` |  | |  |  | `CHAR(1)` |  |
-| `hnm_00018` |  | |  |  | `CHAR(30)` |  |
-| `hno_00018` |  | |  |  | `CHAR(32)` |  |
-| `hio_00018` |  | |  |  | `CHAR(30)` |  |
-| `tra_00019` |  | |  |  | `CHAR(2)` |  |
-| `sva_00019` |  | |  |  | `CHAR(1)` |  |
-| `tra_00020` |  | |  |  | `CHAR(6)` |  |
-| `sva_00020` |  | |  |  | `CHAR(1)` |  |
-| `tra_00021` |  | |  |  | `CHAR(4)` |  |
-| `sva_00021` |  | |  |  | `CHAR(1)` |  |
-| `svh_00021` |  | |  |  | `CHAR(1)` |  |
-| `hnm_00021` |  | |  |  | `CHAR(30)` |  |
-| `hno_00021` |  | |  |  | `CHAR(32)` |  |
-| `hio_00021` |  | |  |  | `CHAR(30)` |  |
-| `doctype` |  | |  |  | `CHAR(1)` |  |
-| `owner` |  | |  |  | `CHAR(12)` |  |
-| `infoprov` |  | |  |  | `CHAR(30)` |  |
-| `sva_infoprov` |  | |  |  | `CHAR(1)` |  |
-| `kyfnm` |  | |  |  | `CHAR(30)` |  |
-| `docstat` |  | |  |  | `CHAR(1)` |  |
-| `session_id` |  | |  |  | `CHAR(30)` |  |
-| `timestamp` |  | |  |  | `DEC(15)` |  |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODMARGCOSTBRKDWNDST')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODMARGCOSTBRKDWNDST')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodwfuabdbefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQ2ZjRhYmRiZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTg6MTlaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kNmY0YWJkYmVmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPjdvSFhlb2dLOVFzWDdwYmlmWmpNT2dsNEdNYz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;VU9ncXh0cEd0cEpoWXJ6aUczNzFEbWZUdEtjRlJ5S3RQK3pTK1Ara1U1SGpMb2xsS0xXNmREN00yRFJSbFg1cGJlVUY0WDR0MFZzTQpqV0p1Tm9GbHVWVHpZdEhGMGJ2a21lTnE0RWErR1ZscmNQd242OGIvOGlNOWNLVFZMTE9CYkMrQTMxRG1aQi9rcTVuQzg3aFRKQ2VXCm9Oazloejg4WGVRLzhMcWNINlExQjlzUENWeVVxS0N2emtlcnRkdnE3aWpVWENudmRaOHRaMENxZFR3Q0ZmYUNqN3hBNVNuV1ZOSUMKSDVtVTNySkcrNFF4bFlIeDdxcE9sZnhCNEErTDZEVDBrYTB3WUZNMWN3MFJTTnpvVnV2VGRhb256cjBOL1ViQ05vTThxd2UrQmprMAp6aFoyNHZWczNRMi92QWdkeHNhQ2N2YzZUMmUyUVJ3clp4YmxxZzkzZ09NL2c1ZUhVREtNOEc4cEI3bTlMd3h2RUtJcENESCt6QWtsClBKMm43YUU3UVZCY2ZmZFJPSWk1YjhxTGJjWjUyVzZuUm1YcE5BaUhkei9CeHpHK3ljRUhUS21aQUtxZHYxRk1TN3BncWk1SnBpZTAKZDNrdWVBYUtSVUM0SXlBRS9nbkl4S2R2UWhpVVVnL01EakRLeTRnbk9vcmx6aEFDTDZnckEwZWE8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodwfuabdbefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

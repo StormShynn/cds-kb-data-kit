@@ -5,9 +5,15 @@ app_component: FI-PRA-PRA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value
 semantic_en: "IncomingSalesOrderforPredictions - Cube"
+semantic_vi: "I_GLINCGSALESORDPRDTVCUBE — CDS view giao diện dựa trên I_GLINCGSALESORDPRDTVCUBE."
+keywords:
+  - "glincgsalesordprdtvcube"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - FI
   - bo:salesorder
@@ -18,7 +24,6 @@ tags:
   - interface-view
   - lob:finance
   - order
-  - metadata-only
 ---
 # I_GLINCGSALESORDPRDTVCUBE
 
@@ -30,123 +35,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
-| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
-| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
-| `AccountingDocCreatedByUser` |  | |  |  | `CHAR(12)` | User that created the journal entry |
-| `AccountingDocumentCategory` |  | |  |  | `CHAR(1)` | Journal Entry Category |
-| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
-| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
-| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
-| `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
-| `AmountInFreeDefinedCurrency2` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 2 |
-| `AmountInFreeDefinedCurrency3` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 3 |
-| `AmountInFreeDefinedCurrency4` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 4 |
-| `AmountInFreeDefinedCurrency5` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 5 |
-| `AmountInFreeDefinedCurrency6` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 6 |
-| `AmountInFreeDefinedCurrency7` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 7 |
-| `AmountInFreeDefinedCurrency8` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 8 |
-| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
-| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
-| `AssignmentReference` |  | |  |  | `CHAR(18)` | Assignment Reference |
-| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
-| `BillingDocumentType` |  | |  |  | `CHAR(4)` | Billing Type |
-| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-to Party |
-| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
-| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
-| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
-| `ClearingAccountingDocument` |  | |  |  | `CHAR(10)` | Clearing Journal Entry (Deprecated) |
-| `ClearingDate` |  | |  |  | `DATS(8)` | Clearing Date |
-| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
-| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | CO Debit/Credit Indicator |
-| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `CostOfGoodsSoldAmtInGlobCrcy` |  | |  |  | `CURR(23)` | Cost of Goods Sold - Total |
-| `CreationDate` |  | |  |  | `DATS(8)` | Creation Date |
-| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
-| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
-| `CustomerSupplierCountry` |  | |  |  | `CHAR(3)` | Customer or Supplier Country/Region |
-| `CustomerSupplierIndustry` |  | |  |  | `CHAR(4)` | Customer Supplier Industry |
-| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
-| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
-| `Division` |  | |  |  | `CHAR(2)` | Division |
-| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
-| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
-| `FinancialTransactionType` |  | |  |  | `CHAR(3)` | Financial Transaction Type |
-| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
-| `FiscalPeriodStartDate` |  | |  |  | `DATS(8)` | Start Date of Fiscal Period |
-| `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |
-| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
-| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
-| `FixedQuantity` |  | |  |  | `QUAN(23)` | Fixed Quantity |
-| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
-| `FreeDefinedCurrency2` |  | |  |  | `CUKY(5)` | Freely Defined Currency 2 |
-| `FreeDefinedCurrency3` |  | |  |  | `CUKY(5)` | Freely Defined Currency 3 |
-| `FreeDefinedCurrency4` |  | |  |  | `CUKY(5)` | Freely Defined Currency 4 |
-| `FreeDefinedCurrency5` |  | |  |  | `CUKY(5)` | Freely Defined Currency 5 |
-| `FreeDefinedCurrency6` |  | |  |  | `CUKY(5)` | Freely Defined Currency 6 |
-| `FreeDefinedCurrency7` |  | |  |  | `CUKY(5)` | Freely Defined Currency 7 |
-| `FreeDefinedCurrency8` |  | |  |  | `CUKY(5)` | Freely Defined Currency 8 |
-| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `GLAccountType` |  | |  |  | `CHAR(1)` | Type of a General Ledger Account |
-| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
-| `InvertedAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
-| `InvertedAmtInCoCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
-| `InvertedAmtInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
-| `InvertedAmtInFreeDefinedCrcy2` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 2 |
-| `InvertedAmtInFreeDefinedCrcy3` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 3 |
-| `InvertedAmtInFreeDefinedCrcy4` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 4 |
-| `InvertedAmtInFreeDefinedCrcy5` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 5 |
-| `InvertedAmtInFreeDefinedCrcy6` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 6 |
-| `InvertedAmtInFreeDefinedCrcy7` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 7 |
-| `InvertedAmtInFreeDefinedCrcy8` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 8 |
-| `InvertedAmtInTransCrcy` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
-| `JrnlEntrDerivdFiscalYearPeriod` |  | |  |  | `NUMC(7)` | Journal Entry Derived Fiscal Year Period |
-| `JrnlEntrDerivedFiscalPeriod` |  | |  |  | `NUMC(3)` | Journal Entry Derived Fiscal Period |
-| `JrnlEntrDerivedFiscalQuarter` |  | |  |  | `NUMC(1)` | Journal Entry Derived Fiscal Quarter |
-| `JrnlEntrDerivedFiscalYear` |  | |  |  | `NUMC(4)` | Journal Entry Derived Fiscal Year |
-| `JrnlEntryItemObsoleteReason` |  | |  |  | `CHAR(1)` | Reason Item is Obsolete |
-| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
-| `MaterialGroup` |  | |  |  | `CHAR(9)` | Product Sold Group |
-| `OperatingConcern` |  | |  |  | `CHAR(4)` | Operating Concern |
-| `OrderType` |  | |  |  | `CHAR(4)` | Sales Document Type |
-| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
-| `PostingKey` |  | |  |  | `CHAR(2)` | Posting Key |
-| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
-| `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
-| `RecognizedCOGSAmtInCCCrcy` |  | |  |  | `CURR(23)` | Recognized COS |
-| `RecognizedMarginAmtInCCCrcy` |  | |  |  | `CURR(23)` | Recognized Margin |
-| `RecognizedRevnAmtInCCCrcy` |  | |  |  | `CURR(23)` | Recognized Revenue |
-| `RecognizedRevnAmtInGlobCrcy` |  | |  |  | `CURR(23)` | Recognized Revenue |
-| `ReferenceDocumentType` |  | |  |  | `CHAR(5)` | Reference Document Type |
-| `RevenueAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
-| `RevenueInGlobalCurrency` |  | |  |  | `CURR(23)` | Revenue Amount in Global Currency |
-| `SalesDistrict` |  | |  |  | `CHAR(6)` | Sales District |
-| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
-| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
-| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
-| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
-| `SoldMaterial` |  | |  |  | `CHAR(40)` | Product Sold |
-| `SourceReferenceDocument` |  | |  |  | `CHAR(10)` | Source Reference Document |
-| `SourceReferenceDocumentItem` |  | |  |  | `NUMC(6)` | Source Reference Document Item |
-| `SourceReferenceDocumentType` |  | |  |  | `CHAR(5)` | Source Document Type |
-| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
-| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
-| `TransactionTypeDetermination` |  | |  |  | `CHAR(3)` | Transaction Key |
-| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLINCGSALESORDPRDTVCUBE')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocfsazwdywfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWNmMmE5NmQ4NmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTY6MzVaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jZjJhOTZkODZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPmxybE5yNVQwRFRZd0ZvcElEUXNOclVaWUVlQT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;RWtpaWFVVjhBTnVDNjlaTm0yN1o2d05OdkhPWWZxSlNoUDVPUUthaDRKa2w2SG5sNDloekVjQ2xHanVZbU4wcW9xdjVEaDhkSEQzdgpoMmRjOGNRM3RFMkRCMUQ1VmpiTjJCNEJDTmhvbkZ2QWM0dyt3aFdCWXdHNnZ2bU1LWEQydjhpMjVmaURaRkhBVDhVUVBTdjUwaksyCjlNMExvMnR3QkRkcS93VHg2dEdJWnJSQkVIQmpJUnAyRU1nTTdQeFpoZU8yc0VQV3Vzc05mbnlMK3FDYU01bytnWjdvS1V6VkxKaHkKN0pFUHo4bG5nOUpBcXY4YnZ5Z0RSejh4QVdQQ21sV1JuWVhVOExhUXlSS1E2QVRDTmF4eVd6ZEZlN1l3QW1CcTNJMUlPVU1WZXY5NwpVeSt5YUkwVGhLY1BobFJueWJuaDVMMkNsMEU3dXR4OW1kaEdNNUFmUzdsNlRiQ2J2bVJXUFFVTWYwUjVTR25BL1FNejRic09QRTIyCnRTM0RlUE5xd2FSNUp3MzRwMjhhZFcyOStVMStzcThqbUsrMzRvbyt0WTdRVCs3emdqbk9PL0RLclBxWGZzK2ttcEc5OHRFTmt0TDYKRFBlSkZBWFN1ZzJsK2JTY1Z2SklSbTcwV0lVYktSVTdQQnI2ZGdhek5iK3prMHUrTloyQnNZdWI8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocfsazwdywfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

@@ -5,9 +5,15 @@ app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTMATLVALNPRICEDEX')/$value
 semantic_en: "This CDS view provides the data to answer the following business questions: What is the current valid inventory price of a material at the time of request? This view is intended to be used for data extraction. With regular data extraction, you can use this view to create a price history on target system side."
+semantic_vi: "I_CURRENTMATLVALNPRICEDEX — CDS view giao diện dựa trên I_CURRENTMATLVALNPRICEDEX."
+keywords:
+  - "currentmatlvalnpricedex"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - CO
   - CO-PC
@@ -18,7 +24,6 @@ tags:
   - inventory
   - lob:controlling
   - material
-  - metadata-only
 ---
 # I_CURRENTMATLVALNPRICEDEX
 
@@ -30,33 +35,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTMATLVALNPRICEDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTMATLVALNPRICEDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate Number for Cost Est. w/o Qty Structure |
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `CurrencyRole` |  | |  |  | `CHAR(2)` | External Currency Type and Valuation View |
-| `Material` |  | |  |  | `CHAR(40)` | Material Number |
-| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
-| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales and Distribution Document Number |
-| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Item number of the SD document |
-| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
-| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
-| `InvtryValnSpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
-| `InventorySpecialStockValnType` |  | |  |  | `CHAR(1)` | Valuation of Special Stock |
-| `IsSupplierStockValuation` |  | |  |  | `CHAR(1)` | Vendor Stock Valuation Indicator |
-| `InventoryPrice` |  | |  |  | `CURR(23)` | Material Ledger Price |
-| `StandardPrice` |  | |  |  | `CURR(23)` | Material Ledger Price |
-| `MovingAveragePrice` |  | |  |  | `CURR(23)` | Material Ledger Price |
-| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `MaterialPriceControl` |  | |  |  | `CHAR(1)` | Price Control Indicator |
-| `MaterialPriceUnitQty` |  | |  |  | `DEC(5)` | Price Unit |
-| `BaseUnit` |  | |  |  | `UNIT(3)` | Valuation Unit of Measure |
-| `LedgerValnCrcyRoleIsUsedInLogs` |  | |  |  | `CHAR(1)` | Indicator: currency type is used in logistic reporting |
-| `LedgerName` |  | |  |  | `CHAR(60)` | Ledger Name |
-| `CurrencyRoleName` |  | |  |  | `CHAR(60)` | Currency Type Description |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTMATLVALNPRICEDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTMATLVALNPRICEDEX')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocxbdfacayfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWM3YmRmYWNhOGY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTQ6NTVaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jN2JkZmFjYThmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPmlsRUlxbzhLSFhZbS95SlFING05S1JnMmFkND08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;U2JjUmF1TUFOc2Z1NkhrbXhoSHRnQ1R0RkFhbVAwWTdJR2ZWWDc5V2QzOUxhdG95MmNFY0ZaMkxuRTl1bE4rQ3hyd3ZBb2QrYnJZbQpyOWQvUG5rR1hQUjM0Vms4L1QxWDJPT2RPSVNPK2U1Vy9wTWQ0dVkwVTZLVHJGQnJlSmVlNm5IYzY2cVdWUkhBTHZ4ejRsZUNMd0UrCkVEUGpVb0FjV3J1czZKZFBUbGNjNk1yK3RzSTlSWGlRbjRLdUQyekJkVzJWM0NOaHptODEzM0JBQysxalNuUlkvUk1OVHZsZHI5QWEKUHJsSTl2dUpsbHRlQ0VuY2t2SndIdjdlWThUL1JsOHhCMWtmZ05BMEJIS2tIYkFONy9jVDJLc1Zlc0lXcWlIbHp5dGRlcFFsNkVYYQoyR0dIdzljeGJ3OTg0RVlRMDhNQVQ4b3RuWkRySVNoMWxjUlhNV1dWMkNBYzZkSThaZ0pSVjByN1VlYU52MFBCSjJSK0R4K3FzUGplCnA4eHVFaUc0T3ZHN3FpOGlRYXRnTk03OEU2bjFoQWdubEhZWncwOHFBblh0RWZmclREbVE2YzdhL3IwbzRQSlJMT2djTWFNNXNDRDAKbDJXYUxYNk9pVHQ3WXFQdkNVcEJnWTA0cU1XYUJkbzZ5cEY5VU11N1prRkJKMWFlMHVmenl3elU8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocxbdfacayfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

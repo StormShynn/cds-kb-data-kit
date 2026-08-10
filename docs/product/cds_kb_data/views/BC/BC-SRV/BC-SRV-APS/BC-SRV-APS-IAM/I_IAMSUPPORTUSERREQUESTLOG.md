@@ -30,22 +30,22 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAMSupportUserRequestUUID` | ✓ | | `_SupportUserRequestLog` | `UUID` |  |  |
-| `CAMSuppUserValdtyStartDateTime` |  | | `_SupportUserRequestLog` | `RequestedAt` |  |  |
-| `CAMSupportUser` |  | | `_SupportUserRequestLog` | `Bname` |  |  |
-| `CAMSupportAccessLevel` |  | | `_SupportUserRequestLog` | `AccessLevelID` |  |  |
-| `CAMSupportAccessCategory` |  | | `_SupportUserRequestLog` | `AccessCategory` |  |  |
-| `CAMSupportAccessCategoryText` |  | | `_AccessCategory` | `ddtext` |  |  |
-| `CAMSuppAddedAuthorizationMode` |  | | `_SupportUserRequestLog` | `AbaMode` |  |  |
-| `CAMSuppAddedAuthznModeText` |  | | `_AbaMode` | `ddtext` |  |  |
-| `CAMSuppAddedAuthorizationUser` |  | | `_SupportUserRequestLog` | `AbaBname` |  |  |
-| `CAMSupportIncident` |  | | `_SupportUserRequestLog` | `IncidentID` |  |  |
-| `CAMSupportIncidentSystem` |  | | `_SupportUserRequestLog` | `IncidentSystemType` |  |  |
-| `CAMSupportIncidentSystemText` |  | | `_IncidentSystemType` | `ddtext` |  |  |
-| `CAMSupportIncidentSystemNumber` |  | | `_SupportUserRequestLog` | `IncidentSystemNumber` |  |  |
-| `CAMSupportIncidentTicketNumber` |  | | `_SupportUserRequestLog` | `IncidentNumber` |  |  |
-| `CAMSupportIncidentTicketYear` |  | | `_SupportUserRequestLog` | `IncidentYear` |  |  |
-| `CAMSuppUserValdtyEndDateTime` |  | | `_SupportUserRequestLog` | `ValidTo` |  |  |
+| `CAMSupportUserRequestUUID` | ✓ | | `_SupportUserRequestLog` | `UUID` | `RAW(16)` | 16 Byte UUID in 16 Bytes (Raw Format) |
+| `CAMSuppUserValdtyStartDateTime` |  | | `_SupportUserRequestLog` | `RequestedAt` | `DEC(21)` | IAM: Requested At |
+| `CAMSupportUser` |  | | `_SupportUserRequestLog` | `Bname` | `CHAR(12)` | IAM: SAP Support User ID |
+| `CAMSupportAccessLevel` |  | | `_SupportUserRequestLog` | `AccessLevelID` | `CHAR(22)` | IAM: Access Level ID |
+| `CAMSupportAccessCategory` |  | | `_SupportUserRequestLog` | `AccessCategory` | `CHAR(10)` | IAM: Access Category |
+| `CAMSupportAccessCategoryText` |  | | `_AccessCategory` | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `CAMSuppAddedAuthorizationMode` |  | | `_SupportUserRequestLog` | `AbaMode` | `CHAR(10)` | IAM: Additional Business Authorization Mode |
+| `CAMSuppAddedAuthznModeText` |  | | `_AbaMode` | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `CAMSuppAddedAuthorizationUser` |  | | `_SupportUserRequestLog` | `AbaBname` | `CHAR(12)` | IAM: Additional Business Authorization User |
+| `CAMSupportIncident` |  | | `_SupportUserRequestLog` | `IncidentID` | `CHAR(128)` | IAM: Incident ID |
+| `CAMSupportIncidentSystem` |  | | `_SupportUserRequestLog` | `IncidentSystemType` | `CHAR(10)` | IAM: Incident System Type |
+| `CAMSupportIncidentSystemText` |  | | `_IncidentSystemType` | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `CAMSupportIncidentSystemNumber` |  | | `_SupportUserRequestLog` | `IncidentSystemNumber` | `NUMC(10)` | IAM: Incident System Number |
+| `CAMSupportIncidentTicketNumber` |  | | `_SupportUserRequestLog` | `IncidentNumber` | `CHAR(64)` | IAM: Incident Number |
+| `CAMSupportIncidentTicketYear` |  | | `_SupportUserRequestLog` | `IncidentYear` | `NUMC(4)` | IAM: Incident Year |
+| `CAMSuppUserValdtyEndDateTime` |  | | `_SupportUserRequestLog` | `ValidTo` | `DEC(15)` | IAM: Valid To |
 | `_SupportUser` | | ✓ | | | | |
 
 ## Associations

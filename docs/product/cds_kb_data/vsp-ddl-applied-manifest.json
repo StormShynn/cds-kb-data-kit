@@ -1778,5 +1778,4000 @@
     "appliedAt": "2026-08-07T16:55:21.091Z",
     "fields": 4,
     "action": "updated"
+  },
+  "I_ASSETDEPRECIATIONPHASE": {
+    "appliedAt": "2026-08-10T15:22:28.644Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ASSETDEPRECIATIONPHASETEXT": {
+    "appliedAt": "2026-08-10T15:22:28.875Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ASSETDEPRECIATIONTYPE": {
+    "appliedAt": "2026-08-10T15:22:29.099Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ASSETDEPRECIATIONTYPETEXT": {
+    "appliedAt": "2026-08-10T15:22:29.304Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUDGETCOSTCENTER": {
+    "appliedAt": "2026-08-10T15:22:29.533Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUDGETCOSTCENTERRPTGCUBE": {
+    "appliedAt": "2026-08-10T15:22:29.724Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUDGETGLACCTHIERGROUPT": {
+    "appliedAt": "2026-08-10T15:22:29.937Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSINESSPARTNERCUSTOMERDEX": {
+    "appliedAt": "2026-08-10T15:22:30.201Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSINESSPARTNERSUPPLIERDEX": {
+    "appliedAt": "2026-08-10T15:22:30.407Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSINESSPROCESS": {
+    "appliedAt": "2026-08-10T15:22:30.596Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSINESSPROCESSTEXT": {
+    "appliedAt": "2026-08-10T15:22:30.811Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLDOCCAT": {
+    "appliedAt": "2026-08-10T15:22:30.995Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:22:31.189Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLFIELDCOMBNTYPE": {
+    "appliedAt": "2026-08-10T15:22:31.377Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLFIELDCOMBNTYPETEXT": {
+    "appliedAt": "2026-08-10T15:22:31.575Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLFLDCOMBNALLWDSIGN": {
+    "appliedAt": "2026-08-10T15:22:31.757Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLFLDCOMBNALLWDSIGNTXT": {
+    "appliedAt": "2026-08-10T15:22:31.935Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLFLDCOMBNSET": {
+    "appliedAt": "2026-08-10T15:22:32.149Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLFLDCOMBNSETTEXT": {
+    "appliedAt": "2026-08-10T15:22:32.353Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLFLDCOMBNSETTYPEASSGMT": {
+    "appliedAt": "2026-08-10T15:22:32.557Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLFLDCOMBNTYPEFLDASSGMT": {
+    "appliedAt": "2026-08-10T15:22:32.746Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLSELECTIONGROUP": {
+    "appliedAt": "2026-08-10T15:22:32.948Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLSELECTIONGROUPTEXT": {
+    "appliedAt": "2026-08-10T15:22:33.165Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLTABLEGROUP": {
+    "appliedAt": "2026-08-10T15:22:33.488Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_BUSVOLTABLEGROUPTEXT": {
+    "appliedAt": "2026-08-10T15:22:33.838Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CAADDLBANKCLEARINGACCOUNT": {
+    "appliedAt": "2026-08-10T15:22:34.059Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABANKCLEARINGACCOUNT": {
+    "appliedAt": "2026-08-10T15:22:34.277Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABILLGDOCPAYMENT": {
+    "appliedAt": "2026-08-10T15:22:34.488Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABILLGDOCREFERENCE": {
+    "appliedAt": "2026-08-10T15:22:34.761Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABILLGDOCSOURCE": {
+    "appliedAt": "2026-08-10T15:22:34.991Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABILLGDOCTAX": {
+    "appliedAt": "2026-08-10T15:22:35.199Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABLLBLEITMMAINBILLABLE": {
+    "appliedAt": "2026-08-10T15:22:35.452Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABLLBLEITMMAINBILLED": {
+    "appliedAt": "2026-08-10T15:22:35.682Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABLLBLEITMMAINBLLBLEEXCPTD": {
+    "appliedAt": "2026-08-10T15:22:36.031Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABLLBLEITMMAINRAW": {
+    "appliedAt": "2026-08-10T15:22:36.247Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABLLBLEITMMAINRAWEXCPTD": {
+    "appliedAt": "2026-08-10T15:22:36.439Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CABUSINESSTRANSACTION": {
+    "appliedAt": "2026-08-10T15:22:36.626Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CADOCUMENTBPITEMCUBE": {
+    "appliedAt": "2026-08-10T15:22:36.837Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CADOCUMENTCUBE": {
+    "appliedAt": "2026-08-10T15:22:37.022Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CADUNNINGHEADER": {
+    "appliedAt": "2026-08-10T15:22:37.220Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CADUNNINGITEM": {
+    "appliedAt": "2026-08-10T15:22:37.403Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CADUNNINGLETTERHEADER": {
+    "appliedAt": "2026-08-10T15:22:37.594Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CADUNNINGNOTICEISREVERSED": {
+    "appliedAt": "2026-08-10T15:22:37.792Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CADUNNOTICEISREVERSEDTEXT": {
+    "appliedAt": "2026-08-10T15:22:37.978Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CAPACITYBASIC": {
+    "appliedAt": "2026-08-10T15:22:38.199Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CAPACITYINTERVAL": {
+    "appliedAt": "2026-08-10T15:22:38.401Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CAPACITYSHIFT": {
+    "appliedAt": "2026-08-10T15:22:38.599Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CAPACITYTEXTBASIC": {
+    "appliedAt": "2026-08-10T15:22:38.812Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CASHJOURNALDOCUMENT_2": {
+    "appliedAt": "2026-08-10T15:22:39.014Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CEPUCOHDRDISTRBASIC": {
+    "appliedAt": "2026-08-10T15:22:39.212Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CEPUCOHDRDISTRPARTNERBASIC": {
+    "appliedAt": "2026-08-10T15:22:39.404Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CEPUCOITEMDISTRBASIC": {
+    "appliedAt": "2026-08-10T15:22:39.613Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CEPUCOITMDISTRPARTNERBASIC": {
+    "appliedAt": "2026-08-10T15:22:39.819Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITCLASSFCTNCONFIGURATION": {
+    "appliedAt": "2026-08-10T15:22:39.997Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITITEMCLASSIFICATIONCUBE": {
+    "appliedAt": "2026-08-10T15:22:40.194Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITITEMCLASSIFICATIONLOG": {
+    "appliedAt": "2026-08-10T15:22:40.390Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITITEMCLASSIFICATION_2": {
+    "appliedAt": "2026-08-10T15:22:40.578Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITREPORTINGITEM": {
+    "appliedAt": "2026-08-10T15:22:40.771Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITREPORTINGLINE": {
+    "appliedAt": "2026-08-10T15:22:40.945Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITREPORTINGLINETEXT": {
+    "appliedAt": "2026-08-10T15:22:41.174Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITREPORTVERSION": {
+    "appliedAt": "2026-08-10T15:22:41.362Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITSETTLEMENTLOG": {
+    "appliedAt": "2026-08-10T15:22:41.591Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITSETTLEMENTTEXT": {
+    "appliedAt": "2026-08-10T15:22:41.790Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CITSTATISTICALKEYVALUE": {
+    "appliedAt": "2026-08-10T15:22:41.965Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CMMDTYMTMLOGFINVALCUBE": {
+    "appliedAt": "2026-08-10T15:22:42.157Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CMMDTYMTMMESSAGE": {
+    "appliedAt": "2026-08-10T15:22:42.349Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CMMDTYMTMVALUECUBE": {
+    "appliedAt": "2026-08-10T15:22:42.542Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CMMDTYPOSITIONREPQTYCUBE": {
+    "appliedAt": "2026-08-10T15:22:42.726Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNCONMNLSETTLMTALLWNCCAT": {
+    "appliedAt": "2026-08-10T15:22:42.907Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNCONMNLSETTLMTALLWNCCATT": {
+    "appliedAt": "2026-08-10T15:22:43.081Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNCONSETLDETLDSTMNTBILLGDOC": {
+    "appliedAt": "2026-08-10T15:22:43.271Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNCONSETLDETLDSTMNTMATLDOC": {
+    "appliedAt": "2026-08-10T15:22:43.470Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNCONSETLDETLDSTMNTSUPLRINVC": {
+    "appliedAt": "2026-08-10T15:22:43.708Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNCONSETTLEMENTLOCKSTATUS": {
+    "appliedAt": "2026-08-10T15:22:43.909Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNCONSETTLEMENTLOCKSTATUST": {
+    "appliedAt": "2026-08-10T15:22:44.112Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRACCRRVSLCAT": {
+    "appliedAt": "2026-08-10T15:22:44.347Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRACCRRVSLCATTEXT": {
+    "appliedAt": "2026-08-10T15:22:44.546Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRACCRRVSLSTS": {
+    "appliedAt": "2026-08-10T15:22:44.750Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRACCRRVSLSTSTEXT": {
+    "appliedAt": "2026-08-10T15:22:44.954Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRACCRSOURCE": {
+    "appliedAt": "2026-08-10T15:22:45.130Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRACCRSOURCETEXT": {
+    "appliedAt": "2026-08-10T15:22:45.322Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRAPPRVLPROC": {
+    "appliedAt": "2026-08-10T15:22:45.516Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRAPPRVLPROCTEXT": {
+    "appliedAt": "2026-08-10T15:22:45.715Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRBUSVOLSIGN": {
+    "appliedAt": "2026-08-10T15:22:45.925Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRBUSVOLSIGNTEXT": {
+    "appliedAt": "2026-08-10T15:22:46.119Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRCHANGEABILITY": {
+    "appliedAt": "2026-08-10T15:22:46.380Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRCHANGEABILITYTEXT": {
+    "appliedAt": "2026-08-10T15:22:46.557Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRCLASSFCTNTYPE": {
+    "appliedAt": "2026-08-10T15:22:46.728Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRCLASSFCTNTYPETEXT": {
+    "appliedAt": "2026-08-10T15:22:46.937Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRCUSTOMERLISTSTDVH": {
+    "appliedAt": "2026-08-10T15:22:47.142Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRCUSTOMERSTDVH": {
+    "appliedAt": "2026-08-10T15:22:47.360Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRCUSTSETTLMTCAT": {
+    "appliedAt": "2026-08-10T15:22:47.559Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRCUSTSETTLMTCATTXT": {
+    "appliedAt": "2026-08-10T15:22:47.775Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRELIGIBLECAT": {
+    "appliedAt": "2026-08-10T15:22:47.998Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRELIGIBLECATTEXT": {
+    "appliedAt": "2026-08-10T15:22:48.196Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTREXTSLSCOMMSNSTDVH": {
+    "appliedAt": "2026-08-10T15:22:48.381Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRISINACTIVE": {
+    "appliedAt": "2026-08-10T15:22:48.564Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRISINACTIVETEXT": {
+    "appliedAt": "2026-08-10T15:22:48.765Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRITEMCATEGORY": {
+    "appliedAt": "2026-08-10T15:22:48.980Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRITEMCATEGORYTXT": {
+    "appliedAt": "2026-08-10T15:22:49.185Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPARTNERCAT": {
+    "appliedAt": "2026-08-10T15:22:49.392Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPARTNERCATTEXT": {
+    "appliedAt": "2026-08-10T15:22:49.629Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPLANTLISTSTDVH": {
+    "appliedAt": "2026-08-10T15:22:49.848Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPRCGDETNRLVNCECAT": {
+    "appliedAt": "2026-08-10T15:22:50.056Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPRCGDETNRLVNCECATT": {
+    "appliedAt": "2026-08-10T15:22:50.256Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPROCESSCATEGORY": {
+    "appliedAt": "2026-08-10T15:22:50.465Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPROCESSCATEGORYTEXT": {
+    "appliedAt": "2026-08-10T15:22:50.669Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPROCVARPURASSGMT": {
+    "appliedAt": "2026-08-10T15:22:50.875Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPROCVARSLSASSGMT": {
+    "appliedAt": "2026-08-10T15:22:51.096Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPROCVARSTDVH": {
+    "appliedAt": "2026-08-10T15:22:51.311Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPROCVARTEXT": {
+    "appliedAt": "2026-08-10T15:22:51.511Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPROCVARTYPEASSGMT": {
+    "appliedAt": "2026-08-10T15:22:51.808Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPRTLSETTLMTCAT": {
+    "appliedAt": "2026-08-10T15:22:52.089Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPRTLSETTLMTCATTXT": {
+    "appliedAt": "2026-08-10T15:22:52.275Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPURPOSECAT": {
+    "appliedAt": "2026-08-10T15:22:52.479Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRPURPOSECATTEXT": {
+    "appliedAt": "2026-08-10T15:22:52.681Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRROYALTYSTDVH": {
+    "appliedAt": "2026-08-10T15:22:52.870Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSETTLMTLOCKED": {
+    "appliedAt": "2026-08-10T15:22:53.070Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSETTLMTLOCKTEXT": {
+    "appliedAt": "2026-08-10T15:22:53.291Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSETTLMTTYPE": {
+    "appliedAt": "2026-08-10T15:22:53.473Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSETTLMTTYPETEXT": {
+    "appliedAt": "2026-08-10T15:22:53.679Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSLSRBTESTDVH": {
+    "appliedAt": "2026-08-10T15:22:53.876Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSOURCEDOCCAT": {
+    "appliedAt": "2026-08-10T15:22:54.072Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSOURCEDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:22:54.292Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSUPLRRBTESTDVH": {
+    "appliedAt": "2026-08-10T15:22:54.496Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSUPLRSETTLMTCAT": {
+    "appliedAt": "2026-08-10T15:22:54.688Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSUPLRSETTLMTCATTXT": {
+    "appliedAt": "2026-08-10T15:22:54.881Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSUPPLIERLISTSTDVH": {
+    "appliedAt": "2026-08-10T15:22:55.082Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRSUPPLIERSTDVH": {
+    "appliedAt": "2026-08-10T15:22:55.265Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRTYPEBLOCKUSAGE": {
+    "appliedAt": "2026-08-10T15:22:55.462Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNCONTRTYPEBLOCKUSAGETEXT": {
+    "appliedAt": "2026-08-10T15:22:55.649Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNDOCITMACTIVATIONSTATUS": {
+    "appliedAt": "2026-08-10T15:22:55.840Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNDOCITMACTIVATIONSTATUST": {
+    "appliedAt": "2026-08-10T15:22:56.026Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNDOCSUPLRINVCDLVCOSTCAT": {
+    "appliedAt": "2026-08-10T15:22:56.229Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNDOCSUPLRINVCDLVCOSTCATT": {
+    "appliedAt": "2026-08-10T15:22:56.458Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNDOCWORKERSETTLMTCAT": {
+    "appliedAt": "2026-08-10T15:22:56.699Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNDNDOCWORKERSETTLMTCATTXT": {
+    "appliedAt": "2026-08-10T15:22:56.900Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMBINEDSETTLMTPOSTGSTS": {
+    "appliedAt": "2026-08-10T15:22:57.092Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMBINEDSETTLMTPOSTGSTSTEXT": {
+    "appliedAt": "2026-08-10T15:22:57.354Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMMLPROJMGMTPLNGCAT": {
+    "appliedAt": "2026-08-10T15:22:57.558Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMPACTJOURNAL": {
+    "appliedAt": "2026-08-10T15:22:57.751Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMPANYCODEASSET": {
+    "appliedAt": "2026-08-10T15:22:57.927Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMPANYCODEOID": {
+    "appliedAt": "2026-08-10T15:22:58.114Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMPANYMARGINCUBE": {
+    "appliedAt": "2026-08-10T15:22:58.320Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMPANYMARGINCUBE_2": {
+    "appliedAt": "2026-08-10T15:22:58.532Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMPANYMARGINCURRENCYFIELD": {
+    "appliedAt": "2026-08-10T15:22:58.729Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMPETITIONPRESSURECATEGORY": {
+    "appliedAt": "2026-08-10T15:22:58.922Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COMPETITIONPRESSURECATEGORYT": {
+    "appliedAt": "2026-08-10T15:22:59.119Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CONDITIONCONTRACTSTDVH": {
+    "appliedAt": "2026-08-10T15:22:59.321Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CONSIGNMENTCONTROL": {
+    "appliedAt": "2026-08-10T15:22:59.516Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CONSIGNMENTCONTROLTEXT": {
+    "appliedAt": "2026-08-10T15:22:59.716Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CONTACTPERSONDEX": {
+    "appliedAt": "2026-08-10T15:22:59.910Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CONTROLLINGOBJECTVH": {
+    "appliedAt": "2026-08-10T15:23:00.114Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CONTROLRECIPE": {
+    "appliedAt": "2026-08-10T15:23:00.298Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CONTROLRECIPESTATUS": {
+    "appliedAt": "2026-08-10T15:23:00.499Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CONTROLRECIPESTATUSTEXT": {
+    "appliedAt": "2026-08-10T15:23:00.700Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTCENTERACTIVITYTYPECTRL": {
+    "appliedAt": "2026-08-10T15:23:00.888Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTCOMPONENTASSIGNMENT": {
+    "appliedAt": "2026-08-10T15:23:01.083Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTCOMPONENTSTRUCTURE": {
+    "appliedAt": "2026-08-10T15:23:01.291Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTCOMPONENTSTRUCTURETEXT": {
+    "appliedAt": "2026-08-10T15:23:01.503Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTCTRACTYTYPECOSTCTRCAT": {
+    "appliedAt": "2026-08-10T15:23:01.723Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTORIGINGROUPSTDVH_2": {
+    "appliedAt": "2026-08-10T15:23:01.950Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTORIGINGROUPTEXT_2": {
+    "appliedAt": "2026-08-10T15:23:02.155Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTORIGINGROUP_2": {
+    "appliedAt": "2026-08-10T15:23:02.368Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTORIGINTYPE": {
+    "appliedAt": "2026-08-10T15:23:02.582Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COSTORIGINTYPETEXT": {
+    "appliedAt": "2026-08-10T15:23:02.865Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_COUNTRYGEOPOINT": {
+    "appliedAt": "2026-08-10T15:23:03.085Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CRSCOSETTLMTCAT": {
+    "appliedAt": "2026-08-10T15:23:03.310Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CRSCOSETTLMTCATTEXT": {
+    "appliedAt": "2026-08-10T15:23:03.478Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CURRENCYROLEINLEDGERCOCODEVH": {
+    "appliedAt": "2026-08-10T15:23:03.666Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CURRENTBUSINESSPROCESSTEXT": {
+    "appliedAt": "2026-08-10T15:23:03.863Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CURRENTMATLVALNPRICEDEX": {
+    "appliedAt": "2026-08-10T15:23:04.054Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CURRENTYEARFISCALPERIODTEXT": {
+    "appliedAt": "2026-08-10T15:23:04.258Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTOMERCONTACTATTRIBUTE": {
+    "appliedAt": "2026-08-10T15:23:04.442Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTOMERITEMSETTLMTSTATUS": {
+    "appliedAt": "2026-08-10T15:23:04.657Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTOMERITEMSETTLMTSTATUSTXT": {
+    "appliedAt": "2026-08-10T15:23:04.849Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTOMERSETTLMTDOCCAT": {
+    "appliedAt": "2026-08-10T15:23:05.038Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTOMERSETTLMTDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:23:05.231Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTOMERSETTLMTSTATUS": {
+    "appliedAt": "2026-08-10T15:23:05.413Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTOMERSETTLMTSTATUSTXT": {
+    "appliedAt": "2026-08-10T15:23:05.600Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMT": {
+    "appliedAt": "2026-08-10T15:23:05.790Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTBANKDATA": {
+    "appliedAt": "2026-08-10T15:23:05.963Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTITEM": {
+    "appliedAt": "2026-08-10T15:23:06.157Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTITEMPARTNER": {
+    "appliedAt": "2026-08-10T15:23:06.353Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTITEMPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:06.549Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:23:06.746Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTITMPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:23:06.945Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTLIST": {
+    "appliedAt": "2026-08-10T15:23:07.131Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTLISTBANKDATA": {
+    "appliedAt": "2026-08-10T15:23:07.322Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTLISTITEM": {
+    "appliedAt": "2026-08-10T15:23:07.510Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTLISTITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:23:07.714Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTLISTPARTNER": {
+    "appliedAt": "2026-08-10T15:23:07.953Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTLISTPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:08.120Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTLISTSTDVH": {
+    "appliedAt": "2026-08-10T15:23:08.314Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTPARTNER": {
+    "appliedAt": "2026-08-10T15:23:08.526Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:08.732Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:23:08.936Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTSETTLMTSTDVH": {
+    "appliedAt": "2026-08-10T15:23:09.126Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CUSTUNIVHIERARCHYTEXT_2": {
+    "appliedAt": "2026-08-10T15:23:09.318Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DAYSBEYONDTERMS": {
+    "appliedAt": "2026-08-10T15:23:09.513Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DAYSSALESOUTSTANDING": {
+    "appliedAt": "2026-08-10T15:23:09.725Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEFECTSERIALNUMBER": {
+    "appliedAt": "2026-08-10T15:23:09.914Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRAREAFORLEDGERTEXT": {
+    "appliedAt": "2026-08-10T15:23:10.110Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRECIATIONAREA": {
+    "appliedAt": "2026-08-10T15:23:10.318Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRECIATIONAREAFORLEDGER": {
+    "appliedAt": "2026-08-10T15:23:10.515Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRECIATIONKEY": {
+    "appliedAt": "2026-08-10T15:23:10.726Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRECIATIONKEYTEXT": {
+    "appliedAt": "2026-08-10T15:23:10.934Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRECIATIONPROFILE": {
+    "appliedAt": "2026-08-10T15:23:11.119Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRECIATIONPROFILESTDVH": {
+    "appliedAt": "2026-08-10T15:23:11.319Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRECIATIONPROFILETEXT": {
+    "appliedAt": "2026-08-10T15:23:11.534Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRPRFLACCTGPRNCPSTDVH": {
+    "appliedAt": "2026-08-10T15:23:11.760Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRPROFILEACCTGPRNCPASSGMT": {
+    "appliedAt": "2026-08-10T15:23:11.955Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRPROFILEPHASE": {
+    "appliedAt": "2026-08-10T15:23:12.155Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DEPRPROFILEPHASELEVEL": {
+    "appliedAt": "2026-08-10T15:23:12.352Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DERIVATIVECONTRSPEC": {
+    "appliedAt": "2026-08-10T15:23:12.534Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DOCINTRASTATRELEVANCE": {
+    "appliedAt": "2026-08-10T15:23:12.732Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DOCINTRASTATRELEVANCETEXT": {
+    "appliedAt": "2026-08-10T15:23:12.942Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DUNNINGENTRY": {
+    "appliedAt": "2026-08-10T15:23:13.142Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DUNNINGENTRYITEM": {
+    "appliedAt": "2026-08-10T15:23:13.403Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_DUNNINGLEVELDISTRIBUTION": {
+    "appliedAt": "2026-08-10T15:23:13.562Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EARMARKEDFUNDSDOCTYPESTDVH": {
+    "appliedAt": "2026-08-10T15:23:13.772Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EMLTMPLCUSTOMERDOWNPAYMENT": {
+    "appliedAt": "2026-08-10T15:23:13.961Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENGMNTPRJMARGINITEMCUBE": {
+    "appliedAt": "2026-08-10T15:23:14.162Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENGMNTPRJMARGINITEMDST": {
+    "appliedAt": "2026-08-10T15:23:14.360Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENGMNTPRJMARGOVWCUBE": {
+    "appliedAt": "2026-08-10T15:23:14.543Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENGMNTPRJMARGOVWDST": {
+    "appliedAt": "2026-08-10T15:23:14.753Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENTPRJMARGINITEMCUBE": {
+    "appliedAt": "2026-08-10T15:23:14.950Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENTPRJMARGINITEMDST": {
+    "appliedAt": "2026-08-10T15:23:15.145Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENTPROJMARGINANALYSISCUBE": {
+    "appliedAt": "2026-08-10T15:23:15.358Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENTPROJMARGOVWCUBE": {
+    "appliedAt": "2026-08-10T15:23:15.566Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENTPROJMARGOVWDST": {
+    "appliedAt": "2026-08-10T15:23:15.785Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENTPROJSETTLMTDISTRRULE": {
+    "appliedAt": "2026-08-10T15:23:15.984Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ENTPROJSETTLMTRULE": {
+    "appliedAt": "2026-08-10T15:23:16.177Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EQUIPMENTHIERARCHYNODE": {
+    "appliedAt": "2026-08-10T15:23:16.373Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EQUIPMENTTIMESEG": {
+    "appliedAt": "2026-08-10T15:23:16.566Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ETOPROJBDGTAVAILYCTRLCUBE": {
+    "appliedAt": "2026-08-10T15:23:16.768Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ETOPROJECTITEMCUBE": {
+    "appliedAt": "2026-08-10T15:23:16.977Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ETOPROJMARGOVWCUBE": {
+    "appliedAt": "2026-08-10T15:23:17.162Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXCHANGERATE": {
+    "appliedAt": "2026-08-10T15:23:17.350Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMT": {
+    "appliedAt": "2026-08-10T15:23:17.545Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTBANKDATA": {
+    "appliedAt": "2026-08-10T15:23:17.746Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTITEM": {
+    "appliedAt": "2026-08-10T15:23:17.940Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTITEMPARTNER": {
+    "appliedAt": "2026-08-10T15:23:18.144Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTITEMPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:18.343Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:23:18.597Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTITMPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:23:18.770Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTPARTNER": {
+    "appliedAt": "2026-08-10T15:23:18.983Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:19.184Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:23:19.389Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_EXPNSETTLMTSTDVH": {
+    "appliedAt": "2026-08-10T15:23:19.579Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FASHIONGRADE": {
+    "appliedAt": "2026-08-10T15:23:19.782Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FASHIONGRADETEXT": {
+    "appliedAt": "2026-08-10T15:23:19.983Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FASHIONPRODINFOFIELD1": {
+    "appliedAt": "2026-08-10T15:23:20.171Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FASHIONPRODINFOFIELD2": {
+    "appliedAt": "2026-08-10T15:23:20.361Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FASHIONPRODINFOFIELD3": {
+    "appliedAt": "2026-08-10T15:23:20.542Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FASHIONPRODINFOFLD1TEXT": {
+    "appliedAt": "2026-08-10T15:23:20.729Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FASHIONPRODINFOFLD2TEXT": {
+    "appliedAt": "2026-08-10T15:23:20.935Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FASHIONPRODINFOFLD3TEXT": {
+    "appliedAt": "2026-08-10T15:23:21.134Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FINANCENOTIFMESSAGEANCHOR": {
+    "appliedAt": "2026-08-10T15:23:21.348Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FINANCENOTIFPROCSTEPMESSAGE": {
+    "appliedAt": "2026-08-10T15:23:21.546Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FINDIMENSIONSQTYFIELDS": {
+    "appliedAt": "2026-08-10T15:23:21.773Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FINSEPAMANDATE": {
+    "appliedAt": "2026-08-10T15:23:21.978Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FINVALUATIONOBJECTTYPE": {
+    "appliedAt": "2026-08-10T15:23:22.157Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FINVALUATIONOBJECTTYPETEXT": {
+    "appliedAt": "2026-08-10T15:23:22.348Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALCALDATENXTFSCLPERIOD": {
+    "appliedAt": "2026-08-10T15:23:22.540Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALCALDATEPREVFSCLPERIOD": {
+    "appliedAt": "2026-08-10T15:23:22.773Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALCALENDARDATENXTPERIODS": {
+    "appliedAt": "2026-08-10T15:23:22.985Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALCALENDARDTEPREVPERIODS": {
+    "appliedAt": "2026-08-10T15:23:23.166Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALCALENDARYEARTODATERNGE": {
+    "appliedAt": "2026-08-10T15:23:23.345Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALDATEFUNCSINGLEVH": {
+    "appliedAt": "2026-08-10T15:23:23.525Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALDATEFUNCTIONRANGEVH": {
+    "appliedAt": "2026-08-10T15:23:23.713Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALPERIODDATEFUNCRANGEVH": {
+    "appliedAt": "2026-08-10T15:23:23.961Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALPERIODDATEFUNCSINGLEVH": {
+    "appliedAt": "2026-08-10T15:23:24.148Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALQUARTERDATEFUNCRANGEVH": {
+    "appliedAt": "2026-08-10T15:23:24.333Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALQUARTERDATEFUNCSGLVH": {
+    "appliedAt": "2026-08-10T15:23:24.570Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALTIMEUNITVALUEHELP": {
+    "appliedAt": "2026-08-10T15:23:24.774Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALWEEKDATEFUNCRANGEVH": {
+    "appliedAt": "2026-08-10T15:23:24.977Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALWEEKDATEFUNCSINGLEVH": {
+    "appliedAt": "2026-08-10T15:23:25.160Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALYEARDATEFUNCRANGEVH": {
+    "appliedAt": "2026-08-10T15:23:25.355Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FISCALYEARDATEFUNCSINGLEVH": {
+    "appliedAt": "2026-08-10T15:23:25.554Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FIXEDASSETCOUNTRYDATA": {
+    "appliedAt": "2026-08-10T15:23:25.756Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FIXEDASSETGROUP": {
+    "appliedAt": "2026-08-10T15:23:25.953Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FIXEDASSETGROUPTEXT": {
+    "appliedAt": "2026-08-10T15:23:26.150Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FIXEDASSETSTDVH": {
+    "appliedAt": "2026-08-10T15:23:26.344Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FREEDFNDTABLEFIELDSEMANTIC": {
+    "appliedAt": "2026-08-10T15:23:26.525Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FREEDFNDTBLFIELDSEMANTICTEXT": {
+    "appliedAt": "2026-08-10T15:23:26.718Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FRTCOSTALLOCADDLREFDOCCAT": {
+    "appliedAt": "2026-08-10T15:23:26.909Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FRTCOSTALLOCADDLREFDOCCATT": {
+    "appliedAt": "2026-08-10T15:23:27.102Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FRTCOSTALLOCPRECDGDOCCAT": {
+    "appliedAt": "2026-08-10T15:23:27.297Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FRTCOSTALLOCPRECDGDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:23:27.490Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FRTCOSTALLOCREFDOCCAT": {
+    "appliedAt": "2026-08-10T15:23:27.703Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FRTCOSTALLOCREFDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:23:27.891Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FRTCOSTALLOCSRCEDOCCAT": {
+    "appliedAt": "2026-08-10T15:23:28.086Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FRTCOSTALLOCSRCEDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:23:28.274Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FSCLCALDATEFSCLYRLASTPERIOD": {
+    "appliedAt": "2026-08-10T15:23:28.458Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FSCLPERDWTHOUTFSCLYRFORVAR": {
+    "appliedAt": "2026-08-10T15:23:28.656Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FSCLQTRWTHOUTFSCLYRFORVAR": {
+    "appliedAt": "2026-08-10T15:23:28.868Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FSCLYRINTVLDRVTNFORCOMPRNDTE": {
+    "appliedAt": "2026-08-10T15:23:29.060Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FSCLYRINTVLDRVTNFORPOSTGDATE": {
+    "appliedAt": "2026-08-10T15:23:29.314Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FUNCTIONALLOCATIONLABEL": {
+    "appliedAt": "2026-08-10T15:23:29.515Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FUNCTIONALLOCATIONSTATUS": {
+    "appliedAt": "2026-08-10T15:23:29.689Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_FUTUREACCOUNTSRECEIVABLES": {
+    "appliedAt": "2026-08-10T15:23:29.873Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GENERALLEDGERIMPAIRMENT": {
+    "appliedAt": "2026-08-10T15:23:30.055Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GENERICPRIORITYDATA": {
+    "appliedAt": "2026-08-10T15:23:30.251Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GENERICPRIORITYTEXTDATA": {
+    "appliedAt": "2026-08-10T15:23:30.443Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCOUNTHIERARCHYSTDVH": {
+    "appliedAt": "2026-08-10T15:23:30.650Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCOUNTHIERNODEBYSEMTAG": {
+    "appliedAt": "2026-08-10T15:23:30.852Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCOUNTLINEITEMCUBE": {
+    "appliedAt": "2026-08-10T15:23:31.035Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCOUNTLINEITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:23:31.234Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCOUNTYEARTODATEBALANCEC": {
+    "appliedAt": "2026-08-10T15:23:31.433Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCTBALANCE": {
+    "appliedAt": "2026-08-10T15:23:31.642Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCTBALANCECOMPRNCUBE": {
+    "appliedAt": "2026-08-10T15:23:31.847Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCTBALANCECUBE": {
+    "appliedAt": "2026-08-10T15:23:32.044Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCTLINEITEMSEMTAGGLACCT": {
+    "appliedAt": "2026-08-10T15:23:32.233Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLACCTLINEITMSUBLDGRITMTYPEC": {
+    "appliedAt": "2026-08-10T15:23:32.426Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GLINCGSALESORDPRDTVCUBE": {
+    "appliedAt": "2026-08-10T15:23:32.634Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GOODSMOVEMENTDOCUMENTDEX": {
+    "appliedAt": "2026-08-10T15:23:32.826Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GOODSMOVEMENTSUBSTITUTEDEX": {
+    "appliedAt": "2026-08-10T15:23:33.031Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GRIRPROCESSHISTORY": {
+    "appliedAt": "2026-08-10T15:23:33.227Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP1ASSETEVALUATIONKEY": {
+    "appliedAt": "2026-08-10T15:23:33.413Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP1ASSETEVALUATIONKEYTEXT": {
+    "appliedAt": "2026-08-10T15:23:33.614Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP2ASSETEVALUATIONKEY": {
+    "appliedAt": "2026-08-10T15:23:33.788Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP2ASSETEVALUATIONKEYTEXT": {
+    "appliedAt": "2026-08-10T15:23:33.987Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP3ASSETEVALUATIONKEY": {
+    "appliedAt": "2026-08-10T15:23:34.177Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP3ASSETEVALUATIONKEYTEXT": {
+    "appliedAt": "2026-08-10T15:23:34.376Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP4ASSETEVALUATIONKEY": {
+    "appliedAt": "2026-08-10T15:23:34.630Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP4ASSETEVALUATIONKEYTEXT": {
+    "appliedAt": "2026-08-10T15:23:34.808Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP5ASSETEVALUATIONKEY": {
+    "appliedAt": "2026-08-10T15:23:35.005Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_GROUP5ASSETEVALUATIONKEYTEXT": {
+    "appliedAt": "2026-08-10T15:23:35.240Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INDUSTRYSECTORTEXT": {
+    "appliedAt": "2026-08-10T15:23:35.469Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INSPRESULTLONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:35.674Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INSPRESULTVALUELONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:35.891Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INSPSPECVERSIONLONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:36.089Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INSPSUBSETRESULTLONGTEXT": {
+    "appliedAt": "2026-08-10T15:23:36.300Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INTERNALORDERSTDVH": {
+    "appliedAt": "2026-08-10T15:23:36.488Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INTRASTATDECLNGDSFLWCAT": {
+    "appliedAt": "2026-08-10T15:23:36.676Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INTRASTATDECLNGDSFLWCATTEXT": {
+    "appliedAt": "2026-08-10T15:23:36.871Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INVESTMENTPROFILE": {
+    "appliedAt": "2026-08-10T15:23:37.067Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INVESTMENTPROFILETEXT": {
+    "appliedAt": "2026-08-10T15:23:37.257Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INVESTMENTSUPPORTMEASURE": {
+    "appliedAt": "2026-08-10T15:23:37.455Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INVESTMENTSUPPORTMEASURETEXT": {
+    "appliedAt": "2026-08-10T15:23:37.661Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_IN_ACCUMULATIONHEADER": {
+    "appliedAt": "2026-08-10T15:23:37.870Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_IN_ACCUMULATIONITEM": {
+    "appliedAt": "2026-08-10T15:23:38.071Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_IN_INPUTSRVCDISTRBASIC": {
+    "appliedAt": "2026-08-10T15:23:38.272Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_IN_OUTGINVCADDLFSCLDTA": {
+    "appliedAt": "2026-08-10T15:23:38.476Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_IN_SUBCONTRGDOCDET": {
+    "appliedAt": "2026-08-10T15:23:38.720Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_IN_SUPPLIERCERTIFICATEDETAIL": {
+    "appliedAt": "2026-08-10T15:23:38.942Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ITEMDISTRIBUTIONSTATUS": {
+    "appliedAt": "2026-08-10T15:23:39.130Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ITEMDISTRIBUTIONSTATUSTEXT": {
+    "appliedAt": "2026-08-10T15:23:39.335Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ITEMINTRASTATRELEVANCE": {
+    "appliedAt": "2026-08-10T15:23:39.539Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ITEMINTRASTATRELEVANCETEXT": {
+    "appliedAt": "2026-08-10T15:23:39.752Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ITEMSETTLMTRELEVANCE": {
+    "appliedAt": "2026-08-10T15:23:39.960Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ITEMSETTLMTRELEVANCETEXT": {
+    "appliedAt": "2026-08-10T15:23:40.322Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ITMSETTLMTDOCCOLLRELEVANCE": {
+    "appliedAt": "2026-08-10T15:23:40.527Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ITMSETTLMTDOCCOLLRELEVANCET": {
+    "appliedAt": "2026-08-10T15:23:40.732Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOINTVENTURERECOVERY": {
+    "appliedAt": "2026-08-10T15:23:40.936Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOINTVENTURERECOVERYSTDVH": {
+    "appliedAt": "2026-08-10T15:23:41.154Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOINTVENTURERECOVERYTEXT": {
+    "appliedAt": "2026-08-10T15:23:41.356Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOURNALENTRYANALYZERCUBE": {
+    "appliedAt": "2026-08-10T15:23:41.559Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOURNALENTRYITEMBASIC": {
+    "appliedAt": "2026-08-10T15:23:41.764Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOURNALENTRYITEMBROWSER": {
+    "appliedAt": "2026-08-10T15:23:41.972Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOURNALENTRYITEMCUBE": {
+    "appliedAt": "2026-08-10T15:23:42.209Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOURNALENTRYOPERATIONALVIEW": {
+    "appliedAt": "2026-08-10T15:23:42.432Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JOURNALENTRYVH": {
+    "appliedAt": "2026-08-10T15:23:42.631Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JP_INVOICESUMMARYHIERARCHY": {
+    "appliedAt": "2026-08-10T15:23:42.842Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JP_PRPTYTXRPTCITY": {
+    "appliedAt": "2026-08-10T15:23:43.048Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JP_PRPTYTXRPTCITYT": {
+    "appliedAt": "2026-08-10T15:23:43.250Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JP_PRPTYTXRPTCLASSFCTNKEY": {
+    "appliedAt": "2026-08-10T15:23:43.450Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JP_PRPTYTXRPTCLASSFCTNKEYT": {
+    "appliedAt": "2026-08-10T15:23:43.656Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_JP_SUPLRINVCSMMRYDOCOUTPUT": {
+    "appliedAt": "2026-08-10T15:23:43.870Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_KNBNCTRLCYCPRODMSTRDTA": {
+    "appliedAt": "2026-08-10T15:23:44.074Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LABELFORMTEXT": {
+    "appliedAt": "2026-08-10T15:23:44.264Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LABELTYPETEXT": {
+    "appliedAt": "2026-08-10T15:23:44.466Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LDGRCOCODECRCYROLESSTDVH": {
+    "appliedAt": "2026-08-10T15:23:44.661Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LDGRCOCODESELECTEDCRCYBRANCH": {
+    "appliedAt": "2026-08-10T15:23:44.867Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LEDGERCOCODE": {
+    "appliedAt": "2026-08-10T15:23:45.070Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LEDGERCOMPANYCODECRCYROLEVH": {
+    "appliedAt": "2026-08-10T15:23:45.268Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LEDGERCOMPANYCODEVH": {
+    "appliedAt": "2026-08-10T15:23:45.467Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LEDGERSTDVH": {
+    "appliedAt": "2026-08-10T15:23:45.673Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LOGISTICALROUNDINGPROFILE": {
+    "appliedAt": "2026-08-10T15:23:45.940Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LOGISTICALROUNDINGPROFILET": {
+    "appliedAt": "2026-08-10T15:23:46.116Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LOGISTICSDATAENTRYCAT": {
+    "appliedAt": "2026-08-10T15:23:46.316Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LOGISTICSDATAENTRYCATTEXT": {
+    "appliedAt": "2026-08-10T15:23:46.521Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LOSSALLOWANCEKEYFIGURE": {
+    "appliedAt": "2026-08-10T15:23:46.721Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LOSSALLOWANCEKEYFIGURETEXT": {
+    "appliedAt": "2026-08-10T15:23:46.931Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LOSSALLOWANCELAYOUT": {
+    "appliedAt": "2026-08-10T15:23:47.128Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_LOSSALLOWANCELAYOUTTEXT": {
+    "appliedAt": "2026-08-10T15:23:47.334Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTACTYTYPESTDVH": {
+    "appliedAt": "2026-08-10T15:23:47.536Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTENANCEACTIVITYTYPE": {
+    "appliedAt": "2026-08-10T15:23:47.749Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTENANCEEVENTLIKELIHOOD": {
+    "appliedAt": "2026-08-10T15:23:47.958Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTENANCENOTIFICATIONTYPE": {
+    "appliedAt": "2026-08-10T15:23:48.161Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTENANCEORDERPHASE": {
+    "appliedAt": "2026-08-10T15:23:48.352Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTENANCEORDERPHASETEXT": {
+    "appliedAt": "2026-08-10T15:23:48.530Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTENANCEORDERPROCESSPHASE": {
+    "appliedAt": "2026-08-10T15:23:48.730Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTENANCEORDERSTATUS": {
+    "appliedAt": "2026-08-10T15:23:48.937Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTENANCEPLANPLANT": {
+    "appliedAt": "2026-08-10T15:23:49.143Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEQUIPHIERARCHYNODE": {
+    "appliedAt": "2026-08-10T15:23:49.354Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVENTCNSQNCCATEGORYMAP": {
+    "appliedAt": "2026-08-10T15:23:49.553Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVENTCNSQNCCATEGORYTEXT": {
+    "appliedAt": "2026-08-10T15:23:49.745Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVENTCONSEQUENCETEXT": {
+    "appliedAt": "2026-08-10T15:23:49.945Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVENTLIKELIHOODTEXT": {
+    "appliedAt": "2026-08-10T15:23:50.146Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVENTPRIOZNPROFILE": {
+    "appliedAt": "2026-08-10T15:23:50.339Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVENTPRIOZNPROFILETEXT": {
+    "appliedAt": "2026-08-10T15:23:50.536Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVTCNSQNCCATEGORYGROUP": {
+    "appliedAt": "2026-08-10T15:23:50.744Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVTCNSQNCCATEGORYGROUPT": {
+    "appliedAt": "2026-08-10T15:23:50.931Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTEVTCONSEQUENCECATEGORY": {
+    "appliedAt": "2026-08-10T15:23:51.140Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTNOTIFRSKASSESSMENTCUBE": {
+    "appliedAt": "2026-08-10T15:23:51.405Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTNOTIFRSKASSESSMENTDEX": {
+    "appliedAt": "2026-08-10T15:23:51.599Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTORDERACTUALCOSTDATACUBE": {
+    "appliedAt": "2026-08-10T15:23:51.802Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTORDERPROCESSPHASETEXT": {
+    "appliedAt": "2026-08-10T15:23:52.004Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTORDPROCSUBORDDPHASE": {
+    "appliedAt": "2026-08-10T15:23:52.213Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTORDPROCSUBORDDPHASETXT": {
+    "appliedAt": "2026-08-10T15:23:52.425Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTORDSUBOPSTDVH": {
+    "appliedAt": "2026-08-10T15:23:52.617Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTPACKAGETEXTDATA": {
+    "appliedAt": "2026-08-10T15:23:52.829Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTPLANSCHEDGOVERVIEWCUBE": {
+    "appliedAt": "2026-08-10T15:23:53.040Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MAINTTASKLISTOPPRTCUBE": {
+    "appliedAt": "2026-08-10T15:23:53.250Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MANAGESEPASENDERTYPETEXT": {
+    "appliedAt": "2026-08-10T15:23:53.448Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MARGANLYSPRODANDSRVCCUBE": {
+    "appliedAt": "2026-08-10T15:23:53.654Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MARGANLYSPRODANDSRVCOBJTYPE": {
+    "appliedAt": "2026-08-10T15:23:53.849Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MARGANLYSPRODANDSRVCOBJTYPET": {
+    "appliedAt": "2026-08-10T15:23:54.039Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MARGANLYSRPTCURRENCYFIELD": {
+    "appliedAt": "2026-08-10T15:23:54.250Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MARKETIDENTCODE": {
+    "appliedAt": "2026-08-10T15:23:54.441Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MATERIALCOSTESTCOSTINGRUNDEX": {
+    "appliedAt": "2026-08-10T15:23:54.647Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MATERIALGROUPPACKGMATLTEXT": {
+    "appliedAt": "2026-08-10T15:23:54.846Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MATERIALGROUPPACKINGMATERIAL": {
+    "appliedAt": "2026-08-10T15:23:55.053Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MATERIALVALUATIONDEX": {
+    "appliedAt": "2026-08-10T15:23:55.260Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MFGORDERITEMAMOUNTCUBE": {
+    "appliedAt": "2026-08-10T15:23:55.459Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ML_BALANCE": {
+    "appliedAt": "2026-08-10T15:23:55.659Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMADJUSTMENTTYPE": {
+    "appliedAt": "2026-08-10T15:23:55.855Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMADJUSTMENTTYPET": {
+    "appliedAt": "2026-08-10T15:23:56.041Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMCALCULATIONGROUP": {
+    "appliedAt": "2026-08-10T15:23:56.242Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMCALCULATIONGROUPT": {
+    "appliedAt": "2026-08-10T15:23:56.446Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMCONDITIONGROUP": {
+    "appliedAt": "2026-08-10T15:23:56.696Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMCONDITIONGROUPCATEGORY": {
+    "appliedAt": "2026-08-10T15:23:56.872Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMCONDITIONGROUPCATEGORYT": {
+    "appliedAt": "2026-08-10T15:23:57.051Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMCONDITIONGROUPT": {
+    "appliedAt": "2026-08-10T15:23:57.265Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMDATASOURCETYPE": {
+    "appliedAt": "2026-08-10T15:23:57.465Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MTMDATASOURCETYPT": {
+    "appliedAt": "2026-08-10T15:23:57.672Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_OFFSETTINGACCOUNTSTDVH": {
+    "appliedAt": "2026-08-10T15:23:57.867Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_OPERATIONALACCTGDOCCUBE": {
+    "appliedAt": "2026-08-10T15:23:58.064Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_OPERATIONSTDWORKQTYGRPGCAT": {
+    "appliedAt": "2026-08-10T15:23:58.280Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_OPLACCTGDOCUMENTITEMBROWSER": {
+    "appliedAt": "2026-08-10T15:23:58.475Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_OPSTDWORKQTYGRPGCATTEXT": {
+    "appliedAt": "2026-08-10T15:23:58.671Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ORDERPROCESSINGGROUP": {
+    "appliedAt": "2026-08-10T15:23:58.868Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_ORDERPROCESSINGGROUPTEXT": {
+    "appliedAt": "2026-08-10T15:23:59.059Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_OVERDUEACCOUNTSRECEIVABLES": {
+    "appliedAt": "2026-08-10T15:23:59.274Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_OVHDPROJMARGOVWCUBE": {
+    "appliedAt": "2026-08-10T15:23:59.467Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_OVHDPROJMARGOVWDST": {
+    "appliedAt": "2026-08-10T15:23:59.659Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PAYMENTMETHODINCOMPANYCODE": {
+    "appliedAt": "2026-08-10T15:23:59.865Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PERFEFFICIENCYRATIOTEXT": {
+    "appliedAt": "2026-08-10T15:24:00.052Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PERFORMANCEEFFICIENCYRATIO": {
+    "appliedAt": "2026-08-10T15:24:00.240Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PERFORMANCEOBLIGATIONROLE": {
+    "appliedAt": "2026-08-10T15:24:00.426Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PERFORMANCEOBLIGATIONROLETXT": {
+    "appliedAt": "2026-08-10T15:24:00.618Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PERSSETTLMTDOCITMPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:24:00.826Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PERSSETTLMTDOCPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:24:01.017Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PLANLINEITEMSEMTAG": {
+    "appliedAt": "2026-08-10T15:24:01.215Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PLANTSECTION": {
+    "appliedAt": "2026-08-10T15:24:01.443Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PNLEVENTCATEGORY": {
+    "appliedAt": "2026-08-10T15:24:01.630Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PNLEVENTCATEGORYTEXT": {
+    "appliedAt": "2026-08-10T15:24:01.890Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PNLEVENTTYPE": {
+    "appliedAt": "2026-08-10T15:24:02.084Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PNLEVENTTYPETEXT": {
+    "appliedAt": "2026-08-10T15:24:02.283Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POINTOFSALEINBOUNDPROFILE": {
+    "appliedAt": "2026-08-10T15:24:02.481Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POINTOFSALEINBOUNDPROFILET": {
+    "appliedAt": "2026-08-10T15:24:02.682Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POINTOFSALEOUTBOUNDPROFILE": {
+    "appliedAt": "2026-08-10T15:24:02.922Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POINTOFSALEOUTBOUNDPROFILET": {
+    "appliedAt": "2026-08-10T15:24:03.150Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POSINBAGGRGDSALESSETTINGS": {
+    "appliedAt": "2026-08-10T15:24:03.360Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POSINBSLSASPERRCPTSSETTINGS": {
+    "appliedAt": "2026-08-10T15:24:03.552Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POSTINGKEYT": {
+    "appliedAt": "2026-08-10T15:24:03.740Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POSTINGPARTNERCAT": {
+    "appliedAt": "2026-08-10T15:24:03.928Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_POSTINGPARTNERCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:04.124Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRECEDINGCONDITIONDOCUMENTVH": {
+    "appliedAt": "2026-08-10T15:24:04.326Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRICEFIXINGCATEGORY": {
+    "appliedAt": "2026-08-10T15:24:04.529Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRICEFIXINGCATEGORYTEXT": {
+    "appliedAt": "2026-08-10T15:24:04.719Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRICINGSTATUS": {
+    "appliedAt": "2026-08-10T15:24:04.922Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRICINGSTATUSTEXT": {
+    "appliedAt": "2026-08-10T15:24:05.104Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PROCESSMESSAGE": {
+    "appliedAt": "2026-08-10T15:24:05.304Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PROCESSMESSAGECATEGORY": {
+    "appliedAt": "2026-08-10T15:24:05.508Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PROCESSMESSAGECATEGORYTEXT": {
+    "appliedAt": "2026-08-10T15:24:05.709Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODANDSRVCMARGANLYSCUBE": {
+    "appliedAt": "2026-08-10T15:24:05.894Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODDISTRIBUTIONPROFILESTDVH": {
+    "appliedAt": "2026-08-10T15:24:06.094Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODMARGCOSTBRKDWNCUBE": {
+    "appliedAt": "2026-08-10T15:24:06.288Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODMARGCOSTBRKDWNDST": {
+    "appliedAt": "2026-08-10T15:24:06.485Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNROUTINGCOMPALLOCDEX": {
+    "appliedAt": "2026-08-10T15:24:06.673Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNROUTINGMATLASSGMTDEX": {
+    "appliedAt": "2026-08-10T15:24:06.878Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNROUTINGOPSUBORDOPDEX": {
+    "appliedAt": "2026-08-10T15:24:07.063Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNROUTINGSEQUENCEDEX": {
+    "appliedAt": "2026-08-10T15:24:07.323Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNRTGDOCPRTASSGMTDEX": {
+    "appliedAt": "2026-08-10T15:24:07.516Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNRTGEQUIPPRTASSGMTDEX": {
+    "appliedAt": "2026-08-10T15:24:07.712Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNRTGINSPCHARACTERISTIC": {
+    "appliedAt": "2026-08-10T15:24:07.903Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNRTGINSPCHARCASSGMTDEX": {
+    "appliedAt": "2026-08-10T15:24:08.112Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNRTGINSPCHARCTYPE": {
+    "appliedAt": "2026-08-10T15:24:08.322Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNRTGMATLPRTASSGMTDEX": {
+    "appliedAt": "2026-08-10T15:24:08.531Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNRTGMISCPRTASSGMTDEX": {
+    "appliedAt": "2026-08-10T15:24:08.708Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODNRTGSQNCOPASSGMTDEX": {
+    "appliedAt": "2026-08-10T15:24:08.906Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODSRVCMARGREPCRCYFLD": {
+    "appliedAt": "2026-08-10T15:24:09.088Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTCOSTESTIMATEDEX": {
+    "appliedAt": "2026-08-10T15:24:09.287Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTCOSTESTIMATEERRORLOG": {
+    "appliedAt": "2026-08-10T15:24:09.475Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTCOSTESTIMATEITEMDEX": {
+    "appliedAt": "2026-08-10T15:24:09.674Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTDISTRIBUTIONPROFILE": {
+    "appliedAt": "2026-08-10T15:24:09.878Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTDISTRIBUTIONPROFILET": {
+    "appliedAt": "2026-08-10T15:24:10.075Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTGROUP": {
+    "appliedAt": "2026-08-10T15:24:10.270Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTGROUPTEXT": {
+    "appliedAt": "2026-08-10T15:24:10.462Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTIONROUTINGDEX": {
+    "appliedAt": "2026-08-10T15:24:10.673Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTIONROUTINGHEADERDEX": {
+    "appliedAt": "2026-08-10T15:24:10.880Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTMARGINANALYSISCUBE": {
+    "appliedAt": "2026-08-10T15:24:11.083Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTMARGINANALYSISDST": {
+    "appliedAt": "2026-08-10T15:24:11.291Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTPLANT": {
+    "appliedAt": "2026-08-10T15:24:11.513Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTSTORAGELOCATION": {
+    "appliedAt": "2026-08-10T15:24:11.722Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PRODUCTVALUATION": {
+    "appliedAt": "2026-08-10T15:24:11.924Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PROFITABILITYCUBE": {
+    "appliedAt": "2026-08-10T15:24:12.129Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PROJECTUNFORMATTEDID": {
+    "appliedAt": "2026-08-10T15:24:12.344Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PURCHASINGGROUPSTDVH": {
+    "appliedAt": "2026-08-10T15:24:12.613Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_PURCHASINGORGSTDVH": {
+    "appliedAt": "2026-08-10T15:24:12.807Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RACONTRACTPOSTINGMODE": {
+    "appliedAt": "2026-08-10T15:24:13.043Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RACONTRACTPOSTINGMODETEXT": {
+    "appliedAt": "2026-08-10T15:24:13.240Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RACURRENTACCOUNTINGPERIOD": {
+    "appliedAt": "2026-08-10T15:24:13.442Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RADEFERRALITEMCATPERCNDNTYPE": {
+    "appliedAt": "2026-08-10T15:24:13.622Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RADEFRLITEMFORDSPCRCYCUBE_2": {
+    "appliedAt": "2026-08-10T15:24:13.807Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RADEFRLITMCATPERCNDNTYPETEXT": {
+    "appliedAt": "2026-08-10T15:24:13.989Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RAPERFOBLGNINVCEFFCTTYPE": {
+    "appliedAt": "2026-08-10T15:24:14.192Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RAPERFOBLGNINVCEFFCTTYPETEXT": {
+    "appliedAt": "2026-08-10T15:24:14.403Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RAPOSTINGITEMCUBE_2": {
+    "appliedAt": "2026-08-10T15:24:14.601Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RASUSPENSIONREASON": {
+    "appliedAt": "2026-08-10T15:24:14.790Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RASUSPENSIONREASONTEXT": {
+    "appliedAt": "2026-08-10T15:24:14.984Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RATOTALOPENREVENUECUBE_2": {
+    "appliedAt": "2026-08-10T15:24:15.177Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RAUNIVREVNRECGNCONTRTEXT": {
+    "appliedAt": "2026-08-10T15:24:15.392Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RAUNIVREVNRECGNCONTRVH": {
+    "appliedAt": "2026-08-10T15:24:15.593Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RAUNIVREVNRECGNINTEGTYPE": {
+    "appliedAt": "2026-08-10T15:24:15.779Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RAUNIVREVNRECGNINTEGTYPETEXT": {
+    "appliedAt": "2026-08-10T15:24:15.975Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RETAILCHARACTERISTIC": {
+    "appliedAt": "2026-08-10T15:24:16.167Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RETAILCHARACTERISTICVALUE": {
+    "appliedAt": "2026-08-10T15:24:16.377Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RETAILCHARACTERISTICVALUET": {
+    "appliedAt": "2026-08-10T15:24:16.564Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RETAILSTOREUSERASSIGNMENT": {
+    "appliedAt": "2026-08-10T15:24:16.764Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_RFM_SLSDOCTYPEPERSLSAREA": {
+    "appliedAt": "2026-08-10T15:24:16.953Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SALESDEAL": {
+    "appliedAt": "2026-08-10T15:24:17.149Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SALESDEALSTDVH": {
+    "appliedAt": "2026-08-10T15:24:17.357Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SALESORGANIZATIONSTDVH": {
+    "appliedAt": "2026-08-10T15:24:17.550Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SCALESGROUP": {
+    "appliedAt": "2026-08-10T15:24:17.802Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SCALESGROUPTEXT": {
+    "appliedAt": "2026-08-10T15:24:17.988Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEASON": {
+    "appliedAt": "2026-08-10T15:24:18.193Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEASONASSIGNMENT": {
+    "appliedAt": "2026-08-10T15:24:18.385Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEASONPRODUCT_2": {
+    "appliedAt": "2026-08-10T15:24:18.571Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEASONPURCHASEPERIOD_2": {
+    "appliedAt": "2026-08-10T15:24:18.774Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEASONSALESPERIOD_2": {
+    "appliedAt": "2026-08-10T15:24:18.957Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEASONSTOCKTRANSFERPERIOD": {
+    "appliedAt": "2026-08-10T15:24:19.147Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEASONTEXT": {
+    "appliedAt": "2026-08-10T15:24:19.365Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAAPPLICATION": {
+    "appliedAt": "2026-08-10T15:24:19.555Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAAPPLICATIONTEXT": {
+    "appliedAt": "2026-08-10T15:24:19.759Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAMANDATE": {
+    "appliedAt": "2026-08-10T15:24:19.957Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAMANDATESTATUS": {
+    "appliedAt": "2026-08-10T15:24:20.136Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAMANDATESTATUSCHGREASON": {
+    "appliedAt": "2026-08-10T15:24:20.332Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAMANDATESTATUSTEXT": {
+    "appliedAt": "2026-08-10T15:24:20.511Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAMANDATESTSCHGRSNTEXT": {
+    "appliedAt": "2026-08-10T15:24:20.691Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAMANDATEUSAGE": {
+    "appliedAt": "2026-08-10T15:24:20.874Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAPAYMENTTYPE": {
+    "appliedAt": "2026-08-10T15:24:21.069Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SEPAPAYMENTTYPETEXT": {
+    "appliedAt": "2026-08-10T15:24:21.278Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SERVICEMARGINCUBE": {
+    "appliedAt": "2026-08-10T15:24:21.470Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLDBUSVOLDOCCATEGORY": {
+    "appliedAt": "2026-08-10T15:24:21.652Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLDBUSVOLDOCCATEGORYTEXT": {
+    "appliedAt": "2026-08-10T15:24:21.854Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTHDRTXTDETNPROCED": {
+    "appliedAt": "2026-08-10T15:24:22.063Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTHDRTXTDETNPROCEDT": {
+    "appliedAt": "2026-08-10T15:24:22.267Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTHDRTXTOBJTYPE": {
+    "appliedAt": "2026-08-10T15:24:22.472Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTHDRTXTOBJTYPEASSGMT": {
+    "appliedAt": "2026-08-10T15:24:22.671Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTHDRTXTOBJTYPET": {
+    "appliedAt": "2026-08-10T15:24:22.923Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTITMTXTDETNPROCED": {
+    "appliedAt": "2026-08-10T15:24:23.108Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTITMTXTDETNPROCEDT": {
+    "appliedAt": "2026-08-10T15:24:23.315Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTITMTXTOBJTYPE": {
+    "appliedAt": "2026-08-10T15:24:23.522Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTITMTXTOBJTYPEASSGMT": {
+    "appliedAt": "2026-08-10T15:24:23.727Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTITMTXTOBJTYPET": {
+    "appliedAt": "2026-08-10T15:24:23.929Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTPRODBSDDOCPRTNCAT": {
+    "appliedAt": "2026-08-10T15:24:24.158Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETLMGMTPRODBSDDOCPRTNCATT": {
+    "appliedAt": "2026-08-10T15:24:24.380Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTACTIVITYREASONCODE": {
+    "appliedAt": "2026-08-10T15:24:24.573Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTACTIVITYREASONTEXT": {
+    "appliedAt": "2026-08-10T15:24:24.770Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTADDLREFDOCCAT": {
+    "appliedAt": "2026-08-10T15:24:24.969Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTADDLREFDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:25.168Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTAPPLSTSGRP": {
+    "appliedAt": "2026-08-10T15:24:25.383Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTAPPLSTSGRPSTSASSGMT": {
+    "appliedAt": "2026-08-10T15:24:25.574Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTAPPLSTSGRPTEXT": {
+    "appliedAt": "2026-08-10T15:24:25.777Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTBLOCKINGREASONCODE": {
+    "appliedAt": "2026-08-10T15:24:25.981Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTBLOCKINGREASONTEXT": {
+    "appliedAt": "2026-08-10T15:24:26.165Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTBUSPROCVAR": {
+    "appliedAt": "2026-08-10T15:24:26.371Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTBUSPROCVARTEXT": {
+    "appliedAt": "2026-08-10T15:24:26.554Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTCAT": {
+    "appliedAt": "2026-08-10T15:24:26.744Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:26.946Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTCLASSIFICATIONCAT": {
+    "appliedAt": "2026-08-10T15:24:27.146Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTCLASSIFICATIONCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:27.345Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTCOLLECTIONCATEGORY": {
+    "appliedAt": "2026-08-10T15:24:27.544Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTCOLLECTIONCATEGORYT": {
+    "appliedAt": "2026-08-10T15:24:27.832Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTCOMPNRSN": {
+    "appliedAt": "2026-08-10T15:24:28.036Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTCOMPNRSNTEXT": {
+    "appliedAt": "2026-08-10T15:24:28.297Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDATAXTRCTNCAT": {
+    "appliedAt": "2026-08-10T15:24:28.497Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDATAXTRCTNCATTXT": {
+    "appliedAt": "2026-08-10T15:24:28.701Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDATECAT": {
+    "appliedAt": "2026-08-10T15:24:28.895Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDATECATTEXT": {
+    "appliedAt": "2026-08-10T15:24:29.081Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDATEUSAGE": {
+    "appliedAt": "2026-08-10T15:24:29.268Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDATEUSAGETEXT": {
+    "appliedAt": "2026-08-10T15:24:29.474Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCBANKDATA": {
+    "appliedAt": "2026-08-10T15:24:29.666Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCITEMPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:24:29.874Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:24:30.082Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLIST": {
+    "appliedAt": "2026-08-10T15:24:30.287Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLISTBANKDATA": {
+    "appliedAt": "2026-08-10T15:24:30.500Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLISTITEM": {
+    "appliedAt": "2026-08-10T15:24:30.687Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLISTITEMCAT": {
+    "appliedAt": "2026-08-10T15:24:30.877Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLISTITEMCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:31.068Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLISTITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:24:31.263Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLISTPARTNER": {
+    "appliedAt": "2026-08-10T15:24:31.467Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLISTPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:24:31.663Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCLISTSTDVH": {
+    "appliedAt": "2026-08-10T15:24:31.858Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:24:32.039Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCPROCTYPEASSGMT": {
+    "appliedAt": "2026-08-10T15:24:32.220Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCSIGNADJMT": {
+    "appliedAt": "2026-08-10T15:24:32.440Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCSIGNADJMTTEXT": {
+    "appliedAt": "2026-08-10T15:24:32.637Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCSMMRZNCAT": {
+    "appliedAt": "2026-08-10T15:24:32.830Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCSMMRZNCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:33.029Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCTYPESTDVH": {
+    "appliedAt": "2026-08-10T15:24:33.215Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCTYPETEXT": {
+    "appliedAt": "2026-08-10T15:24:33.421Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCTYPEVARIANT": {
+    "appliedAt": "2026-08-10T15:24:33.683Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTDOCTYPEVARIANTT": {
+    "appliedAt": "2026-08-10T15:24:33.852Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTITMSTATISTICALPRPTY": {
+    "appliedAt": "2026-08-10T15:24:34.054Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTITMSTATISTICALPRPTYT": {
+    "appliedAt": "2026-08-10T15:24:34.253Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTITMWGTVOLLVLCAT": {
+    "appliedAt": "2026-08-10T15:24:34.451Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTITMWGTVOLLVLCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:34.648Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTACCTGTRANSFSTS": {
+    "appliedAt": "2026-08-10T15:24:34.838Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTACCTGTRANSFSTST": {
+    "appliedAt": "2026-08-10T15:24:35.036Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTADJMTCAT": {
+    "appliedAt": "2026-08-10T15:24:35.233Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTADJMTCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:35.425Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTAUTHZNCAT": {
+    "appliedAt": "2026-08-10T15:24:35.638Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTAUTHZNCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:35.870Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCACCTTYPE": {
+    "appliedAt": "2026-08-10T15:24:36.093Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCACCTTYPETEXT": {
+    "appliedAt": "2026-08-10T15:24:36.291Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCCAT": {
+    "appliedAt": "2026-08-10T15:24:36.499Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:36.704Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCCOLLSTS": {
+    "appliedAt": "2026-08-10T15:24:36.911Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCCOLLSTSTEXT": {
+    "appliedAt": "2026-08-10T15:24:37.116Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCINCMPLTNSRSNCD": {
+    "appliedAt": "2026-08-10T15:24:37.315Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCINCMPLTNSRSNT": {
+    "appliedAt": "2026-08-10T15:24:37.523Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCISCOLLVDOCCODE": {
+    "appliedAt": "2026-08-10T15:24:37.726Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCISCOLLVDOCTEXT": {
+    "appliedAt": "2026-08-10T15:24:37.920Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMCANCLD": {
+    "appliedAt": "2026-08-10T15:24:38.108Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMCANCLDTEXT": {
+    "appliedAt": "2026-08-10T15:24:38.313Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMCAT": {
+    "appliedAt": "2026-08-10T15:24:38.518Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:38.717Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMCOLLSTS": {
+    "appliedAt": "2026-08-10T15:24:38.969Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMCOLLSTST": {
+    "appliedAt": "2026-08-10T15:24:39.156Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMDISTRCAT": {
+    "appliedAt": "2026-08-10T15:24:39.340Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMDISTRCATT": {
+    "appliedAt": "2026-08-10T15:24:39.540Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMSTATUS": {
+    "appliedAt": "2026-08-10T15:24:39.731Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCITEMSTATUSTEXT": {
+    "appliedAt": "2026-08-10T15:24:39.935Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCPARTRVSLCAT": {
+    "appliedAt": "2026-08-10T15:24:40.129Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTDOCPARTRVSLCATT": {
+    "appliedAt": "2026-08-10T15:24:40.323Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTOUTPCAT": {
+    "appliedAt": "2026-08-10T15:24:40.532Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTOUTPCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:40.720Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTPRCGAPPLCAT": {
+    "appliedAt": "2026-08-10T15:24:40.932Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTPRCGAPPLCATT": {
+    "appliedAt": "2026-08-10T15:24:41.127Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTUIDOCBEHVRCAT": {
+    "appliedAt": "2026-08-10T15:24:41.348Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTUIDOCBEHVRCATT": {
+    "appliedAt": "2026-08-10T15:24:41.565Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTUIMAINTSCPCAT": {
+    "appliedAt": "2026-08-10T15:24:41.764Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTMGMTUIMAINTSCPCATT": {
+    "appliedAt": "2026-08-10T15:24:41.975Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTNOTXCODEERRHNDLGCAT": {
+    "appliedAt": "2026-08-10T15:24:42.158Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTNOTXCODEERRHNDLGCATT": {
+    "appliedAt": "2026-08-10T15:24:42.354Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTPARTNERCAT": {
+    "appliedAt": "2026-08-10T15:24:42.560Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTPARTNERCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:42.756Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTPRECDGDOCCAT": {
+    "appliedAt": "2026-08-10T15:24:42.958Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTPRECDGDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:43.144Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTREFDOCCAT": {
+    "appliedAt": "2026-08-10T15:24:43.349Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTREFDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:43.561Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTREPORTINGUSAGECAT": {
+    "appliedAt": "2026-08-10T15:24:43.744Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTREPORTINGUSAGECATTEXT": {
+    "appliedAt": "2026-08-10T15:24:43.963Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTRPTGDISPLAYVARIANT": {
+    "appliedAt": "2026-08-10T15:24:44.217Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTRPTGDSPVARIANTNAME": {
+    "appliedAt": "2026-08-10T15:24:44.397Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTSOURCEDOCCAT": {
+    "appliedAt": "2026-08-10T15:24:44.585Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTSOURCEDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:44.786Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTSUBSQNTDOCCAT": {
+    "appliedAt": "2026-08-10T15:24:44.991Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTSUBSQNTDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:45.192Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTTXCODEDETNCAT": {
+    "appliedAt": "2026-08-10T15:24:45.391Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTTXCODEDETNCATTEXT": {
+    "appliedAt": "2026-08-10T15:24:45.606Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTTXCODETXTYPECHKCAT": {
+    "appliedAt": "2026-08-10T15:24:45.809Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SETTLMTTXCODETXTYPECHKCATT": {
+    "appliedAt": "2026-08-10T15:24:46.045Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITE": {
+    "appliedAt": "2026-08-10T15:24:46.236Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEBLOCKING": {
+    "appliedAt": "2026-08-10T15:24:46.436Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEBLOCKINGREASON": {
+    "appliedAt": "2026-08-10T15:24:46.654Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEBLOCKINGREASONT": {
+    "appliedAt": "2026-08-10T15:24:46.853Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITECATEGORY": {
+    "appliedAt": "2026-08-10T15:24:47.054Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITECATEGORYTEXT": {
+    "appliedAt": "2026-08-10T15:24:47.235Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEGOODSRECEIVINGHOURSCODET": {
+    "appliedAt": "2026-08-10T15:24:47.432Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEMASTERADMINISTRATIVEDATA": {
+    "appliedAt": "2026-08-10T15:24:47.627Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEOPENINGHOURS": {
+    "appliedAt": "2026-08-10T15:24:47.816Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEPOINTOFSALE": {
+    "appliedAt": "2026-08-10T15:24:48.022Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEPRODUCTGROUP": {
+    "appliedAt": "2026-08-10T15:24:48.235Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEREFERENCESITE": {
+    "appliedAt": "2026-08-10T15:24:48.441Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITESUPPLYINGSITE": {
+    "appliedAt": "2026-08-10T15:24:48.634Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SITEVALNANDINVTRYMANAGEMENT": {
+    "appliedAt": "2026-08-10T15:24:48.835Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STATISTICALKEYFIGURECAT": {
+    "appliedAt": "2026-08-10T15:24:49.038Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STATISTICALKEYFIGURECATTEXT": {
+    "appliedAt": "2026-08-10T15:24:49.237Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STOCKQUANTITYCURRENTVALUE": {
+    "appliedAt": "2026-08-10T15:24:49.431Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STOCKTRANSPORTORDERITEM_2": {
+    "appliedAt": "2026-08-10T15:24:49.688Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STOCKTRANSPORTORDER_2": {
+    "appliedAt": "2026-08-10T15:24:49.885Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STOREPICKINGREQUEST": {
+    "appliedAt": "2026-08-10T15:24:50.080Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STOREPICKINGREQUESTITEM": {
+    "appliedAt": "2026-08-10T15:24:50.280Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STOREPICKUPORDER": {
+    "appliedAt": "2026-08-10T15:24:50.488Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STORESTKADHOCCNTPRODUCT": {
+    "appliedAt": "2026-08-10T15:24:50.694Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STORESTOCKADHOCCOUNT": {
+    "appliedAt": "2026-08-10T15:24:50.904Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STORESTOCKADJUSTMENT": {
+    "appliedAt": "2026-08-10T15:24:51.107Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STORESTOCKADJUSTMENTITEM": {
+    "appliedAt": "2026-08-10T15:24:51.312Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STOSCHEDULELINE_2": {
+    "appliedAt": "2026-08-10T15:24:51.512Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STOSHIPPING_2": {
+    "appliedAt": "2026-08-10T15:24:51.708Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_STRUCTUREDARTICLEEXPLOSION": {
+    "appliedAt": "2026-08-10T15:24:51.905Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPASSGMTSUPAVAILYSTSTXT": {
+    "appliedAt": "2026-08-10T15:24:52.092Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPDMNDALLDOCRQMTTYPE": {
+    "appliedAt": "2026-08-10T15:24:52.293Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPDMNDALLDOCRQMTTYPET": {
+    "appliedAt": "2026-08-10T15:24:52.507Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPDMNDALLDOCSUPSOURCE": {
+    "appliedAt": "2026-08-10T15:24:52.713Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPDMNDALLDOCSUPTYPE": {
+    "appliedAt": "2026-08-10T15:24:52.896Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOC": {
+    "appliedAt": "2026-08-10T15:24:53.105Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCBANKDATA": {
+    "appliedAt": "2026-08-10T15:24:53.310Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCITEM": {
+    "appliedAt": "2026-08-10T15:24:53.518Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCITEMPARTNER": {
+    "appliedAt": "2026-08-10T15:24:53.732Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:24:53.951Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCITMPLAINLONGTXT": {
+    "appliedAt": "2026-08-10T15:24:54.139Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCITMPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:24:54.349Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCPARTNER": {
+    "appliedAt": "2026-08-10T15:24:54.543Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:24:54.762Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:24:54.961Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRBILLGDOCSTDVH": {
+    "appliedAt": "2026-08-10T15:24:55.234Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRRETMATLAUTHZNRQMTSTS": {
+    "appliedAt": "2026-08-10T15:24:55.421Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRRETMATLAUTHZNRQMTSTSTXT": {
+    "appliedAt": "2026-08-10T15:24:55.615Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMT": {
+    "appliedAt": "2026-08-10T15:24:55.812Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTBANKDATA": {
+    "appliedAt": "2026-08-10T15:24:56.008Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTITEM": {
+    "appliedAt": "2026-08-10T15:24:56.200Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTITEMPARTNER": {
+    "appliedAt": "2026-08-10T15:24:56.402Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:24:56.582Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTITMPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:24:56.781Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTITMPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:24:56.980Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTLIST": {
+    "appliedAt": "2026-08-10T15:24:57.181Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTLISTBANKDATA": {
+    "appliedAt": "2026-08-10T15:24:57.377Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTLISTITEM": {
+    "appliedAt": "2026-08-10T15:24:57.585Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTLISTITEMSTDVH": {
+    "appliedAt": "2026-08-10T15:24:57.780Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTLISTPARTNER": {
+    "appliedAt": "2026-08-10T15:24:57.986Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTLISTPLAINLONGTXT": {
+    "appliedAt": "2026-08-10T15:24:58.177Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTLISTSTDVH": {
+    "appliedAt": "2026-08-10T15:24:58.375Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTPARTNER": {
+    "appliedAt": "2026-08-10T15:24:58.593Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTPLAINLONGTEXT": {
+    "appliedAt": "2026-08-10T15:24:58.819Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:24:59.030Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPLRSETTLMTSTDVH": {
+    "appliedAt": "2026-08-10T15:24:59.226Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPPLIERITEMSETTLMTSTATUS": {
+    "appliedAt": "2026-08-10T15:24:59.434Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPPLIERITEMSETTLMTSTATUSTXT": {
+    "appliedAt": "2026-08-10T15:24:59.627Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPPLIERSETTLMTDOCCAT": {
+    "appliedAt": "2026-08-10T15:24:59.851Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPPLIERSETTLMTDOCCATTEXT": {
+    "appliedAt": "2026-08-10T15:25:00.057Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPPLIERSETTLMTSTATUS": {
+    "appliedAt": "2026-08-10T15:25:00.285Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPPLIERSETTLMTSTATUSTXT": {
+    "appliedAt": "2026-08-10T15:25:00.492Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_SUPPLIERTAXGROUPING": {
+    "appliedAt": "2026-08-10T15:25:00.755Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TECHNICALOBJECTSTDVH": {
+    "appliedAt": "2026-08-10T15:25:00.961Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TH_CUSTOMERBRANCHCODETEXT_2": {
+    "appliedAt": "2026-08-10T15:25:01.164Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TH_CUSTOMERBRANCHCODE_2": {
+    "appliedAt": "2026-08-10T15:25:01.367Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TIMEDEPENDENTSTOCKLEVEL": {
+    "appliedAt": "2026-08-10T15:25:01.570Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TOTALACCOUNTSRECEIVABLES": {
+    "appliedAt": "2026-08-10T15:25:01.772Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTR": {
+    "appliedAt": "2026-08-10T15:25:01.980Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRITEM": {
+    "appliedAt": "2026-08-10T15:25:02.181Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRITEMPARTNER": {
+    "appliedAt": "2026-08-10T15:25:02.382Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRITMPURGPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:25:02.580Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRITMSLSPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:25:02.781Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRPARTNER": {
+    "appliedAt": "2026-08-10T15:25:02.986Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRPURGPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:25:03.195Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRSCHEDULELINE": {
+    "appliedAt": "2026-08-10T15:25:03.401Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRSLSPRCGELMNT": {
+    "appliedAt": "2026-08-10T15:25:03.582Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRTYPE": {
+    "appliedAt": "2026-08-10T15:25:03.759Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRTYPETEXT": {
+    "appliedAt": "2026-08-10T15:25:03.971Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGCONTRTYPEVH": {
+    "appliedAt": "2026-08-10T15:25:04.179Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCAPPLICATIONSTATUS": {
+    "appliedAt": "2026-08-10T15:25:04.372Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCAPPLICATIONSTATUSTEXT": {
+    "appliedAt": "2026-08-10T15:25:04.579Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCCATEGORY": {
+    "appliedAt": "2026-08-10T15:25:04.780Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCCATEGORYTEXT": {
+    "appliedAt": "2026-08-10T15:25:04.981Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCEXECWRKBNTYPE": {
+    "appliedAt": "2026-08-10T15:25:05.168Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCEXECWRKBNTYPETEXT": {
+    "appliedAt": "2026-08-10T15:25:05.352Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCISCOMPLETE": {
+    "appliedAt": "2026-08-10T15:25:05.544Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCISCOMPLETETEXT": {
+    "appliedAt": "2026-08-10T15:25:05.737Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCRELEASESTATUS": {
+    "appliedAt": "2026-08-10T15:25:05.994Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCRELEASESTATUSTEXT": {
+    "appliedAt": "2026-08-10T15:25:06.169Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCSUPLRBILLGBLKRSN": {
+    "appliedAt": "2026-08-10T15:25:06.359Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCSUPLRBILLGBLKRSNTEXT": {
+    "appliedAt": "2026-08-10T15:25:06.551Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCTYPE": {
+    "appliedAt": "2026-08-10T15:25:06.741Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGDOCTYPETEXT": {
+    "appliedAt": "2026-08-10T15:25:06.942Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGEXPNDOCSETTLEDCODE": {
+    "appliedAt": "2026-08-10T15:25:07.135Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_TRDGEXPNDOCSETTLEDTEXT": {
+    "appliedAt": "2026-08-10T15:25:07.340Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_UA_RECNCLNRPTEMLTEMPLATE": {
+    "appliedAt": "2026-08-10T15:25:07.550Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_USERSETTINGSFORCOMPANYCODE": {
+    "appliedAt": "2026-08-10T15:25:07.740Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_USERSETTINGSFORDEPRAREA": {
+    "appliedAt": "2026-08-10T15:25:07.938Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_US_TAXPARTNERTAXDOCITEMCUBE": {
+    "appliedAt": "2026-08-10T15:25:08.150Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_VARIANTSPRICINGPROFILE": {
+    "appliedAt": "2026-08-10T15:25:08.332Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_VARIANTSPRICINGPROFILETEXT": {
+    "appliedAt": "2026-08-10T15:25:08.521Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERCAPACITYSHIFT_4": {
+    "appliedAt": "2026-08-10T15:25:08.706Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERCAPACITYTEXT_2": {
+    "appliedAt": "2026-08-10T15:25:08.912Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERCAPACITY_3": {
+    "appliedAt": "2026-08-10T15:25:09.122Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERCAPINTVL_4": {
+    "appliedAt": "2026-08-10T15:25:09.321Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERHIERARCHYHEADERTXT": {
+    "appliedAt": "2026-08-10T15:25:09.518Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERHIERHEADER": {
+    "appliedAt": "2026-08-10T15:25:09.717Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERHIERSTRUCTURE": {
+    "appliedAt": "2026-08-10T15:25:09.907Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERPOOLEDCAPALLOC": {
+    "appliedAt": "2026-08-10T15:25:10.103Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERQTYCALCFORMULA": {
+    "appliedAt": "2026-08-10T15:25:10.338Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_WORKCENTERQTYCALCFORMULATEXT": {
+    "appliedAt": "2026-08-10T15:25:10.586Z",
+    "fields": 3,
+    "action": "updated"
   }
 }

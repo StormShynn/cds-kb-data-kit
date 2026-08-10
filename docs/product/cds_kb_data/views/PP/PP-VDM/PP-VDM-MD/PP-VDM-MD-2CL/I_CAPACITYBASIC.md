@@ -5,9 +5,15 @@ app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value
 semantic_en: "Enterprise Resource Capacity"
+semantic_vi: "I_CAPACITYBASIC — CDS view giao diện dựa trên I_CAPACITYBASIC."
+keywords:
+  - "capacitybasic"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - PP
   - bo:salesorder
@@ -17,7 +23,6 @@ tags:
   - PP-VDM
   - PP-VDM-MD
   - PP-VDM-MD-2CL
-  - metadata-only
 ---
 # I_CAPACITYBASIC
 
@@ -29,60 +34,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CapacityInternalID` |  | |  |  | `NUMC(8)` | Capacity ID |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `Capacity` |  | |  |  | `CHAR(8)` | Capacity name |
-| `CapacityCategoryCode` |  | |  |  | `CHAR(3)` | Capacity Category |
-| `CapacityActiveVersion` |  | |  |  | `NUMC(2)` | Active Version of Available Capacity |
-| `CapacityIsFinite` |  | |  |  | `CHAR(1)` | Indicator: Capacity Relevant to Finite Scheduling |
-| `CapacityIsPooled` |  | |  |  | `CHAR(1)` | Pooled Capacity Indicator |
-| `CapacityHasIndivCapacities` |  | |  |  | `CHAR(1)` | Has Individual Capacities |
-| `CapacityIsExcldFrmLongTermPlng` |  | |  |  | `CHAR(1)` | Indicator: Capacity Excluded From Long-Term Planning |
-| `CapacityNumberOfCapacities` |  | |  |  | `INT2(5)` | Number of Individual Capacities |
-| `CapacityResponsiblePlanner` |  | |  |  | `CHAR(3)` | Capacity Responsible Planner Group |
-| `CapacityPlanUtilizationPercent` |  | |  |  | `NUMC(3)` | Capacity Utilization Ratio in Percent |
-| `CapacityBreakDuration` |  | |  |  | `INT4(10)` | Cumulative Break Duration in Seconds (internal) |
-| `CapIsUsedInMultiOperations` |  | |  |  | `CHAR(1)` | Indicator: Several Operations Can Use Capacity |
-| `ReferencedCapacityInternalID` |  | |  |  | `NUMC(8)` | Referenced Capacity ID |
-| `CapOverloadThresholdInPercent` |  | |  |  | `NUMC(3)` | Overload |
-| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory Calendar ID |
-| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
-| `ShiftGroup` |  | |  |  | `CHAR(2)` | Grouping for Shift Definitions and Shift Sequences |
-| `CapacityStartTimeID` |  | |  |  | `INT4(10)` | Start Time in Seconds (Internal) |
-| `CapacityEndTimeID` |  | |  |  | `INT4(10)` | End Time in Seconds (Internal) |
-| `CapacityQuantityUnit` |  | |  |  | `UNIT(3)` | Capacity Unit of Measure |
-| `CapacityBaseQtyUnit` |  | |  |  | `UNIT(3)` | Capacity Base Unit of Measure |
-| `CapacityLastChangeDateTime` |  | |  |  | `DEC(21)` | Capacity Last Change Date Time |
-| `ResourceType` |  | |  |  | `NUMC(2)` | Resource Type |
-| `ResourceCategory` |  | |  |  | `CHAR(1)` | Resource Category |
-| `RsceValidityStartOffsetInDays` |  | |  |  | `NUMC(4)` | Validity of Available Capacity (In Past) |
-| `RsceValidityEndOffsetInDays` |  | |  |  | `NUMC(4)` | Validity of Available Resource Capacity (In the Future) |
-| `ResourceSortText` |  | |  |  | `CHAR(30)` | Freely Selectable Character Sequence for Sorting Resources |
-| `ResourceFinitenessLevel` |  | |  |  | `NUMC(4)` | Finiteness Level of Resource |
-| `ResourceIsBottleNeck` |  | |  |  | `CHAR(1)` | This Resource is a Bottleneck Resource |
-| `RsceOverlappingActiesSync` |  | |  |  | `NUMC(1)` | Synchronization of Activities when Overlapping Occurs |
-| `ResourceTimeBufferQuantity` |  | |  |  | `INT4(10)` | Resource-Dependent Time Buffer |
-| `ResourceTimeBufferUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement for Time Buffer |
-| `ResourceMaxOverlapDuration` |  | |  |  | `INT4(10)` | Maximum Overlap of Activities |
-| `ResourceMaxOverlapDurationUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement for Maximum Overlap of Two Activities |
-| `ResourceIsCampaignRelevant` |  | |  |  | `CHAR(1)` | Resource is Campaign-Relevant |
-| `RsceShiftsAndBreaksAreDerived` |  | |  |  | `CHAR(1)` | Capacity Data for Time Stream Originates in External System |
-| `PPDSPeriodSourceType` |  | |  |  | `CHAR(1)` | Definition of PP/DS Bucket Capacity |
-| `PPDSPeriodDurationSchema` |  | |  |  | `NUMC(2)` | PP/DS Bucket Schema |
-| `PPDSPeriodTimeRatioInPercent` |  | |  |  | `NUMC(3)` | Factor: Relation. of Avl. Bucket Cap. to Avl. Time-Cont Cap. |
-| `PPDSCapacitySupplyTimeCategory` |  | |  |  | `NUMC(1)` | Finite Capacity of a Mixed Resource |
-| `RsceHasStorCharcs` |  | |  |  | `CHAR(1)` | Resource Has Storage Characteristics |
-| `RsceStorageQuantityDimension` |  | |  |  | `CHAR(6)` | Dimension of Storage Characteristic of a Resource |
-| `RsceStorageQuantityUnit` |  | |  |  | `UNIT(3)` | Stock Unit |
-| `RsceStorageMinProductionQty` |  | |  |  | `QUAN(15)` | Minimum Production Quantity |
-| `RsceStorageMaxQuantity` |  | |  |  | `QUAN(15)` | Maximum Stock Level |
-| `RsceStorIsZeroOnNoFillPurity` |  | |  |  | `CHAR(1)` | Set Remaining Fill Level to Zero |
-| `CapacityPlanningPeriodLotSize` |  | |  |  | `CHAR(1)` | Period Lot Size |
-| `RsceStorHasMltplProds` |  | |  |  | `CHAR(1)` | Allow Multiple Products |
-| `RsceStorZeroFillPurityThldQty` |  | |  |  | `QUAN(15)` | Threshold for Setting Remaining Fill Level to Zero |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPACITYBASIC')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocrwcfsrcwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWMxNmNmMjFjNmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTM6MzBaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jMTZjZjIxYzZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPlFKdlpZV0F4TzZ3OEYvTFRsdnZHTm1xZFB1ND08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;bnVrWlhTN3NZQnZvMUpSTllPUkkrRUhYNXIyMEZzakVyclNZbUdNeDlnZDR0ZTBFNHVRSVdIT0pnN3pDU3dOSlF3Nks4aU8vVlVyaApNZ3FVMVpNdmVqd2ZsenU0cDBqbDAvdzhGWHQwWmlBNVUwa3JaMWw4R2pWeEdrNEcvN24yZlRLSHZPSWI0bkVsdmRYZ05rMTY5dWNrClRtLzRIOFlpNjBseVd5SlVKSUl5QnV5ZXhJSmU0WDB5M29Wb1dyMVRsSnlvMjFNczlNL0ZEM3JNL09HeE5yam5sS2REOGVyQWVPQlgKK3BrcDVscmZLMVNiRVVVQUVhSWVPVWRmenlZN1p5ZDcrcWxCTktZU3J3WC9XdnJDSU15YWxWMXJvRURzdXFVblFGSnVBdC80NXVDLwpLU3FZQ2xBejgwOFpxS0JUa2swcU1yQXRjVWpkcDdWdUc5YkZ2NjEzZnlUMjdRcnNLVTgzZmF0dmlCZWd5ZVFDcWlKNVB6YkFJa0xQCm1iNzN3U0ZMRkxQQTBDd29BRWtOSlM5RHQ0WXVLSElrdDRDQWtCSEU0TFR5K1NySXhTZ25lZHlxWUJnNlExY3VzOW1TTEtGbDg4VXEKMTF1WWlFM1J1TnVHNDU5NVdmLytaVEd2U2RpTUpicVkxVGtQcHh3VUFGR3BRSXh0ZUNPdDlnT3M8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocrwcfsrcwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

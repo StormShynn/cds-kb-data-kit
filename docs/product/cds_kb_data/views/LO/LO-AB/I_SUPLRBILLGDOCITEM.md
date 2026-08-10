@@ -5,11 +5,16 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRBILLGDOCITEM')/$value
 semantic_en: "Supplier Billing Document Item"
+semantic_vi: "I_SUPLRBILLGDOCITEM — CDS view giao diện dựa trên I_SUPLRBILLGDOCITEM."
 keywords:
   - "Supplier Billing Document Item"
+  - "suplrbillgdocitem"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - LO
   - billing
@@ -20,7 +25,6 @@ tags:
   - LO-AB
   - lob:logistics general
   - supplier
-  - metadata-only
 ---
 # I_SUPLRBILLGDOCITEM
 
@@ -32,114 +36,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRBILLGDOCITEM')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRBILLGDOCITEM')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SuplrBillgDoc` |  | |  |  | `CHAR(10)` | Supplier Billing Document Number |
-| `SuplrBillgDocItem` |  | |  |  | `NUMC(6)` | Document Item |
-| `SuplrBillgDocCurrency` |  | |  |  | `CUKY(5)` | Currency of Settlement Document |
-| `SupplierPricingDocument` |  | |  |  | `CHAR(10)` | Number of the Document Condition |
-| `Product` |  | |  |  | `CHAR(40)` | Product |
-| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Inventory Valuation Type |
-| `PricingDate` |  | |  |  | `DATS(8)` | Date for Pricing and Exchange Rate |
-| `SupplierTaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
-| `TaxJurisdiction` |  | |  |  | `CHAR(15)` | Tax Jurisdiction |
-| `SettlmtQuantity` |  | |  |  | `QUAN(13)` | Quantity of Settlement Management Document Item |
-| `SettlmtQuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure of Settlement Management Doc Item Quantity |
-| `NetPriceAmount` |  | |  |  | `CURR(11)` | Net Price in Document Currency |
-| `NetPriceQuantity` |  | |  |  | `DEC(5)` | Price Unit of Settlement Management Document Item |
-| `NetPriceQuantityUnit` |  | |  |  | `UNIT(3)` | Settlement Management Document Item Price Unit |
-| `SettlmtToBaseQuantityNmrtr` |  | |  |  | `DEC(5)` | Numerator Converting Qty in Settlement Document to Base Unit |
-| `SettlmtToBaseQuantityDnmntr` |  | |  |  | `DEC(5)` | Denominator Converting Qty in Settlement Doc. to Base Unit |
-| `SettlmtToNetPriceQtyNmrtr` |  | |  |  | `DEC(5)` | Numerator for Converting Settl. UoM to Settl. Price UoM |
-| `SettlmtToNetPriceQtyDnmntr` |  | |  |  | `DEC(5)` | Denominator for Converting Settl. UoM to Settl. Price UoM |
-| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
-| `ItemNetWeight` |  | |  |  | `QUAN(15)` | Net Weight |
-| `ItemGrossWeight` |  | |  |  | `QUAN(15)` | Gross Weight |
-| `ItemWeightUnit` |  | |  |  | `UNIT(3)` | Unit of Weight |
-| `ItemVolume` |  | |  |  | `QUAN(15)` | Volume |
-| `ItemVolumeUnit` |  | |  |  | `UNIT(3)` | Volume Unit |
-| `ProductPurchasePointsQtyUnit` |  | |  |  | `UNIT(3)` | Quantity Unit of Purchase Points of a Product |
-| `ProductPurchasePointsQty` |  | |  |  | `QUAN(13)` | Purchase Points Quantity of a Product |
-| `SupplierItemGrossAmount` |  | |  |  | `CURR(15)` | Gross Amount of Item in Document Currency |
-| `SupplierItemNetAmount` |  | |  |  | `CURR(15)` | Net Amount of Item in Document Currency |
-| `SupplierItemTaxAmount` |  | |  |  | `CURR(13)` | Item Tax Amount in Document Currency |
-| `SupplierSubtotal1Amount` |  | |  |  | `CURR(13)` | Subtotal 1 Amount |
-| `SupplierSubtotal2Amount` |  | |  |  | `CURR(13)` | Subtotal 2 Amount |
-| `SupplierSubtotal3Amount` |  | |  |  | `CURR(13)` | Subtotal 3 Amount |
-| `SupplierSubtotal4Amount` |  | |  |  | `CURR(13)` | Subtotal 4 Amount |
-| `SupplierSubtotal5Amount` |  | |  |  | `CURR(13)` | Subtotal 5 Amount |
-| `SupplierSubtotal6Amount` |  | |  |  | `CURR(13)` | Subtotal 6 Amount |
-| `SupplierRebateBasisAmount` |  | |  |  | `CURR(13)` | Rebate Basis Amount |
-| `SupplierEffectiveItemAmount` |  | |  |  | `CURR(13)` | Effective Amount of Item (Supplier-Side) |
-| `SuplrItmEligibleAmtForCshDisc` |  | |  |  | `CURR(13)` | Amount Eligible for Cash Discount in Document Currency |
-| `NonDeductibleInputTaxAmount` |  | |  |  | `CURR(13)` | Non Deductible Input Tax Amount |
-| `SettlmtItmStatisticalPrpty` |  | |  |  | `CHAR(1)` | Statistical Property of Settlement Management Item |
-| `CashDiscountIsDeductible` |  | |  |  | `CHAR(1)` | Cash Discount is Deductible |
-| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of User who Created the Document |
-| `CreationDate` |  | |  |  | `DATS(8)` | Date of Document Creation |
-| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Document Creation |
-| `SettlmtSourceDoc` |  | |  |  | `CHAR(10)` | Document Number of the Source Document |
-| `SettlmtSourceDocItem` |  | |  |  | `NUMC(6)` | Item of the Source Document |
-| `SettlmtSourceDocCat` |  | |  |  | `CHAR(2)` | Document Category of Source Document |
-| `SettlmtSourceDocFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of a Source Document in Settlement Management |
-| `SettlmtItemActivityReason` |  | |  |  | `CHAR(3)` | Activity Reason for Document Creation |
-| `SuplrBillgDocItemText` |  | |  |  | `CHAR(40)` | Short Text |
-| `SuplrSettlmtBusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
-| `SuplrSettlmtControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `SuplrSettlmtCostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `SuplrSettlmtProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
-| `SuplrSettlmtWBSElmntInternalID` |  | |  |  | `NUMC(8)` | Work Breakdown Structure Element (WBS Element) not converted |
-| `SettlmtMgmtOrder` |  | |  |  | `CHAR(12)` | Order for Account Assignment in Settlement Management |
-| `IncotermsVersion` |  | |  |  | `CHAR(4)` | Incoterms Version |
-| `IncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms (Part 1) |
-| `IncotermsTransferLocation` |  | |  |  | `CHAR(28)` | Incoterms (Part 2) |
-| `IncotermsLocation1` |  | |  |  | `CHAR(70)` | Incoterms Location 1 |
-| `IncotermsLocation2` |  | |  |  | `CHAR(70)` | Incoterms Location 2 |
-| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
-| `PrcDetnIsIncmplt` |  | |  |  | `CHAR(1)` | Price Determination is Incomplete |
-| `SettlmtPrecdgDoc` |  | |  |  | `CHAR(10)` | Preceding Document of the Settlement Management Document |
-| `SettlmtPrecdgDocItem` |  | |  |  | `NUMC(6)` | Item of Preceding Document |
-| `SettlmtPrecdgDocCat` |  | |  |  | `CHAR(2)` | Document Category of Preceding Document |
-| `SettlmtPrecdgDocFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of a Preceding Document in Settlement Management |
-| `SuplrBillgDocItmCat` |  | |  |  | `CHAR(1)` | Item Category |
-| `SettlmtItemReltdCndnContr` |  | |  |  | `CHAR(10)` | Related Condition Contract of a Settlement Management Item |
-| `SettlmtItemReltdTrdgContr` |  | |  |  | `CHAR(10)` | Related Trading Contract of a Settlement Management Item |
-| `SettlmtItemReltdTrdgContrItem` |  | |  |  | `NUMC(6)` | Related Trading Contract Item of a Settlmt Mgmt Item |
-| `SuplrBillgDocItemStatus` |  | |  |  | `CHAR(1)` | Item Status |
-| `SuplrBillgDocItmCancld` |  | |  |  | `CHAR(1)` | Item Was Canceled |
-| `ServicesRenderedDate` |  | |  |  | `DATS(8)` | Date of Services Rendered |
-| `SettlementFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Settlement |
-| `HigherLevelItem` |  | |  |  | `NUMC(6)` | Higher-Level Item in Bill of Material Structures |
-| `LowerLevelItemExists` |  | |  |  | `CHAR(1)` | Subitems Exist |
-| `ItemDistributionStatus` |  | |  |  | `CHAR(1)` | Distribution Status of Settlement Item |
-| `SettlmtRefDocType` |  | |  |  | `CHAR(4)` | Type of Reference Document for Settlement Management |
-| `SettlmtRefDoc` |  | |  |  | `CHAR(20)` | Reference Document for Settlement Management |
-| `SettlmtRefDocFiscalYear` |  | |  |  | `NUMC(4)` | Year of Reference Document |
-| `SettlmtRefDocLogicalSyst` |  | |  |  | `CHAR(10)` | Logical System of Reference Document for Smt Mgmt |
-| `SettlmtRefDocItem` |  | |  |  | `NUMC(10)` | Reference Document Item for Settlement Management Document |
-| `SettlmtRefDocCat` |  | |  |  | `CHAR(2)` | Reference Document Category in Settlement Management |
-| `ItemIntrastatRelevance` |  | |  |  | `CHAR(1)` | Document Item Is Relevant for Intrastat Declarations |
-| `SettlmtAddlRefDocType` |  | |  |  | `CHAR(4)` | Type of Additional Reference Document for Settlmt Mgmt |
-| `SettlmtAddlRefDoc` |  | |  |  | `CHAR(20)` | Additional Reference Document for Settlement Management |
-| `SettlmtAddlRefDocFiscalYear` |  | |  |  | `NUMC(4)` | Year of Additional Reference Document |
-| `SettlmtAddlRefDocLogicalSyst` |  | |  |  | `CHAR(10)` | Logical System of Additional Reference Document for Smt Mgmt |
-| `SettlmtAddlRefDocItem` |  | |  |  | `NUMC(10)` | Additional Reference Doc Item for Settlement Mgmt. Document |
-| `SettlmtAddlRefDocCat` |  | |  |  | `CHAR(2)` | Additional Reference Document Category |
-| `CustomerSettlmtRecipient` |  | |  |  | `CHAR(10)` | Customer Settlement Recipient |
-| `ProductHierarchy` |  | |  |  | `CHAR(18)` | Product Hierarchy |
-| `SalesSpcfcProductGroup1` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 1 |
-| `SalesSpcfcProductGroup2` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 2 |
-| `SalesSpcfcProductGroup3` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 3 |
-| `SalesSpcfcProductGroup4` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 4 |
-| `SalesSpcfcProductGroup5` |  | |  |  | `CHAR(3)` | Sales-Specific Product Group 5 |
-| `SupplierProductID` |  | |  |  | `CHAR(35)` | Material Number Used by Supplier |
-| `PriorSupplier` |  | |  |  | `CHAR(10)` | Prior Supplier |
-| `SuplrSettlmtCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `SupplierSubrange` |  | |  |  | `CHAR(6)` | Supplier Subrange |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRBILLGDOCITEM')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRBILLGDOCITEM')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzoetccbdwfwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWUzY2NiZDZmNmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MjE6MTFaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1lM2NjYmQ2ZjZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPk16TnZqV1RMUXdBQWpYV3lNVHRreWxuT3NvVT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;b2pST1QxUm10L3Vla0hiTHJpWit6RjhZd1Q3Tzh3bzk0NCtvVnFHN2VBbHEyUGVMTlk5cm1FOGlZcXQ3bCt6bStnNmZrN3lOb2xoVApNWDRYWnUrRzA1bm1FMlgwTkNXdlNudTZYZFFSZnB6cVVVd2xMVWtZWjhQVDJmYTFzcG9FdFIzckxndDhKT2VIdlRiUlBtMkZJQnVECkpES0hROTBxRlc3VHRoWFpYM240cWlwTXFBRlBJWWZUNzFjQUZZN3pkVFFoZXZXelpwTFhSWkt0TVRBeERIZmZoKzRDWlp1NU9EV20KR1NySWxEMC9RTDduRmVWU1Bkem1vZnUzbnhOenMraGE3QXYwZGFkTjd3ZUVjdllUVVdZMDU5R2JxL1pFR1BhMWNJVys4OUhyVjVRZwpNTGQ4SUFBUGZhbFk5SkZFcDUxcUVoQ3A2blk1Wkd3dW5sTVM1U290RVNtdG1Fa1VodzhnZmQwVnUyS2hodXg1cFphditMWnFvYTdzCi92M3ZBN1lyWWU2SnAwNEpKUlRJbHlrblNWTkxyU1dvU1h2VE5yNGdscU81VGxSWldlbG9lOHlwdUk5UDBOUytLSk54M1FuUjNvTEUKV2lIZmQwVUNHd1ViMWZMV3hmVlFseE4xWHo1S0lsbkplQkJKSk02TDBBZHp1THh5eFJVUi82Z0Q8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzoetccbdwfwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

@@ -5,9 +5,15 @@ app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERSUPPLIERDEX')/$value
 semantic_en: "Data Extraction for BP Supplier"
+semantic_vi: "I_BUSINESSPARTNERSUPPLIERDEX — CDS view giao diện dựa trên I_BUSINESSPARTNERSUPPLIERDEX."
+keywords:
+  - "businesspartnersupplierdex"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - LO
   - bo:businesspartner
@@ -18,7 +24,6 @@ tags:
   - LO-MD-BP-2CL
   - lob:logistics general
   - supplier
-  - metadata-only
 ---
 # I_BUSINESSPARTNERSUPPLIERDEX
 
@@ -30,67 +35,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERSUPPLIERDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERSUPPLIERDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
-| `BusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner GUID |
-| `BusinessPartnerCategory` |  | |  |  | `CHAR(1)` | Business Partner Category |
-| `SupplierAccountGroup` |  | |  |  | `CHAR(4)` | Supplier Account Group |
-| `TitleSupplier` |  | |  |  | `CHAR(15)` | Title |
-| `InternationalLocationNumber1` |  | |  |  | `NUMC(7)` | International location number  (part 1) |
-| `InternationalLocationNumber2` |  | |  |  | `NUMC(5)` | International location number (Part 2) |
-| `InternationalLocationNumber3` |  | |  |  | `NUMC(1)` | Check digit for the international location number |
-| `ReferenceAccountGroup` |  | |  |  | `CHAR(4)` | Reference Account Group for One-Time Account (Vendor) |
-| `SupplierAlternativePayee` |  | |  |  | `CHAR(10)` | Account Number of the Alternative Payee |
-| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
-| `PostingIsBlocked` |  | |  |  | `CHAR(1)` | Central Posting Block |
-| `PurchasingIsBlocked` |  | |  |  | `CHAR(1)` | Centrally imposed purchasing block |
-| `VATLiability` |  | |  |  | `CHAR(1)` | Liable for VAT |
-| `PaymentIsBlockedForSupplier` |  | |  |  | `CHAR(1)` | Payment Block |
-| `SuplrProofOfDelivRlvtCode` |  | |  |  | `CHAR(1)` | Supplier indicator relevant for proof of delivery |
-| `BR_TaxIsSplit` |  | |  |  | `CHAR(1)` | Tax Split |
-| `IsActiveEntity` |  | |  |  | `CHAR(1)` | Draft - Indicator - Is active document |
-| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
-| `IsToBeAcceptedAtOrigin` |  | |  |  | `CHAR(1)` | Acceptance At Origin |
-| `SupplierCorporateGroup` |  | |  |  | `CHAR(10)` | Group Key |
-| `ResponsibleType` |  | |  |  | `CHAR(2)` | Tax Type |
-| `FiscalAddress` |  | |  |  | `CHAR(10)` | Account number of the master record with fiscal address |
-| `SupplierProcurementBlock` |  | |  |  | `CHAR(2)` | Function That Will Be Blocked |
-| `DataExchangeInstructionKey` |  | |  |  | `CHAR(2)` | Instruction Key for Data Medium Exchange |
-| `BPIsEqualizationTaxSubject` |  | |  |  | `CHAR(1)` | Checkbox |
-| `BRSpcfcTaxBasePercentageCode` |  | |  |  | `NUMC(1)` | Tax Base in Percentage |
-| `DataMediumExchangeIndicator` |  | |  |  | `CHAR(1)` | Recipient Code for Data Medium Exchange |
-| `TranspServiceAgentStstcGrp` |  | |  |  | `CHAR(2)` | Shipment: statistics group, transportation service agent |
-| `TaxNumberResponsible` |  | |  |  | `CHAR(18)` | Tax Number at Responsible Tax Authority |
-| `TaxNumberType` |  | |  |  | `CHAR(2)` | Tax Number Type |
-| `SuplrQualityManagementSystem` |  | |  |  | `CHAR(4)` | Actual QM System of Supplier |
-| `SuplrQltyInProcmtCertfnValidTo` |  | |  |  | `DATS(8)` | Validity Date of Certification |
-| `SupplierIsSubRangeRelevant` |  | |  |  | `CHAR(1)` | Indicator: vendor sub-range relevant |
-| `TrainStationName` |  | |  |  | `CHAR(25)` | Train station |
-| `AlternativePayeeIsAllowed` |  | |  |  | `CHAR(1)` | Indicator: Alternative Payee in Document Allowed? |
-| `PaytSlipWthRefSubscriber` |  | |  |  | `CHAR(11)` | ISR Subscriber Number |
-| `SupplierIsPlantRelevant` |  | |  |  | `CHAR(1)` | Indicator: plant level relevant |
-| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory calendar key |
-| `SupplierPlant` |  | |  |  | `CHAR(4)` | Plant (Own or External) |
-| `DeletionIndicator` |  | |  |  | `CHAR(1)` | Central Deletion Flag for Master Record |
-| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
-| `PaymentReason` |  | |  |  | `CHAR(4)` | Payment Reason |
-| `SupplierCentralDeletionIsBlock` |  | |  |  | `CHAR(1)` | Central deletion block for master record |
-| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
-| `DataController1` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController2` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController3` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController4` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController5` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController6` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController7` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController8` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController9` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `DataController10` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
-| `IsOneTimeAccount` |  | |  |  | `CHAR(1)` | Indicator: Is the Account a One-Time Account? |
-| `BusinessPartnerPanNumber` |  | |  |  | `CHAR(40)` | Permanent Account Number |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERSUPPLIERDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERSUPPLIERDEX')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzobfftvrrcefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWJmZjM1MTFjZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTM6MTBaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1iZmYzNTExY2VmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPm1NUEJoUDlzaUE3UE16N284ekNQcDNuSzBvST08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;WmtwSTNXMUhLajZ6Z3hVNVJCODhVNmdVQUhOeUk4ditjbE5DelhQV1dZTlBRNFl2cCs0SDFkMnNJUWtqOEVUanJsYzVkNmsxczJFaAppdDhrNzBreWFheExybE44NnlPdzdwQ1JpUEFVb29NS3FSVkV2cURhQnF1bGFFU2NEbnJvblNtdDRvSUxZZFNDcDF5L1dGZm9OZFdSCjltTDZ6UkVlam50Mk1xdlRCSHc1SUJYMXBvU3Q5V2J0TE5xZHJpMzRsUDJaQms1Z29NcXVQaFRWQVpuTTAxdzRDdExVOER2UGwySnEKVkcrQUZ0c3E3V1RjT3ZEQWFmc2c5VjRTY1BWRVhHV1lBRXdxWVhSYk9EYUJHZXFsNElFbjVFbHFsUThoMTIwb1Z5NGNEV3B1RDNYZgp3VEpYN3VSWUNYT1p3NjNUaForQzAxUGVXeDE5YnVlRDducXpHOStwZlBnUVVDY1BDSDkxa1c0ZVZKSTFtMHNBZDVkOXJSUmFTVTFBCkt6QitqelJtNWM0OFBudkc1YXVVdW5wTXFPaENvdzNDYlpydEs3K2s3dllnQ1FtZE5NeTV6TDArOFI1UWR2eGF5TllSeU9qZnhzRUEKaU1aVUMzc0YvdkdXTG1qc0VnY2lISkRBbTlQNmRoMUlmeE9tdTVFZXFVQjR5Y0c0N2lJYVZvK0Q8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzobfftvrrcefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

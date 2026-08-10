@@ -5,9 +5,15 @@ app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTBUSINESSPROCESSTEXT')/$value
 semantic_en: "Current Business Process - Text"
+semantic_vi: "I_CURRENTBUSINESSPROCESSTEXT — CDS view giao diện dựa trên I_CURRENTBUSINESSPROCESSTEXT."
+keywords:
+  - "currentbusinessprocesstext"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - FI
   - component:FI-GL-IS-2CL
@@ -16,7 +22,6 @@ tags:
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_CURRENTBUSINESSPROCESSTEXT
 
@@ -28,14 +33,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTBUSINESSPROCESSTEXT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTBUSINESSPROCESSTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `BusinessProcess` |  | |  |  | `CHAR(12)` | Business Process |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
-| `BusinessProcessName` |  | |  |  | `CHAR(20)` | General Name |
-| `BusinessProcessDescription` |  | |  |  | `CHAR(40)` | Description |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTBUSINESSPROCESSTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTBUSINESSPROCESSTEXT')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocxbdfacaufwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWM3YmRmYWNhNGY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTQ6NTVaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jN2JkZmFjYTRmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPk9kMDY0Y3JRQ3dvWXdLKzllaTFRdGIySC9lND08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;SWErbnRsR0d0ZG03N0F2VXpkVitET3FXUkR0RTZYOGF5bFp2OGt1RUtOSW9kQ21FSjlTem1Eb2pKSk1VWFZaK29OTHdsckhVV0RkegpxalpqZTVQMTRnN0dCRVFpWlJRYXRrQVRJaFJVbzlhZkJhU2UxdjJQM3lXUS9YanQ1YkdkYWlMNkRiOUt2MWNBOTcxaVRrM1lsc2lTCmtNOFNUNWUveXEvdlpSSHdXZjlWWnVGYWVhUllwYW83Sk9IMm1nbG9DQkY4SEg0VEJCNTRlTlBlZ3BtZ2F4Zm05enEvSEova3RMbUcKaTdKeE9mRVdSeEVMZWUwQ2Z6d3VwblpxazBMb3JwcFlUSnhMcWFLYTZKajkyM2hFTU1iYk5MaWNNd0hmMm1tYzg4V2wwZERIeG9oNApuUlk4a3J4K3VXWkxLV0pHZHFJVVR3YlhmdFJQU0FucGRQYkE1UUhleEc0bzRGcDdMNnNwVVNRaUR2Wm1yT3RyUm55Vnhsai9EbFJ6ClBrblhKSEZYYlBmUmxmZzlidUQ4Y1JXWGtqRXFNUkZ1RGdZZ1RKa01aNGh6QWlZKzhuM1IzeWdNOEt4QUE3Z1VlUzlLTGVuYVgrZmUKT05HWmxUSFYxNmhZRHlGdVZiaFZWaVMvREcrYTFPRDN3T1FlMDgxL3pSbjlicFZQaDBLZXQ1aGY8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocxbdfacaufwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

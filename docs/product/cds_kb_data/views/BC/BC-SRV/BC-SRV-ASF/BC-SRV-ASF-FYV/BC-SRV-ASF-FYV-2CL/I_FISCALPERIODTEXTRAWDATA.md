@@ -31,12 +31,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `FiscalYearVariant` | ✓ | |  | `cast( t009c.periv as fis_periv preserving type )` |  |  |
-| `FiscalPeriod` | ✓ | |  | `poper` |  |  |
-| `FiscalYear` | ✓ | |  | `cast( t009c.bdatj as gjahr preserving type )` |  |  |
-| `FiscalPeriodShortName` |  | |  | `ktext` |  |  |
-| `FiscalPeriodName` |  | |  | `ltext` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `FiscalYearVariant` | ✓ | |  | `cast( t009c.periv as fis_periv preserving type )` | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriod` | ✓ | |  | `poper` | `NUMC(3)` | Posting Period |
+| `FiscalYear` | ✓ | |  | `cast( t009c.bdatj as gjahr preserving type )` | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriodShortName` |  | |  | `ktext` | `CHAR(3)` | Period name short text |
+| `FiscalPeriodName` |  | |  | `ltext` | `CHAR(20)` | Period name long text |
 | `_FiscalYearVariant` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

@@ -5,13 +5,16 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPRJMARGINITEMCUBE')/$value
 semantic_en: "Engagement Project Margin Items - Cube"
+semantic_vi: "I_ENGMNTPRJMARGINITEMCUBE — CDS view giao diện dựa trên I_ENGMNTPRJMARGINITEMCUBE."
 keywords:
   - "Engagement Project Margin Items - Cube"
-  - "Engagement Project Margin Items - Cube"
-  - "Engagement Project Margin Items - Cube"
+  - "engmntprjmarginitemcube"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - CO
   - bo:project
@@ -23,7 +26,6 @@ tags:
   - lob:controlling
   - lob:finance
   - project
-  - metadata-only
 ---
 # I_ENGMNTPRJMARGINITEMCUBE
 
@@ -35,81 +37,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPRJMARGINITEMCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPRJMARGINITEMCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
-| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
-| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
-| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
-| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
-| `ServiceContractType` |  | |  |  | `CHAR(4)` | Service Contract Type |
-| `ServiceContract` |  | |  |  | `CHAR(10)` | Service Contract ID |
-| `ServiceContractItem` |  | |  |  | `NUMC(6)` | Service Contract Item ID |
-| `BusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Solution Order |
-| `BusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` | Solution Order Item |
-| `ProviderContract` |  | |  |  | `CHAR(20)` | Provider Contract |
-| `ProviderContractItem` |  | |  |  | `NUMC(6)` | Provider Contract Item |
-| `SoldProduct` |  | |  |  | `CHAR(40)` | Product Sold |
-| `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
-| `Project` |  | |  |  | `CHAR(24)` | Project (external ID) |
-| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project Internal ID |
-| `ProjectExternalID` |  | |  |  | `CHAR(24)` | Project Number (External) Edited |
-| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
-| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
-| `OriginProfitCenter` |  | |  |  | `CHAR(10)` | Origin Profit Center |
-| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Service Document Type |
-| `ServiceDocument` |  | |  |  | `CHAR(10)` | Service Document ID |
-| `ServiceDocumentItem` |  | |  |  | `NUMC(6)` | Service Document Item ID |
-| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-to Party |
-| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
-| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
-| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `OldGLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `CustomerSupplierIndustry` |  | |  |  | `CHAR(4)` | Customer Supplier Industry |
-| `SoldProductGroup` |  | |  |  | `CHAR(9)` | Product Sold Group |
-| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
-| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
-| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
-| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
-| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
-| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
-| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `CustomerSupplierCountry` |  | |  |  | `CHAR(3)` | Customer or Supplier Country/Region |
-| `WBSElement` |  | |  |  | `CHAR(24)` | WBS Element |
-| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
-| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
-| `SalesDistrict` |  | |  |  | `CHAR(6)` | Sales District |
-| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
-| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
-| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
-| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
-| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
-| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
-| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
-| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
-| `ProjectManager` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `ProjectManagerName` |  | |  |  | `CHAR(80)` | Full Name |
-| `EngagementProjectStage` |  | |  |  | `CHAR(4)` | Commercial Project: Stage |
-| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
-| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
-| `IsCommitment` |  | |  |  | `CHAR(1)` | Indicator: Is Commitment |
-| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
-| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
-| `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
-| `CostSourceUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
-| `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPRJMARGINITEMCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENGMNTPRJMARGINITEMCUBE')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocavuyxuwyfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWNhNTQ4NzQ2OGY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTU6MzBaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jYTU0ODc0NjhmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPkcybHoyV1k4clhUZjFXdHFyOVJqcm03bWhYdz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;RkJtRXc2VnM4VXMvbGI5YXJ0ajcycWxkL3IrVUgyVUVGT1ZjNWhqTDBndzYvMWNtSTRTK0ZmbXVwd0lUcHp3cnhlSjRBK0tsL3dKMQpQVUR4SlNNVWZLVWZwb0loY1UxWjE2ODNmbCtMSDg2dDUzWS9ucmtjMkF0NDRTOUtxa3hJT0tteTJmemVuanY1QitOZGRvSmg3aDdJCkJnOERQaEg3WDdjMjBQRVY3QjNITTNZMkJTcWVXWWhSRUVjeG9qVFE4cGsxaHZvMjVjOHBFMlExb1MyVnp5RStFVUx6NTVLeWN4TGIKS1k2dWpLUmNBWnRQZ01sc0dGVWVlNkRrRmhJOUtCV3NlWTVLdkMzdzQzZTAxRzVvbjVTNTV6S3c3MzFkdE81RGpodFQ4YksvWm1xeApVU3R4TjhpOE5ZKzVOVVFkY1dZNFZCR2ZIT3NnclVKVll0ZUZJWlo0bmFEYmlMQmF2U3J0RWwxN3gzUmtydHBtdno3QWtud3JkbEhvCnlqNkNFa3pncE9WbVRvNDNibG9sc0xNZWd1YnROUjl4aVdXaW5rZE00OXphVklpczlaSEsyK1hNeTAvcldMMlMxMUFSL25Vd1haQTQKa0JiOUxMMFVFNDFjNGk4dW0zNGp5M0tydEhvV3FmRFN5S0lTNDVCbEFhRWZna1BNMHZoQnZkT0M8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocavuyxuwyfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

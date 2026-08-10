@@ -5,9 +5,15 @@ app_component: PP-VDM-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNROUTINGOPSUBORDOPDEX')/$value
 semantic_en: "Prodn Rtg Op Subordinate Operation"
+semantic_vi: "I_PRODNROUTINGOPSUBORDOPDEX — CDS view giao diện dựa trên I_PRODNROUTINGOPSUBORDOPDEX."
+keywords:
+  - "prodnroutingopsubordopdex"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - PP
   - bo:project
@@ -17,7 +23,6 @@ tags:
   - PP-VDM
   - PP-VDM-MD
   - PP-VDM-MD-2CL
-  - metadata-only
 ---
 # I_PRODNROUTINGOPSUBORDOPDEX
 
@@ -29,130 +34,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNROUTINGOPSUBORDOPDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNROUTINGOPSUBORDOPDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BillOfOperationsType` |  | |  |  | `CHAR(1)` | Task List Type |
-| `ProductionRoutingGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
-| `ProductionRoutingOpIntID` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
-| `ProductionRoutingOpIntVersion` |  | |  |  | `NUMC(8)` | Internal counter |
-| `WorkCenterInternalID` |  | |  |  | `NUMC(8)` | Object ID |
-| `WorkCenterTypeCode` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
-| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
-| `IsImplicitlyDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
-| `OperationExternalID` |  | |  |  | `CHAR(8)` | External Operation ID |
-| `Operation` |  | |  |  | `CHAR(4)` | Operation or Phase Number |
-| `SuperiorOperationInternalID` |  | |  |  | `NUMC(8)` | Node Number of the Superior Operation |
-| `OperationText` |  | |  |  | `CHAR(40)` | Operation Short Text |
-| `LongTextLanguageCode` |  | |  |  | `LANG(1)` | Language Key |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `OperationControlProfile` |  | |  |  | `CHAR(4)` | Control Key |
-| `OperationStandardTextCode` |  | |  |  | `CHAR(7)` | Standard Text Key |
-| `BillOfOperationsRefType` |  | |  |  | `CHAR(1)` | Type of the referenced task list |
-| `BillOfOperationsRefGroup` |  | |  |  | `CHAR(8)` | Referenced Bill of Operations Group |
-| `BillOfOperationsRefVariant` |  | |  |  | `CHAR(2)` | Referenced Bill of Operations Variant |
-| `LineSegmentTakt` |  | |  |  | `NUMC(4)` | Takt within a Line Segment |
-| `OperationStdWorkQtyGrpgCat` |  | |  |  | `CHAR(1)` | Operation: Standard Work Quantity Grouping Category |
-| `OrderHasNoSubOperations` |  | |  |  | `CHAR(1)` | Suboperations Do Not Apply to Order |
-| `OperationReferenceQuantity` |  | |  |  | `QUAN(13)` | Base Quantity |
-| `OperationUnit` |  | |  |  | `UNIT(3)` | Unit of measure for activity |
-| `OpQtyToBaseQtyNmrtr` |  | |  |  | `DEC(5)` | Numerator for Converting Routing and Operation UoM |
-| `OpQtyToBaseQtyDnmntr` |  | |  |  | `DEC(5)` | Denominator for Converting Routing and Operation UoM |
-| `BillOfOperationsBreakDuration` |  | |  |  | `QUAN(9)` | Break Time |
-| `BillOfOperationsBreakDurnUnit` |  | |  |  | `UNIT(3)` | Unit for a Break Time |
-| `StandardWorkQuantity1` |  | |  |  | `QUAN(9)` | Standard Value |
-| `StandardWorkQuantityUnit1` |  | |  |  | `UNIT(3)` | Unit of Measurement of Standard Value |
-| `CostCtrActivityType1` |  | |  |  | `CHAR(6)` | Activity Type |
-| `PerfEfficiencyRatioCode1` |  | |  |  | `CHAR(3)` | Key for performance efficiency rate |
-| `StandardWorkQuantity2` |  | |  |  | `QUAN(9)` | Standard Value |
-| `StandardWorkQuantityUnit2` |  | |  |  | `UNIT(3)` | Unit of Measurement of Standard Value |
-| `CostCtrActivityType2` |  | |  |  | `CHAR(6)` | Activity Type |
-| `PerfEfficiencyRatioCode2` |  | |  |  | `CHAR(3)` | Key for performance efficiency rate |
-| `StandardWorkQuantity3` |  | |  |  | `QUAN(9)` | Standard Value |
-| `StandardWorkQuantityUnit3` |  | |  |  | `UNIT(3)` | Unit of Measurement of Standard Value |
-| `CostCtrActivityType3` |  | |  |  | `CHAR(6)` | Activity Type |
-| `PerfEfficiencyRatioCode3` |  | |  |  | `CHAR(3)` | Key for performance efficiency rate |
-| `StandardWorkQuantity4` |  | |  |  | `QUAN(9)` | Standard Value |
-| `StandardWorkQuantityUnit4` |  | |  |  | `UNIT(3)` | Unit of Measurement of Standard Value |
-| `CostCtrActivityType4` |  | |  |  | `CHAR(6)` | Activity Type |
-| `PerfEfficiencyRatioCode4` |  | |  |  | `CHAR(3)` | Key for performance efficiency rate |
-| `StandardWorkQuantity5` |  | |  |  | `QUAN(9)` | Standard Value |
-| `StandardWorkQuantityUnit5` |  | |  |  | `UNIT(3)` | Unit of Measurement of Standard Value |
-| `CostCtrActivityType5` |  | |  |  | `CHAR(6)` | Activity Type |
-| `PerfEfficiencyRatioCode5` |  | |  |  | `CHAR(3)` | Key for performance efficiency rate |
-| `StandardWorkQuantity6` |  | |  |  | `QUAN(9)` | Standard Value |
-| `StandardWorkQuantityUnit6` |  | |  |  | `UNIT(3)` | Unit of Measurement of Standard Value |
-| `CostCtrActivityType6` |  | |  |  | `CHAR(6)` | Activity Type |
-| `PerfEfficiencyRatioCode6` |  | |  |  | `CHAR(3)` | Key for performance efficiency rate |
-| `BusinessProcess` |  | |  |  | `CHAR(12)` | Business Process |
-| `LeadTimeReductionStrategy` |  | |  |  | `CHAR(2)` | Reduction Strategy per Operation |
-| `TeardownAndWaitIsParallel` |  | |  |  | `CHAR(1)` | Teardown and Wait Occur in Parallel |
-| `MaximumWaitDuration` |  | |  |  | `QUAN(9)` | Maximum Wait Time |
-| `MaximumWaitDurationUnit` |  | |  |  | `UNIT(3)` | Unit for the Maximum Wait Time |
-| `MinimumWaitDuration` |  | |  |  | `QUAN(9)` | Minimum Wait Time |
-| `MinimumWaitDurationUnit` |  | |  |  | `UNIT(3)` | Unit for the Required Wait Time |
-| `StandardQueueDuration` |  | |  |  | `QUAN(9)` | Standard Queue Time |
-| `StandardQueueDurationUnit` |  | |  |  | `UNIT(3)` | Unit for the Standard Queue Time |
-| `MinimumQueueDuration` |  | |  |  | `QUAN(9)` | Minimum Queue Time |
-| `MinimumQueueDurationUnit` |  | |  |  | `UNIT(3)` | Unit for the Minimum Queue Time |
-| `StandardMoveDuration` |  | |  |  | `QUAN(9)` | Standard Move Time |
-| `StandardMoveDurationUnit` |  | |  |  | `UNIT(3)` | Unit for the standard move time |
-| `MinimumMoveDuration` |  | |  |  | `QUAN(9)` | Minimum Move Time |
-| `MinimumMoveDurationUnit` |  | |  |  | `UNIT(3)` | Unit for the minimum move time |
-| `OperationSplitIsRequired` |  | |  |  | `CHAR(1)` | Splitting Required |
-| `MaximumNumberOfSplits` |  | |  |  | `DEC(3)` | Maximum Number of Splits |
-| `MinProcessingDurationPerSplit` |  | |  |  | `QUAN(9)` | Minimum Processing Time |
-| `MinProcessingDurnPerSplitUnit` |  | |  |  | `UNIT(3)` | Unit for the Minimum Processing Time |
-| `OperationOverlappingIsRequired` |  | |  |  | `CHAR(1)` | Operation Overlapping is Required |
-| `OperationOverlappingIsPossible` |  | |  |  | `CHAR(1)` | Operation Overlapping is Allowed |
-| `OperationsIsAlwaysOverlapping` |  | |  |  | `CHAR(1)` | Flow Manufacturing |
-| `OverlapMinimumDuration` |  | |  |  | `QUAN(9)` | Minimum Overlap Time |
-| `OverlapMinimumDurationUnit` |  | |  |  | `UNIT(3)` | Unit for the Minimum Overlap Time |
-| `OverlapMinimumTransferQty` |  | |  |  | `QUAN(13)` | Minimum Send-Ahead Quantity |
-| `OverlapMinimumTransferQtyUnit` |  | |  |  | `UNIT(3)` | Unit of measure for activity |
-| `OperationScrapPercent` |  | |  |  | `DEC(5)` | Scrap factor |
-| `NumberOfTimeTickets` |  | |  |  | `DEC(3)` | Number of Time Tickets |
-| `NumberOfConfirmationSlips` |  | |  |  | `NUMC(3)` | Number of Confirmation Slips |
-| `EmployeeWageGroup` |  | |  |  | `CHAR(3)` | Wage Group |
-| `EmployeeWageType` |  | |  |  | `CHAR(4)` | Wage type |
-| `EmployeeSuitability` |  | |  |  | `CHAR(2)` | Suitability |
-| `NumberOfEmployees` |  | |  |  | `DEC(5)` | Number of employees |
-| `OperationSetupType` |  | |  |  | `CHAR(2)` | Setup Type Key |
-| `OperationSetupGroupCategory` |  | |  |  | `CHAR(10)` | Setup group category |
-| `OperationSetupGroup` |  | |  |  | `CHAR(10)` | Setup group key |
-| `OperationCostingRelevancyType` |  | |  |  | `CHAR(1)` | Operation Costing Relevancy Type |
-| `OpIsExtlyProcdWithSubcontrg` |  | |  |  | `CHAR(1)` | Indicator: External Processing Operation with Subcontracting |
-| `PurchasingInfoRecord` |  | |  |  | `CHAR(10)` | Purchasing Info Record Number |
-| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
-| `PurchaseContract` |  | |  |  | `CHAR(10)` | Purchasing Document Number |
-| `PurchaseContractItem` |  | |  |  | `NUMC(5)` | Item Number of Purchasing Document |
-| `PurchasingInfoRecdAddlGrpgName` |  | |  |  | `CHAR(10)` | Sort Term for Non-Stock Info Records |
-| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
-| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group for External Processing Activity |
-| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
-| `PlannedDeliveryDuration` |  | |  |  | `DEC(3)` | Planned Delivery Time in Days |
-| `NumberOfOperationPriceUnits` |  | |  |  | `DEC(5)` | Price Unit |
-| `OpExternalProcessingPrice` |  | |  |  | `CURR(11)` | Net Price in Purchasing Info Record |
-| `InspectionLotType` |  | |  |  | `CHAR(8)` | Inspection Type |
-| `CostElement` |  | |  |  | `CHAR(10)` | Cost Element |
-| `OpExternalProcessingCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `CapacityCategoryCode` |  | |  |  | `CHAR(3)` | Capacity category |
-| `BOOOperationIsPhase` |  | |  |  | `CHAR(1)` | Indicator: Phase |
-| `BOOPhaseSuperiorOpInternalID` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
-| `ControlRecipeDestination` |  | |  |  | `CHAR(2)` | Control Recipe Destination |
-| `InspResultRecordingView` |  | |  |  | `CHAR(2)` | Recording View |
-| `MinimumDuration` |  | |  |  | `QUAN(5)` | Minimum activity duration |
-| `MinimumDurationUnit` |  | |  |  | `UNIT(3)` | Unit for the minimum duration |
-| `FactoryCalendar` |  | |  |  | `CHAR(2)` | Factory Calendar |
-| `InspSbstCompletionConfirmation` |  | |  |  | `CHAR(1)` | Flow Variants for Inspection Point Completion |
-| `InspSbstHasNoTimeOrQuantity` |  | |  |  | `CHAR(1)` | Interval Without Reference to Time or Quantity |
-| `CreationDate` |  | |  |  | `DATS(8)` | Date Record Created On |
-| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By User |
-| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
-| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By User |
-| `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
-| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
-| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid-To Date |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNROUTINGOPSUBORDOPDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODNROUTINGOPSUBORDOPDEX')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodwfuabdcafwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQ2ZjRhYmRjYWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTg6MjBaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kNmY0YWJkY2FmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPjVZMkRxcmxKL0hDQW1SVnRqYmw0d1EyWHFlZz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;ZSs2MnVSUG1KRmQ2R1JRUVZHMmhMVjUvTkFlZVJ5R29QRU81d1VRa3BYc2xWVGcvUk9MWVpMYjRpWXBOeEJwVEplOURaZFhlb1B3awpWaEdwYTNxYVhBbkdkU0dBSjRaWXVsWGxRNlRsWkVRVVZEWUFXZGRKQkdLUXJpc01ZUlFFanhZazY1ZU9NamJXaTlqallrQ0JaL0VFCnNCR0Y5WGcxSHg1enMrVFlucWxKY1BJYW9MajFNbmZ2eVNzWXBFNnpQMm0rWDNTZGVCTmFKT3dxVHhRUm1Nb2ZsN0Q3bmRsVUN3djkKZDB2RmEvVXpuYWphUlBQZHpLamtjVU1Xclo4ZmNNU2hsRENScHdaWDBkaEJrS1lMWEdQTWtTeG4vOCtDYmpnWmlqMlp2QkhqZU9FMwpMTjhFcnRPQWFiUzJwMUdldm96YVBmcHRNOFdUdkFoTXRKYUIwdWZiT2p6NVhiczJYU0JRUWp6RkE5N1dvcFlkRXNObDUyMmdJbHE4CkF1K3VlNDRwYUw4bnFUblpmUGh1ZXVVMEZQTmVuL3RwL3pTTjJZUkhhdWpvblhRL3VpU3dSc1c0UE5VQ2lUTjhiVFU1ZzR0cHJuYXYKOUtFOWZXL3E5cnBxeTdMaDh3U2Q0QW8zbXdoYk50cno4bHNzUll0Skk4cTlOSUd5eGxBcGZWYS88L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodwfuabdcafwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

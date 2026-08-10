@@ -5,11 +5,16 @@ app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGITEM')/$value
 semantic_en: "Contract Accounting Dunning Item"
+semantic_vi: "I_CADUNNINGITEM — CDS view giao diện dựa trên I_CADUNNINGITEM."
 keywords:
   - "Contract Accounting Dunning Item"
+  - "cadunningitem"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - FI
   - account
@@ -20,7 +25,6 @@ tags:
   - interface-view
   - lob:cross_application components
   - lob:finance
-  - metadata-only
 ---
 # I_CADUNNINGITEM
 
@@ -32,47 +36,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGITEM')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGITEM')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAMassRunDate` |  | |  |  | `DATS(8)` | Date ID |
-| `CAMassRunID` |  | |  |  | `CHAR(6)` | Additional Identification Characteristic |
-| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `ContractAccount` |  | |  |  | `CHAR(12)` | Contract Account Number |
-| `CADunningCounter` |  | |  |  | `NUMC(6)` | Counter for Several Dunning Notices to a Business Partner |
-| `CADocumentNumber` |  | |  |  | `CHAR(12)` | Number of a FI-CA Document |
-| `CARepetitionItemNumber` |  | |  |  | `NUMC(3)` | Repetition Item in FI-CA Document |
-| `CABPItemNumber` |  | |  |  | `NUMC(4)` | Item Number in FI-CA Document |
-| `CASubItemNumber` |  | |  |  | `NUMC(3)` | Subitem for a Partial Clearing in Document |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `CAContract` |  | |  |  | `CHAR(20)` | Reference Specifications from Contract |
-| `CASubApplication` |  | |  |  | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
-| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
-| `Division` |  | |  |  | `CHAR(2)` | Division |
-| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `CADunningAmount` |  | |  |  | `CURR(13)` | Dunned Amount in Transaction Currency |
-| `CADunningInterestAmount` |  | |  |  | `CURR(13)` | Dunning interest in transaction currency |
-| `CADocumentForDunningInterest` |  | |  |  | `CHAR(12)` | Doc no. of interest posting |
-| `CANetDueDate` |  | |  |  | `DATS(8)` | Due date for net payment |
-| `CADunningActivityRunDate` |  | |  |  | `DATS(8)` | Execution Date of Dunning Notice |
-| `CAIssueDate` |  | |  |  | `DATS(8)` | Date of Issue |
-| `CADunningLevel` |  | |  |  | `NUMC(2)` | Dunning Level |
-| `CADunningLevelCategory` |  | |  |  | `CHAR(2)` | Dunning Level Category |
-| `CANextDunningLevel` |  | |  |  | `NUMC(2)` | New dunning level |
-| `CADunningLevelIsOptional` |  | |  |  | `CHAR(1)` | Dunning Level is Optional |
-| `CADunningLevelIsOnlyForIntRsn` |  | |  |  | `CHAR(1)` | Entry in Dunning History only Technically Conditional |
-| `CADunningNoticeIsReversed` |  | |  |  | `CHAR(1)` | Dunning Notice Reversed |
-| `CADunningNoticeIsInfoOnly` |  | |  |  | `CHAR(1)` | Group Not Due For Dunning/Information Only |
-| `CAStatisticalItemCode` |  | |  |  | `CHAR(1)` | Type of Statistical Line Item |
-| `ContractAccountIsNotUnique` |  | |  |  | `CHAR(1)` | Contract Account Not Unique |
-| `CADunningProcedure` |  | |  |  | `CHAR(2)` | Dunning Procedure |
-| `CAItemHasHigherDunningLevel` |  | |  |  | `CHAR(1)` | Item has higher dunning level than dunning notice |
-| `CAItemIsCreatedByDunActyRun` |  | |  |  | `CHAR(1)` | Dunning Item Created by Dunning Activity Run |
-| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `CADunningAmountInLocalCurrency` |  | |  |  | `DEC(13)` | Not used (formerly dunned amount in local currency) |
-| `CAReferenceDocument` |  | |  |  | `CHAR(16)` | Reference Document Number |
-| `CAClassificationKey` |  | |  |  | `CHAR(35)` | Classification Key |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGITEM')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGITEM')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocrsvutqxafwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWMxMjU0MzA3YWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTM6MjdaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jMTI1NDMwN2FmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPnNQWE1TWkd0dDdVV3psYy85TTBRbG1nbEREOD08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;VzloUFo1ZjlWTGhSNU12bG1JNEZHZGxEd1Y5ckpNK0NQa1VZQVhrK25iOTZZaGJUUC9sMDRIRFNLQUR5aHJzNFhSbTBiTlJ1dldnZwpmVnpNYjhvaWFsdXlLZ2t6bzJQYUF3aThQaVJ4TmVvZHJEODRYaFJWUUx0SEtYOEM0Y1E4cEpud2w5ZWxPNkwzU2QyUWhhdUU4ODdHCmNnQ2Eyais1Q3BvbHBXQXVrelhSK0xHWnNlRThNMDRrdm1SMVFUMmFwcXI2TFIySW53TU12SHMwYWxzcnFXeXdjbWNvNjhyQ2VibkcKcU9VQkNHZ0VkUWJqVzlXRDZLR1BXcEYyZHdaN25vWEpndVFDZEJndWVpRlhHZjN3eFBIaXVXT2RTbk5nQmlIei8zSmo2T3ZDVmk3WApTd3FQcVN0Q0dQWDhzdnRkQ1ZySjNiTmRYcXV5RHhTMmlyRGM3NVpZU0xqcWJXWmI0bDhkNW12TWpoaUU3UERCQ0hWYSs0L05McTV2Ckg5OC9HcE1Jc1dackNvOXdRUE9qRzYyMVFEZjNSK3RSNW9UQ203Y0JGYVJHYnRnY3NxamhRTzJxcmlCaitPUThpREh3UmlVTEtnaE4KOEFNUmlReVdlaG8rcit4SzUyRjNUUjk1NFIwSUFIWjNRK3N1SzlweUNOSjl2YkQvSnFHNGJZN0s8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocrsvutqxafwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

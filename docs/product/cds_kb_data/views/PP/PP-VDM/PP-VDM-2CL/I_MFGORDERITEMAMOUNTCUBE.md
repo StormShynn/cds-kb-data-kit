@@ -5,9 +5,15 @@ app_component: PP-VDM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MFGORDERITEMAMOUNTCUBE')/$value
 semantic_en: "With this CDS view you can retrieve data, such as the following: Scrap or yield quantity of a manufacturing order item Corresponding amounts in company code Display currency based on the material inventory price This CDS view also provides the ratio between planned and confirmed quantities in percent. This CDS view provides the prerequisites for answering the following business questions: What are the planned and confirmed quantities of a manufacturing order item? What are the amounts of the confirmed scrap and rework quantities? What is the inventory price of a manufacturing order item material at the current date?"
+semantic_vi: "I_MFGORDERITEMAMOUNTCUBE — CDS view giao diện dựa trên I_MFGORDERITEMAMOUNTCUBE."
+keywords:
+  - "mfgorderitemamountcube"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - PP
   - bo:companycode
@@ -20,7 +26,6 @@ tags:
   - plan
   - PP-VDM
   - PP-VDM-2CL
-  - metadata-only
 ---
 # I_MFGORDERITEMAMOUNTCUBE
 
@@ -32,81 +37,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MFGORDERITEMAMOUNTCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MFGORDERITEMAMOUNTCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ManufacturingOrder` |  | |  |  | `CHAR(12)` | Manufacturing Order ID |
-| `ManufacturingOrderItem` |  | |  |  | `NUMC(4)` | Manufacturing Order Item ID |
-| `ManufacturingOrderCategory` |  | |  |  | `NUMC(2)` | Manufacturing Order Category |
-| `ManufacturingOrderType` |  | |  |  | `CHAR(4)` | Manufacturing Order Type |
-| `Product` |  | |  |  | `CHAR(40)` | Product |
-| `ProductionPlant` |  | |  |  | `CHAR(4)` | Production Plant |
-| `MRPPlant` |  | |  |  | `CHAR(4)` | Planning Plant for an Order |
-| `MRPController` |  | |  |  | `CHAR(3)` | MRP Controller |
-| `ProductionSupervisor` |  | |  |  | `CHAR(3)` | Production Supervisor |
-| `MfgOrderItemIsFinallyDelivered` |  | |  |  | `CHAR(1)` | "Delivery Completed" Indicator |
-| `MaterialGoodsReceiptDuration` |  | |  |  | `DEC(3)` | Goods Receipt Processing Duration in Days |
-| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
-| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
-| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Inventory Valuation Type |
-| `MfgOrderPlannedStartDate` |  | |  |  | `DATS(8)` | Manufacturing Order Planned Start Date |
-| `MfgOrderPlannedStartTime` |  | |  |  | `TIMS(6)` | Manufacturing Order Planned Start Time |
-| `MfgOrderScheduledStartDate` |  | |  |  | `DATS(8)` | Manufacturing Order Scheduled Start Date |
-| `MfgOrderScheduledStartTime` |  | |  |  | `TIMS(6)` | Manufacturing Order Scheduled Start Time |
-| `MfgOrderActualStartDate` |  | |  |  | `DATS(8)` | Manufacturing Order Actual Start Date |
-| `MfgOrderActualStartTime` |  | |  |  | `TIMS(6)` | Manufacturing Order Actual Start Time |
-| `MfgOrderPlannedEndDate` |  | |  |  | `DATS(8)` | Manufacturing Order Planned End Date |
-| `MfgOrderPlannedEndTime` |  | |  |  | `TIMS(6)` | Manufacturing Order Planned End Time |
-| `MfgOrderScheduledEndDate` |  | |  |  | `DATS(8)` | Manufacturing Order Scheduled End Date |
-| `MfgOrderScheduledEndTime` |  | |  |  | `TIMS(6)` | Manufacturing Order Scheduled End Time |
-| `MfgOrderConfirmedEndDate` |  | |  |  | `DATS(8)` | Manufacturing Order Confirmed End Date |
-| `MfgOrderConfirmedEndTime` |  | |  |  | `TIMS(6)` | Manufacturing Order Confirmed End Time |
-| `MfgOrderActualEndDate` |  | |  |  | `DATS(8)` | Manufacturing Order Actual End Date |
-| `MfgOrderScheduledReleaseDate` |  | |  |  | `DATS(8)` | Manufacturing Order Scheduled Release Date |
-| `MfgOrderActualReleaseDate` |  | |  |  | `DATS(8)` | Manufacturing Order Actual Release Date |
-| `MfgOrderItemPlannedEndDate` |  | |  |  | `DATS(8)` | Manufacturing Order Item Planned End Date |
-| `MfgOrderItemScheduledEndDate` |  | |  |  | `DATS(8)` | Manufacturing Order Item Scheduled End Date |
-| `MfgOrderItemActualDeliveryDate` |  | |  |  | `DATS(8)` | Actual Delivery/Finish Date |
-| `ReportingPeriod` |  | |  |  | `NUMC(2)` | Reporting Period |
-| `EndDateHour` |  | |  |  | `NUMC(2)` | End Date Hour |
-| `EndDateWeekDay` |  | |  |  | `NUMC(1)` | Week Day |
-| `EndDateWeek` |  | |  |  | `NUMC(2)` | Calendar Week |
-| `EndDateMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
-| `EndDateYear` |  | |  |  | `NUMC(4)` | Calendar Year |
-| `EndDateYearMonth` |  | |  |  | `NUMC(6)` | Year Month |
-| `ManufacturingOrderUnit` |  | |  |  | `UNIT(3)` | Production Unit of Measure |
-| `MfgOrderItemPlannedTotalQty` |  | |  |  | `QUAN(13)` | Order Item Planned Total Quantity |
-| `MfgOrderItemPlannedScrapQty` |  | |  |  | `QUAN(13)` | Order Item Planned Scrap Quantity |
-| `MfgOrderItemPlannedYieldQty` |  | |  |  | `QUAN(13)` | Planned Yield Quantity |
-| `MfgOrderItemGoodsReceiptQty` |  | |  |  | `QUAN(13)` | Quantity of Goods Received for the Order Item |
-| `MfgOrderItemActualDeviationQty` |  | |  |  | `QUAN(13)` | Expected Surplus/Deficit For Goods Receipt |
-| `MfgOrderConfirmedYieldQty` |  | |  |  | `QUAN(13)` | Confirmed Yield Quantity From Order Confirmation |
-| `MfgOrderConfirmedScrapQty` |  | |  |  | `QUAN(13)` | Confirmed Scrap Quantity From Order Confirmation |
-| `MfgOrderConfirmedReworkQty` |  | |  |  | `QUAN(13)` | Total Confirmed Rework Quantity |
-| `MfgOrderConfirmedTotalQty` |  | |  |  | `QUAN(13)` | Total Quantity From Confirmation |
-| `MfgOrderItemPlannedScrapPct` |  | |  |  | `DEC(5)` | Manufacturing Order Planned Item Scrap in Percent |
-| `MfgOrderConfirmedScrapInPct` |  | |  |  | `DEC(5)` | Manufacturing Order Confirmed Scrap in Percent |
-| `MfgOrderConfirmedReworkInPct` |  | |  |  | `DEC(5)` | Manufacturing Order Confirmed Rework in Percent |
-| `MfgOrderConfirmedYieldInPct` |  | |  |  | `DEC(5)` | Manufacturing Order Confirmed Yield in Percent |
-| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
-| `CostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate Number for Product Costing |
-| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `PlannedScrapAmountInCCCrcy` |  | |  |  | `CURR(15)` | Planned Scrap Amount in Company Code Currency |
-| `ConfirmedScrapAmountInCCCrcy` |  | |  |  | `CURR(15)` | Confirmed Scrap Amount in Company Code Currency |
-| `ConfirmedYieldAmountInCCCrcy` |  | |  |  | `CURR(15)` | Confirmed Yield Amount in Company Code Currency |
-| `ConfirmedReworkAmountInCCCrcy` |  | |  |  | `CURR(15)` | Confirmed Rework Amount in Company Code Currency |
-| `InventoryPrice` |  | |  |  | `CURR(11)` | Inventory Price |
-| `MaterialPriceUnitQty` |  | |  |  | `DEC(5)` | Material Price Unit Quantity |
-| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
-| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
-| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `FiscalYear_2` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Display Currency |
-| `PlannedScrapAmountInDspCrcy` |  | |  |  | `CURR(15)` | Planned Scrap Amount in Display Currency |
-| `ConfirmedScrapAmountInDspCrcy` |  | |  |  | `CURR(15)` | Confirmed Scrap Amount in Display Currency |
-| `ConfirmedYieldAmountInDspCrcy` |  | |  |  | `CURR(15)` | Confirmed Yield Amount in Display Currency |
-| `ConfirmedReworkAmountInDspCrcy` |  | |  |  | `CURR(15)` | Confirmed Rework Amount in Display Currency |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MFGORDERITEMAMOUNTCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MFGORDERITEMAMOUNTCUBE')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzoduuecswewfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQ0NGVjMjZlNmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTc6NDRaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kNDRlYzI2ZTZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPi8wSExPdXJwVGJIY2dUSVE5NVk3WGl2UGJJMD08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;QTdhcDdyL1puL3FnVXc0amFjdWJvdUc4VmRXTkxXTUc5ajhBbTNINERlNHlORTcwcGZOYm5PVW1tY1hieEVKUDNkSTB2T2pRT1dmego2eWtNcm15d2tTVW9BT0lhY05sQTBuUndGbEVkNWpLS0FiU28ybEZzT2NSVDcvaEdnUjBUOXp1RElMMm1jVExIZGc4OE5XWTZlcWRiCjJqeDUxM05xRm42SGUyeG1qSmV6c2ZlL3RHTXg3WVhIMDdKMXRRMWVYNXluTTdkbDRMTHNBZ3ZpNFNvM205T0djOWtRYkRVbHpyQ2YKZkJZcmlUV1A0c2YxM2M2dVlTN0tyb0YwNXZNT1dKVG5EZWVrcFM4TEJpQ25tZHMzWlhuR3lMMWc4MGRHVVZ6eEtBekxKZDJCN2haKwp3amRnTHVxMWovUUY5cmxBWTRqd1IwekQrRDlMYzZIMDU4dUthV2FjMytYN2kxV1g2TUhPSnU1cWdIOUJsSGhIdmNXNmU3VHpwMzZVClhrbExXaHJQMW5yNWF5VnpPb1ZZZWlRZmtpVU02YnZlQXdvZGQwRFhXVWxZSFVGMUdQYzlWRFA0dEZKQ1QrTkhFb1N6MEFmV0h5a2gKcXNqVnl6dzNxVjNiVVlXMUZ6TVVUeHNtUUhLaUVxblBkRDF4MGJoaklPeXhibWhVZGdxVGZtd2U8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzoduuecswewfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

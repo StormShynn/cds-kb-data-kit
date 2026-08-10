@@ -5,9 +5,15 @@ app_component: PM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTTASKLISTOPPRTCUBE')/$value
 semantic_en: "Maint Task List Operation PRT - Cube"
+semantic_vi: "I_MAINTTASKLISTOPPRTCUBE — CDS view giao diện dựa trên I_MAINTTASKLISTOPPRTCUBE."
+keywords:
+  - "mainttasklistopprtcube"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - PM
   - component:PM-2CL
@@ -15,7 +21,6 @@ tags:
   - lob:plant maintenance
   - PM-2CL
   - task
-  - metadata-only
 ---
 # I_MAINTTASKLISTOPPRTCUBE
 
@@ -27,25 +32,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTTASKLISTOPPRTCUBE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTTASKLISTOPPRTCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TaskListType` |  | |  |  | `CHAR(1)` | Task List Type |
-| `TaskListGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
-| `TaskListGroupCounter` |  | |  |  | `CHAR(2)` | Group Counter |
-| `TaskListSequence` |  | |  |  | `CHAR(6)` | Sequence |
-| `TaskListOperationInternalId` |  | |  |  | `NUMC(8)` | Number of the Task List Node |
-| `TaskListOpPRTIntID` |  | |  |  | `NUMC(8)` | Item Counter for Production Resources/Tools |
-| `TaskListOpPRTIntVersCounter` |  | |  |  | `NUMC(8)` | Internal counter |
-| `ProdnRsceToolItemNumber` |  | |  |  | `NUMC(4)` | Item Number for Production Resource/Tool |
-| `ProdnRsceToolStandardWorkQty` |  | |  |  | `QUAN(9)` | Standard Value for Quantity of Production Resources/Tools |
-| `ProdnRsceToolStdWorkQtyUnit` |  | |  |  | `UNIT(3)` | Unit for Quantity of Production Resources/Tools |
-| `ProdnRsceToolUsageQuantity` |  | |  |  | `QUAN(9)` | Standard Usage Value for Production Resources/Tools |
-| `ProdnRsceToolUsageQuantityUnit` |  | |  |  | `UNIT(3)` | Usage Value Unit of the Production Resource/Tool |
-| `ProductionResourceType` |  | |  |  | `CHAR(2)` | Object types of the CIM resource |
-| `ProductionResourceInternalID` |  | |  |  | `NUMC(8)` | Object ID of the resource |
-| `ProdnRsceToolText` |  | |  |  | `CHAR(40)` | First Line of Text for Production Resources/Tools |
-| `IsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTTASKLISTOPPRTCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTTASKLISTOPPRTCUBE')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodtdvxuqrwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQzZDU3NDAxNmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTc6MzdaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kM2Q1NzQwMTZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPk1lWGRQY3N0Yit5bG5oclRwbUJDbWtHSDVMST08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;azZDNmZVQVk3V1B0MUhFMmhWVFJ1WGhSa0lqbm5jOUhUTHQrcGtxQ09GWVBsY0dzWjd0czd2Wk9lVnRIdEZhQzJIUUVQcExnRmRLSwpWVjJjZThoa1QxMzBIQXRQRmlXem5lU1dBcE9aUEdtWTZqNm1FM1BKbGtLWjlsSCtnN1RrbWZ1N0IzSzg2djlRRXJQVXQ3TTBIaDZlCmFQcWEvQmMycXVkbzlZb0haeWhUdDZaMGdVK2F3Z0RYRlBScnhJL0dBMzlOM2lrQzBhZlZ4Z3gvTCtBMHp5WW9peFlxTFpzQmJnTXkKM3ZHWEFOWm5ibVhlVENvWnVuK1N2SkVJRHQvZzRQRDdEYkE5bFpySzN0d1drQ3pEL0JhY3RTdG1zSm1MeVB4NDVVMDFROG1GcVAzKwprbEhVVlR6WnY0aTNPbndaeXlDY01IUUxLOUdFVmdpSGRnUUc5NXozN2VqMDVWcDRXaVQ4cnhVYmd3NUVXNDlmZ0ZUbmxLaTNpay8wCkVvZnFwbXBYV3c0MEpLMWV4V1IrWWpWZ254TlRGNHRhVFBEa0t4L3BFUzB2SEZxMysyendmdXBSejB6dTc0LytDNTJwZ3dPQ0llWlcKM3FFYm00Zk91cEJNQlhuMWlRblUxV0hCa2dvSXNhdkhScHNFL0ZUdnE4d2EwV3o2NDhIbSs1Y0U8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodtdvxuqrwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

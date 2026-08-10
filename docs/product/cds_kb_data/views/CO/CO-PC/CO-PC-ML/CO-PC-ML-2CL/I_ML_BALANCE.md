@@ -5,9 +5,15 @@ app_component: CO-PC-ML-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ML_BALANCE')/$value
 semantic_en: "Balance Summary for Material Ledger"
+semantic_vi: "I_ML_BALANCE — CDS view giao diện dựa trên I_ML_BALANCE."
+keywords:
+  - "balance"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - CO
   - CO-PC
@@ -17,7 +23,6 @@ tags:
   - interface-view
   - lob:controlling
   - material
-  - metadata-only
 ---
 # I_ML_BALANCE
 
@@ -29,72 +34,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ML_BALANCE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ML_BALANCE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `Ledger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `Material` |  | |  |  | `CHAR(40)` | Product |
-| `Product` |  | |  |  | `CHAR(40)` | Product |
-| `CostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate |
-| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
-| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
-| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
-| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Inventory Valuation Type |
-| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
-| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
-| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
-| `MatlDocLatestPostgDate` |  | |  |  | `DATS(8)` | Posting Date |
-| `ReferenceDocument` |  | |  |  | `CHAR(10)` | Reference Doc. Number |
-| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
-| `BusinessTransactionTypeName` |  | |  |  | `CHAR(30)` | Business Transaction Type Name |
-| `ProductHierarchy` |  | |  |  | `CHAR(18)` | Product Hierarchy |
-| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
-| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
-| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `AccountingDocCreatedByUser` |  | |  |  | `CHAR(12)` | User that created the journal entry |
-| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Last Change Date Time |
-| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
-| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
-| `ReferenceDocumentType` |  | |  |  | `CHAR(5)` | Reference Document Type |
-| `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document |
-| `ProductionOrder` |  | |  |  | `CHAR(12)` | Order ID |
-| `TransactionTypeDetermination` |  | |  |  | `CHAR(3)` | Transaction Key |
-| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
-| `MaterialValuationClass` |  | |  |  | `CHAR(4)` | Valuation Class |
-| `InventoryValuationCategory` |  | |  |  | `CHAR(1)` | Valuation Category |
-| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `MaterialLedgerProcessType` |  | |  |  | `CHAR(4)` | Material Ledger Process Type (Procurement/Consumption) |
-| `MaterialLedgerCategory` |  | |  |  | `CHAR(2)` | Category in Material Ledger Update Structure |
-| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
-| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
-| `SlsPriceAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Sales Price Amount in Company Code Currency |
-| `GroupCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
-| `AmountInGroupCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
-| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
-| `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
-| `FreeDefinedCurrency2` |  | |  |  | `CUKY(5)` | Freely Defined Currency 2 |
-| `AmountInFreeDefinedCurrency2` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 2 |
-| `FreeDefinedCurrency3` |  | |  |  | `CUKY(5)` | Freely Defined Currency 3 |
-| `AmountInFreeDefinedCurrency3` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 3 |
-| `FreeDefinedCurrency4` |  | |  |  | `CUKY(5)` | Freely Defined Currency 4 |
-| `AmountInFreeDefinedCurrency4` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 4 |
-| `FreeDefinedCurrency5` |  | |  |  | `CUKY(5)` | Freely Defined Currency 5 |
-| `AmountInFreeDefinedCurrency5` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 5 |
-| `FreeDefinedCurrency6` |  | |  |  | `CUKY(5)` | Freely Defined Currency 6 |
-| `AmountInFreeDefinedCurrency6` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 6 |
-| `FreeDefinedCurrency7` |  | |  |  | `CUKY(5)` | Freely Defined Currency 7 |
-| `AmountInFreeDefinedCurrency7` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 7 |
-| `FreeDefinedCurrency8` |  | |  |  | `CUKY(5)` | Freely Defined Currency 8 |
-| `AmountInFreeDefinedCurrency8` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 8 |
-| `BaseUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
-| `InventoryQty` |  | |  |  | `QUAN(23)` | Valuation Quantity |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ML_BALANCE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ML_BALANCE')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzoduwdtqvzefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQ0NmQzMDU5ZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTc6NDVaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kNDZkMzA1OWVmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPmlERjI1c2dyMlljNFVsdEdERDJESzk1UEswTT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;ajZwWWo3bEtrbEhhR1Q3Y3Rpb2M2R2pXVjJNbG1GNFgyc0tVZU80VVFUcHg0Z3N0aDBkampjdmtRYmxXakduYjBGeW9FcC9FaTYyRgpmdVg1MG44RjJNSmZqb0xvTzFEWWdINlZnZVNKNnJJekw5WGtxbVlzRy93NGlxa1NYdWpRRFF1UHl4UG1IcUwxNU1sYUY2djdidVZrCmJPbEdRV2pCeEF6L3U5VTdNMk5MVDd2cHNFQ1E2dU12RVdvNHRzRzNRMHRSdjNGMjdLS1ZwcFladHZNVmd1dTNpSnFpWHRzR1Y3T3gKbDkrUjY4a1NGNlI2aitRRU42ZWJFdjZucUV3NE9DbGRNVFlhbmxURWZFZlVTOGtjbmE3dkZnU0xpa292Wmlvc0RiOXBUQUk0dGtWcgovWU1ZaDdEaUxPMUhMUjdBajE3RXRsWVlvcVpBbkRhRmxnY1dadmc2YnRTZ3RtcEwvc09wd09MbmVpYzdLamxBYVdBZ1ZWRm9IbUZiCncwZmh6TUpXdnNnMTJSR0JhY0lGWnhGcyt5RVRtWmpJeVNnMnNmZmN4dkhCSDU1QysxVmMxOFJneWRiV3ByeE9oYVRDUTJPVndyME4KaEVoZ1FHM0VFQUpUaHF6UVNWcEJmcWtFb3YvSC9Wa2FqQ2xXa01RWjR5c2MrbFF2MUR1c2EwRGU8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzoduwdtqvzefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

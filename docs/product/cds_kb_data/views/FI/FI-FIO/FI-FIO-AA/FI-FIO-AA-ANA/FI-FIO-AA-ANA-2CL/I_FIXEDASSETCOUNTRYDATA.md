@@ -5,9 +5,15 @@ app_component: FI-FIO-AA-ANA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FIXEDASSETCOUNTRYDATA')/$value
 semantic_en: "This CDS view provides access to the country-dependent master data of a fixed asset. The country-dependent attributes of the fixed asset business entity provide dimensions of the following countries: India Israel Japan Portugal Russia This CDS view provides the prerequisites for answering the following business questions: What is the country-dependent data of my fixed assets? What are the national classification codes of my fixed assets?"
+semantic_vi: "I_FIXEDASSETCOUNTRYDATA — CDS view giao diện dựa trên I_FIXEDASSETCOUNTRYDATA."
+keywords:
+  - "fixedassetcountrydata"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - FI
   - bo:asset
@@ -19,7 +25,7 @@ tags:
   - interface-view
   - lob:finance
   - master-data
-  - metadata-only
+  - bo:companycode
 ---
 # I_FIXEDASSETCOUNTRYDATA
 
@@ -31,58 +37,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FIXEDASSETCOUNTRYDATA')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FIXEDASSETCOUNTRYDATA')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `MasterFixedAsset` |  | |  |  | `CHAR(12)` | Main Asset Number |
-| `FixedAsset` |  | |  |  | `CHAR(4)` | Asset Subnumber |
-| `NationalClassification` |  | |  |  | `CHAR(12)` | National Classification Code |
-| `TaxDepreciationGroup` |  | |  |  | `CHAR(4)` | Tax Depreciation Group |
-| `RU_LongSerialNumber` |  | |  |  | `CHAR(32)` | Russia: Serial Number |
-| `RU_WorkwearMaterial` |  | |  |  | `CHAR(40)` | Material Number |
-| `RU_RetiredMasterFixedAsset` |  | |  |  | `CHAR(12)` | Number of Retired Asset |
-| `RU_RetiredFixedAsset` |  | |  |  | `CHAR(4)` | Subnumber of Retired Asset |
-| `RU_ProdTraceabilityStartDate` |  | |  |  | `DATS(8)` | Start date of traceability |
-| `RU_ProdTraceabilityEndDate` |  | |  |  | `DATS(8)` | End date of traceability |
-| `RU_AssetTNVED` |  | |  |  | `CHAR(17)` | Foreign Trade Goods Classification Code of the Customs Union |
-| `RU_AssetTransportType` |  | |  |  | `CHAR(5)` | Transport Type |
-| `RU_VehicleIdNumber` |  | |  |  | `CHAR(30)` | Manufacturer Vehicle Identification Number for Fleet Object |
-| `RU_ManufacturingDate` |  | |  |  | `DATS(8)` | Manufacturing Date |
-| `RU_VehicleEcologicalClass` |  | |  |  | `CHAR(1)` | Ecological Class |
-| `RU_PropertyAddress` |  | |  |  | `CHAR(10)` | Russia: Property Address |
-| `RU_PropertyOwnershipRegnDate` |  | |  |  | `DATS(8)` | Registration Date of Real Estate Ownership Rights |
-| `RU_PropertyOwnershipTermnDate` |  | |  |  | `DATS(8)` | Termination Date of Real Estate Ownership Rights |
-| `JP_Annex16AssetStructure` |  | |  |  | `CHAR(5)` | Japan: Asset Structure of Annex16 |
-| `JP_Annex16AssetItem` |  | |  |  | `CHAR(5)` | Japan: Asset Item of Annex16 |
-| `JP_Annex16LeasingAgrmtDate` |  | |  |  | `DATS(8)` | Japan: Leasing Agreement Date of Annex16-4 Report |
-| `JP_PrptyTxRptCity` |  | |  |  | `CHAR(8)` | Japan: City Code of Property Tax Report |
-| `JP_PrptyTxRptClassfctnKey` |  | |  |  | `CHAR(4)` | Japan: Classification Key of Property Tax Report |
-| `JP_PrptyTxRptSpclDepr` |  | |  |  | `CHAR(3)` | Japan: Special Depreciation Code of Property Tax Report |
-| `JP_PrptyTxRptAddlDepr` |  | |  |  | `CHAR(8)` | Additional Depreciation Code |
-| `IN_AssetBlock` |  | |  |  | `CHAR(5)` | India: Block Key |
-| `IN_AssetPutToUseDate` |  | |  |  | `DATS(8)` | India: Put to use date |
-| `IN_AdditionalAssetBlock` |  | |  |  | `CHAR(5)` | India: Additional Depreciation Block Key |
-| `IN_AssetIsResearchAndDev` |  | |  |  | `CHAR(1)` | India: R & D Asset |
-| `IN_AssetIsPriorYear` |  | |  |  | `CHAR(1)` | India: Prior Year Transaction |
-| `PT_VehicleTypeByEnergy` |  | |  |  | `CHAR(2)` | Portugal: Vehicle Type |
-| `PT_VehicleIsWithoutLimit` |  | |  |  | `CHAR(1)` | Portugal: Is Vehicle Without Limit |
-| `PT_BigRepairAssetLink` |  | |  |  | `CHAR(8)` | Portugal: Repair Asset Link |
-| `PT_LandAssetLink` |  | |  |  | `CHAR(8)` | Portugal: Land Asset Link |
-| `PT_AssetReportFormCategory` |  | |  |  | `CHAR(1)` | Portugal: Asset Report Form Category |
-| `PT_AmortizedAssetIsReevaluated` |  | |  |  | `CHAR(1)` | Portugal: Is Amortized Asset Revaluated |
-| `IL_InvmtCtrInternalCode` |  | |  |  | `CHAR(10)` | Israel: Internal code |
-| `IL_InvmtCtrApprovalDocNmbr` |  | |  |  | `CHAR(15)` | Israel: Approval document number |
-| `IL_InvmtCtrApprovalVersion` |  | |  |  | `CHAR(3)` | Israel: Approval version |
-| `IL_InvmtCtrBogusAssetNumber` |  | |  |  | `CHAR(12)` | Israel: Bogus asset number |
-| `IL_InvmtCtrAssetVersion` |  | |  |  | `CHAR(3)` | Israel: Asset version |
-| `RS_GroupDeprExclusionYear` |  | |  |  | `NUMC(4)` | Exclusion Year |
-| `RS_AssetLastInvoiceDate` |  | |  |  | `DATS(8)` | Last Invoice Date |
-| `PL_AcquisitionProductionDate` |  | |  |  | `DATS(8)` | Fixed Asset Acquisition/Production Date |
-| `PL_AcquisitionDocumentType` |  | |  |  | `CHAR(1)` | Acquisition Document Type |
-| `PL_AcquisitionFormNumber` |  | |  |  | `CHAR(25)` | Asset Acquisition Form/OT Document Number |
-| `PL_AssetTaxGroup` |  | |  |  | `CHAR(2)` | SAFT Asset Tax Group |
-| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FIXEDASSETCOUNTRYDATA')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FIXEDASSETCOUNTRYDATA')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocdqduzywwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWNkMGQ0OTg2NmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTY6MDZaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jZDBkNDk4NjZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPkp0OGJYYjR1SEtrY3lJVEQ1SXBnQmV5RS9TWT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;ZndSTFdvcTVqK0tYT3BpbVhMSEhhVTlmN1JQT2JIRkFhaW9mYytCcEpaZ0k4cHhVRlpRYmJlMXpHUjhPdERPUlBiRktpVGdPeDJmRApvd1laNlNjRC9weVdNODMzY3RlVU9nRlNSVG9pQ0t3citIQUNTWThiN1V5S244b25zVUlKMWg5SmlBUHFPZ2pnWGNKdlYrZlZZZ09LCjgxRUJNclc0UEpKMGp3Um1zM2tFRWF4RE1pTG1KbDl4U3JuU2RYZmpGK0EzL2pOZ1h3WEZWVno3U3RZMS9PK1BTS0VCK0tZSmgrWGUKTE1LRlpWb0xsS1B6cDhHUC9mOWd6ZDE3YWlDY3RrQlhJOFR0cGVFTXJPbDNDZjRMYk16VTZWMEJWY3ZaUDd4bzFZeWVWUTdhU1hwZgpoc3JPMjJwZCt5R0xEQ3BHeng3akdYY1dKV20xdU8zNjhodjFyVktTdGJ1cHhoZmFXeHJKVStUa0dDOXBaK0NTNUlHTGQ3UzNxZkRCCkdSQXp6UkZaeHpBMUxaZnFlNXNvT1k5eTF2YVlFSG15cTRvdmNWY2NsNlRPNFZIcjY1YUpNTjlBRHNiUlhaU3I2V3p1YmdYV2ZrK1AKQ1VFdzNrS1M1R0tiWVdHYTBaZlRKYlFMWUNQQ3FBSTN0djdwUnhncTJDNC94UmdCbDh3ZXljUEw8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocdqduzywwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

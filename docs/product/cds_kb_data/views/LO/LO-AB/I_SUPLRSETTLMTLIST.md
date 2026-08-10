@@ -5,11 +5,16 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTLIST')/$value
 semantic_en: "Supplier Settlement List"
+semantic_vi: "I_SUPLRSETTLMTLIST — CDS view giao diện dựa trên I_SUPLRSETTLMTLIST."
 keywords:
   - "Supplier Settlement List"
+  - "suplrsettlmtlist"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - LO
   - component:LO-AB
@@ -17,7 +22,6 @@ tags:
   - LO-AB
   - lob:logistics general
   - supplier
-  - metadata-only
 ---
 # I_SUPLRSETTLMTLIST
 
@@ -29,81 +33,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTLIST')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTLIST')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SuplrSettlmtList` |  | |  |  | `CHAR(10)` | Supplier Settlement List |
-| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
-| `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
-| `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
-| `LogisticsDataEntryCat` |  | |  |  | `CHAR(1)` | Entry Category for Logistics Data |
-| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
-| `SettlmtMgmtAcctgTransfSts` |  | |  |  | `CHAR(1)` | Posting Status for Transfer to Financial Accounting |
-| `DocumentDate` |  | |  |  | `DATS(8)` | Document Date in Settlement Management Document |
-| `DocumentReferenceID` |  | |  |  | `CHAR(16)` | Reference Document Number |
-| `AssignmentReference` |  | |  |  | `CHAR(18)` | Assignment Number |
-| `SettlmtApplSts` |  | |  |  | `CHAR(4)` | Application Status for a Settlement Management Document |
-| `SettlmtApplStsGrp` |  | |  |  | `CHAR(4)` | Status Group for Settlement Management Documents |
-| `SupplierPricingProcedure` |  | |  |  | `CHAR(6)` | Pricing Procedure |
-| `InvoicingParty` |  | |  |  | `CHAR(10)` | Supplier in Settlement Management |
-| `PayeeParty` |  | |  |  | `CHAR(10)` | Payee |
-| `AlternativeInvoicingParty` |  | |  |  | `CHAR(10)` | Alternative Supplier |
-| `SuplrSettlmtCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
-| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
-| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
-| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
-| `Division` |  | |  |  | `CHAR(2)` | Division |
-| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of User who Created the Document |
-| `CreationDate` |  | |  |  | `DATS(8)` | Date of Document Creation |
-| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Document Creation |
-| `LastChangeDate` |  | |  |  | `DATS(8)` | Date of Last Document Change |
-| `SuplrSettlmtListCurrency` |  | |  |  | `CUKY(5)` | Currency of Settlement Document |
-| `ExchangeRate` |  | |  |  | `DEC(9)` | Conversion Rate (Not Converted) |
-| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
-| `ExchangeRateIsFixed` |  | |  |  | `CHAR(1)` | Indicator for Fixed Exchange Rate |
-| `ExchangeRateDate` |  | |  |  | `DATS(8)` | Exchange Rate Date |
-| `SupplierTotalGrossAmount` |  | |  |  | `CURR(15)` | Gross Settlement Amount in Document Currency |
-| `SupplierTotalNetAmount` |  | |  |  | `CURR(15)` | Net Settlement Amount in Document Currency |
-| `SupplierTotalTaxAmount` |  | |  |  | `CURR(13)` | Total Tax Amount in Document Currency |
-| `SupplierPaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment Key |
-| `SupplierCashDiscount1Days` |  | |  |  | `DEC(3)` | Cash Discount Days 1 |
-| `SupplierCashDiscount2Days` |  | |  |  | `DEC(3)` | Cash Discount Days 2 |
-| `SupplierNetPaymentDays` |  | |  |  | `DEC(3)` | Net Payment Terms Period |
-| `SupplierCashDiscount1Percent` |  | |  |  | `DEC(5)` | Cash Discount Percentage 1 |
-| `SupplierCashDiscount2Percent` |  | |  |  | `DEC(5)` | Cash Discount Percentage 2 |
-| `SupplierPaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
-| `SuplrTotEligibleAmtForCshDisc` |  | |  |  | `CURR(13)` | Total Amount eligible for cash discount in document currency |
-| `SuplrSettlmtListIsCanceled` |  | |  |  | `CHAR(1)` | Supplier Settlement List Is Reversed |
-| `CancldSuplrSettlmtList` |  | |  |  | `CHAR(10)` | Reversed Document |
-| `SupplierAdditionalValueDays` |  | |  |  | `NUMC(2)` | Additional Value Days |
-| `SupplierFixedValueDate` |  | |  |  | `DATS(8)` | Fixed Value Date |
-| `SupplyingCountry` |  | |  |  | `CHAR(3)` | Supplying Country/Region |
-| `TaxDepartureCountry` |  | |  |  | `CHAR(3)` | Tax Departure Country/Region |
-| `TaxDestinationCountry` |  | |  |  | `CHAR(3)` | Tax Destination Country/Region |
-| `IsEUTriangularDeal` |  | |  |  | `CHAR(1)` | Indicator: Triangular Deal Within the EU |
-| `SuplrSettlmtCoCodeTaxCountry` |  | |  |  | `CHAR(3)` | Tax Country/Region Company Code |
-| `SupplierVATRegistration` |  | |  |  | `CHAR(20)` | VAT Registration Number |
-| `StateCentralBankPaymentReason` |  | |  |  | `CHAR(3)` | State Central Bank Indicator |
-| `CreditControlArea` |  | |  |  | `CHAR(4)` | Credit Control Area |
-| `SettlmtDocActivityReason` |  | |  |  | `CHAR(3)` | Header Activity Reason for Document Creation |
-| `PaymentReference` |  | |  |  | `CHAR(30)` | Payment Reference |
-| `SupplierPaymentCurrency` |  | |  |  | `CUKY(5)` | Payment Currency |
-| `SupplierPaytCurrencyExchRate` |  | |  |  | `DEC(9)` | Exchange Rate of Payment Currency (not converted) |
-| `SEPAMandate` |  | |  |  | `CHAR(35)` | Unique Reference to Mandate for each Payee |
-| `OneTimeSupplierAddressID` |  | |  |  | `CHAR(10)` | Address of One-Time Supplier |
-| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
-| `SettlmtDate` |  | |  |  | `DATS(8)` | Rebates: Settlement Date |
-| `SuplrSettlmtListIncmpltnsRsn` |  | |  |  | `CHAR(4)` | Incompleteness Reason of Settlement Management Document |
-| `DocIntrastatRelevance` |  | |  |  | `CHAR(1)` | Document is Relevant for Intrastat Declarations |
-| `IntrastatDeclnGdsFlwCat` |  | |  |  | `CHAR(1)` | Type of Goods Flow for Intrastat Declarations |
-| `IncotermsVersion` |  | |  |  | `CHAR(4)` | Incoterms Version |
-| `IncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms (Part 1) |
-| `IncotermsTransferLocation` |  | |  |  | `CHAR(28)` | Incoterms (Part 2) |
-| `IncotermsLocation1` |  | |  |  | `CHAR(70)` | Incoterms Location 1 |
-| `IncotermsLocation2` |  | |  |  | `CHAR(70)` | Incoterms Location 2 |
-| `SettlmtBusProcVar` |  | |  |  | `CHAR(4)` | Settlement Management Process Category |
-| `SettlmtBusProcCat` |  | |  |  | `CHAR(2)` | Use Case Type |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTLIST')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRSETTLMTLIST')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzoeuyuwvrqefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWU0ODQ2NTEwZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MjE6MjFaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1lNDg0NjUxMGVmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPlpRTWxqMnZnMnJpYkRNck5ZM3F0d0FvYitEZz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;am45R3lIT2I3ZTM0Wno2Nkh5NkFVQVMwdEhLR2Mxam5henZXVEFwUjQ4RTY1cTZZS1NaTlFiWWRCVytkNzcrQXQ5VlNiZGRMcm1oSQpsNXEwaWhQU3FWcWRFc3hDRjZBc3VRcVFaQnJiTG1ua1R1bXJKeHhtbkVCOWIxd20yNTM0MUFBUUJ6Z0FmSkRic0NMb0h2NkNGbHdKCkNZTTBhcEtWQkU5UkhBeTdGUEhHbkZyQ3ErMXgzZDNZVVJrbi9paGpHMExZU2VTeW9HQm05K3pQR1hJUnA5KzZZV2ZzQ1ZPRlpISjkKcldneDNCYTArSHVQYWpSV1c1Z093aER2SGEvQ3R4UUdWb2lsVENZTk1XeGtEZjVSdWxGcmV2UC9vMFd1a3ZOcGtVdFRWTytyYTBOWQphT1g5NXEwSzFkTGtoWGorVkIrYWY3UjVpVmRRSU5EOUk0bDdtSk9ydnBPUXlqcFZvVDJTY3dPZGdYSzVVbzgrYjlDaXJjRW1Hd0RVCnBtNzBoSXA3VGxwWk4zckhhRTZNeEt4TlVMQ3JSQ1pMMklSQlVjQ1pGanlnSXM3bytzb0g4cEowTWp3dWJqNFJHREZtTDB0TWpCR2EKeXVYVzZuNlY3YnZ1aTkwQ1FzWHRzKzBRQlVGcElzaVVaZUNrZWxXTkhRTFlQL3hjSTk5d1pmMTI8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzoeuyuwvrqefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

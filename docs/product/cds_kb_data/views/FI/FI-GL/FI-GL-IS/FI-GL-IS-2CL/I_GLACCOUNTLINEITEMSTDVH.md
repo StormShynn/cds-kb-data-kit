@@ -5,9 +5,15 @@ app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value
 semantic_en: "General Ledger Account Line Item"
+semantic_vi: "I_GLACCOUNTLINEITEMSTDVH — CDS view giao diện dựa trên I_GLACCOUNTLINEITEMSTDVH."
+keywords:
+  - "glaccountlineitemstdvh"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - FI
   - account
@@ -17,7 +23,6 @@ tags:
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_GLACCOUNTLINEITEMSTDVH
 
@@ -29,42 +34,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
-| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
-| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
-| `MasterFixedAsset` |  | |  |  | `CHAR(12)` | Fixed Asset (Main Asset Number) |
-| `FixedAsset` |  | |  |  | `CHAR(4)` | Asset Subnumber |
-| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
-| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
-| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
-| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
-| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
-| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
-| `Plant` |  | |  |  | `CHAR(4)` | Plant |
-| `SalesOrderType` |  | |  |  | `CHAR(4)` | Sales Document Type |
-| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
-| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
-| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
-| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
-| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Service Document Type |
-| `ServiceDocument` |  | |  |  | `CHAR(10)` | Service Document ID |
-| `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
-| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
-| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
-| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCOUNTLINEITEMSTDVH')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzoceaedatswfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWNlYWVkYTMyNmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTY6MjlaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jZWFlZGEzMjZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPldZaUlQb0M5R0FNT0ZJUDAvZklLQWRJZ3V6MD08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;TU5SNzQ3VTcvajJZOXdla1NFWG01S1c3VFJJUUNhZzB5UzF5V0V0RzE0Q0RTZXRBNjVwVzRzZnZFN2VZSGdJUTJaKzVrcE5JTXpqMQpnR0dTZlpUTzlqTDgxVzA5MktLKzVuWXhER1dTSVRxNEdnbkxsZUdvMVdLQ1lrbFhBczJOdkt5U0RkVTJrYVJMTUZzS3NVY3lvdmRwClhyUEJaalRETG55ZHZqaDZHQjdLYURpcnpmc0t0cGZ2cERSc2IvTU9ab1hTdWhDUTQzSERBVGhybEJGZHk5MGZjNHlSdVdLa0tRcTkKMy9ncDFTZDZyWllDSU5lMmYzRUxXSkZ4WU55ZWxvSnhEZno0SHA2K0JuWThvQ25WWWVvbUlicGN5bGdBeU5sVURnOEljZlRrVk5mYgpCaWJpYkIxRVlHRkhCRnp3ZHloYks1Q0oycFphekJ4RitlekJ0dm43TFJOc3lJVmErN29DY0FtWVRESEdqamZLRjFkbk5GTDRoZk9vCkZSNHFMczV4cUJ4TjR5Nnp6ak9xL2E4cHNkRWVhM1QwcW1YZUNqellnaTZLL0trMDFwUmFBQ0Y0UmtBWk5sL0tqTUo2cFhPUW1oSUkKZVZsZXdiUzhYSE8wc1d1cWVQZVNFWUxFYUtkMzB0WFdtVk5RNUZ1SCtpVkNGMnhRN1NxOE53dXA8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzoceaedatswfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

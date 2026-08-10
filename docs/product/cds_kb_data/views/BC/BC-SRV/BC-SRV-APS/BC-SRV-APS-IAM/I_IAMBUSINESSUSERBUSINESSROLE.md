@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserID` | ✓ | |  | `cast( bru.user_id as vdm_userid preserving type )` |  |  |
-| `BusinessRoleUUID` | ✓ | |  |  |  |  |
-| `BusinessRole` |  | |  |  |  |  |
-| `BusinessRoleGroup` |  | |  |  |  |  |
+| `UserID` | ✓ | |  | `cast( bru.user_id as vdm_userid preserving type )` | `CHAR(12)` | User ID |
+| `BusinessRoleUUID` | ✓ | |  |  | `RAW(16)` | Global Unique ID for table |
+| `BusinessRole` |  | |  |  | `CHAR(40)` | IAM: Business Role ID |
+| `BusinessRoleGroup` |  | |  |  | `CHAR(12)` | Role Group |
 | `_BusinessUser` | | ✓ | | | | |
 | `_BusinessRole` | | ✓ | | | | |
 

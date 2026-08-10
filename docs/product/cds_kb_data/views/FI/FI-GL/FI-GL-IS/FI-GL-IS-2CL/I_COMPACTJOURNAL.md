@@ -5,13 +5,16 @@ app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPACTJOURNAL')/$value
 semantic_en: "Compact Journal"
+semantic_vi: "I_COMPACTJOURNAL — CDS view giao diện dựa trên I_COMPACTJOURNAL."
 keywords:
   - "Compact Journal"
-  - "Compact Journal"
-  - "Compact Journal"
+  - "compactjournal"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - FI
   - component:FI-GL-IS-2CL
@@ -20,7 +23,6 @@ tags:
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_COMPACTJOURNAL
 
@@ -32,88 +34,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPACTJOURNAL')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPACTJOURNAL')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
-| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
-| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
-| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
-| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
-| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
-| `CreationDate` |  | |  |  | `DATS(8)` | Creation Date |
-| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
-| `AccountingDocCreatedByUser` |  | |  |  | `CHAR(12)` | User that created the journal entry |
-| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `GLAccountName` |  | |  |  | `CHAR(20)` | G/L Account Name |
-| `PostingKey` |  | |  |  | `CHAR(2)` | Posting Key |
-| `FinancialTransactionType` |  | |  |  | `CHAR(3)` | Financial Transaction Type |
-| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
-| `BalanceTransactionCurrency` |  | |  |  | `CUKY(5)` | Balance Transaction Currency |
-| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
-| `DebitAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Debit Amount in Company Code Currency |
-| `CreditAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Credit Amount in Company Code Currency |
-| `FunctionalCurrency` |  | |  |  | `CUKY(5)` | Functional Currency |
-| `DebitAmountInFunctionalCrcy` |  | |  |  | `CURR(23)` | Debit Amount in Functional Currency |
-| `CreditAmountInFunctionalCrcy` |  | |  |  | `CURR(23)` | Credit Amount in Functional Currency |
-| `GLDebitAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | G/L Account - Debit Amount in Company Code Currency |
-| `AssetDebitAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Asset - Debit Amount in Company Code Currency |
-| `MaterialDebitAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Material - Debit Amount in Company Code Currency |
-| `DebtorDebitAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Customer - Debit Amount in Company Code Currency |
-| `CreditorDebitAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Supplier - Debit Amount in Company Code Currency |
-| `GLCreditAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | G/L Account - Credit Amount in Company Code Currency |
-| `AssetCreditAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Asset - Credit Amount in Company Code Currency |
-| `MaterialCreditAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Material - Credit Amount in Company Code Currency |
-| `DebtorCreditAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Customer - Credit Amount in Company Code Currency |
-| `CreditorCreditAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Supplier - Credit Amount in Company Code Currency |
-| `DebitAmountInTransCrcy` |  | |  |  | `CURR(23)` | Debit Amount in Transaction Currency |
-| `CreditAmountInTransCrcy` |  | |  |  | `CURR(23)` | Credit Amount in Transaction Currency |
-| `DebitAmountInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 1 |
-| `CreditAmountInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 1 |
-| `DebitAmountInFreeDefinedCrcy2` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 2 |
-| `CreditAmountInFreeDefinedCrcy2` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 2 |
-| `DebitAmountInFreeDefinedCrcy3` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 3 |
-| `CreditAmountInFreeDefinedCrcy3` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 3 |
-| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
-| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
-| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
-| `FreeDefinedCurrency2` |  | |  |  | `CUKY(5)` | Freely Defined Currency 2 |
-| `FreeDefinedCurrency3` |  | |  |  | `CUKY(5)` | Freely Defined Currency 3 |
-| `AccountingDocumentItem` |  | |  |  | `NUMC(3)` | Journal Entry Posting View Item |
-| `AccountingDocumentCategory` |  | |  |  | `CHAR(1)` | Journal Entry Category |
-| `AlternativeGLAccount` |  | |  |  | `CHAR(10)` | Alternative G/L Account Number In Company Code |
-| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
-| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
-| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
-| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
-| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
-| `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
-| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
-| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
-| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
-| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
-| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
-| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
-| `GLAccountType` |  | |  |  | `CHAR(1)` | Type of a General Ledger Account |
-| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
-| `SegmentName` |  | |  |  | `CHAR(50)` | Segment Name |
-| `AccountingDocumentTypeName` |  | |  |  | `CHAR(20)` | Document Type Name |
-| `TransactionTypeDetermination` |  | |  |  | `CHAR(3)` | Transaction Key |
-| `TaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
-| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
-| `WBSElement` |  | |  |  | `CHAR(24)` | WBS Element |
-| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
-| `CostCenterHierarchyNode` |  | |  |  | `CHAR(50)` | Cost Center Hierarchy Node |
-| `CostCenterHierarchy` |  | |  |  | `CHAR(42)` | Cost Center Hierarchy |
-| `GLAccountHierarchyNode` |  | |  |  | `CHAR(50)` | G/L Account Hierarchy Node |
-| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | G/L Account Hierarchy |
-| `ProfitCenterHierarchyNode` |  | |  |  | `CHAR(50)` | Cost Center Hierarchy Node |
-| `ProfitCenterHierarchy` |  | |  |  | `CHAR(42)` | Profit Center Hierarchy |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPACTJOURNAL')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPACTJOURNAL')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocvevrrqbsfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWM1ZTUxMTBiMmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTQ6MzBaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jNWU1MTEwYjJmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPks5RTZYVURVR0hxNUhOSmcwb29zTmVNTE1jTT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;VDBkL0trRjZNb3YxNHhmZ2VKaUp1S1ZpVlZScHZ5SGkrd3RrTnRMNHprTHZsUmprWGU0Z1BzRVo0Z1FGNHQ4bE1KZDZIMUdIazVONgppQ2ZrSFJwZVBTaTRlZ00rOXVyR2hMQkt4QkRkSzlIcjIwR2NRSlpCdWhkNG9md20rZG4wUmQwRnVpVXNnNzJOTnpxQk81aWxRMzY5CmhRVnpaOG1GdHkvVE5TM3FEZEJOMHZ4OWcvWlU1OWFSdm5jTmlTRElWdS9MeS82Y2NWUGV0cUR2TUlMUFJwT2Z4MVNGN2RGQUlVWjMKblZKUHMzWmxjWlhPU0VYVXNTOWF1V0RaSjZoWFJ1ZE1HMUEwTTViak5RSWQvemNjSzY1Tm5nem9lTkszaVB5NkVvUWVlY1ZQZ1c4NQpwanQ5WXZGRmhFQVBIWG1DdEJIYU9mUS9iRFZiWmFWK09BSEdRM1Fkby8wOHNTdkpkSHB5UFhNVWpqK1ZkMWZ0WitoQXhzcVFNWkExCm5QUXJTOXN1YVNrQzduaVpBSXJFNFBHTHdwWm5PQTlraUdxZ0RtblZoUUxZKzRJVFJQOEZUQVpLRjFvMlp6KytuTkhPV3cwaHZGNUIKZEJaM2h3SzNMZzhOdFFOb3ViV1dpTUZKMzhlcGo3UWwxK24wVEt3Y3RyTnRONEhGNXMxT2NZZ2U8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocvevrrqbsfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

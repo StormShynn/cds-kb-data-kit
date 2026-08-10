@@ -5,9 +5,15 @@ app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CABUSINESSTRANSACTION')/$value
 semantic_en: "Contract Accounting Business Transaction"
+semantic_vi: "I_CABUSINESSTRANSACTION — CDS view giao diện dựa trên I_CABUSINESSTRANSACTION."
+keywords:
+  - "cabusinesstransaction"
+  - "+escape(url)+&quot"
+  - "secure"
+  - "partitioned&quot"
 tags:
   - FI
   - account
@@ -19,7 +25,6 @@ tags:
   - lob:cross_application components
   - lob:finance
   - transaction
-  - metadata-only
 ---
 # I_CABUSINESSTRANSACTION
 
@@ -31,61 +36,20 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CABUSINESSTRANSACTION')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CABUSINESSTRANSACTION')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessTransactionUUID` |  | |  |  | `RAW(16)` | Globally Unique Identifier |
-| `CreationDate` |  | |  |  | `DATS(8)` | Date on Which Record Was Created |
-| `CreationTime` |  | |  |  | `TIMS(6)` | Creation Time |
-| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By User |
-| `CASubAreaForParallelization` |  | |  |  | `NUMC(3)` | Subarea for Parallelization in Mass Processing |
-| `CABusinessTransactionObject` |  | |  |  | `CHAR(8)` | Business Transaction: Object Identification |
-| `CABusinessTransactionActivity` |  | |  |  | `CHAR(4)` | Business Transaction: Activity |
-| `CABusinessTransactionName` |  | |  |  | `CHAR(80)` | Description |
-| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `ContractAccount` |  | |  |  | `CHAR(12)` | Contract Account |
-| `CAContract` |  | |  |  | `CHAR(20)` | Reference Specifications from Contract |
-| `CASubApplication` |  | |  |  | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
-| `OriginalReferenceDocument` |  | |  |  | `CHAR(20)` | Reference Key |
-| `ReferenceDocumentType` |  | |  |  | `CHAR(5)` | Reference Document Type |
-| `ReferenceDocumentLogicalSystem` |  | |  |  | `CHAR(10)` | Logical System of Reference Document |
-| `LogicalSystem` |  | |  |  | `CHAR(10)` | Logical System |
-| `CABusTransExternalReference` |  | |  |  | `CHAR(32)` | Business Transaction: External Reference |
-| `CAMassRunDate` |  | |  |  | `DATS(8)` | Date ID |
-| `CAMassRunID` |  | |  |  | `CHAR(6)` | Run ID |
-| `CABusinessTransactionProcess` |  | |  |  | `CHAR(8)` | Business Transaction: Process Identification |
-| `CABusTransProcessName` |  | |  |  | `CHAR(50)` | Text Field |
-| `CABusTransDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction: Document Category |
-| `CADocumentNumber` |  | |  |  | `CHAR(12)` | Document |
-| `CABusTransDocument` |  | |  |  | `CHAR(24)` | Document |
-| `CARepetitionItemNumber` |  | |  |  | `NUMC(3)` | Repetition Item in FI-CA Document |
-| `CABPItemNumber` |  | |  |  | `NUMC(4)` | Item Number in FI-CA Document |
-| `CASubItemNumber` |  | |  |  | `NUMC(3)` | Subitem for a Partial Clearing in Document |
-| `CAReferenceDocument` |  | |  |  | `CHAR(16)` | Reference Document Number |
-| `CAClassificationKey` |  | |  |  | `CHAR(35)` | Classification Key |
-| `CADocumentOriginCode` |  | |  |  | `CHAR(2)` | Document Origin Key |
-| `CAPostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
-| `CAClearingReason` |  | |  |  | `CHAR(2)` | Clearing Reason |
-| `CAMainTransaction` |  | |  |  | `CHAR(4)` | Main Transaction for Line Item |
-| `CASubTransaction` |  | |  |  | `CHAR(4)` | Subtransaction for Document Item |
-| `CAStatisticalItemCode` |  | |  |  | `CHAR(1)` | Type of Statistical Line Item |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
-| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
-| `LedgerGroup` |  | |  |  | `CHAR(4)` | Ledger Group |
-| `CABusTransRelationship` |  | |  |  | `CHAR(2)` | Relation between Objects |
-| `CABusTransRelatedObject` |  | |  |  | `CHAR(40)` | Master Data Object Key |
-| `CACorrespondenceType` |  | |  |  | `CHAR(4)` | Correspondence Type |
-| `CorrespondenceKey` |  | |  |  | `CHAR(36)` | Correspondence Key |
-| `CorrespondencePrintDate` |  | |  |  | `DATS(8)` | Print Date |
-| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `CAAmountInTransactionCurrency` |  | |  |  | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
-| `CAPaymentExceptionReason` |  | |  |  | `NUMC(3)` | Item Indicator in Payment Program |
-| `CADunningExceptionReason` |  | |  |  | `NUMC(3)` | Item Indicator in Dunning Run |
-| `CAReceivableAdjustmentReason` |  | |  |  | `CHAR(2)` | Adjustment Reason |
-| `CAPromiseToPayReason` |  | |  |  | `CHAR(2)` | Reason for Promise to Pay |
-| `CAPromiseToPayWthdrwlReason` |  | |  |  | `CHAR(2)` | Reason for Withdrawal of Promise to Pay |
-| `CAInstlmntPlanDactvtnRsn` |  | |  |  | `CHAR(2)` | Deactivation Reason |
+| `+escape(url)+&quot` |  | |  |  |  |  |
+| `secure` |  | |  |  |  |  |
+| `partitioned&quot` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CABUSINESSTRANSACTION')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CABUSINESSTRANSACTION')/$value)*
+
+```abap
+<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocrqxbyftqfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWMxMDdiOGYzMGY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTM6MjVaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jMTA3YjhmMzBmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPnZBMC9KSm9Bd01hNkFua2xLRFR6amV2djA5cz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;S3dkQVFGRzNHSnhZOWJST2s3bjJyZnRnYlBRT1pwQ2dMVHB3RUdtdlY3Y25zVGw4VVQybUhYSkJ4Y3BkY2RrNzRxUWJzYXp3U01hcApJZ3YwSWY0bzNVTlZEYkhLZkk1d3NoaGM0TTJlOEQwSUJEaVFyMm1EaDBaVjZmLzZ1TTVoZlkxaVg3Zmx0MzJhK1ZlSDd6VzRjbEcwCnorY0dIVXB2MU10enM4eFJHMFVaYmtXK1NydXZsYzJHNmxabGIyNVk2a29oWDYvd2hXUUVMNVJoRXlFNFJsNDVZc01OSzVscUpESmcKTDl0RDdqUFQ2NVFCVTNZZUJGQnFydnZaUnFxVjJiNTZHcXV0bWFwVVJ4ZmhDWnd3Q2pueXVUQnUrQkkxMlY0SWg4NlhkVHZNNWNCdgp4ZFRUL2dMaEZOdncwRWFWOFJXeWFJMVBZSXNrVjVTdHJLaTJaSnEzZDNRbzVEdHovYmNES1FOWU41b3NwaTUrOStnRnVUamp3THdFCmt6RjF0TFkvTlpjN1p5cWZDRnF5b3BrVng3TUhjN1BvK3V5MnV4c3FaR2lERUFWNlY3RGFLdUgrQk9PZzdGTldsUkpzZWZ1aWtGODAKbTFJS0ZyTFJQWGQwN01UbHNuNUJlc1FBYUt2Z1BrSmp6QlpEdDYzbC9qQjltOTh5aGEwN042azQ8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocrqxbyftqfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
+```

@@ -31,10 +31,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PublicHolidayCalendarID` | ✓ | |  |  |  |  |
-| `PublicHolidayCalendarLegacyID` |  | |  |  |  |  |
-| `PublHldayCalValidityStartDate` |  | |  |  |  |  |
-| `PublHldayCalValidityEndDate` |  | |  |  |  |  |
+| `PublicHolidayCalendarID` | ✓ | |  |  | `CHAR(32)` | Holiday calendar ID |
+| `PublicHolidayCalendarLegacyID` |  | |  |  | `CHAR(2)` | Public Holiday Calendar |
+| `PublHldayCalValidityStartDate` |  | |  |  | `DATS(8)` | Date (from) |
+| `PublHldayCalValidityEndDate` |  | |  |  | `DATS(8)` | Date (to) |
 | `_Text` | | ✓ | | | | |
 
 ## Associations
