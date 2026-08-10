@@ -1,16 +1,16 @@
 ---
 name: I_ONRRREPTRANSTYPE
-description: "Office of Natural Resources Revenue Reported Transaction Type"
+description: "ONRR Reported Transaction Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ONRRREPTRANSTYPE')/$value
-semantic_en: "Office of Natural Resources Revenue Reported Transaction Type"
+semantic_en: "ONRR Reported Transaction Type"
 tags:
   - IS
-  - bo:companycode
+  - bo:purchaseorder
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
@@ -20,7 +20,7 @@ tags:
 ---
 # I_ONRRREPTRANSTYPE
 
-**Office of Natural Resources Revenue Reported Transaction Type**
+**ONRR Reported Transaction Type**
 
 | Property | Value |
 |---|---|

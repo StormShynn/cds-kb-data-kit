@@ -1,15 +1,16 @@
 ---
 name: I_CREDITDECISIONDOCUMENTC
-description: "Credit Decision Document - Cube"
+description: "This CDS view is designed to provide a comprehensive overview of credit decision documents within a business context. It aggregates and presents data related to credit management, including details about business partners, credit segments, sales documents, and various case attributes. The view is structured to support analytical processing and decision-making by offering insights into open credit cases, their statuses, and associated financial metrics. This CDS view provides the data to answer the following business questions: What are the details of open credit decision cases, including their creation, last change, and planned closure dates? Which business partners are involved in these credit decision cases, and what are their associated credit segments and risk classes? What is the status and priority of each credit decision case, and who are the responsible and processing contacts? How many credit decision documents are associated with each case, and what are the financial implications, such as open credit amounts and checked credit risk amounts? Are there any credit checks that have failed, and what are the reasons for case escalations or planned closure date exceedances? What is the credit limit and exposure amount for business partners within specific credit segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITDECISIONDOCUMENTC')/$value
-semantic_en: "Credit Decision Document - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of credit decision documents within a business context. It aggregates and presents data related to credit management, including details about business partners, credit segments, sales documents, and various case attributes. The view is structured to support analytical processing and decision-making by offering insights into open credit cases, their statuses, and associated financial metrics. This CDS view provides the data to answer the following business questions: What are the details of open credit decision cases, including their creation, last change, and planned closure dates? Which business partners are involved in these credit decision cases, and what are their associated credit segments and risk classes? What is the status and priority of each credit decision case, and who are the responsible and processing contacts? How many credit decision documents are associated with each case, and what are the financial implications, such as open credit amounts and checked credit risk amounts? Are there any credit checks that have failed, and what are the reasons for case escalations or planned closure date exceedances? What is the credit limit and exposure amount for business partners within specific credit segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
+  - bo:companycode
   - component:FIN-FSCM-CR-2CL
   - document
   - FIN-FSCM
@@ -17,11 +18,12 @@ tags:
   - FIN-FSCM-CR-2CL
   - interface-view
   - lob:finance
+  - plan
   - metadata-only
 ---
 # I_CREDITDECISIONDOCUMENTC
 
-**Credit Decision Document - Cube**
+**This CDS view is designed to provide a comprehensive overview of credit decision documents within a business context. It aggregates and presents data related to credit management, including details about business partners, credit segments, sales documents, and various case attributes. The view is structured to support analytical processing and decision-making by offering insights into open credit cases, their statuses, and associated financial metrics. This CDS view provides the data to answer the following business questions: What are the details of open credit decision cases, including their creation, last change, and planned closure dates? Which business partners are involved in these credit decision cases, and what are their associated credit segments and risk classes? What is the status and priority of each credit decision case, and who are the responsible and processing contacts? How many credit decision documents are associated with each case, and what are the financial implications, such as open credit amounts and checked credit risk amounts? Are there any credit checks that have failed, and what are the reasons for case escalations or planned closure date exceedances? What is the credit limit and exposure amount for business partners within specific credit segments? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

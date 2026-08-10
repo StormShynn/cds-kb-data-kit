@@ -1,13 +1,13 @@
 ---
 name: I_DERIVATIVECMMDTYEXPSR
-description: "Derivative Basic Layer Select data from VFIND"
+description: "Drvtv Basic Layer Select data from VFIND"
 app_component: FIN-FSCM-CMM-RSK
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_DERIVATIVECMMDTYEXPSR')/$value
-semantic_en: "Derivative Basic Layer Select data from VFIND"
+semantic_en: "Drvtv Basic Layer Select data from VFIND"
 tags:
   - FIN
   - bo:companycode
@@ -22,7 +22,7 @@ tags:
 ---
 # I_DERIVATIVECMMDTYEXPSR
 
-**Derivative Basic Layer Select data from VFIND**
+**Drvtv Basic Layer Select data from VFIND**
 
 | Property | Value |
 |---|---|
@@ -102,5 +102,5 @@ tags:
 | `ParDrvtvContractSpecification` |  | |  |  | `CHAR(20)` | Parent Derivative Contract Specification ID |
 | `RiskViewIsNotRelevant` |  | |  |  | `CHAR(1)` | Ignore for Risk View |
 | `FinancialTransactionPortfolio` |  | |  |  | `CHAR(10)` | Portfolio |
-| `CmmdtyHdgPlanExposureHedgeBook` |  | |  |  | `CHAR(10)` | Commodity Hedge Book |
-| `CommodityHedgePlanExposureID` |  | |  |  | `CHAR(13)` | Plan Exposure ID |
+| `CmmdtyHdgPlanExposureHedgeBook` |  | |  |  | `CHAR(10)` |  |
+| `CommodityHedgePlanExposureID` |  | |  |  | `CHAR(13)` |  |

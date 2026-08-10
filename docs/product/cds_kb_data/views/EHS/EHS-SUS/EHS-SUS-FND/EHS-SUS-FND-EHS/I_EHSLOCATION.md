@@ -1,15 +1,16 @@
 ---
 name: I_EHSLOCATION
-description: "Environment and Health and Safety Location"
+description: "This CDS view retrieves details about the current (most recent) location revision. This CDS view provides the data to answer the following business questions: What's the status of my current location revision? What about the location type? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSLOCATION')/$value
-semantic_en: "Environment and Health and Safety Location"
+semantic_en: "This CDS view retrieves details about the current (most recent) location revision. This CDS view provides the data to answer the following business questions: What's the status of my current location revision? What about the location type? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - EHS
+  - bo:companycode
   - component:EHS-SUS-FND-EHS
   - EHS-SUS
   - EHS-SUS-FND
@@ -19,7 +20,7 @@ tags:
 ---
 # I_EHSLOCATION
 
-**Environment and Health and Safety Location**
+**This CDS view retrieves details about the current (most recent) location revision. This CDS view provides the data to answer the following business questions: What's the status of my current location revision? What about the location type? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
@@ -56,7 +57,9 @@ tags:
 | `Region` |  | |  |  | `CHAR(3)` | Region |
 | `CityName` |  | |  |  | `CHAR(40)` | City |
 | `StreetName` |  | |  |  | `CHAR(60)` | Street Address |
+| `HouseNumber` |  | |  |  | `CHAR(10)` | House Number |
 | `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
+| `OriginalLanguage` |  | |  |  | `LANG(1)` | Language |
 | `Equipment` |  | |  |  | `CHAR(18)` | Equipment |
 | `FunctionalLocation` |  | |  |  | `CHAR(40)` | Functional Location ID |
 | `Latitude` |  | |  |  | `DEC(15)` | Geographic Latitude |

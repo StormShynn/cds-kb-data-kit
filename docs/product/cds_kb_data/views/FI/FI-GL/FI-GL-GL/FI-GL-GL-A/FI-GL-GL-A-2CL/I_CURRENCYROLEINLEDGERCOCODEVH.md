@@ -1,7 +1,7 @@
 ---
 name: I_CURRENCYROLEINLEDGERCOCODEVH
 description: "This CDS view provides the prerequisites for answering the following business questions: How many currency roles are defined? In contrast to I_CurrencyRole, it only displays the currency roles which are assigned to a company code/ledger."
-app_component: FI-GL-IS-2CL
+app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
@@ -17,10 +17,11 @@ keywords:
 tags:
   - FI
   - bo:companycode
-  - component:FI-GL-IS-2CL
+  - component:FI-GL-GL-A-2CL
   - FI-GL
-  - FI-GL-IS
-  - FI-GL-IS-2CL
+  - FI-GL-GL
+  - FI-GL-GL-A
+  - FI-GL-GL-A-2CL
   - interface-view
   - lob:finance
 ---
@@ -30,7 +31,7 @@ tags:
 
 | Property | Value |
 |---|---|
-| App Component | `FI-GL-IS-2CL` |
+| App Component | `FI-GL-GL-A-2CL` |
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |

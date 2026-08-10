@@ -1,18 +1,22 @@
 ---
 name: I_EWM_PLANGIOFFSETDATE
-description: "Plnd Offset Date for Goods Issue - Cube"
+description: "This CDS view provides information about the start date and end date of planned goods issue for outbound delivery orders based on the specified offset days in your warehouse. This CDS view provides the data to answer the following business questions: What is the start date of planned goods issue for outbound delivery order 123? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: SCM-EWM-DLP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EWM_PLANGIOFFSETDATE')/$value
-semantic_en: "Plnd Offset Date for Goods Issue - Cube"
+semantic_en: "This CDS view provides information about the start date and end date of planned goods issue for outbound delivery orders based on the specified offset days in your warehouse. This CDS view provides the data to answer the following business questions: What is the start date of planned goods issue for outbound delivery order 123? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - SCM
+  - bo:companycode
   - component:SCM-EWM-DLP-2CL
+  - delivery
   - goods-issue
   - interface-view
+  - order
+  - plan
   - SCM-EWM
   - SCM-EWM-DLP
   - SCM-EWM-DLP-2CL
@@ -20,7 +24,7 @@ tags:
 ---
 # I_EWM_PLANGIOFFSETDATE
 
-**Plnd Offset Date for Goods Issue - Cube**
+**This CDS view provides information about the start date and end date of planned goods issue for outbound delivery orders based on the specified offset days in your warehouse. This CDS view provides the data to answer the following business questions: What is the start date of planned goods issue for outbound delivery order 123? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

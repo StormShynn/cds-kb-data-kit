@@ -1,17 +1,18 @@
 ---
 name: I_CRDTDCSNVERSUSSLSORDC_2
-description: "Credit Decsn vs Sales Order V2 - Cube"
+description: "This CDS view is designed to provide analytical insights into the relationship between credit decisions and sales orders. It aggregates and analyzes data related to sales orders, credit management, and associated business partners, allowing businesses to understand how credit decisions impact sales activities. This CDS view provides the data to answer the following business questions: How many sales orders have associated credit decision documents? What is the distribution of sales orders across different credit risk classes? How are sales orders distributed across various credit segments and business partner groups? What is the geographical distribution of sales orders in terms of country and region? How many sales orders are blocked due to credit decisions? What is the relationship between sales order types and credit management decisions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CRDTDCSNVERSUSSLSORDC_2')/$value
-semantic_en: "Credit Decsn vs Sales Order V2 - Cube"
+semantic_en: "This CDS view is designed to provide analytical insights into the relationship between credit decisions and sales orders. It aggregates and analyzes data related to sales orders, credit management, and associated business partners, allowing businesses to understand how credit decisions impact sales activities. This CDS view provides the data to answer the following business questions: How many sales orders have associated credit decision documents? What is the distribution of sales orders across different credit risk classes? How are sales orders distributed across various credit segments and business partner groups? What is the geographical distribution of sales orders in terms of country and region? How many sales orders are blocked due to credit decisions? What is the relationship between sales order types and credit management decisions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
-  - bo:salesorder
+  - bo:companycode
   - component:FIN-FSCM-CR-2CL
+  - document
   - FIN-FSCM
   - FIN-FSCM-CR
   - FIN-FSCM-CR-2CL
@@ -23,7 +24,7 @@ tags:
 ---
 # I_CRDTDCSNVERSUSSLSORDC_2
 
-**Credit Decsn vs Sales Order V2 - Cube**
+**This CDS view is designed to provide analytical insights into the relationship between credit decisions and sales orders. It aggregates and analyzes data related to sales orders, credit management, and associated business partners, allowing businesses to understand how credit decisions impact sales activities. This CDS view provides the data to answer the following business questions: How many sales orders have associated credit decision documents? What is the distribution of sales orders across different credit risk classes? How are sales orders distributed across various credit segments and business partner groups? What is the geographical distribution of sales orders in terms of country and region? How many sales orders are blocked due to credit decisions? What is the relationship between sales order types and credit management decisions? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

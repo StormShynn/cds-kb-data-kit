@@ -39,7 +39,7 @@ tags:
 | `MovableObjectIsAccessory` |  | |  |  | `CHAR(1)` | Identification accessories |
 | `MovableObjectModelName` |  | |  |  | `CHAR(30)` | Technical  Category/Category term/Description |
 | `MovableObjectManufacturerName` |  | |  |  | `CHAR(30)` | Object Manufacturer Builder |
-| `MovableObjectManufactureDate` |  | |  |  | `DATS(8)` | Date of the Manufacture/Purchase |
+| `MovableObjectManufactureDate` |  | |  |  | `DATS(8)` |  Date of the Manufacture/Purchase |
 | `MovableObjectAddressID` |  | |  |  | `CHAR(10)` | Location / Address |
 | `MovableObjectLocation` |  | |  |  | `CHAR(6)` | Location Description |
 | `MovableObjectLocationComment` |  | |  |  | `CHAR(30)` | Remark Field for Location Description |

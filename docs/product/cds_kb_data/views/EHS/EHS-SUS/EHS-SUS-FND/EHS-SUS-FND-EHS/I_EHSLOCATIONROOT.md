@@ -1,15 +1,16 @@
 ---
 name: I_EHSLOCATIONROOT
-description: "EHS Location"
+description: "This CDS view retrieves the header data of EHS locations (data that is not revision-relevant), such as the location ID and migration source. This CDS view provides the data to answer the following business questions: What's the header data or ID of a particular EHS location in the system?"
 app_component: EHS-SUS-FND-EHS
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EHSLOCATIONROOT')/$value
-semantic_en: "EHS Location"
+semantic_en: "This CDS view retrieves the header data of EHS locations (data that is not revision-relevant), such as the location ID and migration source. This CDS view provides the data to answer the following business questions: What's the header data or ID of a particular EHS location in the system?"
 tags:
   - EHS
+  - bo:salesorder
   - component:EHS-SUS-FND-EHS
   - EHS-SUS
   - EHS-SUS-FND
@@ -19,7 +20,7 @@ tags:
 ---
 # I_EHSLOCATIONROOT
 
-**EHS Location**
+**This CDS view retrieves the header data of EHS locations (data that is not revision-relevant), such as the location ID and migration source. This CDS view provides the data to answer the following business questions: What's the header data or ID of a particular EHS location in the system?**
 
 | Property | Value |
 |---|---|

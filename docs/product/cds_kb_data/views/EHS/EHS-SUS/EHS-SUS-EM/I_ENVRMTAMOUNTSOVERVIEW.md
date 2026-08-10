@@ -49,7 +49,7 @@ tags:
 | `EHSSubjectUUID` |  | |  |  | `RAW(16)` | Reference to Subject Type BO Root Node ID |
 | `DataPeriodName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
 | `Plant` |  | |  |  | `CHAR(4)` | Plant ID |
-| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Text (Maximum 10 Characters) |
+| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Short Text with a 10-Character Maximum |
 | `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Units of Measurement of Various Types |
 | `EHSSubjectName` |  | |  |  | `CHAR(1333)` |  |
 | `NumberOfRecords` |  | |  |  | `INT4(10)` | Whole Number with +/- Sign (-2.147.483.648 .. 2.147.483.647) |

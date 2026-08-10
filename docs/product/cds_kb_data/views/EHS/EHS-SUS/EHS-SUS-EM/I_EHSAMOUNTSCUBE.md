@@ -46,7 +46,7 @@ tags:
 | `EHSAmountUTCYearMonth` |  | |  |  | `NUMC(6)` | Calendar Year and Month |
 | `EHSAmountUTCYear` |  | |  |  | `NUMC(4)` | Year |
 | `EHSAmountValue` |  | |  |  | `FLTP(16)` | Amount Value |
-| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Units of Measurement of Various Types |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Measure Units of Various Types |
 | `UnitOfMeasureDimension` |  | |  |  | `CHAR(6)` | Physical Dimension |
 | `EHSAmountIsReplaced` |  | |  |  | `CHAR(1)` | Substituted Value |
 | `EHSAmountDeviationID` |  | |  |  | `CHAR(20)` | Business Object ID |
@@ -61,7 +61,7 @@ tags:
 | `EHSLocationUUID` |  | |  |  | `RAW(16)` | Location |
 | `EHSAmountIssueType` |  | |  |  | `CHAR(2)` | Amount Issue Type Values |
 | `EHSAmountSourceTypeName` |  | |  |  | `CHAR(255)` | Text Field in OTR |
-| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Text (Maximum 10 Characters) |
+| `UnitOfMeasureName` |  | |  |  | `CHAR(10)` | Unit of Measurement Short Text with a 10-Character Maximum |
 | `UnitOfMeasureDimensionName` |  | |  |  | `CHAR(20)` | Dimension Text |
 | `EHSAmountStatusName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
 | `EHSDataPeriodText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
@@ -92,7 +92,7 @@ tags:
 | `EHSDataClassifiersText` |  | |  |  | `CHAR(255)` | Data Classifiers |
 | `EHSSubjectID` |  | |  |  | `CHAR(20)` | id |
 | `CASNumber` |  | |  |  | `CHAR(20)` | CAS Number |
-| `EHSSubjectText` |  | |  |  | `CHAR(60)` | Name |
+| `EHSSubjectText` |  | |  |  | `CHAR(255)` | Subject |
 | `NumberOfRecords` |  | |  |  | `INT1(3)` |  |
 | `EHSAmountDataMaxQuantity` |  | |  |  | `FLTP(16)` | Amount Value |
 | `EHSAmountDataMinQuantity` |  | |  |  | `FLTP(16)` | Amount Value |

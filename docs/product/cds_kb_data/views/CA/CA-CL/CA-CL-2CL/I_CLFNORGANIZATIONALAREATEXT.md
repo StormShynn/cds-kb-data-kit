@@ -1,16 +1,15 @@
 ---
 name: I_CLFNORGANIZATIONALAREATEXT
-description: "Organizational Area of Classification Class Type - Text"
+description: "Orgl Area of Clfn Class Type - Text"
 app_component: CA-CL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CLFNORGANIZATIONALAREATEXT')/$value
-semantic_en: "Organizational Area of Classification Class Type - Text"
+semantic_en: "Orgl Area of Clfn Class Type - Text"
 tags:
   - CA
-  - bo:companycode
   - CA-CL
   - CA-CL-2CL
   - component:CA-CL-2CL
@@ -20,7 +19,7 @@ tags:
 ---
 # I_CLFNORGANIZATIONALAREATEXT
 
-**Organizational Area of Classification Class Type - Text**
+**Orgl Area of Clfn Class Type - Text**
 
 | Property | Value |
 |---|---|

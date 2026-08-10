@@ -1,16 +1,19 @@
 ---
 name: I_OPENDISPUTECASE
-description: "Open Dispute Case - Cube"
+description: "This CDS view is designed to provide a comprehensive overview of open dispute cases within an organization. It aggregates and presents data related to dispute cases in SAP Dispute Management, including their attributes, status, priority, and associated personnel, allowing for detailed analysis and reporting. This CDS view provides the data to answer the following business questions: What are the details of open dispute cases, including their unique identifiers and associated company codes? Which customers are involved in these dispute cases, and what are their account and authorization groups? Who are the processors and coordinators handling these dispute cases, and what are their full names? What are the reasons and types associated with each dispute case? What is the status and priority of each dispute case, and how are they categorized in terms of status profiles? What are the creation dates and disputed amounts for each case, both in the original currency and the display currency? How many dispute cases are currently open, and what is their distribution across different regions and countries? How can the data be aggregated to provide insights into the total disputed amounts and the number of cases? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_OPENDISPUTECASE')/$value
-semantic_en: "Open Dispute Case - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of open dispute cases within an organization. It aggregates and presents data related to dispute cases in SAP Dispute Management, including their attributes, status, priority, and associated personnel, allowing for detailed analysis and reporting. This CDS view provides the data to answer the following business questions: What are the details of open dispute cases, including their unique identifiers and associated company codes? Which customers are involved in these dispute cases, and what are their account and authorization groups? Who are the processors and coordinators handling these dispute cases, and what are their full names? What are the reasons and types associated with each dispute case? What is the status and priority of each dispute case, and how are they categorized in terms of status profiles? What are the creation dates and disputed amounts for each case, both in the original currency and the display currency? How many dispute cases are currently open, and what is their distribution across different regions and countries? How can the data be aggregated to provide insights into the total disputed amounts and the number of cases? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
+  - account
+  - bo:businesspartner
   - component:FIN-FSCM-DM-2CL
+  - customer
   - FIN-FSCM
   - FIN-FSCM-DM
   - FIN-FSCM-DM-2CL
@@ -20,7 +23,7 @@ tags:
 ---
 # I_OPENDISPUTECASE
 
-**Open Dispute Case - Cube**
+**This CDS view is designed to provide a comprehensive overview of open dispute cases within an organization. It aggregates and presents data related to dispute cases in SAP Dispute Management, including their attributes, status, priority, and associated personnel, allowing for detailed analysis and reporting. This CDS view provides the data to answer the following business questions: What are the details of open dispute cases, including their unique identifiers and associated company codes? Which customers are involved in these dispute cases, and what are their account and authorization groups? Who are the processors and coordinators handling these dispute cases, and what are their full names? What are the reasons and types associated with each dispute case? What is the status and priority of each dispute case, and how are they categorized in terms of status profiles? What are the creation dates and disputed amounts for each case, both in the original currency and the display currency? How many dispute cases are currently open, and what is their distribution across different regions and countries? How can the data be aggregated to provide insights into the total disputed amounts and the number of cases? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

@@ -1,28 +1,27 @@
 ---
 name: I_MDQANLYTSSCRPRODCLFNCUBE
-description: "Master Data Quality Score for Product Classification - Cube"
+description: "MDQ Score for Product Clfn - Cube"
 app_component: CA-MDG-ADQ
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MDQANLYTSSCRPRODCLFNCUBE')/$value
-semantic_en: "Master Data Quality Score for Product Classification - Cube"
+semantic_en: "MDQ Score for Product Clfn - Cube"
 tags:
   - CA
-  - bo:businesspartner
+  - bo:material
   - CA-MDG
   - CA-MDG-ADQ
   - component:CA-MDG-ADQ
   - interface-view
   - lob:cross_application components
-  - master-data
   - product
   - metadata-only
 ---
 # I_MDQANLYTSSCRPRODCLFNCUBE
 
-**Master Data Quality Score for Product Classification - Cube**
+**MDQ Score for Product Clfn - Cube**
 
 | Property | Value |
 |---|---|
@@ -50,7 +49,7 @@ tags:
 | `MDQltyBusinessRuleBaseTabName` |  | |  |  | `CHAR(80)` | Alias of a table |
 | `MDQltyBusinessRuleOwner` |  | |  |  | `CHAR(12)` | Master Data Quality Business Rule Owner |
 | `MDQltyBusRuleCheckedField` |  | |  |  | `CHAR(30)` | Master Data Quality Fieldname of the Checked Field |
-| `MDQltyBusRuleCheckedFieldTable` |  | |  |  | `CHAR(30)` | Maste Data Quality Table Name of Checked Field |
+| `MDQltyBusRuleCheckedFieldTable` |  | |  |  | `CHAR(30)` | Name of Table with Checked Field |
 | `MDQltyBusRuleChkdFieldAndTable` |  | |  |  | `CHAR(61)` | Master Data Quality Table and Field Name of Checked Field |
 | `MDQualityBusinessRule` |  | |  |  | `CHAR(26)` | Master Data Quality Rule Definition ID |
 | `MDQualityBusinessRuleName` |  | |  |  | `CHAR(50)` | Master Data Quality Rule Definition Name |

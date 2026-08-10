@@ -1,27 +1,30 @@
 ---
 name: I_CREDITACCTWITHTODOCUBE
-description: "Credit Account With ToDo - Cube"
+description: "This CDS view is designed to provide a comprehensive overview of credit account information, including associated tasks or \"ToDos\" related to credit decision documents, credit limit requests, and re-submissions. It aggregates data from various sources to offer insights into the credit management process for business partners, including their credit exposure, credit limits, and critical account status. This CDS view provides the data to answer the following business questions: Which business partners have outstanding credit decision documents, credit limit requests, or re-submissions? What is the credit exposure and credit limit for each business partner in the specified display currency? Are there any business partners marked as critical, and what are the reasons for blocking their credit accounts? How many credit decision documents, credit limit requests, and re-submissions are associated with each business partner? Who is the credit analyst responsible for each business partner's credit segment? What is the risk class and business partner group associated with each credit account? What are the country and region details for each business partner's credit account? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FSCM-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITACCTWITHTODOCUBE')/$value
-semantic_en: "Credit Account With ToDo - Cube"
+semantic_en: "This CDS view is designed to provide a comprehensive overview of credit account information, including associated tasks or \"ToDos\" related to credit decision documents, credit limit requests, and re-submissions. It aggregates data from various sources to offer insights into the credit management process for business partners, including their credit exposure, credit limits, and critical account status. This CDS view provides the data to answer the following business questions: Which business partners have outstanding credit decision documents, credit limit requests, or re-submissions? What is the credit exposure and credit limit for each business partner in the specified display currency? Are there any business partners marked as critical, and what are the reasons for blocking their credit accounts? How many credit decision documents, credit limit requests, and re-submissions are associated with each business partner? Who is the credit analyst responsible for each business partner's credit segment? What is the risk class and business partner group associated with each credit account? What are the country and region details for each business partner's credit account? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
   - account
+  - bo:companycode
   - component:FIN-FSCM-CR-2CL
+  - document
   - FIN-FSCM
   - FIN-FSCM-CR
   - FIN-FSCM-CR-2CL
   - interface-view
   - lob:finance
+  - task
   - metadata-only
 ---
 # I_CREDITACCTWITHTODOCUBE
 
-**Credit Account With ToDo - Cube**
+**This CDS view is designed to provide a comprehensive overview of credit account information, including associated tasks or "ToDos" related to credit decision documents, credit limit requests, and re-submissions. It aggregates data from various sources to offer insights into the credit management process for business partners, including their credit exposure, credit limits, and critical account status. This CDS view provides the data to answer the following business questions: Which business partners have outstanding credit decision documents, credit limit requests, or re-submissions? What is the credit exposure and credit limit for each business partner in the specified display currency? Are there any business partners marked as critical, and what are the reasons for blocking their credit accounts? How many credit decision documents, credit limit requests, and re-submissions are associated with each business partner? Who is the credit analyst responsible for each business partner's credit segment? What is the risk class and business partner group associated with each credit account? What are the country and region details for each business partner's credit account? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

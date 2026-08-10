@@ -1,15 +1,16 @@
 ---
 name: I_CNSLDTNSGMTHIERELIM
-description: "Hierarchy Elimination for Segment"
+description: "This CDS view extracts the elimination members for the analytical scenario for the Segment hierarchy node. It's valid for SAP BW/4HANA. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-CS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNSLDTNSGMTHIERELIM')/$value
-semantic_en: "Hierarchy Elimination for Segment"
+semantic_en: "This CDS view extracts the elimination members for the analytical scenario for the Segment hierarchy node. It's valid for SAP BW/4HANA. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
+  - bo:companycode
   - component:FIN-CS-2CL
   - FIN-CS
   - FIN-CS-2CL
@@ -19,7 +20,7 @@ tags:
 ---
 # I_CNSLDTNSGMTHIERELIM
 
-**Hierarchy Elimination for Segment**
+**This CDS view extracts the elimination members for the analytical scenario for the Segment hierarchy node. It's valid for SAP BW/4HANA. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

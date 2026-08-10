@@ -41,6 +41,7 @@ tags:
 | `Region` |  | |  |  | `CHAR(3)` | Region |
 | `CityName` |  | |  |  | `CHAR(40)` | City |
 | `StreetName` |  | |  |  | `CHAR(60)` | Street Address |
+| `HouseNumber` |  | |  |  | `CHAR(10)` | House Number |
 | `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
 | `EHSLocationAuthorizationGroup` |  | |  |  | `CHAR(21)` | Location Authorization Group |
 | `Plant` |  | |  |  | `CHAR(4)` | Plant ID |

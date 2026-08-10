@@ -1,13 +1,13 @@
 ---
 name: I_FINSTMNTITMHIERDIRT
-description: "Financial Statement Item Hierarchy Directory - Text"
+description: "FSItem Hierarchy Directory - Text"
 app_component: FIN-CS-MD-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_FINSTMNTITMHIERDIRT')/$value
-semantic_en: "Financial Statement Item Hierarchy Directory - Text"
+semantic_en: "FSItem Hierarchy Directory - Text"
 tags:
   - FIN
   - bo:companycode
@@ -21,7 +21,7 @@ tags:
 ---
 # I_FINSTMNTITMHIERDIRT
 
-**Financial Statement Item Hierarchy Directory - Text**
+**FSItem Hierarchy Directory - Text**
 
 | Property | Value |
 |---|---|

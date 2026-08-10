@@ -1,15 +1,16 @@
 ---
 name: I_CREDITLIMITCHANGESITUATION
-description: "Credit Limit Change"
+description: "This CDS view is designed to track and analyze changes in credit limits for business partners. It provides detailed information about the credit limit adjustments, including the old and new credit limits, the percentage change, and the total adjustment amount. This view is essential for monitoring credit management activities and ensuring that credit limits are adjusted appropriately based on business needs and risk assessments. This CDS view provides the data to answer the following business questions: What are the recent changes in credit limits for specific business partners? How much has the credit limit changed in terms of percentage and total amount? What are the old and new credit limits for a given business partner and credit segment? Which credit segment and currency are associated with the credit limit change? What credit score and limit calculation rules are applied to the business partner? To which credit management business partner group does the business partner belong? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FIO-CCD-CR-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CREDITLIMITCHANGESITUATION')/$value
-semantic_en: "Credit Limit Change"
+semantic_en: "This CDS view is designed to track and analyze changes in credit limits for business partners. It provides detailed information about the credit limit adjustments, including the old and new credit limits, the percentage change, and the total adjustment amount. This view is essential for monitoring credit management activities and ensuring that credit limits are adjusted appropriately based on business needs and risk assessments. This CDS view provides the data to answer the following business questions: What are the recent changes in credit limits for specific business partners? How much has the credit limit changed in terms of percentage and total amount? What are the old and new credit limits for a given business partner and credit segment? Which credit segment and currency are associated with the credit limit change? What credit score and limit calculation rules are applied to the business partner? To which credit management business partner group does the business partner belong? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
+  - bo:companycode
   - component:FIN-FIO-CCD-CR-2CL
   - FIN-FIO
   - FIN-FIO-CCD
@@ -21,7 +22,7 @@ tags:
 ---
 # I_CREDITLIMITCHANGESITUATION
 
-**Credit Limit Change**
+**This CDS view is designed to track and analyze changes in credit limits for business partners. It provides detailed information about the credit limit adjustments, including the old and new credit limits, the percentage change, and the total adjustment amount. This view is essential for monitoring credit management activities and ensuring that credit limits are adjusted appropriately based on business needs and risk assessments. This CDS view provides the data to answer the following business questions: What are the recent changes in credit limits for specific business partners? How much has the credit limit changed in terms of percentage and total amount? What are the old and new credit limits for a given business partner and credit segment? Which credit segment and currency are associated with the credit limit change? What credit score and limit calculation rules are applied to the business partner? To which credit management business partner group does the business partner belong? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

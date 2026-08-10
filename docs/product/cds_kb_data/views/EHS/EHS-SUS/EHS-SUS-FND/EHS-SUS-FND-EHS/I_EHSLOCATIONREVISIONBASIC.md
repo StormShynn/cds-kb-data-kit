@@ -58,6 +58,7 @@ tags:
 | `CityName` |  | |  |  | `CHAR(40)` | City |
 | `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
 | `StreetName` |  | |  |  | `CHAR(60)` | Street Address |
+| `HouseNumber` |  | |  |  | `CHAR(10)` | House Number |
 | `Country` |  | |  |  | `CHAR(3)` | Country/Region |
 | `Region` |  | |  |  | `CHAR(3)` | Region |
 | `EHSLocationPhone` |  | |  |  | `CHAR(30)` | Telephone Number |
@@ -66,3 +67,4 @@ tags:
 | `LongitudeUnit` |  | |  |  | `UNIT(3)` | Longitude Unit |
 | `LatitudeUnit` |  | |  |  | `UNIT(3)` | Latitude Unit |
 | `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `OriginalLanguage` |  | |  |  | `LANG(1)` | Language |

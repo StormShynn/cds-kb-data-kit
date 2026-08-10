@@ -114,7 +114,7 @@ tags:
 | `ColAgrHtBlRgIntIncFrqPerd` |  | |  |  | `NUMC(4)` | Frequency Period for Increase in HBR Interest |
 | `ColAgrHtBlRgIncreasePct` |  | |  |  | `DEC(10)` | Percentage Increase in Heritable Building Rights Amount |
 | `ColAgrHtBlRgIncreaseAmt` |  | |  |  | `CURR(17)` | Increase in Heritable Building Rights Amount |
-| `ColAgrHtBlRgIncreaseCrcy` |  | |  |  | `CUKY(5)` | Currency for Increase in HBR amount |
+| `ColAgrHtBlRgIncreaseCrcy` |  | |  |  | `CUKY(5)` |  Currency for Increase in HBR amount |
 | `ColAgrHtBlRgIntrstIncrStartDte` |  | |  |  | `DATS(8)` | Start date for Increase in Heritable Building Right Interest |
 | `ColAgrHtBlRgEnfrcmntWvr` |  | |  |  | `CHAR(2)` | Indicator for Waiver of HBR Enforcement |
 | `ColAgrHtBlRgIntrstIncrLastDte` |  | |  |  | `DATS(8)` | Last date of Increase in Heritable Building Right Interest |
