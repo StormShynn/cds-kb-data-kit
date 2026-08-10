@@ -62,16 +62,18 @@ async function main() {
   // raw indices repeat appComponent/lob/bo on every entry, which is fine for
   // a server-side reverse lookup but would multiply the embedded page size
   // by the average fan-out (a view exposes dozens of fields).
-  // Per view: [appComponent, releaseState, isAbstract] — same one-per-view
-  // dedup as before, just carrying two more fields so the page can rank
-  // "released" (confirmed SAP-delivered) views ahead of "unverified"
-  // community-sourced ones, and either kind of real "define view entity"
-  // ahead of a "define abstract entity" action-parameter/data structure
-  // (e.g. D_BillOfMaterialCompareBOMP) — which has no runtime entity set to
-  // query at all, even when released — instead of suggesting either on
-  // equal footing with a view someone can actually query.
+  // Per view: [appComponent, releaseState, isAbstract, isMasterData] — same
+  // one-per-view dedup as before, just carrying more fields so the page can
+  // rank "released" (confirmed SAP-delivered) views ahead of "unverified"
+  // community-sourced ones, either kind of real "define view entity" ahead
+  // of a "define abstract entity" action-parameter/data structure (e.g.
+  // D_BillOfMaterialCompareBOMP) — which has no runtime entity set to query
+  // at all, even when released — and a master-data view (@ObjectModel.
+  // usageType.dataClass: #MASTER, e.g. I_Product) ahead of a transactional
+  // one that merely references the same field, instead of suggesting either
+  // on equal footing with the view someone actually wants.
   const viewMeta = {};
-  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0];
+  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0, e.isMasterData ? 1 : 0];
   const F = {};
   for (const [field, entries] of Object.entries(fieldIndex.fields)) {
     F[field] = entries.map((e) => {
@@ -190,6 +192,7 @@ function renderHtml(embeddedJson, stats) {
   .badge.key { color: var(--status-good); border-color: var(--status-good); }
   .badge.unverified { color: var(--status-warn); border-color: var(--status-warn); }
   .badge.abstract { color: var(--text-muted); border-color: var(--text-muted); }
+  .badge.master { color: var(--accent); border-color: var(--accent); }
   .empty { color: var(--text-muted); font-size: 13px; padding: 20px 0; }
   .stats { color: var(--text-muted); font-size: 12px; margin-top: 32px; border-top: 1px solid var(--gridline); padding-top: 16px; }
 </style>
@@ -243,48 +246,65 @@ function renderHtml(embeddedJson, stats) {
       : '';
   }
 
-  // Ranking for same-field/table/column matches, most-useful first:
-  //   0. released + I_ prefix, a real queryable view — the canonical SAP
-  //      Interface view for the entity (e.g. I_PRODUCT for MATNR) — what
-  //      most lookups actually want.
-  //   1. released, any other prefix (C_, D_, R_, P_, ...), a real queryable
-  //      view — plain alphabetical sort otherwise put these ahead of I_
-  //      views half the time purely because their prefix letter sorts
-  //      earlier (confirmed for MATNR: 76 D_ views before the first I_ view).
-  //   2. unverified — community-sourced Z/Y-namespace, not confirmed to
-  //      exist in any real SAP system.
-  //   3. abstract entity / action-parameter structure (e.g.
-  //      D_BillOfMaterialCompareBOMP) — has real fields (so it still matches
-  //      a field/table/raw-column lookup) but no runtime entity set at all,
-  //      so it can never actually be queried — least useful regardless of
-  //      prefix or release state, ranked below even unverified.
-  function rankOf(view) {
-    const meta = DATA.M[view] || [];
-    if (meta[2]) return 3;
-    if (meta[1] === 'unverified') return 2;
-    return view.startsWith('I_') ? 0 : 1;
+  function masterDataBadge(view) {
+    return (DATA.M[view] || [])[3]
+      ? ' <span class="badge master" title="@ObjectModel.usageType.dataClass: #MASTER — a master-data view (e.g. Product/Customer master), not a transactional one">master data</span>'
+      : '';
   }
-  function byReleaseState(entries) {
-    return [...entries].sort((a, b) => rankOf(a[0]) - rankOf(b[0]));
+
+  // Score for same-field/table/column matches, lowest (most useful) first.
+  // Each condition adds a penalty, so they compose instead of needing one
+  // tier per combination:
+  //   +1000  abstract entity / action-parameter structure (e.g.
+  //          D_BillOfMaterialCompareBOMP) — has real fields (so it still
+  //          matches a field/table/raw-column lookup) but no runtime entity
+  //          set at all, so it can never actually be queried — dominates
+  //          every other signal below.
+  //   +100   unverified — community-sourced Z/Y-namespace, not confirmed to
+  //          exist in any real SAP system.
+  //   +10    the field ISN'T this view's key — a view where the searched
+  //          field (or table/raw column) is the actual identifier is a
+  //          stronger match than one where it's just an attribute.
+  //   +5     not a master-data view (@ObjectModel.usageType.dataClass:
+  //          #MASTER, e.g. I_Product) — master data is what "which view has
+  //          field X" usually means, ahead of a transactional view that
+  //          merely references the same field.
+  //   +1     not I_ prefix — plain alphabetical sort otherwise puts other
+  //          prefixes (C_, D_, R_, P_, ...) ahead of I_ views half the time
+  //          purely because their prefix letter sorts earlier (confirmed for
+  //          MATNR: 76 D_ views before the first I_ view).
+  function rankOf(view, isKey) {
+    const meta = DATA.M[view] || [];
+    let score = 0;
+    if (meta[2]) score += 1000;
+    else if (meta[1] === 'unverified') score += 100;
+    if (!isKey) score += 10;
+    if (!meta[3]) score += 5;
+    if (!view.startsWith('I_')) score += 1;
+    return score;
+  }
+  function byReleaseState(entries, getIsKey) {
+    const isKeyOf = getIsKey || (() => false);
+    return [...entries].sort((a, b) => rankOf(a[0], isKeyOf(a)) - rankOf(b[0], isKeyOf(b)));
   }
 
   function fieldRow([view, isKey]) {
     const ac = (DATA.M[view] || [])[0] || '';
-    return '<div class="row">' + viewLink(view) + (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + abstractBadge(view) +
+    return '<div class="row">' + viewLink(view) + (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
   function tableRow([view, rel, alias]) {
     const ac = (DATA.M[view] || [])[0] || '';
     const relLabel = rel === 's' ? 'built FROM this' : 'associates via <code>' + escapeHtml(alias) + '</code>';
-    return '<div class="row">' + viewLink(view) + ' <span class="tag">— ' + relLabel + '</span>' + unverifiedBadge(view) + abstractBadge(view) +
+    return '<div class="row">' + viewLink(view) + ' <span class="tag">— ' + relLabel + '</span>' + unverifiedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
   function rawFieldRow([view, semanticField, isKey]) {
     const ac = (DATA.M[view] || [])[0] || '';
     return '<div class="row">' + viewLink(view) + ' <span class="tag">— as <code>' + escapeHtml(semanticField) + '</code></span>' +
-      (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + abstractBadge(view) +
+      (isKey ? ' <span class="badge key">key</span>' : '') + unverifiedBadge(view) + abstractBadge(view) + masterDataBadge(view) +
       (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div>';
   }
 
@@ -297,9 +317,9 @@ function renderHtml(embeddedJson, stats) {
     const tableKeys = Object.keys(DATA.T);
     const rawKeys = Object.keys(DATA.R);
 
-    const fieldExact = DATA.F[key] ? byReleaseState(DATA.F[key]) : null;
+    const fieldExact = DATA.F[key] ? byReleaseState(DATA.F[key], (e) => e[1] === 1) : null;
     const tableExact = DATA.T[key] ? byReleaseState(DATA.T[key]) : null;
-    const rawExact = DATA.R[key] ? byReleaseState(DATA.R[key]) : null;
+    const rawExact = DATA.R[key] ? byReleaseState(DATA.R[key], (e) => e[2] === 1) : null;
     const fieldSubstr = fieldKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
     const tableSubstr = tableKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
     const rawSubstr = rawKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);

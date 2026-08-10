@@ -74,9 +74,9 @@ const viewFiles = await listViewFiles(viewsDir);
 
 const docs = [];
 const fieldsMap = {};
-const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo }]
-const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo }]
-const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo }]
+const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData }]
+const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo, releaseState, isAbstract, isMasterData }]
+const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData }]
 let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
 
 // A CDS view almost always renames a raw DDIC column to a semantic name
@@ -132,6 +132,21 @@ function isAbstractEntity(content) {
   return /define\s+abstract\s+entity/i.test(ddl) || /modelingPattern\s*:\s*#DATA_STRUCTURE/i.test(ddl);
 }
 
+// SAP's standard master-data marker: @ObjectModel.usageType.dataClass: #MASTER
+// (dot-notation scalar, e.g. I_Product) or the equivalent nested block form
+// @ObjectModel: { usageType: { dataClass: #MASTER } }. Checked line-by-line
+// so a commented-out annotation ("//@ObjectModel...dataClass: #MASTER") —
+// common in these DDLs when a view overrides an inherited default — doesn't
+// falsely mark the view as master data.
+function isMasterDataEntity(content) {
+  const m = content.match(DDL_BLOCK_RE);
+  if (!m) return false;
+  return m[1].split('\n').some((line) => {
+    const trimmed = line.trim();
+    return !trimmed.startsWith('//') && /dataClass\s*:\s*#MASTER\b/i.test(trimmed);
+  });
+}
+
 for (let i = 0; i < viewFiles.length; i++) {
   const { name, relPath } = viewFiles[i];
   const content = await fs.readFile(path.join(viewsDir, ...relPath.split('/')), 'utf-8');
@@ -148,6 +163,7 @@ for (let i = 0; i < viewFiles.length; i++) {
   const module = appComponent ? appComponent.split('-')[0] : '';
   const releaseState = scalar(fm, 'release_state') || 'released';
   const isAbstract = isAbstractEntity(content);
+  const isMasterData = isMasterDataEntity(content);
 
   // field-index.json: FIELD_NAME -> which views expose it, so a lookup like
   // "which views have a material code field" resolves straight to a
@@ -179,7 +195,7 @@ for (let i = 0; i < viewFiles.length; i++) {
           const rawName = bareMatch || (castMatch && BARE_IDENTIFIER_RE.test(castMatch) ? castMatch : null);
           if (rawName && rawName.toUpperCase() !== fieldName.toUpperCase()) {
             const rawKey = rawName.toUpperCase();
-            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState, isAbstract });
+            (rawFieldIndex[rawKey] ||= []).push({ view: name, field: fieldName, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData });
           }
         }
       } else {
@@ -190,7 +206,7 @@ for (let i = 0; i < viewFiles.length; i++) {
       }
       if (!fieldName) continue;
       const key = fieldName.toUpperCase();
-      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState, isAbstract });
+      (fieldIndex[key] ||= []).push({ view: name, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData });
     }
   }
 
@@ -201,13 +217,13 @@ for (let i = 0; i < viewFiles.length; i++) {
   const sourceTable = extractSourceTable(content);
   if (sourceTable) {
     const key = sourceTable.toUpperCase();
-    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState, isAbstract });
+    (tableIndex[key] ||= []).push({ view: name, relation: 'source', alias: null, appComponent, lob, bo, releaseState, isAbstract, isMasterData });
   }
   if (assocTable) {
     for (const [alias, targetView] of assocTable.rows) {
       if (!targetView) continue;
       const key = targetView.toUpperCase();
-      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState, isAbstract });
+      (tableIndex[key] ||= []).push({ view: name, relation: 'association', alias, appComponent, lob, bo, releaseState, isAbstract, isMasterData });
     }
   }
 
