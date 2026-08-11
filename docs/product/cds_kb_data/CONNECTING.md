@@ -54,6 +54,7 @@ consumer isn't Node.js, just to see the request shape and caching strategy.
 | `index/search_index.json` | Serialized [MiniSearch](https://github.com/lucaong/minisearch) index | **Only useful from Node.js with the `minisearch` package.** In any other stack, use `index/search.db` instead (see §4) |
 | `index/search.db` | SQLite FTS5 database (built by `scripts/build-sqlite-index.mjs`) | Plain SQL, any language with an SQLite driver — no MiniSearch dependency. See §4 |
 | `views/<MODULE>/.../<NAME>.md` | YAML frontmatter + Markdown body | The actual view: name, description, tags, app_component, release_state, fields, associations, and DDL source when available. Nested one folder per app_component segment — depth varies per view, always resolve via view-paths.json |
+| `overlays/private/**/*.md` | Same markdown shape as `views/` | Optional **local private overlay** (customer Z*/Y*). Merged by `enrich_index.mjs` (env `CDS_KB_OVERLAY` overrides the folder). Same view name → **private wins**. Paths land in `view-paths.json` with an `overlays/private/...` prefix; indexed docs carry `sourceKind: "private"`. Do not commit secrets |
 
 > **Vietnamese search needs an accent-stripping `processTerm`.**
 > `search_index.json` is built with normalized (diacritic-stripped) terms, so
@@ -167,7 +168,21 @@ fits your stack (Elasticsearch, a simple in-memory keyword map, etc.).
 - **Not every view has DDL source.** A `metadata-only` tag (or an empty
   `## Source Code` section) means only field names/types are known — no
   ABAP source, because the SAP Hub catalog this data partly comes from
-  doesn't expose DDL publicly at all.
+  doesn't expose DDL publicly at all. After `enrich_index.mjs`, MiniSearch
+  `storeFields` expose this as `hasDdl` / `metadataOnly` (MCP `kb_info`
+  summarizes the counts; `get_cds_view` can append an **Index RAP facets**
+  block).
+- **RAP / completeness signals in the index.** `enrich_index.mjs` also
+  stores `accessControl`, `vdmViewType`, `sourceKind`, `isAbstract`,
+  `isMasterData`, `usageCount`, and `referencedByCount` on each doc.
+  Consumers that load `search_index.json` should treat missing fields as
+  older indexes (re-run enrich). Enrichment % (`enrichedCount` /
+  `viewCount`) rises only when semantic-description workflows have run
+  with configured secrets — missing keys leave ranking functional but
+  popularity/`usageCount` at 0 (no-op).
+- **Private overlay is local-first.** Drop Z*/Y* markdown under
+  `overlays/private/` (see that folder’s README), rebuild the index, point
+  MCP at the local tree. Do not push customer DDL to a public remote.
 - **`release_state: unverified` means "name-matched, never SAP-confirmed."**
   These live under `views/_UNVERIFIED/` regardless of module. Surface this
   distinction in whatever UI/response the new consumer builds — don't

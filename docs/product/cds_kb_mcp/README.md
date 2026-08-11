@@ -24,6 +24,8 @@ definition retrieval. In this harness it sits beside
 - [Prerequisites](#prerequisites)
 - [Client Configuration](#client-configuration) — hosted MCP for end users
 - [Tools Reference](#tools-reference)
+- [Hosted auth](#hosted-auth)
+- [Usage ranking](#usage-ranking)
 - [Architecture](#architecture)
 
 ---
@@ -40,7 +42,7 @@ the data index changes).
 | **Taxonomy**        | Lines of Business → Business Objects → keyword map (EN + VI)                                               |
 | **Search ranking**  | Field-boosted MiniSearch (`name×3`, `semanticDescription×2.5`, `synonyms×2`)                               |
 | **Module aliasing** | Filter by `"Finance"` / `"Procurement"` / `"Sales"` instead of `FI` / `MM` / `SD`                          |
-| **Tools**           | 7 MCP tools: `search_cds`, `get_cds_view`, `get_views_by_tag`, `get_taxonomy`, `get_views_by_field`, `get_view_dependencies`, `kb_info` |
+| **Tools**           | 11 MCP tools: search/taxonomy/deps + `suggest_base_views`, `compose_query`, `generate_cds_view`, `validate_cds_ddl`, `kb_info` |
 | **Bundle**          | Single ~1.9 MB `.cjs` file (unminified), Node ≥ 18                                                          |
 | **Data isolation**  | Server ships **no view data**. Harness sibling `cds_kb_data`, or GitHub remote / local `--data`.           |
 
@@ -224,7 +226,7 @@ Once configured, restart your IDE. The tools will immediately be available for y
 
 ## Tools Reference
 
-The server exposes **seven tools**. They are designed so an AI agent can go from a vague business question to a complete CDS view definition in two or three calls.
+The server exposes **eleven tools**. They are designed so an AI agent can go from a vague business question to a searched view, then **compose → generate → validate** CDS DDL without leaving MCP.
 
 ### 1. `search_cds`
 
@@ -298,15 +300,65 @@ Views that are built FROM or associate to a given view/table (uses `table-index.
 
 ### 7. `kb_info`
 
-Report the active data source, view count, enrichment coverage, and index build timestamp. Use this to verify which version of the KB you're talking to.
+Report the active data source, server version, view count, enrichment %, private overlay count, DDL/metadata completeness, and index build timestamp.
 
 ```text
 source: local:D:\...\docs\product\cds_kb_data
-views: 10617
-enriched: 3267
+server: cds-kb-mcp 1.4.0
+views: 10619
+enriched: 3267 (30.8%)
+privateOverlay: 1
+withDdl: ...
+metadataOnly: ...
+withAccessControl: ...
 modules: ...
-builtAt: 2026-08-11T08:58:41.307Z
+builtAt: 2026-08-11T...
 ```
+
+### 8. `suggest_base_views`
+
+Recommend concrete (non-abstract, non-unverified) CDS views to use as the `FROM` base when writing a new view. Same ranking knobs as `search_cds`, with hard filters for abstract/unverified.
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `query` | string | ✓ | Business intent / keywords |
+| `module` / `lob` / `bo` | string | optional | Same facet filters as `search_cds` |
+| `limit` | int 1-20 | optional | Default 5 |
+
+### 9. `compose_query`
+
+Build OpenSQL + a CDS `define view entity` skeleton from the Query Builder JSON shape (`views[]`, `select`, `where`, `groupBy`, `having`, `orderBy`, `viewName`).
+
+### 10. `generate_cds_view`
+
+Generate annotated DDL (`@AccessControl`, `@EndUserText.label` + compose body) from `baseView` or `views[]`. Pass `select`/`where` yourself — it does not invent field lists from Hub metadata alone.
+
+### 11. `validate_cds_ddl`
+
+Parse DDL with `@abaplint/core` CDSParser. Returns soft diagnostics (`ok` / `parsed` / `name` / counts) — never crashes the MCP process. No SAP connection.
+
+---
+
+## Hosted auth
+
+Hosted HTTP (`/mcp`, `/sse`) is public unless the deploy sets `API_KEY`. When set, clients must send either:
+
+- `Authorization: Bearer <API_KEY>`, or
+- `?api_key=<API_KEY>` on the URL (needed by some SSE bridges that cannot set headers)
+
+On SAP BTP, prefer an API Management / Approuter + XSUAA **gateway in front of the app** rather than embedding an XSUAA SDK in this Node process. Local stdio needs no API key.
+
+---
+
+## Usage ranking
+
+`search_cds` / `suggest_base_views` multiply MiniSearch scores by `usageCount` (and lightly by `referencedByCount`). `usageCount` stays `0` (no-op ×1) until:
+
+1. Hosted/local instances set `CDS_KB_USAGE_ENDPOINT` (see `worker/`), and
+2. The data repo’s `pull-usage-stats` workflow writes `index/usage-stats.json`, and
+3. `enrich_index.mjs` rebuilds the search index.
+
+Missing Worker secrets → ranking still works; popularity just does not nudge results yet.
 
 ---
 
@@ -315,15 +367,16 @@ builtAt: 2026-08-11T08:58:41.307Z
 ```text
 ┌──────────────────────────────────────────────────────────────────┐
 │                         AI Client (Claude)                       │
-│              search_cds("vendor open items", "FI")               │
+│   search → suggest_base_views → compose_query → generate/validate│
 └──────────────────────────┬───────────────────────────────────────┘
                            │  MCP / JSON-RPC — stdio, or HTTP via /mcp (Streamable HTTP) / /sse (legacy SSE)
 ┌──────────────────────────▼───────────────────────────────────────┐
 │                   cds-kb-mcp (this server)                       │
-│  tools: search_cds · get_cds_view · get_views_by_tag · …         │
+│  tools: search · deps · suggest · compose · generate · validate  │
 │                       │                                          │
 │  ┌────────────────────▼───────────────────┐                      │
 │  │   MiniSearch (in-memory index)         │                      │
+│  │   + RAP facets / private overlay flags │                      │
 │  └────────────────────┬───────────────────┘                      │
 │                       │                                          │
 │  ┌────────────────────▼───────────────────┐                      │
@@ -337,5 +390,6 @@ builtAt: 2026-08-11T08:58:41.307Z
        │ Local FS │         │ GitHub Contents / │
        │ cds_kb_  │         │ raw.githubusercontent │
        │ data/    │         └───────────────────┘
+       │ (+ overlays/private)                   │
        └──────────┘
 ```

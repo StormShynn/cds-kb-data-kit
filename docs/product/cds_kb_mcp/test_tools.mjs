@@ -128,6 +128,86 @@ async function run() {
   const r6 = await call('tools/call', { name: 'kb_info', arguments: {} });
   console.log(r6.result?.content?.[0]?.text);
 
+  console.log('\n=== TEST 7: suggest_base_views ===');
+  const r7 = await call('tools/call', { name: 'suggest_base_views', arguments: { query: 'purchase order', limit: 3 } });
+  const t7 = r7.result?.content?.[0]?.text || '';
+  console.log(t7.slice(0, 500));
+  if (!t7 || !/Suggested base views|I_PURCHASEORDER|I_PURCHASING/i.test(t7)) {
+    console.error('❌ suggest_base_views failed — expected purchase-related base suggestions');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ suggest_base_views');
+
+  console.log('\n=== TEST 8: compose_query ===');
+  const r8 = await call('tools/call', {
+    name: 'compose_query',
+    arguments: {
+      views: [{ alias: 't1', name: 'I_PurchaseOrder' }],
+      select: 'PurchaseOrder,\n  PurchaseOrderType',
+      viewName: 'Z_TestPo',
+    },
+  });
+  const t8 = r8.result?.content?.[0]?.text || '';
+  console.log(t8.slice(0, 500));
+  if (!/FROM I_PurchaseOrder/i.test(t8) || !/define view entity Z_TestPo/i.test(t8)) {
+    console.error('❌ compose_query failed — expected OpenSQL FROM + CDS define view entity');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ compose_query');
+
+  console.log('\n=== TEST 9: generate_cds_view ===');
+  const r9 = await call('tools/call', {
+    name: 'generate_cds_view',
+    arguments: {
+      name: 'Z_TestPoGen',
+      baseView: 'I_PurchaseOrder',
+      select: 'PurchaseOrder',
+      label: 'Test PO',
+    },
+  });
+  const t9 = r9.result?.content?.[0]?.text || '';
+  console.log(t9.slice(0, 500));
+  if (!/@AccessControl/i.test(t9) || !/define view entity Z_TestPoGen/i.test(t9)) {
+    console.error('❌ generate_cds_view failed — expected annotated DDL skeleton');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ generate_cds_view');
+
+  console.log('\n=== TEST 10: validate_cds_ddl (good) ===');
+  const goodDdl = `@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Test'
+define view entity Z_GoodView
+  as select from I_Product
+{
+  key Product
+}`;
+  const r10 = await call('tools/call', { name: 'validate_cds_ddl', arguments: { ddl: goodDdl } });
+  const t10 = r10.result?.content?.[0]?.text || '';
+  console.log(t10);
+  if (!/parsed: true/i.test(t10)) {
+    console.error('❌ validate_cds_ddl (good) failed — expected parsed: true');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ validate good DDL');
+
+  console.log('\n=== TEST 11: validate_cds_ddl (bad) ===');
+  const r11 = await call('tools/call', {
+    name: 'validate_cds_ddl',
+    arguments: { ddl: 'this is not valid cds ddl !!!' },
+  });
+  const t11 = r11.result?.content?.[0]?.text || '';
+  console.log(t11);
+  if (!/ok: false/i.test(t11)) {
+    console.error('❌ validate_cds_ddl (bad) failed — expected ok: false');
+    proc.kill();
+    process.exit(1);
+  }
+  console.log('✅ validate bad DDL');
+
   console.log('\n✅ All tests passed!');
   proc.kill();
   process.exit(0);

@@ -60,6 +60,10 @@ if (!options.storeFields.includes('releaseState')) options.storeFields.push('rel
 if (!options.storeFields.includes('isAbstract')) options.storeFields.push('isAbstract');
 if (!options.storeFields.includes('isMasterData')) options.storeFields.push('isMasterData');
 if (!options.storeFields.includes('referencedByCount')) options.storeFields.push('referencedByCount');
+// W3a/W4: private overlay + RAP / completeness signals for MCP kb_info and get_cds_view.
+for (const f of ['sourceKind', 'accessControl', 'vdmViewType', 'hasDdl', 'metadataOnly']) {
+  if (!options.storeFields.includes(f)) options.storeFields.push(f);
+}
 
 let taxonomy = null;
 try {
@@ -116,8 +120,44 @@ try {
 } catch { console.log('No usage-stats.json found, usageCount defaults to 0 for all views.'); }
 
 // ── Build one document per view file (source of truth) ──────────────────────
+// Public tree: views/**. Optional private overlay: overlays/private/** (or
+// CDS_KB_OVERLAY). Same view name → private wins. Paths in view-paths.json
+// keep the real relative path so MCP datasource can open either tree.
 console.log('Scanning view files...');
-const viewFiles = await listViewFiles(viewsDir);
+const publicFiles = await listViewFiles(viewsDir);
+const overlayDir = process.env.CDS_KB_OVERLAY
+  ? path.resolve(process.env.CDS_KB_OVERLAY)
+  : path.join(dataRoot, 'overlays', 'private');
+const overlayRelPrefix = path.relative(dataRoot, overlayDir).split(path.sep).join('/');
+const overlayFiles = await listViewFiles(overlayDir);
+const byName = new Map();
+for (const f of publicFiles) {
+  byName.set(f.name, {
+    name: f.name,
+    relPath: f.relPath,
+    absPath: path.join(viewsDir, ...f.relPath.split('/')),
+    pathPrefix: 'views',
+    sourceKind: 'public',
+  });
+}
+let privateOverlayCount = 0;
+for (const f of overlayFiles) {
+  if (f.name === 'README' || f.relPath.toLowerCase().endsWith('/readme.md') || f.relPath.toLowerCase() === 'readme.md') continue;
+  byName.set(f.name, {
+    name: f.name,
+    relPath: f.relPath,
+    absPath: path.join(overlayDir, ...f.relPath.split('/')),
+    pathPrefix: overlayRelPrefix || 'overlays/private',
+    sourceKind: 'private',
+  });
+  privateOverlayCount++;
+}
+const viewEntries = [...byName.values()];
+if (privateOverlayCount) {
+  console.log(`Private overlay: ${privateOverlayCount} view(s) from ${overlayDir} (private wins on name collision).`);
+} else {
+  console.log(`No private overlay views under ${overlayDir} (optional).`);
+}
 
 const docs = [];
 const fieldsMap = {};
@@ -125,6 +165,7 @@ const fieldIndex = {}; // FIELD_NAME (uppercase) -> [{ view, isKey, appComponent
 const tableIndex = {}; // TABLE/VIEW NAME (uppercase) -> [{ view, relation: 'source'|'association', alias, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount, referencedByCount }]
 const rawFieldIndex = {}; // RAW DDIC COLUMN NAME (uppercase) -> [{ view, field: <semantic name>, isKey, appComponent, lob, bo, releaseState, isAbstract, isMasterData, usageCount, referencedByCount }]
 let enriched = 0, withLabel = 0, withBo = 0, synCount = 0;
+let metadataOnlyCount = 0, withDdlCount = 0;
 // Keyword-phrase frequency map for index/suggestions.json (search.html's
 // autocomplete): keyed by the accent-insensitive normalized form, counting
 // how many views carry each keyword. Collected from the same per-view `kw`
@@ -236,9 +277,9 @@ function isMasterDataEntity(content) {
   });
 }
 
-for (let i = 0; i < viewFiles.length; i++) {
-  const { name, relPath } = viewFiles[i];
-  const content = await fs.readFile(path.join(viewsDir, ...relPath.split('/')), 'utf-8');
+for (let i = 0; i < viewEntries.length; i++) {
+  const { name, relPath, absPath, pathPrefix, sourceKind } = viewEntries[i];
+  const content = await fs.readFile(absPath, 'utf-8');
   const fm = extractFrontmatter(content);
 
   const fieldsTable = parseMdTable(content, 'Fields');
@@ -359,6 +400,18 @@ for (let i = 0; i < viewFiles.length; i++) {
     }
   }
 
+  const ddlBlock = content.match(DDL_BLOCK_RE);
+  const hasDdl = !!(ddlBlock && /define\s+/i.test(ddlBlock[1]));
+  const metadataOnly = tags.includes('metadata-only') || (!hasDdl && !scalar(fm, 'source_available'));
+  if (hasDdl) withDdlCount++;
+  if (metadataOnly) metadataOnlyCount++;
+  const accessControl =
+    (content.match(/@AccessControl\.authorizationCheck\s*:\s*(#[A-Za-z0-9_]+)/) || [])[1] ||
+    (content.match(/@AccessControl\s*:\s*\{[\s\S]*?authorizationCheck\s*:\s*(#[A-Za-z0-9_]+)/) || [])[1] ||
+    '';
+  const vdmViewType =
+    (content.match(/viewType\s*:\s*(#[A-Za-z0-9_]+)/) || [])[1] || '';
+
   docs.push({
     id: i,
     name,
@@ -367,7 +420,7 @@ for (let i = 0; i < viewFiles.length; i++) {
     tagText: tags.join(' '),
     appComponent,
     synonyms: [...kw].join(' '),
-    path: `views/${relPath}`,
+    path: `${pathPrefix}/${relPath}`,
     module,
     lob,
     bo,
@@ -375,11 +428,17 @@ for (let i = 0; i < viewFiles.length; i++) {
     releaseState,
     isAbstract,
     isMasterData,
+    sourceKind,
+    accessControl,
+    vdmViewType,
+    hasDdl,
+    metadataOnly,
   });
 }
 
 console.log(`Views: ${docs.length} | with DDL label: ${withLabel} | with bo: ${withBo}`);
 console.log(`Genuinely enriched (semantic_en/vi): ${enriched} | with synonyms: ${synCount}`);
+console.log(`DDL present: ${withDdlCount} | metadata-only: ${metadataOnlyCount} | private overlay: ${privateOverlayCount}`);
 
 // ── referencedByCount: how many OTHER CDS views build FROM or associate to
 // this one — tableIndex[VIEW] is exactly that list, but only known once every
@@ -461,8 +520,10 @@ console.log(`version manifest commit=${versionManifest.commit.slice(0, 8)}`);
 // views live in per-module subfolders without the server needing to know
 // the folder scheme at all.
 const pathMapFile = path.join(dataRoot, 'index', 'view-paths.json');
-await fs.writeFile(pathMapFile, JSON.stringify(toPathMap(viewFiles)), 'utf-8');
-console.log(`Wrote ${pathMapFile} (${viewFiles.length} entries)`);
+const pathMap = {};
+for (const e of viewEntries) pathMap[e.name] = `${e.pathPrefix}/${e.relPath}`;
+await fs.writeFile(pathMapFile, JSON.stringify(pathMap), 'utf-8');
+console.log(`Wrote ${pathMapFile} (${viewEntries.length} entries, private=${privateOverlayCount})`);
 
 // ── view-fields.js — NAME -> {f: fields table, a: associations table} ──────
 // A .js file assigning a global, not a .json file, so coverage-report.html

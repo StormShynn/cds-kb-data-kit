@@ -20,6 +20,8 @@ import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/
 import { isInitializeRequest } from '@modelcontextprotocol/sdk/types.js';
 import { resolveDataSource, SECTION_NAMES } from './datasource.mjs';
 import { recordView, flushOnExit } from './usage-tracker.mjs';
+import { composeQuery } from './query-compose.mjs';
+import { generateCdsView, validateCdsDdl } from './ddl-tools.mjs';
 
 // ── Vietnamese accent-insensitive normalization ─────────────────────────────
 // The data repo's enrich_index.mjs builds search_index.json with
@@ -142,6 +144,7 @@ const ds = resolveDataSource();
 let mini;
 let meta = {};
 let moduleStats = {};  // { module: { count, lob } }
+let docsByName = new Map(); // UPPER(name) → storedFields doc (RAP / completeness facets)
 let taxonomyData = null;
 let fieldIndexData = null; // field-index.json: { fields: { FIELD_NAME: [{view, isKey, appComponent, lob, bo}] } }
 let tableIndexData = null; // table-index.json: { tables: { TABLE_NAME: [{view, relation, alias, appComponent, lob, bo}] } }
@@ -161,11 +164,21 @@ async function loadIndex() {
     if (v) meta.commit = v.commit;
   } catch { /* ignore */ }
 
-  // Build module stats by iterating stored fields directly (MiniSearch has no public allDocs API).
+  // Build module stats + docsByName by iterating stored fields directly (MiniSearch has no public allDocs API).
   const ms = JSON.parse(w.minisearch);
   const stored = ms.storedFields || {};
   const stats = {};
+  const byName = new Map();
+  let privateCount = 0;
+  let metadataOnlyCount = 0;
+  let withDdlCount = 0;
+  let withAccessControlCount = 0;
   for (const doc of Object.values(stored)) {
+    if (doc?.name) byName.set(String(doc.name).toUpperCase(), doc);
+    if (doc?.sourceKind === 'private') privateCount++;
+    if (doc?.metadataOnly) metadataOnlyCount++;
+    if (doc?.hasDdl) withDdlCount++;
+    if (doc?.accessControl) withAccessControlCount++;
     const mod = doc.module || 'UNKNOWN';
     if (!stats[mod]) stats[mod] = { count: 0, lob: doc.lob || '', bos: new Set() };
     stats[mod].count++;
@@ -176,6 +189,11 @@ async function loadIndex() {
     v.bos = [...v.bos].sort();
   }
   moduleStats = stats;
+  docsByName = byName;
+  meta.privateCount = privateCount;
+  meta.metadataOnlyCount = metadataOnlyCount;
+  meta.withDdlCount = withDdlCount;
+  meta.withAccessControlCount = withAccessControlCount;
 
   taxonomyData = await ds.getTaxonomy();
   fieldIndexData = await ds.getFieldIndex?.() ?? null;
@@ -201,7 +219,7 @@ function refreshIndexPeriodically(intervalMs) {
   }, intervalMs);
 }
 
-const SERVER_VERSION = '1.3.0';
+const SERVER_VERSION = '1.4.0';
 const SERVER_INSTRUCTIONS =
   `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. ` +
   'The first time you use a tool from this server in a conversation, briefly mention to the user ' +
@@ -273,9 +291,25 @@ function createServer() {
     },
     async ({ name, sections }) => {
       try {
-        const text = sections && sections.length > 0
+        const wantAll = !sections || sections.length === 0;
+        const wantMeta = wantAll || sections.includes('metadata');
+        let text = sections && sections.length > 0
           ? await ds.getViewSections(name, sections)
           : await ds.getView(name);
+        if (wantMeta) {
+          const doc = docsByName.get(String(name).trim().toUpperCase());
+          if (doc) {
+            text += '\n\n## Index RAP facets\n' +
+              `- sourceKind: ${doc.sourceKind || 'public'}\n` +
+              `- accessControl: ${doc.accessControl || '(none)'}\n` +
+              `- vdmViewType: ${doc.vdmViewType || '(none)'}\n` +
+              `- hasDdl: ${doc.hasDdl ? 'yes' : 'no'}\n` +
+              `- metadataOnly: ${doc.metadataOnly ? 'yes' : 'no'}\n` +
+              `- isAbstract: ${doc.isAbstract ? 'yes' : 'no'}\n` +
+              `- isMasterData: ${doc.isMasterData ? 'yes' : 'no'}\n` +
+              `- releaseState: ${doc.releaseState || '?'}`;
+          }
+        }
         recordView(name);
         return { content: [{ type: 'text', text }] };
       } catch (e) {
@@ -516,17 +550,185 @@ function createServer() {
     'kb_info',
     {
       title: 'Knowledge base info',
-      description: 'Report the active data source, view count, enrichment coverage, and index build time.',
+      description:
+        'Report the active data source, server version, view count, enrichment %, private overlay count, ' +
+        'DDL/metadata completeness, and index build time.',
       inputSchema: {},
     },
     async () => {
       const commit = meta.commit ? meta.commit.slice(0, 8) : '(no version manifest)';
+      const views = meta.viewCount ?? 0;
+      const enriched = meta.enrichedCount ?? 0;
+      const enrichPct = views ? ((100 * enriched) / views).toFixed(1) : '?';
       return {
         content: [{
           type: 'text', text:
-            `source: ${ds.describe()}\nviews: ${meta.viewCount ?? '?'}\nenriched: ${meta.enrichedCount ?? '?'}\nmodules: ${Object.keys(moduleStats).length}\nbuiltAt: ${meta.builtAt ?? '?'}\ncommit: ${commit}`
+            `source: ${ds.describe()}\n` +
+            `server: cds-kb-mcp ${SERVER_VERSION}\n` +
+            `views: ${meta.viewCount ?? '?'}\n` +
+            `enriched: ${meta.enrichedCount ?? '?'} (${enrichPct}%)\n` +
+            `privateOverlay: ${meta.privateCount ?? 0}\n` +
+            `withDdl: ${meta.withDdlCount ?? '?'}\n` +
+            `metadataOnly: ${meta.metadataOnlyCount ?? '?'}\n` +
+            `withAccessControl: ${meta.withAccessControlCount ?? '?'}\n` +
+            `modules: ${Object.keys(moduleStats).length}\n` +
+            `builtAt: ${meta.builtAt ?? '?'}\n` +
+            `commit: ${commit}`,
         }],
       };
+    },
+  );
+
+  // ── Tool 8: suggest_base_views ──────────────────────────────────────────────
+  server.registerTool(
+    'suggest_base_views',
+    {
+      title: 'Suggest base CDS views for a new query',
+      description:
+        'Recommend concrete (non-abstract) CDS views to use as the FROM base when composing a new view. ' +
+        'Uses the same ranking as search_cds, then filters out abstract entities and unverified entries. ' +
+        'Prefer these over inventing a base name. Next: compose_query or generate_cds_view.',
+      inputSchema: {
+        query: z.string().describe('Business intent or keywords for the base view'),
+        module: z.string().optional().describe('Module filter — code (FI, SD, MM) or name ("Finance", "Procurement")'),
+        lob: z.string().optional().describe('Line-of-business filter (partial match)'),
+        bo: z.string().optional().describe('Business object filter (partial match)'),
+        limit: z.number().int().min(1).max(20).optional().describe('Max suggestions (default 5)'),
+      },
+    },
+    async ({ query, module, lob, bo, limit = 5 }) => {
+      const resolvedModule = resolveModule(module);
+      const contains = (a, b) => (a || '').toLowerCase().includes((b || '').toLowerCase());
+      const facetFilter = (r) =>
+        (!resolvedModule || (r.module || '').toUpperCase() === resolvedModule) &&
+        (!lob || contains(r.lob, lob)) &&
+        (!bo || contains(r.bo, bo)) &&
+        !r.isAbstract &&
+        r.releaseState !== 'unverified';
+
+      const results = mini.search(query, { ...SEARCH_OPTIONS, filter: facetFilter }).slice(0, limit);
+      if (results.length === 0) {
+        const hint = resolvedModule ? ` (module=${resolvedModule})` : '';
+        return { content: [{ type: 'text', text: `No suitable base views for "${query}"${hint}. Try broader terms or remove filters.` }] };
+      }
+      const lines = results.map((r, i) => {
+        const reasons = [];
+        if (r.isMasterData) reasons.push('master-data');
+        if ((r.referencedByCount || 0) > 0) reasons.push(`referencedBy=${r.referencedByCount}`);
+        if (r.hasDdl) reasons.push('has DDL');
+        if (r.sourceKind === 'private') reasons.push('private-overlay');
+        const why = reasons.length ? ` — ${reasons.join(', ')}` : '';
+        const desc = r.semanticDescription || r.description || '';
+        return `${i + 1}. **${r.name}**  [${r.appComponent || r.module || '-'}]  (score ${r.score.toFixed(1)})${why}\n   ${desc}\n   path: ${r.path}`;
+      });
+      return {
+        content: [{
+          type: 'text',
+          text: `Suggested base views for "${query}":\n\n${lines.join('\n')}\n\nNext: compose_query or generate_cds_view with views[0].name = the pick above.`,
+        }],
+      };
+    },
+  );
+
+  // ── Tool 9: compose_query ───────────────────────────────────────────────────
+  server.registerTool(
+    'compose_query',
+    {
+      title: 'Compose OpenSQL + CDS view skeleton',
+      description:
+        'Build OpenSQL SELECT and a CDS define view entity skeleton from a structured query object ' +
+        '(same shape as the Query Builder share JSON: views[], select, where, groupBy, having, orderBy, viewName).',
+      inputSchema: {
+        views: z.array(z.object({
+          alias: z.string().optional(),
+          name: z.string().nullable().optional(),
+          joinType: z.string().nullable().optional(),
+          on: z.string().nullable().optional(),
+          mode: z.enum(['join', 'assoc']).nullable().optional(),
+          raw: z.string().nullable().optional(),
+        })).describe('FROM/JOIN/assoc rows; views[0].name is required'),
+        select: z.string().optional(),
+        where: z.string().optional(),
+        groupBy: z.string().optional(),
+        having: z.string().optional(),
+        orderBy: z.string().optional(),
+        viewName: z.string().optional().describe('CDS view entity name (default Z_MyView)'),
+      },
+    },
+    async (args) => {
+      const result = composeQuery(args);
+      const parts = [];
+      if (result.warnings.length) parts.push('## Warnings\n' + result.warnings.map((w) => `- ${w}`).join('\n'));
+      if (result.openSql) parts.push('## OpenSQL\n```sql\n' + result.openSql + '\n```');
+      if (result.cdsView) parts.push('## CDS view skeleton\n```abap\n' + result.cdsView + '\n```');
+      if (!parts.length) parts.push('compose_query produced no output.');
+      return { content: [{ type: 'text', text: parts.join('\n\n') }] };
+    },
+  );
+
+  // ── Tool 10: generate_cds_view ──────────────────────────────────────────────
+  server.registerTool(
+    'generate_cds_view',
+    {
+      title: 'Generate a CDS view entity DDL skeleton',
+      description:
+        'Generate annotated CDS DDL (@AccessControl, @EndUserText.label + define view entity) from a base view ' +
+        'or the same structured views[] used by compose_query. Does not invent field lists from Hub metadata alone — ' +
+        'pass select/where yourself. Validate with validate_cds_ddl next.',
+      inputSchema: {
+        name: z.string().optional().describe('New view name (default Z_MyView)'),
+        label: z.string().optional(),
+        accessControl: z.string().optional().describe('e.g. #CHECK, #NOT_REQUIRED (default #CHECK)'),
+        baseView: z.string().optional().describe('Shortcut when views[] is omitted'),
+        views: z.array(z.object({
+          alias: z.string().optional(),
+          name: z.string().nullable().optional(),
+          joinType: z.string().nullable().optional(),
+          on: z.string().nullable().optional(),
+          mode: z.enum(['join', 'assoc']).nullable().optional(),
+          raw: z.string().nullable().optional(),
+        })).optional(),
+        select: z.string().optional(),
+        where: z.string().optional(),
+        groupBy: z.string().optional(),
+        having: z.string().optional(),
+        orderBy: z.string().optional(),
+      },
+    },
+    async (args) => {
+      const result = generateCdsView(args);
+      const parts = [];
+      if (result.warnings.length) parts.push('## Warnings\n' + result.warnings.map((w) => `- ${w}`).join('\n'));
+      if (result.ddl) parts.push('## DDL\n```abap\n' + result.ddl + '\n```');
+      if (result.openSql) parts.push('## OpenSQL\n```sql\n' + result.openSql + '\n```');
+      return { content: [{ type: 'text', text: parts.join('\n\n') || 'No DDL generated.' }] };
+    },
+  );
+
+  // ── Tool 11: validate_cds_ddl ───────────────────────────────────────────────
+  server.registerTool(
+    'validate_cds_ddl',
+    {
+      title: 'Validate CDS DDL with abaplint',
+      description:
+        'Parse CDS DDL via @abaplint/core CDSParser and return soft diagnostics (never crashes the MCP process). ' +
+        'Use after generate_cds_view. Does not connect to SAP.',
+      inputSchema: {
+        ddl: z.string().describe('Full CDS DDL text to validate'),
+      },
+    },
+    async ({ ddl }) => {
+      const result = await validateCdsDdl(ddl);
+      const text =
+        `ok: ${result.ok}\n` +
+        `parsed: ${result.parsed}\n` +
+        `name: ${result.name || '(none)'}\n` +
+        `fieldCount: ${result.fieldCount}\n` +
+        `assocCount: ${result.assocCount}\n` +
+        (result.diagnostics.length
+          ? `diagnostics:\n${result.diagnostics.map((d) => `- ${d}`).join('\n')}`
+          : 'diagnostics: (none)');
+      return { content: [{ type: 'text', text }] };
     },
   );
 
