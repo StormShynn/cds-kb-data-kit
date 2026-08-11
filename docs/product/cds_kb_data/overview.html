@@ -55,12 +55,14 @@
     <button id="tab-btn-coverage" role="tab" aria-selected="false">📡 Hub Coverage</button>
     <button id="tab-btn-search" role="tab" aria-selected="false">🔍 Search</button>
     <button id="tab-btn-fieldsearch" role="tab" aria-selected="false">🔎 Field/Table Search</button>
+    <button id="tab-btn-querybuilder" role="tab" aria-selected="false">🛠️ Query Builder</button>
   </div>
   <div class="open-new">
     <a href="dashboard.html" target="_blank">open dashboard in new tab ↗</a>
     <a href="coverage-report.html" target="_blank">open coverage in new tab ↗</a>
     <a href="search.html" target="_blank">open search in new tab ↗</a>
     <a href="field-search.html" target="_blank">open field search in new tab ↗</a>
+    <a href="query-builder.html" target="_blank">open query builder in new tab ↗</a>
   </div>
 </header>
 <div class="frame-wrap">
@@ -68,10 +70,11 @@
   <iframe id="frame-coverage" src="coverage-report.html" title="Hub Coverage"></iframe>
   <iframe id="frame-search" src="search.html" title="Search"></iframe>
   <iframe id="frame-fieldsearch" src="field-search.html" title="Field/Table Search"></iframe>
+  <iframe id="frame-querybuilder" src="query-builder.html" title="Query Builder"></iframe>
 </div>
 <script>
-  const buttons = { dashboard: document.getElementById('tab-btn-dashboard'), coverage: document.getElementById('tab-btn-coverage'), search: document.getElementById('tab-btn-search'), fieldsearch: document.getElementById('tab-btn-fieldsearch') };
-  const frames = { dashboard: document.getElementById('frame-dashboard'), coverage: document.getElementById('frame-coverage'), search: document.getElementById('frame-search'), fieldsearch: document.getElementById('frame-fieldsearch') };
+  const buttons = { dashboard: document.getElementById('tab-btn-dashboard'), coverage: document.getElementById('tab-btn-coverage'), search: document.getElementById('tab-btn-search'), fieldsearch: document.getElementById('tab-btn-fieldsearch'), querybuilder: document.getElementById('tab-btn-querybuilder') };
+  const frames = { dashboard: document.getElementById('frame-dashboard'), coverage: document.getElementById('frame-coverage'), search: document.getElementById('frame-search'), fieldsearch: document.getElementById('frame-fieldsearch'), querybuilder: document.getElementById('frame-querybuilder') };
   function show(name) {
     for (const k of Object.keys(frames)) {
       frames[k].classList.toggle('active', k === name);
@@ -82,6 +85,7 @@
   buttons.coverage.addEventListener('click', () => show('coverage'));
   buttons.search.addEventListener('click', () => show('search'));
   buttons.fieldsearch.addEventListener('click', () => show('fieldsearch'));
+  buttons.querybuilder.addEventListener('click', () => show('querybuilder'));
 </script>
 </body>
 </html>
