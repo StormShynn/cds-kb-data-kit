@@ -26,6 +26,9 @@
 //
 // Usage:
 //   node scripts/check-coverage.mjs [dataDir]
+//   node scripts/check-coverage.mjs --html-only [dataDir]
+//     Regenerate coverage-report.html from existing coverage.json +
+//     index/view-paths.json (no Hub network calls).
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -33,7 +36,11 @@ import { listViewFiles } from './lib/view-files.mjs';
 import { runPool } from './lib/concurrency.mjs';
 import { escapeHtml } from './lib/html-escape.mjs';
 
-const DATA_DIR = process.argv[2] || '.';
+// Same blob base as search.html / field-search.html — opens the KB .md on github.com.
+const GITHUB_BLOB_BASE = 'https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/';
+
+const HTML_ONLY = process.argv.includes('--html-only');
+const DATA_DIR = process.argv.slice(2).find(a => !a.startsWith('--')) || '.';
 const VIEWS_DIR = path.join(DATA_DIR, 'views');
 const HUB_CONTAINER = 'SAPS4HANACloud';
 const HUB_URL =
@@ -160,9 +167,10 @@ async function loadLocalViewInfo() {
         appComponent: appComponent ? appComponent[1].trim() : '',
         releaseState: releaseState ? releaseState[1].trim() : '',
         sourceAvailable: sourceAvailable ? sourceAvailable[1] === 'true' : null,
+        path: `views/${relPath}`,
       }];
     } catch {
-      return [name, { sourceUrl: null, description: '', appComponent: '', releaseState: '', sourceAvailable: null }];
+      return [name, { sourceUrl: null, description: '', appComponent: '', releaseState: '', sourceAvailable: null, path: `views/${relPath}` }];
     }
   });
   return new Map(entries);
@@ -235,6 +243,9 @@ function buildReport(hubArtifacts, localInfo, manifest, extMap, atcMap) {
         status,
         lastFetchedAt: manifestEntry ? manifestEntry.fetchedAt : null,
         sourceUrl,
+        // Public KB path (views/...) for GitHub blob links on the HTML report —
+        // not the private fetch-time sourceUrl.
+        path: (local && local.path) || null,
         // Independent of `status` above — RELEASED-but-not-dev-extensible
         // views still count as missing/full/metadata-only, this only feeds
         // the report's "Hide Dev-Ext: Not Released" toggle.
@@ -261,6 +272,7 @@ function buildReport(hubArtifacts, localInfo, manifest, extMap, atcMap) {
         description: local.description || '',
         appComponent: local.appComponent || '',
         releaseState: local.releaseState || '',
+        path: local.path || null,
         // Not on the Hub's current live RELEASED list, but Full DDL means
         // this KB has the view's *actual* SAP-generated CDS source (real
         // annotations, real field list — not a guess), fetched from a real
@@ -290,20 +302,23 @@ function buildReport(hubArtifacts, localInfo, manifest, extMap, atcMap) {
 
 // ── HTML report ─────────────────────────────────────────────────────────────
 
-function renderHtml(report) {
+function renderHtml(report, viewPaths = {}) {
+  const pathOf = (name, explicit) => explicit || viewPaths[name] || '';
   // Escape `</script` so a view description containing it can't break out of
   // the inline <script> block below.
   // sourceUrl is intentionally NOT embedded here — this HTML is published to
   // GitHub Pages (public), and source links (GitHub file paths, pastebin
   // origins, etc.) shouldn't be exposed on a public page even as raw data in
   // a <script> block. It stays in coverage.json inside the repo instead.
+  // Public KB paths (views/...) ARE embedded so each row can link to the
+  // github.com blob for that .md file — same pattern as search.html.
   const rowsJson = JSON.stringify(report.rows.map(r => [
     r.name, r.displayName, r.description, r.status,
     formatDateTime(r.createdAt), formatDateTime(r.modifiedAt), formatDateTime(r.lastFetchedAt),
-    r.regId || '', r.devExtStatus || '', r.atcState || '',
+    r.regId || '', r.devExtStatus || '', r.atcState || '', pathOf(r.name, r.path),
   ])).replace(/<\/script/gi, '<\\/script');
   const extraRowsJson = JSON.stringify(report.extra.map(r => [
-    r.name, r.description, r.appComponent, r.releaseState, r.sourceAvailable,
+    r.name, r.description, r.appComponent, r.releaseState, r.sourceAvailable, pathOf(r.name, r.path),
   ])).replace(/<\/script/gi, '<\\/script');
 
   return `<!DOCTYPE html>
@@ -378,6 +393,17 @@ function renderHtml(report) {
   .status-warning { color: var(--status-warning); }
   .status-critical { color: var(--status-critical); }
   .name-cell { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .name-cell .view-name { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .row-actions { display: inline-flex; align-items: center; gap: 4px; margin-left: 8px; vertical-align: middle; }
+  .row-action {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--surface-1); border: 1px solid var(--border); color: var(--text-muted);
+    border-radius: 4px; padding: 1px 6px; font-size: 11px; line-height: 1.4; cursor: pointer;
+    text-decoration: none; font-family: inherit;
+  }
+  .row-action:hover { color: var(--text-primary); border-color: var(--text-secondary); }
+  .row-action.gh-link { font-size: 13px; padding: 0 5px; }
+  .row-action.copied { color: var(--status-good); border-color: var(--status-good); }
   .desc-cell { color: var(--text-secondary); }
   .date-cell { color: var(--text-muted); white-space: nowrap; font-variant-numeric: tabular-nums; font-size: 12px; }
   .ext-cell { white-space: nowrap; font-size: 12px; }
@@ -443,7 +469,7 @@ function renderHtml(report) {
       <thead>
         <tr>
           <th style="width:70px">Status</th>
-          <th style="width:200px">Name</th>
+          <th style="width:280px">Name</th>
           <th>Description</th>
           <th style="width:110px">Dev Extensibility</th>
           <th style="width:110px">ATC Release State</th>
@@ -473,7 +499,7 @@ function renderHtml(report) {
       <thead>
         <tr>
           <th style="width:90px">Status</th>
-          <th style="width:200px">Name</th>
+          <th style="width:280px">Name</th>
           <th>Description</th>
           <th style="width:120px">App Component</th>
           <th style="width:130px">Local Release State</th>
@@ -487,7 +513,7 @@ function renderHtml(report) {
     Source: api.sap.com Business Accelerator Hub catalog (public, unauthenticated), single bulk call · Created/Modified are the Hub's own timestamps for that view; Last Fetched is when this KB last pulled it.<br />
     Dev Extensibility comes from a second bulk call (the Hub's CdsViewsContent.CdsViews OData collection), joined by view name · "Not Released" means the view can't be extended via ABAP developer extensibility even though it's RELEASED for consumption — it's still counted in every stat above, use the checkbox to hide it.<br />
     ATC Release State is a third, independent signal: SAP's own ABAP Cloud "released objects" list (github.com/SAP/abap-atc-cr-cv-s4hc, no API key) filtered to CDS view (DDLS) entries · shown for cross-reference only, it never changes Dev Extensibility or any stat above — the two agree on every "Not Released" case seen so far, but ~125 views the Hub calls Released aren't in this list at all ("—").<br />
-    Not shown: the Hub API also returns Version, Created By, and Modified By, but every sampled record shares the same values (Version "1.0", both by a redacted system account) — they carry no distinguishing information for this report. Each row's internal Hub registry ID is available as a tooltip on its name. Recorded source links are kept in this repo's coverage.json, not published here.
+    Each row's <strong>Copy</strong> copies the CDS view name; <strong>↗</strong> opens this KB's .md on github.com when the view exists locally. Hub registry ID remains a tooltip on the name. Private fetch-time source URLs stay in coverage.json only, not on this page.
   </div>
 </div>
 
@@ -500,10 +526,48 @@ function renderHtml(report) {
   // Missing/failed-to-load is handled gracefully: expand just shows "no
   // field data available".
   const VIEW_FIELDS = window.__VIEW_FIELDS__ || {};
+  const GITHUB_BLOB_BASE = ${JSON.stringify(GITHUB_BLOB_BASE)};
   const expandedNames = new Set();
 
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  function nameCellHtml(name, path, expanded, titleAttr) {
+    const gh = path
+      ? '<a class="row-action gh-link" href="' + escapeHtml(GITHUB_BLOB_BASE + path) + '" target="_blank" rel="noopener" title="Open CDS view file on GitHub">↗</a>'
+      : '';
+    return '<td class="name-cell"' + (titleAttr || '') + '>' +
+      '<span class="toggle-icon">' + (expanded ? '▾' : '▸') + '</span>' +
+      '<span class="view-name">' + escapeHtml(name) + '</span>' +
+      '<span class="row-actions">' +
+        '<button type="button" class="row-action copy-btn" data-copy="' + escapeHtml(name) + '" title="Copy view name">Copy</button>' +
+        gh +
+      '</span></td>';
+  }
+
+  async function copyViewName(name, btn) {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(name);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = name;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      btn.textContent = 'Copied';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1200);
+    } catch (err) {
+      btn.textContent = 'Failed';
+      setTimeout(() => { btn.textContent = 'Copy'; }, 1200);
+    }
   }
 
   function renderDetailTable(table, caption) {
@@ -541,7 +605,26 @@ function renderHtml(report) {
     }
   }
 
-  const rows = ${rowsJson}; // [name, displayName, description, status, createdAt, modifiedAt, lastFetchedAt, regId, devExtStatus, atcState]
+  function onViewRowClick(e, afterToggle) {
+    const copyBtn = e.target.closest('.copy-btn');
+    if (copyBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      copyViewName(copyBtn.getAttribute('data-copy'), copyBtn);
+      return;
+    }
+    if (e.target.closest('a.gh-link')) {
+      e.stopPropagation();
+      return;
+    }
+    const tr = e.target.closest('tr.view-row');
+    if (!tr) return;
+    const name = tr.dataset.name;
+    if (expandedNames.has(name)) expandedNames.delete(name); else expandedNames.add(name);
+    afterToggle();
+  }
+
+  const rows = ${rowsJson}; // [name, displayName, description, status, createdAt, modifiedAt, lastFetchedAt, regId, devExtStatus, atcState, path]
   const STATUS_BADGE = {
     'full': '<span class="status-good">✓ Full DDL</span>',
     'metadata-only': '<span class="status-warning">◐ Metadata-only</span>',
@@ -562,11 +645,12 @@ function renderHtml(report) {
       return matchesSearch(r, q);
     });
     renderRowsInto(tbody, rowCount, filtered, rows.length, r => {
-      const [name, displayName, description, status, createdAt, modifiedAt, lastFetchedAt, regId, devExtStatus, atcState] = r;
+      const [name, displayName, description, status, createdAt, modifiedAt, lastFetchedAt, regId, devExtStatus, atcState, path] = r;
       const devExtClass = devExtStatus === 'Not Released' ? 'not-released' : devExtStatus === 'Released' ? 'released' : '';
       const expanded = expandedNames.has(name);
+      const titleAttr = ' title="Hub registry ID: ' + escapeHtml(regId || 'n/a') + '"';
       const row = '<tr class="view-row" data-name="' + escapeHtml(name) + '"><td class="status-cell">' + (STATUS_BADGE[status] || status) + '</td>' +
-        '<td class="name-cell" title="Hub registry ID: ' + (regId || 'n/a') + '"><span class="toggle-icon">' + (expanded ? '▾' : '▸') + '</span>' + name + '</td>' +
+        nameCellHtml(name, path, expanded, titleAttr) +
         '<td class="desc-cell">' + (displayName || description || '').replace(/</g, '&lt;') + '</td>' +
         '<td class="ext-cell ' + devExtClass + '">' + (devExtStatus || '—') + '</td>' +
         '<td class="atc-cell ' + (atcState || '') + '">' + (atcState || '—') + '</td>' +
@@ -577,13 +661,7 @@ function renderHtml(report) {
     }, 8);
   }
 
-  tbody.addEventListener('click', e => {
-    const tr = e.target.closest('tr.view-row');
-    if (!tr) return;
-    const name = tr.dataset.name;
-    if (expandedNames.has(name)) expandedNames.delete(name); else expandedNames.add(name);
-    render();
-  });
+  tbody.addEventListener('click', e => onViewRowClick(e, render));
 
   search.addEventListener('input', render);
   hideNotDevExt.addEventListener('change', render);
@@ -596,7 +674,7 @@ function renderHtml(report) {
 
   render();
 
-  const extraRows = ${extraRowsJson}; // [name, description, appComponent, releaseState, sourceAvailable]
+  const extraRows = ${extraRowsJson}; // [name, description, appComponent, releaseState, sourceAvailable, path]
   const extraSearch = document.getElementById('extraSearch');
   const extraTbody = document.getElementById('extraTbody');
   const extraRowCount = document.getElementById('extraRowCount');
@@ -612,7 +690,7 @@ function renderHtml(report) {
       return matchesSearch(r, q);
     });
     renderRowsInto(extraTbody, extraRowCount, filtered, extraRows.length, r => {
-      const [name, description, appComponent, releaseState, sourceAvailable] = r;
+      const [name, description, appComponent, releaseState, sourceAvailable, path] = r;
       const expanded = expandedNames.has(name);
       // Full DDL here means the same thing it means in the table above:
       // real SAP-generated source, not a guess — independent evidence the
@@ -628,7 +706,7 @@ function renderHtml(report) {
           ? STATUS_BADGE['metadata-only']
           : '—';
       const row = '<tr class="view-row" data-name="' + escapeHtml(name) + '"><td class="status-cell">' + ddlCell + '</td>' +
-        '<td class="name-cell"><span class="toggle-icon">' + (expanded ? '▾' : '▸') + '</span>' + name + '</td>' +
+        nameCellHtml(name, path, expanded, '') +
         '<td class="desc-cell">' + (description || '').replace(/</g, '&lt;') + '</td>' +
         '<td class="date-cell">' + (appComponent || '—') + '</td>' +
         '<td class="date-cell">' + (releaseState || '—') + '</td></tr>';
@@ -636,13 +714,7 @@ function renderHtml(report) {
     }, 5);
   }
 
-  extraTbody.addEventListener('click', e => {
-    const tr = e.target.closest('tr.view-row');
-    if (!tr) return;
-    const name = tr.dataset.name;
-    if (expandedNames.has(name)) expandedNames.delete(name); else expandedNames.add(name);
-    renderExtra();
-  });
+  extraTbody.addEventListener('click', e => onViewRowClick(e, renderExtra));
 
   extraSearch.addEventListener('input', renderExtra);
   extraButtons.forEach(b => b.addEventListener('click', () => {
@@ -662,6 +734,21 @@ function renderHtml(report) {
 // ── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
+  let viewPaths = {};
+  try {
+    viewPaths = JSON.parse(await fs.readFile(path.join(DATA_DIR, 'index', 'view-paths.json'), 'utf-8'));
+  } catch {
+    viewPaths = {};
+  }
+
+  if (HTML_ONLY) {
+    console.log('📄 Regenerating coverage-report.html from coverage.json (no Hub fetch)...');
+    const report = JSON.parse(await fs.readFile(path.join(DATA_DIR, 'coverage.json'), 'utf-8'));
+    await fs.writeFile(path.join(DATA_DIR, 'coverage-report.html'), renderHtml(report, viewPaths), 'utf-8');
+    console.log(`📝 Written to ${DATA_DIR}/coverage-report.html`);
+    return;
+  }
+
   console.log('📡 Fetching SAP Business Accelerator Hub catalog...');
   const [hubArtifacts, extMap, atcMap] = await Promise.all([
     fetchHubCatalog(),
@@ -681,7 +768,7 @@ async function main() {
   console.log(`✅ Released on Hub: ${report.hubTotal} | Full: ${report.fullTotal} | Metadata-only: ${report.metadataOnlyTotal} | Missing: ${report.missingTotal} | In KB not on Hub: ${report.extraTotal}`);
 
   await fs.writeFile(path.join(DATA_DIR, 'coverage.json'), JSON.stringify(report, null, 2), 'utf-8');
-  await fs.writeFile(path.join(DATA_DIR, 'coverage-report.html'), renderHtml(report), 'utf-8');
+  await fs.writeFile(path.join(DATA_DIR, 'coverage-report.html'), renderHtml(report, viewPaths), 'utf-8');
   console.log(`📝 Written to ${DATA_DIR}/coverage.json and ${DATA_DIR}/coverage-report.html`);
 }
 

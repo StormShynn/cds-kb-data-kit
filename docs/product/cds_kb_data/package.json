@@ -7,6 +7,7 @@
   "scripts": {
     "test": "node --test",
     "check-coverage": "node scripts/check-coverage.mjs",
+    "check-coverage:html": "node scripts/check-coverage.mjs --html-only",
     "flag-release-state-review": "node scripts/flag-release-state-review.mjs",
     "add-hub-metadata": "node scripts/add_hub_metadata.mjs",
     "backfill-source-links": "node scripts/backfill_source_links.mjs",
