@@ -1,10 +1,11 @@
 # cds-kb-data
 
-Private **data + automation** repository for the SAP CDS Knowledge Base — consumed
-read-only by the [`cds-kb-mcp-kit`](https://github.com/StormShynn/cds-kb-mcp-kit) MCP
-server, via a local clone or the authenticated GitHub Contents API.
+**Data + automation** for the SAP CDS Knowledge Base — consumed read-only by the
+sibling MCP server in [`../cds_kb_mcp`](../cds_kb_mcp) (harness monorepo), or by a
+standalone [`cds-kb-mcp`](https://github.com/StormShynn/cds-kb-mcp-kit) deploy via
+local `--data` / authenticated GitHub Contents API.
 
-This repo owns the whole fetch/tag/enrich pipeline. `cds-kb-mcp-kit` only serves
+This tree owns the whole fetch/tag/enrich pipeline. `cds_kb_mcp` only serves
 what's already here — it has no fetch/scraping code of its own.
 
 ## Contents
@@ -179,19 +180,31 @@ through that path keeps an empty `app_component` unless someone fills it in
 by hand later — which is exactly why `views/MISC/` and `views/_UNVERIFIED/`
 exist (see "Contents" above).
 
-## How cds-kb-mcp-kit connects to this repo
+## How cds_kb_mcp connects to this data
 
-The server reads exactly three kinds of paths at runtime:
+In this harness the MCP server lives next door at `docs/product/cds_kb_mcp`.
+With no flags it auto-detects this folder (`../cds_kb_data` from the MCP package).
+Explicit wiring:
+
+```bash
+cd ../cds_kb_mcp
+npm start                          # auto sibling
+npm run start:local                # --data ../cds_kb_data
+npm run start:remote               # GitHub raw / Contents API
+```
+
+The server reads these paths at runtime:
 
 | Path | Purpose |
 |---|---|
 | `index/search_index.json` | Full-text search index (loaded once at startup, refreshed periodically) |
 | `index/view-paths.json` | NAME -> real path, checked before guessing `views/<NAME>.md` |
+| `index/field-index.json` / `table-index.json` / `raw-field-index.json` | Exact field / table / DDIC reverse lookup |
 | `views/<MODULE>/.../<NAME>.md` | Individual view definitions (loaded on demand) |
 
-Locally via `--data <clone>`, or remotely via `--remote https://raw.githubusercontent.com/StormShynn/cds-kb-data/main`
-plus a token (`CDS_KB_DATA_TOKEN` or `GITHUB_TOKEN`) with read access to this repo —
-see `cds-kb-mcp-kit`'s `src/datasource.mjs`.
+Remotely: `--remote https://raw.githubusercontent.com/StormShynn/cds-kb-data/main`
+plus a token (`CDS_KB_DATA_TOKEN` or `GITHUB_TOKEN`) when the data repo is private —
+see `cds_kb_mcp`'s `src/datasource.mjs`.
 
 **Wiring up a different consumer?** See [CONNECTING.md](./CONNECTING.md) —
 access setup, the same data contract in more detail, and what to do if

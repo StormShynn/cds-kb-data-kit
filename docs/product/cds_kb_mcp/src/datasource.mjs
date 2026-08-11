@@ -20,10 +20,35 @@
 //   async getRawFieldIndex() -> returns parsed raw-field-index.json (or null if not available)
 //   describe()               -> short human string for logs
 
+import { existsSync } from 'node:fs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import crypto from 'node:crypto';
+
+// Harness monorepo layout: docs/product/cds_kb_mcp next to docs/product/cds_kb_data.
+// Prefer process.argv[1] / cwd — not import.meta.url — so the CJS dist bundle works
+// (esbuild empties import.meta under format:cjs).
+function resolveSiblingDataDir() {
+  const candidates = [];
+  const entry = process.argv[1] ? path.resolve(process.argv[1]) : null;
+  if (entry) {
+    const entryDir = path.dirname(entry);
+    // src/server.mjs or dist/cds-kb-mcp.cjs → ../../cds_kb_data
+    candidates.push(path.resolve(entryDir, '..', '..', 'cds_kb_data'));
+    // package-root entry → ../cds_kb_data
+    candidates.push(path.resolve(entryDir, '..', 'cds_kb_data'));
+  }
+  candidates.push(
+    path.resolve(process.cwd(), '..', 'cds_kb_data'),
+    path.resolve(process.cwd(), 'cds_kb_data'),
+    path.resolve(process.cwd(), 'docs', 'product', 'cds_kb_data'),
+  );
+  for (const candidate of candidates) {
+    if (existsSync(path.join(candidate, 'index', 'search_index.json'))) return candidate;
+  }
+  return null;
+}
 
 // ── Section parser ──────────────────────────────────────────────────────────
 // Splits a CDS view markdown file into named sections for selective retrieval.
@@ -504,8 +529,8 @@ export class RemoteDataSource {
 }
 
 // ── Resolver ────────────────────────────────────────────────────────────────
-// Resolve a datasource from CLI args / env. Precedence: --data > CDS_KB_DATA > --remote > CDS_KB_REMOTE.
-// (Local-first, per the chosen default.)
+// Precedence: --data > CDS_KB_DATA > --remote > CDS_KB_REMOTE >
+// sibling harness folder docs/product/cds_kb_data > default GitHub remote.
 export function resolveDataSource(argv = process.argv.slice(2)) {
   const getFlag = (name) => {
     const i = argv.indexOf(name);
@@ -516,6 +541,9 @@ export function resolveDataSource(argv = process.argv.slice(2)) {
 
   const remote = getFlag('--remote') || process.env.CDS_KB_REMOTE;
   if (remote) return new RemoteDataSource(remote);
+
+  const sibling = resolveSiblingDataDir();
+  if (sibling) return new LocalDataSource(sibling);
 
   const defaultRemote = 'https://raw.githubusercontent.com/StormShynn/cds-kb-data/main';
   return new RemoteDataSource(defaultRemote);

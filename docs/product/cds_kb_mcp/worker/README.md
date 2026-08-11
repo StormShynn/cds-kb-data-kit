@@ -5,7 +5,7 @@ Worker. Every running MCP server instance (local `stdio` or hosted `SSE`)
 batches its own view-read counts and posts them here; a separate,
 token-gated endpoint lets the data repo's scheduled job pull the running
 totals and fold them into search ranking (see
-`../../sap-cds-kb-data-v1/scripts/pull-usage-stats.mjs` and
+`../cds_kb_data/scripts/pull-usage-stats.mjs` and
 `server.mjs`'s `boostDocument`).
 
 No account/identity data ever reaches this Worker — only `{view, count}`.
@@ -44,7 +44,7 @@ CDS_KB_USAGE_ENDPOINT=https://cds-kb-usage-collector.<you>.workers.dev/ping
 Unset (the default), the server never pings anywhere — this is opt-in, not
 on by default.
 
-**In the data repo** (`sap-cds-kb-data-v1`), add two repository secrets for
+**In the data tree** (`docs/product/cds_kb_data`), add two repository secrets for
 the `pull-usage-stats.yml` workflow:
 
 - `CDS_KB_USAGE_ENDPOINT` → `https://cds-kb-usage-collector.<you>.workers.dev/totals`

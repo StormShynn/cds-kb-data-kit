@@ -48458,10 +48458,29 @@ var StreamableHTTPServerTransport = class {
 };
 
 // src/datasource.mjs
+var import_node_fs = require("node:fs");
 var import_promises = __toESM(require("node:fs/promises"), 1);
 var import_node_path = __toESM(require("node:path"), 1);
 var import_node_os = __toESM(require("node:os"), 1);
 var import_node_crypto2 = __toESM(require("node:crypto"), 1);
+function resolveSiblingDataDir() {
+  const candidates = [];
+  const entry = process.argv[1] ? import_node_path.default.resolve(process.argv[1]) : null;
+  if (entry) {
+    const entryDir = import_node_path.default.dirname(entry);
+    candidates.push(import_node_path.default.resolve(entryDir, "..", "..", "cds_kb_data"));
+    candidates.push(import_node_path.default.resolve(entryDir, "..", "cds_kb_data"));
+  }
+  candidates.push(
+    import_node_path.default.resolve(process.cwd(), "..", "cds_kb_data"),
+    import_node_path.default.resolve(process.cwd(), "cds_kb_data"),
+    import_node_path.default.resolve(process.cwd(), "docs", "product", "cds_kb_data")
+  );
+  for (const candidate of candidates) {
+    if ((0, import_node_fs.existsSync)(import_node_path.default.join(candidate, "index", "search_index.json"))) return candidate;
+  }
+  return null;
+}
 var SECTION_NAMES = ["metadata", "fields", "associations", "source"];
 function parseViewSections(md) {
   const sections = { metadata: "", fields: "", associations: "", source: "" };
@@ -48898,6 +48917,8 @@ function resolveDataSource(argv = process.argv.slice(2)) {
   if (dataPath) return new LocalDataSource(dataPath);
   const remote = getFlag("--remote") || process.env.CDS_KB_REMOTE;
   if (remote) return new RemoteDataSource(remote);
+  const sibling = resolveSiblingDataDir();
+  if (sibling) return new LocalDataSource(sibling);
   const defaultRemote = "https://raw.githubusercontent.com/StormShynn/cds-kb-data/main";
   return new RemoteDataSource(defaultRemote);
 }

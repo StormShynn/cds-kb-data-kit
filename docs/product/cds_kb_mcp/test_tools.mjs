@@ -1,14 +1,23 @@
 #!/usr/bin/env node
 // Quick smoke test for the MCP server tools
-// Usage: node test_tools.mjs <path-to-cds-kb-data>
+// Usage: node test_tools.mjs [path-to-cds-kb-data]
+// Default: sibling harness folder ../cds_kb_data
 import { spawn } from 'node:child_process';
+import { existsSync } from 'node:fs';
 import { createInterface } from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
-const dataPath = process.argv[2] || '/Users/duckpower/IDE WorkSpaces/cds-knowledge-base/cds-kb-data';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const defaultDataPath = path.resolve(__dirname, '..', 'cds_kb_data');
+const dataPath = path.resolve(process.argv[2] || defaultDataPath);
 const serverPath = path.join(__dirname, 'src', 'server.mjs');
+
+if (!existsSync(path.join(dataPath, 'index', 'search_index.json'))) {
+  console.error(`Missing data index at ${path.join(dataPath, 'index', 'search_index.json')}`);
+  console.error('Pass an explicit path: node test_tools.mjs /path/to/cds_kb_data');
+  process.exit(1);
+}
 
 const proc = spawn('node', [serverPath, '--data', dataPath], { stdio: ['pipe', 'pipe', 'pipe'] });
 
@@ -130,5 +139,5 @@ run().catch((e) => {
   process.exit(1);
 });
 
-// Timeout safety
-setTimeout(() => { console.error('Timeout!'); proc.kill(); process.exit(1); }, 30000);
+// Timeout safety — large local indexes can take >30s to load on CI
+setTimeout(() => { console.error('Timeout!'); proc.kill(); process.exit(1); }, 120000);

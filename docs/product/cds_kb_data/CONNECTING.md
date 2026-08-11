@@ -1,9 +1,10 @@
 # Connecting a new consumer to this repo
 
 Guide for hooking up a *different* MCP server (or any other tool) to this
-data — not `cds-kb-mcp-kit` specifically, which already has its own reader
-(`src/datasource.mjs`) and just needs the setup in its own README. This is
-for anyone else who wants to read `views/`/`index/` directly.
+data — not `cds_kb_mcp` specifically, which already has its own reader
+(`../cds_kb_mcp/src/datasource.mjs`) and, in this harness, auto-detects the
+sibling `cds_kb_data` folder. This guide is for anyone else who wants to read
+`views/`/`index/` directly.
 
 ## 1. Get access
 
@@ -38,10 +39,10 @@ curl -H "Authorization: Bearer <token>" \
      "https://api.github.com/repos/StormShynn/cds-kb-data/contents/index/version.json?ref=main"
 ```
 
-A working reference implementation already exists: `cds-kb-mcp-kit`'s
-`src/datasource.mjs` (`RemoteDataSource` class) — same auth pattern, plus
-ETag caching and retry/backoff. Worth reading even if the new consumer isn't
-Node.js, just to see the request shape and caching strategy.
+A working reference implementation already exists: `cds_kb_mcp`'s
+`src/datasource.mjs` (`RemoteDataSource` / sibling auto-detect) — same auth
+pattern, plus ETag caching and retry/backoff. Worth reading even if the new
+consumer isn't Node.js, just to see the request shape and caching strategy.
 
 ## 3. What's actually in here
 

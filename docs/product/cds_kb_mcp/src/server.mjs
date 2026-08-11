@@ -2,8 +2,9 @@
 // cds-kb-mcp — a DATALESS MCP server for the SAP CDS knowledge base.
 // Ships no view data. Points at either a local clone or a remote (public GitHub) data repo.
 //
-//   cds-kb-mcp --data   /path/to/cloned/cds-kb-data
+//   cds-kb-mcp --data   /path/to/cds_kb_data          # or sibling ../cds_kb_data in this harness
 //   cds-kb-mcp --remote https://raw.githubusercontent.com/<user>/cds-kb-data/main
+//   cds-kb-mcp                                        # auto: sibling cds_kb_data if present, else GitHub remote
 //
 // The index file is self-describing (carries its own MiniSearch options), so this server
 // has zero schema coupling to how the data repo was built.
