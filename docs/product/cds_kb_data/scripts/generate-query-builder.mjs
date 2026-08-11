@@ -18,9 +18,9 @@
 // the JSON, open a PR). This script only reads and embeds it; there is no
 // backend for the page itself to write to, so "Save" writes to this
 // browser's localStorage (immediately usable from the "Saved queries" list
-// again, survives reloads) AND exports a JSON snippet — copying that into
-// query-library.json via a PR is what makes it visible to everyone else,
-// not just this browser.
+// again, survives reloads). "Generate JSON" exports the PR snippet for
+// query-library.json without touching localStorage — that is what makes a
+// query visible to everyone else, not just this browser.
 //
 // Usage:
 //   node scripts/generate-query-builder.mjs [dataDir] [outputFile]
@@ -280,6 +280,7 @@ function renderHtml(embeddedJson, stats) {
   .save-panel input[type=text] { width: 100%; margin-bottom: 8px; }
   .save-panel textarea { width: 100%; margin-top: 8px; }
   .save-panel .subhint { margin-top: 8px; }
+  .save-panel .save-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 
   .stats { color: var(--text-muted); font-size: 12px; margin-top: 32px; border-top: 1px solid var(--gridline); padding-top: 16px; }
 </style>
@@ -388,11 +389,14 @@ function renderHtml(embeddedJson, stats) {
 
           <div class="save-panel">
             <h2 style="font-size:13px;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.04em;margin:0 0 8px;">💾 Save this query</h2>
-            <p class="subhint" style="margin-top:0">Fill in a title, then Save — it's added to "📚 Saved queries" above right away (this browser only). The JSON snippet it also shows is what you'd paste into <code>index/query-library.json</code> via a PR to share it with everyone else.</p>
+            <p class="subhint" style="margin-top:0">Fill in a title, then <strong>Save</strong> to add it to "📚 Saved queries" above (this browser only). Use <strong>Generate JSON</strong> for the snippet to paste into <code>index/query-library.json</code> via a PR — that does not write to localStorage.</p>
             <input type="text" id="saveTitle" placeholder="Title, e.g. Products missing a description" autocomplete="off" />
             <input type="text" id="saveDesc" placeholder="One-line description (optional)" autocomplete="off" />
             <input type="text" id="saveContributor" placeholder="Your name/handle (optional)" autocomplete="off" />
-            <button id="saveGenBtn">💾 Save</button>
+            <div class="save-actions">
+              <button id="saveGenBtn" type="button">💾 Save</button>
+              <button id="generateJsonBtn" type="button">{} Generate JSON</button>
+            </div>
             <textarea id="saveOutput" class="raw" style="display:none" readonly></textarea>
           </div>
         </div>
@@ -1157,7 +1161,7 @@ function renderHtml(embeddedJson, stats) {
     });
   });
 
-  // ── Save (export JSON snippet) / Load ───────────────────────────────────
+  // ── Save (localStorage) / Generate JSON (PR snippet) / Load ─────────────
   function currentQueryAsObject() {
     return {
       title: document.getElementById('saveTitle').value.trim(),
@@ -1185,20 +1189,32 @@ function renderHtml(embeddedJson, stats) {
     };
   }
 
+  function showSaveOutput(text) {
+    const box = document.getElementById('saveOutput');
+    box.style.display = '';
+    box.value = text;
+  }
+
+  function requireSaveTitle(obj) {
+    if (obj.title) return true;
+    showSaveOutput('Add a title first (above) — it is how this query will be found and picked in the "Saved queries" list.');
+    return false;
+  }
+
   document.getElementById('saveGenBtn').addEventListener('click', () => {
     const obj = currentQueryAsObject();
-    const box = document.getElementById('saveOutput');
-    if (!obj.title) {
-      box.style.display = '';
-      box.value = 'Add a title first (above) — it is how this query will be found and picked in the "Saved queries" list.';
-      return;
-    }
+    if (!requireSaveTitle(obj)) return;
     LOCAL_LIB.push(obj);
     persistLocalLib();
     renderLibList();
     libSection.classList.remove('collapsed');
-    box.style.display = '';
-    box.value = JSON.stringify(obj, null, 2) + ',';
+    showSaveOutput('Saved locally. Use "Generate JSON" if you also need the snippet for index/query-library.json.');
+  });
+
+  document.getElementById('generateJsonBtn').addEventListener('click', () => {
+    const obj = currentQueryAsObject();
+    if (!requireSaveTitle(obj)) return;
+    showSaveOutput(JSON.stringify(obj, null, 2) + ',');
   });
 
   function loadSavedQuery(q) {
