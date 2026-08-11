@@ -212,7 +212,18 @@
     const tableSubstr = tableKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
     const rawSubstr = rawKeys.filter(k => k !== key && k.includes(key)).slice(0, 20);
 
-    const hasTechnicalMatch = fieldExact || tableExact || rawExact || fieldSubstr.length > 0 || tableSubstr.length > 0 || rawSubstr.length > 0;
+    // The query IS a view name, not just a field/table/column it happens to
+    // share a name with — checked against every known view (DATA.P), not
+    // just ones that show up in F/T/R below. Kept as its own section instead
+    // of folded into "As a table/view reference": that section only lists
+    // OTHER views that build FROM/associate to the searched name, so typing
+    // a view's own name there previously surfaced nothing about the view
+    // itself unless some other view happened to reference it — easy to
+    // misread as "not found" even though the view exists (this is exactly
+    // what came up over I_MaterialStockTimeSeries).
+    const isKnownView = key in DATA.P;
+
+    const hasTechnicalMatch = isKnownView || fieldExact || tableExact || rawExact || fieldSubstr.length > 0 || tableSubstr.length > 0 || rawSubstr.length > 0;
 
     if (!hasTechnicalMatch) {
       // Nothing technical matched at all — the query might be a business
@@ -239,6 +250,12 @@
     }
 
     let html = '';
+    if (isKnownView) {
+      const ac = (DATA.M[key] || [])[0] || '';
+      html += '<div class="section"><h2>This is a CDS view — "' + escapeHtml(key) + '"</h2>' +
+        '<div class="row">' + viewLink(key) + unverifiedBadge(key) + unconfirmedBadge(key) + abstractBadge(key) + masterDataBadge(key) +
+        (ac ? ' <span class="tag">' + escapeHtml(ac) + '</span>' : '') + '</div></div>';
+    }
     if (fieldExact) {
       html += '<div class="section"><h2>As a field — "' + escapeHtml(key) + '" (' + fieldExact.length + ' view' + (fieldExact.length === 1 ? '' : 's') + ')</h2>' +
         fieldExact.map(fieldRow).join('') + '</div>';
