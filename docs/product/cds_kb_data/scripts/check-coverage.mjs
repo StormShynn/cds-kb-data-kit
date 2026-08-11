@@ -261,6 +261,15 @@ function buildReport(hubArtifacts, localInfo, manifest, extMap, atcMap) {
         description: local.description || '',
         appComponent: local.appComponent || '',
         releaseState: local.releaseState || '',
+        // Not on the Hub's current live RELEASED list, but Full DDL means
+        // this KB has the view's *actual* SAP-generated CDS source (real
+        // annotations, real field list — not a guess), fetched from a real
+        // system's export on GitHub. That's independent, real-world evidence
+        // the view exists, regardless of what SAP's public catalog for this
+        // one product container currently says — treat it the same way the
+        // Hub-confirmed column above treats a match: a signal of validity,
+        // not proof of anything wrong when it's false.
+        sourceAvailable: typeof local.sourceAvailable === 'boolean' ? local.sourceAvailable : null,
       };
     });
 
@@ -294,7 +303,7 @@ function renderHtml(report) {
     r.regId || '', r.devExtStatus || '', r.atcState || '',
   ])).replace(/<\/script/gi, '<\\/script');
   const extraRowsJson = JSON.stringify(report.extra.map(r => [
-    r.name, r.description, r.appComponent, r.releaseState,
+    r.name, r.description, r.appComponent, r.releaseState, r.sourceAvailable,
   ])).replace(/<\/script/gi, '<\\/script');
 
   return `<!DOCTYPE html>
@@ -454,6 +463,10 @@ function renderHtml(report) {
       <button data-release="all" aria-pressed="true">All</button>
       <button data-release="released">Released</button>
       <button data-release="unverified">Unverified</button>
+      <label style="display:flex;align-items:center;gap:6px;color:var(--text-secondary);font-size:13px;cursor:pointer;white-space:nowrap" title="Full DDL means this KB has the view's actual SAP-generated source (real annotations, real field list, fetched from a real system's export) — independent real-world evidence it exists, even though the Hub's catalog for this one product container doesn't currently confirm it">
+        <input type="checkbox" id="hideNoDdl" />
+        Full DDL only
+      </label>
     </div>
     <div class="row-count" id="extraRowCount"></div>
     <table>
@@ -463,6 +476,7 @@ function renderHtml(report) {
           <th>Description</th>
           <th style="width:120px">App Component</th>
           <th style="width:130px">Local Release State</th>
+          <th style="width:90px">Full DDL</th>
         </tr>
       </thead>
       <tbody id="extraTbody"></tbody>
@@ -582,28 +596,41 @@ function renderHtml(report) {
 
   render();
 
-  const extraRows = ${extraRowsJson}; // [name, description, appComponent, releaseState]
+  const extraRows = ${extraRowsJson}; // [name, description, appComponent, releaseState, sourceAvailable]
   const extraSearch = document.getElementById('extraSearch');
   const extraTbody = document.getElementById('extraTbody');
   const extraRowCount = document.getElementById('extraRowCount');
   const extraButtons = document.querySelectorAll('[data-release]');
+  const hideNoDdl = document.getElementById('hideNoDdl');
   let extraReleaseFilter = 'all';
 
   function renderExtra() {
     const q = extraSearch.value.trim().toUpperCase();
     const filtered = extraRows.filter(r => {
       if (extraReleaseFilter !== 'all' && r[3] !== extraReleaseFilter) return false;
+      if (hideNoDdl.checked && r[4] !== true) return false;
       return matchesSearch(r, q);
     });
     renderRowsInto(extraTbody, extraRowCount, filtered, extraRows.length, r => {
-      const [name, description, appComponent, releaseState] = r;
+      const [name, description, appComponent, releaseState, sourceAvailable] = r;
       const expanded = expandedNames.has(name);
+      // Full DDL here means the same thing it means in the table above:
+      // real SAP-generated source, not a guess — independent evidence the
+      // view exists even though the Hub's catalog doesn't currently confirm
+      // it (deprecated/renamed/different container/simply not the
+      // one product this report checks against).
+      const ddlCell = sourceAvailable === true
+        ? '<span class="status-good">✓ Full DDL</span>'
+        : sourceAvailable === false
+          ? '<span class="status-warning">metadata-only</span>'
+          : '—';
       const row = '<tr class="view-row" data-name="' + escapeHtml(name) + '"><td class="name-cell"><span class="toggle-icon">' + (expanded ? '▾' : '▸') + '</span>' + name + '</td>' +
         '<td class="desc-cell">' + (description || '').replace(/</g, '&lt;') + '</td>' +
         '<td class="date-cell">' + (appComponent || '—') + '</td>' +
-        '<td class="date-cell">' + (releaseState || '—') + '</td></tr>';
-      return expanded ? row + renderDetailRow(name, 4) : row;
-    }, 4);
+        '<td class="date-cell">' + (releaseState || '—') + '</td>' +
+        '<td class="status-cell">' + ddlCell + '</td></tr>';
+      return expanded ? row + renderDetailRow(name, 5) : row;
+    }, 5);
   }
 
   extraTbody.addEventListener('click', e => {
@@ -621,6 +648,7 @@ function renderHtml(report) {
     extraReleaseFilter = b.dataset.release;
     renderExtra();
   }));
+  hideNoDdl.addEventListener('change', renderExtra);
   renderExtra();
 </script>
 </body>

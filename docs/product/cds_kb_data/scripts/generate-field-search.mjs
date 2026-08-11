@@ -62,6 +62,18 @@ async function main() {
   // views as RELEASED too, prefix alone says nothing about it.
   const coverage = await readJson(path.join(DATA_DIR, 'coverage.json'), null);
   const hubConfirmed = new Set((coverage?.rows || []).filter((r) => r.inLocal).map((r) => r.name));
+  // Full DDL — this KB has the view's actual SAP-generated CDS source (real
+  // annotations, real field list, fetched from a real system's export on
+  // GitHub), not a guess. Independent evidence a view is real even when the
+  // Hub's catalog for this one product container doesn't currently confirm
+  // it — checked empirically: 1782 of 1795 views not on the Hub's list
+  // (99.3%) have Full DDL, so absence from that one container clearly isn't
+  // the same thing as "not real". Covers both coverage.json's Hub-matched
+  // `rows` (status === 'full') and its `extra` (sourceAvailable === true).
+  const fullDdl = new Set([
+    ...(coverage?.rows || []).filter((r) => r.status === 'full').map((r) => r.name),
+    ...(coverage?.extra || []).filter((r) => r.sourceAvailable === true).map((r) => r.name),
+  ]);
 
   if (!fieldIndex || !tableIndex) {
     console.error('Missing field-index.json or table-index.json — run `npm run rebuild-index` first.');
@@ -88,7 +100,7 @@ async function main() {
   // usage, ahead of one nobody else touches — instead of suggesting any of
   // these on equal footing with the view someone actually wants.
   const viewMeta = {};
-  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0, e.isMasterData ? 1 : 0, e.referencedByCount || 0, e.usageCount || 0, hubConfirmed.has(e.view) ? 1 : 0];
+  const metaOf = (e) => [e.appComponent || '', e.releaseState || 'released', e.isAbstract ? 1 : 0, e.isMasterData ? 1 : 0, e.referencedByCount || 0, e.usageCount || 0, hubConfirmed.has(e.view) ? 1 : 0, fullDdl.has(e.view) ? 1 : 0];
   const F = {};
   for (const [field, entries] of Object.entries(fieldIndex.fields)) {
     F[field] = entries.map((e) => {
@@ -258,10 +270,13 @@ function renderHtml(embeddedJson, stats) {
 
   function unconfirmedBadge(view) {
     const meta = DATA.M[view] || [];
-    // Only for the "released" tier — an unverified view already shows its
-    // own badge above, this would just be redundant noise on top of it.
-    return meta[1] === 'released' && !meta[6]
-      ? ' <span class="badge unconfirmed" title="Not on the SAP Business Accelerator Hub&#39;s current live RELEASED list — may be deprecated, renamed, in a different container, or simply not yet re-checked, not necessarily wrong">not on Hub list</span>'
+    // Matches rankOf's penalty condition exactly: only when NEITHER signal
+    // of validity is present. Full DDL alone (meta[7]) is enough to skip
+    // this badge even without a Hub match — 99.3% of views not on the Hub's
+    // current list turned out to have real DDL source when checked, so
+    // "not on Hub" alone is a weak signal, not evidence something's wrong.
+    return meta[1] === 'released' && !meta[6] && !meta[7]
+      ? ' <span class="badge unconfirmed" title="Not on the SAP Business Accelerator Hub&#39;s current live RELEASED list, and no Full DDL source on file either — may be deprecated, renamed, in a different container, or simply not yet re-checked, not necessarily wrong">not on Hub, no DDL</span>'
       : '';
   }
 
@@ -294,15 +309,20 @@ function renderHtml(embeddedJson, stats) {
   //          #MASTER, e.g. I_Product) — master data is what "which view has
   //          field X" usually means, ahead of a transactional view that
   //          merely references the same field.
-  //   +1     NOT on the Hub's current live RELEASED list (see hubConfirmed
-  //          above) — soft, not a demotion to "unverified" tier: the Hub
-  //          only reflects the current moment, so a view genuinely released
-  //          in the past can drop off it (deprecated/renamed/different
-  //          container) without ever having been wrong. This replaced an
-  //          earlier "not I_ prefix" penalty that assumed I_ views are more
-  //          legitimate than C_/D_/... — that assumption was wrong (the Hub
-  //          confirms plenty of C_/D_ views as RELEASED too; prefix alone
-  //          says nothing about it), so it's gone rather than reworded.
+  //   +1     NOT on the Hub's current live RELEASED list AND no Full DDL —
+  //          either signal is enough on its own to treat a view as real, so
+  //          this only fires when BOTH are missing. Soft, not a demotion to
+  //          "unverified" tier: the Hub only reflects the current moment
+  //          (a view genuinely released in the past can drop off it —
+  //          deprecated/renamed/different container — without ever having
+  //          been wrong), and Full DDL alone (real SAP-generated source,
+  //          fetched from a real system's export) is independent evidence
+  //          regardless of what one Hub product container currently lists.
+  //          This replaced an earlier "not I_ prefix" penalty that assumed
+  //          I_ views are more legitimate than C_/D_/... — that assumption
+  //          was wrong (the Hub confirms plenty of C_/D_ views as RELEASED
+  //          too; prefix alone says nothing about it), so it's gone rather
+  //          than reworded.
   //   fine tie-break, weighted well below the +1 above so it only decides
   //   between two matches that are otherwise identical on every signal so
   //   far:
@@ -320,7 +340,7 @@ function renderHtml(embeddedJson, stats) {
     else if (meta[1] === 'unverified') score += 100;
     if (!isKey) score += 10;
     if (!meta[3]) score += 5;
-    if (!meta[6]) score += 1;
+    if (!meta[6] && !meta[7]) score += 1;
     score -= (meta[4] || 0) * 0.001;
     score -= (meta[5] || 0) * 0.002;
     return score;

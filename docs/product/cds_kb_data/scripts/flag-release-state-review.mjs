@@ -23,6 +23,15 @@
 // been wrong, so "not on the Hub's list right now" is a signal for a human
 // to look at, not grounds to auto-relabel as unverified.
 //
+// Split into two groups instead of one flat list, checked empirically after
+// the first run flagged 1,795 candidates: 1,782 of them (99.3%) turned out
+// to have Full DDL on file — this KB's own copy of the view's actual
+// SAP-generated source (real annotations, real field list, fetched from a
+// real system's export), independent evidence a view is real regardless of
+// what one Hub product container's catalog currently says. Lumping those in
+// with the 13 that have neither signal made the list look far more
+// concerning than the data actually supports.
+//
 // Usage:
 //   node scripts/flag-release-state-review.mjs [dataDir]
 
@@ -40,15 +49,19 @@ async function main() {
 
   const viewPaths = await readJson(path.join(DATA_DIR, 'index', 'view-paths.json'), {});
 
-  const candidates = (report.extra || [])
+  const allCandidates = (report.extra || [])
     .filter((e) => e.releaseState === 'released')
     .map((e) => ({
       name: e.name,
       path: viewPaths[e.name] || null,
       appComponent: e.appComponent || '',
       description: e.description || '',
+      hasFullDdl: e.sourceAvailable === true,
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
+
+  const likelyStillValid = allCandidates.filter((c) => c.hasFullDdl);
+  const needsReview = allCandidates.filter((c) => !c.hasFullDdl);
 
   const output = {
     generatedAt: new Date().toISOString(),
@@ -60,15 +73,26 @@ async function main() {
       "the view is wrong — the Hub reflects the current moment only (deprecated/" +
       'renamed/different-container views drop off it too) — needs a human look, ' +
       'not an automatic relabel. release_state is left untouched by this script.',
-    totalCandidates: candidates.length,
-    candidates,
+    totalCandidates: allCandidates.length,
+    likelyStillValid: {
+      note: 'Not Hub-confirmed, but has Full DDL (real SAP-generated source) — treat as validated by that instead, no action needed.',
+      total: likelyStillValid.length,
+      candidates: likelyStillValid,
+    },
+    needsReview: {
+      note: 'Neither Hub-confirmed nor Full DDL — no independent evidence either way, the actual candidates worth a human look.',
+      total: needsReview.length,
+      candidates: needsReview,
+    },
   };
 
   const outFile = path.join(DATA_DIR, 'release-state-review.json');
   await writeJson(outFile, output);
 
   console.log(`📡 Hub snapshot used: coverage.json generated ${report.generatedAt}`);
-  console.log(`📂 Local views tagged released but not on Hub's current list: ${candidates.length}`);
+  console.log(`📂 Local views tagged released but not on Hub's current list: ${allCandidates.length}`);
+  console.log(`   Likely still valid (has Full DDL): ${likelyStillValid.length}`);
+  console.log(`   Actually needs review (neither signal): ${needsReview.length}`);
   console.log(`📝 Written to ${outFile}`);
 }
 
