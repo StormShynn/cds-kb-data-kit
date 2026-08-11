@@ -1,18 +1,16 @@
 ---
 name: I_WASTETRANSPDOCTYPEDIMENSION
-description: "Waste Analytics Transportation Document Type Dimension"
+description: "Waste Analytics Transp Doc Type Dimn"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTETRANSPDOCTYPEDIMENSION')/$value
-semantic_en: "Waste Analytics Transportation Document Type Dimension"
+semantic_en: "Waste Analytics Transp Doc Type Dimn"
 tags:
   - EHS
-  - bo:purchaseorder
   - component:EHS-SUS-WA
-  - document
   - EHS-SUS
   - EHS-SUS-WA
   - interface-view
@@ -20,7 +18,7 @@ tags:
 ---
 # I_WASTETRANSPDOCTYPEDIMENSION
 
-**Waste Analytics Transportation Document Type Dimension**
+**Waste Analytics Transp Doc Type Dimn**
 
 | Property | Value |
 |---|---|

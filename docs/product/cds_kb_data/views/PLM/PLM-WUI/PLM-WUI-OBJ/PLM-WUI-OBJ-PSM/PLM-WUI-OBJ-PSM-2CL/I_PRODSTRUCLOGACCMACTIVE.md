@@ -1,13 +1,13 @@
 ---
 name: I_PRODSTRUCLOGACCMACTIVE
-description: "Logistics Access Control Management Active"
+description: "Logistics Acc Control Management Active"
 app_component: PLM-WUI-OBJ-PSM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODSTRUCLOGACCMACTIVE')/$value
-semantic_en: "Logistics Access Control Management Active"
+semantic_en: "Logistics Acc Control Management Active"
 tags:
   - PLM
   - component:PLM-WUI-OBJ-PSM-2CL
@@ -20,7 +20,7 @@ tags:
 ---
 # I_PRODSTRUCLOGACCMACTIVE
 
-**Logistics Access Control Management Active**
+**Logistics Acc Control Management Active**
 
 | Property | Value |
 |---|---|

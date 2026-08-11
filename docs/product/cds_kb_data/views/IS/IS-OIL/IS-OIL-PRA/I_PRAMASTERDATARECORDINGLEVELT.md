@@ -1,28 +1,26 @@
 ---
 name: I_PRAMASTERDATARECORDINGLEVELT
-description: "Production Revenue Accounting Master Data Recording Level - Text"
+description: "PRA Master Data Recording Level - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAMASTERDATARECORDINGLEVELT')/$value
-semantic_en: "Production Revenue Accounting Master Data Recording Level - Text"
+semantic_en: "PRA Master Data Recording Level - Text"
 tags:
   - IS
-  - account
   - bo:businesspartner
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
   - master-data
-  - product
   - metadata-only
 ---
 # I_PRAMASTERDATARECORDINGLEVELT
 
-**Production Revenue Accounting Master Data Recording Level - Text**
+**PRA Master Data Recording Level - Text**
 
 | Property | Value |
 |---|---|

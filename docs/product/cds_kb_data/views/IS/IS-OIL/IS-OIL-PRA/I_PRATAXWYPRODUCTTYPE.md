@@ -1,16 +1,15 @@
 ---
 name: I_PRATAXWYPRODUCTTYPE
-description: "Production Revenue Accounting Tax WY Product Type"
+description: "PRA Tax WY Product Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXWYPRODUCTTYPE')/$value
-semantic_en: "Production Revenue Accounting Tax WY Product Type"
+semantic_en: "PRA Tax WY Product Type"
 tags:
   - IS
-  - account
   - bo:material
   - component:IS-OIL-PRA
   - interface-view
@@ -21,7 +20,7 @@ tags:
 ---
 # I_PRATAXWYPRODUCTTYPE
 
-**Production Revenue Accounting Tax WY Product Type**
+**PRA Tax WY Product Type**
 
 | Property | Value |
 |---|---|

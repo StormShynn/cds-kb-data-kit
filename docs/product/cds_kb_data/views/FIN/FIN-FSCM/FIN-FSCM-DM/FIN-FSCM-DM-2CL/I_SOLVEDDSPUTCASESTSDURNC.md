@@ -1,17 +1,18 @@
 ---
 name: I_SOLVEDDSPUTCASESTSDURNC
-description: "Solved Dispute Status Duration - Cube"
+description: "This CDS view is designed to provide insights into the duration of solved dispute cases within an organization. It aggregates data related to dispute cases, including their status, creation and closing dates, and other relevant attributes, to facilitate analysis and reporting on the efficiency and effectiveness of dispute resolution processes in SAP Dispute Management. This CDS view provides the data to answer the following business questions: How long does it take to resolve dispute cases on average? What are the common reasons for disputes and their resolution times? Which company codes and customer groups are most frequently involved in disputes? Who are the primary processors and coordinators handling dispute cases? What are the root causes of disputes and their impact on resolution duration? How does the priority of a dispute case affect its resolution time? What is the distribution of dispute cases across different case types and status profiles? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: FIN-FSCM-DM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SOLVEDDSPUTCASESTSDURNC')/$value
-semantic_en: "Solved Dispute Status Duration - Cube"
+semantic_en: "This CDS view is designed to provide insights into the duration of solved dispute cases within an organization. It aggregates data related to dispute cases, including their status, creation and closing dates, and other relevant attributes, to facilitate analysis and reporting on the efficiency and effectiveness of dispute resolution processes in SAP Dispute Management. This CDS view provides the data to answer the following business questions: How long does it take to resolve dispute cases on average? What are the common reasons for disputes and their resolution times? Which company codes and customer groups are most frequently involved in disputes? Who are the primary processors and coordinators handling dispute cases? What are the root causes of disputes and their impact on resolution duration? How does the priority of a dispute case affect its resolution time? What is the distribution of dispute cases across different case types and status profiles? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FIN
-  - bo:salesorder
+  - bo:businesspartner
   - component:FIN-FSCM-DM-2CL
+  - customer
   - FIN-FSCM
   - FIN-FSCM-DM
   - FIN-FSCM-DM-2CL
@@ -21,7 +22,7 @@ tags:
 ---
 # I_SOLVEDDSPUTCASESTSDURNC
 
-**Solved Dispute Status Duration - Cube**
+**This CDS view is designed to provide insights into the duration of solved dispute cases within an organization. It aggregates data related to dispute cases, including their status, creation and closing dates, and other relevant attributes, to facilitate analysis and reporting on the efficiency and effectiveness of dispute resolution processes in SAP Dispute Management. This CDS view provides the data to answer the following business questions: How long does it take to resolve dispute cases on average? What are the common reasons for disputes and their resolution times? Which company codes and customer groups are most frequently involved in disputes? Who are the primary processors and coordinators handling dispute cases? What are the root causes of disputes and their impact on resolution duration? How does the priority of a dispute case affect its resolution time? What is the distribution of dispute cases across different case types and status profiles? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

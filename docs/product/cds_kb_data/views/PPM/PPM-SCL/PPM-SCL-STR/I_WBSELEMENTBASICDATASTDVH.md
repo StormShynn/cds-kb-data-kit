@@ -1,16 +1,16 @@
 ---
 name: I_WBSELEMENTBASICDATASTDVH
-description: "Basic data for Work Breakdown Structure Element"
+description: "Basic data for WBS Element"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTBASICDATASTDVH')/$value
-semantic_en: "Basic data for Work Breakdown Structure Element"
+semantic_en: "Basic data for WBS Element"
 tags:
   - PPM
-  - bo:wbs
+  - bo:project
   - component:PPM-SCL-STR
   - interface-view
   - PPM-SCL
@@ -19,7 +19,7 @@ tags:
 ---
 # I_WBSELEMENTBASICDATASTDVH
 
-**Basic data for Work Breakdown Structure Element**
+**Basic data for WBS Element**
 
 | Property | Value |
 |---|---|

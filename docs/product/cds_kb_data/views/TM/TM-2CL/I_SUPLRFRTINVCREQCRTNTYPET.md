@@ -1,13 +1,13 @@
 ---
 name: I_SUPLRFRTINVCREQCRTNTYPET
-description: "Supplier Freight Inv Request Crea Type - Text"
+description: "Supplier Freight Inv Req Crea Type - Txt"
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SUPLRFRTINVCREQCRTNTYPET')/$value
-semantic_en: "Supplier Freight Inv Request Crea Type - Text"
+semantic_en: "Supplier Freight Inv Req Crea Type - Txt"
 tags:
   - TM
   - component:TM-2CL
@@ -18,7 +18,7 @@ tags:
 ---
 # I_SUPLRFRTINVCREQCRTNTYPET
 
-**Supplier Freight Inv Request Crea Type - Text**
+**Supplier Freight Inv Req Crea Type - Txt**
 
 | Property | Value |
 |---|---|

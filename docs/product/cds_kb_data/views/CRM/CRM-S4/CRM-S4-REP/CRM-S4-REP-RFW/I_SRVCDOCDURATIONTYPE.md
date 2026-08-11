@@ -34,4 +34,4 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcDocDurationType` |  | |  |  | `CHAR(12)` | Name for Type of Time Duration |
+| `SrvcDocDurationType` |  | |  |  | `CHAR(12)` | Duration Name |

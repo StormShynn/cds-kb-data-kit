@@ -1,16 +1,16 @@
 ---
 name: I_WORKASSGMTADDRESSDEX
-description: "Work Assignment Address Details"
+description: "This CDS view is designed to provide detailed information about work assignment addresses, including various address components and related business partner data. It integrates data from multiple sources to offer a comprehensive view of address details associated with work assignments. This CDS view provides the data to answer the following business questions: What are the address details associated with a specific work assignment? Which business partner is linked to a particular work assignment address? What is the validity period for a given work assignment address? What are the geographical details (country, region, city, etc.) of a work assignment address? Is the business purpose for the associated business partner completed? What is the authorization group for the business partner linked to the work assignment address? Are there any blocked data or restrictions associated with the work assignment? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSGMTADDRESSDEX')/$value
-semantic_en: "Work Assignment Address Details"
+semantic_en: "This CDS view is designed to provide detailed information about work assignment addresses, including various address components and related business partner data. It integrates data from multiple sources to offer a comprehensive view of address details associated with work assignments. This CDS view provides the data to answer the following business questions: What are the address details associated with a specific work assignment? Which business partner is linked to a particular work assignment address? What is the validity period for a given work assignment address? What are the geographical details (country, region, city, etc.) of a work assignment address? Is the business purpose for the associated business partner completed? What is the authorization group for the business partner linked to the work assignment address? Are there any blocked data or restrictions associated with the work assignment? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - CA
-  - bo:salesorganization
+  - bo:companycode
   - CA-WFD
   - CA-WFD-BL
   - component:CA-WFD-BL
@@ -20,7 +20,7 @@ tags:
 ---
 # I_WORKASSGMTADDRESSDEX
 
-**Work Assignment Address Details**
+**This CDS view is designed to provide detailed information about work assignment addresses, including various address components and related business partner data. It integrates data from multiple sources to offer a comprehensive view of address details associated with work assignments. This CDS view provides the data to answer the following business questions: What are the address details associated with a specific work assignment? Which business partner is linked to a particular work assignment address? What is the validity period for a given work assignment address? What are the geographical details (country, region, city, etc.) of a work assignment address? Is the business purpose for the associated business partner completed? What is the authorization group for the business partner linked to the work assignment address? Are there any blocked data or restrictions associated with the work assignment? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

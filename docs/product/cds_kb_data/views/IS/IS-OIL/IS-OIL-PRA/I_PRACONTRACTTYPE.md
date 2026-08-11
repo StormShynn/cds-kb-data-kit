@@ -1,28 +1,25 @@
 ---
 name: I_PRACONTRACTTYPE
-description: "Production Revenue Accounting Contract Type"
+description: "PRA Contract Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRACONTRACTTYPE')/$value
-semantic_en: "Production Revenue Accounting Contract Type"
+semantic_en: "PRA Contract Type"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - contract
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRACONTRACTTYPE
 
-**Production Revenue Accounting Contract Type**
+**PRA Contract Type**
 
 | Property | Value |
 |---|---|

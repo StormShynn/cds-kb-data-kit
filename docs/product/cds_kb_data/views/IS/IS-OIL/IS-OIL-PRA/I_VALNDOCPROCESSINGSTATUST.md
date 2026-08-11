@@ -1,17 +1,16 @@
 ---
 name: I_VALNDOCPROCESSINGSTATUST
-description: "Valuation Document Processing Status - Text"
+description: "Valuation Doc Processing Status - Text"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VALNDOCPROCESSINGSTATUST')/$value
-semantic_en: "Valuation Document Processing Status - Text"
+semantic_en: "Valuation Doc Processing Status - Text"
 tags:
   - IS
   - component:IS-OIL-PRA
-  - document
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
@@ -19,7 +18,7 @@ tags:
 ---
 # I_VALNDOCPROCESSINGSTATUST
 
-**Valuation Document Processing Status - Text**
+**Valuation Doc Processing Status - Text**
 
 | Property | Value |
 |---|---|

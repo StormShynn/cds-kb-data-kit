@@ -1,27 +1,24 @@
 ---
 name: I_PRAROYTYWYOVRRDEOPRTDTYPE
-description: "Production Revenue Accounting Royalty WY Override Owner Operated"
+description: "PRA Royty WY Override Owner Oprtd"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAROYTYWYOVRRDEOPRTDTYPE')/$value
-semantic_en: "Production Revenue Accounting Royalty WY Override Owner Operated"
+semantic_en: "PRA Royty WY Override Owner Oprtd"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRAROYTYWYOVRRDEOPRTDTYPE
 
-**Production Revenue Accounting Royalty WY Override Owner Operated**
+**PRA Royty WY Override Owner Oprtd**
 
 | Property | Value |
 |---|---|

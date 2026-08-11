@@ -1,27 +1,25 @@
 ---
 name: I_PRAONRRLESSORTYPE
-description: "Production Revenue Accounting Office of Natural Resources Revenue Lessor Type"
+description: "PRA ONRR Lessor Type"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAONRRLESSORTYPE')/$value
-semantic_en: "Production Revenue Accounting Office of Natural Resources Revenue Lessor Type"
+semantic_en: "PRA ONRR Lessor Type"
 tags:
   - IS
-  - account
-  - bo:companycode
+  - bo:salesorder
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRAONRRLESSORTYPE
 
-**Production Revenue Accounting Office of Natural Resources Revenue Lessor Type**
+**PRA ONRR Lessor Type**
 
 | Property | Value |
 |---|---|

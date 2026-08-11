@@ -1,15 +1,16 @@
 ---
 name: I_WORKASSIGNMENTDEX_1
-description: "Work Assignments"
+description: "This CDS view is designed to extract data related to work assignments of a worker with details about assignment duration and its status. The view supports data extraction and change data capture, enabling efficient tracking and updating of work assignment information. This CDS view provides the data to answer the following business questions: What are the details of each work assignment, including start and end dates? Which workforce person is associated with each work assignment? Are there any contingent workers within the current work assignments? What is the country code associated with each work assignment? Are there any blocked work assignments that need attention? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 app_component: CA-WFD-BL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WORKASSIGNMENTDEX_1')/$value
-semantic_en: "Work Assignments"
+semantic_en: "This CDS view is designed to extract data related to work assignments of a worker with details about assignment duration and its status. The view supports data extraction and change data capture, enabling efficient tracking and updating of work assignment information. This CDS view provides the data to answer the following business questions: What are the details of each work assignment, including start and end dates? Which workforce person is associated with each work assignment? Are there any contingent workers within the current work assignments? What is the country code associated with each work assignment? Are there any blocked work assignments that need attention? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - CA
+  - bo:companycode
   - CA-WFD
   - CA-WFD-BL
   - component:CA-WFD-BL
@@ -19,7 +20,7 @@ tags:
 ---
 # I_WORKASSIGNMENTDEX_1
 
-**Work Assignments**
+**This CDS view is designed to extract data related to work assignments of a worker with details about assignment duration and its status. The view supports data extraction and change data capture, enabling efficient tracking and updating of work assignment information. This CDS view provides the data to answer the following business questions: What are the details of each work assignment, including start and end dates? Which workforce person is associated with each work assignment? Are there any contingent workers within the current work assignments? What is the country code associated with each work assignment? Are there any blocked work assignments that need attention? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|

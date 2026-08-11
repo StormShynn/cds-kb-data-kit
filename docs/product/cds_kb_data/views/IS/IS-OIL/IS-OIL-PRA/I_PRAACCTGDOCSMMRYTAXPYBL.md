@@ -1,28 +1,25 @@
 ---
 name: I_PRAACCTGDOCSMMRYTAXPYBL
-description: "Production Revenue Accounting Accounting Document Summary Tax Payable"
+description: "PRA Acctg Document Summary Tax Pybl"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRAACCTGDOCSMMRYTAXPYBL')/$value
-semantic_en: "Production Revenue Accounting Accounting Document Summary Tax Payable"
+semantic_en: "PRA Acctg Document Summary Tax Pybl"
 tags:
   - IS
-  - account
-  - bo:journalentry
   - component:IS-OIL-PRA
   - document
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRAACCTGDOCSMMRYTAXPYBL
 
-**Production Revenue Accounting Accounting Document Summary Tax Payable**
+**PRA Acctg Document Summary Tax Pybl**
 
 | Property | Value |
 |---|---|

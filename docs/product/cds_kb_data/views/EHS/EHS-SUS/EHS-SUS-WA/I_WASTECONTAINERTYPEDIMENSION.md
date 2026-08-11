@@ -1,13 +1,13 @@
 ---
 name: I_WASTECONTAINERTYPEDIMENSION
-description: "Waste Analytics Container Type Dimension"
+description: "Waste Analytics Container Type Dimn"
 app_component: EHS-SUS-WA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WASTECONTAINERTYPEDIMENSION')/$value
-semantic_en: "Waste Analytics Container Type Dimension"
+semantic_en: "Waste Analytics Container Type Dimn"
 tags:
   - EHS
   - component:EHS-SUS-WA
@@ -18,7 +18,7 @@ tags:
 ---
 # I_WASTECONTAINERTYPEDIMENSION
 
-**Waste Analytics Container Type Dimension**
+**Waste Analytics Container Type Dimn**
 
 | Property | Value |
 |---|---|

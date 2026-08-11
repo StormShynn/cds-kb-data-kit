@@ -1,18 +1,17 @@
 ---
 name: I_VALNDOCACCTGITEMALL
-description: "Valuation Document Accounting Item All"
+description: "Valuation Doc Accounting Item All"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_VALNDOCACCTGITEMALL')/$value
-semantic_en: "Valuation Document Accounting Item All"
+semantic_en: "Valuation Doc Accounting Item All"
 tags:
   - IS
   - account
   - component:IS-OIL-PRA
-  - document
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
@@ -20,7 +19,7 @@ tags:
 ---
 # I_VALNDOCACCTGITEMALL
 
-**Valuation Document Accounting Item All**
+**Valuation Doc Accounting Item All**
 
 | Property | Value |
 |---|---|

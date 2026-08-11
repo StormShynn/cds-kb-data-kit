@@ -1,18 +1,18 @@
 ---
 name: I_WBSELEMENTDATA_2
-description: "Application interface for Work Breakdown Structure Element Details"
+description: "Appl interface for WBS Element Details"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_WBSELEMENTDATA_2')/$value
-semantic_en: "Application interface for Work Breakdown Structure Element Details"
+semantic_en: "Appl interface for WBS Element Details"
 keywords:
   - "Appl Interface WBSElement Details"
 tags:
   - PPM
-  - bo:wbs
+  - bo:project
   - component:PPM-SCL-STR
   - interface-view
   - PPM-SCL
@@ -21,7 +21,7 @@ tags:
 ---
 # I_WBSELEMENTDATA_2
 
-**Application interface for Work Breakdown Structure Element Details**
+**Appl interface for WBS Element Details**
 
 | Property | Value |
 |---|---|

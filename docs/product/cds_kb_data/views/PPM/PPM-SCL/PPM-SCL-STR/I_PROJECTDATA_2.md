@@ -1,13 +1,13 @@
 ---
 name: I_PROJECTDATA_2
-description: "Application interface for Project details"
+description: "Appl interface for Project details"
 app_component: PPM-SCL-STR
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJECTDATA_2')/$value
-semantic_en: "Application interface for Project details"
+semantic_en: "Appl interface for Project details"
 keywords:
   - "Appl Interface Project Details"
 tags:
@@ -22,7 +22,7 @@ tags:
 ---
 # I_PROJECTDATA_2
 
-**Application interface for Project details**
+**Appl interface for Project details**
 
 | Property | Value |
 |---|---|

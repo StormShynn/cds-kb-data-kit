@@ -1,27 +1,24 @@
 ---
 name: I_PRATAXREJECTSUSPENDIND
-description: "Production Revenue Accounting Tax Reject Suspend Indicator"
+description: "PRA Tax Reject Suspend Indicator"
 app_component: IS-OIL-PRA
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRATAXREJECTSUSPENDIND')/$value
-semantic_en: "Production Revenue Accounting Tax Reject Suspend Indicator"
+semantic_en: "PRA Tax Reject Suspend Indicator"
 tags:
   - IS
-  - account
-  - bo:material
   - component:IS-OIL-PRA
   - interface-view
   - IS-OIL
   - IS-OIL-PRA
-  - product
   - metadata-only
 ---
 # I_PRATAXREJECTSUSPENDIND
 
-**Production Revenue Accounting Tax Reject Suspend Indicator**
+**PRA Tax Reject Suspend Indicator**
 
 | Property | Value |
 |---|---|

@@ -1,13 +1,13 @@
 ---
 name: I_REINTEGOBJECTOBJECT2SPACEGRP
-description: "Real Estate Integration Object to Space Group"
+description: "Real Estate Integ Object to Space Group"
 app_component: RE-FX-IP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_REINTEGOBJECTOBJECT2SPACEGRP')/$value
-semantic_en: "Real Estate Integration Object to Space Group"
+semantic_en: "Real Estate Integ Object to Space Group"
 tags:
   - RE
   - component:RE-FX-IP-2CL
@@ -19,7 +19,7 @@ tags:
 ---
 # I_REINTEGOBJECTOBJECT2SPACEGRP
 
-**Real Estate Integration Object to Space Group**
+**Real Estate Integ Object to Space Group**
 
 | Property | Value |
 |---|---|
