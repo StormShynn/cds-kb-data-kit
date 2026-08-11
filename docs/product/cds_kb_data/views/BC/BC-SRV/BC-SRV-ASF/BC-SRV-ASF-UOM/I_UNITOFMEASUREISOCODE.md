@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` |  |  |
+| `UnitOfMeasureISOCode` | ✓ | |  | `isocode` | `CHAR(3)` | ISO Code for Unit of Measurement |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -30,9 +30,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `HorizontalConsumptionDirection` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as horizontalconsumptiondirection preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `HorizontalCnsmpnDirectionDesc` |  | |  | `cast( ddtext as horizontalcnsmpndirectiondesc preserving type )` |  |  |
+| `HorizontalConsumptionDirection` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as horizontalconsumptiondirection preserving type )` | `CHAR(2)` | Horizontal Consumption Direction |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `HorizontalCnsmpnDirectionDesc` |  | |  | `cast( ddtext as horizontalcnsmpndirectiondesc preserving type )` | `CHAR(60)` | Horizontal Consumption Direction Description |
 | `_Language` | | ✓ | | | | |
 | `_HrzConsumptionDirection` | | ✓ | | | | |
 

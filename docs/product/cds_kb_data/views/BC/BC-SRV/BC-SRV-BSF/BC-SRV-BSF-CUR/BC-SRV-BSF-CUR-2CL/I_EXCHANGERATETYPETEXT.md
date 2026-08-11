@@ -33,9 +33,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ExchangeRateType` | ✓ | |  | `kurst` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ExchangeRateTypeName` |  | |  | `curvw` |  |  |
+| `ExchangeRateType` | ✓ | |  | `kurst` | `CHAR(4)` | Exchange Rate Type |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ExchangeRateTypeName` |  | |  | `curvw` | `CHAR(40)` | Exchange rate type usage |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

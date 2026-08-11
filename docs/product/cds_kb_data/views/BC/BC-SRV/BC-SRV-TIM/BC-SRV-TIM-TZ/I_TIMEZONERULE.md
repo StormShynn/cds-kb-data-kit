@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeZoneRule` | ✓ | |  | `zonerule` |  |  |
-| `UTCTimeZoneTimeDiff` |  | |  | `utcdiff` |  |  |
-| `UTCDifferenceSign` |  | |  | `utcsign` |  |  |
-| `TimeZoneRuleIsActive` |  | |  | `flagactive` |  |  |
+| `TimeZoneRule` | ✓ | |  | `zonerule` | `CHAR(6)` | Time Zone Rule |
+| `UTCTimeZoneTimeDiff` |  | |  | `utcdiff` | `TIMS(6)` | Difference of time zone from UTC (w/o Summer time) |
+| `UTCDifferenceSign` |  | |  | `utcsign` | `CHAR(1)` | Sign of the Difference from UTC (+ or -) |
+| `TimeZoneRuleIsActive` |  | |  | `flagactive` | `CHAR(1)` | Time zones active |
 | `_TimeZoneRuleText` | | ✓ | | | | |
 
 ## Associations

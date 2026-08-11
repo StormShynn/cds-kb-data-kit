@@ -30,8 +30,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AvailabilityChangeLogCategory` | ✓ | |  | `cast ( domvalue_l as atpnetchgcategory )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `AvailabilityChangeLogCategory` | ✓ | |  | `cast ( domvalue_l as atpnetchgcategory )` | `NUMC(2)` | Availability Change Log Category |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

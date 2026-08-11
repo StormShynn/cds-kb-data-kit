@@ -30,10 +30,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SourceCurrency` | ✓ | |  | `fcurr` |  |  |
-| `TargetCurrency` | ✓ | |  | `tcurr` |  |  |
-| `ValidityStartDate` | ✓ | |  | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` |  |  |
-| `CurrencyQuotationType` |  | |  | `notation` |  |  |
+| `SourceCurrency` | ✓ | |  | `fcurr` | `CUKY(5)` | From-Currency |
+| `TargetCurrency` | ✓ | |  | `tcurr` | `CUKY(5)` | To-Currency |
+| `ValidityStartDate` | ✓ | |  | `case gdatu when '' then cast('00000000' as abap.dats) else cast(substring(cast(99999999 - cast(cast(gdatu as abap.numc(8)) as abap.int4) as abap.char(20)), 1, 8) as abap.dats) end` | `DATS(8)` |  |
+| `CurrencyQuotationType` |  | |  | `notation` | `CHAR(1)` | Quotation type for currency translation |
 | `_SourceCurrency` | | ✓ | | | | |
 | `_TargetCurrency` | | ✓ | | | | |
 

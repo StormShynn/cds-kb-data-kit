@@ -30,11 +30,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BPIdentificationType` | ✓ | |  | `type` |  |  |
-| `BPIdentificationCategory` |  | |  | `category` |  |  |
-| `IsBPPerson` |  | |  | `xperson` |  |  |
-| `IsBPOrganization` |  | |  | `xorganisation` |  |  |
-| `IsBPGroup` |  | |  | `xgroup` |  |  |
+| `BPIdentificationType` | ✓ | |  | `type` | `CHAR(6)` | Identification Type |
+| `BPIdentificationCategory` |  | |  | `category` | `CHAR(6)` | BP Identification Category |
+| `IsBPPerson` |  | |  | `xperson` | `CHAR(1)` | Indicator: ID Type Relevant for Persons |
+| `IsBPOrganization` |  | |  | `xorganisation` | `CHAR(1)` | Indicator: ID Type Relevant for Organizations |
+| `IsBPGroup` |  | |  | `xgroup` | `CHAR(1)` | Indicator: ID Type Relevant for Groups |
 
 ## Source Code
 

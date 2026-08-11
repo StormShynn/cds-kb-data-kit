@@ -31,8 +31,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'ATPCheckingGroup'` |  | |  | `representativeKey: 'ATPCheckingGroup'` |  |  |
-| `]` |  | |  | `supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET, #LANGUAGE_DEPENDENT_TEXT, #SEARCHABLE_ENTITY ]` |  |  |
+| `ATPCheckingGroup` | ✓ | |  | `mtvfp` | `CHAR(2)` | Checking Group for Availability Check |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ATPCheckingGroupDescription` |  | |  | `bezei` | `CHAR(20)` | Description |
+| `_ATPCheckingGroup` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ATPCheckingGroup` | `I_ATPCheckingGroup` | [0..1] |
+| `_Language` | `I_Language` | [0..1] |
 
 ## Source Code
 

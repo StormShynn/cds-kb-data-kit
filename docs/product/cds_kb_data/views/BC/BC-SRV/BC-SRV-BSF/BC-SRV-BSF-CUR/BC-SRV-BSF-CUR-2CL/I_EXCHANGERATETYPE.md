@@ -31,14 +31,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ExchangeRateType` | ✓ | |  | `kurst` |  |  |
-| `ReferenceCurrency` |  | |  | `cast(tcurv.bwaer as fis_bwaer_curv preserving type )` |  |  |
-| `BuyingRateAvgExchangeRateType` |  | |  | `cast(tcurv.gkuzu as fis_gkuzu_cur preserving type )` |  |  |
-| `InvertedExchangeRateIsAllowed` |  | |  | `cast(tcurv.xinvr as fis_xinvr_curv preserving type )` |  |  |
-| `SellingRateAvgExchangeRateType` |  | |  | `cast(bkuzu as fis_bkuzu_cur preserving type )` |  |  |
-| `FixedExchangeRateIsUsed` |  | |  | `cast(xfixd as fis_xfixd_curv preserving type )` |  |  |
-| `SpecialConversionIsUsed` |  | |  | `cast(xeuro as fis_xeuro_curv preserving type )` |  |  |
-| `SourceCurrencyIsBaseCurrency` |  | |  | `xbwrl` |  |  |
+| `ExchangeRateType` | ✓ | |  | `kurst` | `CHAR(4)` | Exchange Rate Type |
+| `ReferenceCurrency` |  | |  | `cast(tcurv.bwaer as fis_bwaer_curv preserving type )` | `CUKY(5)` | Reference currency for currency translation |
+| `BuyingRateAvgExchangeRateType` |  | |  | `cast(tcurv.gkuzu as fis_gkuzu_cur preserving type )` | `CHAR(4)` | Exch. rate type of av. rate used to determine buying rate |
+| `InvertedExchangeRateIsAllowed` |  | |  | `cast(tcurv.xinvr as fis_xinvr_curv preserving type )` | `CHAR(1)` | Indicator: Calculation allowed with inverted exchange rate ? |
+| `SellingRateAvgExchangeRateType` |  | |  | `cast(bkuzu as fis_bkuzu_cur preserving type )` | `CHAR(4)` | Exch.rate type of av. rate used to determine selling rate |
+| `FixedExchangeRateIsUsed` |  | |  | `cast(xfixd as fis_xfixd_curv preserving type )` | `CHAR(1)` | Indicator: Exchange rate type uses fixed exchange rates |
+| `SpecialConversionIsUsed` |  | |  | `cast(xeuro as fis_xeuro_curv preserving type )` | `CHAR(1)` | Indicator: Exchange rate type uses special translation model |
+| `SourceCurrencyIsBaseCurrency` |  | |  | `xbwrl` | `CHAR(1)` | Ind.: Base curr. is "from" curr. in the exchange rate table |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

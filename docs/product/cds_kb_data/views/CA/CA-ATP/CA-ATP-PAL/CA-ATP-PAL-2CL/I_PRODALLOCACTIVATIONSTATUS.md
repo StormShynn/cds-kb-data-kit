@@ -31,7 +31,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProdAllocationActivationStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationactivationstatus preserving type )` |  |  |
+| `ProdAllocationActivationStatus` | ✓ | |  | `cast ( substring( domvalue_l, 1, 2 ) as prodallocationactivationstatus preserving type )` | `CHAR(2)` | Product Allocation Activation Status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations
