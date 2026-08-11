@@ -5,15 +5,9 @@ app_component: PM-PRM-MP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTPLANSCHEDGOVERVIEWCUBE')/$value
 semantic_en: "Maintenance Plan Scheduling Overview - Cube"
-semantic_vi: "I_MAINTPLANSCHEDGOVERVIEWCUBE — CDS view giao diện dựa trên I_MAINTPLANSCHEDGOVERVIEWCUBE."
-keywords:
-  - "maintplanschedgoverviewcube"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - PM
   - component:PM-PRM-MP-2CL
@@ -23,6 +17,7 @@ tags:
   - PM-PRM
   - PM-PRM-MP
   - PM-PRM-MP-2CL
+  - metadata-only
 ---
 # I_MAINTPLANSCHEDGOVERVIEWCUBE
 
@@ -34,20 +29,90 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTPLANSCHEDGOVERVIEWCUBE')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTPLANSCHEDGOVERVIEWCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTPLANSCHEDGOVERVIEWCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTPLANSCHEDGOVERVIEWCUBE')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodtbxcyfxefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQzYjdjOGY3ZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTc6MzZaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kM2I3YzhmN2VmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPlBna2Nob0ZxTnhoTnhnaVZrREdJYmtxSlNCOD08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;ZEhUVDVHWXhnTmJCUUNiOUh1YmlIenNlVWY1U252R241aU1aNDhKM0lHWFBCKzlpYis5NTVESEMxUHZhdkt6MmdOT3EzdHIyRUZ3NwpDQlExbFZUeEdwcFcvZmZuSFNaVWZzUFdCUmhvUkZ0LytwOTRtQlBjY0FpaXJnbEViblZ2SDQwNm5QVlZIelNHRUFiSnlTMGd3Wk9yCnhhUDZTUm9PdVdKZ3pkSWNCYi9sNWs1VjY2b3pwcmxNdDNIYTE3Vmh5eVpXUEc2QTZ0b1ZKNnI5TEJYS2d6R3Jzb0g3aDFtYVRiUkwKLzBaNWlacy94SDZXZEFlSVI5R252eVF3bzh6dW9HSUNOajAwYmJVZFRRbU5aaEw4VHBtdm9yVGFOb01JQnZxWVBZbjM5K1pKbGdobgpBV00zVHlsekpKNW1za0JOVnUzaUR2YzE1bFlXbHdxNE5xT0d1WVhOVHBubGZyOFpTQTdGZ2NDckJqRys0czlXU3hmbVBuNGllZmQwCm81TksrRWY1dHBlemo1YmJzam11aWhFb0k5YW1NbkFUMTZpS2UrbEN4WVI5K2J6VnZZS3BGTmRuL0lJNWZOZStReXVpMGU2bEJNY0EKNVFGeGRCVHNPdlE1ZnBkdnFKcGVsbnNhZ3dXYVd4aUVkSGx2aG1zbTFHV2pDbnVzZXcvMkJ3d1Y8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodtbxcyfxefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `MaintenancePlan` |  | |  |  | `CHAR(12)` | Maintenance Plan |
+| `MaintenancePlanCallNumber` |  | |  |  | `INT4(10)` | Maintenance Plan Call Number |
+| `MaintenanceItem` |  | |  |  | `CHAR(16)` | Maintenance Item |
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintenanceNotification` |  | |  |  | `CHAR(12)` | Notification Number |
+| `MaintCallHorizonIsNotReached` |  | |  |  | `CHAR(1)` | Scheduling status: call horizon not reached |
+| `PlannedStartDate` |  | |  |  | `DATS(8)` | Basic start date |
+| `LatestAcceptableCompletionDate` |  | |  |  | `DATS(8)` | Final Due Date |
+| `ReleasedByUserName` |  | |  |  | `CHAR(1)` | Scheduling determined by user |
+| `ServiceOrder` |  | |  |  | `CHAR(10)` | Transaction ID |
+| `CompletionDate` |  | |  |  | `DATS(8)` | Completion Date for Call Object |
+| `CompletionTime` |  | |  |  | `TIMS(6)` | Completion Time for Call Object |
+| `RevisionNumber` |  | |  |  | `NUMC(3)` | Revision Number |
+| `MaintenancePlanCategory` |  | |  |  | `CHAR(2)` | Maintenance Plan Category |
+| `MaintenanceStrategy` |  | |  |  | `CHAR(6)` | Maintenance Strategy |
+| `MaintenanceCallNextPlannedDate` |  | |  |  | `DATS(8)` | Next planned date |
+| `MaintenanceCallDate` |  | |  |  | `DATS(8)` | Call date |
+| `MaintPlanLastScheduledDate` |  | |  |  | `DATS(8)` | Date of the call |
+| `MaintenancePlanCallStatus` |  | |  |  | `CHAR(30)` | Maintenance Plan Call Status |
+| `MaintenancePlanSortField` |  | |  |  | `CHAR(20)` | Sort field for maintenance plans |
+| `MaintenancePlanCycle` |  | |  |  | `NUMC(2)` | Counter in Control Tables |
+| `MeasuringPoint` |  | |  |  | `CHAR(12)` | Measuring Point |
+| `MaintPlanActiveSystemStatus` |  | |  |  | `CHAR(30)` | Maintenance Plan Status |
+| `MaintenanceItemDescription` |  | |  |  | `CHAR(40)` | Maintenance Item Description |
+| `MaintenancePlanType` |  | |  |  | `CHAR(10)` | Maintenance Plan Type |
+| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `FunctionalLocationObjectType` |  | |  |  | `CHAR(10)` | Object Type of Functional Location |
+| `ConstructionMaterial` |  | |  |  | `CHAR(40)` | Construction type material of the object |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `EquipmentObjectType` |  | |  |  | `CHAR(10)` | Object Type of Equipment |
+| `Class` |  | |  |  | `CHAR(18)` | Class number |
+| `Assembly` |  | |  |  | `CHAR(40)` | Assembly |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `SerialNumber` |  | |  |  | `CHAR(18)` | Serial Number |
+| `MaintItemHasObjectList` |  | |  |  | `CHAR(1)` | Indicator if an Object List is linked to the Maint Item |
+| `MaintenancePlannerGroup` |  | |  |  | `CHAR(3)` | Planner Group for Customer Service and Plant Maintenance |
+| `MaintenancePlanningPlant` |  | |  |  | `CHAR(4)` | Maintenance Planning Plant |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `MaintenanceOrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `NotificationType` |  | |  |  | `CHAR(2)` | Notification Type |
+| `MaintenanceActivityType` |  | |  |  | `CHAR(3)` | Maintenance activity type |
+| `MainWorkCenterInternalID` |  | |  |  | `NUMC(8)` | Object ID of the Work Center |
+| `MainWorkCenter` |  | |  |  | `CHAR(8)` | Work Center |
+| `TaskListType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `TaskListGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `TaskListGroupCounter` |  | |  |  | `CHAR(2)` | Group Counter |
+| `PurchaseOrder` |  | |  |  | `CHAR(10)` | Purchase Order Number |
+| `PurchaseOrderItem` |  | |  |  | `NUMC(5)` | Purchase order item number |
+| `ServiceEntrySheet` |  | |  |  | `CHAR(10)` | Entry Sheet Number |
+| `MaintenancePlant` |  | |  |  | `CHAR(4)` | Maintenance Plant |
+| `AssetLocation` |  | |  |  | `CHAR(10)` | Location of maintenance object |
+| `AssetRoom` |  | |  |  | `CHAR(8)` | Room |
+| `PlantSection` |  | |  |  | `CHAR(3)` | Plant Section |
+| `WorkCenter` |  | |  |  | `CHAR(8)` | Work Center |
+| `ABCIndicator` |  | |  |  | `CHAR(1)` | ABC Indicator for Technical Object |
+| `MaintObjectFreeDefinedAttrib` |  | |  |  | `CHAR(30)` | Sort Field |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `MasterFixedAsset` |  | |  |  | `CHAR(12)` | Main Asset Number |
+| `FixedAsset` |  | |  |  | `CHAR(4)` | Asset Subnumber |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `StandingOrderNumber` |  | |  |  | `CHAR(12)` | Standing order number |
+| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
+| `SalesDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Technical Object Authorization Group |
+| `NumberOfMaintenancePlanCalls` |  | |  |  | `DEC(9)` | Number of Maintenance Plan Calls |
+| `NrOfMrkdForDeltnMaintPlans` |  | |  |  | `DEC(9)` | Number of Maintenance Plans Marked for Deletion |
+| `NrOfInactiveMaintenancePlans` |  | |  |  | `DEC(9)` | Number of  inactive Maintenance Plans |
+| `NrOfScheduledMaintenancePlans` |  | |  |  | `DEC(9)` | Number of scheduled Maintenance Plans |
+| `NrOfCreatedMaintenancePlans` |  | |  |  | `DEC(9)` | Number of created Maintenance Plans |
+| `NrOfFixedMaintenancePlanCalls` |  | |  |  | `DEC(9)` | Number of fixed Maintenance Plan calls |
+| `NrOfSkippedMaintPlanCalls` |  | |  |  | `DEC(9)` | Number of skipped Maintenance Plan calls |
+| `NrOfMnllyCalledMaintPlnCalls` |  | |  |  | `DEC(9)` | Number of manually called Maintenance Plan calls |
+| `NrOfCalledMaintenancePlanCalls` |  | |  |  | `DEC(9)` | Number of called Maintenance Plan calls |
+| `NrOfCompletedMaintPlanCalls` |  | |  |  | `DEC(9)` | Number of completed Maintenance Plan calls |
+| `NrOfOnHoldMaintenancePlanCalls` |  | |  |  | `DEC(9)` | Number of on hold Maintenance Plan calls |
+| `NrOfInactiveMaintPlanCalls` |  | |  |  | `DEC(9)` | Number of inactive Maintenance Plan calls |

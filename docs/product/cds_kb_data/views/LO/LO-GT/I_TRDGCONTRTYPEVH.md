@@ -5,15 +5,9 @@ app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRTYPEVH')/$value
 semantic_en: "Trading Contract Type"
-semantic_vi: "I_TRDGCONTRTYPEVH — CDS view giao diện dựa trên I_TRDGCONTRTYPEVH."
-keywords:
-  - "trdgcontrtypevh"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - LO
   - component:LO-GT
@@ -21,6 +15,7 @@ tags:
   - interface-view
   - LO-GT
   - lob:logistics general
+  - metadata-only
 ---
 # I_TRDGCONTRTYPEVH
 
@@ -32,20 +27,14 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRTYPEVH')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRTYPEVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRTYPEVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRTYPEVH')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzoewwzyrszwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWU2Njk4MTI5NmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MjE6NDdaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1lNjY5ODEyOTZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPkUrdzg4eXRtaG04eW5JYUROOTRnenduc2Fjcz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;TXFUdEVXMkF4RTBkNVdtSTNhUVBVeVlxam1NQ2dKb0NORVF6TldVUUt5NG96dUlKcUNVOWdCeHRVNWd1MWpQTkpMay9hWk1kb1Z3VQpwUzBLNHVQR0pTSklmL2F1MWs2TjY4RFpjbkhicUtxQnBuekErbTVWMitsUzRwaHVnc1FTUmFJL3UrNlNiMTlTenRUWkhBMU5TdlZ3CmpOOHNWNDhIdTZDc0dtR2hJQkJxdEo2eE1IOCtURjlRanEvbjc1QjRZNHZGVG1CUE9aRWUrZHZleDFzS2NNejdxak5UZDlVekYvWUEKaVd1UXl0TFgwWERyanJXZHpYd3dUZ1JTR3hNVFQ4UjVpeEQzVElQOFAvTEZKWjF2ZXJEQ1E5TGJsRXFjdHRSQVlrRVdjTTdQTG9rVwpLcjBVWDVXVDhLc29CYWRpT1RsQUdQMFJuYW02bVZqb0hZUWllallHZDQ3aHJ1clBOaW5sVlhMZmM1eU9RM1lieVhiV0dVVXpzdG9QCi9NQmU4dVJoZWVvWkx4WGRxeUo5R1RxSWU2Z1lRNlFOY1F6TGxCV0ROVDV4bjkrcG1qdkVDb1lraFlER09YSzlRZUxzSUxJZC9BUDcKU20zOVFkMEdNSmx4aFU2Z2kxTnB1WHZVbTJGYXdUNU5jdU1iengvSVlzem5HR2dKeTR3djFzb2s8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzoewwzyrszwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `TradingContractType` |  | |  |  | `CHAR(4)` | Reference Document Type |
+| `TrdgContrCtrlGrpPurg` |  | |  |  | `CHAR(4)` | Control Group Purchasing for Trading Contracts |
+| `TrdgContrCtrlGrpSls` |  | |  |  | `CHAR(4)` | Control Group Sales for Trading Contracts |
+| `TrdgContrTypeName` |  | |  |  | `CHAR(40)` | Trading Contract Type Description |
+| `TrdgContrSglOrganizationalData` |  | |  |  | `CHAR(1)` | Control of Organizational Data Entry |

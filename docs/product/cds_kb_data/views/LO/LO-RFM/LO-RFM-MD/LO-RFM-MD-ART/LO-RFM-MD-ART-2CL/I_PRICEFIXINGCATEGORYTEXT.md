@@ -5,15 +5,9 @@ app_component: LO-RFM-MD-ART-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRICEFIXINGCATEGORYTEXT')/$value
 semantic_en: "Price Fixing Category - Text"
-semantic_vi: "I_PRICEFIXINGCATEGORYTEXT — CDS view giao diện dựa trên I_PRICEFIXINGCATEGORYTEXT."
-keywords:
-  - "pricefixingcategorytext"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - LO
   - bo:companycode
@@ -24,6 +18,7 @@ tags:
   - LO-RFM-MD-ART
   - LO-RFM-MD-ART-2CL
   - lob:logistics general
+  - metadata-only
 ---
 # I_PRICEFIXINGCATEGORYTEXT
 
@@ -35,20 +30,12 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRICEFIXINGCATEGORYTEXT')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRICEFIXINGCATEGORYTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRICEFIXINGCATEGORYTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRICEFIXINGCATEGORYTEXT')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodwyduuacwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQ2OGQ0NGFjNmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTg6MTRaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kNjhkNDRhYzZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPlN2REtCWVdBdjFJZ3BGRTJHWmdnbXlUMWEzcz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;ZTBBT2MrdnF6cHVEYzY1R1VxcTFvUm1MYUZtd3VpNFZkT2lGNjB1Vkl4eENoQWY3a2JtQ2ViRXZyZE1WQ0ZQbGtCMWlaZkY2WlpjegptSUxCalBvWjA5dTBDRmJ3bkE4V3RTT2hKTDZ3UjREM1p4UEh3amNFSW5oWEdaSzY5M1p3YURVeTRDZVNzUDZnUHVMTnpEU2RwVDJmCnJCYzdvMFRkN1haWktIeWN0NXlNbVRZOTg3MGU5RmE2S29PWEwxaFB4RzFiU2UrelZtbEdNTWFob2pjeWluZnRENTV6Y2dLV0U3S0QKYm5VeXRIVDdlNHAwT0lMQ1hkeXp6T1VhaUI3SEdCMUQyL2QvNVhCMGFJOVc0UjF6VHgyWlVMY2x3Q3VRL0k3cVdPVWNBdE1RNU5GTQpsMjBsNzBEZE84dVByUk5wd01saXFTOTZwcFpiYVlOTUtWMHJvbTZ5RVo2bzQxSFI5RHFMK0JiYXJrclZnQk9hY1NyY1BSWXViVS9iCnBiQVZRQW5rK1JIaFk3cHFSVGJ0dzFsWDN5NjRoVUZGTnBVUU5rYjlvTVZ5NUVwMi9xUklLRUdTbmhETFU5cEIySnhRd0VrNXhQOXYKMU9mOHRoRzlCVEE2YzE5dmRCYWxqMzVwb21iWnNacXdnbzNzR0NPQjZESWRHRURBS2d0T202MlQ8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodwyduuacwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `PriceFixingCategory` |  | |  |  | `CHAR(1)` | Indicator for price fixing |
+| `PriceFixingCategoryDesc` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |

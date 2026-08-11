@@ -5,15 +5,9 @@ app_component: CO-PC-PCP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTCOSTESTIMATEITEMDEX')/$value
 semantic_en: "This CDS view provides the results at item level of cost estimates for materials, sales document items and other planning objects. The information can be used to analyze the calculated costs and the origins of the costs. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
-semantic_vi: "I_PRODUCTCOSTESTIMATEITEMDEX — CDS view giao diện dựa trên I_PRODUCTCOSTESTIMATEITEMDEX."
-keywords:
-  - "productcostestimateitemdex"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - CO
   - bo:companycode
@@ -26,8 +20,7 @@ tags:
   - lob:controlling
   - material
   - plan
-  - bo:material
-  - product
+  - metadata-only
 ---
 # I_PRODUCTCOSTESTIMATEITEMDEX
 
@@ -39,20 +32,73 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTCOSTESTIMATEITEMDEX')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTCOSTESTIMATEITEMDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTCOSTESTIMATEITEMDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTCOSTESTIMATEITEMDEX')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodxzxzdresfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQ3OTc5ZDFlMmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTg6MjhaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kNzk3OWQxZTJmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPk56UUxKYzFFbWlXaHc2d3J1UVBNSm4yVnY3bz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;V3NGMVppUzA5eEhLM3BGclNubkdDZjlRU0djS1JjeUJWQ2lPVnl5U01DdFBXSFBEMFgwMkVvRmFSMUgvL1VCVThnU1RibWhaVVVCWgpCNVZGY2YraHZXdFJpTllDRWNLRXFtazNRK1d1WSsvT3Y3VXVFREhGRmQ0MjB3VThwSjBrTk1RWmF0eHM5RmFGRGxXWERrbWQyVThLCktBeHM2NHVPbVkyRmp6WFI4Yy9mVnRVendGZG8rcDZMWDhBVDNGMkN5TS9seVZ2VlFsYW5KWkZvY3ZqQlk2b2hIV1dtNmh2L2lodWkKWmdEcndJeUxua0Z6SE5LaUZBMTNKNTJPOGc5ZlBvWWFhMmtnRnhsbCtqWVI2QmJTcmFYUEd5dHBtOFlhdkdXZUtJUmlFdmtaejlPcApzdjdNL0tGM1dyVi92Mk9LNG1FSjUvYXRvWklqSyttOTFmSWJtZ1Byb01xMjQ5S1NRVHJ1OGZ4d2pMb2dXQ1dMNmtlMUVhTkVEd2tsCkpWdWc4Nm50VmR3c3Y3d2dDay9BNlNNTjNpcUdkaGVCbURHN2hvZDRnMk5HakFpd0srL3RxQlludW1SZ1g1SkhpVTZmeG03cVlOMisKVm5mcjdkdzFYdTArSmx2V1k3UkRTS1ExMHZMeEJVSXhPQmhUWjZBanNuMWdqay9UZVdHLzhIWDc8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodxzxzdresfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `ControllingLedger` |  | |  |  | `CHAR(2)` | Ledger for Controlling Objects |
+| `CostingReferenceObject` |  | |  |  | `CHAR(1)` | Reference Object |
+| `CostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate |
+| `CostingType` |  | |  |  | `CHAR(2)` | Costing Type |
+| `CostingDate` |  | |  |  | `DATS(8)` | Costing Date (Key) |
+| `CostingVersion` |  | |  |  | `NUMC(2)` | Costing Version |
+| `ValuationVariant` |  | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `CostIsEnteredManually` |  | |  |  | `CHAR(1)` | Costs Entered Manually in Additive or Automatic Cost Est. |
+| `CostingItem` |  | |  |  | `NUMC(5)` | Unit Costing Line Item Number |
+| `CostingItemCategory` |  | |  |  | `CHAR(1)` | Item Category |
+| `CostElement` |  | |  |  | `CHAR(10)` | Cost Element |
+| `CostOriginGroup` |  | |  |  | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
+| `CostComponent` |  | |  |  | `NUMC(3)` | Cost Component Number of Main Cost Component Split |
+| `AuxiliaryCostComponent` |  | |  |  | `NUMC(3)` | Cost Component Number of Auxiliary Cost Component Split |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `Material` |  | |  |  | `CHAR(40)` | Product |
+| `ValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `Creditor` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `GroupCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `TotalPriceInGroupCrcy` |  | |  |  | `CURR(15)` | Total Price in Group Currency |
+| `FixedPriceInGroupCrcy` |  | |  |  | `CURR(15)` | Fixed Price in Group Currency |
+| `TotalAmountInGroupCrcy` |  | |  |  | `CURR(15)` | Total Value in Group Currency |
+| `FixedAmountInGroupCurrency` |  | |  |  | `CURR(15)` | Fixed Value in Group Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `TotalPriceInCompanyCodeCrcy` |  | |  |  | `CURR(15)` | Total Price in Company Code Currency |
+| `FixedPriceInCompanyCodeCrcy` |  | |  |  | `CURR(15)` | Fixed Price in Company Code Currency |
+| `TotalAmountInCoCodeCrcy` |  | |  |  | `CURR(15)` | Total Amount in Company Code Currency |
+| `FixedAmountInCoCodeCrcy` |  | |  |  | `CURR(15)` | Fixed Amount in Company Code Currency |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `QuantityInBaseUnit` |  | |  |  | `QUAN(15)` | Quantity |
+| `AssyScrapQuantityInValnQtyUnit` |  | |  |  | `QUAN(15)` | Scrap Quantity |
+| `CompScrapQuantityInValnQtyUnit` |  | |  |  | `QUAN(15)` | Component Scrap Quantity |
+| `CostingPriceUnitQty` |  | |  |  | `DEC(5)` | Price Unit of Prices in Controlling Area Currency |
+| `CostingPriceQtyUnit` |  | |  |  | `UNIT(3)` | Price Quantity Unit |
+| `CostingObject` |  | |  |  | `NUMC(8)` | Object ID |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `Operation` |  | |  |  | `CHAR(4)` | Operation or Phase Number |
+| `CostingValuationStrategy` |  | |  |  | `CHAR(1)` | Valuation Strategy for Material Component |
+| `MaterialValnPurgInfoRecdStrgy` |  | |  |  | `CHAR(1)` | Substrategy for Material Valuat. with Purchasing Info Record |
+| `PurchasingInfoRecord` |  | |  |  | `CHAR(10)` | Purchasing Info Record Number |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingInfoRecordCategory` |  | |  |  | `CHAR(1)` | Purchasing info record category |
+| `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document Number |
+| `PurchasingDocumentItem` |  | |  |  | `NUMC(5)` | Item Number of Purchasing Document |
+| `TransferCostEstimate` |  | |  |  | `NUMC(12)` | Transfer Cost Estimate |
+| `TransferCostingType` |  | |  |  | `CHAR(2)` | Transfer Costing Type |
+| `TransferCostingDate` |  | |  |  | `DATS(8)` | Transfer Costing Date |
+| `TransferCostingVersion` |  | |  |  | `NUMC(2)` | Transfer Costing Version |
+| `TransferValuationVariant` |  | |  |  | `CHAR(3)` | Transfer Valuation Variant |
+| `CostEstIsMixedCosting` |  | |  |  | `CHAR(1)` | Mixed Costing Indicator |
+| `CostgMixingRatioValue` |  | |  |  | `DEC(13)` | Mixing Ratio |
+| `ProcmtAltvCostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate Number of Procurement Alternative |
+| `BillOfMaterialItemNumber` |  | |  |  | `CHAR(4)` | Bill of Material Item Number |
+| `CostingItemIsAssembly` |  | |  |  | `CHAR(1)` | Assembly Indicator for Item |
+| `ValuationSegmentation` |  | |  |  | `CHAR(30)` | Valuation Segmentation Unit |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `LowLevelCode` |  | |  |  | `CHAR(3)` | Low-Level Code |
+| `CostCompSplitIsExisting` |  | |  |  | `CHAR(1)` | Main Cost Component Split for KALKTAB Item Exists |
+| `HasError` |  | |  |  | `CHAR(1)` | Error Indicator |
+| `IsLotSizeIndependent` |  | |  |  | `CHAR(1)` | Lot-Size-Independent Indicator |

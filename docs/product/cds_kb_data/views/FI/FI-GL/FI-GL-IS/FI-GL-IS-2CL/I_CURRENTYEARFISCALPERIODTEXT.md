@@ -1,53 +1,41 @@
 ---
 name: I_CURRENTYEARFISCALPERIODTEXT
-description: "Fiscal Period of Current Fiscal Year - Text"
-app_component: FI-GL-IS-2CL
+description: "This CDS view provides a dimension for fiscal periods within a fiscal year variant, excluding special periods and independent of specific fiscal years. It serves as a reusable analytical dimension that represents the period structure (e.g., Period 1 through Period 12) for a given fiscal year variant without being tied to actual calendar years. The view filters out special periods and provides text associations for period descriptions. This CDS view provides the data to answer the following business questions: What are the standard fiscal periods defined for each fiscal year variant in the system? Which fiscal periods are available for reporting and analysis purposes, excluding special closing periods? What is the descriptive text for each fiscal period within a specific fiscal year variant? How many regular posting periods are configured for a given fiscal year variant? What is the period structure that can be used across multiple fiscal years for consistent period-based analysis? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+app_component: FI-GL-GL-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTYEARFISCALPERIODTEXT')/$value
-semantic_en: "Fiscal Period of Current Fiscal Year - Text"
-semantic_vi: "I_CURRENTYEARFISCALPERIODTEXT — CDS view giao diện dựa trên I_CURRENTYEARFISCALPERIODTEXT."
-keywords:
-  - "currentyearfiscalperiodtext"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
+semantic_en: "This CDS view provides a dimension for fiscal periods within a fiscal year variant, excluding special periods and independent of specific fiscal years. It serves as a reusable analytical dimension that represents the period structure (e.g., Period 1 through Period 12) for a given fiscal year variant without being tied to actual calendar years. The view filters out special periods and provides text associations for period descriptions. This CDS view provides the data to answer the following business questions: What are the standard fiscal periods defined for each fiscal year variant in the system? Which fiscal periods are available for reporting and analysis purposes, excluding special closing periods? What is the descriptive text for each fiscal period within a specific fiscal year variant? How many regular posting periods are configured for a given fiscal year variant? What is the period structure that can be used across multiple fiscal years for consistent period-based analysis? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
 tags:
   - FI
   - bo:companycode
-  - component:FI-GL-IS-2CL
+  - component:FI-GL-GL-2CL
   - FI-GL
-  - FI-GL-IS
-  - FI-GL-IS-2CL
+  - FI-GL-GL
+  - FI-GL-GL-2CL
   - interface-view
   - lob:finance
+  - metadata-only
 ---
 # I_CURRENTYEARFISCALPERIODTEXT
 
-**Fiscal Period of Current Fiscal Year - Text**
+**This CDS view provides a dimension for fiscal periods within a fiscal year variant, excluding special periods and independent of specific fiscal years. It serves as a reusable analytical dimension that represents the period structure (e.g., Period 1 through Period 12) for a given fiscal year variant without being tied to actual calendar years. The view filters out special periods and provides text associations for period descriptions. This CDS view provides the data to answer the following business questions: What are the standard fiscal periods defined for each fiscal year variant in the system? Which fiscal periods are available for reporting and analysis purposes, excluding special closing periods? What is the descriptive text for each fiscal period within a specific fiscal year variant? How many regular posting periods are configured for a given fiscal year variant? What is the period structure that can be used across multiple fiscal years for consistent period-based analysis? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views.**
 
 | Property | Value |
 |---|---|
-| App Component | `FI-GL-IS-2CL` |
+| App Component | `FI-GL-GL-2CL` |
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTYEARFISCALPERIODTEXT')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTYEARFISCALPERIODTEXT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTYEARFISCALPERIODTEXT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CURRENTYEARFISCALPERIODTEXT')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocxdztryssfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWM3ZDkzMTgyMmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTQ6NTZaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jN2Q5MzE4MjJmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPmpuWms1TUFqZXRnaUVBQzg5ZW1pZm5ONUU1bz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;SUxZNEl2b3hQdWpINWtwdzVFc05qUnBuWUV1SzJhYXBxT1JXUEdOb2lWT0ZnV1labDYwWEtVS3dRdEU4emJ6OTFCcDRjRDNTY2pUZQplanJYdU4weEJ3QXhMcUU0ODVEcXRSNTNiWHIvSnp3UjFWQW16dXl2MFlSVnZaeEdxdkY3R1RlczlBSVdIdXhlSE95Y1dRRGhuRVJMCmxFNFcvWU5UZmFKTEhhUXdITFhBTDBwYzBWVUEvblozZkhQbU84T3cxajNVaEErcXYvMkxaVjRRc0VUSXgzUmhOci9BYU8zSWtOeUYKS0VEclVoc0JncE5lYWFNMFBMSTg2WE9CVDhuRjMxWmY2U3cySlpoLzdTV1FNYno1ZHl2UGttcW02N01CQ0lqVHlXR28xcGVOMEwvNQoya0dHMlMrU05TajJwREpOY0ZtZnQ0YU53K1g2WjljY3NHUkxnZWxveE5CL3BVbWhhbERIbE9IZk5Na1NpZmd6cXFzNm5HSnFybzlWCmNPNlQxTjVxZURoYXpSNXMrS09oVmlnQTRDVzNwWW5tMDdvQldmc1J0MnJMM3FsRExSc2E2WXJWUzNvS09qT3pacWQ3QzBFUHpaZDAKc2FCdlpTNHI2VmtNZTNoSjR5Q0R1amZPKzVESEpuTzlRazBRdEVQTDlxdmR3WUo4OXZhNlhuRFo8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocxdztryssfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalPeriodName` |  | |  |  | `CHAR(20)` | Period name long text |

@@ -5,21 +5,16 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTBANKDATA')/$value
 semantic_en: "Expense Settlement Bank Data"
-semantic_vi: "I_EXPNSETTLMTBANKDATA — CDS view giao diện dựa trên I_EXPNSETTLMTBANKDATA."
-keywords:
-  - "expnsettlmtbankdata"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - LO
   - component:LO-AB
   - interface-view
   - LO-AB
   - lob:logistics general
+  - metadata-only
 ---
 # I_EXPNSETTLMTBANKDATA
 
@@ -31,20 +26,28 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTBANKDATA')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTBANKDATA')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTBANKDATA')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_EXPNSETTLMTBANKDATA')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocbubccbzafwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWNiNGJjY2I5YWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTU6NDJaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jYjRiY2NiOWFmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPm5PUzVxTHM0MnRhU1RMODJWR1NtOG9CN0gwMD08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;ZkZNUm9tUG1DM1g4L2NhUWE1SWlkYWw1ZEdRMDdaZ2dMYU5tOHNZL09nRDdGUEdmZ0dFWXkzSWhQL1pPc3J3UEpuTlBCMWEzelNxZApFNmVMbElya1hFWXRqR2lHS1orNWRKQWxvTWwzM3NSRXNHM3pQRUhuaUJQQTJKVnRnT2l5YjcwNjZhc1VQaDk3ZUNNeEs2WUdVdDhCCkUzdTVNTjk0ZmlvaTlQSlhySk5GUE1qMEZwd2FGWk5BTmVUY20yUTlVWjhxaDZmQWxka1pLRlVBU1ZWcjEvRFVTay9ud3JiY2dpbk0KRUxhdXBZdTNEc3BMNzdXU3psa0EvcjgxRmlaYnJjbVVwTHRRYjFVYnNrYjIvSXV5RWZIdjFVOFFjOFBxTm1NV1pSYVdycVJRRHhJYQp3bjd4K0RCQnNVSWRqY0M0WWdRTzVQVS8xSU5KTTB2Z0NKaFR3Nm16QUI2cXRJTDdFVER6T2NXd2p0YndmUXltTU9oSHFxQjF2NFVVCk5EZkhaUUNUWG54NEhMYnVOUXNLaWRsK0VETDhUcVhOeUl4L0FPeXBCUnVCbFQwdUZFT1huMytCNUxxTmZMMG8veS95aHpMbW10RXoKWVpoVXVDcXZORk1SN2dZODZ0V2QyeU5QSWtKR2xaclp2WTNhVElacGZOWFEwcitPNGI0elExcUo8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocbubccbzafwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `ExpnSettlmt` |  | |  |  | `CHAR(10)` | Document Number of Expense Settlement |
+| `ExpnSettlmtAcctType` |  | |  |  | `CHAR(1)` | Account Type for Which the Bank Data Was Entered |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Document Creation |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date of Document Creation |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of User who Created the Document |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date of Last Document Change |
+| `BankAccount` |  | |  |  | `CHAR(18)` | Bank Account Number |
+| `BankCountry` |  | |  |  | `CHAR(3)` | Bank Country/Region Key |
+| `BankInternalID` |  | |  |  | `CHAR(15)` | Bank Internal Identification |
+| `BankControlKey` |  | |  |  | `CHAR(2)` | Bank Control Key |
+| `BankAccountReferenceText` |  | |  |  | `CHAR(20)` | Reference Details for Bank Details |
+| `DataExchangeInstruction` |  | |  |  | `CHAR(2)` | Data Exchange Instruction |
+| `DataExchangeInstructionKey` |  | |  |  | `CHAR(2)` | Data Exchange Instruction |
+| `TaxNumber1` |  | |  |  | `CHAR(16)` | Tax Number 1 |
+| `TaxNumber2` |  | |  |  | `CHAR(11)` | Tax Number 2 |
+| `TaxNumber3` |  | |  |  | `CHAR(18)` | Tax Number 3 |
+| `TaxNumber4` |  | |  |  | `CHAR(18)` | Tax Number 4 |
+| `IsNaturalPerson` |  | |  |  | `CHAR(1)` | Business Partner Is a Natural Person Under the Tax Laws |
+| `VATLiability` |  | |  |  | `CHAR(1)` | Liable for VAT |

@@ -5,16 +5,11 @@ app_component: MM-PUR-PO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value
 semantic_en: "Item in Stock Transport Order"
-semantic_vi: "I_STOCKTRANSPORTORDERITEM_2 — CDS view giao diện dựa trên I_STOCKTRANSPORTORDERITEM_2."
 keywords:
   - "Item in Stock Transport Order"
-  - "stocktransportorderitem"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - MM
   - bo:inventory
@@ -26,6 +21,7 @@ tags:
   - MM-PUR-PO-2CL
   - order
   - stock
+  - metadata-only
 ---
 # I_STOCKTRANSPORTORDERITEM_2
 
@@ -37,20 +33,81 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzoesewuwbxwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWUyZTY0NmI3NmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MjE6MDBaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1lMmU2NDZiNzZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPkg4RVBIMm9VMTNvWUtNSDBiZzgzZ2o3WlF4WT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;SVU1U0VwaStWSnRyWWE1SzV3NUc3RStZNHIySFdBT2pRMWxKQU4vSFM3dnFiRlE1QjRJODYyNnpwOStYS2NqRmVMUmo0NG5hVEZRMwpKZTBjVHQ1dk5XVDBGKytEaTJwbUZ4VFpodGdWZkcxdFFZUi8rekVpRDhNSkUrbWVXVjZrZE96V0lPMzFSa0kwdldJT3BIblVyZHJvCjI4MnBsakt5QzVtdTltVURveEg1Sm4xK1FVVU5McEVKRjRqb3ZnbS9NdlU5NE9hS3hKd1JhUXlRNkFkTVdRc1AvNXdBSVU2ZUdUSkEKbHZUZEZvcHRNYWc5a01obGx2VEV4UG5WblUrUzQraHBPRkJvTzEzYXhzS1VFcUx0eUgxYldZK0Y1QjZhQWhYYWMxMExNUjBHYXdTawpZUEJrVFhWZjlKck5vbEVubGhjYThvOU10YmNkMGxxL1dYYjg5ckdXdGRwWUZOam9TZzBDazBvdDJncDJNdVZFYlVsVmhlVFNGOUhSCi82cHUxQktmMkJ1RUo4RTdZN3kwRXVqNEIyT2tsQ2k2akdLVDZHOStaYUQ4ZzBuQWRvbVBxMHcvK2hHbXZzZnBvZ3I5Z3pKT0V5czYKb0taZERwQWZtd0JvdzJHcGJIcGRJVUQ3ZHcvVFVYY0M2TVFON2tyV1hOL3paeHI2ZHE4bFF3U0g8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzoesewuwbxwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `StockTransportOrder` |  | |  |  | `CHAR(10)` | Stock Transport Order |
+| `StockTransportOrderItem` |  | |  |  | `NUMC(5)` | Stock Transport Order Item |
+| `STOItemUniqueID` |  | |  |  | `CHAR(15)` | Unique Item ID of Stock Transport Order |
+| `StockTransportOrderItemText` |  | |  |  | `CHAR(40)` | Item Text of Stock Transport Order |
+| `DocumentCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `PurchasingDocumentDeletionCode` |  | |  |  | `CHAR(1)` | Deletion Indicator in Purchasing Document |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ProductTypeCode` |  | |  |  | `CHAR(2)` | Product Type Group |
+| `ProductType` |  | |  |  | `CHAR(4)` | Material Type |
+| `ManufacturerMaterial` |  | |  |  | `CHAR(40)` | Material number |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `OrderQuantityUnit` |  | |  |  | `UNIT(3)` | Purchase Order Unit of Measure |
+| `OrderQuantity` |  | |  |  | `QUAN(13)` | Purchase Order Quantity |
+| `NetPriceQuantity` |  | |  |  | `DEC(5)` | Price Unit |
+| `IsCompletelyDelivered` |  | |  |  | `CHAR(1)` | "Delivery Completed" Indicator |
+| `IsFinallyInvoiced` |  | |  |  | `CHAR(1)` | Final Invoice Indicator |
+| `GoodsReceiptIsExpected` |  | |  |  | `CHAR(1)` | Goods Receipt Indicator |
+| `OutwardDeliveryIsComplete` |  | |  |  | `CHAR(1)` | "Outward Delivery Completed" Indicator |
+| `InvoiceIsExpected` |  | |  |  | `CHAR(1)` | Invoice Receipt Indicator |
+| `InvoiceIsGoodsReceiptBased` |  | |  |  | `CHAR(1)` | Indicator: GR-Based Invoice Verification |
+| `EvaldRcptSettlmtIsAllowed` |  | |  |  | `CHAR(1)` | Evaluated Receipt Settlement (ERS) |
+| `UnlimitedOverdeliveryIsAllowed` |  | |  |  | `CHAR(1)` | Unlimited Overdelivery Allowed |
+| `OverdelivTolrtdLmtRatioInPct` |  | |  |  | `DEC(3)` | Overdelivery Tolerance |
+| `UnderdelivTolrtdLmtRatioInPct` |  | |  |  | `DEC(3)` | Underdelivery Tolerance |
+| `GoodsReceiptIsNonValuated` |  | |  |  | `CHAR(1)` | Goods Receipt, Non-Valuated |
+| `RequisitionerName` |  | |  |  | `CHAR(12)` | Name of requisitioner/requester |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `STOItemCategory` |  | |  |  | `CHAR(1)` | Item category in purchasing document |
+| `OrderPriceUnit` |  | |  |  | `UNIT(3)` | Order Price Unit (Purchasing) |
+| `ItemVolumeUnit` |  | |  |  | `UNIT(3)` | Volume Unit |
+| `ItemWeightUnit` |  | |  |  | `UNIT(3)` | Unit of Weight |
+| `PricingDateControl` |  | |  |  | `CHAR(1)` | Price Determination (Pricing) Date Control |
+| `DeliveryDocumentType` |  | |  |  | `CHAR(4)` | Delivery Type for Returns to Supplier |
+| `IssuingStorageLocation` |  | |  |  | `CHAR(4)` | Issuing Storage Location for Stock Transport Order |
+| `IsStatisticalItem` |  | |  |  | `CHAR(1)` | Item is statistical |
+| `PurchasingParentItem` |  | |  |  | `NUMC(5)` | Higher-Level Item in Purchasing Documents |
+| `IsReturnsItem` |  | |  |  | `CHAR(1)` | Returns Item |
+| `AccountAssignmentCategory` |  | |  |  | `CHAR(1)` | Account Assignment Category |
+| `PurchasingInfoRecord` |  | |  |  | `CHAR(10)` | Purchasing Info Record Number |
+| `NetAmount` |  | |  |  | `CURR(13)` | Net Order Value in PO Currency |
+| `EffectiveAmount` |  | |  |  | `CURR(13)` | Effective value of item |
+| `NetPriceAmount` |  | |  |  | `CURR(11)` | Net Price in Purchasing Document (in Document Currency) |
+| `ItemVolume` |  | |  |  | `QUAN(13)` | Volume |
+| `ItemNetWeight` |  | |  |  | `QUAN(13)` | Net Weight |
+| `ItemGrossWeight` |  | |  |  | `QUAN(13)` | Gross Weight |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  | `DEC(5)` | Quantity Conversion Numerator |
+| `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  | `DEC(5)` | Denominator for Conv. of Order Price Unit into Order Unit |
+| `TaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `TaxJurisdiction` |  | |  |  | `CHAR(15)` | Tax Jurisdiction |
+| `TaxCountry` |  | |  |  | `CHAR(3)` | Tax Reporting Country/Region |
+| `TaxDeterminationDate` |  | |  |  | `DATS(8)` | Date for Determining Tax Rates |
+| `PartialDeliveryIsAllowed` |  | |  |  | `CHAR(1)` | Partial Delivery at Item Level (Stock Transfer) |
+| `PlannedDeliveryDurationInDays` |  | |  |  | `DEC(3)` | Planned Delivery Time in Days |
+| `GoodsReceiptDurationInDays` |  | |  |  | `DEC(3)` | Goods receipt processing time in days |
+| `IncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms (Part 1) |
+| `IncotermsTransferLocation` |  | |  |  | `CHAR(28)` | Incoterms (Part 2) |
+| `IncotermsLocation1` |  | |  |  | `CHAR(70)` | Incoterms Location 1 |
+| `IncotermsLocation2` |  | |  |  | `CHAR(70)` | Incoterms Location 2 |
+| `PartialInvoiceDistribution` |  | |  |  | `CHAR(1)` | Partial invoice indicator |
+| `ShippingInstruction` |  | |  |  | `CHAR(2)` | Shipping Instructions |
+| `InventoryUsabilityCode` |  | |  |  | `CHAR(1)` | Stock Type |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
+| `PurchasingOrderReason` |  | |  |  | `CHAR(3)` | Reason for Ordering |
+| `StockTransportOrderType` |  | |  |  | `CHAR(4)` | Purchasing Document Type |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `SupplierConfirmationControlKey` |  | |  |  | `CHAR(4)` | Confirmation Control Key |
+| `Subcontractor` |  | |  |  | `CHAR(10)` | Supplier to be Supplied/Who is to Receive Delivery |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer |

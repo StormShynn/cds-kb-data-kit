@@ -5,16 +5,13 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPRJMARGINITEMCUBE')/$value
 semantic_en: "Enterprise Project Margin Item - Cube"
-semantic_vi: "I_ENTPRJMARGINITEMCUBE — CDS view giao diện dựa trên I_ENTPRJMARGINITEMCUBE."
 keywords:
   - "Enterprise Project Margin Item - Cube"
-  - "entprjmarginitemcube"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
+  - "Enterprise Project Margin Item - Cube"
+  - "Enterprise Project Margin Item - Cube"
 tags:
   - CO
   - bo:project
@@ -26,6 +23,7 @@ tags:
   - lob:controlling
   - lob:finance
   - project
+  - metadata-only
 ---
 # I_ENTPRJMARGINITEMCUBE
 
@@ -37,20 +35,90 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPRJMARGINITEMCUBE')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPRJMARGINITEMCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPRJMARGINITEMCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_ENTPRJMARGINITEMCUBE')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocazaweusefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWNhOWE2ZTQyZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTU6MzNaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jYTlhNmU0MmVmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPmtiTUQzWjNlZjRxWkVWSHdqbFJRRUMzUi9sMD08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;WkRwOTEvZExzT2ViNDZ6blB4VjNFYXFpTUk1ak1tMDBHVy92Zmg2NUsxU1Jtd2hiQnJRT09xa0NNdmJJQndCYTZGcUg2WFZRNWw3dQptcFFrWEw0QmVNL1IrUWVySFBTRGhCNGppS0VUYXVTSXpLTnN2TEI3bWVvQnVTdEp3VmthaUsxTkkwNkdxZUNjenJrYlhVeTk3Zld4CmRyUVV5dGIxS2ZHUFNsaS9OeVJrcmpXYWdnN1UvRVphZ01BYzFDN2RodHA3a3dnbCtQZHY0WlpvZjl1cDNqczNUVDdTUzl2dE1NTFAKRHlPemd2bWVWQ0t0RUFaRGF5STR5a2Y5elRHOGNwWklQdjZaNkRzc0FzMzM4QWhCSjl3MDRGMElRSjJmMitWcDRTUlNIMDQrMFNhagpiRzNmOU5IcW1tZFB0WDdCeG4xUHBJSFlhMzF0RDBPei9PODlIbWZyV1lBdThPc3lsSHBBQW52dEVSTGcwSlFhYlBWdEEyY0NyN3Z0CkJ1R1pUclVOMGZZeTUycC9EWnd2Zk5wb2ZwQjJTenozT1ZZZnpYMkpjNjhBMnlUUzcvSWU5dVBDVGNtZm4vMnRrc0VNTGMrczBjVCsKV0hXL2txTmUzdDdyeTY3WWZYRzVHYTQrSDFnVkt1SzlmdjE1RmlLVmI4aTB2NmVjYVRReTNjRFY8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocazaweusefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `FinancialPlanningReqTransSqnc` |  | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
+| `FinancialPlanningDataPacket` |  | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
+| `ActualPlanJournalEntryItem` |  | |  |  | `CHAR(12)` | Actual Plan Journal Entry Item |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `FinancialPlanningEntryItem` |  | |  |  | `INT4(10)` | Financial Planning Entry Item |
+| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
+| `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `ServiceContractType` |  | |  |  | `CHAR(4)` | Service Contract Type |
+| `ServiceContract` |  | |  |  | `CHAR(10)` | Service Contract ID |
+| `ServiceContractItem` |  | |  |  | `NUMC(6)` | Service Contract Item ID |
+| `BusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Solution Order |
+| `BusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` | Solution Order Item |
+| `ProviderContract` |  | |  |  | `CHAR(20)` | Provider Contract |
+| `ProviderContractItem` |  | |  |  | `NUMC(6)` | Provider Contract Item |
+| `SoldProduct` |  | |  |  | `CHAR(40)` | Product Sold |
+| `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
+| `Project` |  | |  |  | `CHAR(24)` | Project (external ID) |
+| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project Internal ID |
+| `ProjectExternalID` |  | |  |  | `CHAR(24)` | Project Number (External) Edited |
+| `ProjectProfileCode` |  | |  |  | `CHAR(7)` | Project Profile |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `OriginProfitCenter` |  | |  |  | `CHAR(10)` | Origin Profit Center |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Service Document Type |
+| `ServiceDocument` |  | |  |  | `CHAR(10)` | Service Document ID |
+| `ServiceDocumentItem` |  | |  |  | `NUMC(6)` | Service Document Item ID |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-to Party |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `OldGLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `CustomerSupplierIndustry` |  | |  |  | `CHAR(4)` | Customer Supplier Industry |
+| `SoldProductGroup` |  | |  |  | `CHAR(9)` | Product Sold Group |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Organization Division |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `CustomerSupplierCountry` |  | |  |  | `CHAR(3)` | Customer or Supplier Country/Region |
+| `WBSElement` |  | |  |  | `CHAR(24)` | WBS Element |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
+| `SalesDistrict` |  | |  |  | `CHAR(6)` | Sales District |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `ProjectManagerUUID` |  | |  |  | `RAW(16)` | Business Partner GUID |
+| `ProjectManager` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `PersonWorkAgreement` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `ProcessingStatus` |  | |  |  | `CHAR(2)` | Object Processing Status |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
+| `IsCommitment` |  | |  |  | `CHAR(1)` | Indicator: Is Commitment |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
+| `ProjectUUID` |  | |  |  | `RAW(16)` | Entity Guid |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | CO Debit/Credit Indicator |

@@ -5,16 +5,11 @@ app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTPLANT')/$value
 semantic_en: "This CDS view helps to retrieve plant related data of products."
-semantic_vi: "I_PRODUCTPLANT — CDS view giao diện dựa trên I_PRODUCTPLANT."
 keywords:
   - "Product Plant"
-  - "productplant"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - LO
   - bo:material
@@ -27,6 +22,7 @@ tags:
   - lob:sourcing & procurement
   - plan
   - product
+  - metadata-only
 ---
 # I_PRODUCTPLANT
 
@@ -38,20 +34,76 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTPLANT')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTPLANT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTPLANT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTPLANT')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodyswsetecfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQ4MjYyZTNlY2Y2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTg6MzVaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kODI2MmUzZWNmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPlJhRi9wQVNmZStkdnMweTZ2aEdCZmFpeDFkMD08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;SXdKRDdJcHY1VGxvQWs5NHp6b1pCV1QxUFNoYlBLcEFPNVNqNVp5cU9CelhHdzVkL1FyY3piaUtLSU55SVl5MjE4NGVldVl6UnA3cAp0WXN2eFpJci9vZWlzbWozUHZmbU50Vlk2T0Q3RXQ5c2Q2YWpTRWc0VUIrYTZmR0d1ZDd2bWE4TXc0bzVoRXlTajZnR3ZydW5uWGNDCjRSL05SUlhXNjAzZDYwNnNOREpxSS9rdHYwZHhTbGZlUGxnQS96WEp4a3dDQ1dCT2dxRmdGQndoV2c3RytNc1NFMUxBTms5THd3bHcKc2ZsNmIxNUJWRFJiQkZnZmJDOTFLbGJ4SU03UEdRTUlhcUI4cVd6LzlCL04xY2E0M2hhTlhpRkNHY2hVdVVubEJmbUx3OVdsdmlxcgpSUjFYRkEySWxIbGZQSTdhZFFENGJ6ZWpleHRMNmRVUHAyNmU5NUUrZ2dwVjhnRjd3TUxFMGc0WjlOUW4vSXRYYkhYZXcvTkY2cXc0CmxMNGxNbVBoVEpHN0hnaGR6STc0Zk1wdXpoSmF0N3VyMXgwSkdvVUp4TUJ4OXJOQW5LNUZHb0lYM0xKYXBHT3FNaFI0RmxuRVY3RFYKREthQ3RnSEwxdkQ4S3J6c295d0VyczRGQUw0ME5BUzllSXpGRCtYQUhCRjFXN3FTRysvWGJPNis8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodyswsetecfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `Product` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `CountryOfOrigin` |  | |  |  | `CHAR(3)` | Country/Region of Origin of Material (Non-Preferential Ori.) |
+| `RegionOfOrigin` |  | |  |  | `CHAR(3)` | Region of Origin of Material (Non-Preferential Origin) |
+| `ProductionInvtryManagedLoc` |  | |  |  | `CHAR(4)` | Storage Location |
+| `ProfileCode` |  | |  |  | `CHAR(2)` | Plant-Specific Material Status |
+| `ProfileValidityStartDate` |  | |  |  | `DATS(8)` | Date from Which the Plant-Specific Material Status Is Valid |
+| `AvailabilityCheckType` |  | |  |  | `CHAR(2)` | Checking Group for Availability Check |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `PeriodType` |  | |  |  | `CHAR(1)` | Period Indicator |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `Commodity` |  | |  |  | `CHAR(17)` | Commodity Code |
+| `GoodsReceiptDuration` |  | |  |  | `DEC(3)` | Goods receipt processing time in days |
+| `MaintenanceStatusName` |  | |  |  | `CHAR(15)` | Maintenance Status |
+| `IsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Flag Material for Deletion at Plant Level |
+| `MRPType` |  | |  |  | `CHAR(2)` | MRP Type |
+| `MRPResponsible` |  | |  |  | `CHAR(3)` | MRP Controller |
+| `ABCIndicator` |  | |  |  | `CHAR(1)` | ABC Indicator |
+| `MinimumLotSizeQuantity` |  | |  |  | `QUAN(13)` | Minimum Lot Size |
+| `MaximumLotSizeQuantity` |  | |  |  | `QUAN(13)` | Maximum Lot Size |
+| `FixedLotSizeQuantity` |  | |  |  | `QUAN(13)` | Fixed lot size |
+| `ConsumptionTaxCtrlCode` |  | |  |  | `CHAR(16)` | Control code for consumption taxes in foreign trade |
+| `IsCoProduct` |  | |  |  | `CHAR(1)` | Co-Product |
+| `ProductIsConfigurable` |  | |  |  | `CHAR(40)` | Configurable Product |
+| `ConfigurableProduct` |  | |  |  | `CHAR(40)` | Configurable Material |
+| `StockDeterminationGroup` |  | |  |  | `CHAR(4)` | Stock determination group |
+| `StockInTransferQuantity` |  | |  |  | `QUAN(13)` |  |
+| `StockInTransitQuantity` |  | |  |  | `QUAN(13)` |  |
+| `HasPostToInspectionStock` |  | |  |  | `CHAR(1)` | Has Post to Inspection Stock |
+| `IsBatchManagementRequired` |  | |  |  | `CHAR(1)` | Batch Management Requirement Indicator for Plant |
+| `SerialNumberProfile` |  | |  |  | `CHAR(4)` | Serial Number Profile |
+| `IsNegativeStockAllowed` |  | |  |  | `CHAR(1)` | Negative stocks allowed in plant |
+| `GoodsReceiptBlockedStockQty` |  | |  |  | `QUAN(13)` |  |
+| `HasConsignmentCtrl` |  | |  |  | `CHAR(1)` | Consignment Control |
+| `FiscalYearCurrentPeriod` |  | |  |  | `NUMC(4)` |  |
+| `FiscalMonthCurrentPeriod` |  | |  |  | `NUMC(2)` |  |
+| `IsPurgAcrossPurgGroup` |  | |  |  | `CHAR(1)` | Purchasing Across Purchasing Group |
+| `IsInternalBatchManaged` |  | |  |  | `CHAR(1)` | Batch management indicator (internal) |
+| `ProductCFOPCategory` |  | |  |  | `CHAR(2)` | Material CFOP Category |
+| `ProductIsExciseTaxRelevant` |  | |  |  | `CHAR(1)` | Excise Tax Relevance Indicator |
+| `UnderDelivToleranceLimit` |  | |  |  | `DEC(3)` | Underdelivery Tolerance Limit |
+| `OverDelivToleranceLimit` |  | |  |  | `DEC(3)` | Overdelivery Tolerance Limit |
+| `ProcurementType` |  | |  |  | `CHAR(1)` | Procurement Type |
+| `SpecialProcurementType` |  | |  |  | `CHAR(2)` | Special Procurement Type |
+| `ProductionSchedulingProfile` |  | |  |  | `CHAR(6)` | Production Scheduling Profile |
+| `ProductionSupervisor` |  | |  |  | `CHAR(3)` | Production Supervisor |
+| `SafetyStockQuantity` |  | |  |  | `QUAN(13)` | Safety Stock |
+| `GoodsIssueUnit` |  | |  |  | `UNIT(3)` | Unit of Issue |
+| `SourceOfSupplyCategory` |  | |  |  | `CHAR(1)` | Source of Supply |
+| `ConsumptionReferenceProduct` |  | |  |  | `CHAR(40)` | Reference material for consumption |
+| `ConsumptionReferencePlant` |  | |  |  | `CHAR(4)` | Reference plant for consumption |
+| `ConsumptionRefUsageEndDate` |  | |  |  | `DATS(8)` | To date of the material to be copied for consumption |
+| `ConsumptionQtyMultiplier` |  | |  |  | `DEC(4)` | Multiplier for reference material for consumption |
+| `ProductUnitGroup` |  | |  |  | `CHAR(4)` | Unit of Measure Group |
+| `DistrCntrDistributionProfile` |  | |  |  | `CHAR(3)` | Distribution profile of material in plant |
+| `ConsignmentControl` |  | |  |  | `CHAR(1)` | Consignment Control |
+| `GoodIssueProcessingDays` |  | |  |  | `DEC(3)` | Goods Issue Processing Time in Days |
+| `PlannedDeliveryDurationInDays` |  | |  |  | `DEC(3)` | Planned Delivery Time in Days |
+| `IsActiveEntity` |  | |  |  | `CHAR(1)` | Draft - Indicator - Is active document |
+| `ProductIsCriticalPrt` |  | |  |  | `CHAR(1)` | Indicator: Critical part |
+| `ProductLogisticsHandlingGroup` |  | |  |  | `CHAR(4)` | Logistics handling group for workload calculation |
+| `MaterialFreightGroup` |  | |  |  | `CHAR(8)` | Material Freight Group |
+| `OriginalBatchReferenceMaterial` |  | |  |  | `CHAR(40)` | Reference Material for Original Batches |
+| `OriglBatchManagementIsRequired` |  | |  |  | `CHAR(1)` | Indicator for Original Batch Management |
+| `ProductConfiguration` |  | |  |  | `NUMC(18)` | Internal object number |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |

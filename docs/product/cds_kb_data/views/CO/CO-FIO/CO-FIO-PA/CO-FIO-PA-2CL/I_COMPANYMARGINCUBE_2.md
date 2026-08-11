@@ -5,16 +5,11 @@ app_component: CO-FIO-PA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCUBE_2')/$value
 semantic_en: "Company Margin - Cube"
-semantic_vi: "I_COMPANYMARGINCUBE_2 — CDS view giao diện dựa trên I_COMPANYMARGINCUBE_2."
 keywords:
   - "Company Margin - Cube"
-  - "companymargincube"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - CO
   - CO-FIO
@@ -24,6 +19,7 @@ tags:
   - interface-view
   - lob:controlling
   - lob:finance
+  - metadata-only
 ---
 # I_COMPANYMARGINCUBE_2
 
@@ -35,20 +31,97 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCUBE_2')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCUBE_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCUBE_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_COMPANYMARGINCUBE_2')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocwrrvzdcsfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWM2MTE1OWRjMmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTQ6MzNaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jNjExNTlkYzJmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPkI1cXI5d3I1M2pIUks5MWxkZ1E4aWlONzI5RT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;Uk1GZC9RWDhySXl2ZVd4UHFkM3doMjg5QkswQUZhZjJ4VkovMjM4emtySlk3am8ybFMwYVRjdnRtcngzWUVSRmpwUDVWenZKbm9TMgoyd2pHNklkWjVPTnFjY0JrcllnRnlmclRvZlQ0MVlQMm96U0VlZ1dWc0x2N1ExSlBmbVZ0K0U1UEMzazdPZENadW1JQTZnSXJZZTVJCjE2ZVFObDJ6NlpPVVlDcjM2d3RvK0hFUmFMY1hobVRGNmhzVGZ4OWJ4UVlZZHVFT2xCaWZpWkVmeitEWnhTOFdkTW1zU3gyQ1dhL2oKalNRMWRON3hlc1BOSlhRNFpoV3k3Q3IzcEJnMlBjN2FmV1lUK0Vud3dPanpVb1BtU0tGMDZwWUY1bVhPaGF2M0hxaXlvRDVYTGViNAprK3k4QmV5V0xibFR5Q1V0dllBYTE4MkdSMk9TZHppa1QxU1ErY2dYOElGNXhNN3RRcFVKcC9CN2VMekFPWU1nWUFmaWZkaml6dTd0ClJIdHZBVUpzVGVqK2lvYzdHcEhKSmZqMTRSMmhRQVdQUjAzazZaU1Bkb0M1VFloanR1UUt1OUNtMW1keUcxcjZPUVpBQ3hhRDNrR0oKYlZxQmFZQ2htVzVBUk92Um9MNzRsOTRua05YMTRtSGNvdEE1M2w5aThHZ3AyMldlSDRxWkVZQVM8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocwrrvzdcsfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Financial Statement Version |
+| `SemanticTag` |  | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |
+| `FiscalYearQuarter` |  | |  |  | `NUMC(5)` | Fiscal Year + Fiscal Quarter |
+| `BusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Solution Order |
+| `BusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` | Solution Order Item |
+| `ProviderContract` |  | |  |  | `CHAR(20)` | Provider Contract |
+| `ProviderContractItem` |  | |  |  | `NUMC(6)` | Provider Contract Item |
+| `SoldProduct` |  | |  |  | `CHAR(40)` | Product Sold |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
+| `ProjectExternalID` |  | |  |  | `CHAR(24)` | Project Number (External) Edited |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Service Document Type |
+| `ServiceDocument` |  | |  |  | `CHAR(10)` | Service Document ID |
+| `ServiceDocumentItem` |  | |  |  | `NUMC(6)` | Service Document Item ID |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-to Party |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ReferenceDocumentType` |  | |  |  | `CHAR(5)` | Reference Document Type |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `CustomerSupplierIndustry` |  | |  |  | `CHAR(4)` | Customer Supplier Industry |
+| `SoldProductGroup` |  | |  |  | `CHAR(9)` | Product Sold Group |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-to Party |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
+| `CostSourceUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
+| `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
+| `BillableControl` |  | |  |  | `CHAR(2)` | Billable Control |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
+| `PartnerCompany` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
+| `PartnerCompanyCode` |  | |  |  | `CHAR(4)` | Partner Company Code |
+| `PersonnelNumber` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `CustomerSupplierCountry` |  | |  |  | `CHAR(3)` | Customer or Supplier Country/Region |
+| `WBSElement` |  | |  |  | `CHAR(24)` | WBS Element |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `ServicesRenderedDate` |  | |  |  | `DATS(8)` | Date on which services are rendered |
+| `TimeSheetOvertimeCategory` |  | |  |  | `CHAR(4)` | Overtime Category |
+| `SalesDistrict` |  | |  |  | `CHAR(6)` | Sales District |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
+| `AccountingDocCreatedByUser` |  | |  |  | `CHAR(12)` | User that created the journal entry |
+| `SubLedgerAcctLineItemType` |  | |  |  | `NUMC(5)` | Subledger-Specific Line Item Type |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `FunctionalCurrency` |  | |  |  | `CUKY(5)` | Functional Currency |
+| `AmountInFunctionalCurrency` |  | |  |  | `CURR(23)` | Amount in Functional Currency |
+| `FixedAmountInFuncnlCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Functional Currency |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
+| `FixedAmountInDspCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Currency Role Currency |
+| `InvertedAmountInDisplayCrcy` |  | |  |  | `CURR(23)` | Inverted Amount in Company Code Currency |
+| `InvertedFixedAmtInDspCrcy` |  | |  |  | `CURR(23)` | Inverted Amount in Company Code Currency |
+| `InvertedVarblAmountInDspCrcy` |  | |  |  | `CURR(23)` | Inverted Amount in Company Code Currency |

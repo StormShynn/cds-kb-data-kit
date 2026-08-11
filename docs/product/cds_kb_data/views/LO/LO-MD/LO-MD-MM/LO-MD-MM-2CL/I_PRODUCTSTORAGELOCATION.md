@@ -5,16 +5,11 @@ app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTSTORAGELOCATION')/$value
 semantic_en: "This CDS view provides the list of Storage locations assigned for a Product and Plant."
-semantic_vi: "I_PRODUCTSTORAGELOCATION — CDS view giao diện dựa trên I_PRODUCTSTORAGELOCATION."
 keywords:
   - "Product Storage Location"
-  - "productstoragelocation"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - LO
   - bo:material
@@ -27,6 +22,7 @@ tags:
   - lob:sourcing & procurement
   - plan
   - product
+  - metadata-only
 ---
 # I_PRODUCTSTORAGELOCATION
 
@@ -38,20 +34,32 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTSTORAGELOCATION')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTSTORAGELOCATION')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTSTORAGELOCATION')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PRODUCTSTORAGELOCATION')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodyswsetfqfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQ4MjYyZTNmMGY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTg6MzZaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kODI2MmUzZjBmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPkdqR291N0lKbzZJeEc4cU5XRFdtWGJmT2hRaz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;a211bEQ3S1lob25JeC9oQWZZTTIwK0NuQXVZNkpIenhWUHo3R0t4MTdXNi9oYklSSmZTc3lDOWlsM0dFUFpwYnFlcW1aSWpHdHMvdwozY1pPeXFzdm11V2lGRm5EV3Q2SnNBeEhrK200MDE4VGhxSGpWaHRSZEkxU29YeTNaZHNid0FSWFNnTjlPSTdEUmQ2d1MxZkJXajc5CmRQTmZvVHdjb3hZZVoyY2xRREZqN0FYZktiL2ZJdXNsNGc5bDhTRFZzV3lUbFhzTmV1L21UWkZsZWV6bExyWkd6Z2MvQ2p3NllkT1gKR1A0VUV1WU54cDdMd2J1bEtyZHV0b3phclRSNXYzQ3orV0JoYkczbW1OejFiWjdkYSs1VExud0tqUTdBby95cE9EazNCbnNSN1owNQpKZ0o3azE1ZXNzTFl1UFh2dk9pOVB5RnAxaXh6RkN1WG85emdGdklSNENwVk0wbFFFdzU4aHQwSTZIMEdwalRQOGtibGZXWTAreHcrCldTaU8ycWJKcER3UTFuYk5PQ25Yc0tqWVNjalUyNjZMaEJCeW0zVUpZQmRZcFlXWDdyb3NaYWlyQUZYd0ZiR1Qwa2pQV1RmZkdzeGMKa3RFL0t3OG5hMk8yVENyQk1XY0hDNzZwQ3h2K05xWkQwNHdTM05seEVGQ3VSYVlDam5ITWdwM0s8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodyswsetfqfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `Product` |  | |  |  | `CHAR(40)` | Material Number |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `WarehouseStorageBin` |  | |  |  | `CHAR(10)` | Storage Bin |
+| `MaintenanceStatus` |  | |  |  | `CHAR(15)` | Maintenance Status |
+| `IsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Flag Material for Deletion at Storage Location Level |
+| `PhysicalInventoryBlockInd` |  | |  |  | `CHAR(1)` | Physical Inventory Blocking Indicator |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `DateOfLastPostedCntUnRstrcdStk` |  | |  |  | `DATS(8)` | Date of Last Posted Count |
+| `InventoryCorrectionFactor` |  | |  |  | `FLTP(16)` | Inventory Correction Factor |
+| `InvtryRestrictedUseStockInd` |  | |  |  | `CHAR(3)` | Physical inventory indicator for restricted-use stock |
+| `InvtryCurrentYearStockInd` |  | |  |  | `CHAR(3)` | Physical inventory indicator for whse stock in current year |
+| `InvtryQualInspCurrentYrStkInd` |  | |  |  | `CHAR(3)` | Phys. inventory ind. f. stock in qual. insp. in current year |
+| `InventoryBlockStockInd` |  | |  |  | `CHAR(3)` | Physical inventory indicator for blocked stock |
+| `InvtryRestStockPrevPeriodInd` |  | |  |  | `CHAR(3)` | Physical inventory ind. for restricted-use stock, prev.pd |
+| `InventoryStockPrevPeriod` |  | |  |  | `CHAR(3)` | Physical inventory indicator for stock in previous year |
+| `InvtryStockQltyInspPrevPeriod` |  | |  |  | `CHAR(3)` | Phys. inventory ind. f. stock in qual. insp. in prev. period |
+| `HasInvtryBlockStockPrevPeriod` |  | |  |  | `CHAR(3)` | Phys. inventory indicator for blocked stock in prev. period |
+| `FiscalYearCurrentPeriod` |  | |  |  | `NUMC(4)` |  |
+| `FiscalMonthCurrentPeriod` |  | |  |  | `NUMC(2)` |  |
+| `FiscalYearCurrentInvtryPeriod` |  | |  |  | `NUMC(4)` | Fiscal year of current physical inventory indicator |
+| `IsActiveEntity` |  | |  |  | `CHAR(1)` | Draft - Indicator - Is active document |
+| `LeanWrhsManagementPickingArea` |  | |  |  | `CHAR(3)` | Picking area for lean WM |

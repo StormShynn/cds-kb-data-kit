@@ -5,16 +5,13 @@ app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTBALANCECOMPRNCUBE')/$value
 semantic_en: "This CDS view provides the comparison of balances for two time frames for various dimensions of the journal entry including the most important business entities, such as G/L account, company code, cost center or profit center. Other attributes and hierarchies can be reached via associations. The CDS view also contains all balance carry forward postings. This CDS view provides the prerequisites for answering the following business questions: What are the G/L account balances and G/L account ending balances for two specific time frames? What is the balance of a cost center for two time frames? What are the balances within the G/L account hierarchy? What is the revenue drilled down by profit center for two time frames?"
-semantic_vi: "I_GLACCTBALANCECOMPRNCUBE — CDS view giao diện dựa trên I_GLACCTBALANCECOMPRNCUBE."
 keywords:
   - "G/L Account Balance Comparison - Cube"
-  - "glacctbalancecomprncube"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
+  - "G/L Account Balance Comparison - Cube"
+  - "G/L Account Balance Comparison - Cube"
 tags:
   - FI
   - account
@@ -25,6 +22,7 @@ tags:
   - FI-GL-IS-2CL
   - interface-view
   - lob:finance
+  - metadata-only
 ---
 # I_GLACCTBALANCECOMPRNCUBE
 
@@ -36,20 +34,370 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTBALANCECOMPRNCUBE')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTBALANCECOMPRNCUBE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTBALANCECOMPRNCUBE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GLACCTBALANCECOMPRNCUBE')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocedzwstfyfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWNlZDk2MjNmOGY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTY6MzFaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jZWQ5NjIzZjhmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPjdIOGFRamVNMWZ2NHY0K09JRlg2TU1SRlFRRT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;bVBDeFh2MXNiamZ5di9lT3hLYkU1SWhKZzZCOWlsTEVOWVhMa1NJRDZheGIyYUs1aTNubnNDWjFHS2NCNHcwaTF1Yk5SUTNoeGNGMApTZUE5VUFDMzdkcWYxN2JYQW9pemtsdzVCSlUxQnhjZEppVVc0d0w2NlJhVCtvNVQwd3RscUhFUDM0WnJ0Yy9KV21QVkhEMUxUekFRCi9vUU14U3hjM1ZuNlVIcnA0VlFpZStmZjhmYUhZd0NaeVJpT0JDNkFIcHJGajYyYjhFc2NTRXdkZ2oyOGdkMFk3dkgwT0IvbmFiVVcKbXdQVWRVbkdxY2xIbmRGdWpQc1ZSUmVDLzR5c0hMNzNxUkl5YkZtaDdQblJONWM2UWt3VEFBbytHd1FSOTExS1BDQUQ5OCs4eG1iUApSc0UzSnoyUjJKZnJCZHJ6WE9ESnVnczRIZEdheVlFbVBKQTBMbk1pU245bEhVeGNjaG9BekFsZGZNSEVCdHdyOEVRdCs4ZVJHcll5Cmo5cmxTSU5DNi8vd0pCVVUvNVZQdTUwSVovQm5GNGN2S0dTa0s0M1QrTnVVaExQY3RlOUVKS3NxYWs0aTRlZ2JXR2FCODlRVElNNnQKa3FvWlU2VC9lSjN4QUdlenNqZFQ3ZFAzR25Qek00aUIwZjlSbGZxMHoxcVVrZURjTnNjVDJSZmw8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocedzwstfyfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `GLAccountFlowType` |  | |  |  | `CHAR(10)` | G/L Account Flow Type |
+| `FiscalPeriodDate` |  | |  |  | `CHAR(11)` | Fiscal Period Date |
+| `ComprnFiscalPeriodDate` |  | |  |  | `CHAR(11)` | Comparison Fiscal Period Date |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `FinancialTransactionType` |  | |  |  | `CHAR(3)` | Financial Transaction Type |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ReferenceDocumentType` |  | |  |  | `CHAR(5)` | Reference Document Type |
+| `LogicalSystem` |  | |  |  | `CHAR(10)` | Logical System |
+| `ReferenceDocumentContext` |  | |  |  | `CHAR(10)` | Reference Document Context |
+| `ReferenceDocument` |  | |  |  | `CHAR(10)` | Reference Doc. Number |
+| `ReferenceDocumentItem` |  | |  |  | `NUMC(6)` | Reference Document Item |
+| `ReferenceDocumentItemGroup` |  | |  |  | `NUMC(6)` | Reference Document Item Group |
+| `IsReversal` |  | |  |  | `CHAR(1)` | Indicator: Item is Reversing Another Item |
+| `IsReversed` |  | |  |  | `CHAR(1)` | Indicator: Item is Reversed |
+| `ReversalReferenceDocumentCntxt` |  | |  |  | `CHAR(10)` | Reversal Reference Document Context |
+| `ReversalReferenceDocument` |  | |  |  | `CHAR(10)` | Reversal Reference Document |
+| `IsSettlement` |  | |  |  | `CHAR(1)` | Indicator: Item is Settling or Transferring Another Item |
+| `IsSettled` |  | |  |  | `CHAR(1)` | Indicator: Line Item is Settled or Transferred |
+| `PredecessorReferenceDocType` |  | |  |  | `CHAR(5)` | Predecessor Reference Document Type |
+| `PredecessorReferenceDocCntxt` |  | |  |  | `CHAR(10)` | Predecessor Reference Document Context |
+| `PredecessorReferenceDocument` |  | |  |  | `CHAR(10)` | Predecessor Reference Document |
+| `PredecessorReferenceDocItem` |  | |  |  | `NUMC(6)` | Predecessor Reference Document Item |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `GLAccountHierarchy` |  | |  |  | `CHAR(10)` | G/L Account |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Partner Cost Center |
+| `PartnerProfitCenter` |  | |  |  | `CHAR(10)` | Partner Profit Center |
+| `PartnerFunctionalArea` |  | |  |  | `CHAR(16)` | Partner Functional Area |
+| `PartnerBusinessArea` |  | |  |  | `CHAR(4)` | Partner Business Area |
+| `PartnerCompany` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
+| `PartnerSegment` |  | |  |  | `CHAR(10)` | Partner Segment for Segmental Reporting |
+| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `PostingDate` |  | |  |  | `DATS(8)` | End Date of Fiscal Period |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `AssignmentReference` |  | |  |  | `CHAR(18)` | Assignment Reference |
+| `PostingKey` |  | |  |  | `CHAR(2)` | Posting Key |
+| `AccountingDocumentCategory` |  | |  |  | `CHAR(1)` | Journal Entry Category |
+| `TransactionTypeDetermination` |  | |  |  | `CHAR(3)` | Transaction Key |
+| `AccountingDocCreatedByUser` |  | |  |  | `CHAR(12)` | User that created the journal entry |
+| `EliminationProfitCenter` |  | |  |  | `CHAR(10)` | Elimination Profit Center |
+| `OriginObjectType` |  | |  |  | `NUMC(2)` | Type of Origin Object |
+| `GLAccountType` |  | |  |  | `CHAR(1)` | Type of a General Ledger Account |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `AlternativeGLAccount` |  | |  |  | `CHAR(10)` | Alternative G/L Account Number In Company Code |
+| `CountryChartOfAccounts` |  | |  |  | `CHAR(4)` | Alternative Chart of Accounts for Country/Region |
+| `InvoiceReference` |  | |  |  | `CHAR(10)` | Invoice Reference |
+| `InvoiceReferenceFiscalYear` |  | |  |  | `NUMC(4)` | Invoice Reference Fiscal Year |
+| `FollowOnDocumentType` |  | |  |  | `CHAR(1)` | Follow-On Document Type |
+| `InvoiceItemReference` |  | |  |  | `NUMC(3)` | Invoice Item Reference |
+| `ReferencePurchaseOrderCategory` |  | |  |  | `NUMC(3)` | Category of Reference Purchase Order |
+| `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document |
+| `PurchasingDocumentItem` |  | |  |  | `NUMC(5)` | Purchasing Document Item |
+| `AccountAssignmentNumber` |  | |  |  | `NUMC(2)` | Account Assignment Number |
+| `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
+| `Material` |  | |  |  | `CHAR(40)` | Product (Deprecated) |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `SpecialGLCode` |  | |  |  | `CHAR(1)` | Special G/L Indicator |
+| `TaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `HouseBank` |  | |  |  | `CHAR(5)` | House Bank Key |
+| `HouseBankAccount` |  | |  |  | `CHAR(5)` | House Bank Account |
+| `IsOpenItemManaged` |  | |  |  | `CHAR(1)` | Managed on an Open Item Basis |
+| `ClearingAccountingDocument` |  | |  |  | `CHAR(10)` | Clearing Journal Entry (Deprecated) |
+| `ClearingDocFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Clearing Journal Entry (Deprecated) |
+| `ClearingJournalEntry` |  | |  |  | `CHAR(10)` | Clearing Journal Entry |
+| `ClearingJournalEntryFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Clearing Journal Entry |
+| `AssetDepreciationArea` |  | |  |  | `NUMC(2)` | Asset Depreciation Area (Real or Derived) |
+| `MasterFixedAsset` |  | |  |  | `CHAR(12)` | Fixed Asset (Main Asset Number) |
+| `FixedAsset` |  | |  |  | `CHAR(4)` | Asset Subnumber |
+| `AssetValueDate` |  | |  |  | `DATS(8)` | Asset Value Date |
+| `AssetTransactionType` |  | |  |  | `CHAR(3)` | Asset Transaction Type |
+| `AssetAcctTransClassfctn` |  | |  |  | `CHAR(2)` | Transaction Type Category |
+| `DepreciationFiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period of Depreciation |
+| `GroupMasterFixedAsset` |  | |  |  | `CHAR(12)` | Group Asset |
+| `GroupFixedAsset` |  | |  |  | `CHAR(4)` | Group Asset Subnumber |
+| `CostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate |
+| `InventorySpecialStockValnType` |  | |  |  | `CHAR(1)` | Inventory Special Stock Valuation Type (Deprecated) |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Inventory Special Stock Type |
+| `InvtrySpecialStockValnType_2` |  | |  |  | `CHAR(1)` | Inventory Special Stock Valuation Type |
+| `InventorySpclStkSalesDocument` |  | |  |  | `CHAR(10)` | Inventory Special Stock Sales Document |
+| `InventorySpclStkSalesDocItm` |  | |  |  | `NUMC(6)` | Inventory Special Stock Sales Document Item |
+| `InvtrySpclStockWBSElmntIntID` |  | |  |  | `NUMC(8)` | Inventory Special Stock WBS Element Internal ID |
+| `InventorySpclStockWBSElement` |  | |  |  | `CHAR(24)` | WBS Element (external) of Valuated Special Inventory |
+| `InvtrySpclStockWBSElmntExtID` |  | |  |  | `CHAR(24)` | Inventory Special Stock WBS Element External ID |
+| `InventorySpecialStockSupplier` |  | |  |  | `CHAR(10)` | Supplier of Inventory Special Stock |
+| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Inventory Valuation Type |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `SenderGLAccount` |  | |  |  | `CHAR(10)` | Sender G/L Account |
+| `SenderAccountAssignment` |  | |  |  | `CHAR(30)` | Sender Account Assignment |
+| `SenderAccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type in Sender System |
+| `ControllingObjectDebitType` |  | |  |  | `NUMC(1)` | Controlling Object Debit Type |
+| `QuantityIsIncomplete` |  | |  |  | `NUMC(1)` | Indicator: Quantity is Incomplete |
+| `OffsettingAccount` |  | |  |  | `CHAR(10)` | Offsetting Account |
+| `OffsettingAccountType` |  | |  |  | `CHAR(1)` | Offsetting Account Type |
+| `OffsettingChartOfAccounts` |  | |  |  | `CHAR(4)` | Offsetting Chart of Accounts |
+| `LineItemIsCompleted` |  | |  |  | `CHAR(1)` | Indicator: Line Item is Completed |
+| `PersonnelNumber` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `ControllingObjectClass` |  | |  |  | `CHAR(2)` | Controlling Object Class |
+| `PartnerCompanyCode` |  | |  |  | `CHAR(4)` | Partner Company Code |
+| `PartnerControllingObjectClass` |  | |  |  | `CHAR(2)` | Partner Controlling Object Class |
+| `OriginCostCenter` |  | |  |  | `CHAR(10)` | Origin Cost Center |
+| `OriginCostCtrActivityType` |  | |  |  | `CHAR(6)` | Origin Cost Center Activity Type |
+| `AccountAssignment` |  | |  |  | `CHAR(30)` | Account Assignment |
+| `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
+| `ProjectNetwork` |  | |  |  | `CHAR(12)` | Network Number for Account Assignment |
+| `RelatedNetworkActivity` |  | |  |  | `CHAR(4)` | Related Network Activity |
+| `BusinessProcess` |  | |  |  | `CHAR(12)` | Business Process |
+| `CostObject` |  | |  |  | `CHAR(12)` | Cost Object |
+| `CustomerServiceNotification` |  | |  |  | `CHAR(12)` | Customer Service Notification |
+| `OperatingConcern` |  | |  |  | `CHAR(4)` | Operating Concern |
+| `PartnerAccountAssignment` |  | |  |  | `CHAR(30)` | Partner Account Assignment |
+| `PartnerAccountAssignmentType` |  | |  |  | `CHAR(2)` | Partner Account Assignment Type |
+| `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
+| `PartnerOrder` |  | |  |  | `CHAR(12)` | Partner Order |
+| `PartnerOrderCategory` |  | |  |  | `NUMC(2)` | Partner Order Category |
+| `PartnerWBSElement` |  | |  |  | `CHAR(24)` | Partner WBS Element |
+| `PartnerProject` |  | |  |  | `CHAR(24)` | Partner Project |
+| `PartnerSalesDocument` |  | |  |  | `CHAR(10)` | Partner Sales Document |
+| `PartnerSalesDocumentItem` |  | |  |  | `NUMC(6)` | Partner Sales Document Item |
+| `PartnerProjectNetwork` |  | |  |  | `CHAR(12)` | Partner Project Network |
+| `PartnerProjectNetworkActivity` |  | |  |  | `CHAR(4)` | Partner Project Network Activity |
+| `PartnerBusinessProcess` |  | |  |  | `CHAR(12)` | Partner Business Process |
+| `PartnerCostObject` |  | |  |  | `CHAR(12)` | Partner Cost Object |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Service Document Type |
+| `ServiceDocument` |  | |  |  | `CHAR(10)` | Service Document ID |
+| `ServiceDocumentItem` |  | |  |  | `NUMC(6)` | Service Document Item ID |
+| `PartnerServiceDocumentType` |  | |  |  | `CHAR(4)` | Partner Service Document Type |
+| `PartnerServiceDocument` |  | |  |  | `CHAR(10)` | Partner Service Document |
+| `PartnerServiceDocumentItem` |  | |  |  | `NUMC(6)` | Partner Service Document Item |
+| `ServiceContractType` |  | |  |  | `CHAR(4)` | Service Contract Type |
+| `ServiceContract` |  | |  |  | `CHAR(10)` | Service Contract ID |
+| `ServiceContractItem` |  | |  |  | `NUMC(6)` | Service Contract Item ID |
+| `TimeSheetOvertimeCategory` |  | |  |  | `CHAR(4)` | Overtime Category |
+| `PartnerProjectExternalID` |  | |  |  | `CHAR(24)` | Partner Project External ID |
+| `BillingDocumentType` |  | |  |  | `CHAR(4)` | Billing Type |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
+| `SoldMaterial` |  | |  |  | `CHAR(40)` | Product Sold (Deprecated) |
+| `SoldProduct` |  | |  |  | `CHAR(40)` | Product Sold |
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Product Sold Group (Deprecated) |
+| `SoldProductGroup` |  | |  |  | `CHAR(9)` | Product Sold Group |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `CustomerSupplierCountry` |  | |  |  | `CHAR(3)` | Customer or Supplier Country/Region |
+| `CustomerSupplierIndustry` |  | |  |  | `CHAR(4)` | Customer Supplier Industry |
+| `FinancialServicesProductGroup` |  | |  |  | `CHAR(10)` | Financial Services Product Group |
+| `FinancialServicesBranch` |  | |  |  | `CHAR(10)` | Financial Services Branch |
+| `FinancialDataSource` |  | |  |  | `CHAR(10)` | Financial Data Source |
+| `FinancialManagementArea` |  | |  |  | `CHAR(4)` | Financial Management Area |
+| `FundsCenter` |  | |  |  | `CHAR(16)` | Funds Management Center |
+| `FundedProgram` |  | |  |  | `CHAR(24)` | Funded Program |
+| `Fund` |  | |  |  | `CHAR(10)` | Fund |
+| `GrantID` |  | |  |  | `CHAR(20)` | Grant |
+| `BudgetPeriod` |  | |  |  | `CHAR(10)` | Budget Period |
+| `PartnerFund` |  | |  |  | `CHAR(10)` | Partner Fund |
+| `PartnerGrant` |  | |  |  | `CHAR(20)` | Partner Grant |
+| `PartnerBudgetPeriod` |  | |  |  | `CHAR(10)` | FM: Partner Budget Period |
+| `PubSecBudgetAccount` |  | |  |  | `CHAR(10)` | Budget Account |
+| `PubSecBudgetAccountCoCode` |  | |  |  | `CHAR(4)` | Budget Account Company Code |
+| `PubSecBudgetCnsmpnDate` |  | |  |  | `DATS(8)` | Budget Consumption Date |
+| `PubSecBudgetCnsmpnFsclPeriod` |  | |  |  | `NUMC(3)` | CC Fiscal Period for Budget Consumption Date |
+| `PubSecBudgetCnsmpnFsclYear` |  | |  |  | `NUMC(4)` | CC Fiscal Year for Budget Consumption Date |
+| `PubSecBudgetIsRelevant` |  | |  |  | `CHAR(1)` | Budget-Relevant Indicator |
+| `PubSecBudgetCnsmpnType` |  | |  |  | `CHAR(2)` | Budget Consumption Type |
+| `PubSecBudgetCnsmpnAmtType` |  | |  |  | `CHAR(4)` | Budget Consumption Amount Type |
+| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
+| `JointVentureEquityGroup` |  | |  |  | `CHAR(3)` | Joint Venture Equity Group |
+| `JointVentureCostRecoveryCode` |  | |  |  | `CHAR(2)` | Joint Venture Cost Recovery Code |
+| `JointVentureEquityType` |  | |  |  | `CHAR(3)` | Joint Venture Equity Type |
+| `SettlementReferenceDate` |  | |  |  | `DATS(8)` | Settlement Reference Date |
+| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
+| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
+| `WBSElement` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
+| `PartnerWBSElementInternalID` |  | |  |  | `NUMC(8)` | Partner WBS Element Internal ID |
+| `PartnerWBSElementExternalID` |  | |  |  | `CHAR(24)` | Partner WBS Element External ID |
+| `Project` |  | |  |  | `CHAR(24)` | Project Definition |
+| `ProjectExternalID` |  | |  |  | `CHAR(24)` | Project External ID |
+| `ProjectInternalID` |  | |  |  | `NUMC(8)` | Project Internal ID |
+| `PartnerProjectInternalID` |  | |  |  | `NUMC(8)` | Partner Project Internal ID |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
+| `SalesDocumentItem` |  | |  |  | `NUMC(6)` | Sales Document Item |
+| `ClearingDate` |  | |  |  | `DATS(8)` | Clearing Date |
+| `ConsolidationUnit` |  | |  |  | `CHAR(18)` | Consolidation Unit |
+| `PartnerConsolidationUnit` |  | |  |  | `CHAR(18)` | Partner Consolidation Unit |
+| `Company` |  | |  |  | `CHAR(6)` | Company |
+| `ConsolidationChartOfAccounts` |  | |  |  | `CHAR(2)` | Consolidation Chart of Accounts |
+| `CnsldtnFinancialStatementItem` |  | |  |  | `CHAR(10)` | Consolidation Financial Statement Item |
+| `CnsldtnSubitemCategory` |  | |  |  | `CHAR(3)` | Consolidation Subitem Category |
+| `CnsldtnSubitem` |  | |  |  | `CHAR(10)` | Consolidation Subitem |
+| `CorporateGroupChartOfAccounts` |  | |  |  | `CHAR(4)` | Group Chart of Accts |
+| `CorporateGroupAccount` |  | |  |  | `CHAR(10)` | Group Account Number |
+| `IsBalanceSheetAccount` |  | |  |  | `CHAR(1)` | Is Balance Sheet Account |
+| `BalanceTransactionCurrency` |  | |  |  | `CUKY(5)` | Balance Transaction Currency |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `FunctionalCurrency` |  | |  |  | `CUKY(5)` | Functional Currency |
+| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
+| `FreeDefinedCurrency2` |  | |  |  | `CUKY(5)` | Freely Defined Currency 2 |
+| `FreeDefinedCurrency3` |  | |  |  | `CUKY(5)` | Freely Defined Currency 3 |
+| `FreeDefinedCurrency4` |  | |  |  | `CUKY(5)` | Freely Defined Currency 4 |
+| `FreeDefinedCurrency5` |  | |  |  | `CUKY(5)` | Freely Defined Currency 5 |
+| `FreeDefinedCurrency6` |  | |  |  | `CUKY(5)` | Freely Defined Currency 6 |
+| `FreeDefinedCurrency7` |  | |  |  | `CUKY(5)` | Freely Defined Currency 7 |
+| `FreeDefinedCurrency8` |  | |  |  | `CUKY(5)` | Freely Defined Currency 8 |
+| `AmountInBalanceTransacCrcy` |  | |  |  | `CURR(23)` | Amount in Balance Transaction Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `AmountInFunctionalCurrency` |  | |  |  | `CURR(23)` | Amount in Functional Currency |
+| `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
+| `AmountInFreeDefinedCurrency2` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 2 |
+| `AmountInFreeDefinedCurrency3` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 3 |
+| `AmountInFreeDefinedCurrency4` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 4 |
+| `AmountInFreeDefinedCurrency5` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 5 |
+| `AmountInFreeDefinedCurrency6` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 6 |
+| `AmountInFreeDefinedCurrency7` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 7 |
+| `AmountInFreeDefinedCurrency8` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 8 |
+| `ComprnAmountInBalTransCrcy` |  | |  |  | `CURR(23)` | Comparison Amount in Balance Transaction Currency |
+| `ComprnAmountInTransCrcy` |  | |  |  | `CURR(23)` | Comparison Amount in Transaction Currency |
+| `ComprnAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Comparison Amount in Company Code Currency |
+| `ComprnAmountInGlobalCrcy` |  | |  |  | `CURR(23)` | Comparison Amount in Global Currency |
+| `ComprnAmountInFunctionalCrcy` |  | |  |  | `CURR(23)` | Comparison Amount in Functional Currency |
+| `ComprnAmountInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Comparison Amount in Free Defined Currency 1 |
+| `ComprnAmountInFreeDfndCrcy2` |  | |  |  | `CURR(23)` | Comparison Amount in Free Defined Currency 2 |
+| `ComprnAmountInFreeDfndCrcy3` |  | |  |  | `CURR(23)` | Comparison Amount in Free Defined Currency 3 |
+| `ComprnAmountInFreeDfndCrcy4` |  | |  |  | `CURR(23)` | Comparison Amount in Free Defined Currency 4 |
+| `ComprnAmountInFreeDfndCrcy5` |  | |  |  | `CURR(23)` | Comparison Amount in Free Defined Currency 5 |
+| `ComprnAmountInFreeDfndCrcy6` |  | |  |  | `CURR(23)` | Comparison Amount in Free Defined Currency 6 |
+| `ComprnAmountInFreeDfndCrcy7` |  | |  |  | `CURR(23)` | Comparison Amount in Free Defined Currency 7 |
+| `ComprnAmountInFreeDfndCrcy8` |  | |  |  | `CURR(23)` | Comparison Amount in Free Defined Currency 8 |
+| `DebitAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Debit Amount in Company Code Currency |
+| `CreditAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Credit Amount in Company Code Currency |
+| `DebitAmountInTransCrcy` |  | |  |  | `CURR(23)` | Debit Amount in Transaction Currency |
+| `CreditAmountInTransCrcy` |  | |  |  | `CURR(23)` | Credit Amount in Transaction Currency |
+| `DebitAmountInBalanceTransCrcy` |  | |  |  | `CURR(23)` | Debit Amount in Balance Transaction Currency |
+| `CreditAmountInBalanceTransCrcy` |  | |  |  | `CURR(23)` | Credit Amount in Balance Transaction Currency |
+| `DebitAmountInGlobalCrcy` |  | |  |  | `CURR(23)` | Debit Amount in Global Currency |
+| `CreditAmountInGlobalCrcy` |  | |  |  | `CURR(23)` | Credit Amount in Global Currency |
+| `DebitAmountInFunctionalCrcy` |  | |  |  | `CURR(23)` | Debit Amount in Functional Currency |
+| `CreditAmountInFunctionalCrcy` |  | |  |  | `CURR(23)` | Credit Amount in Functional Currency |
+| `DebitAmountInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 1 |
+| `CreditAmountInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 1 |
+| `DebitAmountInFreeDefinedCrcy2` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 2 |
+| `CreditAmountInFreeDefinedCrcy2` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 2 |
+| `DebitAmountInFreeDefinedCrcy3` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 3 |
+| `CreditAmountInFreeDefinedCrcy3` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 3 |
+| `DebitAmountInFreeDefinedCrcy4` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 4 |
+| `CreditAmountInFreeDefinedCrcy4` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 4 |
+| `DebitAmountInFreeDefinedCrcy5` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 5 |
+| `CreditAmountInFreeDefinedCrcy5` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 5 |
+| `DebitAmountInFreeDefinedCrcy6` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 6 |
+| `CreditAmountInFreeDefinedCrcy6` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 6 |
+| `DebitAmountInFreeDefinedCrcy7` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 7 |
+| `CreditAmountInFreeDefinedCrcy7` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 7 |
+| `DebitAmountInFreeDefinedCrcy8` |  | |  |  | `CURR(23)` | Debit Amount in Free Defined Currency 8 |
+| `CreditAmountInFreeDefinedCrcy8` |  | |  |  | `CURR(23)` | Credit Amount in Free Defined Currency 8 |
+| `ComprnDebitAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Company Code Currency |
+| `ComprnCreditAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Company Code Currency |
+| `ComprnDebitAmtInTransCrcy` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Transaction Currency |
+| `ComprnCreditAmtInTransCrcy` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Transaction Currency |
+| `ComprnDebitAmtInBalTransCrcy` |  | |  |  | `CURR(23)` | Compariosn Debit Amount in Balance Transaction Currency |
+| `ComprnCreditAmtInBalTransCrcy` |  | |  |  | `CURR(23)` | Compariosn Credit Amount in Balance Transaction Currency |
+| `ComprnDebitAmtInGlobalCrcy` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Global Currency |
+| `ComprnCreditAmtInGlobalCrcy` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Global Currency |
+| `ComprnDebitAmtInFunctionalCrcy` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Functional Currency |
+| `ComprnCreditAmtInFuncnlCrcy` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Functional Currency |
+| `ComprnDebitAmtInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Free Defined Currency 1 |
+| `ComprnCreditAmtInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Free Defined Currency 1 |
+| `ComprnDebitAmtInFreeDfndCrcy2` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Free Defined Currency 2 |
+| `ComprnCreditAmtInFreeDfndCrcy2` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Free Defined Currency 2 |
+| `ComprnDebitAmtInFreeDfndCrcy3` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Free Defined Currency 3 |
+| `ComprnCreditAmtInFreeDfndCrcy3` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Free Defined Currency 3 |
+| `ComprnDebitAmtInFreeDfndCrcy4` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Free Defined Currency 4 |
+| `ComprnCreditAmtInFreeDfndCrcy4` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Free Defined Currency 4 |
+| `ComprnDebitAmtInFreeDfndCrcy5` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Free Defined Currency 5 |
+| `ComprnCreditAmtInFreeDfndCrcy5` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Free Defined Currency 5 |
+| `ComprnDebitAmtInFreeDfndCrcy6` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Free Defined Currency 6 |
+| `ComprnCreditAmtInFreeDfndCrcy6` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Free Defined Currency 6 |
+| `ComprnDebitAmtInFreeDfndCrcy7` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Free Defined Currency 7 |
+| `ComprnCreditAmtInFreeDfndCrcy7` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Free Defined Currency 7 |
+| `ComprnDebitAmtInFreeDfndCrcy8` |  | |  |  | `CURR(23)` | Comparison Debit Amount in Free Defined Currency 8 |
+| `ComprnCreditAmtInFreeDfndCrcy8` |  | |  |  | `CURR(23)` | Comparison Credit Amount in Free Defined Currency 8 |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FlowOfFundsLedgerFiscalYear` |  | |  |  | `NUMC(4)` | Funds of Flow Ledger Fiscal Year |
+| `EndingBalanceAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Ending Balance in Company Code Currency |
+| `EndingBalanceAmtInTransCrcy` |  | |  |  | `CURR(23)` | Ending Balance in Transaction Currency |
+| `EndingBalanceAmtInBalTransCrcy` |  | |  |  | `CURR(23)` | Ending Balance in Balance Transaction Currency |
+| `EndingBalanceAmtInGlobalCrcy` |  | |  |  | `CURR(23)` | Ending Balance in Global Currency |
+| `EndingBalanceAmtInFuncnlCrcy` |  | |  |  | `CURR(23)` | Ending Balance in Functional Currency |
+| `EndingBalAmtInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Ending Balance in Free Defined Currency 1 |
+| `EndingBalAmtInFreeDfndCrcy2` |  | |  |  | `CURR(23)` | Ending Balance in Free Defined Currency 2 |
+| `EndingBalAmtInFreeDfndCrcy3` |  | |  |  | `CURR(23)` | Ending Balance in Free Defined Currency 3 |
+| `EndingBalAmtInFreeDfndCrcy4` |  | |  |  | `CURR(23)` | Ending Balance in Free Defined Currency 4 |
+| `EndingBalAmtInFreeDfndCrcy5` |  | |  |  | `CURR(23)` | Ending Balance in Free Defined Currency 5 |
+| `EndingBalAmtInFreeDfndCrcy6` |  | |  |  | `CURR(23)` | Ending Balance in Free Defined Currency 6 |
+| `EndingBalAmtInFreeDfndCrcy7` |  | |  |  | `CURR(23)` | Ending Balance in Free Defined Currency 7 |
+| `EndingBalAmtInFreeDfndCrcy8` |  | |  |  | `CURR(23)` | Ending Balance in Free Defined Currency 8 |
+| `ComprnEndingBalInCoCodeCrcy` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Company Code Currency |
+| `ComprnEndingBalInTransCrcy` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Transaction Currency |
+| `ComprnEndingBalInBalTransCrcy` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Balance Transaction Currency |
+| `ComprnEndingBalInGlobalCrcy` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Global Currency |
+| `ComprnEndingBalInFuncnlCrcy` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Functional Currency |
+| `ComprnEndingBalInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Free Defined Currency 1 |
+| `ComprnEndingBalInFreeDfndCrcy2` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Free Defined Currency 2 |
+| `ComprnEndingBalInFreeDfndCrcy3` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Free Defined Currency 3 |
+| `ComprnEndingBalInFreeDfndCrcy4` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Free Defined Currency 4 |
+| `ComprnEndingBalInFreeDfndCrcy5` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Free Defined Currency 5 |
+| `ComprnEndingBalInFreeDfndCrcy6` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Free Defined Currency 6 |
+| `ComprnEndingBalInFreeDfndCrcy7` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Free Defined Currency 7 |
+| `ComprnEndingBalInFreeDfndCrcy8` |  | |  |  | `CURR(23)` | Comparison Ending Balance in Free Defined Currency 8 |
+| `FromPostingDate` |  | |  |  | `DATS(8)` | Posting Date From |
+| `ToPostingDate` |  | |  |  | `DATS(8)` | Posting Date To |
+| `ComprnFromPostingDate` |  | |  |  | `DATS(8)` | Comparison Posting Date From |
+| `ComprnToPostingDate` |  | |  |  | `DATS(8)` | Comparison Posting Date To |
+| `AccrualObjectType` |  | |  |  | `CHAR(4)` | Type of the Accrual Object |
+| `AccrualObject` |  | |  |  | `CHAR(32)` | Identifier of the Accrual Object |
+| `AccrualSubobject` |  | |  |  | `CHAR(32)` | Identifier of the Accrual Subobject |
+| `AccrualItemType` |  | |  |  | `CHAR(11)` | Type of the Item of the Accrual Subobject |
+| `CashLedgerCompanyCode` |  | |  |  | `CHAR(4)` | Cash Origin Company Code |
+| `CashLedgerAccount` |  | |  |  | `CHAR(10)` | Cash Origin Account |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `CalendarYearQuarter` |  | |  |  | `NUMC(5)` | Year Quarter |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `CalendarYearMonth` |  | |  |  | `NUMC(6)` | Year Month |
+| `CalendarWeek` |  | |  |  | `NUMC(2)` | Calendar Week |
+| `CalendarYearWeek` |  | |  |  | `NUMC(6)` | Year Week |
+| `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |
+| `FiscalWeek` |  | |  |  | `NUMC(2)` | Fiscal Week |
+| `FiscalYearQuarter` |  | |  |  | `NUMC(5)` | Fiscal Year + Fiscal Quarter |
+| `FiscalYearWeek` |  | |  |  | `NUMC(6)` | Fiscal Year + Fiscal Week |
+| `GLAccountAuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `SupplierBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `CustomerBasicAuthorizationGrp` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `AcctgDocTypeAuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `SalesOrderType` |  | |  |  | `CHAR(4)` | Sales Document Type |
+| `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |

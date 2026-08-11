@@ -5,16 +5,12 @@ app_component: LO-GT
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value
 semantic_en: "Trading Contract Item"
-semantic_vi: "I_TRDGCONTRITEM — CDS view giao diện dựa trên I_TRDGCONTRITEM."
 keywords:
   - "Trading Contract Item"
-  - "trdgcontritem"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
+  - "Trading Contract Item"
 tags:
   - LO
   - component:LO-GT
@@ -22,6 +18,7 @@ tags:
   - interface-view
   - LO-GT
   - lob:logistics general
+  - metadata-only
 ---
 # I_TRDGCONTRITEM
 
@@ -33,20 +30,235 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_TRDGCONTRITEM')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzoevfytwzrafwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWU1ZjgzNjkxYWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MjE6NDFaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1lNWY4MzY5MWFmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPjhRYTFlelVCZlJDdzhvSDEwWExoUUJhckJFST08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;S21iMGZCbldKTTlmV2hRdmNYdFVVRjdDbnpZdEJoSGgyU1lLZWo4Q2ZxN0VacnlYVzNuRGlwTFBTMnByTm1BdzYwQVY4clRta3FDZgppN0xCMDNNTk9XdUxncDBFSEpTd1JDeUxxMkxJRkNrSUJQb0JlaSsvQkNvaVFDTU9aMW9uODBOaDhha2RXZGkwcnUwYmJYRytqVkpLCkRXZHZJL0loTGpmRWV3eVRONEgrNFdtSENnQXl3bmZEYWtSMDB5OHFtem15aUs2VkcvWHpGM29GMWRHSFFYbmxoRGNObCtlNEpoU3QKWUxOVnF1bFM1amgxQnBLM0p4VDdWcGZRMys1TUVaQU13U2pCSUdDRlUxZGZTK3hqc0VXOVcwWVlleEU1ZGpENGNIR2hYOWZvOG1WeApsVDVlalptSUM3cjh6Vno0ZlZOYVFmbG16SzNLSmVGa0l4Rjh4bDJDRDltSnB3QXBMdGtrRXdnM3JTMUJLWDhkb1V1L21uUURtb3M1ClhZYjNJcENmcUc2T3ZQTHJuNzkwV2RlUTFnS2I4VExWWWJtVTZzMEFCeTR4Ujl3eFF1OTNLaUlqVWhJakJncDE0a1lRVTZwQXZIQ3AKcDBMcTdLcFZ5K2VPajlWN2pDamVKM2NPZVdsVE1yekF6bVl3NGpUWVZ1S0E2a0tyNVVLdU0zelk8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzoevfytwzrafwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `TradingContract` |  | |  |  | `CHAR(10)` | Trading Contract |
+| `TradingContractItem` |  | |  |  | `NUMC(6)` | Item Number of Trading Contract |
+| `PaymentGuaranteeProcedure` |  | |  |  | `CHAR(6)` | Payment Guarantee Procedure |
+| `DepreciationPercentage` |  | |  |  | `DEC(5)` | Depreciation percentage for financial document processing |
+| `SupplierQuotationExternalID` |  | |  |  | `CHAR(10)` | Supplier Quotation |
+| `PurchasingDocumentType` |  | |  |  | `CHAR(4)` | Order Type (Purchasing) |
+| `SupplierConfirmationControlKey` |  | |  |  | `CHAR(4)` | Supplier Confirmation Control Key |
+| `CustomerPurchaseOrderDate` |  | |  |  | `DATS(8)` | Customer Purchase Order Date |
+| `CustPurOrdDateByShipToParty` |  | |  |  | `DATS(8)` | Ship-to Party's Customer Reference Date |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Extended Customer Reference |
+| `PurchaseOrderByShipToParty` |  | |  |  | `CHAR(35)` | Ship-to Party's Customer Reference |
+| `TrdgContrPurgDocCat` |  | |  |  | `CHAR(1)` | Purchasing Document Category |
+| `DownPaymentDueDate` |  | |  |  | `DATS(8)` | Due Date for Down Payment |
+| `DownPaymentPercentageOfTotAmt` |  | |  |  | `DEC(5)` | Down Payment Percentage |
+| `DownPaymentType` |  | |  |  | `CHAR(4)` | Down Payment Indicator |
+| `PurchasingDocumentOrderDate` |  | |  |  | `DATS(8)` | Purchasing Document Date |
+| `TrdgContrSlsReqdDeliveryDate` |  | |  |  | `DATS(8)` | Delivery Date for Item Sales |
+| `TrdgContrPurgReqdDeliveryDate` |  | |  |  | `DATS(8)` | Delivery Date of purchasing item in trading contract |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier's Account Number |
+| `TrdgContrPurgShipgInstrn` |  | |  |  | `CHAR(2)` | Purchasing Shipping Instructions |
+| `TrdgContrPurgDelivAddrCat` |  | |  |  | `CHAR(1)` | Purchasing Delivery Address |
+| `QuotationSubmissionDate` |  | |  |  | `DATS(8)` | Quotation Submission Date |
+| `TrdgContrPurgDocExtReference` |  | |  |  | `CHAR(12)` | Purchasing Document External Reference |
+| `PurgIncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms Part 1 Purchasing |
+| `SlsIncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms Part 1 Sales |
+| `TrdgContrPurgIncotermsLoc1Text` |  | |  |  | `CHAR(70)` | Incoterms Location 1 Purchasing |
+| `TrdgContrSlsIncotermsLoc1Text` |  | |  |  | `CHAR(70)` | Incoterms Location 1 Sales |
+| `PurgIncotermsTransferLocation` |  | |  |  | `CHAR(28)` | Incoterms Part 2 Purchasing |
+| `SlsIncotermsTransferLocation` |  | |  |  | `CHAR(28)` | Incoterms Part 2 Sales |
+| `TrdgContrPurgIncotermsLoc2Text` |  | |  |  | `CHAR(70)` | Incoterms Location 2 Purchasing |
+| `TrdgContrSlsIncotermsLoc2Text` |  | |  |  | `CHAR(70)` | Incoterms Location 2 Sales |
+| `TrdgContrPurgIncotermsVersion` |  | |  |  | `CHAR(4)` | Incoterms Version Purchasing |
+| `TrdgContrSalesIncotermsVersion` |  | |  |  | `CHAR(4)` | Incoterms Version Sales |
+| `TrdgContrPurgPricingProcedure` |  | |  |  | `CHAR(6)` | Purchasing Pricing Procedure |
+| `TrdgContrPurgValidityStartDate` |  | |  |  | `DATS(8)` | Purchasing Validity Start Date |
+| `TrdgContrPurgValidityEndDate` |  | |  |  | `DATS(8)` | Purchasing Validity End Date |
+| `FixedExchangeRateIsUsed` |  | |  |  | `CHAR(1)` | Indicator for Fixed Exchange Rate |
+| `TrdgContrPurgExchangeRateType` |  | |  |  | `CHAR(4)` | Purchasing Exchange Rate Type |
+| `IsOrderAcknRqd` |  | |  |  | `CHAR(1)` | Order Acknowledgment Requirement |
+| `OrderCombinationIsAllowed` |  | |  |  | `CHAR(1)` | Order Combination Indicator |
+| `PurgDocOrderAcknNumber` |  | |  |  | `CHAR(20)` | Order Acknowledgment Number |
+| `InternalFinancialDocument` |  | |  |  | `CHAR(10)` | Financial doc. processing: Internal financial doc. number |
+| `TrdgContrPurgDeliveryDateType` |  | |  |  | `CHAR(1)` | Purchasing Delivery Date Type |
+| `SEPAMandate` |  | |  |  | `CHAR(35)` | Unique Reference to Mandate for each Payee |
+| `UnderlyingPurchaseOrderItem` |  | |  |  | `CHAR(6)` | Item Number of the Underlying Purchase Order |
+| `TrdgContrMnlPOSplit` |  | |  |  | `CHAR(10)` | Manual Purchase Order Split |
+| `TrdgContrSlsDeliveryDateType` |  | |  |  | `CHAR(1)` | Sales Delivery Date Type |
+| `TrdgContrPurgPricingDate` |  | |  |  | `DATS(8)` | Purchasing Pricing Date |
+| `TrdgContrSalesPricingDate` |  | |  |  | `DATS(8)` | Sales Pricing Date |
+| `SupplyingPlant` |  | |  |  | `CHAR(4)` | Supplying (issuing) plant in case of stock transport order |
+| `RetentionPercentage` |  | |  |  | `DEC(5)` | Retention in Percent |
+| `SupplierPhoneNumber` |  | |  |  | `CHAR(16)` | Supplier Telephone Number |
+| `PaymentTermsName` |  | |  |  | `CHAR(80)` | Description of Terms of Payment |
+| `TrdgContrPurgExchangeRate` |  | |  |  | `DEC(9)` | Purchasing Exchange Rate |
+| `CorrespncInternalReference` |  | |  |  | `CHAR(12)` | Our Reference |
+| `TrdgContrPurgFixedValueDate` |  | |  |  | `DATS(8)` | Purchasing Fixed Value Date |
+| `TrdgContrSalesFixedValueDate` |  | |  |  | `DATS(8)` | Sales Fixed Value Date |
+| `SupplierRespSalesPersonName` |  | |  |  | `CHAR(30)` | Supplier Responsible Salesperson |
+| `ShippingType` |  | |  |  | `CHAR(2)` | Shipping Type |
+| `IssuingPlant` |  | |  |  | `CHAR(4)` | Issuing Plant |
+| `TrdgContrSalesPaymentMethod` |  | |  |  | `CHAR(1)` | Sales Payment Method |
+| `TrdgContrPurgPaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment Key Purchasing |
+| `TrdgContrSalesPaymentTerms` |  | |  |  | `CHAR(4)` | Terms Of Payment Key Sales |
+| `TrdgContrPurgDocCndn` |  | |  |  | `CHAR(10)` | Number of the Document Condition |
+| `TradingContractItemCategory` |  | |  |  | `CHAR(4)` | Item Category |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `TrdgContrItemText` |  | |  |  | `CHAR(40)` | Short Text for Sales Order Item |
+| `ProductGroup` |  | |  |  | `CHAR(9)` | Product Group |
+| `TrdgContrReltdDocItmValnType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
+| `Batch` |  | |  |  | `CHAR(10)` | Batch Number |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Created At |
+| `TrdgContrPurgQuantity` |  | |  |  | `QUAN(13)` | Quantity ordered against this purchase requisition |
+| `TrdgContrSalesQuantity` |  | |  |  | `QUAN(15)` | Cumulative Order Quantity in Sales Units |
+| `TrdgContrPurgQuantityUnit` |  | |  |  | `UNIT(3)` | Purchase Order Unit of Measure |
+| `TrdgContrSlsQuantityUnit` |  | |  |  | `UNIT(3)` | Sales Unit |
+| `TrdgContrSlsToBaseQtyNmrtr` |  | |  |  | `DEC(5)` | Numerator (factor) for conversion of sales quantity into SKU |
+| `TrdgContrSlsToBaseQtyDnmntr` |  | |  |  | `DEC(5)` | Sales Denominator for UoM |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `TrdgContrPurgToBaseQtyNmrtr` |  | |  |  | `DEC(5)` | Numerator for Conversion of Order Unit to Base Unit |
+| `TrdgContrPurgToBaseQtyDnmntr` |  | |  |  | `DEC(5)` | Purchasing Denominator for UoM |
+| `TrdgContrPurgToOrdQtyNmrtr` |  | |  |  | `DEC(5)` | Purchasing to Order Quantity Numerator |
+| `TrdgContrPurgToOrdQtyDnmntr` |  | |  |  | `DEC(5)` | Purchasing to Order Quantity Denominator |
+| `TrdgContrSlsToOrdQtyNmrtr` |  | |  |  | `DEC(5)` | Sales to Order Quantity Numerator |
+| `TrdgContrSlsToOrdQtyDnmntr` |  | |  |  | `DEC(5)` | Sales to Order Quantity Denominator |
+| `TrdgContrPurgCurrency` |  | |  |  | `CUKY(5)` | Purchasing Currency |
+| `TradingContractSalesCurrency` |  | |  |  | `CUKY(5)` | SD Document Currency |
+| `TrdgContrSlsWeightUnit` |  | |  |  | `UNIT(3)` | Unit of Weight |
+| `TrdgContrSlsGrossWeight` |  | |  |  | `QUAN(15)` | Sales Gross Weight |
+| `TrdgContrSlsNetWeight` |  | |  |  | `QUAN(15)` | Sales Net Weight |
+| `TrdgContrSlsVolumeUnit` |  | |  |  | `UNIT(3)` | Volume Unit |
+| `TrdgContrSlsVolume` |  | |  |  | `QUAN(15)` | Sales Item Volume |
+| `TrdgContrPurgGrossWeight` |  | |  |  | `QUAN(13)` | Purchasing Gross Weight |
+| `TrdgContrPurgNetWeight` |  | |  |  | `QUAN(13)` | Purchasing Net Weight |
+| `TrdgContrPurgVolume` |  | |  |  | `QUAN(13)` | Purchasing Volume |
+| `TrdgContrSlsPriceUnit` |  | |  |  | `UNIT(3)` | Sales Price Unit |
+| `TrdgContrPurgPriceUnit` |  | |  |  | `UNIT(3)` | Order Price Unit (Purchasing) |
+| `TrdgContrPurgNetPriceQuantity` |  | |  |  | `DEC(5)` | Price Unit |
+| `TrdgContrSlsNetPriceQuantity` |  | |  |  | `DEC(5)` | Sales Net Price Quantity |
+| `TrdgContrSalesNetPriceAmount` |  | |  |  | `CURR(11)` | Sales Price of Trading Contract Item |
+| `TrdgContrPurgNetPriceAmount` |  | |  |  | `CURR(11)` | Purchase Price of Trading Contract Item |
+| `TrdgContrSlsItemNetAmount` |  | |  |  | `CURR(15)` | Net Sales Amount for Item in Document Currency |
+| `TrdgContrPurgItemNetAmount` |  | |  |  | `CURR(13)` | Net Order Value in PO Currency |
+| `TrdgContrSlsItmNetAmtInSlsCrcy` |  | |  |  | `CURR(15)` | Sales Net Amount |
+| `TrdgContrPurgItmNetAmtInPOCrcy` |  | |  |  | `CURR(15)` | Net Purchase Amount of Trading Contract Item in Document Cur |
+| `TrdgContrPurgSubtotal1Amount` |  | |  |  | `CURR(13)` | Purchasing Subtotal 1 Amount |
+| `TrdgContrPurgSubtotal2Amount` |  | |  |  | `CURR(13)` | Purchasing Subtotal 2 Amount |
+| `TrdgContrPurgSubtotal3Amount` |  | |  |  | `CURR(13)` | Purchasing Subtotal 3 Amount |
+| `TrdgContrPurgSubtotal4Amount` |  | |  |  | `CURR(13)` | Purchasing Subtotal 4 Amount |
+| `TrdgContrPurgSubtotal5Amount` |  | |  |  | `CURR(13)` | Purchasing Subtotal 5 Amount |
+| `TrdgContrPurgSubtotal6Amount` |  | |  |  | `CURR(13)` | Purchasing Subtotal 6 Amount |
+| `TrdgContrSlsSubtotal1Amount` |  | |  |  | `CURR(13)` | Sales Subtotal 1 Amount |
+| `TrdgContrSlsSubtotal2Amount` |  | |  |  | `CURR(13)` | Sales Subtotal 2 Amount |
+| `TrdgContrSlsSubtotal3Amount` |  | |  |  | `CURR(13)` | Sales Subtotal 3 Amount |
+| `TrdgContrSlsSubtotal4Amount` |  | |  |  | `CURR(13)` | Sales Subtotal 4 Amount |
+| `TrdgContrSlsSubtotal5Amount` |  | |  |  | `CURR(13)` | Sales Subtotal 5 Amount |
+| `TrdgContrSlsSubtotal6Amount` |  | |  |  | `CURR(13)` | Sales Subtotal 6 Amount |
+| `SlsUnlmtdOvrdelivIsAllwd` |  | |  |  | `CHAR(1)` | Sales Unlimited Overdelivery Is Allowed |
+| `SlsOvrdelivTolLmtRatioInPct` |  | |  |  | `DEC(3)` | Sales Overdelivery Tolerance |
+| `SlsUndrdelivTolLmtRatioInPct` |  | |  |  | `DEC(3)` | Underdelivery Tolerance |
+| `PurgUnlmtdOvrdelivIsAllwd` |  | |  |  | `CHAR(1)` | Unlimited Overdelivery Is Allowed |
+| `PurgOvrdelivTolLmtRatioInPct` |  | |  |  | `DEC(3)` | Purchasing Overdelivery Tolerance |
+| `PurgUndrdelivTolLmtRatioInPct` |  | |  |  | `DEC(3)` | Purchasing Underdelivery Tolerance |
+| `SalesDocumentRjcnReason` |  | |  |  | `CHAR(2)` | Reason for Rejection of Sales Documents |
+| `ProductHierarchyNode` |  | |  |  | `CHAR(18)` | Product Hierarchy |
+| `ProductUsedByCustomer` |  | |  |  | `CHAR(35)` | Product Number Used by Customer |
+| `ProductTaxClassification1` |  | |  |  | `CHAR(1)` | Product Tax Classification 1 |
+| `ProductTaxClassification2` |  | |  |  | `CHAR(1)` | Product Tax Classification 2 |
+| `ProductTaxClassification3` |  | |  |  | `CHAR(1)` | Product Tax Classification 3 |
+| `ProductTaxClassification4` |  | |  |  | `CHAR(1)` | Product Tax Classification 4 |
+| `ProductTaxClassification5` |  | |  |  | `CHAR(1)` | Product Tax Classification 5 |
+| `ProductTaxClassification6` |  | |  |  | `CHAR(1)` | Product Tax Classification 6 |
+| `ProductTaxClassification7` |  | |  |  | `CHAR(1)` | Product Tax Classification 7 |
+| `ProductTaxClassification8` |  | |  |  | `CHAR(1)` | Product Tax Classification 8 |
+| `ProductTaxClassification9` |  | |  |  | `CHAR(1)` | Product Tax Classification 9 |
+| `InternationalArticleNumber` |  | |  |  | `CHAR(18)` | International Article Number (EAN/UPC) |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `SalesSpcfcProductGroup1` |  | |  |  | `CHAR(3)` | Sales Product Group 1 |
+| `SalesSpcfcProductGroup2` |  | |  |  | `CHAR(3)` | Sales Product Group 2 |
+| `SalesSpcfcProductGroup3` |  | |  |  | `CHAR(3)` | Sales Product Group 3 |
+| `SalesSpcfcProductGroup4` |  | |  |  | `CHAR(3)` | Sales Product Group 4 |
+| `SalesSpcfcProductGroup5` |  | |  |  | `CHAR(3)` | Sales Product Group 5 |
+| `ItemBillingBlockReason` |  | |  |  | `CHAR(2)` | Billing Block for Item |
+| `MaxNmbrOfPartialDelivery` |  | |  |  | `DEC(1)` | Maximum Number of Partial Deliveries Allowed Per Item |
+| `PartialDeliveryIsAllowed` |  | |  |  | `CHAR(1)` | Partial Delivery at Item Level |
+| `TrdgContrSlsShippingPoint` |  | |  |  | `CHAR(4)` | Sales Shipping Point |
+| `TradingDocumentPurchasingRoute` |  | |  |  | `CHAR(6)` | Purchasing Route |
+| `TradingDocumentSalesRoute` |  | |  |  | `CHAR(6)` | Sales Route |
+| `TrdgContrPurgShippingCondition` |  | |  |  | `CHAR(2)` | Purchasing Shipping Condition |
+| `TrdgContrPurgShippingPoint` |  | |  |  | `CHAR(4)` | Purchasing Shipping Point |
+| `TrdgContrPurgTaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `ValuationCategory` |  | |  |  | `CHAR(1)` | Valuation Category |
+| `PurchasingDocumentItemCategory` |  | |  |  | `CHAR(1)` | Purchasing Item Category |
+| `AccountAssignmentCategory` |  | |  |  | `CHAR(1)` | Account Assignment Category |
+| `GoodsReceiptLatestCreationDate` |  | |  |  | `DATS(8)` | Latest Possible Goods Receipt |
+| `BatchClassification` |  | |  |  | `NUMC(18)` | Internal object number of the batch classification |
+| `TrdgContrBusinessItem` |  | |  |  | `NUMC(6)` | Item Number from Business Data |
+| `TrdgContrItemIsExtended` |  | |  |  | `CHAR(1)` | Dummy Data Element for Trading Contract Item Extensibility |
+| `TrdgContrItemIsDeleted` |  | |  |  | `CHAR(1)` | Deletion Indicator in Trading Contract |
+| `TrdgPortfolioInternalID` |  | |  |  | `CHAR(10)` | Internal Portfolio Number |
+| `TrdgContrItmPrtfloDetnDate` |  | |  |  | `DATS(8)` | Date for Portfolio Determination |
+| `TrdgContrRefDocument` |  | |  |  | `CHAR(10)` | Reference Document |
+| `TrdgContrRefDocItem` |  | |  |  | `NUMC(6)` | Reference Item |
+| `TrdgContrReferenceDocumentType` |  | |  |  | `CHAR(4)` | Reference Document Type |
+| `TrdgContrAddlRefDocument` |  | |  |  | `CHAR(10)` | Additional Reference Document |
+| `TrdgContrAddlRefDocItem` |  | |  |  | `NUMC(6)` | Additional Reference Item |
+| `TrdgContrAddlRefDocumentType` |  | |  |  | `CHAR(4)` | Additional Reference Document Type |
+| `TrdgContrBusinessScenario` |  | |  |  | `CHAR(2)` | Business Scenario |
+| `TrdgContrAssociationGroup` |  | |  |  | `CHAR(4)` | Association Group |
+| `SupplierProductID` |  | |  |  | `CHAR(35)` | Product Number Used by Supplier |
+| `TrdgContrOriglReqdProd` |  | |  |  | `CHAR(40)` | Requested Product |
+| `TrdgContrHigherLevelItem` |  | |  |  | `NUMC(6)` | Higher-Level Item in Bill of Material Structures |
+| `TrdgContrPrcDetnIsIncomplete` |  | |  |  | `CHAR(1)` | Incompleteness Price Determination |
+| `TrdgContrPurgBOMItmQty` |  | |  |  | `QUAN(13)` | Purchasing BOM Item Quantity |
+| `TrdgContrSlsBOMItmQty` |  | |  |  | `QUAN(13)` | Sales BOM Item Quantity |
+| `TrdgContrBOMKeyDate` |  | |  |  | `DATS(8)` | Key Date of the Bill of Material |
+| `QuantityIsFixed` |  | |  |  | `CHAR(1)` | Quantity is fixed |
+| `BillOfMaterialCategory` |  | |  |  | `CHAR(1)` | BOM category |
+| `BillOfMaterialVariantUsage` |  | |  |  | `CHAR(1)` | Origin of the bill of material |
+| `TrdgContrPrcgRefProduct` |  | |  |  | `CHAR(40)` | Pricing Reference Product |
+| `TrdgContrProdUsgeCat` |  | |  |  | `CHAR(3)` | Product Usage Category |
+| `TrdgContrSlsItmEffctvAmount` |  | |  |  | `CURR(13)` | Sales Item Effective Amount |
+| `TrdgContrPurgItmEffctvAmount` |  | |  |  | `CURR(13)` | Purchasing Item Effective Amount |
+| `TrdgContrSlsIsCshDiscGrntd` |  | |  |  | `CHAR(1)` | Sales Cash Discount |
+| `TrdgContrPurgIsCshDiscGrntd` |  | |  |  | `CHAR(1)` | Purchasing Cash Discount |
+| `TrdgContrPredecessorDocument` |  | |  |  | `CHAR(18)` | Causing Document of Trading Contract Item |
+| `TrdgContrPredecessorItem` |  | |  |  | `CHAR(10)` | Causing Item of Trading Contract Item |
+| `TrdgContrPrdcssrDocumentType` |  | |  |  | `CHAR(2)` | Preceding Document Type |
+| `TrdgContrPurgTaxAmount` |  | |  |  | `CURR(13)` | Purchasing Tax Amount |
+| `TrdgContrSlsTaxAmount` |  | |  |  | `CURR(13)` | Sales Tax Amount |
+| `TrdgContrHdggRlvt` |  | |  |  | `CHAR(1)` | Position Relevant |
+| `TrdgContrCndnCnsldtnCat` |  | |  |  | `CHAR(2)` | Condition Consolidation Category |
+| `TrdgContrCndnIsCnsldtd` |  | |  |  | `CHAR(1)` | Item is consolidated |
+| `TrdgContrSTOPostingLogic` |  | |  |  | `CHAR(1)` | Posting Logic in the Case of Stock Transfers |
+| `TrdgContrSettlementMode` |  | |  |  | `CHAR(1)` | Settlement Mode of  the item |
+| `IssuingStorageLocation` |  | |  |  | `CHAR(4)` | Issuing Storage Location for Stock Transport Order |
+| `TrdgContrPurgTaxJurisdiction` |  | |  |  | `CHAR(15)` | Purchasing Tax Jurisdiction |
+| `PaymentGuaranteeForm` |  | |  |  | `CHAR(2)` | Form of payment guarantee |
+| `DownPaymentAmount` |  | |  |  | `CURR(11)` | Down Payment Amount in Document Currency |
+| `SupplierTotalGrossAmount` |  | |  |  | `CURR(13)` | Gross order value in PO currency |
+| `TrdgContrBOMProfile` |  | |  |  | `CHAR(4)` | Profile for BOM Items |
+| `AlternativeBillOfMaterial` |  | |  |  | `CHAR(2)` | Alternative BOM |
+| `TrdgContrPurgRiskRelevancy` |  | |  |  | `CHAR(1)` | Purchasing Risk Relevancy |
+| `TrdgContrSlsRiskRelevancy` |  | |  |  | `CHAR(1)` | Sales Risk Relevancy |
+| `TrdgContrSlsClfnObjInternalID` |  | |  |  | `NUMC(18)` | Configuration in the Trading Contract: CUOBJ SD Side |
+| `TrdgContrPurgClfnObjInternalID` |  | |  |  | `NUMC(18)` | Configuration in the Trading Contract: CUOBJ MM Side |
+| `TrdgContrProdSizeOrDimnDesc` |  | |  |  | `CHAR(32)` | Size/dimensions |
+| `TrdgContrItemIsComplete` |  | |  |  | `CHAR(1)` | Item Is Completed |
+| `TradingContractInternalOrder` |  | |  |  | `CHAR(12)` | Internal Order |
+| `TrdgContrItemBlockCode` |  | |  |  | `CHAR(1)` | Block code of Trading Contract items |
+| `TrdgContrPurgTaxCountry` |  | |  |  | `CHAR(3)` | Purchasing Tax Country/Region |
+| `TrdgContrPurgTaxDate` |  | |  |  | `DATS(8)` | Date for Determining Tax Rates for Puchasing |
+| `TradingContractCurrency` |  | |  |  | `CUKY(5)` | Currency of Trading Contract |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `TrdgContrBillOfMaterial` |  | |  |  | `CHAR(8)` | Bill of Material in a Trading Document |
+| `TrdgContrPurchaseOrderItem` |  | |  |  | `CHAR(6)` | Item Number of the Underlying Purchase Order in a Trdg Doc. |
+| `TrdgContrPrcDetnExchRate` |  | |  |  | `DEC(9)` | Sales Exchange Rate for Price Determination in a Trdg Doc. |
+| `TrdgContrIsRlvtPoDProcg` |  | |  |  | `CHAR(1)` | Trading Document Relevant for Point of Delivery Processing |

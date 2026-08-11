@@ -5,15 +5,9 @@ app_component: PM-WOC-MO-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTORDSUBOPSTDVH')/$value
 semantic_en: "This CDS view provides value help for MaintenanceOrderSubOperation. This view should be used for value help purposes only. To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
-semantic_vi: "I_MAINTORDSUBOPSTDVH — CDS view giao diện dựa trên I_MAINTORDSUBOPSTDVH."
-keywords:
-  - "maintordsubopstdvh"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - PM
   - bo:companycode
@@ -24,7 +18,7 @@ tags:
   - PM-WOC
   - PM-WOC-MO
   - PM-WOC-MO-2CL
-  - bo:project
+  - metadata-only
 ---
 # I_MAINTORDSUBOPSTDVH
 
@@ -36,20 +30,19 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTORDSUBOPSTDVH')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTORDSUBOPSTDVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTORDSUBOPSTDVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_MAINTORDSUBOPSTDVH')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodtbxcyfxwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWQzYjdjOGY3NmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTc6MzVaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kM2I3YzhmNzZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPkJvemtYUDZKaWlpc1huM3lXb2lhRVltMStZdz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;ZHd4blo4aTRxOS9IeGdJSlE1eW9ySksvcitjR3hzZ0dvc3dwNTBoVy9Jd2NjT1VKNnYxL09NeVFsSURDZm5XRWVWc3dnUXRraEUvTAptOWVoM3A5bUFnRXpFY0MyTkh0dVZydE9ERG5aSFdmVktzMmlyckQwKzBLVVpxektURXhoS0l3bTJBWTFHeDlJc0RJN2N4bWJ0L1dKCjVFL1l5b2Fzalg2OE85dWNrNFFXWUZoOGhaU3IxT2lma0YvYUhJb2RLcE1GTklYUk9SbVBQSzhsS0pUUjdNZjNManNnampWSkhMQ1kKV3dVWmJkK3czelh6WnNnZzB2VFhmbGZiaUQrTDFzbksrVko0UDNmYUpVcTU5WUxDTHZvUjE1NC9sTWwyY1IwZlNJZUllRkloaHBENQpQMHN0SjUrTnpkWUpVdmVFMHZWTi92OWJGZFFudE0vcldUaGFlV1N3eTJzSHh2bVJ1enBsdWQrNm5yM24rMERicHN4R0U5ZlMvNXU3CmNqa0RQaEplTkRrT254eU9qZDRmQUhpYzFtMW82TFVNcytTUzYvMHBNa0NEZXNLSkhyQnJIZ0ZDbi84eWFiOWhVRU5xYlFQMnpkT0YKeXRaNTNTQVdDcGx2dlJRTzdrV2ZNVUlrRDYrNG1qQWoxV0ltUVV1SWs0UFRGVlVwblRFa2pTT3c8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodtbxcyfxwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `MaintenanceOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `MaintenanceOrderOperation` |  | |  |  | `CHAR(4)` | Activity Number |
+| `MaintenanceOrderSubOperation` |  | |  |  | `CHAR(4)` | Activity Number |
+| `MaintenanceOrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `MaintenancePlanningPlant` |  | |  |  | `CHAR(4)` | Maintenance Planning Plant |
+| `MaintenancePlannerGroup` |  | |  |  | `CHAR(3)` | Planner Group for Customer Service and Plant Maintenance |
+| `MaintObjectLocAcctAssgmtNmbr` |  | |  |  | `CHAR(12)` | Location and account assignment for technical object |
+| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `OperationPersonResponsible` |  | |  |  | `NUMC(8)` | Personnel number |

@@ -5,15 +5,9 @@ app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERCUSTOMERDEX')/$value
 semantic_en: "Data Extraction for BP Customer"
-semantic_vi: "I_BUSINESSPARTNERCUSTOMERDEX — CDS view giao diện dựa trên I_BUSINESSPARTNERCUSTOMERDEX."
-keywords:
-  - "businesspartnercustomerdex"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - LO
   - bo:businesspartner
@@ -24,6 +18,7 @@ tags:
   - LO-MD-BP
   - LO-MD-BP-2CL
   - lob:logistics general
+  - metadata-only
 ---
 # I_BUSINESSPARTNERCUSTOMERDEX
 
@@ -35,20 +30,96 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERCUSTOMERDEX')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERCUSTOMERDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERCUSTOMERDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BUSINESSPARTNERCUSTOMERDEX')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzobfcbxvqzefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWJmY2I3NTA5ZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTM6MDlaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1iZmNiNzUwOWVmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPmprV1JiMndIb1pwL3UwL3MwTHU1MzIzSHUwbz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;UEZ6bGpEZEhSYmJPRkhwd2d0SWpReXBSdzNIQU1oNnlGNDduVmp0NFJrTTRKVDN4WUFCWnJEaG1WamQ2UmRyYlBZVFF6dXhBa3FrMAoxNjhYYmdqbXJRQVUwN1VhNGdvazlxcDJtYjhtOGFVNWFpNThPSExlUjNPeHNsc1M2cEN4L2JVeDk4WXIvSU5jWFArc0NIZ3M5Mm9sCkEvTjNUKzM0eHcxWFN1ZjV4TnczUGJTd0IvSjB6bUNvVzYrSm9uRjN2ZURBL1hkTWg1RnVSV3lRa2lnMitUMkRYRytvbVpPWkVVM2sKQi9EWXQ2K2N1WFlnUkxsS2h4Y2dDWW9WcFphdVRxY3BLVUx5RVJuQ21aV21MajE2QXZ1cExvQ0RxWFgvWHZqV0ZIQ3p1N25zSXh4dAptNm83WDRxWDJjbmExelZEYit1VUU2eWlNMFQxNmhFRHd1djdzemVrbVlERytNNDRQS1lBQTlOZzFlQ055bi9yQVM2RFdQOHMvUjBrClpOTjBJalNKVFVZVnBDWThXRVFzQ2pxa0RlODd5Vy9RUG0wQlZKRVU5bzMrdFpEclRLaHRJOEl0MEhRQUpsRFVRQnhHOVFEaEhlc3gKMTNTR0dQV2V2STFMS0EzRTVIWHJkSE5JV09OLzgzcGdyRXZ1QzRvRXNTbmpKZ0ZtVlo5bGxIckc8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzobfcbxvqzefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `BusinessPartnerUUID` |  | |  |  | `RAW(16)` | Business Partner GUID |
+| `CustomerAccountGroup` |  | |  |  | `CHAR(4)` | Customer Account Group |
+| `AlternativePayerAccount` |  | |  |  | `CHAR(10)` | Account Number of an Alternative Payer |
+| `DataMediumExchangeIndicator` |  | |  |  | `CHAR(1)` | Recipient Code for Data Medium Exchange |
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `CustomerClassification` |  | |  |  | `CHAR(2)` | Customer Classification |
+| `VATLiability` |  | |  |  | `CHAR(1)` | Liable for VAT |
+| `PostingIsBlocked` |  | |  |  | `CHAR(1)` | Central Posting Block |
+| `DeliveryIsBlocked` |  | |  |  | `CHAR(2)` | Central delivery block for the customer |
+| `BillingIsBlockedForCustomer` |  | |  |  | `CHAR(2)` | Central billing block for customer |
+| `OrderIsBlockedForCustomer` |  | |  |  | `CHAR(2)` | Central order block for customer |
+| `IsNaturalPerson` |  | |  |  | `CHAR(1)` | Natural Person |
+| `BusinessPartnerGrouping` |  | |  |  | `CHAR(4)` | Business Partner Grouping |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `DeliveryDateTypeRule` |  | |  |  | `CHAR(1)` | Delivery Date Rule |
+| `IsActiveEntity` |  | |  |  | `CHAR(1)` | Draft - Indicator - Is active document |
+| `ExpressTrainStationName` |  | |  |  | `CHAR(25)` | Express train station |
+| `TrainStationName` |  | |  |  | `CHAR(25)` | Train station |
+| `CityLocationCoordinatesCode` |  | |  |  | `CHAR(10)` | City Coordinates |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `CustomerCorporateGroup` |  | |  |  | `CHAR(10)` | Group Key |
+| `DataExchangeInstructionKey` |  | |  |  | `CHAR(2)` | Instruction Key for Data Medium Exchange |
+| `IndustryCode1` |  | |  |  | `CHAR(10)` | Industry Code 1 |
+| `IndustryCode2` |  | |  |  | `CHAR(10)` | Industry Code 2 |
+| `IndustryCode3` |  | |  |  | `CHAR(10)` | Industry Code 3 |
+| `IsCompetitor` |  | |  |  | `CHAR(1)` | Indicator: Competitor |
+| `IsSalesPartner` |  | |  |  | `CHAR(1)` | Indicator: Sales partner |
+| `IsDefaultSoldToParty` |  | |  |  | `CHAR(1)` | ID for default sold-to party |
+| `IsConsumer` |  | |  |  | `CHAR(1)` | Indicator: Consumer |
+| `FiscalAddress` |  | |  |  | `CHAR(10)` | Account number of the master record with the fiscal address |
+| `FreeDefinedAttribute03` |  | |  |  | `CHAR(2)` | Attribute 3 |
+| `CustomerConditionGroup1` |  | |  |  | `CHAR(2)` | Customer Condition Group 1 |
+| `CustomerConditionGroup2` |  | |  |  | `CHAR(2)` | Customer Condition Group 2 |
+| `CustomerConditionGroup3` |  | |  |  | `CHAR(2)` | Customer Condition Group 3 |
+| `CustomerConditionGroup4` |  | |  |  | `CHAR(2)` | Customer Condition Group 4 |
+| `CustomerConditionGroup5` |  | |  |  | `CHAR(2)` | Customer Condition Group 5 |
+| `AddressID` |  | |  |  | `CHAR(10)` | Address |
+| `InternationalLocationNumber1` |  | |  |  | `NUMC(7)` | International location number  (part 1) |
+| `InternationalLocationNumber2` |  | |  |  | `NUMC(5)` | International location number (Part 2) |
+| `InternationalLocationNumber3` |  | |  |  | `NUMC(1)` | Check digit for the international location number |
+| `CityCode` |  | |  |  | `CHAR(4)` | City Code |
+| `County` |  | |  |  | `CHAR(3)` | County Code |
+| `CustomerHasUnloadingPoint` |  | |  |  | `CHAR(1)` | Indicator: Unloading points exist |
+| `CustomerWorkingTimeCalendar` |  | |  |  | `CHAR(2)` | Working Time Calendar |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `BPIsEqualizationTaxSubject` |  | |  |  | `CHAR(1)` | Checkbox |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `DeletionIndicator` |  | |  |  | `CHAR(1)` | Central Deletion Flag for Master Record |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `SalesIsBlockedForCustomer` |  | |  |  | `CHAR(1)` |  |
+| `PaymentReason` |  | |  |  | `CHAR(4)` | Payment Reason |
+| `CustomerCentralDeletionIsBlock` |  | |  |  | `CHAR(1)` | Central deletion block for master record |
+| `AlternativePayerIsAllowed` |  | |  |  | `CHAR(1)` | Indicator: Is an alternative payer allowed in document? |
+| `BPPlannedAnnualSalesYear` |  | |  |  | `NUMC(4)` | Year For Which Sales are Given |
+| `BPPlannedAnnualSalesCurrency` |  | |  |  | `CUKY(5)` | Currency of sales figure |
+| `BPPlannedAnnualSalesAmount` |  | |  |  | `CURR(8)` | Annual sales |
+| `CustomerTradingPartnerID` |  | |  |  | `CHAR(6)` | Company ID of Trading Partner |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `AccountTaxType` |  | |  |  | `CHAR(2)` | Tax Number Type |
+| `IndustryCode4` |  | |  |  | `CHAR(10)` | Industry Code 4 |
+| `IndustryCode5` |  | |  |  | `CHAR(10)` | Industry Code 5 |
+| `TaxInvoiceRepresentativeName` |  | |  |  | `CHAR(10)` | Name of Representative |
+| `BusinessType` |  | |  |  | `CHAR(30)` | Type of Business |
+| `IndustryType` |  | |  |  | `CHAR(30)` | Type of Industry |
+| `FreeDefinedAttribute01` |  | |  |  | `CHAR(2)` | Attribute 1 |
+| `FreeDefinedAttribute02` |  | |  |  | `CHAR(2)` | Attribute 2 |
+| `FreeDefinedAttribute04` |  | |  |  | `CHAR(2)` | Attribute 4 |
+| `FreeDefinedAttribute05` |  | |  |  | `CHAR(2)` | Attribute 5 |
+| `FreeDefinedAttribute06` |  | |  |  | `CHAR(3)` | Attribute 6 |
+| `FreeDefinedAttribute07` |  | |  |  | `CHAR(3)` | Attribute 7 |
+| `FreeDefinedAttribute08` |  | |  |  | `CHAR(3)` | Attribute 8 |
+| `FreeDefinedAttribute09` |  | |  |  | `CHAR(3)` | Attribute 9 |
+| `FreeDefinedAttribute10` |  | |  |  | `CHAR(3)` | Attribute 10 |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |

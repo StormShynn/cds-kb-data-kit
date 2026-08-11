@@ -5,16 +5,11 @@ app_component: LO-AB
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCLIST')/$value
 semantic_en: "Settlement Document List"
-semantic_vi: "I_SETTLMTDOCLIST — CDS view giao diện dựa trên I_SETTLMTDOCLIST."
 keywords:
   - "Settlement Document List"
-  - "settlmtdoclist"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - LO
   - component:LO-AB
@@ -22,6 +17,7 @@ tags:
   - interface-view
   - LO-AB
   - lob:logistics general
+  - metadata-only
 ---
 # I_SETTLMTDOCLIST
 
@@ -33,20 +29,85 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCLIST')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCLIST')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCLIST')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SETTLMTDOCLIST')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzodccwxdzwefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWRjYzY3ZDk2ZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTk6MzdaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1kY2M2N2Q5NmVmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPmVvTzdtL0dBQjRNTjNMQlBXSUFrdTFqeGgwUT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;TmhwaFRLblI2UTUydGhPK0JHTDJpaWJkdE42V1o5UzdDVjV6U09VOXNTSnFjMEYvWERydTNUQi9wM2NJczFmekw1WDRUSWVJNTRTMwpjK3ZCUmlrS2JoTytOSjRjenlrSENQNDZQZE5vMmsvVGZabGk2TGh1d1JhRlY4N2p1Qy9CZVIza2hSSTR4K0pJUlJ0d3RwQXJEMzBzClpDeS9GNzNHb3ZpVlcwNHUvRjFtTjNlK0J1Z081RWU4bzJKV290SHRvSEF6YTN6bUs5WkdaSkRvQThFTWVXTUdsYW95TFVpR2srWlMKakMzTzB4Q0FhMGFhclRzd0lQOXdoZ0JCMUpEa2J3VFVJTTh4b3dsRTBqYmRaalRZSUdrS3NTUHB0MkxvN0FKaGlPVVFTb2JoK1MrUwpRNzhIUVBBNGRVbHc1a1p1cXptbUVYSTJUV0doWWhBcU5XTGNWSDZsTmprNExqaEdGUU91WlBHQVNTeng4akFjRm5ocDZBQzBuOFNVClNKaXczdEpEd3ZGWnAvaWU3TlloTnA3Um91OVAzUWFGZVdWK3FWMDFSL1k0T1FKMDhiZnp4QXVmZGtIOFRuQjNYbWdaUGVGU2JrbS8KMk9hYWp3MnZjNDFnVU41c1RRZ1F2Rlk1SW9USjlIcVZmSjlxOTM5cG5TMytWSHI3VTdoeVExOEY8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzodccwxdzwefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `SettlmtDocList` |  | |  |  | `CHAR(10)` | Document Number of Settlement Document List |
+| `SettlmtDocType` |  | |  |  | `CHAR(4)` | Settlement Document Type |
+| `SettlmtDocCat` |  | |  |  | `CHAR(2)` | Settlement Document Category |
+| `SettlmtProcessType` |  | |  |  | `CHAR(4)` | Settlement Process Type |
+| `SettlmtDocListCat` |  | |  |  | `CHAR(1)` | Settlement Management Document Category |
+| `LogisticsDataEntryCat` |  | |  |  | `CHAR(1)` | Entry Category for Logistics Data |
+| `SettlmtMgmtAcctgTransfSts` |  | |  |  | `CHAR(1)` | Posting Status for Transfer to Financial Accounting |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Document Date in Settlement Management Document |
+| `DocumentReferenceID` |  | |  |  | `CHAR(16)` | Reference Document Number |
+| `AssignmentReference` |  | |  |  | `CHAR(18)` | Assignment Number |
+| `SettlmtApplSts` |  | |  |  | `CHAR(4)` | Application Status for a Settlement Management Document |
+| `SettlmtApplStsGrp` |  | |  |  | `CHAR(4)` | Status Group for Settlement Management Documents |
+| `PricingProcedure` |  | |  |  | `CHAR(6)` | Pricing Procedure |
+| `InvoicingParty` |  | |  |  | `CHAR(10)` | Supplier in Settlement Management |
+| `PayeeParty` |  | |  |  | `CHAR(10)` | Payee |
+| `AlternativeInvoicingParty` |  | |  |  | `CHAR(10)` | Alternative Supplier |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Customer in Settlement Management |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of User who Created the Document |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date of Document Creation |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Document Creation |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Date of Last Document Change |
+| `SettlmtDocListCurrency` |  | |  |  | `CUKY(5)` | Currency of Settlement Document |
+| `ExchangeRate` |  | |  |  | `DEC(9)` | Conversion Rate (Not Converted) |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `ExchangeRateIsFixed` |  | |  |  | `CHAR(1)` | Indicator for Fixed Exchange Rate |
+| `ExchangeRateDate` |  | |  |  | `DATS(8)` | Exchange Rate Date |
+| `SettlmtDocListTotalGrossAmount` |  | |  |  | `CURR(15)` | Total Gross Amount of a Settlement Document List |
+| `SettlmtDocListTotalNetAmount` |  | |  |  | `CURR(15)` | Net Settlement Amount in Document Currency |
+| `SettlmtDocListTotalTaxAmount` |  | |  |  | `CURR(13)` | Total Tax Amount in Document Currency |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment Key |
+| `CashDiscount1Days` |  | |  |  | `DEC(3)` | Cash Discount Days 1 |
+| `CashDiscount2Days` |  | |  |  | `DEC(3)` | Cash Discount Days 2 |
+| `NetPaymentDays` |  | |  |  | `DEC(3)` | Net Payment Terms Period |
+| `CashDiscount1Percent` |  | |  |  | `DEC(5)` | Cash Discount Percentage 1 |
+| `CashDiscount2Percent` |  | |  |  | `DEC(5)` | Cash Discount Percentage 2 |
+| `PaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `EligibleAmountForCashDiscount` |  | |  |  | `CURR(13)` | Total Amount eligible for cash discount in document currency |
+| `SettlmtDocListIsCanceled` |  | |  |  | `CHAR(1)` | Settlement Document List Is Reversed |
+| `CancldSettlmtDocList` |  | |  |  | `CHAR(10)` | Reversed Document |
+| `SettlmtDocListAddlValDays` |  | |  |  | `NUMC(2)` | Additional Value Days |
+| `SettlmtDocListFxdValDte` |  | |  |  | `DATS(8)` | Fixed Value Date |
+| `SupplyingCountry` |  | |  |  | `CHAR(3)` | Supplying Country/Region |
+| `TaxDepartureCountry` |  | |  |  | `CHAR(3)` | Tax Departure Country/Region |
+| `TaxDestinationCountry` |  | |  |  | `CHAR(3)` | Tax Destination Country/Region |
+| `IsEUTriangularDeal` |  | |  |  | `CHAR(1)` | Indicator: Triangular Deal Within the EU |
+| `SettlmtDocListCoCodeTaxCountry` |  | |  |  | `CHAR(3)` | Tax Country/Region Company Code |
+| `VATRegistration` |  | |  |  | `CHAR(20)` | VAT Registration Number |
+| `StateCentralBankPaymentReason` |  | |  |  | `CHAR(3)` | State Central Bank Indicator |
+| `CreditControlArea` |  | |  |  | `CHAR(4)` | Credit Control Area |
+| `SettlmtDocActivityReason` |  | |  |  | `CHAR(3)` | Header Activity Reason for Document Creation |
+| `PaymentReference` |  | |  |  | `CHAR(30)` | Payment Reference |
+| `SettlmtDocListPaymentCurrency` |  | |  |  | `CUKY(5)` | Payment Currency |
+| `SettlmtDocListPaytCrcyExchRate` |  | |  |  | `DEC(9)` | Exchange Rate of Payment Currency (not converted) |
+| `OneTimeSettlmtPartAddrID` |  | |  |  | `CHAR(10)` | Address of One-Time Settlement Partner |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `SettlmtDate` |  | |  |  | `DATS(8)` | Rebates: Settlement Date |
+| `SettlmtDocListIncmpltnsRsn` |  | |  |  | `CHAR(4)` | Incompleteness Reason of Settlement Management Document |
+| `DocIntrastatRelevance` |  | |  |  | `CHAR(1)` | Document is Relevant for Intrastat Declarations |
+| `IntrastatDeclnGdsFlwCat` |  | |  |  | `CHAR(1)` | Type of Goods Flow for Intrastat Declarations |
+| `IncotermsVersion` |  | |  |  | `CHAR(4)` | Incoterms Version |
+| `IncotermsClassification` |  | |  |  | `CHAR(3)` | Incoterms (Part 1) |
+| `IncotermsTransferLocation` |  | |  |  | `CHAR(28)` | Incoterms (Part 2) |
+| `IncotermsLocation1` |  | |  |  | `CHAR(70)` | Incoterms Location 1 |
+| `IncotermsLocation2` |  | |  |  | `CHAR(70)` | Incoterms Location 2 |
+| `SettlmtBusProcVar` |  | |  |  | `CHAR(4)` | Settlement Management Process Category |
+| `SettlmtBusProcCat` |  | |  |  | `CHAR(2)` | Use Case Type |
+| `SEPAMandate` |  | |  |  | `CHAR(35)` | Unique Reference to Mandate for each Payee |
+| `SettlmtDocListType` |  | |  |  | `CHAR(4)` | Settlement Document List Type |

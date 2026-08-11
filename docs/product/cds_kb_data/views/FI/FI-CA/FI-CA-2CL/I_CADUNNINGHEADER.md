@@ -5,16 +5,11 @@ app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGHEADER')/$value
 semantic_en: "Contract Accounting Dunning"
-semantic_vi: "I_CADUNNINGHEADER — CDS view giao diện dựa trên I_CADUNNINGHEADER."
 keywords:
   - "Contract Accounting Dunning Header"
-  - "cadunningheader"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - FI
   - account
@@ -25,6 +20,7 @@ tags:
   - interface-view
   - lob:cross_application components
   - lob:finance
+  - metadata-only
 ---
 # I_CADUNNINGHEADER
 
@@ -36,20 +32,81 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGHEADER')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGHEADER')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGHEADER')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CADUNNINGHEADER')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocrsvutqxwfwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWMxMjU0MzA3NmY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTM6MjdaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jMTI1NDMwNzZmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPmMrMnM5Wm15Tkp0WlRqNm9UbUVlRmlZayt6UT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;bUtFUHdVZkNZRUt3dkQ3c2Z0dzZ1bTZFaDhCNE1LWnVhMklxNlRJcUt2VDR1NDRnT2NqQk9MM2NEb0ttQjgwaTIweDJLYUJNRjBNcworNkRTY3dFZkFYcHpJYnNvOE1zWmpEcml4KzRXbyticHUyTzU2NnNET3J2WDlQU1Z2MnJEcFVSZU1jbHNsNTE0eGtFclZ6d1VWUVVxCjZuNjZJckVod1dhVlpLOWJZZWI5UzR0WGlGaE1wM3E0SDNLNXl1UGpRRm1HVzMyVXI5MUJHRDdZMUlKRDBxREJRK2NIeGgrbzZaSHcKcEgvbzB5YW96YnkzVkgvWmVaQnlrTzNWQkp2ejhZVG51YXN2azBqT3hOWVVHRnQ5NE1VVUZqU0ZtSlgwemhEQjdxYXFJZWtzUXh0QQorVkFmdklCUjFBL1c5S04yeXZmQ25WaXBzbEQxaDU2MVpYalYyZklKTGxPenZnempnREVRTFM1bGZ6S1dlR2xlbUhpc0J5ckFpZXRuCjlIOXFKZDdPNWhqM0t5TGRCNXVuR0tXUmRBSnA2bXhYZ3RPd2pWOWpLd3lwNUdEQVArZTltN3c0bmJnU0FobHEwTGFmQnhlN3pMdE4KdHhXZWcxZGloLyt6Q29yd3V0aHYvRjVOUGlEYjVBYUNCdTYzSjRCWnd5aHNSSVNsWFh6SDduZXc8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocrsvutqxwfwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `CAMassRunDate` |  | |  |  | `DATS(8)` | Date ID |
+| `CAMassRunID` |  | |  |  | `CHAR(6)` | Additional Identification Characteristic |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `ContractAccount` |  | |  |  | `CHAR(12)` | Contract Account Number |
+| `CADunningCounter` |  | |  |  | `NUMC(6)` | Counter for Several Dunning Notices to a Business Partner |
+| `CACompanyCodeGroup` |  | |  |  | `CHAR(4)` | Company Code Group |
+| `CAStandardCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `CAContract` |  | |  |  | `CHAR(20)` | Reference Specifications from Contract |
+| `CASubApplication` |  | |  |  | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CALeadingContractAccount` |  | |  |  | `CHAR(12)` | Leading Contract Account in Dunning |
+| `CAAlternativeDunningRecipient` |  | |  |  | `CHAR(10)` | Alternative Dunning Recipient |
+| `CADunningProcedure` |  | |  |  | `CHAR(2)` | Dunning Procedure |
+| `CADunningNoticeGroup` |  | |  |  | `CHAR(2)` | Grouping for Dunning Notices |
+| `CADunningLevel` |  | |  |  | `NUMC(2)` | Dunning Level |
+| `CADunningLevelCategory` |  | |  |  | `CHAR(2)` | Dunning Level Category |
+| `CAContrAcctGroupForCollMgmt` |  | |  |  | `CHAR(12)` | Collection Management: Contract Account Group |
+| `CAContractGroupForCollMgmt` |  | |  |  | `CHAR(20)` | Collection Management: Contract Group |
+| `CAClosedItemGroupForCollMgmt` |  | |  |  | `DEC(15)` | Closed Item Group for Dunning |
+| `CAClosedItemGroupOfLastDunning` |  | |  |  | `DEC(15)` | Item Group in Last Dunning Notice |
+| `CAGroupingFieldForCollMgmt` |  | |  |  | `CHAR(12)` | Grouping Field for Dunning |
+| `CAGroupingFieldOfLastDunning` |  | |  |  | `CHAR(12)` | Grouping Field in Last Dunning Notice |
+| `CACollectionStrategy` |  | |  |  | `CHAR(2)` | Collection Strategy |
+| `CACollectionStep` |  | |  |  | `CHAR(4)` | Collection Step |
+| `CACollectionStepOfLastDunning` |  | |  |  | `CHAR(4)` | Collection Step of Last Dunning |
+| `CAReplacedCollectionStep` |  | |  |  | `CHAR(4)` | Replaced Collection Step (Capacity Restriction) |
+| `CAReplacedCollectionStrategy` |  | |  |  | `CHAR(2)` | Champion Collection Strategy |
+| `CACollectionTestSeries` |  | |  |  | `CHAR(10)` | Collection Management: Test Series for Collection Strategies |
+| `CACapForDunActyIsRestricted` |  | |  |  | `CHAR(1)` | Capacity for Dunning Activity Restricted |
+| `CADunningNoticeMustBeReleased` |  | |  |  | `CHAR(1)` | Release Dunning |
+| `CALatestReleaseDate` |  | |  |  | `DATS(8)` | Latest Release Date |
+| `CAReleaseGroup` |  | |  |  | `CHAR(4)` | Release Group |
+| `CANextDunningDate` |  | |  |  | `DATS(8)` | Date of Next Dunning |
+| `CAIssueDate` |  | |  |  | `DATS(8)` | Date of Issue |
+| `DunningIssueDate` |  | |  |  | `DATS(8)` | Date of Issue |
+| `CADunningActivityRunDate` |  | |  |  | `DATS(8)` | Execution Date of Dunning Notice |
+| `CAPaymentTargetDate` |  | |  |  | `DATS(8)` | Payment Target in Dunning Notice |
+| `CAKeyDateForConsideredPayts` |  | |  |  | `DATS(8)` | Date Up to Which Payments Were Considered (Dunning) |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CADunningBalance` |  | |  |  | `CURR(13)` | Dunning Balance |
+| `CADunningReductionAmount` |  | |  |  | `CURR(13)` | Total of Dunning Reductions |
+| `CADunningChargesSchema` |  | |  |  | `CHAR(2)` | Charges Schedule |
+| `CAAmountForDunningCharge1` |  | |  |  | `CURR(13)` | Dun. charge 1 |
+| `CADocumentForDunningCharge1` |  | |  |  | `CHAR(12)` | Doc no. for charge 1 |
+| `CATypeForDunningCharge1` |  | |  |  | `CHAR(2)` | Charge type f. charge 1 |
+| `CAPostingCodeForDunningCharge1` |  | |  |  | `CHAR(1)` | Posting Key for Charges |
+| `CAAmountForDunningCharge2` |  | |  |  | `CURR(13)` | Dun.charge 2 |
+| `CADocumentForDunningCharge2` |  | |  |  | `CHAR(12)` | Doc number for charge 2 |
+| `CATypeForDunningCharge2` |  | |  |  | `CHAR(2)` | Charge type f. charge 2 |
+| `CAPostingCodeForDunningCharge2` |  | |  |  | `CHAR(1)` | Posting Key for Charges |
+| `CAAmountForDunningCharge3` |  | |  |  | `CURR(13)` | Dun.charge 3 |
+| `CADocumentForDunningCharge3` |  | |  |  | `CHAR(12)` | Doc number for charge 3 |
+| `CATypeForDunningCharge3` |  | |  |  | `CHAR(2)` | Charge type f. charge 3 |
+| `CAPostingCodeForDunningCharge3` |  | |  |  | `CHAR(1)` | Posting Key for Charges |
+| `CADunningChargeAmount` |  | |  |  | `CURR(15)` |  |
+| `CADunningInterestAmount` |  | |  |  | `CURR(13)` | Dunning interest in transaction currency |
+| `CADocumentForDunningInterest` |  | |  |  | `CHAR(12)` | Doc no. of interest posting |
+| `CACreditWorthinessBeforeDun` |  | |  |  | `NUMC(4)` | Creditworthiness Before Dunning |
+| `CADunningNoticeIsReversed` |  | |  |  | `CHAR(1)` | Dunning Notice Reversed |
+| `CAPaymentFormNumber` |  | |  |  | `CHAR(12)` | Payment Form Number |
+| `CADunningNoticeIsInfoOnly` |  | |  |  | `CHAR(1)` | Group Not Due For Dunning/Information Only |
+| `CorrespondenceKey` |  | |  |  | `CHAR(36)` | Correspondence Key |
+| `CAIsSubmittedToCollAgency` |  | |  |  | `CHAR(1)` | Release for Submission to Collection Agency |
+| `CAPaymentFormExternalNumber` |  | |  |  | `CHAR(30)` | External key payment form |
+| `CAStatisticalItemCode` |  | |  |  | `CHAR(1)` | Type of Statistical Line Item |
+| `CASubstituteDocumentCategory` |  | |  |  | `CHAR(1)` | Category of substitute document in FI-CA |
+| `CASubstituteDocumentNumber` |  | |  |  | `CHAR(12)` | Number of the Substitute FI-CA Document |
+| `CASuccessPercentage` |  | |  |  | `DEC(5)` | Success Percentage Rate Determined for Dunning |
+| `CAMaximumDeferralDate` |  | |  |  | `DATS(8)` | Maximum Deferral Date for Related Items |
+| `CADunningValuationRunDate` |  | |  |  | `DATS(8)` | Date of Success Valuation |
+| `CADunningValuationStatus` |  | |  |  | `CHAR(1)` | Status of Success Valuation |

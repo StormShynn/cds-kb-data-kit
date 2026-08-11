@@ -5,15 +5,9 @@ app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: true
+source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRIRPROCESSHISTORY')/$value
 semantic_en: "This CDS view allows you to access historical GR/IR process information for business process evaluations to gain operational insights. This CDS view provides access to all processing data of the GR/IR (Goods Receipt/Invoice Receipt) account reconciliation process which is performed using the Reconcile GR/IR Accounts app. In the GR/IR processing history table the following is recorded: root cause, status, processor and more for purchasing document items, such as purchase orders, where amounts and/or quantities between goods receipts and invoice receipts do not match. This CDS view allows you to retrospectively review all activities on a purchasing document item level in relation to a business situation at a point in time. This CDS view provides the data to answer the following business questions: Which business situation (amount deviations) did cause a write-off? Which department/processor did perform the clarification of a purchasing document item? What was the root cause of the issue that occurred? Which business situation has led to which process decision?"
-semantic_vi: "I_GRIRPROCESSHISTORY — CDS view giao diện dựa trên I_GRIRPROCESSHISTORY."
-keywords:
-  - "grirprocesshistory"
-  - "+escape(url)+&quot"
-  - "secure"
-  - "partitioned&quot"
 tags:
   - FI
   - account
@@ -29,6 +23,7 @@ tags:
   - lob:finance
   - order
   - purchase-order
+  - metadata-only
 ---
 # I_GRIRPROCESSHISTORY
 
@@ -40,20 +35,78 @@ tags:
 | Software Component | `SAPSCORE` |
 | Release State | Released |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRIRPROCESSHISTORY')/$value) |
+| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRIRPROCESSHISTORY')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `+escape(url)+&quot` |  | |  |  |  |  |
-| `secure` |  | |  |  |  |  |
-| `partitioned&quot` |  | |  |  |  |  |
-
-## Source Code
-
-*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRIRPROCESSHISTORY')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_GRIRPROCESSHISTORY')/$value)*
-
-```abap
-<html><head><meta http-equiv="cache-control" content="no-cache" /><meta http-equiv="pragma" content="no-cache" /></head><body onload="javascript:var url=window.location.hash;if(url&&(0!==url.length)){document.cookie=&quot;oucfarwtebdodzeeorferoavzzocfuecqfaefwe_anchor=&quot;+escape(url)+&quot;; path=/; secure; samesite=none; partitioned&quot;}document.forms[0].submit()"><noscript><p><strong>Note:</strong> Since your browser does notsupport JavaScript, you must press the Continuebutton once to</p></noscript><form method="POST" action="https://asymfskhn.accounts.cloud.sap/saml2/idp/sso/asymfskhn.accounts.ondemand.com"><input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iU2ZhMTYzZWJkLWQ5ZWUtMWZlMS1hNTk5LWNmNGVjMGZhZWY2ZSIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjYtMDgtMTBUMTU6MTY6MzdaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9hc3ltZnNraG4uYWNjb3VudHMuY2xvdWQuc2FwL3NhbWwyL2lkcC9zc28vYXN5bWZza2huLmFjY291bnRzLm9uZGVtYW5kLmNvbSIgRm9yY2VBdXRobj0iZmFsc2UiIElzUGFzc2l2ZT0iZmFsc2UiIEFzc2VydGlvbkNvbnN1bWVyU2VydmljZUluZGV4PSIwIiB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDpJc3N1ZXIgeG1sbnM6c2FtbD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiI&#x2b;aHR0cHM6Ly9teTQyODEwMC5zNGhhbmEuY2xvdWQuc2FwPC9zYW1sOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI1NmYTE2M2ViZC1kOWVlLTFmZTEtYTU5OS1jZjRlYzBmYWVmNmUiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjZW52ZWxvcGVkLXNpZ25hdHVyZSIvPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48L2RzOlRyYW5zZm9ybXM&#x2b;PGRzOkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIi8&#x2b;PGRzOkRpZ2VzdFZhbHVlPlRxbW5RRU1KWS95SnIyZUZpTTN6M2JoeEZiQT08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjwvZHM6U2lnbmVkSW5mbz48ZHM6U2lnbmF0dXJlVmFsdWU&#x2b;bFlwZjErbmpBUGdoTEVjY1RzeUFkby9MbHZ6VU03NEZaZ1F3VFZoWFNvZlhEL3VocUVHbTJxK1oyMlljN0tvNis1R1BnNlprRjVLbworbTVyeER2c3k4Y0FCMlNzRkdKT3U1cFFvdHYwOXV6YThZZExZRk1CbzF3eU1xdk1heGpUSnB4V2ZlcmdmbEdvRVp0WDBhTG5xQTVhCllDQ0IyK0wxVm80eHZqZXNoOGNLSmY5QXdVeHVVVi9weDBBbXcyS1JPNEI0VGxMbFB1a2VnQzArVTA3L1B3am5vVytoblBBcjJ5a24KSlZZdDRUYWFHdmFOcUtGcUdFRVk3MDl3cWJyTzNOMTRJeUV1NmF0c3E3cStoaGwrK2E1cjR1clBPSzFJaWN6bXdESU5yYlkvV01MWgpNWnlISFR4YmtqRmdvZE5hSDFIM1RSNHk2d2J1OXhkMHFOSk1YN3RncTlyVk1COENZay9Vay9CdkE5R1FYanlNMEFsUEllVG9ZTENEClVUS1FDTmtVTVI2YVN3T1hSYXFvdklLdlFVVlpkWERxQjZQQmVna3hDNG1VUEtULzltZFdyc2pVaXpzZ1FkTnBRWlJoTDBVdTg5b0wKUzVxQjVlMW1qZjAzVWVDTkh4cWFhdi9lMTdLc1BSVzNWWXMxbGZoU1lCMzZ0YUhiWWlzOENMY3Q8L2RzOlNpZ25hdHVyZVZhbHVlPjwvZHM6U2lnbmF0dXJlPjwvc2FtbHA6QXV0aG5SZXF1ZXN0Pg&#x3d;&#x3d;"><input type="hidden" name="RelayState" value="oucfarwtebdodzeeorferoavzzocfuecqfaefwe"><noscript><input type="submit" value="Continue"></noscript></form></body></html>
-```
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document |
+| `PurchasingDocumentItem` |  | |  |  | `NUMC(5)` | Purchasing Document Item |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | GR/IR Clearing Process Last Change Date Time |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | User of Last Change in GR/IR Clearing Process |
+| `ResponsibleDepartment` |  | |  |  | `CHAR(30)` | Processing Department of GR/IR Clearing Process |
+| `ResponsiblePerson` |  | |  |  | `CHAR(12)` | Processor of GR/IR Clearing Process |
+| `GRIRClearingProcessStatus` |  | |  |  | `CHAR(2)` | GR/IR Clearing Process Status |
+| `GRIRClearingProcessPriority` |  | |  |  | `CHAR(2)` | Priority of GR/IR Clearing Process |
+| `HasNote` |  | |  |  | `CHAR(1)` | Notes Included in GR/IR Clearing Process |
+| `SystemMessageIdentification` |  | |  |  | `CHAR(20)` | Message identification |
+| `SystemMessageType` |  | |  |  | `CHAR(1)` | Message Type |
+| `SystemMessageNumber` |  | |  |  | `CHAR(3)` | Message number |
+| `AccountAssignmentCategory` |  | |  |  | `CHAR(1)` | Account Assignment Category |
+| `BalAmtInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Total Balance Amount in Company Code Currency |
+| `BalanceQuantity` |  | |  |  | `QUAN(23)` | Balance Quantity in Reference Quantity Unit |
+| `IsFinallyInvoiced` |  | |  |  | `CHAR(1)` | Final Invoice Indicator |
+| `LatestOpenItemPostingDate` |  | |  |  | `DATS(8)` | Posting Date of Latest Open Item |
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
+| `NumberOfGoodsReceipts` |  | |  |  | `INT4(10)` | Number of Goods Receipts |
+| `NumberOfInvoiceReceipts` |  | |  |  | `INT4(10)` | Number of Invoice Receipts |
+| `OldestOpenItemPostingDate` |  | |  |  | `DATS(8)` | Posting Date of Oldest Open Item |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `PurchasingGroup` |  | |  |  | `CHAR(3)` | Purchasing Group |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `SystemMessageVariable1` |  | |  |  | `CHAR(50)` | Message Variable 1 |
+| `SystemMessageVariable2` |  | |  |  | `CHAR(50)` | Message Variable 2 |
+| `SystemMessageVariable3` |  | |  |  | `CHAR(50)` | Message Variable 3 |
+| `SystemMessageVariable4` |  | |  |  | `CHAR(50)` | Message Variable 4 |
+| `SystemMessageText` |  | |  |  | `CHAR(73)` | Message Text |
+| `DueDays` |  | |  |  | `INT2(5)` | GR/IR Due Days |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `PurgDocOrderQuantityUnit` |  | |  |  | `UNIT(3)` | Purchasing Document Order Quantity Unit |
+| `PrpsdResponsibleDepartment` |  | |  |  | `CHAR(30)` | Proposed Processing Department of GR/IR Clearing Process |
+| `ProposedResponsiblePerson` |  | |  |  | `CHAR(12)` | Proposed Processor of GR/IR Clearing Process |
+| `GRIRClrgProcessPrpsdStatus` |  | |  |  | `CHAR(2)` | Proposed Status of GR/IR Clearing Process |
+| `GRIRClrgProcPrpsdPriority` |  | |  |  | `CHAR(2)` | Proposed Priority of GR/IR Clearing Process |
+| `GRIRClearingProcessRootCause` |  | |  |  | `CHAR(3)` | Root Cause for GR/IR Clearing Process |
+| `GRIRClrgProcessPrpsdRootCause` |  | |  |  | `CHAR(3)` | Proposed Root Cause of GR/IR Clearing Process |
+| `PrpsdRespDeptMaxClProbability` |  | |  |  | `DEC(8)` | Processing Department Proposal Confidence |
+| `PrpsdRespPersonMaxClassProblty` |  | |  |  | `DEC(8)` | Processor Proposal Confidence |
+| `GRIRProposedStatusMaxClProblty` |  | |  |  | `DEC(8)` | Status Proposal Confidence |
+| `GRIRProposedPrioMaxClProblty` |  | |  |  | `DEC(8)` | Priority Proposal Confidence |
+| `GRIRPrpsdRootCauseMaxClProblty` |  | |  |  | `DEC(8)` | Root Cause Proposal Confidence |
+| `GoodsReceiptGoodsAmtInCCCrcy` |  | |  |  | `CURR(23)` | Goods Receipt Amount in Company Code Currency (Goods) |
+| `InvoiceRcptGoodsAmtInCCCrcy` |  | |  |  | `CURR(23)` | Invoice Receipt Amount in Company Code Currency (Goods) |
+| `GdsRcptDelivCostAmtInCCCrcy` |  | |  |  | `CURR(23)` | Goods Receipt Amount in Company Code Currency (Delivery Cost |
+| `InvcRcptDelivCostAmtInCCCrcy` |  | |  |  | `CURR(23)` | Invoice Receipt Amount in Company Code Crcy (Delivery Costs) |
+| `GoodsReceiptGoodsQuantity` |  | |  |  | `QUAN(23)` | Goods Receipt Quantity (Goods) in Reference Quantity Unit |
+| `InvoiceReceiptGoodsQuantity` |  | |  |  | `QUAN(23)` | Invoice Receipt Quantity (Goods) in Reference Quantity Unit |
+| `GoodsReceiptDeliveryCostQty` |  | |  |  | `QUAN(23)` | Goods Receipt Quantity (Delivery Costs) in Reference Quantit |
+| `InvoiceRcptDeliveryCostQty` |  | |  |  | `QUAN(23)` | Invoice Quantity (Delivery Costs) in Reference Quantity Unit |
+| `GoodsBalanceAmountInCCCrcy` |  | |  |  | `CURR(24)` |  |
+| `GoodsBalanceQuantity` |  | |  |  | `QUAN(24)` |  |
+| `DeliveryCostBalAmtInCCCrcy` |  | |  |  | `CURR(24)` |  |
+| `DeliveryCostBalanceQuantity` |  | |  |  | `QUAN(24)` |  |
+| `GoodsReceiptAmountInCoCodeCrcy` |  | |  |  | `CURR(24)` |  |
+| `GoodsReceiptQty` |  | |  |  | `QUAN(24)` |  |
+| `InvoiceRcptAmtInCoCodeCrcy` |  | |  |  | `CURR(24)` |  |
+| `InvoiceReceiptQty` |  | |  |  | `QUAN(24)` |  |
+| `IsGoodsRcptGoodsAmtSurplus` |  | |  |  | `CHAR(1)` | There is goods amount surplus in goods receipts. |
+| `IsInvoiceGoodsAmountSurplus` |  | |  |  | `CHAR(1)` | There is goods amount surplus in invoices. |
+| `IsGdsRcptDelivCostAmtSurplus` |  | |  |  | `CHAR(1)` | There is delivery cost amount surplus in goods receipts. |
+| `IsInvoiceDelivCostAmtSurplus` |  | |  |  | `CHAR(1)` | There is delivery cost amount surplus in invoices. |
+| `IsGoodsRcptGoodsQtySurplus` |  | |  |  | `CHAR(1)` | There is goods quantity surplus in goods receipts. |
+| `IsInvoiceGoodsQtySurplus` |  | |  |  | `CHAR(1)` | There is goods quantity surplus in invoices. |
+| `IsGdsRcptDelivCostQtySurplus` |  | |  |  | `CHAR(1)` | There is delivery cost quantity surplus in goods receipts. |
+| `IsInvoiceDelivCostQtySurplus` |  | |  |  | `CHAR(1)` | There is delivery cost quantity surplus in invoices. |

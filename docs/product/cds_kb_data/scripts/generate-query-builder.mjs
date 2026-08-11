@@ -440,6 +440,22 @@ function renderHtml(embeddedJson, stats) {
     return out;
   }
 
+  // A view's declared CDS associations (Alias / Target View / Cardinality
+  // table — the same one field-search.html reads, just here it's the
+  // "Associations" table instead of "Fields"). S/4HANA Cloud Public Edition
+  // consumption views overwhelmingly favor an existing association exposed
+  // as a path expression (_Text.Field) over a hand-written JOIN...ON — it's
+  // already authorization/cardinality-correct by construction, so this page
+  // offers it as the default way to add a second view wherever one exists.
+  function associationsOf(viewName) {
+    const entry = viewsIndex()[viewName];
+    const table = entry && entry.a;
+    if (!table || !table.rows) return [];
+    return table.rows
+      .map((row) => ({ alias: row[0] || '', targetView: row[1] || '', cardinality: row[2] || '' }))
+      .filter((a) => a.alias && a.targetView);
+  }
+
   // ── Saved-query library ──────────────────────────────────────────────────
   // SHARED comes from index/query-library.json, embedded at build time —
   // read-only here (changing it for real means a PR, since this page has no
@@ -623,6 +639,7 @@ function renderHtml(embeddedJson, stats) {
 
   document.getElementById('joinAdd').addEventListener('click', () => {
     joinedViews.push({
+      mode: null, // set to 'assoc' or 'join' once the row picks one or the other
       alias: nextAlias(), name: '', fields: [], joinType: JOIN_TYPES[0],
       onLeftAlias: joinedViews[0]?.alias || '', onLeftField: '', onRightField: '',
       rawToggle: false, raw: '',
@@ -640,33 +657,72 @@ function renderHtml(embeddedJson, stats) {
     return opts;
   }
 
-  // Each join row can be typed as one raw JOIN...ON line instead of using the
-  // structured pickers below it — same escape-hatch pattern as every clause
-  // section (Select/Where/...). Trade-off: a raw row's view is unknown to
-  // this page, so it contributes no fields to SELECT/WHERE/GROUP BY/HAVING/
-  // ORDER BY's pickers (noted inline).
+  // Each join row is either an existing CDS association exposed as a path
+  // expression (_Alias.Field — no JOIN needed, and how S/4HANA Cloud Public
+  // Edition consumption views overwhelmingly combine views: an association
+  // already encodes the correct target/cardinality, so there's nothing to
+  // misconfigure the way a hand-written ON condition can be) or a manual
+  // JOIN for views that don't have one already. Only the primary view's own
+  // declared associations are offered (not further associations of an
+  // already-joined view) — deep multi-hop path chaining isn't modeled here.
+  //
+  // A manual-JOIN row can also be typed as one raw JOIN...ON line instead of
+  // using the structured pickers below it — same escape-hatch pattern as
+  // every clause section (Select/Where/...). Trade-off: a raw row's view is
+  // unknown to this page, so it contributes no fields to SELECT/WHERE/
+  // GROUP BY/HAVING/ORDER BY's pickers (noted inline).
   function renderJoins() {
     const el = document.getElementById('joinRows');
+    const usedAssocAliases = new Set(joinedViews.filter(v => v.mode === 'assoc').map(v => v.assocAlias));
+    const availableAssocs = associationsOf(joinedViews[0]?.name).filter(a => !usedAssocAliases.has(a.alias));
+
     el.innerHTML = joinedViews.slice(1).map((v, i0) => {
       const idx = i0 + 1;
       const base = 'join_' + idx;
-      const rawToggleHtml = '<div class="raw-toggle" style="margin:0 0 8px;"><input type="checkbox" id="' + base + '_rawToggle" name="' + base + '_rawToggle" class="rawToggle" data-idx="' + idx + '"' + (v.rawToggle ? ' checked' : '') + ' /><label for="' + base + '_rawToggle">Type raw JOIN text instead of using the builder below</label></div>';
       const removeBtn = '<button class="remove" data-idx="' + idx + '" data-role="removeJoin">✕ remove</button>';
 
+      // State A: nothing picked yet — association first, manual JOIN as fallback.
+      if (!v.name) {
+        const assocOpts = availableAssocs.map(a =>
+          '<option value="' + escapeHtml(a.alias) + '">' + escapeHtml(a.alias) + ' → ' + escapeHtml(a.targetView) + (a.cardinality ? ' ' + escapeHtml(a.cardinality) : '') + '</option>'
+        ).join('');
+        const assocPicker = availableAssocs.length
+          ? '<select id="' + base + '_assoc" name="' + base + '_assoc" class="op" style="flex-basis:100%" data-idx="' + idx + '" data-role="pickAssoc"><option value="">— use an existing association (recommended) —</option>' + assocOpts + '</select>' +
+            '<span style="flex-basis:100%;color:var(--text-muted);font-size:11px">…or type any view name below for a manual JOIN:</span>'
+          : '<span style="flex-basis:100%;color:var(--text-muted);font-size:11px">' + escapeHtml(joinedViews[0]?.name || '') + ' has no (unused) declared associations — type a view name below for a manual JOIN:</span>';
+        return '<div class="join-row" data-row="' + idx + '">' + assocPicker +
+          '<div class="viewpick">' +
+            '<input type="text" id="' + base + '_view" name="' + base + '_view" class="joinViewInput" data-idx="' + idx + '" placeholder="Type a view name…" value="" autocomplete="off" spellcheck="false" />' +
+            '<div class="join-view-results" data-idx="' + idx + '" style="display:none;position:absolute;z-index:5;left:0;right:0;background:var(--page-plane);border:1px solid var(--border);border-radius:8px;max-height:220px;overflow-y:auto;"></div>' +
+          '</div>' +
+          removeBtn + '</div>';
+      }
+
+      const meta = DATA.M[v.name] || ['', 0];
+      const abstractWarn = meta[1]
+        ? '<span class="join-warn">⚠ ' + escapeHtml(v.name) + ' is an abstract entity/action-parameter structure — no runtime entity set to query</span>' : '';
+
+      // State B: association mode — path expression, no JOIN/ON to configure.
+      if (v.mode === 'assoc') {
+        return '<div class="join-row" data-row="' + idx + '">' +
+          '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
+          '<span class="tag">association → ' + escapeHtml(v.name) + '</span>' +
+          removeBtn + abstractWarn +
+          '<span class="join-warn" style="color:var(--text-secondary);flex-basis:100%">No JOIN needed — its fields already show as <code>' + escapeHtml(v.alias) + '.Field</code> below.</span>' +
+          '</div>';
+      }
+
+      // State C: manual JOIN.
+      const rawToggleHtml = '<div class="raw-toggle"><input type="checkbox" id="' + base + '_rawToggle" name="' + base + '_rawToggle" class="rawToggle" data-idx="' + idx + '"' + (v.rawToggle ? ' checked' : '') + ' /><label for="' + base + '_rawToggle">Type raw JOIN text instead of using the builder below</label></div>';
       if (v.rawToggle) {
         const rawBox = '<textarea id="' + base + '_raw" name="' + base + '_raw" class="raw" data-idx="' + idx + '" data-role="raw" placeholder="e.g. LEFT JOIN I_ProductText AS ' + escapeHtml(v.alias) + ' ON t1.Product = ' + escapeHtml(v.alias) + '.Product">' + escapeHtml(v.raw || '') + '</textarea>';
-        const knownWarn = v.name
-          ? '<span class="join-warn">' + escapeHtml(v.name) + '\\'s fields are still available below — only the JOIN line itself is raw text.</span>'
-          : '<span class="join-warn">No view picked yet, so this row contributes no fields to the pickers below (only the JOIN line text).</span>';
+        const knownWarn = '<span class="join-warn">' + escapeHtml(v.name) + '\\'s fields are still available below — only the JOIN line itself is raw text.</span>';
         return '<div class="join-row" data-row="' + idx + '">' + rawToggleHtml +
           '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' + removeBtn +
           knownWarn +
           rawBox + '</div>';
       }
 
-      const meta = v.name ? (DATA.M[v.name] || ['', 0]) : ['', 0];
-      const warn = v.name && meta[1]
-        ? '<span class="join-warn">⚠ ' + escapeHtml(v.name) + ' is an abstract entity/action-parameter structure — no runtime entity set to query</span>' : '';
       const joinTypeOpts = JOIN_TYPES.map(t => '<option' + (t === v.joinType ? ' selected' : '') + '>' + t + '</option>').join('');
       const priorOpts = priorFieldOptions(idx);
       const leftOpts = priorOpts.map(o => {
@@ -689,12 +745,28 @@ function renderHtml(embeddedJson, stats) {
         '</div>' +
         '<span class="alias-badge">' + escapeHtml(v.alias) + '</span>' +
         removeBtn +
-        warn +
-        '<div class="on-line"><span style="color:var(--text-muted);font-size:12px">ON</span>' +
-        (v.name ? onBuilder : '<span class="subhint" style="margin:0">pick a view first</span>') +
-        '</div></div>';
+        abstractWarn +
+        '<div class="on-line"><span style="color:var(--text-muted);font-size:12px">ON</span>' + onBuilder + '</div></div>';
     }).join('');
 
+    el.querySelectorAll('[data-role="pickAssoc"]').forEach(sel => sel.addEventListener('change', (e) => {
+      const alias = e.target.value;
+      if (!alias) return;
+      const assoc = availableAssocs.find(a => a.alias === alias);
+      if (!assoc) return;
+      const v = joinedViews[Number(e.target.dataset.idx)];
+      v.mode = 'assoc';
+      v.assocAlias = alias;
+      v.alias = alias;
+      // The Associations table's "Target View" column keeps the DDL's own
+      // casing (e.g. "I_ProductText"), but window.__VIEW_FIELDS__ and
+      // DATA.M are keyed by the all-uppercase view name — normalize here so
+      // fieldsOf/DATA.M lookups for this row actually hit.
+      v.name = assoc.targetView.toUpperCase();
+      v.fields = fieldsOf(v.name);
+      renderJoins();
+      resetClauseState();
+    }));
     el.querySelectorAll('.joinViewInput').forEach(input => {
       input.addEventListener('input', (e) => {
         const idx = Number(e.target.dataset.idx);
@@ -712,6 +784,7 @@ function renderHtml(embeddedJson, stats) {
         if (!row) return;
         const idx = Number(box.dataset.idx);
         const name = row.dataset.view;
+        joinedViews[idx].mode = 'join';
         joinedViews[idx].name = name;
         joinedViews[idx].fields = fieldsOf(name);
         joinedViews[idx].onLeftField = ''; joinedViews[idx].onRightField = '';
@@ -742,7 +815,11 @@ function renderHtml(embeddedJson, stats) {
     }));
     el.querySelectorAll('[data-role="removeJoin"]').forEach(btn => btn.addEventListener('click', (e) => {
       joinedViews.splice(Number(e.target.dataset.idx), 1);
-      joinedViews.forEach((v, i) => { v.alias = 't' + (i + 1); });
+      // Only manual-JOIN rows use sequential t2/t3/... aliases; association
+      // rows keep their own declared alias (e.g. _Text) regardless of
+      // position, so renumbering must skip them.
+      let n = 1;
+      joinedViews.forEach((v) => { if (v.mode !== 'assoc') v.alias = 't' + (n++); else n++; });
       renderJoins();
       resetClauseState();
     }));
@@ -750,12 +827,24 @@ function renderHtml(embeddedJson, stats) {
     buildQuery();
   }
 
-  // ── Combined field universe (qualified once more than one view) ─────────
+  // ── Combined field universe ──────────────────────────────────────────────
+  // Qualification differs by how a view got joined:
+  //   - an association row (mode 'assoc') is ALWAYS path-qualified as
+  //     alias.Field (e.g. _Text.ProductDescription) — that's the whole
+  //     point of a path expression, regardless of what else is joined.
+  //   - the primary view is qualified with its own alias only once a real
+  //     (manual) JOIN exists — real SQL joins need every side disambiguated,
+  //     but a lone association off the primary doesn't need the primary
+  //     itself aliased (SELECT Product, _Text.ProductDescription FROM
+  //     I_Product — no "AS t1" anywhere).
+  //   - a manual-JOIN row is always qualified with its own t2/t3/... alias.
   function allFields() {
-    const multi = joinedViews.length > 1;
-    return joinedViews.filter(v => v.name).flatMap(v =>
-      (v.fields || []).map(f => ({ ...f, alias: v.alias, qualifiedName: multi ? v.alias + '.' + f.name : f.name }))
-    );
+    const hasManualJoin = joinedViews.some((v) => v !== joinedViews[0] && v.name && v.mode !== 'assoc');
+    return joinedViews.filter(v => v.name).flatMap((v) => {
+      const isPrimary = v === joinedViews[0];
+      const qualify = v.mode === 'assoc' || (isPrimary ? hasManualJoin : true);
+      return (v.fields || []).map(f => ({ ...f, alias: v.alias, qualifiedName: qualify ? v.alias + '.' + f.name : f.name }));
+    });
   }
 
   // ── Builder state ────────────────────────────────────────────────────────
@@ -973,9 +1062,10 @@ function renderHtml(embeddedJson, stats) {
   }
 
   function fromClauseLines() {
-    const multi = joinedViews.length > 1;
+    const hasManualJoin = joinedViews.some((v) => v !== joinedViews[0] && v.name && v.mode !== 'assoc');
     return joinedViews.map((v, i) => {
-      if (i === 0) return v.name ? 'FROM ' + v.name + (multi ? ' AS ' + v.alias : '') : null;
+      if (i === 0) return v.name ? 'FROM ' + v.name + (hasManualJoin ? ' AS ' + v.alias : '') : null;
+      if (v.mode === 'assoc') return null; // path expression — nothing to add to FROM
       if (v.rawToggle) return (v.raw || '').trim() || '<join line>';
       if (!v.name) return null;
       return joinLineText(v);
@@ -1077,6 +1167,7 @@ function renderHtml(embeddedJson, stats) {
         .filter((v, i) => i === 0 ? !!v.name : (v.name || (v.rawToggle && (v.raw || '').trim())))
         .map((v, i) => {
           if (i === 0) return { alias: v.alias, name: v.name, joinType: null, on: null };
+          if (v.mode === 'assoc') return { alias: v.alias, name: v.name, mode: 'assoc' };
           if (v.rawToggle) return { alias: v.alias, name: v.name || null, raw: (v.raw || '').trim() };
           return { alias: v.alias, name: v.name, joinType: v.joinType, on: joinOnText(v) };
         }),
@@ -1117,15 +1208,16 @@ function renderHtml(embeddedJson, stats) {
       const name = v.name || '';
       const fields = name ? fieldsOf(name) : [];
       if (i === 0) return { alias, name, fields };
-      // Loaded joins always render in raw mode (pre-filled with the saved
-      // line or reconstructed from name/joinType/on) — simplest to show
-      // exactly what was saved, but the view's fields (when known) still
-      // flow into the pickers via allFields(), so the query stays editable
-      // rather than a frozen snippet.
+      if (v.mode === 'assoc') return { alias, name, fields, mode: 'assoc', assocAlias: alias };
+      // Loaded manual joins always render in raw mode (pre-filled with the
+      // saved line or reconstructed from name/joinType/on) — simplest to
+      // show exactly what was saved, but the view's fields (when known)
+      // still flow into the pickers via allFields(), so the query stays
+      // editable rather than a frozen snippet.
       const joinType = v.joinType || JOIN_TYPES[0];
       const raw = v.raw != null ? v.raw : (name ? joinType + ' ' + name + ' AS ' + alias + ' ON ' + (v.on || '<join condition>') : '');
       return {
-        alias, name, fields, joinType,
+        alias, name, fields, joinType, mode: 'join',
         onLeftAlias: '', onLeftField: '', onRightField: '',
         rawToggle: true, raw,
       };
